@@ -3,7 +3,7 @@ name: Get latest files
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *'  # Runs daily at midnight
+    - cron: '0 */6 * * *' # Every 6 hours
 
 jobs:
   fetch:
