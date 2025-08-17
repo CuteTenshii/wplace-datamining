@@ -1,9 +1,13 @@
 import * as cheerio from 'cheerio';
-import { writeFileSync, mkdirSync } from 'fs';
+import { writeFileSync, mkdirSync, rmSync } from 'fs';
 import * as path from 'path';
 
-// Ensure the output directory exists
 const outputDir = path.join(__dirname, 'output');
+
+// Remove existing output directory if it exists
+rmSync(outputDir, { recursive: true, force: true });
+
+// Ensure the output directory exists
 mkdirSync(outputDir, { recursive: true });
 mkdirSync(path.join(outputDir, 'entry'), { recursive: true });
 mkdirSync(path.join(outputDir, 'chunks'), { recursive: true });
@@ -23,14 +27,19 @@ fetch('https://wplace.live')
       const url = pathname.replace('.', '');
       return new URL(url, 'https://wplace.live').href;
     }).get();
-    for (const scriptUrl of scriptUrls) {
+    for (let i = 0; i < scriptUrls.length; i++) {
+      const scriptUrl = scriptUrls[i];
+      if (!scriptUrl) continue;
       fetch(scriptUrl)
         .then(response => {
           if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
           return response.text();
         })
         .then(scriptContent => {
-          const fileName = scriptUrl.replace('https://wplace.live/_app/immutable/', '') || 'script.js';
+          let fileName = scriptUrl.replace('https://wplace.live/_app/immutable/', '') || 'script.js';
+          if (fileName.includes('entry/')) fileName = fileName.replace(/([a-z]+)\.[a-zA-Z0-9]+\.js$/, '$1.js');
+          else if (fileName.includes('chunks/')) fileName = fileName.replace(/([a-zA-Z0-9-_]+)\.js$/, `script_${i}.js`);
+          else if (fileName.includes('nodes/')) fileName = fileName.replace(/([0-9]+)\.[a-zA-Z0-9]+\.js$/, '$1.js');
           const filePath = path.join(outputDir, fileName);
           writeFileSync(filePath, scriptContent);
           console.log(`Saved script to ${filePath}`);
