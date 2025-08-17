@@ -1,6 +1,7 @@
 import * as cheerio from 'cheerio';
 import { writeFileSync, mkdirSync, rmSync } from 'fs';
 import * as path from 'path';
+import beautify from 'js-beautify';
 
 const outputDir = path.join(__dirname, 'output');
 
@@ -41,8 +42,16 @@ fetch('https://wplace.live')
           else if (fileName.includes('chunks/')) fileName = fileName.replace(/([a-zA-Z0-9-_]+)\.js$/, `script_${i}.js`);
           else if (fileName.includes('nodes/')) fileName = fileName.replace(/([0-9]+)\.[a-zA-Z0-9]+\.js$/, '$1.js');
           const filePath = path.join(outputDir, fileName);
-          writeFileSync(filePath, scriptContent);
-          console.log(`Saved script to ${filePath}`);
+
+          // Beautify the script content
+          const beautifiedContent = beautify.js(scriptContent, {
+            indent_size: 2,
+            space_in_empty_paren: true,
+          });
+          // Write the beautified content to the file
+          writeFileSync(filePath, beautifiedContent);
+
+          console.log(`Saved ${scriptUrl.replace('https://wplace.live/_app/immutable/', '')} script to ${filePath}`);
         })
         .catch(error => {
           console.error(`Error fetching script ${scriptUrl}:`, error);
