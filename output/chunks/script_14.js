@@ -722,12 +722,12 @@ class Aa {
     });
     if (t.status !== 200) throw t.status === 403 ? new Error(p()) : new Error(i())
   }
-  async allianceLeaderboard(e, a) {
-    const t = await this.request(`/alliance/${e}/leaderboard/${a}`, {
+  async allianceLeaderboard(e) {
+    const a = await this.request(`/alliance/leaderboard/${e}`, {
       credentials: "include"
     });
-    if (t.status === 200) return t.json();
-    throw t.status === 403 ? new Error(p()) : new Error(y())
+    if (a.status === 200) return a.json();
+    throw a.status === 403 ? new Error(p()) : new Error(y())
   }
   async getAllianceInvites() {
     const e = await this.request("/alliance/invites", {

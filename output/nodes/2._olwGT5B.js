@@ -113,7 +113,7 @@ import {
 } from "../chunks/n8wNSQ8-.js";
 import {
   p as Va
-} from "../chunks/DNDM9046.js";
+} from "../chunks/DqL0Qf0A.js";
 import {
   S as jn,
   a as ci,
@@ -127,7 +127,7 @@ import {
   j as fx,
   k as mx,
   l as _x
-} from "../chunks/NSdRCG6E.js";
+} from "../chunks/WS7vKrRI.js";
 import {
   c as Gg,
   A as ha,
@@ -139,7 +139,7 @@ import {
 import {
   g as Hg,
   b as yx
-} from "../chunks/AjrzkezK.js";
+} from "../chunks/AVZ5TvAm.js";
 import {
   h as xx
 } from "../chunks/CXrG6KWm.js";
@@ -169,7 +169,7 @@ import {
   s as Mx,
   P as Yg,
   d as Ax
-} from "../chunks/B-OWfFeR.js";
+} from "../chunks/CGt47hRf.js";
 import {
   g as Ue,
   l as kx
@@ -188,7 +188,7 @@ import {
   L as Ex,
   T as ev,
   a as zx
-} from "../chunks/Cepu2y7p.js";
+} from "../chunks/DU22SfNs.js";
 import {
   _ as Lx
 } from "../chunks/Dp1pzeXC.js";
@@ -35022,7 +35022,7 @@ function XP(y, l) {
 
   function W() {
     const Ce = b(C);
-    ci.allianceLeaderboard(l.allianceId, Ce).then(Me => {
+    ci.allianceLeaderboard(Ce).then(Me => {
       he(z, Me), o = {
         [Ce]: Me
       }, he(T, !1)
@@ -35037,7 +35037,7 @@ function XP(y, l) {
       he(z, Me), he(T, !1);
       return
     }
-    he(T, !0), ci.allianceLeaderboard(l.allianceId, Ce).then(Le => {
+    he(T, !0), ci.allianceLeaderboard(Ce).then(Le => {
       he(z, Le), o[Ce] = Le, he(T, !1)
     }).catch(Le => {
       Zr.error(Le.message)
