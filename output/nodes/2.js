@@ -113,7 +113,7 @@ import {
 } from "../chunks/n8wNSQ8-.js";
 import {
   p as Va
-} from "../chunks/DqL0Qf0A.js";
+} from "../chunks/C_6tUFci.js";
 import {
   S as jn,
   a as ci,
@@ -139,7 +139,7 @@ import {
 import {
   g as Hg,
   b as yx
-} from "../chunks/AVZ5TvAm.js";
+} from "../chunks/SDuacKkX.js";
 import {
   h as xx
 } from "../chunks/CXrG6KWm.js";
@@ -169,7 +169,7 @@ import {
   s as Mx,
   P as Yg,
   d as Ax
-} from "../chunks/CGt47hRf.js";
+} from "../chunks/D38j9pGj.js";
 import {
   g as Ue,
   l as kx
@@ -933,8 +933,8 @@ const $x = () => "Log in",
   cC = () => "No more charges",
   uC = () => "Acabou a tinta",
   hC = (y = {}, l = {}) => (l.locale ?? Ue()) === "en" ? cC() : uC(),
-  dC = () => "You are not allowed to use multiple accounts",
-  pC = () => "Não é permitido usar várias contas",
+  dC = () => "You are not allowed to use multiple accounts. Use your main account to paint.",
+  pC = () => "Não é permitido usar várias contas. Use sua conta principal para pintar.",
   fC = (y = {}, l = {}) => (l.locale ?? Ue()) === "en" ? dC() : pC(),
   mC = () => "SMS sent to",
   _C = () => "SMS enviado para",
