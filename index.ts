@@ -38,7 +38,7 @@ fetch('https://wplace.live')
         })
         .then(scriptContent => {
           let fileName = scriptUrl.replace('https://wplace.live/_app/immutable/', '') || 'script.js';
-          if (fileName.includes('entry/')) fileName = fileName.replace(/([a-z]+)\.[a-zA-Z0-9]+\.js$/, '$1.js');
+          if (fileName.includes('entry/')) fileName = fileName.replace(/([a-z]+)\.[a-zA-Z0-9-_]+\.js$/, '$1.js');
           else if (fileName.includes('chunks/')) fileName = fileName.replace(/([a-zA-Z0-9-_]+)\.js$/, `script_${i}.js`);
           else if (fileName.includes('nodes/')) fileName = fileName.replace(/([0-9]+)\.[a-zA-Z0-9-_]+\.js$/, '$1.js');
           const filePath = path.join(outputDir, fileName);
