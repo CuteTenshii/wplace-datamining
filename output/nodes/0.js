@@ -9,7 +9,7 @@ import "../chunks/Bzak7iHL.js";
 import {
   o as pt,
   s as it
-} from "../chunks/CmeQcTji.js";
+} from "../chunks/6FCTZllW.js";
 import {
   p as de,
   f as et,
@@ -18,71 +18,71 @@ import {
   r as p,
   t as J,
   c as ue,
-  be as le,
-  ax as pe,
-  aw as Ne,
-  ay as $e,
-  aS as R,
-  aH as Ue,
-  q as _t,
-  aI as f,
-  y as e,
-  aU as b,
-  v as $t,
+  bn as le,
+  ay as pe,
+  ax as Re,
+  az as $e,
+  aR as R,
+  aG as Ue,
+  w as _t,
+  aH as f,
+  A as e,
+  aT as b,
+  x as $t,
   s as Mt,
-  bc as Ve,
-  ao as ht,
-  aT as g,
+  bh as Ve,
+  ap as ht,
+  aS as g,
   a as v,
-  ak as tn,
-  aV as Re,
-  aC as ne,
-  bd as en
-} from "../chunks/Bq4S7hUq.js";
+  am as tn,
+  aU as Ne,
+  q as ne,
+  bi as en
+} from "../chunks/BwVUyGIA.js";
 import {
   s as Jt
-} from "../chunks/CnWe-B5l.js";
+} from "../chunks/CPizFUA8.js";
 import {
   v as nn
-} from "../chunks/C-OgoB3c.js";
+} from "../chunks/CeYH3C4l.js";
 import {
   c as an,
   A as on,
   s as sn,
   a as rn
-} from "../chunks/BcR8GjwH.js";
+} from "../chunks/B3dSYhC2.js";
 import {
-  d as G,
+  d as Z,
   e as xt,
   f as ln,
   g as Fe,
   u as cn
-} from "../chunks/WS7vKrRI.js";
+} from "../chunks/C6xrklYy.js";
 import "../chunks/C5GsJ62f.js";
 import {
   p as O,
   i as I,
   s as Me,
   r as dn
-} from "../chunks/UxJc7UTe.js";
+} from "../chunks/z_PNeqDz.js";
 import {
   e as Pe
-} from "../chunks/n8wNSQ8-.js";
+} from "../chunks/DmkVHxMj.js";
 import {
   c as It,
   s as Tt,
-  b as C,
-  d as Ce,
+  b as A,
+  d as Ae,
   a as un,
   S as fn
-} from "../chunks/D6aoU8vd.js";
+} from "../chunks/Crmhm9hm.js";
 import {
-  b as We
-} from "../chunks/wPcC_KkO.js";
+  b as Ke
+} from "../chunks/BKzXkE-b.js";
 import {
   c as Ot
-} from "../chunks/DD24tlqR.js";
-import "../chunks/BjUGmSCg.js";
+} from "../chunks/Bvf9BrkZ.js";
+import "../chunks/BfueqGZ_.js";
 const vn = !0,
   Ia = Object.freeze(Object.defineProperty({
     __proto__: null,
@@ -102,12 +102,12 @@ function _n(o, t) {
     var V = gn();
     n(M, V)
   }), p(S), p(l), J(M => {
-    Tt(l, 1, M), C(l, "data-visible", t.visible)
+    Tt(l, 1, M), A(l, "data-visible", t.visible)
   }, [() => It(["sonner-loading-wrapper", t.class].filter(Boolean).join(" "))]), n(o, l), ue()
 }
 const bn = typeof window < "u" ? window : void 0;
 
-function yn(o) {
+function wn(o) {
   let t = o.activeElement;
   for (; t != null && t.shadowRoot;) {
     const l = t.shadowRoot.activeElement;
@@ -117,7 +117,7 @@ function yn(o) {
   return t
 }
 var jt, te;
-class wn {
+class yn {
   constructor(t = {}) {
     qt(this, jt);
     qt(this, te);
@@ -135,11 +135,11 @@ class wn {
   }
   get current() {
     var t;
-    return (t = gt(this, te)) == null || t.call(this), gt(this, jt) ? yn(gt(this, jt)) : null
+    return (t = gt(this, te)) == null || t.call(this), gt(this, jt) ? wn(gt(this, jt)) : null
   }
 }
 jt = new WeakMap, te = new WeakMap;
-new wn;
+new yn;
 var ee, St;
 class xn {
   constructor(t) {
@@ -154,12 +154,12 @@ class xn {
     return pe(gt(this, St))
   }
   get() {
-    const t = Ne(gt(this, St));
+    const t = Re(gt(this, St));
     if (t === void 0) throw new Error(`Context "${gt(this,ee)}" not found`);
     return t
   }
   getOr(t) {
-    const l = Ne(gt(this, St));
+    const l = Re(gt(this, St));
     return l === void 0 ? t : l
   }
   set(t) {
@@ -205,7 +205,7 @@ const je = 4e3,
     loading: ""
   };
 
-function Cn(o) {
+function An(o) {
   const [t, l] = o.split("-"), S = [];
   return t && S.push(t), l && S.push(l), S
 }
@@ -213,7 +213,7 @@ function Cn(o) {
 function ze(o) {
   return 1 / (1.5 + Math.abs(o) / 20)
 }
-var An = et("<div><!></div>"),
+var Cn = et("<div><!></div>"),
   Pn = (o, t, l, S, M) => {
     var L, V;
     e(t) || !e(l) || (S(), (V = (L = M.toast).onDismiss) == null || V.call(L, M.toast))
@@ -225,8 +225,8 @@ var An = et("<div><!></div>"),
     var M, L;
     ce(t.toast.cancel) && e(l) && ((L = (M = t.toast.cancel) == null ? void 0 : M.onClick) == null || L.call(M, o), S())
   },
-  Nn = et('<button data-button="" data-cancel=""> </button>'),
-  Rn = (o, t, l) => {
+  Rn = et('<button data-button="" data-cancel=""> </button>'),
+  Nn = (o, t, l) => {
     var S;
     ce(t.toast.action) && ((S = t.toast.action) == null || S.onClick(o), !o.defaultPrevented && l())
   },
@@ -241,25 +241,25 @@ function Un(o, t) {
       x = v(c);
     {
       var T = h => {
-          var K = An(),
-            tt = ot(K);
-          it(tt, () => t.loadingIcon), p(K), J(Y => {
-            Tt(K, 1, Y), C(K, "data-visible", e(E) === "loading")
+          var W = Cn(),
+            tt = ot(W);
+          it(tt, () => t.loadingIcon), p(W), J(Y => {
+            Tt(W, 1, Y), A(W, "data-visible", e(E) === "loading")
           }, [() => {
             var Y, j, m;
             return It(xt((Y = e(at)) == null ? void 0 : Y.loader, (m = (j = t.toast) == null ? void 0 : j.classes) == null ? void 0 : m.loader, "sonner-loader"))
-          }]), n(h, K)
+          }]), n(h, W)
         },
         B = h => {
           {
-            let K = b(() => {
+            let W = b(() => {
                 var Y, j;
                 return xt((Y = e(at)) == null ? void 0 : Y.loader, (j = t.toast.classes) == null ? void 0 : j.loader)
               }),
               tt = b(() => e(E) === "loading");
             _n(h, {
               get class() {
-                return e(K)
+                return e(W)
               },
               get visible() {
                 return e(tt)
@@ -281,8 +281,8 @@ function Un(o, t) {
   const $ = {
     ...Mn
   };
-  let k = R(!1),
-    X = R(!1),
+  let N = R(!1),
+    q = R(!1),
     Lt = R(!1),
     zt = R(!1),
     Ut = R(!1),
@@ -296,24 +296,24 @@ function Un(o, t) {
     ve = b(() => t.index + 1 <= t.visibleToasts),
     E = b(() => t.toast.type),
     ft = b(() => t.toast.dismissable !== !1),
-    Ct = b(() => t.toast.class || ""),
+    At = b(() => t.toast.class || ""),
     Dt = b(() => t.toast.descriptionClass || ""),
-    vt = b(() => G.heights.findIndex(s => s.toastId === t.toast.id) || 0),
-    At = b(() => t.toast.closeButton ?? t.closeButton),
+    vt = b(() => Z.heights.findIndex(s => s.toastId === t.toast.id) || 0),
+    Ct = b(() => t.toast.closeButton ?? t.closeButton),
     me = b(() => t.toast.duration ?? t.duration ?? je);
   let Et = null;
   const ae = b(() => t.position.split("-")),
-    ge = b(() => G.heights.reduce((s, c, x) => x >= e(vt) ? s : s + c.height, 0)),
+    ge = b(() => Z.heights.reduce((s, c, x) => x >= e(vt) ? s : s + c.height, 0)),
     he = Tn(),
     _e = b(() => t.toast.invert || t.invert),
-    Wt = b(() => e(E) === "loading"),
+    Kt = b(() => e(E) === "loading"),
     at = b(() => ({
       ...$,
       ...t.classes
     })),
     be = b(() => t.toast.title),
     Pt = b(() => t.toast.description);
-  let Kt = R(0),
+  let Wt = R(0),
     oe = R(0);
   const r = b(() => Math.round(e(vt) * Sn + e(ge)));
   _t(() => {
@@ -329,7 +329,7 @@ function Un(o, t) {
     c.style.removeProperty("height");
     let h;
     Math.abs(B - x) < 1 ? h = B : h = x, f(bt, h, !0), $t(() => {
-      G.setHeight({
+      Z.setHeight({
         toastId: t.toast.id,
         height: h
       })
@@ -337,38 +337,38 @@ function Un(o, t) {
   });
 
   function u() {
-    f(X, !0), f(Q, e(r), !0), G.removeHeight(t.toast.id), setTimeout(() => {
-      G.remove(t.toast.id)
+    f(q, !0), f(Q, e(r), !0), Z.removeHeight(t.toast.id), setTimeout(() => {
+      Z.remove(t.toast.id)
     }, Dn)
   }
   let F;
-  const yt = b(() => t.toast.promise && e(E) === "loading" || t.toast.duration === Number.POSITIVE_INFINITY);
+  const wt = b(() => t.toast.promise && e(E) === "loading" || t.toast.duration === Number.POSITIVE_INFINITY);
 
   function st() {
-    f(Kt, new Date().getTime(), !0), F = setTimeout(() => {
+    f(Wt, new Date().getTime(), !0), F = setTimeout(() => {
       var s, c;
       (c = (s = t.toast).onAutoClose) == null || c.call(s, t.toast), u()
     }, kt)
   }
 
   function Ht() {
-    if (e(oe) < e(Kt)) {
-      const s = new Date().getTime() - e(Kt);
+    if (e(oe) < e(Wt)) {
+      const s = new Date().getTime() - e(Wt);
       kt = kt - s
     }
     f(oe, new Date().getTime(), !0)
   }
   _t(() => {
     t.toast.updated && (clearTimeout(F), kt = e(me), st())
-  }), _t(() => (e(yt) || (t.expanded || t.interacting || he.current ? Ht() : st()), () => clearTimeout(F))), pt(() => {
+  }), _t(() => (e(wt) || (t.expanded || t.interacting || he.current ? Ht() : st()), () => clearTimeout(F))), pt(() => {
     var c;
-    f(k, !0);
+    f(N, !0);
     const s = (c = e(nt)) == null ? void 0 : c.getBoundingClientRect().height;
-    return f(bt, s, !0), G.setHeight({
+    return f(bt, s, !0), Z.setHeight({
       toastId: t.toast.id,
       height: s
     }), () => {
-      G.removeHeight(t.toast.id)
+      Z.removeHeight(t.toast.id)
     }
   }), _t(() => {
     t.toast.delete && $t(() => {
@@ -377,7 +377,7 @@ function Un(o, t) {
     })
   });
   const Oe = s => {
-      if (e(Wt)) return;
+      if (e(Kt)) return;
       f(Q, e(r), !0);
       const c = s.target;
       c.setPointerCapture(s.pointerId), c.tagName !== "BUTTON" && (f(Lt, !0), Et = {
@@ -386,11 +386,11 @@ function Un(o, t) {
       })
     },
     ie = () => {
-      var h, K, tt, Y, j, m;
+      var h, W, tt, Y, j, m;
       if (e(zt) || !e(ft)) return;
       Et = null;
       const s = Number(((h = e(nt)) == null ? void 0 : h.style.getPropertyValue("--swipe-amount-x").replace("px", "")) || 0),
-        c = Number(((K = e(nt)) == null ? void 0 : K.style.getPropertyValue("--swipe-amount-y").replace("px", "")) || 0),
+        c = Number(((W = e(nt)) == null ? void 0 : W.style.getPropertyValue("--swipe-amount-y").replace("px", "")) || 0),
         x = new Date().getTime() - 0,
         T = e(ut) === "x" ? s : c,
         B = Math.abs(T) / x;
@@ -401,11 +401,11 @@ function Un(o, t) {
       f(Ut, !1), f(Lt, !1), f(ut, null)
     },
     mt = s => {
-      var K, tt, Y;
-      if (!Et || !e(ft) || (((K = window.getSelection()) == null ? void 0 : K.toString().length) ?? -1) > 0) return;
+      var W, tt, Y;
+      if (!Et || !e(ft) || (((W = window.getSelection()) == null ? void 0 : W.toString().length) ?? -1) > 0) return;
       const x = s.clientY - Et.y,
         T = s.clientX - Et.x,
-        B = t.swipeDirections ?? Cn(t.position);
+        B = t.swipeDirections ?? An(t.position);
       !e(ut) && (Math.abs(T) > 1 || Math.abs(x) > 1) && f(ut, Math.abs(T) > Math.abs(x) ? "x" : "y", !0);
       let h = {
         x: 0,
@@ -425,32 +425,32 @@ function Un(o, t) {
           h.x = Math.abs(j) < Math.abs(T) ? j : T
         }(Math.abs(h.x) > 0 || Math.abs(h.y) > 0) && f(Ut, !0), (tt = e(nt)) == null || tt.style.setProperty("--swipe-amount-x", `${h.x}px`), (Y = e(nt)) == null || Y.style.setProperty("--swipe-amount-y", `${h.y}px`)
     },
-    wt = () => {
+    yt = () => {
       f(Lt, !1), f(ut, null), Et = null
     },
-    W = b(() => t.toast.icon ? t.toast.icon : e(E) === "success" ? t.successIcon : e(E) === "error" ? t.errorIcon : e(E) === "warning" ? t.warningIcon : e(E) === "info" ? t.infoIcon : e(E) === "loading" ? t.loadingIcon : null);
-  var y = zn();
-  C(y, "tabindex", 0);
+    K = b(() => t.toast.icon ? t.toast.icon : e(E) === "success" ? t.successIcon : e(E) === "error" ? t.errorIcon : e(E) === "warning" ? t.warningIcon : e(E) === "info" ? t.infoIcon : e(E) === "loading" ? t.loadingIcon : null);
+  var w = zn();
+  A(w, "tabindex", 0);
   let se;
-  y.__pointermove = mt, y.__pointerup = ie, y.__pointerdown = Oe;
-  var ye = ot(y);
+  w.__pointermove = mt, w.__pointerup = ie, w.__pointerdown = Oe;
+  var we = ot(w);
   {
-    var we = s => {
+    var ye = s => {
       var c = On();
-      c.__click = [Pn, Wt, ft, u, t];
+      c.__click = [Pn, Kt, ft, u, t];
       var x = ot(c);
       it(x, () => t.closeIcon ?? ht), p(c), J(T => {
-        C(c, "aria-label", t.closeButtonAriaLabel), C(c, "data-disabled", e(Wt)), Tt(c, 1, T)
+        A(c, "aria-label", t.closeButtonAriaLabel), A(c, "data-disabled", e(Kt)), Tt(c, 1, T)
       }, [() => {
         var T, B, h;
         return It(xt((T = e(at)) == null ? void 0 : T.closeButton, (h = (B = t.toast) == null ? void 0 : B.classes) == null ? void 0 : h.closeButton))
       }]), n(s, c)
     };
-    I(ye, s => {
-      e(At) && !t.toast.component && e(E) !== "loading" && t.closeIcon !== null && s(we)
+    I(we, s => {
+      e(Ct) && !t.toast.component && e(E) !== "loading" && t.closeIcon !== null && s(ye)
     })
   }
-  var xe = Mt(ye, 2);
+  var xe = Mt(we, 2);
   {
     var Ie = s => {
         const c = b(() => t.toast.component);
@@ -466,68 +466,68 @@ function Un(o, t) {
         var c = jn(),
           x = v(c);
         {
-          var T = w => {
+          var T = y => {
             var a = Ln(),
               d = ot(a);
             {
               var D = _ => {
-                var A = g(),
-                  z = v(A);
+                var C = g(),
+                  z = v(C);
                 {
-                  var N = Z => {
+                  var H = G => {
                       var U = g(),
                         ct = v(U);
                       Ot(ct, () => t.toast.icon, (dt, Yt) => {
                         Yt(dt, {})
-                      }), n(Z, U)
+                      }), n(G, U)
                     },
-                    P = Z => {
-                      l(Z)
+                    P = G => {
+                      l(G)
                     };
-                  I(z, Z => {
-                    t.toast.icon ? Z(N) : Z(P, !1)
+                  I(z, G => {
+                    t.toast.icon ? G(H) : G(P, !1)
                   })
                 }
-                n(_, A)
+                n(_, C)
               };
               I(d, _ => {
                 (t.toast.promise || e(E) === "loading") && _(D)
               })
             }
-            var H = Mt(d, 2);
+            var k = Mt(d, 2);
             {
               var i = _ => {
-                var A = g(),
-                  z = v(A);
+                var C = g(),
+                  z = v(C);
                 {
-                  var N = Z => {
+                  var H = G => {
                       var U = g(),
                         ct = v(U);
                       Ot(ct, () => t.toast.icon, (dt, Yt) => {
                         Yt(dt, {})
-                      }), n(Z, U)
+                      }), n(G, U)
                     },
-                    P = Z => {
+                    P = G => {
                       var U = g(),
                         ct = v(U);
                       {
-                        var dt = Nt => {
-                            var Zt = g(),
-                              Se = v(Zt);
-                            it(Se, () => t.successIcon ?? ht), n(Nt, Zt)
+                        var dt = Rt => {
+                            var Gt = g(),
+                              Se = v(Gt);
+                            it(Se, () => t.successIcon ?? ht), n(Rt, Gt)
                           },
-                          Yt = Nt => {
-                            var Zt = g(),
-                              Se = v(Zt);
+                          Yt = Rt => {
+                            var Gt = g(),
+                              Se = v(Gt);
                             {
-                              var Ze = Rt => {
-                                  var Gt = g(),
-                                    Be = v(Gt);
-                                  it(Be, () => t.errorIcon ?? ht), n(Rt, Gt)
+                              var Ge = Nt => {
+                                  var Zt = g(),
+                                    Be = v(Zt);
+                                  it(Be, () => t.errorIcon ?? ht), n(Nt, Zt)
                                 },
-                                Ge = Rt => {
-                                  var Gt = g(),
-                                    Be = v(Gt);
+                                Ze = Nt => {
+                                  var Zt = g(),
+                                    Be = v(Zt);
                                   {
                                     var Xe = Ft => {
                                         var Xt = g(),
@@ -553,229 +553,229 @@ function Un(o, t) {
                                       e(E) === "warning" ? Ft(Xe) : Ft(qe, !1)
                                     }, !0)
                                   }
-                                  n(Rt, Gt)
+                                  n(Nt, Zt)
                                 };
-                              I(Se, Rt => {
-                                e(E) === "error" ? Rt(Ze) : Rt(Ge, !1)
+                              I(Se, Nt => {
+                                e(E) === "error" ? Nt(Ge) : Nt(Ze, !1)
                               }, !0)
                             }
-                            n(Nt, Zt)
+                            n(Rt, Gt)
                           };
-                        I(ct, Nt => {
-                          e(E) === "success" ? Nt(dt) : Nt(Yt, !1)
+                        I(ct, Rt => {
+                          e(E) === "success" ? Rt(dt) : Rt(Yt, !1)
                         }, !0)
                       }
-                      n(Z, U)
+                      n(G, U)
                     };
-                  I(z, Z => {
-                    t.toast.icon ? Z(N) : Z(P, !1)
+                  I(z, G => {
+                    t.toast.icon ? G(H) : G(P, !1)
                   })
                 }
-                n(_, A)
+                n(_, C)
               };
-              I(H, _ => {
+              I(k, _ => {
                 t.toast.type !== "loading" && _(i)
               })
             }
             p(a), J(_ => Tt(a, 1, _), [() => {
-              var _, A, z;
-              return It(xt((_ = e(at)) == null ? void 0 : _.icon, (z = (A = t.toast) == null ? void 0 : A.classes) == null ? void 0 : z.icon))
-            }]), n(w, a)
+              var _, C, z;
+              return It(xt((_ = e(at)) == null ? void 0 : _.icon, (z = (C = t.toast) == null ? void 0 : C.classes) == null ? void 0 : z.icon))
+            }]), n(y, a)
           };
-          I(x, w => {
-            (e(E) || t.toast.icon || t.toast.promise) && t.toast.icon !== null && (e(W) !== null || t.toast.icon) && w(T)
+          I(x, y => {
+            (e(E) || t.toast.icon || t.toast.promise) && t.toast.icon !== null && (e(K) !== null || t.toast.icon) && y(T)
           })
         }
         var B = Mt(x, 2),
           h = ot(B),
-          K = ot(h);
+          W = ot(h);
         {
-          var tt = w => {
+          var tt = y => {
             var a = g(),
               d = v(a);
             {
               var D = i => {
                   const _ = b(() => t.toast.title);
-                  var A = g(),
-                    z = v(A);
-                  Ot(z, () => e(_), (N, P) => {
-                    P(N, Me(() => t.toast.componentProps))
-                  }), n(i, A)
+                  var C = g(),
+                    z = v(C);
+                  Ot(z, () => e(_), (H, P) => {
+                    P(H, Me(() => t.toast.componentProps))
+                  }), n(i, C)
                 },
-                H = i => {
-                  var _ = Re();
+                k = i => {
+                  var _ = Ne();
                   J(() => Jt(_, t.toast.title)), n(i, _)
                 };
               I(d, i => {
-                typeof t.toast.title != "string" ? i(D) : i(H, !1)
+                typeof t.toast.title != "string" ? i(D) : i(k, !1)
               })
             }
-            n(w, a)
+            n(y, a)
           };
-          I(K, w => {
-            t.toast.title && w(tt)
+          I(W, y => {
+            t.toast.title && y(tt)
           })
         }
         p(h);
         var Y = Mt(h, 2);
         {
-          var j = w => {
+          var j = y => {
             var a = kn(),
               d = ot(a);
             {
               var D = i => {
                   const _ = b(() => t.toast.description);
-                  var A = g(),
-                    z = v(A);
-                  Ot(z, () => e(_), (N, P) => {
-                    P(N, Me(() => t.toast.componentProps))
-                  }), n(i, A)
+                  var C = g(),
+                    z = v(C);
+                  Ot(z, () => e(_), (H, P) => {
+                    P(H, Me(() => t.toast.componentProps))
+                  }), n(i, C)
                 },
-                H = i => {
-                  var _ = Re();
+                k = i => {
+                  var _ = Ne();
                   J(() => Jt(_, t.toast.description)), n(i, _)
                 };
               I(d, i => {
-                typeof t.toast.description != "string" ? i(D) : i(H, !1)
+                typeof t.toast.description != "string" ? i(D) : i(k, !1)
               })
             }
             p(a), J(i => Tt(a, 1, i), [() => {
               var i, _;
               return It(xt(L(), e(Dt), (i = e(at)) == null ? void 0 : i.description, (_ = t.toast.classes) == null ? void 0 : _.description))
-            }]), n(w, a)
+            }]), n(y, a)
           };
-          I(Y, w => {
-            t.toast.description && w(j)
+          I(Y, y => {
+            t.toast.description && y(j)
           })
         }
         p(B);
         var m = Mt(B, 2);
         {
-          var q = w => {
+          var X = y => {
             var a = g(),
               d = v(a);
             {
               var D = i => {
                   var _ = g(),
-                    A = v(_);
-                  Ot(A, () => t.toast.cancel, (z, N) => {
-                    N(z, {})
+                    C = v(_);
+                  Ot(C, () => t.toast.cancel, (z, H) => {
+                    H(z, {})
                   }), n(i, _)
                 },
-                H = i => {
+                k = i => {
                   var _ = g(),
-                    A = v(_);
+                    C = v(_);
                   {
-                    var z = N => {
-                      var P = Nn();
+                    var z = H => {
+                      var P = Rn();
                       P.__click = [Hn, t, ft, u];
-                      var Z = ot(P, !0);
+                      var G = ot(P, !0);
                       p(P), J(U => {
-                        Ce(P, t.toast.cancelButtonStyle ?? S()), Tt(P, 1, U), Jt(Z, t.toast.cancel.label)
+                        Ae(P, t.toast.cancelButtonStyle ?? S()), Tt(P, 1, U), Jt(G, t.toast.cancel.label)
                       }, [() => {
                         var U, ct, dt;
                         return It(xt((U = e(at)) == null ? void 0 : U.cancelButton, (dt = (ct = t.toast) == null ? void 0 : ct.classes) == null ? void 0 : dt.cancelButton))
-                      }]), n(N, P)
+                      }]), n(H, P)
                     };
-                    I(A, N => {
-                      ce(t.toast.cancel) && N(z)
+                    I(C, H => {
+                      ce(t.toast.cancel) && H(z)
                     }, !0)
                   }
                   n(i, _)
                 };
               I(d, i => {
-                typeof t.toast.cancel == "function" ? i(D) : i(H, !1)
+                typeof t.toast.cancel == "function" ? i(D) : i(k, !1)
               })
             }
-            n(w, a)
+            n(y, a)
           };
-          I(m, w => {
-            t.toast.cancel && w(q)
+          I(m, y => {
+            t.toast.cancel && y(X)
           })
         }
         var rt = Mt(m, 2);
         {
-          var lt = w => {
+          var lt = y => {
             var a = g(),
               d = v(a);
             {
               var D = i => {
                   var _ = g(),
-                    A = v(_);
-                  Ot(A, () => t.toast.action, (z, N) => {
-                    N(z, {})
+                    C = v(_);
+                  Ot(C, () => t.toast.action, (z, H) => {
+                    H(z, {})
                   }), n(i, _)
                 },
-                H = i => {
+                k = i => {
                   var _ = g(),
-                    A = v(_);
+                    C = v(_);
                   {
-                    var z = N => {
+                    var z = H => {
                       var P = Fn();
-                      P.__click = [Rn, t, u];
-                      var Z = ot(P, !0);
+                      P.__click = [Nn, t, u];
+                      var G = ot(P, !0);
                       p(P), J(U => {
-                        Ce(P, t.toast.actionButtonStyle ?? M()), Tt(P, 1, U), Jt(Z, t.toast.action.label)
+                        Ae(P, t.toast.actionButtonStyle ?? M()), Tt(P, 1, U), Jt(G, t.toast.action.label)
                       }, [() => {
                         var U, ct, dt;
                         return It(xt((U = e(at)) == null ? void 0 : U.actionButton, (dt = (ct = t.toast) == null ? void 0 : ct.classes) == null ? void 0 : dt.actionButton))
-                      }]), n(N, P)
+                      }]), n(H, P)
                     };
-                    I(A, N => {
-                      ce(t.toast.action) && N(z)
+                    I(C, H => {
+                      ce(t.toast.action) && H(z)
                     }, !0)
                   }
                   n(i, _)
                 };
               I(d, i => {
-                typeof t.toast.action == "function" ? i(D) : i(H, !1)
+                typeof t.toast.action == "function" ? i(D) : i(k, !1)
               })
             }
-            n(w, a)
+            n(y, a)
           };
-          I(rt, w => {
-            t.toast.action && w(lt)
+          I(rt, y => {
+            t.toast.action && y(lt)
           })
         }
-        J(w => Tt(h, 1, w), [() => {
-          var w, a, d;
-          return It(xt((w = e(at)) == null ? void 0 : w.title, (d = (a = t.toast) == null ? void 0 : a.classes) == null ? void 0 : d.title))
+        J(y => Tt(h, 1, y), [() => {
+          var y, a, d;
+          return It(xt((y = e(at)) == null ? void 0 : y.title, (d = (a = t.toast) == null ? void 0 : a.classes) == null ? void 0 : d.title))
         }]), n(s, c)
       };
     I(xe, s => {
       t.toast.component ? s(Ie) : s(Te, !1)
     })
   }
-  p(y), We(y, s => f(nt, s), () => e(nt)), J((s, c, x, T) => {
-    Tt(y, 1, s), C(y, "data-rich-colors", t.toast.richColors ?? Bt()), C(y, "data-styled", !(t.toast.component || t.toast.unstyled || V())), C(y, "data-mounted", e(k)), C(y, "data-promise", c), C(y, "data-swiped", e(Ut)), C(y, "data-removed", e(X)), C(y, "data-visible", e(ve)), C(y, "data-y-position", e(ae)[0]), C(y, "data-x-position", e(ae)[1]), C(y, "data-index", t.index), C(y, "data-front", e(fe)), C(y, "data-swiping", e(Lt)), C(y, "data-dismissable", e(ft)), C(y, "data-type", e(E)), C(y, "data-invert", e(_e)), C(y, "data-swipe-out", e(zt)), C(y, "data-swipe-direction", e(Vt)), C(y, "data-expanded", x), se = Ce(y, `${t.style} ${t.toast.style}`, se, T)
+  p(w), Ke(w, s => f(nt, s), () => e(nt)), J((s, c, x, T) => {
+    Tt(w, 1, s), A(w, "data-rich-colors", t.toast.richColors ?? Bt()), A(w, "data-styled", !(t.toast.component || t.toast.unstyled || V())), A(w, "data-mounted", e(N)), A(w, "data-promise", c), A(w, "data-swiped", e(Ut)), A(w, "data-removed", e(q)), A(w, "data-visible", e(ve)), A(w, "data-y-position", e(ae)[0]), A(w, "data-x-position", e(ae)[1]), A(w, "data-index", t.index), A(w, "data-front", e(fe)), A(w, "data-swiping", e(Lt)), A(w, "data-dismissable", e(ft)), A(w, "data-type", e(E)), A(w, "data-invert", e(_e)), A(w, "data-swipe-out", e(zt)), A(w, "data-swipe-direction", e(Vt)), A(w, "data-expanded", x), se = Ae(w, `${t.style} ${t.toast.style}`, se, T)
   }, [() => {
     var s, c, x, T, B, h;
-    return It(xt(t.class, e(Ct), (s = e(at)) == null ? void 0 : s.toast, (x = (c = t.toast) == null ? void 0 : c.classes) == null ? void 0 : x.toast, (T = e(at)) == null ? void 0 : T[e(E)], (h = (B = t.toast) == null ? void 0 : B.classes) == null ? void 0 : h[e(E)]))
-  }, () => !!t.toast.promise, () => !!(t.expanded || t.expandByDefault && e(k)), () => ({
+    return It(xt(t.class, e(At), (s = e(at)) == null ? void 0 : s.toast, (x = (c = t.toast) == null ? void 0 : c.classes) == null ? void 0 : x.toast, (T = e(at)) == null ? void 0 : T[e(E)], (h = (B = t.toast) == null ? void 0 : B.classes) == null ? void 0 : h[e(E)]))
+  }, () => !!t.toast.promise, () => !!(t.expanded || t.expandByDefault && e(N)), () => ({
     "--index": t.index,
     "--toasts-before": t.index,
-    "--z-index": G.toasts.length - t.index,
-    "--offset": `${e(X)?e(Q):e(r)}px`,
+    "--z-index": Z.toasts.length - t.index,
+    "--offset": `${e(q)?e(Q):e(r)}px`,
     "--initial-height": t.expandByDefault ? "auto" : `${e(bt)}px`
-  })]), Ve("dragend", y, wt), n(o, y), ue()
+  })]), Ve("dragend", w, yt), n(o, w), ue()
 }
 tn(["pointermove", "pointerup", "pointerdown", "click"]);
 var Vn = ne('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" height="20" width="20" data-sonner-success-icon=""><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"></path></svg>');
 
-function Wn(o) {
+function Kn(o) {
   var t = Vn();
   n(o, t)
 }
-var Kn = ne('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" height="20" width="20" data-sonner-error-icon=""><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0v-4.5A.75.75 0 0110 5zm0 10a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>');
+var Wn = ne('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" height="20" width="20" data-sonner-error-icon=""><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0v-4.5A.75.75 0 0110 5zm0 10a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>');
 
 function Yn(o) {
-  var t = Kn();
+  var t = Wn();
   n(o, t)
 }
-var Zn = ne('<svg viewBox="0 0 64 64" fill="currentColor" height="20" width="20" data-sonner-warning-icon="" xmlns="http://www.w3.org/2000/svg"><path d="M32.427,7.987c2.183,0.124 4,1.165 5.096,3.281l17.936,36.208c1.739,3.66 -0.954,8.585 -5.373,8.656l-36.119,0c-4.022,-0.064 -7.322,-4.631 -5.352,-8.696l18.271,-36.207c0.342,-0.65 0.498,-0.838 0.793,-1.179c1.186,-1.375 2.483,-2.111 4.748,-2.063Zm-0.295,3.997c-0.687,0.034 -1.316,0.419 -1.659,1.017c-6.312,11.979 -12.397,24.081 -18.301,36.267c-0.546,1.225 0.391,2.797 1.762,2.863c12.06,0.195 24.125,0.195 36.185,0c1.325,-0.064 2.321,-1.584 1.769,-2.85c-5.793,-12.184 -11.765,-24.286 -17.966,-36.267c-0.366,-0.651 -0.903,-1.042 -1.79,-1.03Z"></path><path d="M33.631,40.581l-3.348,0l-0.368,-16.449l4.1,0l-0.384,16.449Zm-3.828,5.03c0,-0.609 0.197,-1.113 0.592,-1.514c0.396,-0.4 0.935,-0.601 1.618,-0.601c0.684,0 1.223,0.201 1.618,0.601c0.395,0.401 0.593,0.905 0.593,1.514c0,0.587 -0.193,1.078 -0.577,1.473c-0.385,0.395 -0.929,0.593 -1.634,0.593c-0.705,0 -1.249,-0.198 -1.634,-0.593c-0.384,-0.395 -0.576,-0.886 -0.576,-1.473Z"></path></svg>');
+var Gn = ne('<svg viewBox="0 0 64 64" fill="currentColor" height="20" width="20" data-sonner-warning-icon="" xmlns="http://www.w3.org/2000/svg"><path d="M32.427,7.987c2.183,0.124 4,1.165 5.096,3.281l17.936,36.208c1.739,3.66 -0.954,8.585 -5.373,8.656l-36.119,0c-4.022,-0.064 -7.322,-4.631 -5.352,-8.696l18.271,-36.207c0.342,-0.65 0.498,-0.838 0.793,-1.179c1.186,-1.375 2.483,-2.111 4.748,-2.063Zm-0.295,3.997c-0.687,0.034 -1.316,0.419 -1.659,1.017c-6.312,11.979 -12.397,24.081 -18.301,36.267c-0.546,1.225 0.391,2.797 1.762,2.863c12.06,0.195 24.125,0.195 36.185,0c1.325,-0.064 2.321,-1.584 1.769,-2.85c-5.793,-12.184 -11.765,-24.286 -17.966,-36.267c-0.366,-0.651 -0.903,-1.042 -1.79,-1.03Z"></path><path d="M33.631,40.581l-3.348,0l-0.368,-16.449l4.1,0l-0.384,16.449Zm-3.828,5.03c0,-0.609 0.197,-1.113 0.592,-1.514c0.396,-0.4 0.935,-0.601 1.618,-0.601c0.684,0 1.223,0.201 1.618,0.601c0.395,0.401 0.593,0.905 0.593,1.514c0,0.587 -0.193,1.078 -0.577,1.473c-0.385,0.395 -0.929,0.593 -1.634,0.593c-0.705,0 -1.249,-0.198 -1.634,-0.593c-0.384,-0.395 -0.576,-0.886 -0.576,-1.473Z"></path></svg>');
 
-function Gn(o) {
-  var t = Zn();
+function Zn(o) {
+  var t = Gn();
   n(o, t)
 }
 var Xn = ne('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" height="20" width="20" data-sonner-info-icon=""><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd"></path></svg>');
@@ -791,12 +791,12 @@ function Jn(o) {
   n(o, t)
 }
 const pn = 3,
-  Ke = "24px",
+  We = "24px",
   Ye = "16px",
   $n = 4e3,
   ta = 356,
   ea = 14,
-  Ae = "dark",
+  Ce = "dark",
   re = "light";
 
 function na(o, t) {
@@ -804,16 +804,16 @@ function na(o, t) {
   return [o, t].forEach((S, M) => {
     const L = M === 1,
       V = L ? "--mobile-offset" : "--offset",
-      Bt = L ? Ye : Ke;
+      Bt = L ? Ye : We;
 
-    function $(k) {
-      ["top", "right", "bottom", "left"].forEach(X => {
-        l[`${V}-${X}`] = typeof k == "number" ? `${k}px` : k
+    function $(N) {
+      ["top", "right", "bottom", "left"].forEach(q => {
+        l[`${V}-${q}`] = typeof N == "number" ? `${N}px` : N
       })
     }
-    typeof S == "number" || typeof S == "string" ? $(S) : typeof S == "object" ? ["top", "right", "bottom", "left"].forEach(k => {
-      const X = S[k];
-      X === void 0 ? l[`${V}-${k}`] = Bt : l[`${V}-${k}`] = typeof X == "number" ? `${X}px` : X
+    typeof S == "number" || typeof S == "string" ? $(S) : typeof S == "object" ? ["top", "right", "bottom", "left"].forEach(N => {
+      const q = S[N];
+      q === void 0 ? l[`${V}-${N}`] = Bt : l[`${V}-${N}`] = typeof q == "number" ? `${q}px` : q
     }) : $(Bt)
   }), l
 }
@@ -824,16 +824,16 @@ function ia(o, t) {
   de(t, !0);
 
   function l(r) {
-    return r !== "system" ? r : typeof window < "u" && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? Ae : re
+    return r !== "system" ? r : typeof window < "u" && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? Ce : re
   }
   let S = O(t, "invert", 3, !1),
     M = O(t, "position", 3, "bottom-right"),
     L = O(t, "hotkey", 19, () => ["altKey", "KeyT"]),
     V = O(t, "expand", 3, !1),
     Bt = O(t, "closeButton", 3, !1),
-    $ = O(t, "offset", 3, Ke),
-    k = O(t, "mobileOffset", 3, Ye),
-    X = O(t, "theme", 3, "light"),
+    $ = O(t, "offset", 3, We),
+    N = O(t, "mobileOffset", 3, Ye),
+    q = O(t, "theme", 3, "light"),
     Lt = O(t, "richColors", 3, !1),
     zt = O(t, "duration", 3, $n),
     Ut = O(t, "visibleToasts", 3, pn),
@@ -850,53 +850,53 @@ function ia(o, t) {
     const r = document.documentElement.getAttribute("dir");
     return r === "auto" || !r ? ($t(() => bt(window.getComputedStyle(document.documentElement).direction ?? "ltr")), bt()) : ($t(() => bt(r)), r)
   }
-  const ve = b(() => Array.from(new Set([M(), ...G.toasts.filter(r => r.position).map(r => r.position)].filter(Boolean))));
+  const ve = b(() => Array.from(new Set([M(), ...Z.toasts.filter(r => r.position).map(r => r.position)].filter(Boolean))));
   let E = R(!1),
     ft = R(!1),
-    Ct = R(Ue(l(X()))),
+    At = R(Ue(l(q()))),
     Dt = R(void 0),
     vt = R(null),
-    At = R(!1);
+    Ct = R(!1);
   const me = b(() => L().join("+").replace(/Key/g, "").replace(/Digit/g, ""));
   _t(() => {
-    G.toasts.length <= 1 && f(E, !1)
+    Z.toasts.length <= 1 && f(E, !1)
   }), _t(() => {
-    const r = G.toasts.filter(u => u.dismiss && !u.delete);
+    const r = Z.toasts.filter(u => u.dismiss && !u.delete);
     if (r.length > 0) {
-      const u = G.toasts.map(F => r.find(st => st.id === F.id) ? {
+      const u = Z.toasts.map(F => r.find(st => st.id === F.id) ? {
         ...F,
         delete: !0
       } : F);
-      G.toasts = u
+      Z.toasts = u
     }
   }), _t(() => () => {
     e(Dt) && e(vt) && (e(vt).focus({
       preventScroll: !0
-    }), f(vt, null), f(At, !1))
-  }), pt(() => (G.reset(), le(document, "keydown", u => {
-    var yt, st;
-    L().every(Ht => u[Ht] || u.code === Ht) && (f(E, !0), (yt = e(Dt)) == null || yt.focus()), u.code === "Escape" && (document.activeElement === e(Dt) || (st = e(Dt)) != null && st.contains(document.activeElement)) && f(E, !1)
+    }), f(vt, null), f(Ct, !1))
+  }), pt(() => (Z.reset(), le(document, "keydown", u => {
+    var wt, st;
+    L().every(Ht => u[Ht] || u.code === Ht) && (f(E, !0), (wt = e(Dt)) == null || wt.focus()), u.code === "Escape" && (document.activeElement === e(Dt) || (st = e(Dt)) != null && st.contains(document.activeElement)) && f(E, !1)
   }))), _t(() => {
-    if (X() !== "system" && f(Ct, X()), typeof window < "u") {
-      X() === "system" && (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? f(Ct, Ae) : f(Ct, re));
+    if (q() !== "system" && f(At, q()), typeof window < "u") {
+      q() === "system" && (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? f(At, Ce) : f(At, re));
       const r = window.matchMedia("(prefers-color-scheme: dark)"),
         u = ({
           matches: F
         }) => {
-          f(Ct, F ? Ae : re, !0)
+          f(At, F ? Ce : re, !0)
         };
       "addEventListener" in r ? r.addEventListener("change", u) : r.addListener(u)
     }
   });
   const Et = r => {
       var u;
-      (u = t.onblur) == null || u.call(t, r), e(At) && !r.currentTarget.contains(r.relatedTarget) && (f(At, !1), e(vt) && (e(vt).focus({
+      (u = t.onblur) == null || u.call(t, r), e(Ct) && !r.currentTarget.contains(r.relatedTarget) && (f(Ct, !1), e(vt) && (e(vt).focus({
         preventScroll: !0
       }), f(vt, null)))
     },
     ae = r => {
       var F;
-      (F = t.onfocus) == null || F.call(t, r), !(r.target instanceof HTMLElement && r.target.dataset.dismissable === "false") && (e(At) || (f(At, !0), f(vt, r.relatedTarget, !0)))
+      (F = t.onfocus) == null || F.call(t, r), !(r.target instanceof HTMLElement && r.target.dataset.dismissable === "false") && (e(Ct) || (f(Ct, !0), f(vt, r.relatedTarget, !0)))
     },
     ge = r => {
       var F;
@@ -910,7 +910,7 @@ function ia(o, t) {
       var u;
       (u = t.onmouseleave) == null || u.call(t, r), e(ft) || f(E, !1)
     },
-    Wt = r => {
+    Kt = r => {
       var u;
       (u = t.onmousemove) == null || u.call(t, r), f(E, !0)
     },
@@ -924,45 +924,45 @@ function ia(o, t) {
     };
   In.set(new ln);
   var Pt = oa();
-  C(Pt, "tabindex", -1);
-  var Kt = ot(Pt);
+  A(Pt, "tabindex", -1);
+  var Wt = ot(Pt);
   {
     var oe = r => {
       var u = g(),
         F = v(u);
-      Pe(F, 18, () => e(ve), yt => yt, (yt, st, Ht, Oe) => {
+      Pe(F, 18, () => e(ve), wt => wt, (wt, st, Ht, Oe) => {
         const ie = b(() => {
-            const [W, y] = st.split("-");
+            const [K, w] = st.split("-");
             return {
-              y: W,
-              x: y
+              y: K,
+              x: w
             }
           }),
-          mt = b(() => na($(), k()));
-        var wt = aa();
-        un(wt, (W, y) => ({
+          mt = b(() => na($(), N()));
+        var yt = aa();
+        un(yt, (K, w) => ({
           tabindex: -1,
-          dir: W,
+          dir: K,
           class: t.class,
           "data-sonner-toaster": !0,
-          "data-sonner-theme": e(Ct),
+          "data-sonner-theme": e(At),
           "data-y-position": e(ie).y,
           "data-x-position": e(ie).x,
           style: t.style,
           onblur: Et,
           onfocus: ae,
           onmouseenter: he,
-          onmousemove: Wt,
+          onmousemove: Kt,
           onmouseleave: _e,
           ondragend: at,
           onpointerdown: ge,
           onpointerup: be,
           ...Vt,
-          [fn]: y
+          [fn]: w
         }), [fe, () => {
-          var W;
+          var K;
           return {
-            "--front-toast-height": `${(W=G.heights[0])==null?void 0:W.height}px`,
+            "--front-toast-height": `${(K=Z.heights[0])==null?void 0:K.height}px`,
             "--width": `${ta}px`,
             "--gap": `${kt()}px`,
             "--offset-top": e(mt)["--offset-top"],
@@ -974,147 +974,147 @@ function ia(o, t) {
             "--mobile-offset-bottom": e(mt)["--mobile-offset-bottom"],
             "--mobile-offset-left": e(mt)["--mobile-offset-left"]
           }
-        }], void 0, "svelte-tppj9g"), Pe(wt, 23, () => G.toasts.filter(W => !W.position && e(Ht) === 0 || W.position === st), W => W.id, (W, y, se, ye) => {
+        }], void 0, "svelte-tppj9g"), Pe(yt, 23, () => Z.toasts.filter(K => !K.position && e(Ht) === 0 || K.position === st), K => K.id, (K, w, se, we) => {
           {
-            const we = m => {
-                var q = g(),
-                  rt = v(q);
+            const ye = m => {
+                var X = g(),
+                  rt = v(X);
                 {
                   var lt = a => {
                       var d = g(),
                         D = v(d);
                       it(D, () => t.successIcon ?? ht), n(a, d)
                     },
-                    w = a => {
+                    y = a => {
                       var d = g(),
                         D = v(d);
                       {
-                        var H = i => {
-                          Wn(i)
+                        var k = i => {
+                          Kn(i)
                         };
                         I(D, i => {
-                          t.successIcon !== null && i(H)
+                          t.successIcon !== null && i(k)
                         }, !0)
                       }
                       n(a, d)
                     };
                   I(rt, a => {
-                    t.successIcon ? a(lt) : a(w, !1)
+                    t.successIcon ? a(lt) : a(y, !1)
                   })
                 }
-                n(m, q)
+                n(m, X)
               },
               xe = m => {
-                var q = g(),
-                  rt = v(q);
+                var X = g(),
+                  rt = v(X);
                 {
                   var lt = a => {
                       var d = g(),
                         D = v(d);
                       it(D, () => t.errorIcon ?? ht), n(a, d)
                     },
-                    w = a => {
+                    y = a => {
                       var d = g(),
                         D = v(d);
                       {
-                        var H = i => {
+                        var k = i => {
                           Yn(i)
                         };
                         I(D, i => {
-                          t.errorIcon !== null && i(H)
+                          t.errorIcon !== null && i(k)
                         }, !0)
                       }
                       n(a, d)
                     };
                   I(rt, a => {
-                    t.errorIcon ? a(lt) : a(w, !1)
+                    t.errorIcon ? a(lt) : a(y, !1)
                   })
                 }
-                n(m, q)
+                n(m, X)
               },
               Ie = m => {
-                var q = g(),
-                  rt = v(q);
+                var X = g(),
+                  rt = v(X);
                 {
                   var lt = a => {
                       var d = g(),
                         D = v(d);
                       it(D, () => t.warningIcon ?? ht), n(a, d)
                     },
-                    w = a => {
+                    y = a => {
                       var d = g(),
                         D = v(d);
                       {
-                        var H = i => {
-                          Gn(i)
+                        var k = i => {
+                          Zn(i)
                         };
                         I(D, i => {
-                          t.warningIcon !== null && i(H)
+                          t.warningIcon !== null && i(k)
                         }, !0)
                       }
                       n(a, d)
                     };
                   I(rt, a => {
-                    t.warningIcon ? a(lt) : a(w, !1)
+                    t.warningIcon ? a(lt) : a(y, !1)
                   })
                 }
-                n(m, q)
+                n(m, X)
               },
               Te = m => {
-                var q = g(),
-                  rt = v(q);
+                var X = g(),
+                  rt = v(X);
                 {
                   var lt = a => {
                       var d = g(),
                         D = v(d);
                       it(D, () => t.infoIcon ?? ht), n(a, d)
                     },
-                    w = a => {
+                    y = a => {
                       var d = g(),
                         D = v(d);
                       {
-                        var H = i => {
+                        var k = i => {
                           qn(i)
                         };
                         I(D, i => {
-                          t.infoIcon !== null && i(H)
+                          t.infoIcon !== null && i(k)
                         }, !0)
                       }
                       n(a, d)
                     };
                   I(rt, a => {
-                    t.infoIcon ? a(lt) : a(w, !1)
+                    t.infoIcon ? a(lt) : a(y, !1)
                   })
                 }
-                n(m, q)
+                n(m, X)
               },
               s = m => {
-                var q = g(),
-                  rt = v(q);
+                var X = g(),
+                  rt = v(X);
                 {
                   var lt = a => {
                       var d = g(),
                         D = v(d);
                       it(D, () => t.closeIcon ?? ht), n(a, d)
                     },
-                    w = a => {
+                    y = a => {
                       var d = g(),
                         D = v(d);
                       {
-                        var H = i => {
+                        var k = i => {
                           Jn(i)
                         };
                         I(D, i => {
-                          t.closeIcon !== null && i(H)
+                          t.closeIcon !== null && i(k)
                         }, !0)
                       }
                       n(a, d)
                     };
                   I(rt, a => {
-                    t.closeIcon ? a(lt) : a(w, !1)
+                    t.closeIcon ? a(lt) : a(y, !1)
                   })
                 }
-                n(m, q)
+                n(m, X)
               };
             let c = b(() => {
                 var m;
@@ -1133,7 +1133,7 @@ function ia(o, t) {
                 return ((m = Q()) == null ? void 0 : m.style) ?? ""
               }),
               h = b(() => Q().classes || {}),
-              K = b(() => Q().unstyled ?? !1),
+              W = b(() => Q().unstyled ?? !1),
               tt = b(() => {
                 var m;
                 return ((m = Q()) == null ? void 0 : m.cancelButtonStyle) ?? ""
@@ -1146,12 +1146,12 @@ function ia(o, t) {
                 var m;
                 return ((m = Q()) == null ? void 0 : m.closeButtonAriaLabel) ?? ut()
               });
-            Un(W, {
+            Un(K, {
               get index() {
                 return e(se)
               },
               get toast() {
-                return e(y)
+                return e(w)
               },
               get defaultRichColors() {
                 return Lt()
@@ -1187,7 +1187,7 @@ function ia(o, t) {
                 return e(h)
               },
               get unstyled() {
-                return e(K)
+                return e(W)
               },
               get cancelButtonStyle() {
                 return e(tt)
@@ -1207,7 +1207,7 @@ function ia(o, t) {
               get loadingIcon() {
                 return t.loadingIcon
               },
-              successIcon: we,
+              successIcon: ye,
               errorIcon: xe,
               warningIcon: Ie,
               infoIcon: Te,
@@ -1221,22 +1221,20 @@ function ia(o, t) {
               }
             })
           }
-        }), p(wt), We(wt, W => f(Dt, W), () => e(Dt)), J(() => wt.dir = wt.dir), n(yt, wt)
+        }), p(yt), Ke(yt, K => f(Dt, K), () => e(Dt)), J(() => yt.dir = yt.dir), n(wt, yt)
       }), n(r, u)
     };
-    I(Kt, r => {
-      G.toasts.length > 0 && r(oe)
+    I(Wt, r => {
+      Z.toasts.length > 0 && r(oe)
     })
   }
-  p(Pt), J(() => C(Pt, "aria-label", `${nt()??""} ${e(me)??""}`)), n(o, Pt), ue()
+  p(Pt), J(() => A(Pt, "aria-label", `${nt()??""} ${e(me)??""}`)), n(o, Pt), ue()
 }
 var sa = et('<span class="hidden"> </span> <!> <!>', 1);
 
 function Ta(o, t) {
   de(t, !0), pt(() => {
-    cn.refresh(), navigator.serviceWorker.controller || navigator.serviceWorker.ready.then(k => {
-      k.active && location.reload()
-    });
+    cn.refresh();
     let $ = setInterval(() => {
       sn()
     }, 5e3);
@@ -1250,10 +1248,10 @@ function Ta(o, t) {
   }), _t(() => {
     {
       const $ = Fe.muted;
-      document.querySelectorAll("audio").forEach(k => {
-        k.muted = $
+      document.querySelectorAll("audio").forEach(N => {
+        N.muted = $
       });
-      for (const k of Object.values(on)) k.muted = $, $ || (k.volume = .3);
+      for (const N of Object.values(on)) N.muted = $, $ || (N.volume = .3);
       localStorage.setItem(l, Number($).toString())
     }
   }), pt(() => {});

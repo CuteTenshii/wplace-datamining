@@ -1,58 +1,58 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["../nodes/0.CCKTPMGO.js", "../chunks/Bzak7iHL.js", "../chunks/CmeQcTji.js", "../chunks/Bq4S7hUq.js", "../chunks/CnWe-B5l.js", "../chunks/C-OgoB3c.js", "../chunks/BcR8GjwH.js", "../chunks/WS7vKrRI.js", "../chunks/C5GsJ62f.js", "../chunks/UxJc7UTe.js", "../chunks/n8wNSQ8-.js", "../chunks/D6aoU8vd.js", "../chunks/wPcC_KkO.js", "../chunks/DD24tlqR.js", "../chunks/BjUGmSCg.js", "../assets/0.-k9OGAyr.css", "../nodes/1.DD0kX2qz.js", "../chunks/BR4JkUW8.js", "../chunks/Cu9o6WPv.js", "../chunks/BWx6ETRK.js", "../nodes/2.DukCi-2r.js", "../chunks/CXrG6KWm.js", "../chunks/DiuzESsp.js", "../assets/ProfileAvatarWithLevel.6dmPRSfx.css", "../chunks/DYXosLyc.js", "../chunks/DU22SfNs.js", "../assets/LoginForm.CxMG0irz.css", "../chunks/Dp1pzeXC.js", "../chunks/DWDXkU1D.js", "../assets/2.DyRArBtB.css", "../nodes/3.B8iQbQts.js", "../chunks/1mTheT_N.js", "../nodes/4.fdd6qSwD.js", "../nodes/5.CAnFIPNu.js", "../nodes/6.7gSO1wJm.js", "../nodes/7.CuWRr0r0.js", "../assets/7.BD1hRFPA.css", "../nodes/8.eYeu4k9o.js", "../assets/8.B8VXfLeS.css", "../nodes/9.D50CTtfA.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["../nodes/0.DWSD1qiP.js", "../chunks/Bzak7iHL.js", "../chunks/6FCTZllW.js", "../chunks/BwVUyGIA.js", "../chunks/CPizFUA8.js", "../chunks/XXNhj5_-.js", "../chunks/CeYH3C4l.js", "../chunks/B3dSYhC2.js", "../chunks/C6xrklYy.js", "../chunks/C5GsJ62f.js", "../chunks/z_PNeqDz.js", "../chunks/DmkVHxMj.js", "../chunks/Crmhm9hm.js", "../chunks/BKzXkE-b.js", "../chunks/Bvf9BrkZ.js", "../chunks/BfueqGZ_.js", "../assets/0.BjksSP2U.css", "../nodes/1.Dozx3BuA.js", "../chunks/NPIE4cOd.js", "../chunks/lGW4SM1M.js", "../chunks/4u8_Guht.js", "../nodes/2.BILzNrsv.js", "../chunks/sHlAVt6N.js", "../chunks/DkMuKVJi.js", "../chunks/CiecCMiT.js", "../chunks/LG3T0GE9.js", "../assets/ProfileAvatarWithLevel.6dmPRSfx.css", "../chunks/jALvWYRL.js", "../chunks/BGJiOXDJ.js", "../assets/LoginForm.CxMG0irz.css", "../chunks/Dp1pzeXC.js", "../chunks/B_1B2yUM.js", "../chunks/JUeJ2Gte.js", "../assets/2.BtKF873c.css", "../nodes/3.DH4CR1P7.js", "../nodes/4.D_MoaSoy.js", "../chunks/1mTheT_N.js", "../nodes/5.D09oyjEJ.js", "../nodes/6.Cr2U0TyO.js", "../nodes/7.BGyrzH2L.js", "../nodes/8.C6YBx9wo.js", "../nodes/9.CMr6gsdR.js", "../assets/9.BD1hRFPA.css", "../nodes/10.1r2H9MtP.js", "../assets/10.B8VXfLeS.css", "../nodes/11.DWf5O3B1.js"]))) => i.map(i => d[i]);
 var M = e => {
   throw TypeError(e)
 };
-var q = (e, t, r) => t.has(e) || M("Cannot " + r);
-var o = (e, t, r) => (q(e, t, "read from private field"), r ? r.call(e) : t.get(e)),
+var B = (e, t, r) => t.has(e) || M("Cannot " + r);
+var o = (e, t, r) => (B(e, t, "read from private field"), r ? r.call(e) : t.get(e)),
   A = (e, t, r) => t.has(e) ? M("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(e) : t.set(e, r),
-  I = (e, t, r, n) => (q(e, t, "write to private field"), n ? n.call(e, r) : t.set(e, r), r);
+  L = (e, t, r, i) => (B(e, t, "write to private field"), i ? i.call(e, r) : t.set(e, r), r);
 import {
-  _
+  _ as m
 } from "../chunks/Dp1pzeXC.js";
 import {
-  aI as O,
-  aP as K,
-  y as l,
-  au as N,
-  aR as Q,
-  P as W,
+  aH as b,
+  aO as J,
+  A as l,
+  av as K,
+  aQ as N,
+  V as W,
   p as X,
-  u as Z,
-  q as $,
-  aS as L,
-  aA as tt,
+  v as Z,
+  w as $,
+  aR as T,
+  aB as tt,
   f as G,
-  a as R,
+  a as O,
   s as et,
-  b as P,
+  b as y,
   c as rt,
-  aT as T,
+  aS as V,
   d as at,
   r as st,
-  aU as V,
-  aV as ot,
-  t as nt
-} from "../chunks/Bq4S7hUq.js";
+  aT as D,
+  aU as ot,
+  t as it
+} from "../chunks/BwVUyGIA.js";
 import {
-  h as it,
-  m as ct,
-  u as mt,
-  s as ut
-} from "../chunks/CnWe-B5l.js";
+  h as nt,
+  m as mt,
+  u as _t,
+  s as ct
+} from "../chunks/CPizFUA8.js";
 import "../chunks/Bzak7iHL.js";
 import {
-  o as _t
-} from "../chunks/CmeQcTji.js";
+  o as ut
+} from "../chunks/6FCTZllW.js";
 import {
-  p as x,
-  i as D
-} from "../chunks/UxJc7UTe.js";
+  p as I,
+  i as x
+} from "../chunks/z_PNeqDz.js";
 import {
   c as w
-} from "../chunks/DD24tlqR.js";
+} from "../chunks/Bvf9BrkZ.js";
 import {
   b as j
-} from "../chunks/wPcC_KkO.js";
+} from "../chunks/BKzXkE-b.js";
 
 function lt(e) {
   return class extends dt {
@@ -64,14 +64,14 @@ function lt(e) {
     }
   }
 }
-var d, c;
+var d, _;
 class dt {
   constructor(t) {
     A(this, d);
-    A(this, c);
+    A(this, _);
     var E;
     var r = new Map,
-      n = (a, s) => {
+      i = (a, s) => {
         var f = W(s, !1, !1);
         return r.set(a, f), f
       };
@@ -80,88 +80,88 @@ class dt {
       $$events: {}
     }, {
       get(a, s) {
-        return l(r.get(s) ?? n(s, Reflect.get(a, s)))
+        return l(r.get(s) ?? i(s, Reflect.get(a, s)))
       },
       has(a, s) {
-        return s === K ? !0 : (l(r.get(s) ?? n(s, Reflect.get(a, s))), Reflect.has(a, s))
+        return s === J ? !0 : (l(r.get(s) ?? i(s, Reflect.get(a, s))), Reflect.has(a, s))
       },
       set(a, s, f) {
-        return O(r.get(s) ?? n(s, f), f), Reflect.set(a, s, f)
+        return b(r.get(s) ?? i(s, f), f), Reflect.set(a, s, f)
       }
     });
-    I(this, c, (t.hydrate ? it : ct)(t.component, {
+    L(this, _, (t.hydrate ? nt : mt)(t.component, {
       target: t.target,
       anchor: t.anchor,
       props: u,
       context: t.context,
       intro: t.intro ?? !1,
       recover: t.recover
-    })), (!((E = t == null ? void 0 : t.props) != null && E.$$host) || t.sync === !1) && N(), I(this, d, u.$$events);
-    for (const a of Object.keys(o(this, c))) a === "$set" || a === "$destroy" || a === "$on" || Q(this, a, {
+    })), (!((E = t == null ? void 0 : t.props) != null && E.$$host) || t.sync === !1) && K(), L(this, d, u.$$events);
+    for (const a of Object.keys(o(this, _))) a === "$set" || a === "$destroy" || a === "$on" || N(this, a, {
       get() {
-        return o(this, c)[a]
+        return o(this, _)[a]
       },
       set(s) {
-        o(this, c)[a] = s
+        o(this, _)[a] = s
       },
       enumerable: !0
     });
-    o(this, c).$set = a => {
+    o(this, _).$set = a => {
       Object.assign(u, a)
-    }, o(this, c).$destroy = () => {
-      mt(o(this, c))
+    }, o(this, _).$destroy = () => {
+      _t(o(this, _))
     }
   }
   $set(t) {
-    o(this, c).$set(t)
+    o(this, _).$set(t)
   }
   $on(t, r) {
     o(this, d)[t] = o(this, d)[t] || [];
-    const n = (...u) => r.call(this, ...u);
-    return o(this, d)[t].push(n), () => {
-      o(this, d)[t] = o(this, d)[t].filter(u => u !== n)
+    const i = (...u) => r.call(this, ...u);
+    return o(this, d)[t].push(i), () => {
+      o(this, d)[t] = o(this, d)[t].filter(u => u !== i)
     }
   }
   $destroy() {
-    o(this, c).$destroy()
+    o(this, _).$destroy()
   }
 }
-d = new WeakMap, c = new WeakMap;
-const Vt = {};
+d = new WeakMap, _ = new WeakMap;
+const Dt = {};
 var ft = G('<div id="svelte-announcer" aria-live="assertive" aria-atomic="true" style="position: absolute; left: 0; top: 0; clip: rect(0 0 0 0); clip-path: inset(50%); overflow: hidden; white-space: nowrap; width: 1px; height: 1px"><!></div>'),
-  ht = G("<!> <!>", 1);
+  vt = G("<!> <!>", 1);
 
-function vt(e, t) {
+function ht(e, t) {
   X(t, !0);
-  let r = x(t, "components", 23, () => []),
-    n = x(t, "data_0", 3, null),
-    u = x(t, "data_1", 3, null);
+  let r = I(t, "components", 23, () => []),
+    i = I(t, "data_0", 3, null),
+    u = I(t, "data_1", 3, null);
   Z(() => t.stores.page.set(t.page)), $(() => {
-    t.stores, t.page, t.constructors, r(), t.form, n(), u(), t.stores.page.notify()
+    t.stores, t.page, t.constructors, r(), t.form, i(), u(), t.stores.page.notify()
   });
-  let E = L(!1),
-    a = L(!1),
-    s = L(null);
-  _t(() => {
-    const i = t.stores.page.subscribe(() => {
-      l(E) && (O(a, !0), tt().then(() => {
-        O(s, document.title || "untitled page", !0)
+  let E = T(!1),
+    a = T(!1),
+    s = T(null);
+  ut(() => {
+    const n = t.stores.page.subscribe(() => {
+      l(E) && (b(a, !0), tt().then(() => {
+        b(s, document.title || "untitled page", !0)
       }))
     });
-    return O(E, !0), i
+    return b(E, !0), n
   });
-  const f = V(() => t.constructors[1]);
-  var k = ht(),
-    C = R(k);
+  const f = D(() => t.constructors[1]);
+  var k = vt(),
+    C = O(k);
   {
-    var U = i => {
-        const h = V(() => t.constructors[0]);
-        var v = T(),
-          p = R(v);
-        w(p, () => l(h), (g, y) => {
-          j(y(g, {
+    var H = n => {
+        const v = D(() => t.constructors[0]);
+        var h = V(),
+          P = O(h);
+        w(P, () => l(v), (g, p) => {
+          j(p(g, {
             get data() {
-              return n()
+              return i()
             },
             get form() {
               return t.form
@@ -169,11 +169,11 @@ function vt(e, t) {
             get params() {
               return t.page.params
             },
-            children: (m, yt) => {
-              var S = T(),
-                F = R(S);
-              w(F, () => l(f), (H, J) => {
-                j(J(H, {
+            children: (c, pt) => {
+              var S = V(),
+                q = O(S);
+              w(q, () => l(f), (z, F) => {
+                j(F(z, {
                   get data() {
                     return u()
                   },
@@ -183,29 +183,29 @@ function vt(e, t) {
                   get params() {
                     return t.page.params
                   }
-                }), b => r()[1] = b, () => {
-                  var b;
-                  return (b = r()) == null ? void 0 : b[1]
+                }), R => r()[1] = R, () => {
+                  var R;
+                  return (R = r()) == null ? void 0 : R[1]
                 })
-              }), P(m, S)
+              }), y(c, S)
             },
             $$slots: {
               default: !0
             }
-          }), m => r()[0] = m, () => {
-            var m;
-            return (m = r()) == null ? void 0 : m[0]
+          }), c => r()[0] = c, () => {
+            var c;
+            return (c = r()) == null ? void 0 : c[0]
           })
-        }), P(i, v)
+        }), y(n, h)
       },
-      Y = i => {
-        const h = V(() => t.constructors[0]);
-        var v = T(),
-          p = R(v);
-        w(p, () => l(h), (g, y) => {
-          j(y(g, {
+      Q = n => {
+        const v = D(() => t.constructors[0]);
+        var h = V(),
+          P = O(h);
+        w(P, () => l(v), (g, p) => {
+          j(p(g, {
             get data() {
-              return n()
+              return i()
             },
             get form() {
               return t.form
@@ -213,50 +213,52 @@ function vt(e, t) {
             get params() {
               return t.page.params
             }
-          }), m => r()[0] = m, () => {
-            var m;
-            return (m = r()) == null ? void 0 : m[0]
+          }), c => r()[0] = c, () => {
+            var c;
+            return (c = r()) == null ? void 0 : c[0]
           })
-        }), P(i, v)
+        }), y(n, h)
       };
-    D(C, i => {
-      t.constructors[1] ? i(U) : i(Y, !1)
+    x(C, n => {
+      t.constructors[1] ? n(H) : n(Q, !1)
     })
   }
-  var z = et(C, 2);
+  var U = et(C, 2);
   {
-    var B = i => {
-      var h = ft(),
-        v = at(h);
+    var Y = n => {
+      var v = ft(),
+        h = at(v);
       {
-        var p = g => {
-          var y = ot();
-          nt(() => ut(y, l(s))), P(g, y)
+        var P = g => {
+          var p = ot();
+          it(() => ct(p, l(s))), y(g, p)
         };
-        D(v, g => {
-          l(a) && g(p)
+        x(h, g => {
+          l(a) && g(P)
         })
       }
-      st(h), P(i, h)
+      st(v), y(n, v)
     };
-    D(z, i => {
-      l(E) && i(B)
+    x(U, n => {
+      l(E) && n(Y)
     })
   }
-  P(e, k), rt()
+  y(e, k), rt()
 }
-const xt = lt(vt),
-  Dt = [() => _(() => import("../nodes/0.CCKTPMGO.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]), import.meta.url), () => _(() => import("../nodes/1.DD0kX2qz.js"), __vite__mapDeps([16, 1, 14, 3, 4, 17, 18, 19, 2, 5]), import.meta.url), () => _(() => import("../nodes/2.DukCi-2r.js"), __vite__mapDeps([20, 1, 2, 3, 4, 9, 11, 10, 18, 19, 5, 7, 8, 6, 21, 12, 22, 23, 14, 17, 24, 13, 25, 26, 27, 28, 29]), import.meta.url), () => _(() => import("../nodes/3.B8iQbQts.js"), __vite__mapDeps([30, 1, 2, 3, 4, 9, 19, 5, 18, 7, 8, 25, 11, 12, 24, 26, 31]), import.meta.url), () => _(() => import("../nodes/4.fdd6qSwD.js"), __vite__mapDeps([32, 1, 14, 3, 4, 17, 24, 9, 11, 28, 8]), import.meta.url), () => _(() => import("../nodes/5.CAnFIPNu.js"), __vite__mapDeps([33, 1, 2, 3, 4, 9, 21, 18, 19, 5, 7, 8, 24, 11, 31]), import.meta.url), () => _(() => import("../nodes/6.7gSO1wJm.js"), __vite__mapDeps([34, 1, 3, 4, 9, 10, 11, 22, 8, 7, 2, 12, 19, 5, 21, 23]), import.meta.url), () => _(() => import("../nodes/7.CuWRr0r0.js"), __vite__mapDeps([35, 1, 14, 3, 24, 9, 11, 36]), import.meta.url), () => _(() => import("../nodes/8.eYeu4k9o.js"), __vite__mapDeps([37, 1, 14, 3, 24, 9, 11, 38]), import.meta.url), () => _(() => import("../nodes/9.D50CTtfA.js"), __vite__mapDeps([39, 1, 14, 3, 24, 9, 11, 36]), import.meta.url)],
+const It = lt(ht),
+  xt = [() => m(() => import("../nodes/0.DWSD1qiP.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]), import.meta.url), () => m(() => import("../nodes/1.Dozx3BuA.js"), __vite__mapDeps([17, 1, 15, 3, 4, 5, 18, 19, 20, 2, 6]), import.meta.url), () => m(() => import("../nodes/2.BILzNrsv.js"), __vite__mapDeps([21, 1, 2, 3, 4, 5, 10, 12, 22, 11, 9, 19, 20, 6, 8, 7, 23, 13, 24, 25, 26, 15, 18, 27, 14, 28, 29, 30, 31, 32, 33]), import.meta.url), () => m(() => import("../nodes/3.DH4CR1P7.js"), __vite__mapDeps([34, 1, 15, 3, 27, 10, 12]), import.meta.url), () => m(() => import("../nodes/4.D_MoaSoy.js"), __vite__mapDeps([35, 1, 2, 3, 4, 5, 10, 20, 6, 19, 8, 9, 28, 12, 13, 27, 29, 36]), import.meta.url), () => m(() => import("../nodes/5.D09oyjEJ.js"), __vite__mapDeps([37, 1, 2, 3, 4, 5, 10, 11, 12, 22, 9, 20, 6, 19, 8, 25, 23, 31]), import.meta.url), () => m(() => import("../nodes/6.Cr2U0TyO.js"), __vite__mapDeps([38, 1, 15, 3, 4, 5, 18, 27, 10, 12, 31, 9, 32]), import.meta.url), () => m(() => import("../nodes/7.BGyrzH2L.js"), __vite__mapDeps([39, 1, 2, 3, 4, 5, 10, 23, 19, 20, 6, 8, 9, 27, 12, 36]), import.meta.url), () => m(() => import("../nodes/8.C6YBx9wo.js"), __vite__mapDeps([40, 1, 3, 4, 5, 10, 11, 12, 24, 9, 2, 13, 20, 6, 8, 25, 23, 26]), import.meta.url), () => m(() => import("../nodes/9.CMr6gsdR.js"), __vite__mapDeps([41, 1, 15, 3, 5, 27, 10, 12, 42]), import.meta.url), () => m(() => import("../nodes/10.1r2H9MtP.js"), __vite__mapDeps([43, 1, 15, 3, 5, 27, 10, 12, 44]), import.meta.url), () => m(() => import("../nodes/11.DWf5O3B1.js"), __vite__mapDeps([45, 1, 15, 3, 5, 27, 10, 12, 42]), import.meta.url)],
   wt = [],
   jt = {
     "/": [2],
-    "/join": [3],
-    "/offline": [4],
-    "/payment/success": [5],
-    "/profile-picture": [6],
-    "/terms/privacy": [7],
-    "/terms/return": [8],
-    "/terms/terms-of-service": [9]
+    "/404": [3],
+    "/join": [4],
+    "/moderation": [5],
+    "/offline": [6],
+    "/payment/success": [7],
+    "/profile-picture": [8],
+    "/terms/privacy": [9],
+    "/terms/return": [10],
+    "/terms/terms-of-service": [11]
   },
   gt = {
     handleError: (({
@@ -271,5 +273,5 @@ const xt = lt(vt),
   kt = !1,
   Ct = (e, t) => Et[e](t);
 export {
-  Ct as decode, Et as decoders, jt as dictionary, kt as hash, gt as hooks, Vt as matchers, Dt as nodes, xt as root, wt as server_loads
+  Ct as decode, Et as decoders, jt as dictionary, kt as hash, gt as hooks, Dt as matchers, xt as nodes, It as root, wt as server_loads
 };

@@ -1,44 +1,48 @@
 import {
-  g as p
-} from "./C5GsJ62f.js";
-import "./Bzak7iHL.js";
-import {
-  aC as s,
-  b as a
-} from "./Bq4S7hUq.js";
-import {
-  a as l
-} from "./D6aoU8vd.js";
-import {
-  r as n
-} from "./UxJc7UTe.js";
-const q = () => "Refresh",
-  f = () => "Atualizar",
-  u = (o = {}, t = {}) => (t.locale ?? p()) === "en" ? q() : f();
-var v = s('<svg><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"></path></svg>');
+  u as d,
+  v as g,
+  w as i,
+  x as m,
+  y as v,
+  z as l,
+  A as p,
+  B as b,
+  C as h
+} from "./BwVUyGIA.js";
 
-function w(o, t) {
-  let e = n(t, ["$$slots", "$$events", "$$legacy"]);
-  var r = v();
-  l(r, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...e
-  })), a(o, r)
+function x(n = !1) {
+  const s = d,
+    e = s.l.u;
+  if (!e) return;
+  let r = () => b(s.s);
+  if (n) {
+    let o = 0,
+      t = {};
+    const _ = h(() => {
+      let c = !1;
+      const a = s.s;
+      for (const f in a) a[f] !== t[f] && (t[f] = a[f], c = !0);
+      return c && o++, o
+    });
+    r = () => p(_)
+  }
+  e.b.length && g(() => {
+    u(s, r), l(e.b)
+  }), i(() => {
+    const o = m(() => e.m.map(v));
+    return () => {
+      for (const t of o) typeof t == "function" && t()
+    }
+  }), e.a.length && i(() => {
+    u(s, r), l(e.a)
+  })
 }
-var c = s('<svg><path d="M790-56 414-434q-47 11-87.5 33T254-346l-84-86q32-32 69-56t79-42l-90-90q-41 21-76.5 46.5T84-516L0-602q32-32 66.5-57.5T140-708l-84-84 56-56 736 736-58 56Zm-310-64q-42 0-71-29.5T380-220q0-42 29-71t71-29q42 0 71 29t29 71q0 41-29 70.5T480-120Zm236-238-29-29-29-29-144-144q81 8 151.5 41T790-432l-74 74Zm160-158q-77-77-178.5-120.5T480-680q-21 0-40.5 1.5T400-674L298-776q44-12 89.5-18t92.5-6q142 0 265 53t215 145l-84 86Z"></path></svg>');
 
-function T(o, t) {
-  let e = n(t, ["$$slots", "$$events", "$$legacy"]);
-  var r = c();
-  l(r, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...e
-  })), a(o, r)
+function u(n, s) {
+  if (n.l.s)
+    for (const e of n.l.s) p(e);
+  s()
 }
 export {
-  w as R, T as W, u as r
+  x as i
 };

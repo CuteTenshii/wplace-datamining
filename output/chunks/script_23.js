@@ -1,48 +1,46 @@
 import {
-  o as d,
-  u as g,
-  q as i,
-  v as m,
-  w as v,
-  x as l,
-  y as p,
-  z as b,
-  A as h
-} from "./Bq4S7hUq.js";
+  t as u,
+  h as o,
+  e as l,
+  a6 as g,
+  a7 as y,
+  m as h,
+  P as p,
+  a2 as b,
+  a8 as w,
+  a9 as O,
+  aa as m,
+  I as R,
+  ab as E,
+  J as f
+} from "./BwVUyGIA.js";
 
-function x(n = !1) {
-  const s = d,
-    e = s.l.u;
-  if (!e) return;
-  let r = () => b(s.s);
-  if (n) {
-    let o = 0,
-      t = {};
-    const _ = h(() => {
-      let c = !1;
-      const a = s.s;
-      for (const f in a) a[f] !== t[f] && (t[f] = a[f], c = !0);
-      return c && o++, o
-    });
-    r = () => p(_)
-  }
-  e.b.length && g(() => {
-    u(s, r), l(e.b)
-  }), i(() => {
-    const o = m(() => e.m.map(v));
-    return () => {
-      for (const t of o) typeof t == "function" && t()
+function C(c, v, i = !1, _ = !1, N = !1) {
+  var n = c,
+    t = "";
+  u(() => {
+    var s = g;
+    if (t === (t = v() ?? "")) {
+      o && l();
+      return
     }
-  }), e.a.length && i(() => {
-    u(s, r), l(e.a)
+    if (s.nodes_start !== null && (y(s.nodes_start, s.nodes_end), s.nodes_start = s.nodes_end = null), t !== "") {
+      if (o) {
+        h.data;
+        for (var a = l(), d = a; a !== null && (a.nodeType !== p || a.data !== "");) d = a, a = b(a);
+        if (a === null) throw w(), O;
+        m(h, d), n = R(a);
+        return
+      }
+      var r = t + "";
+      i ? r = `<svg>${r}</svg>` : _ && (r = `<math>${r}</math>`);
+      var e = E(r);
+      if ((i || _) && (e = f(e)), m(f(e), e.lastChild), i || _)
+        for (; f(e);) n.before(f(e));
+      else n.before(e)
+    }
   })
 }
-
-function u(n, s) {
-  if (n.l.s)
-    for (const e of n.l.s) p(e);
-  s()
-}
 export {
-  x as i
+  C as h
 };
