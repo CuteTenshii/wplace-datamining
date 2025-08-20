@@ -77,10 +77,10 @@ const W = () => "Unexpected server error. Try again later.",
   Me = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Ee() : Te(),
   Pe = () => "Couldn't complete the purchase. This item does not exist.",
   Ae = () => "Não foi possível concluir a compra. Este item não existe.",
-  Ie = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Pe() : Ae(),
-  Ce = () => "You do not have enough droplets to buy this item.",
-  xe = () => "Você não tem gotas suficientes para comprar este item.",
-  ke = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Ce() : xe(),
+  xe = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Pe() : Ae(),
+  Ie = () => "You do not have enough droplets to buy this item.",
+  Ce = () => "Você não tem gotas suficientes para comprar este item.",
+  ke = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Ie() : Ce(),
   Be = () => "You already have this item. Please refresh the page.",
   Oe = () => "Você já possui este item. Atualize a página.",
   De = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Be() : Oe(),
@@ -132,9 +132,9 @@ const W = () => "Unexpected server error. Try again later.",
   Ma = () => "Racism, homonophobia, hate groups, ...",
   Pa = () => "Racismo, homofobia, grupos de ódio, ...",
   Aa = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Ma() : Pa(),
+  xa = () => "Griefing",
   Ia = () => "Griefing",
-  Ca = () => "Griefing",
-  xa = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Ia() : Ca(),
+  Ca = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? xa() : Ia(),
   ka = () => "Messed up artworks for no reason",
   Ba = () => "Estragar desenho dos outros sem motivo",
   Oa = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? ka() : Ba(),
@@ -166,7 +166,7 @@ const W = () => "Unexpected server error. Try again later.",
   rt = () => "Você quebrou uma das regras do Wplace",
   ot = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? nt() : rt(),
   st = {
-    griefing: xa(),
+    griefing: Ca(),
     "multi-accounting": Ka(),
     "hate-speech": Ta(),
     bot: wa(),
@@ -175,13 +175,22 @@ const W = () => "Unexpected server error. Try again later.",
     other: tt()
   },
   it = {
+    doxxing: Ra(),
+    "hate-speech": Aa(),
     griefing: Oa(),
     "multi-accounting": Ha(),
-    "hate-speech": Aa(),
     bot: Sa(),
-    doxxing: Ra(),
     "inappropriate-content": ha(),
     other: ot()
+  },
+  Lt = {
+    doxxing: "text-red-600",
+    "hate-speech": "text-red-600",
+    "inappropriate-content": "text-amber-600",
+    "multi-accounting": "text-amber-600",
+    bot: "text-amber-600",
+    griefing: "text-amber-600",
+    other: "text-blue-600"
   };
 class G extends Error {
   constructor(e, a) {
@@ -528,10 +537,10 @@ const ct = [{
   },
   pt = N,
   K = N.seasons.length - 1,
-  Lt = N.seasons[K].zoom,
-  Nt = N.seasons[K].tileSize;
+  Nt = N.seasons[K].zoom,
+  Gt = N.seasons[K].tileSize;
 
-function Gt(t) {
+function qt(t) {
   return pt.countries[t - 1]
 }
 var v;
@@ -566,7 +575,7 @@ class wt {
       if (r.status === 403) {
         if (r.headers.get("cf-mitigated") === "challenge") throw new Error(sa());
         const s = await r.json();
-        throw (s == null ? void 0 : s.error) === "refresh" ? new Error(ca()) : (It.refresh(), new Error(re()))
+        throw (s == null ? void 0 : s.error) === "refresh" ? new Error(ca()) : (xt.refresh(), new Error(re()))
       } else if (r.status === 451) {
         const s = await c[0].json(),
           h = (s == null ? void 0 : s.err) ?? "other",
@@ -750,7 +759,7 @@ class wt {
         product: e
       })
     });
-    if (a.status !== 200) throw a.status === 404 ? new Error(Ie()) : a.status === 403 ? new Error(ke()) : a.status === 409 ? new Error(De()) : new Error(i())
+    if (a.status !== 200) throw a.status === 404 ? new Error(xe()) : a.status === 403 ? new Error(ke()) : a.status === 409 ? new Error(De()) : new Error(i())
   }
   async getAlliance() {
     const e = await this.request("/alliance", {
@@ -1007,7 +1016,7 @@ class bt {
   }
 }
 
-function qt(...t) {
+function Rt(...t) {
   return t.filter(Boolean).join(" ")
 }
 const St = typeof document < "u";
@@ -1209,7 +1218,7 @@ function Tt(t, e) {
   })
 }
 var L;
-class Rt {
+class Ut {
   constructor() {
     m(this, L, D(() => g.toasts.filter(e => !e.dismiss)))
   }
@@ -1231,15 +1240,15 @@ const Mt = Tt,
     loading: g.loading,
     getActiveToasts: () => g.toasts.filter(t => !t.dismiss)
   });
-var P, A, I, C, x, k, B;
+var P, A, x, I, C, k, B;
 class At {
   constructor() {
     u(this, "channel", new BroadcastChannel("user-channel"));
     m(this, P, y());
     m(this, A, y(!0));
+    m(this, x, y(Date.now()));
     m(this, I, y(Date.now()));
-    m(this, C, y(Date.now()));
-    m(this, x, D(() => {
+    m(this, C, D(() => {
       if (!this.data) return;
       const e = this.data.charges;
       if (e.count > e.max) return e.count;
@@ -1269,22 +1278,22 @@ class At {
     _(d(this, A), e, !0)
   }
   get now() {
-    return f(d(this, I))
-  }
-  set now(e) {
-    _(d(this, I), e)
-  }
-  get lastFetch() {
-    return f(d(this, C))
-  }
-  set lastFetch(e) {
-    _(d(this, C), e)
-  }
-  get charges() {
     return f(d(this, x))
   }
-  set charges(e) {
+  set now(e) {
     _(d(this, x), e)
+  }
+  get lastFetch() {
+    return f(d(this, I))
+  }
+  set lastFetch(e) {
+    _(d(this, I), e)
+  }
+  get charges() {
+    return f(d(this, C))
+  }
+  set charges(e) {
+    _(d(this, C), e)
   }
   get cooldown() {
     return f(d(this, k))
@@ -1322,8 +1331,8 @@ class At {
     return e < 32 ? !0 : ((((n = this.data) == null ? void 0 : n.extraColorsBitmap) ?? 0) & 1 << e - 32) !== 0
   }
 }
-P = new WeakMap, A = new WeakMap, I = new WeakMap, C = new WeakMap, x = new WeakMap, k = new WeakMap, B = new WeakMap;
-const It = new At;
+P = new WeakMap, A = new WeakMap, x = new WeakMap, I = new WeakMap, C = new WeakMap, k = new WeakMap, B = new WeakMap;
+const xt = new At;
 export {
-  K as C, Ot as P, pt as S, j as a, i as b, Y as c, g as d, qt as e, Rt as f, F as g, Gt as h, ha as i, ma as j, Aa as k, Ta as l, Ra as m, Na as n, Sa as o, wa as p, Oa as q, xa as r, st as s, Pt as t, It as u, Lt as v, Nt as w, Bt as x, Dt as y
+  K as C, Ot as P, pt as S, j as a, i as b, Y as c, st as d, g as e, Rt as f, F as g, Ut as h, qt as i, ha as j, ma as k, Aa as l, Ta as m, Ra as n, Na as o, Sa as p, wa as q, Oa as r, Lt as s, Pt as t, xt as u, Ca as v, Nt as w, Gt as x, Bt as y, Dt as z
 };
