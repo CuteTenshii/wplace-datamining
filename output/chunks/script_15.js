@@ -11,7 +11,7 @@ var H = (t, e, a) => e in t ? V(t, e, {
 var u = (t, e, a) => H(t, typeof e != "symbol" ? e + "" : e, a),
   z = (t, e, a) => e.has(t) || R("Cannot " + a);
 var d = (t, e, a) => (z(t, e, "read from private field"), a ? a.call(t) : e.get(t)),
-  g = (t, e, a) => e.has(t) ? R("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, a);
+  m = (t, e, a) => e.has(t) ? R("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, a);
 import {
   aG as q,
   aR as y,
@@ -61,8 +61,8 @@ const W = () => "Unexpected server error. Try again later.",
   ce = () => "Número telefonico inválido",
   de = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? le() : ce(),
   ue = () => "Phone already used",
-  ge = () => "Telefone já usado",
-  me = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? ue() : ge(),
+  me = () => "Telefone já usado",
+  ge = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? ue() : me(),
   fe = () => "You have to wait to resend a code",
   he = () => "Você tem de esperar para reenviar um código",
   _e = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? fe() : he(),
@@ -78,9 +78,9 @@ const W = () => "Unexpected server error. Try again later.",
   Pe = () => "Couldn't complete the purchase. This item does not exist.",
   Ae = () => "Não foi possível concluir a compra. Este item não existe.",
   Ie = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Pe() : Ae(),
-  xe = () => "You do not have enough droplets to buy this item.",
-  Ce = () => "Você não tem gotas suficientes para comprar este item.",
-  ke = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? xe() : Ce(),
+  Ce = () => "You do not have enough droplets to buy this item.",
+  xe = () => "Você não tem gotas suficientes para comprar este item.",
+  ke = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Ce() : xe(),
   Be = () => "You already have this item. Please refresh the page.",
   Oe = () => "Você já possui este item. Atualize a página.",
   De = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Be() : Oe(),
@@ -116,10 +116,10 @@ const W = () => "Unexpected server error. Try again later.",
   ca = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? ia() : la(),
   da = () => "Innappropriate content",
   ua = () => "Conteúdo inapropriado",
-  ga = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? da() : ua(),
-  ma = () => "+18, inapropriate link, highly suggestive content, ...",
+  ma = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? da() : ua(),
+  ga = () => "+18, inapropriate link, highly suggestive content, ...",
   fa = () => "+18, links inapropriados, conteúdo altamente sugestivo, ...",
-  ha = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? ma() : fa(),
+  ha = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? ga() : fa(),
   _a = () => "Botting",
   pa = () => "Uso de bots",
   wa = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? _a() : pa(),
@@ -133,8 +133,8 @@ const W = () => "Unexpected server error. Try again later.",
   Pa = () => "Racismo, homofobia, grupos de ódio, ...",
   Aa = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Ma() : Pa(),
   Ia = () => "Griefing",
-  xa = () => "Griefing",
-  Ca = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Ia() : xa(),
+  Ca = () => "Griefing",
+  xa = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Ia() : Ca(),
   ka = () => "Messed up artworks for no reason",
   Ba = () => "Estragar desenho dos outros sem motivo",
   Oa = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? ka() : Ba(),
@@ -166,12 +166,12 @@ const W = () => "Unexpected server error. Try again later.",
   rt = () => "Você quebrou uma das regras do Wplace",
   ot = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? nt() : rt(),
   st = {
-    griefing: Ca(),
+    griefing: xa(),
     "multi-accounting": Ka(),
     "hate-speech": Ta(),
     bot: wa(),
     doxxing: Na(),
-    "inappropriate-content": ga(),
+    "inappropriate-content": ma(),
     other: tt()
   },
   it = {
@@ -204,7 +204,7 @@ const ct = [{
   }],
   dt = 4,
   ut = 6e3,
-  gt = [{
+  mt = [{
     name: "Transparent",
     rgb: [0, 0, 0]
   }, {
@@ -397,7 +397,7 @@ const ct = [{
     name: "Light Stone",
     rgb: [205, 197, 158]
   }],
-  mt = {
+  gt = {
     needsPhoneVerification: "needs_phone_verification"
   },
   ft = {
@@ -520,8 +520,8 @@ const ct = [{
     seasons: ct,
     regionSize: dt,
     refreshIntervalMs: ut,
-    colors: gt,
-    errors: mt,
+    colors: mt,
+    errors: gt,
     items: ft,
     products: ht,
     countries: _t
@@ -537,7 +537,7 @@ function Gt(t) {
 var v;
 class wt {
   constructor(e) {
-    g(this, v, y(!0));
+    m(this, v, y(!0));
     this.url = e
   }
   get online() {
@@ -617,7 +617,7 @@ class wt {
     return await e.json()
   }
   async refreshPaymentSession(e) {
-    return (await this.request(`/payment/refresh-session/${e}`, {
+    return (await this.request(`/payment/refresh-session/${encodeURIComponent(e)}`, {
       method: "POST",
       credentials: "include"
     })).status === 200
@@ -638,7 +638,7 @@ class wt {
       })
     });
     if (a.status === 400) throw new Error(de());
-    if (a.status === 403) throw new Error(me());
+    if (a.status === 403) throw new Error(ge());
     if (a.status === 429) throw new Error(_e());
     if (a.status !== 200) throw new Error(i());
     return await a.json()
@@ -1015,9 +1015,9 @@ let $ = 0;
 var E, T, M;
 class vt {
   constructor() {
-    g(this, E, y(q([])));
-    g(this, T, y(q([])));
-    g(this, M, e => {
+    m(this, E, y(q([])));
+    m(this, T, y(q([])));
+    m(this, M, e => {
       const a = this.toasts.findIndex(n => n.id === e);
       return a === -1 ? null : a
     });
@@ -1200,10 +1200,10 @@ E = new WeakMap, T = new WeakMap, M = new WeakMap;
 function Et(t) {
   return t && typeof t == "object" && "status" in t ? `HTTP error! Status: ${t.status}` : `Error! ${t}`
 }
-const m = new vt;
+const g = new vt;
 
 function Tt(t, e) {
-  return m.create({
+  return g.create({
     message: t,
     ...e
   })
@@ -1211,7 +1211,7 @@ function Tt(t, e) {
 var L;
 class Rt {
   constructor() {
-    g(this, L, D(() => m.toasts.filter(e => !e.dismiss)))
+    m(this, L, D(() => g.toasts.filter(e => !e.dismiss)))
   }
   get toasts() {
     return f(d(this, L))
@@ -1220,34 +1220,34 @@ class Rt {
 L = new WeakMap;
 const Mt = Tt,
   Pt = Object.assign(Mt, {
-    success: m.success,
-    info: m.info,
-    warning: m.warning,
-    error: m.error,
-    custom: m.custom,
-    message: m.message,
-    promise: m.promise,
-    dismiss: m.dismiss,
-    loading: m.loading,
-    getActiveToasts: () => m.toasts.filter(t => !t.dismiss)
+    success: g.success,
+    info: g.info,
+    warning: g.warning,
+    error: g.error,
+    custom: g.custom,
+    message: g.message,
+    promise: g.promise,
+    dismiss: g.dismiss,
+    loading: g.loading,
+    getActiveToasts: () => g.toasts.filter(t => !t.dismiss)
   });
-var P, A, I, x, C, k, B;
+var P, A, I, C, x, k, B;
 class At {
   constructor() {
     u(this, "channel", new BroadcastChannel("user-channel"));
-    g(this, P, y());
-    g(this, A, y(!0));
-    g(this, I, y(Date.now()));
-    g(this, x, y(Date.now()));
-    g(this, C, D(() => {
+    m(this, P, y());
+    m(this, A, y(!0));
+    m(this, I, y(Date.now()));
+    m(this, C, y(Date.now()));
+    m(this, x, D(() => {
       if (!this.data) return;
       const e = this.data.charges;
       if (e.count > e.max) return e.count;
       const a = e.count + Math.max((F.now - this.lastFetch) / e.cooldownMs, 0);
       return Math.min(e.max, a)
     }));
-    g(this, k, D(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
-    g(this, B, D(() => {
+    m(this, k, D(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
+    m(this, B, D(() => {
       var e;
       return new bt(yt(((e = this.data) == null ? void 0 : e.flagsBitmap) ?? "AA=="))
     }));
@@ -1275,16 +1275,16 @@ class At {
     _(d(this, I), e)
   }
   get lastFetch() {
-    return f(d(this, x))
-  }
-  set lastFetch(e) {
-    _(d(this, x), e)
-  }
-  get charges() {
     return f(d(this, C))
   }
-  set charges(e) {
+  set lastFetch(e) {
     _(d(this, C), e)
+  }
+  get charges() {
+    return f(d(this, x))
+  }
+  set charges(e) {
+    _(d(this, x), e)
   }
   get cooldown() {
     return f(d(this, k))
@@ -1322,8 +1322,8 @@ class At {
     return e < 32 ? !0 : ((((n = this.data) == null ? void 0 : n.extraColorsBitmap) ?? 0) & 1 << e - 32) !== 0
   }
 }
-P = new WeakMap, A = new WeakMap, I = new WeakMap, x = new WeakMap, C = new WeakMap, k = new WeakMap, B = new WeakMap;
+P = new WeakMap, A = new WeakMap, I = new WeakMap, C = new WeakMap, x = new WeakMap, k = new WeakMap, B = new WeakMap;
 const It = new At;
 export {
-  K as C, Ot as P, pt as S, j as a, i as b, Y as c, m as d, qt as e, Rt as f, F as g, Gt as h, ha as i, ga as j, Aa as k, Ta as l, Ra as m, Na as n, Sa as o, wa as p, Oa as q, Ca as r, st as s, Pt as t, It as u, Lt as v, Nt as w, Bt as x, Dt as y
+  K as C, Ot as P, pt as S, j as a, i as b, Y as c, g as d, qt as e, Rt as f, F as g, Gt as h, ha as i, ma as j, Aa as k, Ta as l, Ra as m, Na as n, Sa as o, wa as p, Oa as q, xa as r, st as s, Pt as t, It as u, Lt as v, Nt as w, Bt as x, Dt as y
 };
