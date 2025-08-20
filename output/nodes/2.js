@@ -107,7 +107,7 @@ import {
 } from "../chunks/sHlAVt6N.js";
 import {
   p as Ea
-} from "../chunks/DixQEb3E.js";
+} from "../chunks/BEokAoAg.js";
 import {
   S as Hn,
   a as ii,
@@ -143,7 +143,7 @@ import {
 import {
   g as zg,
   b as mx
-} from "../chunks/BtRvuix6.js";
+} from "../chunks/A3aZEyVx.js";
 import {
   h as _x
 } from "../chunks/DkMuKVJi.js";
@@ -166,7 +166,7 @@ import {
   j as bx,
   P as Rg,
   b as wx
-} from "../chunks/YH4U1a6Z.js";
+} from "../chunks/TPGdwBS5.js";
 import {
   g as Fe,
   l as Tx
@@ -44619,7 +44619,7 @@ function iz(b, l) {
   const we = ct(() => {
     var Ct, wt, St, ft, bt, Nt, nr, Kt, hr;
     const at = [];
-    ((((wt = (Ct = kt) == null ? void 0 : Ct.data) == null ? void 0 : wt.id) ?? Number.MAX_SAFE_INTEGER) <= 5e5 || ((ft = (St = kt) == null ? void 0 : St.data) == null ? void 0 : ft.role) === "admin" || ((Nt = (bt = kt) == null ? void 0 : bt.data) == null ? void 0 : Nt.role) === "moderator") && !x($) && at.push("report-user");
+    ((((wt = (Ct = kt) == null ? void 0 : Ct.data) == null ? void 0 : wt.id) ?? Number.MAX_SAFE_INTEGER) <= 1e6 || ((ft = (St = kt) == null ? void 0 : St.data) == null ? void 0 : ft.role) === "admin" || ((Nt = (bt = kt) == null ? void 0 : bt.data) == null ? void 0 : Nt.role) === "moderator") && !x($) && at.push("report-user");
     const Bt = (nr = x(_)) == null ? void 0 : nr.paintedBy;
     return (Bt == null ? void 0 : Bt.allianceId) === ((Kt = kt.data) == null ? void 0 : Kt.allianceId) && ((hr = kt.data) == null ? void 0 : hr.allianceRole) === "admin" && kt.data.id !== (Bt == null ? void 0 : Bt.id) && !x($) && at.push("ban-alliance"), at
   });

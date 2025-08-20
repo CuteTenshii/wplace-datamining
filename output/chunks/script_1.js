@@ -18,7 +18,7 @@ import {
 } from "./BwVUyGIA.js";
 import {
   v as Ge
-} from "./Dk6YCT3p.js";
+} from "./D_XUi7dr.js";
 const q = [];
 
 function Dt(t, e = Lt) {
@@ -283,9 +283,9 @@ function ae(t, e, n = JSON.stringify) {
   } catch {}
 }
 var ge;
-const x = ((ge = globalThis.__sveltekit_8ttul1) == null ? void 0 : ge.base) ?? "";
+const x = ((ge = globalThis.__sveltekit_5ni26p) == null ? void 0 : ge.base) ?? "";
 var me;
-const cn = ((me = globalThis.__sveltekit_8ttul1) == null ? void 0 : me.assets) ?? x,
+const cn = ((me = globalThis.__sveltekit_5ni26p) == null ? void 0 : me.assets) ?? x,
   be = "sveltekit:snapshot",
   Ae = "sveltekit:scroll",
   Ee = "sveltekit:states",
@@ -776,7 +776,7 @@ async function Ue() {
 
 function le() {}
 let Gt, Ot, mt, j, jt, A;
-globalThis.__sveltekit_8ttul1.data;
+globalThis.__sveltekit_5ni26p.data;
 const _t = [],
   yt = [];
 let L = null;
