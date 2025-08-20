@@ -107,7 +107,7 @@ import {
 } from "../chunks/sHlAVt6N.js";
 import {
   p as Ea
-} from "../chunks/4bSmj4B9.js";
+} from "../chunks/VM0lsjHj.js";
 import {
   S as Hn,
   a as ii,
@@ -131,7 +131,7 @@ import {
   x as ux,
   y as hx,
   z as dx
-} from "../chunks/DNc_GuVH.js";
+} from "../chunks/C01hw2eU.js";
 import {
   c as Eg,
   A as pa,
@@ -143,7 +143,7 @@ import {
 import {
   g as zg,
   b as mx
-} from "../chunks/Bx1iNHz9.js";
+} from "../chunks/V4cKGSun.js";
 import {
   h as _x
 } from "../chunks/DkMuKVJi.js";
@@ -166,7 +166,7 @@ import {
   j as bx,
   P as Rg,
   b as wx
-} from "../chunks/BgBP_qVw.js";
+} from "../chunks/DBreTu03.js";
 import {
   g as Fe,
   l as Tx
@@ -183,7 +183,7 @@ import {
   b as Hf,
   c as Sx,
   d as Px
-} from "../chunks/DH9Se99N.js";
+} from "../chunks/u2cdGfzY.js";
 import "../chunks/BfueqGZ_.js";
 import {
   i as Fg
@@ -198,7 +198,7 @@ import {
   L as Ix,
   T as Ng,
   a as Mx
-} from "../chunks/BkVu0a7q.js";
+} from "../chunks/DULvhLwl.js";
 import {
   _ as Ax
 } from "../chunks/Dp1pzeXC.js";
@@ -422,8 +422,8 @@ const Bx = () => "Log in",
   f2 = () => "Display your country’s flag next to your username. Plus, when painting in regions where you own the corresponding flag, you recover 10% of the charges spent.",
   m2 = () => "Exiba a bandeira do seu país ao lado do seu nome de usuário. Além disso, ao pintar em regiões onde você possui a bandeira correspondente, você recupera 10% das tintas gastas.",
   _2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? f2() : m2(),
-  g2 = () => "Does not need to be equiped to provide the bonus",
-  v2 = () => "Não precisa estar equipada para obter o bònus",
+  g2 = () => "Does not need to be equipped to provide the bonus",
+  v2 = () => "Não precisa estar equipada para obter o bônus",
   y2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? g2() : v2(),
   x2 = () => "Equipped",
   b2 = () => "Equipado",
@@ -446,7 +446,7 @@ const Bx = () => "Log in",
   F2 = () => "Important",
   O2 = () => "Importante",
   N2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? F2() : O2(),
-  q2 = () => "🚫 No inappropriate content (+18, hate speech, innapropriate links, highly suggestive material, ...)",
+  q2 = () => "🚫 No inappropriate content (+18, hate speech, inappropriate links, highly suggestive material, ...)",
   j2 = () => "🚫 Conteúdo inapropriado não permitido (+18, discurso de ódio, links inapropriados, conteúdo altamente sugestivo, ...)",
   V2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? q2() : j2(),
   U2 = () => "😈 Do not paint over other artworks using random colors or patterns just to mess things up",
