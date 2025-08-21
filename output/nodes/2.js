@@ -95,7 +95,7 @@ import {
 } from "../chunks/BDZkqSZV.js";
 import {
   p as Ea
-} from "../chunks/bD95I56s.js";
+} from "../chunks/CMfVhvyB.js";
 import {
   S as Hn,
   a as ii,
@@ -119,7 +119,7 @@ import {
   x as Yy,
   y as Jy,
   z as Qy
-} from "../chunks/DNeUQhwN.js";
+} from "../chunks/Kh-D6q5s.js";
 import {
   c as kg,
   A as pa,
@@ -131,7 +131,7 @@ import {
 import {
   g as Eg,
   b as rx
-} from "../chunks/Bzyls0jW.js";
+} from "../chunks/CIIe-iEp.js";
 import {
   h as ix
 } from "../chunks/CUKztPhC.js";
@@ -154,7 +154,7 @@ import {
   j as lx,
   P as Dg,
   b as cx
-} from "../chunks/i6LdcMr8.js";
+} from "../chunks/DJdpf0SK.js";
 import {
   g as Fe,
   l as ux
@@ -171,7 +171,7 @@ import {
   b as Hf,
   c as dx,
   d as px
-} from "../chunks/BENupKWQ.js";
+} from "../chunks/C00t0BoX.js";
 import "../chunks/D1_RoYrY.js";
 import {
   i as Bg
@@ -186,7 +186,7 @@ import {
   L as fx,
   T as Og,
   a as mx
-} from "../chunks/Vy8TtvW-.js";
+} from "../chunks/DCzjpU4B.js";
 import {
   _ as _x
 } from "../chunks/Dp1pzeXC.js";
@@ -523,7 +523,7 @@ const Tx = () => "Log in",
   y5 = () => "Invite link",
   x5 = () => "Link de convite",
   b5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? y5() : x5(),
-  w5 = () => "Send the link bellow to everybody you want to invite to the alliance",
+  w5 = () => "Send the link below to everybody you want to invite to the alliance",
   T5 = () => "Envie o link abaixo para quem você deseja convidar para a aliança",
   C5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? w5() : T5(),
   S5 = () => "Copied",
@@ -697,7 +697,7 @@ const Tx = () => "Log in",
   vC = () => "Could not logout. Try refreshing the page.",
   yC = () => "Não foi possível sair da conta. Tente recarregar a página.",
   xC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? vC() : yC(),
-  bC = () => "You need zoom in to select a pixel",
+  bC = () => "You need to zoom in to select a pixel",
   wC = () => "Dê zoom para selecionar um pixel",
   TC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? bC() : wC(),
   CC = () => "Phone verification",
@@ -739,7 +739,7 @@ const Tx = () => "Log in",
   sS = () => "Verify if",
   oS = () => "Verifique se",
   lS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? sS() : oS(),
-  cS = () => "Use graphics acceleration when available",
+  cS = () => "Use hardware acceleration when available",
   uS = () => "Usar aceleração gráfica quando disponível",
   hS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? cS() : uS(),
   dS = () => "is enabled on",
@@ -45621,7 +45621,7 @@ var jz = Ie('<meta property="og:title" content="Wplace - A massive real-time pix
   }, $z = Ie('<div class="relative"><!> <span class="center-absolute absolute text-[10px] text-red-400">?</span></div>'), Gz = Ie('<button class="btn btn-lg btn-square sm:btn-xl z-30 shadow-md"><!></button>'), Hz = (b, l, _, C) => {
     var L;
     oe(l, !0), x(_) && Ya((L = x(_)) == null ? void 0 : L.getCenter(), x(C))
-  }, Wz = Ie('<button class="btn btn-primary shadow-xl"> </button>'), Xz = Ie('<a class="badge badge-secondary absolute -left-2 top-0 -translate-x-full translate-y-1/2" target="_blank"> </a>'), Kz = Ie('<div class="relative"><!> <!></div>'), Yz = (b, l, _, C) => {
+  }, Wz = Ie('<button class="btn btn-primary shadow-xl"> </button>'), Xz = Ie('<a class="badge badge-secondary absolute -left-2 top-0 -translate-x-full translate-y-1/2 font-semibold" target="_blank"> </a>'), Kz = Ie('<div class="relative"><!> <!></div>'), Yz = (b, l, _, C) => {
     var O;
     oe(l, !0);
     const L = (O = x(_)) == null ? void 0 : O.getCenter();
