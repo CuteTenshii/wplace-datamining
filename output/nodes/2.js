@@ -95,7 +95,7 @@ import {
 } from "../chunks/BDZkqSZV.js";
 import {
   p as Ea
-} from "../chunks/BzKM9d3l.js";
+} from "../chunks/bD95I56s.js";
 import {
   S as Hn,
   a as ii,
@@ -131,7 +131,7 @@ import {
 import {
   g as Eg,
   b as rx
-} from "../chunks/B6jk24BP.js";
+} from "../chunks/Bzyls0jW.js";
 import {
   h as ix
 } from "../chunks/CUKztPhC.js";
@@ -154,7 +154,7 @@ import {
   j as lx,
   P as Dg,
   b as cx
-} from "../chunks/s1xV-4TK.js";
+} from "../chunks/i6LdcMr8.js";
 import {
   g as Fe,
   l as ux
@@ -44588,7 +44588,7 @@ function Z8(b, l) {
   const we = ct(() => {
     var Ct, wt, St, ft, bt, Nt, nr, Kt, hr;
     const at = [];
-    ((((wt = (Ct = kt) == null ? void 0 : Ct.data) == null ? void 0 : wt.id) ?? Number.MAX_SAFE_INTEGER) <= 1e6 || ((ft = (St = kt) == null ? void 0 : St.data) == null ? void 0 : ft.role) === "admin" || ((Nt = (bt = kt) == null ? void 0 : bt.data) == null ? void 0 : Nt.role) === "moderator") && !x(G) && at.push("report-user");
+    ((((wt = (Ct = kt) == null ? void 0 : Ct.data) == null ? void 0 : wt.id) ?? Number.MAX_SAFE_INTEGER) <= 2e6 || ((ft = (St = kt) == null ? void 0 : St.data) == null ? void 0 : ft.role) === "admin" || ((Nt = (bt = kt) == null ? void 0 : bt.data) == null ? void 0 : Nt.role) === "moderator") && !x(G) && at.push("report-user");
     const Bt = (nr = x(_)) == null ? void 0 : nr.paintedBy;
     return (Bt == null ? void 0 : Bt.allianceId) === ((Kt = kt.data) == null ? void 0 : Kt.allianceId) && ((hr = kt.data) == null ? void 0 : hr.allianceRole) === "admin" && kt.data.id !== (Bt == null ? void 0 : Bt.id) && !x(G) && at.push("ban-alliance"), at
   });
