@@ -1,7 +1,7 @@
 import {
   s as e,
   p as r
-} from "./V4cKGSun.js";
+} from "./OcfOfcVZ.js";
 const t = {
   get error() {
     return r.error
