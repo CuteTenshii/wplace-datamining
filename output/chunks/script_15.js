@@ -19,7 +19,7 @@ import {
   aH as _,
   x as U,
   aT as D
-} from "./BwVUyGIA.js";
+} from "./CwgCbQ4J.js";
 import {
   g as o
 } from "./C5GsJ62f.js";
@@ -32,7 +32,8 @@ let F = q({
   muted: !1,
   language: Z(),
   captcha: void 0,
-  now: Date.now()
+  now: Date.now(),
+  turnstatileLoaded: !1
 });
 setInterval(() => {
   F.now = Date.now()

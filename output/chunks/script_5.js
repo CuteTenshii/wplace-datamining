@@ -10,7 +10,7 @@ import {
   I as s,
   m as r,
   J as y
-} from "./BwVUyGIA.js";
+} from "./CwgCbQ4J.js";
 let e;
 
 function p() {
