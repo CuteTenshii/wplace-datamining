@@ -20,6 +20,10 @@ fetch('https://wplace.live')
     return response.text();
   })
   .then(html => {
+    if (!html) {
+      console.error('No HTML content retrieved from the page.');
+      process.exit(1);
+    }
     const $ = cheerio.load(html);
     const scripts = $('link[rel="modulepreload"]');
     const scriptUrls = scripts.map((i, el) => {
@@ -28,6 +32,11 @@ fetch('https://wplace.live')
       const url = pathname.replace('.', '');
       return new URL(url, 'https://wplace.live').href;
     }).get();
+    if (scriptUrls.length === 0) {
+      console.error('No scripts found on the page.');
+      // exit with status 1 to prevent the action to commit
+      process.exit(1);
+    }
     for (let i = 0; i < scriptUrls.length; i++) {
       const scriptUrl = scriptUrls[i];
       if (!scriptUrl) continue;
