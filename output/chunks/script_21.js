@@ -1,85 +1,85 @@
 import {
-  ba as z,
   bb as D,
-  bc as G,
+  bc as P,
+  ba as G,
   g as H,
   h as F,
-  e as P,
-  i as U,
-  j as W,
-  k as j,
-  l as K,
-  m as Q,
-  aC as J,
-  n as V,
-  a6 as X,
-  bd as Y,
+  e as U,
+  i as W,
+  j,
+  k as K,
+  l as Q,
+  m as J,
+  aC as V,
+  n as X,
+  a6 as Y,
+  bd as tt,
   be as O,
-  aP as tt,
-  G as rt,
-  ap as x,
-  E as at,
-  bf as it,
-  bg as et,
+  aP as rt,
+  G as at,
+  ap as q,
+  E as it,
+  bf as et,
+  bg as nt,
   D as st,
-  x as nt,
-  bh as ot,
-  bi as ft,
+  x as ot,
+  bh as ft,
+  bi as vt,
   q as E,
   b as S
-} from "./DiiYHD7c.js";
+} from "./DUoKDNpf.js";
 import {
-  a as vt
-} from "./BDBCFYzV.js";
+  a as ct
+} from "./g8c1BvYP.js";
 import {
-  c as ct
-} from "./F0pWTI59.js";
+  c as lt
+} from "./U908S-6f.js";
 import {
-  g as ut
+  g as R
 } from "./C5GsJ62f.js";
 import "./Bzak7iHL.js";
 import {
   a as N
-} from "./DgIoFWm5.js";
+} from "./CbcY1qdF.js";
 import {
   r as A
-} from "./CtTP525L.js";
+} from "./5NasrULQ.js";
 
-function Et(r, t, a) {
-  F && P();
+function Nt(r, t, a) {
+  F && U();
   var i = r,
-    e = J,
-    n, s, o = null,
-    h = z() ? D : G;
+    e = V,
+    s, n, o = null,
+    u = D() ? P : G;
 
-  function l() {
-    n && V(n), o !== null && (o.lastChild.remove(), i.before(o), o = null), n = s
+  function h() {
+    s && X(s), o !== null && (o.lastChild.remove(), i.before(o), o = null), s = n
   }
   H(() => {
-    if (h(e, e = t())) {
+    if (u(e, e = t())) {
       var v = i,
-        c = K();
-      c && (o = document.createDocumentFragment(), o.append(v = U())), s = W(() => a(v)), c ? j.add_callback(l) : l()
+        c = Q();
+      c && (o = document.createDocumentFragment(), o.append(v = W())), n = j(() => a(v)), c ? K.add_callback(h) : h()
     }
-  }), F && (i = Q)
+  }), F && (i = J)
 }
-const ht = () => performance.now(),
+const ut = () => performance.now(),
   b = {
     tick: r => requestAnimationFrame(r),
-    now: () => ht(),
+    now: () => ut(),
     tasks: new Set
   };
 
-function R() {
+function B() {
   const r = b.now();
   b.tasks.forEach(t => {
     t.c(r) || (b.tasks.delete(t), t.f())
-  }), b.tasks.size !== 0 && b.tick(R)
+  }), b.tasks.size !== 0 && b.tick(B)
 }
 
-function lt(r) {
+function ht(r) {
   let t;
-  return b.tasks.size === 0 && b.tick(R), {
+  return b.tasks.size === 0 && b.tick(B), {
     promise: new Promise(a => {
       b.tasks.add(t = {
         c: r,
@@ -110,79 +110,79 @@ function L(r) {
   const t = {},
     a = r.split(";");
   for (const i of a) {
-    const [e, n] = i.split(":");
-    if (!e || n === void 0) break;
-    const s = dt(e.trim());
-    t[s] = n.trim()
+    const [e, s] = i.split(":");
+    if (!e || s === void 0) break;
+    const n = dt(e.trim());
+    t[n] = s.trim()
   }
   return t
 }
 const pt = r => r;
 
-function St(r, t, a) {
-  var i = ct,
-    e, n, s, o = null;
+function At(r, t, a) {
+  var i = lt,
+    e, s, n, o = null;
   i.a ?? (i.a = {
     element: r,
     measure() {
       e = this.element.getBoundingClientRect()
     },
     apply() {
-      if (s == null || s.abort(), n = this.element.getBoundingClientRect(), e.left !== n.left || e.right !== n.right || e.top !== n.top || e.bottom !== n.bottom) {
-        const h = t()(this.element, {
+      if (n == null || n.abort(), s = this.element.getBoundingClientRect(), e.left !== s.left || e.right !== s.right || e.top !== s.top || e.bottom !== s.bottom) {
+        const u = t()(this.element, {
           from: e,
-          to: n
+          to: s
         }, a == null ? void 0 : a());
-        s = Z(this.element, h, void 0, 1, () => {
-          s == null || s.abort(), s = void 0
+        n = Z(this.element, u, void 0, 1, () => {
+          n == null || n.abort(), n = void 0
         })
       }
     },
     fix() {
       if (!r.getAnimations().length) {
         var {
-          position: h,
-          width: l,
+          position: u,
+          width: h,
           height: v
         } = getComputedStyle(r);
-        if (h !== "absolute" && h !== "fixed") {
+        if (u !== "absolute" && u !== "fixed") {
           var c = r.style;
           o = {
             position: c.position,
             width: c.width,
             height: c.height,
             transform: c.transform
-          }, c.position = "absolute", c.width = l, c.height = v;
+          }, c.position = "absolute", c.width = h, c.height = v;
           var f = r.getBoundingClientRect();
           if (e.left !== f.left || e.top !== f.top) {
-            var u = `translate(${e.left-f.left}px, ${e.top-f.top}px)`;
-            c.transform = c.transform ? `${c.transform} ${u}` : u
+            var l = `translate(${e.left-f.left}px, ${e.top-f.top}px)`;
+            c.transform = c.transform ? `${c.transform} ${l}` : l
           }
         }
       }
     },
     unfix() {
       if (o) {
-        var h = r.style;
-        h.position = o.position, h.width = o.width, h.height = o.height, h.transform = o.transform
+        var u = r.style;
+        u.position = o.position, u.width = o.width, u.height = o.height, u.transform = o.transform
       }
     }
   }), i.a.element = r
 }
 
-function Nt(r, t, a, i) {
-  var e = (r & ot) !== 0,
-    n = (r & ft) !== 0,
-    s = e && n,
-    o = (r & Y) !== 0,
-    h = s ? "both" : e ? "in" : "out",
-    l, v = t.inert,
+function Ft(r, t, a, i) {
+  var e = (r & ft) !== 0,
+    s = (r & vt) !== 0,
+    n = e && s,
+    o = (r & tt) !== 0,
+    u = n ? "both" : e ? "in" : "out",
+    h, v = t.inert,
     c = t.style.overflow,
-    f, u;
+    f, l;
 
-  function w() {
-    return O(() => l ?? (l = a()(t, (i == null ? void 0 : i()) ?? {}, {
-      direction: h
+  function _() {
+    return O(() => h ?? (h = a()(t, (i == null ? void 0 : i()) ?? {}, {
+      direction: u
     })))
   }
   var g = {
@@ -190,134 +190,137 @@ function Nt(r, t, a, i) {
       in() {
         var p;
         if (t.inert = v, !e) {
-          u == null || u.abort(), (p = u == null ? void 0 : u.reset) == null || p.call(u);
+          l == null || l.abort(), (p = l == null ? void 0 : l.reset) == null || p.call(l);
           return
         }
-        n || f == null || f.abort(), I(t, "introstart"), f = Z(t, w(), u, 1, () => {
-          I(t, "introend"), f == null || f.abort(), f = l = void 0, t.style.overflow = c
+        s || f == null || f.abort(), I(t, "introstart"), f = Z(t, _(), l, 1, () => {
+          I(t, "introend"), f == null || f.abort(), f = h = void 0, t.style.overflow = c
         })
       },
       out(p) {
-        if (!n) {
-          p == null || p(), l = void 0;
+        if (!s) {
+          p == null || p(), h = void 0;
           return
         }
-        t.inert = !0, I(t, "outrostart"), u = Z(t, w(), f, 0, () => {
+        t.inert = !0, I(t, "outrostart"), l = Z(t, _(), f, 0, () => {
           I(t, "outroend"), p == null || p()
         })
       },
       stop: () => {
-        f == null || f.abort(), u == null || u.abort()
+        f == null || f.abort(), l == null || l.abort()
       }
     },
-    m = X;
-  if ((m.transitions ?? (m.transitions = [])).push(g), e && vt) {
-    var _ = o;
-    if (!_) {
-      for (var d = m.parent; d && (d.f & at) !== 0;)
+    m = Y;
+  if ((m.transitions ?? (m.transitions = [])).push(g), e && ct) {
+    var w = o;
+    if (!w) {
+      for (var d = m.parent; d && (d.f & it) !== 0;)
         for (;
-          (d = d.parent) && (d.f & it) === 0;);
-      _ = !d || (d.f & et) !== 0
+          (d = d.parent) && (d.f & et) === 0;);
+      w = !d || (d.f & nt) !== 0
     }
-    _ && st(() => {
-      nt(() => g.in())
+    w && st(() => {
+      ot(() => g.in())
     })
   }
 }
 
 function Z(r, t, a, i, e) {
-  var n = i === 1;
-  if (tt(t)) {
-    var s, o = !1;
-    return rt(() => {
+  var s = i === 1;
+  if (rt(t)) {
+    var n, o = !1;
+    return at(() => {
       if (!o) {
         var m = t({
-          direction: n ? "in" : "out"
+          direction: s ? "in" : "out"
         });
-        s = Z(r, m, a, i, e)
+        n = Z(r, m, a, i, e)
       }
     }), {
       abort: () => {
-        o = !0, s == null || s.abort()
+        o = !0, n == null || n.abort()
       },
-      deactivate: () => s.deactivate(),
-      reset: () => s.reset(),
-      t: () => s.t()
+      deactivate: () => n.deactivate(),
+      reset: () => n.reset(),
+      t: () => n.t()
     }
   }
   if (a == null || a.deactivate(), !(t != null && t.duration)) return e(), {
-    abort: x,
-    deactivate: x,
-    reset: x,
+    abort: q,
+    deactivate: q,
+    reset: q,
     t: () => i
   };
   const {
-    delay: h = 0,
-    css: l,
+    delay: u = 0,
+    css: h,
     tick: v,
     easing: c = pt
   } = t;
   var f = [];
-  if (n && a === void 0 && (v && v(0, 1), l)) {
-    var u = L(l(0, 1));
-    f.push(u, u)
+  if (s && a === void 0 && (v && v(0, 1), h)) {
+    var l = L(h(0, 1));
+    f.push(l, l)
   }
-  var w = () => 1 - i,
+  var _ = () => 1 - i,
     g = r.animate(f, {
-      duration: h,
+      duration: u,
       fill: "forwards"
     });
   return g.onfinish = () => {
     g.cancel();
     var m = (a == null ? void 0 : a.t()) ?? 1 - i;
     a == null || a.abort();
-    var _ = i - m,
-      d = t.duration * Math.abs(_),
+    var w = i - m,
+      d = t.duration * Math.abs(w),
       p = [];
     if (d > 0) {
       var y = !1;
-      if (l)
-        for (var C = Math.ceil(d / 16.666666666666668), T = 0; T <= C; T += 1) {
-          var $ = m + _ * c(T / C),
-            k = L(l($, 1 - $));
+      if (h)
+        for (var C = Math.ceil(d / 16.666666666666668), x = 0; x <= C; x += 1) {
+          var T = m + w * c(x / C),
+            k = L(h(T, 1 - T));
           p.push(k), y || (y = k.overflow === "hidden")
         }
-      y && (r.style.overflow = "hidden"), w = () => {
-        var q = g.currentTime;
-        return m + _ * c(q / d)
-      }, v && lt(() => {
+      y && (r.style.overflow = "hidden"), _ = () => {
+        var $ = g.currentTime;
+        return m + w * c($ / d)
+      }, v && ht(() => {
         if (g.playState !== "running") return !1;
-        var q = w();
-        return v(q, 1 - q), !0
+        var $ = _();
+        return v($, 1 - $), !0
       })
     }
     g = r.animate(p, {
       duration: d,
       fill: "forwards"
     }), g.onfinish = () => {
-      w = () => i, v == null || v(i, 1 - i), e()
+      _ = () => i, v == null || v(i, 1 - i), e()
     }
   }, {
     abort: () => {
-      g && (g.cancel(), g.effect = null, g.onfinish = x)
+      g && (g.cancel(), g.effect = null, g.onfinish = q)
     },
     deactivate: () => {
-      e = x
+      e = q
     },
     reset: () => {
       i === 0 && (v == null || v(1, 0))
     },
-    t: () => w()
+    t: () => _()
   }
 }
-const gt = () => "Description",
-  mt = () => "Descrição",
-  At = (r = {}, t = {}) => (t.locale ?? ut()) === "en" ? gt() : mt();
-var wt = E('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
+const gt = () => "Pixels painted",
+  mt = () => "Pixels pintados",
+  Lt = (r = {}, t = {}) => (t.locale ?? R()) === "en" ? gt() : mt(),
+  _t = () => "Description",
+  wt = () => "Descrição",
+  Ot = (r = {}, t = {}) => (t.locale ?? R()) === "en" ? _t() : wt();
+var bt = E('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
 
-function Ft(r, t) {
+function Rt(r, t) {
   let a = A(t, ["$$slots", "$$events", "$$legacy"]);
-  var i = wt();
+  var i = bt();
   N(i, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -326,66 +329,54 @@ function Ft(r, t) {
   })), S(r, i)
 }
 
-function _t(r) {
+function xt(r) {
   const t = r - 1;
   return t * t * t + 1
 }
 
-function Lt(r, {
+function Bt(r, {
   from: t,
   to: a
 }, i = {}) {
   var {
     delay: e = 0,
-    duration: n = T => Math.sqrt(T) * 120,
-    easing: s = _t
-  } = i, o = getComputedStyle(r), h = o.transform === "none" ? "" : o.transform, [l, v] = o.transformOrigin.split(" ").map(parseFloat);
-  l /= r.clientWidth, v /= r.clientHeight;
-  var c = bt(r),
+    duration: s = x => Math.sqrt(x) * 120,
+    easing: n = xt
+  } = i, o = getComputedStyle(r), u = o.transform === "none" ? "" : o.transform, [h, v] = o.transformOrigin.split(" ").map(parseFloat);
+  h /= r.clientWidth, v /= r.clientHeight;
+  var c = Tt(r),
     f = r.clientWidth / a.width / c,
-    u = r.clientHeight / a.height / c,
-    w = t.left + t.width * l,
+    l = r.clientHeight / a.height / c,
+    _ = t.left + t.width * h,
     g = t.top + t.height * v,
-    m = a.left + a.width * l,
-    _ = a.top + a.height * v,
-    d = (w - m) * f,
-    p = (g - _) * u,
+    m = a.left + a.width * h,
+    w = a.top + a.height * v,
+    d = (_ - m) * f,
+    p = (g - w) * l,
     y = t.width / a.width,
     C = t.height / a.height;
   return {
     delay: e,
-    duration: typeof n == "function" ? n(Math.sqrt(d * d + p * p)) : n,
-    easing: s,
-    css: (T, $) => {
-      var k = $ * d,
-        q = $ * p,
-        B = T + $ * y,
-        M = T + $ * C;
-      return `transform: ${h} translate(${k}px, ${q}px) scale(${B}, ${M});`
+    duration: typeof s == "function" ? s(Math.sqrt(d * d + p * p)) : s,
+    easing: n,
+    css: (x, T) => {
+      var k = T * d,
+        $ = T * p,
+        M = x + T * y,
+        z = x + T * C;
+      return `transform: ${u} translate(${k}px, ${$}px) scale(${M}, ${z});`
     }
   }
 }
 
-function bt(r) {
+function Tt(r) {
   if ("currentCSSZoom" in r) return r.currentCSSZoom;
   for (var t = r, a = 1; t !== null;) a *= +getComputedStyle(t).zoom, t = t.parentElement;
   return a
 }
-var Tt = E('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
+var $t = E('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
 
-function Ot(r, t) {
-  let a = A(t, ["$$slots", "$$events", "$$legacy"]);
-  var i = Tt();
-  N(i, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...a
-  })), S(r, i)
-}
-var $t = E('<svg><path d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z"></path></svg>');
-
-function Rt(r, t) {
+function Mt(r, t) {
   let a = A(t, ["$$slots", "$$events", "$$legacy"]);
   var i = $t();
   N(i, () => ({
@@ -395,6 +386,18 @@ function Rt(r, t) {
     ...a
   })), S(r, i)
 }
+var qt = E('<svg><path d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z"></path></svg>');
+
+function zt(r, t) {
+  let a = A(t, ["$$slots", "$$events", "$$legacy"]);
+  var i = qt();
+  N(i, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...a
+  })), S(r, i)
+}
 export {
-  Ot as G, Ft as L, Rt as T, St as a, At as d, Lt as f, Et as k, Nt as t
+  Mt as G, Rt as L, zt as T, At as a, Ot as d, Bt as f, Nt as k, Lt as p, Ft as t
 };

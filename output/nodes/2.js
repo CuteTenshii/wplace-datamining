@@ -18,7 +18,7 @@ import "../chunks/Bzak7iHL.js";
 import {
   o as Ii,
   s as Ji
-} from "../chunks/BJ1VLM8J.js";
+} from "../chunks/ByKBPM-D.js";
 import {
   Y as zy,
   aZ as Ly,
@@ -59,20 +59,20 @@ import {
   ap as fa,
   bt as Ag,
   ak as jy
-} from "../chunks/DiiYHD7c.js";
+} from "../chunks/DUoKDNpf.js";
 import {
   s as fe
-} from "../chunks/BDBCFYzV.js";
+} from "../chunks/g8c1BvYP.js";
 import {
   p as zt,
   i as Ve,
   r as er,
   s as lo,
   u as kg
-} from "../chunks/CtTP525L.js";
+} from "../chunks/5NasrULQ.js";
 import {
   h as Vy
-} from "../chunks/Bzo3SbIu.js";
+} from "../chunks/2CRhGZHc.js";
 import {
   a as Qt,
   r as ea,
@@ -83,20 +83,21 @@ import {
   d as uc,
   g as Tu,
   c as Vo
-} from "../chunks/DgIoFWm5.js";
+} from "../chunks/CbcY1qdF.js";
 import {
   d as Uy,
   a as Zo,
   f as $o,
   L as Wf,
+  p as Xf,
   k as Pu,
   t as En,
   T as Eg,
   G as Zy
-} from "../chunks/BkxyADbb.js";
+} from "../chunks/CDncCCRG.js";
 import {
   p as La
-} from "../chunks/Bvm0TGg8.js";
+} from "../chunks/CYXT8Y6N.js";
 import {
   S as $n,
   a as ni,
@@ -120,7 +121,7 @@ import {
   x as tx,
   y as rx,
   z as ix
-} from "../chunks/MZbKC7vp.js";
+} from "../chunks/1lh-LSvX.js";
 import {
   c as zg,
   A as pa,
@@ -128,17 +129,17 @@ import {
   g as cf,
   p as nx,
   b as ax
-} from "../chunks/DX3OYgTE.js";
+} from "../chunks/D2m5UD3G.js";
 import {
   g as Lg,
   b as sx
-} from "../chunks/C6BFHo9R.js";
+} from "../chunks/CP6jcDcY.js";
 import {
   h as ox
-} from "../chunks/Ck3jb4X-.js";
+} from "../chunks/BMKgGW48.js";
 import {
   b as ps
-} from "../chunks/CHMHDjSt.js";
+} from "../chunks/CMs8vKjq.js";
 import {
   g as qd,
   d as jd,
@@ -155,7 +156,7 @@ import {
   j as dx,
   P as Bg,
   b as px
-} from "../chunks/C8QV_EWm.js";
+} from "../chunks/BG-4udyw.js";
 import {
   g as Fe,
   l as fx
@@ -163,41 +164,41 @@ import {
 import {
   e as nn,
   i as Zd
-} from "../chunks/F0pWTI59.js";
+} from "../chunks/U908S-6f.js";
 import {
   P as es,
   g as Zn,
   A as mx,
   t as Fg,
-  b as Xf,
+  b as Kf,
   c as _x,
   d as gx
-} from "../chunks/DmTZh6p3.js";
-import "../chunks/BkRcVJg9.js";
+} from "../chunks/DfQpDKXu.js";
+import "../chunks/D35KiPL1.js";
 import {
   i as Og
-} from "../chunks/DGfc2H4d.js";
+} from "../chunks/D1ivTjwA.js";
 import {
   L as Ng
-} from "../chunks/B3HWcO0_.js";
+} from "../chunks/CL2zjQj-.js";
 import {
   c as _n
-} from "../chunks/2r0pPFuB.js";
+} from "../chunks/BtP6pfnb.js";
 import {
   L as vx,
   T as qg,
   a as yx
-} from "../chunks/BgljO6dn.js";
+} from "../chunks/BCbikyPd.js";
 import {
   _ as xx
 } from "../chunks/Dp1pzeXC.js";
 import {
   R as bx,
   r as wx
-} from "../chunks/D5b78AHM.js";
+} from "../chunks/BIDE-9NB.js";
 import {
   W as Tx
-} from "../chunks/dMjCJiBk.js";
+} from "../chunks/BKlGAqpR.js";
 const Cx = [];
 
 function Sx(b, l = !1, _ = !1) {
@@ -253,7 +254,7 @@ const Ix = () => "Log in",
   Gd = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? zx() : Lx(),
   Dx = () => "Leaderboard",
   Rx = () => "Ranking",
-  Kf = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Dx() : Rx(),
+  Yf = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Dx() : Rx(),
   Bx = () => "Unlock",
   Fx = () => "Destravar",
   Ox = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Bx() : Fx(),
@@ -347,459 +348,456 @@ const Ix = () => "Log in",
   _b = () => "Show profile",
   gb = () => "Exibir perfil",
   vb = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? _b() : gb(),
-  yb = () => "Pixels painted",
-  xb = () => "Pixels pintados",
-  Yf = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? yb() : xb(),
-  bb = () => "Menu",
-  wb = () => "Menu",
-  Tb = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? bb() : wb(),
-  Cb = b => `Could not install the app: ${b.error}`,
-  Sb = b => `Não pode instalar o app: ${b.error}`,
-  Pb = (b, l = {}) => (l.locale ?? Fe()) === "en" ? Cb(b) : Sb(b),
-  Ib = () => "Install App",
-  Mb = () => "Instalar App",
-  Ab = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Ib() : Mb(),
-  kb = () => "Livestreams",
-  Eb = () => "Livestreams",
-  zb = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? kb() : Eb(),
-  Lb = () => "Log Out",
-  Db = () => "Log Out",
-  Rb = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Lb() : Db(),
-  Bb = () => "Hide UI",
-  Fb = () => "Esconder UI",
-  Ob = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Bb() : Fb(),
-  Nb = () => "Change picture:",
-  qb = () => "Change picture:",
-  jb = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Nb() : qb(),
-  Vb = () => "Show last painted pixel on alliance",
-  Ub = () => "Mostrar último pixel pintado na aliança",
-  Zb = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Vb() : Ub(),
-  $b = () => "Delete Account",
-  Gb = () => "Deletar Conta",
-  ug = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? $b() : Gb(),
-  Hb = () => "Save",
-  Wb = () => "Salvar",
-  Xb = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Hb() : Wb(),
-  Kb = () => "Are you absolutely sure?",
-  Yb = () => "Você tem certeza absoluta?",
-  Jb = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Kb() : Yb(),
-  Qb = () => "This will permanently delete your account and all associated data. This action cannot be undone.",
-  e2 = () => "Isso excluirá permanentemente sua conta e todos os dados associados. Esta ação não pode ser desfeita.",
-  t2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Qb() : e2(),
-  r2 = () => "Profile",
-  i2 = () => "Perfil",
-  n2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? r2() : i2(),
-  a2 = () => "Display your country’s flag next to your username. Plus, when painting in regions where you own the corresponding flag, you recover 10% of the charges spent.",
-  s2 = () => "Exiba a bandeira do seu país ao lado do seu nome de usuário. Além disso, ao pintar em regiões onde você possui a bandeira correspondente, você recupera 10% das tintas gastas.",
-  o2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? a2() : s2(),
-  l2 = () => "Does not need to be equipped to provide the bonus",
-  c2 = () => "Não precisa estar equipada para obter o bônus",
-  u2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? l2() : c2(),
-  h2 = () => "Equipped",
-  d2 = () => "Equipado",
-  p2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? h2() : d2(),
-  f2 = () => "Equip",
-  m2 = () => "Equipar",
-  _2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? f2() : m2(),
-  g2 = () => "Country",
-  v2 = () => "País",
-  Vg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? g2() : v2(),
-  y2 = () => "No country found.",
-  x2 = () => "País não encontrado.",
-  b2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? y2() : x2(),
-  w2 = () => "Welcome to",
-  T2 = () => "Bem vindo ao",
-  C2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? w2() : T2(),
-  S2 = () => "Rules",
-  P2 = () => "Regras",
-  I2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? S2() : P2(),
-  M2 = () => "Important",
-  A2 = () => "Importante",
-  k2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? M2() : A2(),
-  E2 = () => "🚫 No inappropriate content (+18, hate speech, inappropriate links, highly suggestive material, ...)",
-  z2 = () => "🚫 Conteúdo inapropriado não permitido (+18, discurso de ódio, links inapropriados, conteúdo altamente sugestivo, ...)",
-  L2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? E2() : z2(),
-  D2 = () => "😈 Do not paint over other artworks using random colors or patterns just to mess things up",
-  R2 = () => "😈 Não desenhe por cima de outras artes usando cores ou padrões aleatórios só para bagunçar",
-  B2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? D2() : R2(),
-  F2 = () => "🧑‍🤝‍🧑 Do not paint with more than one account",
-  O2 = () => "🧑‍🤝‍🧑 Não desenhe com mais de uma conta",
-  N2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? F2() : O2(),
-  q2 = () => "🤖 Use of bots is not allowed",
-  j2 = () => "🤖 Usar bots não é permitido",
-  V2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? q2() : j2(),
-  U2 = () => "🙅 Disclosing other's personal information is not allowed",
-  Z2 = () => "🙅 Divulgar informações pessoais dos outros não é permitido",
-  $2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? U2() : Z2(),
-  G2 = () => "✅ Painting over other artworks to complement them or create a new drawing is allowed",
-  H2 = () => "✅ Desenhar sobre outras artes para complementar ou criar novas artes é permitido",
-  W2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? G2() : H2(),
-  X2 = () => "✅ Griefing political party flags or portraits of politicians is allowed",
-  K2 = () => "✅ Desenhar sobre bandeiras de partidos e retratos de políticos é permitido",
-  Y2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? X2() : K2(),
-  J2 = () => "Violations of these rules may result in suspension of your account.",
-  Q2 = () => "Violações destas regras podem resultar na suspensão da sua conta.",
-  ew = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? J2() : Q2(),
-  tw = () => "Understood",
-  rw = () => "Entendido",
-  iw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? tw() : rw(),
-  nw = () => "Toggle art opacity",
-  aw = () => "Alterar opacidade",
-  Ug = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? nw() : aw(),
-  sw = () => "Paint",
-  ow = () => "Pintar",
-  Zg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? sw() : ow(),
-  lw = () => "Select a color",
-  cw = () => "Selecione uma color",
-  uw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? lw() : cw(),
-  hw = () => "Select a pixel to erase",
-  dw = () => "Selecione um pixel para apagar",
-  pw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? hw() : dw(),
-  fw = () => "Pick a color from the map",
-  mw = () => "Escolha uma cor do mapa",
-  _w = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? fw() : mw(),
-  gw = () => "Click",
-  vw = () => "Clique",
-  yw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? gw() : vw(),
-  xw = () => "SPACE",
-  bw = () => "ESPAÇO",
-  ww = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? xw() : bw(),
-  Tw = () => "or hold",
-  Cw = () => "ou segure",
-  Sw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Tw() : Cw(),
-  Pw = () => "to paint,",
-  Iw = () => "para pintar",
-  Mw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Pw() : Iw(),
-  Aw = () => "You can paint more than 1 pixel",
-  kw = () => "Você pode pintar mais de 1 pixel",
-  Ew = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Aw() : kw(),
-  zw = () => "Paint pixel",
-  Lw = () => "Pintar pixel",
-  Dw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? zw() : Lw(),
-  Rw = () => "Color Picker",
-  Bw = () => "Conta Gotas",
-  Fw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Rw() : Bw(),
-  Ow = () => "+2 max. charge/level",
-  Nw = () => "+2 tinta máxima/level",
-  qw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Ow() : Nw(),
-  jw = () => "Name",
-  Vw = () => "Nome",
-  xf = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? jw() : Vw(),
-  Uw = () => "Discord Username",
-  Zw = () => "Usuário do Discord",
-  $w = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Uw() : Zw(),
-  Gw = () => "Max. Charges",
-  Hw = () => "Tinta máxima",
-  hg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Gw() : Hw(),
-  Ww = () => "Paint Charges",
-  Xw = () => "Tintas",
-  Kw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Ww() : Xw(),
-  Yw = b => `+${b.amount} Paint Charges`,
-  Jw = b => `+${b.amount} Tintas`,
-  Qw = (b, l = {}) => (l.locale ?? Fe()) === "en" ? Yw(b) : Jw(b),
-  e5 = () => "Leave alliance",
-  t5 = () => "Sair da aliança",
-  r5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? e5() : t5(),
-  i5 = () => "Members",
-  n5 = () => "Membros",
-  $g = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? i5() : n5(),
-  a5 = () => "Headquarters",
-  s5 = () => "Quartel General",
-  o5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? a5() : s5(),
-  l5 = () => "Not set",
-  c5 = () => "Não configurado",
-  u5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? l5() : c5(),
-  h5 = () => "You are not in an alliance",
-  d5 = () => "Você não está em uma aliança",
-  p5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? h5() : d5(),
-  f5 = () => "Get invited to an alliance",
-  m5 = () => "Seja convidado para uma aliança",
-  _5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? f5() : m5(),
-  g5 = () => "OR",
-  v5 = () => "OU",
-  y5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? g5() : v5(),
-  x5 = () => "Create an alliance",
-  b5 = () => "Crie uma aliança",
-  w5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? x5() : b5(),
-  T5 = () => "Invite link",
-  C5 = () => "Link de convite",
-  S5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? T5() : C5(),
-  P5 = () => "Send the link below to everybody you want to invite to the alliance",
-  I5 = () => "Envie o link abaixo para quem você deseja convidar para a aliança",
-  M5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? P5() : I5(),
-  A5 = () => "Copied",
-  k5 = () => "Copiado",
-  Gg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? A5() : k5(),
-  E5 = () => "Copy",
-  z5 = () => "Copiar",
-  bf = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? E5() : z5(),
-  L5 = () => "No description",
-  D5 = () => "Sem descrição",
-  Hg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? L5() : D5(),
-  R5 = () => "Invite",
-  B5 = () => "Convite",
-  F5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? R5() : B5(),
-  O5 = () => "No pixels painted",
-  N5 = () => "Nenhum pixel pintado",
-  Jf = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? O5() : N5(),
-  q5 = () => "Today",
-  j5 = () => "Hoje",
-  Wd = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? q5() : j5(),
-  V5 = () => "Week",
-  U5 = () => "Semana",
-  Z5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? V5() : U5(),
-  $5 = () => "Month",
-  G5 = () => "Mês",
-  H5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? $5() : G5(),
-  W5 = () => "All time",
-  X5 = () => "Geral",
-  K5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? W5() : X5(),
-  Y5 = () => "this week",
-  J5 = () => "nesta semana",
-  Qf = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Y5() : J5(),
-  Q5 = () => "this month",
-  e3 = () => "neste mês",
-  em = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Q5() : e3(),
-  t3 = () => "Player",
-  r3 = () => "Jogador",
-  tm = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? t3() : r3(),
-  i3 = () => "Last pixel",
-  n3 = () => "Último pixel",
-  a3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? i3() : n3(),
-  s3 = () => "Create alliance",
-  o3 = () => "Criar aliança",
-  l3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? s3() : o3(),
-  c3 = () => "Alliance Name",
-  u3 = () => "Nome da aliança",
-  h3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? c3() : u3(),
-  d3 = () => "Create",
-  p3 = () => "Criar",
-  f3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? d3() : p3(),
-  m3 = () => "Give admin",
-  _3 = () => "Tornar admin",
-  g3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? m3() : _3(),
-  v3 = () => "Ban from alliance",
-  y3 = () => "Banir da aliança",
-  Wg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? v3() : y3(),
-  x3 = () => "No action",
-  b3 = () => "Sem opção",
-  w3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? x3() : b3(),
-  T3 = () => "Unban",
-  C3 = () => "Desbanir",
-  S3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? T3() : C3(),
-  P3 = () => "No banned users",
-  I3 = () => "Sem usuários banidos",
-  M3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? P3() : I3(),
-  A3 = () => "Update",
-  k3 = () => "Atualizar",
-  E3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? A3() : k3(),
-  z3 = () => "Error giving admin to user",
-  L3 = () => "Erro ao tornar usuário admin",
-  D3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? z3() : L3(),
-  R3 = () => "Users",
-  B3 = () => "Usuários",
-  F3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? R3() : B3(),
-  O3 = () => "Banned",
-  N3 = () => "Banido",
-  q3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? O3() : N3(),
-  j3 = () => "Regions",
-  V3 = () => "Regiões",
-  U3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? j3() : V3(),
-  Z3 = () => "Countries",
-  $3 = () => "Países",
-  G3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Z3() : $3(),
-  H3 = () => "Players",
-  W3 = () => "Jogadores",
-  Xg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? H3() : W3(),
-  X3 = () => "Alliances",
-  K3 = () => "Alianças",
-  Kg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? X3() : K3(),
-  Y3 = () => "Region",
-  J3 = () => "Região",
-  Q3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Y3() : J3(),
-  eT = () => "Pixels",
-  tT = () => "Pixels",
-  Ql = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? eT() : tT(),
-  rT = () => "Painted",
-  iT = () => "Pintados",
-  ec = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? rT() : iT(),
-  nT = () => "Pixels painted inside the region",
-  aT = () => "Pixels pintados dentro da região",
-  sT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? nT() : aT(),
-  oT = () => "Visit",
-  lT = () => "Visitar",
-  cT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? oT() : lT(),
-  uT = () => "Not painted",
-  hT = () => "Não pintado",
-  dT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? uT() : hT(),
-  pT = () => "Painted by",
-  fT = () => "Pintado por",
-  mT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? pT() : fT(),
-  _T = () => "Limit reached",
-  gT = () => "Limite atingido",
-  vT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? _T() : gT(),
-  yT = () => "Favorite",
-  xT = () => "Favoritar",
-  bT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? yT() : xT(),
-  wT = () => "Share",
-  TT = () => "Compartilhar",
-  CT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? wT() : TT(),
-  ST = () => "Share place",
-  PT = () => "Compartilhar local",
-  IT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? ST() : PT(),
-  MT = () => "Mute",
-  AT = () => "Mutar",
-  kT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? MT() : AT(),
-  ET = () => "Unmute",
-  zT = () => "Desmutar",
-  LT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? ET() : zT(),
-  DT = () => "Select the headquarters location",
-  RT = () => "Selecione a localização do quartel general",
-  BT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? DT() : RT(),
-  FT = () => "Pixels painted inside the country",
-  OT = () => "Pixels pintados dentro do país",
-  NT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? FT() : OT(),
-  qT = () => "Username copied to clipboard",
-  jT = () => "Usuário copiado",
-  VT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? qT() : jT(),
-  UT = () => "No more charges",
-  ZT = () => "Acabou a tinta",
-  $T = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? UT() : ZT(),
-  GT = () => "You are not allowed to use multiple accounts. Use your main account to paint.",
-  HT = () => "Não é permitido usar várias contas. Use sua conta principal para pintar.",
-  WT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? GT() : HT(),
-  XT = () => "SMS sent to",
-  KT = () => "SMS enviado para",
-  YT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? XT() : KT(),
-  JT = () => "Phone successfully verified",
-  QT = () => "Telefone verificado com sucesso",
-  eC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? JT() : QT(),
-  tC = () => "Not a valid phone number",
-  rC = () => "Não é um número válido",
-  iC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? tC() : rC(),
-  nC = () => "Location unfavorited",
-  aC = () => "Localização desfavoritada",
-  sC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? nC() : aC(),
-  oC = () => "Location favorited",
-  lC = () => "Localização favoritada",
-  cC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? oC() : lC(),
-  uC = () => "Giving admin to user",
-  hC = () => "Tornar usuário um admin",
-  dC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? uC() : hC(),
-  pC = () => "Profile updated",
-  fC = () => "Perfil atualizado",
-  mC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? pC() : fC(),
-  _C = () => "Account successfully deleted",
-  gC = () => "Conta deletada com sucesso",
-  vC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? _C() : gC(),
-  yC = () => "Logged out",
-  xC = () => "Logout feito",
-  bC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? yC() : xC(),
-  wC = () => "Could not logout. Try refreshing the page.",
-  TC = () => "Não foi possível sair da conta. Tente recarregar a página.",
-  CC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? wC() : TC(),
-  SC = () => "You need to zoom in to select a pixel",
-  PC = () => "Dê zoom para selecionar um pixel",
-  IC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? SC() : PC(),
-  MC = () => "Phone verification",
-  AC = () => "Verificação de telefone",
-  kC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? MC() : AC(),
-  EC = () => "Please verify your phone number to continue playing. This helps us keep bots out and ensure a safe, creative experience for everyone.",
-  zC = () => "Por favor, verifique com seu telefone para continuar jogando. Isso nos ajuda a filtrar bots e manter um experiência segura e criativa para todos.",
-  LC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? EC() : zC(),
-  DC = () => "Send Code",
-  RC = () => "Enviar o código",
-  BC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? DC() : RC(),
-  FC = () => "Input the code",
-  OC = () => "Insira o código",
-  NC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? FC() : OC(),
-  qC = () => "Sent to",
-  jC = () => "Enviar para",
-  VC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? qC() : jC(),
-  UC = () => "Resend Code",
-  ZC = () => "Reenviar Código",
-  $C = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? UC() : ZC(),
-  GC = () => "Try another number",
-  HC = () => "Tentar outro número",
-  WC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? GC() : HC(),
-  XC = () => "Edit profile",
-  KC = () => "Editar perfil",
-  YC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? XC() : KC(),
-  JC = () => "Image",
-  QC = () => "Imagem",
-  eS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? JC() : QC(),
-  tS = () => "Download",
-  rS = () => "Download",
-  iS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? tS() : rS(),
-  nS = () => "Image copied to clipboard",
-  aS = () => "Imagem copiada para a área de transferência",
-  sS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? nS() : aS(),
-  oS = () => "My map is lagging",
-  lS = () => "Meu mapa está travando",
-  cS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? oS() : lS(),
-  uS = () => "Verify if",
-  hS = () => "Verifique se",
-  dS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? uS() : hS(),
-  pS = () => "Use hardware acceleration when available",
-  fS = () => "Usar aceleração gráfica quando disponível",
-  mS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? pS() : fS(),
-  _S = () => "is enabled on",
-  gS = () => "está habilitado em",
-  vS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? _S() : gS(),
-  yS = () => "Follow the instructions to enable hardware acceleration",
-  xS = () => "Siga a instrução para habilitar a aceleração de hardware",
-  bS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? yS() : xS(),
-  wS = () => "Report User",
-  TS = () => "Reportar usuário",
-  Yg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? wS() : TS(),
-  CS = () => "Ban User",
-  SS = () => "Banir usuário",
-  Jg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? CS() : SS(),
-  PS = () => "Select the reason",
-  IS = () => "Selecione o motivo",
-  MS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? PS() : IS(),
-  AS = () => "Other",
-  kS = () => "Outro motivo",
-  ES = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? AS() : kS(),
-  zS = () => "Other reason not listed",
-  LS = () => "Outro motivo não listado",
-  DS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? zS() : LS(),
-  RS = () => "Extra context on what happened",
-  BS = () => "Mais informações sobre o que aconteceu",
-  FS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? RS() : BS(),
-  OS = () => "Report",
-  NS = () => "Reportar",
-  qS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? OS() : NS(),
-  jS = () => "Report sent successfully",
-  VS = () => "Denúncia enviada com sucesso",
-  US = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? jS() : VS(),
-  ZS = () => "Select the report reason",
-  $S = () => "Selecione o motivo da denúncia",
-  GS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? ZS() : $S(),
-  HS = () => "Report failed. Please try again later",
-  WS = () => "Denúncia falhou. Por favor, tente novamente mais tarde",
-  XS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? HS() : WS(),
-  KS = () => "Moderation",
-  YS = () => "Moderação",
-  JS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? KS() : YS(),
-  QS = () => "Terms",
-  eP = () => "Termos",
-  tP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? QS() : eP(),
-  rP = () => "Privacy",
-  iP = () => "Privacidade",
-  nP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? rP() : iP(),
-  aP = () => "Clear area",
-  sP = () => "Limpar área",
-  oP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? aP() : sP(),
-  lP = () => "Select the area's first corner",
-  cP = () => "Selecione o primeiro canto da área",
-  uP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? lP() : cP(),
-  hP = () => "Select the area's opposite corner",
-  dP = () => "Selecione o canto oposto da área",
-  pP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? hP() : dP(),
-  fP = () => "Suspender usuário",
-  mP = () => "timeout_user",
-  Qg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? mP() : fP(),
+  yb = () => "Menu",
+  xb = () => "Menu",
+  bb = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? yb() : xb(),
+  wb = b => `Could not install the app: ${b.error}`,
+  Tb = b => `Não pode instalar o app: ${b.error}`,
+  Cb = (b, l = {}) => (l.locale ?? Fe()) === "en" ? wb(b) : Tb(b),
+  Sb = () => "Install App",
+  Pb = () => "Instalar App",
+  Ib = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Sb() : Pb(),
+  Mb = () => "Livestreams",
+  Ab = () => "Livestreams",
+  kb = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Mb() : Ab(),
+  Eb = () => "Log Out",
+  zb = () => "Log Out",
+  Lb = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Eb() : zb(),
+  Db = () => "Hide UI",
+  Rb = () => "Esconder UI",
+  Bb = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Db() : Rb(),
+  Fb = () => "Change picture:",
+  Ob = () => "Change picture:",
+  Nb = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Fb() : Ob(),
+  qb = () => "Show last painted pixel on alliance",
+  jb = () => "Mostrar último pixel pintado na aliança",
+  Vb = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? qb() : jb(),
+  Ub = () => "Delete Account",
+  Zb = () => "Deletar Conta",
+  ug = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Ub() : Zb(),
+  $b = () => "Save",
+  Gb = () => "Salvar",
+  Hb = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? $b() : Gb(),
+  Wb = () => "Are you absolutely sure?",
+  Xb = () => "Você tem certeza absoluta?",
+  Kb = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Wb() : Xb(),
+  Yb = () => "This will permanently delete your account and all associated data. This action cannot be undone.",
+  Jb = () => "Isso excluirá permanentemente sua conta e todos os dados associados. Esta ação não pode ser desfeita.",
+  Qb = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Yb() : Jb(),
+  e2 = () => "Profile",
+  t2 = () => "Perfil",
+  r2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? e2() : t2(),
+  i2 = () => "Display your country’s flag next to your username. Plus, when painting in regions where you own the corresponding flag, you recover 10% of the charges spent.",
+  n2 = () => "Exiba a bandeira do seu país ao lado do seu nome de usuário. Além disso, ao pintar em regiões onde você possui a bandeira correspondente, você recupera 10% das tintas gastas.",
+  a2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? i2() : n2(),
+  s2 = () => "Does not need to be equipped to provide the bonus",
+  o2 = () => "Não precisa estar equipada para obter o bônus",
+  l2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? s2() : o2(),
+  c2 = () => "Equipped",
+  u2 = () => "Equipado",
+  h2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? c2() : u2(),
+  d2 = () => "Equip",
+  p2 = () => "Equipar",
+  f2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? d2() : p2(),
+  m2 = () => "Country",
+  _2 = () => "País",
+  Vg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? m2() : _2(),
+  g2 = () => "No country found.",
+  v2 = () => "País não encontrado.",
+  y2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? g2() : v2(),
+  x2 = () => "Welcome to",
+  b2 = () => "Bem vindo ao",
+  w2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? x2() : b2(),
+  T2 = () => "Rules",
+  C2 = () => "Regras",
+  S2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? T2() : C2(),
+  P2 = () => "Important",
+  I2 = () => "Importante",
+  M2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? P2() : I2(),
+  A2 = () => "🚫 No inappropriate content (+18, hate speech, inappropriate links, highly suggestive material, ...)",
+  k2 = () => "🚫 Conteúdo inapropriado não permitido (+18, discurso de ódio, links inapropriados, conteúdo altamente sugestivo, ...)",
+  E2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? A2() : k2(),
+  z2 = () => "😈 Do not paint over other artworks using random colors or patterns just to mess things up",
+  L2 = () => "😈 Não desenhe por cima de outras artes usando cores ou padrões aleatórios só para bagunçar",
+  D2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? z2() : L2(),
+  R2 = () => "🧑‍🤝‍🧑 Do not paint with more than one account",
+  B2 = () => "🧑‍🤝‍🧑 Não desenhe com mais de uma conta",
+  F2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? R2() : B2(),
+  O2 = () => "🤖 Use of bots is not allowed",
+  N2 = () => "🤖 Usar bots não é permitido",
+  q2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? O2() : N2(),
+  j2 = () => "🙅 Disclosing other's personal information is not allowed",
+  V2 = () => "🙅 Divulgar informações pessoais dos outros não é permitido",
+  U2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? j2() : V2(),
+  Z2 = () => "✅ Painting over other artworks to complement them or create a new drawing is allowed",
+  $2 = () => "✅ Desenhar sobre outras artes para complementar ou criar novas artes é permitido",
+  G2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Z2() : $2(),
+  H2 = () => "✅ Griefing political party flags or portraits of politicians is allowed",
+  W2 = () => "✅ Desenhar sobre bandeiras de partidos e retratos de políticos é permitido",
+  X2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? H2() : W2(),
+  K2 = () => "Violations of these rules may result in suspension of your account.",
+  Y2 = () => "Violações destas regras podem resultar na suspensão da sua conta.",
+  J2 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? K2() : Y2(),
+  Q2 = () => "Understood",
+  ew = () => "Entendido",
+  tw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Q2() : ew(),
+  rw = () => "Toggle art opacity",
+  iw = () => "Alterar opacidade",
+  Ug = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? rw() : iw(),
+  nw = () => "Paint",
+  aw = () => "Pintar",
+  Zg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? nw() : aw(),
+  sw = () => "Select a color",
+  ow = () => "Selecione uma color",
+  lw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? sw() : ow(),
+  cw = () => "Select a pixel to erase",
+  uw = () => "Selecione um pixel para apagar",
+  hw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? cw() : uw(),
+  dw = () => "Pick a color from the map",
+  pw = () => "Escolha uma cor do mapa",
+  fw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? dw() : pw(),
+  mw = () => "Click",
+  _w = () => "Clique",
+  gw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? mw() : _w(),
+  vw = () => "SPACE",
+  yw = () => "ESPAÇO",
+  xw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? vw() : yw(),
+  bw = () => "or hold",
+  ww = () => "ou segure",
+  Tw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? bw() : ww(),
+  Cw = () => "to paint,",
+  Sw = () => "para pintar",
+  Pw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Cw() : Sw(),
+  Iw = () => "You can paint more than 1 pixel",
+  Mw = () => "Você pode pintar mais de 1 pixel",
+  Aw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Iw() : Mw(),
+  kw = () => "Paint pixel",
+  Ew = () => "Pintar pixel",
+  zw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? kw() : Ew(),
+  Lw = () => "Color Picker",
+  Dw = () => "Conta Gotas",
+  Rw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Lw() : Dw(),
+  Bw = () => "+2 max. charge/level",
+  Fw = () => "+2 tinta máxima/level",
+  Ow = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Bw() : Fw(),
+  Nw = () => "Name",
+  qw = () => "Nome",
+  xf = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Nw() : qw(),
+  jw = () => "Discord Username",
+  Vw = () => "Usuário do Discord",
+  Uw = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? jw() : Vw(),
+  Zw = () => "Max. Charges",
+  $w = () => "Tinta máxima",
+  hg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Zw() : $w(),
+  Gw = () => "Paint Charges",
+  Hw = () => "Tintas",
+  Ww = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Gw() : Hw(),
+  Xw = b => `+${b.amount} Paint Charges`,
+  Kw = b => `+${b.amount} Tintas`,
+  Yw = (b, l = {}) => (l.locale ?? Fe()) === "en" ? Xw(b) : Kw(b),
+  Jw = () => "Leave alliance",
+  Qw = () => "Sair da aliança",
+  e5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Jw() : Qw(),
+  t5 = () => "Members",
+  r5 = () => "Membros",
+  $g = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? t5() : r5(),
+  i5 = () => "Headquarters",
+  n5 = () => "Quartel General",
+  a5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? i5() : n5(),
+  s5 = () => "Not set",
+  o5 = () => "Não configurado",
+  l5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? s5() : o5(),
+  c5 = () => "You are not in an alliance",
+  u5 = () => "Você não está em uma aliança",
+  h5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? c5() : u5(),
+  d5 = () => "Get invited to an alliance",
+  p5 = () => "Seja convidado para uma aliança",
+  f5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? d5() : p5(),
+  m5 = () => "OR",
+  _5 = () => "OU",
+  g5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? m5() : _5(),
+  v5 = () => "Create an alliance",
+  y5 = () => "Crie uma aliança",
+  x5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? v5() : y5(),
+  b5 = () => "Invite link",
+  w5 = () => "Link de convite",
+  T5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? b5() : w5(),
+  C5 = () => "Send the link below to everybody you want to invite to the alliance",
+  S5 = () => "Envie o link abaixo para quem você deseja convidar para a aliança",
+  P5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? C5() : S5(),
+  I5 = () => "Copied",
+  M5 = () => "Copiado",
+  Gg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? I5() : M5(),
+  A5 = () => "Copy",
+  k5 = () => "Copiar",
+  bf = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? A5() : k5(),
+  E5 = () => "No description",
+  z5 = () => "Sem descrição",
+  Hg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? E5() : z5(),
+  L5 = () => "Invite",
+  D5 = () => "Convite",
+  R5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? L5() : D5(),
+  B5 = () => "No pixels painted",
+  F5 = () => "Nenhum pixel pintado",
+  Jf = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? B5() : F5(),
+  O5 = () => "Today",
+  N5 = () => "Hoje",
+  Wd = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? O5() : N5(),
+  q5 = () => "Week",
+  j5 = () => "Semana",
+  V5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? q5() : j5(),
+  U5 = () => "Month",
+  Z5 = () => "Mês",
+  $5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? U5() : Z5(),
+  G5 = () => "All time",
+  H5 = () => "Geral",
+  W5 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? G5() : H5(),
+  X5 = () => "this week",
+  K5 = () => "nesta semana",
+  Qf = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? X5() : K5(),
+  Y5 = () => "this month",
+  J5 = () => "neste mês",
+  em = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Y5() : J5(),
+  Q5 = () => "Player",
+  e3 = () => "Jogador",
+  tm = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? Q5() : e3(),
+  t3 = () => "Last pixel",
+  r3 = () => "Último pixel",
+  i3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? t3() : r3(),
+  n3 = () => "Create alliance",
+  a3 = () => "Criar aliança",
+  s3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? n3() : a3(),
+  o3 = () => "Alliance Name",
+  l3 = () => "Nome da aliança",
+  c3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? o3() : l3(),
+  u3 = () => "Create",
+  h3 = () => "Criar",
+  d3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? u3() : h3(),
+  p3 = () => "Give admin",
+  f3 = () => "Tornar admin",
+  m3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? p3() : f3(),
+  _3 = () => "Ban from alliance",
+  g3 = () => "Banir da aliança",
+  Wg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? _3() : g3(),
+  v3 = () => "No action",
+  y3 = () => "Sem opção",
+  x3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? v3() : y3(),
+  b3 = () => "Unban",
+  w3 = () => "Desbanir",
+  T3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? b3() : w3(),
+  C3 = () => "No banned users",
+  S3 = () => "Sem usuários banidos",
+  P3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? C3() : S3(),
+  I3 = () => "Update",
+  M3 = () => "Atualizar",
+  A3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? I3() : M3(),
+  k3 = () => "Error giving admin to user",
+  E3 = () => "Erro ao tornar usuário admin",
+  z3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? k3() : E3(),
+  L3 = () => "Users",
+  D3 = () => "Usuários",
+  R3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? L3() : D3(),
+  B3 = () => "Banned",
+  F3 = () => "Banido",
+  O3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? B3() : F3(),
+  N3 = () => "Regions",
+  q3 = () => "Regiões",
+  j3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? N3() : q3(),
+  V3 = () => "Countries",
+  U3 = () => "Países",
+  Z3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? V3() : U3(),
+  $3 = () => "Players",
+  G3 = () => "Jogadores",
+  Xg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? $3() : G3(),
+  H3 = () => "Alliances",
+  W3 = () => "Alianças",
+  Kg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? H3() : W3(),
+  X3 = () => "Region",
+  K3 = () => "Região",
+  Y3 = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? X3() : K3(),
+  J3 = () => "Pixels",
+  Q3 = () => "Pixels",
+  Ql = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? J3() : Q3(),
+  eT = () => "Painted",
+  tT = () => "Pintados",
+  ec = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? eT() : tT(),
+  rT = () => "Pixels painted inside the region",
+  iT = () => "Pixels pintados dentro da região",
+  nT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? rT() : iT(),
+  aT = () => "Visit",
+  sT = () => "Visitar",
+  oT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? aT() : sT(),
+  lT = () => "Not painted",
+  cT = () => "Não pintado",
+  uT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? lT() : cT(),
+  hT = () => "Painted by",
+  dT = () => "Pintado por",
+  pT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? hT() : dT(),
+  fT = () => "Limit reached",
+  mT = () => "Limite atingido",
+  _T = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? fT() : mT(),
+  gT = () => "Favorite",
+  vT = () => "Favoritar",
+  yT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? gT() : vT(),
+  xT = () => "Share",
+  bT = () => "Compartilhar",
+  wT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? xT() : bT(),
+  TT = () => "Share place",
+  CT = () => "Compartilhar local",
+  ST = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? TT() : CT(),
+  PT = () => "Mute",
+  IT = () => "Mutar",
+  MT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? PT() : IT(),
+  AT = () => "Unmute",
+  kT = () => "Desmutar",
+  ET = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? AT() : kT(),
+  zT = () => "Select the headquarters location",
+  LT = () => "Selecione a localização do quartel general",
+  DT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? zT() : LT(),
+  RT = () => "Pixels painted inside the country",
+  BT = () => "Pixels pintados dentro do país",
+  FT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? RT() : BT(),
+  OT = () => "Username copied to clipboard",
+  NT = () => "Usuário copiado",
+  qT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? OT() : NT(),
+  jT = () => "No more charges",
+  VT = () => "Acabou a tinta",
+  UT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? jT() : VT(),
+  ZT = () => "You are not allowed to use multiple accounts. Use your main account to paint.",
+  $T = () => "Não é permitido usar várias contas. Use sua conta principal para pintar.",
+  GT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? ZT() : $T(),
+  HT = () => "SMS sent to",
+  WT = () => "SMS enviado para",
+  XT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? HT() : WT(),
+  KT = () => "Phone successfully verified",
+  YT = () => "Telefone verificado com sucesso",
+  JT = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? KT() : YT(),
+  QT = () => "Not a valid phone number",
+  eC = () => "Não é um número válido",
+  tC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? QT() : eC(),
+  rC = () => "Location unfavorited",
+  iC = () => "Localização desfavoritada",
+  nC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? rC() : iC(),
+  aC = () => "Location favorited",
+  sC = () => "Localização favoritada",
+  oC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? aC() : sC(),
+  lC = () => "Giving admin to user",
+  cC = () => "Tornar usuário um admin",
+  uC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? lC() : cC(),
+  hC = () => "Profile updated",
+  dC = () => "Perfil atualizado",
+  pC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? hC() : dC(),
+  fC = () => "Account successfully deleted",
+  mC = () => "Conta deletada com sucesso",
+  _C = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? fC() : mC(),
+  gC = () => "Logged out",
+  vC = () => "Logout feito",
+  yC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? gC() : vC(),
+  xC = () => "Could not logout. Try refreshing the page.",
+  bC = () => "Não foi possível sair da conta. Tente recarregar a página.",
+  wC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? xC() : bC(),
+  TC = () => "You need to zoom in to select a pixel",
+  CC = () => "Dê zoom para selecionar um pixel",
+  SC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? TC() : CC(),
+  PC = () => "Phone verification",
+  IC = () => "Verificação de telefone",
+  MC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? PC() : IC(),
+  AC = () => "Please verify your phone number to continue playing. This helps us keep bots out and ensure a safe, creative experience for everyone.",
+  kC = () => "Por favor, verifique com seu telefone para continuar jogando. Isso nos ajuda a filtrar bots e manter um experiência segura e criativa para todos.",
+  EC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? AC() : kC(),
+  zC = () => "Send Code",
+  LC = () => "Enviar o código",
+  DC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? zC() : LC(),
+  RC = () => "Input the code",
+  BC = () => "Insira o código",
+  FC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? RC() : BC(),
+  OC = () => "Sent to",
+  NC = () => "Enviar para",
+  qC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? OC() : NC(),
+  jC = () => "Resend Code",
+  VC = () => "Reenviar Código",
+  UC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? jC() : VC(),
+  ZC = () => "Try another number",
+  $C = () => "Tentar outro número",
+  GC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? ZC() : $C(),
+  HC = () => "Edit profile",
+  WC = () => "Editar perfil",
+  XC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? HC() : WC(),
+  KC = () => "Image",
+  YC = () => "Imagem",
+  JC = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? KC() : YC(),
+  QC = () => "Download",
+  eS = () => "Download",
+  tS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? QC() : eS(),
+  rS = () => "Image copied to clipboard",
+  iS = () => "Imagem copiada para a área de transferência",
+  nS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? rS() : iS(),
+  aS = () => "My map is lagging",
+  sS = () => "Meu mapa está travando",
+  oS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? aS() : sS(),
+  lS = () => "Verify if",
+  cS = () => "Verifique se",
+  uS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? lS() : cS(),
+  hS = () => "Use hardware acceleration when available",
+  dS = () => "Usar aceleração gráfica quando disponível",
+  pS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? hS() : dS(),
+  fS = () => "is enabled on",
+  mS = () => "está habilitado em",
+  _S = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? fS() : mS(),
+  gS = () => "Follow the instructions to enable hardware acceleration",
+  vS = () => "Siga a instrução para habilitar a aceleração de hardware",
+  yS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? gS() : vS(),
+  xS = () => "Report User",
+  bS = () => "Reportar usuário",
+  Yg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? xS() : bS(),
+  wS = () => "Ban User",
+  TS = () => "Banir usuário",
+  Jg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? wS() : TS(),
+  CS = () => "Select the reason",
+  SS = () => "Selecione o motivo",
+  PS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? CS() : SS(),
+  IS = () => "Other",
+  MS = () => "Outro motivo",
+  AS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? IS() : MS(),
+  kS = () => "Other reason not listed",
+  ES = () => "Outro motivo não listado",
+  zS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? kS() : ES(),
+  LS = () => "Extra context on what happened",
+  DS = () => "Mais informações sobre o que aconteceu",
+  RS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? LS() : DS(),
+  BS = () => "Report",
+  FS = () => "Reportar",
+  OS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? BS() : FS(),
+  NS = () => "Report sent successfully",
+  qS = () => "Denúncia enviada com sucesso",
+  jS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? NS() : qS(),
+  VS = () => "Select the report reason",
+  US = () => "Selecione o motivo da denúncia",
+  ZS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? VS() : US(),
+  $S = () => "Report failed. Please try again later",
+  GS = () => "Denúncia falhou. Por favor, tente novamente mais tarde",
+  HS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? $S() : GS(),
+  WS = () => "Moderation",
+  XS = () => "Moderação",
+  KS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? WS() : XS(),
+  YS = () => "Terms",
+  JS = () => "Termos",
+  QS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? YS() : JS(),
+  eP = () => "Privacy",
+  tP = () => "Privacidade",
+  rP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? eP() : tP(),
+  iP = () => "Clear area",
+  nP = () => "Limpar área",
+  aP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? iP() : nP(),
+  sP = () => "Select the area's first corner",
+  oP = () => "Selecione o primeiro canto da área",
+  lP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? sP() : oP(),
+  cP = () => "Select the area's opposite corner",
+  uP = () => "Selecione o canto oposto da área",
+  hP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? cP() : uP(),
+  dP = () => "Suspender usuário",
+  pP = () => "timeout_user",
+  Qg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? pP() : dP(),
   Es = 2 * Math.PI * 6378137 / 2;
 class hc {
   constructor(l = 256) {
@@ -937,15 +935,15 @@ function rm(b, l = !0) {
 function im(b) {
   return [(b.min[0] + b.max[0]) / 2, (b.min[1] + b.max[1]) / 2]
 }
-const _P = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAAXNSR0IArs4c6QAAACpJREFUeNpj+AsEZ86ASIa/DAwMZ84ACRDzDBigMs/AARITq1oUwxBWAADaREUdDMswKwAAAABJRU5ErkJggg==",
+const fP = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAAXNSR0IArs4c6QAAACpJREFUeNpj+AsEZ86ASIa/DAwMZ84ACRDzDBigMs/AARITq1oUwxBWAADaREUdDMswKwAAAABJRU5ErkJggg==",
   dg = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAAXNSR0IArs4c6QAAACVJREFUeNpj+A8FDEAAZwMRBAIBmIYLIgHcgkQDIs3E6SRsjgcABYFLtfTgakEAAAAASUVORK5CYII=";
 
-function gP(b) {
+function mP(b) {
   return Math.floor(Math.random() * b)
 }
 const wf = 14.5;
-async function vP() {
-  const b = bP();
+async function _P() {
+  const b = yP();
   if (b) return b;
   try {
     if ((await navigator.permissions.query({
@@ -962,21 +960,21 @@ async function vP() {
     console.error(l)
   }
   return {
-    ...yP().pos,
+    ...gP().pos,
     zoom: wf
   }
 }
 
-function yP() {
-  const b = Object.entries(xP),
-    l = gP(b.length),
+function gP() {
+  const b = Object.entries(vP),
+    l = mP(b.length),
     [_, C] = b[l];
   return {
     city: _,
     pos: C
   }
 }
-const xP = {
+const vP = {
     tokyo: {
       lat: 35.677545560719665,
       lng: 139.76394445809638
@@ -1007,14 +1005,14 @@ function Qa(b, l) {
   }))
 }
 
-function bP() {
+function yP() {
   const b = localStorage.getItem(ev);
   if (!b) return;
   const l = JSON.parse(b);
   return l.zoom ?? (l.zoom = wf), l
 }
 var ku, Eu;
-class wP {
+class xP {
   constructor() {
     wr(this, ku, nt(-1));
     wr(this, Eu, nt([]))
@@ -1061,7 +1059,7 @@ class wP {
   }
 }
 ku = new WeakMap, Eu = new WeakMap;
-const Ho = new wP;
+const Ho = new xP;
 
 function nm(b) {
   return b && b.__esModule && Object.prototype.hasOwnProperty.call(b, "default") ? b.default : b
@@ -1073,14 +1071,14 @@ var Pd = {
  * MapLibre GL JS
  * @license 3-Clause BSD. Full text of license: https://github.com/maplibre/maplibre-gl-js/blob/v5.6.2/LICENSE.txt
  */
-var TP = Pd.exports,
+var bP = Pd.exports,
   pg;
 
-function CP() {
+function wP() {
   return pg || (pg = 1, (function(b, l) {
     (function(_, C) {
       b.exports = C()
-    })(TP, (function() {
+    })(bP, (function() {
       var _ = {},
         C = {};
 
@@ -34123,8 +34121,8 @@ ${B.shaderPreludeCode.vertexSource}`,
     }))
   })(Pd)), Pd.exports
 }
-var SP = CP();
-const bd = nm(SP);
+var TP = wP();
+const bd = nm(TP);
 class fg {
   constructor(l) {
     lr(this, "gm");
@@ -34162,7 +34160,7 @@ class fg {
         we = X + pe - 1,
         Re = this.gm.pixelsToLatLon(ye, we + 1, this.input.zoom),
         ke = this.gm.pixelsToLatLon(Se + 1, X, this.input.zoom);
-      ie = new PP({
+      ie = new CP({
         id: `${this.input.id}-${o}`,
         img: this.input.img,
         canvasSize: this.canvasSize,
@@ -34225,7 +34223,7 @@ class fg {
     }
   }
 }
-class PP {
+class CP {
   constructor(l) {
     lr(this, "annotations", new Set);
     lr(this, "canvas");
@@ -34292,7 +34290,7 @@ function rv(b) {
   return Math.max(b.naturalWidth, b.naturalHeight)
 }
 
-function IP() {
+function SP() {
   return window.matchMedia("(display-mode: standalone)").matches || "standalone" in window.navigator && window.navigator.standalone === !0
 }
 
@@ -34300,7 +34298,7 @@ function Cu(b, l) {
   return l.includes(b)
 }
 
-function MP(b) {
+function PP(b) {
   const l = {
       opaque: !0
     },
@@ -34318,15 +34316,15 @@ function MP(b) {
   return T && (l.opaque = T !== "0"), b.searchParams.get("select") && (l.select = !0), l.newUser = !!b.searchParams.get("new-user"), l.alliance = !!b.searchParams.get("alliance"), l
 }
 
-function AP(b, l) {
+function IP(b, l) {
   return b = new URL(b), l.pos !== void 0 && (b.searchParams.set("lat", l.pos.lat.toString()), b.searchParams.set("lng", l.pos.lng.toString())), l.zoom !== void 0 && b.searchParams.set("zoom", l.zoom.toString()), l.season !== void 0 && b.searchParams.set("season", l.season.toString()), l.opaque !== void 0 && b.searchParams.set("opaque", l.opaque ? "1" : "0"), l.newUser !== void 0 && b.searchParams.set("new-user", l.newUser ? "1" : "0"), l.alliance !== void 0 && b.searchParams.set("alliance", l.alliance ? "1" : "0"), l.select && b.searchParams.set("alliance", "1"), b
 }
 const Id = zn({
   shouldReload: !0
 });
-var kP = Ie('<legend class="fieldset-legend"> </legend>'),
-  EP = Ie('<span class="text-base-content/80"> </span>'),
-  zP = Ie('<fieldset class="fieldset"><!> <textarea></textarea> <div class="flex items-center justify-between text-xs"><span class="text-error"> </span> <!></div></fieldset>');
+var MP = Ie('<legend class="fieldset-legend"> </legend>'),
+  AP = Ie('<span class="text-base-content/80"> </span>'),
+  kP = Ie('<fieldset class="fieldset"><!> <textarea></textarea> <div class="flex items-center justify-between text-xs"><span class="text-error"> </span> <!></div></fieldset>');
 
 function iv(b, l) {
   Sr(l, !0);
@@ -34347,11 +34345,11 @@ function iv(b, l) {
     var ke;
     l.max !== void 0 && x(T) > l.max && _((ke = _()) == null ? void 0 : ke.substring(0, l.max))
   });
-  var Z = zP(),
+  var Z = kP(),
     W = k(Z);
   {
     var ie = ke => {
-      var Oe = kP(),
+      var Oe = MP(),
         Ee = k(Oe, !0);
       A(Oe), Ge(() => fe(Ee, l.label)), H(ke, Oe)
     };
@@ -34372,7 +34370,7 @@ function iv(b, l) {
   var we = V(X, 2);
   {
     var Re = ke => {
-      var Oe = EP(),
+      var Oe = AP(),
         Ee = k(Oe, !0);
       A(Oe), Ge(() => fe(Ee, l.max - x(T))), H(ke, Oe)
     };
@@ -34382,13 +34380,13 @@ function iv(b, l) {
   }
   A(ye), A(Z), Ge(() => fe(Se, x(F))), qd(pe, _), H(b, Z), Pr()
 }
-var LP = (b, l) => {
+var EP = (b, l) => {
     var _;
     (_ = l()) == null || _.close()
   },
-  DP = Ie('<dialog class="modal"><div class="modal-box max-w-2xl"><h3 class="flex items-center gap-1.5 text-lg font-bold"> </h3> <form><div class="mb-4 mt-2"><!></div> <div class="flex w-full justify-end gap-2"><button type="button" class="btn btn-soft"> </button> <button class="btn btn-primary"> </button></div></form></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
+  zP = Ie('<dialog class="modal"><div class="modal-box max-w-2xl"><h3 class="flex items-center gap-1.5 text-lg font-bold"> </h3> <form><div class="mb-4 mt-2"><!></div> <div class="flex w-full justify-end gap-2"><button type="button" class="btn btn-soft"> </button> <button class="btn btn-primary"> </button></div></form></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
 
-function RP(b, l) {
+function LP(b, l) {
   Sr(l, !0);
   let _ = zt(l, "ref", 15),
     C = nt(!1),
@@ -34401,7 +34399,7 @@ function RP(b, l) {
     };
     return document.addEventListener("keydown", Oe), () => document.removeEventListener("keydown", Oe)
   });
-  var T = DP(),
+  var T = zP(),
     o = k(T),
     Z = k(o),
     W = k(Z, !0);
@@ -34434,14 +34432,14 @@ function RP(b, l) {
   A(pe);
   var X = V(pe, 2),
     Se = k(X);
-  Se.__click = [LP, _];
+  Se.__click = [EP, _];
   var we = k(Se, !0);
   A(Se);
   var Re = V(Se, 2),
     ke = k(Re, !0);
   A(Re), A(X), A(ie), A(o), fi(2), A(T), ps(T, Oe => _(Oe), () => _()), Ge((Oe, Ee, Ne) => {
     fe(W, Oe), Se.disabled = x(C), fe(we, Ee), Re.disabled = x(C), fe(ke, Ne)
-  }, [() => Uy(), () => jd(), () => E3()]), an("submit", ie, async () => {
+  }, [() => Uy(), () => jd(), () => A3()]), an("submit", ie, async () => {
     var Oe, Ee, Ne;
     try {
       if (!((Oe = x(F)) != null && Oe())) return;
@@ -34454,15 +34452,15 @@ function RP(b, l) {
   }), H(b, T), Pr()
 }
 Wi(["click"]);
-var BP = (b, l, _) => {
+var DP = (b, l, _) => {
     navigator.clipboard.writeText(x(l).toString()), oe(_, !0), setTimeout(() => {
       oe(_, !1)
     }, 1e3)
   },
-  FP = Ie('<span class="loading loading-spinner loading-md center-absolute absolute"></span>'),
-  OP = Ie('<dialog class="modal"><div class="modal-box"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <h3 class="flex items-center gap-1.5 text-lg font-bold"> </h3> <span class="text-base-content/80 text-sm"> </span> <div class="relative mt-4"><div><input class="text-base-content/80 min-w-10 grow text-sm font-medium" readonly=""/> <div class="h-10"><button> </button></div></div> <!></div></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
+  RP = Ie('<span class="loading loading-spinner loading-md center-absolute absolute"></span>'),
+  BP = Ie('<dialog class="modal"><div class="modal-box"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <h3 class="flex items-center gap-1.5 text-lg font-bold"> </h3> <span class="text-base-content/80 text-sm"> </span> <div class="relative mt-4"><div><input class="text-base-content/80 min-w-10 grow text-sm font-medium" readonly=""/> <div class="h-10"><button> </button></div></div> <!></div></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
 
-function NP(b, l) {
+function FP(b, l) {
   Sr(l, !0);
   let _ = zt(l, "open", 15),
     C = nt(""),
@@ -34480,7 +34478,7 @@ function NP(b, l) {
     };
     return document.addEventListener("keydown", ht), () => document.removeEventListener("keydown", ht)
   });
-  var T = OP(),
+  var T = BP(),
     o = k(T),
     Z = V(k(o), 2),
     W = k(Z, !0);
@@ -34496,13 +34494,13 @@ function NP(b, l) {
   var Re = V(we, 2),
     ke = k(Re);
   let Oe;
-  ke.__click = [BP, F, L];
+  ke.__click = [DP, F, L];
   var Ee = k(ke, !0);
   A(ke), A(Re), A(X);
   var Ne = V(X, 2);
   {
     var ft = ht => {
-      var Xe = FP();
+      var Xe = RP();
       H(ht, Xe)
     };
     Ve(Ne, ht => {
@@ -34515,18 +34513,18 @@ function NP(b, l) {
     })
   }), Ge((ht, Xe, ct, Je, Be, st) => {
     fe(W, ht), fe(pe, Xe), Se = Or(X, 1, "border-base-content/20 rounded-field relative flex w-full items-center gap-1 border-2 py-1.5 pl-4 pr-2.5", null, Se, ct), Jl(we, Je), Oe = Or(ke, 1, "btn btn-primary", null, Oe, Be), fe(Ee, st)
-  }, [() => S5(), () => M5(), () => ({
+  }, [() => T5(), () => P5(), () => ({
     invisible: !x(C)
   }), () => x(F).toString(), () => ({
     "btn-success": x(L)
   }), () => x(L) ? Gg() : bf()]), an("close", T, () => _(!1)), H(b, T), Pr()
 }
 Wi(["click"]);
-var qP = _r('<svg><path d="M216.856 16.597A208.502 208.502 0 0 0 164.042 0c-2.275 4.113-4.933 9.645-6.766 14.046-19.692-2.961-39.203-2.961-58.533 0-1.832-4.4-4.55-9.933-6.846-14.046a207.809 207.809 0 0 0-52.855 16.638C5.618 67.147-3.443 116.4 1.087 164.956c22.169 16.555 43.653 26.612 64.775 33.193A161.094 161.094 0 0 0 79.735 175.3a136.413 136.413 0 0 1-21.846-10.632 108.636 108.636 0 0 0 5.356-4.237c42.122 19.702 87.89 19.702 129.51 0a131.66 131.66 0 0 0 5.355 4.237 136.07 136.07 0 0 1-21.886 10.653c4.006 8.02 8.638 15.67 13.873 22.848 21.142-6.58 42.646-16.637 64.815-33.213 5.316-56.288-9.08-105.09-38.056-148.36ZM85.474 135.095c-12.645 0-23.015-11.805-23.015-26.18s10.149-26.2 23.015-26.2c12.867 0 23.236 11.804 23.015 26.2.02 14.375-10.148 26.18-23.015 26.18Zm85.051 0c-12.645 0-23.014-11.805-23.014-26.18s10.148-26.2 23.014-26.2c12.867 0 23.236 11.804 23.015 26.2 0 14.375-10.148 26.18-23.015 26.18Z" fill="#5865F2"></path></svg>');
+var OP = _r('<svg><path d="M216.856 16.597A208.502 208.502 0 0 0 164.042 0c-2.275 4.113-4.933 9.645-6.766 14.046-19.692-2.961-39.203-2.961-58.533 0-1.832-4.4-4.55-9.933-6.846-14.046a207.809 207.809 0 0 0-52.855 16.638C5.618 67.147-3.443 116.4 1.087 164.956c22.169 16.555 43.653 26.612 64.775 33.193A161.094 161.094 0 0 0 79.735 175.3a136.413 136.413 0 0 1-21.846-10.632 108.636 108.636 0 0 0 5.356-4.237c42.122 19.702 87.89 19.702 129.51 0a131.66 131.66 0 0 0 5.355 4.237 136.07 136.07 0 0 1-21.886 10.653c4.006 8.02 8.638 15.67 13.873 22.848 21.142-6.58 42.646-16.637 64.815-33.213 5.316-56.288-9.08-105.09-38.056-148.36ZM85.474 135.095c-12.645 0-23.015-11.805-23.015-26.18s10.149-26.2 23.015-26.2c12.867 0 23.236 11.804 23.015 26.2.02 14.375-10.148 26.18-23.015 26.18Zm85.051 0c-12.645 0-23.014-11.805-23.014-26.18s10.148-26.2 23.014-26.2c12.867 0 23.236 11.804 23.015 26.2 0 14.375-10.148 26.18-23.015 26.18Z" fill="#5865F2"></path></svg>');
 
 function am(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = qP();
+  var C = OP();
   Qt(C, () => ({
     viewBox: "0 0 256 199",
     width: "256",
@@ -34536,23 +34534,23 @@ function am(b, l) {
     ..._
   })), H(b, C)
 }
-var jP = async (b, l) => {
-  await navigator.clipboard.writeText(l.username), jr.info(VT())
-}, VP = Ie('<span class="tooltip h-4"><button><!></button></span>');
+var NP = async (b, l) => {
+  await navigator.clipboard.writeText(l.username), jr.info(qT())
+}, qP = Ie('<span class="tooltip h-4"><button><!></button></span>');
 
 function ph(b, l) {
   Sr(l, !0);
-  var _ = VP(),
+  var _ = qP(),
     C = k(_);
-  C.__click = [jP, l];
+  C.__click = [NP, l];
   var L = k(C);
   am(L, {
     class: "size-4 opacity-70"
   }), A(C), A(_), Ge(() => zr(_, "data-tip", `Discord: ${l.username}`)), H(b, _), Pr()
 }
 Wi(["click"]);
-var UP = Ie('<input type="radio" class="tab max-[380px]:px-3"/>'),
-  ZP = Ie('<div class="tabs tabs-border w-max font-medium"></div>');
+var jP = Ie('<input type="radio" class="tab max-[380px]:px-3"/>'),
+  VP = Ie('<div class="tabs tabs-border w-max font-medium"></div>');
 
 function sm(b, l) {
   Sr(l, !0);
@@ -34563,17 +34561,17 @@ function sm(b, l) {
       label: Wd()
     }, {
       value: "week",
-      label: Z5()
+      label: V5()
     }, {
       value: "month",
-      label: H5()
+      label: $5()
     }, {
       value: "all-time",
-      label: K5()
+      label: W5()
     }];
-  var F = ZP();
+  var F = VP();
   nn(F, 21, () => L, T => T.value, (T, o) => {
-    var Z = UP();
+    var Z = jP();
     ea(Z);
     var W;
     Ge(() => {
@@ -34581,9 +34579,9 @@ function sm(b, l) {
     }), Vd(_, [], Z, () => (x(o).value, C()), C), H(T, Z)
   }), A(F), H(b, F), Pr()
 }
-const $P = typeof window < "u" ? window : void 0;
+const UP = typeof window < "u" ? window : void 0;
 
-function GP(b) {
+function ZP(b) {
   let l = b.activeElement;
   for (; l != null && l.shadowRoot;) {
     const _ = l.shadowRoot.activeElement;
@@ -34593,12 +34591,12 @@ function GP(b) {
   return l
 }
 var rc, zu, Ig;
-let HP = (Ig = class {
+let $P = (Ig = class {
   constructor(l = {}) {
     wr(this, rc);
     wr(this, zu);
     const {
-      window: _ = $P,
+      window: _ = UP,
       document: C = _ == null ? void 0 : _.document
     } = l;
     _ !== void 0 && (Jn(this, rc, C), Jn(this, zu, zg(L => {
@@ -34611,12 +34609,12 @@ let HP = (Ig = class {
   }
   get current() {
     var l;
-    return (l = et(this, zu)) == null || l.call(this), et(this, rc) ? GP(et(this, rc)) : null
+    return (l = et(this, zu)) == null || l.call(this), et(this, rc) ? ZP(et(this, rc)) : null
   }
 }, rc = new WeakMap, zu = new WeakMap, Ig);
-new HP;
+new $P;
 
-function WP(b, l) {
+function GP(b, l) {
   switch (b) {
     case "post":
       Zr(l);
@@ -34633,7 +34631,7 @@ function nv(b, l, _, C = {}) {
   } = C;
   let F = !L,
     T = Array.isArray(b) ? [] : void 0;
-  WP(l, () => {
+  GP(l, () => {
     const o = Array.isArray(b) ? b.map(W => W()) : b();
     if (!F) {
       F = !0, T = o;
@@ -34648,25 +34646,25 @@ function dc(b, l, _) {
   nv(b, "post", l, _)
 }
 
-function XP(b, l, _) {
+function HP(b, l, _) {
   nv(b, "pre", l, _)
 }
-dc.pre = XP;
-var KP = Ie('<span class="loading loading-spinner loading-lg mt-18 mx-auto flex items-center"></span>'),
-  YP = Ie('<div class="text-base-content/80 mt-20 text-center text-sm"> <!></div>'),
-  JP = Ie('<span class="font-flag tooltip ml-0.5"> </span>'),
-  QP = (b, l, _) => {
+dc.pre = HP;
+var WP = Ie('<span class="loading loading-spinner loading-lg mt-18 mx-auto flex items-center"></span>'),
+  XP = Ie('<div class="text-base-content/80 mt-20 text-center text-sm"> <!></div>'),
+  KP = Ie('<span class="font-flag tooltip ml-0.5"> </span>'),
+  YP = (b, l, _) => {
     l.onlastpixelclick({
       lat: x(_).lastLatitude ?? 0,
       lng: x(_).lastLongitude ?? 0
     })
   },
-  eI = Ie("<button><!></button>"),
-  tI = Ie('<tr><td class="text-base-content/80 font-medium max-[400px]:hidden"> </td><td><div class="flex items-center gap-2"><!> <span> <span class="ml-0.5"> </span></span> <!> <!></div></td><td class="text-base-content/80 relative text-center font-medium"> <!></td></tr>'),
-  rI = Ie('<table class="table"><thead class="text-base-content/80"><tr><th class="max-[400px]:hidden"></th><th> </th><th class="text-center max-sm:px-1"> </th></tr></thead><tbody></tbody></table>'),
-  iI = Ie('<div><!> <div class="mt-4"><!></div></div>');
+  JP = Ie("<button><!></button>"),
+  QP = Ie('<tr><td class="text-base-content/80 font-medium max-[400px]:hidden"> </td><td><div class="flex items-center gap-2"><!> <span> <span class="ml-0.5"> </span></span> <!> <!></div></td><td class="text-base-content/80 relative text-center font-medium"> <!></td></tr>'),
+  eI = Ie('<table class="table"><thead class="text-base-content/80"><tr><th class="max-[400px]:hidden"></th><th> </th><th class="text-center max-sm:px-1"> </th></tr></thead><tbody></tbody></table>'),
+  tI = Ie('<div><!> <div class="mt-4"><!></div></div>');
 
-function nI(b, l) {
+function rI(b, l) {
   Sr(l, !0);
   let _ = zt(l, "reload", 15),
     C = nt(!0),
@@ -34699,7 +34697,7 @@ function nI(b, l) {
       jr.error(ke.message)
     })
   });
-  var W = iI(),
+  var W = tI(),
     ie = k(W);
   sm(ie, {
     get value() {
@@ -34713,7 +34711,7 @@ function nI(b, l) {
     ye = k(pe);
   {
     var X = we => {
-        var Re = KP();
+        var Re = WP();
         H(we, Re)
       },
       Se = we => {
@@ -34721,7 +34719,7 @@ function nI(b, l) {
           ke = At(Re);
         {
           var Oe = Ne => {
-              var ft = YP(),
+              var ft = XP(),
                 ht = k(ft),
                 Xe = V(ht);
               {
@@ -34764,7 +34762,7 @@ function nI(b, l) {
               A(ft), Ge(Be => fe(ht, `${Be??""} `), [() => Jf()]), H(Ne, ft)
             },
             Ee = Ne => {
-              var ft = rI(),
+              var ft = eI(),
                 ht = k(ft),
                 Xe = k(ht),
                 ct = V(k(Xe)),
@@ -34779,7 +34777,7 @@ function nI(b, l) {
                   var Yt;
                   return ((Yt = Dt.data) == null ? void 0 : Yt.id) === x(Ae).userId
                 });
-                var te = tI();
+                var te = QP();
                 let _e;
                 var ne = k(te),
                   Pe = k(ne, !0);
@@ -34805,7 +34803,7 @@ function nI(b, l) {
                 {
                   var It = Yt => {
                     const nr = lt(() => ds(x(Ae).equippedFlag));
-                    var ar = JP(),
+                    var ar = KP(),
                       Ft = k(ar, !0);
                     A(ar), Ge(() => {
                       zr(ar, "data-tip", x(nr).name), fe(Ft, x(nr).flag)
@@ -34834,9 +34832,9 @@ function nI(b, l) {
                   Lt = V(dt);
                 {
                   var Xt = Yt => {
-                    var nr = eI();
+                    var nr = JP();
                     let ar;
-                    nr.__click = [QP, l, Ae];
+                    nr.__click = [YP, l, Ae];
                     var Ft = k(nr);
                     Wf(Ft, {
                       class: "size-4"
@@ -34844,7 +34842,7 @@ function nI(b, l) {
                       ar = Or(nr, 1, "btn btn-sm btn-ghost absolute -right-2 top-1/2 !-translate-y-1/2 sm:right-4", null, ar, dr), zr(nr, "data-tip", gr)
                     }, [() => ({
                       tooltip: x(F) > 640
-                    }), () => a3()]), H(Yt, nr)
+                    }), () => i3()]), H(Yt, nr)
                   };
                   Ve(Lt, Yt => {
                     x(Ae).lastLatitude && x(Ae).lastLongitude && Yt(Xt)
@@ -34860,7 +34858,7 @@ function nI(b, l) {
                 })), H(Qe, te)
               }), A(it), A(ft), Ge((Qe, Ae) => {
                 fe(Je, Qe), fe(st, Ae)
-              }, [() => tm(), () => Yf()]), H(Ne, ft)
+              }, [() => tm(), () => Xf()]), H(Ne, ft)
             };
           Ve(ke, Ne => {
             x(L).length === 0 ? Ne(Oe) : Ne(Ee, !1)
@@ -34875,11 +34873,11 @@ function nI(b, l) {
   A(pe), A(W), $d("innerWidth", we => oe(F, we, !0)), H(b, W), Pr()
 }
 Wi(["click"]);
-var aI = _r('<svg><path d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"></path></svg>');
+var iI = _r('<svg><path d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"></path></svg>');
 
 function om(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = aI();
+  var C = iI();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -34887,33 +34885,33 @@ function om(b, l) {
     ..._
   })), H(b, C)
 }
-var sI = (b, l) => l.onclickback(),
-  oI = Ie('<div class="badge badge-primary badge-sm badge-soft">ADMIN</div>'),
-  lI = async (b, l) => {
+var nI = (b, l) => l.onclickback(),
+  aI = Ie('<div class="badge badge-primary badge-sm badge-soft">ADMIN</div>'),
+  sI = async (b, l) => {
     try {
       x(l).loading = !0, await ni.giveAllianceAdmin(x(l).id), x(l).role = "admin"
     } catch {
-      jr.error(dC())
+      jr.error(uC())
     } finally {
       x(l).loading = !1
     }
-  }, cI = async (b, l, _) => {
+  }, oI = async (b, l, _) => {
     try {
       x(l).loading = !0, await ni.banAllianceUser(x(l).id), _.data = _.data.filter(C => C.id !== x(l).id)
     } catch {
-      jr.error(D3())
+      jr.error(z3())
     } finally {
       x(l).loading = !1
     }
-  }, uI = Ie('<li><button class="btn btn-ghost"> </button></li> <li><button class="btn btn-ghost btn-error not-hover:text-error"> </button></li>', 1), hI = Ie('<li><button class="btn btn-ghost text-base-content/80"> </button></li>'), dI = Ie('<tr><td class="w-full"><div class="flex items-center gap-2"><!> <span> </span> <!></div></td><td class="px-0"><div class="dropdown"><div tabindex="0" role="button" class="btn btn-ghost"><!></div> <ul class="dropdown-content menu bg-base-100 rounded-box z-1 border-base-200 right-0 w-44 translate-y-1 gap-1 border p-2 shadow-sm"><!></ul></div></td></tr>'), pI = Ie('<div class="mt-2 flex justify-center"><span class="loading loading-dots"></span></div>'), fI = (b, l, _) => {
+  }, lI = Ie('<li><button class="btn btn-ghost"> </button></li> <li><button class="btn btn-ghost btn-error not-hover:text-error"> </button></li>', 1), cI = Ie('<li><button class="btn btn-ghost text-base-content/80"> </button></li>'), uI = Ie('<tr><td class="w-full"><div class="flex items-center gap-2"><!> <span> </span> <!></div></td><td class="px-0"><div class="dropdown"><div tabindex="0" role="button" class="btn btn-ghost"><!></div> <ul class="dropdown-content menu bg-base-100 rounded-box z-1 border-base-200 right-0 w-44 translate-y-1 gap-1 border p-2 shadow-sm"><!></ul></div></td></tr>'), hI = Ie('<div class="mt-2 flex justify-center"><span class="loading loading-dots"></span></div>'), dI = (b, l, _) => {
     ni.unbanAllianceUser(x(l).id).then(() => {
       _.data = _.data.filter(C => C.id !== x(l).id)
     }).catch(C => jr.error(C.message)).finally(() => {
       x(l).loading = !1
     })
-  }, mI = Ie('<tr><td class="w-full"><div class="flex items-center gap-2"><!> <span> </span></div></td><td class="px-0"><button class="btn btn-error"> </button></td></tr>'), _I = Ie('<div class="text-base-content/80 mt-4 flex justify-center"> </div>'), gI = Ie('<div class="mt-2 flex justify-center"><span class="loading loading-dots"></span></div>'), vI = Ie('<div><section class="mt-2 flex items-center gap-1"><button class="btn btn-ghost btn-circle"><!></button> <h2 class="text-xl font-semibold"> </h2></section> <div class="tabs tabs-border mt-2"><input type="radio" name="members_tabs" class="tab" checked/> <div class="tab-content py-4"><table class="table"><tbody></tbody></table> <!></div> <input type="radio" name="members_tabs" class="tab"/> <div class="tab-content py-4"><table class="table"><tbody></tbody></table> <!> <!></div></div></div>');
+  }, pI = Ie('<tr><td class="w-full"><div class="flex items-center gap-2"><!> <span> </span></div></td><td class="px-0"><button class="btn btn-error"> </button></td></tr>'), fI = Ie('<div class="text-base-content/80 mt-4 flex justify-center"> </div>'), mI = Ie('<div class="mt-2 flex justify-center"><span class="loading loading-dots"></span></div>'), _I = Ie('<div><section class="mt-2 flex items-center gap-1"><button class="btn btn-ghost btn-circle"><!></button> <h2 class="text-xl font-semibold"> </h2></section> <div class="tabs tabs-border mt-2"><input type="radio" name="members_tabs" class="tab" checked/> <div class="tab-content py-4"><table class="table"><tbody></tbody></table> <!></div> <input type="radio" name="members_tabs" class="tab"/> <div class="tab-content py-4"><table class="table"><tbody></tbody></table> <!> <!></div></div></div>');
 
-function yI(b, l) {
+function gI(b, l) {
   Sr(l, !0);
   let _ = zn({
       data: [],
@@ -34927,10 +34925,10 @@ function yI(b, l) {
       hasNextPage: !0,
       loading: !1
     });
-  var L = vI(),
+  var L = _I(),
     F = k(L),
     T = k(F);
-  T.__click = [sI, l];
+  T.__click = [nI, l];
   var o = k(T);
   mx(o, {
     class: "size-5"
@@ -34949,7 +34947,7 @@ function yI(b, l) {
       var It;
       return ((It = Dt.data) == null ? void 0 : It.id) === x(Be).id
     });
-    var Qe = dI(),
+    var Qe = uI(),
       Ae = k(Qe),
       vt = k(Ae),
       Q = k(vt);
@@ -34968,7 +34966,7 @@ function yI(b, l) {
     var ne = V(te, 2);
     {
       var Pe = It => {
-        var ut = oI();
+        var ut = aI();
         H(It, ut)
       };
       Ve(ne, It => {
@@ -34987,26 +34985,26 @@ function yI(b, l) {
       xt = k(_t);
     {
       var tt = It => {
-          var ut = uI(),
+          var ut = lI(),
             bt = At(ut),
             wt = k(bt);
-          wt.__click = [lI, Be];
+          wt.__click = [sI, Be];
           var dt = k(wt, !0);
           A(wt), A(bt);
           var Lt = V(bt, 2),
             Xt = k(Lt);
-          Xt.__click = [cI, Be, _];
+          Xt.__click = [oI, Be, _];
           var Yt = k(Xt, !0);
           A(Xt), A(Lt), Ge((nr, ar) => {
             wt.disabled = x(Be).loading, fe(dt, nr), Xt.disabled = x(Be).loading, fe(Yt, ar)
-          }, [() => g3(), () => Wg()]), H(It, ut)
+          }, [() => m3(), () => Wg()]), H(It, ut)
         },
         pt = It => {
-          var ut = hI(),
+          var ut = cI(),
             bt = k(ut);
           bt.disabled = !0;
           var wt = k(bt, !0);
-          A(bt), A(ut), Ge(dt => fe(wt, dt), [() => w3()]), H(It, ut)
+          A(bt), A(ut), Ge(dt => fe(wt, dt), [() => x3()]), H(It, ut)
         };
       Ve(xt, It => {
         x(Be).role === "member" ? It(tt) : It(pt, !1)
@@ -35023,7 +35021,7 @@ function yI(b, l) {
       var Be = Jt(),
         st = At(Be);
       Pu(st, () => _.page, it => {
-        var Qe = pI();
+        var Qe = hI();
         On(Qe, () => Ae => {
           const vt = new IntersectionObserver(Q => {
             Q[0].isIntersecting && !_.loading && (_.loading = !0, ni.getAllianceMembers(_.page).then(te => {
@@ -35050,7 +35048,7 @@ function yI(b, l) {
     Ee = k(Oe),
     Ne = k(Ee);
   nn(Ne, 21, () => C.data, Je => Je.id, (Je, Be, st) => {
-    var it = mI(),
+    var it = pI(),
       Qe = k(it),
       Ae = k(Qe),
       vt = k(Ae);
@@ -35068,18 +35066,18 @@ function yI(b, l) {
     A(Q), A(Ae), A(Qe);
     var _e = V(Qe),
       ne = k(_e);
-    ne.__click = [fI, Be, C];
+    ne.__click = [dI, Be, C];
     var Pe = k(ne, !0);
     A(ne), A(_e), A(it), Ge((Me, at) => {
       Or(Q, 1, `font-semibold ${Me??""}`), fe(te, `${x(Be).name??""} #${x(Be).id??""}`), ne.disabled = x(Be).loading, fe(Pe, at)
-    }, [() => Zn(x(Be).id), () => S3()]), H(Je, it)
+    }, [() => Zn(x(Be).id), () => T3()]), H(Je, it)
   }), A(Ne), A(Ee);
   var ft = V(Ee, 2);
   {
     var ht = Je => {
-      var Be = _I(),
+      var Be = fI(),
         st = k(Be, !0);
-      A(Be), Ge(it => fe(st, it), [() => M3()]), H(Je, Be)
+      A(Be), Ge(it => fe(st, it), [() => P3()]), H(Je, Be)
     };
     Ve(ft, Je => {
       !C.hasNextPage && C.data.length === 0 && Je(ht)
@@ -35091,7 +35089,7 @@ function yI(b, l) {
       var Be = Jt(),
         st = At(Be);
       Pu(st, () => C.page, it => {
-        var Qe = gI();
+        var Qe = mI();
         On(Qe, () => Ae => {
           const vt = new IntersectionObserver(Q => {
             Q[0].isIntersecting && !C.loading && (C.loading = !0, ni.getAllianceBannedMembers(C.page).then(te => {
@@ -35114,13 +35112,13 @@ function yI(b, l) {
   }
   A(Oe), A(ie), A(L), Ge((Je, Be, st) => {
     fe(W, Je), zr(pe, "aria-label", Be), zr(ke, "aria-label", st)
-  }, [() => $g(), () => F3(), () => q3()]), H(b, L), Pr()
+  }, [() => $g(), () => R3(), () => O3()]), H(b, L), Pr()
 }
 Wi(["click"]);
-var xI = Ie('<span class="label"> </span>'),
-  bI = Ie('<span class="hidden px-1 text-[10px] peer-focus:block"> </span>'),
-  wI = Ie('<p class="text-error ml-3 text-sm"> </p>'),
-  TI = Ie('<div><label><!> <input class="peer" type="text"/> <!></label> <!></div>');
+var vI = Ie('<span class="label"> </span>'),
+  yI = Ie('<span class="hidden px-1 text-[10px] peer-focus:block"> </span>'),
+  xI = Ie('<p class="text-error ml-3 text-sm"> </p>'),
+  bI = Ie('<div><label><!> <input class="peer" type="text"/> <!></label> <!></div>');
 
 function Tf(b, l) {
   Sr(l, !0);
@@ -35140,13 +35138,13 @@ function Tf(b, l) {
     var ke;
     l.max !== void 0 && x(F) > l.max && _((ke = _()) == null ? void 0 : ke.substring(0, l.max))
   });
-  var o = TI(),
+  var o = bI(),
     Z = k(o);
   let W;
   var ie = k(Z);
   {
     var pe = ke => {
-      var Oe = xI(),
+      var Oe = vI(),
         Ee = k(Oe, !0);
       A(Oe), Ge(() => fe(Ee, l.label)), H(ke, Oe)
     };
@@ -35159,7 +35157,7 @@ function Tf(b, l) {
   var X = V(ye, 2);
   {
     var Se = ke => {
-      var Oe = bI(),
+      var Oe = yI(),
         Ee = k(Oe, !0);
       A(Oe), Ge(() => fe(Ee, l.max - x(F))), H(ke, Oe)
     };
@@ -35171,7 +35169,7 @@ function Tf(b, l) {
   var we = V(Z, 2);
   {
     var Re = ke => {
-      var Oe = wI(),
+      var Oe = xI(),
         Ee = k(Oe, !0);
       A(Oe), Ge(() => fe(Ee, x(L))), H(ke, Oe)
     };
@@ -35185,13 +35183,13 @@ function Tf(b, l) {
     "input-error": !!x(L)
   })]), qd(ye, _), H(b, o), Pr()
 }
-var CI = (b, l) => {
+var wI = (b, l) => {
     var _;
     (_ = l()) == null || _.close()
   },
-  SI = Ie('<dialog class="modal"><div class="modal-box"><h3 class="flex items-center gap-1.5 text-lg font-bold"> </h3> <form><div class="my-4"><!></div> <div class="flex w-full justify-end gap-2"><button type="button" class="btn btn-soft"> </button> <button class="btn btn-primary"> </button></div></form></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
+  TI = Ie('<dialog class="modal"><div class="modal-box"><h3 class="flex items-center gap-1.5 text-lg font-bold"> </h3> <form><div class="my-4"><!></div> <div class="flex w-full justify-end gap-2"><button type="button" class="btn btn-soft"> </button> <button class="btn btn-primary"> </button></div></form></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
 
-function PI(b, l) {
+function CI(b, l) {
   Sr(l, !0);
   let _ = zt(l, "ref", 15),
     C = nt(!1),
@@ -35204,7 +35202,7 @@ function PI(b, l) {
     };
     return document.addEventListener("keydown", Oe), () => document.removeEventListener("keydown", Oe)
   });
-  var T = SI(),
+  var T = TI(),
     o = k(T),
     Z = k(o),
     W = k(Z, !0);
@@ -35214,7 +35212,7 @@ function PI(b, l) {
     ye = k(pe);
   {
     let Oe = lt(() => xf()),
-      Ee = lt(() => h3());
+      Ee = lt(() => c3());
     Tf(ye, {
       get label() {
         return x(Oe)
@@ -35241,14 +35239,14 @@ function PI(b, l) {
   A(pe);
   var X = V(pe, 2),
     Se = k(X);
-  Se.__click = [CI, _];
+  Se.__click = [wI, _];
   var we = k(Se, !0);
   A(Se);
   var Re = V(Se, 2),
     ke = k(Re, !0);
   A(Re), A(X), A(ie), A(o), fi(2), A(T), ps(T, Oe => _(Oe), () => _()), Ge((Oe, Ee, Ne) => {
     fe(W, Oe), Se.disabled = x(C), fe(we, Ee), Re.disabled = x(C), fe(ke, Ne)
-  }, [() => l3(), () => jd(), () => f3()]), an("submit", ie, async () => {
+  }, [() => s3(), () => jd(), () => d3()]), an("submit", ie, async () => {
     var Oe, Ee;
     try {
       if (!((Oe = x(F)) != null && Oe())) return;
@@ -35265,11 +35263,11 @@ function PI(b, l) {
   }), H(b, T), Pr()
 }
 Wi(["click"]);
-var II = _r('<svg><path d="M240-120q-45 0-89-22t-71-58q26 0 53-20.5t27-59.5q0-50 35-85t85-35q50 0 85 35t35 85q0 66-47 113t-113 47Zm230-240L360-470l358-358q11-11 27.5-11.5T774-828l54 54q12 12 12 28t-12 28L470-360Z"></path></svg>');
+var SI = _r('<svg><path d="M240-120q-45 0-89-22t-71-58q26 0 53-20.5t27-59.5q0-50 35-85t85-35q50 0 85 35t35 85q0 66-47 113t-113 47Zm230-240L360-470l358-358q11-11 27.5-11.5T774-828l54 54q12 12 12 28t-12 28L470-360Z"></path></svg>');
 
 function fh(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = II();
+  var C = SI();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -35277,8 +35275,8 @@ function fh(b, l) {
     ..._
   })), H(b, C)
 }
-var MI = _r('<svg><path d="M160-160v-100.77l527.23-527.77q6.15-5.48 13.57-8.47 7.43-2.99 15.49-2.99t15.62 2.54q7.55 2.54 13.94 9.15l42.69 42.93q6.61 6.38 9.04 14 2.42 7.63 2.42 15.25 0 8.13-2.74 15.56-2.74 7.42-8.72 13.57L260.77-160H160Zm540.15-496.46L760-715.54 715.54-760l-59.08 59.85 43.69 43.69Z"></path></svg>'),
-  AI = _r('<svg><path d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"></path></svg>');
+var PI = _r('<svg><path d="M160-160v-100.77l527.23-527.77q6.15-5.48 13.57-8.47 7.43-2.99 15.49-2.99t15.62 2.54q7.55 2.54 13.94 9.15l42.69 42.93q6.61 6.38 9.04 14 2.42 7.63 2.42 15.25 0 8.13-2.74 15.56-2.74 7.42-8.72 13.57L260.77-160H160Zm540.15-496.46L760-715.54 715.54-760l-59.08 59.85 43.69 43.69Z"></path></svg>'),
+  II = _r('<svg><path d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"></path></svg>');
 
 function Cf(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy", "filled"]);
@@ -35286,7 +35284,7 @@ function Cf(b, l) {
     L = At(C);
   {
     var F = o => {
-        var Z = MI();
+        var Z = PI();
         Qt(Z, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
@@ -35295,7 +35293,7 @@ function Cf(b, l) {
         })), H(o, Z)
       },
       T = o => {
-        var Z = AI();
+        var Z = II();
         Qt(Z, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
@@ -35309,7 +35307,19 @@ function Cf(b, l) {
   }
   H(b, C)
 }
-var kI = _r('<svg><path d="M360-440h80v-110h80v110h80v-190l-120-80-120 80v190ZM480-80Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
+var MI = _r('<svg><path d="M360-440h80v-110h80v110h80v-190l-120-80-120 80v190ZM480-80Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
+
+function AI(b, l) {
+  let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
+  var C = MI();
+  Qt(C, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ..._
+  })), H(b, C)
+}
+var kI = _r('<svg><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"></path></svg>');
 
 function EI(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
@@ -35321,7 +35331,7 @@ function EI(b, l) {
     ..._
   })), H(b, C)
 }
-var zI = _r('<svg><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"></path></svg>');
+var zI = _r('<svg><path d="M720-400v-120H600v-80h120v-120h80v120h120v80H800v120h-80Zm-360-80q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Z"></path></svg>');
 
 function LI(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
@@ -35333,9 +35343,9 @@ function LI(b, l) {
     ..._
   })), H(b, C)
 }
-var DI = _r('<svg><path d="M720-400v-120H600v-80h120v-120h80v120h120v80H800v120h-80Zm-360-80q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Z"></path></svg>');
+var DI = _r('<svg><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z"></path></svg>');
 
-function RI(b, l) {
+function Xd(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
   var C = DI();
   Qt(C, () => ({
@@ -35345,24 +35355,12 @@ function RI(b, l) {
     ..._
   })), H(b, C)
 }
-var BI = _r('<svg><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z"></path></svg>');
 
-function Xd(b, l) {
-  let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = BI();
-  Qt(C, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ..._
-  })), H(b, C)
-}
-
-function FI(b, l = "_blank") {
+function RI(b, l = "_blank") {
   return b.replaceAll(/https?:\/\/[^\s]+/g, _ => `<a href="${_}"${l?` target="${l}"`:""}>${_}</a>`)
 }
-var OI = Ie('<div class="flex h-full items-center justify-center"><span class="loading loading-spinner loading-xl"></span></div>'),
-  NI = async (b, l, _, C) => {
+var BI = Ie('<div class="flex h-full items-center justify-center"><span class="loading loading-spinner loading-xl"></span></div>'),
+  FI = async (b, l, _, C) => {
     try {
       oe(l, !0), await ni.leaveAlliance(), oe(_, !0), await C()
     } catch (L) {
@@ -35370,23 +35368,23 @@ var OI = Ie('<div class="flex h-full items-center justify-center"><span class="l
     } finally {
       oe(l, !1)
     }
-  }, qI = (b, l) => {
+  }, OI = (b, l) => {
     oe(l, !0)
-  }, jI = Ie('<div class="tooltip"><button class="btn"><!></button></div>'), VI = (b, l) => {
+  }, NI = Ie('<div class="tooltip"><button class="btn"><!></button></div>'), qI = (b, l) => {
     var _;
     (_ = x(l)) == null || _.show()
-  }, UI = Ie('<button class="text-base-content/50 translate-y-0.5 p-1"><!></button>'), ZI = Ie('<section class="text-base-content/80 highlight-link"><!> <!></section>'), $I = Ie('<span class="font-semibold"> </span>'), GI = (b, l) => oe(l, !0), HI = Ie('<button class="text-primary font-semibold underline"> </button>'), WI = (b, l, _) => {
+  }, jI = Ie('<button class="text-base-content/50 translate-y-0.5 p-1"><!></button>'), VI = Ie('<section class="text-base-content/80 highlight-link"><!> <!></section>'), UI = Ie('<span class="font-semibold"> </span>'), ZI = (b, l) => oe(l, !0), $I = Ie('<button class="text-primary font-semibold underline"> </button>'), GI = (b, l, _) => {
     var C;
     (C = x(l)) != null && C.hq ? _.onhqclick({
       lat: x(l).hq.latitude,
       lng: x(l).hq.longitude
     }) : _.onhqchange()
-  }, XI = Ie('<span class="text-primary underline"> </span>'), KI = Ie('<span class="text-primary underline"> </span>'), YI = Ie('<button class="text-base-content/80 p-1"><!></button>'), JI = Ie('<div class="flex items-center gap-1"><!> <span> <button class="font-semibold"><!></button></span> <!></div>'), QI = Ie('<section class="flex items-center justify-between"><h2 class="text-xl font-semibold sm:text-3xl"> </h2> <div class="flex items-center gap-1"><div class="dropdown"><div tabindex="0" role="button" class="btn btn-ghost"><!></div> <ul class="dropdown-content menu bg-base-100 rounded-box z-1 border-base-200 right-0 w-44 translate-y-1 border p-2 shadow-sm"><li><button class="btn btn-soft btn-error"> </button></li></ul></div> <!></div></section> <!> <section class="mt-3"><div class="flex items-center gap-1"><!> <span> <span class="font-semibold"> </span></span></div> <div class="flex items-center gap-1"><!> <span> <!></span></div> <!></section> <section class="mt-6"><h3 class="text-lg font-semibold"> </h3> <div class="mt-1 pb-2"><!></div></section> <!> <!>', 1), eM = (b, l) => {
+  }, HI = Ie('<span class="text-primary underline"> </span>'), WI = Ie('<span class="text-primary underline"> </span>'), XI = Ie('<button class="text-base-content/80 p-1"><!></button>'), KI = Ie('<div class="flex items-center gap-1"><!> <span> <button class="font-semibold"><!></button></span> <!></div>'), YI = Ie('<section class="flex items-center justify-between"><h2 class="text-xl font-semibold sm:text-3xl"> </h2> <div class="flex items-center gap-1"><div class="dropdown"><div tabindex="0" role="button" class="btn btn-ghost"><!></div> <ul class="dropdown-content menu bg-base-100 rounded-box z-1 border-base-200 right-0 w-44 translate-y-1 border p-2 shadow-sm"><li><button class="btn btn-soft btn-error"> </button></li></ul></div> <!></div></section> <!> <section class="mt-3"><div class="flex items-center gap-1"><!> <span> <span class="font-semibold"> </span></span></div> <div class="flex items-center gap-1"><!> <span> <!></span></div> <!></section> <section class="mt-6"><h3 class="text-lg font-semibold"> </h3> <div class="mt-1 pb-2"><!></div></section> <!> <!>', 1), JI = (b, l) => {
     var _;
     (_ = x(l)) == null || _.show()
-  }, tM = Ie('<div class="flex h-[90%] flex-col items-center justify-center gap-3"><span class="text-base-content/80"> </span> <span class="mt-8 flex items-center gap-2 text-xl font-semibold"><!> </span> <div class="flex w-full justify-center"><div class="divider w-full max-w-sm"> </div></div> <button class="btn btn-xl btn-soft mb-6"><!> </button></div> <!>', 1), rM = Ie('<div class="h-full"><!></div>');
+  }, QI = Ie('<div class="flex h-[90%] flex-col items-center justify-center gap-3"><span class="text-base-content/80"> </span> <span class="mt-8 flex items-center gap-2 text-xl font-semibold"><!> </span> <div class="flex w-full justify-center"><div class="divider w-full max-w-sm"> </div></div> <button class="btn btn-xl btn-soft mb-6"><!> </button></div> <!>', 1), eM = Ie('<div class="h-full"><!></div>');
 
-function iM(b, l) {
+function tM(b, l) {
   Sr(l, !0);
   let _ = nt(void 0),
     C = nt(!0),
@@ -35413,11 +35411,11 @@ function iM(b, l) {
       jr.error(we.message)
     }
   }
-  var pe = rM(),
+  var pe = eM(),
     ye = k(pe);
   {
     var X = we => {
-        var Re = OI();
+        var Re = BI();
         H(we, Re)
       },
       Se = we => {
@@ -35425,7 +35423,7 @@ function iM(b, l) {
           ke = At(Re);
         {
           var Oe = Ne => {
-              yI(Ne, {
+              gI(Ne, {
                 onclickback: () => oe(Z, !1)
               })
             },
@@ -35434,7 +35432,7 @@ function iM(b, l) {
                 ht = At(ft);
               {
                 var Xe = Je => {
-                    var Be = QI(),
+                    var Be = YI(),
                       st = At(Be),
                       it = k(st),
                       Qe = k(it, !0);
@@ -35449,19 +35447,19 @@ function iM(b, l) {
                     var _e = V(Q, 2),
                       ne = k(_e),
                       Pe = k(ne);
-                    Pe.__click = [NI, F, C, ie];
+                    Pe.__click = [FI, F, C, ie];
                     var Me = k(Pe, !0);
                     A(Pe), A(ne), A(_e), A(vt);
                     var at = V(vt, 2);
                     {
                       var We = ce => {
-                        var O = jI(),
+                        var O = NI(),
                           j = k(O);
-                        j.__click = [qI, o];
+                        j.__click = [OI, o];
                         var G = k(j);
-                        RI(G, {
+                        LI(G, {
                           class: "size-4"
-                        }), A(j), A(O), Ge(K => zr(O, "data-tip", K), [() => F5()]), H(ce, O)
+                        }), A(j), A(O), Ge(K => zr(O, "data-tip", K), [() => R5()]), H(ce, O)
                       };
                       Ve(at, ce => {
                         x(_).role == "admin" && ce(We)
@@ -35471,14 +35469,14 @@ function iM(b, l) {
                     var Ct = V(st, 2);
                     {
                       var _t = ce => {
-                        var O = ZI(),
+                        var O = VI(),
                           j = k(O);
-                        ox(j, () => FI(x(_).description || Hg()));
+                        ox(j, () => RI(x(_).description || Hg()));
                         var G = V(j, 2);
                         {
                           var K = le => {
-                            var ve = UI();
-                            ve.__click = [VI, T];
+                            var ve = jI();
+                            ve.__click = [qI, T];
                             var Le = k(ve);
                             Cf(Le, {
                               class: "size-4"
@@ -35515,13 +35513,13 @@ function iM(b, l) {
                       nr = V(Yt);
                     {
                       var ar = ce => {
-                          var O = $I(),
+                          var O = UI(),
                             j = k(O, !0);
                           A(O), Ge(G => fe(j, G), [() => x(_).members.toLocaleString("en-US")]), H(ce, O)
                         },
                         Ft = ce => {
-                          var O = HI();
-                          O.__click = [GI, Z];
+                          var O = $I();
+                          O.__click = [ZI, Z];
                           var j = k(O, !0);
                           A(O), Ge(G => fe(j, G), [() => x(_).members.toLocaleString("en-US")]), H(ce, O)
                         };
@@ -35533,26 +35531,26 @@ function iM(b, l) {
                     var dr = V(dt, 2);
                     {
                       var gr = ce => {
-                        var O = JI(),
+                        var O = KI(),
                           j = k(O);
-                        EI(j, {
+                        AI(j, {
                           class: "inline size-4"
                         });
                         var G = V(j, 2),
                           K = k(G),
                           le = V(K);
-                        le.__click = [WI, _, l];
+                        le.__click = [GI, _, l];
                         var ve = k(le);
                         {
                           var Le = Ye => {
-                              var Ot = XI(),
+                              var Ot = HI(),
                                 xe = k(Ot);
                               A(Ot), Ge((kt, Pt) => fe(xe, `${kt??""}, ${Pt??""}`), [() => x(_).hq.latitude.toFixed(3), () => x(_).hq.longitude.toFixed(3)]), H(Ye, Ot)
                             },
                             Ce = Ye => {
-                              var Ot = KI(),
+                              var Ot = WI(),
                                 xe = k(Ot, !0);
-                              A(Ot), Ge(kt => fe(xe, kt), [() => u5()]), H(Ye, Ot)
+                              A(Ot), Ge(kt => fe(xe, kt), [() => l5()]), H(Ye, Ot)
                             };
                           Ve(ve, Ye => {
                             x(_).hq ? Ye(Le) : Ye(Ce, !1)
@@ -35562,7 +35560,7 @@ function iM(b, l) {
                         var Ze = V(G, 2);
                         {
                           var ot = Ye => {
-                            var Ot = YI();
+                            var Ot = XI();
                             Ot.__click = function(...kt) {
                               var Pt;
                               (Pt = l.onhqchange) == null || Pt.apply(this, kt)
@@ -35576,7 +35574,7 @@ function iM(b, l) {
                             x(_).role === "admin" && Ye(ot)
                           })
                         }
-                        A(O), Ge(Ye => fe(K, `${Ye??""}: `), [() => o5()]), H(ce, O)
+                        A(O), Ge(Ye => fe(K, `${Ye??""}: `), [() => a5()]), H(ce, O)
                       };
                       Ve(dr, ce => {
                         (x(_).hq || x(_).role === "admin") && ce(gr)
@@ -35589,7 +35587,7 @@ function iM(b, l) {
                     A(qr);
                     var Mr = V(qr, 2),
                       Ar = k(Mr);
-                    nI(Ar, {
+                    rI(Ar, {
                       get allianceId() {
                         return x(_).id
                       },
@@ -35604,7 +35602,7 @@ function iM(b, l) {
                       }
                     }), A(Mr), A(Ir);
                     var kr = V(Ir, 2);
-                    RP(kr, {
+                    LP(kr, {
                       get description() {
                         return x(_).description
                       },
@@ -35619,7 +35617,7 @@ function iM(b, l) {
                       }
                     });
                     var Nr = V(kr, 2);
-                    NP(Nr, {
+                    FP(Nr, {
                       get open() {
                         return x(o)
                       },
@@ -35628,17 +35626,17 @@ function iM(b, l) {
                       }
                     }), Ge((ce, O, j, G, K) => {
                       fe(Qe, x(_).name), Pe.disabled = x(F), fe(Me, ce), fe(ut, `${O??""}: `), fe(wt, j), fe(Yt, `${G??""}: `), fe(ur, K)
-                    }, [() => r5(), () => Yf(), () => x(_).pixelsPainted.toLocaleString("en-US"), () => $g(), () => Kf()]), H(Je, Be)
+                    }, [() => e5(), () => Xf(), () => x(_).pixelsPainted.toLocaleString("en-US"), () => $g(), () => Yf()]), H(Je, Be)
                   },
                   ct = Je => {
-                    var Be = tM(),
+                    var Be = QI(),
                       st = At(Be),
                       it = k(st),
                       Qe = k(it);
                     A(it);
                     var Ae = V(it, 2),
                       vt = k(Ae);
-                    LI(vt, {
+                    EI(vt, {
                       class: "size-5"
                     });
                     var Q = V(vt, 1, !0);
@@ -35648,7 +35646,7 @@ function iM(b, l) {
                       ne = k(_e, !0);
                     A(_e), A(te);
                     var Pe = V(te, 2);
-                    Pe.__click = [eM, L];
+                    Pe.__click = [JI, L];
                     var Me = k(Pe);
                     Dg(Me, {
                       class: "size-6"
@@ -35656,7 +35654,7 @@ function iM(b, l) {
                     var at = V(Me);
                     A(Pe), A(st);
                     var We = V(st, 2);
-                    PI(We, {
+                    CI(We, {
                       onsuccess: ie,
                       get ref() {
                         return x(L)
@@ -35666,7 +35664,7 @@ function iM(b, l) {
                       }
                     }), Ge((Ct, _t, xt, tt) => {
                       fe(Qe, `${Ct??""}:`), fe(Q, _t), fe(ne, xt), fe(at, ` ${tt??""}`)
-                    }, [() => p5(), () => _5(), () => y5(), () => w5()]), H(Je, Be)
+                    }, [() => h5(), () => f5(), () => g5(), () => x5()]), H(Je, Be)
                   };
                 Ve(ht, Je => {
                   x(_) ? Je(Xe) : Je(ct, !1)
@@ -35687,11 +35685,11 @@ function iM(b, l) {
   A(pe), H(b, pe), Pr()
 }
 Wi(["click"]);
-var nM = _r('<svg><path d="M40-160v-160q0-34 23.5-57t56.5-23h131q20 0 38 10t29 27q29 39 71.5 61t90.5 22q49 0 91.5-22t70.5-61q13-17 30.5-27t36.5-10h131q34 0 57 23t23 57v160H640v-91q-35 25-75.5 38T480-200q-43 0-84-13.5T320-252v92H40Zm440-160q-38 0-72-17.5T351-386q-17-25-42.5-39.5T253-440q22-37 93-58.5T480-520q63 0 134 21.5t93 58.5q-29 0-55 14.5T609-386q-22 32-56 49t-73 17ZM160-440q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T280-560q0 50-34.5 85T160-440Zm640 0q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T920-560q0 50-34.5 85T800-440ZM480-560q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-680q0 50-34.5 85T480-560Z"></path></svg>');
+var rM = _r('<svg><path d="M40-160v-160q0-34 23.5-57t56.5-23h131q20 0 38 10t29 27q29 39 71.5 61t90.5 22q49 0 91.5-22t70.5-61q13-17 30.5-27t36.5-10h131q34 0 57 23t23 57v160H640v-91q-35 25-75.5 38T480-200q-43 0-84-13.5T320-252v92H40Zm440-160q-38 0-72-17.5T351-386q-17-25-42.5-39.5T253-440q22-37 93-58.5T480-520q63 0 134 21.5t93 58.5q-29 0-55 14.5T609-386q-22 32-56 49t-73 17ZM160-440q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T280-560q0 50-34.5 85T160-440Zm640 0q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T920-560q0 50-34.5 85T800-440ZM480-560q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-680q0 50-34.5 85T480-560Z"></path></svg>');
 
 function Kd(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = nM();
+  var C = rM();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -35699,9 +35697,9 @@ function Kd(b, l) {
     ..._
   })), H(b, C)
 }
-const aM = b => b;
+const iM = b => b;
 
-function sM(b) {
+function nM(b) {
   const l = b - 1;
   return l * l * l + 1
 }
@@ -35709,7 +35707,7 @@ function sM(b) {
 function Qn(b, {
   delay: l = 0,
   duration: _ = 400,
-  easing: C = aM
+  easing: C = iM
 } = {}) {
   const L = +getComputedStyle(b).opacity;
   return {
@@ -35723,7 +35721,7 @@ function Qn(b, {
 function uf(b, {
   delay: l = 0,
   duration: _ = 400,
-  easing: C = sM,
+  easing: C = nM,
   axis: L = "y"
 } = {}) {
   const F = getComputedStyle(b),
@@ -35745,9 +35743,9 @@ function uf(b, {
     css: ke => `overflow: hidden;opacity: ${Math.min(ke*20,1)*T};${o}: ${ke*Z}px;padding-${W[0]}: ${ke*pe}px;padding-${W[1]}: ${ke*ye}px;margin-${W[0]}: ${ke*X}px;margin-${W[1]}: ${ke*Se}px;border-${W[0]}-width: ${ke*we}px;border-${W[1]}-width: ${ke*Re}px;min-${o}: 0`
   }
 }
-var oM = Ie('<dialog class="modal"><div class="modal-box sm:h-11/12 flex max-w-3xl flex-col max-sm:size-full max-sm:rounded-none max-sm:px-3 max-sm:py-5"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <div class="flex items-center gap-1.5"><!> <h3 class="text-lg font-bold max-sm:text-xl"> </h3></div> <div class="mt-1 grow"><!></div></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
+var aM = Ie('<dialog class="modal"><div class="modal-box sm:h-11/12 flex max-w-3xl flex-col max-sm:size-full max-sm:rounded-none max-sm:px-3 max-sm:py-5"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <div class="flex items-center gap-1.5"><!> <h3 class="text-lg font-bold max-sm:text-xl"> </h3></div> <div class="mt-1 grow"><!></div></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
 
-function lM(b, l) {
+function sM(b, l) {
   Sr(l, !0);
   let _ = zt(l, "open", 15);
   Ii(() => {
@@ -35756,7 +35754,7 @@ function lM(b, l) {
     };
     return document.addEventListener("keydown", pe), () => document.removeEventListener("keydown", pe)
   });
-  var C = oM(),
+  var C = aM(),
     L = k(C),
     F = V(k(L), 2),
     T = k(F);
@@ -35768,7 +35766,7 @@ function lM(b, l) {
   A(o), A(F);
   var W = V(F, 2),
     ie = k(W);
-  iM(ie, {
+  tM(ie, {
     get open() {
       return _()
     },
@@ -35789,13 +35787,13 @@ function lM(b, l) {
     duration: 300
   })), H(b, C), Pr()
 }
-var cM = Ie('<label class="flex gap-3"><input name="reason" class="radio radio-sm mt-1" type="radio"/> <div><div class="font-semibold"> </div> <div class="text-base-content/80 text-sm"> </div></div></label>'),
-  uM = (b, l) => {
+var oM = Ie('<label class="flex gap-3"><input name="reason" class="radio radio-sm mt-1" type="radio"/> <div><div class="font-semibold"> </div> <div class="text-base-content/80 text-sm"> </div></div></label>'),
+  lM = (b, l) => {
     l(!1)
   },
-  hM = Ie('<dialog class="modal"><div class="modal-box max-h-[97%] max-w-xl"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <form method="POST"><input name="reportedUserId" hidden/> <input name="latitude" hidden/> <input name="longitude" hidden/> <input name="zoom" hidden/> <section class="flex gap-3"><!> <div><h2 class="text-xl font-semibold"><!></h2> <span><span> </span> <span> </span></span></div></section> <section class="mt-6"><h3 class="text-base-content/80 text-base"> </h3> <div class="mt-2 flex flex-col gap-3"></div></section> <section class="mt-6"><!></section> <section class="mt-3 flex justify-end gap-2"><button type="button" class="btn"> </button> <button class="btn btn-error"> </button></section></form></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
+  cM = Ie('<dialog class="modal"><div class="modal-box max-h-[97%] max-w-xl"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <form method="POST"><input name="reportedUserId" hidden/> <input name="latitude" hidden/> <input name="longitude" hidden/> <input name="zoom" hidden/> <section class="flex gap-3"><!> <div><h2 class="text-xl font-semibold"><!></h2> <span><span> </span> <span> </span></span></div></section> <section class="mt-6"><h3 class="text-base-content/80 text-base"> </h3> <div class="mt-2 flex flex-col gap-3"></div></section> <section class="mt-6"><!></section> <section class="mt-3 flex justify-end gap-2"><button type="button" class="btn"> </button> <button class="btn btn-error"> </button></section></form></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
 
-function dM(b, l) {
+function uM(b, l) {
   Sr(l, !0);
   const _ = [];
   let C = zt(l, "open", 15),
@@ -35826,8 +35824,8 @@ function dM(b, l) {
     description: Qy()
   }, {
     value: "other",
-    label: ES(),
-    description: DS()
+    label: AS(),
+    description: zS()
   }];
   Ii(() => {
     const _t = xt => {
@@ -35842,7 +35840,7 @@ function dM(b, l) {
     timeout: `${Cd}/moderator/timeout-user`,
     ban: `${Cd}/admin/ban-user`
   };
-  var pe = hM(),
+  var pe = cM(),
     ye = k(pe),
     X = V(k(ye), 2),
     Se = k(X);
@@ -35918,7 +35916,7 @@ function dM(b, l) {
   A(vt);
   var te = V(vt, 2);
   nn(te, 21, () => W, _t => _t.value, (_t, xt) => {
-    var tt = cM(),
+    var tt = oM(),
       pt = k(tt);
     ea(pt);
     var It, ut = V(pt, 2),
@@ -35934,7 +35932,7 @@ function dM(b, l) {
   var _e = V(Ae, 2),
     ne = k(_e);
   {
-    let _t = lt(() => FS());
+    let _t = lt(() => RS());
     iv(ne, {
       class: "h-20 rounded-lg",
       name: "notes",
@@ -35959,7 +35957,7 @@ function dM(b, l) {
   A(_e);
   var Pe = V(_e, 2),
     Me = k(Pe);
-  Me.__click = [uM, C];
+  Me.__click = [lM, C];
   var at = k(Me, !0);
   A(Me);
   var We = V(Me, 2),
@@ -35970,12 +35968,12 @@ function dM(b, l) {
     })
   }), Ge((_t, xt, tt, pt) => {
     zr(X, "action", ie[l.action]), Jl(Se, l.paintedBy.id), Jl(we, l.latLon[0]), Jl(Re, l.latLon[1]), Jl(ke, l.zoom), Or(Je, 1, `font-medium ${_t??""} flex gap-1.5`), fe(st, l.paintedBy.name), fe(Qe, `#${l.paintedBy.id??""}`), fe(Q, `${xt??""}:`), fe(at, tt), We.disabled = x(L), fe(Ct, pt)
-  }, [() => Zn(l.paintedBy.id), () => MS(), () => jd(), () => qS()]), an("close", pe, () => C(!1)), an("submit", X, async _t => {
+  }, [() => Zn(l.paintedBy.id), () => PS(), () => jd(), () => OS()]), an("close", pe, () => C(!1)), an("submit", X, async _t => {
     if (_t.preventDefault(), !x(L)) try {
       oe(L, !0);
       const xt = new FormData(x(o));
       if (!xt.get("reason")) {
-        jr.error(GS());
+        jr.error(ZS());
         return
       }
       const tt = await l.image;
@@ -35985,7 +35983,7 @@ function dM(b, l) {
         body: xt,
         credentials: "include"
       });
-      pt.status === 200 || pt.status === 409 ? (jr.info(US()), C(!1)) : jr.error(XS())
+      pt.status === 200 || pt.status === 409 ? (jr.info(jS()), C(!1)) : jr.error(HS())
     } finally {
       oe(L, !1)
     }
@@ -35993,7 +35991,7 @@ function dM(b, l) {
 }
 Wi(["click"]);
 
-function pM(b, l, _) {
+function hM(b, l, _) {
   return new Promise((C, L) => {
     b.once("render", () => {
       const F = b.getCanvas().toDataURL(),
@@ -36041,16 +36039,16 @@ function av(b, l) {
     })
   })
 }
-var fM = _r('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
-  mM = _r('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
+var dM = _r('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
+  pM = _r('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
-function _M(b, l) {
+function fM(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy", "filled"]);
   var C = Jt(),
     L = At(C);
   {
     var F = o => {
-        var Z = fM();
+        var Z = dM();
         Qt(Z, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
@@ -36059,7 +36057,7 @@ function _M(b, l) {
         })), H(o, Z)
       },
       T = o => {
-        var Z = mM();
+        var Z = pM();
         Qt(Z, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
@@ -36073,11 +36071,11 @@ function _M(b, l) {
   }
   H(b, C)
 }
-var gM = _r('<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
+var mM = _r('<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
 
 function sv(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = gM();
+  var C = mM();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -36085,11 +36083,11 @@ function sv(b, l) {
     ..._
   })), H(b, C)
 }
-var vM = _r('<svg><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm40-80h480L570-480 450-320l-90-120-120 160Zm-40 80v-560 560Z"></path></svg>');
+var _M = _r('<svg><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm40-80h480L570-480 450-320l-90-120-120 160Zm-40 80v-560 560Z"></path></svg>');
 
-function yM(b, l) {
+function gM(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = vM();
+  var C = _M();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     height: "24px",
@@ -36099,11 +36097,11 @@ function yM(b, l) {
     ..._
   })), H(b, C)
 }
-var xM = _r('<svg><path d="M680-80q-50 0-85-35t-35-85q0-6 3-28L282-392q-16 15-37 23.5t-45 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q24 0 45 8.5t37 23.5l281-164q-2-7-2.5-13.5T560-760q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-24 0-45-8.5T598-672L317-508q2 7 2.5 13.5t.5 14.5q0 8-.5 14.5T317-452l281 164q16-15 37-23.5t45-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Z"></path></svg>');
+var vM = _r('<svg><path d="M680-80q-50 0-85-35t-35-85q0-6 3-28L282-392q-16 15-37 23.5t-45 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q24 0 45 8.5t37 23.5l281-164q-2-7-2.5-13.5T560-760q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-24 0-45-8.5T598-672L317-508q2 7 2.5 13.5t.5 14.5q0 8-.5 14.5T317-452l281 164q16-15 37-23.5t45-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Z"></path></svg>');
 
 function ov(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = xM();
+  var C = vM();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -36126,7 +36124,7 @@ function zd(b) {
   return l > 0 ? `${l}:${_.toString().padStart(2,"0")}:${L}` : `${_}:${L}`
 }
 
-function bM(b) {
+function yM(b) {
   const l = new Date,
     _ = l.getFullYear(),
     C = String(l.getMonth() + 1).padStart(2, "0"),
@@ -36136,20 +36134,20 @@ function bM(b) {
     o = String(l.getSeconds()).padStart(2, "0");
   return `${_}-${C}-${L} ${F}:${T}:${o}`
 }
-var wM = (b, l, _) => {
+var xM = (b, l, _) => {
     navigator.clipboard.writeText(l.url.toString()), oe(_, !0), setTimeout(() => {
       oe(_, !1)
     }, 1e3)
   },
-  TM = Ie('<img class="border-base-content/20 border" alt="Screenshot"/>'),
-  CM = Ie('<div class="flex w-full items-center justify-center"><span class="loading loading-spinner"></span></div>'),
-  SM = async (b, l) => {
+  bM = Ie('<img class="border-base-content/20 border" alt="Screenshot"/>'),
+  wM = Ie('<div class="flex w-full items-center justify-center"><span class="loading loading-spinner"></span></div>'),
+  TM = async (b, l) => {
     x(l) && (await navigator.clipboard.write([new ClipboardItem({
       "image/png": x(l)
-    })]), jr.info(sS()))
-  }, PM = Ie('<div><h3 class="mb-1 mt-5 flex items-center gap-1 text-xl font-semibold"><!> </h3> <!> <div class="mt-3 flex items-end justify-end gap-2"><button class="btn"><!> </button> <a class="btn btn-primary"><!> </a></div></div>'), IM = Ie('<dialog class="modal"><div class="modal-box max-h-11/12"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <h3 class="flex items-center gap-1.5 text-xl font-bold"><!> </h3> <div class="border-base-content/20 rounded-field mt-3 flex w-full items-center gap-1 border-2 py-1.5 pl-4 pr-2.5"><input class="text-base-content/80 min-w-10 grow text-sm font-medium" readonly=""/> <div class="h-10"><button> </button></div></div> <!></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
+    })]), jr.info(nS()))
+  }, CM = Ie('<div><h3 class="mb-1 mt-5 flex items-center gap-1 text-xl font-semibold"><!> </h3> <!> <div class="mt-3 flex items-end justify-end gap-2"><button class="btn"><!> </button> <a class="btn btn-primary"><!> </a></div></div>'), SM = Ie('<dialog class="modal"><div class="modal-box max-h-11/12"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <h3 class="flex items-center gap-1.5 text-xl font-bold"><!> </h3> <div class="border-base-content/20 rounded-field mt-3 flex w-full items-center gap-1 border-2 py-1.5 pl-4 pr-2.5"><input class="text-base-content/80 min-w-10 grow text-sm font-medium" readonly=""/> <div class="h-10"><button> </button></div></div> <!></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
 
-function MM(b, l) {
+function PM(b, l) {
   Sr(l, !0);
   let _ = zt(l, "open", 15),
     C = nt(!1);
@@ -36170,7 +36168,7 @@ function MM(b, l) {
       })
     }, 500)) : x(F) && (URL.revokeObjectURL(x(F)), oe(L, null), oe(F, ""))
   });
-  var T = IM(),
+  var T = SM(),
     o = k(T),
     Z = V(k(o), 2),
     W = k(Z);
@@ -36185,7 +36183,7 @@ function MM(b, l) {
   var X = V(ye, 2),
     Se = k(X);
   let we;
-  Se.__click = [wM, l, C];
+  Se.__click = [xM, l, C];
   var Re = k(Se, !0);
   A(Se), A(X), A(pe);
   var ke = V(pe, 2);
@@ -36195,10 +36193,10 @@ function MM(b, l) {
         var ne;
         return (ne = l.map) == null ? void 0 : ne.getCanvas()
       });
-      var ft = PM(),
+      var ft = CM(),
         ht = k(ft),
         Xe = k(ht);
-      yM(Xe, {
+      gM(Xe, {
         class: "inline size-5"
       });
       var ct = V(Xe);
@@ -36206,13 +36204,13 @@ function MM(b, l) {
       var Je = V(ht, 2);
       {
         var Be = ne => {
-            var Pe = TM();
+            var Pe = bM();
             Ge(() => {
               zr(Pe, "src", x(F)), zr(Pe, "width", x(Ne).width), zr(Pe, "height", x(Ne).height)
             }), H(ne, Pe)
           },
           st = ne => {
-            var Pe = CM();
+            var Pe = wM();
             Ge(() => uc(Pe, `aspect-ratio: ${x(Ne).width/x(Ne).height}`)), H(ne, Pe)
           };
         Ve(Je, ne => {
@@ -36221,9 +36219,9 @@ function MM(b, l) {
       }
       var it = V(Je, 2),
         Qe = k(it);
-      Qe.__click = [SM, L];
+      Qe.__click = [TM, L];
       var Ae = k(Qe);
-      _M(Ae, {
+      fM(Ae, {
         class: "size-5"
       });
       var vt = V(Ae);
@@ -36236,7 +36234,7 @@ function MM(b, l) {
       var _e = V(te);
       A(Q), A(it), A(ft), Ge((ne, Pe, Me, at) => {
         fe(ct, ` ${ne??""}`), fe(vt, ` ${Pe??""}`), zr(Q, "href", x(F)), zr(Q, "download", `wplace_${Me??""}.png`), fe(_e, ` ${at??""}`)
-      }, [() => eS(), () => bf(), () => bM().replaceAll(" ", "_").replaceAll(":", "-"), () => iS()]), En(2, ft, () => Qn, () => ({
+      }, [() => JC(), () => bf(), () => yM().replaceAll(" ", "_").replaceAll(":", "-"), () => tS()]), En(2, ft, () => Qn, () => ({
         duration: 300
       })), H(Ee, ft)
     };
@@ -36250,16 +36248,16 @@ function MM(b, l) {
     })
   }), Ge((Ee, Ne, ft, ht) => {
     fe(ie, ` ${Ee??""}`), Jl(ye, Ne), we = Or(Se, 1, "btn btn-primary", null, we, ft), fe(Re, ht)
-  }, [() => IT(), () => l.url.toString(), () => ({
+  }, [() => ST(), () => l.url.toString(), () => ({
     "btn-success": x(C)
   }), () => x(C) ? Gg() : bf()]), an("close", T, () => _(!1)), H(b, T), Pr()
 }
 Wi(["click"]);
-var AM = _r('<svg><path d="m576-160-56-56 104-104-104-104 56-56 104 104 104-104 56 56-104 104 104 104-56 56-104-104-104 104Zm79-360L513-662l56-56 85 85 170-170 56 57-225 226ZM80-280v-80h360v80H80Zm0-320v-80h360v80H80Z"></path></svg>');
+var IM = _r('<svg><path d="m576-160-56-56 104-104-104-104 56-56 104 104 104-104 56 56-104 104 104 104-56 56-104-104-104 104Zm79-360L513-662l56-56 85 85 170-170 56 57-225 226ZM80-280v-80h360v80H80Zm0-320v-80h360v80H80Z"></path></svg>');
 
-function kM(b, l) {
+function MM(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = AM();
+  var C = IM();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -36267,17 +36265,17 @@ function kM(b, l) {
     ..._
   })), H(b, C)
 }
-var EM = Ie('<li class="bg-base-200 border-base-content/10 rounded-xl border-2 p-3"> </li>'),
-  zM = Ie('<div><div class="flex items-center gap-1"><!> <h3 class="text-xl font-bold"> <span class="badge badge-sm badge-error badge-soft ml-1"> </span></h3></div> <div class="text-sm sm:text-base"><ul class="my-3 flex flex-col gap-2 font-medium"></ul> <p class="text-base-content/80 mt-2 text-sm"> </p></div></div>');
+var AM = Ie('<li class="bg-base-200 border-base-content/10 rounded-xl border-2 p-3"> </li>'),
+  kM = Ie('<div><div class="flex items-center gap-1"><!> <h3 class="text-xl font-bold"> <span class="badge badge-sm badge-error badge-soft ml-1"> </span></h3></div> <div class="text-sm sm:text-base"><ul class="my-3 flex flex-col gap-2 font-medium"></ul> <p class="text-base-content/80 mt-2 text-sm"> </p></div></div>');
 
 function lm(b, l) {
   Sr(l, !1);
-  const _ = [B2(), L2(), N2(), V2(), $2(), W2(), Y2()];
+  const _ = [D2(), E2(), F2(), q2(), U2(), G2(), X2()];
   Og();
-  var C = zM(),
+  var C = kM(),
     L = k(C),
     F = k(L);
-  kM(F, {
+  MM(F, {
     class: "size-5"
   });
   var T = V(F, 2),
@@ -36288,7 +36286,7 @@ function lm(b, l) {
   var ie = V(L, 2),
     pe = k(ie);
   nn(pe, 5, () => _, Zd, (Se, we) => {
-    var Re = EM(),
+    var Re = AM(),
       ke = k(Re, !0);
     A(Re), Ge(() => fe(ke, x(we))), H(Se, Re)
   }), A(pe);
@@ -36296,14 +36294,14 @@ function lm(b, l) {
     X = k(ye, !0);
   A(ye), A(ie), A(C), Ge((Se, we, Re) => {
     fe(o, `${Se??""} `), fe(W, we), fe(X, Re)
-  }, [() => I2(), () => k2(), () => ew()]), H(b, C), Pr()
+  }, [() => S2(), () => M2(), () => J2()]), H(b, C), Pr()
 }
-var LM = (b, l) => {
+var EM = (b, l) => {
     l(!1)
   },
-  DM = Ie('<dialog class="modal"><div class="modal-box sm:max-h-11/12"><form method="dialog"><button class="btn btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <div class="flex h-full flex-col gap-6"><h2 class="text-xl font-semibold">📑 Updated rules</h2> <section><!></section> <button class="btn btn-primary">Close</button></div></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
+  zM = Ie('<dialog class="modal"><div class="modal-box sm:max-h-11/12"><form method="dialog"><button class="btn btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <div class="flex h-full flex-col gap-6"><h2 class="text-xl font-semibold">📑 Updated rules</h2> <section><!></section> <button class="btn btn-primary">Close</button></div></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
 
-function RM(b, l) {
+function LM(b, l) {
   Sr(l, !0);
   let _ = zt(l, "open", 15);
   Ii(() => {
@@ -36312,26 +36310,26 @@ function RM(b, l) {
     };
     return document.addEventListener("keydown", W), () => document.removeEventListener("keydown", W)
   });
-  var C = DM(),
+  var C = zM(),
     L = k(C),
     F = V(k(L), 2),
     T = V(k(F), 2),
     o = k(T);
   lm(o, {}), A(T);
   var Z = V(T, 2);
-  Z.__click = [LM, _], A(F), A(L), fi(2), A(C), On(C, () => W => {
+  Z.__click = [EM, _], A(F), A(L), fi(2), A(C), On(C, () => W => {
     Zr(() => {
       _() ? W.show() : W.close()
     })
   }), an("close", C, () => _(!1)), H(b, C), Pr()
 }
 Wi(["click"]);
-var BM = () => {
+var DM = () => {
     La.url.searchParams.delete("new-user"), Lg(La.url.toString())
   },
-  FM = Ie('<dialog class="modal"><div class="modal-box max-h-11/12"><section class="mb-6 flex justify-center"><h2 class="font-pixel flex flex-col justify-center"><span class="text-center text-2xl"> </span> <!></h2></section> <section class="my-2"><!></section> <form class="mt-6 flex justify-center" method="dialog"><button class="btn btn-primary sm:btn-lg"> </button></form></div></dialog>');
+  RM = Ie('<dialog class="modal"><div class="modal-box max-h-11/12"><section class="mb-6 flex justify-center"><h2 class="font-pixel flex flex-col justify-center"><span class="text-center text-2xl"> </span> <!></h2></section> <section class="my-2"><!></section> <form class="mt-6 flex justify-center" method="dialog"><button class="btn btn-primary sm:btn-lg"> </button></form></div></dialog>');
 
-function OM(b, l) {
+function BM(b, l) {
   Sr(l, !0);
   let _ = zt(l, "open", 15);
   Ii(() => {
@@ -36340,7 +36338,7 @@ function OM(b, l) {
     };
     return document.addEventListener("keydown", we), () => document.removeEventListener("keydown", we)
   });
-  var C = FM(),
+  var C = RM(),
     L = k(C),
     F = k(L),
     T = k(F),
@@ -36357,7 +36355,7 @@ function OM(b, l) {
   lm(pe, {}), A(ie);
   var ye = V(ie, 2),
     X = k(ye);
-  X.__click = [BM];
+  X.__click = [DM];
   var Se = k(X, !0);
   A(X), A(ye), A(L), A(C), On(C, () => we => {
     Zr(() => {
@@ -36365,20 +36363,20 @@ function OM(b, l) {
     })
   }), Ge((we, Re) => {
     fe(Z, we), fe(Se, Re)
-  }, [() => C2(), () => iw()]), an("close", C, () => _(!1)), H(b, C), Pr()
+  }, [() => w2(), () => tw()]), an("close", C, () => _(!1)), H(b, C), Pr()
 }
 Wi(["click"]);
 
-function NM() {
+function FM() {
   const b = navigator.userAgent,
     l = navigator.vendor;
   return /Chrome/.test(b) && /Google Inc/.test(l) ? "Chrome" : /Safari/.test(b) && /Apple Computer/.test(l) ? "Safari" : /Firefox/.test(b) ? "Firefox" : /Edge/.test(b) ? "Edge" : /Opera|OPR/.test(b) ? "Opera" : "Unknown"
 }
-var qM = _r('<svg><path d="M358.939 44C384.805 44 405.773 64.9683 405.773 90.834C405.773 116.7 384.805 137.668 358.939 137.668C335.282 137.668 315.725 120.127 312.558 97.3418C311.882 97.5076 311.068 97.7132 310.139 97.9658C307.227 98.7577 303.219 99.9781 298.844 101.688C289.898 105.186 280.227 110.425 274.75 117.568C269.021 125.042 265.37 135.158 263.158 143.737C262.067 147.97 261.355 151.71 260.917 154.385C260.789 155.166 260.687 155.855 260.604 156.437C304.314 157.147 344.347 169.064 375.81 188.514C386.896 180.117 400.712 175.135 415.691 175.135C452.208 175.135 481.811 204.738 481.811 241.254C481.81 267.527 466.485 290.221 444.287 300.885C441.861 377.201 358.696 438.508 256.456 438.508C154.451 438.508 71.4321 377.482 68.6426 301.409C45.8419 290.978 30.0001 267.967 30 241.254C30 204.738 59.6021 175.135 96.1182 175.135C111.321 175.135 125.325 180.267 136.494 188.892C167.617 169.488 207.216 157.484 250.507 156.473C250.517 156.392 250.528 156.307 250.539 156.218C250.646 155.398 250.811 154.224 251.049 152.771C251.524 149.867 252.293 145.823 253.475 141.24C255.808 132.188 259.872 120.54 266.814 111.484C274.011 102.098 285.828 96.04 295.202 92.375C299.987 90.5044 304.348 89.1775 307.514 88.3164C309.099 87.8852 310.394 87.568 311.302 87.3574C311.69 87.2673 312.009 87.1968 312.249 87.1445C314.13 63.0035 334.316 44.0001 358.939 44ZM255.905 334.922C234.07 334.922 213.107 336.328 193.621 338.913C190.267 341.144 188.408 343.008 187.698 344.95C187.085 346.63 187.361 348.283 188.093 350.118C200.137 369.374 217.021 383.431 236.377 389.255C237.939 389.694 239.551 390.118 241.216 390.527C246.165 391.641 251.258 392.225 256.456 392.225C283.556 392.224 307.779 376.436 323.849 351.639C325.103 348.78 325.526 346.501 324.943 344.546C324.28 342.322 322.364 340.66 319.327 339.067C299.52 336.385 278.166 334.922 255.905 334.922ZM167.196 240.151C148.634 240.151 133.586 257.42 133.586 278.721C133.586 300.022 148.634 317.29 167.196 317.29C185.759 317.29 200.806 300.022 200.806 278.721C200.806 257.42 185.759 240.152 167.196 240.151ZM343.512 240.151C324.949 240.152 309.901 257.42 309.901 278.721C309.901 300.022 324.949 317.29 343.512 317.29C362.074 317.29 377.122 300.022 377.122 278.721C377.122 257.42 362.074 240.151 343.512 240.151Z"></path></svg>');
+var OM = _r('<svg><path d="M358.939 44C384.805 44 405.773 64.9683 405.773 90.834C405.773 116.7 384.805 137.668 358.939 137.668C335.282 137.668 315.725 120.127 312.558 97.3418C311.882 97.5076 311.068 97.7132 310.139 97.9658C307.227 98.7577 303.219 99.9781 298.844 101.688C289.898 105.186 280.227 110.425 274.75 117.568C269.021 125.042 265.37 135.158 263.158 143.737C262.067 147.97 261.355 151.71 260.917 154.385C260.789 155.166 260.687 155.855 260.604 156.437C304.314 157.147 344.347 169.064 375.81 188.514C386.896 180.117 400.712 175.135 415.691 175.135C452.208 175.135 481.811 204.738 481.811 241.254C481.81 267.527 466.485 290.221 444.287 300.885C441.861 377.201 358.696 438.508 256.456 438.508C154.451 438.508 71.4321 377.482 68.6426 301.409C45.8419 290.978 30.0001 267.967 30 241.254C30 204.738 59.6021 175.135 96.1182 175.135C111.321 175.135 125.325 180.267 136.494 188.892C167.617 169.488 207.216 157.484 250.507 156.473C250.517 156.392 250.528 156.307 250.539 156.218C250.646 155.398 250.811 154.224 251.049 152.771C251.524 149.867 252.293 145.823 253.475 141.24C255.808 132.188 259.872 120.54 266.814 111.484C274.011 102.098 285.828 96.04 295.202 92.375C299.987 90.5044 304.348 89.1775 307.514 88.3164C309.099 87.8852 310.394 87.568 311.302 87.3574C311.69 87.2673 312.009 87.1968 312.249 87.1445C314.13 63.0035 334.316 44.0001 358.939 44ZM255.905 334.922C234.07 334.922 213.107 336.328 193.621 338.913C190.267 341.144 188.408 343.008 187.698 344.95C187.085 346.63 187.361 348.283 188.093 350.118C200.137 369.374 217.021 383.431 236.377 389.255C237.939 389.694 239.551 390.118 241.216 390.527C246.165 391.641 251.258 392.225 256.456 392.225C283.556 392.224 307.779 376.436 323.849 351.639C325.103 348.78 325.526 346.501 324.943 344.546C324.28 342.322 322.364 340.66 319.327 339.067C299.52 336.385 278.166 334.922 255.905 334.922ZM167.196 240.151C148.634 240.151 133.586 257.42 133.586 278.721C133.586 300.022 148.634 317.29 167.196 317.29C185.759 317.29 200.806 300.022 200.806 278.721C200.806 257.42 185.759 240.152 167.196 240.151ZM343.512 240.151C324.949 240.152 309.901 257.42 309.901 278.721C309.901 300.022 324.949 317.29 343.512 317.29C362.074 317.29 377.122 300.022 377.122 278.721C377.122 257.42 362.074 240.151 343.512 240.151Z"></path></svg>');
 
-function jM(b, l) {
+function NM(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = qM();
+  var C = OM();
   Qt(C, () => ({
     viewBox: "0 0 512 512",
     fill: "currentColor",
@@ -36386,11 +36384,11 @@ function jM(b, l) {
     ..._
   })), H(b, C)
 }
-var VM = _r('<svg><path fill="#0A0A08" d="M128 23.064c34.177 0 38.225.13 51.722.745 12.48.57 19.258 2.655 23.769 4.408 5.974 2.322 10.238 5.096 14.717 9.575 4.48 4.479 7.253 8.743 9.575 14.717 1.753 4.511 3.838 11.289 4.408 23.768.615 13.498.745 17.546.745 51.723 0 34.178-.13 38.226-.745 51.723-.57 12.48-2.655 19.257-4.408 23.768-2.322 5.974-5.096 10.239-9.575 14.718-4.479 4.479-8.743 7.253-14.717 9.574-4.511 1.753-11.289 3.839-23.769 4.408-13.495.616-17.543.746-51.722.746-34.18 0-38.228-.13-51.723-.746-12.48-.57-19.257-2.655-23.768-4.408-5.974-2.321-10.239-5.095-14.718-9.574-4.479-4.48-7.253-8.744-9.574-14.718-1.753-4.51-3.839-11.288-4.408-23.768-.616-13.497-.746-17.545-.746-51.723 0-34.177.13-38.225.746-51.722.57-12.48 2.655-19.258 4.408-23.769 2.321-5.974 5.095-10.238 9.574-14.717 4.48-4.48 8.744-7.253 14.718-9.575 4.51-1.753 11.288-3.838 23.768-4.408 13.497-.615 17.545-.745 51.723-.745M128 0C93.237 0 88.878.147 75.226.77c-13.625.622-22.93 2.786-31.071 5.95-8.418 3.271-15.556 7.648-22.672 14.764C14.367 28.6 9.991 35.738 6.72 44.155 3.555 52.297 1.392 61.602.77 75.226.147 88.878 0 93.237 0 128c0 34.763.147 39.122.77 52.774.622 13.625 2.785 22.93 5.95 31.071 3.27 8.417 7.647 15.556 14.763 22.672 7.116 7.116 14.254 11.492 22.672 14.763 8.142 3.165 17.446 5.328 31.07 5.95 13.653.623 18.012.77 52.775.77s39.122-.147 52.774-.77c13.624-.622 22.929-2.785 31.07-5.95 8.418-3.27 15.556-7.647 22.672-14.763 7.116-7.116 11.493-14.254 14.764-22.672 3.164-8.142 5.328-17.446 5.95-31.07.623-13.653.77-18.012.77-52.775s-.147-39.122-.77-52.774c-.622-13.624-2.786-22.929-5.95-31.07-3.271-8.418-7.648-15.556-14.764-22.672C227.4 14.368 220.262 9.99 211.845 6.72c-8.142-3.164-17.447-5.328-31.071-5.95C167.122.147 162.763 0 128 0Zm0 62.27C91.698 62.27 62.27 91.7 62.27 128c0 36.302 29.428 65.73 65.73 65.73 36.301 0 65.73-29.428 65.73-65.73 0-36.301-29.429-65.73-65.73-65.73Zm0 108.397c-23.564 0-42.667-19.103-42.667-42.667S104.436 85.333 128 85.333s42.667 19.103 42.667 42.667-19.103 42.667-42.667 42.667Zm83.686-110.994c0 8.484-6.876 15.36-15.36 15.36-8.483 0-15.36-6.876-15.36-15.36 0-8.483 6.877-15.36 15.36-15.36 8.484 0 15.36 6.877 15.36 15.36Z"></path></svg>');
+var qM = _r('<svg><path fill="#0A0A08" d="M128 23.064c34.177 0 38.225.13 51.722.745 12.48.57 19.258 2.655 23.769 4.408 5.974 2.322 10.238 5.096 14.717 9.575 4.48 4.479 7.253 8.743 9.575 14.717 1.753 4.511 3.838 11.289 4.408 23.768.615 13.498.745 17.546.745 51.723 0 34.178-.13 38.226-.745 51.723-.57 12.48-2.655 19.257-4.408 23.768-2.322 5.974-5.096 10.239-9.575 14.718-4.479 4.479-8.743 7.253-14.717 9.574-4.511 1.753-11.289 3.839-23.769 4.408-13.495.616-17.543.746-51.722.746-34.18 0-38.228-.13-51.723-.746-12.48-.57-19.257-2.655-23.768-4.408-5.974-2.321-10.239-5.095-14.718-9.574-4.479-4.48-7.253-8.744-9.574-14.718-1.753-4.51-3.839-11.288-4.408-23.768-.616-13.497-.746-17.545-.746-51.723 0-34.177.13-38.225.746-51.722.57-12.48 2.655-19.258 4.408-23.769 2.321-5.974 5.095-10.238 9.574-14.717 4.48-4.48 8.744-7.253 14.718-9.575 4.51-1.753 11.288-3.838 23.768-4.408 13.497-.615 17.545-.745 51.723-.745M128 0C93.237 0 88.878.147 75.226.77c-13.625.622-22.93 2.786-31.071 5.95-8.418 3.271-15.556 7.648-22.672 14.764C14.367 28.6 9.991 35.738 6.72 44.155 3.555 52.297 1.392 61.602.77 75.226.147 88.878 0 93.237 0 128c0 34.763.147 39.122.77 52.774.622 13.625 2.785 22.93 5.95 31.071 3.27 8.417 7.647 15.556 14.763 22.672 7.116 7.116 14.254 11.492 22.672 14.763 8.142 3.165 17.446 5.328 31.07 5.95 13.653.623 18.012.77 52.775.77s39.122-.147 52.774-.77c13.624-.622 22.929-2.785 31.07-5.95 8.418-3.27 15.556-7.647 22.672-14.763 7.116-7.116 11.493-14.254 14.764-22.672 3.164-8.142 5.328-17.446 5.95-31.07.623-13.653.77-18.012.77-52.775s-.147-39.122-.77-52.774c-.622-13.624-2.786-22.929-5.95-31.07-3.271-8.418-7.648-15.556-14.764-22.672C227.4 14.368 220.262 9.99 211.845 6.72c-8.142-3.164-17.447-5.328-31.071-5.95C167.122.147 162.763 0 128 0Zm0 62.27C91.698 62.27 62.27 91.7 62.27 128c0 36.302 29.428 65.73 65.73 65.73 36.301 0 65.73-29.428 65.73-65.73 0-36.301-29.429-65.73-65.73-65.73Zm0 108.397c-23.564 0-42.667-19.103-42.667-42.667S104.436 85.333 128 85.333s42.667 19.103 42.667 42.667-19.103 42.667-42.667 42.667Zm83.686-110.994c0 8.484-6.876 15.36-15.36 15.36-8.483 0-15.36-6.876-15.36-15.36 0-8.483 6.877-15.36 15.36-15.36 8.484 0 15.36 6.877 15.36 15.36Z"></path></svg>');
 
-function UM(b, l) {
+function jM(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = VM();
+  var C = qM();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     preserveAspectRatio: "xMidYMid",
@@ -36398,11 +36396,11 @@ function UM(b, l) {
     ..._
   })), H(b, C)
 }
-var ZM = _r('<svg><path d="M240-640h360v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85h-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640Zm0 480h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM240-160v-400 400Z"></path></svg>');
+var VM = _r('<svg><path d="M240-640h360v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85h-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640Zm0 480h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM240-160v-400 400Z"></path></svg>');
 
 function Ld(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = ZM();
+  var C = VM();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -36410,14 +36408,14 @@ function Ld(b, l) {
     ..._
   })), H(b, C)
 }
-var $M = Ie(' <a class="link" href="https://help.constructiononline.com/en/scheduling-webgl-and-hardware-acceleration">link</a>', 1),
-  GM = Ie('<span class="link cursor-auto">chrome://settings/system</span>.', 1),
-  HM = Ie('<span class="link cursor-auto">edge://settings/system/manageSystem</span>.', 1),
-  WM = Ie(' <kbd class="kbd kbd-sm"> </kbd> <!>', 1),
-  XM = Ie('<div class="flex h-full flex-col gap-5"><section class="mb-2 flex flex-col items-center justify-center gap-2"><!> <div class="text-center text-sm max-sm:mt-1"> <a class="link" href="https://maplibre.org/" target="_blank">MapLibre</a> | <a class="link" href="https://openfreemap.org/" target="_blank">OpenFreeMap</a> <a class="link" href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a></div> <div class="w-full text-center text-sm"><p><a class="link" href="https://www.reddit.com/r/WplaceLive/comments/1lhzmmq/bug_reports_and_feature_requests/" target="_blank"> </a> <span class="mx-0.5">|</span> <a href="https://discord.gg/wplacelive" target="_blank"><!> <span class="link">Discord</span></a> <span class="mx-0.5">|</span> <a href="https://www.reddit.com/r/WplaceLive/" target="_blank"><!> <span class="link">Reddit</span></a> <span class="mx-0.5">|</span> <a href="https://www.instagram.com/wplace.live/" target="_blank"><!> <span class="link">Instagram</span></a></p></div></section> <section><h3 class="text-lg font-semibold"> </h3> <iframe class="mt-1 aspect-video w-full bg-black" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></section> <section><h3 class="text-lg font-semibold"> </h3> <p class="not-touchscreen:hidden text-sm"> <button class="btn btn-square shadow-md"><!></button> </p> <p class="touchscreen:hidden text-sm"> <span class="kbd kbd-xs text-base-content rounded-md"> </span> </p></section> <section><h3 class="text-lg font-semibold"> </h3> <p class="text-sm"><!></p></section> <section><!></section> <div class="grow"></div> <section class="text-base-content/80 w-full text-center text-sm"><span>Email: <a class="link" href="mailto:contact@wplace.live">contact@wplace.live</a></span> · <a class="link" href="https://wplace.live/terms/terms-of-service" target="_blank"> </a> · <a class="link" href="https://wplace.live/terms/privacy" target="_blank"> </a></section></div>'),
-  KM = Ie('<dialog class="modal"><div class="modal-box sm:max-h-11/12 max-sm:size-full max-sm:rounded-none max-sm:px-4 sm:max-w-5xl"><form method="dialog"><button class="btn btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <!></div> <form method="dialog" class="modal-backdrop"><button> </button></form></dialog>');
+var UM = Ie(' <a class="link" href="https://help.constructiononline.com/en/scheduling-webgl-and-hardware-acceleration">link</a>', 1),
+  ZM = Ie('<span class="link cursor-auto">chrome://settings/system</span>.', 1),
+  $M = Ie('<span class="link cursor-auto">edge://settings/system/manageSystem</span>.', 1),
+  GM = Ie(' <kbd class="kbd kbd-sm"> </kbd> <!>', 1),
+  HM = Ie('<div class="flex h-full flex-col gap-5"><section class="mb-2 flex flex-col items-center justify-center gap-2"><!> <div class="text-center text-sm max-sm:mt-1"> <a class="link" href="https://maplibre.org/" target="_blank">MapLibre</a> | <a class="link" href="https://openfreemap.org/" target="_blank">OpenFreeMap</a> <a class="link" href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a></div> <div class="w-full text-center text-sm"><p><a class="link" href="https://www.reddit.com/r/WplaceLive/comments/1lhzmmq/bug_reports_and_feature_requests/" target="_blank"> </a> <span class="mx-0.5">|</span> <a href="https://discord.gg/wplacelive" target="_blank"><!> <span class="link">Discord</span></a> <span class="mx-0.5">|</span> <a href="https://www.reddit.com/r/WplaceLive/" target="_blank"><!> <span class="link">Reddit</span></a> <span class="mx-0.5">|</span> <a href="https://www.instagram.com/wplace.live/" target="_blank"><!> <span class="link">Instagram</span></a></p></div></section> <section><h3 class="text-lg font-semibold"> </h3> <iframe class="mt-1 aspect-video w-full bg-black" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe></section> <section><h3 class="text-lg font-semibold"> </h3> <p class="not-touchscreen:hidden text-sm"> <button class="btn btn-square shadow-md"><!></button> </p> <p class="touchscreen:hidden text-sm"> <span class="kbd kbd-xs text-base-content rounded-md"> </span> </p></section> <section><h3 class="text-lg font-semibold"> </h3> <p class="text-sm"><!></p></section> <section><!></section> <div class="grow"></div> <section class="text-base-content/80 w-full text-center text-sm"><span>Email: <a class="link" href="mailto:contact@wplace.live">contact@wplace.live</a></span> · <a class="link" href="https://wplace.live/terms/terms-of-service" target="_blank"> </a> · <a class="link" href="https://wplace.live/terms/privacy" target="_blank"> </a></section></div>'),
+  WM = Ie('<dialog class="modal"><div class="modal-box sm:max-h-11/12 max-sm:size-full max-sm:rounded-none max-sm:px-4 sm:max-w-5xl"><form method="dialog"><button class="btn btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <!></div> <form method="dialog" class="modal-backdrop"><button> </button></form></dialog>');
 
-function YM(b, l) {
+function XM(b, l) {
   Sr(l, !0);
   let _ = zt(l, "open", 15);
   Ii(() => {
@@ -36426,13 +36424,13 @@ function YM(b, l) {
     };
     return document.addEventListener("keydown", pe), () => document.removeEventListener("keydown", pe)
   });
-  const C = NM();
-  var L = KM(),
+  const C = FM();
+  var L = WM(),
     F = k(L),
     T = V(k(F), 2);
   {
     var o = pe => {
-      var ye = XM(),
+      var ye = HM(),
         X = k(ye),
         Se = k(X);
       Ng(Se, {
@@ -36455,12 +36453,12 @@ function YM(b, l) {
       }), fi(2), A(ht);
       var ct = V(ht, 4),
         Je = k(ct);
-      jM(Je, {
+      NM(Je, {
         class: "mr-0.5 inline size-4"
       }), fi(2), A(ct);
       var Be = V(ct, 4),
         st = k(Be);
-      UM(st, {
+      jM(st, {
         class: "mr-0.5 inline size-4"
       }), fi(2), A(Be), A(Ee), A(Oe), A(X);
       var it = V(X, 2),
@@ -36497,12 +36495,12 @@ function YM(b, l) {
         dt = k(wt);
       {
         var Lt = qr => {
-            var ur = $M(),
+            var ur = UM(),
               Mr = At(ur);
-            fi(), Ge(Ar => fe(Mr, `${Ar??""}: `), [() => bS()]), H(qr, ur)
+            fi(), Ge(Ar => fe(Mr, `${Ar??""}: `), [() => yS()]), H(qr, ur)
           },
           Xt = qr => {
-            var ur = WM(),
+            var ur = GM(),
               Mr = At(ur),
               Ar = V(Mr),
               kr = k(Ar, !0);
@@ -36511,7 +36509,7 @@ function YM(b, l) {
               ce = V(Nr);
             {
               var O = G => {
-                  var K = GM();
+                  var K = ZM();
                   fi(), H(G, K)
                 },
                 j = G => {
@@ -36519,7 +36517,7 @@ function YM(b, l) {
                     le = At(K);
                   {
                     var ve = Le => {
-                      var Ce = HM();
+                      var Ce = $M();
                       fi(), H(Le, Ce)
                     };
                     Ve(le, Le => {
@@ -36534,7 +36532,7 @@ function YM(b, l) {
             }
             Ge((G, K, le) => {
               fe(Mr, `${G??""} `), fe(kr, K), fe(Nr, ` ${le??""} `)
-            }, [() => dS(), () => mS(), () => vS()]), H(qr, ur)
+            }, [() => uS(), () => pS(), () => _S()]), H(qr, ur)
           };
         Ve(dt, qr => {
           C !== "Chrome" && C !== "Edge" ? qr(Lt) : qr(Xt, !1)
@@ -36553,7 +36551,7 @@ function YM(b, l) {
       A(gr), A(ar), A(ye), Ge((qr, ur, Mr, Ar, kr, Nr, ce, O, j, G, K, le, ve) => {
         fe(Re, `${qr??""} `), fe(ke, ` ©
 						${ur??""} `), fe(ft, Mr), fe(Ae, Ar), zr(vt, "src", oa.language === "pt" ? "https://www.youtube.com/embed/AcE85QM4iPQ?si=wbeZD8vxOzvlB_Z9" : "https://www.youtube.com/embed/xOXtd-WzRxA?si=fHz8Z6ecXGYrDhkN"), fe(_e, kr), fe(Pe, `${Nr??""} `), fe(We, ` ${ce??""}`), fe(_t, `${O??""} `), fe(tt, j), fe(pt, ` ${G??""}`), fe(bt, K), fe(dr, le), fe(Ir, ve)
-      }, [() => _1(), () => y1(), () => w1(), () => S1(), () => M1(), () => E1(), () => D1(), () => F1(), () => q1(), () => U1(), () => cS(), () => tP(), () => nP()]), En(2, ye, () => Qn, () => ({
+      }, [() => _1(), () => y1(), () => w1(), () => S1(), () => M1(), () => E1(), () => D1(), () => F1(), () => q1(), () => U1(), () => oS(), () => QS(), () => rP()]), En(2, ye, () => Qn, () => ({
         duration: 300
       })), H(pe, ye)
     };
@@ -36572,26 +36570,26 @@ function YM(b, l) {
   }), Ge(pe => fe(ie, pe), [() => tc()]), an("close", L, () => _(!1)), H(b, L), Pr()
 }
 
-function JM(b) {
+function KM(b) {
   return typeof b == "function"
 }
 
 function mh(b) {
   return b !== null && typeof b == "object"
 }
-const QM = ["string", "number", "bigint", "boolean"];
+const YM = ["string", "number", "bigint", "boolean"];
 
 function Sf(b) {
-  return b == null || QM.includes(typeof b) ? !0 : Array.isArray(b) ? b.every(l => Sf(l)) : typeof b == "object" ? Object.getPrototypeOf(b) === Object.prototype : !1
+  return b == null || YM.includes(typeof b) ? !0 : Array.isArray(b) ? b.every(l => Sf(l)) : typeof b == "object" ? Object.getPrototypeOf(b) === Object.prototype : !1
 }
 const Iu = Symbol("box"),
   cm = Symbol("is-writable");
 
-function e4(b) {
+function JM(b) {
   return mh(b) && Iu in b
 }
 
-function t4(b) {
+function QM(b) {
   return cr.isBox(b) && cm in b
 }
 
@@ -36609,7 +36607,7 @@ function cr(b) {
   }
 }
 
-function r4(b, l) {
+function e4(b, l) {
   const _ = lt(b);
   return l ? {
     [Iu]: !0,
@@ -36628,11 +36626,11 @@ function r4(b, l) {
   }
 }
 
-function i4(b) {
-  return cr.isBox(b) ? b : JM(b) ? cr.with(b) : cr(b)
+function t4(b) {
+  return cr.isBox(b) ? b : KM(b) ? cr.with(b) : cr(b)
 }
 
-function n4(b) {
+function r4(b) {
   return Object.entries(b).reduce((l, [_, C]) => cr.isBox(C) ? (cr.isWritableBox(C) ? Object.defineProperty(l, _, {
     get() {
       return C.current
@@ -36649,7 +36647,7 @@ function n4(b) {
   }), {})
 }
 
-function a4(b) {
+function i4(b) {
   return cr.isWritableBox(b) ? {
     [Iu]: !0,
     get current() {
@@ -36657,14 +36655,14 @@ function a4(b) {
     }
   } : b
 }
-cr.from = i4;
-cr.with = r4;
-cr.flatten = n4;
-cr.readonly = a4;
-cr.isBox = e4;
-cr.isWritableBox = t4;
+cr.from = t4;
+cr.with = e4;
+cr.flatten = r4;
+cr.readonly = i4;
+cr.isBox = JM;
+cr.isWritableBox = QM;
 
-function s4(...b) {
+function n4(...b) {
   return function(l) {
     var _;
     for (const C of b)
@@ -36677,7 +36675,7 @@ function s4(...b) {
 var Hl = {},
   hf, mg;
 
-function o4() {
+function a4() {
   if (mg) return hf;
   mg = 1;
   var b = /\/\*[^*]*\*+([^/*][^*]*\*+)*\//g,
@@ -36794,7 +36792,7 @@ function o4() {
 }
 var _g;
 
-function l4() {
+function s4() {
   if (_g) return Hl;
   _g = 1;
   var b = Hl && Hl.__importDefault || function(C) {
@@ -36805,7 +36803,7 @@ function l4() {
   Object.defineProperty(Hl, "__esModule", {
     value: !0
   }), Hl.default = _;
-  var l = b(o4());
+  var l = b(a4());
 
   function _(C, L) {
     var F = null;
@@ -36822,27 +36820,27 @@ function l4() {
   }
   return Hl
 }
-var c4 = l4();
-const gg = nm(c4),
-  u4 = gg.default || gg,
-  h4 = /\d/,
-  d4 = ["-", "_", "/", "."];
+var o4 = s4();
+const gg = nm(o4),
+  l4 = gg.default || gg,
+  c4 = /\d/,
+  u4 = ["-", "_", "/", "."];
 
-function p4(b = "") {
-  if (!h4.test(b)) return b !== b.toLowerCase()
+function h4(b = "") {
+  if (!c4.test(b)) return b !== b.toLowerCase()
 }
 
-function f4(b) {
+function d4(b) {
   const l = [];
   let _ = "",
     C, L;
   for (const F of b) {
-    const T = d4.includes(F);
+    const T = u4.includes(F);
     if (T === !0) {
       l.push(_), _ = "", C = void 0;
       continue
     }
-    const o = p4(F);
+    const o = h4(F);
     if (L === !1) {
       if (C === !1 && o === !0) {
         l.push(_), _ = F, C = o;
@@ -36860,18 +36858,18 @@ function f4(b) {
 }
 
 function lv(b) {
-  return b ? f4(b).map(l => _4(l)).join("") : ""
+  return b ? d4(b).map(l => f4(l)).join("") : ""
 }
 
-function m4(b) {
-  return g4(lv(b || ""))
+function p4(b) {
+  return m4(lv(b || ""))
 }
 
-function _4(b) {
+function f4(b) {
   return b ? b[0].toUpperCase() + b.slice(1) : ""
 }
 
-function g4(b) {
+function m4(b) {
   return b ? b[0].toLowerCase() + b.slice(1) : ""
 }
 
@@ -36888,34 +36886,34 @@ function wd(b) {
       l[C] = L;
       return
     }
-    l[m4(C)] = L
+    l[p4(C)] = L
   }
-  return u4(b, _), l
+  return l4(b, _), l
 }
 
-function v4(...b) {
+function _4(...b) {
   return (...l) => {
     for (const _ of b) typeof _ == "function" && _(...l)
   }
 }
 
-function y4(b, l) {
+function g4(b, l) {
   const _ = RegExp(b, "g");
   return C => {
     if (typeof C != "string") throw new TypeError(`expected an argument of type string, but got ${typeof C}`);
     return C.match(_) ? C.replace(_, l) : C
   }
 }
-const x4 = y4(/[A-Z]/, b => `-${b.toLowerCase()}`);
+const v4 = g4(/[A-Z]/, b => `-${b.toLowerCase()}`);
 
-function b4(b) {
+function y4(b) {
   if (!b || typeof b != "object" || Array.isArray(b)) throw new TypeError(`expected an argument of type object, but got ${typeof b}`);
-  return Object.keys(b).map(l => `${x4(l)}: ${b[l]};`).join(`
+  return Object.keys(b).map(l => `${v4(l)}: ${b[l]};`).join(`
 `)
 }
 
 function cv(b = {}) {
-  return b4(b).replace(`
+  return y4(b).replace(`
 `, " ")
 }
 const uv = {
@@ -36931,11 +36929,11 @@ const uv = {
   transform: "translateX(-100%)"
 };
 cv(uv);
-const w4 = ["onabort", "onanimationcancel", "onanimationend", "onanimationiteration", "onanimationstart", "onauxclick", "onbeforeinput", "onbeforetoggle", "onblur", "oncancel", "oncanplay", "oncanplaythrough", "onchange", "onclick", "onclose", "oncompositionend", "oncompositionstart", "oncompositionupdate", "oncontextlost", "oncontextmenu", "oncontextrestored", "oncopy", "oncuechange", "oncut", "ondblclick", "ondrag", "ondragend", "ondragenter", "ondragleave", "ondragover", "ondragstart", "ondrop", "ondurationchange", "onemptied", "onended", "onerror", "onfocus", "onfocusin", "onfocusout", "onformdata", "ongotpointercapture", "oninput", "oninvalid", "onkeydown", "onkeypress", "onkeyup", "onload", "onloadeddata", "onloadedmetadata", "onloadstart", "onlostpointercapture", "onmousedown", "onmouseenter", "onmouseleave", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "onpaste", "onpause", "onplay", "onplaying", "onpointercancel", "onpointerdown", "onpointerenter", "onpointerleave", "onpointermove", "onpointerout", "onpointerover", "onpointerup", "onprogress", "onratechange", "onreset", "onresize", "onscroll", "onscrollend", "onsecuritypolicyviolation", "onseeked", "onseeking", "onselect", "onselectionchange", "onselectstart", "onslotchange", "onstalled", "onsubmit", "onsuspend", "ontimeupdate", "ontoggle", "ontouchcancel", "ontouchend", "ontouchmove", "ontouchstart", "ontransitioncancel", "ontransitionend", "ontransitionrun", "ontransitionstart", "onvolumechange", "onwaiting", "onwebkitanimationend", "onwebkitanimationiteration", "onwebkitanimationstart", "onwebkittransitionend", "onwheel"],
-  T4 = new Set(w4);
+const x4 = ["onabort", "onanimationcancel", "onanimationend", "onanimationiteration", "onanimationstart", "onauxclick", "onbeforeinput", "onbeforetoggle", "onblur", "oncancel", "oncanplay", "oncanplaythrough", "onchange", "onclick", "onclose", "oncompositionend", "oncompositionstart", "oncompositionupdate", "oncontextlost", "oncontextmenu", "oncontextrestored", "oncopy", "oncuechange", "oncut", "ondblclick", "ondrag", "ondragend", "ondragenter", "ondragleave", "ondragover", "ondragstart", "ondrop", "ondurationchange", "onemptied", "onended", "onerror", "onfocus", "onfocusin", "onfocusout", "onformdata", "ongotpointercapture", "oninput", "oninvalid", "onkeydown", "onkeypress", "onkeyup", "onload", "onloadeddata", "onloadedmetadata", "onloadstart", "onlostpointercapture", "onmousedown", "onmouseenter", "onmouseleave", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "onpaste", "onpause", "onplay", "onplaying", "onpointercancel", "onpointerdown", "onpointerenter", "onpointerleave", "onpointermove", "onpointerout", "onpointerover", "onpointerup", "onprogress", "onratechange", "onreset", "onresize", "onscroll", "onscrollend", "onsecuritypolicyviolation", "onseeked", "onseeking", "onselect", "onselectionchange", "onselectstart", "onslotchange", "onstalled", "onsubmit", "onsuspend", "ontimeupdate", "ontoggle", "ontouchcancel", "ontouchend", "ontouchmove", "ontouchstart", "ontransitioncancel", "ontransitionend", "ontransitionrun", "ontransitionstart", "onvolumechange", "onwaiting", "onwebkitanimationend", "onwebkitanimationiteration", "onwebkitanimationstart", "onwebkittransitionend", "onwheel"],
+  b4 = new Set(x4);
 
-function C4(b) {
-  return T4.has(b)
+function w4(b) {
+  return b4.has(b)
 }
 
 function Da(...b) {
@@ -36950,11 +36948,11 @@ function Da(...b) {
           T = C[L],
           o = typeof F == "function",
           Z = typeof T == "function";
-        if (o && C4(L)) {
+        if (o && w4(L)) {
           const W = F,
             ie = T;
-          l[L] = s4(W, ie)
-        } else if (o && Z) l[L] = v4(F, T);
+          l[L] = n4(W, ie)
+        } else if (o && Z) l[L] = _4(F, T);
         else if (L === "class") {
           const W = Sf(F),
             ie = Sf(T);
@@ -37000,9 +36998,9 @@ function Da(...b) {
   return typeof l.style == "object" && (l.style = cv(l.style).replaceAll(`
 `, " ")), l.hidden !== !0 && (l.hidden = void 0, delete l.hidden), l.disabled !== !0 && (l.disabled = void 0, delete l.disabled), l
 }
-const S4 = typeof window < "u" ? window : void 0;
+const T4 = typeof window < "u" ? window : void 0;
 
-function P4(b) {
+function C4(b) {
   let l = b.activeElement;
   for (; l != null && l.shadowRoot;) {
     const _ = l.shadowRoot.activeElement;
@@ -37012,12 +37010,12 @@ function P4(b) {
   return l
 }
 var ic, Lu;
-class I4 {
+class S4 {
   constructor(l = {}) {
     wr(this, ic);
     wr(this, Lu);
     const {
-      window: _ = S4,
+      window: _ = T4,
       document: C = _ == null ? void 0 : _.document
     } = l;
     _ !== void 0 && (Jn(this, ic, C), Jn(this, Lu, zg(L => {
@@ -37030,11 +37028,11 @@ class I4 {
   }
   get current() {
     var l;
-    return (l = et(this, Lu)) == null || l.call(this), et(this, ic) ? P4(et(this, ic)) : null
+    return (l = et(this, Lu)) == null || l.call(this), et(this, ic) ? C4(et(this, ic)) : null
   }
 }
 ic = new WeakMap, Lu = new WeakMap;
-new I4;
+new S4;
 var Du, zs;
 class um {
   constructor(l) {
@@ -37063,7 +37061,7 @@ class um {
 }
 Du = new WeakMap, zs = new WeakMap;
 
-function M4(b, l) {
+function P4(b, l) {
   switch (b) {
     case "post":
       Zr(l);
@@ -37080,7 +37078,7 @@ function hv(b, l, _, C = {}) {
   } = C;
   let F = !L,
     T = Array.isArray(b) ? [] : void 0;
-  M4(l, () => {
+  P4(l, () => {
     const o = Array.isArray(b) ? b.map(W => W()) : b();
     if (!F) {
       F = !0, T = o;
@@ -37095,12 +37093,12 @@ function oo(b, l, _) {
   hv(b, "post", l, _)
 }
 
-function A4(b, l, _) {
+function I4(b, l, _) {
   hv(b, "pre", l, _)
 }
-oo.pre = A4;
+oo.pre = I4;
 var nc;
-class k4 {
+class M4 {
   constructor(l, _) {
     wr(this, nc, nt(void 0));
     _ !== void 0 && oe(et(this, nc), _, !0), oo(() => l(), (C, L) => {
@@ -37113,48 +37111,48 @@ class k4 {
 }
 nc = new WeakMap;
 
-function E4(b, l) {
+function A4(b, l) {
   return setTimeout(l, b)
 }
 
 function Wl(b) {
   Mg().then(b)
 }
-const z4 = 1,
-  L4 = 9,
-  D4 = 11;
+const k4 = 1,
+  E4 = 9,
+  z4 = 11;
 
-function R4(b) {
-  return mh(b) && b.nodeType === z4 && typeof b.nodeName == "string"
+function L4(b) {
+  return mh(b) && b.nodeType === k4 && typeof b.nodeName == "string"
 }
 
 function dv(b) {
-  return mh(b) && b.nodeType === L4
+  return mh(b) && b.nodeType === E4
 }
 
-function B4(b) {
+function D4(b) {
   var l;
   return mh(b) && ((l = b.constructor) == null ? void 0 : l.name) === "VisualViewport"
 }
 
-function F4(b) {
+function R4(b) {
   return mh(b) && b.nodeType !== void 0
 }
 
-function O4(b) {
-  return F4(b) && b.nodeType === D4 && "host" in b
+function B4(b) {
+  return R4(b) && b.nodeType === z4 && "host" in b
 }
 
-function N4(b) {
-  return dv(b) ? b : B4(b) ? b.document : (b == null ? void 0 : b.ownerDocument) ?? document
+function F4(b) {
+  return dv(b) ? b : D4(b) ? b.document : (b == null ? void 0 : b.ownerDocument) ?? document
 }
 
 function pv(b) {
   var l;
-  return O4(b) ? pv(b.host) : dv(b) ? b.defaultView ?? window : R4(b) ? ((l = b.ownerDocument) == null ? void 0 : l.defaultView) ?? window : window
+  return B4(b) ? pv(b.host) : dv(b) ? b.defaultView ?? window : L4(b) ? ((l = b.ownerDocument) == null ? void 0 : l.defaultView) ?? window : window
 }
 
-function q4(b) {
+function O4(b) {
   let l = b.activeElement;
   for (; l != null && l.shadowRoot;) {
     const _ = l.shadowRoot.activeElement;
@@ -37164,13 +37162,13 @@ function q4(b) {
   return l
 }
 var Ru;
-class j4 {
+class N4 {
   constructor(l) {
     lr(this, "element");
     wr(this, Ru, lt(() => this.element.current ? this.element.current.getRootNode() ?? document : document));
-    lr(this, "getDocument", () => N4(this.root));
+    lr(this, "getDocument", () => F4(this.root));
     lr(this, "getWindow", () => this.getDocument().defaultView ?? window);
-    lr(this, "getActiveElement", () => q4(this.root));
+    lr(this, "getActiveElement", () => O4(this.root));
     lr(this, "isActiveElement", l => l === this.getActiveElement());
     lr(this, "querySelector", l => this.root ? this.root.querySelector(l) : null);
     lr(this, "querySelectorAll", l => this.root ? this.root.querySelectorAll(l) : []);
@@ -37200,8 +37198,16 @@ function Va(b, l) {
   }
 }
 
-function V4(b) {
+function q4(b) {
   return b ? "true" : "false"
+}
+
+function j4(b) {
+  return b ? "true" : "false"
+}
+
+function V4(b) {
+  return b ? "" : void 0
 }
 
 function U4(b) {
@@ -37213,18 +37219,10 @@ function Z4(b) {
 }
 
 function $4(b) {
-  return b ? "true" : "false"
-}
-
-function G4(b) {
-  return b ? "" : void 0
-}
-
-function H4(b) {
   return b ? !0 : void 0
 }
 var ac, Bu;
-class W4 {
+class G4 {
   constructor(l) {
     wr(this, ac);
     wr(this, Bu);
@@ -37241,26 +37239,26 @@ class W4 {
 ac = new WeakMap, Bu = new WeakMap;
 
 function fv(b) {
-  const l = new W4(b);
+  const l = new G4(b);
   return {
     ...l.attrs,
     selector: l.selector,
     getAttr: l.getAttr
   }
 }
-const X4 = "ArrowDown",
-  K4 = "ArrowLeft",
-  Y4 = "ArrowRight",
-  J4 = "ArrowUp",
-  Q4 = "End",
-  e6 = "Enter",
-  t6 = "Home",
-  r6 = "p",
-  i6 = "n",
-  n6 = "j",
-  a6 = "k",
-  s6 = "h",
-  o6 = "l";
+const H4 = "ArrowDown",
+  W4 = "ArrowLeft",
+  X4 = "ArrowRight",
+  K4 = "ArrowUp",
+  Y4 = "End",
+  J4 = "Enter",
+  Q4 = "Home",
+  e6 = "p",
+  t6 = "n",
+  r6 = "j",
+  i6 = "k",
+  n6 = "h",
+  a6 = "l";
 
 function Mu() {}
 
@@ -37268,7 +37266,7 @@ function Ua(b, l) {
   return `bits-${b}`
 }
 
-function l6(b) {
+function s6(b) {
   if (!b) return null;
   for (const l of b.childNodes)
     if (l.nodeType !== Node.COMMENT_NODE) return l;
@@ -37278,11 +37276,11 @@ globalThis.bitsIdCounter ?? (globalThis.bitsIdCounter = {
   current: 0
 });
 
-function c6(b = "bits") {
+function o6(b = "bits") {
   return globalThis.bitsIdCounter.current++, `${b}-${globalThis.bitsIdCounter.current}`
 }
 
-function u6(b, l) {
+function l6(b, l) {
   let _ = b.nextElementSibling;
   for (; _;) {
     if (_.matches(l)) return _;
@@ -37290,7 +37288,7 @@ function u6(b, l) {
   }
 }
 
-function h6(b, l) {
+function c6(b, l) {
   let _ = b.previousElementSibling;
   for (; _;) {
     if (_.matches(l)) return _;
@@ -37333,7 +37331,7 @@ const Uo = "data-value",
   _v = ma.selector("item"),
   pf = `${ma.selector("item")}:not([aria-disabled="true"])`,
   Xo = new um("Command.Root"),
-  d6 = new um("Command.List"),
+  u6 = new um("Command.List"),
   Au = new um("Command.Group"),
   yg = {
     search: "",
@@ -37474,7 +37472,7 @@ const pm = class pm {
     const _ = Fr(this, ir, no).call(this);
     let C = _ == null ? void 0 : _.closest(Xl),
       L;
-    for (; C && !L;) C = l > 0 ? u6(C, Xl) : h6(C, Xl), L = C == null ? void 0 : C.querySelector(pf);
+    for (; C && !L;) C = l > 0 ? l6(C, Xl) : c6(C, Xl), L = C == null ? void 0 : C.querySelector(pf);
     L ? this.setValue(L.getAttribute(Uo) ?? "") : this.updateSelectedByItem(l)
   }
   registerValue(l, _) {
@@ -37507,45 +37505,45 @@ const pm = class pm {
   onkeydown(l) {
     const _ = this.opts.vimBindings.current && l.ctrlKey;
     switch (l.key) {
-      case i6:
-      case n6: {
+      case t6:
+      case r6: {
         _ && (this.isGrid ? Fr(this, ir, Af).call(this, l) : Fr(this, ir, yu).call(this, l));
         break
       }
-      case o6: {
+      case a6: {
         _ && this.isGrid && Fr(this, ir, yu).call(this, l);
         break
       }
-      case X4:
+      case H4:
         this.isGrid ? Fr(this, ir, Af).call(this, l) : Fr(this, ir, yu).call(this, l);
         break;
-      case Y4:
+      case X4:
         if (!this.isGrid) break;
         Fr(this, ir, yu).call(this, l);
         break;
-      case r6:
-      case a6: {
+      case e6:
+      case i6: {
         _ && (this.isGrid ? Fr(this, ir, zf).call(this, l) : Fr(this, ir, wu).call(this, l));
         break
       }
-      case s6: {
+      case n6: {
         _ && this.isGrid && Fr(this, ir, wu).call(this, l);
         break
       }
-      case J4:
+      case K4:
         this.isGrid ? Fr(this, ir, zf).call(this, l) : Fr(this, ir, wu).call(this, l);
         break;
-      case K4:
+      case W4:
         if (!this.isGrid) break;
         Fr(this, ir, wu).call(this, l);
         break;
-      case t6:
+      case Q4:
         l.preventDefault(), this.updateSelectedToIndex(0);
         break;
-      case Q4:
+      case Y4:
         l.preventDefault(), Fr(this, ir, Mf).call(this);
         break;
-      case e6:
+      case J4:
         if (!l.isComposing && l.keyCode !== 229) {
           l.preventDefault();
           const C = Fr(this, ir, no).call(this);
@@ -37670,7 +37668,7 @@ sc = new WeakMap, Fu = new WeakMap, Ou = new WeakMap, Nu = new WeakMap, qu = new
           return
         }
       } else {
-        const Z = l6(_);
+        const Z = s6(_);
         if (Z && ((F = Z.dataset) == null ? void 0 : F.value) === ((T = l.dataset) == null ? void 0 : T.value)) {
           const W = (o = l == null ? void 0 : l.closest(Xl)) == null ? void 0 : o.querySelector(vg);
           W == null || W.scrollIntoView({
@@ -38013,7 +38011,7 @@ const vm = class vm {
         spellcheck: !1,
         "aria-autocomplete": "list",
         role: "combobox",
-        "aria-expanded": U4(!0),
+        "aria-expanded": j4(!0),
         "aria-controls": ((l = this.root.viewportNode) == null ? void 0 : l.id) ?? void 0,
         "aria-labelledby": ((_ = this.root.labelNode) == null ? void 0 : _.id) ?? void 0,
         "aria-activedescendant": x(et(this, Dd)),
@@ -38022,7 +38020,7 @@ const vm = class vm {
     }));
     this.opts = l, this.root = _, this.attachment = Va(this.opts.ref, C => this.root.inputNode = C), oo(() => this.opts.ref.current, () => {
       const C = this.opts.ref.current;
-      C && this.opts.autofocus.current && E4(10, () => C.focus())
+      C && this.opts.autofocus.current && A4(10, () => C.focus())
     }), oo(() => this.opts.value.current, () => {
       this.root.commandState.search !== this.opts.value.current && this.root.setState("search", this.opts.value.current)
     })
@@ -38062,10 +38060,10 @@ const ym = class ym {
       var l;
       return {
         id: this.opts.id.current,
-        "aria-disabled": V4(this.opts.disabled.current),
-        "aria-selected": $4(this.isSelected),
-        "data-disabled": Z4(this.opts.disabled.current),
-        "data-selected": G4(this.isSelected),
+        "aria-disabled": q4(this.opts.disabled.current),
+        "aria-selected": U4(this.isSelected),
+        "data-disabled": V4(this.opts.disabled.current),
+        "data-selected": Z4(this.isSelected),
         "data-value": this.trueValue,
         "data-group": (l = et(this, ao)) == null ? void 0 : l.trueValue,
         [ma.item]: "",
@@ -38147,7 +38145,7 @@ const xm = class xm {
     this.opts = l, this.root = _, this.attachment = Va(this.opts.ref)
   }
   static create(l) {
-    return d6.set(new xm(l, Xo.get()))
+    return u6.set(new xm(l, Xo.get()))
   }
   get props() {
     return x(et(this, ah))
@@ -38188,9 +38186,9 @@ const bm = class bm {
 };
 sh = new WeakMap;
 let jf = bm;
-var p6 = Ie("<label><!></label>");
+var h6 = Ie("<label><!></label>");
 
-function f6(b, l) {
+function d6(b, l) {
   const _ = ts();
   Sr(l, !0);
   let C = zt(l, "id", 19, () => Ua(_)),
@@ -38201,21 +38199,21 @@ function f6(b, l) {
       ref: cr.with(() => L(), ie => L(ie))
     }),
     o = lt(() => Da(F, T.props));
-  var Z = p6();
+  var Z = h6();
   Qt(Z, () => ({
     ...x(o)
   }));
   var W = k(Z);
   Ji(W, () => l.children ?? fa), A(Z), H(b, Z), Pr()
 }
-var m6 = Ie("<!> <!>", 1),
-  _6 = Ie("<div><!> <!></div>");
+var p6 = Ie("<!> <!>", 1),
+  f6 = Ie("<div><!> <!></div>");
 
-function g6(b, l) {
+function m6(b, l) {
   const _ = ts();
   Sr(l, !0);
   const C = it => {
-    f6(it, {
+    d6(it, {
       children: (Qe, Ae) => {
         fi();
         var vt = Fn();
@@ -38264,7 +38262,7 @@ function g6(b, l) {
     Je = At(ct);
   {
     var Be = it => {
-        var Qe = m6(),
+        var Qe = p6(),
           Ae = At(Qe);
         C(Ae);
         var vt = V(Ae, 2);
@@ -38273,7 +38271,7 @@ function g6(b, l) {
         })), H(it, Qe)
       },
       st = it => {
-        var Qe = _6();
+        var Qe = f6();
         Qt(Qe, () => ({
           ...x(Xe)
         }));
@@ -38293,9 +38291,9 @@ function g6(b, l) {
     getValidItems: ht
   })
 }
-var v6 = Ie("<div><!></div>");
+var _6 = Ie("<div><!></div>");
 
-function y6(b, l) {
+function g6(b, l) {
   const _ = ts();
   Sr(l, !0);
   let C = zt(l, "id", 19, () => Ua(_)),
@@ -38323,7 +38321,7 @@ function y6(b, l) {
             })), H(ke, Oe)
           },
           Re = ke => {
-            var Oe = v6();
+            var Oe = _6();
             Qt(Oe, () => ({
               ...x(Z)
             }));
@@ -38342,9 +38340,9 @@ function y6(b, l) {
   }
   H(b, W), Pr()
 }
-var x6 = Ie("<div><!></div>");
+var v6 = Ie("<div><!></div>");
 
-function b6(b, l) {
+function y6(b, l) {
   const _ = ts();
   Sr(l, !0);
   let C = zt(l, "id", 19, () => Ua(_)),
@@ -38370,7 +38368,7 @@ function b6(b, l) {
         })), H(Se, we)
       },
       X = Se => {
-        var we = x6();
+        var we = v6();
         Qt(we, () => ({
           ...x(W)
         }));
@@ -38383,9 +38381,9 @@ function b6(b, l) {
   }
   H(b, ie), Pr()
 }
-var w6 = Ie("<div><!></div>");
+var x6 = Ie("<div><!></div>");
 
-function T6(b, l) {
+function b6(b, l) {
   const _ = ts();
   Sr(l, !0);
   let C = zt(l, "id", 19, () => Ua(_)),
@@ -38407,7 +38405,7 @@ function T6(b, l) {
         })), H(ye, X)
       },
       pe = ye => {
-        var X = w6();
+        var X = x6();
         Qt(X, () => ({
           ...x(o)
         }));
@@ -38420,10 +38418,10 @@ function T6(b, l) {
   }
   H(b, Z), Pr()
 }
-var C6 = Ie("<div><!></div>"),
-  S6 = Ie('<div style="display: contents;"><!></div>');
+var w6 = Ie("<div><!></div>"),
+  T6 = Ie('<div style="display: contents;"><!></div>');
 
-function P6(b, l) {
+function C6(b, l) {
   const _ = ts();
   Sr(l, !0);
   let C = zt(l, "id", 19, () => Ua(_)),
@@ -38434,7 +38432,7 @@ function P6(b, l) {
       ref: cr.with(() => L(), ye => L(ye))
     }),
     o = lt(() => Da(F, T.props));
-  var Z = S6(),
+  var Z = T6(),
     W = k(Z);
   {
     var ie = ye => {
@@ -38445,7 +38443,7 @@ function P6(b, l) {
         })), H(ye, X)
       },
       pe = ye => {
-        var X = C6();
+        var X = w6();
         Qt(X, () => ({
           ...x(o)
         }));
@@ -38458,9 +38456,9 @@ function P6(b, l) {
   }
   A(Z), H(b, Z), Pr()
 }
-var I6 = Ie("<input/>");
+var S6 = Ie("<input/>");
 
-function M6(b, l) {
+function P6(b, l) {
   const _ = ts();
   Sr(l, !0);
   let C = zt(l, "value", 15, ""),
@@ -38488,7 +38486,7 @@ function M6(b, l) {
         })), H(Se, we)
       },
       X = Se => {
-        var we = I6();
+        var we = S6();
         ea(we), Qt(we, () => ({
           ...x(W)
         })), qd(we, C), H(Se, we)
@@ -38499,10 +38497,10 @@ function M6(b, l) {
   }
   H(b, ie), Pr()
 }
-var A6 = Ie("<div><!></div>"),
-  k6 = Ie('<div style="display: contents;" data-item-wrapper=""><!></div>');
+var I6 = Ie("<div><!></div>"),
+  M6 = Ie('<div style="display: contents;" data-item-wrapper=""><!></div>');
 
-function E6(b, l) {
+function A6(b, l) {
   const _ = ts();
   Sr(l, !0);
   let C = zt(l, "id", 19, () => Ua(_)),
@@ -38526,7 +38524,7 @@ function E6(b, l) {
   var X = Jt(),
     Se = At(X);
   Pu(Se, () => pe.root.key, we => {
-    var Re = k6(),
+    var Re = M6(),
       ke = k(Re);
     {
       var Oe = Ee => {
@@ -38541,7 +38539,7 @@ function E6(b, l) {
               })), H(ct, Je)
             },
             Xe = ct => {
-              var Je = A6();
+              var Je = I6();
               Qt(Je, () => ({
                 ...x(ye)
               }));
@@ -38561,9 +38559,9 @@ function E6(b, l) {
     A(Re), Ge(() => zr(Re, "data-value", pe.trueValue)), H(we, Re)
   }), H(b, X), Pr()
 }
-var z6 = Ie("<div><!></div>");
+var k6 = Ie("<div><!></div>");
 
-function L6(b, l) {
+function E6(b, l) {
   const _ = ts();
   Sr(l, !0);
   let C = zt(l, "id", 19, () => Ua(_)),
@@ -38589,7 +38587,7 @@ function L6(b, l) {
           })), H(we, Re)
         },
         Se = we => {
-          var Re = z6();
+          var Re = k6();
           Qt(Re, () => ({
             ...x(o)
           }));
@@ -38604,27 +38602,27 @@ function L6(b, l) {
   }), H(b, Z), Pr()
 }
 const xg = 1,
-  D6 = .9,
-  R6 = .8,
-  B6 = .17,
+  z6 = .9,
+  L6 = .8,
+  D6 = .17,
   ff = .1,
   mf = .999,
-  F6 = .9999,
-  O6 = .99,
-  N6 = /[\\/_+.#"@[({&]/,
-  q6 = /[\\/_+.#"@[({&]/g,
-  j6 = /[\s-]/,
+  R6 = .9999,
+  B6 = .99,
+  F6 = /[\\/_+.#"@[({&]/,
+  O6 = /[\\/_+.#"@[({&]/g,
+  N6 = /[\s-]/,
   Tv = /[\s-]/g;
 
 function Vf(b, l, _, C, L, F, T) {
-  if (F === l.length) return L === b.length ? xg : O6;
+  if (F === l.length) return L === b.length ? xg : B6;
   const o = `${L},${F}`;
   if (T[o] !== void 0) return T[o];
   const Z = C.charAt(F);
   let W = _.indexOf(Z, L),
     ie = 0,
     pe, ye, X, Se;
-  for (; W >= 0;) pe = Vf(b, l, _, C, W + 1, F + 1, T), pe > ie && (W === L ? pe *= xg : N6.test(b.charAt(W - 1)) ? (pe *= R6, X = b.slice(L, W - 1).match(q6), X && L > 0 && (pe *= mf ** X.length)) : j6.test(b.charAt(W - 1)) ? (pe *= D6, Se = b.slice(L, W - 1).match(Tv), Se && L > 0 && (pe *= mf ** Se.length)) : (pe *= B6, L > 0 && (pe *= mf ** (W - L))), b.charAt(W) !== l.charAt(F) && (pe *= F6)), (pe < ff && _.charAt(W - 1) === C.charAt(F + 1) || C.charAt(F + 1) === C.charAt(F) && _.charAt(W - 1) !== C.charAt(F)) && (ye = Vf(b, l, _, C, W + 1, F + 2, T), ye * ff > pe && (pe = ye * ff)), pe > ie && (ie = pe), W = _.indexOf(Z, W + 1);
+  for (; W >= 0;) pe = Vf(b, l, _, C, W + 1, F + 1, T), pe > ie && (W === L ? pe *= xg : F6.test(b.charAt(W - 1)) ? (pe *= L6, X = b.slice(L, W - 1).match(O6), X && L > 0 && (pe *= mf ** X.length)) : N6.test(b.charAt(W - 1)) ? (pe *= z6, Se = b.slice(L, W - 1).match(Tv), Se && L > 0 && (pe *= mf ** Se.length)) : (pe *= D6, L > 0 && (pe *= mf ** (W - L))), b.charAt(W) !== l.charAt(F) && (pe *= R6)), (pe < ff && _.charAt(W - 1) === C.charAt(F + 1) || C.charAt(F + 1) === C.charAt(F) && _.charAt(W - 1) !== C.charAt(F)) && (ye = Vf(b, l, _, C, W + 1, F + 2, T), ye * ff > pe && (pe = ye * ff)), pe > ie && (ie = pe), W = _.indexOf(Z, W + 1);
   return T[o] = ie, ie
 }
 
@@ -38635,12 +38633,12 @@ function bg(b) {
 function Cv(b, l, _) {
   return b = _ && _.length > 0 ? `${`${b} ${_==null?void 0:_.join(" ")}`}` : b, Vf(b, l, bg(b), bg(l), 0, 0, {})
 }
-const V6 = 18,
+const q6 = 18,
   Sv = 40,
-  U6 = `${Sv}px`,
-  Z6 = ["[data-lastpass-icon-root]", "com-1password-button", "[data-dashlanecreated]", '[style$="2147483647 !important;"]'].join(",");
+  j6 = `${Sv}px`,
+  V6 = ["[data-lastpass-icon-root]", "com-1password-button", "[data-dashlanecreated]", '[style$="2147483647 !important;"]'].join(",");
 
-function $6({
+function U6({
   containerRef: b,
   inputRef: l,
   pushPasswordManagerStrategy: _,
@@ -38663,9 +38661,9 @@ function $6({
     const ye = ie,
       X = ye.getBoundingClientRect().left + ye.offsetWidth,
       Se = ye.getBoundingClientRect().top + ye.offsetHeight / 2,
-      we = X - V6,
+      we = X - q6,
       Re = Se;
-    L.querySelectorAll(Z6).length === 0 && L.getDocument().elementFromPoint(we, Re) === ie || (oe(F, !0), oe(o, !0))
+    L.querySelectorAll(V6).length === 0 && L.getDocument().elementFromPoint(we, Re) === ie || (oe(F, !0), oe(o, !0))
   }
   return Zr(() => {
     const ie = b.current;
@@ -38699,14 +38697,14 @@ function $6({
     get willPushPwmBadge() {
       return Z()
     },
-    PWM_BADGE_SPACE_WIDTH: U6
+    PWM_BADGE_SPACE_WIDTH: j6
   }
 }
 const Pv = fv({
     component: "pin-input",
     parts: ["root", "cell"]
   }),
-  G6 = ["Backspace", "Delete", "ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End", "Escape", "Enter", "Tab", "Shift", "Control", "Meta"];
+  Z6 = ["Backspace", "Delete", "ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End", "Escape", "Enter", "Tab", "Shift", "Control", "Meta"];
 var qa, oc, Ls, za, ja, lc, hs, Ds, so, cc, Bd, oh, lh, Fd, Od, Iv, ch, uh, Nd, hh;
 const wm = class wm {
   constructor(l) {
@@ -38719,7 +38717,7 @@ const wm = class wm {
     wr(this, Ls, cr(!1));
     wr(this, za, nt(null));
     wr(this, ja, nt(null));
-    wr(this, lc, new k4(() => this.opts.value.current ?? ""));
+    wr(this, lc, new M4(() => this.opts.value.current ?? ""));
     wr(this, hs, lt(() => typeof this.opts.pattern.current == "string" ? new RegExp(this.opts.pattern.current) : this.opts.pattern.current));
     wr(this, Ds, nt(zn({
       prev: [null, null, "none"],
@@ -38730,7 +38728,7 @@ const wm = class wm {
     lr(this, "domContext");
     lr(this, "onkeydown", l => {
       const _ = l.key;
-      G6.includes(_) || l.ctrlKey || l.metaKey || _ && x(et(this, hs)) && !x(et(this, hs)).test(_) && l.preventDefault()
+      Z6.includes(_) || l.ctrlKey || l.metaKey || _ && x(et(this, hs)) && !x(et(this, hs)).test(_) && l.preventDefault()
     });
     wr(this, Bd, lt(() => ({
       position: "relative",
@@ -38886,7 +38884,7 @@ const wm = class wm {
         pattern: (l = x(et(this, hs))) == null ? void 0 : l.source,
         maxlength: this.opts.maxLength.current,
         value: this.opts.value.current,
-        disabled: H4(this.opts.disabled.current),
+        disabled: $4(this.opts.disabled.current),
         onpaste: this.onpaste,
         oninput: this.oninput,
         onkeydown: this.onkeydown,
@@ -38914,10 +38912,10 @@ const wm = class wm {
       isHovering: x(et(this, oc))
     })));
     var _;
-    this.opts = l, this.attachment = Va(this.opts.ref), this.domContext = new j4(l.ref), Jn(this, cc, {
+    this.opts = l, this.attachment = Va(this.opts.ref), this.domContext = new N4(l.ref), Jn(this, cc, {
       value: this.opts.value,
       isIOS: typeof window < "u" && ((_ = window == null ? void 0 : window.CSS) == null ? void 0 : _.supports("-webkit-touch-callout", "none"))
-    }), Jn(this, so, $6({
+    }), Jn(this, so, U6({
       containerRef: this.opts.ref,
       inputRef: et(this, qa),
       isFocused: et(this, Ls),
@@ -38941,7 +38939,7 @@ const wm = class wm {
         F(), o.disconnect()
       }
     }), oo([() => this.opts.value.current, () => et(this, qa).current], () => {
-      H6(() => {
+      $6(() => {
         const C = et(this, qa).current;
         if (!C) return;
         C.dispatchEvent(new Event("input"));
@@ -39022,7 +39020,7 @@ const Tm = class Tm {
 dh = new WeakMap;
 let Zf = Tm;
 
-function H6(b, l) {
+function $6(b, l) {
   const _ = l.setTimeout(b, 0),
     C = l.setTimeout(b, 10),
     L = l.setTimeout(b, 50);
@@ -39036,9 +39034,9 @@ function vu(b, l) {
     console.error("pin input could not insert CSS rule:", l)
   }
 }
-var W6 = Ie("<div><!> <div><input/></div></div>");
+var G6 = Ie("<div><!> <div><input/></div></div>");
 
-function X6(b, l) {
+function H6(b, l) {
   const _ = ts();
   Sr(l, !0);
   let C = zt(l, "id", 19, () => Ua(_)),
@@ -39077,7 +39075,7 @@ function X6(b, l) {
       class: pe()
     })),
     Ne = lt(() => Da(ke.inputWrapperProps, {}));
-  var ft = W6();
+  var ft = G6();
   Qt(ft, () => ({
     ...x(Ee)
   }));
@@ -39092,9 +39090,9 @@ function X6(b, l) {
     ...x(Oe)
   })), A(Xe), A(ft), H(b, ft), Pr()
 }
-var K6 = Ie("<div><!></div>");
+var W6 = Ie("<div><!></div>");
 
-function Y6(b, l) {
+function X6(b, l) {
   const _ = ts();
   Sr(l, !0);
   let C = zt(l, "id", 19, () => Ua(_)),
@@ -39117,7 +39115,7 @@ function Y6(b, l) {
         })), H(ye, X)
       },
       pe = ye => {
-        var X = K6();
+        var X = W6();
         Qt(X, () => ({
           ...x(o)
         }));
@@ -39135,7 +39133,7 @@ function pc(...b) {
   return Fg(Tu(b))
 }
 
-function J6(b, l) {
+function K6(b, l) {
   Sr(l, !0);
   let _ = zt(l, "ref", 15, null),
     C = zt(l, "value", 15, ""),
@@ -39144,7 +39142,7 @@ function J6(b, l) {
     T = At(F);
   {
     let o = lt(() => pc("bg-popover text-popover-foreground flex h-full w-full flex-col overflow-hidden rounded-md", l.class));
-    _n(T, () => g6, (Z, W) => {
+    _n(T, () => m6, (Z, W) => {
       W(Z, lo({
         "data-slot": "command",
         get class() {
@@ -39168,11 +39166,11 @@ function J6(b, l) {
   }
   H(b, F), Pr()
 }
-var Q6 = _r('<svg><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path></svg>');
+var Y6 = _r('<svg><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path></svg>');
 
 function fc(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = Q6();
+  var C = Y6();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -39181,7 +39179,7 @@ function fc(b, l) {
   })), H(b, C)
 }
 
-function eA(b, l) {
+function J6(b, l) {
   Sr(l, !0);
   let _ = zt(l, "ref", 15, null),
     C = er(l, ["$$slots", "$$events", "$$legacy", "ref", "class"]);
@@ -39189,7 +39187,7 @@ function eA(b, l) {
     F = At(L);
   {
     let T = lt(() => pc("py-6 text-center text-sm", l.class));
-    _n(F, () => y6, (o, Z) => {
+    _n(F, () => g6, (o, Z) => {
       Z(o, lo({
         "data-slot": "command-empty",
         get class() {
@@ -39207,9 +39205,9 @@ function eA(b, l) {
   }
   H(b, L), Pr()
 }
-var tA = Ie("<!> <!>", 1);
+var Q6 = Ie("<!> <!>", 1);
 
-function rA(b, l) {
+function eA(b, l) {
   Sr(l, !0);
   let _ = zt(l, "ref", 15, null),
     C = er(l, ["$$slots", "$$events", "$$legacy", "ref", "class", "children", "heading", "value"]);
@@ -39217,8 +39215,8 @@ function rA(b, l) {
     F = At(L);
   {
     let T = lt(() => pc("text-foreground overflow-hidden p-1", l.class)),
-      o = lt(() => l.value ?? l.heading ?? `----${c6()}`);
-    _n(F, () => b6, (Z, W) => {
+      o = lt(() => l.value ?? l.heading ?? `----${o6()}`);
+    _n(F, () => y6, (Z, W) => {
       W(Z, lo({
         "data-slot": "command-group",
         get class() {
@@ -39235,13 +39233,13 @@ function rA(b, l) {
           _(ie)
         },
         children: (ie, pe) => {
-          var ye = tA(),
+          var ye = Q6(),
             X = At(ye);
           {
             var Se = Re => {
               var ke = Jt(),
                 Oe = At(ke);
-              _n(Oe, () => T6, (Ee, Ne) => {
+              _n(Oe, () => b6, (Ee, Ne) => {
                 Ne(Ee, {
                   class: "text-muted-foreground px-2 py-1.5 text-xs font-medium",
                   children: (ft, ht) => {
@@ -39260,7 +39258,7 @@ function rA(b, l) {
             })
           }
           var we = V(X, 2);
-          _n(we, () => P6, (Re, ke) => {
+          _n(we, () => C6, (Re, ke) => {
             ke(Re, {
               get children() {
                 return l.children
@@ -39277,7 +39275,7 @@ function rA(b, l) {
   H(b, L), Pr()
 }
 
-function iA(b, l) {
+function tA(b, l) {
   Sr(l, !0);
   let _ = zt(l, "ref", 15, null),
     C = er(l, ["$$slots", "$$events", "$$legacy", "ref", "class"]);
@@ -39285,7 +39283,7 @@ function iA(b, l) {
     F = At(L);
   {
     let T = lt(() => pc("aria-selected:bg-base-300 aria-selected:text-accent-foreground [&_svg:not([class*='text-'])]:text-muted-foreground outline-hidden relative flex cursor-default select-none items-center gap-2 rounded-sm px-2 py-1.5 text-sm data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg:not([class*='size-'])]:size-4 [&_svg]:pointer-events-none [&_svg]:shrink-0", l.class));
-    _n(F, () => E6, (o, Z) => {
+    _n(F, () => A6, (o, Z) => {
       Z(o, lo({
         "data-slot": "command-item",
         get class() {
@@ -39303,11 +39301,11 @@ function iA(b, l) {
   }
   H(b, L), Pr()
 }
-var nA = _r('<svg><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"></path></svg>');
+var rA = _r('<svg><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"></path></svg>');
 
-function aA(b, l) {
+function iA(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = nA();
+  var C = rA();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -39315,22 +39313,22 @@ function aA(b, l) {
     ..._
   })), H(b, C)
 }
-var sA = Ie('<div class="border-base-content/10 flex h-9 items-center gap-2 border-b px-3" data-slot="command-input-wrapper"><!> <!></div>');
+var nA = Ie('<div class="border-base-content/10 flex h-9 items-center gap-2 border-b px-3" data-slot="command-input-wrapper"><!> <!></div>');
 
-function oA(b, l) {
+function aA(b, l) {
   Sr(l, !0);
   let _ = zt(l, "ref", 15, null),
     C = zt(l, "value", 15, ""),
     L = er(l, ["$$slots", "$$events", "$$legacy", "ref", "class", "value"]);
-  var F = sA(),
+  var F = nA(),
     T = k(F);
-  aA(T, {
+  iA(T, {
     class: "size-5 opacity-50"
   });
   var o = V(T, 2);
   {
     let Z = lt(() => pc("placeholder:text-muted-foreground outline-hidden flex h-10 w-full rounded-md bg-transparent py-3 text-sm disabled:cursor-not-allowed disabled:opacity-50", l.class));
-    _n(o, () => M6, (W, ie) => {
+    _n(o, () => P6, (W, ie) => {
       ie(W, lo({
         "data-slot": "command-input",
         get class() {
@@ -39355,7 +39353,7 @@ function oA(b, l) {
   A(F), H(b, F), Pr()
 }
 
-function lA(b, l) {
+function sA(b, l) {
   Sr(l, !0);
   let _ = zt(l, "ref", 15, null),
     C = er(l, ["$$slots", "$$events", "$$legacy", "ref", "class"]);
@@ -39363,7 +39361,7 @@ function lA(b, l) {
     F = At(L);
   {
     let T = lt(() => pc("max-h-[300px] scroll-py-1 overflow-y-auto overflow-x-hidden", l.class));
-    _n(F, () => L6, (o, Z) => {
+    _n(F, () => E6, (o, Z) => {
       Z(o, lo({
         "data-slot": "command-list",
         get class() {
@@ -39381,11 +39379,11 @@ function lA(b, l) {
   }
   H(b, L), Pr()
 }
-var cA = _r('<svg><path d="M480-80 240-320l57-57 183 183 183-183 57 57L480-80ZM298-584l-58-56 240-240 240 240-58 56-182-182-182 182Z"></path></svg>');
+var oA = _r('<svg><path d="M480-80 240-320l57-57 183 183 183-183 57 57L480-80ZM298-584l-58-56 240-240 240 240-58 56-182-182-182 182Z"></path></svg>');
 
-function uA(b, l) {
+function lA(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = cA();
+  var C = oA();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -39393,16 +39391,16 @@ function uA(b, l) {
     ..._
   })), H(b, C)
 }
-var hA = Ie("<span> </span> <!>", 1),
-  dA = Ie('<span class="font-flag ml-0.5"> </span> ', 1),
-  pA = Ie('<span class="flex gap-1.5"><span class="font-flag"> </span> </span>'),
-  fA = Ie("<!> <!>", 1),
-  mA = Ie("<!> <!>", 1),
-  _A = (b, l) => {
+var cA = Ie("<span> </span> <!>", 1),
+  uA = Ie('<span class="font-flag ml-0.5"> </span> ', 1),
+  hA = Ie('<span class="flex gap-1.5"><span class="font-flag"> </span> </span>'),
+  dA = Ie("<!> <!>", 1),
+  pA = Ie("<!> <!>", 1),
+  fA = (b, l) => {
     l(0)
   },
-  gA = Ie('<button class="btn btn-xs btn-circle btn-ghost"><!></button>'),
-  vA = Ie('<div class="flex items-center"><div class="dropdown"><div tabindex="0" role="button" class="btn btn-sm max-w-74 text-base-content/80 m-1"><!></div> <div><!></div></div> <!></div>');
+  mA = Ie('<button class="btn btn-xs btn-circle btn-ghost"><!></button>'),
+  _A = Ie('<div class="flex items-center"><div class="dropdown"><div tabindex="0" role="button" class="btn btn-sm max-w-74 text-base-content/80 m-1"><!></div> <div><!></div></div> <!></div>');
 
 function wg(b, l) {
   Sr(l, !0);
@@ -39418,24 +39416,24 @@ function wg(b, l) {
       (Ee = document.activeElement) == null || Ee.blur(), oe(T, "")
     })
   }
-  var Z = vA(),
+  var Z = _A(),
     W = k(Z),
     ie = k(W),
     pe = k(ie);
   {
     var ye = Ee => {
-        var Ne = hA(),
+        var Ne = cA(),
           ft = At(Ne),
           ht = k(ft, !0);
         A(ft);
         var Xe = V(ft, 2);
-        uA(Xe, {
+        lA(Xe, {
           class: "size-3.5"
         }), Ge(ct => fe(ht, ct), [() => Vg()]), H(Ee, Ne)
       },
       X = Ee => {
         const Ne = lt(() => ds(_()));
-        var ft = dA(),
+        var ft = uA(),
           ht = At(ft),
           Xe = k(ht, !0);
         A(ht);
@@ -39452,12 +39450,12 @@ function wg(b, l) {
   var Se = V(ie, 2);
   let we;
   var Re = k(Se);
-  _n(Re, () => J6, (Ee, Ne) => {
+  _n(Re, () => K6, (Ee, Ne) => {
     Ne(Ee, {
       children: (ft, ht) => {
-        var Xe = mA(),
+        var Xe = pA(),
           ct = At(Xe);
-        _n(ct, () => oA, (Be, st) => {
+        _n(ct, () => aA, (Be, st) => {
           st(Be, {
             placeholder: "Country",
             get ref() {
@@ -39475,17 +39473,17 @@ function wg(b, l) {
           })
         });
         var Je = V(ct, 2);
-        _n(Je, () => lA, (Be, st) => {
+        _n(Je, () => sA, (Be, st) => {
           st(Be, {
             children: (it, Qe) => {
-              var Ae = fA(),
+              var Ae = dA(),
                 vt = At(Ae);
-              _n(vt, () => eA, (te, _e) => {
+              _n(vt, () => J6, (te, _e) => {
                 _e(te, {
                   children: (ne, Pe) => {
                     fi();
                     var Me = Fn();
-                    Ge(at => fe(Me, at), [() => b2()]), H(ne, Me)
+                    Ge(at => fe(Me, at), [() => y2()]), H(ne, Me)
                   },
                   $$slots: {
                     default: !0
@@ -39493,7 +39491,7 @@ function wg(b, l) {
                 })
               });
               var Q = V(vt, 2);
-              _n(Q, () => rA, (te, _e) => {
+              _n(Q, () => eA, (te, _e) => {
                 _e(te, {
                   children: (ne, Pe) => {
                     var Me = Jt(),
@@ -39501,7 +39499,7 @@ function wg(b, l) {
                     nn(at, 17, () => $n.countries, We => We.id, (We, Ct) => {
                       var _t = Jt(),
                         xt = At(_t);
-                      _n(xt, () => iA, (tt, pt) => {
+                      _n(xt, () => tA, (tt, pt) => {
                         pt(tt, {
                           get value() {
                             return x(Ct).name
@@ -39510,7 +39508,7 @@ function wg(b, l) {
                             _(x(Ct).id), o()
                           },
                           children: (It, ut) => {
-                            var bt = pA(),
+                            var bt = hA(),
                               wt = k(bt),
                               dt = k(wt, !0);
                             A(wt);
@@ -39546,8 +39544,8 @@ function wg(b, l) {
   var ke = V(W, 2);
   {
     var Oe = Ee => {
-      var Ne = gA();
-      Ne.__click = [_A, _];
+      var Ne = mA();
+      Ne.__click = [fA, _];
       var ft = k(Ne);
       fc(ft, {
         class: "size-3.5"
@@ -39564,11 +39562,11 @@ function wg(b, l) {
   }), H(b, Z), Pr()
 }
 Wi(["click"]);
-var yA = _r('<svg><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-7-.5-14.5T799-507q-5 29-27 48t-52 19h-80q-33 0-56.5-23.5T560-520v-40H400v-80q0-33 23.5-56.5T480-720h40q0-23 12.5-40.5T563-789q-20-5-40.5-8t-42.5-3q-134 0-227 93t-93 227h200q66 0 113 47t47 113v40H400v110q20 5 39.5 7.5T480-160Z"></path></svg>');
+var gA = _r('<svg><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-7-.5-14.5T799-507q-5 29-27 48t-52 19h-80q-33 0-56.5-23.5T560-520v-40H400v-80q0-33 23.5-56.5T480-720h40q0-23 12.5-40.5T563-789q-20-5-40.5-8t-42.5-3q-134 0-227 93t-93 227h200q66 0 113 47t47 113v40H400v110q20 5 39.5 7.5T480-160Z"></path></svg>');
 
-function xA(b, l) {
+function vA(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = yA();
+  var C = gA();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -39576,8 +39574,8 @@ function xA(b, l) {
     ..._
   })), H(b, C)
 }
-var bA = _r('<svg><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"></path></svg>'),
-  wA = _r('<svg><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"></path></svg>');
+var yA = _r('<svg><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"></path></svg>'),
+  xA = _r('<svg><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"></path></svg>');
 
 function $f(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy", "filled"]);
@@ -39585,7 +39583,7 @@ function $f(b, l) {
     L = At(C);
   {
     var F = o => {
-        var Z = bA();
+        var Z = yA();
         Qt(Z, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
@@ -39594,7 +39592,7 @@ function $f(b, l) {
         })), H(o, Z)
       },
       T = o => {
-        var Z = wA();
+        var Z = xA();
         Qt(Z, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
@@ -39608,29 +39606,29 @@ function $f(b, l) {
   }
   H(b, C)
 }
-var TA = Ie('<label class="tab grow font-semibold max-sm:h-10"><input type="radio" class="tab grow"/> <!> </label>'),
-  CA = Ie('<div class="mb-2"><!></div>'),
-  SA = Ie('<div class="text-base-content/80 mt-20 text-center text-sm"> <!></div>'),
-  PA = (b, l, _) => {
+var bA = Ie('<label class="tab grow font-semibold max-sm:h-10"><input type="radio" class="tab grow"/> <!> </label>'),
+  wA = Ie('<div class="mb-2"><!></div>'),
+  TA = Ie('<div class="text-base-content/80 mt-20 text-center text-sm"> <!></div>'),
+  CA = (b, l, _) => {
     l.onvisitclick({
       lat: x(_).lastLatitude,
       lng: x(_).lastLongitude
     })
   },
-  IA = Ie('<tr><td class="text-base-content/80 text-center font-medium max-sm:hidden"> </td><td><span class="font-flag tooltip mr-1 text-base sm:text-lg"> </span> <span> <span class="ml-0.5"> </span></span></td><td class="text-base-content/80 text-center font-medium max-sm:px-1"> </td><td class="px-1 text-center"><button class="btn btn-sm"> </button></td></tr>'),
-  MA = Ie('<table class="table max-sm:text-sm"><thead class="text-base-content/80"><tr><th class="max-sm:hidden"></th><th> </th><th class="text-center"> <br class="sm:hidden"/> <span class="tooltip max-sm:hidden"><!></span></th><th class="px-1"></th></tr></thead><tbody></tbody></table>'),
-  AA = Ie('<tr><td class="text-base-content/80 text-center font-medium"> </td><td><span class="font-flag tooltip mr-1 text-base sm:text-lg"> </span> <span> </span></td><td class="text-base-content/80 text-center font-medium max-sm:px-1"> </td></tr>'),
-  kA = Ie('<table class="table max-sm:text-sm"><thead class="text-base-content/80"><tr><th></th><th> </th><th class="text-center"> <br class="sm:hidden"/> <span class="tooltip before:-translate-x-1/4 max-sm:hidden"><!></span></th></tr></thead><tbody></tbody></table>'),
-  EA = Ie('<span class="font-flag tooltip ml-0.5"> </span>'),
-  zA = Ie("<span> </span>"),
-  LA = Ie('<tr><td class="text-base-content/80 text-center font-medium"> </td><td class="max-sm:px-1"><div class="flex items-center gap-2"><!> <div class="items-center gap-2 sm:flex"><span> <span class="ml-0.5"> </span></span> <!> <!> <!></div></div></td><td class="text-base-content/80 text-center font-medium max-sm:px-1"> </td></tr>'),
+  SA = Ie('<tr><td class="text-base-content/80 text-center font-medium max-sm:hidden"> </td><td><span class="font-flag tooltip mr-1 text-base sm:text-lg"> </span> <span> <span class="ml-0.5"> </span></span></td><td class="text-base-content/80 text-center font-medium max-sm:px-1"> </td><td class="px-1 text-center"><button class="btn btn-sm"> </button></td></tr>'),
+  PA = Ie('<table class="table max-sm:text-sm"><thead class="text-base-content/80"><tr><th class="max-sm:hidden"></th><th> </th><th class="text-center"> <br class="sm:hidden"/> <span class="tooltip max-sm:hidden"><!></span></th><th class="px-1"></th></tr></thead><tbody></tbody></table>'),
+  IA = Ie('<tr><td class="text-base-content/80 text-center font-medium"> </td><td><span class="font-flag tooltip mr-1 text-base sm:text-lg"> </span> <span> </span></td><td class="text-base-content/80 text-center font-medium max-sm:px-1"> </td></tr>'),
+  MA = Ie('<table class="table max-sm:text-sm"><thead class="text-base-content/80"><tr><th></th><th> </th><th class="text-center"> <br class="sm:hidden"/> <span class="tooltip before:-translate-x-1/4 max-sm:hidden"><!></span></th></tr></thead><tbody></tbody></table>'),
+  AA = Ie('<span class="font-flag tooltip ml-0.5"> </span>'),
+  kA = Ie("<span> </span>"),
+  EA = Ie('<tr><td class="text-base-content/80 text-center font-medium"> </td><td class="max-sm:px-1"><div class="flex items-center gap-2"><!> <div class="items-center gap-2 sm:flex"><span> <span class="ml-0.5"> </span></span> <!> <!> <!></div></div></td><td class="text-base-content/80 text-center font-medium max-sm:px-1"> </td></tr>'),
+  zA = Ie('<table class="table max-sm:text-sm"><thead class="text-base-content/80"><tr><th></th><th class="max-sm:px-1"> </th><th class="text-center"> <br class="sm:hidden"/> </th></tr></thead><tbody></tbody></table>'),
+  LA = Ie('<tr><td class="text-base-content/80 text-center font-medium"> </td><td class="h-14 max-sm:px-1"><span> </span></td><td class="text-base-content/80 text-center font-medium max-sm:px-1"> </td></tr>'),
   DA = Ie('<table class="table max-sm:text-sm"><thead class="text-base-content/80"><tr><th></th><th class="max-sm:px-1"> </th><th class="text-center"> <br class="sm:hidden"/> </th></tr></thead><tbody></tbody></table>'),
-  RA = Ie('<tr><td class="text-base-content/80 text-center font-medium"> </td><td class="h-14 max-sm:px-1"><span> </span></td><td class="text-base-content/80 text-center font-medium max-sm:px-1"> </td></tr>'),
-  BA = Ie('<table class="table max-sm:text-sm"><thead class="text-base-content/80"><tr><th></th><th class="max-sm:px-1"> </th><th class="text-center"> <br class="sm:hidden"/> </th></tr></thead><tbody></tbody></table>'),
-  FA = Ie('<div class="h-screen pt-20"><div class="flex justify-center"><span class="loading loading-spinner"></span></div></div>'),
-  OA = Ie('<div class="tabs tabs-box max-sm:tabs-xs"></div> <div class="my-4 flex items-center justify-between"><!> <!></div> <!> <!>', 1);
+  RA = Ie('<div class="h-screen pt-20"><div class="flex justify-center"><span class="loading loading-spinner"></span></div></div>'),
+  BA = Ie('<div class="tabs tabs-box max-sm:tabs-xs"></div> <div class="my-4 flex items-center justify-between"><!> <!></div> <!> <!>', 1);
 
-function NA(b, l) {
+function FA(b, l) {
   Sr(l, !0);
   const _ = [];
   let C = nt(1e3);
@@ -39638,12 +39636,12 @@ function NA(b, l) {
   let F = nt("today"),
     T = {
       regions: {
-        label: U3(),
+        label: j3(),
         icon: Wf
       },
       countries: {
-        label: G3(),
-        icon: xA
+        label: Z3(),
+        icon: vA
       },
       players: {
         label: Xg(),
@@ -39695,7 +39693,7 @@ function NA(b, l) {
       }
     }).catch(st => jr.error(st.message))
   });
-  var ye = OA(),
+  var ye = BA(),
     X = At(ye);
   nn(X, 21, () => Object.entries(T), ([Xe, {
     label: ct,
@@ -39706,7 +39704,7 @@ function NA(b, l) {
       st = () => x(Je)[1].label,
       it = () => x(Je)[1].icon;
     const Qe = lt(it);
-    var Ae = TA(),
+    var Ae = bA(),
       vt = k(Ae);
     ea(vt);
     var Q, te = V(vt, 2);
@@ -39754,7 +39752,7 @@ function NA(b, l) {
   var Oe = V(Se, 2);
   {
     var Ee = Xe => {
-      var ct = CA(),
+      var ct = wA(),
         Je = k(ct);
       wg(Je, {
         get countryId() {
@@ -39772,7 +39770,7 @@ function NA(b, l) {
   var Ne = V(Oe, 2);
   {
     var ft = Xe => {
-        var ct = SA(),
+        var ct = TA(),
           Je = k(ct),
           Be = V(Je);
         {
@@ -39824,7 +39822,7 @@ function NA(b, l) {
               {
                 var vt = te => {
                     const _e = lt(() => x(ie));
-                    var ne = MA(),
+                    var ne = PA(),
                       Pe = k(ne),
                       Me = k(Pe),
                       at = V(k(Me)),
@@ -39841,7 +39839,7 @@ function NA(b, l) {
                     var It = V(Pe);
                     nn(It, 31, () => x(_e), ut => ut.id, (ut, bt, wt) => {
                       const dt = lt(() => ds(x(bt).countryId));
-                      var Lt = IA(),
+                      var Lt = SA(),
                         Xt = k(Lt),
                         Yt = k(Xt, !0);
                       A(Xt);
@@ -39859,23 +39857,23 @@ function NA(b, l) {
                       A(ur);
                       var Ar = V(ur),
                         kr = k(Ar);
-                      kr.__click = [PA, l, bt];
+                      kr.__click = [CA, l, bt];
                       var Nr = k(kr, !0);
                       A(kr), A(Ar), A(Lt), Ge((ce, O, j) => {
                         fe(Yt, x(wt) + 1), zr(ar, "data-tip", x(dt).name), fe(Ft, x(dt).flag), Or(dr, 1, `font-semibold ${ce??""}`), fe(gr, `${x(bt).name??""} `), fe(qr, `#${x(bt).number??""}`), fe(Mr, O), fe(Nr, j)
-                      }, [() => Zn(x(bt).cityId), () => x(bt).pixelsPainted.toLocaleString("en-US"), () => cT()]), Zo(Lt, () => $o, () => ({
+                      }, [() => Zn(x(bt).cityId), () => x(bt).pixelsPainted.toLocaleString("en-US"), () => oT()]), Zo(Lt, () => $o, () => ({
                         duration: 200
                       })), H(ut, Lt)
                     }), A(It), A(ne), Ge((ut, bt, wt, dt) => {
                       fe(We, ut), fe(_t, `${bt??""} `), fe(xt, `${wt??""} `), zr(tt, "data-tip", dt)
-                    }, [() => Q3(), () => Ql(), () => ec().toLowerCase(), () => sT()]), H(te, ne)
+                    }, [() => Y3(), () => Ql(), () => ec().toLowerCase(), () => nT()]), H(te, ne)
                   },
                   Q = te => {
                     var _e = Jt(),
                       ne = At(_e);
                     {
                       var Pe = at => {
-                          var We = kA(),
+                          var We = MA(),
                             Ct = k(We),
                             _t = k(Ct),
                             xt = V(k(_t)),
@@ -39892,7 +39890,7 @@ function NA(b, l) {
                           var dt = V(Ct);
                           nn(dt, 31, () => x(ie), Lt => Lt.id, (Lt, Xt, Yt) => {
                             const nr = lt(() => ds(x(Xt).id));
-                            var ar = AA(),
+                            var ar = IA(),
                               Ft = k(ar),
                               dr = k(Ft, !0);
                             A(Ft);
@@ -39912,7 +39910,7 @@ function NA(b, l) {
                             })), H(Lt, ar)
                           }), A(dt), A(We), Ge((Lt, Xt, Yt, nr) => {
                             fe(tt, Lt), fe(It, `${Xt??""} `), fe(ut, `${Yt??""} `), zr(bt, "data-tip", nr)
-                          }, [() => Vg(), () => Ql(), () => ec().toLowerCase(), () => NT()]), H(at, We)
+                          }, [() => Vg(), () => Ql(), () => ec().toLowerCase(), () => FT()]), H(at, We)
                         },
                         Me = at => {
                           var We = Jt(),
@@ -39920,7 +39918,7 @@ function NA(b, l) {
                           {
                             var _t = tt => {
                                 const pt = lt(() => x(ie));
-                                var It = DA(),
+                                var It = zA(),
                                   ut = k(It),
                                   bt = k(ut),
                                   wt = V(k(bt)),
@@ -39936,7 +39934,7 @@ function NA(b, l) {
                                     var xe;
                                     return ((xe = Dt.data) == null ? void 0 : xe.id) === x(Ft).id
                                   });
-                                  var Ir = LA();
+                                  var Ir = EA();
                                   let qr;
                                   var ur = k(Ir),
                                     Mr = k(ur, !0);
@@ -39963,7 +39961,7 @@ function NA(b, l) {
                                   {
                                     var ve = xe => {
                                       const kt = lt(() => ds(x(Ft).equippedFlag));
-                                      var Pt = EA(),
+                                      var Pt = AA(),
                                         Et = k(Pt, !0);
                                       A(Pt), Ge(() => {
                                         zr(Pt, "data-tip", x(kt).name), fe(Et, x(kt).flag)
@@ -39989,11 +39987,11 @@ function NA(b, l) {
                                   var Ze = V(Le, 2);
                                   {
                                     var ot = xe => {
-                                      var kt = zA(),
+                                      var kt = kA(),
                                         Pt = k(kt, !0);
                                       A(kt), Ge((Et, Wt) => {
                                         Or(kt, 1, `badge badge-sm ml-0.5 border-0 ${Et??""} ${Wt??""}`), fe(Pt, x(Ft).allianceName)
-                                      }, [() => Xf(x(Ft).allianceId), () => Zn(x(Ft).allianceId)]), H(xe, kt)
+                                      }, [() => Kf(x(Ft).allianceId), () => Zn(x(Ft).allianceId)]), H(xe, kt)
                                     };
                                     Ve(Ze, xe => {
                                       "allianceName" in x(Ft) && x(Ft).allianceName && xe(ot)
@@ -40018,7 +40016,7 @@ function NA(b, l) {
                                   It = At(pt);
                                 {
                                   var ut = bt => {
-                                    var wt = BA(),
+                                    var wt = DA(),
                                       dt = k(wt),
                                       Lt = k(dt),
                                       Xt = V(k(Lt)),
@@ -40034,7 +40032,7 @@ function NA(b, l) {
                                         var le;
                                         return ((le = Dt.data) == null ? void 0 : le.allianceId) === x(Ir).id
                                       });
-                                      var Mr = RA();
+                                      var Mr = LA();
                                       let Ar;
                                       var kr = k(Mr),
                                         Nr = k(kr, !0);
@@ -40081,7 +40079,7 @@ function NA(b, l) {
               H(it, Qe)
             },
             st = it => {
-              var Qe = FA();
+              var Qe = RA();
               H(it, Qe)
             };
           Ve(Je, it => {
@@ -40097,11 +40095,11 @@ function NA(b, l) {
   $d("innerWidth", Xe => oe(C, Xe, !0)), H(b, ye), Pr()
 }
 Wi(["click"]);
-var qA = _r('<svg><path d="M160-200h160v-320H160v320Zm240 0h160v-560H400v560Zm240 0h160v-240H640v240ZM80-120v-480h240v-240h320v320h240v400H80Z"></path></svg>');
+var OA = _r('<svg><path d="M160-200h160v-320H160v320Zm240 0h160v-560H400v560Zm240 0h160v-240H640v240ZM80-120v-480h240v-240h320v320h240v400H80Z"></path></svg>');
 
 function Mv(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = qA();
+  var C = OA();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -40109,9 +40107,9 @@ function Mv(b, l) {
     ..._
   })), H(b, C)
 }
-var jA = Ie('<dialog class="modal"><div class="modal-box h-11/12 max-w-3xl max-sm:size-full max-sm:rounded-none max-sm:px-3 max-sm:py-5 sm:overflow-x-hidden"><form method="dialog"><button class="btn btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <div class="flex items-center gap-1"><!> <h3 class="text-xl font-bold"> </h3></div> <div class="mt-4"><!></div></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
+var NA = Ie('<dialog class="modal"><div class="modal-box h-11/12 max-w-3xl max-sm:size-full max-sm:rounded-none max-sm:px-3 max-sm:py-5 sm:overflow-x-hidden"><form method="dialog"><button class="btn btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <div class="flex items-center gap-1"><!> <h3 class="text-xl font-bold"> </h3></div> <div class="mt-4"><!></div></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
 
-function VA(b, l) {
+function qA(b, l) {
   Sr(l, !0);
   let _ = zt(l, "open", 15);
   Ii(() => {
@@ -40120,7 +40118,7 @@ function VA(b, l) {
     };
     return document.addEventListener("keydown", pe), () => document.removeEventListener("keydown", pe)
   });
-  var C = jA(),
+  var C = NA(),
     L = k(C),
     F = V(k(L), 2),
     T = k(F);
@@ -40132,7 +40130,7 @@ function VA(b, l) {
   A(o), A(F);
   var W = V(F, 2),
     ie = k(W);
-  NA(ie, {
+  FA(ie, {
     get onvisitclick() {
       return l.onvisitclick
     },
@@ -40143,12 +40141,12 @@ function VA(b, l) {
     Zr(() => {
       _() ? pe.show() : pe.close()
     })
-  }), Ge(pe => fe(Z, pe), [() => Kf()]), an("close", C, () => _(!1)), H(b, C), Pr()
+  }), Ge(pe => fe(Z, pe), [() => Yf()]), an("close", C, () => _(!1)), H(b, C), Pr()
 }
-var UA = Ie("<div><!></div>"),
-  ZA = Ie('<dialog class="modal"><div class="modal-box"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <!></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
+var jA = Ie("<div><!></div>"),
+  VA = Ie('<dialog class="modal"><div class="modal-box"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <!></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
 
-function $A(b, l) {
+function UA(b, l) {
   Sr(l, !0);
   let _ = zt(l, "open", 15);
   Ii(() => {
@@ -40157,12 +40155,12 @@ function $A(b, l) {
     };
     return document.addEventListener("keydown", o), () => document.removeEventListener("keydown", o)
   });
-  var C = ZA(),
+  var C = VA(),
     L = k(C),
     F = V(k(L), 2);
   {
     var T = o => {
-      var Z = UA(),
+      var Z = jA(),
         W = k(Z);
       vx(W, {}), A(Z), En(2, Z, () => Qn, () => ({
         duration: 300
@@ -40178,11 +40176,11 @@ function $A(b, l) {
     })
   }), an("close", C, () => _(!1)), H(b, C), Pr()
 }
-var GA = (b, l, _) => {
+var ZA = (b, l, _) => {
     localStorage.setItem(x(l), "true"), oe(_, !1)
   },
-  HA = Ie('<span class="indicator-item indicator-bottom indicator-center badge badge-primary badge-xs">new</span>'),
-  WA = Ie("<div><!> <!></div>");
+  $A = Ie('<span class="indicator-item indicator-bottom indicator-center badge badge-primary badge-xs">new</span>'),
+  GA = Ie("<div><!> <!></div>");
 
 function _f(b, l) {
   Sr(l, !0);
@@ -40191,12 +40189,12 @@ function _f(b, l) {
   Ii(() => {
     oe(_, !localStorage.getItem(x(C)))
   });
-  var L = WA();
-  L.__click = [GA, C, _];
+  var L = GA();
+  L.__click = [ZA, C, _];
   var F = k(L);
   {
     var T = Z => {
-      var W = HA();
+      var W = $A();
       En(3, W, () => Qn, () => ({
         duration: 200
       })), H(Z, W)
@@ -40209,15 +40207,15 @@ function _f(b, l) {
   Ji(o, () => l.children), A(L), Ge(() => Or(L, 1, `indicator ${l.class??""}`)), H(b, L), Pr()
 }
 Wi(["click"]);
-var XA = Ie("<p>You don't have charges to paint. <br/> </p>");
+var HA = Ie("<p>You don't have charges to paint. <br/> </p>");
 
-function KA(b, l) {
+function WA(b, l) {
   Sr(l, !1), Og();
-  var _ = XA(),
+  var _ = HA(),
     C = V(k(_), 2);
   A(_), Ge(L => fe(C, ` Next charge in ${L??""}`), [() => zd(Dt.cooldown ?? 0)]), H(b, _), Pr()
 }
-var YA = Ie("<canvas></canvas>");
+var XA = Ie("<canvas></canvas>");
 
 function Av(b, l) {
   Sr(l, !0);
@@ -40234,7 +40232,7 @@ function Av(b, l) {
     const pe = ie.measureText(l.value);
     _(Math.ceil(pe.actualBoundingBoxRight)), oe(L, pe.actualBoundingBoxDescent)
   });
-  var W = YA();
+  var W = XA();
   Qt(W, () => ({
     width: _() * T,
     height: x(L) * T,
@@ -40242,16 +40240,16 @@ function Av(b, l) {
     ...C
   })), ps(W, ie => oe(F, ie), () => x(F)), H(b, W), Pr()
 }
-var JA = Ie('<span class="w-7 text-xs"> </span>'),
-  QA = Ie('<span class="flex items-center gap-1 sm:mt-[1px]"><span><!></span> <!></span>'),
-  ek = Ie('<span class="loading loading-spinner center-absolute absolute"></span>'),
-  tk = Ie('<button><!> <div class="flex items-center gap-2"> <!></div> <!></button>');
+var KA = Ie('<span class="w-7 text-xs"> </span>'),
+  YA = Ie('<span class="flex items-center gap-1 sm:mt-[1px]"><span><!></span> <!></span>'),
+  JA = Ie('<span class="loading loading-spinner center-absolute absolute"></span>'),
+  QA = Ie('<button><!> <div class="flex items-center gap-2"> <!></div> <!></button>');
 
 function kv(b, l) {
   Sr(l, !0);
   let _ = er(l, ["$$slots", "$$events", "$$legacy", "loading", "charges"]),
     C = nt(0);
-  var L = tk();
+  var L = QA();
   Qt(L, () => ({
     ..._,
     class: `btn btn-primary btn-lg sm:btn-xl relative ${l.class??""}`
@@ -40266,7 +40264,7 @@ function kv(b, l) {
   {
     var W = ye => {
       const X = lt(() => `${Math.floor(l.charges)}/${Dt.data.charges.max}`);
-      var Se = QA(),
+      var Se = YA(),
         we = k(Se),
         Re = k(we);
       {
@@ -40292,7 +40290,7 @@ function kv(b, l) {
       var ke = V(we, 2);
       {
         var Oe = Ee => {
-          var Ne = JA(),
+          var Ne = KA(),
             ft = k(Ne);
           A(Ne), Ge(ht => fe(ft, `(${ht??""})`), [() => zd(Dt.cooldown)]), H(Ee, Ne)
         };
@@ -40310,7 +40308,7 @@ function kv(b, l) {
   var ie = V(T, 2);
   {
     var pe = ye => {
-      var X = ek();
+      var X = JA();
       H(ye, X)
     };
     Ve(ie, ye => {
@@ -40319,11 +40317,11 @@ function kv(b, l) {
   }
   A(L), Ge(ye => fe(o, `${ye??""} `), [() => Zg()]), H(b, L), Pr()
 }
-const rk = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABVQTFRFAAAASkKEenHEta7xWmmLi5y0v8vc+SuCVQAAAAF0Uk5TAEDm2GYAAAA/SURBVHjaXcjBDcAwDMNAUW28/8hF0MCIzN9RV7aVfuxp+IGPe+AdPQRpFaRrgcNrn/Bb4LAE4W5aNb3TXUofoSgBYpzN5I4AAAAASUVORK5CYII=",
-  ik = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAFxJREFUeNq107EJACAMRFEHyxSu4jbuZ+0IyhUS4ZDogYEr3++Svp+ZDUzGrRTMIwKmiIApImCKiBgbOXOEcRxQsQcW7rVKeA9gj5gD2D3mgC/GcQSLMEdO+/qtE+/GV5duYCOPAAAAAElFTkSuQmCC",
-  nk = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAAXNSR0IArs4c6QAAAAJ0Uk5TAAB2k804AAAAKklEQVR42mOAAhsbCA3n//9vQ74ApqE2QIAgwIqBykFaICwMAQwt9HEpAIf2Me1Ro5Q9AAAAAElFTkSuQmCC",
-  ak = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAAXNSR0IArs4c6QAAABVJREFUeNpjYGA48x8DYwoB1Q0RlQDDCVmniJ241gAAAABJRU5ErkJggg==";
-class sk {
+const ek = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABVQTFRFAAAASkKEenHEta7xWmmLi5y0v8vc+SuCVQAAAAF0Uk5TAEDm2GYAAAA/SURBVHjaXcjBDcAwDMNAUW28/8hF0MCIzN9RV7aVfuxp+IGPe+AdPQRpFaRrgcNrn/Bb4LAE4W5aNb3TXUofoSgBYpzN5I4AAAAASUVORK5CYII=",
+  tk = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAFxJREFUeNq107EJACAMRFEHyxSu4jbuZ+0IyhUS4ZDogYEr3++Svp+ZDUzGrRTMIwKmiIApImCKiBgbOXOEcRxQsQcW7rVKeA9gj5gD2D3mgC/GcQSLMEdO+/qtE+/GV5duYCOPAAAAAElFTkSuQmCC",
+  rk = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAAXNSR0IArs4c6QAAAAJ0Uk5TAAB2k804AAAAKklEQVR42mOAAhsbCA3n//9vQ74ApqE2QIAgwIqBykFaICwMAQwt9HEpAIf2Me1Ro5Q9AAAAAElFTkSuQmCC",
+  ik = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAAXNSR0IArs4c6QAAABVJREFUeNpjYGA48x8DYwoB1Q0RlQDDCVmniJ241gAAAABJRU5ErkJggg==";
+class nk {
   constructor(l) {
     lr(this, "gm");
     lr(this, "opacity", 1);
@@ -40340,7 +40338,7 @@ class sk {
     if (!o) {
       const Z = this.gm.tileBoundsLatLon(L[0], L[1], this.input.tileZoom),
         W = rm(Z, !0),
-        ie = new ok({
+        ie = new ak({
           coordinates: W,
           id: `${this.id}-${T}`,
           layerPaint: {
@@ -40377,7 +40375,7 @@ class sk {
     return `${l},${_}`
   }
 }
-class ok {
+class ak {
   constructor(l) {
     lr(this, "canvas");
     lr(this, "maps", new Set);
@@ -40426,7 +40424,19 @@ class ok {
     for (const _ of this.maps.values()) _.setPaintProperty(this.input.id, "raster-opacity", l)
   }
 }
-var lk = _r('<svg><path d="M5 21C4.45 21 3.97917 20.8042 3.5875 20.4125C3.19583 20.0208 3 19.55 3 19V15H5V19H9V21H5ZM15 21V19H19V15H21V19C21 19.55 20.8042 20.0208 20.4125 20.4125C20.0208 20.8042 19.55 21 19 21H15ZM3 9V5C3 4.45 3.19583 3.97917 3.5875 3.5875C3.97917 3.19583 4.45 3 5 3H9V5H5V9H3ZM19 9V5H15V3H19C19.55 3 20.0208 3.19583 20.4125 3.5875C20.8042 3.97917 21 4.45 21 5V9H19Z"></path></svg>');
+var sk = _r('<svg><path d="M5 21C4.45 21 3.97917 20.8042 3.5875 20.4125C3.19583 20.0208 3 19.55 3 19V15H5V19H9V21H5ZM15 21V19H19V15H21V19C21 19.55 20.8042 20.0208 20.4125 20.4125C20.0208 20.8042 19.55 21 19 21H15ZM3 9V5C3 4.45 3.19583 3.97917 3.5875 3.5875C3.97917 3.19583 4.45 3 5 3H9V5H5V9H3ZM19 9V5H15V3H19C19.55 3 20.0208 3.19583 20.4125 3.5875C20.8042 3.97917 21 4.45 21 5V9H19Z"></path></svg>');
+
+function ok(b, l) {
+  let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
+  var C = sk();
+  Qt(C, () => ({
+    viewBox: "0 0 24 24",
+    fill: "currentColor",
+    xmlns: "http://www.w3.org/2000/svg",
+    ..._
+  })), H(b, C)
+}
+var lk = _r('<svg><path d="M5 19H9V21H5C4.45 21 3.97956 20.8038 3.58789 20.4121C3.19622 20.0204 3 19.55 3 19V15H5V19ZM20.6768 20.0908C20.6015 20.2031 20.5138 20.3105 20.4121 20.4121C20.0204 20.8038 19.55 21 19 21H15V19H19V18.4141L20.6768 20.0908ZM21 17.5859L19 15.5859V15H21V17.5859ZM5.58594 5H5V9H3V5C3 4.45 3.19622 3.97956 3.58789 3.58789C3.68947 3.48631 3.79597 3.3975 3.9082 3.32227L5.58594 5ZM19 3C19.55 3 20.0204 3.19622 20.4121 3.58789C20.8038 3.97956 21 4.45 21 5V9H19V5H15V3H19ZM9 5H8.41406L6.41406 3H9V5Z"></path><rect x="1" y="2.41422" width="2" height="29" transform="rotate(-45 1 2.41422)"></rect></svg>');
 
 function ck(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
@@ -40438,28 +40448,16 @@ function ck(b, l) {
     ..._
   })), H(b, C)
 }
-var uk = _r('<svg><path d="M5 19H9V21H5C4.45 21 3.97956 20.8038 3.58789 20.4121C3.19622 20.0204 3 19.55 3 19V15H5V19ZM20.6768 20.0908C20.6015 20.2031 20.5138 20.3105 20.4121 20.4121C20.0204 20.8038 19.55 21 19 21H15V19H19V18.4141L20.6768 20.0908ZM21 17.5859L19 15.5859V15H21V17.5859ZM5.58594 5H5V9H3V5C3 4.45 3.19622 3.97956 3.58789 3.58789C3.68947 3.48631 3.79597 3.3975 3.9082 3.32227L5.58594 5ZM19 3C19.55 3 20.0204 3.19622 20.4121 3.58789C20.8038 3.97956 21 4.45 21 5V9H19V5H15V3H19ZM9 5H8.41406L6.41406 3H9V5Z"></path><rect x="1" y="2.41422" width="2" height="29" transform="rotate(-45 1 2.41422)"></rect></svg>');
-
-function hk(b, l) {
-  let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = uk();
-  Qt(C, () => ({
-    viewBox: "0 0 24 24",
-    fill: "currentColor",
-    xmlns: "http://www.w3.org/2000/svg",
-    ..._
-  })), H(b, C)
-}
-var dk = Ie("<div><!></div>");
+var uk = Ie("<div><!></div>");
 
 function Kl(b, l) {
   Sr(l, !0);
-  var _ = dk(),
+  var _ = uk(),
     C = k(_);
   Ji(C, () => l.children ?? fa), A(_), Ge(() => Or(_, 1, `bg-base-100/60 border-base-content/20 -top-15 pointer-events-none absolute left-1/2 line-clamp-1 flex w-max -translate-x-1/2 select-none items-center gap-1 rounded-full border-2 px-3 py-1.5 ${l.class??""}`)), H(b, _), Pr()
 }
-var pk = Ie('<div class="confetti svelte-15ksp55"></div>'),
-  fk = Ie("<div></div>");
+var hk = Ie('<div class="confetti svelte-15ksp55"></div>'),
+  dk = Ie("<div></div>");
 
 function hm(b, l) {
   Sr(l, !0);
@@ -40496,12 +40494,12 @@ function hm(b, l) {
     Xe = At(ht);
   {
     var ct = Je => {
-      var Be = fk();
+      var Be = dk();
       let st;
       nn(Be, 21, () => ({
         length: ie()
       }), Zd, (it, Qe) => {
-        var Ae = pk();
+        var Ae = hk();
         Ge((vt, Q, te, _e, ne, Pe, Me, at, We, Ct, _t) => uc(Ae, `
         --color: ${vt??""};
         --skew: ${Q??""}deg,${te??""}deg;
@@ -40531,7 +40529,7 @@ function hm(b, l) {
   }
   H(b, ht), Pr()
 }
-var mk = async (b, l, _, C) => {
+var pk = async (b, l, _, C) => {
   try {
     oe(l, !0), await ni.purchase({
       id: _,
@@ -40543,9 +40541,9 @@ var mk = async (b, l, _, C) => {
   } finally {
     oe(l, !1)
   }
-}, _k = Ie('<span class="loading loading-spinner center-absolute absolute"></span>'), gk = Ie('<!> <span class="text-sm">Droplets</span>', 1), vk = Ie('<!> Unlocked <span class="center-absolute absolute"><!></span>', 1), yk = (b, l) => l(!1), xk = Ie('<div class="flex flex-col gap-4"><section><div class="flex items-center gap-1"><!> <h3 class="text-xl font-bold">Unlock</h3> <div class="ml-auto mr-4"><!></div></div> <p class="text-base-content/80 mt-1 text-sm">Permanently unlock the color</p></section> <div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-6"><div class="flex grow items-center justify-center"><div class="border-base-content/20 size-32 rounded-2xl border-4"></div></div> <p class="mt-4 text-center text-2xl font-bold"> </p> <div class="flex w-max flex-col"><div><button class="btn btn-xl btn-primary relative mt-3 h-10"><!> <!></button></div> <button class="btn relative mt-3 h-10">Close</button></div></div></div>'), bk = Ie('<dialog class="modal !bg-black/80"><div class="modal-box max-h-11/12 w-11/12 max-w-md"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <!></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
+}, fk = Ie('<span class="loading loading-spinner center-absolute absolute"></span>'), mk = Ie('<!> <span class="text-sm">Droplets</span>', 1), _k = Ie('<!> Unlocked <span class="center-absolute absolute"><!></span>', 1), gk = (b, l) => l(!1), vk = Ie('<div class="flex flex-col gap-4"><section><div class="flex items-center gap-1"><!> <h3 class="text-xl font-bold">Unlock</h3> <div class="ml-auto mr-4"><!></div></div> <p class="text-base-content/80 mt-1 text-sm">Permanently unlock the color</p></section> <div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-6"><div class="flex grow items-center justify-center"><div class="border-base-content/20 size-32 rounded-2xl border-4"></div></div> <p class="mt-4 text-center text-2xl font-bold"> </p> <div class="flex w-max flex-col"><div><button class="btn btn-xl btn-primary relative mt-3 h-10"><!> <!></button></div> <button class="btn relative mt-3 h-10">Close</button></div></div></div>'), yk = Ie('<dialog class="modal !bg-black/80"><div class="modal-box max-h-11/12 w-11/12 max-w-md"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <!></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
 
-function wk(b, l) {
+function xk(b, l) {
   Sr(l, !0);
   let _ = zt(l, "open", 15);
   const C = lt(() => $n.colors[l.colorIdx]),
@@ -40563,12 +40561,12 @@ function wk(b, l) {
   });
   const o = 100,
     Z = $n.products[o];
-  var W = bk(),
+  var W = yk(),
     ie = k(W),
     pe = V(k(ie), 2);
   {
     var ye = X => {
-      var Se = xk(),
+      var Se = vk(),
         we = k(Se),
         Re = k(we),
         ke = k(Re);
@@ -40593,11 +40591,11 @@ function wk(b, l) {
         Be = k(Je);
       let st;
       var it = k(Be);
-      it.__click = [mk, F, o, l];
+      it.__click = [pk, F, o, l];
       var Qe = k(it);
       {
         var Ae = ne => {
-          var Pe = _k();
+          var Pe = fk();
           H(ne, Pe)
         };
         Ve(Qe, ne => {
@@ -40607,7 +40605,7 @@ function wk(b, l) {
       var vt = V(Qe, 2);
       {
         var Q = ne => {
-            var Pe = gk(),
+            var Pe = mk(),
               Me = At(Pe);
             Ud(Me, {
               class: "size-5"
@@ -40616,7 +40614,7 @@ function wk(b, l) {
             fi(), Ge(We => fe(at, ` ${We??""} `), [() => Z.price.toLocaleString("en-US")]), H(ne, Pe)
           },
           te = ne => {
-            var Pe = vk(),
+            var Pe = _k(),
               Me = At(Pe);
             Ld(Me, {
               class: "size-5"
@@ -40631,7 +40629,7 @@ function wk(b, l) {
       }
       A(it), A(Be);
       var _e = V(Be, 2);
-      _e.__click = [yk, _], A(Je), A(Ne), A(Se), Ge((ne, Pe) => {
+      _e.__click = [gk, _], A(Je), A(Ne), A(Se), Ge((ne, Pe) => {
         uc(ht, `background: rgb(${x(C).rgb[0]} ${x(C).rgb[1]} ${x(C).rgb[2]})`), zr(ht, "aria-label", x(C).name), fe(ct, x(C).name), zr(Be, "data-tip", ne), st = Or(Be, 1, "", null, st, Pe), it.disabled = x(L) < Z.price || x(F) || x(T)
       }, [() => Hd(), () => ({
         tooltip: !x(T) && x(L) < Z.price
@@ -40648,9 +40646,33 @@ function wk(b, l) {
   }), an("close", W, () => _(!1)), H(b, W), Pr()
 }
 Wi(["click"]);
-var Tk = _r('<svg><path d="M200-80q-50 0-85-35t-35-85q0-39 22.5-69.5T160-313v-334q-35-13-57.5-43.5T80-760q0-50 35-85t85-35q39 0 69.5 22.5T313-800h334q12-35 42.5-57.5T760-880q50 0 85 35t35 85q0 40-22.5 70.5T800-647v334q35 13 57.5 43.5T880-200q0 50-35 85t-85 35q-39 0-69.5-22.5T647-160H313q-13 35-43.5 57.5T200-80Zm0-640q17 0 28.5-11.5T240-760q0-17-11.5-28.5T200-800q-17 0-28.5 11.5T160-760q0 17 11.5 28.5T200-720Zm560 0q17 0 28.5-11.5T800-760q0-17-11.5-28.5T760-800q-17 0-28.5 11.5T720-760q0 17 11.5 28.5T760-720ZM313-240h334q9-26 28-45t45-28v-334q-26-9-45-28t-28-45H313q-9 26-28 45t-45 28v334q26 9 45 28t28 45Zm447 80q17 0 28.5-11.5T800-200q0-17-11.5-28.5T760-240q-17 0-28.5 11.5T720-200q0 17 11.5 28.5T760-160Zm-560 0q17 0 28.5-11.5T240-200q0-17-11.5-28.5T200-240q-17 0-28.5 11.5T160-200q0 17 11.5 28.5T200-160Zm0-600Zm560 0Zm0 560Zm-560 0Z"></path></svg>');
+var bk = _r('<svg><path d="M200-80q-50 0-85-35t-35-85q0-39 22.5-69.5T160-313v-334q-35-13-57.5-43.5T80-760q0-50 35-85t85-35q39 0 69.5 22.5T313-800h334q12-35 42.5-57.5T760-880q50 0 85 35t35 85q0 40-22.5 70.5T800-647v334q35 13 57.5 43.5T880-200q0 50-35 85t-85 35q-39 0-69.5-22.5T647-160H313q-13 35-43.5 57.5T200-80Zm0-640q17 0 28.5-11.5T240-760q0-17-11.5-28.5T200-800q-17 0-28.5 11.5T160-760q0 17 11.5 28.5T200-720Zm560 0q17 0 28.5-11.5T800-760q0-17-11.5-28.5T760-800q-17 0-28.5 11.5T720-760q0 17 11.5 28.5T760-720ZM313-240h334q9-26 28-45t45-28v-334q-26-9-45-28t-28-45H313q-9 26-28 45t-45 28v334q26 9 45 28t28 45Zm447 80q17 0 28.5-11.5T800-200q0-17-11.5-28.5T760-240q-17 0-28.5 11.5T720-200q0 17 11.5 28.5T760-160Zm-560 0q17 0 28.5-11.5T240-200q0-17-11.5-28.5T200-240q-17 0-28.5 11.5T160-200q0 17 11.5 28.5T200-160Zm0-600Zm560 0Zm0 560Zm-560 0Z"></path></svg>');
 
 function Tg(b, l) {
+  let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
+  var C = bk();
+  Qt(C, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ..._
+  })), H(b, C)
+}
+var wk = _r('<svg><path d="M120-120v-190l358-358-58-56 58-56 76 76 124-124q5-5 12.5-8t15.5-3q8 0 15 3t13 8l94 94q5 6 8 13t3 15q0 8-3 15.5t-8 12.5L705-555l76 78-57 57-56-58-358 358H120Zm80-80h78l332-334-76-76-334 332v78Zm447-410 96-96-37-37-96 96 37 37Zm0 0-37-37 37 37Z"></path></svg>');
+
+function Cg(b, l) {
+  let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
+  var C = wk();
+  Qt(C, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ..._
+  })), H(b, C)
+}
+var Tk = _r('<svg><path d="m247-904 57-56 343 343q23 23 23 57t-23 57L457-313q-23 23-57 23t-57-23L153-503q-23-23-23-57t23-57l190-191-96-96Zm153 153L209-560h382L400-751Zm360 471q-33 0-56.5-23.5T680-360q0-21 12.5-45t27.5-45q9-12 19-25t21-25q11 12 21 25t19 25q15 21 27.5 45t12.5 45q0 33-23.5 56.5T760-280ZM80 0v-160h800V0H80Z"></path></svg>');
+
+function Ev(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
   var C = Tk();
   Qt(C, () => ({
@@ -40660,32 +40682,8 @@ function Tg(b, l) {
     ..._
   })), H(b, C)
 }
-var Ck = _r('<svg><path d="M120-120v-190l358-358-58-56 58-56 76 76 124-124q5-5 12.5-8t15.5-3q8 0 15 3t13 8l94 94q5 6 8 13t3 15q0 8-3 15.5t-8 12.5L705-555l76 78-57 57-56-58-358 358H120Zm80-80h78l332-334-76-76-334 332v78Zm447-410 96-96-37-37-96 96 37 37Zm0 0-37-37 37 37Z"></path></svg>');
-
-function Cg(b, l) {
-  let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = Ck();
-  Qt(C, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ..._
-  })), H(b, C)
-}
-var Sk = _r('<svg><path d="m247-904 57-56 343 343q23 23 23 57t-23 57L457-313q-23 23-57 23t-57-23L153-503q-23-23-23-57t23-57l190-191-96-96Zm153 153L209-560h382L400-751Zm360 471q-33 0-56.5-23.5T680-360q0-21 12.5-45t27.5-45q9-12 19-25t21-25q11 12 21 25t19 25q15 21 27.5 45t12.5 45q0 33-23.5 56.5T760-280ZM80 0v-160h800V0H80Z"></path></svg>');
-
-function Ev(b, l) {
-  let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = Sk();
-  Qt(C, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ..._
-  })), H(b, C)
-}
-var Pk = _r('<svg><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm240-400v80h80v-80h-80Zm-160 0v80h80v-80h-80Zm80 80v80h80v-80h-80Zm160 0v80h80v-80h-80Zm-320 0v80h80v-80h-80Zm400-80v80h80v80h80v-80h-80v-80h-80ZM280-360v80h-80v80h80v-80h80v80h80v-80h80v80h80v-80h80v80h80v-80h-80v-80h-80v80h-80v-80h-80v80h-80v-80h-80Zm480-160v80-80Zm0 160v80-80Z"></path></svg>'),
-  Ik = _r('<svg><path d="M440-440v-80h80v80h-80Zm-80 80v-80h80v80h-80Zm160 0v-80h80v80h-80Zm80-80v-80h80v80h-80Zm-320 0v-80h80v80h-80Zm-80 320q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm80-80h80v-80h-80v80Zm160 0h80v-80h-80v80Zm320 0v-80 80Zm-560-80h80v-80h80v80h80v-80h80v80h80v-80h80v80h80v-80h-80v-80h80v-320H200v320h80v80h-80v80Zm0 80v-560 560Zm560-240v80-80ZM600-280v80h80v-80h-80Z"></path></svg>');
+var Ck = _r('<svg><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm240-400v80h80v-80h-80Zm-160 0v80h80v-80h-80Zm80 80v80h80v-80h-80Zm160 0v80h80v-80h-80Zm-320 0v80h80v-80h-80Zm400-80v80h80v80h80v-80h-80v-80h-80ZM280-360v80h-80v80h80v-80h80v80h80v-80h80v80h80v-80h80v80h80v-80h-80v-80h-80v80h-80v-80h-80v80h-80v-80h-80Zm480-160v80-80Zm0 160v80-80Z"></path></svg>'),
+  Sk = _r('<svg><path d="M440-440v-80h80v80h-80Zm-80 80v-80h80v80h-80Zm160 0v-80h80v80h-80Zm80-80v-80h80v80h-80Zm-320 0v-80h80v80h-80Zm-80 320q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm80-80h80v-80h-80v80Zm160 0h80v-80h-80v80Zm320 0v-80 80Zm-560-80h80v-80h80v80h80v-80h80v80h80v-80h80v80h80v-80h-80v-80h80v-320H200v320h80v80h-80v80Zm0 80v-560 560Zm560-240v80-80ZM600-280v80h80v-80h-80Z"></path></svg>');
 
 function zv(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy", "filled"]);
@@ -40693,7 +40691,7 @@ function zv(b, l) {
     L = At(C);
   {
     var F = o => {
-        var Z = Pk();
+        var Z = Ck();
         Qt(Z, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
@@ -40702,7 +40700,7 @@ function zv(b, l) {
         })), H(o, Z)
       },
       T = o => {
-        var Z = Ik();
+        var Z = Sk();
         Qt(Z, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
@@ -40716,9 +40714,33 @@ function zv(b, l) {
   }
   H(b, C)
 }
-var Mk = _r('<svg><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"></path></svg>');
+var Pk = _r('<svg><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"></path></svg>');
 
 function Gf(b, l) {
+  let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
+  var C = Pk();
+  Qt(C, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ..._
+  })), H(b, C)
+}
+var Ik = _r('<svg><path d="M419-80q-28 0-52.5-12T325-126L107-403l19-20q20-21 48-25t52 11l74 45v-328q0-17 11.5-28.5T340-760q17 0 29 11.5t12 28.5v472l-97-60 104 133q6 7 14 11t17 4h221q33 0 56.5-23.5T720-240v-160q0-17-11.5-28.5T680-440H461v-80h219q50 0 85 35t35 85v160q0 66-47 113T640-80H419ZM167-620q-13-22-20-47.5t-7-52.5q0-83 58.5-141.5T340-920q83 0 141.5 58.5T540-720q0 27-7 52.5T513-620l-69-40q8-14 12-28.5t4-31.5q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 17 4 31.5t12 28.5l-69 40Zm335 280Z"></path></svg>');
+
+function Lv(b, l) {
+  let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
+  var C = Ik();
+  Qt(C, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ..._
+  })), H(b, C)
+}
+var Mk = _r('<svg><path d="m356-160-56-56 180-180 180 180-56 56-124-124-124 124Zm124-404L300-744l56-56 124 124 124-124 56 56-180 180Z"></path></svg>');
+
+function Ak(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
   var C = Mk();
   Qt(C, () => ({
@@ -40728,19 +40750,7 @@ function Gf(b, l) {
     ..._
   })), H(b, C)
 }
-var Ak = _r('<svg><path d="M419-80q-28 0-52.5-12T325-126L107-403l19-20q20-21 48-25t52 11l74 45v-328q0-17 11.5-28.5T340-760q17 0 29 11.5t12 28.5v472l-97-60 104 133q6 7 14 11t17 4h221q33 0 56.5-23.5T720-240v-160q0-17-11.5-28.5T680-440H461v-80h219q50 0 85 35t35 85v160q0 66-47 113T640-80H419ZM167-620q-13-22-20-47.5t-7-52.5q0-83 58.5-141.5T340-920q83 0 141.5 58.5T540-720q0 27-7 52.5T513-620l-69-40q8-14 12-28.5t4-31.5q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 17 4 31.5t12 28.5l-69 40Zm335 280Z"></path></svg>');
-
-function Lv(b, l) {
-  let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = Ak();
-  Qt(C, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ..._
-  })), H(b, C)
-}
-var kk = _r('<svg><path d="m356-160-56-56 180-180 180 180-56 56-124-124-124 124Zm124-404L300-744l56-56 124 124 124-124 56 56-180 180Z"></path></svg>');
+var kk = _r('<svg><path d="M480-120 300-300l58-58 122 122 122-122 58 58-180 180ZM358-598l-58-58 180-180 180 180-58 58-122-122-122 122Z"></path></svg>');
 
 function Ek(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
@@ -40752,52 +40762,40 @@ function Ek(b, l) {
     ..._
   })), H(b, C)
 }
-var zk = _r('<svg><path d="M480-120 300-300l58-58 122 122 122-122 58 58-180 180ZM358-598l-58-58 180-180 180 180-58 58-122-122-122 122Z"></path></svg>');
-
-function Lk(b, l) {
-  let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = zk();
-  Qt(C, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ..._
-  })), H(b, C)
-}
-var Dk = Ie("<!> ", 1),
-  Rk = Ie("<!> ", 1),
+var zk = Ie("<!> ", 1),
+  Lk = Ie("<!> ", 1),
+  Dk = Ie("<!> ", 1),
+  Rk = Ie('<!><b> </b> <span class="touchscreen:hidden"> <span class="kbd kbd-xs text-base-content rounded-md"> </span></span> ', 1),
   Bk = Ie("<!> ", 1),
-  Fk = Ie('<!><b> </b> <span class="touchscreen:hidden"> <span class="kbd kbd-xs text-base-content rounded-md"> </span></span> ', 1),
-  Ok = Ie("<!> ", 1),
-  Nk = Ie("<!> <!>", 1),
-  qk = (b, l) => oe(l, !x(l)),
-  jk = (b, l) => {
+  Fk = Ie("<!> <!>", 1),
+  Ok = (b, l) => oe(l, !x(l)),
+  Nk = (b, l) => {
     oe(l, "colorpicker")
   },
-  Vk = (b, l) => {
+  qk = (b, l) => {
     l(!l())
   },
-  Uk = (b, l) => {
+  jk = (b, l) => {
     oe(l, "cleararea")
   },
-  Zk = Ie('<div class="tooltip ml-1"><div class="tooltip-content"> <kbd class="kbd kbd-xs text-base-content touchscreen:hidden ml-0.5 rounded-md">C</kbd></div> <button><!></button></div>'),
-  $k = (b, l) => {
+  Vk = Ie('<div class="tooltip ml-1"><div class="tooltip-content"> <kbd class="kbd kbd-xs text-base-content touchscreen:hidden ml-0.5 rounded-md">C</kbd></div> <button><!></button></div>'),
+  Uk = (b, l) => {
     pa.smallPlop.play(), l()
   },
-  Gk = (b, l, _) => {
+  Zk = (b, l, _) => {
     l(x(_).idx)
   },
-  Hk = Ie('<!> <span class="bg-base-100 translate-1/2 absolute bottom-0 right-0 flex size-5 items-center justify-center rounded-full max-sm:hidden"><!></span>', 1),
-  Wk = Ie("<div><button><!></button></div>"),
-  Xk = (b, l) => {
+  $k = Ie('<!> <span class="bg-base-100 translate-1/2 absolute bottom-0 right-0 flex size-5 items-center justify-center rounded-full max-sm:hidden"><!></span>', 1),
+  Gk = Ie("<div><button><!></button></div>"),
+  Hk = (b, l) => {
     oe(l, !x(l))
   },
-  Kk = (b, l) => {
+  Wk = (b, l) => {
     oe(l, x(l) === "eraser" ? "pencil" : "eraser", !0)
   },
-  Yk = Ie('<div class="relative px-3"><!> <div class="flex items-center gap-1.5"><button class="btn btn-circle btn-sm btn-soft"><!></button> <div class="flex grow items-center gap-1"><h2 class="select-none text-xl"> <!></h2> <div class="tooltip ml-1"><div class="tooltip-content"> <kbd class="kbd kbd-xs text-base-content touchscreen:hidden ml-0.5 rounded-md">I</kbd></div> <button><!></button></div> <div class="tooltip"><button title="Toggle art opacity"><!></button></div> <!></div> <button class="btn btn-circle btn-sm"><!></button></div> <div class="mb-4 mt-3"><div></div></div> <div class="relative h-12 sm:h-14"><button class="btn btn-lg btn-square sm:btn-xl absolute bottom-0 left-0 shadow-md"><!></button> <div class="absolute bottom-0 left-1/2 -translate-x-1/2"><!></div> <div class="absolute bottom-0 right-0"><div class="tooltip ml-auto"><div class="tooltip-content not-touchscreen:-translate-x-[10%]"> <kbd class="kbd kbd-xs text-base-content touchscreen:hidden ml-0.5 rounded-md">E</kbd></div> <button><!></button></div></div></div></div> <!>', 1);
+  Xk = Ie('<div class="relative px-3"><!> <div class="flex items-center gap-1.5"><button class="btn btn-circle btn-sm btn-soft"><!></button> <div class="flex grow items-center gap-1"><h2 class="select-none text-xl"> <!></h2> <div class="tooltip ml-1"><div class="tooltip-content"> <kbd class="kbd kbd-xs text-base-content touchscreen:hidden ml-0.5 rounded-md">I</kbd></div> <button><!></button></div> <div class="tooltip"><button title="Toggle art opacity"><!></button></div> <!></div> <button class="btn btn-circle btn-sm"><!></button></div> <div class="mb-4 mt-3"><div></div></div> <div class="relative h-12 sm:h-14"><button class="btn btn-lg btn-square sm:btn-xl absolute bottom-0 left-0 shadow-md"><!></button> <div class="absolute bottom-0 left-1/2 -translate-x-1/2"><!></div> <div class="absolute bottom-0 right-0"><div class="tooltip ml-auto"><div class="tooltip-content not-touchscreen:-translate-x-[10%]"> <kbd class="kbd kbd-xs text-base-content touchscreen:hidden ml-0.5 rounded-md">E</kbd></div> <button><!></button></div></div></div></div> <!>', 1);
 
-function Jk(b, l) {
+function Kk(b, l) {
   Sr(l, !0);
   let _ = zt(l, "screenLocked", 15),
     C = zt(l, "opaquePixelArt", 15);
@@ -40850,7 +40848,7 @@ function Jk(b, l) {
   }), Zr(() => {
     localStorage.setItem(Q, x(F).toString())
   });
-  const te = new sk({
+  const te = new nk({
     map: l.map,
     tileSize: l.tileSize,
     tileZoom: l.tileZoom,
@@ -40986,7 +40984,7 @@ function Jk(b, l) {
       }, mi = cf(zi), Li = o.get(mi), rr = x(ye) - o.size;
       if (!Li && rr < 1) {
         if (ne && (_e || _())) continue;
-        ne = !0, jr.info($T());
+        ne = !0, jr.info(UT());
         continue
       }
       Li && Li.colorIdx === Ke || (pa.plop.play(), qt || l.hidePixelHover(), o.set(mi, zi), te.place(Dr, Ke), l.crosshair.place(Dr), qt = !0, Gt && Z.set(mi, zi))
@@ -41030,7 +41028,7 @@ function Jk(b, l) {
     const li = window.devicePixelRatio,
       fr = Math.floor(Ke.x * li),
       bi = Math.floor(Ke.y * li);
-    l.hidePixelHover(), pM(l.map, fr, bi).then(([Si, zi, mi]) => {
+    l.hidePixelHover(), hM(l.map, fr, bi).then(([Si, zi, mi]) => {
       const Li = gx({
         r: Si,
         g: zi,
@@ -41073,13 +41071,13 @@ function Jk(b, l) {
   }), Zr(() => {
     switch (x(T)) {
       case "pencil":
-        l.map.getCanvas().style.cursor = `url('${nk}') 8 8, default`, l.map.setPaintProperty(l.hoverLayerId, "raster-opacity", .4);
+        l.map.getCanvas().style.cursor = `url('${rk}') 8 8, default`, l.map.setPaintProperty(l.hoverLayerId, "raster-opacity", .4);
         return;
       case "colorpicker":
-        l.map.getCanvas().style.cursor = `url('${rk}') 0 16, default`, l.map.setPaintProperty(l.hoverLayerId, "raster-opacity", 0);
+        l.map.getCanvas().style.cursor = `url('${ek}') 0 16, default`, l.map.setPaintProperty(l.hoverLayerId, "raster-opacity", 0);
         return;
       case "eraser":
-        l.map.getCanvas().style.cursor = `url('${ik}') 2 14, default`, l.map.setPaintProperty(l.hoverLayerId, "raster-opacity", .4);
+        l.map.getCanvas().style.cursor = `url('${tk}') 2 14, default`, l.map.setPaintProperty(l.hoverLayerId, "raster-opacity", .4);
         return
     }
   }), Zr(() => {
@@ -41125,7 +41123,7 @@ function Jk(b, l) {
       const qt = JSON.parse(atob(Mt)),
         Gt = (qt == null ? void 0 : qt.time) ?? 0,
         Dr = 60 * 1e3;
-      (qt == null ? void 0 : qt.userId) !== ((Ke = Dt.data) == null ? void 0 : Ke.id) && Date.now() - Gt < 30 * Dr && !cx && (jr.error(WT()), xt())
+      (qt == null ? void 0 : qt.userId) !== ((Ke = Dt.data) == null ? void 0 : Ke.id) && Date.now() - Gt < 30 * Dr && !cx && (jr.error(GT()), xt())
     } catch (qt) {
       console.error(qt)
     }
@@ -41139,20 +41137,20 @@ function Jk(b, l) {
     }));
     localStorage.setItem(wt, Mt)
   }
-  var Lt = Yk(),
+  var Lt = Xk(),
     Xt = At(Lt),
     Yt = k(Xt);
   {
     var nr = Mt => {
         Kl(Mt, {
           children: (Ke, qt) => {
-            var Gt = Dk(),
+            var Gt = zk(),
               Dr = At(Gt);
             Ev(Dr, {
               class: "inline size-5"
             });
             var Gr = V(Dr);
-            Ge(li => fe(Gr, ` ${li??""}`), [() => uw()]), H(Ke, Gt)
+            Ge(li => fe(Gr, ` ${li??""}`), [() => lw()]), H(Ke, Gt)
           },
           $$slots: {
             default: !0
@@ -41167,13 +41165,13 @@ function Jk(b, l) {
               Kl(Gr, {
                 class: "not-touchscreen:hidden",
                 children: (li, fr) => {
-                  var bi = Rk(),
+                  var bi = Lk(),
                     Si = At(bi);
                   lg(Si, {
                     class: "inline size-5"
                   });
                   var zi = V(Si);
-                  Ge(mi => fe(zi, ` ${mi??""}`), [() => pw()]), H(li, bi)
+                  Ge(mi => fe(zi, ` ${mi??""}`), [() => hw()]), H(li, bi)
                 },
                 $$slots: {
                   default: !0
@@ -41188,13 +41186,13 @@ function Jk(b, l) {
                     Kl(zi, {
                       class: "not-touchscreen:hidden",
                       children: (mi, Li) => {
-                        var rr = Bk(),
+                        var rr = Dk(),
                           yi = At(rr);
                         Cg(yi, {
                           class: "inline size-5"
                         });
                         var Qr = V(yi, 1, !0);
-                        Ge(Yr => fe(Qr, Yr), [() => _w()]), H(mi, rr)
+                        Ge(Yr => fe(Qr, Yr), [() => fw()]), H(mi, rr)
                       },
                       $$slots: {
                         default: !0
@@ -41209,7 +41207,7 @@ function Jk(b, l) {
                           Kl(Qr, {
                             class: "touchscreen:hidden",
                             children: (Yr, la) => {
-                              var sn = Fk(),
+                              var sn = Rk(),
                                 ta = At(sn);
                               Lv(ta, {
                                 class: "inline size-5"
@@ -41225,7 +41223,7 @@ function Jk(b, l) {
                               var jt = V(Gn);
                               Ge((yr, _i, Di, $i) => {
                                 fe(Xi, yr), fe(Hn, `${_i??""} `), fe(gt, Di), fe(jt, ` ${$i??""}`)
-                              }, [() => yw(), () => Sw(), () => ww(), () => Mw()]), H(Yr, sn)
+                              }, [() => gw(), () => Tw(), () => xw(), () => Pw()]), H(Yr, sn)
                             },
                             $$slots: {
                               default: !0
@@ -41240,13 +41238,13 @@ function Jk(b, l) {
                                 Kl(Fi, {
                                   class: "bg-warning text-warning-content animate-bounce",
                                   children: (Xi, Gn) => {
-                                    var Hn = Ok(),
+                                    var Hn = Bk(),
                                       Ln = At(Hn);
                                     fh(Ln, {
                                       class: "inline size-5"
                                     });
                                     var gt = V(Ln);
-                                    Ge(jt => fe(gt, ` ${jt??""}`), [() => Ew()]), H(Xi, Hn)
+                                    Ge(jt => fe(gt, ` ${jt??""}`), [() => Aw()]), H(Xi, Hn)
                                   },
                                   $$slots: {
                                     default: !0
@@ -41261,7 +41259,7 @@ function Jk(b, l) {
                                     Kl(Ln, {
                                       class: "bg-warning text-warning-content animate-bounce",
                                       children: (gt, jt) => {
-                                        var yr = Nk(),
+                                        var yr = Fk(),
                                           _i = At(yr);
                                         Tg(_i, {
                                           class: "inline size-5"
@@ -41270,7 +41268,7 @@ function Jk(b, l) {
                                         {
                                           var $i = Cr => {
                                               var gn = Fn();
-                                              Ge(tr => fe(gn, tr), [() => uP()]), H(Cr, gn)
+                                              Ge(tr => fe(gn, tr), [() => lP()]), H(Cr, gn)
                                             },
                                             Mi = Cr => {
                                               var gn = Jt(),
@@ -41278,7 +41276,7 @@ function Jk(b, l) {
                                               {
                                                 var Ht = ei => {
                                                   var ri = Fn();
-                                                  Ge(gi => fe(ri, gi), [() => pP()]), H(ei, ri)
+                                                  Ge(gi => fe(ri, gi), [() => hP()]), H(ei, ri)
                                                 };
                                                 Ve(tr, ei => {
                                                   x(ke).length === 1 && ei(Ht)
@@ -41333,16 +41331,16 @@ function Jk(b, l) {
   }
   var Ft = V(Yt, 2),
     dr = k(Ft);
-  dr.__click = [qk, pe];
+  dr.__click = [Ok, pe];
   var gr = k(dr);
   {
     var Ir = Mt => {
-        ck(Mt, {
+        ok(Mt, {
           class: "size-4"
         })
       },
       qr = Mt => {
-        hk(Mt, {
+        ck(Mt, {
           class: "size-4"
         })
       };
@@ -41368,7 +41366,7 @@ function Jk(b, l) {
     O = k(ce);
   fi(), A(ce);
   var j = V(ce, 2);
-  j.__click = [jk, T];
+  j.__click = [Nk, T];
   var G = k(j);
   Cg(G, {
     class: "size-4.5"
@@ -41376,7 +41374,7 @@ function Jk(b, l) {
   var K = V(Nr, 2),
     le = k(K);
   let ve;
-  le.__click = [Vk, C];
+  le.__click = [qk, C];
   var Le = k(le);
   {
     let Mt = lt(() => !C());
@@ -41391,12 +41389,12 @@ function Jk(b, l) {
   var Ce = V(K, 2);
   {
     var Ze = Mt => {
-      var Ke = Zk(),
+      var Ke = Vk(),
         qt = k(Ke),
         Gt = k(qt);
       fi(), A(qt);
       var Dr = V(qt, 2);
-      Dr.__click = [Uk, T];
+      Dr.__click = [jk, T];
       var Gr = k(Dr);
       Tg(Gr, {
         class: "size-4.5"
@@ -41406,7 +41404,7 @@ function Jk(b, l) {
           "btn-ghost": !x(ft),
           "btn-primary": x(ft)
         }))
-      }, [() => oP()]), H(Mt, Ke)
+      }, [() => aP()]), H(Mt, Ke)
     };
     Ve(Ce, Mt => {
       x(ht) && Mt(Ze)
@@ -41414,7 +41412,7 @@ function Jk(b, l) {
   }
   A(ur);
   var ot = V(ur, 2);
-  ot.__click = [$k, xt];
+  ot.__click = [Uk, xt];
   var Ye = k(ot);
   fc(Ye, {
     class: "size-4"
@@ -41433,13 +41431,13 @@ function Jk(b, l) {
       Dr = lt(() => x(F) === x(Ke).idx && x(Oe)),
       Gr = lt(() => x(Ke).idx === 0),
       li = lt(() => Dt.hasColor(x(Ke).idx));
-    var fr = Wk(),
+    var fr = Gk(),
       bi = k(fr);
-    bi.__click = [Gk, It, Ke];
+    bi.__click = [Zk, It, Ke];
     var Si = k(bi);
     {
       var zi = mi => {
-        var Li = Hk(),
+        var Li = $k(),
           rr = At(Li);
         Gf(rr, {
           class: "center-absolute absolute size-4 opacity-30 sm:hidden sm:size-6"
@@ -41470,23 +41468,23 @@ function Jk(b, l) {
         "border-base-300": !x(Dr) && x(Gr),
         "border-base-content/20": !x(Dr) && !x(Gr),
         "max-sm:h-6 max-sm:rounded-md": x(Qe)
-      })), uc(bi, x(Gr) ? `background-image: url(${ak}); background-size: cover; image-rendering: pixelated;` : `background: rgb(${x(Gt).r} ${x(Gt).g} ${x(Gt).b})`), zr(bi, "aria-label", x(Ke).name), zr(bi, "id", `color-${x(Ke).idx??""}`)
+      })), uc(bi, x(Gr) ? `background-image: url(${ik}); background-size: cover; image-rendering: pixelated;` : `background: rgb(${x(Gt).r} ${x(Gt).g} ${x(Gt).b})`), zr(bi, "aria-label", x(Ke).name), zr(bi, "id", `color-${x(Ke).idx??""}`)
     }), an("focus", bi, () => {
       x(li) && (oe(F, x(Ke).idx, !0), oe(T, "pencil"))
     }), H(Mt, fr)
   }), A(xe), A(Ot);
   var kt = V(Ot, 2),
     Pt = k(kt);
-  Pt.__click = [Xk, Qe];
+  Pt.__click = [Hk, Qe];
   var Et = k(Pt);
   {
     var Wt = Mt => {
-        Ek(Mt, {
+        Ak(Mt, {
           class: "size-5"
         })
       },
       Lr = Mt => {
-        Lk(Mt, {
+        Ek(Mt, {
           class: "size-5"
         })
       };
@@ -41541,7 +41539,7 @@ function Jk(b, l) {
   fi(), A(vr);
   var Tt = V(vr, 2);
   let Ci;
-  Tt.__click = [Kk, T];
+  Tt.__click = [Wk, T];
   var di = k(Tt);
   lg(di, {
     class: "size-5",
@@ -41550,7 +41548,7 @@ function Jk(b, l) {
     }
   }), A(Tt), A(mr), A($r), A(kt), A(Xt), ps(Xt, Mt => oe(Be, Mt), () => x(Be));
   var Pn = V(Xt, 2);
-  wk(Pn, {
+  xk(Pn, {
     get colorIdx() {
       return x(ct)
     },
@@ -41570,7 +41568,7 @@ function Jk(b, l) {
       "xl:grid-cols-32 sm:grid-cols-16 gap-0.5 sm:gap-1": x(Qe),
       "gap-1": !x(Qe)
     })), fe(ai, `${Dr??""} `), Ci = Or(Tt, 1, "btn btn-lg btn-square sm:btn-xl shadow-md", null, Ci, Gr), Tt.disabled = x(W) === 0
-  }, [() => Dw(), () => Fw(), () => Ug(), () => ({
+  }, [() => zw(), () => Rw(), () => Ug(), () => ({
     "text-primary": !C()
   }), () => ux(), () => ({
     "btn-primary": x(Ee)
@@ -41581,13 +41579,13 @@ Wi(["click"]);
 function dm(...b) {
   return Fg(Tu(b))
 }
-var Qk = Ie("<div><!></div>");
+var Yk = Ie("<div><!></div>");
 
-function eE(b, l) {
+function Jk(b, l) {
   Sr(l, !0);
   let _ = zt(l, "ref", 15, null),
     C = er(l, ["$$slots", "$$events", "$$legacy", "ref", "class", "children"]);
-  var L = Qk();
+  var L = Yk();
   Qt(L, T => ({
     class: T,
     ...C
@@ -41595,10 +41593,10 @@ function eE(b, l) {
   var F = k(L);
   Ji(F, () => l.children ?? fa), A(L), ps(L, T => _(T), () => _()), H(b, L), Pr()
 }
-var tE = Ie('<div class="pointer-events-none absolute inset-0 flex items-center justify-center"><div class="animate-caret-blink bg-base-content/80 h-4 w-px duration-1000"></div></div>'),
-  rE = Ie(" <!>", 1);
+var Qk = Ie('<div class="pointer-events-none absolute inset-0 flex items-center justify-center"><div class="animate-caret-blink bg-base-content/80 h-4 w-px duration-1000"></div></div>'),
+  eE = Ie(" <!>", 1);
 
-function iE(b, l) {
+function tE(b, l) {
   Sr(l, !0);
   let _ = zt(l, "ref", 15, null),
     C = er(l, ["$$slots", "$$events", "$$legacy", "ref", "cell", "class"]);
@@ -41606,7 +41604,7 @@ function iE(b, l) {
     F = At(L);
   {
     let T = lt(() => dm("border-input relative flex size-12 items-center justify-center border-y border-r text-xl transition-all first:rounded-l-md first:border-l last:rounded-r-md", l.cell.isActive && "ring-base-content/40 z-10 ring-2", l.class));
-    _n(F, () => Y6, (o, Z) => {
+    _n(F, () => X6, (o, Z) => {
       Z(o, lo({
         get cell() {
           return l.cell
@@ -41623,12 +41621,12 @@ function iE(b, l) {
         },
         children: (W, ie) => {
           fi();
-          var pe = rE(),
+          var pe = eE(),
             ye = At(pe),
             X = V(ye);
           {
             var Se = we => {
-              var Re = tE();
+              var Re = Qk();
               H(we, Re)
             };
             Ve(X, we => {
@@ -41646,7 +41644,7 @@ function iE(b, l) {
   H(b, L), Pr()
 }
 
-function nE(b, l) {
+function rE(b, l) {
   Sr(l, !0);
   let _ = zt(l, "ref", 15, null),
     C = zt(l, "value", 15, ""),
@@ -41655,7 +41653,7 @@ function nE(b, l) {
     T = At(F);
   {
     let o = lt(() => dm("flex items-center gap-2 has-[:disabled]:opacity-50 [&_input]:disabled:cursor-not-allowed", l.class));
-    _n(T, () => X6, (Z, W) => {
+    _n(T, () => H6, (Z, W) => {
       W(Z, lo({
         get class() {
           return x(o)
@@ -41683,7 +41681,7 @@ var gf = {
   },
   Sg;
 
-function aE() {
+function iE() {
   return Sg || (Sg = 1, (function(b) {
     (function(l) {
       b.exports ? b.exports = l() : window.intlTelInput = l()
@@ -43072,18 +43070,18 @@ function aE() {
     })
   })(gf)), gf.exports
 }
-var sE = aE();
-const oE = nm(sE);
-var lE = Ie('<div><span class="loading loading-spinner loading-xl"></span></div>'),
-  cE = Ie('<span class="w-8"> </span>'),
-  uE = Ie('<div class="text-center"><h2 class="text-2xl font-bold"> </h2> <p class="text-base-content/80 mt-0.5 text-sm"> </p></div> <form class="mt-8 flex w-full flex-col gap-3"><input class="input pl-12! w-full" type="tel" id="phone"/> <button class="btn btn-primary w-full"> <!></button></form>', 1),
-  hE = async (b, l, _) => {
+var nE = iE();
+const aE = nm(nE);
+var sE = Ie('<div><span class="loading loading-spinner loading-xl"></span></div>'),
+  oE = Ie('<span class="w-8"> </span>'),
+  lE = Ie('<div class="text-center"><h2 class="text-2xl font-bold"> </h2> <p class="text-base-content/80 mt-0.5 text-sm"> </p></div> <form class="mt-8 flex w-full flex-col gap-3"><input class="input pl-12! w-full" type="tel" id="phone"/> <button class="btn btn-primary w-full"> <!></button></form>', 1),
+  cE = async (b, l, _) => {
     await l(x(_))
-  }, dE = Ie('<span class="w-8"> </span>'), pE = (b, l) => {
+  }, uE = Ie('<span class="w-8"> </span>'), hE = (b, l) => {
     oe(l, "")
-  }, fE = Ie('<div class="text-center"><h2 class="text-2xl font-bold"> </h2> <p class="mt-0.5 text-sm"> </p></div> <div class="mt-4"><!></div> <div class="mt-3 flex flex-col items-center gap-1"><button class="btn btn-ghost w-max"> <!></button> <button class="text-primary cursor-pointer text-xs"> </button></div>', 1), mE = Ie('<div class="flex h-full w-full flex-col items-center justify-center"><!></div>');
+  }, dE = Ie('<div class="text-center"><h2 class="text-2xl font-bold"> </h2> <p class="mt-0.5 text-sm"> </p></div> <div class="mt-4"><!></div> <div class="mt-3 flex flex-col items-center gap-1"><button class="btn btn-ghost w-max"> <!></button> <button class="text-primary cursor-pointer text-xs"> </button></div>', 1), pE = Ie('<div class="flex h-full w-full flex-col items-center justify-center"><!></div>');
 
-function _E(b, l) {
+function fE(b, l) {
   Sr(l, !0);
   let _ = nt(!0),
     C = nt(""),
@@ -43120,7 +43118,7 @@ function _E(b, l) {
     try {
       oe(F, !0);
       const ke = await ni.sendOtp(Re);
-      jr.info(`${YT()} ${ke.phone}`), oe(C, ke.phone, !0), oe(L, ke.cooldownMs, !0), localStorage.setItem(x(ie), x(C))
+      jr.info(`${XT()} ${ke.phone}`), oe(C, ke.phone, !0), oe(L, ke.cooldownMs, !0), localStorage.setItem(x(ie), x(C))
     } catch (ke) {
       jr.error(ke.message)
     } finally {
@@ -43130,7 +43128,7 @@ function _E(b, l) {
   Zr(() => {
     x(Z).length === 6 && (oe(o, !0), (async () => {
       try {
-        await ni.verifyOtp(x(Z)), await Dt.refresh(), jr.success(eC()), localStorage.removeItem(x(ie)), l.onsuccess(x(C))
+        await ni.verifyOtp(x(Z)), await Dt.refresh(), jr.success(JT()), localStorage.removeItem(x(ie)), l.onsuccess(x(C))
       } catch (Re) {
         jr.error(Re.message)
       } finally {
@@ -43138,11 +43136,11 @@ function _E(b, l) {
       }
     })())
   });
-  var ye = mE(),
+  var ye = pE(),
     X = k(ye);
   {
     var Se = Re => {
-        var ke = lE();
+        var ke = sE();
         H(Re, ke)
       },
       we = Re => {
@@ -43150,7 +43148,7 @@ function _E(b, l) {
           Oe = At(ke);
         {
           var Ee = ft => {
-              var ht = uE(),
+              var ht = lE(),
                 Xe = At(ht),
                 ct = k(Xe),
                 Je = k(ct, !0);
@@ -43160,7 +43158,7 @@ function _E(b, l) {
               A(Be), A(Xe);
               var it = V(Xe, 2),
                 Qe = k(it);
-              On(Qe, () => _e => (oe(W, oE(_e, {
+              On(Qe, () => _e => (oe(W, aE(_e, {
                 strictMode: !0,
                 initialCountry: "br",
                 loadUtils: () => xx(() => import("../chunks/1FgtjJRR.js"), [], import.meta.url),
@@ -43175,7 +43173,7 @@ function _E(b, l) {
                 Q = V(vt);
               {
                 var te = _e => {
-                  var ne = cE(),
+                  var ne = oE(),
                     Pe = k(ne);
                   A(ne), Ge(Me => fe(Pe, `(${Me??""})`), [() => zd(x(L))]), H(_e, ne)
                 };
@@ -43185,11 +43183,11 @@ function _E(b, l) {
               }
               A(Ae), A(it), Ge((_e, ne, Pe) => {
                 fe(Je, _e), fe(st, ne), Ae.disabled = x(T), fe(vt, `${Pe??""} `)
-              }, [() => kC(), () => LC(), () => BC()]), an("submit", it, async () => {
+              }, [() => MC(), () => EC(), () => DC()]), an("submit", it, async () => {
                 var ne;
                 if (x(T)) return;
                 if (!((ne = x(W)) != null && ne.isValidNumber())) {
-                  jr.error(iC());
+                  jr.error(tC());
                   return
                 }
                 const _e = x(W).getNumber();
@@ -43197,7 +43195,7 @@ function _E(b, l) {
               }), H(ft, ht)
             },
             Ne = ft => {
-              var ht = fE(),
+              var ht = dE(),
                 Xe = At(ht),
                 ct = k(Xe),
                 Je = k(ct, !0);
@@ -43212,7 +43210,7 @@ function _E(b, l) {
                   let Ct = () => We == null ? void 0 : We().cells;
                   var _t = Jt(),
                     xt = At(_t);
-                  _n(xt, () => eE, (tt, pt) => {
+                  _n(xt, () => Jk, (tt, pt) => {
                     pt(tt, {
                       class: "border-primary",
                       children: (It, ut) => {
@@ -43221,7 +43219,7 @@ function _E(b, l) {
                         nn(wt, 16, Ct, dt => dt, (dt, Lt) => {
                           var Xt = Jt(),
                             Yt = At(Xt);
-                          _n(Yt, () => iE, (nr, ar) => {
+                          _n(Yt, () => tE, (nr, ar) => {
                             ar(nr, {
                               get cell() {
                                 return Lt
@@ -43237,7 +43235,7 @@ function _E(b, l) {
                     })
                   }), H(at, _t)
                 };
-                _n(Qe, () => nE, (at, We) => {
+                _n(Qe, () => rE, (at, We) => {
                   We(at, {
                     maxlength: 6,
                     class: "mx-auto w-max",
@@ -43260,12 +43258,12 @@ function _E(b, l) {
               A(it);
               var Ae = V(it, 2),
                 vt = k(Ae);
-              vt.__click = [hE, pe, C];
+              vt.__click = [cE, pe, C];
               var Q = k(vt),
                 te = V(Q);
               {
                 var _e = Me => {
-                  var at = dE(),
+                  var at = uE(),
                     We = k(at);
                   A(at), Ge(Ct => fe(We, `(${Ct??""})`), [() => zd(x(L))]), H(Me, at)
                 };
@@ -43275,11 +43273,11 @@ function _E(b, l) {
               }
               A(vt);
               var ne = V(vt, 2);
-              ne.__click = [pE, C];
+              ne.__click = [hE, C];
               var Pe = k(ne, !0);
               A(ne), A(Ae), Ge((Me, at, We, Ct) => {
                 fe(Je, Me), fe(st, `${at??""} ${x(C)??""}`), vt.disabled = x(T), fe(Q, `${We??""} `), fe(Pe, Ct)
-              }, [() => NC(), () => VC(), () => $C(), () => WC()]), H(ft, ht)
+              }, [() => FC(), () => qC(), () => UC(), () => GC()]), H(ft, ht)
             };
           Ve(Oe, ft => {
             x(C) ? ft(Ne, !1) : ft(Ee)
@@ -43294,17 +43292,17 @@ function _E(b, l) {
   A(ye), H(b, ye), Pr()
 }
 Wi(["click"]);
-var gE = Ie('<dialog class="modal"><div class="modal-box h-72 max-w-sm"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <!></div></dialog>');
+var mE = Ie('<dialog class="modal"><div class="modal-box h-72 max-w-sm"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <!></div></dialog>');
 
-function vE(b, l) {
+function _E(b, l) {
   Sr(l, !0);
   let _ = zt(l, "open", 15);
-  var C = gE(),
+  var C = mE(),
     L = k(C),
     F = V(k(L), 2);
   {
     var T = o => {
-      _E(o, {
+      fE(o, {
         onsuccess: () => _(!1)
       })
     };
@@ -43318,39 +43316,39 @@ function vE(b, l) {
     })
   }), an("close", C, () => _(!1)), H(b, C), Pr()
 }
-var yE = (b, l) => {
+var gE = (b, l) => {
     l()
   },
-  xE = Ie('<span class="center-absolute loading loading-spinner absolute"></span>'),
-  bE = Ie('<button type="button" class="relative hover:brightness-95 disabled:opacity-50"><!> <!></button>'),
-  wE = (b, l, _) => {
+  vE = Ie('<span class="center-absolute loading loading-spinner absolute"></span>'),
+  yE = Ie('<button type="button" class="relative hover:brightness-95 disabled:opacity-50"><!> <!></button>'),
+  xE = (b, l, _) => {
     l(x(_).id)
   },
-  TE = Ie('<span class="center-absolute loading loading-spinner absolute"></span>'),
-  CE = Ie('<button type="button" class="relative hover:brightness-95 disabled:opacity-50"><!> <!></button>'),
-  SE = Ie('<div><div class="text-base-content/80 text-sm"> </div> <div class="mt-2 grid grid-cols-3 gap-2"><!> <!></div></div>'),
-  PE = (b, l) => {
+  bE = Ie('<span class="center-absolute loading loading-spinner absolute"></span>'),
+  wE = Ie('<button type="button" class="relative hover:brightness-95 disabled:opacity-50"><!> <!></button>'),
+  TE = Ie('<div><div class="text-base-content/80 text-sm"> </div> <div class="mt-2 grid grid-cols-3 gap-2"><!> <!></div></div>'),
+  CE = (b, l) => {
     var _;
     (_ = x(l)) == null || _.show()
   },
-  IE = (b, l) => {
+  SE = (b, l) => {
     l(!1)
   },
-  ME = (b, l) => {
+  PE = (b, l) => {
     var _;
     (_ = x(l)) == null || _.close()
   },
-  AE = async (b, l) => {
+  IE = async (b, l) => {
     try {
-      oe(l, !0), await ni.deleteMe(), jr.warning(vC()), await Dt.logout()
+      oe(l, !0), await ni.deleteMe(), jr.warning(_C()), await Dt.logout()
     } catch (_) {
       jr.error(_.message)
     } finally {
       oe(l, !1)
     }
-  }, kE = Ie('<dialog class="modal"><div class="modal-box"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <h3 class="flex items-center gap-1.5 text-lg font-bold"> </h3> <form class="mt-3 w-full"><div class="flex flex-col gap-6 sm:flex-row"><div class="sm:min-w-34 flex items-center justify-center gap-6 sm:flex-col sm:gap-3"><div class="relative w-max"><!> <a class="tooltip btn btn-circle tooltip-right absolute -bottom-1 -right-1 max-sm:overflow-x-hidden" href="/profile-picture"><!></a></div> <!></div> <div class="flex w-full flex-col gap-3"><!> <!> <label class="label text-sm"><input class="checkbox checkbox-xs" type="checkbox"/> </label></div></div> <div class="mt-4 flex w-full items-center justify-between"><button type="button" class="btn btn-error btn-soft btn-sm w-max"> </button> <div class="flex gap-2"><button class="btn btn-soft" type="button"> </button> <button class="btn btn-primary" type="submit"> </button></div></div></form></div></dialog> <dialog class="modal"><div class="modal-box"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <h3 class="flex items-center gap-1.5 text-lg font-bold"> </h3> <p class="mt-4"> </p> <div class="mt-4 flex justify-end gap-2"><button class="btn btn-soft"> </button> <button class="btn btn-error"> </button></div></div> <form method="dialog" class="modal-backdrop"><button> </button></form></dialog>', 1);
+  }, ME = Ie('<dialog class="modal"><div class="modal-box"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <h3 class="flex items-center gap-1.5 text-lg font-bold"> </h3> <form class="mt-3 w-full"><div class="flex flex-col gap-6 sm:flex-row"><div class="sm:min-w-34 flex items-center justify-center gap-6 sm:flex-col sm:gap-3"><div class="relative w-max"><!> <a class="tooltip btn btn-circle tooltip-right absolute -bottom-1 -right-1 max-sm:overflow-x-hidden" href="/profile-picture"><!></a></div> <!></div> <div class="flex w-full flex-col gap-3"><!> <!> <label class="label text-sm"><input class="checkbox checkbox-xs" type="checkbox"/> </label></div></div> <div class="mt-4 flex w-full items-center justify-between"><button type="button" class="btn btn-error btn-soft btn-sm w-max"> </button> <div class="flex gap-2"><button class="btn btn-soft" type="button"> </button> <button class="btn btn-primary" type="submit"> </button></div></div></form></div></dialog> <dialog class="modal"><div class="modal-box"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <h3 class="flex items-center gap-1.5 text-lg font-bold"> </h3> <p class="mt-4"> </p> <div class="mt-4 flex justify-end gap-2"><button class="btn btn-soft"> </button> <button class="btn btn-error"> </button></div></div> <form method="dialog" class="modal-backdrop"><button> </button></form></dialog>', 1);
 
-function EE(b, l) {
+function AE(b, l) {
   Sr(l, !0);
   let _ = zt(l, "open", 15),
     C = nt(zn(l.userData.name)),
@@ -43384,7 +43382,7 @@ function EE(b, l) {
       oe(pe, !1)
     }
   }
-  var X = kE(),
+  var X = ME(),
     Se = At(X),
     we = k(Se),
     Re = V(k(we), 2),
@@ -43412,7 +43410,7 @@ function EE(b, l) {
   var Je = V(ft, 2);
   {
     var Be = Ft => {
-      var dr = SE(),
+      var dr = TE(),
         gr = k(dr),
         Ir = k(gr, !0);
       A(gr);
@@ -43420,8 +43418,8 @@ function EE(b, l) {
         ur = k(qr);
       {
         var Mr = kr => {
-          var Nr = bE();
-          Nr.__click = [yE, ye];
+          var Nr = yE();
+          Nr.__click = [gE, ye];
           var ce = k(Nr);
           es(ce, {
             class: "size-10 border",
@@ -43432,7 +43430,7 @@ function EE(b, l) {
           var O = V(ce, 2);
           {
             var j = G => {
-              var K = xE();
+              var K = vE();
               H(G, K)
             };
             Ve(O, G => {
@@ -43451,8 +43449,8 @@ function EE(b, l) {
           O = At(ce);
         {
           var j = G => {
-            var K = CE();
-            K.__click = [wE, ye, Nr];
+            var K = wE();
+            K.__click = [xE, ye, Nr];
             var le = k(K);
             es(le, {
               class: "size-10 border",
@@ -43466,7 +43464,7 @@ function EE(b, l) {
             var ve = V(le, 2);
             {
               var Le = Ce => {
-                var Ze = TE();
+                var Ze = bE();
                 H(Ce, Ze)
               };
               Ve(ve, Ce => {
@@ -43480,7 +43478,7 @@ function EE(b, l) {
           })
         }
         H(kr, ce)
-      }), A(qr), A(dr), Ge(kr => fe(Ir, kr), [() => jb()]), H(Ft, dr)
+      }), A(qr), A(dr), Ge(kr => fe(Ir, kr), [() => Nb()]), H(Ft, dr)
     };
     Ve(Je, Ft => {
       var dr;
@@ -43518,7 +43516,7 @@ function EE(b, l) {
   }
   var Qe = V(it, 2);
   {
-    let Ft = lt(() => $w());
+    let Ft = lt(() => Uw());
     Tf(Qe, {
       label: "Discord",
       get placeholder() {
@@ -43546,12 +43544,12 @@ function EE(b, l) {
   A(Ae), A(st), A(Ee);
   var te = V(Ee, 2),
     _e = k(te);
-  _e.__click = [PE, o];
+  _e.__click = [CE, o];
   var ne = k(_e, !0);
   A(_e);
   var Pe = V(_e, 2),
     Me = k(Pe);
-  Me.__click = [IE, _];
+  Me.__click = [SE, _];
   var at = k(Me, !0);
   A(Me);
   var We = V(Me, 2),
@@ -43571,11 +43569,11 @@ function EE(b, l) {
   A(It);
   var bt = V(It, 2),
     wt = k(bt);
-  wt.__click = [ME, o];
+  wt.__click = [PE, o];
   var dt = k(wt, !0);
   A(wt);
   var Lt = V(wt, 2);
-  Lt.__click = [AE, T];
+  Lt.__click = [IE, T];
   var Xt = k(Lt, !0);
   A(Lt), A(bt), A(xt);
   var Yt = V(xt, 2),
@@ -43583,7 +43581,7 @@ function EE(b, l) {
     ar = k(nr, !0);
   A(nr), A(Yt), A(_t), ps(_t, Ft => oe(o, Ft), () => x(o)), Ge((Ft, dr, gr, Ir, qr, ur, Mr, Ar, kr, Nr, ce) => {
     fe(ke, Ft), zr(Xe, "data-tip", dr), fe(Q, ` ${gr??""}`), fe(ne, Ir), Me.disabled = x(T), fe(at, qr), We.disabled = x(T), fe(Ct, ur), fe(pt, Mr), fe(ut, Ar), fe(dt, kr), Lt.disabled = x(T), fe(Xt, Nr), fe(ar, ce)
-  }, [() => YC(), () => hx(), () => Zb(), () => ug(), () => tc(), () => Xb(), () => Jb(), () => t2(), () => jd(), () => ug(), () => tc()]), an("close", Se, () => _(!1)), an("submit", Oe, async () => {
+  }, [() => XC(), () => hx(), () => Vb(), () => ug(), () => tc(), () => Hb(), () => Kb(), () => Qb(), () => jd(), () => ug(), () => tc()]), an("close", Se, () => _(!1)), an("submit", Oe, async () => {
     var Ft, dr;
     try {
       if (!((Ft = x(W)) != null && Ft()) || !((dr = x(ie)) != null && dr())) return;
@@ -43591,7 +43589,7 @@ function EE(b, l) {
         name: x(C),
         showLastPixel: x(F),
         discord: x(L)
-      }), Dt.refresh(), jr.success(mC()), _(!1)
+      }), Dt.refresh(), jr.success(pC()), _(!1)
     } catch (gr) {
       jr.error(gr.message)
     } finally {
@@ -43600,9 +43598,21 @@ function EE(b, l) {
   }), dx(vt, () => x(F), Ft => oe(F, Ft)), H(b, X), Pr()
 }
 Wi(["click"]);
-var zE = _r('<svg><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"></path></svg>');
+var kE = _r('<svg><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"></path></svg>');
 
-function LE(b, l) {
+function EE(b, l) {
+  let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
+  var C = kE();
+  Qt(C, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ..._
+  })), H(b, C)
+}
+var zE = _r('<svg><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z"></path></svg>');
+
+function Dv(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
   var C = zE();
   Qt(C, () => ({
@@ -43612,11 +43622,11 @@ function LE(b, l) {
     ..._
   })), H(b, C)
 }
-var DE = _r('<svg><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z"></path></svg>');
+var LE = _r('<svg><path d="M240-80q-50 0-85-35t-35-85v-120h120v-560l60 60 60-60 60 60 60-60 60 60 60-60 60 60 60-60 60 60 60-60v680q0 50-35 85t-85 35H240Zm480-80q17 0 28.5-11.5T760-200v-560H320v440h360v120q0 17 11.5 28.5T720-160ZM360-600v-80h240v80H360Zm0 120v-80h240v80H360Zm320-120q-17 0-28.5-11.5T640-640q0-17 11.5-28.5T680-680q17 0 28.5 11.5T720-640q0 17-11.5 28.5T680-600Zm0 120q-17 0-28.5-11.5T640-520q0-17 11.5-28.5T680-560q17 0 28.5 11.5T720-520q0 17-11.5 28.5T680-480ZM240-160h360v-80H200v40q0 17 11.5 28.5T240-160Zm-40 0v-80 80Z"></path></svg>');
 
-function Dv(b, l) {
+function DE(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = DE();
+  var C = LE();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -43624,23 +43634,11 @@ function Dv(b, l) {
     ..._
   })), H(b, C)
 }
-var RE = _r('<svg><path d="M240-80q-50 0-85-35t-35-85v-120h120v-560l60 60 60-60 60 60 60-60 60 60 60-60 60 60 60-60 60 60 60-60v680q0 50-35 85t-85 35H240Zm480-80q17 0 28.5-11.5T760-200v-560H320v440h360v120q0 17 11.5 28.5T720-160ZM360-600v-80h240v80H360Zm0 120v-80h240v80H360Zm320-120q-17 0-28.5-11.5T640-640q0-17 11.5-28.5T680-680q17 0 28.5 11.5T720-640q0 17-11.5 28.5T680-600Zm0 120q-17 0-28.5-11.5T640-520q0-17 11.5-28.5T680-560q17 0 28.5 11.5T720-520q0 17-11.5 28.5T680-480ZM240-160h360v-80H200v40q0 17 11.5 28.5T240-160Zm-40 0v-80 80Z"></path></svg>');
+var RE = _r('<svg><defs><radialGradient id="snoo-radial-gragient" cx="169.75" cy="92.19" r="50.98" fx="169.75" fy="92.19" gradientTransform="matrix(1 0 0 .87 0 11.64)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#feffff"></stop><stop offset=".4" stop-color="#feffff"></stop><stop offset=".51" stop-color="#f9fcfc"></stop><stop offset=".62" stop-color="#edf3f5"></stop><stop offset=".7" stop-color="#dee9ec"></stop><stop offset=".72" stop-color="#d8e4e8"></stop><stop offset=".76" stop-color="#ccd8df"></stop><stop offset=".8" stop-color="#c8d5dd"></stop><stop offset=".83" stop-color="#ccd6de"></stop><stop offset=".85" stop-color="#d8dbe2"></stop><stop offset=".88" stop-color="#ede3e9"></stop><stop offset=".9" stop-color="#ffebef"></stop></radialGradient><radialGradient xlink:href="#snoo-radial-gragient" id="snoo-radial-gragient-2" cx="47.31" r="50.98" fx="47.31"></radialGradient><radialGradient xlink:href="#snoo-radial-gragient" id="snoo-radial-gragient-3" cx="109.61" cy="85.59" r="153.78" fx="109.61" fy="85.59" gradientTransform="matrix(1 0 0 .7 0 25.56)"></radialGradient><radialGradient id="snoo-radial-gragient-4" cx="-6.01" cy="64.68" r="12.85" fx="-6.01" fy="64.68" gradientTransform="matrix(1.07 0 0 1.55 81.08 27.26)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f60"></stop><stop offset=".5" stop-color="#ff4500"></stop><stop offset=".7" stop-color="#fc4301"></stop><stop offset=".82" stop-color="#f43f07"></stop><stop offset=".92" stop-color="#e53812"></stop><stop offset="1" stop-color="#d4301f"></stop></radialGradient><radialGradient xlink:href="#snoo-radial-gragient-4" id="snoo-radial-gragient-5" cx="-73.55" cy="64.68" r="12.85" fx="-73.55" fy="64.68" gradientTransform="matrix(-1.07 0 0 1.55 62.87 27.26)"></radialGradient><radialGradient id="snoo-radial-gragient-6" cx="107.93" cy="166.96" r="45.3" fx="107.93" fy="166.96" gradientTransform="matrix(1 0 0 .66 0 57.4)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#172e35"></stop><stop offset=".29" stop-color="#0e1c21"></stop><stop offset=".73" stop-color="#030708"></stop><stop offset="1"></stop></radialGradient><radialGradient xlink:href="#snoo-radial-gragient" id="snoo-radial-gragient-7" cx="147.88" cy="32.94" r="39.77" fx="147.88" fy="32.94" gradientTransform="matrix(1 0 0 .98 0 .54)"></radialGradient><radialGradient id="snoo-radial-gragient-8" cx="131.31" cy="73.08" r="32.6" fx="131.31" fy="73.08" gradientUnits="userSpaceOnUse"><stop offset=".48" stop-color="#7a9299"></stop><stop offset=".67" stop-color="#172e35"></stop><stop offset=".75"></stop><stop offset=".82" stop-color="#172e35"></stop></radialGradient></defs><path fill="#ff4500" stroke-width="0" d="M108 0C48.35 0 0 48.35 0 108c0 29.82 12.09 56.82 31.63 76.37l-20.57 20.57C6.98 209.02 9.87 216 15.64 216H108c59.65 0 108-48.35 108-108S167.65 0 108 0Z"></path><circle cx="169.22" cy="106.98" r="25.22" fill="url(#snoo-radial-gragient)" stroke-width="0"></circle><circle cx="46.78" cy="106.98" r="25.22" fill="url(#snoo-radial-gragient-2)" stroke-width="0"></circle><ellipse cx="108.06" cy="128.64" fill="url(#snoo-radial-gragient-3)" stroke-width="0" rx="72" ry="54"></ellipse><path fill="url(#snoo-radial-gragient-4)" stroke-width="0" d="M86.78 123.48c-.42 9.08-6.49 12.38-13.56 12.38s-12.46-4.93-12.04-14.01c.42-9.08 6.49-15.02 13.56-15.02s12.46 7.58 12.04 16.66Z"></path><path fill="url(#snoo-radial-gragient-5)" stroke-width="0" d="M129.35 123.48c.42 9.08 6.49 12.38 13.56 12.38s12.46-4.93 12.04-14.01c-.42-9.08-6.49-15.02-13.56-15.02s-12.46 7.58-12.04 16.66Z"></path><ellipse cx="79.63" cy="116.37" class="snoo-cls-11 svelte-1977t4s" rx="2.8" ry="3.05"></ellipse><ellipse cx="146.21" cy="116.37" class="snoo-cls-11 svelte-1977t4s" rx="2.8" ry="3.05"></ellipse><path fill="url(#snoo-radial-gragient-6)" stroke-width="0" d="M108.06 142.92c-8.76 0-17.16.43-24.92 1.22-1.33.13-2.17 1.51-1.65 2.74 4.35 10.39 14.61 17.69 26.57 17.69s22.23-7.3 26.57-17.69c.52-1.23-.33-2.61-1.65-2.74-7.77-.79-16.16-1.22-24.92-1.22Z"></path><circle cx="147.49" cy="49.43" r="17.87" fill="url(#snoo-radial-gragient-7)" stroke-width="0"></circle><path fill="url(#snoo-radial-gragient-8)" stroke-width="0" d="M107.8 76.92c-2.14 0-3.87-.89-3.87-2.27 0-16.01 13.03-29.04 29.04-29.04 2.14 0 3.87 1.73 3.87 3.87s-1.73 3.87-3.87 3.87c-11.74 0-21.29 9.55-21.29 21.29 0 1.38-1.73 2.27-3.87 2.27Z"></path><path fill="#842123" stroke-width="0" d="M62.82 122.65c.39-8.56 6.08-14.16 12.69-14.16 6.26 0 11.1 6.39 11.28 14.33.17-8.88-5.13-15.99-12.05-15.99s-13.14 6.05-13.56 15.2c-.42 9.15 4.97 13.83 12.04 13.83h.52c-6.44-.16-11.3-4.79-10.91-13.2Zm90.48 0c-.39-8.56-6.08-14.16-12.69-14.16-6.26 0-11.1 6.39-11.28 14.33-.17-8.88 5.13-15.99 12.05-15.99 7.07 0 13.14 6.05 13.56 15.2.42 9.15-4.97 13.83-12.04 13.83h-.52c6.44-.16 11.3-4.79 10.91-13.2Z"></path></svg>');
 
 function BE(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
   var C = RE();
-  Qt(C, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ..._
-  })), H(b, C)
-}
-var FE = _r('<svg><defs><radialGradient id="snoo-radial-gragient" cx="169.75" cy="92.19" r="50.98" fx="169.75" fy="92.19" gradientTransform="matrix(1 0 0 .87 0 11.64)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#feffff"></stop><stop offset=".4" stop-color="#feffff"></stop><stop offset=".51" stop-color="#f9fcfc"></stop><stop offset=".62" stop-color="#edf3f5"></stop><stop offset=".7" stop-color="#dee9ec"></stop><stop offset=".72" stop-color="#d8e4e8"></stop><stop offset=".76" stop-color="#ccd8df"></stop><stop offset=".8" stop-color="#c8d5dd"></stop><stop offset=".83" stop-color="#ccd6de"></stop><stop offset=".85" stop-color="#d8dbe2"></stop><stop offset=".88" stop-color="#ede3e9"></stop><stop offset=".9" stop-color="#ffebef"></stop></radialGradient><radialGradient xlink:href="#snoo-radial-gragient" id="snoo-radial-gragient-2" cx="47.31" r="50.98" fx="47.31"></radialGradient><radialGradient xlink:href="#snoo-radial-gragient" id="snoo-radial-gragient-3" cx="109.61" cy="85.59" r="153.78" fx="109.61" fy="85.59" gradientTransform="matrix(1 0 0 .7 0 25.56)"></radialGradient><radialGradient id="snoo-radial-gragient-4" cx="-6.01" cy="64.68" r="12.85" fx="-6.01" fy="64.68" gradientTransform="matrix(1.07 0 0 1.55 81.08 27.26)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f60"></stop><stop offset=".5" stop-color="#ff4500"></stop><stop offset=".7" stop-color="#fc4301"></stop><stop offset=".82" stop-color="#f43f07"></stop><stop offset=".92" stop-color="#e53812"></stop><stop offset="1" stop-color="#d4301f"></stop></radialGradient><radialGradient xlink:href="#snoo-radial-gragient-4" id="snoo-radial-gragient-5" cx="-73.55" cy="64.68" r="12.85" fx="-73.55" fy="64.68" gradientTransform="matrix(-1.07 0 0 1.55 62.87 27.26)"></radialGradient><radialGradient id="snoo-radial-gragient-6" cx="107.93" cy="166.96" r="45.3" fx="107.93" fy="166.96" gradientTransform="matrix(1 0 0 .66 0 57.4)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#172e35"></stop><stop offset=".29" stop-color="#0e1c21"></stop><stop offset=".73" stop-color="#030708"></stop><stop offset="1"></stop></radialGradient><radialGradient xlink:href="#snoo-radial-gragient" id="snoo-radial-gragient-7" cx="147.88" cy="32.94" r="39.77" fx="147.88" fy="32.94" gradientTransform="matrix(1 0 0 .98 0 .54)"></radialGradient><radialGradient id="snoo-radial-gragient-8" cx="131.31" cy="73.08" r="32.6" fx="131.31" fy="73.08" gradientUnits="userSpaceOnUse"><stop offset=".48" stop-color="#7a9299"></stop><stop offset=".67" stop-color="#172e35"></stop><stop offset=".75"></stop><stop offset=".82" stop-color="#172e35"></stop></radialGradient></defs><path fill="#ff4500" stroke-width="0" d="M108 0C48.35 0 0 48.35 0 108c0 29.82 12.09 56.82 31.63 76.37l-20.57 20.57C6.98 209.02 9.87 216 15.64 216H108c59.65 0 108-48.35 108-108S167.65 0 108 0Z"></path><circle cx="169.22" cy="106.98" r="25.22" fill="url(#snoo-radial-gragient)" stroke-width="0"></circle><circle cx="46.78" cy="106.98" r="25.22" fill="url(#snoo-radial-gragient-2)" stroke-width="0"></circle><ellipse cx="108.06" cy="128.64" fill="url(#snoo-radial-gragient-3)" stroke-width="0" rx="72" ry="54"></ellipse><path fill="url(#snoo-radial-gragient-4)" stroke-width="0" d="M86.78 123.48c-.42 9.08-6.49 12.38-13.56 12.38s-12.46-4.93-12.04-14.01c.42-9.08 6.49-15.02 13.56-15.02s12.46 7.58 12.04 16.66Z"></path><path fill="url(#snoo-radial-gragient-5)" stroke-width="0" d="M129.35 123.48c.42 9.08 6.49 12.38 13.56 12.38s12.46-4.93 12.04-14.01c-.42-9.08-6.49-15.02-13.56-15.02s-12.46 7.58-12.04 16.66Z"></path><ellipse cx="79.63" cy="116.37" class="snoo-cls-11 svelte-1977t4s" rx="2.8" ry="3.05"></ellipse><ellipse cx="146.21" cy="116.37" class="snoo-cls-11 svelte-1977t4s" rx="2.8" ry="3.05"></ellipse><path fill="url(#snoo-radial-gragient-6)" stroke-width="0" d="M108.06 142.92c-8.76 0-17.16.43-24.92 1.22-1.33.13-2.17 1.51-1.65 2.74 4.35 10.39 14.61 17.69 26.57 17.69s22.23-7.3 26.57-17.69c.52-1.23-.33-2.61-1.65-2.74-7.77-.79-16.16-1.22-24.92-1.22Z"></path><circle cx="147.49" cy="49.43" r="17.87" fill="url(#snoo-radial-gragient-7)" stroke-width="0"></circle><path fill="url(#snoo-radial-gragient-8)" stroke-width="0" d="M107.8 76.92c-2.14 0-3.87-.89-3.87-2.27 0-16.01 13.03-29.04 29.04-29.04 2.14 0 3.87 1.73 3.87 3.87s-1.73 3.87-3.87 3.87c-11.74 0-21.29 9.55-21.29 21.29 0 1.38-1.73 2.27-3.87 2.27Z"></path><path fill="#842123" stroke-width="0" d="M62.82 122.65c.39-8.56 6.08-14.16 12.69-14.16 6.26 0 11.1 6.39 11.28 14.33.17-8.88-5.13-15.99-12.05-15.99s-13.14 6.05-13.56 15.2c-.42 9.15 4.97 13.83 12.04 13.83h.52c-6.44-.16-11.3-4.79-10.91-13.2Zm90.48 0c-.39-8.56-6.08-14.16-12.69-14.16-6.26 0-11.1 6.39-11.28 14.33-.17-8.88 5.13-15.99 12.05-15.99 7.07 0 13.14 6.05 13.56 15.2.42 9.15-4.97 13.83-12.04 13.83h-.52c6.44-.16 11.3-4.79 10.91-13.2Z"></path></svg>');
-
-function OE(b, l) {
-  let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = FE();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     "xmlns:xlink": "http://www.w3.org/1999/xlink",
@@ -43648,11 +43646,11 @@ function OE(b, l) {
     ..._
   }), void 0, void 0, "svelte-1977t4s"), H(b, C)
 }
-var NE = _r('<svg><path d="M480-440q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0-80q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0 440q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-400Zm0-315-240 90v189q0 54 15 105t41 96q42-21 88-33t96-12q50 0 96 12t88 33q26-45 41-96t15-105v-189l-240-90Zm0 515q-36 0-70 8t-65 22q29 30 63 52t72 34q38-12 72-34t63-52q-31-14-65-22t-70-8Z"></path></svg>');
+var FE = _r('<svg><path d="M480-440q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0-80q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0 440q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-400Zm0-315-240 90v189q0 54 15 105t41 96q42-21 88-33t96-12q50 0 96 12t88 33q26-45 41-96t15-105v-189l-240-90Zm0 515q-36 0-70 8t-65 22q29 30 63 52t72 34q38-12 72-34t63-52q-31-14-65-22t-70-8Z"></path></svg>');
 
-function qE(b, l) {
+function OE(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = NE();
+  var C = FE();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -43660,11 +43658,11 @@ function qE(b, l) {
     ..._
   })), H(b, C)
 }
-var jE = _r('<svg><path d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z"></path></svg>');
+var NE = _r('<svg><path d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z"></path></svg>');
 
-function VE(b, l) {
+function qE(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = jE();
+  var C = NE();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     height: "24px",
@@ -43674,7 +43672,19 @@ function VE(b, l) {
     ..._
   })), H(b, C)
 }
-var UE = _r('<svg><path d="M792-56 671-177q-25 16-53 27.5T560-131v-82q14-5 27.5-10t25.5-12L480-368v208L280-360H120v-240h128L56-792l56-56 736 736-56 56Zm-8-232-58-58q17-31 25.5-65t8.5-70q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 53-14.5 102T784-288ZM650-422l-90-90v-130q47 22 73.5 66t26.5 96q0 15-2.5 29.5T650-422ZM480-592 376-696l104-104v208Zm-80 238v-94l-72-72H200v80h114l86 86Zm-36-130Z"></path></svg>');
+var jE = _r('<svg><path d="M792-56 671-177q-25 16-53 27.5T560-131v-82q14-5 27.5-10t25.5-12L480-368v208L280-360H120v-240h128L56-792l56-56 736 736-56 56Zm-8-232-58-58q17-31 25.5-65t8.5-70q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 53-14.5 102T784-288ZM650-422l-90-90v-130q47 22 73.5 66t26.5 96q0 15-2.5 29.5T650-422ZM480-592 376-696l104-104v208Zm-80 238v-94l-72-72H200v80h114l86 86Zm-36-130Z"></path></svg>');
+
+function VE(b, l) {
+  let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
+  var C = jE();
+  Qt(C, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ..._
+  })), H(b, C)
+}
+var UE = _r('<svg><path d="M560-131v-82q90-26 145-100t55-168q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 127-78 224.5T560-131ZM120-360v-240h160l200-200v640L280-360H120Zm440 40v-322q47 22 73.5 66t26.5 96q0 51-26.5 94.5T560-320ZM400-606l-86 86H200v80h114l86 86v-252ZM300-480Z"></path></svg>');
 
 function ZE(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
@@ -43686,52 +43696,40 @@ function ZE(b, l) {
     ..._
   })), H(b, C)
 }
-var $E = _r('<svg><path d="M560-131v-82q90-26 145-100t55-168q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 127-78 224.5T560-131ZM120-360v-240h160l200-200v640L280-360H120Zm440 40v-322q47 22 73.5 66t26.5 96q0 51-26.5 94.5T560-320ZM400-606l-86 86H200v80h114l86 86v-252ZM300-480Z"></path></svg>');
-
-function GE(b, l) {
-  let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = $E();
-  Qt(C, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ..._
-  })), H(b, C)
-}
-var HE = (b, l) => {
+var $E = (b, l) => {
     oe(l, !0)
   },
-  WE = Ie('<span class="tooltip font-flag ml-0.5"> </span>'),
-  XE = Ie('<div class="mt-1"><!></div>'),
-  KE = (b, l, _) => {
+  GE = Ie('<span class="tooltip font-flag ml-0.5"> </span>'),
+  HE = Ie('<div class="mt-1"><!></div>'),
+  WE = (b, l, _) => {
     localStorage.setItem(fx, x(l).key), oe(_, x(l).key, !0), location.reload()
   },
-  YE = Ie('<span class="center-absolute loading loading-spinner loading-xs absolute"></span>'),
-  JE = Ie("<li><button><!> </button></li>"),
-  QE = async (b, l) => {
+  XE = Ie('<span class="center-absolute loading loading-spinner loading-xs absolute"></span>'),
+  KE = Ie("<li><button><!> </button></li>"),
+  YE = async (b, l) => {
     var _;
     try {
       const C = await ((_ = x(l)) == null ? void 0 : _.prompt());
       (C == null ? void 0 : C.outcome) === "accepted" && oe(l, void 0)
     } catch (C) {
-      jr.error(Pb({
+      jr.error(Cb({
         error: C.message
       }))
     }
-  }, e8 = Ie('<button class="btn pwa:hidden w-full sm:hidden"><!> </button>'), t8 = Ie('<a class="btn w-full"><!> </a>'), r8 = Ie('<form class="w-full" method="POST"><button class="btn w-full"><!> Purchases</button></form>'), i8 = async (b, l, _, C) => {
+  }, JE = Ie('<button class="btn pwa:hidden w-full sm:hidden"><!> </button>'), QE = Ie('<a class="btn w-full"><!> </a>'), e8 = Ie('<form class="w-full" method="POST"><button class="btn w-full"><!> Purchases</button></form>'), t8 = async (b, l, _, C) => {
     var L;
     try {
-      oe(l, !0), await _.user.logout(), C(), jr.warning(bC(), {
+      oe(l, !0), await _.user.logout(), C(), jr.warning(yC(), {
         icon: Dv
       }), (L = _.onlogout) == null || L.call(_)
     } catch {
-      jr.error(CC())
+      jr.error(wC())
     } finally {
       oe(l, !1)
     }
-  }, n8 = Ie('<div class="dropdown"><div tabindex="0" role="button" class="btn size-12 p-0 shadow-md"><!></div> <div class="dropdown-content menu bg-base-100 rounded-box border-base-300 z-1 relative right-1 w-[min(100vw-24px,400px)] translate-y-2 border p-4 shadow-md" tabindex="0"><button class="btn btn-ghost btn-circle absolute right-2 top-2"><!></button> <section class="flex gap-2"><div class="relative"><!> <button class="btn btn-circle btn-sm absolute -bottom-1 -right-1"><!></button></div> <div><div class="flex items-center gap-1.5 pr-8 text-lg font-medium"><h3 class="line-clamp-1 text-ellipsis text-lg"> </h3> <span> </span> <!> <!></div> <div class="flex items-center gap-1"><!> <span> <span class="text-primary font-semibold"> </span></span></div> <div class="flex items-center gap-1"><!> <span class="text-secondary"><span class="font-semibold"> </span> <button class="tooltip"><!></button></span></div></div></section> <section class="mt-3 flex flex-col gap-2"><div class="mb-1 flex items-center justify-between"><h3 class="text-lg font-semibold"> </h3> <div class="flex items-center gap-2"><div class="dropdown dropdown-end"><div tabindex="0" role="button" class="btn btn-sm btn-circle"><!></div> <ul tabindex="0" class="dropdown-content menu bg-base-100 z-1 w-max rounded-xl p-2 shadow-sm"></ul></div> <div class="tooltip"><button class="btn btn-sm btn-circle"><!></button></div></div></div>  <!> <!> <a class="btn w-full" href="https://www.twitch.tv/directory/category/wplace" target="_blank"><!> </a> <a class="btn w-full" href="http://discord.gg/wplacelive" target="_blank"><!> Discord</a> <a class="btn w-full" href="https://www.reddit.com/r/WplaceLive/" target="_blank"><!> Reddit</a> <!> <button class="btn"><!> </button></section></div></div> <!>', 1);
+  }, r8 = Ie('<div class="dropdown"><div tabindex="0" role="button" class="btn size-12 p-0 shadow-md"><!></div> <div class="dropdown-content menu bg-base-100 rounded-box border-base-300 z-1 relative right-1 w-[min(100vw-24px,400px)] translate-y-2 border p-4 shadow-md" tabindex="0"><button class="btn btn-ghost btn-circle absolute right-2 top-2"><!></button> <section class="flex gap-2"><div class="relative"><!> <button class="btn btn-circle btn-sm absolute -bottom-1 -right-1"><!></button></div> <div><div class="flex items-center gap-1.5 pr-8 text-lg font-medium"><h3 class="line-clamp-1 text-ellipsis text-lg"> </h3> <span> </span> <!> <!></div> <div class="flex items-center gap-1"><!> <span> <span class="text-primary font-semibold"> </span></span></div> <div class="flex items-center gap-1"><!> <span class="text-secondary"><span class="font-semibold"> </span> <button class="tooltip"><!></button></span></div></div></section> <section class="mt-3 flex flex-col gap-2"><div class="mb-1 flex items-center justify-between"><h3 class="text-lg font-semibold"> </h3> <div class="flex items-center gap-2"><div class="dropdown dropdown-end"><div tabindex="0" role="button" class="btn btn-sm btn-circle"><!></div> <ul tabindex="0" class="dropdown-content menu bg-base-100 z-1 w-max rounded-xl p-2 shadow-sm"></ul></div> <div class="tooltip"><button class="btn btn-sm btn-circle"><!></button></div></div></div>  <!> <!> <a class="btn w-full" href="https://www.twitch.tv/directory/category/wplace" target="_blank"><!> </a> <a class="btn w-full" href="http://discord.gg/wplacelive" target="_blank"><!> Discord</a> <a class="btn w-full" href="https://www.reddit.com/r/WplaceLive/" target="_blank"><!> Reddit</a> <!> <button class="btn"><!> </button></section></div></div> <!>', 1);
 
-function a8(b, l) {
+function i8(b, l) {
   Sr(l, !0);
   let _ = nt(!1),
     C = nt(!1);
@@ -43753,7 +43751,7 @@ function a8(b, l) {
     W = At(Z);
   {
     var ie = pe => {
-      var ye = n8(),
+      var ye = r8(),
         X = At(ye),
         Se = k(X),
         we = k(Se);
@@ -43787,7 +43785,7 @@ function a8(b, l) {
         }
       });
       var ht = V(ft, 2);
-      ht.__click = [HE, _];
+      ht.__click = [$E, _];
       var Xe = k(ht);
       Cf(Xe, {
         class: "size-4"
@@ -43804,7 +43802,7 @@ function a8(b, l) {
       {
         var vt = kt => {
           const Pt = lt(() => ds(l.user.data.equippedFlag));
-          var Et = WE(),
+          var Et = GE(),
             Wt = k(Et, !0);
           A(Et), Ge(() => {
             zr(Et, "data-tip", x(Pt).name), fe(Wt, x(Pt).flag)
@@ -43817,7 +43815,7 @@ function a8(b, l) {
       var Q = V(Ae, 2);
       {
         var te = kt => {
-          var Pt = XE(),
+          var Pt = HE(),
             Et = k(Pt);
           ph(Et, {
             get username() {
@@ -43842,7 +43840,7 @@ function a8(b, l) {
       A(at), A(Pe), A(_e);
       var Ct = V(_e, 2),
         _t = k(Ct);
-      LE(_t, {
+      EE(_t, {
         class: "inline size-4"
       });
       var xt = V(_t, 2),
@@ -43864,20 +43862,20 @@ function a8(b, l) {
         nr = k(Yt),
         ar = k(nr),
         Ft = k(ar);
-      VE(Ft, {
+      qE(Ft, {
         class: "size-4"
       }), A(ar);
       var dr = V(ar, 2);
       nn(dr, 21, () => F, Zd, (kt, Pt) => {
         const Et = lt(() => x(T) === x(Pt).key);
-        var Wt = JE(),
+        var Wt = KE(),
           Lr = k(Wt);
         let Kr;
-        Lr.__click = [KE, Pt, T];
+        Lr.__click = [WE, Pt, T];
         var Hr = k(Lr);
         {
           var $r = vr => {
-            var ai = YE();
+            var ai = XE();
             H(vr, ai)
           };
           Ve(Hr, vr => {
@@ -43899,12 +43897,12 @@ function a8(b, l) {
       var qr = k(Ir);
       {
         var ur = kt => {
-            ZE(kt, {
+            VE(kt, {
               class: "size-4"
             })
           },
           Mr = kt => {
-            GE(kt, {
+            ZE(kt, {
               class: "size-4"
             })
           };
@@ -43916,14 +43914,14 @@ function a8(b, l) {
       var Ar = V(dt, 2);
       {
         var kr = kt => {
-          var Pt = e8();
-          Pt.__click = [QE, o];
+          var Pt = JE();
+          Pt.__click = [YE, o];
           var Et = k(Pt);
           sv(Et, {
             class: "size-5"
           });
           var Wt = V(Et);
-          A(Pt), Ge(Lr => fe(Wt, ` ${Lr??""}`), [() => Ab()]), H(kt, Pt)
+          A(Pt), Ge(Lr => fe(Wt, ` ${Lr??""}`), [() => Ib()]), H(kt, Pt)
         };
         Ve(Ar, kt => {
           x(o) && kt(kr)
@@ -43932,15 +43930,15 @@ function a8(b, l) {
       var Nr = V(Ar, 2);
       {
         var ce = kt => {
-          var Pt = t8(),
+          var Pt = QE(),
             Et = k(Pt);
-          qE(Et, {
+          OE(Et, {
             class: "size-5"
           });
           var Wt = V(Et);
           A(Pt), Ge(Lr => {
             zr(Pt, "href", `${La.url.origin??""}/moderation`), fe(Wt, ` ${Lr??""}`)
-          }, [() => JS()]), H(kt, Pt)
+          }, [() => KS()]), H(kt, Pt)
         };
         Ve(Nr, kt => {
           var Pt;
@@ -43961,16 +43959,16 @@ function a8(b, l) {
       }), fi(), A(K);
       var ve = V(K, 2),
         Le = k(ve);
-      OE(Le, {
+      BE(Le, {
         class: "size-5"
       }), fi(), A(ve);
       var Ce = V(ve, 2);
       {
         var Ze = kt => {
-          var Pt = r8(),
+          var Pt = e8(),
             Et = k(Pt),
             Wt = k(Et);
-          BE(Wt, {
+          DE(Wt, {
             class: "size-5"
           }), fi(), A(Et), A(Pt), Ge(() => zr(Pt, "action", `${Cd}/payment/create-portal-session`)), H(kt, Pt)
         };
@@ -43980,7 +43978,7 @@ function a8(b, l) {
         })
       }
       var ot = V(Ce, 2);
-      ot.__click = [i8, C, l, L];
+      ot.__click = [t8, C, l, L];
       var Ye = k(ot);
       Dv(Ye, {
         class: "size-5"
@@ -43988,7 +43986,7 @@ function a8(b, l) {
       var Ot = V(Ye);
       A(ot), A(wt), A(Re), A(X);
       var xe = V(X, 2);
-      EE(xe, {
+      AE(xe, {
         get userData() {
           return l.user.data
         },
@@ -44000,7 +43998,7 @@ function a8(b, l) {
         }
       }), Ge((kt, Pt, Et, Wt, Lr, Kr, Hr, $r, mr, vr, ai) => {
         zr(Se, "title", kt), zr(Be, "title", l.user.data.name), fe(st, l.user.data.name), Or(it, 1, Pt), fe(Qe, `#${l.user.data.id??""}`), fe(Me, `${Et??""}: `), fe(We, Wt), fe(pt, `Level ${Lr??""}`), fe(It, ` (${Kr??""}%) `), zr(ut, "data-tip", Hr), fe(Xt, $r), zr(gr, "data-tip", mr), fe(G, ` ${vr??""}`), ot.disabled = x(C), fe(Ot, ` ${ai??""}`)
-      }, [() => vb(), () => Vo(Zn(l.user.data.id)), () => Yf(), () => l.user.data.pixelsPainted.toLocaleString("en-US"), () => Math.floor(l.user.data.level), () => Math.floor(l.user.data.level % 1 * 100), () => qw(), () => Tb(), () => oa.muted ? LT() : kT(), () => zb(), () => Rb()]), an("focus", Se, () => {
+      }, [() => vb(), () => Vo(Zn(l.user.data.id)), () => Xf(), () => l.user.data.pixelsPainted.toLocaleString("en-US"), () => Math.floor(l.user.data.level), () => Math.floor(l.user.data.level % 1 * 100), () => Ow(), () => bb(), () => oa.muted ? ET() : MT(), () => kb(), () => Lb()]), an("focus", Se, () => {
         oe(o, window.pwaInstallPrompt, !0)
       }), H(pe, ye)
     };
@@ -44011,11 +44009,11 @@ function a8(b, l) {
   H(b, Z), Pr()
 }
 Wi(["click"]);
-var s8 = _r('<svg><path d="M100-240v-480l360 240-360 240Zm400 0v-480l360 240-360 240ZM180-480Zm400 0Zm-400 90 136-90-136-90v180Zm400 0 136-90-136-90v180Z"></path></svg>');
+var n8 = _r('<svg><path d="M100-240v-480l360 240-360 240Zm400 0v-480l360 240-360 240ZM180-480Zm400 0Zm-400 90 136-90-136-90v180Zm400 0 136-90-136-90v180Z"></path></svg>');
 
-function o8(b, l) {
+function a8(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = s8();
+  var C = n8();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     height: "24px",
@@ -44025,11 +44023,11 @@ function o8(b, l) {
     ..._
   })), H(b, C)
 }
-var l8 = _r('<svg><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q146 0 255.5 91.5T872-559h-82q-19-73-68.5-130.5T600-776v16q0 33-23.5 56.5T520-680h-80v80q0 17-11.5 28.5T400-560h-80v80h80v120h-40L168-552q-3 18-5.5 36t-2.5 36q0 131 92 225t228 95v80Zm364-20L716-228q-21 12-45 20t-51 8q-75 0-127.5-52.5T440-380q0-75 52.5-127.5T620-560q75 0 127.5 52.5T800-380q0 27-8 51t-20 45l128 128-56 56ZM620-280q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Z"></path></svg>');
+var s8 = _r('<svg><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q146 0 255.5 91.5T872-559h-82q-19-73-68.5-130.5T600-776v16q0 33-23.5 56.5T520-680h-80v80q0 17-11.5 28.5T400-560h-80v80h80v120h-40L168-552q-3 18-5.5 36t-2.5 36q0 131 92 225t228 95v80Zm364-20L716-228q-21 12-45 20t-51 8q-75 0-127.5-52.5T440-380q0-75 52.5-127.5T620-560q75 0 127.5 52.5T800-380q0 27-8 51t-20 45l128 128-56 56ZM620-280q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Z"></path></svg>');
 
-function c8(b, l) {
+function o8(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = l8();
+  var C = s8();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -44037,7 +44035,7 @@ function c8(b, l) {
     ..._
   })), H(b, C)
 }
-var u8 = async (b, l, _, C, L, F) => {
+var l8 = async (b, l, _, C, L, F) => {
   if (x(l)) {
     _.map.easeTo(x(l)), oe(l, void 0);
     return
@@ -44075,25 +44073,25 @@ var u8 = async (b, l, _, C, L, F) => {
   } finally {
     oe(C, !1)
   }
-}, h8 = Ie('<button class="btn btn-square shadow-md"><!></button>');
+}, c8 = Ie('<button class="btn btn-square shadow-md"><!></button>');
 
-function d8(b, l) {
+function u8(b, l) {
   Sr(l, !0);
   const _ = lt(() => $n.seasons[l.season].tileSize),
     C = lt(() => $n.seasons[l.season].zoom);
   let L = nt(!1),
     F = nt(void 0);
-  var T = h8();
-  T.__click = [u8, F, l, L, _, C];
+  var T = c8();
+  T.__click = [l8, F, l, L, _, C];
   var o = k(T);
   {
     var Z = ie => {
-        c8(ie, {
+        o8(ie, {
           class: "size-5"
         })
       },
       W = ie => {
-        o8(ie, {
+        a8(ie, {
           class: "size-5"
         })
       };
@@ -44106,18 +44104,18 @@ function d8(b, l) {
   }, [() => G1()]), H(b, T), Pr()
 }
 Wi(["click"]);
-var p8 = Ie('<label class="tab grow font-semibold max-sm:h-10"><input type="radio" class="tab grow"/> <!> </label>'),
-  f8 = Ie('<div class="text-base-content/80 mt-20 text-center text-sm"> <!></div>'),
-  m8 = Ie('<span class="font-flag tooltip ml-0.5"> </span>'),
-  _8 = Ie("<span> </span>"),
-  g8 = Ie('<tr><td class="text-base-content/80 text-center font-medium"> </td><td class="max-sm:px-1"><div class="flex items-center gap-2"><!> <div class="items-center gap-2 sm:flex"><span> <span class="ml-0.5"> </span></span> <!> <!> <!></div></div></td><td class="text-base-content/80 text-center font-medium max-sm:px-1"> </td></tr>'),
+var h8 = Ie('<label class="tab grow font-semibold max-sm:h-10"><input type="radio" class="tab grow"/> <!> </label>'),
+  d8 = Ie('<div class="text-base-content/80 mt-20 text-center text-sm"> <!></div>'),
+  p8 = Ie('<span class="font-flag tooltip ml-0.5"> </span>'),
+  f8 = Ie("<span> </span>"),
+  m8 = Ie('<tr><td class="text-base-content/80 text-center font-medium"> </td><td class="max-sm:px-1"><div class="flex items-center gap-2"><!> <div class="items-center gap-2 sm:flex"><span> <span class="ml-0.5"> </span></span> <!> <!> <!></div></div></td><td class="text-base-content/80 text-center font-medium max-sm:px-1"> </td></tr>'),
+  _8 = Ie('<table class="table"><thead class="text-base-content/80"><tr><th></th><th class="max-sm:px-1"> </th><th class="text-center"> <br class="sm:hidden"/> </th></tr></thead><tbody></tbody></table>'),
+  g8 = Ie('<tr><td class="text-base-content/80 text-center font-medium"> </td><td class="h-14 max-sm:px-1"><span> </span></td><td class="text-base-content/80 text-center font-medium max-sm:px-1"> </td></tr>'),
   v8 = Ie('<table class="table"><thead class="text-base-content/80"><tr><th></th><th class="max-sm:px-1"> </th><th class="text-center"> <br class="sm:hidden"/> </th></tr></thead><tbody></tbody></table>'),
-  y8 = Ie('<tr><td class="text-base-content/80 text-center font-medium"> </td><td class="h-14 max-sm:px-1"><span> </span></td><td class="text-base-content/80 text-center font-medium max-sm:px-1"> </td></tr>'),
-  x8 = Ie('<table class="table"><thead class="text-base-content/80"><tr><th></th><th class="max-sm:px-1"> </th><th class="text-center"> <br class="sm:hidden"/> </th></tr></thead><tbody></tbody></table>'),
-  b8 = Ie('<div class="h-screen pt-20"><div class="flex justify-center"><span class="loading loading-spinner"></span></div></div>'),
-  w8 = Ie('<div class="tabs tabs-box"></div> <div class="my-4 flex items-center justify-between"><!></div> <!>', 1);
+  y8 = Ie('<div class="h-screen pt-20"><div class="flex justify-center"><span class="loading loading-spinner"></span></div></div>'),
+  x8 = Ie('<div class="tabs tabs-box"></div> <div class="my-4 flex items-center justify-between"><!></div> <!>', 1);
 
-function T8(b, l) {
+function b8(b, l) {
   Sr(l, !0);
   const _ = [];
   let C = nt("today"),
@@ -44151,7 +44149,7 @@ function T8(b, l) {
       jr.error(ke.message)
     })
   });
-  var Z = w8(),
+  var Z = x8(),
     W = At(Z);
   nn(W, 21, () => Object.entries(L), ([we, {
     label: Re,
@@ -44162,7 +44160,7 @@ function T8(b, l) {
       Ee = () => x(ke)[1].label,
       Ne = () => x(ke)[1].icon;
     const ft = lt(Ne);
-    var ht = p8(),
+    var ht = h8(),
       Xe = k(ht);
     ea(Xe);
     var ct, Je = V(Xe, 2);
@@ -44192,7 +44190,7 @@ function T8(b, l) {
   var ye = V(ie, 2);
   {
     var X = we => {
-        var Re = f8(),
+        var Re = d8(),
           ke = k(Re),
           Oe = V(ke);
         {
@@ -44244,7 +44242,7 @@ function T8(b, l) {
               {
                 var Xe = Je => {
                     const Be = lt(() => x(o));
-                    var st = v8(),
+                    var st = _8(),
                       it = k(st),
                       Qe = k(it),
                       Ae = V(k(Qe)),
@@ -44260,7 +44258,7 @@ function T8(b, l) {
                         var ur;
                         return ((ur = Dt.data) == null ? void 0 : ur.id) === x(Me).id
                       });
-                      var Ct = g8();
+                      var Ct = m8();
                       let _t;
                       var xt = k(Ct),
                         tt = k(xt, !0);
@@ -44287,7 +44285,7 @@ function T8(b, l) {
                       {
                         var nr = ur => {
                           const Mr = lt(() => ds(x(Me).equippedFlag));
-                          var Ar = m8(),
+                          var Ar = p8(),
                             kr = k(Ar, !0);
                           A(Ar), Ge(() => {
                             zr(Ar, "data-tip", x(Mr).name), fe(kr, x(Mr).flag)
@@ -44313,11 +44311,11 @@ function T8(b, l) {
                       var dr = V(ar, 2);
                       {
                         var gr = ur => {
-                          var Mr = _8(),
+                          var Mr = f8(),
                             Ar = k(Mr, !0);
                           A(Mr), Ge((kr, Nr) => {
                             Or(Mr, 1, `badge badge-sm ml-0.5 border-0 ${kr??""} ${Nr??""}`), fe(Ar, x(Me).allianceName)
-                          }, [() => Xf(x(Me).allianceId), () => Zn(x(Me).allianceId)]), H(ur, Mr)
+                          }, [() => Kf(x(Me).allianceId), () => Zn(x(Me).allianceId)]), H(ur, Mr)
                         };
                         Ve(dr, ur => {
                           "allianceName" in x(Me) && x(Me).allianceName && ur(gr)
@@ -44342,7 +44340,7 @@ function T8(b, l) {
                       st = At(Be);
                     {
                       var it = Qe => {
-                        var Ae = x8(),
+                        var Ae = v8(),
                           vt = k(Ae),
                           Q = k(vt),
                           te = V(k(Q)),
@@ -44358,7 +44356,7 @@ function T8(b, l) {
                             var Yt;
                             return ((Yt = Dt.data) == null ? void 0 : Yt.allianceId) === x(Ct).id
                           });
-                          var tt = y8();
+                          var tt = g8();
                           let pt;
                           var It = k(tt),
                             ut = k(It, !0);
@@ -44393,7 +44391,7 @@ function T8(b, l) {
               H(Ne, ft)
             },
             Ee = Ne => {
-              var ft = b8();
+              var ft = y8();
               H(Ne, ft)
             };
           Ve(ke, Ne => {
@@ -44408,10 +44406,10 @@ function T8(b, l) {
   }
   H(b, Z), Pr()
 }
-var C8 = Ie('<div class="mt-5"><!></div>'),
-  S8 = Ie('<dialog class="modal"><div class="modal-box h-11/12 max-w-3xl"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <h2><span class="font-flag tooltip"> </span> <span> </span> <span> </span></h2> <!></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
+var w8 = Ie('<div class="mt-5"><!></div>'),
+  T8 = Ie('<dialog class="modal"><div class="modal-box h-11/12 max-w-3xl"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <h2><span class="font-flag tooltip"> </span> <span> </span> <span> </span></h2> <!></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
 
-function P8(b, l) {
+function C8(b, l) {
   Sr(l, !0);
   let _ = zt(l, "open", 15);
   const C = lt(() => ds(l.region.countryId));
@@ -44421,7 +44419,7 @@ function P8(b, l) {
     };
     return document.addEventListener("keydown", we), () => document.removeEventListener("keydown", we)
   });
-  var L = S8(),
+  var L = T8(),
     F = k(L),
     T = V(k(F), 2),
     o = k(T),
@@ -44436,9 +44434,9 @@ function P8(b, l) {
   var X = V(T, 2);
   {
     var Se = we => {
-      var Re = C8(),
+      var Re = w8(),
         ke = k(Re);
-      T8(ke, {
+      b8(ke, {
         get regionId() {
           return l.region.id
         }
@@ -44458,11 +44456,11 @@ function P8(b, l) {
     Or(T, 1, `flex gap-2 text-xl font-bold sm:text-2xl ${we??""}`), zr(o, "data-tip", x(C).name), fe(Z, x(C).flag), fe(ie, l.region.name), fe(ye, `#${l.region.number??""}`)
   }, [() => Zn(l.region.cityId)]), an("close", L, () => _(!1)), H(b, L), Pr()
 }
-var I8 = _r('<svg><path d="M791-55 686-160H160v-112q0-34 17.5-62.5T224-378q45-23 91.5-37t94.5-21L55-791l57-57 736 736-57 57ZM240-240h366L486-360h-6q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm496-138q29 14 46 42.5t18 61.5L666-408q18 7 35.5 14t34.5 16ZM568-506l-59-59q23-9 37-29.5t14-45.5q0-33-23.5-56.5T480-720q-25 0-45.5 14T405-669l-59-59q23-34 58-53t76-19q66 0 113 47t47 113q0 41-19 76t-53 58Zm38 266H240h366ZM457-617Z"></path></svg>');
+var S8 = _r('<svg><path d="M791-55 686-160H160v-112q0-34 17.5-62.5T224-378q45-23 91.5-37t94.5-21L55-791l57-57 736 736-57 57ZM240-240h366L486-360h-6q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm496-138q29 14 46 42.5t18 61.5L666-408q18 7 35.5 14t34.5 16ZM568-506l-59-59q23-9 37-29.5t14-45.5q0-33-23.5-56.5T480-720q-25 0-45.5 14T405-669l-59-59q23-34 58-53t76-19q66 0 113 47t47 113q0 41-19 76t-53 58Zm38 266H240h366ZM457-617Z"></path></svg>');
 
-function M8(b, l) {
+function P8(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = I8();
+  var C = S8();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     height: "24px",
@@ -44472,11 +44470,11 @@ function M8(b, l) {
     ..._
   })), H(b, C)
 }
-var A8 = _r('<svg><path d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240ZM330-120 120-330v-300l210-210h300l210 210v300L630-120H330Zm34-80h232l164-164v-232L596-760H364L200-596v232l164 164Zm116-280Z"></path></svg>');
+var I8 = _r('<svg><path d="M480-280q17 0 28.5-11.5T520-320q0-17-11.5-28.5T480-360q-17 0-28.5 11.5T440-320q0 17 11.5 28.5T480-280Zm-40-160h80v-240h-80v240ZM330-120 120-330v-300l210-210h300l210 210v300L630-120H330Zm34-80h232l164-164v-232L596-760H364L200-596v232l164 164Zm116-280Z"></path></svg>');
 
-function k8(b, l) {
+function M8(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = A8();
+  var C = I8();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -44484,16 +44482,16 @@ function k8(b, l) {
     ..._
   })), H(b, C)
 }
-var E8 = _r('<svg><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"></path></svg>'),
-  z8 = _r('<svg><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"></path></svg>');
+var A8 = _r('<svg><path d="m233-120 65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z"></path></svg>'),
+  k8 = _r('<svg><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"></path></svg>');
 
-function L8(b, l) {
+function E8(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy", "filled"]);
   var C = Jt(),
     L = At(C);
   {
     var F = o => {
-        var Z = E8();
+        var Z = A8();
         Qt(Z, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
@@ -44502,7 +44500,7 @@ function L8(b, l) {
         })), H(o, Z)
       },
       T = o => {
-        var Z = z8();
+        var Z = k8();
         Qt(Z, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
@@ -44516,7 +44514,7 @@ function L8(b, l) {
   }
   H(b, C)
 }
-var D8 = (b, l, _, C, L) => {
+var z8 = (b, l, _, C, L) => {
     if (x(l) && x(_)) {
       const F = x(l) - x(_).clientHeight,
         T = x(l) / 2 - F / 2;
@@ -44530,25 +44528,25 @@ var D8 = (b, l, _, C, L) => {
       })
     }
   },
-  R8 = (b, l, _) => l.onclickregion(x(_)),
-  B8 = Ie('<button><span class="font-flag tooltip"> </span> <span class="line-clamp-1 text-ellipsis"> </span> <span> </span></button>'),
-  F8 = Ie('<div class="skeleton h-5 w-16"></div>'),
-  O8 = Ie('<div class="skeleton mt-1 h-5 w-32"></div>'),
-  N8 = Ie('<span class="font-flag tooltip ml-0.5"> </span>'),
-  q8 = Ie("<span> </span>"),
-  j8 = (b, l) => {
+  L8 = (b, l, _) => l.onclickregion(x(_)),
+  D8 = Ie('<button><span class="font-flag tooltip"> </span> <span class="line-clamp-1 text-ellipsis"> </span> <span> </span></button>'),
+  R8 = Ie('<div class="skeleton h-5 w-16"></div>'),
+  B8 = Ie('<div class="skeleton mt-1 h-5 w-32"></div>'),
+  F8 = Ie('<span class="font-flag tooltip ml-0.5"> </span>'),
+  O8 = Ie("<span> </span>"),
+  N8 = (b, l) => {
     l("report-user")
+  },
+  q8 = Ie("<li><button><!> </button></li>"),
+  j8 = (b, l) => {
+    l("timeout")
   },
   V8 = Ie("<li><button><!> </button></li>"),
   U8 = (b, l) => {
-    l("timeout")
-  },
-  Z8 = Ie("<li><button><!> </button></li>"),
-  $8 = (b, l) => {
     l("ban")
   },
-  G8 = Ie("<li><button><!> </button></li>"),
-  H8 = async (b, l, _, C, L, F) => {
+  Z8 = Ie("<li><button><!> </button></li>"),
+  $8 = async (b, l, _, C, L, F) => {
     oe(l, !0);
     try {
       await ni.banAllianceUser(x(_).id), await C({
@@ -44560,23 +44558,23 @@ var D8 = (b, l, _, C, L) => {
     } finally {
       oe(l, !1)
     }
-  }, W8 = Ie('<li><button class="text-error font-medium"><!> </button></li>'), X8 = Ie('<div class="dropdown dropdown-top max-sm:dropdown-top max-sm:dropdown-left ml-1"><button tabindex="0" class="btn btn-xs btn-circle"><!></button> <ul tabindex="0" class="dropdown-content menu bg-base-100 z-1 mb-1 w-max gap-0.5 rounded-xl p-2.5 shadow-sm"></ul></div>'), K8 = Ie('<div class="flex items-center gap-1"><span> </span> <div class="ml-0.5"><!></div> <div class="flex flex-wrap items-center gap-1"><span><span> </span> <span> </span></span> <!> <!> <!></div> <!></div>'), Y8 = (b, l) => l.onclickpaint(l.latLon), J8 = async (b, l, _, C) => {
+  }, G8 = Ie('<li><button class="text-error font-medium"><!> </button></li>'), H8 = Ie('<div class="dropdown dropdown-top max-sm:dropdown-top max-sm:dropdown-left ml-1"><button tabindex="0" class="btn btn-xs btn-circle"><!></button> <ul tabindex="0" class="dropdown-content menu bg-base-100 z-1 mb-1 w-max gap-0.5 rounded-xl p-2.5 shadow-sm"></ul></div>'), W8 = Ie('<div class="flex items-center gap-1"><span> </span> <div class="ml-0.5"><!></div> <div class="flex flex-wrap items-center gap-1"><span><span> </span> <span> </span></span> <!> <!> <!></div> <!></div>'), X8 = (b, l) => l.onclickpaint(l.latLon), K8 = async (b, l, _, C) => {
     try {
-      oe(l, !0), x(_) ? (await ni.deleteFavoriteLocation(x(_).id), jr.warning(sC())) : (await ni.favoriteLocation(x(C).center), jr.success(cC())), pa.smallPlop.play(), Dt.refresh()
+      oe(l, !0), x(_) ? (await ni.deleteFavoriteLocation(x(_).id), jr.warning(nC())) : (await ni.favoriteLocation(x(C).center), jr.success(oC())), pa.smallPlop.play(), Dt.refresh()
     } catch (L) {
       jr.error(L.message)
     } finally {
       oe(l, !1)
     }
-  }, Q8 = Ie("<button><!> </button>"), ez = (b, l, _) => l.onclickshare(AP(La.url, {
+  }, Y8 = Ie("<button><!> </button>"), J8 = (b, l, _) => l.onclickshare(IP(La.url, {
     pos: {
       lat: x(_).center[0],
       lng: x(_).center[1]
     },
     zoom: l.zoom
-  })), tz = Ie('<div><div class="flex gap-2 px-3"><div class="flex grow gap-1"><button class="btn btn-sm btn-circle btn-soft"><!></button> <h2 class="mt-0.5 flex items-center gap-2 text-lg"><span class="whitespace-nowrap"> </span> <!></h2></div> <button class="btn btn-circle btn-sm"><!></button></div> <div class="text-base-content/80 mt-1 px-3 text-sm"><!></div> <div class="hide-scrollbar flex max-w-full gap-1.5 overflow-x-auto px-3 pb-2 pt-3 sm:pb-3"><button class="btn btn-primary"><!> </button> <!> <button class="btn btn-primary btn-soft"><!> </button></div></div>');
+  })), Q8 = Ie('<div><div class="flex gap-2 px-3"><div class="flex grow gap-1"><button class="btn btn-sm btn-circle btn-soft"><!></button> <h2 class="mt-0.5 flex items-center gap-2 text-lg"><span class="whitespace-nowrap"> </span> <!></h2></div> <button class="btn btn-circle btn-sm"><!></button></div> <div class="text-base-content/80 mt-1 px-3 text-sm"><!></div> <div class="hide-scrollbar flex max-w-full gap-1.5 overflow-x-auto px-3 pb-2 pt-3 sm:pb-3"><button class="btn btn-primary"><!> </button> <!> <button class="btn btn-primary btn-soft"><!> </button></div></div>');
 
-function rz(b, l) {
+function ez(b, l) {
   Sr(l, !0);
   let _ = nt(void 0);
   const C = lt(() => new hc(l.tileSize));
@@ -44660,11 +44658,11 @@ function rz(b, l) {
     }))();
     l.onclickmodaction(x(_), pt, l.latLon, tt)
   }
-  var ke = tz(),
+  var ke = Q8(),
     Oe = k(ke),
     Ee = k(Oe),
     Ne = k(Ee);
-  Ne.__click = [D8, L, F, l, W];
+  Ne.__click = [z8, L, F, l, W];
   var ft = k(Ne);
   Wf(ft, {
     class: "fill-primary size-5"
@@ -44678,8 +44676,8 @@ function rz(b, l) {
     var Be = tt => {
         const pt = lt(() => x(_).region),
           It = lt(() => ds(x(pt).countryId));
-        var ut = B8();
-        ut.__click = [R8, l, pt];
+        var ut = D8();
+        ut.__click = [L8, l, pt];
         var bt = k(ut),
           wt = k(bt, !0);
         A(bt);
@@ -44693,7 +44691,7 @@ function rz(b, l) {
         }, [() => Zn(x(pt).cityId)]), H(tt, ut)
       },
       st = tt => {
-        var pt = F8();
+        var pt = R8();
         H(tt, pt)
       };
     Ve(Je, tt => {
@@ -44712,7 +44710,7 @@ function rz(b, l) {
     vt = k(Ae);
   {
     var Q = tt => {
-        var pt = O8();
+        var pt = B8();
         H(tt, pt)
       },
       te = tt => {
@@ -44721,11 +44719,11 @@ function rz(b, l) {
         {
           var ut = wt => {
               var dt = Fn();
-              Ge(Lt => fe(dt, Lt), [() => dT()]), H(wt, dt)
+              Ge(Lt => fe(dt, Lt), [() => uT()]), H(wt, dt)
             },
             bt = wt => {
               const dt = lt(() => x(_).paintedBy);
-              var Lt = K8(),
+              var Lt = W8(),
                 Xt = k(Lt),
                 Yt = k(Xt);
               A(Xt);
@@ -44752,7 +44750,7 @@ function rz(b, l) {
               {
                 var Ar = K => {
                   const le = lt(() => ds(x(dt).equippedFlag));
-                  var ve = N8(),
+                  var ve = F8(),
                     Le = k(ve, !0);
                   A(ve), Ge(() => {
                     zr(ve, "data-tip", x(le).name), fe(Le, x(le).flag)
@@ -44778,11 +44776,11 @@ function rz(b, l) {
               var ce = V(kr, 2);
               {
                 var O = K => {
-                  var le = q8(),
+                  var le = O8(),
                     ve = k(le, !0);
                   A(le), Ge((Le, Ce) => {
                     Or(le, 1, `badge badge-sm ml-0.5 border-0 ${Le??""} ${Ce??""}`), fe(ve, x(dt).allianceName)
-                  }, [() => Xf(x(dt).allianceId), () => Zn(x(dt).allianceId)]), H(K, le)
+                  }, [() => Kf(x(dt).allianceId), () => Zn(x(dt).allianceId)]), H(K, le)
                 };
                 Ve(ce, K => {
                   x(dt).allianceId && K(O)
@@ -44792,7 +44790,7 @@ function rz(b, l) {
               var j = V(Ft, 2);
               {
                 var G = K => {
-                  var le = X8(),
+                  var le = H8(),
                     ve = k(le),
                     Le = k(ve);
                   om(Le, {
@@ -44804,12 +44802,12 @@ function rz(b, l) {
                       Ot = At(Ye);
                     {
                       var xe = Pt => {
-                          var Et = V8(),
+                          var Et = q8(),
                             Wt = k(Et);
                           let Lr;
-                          Wt.__click = [j8, Re];
+                          Wt.__click = [N8, Re];
                           var Kr = k(Wt);
-                          k8(Kr, {
+                          M8(Kr, {
                             class: "size-5"
                           });
                           var Hr = V(Kr);
@@ -44824,10 +44822,10 @@ function rz(b, l) {
                             Wt = At(Et);
                           {
                             var Lr = Hr => {
-                                var $r = Z8(),
+                                var $r = V8(),
                                   mr = k($r);
                                 let vr;
-                                mr.__click = [U8, Re];
+                                mr.__click = [j8, Re];
                                 var ai = k(mr);
                                 Eg(ai, {
                                   class: "size-5"
@@ -44844,10 +44842,10 @@ function rz(b, l) {
                                   mr = At($r);
                                 {
                                   var vr = Tt => {
-                                      var Ci = G8(),
+                                      var Ci = Z8(),
                                         di = k(Ci);
                                       let Pn;
-                                      di.__click = [$8, Re];
+                                      di.__click = [U8, Re];
                                       var Mt = k(di);
                                       Zy(Mt, {
                                         class: "size-5"
@@ -44864,11 +44862,11 @@ function rz(b, l) {
                                         di = At(Ci);
                                       {
                                         var Pn = Mt => {
-                                          var Ke = W8(),
+                                          var Ke = G8(),
                                             qt = k(Ke);
-                                          qt.__click = [H8, o, dt, X, W, l];
+                                          qt.__click = [$8, o, dt, X, W, l];
                                           var Gt = k(qt);
-                                          M8(Gt, {
+                                          P8(Gt, {
                                             class: "size-5"
                                           });
                                           var Dr = V(Gt);
@@ -44906,7 +44904,7 @@ function rz(b, l) {
               A(Lt), Ge((K, le) => {
                 var ve;
                 fe(Yt, `${K??""}:`), Or(dr, 1, `font-medium ${le??""} flex gap-1.5`), fe(Ir, ((ve = Dt.data) == null ? void 0 : ve.id) === x(dt).id ? Dt.data.name : x(dt).name), fe(ur, `#${x(dt).id??""}`)
-              }, [() => mT(), () => Zn(x(dt).id)]), H(wt, Lt)
+              }, [() => pT(), () => Zn(x(dt).id)]), H(wt, Lt)
             };
           Ve(It, wt => {
             x(_).paintedBy.id === 0 ? wt(ut) : wt(bt, !1)
@@ -44921,7 +44919,7 @@ function rz(b, l) {
   A(Ae);
   var _e = V(Ae, 2),
     ne = k(_e);
-  ne.__click = [Y8, l];
+  ne.__click = [X8, l];
   var Pe = k(ne);
   fh(Pe, {
     class: "size-4.5"
@@ -44933,13 +44931,13 @@ function rz(b, l) {
     var We = tt => {
       const pt = lt(() => Dt.data.favoriteLocations.find(Lt => Math.abs(Lt.latitude - x(W).center[0]) < 5e-5 && Math.abs(Lt.longitude - x(W).center[1]) < 5e-5)),
         It = lt(() => !x(pt) && Dt.data.favoriteLocations.length >= Dt.data.maxFavoriteLocations);
-      var ut = Q8();
+      var ut = Y8();
       let bt;
-      ut.__click = [J8, T, pt, W];
+      ut.__click = [K8, T, pt, W];
       var wt = k(ut);
       {
         let Lt = lt(() => !!x(pt));
-        L8(wt, {
+        E8(wt, {
           class: "size-4.5",
           get filled() {
             return x(Lt)
@@ -44951,14 +44949,14 @@ function rz(b, l) {
         bt = Or(ut, 1, "btn btn-primary btn-soft", null, bt, Lt), ut.disabled = x(T) || x(It), fe(dt, ` ${Xt??""}`)
       }, [() => ({
         "text-yellow-400": !!x(pt)
-      }), () => x(It) ? vT() : bT()]), H(tt, ut)
+      }), () => x(It) ? _T() : yT()]), H(tt, ut)
     };
     Ve(at, tt => {
       Dt.data && tt(We)
     })
   }
   var Ct = V(at, 2);
-  Ct.__click = [ez, l, W];
+  Ct.__click = [J8, l, W];
   var _t = k(Ct);
   ov(_t, {
     class: "size-4.5"
@@ -44966,11 +44964,11 @@ function rz(b, l) {
   var xt = V(_t);
   A(Ct), A(_e), A(ke), ps(ke, tt => oe(F, tt), () => x(F)), Ge((tt, pt) => {
     fe(ct, `Pixel: ${x(W).regionPixel[0]??""}, ${x(W).regionPixel[1]??""}`), ne.disabled = Dt.loading, fe(Me, ` ${tt??""}`), fe(xt, ` ${pt??""}`)
-  }, [() => Zg(), () => CT()]), $d("innerHeight", tt => oe(L, tt, !0)), H(b, ke), Pr()
+  }, [() => Zg(), () => wT()]), $d("innerHeight", tt => oe(L, tt, !0)), H(b, ke), Pr()
 }
 Wi(["click"]);
 
-function iz(b) {
+function tz(b) {
   var C;
   const l = document.createElement("div");
   (C = b.parentElement) == null || C.insertBefore(l, b.nextSibling);
@@ -44984,16 +44982,16 @@ function iz(b) {
     l.remove(), _.disconnect()
   }
 }
-var nz = _r('<svg><path d="M200-120v-680h360l16 80h224v400H520l-16-80H280v280h-80Z"></path></svg>'),
-  az = _r('<svg><path d="M200-120v-680h360l16 80h224v400H520l-16-80H280v280h-80Zm300-440Zm86 160h134v-240H510l-16-80H280v240h290l16 80Z"></path></svg>');
+var rz = _r('<svg><path d="M200-120v-680h360l16 80h224v400H520l-16-80H280v280h-80Z"></path></svg>'),
+  iz = _r('<svg><path d="M200-120v-680h360l16 80h224v400H520l-16-80H280v280h-80Zm300-440Zm86 160h134v-240H510l-16-80H280v240h290l16 80Z"></path></svg>');
 
-function sz(b, l) {
+function nz(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy", "filled"]);
   var C = Jt(),
     L = At(C);
   {
     var F = o => {
-        var Z = nz();
+        var Z = rz();
         Qt(Z, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
@@ -45002,7 +45000,7 @@ function sz(b, l) {
         })), H(o, Z)
       },
       T = o => {
-        var Z = az();
+        var Z = iz();
         Qt(Z, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
@@ -45016,19 +45014,19 @@ function sz(b, l) {
   }
   H(b, C)
 }
-var oz = Ie('<span class="loading loading-spinner center-absolute absolute"></span>'),
-  lz = Ie('<button class="btn btn-lg sm:btn-md btn-primary relative h-10"><!> <!> <span class="text-sm">Droplets</span></button>'),
-  cz = Ie('<span class="loading loading-spinner center-absolute absolute"></span>'),
-  uz = Ie('<!> <span class="text-sm"> </span>', 1),
-  hz = Ie('<span class="text-sm"> </span>'),
-  dz = Ie('<button><div class="tooltip-content max-w-54 p-2"> </div> <!> <!></button>'),
-  pz = Ie('<div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-6"><div class="font-flag flex grow items-center justify-center p-1 text-7xl"> </div> <p class="mt-2 text-center text-xl font-bold"> </p> <!> <div><!></div></div>'),
-  fz = (b, l) => {
+var az = Ie('<span class="loading loading-spinner center-absolute absolute"></span>'),
+  sz = Ie('<button class="btn btn-lg sm:btn-md btn-primary relative h-10"><!> <!> <span class="text-sm">Droplets</span></button>'),
+  oz = Ie('<span class="loading loading-spinner center-absolute absolute"></span>'),
+  lz = Ie('<!> <span class="text-sm"> </span>', 1),
+  cz = Ie('<span class="text-sm"> </span>'),
+  uz = Ie('<button><div class="tooltip-content max-w-54 p-2"> </div> <!> <!></button>'),
+  hz = Ie('<div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-6"><div class="font-flag flex grow items-center justify-center p-1 text-7xl"> </div> <p class="mt-2 text-center text-xl font-bold"> </p> <!> <div><!></div></div>'),
+  dz = (b, l) => {
     oe(l, !x(l))
   },
-  mz = Ie('<div><div class="text-primary flex items-center gap-1"><!> <h3 class="text-xl font-medium">Flags</h3></div> <p class="text-base-content/80 text-sm"> </p> <div class="grid-cols mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4"></div> <div class="mt-4 flex justify-center"><button class="btn btn-lg"> </button></div></div>');
+  pz = Ie('<div><div class="text-primary flex items-center gap-1"><!> <h3 class="text-xl font-medium">Flags</h3></div> <p class="text-base-content/80 text-sm"> </p> <div class="grid-cols mt-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-4"></div> <div class="mt-4 flex justify-center"><button class="btn btn-lg"> </button></div></div>');
 
-function _z(b, l) {
+function fz(b, l) {
   Sr(l, !0);
   const _ = (Ee, Ne = fa) => {
       const ft = lt(() => {
@@ -45036,7 +45034,7 @@ function _z(b, l) {
           return (((ne = Dt.data) == null ? void 0 : ne.droplets) ?? 0) >= T.price
         }),
         ht = lt(() => x(Z) === Ne().id);
-      var Xe = pz(),
+      var Xe = hz(),
         ct = k(Xe),
         Je = k(ct, !0);
       A(ct);
@@ -45057,7 +45055,7 @@ function _z(b, l) {
       var Q = k(Ae);
       {
         var te = ne => {
-            var Pe = lz();
+            var Pe = sz();
             Pe.__click = async () => {
               try {
                 const _t = Ne().id;
@@ -45077,7 +45075,7 @@ function _z(b, l) {
             var Me = k(Pe);
             {
               var at = _t => {
-                var xt = oz();
+                var xt = az();
                 H(_t, xt)
               };
               Ve(Me, _t => {
@@ -45098,7 +45096,7 @@ function _z(b, l) {
               var ut;
               return ((ut = Dt.data) == null ? void 0 : ut.equippedFlag) === Ne().id
             });
-            var Me = dz();
+            var Me = uz();
             let at;
             Me.__click = async () => {
               try {
@@ -45117,7 +45115,7 @@ function _z(b, l) {
             var _t = V(We, 2);
             {
               var xt = ut => {
-                var bt = cz();
+                var bt = oz();
                 H(ut, bt)
               };
               Ve(_t, ut => {
@@ -45127,19 +45125,19 @@ function _z(b, l) {
             var tt = V(_t, 2);
             {
               var pt = ut => {
-                  var bt = uz(),
+                  var bt = lz(),
                     wt = At(bt);
                   fc(wt, {
                     class: "size-4"
                   });
                   var dt = V(wt, 2),
                     Lt = k(dt, !0);
-                  A(dt), Ge(Xt => fe(Lt, Xt), [() => p2()]), H(ut, bt)
+                  A(dt), Ge(Xt => fe(Lt, Xt), [() => h2()]), H(ut, bt)
                 },
                 It = ut => {
-                  var bt = hz(),
+                  var bt = cz(),
                     wt = k(bt, !0);
-                  A(bt), Ge(dt => fe(wt, dt), [() => _2()]), H(ut, bt)
+                  A(bt), Ge(dt => fe(wt, dt), [() => f2()]), H(ut, bt)
                 };
               Ve(tt, ut => {
                 x(Pe) ? ut(pt) : ut(It, !1)
@@ -45149,7 +45147,7 @@ function _z(b, l) {
               at = Or(Me, 1, "btn btn-lg sm:btn-md tooltip tooltip-bottom relative h-10", null, at, ut), Me.disabled = x(ht), fe(Ct, bt)
             }, [() => ({
               "btn-warning": x(Pe)
-            }), () => u2()]), H(ne, Me)
+            }), () => l2()]), H(ne, Me)
           };
         Ve(Q, ne => {
           Ne().owned ? ne(_e, !1) : ne(te)
@@ -45172,10 +45170,10 @@ function _z(b, l) {
   let o = nt(!1),
     Z = nt(void 0),
     W = nt(void 0);
-  var ie = mz(),
+  var ie = pz(),
     pe = k(ie),
     ye = k(pe);
-  sz(ye, {
+  nz(ye, {
     class: "size-5.5",
     filled: !0
   }), fi(2), A(pe);
@@ -45198,25 +45196,25 @@ function _z(b, l) {
   }), A(we);
   var Re = V(we, 2),
     ke = k(Re);
-  ke.__click = [fz, o];
+  ke.__click = [dz, o];
   var Oe = k(ke, !0);
   A(ke), A(Re), A(ie), Ge(Ee => {
     fe(Se, Ee), fe(Oe, x(o) ? "Show less" : "Show more")
-  }, [() => o2()]), H(b, ie), Pr()
+  }, [() => a2()]), H(b, ie), Pr()
 }
 Wi(["click"]);
-var gz = Ie('<p class="mt-1 text-center text-sm"> </p>'),
-  vz = (b, l) => {
+var mz = Ie('<p class="mt-1 text-center text-sm"> </p>'),
+  _z = (b, l) => {
     kg(l, -1)
   },
-  yz = (b, l) => {
+  gz = (b, l) => {
     kg(l)
   },
-  xz = (b, l, _) => {
+  vz = (b, l, _) => {
     l(x(_))
   },
-  bz = Ie('<button class="text-base-content/80 absolute left-full top-1/2 ml-2 size-10 -translate-y-1/2 rounded-full text-[10px] font-bold">MAX</button>'),
-  wz = async (b, l, _, C) => {
+  yz = Ie('<button class="text-base-content/80 absolute left-full top-1/2 ml-2 size-10 -translate-y-1/2 rounded-full text-[10px] font-bold">MAX</button>'),
+  xz = async (b, l, _, C) => {
     try {
       oe(l, !0), await ni.purchase({
         id: _.productId,
@@ -45227,7 +45225,7 @@ var gz = Ie('<p class="mt-1 text-center text-sm"> </p>'),
     } finally {
       oe(l, !1)
     }
-  }, Tz = Ie('<span class="loading loading-spinner center-absolute absolute"></span>'), Cz = Ie('<div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-6"><div class="flex grow items-center justify-center"><!></div> <p class="mt-2 text-center text-2xl font-bold sm:text-3xl"> </p> <!> <div class="relative mt-4 flex justify-center gap-3"><button class="btn btn-circle">-</button> <input class="input number-input max-w-16 text-center font-bold opacity-80" type="number" min="1"/> <button class="btn btn-circle">+</button> <!></div> <div><button class="btn btn-xl btn-primary relative mt-3 h-10"><!> <!> <span class="text-sm">Droplets</span></button></div></div>');
+  }, bz = Ie('<span class="loading loading-spinner center-absolute absolute"></span>'), wz = Ie('<div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-6"><div class="flex grow items-center justify-center"><!></div> <p class="mt-2 text-center text-2xl font-bold sm:text-3xl"> </p> <!> <div class="relative mt-4 flex justify-center gap-3"><button class="btn btn-circle">-</button> <input class="input number-input max-w-16 text-center font-bold opacity-80" type="number" min="1"/> <button class="btn btn-circle">+</button> <!></div> <div><button class="btn btn-xl btn-primary relative mt-3 h-10"><!> <!> <span class="text-sm">Droplets</span></button></div></div>');
 
 function Pg(b, l) {
   Sr(l, !0);
@@ -45238,7 +45236,7 @@ function Pg(b, l) {
   Zr(() => {
     _() < 0 && _(0)
   });
-  var T = Cz(),
+  var T = wz(),
     o = k(T),
     Z = k(o);
   Ji(Z, () => l.icon ?? fa), A(o);
@@ -45248,7 +45246,7 @@ function Pg(b, l) {
   var pe = V(W, 2);
   {
     var ye = Be => {
-      var st = gz(),
+      var st = mz(),
         it = k(st, !0);
       A(st), Ge(() => fe(it, l.subtitle)), H(Be, st)
     };
@@ -45258,16 +45256,16 @@ function Pg(b, l) {
   }
   var X = V(pe, 2),
     Se = k(X);
-  Se.__click = [vz, _];
+  Se.__click = [_z, _];
   var we = V(Se, 2);
   ea(we);
   var Re = V(we, 2);
-  Re.__click = [yz, _];
+  Re.__click = [gz, _];
   var ke = V(Re, 2);
   {
     var Oe = Be => {
-      var st = bz();
-      st.__click = [xz, _, L], H(Be, st)
+      var st = yz();
+      st.__click = [vz, _, L], H(Be, st)
     };
     Ve(ke, Be => {
       _() < x(L) && Be(Oe)
@@ -45277,11 +45275,11 @@ function Pg(b, l) {
   var Ee = V(X, 2);
   let Ne;
   var ft = k(Ee);
-  ft.__click = [wz, F, l, _];
+  ft.__click = [xz, F, l, _];
   var ht = k(ft);
   {
     var Xe = Be => {
-      var st = Tz();
+      var st = bz();
       H(Be, st)
     };
     Ve(ht, Be => {
@@ -45300,9 +45298,21 @@ function Pg(b, l) {
   }), () => x(C).toLocaleString("en-US")]), qd(we, _), H(b, T), Pr()
 }
 Wi(["click"]);
-var Sz = _r('<svg><path d="M346-140 100-386q-10-10-15-22t-5-25q0-13 5-25t15-22l230-229-106-106 62-65 400 400q10 10 14.5 22t4.5 25q0 13-4.5 25T686-386L440-140q-10 10-22 15t-25 5q-13 0-25-5t-22-15Zm47-506L179-432h428L393-646Zm399 526q-36 0-61-25.5T706-208q0-27 13.5-51t30.5-47l42-54 44 54q16 23 30 47t14 51q0 37-26 62.5T792-120Z"></path></svg>');
+var Tz = _r('<svg><path d="M346-140 100-386q-10-10-15-22t-5-25q0-13 5-25t15-22l230-229-106-106 62-65 400 400q10 10 14.5 22t4.5 25q0 13-4.5 25T686-386L440-140q-10 10-22 15t-25 5q-13 0-25-5t-22-15Zm47-506L179-432h428L393-646Zm399 526q-36 0-61-25.5T706-208q0-27 13.5-51t30.5-47l42-54 44 54q16 23 30 47t14 51q0 37-26 62.5T792-120Z"></path></svg>');
 
-function Pz(b, l) {
+function Cz(b, l) {
+  let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
+  var C = Tz();
+  Qt(C, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ..._
+  })), H(b, C)
+}
+var Sz = _r('<svg><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"></path></svg>');
+
+function Rv(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
   var C = Sz();
   Qt(C, () => ({
@@ -45312,11 +45322,11 @@ function Pz(b, l) {
     ..._
   })), H(b, C)
 }
-var Iz = _r('<svg><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"></path></svg>');
+var Pz = _r('<svg><path d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z"></path></svg>');
 
-function Rv(b, l) {
+function Iz(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = Iz();
+  var C = Pz();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -45324,7 +45334,7 @@ function Rv(b, l) {
     ..._
   })), H(b, C)
 }
-var Mz = _r('<svg><path d="m700-300-57-56 84-84H120v-80h607l-83-84 57-56 179 180-180 180Z"></path></svg>');
+var Mz = _r('<svg><path d="M280-160v-80h400v80H280Zm160-160v-327L336-544l-56-56 200-200 200 200-56 56-104-103v327h-80Z"></path></svg>');
 
 function Az(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
@@ -45336,23 +45346,11 @@ function Az(b, l) {
     ..._
   })), H(b, C)
 }
-var kz = _r('<svg><path d="M280-160v-80h400v80H280Zm160-160v-327L336-544l-56-56 200-200 200 200-56 56-104-103v327h-80Z"></path></svg>');
+var kz = Ie('<div><section class="not-stuck:border-transparent stuck:border-base-content/10 bg-base-100/70 sticky top-0 z-10 border-b px-6 pb-4 pt-6 backdrop-blur-sm"><div class="relative flex items-center gap-1"><!> <h3 class="text-3xl font-bold"> </h3> <div class="ml-auto mr-4"><!></div> <form method="dialog" class="absolute -right-4 -top-4"><button class="btn btn-sm btn-circle btn-ghost">✕</button></form></div></section> <div class="flex flex-col gap-6 px-6 pb-6"><section><div class="text-primary flex items-center gap-1"><!> <h3 class="text-xl font-medium"> </h3></div> <p class="text-base-content/80 text-sm"> </p> <div class="mt-3 grid gap-3 sm:grid-cols-2"><!> <!></div></section> <section><div class="text-primary flex items-center gap-1"><!> <h3 class="text-xl font-medium"> </h3></div> <div class="mt-3"><div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-6"><div class="flex grow items-center justify-center"><div class="relative flex size-52 items-center justify-center"><div class="scale-[3]"><!></div></div></div> <p class="mt-2 text-center text-2xl font-bold sm:text-3xl"> </p> <p class="mt-1 text-center text-sm"> </p> <div><a href="/profile-picture"><button class="btn btn-xl btn-primary relative mt-3 h-10"><!> <span class="text-sm">Droplets</span></button></a></div></div></div></section> <section><!></section></div></div>'),
+  Ez = Ie('<span class="center-absolute absolute"><!></span>'),
+  zz = Ie('<dialog class="modal"><div class="modal-box max-h-11/12 w-11/12 max-w-4xl p-0"><!></div> <form method="dialog" class="modal-backdrop"><button> </button></form></dialog> <dialog class="modal"><div class="modal-box w-max overflow-hidden"><div class="flex flex-col items-center gap-6 px-4"><h2 class="text-lg font-semibold"> </h2> <div class="flex items-center gap-2 text-3xl sm:text-5xl"><span class="text-base-content/80 flex items-center gap-2"> <span class="text-primary text-3xl font-semibold max-sm:hidden"> </span></span> <span><!></span> <span class="text-primary flex font-bold"> </span></div> <form method="dialog"><button class="btn btn-primary btn-lg relative"> <!></button></form></div></div> <form method="dialog" class="modal-backdrop"><button> </button></form></dialog>', 1);
 
-function Ez(b, l) {
-  let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = kz();
-  Qt(C, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ..._
-  })), H(b, C)
-}
-var zz = Ie('<div><section class="not-stuck:border-transparent stuck:border-base-content/10 bg-base-100/70 sticky top-0 z-10 border-b px-6 pb-4 pt-6 backdrop-blur-sm"><div class="relative flex items-center gap-1"><!> <h3 class="text-3xl font-bold"> </h3> <div class="ml-auto mr-4"><!></div> <form method="dialog" class="absolute -right-4 -top-4"><button class="btn btn-sm btn-circle btn-ghost">✕</button></form></div></section> <div class="flex flex-col gap-6 px-6 pb-6"><section><div class="text-primary flex items-center gap-1"><!> <h3 class="text-xl font-medium"> </h3></div> <p class="text-base-content/80 text-sm"> </p> <div class="mt-3 grid gap-3 sm:grid-cols-2"><!> <!></div></section> <section><div class="text-primary flex items-center gap-1"><!> <h3 class="text-xl font-medium"> </h3></div> <div class="mt-3"><div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-6"><div class="flex grow items-center justify-center"><div class="relative flex size-52 items-center justify-center"><div class="scale-[3]"><!></div></div></div> <p class="mt-2 text-center text-2xl font-bold sm:text-3xl"> </p> <p class="mt-1 text-center text-sm"> </p> <div><a href="/profile-picture"><button class="btn btn-xl btn-primary relative mt-3 h-10"><!> <span class="text-sm">Droplets</span></button></a></div></div></div></section> <section><!></section></div></div>'),
-  Lz = Ie('<span class="center-absolute absolute"><!></span>'),
-  Dz = Ie('<dialog class="modal"><div class="modal-box max-h-11/12 w-11/12 max-w-4xl p-0"><!></div> <form method="dialog" class="modal-backdrop"><button> </button></form></dialog> <dialog class="modal"><div class="modal-box w-max overflow-hidden"><div class="flex flex-col items-center gap-6 px-4"><h2 class="text-lg font-semibold"> </h2> <div class="flex items-center gap-2 text-3xl sm:text-5xl"><span class="text-base-content/80 flex items-center gap-2"> <span class="text-primary text-3xl font-semibold max-sm:hidden"> </span></span> <span><!></span> <span class="text-primary flex font-bold"> </span></div> <form method="dialog"><button class="btn btn-primary btn-lg relative"> <!></button></form></div></div> <form method="dialog" class="modal-backdrop"><button> </button></form></dialog>', 1);
-
-function Rz(b, l) {
+function Lz(b, l) {
   Sr(l, !0);
   let _ = zt(l, "open", 15),
     C = nt(void 0),
@@ -45378,13 +45376,13 @@ function Rz(b, l) {
     o = {
       product: $n.products[120]
     };
-  var Z = Dz(),
+  var Z = zz(),
     W = At(Z),
     ie = k(W),
     pe = k(ie);
   {
     var ye = Me => {
-      var at = zz(),
+      var at = kz(),
         We = k(at),
         Ct = k(We),
         _t = k(Ct);
@@ -45407,12 +45405,12 @@ function Rz(b, l) {
           }
         })
       }
-      A(pt), fi(2), A(Ct), A(We), On(We, () => iz);
+      A(pt), fi(2), A(Ct), A(We), On(We, () => tz);
       var ut = V(We, 2),
         bt = k(ut),
         wt = k(bt),
         dt = k(wt);
-      Pz(dt, {
+      Cz(dt, {
         class: "size-5.5",
         filled: !0
       });
@@ -45426,7 +45424,7 @@ function Rz(b, l) {
         Ft = k(ar);
       {
         const Pt = Wt => {
-          Ez(Wt, {
+          Az(Wt, {
             class: "text-primary size-26"
           })
         };
@@ -45476,7 +45474,7 @@ function Rz(b, l) {
           get productId() {
             return T.id
           },
-          title: Wt => Qw({
+          title: Wt => Yw({
             amount: T.product.items[0].amount * Wt
           }),
           get subtitle() {
@@ -45492,7 +45490,7 @@ function Rz(b, l) {
             var Kr, Hr, $r;
             const Lr = (Hr = (Kr = Dt.data) == null ? void 0 : Kr.charges) == null ? void 0 : Hr.count;
             await Dt.refresh(), Lr !== void 0 && (oe(L, {
-              name: Kw(),
+              name: Ww(),
               prev: Math.floor(Lr),
               new: Math.floor(Lr + T.product.items[0].amount * Wt)
             }, !0), ($r = x(C)) == null || $r.show())
@@ -45549,9 +45547,9 @@ function Rz(b, l) {
       fi(), A(ot), A(Ze), A(Le), A(kr), A(Ar), A(gr);
       var xe = V(gr, 2),
         kt = k(xe);
-      _z(kt, {}), A(xe), A(ut), A(at), Ge((Pt, Et, Wt, Lr, Kr, Hr, $r, mr, vr) => {
+      fz(kt, {}), A(xe), A(ut), A(at), Ge((Pt, Et, Wt, Lr, Kr, Hr, $r, mr, vr) => {
         fe(tt, Pt), fe(Xt, Et), fe(nr, Wt), fe(Mr, Lr), fe(K, Kr), fe(ve, Hr), zr(Le, "data-tip", $r), Ce = Or(Le, 1, "", null, Ce, mr), ot.disabled = Dt.data.droplets < o.product.price, fe(Ot, ` ${vr??""} `)
-      }, [() => jg(), () => J1(), () => tb(), () => n2(), () => ub(), () => pb(), () => Hd(), () => ({
+      }, [() => jg(), () => J1(), () => tb(), () => r2(), () => ub(), () => pb(), () => Hd(), () => ({
         tooltip: Dt.data.droplets < o.product.price
       }), () => o.product.price.toLocaleString("en-US")]), En(2, at, () => Qn), H(Me, at)
     };
@@ -45582,7 +45580,7 @@ function Rz(b, l) {
   A(ct), A(ht);
   var Be = V(ht, 2),
     st = k(Be);
-  Az(st, {
+  Iz(st, {
     class: "size-5"
   }), A(Be);
   var it = V(Be, 2),
@@ -45593,7 +45591,7 @@ function Rz(b, l) {
     Q = k(vt),
     te = V(Q);
   Pu(te, () => x(L).new, Me => {
-    var at = Lz(),
+    var at = Ez(),
       We = k(at);
     hm(We, {}), A(at), H(Me, at)
   }), A(vt), A(Ae), A(Oe), A(ke);
@@ -45604,7 +45602,19 @@ function Rz(b, l) {
     fe(we, Me), fe(Ne, x(L).name), fe(Xe, `${x(L).prev??""} `), fe(Je, `(+${x(L).new-x(L).prev})`), fe(Qe, x(L).new), fe(Q, `${at??""} `), fe(Pe, We)
   }, [() => tc(), () => tc(), () => tc()]), an("close", W, () => _(!1)), H(b, Z), Pr()
 }
-var Bz = _r('<svg><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"></path></svg>');
+var Dz = _r('<svg><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"></path></svg>');
+
+function Rz(b, l) {
+  let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
+  var C = Dz();
+  Qt(C, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ..._
+  })), H(b, C)
+}
+var Bz = _r('<svg><path d="M480-680q-33 0-56.5-23.5T400-760q0-33 23.5-56.5T480-840q33 0 56.5 23.5T560-760q0 33-23.5 56.5T480-680Zm-60 560v-480h120v480H420Z"></path></svg>');
 
 function Fz(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
@@ -45616,7 +45626,7 @@ function Fz(b, l) {
     ..._
   })), H(b, C)
 }
-var Oz = _r('<svg><path d="M480-680q-33 0-56.5-23.5T400-760q0-33 23.5-56.5T480-840q33 0 56.5 23.5T560-760q0 33-23.5 56.5T480-680Zm-60 560v-480h120v480H420Z"></path></svg>');
+var Oz = _r('<svg><path d="M440-40v-80q-125-14-214.5-103.5T122-438H42v-80h80q14-125 103.5-214.5T440-836v-80h80v80q125 14 214.5 103.5T838-518h80v80h-80q-14 125-103.5 214.5T520-120v80h-80Zm40-158q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Z"></path></svg>');
 
 function Nz(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
@@ -45628,7 +45638,7 @@ function Nz(b, l) {
     ..._
   })), H(b, C)
 }
-var qz = _r('<svg><path d="M440-40v-80q-125-14-214.5-103.5T122-438H42v-80h80q14-125 103.5-214.5T440-836v-80h80v80q125 14 214.5 103.5T838-518h80v80h-80q-14 125-103.5 214.5T520-120v80h-80Zm40-158q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Z"></path></svg>');
+var qz = _r('<svg><path d="M440-42v-80q-125-14-214.5-103.5T122-440H42v-80h80q14-125 103.5-214.5T440-838v-80h80v80q125 14 214.5 103.5T838-520h80v80h-80q-14 125-103.5 214.5T520-122v80h-80Zm40-158q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-120q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Z"></path></svg>');
 
 function jz(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
@@ -45640,7 +45650,7 @@ function jz(b, l) {
     ..._
   })), H(b, C)
 }
-var Vz = _r('<svg><path d="M440-42v-80q-125-14-214.5-103.5T122-440H42v-80h80q14-125 103.5-214.5T440-838v-80h80v80q125 14 214.5 103.5T838-520h80v80h-80q-14 125-103.5 214.5T520-122v80h-80Zm40-158q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-120q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Z"></path></svg>');
+var Vz = _r('<svg><path d="M380-720v-98L142-580h98v60H40v-200h60v98l238-238h-98v-60h200v200h-60ZM593-40q-24 0-46-9t-39-26L304-280l30-31q16-16 37.5-21.5t42.5.5l66 19v-327q0-17 11.5-28.5T520-680q17 0 28.5 11.5T560-640v433l-97-27 102 102q5 5 12.5 8.5T593-120h167q33 0 56.5-23.5T840-200v-160q0-17 11.5-28.5T880-400q17 0 28.5 11.5T920-360v160q0 66-47 113T760-40H593Zm7-280v-160q0-17 11.5-28.5T640-520q17 0 28.5 11.5T680-480v160h-80Zm120 0v-120q0-17 11.5-28.5T760-480q17 0 28.5 11.5T800-440v120h-80Zm-20 80Z"></path></svg>');
 
 function Uz(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
@@ -45652,7 +45662,7 @@ function Uz(b, l) {
     ..._
   })), H(b, C)
 }
-var Zz = _r('<svg><path d="M380-720v-98L142-580h98v60H40v-200h60v98l238-238h-98v-60h200v200h-60ZM593-40q-24 0-46-9t-39-26L304-280l30-31q16-16 37.5-21.5t42.5.5l66 19v-327q0-17 11.5-28.5T520-680q17 0 28.5 11.5T560-640v433l-97-27 102 102q5 5 12.5 8.5T593-120h167q33 0 56.5-23.5T840-200v-160q0-17 11.5-28.5T880-400q17 0 28.5 11.5T920-360v160q0 66-47 113T760-40H593Zm7-280v-160q0-17 11.5-28.5T640-520q17 0 28.5 11.5T680-480v160h-80Zm120 0v-120q0-17 11.5-28.5T760-480q17 0 28.5 11.5T800-440v120h-80Zm-20 80Z"></path></svg>');
+var Zz = _r('<svg><path d="M280-200v-80h284q63 0 109.5-40T720-420q0-60-46.5-100T564-560H312l104 104-56 56-200-200 200-200 56 56-104 104h252q97 0 166.5 63T800-420q0 94-69.5 157T564-200H280Z"></path></svg>');
 
 function $z(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
@@ -45664,23 +45674,11 @@ function $z(b, l) {
     ..._
   })), H(b, C)
 }
-var Gz = _r('<svg><path d="M280-200v-80h284q63 0 109.5-40T720-420q0-60-46.5-100T564-560H312l104 104-56 56-200-200 200-200 56 56-104 104h252q97 0 166.5 63T800-420q0 94-69.5 157T564-200H280Z"></path></svg>');
+var Gz = _r('<svg><path d="m644-428-58-58q9-47-27-88t-93-32l-58-58q17-8 34.5-12t37.5-4q75 0 127.5 52.5T660-500q0 20-4 37.5T644-428Zm128 126-58-56q38-29 67.5-63.5T832-500q-50-101-143.5-160.5T480-720q-29 0-57 4t-55 12l-62-62q41-17 84-25.5t90-8.5q151 0 269 83.5T920-500q-23 59-60.5 109.5T772-302Zm20 246L624-222q-35 11-70.5 16.5T480-200q-151 0-269-83.5T40-500q21-53 53-98.5t73-81.5L56-792l56-56 736 736-56 56ZM222-624q-29 26-53 57t-41 67q50 101 143.5 160.5T480-280q20 0 39-2.5t39-5.5l-36-38q-11 3-21 4.5t-21 1.5q-75 0-127.5-52.5T300-500q0-11 1.5-21t4.5-21l-84-82Zm319 93Zm-151 75Z"></path></svg>');
 
 function Hz(b, l) {
   let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
   var C = Gz();
-  Qt(C, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ..._
-  })), H(b, C)
-}
-var Wz = _r('<svg><path d="m644-428-58-58q9-47-27-88t-93-32l-58-58q17-8 34.5-12t37.5-4q75 0 127.5 52.5T660-500q0 20-4 37.5T644-428Zm128 126-58-56q38-29 67.5-63.5T832-500q-50-101-143.5-160.5T480-720q-29 0-57 4t-55 12l-62-62q41-17 84-25.5t90-8.5q151 0 269 83.5T920-500q-23 59-60.5 109.5T772-302Zm20 246L624-222q-35 11-70.5 16.5T480-200q-151 0-269-83.5T40-500q21-53 53-98.5t73-81.5L56-792l56-56 736 736-56 56ZM222-624q-29 26-53 57t-41 67q50 101 143.5 160.5T480-280q20 0 39-2.5t39-5.5l-36-38q-11 3-21 4.5t-21 1.5q-75 0-127.5-52.5T300-500q0-11 1.5-21t4.5-21l-84-82Zm319 93Zm-151 75Z"></path></svg>');
-
-function Xz(b, l) {
-  let _ = er(l, ["$$slots", "$$events", "$$legacy"]);
-  var C = Wz();
   Qt(C, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -45700,27 +45698,27 @@ function vf(b) {
   })
 }
 
-function Kz(b) {
+function Wz(b) {
   const l = document.createElement("canvas");
   l.width = b.naturalWidth, l.height = b.naturalHeight;
   const _ = l.getContext("2d");
   return _ == null || _.drawImage(b, 0, 0), l
 }
 
-function Yz(b, l, _) {
+function Xz(b, l, _) {
   return b < l ? l : b > _ ? _ : b
 }
 
-function Jz(b, l) {
+function Kz(b, l) {
   const _ = 10 ** l;
   return Math.round(b * _) / _
 }
-var Qz = Ie('<meta property="og:title" content="Wplace - A massive real-time pixel art canvas on the world map!"/> <meta name="twitter:title" content="Wplace - A massive real-time pixel art canvas on the world map!"/> <meta name="robots" content="index, follow, max-image-preview:large"/> <meta name="color-scheme" content="light only"/>', 1),
-  eL = (b, l) => {
+var Yz = Ie('<meta property="og:title" content="Wplace - A massive real-time pixel art canvas on the world map!"/> <meta name="twitter:title" content="Wplace - A massive real-time pixel art canvas on the world map!"/> <meta name="robots" content="index, follow, max-image-preview:large"/> <meta name="color-scheme" content="light only"/>', 1),
+  Jz = (b, l) => {
     oe(l, !x(l))
   },
-  tL = Ie("<button><!></button>"),
-  rL = async (b, l, _, C) => {
+  Qz = Ie("<button><!></button>"),
+  eL = async (b, l, _, C) => {
     var L;
     x(l) || oe(l, await new Promise((F, T) => {
       navigator.geolocation.getCurrentPosition(o => {
@@ -45738,51 +45736,51 @@ var Qz = Ie('<meta property="og:title" content="Wplace - A massive real-time pix
       },
       zoom: 16.5
     }))
-  }, iL = Ie('<div class="relative"><!> <span class="center-absolute absolute text-[10px] text-red-400">?</span></div>'), nL = Ie('<button class="btn btn-lg btn-square sm:btn-xl z-30 shadow-md"><!></button>'), aL = (b, l, _, C) => {
+  }, tL = Ie('<div class="relative"><!> <span class="center-absolute absolute text-[10px] text-red-400">?</span></div>'), rL = Ie('<button class="btn btn-lg btn-square sm:btn-xl z-30 shadow-md"><!></button>'), iL = (b, l, _, C) => {
     var L;
     oe(l, !0), x(_) && Qa((L = x(_)) == null ? void 0 : L.getCenter(), x(C))
-  }, sL = Ie('<button class="btn btn-primary shadow-xl"> </button>'), oL = Ie('<a class="badge badge-secondary absolute -left-2 top-0 -translate-x-full translate-y-1/2 font-semibold" target="_blank"> </a>'), lL = Ie('<div class="relative"><!> <!></div>'), cL = (b, l, _, C) => {
+  }, nL = Ie('<button class="btn btn-primary shadow-xl"> </button>'), aL = Ie('<a class="badge badge-secondary absolute -left-2 top-0 -translate-x-full translate-y-1/2 font-semibold" target="_blank"> </a>'), sL = Ie('<div class="relative"><!> <!></div>'), oL = (b, l, _, C) => {
     var F;
     oe(l, !0);
     const L = (F = x(_)) == null ? void 0 : F.getCenter();
     L && Qa(L, x(C))
-  }, uL = Ie('<button class="btn btn-square shadow-md"><!></button>'), hL = (b, l) => {
+  }, lL = Ie('<button class="btn btn-square shadow-md"><!></button>'), cL = (b, l) => {
     oe(l, !0)
-  }, dL = Ie('<button class="btn btn-square relative shadow-md"><!></button>'), pL = (b, l) => {
+  }, uL = Ie('<button class="btn btn-square relative shadow-md"><!></button>'), hL = (b, l) => {
     oe(l, !0)
-  }, fL = Ie('<button class="btn btn-square relative shadow-md"><!></button>'), mL = Ie('<div class="flex flex-col items-center gap-3"><!> <!> <!> <!></div>'), _L = (b, l) => {
+  }, dL = Ie('<button class="btn btn-square relative shadow-md"><!></button>'), pL = Ie('<div class="flex flex-col items-center gap-3"><!> <!> <!> <!></div>'), fL = (b, l) => {
     oe(l, !x(l))
-  }, gL = Ie('<div class="flex flex-col gap-3"><button><!></button></div>'), vL = Ie('<div class="z-100 absolute bottom-1 left-1/2 -translate-x-1/2"><!></div>'), yL = (b, l) => {
+  }, mL = Ie('<div class="flex flex-col gap-3"><button><!></button></div>'), _L = Ie('<div class="z-100 absolute bottom-1 left-1/2 -translate-x-1/2"><!></div>'), gL = (b, l) => {
     oe(l, !0)
-  }, xL = Ie('<button class="btn btn-sm btn-circle"><!></button>'), bL = (b, l) => {
+  }, vL = Ie('<button class="btn btn-sm btn-circle"><!></button>'), yL = (b, l) => {
     var _;
     (_ = x(l)) == null || _.zoomIn()
-  }, wL = (b, l) => {
+  }, xL = (b, l) => {
     var _;
     (_ = x(l)) == null || _.zoomOut()
-  }, TL = Ie('<button class="btn btn-sm btn-circle"><!></button>'), CL = () => {
+  }, bL = Ie('<button class="btn btn-sm btn-circle"><!></button>'), wL = () => {
     window.location.replace(La.url.origin)
-  }, SL = Ie('<button class="btn btn-sm btn-circle not-pwa:hidden"><!></button>'), PL = (b, l) => {
+  }, TL = Ie('<button class="btn btn-sm btn-circle not-pwa:hidden"><!></button>'), CL = (b, l) => {
     x(l) && Ho.goToPrev(x(l))
-  }, IL = Ie('<button class="btn btn-sm btn-circle"><!></button>'), ML = Ie('<div class="btn btn-sm btn-error w-max cursor-auto text-nowrap text-xs sm:text-base"><!> </div>'), AL = (b, l, _) => {
+  }, SL = Ie('<button class="btn btn-sm btn-circle"><!></button>'), PL = Ie('<div class="btn btn-sm btn-error w-max cursor-auto text-nowrap text-xs sm:text-base"><!> </div>'), IL = (b, l, _) => {
     var C;
     (C = x(l)) == null || C.flyTo({
       center: x(l).getCenter(),
       zoom: _
     })
-  }, kL = Ie('<button class="btn sm:btn-lg duration text-nowrap text-xs transition-opacity sm:text-base"><!> </button>'), EL = Ie("<span></span>"), zL = Ie('<div class="absolute bottom-0 left-0 z-50 w-full sm:left-1/2 sm:max-w-md sm:-translate-x-1/2 md:max-w-lg"><div class="rounded-t-box bg-base-100 border-base-300 sm:rounded-b-box w-full border-t pt-2 sm:mb-3 sm:shadow-xl"><!></div></div>'), LL = Ie('<div class="absolute bottom-0 left-0 z-50 w-full"><div class="rounded-t-box bg-base-100 border-base-300 w-full border-t py-3"><!></div></div>'), DL = (b, l) => {
+  }, ML = Ie('<button class="btn sm:btn-lg duration text-nowrap text-xs transition-opacity sm:text-base"><!> </button>'), AL = Ie("<span></span>"), kL = Ie('<div class="absolute bottom-0 left-0 z-50 w-full sm:left-1/2 sm:max-w-md sm:-translate-x-1/2 md:max-w-lg"><div class="rounded-t-box bg-base-100 border-base-300 sm:rounded-b-box w-full border-t pt-2 sm:mb-3 sm:shadow-xl"><!></div></div>'), EL = Ie('<div class="absolute bottom-0 left-0 z-50 w-full"><div class="rounded-t-box bg-base-100 border-base-300 w-full border-t py-3"><!></div></div>'), zL = (b, l) => {
     oe(l, {
       name: "mainMenu"
     }, !0)
-  }, RL = Ie('<div class="absolute bottom-0 left-0 z-50 w-full sm:left-1/2 sm:max-w-md sm:-translate-x-1/2"><div class="rounded-t-box bg-base-100 border-base-300 sm:rounded-b-box w-full border-t pt-2 sm:mb-3 sm:shadow-xl"><div class="px-3 pb-2 pt-1"><div class="flex items-center justify-between"><span><!> </span> <button class="btn btn-circle btn-sm"><!></button></div> <div class="mt-1 flex items-center justify-center gap-4"><button class="btn btn-primary w-46"><!></button></div></div></div></div>'), BL = Ie('<div class="disable-pinch-zoom relative h-full overflow-hidden svelte-6wmtgk"><div id="map" class="h-screen w-screen cursor-default"></div> <div><div><!> <!></div></div> <!> <div><!> <div class="flex flex-col gap-1 max-sm:hidden"><button class="btn btn-sm btn-circle">+</button> <button class="btn btn-sm btn-circle">-</button></div> <div class="max-sm:hidden"><a href="https://www.twitch.tv/directory/category/wplace" class="btn btn-sm btn-circle" target="_blank" title="Livestreams"><!></a></div> <!> <!> <!></div> <div><!> <!></div> <div><!></div> <div><!></div> <div><!></div>  <!></div> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!>', 1);
+  }, LL = Ie('<div class="absolute bottom-0 left-0 z-50 w-full sm:left-1/2 sm:max-w-md sm:-translate-x-1/2"><div class="rounded-t-box bg-base-100 border-base-300 sm:rounded-b-box w-full border-t pt-2 sm:mb-3 sm:shadow-xl"><div class="px-3 pb-2 pt-1"><div class="flex items-center justify-between"><span><!> </span> <button class="btn btn-circle btn-sm"><!></button></div> <div class="mt-1 flex items-center justify-center gap-4"><button class="btn btn-primary w-46"><!></button></div></div></div></div>'), DL = Ie('<div class="disable-pinch-zoom relative h-full overflow-hidden svelte-6wmtgk"><div id="map" class="h-screen w-screen cursor-default"></div> <div><div><!> <!></div></div> <!> <div><!> <div class="flex flex-col gap-1 max-sm:hidden"><button class="btn btn-sm btn-circle">+</button> <button class="btn btn-sm btn-circle">-</button></div> <div class="max-sm:hidden"><a href="https://www.twitch.tv/directory/category/wplace" class="btn btn-sm btn-circle" target="_blank" title="Livestreams"><!></a></div> <!> <!> <!></div> <div><!> <!></div> <div><!></div> <div><!></div> <div><!></div>  <!></div> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!>', 1);
 
-function hD(b, l) {
+function cD(b, l) {
   Sr(l, !0);
   const _ = og,
     C = tx,
     L = new hc(C),
     F = _ - .4,
-    T = MP(La.url),
+    T = PP(La.url),
     o = T.season ?? sg,
     Z = new Map;
   let W = nt(void 0),
@@ -45827,7 +45825,7 @@ function hD(b, l) {
     const gt = T.pos ? {
       ...T.pos,
       zoom: x(ie)
-    } : await vP();
+    } : await _P();
     T.zoom !== void 0 && (gt.zoom = T.zoom);
     const jt = await new Promise(Mi => {
       const Cr = new bd.Map({
@@ -45862,7 +45860,7 @@ function hD(b, l) {
     let Di = x(ie);
     jt.on("zoom", () => {
       oe(ie, jt.getZoom(), !0);
-      const Mi = Jz(x(ie), 1);
+      const Mi = Kz(x(ie), 1);
       Mi != Di && (x(Ae) && x(Ae).setOpacity(vt(Di)), Di = Mi)
     });
     let $i = "default";
@@ -45885,7 +45883,7 @@ function hD(b, l) {
       }
       const Ht = jt.getZoom();
       if (Ht < F) {
-        jr.info(IC());
+        jr.info(SC());
         return
       }
       Qa({
@@ -45931,7 +45929,7 @@ function hD(b, l) {
   async function Xe() {
     var gt, jt, yr, _i;
     if (!((gt = x(W)) != null && gt.getSource(Ee))) {
-      const Di = Kz(await vf(_P));
+      const Di = Wz(await vf(fP));
       (jt = x(W)) == null || jt.addSource(Ee, {
         type: "canvas",
         canvas: Di,
@@ -45996,7 +45994,7 @@ function hD(b, l) {
   });
 
   function vt(gt) {
-    return gt < _ ? "1.0" : Yz((gt - _) * .2, .5, 1).toFixed(2)
+    return gt < _ ? "1.0" : Xz((gt - _) * .2, .5, 1).toFixed(2)
   }
   let Q = nt(void 0);
   Zr(() => {
@@ -46121,7 +46119,7 @@ function hD(b, l) {
   let ar = nt(!1),
     Ft = Date.now();
   Ii(() => {
-    const gt = IP(),
+    const gt = SP(),
       jt = () => {
         var _i;
         if (!document.hidden && Date.now() - Ft > 30 * Yl.min) {
@@ -46170,16 +46168,16 @@ function hD(b, l) {
     qr = nt(void 0),
     ur = nt(void 0),
     Mr = nt(0);
-  var Ar = BL();
+  var Ar = DL();
   Vy(gt => {
-    var jt = Qz();
+    var jt = Yz();
     jy.title = "Wplace - Paint the world", fi(6), H(gt, jt)
   });
   var kr = At(Ar);
   {
     const gt = tr => {
-        var Ht = tL();
-        Ht.__click = [eL, Je];
+        var Ht = Qz();
+        Ht.__click = [Jz, Je];
         var ei = k(Ht);
         {
           let ri = lt(() => !x(Je));
@@ -46199,19 +46197,19 @@ function hD(b, l) {
         }, [() => Ug()]), H(tr, Ht)
       },
       jt = tr => {
-        var Ht = nL();
-        Ht.__click = [rL, st, ie, W];
+        var Ht = rL();
+        Ht.__click = [eL, st, ie, W];
         var ei = k(Ht);
         {
           var ri = ci => {
-              Uz(ci, {
+              jz(ci, {
                 class: "size-5.5 fill-blue-800"
               })
             },
             gi = ci => {
-              var pi = iL(),
+              var pi = tL(),
                 Er = k(pi);
-              jz(Er, {
+              Nz(Er, {
                 class: "size-5.5 fill-red-400"
               }), fi(2), A(pi), H(ci, pi)
             };
@@ -46228,8 +46226,8 @@ function hD(b, l) {
     var O = k(ce);
     {
       var j = tr => {
-          var Ht = sL();
-          Ht.__click = [aL, _e, W, ie];
+          var Ht = nL();
+          Ht.__click = [iL, _e, W, ie];
           var ei = k(Ht, !0);
           A(Ht), Ge(ri => fe(ei, ri), [() => Ax()]), H(tr, Ht)
         },
@@ -46238,11 +46236,11 @@ function hD(b, l) {
             ei = At(Ht);
           {
             var ri = gi => {
-              var ci = lL(),
+              var ci = sL(),
                 pi = k(ci);
               {
                 var Er = ui => {
-                  var Jr = oL(),
+                  var Jr = aL(),
                     ti = k(Jr, !0);
                   A(Jr), Ge(() => {
                     var xr;
@@ -46255,7 +46253,7 @@ function hD(b, l) {
                 })
               }
               var Ri = V(pi, 2);
-              a8(Ri, {
+              i8(Ri, {
                 get user() {
                   return Dt
                 },
@@ -46290,15 +46288,15 @@ function hD(b, l) {
     var K = V(O, 2);
     {
       var le = tr => {
-          var Ht = mL(),
+          var Ht = pL(),
             ei = k(Ht);
           {
             var ri = Ri => {
               _f(Ri, {
                 key: "shop-profile-picture",
                 children: (ui, Jr) => {
-                  var ti = uL();
-                  ti.__click = [cL, ne, W, ie];
+                  var ti = lL();
+                  ti.__click = [oL, ne, W, ie];
                   var xr = k(ti);
                   Rv(xr, {
                     class: "size-5"
@@ -46316,8 +46314,8 @@ function hD(b, l) {
           var gi = V(ei, 2);
           {
             var ci = Ri => {
-              var ui = dL();
-              ui.__click = [hL, We];
+              var ui = uL();
+              ui.__click = [cL, We];
               var Jr = k(ui);
               Kd(Jr, {
                 class: "size-5"
@@ -46328,7 +46326,7 @@ function hD(b, l) {
             })
           }
           var pi = V(gi, 2);
-          d8(pi, {
+          u8(pi, {
             get map() {
               return x(W)
             },
@@ -46340,12 +46338,12 @@ function hD(b, l) {
           _f(Er, {
             key: "region-leaderboard",
             children: (Ri, ui) => {
-              var Jr = fL();
-              Jr.__click = [pL, Pe];
+              var Jr = dL();
+              Jr.__click = [hL, Pe];
               var ti = k(Jr);
               Mv(ti, {
                 class: "size-5"
-              }), A(Jr), Ge(xr => zr(Jr, "title", xr), [() => Kf()]), H(Ri, Jr)
+              }), A(Jr), Ge(xr => zr(Jr, "title", xr), [() => Yf()]), H(Ri, Jr)
             },
             $$slots: {
               default: !0
@@ -46359,10 +46357,10 @@ function hD(b, l) {
             ei = At(Ht);
           {
             var ri = gi => {
-              var ci = gL(),
+              var ci = mL(),
                 pi = k(ci);
               let Er;
-              pi.__click = [_L, pe];
+              pi.__click = [fL, pe];
               var Ri = k(pi);
               {
                 var ui = ti => {
@@ -46402,7 +46400,7 @@ function hD(b, l) {
     var Le = V(Nr, 2);
     {
       var Ce = tr => {
-        var Ht = vL(),
+        var Ht = _L(),
           ei = k(Ht);
         {
           let ri = lt(() => ix.trim());
@@ -46436,10 +46434,10 @@ function hD(b, l) {
         _f(tr, {
           key: "info",
           children: (Ht, ei) => {
-            var ri = xL();
-            ri.__click = [yL, at];
+            var ri = vL();
+            ri.__click = [gL, at];
             var gi = k(ri);
-            Nz(gi, {
+            Fz(gi, {
               class: "size-3.5"
             }), A(ri), Ge(ci => zr(ri, "title", ci), [() => Zx()]), H(Ht, ri)
           },
@@ -46454,9 +46452,9 @@ function hD(b, l) {
     }
     var Ot = V(ot, 2),
       xe = k(Ot);
-    xe.__click = [bL, W];
+    xe.__click = [yL, W];
     var kt = V(xe, 2);
-    kt.__click = [wL, W], A(Ot);
+    kt.__click = [xL, W], A(Ot);
     var Pt = V(Ot, 2),
       Et = k(Pt),
       Wt = k(Et);
@@ -46466,14 +46464,14 @@ function hD(b, l) {
     var Lr = V(Pt, 2);
     {
       var Kr = tr => {
-        var Ht = TL(),
+        var Ht = bL(),
           ei = k(Ht);
-        Xz(ei, {
+        Hz(ei, {
           class: "size-4",
           onclick: () => {
             oe(X, !x(X))
           }
-        }), A(Ht), Ge(ri => zr(Ht, "title", ri), [() => Ob()]), H(tr, Ht)
+        }), A(Ht), Ge(ri => zr(Ht, "title", ri), [() => Bb()]), H(tr, Ht)
       };
       Ve(Lr, tr => {
         x(ye) && tr(Kr)
@@ -46482,8 +46480,8 @@ function hD(b, l) {
     var Hr = V(Lr, 2);
     {
       var $r = tr => {
-        var Ht = SL();
-        Ht.__click = [CL];
+        var Ht = TL();
+        Ht.__click = [wL];
         var ei = k(Ht);
         bx(ei, {
           class: "size-3"
@@ -46496,10 +46494,10 @@ function hD(b, l) {
     var mr = V(Hr, 2);
     {
       var vr = tr => {
-        var Ht = IL();
-        Ht.__click = [PL, W];
+        var Ht = SL();
+        Ht.__click = [CL, W];
         var ei = k(Ht);
-        Hz(ei, {
+        $z(ei, {
           class: "size-3"
         }), A(Ht), Ge((ri, gi) => {
           zr(Ht, "title", ri), Ht.disabled = gi
@@ -46520,7 +46518,7 @@ function hD(b, l) {
     var Tt = k(ai);
     {
       var Ci = tr => {
-        var Ht = ML(),
+        var Ht = PL(),
           ei = k(Ht);
         Tx(ei, {
           class: "size-5"
@@ -46537,10 +46535,10 @@ function hD(b, l) {
     var di = V(Tt, 2);
     {
       var Pn = tr => {
-        var Ht = kL();
-        Ht.__click = [AL, W, _];
+        var Ht = ML();
+        Ht.__click = [IL, W, _];
         var ei = k(Ht);
-        $z(ei, {
+        Uz(ei, {
           class: "size-5"
         });
         var ri = V(ei);
@@ -46566,7 +46564,7 @@ function hD(b, l) {
             class: "z-30",
             onclick: () => {
               var Ht;
-              (Ht = Dt.data) != null && Ht.needsPhoneVerification ? (oe(dt, !0), jr.warning(cg())) : Dt.charges !== void 0 && Dt.charges < 1 ? jr.warning(KA, {
+              (Ht = Dt.data) != null && Ht.needsPhoneVerification ? (oe(dt, !0), jr.warning(cg())) : Dt.charges !== void 0 && Dt.charges < 1 ? jr.warning(WA, {
                 icon: Eg
               }) : x(W) && Dt.data ? (pa.smallDropplet.play(), oe(Se, {
                 name: "paintingPixel"
@@ -46584,7 +46582,7 @@ function hD(b, l) {
           })
         },
         Gr = tr => {
-          var Ht = EL();
+          var Ht = AL();
           H(tr, Ht)
         };
       Ve(Gt, tr => {
@@ -46603,10 +46601,10 @@ function hD(b, l) {
           ei = At(Ht);
         {
           var ri = ci => {
-              var pi = zL(),
+              var pi = kL(),
                 Er = k(pi),
                 Ri = k(Er);
-              rz(Ri, {
+              ez(Ri, {
                 get latLon() {
                   return x(Se).latLon
                 },
@@ -46684,10 +46682,10 @@ function hD(b, l) {
                 Er = At(pi);
               {
                 var Ri = Jr => {
-                    var ti = LL(),
+                    var ti = EL(),
                       xr = k(ti),
                       on = k(xr);
-                    Jk(on, {
+                    Kk(on, {
                       get map() {
                         return x(W)
                       },
@@ -46738,7 +46736,7 @@ function hD(b, l) {
                       xr = At(ti);
                     {
                       var on = vn => {
-                        var _a = RL(),
+                        var _a = LL(),
                           ln = k(_a),
                           Ki = k(ln),
                           cn = k(Ki),
@@ -46750,7 +46748,7 @@ function hD(b, l) {
                         var Ko = V(wi);
                         A(Ni);
                         var un = V(Ni, 2);
-                        un.__click = [DL, Se];
+                        un.__click = [zL, Se];
                         var Nn = k(un);
                         fc(Nn, {
                           class: "size-4"
@@ -46773,11 +46771,11 @@ function hD(b, l) {
                           }
                         };
                         var Za = k(Ti);
-                        Fz(Za, {
+                        Rz(Za, {
                           class: "size-6"
                         }), A(Ti), A(hn), A(Ki), A(ln), A(_a), Ge(Tr => {
                           fe(Ko, ` ${Tr??""}`), Ti.disabled = x(Se).hq === void 0 || x(ar)
-                        }, [() => BT()]), En(3, ln, () => uf, () => ({
+                        }, [() => DT()]), En(3, ln, () => uf, () => ({
                           duration: 100
                         })), H(vn, _a)
                       };
@@ -46823,7 +46821,7 @@ function hD(b, l) {
     })])
   }
   var zi = V(kr, 2);
-  $A(zi, {
+  UA(zi, {
     get open() {
       return x(_e)
     },
@@ -46832,7 +46830,7 @@ function hD(b, l) {
     }
   });
   var mi = V(zi, 2);
-  Rz(mi, {
+  Lz(mi, {
     get open() {
       return x(ne)
     },
@@ -46841,7 +46839,7 @@ function hD(b, l) {
     }
   });
   var Li = V(mi, 2);
-  OM(Li, {
+  BM(Li, {
     get open() {
       return x(Me)
     },
@@ -46850,7 +46848,7 @@ function hD(b, l) {
     }
   });
   var rr = V(Li, 2);
-  YM(rr, {
+  XM(rr, {
     get open() {
       return x(at)
     },
@@ -46859,7 +46857,7 @@ function hD(b, l) {
     }
   });
   var yi = V(rr, 2);
-  RM(yi, {
+  LM(yi, {
     get open() {
       return x(ut)
     },
@@ -46868,7 +46866,7 @@ function hD(b, l) {
     }
   });
   var Qr = V(yi, 2);
-  VA(Qr, {
+  qA(Qr, {
     onvisitclick: gt => {
       var jt;
       (jt = x(W)) == null || jt.flyTo({
@@ -46887,7 +46885,7 @@ function hD(b, l) {
     }
   });
   var Yr = V(Qr, 2);
-  P8(Yr, {
+  C8(Yr, {
     get region() {
       return x(It)
     },
@@ -46910,7 +46908,7 @@ function hD(b, l) {
   var sn = V(la, 2);
   {
     var ta = gt => {
-      lM(gt, {
+      sM(gt, {
         onhqchange: () => {
           oe(Se, {
             name: "selectHq"
@@ -46949,7 +46947,7 @@ function hD(b, l) {
     })
   }
   var Fi = V(sn, 2);
-  vE(Fi, {
+  _E(Fi, {
     get open() {
       return x(dt)
     },
@@ -46960,7 +46958,7 @@ function hD(b, l) {
   var Xi = V(Fi, 2);
   {
     var Gn = gt => {
-      MM(gt, {
+      PM(gt, {
         get url() {
           return x(pt)
         },
@@ -46990,7 +46988,7 @@ function hD(b, l) {
   var Hn = V(Xi, 2);
   {
     var Ln = gt => {
-      dM(gt, {
+      uM(gt, {
         get image() {
           return x(Ir)
         },
@@ -47022,5 +47020,5 @@ function hD(b, l) {
 }
 Wi(["click"]);
 export {
-  hD as component
+  cD as component
 };
