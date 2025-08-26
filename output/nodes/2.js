@@ -99,7 +99,7 @@ import {
 } from "../chunks/Y9es74tr.js";
 import {
   p as La
-} from "../chunks/DV0_iVo7.js";
+} from "../chunks/Cp3o644A.js";
 import {
   S as $n,
   a as ni,
@@ -135,7 +135,7 @@ import {
 import {
   g as Lg,
   b as lx
-} from "../chunks/r_fzWpoF.js";
+} from "../chunks/KvV259my.js";
 import {
   h as cx
 } from "../chunks/BMKgGW48.js";
@@ -158,7 +158,7 @@ import {
   j as fx,
   P as Bg,
   b as mx
-} from "../chunks/BTHxzpt0.js";
+} from "../chunks/CBqzI9hL.js";
 import {
   g as Fe,
   l as _x
@@ -44631,7 +44631,7 @@ function lz(b, l) {
     var bt, wt, dt, Lt, Xt, Yt, nr;
     const tt = [],
       pt = (wt = (bt = Dt) == null ? void 0 : bt.data) == null ? void 0 : wt.role;
-    Cu(pt, ["admin"]) && !x($) && tt.push("ban-user"), Cu(pt, ["admin", "global_moderator", "moderator"]) && !x($) && tt.push("timeout-user"), ((((Lt = (dt = Dt) == null ? void 0 : dt.data) == null ? void 0 : Lt.id) ?? Number.MAX_SAFE_INTEGER) <= 2e6 || Cu(pt, ["admin", "moderator", "global_moderator"])) && !x($) && tt.push("report-user");
+    Cu(pt, ["admin"]) && !x($) && tt.push("ban-user"), Cu(pt, ["admin", "global_moderator", "moderator"]) && !x($) && tt.push("timeout-user"), ((((Lt = (dt = Dt) == null ? void 0 : dt.data) == null ? void 0 : Lt.id) ?? Number.MAX_SAFE_INTEGER) <= 3e6 || Cu(pt, ["admin", "moderator", "global_moderator"])) && !x($) && tt.push("report-user");
     const ut = (Xt = x(_)) == null ? void 0 : Xt.paintedBy;
     return (ut == null ? void 0 : ut.allianceId) === ((Yt = Dt.data) == null ? void 0 : Yt.allianceId) && ((nr = Dt.data) == null ? void 0 : nr.allianceRole) === "admin" && Dt.data.id !== (ut == null ? void 0 : ut.id) && !x($) && tt.push("ban-alliance"), tt
   });
