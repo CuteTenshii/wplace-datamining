@@ -99,7 +99,7 @@ import {
 } from "../chunks/Y9es74tr.js";
 import {
   p as La
-} from "../chunks/DkJbRU-K.js";
+} from "../chunks/Bg7r2z0m.js";
 import {
   S as $n,
   a as ni,
@@ -135,7 +135,7 @@ import {
 import {
   g as Lg,
   b as lx
-} from "../chunks/Cu3enCng.js";
+} from "../chunks/DFksdMaI.js";
 import {
   h as cx
 } from "../chunks/BMKgGW48.js";
@@ -158,7 +158,7 @@ import {
   j as fx,
   P as Bg,
   b as mx
-} from "../chunks/C8Y2o2dj.js";
+} from "../chunks/D_eyNiGb.js";
 import {
   g as Fe,
   l as _x
@@ -752,63 +752,63 @@ const Ax = () => "Log in",
   wS = () => "Report User",
   TS = () => "Reportar usuário",
   Yg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? wS() : TS(),
-  CS = () => "Ban User",
-  SS = () => "Banir usuário",
+  CS = () => "Timeout User",
+  SS = () => "Suspender usuário",
   Jg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? CS() : SS(),
-  PS = () => "Select the reason",
-  IS = () => "Selecione o motivo",
-  MS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? PS() : IS(),
-  AS = () => "Other",
-  kS = () => "Outro motivo",
-  ES = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? AS() : kS(),
-  zS = () => "Other reason not listed",
-  LS = () => "Outro motivo não listado",
-  DS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? zS() : LS(),
-  RS = () => "Extra context on what happened (required)",
-  BS = () => "Mais informações sobre o que aconteceu (obrigatório)",
-  FS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? RS() : BS(),
-  OS = () => "Report",
-  NS = () => "Reportar",
-  jS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? OS() : NS(),
-  qS = () => "Report sent successfully",
-  VS = () => "Denúncia enviada com sucesso",
-  US = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? qS() : VS(),
-  ZS = () => "Select the report reason",
-  $S = () => "Selecione o motivo da denúncia",
-  GS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? ZS() : $S(),
-  HS = () => "Report failed. Please try again later",
-  WS = () => "Denúncia falhou. Por favor, tente novamente mais tarde",
-  XS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? HS() : WS(),
-  KS = () => "Moderation",
-  YS = () => "Moderação",
-  JS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? KS() : YS(),
-  QS = () => "Terms",
-  eP = () => "Termos",
-  tP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? QS() : eP(),
-  rP = () => "Privacy",
-  iP = () => "Privacidade",
-  nP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? rP() : iP(),
-  aP = () => "Clear area",
-  sP = () => "Limpar área",
-  oP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? aP() : sP(),
-  lP = () => "Select the area's first corner",
-  cP = () => "Selecione o primeiro canto da área",
-  uP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? lP() : cP(),
-  hP = () => "Select the area's opposite corner",
-  dP = () => "Selecione o canto oposto da área",
-  pP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? hP() : dP(),
-  fP = () => "Required",
-  mP = () => "Obrigatório",
-  _P = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? fP() : mP(),
-  gP = b => `Min. characters: ${b.min}`,
-  vP = b => `Mínimo de caracteres: ${b.min}`,
-  yP = (b, l = {}) => (l.locale ?? Fe()) === "en" ? gP(b) : vP(b),
-  xP = b => `Max. characters: ${b.max}`,
-  bP = b => `Máximo de caracteres: ${b.max}`,
-  wP = (b, l = {}) => (l.locale ?? Fe()) === "en" ? xP(b) : bP(b),
-  TP = () => "Suspender usuário",
-  CP = () => "timeout_user",
-  Qg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? CP() : TP(),
+  PS = () => "Ban User",
+  IS = () => "Banir usuário",
+  Qg = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? PS() : IS(),
+  MS = () => "Select the reason",
+  AS = () => "Selecione o motivo",
+  kS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? MS() : AS(),
+  ES = () => "Other",
+  zS = () => "Outro motivo",
+  LS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? ES() : zS(),
+  DS = () => "Other reason not listed",
+  RS = () => "Outro motivo não listado",
+  BS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? DS() : RS(),
+  FS = () => "Extra context on what happened (required)",
+  OS = () => "Mais informações sobre o que aconteceu (obrigatório)",
+  NS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? FS() : OS(),
+  jS = () => "Report",
+  qS = () => "Reportar",
+  VS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? jS() : qS(),
+  US = () => "Report sent successfully",
+  ZS = () => "Denúncia enviada com sucesso",
+  $S = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? US() : ZS(),
+  GS = () => "Select the report reason",
+  HS = () => "Selecione o motivo da denúncia",
+  WS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? GS() : HS(),
+  XS = () => "Report failed. Please try again later",
+  KS = () => "Denúncia falhou. Por favor, tente novamente mais tarde",
+  YS = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? XS() : KS(),
+  JS = () => "Moderation",
+  QS = () => "Moderação",
+  eP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? JS() : QS(),
+  tP = () => "Terms",
+  rP = () => "Termos",
+  iP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? tP() : rP(),
+  nP = () => "Privacy",
+  aP = () => "Privacidade",
+  sP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? nP() : aP(),
+  oP = () => "Clear area",
+  lP = () => "Limpar área",
+  cP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? oP() : lP(),
+  uP = () => "Select the area's first corner",
+  hP = () => "Selecione o primeiro canto da área",
+  dP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? uP() : hP(),
+  pP = () => "Select the area's opposite corner",
+  fP = () => "Selecione o canto oposto da área",
+  mP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? pP() : fP(),
+  _P = () => "Required",
+  gP = () => "Obrigatório",
+  vP = (b = {}, l = {}) => (l.locale ?? Fe()) === "en" ? _P() : gP(),
+  yP = b => `Min. characters: ${b.min}`,
+  xP = b => `Mínimo de caracteres: ${b.min}`,
+  bP = (b, l = {}) => (l.locale ?? Fe()) === "en" ? yP(b) : xP(b),
+  wP = b => `Max. characters: ${b.max}`,
+  TP = b => `Máximo de caracteres: ${b.max}`,
+  CP = (b, l = {}) => (l.locale ?? Fe()) === "en" ? wP(b) : TP(b),
   Es = 2 * Math.PI * 6378137 / 2;
 class hc {
   constructor(l = 256) {
@@ -34350,9 +34350,9 @@ function iv(b, l) {
   C(o);
 
   function o() {
-    return l.min !== void 0 && x(T) < l.min ? (oe(F, l.min === 1 ? _P() : yP({
+    return l.min !== void 0 && x(T) < l.min ? (oe(F, l.min === 1 ? vP() : bP({
       min: l.min
-    }), !0), !1) : l.max !== void 0 && x(T) > l.max ? (oe(F, wP({
+    }), !0), !1) : l.max !== void 0 && x(T) > l.max ? (oe(F, CP({
       max: l.max
     }), !0), !1) : !0
   }
@@ -35842,8 +35842,8 @@ function bM(b, l) {
     description: tx()
   }, {
     value: "other",
-    label: ES(),
-    description: DS()
+    label: LS(),
+    description: BS()
   }];
   Ii(() => {
     const _t = bt => {
@@ -35894,7 +35894,7 @@ function bM(b, l) {
         {
           var pt = ft => {
               var wt = Fn();
-              Ge(Tt => fe(wt, Tt), [() => Qg()]), H(ft, wt)
+              Ge(Tt => fe(wt, Tt), [() => Jg()]), H(ft, wt)
             },
             yt = ft => {
               var wt = Yt(),
@@ -35902,7 +35902,7 @@ function bM(b, l) {
               {
                 var ht = Lt => {
                   var Kt = Fn();
-                  Ge(Qt => fe(Kt, Qt), [() => Jg()]), H(Lt, Kt)
+                  Ge(Qt => fe(Kt, Qt), [() => Qg()]), H(Lt, Kt)
                 };
                 Ue(Tt, Lt => {
                   l.action === "ban" && Lt(ht)
@@ -35950,7 +35950,7 @@ function bM(b, l) {
   var _e = V(ke, 2),
     ne = k(_e);
   {
-    let _t = lt(() => FS());
+    let _t = lt(() => NS());
     iv(ne, {
       class: "h-20 rounded-lg",
       name: "notes",
@@ -35987,12 +35987,12 @@ function bM(b, l) {
     })
   }), Ge((_t, bt, tt, pt) => {
     zr(X, "action", ie[l.action]), Jl(Se, l.paintedBy.id), Jl(we, l.latLon[0]), Jl(Re, l.latLon[1]), Jl(Ae, l.zoom), Or(Je, 1, `font-medium ${_t??""} flex gap-1.5`), fe(st, l.paintedBy.name), fe(Qe, `#${l.paintedBy.id??""}`), fe(Q, `${bt??""}:`), fe(at, tt), We.disabled = x(L), fe(St, pt)
-  }, [() => Zn(l.paintedBy.id), () => MS(), () => qd(), () => jS()]), an("close", pe, () => C(!1)), an("submit", X, async _t => {
+  }, [() => Zn(l.paintedBy.id), () => kS(), () => qd(), () => VS()]), an("close", pe, () => C(!1)), an("submit", X, async _t => {
     if (_t.preventDefault(), !x(L) && x($)()) try {
       oe(L, !0);
       const bt = new FormData(x(o));
       if (!bt.get("reason")) {
-        qr.error(GS());
+        qr.error(WS());
         return
       }
       const tt = await l.image;
@@ -36002,7 +36002,7 @@ function bM(b, l) {
         body: bt,
         credentials: "include"
       });
-      pt.status === 200 || pt.status === 409 ? (qr.info(US()), C(!1)) : qr.error(XS())
+      pt.status === 200 || pt.status === 409 ? (qr.info($S()), C(!1)) : qr.error(YS())
     } finally {
       oe(L, !1)
     }
@@ -36538,7 +36538,7 @@ function i4(b, l) {
       A(_r), A(nr), A(ye), Ge((jr, cr, Mr, Ar, kr, Nr, ce, O, q, G, K, le, ve) => {
         fe(Re, `${jr??""} `), fe(Ae, ` ©
 						${cr??""} `), fe(dt, Mr), fe(ke, Ar), zr(vt, "src", oa.language === "pt" ? "https://www.youtube.com/embed/AcE85QM4iPQ?si=wbeZD8vxOzvlB_Z9" : "https://www.youtube.com/embed/xOXtd-WzRxA?si=fHz8Z6ecXGYrDhkN"), fe(_e, kr), fe(Pe, `${Nr??""} `), fe(We, ` ${ce??""}`), fe(_t, `${O??""} `), fe(tt, q), fe(pt, ` ${G??""}`), fe(wt, K), fe(dr, le), fe(Ir, ve)
-      }, [() => v1(), () => b1(), () => C1(), () => I1(), () => k1(), () => L1(), () => B1(), () => N1(), () => V1(), () => $1(), () => cS(), () => tP(), () => nP()]), En(2, ye, () => Qn, () => ({
+      }, [() => v1(), () => b1(), () => C1(), () => I1(), () => k1(), () => L1(), () => B1(), () => N1(), () => V1(), () => $1(), () => cS(), () => iP(), () => sP()]), En(2, ye, () => Qn, () => ({
         duration: 300
       })), H(pe, ye)
     };
@@ -41255,7 +41255,7 @@ function nE(b, l) {
                                         {
                                           var $i = Cr => {
                                               var gn = Fn();
-                                              Ge(tr => fe(gn, tr), [() => uP()]), H(Cr, gn)
+                                              Ge(tr => fe(gn, tr), [() => dP()]), H(Cr, gn)
                                             },
                                             Mi = Cr => {
                                               var gn = Yt(),
@@ -41263,7 +41263,7 @@ function nE(b, l) {
                                               {
                                                 var Ht = ei => {
                                                   var ri = Fn();
-                                                  Ge(gi => fe(ri, gi), [() => pP()]), H(ei, ri)
+                                                  Ge(gi => fe(ri, gi), [() => mP()]), H(ei, ri)
                                                 };
                                                 Ue(tr, ei => {
                                                   x(Ae).length === 1 && ei(Ht)
@@ -41391,7 +41391,7 @@ function nE(b, l) {
           "btn-ghost": !x(dt),
           "btn-primary": x(dt)
         }))
-      }, [() => oP()]), H(Mt, Ke)
+      }, [() => cP()]), H(Mt, Ke)
     };
     Ue(Ce, Mt => {
       x(ut) && Mt(Ze)
@@ -43925,7 +43925,7 @@ function h8(b, l) {
           var Wt = V(kt);
           A(It), Ge(Lr => {
             zr(It, "href", `${La.url.origin??""}/moderation`), fe(Wt, ` ${Lr??""}`)
-          }, [() => JS()]), H(At, It)
+          }, [() => eP()]), H(At, It)
         };
         Ue(Nr, At => {
           var It;
@@ -44822,7 +44822,7 @@ function lz(b, l) {
                                   gr = Or(mr, 1, "text-error font-medium", null, gr, Ci), fe(Ct, ` ${di??""}`)
                                 }, [() => ({
                                   "cursor-not-allowed": x($)
-                                }), () => Qg()]), H(Hr, $r)
+                                }), () => Jg()]), H(Hr, $r)
                               },
                               Kr = Hr => {
                                 var $r = Yt(),
@@ -44842,7 +44842,7 @@ function lz(b, l) {
                                         Pn = Or(di, 1, "text-error font-medium", null, Pn, jt), fe(Ke, ` ${Gt??""}`)
                                       }, [() => ({
                                         "cursor-not-allowed": x($)
-                                      }), () => Jg()]), H(Ct, Ci)
+                                      }), () => Qg()]), H(Ct, Ci)
                                     },
                                     ai = Ct => {
                                       var Ci = Yt(),
