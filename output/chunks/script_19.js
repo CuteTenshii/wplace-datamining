@@ -1,4 +1,4 @@
 import {
   al as a
-} from "./DUoKDNpf.js";
+} from "./DiiYHD7c.js";
 a();
