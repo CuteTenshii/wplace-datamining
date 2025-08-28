@@ -19,17 +19,18 @@ import {
   aH as _,
   x as U,
   aT as L
-} from "./DiiYHD7c.js";
+} from "./DUoKDNpf.js";
 import {
   g as o
 } from "./C5GsJ62f.js";
 const Nt = "https://backend.wplace.live/files",
-  W = "https://backend.wplace.live",
-  Gt = "0x4AAAAAABpqJe8FO0N84q0F";
+  Gt = "0x4AAAAAABpHqZ-6i7uL0nmG",
+  Z = "https://backend.wplace.live",
+  qt = "0x4AAAAAABpqJe8FO0N84q0F";
 let K = q({
   dropletsDialogOpen: !1,
   muted: !1,
-  language: Z(),
+  language: W(),
   captcha: void 0,
   now: Date.now(),
   turnstatileLoaded: !1
@@ -38,7 +39,7 @@ setInterval(() => {
   K.now = Date.now()
 }, 500);
 
-function Z() {
+function W() {
   if (navigator.languages && navigator.languages.length > 0) {
     const t = navigator.languages.find(e => e.length === 2);
     if (t) return t
@@ -99,9 +100,9 @@ const Q = () => "Unexpected server error. Try again later.",
   ze = () => "You are not allowed to do this",
   Ye = () => "Você não tem permissão para fazer isso",
   p = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? ze() : Ye(),
-  We = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
-  Ze = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
-  Qe = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? We() : Ze(),
+  Ze = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
+  We = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
+  Qe = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Ze() : We(),
   Xe = () => "You or someone in your network is making a lot of requests to the server. Try again later.",
   ea = () => "Você ou alguém na sua rede está fazendo muitas solicitações ao servidor. Tente novamente mais tarde.",
   aa = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Xe() : ea(),
@@ -154,8 +155,8 @@ const Q = () => "Unexpected server error. Try again later.",
   Ha = () => "Usar mais de uma conta para pintar",
   za = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Va() : Ha(),
   Ya = t => `Your account has been banned. Reason: ${t.reason} (${t.description})`,
-  Wa = t => `Sua conta foi banida. Motivo: ${t.reason} (${t.description})`,
-  Za = (t, e = {}) => (e.locale ?? o()) === "en" ? Ya(t) : Wa(t),
+  Za = t => `Sua conta foi banida. Motivo: ${t.reason} (${t.description})`,
+  Wa = (t, e = {}) => (e.locale ?? o()) === "en" ? Ya(t) : Za(t),
   Qa = t => `Your account has been suspended until ${t.until}. Reason: ${t.reason} (${t.description})`,
   Xa = t => `Sua conta foi suspensa até ${t.until}. Motivo: ${t.reason} (${t.description})`,
   et = (t, e = {}) => (e.locale ?? o()) === "en" ? Qa(t) : Xa(t),
@@ -186,7 +187,7 @@ const Q = () => "Unexpected server error. Try again later.",
     "inappropriate-content": _a(),
     other: st()
   },
-  qt = {
+  Rt = {
     doxxing: "text-red-600",
     "hate-speech": "text-red-600",
     "inappropriate-content": "text-amber-600",
@@ -549,10 +550,10 @@ const mt = [{
   },
   St = G,
   J = G.seasons.length - 1,
-  Rt = G.seasons[J].zoom,
-  Ut = G.seasons[J].tileSize;
+  Ut = G.seasons[J].zoom,
+  jt = G.seasons[J].tileSize;
 
-function jt(t) {
+function $t(t) {
   return St.countries[t - 1]
 }
 var v;
@@ -594,7 +595,7 @@ class vt {
           b = dt[h],
           B = ut[h],
           S = i == null ? void 0 : i.suspension;
-        if (S === "ban") throw new Error(Za({
+        if (S === "ban") throw new Error(Wa({
           description: B,
           reason: b
         }));
@@ -1011,7 +1012,7 @@ class vt {
   }
 }
 v = new WeakMap;
-let $ = new vt(W);
+let $ = new vt(Z);
 
 function Et(t) {
   const e = atob(t),
@@ -1044,7 +1045,7 @@ class Tt {
   }
 }
 
-function $t(...t) {
+function Ft(...t) {
   return t.filter(Boolean).join(" ")
 }
 const Mt = typeof document < "u";
@@ -1246,7 +1247,7 @@ function At(t, e) {
   })
 }
 var N;
-class Ft {
+class Kt {
   constructor() {
     g(this, N, L(() => m.toasts.filter(e => !e.dismiss)))
   }
@@ -1362,5 +1363,5 @@ class It {
 P = new WeakMap, x = new WeakMap, A = new WeakMap, k = new WeakMap, C = new WeakMap, I = new WeakMap, O = new WeakMap;
 const Ot = new It;
 export {
-  J as C, W as P, St as S, $ as a, s as b, m as c, $t as d, Ft as e, dt as f, K as g, jt as h, _a as i, ma as j, Aa as k, Ma as l, Ua as m, Ga as n, va as o, ya as p, Da as q, Ia as r, qt as s, Ct as t, Ot as u, Rt as v, Ut as w, Nt as x, Gt as y
+  J as C, Gt as P, St as S, $ as a, s as b, Z as c, m as d, Ft as e, Kt as f, K as g, dt as h, $t as i, _a as j, ma as k, Aa as l, Ma as m, Ua as n, Ga as o, va as p, ya as q, Da as r, Rt as s, Ct as t, Ot as u, Ia as v, Ut as w, jt as x, Nt as y, qt as z
 };

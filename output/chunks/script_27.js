@@ -8,17 +8,17 @@ import {
   s as B,
   d as b,
   r as L
-} from "./DiiYHD7c.js";
+} from "./DUoKDNpf.js";
 import {
   p as Q,
   i as S,
   r as _
-} from "./CtTP525L.js";
+} from "./5NasrULQ.js";
 import {
   a as R,
   s as m,
   b as h
-} from "./C48aZWAE.js";
+} from "./B1GmkH4o.js";
 const E = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
 var T = p("<span>wplace</span>"),
   U = p('<div><img alt="Wplace logo"/> <!></div>');
