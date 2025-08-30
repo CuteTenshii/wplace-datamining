@@ -1,16 +1,16 @@
 import {
-  D as S,
-  F as h,
-  x as k,
-  G as x,
-  S as T
-} from "./DUoKDNpf.js";
+  M as S,
+  H as h,
+  z as k,
+  L,
+  S as M
+} from "./B6s--CY1.js";
 
 function t(r, i) {
-  return r === i || (r == null ? void 0 : r[T]) === i
+  return r === i || (r == null ? void 0 : r[M]) === i
 }
 
-function A(r = {}, i, a, c) {
+function q(r = {}, i, a, T) {
   return S(() => {
     var f, s;
     return h(() => {
@@ -18,12 +18,12 @@ function A(r = {}, i, a, c) {
         r !== a(...s) && (i(r, ...s), f && t(a(...f), r) && i(null, ...f))
       })
     }), () => {
-      x(() => {
+      L(() => {
         s && t(a(...s), r) && i(null, ...s)
       })
     }
   }), r
 }
 export {
-  A as b
+  q as b
 };

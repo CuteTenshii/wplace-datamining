@@ -1,15 +1,15 @@
 import {
   h as i,
   e as m,
-  g as p,
+  i as p,
   E as _,
-  i as h,
-  j as v,
-  k as l,
-  l as b,
-  m as g,
-  n as k
-} from "./DUoKDNpf.js";
+  j as h,
+  k as v,
+  l,
+  m as b,
+  o as k,
+  q as E
+} from "./B6s--CY1.js";
 
 function x(s, d, u) {
   i && m();
@@ -18,7 +18,7 @@ function x(s, d, u) {
     f = null;
 
   function t() {
-    e && (k(e), e = null), a && (a.lastChild.remove(), r.before(a), a = null), e = f, f = null
+    e && (E(e), e = null), a && (a.lastChild.remove(), r.before(a), a = null), e = f, f = null
   }
   p(() => {
     if (n !== (n = d())) {
@@ -29,7 +29,7 @@ function x(s, d, u) {
       }
       c ? l.add_callback(t) : t()
     }
-  }, _), i && (r = g)
+  }, _), i && (r = k)
 }
 export {
   x as c

@@ -1,12 +1,12 @@
 import {
-  b8 as M,
-  A as E,
-  W as D,
-  F as n,
-  x as m,
-  b9 as w,
-  G as u
-} from "./DUoKDNpf.js";
+  bk as M,
+  g as E,
+  a1 as D,
+  H as n,
+  z as m,
+  bl as w,
+  L as u
+} from "./B6s--CY1.js";
 
 function C(q) {
   let V = 0,
@@ -42,7 +42,7 @@ function d() {
 }
 let t;
 
-function L(q) {
+function x(q) {
   return t = q, i({
     type: "previewPixels",
     data: q
@@ -73,27 +73,27 @@ function i(q) {
       ...q,
       id: V
     };
-  return new Promise((o, s) => {
+  return new Promise((o, g) => {
     try {
       const a = navigator.serviceWorker;
-      a || s(new Error("You're an using an older browser, some features might not work. Consider updating or changing browser."));
-      const B = g => {
+      a || g(new Error("You're an using an older browser, some features might not work. Consider updating or changing browser."));
+      const B = s => {
         var e;
-        ((e = g.data) == null ? void 0 : e.id) === V && (o(void 0), a.removeEventListener("message", B))
+        ((e = s.data) == null ? void 0 : e.id) === V && (o(void 0), a.removeEventListener("message", B))
       };
       a.addEventListener("message", B);
       const r = navigator.serviceWorker.controller;
-      r ? r.postMessage(A) : navigator.serviceWorker.ready.then(g => {
-        const e = g.active;
-        e ? e == null || e.postMessage(A) : s(new Error("Service worker registration not active"))
+      r ? r.postMessage(A) : navigator.serviceWorker.ready.then(s => {
+        const e = s.active;
+        e ? e == null || e.postMessage(A) : g(new Error("Service worker registration not active"))
       })
     } catch (a) {
-      s(a)
+      g(a)
     }
   })
 }
 
-function W({
+function k({
   pixel: q,
   season: V,
   tile: A
@@ -101,5 +101,5 @@ function W({
   return `t=(${A[0]},${A[1]});p=(${q[0]},${q[1]});s=${V}`
 }
 export {
-  I as A, U as a, J as b, C as c, W as g, L as p, Q as s
+  I as A, U as a, J as b, C as c, k as g, x as p, Q as s
 };

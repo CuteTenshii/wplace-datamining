@@ -9,23 +9,23 @@ var V = (t, e, a) => e in t ? H(t, e, {
   value: a
 }) : t[e] = a;
 var u = (t, e, a) => V(t, typeof e != "symbol" ? e + "" : e, a),
-  Y = (t, e, a) => e.has(t) || q("Cannot " + a);
-var d = (t, e, a) => (Y(t, e, "read from private field"), a ? a.call(t) : e.get(t)),
+  z = (t, e, a) => e.has(t) || q("Cannot " + a);
+var d = (t, e, a) => (z(t, e, "read from private field"), a ? a.call(t) : e.get(t)),
   m = (t, e, a) => e.has(t) ? q("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, a);
 import {
-  aG as G,
-  aR as y,
-  A as f,
-  aH as _,
-  x as R,
-  aT as B
-} from "./DUoKDNpf.js";
+  aH as G,
+  aI as b,
+  g as f,
+  aJ as p,
+  z as R,
+  u as B
+} from "./B6s--CY1.js";
 import {
-  g as o
+  g as s
 } from "./C5GsJ62f.js";
 const mt = "https://backend.wplace.live/files",
   gt = "0x4AAAAAABpHqZ-6i7uL0nmG",
-  z = "https://backend.wplace.live",
+  Y = "https://backend.wplace.live",
   ft = "0x4AAAAAABpqJe8FO0N84q0F";
 let K = G({
   dropletsDialogOpen: !1,
@@ -48,109 +48,109 @@ function Z() {
 }
 const W = () => "Unexpected server error. Try again later.",
   Q = () => "Erro inesperado do servidor. Tente novamente mais tarde.",
-  s = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? W() : Q(),
+  o = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? W() : Q(),
   X = () => "You need to be logged in to paint",
   ee = () => "Você precisa estar conectado para pintar",
-  ae = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? X() : ee(),
+  ae = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? X() : ee(),
   te = () => "You do not have enough charges to paint. Erase some pixels.",
   ne = () => "Você não possui tinta suficiente para pintar. Apague alguns pixeis.",
-  re = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? te() : ne(),
+  re = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? te() : ne(),
   oe = t => `Error while painting: ${t.err}`,
   se = t => `Erro enquanto pinta: ${t.err}`,
-  ie = (t, e = {}) => (e.locale ?? o()) === "en" ? oe(t) : se(t),
+  ie = (t, e = {}) => (e.locale ?? s()) === "en" ? oe(t) : se(t),
   le = () => "Invalid phone number",
   ce = () => "Número de telefone inválido",
-  de = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? le() : ce(),
+  de = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? le() : ce(),
   ue = () => "Phone already used",
   me = () => "Telefone já usado",
-  ge = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? ue() : me(),
+  ge = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? ue() : me(),
   fe = () => "You have to wait to resend a code",
   he = () => "Você tem de esperar para reenviar um código",
-  _e = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? fe() : he(),
+  _e = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? fe() : he(),
   pe = () => "Invalid code",
   we = () => "Código inválido",
-  ye = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? pe() : we(),
+  ye = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? pe() : we(),
   be = () => "Operation not allowed. Maybe you have too many favorite locations.",
   Se = () => "Operação não permitida. Talvez você tenha muitos locais favoritos.",
-  Ee = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? be() : Se(),
-  ve = () => "Location name is too big (max. 128 characters)",
+  ve = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? be() : Se(),
+  Ee = () => "Location name is too big (max. 128 characters)",
   Te = () => "Nome da localização é grande demais (max. 128 caracteres)",
-  Pe = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? ve() : Te(),
+  Pe = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Ee() : Te(),
   Me = () => "Couldn't complete the purchase. This item does not exist.",
-  Ae = () => "Não foi possível concluir a compra. Este item não existe.",
-  Ce = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Me() : Ae(),
-  Ie = () => "You do not have enough droplets to buy this item.",
-  xe = () => "Você não tem gotas suficientes para comprar este item.",
-  ke = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Ie() : xe(),
-  Oe = () => "You already have this item. Please refresh the page.",
+  Ie = () => "Não foi possível concluir a compra. Este item não existe.",
+  Ae = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Me() : Ie(),
+  Ce = () => "You do not have enough droplets to buy this item.",
+  Oe = () => "Você não tem gotas suficientes para comprar este item.",
+  ke = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Ce() : Oe(),
+  xe = () => "You already have this item. Please refresh the page.",
   Be = () => "Você já possui este item. Atualize a página.",
-  De = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Oe() : Be(),
+  De = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? xe() : Be(),
   Le = () => "Alliance name exceeded the maximum number of characters",
   Ne = () => "O nome da aliança excedeu o número máximo de caracteres",
-  Ge = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Le() : Ne(),
+  Ge = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Le() : Ne(),
   qe = () => "Alliance name already taken",
   Re = () => "Já possui uma aliança com esse nome",
-  Ue = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? qe() : Re(),
+  Ue = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? qe() : Re(),
   je = () => "Alliance with empty name",
   Fe = () => "Aliança com nome vazio",
-  Ke = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? je() : Fe(),
+  Ke = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? je() : Fe(),
   $e = () => "You are already in an alliance",
   Je = () => "Você já está em uma aliança",
-  He = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? $e() : Je(),
+  He = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? $e() : Je(),
   Ve = () => "You are not allowed to do this",
-  Ye = () => "Você não tem permissão para fazer isso",
-  p = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Ve() : Ye(),
-  ze = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
+  ze = () => "Você não tem permissão para fazer isso",
+  w = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Ve() : ze(),
+  Ye = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
   Ze = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
-  We = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? ze() : Ze(),
+  We = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Ye() : Ze(),
   Qe = () => "You or someone in your network is making a lot of requests to the server. Try again later.",
   Xe = () => "Você ou alguém na sua rede está fazendo muitas solicitações ao servidor. Tente novamente mais tarde.",
-  ea = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Qe() : Xe(),
+  ea = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Qe() : Xe(),
   aa = () => "No internet access or the servers are offline. Try again later.",
   ta = () => "Sem acesso à internet ou os servidores estão fora do ar. Tente novamente mais tarde.",
-  na = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? aa() : ta(),
+  na = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? aa() : ta(),
   ra = () => "We’re currently experiencing high traffic. Some requests may not be processed at this time—please try again later. Thank you for your patience.",
   oa = () => "Estamos enfrentando um volume alto de acessos no momento. Algumas solicitações podem não ser processadas agora — por favor, tente novamente mais tarde. Agradecemos a sua compreensão.",
-  sa = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? ra() : oa(),
+  sa = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? ra() : oa(),
   ia = () => "Refresh your page to get the latest update",
   la = () => "Recarregue sua página para obter as últimas atualizações",
-  ca = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? ia() : la(),
+  ca = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? ia() : la(),
   da = () => "Inappropriate content",
   ua = () => "Conteúdo inapropriado",
-  ma = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? da() : ua(),
+  ma = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? da() : ua(),
   ga = () => "Botting",
   fa = () => "Uso de bots",
-  ha = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? ga() : fa(),
+  ha = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? ga() : fa(),
   _a = () => "Hate speech",
   pa = () => "Discurso de Ódio",
-  wa = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? _a() : pa(),
+  wa = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? _a() : pa(),
   ya = () => "Griefing",
   ba = () => "Griefing",
-  Sa = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? ya() : ba(),
-  Ea = () => "Doxxing",
+  Sa = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? ya() : ba(),
   va = () => "Doxxing",
-  Ta = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Ea() : va(),
+  Ea = () => "Doxxing",
+  Ta = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? va() : Ea(),
   Pa = () => "Leaderboard is temporarily disabled",
   Ma = () => "O ranking está temporariamente desativado",
-  w = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Pa() : Ma(),
-  Aa = () => "Multi-accounting",
-  Ca = () => "Múltiplas contas",
-  Ia = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Aa() : Ca(),
-  xa = () => "Your account has been banned.",
+  y = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Pa() : Ma(),
+  Ia = () => "Multi-accounting",
+  Aa = () => "Múltiplas contas",
+  Ca = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Ia() : Aa(),
+  Oa = () => "Your account has been banned.",
   ka = () => "Sua conta foi banida.",
-  Oa = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? xa() : ka(),
+  xa = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Oa() : ka(),
   Ba = t => `Your account has been suspended until ${t.until}.`,
   Da = t => `Sua conta foi suspensa até ${t.until}.`,
-  La = (t, e = {}) => (e.locale ?? o()) === "en" ? Ba(t) : Da(t),
+  La = (t, e = {}) => (e.locale ?? s()) === "en" ? Ba(t) : Da(t),
   Na = () => "Breaking the rules",
   Ga = () => "Quebrar as regras",
-  qa = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Na() : Ga(),
+  qa = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Na() : Ga(),
   Ra = () => "Your account has been suspended for breaking the rules",
   Ua = () => "Sua conta foi suspensa por quebrar as regras",
-  ja = (t = {}, e = {}) => (e.locale ?? o()) === "en" ? Ra() : Ua(),
+  ja = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Ra() : Ua(),
   ht = {
     griefing: Sa(),
-    "multi-accounting": Ia(),
+    "multi-accounting": Ca(),
     "hate-speech": wa(),
     bot: ha(),
     doxxing: Ta(),
@@ -175,7 +175,7 @@ const W = () => "Unexpected server error. Try again later.",
     griefing: 5,
     other: 6
   };
-class O extends Error {
+class _ extends Error {
   constructor(e, a) {
     super(e), this.message = e, this.status = a
   }
@@ -185,8 +185,8 @@ function Fa(t, e) {
   const a = {};
   for (const n of t) {
     const l = e(n);
-    let c = a[l];
-    c ? c.push(n) : a[l] = [n]
+    let i = a[l];
+    i ? i.push(n) : a[l] = [n]
   }
   return a
 }
@@ -392,7 +392,7 @@ const Ka = [{
   Va = {
     needsPhoneVerification: "needs_phone_verification"
   },
-  Ya = {
+  za = {
     Droplet: {},
     "Max. Charge": {},
     "Paint Charge": {},
@@ -400,7 +400,7 @@ const Ka = [{
     Flag: {},
     "Profile Picture": {}
   },
-  za = {
+  Ya = {
     10: {
       name: "25,000 Droplets",
       price: 500,
@@ -514,8 +514,8 @@ const Ka = [{
     refreshIntervalMs: Ja,
     colors: Ha,
     errors: Va,
-    items: Ya,
-    products: za,
+    items: za,
+    products: Ya,
     countries: Za
   },
   Wa = L,
@@ -526,63 +526,63 @@ const Ka = [{
 function yt(t) {
   return Wa.countries[t - 1]
 }
-var S;
+var v;
 class Qa {
   constructor(e) {
-    m(this, S, y(!0));
+    m(this, v, b(!0));
     this.url = e
   }
   get online() {
-    return f(d(this, S))
+    return f(d(this, v))
   }
   set online(e) {
-    _(d(this, S), e, !0)
+    p(d(this, v), e, !0)
   }
   async paint(e, a) {
     const n = Fa(e, r => `t=(${r.tile[0]},${r.tile[1]}),s=${r.season}`),
-      c = (await Promise.all(Object.values(n).map(r => {
-        const [i, h] = r[0].tile, b = r[0].season, J = {
+      i = (await Promise.all(Object.values(n).map(r => {
+        const [c, h] = r[0].tile, S = r[0].season, J = {
           colors: r.map(N => N.colorIdx),
           coords: r.flatMap(N => N.pixel),
           t: a
         };
-        return this.request(`/s${b}/pixel/${i}/${h}`, {
+        return this.request(`/s${S}/pixel/${c}/${h}`, {
           method: "POST",
           body: JSON.stringify(J),
           credentials: "include"
         })
       }))).filter(r => r.status !== 200);
-    if (c.length) {
-      const r = c[0];
+    if (i.length) {
+      const r = i[0];
       if (r.status === 401) throw new Error(ae());
       if (r.status === 403) {
         if (r.headers.get("cf-mitigated") === "challenge") throw new Error(sa());
-        const i = await r.json();
-        throw (i == null ? void 0 : i.error) === "refresh" ? new Error(ca()) : (lt.refresh(), new Error(re()))
+        const c = await r.json();
+        throw (c == null ? void 0 : c.error) === "refresh" ? new Error(ca()) : (lt.refresh(), new Error(re()))
       } else if (r.status === 451) {
-        const i = await c[0].json();
-        i == null || i.err;
-        const h = i == null ? void 0 : i.suspension;
-        if (h === "ban") throw new Error(Oa({}));
+        const c = await i[0].json();
+        c == null || c.err;
+        const h = c == null ? void 0 : c.suspension;
+        if (h === "ban") throw new Error(xa({}));
         if (h === "timeout") {
-          const b = new Date(Date.now() + ((i == null ? void 0 : i.durationMs) ?? 0));
+          const S = new Date(Date.now() + ((c == null ? void 0 : c.durationMs) ?? 0));
           throw new Error(La({
-            until: b.toLocaleString()
+            until: S.toLocaleString()
           }))
-        } else throw new Error(s())
-      } else throw new Error(s())
+        } else throw new Error(o())
+      } else throw new Error(o())
     }
   }
   async getPixelInfo({
     season: e,
     tile: [a, n],
-    pixel: [l, c]
+    pixel: [l, i]
   }) {
-    const r = await this.request(`/s${e}/pixel/${a}/${n}?x=${l}&y=${c}`);
+    const r = await this.request(`/s${e}/pixel/${a}/${n}?x=${l}&y=${i}`);
     if (r.status !== 200) {
-      const i = await r.text();
+      const c = await r.text();
       throw new Error(ie({
-        err: i
+        err: c
       }))
     }
     return r.json()
@@ -611,7 +611,7 @@ class Qa {
     const e = await this.request("/otp/cooldown", {
       credentials: "include"
     });
-    if (e.status !== 200) throw new Error(s());
+    if (e.status !== 200) throw new Error(o());
     return await e.json()
   }
   async sendOtp(e) {
@@ -625,7 +625,7 @@ class Qa {
     if (a.status === 400) throw new Error(de());
     if (a.status === 403) throw new Error(ge());
     if (a.status === 429) throw new Error(_e());
-    if (a.status !== 200) throw new Error(s());
+    if (a.status !== 200) throw new Error(o());
     return await a.json()
   }
   async verifyOtp(e) {
@@ -637,7 +637,7 @@ class Qa {
       })
     });
     if (a.status === 400) throw new Error(ye());
-    if (a.status !== 200) throw new Error(s());
+    if (a.status !== 200) throw new Error(o());
     return await a.json()
   }
   async updateMe(e) {
@@ -649,13 +649,13 @@ class Qa {
     if (a.status === 400) {
       const n = await a.json();
       throw new Error(n == null ? void 0 : n.error)
-    } else if (a.status !== 200) throw new Error(s())
+    } else if (a.status !== 200) throw new Error(o())
   }
   async deleteMe() {
     if ((await this.request("/me/delete", {
         method: "POST",
         credentials: "include"
-      })).status !== 200) throw new Error(s())
+      })).status !== 200) throw new Error(o())
   }
   async favoriteLocation(e) {
     const a = await this.request("/favorite-location", {
@@ -666,8 +666,8 @@ class Qa {
       }),
       credentials: "include"
     });
-    if (a.status === 403) throw new Error(Ee());
-    if (a.status !== 200) throw new Error(s())
+    if (a.status === 403) throw new Error(ve());
+    if (a.status !== 200) throw new Error(o())
   }
   async deleteFavoriteLocation(e) {
     if ((await this.request("/favorite-location/delete", {
@@ -676,7 +676,7 @@ class Qa {
           id: e
         }),
         credentials: "include"
-      })).status !== 200) throw new Error(s())
+      })).status !== 200) throw new Error(o())
   }
   async updateFavoriteLocation(e, a) {
     const n = await this.request("/favorite-location/update", {
@@ -688,43 +688,43 @@ class Qa {
       credentials: "include"
     });
     if (n.status === 400) throw new Error(Pe());
-    if (n.status !== 200) throw new Error(s())
+    if (n.status !== 200) throw new Error(o())
   }
   async leaderboardPlayers(e) {
     const a = await this.request(`/leaderboard/player/${e}`);
-    if (a.status !== 200) throw new Error(w());
+    if (a.status !== 200) throw new Error(y());
     return a.json()
   }
   async leaderboardAlliances(e) {
     const a = await this.request(`/leaderboard/alliance/${e}`);
-    if (a.status !== 200) throw new Error(w());
+    if (a.status !== 200) throw new Error(y());
     return a.json()
   }
   async leaderboardRegions(e, a = 0) {
     const n = await this.request(`/leaderboard/region/${e}/${a}`);
     if (n.status === 200) return n.json();
-    throw new Error(w())
+    throw new Error(y())
   }
   async leaderboardRegionPlayers(e, a) {
     const n = await this.request(`/leaderboard/region/players/${e}/${a}`);
     if (n.status === 200) return n.json();
-    throw new Error(w())
+    throw new Error(y())
   }
   async leaderboardRegionAlliances(e, a) {
     const n = await this.request(`/leaderboard/region/alliances/${e}/${a}`);
     if (n.status === 200) return n.json();
-    throw new Error(w())
+    throw new Error(y())
   }
   async leaderboardCountries(e) {
     const a = await this.request(`/leaderboard/country/${e}`, {
       credentials: "include"
     });
     if (a.status === 200) return a.json();
-    throw new Error(w())
+    throw new Error(y())
   }
   async getRandomTile(e) {
     const a = await this.request(`/s${e}/tile/random`);
-    if (a.status !== 200) throw new Error(s());
+    if (a.status !== 200) throw new Error(o());
     return a.json()
   }
   async purchase(e) {
@@ -735,7 +735,7 @@ class Qa {
         product: e
       })
     });
-    if (a.status !== 200) throw a.status === 404 ? new Error(Ce()) : a.status === 403 ? new Error(ke()) : a.status === 409 ? new Error(De()) : new Error(s())
+    if (a.status !== 200) throw a.status === 404 ? new Error(Ae()) : a.status === 403 ? new Error(ke()) : a.status === 409 ? new Error(De()) : new Error(o())
   }
   async getAlliance() {
     const e = await this.request("/alliance", {
@@ -743,7 +743,7 @@ class Qa {
     });
     if (e.status === 200) return e.json();
     if (e.status === 404) return;
-    throw new Error(s())
+    throw new Error(o())
   }
   async createAlliance(e) {
     const a = await this.request("/alliance", {
@@ -756,14 +756,14 @@ class Qa {
     if (a.status === 200) return a.json();
     if (a.status === 400) {
       const n = await a.json();
-      throw n.error === "max_characters" ? new Error(Ge()) : n.error === "name_taken" ? new Error(Ue()) : n.error == "empty_name" ? new Error(Ke()) : new Error(s())
-    } else throw a.status === 403 ? new Error(He()) : new Error(s())
+      throw n.error === "max_characters" ? new Error(Ge()) : n.error === "name_taken" ? new Error(Ue()) : n.error == "empty_name" ? new Error(Ke()) : new Error(o())
+    } else throw a.status === 403 ? new Error(He()) : new Error(o())
   }
   async leaveAlliance() {
     if ((await this.request("/alliance/leave", {
         method: "POST",
         credentials: "include"
-      })).status !== 200) throw new Error(s())
+      })).status !== 200) throw new Error(o())
   }
   async updateAllianceDescription(e) {
     const a = await this.request("/alliance/update-description", {
@@ -773,7 +773,7 @@ class Qa {
         description: e
       })
     });
-    if (a.status !== 200) throw a.status === 403 ? new Error(p()) : new Error(s())
+    if (a.status !== 200) throw a.status === 403 ? new Error(w()) : new Error(o())
   }
   async updateAllianceHeadquarters(e, a) {
     const n = await this.request("/alliance/update-headquarters", {
@@ -784,21 +784,21 @@ class Qa {
         longitude: a
       })
     });
-    if (n.status !== 200) throw n.status === 403 ? new Error(p()) : new Error(s())
+    if (n.status !== 200) throw n.status === 403 ? new Error(w()) : new Error(o())
   }
   async allianceLeaderboard(e) {
     const a = await this.request(`/alliance/leaderboard/${e}`, {
       credentials: "include"
     });
     if (a.status === 200) return a.json();
-    throw a.status === 403 ? new Error(p()) : new Error(w())
+    throw a.status === 403 ? new Error(w()) : new Error(y())
   }
   async getAllianceInvites() {
     const e = await this.request("/alliance/invites", {
       credentials: "include"
     });
     if (e.status === 200) return e.json();
-    throw e.status === 403 ? new Error(p()) : new Error(s())
+    throw e.status === 403 ? new Error(w()) : new Error(o())
   }
   async joinAlliance(e) {
     switch ((await this.request(`/alliance/join/${e}`, {
@@ -824,14 +824,14 @@ class Qa {
       credentials: "include"
     });
     if (a.status === 200) return a.json();
-    throw new Error(s())
+    throw new Error(o())
   }
   async getAllianceBannedMembers(e) {
     const a = await this.request(`/alliance/members/banned/${e}`, {
       credentials: "include"
     });
     if (a.status === 200) return a.json();
-    throw new Error(s())
+    throw new Error(o())
   }
   async giveAllianceAdmin(e) {
     const a = await this.request("/alliance/give-admin", {
@@ -841,7 +841,7 @@ class Qa {
       method: "POST",
       credentials: "include"
     });
-    if (a.status !== 200) throw a.status === 403 ? new Error(p()) : new Error(s())
+    if (a.status !== 200) throw a.status === 403 ? new Error(w()) : new Error(o())
   }
   async banAllianceUser(e) {
     const a = await this.request("/alliance/ban", {
@@ -851,19 +851,19 @@ class Qa {
       method: "POST",
       credentials: "include"
     });
-    if (a.status !== 200) throw a.status === 403 ? new Error(p()) : new Error(s())
+    if (a.status !== 200) throw a.status === 403 ? new Error(w()) : new Error(o())
   }
   async equipFlag(e) {
     if ((await this.request(`/flag/equip/${e}`, {
         method: "POST",
         credentials: "include"
-      })).status !== 200) throw new Error(s())
+      })).status !== 200) throw new Error(o())
   }
   async getMyProfilePictures() {
     const e = await this.request("/me/profile-pictures", {
       credentials: "include"
     });
-    if (e.status !== 200) throw new Error(s());
+    if (e.status !== 200) throw new Error(o());
     return e.json()
   }
   async changeProfilePicture(e) {
@@ -873,7 +873,7 @@ class Qa {
         body: JSON.stringify({
           pictureId: e
         })
-      })).status !== 200) throw new Error(s())
+      })).status !== 200) throw new Error(o())
   }
   async unbanAllianceUser(e) {
     const a = await this.request("/alliance/unban", {
@@ -883,7 +883,7 @@ class Qa {
       method: "POST",
       credentials: "include"
     });
-    if (a.status !== 200) throw a.status === 403 ? new Error(p()) : new Error(s())
+    if (a.status !== 200) throw a.status === 403 ? new Error(w()) : new Error(o())
   }
   async health() {
     return (await this.request("/health")).json()
@@ -898,7 +898,7 @@ class Qa {
       throw new Error(l == null ? void 0 : l.error)
     } else {
       if (a.status === 451) throw new Error(ja());
-      if (a.status !== 200) throw new Error(s())
+      if (a.status !== 200) throw new Error(o())
     }
     return await a.json()
   }
@@ -926,9 +926,9 @@ class Qa {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== 200) throw new O(s(), e.status);
+    if (e.status !== 200) throw new _(o(), e.status);
     const a = await e.json();
-    for (const n of a.tickets) n.reports.sort((l, c) => U[l.reason] - U[c.reason]);
+    for (const n of a.tickets) n.reports.sort((l, i) => U[l.reason] - U[i.reason]);
     return a
   }
   async getSevereOpenTicketsCount() {
@@ -936,7 +936,7 @@ class Qa {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== 200) throw new O(s(), e.status);
+    if (e.status !== 200) throw new _(o(), e.status);
     const {
       tickets: a
     } = await e.json();
@@ -947,7 +947,7 @@ class Qa {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== 200) throw new O(s(), e.status);
+    if (e.status !== 200) throw new _(o(), e.status);
     return e.json()
   }
   async setTicketStatus(e, a) {
@@ -959,7 +959,7 @@ class Qa {
         status: a
       })
     });
-    if (n.status !== 200) throw new O(s(), n.status)
+    if (n.status !== 200) throw new _(o(), n.status)
   }
   async request(e, a) {
     let n;
@@ -973,9 +973,68 @@ class Qa {
     if (n.status === 429) throw new Error(ea());
     return n
   }
+  async getOpenTicketsSummary() {
+    const e = await this.request("/admin/countalltickets", {
+      method: "GET",
+      credentials: "include"
+    });
+    if (e.status !== 200) throw new _(o(), e.status);
+    return e.json()
+  }
+  async getClosedTicketsByMod(e, a) {
+    const n = await this.request(`/admin/closed-tickets?start=${encodeURIComponent(e)}&end=${encodeURIComponent(a)}`, {
+      method: "GET",
+      credentials: "include"
+    });
+    if (n.status !== 200) throw new _(o(), n.status);
+    return (await n.json()).items.map(i => ({
+      ...i,
+      suspensionRate: (i.ban + i.timeout) / i.total
+    }))
+  }
+  async getUserInfoById(e) {
+    const a = await this.request(`/moderator/user-info/${encodeURIComponent(e)}`, {
+      method: "GET",
+      credentials: "include"
+    });
+    if (a.status !== 404) {
+      if (a.status !== 200) throw new _(o(), a.status);
+      return a.json()
+    }
+  }
+  async getUserInfoFull(e) {
+    const a = await this.request(`/admin/users?id=${encodeURIComponent(e)}`, {
+      method: "GET",
+      credentials: "include"
+    });
+    if (a.status !== 404) {
+      if (a.status !== 200) throw new _(o(), a.status);
+      return a.json()
+    }
+  }
+  async removeTimeout(e) {
+    const a = await this.request("/admin/remove-timeout", {
+      method: "POST",
+      credentials: "include",
+      body: JSON.stringify({
+        userId: e
+      })
+    });
+    if (a.status !== 200) throw new _(o(), a.status)
+  }
+  async removeBan(e) {
+    const a = await this.request("/admin/remove-ban", {
+      method: "POST",
+      credentials: "include",
+      body: JSON.stringify({
+        userId: e
+      })
+    });
+    if (a.status !== 200) throw new _(o(), a.status)
+  }
 }
-S = new WeakMap;
-let j = new Qa(z);
+v = new WeakMap;
+let j = new Qa(Y);
 
 function Xa(t) {
   const e = atob(t),
@@ -993,12 +1052,12 @@ class et {
       l = e % 8;
     if (n >= this.bytes.length) {
       const r = new Uint8Array(n + 1),
-        i = r.length - this.bytes.length;
-      for (let h = 0; h < this.bytes.length; h++) r[h + i] = this.bytes[h];
+        c = r.length - this.bytes.length;
+      for (let h = 0; h < this.bytes.length; h++) r[h + c] = this.bytes[h];
       this.bytes = r
     }
-    const c = this.bytes.length - 1 - n;
-    a ? this.bytes[c] = this.bytes[c] | 1 << l : this.bytes[c] = this.bytes[c] & ~(1 << l)
+    const i = this.bytes.length - 1 - n;
+    a ? this.bytes[i] = this.bytes[i] | 1 << l : this.bytes[i] = this.bytes[i] & ~(1 << l)
   }
   get(e) {
     const a = Math.floor(e / 8),
@@ -1013,12 +1072,12 @@ function bt(...t) {
 }
 const at = typeof document < "u";
 let F = 0;
-var E, v, T;
+var E, T, P;
 class tt {
   constructor() {
-    m(this, E, y(G([])));
-    m(this, v, y(G([])));
-    m(this, T, e => {
+    m(this, E, b(G([])));
+    m(this, T, b(G([])));
+    m(this, P, e => {
       const a = this.toasts.findIndex(n => n.id === e);
       return a === -1 ? null : a
     });
@@ -1031,9 +1090,9 @@ class tt {
       type: n,
       message: l
     }) => {
-      const c = this.toasts.findIndex(i => i.id === e),
-        r = this.toasts[c];
-      this.toasts[c] = {
+      const i = this.toasts.findIndex(c => c.id === e),
+        r = this.toasts[i];
+      this.toasts[i] = {
         ...r,
         ...a,
         id: e,
@@ -1043,23 +1102,23 @@ class tt {
       }
     });
     u(this, "create", e => {
-      var i;
+      var c;
       const {
         message: a,
         ...n
-      } = e, l = typeof(e == null ? void 0 : e.id) == "number" || e.id && ((i = e.id) == null ? void 0 : i.length) > 0 ? e.id : F++, c = e.dismissable === void 0 ? !0 : e.dismissable, r = e.type === void 0 ? "default" : e.type;
+      } = e, l = typeof(e == null ? void 0 : e.id) == "number" || e.id && ((c = e.id) == null ? void 0 : c.length) > 0 ? e.id : F++, i = e.dismissable === void 0 ? !0 : e.dismissable, r = e.type === void 0 ? "default" : e.type;
       return R(() => {
-        this.toasts.find(b => b.id === l) ? this.updateToast({
+        this.toasts.find(S => S.id === l) ? this.updateToast({
           id: l,
           data: e,
           type: r,
           message: a,
-          dismissable: c
+          dismissable: i
         }) : this.addToast({
           ...n,
           id: l,
           title: a,
-          dismissable: c,
+          dismissable: i,
           type: r
         })
       }), l
@@ -1083,7 +1142,7 @@ class tt {
         this.toasts = [];
         return
       }
-      const a = d(this, T).call(this, e);
+      const a = d(this, P).call(this, e);
       if (a !== null) return this.toasts.splice(a, 1), e
     });
     u(this, "message", (e, a) => this.create({
@@ -1126,38 +1185,38 @@ class tt {
         message: typeof a.loading == "string" ? a.loading : a.loading()
       }));
       const l = e instanceof Promise ? e : e();
-      let c = n !== void 0;
+      let i = n !== void 0;
       return l.then(r => {
         if (typeof r == "object" && r && "ok" in r && typeof r.ok == "boolean" && !r.ok) {
-          c = !1;
-          const i = nt(r);
+          i = !1;
+          const c = nt(r);
           this.create({
             id: n,
             type: "error",
-            message: i
+            message: c
           })
         } else if (a.success !== void 0) {
-          c = !1;
-          const i = typeof a.success == "function" ? a.success(r) : a.success;
+          i = !1;
+          const c = typeof a.success == "function" ? a.success(r) : a.success;
           this.create({
             id: n,
             type: "success",
-            message: i
+            message: c
           })
         }
       }).catch(r => {
         if (a.error !== void 0) {
-          c = !1;
-          const i = typeof a.error == "function" ? a.error(r) : a.error;
+          i = !1;
+          const c = typeof a.error == "function" ? a.error(r) : a.error;
           this.create({
             id: n,
             type: "error",
-            message: i
+            message: c
           })
         }
       }).finally(() => {
         var r;
-        c && (this.dismiss(n), n = void 0), (r = a.finally) == null || r.call(a)
+        i && (this.dismiss(n), n = void 0), (r = a.finally) == null || r.call(a)
       }), n
     });
     u(this, "custom", (e, a) => {
@@ -1172,7 +1231,7 @@ class tt {
       this.heights = this.heights.filter(a => a.toastId !== e)
     });
     u(this, "setHeight", e => {
-      const a = d(this, T).call(this, e.toastId);
+      const a = d(this, P).call(this, e.toastId);
       if (a === null) {
         this.heights.push(e);
         return
@@ -1187,16 +1246,16 @@ class tt {
     return f(d(this, E))
   }
   set toasts(e) {
-    _(d(this, E), e, !0)
+    p(d(this, E), e, !0)
   }
   get heights() {
-    return f(d(this, v))
+    return f(d(this, T))
   }
   set heights(e) {
-    _(d(this, v), e, !0)
+    p(d(this, T), e, !0)
   }
 }
-E = new WeakMap, v = new WeakMap, T = new WeakMap;
+E = new WeakMap, T = new WeakMap, P = new WeakMap;
 
 function nt(t) {
   return t && typeof t == "object" && "status" in t ? `HTTP error! Status: ${t.status}` : `Error! ${t}`
@@ -1232,23 +1291,23 @@ const ot = rt,
     loading: g.loading,
     getActiveToasts: () => g.toasts.filter(t => !t.dismiss)
   });
-var P, M, A, C, I, x, k;
+var M, I, A, C, O, k, x;
 class it {
   constructor() {
     u(this, "channel", new BroadcastChannel("user-channel"));
-    m(this, P, y());
-    m(this, M, y(!0));
-    m(this, A, y(Date.now()));
-    m(this, C, y(Date.now()));
-    m(this, I, B(() => {
+    m(this, M, b());
+    m(this, I, b(!0));
+    m(this, A, b(Date.now()));
+    m(this, C, b(Date.now()));
+    m(this, O, B(() => {
       if (!this.data) return;
       const e = this.data.charges;
       if (e.count > e.max) return e.count;
       const a = e.count + Math.max((K.now - this.lastFetch) / e.cooldownMs, 0);
       return Math.min(e.max, a)
     }));
-    m(this, x, B(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
-    m(this, k, B(() => {
+    m(this, k, B(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
+    m(this, x, B(() => {
       var e;
       return new et(Xa(((e = this.data) == null ? void 0 : e.flagsBitmap) ?? "AA=="))
     }));
@@ -1258,46 +1317,46 @@ class it {
     }
   }
   get data() {
-    return f(d(this, P))
-  }
-  set data(e) {
-    _(d(this, P), e, !0)
-  }
-  get loading() {
     return f(d(this, M))
   }
+  set data(e) {
+    p(d(this, M), e, !0)
+  }
+  get loading() {
+    return f(d(this, I))
+  }
   set loading(e) {
-    _(d(this, M), e, !0)
+    p(d(this, I), e, !0)
   }
   get now() {
     return f(d(this, A))
   }
   set now(e) {
-    _(d(this, A), e)
+    p(d(this, A), e)
   }
   get lastFetch() {
     return f(d(this, C))
   }
   set lastFetch(e) {
-    _(d(this, C), e)
+    p(d(this, C), e)
   }
   get charges() {
-    return f(d(this, I))
+    return f(d(this, O))
   }
   set charges(e) {
-    _(d(this, I), e)
+    p(d(this, O), e)
   }
   get cooldown() {
-    return f(d(this, x))
-  }
-  set cooldown(e) {
-    _(d(this, x), e)
-  }
-  get flagsBitmap() {
     return f(d(this, k))
   }
+  set cooldown(e) {
+    p(d(this, k), e)
+  }
+  get flagsBitmap() {
+    return f(d(this, x))
+  }
   set flagsBitmap(e) {
-    _(d(this, k), e)
+    p(d(this, x), e)
   }
   async refresh() {
     try {
@@ -1323,8 +1382,8 @@ class it {
     return e < 32 ? !0 : ((((n = this.data) == null ? void 0 : n.extraColorsBitmap) ?? 0) & 1 << e - 32) !== 0
   }
 }
-P = new WeakMap, M = new WeakMap, A = new WeakMap, C = new WeakMap, I = new WeakMap, x = new WeakMap, k = new WeakMap;
+M = new WeakMap, I = new WeakMap, A = new WeakMap, C = new WeakMap, O = new WeakMap, k = new WeakMap, x = new WeakMap;
 const lt = new it;
 export {
-  $ as C, gt as P, Wa as S, j as a, s as b, z as c, g as d, bt as e, St as f, K as g, ht as h, yt as i, ma as j, wa as k, Ta as l, ha as m, Sa as n, pt as o, wt as p, mt as q, ft as r, _t as s, st as t, lt as u
+  $ as C, gt as P, Wa as S, j as a, o as b, Y as c, g as d, bt as e, St as f, K as g, ht as h, ma as i, wa as j, Ta as k, ha as l, Sa as m, yt as n, pt as o, wt as p, mt as q, ft as r, _t as s, st as t, lt as u
 };
