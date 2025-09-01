@@ -4,9 +4,9 @@ import {
 import "./Bzak7iHL.js";
 import {
   o as re
-} from "./BgsnPcy0.js";
+} from "./C7jYfUbS.js";
 import {
-  bm as le,
+  bn as le,
   v as R,
   b as v,
   at as Zt,
@@ -20,48 +20,48 @@ import {
   s as r,
   n as U,
   t as z,
-  b5 as lt,
+  bj as lt,
   y as ne,
   g as b,
   aI as nt,
   aJ as C,
   u as wt,
   b4 as ie
-} from "./B6s--CY1.js";
+} from "./apxRKl0u.js";
 import {
   s as L
-} from "./Cig0Z20M.js";
+} from "./B9SWw7yZ.js";
 import {
   r as N,
   p as Rt,
   i as S
-} from "./DCOkPuhX.js";
+} from "./DBMZVJyA.js";
 import {
   b as A,
-  d as ce,
+  e as ce,
   r as xt,
   s as it,
-  e as ht,
+  f as ht,
   a as Ft,
-  f as de
-} from "./B-MUH0Pm.js";
+  d as de
+} from "./DRcRj3o9.js";
 import {
   b as pe
-} from "./z89K5-yZ.js";
+} from "./ClbBIaRv.js";
 import {
   g as Tt
-} from "./JeUuW028.js";
+} from "./B1YdDUTA.js";
 import {
   g as ve,
   u as ct,
   t as J,
-  a as Ot,
+  a as jt,
   S as ue,
   c as Bt
-} from "./B9czu7fs.js";
+} from "./DJI8mFfT.js";
 import {
   a as me
-} from "./4cYenYIv.js";
+} from "./B1v9VrKg.js";
 const _e = le,
   fe = () => "Add profile picture",
   be = () => "Adicionar imagem de perfil",
@@ -184,7 +184,7 @@ function Ht(l, a) {
   })), v(l, o)
 }
 var Ee = (l, a, s, o, _) => {
-    b(a).show(), C(s, !0), Ot.generatePixQrCode(o()).then(p => {
+    b(a).show(), C(s, !0), jt.generatePixQrCode(o()).then(p => {
       C(_, p, !0)
     }).catch(p => {
       J.error(p.message)
@@ -196,11 +196,11 @@ var Ee = (l, a, s, o, _) => {
   Ae = w('<form method="POST"><input type="hidden" name="lookup_key"/> <button class="btn btn-lg btn-primary mt-3 h-10" type="submit"> </button></form>'),
   Re = w('<div class="bg-base-300 flex flex-col items-center justify-center rounded-xl px-4 py-6"><p class="text-primary text-3xl font-bold"><!> <span> <span class="text-lg font-normal">Droplets</span></span></p> <p class="text-base-content/80 mt-0.5 text-center text-xs"><!> <span class="text-primary/80 font-medium"> </span></p> <!></div>'),
   Fe = w('<div class="flex flex-col gap-4"><section><div class="flex items-center gap-1"><!> <h3 class="text-xl font-bold">Droplets</h3> <div class="ml-auto mr-4"><!></div></div> <p class="text-base-content/80 mt-1 text-sm"> </p></section> <section><div class="grid gap-3 sm:grid-cols-2"><!> <!> <!> <!> <!> <!></div></section></div>'),
-  Oe = (l, a) => {
+  je = (l, a) => {
     var s;
     navigator.clipboard.writeText(((s = b(a)) == null ? void 0 : s.pixCode) ?? ""), J.success("Código PIX copiado")
   },
-  Xe = async (l, a, s) => {
+  Oe = async (l, a, s) => {
     var o, _, p;
     if (!b(a)) {
       J.info("Espere 1 minuto e recarrege a pagina");
@@ -210,7 +210,7 @@ var Ee = (l, a, s, o, _) => {
       C(s, !0);
       const {
         paid: c
-      } = await Ot.getPixStatus(b(a).pixId);
+      } = await jt.getPixStatus(b(a).pixId);
       if (c) {
         const f = b(a).productId.toString(),
           n = (p = (_ = (o = ue.products[f]) == null ? void 0 : o.items) == null ? void 0 : _[0]) == null ? void 0 : p.amount;
@@ -223,7 +223,7 @@ var Ee = (l, a, s, o, _) => {
     } finally {
       C(s, !1)
     }
-  }, je = w('<p class="text-base-content/80">Efetue o pagamento do PIX no valor de <span class="font-semibold"> </span></p> <section><div class="relative"><img class="pixelated w-70 aspect-square" alt="QR code PIX"/> <div class="center-absolute border-6 absolute size-[95%] border-black"></div></div></section> <section class="w-full"><span class="text-base-content/80 ml-4 text-sm font-semibold">Código</span> <div class="border-base-content/20 rounded-field flex w-full items-center gap-1 border-2 py-1.5 pl-4 pr-2.5"><input class="text-base-content/80 w-full min-w-10 grow text-sm font-medium" readonly=""/> <div class="h-10"><button class="btn btn-primary">Copiar</button></div></div></section> <section class="mt-2"><button class="btn btn-primary btn-lg">Fiz o pagamento</button></section>', 1), Ke = w('<div class="flex h-96 items-center justify-center"><span class="loading loading-spinner loading-xl"></span></div>'), Qe = w('<dialog class="modal !bg-black/90"><div class="modal-box max-h-11/12 w-11/12 max-w-2xl"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <!></div> <form method="dialog" class="modal-backdrop"><button> </button></form></dialog> <dialog class="modal !bg-black/90"><div class="modal-box max-h-11/12 w-11/12 max-w-lg"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <div class="flex h-full flex-col items-center gap-4"><section><div class="flex items-center gap-2"><!> <h3 class="text-4xl font-bold">PIX</h3></div></section> <!></div></div></dialog>', 1);
+  }, Xe = w('<p class="text-base-content/80">Efetue o pagamento do PIX no valor de <span class="font-semibold"> </span></p> <section><div class="relative"><img class="pixelated w-70 aspect-square" alt="QR code PIX"/> <div class="center-absolute border-6 absolute size-[95%] border-black"></div></div></section> <section class="w-full"><span class="text-base-content/80 ml-4 text-sm font-semibold">Código</span> <div class="border-base-content/20 rounded-field flex w-full items-center gap-1 border-2 py-1.5 pl-4 pr-2.5"><input class="text-base-content/80 w-full min-w-10 grow text-sm font-medium" readonly=""/> <div class="h-10"><button class="btn btn-primary">Copiar</button></div></div></section> <section class="mt-2"><button class="btn btn-primary btn-lg">Fiz o pagamento</button></section>', 1), Ke = w('<div class="flex h-96 items-center justify-center"><span class="loading loading-spinner loading-xl"></span></div>'), Qe = w('<dialog class="modal !bg-black/90"><div class="modal-box max-h-11/12 w-11/12 max-w-2xl"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <!></div> <form method="dialog" class="modal-backdrop"><button> </button></form></dialog> <dialog class="modal !bg-black/90"><div class="modal-box max-h-11/12 w-11/12 max-w-lg"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <div class="flex h-full flex-col items-center gap-4"><section><div class="flex items-center gap-2"><!> <h3 class="text-4xl font-bold">PIX</h3></div></section> <!></div></div></dialog>', 1);
 
 function da(l, a) {
   Et(a, !0);
@@ -273,7 +273,7 @@ function da(l, a) {
       var $ = r(H, 2),
         F = t($, !0);
       e($), e(B);
-      var O = r(B, 2);
+      var j = r(B, 2);
       {
         const I = (at, m) => {
           let It = () => m == null ? void 0 : m().droplets,
@@ -354,9 +354,9 @@ function da(l, a) {
             L(Wt, `${k??""} `), L(Gt, `+${g??""} bonus`)
           }, [() => (It() + ut()).toLocaleString("en-US"), () => ut().toLocaleString("en-US")]), v(at, mt)
         };
-        var E = t(O),
-          X = t(E);
-        I(X, () => ({
+        var E = t(j),
+          O = t(E);
+        I(O, () => ({
           price: 5,
           droplets: 25e3,
           bonus: 0,
@@ -364,7 +364,7 @@ function da(l, a) {
           productId: 10,
           dropdownClass: "dropdown-center"
         }));
-        var tt = r(X, 2);
+        var tt = r(O, 2);
         I(tt, () => ({
           price: 15,
           droplets: 75e3,
@@ -373,8 +373,8 @@ function da(l, a) {
           productId: 20,
           dropdownClass: "dropdown-center"
         }));
-        var j = r(tt, 2);
-        I(j, () => ({
+        var X = r(tt, 2);
+        I(X, () => ({
           price: 30,
           droplets: 15e4,
           bonus: 15e3,
@@ -382,7 +382,7 @@ function da(l, a) {
           productId: 30,
           dropdownClass: "dropdown-center"
         }));
-        var K = r(j, 2);
+        var K = r(X, 2);
         I(K, () => ({
           price: 50,
           droplets: 25e4,
@@ -408,7 +408,7 @@ function da(l, a) {
           stripeLookupkey: "droplets_100",
           productId: 60,
           dropdownClass: "max-sm:dropdown-top dropdown-center"
-        })), e(E), e(O)
+        })), e(E), e(j)
       }
       e(h), z(I => L(F, I), [() => ke()]), v(d, h)
     };
@@ -430,14 +430,14 @@ function da(l, a) {
     kt = r(t(W), 2),
     vt = t(kt),
     Ct = t(vt),
-    Xt = t(Ct);
-  Ht(Xt, {
+    Ot = t(Ct);
+  Ht(Ot, {
     class: "size-10"
   }), U(2), e(Ct), e(vt);
-  var jt = r(vt, 2);
+  var Xt = r(vt, 2);
   {
     var Kt = d => {
-        var h = je(),
+        var h = Xe(),
           B = dt(h),
           H = r(t(B)),
           Y = t(H);
@@ -447,15 +447,15 @@ function da(l, a) {
           $ = t(G);
         U(2), e(G), e(Z);
         var F = r(Z, 2),
-          O = r(t(F), 2),
-          E = t(O);
+          j = r(t(F), 2),
+          E = t(j);
         xt(E);
-        var X = r(E, 2),
-          tt = t(X);
-        tt.__click = [Oe, c], e(X), e(O), e(F);
-        var j = r(F, 2),
-          K = t(j);
-        K.__click = [Xe, c, f], e(j), z(et => {
+        var O = r(E, 2),
+          tt = t(O);
+        tt.__click = [je, c], e(O), e(j), e(F);
+        var X = r(F, 2),
+          K = t(X);
+        K.__click = [Oe, c, f], e(X), z(et => {
           L(Y, `R$${et??""}`), it($, "src", b(c).qrCode), ht(E, b(c).pixCode), K.disabled = b(f)
         }, [() => (b(c).price / 100).toFixed(2).replace(".", ",")]), v(d, h)
       },
@@ -463,7 +463,7 @@ function da(l, a) {
         var h = Ke();
         v(d, h)
       };
-    S(jt, d => {
+    S(Xt, d => {
       b(c) ? d(Kt) : d(Qt, !1)
     })
   }

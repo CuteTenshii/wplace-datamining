@@ -1,4 +1,4 @@
 import {
   ar as a
-} from "./B6s--CY1.js";
+} from "./apxRKl0u.js";
 a();

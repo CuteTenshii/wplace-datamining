@@ -15,11 +15,11 @@ var d = (t, e, a) => (z(t, e, "read from private field"), a ? a.call(t) : e.get(
 import {
   aH as G,
   aI as b,
-  g as f,
+  g as h,
   aJ as p,
-  z as R,
+  z as U,
   u as B
-} from "./B6s--CY1.js";
+} from "./apxRKl0u.js";
 import {
   g as s
 } from "./C5GsJ62f.js";
@@ -27,7 +27,7 @@ const mt = "https://backend.wplace.live/files",
   gt = "0x4AAAAAABpHqZ-6i7uL0nmG",
   Y = "https://backend.wplace.live",
   ft = "0x4AAAAAABpqJe8FO0N84q0F";
-let K = G({
+let $ = G({
   dropletsDialogOpen: !1,
   muted: !1,
   language: Z(),
@@ -36,7 +36,7 @@ let K = G({
   turnstatileLoaded: !1
 });
 setInterval(() => {
-  K.now = Date.now()
+  $.now = Date.now()
 }, 500);
 
 function Z() {
@@ -76,9 +76,9 @@ const W = () => "Unexpected server error. Try again later.",
   Ee = () => "Location name is too big (max. 128 characters)",
   Te = () => "Nome da localização é grande demais (max. 128 caracteres)",
   Pe = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Ee() : Te(),
-  Me = () => "Couldn't complete the purchase. This item does not exist.",
-  Ie = () => "Não foi possível concluir a compra. Este item não existe.",
-  Ae = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Me() : Ie(),
+  Ie = () => "Couldn't complete the purchase. This item does not exist.",
+  Me = () => "Não foi possível concluir a compra. Este item não existe.",
+  Ae = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Ie() : Me(),
   Ce = () => "You do not have enough droplets to buy this item.",
   Oe = () => "Você não tem gotas suficientes para comprar este item.",
   ke = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Ce() : Oe(),
@@ -89,14 +89,14 @@ const W = () => "Unexpected server error. Try again later.",
   Ne = () => "O nome da aliança excedeu o número máximo de caracteres",
   Ge = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Le() : Ne(),
   qe = () => "Alliance name already taken",
-  Re = () => "Já possui uma aliança com esse nome",
-  Ue = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? qe() : Re(),
+  Ue = () => "Já possui uma aliança com esse nome",
+  Re = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? qe() : Ue(),
   je = () => "Alliance with empty name",
   Fe = () => "Aliança com nome vazio",
-  Ke = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? je() : Fe(),
-  $e = () => "You are already in an alliance",
+  $e = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? je() : Fe(),
+  Ke = () => "You are already in an alliance",
   Je = () => "Você já está em uma aliança",
-  He = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? $e() : Je(),
+  He = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Ke() : Je(),
   Ve = () => "You are not allowed to do this",
   ze = () => "Você não tem permissão para fazer isso",
   w = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Ve() : ze(),
@@ -131,11 +131,11 @@ const W = () => "Unexpected server error. Try again later.",
   Ea = () => "Doxxing",
   Ta = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? va() : Ea(),
   Pa = () => "Leaderboard is temporarily disabled",
-  Ma = () => "O ranking está temporariamente desativado",
-  y = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Pa() : Ma(),
-  Ia = () => "Multi-accounting",
+  Ia = () => "O ranking está temporariamente desativado",
+  y = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Pa() : Ia(),
+  Ma = () => "Multi-accounting",
   Aa = () => "Múltiplas contas",
-  Ca = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Ia() : Aa(),
+  Ca = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Ma() : Aa(),
   Oa = () => "Your account has been banned.",
   ka = () => "Sua conta foi banida.",
   xa = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Oa() : ka(),
@@ -145,9 +145,9 @@ const W = () => "Unexpected server error. Try again later.",
   Na = () => "Breaking the rules",
   Ga = () => "Quebrar as regras",
   qa = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Na() : Ga(),
-  Ra = () => "Your account has been suspended for breaking the rules",
-  Ua = () => "Sua conta foi suspensa por quebrar as regras",
-  ja = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Ra() : Ua(),
+  Ua = () => "Your account has been suspended for breaking the rules",
+  Ra = () => "Sua conta foi suspensa por quebrar as regras",
+  ja = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? Ua() : Ra(),
   ht = {
     griefing: Sa(),
     "multi-accounting": Ca(),
@@ -166,7 +166,7 @@ const W = () => "Unexpected server error. Try again later.",
     griefing: "text-amber-600",
     other: "text-blue-600"
   },
-  U = {
+  R = {
     doxxing: 0,
     "hate-speech": 1,
     "inappropriate-content": 2,
@@ -175,7 +175,7 @@ const W = () => "Unexpected server error. Try again later.",
     griefing: 5,
     other: 6
   };
-class _ extends Error {
+class g extends Error {
   constructor(e, a) {
     super(e), this.message = e, this.status = a
   }
@@ -190,11 +190,11 @@ function Fa(t, e) {
   }
   return a
 }
-const Ka = [{
+const $a = [{
     tileSize: 1e3,
     zoom: 11
   }],
-  $a = 4,
+  Ka = 4,
   Ja = 6e3,
   Ha = [{
     name: "Transparent",
@@ -509,8 +509,8 @@ const Ka = [{
   },
   Za = JSON.parse(`[{"id":1,"name":"Afghanistan","code":"AF","flag":"🇦🇫"},{"id":2,"name":"Albania","code":"AL","flag":"🇦🇱"},{"id":3,"name":"Algeria","code":"DZ","flag":"🇩🇿"},{"id":4,"name":"American Samoa","code":"AS","flag":"🇦🇸"},{"id":5,"name":"Andorra","code":"AD","flag":"🇦🇩"},{"id":6,"name":"Angola","code":"AO","flag":"🇦🇴"},{"id":7,"name":"Anguilla","code":"AI","flag":"🇦🇮"},{"id":8,"name":"Antarctica","code":"AQ","flag":"🇦🇶"},{"id":9,"name":"Antigua and Barbuda","code":"AG","flag":"🇦🇬"},{"id":10,"name":"Argentina","code":"AR","flag":"🇦🇷"},{"id":11,"name":"Armenia","code":"AM","flag":"🇦🇲"},{"id":12,"name":"Aruba","code":"AW","flag":"🇦🇼"},{"id":13,"name":"Australia","code":"AU","flag":"🇦🇺"},{"id":14,"name":"Austria","code":"AT","flag":"🇦🇹"},{"id":15,"name":"Azerbaijan","code":"AZ","flag":"🇦🇿"},{"id":16,"name":"Bahamas","code":"BS","flag":"🇧🇸"},{"id":17,"name":"Bahrain","code":"BH","flag":"🇧🇭"},{"id":18,"name":"Bangladesh","code":"BD","flag":"🇧🇩"},{"id":19,"name":"Barbados","code":"BB","flag":"🇧🇧"},{"id":20,"name":"Belarus","code":"BY","flag":"🇧🇾"},{"id":21,"name":"Belgium","code":"BE","flag":"🇧🇪"},{"id":22,"name":"Belize","code":"BZ","flag":"🇧🇿"},{"id":23,"name":"Benin","code":"BJ","flag":"🇧🇯"},{"id":24,"name":"Bermuda","code":"BM","flag":"🇧🇲"},{"id":25,"name":"Bhutan","code":"BT","flag":"🇧🇹"},{"id":26,"name":"Bolivia","code":"BO","flag":"🇧🇴"},{"id":27,"name":"Bonaire","code":"BQ","flag":"🇧🇶"},{"id":28,"name":"Bosnia and Herzegovina","code":"BA","flag":"🇧🇦"},{"id":29,"name":"Botswana","code":"BW","flag":"🇧🇼"},{"id":30,"name":"Bouvet Island","code":"BV","flag":"🇧🇻"},{"id":31,"name":"Brazil","code":"BR","flag":"🇧🇷"},{"id":32,"name":"British Indian Ocean Territory","code":"IO","flag":"🇮🇴"},{"id":33,"name":"Brunei Darussalam","code":"BN","flag":"🇧🇳"},{"id":34,"name":"Bulgaria","code":"BG","flag":"🇧🇬"},{"id":35,"name":"Burkina Faso","code":"BF","flag":"🇧🇫"},{"id":36,"name":"Burundi","code":"BI","flag":"🇧🇮"},{"id":37,"name":"Cabo Verde","code":"CV","flag":"🇨🇻"},{"id":38,"name":"Cambodia","code":"KH","flag":"🇰🇭"},{"id":39,"name":"Cameroon","code":"CM","flag":"🇨🇲"},{"id":40,"name":"Canada","code":"CA","flag":"🇨🇦"},{"id":41,"name":"Cayman Islands","code":"KY","flag":"🇰🇾"},{"id":42,"name":"Central African Republic","code":"CF","flag":"🇨🇫"},{"id":43,"name":"Chad","code":"TD","flag":"🇹🇩"},{"id":44,"name":"Chile","code":"CL","flag":"🇨🇱"},{"id":45,"name":"China","code":"CN","flag":"🇨🇳"},{"id":46,"name":"Christmas Island","code":"CX","flag":"🇨🇽"},{"id":47,"name":"Cocos (Keeling) Islands","code":"CC","flag":"🇨🇨"},{"id":48,"name":"Colombia","code":"CO","flag":"🇨🇴"},{"id":49,"name":"Comoros","code":"KM","flag":"🇰🇲"},{"id":50,"name":"Congo","code":"CG","flag":"🇨🇬"},{"id":51,"name":"Cook Islands","code":"CK","flag":"🇨🇰"},{"id":52,"name":"Costa Rica","code":"CR","flag":"🇨🇷"},{"id":53,"name":"Croatia","code":"HR","flag":"🇭🇷"},{"id":54,"name":"Cuba","code":"CU","flag":"🇨🇺"},{"id":55,"name":"Curaçao","code":"CW","flag":"🇨🇼"},{"id":56,"name":"Cyprus","code":"CY","flag":"🇨🇾"},{"id":57,"name":"Czechia","code":"CZ","flag":"🇨🇿"},{"id":58,"name":"Côte d'Ivoire","code":"CI","flag":"🇨🇮"},{"id":59,"name":"Denmark","code":"DK","flag":"🇩🇰"},{"id":60,"name":"Djibouti","code":"DJ","flag":"🇩🇯"},{"id":61,"name":"Dominica","code":"DM","flag":"🇩🇲"},{"id":62,"name":"Dominican Republic","code":"DO","flag":"🇩🇴"},{"id":63,"name":"Ecuador","code":"EC","flag":"🇪🇨"},{"id":64,"name":"Egypt","code":"EG","flag":"🇪🇬"},{"id":65,"name":"El Salvador","code":"SV","flag":"🇸🇻"},{"id":66,"name":"Equatorial Guinea","code":"GQ","flag":"🇬🇶"},{"id":67,"name":"Eritrea","code":"ER","flag":"🇪🇷"},{"id":68,"name":"Estonia","code":"EE","flag":"🇪🇪"},{"id":69,"name":"Eswatini","code":"SZ","flag":"🇸🇿"},{"id":70,"name":"Ethiopia","code":"ET","flag":"🇪🇹"},{"id":71,"name":"Falkland Islands (Malvinas)","code":"FK","flag":"🇫🇰"},{"id":72,"name":"Faroe Islands","code":"FO","flag":"🇫🇴"},{"id":73,"name":"Fiji","code":"FJ","flag":"🇫🇯"},{"id":74,"name":"Finland","code":"FI","flag":"🇫🇮"},{"id":75,"name":"France","code":"FR","flag":"🇫🇷"},{"id":76,"name":"French Guiana","code":"GF","flag":"🇬🇫"},{"id":77,"name":"French Polynesia","code":"PF","flag":"🇵🇫"},{"id":78,"name":"French Southern Territories","code":"TF","flag":"🇹🇫"},{"id":79,"name":"Gabon","code":"GA","flag":"🇬🇦"},{"id":80,"name":"Gambia","code":"GM","flag":"🇬🇲"},{"id":81,"name":"Georgia","code":"GE","flag":"🇬🇪"},{"id":82,"name":"Germany","code":"DE","flag":"🇩🇪"},{"id":83,"name":"Ghana","code":"GH","flag":"🇬🇭"},{"id":84,"name":"Gibraltar","code":"GI","flag":"🇬🇮"},{"id":85,"name":"Greece","code":"GR","flag":"🇬🇷"},{"id":86,"name":"Greenland","code":"GL","flag":"🇬🇱"},{"id":87,"name":"Grenada","code":"GD","flag":"🇬🇩"},{"id":88,"name":"Guadeloupe","code":"GP","flag":"🇬🇵"},{"id":89,"name":"Guam","code":"GU","flag":"🇬🇺"},{"id":90,"name":"Guatemala","code":"GT","flag":"🇬🇹"},{"id":91,"name":"Guernsey","code":"GG","flag":"🇬🇬"},{"id":92,"name":"Guinea","code":"GN","flag":"🇬🇳"},{"id":93,"name":"Guinea-Bissau","code":"GW","flag":"🇬🇼"},{"id":94,"name":"Guyana","code":"GY","flag":"🇬🇾"},{"id":95,"name":"Haiti","code":"HT","flag":"🇭🇹"},{"id":96,"name":"Heard Island and McDonald Islands","code":"HM","flag":"🇭🇲"},{"id":97,"name":"Honduras","code":"HN","flag":"🇭🇳"},{"id":98,"name":"Hong Kong","code":"HK","flag":"🇭🇰"},{"id":99,"name":"Hungary","code":"HU","flag":"🇭🇺"},{"id":100,"name":"Iceland","code":"IS","flag":"🇮🇸"},{"id":101,"name":"India","code":"IN","flag":"🇮🇳"},{"id":102,"name":"Indonesia","code":"ID","flag":"🇮🇩"},{"id":103,"name":"Iran","code":"IR","flag":"🇮🇷"},{"id":104,"name":"Iraq","code":"IQ","flag":"🇮🇶"},{"id":105,"name":"Ireland","code":"IE","flag":"🇮🇪"},{"id":106,"name":"Isle of Man","code":"IM","flag":"🇮🇲"},{"id":107,"name":"Israel","code":"IL","flag":"🇮🇱"},{"id":108,"name":"Italy","code":"IT","flag":"🇮🇹"},{"id":109,"name":"Jamaica","code":"JM","flag":"🇯🇲"},{"id":110,"name":"Japan","code":"JP","flag":"🇯🇵"},{"id":111,"name":"Jersey","code":"JE","flag":"🇯🇪"},{"id":112,"name":"Jordan","code":"JO","flag":"🇯🇴"},{"id":113,"name":"Kazakhstan","code":"KZ","flag":"🇰🇿"},{"id":114,"name":"Kenya","code":"KE","flag":"🇰🇪"},{"id":115,"name":"Kiribati","code":"KI","flag":"🇰🇮"},{"id":116,"name":"Kosovo","code":"XK","flag":"🇽🇰"},{"id":117,"name":"Kuwait","code":"KW","flag":"🇰🇼"},{"id":118,"name":"Kyrgyzstan","code":"KG","flag":"🇰🇬"},{"id":119,"name":"Laos","code":"LA","flag":"🇱🇦"},{"id":120,"name":"Latvia","code":"LV","flag":"🇱🇻"},{"id":121,"name":"Lebanon","code":"LB","flag":"🇱🇧"},{"id":122,"name":"Lesotho","code":"LS","flag":"🇱🇸"},{"id":123,"name":"Liberia","code":"LR","flag":"🇱🇷"},{"id":124,"name":"Libya","code":"LY","flag":"🇱🇾"},{"id":125,"name":"Liechtenstein","code":"LI","flag":"🇱🇮"},{"id":126,"name":"Lithuania","code":"LT","flag":"🇱🇹"},{"id":127,"name":"Luxembourg","code":"LU","flag":"🇱🇺"},{"id":128,"name":"Macao","code":"MO","flag":"🇲🇴"},{"id":129,"name":"Madagascar","code":"MG","flag":"🇲🇬"},{"id":130,"name":"Malawi","code":"MW","flag":"🇲🇼"},{"id":131,"name":"Malaysia","code":"MY","flag":"🇲🇾"},{"id":132,"name":"Maldives","code":"MV","flag":"🇲🇻"},{"id":133,"name":"Mali","code":"ML","flag":"🇲🇱"},{"id":134,"name":"Malta","code":"MT","flag":"🇲🇹"},{"id":135,"name":"Marshall Islands","code":"MH","flag":"🇲🇭"},{"id":136,"name":"Martinique","code":"MQ","flag":"🇲🇶"},{"id":137,"name":"Mauritania","code":"MR","flag":"🇲🇷"},{"id":138,"name":"Mauritius","code":"MU","flag":"🇲🇺"},{"id":139,"name":"Mayotte","code":"YT","flag":"🇾🇹"},{"id":140,"name":"Mexico","code":"MX","flag":"🇲🇽"},{"id":141,"name":"Micronesia","code":"FM","flag":"🇫🇲"},{"id":142,"name":"Moldova","code":"MD","flag":"🇲🇩"},{"id":143,"name":"Monaco","code":"MC","flag":"🇲🇨"},{"id":144,"name":"Mongolia","code":"MN","flag":"🇲🇳"},{"id":145,"name":"Montenegro","code":"ME","flag":"🇲🇪"},{"id":146,"name":"Montserrat","code":"MS","flag":"🇲🇸"},{"id":147,"name":"Morocco","code":"MA","flag":"🇲🇦"},{"id":148,"name":"Mozambique","code":"MZ","flag":"🇲🇿"},{"id":149,"name":"Myanmar","code":"MM","flag":"🇲🇲"},{"id":150,"name":"Namibia","code":"NA","flag":"🇳🇦"},{"id":151,"name":"Nauru","code":"NR","flag":"🇳🇷"},{"id":152,"name":"Nepal","code":"NP","flag":"🇳🇵"},{"id":153,"name":"Netherlands","code":"NL","flag":"🇳🇱"},{"id":154,"name":"New Caledonia","code":"NC","flag":"🇳🇨"},{"id":155,"name":"New Zealand","code":"NZ","flag":"🇳🇿"},{"id":156,"name":"Nicaragua","code":"NI","flag":"🇳🇮"},{"id":157,"name":"Niger","code":"NE","flag":"🇳🇪"},{"id":158,"name":"Nigeria","code":"NG","flag":"🇳🇬"},{"id":159,"name":"Niue","code":"NU","flag":"🇳🇺"},{"id":160,"name":"Norfolk Island","code":"NF","flag":"🇳🇫"},{"id":161,"name":"North Korea","code":"KP","flag":"🇰🇵"},{"id":162,"name":"North Macedonia","code":"MK","flag":"🇲🇰"},{"id":163,"name":"Northern Mariana Islands","code":"MP","flag":"🇲🇵"},{"id":164,"name":"Norway","code":"NO","flag":"🇳🇴"},{"id":165,"name":"Oman","code":"OM","flag":"🇴🇲"},{"id":166,"name":"Pakistan","code":"PK","flag":"🇵🇰"},{"id":167,"name":"Palau","code":"PW","flag":"🇵🇼"},{"id":168,"name":"Palestine","code":"PS","flag":"🇵🇸"},{"id":169,"name":"Panama","code":"PA","flag":"🇵🇦"},{"id":170,"name":"Papua New Guinea","code":"PG","flag":"🇵🇬"},{"id":171,"name":"Paraguay","code":"PY","flag":"🇵🇾"},{"id":172,"name":"Peru","code":"PE","flag":"🇵🇪"},{"id":173,"name":"Philippines","code":"PH","flag":"🇵🇭"},{"id":174,"name":"Pitcairn","code":"PN","flag":"🇵🇳"},{"id":175,"name":"Poland","code":"PL","flag":"🇵🇱"},{"id":176,"name":"Portugal","code":"PT","flag":"🇵🇹"},{"id":177,"name":"Puerto Rico","code":"PR","flag":"🇵🇷"},{"id":178,"name":"Qatar","code":"QA","flag":"🇶🇦"},{"id":179,"name":"Republic of the Congo","code":"CD","flag":"🇨🇩"},{"id":180,"name":"Romania","code":"RO","flag":"🇷🇴"},{"id":181,"name":"Russia","code":"RU","flag":"🇷🇺"},{"id":182,"name":"Rwanda","code":"RW","flag":"🇷🇼"},{"id":183,"name":"Réunion","code":"RE","flag":"🇷🇪"},{"id":184,"name":"Saint Barthélemy","code":"BL","flag":"🇧🇱"},{"id":185,"name":"Saint Helena","code":"SH","flag":"🇸🇭"},{"id":186,"name":"Saint Kitts and Nevis","code":"KN","flag":"🇰🇳"},{"id":187,"name":"Saint Lucia","code":"LC","flag":"🇱🇨"},{"id":188,"name":"Saint Martin (French part)","code":"MF","flag":"🇲🇫"},{"id":189,"name":"Saint Pierre and Miquelon","code":"PM","flag":"🇵🇲"},{"id":190,"name":"Saint Vincent and the Grenadines","code":"VC","flag":"🇻🇨"},{"id":191,"name":"Samoa","code":"WS","flag":"🇼🇸"},{"id":192,"name":"San Marino","code":"SM","flag":"🇸🇲"},{"id":193,"name":"Sao Tome and Principe","code":"ST","flag":"🇸🇹"},{"id":194,"name":"Saudi Arabia","code":"SA","flag":"🇸🇦"},{"id":195,"name":"Senegal","code":"SN","flag":"🇸🇳"},{"id":196,"name":"Serbia","code":"RS","flag":"🇷🇸"},{"id":197,"name":"Seychelles","code":"SC","flag":"🇸🇨"},{"id":198,"name":"Sierra Leone","code":"SL","flag":"🇸🇱"},{"id":199,"name":"Singapore","code":"SG","flag":"🇸🇬"},{"id":200,"name":"Sint Maarten (Dutch part)","code":"SX","flag":"🇸🇽"},{"id":201,"name":"Slovakia","code":"SK","flag":"🇸🇰"},{"id":202,"name":"Slovenia","code":"SI","flag":"🇸🇮"},{"id":203,"name":"Solomon Islands","code":"SB","flag":"🇸🇧"},{"id":204,"name":"Somalia","code":"SO","flag":"🇸🇴"},{"id":205,"name":"South Africa","code":"ZA","flag":"🇿🇦"},{"id":206,"name":"South Georgia and the South Sandwich Islands","code":"GS","flag":"🇬🇸"},{"id":207,"name":"South Korea","code":"KR","flag":"🇰🇷"},{"id":208,"name":"South Sudan","code":"SS","flag":"🇸🇸"},{"id":209,"name":"Spain","code":"ES","flag":"🇪🇸"},{"id":210,"name":"Sri Lanka","code":"LK","flag":"🇱🇰"},{"id":211,"name":"Sudan","code":"SD","flag":"🇸🇩"},{"id":212,"name":"Suriname","code":"SR","flag":"🇸🇷"},{"id":213,"name":"Svalbard and Jan Mayen","code":"SJ","flag":"🇸🇯"},{"id":214,"name":"Sweden","code":"SE","flag":"🇸🇪"},{"id":215,"name":"Switzerland","code":"CH","flag":"🇨🇭"},{"id":216,"name":"Syrian Arab Republic","code":"SY","flag":"🇸🇾"},{"id":217,"name":"Taiwan","code":"TW","flag":"🇹🇼"},{"id":218,"name":"Tajikistan","code":"TJ","flag":"🇹🇯"},{"id":219,"name":"Tanzania","code":"TZ","flag":"🇹🇿"},{"id":220,"name":"Thailand","code":"TH","flag":"🇹🇭"},{"id":221,"name":"Timor-Leste","code":"TL","flag":"🇹🇱"},{"id":222,"name":"Togo","code":"TG","flag":"🇹🇬"},{"id":223,"name":"Tokelau","code":"TK","flag":"🇹🇰"},{"id":224,"name":"Tonga","code":"TO","flag":"🇹🇴"},{"id":225,"name":"Trinidad and Tobago","code":"TT","flag":"🇹🇹"},{"id":226,"name":"Tunisia","code":"TN","flag":"🇹🇳"},{"id":227,"name":"Turkmenistan","code":"TM","flag":"🇹🇲"},{"id":228,"name":"Turks and Caicos Islands","code":"TC","flag":"🇹🇨"},{"id":229,"name":"Tuvalu","code":"TV","flag":"🇹🇻"},{"id":230,"name":"Türkiye","code":"TR","flag":"🇹🇷"},{"id":231,"name":"Uganda","code":"UG","flag":"🇺🇬"},{"id":232,"name":"Ukraine","code":"UA","flag":"🇺🇦"},{"id":233,"name":"United Arab Emirates","code":"AE","flag":"🇦🇪"},{"id":234,"name":"United Kingdom","code":"GB","flag":"🇬🇧"},{"id":235,"name":"United States","code":"US","flag":"🇺🇸"},{"id":236,"name":"United States Minor Outlying Islands","code":"UM","flag":"🇺🇲"},{"id":237,"name":"Uruguay","code":"UY","flag":"🇺🇾"},{"id":238,"name":"Uzbekistan","code":"UZ","flag":"🇺🇿"},{"id":239,"name":"Vanuatu","code":"VU","flag":"🇻🇺"},{"id":240,"name":"Vatican City","code":"VA","flag":"🇻🇦"},{"id":241,"name":"Venezuela","code":"VE","flag":"🇻🇪"},{"id":242,"name":"Viet Nam","code":"VN","flag":"🇻🇳"},{"id":243,"name":"Virgin Islands","code":"VG","flag":"🇻🇬"},{"id":244,"name":"Virgin Islands","code":"VI","flag":"🇻🇮"},{"id":245,"name":"Wallis and Futuna","code":"WF","flag":"🇼🇫"},{"id":246,"name":"Western Sahara","code":"EH","flag":"🇪🇭"},{"id":247,"name":"Yemen","code":"YE","flag":"🇾🇪"},{"id":248,"name":"Zambia","code":"ZM","flag":"🇿🇲"},{"id":249,"name":"Zimbabwe","code":"ZW","flag":"🇿🇼"},{"id":250,"name":"Åland Islands","code":"AX","flag":"🇦🇽"},{"id":251,"name":"Canary Islands","code":"IC","flag":"🇮🇨"}]`),
   L = {
-    seasons: Ka,
-    regionSize: $a,
+    seasons: $a,
+    regionSize: Ka,
     refreshIntervalMs: Ja,
     colors: Ha,
     errors: Va,
@@ -519,9 +519,9 @@ const Ka = [{
     countries: Za
   },
   Wa = L,
-  $ = L.seasons.length - 1,
-  pt = L.seasons[$].zoom,
-  wt = L.seasons[$].tileSize;
+  K = L.seasons.length - 1,
+  pt = L.seasons[K].zoom,
+  wt = L.seasons[K].tileSize;
 
 function yt(t) {
   return Wa.countries[t - 1]
@@ -533,7 +533,7 @@ class Qa {
     this.url = e
   }
   get online() {
-    return f(d(this, v))
+    return h(d(this, v))
   }
   set online(e) {
     p(d(this, v), e, !0)
@@ -541,12 +541,12 @@ class Qa {
   async paint(e, a) {
     const n = Fa(e, r => `t=(${r.tile[0]},${r.tile[1]}),s=${r.season}`),
       i = (await Promise.all(Object.values(n).map(r => {
-        const [c, h] = r[0].tile, S = r[0].season, J = {
+        const [c, _] = r[0].tile, S = r[0].season, J = {
           colors: r.map(N => N.colorIdx),
           coords: r.flatMap(N => N.pixel),
           t: a
         };
-        return this.request(`/s${S}/pixel/${c}/${h}`, {
+        return this.request(`/s${S}/pixel/${c}/${_}`, {
           method: "POST",
           body: JSON.stringify(J),
           credentials: "include"
@@ -562,9 +562,9 @@ class Qa {
       } else if (r.status === 451) {
         const c = await i[0].json();
         c == null || c.err;
-        const h = c == null ? void 0 : c.suspension;
-        if (h === "ban") throw new Error(xa({}));
-        if (h === "timeout") {
+        const _ = c == null ? void 0 : c.suspension;
+        if (_ === "ban") throw new Error(xa());
+        if (_ === "timeout") {
           const S = new Date(Date.now() + ((c == null ? void 0 : c.durationMs) ?? 0));
           throw new Error(La({
             until: S.toLocaleString()
@@ -756,7 +756,7 @@ class Qa {
     if (a.status === 200) return a.json();
     if (a.status === 400) {
       const n = await a.json();
-      throw n.error === "max_characters" ? new Error(Ge()) : n.error === "name_taken" ? new Error(Ue()) : n.error == "empty_name" ? new Error(Ke()) : new Error(o())
+      throw n.error === "max_characters" ? new Error(Ge()) : n.error === "name_taken" ? new Error(Re()) : n.error == "empty_name" ? new Error($e()) : new Error(o())
     } else throw a.status === 403 ? new Error(He()) : new Error(o())
   }
   async leaveAlliance() {
@@ -926,9 +926,9 @@ class Qa {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== 200) throw new _(o(), e.status);
+    if (e.status !== 200) throw new g(o(), e.status);
     const a = await e.json();
-    for (const n of a.tickets) n.reports.sort((l, i) => U[l.reason] - U[i.reason]);
+    for (const n of a.tickets) n.reports.sort((l, i) => R[l.reason] - R[i.reason]);
     return a
   }
   async getSevereOpenTicketsCount() {
@@ -936,7 +936,7 @@ class Qa {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== 200) throw new _(o(), e.status);
+    if (e.status !== 200) throw new g(o(), e.status);
     const {
       tickets: a
     } = await e.json();
@@ -947,7 +947,7 @@ class Qa {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== 200) throw new _(o(), e.status);
+    if (e.status !== 200) throw new g(o(), e.status);
     return e.json()
   }
   async setTicketStatus(e, a) {
@@ -959,7 +959,7 @@ class Qa {
         status: a
       })
     });
-    if (n.status !== 200) throw new _(o(), n.status)
+    if (n.status !== 200) throw new g(o(), n.status)
   }
   async request(e, a) {
     let n;
@@ -978,7 +978,7 @@ class Qa {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== 200) throw new _(o(), e.status);
+    if (e.status !== 200) throw new g(o(), e.status);
     return e.json()
   }
   async getClosedTicketsByMod(e, a) {
@@ -986,7 +986,7 @@ class Qa {
       method: "GET",
       credentials: "include"
     });
-    if (n.status !== 200) throw new _(o(), n.status);
+    if (n.status !== 200) throw new g(o(), n.status);
     return (await n.json()).items.map(i => ({
       ...i,
       suspensionRate: (i.ban + i.timeout) / i.total
@@ -998,7 +998,7 @@ class Qa {
       credentials: "include"
     });
     if (a.status !== 404) {
-      if (a.status !== 200) throw new _(o(), a.status);
+      if (a.status !== 200) throw new g(o(), a.status);
       return a.json()
     }
   }
@@ -1008,7 +1008,7 @@ class Qa {
       credentials: "include"
     });
     if (a.status !== 404) {
-      if (a.status !== 200) throw new _(o(), a.status);
+      if (a.status !== 200) throw new g(o(), a.status);
       return a.json()
     }
   }
@@ -1020,7 +1020,7 @@ class Qa {
         userId: e
       })
     });
-    if (a.status !== 200) throw new _(o(), a.status)
+    if (a.status !== 200) throw new g(o(), a.status)
   }
   async removeBan(e) {
     const a = await this.request("/admin/remove-ban", {
@@ -1030,7 +1030,26 @@ class Qa {
         userId: e
       })
     });
-    if (a.status !== 200) throw new _(o(), a.status)
+    if (a.status !== 200) throw new g(o(), a.status)
+  }
+  async getUserNotes(e) {
+    const a = await this.request(`/admin/users/notes?userId=${encodeURIComponent(e)}`, {
+      method: "GET",
+      credentials: "include"
+    });
+    if (a.status !== 200) throw new g(o(), a.status);
+    return a.json()
+  }
+  async addUserNote(e, a) {
+    const n = await this.request("/admin/users/notes", {
+      method: "POST",
+      credentials: "include",
+      body: JSON.stringify({
+        userId: e,
+        note: a
+      })
+    });
+    if (n.status !== 200) throw new g(o(), n.status)
   }
 }
 v = new WeakMap;
@@ -1053,7 +1072,7 @@ class et {
     if (n >= this.bytes.length) {
       const r = new Uint8Array(n + 1),
         c = r.length - this.bytes.length;
-      for (let h = 0; h < this.bytes.length; h++) r[h + c] = this.bytes[h];
+      for (let _ = 0; _ < this.bytes.length; _++) r[_ + c] = this.bytes[_];
       this.bytes = r
     }
     const i = this.bytes.length - 1 - n;
@@ -1107,7 +1126,7 @@ class tt {
         message: a,
         ...n
       } = e, l = typeof(e == null ? void 0 : e.id) == "number" || e.id && ((c = e.id) == null ? void 0 : c.length) > 0 ? e.id : F++, i = e.dismissable === void 0 ? !0 : e.dismissable, r = e.type === void 0 ? "default" : e.type;
-      return R(() => {
+      return U(() => {
         this.toasts.find(S => S.id === l) ? this.updateToast({
           id: l,
           data: e,
@@ -1123,7 +1142,7 @@ class tt {
         })
       }), l
     });
-    u(this, "dismiss", e => (R(() => {
+    u(this, "dismiss", e => (U(() => {
       if (e === void 0) {
         this.toasts = this.toasts.map(n => ({
           ...n,
@@ -1243,13 +1262,13 @@ class tt {
     })
   }
   get toasts() {
-    return f(d(this, E))
+    return h(d(this, E))
   }
   set toasts(e) {
     p(d(this, E), e, !0)
   }
   get heights() {
-    return f(d(this, T))
+    return h(d(this, T))
   }
   set heights(e) {
     p(d(this, T), e, !0)
@@ -1260,10 +1279,10 @@ E = new WeakMap, T = new WeakMap, P = new WeakMap;
 function nt(t) {
   return t && typeof t == "object" && "status" in t ? `HTTP error! Status: ${t.status}` : `Error! ${t}`
 }
-const g = new tt;
+const f = new tt;
 
 function rt(t, e) {
-  return g.create({
+  return f.create({
     message: t,
     ...e
   })
@@ -1271,39 +1290,39 @@ function rt(t, e) {
 var D;
 class St {
   constructor() {
-    m(this, D, B(() => g.toasts.filter(e => !e.dismiss)))
+    m(this, D, B(() => f.toasts.filter(e => !e.dismiss)))
   }
   get toasts() {
-    return f(d(this, D))
+    return h(d(this, D))
   }
 }
 D = new WeakMap;
 const ot = rt,
   st = Object.assign(ot, {
-    success: g.success,
-    info: g.info,
-    warning: g.warning,
-    error: g.error,
-    custom: g.custom,
-    message: g.message,
-    promise: g.promise,
-    dismiss: g.dismiss,
-    loading: g.loading,
-    getActiveToasts: () => g.toasts.filter(t => !t.dismiss)
+    success: f.success,
+    info: f.info,
+    warning: f.warning,
+    error: f.error,
+    custom: f.custom,
+    message: f.message,
+    promise: f.promise,
+    dismiss: f.dismiss,
+    loading: f.loading,
+    getActiveToasts: () => f.toasts.filter(t => !t.dismiss)
   });
-var M, I, A, C, O, k, x;
+var I, M, A, C, O, k, x;
 class it {
   constructor() {
     u(this, "channel", new BroadcastChannel("user-channel"));
-    m(this, M, b());
-    m(this, I, b(!0));
+    m(this, I, b());
+    m(this, M, b(!0));
     m(this, A, b(Date.now()));
     m(this, C, b(Date.now()));
     m(this, O, B(() => {
       if (!this.data) return;
       const e = this.data.charges;
       if (e.count > e.max) return e.count;
-      const a = e.count + Math.max((K.now - this.lastFetch) / e.cooldownMs, 0);
+      const a = e.count + Math.max(($.now - this.lastFetch) / e.cooldownMs, 0);
       return Math.min(e.max, a)
     }));
     m(this, k, B(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
@@ -1317,43 +1336,43 @@ class it {
     }
   }
   get data() {
-    return f(d(this, M))
+    return h(d(this, I))
   }
   set data(e) {
-    p(d(this, M), e, !0)
-  }
-  get loading() {
-    return f(d(this, I))
-  }
-  set loading(e) {
     p(d(this, I), e, !0)
   }
+  get loading() {
+    return h(d(this, M))
+  }
+  set loading(e) {
+    p(d(this, M), e, !0)
+  }
   get now() {
-    return f(d(this, A))
+    return h(d(this, A))
   }
   set now(e) {
     p(d(this, A), e)
   }
   get lastFetch() {
-    return f(d(this, C))
+    return h(d(this, C))
   }
   set lastFetch(e) {
     p(d(this, C), e)
   }
   get charges() {
-    return f(d(this, O))
+    return h(d(this, O))
   }
   set charges(e) {
     p(d(this, O), e)
   }
   get cooldown() {
-    return f(d(this, k))
+    return h(d(this, k))
   }
   set cooldown(e) {
     p(d(this, k), e)
   }
   get flagsBitmap() {
-    return f(d(this, x))
+    return h(d(this, x))
   }
   set flagsBitmap(e) {
     p(d(this, x), e)
@@ -1382,8 +1401,8 @@ class it {
     return e < 32 ? !0 : ((((n = this.data) == null ? void 0 : n.extraColorsBitmap) ?? 0) & 1 << e - 32) !== 0
   }
 }
-M = new WeakMap, I = new WeakMap, A = new WeakMap, C = new WeakMap, O = new WeakMap, k = new WeakMap, x = new WeakMap;
+I = new WeakMap, M = new WeakMap, A = new WeakMap, C = new WeakMap, O = new WeakMap, k = new WeakMap, x = new WeakMap;
 const lt = new it;
 export {
-  $ as C, gt as P, Wa as S, j as a, o as b, Y as c, g as d, bt as e, St as f, K as g, ht as h, ma as i, wa as j, Ta as k, ha as l, Sa as m, yt as n, pt as o, wt as p, mt as q, ft as r, _t as s, st as t, lt as u
+  K as C, gt as P, Wa as S, j as a, o as b, Y as c, f as d, bt as e, St as f, $ as g, ht as h, ma as i, wa as j, Ta as k, ha as l, Sa as m, yt as n, pt as o, wt as p, mt as q, ft as r, _t as s, st as t, lt as u
 };
