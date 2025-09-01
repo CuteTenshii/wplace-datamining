@@ -90,7 +90,7 @@ import {
 } from "../chunks/CbV3xh-3.js";
 import {
   p as fa
-} from "../chunks/vXoHtgkB.js";
+} from "../chunks/ETNMar_s.js";
 import {
   S as Zn,
   a as ni,
@@ -116,7 +116,7 @@ import {
 import {
   g as zg,
   b as Zy
-} from "../chunks/BBiYEzNe.js";
+} from "../chunks/JeUuW028.js";
 import {
   h as $y
 } from "../chunks/nGwKiHy8.js";
@@ -184,7 +184,7 @@ import {
   c as lx,
   P as Og,
   b as cx
-} from "../chunks/ctiTxlo3.js";
+} from "../chunks/BAvAcznL.js";
 import {
   f as Qn,
   s as af
@@ -452,8 +452,8 @@ const yx = () => "Log in",
   N2 = () => "✅ Griefing political party flags or portraits of politicians is allowed",
   j2 = () => "✅ Desenhar sobre bandeiras de partidos e retratos de políticos é permitido",
   q2 = (w = {}, l = {}) => (l.locale ?? Oe()) === "en" ? N2() : j2(),
-  V2 = () => "Violations of these rules may result in suspension of your account.",
-  U2 = () => "Violações destas regras podem resultar na suspensão da sua conta.",
+  V2 = () => "Violations of these rules may lead to suspension of your account or removal of drawings.",
+  U2 = () => "A violação destas regras pode levar à suspensão da conta ou à remoção de desenhos.",
   Z2 = (w = {}, l = {}) => (l.locale ?? Oe()) === "en" ? V2() : U2(),
   $2 = () => "Understood",
   G2 = () => "Entendido",
