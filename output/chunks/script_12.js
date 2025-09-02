@@ -1,16 +1,16 @@
 import {
-  M as S,
-  H as h,
-  z as k,
-  L,
-  S as M
-} from "./apxRKl0u.js";
+  O as S,
+  J as h,
+  C as k,
+  N as O,
+  S as T
+} from "./DDWIi-vs.js";
 
 function t(r, i) {
-  return r === i || (r == null ? void 0 : r[M]) === i
+  return r === i || (r == null ? void 0 : r[T]) === i
 }
 
-function q(r = {}, i, a, T) {
+function x(r = {}, i, a, c) {
   return S(() => {
     var f, s;
     return h(() => {
@@ -18,12 +18,12 @@ function q(r = {}, i, a, T) {
         r !== a(...s) && (i(r, ...s), f && t(a(...f), r) && i(null, ...f))
       })
     }), () => {
-      L(() => {
+      O(() => {
         s && t(a(...s), r) && i(null, ...s)
       })
     }
   }), r
 }
 export {
-  q as b
+  x as b
 };

@@ -1,419 +1,438 @@
 import {
-  g as l
+  g as i
 } from "./C5GsJ62f.js";
 import "./Bzak7iHL.js";
 import {
-  o as De
-} from "./C7jYfUbS.js";
+  o as Se
+} from "./XwJtV06w.js";
 import {
-  p as _e,
-  g as i,
-  u as pe,
-  aJ as x,
-  aI as U,
-  y as re,
-  f as j,
-  d as s,
+  p as fe,
+  g as o,
+  u as ne,
+  aM as b,
+  aL as S,
+  B as oe,
+  f as C,
+  d as n,
   s as u,
-  bp as Me,
-  r as n,
-  t as k,
-  b as f,
-  c as ve,
-  at as Ue,
-  n as Se,
-  bj as le,
-  b4 as $,
-  aK as ce,
-  a as ue,
-  v as qe
-} from "./apxRKl0u.js";
+  bp as qe,
+  r as a,
+  t as B,
+  b as v,
+  c as he,
+  aw as Ce,
+  n as Ee,
+  bj as _e,
+  b4 as te,
+  aN as pe,
+  a as me,
+  y as Oe
+} from "./DDWIi-vs.js";
 import {
-  s as _
-} from "./B9SWw7yZ.js";
+  s as p
+} from "./Ob_J7Gis.js";
 import {
-  p as ne,
-  i as I,
-  r as me
-} from "./DBMZVJyA.js";
+  p as se,
+  i as q,
+  r as xe
+} from "./Cotyqp2D.js";
 import {
-  e as Ce
-} from "./DwmP27Pv.js";
+  e as Pe
+} from "./DieFH19D.js";
 import {
-  b as fe,
-  C as Ee,
-  r as T,
-  s as de,
-  e as Oe,
+  b as ge,
+  C as Te,
+  e as je,
+  r as j,
+  s as ve,
   f as F,
-  a as Pe
-} from "./DRcRj3o9.js";
+  a as ze
+} from "./CwJjPkYo.js";
 import {
-  a as Te,
-  c as Ie
-} from "./DoCKPXSb.js";
+  t as Ie
+} from "./CF7iZc7m.js";
 import {
-  b as je
-} from "./ClbBIaRv.js";
+  a as Ae,
+  c as Ne
+} from "./s8fa6SKT.js";
 import {
-  i as ze,
-  j as Ae,
+  b as Ze
+} from "./BXxY18WV.js";
+import {
+  i as Fe,
+  j as He,
   k as Ke,
-  l as Ne,
-  m as Ze,
-  c as ee,
-  t as te
-} from "./DJI8mFfT.js";
+  l as Ve,
+  m as Ge,
+  c as re,
+  t as ae
+} from "./BrRSwabQ.js";
 import {
-  P as Fe
-} from "./B1v9VrKg.js";
+  P as Je
+} from "./Bl3D2i7R.js";
 import {
-  c as He
+  c as Qe
 } from "./CTRYyxGQ.js";
 import {
-  g as Je
-} from "./CcNQQeqn.js";
-const Ve = () => "Copy",
-  Ge = () => "Copiar",
-  br = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? Ve() : Ge(),
-  Qe = () => "Report User",
-  We = () => "Reportar usuário",
-  Xe = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? Qe() : We(),
-  Ye = () => "Timeout User",
-  $e = () => "Suspender usuário",
-  et = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? Ye() : $e(),
-  tt = () => "Ban User",
-  rt = () => "Banir usuário",
-  nt = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? tt() : rt(),
-  at = () => "Select the reason",
-  ot = () => "Selecione o motivo",
-  st = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? at() : ot(),
-  it = () => "+18, inappropriate link, highly suggestive content, ...",
-  lt = () => "+18, links inapropriados, conteúdo altamente sugestivo, ...",
-  ct = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? it() : lt(),
-  ut = () => "Use of software to completely automate painting",
-  dt = () => "Uso de software para pintar de forma completamente automatizada ",
-  _t = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? ut() : dt(),
-  pt = () => "Racism, homophobia, hate groups, ...",
-  vt = () => "Racismo, homofobia, grupos de ódio, ...",
-  mt = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? pt() : vt(),
-  ft = () => "Messed up artworks for no reason",
-  ht = () => "Estragar desenho dos outros sem motivo",
-  xt = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? ft() : ht(),
-  gt = () => "Released other's personal information without their consent",
-  bt = () => "Vazar informações pessoais de terceiros sem consentimento",
-  yt = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? gt() : bt(),
-  wt = () => "Other",
-  Rt = () => "Outro motivo",
-  kt = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? wt() : Rt(),
-  Bt = () => "Other reason not listed",
-  Lt = () => "Outro motivo não listado",
-  Dt = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? Bt() : Lt(),
-  Mt = () => "Extra context on what happened (required)",
-  Ut = () => "Mais informações sobre o que aconteceu (obrigatório)",
-  St = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? Mt() : Ut(),
-  qt = () => "Report",
-  Ct = () => "Reportar",
-  Et = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? qt() : Ct(),
-  Ot = () => "Report sent successfully",
-  Pt = () => "Denúncia enviada com sucesso",
-  Tt = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? Ot() : Pt(),
-  It = () => "Select the report reason",
-  jt = () => "Selecione o motivo da denúncia",
-  zt = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? It() : jt(),
-  At = () => "Report failed. Please try again later",
-  Kt = () => "Denúncia falhou. Por favor, tente novamente mais tarde",
-  Nt = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? At() : Kt(),
-  Zt = () => "Required",
-  Ft = () => "Obrigatório",
-  Ht = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? Zt() : Ft(),
-  Jt = t => `Min. characters: ${t.min}`,
-  Vt = t => `Mínimo de caracteres: ${t.min}`,
-  Gt = (t, e = {}) => (e.locale ?? l()) === "en" ? Jt(t) : Vt(t),
-  Qt = t => `Max. characters: ${t.max}`,
-  Wt = t => `Máximo de caracteres: ${t.max}`,
-  Xt = (t, e = {}) => (e.locale ?? l()) === "en" ? Qt(t) : Wt(t);
-var Yt = j('<legend class="fieldset-legend"> </legend>'),
-  $t = j('<span class="text-base-content/80"> </span>'),
-  er = j('<fieldset class="fieldset"><!> <textarea></textarea> <div class="flex items-center justify-between text-xs"><span class="text-error"> </span> <!></div></fieldset>');
+  g as We
+} from "./D8DecosR.js";
+import {
+  f as Xe
+} from "./BI5KFv7B.js";
+const Ye = () => "Copy",
+  $e = () => "Copiar",
+  Dr = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? Ye() : $e(),
+  et = () => "Report User",
+  tt = () => "Reportar usuário",
+  rt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? et() : tt(),
+  at = () => "Timeout User",
+  nt = () => "Suspender usuário",
+  ot = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? at() : nt(),
+  st = () => "Ban User",
+  it = () => "Banir usuário",
+  lt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? st() : it(),
+  ct = () => "Select the reason",
+  ut = () => "Selecione o motivo",
+  dt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? ct() : ut(),
+  _t = () => "+18, inappropriate link, highly suggestive content, ...",
+  pt = () => "+18, links inapropriados, conteúdo altamente sugestivo, ...",
+  mt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? _t() : pt(),
+  vt = () => "Use of software to completely automate painting",
+  ft = () => "Uso de software para pintar de forma completamente automatizada ",
+  ht = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? vt() : ft(),
+  xt = () => "Racism, homophobia, hate groups, ...",
+  gt = () => "Racismo, homofobia, grupos de ódio, ...",
+  bt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? xt() : gt(),
+  yt = () => "Messed up artworks for no reason",
+  wt = () => "Estragar desenho dos outros sem motivo",
+  Rt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? yt() : wt(),
+  kt = () => "Released other's personal information without their consent",
+  Bt = () => "Vazar informações pessoais de terceiros sem consentimento",
+  Lt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? kt() : Bt(),
+  Mt = () => "Other",
+  Dt = () => "Outro motivo",
+  Ut = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? Mt() : Dt(),
+  St = () => "Other reason not listed",
+  qt = () => "Outro motivo não listado",
+  Ct = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? St() : qt(),
+  Et = () => "Extra context on what happened (required)",
+  Ot = () => "Mais informações sobre o que aconteceu (obrigatório)",
+  Pt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? Et() : Ot(),
+  Tt = () => "Report",
+  jt = () => "Reportar",
+  zt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? Tt() : jt(),
+  It = () => "Report sent successfully",
+  At = () => "Denúncia enviada com sucesso",
+  Nt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? It() : At(),
+  Zt = () => "Select the report reason",
+  Ft = () => "Selecione o motivo da denúncia",
+  Ht = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? Zt() : Ft(),
+  Kt = () => "Report failed. Please try again later",
+  Vt = () => "Denúncia falhou. Por favor, tente novamente mais tarde",
+  Gt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? Kt() : Vt(),
+  Jt = () => "Required",
+  Qt = () => "Obrigatório",
+  Wt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? Jt() : Qt(),
+  Xt = t => `Min. characters: ${t.min}`,
+  Yt = t => `Mínimo de caracteres: ${t.min}`,
+  $t = (t, e = {}) => (e.locale ?? i()) === "en" ? Xt(t) : Yt(t),
+  er = t => `Max. characters: ${t.max}`,
+  tr = t => `Máximo de caracteres: ${t.max}`,
+  rr = (t, e = {}) => (e.locale ?? i()) === "en" ? er(t) : tr(t);
+var ar = C('<legend class="fieldset-legend"> </legend>'),
+  nr = C('<span class="text-base-content/80"> </span>'),
+  or = C('<fieldset class="fieldset"><!> <textarea></textarea> <div class="flex items-center justify-between text-xs"><span class="text-error"> </span> <!></div></fieldset>');
 
-function tr(t, e) {
-  _e(e, !0);
-  let r = ne(e, "value", 15),
-    p = ne(e, "validate", 15),
-    L = me(e, ["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate"]),
-    w = U("");
-  const R = pe(() => {
-    var c;
-    return ((c = r()) == null ? void 0 : c.length) ?? 0
+function sr(t, e) {
+  fe(e, !0);
+  let r = se(e, "value", 15),
+    m = se(e, "validate", 15),
+    D = xe(e, ["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate"]),
+    y = S("");
+  const k = ne(() => {
+    var l;
+    return ((l = r()) == null ? void 0 : l.length) ?? 0
   });
-  p(D);
+  m(U);
 
-  function D() {
-    return e.min !== void 0 && i(R) < e.min ? (x(w, e.min === 1 ? Ht() : Gt({
+  function U() {
+    return e.min !== void 0 && o(k) < e.min ? (b(y, e.min === 1 ? Wt() : $t({
       min: e.min
-    }), !0), !1) : e.max !== void 0 && i(R) > e.max ? (x(w, Xt({
+    }), !0), !1) : e.max !== void 0 && o(k) > e.max ? (b(y, rr({
       max: e.max
     }), !0), !1) : !0
   }
-  re(() => {
-    var c;
-    e.max !== void 0 && i(R) > e.max && r((c = r()) == null ? void 0 : c.substring(0, e.max))
+  oe(() => {
+    var l;
+    e.max !== void 0 && o(k) > e.max && r((l = r()) == null ? void 0 : l.substring(0, e.max))
   });
-  var B = er(),
-    z = s(B);
+  var L = or(),
+    z = n(L);
   {
-    var H = c => {
-      var v = Yt(),
-        M = s(v, !0);
-      n(v), k(() => _(M, e.label)), f(c, v)
+    var H = l => {
+      var x = ar(),
+        M = n(x, !0);
+      a(x), B(() => p(M, e.label)), v(l, x)
     };
-    I(z, c => {
-      e.label && c(H)
+    q(z, l => {
+      e.label && l(H)
     })
   }
-  var h = u(z, 2);
-  Me(h), fe(h, c => ({
-    ...L,
+  var g = u(z, 2);
+  qe(g), ge(g, l => ({
+    ...D,
     class: `textarea w-full ${e.class??""}`,
     placeholder: e.placeholder,
-    [Ee]: c
+    [Te]: l
   }), [() => ({
-    "textarea-error": !!i(w)
+    "textarea-error": !!o(y)
   })]);
-  var S = u(h, 2),
-    g = s(S),
-    q = s(g, !0);
-  n(g);
-  var C = u(g, 2);
+  var E = u(g, 2),
+    O = n(E),
+    K = n(O, !0);
+  a(O);
+  var f = u(O, 2);
   {
-    var E = c => {
-      var v = $t(),
-        M = s(v, !0);
-      n(v), k(() => _(M, e.max - i(R))), f(c, v)
+    var h = l => {
+      var x = nr(),
+        M = n(x, !0);
+      a(x), B(() => p(M, e.max - o(k))), v(l, x)
     };
-    I(C, c => {
-      e.max !== void 0 && c(E)
+    q(f, l => {
+      e.max !== void 0 && l(h)
     })
   }
-  n(S), n(B), k(() => _(q, i(w))), Te(h, r), f(t, B), ve()
+  a(E), a(L), B(() => p(K, o(y))), Ae(g, r), v(t, L), he()
 }
-var rr = j('<label class="flex gap-3"><input name="reason" class="radio radio-sm mt-1" type="radio"/> <div><div class="font-semibold"> </div> <div class="text-base-content/80 text-sm"> </div></div></label>'),
-  nr = (t, e) => {
+var ir = C('<label class="flex gap-3"><input name="reason" class="radio radio-sm mt-1" type="radio"/> <div><div class="font-semibold"> </div> <div class="text-base-content/80 text-sm"> </div></div></label>'),
+  lr = (t, e) => {
     e(!1)
   },
-  ar = j('<dialog class="modal"><div class="modal-box max-h-[97%] max-w-xl"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <form method="POST"><input name="reportedUserId" hidden/> <input name="latitude" hidden/> <input name="longitude" hidden/> <input name="zoom" hidden/> <section class="flex gap-3"><!> <div><h2 class="text-xl font-semibold"><!></h2> <span><span> </span> <span> </span></span></div></section> <section class="mt-6"><h3 class="text-base-content/80 text-base"> </h3> <div class="mt-2 flex flex-col gap-3"></div></section> <section class="mt-6"><!></section> <section class="mt-3 flex justify-end gap-2"><button type="button" class="btn"> </button> <button class="btn btn-error"> </button></section></form></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
+  cr = C('<form method="POST"><input name="reportedUserId" hidden/> <input name="latitude" hidden/> <input name="longitude" hidden/> <input name="zoom" hidden/> <section class="flex gap-3"><!> <div><h2 class="text-xl font-semibold"><!></h2> <span><span> </span> <span> </span></span></div></section> <section class="mt-6"><h3 class="text-base-content/80 text-base"> </h3> <div class="mt-2 flex flex-col gap-3"></div></section> <section class="mt-6"><!></section> <section class="mt-3 flex justify-end gap-2"><button type="button" class="btn"> </button> <button class="btn btn-error"> </button></section></form>'),
+  ur = C('<dialog class="modal"><div class="modal-box max-h-[97%] max-w-xl"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <!></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
 
-function yr(t, e) {
-  _e(e, !0);
+function Ur(t, e) {
+  fe(e, !0);
   const r = [];
-  let p = ne(e, "open", 15),
-    L = U(!1),
-    w = U(""),
-    R = U(""),
-    D = U(null),
-    B = U(null);
+  let m = se(e, "open", 15),
+    D = S(!1),
+    y = S(""),
+    k = S(""),
+    U = S(null),
+    L = S(null);
   const z = [{
     value: "inappropriate-content",
-    label: ze(),
-    description: ct()
+    label: Fe(),
+    description: mt()
   }, {
     value: "hate-speech",
-    label: Ae(),
-    description: mt()
+    label: He(),
+    description: bt()
   }, {
     value: "doxxing",
     label: Ke(),
-    description: yt()
+    description: Lt()
   }, {
     value: "bot",
-    label: Ne(),
-    description: _t()
+    label: Ve(),
+    description: ht()
   }, {
     value: "griefing",
-    label: Ze(),
-    description: xt()
+    label: Ge(),
+    description: Rt()
   }, {
     value: "other",
-    label: kt(),
-    description: Dt()
+    label: Ut(),
+    description: Ct()
   }];
-  De(() => {
-    const a = o => {
-      o.key === "Escape" && p(!1)
+  Se(() => {
+    const f = h => {
+      h.key === "Escape" && m(!1)
     };
-    return document.addEventListener("keydown", a), () => document.removeEventListener("keydown", a)
-  }), re(() => {
-    p() || (x(w, ""), x(R, ""))
+    return document.addEventListener("keydown", f), () => document.removeEventListener("keydown", f)
+  }), oe(() => {
+    m() || (b(y, ""), b(k, ""))
   });
   const H = {
-    "report-user": `${ee}/report-user`,
-    timeout: `${ee}/moderator/timeout-user`,
-    ban: `${ee}/admin/ban-user`
+    "report-user": `${re}/report-user`,
+    timeout: `${re}/moderator/timeout-user`,
+    ban: `${re}/admin/ban-user`
   };
-  var h = ar(),
-    S = s(h),
-    g = u(s(S), 2),
-    q = s(g);
-  T(q);
-  var C = u(q, 2);
-  T(C);
-  var E = u(C, 2);
-  T(E);
-  var c = u(E, 2);
-  T(c);
-  var v = u(c, 2),
-    M = s(v);
-  Fe(M, {
-    get userId() {
-      return e.paintedBy.id
-    },
-    get pictureUrl() {
-      return e.paintedBy.picture
-    },
-    class: "size-14"
-  });
-  var ae = u(M, 2),
-    J = s(ae),
-    he = s(J);
+  var g = ur(),
+    E = n(g),
+    O = u(n(E), 2);
   {
-    var xe = a => {
-        var o = $();
-        k(m => _(o, m), [() => Xe()]), f(a, o)
-      },
-      ge = a => {
-        var o = ce(),
-          m = ue(o);
-        {
-          var d = b => {
-              var y = $();
-              k(O => _(y, O), [() => et()]), f(b, y)
-            },
-            K = b => {
-              var y = ce(),
-                O = ue(y);
-              {
-                var N = P => {
-                  var Z = $();
-                  k(Le => _(Z, Le), [() => nt()]), f(P, Z)
-                };
-                I(O, P => {
-                  e.action === "ban" && P(N)
-                }, !0)
-              }
-              f(b, y)
-            };
-          I(m, b => {
-            e.action === "timeout" ? b(d) : b(K, !1)
-          }, !0)
-        }
-        f(a, o)
-      };
-    I(he, a => {
-      e.action === "report-user" ? a(xe) : a(ge, !1)
-    })
-  }
-  n(J);
-  var V = u(J, 2),
-    G = s(V),
-    be = s(G, !0);
-  n(G);
-  var oe = u(G, 2),
-    ye = s(oe);
-  n(oe), n(V), n(ae), n(v);
-  var Q = u(v, 2),
-    W = s(Q),
-    we = s(W);
-  n(W);
-  var se = u(W, 2);
-  Ce(se, 21, () => z, a => a.value, (a, o) => {
-    var m = rr(),
-      d = s(m);
-    T(d);
-    var K, b = u(d, 2),
-      y = s(b),
-      O = s(y, !0);
-    n(y);
-    var N = u(y, 2),
-      P = s(N, !0);
-    n(N), n(b), n(m), k(() => {
-      de(d, "aria-label", i(o).label), K !== (K = i(o).value) && (d.value = (d.__value = i(o).value) ?? ""), _(O, i(o).label), _(P, i(o).description)
-    }), Ie(r, [], d, () => (i(o).value, i(w)), Z => x(w, Z)), f(a, m)
-  }), n(se), n(Q);
-  var X = u(Q, 2),
-    Re = s(X);
-  {
-    let a = pe(() => St());
-    tr(Re, {
-      class: "h-20 rounded-lg",
-      name: "notes",
-      get placeholder() {
-        return i(a)
-      },
-      max: 2056,
-      min: 5,
-      get value() {
-        return i(R)
-      },
-      set value(o) {
-        x(R, o, !0)
-      },
-      get validate() {
-        return i(B)
-      },
-      set validate(o) {
-        x(B, o, !0)
-      }
-    })
-  }
-  n(X);
-  var ie = u(X, 2),
-    A = s(ie);
-  A.__click = [nr, p];
-  var ke = s(A, !0);
-  n(A);
-  var Y = u(A, 2),
-    Be = s(Y, !0);
-  n(Y), n(ie), n(g), je(g, a => x(D, a), () => i(D)), n(S), Se(2), n(h), Oe(h, () => a => {
-    re(() => {
-      p() ? a.show() : a.close()
-    })
-  }), k((a, o, m, d) => {
-    de(g, "action", H[e.action]), F(q, e.paintedBy.id), F(C, e.latLon[0]), F(E, e.latLon[1]), F(c, e.zoom), Pe(V, 1, `font-medium ${a??""} flex gap-1.5`), _(be, e.paintedBy.name), _(ye, `#${e.paintedBy.id??""}`), _(we, `${o??""}:`), _(ke, m), Y.disabled = i(L), _(Be, d)
-  }, [() => Je(e.paintedBy.id), () => st(), () => He(), () => Et()]), le("close", h, () => p(!1)), le("submit", g, async a => {
-    if (a.preventDefault(), !i(L) && i(B)()) try {
-      x(L, !0);
-      const o = new FormData(i(D));
-      if (!o.get("reason")) {
-        te.error(zt());
-        return
-      }
-      const m = await e.image;
-      o.append("image", m, `report-${Date.now()}.jpeg`);
-      const d = await fetch(i(D).action, {
-        method: "POST",
-        body: o,
-        credentials: "include"
+    var K = f => {
+      var h = cr(),
+        l = n(h);
+      j(l);
+      var x = u(l, 2);
+      j(x);
+      var M = u(x, 2);
+      j(M);
+      var V = u(M, 2);
+      j(V);
+      var G = u(V, 2),
+        ie = n(G);
+      Je(ie, {
+        get userId() {
+          return e.paintedBy.id
+        },
+        get pictureUrl() {
+          return e.paintedBy.picture
+        },
+        class: "size-14"
       });
-      d.status === 200 || d.status === 409 ? (te.info(Tt()), p(!1)) : te.error(Nt())
-    } finally {
-      x(L, !1)
-    }
-  }), f(t, h), ve()
+      var le = u(ie, 2),
+        J = n(le),
+        be = n(J);
+      {
+        var ye = c => {
+            var s = te();
+            B(d => p(s, d), [() => rt()]), v(c, s)
+          },
+          we = c => {
+            var s = pe(),
+              d = me(s);
+            {
+              var _ = w => {
+                  var R = te();
+                  B(P => p(R, P), [() => ot()]), v(w, R)
+                },
+                A = w => {
+                  var R = pe(),
+                    P = me(R);
+                  {
+                    var N = T => {
+                      var Z = te();
+                      B(Ue => p(Z, Ue), [() => lt()]), v(T, Z)
+                    };
+                    q(P, T => {
+                      e.action === "ban" && T(N)
+                    }, !0)
+                  }
+                  v(w, R)
+                };
+              q(d, w => {
+                e.action === "timeout" ? w(_) : w(A, !1)
+              }, !0)
+            }
+            v(c, s)
+          };
+        q(be, c => {
+          e.action === "report-user" ? c(ye) : c(we, !1)
+        })
+      }
+      a(J);
+      var Q = u(J, 2),
+        W = n(Q),
+        Re = n(W, !0);
+      a(W);
+      var ce = u(W, 2),
+        ke = n(ce);
+      a(ce), a(Q), a(le), a(G);
+      var X = u(G, 2),
+        Y = n(X),
+        Be = n(Y);
+      a(Y);
+      var ue = u(Y, 2);
+      Pe(ue, 21, () => z, c => c.value, (c, s) => {
+        var d = ir(),
+          _ = n(d);
+        j(_);
+        var A, w = u(_, 2),
+          R = n(w),
+          P = n(R, !0);
+        a(R);
+        var N = u(R, 2),
+          T = n(N, !0);
+        a(N), a(w), a(d), B(() => {
+          ve(_, "aria-label", o(s).label), A !== (A = o(s).value) && (_.value = (_.__value = o(s).value) ?? ""), p(P, o(s).label), p(T, o(s).description)
+        }), Ne(r, [], _, () => (o(s).value, o(y)), Z => b(y, Z)), v(c, d)
+      }), a(ue), a(X);
+      var $ = u(X, 2),
+        Le = n($);
+      {
+        let c = ne(() => Pt()),
+          s = ne(() => o(y) === "doxxing" ? 20 : 5);
+        sr(Le, {
+          class: "h-20 rounded-lg",
+          name: "notes",
+          get placeholder() {
+            return o(c)
+          },
+          max: 2056,
+          get min() {
+            return o(s)
+          },
+          get value() {
+            return o(k)
+          },
+          set value(d) {
+            b(k, d, !0)
+          },
+          get validate() {
+            return o(L)
+          },
+          set validate(d) {
+            b(L, d, !0)
+          }
+        })
+      }
+      a($);
+      var de = u($, 2),
+        I = n(de);
+      I.__click = [lr, m];
+      var Me = n(I, !0);
+      a(I);
+      var ee = u(I, 2),
+        De = n(ee, !0);
+      a(ee), a(de), a(h), Ze(h, c => b(U, c), () => o(U)), B((c, s, d, _) => {
+        ve(h, "action", H[e.action]), F(l, e.paintedBy.id), F(x, e.latLon[0]), F(M, e.latLon[1]), F(V, e.zoom), ze(Q, 1, `font-medium ${c??""} flex gap-1.5`), p(Re, e.paintedBy.name), p(ke, `#${e.paintedBy.id??""}`), p(Be, `${s??""}:`), p(Me, d), ee.disabled = o(D), p(De, _)
+      }, [() => We(e.paintedBy.id), () => dt(), () => Qe(), () => zt()]), _e("submit", h, async c => {
+        if (c.preventDefault(), !o(D) && o(L)()) try {
+          b(D, !0);
+          const s = new FormData(o(U));
+          if (!s.get("reason")) {
+            ae.error(Ht());
+            return
+          }
+          const d = await e.image;
+          s.append("image", d, `report-${Date.now()}.jpeg`);
+          const _ = await fetch(o(U).action, {
+            method: "POST",
+            body: s,
+            credentials: "include"
+          });
+          _.status === 200 || _.status === 409 ? (ae.info(Nt()), m(!1)) : ae.error(Gt())
+        } finally {
+          b(D, !1)
+        }
+      }), Ie(2, h, () => Xe), v(f, h)
+    };
+    q(O, f => {
+      m() && f(K)
+    })
+  }
+  a(E), Ee(2), a(g), je(g, () => f => {
+    oe(() => {
+      m() ? f.show() : f.close()
+    })
+  }), _e("close", g, () => m(!1)), v(t, g), he()
 }
-Ue(["click"]);
-var or = qe('<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
+Ce(["click"]);
+var dr = Oe('<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
 
-function wr(t, e) {
-  let r = me(e, ["$$slots", "$$events", "$$legacy"]);
-  var p = or();
-  fe(p, () => ({
+function Sr(t, e) {
+  let r = xe(e, ["$$slots", "$$events", "$$legacy"]);
+  var m = dr();
+  ge(m, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
     ...r
-  })), f(t, p)
+  })), v(t, m)
 }
 export {
-  wr as D, tr as L, yr as R, nt as b, br as c, Xe as r, et as t
+  Sr as D, sr as L, Ur as R, lt as b, Dr as c, rt as r, ot as t
 };

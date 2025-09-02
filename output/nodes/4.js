@@ -18,19 +18,19 @@ import "../chunks/Bzak7iHL.js";
 import {
   o as zi,
   s as tn
-} from "../chunks/C7jYfUbS.js";
+} from "../chunks/XwJtV06w.js";
 import {
-  a3 as Ay,
+  a6 as Ay,
   b8 as ky,
   bq as Ey,
   ba as zy,
   br as Ly,
-  b2 as Dy,
-  aI as at,
+  aT as Dy,
+  aL as at,
   g as x,
-  aJ as le,
-  aH as Ln,
-  at as rn,
+  aM as le,
+  aK as Ln,
+  aw as rn,
   p as Rr,
   f as Pe,
   d as k,
@@ -42,36 +42,36 @@ import {
   bj as Pn,
   b as H,
   c as Br,
-  y as Gr,
-  v as Pr,
+  B as Gr,
+  y as Pr,
   bo as Tu,
-  x as Vf,
-  z as Go,
-  aK as Kt,
+  A as Vf,
+  C as Go,
+  aN as Kt,
   a as It,
   b4 as On,
-  aD as Ry,
-  aC as ng,
-  aE as By,
-  aG as Mg,
+  aG as Ry,
+  aF as ng,
+  aH as By,
+  aJ as Mg,
   bs as Qa,
-  au as ma,
+  ax as ma,
   bt as Ag,
   $ as Fy
-} from "../chunks/apxRKl0u.js";
+} from "../chunks/DDWIi-vs.js";
 import {
   s as _e
-} from "../chunks/B9SWw7yZ.js";
+} from "../chunks/Ob_J7Gis.js";
 import {
   p as At,
   i as Ze,
   r as Yt,
   s as co,
   u as kg
-} from "../chunks/DBMZVJyA.js";
+} from "../chunks/Cotyqp2D.js";
 import {
   h as Oy
-} from "../chunks/CkjmIARx.js";
+} from "../chunks/DyJg5QNB.js";
 import {
   r as es,
   e as Gn,
@@ -82,15 +82,14 @@ import {
   d as cc,
   g as wu,
   c as ao
-} from "../chunks/DRcRj3o9.js";
+} from "../chunks/CwJjPkYo.js";
 import {
   a as Zo,
-  k as Cu,
   t as zn
-} from "../chunks/D6N4-wGP.js";
+} from "../chunks/CF7iZc7m.js";
 import {
   p as fa
-} from "../chunks/CJpC059O.js";
+} from "../chunks/ASUI5O5K.js";
 import {
   S as $n,
   a as ni,
@@ -104,7 +103,7 @@ import {
   p as jy,
   q as qy,
   r as Vy
-} from "../chunks/DJI8mFfT.js";
+} from "../chunks/BrRSwabQ.js";
 import {
   c as zg,
   A as pa,
@@ -112,17 +111,17 @@ import {
   g as nf,
   p as Uy,
   b as Zy
-} from "../chunks/DHmwaxXs.js";
+} from "../chunks/BfUyLi6m.js";
 import {
   g as Lg,
   b as $y
-} from "../chunks/DJV_Homq.js";
+} from "../chunks/B1l6nKOg.js";
 import {
   h as Gy
-} from "../chunks/Hn5EJR_y.js";
+} from "../chunks/D6lCS0HT.js";
 import {
   b as Ds
-} from "../chunks/ClbBIaRv.js";
+} from "../chunks/BXxY18WV.js";
 import {
   L as Hy,
   c as mf,
@@ -131,7 +130,7 @@ import {
   t as Xy,
   b as Ky,
   R as Yy
-} from "../chunks/DIjF2uQY.js";
+} from "../chunks/DdpbwNoh.js";
 import {
   g as Oe,
   l as Jy
@@ -144,35 +143,38 @@ import {
   f as $o,
   L as Zf,
   c as ex
-} from "../chunks/B1TOg-DH.js";
+} from "../chunks/DI-XPNec.js";
 import {
   e as gn,
   i as Od
-} from "../chunks/DwmP27Pv.js";
+} from "../chunks/DieFH19D.js";
 import {
   c as $f,
   a as Gf,
   b as tx
-} from "../chunks/DoCKPXSb.js";
+} from "../chunks/s8fa6SKT.js";
 import {
   P as ds,
   t as Rg
-} from "../chunks/B1v9VrKg.js";
+} from "../chunks/Bl3D2i7R.js";
 import {
   p as Hf,
   C as Bg,
   T as Fg,
   G as rx
-} from "../chunks/Db6MxE6W.js";
+} from "../chunks/BXyCIOZO.js";
 import {
   g as Zn,
   a as Wf,
   c as ix,
   b as nx
-} from "../chunks/CcNQQeqn.js";
+} from "../chunks/D8DecosR.js";
+import {
+  k as Cu
+} from "../chunks/SRrJTvMH.js";
 import {
   A as ax
-} from "../chunks/nmzNmNhc.js";
+} from "../chunks/Ck3jKpqx.js";
 import {
   A as Og,
   d as ec,
@@ -185,35 +187,35 @@ import {
   c as cx,
   P as jg,
   b as ux
-} from "../chunks/BwOnO6gZ.js";
+} from "../chunks/C0ETamnL.js";
 import {
   f as ea,
   s as af
 } from "../chunks/BI5KFv7B.js";
-import "../chunks/BkCX6Dhl.js";
+import "../chunks/C8SGYYB9.js";
 import {
   i as qg
-} from "../chunks/CyN9FrR7.js";
+} from "../chunks/B4fL6wN3.js";
 import {
   L as Vg
-} from "../chunks/CqJiU75S.js";
+} from "../chunks/d3Ximbme.js";
 import {
   c as _n
-} from "../chunks/BJAxREQj.js";
+} from "../chunks/BU7TSmCo.js";
 import {
   L as hx,
   T as Ug,
   a as dx
-} from "../chunks/CB1sjDQi.js";
+} from "../chunks/DuH8KGuY.js";
 import {
   _ as px
 } from "../chunks/Dp1pzeXC.js";
 import {
   R as fx
-} from "../chunks/aCy5SlN5.js";
+} from "../chunks/BH2_dNKw.js";
 import {
   W as mx
-} from "../chunks/6WWXPsLi.js";
+} from "../chunks/yrK32Tme.js";
 import {
   r as _x
 } from "../chunks/Di9sxCf-.js";
@@ -44306,7 +44308,7 @@ function u8(w, l) {
     var yt, Mt, St, ht, Lt;
     const st = [],
       Tt = (Mt = (yt = Et) == null ? void 0 : yt.data) == null ? void 0 : Mt.role;
-    Ad(Tt, ["admin"]) && !x($) && st.push("ban-user"), Ad(Tt, ["admin", "global_moderator", "moderator"]) && !x($) && st.push("timeout-user"), st.push("report-user");
+    Ad(Tt, ["admin"]) && !x($) && st.push("ban-user"), Ad(Tt, ["admin", "global_moderator", "moderator"]) && !x($) && st.push("timeout-user"), x($) || st.push("report-user");
     const Ct = (St = x(g)) == null ? void 0 : St.paintedBy;
     return (Ct == null ? void 0 : Ct.allianceId) === ((ht = Et.data) == null ? void 0 : ht.allianceId) && ((Lt = Et.data) == null ? void 0 : Lt.allianceRole) === "admin" && Et.data.id !== (Ct == null ? void 0 : Ct.id) && !x($) && st.push("ban-alliance"), st
   });
@@ -45457,7 +45459,7 @@ var oz = Pe('<meta property="og:title" content="Wplace - A massive real-time pix
     }, !0)
   }, Uz = Pe('<div class="absolute bottom-0 left-0 z-50 w-full sm:left-1/2 sm:max-w-md sm:-translate-x-1/2"><div class="rounded-t-box bg-base-100 border-base-300 sm:rounded-b-box w-full border-t pt-2 sm:mb-3 sm:shadow-xl"><div class="px-3 pb-2 pt-1"><div class="flex items-center justify-between"><span><!> </span> <button class="btn btn-circle btn-sm"><!></button></div> <div class="mt-1 flex items-center justify-center gap-4"><button class="btn btn-primary w-46"><!></button></div></div></div></div>'), Zz = Pe('<div class="disable-pinch-zoom relative h-full overflow-hidden svelte-6wmtgk"><div id="map" class="h-screen w-screen cursor-default"></div> <div><div><!> <!></div></div> <!> <div><!> <div class="flex flex-col gap-1 max-sm:hidden"><button class="btn btn-sm btn-circle">+</button> <button class="btn btn-sm btn-circle">-</button></div> <div class="max-sm:hidden"><a href="https://www.twitch.tv/directory/category/wplace" class="btn btn-sm btn-circle" target="_blank" title="Livestreams"><!></a></div> <!> <!> <!></div> <div><!> <!></div> <div><!></div> <div><!></div> <div><!></div>  <!></div> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!>', 1);
 
-function ML(w, l) {
+function AL(w, l) {
   Rr(l, !0);
   const g = sg,
     C = jy,
@@ -46729,5 +46731,5 @@ function ML(w, l) {
 }
 rn(["click"]);
 export {
-  ML as component
+  AL as component
 };

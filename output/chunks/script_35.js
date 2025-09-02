@@ -1,61 +1,48 @@
-import "./Bzak7iHL.js";
 import {
-  p as u,
-  f as p,
-  t as r,
-  b as c,
-  c as x,
-  d as B,
-  s as b,
-  r as L
-} from "./apxRKl0u.js";
-import {
-  p as Q,
-  i as S,
-  r as _
-} from "./DBMZVJyA.js";
-import {
-  b as R,
-  a as m,
-  s as h
-} from "./DRcRj3o9.js";
-const E = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
-var T = p("<span>wplace</span>"),
-  U = p('<div><img alt="Wplace logo"/> <!></div>');
+  z as d,
+  A as g,
+  B as i,
+  C as m,
+  D as b,
+  F as l,
+  g as p,
+  G as v,
+  H as h
+} from "./DDWIi-vs.js";
 
-function Y(n, e) {
-  u(e, !0);
-  let a = Q(e, "size", 3, "default"),
-    f = _(e, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
-  var t = U();
-  R(t, () => ({
-    ...f,
-    class: `flex items-center gap-1.5 ${e.class??""}`
-  }));
-  var A = B(t);
-  let l;
-  var d = b(A, 2);
-  {
-    var g = s => {
-      var i = T();
-      let o;
-      r(v => o = m(i, 1, "text-base-content font-pixel", null, o, v), [() => ({
-        "text-4xl": a() === "default",
-        "text-5xl": a() === "lg" || a() === "medium"
-      })]), c(s, i)
-    };
-    S(d, s => {
-      e.hasText && s(g)
-    })
+function x(n = !1) {
+  const s = d,
+    e = s.l.u;
+  if (!e) return;
+  let r = () => v(s.s);
+  if (n) {
+    let o = 0,
+      t = {};
+    const _ = h(() => {
+      let c = !1;
+      const a = s.s;
+      for (const f in a) a[f] !== t[f] && (t[f] = a[f], c = !0);
+      return c && o++, o
+    });
+    r = () => p(_)
   }
-  L(t), r(s => {
-    l = m(A, 1, "pixelated", null, l, s), h(A, "src", E)
-  }, [() => ({
-    "size-10": a() === "default",
-    "size-16": a() === "medium",
-    "size-20": a() === "lg"
-  })]), c(n, t), x()
+  e.b.length && g(() => {
+    u(s, r), l(e.b)
+  }), i(() => {
+    const o = m(() => e.m.map(b));
+    return () => {
+      for (const t of o) typeof t == "function" && t()
+    }
+  }), e.a.length && i(() => {
+    u(s, r), l(e.a)
+  })
+}
+
+function u(n, s) {
+  if (n.l.s)
+    for (const e of n.l.s) p(e);
+  s()
 }
 export {
-  Y as L
+  x as i
 };
