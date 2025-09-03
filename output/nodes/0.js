@@ -44,7 +44,7 @@ import {
 } from "../chunks/Ob_J7Gis.js";
 import {
   v as nn
-} from "../chunks/FY_AsQ84.js";
+} from "../chunks/DamjF-lF.js";
 import {
   d as Z,
   e as xt,
@@ -61,7 +61,7 @@ import {
 } from "../chunks/BfUyLi6m.js";
 import "../chunks/C5GsJ62f.js";
 import {
-  p as L,
+  p as O,
   i as I,
   s as Me,
   r as un
@@ -81,7 +81,7 @@ import {
   b as Ve
 } from "../chunks/BXxY18WV.js";
 import {
-  c as Lt
+  c as Ot
 } from "../chunks/BU7TSmCo.js";
 import "../chunks/C8SGYYB9.js";
 const mn = !0,
@@ -99,7 +99,7 @@ function bn(o, t) {
   de(t, !0);
   var l = _n(),
     B = ot(l);
-  Pe(B, 23, () => gn, (M, O) => `spinner-bar-${O}`, (M, O) => {
+  Pe(B, 23, () => gn, (M, L) => `spinner-bar-${L}`, (M, L) => {
     var K = hn();
     n(M, K)
   }), p(B), p(l), J(M => {
@@ -127,10 +127,10 @@ class xn {
       document: B = l == null ? void 0 : l.document
     } = t;
     l !== void 0 && (Qt(this, jt, B), Qt(this, te, rn(M => {
-      const O = le(l, "focusin", M),
+      const L = le(l, "focusin", M),
         K = le(l, "focusout", M);
       return () => {
-        O(), K()
+        L(), K()
       }
     })))
   }
@@ -215,16 +215,16 @@ function Ue(o) {
   return 1 / (1.5 + Math.abs(o) / 20)
 }
 var Pn = et("<div><!></div>"),
-  Ln = (o, t, l, B, M) => {
-    var O, K;
-    e(t) || !e(l) || (B(), (K = (O = M.toast).onDismiss) == null || K.call(O, M.toast))
+  On = (o, t, l, B, M) => {
+    var L, K;
+    e(t) || !e(l) || (B(), (K = (L = M.toast).onDismiss) == null || K.call(L, M.toast))
   },
-  On = et('<button data-close-button=""><!></button>'),
+  Ln = et('<button data-close-button=""><!></button>'),
   kn = et('<div data-icon=""><!> <!></div>'),
   Hn = et('<div data-description=""><!></div>'),
   Nn = (o, t, l, B) => {
-    var M, O;
-    ce(t.toast.cancel) && e(l) && ((O = (M = t.toast.cancel) == null ? void 0 : M.onClick) == null || O.call(M, o), B())
+    var M, L;
+    ce(t.toast.cancel) && e(l) && ((L = (M = t.toast.cancel) == null ? void 0 : M.onClick) == null || L.call(M, o), B())
   },
   Rn = et('<button data-button="" data-cancel=""> </button>'),
   Fn = (o, t, l) => {
@@ -274,17 +274,17 @@ function Kn(o, t) {
     }
     n(s, c)
   };
-  let B = L(t, "cancelButtonStyle", 3, ""),
-    M = L(t, "actionButtonStyle", 3, ""),
-    O = L(t, "descriptionClass", 3, ""),
-    K = L(t, "unstyled", 3, !1),
-    St = L(t, "defaultRichColors", 3, !1);
+  let B = O(t, "cancelButtonStyle", 3, ""),
+    M = O(t, "actionButtonStyle", 3, ""),
+    L = O(t, "descriptionClass", 3, ""),
+    K = O(t, "unstyled", 3, !1),
+    St = O(t, "defaultRichColors", 3, !1);
   const $ = {
     ...Cn
   };
   let R = N(!1),
     q = N(!1),
-    Ot = N(!1),
+    Lt = N(!1),
     Ut = N(!1),
     zt = N(!1),
     Q = N(0),
@@ -377,11 +377,11 @@ function Kn(o, t) {
       u(), (c = (s = t.toast).onDismiss) == null || c.call(s, t.toast)
     })
   });
-  const Le = s => {
+  const Oe = s => {
       if (e(Vt)) return;
       f(Q, e(r), !0);
       const c = s.target;
-      c.setPointerCapture(s.pointerId), c.tagName !== "BUTTON" && (f(Ot, !0), Et = {
+      c.setPointerCapture(s.pointerId), c.tagName !== "BUTTON" && (f(Lt, !0), Et = {
         x: s.clientX,
         y: s.clientY
       })
@@ -399,7 +399,7 @@ function Kn(o, t) {
         f(Q, e(r), !0), (Y = (tt = t.toast).onDismiss) == null || Y.call(tt, t.toast), e(ut) === "x" ? f(Kt, s > 0 ? "right" : "left", !0) : f(Kt, c > 0 ? "down" : "up", !0), u(), f(Ut, !0);
         return
       } else(j = e(nt)) == null || j.style.setProperty("--swipe-amount-x", "0px"), (m = e(nt)) == null || m.style.setProperty("--swipe-amount-y", "0px");
-      f(zt, !1), f(Ot, !1), f(ut, null)
+      f(zt, !1), f(Lt, !1), f(ut, null)
     },
     mt = s => {
       var W, tt, Y;
@@ -427,18 +427,18 @@ function Kn(o, t) {
         }(Math.abs(h.x) > 0 || Math.abs(h.y) > 0) && f(zt, !0), (tt = e(nt)) == null || tt.style.setProperty("--swipe-amount-x", `${h.x}px`), (Y = e(nt)) == null || Y.style.setProperty("--swipe-amount-y", `${h.y}px`)
     },
     yt = () => {
-      f(Ot, !1), f(ut, null), Et = null
+      f(Lt, !1), f(ut, null), Et = null
     },
     V = b(() => t.toast.icon ? t.toast.icon : e(E) === "success" ? t.successIcon : e(E) === "error" ? t.errorIcon : e(E) === "warning" ? t.warningIcon : e(E) === "info" ? t.infoIcon : e(E) === "loading" ? t.loadingIcon : null);
   var w = zn();
   C(w, "tabindex", 0);
   let se;
-  w.__pointermove = mt, w.__pointerup = ie, w.__pointerdown = Le;
+  w.__pointermove = mt, w.__pointerup = ie, w.__pointerdown = Oe;
   var we = ot(w);
   {
     var ye = s => {
-      var c = On();
-      c.__click = [Ln, Vt, ft, u, t];
+      var c = Ln();
+      c.__click = [On, Vt, ft, u, t];
       var x = ot(c);
       it(x, () => t.closeIcon ?? ht), p(c), J(T => {
         C(c, "aria-label", t.closeButtonAriaLabel), C(c, "data-disabled", e(Vt)), Tt(c, 1, T)
@@ -457,7 +457,7 @@ function Kn(o, t) {
         const c = b(() => t.toast.component);
         var x = g(),
           T = v(x);
-        Lt(T, () => e(c), (S, h) => {
+        Ot(T, () => e(c), (S, h) => {
           h(S, Me(() => t.toast.componentProps, {
             closeToast: u
           }))
@@ -478,7 +478,7 @@ function Kn(o, t) {
                   var H = G => {
                       var z = g(),
                         ct = v(z);
-                      Lt(ct, () => t.toast.icon, (dt, Yt) => {
+                      Ot(ct, () => t.toast.icon, (dt, Yt) => {
                         Yt(dt, {})
                       }), n(G, z)
                     },
@@ -504,7 +504,7 @@ function Kn(o, t) {
                   var H = G => {
                       var z = g(),
                         ct = v(z);
-                      Lt(ct, () => t.toast.icon, (dt, Yt) => {
+                      Ot(ct, () => t.toast.icon, (dt, Yt) => {
                         Yt(dt, {})
                       }), n(G, z)
                     },
@@ -540,9 +540,9 @@ function Kn(o, t) {
                                           De = v(Xt);
                                         {
                                           var Qe = Ee => {
-                                            var Oe = g(),
-                                              Je = v(Oe);
-                                            it(Je, () => t.infoIcon ?? ht), n(Ee, Oe)
+                                            var Le = g(),
+                                              Je = v(Le);
+                                            it(Je, () => t.infoIcon ?? ht), n(Ee, Le)
                                           };
                                           I(De, Ee => {
                                             e(E) === "info" && Ee(Qe)
@@ -599,7 +599,7 @@ function Kn(o, t) {
                   const _ = b(() => t.toast.title);
                   var A = g(),
                     U = v(A);
-                  Lt(U, () => e(_), (H, P) => {
+                  Ot(U, () => e(_), (H, P) => {
                     P(H, Me(() => t.toast.componentProps))
                   }), n(i, A)
                 },
@@ -628,7 +628,7 @@ function Kn(o, t) {
                   const _ = b(() => t.toast.description);
                   var A = g(),
                     U = v(A);
-                  Lt(U, () => e(_), (H, P) => {
+                  Ot(U, () => e(_), (H, P) => {
                     P(H, Me(() => t.toast.componentProps))
                   }), n(i, A)
                 },
@@ -642,7 +642,7 @@ function Kn(o, t) {
             }
             p(a), J(i => Tt(a, 1, i), [() => {
               var i, _;
-              return It(xt(O(), e(Dt), (i = e(at)) == null ? void 0 : i.description, (_ = t.toast.classes) == null ? void 0 : _.description))
+              return It(xt(L(), e(Dt), (i = e(at)) == null ? void 0 : i.description, (_ = t.toast.classes) == null ? void 0 : _.description))
             }]), n(y, a)
           };
           I(Y, y => {
@@ -659,7 +659,7 @@ function Kn(o, t) {
               var D = i => {
                   var _ = g(),
                     A = v(_);
-                  Lt(A, () => t.toast.cancel, (U, H) => {
+                  Ot(A, () => t.toast.cancel, (U, H) => {
                     H(U, {})
                   }), n(i, _)
                 },
@@ -703,7 +703,7 @@ function Kn(o, t) {
               var D = i => {
                   var _ = g(),
                     A = v(_);
-                  Lt(A, () => t.toast.action, (U, H) => {
+                  Ot(A, () => t.toast.action, (U, H) => {
                     H(U, {})
                   }), n(i, _)
                 },
@@ -748,7 +748,7 @@ function Kn(o, t) {
     })
   }
   p(w), Ve(w, s => f(nt, s), () => e(nt)), J((s, c, x, T) => {
-    Tt(w, 1, s), C(w, "data-rich-colors", t.toast.richColors ?? St()), C(w, "data-styled", !(t.toast.component || t.toast.unstyled || K())), C(w, "data-mounted", e(R)), C(w, "data-promise", c), C(w, "data-swiped", e(zt)), C(w, "data-removed", e(q)), C(w, "data-visible", e(ve)), C(w, "data-y-position", e(ae)[0]), C(w, "data-x-position", e(ae)[1]), C(w, "data-index", t.index), C(w, "data-front", e(fe)), C(w, "data-swiping", e(Ot)), C(w, "data-dismissable", e(ft)), C(w, "data-type", e(E)), C(w, "data-invert", e(_e)), C(w, "data-swipe-out", e(Ut)), C(w, "data-swipe-direction", e(Kt)), C(w, "data-expanded", x), se = Ce(w, `${t.style} ${t.toast.style}`, se, T)
+    Tt(w, 1, s), C(w, "data-rich-colors", t.toast.richColors ?? St()), C(w, "data-styled", !(t.toast.component || t.toast.unstyled || K())), C(w, "data-mounted", e(R)), C(w, "data-promise", c), C(w, "data-swiped", e(zt)), C(w, "data-removed", e(q)), C(w, "data-visible", e(ve)), C(w, "data-y-position", e(ae)[0]), C(w, "data-x-position", e(ae)[1]), C(w, "data-index", t.index), C(w, "data-front", e(fe)), C(w, "data-swiping", e(Lt)), C(w, "data-dismissable", e(ft)), C(w, "data-type", e(E)), C(w, "data-invert", e(_e)), C(w, "data-swipe-out", e(Ut)), C(w, "data-swipe-direction", e(Kt)), C(w, "data-expanded", x), se = Ce(w, `${t.style} ${t.toast.style}`, se, T)
   }, [() => {
     var s, c, x, T, S, h;
     return It(xt(t.class, e(Ct), (s = e(at)) == null ? void 0 : s.toast, (x = (c = t.toast) == null ? void 0 : c.classes) == null ? void 0 : x.toast, (T = e(at)) == null ? void 0 : T[e(E)], (h = (S = t.toast) == null ? void 0 : S.classes) == null ? void 0 : h[e(E)]))
@@ -803,9 +803,9 @@ const $n = 3,
 function aa(o, t) {
   const l = {};
   return [o, t].forEach((B, M) => {
-    const O = M === 1,
-      K = O ? "--mobile-offset" : "--offset",
-      St = O ? Ye : We;
+    const L = M === 1,
+      K = L ? "--mobile-offset" : "--offset",
+      St = L ? Ye : We;
 
     function $(R) {
       ["top", "right", "bottom", "left"].forEach(q => {
@@ -827,22 +827,22 @@ function sa(o, t) {
   function l(r) {
     return r !== "system" ? r : typeof window < "u" && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? Ae : re
   }
-  let B = L(t, "invert", 3, !1),
-    M = L(t, "position", 3, "bottom-right"),
-    O = L(t, "hotkey", 19, () => ["altKey", "KeyT"]),
-    K = L(t, "expand", 3, !1),
-    St = L(t, "closeButton", 3, !1),
-    $ = L(t, "offset", 3, We),
-    R = L(t, "mobileOffset", 3, Ye),
-    q = L(t, "theme", 3, "light"),
-    Ot = L(t, "richColors", 3, !1),
-    Ut = L(t, "duration", 3, ta),
-    zt = L(t, "visibleToasts", 3, $n),
-    Q = L(t, "toastOptions", 19, () => ({})),
-    bt = L(t, "dir", 7, "auto"),
-    kt = L(t, "gap", 3, na),
-    nt = L(t, "containerAriaLabel", 3, "Notifications"),
-    ut = L(t, "closeButtonAriaLabel", 3, "Close toast"),
+  let B = O(t, "invert", 3, !1),
+    M = O(t, "position", 3, "bottom-right"),
+    L = O(t, "hotkey", 19, () => ["altKey", "KeyT"]),
+    K = O(t, "expand", 3, !1),
+    St = O(t, "closeButton", 3, !1),
+    $ = O(t, "offset", 3, We),
+    R = O(t, "mobileOffset", 3, Ye),
+    q = O(t, "theme", 3, "light"),
+    Lt = O(t, "richColors", 3, !1),
+    Ut = O(t, "duration", 3, ta),
+    zt = O(t, "visibleToasts", 3, $n),
+    Q = O(t, "toastOptions", 19, () => ({})),
+    bt = O(t, "dir", 7, "auto"),
+    kt = O(t, "gap", 3, na),
+    nt = O(t, "containerAriaLabel", 3, "Notifications"),
+    ut = O(t, "closeButtonAriaLabel", 3, "Close toast"),
     Kt = un(t, ["$$slots", "$$events", "$$legacy", "invert", "position", "hotkey", "expand", "closeButton", "offset", "mobileOffset", "theme", "richColors", "duration", "visibleToasts", "toastOptions", "dir", "gap", "loadingIcon", "successIcon", "errorIcon", "warningIcon", "closeIcon", "infoIcon", "containerAriaLabel", "class", "closeButtonAriaLabel", "onblur", "onfocus", "onmouseenter", "onmousemove", "onmouseleave", "ondragend", "onpointerdown", "onpointerup"]);
 
   function fe() {
@@ -858,7 +858,7 @@ function sa(o, t) {
     Dt = N(void 0),
     vt = N(null),
     At = N(!1);
-  const me = b(() => O().join("+").replace(/Key/g, "").replace(/Digit/g, ""));
+  const me = b(() => L().join("+").replace(/Key/g, "").replace(/Digit/g, ""));
   _t(() => {
     Z.toasts.length <= 1 && f(E, !1)
   }), _t(() => {
@@ -876,7 +876,7 @@ function sa(o, t) {
     }), f(vt, null), f(At, !1))
   }), pt(() => (Z.reset(), le(document, "keydown", u => {
     var wt, st;
-    O().every(Ht => u[Ht] || u.code === Ht) && (f(E, !0), (wt = e(Dt)) == null || wt.focus()), u.code === "Escape" && (document.activeElement === e(Dt) || (st = e(Dt)) != null && st.contains(document.activeElement)) && f(E, !1)
+    L().every(Ht => u[Ht] || u.code === Ht) && (f(E, !0), (wt = e(Dt)) == null || wt.focus()), u.code === "Escape" && (document.activeElement === e(Dt) || (st = e(Dt)) != null && st.contains(document.activeElement)) && f(E, !1)
   }))), _t(() => {
     if (q() !== "system" && f(Ct, q()), typeof window < "u") {
       q() === "system" && (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? f(Ct, Ae) : f(Ct, re));
@@ -931,7 +931,7 @@ function sa(o, t) {
     var oe = r => {
       var u = g(),
         F = v(u);
-      Pe(F, 18, () => e(ve), wt => wt, (wt, st, Ht, Le) => {
+      Pe(F, 18, () => e(ve), wt => wt, (wt, st, Ht, Oe) => {
         const ie = b(() => {
             const [V, w] = st.split("-");
             return {
@@ -1155,7 +1155,7 @@ function sa(o, t) {
                 return e(w)
               },
               get defaultRichColors() {
-                return Ot()
+                return Lt()
               },
               get duration() {
                 return e(c)
@@ -1237,8 +1237,9 @@ function Ba(o, t) {
   de(t, !0), pt(() => {
     on.refresh(), Object.assign(window, {
       eval: async () => {
-        await fetch(sn + "/me?i=t", {
-          credentials: "include"
+        await fetch(sn + "/csp-report", {
+          credentials: "include",
+          method: "POST"
         })
       }
     });
@@ -1267,7 +1268,7 @@ function Ba(o, t) {
     dn()
   });
   var M = v(B),
-    O = ot(M);
+    L = ot(M);
   p(M);
   var K = Mt(M, 2);
   it(K, () => t.children);
@@ -1278,7 +1279,7 @@ function Ba(o, t) {
     position: "top-right",
     class: "!top-15",
     duration: 3e3
-  }), J(() => Jt(O, `Version: ${nn}`)), n(o, B), ue()
+  }), J(() => Jt(L, `Version: ${nn}`)), n(o, B), ue()
 }
 export {
   Ba as component, Ta as universal
