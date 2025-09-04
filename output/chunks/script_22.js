@@ -1,7 +1,7 @@
 import {
   s as e,
   p as r
-} from "./DWB_zhFT.js";
+} from "./DC57Gyk2.js";
 const t = {
   get error() {
     return r.error

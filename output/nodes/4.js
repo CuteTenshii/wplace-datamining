@@ -18,19 +18,19 @@ import "../chunks/Bzak7iHL.js";
 import {
   o as Mi,
   s as en
-} from "../chunks/XwJtV06w.js";
+} from "../chunks/C7jYfUbS.js";
 import {
-  a6 as Ey,
+  a3 as Ey,
   b8 as zy,
   bq as Ly,
   ba as Dy,
   br as Ry,
-  aT as By,
-  aL as lt,
+  b2 as By,
+  aI as lt,
   g as x,
-  aM as le,
-  aK as _n,
-  aw as Ji,
+  aJ as le,
+  aH as _n,
+  at as Ji,
   p as Dr,
   f as Pe,
   d as k,
@@ -42,36 +42,36 @@ import {
   bj as Pn,
   b as $,
   c as Rr,
-  B as Wr,
-  y as Ar,
+  y as Wr,
+  v as Ar,
   bo as Tu,
-  A as $f,
-  C as Ko,
-  aN as Yt,
+  x as $f,
+  z as Ko,
+  aK as Yt,
   a as It,
   b4 as Sn,
-  aG as Fy,
-  aF as og,
-  aH as Oy,
-  aJ as Ag,
+  aD as Fy,
+  aC as og,
+  aE as Oy,
+  aG as Ag,
   bs as rs,
-  ax as ya,
+  au as ya,
   bt as kg,
   $ as Ny
-} from "../chunks/DDWIi-vs.js";
+} from "../chunks/apxRKl0u.js";
 import {
   s as me
-} from "../chunks/Ob_J7Gis.js";
+} from "../chunks/B9SWw7yZ.js";
 import {
   p as Lt,
   i as Ne,
   r as rr,
   s as po,
   u as Eg
-} from "../chunks/Cotyqp2D.js";
+} from "../chunks/DBMZVJyA.js";
 import {
   h as jy
-} from "../chunks/DyJg5QNB.js";
+} from "../chunks/CkjmIARx.js";
 import {
   r as is,
   e as Wn,
@@ -82,14 +82,15 @@ import {
   d as dc,
   g as wu,
   c as lo
-} from "../chunks/CwJjPkYo.js";
+} from "../chunks/DRcRj3o9.js";
 import {
   a as Wo,
+  k as Cu,
   t as Cn
-} from "../chunks/CF7iZc7m.js";
+} from "../chunks/D6N4-wGP.js";
 import {
   p as va
-} from "../chunks/BaDbMWPQ.js";
+} from "../chunks/CYip7wJs.js";
 import {
   S as Hn,
   a as ti,
@@ -97,14 +98,14 @@ import {
   u as zt,
   n as ms,
   g as ha,
-  c as qy,
+  d as qy,
   o as Vy,
   C as lg,
   p as of,
   q as Uy,
   r as Zy,
   v as $y
-} from "../chunks/DC_O4ofs.js";
+} from "../chunks/CPC0UNzS.js";
 import {
   c as Lg,
   A as na,
@@ -112,17 +113,17 @@ import {
   g as lf,
   p as Gy,
   b as Hy
-} from "../chunks/BfUyLi6m.js";
+} from "../chunks/DHmwaxXs.js";
 import {
   g as Dg,
   b as Wy
-} from "../chunks/DWB_zhFT.js";
+} from "../chunks/DC57Gyk2.js";
 import {
   h as Xy
-} from "../chunks/D6lCS0HT.js";
+} from "../chunks/Hn5EJR_y.js";
 import {
   b as Os
-} from "../chunks/BXxY18WV.js";
+} from "../chunks/ClbBIaRv.js";
 import {
   L as Ky,
   c as vf,
@@ -131,7 +132,7 @@ import {
   t as Jy,
   b as Qy,
   R as ex
-} from "../chunks/ByUC4UNP.js";
+} from "../chunks/C6Svf4lV.js";
 import {
   g as je,
   l as tx
@@ -141,41 +142,38 @@ import {
 } from "../chunks/CTRYyxGQ.js";
 import {
   d as rx,
-  f as Xo,
   L as Hf,
-  c as ix
-} from "../chunks/DI-XPNec.js";
+  p as Wf,
+  C as Xf,
+  c as ix,
+  T as Bg,
+  G as nx
+} from "../chunks/VcOMw-jP.js";
 import {
   e as on,
   i as jd
-} from "../chunks/DieFH19D.js";
+} from "../chunks/DwmP27Pv.js";
 import {
-  c as Wf,
-  a as Xf,
-  b as nx
-} from "../chunks/s8fa6SKT.js";
+  c as Kf,
+  a as Yf,
+  b as ax
+} from "../chunks/DoCKPXSb.js";
 import {
   P as ts,
-  t as Bg
-} from "../chunks/Bl3D2i7R.js";
-import {
-  p as Kf,
-  C as Yf,
-  T as Fg,
-  G as ax
-} from "../chunks/BXyCIOZO.js";
+  t as Fg
+} from "../chunks/B1v9VrKg.js";
 import {
   g as Ln,
   a as qd,
   c as sx,
   b as ox
-} from "../chunks/KslvzHFp.js";
+} from "../chunks/DXvRcG6s.js";
 import {
-  k as Cu
-} from "../chunks/SRrJTvMH.js";
+  f as Xo
+} from "../chunks/BviiYr3T.js";
 import {
   A as lx
-} from "../chunks/Ck3jKpqx.js";
+} from "../chunks/nmzNmNhc.js";
 import {
   A as Og,
   d as ic,
@@ -188,35 +186,35 @@ import {
   c as dx,
   P as jg,
   b as px
-} from "../chunks/BD0Tkr-u.js";
+} from "../chunks/C74dlP5D.js";
 import {
   f as ia,
   s as Td
 } from "../chunks/BI5KFv7B.js";
-import "../chunks/C8SGYYB9.js";
+import "../chunks/BkCX6Dhl.js";
 import {
   i as qg
-} from "../chunks/B4fL6wN3.js";
+} from "../chunks/CyN9FrR7.js";
 import {
   L as Vg
-} from "../chunks/d3Ximbme.js";
+} from "../chunks/CqJiU75S.js";
 import {
   c as mn
-} from "../chunks/BU7TSmCo.js";
+} from "../chunks/BJAxREQj.js";
 import {
   L as fx,
   T as Ug,
   a as mx
-} from "../chunks/FGm3LJ8-.js";
+} from "../chunks/D2oGfOkk.js";
 import {
   _ as _x
 } from "../chunks/Dp1pzeXC.js";
 import {
   R as gx
-} from "../chunks/BH2_dNKw.js";
+} from "../chunks/aCy5SlN5.js";
 import {
   W as vx
-} from "../chunks/yrK32Tme.js";
+} from "../chunks/6WWXPsLi.js";
 import {
   r as yx
 } from "../chunks/Di9sxCf-.js";
@@ -34509,7 +34507,7 @@ function lm(w, l) {
     var W;
     Ye(() => {
       zr(G, "aria-label", x(o).label), W !== (W = x(o).value) && (G.value = (G.__value = x(o).value) ?? "")
-    }), Wf(_, [], G, () => (x(o).value, C()), C), $(T, G)
+    }), Kf(_, [], G, () => (x(o).value, C()), C), $(T, G)
   }), A(N), $(w, N), Rr()
 }
 const lP = typeof window < "u" ? window : void 0;
@@ -34791,7 +34789,7 @@ function bP(w, l) {
                 })), $($e, te)
               }), A(tt), A(ut), Ye(($e, Me) => {
                 me(Je, $e), me(at, Me)
-              }, [() => im(), () => Kf()]), $(Fe, ut)
+              }, [() => im(), () => Wf()]), $(Fe, ut)
             };
           Ne(Be, Fe => {
             x(L).length === 0 ? Fe(Oe) : Fe(ke, !1)
@@ -35114,7 +35112,7 @@ function bf(w, l) {
     W = Lr(G, 1, "input w-full", null, W, Be), zr(be, "placeholder", l.placeholder), zr(be, "maxlength", l.max)
   }, [() => ({
     "input-error": !!x(L)
-  })]), Xf(be, _), $(w, o), Rr()
+  })]), Yf(be, _), $(w, o), Rr()
 }
 var qP = (w, l) => {
     var _;
@@ -35559,7 +35557,7 @@ function xI(w, l) {
                       }
                     }), Ye((ce, F, q, H, Y) => {
                       me($e, x(_).name), Ie.disabled = x(N), me(Ae, ce), me(ft, `${F??""}: `), me(bt, q), me(Ht, `${H??""}: `), me(gr, Y)
-                    }, [() => Kw(), () => Kf(), () => x(_).pixelsPainted.toLocaleString("en-US"), () => Wg(), () => Jf()]), $(Je, Re)
+                    }, [() => Kw(), () => Wf(), () => x(_).pixelsPainted.toLocaleString("en-US"), () => Wg(), () => Jf()]), $(Je, Re)
                   },
                   ct = Je => {
                     var Re = vI(),
@@ -35861,7 +35859,7 @@ function RI(w, l) {
         $e = k(tt);
       $e.__click = [zI, L];
       var Me = k($e);
-      Yf(Me, {
+      Xf(Me, {
         class: "size-5"
       });
       var yt = V(Me);
@@ -38132,7 +38130,7 @@ function R4(w, l) {
         var Te = D4();
         is(Te), nr(Te, () => ({
           ...x(W)
-        })), Xf(Te, C), $(xe, Te)
+        })), Yf(Te, C), $(xe, Te)
       };
     Ne(ge, xe => {
       l.child ? xe(be) : xe(X, !1)
@@ -38773,7 +38771,7 @@ function n6(w, l) {
 }
 
 function fc(...w) {
-  return Bg(wu(w))
+  return Fg(wu(w))
 }
 
 function a6(w, l) {
@@ -39362,7 +39360,7 @@ function G6(w, l) {
     var pe = V(te);
     A(Me), Ye(() => {
       zr(yt, "aria-label", at()), J !== (J = Re()) && (yt.value = (yt.__value = Re()) ?? ""), me(pe, ` ${at()??""}`)
-    }), Wf(_, [], yt, () => (Re(), x(o)), ie => le(o, ie)), $(Ge, Me)
+    }), Kf(_, [], yt, () => (Re(), x(o)), ie => le(o, ie)), $(Ge, Me)
   }), A(X);
   var xe = V(X, 2),
     Te = k(xe);
@@ -41220,7 +41218,7 @@ function ak(w, l) {
 Ji(["click"]);
 
 function fm(...w) {
-  return Bg(wu(w))
+  return Fg(wu(w))
 }
 var sk = Pe("<div><!></div>");
 
@@ -43238,7 +43236,7 @@ function Ok(w, l) {
     } finally {
       le(T, !1)
     }
-  }), nx(yt, () => x(N), Mt => le(N, Mt)), $(w, X), Rr()
+  }), ax(yt, () => x(N), Mt => le(N, Mt)), $(w, X), Rr()
 }
 Ji(["click"]);
 var Nk = Ar('<svg><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"></path></svg>');
@@ -43659,7 +43657,7 @@ function dE(w, l) {
         }
       }), Ye((gt, Pt, cr, jr, qr, Gr, vr, Br, ui, vt, li) => {
         zr(xe, "title", gt), zr(Re, "title", l.user.data.name), me(at, l.user.data.name), Lr(tt, 1, Pt), me($e, `#${l.user.data.id??""}`), me(Ae, `${cr??""}: `), me(He, jr), me(pt, `Level ${qr??""}`), me(xt, ` (${Gr??""}%) `), zr(ft, "data-tip", vr), me(Wt, Br), zr(_r, "data-tip", ui), me(oe, ` ${vt??""}`), Dt.disabled = x(C), me(Qt, ` ${li??""}`)
-      }, [() => fb(), () => lo(Ln(l.user.data.id)), () => Kf(), () => l.user.data.pixelsPainted.toLocaleString("en-US"), () => Math.floor(l.user.data.level), () => Math.floor(l.user.data.level % 1 * 100), () => Dw(), () => gb(), () => ha.muted ? S3() : w3(), () => Pb(), () => Ab()]), Pn("focus", xe, () => {
+      }, [() => fb(), () => lo(Ln(l.user.data.id)), () => Wf(), () => l.user.data.pixelsPainted.toLocaleString("en-US"), () => Math.floor(l.user.data.level), () => Math.floor(l.user.data.level % 1 * 100), () => Dw(), () => gb(), () => ha.muted ? S3() : w3(), () => Pb(), () => Ab()]), Pn("focus", xe, () => {
         le(o, window.pwaInstallPrompt, !0)
       }), $(ge, be)
     };
@@ -43836,7 +43834,7 @@ function kE(w, l) {
     var Re = V(Je);
     A(ot), Ye(() => {
       zr(Ge, "aria-label", ke()), ct !== (ct = Oe()) && (Ge.value = (Ge.__value = Oe()) ?? ""), me(Re, ` ${ke()??""}`)
-    }), Wf(_, [], Ge, () => (Oe(), x(N)), at => le(N, at)), $(Te, ot)
+    }), Kf(_, [], Ge, () => (Oe(), x(N)), at => le(N, at)), $(Te, ot)
   }), A(W);
   var ne = V(W, 2),
     ge = k(ne);
@@ -44451,7 +44449,7 @@ function h8(w, l) {
                       var We = WE();
                       We.__click = [HE, ht];
                       var Dt = k(We);
-                      Yf(Dt, {
+                      Xf(Dt, {
                         class: "size-3"
                       }), A(We), Ye((ye, Qt) => {
                         Lr(We, 1, ye), zr(We, "title", Qt)
@@ -44513,7 +44511,7 @@ function h8(w, l) {
                                 let Br;
                                 vr.__click = [JE, De];
                                 var ui = k(vr);
-                                Fg(ui, {
+                                Bg(ui, {
                                   class: "size-5"
                                 });
                                 var vt = V(ui);
@@ -44533,7 +44531,7 @@ function h8(w, l) {
                                       let In;
                                       ci.__click = [e8, De];
                                       var kt = k(ci);
-                                      ax(kt, {
+                                      nx(kt, {
                                         class: "size-5"
                                       });
                                       var Qe = V(kt);
@@ -44865,7 +44863,7 @@ function w8(w, l) {
                       _t = V(k(He));
                     _t.__click = [_8, xe];
                     var Et = k(_t);
-                    Yf(Et, {
+                    Xf(Et, {
                       class: "size-3"
                     }), A(_t), A(He), pi(), A(nt), A(Ae);
                     var Rt = V(Ae);
@@ -45267,7 +45265,7 @@ function Ig(w, l) {
     me(ne, Re), De.disabled = _() >= x(L), zr(ke, "data-tip", at), Fe = Lr(ke, 1, "", null, Fe, tt), ut.disabled = l.userDroplets < x(C) || x(N) || !_(), me(Je, ` ${$e??""} `)
   }, [() => l.title(_()), () => $d(), () => ({
     tooltip: l.userDroplets < x(C)
-  }), () => x(C).toLocaleString("en-US")]), Xf(Te, _), $(w, T), Rr()
+  }), () => x(C).toLocaleString("en-US")]), Yf(Te, _), $(w, T), Rr()
 }
 Ji(["click"]);
 var $8 = Ar('<svg><path d="M346-140 100-386q-10-10-15-22t-5-25q0-13 5-25t15-22l230-229-106-106 62-65 400 400q10 10 14.5 22t4.5 25q0 13-4.5 25T686-386L440-140q-10 10-22 15t-25 5q-13 0-25-5t-22-15Zm47-506L179-432h428L393-646Zm399 526q-36 0-61-25.5T706-208q0-27 13.5-51t30.5-47l42-54 44 54q16 23 30 47t14 51q0 37-26 62.5T792-120Z"></path></svg>');
@@ -45750,7 +45748,7 @@ var yz = Pe('<meta property="og:title" content="Wplace - A massive real-time pix
     }, !0)
   }, nL = Pe('<div class="absolute bottom-0 left-0 z-50 w-full sm:left-1/2 sm:max-w-md sm:-translate-x-1/2"><div class="rounded-t-box bg-base-100 border-base-300 sm:rounded-b-box w-full border-t pt-2 sm:mb-3 sm:shadow-xl"><div class="px-3 pb-2 pt-1"><div class="flex items-center justify-between"><span><!> </span> <button class="btn btn-circle btn-sm"><!></button></div> <div class="mt-1 flex items-center justify-center gap-4"><button class="btn btn-primary w-46"><!></button></div></div></div></div>'), aL = Pe('<div class="disable-pinch-zoom relative h-full overflow-hidden svelte-6wmtgk"><div id="map" class="h-screen w-screen cursor-default"></div> <div><div><!> <!></div></div> <!> <div><!> <div class="flex flex-col gap-1 max-sm:hidden"><button class="btn btn-sm btn-circle">+</button> <button class="btn btn-sm btn-circle">-</button></div> <div class="max-sm:hidden"><a href="https://www.twitch.tv/directory/category/wplace" class="btn btn-sm btn-circle" target="_blank" title="Livestreams"><!></a></div> <!> <!> <!> <!></div> <div><!> <!></div> <div><!></div> <div><!></div> <div><!></div>  <!></div> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!>', 1);
 
-function ZL(w, l) {
+function UL(w, l) {
   Dr(l, !0);
   const _ = of,
     C = Uy,
@@ -46582,7 +46580,7 @@ function ZL(w, l) {
             onclick: () => {
               var jt;
               (jt = zt.data) != null && jt.needsPhoneVerification ? (le(ht, !0), Vr.warning(ug())) : zt.charges !== void 0 && zt.charges < 1 ? Vr.warning(iA, {
-                icon: Fg
+                icon: Bg
               }) : x(W) && zt.data ? (na.smallDropplet.play(), le(xe, {
                 name: "paintingPixel"
               }, !0)) : (le(pe, !0), x(W) && es(x(W).getCenter(), x(ne)))
@@ -47075,5 +47073,5 @@ function ZL(w, l) {
 }
 Ji(["click"]);
 export {
-  ZL as component
+  UL as component
 };

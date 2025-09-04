@@ -4,71 +4,71 @@ var ke = o => {
 var He = (o, t, l) => t.has(o) || ke("Cannot " + l);
 var gt = (o, t, l) => (He(o, t, "read from private field"), l ? l.call(o) : t.get(o)),
   qt = (o, t, l) => t.has(o) ? ke("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(o) : t.set(o, l),
-  Qt = (o, t, l, B) => (He(o, t, "write to private field"), B ? B.call(o, l) : t.set(o, l), l);
+  Jt = (o, t, l, B) => (He(o, t, "write to private field"), B ? B.call(o, l) : t.set(o, l), l);
 import "../chunks/Bzak7iHL.js";
 import {
   o as pt,
   s as it
-} from "../chunks/XwJtV06w.js";
+} from "../chunks/C7jYfUbS.js";
 import {
   p as de,
   f as et,
   d as ot,
   b as n,
   r as p,
-  t as J,
+  t as Q,
   c as ue,
   bo as le,
-  aG as pe,
-  aF as Ne,
-  aH as $e,
-  aL as R,
-  aK as ze,
-  B as _t,
-  aM as f,
+  aD as pe,
+  aC as Ne,
+  aE as $e,
+  aI as R,
+  aH as ze,
+  y as _t,
+  aJ as f,
   g as e,
   u as b,
-  C as $t,
+  z as $t,
   s as Mt,
   bj as Ke,
-  ax as ht,
-  aN as g,
+  au as ht,
+  aK as g,
   a as v,
-  aw as tn,
+  at as tn,
   b4 as Re,
-  y as ne,
+  v as ne,
   bm as en
-} from "../chunks/DDWIi-vs.js";
+} from "../chunks/apxRKl0u.js";
 import {
-  s as Jt
-} from "../chunks/Ob_J7Gis.js";
+  s as Qt
+} from "../chunks/B9SWw7yZ.js";
 import {
   v as nn
-} from "../chunks/CyAm3K7E.js";
+} from "../chunks/dZiTp0jK.js";
 import {
-  d as X,
-  e as xt,
-  f as an,
+  e as X,
+  f as xt,
+  h as an,
   g as Fe,
   u as on,
-  c as sn
-} from "../chunks/DC_O4ofs.js";
+  d as sn
+} from "../chunks/CPC0UNzS.js";
 import {
   c as rn,
   A as ln,
   s as cn,
   a as dn
-} from "../chunks/BfUyLi6m.js";
+} from "../chunks/DHmwaxXs.js";
 import "../chunks/C5GsJ62f.js";
 import {
-  p as L,
+  p as O,
   i as I,
   s as Me,
   r as un
-} from "../chunks/Cotyqp2D.js";
+} from "../chunks/DBMZVJyA.js";
 import {
   e as Pe
-} from "../chunks/DieFH19D.js";
+} from "../chunks/DwmP27Pv.js";
 import {
   c as It,
   a as Tt,
@@ -76,14 +76,14 @@ import {
   d as Ce,
   b as fn,
   S as vn
-} from "../chunks/CwJjPkYo.js";
+} from "../chunks/DRcRj3o9.js";
 import {
   b as Ve
-} from "../chunks/BXxY18WV.js";
+} from "../chunks/ClbBIaRv.js";
 import {
-  c as Lt
-} from "../chunks/BU7TSmCo.js";
-import "../chunks/C8SGYYB9.js";
+  c as Ot
+} from "../chunks/BJAxREQj.js";
+import "../chunks/BkCX6Dhl.js";
 const mn = !0,
   Ta = Object.freeze(Object.defineProperty({
     __proto__: null,
@@ -99,10 +99,10 @@ function bn(o, t) {
   de(t, !0);
   var l = _n(),
     B = ot(l);
-  Pe(B, 23, () => gn, (M, O) => `spinner-bar-${O}`, (M, O) => {
+  Pe(B, 23, () => gn, (M, L) => `spinner-bar-${L}`, (M, L) => {
     var K = hn();
     n(M, K)
-  }), p(B), p(l), J(M => {
+  }), p(B), p(l), Q(M => {
     Tt(l, 1, M), C(l, "data-visible", t.visible)
   }, [() => It(["sonner-loading-wrapper", t.class].filter(Boolean).join(" "))]), n(o, l), ue()
 }
@@ -126,11 +126,11 @@ class xn {
       window: l = wn,
       document: B = l == null ? void 0 : l.document
     } = t;
-    l !== void 0 && (Qt(this, jt, B), Qt(this, te, rn(M => {
-      const O = le(l, "focusin", M),
+    l !== void 0 && (Jt(this, jt, B), Jt(this, te, rn(M => {
+      const L = le(l, "focusin", M),
         K = le(l, "focusout", M);
       return () => {
-        O(), K()
+        L(), K()
       }
     })))
   }
@@ -146,7 +146,7 @@ class In {
   constructor(t) {
     qt(this, ee);
     qt(this, Bt);
-    Qt(this, ee, t), Qt(this, Bt, Symbol(t))
+    Jt(this, ee, t), Jt(this, Bt, Symbol(t))
   }
   get key() {
     return gt(this, Bt)
@@ -215,16 +215,16 @@ function Ue(o) {
   return 1 / (1.5 + Math.abs(o) / 20)
 }
 var Pn = et("<div><!></div>"),
-  Ln = (o, t, l, B, M) => {
-    var O, K;
-    e(t) || !e(l) || (B(), (K = (O = M.toast).onDismiss) == null || K.call(O, M.toast))
+  On = (o, t, l, B, M) => {
+    var L, K;
+    e(t) || !e(l) || (B(), (K = (L = M.toast).onDismiss) == null || K.call(L, M.toast))
   },
-  On = et('<button data-close-button=""><!></button>'),
+  Ln = et('<button data-close-button=""><!></button>'),
   kn = et('<div data-icon=""><!> <!></div>'),
   Hn = et('<div data-description=""><!></div>'),
   Nn = (o, t, l, B) => {
-    var M, O;
-    ce(t.toast.cancel) && e(l) && ((O = (M = t.toast.cancel) == null ? void 0 : M.onClick) == null || O.call(M, o), B())
+    var M, L;
+    ce(t.toast.cancel) && e(l) && ((L = (M = t.toast.cancel) == null ? void 0 : M.onClick) == null || L.call(M, o), B())
   },
   Rn = et('<button data-button="" data-cancel=""> </button>'),
   Fn = (o, t, l) => {
@@ -244,18 +244,18 @@ function Kn(o, t) {
       var T = h => {
           var Y = Pn(),
             tt = ot(Y);
-          it(tt, () => t.loadingIcon), p(Y), J(G => {
-            Tt(Y, 1, G), C(Y, "data-visible", e(E) === "loading")
+          it(tt, () => t.loadingIcon), p(Y), Q(Z => {
+            Tt(Y, 1, Z), C(Y, "data-visible", e(E) === "loading")
           }, [() => {
-            var G, j, m;
-            return It(xt((G = e(at)) == null ? void 0 : G.loader, (m = (j = t.toast) == null ? void 0 : j.classes) == null ? void 0 : m.loader, "sonner-loader"))
+            var Z, j, m;
+            return It(xt((Z = e(at)) == null ? void 0 : Z.loader, (m = (j = t.toast) == null ? void 0 : j.classes) == null ? void 0 : m.loader, "sonner-loader"))
           }]), n(h, Y)
         },
         S = h => {
           {
             let Y = b(() => {
-                var G, j;
-                return xt((G = e(at)) == null ? void 0 : G.loader, (j = t.toast.classes) == null ? void 0 : j.loader)
+                var Z, j;
+                return xt((Z = e(at)) == null ? void 0 : Z.loader, (j = t.toast.classes) == null ? void 0 : j.loader)
               }),
               tt = b(() => e(E) === "loading");
             bn(h, {
@@ -274,20 +274,20 @@ function Kn(o, t) {
     }
     n(s, c)
   };
-  let B = L(t, "cancelButtonStyle", 3, ""),
-    M = L(t, "actionButtonStyle", 3, ""),
-    O = L(t, "descriptionClass", 3, ""),
-    K = L(t, "unstyled", 3, !1),
-    St = L(t, "defaultRichColors", 3, !1);
+  let B = O(t, "cancelButtonStyle", 3, ""),
+    M = O(t, "actionButtonStyle", 3, ""),
+    L = O(t, "descriptionClass", 3, ""),
+    K = O(t, "unstyled", 3, !1),
+    St = O(t, "defaultRichColors", 3, !1);
   const $ = {
     ...Cn
   };
   let k = R(!1),
     V = R(!1),
-    Ot = R(!1),
+    Lt = R(!1),
     Ut = R(!1),
     zt = R(!1),
-    Q = R(0),
+    J = R(0),
     bt = R(0),
     kt = t.toast.duration || t.duration || je,
     nt = R(void 0),
@@ -338,7 +338,7 @@ function Kn(o, t) {
   });
 
   function u() {
-    f(V, !0), f(Q, e(r), !0), X.removeHeight(t.toast.id), setTimeout(() => {
+    f(V, !0), f(J, e(r), !0), X.removeHeight(t.toast.id), setTimeout(() => {
       X.remove(t.toast.id)
     }, En)
   }
@@ -377,17 +377,17 @@ function Kn(o, t) {
       u(), (c = (s = t.toast).onDismiss) == null || c.call(s, t.toast)
     })
   });
-  const Le = s => {
+  const Oe = s => {
       if (e(Vt)) return;
-      f(Q, e(r), !0);
+      f(J, e(r), !0);
       const c = s.target;
-      c.setPointerCapture(s.pointerId), c.tagName !== "BUTTON" && (f(Ot, !0), Et = {
+      c.setPointerCapture(s.pointerId), c.tagName !== "BUTTON" && (f(Lt, !0), Et = {
         x: s.clientX,
         y: s.clientY
       })
     },
     ie = () => {
-      var h, Y, tt, G, j, m;
+      var h, Y, tt, Z, j, m;
       if (e(Ut) || !e(ft)) return;
       Et = null;
       const s = Number(((h = e(nt)) == null ? void 0 : h.style.getPropertyValue("--swipe-amount-x").replace("px", "")) || 0),
@@ -396,13 +396,13 @@ function Kn(o, t) {
         T = e(ut) === "x" ? s : c,
         S = Math.abs(T) / x;
       if (Math.abs(T) >= Dn || S > .11) {
-        f(Q, e(r), !0), (G = (tt = t.toast).onDismiss) == null || G.call(tt, t.toast), e(ut) === "x" ? f(Kt, s > 0 ? "right" : "left", !0) : f(Kt, c > 0 ? "down" : "up", !0), u(), f(Ut, !0);
+        f(J, e(r), !0), (Z = (tt = t.toast).onDismiss) == null || Z.call(tt, t.toast), e(ut) === "x" ? f(Kt, s > 0 ? "right" : "left", !0) : f(Kt, c > 0 ? "down" : "up", !0), u(), f(Ut, !0);
         return
       } else(j = e(nt)) == null || j.style.setProperty("--swipe-amount-x", "0px"), (m = e(nt)) == null || m.style.setProperty("--swipe-amount-y", "0px");
-      f(zt, !1), f(Ot, !1), f(ut, null)
+      f(zt, !1), f(Lt, !1), f(ut, null)
     },
     mt = s => {
-      var Y, tt, G;
+      var Y, tt, Z;
       if (!Et || !e(ft) || (((Y = window.getSelection()) == null ? void 0 : Y.toString().length) ?? -1) > 0) return;
       const x = s.clientY - Et.y,
         T = s.clientX - Et.x,
@@ -424,23 +424,23 @@ function Kn(o, t) {
         else {
           const j = T * Ue(T);
           h.x = Math.abs(j) < Math.abs(T) ? j : T
-        }(Math.abs(h.x) > 0 || Math.abs(h.y) > 0) && f(zt, !0), (tt = e(nt)) == null || tt.style.setProperty("--swipe-amount-x", `${h.x}px`), (G = e(nt)) == null || G.style.setProperty("--swipe-amount-y", `${h.y}px`)
+        }(Math.abs(h.x) > 0 || Math.abs(h.y) > 0) && f(zt, !0), (tt = e(nt)) == null || tt.style.setProperty("--swipe-amount-x", `${h.x}px`), (Z = e(nt)) == null || Z.style.setProperty("--swipe-amount-y", `${h.y}px`)
     },
     yt = () => {
-      f(Ot, !1), f(ut, null), Et = null
+      f(Lt, !1), f(ut, null), Et = null
     },
     W = b(() => t.toast.icon ? t.toast.icon : e(E) === "success" ? t.successIcon : e(E) === "error" ? t.errorIcon : e(E) === "warning" ? t.warningIcon : e(E) === "info" ? t.infoIcon : e(E) === "loading" ? t.loadingIcon : null);
   var w = zn();
   C(w, "tabindex", 0);
   let se;
-  w.__pointermove = mt, w.__pointerup = ie, w.__pointerdown = Le;
+  w.__pointermove = mt, w.__pointerup = ie, w.__pointerdown = Oe;
   var we = ot(w);
   {
     var ye = s => {
-      var c = On();
-      c.__click = [Ln, Vt, ft, u, t];
+      var c = Ln();
+      c.__click = [On, Vt, ft, u, t];
       var x = ot(c);
-      it(x, () => t.closeIcon ?? ht), p(c), J(T => {
+      it(x, () => t.closeIcon ?? ht), p(c), Q(T => {
         C(c, "aria-label", t.closeButtonAriaLabel), C(c, "data-disabled", e(Vt)), Tt(c, 1, T)
       }, [() => {
         var T, S, h;
@@ -457,7 +457,7 @@ function Kn(o, t) {
         const c = b(() => t.toast.component);
         var x = g(),
           T = v(x);
-        Lt(T, () => e(c), (S, h) => {
+        Ot(T, () => e(c), (S, h) => {
           h(S, Me(() => t.toast.componentProps, {
             closeToast: u
           }))
@@ -475,18 +475,18 @@ function Kn(o, t) {
                 var A = g(),
                   U = v(A);
                 {
-                  var N = Z => {
+                  var N = G => {
                       var z = g(),
                         ct = v(z);
-                      Lt(ct, () => t.toast.icon, (dt, Yt) => {
+                      Ot(ct, () => t.toast.icon, (dt, Yt) => {
                         Yt(dt, {})
-                      }), n(Z, z)
+                      }), n(G, z)
                     },
-                    P = Z => {
-                      l(Z)
+                    P = G => {
+                      l(G)
                     };
-                  I(U, Z => {
-                    t.toast.icon ? Z(N) : Z(P, !1)
+                  I(U, G => {
+                    t.toast.icon ? G(N) : G(P, !1)
                   })
                 }
                 n(_, A)
@@ -501,34 +501,34 @@ function Kn(o, t) {
                 var A = g(),
                   U = v(A);
                 {
-                  var N = Z => {
+                  var N = G => {
                       var z = g(),
                         ct = v(z);
-                      Lt(ct, () => t.toast.icon, (dt, Yt) => {
+                      Ot(ct, () => t.toast.icon, (dt, Yt) => {
                         Yt(dt, {})
-                      }), n(Z, z)
+                      }), n(G, z)
                     },
-                    P = Z => {
+                    P = G => {
                       var z = g(),
                         ct = v(z);
                       {
                         var dt = Nt => {
-                            var Gt = g(),
-                              Be = v(Gt);
-                            it(Be, () => t.successIcon ?? ht), n(Nt, Gt)
+                            var Zt = g(),
+                              Be = v(Zt);
+                            it(Be, () => t.successIcon ?? ht), n(Nt, Zt)
                           },
                           Yt = Nt => {
-                            var Gt = g(),
-                              Be = v(Gt);
+                            var Zt = g(),
+                              Be = v(Zt);
                             {
-                              var Ge = Rt => {
-                                  var Zt = g(),
-                                    Se = v(Zt);
-                                  it(Se, () => t.errorIcon ?? ht), n(Rt, Zt)
+                              var Ze = Rt => {
+                                  var Gt = g(),
+                                    Se = v(Gt);
+                                  it(Se, () => t.errorIcon ?? ht), n(Rt, Gt)
                                 },
-                                Ze = Rt => {
-                                  var Zt = g(),
-                                    Se = v(Zt);
+                                Ge = Rt => {
+                                  var Gt = g(),
+                                    Se = v(Gt);
                                   {
                                     var Xe = Ft => {
                                         var Xt = g(),
@@ -539,13 +539,13 @@ function Kn(o, t) {
                                         var Xt = g(),
                                           De = v(Xt);
                                         {
-                                          var Qe = Ee => {
-                                            var Oe = g(),
-                                              Je = v(Oe);
-                                            it(Je, () => t.infoIcon ?? ht), n(Ee, Oe)
+                                          var Je = Ee => {
+                                            var Le = g(),
+                                              Qe = v(Le);
+                                            it(Qe, () => t.infoIcon ?? ht), n(Ee, Le)
                                           };
                                           I(De, Ee => {
-                                            e(E) === "info" && Ee(Qe)
+                                            e(E) === "info" && Ee(Je)
                                           }, !0)
                                         }
                                         n(Ft, Xt)
@@ -554,22 +554,22 @@ function Kn(o, t) {
                                       e(E) === "warning" ? Ft(Xe) : Ft(qe, !1)
                                     }, !0)
                                   }
-                                  n(Rt, Zt)
+                                  n(Rt, Gt)
                                 };
                               I(Be, Rt => {
-                                e(E) === "error" ? Rt(Ge) : Rt(Ze, !1)
+                                e(E) === "error" ? Rt(Ze) : Rt(Ge, !1)
                               }, !0)
                             }
-                            n(Nt, Gt)
+                            n(Nt, Zt)
                           };
                         I(ct, Nt => {
                           e(E) === "success" ? Nt(dt) : Nt(Yt, !1)
                         }, !0)
                       }
-                      n(Z, z)
+                      n(G, z)
                     };
-                  I(U, Z => {
-                    t.toast.icon ? Z(N) : Z(P, !1)
+                  I(U, G => {
+                    t.toast.icon ? G(N) : G(P, !1)
                   })
                 }
                 n(_, A)
@@ -578,7 +578,7 @@ function Kn(o, t) {
                 t.toast.type !== "loading" && _(i)
               })
             }
-            p(a), J(_ => Tt(a, 1, _), [() => {
+            p(a), Q(_ => Tt(a, 1, _), [() => {
               var _, A, U;
               return It(xt((_ = e(at)) == null ? void 0 : _.icon, (U = (A = t.toast) == null ? void 0 : A.classes) == null ? void 0 : U.icon))
             }]), n(y, a)
@@ -599,13 +599,13 @@ function Kn(o, t) {
                   const _ = b(() => t.toast.title);
                   var A = g(),
                     U = v(A);
-                  Lt(U, () => e(_), (N, P) => {
+                  Ot(U, () => e(_), (N, P) => {
                     P(N, Me(() => t.toast.componentProps))
                   }), n(i, A)
                 },
                 H = i => {
                   var _ = Re();
-                  J(() => Jt(_, t.toast.title)), n(i, _)
+                  Q(() => Qt(_, t.toast.title)), n(i, _)
                 };
               I(d, i => {
                 typeof t.toast.title != "string" ? i(D) : i(H, !1)
@@ -618,7 +618,7 @@ function Kn(o, t) {
           })
         }
         p(h);
-        var G = Mt(h, 2);
+        var Z = Mt(h, 2);
         {
           var j = y => {
             var a = Hn(),
@@ -628,24 +628,24 @@ function Kn(o, t) {
                   const _ = b(() => t.toast.description);
                   var A = g(),
                     U = v(A);
-                  Lt(U, () => e(_), (N, P) => {
+                  Ot(U, () => e(_), (N, P) => {
                     P(N, Me(() => t.toast.componentProps))
                   }), n(i, A)
                 },
                 H = i => {
                   var _ = Re();
-                  J(() => Jt(_, t.toast.description)), n(i, _)
+                  Q(() => Qt(_, t.toast.description)), n(i, _)
                 };
               I(d, i => {
                 typeof t.toast.description != "string" ? i(D) : i(H, !1)
               })
             }
-            p(a), J(i => Tt(a, 1, i), [() => {
+            p(a), Q(i => Tt(a, 1, i), [() => {
               var i, _;
-              return It(xt(O(), e(Dt), (i = e(at)) == null ? void 0 : i.description, (_ = t.toast.classes) == null ? void 0 : _.description))
+              return It(xt(L(), e(Dt), (i = e(at)) == null ? void 0 : i.description, (_ = t.toast.classes) == null ? void 0 : _.description))
             }]), n(y, a)
           };
-          I(G, y => {
+          I(Z, y => {
             t.toast.description && y(j)
           })
         }
@@ -659,7 +659,7 @@ function Kn(o, t) {
               var D = i => {
                   var _ = g(),
                     A = v(_);
-                  Lt(A, () => t.toast.cancel, (U, N) => {
+                  Ot(A, () => t.toast.cancel, (U, N) => {
                     N(U, {})
                   }), n(i, _)
                 },
@@ -670,9 +670,9 @@ function Kn(o, t) {
                     var U = N => {
                       var P = Rn();
                       P.__click = [Nn, t, ft, u];
-                      var Z = ot(P, !0);
-                      p(P), J(z => {
-                        Ce(P, t.toast.cancelButtonStyle ?? B()), Tt(P, 1, z), Jt(Z, t.toast.cancel.label)
+                      var G = ot(P, !0);
+                      p(P), Q(z => {
+                        Ce(P, t.toast.cancelButtonStyle ?? B()), Tt(P, 1, z), Qt(G, t.toast.cancel.label)
                       }, [() => {
                         var z, ct, dt;
                         return It(xt((z = e(at)) == null ? void 0 : z.cancelButton, (dt = (ct = t.toast) == null ? void 0 : ct.classes) == null ? void 0 : dt.cancelButton))
@@ -703,7 +703,7 @@ function Kn(o, t) {
               var D = i => {
                   var _ = g(),
                     A = v(_);
-                  Lt(A, () => t.toast.action, (U, N) => {
+                  Ot(A, () => t.toast.action, (U, N) => {
                     N(U, {})
                   }), n(i, _)
                 },
@@ -714,9 +714,9 @@ function Kn(o, t) {
                     var U = N => {
                       var P = jn();
                       P.__click = [Fn, t, u];
-                      var Z = ot(P, !0);
-                      p(P), J(z => {
-                        Ce(P, t.toast.actionButtonStyle ?? M()), Tt(P, 1, z), Jt(Z, t.toast.action.label)
+                      var G = ot(P, !0);
+                      p(P), Q(z => {
+                        Ce(P, t.toast.actionButtonStyle ?? M()), Tt(P, 1, z), Qt(G, t.toast.action.label)
                       }, [() => {
                         var z, ct, dt;
                         return It(xt((z = e(at)) == null ? void 0 : z.actionButton, (dt = (ct = t.toast) == null ? void 0 : ct.classes) == null ? void 0 : dt.actionButton))
@@ -738,7 +738,7 @@ function Kn(o, t) {
             t.toast.action && y(lt)
           })
         }
-        J(y => Tt(h, 1, y), [() => {
+        Q(y => Tt(h, 1, y), [() => {
           var y, a, d;
           return It(xt((y = e(at)) == null ? void 0 : y.title, (d = (a = t.toast) == null ? void 0 : a.classes) == null ? void 0 : d.title))
         }]), n(s, c)
@@ -747,8 +747,8 @@ function Kn(o, t) {
       t.toast.component ? s(Ie) : s(Te, !1)
     })
   }
-  p(w), Ve(w, s => f(nt, s), () => e(nt)), J((s, c, x, T) => {
-    Tt(w, 1, s), C(w, "data-rich-colors", t.toast.richColors ?? St()), C(w, "data-styled", !(t.toast.component || t.toast.unstyled || K())), C(w, "data-mounted", e(k)), C(w, "data-promise", c), C(w, "data-swiped", e(zt)), C(w, "data-removed", e(V)), C(w, "data-visible", e(ve)), C(w, "data-y-position", e(ae)[0]), C(w, "data-x-position", e(ae)[1]), C(w, "data-index", t.index), C(w, "data-front", e(fe)), C(w, "data-swiping", e(Ot)), C(w, "data-dismissable", e(ft)), C(w, "data-type", e(E)), C(w, "data-invert", e(_e)), C(w, "data-swipe-out", e(Ut)), C(w, "data-swipe-direction", e(Kt)), C(w, "data-expanded", x), se = Ce(w, `${t.style} ${t.toast.style}`, se, T)
+  p(w), Ve(w, s => f(nt, s), () => e(nt)), Q((s, c, x, T) => {
+    Tt(w, 1, s), C(w, "data-rich-colors", t.toast.richColors ?? St()), C(w, "data-styled", !(t.toast.component || t.toast.unstyled || K())), C(w, "data-mounted", e(k)), C(w, "data-promise", c), C(w, "data-swiped", e(zt)), C(w, "data-removed", e(V)), C(w, "data-visible", e(ve)), C(w, "data-y-position", e(ae)[0]), C(w, "data-x-position", e(ae)[1]), C(w, "data-index", t.index), C(w, "data-front", e(fe)), C(w, "data-swiping", e(Lt)), C(w, "data-dismissable", e(ft)), C(w, "data-type", e(E)), C(w, "data-invert", e(_e)), C(w, "data-swipe-out", e(Ut)), C(w, "data-swipe-direction", e(Kt)), C(w, "data-expanded", x), se = Ce(w, `${t.style} ${t.toast.style}`, se, T)
   }, [() => {
     var s, c, x, T, S, h;
     return It(xt(t.class, e(Ct), (s = e(at)) == null ? void 0 : s.toast, (x = (c = t.toast) == null ? void 0 : c.classes) == null ? void 0 : x.toast, (T = e(at)) == null ? void 0 : T[e(E)], (h = (S = t.toast) == null ? void 0 : S.classes) == null ? void 0 : h[e(E)]))
@@ -756,7 +756,7 @@ function Kn(o, t) {
     "--index": t.index,
     "--toasts-before": t.index,
     "--z-index": X.toasts.length - t.index,
-    "--offset": `${e(V)?e(Q):e(r)}px`,
+    "--offset": `${e(V)?e(J):e(r)}px`,
     "--initial-height": t.expandByDefault ? "auto" : `${e(bt)}px`
   })]), Ke("dragend", w, yt), n(o, w), ue()
 }
@@ -769,26 +769,26 @@ function Wn(o) {
 }
 var Yn = ne('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" height="20" width="20" data-sonner-error-icon=""><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0v-4.5A.75.75 0 0110 5zm0 10a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>');
 
-function Gn(o) {
+function Zn(o) {
   var t = Yn();
   n(o, t)
 }
-var Zn = ne('<svg viewBox="0 0 64 64" fill="currentColor" height="20" width="20" data-sonner-warning-icon="" xmlns="http://www.w3.org/2000/svg"><path d="M32.427,7.987c2.183,0.124 4,1.165 5.096,3.281l17.936,36.208c1.739,3.66 -0.954,8.585 -5.373,8.656l-36.119,0c-4.022,-0.064 -7.322,-4.631 -5.352,-8.696l18.271,-36.207c0.342,-0.65 0.498,-0.838 0.793,-1.179c1.186,-1.375 2.483,-2.111 4.748,-2.063Zm-0.295,3.997c-0.687,0.034 -1.316,0.419 -1.659,1.017c-6.312,11.979 -12.397,24.081 -18.301,36.267c-0.546,1.225 0.391,2.797 1.762,2.863c12.06,0.195 24.125,0.195 36.185,0c1.325,-0.064 2.321,-1.584 1.769,-2.85c-5.793,-12.184 -11.765,-24.286 -17.966,-36.267c-0.366,-0.651 -0.903,-1.042 -1.79,-1.03Z"></path><path d="M33.631,40.581l-3.348,0l-0.368,-16.449l4.1,0l-0.384,16.449Zm-3.828,5.03c0,-0.609 0.197,-1.113 0.592,-1.514c0.396,-0.4 0.935,-0.601 1.618,-0.601c0.684,0 1.223,0.201 1.618,0.601c0.395,0.401 0.593,0.905 0.593,1.514c0,0.587 -0.193,1.078 -0.577,1.473c-0.385,0.395 -0.929,0.593 -1.634,0.593c-0.705,0 -1.249,-0.198 -1.634,-0.593c-0.384,-0.395 -0.576,-0.886 -0.576,-1.473Z"></path></svg>');
+var Gn = ne('<svg viewBox="0 0 64 64" fill="currentColor" height="20" width="20" data-sonner-warning-icon="" xmlns="http://www.w3.org/2000/svg"><path d="M32.427,7.987c2.183,0.124 4,1.165 5.096,3.281l17.936,36.208c1.739,3.66 -0.954,8.585 -5.373,8.656l-36.119,0c-4.022,-0.064 -7.322,-4.631 -5.352,-8.696l18.271,-36.207c0.342,-0.65 0.498,-0.838 0.793,-1.179c1.186,-1.375 2.483,-2.111 4.748,-2.063Zm-0.295,3.997c-0.687,0.034 -1.316,0.419 -1.659,1.017c-6.312,11.979 -12.397,24.081 -18.301,36.267c-0.546,1.225 0.391,2.797 1.762,2.863c12.06,0.195 24.125,0.195 36.185,0c1.325,-0.064 2.321,-1.584 1.769,-2.85c-5.793,-12.184 -11.765,-24.286 -17.966,-36.267c-0.366,-0.651 -0.903,-1.042 -1.79,-1.03Z"></path><path d="M33.631,40.581l-3.348,0l-0.368,-16.449l4.1,0l-0.384,16.449Zm-3.828,5.03c0,-0.609 0.197,-1.113 0.592,-1.514c0.396,-0.4 0.935,-0.601 1.618,-0.601c0.684,0 1.223,0.201 1.618,0.601c0.395,0.401 0.593,0.905 0.593,1.514c0,0.587 -0.193,1.078 -0.577,1.473c-0.385,0.395 -0.929,0.593 -1.634,0.593c-0.705,0 -1.249,-0.198 -1.634,-0.593c-0.384,-0.395 -0.576,-0.886 -0.576,-1.473Z"></path></svg>');
 
 function Xn(o) {
-  var t = Zn();
+  var t = Gn();
   n(o, t)
 }
 var qn = ne('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" height="20" width="20" data-sonner-info-icon=""><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd"></path></svg>');
 
-function Qn(o) {
+function Jn(o) {
   var t = qn();
   n(o, t)
 }
-var Jn = ne('<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-sonner-close-icon=""><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>');
+var Qn = ne('<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-sonner-close-icon=""><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>');
 
 function pn(o) {
-  var t = Jn();
+  var t = Qn();
   n(o, t)
 }
 const $n = 3,
@@ -803,9 +803,9 @@ const $n = 3,
 function aa(o, t) {
   const l = {};
   return [o, t].forEach((B, M) => {
-    const O = M === 1,
-      K = O ? "--mobile-offset" : "--offset",
-      St = O ? Ye : We;
+    const L = M === 1,
+      K = L ? "--mobile-offset" : "--offset",
+      St = L ? Ye : We;
 
     function $(k) {
       ["top", "right", "bottom", "left"].forEach(V => {
@@ -827,22 +827,22 @@ function sa(o, t) {
   function l(r) {
     return r !== "system" ? r : typeof window < "u" && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? Ae : re
   }
-  let B = L(t, "invert", 3, !1),
-    M = L(t, "position", 3, "bottom-right"),
-    O = L(t, "hotkey", 19, () => ["altKey", "KeyT"]),
-    K = L(t, "expand", 3, !1),
-    St = L(t, "closeButton", 3, !1),
-    $ = L(t, "offset", 3, We),
-    k = L(t, "mobileOffset", 3, Ye),
-    V = L(t, "theme", 3, "light"),
-    Ot = L(t, "richColors", 3, !1),
-    Ut = L(t, "duration", 3, ta),
-    zt = L(t, "visibleToasts", 3, $n),
-    Q = L(t, "toastOptions", 19, () => ({})),
-    bt = L(t, "dir", 7, "auto"),
-    kt = L(t, "gap", 3, na),
-    nt = L(t, "containerAriaLabel", 3, "Notifications"),
-    ut = L(t, "closeButtonAriaLabel", 3, "Close toast"),
+  let B = O(t, "invert", 3, !1),
+    M = O(t, "position", 3, "bottom-right"),
+    L = O(t, "hotkey", 19, () => ["altKey", "KeyT"]),
+    K = O(t, "expand", 3, !1),
+    St = O(t, "closeButton", 3, !1),
+    $ = O(t, "offset", 3, We),
+    k = O(t, "mobileOffset", 3, Ye),
+    V = O(t, "theme", 3, "light"),
+    Lt = O(t, "richColors", 3, !1),
+    Ut = O(t, "duration", 3, ta),
+    zt = O(t, "visibleToasts", 3, $n),
+    J = O(t, "toastOptions", 19, () => ({})),
+    bt = O(t, "dir", 7, "auto"),
+    kt = O(t, "gap", 3, na),
+    nt = O(t, "containerAriaLabel", 3, "Notifications"),
+    ut = O(t, "closeButtonAriaLabel", 3, "Close toast"),
     Kt = un(t, ["$$slots", "$$events", "$$legacy", "invert", "position", "hotkey", "expand", "closeButton", "offset", "mobileOffset", "theme", "richColors", "duration", "visibleToasts", "toastOptions", "dir", "gap", "loadingIcon", "successIcon", "errorIcon", "warningIcon", "closeIcon", "infoIcon", "containerAriaLabel", "class", "closeButtonAriaLabel", "onblur", "onfocus", "onmouseenter", "onmousemove", "onmouseleave", "ondragend", "onpointerdown", "onpointerup"]);
 
   function fe() {
@@ -858,7 +858,7 @@ function sa(o, t) {
     Dt = R(void 0),
     vt = R(null),
     At = R(!1);
-  const me = b(() => O().join("+").replace(/Key/g, "").replace(/Digit/g, ""));
+  const me = b(() => L().join("+").replace(/Key/g, "").replace(/Digit/g, ""));
   _t(() => {
     X.toasts.length <= 1 && f(E, !1)
   }), _t(() => {
@@ -876,7 +876,7 @@ function sa(o, t) {
     }), f(vt, null), f(At, !1))
   }), pt(() => (X.reset(), le(document, "keydown", u => {
     var wt, st;
-    O().every(Ht => u[Ht] || u.code === Ht) && (f(E, !0), (wt = e(Dt)) == null || wt.focus()), u.code === "Escape" && (document.activeElement === e(Dt) || (st = e(Dt)) != null && st.contains(document.activeElement)) && f(E, !1)
+    L().every(Ht => u[Ht] || u.code === Ht) && (f(E, !0), (wt = e(Dt)) == null || wt.focus()), u.code === "Escape" && (document.activeElement === e(Dt) || (st = e(Dt)) != null && st.contains(document.activeElement)) && f(E, !1)
   }))), _t(() => {
     if (V() !== "system" && f(Ct, V()), typeof window < "u") {
       V() === "system" && (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? f(Ct, Ae) : f(Ct, re));
@@ -931,7 +931,7 @@ function sa(o, t) {
     var oe = r => {
       var u = g(),
         F = v(u);
-      Pe(F, 18, () => e(ve), wt => wt, (wt, st, Ht, Le) => {
+      Pe(F, 18, () => e(ve), wt => wt, (wt, st, Ht, Oe) => {
         const ie = b(() => {
             const [W, w] = st.split("-");
             return {
@@ -1019,7 +1019,7 @@ function sa(o, t) {
                         D = v(d);
                       {
                         var H = i => {
-                          Gn(i)
+                          Zn(i)
                         };
                         I(D, i => {
                           t.errorIcon !== null && i(H)
@@ -1075,7 +1075,7 @@ function sa(o, t) {
                         D = v(d);
                       {
                         var H = i => {
-                          Qn(i)
+                          Jn(i)
                         };
                         I(D, i => {
                           t.infoIcon !== null && i(H)
@@ -1119,33 +1119,33 @@ function sa(o, t) {
               };
             let c = b(() => {
                 var m;
-                return ((m = Q()) == null ? void 0 : m.duration) ?? Ut()
+                return ((m = J()) == null ? void 0 : m.duration) ?? Ut()
               }),
               x = b(() => {
                 var m;
-                return ((m = Q()) == null ? void 0 : m.class) ?? ""
+                return ((m = J()) == null ? void 0 : m.class) ?? ""
               }),
               T = b(() => {
                 var m;
-                return ((m = Q()) == null ? void 0 : m.descriptionClass) || ""
+                return ((m = J()) == null ? void 0 : m.descriptionClass) || ""
               }),
               S = b(() => {
                 var m;
-                return ((m = Q()) == null ? void 0 : m.style) ?? ""
+                return ((m = J()) == null ? void 0 : m.style) ?? ""
               }),
-              h = b(() => Q().classes || {}),
-              Y = b(() => Q().unstyled ?? !1),
+              h = b(() => J().classes || {}),
+              Y = b(() => J().unstyled ?? !1),
               tt = b(() => {
                 var m;
-                return ((m = Q()) == null ? void 0 : m.cancelButtonStyle) ?? ""
+                return ((m = J()) == null ? void 0 : m.cancelButtonStyle) ?? ""
               }),
-              G = b(() => {
+              Z = b(() => {
                 var m;
-                return ((m = Q()) == null ? void 0 : m.actionButtonStyle) ?? ""
+                return ((m = J()) == null ? void 0 : m.actionButtonStyle) ?? ""
               }),
               j = b(() => {
                 var m;
-                return ((m = Q()) == null ? void 0 : m.closeButtonAriaLabel) ?? ut()
+                return ((m = J()) == null ? void 0 : m.closeButtonAriaLabel) ?? ut()
               });
             Kn(W, {
               get index() {
@@ -1155,7 +1155,7 @@ function sa(o, t) {
                 return e(w)
               },
               get defaultRichColors() {
-                return Ot()
+                return Lt()
               },
               get duration() {
                 return e(c)
@@ -1194,7 +1194,7 @@ function sa(o, t) {
                 return e(tt)
               },
               get actionButtonStyle() {
-                return e(G)
+                return e(Z)
               },
               get closeButtonAriaLabel() {
                 return e(j)
@@ -1222,14 +1222,14 @@ function sa(o, t) {
               }
             })
           }
-        }), p(yt), Ve(yt, W => f(Dt, W), () => e(Dt)), J(() => yt.dir = yt.dir), n(wt, yt)
+        }), p(yt), Ve(yt, W => f(Dt, W), () => e(Dt)), Q(() => yt.dir = yt.dir), n(wt, yt)
       }), n(r, u)
     };
     I(Wt, r => {
       X.toasts.length > 0 && r(oe)
     })
   }
-  p(Pt), J(() => C(Pt, "aria-label", `${nt()??""} ${e(me)??""}`)), n(o, Pt), ue()
+  p(Pt), Q(() => C(Pt, "aria-label", `${nt()??""} ${e(me)??""}`)), n(o, Pt), ue()
 }
 var ra = et('<span class="hidden"> </span> <!> <!>', 1);
 
@@ -1274,7 +1274,7 @@ function Ba(o, t) {
     dn()
   });
   var M = v(B),
-    O = ot(M);
+    L = ot(M);
   p(M);
   var K = Mt(M, 2);
   it(K, () => t.children);
@@ -1285,7 +1285,7 @@ function Ba(o, t) {
     position: "top-right",
     class: "!top-15",
     duration: 3e3
-  }), J(() => Jt(O, `Version: ${nn}`)), n(o, B), ue()
+  }), Q(() => Qt(L, `Version: ${nn}`)), n(o, B), ue()
 }
 export {
   Ba as component, Ta as universal

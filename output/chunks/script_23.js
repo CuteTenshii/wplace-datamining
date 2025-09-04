@@ -1,46 +1,46 @@
 import {
   t as u,
-  h as d,
+  h as o,
   e as l,
-  ag as g,
-  ah as y,
+  ad as g,
+  ae as y,
   o as h,
-  Z as p,
-  ac as R,
-  ai as w,
-  aj as O,
-  ak as c,
-  Q as b,
-  al as E,
-  R as f
-} from "./DDWIi-vs.js";
+  W as p,
+  a9 as O,
+  af as w,
+  ag as R,
+  ah as c,
+  O as b,
+  ai as E,
+  P as f
+} from "./apxRKl0u.js";
 
-function k(m, v, i = !1, _ = !1, N = !1) {
-  var n = m,
+function C(m, v, i = !1, _ = !1, N = !1) {
+  var d = m,
     t = "";
   u(() => {
     var s = g;
     if (t === (t = v() ?? "")) {
-      d && l();
+      o && l();
       return
     }
     if (s.nodes_start !== null && (y(s.nodes_start, s.nodes_end), s.nodes_start = s.nodes_end = null), t !== "") {
-      if (d) {
+      if (o) {
         h.data;
-        for (var a = l(), o = a; a !== null && (a.nodeType !== p || a.data !== "");) o = a, a = R(a);
-        if (a === null) throw w(), O;
-        c(h, o), n = b(a);
+        for (var a = l(), n = a; a !== null && (a.nodeType !== p || a.data !== "");) n = a, a = O(a);
+        if (a === null) throw w(), R;
+        c(h, n), d = b(a);
         return
       }
       var r = t + "";
       i ? r = `<svg>${r}</svg>` : _ && (r = `<math>${r}</math>`);
       var e = E(r);
       if ((i || _) && (e = f(e)), c(f(e), e.lastChild), i || _)
-        for (; f(e);) n.before(f(e));
-      else n.before(e)
+        for (; f(e);) d.before(f(e));
+      else d.before(e)
     }
   })
 }
 export {
-  k as h
+  C as h
 };

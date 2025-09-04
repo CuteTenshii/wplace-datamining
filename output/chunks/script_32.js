@@ -1,37 +1,26 @@
+import "./Bzak7iHL.js";
 import {
-  v as u,
-  w as h,
-  x as m,
-  i as v,
-  h as o,
-  e as p,
-  j as k,
-  k as b,
-  l as y,
-  m as g,
-  o as x,
-  U as I,
-  q
-} from "./DDWIi-vs.js";
+  v as p,
+  b as a
+} from "./apxRKl0u.js";
+import {
+  b as e
+} from "./DRcRj3o9.js";
+import {
+  r as v
+} from "./DBMZVJyA.js";
+var m = p('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
 
-function N(i, l, _) {
-  o && p();
-  var e = i,
-    r = I,
-    n, t, a = null,
-    d = u() ? h : m;
-
-  function s() {
-    n && q(n), a !== null && (a.lastChild.remove(), e.before(a), a = null), n = t
-  }
-  v(() => {
-    if (d(r, r = l())) {
-      var f = e,
-        c = g();
-      c && (a = document.createDocumentFragment(), a.append(f = k())), t = b(() => _(f)), c ? y.add_callback(s) : s()
-    }
-  }), o && (e = x)
+function n(o, t) {
+  let s = v(t, ["$$slots", "$$events", "$$legacy"]);
+  var r = m();
+  e(r, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...s
+  })), a(o, r)
 }
 export {
-  N as k
+  n as A
 };
