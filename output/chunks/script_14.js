@@ -8,78 +8,78 @@ var ue = (n, e, t) => e in n ? de(n, e, {
   writable: !0,
   value: t
 }) : n[e] = t;
-var f = (n, e, t) => ue(n, typeof e != "symbol" ? e + "" : e, t),
+var m = (n, e, t) => ue(n, typeof e != "symbol" ? e + "" : e, t),
   ge = (n, e, t) => e.has(n) || ne("Cannot " + t);
 var d = (n, e, t) => (ge(n, e, "read from private field"), t ? t.call(n) : e.get(n)),
-  h = (n, e, t) => e.has(n) ? ne("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(n) : e.set(n, t);
+  _ = (n, e, t) => e.has(n) ? ne("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(n) : e.set(n, t);
 import {
-  aI as y,
+  aI as S,
   g as p,
   aJ as w,
   aH as Y,
   z as ae,
-  u as H
+  u as I
 } from "./apxRKl0u.js";
 import {
   g as u
 } from "./C5GsJ62f.js";
-const me = "true",
+const fe = "true",
   $n = "https://backend.wplace.live/files",
   Fn = "0x4AAAAAABpHqZ-6i7uL0nmG",
-  fe = "https://backend.wplace.live",
+  me = "https://backend.wplace.live",
   Jn = "0x4AAAAAABpqJe8FO0N84q0F";
-var M, C, O, k, B, L;
-class he {
+var C, O, k, B, L, D;
+class _e {
   constructor() {
-    h(this, M, y(!1));
-    h(this, C, y(!1));
-    h(this, O, y(Y(pe())));
-    h(this, k, y(!1));
-    h(this, B, y(Y(Date.now())));
-    h(this, L, y(void 0));
+    _(this, C, S(!1));
+    _(this, O, S(!1));
+    _(this, k, S(Y(pe())));
+    _(this, B, S(!1));
+    _(this, L, S(Y(Date.now())));
+    _(this, D, S(void 0));
     setInterval(() => {
-      w(d(this, B), Date.now(), !0)
+      w(d(this, L), Date.now(), !0)
     }, 500)
   }
   get dropletsDialogOpen() {
-    return p(d(this, M))
-  }
-  set dropletsDialogOpen(e) {
-    w(d(this, M), e, !0)
-  }
-  get muted() {
     return p(d(this, C))
   }
-  set muted(e) {
+  set dropletsDialogOpen(e) {
     w(d(this, C), e, !0)
   }
-  get language() {
+  get muted() {
     return p(d(this, O))
   }
-  set language(e) {
+  set muted(e) {
     w(d(this, O), e, !0)
   }
-  get turnstatileLoaded() {
+  get language() {
     return p(d(this, k))
   }
-  set turnstatileLoaded(e) {
+  set language(e) {
     w(d(this, k), e, !0)
   }
-  get now() {
+  get turnstatileLoaded() {
     return p(d(this, B))
   }
+  set turnstatileLoaded(e) {
+    w(d(this, B), e, !0)
+  }
+  get now() {
+    return p(d(this, L))
+  }
   get captcha() {
-    return we ? p(d(this, L)) : {
+    return we ? p(d(this, D)) : {
       token: "turnstile-disabled",
       time: Date.now()
     }
   }
   set captcha(e) {
-    w(d(this, L), e, !0)
+    w(d(this, D), e, !0)
   }
 }
-M = new WeakMap, C = new WeakMap, O = new WeakMap, k = new WeakMap, B = new WeakMap, L = new WeakMap;
-const _e = new he;
+C = new WeakMap, O = new WeakMap, k = new WeakMap, B = new WeakMap, L = new WeakMap, D = new WeakMap;
+const he = new _e;
 
 function pe() {
   if (navigator.languages && navigator.languages.length > 0) {
@@ -88,20 +88,20 @@ function pe() {
   }
   return (navigator.language || navigator.userLanguage || navigator.browserLanguage || "en").substring(0, 2)
 }
-const we = me.toLowerCase() !== "false";
-let m;
+const we = fe.toLowerCase() !== "false";
+let f;
 
-function I(n) {
-  const e = m.__externref_table_alloc();
-  return m.__wbindgen_export_2.set(e, n), e
+function P(n) {
+  const e = f.__externref_table_alloc();
+  return f.__wbindgen_export_2.set(e, n), e
 }
 
 function A(n, e) {
   try {
     return n.apply(this, e)
   } catch (t) {
-    const a = I(t);
-    m.__wbindgen_exn_store(a)
+    const a = P(t);
+    f.__wbindgen_exn_store(a)
   }
 }
 const ie = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
@@ -113,22 +113,22 @@ const ie = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
   }
 };
 typeof TextDecoder < "u" && ie.decode();
-let P = null;
+let x = null;
 
-function z() {
-  return (P === null || P.byteLength === 0) && (P = new Uint8Array(m.memory.buffer)), P
+function H() {
+  return (x === null || x.byteLength === 0) && (x = new Uint8Array(f.memory.buffer)), x
 }
 
-function x(n, e) {
-  return n = n >>> 0, ie.decode(z().subarray(n, n + e))
+function M(n, e) {
+  return n = n >>> 0, ie.decode(H().subarray(n, n + e))
 }
 
-function V(n) {
+function z(n) {
   return n == null
 }
 
 function Kn(n) {
-  m.set_user_id(n)
+  f.set_user_id(n)
 }
 let Z = 0;
 const W = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
@@ -136,7 +136,7 @@ const W = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
       throw Error("TextEncoder not available")
     }
   },
-  be = typeof W.encodeInto == "function" ? function(n, e) {
+  ye = typeof W.encodeInto == "function" ? function(n, e) {
     return W.encodeInto(n, e)
   } : function(n, e) {
     const t = W.encode(n);
@@ -150,11 +150,11 @@ function ce(n, e, t) {
   if (t === void 0) {
     const s = W.encode(n),
       l = e(s.length, 1) >>> 0;
-    return z().subarray(l, l + s.length).set(s), Z = s.length, l
+    return H().subarray(l, l + s.length).set(s), Z = s.length, l
   }
   let a = n.length,
     r = e(a, 1) >>> 0;
-  const o = z();
+  const o = H();
   let i = 0;
   for (; i < a; i++) {
     const s = n.charCodeAt(i);
@@ -163,38 +163,38 @@ function ce(n, e, t) {
   }
   if (i !== a) {
     i !== 0 && (n = n.slice(i)), r = t(r, a, a = i + n.length * 3, 1) >>> 0;
-    const s = z().subarray(r + i, r + a),
-      l = be(n, s);
+    const s = H().subarray(r + i, r + a),
+      l = ye(n, s);
     i += l.written, r = t(r, a, i, 1) >>> 0
   }
   return Z = i, r
 }
 
 function Vn(n) {
-  const e = ce(n, m.__wbindgen_malloc, m.__wbindgen_realloc),
+  const e = ce(n, f.__wbindgen_malloc, f.__wbindgen_realloc),
     t = Z;
-  m.request_url(e, t)
+  f.request_url(e, t)
 }
 
-function ye() {
+function be() {
   let n, e;
   try {
-    const t = m.get_load_payload();
-    return n = t[0], e = t[1], x(t[0], t[1])
+    const t = f.get_load_payload();
+    return n = t[0], e = t[1], M(t[0], t[1])
   } finally {
-    m.__wbindgen_free(n, e, 1)
+    f.__wbindgen_free(n, e, 1)
   }
 }
 
 function Se(n) {
   let e, t;
   try {
-    const a = ce(n, m.__wbindgen_malloc, m.__wbindgen_realloc),
+    const a = ce(n, f.__wbindgen_malloc, f.__wbindgen_realloc),
       r = Z,
-      o = m.get_pawtected_endpoint_payload(a, r);
-    return e = o[0], t = o[1], x(o[0], o[1])
+      o = f.get_pawtected_endpoint_payload(a, r);
+    return e = o[0], t = o[1], M(o[0], o[1])
   } finally {
-    m.__wbindgen_free(e, t, 1)
+    f.__wbindgen_free(e, t, 1)
   }
 }
 async function Te(n, e) {
@@ -239,7 +239,7 @@ function Ee() {
   }, n.wbg.__wbg_new_a12002a7f91c75be = function(e) {
     return new Uint8Array(e)
   }, n.wbg.__wbg_newnoargs_105ed471475aaf50 = function(e, t) {
-    return new Function(x(e, t))
+    return new Function(M(e, t))
   }, n.wbg.__wbg_newwithbyteoffsetandlength_d97e637ebe145a9a = function(e, t, a) {
     return new Uint8Array(e, t >>> 0, a >>> 0)
   }, n.wbg.__wbg_newwithlength_a381634e90c276d4 = function(e) {
@@ -260,22 +260,22 @@ function Ee() {
     e.set(t, a >>> 0)
   }, n.wbg.__wbg_static_accessor_GLOBAL_88a902d13a557d07 = function() {
     const e = typeof global > "u" ? null : global;
-    return V(e) ? 0 : I(e)
+    return z(e) ? 0 : P(e)
   }, n.wbg.__wbg_static_accessor_GLOBAL_THIS_56578be7e9f832b0 = function() {
     const e = typeof globalThis > "u" ? null : globalThis;
-    return V(e) ? 0 : I(e)
+    return z(e) ? 0 : P(e)
   }, n.wbg.__wbg_static_accessor_SELF_37c5d418e4bf5819 = function() {
     const e = typeof self > "u" ? null : self;
-    return V(e) ? 0 : I(e)
+    return z(e) ? 0 : P(e)
   }, n.wbg.__wbg_static_accessor_WINDOW_5de37043a91a9c40 = function() {
     const e = typeof window > "u" ? null : window;
-    return V(e) ? 0 : I(e)
+    return z(e) ? 0 : P(e)
   }, n.wbg.__wbg_subarray_aa9065fa9dc5df96 = function(e, t, a) {
     return e.subarray(t >>> 0, a >>> 0)
   }, n.wbg.__wbg_versions_c01dfd4722a88165 = function(e) {
     return e.versions
   }, n.wbg.__wbindgen_init_externref_table = function() {
-    const e = m.__wbindgen_export_2,
+    const e = f.__wbindgen_export_2,
       t = e.grow(4);
     e.set(0, void 0), e.set(t + 0, void 0), e.set(t + 1, null), e.set(t + 2, !0), e.set(t + 3, !1)
   }, n.wbg.__wbindgen_is_function = function(e) {
@@ -288,19 +288,19 @@ function Ee() {
   }, n.wbg.__wbindgen_is_undefined = function(e) {
     return e === void 0
   }, n.wbg.__wbindgen_memory = function() {
-    return m.memory
+    return f.memory
   }, n.wbg.__wbindgen_string_new = function(e, t) {
-    return x(e, t)
+    return M(e, t)
   }, n.wbg.__wbindgen_throw = function(e, t) {
-    throw new Error(x(e, t))
+    throw new Error(M(e, t))
   }, n
 }
 
 function ve(n, e) {
-  return m = n.exports, Ae.__wbindgen_wasm_module = e, P = null, m.__wbindgen_start(), m
+  return f = n.exports, Ae.__wbindgen_wasm_module = e, x = null, f.__wbindgen_start(), f
 }
 async function Ae(n) {
-  if (m !== void 0) return m;
+  if (f !== void 0) return f;
   typeof n < "u" && (Object.getPrototypeOf(n) === Object.prototype ? {
     module_or_path: n
   } = n : console.warn("using deprecated parameters for the initialization function; pass a single object instead")), typeof n > "u" && (n = new URL("pawtect_wasm_bg.wasm", import.meta.url));
@@ -325,8 +325,8 @@ const Ie = () => "Unexpected server error. Try again later.",
   De = n => `Erro enquanto pinta: ${n.err}`,
   Ne = (n, e = {}) => (e.locale ?? u()) === "en" ? Le(n) : De(n),
   qe = () => "Invalid phone number",
-  Ge = () => "Número de telefone inválido",
-  Ue = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? qe() : Ge(),
+  Ue = () => "Número de telefone inválido",
+  Ge = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? qe() : Ue(),
   Re = () => "Phone already used",
   je = () => "Telefone já usado",
   $e = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Re() : je(),
@@ -334,8 +334,8 @@ const Ie = () => "Unexpected server error. Try again later.",
   Je = () => "Você tem de esperar para reenviar um código",
   Ke = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Fe() : Je(),
   Ve = () => "Invalid code",
-  He = () => "Código inválido",
-  ze = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Ve() : He(),
+  ze = () => "Código inválido",
+  He = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Ve() : ze(),
   We = () => "Operation not allowed. Maybe you have too many favorite locations.",
   Ye = () => "Operação não permitida. Talvez você tenha muitos locais favoritos.",
   Ze = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? We() : Ye(),
@@ -354,15 +354,15 @@ const Ie = () => "Unexpected server error. Try again later.",
   dt = () => "Alliance name exceeded the maximum number of characters",
   ut = () => "O nome da aliança excedeu o número máximo de caracteres",
   gt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? dt() : ut(),
-  mt = () => "Alliance name already taken",
-  ft = () => "Já possui uma aliança com esse nome",
-  ht = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? mt() : ft(),
-  _t = () => "Alliance with empty name",
+  ft = () => "Alliance name already taken",
+  mt = () => "Já possui uma aliança com esse nome",
+  _t = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? ft() : mt(),
+  ht = () => "Alliance with empty name",
   pt = () => "Aliança com nome vazio",
-  wt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? _t() : pt(),
-  bt = () => "You are already in an alliance",
-  yt = () => "Você já está em uma aliança",
-  St = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? bt() : yt(),
+  wt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? ht() : pt(),
+  yt = () => "You are already in an alliance",
+  bt = () => "Você já está em uma aliança",
+  St = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? yt() : bt(),
   Tt = () => "You are not allowed to do this",
   Et = () => "Você não tem permissão para fazer isso",
   E = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Tt() : Et(),
@@ -380,19 +380,19 @@ const Ie = () => "Unexpected server error. Try again later.",
   Dt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Bt() : Lt(),
   Nt = () => "Refresh your page to get the latest update",
   qt = () => "Recarregue sua página para obter as últimas atualizações",
-  Gt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Nt() : qt(),
-  Ut = () => "Inappropriate content",
+  Ut = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Nt() : qt(),
+  Gt = () => "Inappropriate content",
   Rt = () => "Conteúdo inapropriado",
-  jt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Ut() : Rt(),
+  jt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Gt() : Rt(),
   $t = () => "Botting",
   Ft = () => "Uso de bots",
   Jt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? $t() : Ft(),
   Kt = () => "Hate speech",
   Vt = () => "Discurso de Ódio",
-  Ht = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Kt() : Vt(),
-  zt = () => "Griefing",
+  zt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Kt() : Vt(),
+  Ht = () => "Griefing",
   Wt = () => "Griefing",
-  Yt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? zt() : Wt(),
+  Yt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Ht() : Wt(),
   Zt = () => "Doxxing",
   Qt = () => "Doxxing",
   Xt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Zt() : Qt(),
@@ -402,28 +402,28 @@ const Ie = () => "Unexpected server error. Try again later.",
   nn = () => "Multi-accounting",
   an = () => "Múltiplas contas",
   rn = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? nn() : an(),
-  on = () => "Your account has been banned.",
-  sn = () => "Sua conta foi banida.",
+  on = () => "Breaking the rules",
+  sn = () => "Quebrar as regras",
   cn = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? on() : sn(),
-  ln = n => `Your account has been suspended until ${n.until}.`,
-  dn = n => `Sua conta foi suspensa até ${n.until}.`,
-  un = (n, e = {}) => (e.locale ?? u()) === "en" ? ln(n) : dn(n),
-  gn = () => "Breaking the rules",
-  mn = () => "Quebrar as regras",
-  fn = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? gn() : mn(),
-  hn = () => "Your account has been suspended for breaking the rules",
-  _n = () => "Sua conta foi suspensa por quebrar as regras",
-  pn = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? hn() : _n(),
-  Hn = {
+  ln = () => "Your account has been suspended for breaking the rules",
+  dn = () => "Sua conta foi suspensa por quebrar as regras",
+  un = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? ln() : dn(),
+  gn = () => "Your account has been banned for violating the rules",
+  fn = () => "A sua conta foi banida por quebrar as regras",
+  mn = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? gn() : fn(),
+  _n = n => `Your account has been suspended out until ${n.until}`,
+  hn = n => `A sua conta está suspensa até ${n.until}`,
+  pn = (n, e = {}) => (e.locale ?? u()) === "en" ? _n(n) : hn(n),
+  zn = {
     griefing: Yt(),
     "multi-accounting": rn(),
-    "hate-speech": Ht(),
+    "hate-speech": zt(),
     bot: Jt(),
     doxxing: Xt(),
     "inappropriate-content": jt(),
-    other: fn()
+    other: cn()
   },
-  zn = {
+  Hn = {
     doxxing: "text-red-600",
     "hate-speech": "text-red-600",
     "inappropriate-content": "text-amber-600",
@@ -448,9 +448,9 @@ function wn(n) {
   for (let a = 0; a < e.length; a++) t[a] = e.charCodeAt(a);
   return t
 }
-class bn {
+class yn {
   constructor(e) {
-    f(this, "bytes");
+    m(this, "bytes");
     this.bytes = e ?? new Uint8Array
   }
   set(e, t) {
@@ -476,21 +476,21 @@ class bn {
 function Wn(...n) {
   return n.filter(Boolean).join(" ")
 }
-const yn = typeof document < "u";
+const bn = typeof document < "u";
 let oe = 0;
-var D, N, q;
+var N, q, U;
 class Sn {
   constructor() {
-    h(this, D, y(Y([])));
-    h(this, N, y(Y([])));
-    h(this, q, e => {
+    _(this, N, S(Y([])));
+    _(this, q, S(Y([])));
+    _(this, U, e => {
       const t = this.toasts.findIndex(a => a.id === e);
       return t === -1 ? null : t
     });
-    f(this, "addToast", e => {
-      yn && this.toasts.unshift(e)
+    m(this, "addToast", e => {
+      bn && this.toasts.unshift(e)
     });
-    f(this, "updateToast", ({
+    m(this, "updateToast", ({
       id: e,
       data: t,
       type: a,
@@ -507,7 +507,7 @@ class Sn {
         updated: !0
       }
     });
-    f(this, "create", e => {
+    m(this, "create", e => {
       var s;
       const {
         message: t,
@@ -529,7 +529,7 @@ class Sn {
         })
       }), r
     });
-    f(this, "dismiss", e => (ae(() => {
+    m(this, "dismiss", e => (ae(() => {
       if (e === void 0) {
         this.toasts = this.toasts.map(a => ({
           ...a,
@@ -543,45 +543,45 @@ class Sn {
         dismiss: !0
       })
     }), e));
-    f(this, "remove", e => {
+    m(this, "remove", e => {
       if (e === void 0) {
         this.toasts = [];
         return
       }
-      const t = d(this, q).call(this, e);
+      const t = d(this, U).call(this, e);
       if (t !== null) return this.toasts.splice(t, 1), e
     });
-    f(this, "message", (e, t) => this.create({
+    m(this, "message", (e, t) => this.create({
       ...t,
       type: "default",
       message: e
     }));
-    f(this, "error", (e, t) => this.create({
+    m(this, "error", (e, t) => this.create({
       ...t,
       type: "error",
       message: e
     }));
-    f(this, "success", (e, t) => this.create({
+    m(this, "success", (e, t) => this.create({
       ...t,
       type: "success",
       message: e
     }));
-    f(this, "info", (e, t) => this.create({
+    m(this, "info", (e, t) => this.create({
       ...t,
       type: "info",
       message: e
     }));
-    f(this, "warning", (e, t) => this.create({
+    m(this, "warning", (e, t) => this.create({
       ...t,
       type: "warning",
       message: e
     }));
-    f(this, "loading", (e, t) => this.create({
+    m(this, "loading", (e, t) => this.create({
       ...t,
       type: "loading",
       message: e
     }));
-    f(this, "promise", (e, t) => {
+    m(this, "promise", (e, t) => {
       if (!t) return;
       let a;
       t.loading !== void 0 && (a = this.create({
@@ -625,7 +625,7 @@ class Sn {
         o && (this.dismiss(a), a = void 0), (i = t.finally) == null || i.call(t)
       }), a
     });
-    f(this, "custom", (e, t) => {
+    m(this, "custom", (e, t) => {
       const a = (t == null ? void 0 : t.id) || oe++;
       return this.create({
         component: e,
@@ -633,43 +633,43 @@ class Sn {
         ...t
       }), a
     });
-    f(this, "removeHeight", e => {
+    m(this, "removeHeight", e => {
       this.heights = this.heights.filter(t => t.toastId !== e)
     });
-    f(this, "setHeight", e => {
-      const t = d(this, q).call(this, e.toastId);
+    m(this, "setHeight", e => {
+      const t = d(this, U).call(this, e.toastId);
       if (t === null) {
         this.heights.push(e);
         return
       }
       this.heights[t] = e
     });
-    f(this, "reset", () => {
+    m(this, "reset", () => {
       this.toasts = [], this.heights = []
     })
   }
   get toasts() {
-    return p(d(this, D))
-  }
-  set toasts(e) {
-    w(d(this, D), e, !0)
-  }
-  get heights() {
     return p(d(this, N))
   }
-  set heights(e) {
+  set toasts(e) {
     w(d(this, N), e, !0)
   }
+  get heights() {
+    return p(d(this, q))
+  }
+  set heights(e) {
+    w(d(this, q), e, !0)
+  }
 }
-D = new WeakMap, N = new WeakMap, q = new WeakMap;
+N = new WeakMap, q = new WeakMap, U = new WeakMap;
 
 function Tn(n) {
   return n && typeof n == "object" && "status" in n ? `HTTP error! Status: ${n.status}` : `Error! ${n}`
 }
-const S = new Sn;
+const b = new Sn;
 
 function En(n, e) {
-  return S.create({
+  return b.create({
     message: n,
     ...e
   })
@@ -677,7 +677,7 @@ function En(n, e) {
 var Q;
 class Yn {
   constructor() {
-    h(this, Q, H(() => S.toasts.filter(e => !e.dismiss)))
+    _(this, Q, I(() => b.toasts.filter(e => !e.dismiss)))
   }
   get toasts() {
     return p(d(this, Q))
@@ -686,36 +686,41 @@ class Yn {
 Q = new WeakMap;
 const vn = En,
   An = Object.assign(vn, {
-    success: S.success,
-    info: S.info,
-    warning: S.warning,
-    error: S.error,
-    custom: S.custom,
-    message: S.message,
-    promise: S.promise,
-    dismiss: S.dismiss,
-    loading: S.loading,
-    getActiveToasts: () => S.toasts.filter(n => !n.dismiss)
+    success: b.success,
+    info: b.info,
+    warning: b.warning,
+    error: b.error,
+    custom: b.custom,
+    message: b.message,
+    promise: b.promise,
+    dismiss: b.dismiss,
+    loading: b.loading,
+    getActiveToasts: () => b.toasts.filter(n => !n.dismiss)
   });
-var G, U, R, j, $, F, J;
+var G, R, j, $, F, J, K;
 class In {
   constructor() {
-    f(this, "channel", new BroadcastChannel("user-channel"));
-    h(this, G, y());
-    h(this, U, y(!0));
-    h(this, R, y(Date.now()));
-    h(this, j, y(Date.now()));
-    h(this, $, H(() => {
+    m(this, "channel", new BroadcastChannel("user-channel"));
+    _(this, G, S());
+    _(this, R, S(!0));
+    _(this, j, S(Date.now()));
+    _(this, $, I(() => {
       if (!this.data) return;
       const e = this.data.charges;
       if (e.count > e.max) return e.count;
-      const t = e.count + Math.max((_e.now - this.lastFetch) / e.cooldownMs, 0);
+      const t = e.count + Math.max((he.now - this.lastFetch) / e.cooldownMs, 0);
       return Math.min(e.max, t)
     }));
-    h(this, F, H(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
-    h(this, J, H(() => {
+    _(this, F, I(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
+    _(this, J, I(() => {
       var e;
-      return new bn(wn(((e = this.data) == null ? void 0 : e.flagsBitmap) ?? "AA=="))
+      return new yn(wn(((e = this.data) == null ? void 0 : e.flagsBitmap) ?? "AA=="))
+    }));
+    _(this, K, I(() => {
+      var t;
+      if (!((t = this.data) != null && t.timeoutUntil)) return;
+      const e = new Date(this.data.timeoutUntil);
+      if (!(e.getTime() < Date.now())) return e
     }));
     this.channel.onmessage = e => {
       const t = JSON.parse(e.data);
@@ -729,16 +734,10 @@ class In {
     w(d(this, G), e, !0)
   }
   get loading() {
-    return p(d(this, U))
-  }
-  set loading(e) {
-    w(d(this, U), e, !0)
-  }
-  get now() {
     return p(d(this, R))
   }
-  set now(e) {
-    w(d(this, R), e)
+  set loading(e) {
+    w(d(this, R), e, !0)
   }
   get lastFetch() {
     return p(d(this, j))
@@ -764,6 +763,12 @@ class In {
   set flagsBitmap(e) {
     w(d(this, J), e)
   }
+  get timeoutUntil() {
+    return p(d(this, K))
+  }
+  set timeoutUntil(e) {
+    w(d(this, K), e)
+  }
   async refresh() {
     try {
       this.loading = !0, this.data = await se.me(), this.lastFetch = Date.now(), this.channel.postMessage(JSON.stringify({
@@ -788,9 +793,9 @@ class In {
     return e < 32 ? !0 : ((((a = this.data) == null ? void 0 : a.extraColorsBitmap) ?? 0) & 1 << e - 32) !== 0
   }
 }
-G = new WeakMap, U = new WeakMap, R = new WeakMap, j = new WeakMap, $ = new WeakMap, F = new WeakMap, J = new WeakMap;
+G = new WeakMap, R = new WeakMap, j = new WeakMap, $ = new WeakMap, F = new WeakMap, J = new WeakMap, K = new WeakMap;
 const Pn = new In;
-class _ extends Error {
+class h extends Error {
   constructor(e, t) {
     super(e), this.message = e, this.status = t
   }
@@ -1150,27 +1155,27 @@ const Mn = [{
 function ea(n) {
   return qn.countries[n - 1]
 }
-var K;
-class Gn {
+var V;
+class Un {
   constructor(e) {
-    h(this, K, y(!0));
+    _(this, V, S(!0));
     this.url = e
   }
   get online() {
-    return p(d(this, K))
+    return p(d(this, V))
   }
   set online(e) {
-    w(d(this, K), e, !0)
+    w(d(this, V), e, !0)
   }
   async paint(e, t, a) {
     const r = xn(e, s => `t=(${s.tile[0]},${s.tile[1]}),s=${s.season}`),
       i = (await Promise.all(Object.values(r).map(s => {
-        const [l, g] = s[0].tile, T = s[0].season, b = {
+        const [l, g] = s[0].tile, T = s[0].season, y = {
           colors: s.map(ee => ee.colorIdx),
           coords: s.flatMap(ee => ee.pixel),
           t,
           fp: a
-        }, te = JSON.stringify(b);
+        }, te = JSON.stringify(y);
         return this.request(`/s${T}/pixel/${l}/${g}`, {
           method: "POST",
           body: te,
@@ -1186,15 +1191,15 @@ class Gn {
       if (s.status === 403) {
         if (s.headers.get("cf-mitigated") === "challenge") throw new Error(Dt());
         const l = await s.json();
-        throw (l == null ? void 0 : l.error) === "refresh" ? new Error(Gt()) : (Pn.refresh(), new Error(Be()))
+        throw (l == null ? void 0 : l.error) === "refresh" ? new Error(Ut()) : (Pn.refresh(), new Error(Be()))
       } else if (s.status === 451) {
         const l = await i[0].json();
         l == null || l.err;
         const g = l == null ? void 0 : l.suspension;
-        if (g === "ban") throw new Error(cn());
+        if (g === "ban") throw new Error(mn());
         if (g === "timeout") {
           const T = new Date(Date.now() + ((l == null ? void 0 : l.durationMs) ?? 0));
-          throw new Error(un({
+          throw new Error(pn({
             until: T.toLocaleString()
           }))
         } else throw new Error(c())
@@ -1265,7 +1270,7 @@ class Gn {
         phone: e
       })
     });
-    if (t.status === 400) throw new Error(Ue());
+    if (t.status === 400) throw new Error(Ge());
     if (t.status === 403) throw new Error($e());
     if (t.status === 429) throw new Error(Ke());
     if (t.status !== 200) throw new Error(c());
@@ -1279,7 +1284,7 @@ class Gn {
         code: e
       })
     });
-    if (t.status === 400) throw new Error(ze());
+    if (t.status === 400) throw new Error(He());
     if (t.status !== 200) throw new Error(c());
     return await t.json()
   }
@@ -1399,7 +1404,7 @@ class Gn {
     if (t.status === 200) return t.json();
     if (t.status === 400) {
       const a = await t.json();
-      throw a.error === "max_characters" ? new Error(gt()) : a.error === "name_taken" ? new Error(ht()) : a.error == "empty_name" ? new Error(wt()) : new Error(c())
+      throw a.error === "max_characters" ? new Error(gt()) : a.error === "name_taken" ? new Error(_t()) : a.error == "empty_name" ? new Error(wt()) : new Error(c())
     } else throw t.status === 403 ? new Error(St()) : new Error(c())
   }
   async leaveAlliance() {
@@ -1540,7 +1545,7 @@ class Gn {
       const r = await t.json();
       throw new Error(r == null ? void 0 : r.error)
     } else {
-      if (t.status === 451) throw new Error(pn());
+      if (t.status === 451) throw new Error(un());
       if (t.status !== 200) throw new Error(c())
     }
     return await t.json()
@@ -1569,7 +1574,7 @@ class Gn {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== 200) throw new _(c(), e.status);
+    if (e.status !== 200) throw new h(c(), e.status);
     const t = await e.json();
     for (const a of t.tickets) a.reports.sort((r, o) => re[r.reason] - re[o.reason]);
     return t
@@ -1579,7 +1584,7 @@ class Gn {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== 200) throw new _(c(), e.status);
+    if (e.status !== 200) throw new h(c(), e.status);
     const {
       tickets: t
     } = await e.json();
@@ -1590,7 +1595,7 @@ class Gn {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== 200) throw new _(c(), e.status);
+    if (e.status !== 200) throw new h(c(), e.status);
     return e.json()
   }
   async setTicketStatus(e, t) {
@@ -1602,7 +1607,7 @@ class Gn {
         status: t
       })
     });
-    if (a.status !== 200) throw new _(c(), a.status)
+    if (a.status !== 200) throw new h(c(), a.status)
   }
   async request(e, t) {
     let a;
@@ -1621,7 +1626,7 @@ class Gn {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== 200) throw new _(c(), e.status);
+    if (e.status !== 200) throw new h(c(), e.status);
     return e.json()
   }
   async getClosedTicketsByMod(e, t) {
@@ -1629,7 +1634,7 @@ class Gn {
       method: "GET",
       credentials: "include"
     });
-    if (a.status !== 200) throw new _(c(), a.status);
+    if (a.status !== 200) throw new h(c(), a.status);
     return (await a.json()).items.map(o => ({
       ...o,
       suspensionRate: (o.ban + o.timeout) / o.total
@@ -1641,7 +1646,7 @@ class Gn {
       credentials: "include"
     });
     if (t.status !== 404) {
-      if (t.status !== 200) throw new _(c(), t.status);
+      if (t.status !== 200) throw new h(c(), t.status);
       return t.json()
     }
   }
@@ -1650,7 +1655,7 @@ class Gn {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new _(c(), t.status);
+    if (t.status !== 200) throw new h(c(), t.status);
     return t.json()
   }
   async getUserInfoFull(e) {
@@ -1659,7 +1664,7 @@ class Gn {
       credentials: "include"
     });
     if (t.status !== 404) {
-      if (t.status !== 200) throw new _(c(), t.status);
+      if (t.status !== 200) throw new h(c(), t.status);
       return t.json()
     }
   }
@@ -1671,7 +1676,7 @@ class Gn {
         userId: e
       })
     });
-    if (t.status !== 200) throw new _(c(), t.status)
+    if (t.status !== 200) throw new h(c(), t.status)
   }
   async removeBan(e) {
     const t = await this.request("/admin/remove-ban", {
@@ -1681,14 +1686,14 @@ class Gn {
         userId: e
       })
     });
-    if (t.status !== 200) throw new _(c(), t.status)
+    if (t.status !== 200) throw new h(c(), t.status)
   }
   async getUserNotes(e) {
     const t = await this.request(`/admin/users/notes?userId=${encodeURIComponent(e)}`, {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new _(c(), t.status);
+    if (t.status !== 200) throw new h(c(), t.status);
     return t.json()
   }
   async addUserNote(e, t) {
@@ -1700,14 +1705,14 @@ class Gn {
         note: t
       })
     });
-    if (a.status !== 200) throw new _(c(), a.status)
+    if (a.status !== 200) throw new h(c(), a.status)
   }
   async getUserPurchases(e) {
     const t = await this.request(`/admin/users/purchases?userId=${encodeURIComponent(e)}`, {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new _(c(), t.status);
+    if (t.status !== 200) throw new h(c(), t.status);
     const a = await t.json();
     return (Array.isArray(a == null ? void 0 : a.purchases) ? a.purchases : []).map(o => ({
       id: String(o.id ?? ""),
@@ -1726,7 +1731,7 @@ class Gn {
         droplets: t
       })
     });
-    if (a.status !== 200) throw new _(c(), a.status)
+    if (a.status !== 200) throw new h(c(), a.status)
   }
   async getUserTickets(e) {
     const {
@@ -1743,10 +1748,10 @@ class Gn {
       method: "GET",
       credentials: "include"
     });
-    if (s.status !== 200) throw new _(c(), s.status);
+    if (s.status !== 200) throw new h(c(), s.status);
     const l = await s.json(),
       g = Array.isArray(l == null ? void 0 : l.tickets) ? l.tickets : [];
-    return g.sort((T, b) => new Date(b.createdAt).getTime() - new Date(T.createdAt).getTime()), g
+    return g.sort((T, y) => new Date(y.createdAt).getTime() - new Date(T.createdAt).getTime()), g
   }
   mapTicketsToReportRows(e, t) {
     var r, o, i, s, l;
@@ -1754,31 +1759,31 @@ class Gn {
     for (const g of e) {
       const T = g.status ?? "open";
       if (t === "received") {
-        for (const b of g.reports) a.push({
-          id: String(b.id),
+        for (const y of g.reports) a.push({
+          id: String(y.id),
           ticketId: String(g.id),
-          createdAt: b.createdAt ?? g.createdAt,
+          createdAt: y.createdAt ?? g.createdAt,
           byUser: {
-            id: Number(b.reportedBy),
-            name: String(b.reportedByName ?? b.reportedBy),
-            picture: b.reportedByPicture ?? null
+            id: Number(y.reportedBy),
+            name: String(y.reportedByName ?? y.reportedBy),
+            picture: y.reportedByPicture ?? null
           },
-          reason: String(b.reason),
+          reason: String(y.reason),
           status: T
         });
         continue
       }
       if (t === "sent") {
-        for (const b of g.reports) a.push({
-          id: String(b.id),
+        for (const y of g.reports) a.push({
+          id: String(y.id),
           ticketId: String(g.id),
-          createdAt: b.createdAt ?? g.createdAt,
+          createdAt: y.createdAt ?? g.createdAt,
           toUser: {
             id: Number(g.reportedUser.id),
             name: String(g.reportedUser.name),
             picture: g.reportedUser.picture ?? null
           },
-          reason: String(b.reason),
+          reason: String(y.reason),
           status: T
         });
         continue
@@ -1810,7 +1815,7 @@ class Gn {
         method: "GET",
         credentials: "include"
       });
-    if (a.status !== 200) throw new _(c(), a.status);
+    if (a.status !== 200) throw new h(c(), a.status);
     const r = await a.json();
     return {
       closed_total: Number((r == null ? void 0 : r.closed_total) ?? 0),
@@ -1824,17 +1829,17 @@ class Gn {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
-        pawtectMe: ye(),
+        pawtectMe: be(),
         "paint-the": "world",
         "but-not": "using-bots",
         security: "/.well-known/security.txt"
       })
     });
-    if (e.status !== 204) throw new _(c(), e.status)
+    if (e.status !== 204) throw new h(c(), e.status)
   }
 }
-K = new WeakMap;
-let se = new Gn(fe);
+V = new WeakMap;
+let se = new Un(me);
 export {
-  le as C, fe as P, qn as S, Ae as _, se as a, Hn as b, c, we as d, Fn as e, S as f, _e as g, Wn as h, Yn as i, Kn as j, jt as k, Ht as l, Xt as m, Jt as n, Yt as o, ea as p, Zn as q, Vn as r, zn as s, An as t, Pn as u, Qn as v, Xn as w, $n as x, Jn as y
+  Jn as A, le as C, me as P, qn as S, Ae as _, se as a, zn as b, c, we as d, Fn as e, b as f, he as g, Wn as h, Yn as i, Kn as j, jt as k, zt as l, Xt as m, Jt as n, Yt as o, ea as p, pn as q, Vn as r, Hn as s, An as t, Pn as u, Zn as v, Qn as w, Xn as x, mn as y, $n as z
 };
