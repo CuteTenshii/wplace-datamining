@@ -7,14 +7,14 @@ import {
   b as a,
   aK as q,
   a as h
-} from "./apxRKl0u.js";
+} from "./B0_b_ZC0.js";
 import {
   b as n
-} from "./DRcRj3o9.js";
+} from "./CPzcXYwZ.js";
 import {
   r as i,
   i as f
-} from "./DBMZVJyA.js";
+} from "./3GNvktHi.js";
 const T = () => "Pixels painted",
   w = () => "Pixels pintados",
   D = (t = {}, o = {}) => (o.locale ?? c()) === "en" ? T() : w(),

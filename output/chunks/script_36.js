@@ -4,12 +4,12 @@ import {
   z as se,
   H as oe,
   C as de,
-  aY as ve,
-  p as X,
+  aZ as ve,
+  p as W,
   aJ as M,
   aI as D,
   aK as ue,
-  a as Z,
+  a as X,
   g as f,
   b as w,
   c as p,
@@ -21,39 +21,39 @@ import {
   d,
   r as v,
   s as u
-} from "./apxRKl0u.js";
+} from "./B0_b_ZC0.js";
 import {
   s as x
-} from "./B9SWw7yZ.js";
+} from "./BKKOZo4g.js";
 import {
   p as c,
   i as B,
   r as te
-} from "./DBMZVJyA.js";
+} from "./3GNvktHi.js";
 import {
   a as V,
   c as A,
   b as ae,
-  s as O
-} from "./DRcRj3o9.js";
+  s as Y
+} from "./CPzcXYwZ.js";
 import {
   b as me
-} from "./ClbBIaRv.js";
+} from "./Bbg9a0Hf.js";
 import {
   g as j,
-  d as Q,
+  d as Z,
   P as _e,
   e as he
-} from "./BdJF80pX.js";
+} from "./BFuaEnY5.js";
 import {
   o as ge
-} from "./C7jYfUbS.js";
+} from "./BaCvcCNi.js";
 import {
   g as I
 } from "./C5GsJ62f.js";
 import {
   L as be
-} from "./CqJiU75S.js";
+} from "./De4MVCKm.js";
 
 function xe(n, e, r) {
   ce(() => {
@@ -71,7 +71,7 @@ function xe(n, e, r) {
 }
 const we = n => `Login with ${n.name}`,
   ye = n => `Entrar com ${n.name}`,
-  W = (n, e = {}) => (e.locale ?? I()) === "en" ? we(n) : ye(n),
+  Q = (n, e = {}) => (e.locale ?? I()) === "en" ? we(n) : ye(n),
   ke = () => "By continuing, you agree to our",
   Ce = () => "Ao continuar, você concorda com nossos",
   Ie = (n = {}, e = {}) => (e.locale ?? I()) === "en" ? ke() : Ce(),
@@ -87,7 +87,7 @@ const we = n => `Login with ${n.name}`,
 var Ke = R("<div></div>");
 
 function Se(n, e) {
-  X(e, !0);
+  W(e, !0);
   let r = c(e, "widgetId", 15),
     a = c(e, "appearance", 3, "always"),
     _ = c(e, "language", 3, "auto"),
@@ -170,7 +170,7 @@ function Se(n, e) {
     }
   });
   var k = ue(),
-    T = Z(k);
+    T = X(k);
   {
     var K = t => {
       var i = Ke();
@@ -212,9 +212,9 @@ var Ge = R('<a><!> </a> <a><!> </a> <div class="mt-2 flex flex-col items-center 
   Ve = R('<div><div class="flex justify-center"><!></div> <form><div class="mt-6 flex flex-col items-center gap-2"><!></div></form> <p class="text-base-content/60 mt-2 text-center text-sm"> <a class="font-medium" href="/terms/terms-of-service" target="_blank"> </a> <a class="font-medium" href="/terms/privacy" target="_blank"> </a></p></div>');
 
 function pe(n, e) {
-  X(e, !0);
+  W(e, !0);
   let r = D(null),
-    a = D(fe(Q ? "" : "turnstile-disabled"));
+    a = D(fe(Z ? "" : "turnstile-disabled"));
 
   function _(t, i) {
     return `${_e}/auth/${t}?token=${i}${e.redirect?`&r=${e.redirect}`:""}`
@@ -231,7 +231,7 @@ function pe(n, e) {
   {
     var F = t => {
       var i = Ge(),
-        l = Z(i),
+        l = X(i),
         o = d(l);
       Ue(o, {
         class: "mr-1 size-5"
@@ -239,14 +239,14 @@ function pe(n, e) {
       var S = u(o);
       v(l);
       var C = u(l, 2),
-        Y = d(C);
-      De(Y, {
+        q = d(C);
+      De(q, {
         class: "mr-1 size-5"
       });
-      var re = u(Y);
+      var re = u(q);
       v(C);
-      var q = u(C, 2),
-        J = d(q);
+      var J = u(C, 2),
+        O = d(J);
       {
         var ne = b => {
           {
@@ -261,22 +261,22 @@ function pe(n, e) {
             })
           }
         };
-        B(J, b => {
-          Q && b(ne)
+        B(O, b => {
+          Z && b(ne)
         })
       }
-      var le = u(J, 2);
-      B(le, b => {}), v(q), G((b, N, U, ie) => {
+      var le = u(O, 2);
+      B(le, b => {}), v(J), G((b, N, U, ie) => {
         V(l, 1, A({
           "btn btn-lg bg-base-100 w-full text-base": !0,
           "bg-base-content/10 pointer-events-none": !f(a)
-        })), O(l, "href", b), x(S, ` ${N??""}`), V(C, 1, A({
+        })), Y(l, "href", b), x(S, ` ${N??""}`), V(C, 1, A({
           "btn btn-lg bg-base-100 w-full text-base": !0,
           "bg-base-content/10 pointer-events-none": !f(a)
-        })), O(C, "href", U), x(re, ` ${ie??""}`)
-      }, [() => f(a) ? _("google", f(a)) : "#", () => W({
+        })), Y(C, "href", U), x(re, ` ${ie??""}`)
+      }, [() => f(a) ? _("google", f(a)) : "#", () => Q({
         name: "Google"
-      }), () => f(a) ? _("twitch", f(a)) : "#", () => W({
+      }), () => f(a) ? _("twitch", f(a)) : "#", () => Q({
         name: "Twitch"
       })]), w(t, i)
     };

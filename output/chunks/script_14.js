@@ -8,10 +8,10 @@ var ue = (n, e, t) => e in n ? de(n, e, {
   writable: !0,
   value: t
 }) : n[e] = t;
-var m = (n, e, t) => ue(n, typeof e != "symbol" ? e + "" : e, t),
+var f = (n, e, t) => ue(n, typeof e != "symbol" ? e + "" : e, t),
   ge = (n, e, t) => e.has(n) || ne("Cannot " + t);
 var d = (n, e, t) => (ge(n, e, "read from private field"), t ? t.call(n) : e.get(n)),
-  _ = (n, e, t) => e.has(n) ? ne("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(n) : e.set(n, t);
+  h = (n, e, t) => e.has(n) ? ne("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(n) : e.set(n, t);
 import {
   aI as S,
   g as p,
@@ -19,33 +19,33 @@ import {
   aH as Y,
   z as ae,
   u as I
-} from "./apxRKl0u.js";
+} from "./B0_b_ZC0.js";
 import {
-  g as u
+  g
 } from "./C5GsJ62f.js";
-const fe = "true",
-  $n = "https://backend.wplace.live/files",
-  Fn = "0x4AAAAAABpHqZ-6i7uL0nmG",
-  me = "https://backend.wplace.live",
-  Jn = "0x4AAAAAABpqJe8FO0N84q0F";
-var C, O, k, B, L, D;
-class _e {
+const me = "true",
+  Gn = "https://backend.wplace.live/files",
+  Rn = "0x4AAAAAABpHqZ-6i7uL0nmG",
+  fe = "https://backend.wplace.live",
+  jn = "0x4AAAAAABpqJe8FO0N84q0F";
+var M, O, k, B, L, D;
+class he {
   constructor() {
-    _(this, C, S(!1));
-    _(this, O, S(!1));
-    _(this, k, S(Y(pe())));
-    _(this, B, S(!1));
-    _(this, L, S(Y(Date.now())));
-    _(this, D, S(void 0));
+    h(this, M, S(!1));
+    h(this, O, S(!1));
+    h(this, k, S(Y(pe())));
+    h(this, B, S(!1));
+    h(this, L, S(Y(Date.now())));
+    h(this, D, S(void 0));
     setInterval(() => {
       w(d(this, L), Date.now(), !0)
     }, 500)
   }
   get dropletsDialogOpen() {
-    return p(d(this, C))
+    return p(d(this, M))
   }
   set dropletsDialogOpen(e) {
-    w(d(this, C), e, !0)
+    w(d(this, M), e, !0)
   }
   get muted() {
     return p(d(this, O))
@@ -78,8 +78,8 @@ class _e {
     w(d(this, D), e, !0)
   }
 }
-C = new WeakMap, O = new WeakMap, k = new WeakMap, B = new WeakMap, L = new WeakMap, D = new WeakMap;
-const he = new _e;
+M = new WeakMap, O = new WeakMap, k = new WeakMap, B = new WeakMap, L = new WeakMap, D = new WeakMap;
+const _e = new he;
 
 function pe() {
   if (navigator.languages && navigator.languages.length > 0) {
@@ -88,12 +88,12 @@ function pe() {
   }
   return (navigator.language || navigator.userLanguage || navigator.browserLanguage || "en").substring(0, 2)
 }
-const we = fe.toLowerCase() !== "false";
-let f;
+const we = me.toLowerCase() !== "false";
+let m;
 
 function P(n) {
-  const e = f.__externref_table_alloc();
-  return f.__wbindgen_export_2.set(e, n), e
+  const e = m.__externref_table_alloc();
+  return m.__wbindgen_export_2.set(e, n), e
 }
 
 function A(n, e) {
@@ -101,7 +101,7 @@ function A(n, e) {
     return n.apply(this, e)
   } catch (t) {
     const a = P(t);
-    f.__wbindgen_exn_store(a)
+    m.__wbindgen_exn_store(a)
   }
 }
 const ie = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
@@ -115,20 +115,20 @@ const ie = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
 typeof TextDecoder < "u" && ie.decode();
 let x = null;
 
-function H() {
-  return (x === null || x.byteLength === 0) && (x = new Uint8Array(f.memory.buffer)), x
+function V() {
+  return (x === null || x.byteLength === 0) && (x = new Uint8Array(m.memory.buffer)), x
 }
 
-function M(n, e) {
-  return n = n >>> 0, ie.decode(H().subarray(n, n + e))
+function C(n, e) {
+  return n = n >>> 0, ie.decode(V().subarray(n, n + e))
 }
 
-function z(n) {
+function H(n) {
   return n == null
 }
 
-function Kn(n) {
-  f.set_user_id(n)
+function $n(n) {
+  m.set_user_id(n)
 }
 let Z = 0;
 const W = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
@@ -150,11 +150,11 @@ function ce(n, e, t) {
   if (t === void 0) {
     const s = W.encode(n),
       l = e(s.length, 1) >>> 0;
-    return H().subarray(l, l + s.length).set(s), Z = s.length, l
+    return V().subarray(l, l + s.length).set(s), Z = s.length, l
   }
   let a = n.length,
     r = e(a, 1) >>> 0;
-  const o = H();
+  const o = V();
   let i = 0;
   for (; i < a; i++) {
     const s = n.charCodeAt(i);
@@ -163,38 +163,38 @@ function ce(n, e, t) {
   }
   if (i !== a) {
     i !== 0 && (n = n.slice(i)), r = t(r, a, a = i + n.length * 3, 1) >>> 0;
-    const s = H().subarray(r + i, r + a),
+    const s = V().subarray(r + i, r + a),
       l = ye(n, s);
     i += l.written, r = t(r, a, i, 1) >>> 0
   }
   return Z = i, r
 }
 
-function Vn(n) {
-  const e = ce(n, f.__wbindgen_malloc, f.__wbindgen_realloc),
+function Fn(n) {
+  const e = ce(n, m.__wbindgen_malloc, m.__wbindgen_realloc),
     t = Z;
-  f.request_url(e, t)
+  m.request_url(e, t)
 }
 
 function be() {
   let n, e;
   try {
-    const t = f.get_load_payload();
-    return n = t[0], e = t[1], M(t[0], t[1])
+    const t = m.get_load_payload();
+    return n = t[0], e = t[1], C(t[0], t[1])
   } finally {
-    f.__wbindgen_free(n, e, 1)
+    m.__wbindgen_free(n, e, 1)
   }
 }
 
 function Se(n) {
   let e, t;
   try {
-    const a = ce(n, f.__wbindgen_malloc, f.__wbindgen_realloc),
+    const a = ce(n, m.__wbindgen_malloc, m.__wbindgen_realloc),
       r = Z,
-      o = f.get_pawtected_endpoint_payload(a, r);
-    return e = o[0], t = o[1], M(o[0], o[1])
+      o = m.get_pawtected_endpoint_payload(a, r);
+    return e = o[0], t = o[1], C(o[0], o[1])
   } finally {
-    f.__wbindgen_free(e, t, 1)
+    m.__wbindgen_free(e, t, 1)
   }
 }
 async function Te(n, e) {
@@ -239,7 +239,7 @@ function Ee() {
   }, n.wbg.__wbg_new_a12002a7f91c75be = function(e) {
     return new Uint8Array(e)
   }, n.wbg.__wbg_newnoargs_105ed471475aaf50 = function(e, t) {
-    return new Function(M(e, t))
+    return new Function(C(e, t))
   }, n.wbg.__wbg_newwithbyteoffsetandlength_d97e637ebe145a9a = function(e, t, a) {
     return new Uint8Array(e, t >>> 0, a >>> 0)
   }, n.wbg.__wbg_newwithlength_a381634e90c276d4 = function(e) {
@@ -260,22 +260,22 @@ function Ee() {
     e.set(t, a >>> 0)
   }, n.wbg.__wbg_static_accessor_GLOBAL_88a902d13a557d07 = function() {
     const e = typeof global > "u" ? null : global;
-    return z(e) ? 0 : P(e)
+    return H(e) ? 0 : P(e)
   }, n.wbg.__wbg_static_accessor_GLOBAL_THIS_56578be7e9f832b0 = function() {
     const e = typeof globalThis > "u" ? null : globalThis;
-    return z(e) ? 0 : P(e)
+    return H(e) ? 0 : P(e)
   }, n.wbg.__wbg_static_accessor_SELF_37c5d418e4bf5819 = function() {
     const e = typeof self > "u" ? null : self;
-    return z(e) ? 0 : P(e)
+    return H(e) ? 0 : P(e)
   }, n.wbg.__wbg_static_accessor_WINDOW_5de37043a91a9c40 = function() {
     const e = typeof window > "u" ? null : window;
-    return z(e) ? 0 : P(e)
+    return H(e) ? 0 : P(e)
   }, n.wbg.__wbg_subarray_aa9065fa9dc5df96 = function(e, t, a) {
     return e.subarray(t >>> 0, a >>> 0)
   }, n.wbg.__wbg_versions_c01dfd4722a88165 = function(e) {
     return e.versions
   }, n.wbg.__wbindgen_init_externref_table = function() {
-    const e = f.__wbindgen_export_2,
+    const e = m.__wbindgen_export_2,
       t = e.grow(4);
     e.set(0, void 0), e.set(t + 0, void 0), e.set(t + 1, null), e.set(t + 2, !0), e.set(t + 3, !1)
   }, n.wbg.__wbindgen_is_function = function(e) {
@@ -288,19 +288,19 @@ function Ee() {
   }, n.wbg.__wbindgen_is_undefined = function(e) {
     return e === void 0
   }, n.wbg.__wbindgen_memory = function() {
-    return f.memory
+    return m.memory
   }, n.wbg.__wbindgen_string_new = function(e, t) {
-    return M(e, t)
+    return C(e, t)
   }, n.wbg.__wbindgen_throw = function(e, t) {
-    throw new Error(M(e, t))
+    throw new Error(C(e, t))
   }, n
 }
 
 function ve(n, e) {
-  return f = n.exports, Ae.__wbindgen_wasm_module = e, x = null, f.__wbindgen_start(), f
+  return m = n.exports, Ae.__wbindgen_wasm_module = e, x = null, m.__wbindgen_start(), m
 }
 async function Ae(n) {
-  if (f !== void 0) return f;
+  if (m !== void 0) return m;
   typeof n < "u" && (Object.getPrototypeOf(n) === Object.prototype ? {
     module_or_path: n
   } = n : console.warn("using deprecated parameters for the initialization function; pass a single object instead")), typeof n > "u" && (n = new URL("pawtect_wasm_bg.wasm", import.meta.url));
@@ -314,116 +314,113 @@ async function Ae(n) {
 }
 const Ie = () => "Unexpected server error. Try again later.",
   Pe = () => "Erro inesperado do servidor. Tente novamente mais tarde.",
-  c = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Ie() : Pe(),
+  c = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? Ie() : Pe(),
   xe = () => "You need to be logged in to paint",
-  Me = () => "Você precisa estar conectado para pintar",
-  Ce = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? xe() : Me(),
-  Oe = () => "You do not have enough charges to paint. Erase some pixels.",
-  ke = () => "Você não possui tinta suficiente para pintar. Apague alguns pixeis.",
-  Be = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Oe() : ke(),
-  Le = n => `Error while painting: ${n.err}`,
-  De = n => `Erro enquanto pinta: ${n.err}`,
-  Ne = (n, e = {}) => (e.locale ?? u()) === "en" ? Le(n) : De(n),
-  qe = () => "Invalid phone number",
-  Ue = () => "Número de telefone inválido",
-  Ge = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? qe() : Ue(),
-  Re = () => "Phone already used",
-  je = () => "Telefone já usado",
-  $e = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Re() : je(),
-  Fe = () => "You have to wait to resend a code",
-  Je = () => "Você tem de esperar para reenviar um código",
-  Ke = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Fe() : Je(),
-  Ve = () => "Invalid code",
-  ze = () => "Código inválido",
-  He = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Ve() : ze(),
-  We = () => "Operation not allowed. Maybe you have too many favorite locations.",
-  Ye = () => "Operação não permitida. Talvez você tenha muitos locais favoritos.",
-  Ze = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? We() : Ye(),
-  Qe = () => "Location name is too big (max. 128 characters)",
-  Xe = () => "Nome da localização é grande demais (max. 128 caracteres)",
-  et = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Qe() : Xe(),
-  tt = () => "Couldn't complete the purchase. This item does not exist.",
-  nt = () => "Não foi possível concluir a compra. Este item não existe.",
-  at = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? tt() : nt(),
-  rt = () => "You do not have enough droplets to buy this item.",
-  ot = () => "Você não tem gotas suficientes para comprar este item.",
-  st = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? rt() : ot(),
-  it = () => "You already have this item. Please refresh the page.",
-  ct = () => "Você já possui este item. Atualize a página.",
-  lt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? it() : ct(),
-  dt = () => "Alliance name exceeded the maximum number of characters",
-  ut = () => "O nome da aliança excedeu o número máximo de caracteres",
-  gt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? dt() : ut(),
-  ft = () => "Alliance name already taken",
-  mt = () => "Já possui uma aliança com esse nome",
-  _t = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? ft() : mt(),
-  ht = () => "Alliance with empty name",
-  pt = () => "Aliança com nome vazio",
-  wt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? ht() : pt(),
-  yt = () => "You are already in an alliance",
-  bt = () => "Você já está em uma aliança",
-  St = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? yt() : bt(),
-  Tt = () => "You are not allowed to do this",
-  Et = () => "Você não tem permissão para fazer isso",
-  E = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Tt() : Et(),
-  vt = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
-  At = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
-  It = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? vt() : At(),
-  Pt = () => "You or someone in your network is making a lot of requests to the server. Try again later.",
-  xt = () => "Você ou alguém na sua rede está fazendo muitas solicitações ao servidor. Tente novamente mais tarde.",
-  Mt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Pt() : xt(),
-  Ct = () => "No internet access or the servers are offline. Try again later.",
-  Ot = () => "Sem acesso à internet ou os servidores estão fora do ar. Tente novamente mais tarde.",
-  kt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Ct() : Ot(),
-  Bt = () => "We’re currently experiencing high traffic. Some requests may not be processed at this time—please try again later. Thank you for your patience.",
-  Lt = () => "Estamos enfrentando um volume alto de acessos no momento. Algumas solicitações podem não ser processadas agora — por favor, tente novamente mais tarde. Agradecemos a sua compreensão.",
-  Dt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Bt() : Lt(),
-  Nt = () => "Refresh your page to get the latest update",
-  qt = () => "Recarregue sua página para obter as últimas atualizações",
-  Ut = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Nt() : qt(),
-  Gt = () => "Inappropriate content",
-  Rt = () => "Conteúdo inapropriado",
-  jt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Gt() : Rt(),
-  $t = () => "Botting",
-  Ft = () => "Uso de bots",
-  Jt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? $t() : Ft(),
-  Kt = () => "Hate speech",
-  Vt = () => "Discurso de Ódio",
-  zt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Kt() : Vt(),
-  Ht = () => "Griefing",
-  Wt = () => "Griefing",
-  Yt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Ht() : Wt(),
-  Zt = () => "Doxxing",
-  Qt = () => "Doxxing",
-  Xt = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? Zt() : Qt(),
-  en = () => "Leaderboard is temporarily disabled",
-  tn = () => "O ranking está temporariamente desativado",
-  v = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? en() : tn(),
-  nn = () => "Multi-accounting",
-  an = () => "Múltiplas contas",
-  rn = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? nn() : an(),
-  on = () => "Breaking the rules",
-  sn = () => "Quebrar as regras",
-  cn = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? on() : sn(),
-  ln = () => "Your account has been suspended for breaking the rules",
-  dn = () => "Sua conta foi suspensa por quebrar as regras",
-  un = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? ln() : dn(),
-  gn = () => "Your account has been banned for violating the rules",
-  fn = () => "A sua conta foi banida por quebrar as regras",
-  mn = (n = {}, e = {}) => (e.locale ?? u()) === "en" ? gn() : fn(),
-  _n = n => `Your account has been suspended out until ${n.until}`,
-  hn = n => `A sua conta está suspensa até ${n.until}`,
-  pn = (n, e = {}) => (e.locale ?? u()) === "en" ? _n(n) : hn(n),
-  zn = {
-    griefing: Yt(),
-    "multi-accounting": rn(),
-    "hate-speech": zt(),
-    bot: Jt(),
-    doxxing: Xt(),
-    "inappropriate-content": jt(),
-    other: cn()
+  Ce = () => "Você precisa estar conectado para pintar",
+  Me = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? xe() : Ce(),
+  Oe = n => `Error while painting: ${n.err}`,
+  ke = n => `Erro enquanto pinta: ${n.err}`,
+  Be = (n, e = {}) => (e.locale ?? g()) === "en" ? Oe(n) : ke(n),
+  Le = () => "Invalid phone number",
+  De = () => "Número de telefone inválido",
+  Ne = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? Le() : De(),
+  qe = () => "Phone already used",
+  Ue = () => "Telefone já usado",
+  Ge = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? qe() : Ue(),
+  Re = () => "You have to wait to resend a code",
+  je = () => "Você tem de esperar para reenviar um código",
+  $e = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? Re() : je(),
+  Fe = () => "Invalid code",
+  Je = () => "Código inválido",
+  Ke = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? Fe() : Je(),
+  ze = () => "Operation not allowed. Maybe you have too many favorite locations.",
+  He = () => "Operação não permitida. Talvez você tenha muitos locais favoritos.",
+  Ve = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? ze() : He(),
+  We = () => "Location name is too big (max. 128 characters)",
+  Ye = () => "Nome da localização é grande demais (max. 128 caracteres)",
+  Ze = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? We() : Ye(),
+  Qe = () => "Couldn't complete the purchase. This item does not exist.",
+  Xe = () => "Não foi possível concluir a compra. Este item não existe.",
+  et = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? Qe() : Xe(),
+  tt = () => "You do not have enough droplets to buy this item.",
+  nt = () => "Você não tem gotas suficientes para comprar este item.",
+  at = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? tt() : nt(),
+  rt = () => "You already have this item. Please refresh the page.",
+  ot = () => "Você já possui este item. Atualize a página.",
+  st = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? rt() : ot(),
+  it = () => "Alliance name exceeded the maximum number of characters",
+  ct = () => "O nome da aliança excedeu o número máximo de caracteres",
+  lt = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? it() : ct(),
+  dt = () => "Alliance name already taken",
+  ut = () => "Já possui uma aliança com esse nome",
+  gt = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? dt() : ut(),
+  mt = () => "Alliance with empty name",
+  ft = () => "Aliança com nome vazio",
+  ht = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? mt() : ft(),
+  _t = () => "You are already in an alliance",
+  pt = () => "Você já está em uma aliança",
+  wt = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? _t() : pt(),
+  yt = () => "You are not allowed to do this",
+  bt = () => "Você não tem permissão para fazer isso",
+  E = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? yt() : bt(),
+  St = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
+  Tt = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
+  Et = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? St() : Tt(),
+  vt = () => "You or someone in your network is making a lot of requests to the server. Try again later.",
+  At = () => "Você ou alguém na sua rede está fazendo muitas solicitações ao servidor. Tente novamente mais tarde.",
+  It = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? vt() : At(),
+  Pt = () => "No internet access or the servers are offline. Try again later.",
+  xt = () => "Sem acesso à internet ou os servidores estão fora do ar. Tente novamente mais tarde.",
+  Ct = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? Pt() : xt(),
+  Mt = () => "We’re currently experiencing high traffic. Some requests may not be processed at this time—please try again later. Thank you for your patience.",
+  Ot = () => "Estamos enfrentando um volume alto de acessos no momento. Algumas solicitações podem não ser processadas agora — por favor, tente novamente mais tarde. Agradecemos a sua compreensão.",
+  kt = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? Mt() : Ot(),
+  Bt = () => "Refresh your page to get the latest update",
+  Lt = () => "Recarregue sua página para obter as últimas atualizações",
+  Dt = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? Bt() : Lt(),
+  Nt = () => "Inappropriate content",
+  qt = () => "Conteúdo inapropriado",
+  Ut = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? Nt() : qt(),
+  Gt = () => "Botting",
+  Rt = () => "Uso de bots",
+  jt = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? Gt() : Rt(),
+  $t = () => "Hate speech",
+  Ft = () => "Discurso de Ódio",
+  Jt = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? $t() : Ft(),
+  Kt = () => "Griefing",
+  zt = () => "Griefing",
+  Ht = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? Kt() : zt(),
+  Vt = () => "Doxxing",
+  Wt = () => "Doxxing",
+  Yt = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? Vt() : Wt(),
+  Zt = () => "Leaderboard is temporarily disabled",
+  Qt = () => "O ranking está temporariamente desativado",
+  v = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? Zt() : Qt(),
+  Xt = () => "Multi-accounting",
+  en = () => "Múltiplas contas",
+  tn = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? Xt() : en(),
+  nn = () => "Breaking the rules",
+  an = () => "Quebrar as regras",
+  rn = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? nn() : an(),
+  on = () => "Your account has been suspended for breaking the rules",
+  sn = () => "Sua conta foi suspensa por quebrar as regras",
+  cn = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? on() : sn(),
+  ln = () => "Your account has been banned for violating the rules",
+  dn = () => "A sua conta foi banida por quebrar as regras",
+  un = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? ln() : dn(),
+  gn = n => `Your account has been suspended out until ${n.until}`,
+  mn = n => `A sua conta está suspensa até ${n.until}`,
+  fn = (n, e = {}) => (e.locale ?? g()) === "en" ? gn(n) : mn(n),
+  Jn = {
+    griefing: Ht(),
+    "multi-accounting": tn(),
+    "hate-speech": Jt(),
+    bot: jt(),
+    doxxing: Yt(),
+    "inappropriate-content": Ut(),
+    other: rn()
   },
-  Hn = {
+  Kn = {
     doxxing: "text-red-600",
     "hate-speech": "text-red-600",
     "inappropriate-content": "text-amber-600",
@@ -442,15 +439,15 @@ const Ie = () => "Unexpected server error. Try again later.",
     other: 6
   };
 
-function wn(n) {
+function hn(n) {
   const e = atob(n),
     t = new Uint8Array(e.length);
   for (let a = 0; a < e.length; a++) t[a] = e.charCodeAt(a);
   return t
 }
-class yn {
+class _n {
   constructor(e) {
-    m(this, "bytes");
+    f(this, "bytes");
     this.bytes = e ?? new Uint8Array
   }
   set(e, t) {
@@ -473,24 +470,24 @@ class yn {
   }
 }
 
-function Wn(...n) {
+function zn(...n) {
   return n.filter(Boolean).join(" ")
 }
-const bn = typeof document < "u";
+const pn = typeof document < "u";
 let oe = 0;
 var N, q, U;
-class Sn {
+class wn {
   constructor() {
-    _(this, N, S(Y([])));
-    _(this, q, S(Y([])));
-    _(this, U, e => {
+    h(this, N, S(Y([])));
+    h(this, q, S(Y([])));
+    h(this, U, e => {
       const t = this.toasts.findIndex(a => a.id === e);
       return t === -1 ? null : t
     });
-    m(this, "addToast", e => {
-      bn && this.toasts.unshift(e)
+    f(this, "addToast", e => {
+      pn && this.toasts.unshift(e)
     });
-    m(this, "updateToast", ({
+    f(this, "updateToast", ({
       id: e,
       data: t,
       type: a,
@@ -507,14 +504,14 @@ class Sn {
         updated: !0
       }
     });
-    m(this, "create", e => {
+    f(this, "create", e => {
       var s;
       const {
         message: t,
         ...a
       } = e, r = typeof(e == null ? void 0 : e.id) == "number" || e.id && ((s = e.id) == null ? void 0 : s.length) > 0 ? e.id : oe++, o = e.dismissable === void 0 ? !0 : e.dismissable, i = e.type === void 0 ? "default" : e.type;
       return ae(() => {
-        this.toasts.find(g => g.id === r) ? this.updateToast({
+        this.toasts.find(u => u.id === r) ? this.updateToast({
           id: r,
           data: e,
           type: i,
@@ -529,7 +526,7 @@ class Sn {
         })
       }), r
     });
-    m(this, "dismiss", e => (ae(() => {
+    f(this, "dismiss", e => (ae(() => {
       if (e === void 0) {
         this.toasts = this.toasts.map(a => ({
           ...a,
@@ -543,7 +540,7 @@ class Sn {
         dismiss: !0
       })
     }), e));
-    m(this, "remove", e => {
+    f(this, "remove", e => {
       if (e === void 0) {
         this.toasts = [];
         return
@@ -551,37 +548,37 @@ class Sn {
       const t = d(this, U).call(this, e);
       if (t !== null) return this.toasts.splice(t, 1), e
     });
-    m(this, "message", (e, t) => this.create({
+    f(this, "message", (e, t) => this.create({
       ...t,
       type: "default",
       message: e
     }));
-    m(this, "error", (e, t) => this.create({
+    f(this, "error", (e, t) => this.create({
       ...t,
       type: "error",
       message: e
     }));
-    m(this, "success", (e, t) => this.create({
+    f(this, "success", (e, t) => this.create({
       ...t,
       type: "success",
       message: e
     }));
-    m(this, "info", (e, t) => this.create({
+    f(this, "info", (e, t) => this.create({
       ...t,
       type: "info",
       message: e
     }));
-    m(this, "warning", (e, t) => this.create({
+    f(this, "warning", (e, t) => this.create({
       ...t,
       type: "warning",
       message: e
     }));
-    m(this, "loading", (e, t) => this.create({
+    f(this, "loading", (e, t) => this.create({
       ...t,
       type: "loading",
       message: e
     }));
-    m(this, "promise", (e, t) => {
+    f(this, "promise", (e, t) => {
       if (!t) return;
       let a;
       t.loading !== void 0 && (a = this.create({
@@ -595,7 +592,7 @@ class Sn {
       return r.then(i => {
         if (typeof i == "object" && i && "ok" in i && typeof i.ok == "boolean" && !i.ok) {
           o = !1;
-          const s = Tn(i);
+          const s = yn(i);
           this.create({
             id: a,
             type: "error",
@@ -625,7 +622,7 @@ class Sn {
         o && (this.dismiss(a), a = void 0), (i = t.finally) == null || i.call(t)
       }), a
     });
-    m(this, "custom", (e, t) => {
+    f(this, "custom", (e, t) => {
       const a = (t == null ? void 0 : t.id) || oe++;
       return this.create({
         component: e,
@@ -633,10 +630,10 @@ class Sn {
         ...t
       }), a
     });
-    m(this, "removeHeight", e => {
+    f(this, "removeHeight", e => {
       this.heights = this.heights.filter(t => t.toastId !== e)
     });
-    m(this, "setHeight", e => {
+    f(this, "setHeight", e => {
       const t = d(this, U).call(this, e.toastId);
       if (t === null) {
         this.heights.push(e);
@@ -644,7 +641,7 @@ class Sn {
       }
       this.heights[t] = e
     });
-    m(this, "reset", () => {
+    f(this, "reset", () => {
       this.toasts = [], this.heights = []
     })
   }
@@ -663,29 +660,29 @@ class Sn {
 }
 N = new WeakMap, q = new WeakMap, U = new WeakMap;
 
-function Tn(n) {
+function yn(n) {
   return n && typeof n == "object" && "status" in n ? `HTTP error! Status: ${n.status}` : `Error! ${n}`
 }
-const b = new Sn;
+const b = new wn;
 
-function En(n, e) {
+function bn(n, e) {
   return b.create({
     message: n,
     ...e
   })
 }
 var Q;
-class Yn {
+class Hn {
   constructor() {
-    _(this, Q, I(() => b.toasts.filter(e => !e.dismiss)))
+    h(this, Q, I(() => b.toasts.filter(e => !e.dismiss)))
   }
   get toasts() {
     return p(d(this, Q))
   }
 }
 Q = new WeakMap;
-const vn = En,
-  An = Object.assign(vn, {
+const Sn = bn,
+  Tn = Object.assign(Sn, {
     success: b.success,
     info: b.info,
     warning: b.warning,
@@ -698,25 +695,25 @@ const vn = En,
     getActiveToasts: () => b.toasts.filter(n => !n.dismiss)
   });
 var G, R, j, $, F, J, K;
-class In {
+class En {
   constructor() {
-    m(this, "channel", new BroadcastChannel("user-channel"));
-    _(this, G, S());
-    _(this, R, S(!0));
-    _(this, j, S(Date.now()));
-    _(this, $, I(() => {
+    f(this, "channel", new BroadcastChannel("user-channel"));
+    h(this, G, S());
+    h(this, R, S(!0));
+    h(this, j, S(Date.now()));
+    h(this, $, I(() => {
       if (!this.data) return;
       const e = this.data.charges;
       if (e.count > e.max) return e.count;
-      const t = e.count + Math.max((he.now - this.lastFetch) / e.cooldownMs, 0);
+      const t = e.count + Math.max((_e.now - this.lastFetch) / e.cooldownMs, 0);
       return Math.min(e.max, t)
     }));
-    _(this, F, I(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
-    _(this, J, I(() => {
+    h(this, F, I(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
+    h(this, J, I(() => {
       var e;
-      return new yn(wn(((e = this.data) == null ? void 0 : e.flagsBitmap) ?? "AA=="))
+      return new _n(hn(((e = this.data) == null ? void 0 : e.flagsBitmap) ?? "AA=="))
     }));
-    _(this, K, I(() => {
+    h(this, K, I(() => {
       var t;
       if (!((t = this.data) != null && t.timeoutUntil)) return;
       const e = new Date(this.data.timeoutUntil);
@@ -776,7 +773,7 @@ class In {
         data: this.data
       }))
     } catch (e) {
-      console.error(e), An.warning(kt(), {
+      console.error(e), Tn.warning(Ct(), {
         duration: 1e4
       })
     } finally {
@@ -794,14 +791,14 @@ class In {
   }
 }
 G = new WeakMap, R = new WeakMap, j = new WeakMap, $ = new WeakMap, F = new WeakMap, J = new WeakMap, K = new WeakMap;
-const Pn = new In;
-class h extends Error {
+const vn = new En;
+class _ extends Error {
   constructor(e, t) {
     super(e), this.message = e, this.status = t
   }
 }
 
-function xn(n, e) {
+function An(n, e) {
   const t = {};
   for (const a of n) {
     const r = e(a);
@@ -811,7 +808,7 @@ function xn(n, e) {
   return t
 }
 
-function Zn(n, e) {
+function Vn(n, e) {
   const t = {};
   for (const a of n) {
     const r = e(a);
@@ -819,13 +816,13 @@ function Zn(n, e) {
   }
   return t
 }
-const Mn = [{
+const In = [{
     tileSize: 1e3,
     zoom: 11
   }],
-  Cn = 4,
-  On = 6e3,
-  kn = [{
+  Pn = 4,
+  xn = 6e3,
+  Cn = [{
     name: "Transparent",
     rgb: [0, 0, 0]
   }, {
@@ -1018,10 +1015,10 @@ const Mn = [{
     name: "Light Stone",
     rgb: [205, 197, 158]
   }],
-  Bn = {
+  Mn = {
     needsPhoneVerification: "needs_phone_verification"
   },
-  Ln = {
+  On = {
     Droplet: {},
     "Max. Charge": {},
     "Paint Charge": {},
@@ -1029,7 +1026,7 @@ const Mn = [{
     Flag: {},
     "Profile Picture": {}
   },
-  Dn = {
+  kn = {
     10: {
       name: "25,000 Droplets",
       price: 500,
@@ -1136,47 +1133,47 @@ const Mn = [{
       }]
     }
   },
-  Nn = JSON.parse(`[{"id":1,"name":"Afghanistan","code":"AF","flag":"🇦🇫"},{"id":2,"name":"Albania","code":"AL","flag":"🇦🇱"},{"id":3,"name":"Algeria","code":"DZ","flag":"🇩🇿"},{"id":4,"name":"American Samoa","code":"AS","flag":"🇦🇸"},{"id":5,"name":"Andorra","code":"AD","flag":"🇦🇩"},{"id":6,"name":"Angola","code":"AO","flag":"🇦🇴"},{"id":7,"name":"Anguilla","code":"AI","flag":"🇦🇮"},{"id":8,"name":"Antarctica","code":"AQ","flag":"🇦🇶"},{"id":9,"name":"Antigua and Barbuda","code":"AG","flag":"🇦🇬"},{"id":10,"name":"Argentina","code":"AR","flag":"🇦🇷"},{"id":11,"name":"Armenia","code":"AM","flag":"🇦🇲"},{"id":12,"name":"Aruba","code":"AW","flag":"🇦🇼"},{"id":13,"name":"Australia","code":"AU","flag":"🇦🇺"},{"id":14,"name":"Austria","code":"AT","flag":"🇦🇹"},{"id":15,"name":"Azerbaijan","code":"AZ","flag":"🇦🇿"},{"id":16,"name":"Bahamas","code":"BS","flag":"🇧🇸"},{"id":17,"name":"Bahrain","code":"BH","flag":"🇧🇭"},{"id":18,"name":"Bangladesh","code":"BD","flag":"🇧🇩"},{"id":19,"name":"Barbados","code":"BB","flag":"🇧🇧"},{"id":20,"name":"Belarus","code":"BY","flag":"🇧🇾"},{"id":21,"name":"Belgium","code":"BE","flag":"🇧🇪"},{"id":22,"name":"Belize","code":"BZ","flag":"🇧🇿"},{"id":23,"name":"Benin","code":"BJ","flag":"🇧🇯"},{"id":24,"name":"Bermuda","code":"BM","flag":"🇧🇲"},{"id":25,"name":"Bhutan","code":"BT","flag":"🇧🇹"},{"id":26,"name":"Bolivia","code":"BO","flag":"🇧🇴"},{"id":27,"name":"Bonaire","code":"BQ","flag":"🇧🇶"},{"id":28,"name":"Bosnia and Herzegovina","code":"BA","flag":"🇧🇦"},{"id":29,"name":"Botswana","code":"BW","flag":"🇧🇼"},{"id":30,"name":"Bouvet Island","code":"BV","flag":"🇧🇻"},{"id":31,"name":"Brazil","code":"BR","flag":"🇧🇷"},{"id":32,"name":"British Indian Ocean Territory","code":"IO","flag":"🇮🇴"},{"id":33,"name":"Brunei Darussalam","code":"BN","flag":"🇧🇳"},{"id":34,"name":"Bulgaria","code":"BG","flag":"🇧🇬"},{"id":35,"name":"Burkina Faso","code":"BF","flag":"🇧🇫"},{"id":36,"name":"Burundi","code":"BI","flag":"🇧🇮"},{"id":37,"name":"Cabo Verde","code":"CV","flag":"🇨🇻"},{"id":38,"name":"Cambodia","code":"KH","flag":"🇰🇭"},{"id":39,"name":"Cameroon","code":"CM","flag":"🇨🇲"},{"id":40,"name":"Canada","code":"CA","flag":"🇨🇦"},{"id":41,"name":"Cayman Islands","code":"KY","flag":"🇰🇾"},{"id":42,"name":"Central African Republic","code":"CF","flag":"🇨🇫"},{"id":43,"name":"Chad","code":"TD","flag":"🇹🇩"},{"id":44,"name":"Chile","code":"CL","flag":"🇨🇱"},{"id":45,"name":"China","code":"CN","flag":"🇨🇳"},{"id":46,"name":"Christmas Island","code":"CX","flag":"🇨🇽"},{"id":47,"name":"Cocos (Keeling) Islands","code":"CC","flag":"🇨🇨"},{"id":48,"name":"Colombia","code":"CO","flag":"🇨🇴"},{"id":49,"name":"Comoros","code":"KM","flag":"🇰🇲"},{"id":50,"name":"Congo","code":"CG","flag":"🇨🇬"},{"id":51,"name":"Cook Islands","code":"CK","flag":"🇨🇰"},{"id":52,"name":"Costa Rica","code":"CR","flag":"🇨🇷"},{"id":53,"name":"Croatia","code":"HR","flag":"🇭🇷"},{"id":54,"name":"Cuba","code":"CU","flag":"🇨🇺"},{"id":55,"name":"Curaçao","code":"CW","flag":"🇨🇼"},{"id":56,"name":"Cyprus","code":"CY","flag":"🇨🇾"},{"id":57,"name":"Czechia","code":"CZ","flag":"🇨🇿"},{"id":58,"name":"Côte d'Ivoire","code":"CI","flag":"🇨🇮"},{"id":59,"name":"Denmark","code":"DK","flag":"🇩🇰"},{"id":60,"name":"Djibouti","code":"DJ","flag":"🇩🇯"},{"id":61,"name":"Dominica","code":"DM","flag":"🇩🇲"},{"id":62,"name":"Dominican Republic","code":"DO","flag":"🇩🇴"},{"id":63,"name":"Ecuador","code":"EC","flag":"🇪🇨"},{"id":64,"name":"Egypt","code":"EG","flag":"🇪🇬"},{"id":65,"name":"El Salvador","code":"SV","flag":"🇸🇻"},{"id":66,"name":"Equatorial Guinea","code":"GQ","flag":"🇬🇶"},{"id":67,"name":"Eritrea","code":"ER","flag":"🇪🇷"},{"id":68,"name":"Estonia","code":"EE","flag":"🇪🇪"},{"id":69,"name":"Eswatini","code":"SZ","flag":"🇸🇿"},{"id":70,"name":"Ethiopia","code":"ET","flag":"🇪🇹"},{"id":71,"name":"Falkland Islands (Malvinas)","code":"FK","flag":"🇫🇰"},{"id":72,"name":"Faroe Islands","code":"FO","flag":"🇫🇴"},{"id":73,"name":"Fiji","code":"FJ","flag":"🇫🇯"},{"id":74,"name":"Finland","code":"FI","flag":"🇫🇮"},{"id":75,"name":"France","code":"FR","flag":"🇫🇷"},{"id":76,"name":"French Guiana","code":"GF","flag":"🇬🇫"},{"id":77,"name":"French Polynesia","code":"PF","flag":"🇵🇫"},{"id":78,"name":"French Southern Territories","code":"TF","flag":"🇹🇫"},{"id":79,"name":"Gabon","code":"GA","flag":"🇬🇦"},{"id":80,"name":"Gambia","code":"GM","flag":"🇬🇲"},{"id":81,"name":"Georgia","code":"GE","flag":"🇬🇪"},{"id":82,"name":"Germany","code":"DE","flag":"🇩🇪"},{"id":83,"name":"Ghana","code":"GH","flag":"🇬🇭"},{"id":84,"name":"Gibraltar","code":"GI","flag":"🇬🇮"},{"id":85,"name":"Greece","code":"GR","flag":"🇬🇷"},{"id":86,"name":"Greenland","code":"GL","flag":"🇬🇱"},{"id":87,"name":"Grenada","code":"GD","flag":"🇬🇩"},{"id":88,"name":"Guadeloupe","code":"GP","flag":"🇬🇵"},{"id":89,"name":"Guam","code":"GU","flag":"🇬🇺"},{"id":90,"name":"Guatemala","code":"GT","flag":"🇬🇹"},{"id":91,"name":"Guernsey","code":"GG","flag":"🇬🇬"},{"id":92,"name":"Guinea","code":"GN","flag":"🇬🇳"},{"id":93,"name":"Guinea-Bissau","code":"GW","flag":"🇬🇼"},{"id":94,"name":"Guyana","code":"GY","flag":"🇬🇾"},{"id":95,"name":"Haiti","code":"HT","flag":"🇭🇹"},{"id":96,"name":"Heard Island and McDonald Islands","code":"HM","flag":"🇭🇲"},{"id":97,"name":"Honduras","code":"HN","flag":"🇭🇳"},{"id":98,"name":"Hong Kong","code":"HK","flag":"🇭🇰"},{"id":99,"name":"Hungary","code":"HU","flag":"🇭🇺"},{"id":100,"name":"Iceland","code":"IS","flag":"🇮🇸"},{"id":101,"name":"India","code":"IN","flag":"🇮🇳"},{"id":102,"name":"Indonesia","code":"ID","flag":"🇮🇩"},{"id":103,"name":"Iran","code":"IR","flag":"🇮🇷"},{"id":104,"name":"Iraq","code":"IQ","flag":"🇮🇶"},{"id":105,"name":"Ireland","code":"IE","flag":"🇮🇪"},{"id":106,"name":"Isle of Man","code":"IM","flag":"🇮🇲"},{"id":107,"name":"Israel","code":"IL","flag":"🇮🇱"},{"id":108,"name":"Italy","code":"IT","flag":"🇮🇹"},{"id":109,"name":"Jamaica","code":"JM","flag":"🇯🇲"},{"id":110,"name":"Japan","code":"JP","flag":"🇯🇵"},{"id":111,"name":"Jersey","code":"JE","flag":"🇯🇪"},{"id":112,"name":"Jordan","code":"JO","flag":"🇯🇴"},{"id":113,"name":"Kazakhstan","code":"KZ","flag":"🇰🇿"},{"id":114,"name":"Kenya","code":"KE","flag":"🇰🇪"},{"id":115,"name":"Kiribati","code":"KI","flag":"🇰🇮"},{"id":116,"name":"Kosovo","code":"XK","flag":"🇽🇰"},{"id":117,"name":"Kuwait","code":"KW","flag":"🇰🇼"},{"id":118,"name":"Kyrgyzstan","code":"KG","flag":"🇰🇬"},{"id":119,"name":"Laos","code":"LA","flag":"🇱🇦"},{"id":120,"name":"Latvia","code":"LV","flag":"🇱🇻"},{"id":121,"name":"Lebanon","code":"LB","flag":"🇱🇧"},{"id":122,"name":"Lesotho","code":"LS","flag":"🇱🇸"},{"id":123,"name":"Liberia","code":"LR","flag":"🇱🇷"},{"id":124,"name":"Libya","code":"LY","flag":"🇱🇾"},{"id":125,"name":"Liechtenstein","code":"LI","flag":"🇱🇮"},{"id":126,"name":"Lithuania","code":"LT","flag":"🇱🇹"},{"id":127,"name":"Luxembourg","code":"LU","flag":"🇱🇺"},{"id":128,"name":"Macao","code":"MO","flag":"🇲🇴"},{"id":129,"name":"Madagascar","code":"MG","flag":"🇲🇬"},{"id":130,"name":"Malawi","code":"MW","flag":"🇲🇼"},{"id":131,"name":"Malaysia","code":"MY","flag":"🇲🇾"},{"id":132,"name":"Maldives","code":"MV","flag":"🇲🇻"},{"id":133,"name":"Mali","code":"ML","flag":"🇲🇱"},{"id":134,"name":"Malta","code":"MT","flag":"🇲🇹"},{"id":135,"name":"Marshall Islands","code":"MH","flag":"🇲🇭"},{"id":136,"name":"Martinique","code":"MQ","flag":"🇲🇶"},{"id":137,"name":"Mauritania","code":"MR","flag":"🇲🇷"},{"id":138,"name":"Mauritius","code":"MU","flag":"🇲🇺"},{"id":139,"name":"Mayotte","code":"YT","flag":"🇾🇹"},{"id":140,"name":"Mexico","code":"MX","flag":"🇲🇽"},{"id":141,"name":"Micronesia","code":"FM","flag":"🇫🇲"},{"id":142,"name":"Moldova","code":"MD","flag":"🇲🇩"},{"id":143,"name":"Monaco","code":"MC","flag":"🇲🇨"},{"id":144,"name":"Mongolia","code":"MN","flag":"🇲🇳"},{"id":145,"name":"Montenegro","code":"ME","flag":"🇲🇪"},{"id":146,"name":"Montserrat","code":"MS","flag":"🇲🇸"},{"id":147,"name":"Morocco","code":"MA","flag":"🇲🇦"},{"id":148,"name":"Mozambique","code":"MZ","flag":"🇲🇿"},{"id":149,"name":"Myanmar","code":"MM","flag":"🇲🇲"},{"id":150,"name":"Namibia","code":"NA","flag":"🇳🇦"},{"id":151,"name":"Nauru","code":"NR","flag":"🇳🇷"},{"id":152,"name":"Nepal","code":"NP","flag":"🇳🇵"},{"id":153,"name":"Netherlands","code":"NL","flag":"🇳🇱"},{"id":154,"name":"New Caledonia","code":"NC","flag":"🇳🇨"},{"id":155,"name":"New Zealand","code":"NZ","flag":"🇳🇿"},{"id":156,"name":"Nicaragua","code":"NI","flag":"🇳🇮"},{"id":157,"name":"Niger","code":"NE","flag":"🇳🇪"},{"id":158,"name":"Nigeria","code":"NG","flag":"🇳🇬"},{"id":159,"name":"Niue","code":"NU","flag":"🇳🇺"},{"id":160,"name":"Norfolk Island","code":"NF","flag":"🇳🇫"},{"id":161,"name":"North Korea","code":"KP","flag":"🇰🇵"},{"id":162,"name":"North Macedonia","code":"MK","flag":"🇲🇰"},{"id":163,"name":"Northern Mariana Islands","code":"MP","flag":"🇲🇵"},{"id":164,"name":"Norway","code":"NO","flag":"🇳🇴"},{"id":165,"name":"Oman","code":"OM","flag":"🇴🇲"},{"id":166,"name":"Pakistan","code":"PK","flag":"🇵🇰"},{"id":167,"name":"Palau","code":"PW","flag":"🇵🇼"},{"id":168,"name":"Palestine","code":"PS","flag":"🇵🇸"},{"id":169,"name":"Panama","code":"PA","flag":"🇵🇦"},{"id":170,"name":"Papua New Guinea","code":"PG","flag":"🇵🇬"},{"id":171,"name":"Paraguay","code":"PY","flag":"🇵🇾"},{"id":172,"name":"Peru","code":"PE","flag":"🇵🇪"},{"id":173,"name":"Philippines","code":"PH","flag":"🇵🇭"},{"id":174,"name":"Pitcairn","code":"PN","flag":"🇵🇳"},{"id":175,"name":"Poland","code":"PL","flag":"🇵🇱"},{"id":176,"name":"Portugal","code":"PT","flag":"🇵🇹"},{"id":177,"name":"Puerto Rico","code":"PR","flag":"🇵🇷"},{"id":178,"name":"Qatar","code":"QA","flag":"🇶🇦"},{"id":179,"name":"Republic of the Congo","code":"CD","flag":"🇨🇩"},{"id":180,"name":"Romania","code":"RO","flag":"🇷🇴"},{"id":181,"name":"Russia","code":"RU","flag":"🇷🇺"},{"id":182,"name":"Rwanda","code":"RW","flag":"🇷🇼"},{"id":183,"name":"Réunion","code":"RE","flag":"🇷🇪"},{"id":184,"name":"Saint Barthélemy","code":"BL","flag":"🇧🇱"},{"id":185,"name":"Saint Helena","code":"SH","flag":"🇸🇭"},{"id":186,"name":"Saint Kitts and Nevis","code":"KN","flag":"🇰🇳"},{"id":187,"name":"Saint Lucia","code":"LC","flag":"🇱🇨"},{"id":188,"name":"Saint Martin (French part)","code":"MF","flag":"🇲🇫"},{"id":189,"name":"Saint Pierre and Miquelon","code":"PM","flag":"🇵🇲"},{"id":190,"name":"Saint Vincent and the Grenadines","code":"VC","flag":"🇻🇨"},{"id":191,"name":"Samoa","code":"WS","flag":"🇼🇸"},{"id":192,"name":"San Marino","code":"SM","flag":"🇸🇲"},{"id":193,"name":"Sao Tome and Principe","code":"ST","flag":"🇸🇹"},{"id":194,"name":"Saudi Arabia","code":"SA","flag":"🇸🇦"},{"id":195,"name":"Senegal","code":"SN","flag":"🇸🇳"},{"id":196,"name":"Serbia","code":"RS","flag":"🇷🇸"},{"id":197,"name":"Seychelles","code":"SC","flag":"🇸🇨"},{"id":198,"name":"Sierra Leone","code":"SL","flag":"🇸🇱"},{"id":199,"name":"Singapore","code":"SG","flag":"🇸🇬"},{"id":200,"name":"Sint Maarten (Dutch part)","code":"SX","flag":"🇸🇽"},{"id":201,"name":"Slovakia","code":"SK","flag":"🇸🇰"},{"id":202,"name":"Slovenia","code":"SI","flag":"🇸🇮"},{"id":203,"name":"Solomon Islands","code":"SB","flag":"🇸🇧"},{"id":204,"name":"Somalia","code":"SO","flag":"🇸🇴"},{"id":205,"name":"South Africa","code":"ZA","flag":"🇿🇦"},{"id":206,"name":"South Georgia and the South Sandwich Islands","code":"GS","flag":"🇬🇸"},{"id":207,"name":"South Korea","code":"KR","flag":"🇰🇷"},{"id":208,"name":"South Sudan","code":"SS","flag":"🇸🇸"},{"id":209,"name":"Spain","code":"ES","flag":"🇪🇸"},{"id":210,"name":"Sri Lanka","code":"LK","flag":"🇱🇰"},{"id":211,"name":"Sudan","code":"SD","flag":"🇸🇩"},{"id":212,"name":"Suriname","code":"SR","flag":"🇸🇷"},{"id":213,"name":"Svalbard and Jan Mayen","code":"SJ","flag":"🇸🇯"},{"id":214,"name":"Sweden","code":"SE","flag":"🇸🇪"},{"id":215,"name":"Switzerland","code":"CH","flag":"🇨🇭"},{"id":216,"name":"Syrian Arab Republic","code":"SY","flag":"🇸🇾"},{"id":217,"name":"Taiwan","code":"TW","flag":"🇹🇼"},{"id":218,"name":"Tajikistan","code":"TJ","flag":"🇹🇯"},{"id":219,"name":"Tanzania","code":"TZ","flag":"🇹🇿"},{"id":220,"name":"Thailand","code":"TH","flag":"🇹🇭"},{"id":221,"name":"Timor-Leste","code":"TL","flag":"🇹🇱"},{"id":222,"name":"Togo","code":"TG","flag":"🇹🇬"},{"id":223,"name":"Tokelau","code":"TK","flag":"🇹🇰"},{"id":224,"name":"Tonga","code":"TO","flag":"🇹🇴"},{"id":225,"name":"Trinidad and Tobago","code":"TT","flag":"🇹🇹"},{"id":226,"name":"Tunisia","code":"TN","flag":"🇹🇳"},{"id":227,"name":"Turkmenistan","code":"TM","flag":"🇹🇲"},{"id":228,"name":"Turks and Caicos Islands","code":"TC","flag":"🇹🇨"},{"id":229,"name":"Tuvalu","code":"TV","flag":"🇹🇻"},{"id":230,"name":"Türkiye","code":"TR","flag":"🇹🇷"},{"id":231,"name":"Uganda","code":"UG","flag":"🇺🇬"},{"id":232,"name":"Ukraine","code":"UA","flag":"🇺🇦"},{"id":233,"name":"United Arab Emirates","code":"AE","flag":"🇦🇪"},{"id":234,"name":"United Kingdom","code":"GB","flag":"🇬🇧"},{"id":235,"name":"United States","code":"US","flag":"🇺🇸"},{"id":236,"name":"United States Minor Outlying Islands","code":"UM","flag":"🇺🇲"},{"id":237,"name":"Uruguay","code":"UY","flag":"🇺🇾"},{"id":238,"name":"Uzbekistan","code":"UZ","flag":"🇺🇿"},{"id":239,"name":"Vanuatu","code":"VU","flag":"🇻🇺"},{"id":240,"name":"Vatican City","code":"VA","flag":"🇻🇦"},{"id":241,"name":"Venezuela","code":"VE","flag":"🇻🇪"},{"id":242,"name":"Viet Nam","code":"VN","flag":"🇻🇳"},{"id":243,"name":"Virgin Islands","code":"VG","flag":"🇻🇬"},{"id":244,"name":"Virgin Islands","code":"VI","flag":"🇻🇮"},{"id":245,"name":"Wallis and Futuna","code":"WF","flag":"🇼🇫"},{"id":246,"name":"Western Sahara","code":"EH","flag":"🇪🇭"},{"id":247,"name":"Yemen","code":"YE","flag":"🇾🇪"},{"id":248,"name":"Zambia","code":"ZM","flag":"🇿🇲"},{"id":249,"name":"Zimbabwe","code":"ZW","flag":"🇿🇼"},{"id":250,"name":"Åland Islands","code":"AX","flag":"🇦🇽"},{"id":251,"name":"Canary Islands","code":"IC","flag":"🇮🇨"}]`),
+  Bn = JSON.parse(`[{"id":1,"name":"Afghanistan","code":"AF","flag":"🇦🇫"},{"id":2,"name":"Albania","code":"AL","flag":"🇦🇱"},{"id":3,"name":"Algeria","code":"DZ","flag":"🇩🇿"},{"id":4,"name":"American Samoa","code":"AS","flag":"🇦🇸"},{"id":5,"name":"Andorra","code":"AD","flag":"🇦🇩"},{"id":6,"name":"Angola","code":"AO","flag":"🇦🇴"},{"id":7,"name":"Anguilla","code":"AI","flag":"🇦🇮"},{"id":8,"name":"Antarctica","code":"AQ","flag":"🇦🇶"},{"id":9,"name":"Antigua and Barbuda","code":"AG","flag":"🇦🇬"},{"id":10,"name":"Argentina","code":"AR","flag":"🇦🇷"},{"id":11,"name":"Armenia","code":"AM","flag":"🇦🇲"},{"id":12,"name":"Aruba","code":"AW","flag":"🇦🇼"},{"id":13,"name":"Australia","code":"AU","flag":"🇦🇺"},{"id":14,"name":"Austria","code":"AT","flag":"🇦🇹"},{"id":15,"name":"Azerbaijan","code":"AZ","flag":"🇦🇿"},{"id":16,"name":"Bahamas","code":"BS","flag":"🇧🇸"},{"id":17,"name":"Bahrain","code":"BH","flag":"🇧🇭"},{"id":18,"name":"Bangladesh","code":"BD","flag":"🇧🇩"},{"id":19,"name":"Barbados","code":"BB","flag":"🇧🇧"},{"id":20,"name":"Belarus","code":"BY","flag":"🇧🇾"},{"id":21,"name":"Belgium","code":"BE","flag":"🇧🇪"},{"id":22,"name":"Belize","code":"BZ","flag":"🇧🇿"},{"id":23,"name":"Benin","code":"BJ","flag":"🇧🇯"},{"id":24,"name":"Bermuda","code":"BM","flag":"🇧🇲"},{"id":25,"name":"Bhutan","code":"BT","flag":"🇧🇹"},{"id":26,"name":"Bolivia","code":"BO","flag":"🇧🇴"},{"id":27,"name":"Bonaire","code":"BQ","flag":"🇧🇶"},{"id":28,"name":"Bosnia and Herzegovina","code":"BA","flag":"🇧🇦"},{"id":29,"name":"Botswana","code":"BW","flag":"🇧🇼"},{"id":30,"name":"Bouvet Island","code":"BV","flag":"🇧🇻"},{"id":31,"name":"Brazil","code":"BR","flag":"🇧🇷"},{"id":32,"name":"British Indian Ocean Territory","code":"IO","flag":"🇮🇴"},{"id":33,"name":"Brunei Darussalam","code":"BN","flag":"🇧🇳"},{"id":34,"name":"Bulgaria","code":"BG","flag":"🇧🇬"},{"id":35,"name":"Burkina Faso","code":"BF","flag":"🇧🇫"},{"id":36,"name":"Burundi","code":"BI","flag":"🇧🇮"},{"id":37,"name":"Cabo Verde","code":"CV","flag":"🇨🇻"},{"id":38,"name":"Cambodia","code":"KH","flag":"🇰🇭"},{"id":39,"name":"Cameroon","code":"CM","flag":"🇨🇲"},{"id":40,"name":"Canada","code":"CA","flag":"🇨🇦"},{"id":41,"name":"Cayman Islands","code":"KY","flag":"🇰🇾"},{"id":42,"name":"Central African Republic","code":"CF","flag":"🇨🇫"},{"id":43,"name":"Chad","code":"TD","flag":"🇹🇩"},{"id":44,"name":"Chile","code":"CL","flag":"🇨🇱"},{"id":45,"name":"China","code":"CN","flag":"🇨🇳"},{"id":46,"name":"Christmas Island","code":"CX","flag":"🇨🇽"},{"id":47,"name":"Cocos (Keeling) Islands","code":"CC","flag":"🇨🇨"},{"id":48,"name":"Colombia","code":"CO","flag":"🇨🇴"},{"id":49,"name":"Comoros","code":"KM","flag":"🇰🇲"},{"id":50,"name":"Congo","code":"CG","flag":"🇨🇬"},{"id":51,"name":"Cook Islands","code":"CK","flag":"🇨🇰"},{"id":52,"name":"Costa Rica","code":"CR","flag":"🇨🇷"},{"id":53,"name":"Croatia","code":"HR","flag":"🇭🇷"},{"id":54,"name":"Cuba","code":"CU","flag":"🇨🇺"},{"id":55,"name":"Curaçao","code":"CW","flag":"🇨🇼"},{"id":56,"name":"Cyprus","code":"CY","flag":"🇨🇾"},{"id":57,"name":"Czechia","code":"CZ","flag":"🇨🇿"},{"id":58,"name":"Côte d'Ivoire","code":"CI","flag":"🇨🇮"},{"id":59,"name":"Denmark","code":"DK","flag":"🇩🇰"},{"id":60,"name":"Djibouti","code":"DJ","flag":"🇩🇯"},{"id":61,"name":"Dominica","code":"DM","flag":"🇩🇲"},{"id":62,"name":"Dominican Republic","code":"DO","flag":"🇩🇴"},{"id":63,"name":"Ecuador","code":"EC","flag":"🇪🇨"},{"id":64,"name":"Egypt","code":"EG","flag":"🇪🇬"},{"id":65,"name":"El Salvador","code":"SV","flag":"🇸🇻"},{"id":66,"name":"Equatorial Guinea","code":"GQ","flag":"🇬🇶"},{"id":67,"name":"Eritrea","code":"ER","flag":"🇪🇷"},{"id":68,"name":"Estonia","code":"EE","flag":"🇪🇪"},{"id":69,"name":"Eswatini","code":"SZ","flag":"🇸🇿"},{"id":70,"name":"Ethiopia","code":"ET","flag":"🇪🇹"},{"id":71,"name":"Falkland Islands (Malvinas)","code":"FK","flag":"🇫🇰"},{"id":72,"name":"Faroe Islands","code":"FO","flag":"🇫🇴"},{"id":73,"name":"Fiji","code":"FJ","flag":"🇫🇯"},{"id":74,"name":"Finland","code":"FI","flag":"🇫🇮"},{"id":75,"name":"France","code":"FR","flag":"🇫🇷"},{"id":76,"name":"French Guiana","code":"GF","flag":"🇬🇫"},{"id":77,"name":"French Polynesia","code":"PF","flag":"🇵🇫"},{"id":78,"name":"French Southern Territories","code":"TF","flag":"🇹🇫"},{"id":79,"name":"Gabon","code":"GA","flag":"🇬🇦"},{"id":80,"name":"Gambia","code":"GM","flag":"🇬🇲"},{"id":81,"name":"Georgia","code":"GE","flag":"🇬🇪"},{"id":82,"name":"Germany","code":"DE","flag":"🇩🇪"},{"id":83,"name":"Ghana","code":"GH","flag":"🇬🇭"},{"id":84,"name":"Gibraltar","code":"GI","flag":"🇬🇮"},{"id":85,"name":"Greece","code":"GR","flag":"🇬🇷"},{"id":86,"name":"Greenland","code":"GL","flag":"🇬🇱"},{"id":87,"name":"Grenada","code":"GD","flag":"🇬🇩"},{"id":88,"name":"Guadeloupe","code":"GP","flag":"🇬🇵"},{"id":89,"name":"Guam","code":"GU","flag":"🇬🇺"},{"id":90,"name":"Guatemala","code":"GT","flag":"🇬🇹"},{"id":91,"name":"Guernsey","code":"GG","flag":"🇬🇬"},{"id":92,"name":"Guinea","code":"GN","flag":"🇬🇳"},{"id":93,"name":"Guinea-Bissau","code":"GW","flag":"🇬🇼"},{"id":94,"name":"Guyana","code":"GY","flag":"🇬🇾"},{"id":95,"name":"Haiti","code":"HT","flag":"🇭🇹"},{"id":96,"name":"Heard Island and McDonald Islands","code":"HM","flag":"🇭🇲"},{"id":97,"name":"Honduras","code":"HN","flag":"🇭🇳"},{"id":98,"name":"Hong Kong","code":"HK","flag":"🇭🇰"},{"id":99,"name":"Hungary","code":"HU","flag":"🇭🇺"},{"id":100,"name":"Iceland","code":"IS","flag":"🇮🇸"},{"id":101,"name":"India","code":"IN","flag":"🇮🇳"},{"id":102,"name":"Indonesia","code":"ID","flag":"🇮🇩"},{"id":103,"name":"Iran","code":"IR","flag":"🇮🇷"},{"id":104,"name":"Iraq","code":"IQ","flag":"🇮🇶"},{"id":105,"name":"Ireland","code":"IE","flag":"🇮🇪"},{"id":106,"name":"Isle of Man","code":"IM","flag":"🇮🇲"},{"id":107,"name":"Israel","code":"IL","flag":"🇮🇱"},{"id":108,"name":"Italy","code":"IT","flag":"🇮🇹"},{"id":109,"name":"Jamaica","code":"JM","flag":"🇯🇲"},{"id":110,"name":"Japan","code":"JP","flag":"🇯🇵"},{"id":111,"name":"Jersey","code":"JE","flag":"🇯🇪"},{"id":112,"name":"Jordan","code":"JO","flag":"🇯🇴"},{"id":113,"name":"Kazakhstan","code":"KZ","flag":"🇰🇿"},{"id":114,"name":"Kenya","code":"KE","flag":"🇰🇪"},{"id":115,"name":"Kiribati","code":"KI","flag":"🇰🇮"},{"id":116,"name":"Kosovo","code":"XK","flag":"🇽🇰"},{"id":117,"name":"Kuwait","code":"KW","flag":"🇰🇼"},{"id":118,"name":"Kyrgyzstan","code":"KG","flag":"🇰🇬"},{"id":119,"name":"Laos","code":"LA","flag":"🇱🇦"},{"id":120,"name":"Latvia","code":"LV","flag":"🇱🇻"},{"id":121,"name":"Lebanon","code":"LB","flag":"🇱🇧"},{"id":122,"name":"Lesotho","code":"LS","flag":"🇱🇸"},{"id":123,"name":"Liberia","code":"LR","flag":"🇱🇷"},{"id":124,"name":"Libya","code":"LY","flag":"🇱🇾"},{"id":125,"name":"Liechtenstein","code":"LI","flag":"🇱🇮"},{"id":126,"name":"Lithuania","code":"LT","flag":"🇱🇹"},{"id":127,"name":"Luxembourg","code":"LU","flag":"🇱🇺"},{"id":128,"name":"Macao","code":"MO","flag":"🇲🇴"},{"id":129,"name":"Madagascar","code":"MG","flag":"🇲🇬"},{"id":130,"name":"Malawi","code":"MW","flag":"🇲🇼"},{"id":131,"name":"Malaysia","code":"MY","flag":"🇲🇾"},{"id":132,"name":"Maldives","code":"MV","flag":"🇲🇻"},{"id":133,"name":"Mali","code":"ML","flag":"🇲🇱"},{"id":134,"name":"Malta","code":"MT","flag":"🇲🇹"},{"id":135,"name":"Marshall Islands","code":"MH","flag":"🇲🇭"},{"id":136,"name":"Martinique","code":"MQ","flag":"🇲🇶"},{"id":137,"name":"Mauritania","code":"MR","flag":"🇲🇷"},{"id":138,"name":"Mauritius","code":"MU","flag":"🇲🇺"},{"id":139,"name":"Mayotte","code":"YT","flag":"🇾🇹"},{"id":140,"name":"Mexico","code":"MX","flag":"🇲🇽"},{"id":141,"name":"Micronesia","code":"FM","flag":"🇫🇲"},{"id":142,"name":"Moldova","code":"MD","flag":"🇲🇩"},{"id":143,"name":"Monaco","code":"MC","flag":"🇲🇨"},{"id":144,"name":"Mongolia","code":"MN","flag":"🇲🇳"},{"id":145,"name":"Montenegro","code":"ME","flag":"🇲🇪"},{"id":146,"name":"Montserrat","code":"MS","flag":"🇲🇸"},{"id":147,"name":"Morocco","code":"MA","flag":"🇲🇦"},{"id":148,"name":"Mozambique","code":"MZ","flag":"🇲🇿"},{"id":149,"name":"Myanmar","code":"MM","flag":"🇲🇲"},{"id":150,"name":"Namibia","code":"NA","flag":"🇳🇦"},{"id":151,"name":"Nauru","code":"NR","flag":"🇳🇷"},{"id":152,"name":"Nepal","code":"NP","flag":"🇳🇵"},{"id":153,"name":"Netherlands","code":"NL","flag":"🇳🇱"},{"id":154,"name":"New Caledonia","code":"NC","flag":"🇳🇨"},{"id":155,"name":"New Zealand","code":"NZ","flag":"🇳🇿"},{"id":156,"name":"Nicaragua","code":"NI","flag":"🇳🇮"},{"id":157,"name":"Niger","code":"NE","flag":"🇳🇪"},{"id":158,"name":"Nigeria","code":"NG","flag":"🇳🇬"},{"id":159,"name":"Niue","code":"NU","flag":"🇳🇺"},{"id":160,"name":"Norfolk Island","code":"NF","flag":"🇳🇫"},{"id":161,"name":"North Korea","code":"KP","flag":"🇰🇵"},{"id":162,"name":"North Macedonia","code":"MK","flag":"🇲🇰"},{"id":163,"name":"Northern Mariana Islands","code":"MP","flag":"🇲🇵"},{"id":164,"name":"Norway","code":"NO","flag":"🇳🇴"},{"id":165,"name":"Oman","code":"OM","flag":"🇴🇲"},{"id":166,"name":"Pakistan","code":"PK","flag":"🇵🇰"},{"id":167,"name":"Palau","code":"PW","flag":"🇵🇼"},{"id":168,"name":"Palestine","code":"PS","flag":"🇵🇸"},{"id":169,"name":"Panama","code":"PA","flag":"🇵🇦"},{"id":170,"name":"Papua New Guinea","code":"PG","flag":"🇵🇬"},{"id":171,"name":"Paraguay","code":"PY","flag":"🇵🇾"},{"id":172,"name":"Peru","code":"PE","flag":"🇵🇪"},{"id":173,"name":"Philippines","code":"PH","flag":"🇵🇭"},{"id":174,"name":"Pitcairn","code":"PN","flag":"🇵🇳"},{"id":175,"name":"Poland","code":"PL","flag":"🇵🇱"},{"id":176,"name":"Portugal","code":"PT","flag":"🇵🇹"},{"id":177,"name":"Puerto Rico","code":"PR","flag":"🇵🇷"},{"id":178,"name":"Qatar","code":"QA","flag":"🇶🇦"},{"id":179,"name":"Republic of the Congo","code":"CD","flag":"🇨🇩"},{"id":180,"name":"Romania","code":"RO","flag":"🇷🇴"},{"id":181,"name":"Russia","code":"RU","flag":"🇷🇺"},{"id":182,"name":"Rwanda","code":"RW","flag":"🇷🇼"},{"id":183,"name":"Réunion","code":"RE","flag":"🇷🇪"},{"id":184,"name":"Saint Barthélemy","code":"BL","flag":"🇧🇱"},{"id":185,"name":"Saint Helena","code":"SH","flag":"🇸🇭"},{"id":186,"name":"Saint Kitts and Nevis","code":"KN","flag":"🇰🇳"},{"id":187,"name":"Saint Lucia","code":"LC","flag":"🇱🇨"},{"id":188,"name":"Saint Martin (French part)","code":"MF","flag":"🇲🇫"},{"id":189,"name":"Saint Pierre and Miquelon","code":"PM","flag":"🇵🇲"},{"id":190,"name":"Saint Vincent and the Grenadines","code":"VC","flag":"🇻🇨"},{"id":191,"name":"Samoa","code":"WS","flag":"🇼🇸"},{"id":192,"name":"San Marino","code":"SM","flag":"🇸🇲"},{"id":193,"name":"Sao Tome and Principe","code":"ST","flag":"🇸🇹"},{"id":194,"name":"Saudi Arabia","code":"SA","flag":"🇸🇦"},{"id":195,"name":"Senegal","code":"SN","flag":"🇸🇳"},{"id":196,"name":"Serbia","code":"RS","flag":"🇷🇸"},{"id":197,"name":"Seychelles","code":"SC","flag":"🇸🇨"},{"id":198,"name":"Sierra Leone","code":"SL","flag":"🇸🇱"},{"id":199,"name":"Singapore","code":"SG","flag":"🇸🇬"},{"id":200,"name":"Sint Maarten (Dutch part)","code":"SX","flag":"🇸🇽"},{"id":201,"name":"Slovakia","code":"SK","flag":"🇸🇰"},{"id":202,"name":"Slovenia","code":"SI","flag":"🇸🇮"},{"id":203,"name":"Solomon Islands","code":"SB","flag":"🇸🇧"},{"id":204,"name":"Somalia","code":"SO","flag":"🇸🇴"},{"id":205,"name":"South Africa","code":"ZA","flag":"🇿🇦"},{"id":206,"name":"South Georgia and the South Sandwich Islands","code":"GS","flag":"🇬🇸"},{"id":207,"name":"South Korea","code":"KR","flag":"🇰🇷"},{"id":208,"name":"South Sudan","code":"SS","flag":"🇸🇸"},{"id":209,"name":"Spain","code":"ES","flag":"🇪🇸"},{"id":210,"name":"Sri Lanka","code":"LK","flag":"🇱🇰"},{"id":211,"name":"Sudan","code":"SD","flag":"🇸🇩"},{"id":212,"name":"Suriname","code":"SR","flag":"🇸🇷"},{"id":213,"name":"Svalbard and Jan Mayen","code":"SJ","flag":"🇸🇯"},{"id":214,"name":"Sweden","code":"SE","flag":"🇸🇪"},{"id":215,"name":"Switzerland","code":"CH","flag":"🇨🇭"},{"id":216,"name":"Syrian Arab Republic","code":"SY","flag":"🇸🇾"},{"id":217,"name":"Taiwan","code":"TW","flag":"🇹🇼"},{"id":218,"name":"Tajikistan","code":"TJ","flag":"🇹🇯"},{"id":219,"name":"Tanzania","code":"TZ","flag":"🇹🇿"},{"id":220,"name":"Thailand","code":"TH","flag":"🇹🇭"},{"id":221,"name":"Timor-Leste","code":"TL","flag":"🇹🇱"},{"id":222,"name":"Togo","code":"TG","flag":"🇹🇬"},{"id":223,"name":"Tokelau","code":"TK","flag":"🇹🇰"},{"id":224,"name":"Tonga","code":"TO","flag":"🇹🇴"},{"id":225,"name":"Trinidad and Tobago","code":"TT","flag":"🇹🇹"},{"id":226,"name":"Tunisia","code":"TN","flag":"🇹🇳"},{"id":227,"name":"Turkmenistan","code":"TM","flag":"🇹🇲"},{"id":228,"name":"Turks and Caicos Islands","code":"TC","flag":"🇹🇨"},{"id":229,"name":"Tuvalu","code":"TV","flag":"🇹🇻"},{"id":230,"name":"Türkiye","code":"TR","flag":"🇹🇷"},{"id":231,"name":"Uganda","code":"UG","flag":"🇺🇬"},{"id":232,"name":"Ukraine","code":"UA","flag":"🇺🇦"},{"id":233,"name":"United Arab Emirates","code":"AE","flag":"🇦🇪"},{"id":234,"name":"United Kingdom","code":"GB","flag":"🇬🇧"},{"id":235,"name":"United States","code":"US","flag":"🇺🇸"},{"id":236,"name":"United States Minor Outlying Islands","code":"UM","flag":"🇺🇲"},{"id":237,"name":"Uruguay","code":"UY","flag":"🇺🇾"},{"id":238,"name":"Uzbekistan","code":"UZ","flag":"🇺🇿"},{"id":239,"name":"Vanuatu","code":"VU","flag":"🇻🇺"},{"id":240,"name":"Vatican City","code":"VA","flag":"🇻🇦"},{"id":241,"name":"Venezuela","code":"VE","flag":"🇻🇪"},{"id":242,"name":"Viet Nam","code":"VN","flag":"🇻🇳"},{"id":243,"name":"Virgin Islands","code":"VG","flag":"🇻🇬"},{"id":244,"name":"Virgin Islands","code":"VI","flag":"🇻🇮"},{"id":245,"name":"Wallis and Futuna","code":"WF","flag":"🇼🇫"},{"id":246,"name":"Western Sahara","code":"EH","flag":"🇪🇭"},{"id":247,"name":"Yemen","code":"YE","flag":"🇾🇪"},{"id":248,"name":"Zambia","code":"ZM","flag":"🇿🇲"},{"id":249,"name":"Zimbabwe","code":"ZW","flag":"🇿🇼"},{"id":250,"name":"Åland Islands","code":"AX","flag":"🇦🇽"},{"id":251,"name":"Canary Islands","code":"IC","flag":"🇮🇨"}]`),
   X = {
-    seasons: Mn,
-    regionSize: Cn,
-    refreshIntervalMs: On,
-    colors: kn,
-    errors: Bn,
-    items: Ln,
-    products: Dn,
-    countries: Nn
+    seasons: In,
+    regionSize: Pn,
+    refreshIntervalMs: xn,
+    colors: Cn,
+    errors: Mn,
+    items: On,
+    products: kn,
+    countries: Bn
   },
-  qn = X,
+  Ln = X,
   le = X.seasons.length - 1,
-  Qn = X.seasons[le].zoom,
-  Xn = X.seasons[le].tileSize;
+  Wn = X.seasons[le].zoom,
+  Yn = X.seasons[le].tileSize;
 
-function ea(n) {
-  return qn.countries[n - 1]
+function Zn(n) {
+  return Ln.countries[n - 1]
 }
-var V;
-class Un {
+var z;
+class Dn {
   constructor(e) {
-    _(this, V, S(!0));
+    h(this, z, S(!0));
     this.url = e
   }
   get online() {
-    return p(d(this, V))
+    return p(d(this, z))
   }
   set online(e) {
-    w(d(this, V), e, !0)
+    w(d(this, z), e, !0)
   }
   async paint(e, t, a) {
-    const r = xn(e, s => `t=(${s.tile[0]},${s.tile[1]}),s=${s.season}`),
+    const r = An(e, s => `t=(${s.tile[0]},${s.tile[1]}),s=${s.season}`),
       i = (await Promise.all(Object.values(r).map(s => {
-        const [l, g] = s[0].tile, T = s[0].season, y = {
+        const [l, u] = s[0].tile, T = s[0].season, y = {
           colors: s.map(ee => ee.colorIdx),
           coords: s.flatMap(ee => ee.pixel),
           t,
           fp: a
         }, te = JSON.stringify(y);
-        return this.request(`/s${T}/pixel/${l}/${g}`, {
+        return this.request(`/s${T}/pixel/${l}/${u}`, {
           method: "POST",
           body: te,
           headers: {
@@ -1187,19 +1184,20 @@ class Un {
       }))).filter(s => s.status !== 200);
     if (i.length) {
       const s = i[0];
-      if (s.status === 401) throw new Error(Ce());
+      if (s.status === 401) throw new Error(Me());
       if (s.status === 403) {
-        if (s.headers.get("cf-mitigated") === "challenge") throw new Error(Dt());
+        if (s.headers.get("cf-mitigated") === "challenge") throw new Error(kt());
         const l = await s.json();
-        throw (l == null ? void 0 : l.error) === "refresh" ? new Error(Ut()) : (Pn.refresh(), new Error(Be()))
+        if ((l == null ? void 0 : l.error) === "refresh") throw new Error(Dt());
+        vn.refresh()
       } else if (s.status === 451) {
         const l = await i[0].json();
         l == null || l.err;
-        const g = l == null ? void 0 : l.suspension;
-        if (g === "ban") throw new Error(mn());
-        if (g === "timeout") {
+        const u = l == null ? void 0 : l.suspension;
+        if (u === "ban") throw new Error(un());
+        if (u === "timeout") {
           const T = new Date(Date.now() + ((l == null ? void 0 : l.durationMs) ?? 0));
-          throw new Error(pn({
+          throw new Error(fn({
             until: T.toLocaleString()
           }))
         } else throw new Error(c())
@@ -1209,16 +1207,21 @@ class Un {
   async getPixelInfo({
     season: e,
     tile: [t, a],
-    pixel: [r, o]
+    pixel: [r, o],
+    isModerator: i = !1
   }) {
-    const i = await this.request(`/s${e}/pixel/${t}/${a}?x=${r}&y=${o}`);
-    if (i.status !== 200) {
-      const s = await i.text();
-      throw new Error(Ne({
-        err: s
+    const s = new URLSearchParams;
+    s.set("x", String(r)), s.set("y", String(o));
+    const l = await this.request(`${i?"/moderator":""}/s${e}/pixel/${t}/${a}?${s.toString()}`, {
+      credentials: i ? "include" : void 0
+    });
+    if (l.status !== 200) {
+      const u = await l.text();
+      throw new Error(Be({
+        err: u
       }))
     }
-    return i.json()
+    return l.json()
   }
   async getPixelAreaInfo({
     season: e,
@@ -1230,8 +1233,8 @@ class Un {
       credentials: "include"
     });
     if (l.status !== 200) {
-      const g = await l.text();
-      throw console.error("Error while fetching pixel area info", g), new Error(c())
+      const u = await l.text();
+      throw console.error("Error while fetching pixel area info", u), new Error(c())
     }
     return l.json()
   }
@@ -1270,9 +1273,9 @@ class Un {
         phone: e
       })
     });
-    if (t.status === 400) throw new Error(Ge());
-    if (t.status === 403) throw new Error($e());
-    if (t.status === 429) throw new Error(Ke());
+    if (t.status === 400) throw new Error(Ne());
+    if (t.status === 403) throw new Error(Ge());
+    if (t.status === 429) throw new Error($e());
     if (t.status !== 200) throw new Error(c());
     return await t.json()
   }
@@ -1284,7 +1287,7 @@ class Un {
         code: e
       })
     });
-    if (t.status === 400) throw new Error(He());
+    if (t.status === 400) throw new Error(Ke());
     if (t.status !== 200) throw new Error(c());
     return await t.json()
   }
@@ -1314,7 +1317,7 @@ class Un {
       }),
       credentials: "include"
     });
-    if (t.status === 403) throw new Error(Ze());
+    if (t.status === 403) throw new Error(Ve());
     if (t.status !== 200) throw new Error(c())
   }
   async deleteFavoriteLocation(e) {
@@ -1335,7 +1338,7 @@ class Un {
       }),
       credentials: "include"
     });
-    if (a.status === 400) throw new Error(et());
+    if (a.status === 400) throw new Error(Ze());
     if (a.status !== 200) throw new Error(c())
   }
   async leaderboardPlayers(e) {
@@ -1383,7 +1386,7 @@ class Un {
         product: e
       })
     });
-    if (t.status !== 200) throw t.status === 404 ? new Error(at()) : t.status === 403 ? new Error(st()) : t.status === 409 ? new Error(lt()) : new Error(c())
+    if (t.status !== 200) throw t.status === 404 ? new Error(et()) : t.status === 403 ? new Error(at()) : t.status === 409 ? new Error(st()) : new Error(c())
   }
   async getAlliance() {
     const e = await this.request("/alliance", {
@@ -1404,8 +1407,8 @@ class Un {
     if (t.status === 200) return t.json();
     if (t.status === 400) {
       const a = await t.json();
-      throw a.error === "max_characters" ? new Error(gt()) : a.error === "name_taken" ? new Error(_t()) : a.error == "empty_name" ? new Error(wt()) : new Error(c())
-    } else throw t.status === 403 ? new Error(St()) : new Error(c())
+      throw a.error === "max_characters" ? new Error(lt()) : a.error === "name_taken" ? new Error(gt()) : a.error == "empty_name" ? new Error(ht()) : new Error(c())
+    } else throw t.status === 403 ? new Error(wt()) : new Error(c())
   }
   async leaveAlliance() {
     if ((await this.request("/alliance/leave", {
@@ -1545,7 +1548,7 @@ class Un {
       const r = await t.json();
       throw new Error(r == null ? void 0 : r.error)
     } else {
-      if (t.status === 451) throw new Error(un());
+      if (t.status === 451) throw new Error(cn());
       if (t.status !== 200) throw new Error(c())
     }
     return await t.json()
@@ -1574,7 +1577,7 @@ class Un {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== 200) throw new h(c(), e.status);
+    if (e.status !== 200) throw new _(c(), e.status);
     const t = await e.json();
     for (const a of t.tickets) a.reports.sort((r, o) => re[r.reason] - re[o.reason]);
     return t
@@ -1584,7 +1587,7 @@ class Un {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== 200) throw new h(c(), e.status);
+    if (e.status !== 200) throw new _(c(), e.status);
     const {
       tickets: t
     } = await e.json();
@@ -1595,7 +1598,7 @@ class Un {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== 200) throw new h(c(), e.status);
+    if (e.status !== 200) throw new _(c(), e.status);
     return e.json()
   }
   async setTicketStatus(e, t) {
@@ -1607,18 +1610,18 @@ class Un {
         status: t
       })
     });
-    if (a.status !== 200) throw new h(c(), a.status)
+    if (a.status !== 200) throw new _(c(), a.status)
   }
   async request(e, t) {
     let a;
     try {
       a = await fetch(`${this.url}${e}`, t), this.online = !0
     } catch (r) {
-      throw console.error("Fetch error:", r), this.online = !1, new Error(It(), {
+      throw console.error("Fetch error:", r), this.online = !1, new Error(Et(), {
         cause: r
       })
     }
-    if (a.status === 429) throw new Error(Mt());
+    if (a.status === 429) throw new Error(It());
     return a
   }
   async getOpenTicketsSummary() {
@@ -1626,7 +1629,7 @@ class Un {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== 200) throw new h(c(), e.status);
+    if (e.status !== 200) throw new _(c(), e.status);
     return e.json()
   }
   async getClosedTicketsByMod(e, t) {
@@ -1634,7 +1637,7 @@ class Un {
       method: "GET",
       credentials: "include"
     });
-    if (a.status !== 200) throw new h(c(), a.status);
+    if (a.status !== 200) throw new _(c(), a.status);
     return (await a.json()).items.map(o => ({
       ...o,
       suspensionRate: (o.ban + o.timeout) / o.total
@@ -1646,7 +1649,7 @@ class Un {
       credentials: "include"
     });
     if (t.status !== 404) {
-      if (t.status !== 200) throw new h(c(), t.status);
+      if (t.status !== 200) throw new _(c(), t.status);
       return t.json()
     }
   }
@@ -1655,7 +1658,7 @@ class Un {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new h(c(), t.status);
+    if (t.status !== 200) throw new _(c(), t.status);
     return t.json()
   }
   async getUserInfoFull(e) {
@@ -1664,7 +1667,7 @@ class Un {
       credentials: "include"
     });
     if (t.status !== 404) {
-      if (t.status !== 200) throw new h(c(), t.status);
+      if (t.status !== 200) throw new _(c(), t.status);
       return t.json()
     }
   }
@@ -1676,7 +1679,7 @@ class Un {
         userId: e
       })
     });
-    if (t.status !== 200) throw new h(c(), t.status)
+    if (t.status !== 200) throw new _(c(), t.status)
   }
   async removeBan(e) {
     const t = await this.request("/admin/remove-ban", {
@@ -1686,14 +1689,14 @@ class Un {
         userId: e
       })
     });
-    if (t.status !== 200) throw new h(c(), t.status)
+    if (t.status !== 200) throw new _(c(), t.status)
   }
   async getUserNotes(e) {
     const t = await this.request(`/admin/users/notes?userId=${encodeURIComponent(e)}`, {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new h(c(), t.status);
+    if (t.status !== 200) throw new _(c(), t.status);
     return t.json()
   }
   async addUserNote(e, t) {
@@ -1705,14 +1708,14 @@ class Un {
         note: t
       })
     });
-    if (a.status !== 200) throw new h(c(), a.status)
+    if (a.status !== 200) throw new _(c(), a.status)
   }
   async getUserPurchases(e) {
     const t = await this.request(`/admin/users/purchases?userId=${encodeURIComponent(e)}`, {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new h(c(), t.status);
+    if (t.status !== 200) throw new _(c(), t.status);
     const a = await t.json();
     return (Array.isArray(a == null ? void 0 : a.purchases) ? a.purchases : []).map(o => ({
       id: String(o.id ?? ""),
@@ -1731,7 +1734,7 @@ class Un {
         droplets: t
       })
     });
-    if (a.status !== 200) throw new h(c(), a.status)
+    if (a.status !== 200) throw new _(c(), a.status)
   }
   async getUserTickets(e) {
     const {
@@ -1748,21 +1751,21 @@ class Un {
       method: "GET",
       credentials: "include"
     });
-    if (s.status !== 200) throw new h(c(), s.status);
+    if (s.status !== 200) throw new _(c(), s.status);
     const l = await s.json(),
-      g = Array.isArray(l == null ? void 0 : l.tickets) ? l.tickets : [];
-    return g.sort((T, y) => new Date(y.createdAt).getTime() - new Date(T.createdAt).getTime()), g
+      u = Array.isArray(l == null ? void 0 : l.tickets) ? l.tickets : [];
+    return u.sort((T, y) => new Date(y.createdAt).getTime() - new Date(T.createdAt).getTime()), u
   }
   mapTicketsToReportRows(e, t) {
     var r, o, i, s, l;
     const a = [];
-    for (const g of e) {
-      const T = g.status ?? "open";
+    for (const u of e) {
+      const T = u.status ?? "open";
       if (t === "received") {
-        for (const y of g.reports) a.push({
+        for (const y of u.reports) a.push({
           id: String(y.id),
-          ticketId: String(g.id),
-          createdAt: y.createdAt ?? g.createdAt,
+          ticketId: String(u.id),
+          createdAt: y.createdAt ?? u.createdAt,
           byUser: {
             id: Number(y.reportedBy),
             name: String(y.reportedByName ?? y.reportedBy),
@@ -1774,14 +1777,14 @@ class Un {
         continue
       }
       if (t === "sent") {
-        for (const y of g.reports) a.push({
+        for (const y of u.reports) a.push({
           id: String(y.id),
-          ticketId: String(g.id),
-          createdAt: y.createdAt ?? g.createdAt,
+          ticketId: String(u.id),
+          createdAt: y.createdAt ?? u.createdAt,
           toUser: {
-            id: Number(g.reportedUser.id),
-            name: String(g.reportedUser.name),
-            picture: g.reportedUser.picture ?? null
+            id: Number(u.reportedUser.id),
+            name: String(u.reportedUser.name),
+            picture: u.reportedUser.picture ?? null
           },
           reason: String(y.reason),
           status: T
@@ -1789,23 +1792,23 @@ class Un {
         continue
       }
       a.push({
-        id: String(g.id),
-        ticketId: String(g.id),
-        createdAt: g.createdAt,
-        handledBy: g.status && g.status !== "open" ? {
-          id: ((r = g.handledBy) == null ? void 0 : r.id) ?? 0,
-          name: ((o = g.handledBy) == null ? void 0 : o.name) ?? "Moderator",
-          picture: ((i = g.handledBy) == null ? void 0 : i.picture) ?? null
+        id: String(u.id),
+        ticketId: String(u.id),
+        createdAt: u.createdAt,
+        handledBy: u.status && u.status !== "open" ? {
+          id: ((r = u.handledBy) == null ? void 0 : r.id) ?? 0,
+          name: ((o = u.handledBy) == null ? void 0 : o.name) ?? "Moderator",
+          picture: ((i = u.handledBy) == null ? void 0 : i.picture) ?? null
         } : {
           id: 0,
           name: "—",
           picture: null
         },
-        reason: String(((l = (s = g.reports) == null ? void 0 : s[0]) == null ? void 0 : l.reason) ?? "other"),
+        reason: String(((l = (s = u.reports) == null ? void 0 : s[0]) == null ? void 0 : l.reason) ?? "other"),
         status: T
       })
     }
-    return a.sort((g, T) => new Date(T.createdAt).getTime() - new Date(g.createdAt).getTime()), a
+    return a.sort((u, T) => new Date(T.createdAt).getTime() - new Date(u.createdAt).getTime()), a
   }
   async getModeratorClosedTicketStats(e) {
     const t = new URLSearchParams({
@@ -1815,7 +1818,7 @@ class Un {
         method: "GET",
         credentials: "include"
       });
-    if (a.status !== 200) throw new h(c(), a.status);
+    if (a.status !== 200) throw new _(c(), a.status);
     const r = await a.json();
     return {
       closed_total: Number((r == null ? void 0 : r.closed_total) ?? 0),
@@ -1835,11 +1838,11 @@ class Un {
         security: "/.well-known/security.txt"
       })
     });
-    if (e.status !== 204) throw new h(c(), e.status)
+    if (e.status !== 204) throw new _(c(), e.status)
   }
 }
-V = new WeakMap;
-let se = new Un(me);
+z = new WeakMap;
+let se = new Dn(fe);
 export {
-  Jn as A, le as C, me as P, qn as S, Ae as _, se as a, zn as b, c, we as d, Fn as e, b as f, he as g, Wn as h, Yn as i, Kn as j, jt as k, zt as l, Xt as m, Jt as n, Yt as o, ea as p, pn as q, Vn as r, Hn as s, An as t, Pn as u, Zn as v, Qn as w, Xn as x, mn as y, $n as z
+  jn as A, le as C, fe as P, Ln as S, Ae as _, se as a, Jn as b, c, we as d, Rn as e, b as f, _e as g, zn as h, Hn as i, $n as j, Ut as k, Jt as l, Yt as m, jt as n, Ht as o, Zn as p, fn as q, Fn as r, Kn as s, Tn as t, vn as u, Vn as v, Wn as w, Yn as x, un as y, Gn as z
 };
