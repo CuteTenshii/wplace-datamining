@@ -1601,16 +1601,18 @@ class Dn {
     if (e.status !== 200) throw new _(c(), e.status);
     return e.json()
   }
-  async setTicketStatus(e, t) {
-    const a = await this.request("/moderator/set-ticket-status", {
+  async setTicketStatus(e, t, a, r) {
+    const o = await this.request("/moderator/set-ticket-status", {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
         ticketId: e,
-        status: t
+        status: t,
+        selectedReportId: a,
+        assignedReason: r
       })
     });
-    if (a.status !== 200) throw new _(c(), a.status)
+    if (o.status !== 200) throw new _(c(), o.status)
   }
   async request(e, t) {
     let a;
@@ -1844,5 +1846,5 @@ class Dn {
 z = new WeakMap;
 let se = new Dn(fe);
 export {
-  jn as A, le as C, fe as P, Ln as S, Ae as _, se as a, Jn as b, c, we as d, Rn as e, b as f, _e as g, zn as h, Hn as i, $n as j, Ut as k, Jt as l, Yt as m, jt as n, Ht as o, Zn as p, fn as q, Fn as r, Kn as s, Tn as t, vn as u, Vn as v, Wn as w, Yn as x, un as y, Gn as z
+  jn as A, le as C, fe as P, Ln as S, Ae as _, se as a, Kn as b, c, we as d, Rn as e, b as f, _e as g, zn as h, Hn as i, $n as j, Ut as k, Jt as l, Yt as m, jt as n, Ht as o, Zn as p, fn as q, Fn as r, Jn as s, Tn as t, vn as u, Vn as v, Wn as w, Yn as x, un as y, Gn as z
 };

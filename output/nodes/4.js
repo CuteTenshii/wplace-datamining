@@ -74,15 +74,15 @@ import {
 } from "../chunks/B04UpldU.js";
 import {
   r as us,
-  e as Yi,
+  f as Yi,
   a as zr,
-  f as Pv,
+  g as Pv,
   b as or,
   s as kr,
-  d as Ic,
-  g as Fu,
+  e as Ic,
+  h as Fu,
   c as bo
-} from "../chunks/CPzcXYwZ.js";
+} from "../chunks/D7R8LpwE.js";
 import {
   a as sl,
   k as ju,
@@ -90,7 +90,7 @@ import {
 } from "../chunks/DX2rcOXX.js";
 import {
   p as wa
-} from "../chunks/D30lbasH.js";
+} from "../chunks/Dqj8bOB1.js";
 import {
   S as Xi,
   a as an,
@@ -108,7 +108,7 @@ import {
   z as n1,
   d as i1,
   A as a1
-} from "../chunks/BFuaEnY5.js";
+} from "../chunks/CM0bkSp-.js";
 import {
   c as Iv,
   A as sa,
@@ -120,7 +120,7 @@ import {
 import {
   g as Mv,
   b as l1
-} from "../chunks/CMBcJe12.js";
+} from "../chunks/C2ESYOuz.js";
 import {
   h as Av
 } from "../chunks/DuQmVTLd.js";
@@ -135,7 +135,7 @@ import {
   t as h1,
   b as d1,
   R as p1
-} from "../chunks/Ci9OBIxy.js";
+} from "../chunks/B_fKIu3L.js";
 import {
   g as Ve,
   l as f1
@@ -151,7 +151,7 @@ import {
   G as Zg,
   c as _1,
   T as Gf
-} from "../chunks/BuvUjIw6.js";
+} from "../chunks/DalXbm_C.js";
 import {
   e as ui,
   i as cp
@@ -164,20 +164,20 @@ import {
 import {
   P as ls,
   t as Ev
-} from "../chunks/BH5n9al2.js";
+} from "../chunks/B1o243VJ.js";
 import {
   g as Ri,
   a as up,
   c as v1,
   b as y1
-} from "../chunks/DFWb-0im.js";
+} from "../chunks/CML5-pgb.js";
 import {
   f as ol,
   t as x1
 } from "../chunks/BVRisE3s.js";
 import {
   A as b1
-} from "../chunks/CFEzYn4x.js";
+} from "../chunks/BvhLMMOW.js";
 import {
   A as zv,
   d as vc,
@@ -190,7 +190,7 @@ import {
   c as C1,
   P as Dv,
   b as P1
-} from "../chunks/CBBkbRWV.js";
+} from "../chunks/_sYRMPV5.js";
 import {
   f as aa,
   s as $d
@@ -201,7 +201,7 @@ import {
 } from "../chunks/Bx9P4Gwq.js";
 import {
   L as Bv
-} from "../chunks/De4MVCKm.js";
+} from "../chunks/BlBSwh8F.js";
 import {
   c as vi
 } from "../chunks/SQraYq6A.js";
@@ -209,16 +209,16 @@ import {
   L as I1,
   T as Fv,
   a as M1
-} from "../chunks/CSodVWes.js";
+} from "../chunks/BE1LTxeP.js";
 import {
   _ as A1
 } from "../chunks/Dp1pzeXC.js";
 import {
   R as k1
-} from "../chunks/DNETWznY.js";
+} from "../chunks/iYykSJms.js";
 import {
   W as E1
-} from "../chunks/DQuIQ3SN.js";
+} from "../chunks/B7Z4Ognr.js";
 import {
   r as z1
 } from "../chunks/Di9sxCf-.js";
@@ -45286,7 +45286,7 @@ function VL(_, s) {
                     var Lt = AL(),
                       Vt = E(Lt);
                     Av(Vt, () => e1({
-                      until: `<span class="text-secondary font-medium">${s.user.timeoutUntil.toLocaleString()}</span>`
+                      until: `<span class="text-secondary font-medium text-nowrap">${s.user.timeoutUntil.toLocaleString()}</span>`
                     })), k(Lt), H(Xe, Lt)
                   };
                   je(kn, Xe => {
