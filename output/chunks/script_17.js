@@ -26,12 +26,12 @@ import {
   bf as dr,
   bg as vr,
   bh as br
-} from "./o3Mx0h7z.js";
+} from "./CU1IDgoR.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "8664226c36b3dea53924eb4a5f34f4b7e9db6bc7"
+      id: "db50de114564c1615b532cc812ac881318d7283e"
     }
   } catch {}
 })();
