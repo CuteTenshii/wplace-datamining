@@ -1,10 +1,10 @@
 import {
   g as i
-} from "./CS0DEh4F.js";
-import "./DnXPCajm.js";
+} from "./Dxz1oID2.js";
+import "./BWhDOONG.js";
 import {
   o as Se
-} from "./Blc1me_8.js";
+} from "./BVfVHylc.js";
 import {
   p as me,
   g as o,
@@ -19,7 +19,7 @@ import {
   r,
   t as D,
   b as v,
-  c as ge,
+  c as be,
   at as Me,
   n as Ue,
   bi as _e,
@@ -27,18 +27,18 @@ import {
   ax as pe,
   a as fe,
   v as qe
-} from "./DeRLOp5b.js";
+} from "./o3Mx0h7z.js";
 import {
   s as p
-} from "./BozETHFt.js";
+} from "./UgLszX0r.js";
 import {
   p as se,
   i as I,
-  r as be
-} from "./DJP6VJm_.js";
+  r as ge
+} from "./CKJw5tYJ.js";
 import {
   e as Ce
-} from "./kYImzZg_.js";
+} from "./B1USaPTZ.js";
 import {
   b as he,
   C as Pe,
@@ -47,17 +47,17 @@ import {
   s as ve,
   g as F,
   a as ze
-} from "./D9RMhroF.js";
+} from "./DzT1gcd7.js";
 import {
   t as Ae
-} from "./e0cAZWdv.js";
+} from "./DszX9_I_.js";
 import {
   a as je,
   c as Ne
-} from "./CIK0vhSc.js";
+} from "./Q2jMYLe0.js";
 import {
   b as Ze
-} from "./DCs83myQ.js";
+} from "./BVNn7wCY.js";
 import {
   k as Fe,
   l as He,
@@ -66,24 +66,24 @@ import {
   o as Xe,
   P as ne,
   t as re
-} from "./Ce-BUMuR.js";
+} from "./DHKaWnqS.js";
 import {
   P as Ye
-} from "./puBr7PwQ.js";
+} from "./Ds5nJYNP.js";
 import {
   c as Ge
-} from "./CCaFblyA.js";
+} from "./DohkKleg.js";
 import {
   g as Je
-} from "./BJuccFRk.js";
+} from "./BpPxDYim.js";
 import {
   f as Qe
-} from "./RzD1hCXZ.js";
+} from "./CrJMZIhr.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "9e594f39530defa0eea34168198e146d1118d931"
+      id: "8664226c36b3dea53924eb4a5f34f4b7e9db6bc7"
     }
   } catch {}
 })();
@@ -114,10 +114,10 @@ const We = () => "Copy",
   ft = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? _t() : pt(),
   vt = () => "Use of software to completely automate painting",
   mt = () => "Uso de software para pintar de forma completamente automatizada ",
-  gt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? vt() : mt(),
-  bt = () => "Racism, homophobia, hate groups, ...",
+  bt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? vt() : mt(),
+  gt = () => "Racism, homophobia, hate groups, ...",
   ht = () => "Racismo, homofobia, grupos de ódio, ...",
-  xt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? bt() : ht(),
+  xt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? gt() : ht(),
   yt = () => "Messed up artworks for no reason",
   wt = () => "Estragar desenho dos outros sem motivo",
   Rt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? yt() : wt(),
@@ -162,7 +162,7 @@ function sn(t, e) {
   me(e, !0);
   let n = se(e, "value", 15),
     f = se(e, "validate", 15),
-    L = be(e, ["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate"]),
+    L = ge(e, ["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate"]),
     y = S("");
   const k = ae(() => {
     var l;
@@ -185,9 +185,9 @@ function sn(t, e) {
     z = a(B);
   {
     var H = l => {
-      var b = rn(),
-        E = a(b, !0);
-      r(b), D(() => p(E, e.label)), v(l, b)
+      var g = rn(),
+        E = a(g, !0);
+      r(g), D(() => p(E, e.label)), v(l, g)
     };
     I(z, l => {
       e.label && l(H)
@@ -208,16 +208,16 @@ function sn(t, e) {
   r(q);
   var m = u(q, 2);
   {
-    var g = l => {
-      var b = an(),
-        E = a(b, !0);
-      r(b), D(() => p(E, e.max - o(k))), v(l, b)
+    var b = l => {
+      var g = an(),
+        E = a(g, !0);
+      r(g), D(() => p(E, e.max - o(k))), v(l, g)
     };
     I(m, l => {
-      e.max !== void 0 && l(g)
+      e.max !== void 0 && l(b)
     })
   }
-  r(U), r(B), D(() => p(K, o(y))), je(h, n), v(t, B), ge()
+  r(U), r(B), D(() => p(K, o(y))), je(h, n), v(t, B), be()
 }
 var ln = M('<label class="flex gap-3"><input name="reason" class="radio radio-sm mt-1" type="radio"/> <div><div class="font-semibold"> </div> <div class="text-base-content/80 text-sm"> </div></div></label>'),
   cn = (t, e) => {
@@ -250,7 +250,7 @@ function Sn(t, e) {
   }, {
     value: "bot",
     label: Ve(),
-    description: gt()
+    description: bt()
   }, {
     value: "griefing",
     label: Xe(),
@@ -261,8 +261,8 @@ function Sn(t, e) {
     description: Mt()
   }];
   Se(() => {
-    const m = g => {
-      g.key === "Escape" && f(!1)
+    const m = b => {
+      b.key === "Escape" && f(!1)
     };
     return document.addEventListener("keydown", m), () => document.removeEventListener("keydown", m)
   }), oe(() => {
@@ -278,12 +278,12 @@ function Sn(t, e) {
     q = u(a(U), 2);
   {
     var K = m => {
-      var g = un(),
-        l = a(g);
+      var b = un(),
+        l = a(b);
       O(l);
-      var b = u(l, 2);
-      O(b);
-      var E = u(b, 2);
+      var g = u(l, 2);
+      O(g);
+      var E = u(g, 2);
       O(E);
       var V = u(E, 2);
       O(V);
@@ -402,9 +402,9 @@ function Sn(t, e) {
       r(A);
       var ee = u(A, 2),
         Le = a(ee, !0);
-      r(ee), r(de), r(g), Ze(g, c => x(T, c), () => o(T)), D((c, s, d, _) => {
-        ve(g, "action", H[e.action]), F(l, e.paintedBy.id), F(b, e.latLon[0]), F(E, e.latLon[1]), F(V, e.zoom), ze(G, 1, `font-medium ${c??""} flex gap-1.5`), p(Re, e.paintedBy.name), p(ke, `#${e.paintedBy.id??""}`), p(De, `${s??""}:`), p(Ee, d), ee.disabled = o(L), p(Le, _)
-      }, [() => Je(e.paintedBy.id), () => dt(), () => Ge(), () => zt()]), _e("submit", g, async c => {
+      r(ee), r(de), r(b), Ze(b, c => x(T, c), () => o(T)), D((c, s, d, _) => {
+        ve(b, "action", H[e.action]), F(l, e.paintedBy.id), F(g, e.latLon[0]), F(E, e.latLon[1]), F(V, e.zoom), ze(G, 1, `font-medium ${c??""} flex gap-1.5`), p(Re, e.paintedBy.name), p(ke, `#${e.paintedBy.id??""}`), p(De, `${s??""}:`), p(Ee, d), ee.disabled = o(L), p(Le, _)
+      }, [() => Je(e.paintedBy.id), () => dt(), () => Ge(), () => zt()]), _e("submit", b, async c => {
         if (c.preventDefault(), !o(L) && o(B)()) try {
           x(L, !0);
           const s = new FormData(o(T));
@@ -423,7 +423,7 @@ function Sn(t, e) {
         } finally {
           x(L, !1)
         }
-      }), Ae(2, g, () => Qe), v(m, g)
+      }), Ae(2, b, () => Qe), v(m, b)
     };
     I(q, m => {
       f() && m(K)
@@ -433,13 +433,13 @@ function Sn(t, e) {
     oe(() => {
       f() ? m.show() : m.close()
     })
-  }), _e("close", h, () => f(!1)), v(t, h), ge()
+  }), _e("close", h, () => f(!1)), v(t, h), be()
 }
 Me(["click"]);
 var _n = qe('<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
 
 function In(t, e) {
-  let n = be(e, ["$$slots", "$$events", "$$legacy"]);
+  let n = ge(e, ["$$slots", "$$events", "$$legacy"]);
   var f = _n();
   he(f, () => ({
     xmlns: "http://www.w3.org/2000/svg",

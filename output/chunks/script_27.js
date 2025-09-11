@@ -1,11 +1,11 @@
 import {
   S as i
-} from "./Ce-BUMuR.js";
+} from "./DHKaWnqS.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "9e594f39530defa0eea34168198e146d1118d931"
+      id: "8664226c36b3dea53924eb4a5f34f4b7e9db6bc7"
     }
   } catch {}
 })();
@@ -106,9 +106,9 @@ function m(t, e) {
     h = 1 + .015 * n,
     g = o / 1,
     c = d / w,
-    f = s / h,
-    b = g * g + c * c + f * f;
-  return b < 0 ? 0 : Math.sqrt(b)
+    b = s / h,
+    f = g * g + c * c + b * b;
+  return f < 0 ? 0 : Math.sqrt(f)
 }
 export {
   E as a, A as b, C as c, x as g, k as h, T as r

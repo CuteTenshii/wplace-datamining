@@ -1,25 +1,25 @@
 import {
   g as v
-} from "./CS0DEh4F.js";
-import "./DnXPCajm.js";
+} from "./Dxz1oID2.js";
+import "./BWhDOONG.js";
 import {
   v as i,
   b as s,
   ax as g,
   a as u
-} from "./DeRLOp5b.js";
+} from "./o3Mx0h7z.js";
 import {
   b as a
-} from "./D9RMhroF.js";
+} from "./DzT1gcd7.js";
 import {
   r as c,
   i as w
-} from "./DJP6VJm_.js";
+} from "./CKJw5tYJ.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "9e594f39530defa0eea34168198e146d1118d931"
+      id: "8664226c36b3dea53924eb4a5f34f4b7e9db6bc7"
     }
   } catch {}
 })();
@@ -37,13 +37,13 @@ const h = () => "Pixels painted",
   q = () => "Descrição",
   E = (e = {}, t = {}) => (t.locale ?? v()) === "en" ? m() : q(),
   _ = e => `Copy alliance ID: #${e.allianceId}`,
-  y = e => `Copiar ID da aliança: #${e.allianceId}`,
-  k = (e, t = {}) => (t.locale ?? v()) === "en" ? _(e) : y(e);
-var $ = i('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
+  b = e => `Copiar ID da aliança: #${e.allianceId}`,
+  k = (e, t = {}) => (t.locale ?? v()) === "en" ? _(e) : b(e);
+var y = i('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
 
 function G(e, t) {
   let o = c(t, ["$$slots", "$$events", "$$legacy"]);
-  var n = $();
+  var n = y();
   a(n, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -51,7 +51,7 @@ function G(e, t) {
     ...o
   })), s(e, n)
 }
-var b = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
+var $ = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
   x = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
 function P(e, t) {
@@ -60,7 +60,7 @@ function P(e, t) {
     p = u(n);
   {
     var d = l => {
-        var r = b();
+        var r = $();
         a(r, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
