@@ -1,15 +1,15 @@
-import "./BkehYq2P.js";
+import "./BAHLZhzQ.js";
 import {
   M as ce,
   z as se,
   H as oe,
   C as de,
-  aZ as fe,
-  p as W,
+  aY as fe,
+  p as X,
   aw as M,
   av as U,
   ax as ue,
-  a as X,
+  a as Z,
   g as v,
   b as w,
   c as p,
@@ -21,44 +21,44 @@ import {
   d,
   r as f,
   s as u
-} from "./CBHD1ITq.js";
+} from "./dKK_QXGV.js";
 import {
   s as y
-} from "./C3WrtUnf.js";
+} from "./CmOj5OEc.js";
 import {
   p as c,
   i as B,
   r as te
-} from "./CnFnpIpO.js";
+} from "./BIdLHF9w.js";
 import {
   a as A,
   c as G,
   b as ae,
-  s as Z
-} from "./B0_7pZjx.js";
+  s as J
+} from "./C-BsPPa1.js";
 import {
   b as me
-} from "./CDmRdlHe.js";
+} from "./C0Mt-lPy.js";
 import {
   g as R,
-  d as J,
-  P as _e,
-  e as be
-} from "./BqkUhBei.js";
+  d as Q,
+  P as be,
+  e as _e
+} from "./D-UMHbEa.js";
 import {
   o as ge
-} from "./DDIjJhx5.js";
+} from "./BJOVwT4c.js";
 import {
   g as L
-} from "./BdL8ulug.js";
+} from "./h6OEYbJf.js";
 import {
   L as he
-} from "./CDlxd3F7.js";
+} from "./B_b0f-2y.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "c59cd04c2fee1edb5d1a51fc2b49888cf98f5500"
+      id: "765aed2fd03b66b96279cb6241cc773e0f78add9"
     }
   } catch {}
 })();
@@ -66,7 +66,7 @@ try {
   (function() {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new a.Error().stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "c7aedbc0-e7c6-4669-a683-4a11260059fd", a._sentryDebugIdIdentifier = "sentry-dbid-c7aedbc0-e7c6-4669-a683-4a11260059fd")
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "0ac5bbfb-cba8-4695-a8ef-aa17a4fb756d", a._sentryDebugIdIdentifier = "sentry-dbid-0ac5bbfb-cba8-4695-a8ef-aa17a4fb756d")
   })()
 } catch {}
 
@@ -74,19 +74,19 @@ function ye(a, e, n) {
   ce(() => {
     var r = se(() => e(a, n == null ? void 0 : n()) || {});
     if (n && (r != null && r.update)) {
-      var _ = !1,
+      var b = !1,
         m = {};
       oe(() => {
         var s = n();
-        de(s), _ && fe(m, s) && (m = s, r.update(s))
-      }), _ = !0
+        de(s), b && fe(m, s) && (m = s, r.update(s))
+      }), b = !0
     }
     if (r != null && r.destroy) return () => r.destroy()
   })
 }
 const we = a => `Login with ${a.name}`,
   xe = a => `Entrar com ${a.name}`,
-  Q = (a, e = {}) => (e.locale ?? L()) === "en" ? we(a) : xe(a),
+  W = (a, e = {}) => (e.locale ?? L()) === "en" ? we(a) : xe(a),
   ke = () => "By continuing, you agree to our",
   Ie = () => "Ao continuar, você concorda com nossos",
   Le = (a = {}, e = {}) => (e.locale ?? L()) === "en" ? ke() : Ie(),
@@ -102,10 +102,10 @@ const we = a => `Login with ${a.name}`,
 var Fe = V("<div></div>");
 
 function He(a, e) {
-  W(e, !0);
+  X(e, !0);
   let n = c(e, "widgetId", 15),
     r = c(e, "appearance", 3, "always"),
-    _ = c(e, "language", 3, "auto"),
+    b = c(e, "language", 3, "auto"),
     m = c(e, "execution", 3, "render"),
     s = c(e, "retryInterval", 3, 8e3),
     D = c(e, "retry", 3, "auto"),
@@ -154,14 +154,14 @@ function He(a, e) {
       tabindex: P(),
       appearance: r(),
       execution: m(),
-      language: _(),
+      language: b(),
       action: e.action,
       retry: D(),
       theme: C(),
       cData: e.cData,
       size: E()
     })),
-    b = (t, i) => {
+    _ = (t, i) => {
       let l = window.turnstile.render(t, i);
       return n(l), {
         destroy() {
@@ -185,12 +185,12 @@ function He(a, e) {
     }
   });
   var k = ue(),
-    z = X(k);
+    z = Z(k);
   {
     var F = t => {
       var i = Fe();
       let l;
-      ye(i, (o, H) => b == null ? void 0 : b(o, H), () => v(T)), j(o => l = A(i, 1, G(e.class), "svelte-1gvfki5", l, o), [() => ({
+      ye(i, (o, H) => _ == null ? void 0 : _(o, H), () => v(T)), j(o => l = A(i, 1, G(e.class), "svelte-1gvfki5", l, o), [() => ({
         flexible: E() == "flexible"
       })]), w(t, i)
     };
@@ -227,12 +227,12 @@ var je = V('<a><!> </a> <a><!> </a> <div class="mt-2 flex flex-col items-center 
   Ae = V('<div><div class="flex justify-center"><!></div> <form><div class="mt-6 flex flex-col items-center gap-2"><!></div></form> <p class="text-base-content/60 mt-2 text-center text-sm"> <a class="font-medium" href="/terms/terms-of-service" target="_blank"> </a> <a class="font-medium" href="/terms/privacy" target="_blank"> </a></p></div>');
 
 function pe(a, e) {
-  W(e, !0);
+  X(e, !0);
   let n = U(null),
-    r = U(ve(J ? "" : "turnstile-disabled"));
+    r = U(ve(Q ? "" : "turnstile-disabled"));
 
-  function _(t, i) {
-    return `${_e}/auth/${t}?token=${i}${e.redirect?`&r=${e.redirect}`:""}`
+  function b(t, i) {
+    return `${be}/auth/${t}?token=${i}${e.redirect?`&r=${e.redirect}`:""}`
   }
   var m = Ae(),
     s = d(m),
@@ -246,7 +246,7 @@ function pe(a, e) {
   {
     var P = t => {
       var i = je(),
-        l = X(i),
+        l = Z(i),
         o = d(l);
       Ke(o, {
         class: "mr-1 size-5"
@@ -265,7 +265,7 @@ function pe(a, e) {
       {
         var ne = h => {
           {
-            let N = $(() => be.trim());
+            let N = $(() => _e.trim());
             He(h, {
               get siteKey() {
                 return v(N)
@@ -277,7 +277,7 @@ function pe(a, e) {
           }
         };
         B(O, h => {
-          J && h(ne)
+          Q && h(ne)
         })
       }
       var le = u(O, 2);
@@ -285,13 +285,13 @@ function pe(a, e) {
         A(l, 1, G({
           "btn btn-lg bg-base-100 w-full text-base": !0,
           "bg-base-content/10 pointer-events-none": !v(r)
-        })), Z(l, "href", h), y(H, ` ${N??""}`), A(I, 1, G({
+        })), J(l, "href", h), y(H, ` ${N??""}`), A(I, 1, G({
           "btn btn-lg bg-base-100 w-full text-base": !0,
           "bg-base-content/10 pointer-events-none": !v(r)
-        })), Z(I, "href", K), y(re, ` ${ie??""}`)
-      }, [() => v(r) ? _("google", v(r)) : "#", () => Q({
+        })), J(I, "href", K), y(re, ` ${ie??""}`)
+      }, [() => v(r) ? b("google", v(r)) : "#", () => W({
         name: "Google"
-      }), () => v(r) ? _("twitch", v(r)) : "#", () => Q({
+      }), () => v(r) ? b("twitch", v(r)) : "#", () => W({
         name: "Twitch"
       })]), w(t, i)
     };
@@ -302,10 +302,10 @@ function pe(a, e) {
   f(C), f(g), me(g, t => M(n, t), () => v(n));
   var S = u(g, 2),
     T = d(S),
-    b = u(T),
-    x = d(b, !0);
-  f(b);
-  var k = u(b),
+    _ = u(T),
+    x = d(_, !0);
+  f(_);
+  var k = u(_),
     z = u(k),
     F = d(z, !0);
   f(z), f(S), f(m), j((t, i, l, o) => {

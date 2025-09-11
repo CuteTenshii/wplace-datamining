@@ -1,10 +1,10 @@
 import {
   g as i
-} from "./BdL8ulug.js";
-import "./BkehYq2P.js";
+} from "./h6OEYbJf.js";
+import "./BAHLZhzQ.js";
 import {
   o as Se
-} from "./DDIjJhx5.js";
+} from "./BJOVwT4c.js";
 import {
   p as me,
   g as o,
@@ -19,26 +19,26 @@ import {
   r,
   t as D,
   b as v,
-  c as ge,
+  c as be,
   at as Me,
   n as Ue,
   bi as _e,
-  aX as te,
+  b3 as te,
   ax as fe,
   a as pe,
   v as qe
-} from "./CBHD1ITq.js";
+} from "./dKK_QXGV.js";
 import {
   s as f
-} from "./C3WrtUnf.js";
+} from "./CmOj5OEc.js";
 import {
   p as se,
   i as I,
-  r as be
-} from "./CnFnpIpO.js";
+  r as ge
+} from "./BIdLHF9w.js";
 import {
   e as Ce
-} from "./D_YjJ7vK.js";
+} from "./D8nmctnd.js";
 import {
   b as he,
   C as Pe,
@@ -47,43 +47,43 @@ import {
   s as ve,
   g as F,
   a as ze
-} from "./B0_7pZjx.js";
+} from "./C-BsPPa1.js";
 import {
   t as Ae
-} from "./sdk8OuoY.js";
+} from "./CJcZu7C8.js";
 import {
   a as je,
   c as Ne
-} from "./BIVw5vJh.js";
+} from "./Cav_13Kx.js";
 import {
   b as Ze
-} from "./CDmRdlHe.js";
+} from "./C0Mt-lPy.js";
 import {
   k as Fe,
   l as He,
   m as Ke,
   n as Ve,
-  o as Xe,
+  o as Ye,
   P as ne,
   t as re
-} from "./BqkUhBei.js";
+} from "./D-UMHbEa.js";
 import {
-  P as Ye
-} from "./B8fTxFOP.js";
+  P as Ge
+} from "./DCpAlKON.js";
 import {
-  c as Ge
-} from "./BmwA04hA.js";
+  c as Je
+} from "./C89kEe_D.js";
 import {
-  g as Je
-} from "./B745Tfdl.js";
+  g as Qe
+} from "./Duy10bnV.js";
 import {
-  f as Qe
-} from "./BxNLRaAc.js";
+  f as We
+} from "./DWItFx1t.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "c59cd04c2fee1edb5d1a51fc2b49888cf98f5500"
+      id: "765aed2fd03b66b96279cb6241cc773e0f78add9"
     }
   } catch {}
 })();
@@ -91,12 +91,12 @@ try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "2b0d0a1a-6c88-4c87-a545-ca18067da9e8", t._sentryDebugIdIdentifier = "sentry-dbid-2b0d0a1a-6c88-4c87-a545-ca18067da9e8")
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "5d03ed7f-f094-479e-a4ad-b2e50afa41a4", t._sentryDebugIdIdentifier = "sentry-dbid-5d03ed7f-f094-479e-a4ad-b2e50afa41a4")
   })()
 } catch {}
-const We = () => "Copy",
+const Xe = () => "Copy",
   $e = () => "Copiar",
-  Tn = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? We() : $e(),
+  Tn = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? Xe() : $e(),
   et = () => "Report User",
   tt = () => "Reportar usuário",
   nt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? et() : tt(),
@@ -114,10 +114,10 @@ const We = () => "Copy",
   pt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? _t() : ft(),
   vt = () => "Use of software to completely automate painting",
   mt = () => "Uso de software para pintar de forma completamente automatizada ",
-  gt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? vt() : mt(),
-  bt = () => "Racism, homophobia, hate groups, ...",
+  bt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? vt() : mt(),
+  gt = () => "Racism, homophobia, hate groups, ...",
   ht = () => "Racismo, homofobia, grupos de ódio, ...",
-  xt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? bt() : ht(),
+  xt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? gt() : ht(),
   yt = () => "Messed up artworks for no reason",
   wt = () => "Estragar desenho dos outros sem motivo",
   Rt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? yt() : wt(),
@@ -144,13 +144,13 @@ const We = () => "Copy",
   Ht = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? Zt() : Ft(),
   Kt = () => "Report failed. Please try again later",
   Vt = () => "Denúncia falhou. Por favor, tente novamente mais tarde",
-  Xt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? Kt() : Vt(),
-  Yt = () => "Required",
-  Gt = () => "Obrigatório",
-  Jt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? Yt() : Gt(),
-  Qt = t => `Min. characters: ${t.min}`,
-  Wt = t => `Mínimo de caracteres: ${t.min}`,
-  $t = (t, e = {}) => (e.locale ?? i()) === "en" ? Qt(t) : Wt(t),
+  Yt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? Kt() : Vt(),
+  Gt = () => "Required",
+  Jt = () => "Obrigatório",
+  Qt = (t = {}, e = {}) => (e.locale ?? i()) === "en" ? Gt() : Jt(),
+  Wt = t => `Min. characters: ${t.min}`,
+  Xt = t => `Mínimo de caracteres: ${t.min}`,
+  $t = (t, e = {}) => (e.locale ?? i()) === "en" ? Wt(t) : Xt(t),
   en = t => `Max. characters: ${t.max}`,
   tn = t => `Máximo de caracteres: ${t.max}`,
   nn = (t, e = {}) => (e.locale ?? i()) === "en" ? en(t) : tn(t);
@@ -162,7 +162,7 @@ function sn(t, e) {
   me(e, !0);
   let n = se(e, "value", 15),
     p = se(e, "validate", 15),
-    L = be(e, ["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate"]),
+    L = ge(e, ["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate"]),
     y = S("");
   const k = ae(() => {
     var l;
@@ -171,7 +171,7 @@ function sn(t, e) {
   p(T);
 
   function T() {
-    return e.min !== void 0 && o(k) < e.min ? (x(y, e.min === 1 ? Jt() : $t({
+    return e.min !== void 0 && o(k) < e.min ? (x(y, e.min === 1 ? Qt() : $t({
       min: e.min
     }), !0), !1) : e.max !== void 0 && o(k) > e.max ? (x(y, nn({
       max: e.max
@@ -185,9 +185,9 @@ function sn(t, e) {
     z = a(B);
   {
     var H = l => {
-      var b = rn(),
-        E = a(b, !0);
-      r(b), D(() => f(E, e.label)), v(l, b)
+      var g = rn(),
+        E = a(g, !0);
+      r(g), D(() => f(E, e.label)), v(l, g)
     };
     I(z, l => {
       e.label && l(H)
@@ -208,16 +208,16 @@ function sn(t, e) {
   r(q);
   var m = u(q, 2);
   {
-    var g = l => {
-      var b = an(),
-        E = a(b, !0);
-      r(b), D(() => f(E, e.max - o(k))), v(l, b)
+    var b = l => {
+      var g = an(),
+        E = a(g, !0);
+      r(g), D(() => f(E, e.max - o(k))), v(l, g)
     };
     I(m, l => {
-      e.max !== void 0 && l(g)
+      e.max !== void 0 && l(b)
     })
   }
-  r(U), r(B), D(() => f(K, o(y))), je(h, n), v(t, B), ge()
+  r(U), r(B), D(() => f(K, o(y))), je(h, n), v(t, B), be()
 }
 var ln = M('<label class="flex gap-3"><input name="reason" class="radio radio-sm mt-1" type="radio"/> <div><div class="font-semibold"> </div> <div class="text-base-content/80 text-sm"> </div></div></label>'),
   cn = (t, e) => {
@@ -250,10 +250,10 @@ function Sn(t, e) {
   }, {
     value: "bot",
     label: Ve(),
-    description: gt()
+    description: bt()
   }, {
     value: "griefing",
-    label: Xe(),
+    label: Ye(),
     description: Rt()
   }, {
     value: "other",
@@ -261,8 +261,8 @@ function Sn(t, e) {
     description: Mt()
   }];
   Se(() => {
-    const m = g => {
-      g.key === "Escape" && p(!1)
+    const m = b => {
+      b.key === "Escape" && p(!1)
     };
     return document.addEventListener("keydown", m), () => document.removeEventListener("keydown", m)
   }), oe(() => {
@@ -278,18 +278,18 @@ function Sn(t, e) {
     q = u(a(U), 2);
   {
     var K = m => {
-      var g = un(),
-        l = a(g);
+      var b = un(),
+        l = a(b);
       O(l);
-      var b = u(l, 2);
-      O(b);
-      var E = u(b, 2);
+      var g = u(l, 2);
+      O(g);
+      var E = u(g, 2);
       O(E);
       var V = u(E, 2);
       O(V);
-      var X = u(V, 2),
-        ie = a(X);
-      Ye(ie, {
+      var Y = u(V, 2),
+        ie = a(Y);
+      Ge(ie, {
         get userId() {
           return e.paintedBy.id
         },
@@ -299,8 +299,8 @@ function Sn(t, e) {
         class: "size-14"
       });
       var le = u(ie, 2),
-        Y = a(le),
-        xe = a(Y);
+        G = a(le),
+        xe = a(G);
       {
         var ye = c => {
             var s = te();
@@ -338,19 +338,19 @@ function Sn(t, e) {
           e.action === "report-user" ? c(ye) : c(we, !1)
         })
       }
-      r(Y);
-      var G = u(Y, 2),
-        J = a(G),
-        Re = a(J, !0);
-      r(J);
-      var ce = u(J, 2),
+      r(G);
+      var J = u(G, 2),
+        Q = a(J),
+        Re = a(Q, !0);
+      r(Q);
+      var ce = u(Q, 2),
         ke = a(ce);
-      r(ce), r(G), r(le), r(X);
-      var Q = u(X, 2),
-        W = a(Q),
-        De = a(W);
-      r(W);
-      var ue = u(W, 2);
+      r(ce), r(J), r(le), r(Y);
+      var W = u(Y, 2),
+        X = a(W),
+        De = a(X);
+      r(X);
+      var ue = u(X, 2);
       Ce(ue, 21, () => z, c => c.value, (c, s) => {
         var d = ln(),
           _ = a(d);
@@ -364,8 +364,8 @@ function Sn(t, e) {
         r(N), r(w), r(d), D(() => {
           ve(_, "aria-label", o(s).label), j !== (j = o(s).value) && (_.value = (_.__value = o(s).value) ?? ""), f(C, o(s).label), f(P, o(s).description)
         }), Ne(n, [], _, () => (o(s).value, o(y)), Z => x(y, Z)), v(c, d)
-      }), r(ue), r(Q);
-      var $ = u(Q, 2),
+      }), r(ue), r(W);
+      var $ = u(W, 2),
         Be = a($);
       {
         let c = ae(() => Ct()),
@@ -402,9 +402,9 @@ function Sn(t, e) {
       r(A);
       var ee = u(A, 2),
         Le = a(ee, !0);
-      r(ee), r(de), r(g), Ze(g, c => x(T, c), () => o(T)), D((c, s, d, _) => {
-        ve(g, "action", H[e.action]), F(l, e.paintedBy.id), F(b, e.latLon[0]), F(E, e.latLon[1]), F(V, e.zoom), ze(G, 1, `font-medium ${c??""} flex gap-1.5`), f(Re, e.paintedBy.name), f(ke, `#${e.paintedBy.id??""}`), f(De, `${s??""}:`), f(Ee, d), ee.disabled = o(L), f(Le, _)
-      }, [() => Je(e.paintedBy.id), () => dt(), () => Ge(), () => zt()]), _e("submit", g, async c => {
+      r(ee), r(de), r(b), Ze(b, c => x(T, c), () => o(T)), D((c, s, d, _) => {
+        ve(b, "action", H[e.action]), F(l, e.paintedBy.id), F(g, e.latLon[0]), F(E, e.latLon[1]), F(V, e.zoom), ze(J, 1, `font-medium ${c??""} flex gap-1.5`), f(Re, e.paintedBy.name), f(ke, `#${e.paintedBy.id??""}`), f(De, `${s??""}:`), f(Ee, d), ee.disabled = o(L), f(Le, _)
+      }, [() => Qe(e.paintedBy.id), () => dt(), () => Je(), () => zt()]), _e("submit", b, async c => {
         if (c.preventDefault(), !o(L) && o(B)()) try {
           x(L, !0);
           const s = new FormData(o(T));
@@ -419,11 +419,11 @@ function Sn(t, e) {
             body: s,
             credentials: "include"
           });
-          _.status === 200 || _.status === 409 ? (re.info(Nt()), p(!1)) : re.error(Xt())
+          _.status === 200 || _.status === 409 ? (re.info(Nt()), p(!1)) : re.error(Yt())
         } finally {
           x(L, !1)
         }
-      }), Ae(2, g, () => Qe), v(m, g)
+      }), Ae(2, b, () => We), v(m, b)
     };
     I(q, m => {
       p() && m(K)
@@ -433,13 +433,13 @@ function Sn(t, e) {
     oe(() => {
       p() ? m.show() : m.close()
     })
-  }), _e("close", h, () => p(!1)), v(t, h), ge()
+  }), _e("close", h, () => p(!1)), v(t, h), be()
 }
 Me(["click"]);
 var _n = qe('<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
 
 function In(t, e) {
-  let n = be(e, ["$$slots", "$$events", "$$legacy"]);
+  let n = ge(e, ["$$slots", "$$events", "$$legacy"]);
   var p = _n();
   he(p, () => ({
     xmlns: "http://www.w3.org/2000/svg",
