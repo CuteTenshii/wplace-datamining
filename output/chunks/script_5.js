@@ -4,18 +4,18 @@ import {
   as as h,
   h as d,
   W as u,
-  ak as y,
+  ak as c,
   a9 as i,
   V as f,
   O as o,
   o as s,
-  P as c
-} from "./NO1IpA65.js";
+  P as y
+} from "./CBHD1ITq.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "a08aaa4cc3329c16d583f3f519629bce2e5a6410"
+      id: "c59cd04c2fee1edb5d1a51fc2b49888cf98f5500"
     }
   } catch {}
 })();
@@ -37,7 +37,7 @@ function p(a) {
     l = d;
   var t;
   if (d) {
-    for (n = s, e === void 0 && (e = c(document.head)); e !== null && (e.nodeType !== u || e.data !== y);) e = i(e);
+    for (n = s, e === void 0 && (e = y(document.head)); e !== null && (e.nodeType !== u || e.data !== c);) e = i(e);
     e === null ? f(!1) : e = o(i(e))
   }
   d || (t = document.head.appendChild(r()));

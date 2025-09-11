@@ -19,15 +19,15 @@ import {
   au as Y,
   z as ae,
   u as I
-} from "./NO1IpA65.js";
+} from "./CBHD1ITq.js";
 import {
   g
-} from "./CsmheoQ2.js";
+} from "./BdL8ulug.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "a08aaa4cc3329c16d583f3f519629bce2e5a6410"
+      id: "c59cd04c2fee1edb5d1a51fc2b49888cf98f5500"
     }
   } catch {}
 })();
@@ -151,7 +151,7 @@ const W = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
       throw Error("TextEncoder not available")
     }
   },
-  ye = typeof W.encodeInto == "function" ? function(n, e) {
+  be = typeof W.encodeInto == "function" ? function(n, e) {
     return W.encodeInto(n, e)
   } : function(n, e) {
     const t = W.encode(n);
@@ -179,7 +179,7 @@ function ce(n, e, t) {
   if (i !== a) {
     i !== 0 && (n = n.slice(i)), r = t(r, a, a = i + n.length * 3, 1) >>> 0;
     const s = H().subarray(r + i, r + a),
-      l = ye(n, s);
+      l = be(n, s);
     i += l.written, r = t(r, a, i, 1) >>> 0
   }
   return Z = i, r
@@ -191,7 +191,7 @@ function Fn(n) {
   f.request_url(e, t)
 }
 
-function be() {
+function ye() {
   let n, e;
   try {
     const t = f.get_load_payload();
@@ -375,9 +375,9 @@ const Ie = () => "Unexpected server error. Try again later.",
   _t = () => "You are already in an alliance",
   pt = () => "Você já está em uma aliança",
   wt = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? _t() : pt(),
-  yt = () => "You are not allowed to do this",
-  bt = () => "Você não tem permissão para fazer isso",
-  E = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? yt() : bt(),
+  bt = () => "You are not allowed to do this",
+  yt = () => "Você não tem permissão para fazer isso",
+  E = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? bt() : yt(),
   St = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
   Tt = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
   Et = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? St() : Tt(),
@@ -607,7 +607,7 @@ class wn {
       return r.then(i => {
         if (typeof i == "object" && i && "ok" in i && typeof i.ok == "boolean" && !i.ok) {
           o = !1;
-          const s = yn(i);
+          const s = bn(i);
           this.create({
             id: a,
             type: "error",
@@ -675,13 +675,13 @@ class wn {
 }
 N = new WeakMap, q = new WeakMap, U = new WeakMap;
 
-function yn(n) {
+function bn(n) {
   return n && typeof n == "object" && "status" in n ? `HTTP error! Status: ${n.status}` : `Error! ${n}`
 }
-const b = new wn;
+const y = new wn;
 
-function bn(n, e) {
-  return b.create({
+function yn(n, e) {
+  return y.create({
     message: n,
     ...e
   })
@@ -689,25 +689,25 @@ function bn(n, e) {
 var Q;
 class Vn {
   constructor() {
-    h(this, Q, I(() => b.toasts.filter(e => !e.dismiss)))
+    h(this, Q, I(() => y.toasts.filter(e => !e.dismiss)))
   }
   get toasts() {
     return p(d(this, Q))
   }
 }
 Q = new WeakMap;
-const Sn = bn,
+const Sn = yn,
   Tn = Object.assign(Sn, {
-    success: b.success,
-    info: b.info,
-    warning: b.warning,
-    error: b.error,
-    custom: b.custom,
-    message: b.message,
-    promise: b.promise,
-    dismiss: b.dismiss,
-    loading: b.loading,
-    getActiveToasts: () => b.toasts.filter(n => !n.dismiss)
+    success: y.success,
+    info: y.info,
+    warning: y.warning,
+    error: y.error,
+    custom: y.custom,
+    message: y.message,
+    promise: y.promise,
+    dismiss: y.dismiss,
+    loading: y.loading,
+    getActiveToasts: () => y.toasts.filter(n => !n.dismiss)
   });
 var G, R, j, $, F, K, J;
 class En {
@@ -1182,12 +1182,12 @@ class Ln {
   async paint(e, t, a) {
     const r = An(e, s => `t=(${s.tile[0]},${s.tile[1]}),s=${s.season}`),
       i = (await Promise.all(Object.values(r).map(s => {
-        const [l, u] = s[0].tile, T = s[0].season, y = {
+        const [l, u] = s[0].tile, T = s[0].season, b = {
           colors: s.map(ee => ee.colorIdx),
           coords: s.flatMap(ee => ee.pixel),
           t,
           fp: a
-        }, te = JSON.stringify(y);
+        }, te = JSON.stringify(b);
         return this.request(`/s${T}/pixel/${l}/${u}`, {
           method: "POST",
           body: te,
@@ -1771,7 +1771,7 @@ class Ln {
     if (s.status !== 200) throw new _(c(), s.status);
     const l = await s.json(),
       u = Array.isArray(l == null ? void 0 : l.tickets) ? l.tickets : [];
-    return u.sort((T, y) => new Date(y.createdAt).getTime() - new Date(T.createdAt).getTime()), u
+    return u.sort((T, b) => new Date(b.createdAt).getTime() - new Date(T.createdAt).getTime()), u
   }
   mapTicketsToReportRows(e, t) {
     var r, o, i, s, l;
@@ -1779,31 +1779,31 @@ class Ln {
     for (const u of e) {
       const T = u.status ?? "open";
       if (t === "received") {
-        for (const y of u.reports) a.push({
-          id: String(y.id),
+        for (const b of u.reports) a.push({
+          id: String(b.id),
           ticketId: String(u.id),
-          createdAt: y.createdAt ?? u.createdAt,
+          createdAt: b.createdAt ?? u.createdAt,
           byUser: {
-            id: Number(y.reportedBy),
-            name: String(y.reportedByName ?? y.reportedBy),
-            picture: y.reportedByPicture ?? null
+            id: Number(b.reportedBy),
+            name: String(b.reportedByName ?? b.reportedBy),
+            picture: b.reportedByPicture ?? null
           },
-          reason: String(y.reason),
+          reason: String(b.reason),
           status: T
         });
         continue
       }
       if (t === "sent") {
-        for (const y of u.reports) a.push({
-          id: String(y.id),
+        for (const b of u.reports) a.push({
+          id: String(b.id),
           ticketId: String(u.id),
-          createdAt: y.createdAt ?? u.createdAt,
+          createdAt: b.createdAt ?? u.createdAt,
           toUser: {
             id: Number(u.reportedUser.id),
             name: String(u.reportedUser.name),
             picture: u.reportedUser.picture ?? null
           },
-          reason: String(y.reason),
+          reason: String(b.reason),
           status: T
         });
         continue
@@ -1849,7 +1849,7 @@ class Ln {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
-        pawtectMe: be(),
+        pawtectMe: ye(),
         "paint-the": "world",
         "but-not": "using-bots",
         security: "/.well-known/security.txt"
@@ -1861,5 +1861,5 @@ class Ln {
 z = new WeakMap;
 let se = new Ln(me);
 export {
-  jn as A, le as C, me as P, Dn as S, Ae as _, se as a, Jn as b, c, we as d, Rn as e, b as f, _e as g, zn as h, Vn as i, $n as j, Ut as k, Kt as l, Yt as m, jt as n, Vt as o, Zn as p, mn as q, Fn as r, Kn as s, Tn as t, vn as u, Hn as v, Wn as w, Yn as x, un as y, Gn as z
+  jn as A, le as C, me as P, Dn as S, Ae as _, se as a, Jn as b, c, we as d, Rn as e, y as f, _e as g, zn as h, Vn as i, $n as j, Ut as k, Kt as l, Yt as m, jt as n, Vt as o, Zn as p, mn as q, Fn as r, Kn as s, Tn as t, vn as u, Hn as v, Wn as w, Yn as x, un as y, Gn as z
 };
