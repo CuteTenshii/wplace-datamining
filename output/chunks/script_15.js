@@ -6,12 +6,12 @@ import {
   z as u,
   bk as w,
   L as d
-} from "./DtGUdJ1U.js";
+} from "./DE7nBIcs.js";
 (function() {
   try {
     var q = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     q.SENTRY_RELEASE = {
-      id: "fb9756cfc678367f6d45a3b96666d7a30e410b05"
+      id: "9d334f775ce4e0b40338df37698a54b5ae8c153f"
     }
   } catch {}
 })();
@@ -70,13 +70,13 @@ function C() {
   })
 }
 
-function b(q) {
+function x(q) {
   return a({
     type: "paintPixels",
     data: q
   })
 }
-async function x() {
+async function b() {
   t || await a({
     type: "clearPixelPreview"
   })
@@ -116,5 +116,5 @@ function U({
   return `t=(${A[0]},${A[1]});p=(${q[0]},${q[1]});s=${V}`
 }
 export {
-  L as A, C as a, b, y as c, U as g, f as p, x as s
+  L as A, C as a, x as b, y as c, U as g, f as p, b as s
 };
