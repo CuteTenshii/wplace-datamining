@@ -1,12 +1,12 @@
 import {
   l as o,
-  a as t
-} from "../chunks/DYkl4ZIw.js";
+  a
+} from "../chunks/CvUuzEOb.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "30f09f0230c485b726216ceb4465e7532bc1894f"
+      id: "aeec6004f37eb410c4fa5f542a20b7bcda513933"
     }
   } catch {}
 })();
@@ -18,5 +18,5 @@ try {
   })()
 } catch {}
 export {
-  o as load_css, t as start
+  o as load_css, a as start
 };
