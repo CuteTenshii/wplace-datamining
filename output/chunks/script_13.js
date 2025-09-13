@@ -1,8 +1,8 @@
-var de = Object.defineProperty;
+var le = Object.defineProperty;
 var ne = n => {
   throw TypeError(n)
 };
-var ue = (n, e, t) => e in n ? de(n, e, {
+var ue = (n, e, t) => e in n ? le(n, e, {
   enumerable: !0,
   configurable: !0,
   writable: !0,
@@ -10,7 +10,7 @@ var ue = (n, e, t) => e in n ? de(n, e, {
 }) : n[e] = t;
 var m = (n, e, t) => ue(n, typeof e != "symbol" ? e + "" : e, t),
   ge = (n, e, t) => e.has(n) || ne("Cannot " + t);
-var d = (n, e, t) => (ge(n, e, "read from private field"), t ? t.call(n) : e.get(n)),
+var l = (n, e, t) => (ge(n, e, "read from private field"), t ? t.call(n) : e.get(n)),
   h = (n, e, t) => e.has(n) ? ne("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(n) : e.set(n, t);
 import {
   av as S,
@@ -19,15 +19,15 @@ import {
   au as Y,
   z as ae,
   u as I
-} from "./JMoIuhVR.js";
+} from "./BfyPe_e4.js";
 import {
   g
-} from "./DfN8llDv.js";
+} from "./Cksl_0OD.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "4097d37663b9a72f9231b790868cce52a6a81192"
+      id: "192dcd45d3adb98b0c3a7a5b0a35fc5bc1b8aa18"
     }
   } catch {}
 })();
@@ -53,44 +53,44 @@ class he {
     h(this, D, S(Y(Date.now())));
     h(this, L, S(void 0));
     setInterval(() => {
-      w(d(this, D), Date.now(), !0)
+      w(l(this, D), Date.now(), !0)
     }, 500)
   }
   get dropletsDialogOpen() {
-    return p(d(this, M))
+    return p(l(this, M))
   }
   set dropletsDialogOpen(e) {
-    w(d(this, M), e, !0)
+    w(l(this, M), e, !0)
   }
   get muted() {
-    return p(d(this, k))
+    return p(l(this, k))
   }
   set muted(e) {
-    w(d(this, k), e, !0)
+    w(l(this, k), e, !0)
   }
   get language() {
-    return p(d(this, O))
+    return p(l(this, O))
   }
   set language(e) {
-    w(d(this, O), e, !0)
+    w(l(this, O), e, !0)
   }
   get turnstatileLoaded() {
-    return p(d(this, B))
+    return p(l(this, B))
   }
   set turnstatileLoaded(e) {
-    w(d(this, B), e, !0)
+    w(l(this, B), e, !0)
   }
   get now() {
-    return p(d(this, D))
+    return p(l(this, D))
   }
   get captcha() {
-    return we ? p(d(this, L)) : {
+    return we ? p(l(this, L)) : {
       token: "turnstile-disabled",
       time: Date.now()
     }
   }
   set captcha(e) {
-    w(d(this, L), e, !0)
+    w(l(this, L), e, !0)
   }
 }
 M = new WeakMap, k = new WeakMap, O = new WeakMap, B = new WeakMap, D = new WeakMap, L = new WeakMap;
@@ -164,8 +164,8 @@ const W = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
 function ce(n, e, t) {
   if (t === void 0) {
     const s = W.encode(n),
-      l = e(s.length, 1) >>> 0;
-    return H().subarray(l, l + s.length).set(s), Z = s.length, l
+      d = e(s.length, 1) >>> 0;
+    return H().subarray(d, d + s.length).set(s), Z = s.length, d
   }
   let a = n.length,
     r = e(a, 1) >>> 0;
@@ -179,8 +179,8 @@ function ce(n, e, t) {
   if (i !== a) {
     i !== 0 && (n = n.slice(i)), r = t(r, a, a = i + n.length * 3, 1) >>> 0;
     const s = H().subarray(r + i, r + a),
-      l = ye(n, s);
-    i += l.written, r = t(r, a, i, 1) >>> 0
+      d = ye(n, s);
+    i += d.written, r = t(r, a, i, 1) >>> 0
   }
   return Z = i, r
 }
@@ -365,10 +365,10 @@ const Ie = () => "Unexpected server error. Try again later.",
   st = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? rt() : ot(),
   it = () => "Alliance name exceeded the maximum number of characters",
   ct = () => "O nome da aliança excedeu o número máximo de caracteres",
-  lt = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? it() : ct(),
-  dt = () => "Alliance name already taken",
+  dt = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? it() : ct(),
+  lt = () => "Alliance name already taken",
   ut = () => "Já possui uma aliança com esse nome",
-  gt = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? dt() : ut(),
+  gt = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? lt() : ut(),
   ft = () => "Alliance with empty name",
   mt = () => "Aliança com nome vazio",
   ht = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? ft() : mt(),
@@ -420,9 +420,9 @@ const Ie = () => "Unexpected server error. Try again later.",
   on = () => "Your account has been suspended for breaking the rules",
   sn = () => "Sua conta foi suspensa por quebrar as regras",
   cn = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? on() : sn(),
-  ln = () => "Your account has been banned for violating the rules",
-  dn = () => "A sua conta foi banida por quebrar as regras",
-  un = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? ln() : dn(),
+  dn = () => "Your account has been banned for violating the rules",
+  ln = () => "A sua conta foi banida por quebrar as regras",
+  un = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? dn() : ln(),
   gn = n => `Your account has been suspended out until ${n.until}`,
   fn = n => `A sua conta está suspensa até ${n.until}`,
   mn = (n, e = {}) => (e.locale ?? g()) === "en" ? gn(n) : fn(n),
@@ -471,7 +471,7 @@ class _n {
     if (a >= this.bytes.length) {
       const i = new Uint8Array(a + 1),
         s = i.length - this.bytes.length;
-      for (let l = 0; l < this.bytes.length; l++) i[l + s] = this.bytes[l];
+      for (let d = 0; d < this.bytes.length; d++) i[d + s] = this.bytes[d];
       this.bytes = i
     }
     const o = this.bytes.length - 1 - a;
@@ -560,7 +560,7 @@ class wn {
         this.toasts = [];
         return
       }
-      const t = d(this, U).call(this, e);
+      const t = l(this, U).call(this, e);
       if (t !== null) return this.toasts.splice(t, 1), e
     });
     m(this, "message", (e, t) => this.create({
@@ -649,7 +649,7 @@ class wn {
       this.heights = this.heights.filter(t => t.toastId !== e)
     });
     m(this, "setHeight", e => {
-      const t = d(this, U).call(this, e.toastId);
+      const t = l(this, U).call(this, e.toastId);
       if (t === null) {
         this.heights.push(e);
         return
@@ -661,16 +661,16 @@ class wn {
     })
   }
   get toasts() {
-    return p(d(this, N))
+    return p(l(this, N))
   }
   set toasts(e) {
-    w(d(this, N), e, !0)
+    w(l(this, N), e, !0)
   }
   get heights() {
-    return p(d(this, q))
+    return p(l(this, q))
   }
   set heights(e) {
-    w(d(this, q), e, !0)
+    w(l(this, q), e, !0)
   }
 }
 N = new WeakMap, q = new WeakMap, U = new WeakMap;
@@ -692,7 +692,7 @@ class Vn {
     h(this, Q, I(() => b.toasts.filter(e => !e.dismiss)))
   }
   get toasts() {
-    return p(d(this, Q))
+    return p(l(this, Q))
   }
 }
 Q = new WeakMap;
@@ -740,46 +740,46 @@ class En {
     }
   }
   get data() {
-    return p(d(this, G))
+    return p(l(this, G))
   }
   set data(e) {
-    w(d(this, G), e, !0)
+    w(l(this, G), e, !0)
   }
   get loading() {
-    return p(d(this, R))
+    return p(l(this, R))
   }
   set loading(e) {
-    w(d(this, R), e, !0)
+    w(l(this, R), e, !0)
   }
   get lastFetch() {
-    return p(d(this, j))
+    return p(l(this, j))
   }
   set lastFetch(e) {
-    w(d(this, j), e)
+    w(l(this, j), e)
   }
   get charges() {
-    return p(d(this, $))
+    return p(l(this, $))
   }
   set charges(e) {
-    w(d(this, $), e)
+    w(l(this, $), e)
   }
   get cooldown() {
-    return p(d(this, F))
+    return p(l(this, F))
   }
   set cooldown(e) {
-    w(d(this, F), e)
+    w(l(this, F), e)
   }
   get flagsBitmap() {
-    return p(d(this, K))
+    return p(l(this, K))
   }
   set flagsBitmap(e) {
-    w(d(this, K), e)
+    w(l(this, K), e)
   }
   get timeoutUntil() {
-    return p(d(this, J))
+    return p(l(this, J))
   }
   set timeoutUntil(e) {
-    w(d(this, J), e)
+    w(l(this, J), e)
   }
   async refresh() {
     try {
@@ -1160,9 +1160,9 @@ const In = [{
     countries: Bn
   },
   Dn = X,
-  le = X.seasons.length - 1,
-  Wn = X.seasons[le].zoom,
-  Yn = X.seasons[le].tileSize;
+  de = X.seasons.length - 1,
+  Wn = X.seasons[de].zoom,
+  Yn = X.seasons[de].tileSize;
 
 function Zn(n) {
   return Dn.countries[n - 1]
@@ -1174,21 +1174,21 @@ class Ln {
     this.url = e
   }
   get online() {
-    return p(d(this, z))
+    return p(l(this, z))
   }
   set online(e) {
-    w(d(this, z), e, !0)
+    w(l(this, z), e, !0)
   }
   async paint(e, t, a) {
     const r = An(e, s => `t=(${s.tile[0]},${s.tile[1]}),s=${s.season}`),
       i = (await Promise.all(Object.values(r).map(s => {
-        const [l, u] = s[0].tile, T = s[0].season, y = {
+        const [d, u] = s[0].tile, T = s[0].season, y = {
           colors: s.map(ee => ee.colorIdx),
           coords: s.flatMap(ee => ee.pixel),
           t,
           fp: a
         }, te = JSON.stringify(y);
-        return this.request(`/s${T}/pixel/${l}/${u}`, {
+        return this.request(`/s${T}/pixel/${d}/${u}`, {
           method: "POST",
           body: te,
           headers: {
@@ -1202,16 +1202,16 @@ class Ln {
       if (s.status === 401) throw new Error(Me());
       if (s.status === 403) {
         if (s.headers.get("cf-mitigated") === "challenge") throw new Error(Ot());
-        const l = await s.json();
-        if ((l == null ? void 0 : l.error) === "refresh") throw new Error(Lt());
+        const d = await s.json();
+        if ((d == null ? void 0 : d.error) === "refresh") throw new Error(Lt());
         vn.refresh()
       } else if (s.status === 451) {
-        const l = await i[0].json();
-        l == null || l.err;
-        const u = l == null ? void 0 : l.suspension;
+        const d = await i[0].json();
+        d == null || d.err;
+        const u = d == null ? void 0 : d.suspension;
         if (u === "ban") throw new Error(un());
         if (u === "timeout") {
-          const T = new Date(Date.now() + ((l == null ? void 0 : l.durationMs) ?? 0));
+          const T = new Date(Date.now() + ((d == null ? void 0 : d.durationMs) ?? 0));
           throw new Error(mn({
             until: T.toLocaleString()
           }))
@@ -1227,16 +1227,16 @@ class Ln {
   }) {
     const s = new URLSearchParams;
     s.set("x", String(r)), s.set("y", String(o));
-    const l = await this.request(`${i?"/moderator":""}/s${e}/pixel/${t}/${a}?${s.toString()}`, {
+    const d = await this.request(`${i?"/moderator":""}/s${e}/pixel/${t}/${a}?${s.toString()}`, {
       credentials: i ? "include" : void 0
     });
-    if (l.status !== 200) {
-      const u = await l.text();
+    if (d.status !== 200) {
+      const u = await d.text();
       throw new Error(Be({
         err: u
       }))
     }
-    return l.json()
+    return d.json()
   }
   async getPixelAreaInfo({
     season: e,
@@ -1244,14 +1244,14 @@ class Ln {
     p0: [r, o],
     p1: [i, s]
   }) {
-    const l = await this.request(`/moderator/pixel-area/s${e}/${t}/${a}?x0=${r}&y0=${o}&x1=${i}&y1=${s}`, {
+    const d = await this.request(`/moderator/pixel-area/s${e}/${t}/${a}?x0=${r}&y0=${o}&x1=${i}&y1=${s}`, {
       credentials: "include"
     });
-    if (l.status !== 200) {
-      const u = await l.text();
+    if (d.status !== 200) {
+      const u = await d.text();
       throw console.error("Error while fetching pixel area info", u), new Error(c())
     }
-    return l.json()
+    return d.json()
   }
   async me() {
     const e = await this.request("/me", {
@@ -1422,7 +1422,7 @@ class Ln {
     if (t.status === 200) return t.json();
     if (t.status === 400) {
       const a = await t.json();
-      throw a.error === "max_characters" ? new Error(lt()) : a.error === "name_taken" ? new Error(gt()) : a.error == "empty_name" ? new Error(ht()) : new Error(c())
+      throw a.error === "max_characters" ? new Error(dt()) : a.error === "name_taken" ? new Error(gt()) : a.error == "empty_name" ? new Error(ht()) : new Error(c())
     } else throw t.status === 403 ? new Error(wt()) : new Error(c())
   }
   async leaveAlliance() {
@@ -1777,12 +1777,12 @@ class Ln {
       credentials: "include"
     });
     if (s.status !== 200) throw new _(c(), s.status);
-    const l = await s.json(),
-      u = Array.isArray(l == null ? void 0 : l.tickets) ? l.tickets : [];
+    const d = await s.json(),
+      u = Array.isArray(d == null ? void 0 : d.tickets) ? d.tickets : [];
     return u.sort((T, y) => new Date(y.createdAt).getTime() - new Date(T.createdAt).getTime()), u
   }
   mapTicketsToReportRows(e, t) {
-    var r, o, i, s, l;
+    var r, o, i, s, d;
     const a = [];
     for (const u of e) {
       const T = u.status ?? "open";
@@ -1829,7 +1829,7 @@ class Ln {
           name: "—",
           picture: null
         },
-        reason: String(((l = (s = u.reports) == null ? void 0 : s[0]) == null ? void 0 : l.reason) ?? "other"),
+        reason: String(((d = (s = u.reports) == null ? void 0 : s[0]) == null ? void 0 : d.reason) ?? "other"),
         status: T
       })
     }
@@ -1863,5 +1863,5 @@ class Ln {
 z = new WeakMap;
 let se = new Ln(me);
 export {
-  jn as A, le as C, me as P, Dn as S, Ae as _, se as a, Jn as b, c, we as d, Rn as e, b as f, _e as g, zn as h, Vn as i, $n as j, Ut as k, Kt as l, Yt as m, jt as n, Vt as o, Zn as p, mn as q, Fn as r, Kn as s, Tn as t, vn as u, Hn as v, Wn as w, Yn as x, un as y, Gn as z
+  jn as A, de as C, me as P, Dn as S, Ae as _, se as a, Jn as b, c, we as d, Rn as e, b as f, _e as g, zn as h, Vn as i, $n as j, Ut as k, Kt as l, Yt as m, jt as n, Vt as o, Zn as p, mn as q, Fn as r, Kn as s, Tn as t, vn as u, Hn as v, Wn as w, Yn as x, un as y, Gn as z
 };
