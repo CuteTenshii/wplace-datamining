@@ -1,4 +1,4 @@
-import "./m5b9SWQ2.js";
+import "./lCRikMvF.js";
 import {
   p as m,
   f as c,
@@ -8,44 +8,44 @@ import {
   d as y,
   s as _,
   r as h
-} from "./DE7nBIcs.js";
+} from "./JMoIuhVR.js";
 import {
   p as w,
   i as x,
   r as E
-} from "./Bl60H2rs.js";
+} from "./C1d7XoeA.js";
 import {
   b as T,
   a as f,
   s as S
-} from "./3ba3434_.js";
+} from "./BfwUVNSG.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "9d334f775ce4e0b40338df37698a54b5ae8c153f"
+      id: "4097d37663b9a72f9231b790868cce52a6a81192"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "32d6135c-3105-4044-9569-1bc076aa3438", e._sentryDebugIdIdentifier = "sentry-dbid-32d6135c-3105-4044-9569-1bc076aa3438")
+      a = new e.Error().stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "32d6135c-3105-4044-9569-1bc076aa3438", e._sentryDebugIdIdentifier = "sentry-dbid-32d6135c-3105-4044-9569-1bc076aa3438")
   })()
 } catch {}
 const B = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
 var L = c("<span>wplace</span>"),
   R = c('<div><img alt="Wplace logo"/> <!></div>');
 
-function z(e, t) {
-  m(t, !0);
-  let a = w(t, "size", 3, "default"),
-    g = E(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+function z(e, a) {
+  m(a, !0);
+  let t = w(a, "size", 3, "default"),
+    g = E(a, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
   var l = R();
   T(l, () => ({
     ...g,
-    class: `flex items-center gap-1.5 ${t.class??""}`
+    class: `flex items-center gap-1.5 ${a.class??""}`
   }));
   var i = y(l);
   let o;
@@ -55,20 +55,20 @@ function z(e, t) {
       var n = L();
       let A;
       d(b => A = f(n, 1, "text-base-content font-pixel", null, A, b), [() => ({
-        "text-4xl": a() === "default",
-        "text-5xl": a() === "lg" || a() === "medium"
+        "text-4xl": t() === "default",
+        "text-5xl": t() === "lg" || t() === "medium"
       })]), r(s, n)
     };
     x(p, s => {
-      t.hasText && s(u)
+      a.hasText && s(u)
     })
   }
   h(l), d(s => {
     o = f(i, 1, "pixelated", null, o, s), S(i, "src", B)
   }, [() => ({
-    "size-10": a() === "default",
-    "size-16": a() === "medium",
-    "size-20": a() === "lg"
+    "size-10": t() === "default",
+    "size-16": t() === "medium",
+    "size-20": t() === "lg"
   })]), r(e, l), v()
 }
 export {

@@ -19,15 +19,15 @@ import {
   au as Y,
   z as ae,
   u as I
-} from "./DE7nBIcs.js";
+} from "./JMoIuhVR.js";
 import {
   g
-} from "./BbQIqpWG.js";
+} from "./DfN8llDv.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "9d334f775ce4e0b40338df37698a54b5ae8c153f"
+      id: "4097d37663b9a72f9231b790868cce52a6a81192"
     }
   } catch {}
 })();
@@ -35,7 +35,7 @@ try {
   (function() {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new n.Error().stack;
-    e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "32640aa5-9dfa-449c-8a18-52854b717752", n._sentryDebugIdIdentifier = "sentry-dbid-32640aa5-9dfa-449c-8a18-52854b717752")
+    e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "5393056d-15df-40c9-b5f6-eb5ecf6565ce", n._sentryDebugIdIdentifier = "sentry-dbid-5393056d-15df-40c9-b5f6-eb5ecf6565ce")
   })()
 } catch {}
 const fe = "true",
@@ -43,12 +43,12 @@ const fe = "true",
   Rn = "0x4AAAAAABpHqZ-6i7uL0nmG",
   me = "https://backend.wplace.live",
   jn = "0x4AAAAAABpqJe8FO0N84q0F";
-var M, O, k, B, D, L;
+var M, k, O, B, D, L;
 class he {
   constructor() {
     h(this, M, S(!1));
-    h(this, O, S(!1));
-    h(this, k, S(Y(pe())));
+    h(this, k, S(!1));
+    h(this, O, S(Y(pe())));
     h(this, B, S(!1));
     h(this, D, S(Y(Date.now())));
     h(this, L, S(void 0));
@@ -63,16 +63,16 @@ class he {
     w(d(this, M), e, !0)
   }
   get muted() {
-    return p(d(this, O))
-  }
-  set muted(e) {
-    w(d(this, O), e, !0)
-  }
-  get language() {
     return p(d(this, k))
   }
-  set language(e) {
+  set muted(e) {
     w(d(this, k), e, !0)
+  }
+  get language() {
+    return p(d(this, O))
+  }
+  set language(e) {
+    w(d(this, O), e, !0)
   }
   get turnstatileLoaded() {
     return p(d(this, B))
@@ -93,7 +93,7 @@ class he {
     w(d(this, L), e, !0)
   }
 }
-M = new WeakMap, O = new WeakMap, k = new WeakMap, B = new WeakMap, D = new WeakMap, L = new WeakMap;
+M = new WeakMap, k = new WeakMap, O = new WeakMap, B = new WeakMap, D = new WeakMap, L = new WeakMap;
 const _e = new he;
 
 function pe() {
@@ -151,7 +151,7 @@ const W = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
       throw Error("TextEncoder not available")
     }
   },
-  be = typeof W.encodeInto == "function" ? function(n, e) {
+  ye = typeof W.encodeInto == "function" ? function(n, e) {
     return W.encodeInto(n, e)
   } : function(n, e) {
     const t = W.encode(n);
@@ -179,7 +179,7 @@ function ce(n, e, t) {
   if (i !== a) {
     i !== 0 && (n = n.slice(i)), r = t(r, a, a = i + n.length * 3, 1) >>> 0;
     const s = H().subarray(r + i, r + a),
-      l = be(n, s);
+      l = ye(n, s);
     i += l.written, r = t(r, a, i, 1) >>> 0
   }
   return Z = i, r
@@ -191,7 +191,7 @@ function Fn(n) {
   f.request_url(e, t)
 }
 
-function ye() {
+function be() {
   let n, e;
   try {
     const t = f.get_load_payload();
@@ -333,9 +333,9 @@ const Ie = () => "Unexpected server error. Try again later.",
   xe = () => "You need to be logged in to paint",
   Ce = () => "Você precisa estar conectado para pintar",
   Me = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? xe() : Ce(),
-  Oe = n => `Error while painting: ${n.err}`,
-  ke = n => `Erro enquanto pinta: ${n.err}`,
-  Be = (n, e = {}) => (e.locale ?? g()) === "en" ? Oe(n) : ke(n),
+  ke = n => `Error while painting: ${n.err}`,
+  Oe = n => `Erro enquanto pinta: ${n.err}`,
+  Be = (n, e = {}) => (e.locale ?? g()) === "en" ? ke(n) : Oe(n),
   De = () => "Invalid phone number",
   Le = () => "Número de telefone inválido",
   Ne = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? De() : Le(),
@@ -375,9 +375,9 @@ const Ie = () => "Unexpected server error. Try again later.",
   _t = () => "You are already in an alliance",
   pt = () => "Você já está em uma aliança",
   wt = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? _t() : pt(),
-  bt = () => "You are not allowed to do this",
-  yt = () => "Você não tem permissão para fazer isso",
-  E = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? bt() : yt(),
+  yt = () => "You are not allowed to do this",
+  bt = () => "Você não tem permissão para fazer isso",
+  E = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? yt() : bt(),
   St = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
   Tt = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
   Et = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? St() : Tt(),
@@ -388,8 +388,8 @@ const Ie = () => "Unexpected server error. Try again later.",
   xt = () => "Sem acesso à internet ou os servidores estão fora do ar. Tente novamente mais tarde.",
   Ct = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? Pt() : xt(),
   Mt = () => "We’re currently experiencing high traffic. Some requests may not be processed at this time—please try again later. Thank you for your patience.",
-  Ot = () => "Estamos enfrentando um volume alto de acessos no momento. Algumas solicitações podem não ser processadas agora — por favor, tente novamente mais tarde. Agradecemos a sua compreensão.",
-  kt = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? Mt() : Ot(),
+  kt = () => "Estamos enfrentando um volume alto de acessos no momento. Algumas solicitações podem não ser processadas agora — por favor, tente novamente mais tarde. Agradecemos a sua compreensão.",
+  Ot = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? Mt() : kt(),
   Bt = () => "Refresh your page to get the latest update",
   Dt = () => "Recarregue sua página para obter as últimas atualizações",
   Lt = (n = {}, e = {}) => (e.locale ?? g()) === "en" ? Bt() : Dt(),
@@ -607,7 +607,7 @@ class wn {
       return r.then(i => {
         if (typeof i == "object" && i && "ok" in i && typeof i.ok == "boolean" && !i.ok) {
           o = !1;
-          const s = bn(i);
+          const s = yn(i);
           this.create({
             id: a,
             type: "error",
@@ -675,13 +675,13 @@ class wn {
 }
 N = new WeakMap, q = new WeakMap, U = new WeakMap;
 
-function bn(n) {
+function yn(n) {
   return n && typeof n == "object" && "status" in n ? `HTTP error! Status: ${n.status}` : `Error! ${n}`
 }
-const y = new wn;
+const b = new wn;
 
-function yn(n, e) {
-  return y.create({
+function bn(n, e) {
+  return b.create({
     message: n,
     ...e
   })
@@ -689,25 +689,25 @@ function yn(n, e) {
 var Q;
 class Vn {
   constructor() {
-    h(this, Q, I(() => y.toasts.filter(e => !e.dismiss)))
+    h(this, Q, I(() => b.toasts.filter(e => !e.dismiss)))
   }
   get toasts() {
     return p(d(this, Q))
   }
 }
 Q = new WeakMap;
-const Sn = yn,
+const Sn = bn,
   Tn = Object.assign(Sn, {
-    success: y.success,
-    info: y.info,
-    warning: y.warning,
-    error: y.error,
-    custom: y.custom,
-    message: y.message,
-    promise: y.promise,
-    dismiss: y.dismiss,
-    loading: y.loading,
-    getActiveToasts: () => y.toasts.filter(n => !n.dismiss)
+    success: b.success,
+    info: b.info,
+    warning: b.warning,
+    error: b.error,
+    custom: b.custom,
+    message: b.message,
+    promise: b.promise,
+    dismiss: b.dismiss,
+    loading: b.loading,
+    getActiveToasts: () => b.toasts.filter(n => !n.dismiss)
   });
 var G, R, j, $, F, K, J;
 class En {
@@ -1033,7 +1033,7 @@ const In = [{
   Mn = {
     needsPhoneVerification: "needs_phone_verification"
   },
-  On = {
+  kn = {
     Droplet: {},
     "Max. Charge": {},
     "Paint Charge": {},
@@ -1041,7 +1041,7 @@ const In = [{
     Flag: {},
     "Profile Picture": {}
   },
-  kn = {
+  On = {
     10: {
       name: "25,000 Droplets",
       price: 500,
@@ -1155,8 +1155,8 @@ const In = [{
     refreshIntervalMs: xn,
     colors: Cn,
     errors: Mn,
-    items: On,
-    products: kn,
+    items: kn,
+    products: On,
     countries: Bn
   },
   Dn = X,
@@ -1182,12 +1182,12 @@ class Ln {
   async paint(e, t, a) {
     const r = An(e, s => `t=(${s.tile[0]},${s.tile[1]}),s=${s.season}`),
       i = (await Promise.all(Object.values(r).map(s => {
-        const [l, u] = s[0].tile, T = s[0].season, b = {
+        const [l, u] = s[0].tile, T = s[0].season, y = {
           colors: s.map(ee => ee.colorIdx),
           coords: s.flatMap(ee => ee.pixel),
           t,
           fp: a
-        }, te = JSON.stringify(b);
+        }, te = JSON.stringify(y);
         return this.request(`/s${T}/pixel/${l}/${u}`, {
           method: "POST",
           body: te,
@@ -1201,7 +1201,7 @@ class Ln {
       const s = i[0];
       if (s.status === 401) throw new Error(Me());
       if (s.status === 403) {
-        if (s.headers.get("cf-mitigated") === "challenge") throw new Error(kt());
+        if (s.headers.get("cf-mitigated") === "challenge") throw new Error(Ot());
         const l = await s.json();
         if ((l == null ? void 0 : l.error) === "refresh") throw new Error(Lt());
         vn.refresh()
@@ -1597,6 +1597,14 @@ class Ln {
     for (const a of t.tickets) a.reports.sort((r, o) => re[r.reason] - re[o.reason]);
     return t
   }
+  async countMyTicketsClosedToday() {
+    const e = await this.request("/moderator/count-my-tickets", {
+      method: "GET",
+      credentials: "include"
+    });
+    if (e.status !== 200) throw new _(c(), e.status);
+    return e.json()
+  }
   async getSevereOpenTicketsCount() {
     const e = await this.request("/moderator/severe-open-tickets-count", {
       method: "GET",
@@ -1771,7 +1779,7 @@ class Ln {
     if (s.status !== 200) throw new _(c(), s.status);
     const l = await s.json(),
       u = Array.isArray(l == null ? void 0 : l.tickets) ? l.tickets : [];
-    return u.sort((T, b) => new Date(b.createdAt).getTime() - new Date(T.createdAt).getTime()), u
+    return u.sort((T, y) => new Date(y.createdAt).getTime() - new Date(T.createdAt).getTime()), u
   }
   mapTicketsToReportRows(e, t) {
     var r, o, i, s, l;
@@ -1779,31 +1787,31 @@ class Ln {
     for (const u of e) {
       const T = u.status ?? "open";
       if (t === "received") {
-        for (const b of u.reports) a.push({
-          id: String(b.id),
+        for (const y of u.reports) a.push({
+          id: String(y.id),
           ticketId: String(u.id),
-          createdAt: b.createdAt ?? u.createdAt,
+          createdAt: y.createdAt ?? u.createdAt,
           byUser: {
-            id: Number(b.reportedBy),
-            name: String(b.reportedByName ?? b.reportedBy),
-            picture: b.reportedByPicture ?? null
+            id: Number(y.reportedBy),
+            name: String(y.reportedByName ?? y.reportedBy),
+            picture: y.reportedByPicture ?? null
           },
-          reason: String(b.reason),
+          reason: String(y.reason),
           status: T
         });
         continue
       }
       if (t === "sent") {
-        for (const b of u.reports) a.push({
-          id: String(b.id),
+        for (const y of u.reports) a.push({
+          id: String(y.id),
           ticketId: String(u.id),
-          createdAt: b.createdAt ?? u.createdAt,
+          createdAt: y.createdAt ?? u.createdAt,
           toUser: {
             id: Number(u.reportedUser.id),
             name: String(u.reportedUser.name),
             picture: u.reportedUser.picture ?? null
           },
-          reason: String(b.reason),
+          reason: String(y.reason),
           status: T
         });
         continue
@@ -1836,20 +1844,14 @@ class Ln {
         credentials: "include"
       });
     if (a.status !== 200) throw new _(c(), a.status);
-    const r = await a.json();
-    return {
-      closed_total: Number((r == null ? void 0 : r.closed_total) ?? 0),
-      bans: Number((r == null ? void 0 : r.bans) ?? 0),
-      ignored: Number((r == null ? void 0 : r.ignored) ?? 0),
-      timeouts: Number((r == null ? void 0 : r.timeouts) ?? 0)
-    }
+    return a.json()
   }
   async postPawtectLoad() {
     const e = await this.request("/pawtect/load", {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
-        pawtectMe: ye(),
+        pawtectMe: be(),
         "paint-the": "world",
         "but-not": "using-bots",
         security: "/.well-known/security.txt"
@@ -1861,5 +1863,5 @@ class Ln {
 z = new WeakMap;
 let se = new Ln(me);
 export {
-  jn as A, le as C, me as P, Dn as S, Ae as _, se as a, Jn as b, c, we as d, Rn as e, y as f, _e as g, zn as h, Vn as i, $n as j, Ut as k, Kt as l, Yt as m, jt as n, Vt as o, Zn as p, mn as q, Fn as r, Kn as s, Tn as t, vn as u, Hn as v, Wn as w, Yn as x, un as y, Gn as z
+  jn as A, le as C, me as P, Dn as S, Ae as _, se as a, Jn as b, c, we as d, Rn as e, b as f, _e as g, zn as h, Vn as i, $n as j, Ut as k, Kt as l, Yt as m, jt as n, Vt as o, Zn as p, mn as q, Fn as r, Kn as s, Tn as t, vn as u, Hn as v, Wn as w, Yn as x, un as y, Gn as z
 };
