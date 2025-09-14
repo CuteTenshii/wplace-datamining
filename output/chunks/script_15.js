@@ -6,12 +6,12 @@ import {
   z as d,
   bk as w,
   L as u
-} from "./BfyPe_e4.js";
+} from "./Bxl1hTLp.js";
 (function() {
   try {
     var q = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     q.SENTRY_RELEASE = {
-      id: "192dcd45d3adb98b0c3a7a5b0a35fc5bc1b8aa18"
+      id: "672e85eb3631872fd08d4c9c3edf522c2ebd7ca9"
     }
   } catch {}
 })();
@@ -57,32 +57,32 @@ function T() {
 }
 let t;
 
-function b(q) {
-  return t = q, i({
+function C(q) {
+  return t = q, a({
     type: "previewPixels",
     data: q
   })
 }
 
-function C() {
-  return t = void 0, i({
+function f() {
+  return t = void 0, a({
     type: "clearPixelPreview"
   })
 }
 
 function x(q) {
-  return i({
+  return a({
     type: "paintPixels",
     data: q
   })
 }
-async function f() {
-  t || await i({
+async function b() {
+  t || await a({
     type: "clearPixelPreview"
   })
 }
 
-function i(q) {
+function a(q) {
   const V = Math.random(),
     A = {
       ...q,
@@ -90,20 +90,20 @@ function i(q) {
     };
   return new Promise((e, s) => {
     try {
-      const a = navigator.serviceWorker;
-      a || s(new Error("You're an using an older browser, some features might not work. Consider updating or changing browser."));
+      const i = navigator.serviceWorker;
+      i || s(new Error("You're an using an older browser, some features might not work. Consider updating or changing browser."));
       const r = g => {
         var o;
-        ((o = g.data) == null ? void 0 : o.id) === V && (e(void 0), a.removeEventListener("message", r))
+        ((o = g.data) == null ? void 0 : o.id) === V && (e(void 0), i.removeEventListener("message", r))
       };
-      a.addEventListener("message", r);
+      i.addEventListener("message", r);
       const n = navigator.serviceWorker.controller;
       n ? n.postMessage(A) : navigator.serviceWorker.ready.then(g => {
         const o = g.active;
         o ? o == null || o.postMessage(A) : s(new Error("Service worker registration not active"))
       })
-    } catch (a) {
-      s(a)
+    } catch (i) {
+      s(i)
     }
   })
 }
@@ -116,5 +116,5 @@ function U({
   return `t=(${A[0]},${A[1]});p=(${q[0]},${q[1]});s=${V}`
 }
 export {
-  L as A, C as a, x as b, y as c, U as g, b as p, f as s
+  L as A, f as a, x as b, y as c, U as g, C as p, b as s
 };
