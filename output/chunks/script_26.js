@@ -1,11 +1,11 @@
 import {
   g as d
-} from "./ezbcDjPs.js";
+} from "./CAZ_O6hj.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "672e85eb3631872fd08d4c9c3edf522c2ebd7ca9"
+      id: "48232197bdcdfc2a880dd0de2ffd5bc2075b51d0"
     }
   } catch {}
 })();
@@ -17,8 +17,8 @@ try {
   })()
 } catch {}
 const f = () => "Cancel",
-  c = () => "Cancelar",
-  l = (e = {}, n = {}) => (n.locale ?? d()) === "en" ? f() : c();
+  o = () => "Cancelar",
+  l = (e = {}, n = {}) => (n.locale ?? d()) === "en" ? f() : o();
 export {
   l as c
 };
