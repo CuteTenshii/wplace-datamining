@@ -2,7 +2,7 @@
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "48232197bdcdfc2a880dd0de2ffd5bc2075b51d0"
+      id: "2a2853da5197f1e8876a5229454a4e7ee1aa190e"
     }
   } catch {}
 })();
@@ -17,35 +17,35 @@ const m = "modulepreload",
   w = function(e, o) {
     return new URL(e, o).href
   },
-  g = {},
-  v = function(o, a, u) {
+  b = {},
+  v = function(o, f, u) {
     let h = Promise.resolve();
-    if (a && a.length > 0) {
+    if (f && f.length > 0) {
       let i = function(t) {
-        return Promise.all(t.map(s => Promise.resolve(s).then(d => ({
+        return Promise.all(t.map(s => Promise.resolve(s).then(a => ({
           status: "fulfilled",
-          value: d
-        }), d => ({
+          value: a
+        }), a => ({
           status: "rejected",
-          reason: d
+          reason: a
         }))))
       };
       const n = document.getElementsByTagName("link"),
         l = document.querySelector("meta[property=csp-nonce]"),
-        b = (l == null ? void 0 : l.nonce) || (l == null ? void 0 : l.getAttribute("nonce"));
-      h = i(a.map(t => {
-        if (t = w(t, u), t in g) return;
-        g[t] = !0;
+        g = (l == null ? void 0 : l.nonce) || (l == null ? void 0 : l.getAttribute("nonce"));
+      h = i(f.map(t => {
+        if (t = w(t, u), t in b) return;
+        b[t] = !0;
         const s = t.endsWith(".css"),
-          d = s ? '[rel="stylesheet"]' : "";
+          a = s ? '[rel="stylesheet"]' : "";
         if (!!u)
           for (let c = n.length - 1; c >= 0; c--) {
-            const f = n[c];
-            if (f.href === t && (!s || f.rel === "stylesheet")) return
-          } else if (document.querySelector(`link[href="${t}"]${d}`)) return;
+            const d = n[c];
+            if (d.href === t && (!s || d.rel === "stylesheet")) return
+          } else if (document.querySelector(`link[href="${t}"]${a}`)) return;
         const r = document.createElement("link");
-        if (r.rel = s ? "stylesheet" : m, s || (r.as = "script"), r.crossOrigin = "", r.href = t, b && r.setAttribute("nonce", b), document.head.appendChild(r), s) return new Promise((c, f) => {
-          r.addEventListener("load", c), r.addEventListener("error", () => f(new Error(`Unable to preload CSS for ${t}`)))
+        if (r.rel = s ? "stylesheet" : m, s || (r.as = "script"), r.crossOrigin = "", r.href = t, g && r.setAttribute("nonce", g), document.head.appendChild(r), s) return new Promise((c, d) => {
+          r.addEventListener("load", c), r.addEventListener("error", () => d(new Error(`Unable to preload CSS for ${t}`)))
         })
       }))
     }
