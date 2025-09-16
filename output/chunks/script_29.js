@@ -1,25 +1,25 @@
 import {
   g as v
-} from "./C8XJ1ixN.js";
-import "./BrTpT_iZ.js";
+} from "./7aCKDKSw.js";
+import "./Dxt0_dNQ.js";
 import {
   v as i,
   b as s,
-  ax as g,
+  ay as g,
   a as u
-} from "./DNEaJl1b.js";
+} from "./BhjnkBaE.js";
 import {
   b as a
-} from "./Czrmw31h.js";
+} from "./CnSNf6Bw.js";
 import {
   r as c,
   i as w
-} from "./CiJKyZ4G.js";
+} from "./UiQiuWBX.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "fe728e8aec83db00e8678c288164b0147df8dfc8"
+      id: "ab54e7d2bb082741522faef467264167f3245873"
     }
   } catch {}
 })();
@@ -27,7 +27,7 @@ try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "68633b33-dff7-4c4a-9903-7fd3015edce8", e._sentryDebugIdIdentifier = "sentry-dbid-68633b33-dff7-4c4a-9903-7fd3015edce8")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "4bbea0d7-eb2c-4f71-9504-c8e78d6f9d91", e._sentryDebugIdIdentifier = "sentry-dbid-4bbea0d7-eb2c-4f71-9504-c8e78d6f9d91")
   })()
 } catch {}
 const h = () => "Pixels painted",
@@ -37,13 +37,13 @@ const h = () => "Pixels painted",
   q = () => "Descrição",
   E = (e = {}, t = {}) => (t.locale ?? v()) === "en" ? m() : q(),
   _ = e => `Copy alliance ID: #${e.allianceId}`,
-  y = e => `Copiar ID da aliança: #${e.allianceId}`,
-  k = (e, t = {}) => (t.locale ?? v()) === "en" ? _(e) : y(e);
-var $ = i('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
+  b = e => `Copiar ID da aliança: #${e.allianceId}`,
+  k = (e, t = {}) => (t.locale ?? v()) === "en" ? _(e) : b(e);
+var y = i('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
 
 function G(e, t) {
   let o = c(t, ["$$slots", "$$events", "$$legacy"]);
-  var n = $();
+  var n = y();
   a(n, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -51,8 +51,8 @@ function G(e, t) {
     ...o
   })), s(e, n)
 }
-var b = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
-  x = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
+var $ = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
+  Z = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
 function P(e, t) {
   let o = c(t, ["$$slots", "$$events", "$$legacy", "filled"]);
@@ -60,7 +60,7 @@ function P(e, t) {
     p = u(n);
   {
     var d = l => {
-        var r = b();
+        var r = $();
         a(r, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
@@ -69,7 +69,7 @@ function P(e, t) {
         })), s(l, r)
       },
       f = l => {
-        var r = x();
+        var r = Z();
         a(r, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
@@ -83,11 +83,11 @@ function P(e, t) {
   }
   s(e, n)
 }
-var Z = i('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
+var x = i('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
 
 function R(e, t) {
   let o = c(t, ["$$slots", "$$events", "$$legacy"]);
-  var n = Z();
+  var n = x();
   a(n, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",

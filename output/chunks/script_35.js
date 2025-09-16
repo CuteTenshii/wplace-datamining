@@ -1,15 +1,15 @@
-import "./BrTpT_iZ.js";
+import "./Dxt0_dNQ.js";
 import {
   M as ce,
   z as se,
   H as oe,
   C as de,
-  aY as fe,
-  p as X,
+  aZ as fe,
+  p as W,
   aw as M,
-  av as U,
-  ax as ue,
-  a as Z,
+  au as U,
+  ay as ue,
+  a as X,
   g as v,
   b as w,
   c as p,
@@ -17,48 +17,48 @@ import {
   t as j,
   u as $,
   v as ee,
-  au as ve,
+  av as ve,
   d,
   r as f,
   s as u
-} from "./DNEaJl1b.js";
+} from "./BhjnkBaE.js";
 import {
   s as y
-} from "./CgMSzzhi.js";
+} from "./luYC5Nv7.js";
 import {
   p as c,
   i as B,
   r as te
-} from "./CiJKyZ4G.js";
+} from "./UiQiuWBX.js";
 import {
   a as A,
   c as G,
   b as ae,
-  s as J
-} from "./Czrmw31h.js";
+  s as Z
+} from "./CnSNf6Bw.js";
 import {
   b as me
-} from "./DqfZvOLT.js";
+} from "./DiBWrZEl.js";
 import {
   g as R,
-  d as Q,
+  d as J,
   P as be,
   e as _e
-} from "./BC5L_kGN.js";
+} from "./KkEM-gr3.js";
 import {
   o as ge
-} from "./DS8w_oTA.js";
+} from "./kHHgRACr.js";
 import {
   g as L
-} from "./C8XJ1ixN.js";
+} from "./7aCKDKSw.js";
 import {
   L as he
-} from "./CxodLlYv.js";
+} from "./B7v-1Ror.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "fe728e8aec83db00e8678c288164b0147df8dfc8"
+      id: "ab54e7d2bb082741522faef467264167f3245873"
     }
   } catch {}
 })();
@@ -66,7 +66,7 @@ try {
   (function() {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new a.Error().stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "0ac5bbfb-cba8-4695-a8ef-aa17a4fb756d", a._sentryDebugIdIdentifier = "sentry-dbid-0ac5bbfb-cba8-4695-a8ef-aa17a4fb756d")
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "b1465635-6e28-449e-9126-44ba4a635868", a._sentryDebugIdIdentifier = "sentry-dbid-b1465635-6e28-449e-9126-44ba4a635868")
   })()
 } catch {}
 
@@ -86,7 +86,7 @@ function ye(a, e, n) {
 }
 const we = a => `Login with ${a.name}`,
   xe = a => `Entrar com ${a.name}`,
-  W = (a, e = {}) => (e.locale ?? L()) === "en" ? we(a) : xe(a),
+  Q = (a, e = {}) => (e.locale ?? L()) === "en" ? we(a) : xe(a),
   ke = () => "By continuing, you agree to our",
   Ie = () => "Ao continuar, você concorda com nossos",
   Le = (a = {}, e = {}) => (e.locale ?? L()) === "en" ? ke() : Ie(),
@@ -102,7 +102,7 @@ const we = a => `Login with ${a.name}`,
 var Fe = V("<div></div>");
 
 function He(a, e) {
-  X(e, !0);
+  W(e, !0);
   let n = c(e, "widgetId", 15),
     r = c(e, "appearance", 3, "always"),
     b = c(e, "language", 3, "auto"),
@@ -185,7 +185,7 @@ function He(a, e) {
     }
   });
   var k = ue(),
-    z = Z(k);
+    z = X(k);
   {
     var F = t => {
       var i = Fe();
@@ -227,9 +227,9 @@ var je = V('<a><!> </a> <a><!> </a> <div class="mt-2 flex flex-col items-center 
   Ae = V('<div><div class="flex justify-center"><!></div> <form><div class="mt-6 flex flex-col items-center gap-2"><!></div></form> <p class="text-base-content/60 mt-2 text-center text-sm"> <a class="font-medium" href="/terms/terms-of-service" target="_blank"> </a> <a class="font-medium" href="/terms/privacy" target="_blank"> </a></p></div>');
 
 function pe(a, e) {
-  X(e, !0);
+  W(e, !0);
   let n = U(null),
-    r = U(ve(Q ? "" : "turnstile-disabled"));
+    r = U(ve(J ? "" : "turnstile-disabled"));
 
   function b(t, i) {
     return `${be}/auth/${t}?token=${i}${e.redirect?`&r=${e.redirect}`:""}`
@@ -246,7 +246,7 @@ function pe(a, e) {
   {
     var P = t => {
       var i = je(),
-        l = Z(i),
+        l = X(i),
         o = d(l);
       Ke(o, {
         class: "mr-1 size-5"
@@ -277,7 +277,7 @@ function pe(a, e) {
           }
         };
         B(O, h => {
-          Q && h(ne)
+          J && h(ne)
         })
       }
       var le = u(O, 2);
@@ -285,13 +285,13 @@ function pe(a, e) {
         A(l, 1, G({
           "btn btn-lg bg-base-100 w-full text-base": !0,
           "bg-base-content/10 pointer-events-none": !v(r)
-        })), J(l, "href", h), y(H, ` ${N??""}`), A(I, 1, G({
+        })), Z(l, "href", h), y(H, ` ${N??""}`), A(I, 1, G({
           "btn btn-lg bg-base-100 w-full text-base": !0,
           "bg-base-content/10 pointer-events-none": !v(r)
-        })), J(I, "href", K), y(re, ` ${ie??""}`)
-      }, [() => v(r) ? b("google", v(r)) : "#", () => W({
+        })), Z(I, "href", K), y(re, ` ${ie??""}`)
+      }, [() => v(r) ? b("google", v(r)) : "#", () => Q({
         name: "Google"
-      }), () => v(r) ? b("twitch", v(r)) : "#", () => W({
+      }), () => v(r) ? b("twitch", v(r)) : "#", () => Q({
         name: "Twitch"
       })]), w(t, i)
     };

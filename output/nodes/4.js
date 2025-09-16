@@ -14,22 +14,22 @@ var rt = (_, s, m) => (Af(_, s, "read from private field"), m ? m.call(_) : s.ge
   Ir = (_, s, m) => s.has(_) ? jg("Cannot add the same private member more than once") : s instanceof WeakSet ? s.add(_) : s.set(_, m),
   ia = (_, s, m, y) => (Af(_, s, "write to private field"), y ? y.call(_, m) : s.set(_, m), m),
   jr = (_, s, m) => (Af(_, s, "access private method"), m);
-import "../chunks/BrTpT_iZ.js";
+import "../chunks/Dxt0_dNQ.js";
 import {
   o as An,
   s as ii
-} from "../chunks/DS8w_oTA.js";
+} from "../chunks/kHHgRACr.js";
 import {
   a3 as qx,
-  b7 as Zx,
+  b8 as Zx,
   bq as Ux,
-  b9 as $x,
+  ba as $x,
   br as Gx,
-  b2 as Hx,
-  av as ut,
+  b3 as Hx,
+  au as ut,
   g as w,
   aw as ce,
-  au as yi,
+  av as yi,
   at as ri,
   p as Br,
   f as Pe,
@@ -39,7 +39,7 @@ import {
   u as ht,
   n as gn,
   t as Ye,
-  bi as Ai,
+  ax as Ai,
   b as H,
   c as Fr,
   y as Xr,
@@ -47,31 +47,31 @@ import {
   bn as Nu,
   x as wm,
   z as ll,
-  ax as Kt,
+  ay as Kt,
   a as Ct,
-  b3 as Mi,
-  aH as Wx,
-  aG as Vg,
-  aI as Xx,
-  aK as Tv,
+  b4 as Mi,
+  aI as Wx,
+  aH as Vg,
+  aJ as Xx,
+  aL as Tv,
   bs as cs,
-  ay as Ta,
+  az as Ta,
   bt as Sv,
   $ as Yx
-} from "../chunks/DNEaJl1b.js";
+} from "../chunks/BhjnkBaE.js";
 import {
   s as ye
-} from "../chunks/CgMSzzhi.js";
+} from "../chunks/luYC5Nv7.js";
 import {
   p as Et,
   i as je,
   r as ir,
   s as Co,
   u as Cv
-} from "../chunks/CiJKyZ4G.js";
+} from "../chunks/UiQiuWBX.js";
 import {
   h as Kx
-} from "../chunks/BCtXj0GE.js";
+} from "../chunks/CyeE8BxU.js";
 import {
   r as us,
   f as Yi,
@@ -82,20 +82,20 @@ import {
   e as Ic,
   h as Fu,
   c as bo
-} from "../chunks/Czrmw31h.js";
+} from "../chunks/CnSNf6Bw.js";
 import {
   a as sl,
   k as ju,
   t as Ii
-} from "../chunks/KP_BIQfb.js";
+} from "../chunks/Baxeh6w9.js";
 import {
   p as ma
-} from "../chunks/DWCrJSl1.js";
+} from "../chunks/CGHmIask.js";
 import {
   S as Xi,
   a as an,
   t as Vr,
-  u as Mt,
+  u as It,
   q as Ts,
   g as fa,
   P as Jx,
@@ -108,7 +108,7 @@ import {
   A as n1,
   d as i1,
   B as a1
-} from "../chunks/BC5L_kGN.js";
+} from "../chunks/KkEM-gr3.js";
 import {
   c as Iv,
   A as sa,
@@ -116,17 +116,17 @@ import {
   g as Ef,
   p as s1,
   b as o1
-} from "../chunks/D7a710FF.js";
+} from "../chunks/CDvyldxD.js";
 import {
   g as Mv,
   b as l1
-} from "../chunks/DAn5yZQ8.js";
+} from "../chunks/D6gIY_km.js";
 import {
   h as Av
-} from "../chunks/BR0bfOb5.js";
+} from "../chunks/5JQarWm-.js";
 import {
   b as Xs
-} from "../chunks/DqfZvOLT.js";
+} from "../chunks/DiBWrZEl.js";
 import {
   L as c1,
   c as $f,
@@ -135,14 +135,14 @@ import {
   t as h1,
   b as d1,
   R as p1
-} from "../chunks/DNzc30b8.js";
+} from "../chunks/DmUqzjWc.js";
 import {
   g as Ve,
   l as f1
-} from "../chunks/C8XJ1ixN.js";
+} from "../chunks/7aCKDKSw.js";
 import {
   c as Tm
-} from "../chunks/Ddxc_XVW.js";
+} from "../chunks/BWp6-nBn.js";
 import {
   d as m1,
   L as Sm,
@@ -151,33 +151,33 @@ import {
   G as Zg,
   c as _1,
   T as Gf
-} from "../chunks/BxiUrKHW.js";
+} from "../chunks/C_XQshf9.js";
 import {
   e as ui,
   i as cp
-} from "../chunks/DvG_A9F9.js";
+} from "../chunks/BBDMndfB.js";
 import {
   c as Im,
-  a as Mm,
-  b as g1
-} from "../chunks/JJCu2wFD.js";
+  b as Mm,
+  a as g1
+} from "../chunks/Hyg5n6M-.js";
 import {
   P as ls,
   t as Ev
-} from "../chunks/DB5RdLWs.js";
+} from "../chunks/DuxrRJOm.js";
 import {
   g as Ri,
   a as up,
   c as v1,
   b as y1
-} from "../chunks/CdPgdDkU.js";
+} from "../chunks/Bz5gLOgu.js";
 import {
   f as ol,
   t as x1
-} from "../chunks/Blpev-RC.js";
+} from "../chunks/BJFrzw73.js";
 import {
   A as b1
-} from "../chunks/CEFcJL8L.js";
+} from "../chunks/CzmfcXJ9.js";
 import {
   A as zv,
   d as vc,
@@ -190,43 +190,43 @@ import {
   c as C1,
   P as Dv,
   b as P1
-} from "../chunks/VpsTNxfj.js";
+} from "../chunks/BO6NNR7g.js";
 import {
   f as aa,
   s as $d
-} from "../chunks/DhWkkaYv.js";
-import "../chunks/bLI8te66.js";
+} from "../chunks/B3yA47JA.js";
+import "../chunks/BKXkQlp8.js";
 import {
   i as Rv
-} from "../chunks/DsTxdDQv.js";
+} from "../chunks/CxHHqdW1.js";
 import {
   L as Bv
-} from "../chunks/CxodLlYv.js";
+} from "../chunks/B7v-1Ror.js";
 import {
   c as vi
-} from "../chunks/C0yXhUWA.js";
+} from "../chunks/o_I9wIXB.js";
 import {
   L as I1,
   T as Fv,
   a as M1
-} from "../chunks/mOgM1ZXf.js";
+} from "../chunks/BAOu35Ao.js";
 import {
   _ as A1
-} from "../chunks/DMMtzeE9.js";
+} from "../chunks/HqBAVyOq.js";
 import {
   R as k1
-} from "../chunks/DLdF826v.js";
+} from "../chunks/Bq7JhCJ8.js";
 import {
   W as E1
-} from "../chunks/C3Q8CWHk.js";
+} from "../chunks/BPAXKj43.js";
 import {
   r as z1
-} from "../chunks/CNFW16Sd.js";
+} from "../chunks/Wbu2X9W4.js";
 (function() {
   try {
     var _ = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     _.SENTRY_RELEASE = {
-      id: "fe728e8aec83db00e8678c288164b0147df8dfc8"
+      id: "ab54e7d2bb082741522faef467264167f3245873"
     }
   } catch {}
 })();
@@ -234,7 +234,7 @@ try {
   (function() {
     var _ = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       s = new _.Error().stack;
-    s && (_._sentryDebugIds = _._sentryDebugIds || {}, _._sentryDebugIds[s] = "19e92c04-c88b-4fe5-ac39-0f3d9a2e8aa9", _._sentryDebugIdIdentifier = "sentry-dbid-19e92c04-c88b-4fe5-ac39-0f3d9a2e8aa9")
+    s && (_._sentryDebugIds = _._sentryDebugIds || {}, _._sentryDebugIds[s] = "522e8a44-aa0d-4d31-8f7e-3a6d2ec3ecd1", _._sentryDebugIdIdentifier = "sentry-dbid-522e8a44-aa0d-4d31-8f7e-3a6d2ec3ecd1")
   })()
 } catch {}
 const L1 = [];
@@ -1478,7 +1478,7 @@ function rI() {
         function er(n) {
           return typeof ImageBitmap < "u" && n instanceof ImageBitmap
         }
-        const It = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQYV2NgAAIAAAUAAarVyFEAAAAASUVORK5CYII=";
+        const Mt = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVQYV2NgAAIAAAUAAarVyFEAAAAASUVORK5CYII=";
 
         function ur(n, t, r, a, c) {
           return o(this, void 0, void 0, (function*() {
@@ -16982,13 +16982,13 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           const a = new Image;
           a.onload = () => {
             t(a), URL.revokeObjectURL(a.src), a.onload = null, window.requestAnimationFrame((() => {
-              a.src = It
+              a.src = Mt
             }))
           }, a.onerror = () => r(new Error("Could not load image. Please make sure to use a supported image type such as PNG or JPEG. Note that SVGs are not supported."));
           const c = new Blob([new Uint8Array(n)], {
             type: "image/png"
           });
-          a.src = n.byteLength ? URL.createObjectURL(c) : It
+          a.src = n.byteLength ? URL.createObjectURL(c) : Mt
         })), T.i = Xt, T.j = (n, t) => Te(dt(n, {
           type: "json"
         }), t), T.k = Qe, T.l = ct, T.m = Te, T.n = (n, t) => Te(dt(n, {
@@ -17939,7 +17939,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           return U
         }
 
-        function It(ue, j) {
+        function Mt(ue, j) {
           if (ue.transformed) return ue;
           const U = 1 << ue.z,
             Y = ue.x,
@@ -18119,13 +18119,13 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             if (j < 0 || j > 24) return null;
             const Me = 1 << j,
               we = wr(j, U = U + Me & Me - 1, Y);
-            if (this.tiles[we]) return It(this.tiles[we], he);
+            if (this.tiles[we]) return Mt(this.tiles[we], he);
             Te > 1 && console.log("drilling down to z%d-%d-%d", j, U, Y);
             let Ne, ct = j,
               Qe = U,
               kt = Y;
             for (; !Ne && ct > 0;) ct--, Qe >>= 1, kt >>= 1, Ne = this.tiles[wr(ct, Qe, kt)];
-            return Ne && Ne.source ? (Te > 1 && (console.log("found parent tile z%d-%d-%d", ct, Qe, kt), console.time("drilling down")), this.splitTile(Ne.source, ct, Qe, kt, j, U, Y), Te > 1 && console.timeEnd("drilling down"), this.tiles[we] ? It(this.tiles[we], he) : null) : null
+            return Ne && Ne.source ? (Te > 1 && (console.log("found parent tile z%d-%d-%d", ct, Qe, kt), console.time("drilling down")), this.splitTile(Ne.source, ct, Qe, kt, j, U, Y), Te > 1 && console.timeEnd("drilling down"), this.tiles[we] ? Mt(this.tiles[we], he) : null) : null
           }
         }
 
@@ -20048,7 +20048,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             return !1
           }
         }
-        class It extends o.E {
+        class Mt extends o.E {
           constructor(e, i, l, u) {
             super(), this.flippedWindingOrder = !1, this.id = e, this.dispatcher = l, this.coordinates = i.coordinates, this.type = "image", this.minzoom = 0, this.maxzoom = 22, this.tileSize = 512, this.tiles = {}, this._loaded = !1, this.setEventedParent(u), this.options = i
           }
@@ -20156,7 +20156,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             return g
           }
         }
-        class ur extends It {
+        class ur extends Mt {
           constructor(e, i, l, u) {
             super(e, i, l, u), this.roundZoom = !0, this.type = "video", this.options = i
           }
@@ -20222,7 +20222,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             return this.video && !this.video.paused
           }
         }
-        class yr extends It {
+        class yr extends Mt {
           constructor(e, i, l, u) {
             super(e, i, l, u), i.coordinates ? Array.isArray(i.coordinates) && i.coordinates.length === 4 && !i.coordinates.some((d => !Array.isArray(d) || d.length !== 2 || d.some((g => typeof g != "number")))) || this.fire(new o.k(new o.a6(`sources.${e}`, null, '"coordinates" property must be an array of 4 longitude/latitude array pairs'))) : this.fire(new o.k(new o.a6(`sources.${e}`, null, 'missing required property "coordinates"'))), i.animate && typeof i.animate != "boolean" && this.fire(new o.k(new o.a6(`sources.${e}`, null, 'optional "animate" property must be a boolean value'))), i.canvas ? typeof i.canvas == "string" || i.canvas instanceof HTMLCanvasElement || this.fire(new o.k(new o.a6(`sources.${e}`, null, '"canvas" must be either a string representing the ID of the canvas element from which to read, or an HTMLCanvasElement instance'))) : this.fire(new o.k(new o.a6(`sources.${e}`, null, 'missing required property "canvas"'))), this.options = i, this.animate = i.animate === void 0 || i.animate
           }
@@ -20286,7 +20286,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
               case "geojson":
                 return er;
               case "image":
-                return It;
+                return Mt;
               case "raster":
                 return Xt;
               case "raster-dem":
@@ -29784,7 +29784,7 @@ uniform ${A} ${R} u_${D};
               const {
                 isRenderingToTexture: R
               } = A, D = b.getSource(), O = g.style.projection.useSubdivision;
-              if (D instanceof It) Rs(g, b, S, P, null, !1, !1, D.tileCoords, D.flippedWindingOrder, R);
+              if (D instanceof Mt) Rs(g, b, S, P, null, !1, !1, D.tileCoords, D.flippedWindingOrder, R);
               else if (O) {
                 const [$, te, ee] = g.stencilConfigForOverlapTwoPass(P);
                 Rs(g, b, S, ee, $, !1, !0, zl, !1, R), Rs(g, b, S, ee, te, !0, !0, zl, !1, R)
@@ -32379,7 +32379,7 @@ ${O.shaderPreludeCode.vertexSource}`,
               this._coordsAscending[l] = {};
               const u = e.sourceCaches[l].getVisibleCoordinates(),
                 d = e.sourceCaches[l].getSource(),
-                g = d instanceof It ? d.terrainTileRanges : null;
+                g = d instanceof Mt ? d.terrainTileRanges : null;
               for (const b of u) {
                 const S = this.terrain.sourceCache.getTerrainCoords(b, g);
                 for (const P in S) this._coordsAscending[l][P] || (this._coordsAscending[l][P] = []), this._coordsAscending[l][P].push(S[P])
@@ -33167,7 +33167,7 @@ ${O.shaderPreludeCode.vertexSource}`,
           onRemove() {
             X.remove(this._container), this._map.off("styledata", this._updateGlobeIcon), this._globeButton.removeEventListener("click", this._toggleProjection), this._map = void 0
           }
-        }, T.Hash = Rl, T.ImageSource = It, T.KeyboardHandler = Ol, T.LngLatBounds = pt, T.LogoControl = xd, T.Map = class extends yd {
+        }, T.Hash = Rl, T.ImageSource = Mt, T.KeyboardHandler = Ol, T.LngLatBounds = pt, T.LogoControl = xd, T.Map = class extends yd {
           constructor(h) {
             var e, i;
             o.cw.mark(o.cx.create);
@@ -34725,7 +34725,7 @@ function LI(_, s) {
               ui(tt, 31, () => w(M), $e => $e.userId, ($e, Ae, gt) => {
                 const Q = ht(() => {
                   var Xt;
-                  return ((Xt = Mt.data) == null ? void 0 : Xt.id) === w(Ae).userId
+                  return ((Xt = It.data) == null ? void 0 : Xt.id) === w(Ae).userId
                 });
                 var re = kI();
                 let _e;
@@ -34754,9 +34754,9 @@ function LI(_, s) {
                   var vt = Xt => {
                     const rr = ht(() => Ts(w(Ae).equippedFlag));
                     var er = II(),
-                      It = E(er, !0);
+                      Mt = E(er, !0);
                     k(er), Ye(() => {
-                      kr(er, "data-tip", w(rr).name), ye(It, w(rr).flag)
+                      kr(er, "data-tip", w(rr).name), ye(Mt, w(rr).flag)
                     }), H(Xt, er)
                   };
                   je(dt, Xt => {
@@ -34785,8 +34785,8 @@ function LI(_, s) {
                     var rr = AI();
                     let er;
                     rr.__click = [MI, s, Ae];
-                    var It = E(rr);
-                    Sm(It, {
+                    var Mt = E(rr);
+                    Sm(Mt, {
                       class: "size-4"
                     }), k(rr), Ye((ur, yr) => {
                       er = zr(rr, 1, "btn btn-sm btn-ghost absolute -right-2 top-1/2 !-translate-y-1/2 sm:right-4", null, er, ur), kr(rr, "data-tip", yr)
@@ -34799,8 +34799,8 @@ function LI(_, s) {
                   })
                 }
                 k(xt), k(re), Ye((Xt, rr, er) => {
-                  var It;
-                  _e = zr(re, 1, "", null, _e, Xt), ye(ke, w(gt) + 1), zr(_t, 1, `font-semibold ${rr??""} flex gap-1`), ye(zt, `${(w(Q)?((It=Mt.data)==null?void 0:It.name)??w(Ae).name:w(Ae).name)??""} `), ye(ot, `#${w(Ae).userId??""}`), ye(pt, `${er??""} `)
+                  var Mt;
+                  _e = zr(re, 1, "", null, _e, Xt), ye(ke, w(gt) + 1), zr(_t, 1, `font-semibold ${rr??""} flex gap-1`), ye(zt, `${(w(Q)?((Mt=It.data)==null?void 0:Mt.name)??w(Ae).name:w(Ae).name)??""} `), ye(ot, `#${w(Ae).userId??""}`), ye(pt, `${er??""} `)
                 }, [() => ({
                   "bg-base-200": w(Q)
                 }), () => Ri(w(Ae).userId), () => w(Ae).pixelsPainted.toLocaleString("en-US")]), sl(re, () => ol, () => ({
@@ -34895,7 +34895,7 @@ function WI(_, s) {
   ui(me, 21, () => m.data, Je => Je.id, (Je, Fe, it) => {
     const tt = ht(() => {
       var vt;
-      return ((vt = Mt.data) == null ? void 0 : vt.id) === w(Fe).id
+      return ((vt = It.data) == null ? void 0 : vt.id) === w(Fe).id
     });
     var $e = VI(),
       Ae = E($e),
@@ -34962,7 +34962,7 @@ function WI(_, s) {
     }
     k(zt), k(lt), k(Le), k($e), Ye(vt => {
       var ft;
-      zr(re, 1, `font-semibold ${vt??""}`), ye(_e, `${(w(tt)?((ft=Mt.data)==null?void 0:ft.name)??w(Fe).name:w(Fe).name)??""} #${w(Fe).id??""}`)
+      zr(re, 1, `font-semibold ${vt??""}`), ye(_e, `${(w(tt)?((ft=It.data)==null?void 0:ft.name)??w(Fe).name:w(Fe).name)??""} #${w(Fe).id??""}`)
     }, [() => Ri(w(Fe).id)]), H(Je, $e)
   }), k(me), k(X);
   var ge = Z(X, 2);
@@ -35467,14 +35467,14 @@ function zM(_, s) {
                             U = E(j, !0);
                           k(j), Ye(Y => ye(U, Y), [() => w(m).members.toLocaleString("en-US")]), H(ue, j)
                         },
-                        It = ue => {
+                        Mt = ue => {
                           var j = wM();
                           j.__click = [bM, B];
                           var U = E(j, !0);
                           k(j), Ye(Y => ye(U, Y), [() => w(m).members.toLocaleString("en-US")]), H(ue, j)
                         };
                       je(rr, ue => {
-                        w(m).role === "member" ? ue(er) : ue(It, !1)
+                        w(m).role === "member" ? ue(er) : ue(Mt, !1)
                       })
                     }
                     k(Wt), k(pt);
@@ -36200,10 +36200,10 @@ function _4(_, s) {
         rr = E(Xt);
       Vm(rr, {}), k(Xt);
       var er = Z(Xt, 4),
-        It = Z(E(er), 2),
-        ur = E(It, !0);
-      k(It);
-      var yr = Z(It, 2),
+        Mt = Z(E(er), 2),
+        ur = E(Mt, !0);
+      k(Mt);
+      var yr = Z(Mt, 2),
         Mr = E(yr, !0);
       k(yr);
       var Gr = Z(yr, 2),
@@ -39505,7 +39505,7 @@ function ik(_, s) {
                       k(Wt);
                       var rr = Z(Wt),
                         er = E(rr),
-                        It = E(er, !0);
+                        Mt = E(er, !0);
                       k(er);
                       var ur = Z(er, 2),
                         yr = E(ur),
@@ -39520,7 +39520,7 @@ function ik(_, s) {
                       gr.__click = [$A, s, Tt];
                       var Ar = E(gr, !0);
                       k(gr), k(wr), k(At), Ye((ue, j, U) => {
-                        ye(Xt, w(xt) + 1), kr(er, "data-tip", w(pt).name), ye(It, w(pt).flag), zr(ur, 1, `font-semibold ${ue??""}`), ye(yr, `${w(Tt).name??""} `), ye(Gr, `#${w(Tt).number??""}`), ye(Sr, j), ye(Ar, U)
+                        ye(Xt, w(xt) + 1), kr(er, "data-tip", w(pt).name), ye(Mt, w(pt).flag), zr(ur, 1, `font-semibold ${ue??""}`), ye(yr, `${w(Tt).name??""} `), ye(Gr, `#${w(Tt).number??""}`), ye(Sr, j), ye(Ar, U)
                       }, [() => Ri(w(Tt).cityId), () => w(Tt).pixelsPainted.toLocaleString("en-US"), () => pS()]), sl(At, () => ol, () => ({
                         duration: 200
                       })), H(ft, At)
@@ -39551,10 +39551,10 @@ function ik(_, s) {
                           ui(pt, 31, () => w(W), At => At.id, (At, Wt, Xt) => {
                             const rr = ht(() => Ts(w(Wt).id));
                             var er = WA(),
-                              It = E(er),
-                              ur = E(It, !0);
-                            k(It);
-                            var yr = Z(It),
+                              Mt = E(er),
+                              ur = E(Mt, !0);
+                            k(Mt);
+                            var yr = Z(Mt),
                               Mr = E(yr),
                               Gr = E(Mr, !0);
                             k(Mr);
@@ -39589,10 +39589,10 @@ function ik(_, s) {
                                   Xt = Z(Wt, 2, !0);
                                 k(At), k(Tt), k(ft);
                                 var rr = Z(ft);
-                                ui(rr, 31, () => w(dt), er => er.id, (er, It, ur) => {
+                                ui(rr, 31, () => w(dt), er => er.id, (er, Mt, ur) => {
                                   const yr = ht(() => {
                                     var xe;
-                                    return ((xe = Mt.data) == null ? void 0 : xe.id) === w(It).id
+                                    return ((xe = It.data) == null ? void 0 : xe.id) === w(Mt).id
                                   });
                                   var Mr = JA();
                                   let Gr;
@@ -39605,10 +39605,10 @@ function ik(_, s) {
                                   ls(Ar, {
                                     class: "size-8 border sm:size-10",
                                     get userId() {
-                                      return w(It).id
+                                      return w(Mt).id
                                     },
                                     get pictureUrl() {
-                                      return w(It).picture
+                                      return w(Mt).picture
                                     }
                                   });
                                   var ue = Z(Ar, 2),
@@ -39620,7 +39620,7 @@ function ik(_, s) {
                                   var he = Z(j, 2);
                                   {
                                     var Te = xe => {
-                                      const Nt = ht(() => Ts(w(It).equippedFlag));
+                                      const Nt = ht(() => Ts(w(Mt).equippedFlag));
                                       var Jt = YA(),
                                         jt = E(Jt, !0);
                                       k(Jt), Ye(() => {
@@ -39628,7 +39628,7 @@ function ik(_, s) {
                                       }), H(xe, Jt)
                                     };
                                     je(he, xe => {
-                                      w(It).equippedFlag && xe(Te)
+                                      w(Mt).equippedFlag && xe(Te)
                                     })
                                   }
                                   var Me = Z(he, 2);
@@ -39636,12 +39636,12 @@ function ik(_, s) {
                                     var we = xe => {
                                       Ah(xe, {
                                         get username() {
-                                          return w(It).discord
+                                          return w(Mt).discord
                                         }
                                       })
                                     };
                                     je(Me, xe => {
-                                      w(It).discord && xe(we)
+                                      w(Mt).discord && xe(we)
                                     })
                                   }
                                   var Ne = Z(Me, 2);
@@ -39650,25 +39650,25 @@ function ik(_, s) {
                                       var Nt = KA(),
                                         Jt = E(Nt, !0);
                                       k(Nt), Ye((jt, hr) => {
-                                        zr(Nt, 1, `badge badge-sm ml-0.5 border-0 ${jt??""} ${hr??""}`), ye(Jt, w(It).allianceName)
-                                      }, [() => up(w(It).allianceId), () => Ri(w(It).allianceId)]), H(xe, Nt)
+                                        zr(Nt, 1, `badge badge-sm ml-0.5 border-0 ${jt??""} ${hr??""}`), ye(Jt, w(Mt).allianceName)
+                                      }, [() => up(w(Mt).allianceId), () => Ri(w(Mt).allianceId)]), H(xe, Nt)
                                     };
                                     je(Ne, xe => {
-                                      "allianceName" in w(It) && w(It).allianceName && xe(ct)
+                                      "allianceName" in w(Mt) && w(Mt).allianceName && xe(ct)
                                     })
                                   }
                                   k(ue), k(gr), k(wr);
                                   var Qe = Z(wr),
                                     kt = E(Qe, !0);
                                   k(Qe), k(Mr), Ye((xe, Nt, Jt) => {
-                                    Gr = zr(Mr, 1, "", null, Gr, xe), ye(Sr, w(ur) + 1), zr(j, 1, `font-semibold max-sm:ml-2 ${Nt??""} flex gap-1`), ye(U, `${w(It).name??""} `), ye(ie, `#${w(It).id??""}`), ye(kt, Jt)
+                                    Gr = zr(Mr, 1, "", null, Gr, xe), ye(Sr, w(ur) + 1), zr(j, 1, `font-semibold max-sm:ml-2 ${Nt??""} flex gap-1`), ye(U, `${w(Mt).name??""} `), ye(ie, `#${w(Mt).id??""}`), ye(kt, Jt)
                                   }, [() => ({
                                     "bg-base-200": w(yr)
-                                  }), () => Ri(w(It).id), () => w(It).pixelsPainted.toLocaleString("en-US")]), sl(Mr, () => ol, () => ({
+                                  }), () => Ri(w(Mt).id), () => w(Mt).pixelsPainted.toLocaleString("en-US")]), sl(Mr, () => ol, () => ({
                                     duration: 200
                                   })), H(er, Mr)
-                                }), k(rr), k(vt), Ye((er, It, ur) => {
-                                  ye(pt, er), ye(Wt, `${It??""} `), ye(Xt, ur)
+                                }), k(rr), k(vt), Ye((er, Mt, ur) => {
+                                  ye(pt, er), ye(Wt, `${Mt??""} `), ye(Xt, ur)
                                 }, [() => Dm(), () => _c(), () => gc().toLowerCase()]), H(ot, vt)
                               },
                               Dt = ot => {
@@ -39684,13 +39684,13 @@ function ik(_, s) {
                                     k(Wt);
                                     var rr = Z(Wt),
                                       er = E(rr),
-                                      It = Z(er, 2, !0);
+                                      Mt = Z(er, 2, !0);
                                     k(rr), k(At), k(pt);
                                     var ur = Z(pt);
                                     ui(ur, 31, () => w(W), yr => yr.id, (yr, Mr, Gr) => {
                                       const xr = ht(() => {
                                         var he;
-                                        return ((he = Mt.data) == null ? void 0 : he.allianceId) === w(Mr).id
+                                        return ((he = It.data) == null ? void 0 : he.allianceId) === w(Mr).id
                                       });
                                       var Sr = ek();
                                       let wr;
@@ -39711,7 +39711,7 @@ function ik(_, s) {
                                         duration: 200
                                       })), H(yr, Sr)
                                     }), k(ur), k(xt), Ye((yr, Mr, Gr) => {
-                                      ye(Xt, yr), ye(er, `${Mr??""} `), ye(It, Gr)
+                                      ye(Xt, yr), ye(er, `${Mr??""} `), ye(Mt, Gr)
                                     }, [() => pp(), () => _c(), () => gc().toLowerCase()]), H(Tt, xt)
                                   };
                                   je(vt, Tt => {
@@ -39873,7 +39873,7 @@ function mk(_, s) {
   Br(s, !1), Rv();
   var m = fk(),
     y = Z(E(m), 2);
-  k(m), Ye(M => ye(y, ` Next charge in ${M??""}`), [() => ep(Mt.cooldown ?? 0)]), H(_, m), Fr()
+  k(m), Ye(M => ye(y, ` Next charge in ${M??""}`), [() => ep(It.cooldown ?? 0)]), H(_, m), Fr()
 }
 var _k = Pe("<canvas></canvas>");
 
@@ -39923,7 +39923,7 @@ function S0(_, s) {
     B = Z(o);
   {
     var N = se => {
-      const X = ht(() => `${Math.floor(s.charges)}/${Mt.data.charges.max}`);
+      const X = ht(() => `${Math.floor(s.charges)}/${It.data.charges.max}`);
       var me = vk(),
         ge = E(me),
         Ee = E(ge);
@@ -39952,16 +39952,16 @@ function S0(_, s) {
         var Re = Ie => {
           var Oe = gk(),
             st = E(Oe);
-          k(Oe), Ye(nt => ye(st, `(${nt??""})`), [() => ep(Mt.cooldown)]), H(Ie, Oe)
+          k(Oe), Ye(nt => ye(st, `(${nt??""})`), [() => ep(It.cooldown)]), H(Ie, Oe)
         };
         je(ze, Ie => {
-          s.charges < Mt.data.charges.max && Mt.cooldown !== void 0 && Ie(Re)
+          s.charges < It.data.charges.max && It.cooldown !== void 0 && Ie(Re)
         })
       }
       k(me), Ye(Ie => Ic(ge, `width: ${Ie??""}px`), [() => (Math.floor(w(y) / 5) + 1) * 5]), H(se, me)
     };
     je(B, se => {
-      s.charges !== void 0 && Mt.data && se(N)
+      s.charges !== void 0 && It.data && se(N)
     })
   }
   k(T);
@@ -40195,7 +40195,7 @@ var Dk = async (_, s, m, y) => {
       id: m,
       amount: 1,
       variant: y.colorIdx
-    }), await Mt.refresh(), sa.notification1.play()
+    }), await It.refresh(), sa.notification1.play()
   } catch (M) {
     Vr.error(M.message)
   } finally {
@@ -40209,10 +40209,10 @@ function Vk(_, s) {
   const y = ht(() => Xi.colors[s.colorIdx]),
     M = ht(() => {
       var X;
-      return ((X = Mt.data) == null ? void 0 : X.droplets) ?? 0
+      return ((X = It.data) == null ? void 0 : X.droplets) ?? 0
     });
   let z = ut(!1);
-  const T = ht(() => (w(z), Mt.hasColor(s.colorIdx)));
+  const T = ht(() => (w(z), It.hasColor(s.colorIdx)));
   An(() => {
     const X = me => {
       me.key === "Escape" && m(!1)
@@ -40296,7 +40296,7 @@ function Vk(_, s) {
       })]), H(X, me)
     };
     je(K, X => {
-      Mt.data && X(se)
+      It.data && X(se)
     })
   }
   k(W), gn(2), k(N), Yi(N, () => X => {
@@ -42207,7 +42207,7 @@ function kz(_, s) {
   let N = ut(0),
     W = ut(!1),
     K = ut(!0),
-    se = ht(() => Mt.charges ?? 0),
+    se = ht(() => It.charges ?? 0),
     X = ht(() => w(se) - w(N)),
     me = ut(!1),
     ge = !1,
@@ -42219,7 +42219,7 @@ function kz(_, s) {
     st = ht(() => w(T) === "cleararea"),
     nt = ht(() => {
       var bt, Xe;
-      return Ou((Xe = (bt = Mt) == null ? void 0 : bt.data) == null ? void 0 : Xe.role, ["admin", "global_moderator"])
+      return Ou((Xe = (bt = It) == null ? void 0 : bt.data) == null ? void 0 : Xe.role, ["admin", "global_moderator"])
     });
   let qe = ut(!1),
     Ue = ut(0),
@@ -42265,7 +42265,7 @@ function kz(_, s) {
     os(s.map.getCenter(), s.map.getZoom());
     const bt = s.map.on("click", lr => {
       var rn;
-      s.zoom < s.tileZoom + 2 && ((rn = Mt.data) == null ? void 0 : rn.role) === "user" && s.map.easeTo({
+      s.zoom < s.tileZoom + 2 && ((rn = It.data) == null ? void 0 : rn.role) === "user" && s.map.easeTo({
         center: lr.lngLat,
         zoom: 17
       });
@@ -42502,7 +42502,7 @@ function kz(_, s) {
   }
 
   function vt(bt) {
-    return bt >= 32 && ce($e, !0), Mt.hasColor(bt) ? (sa.smallDropplet.play(), ce(z, bt, !0), ce(T, "pencil"), !0) : (sa.smallDropplet.play(), ce(qe, !0), ce(Ue, bt, !0), !1)
+    return bt >= 32 && ce($e, !0), It.hasColor(bt) ? (sa.smallDropplet.play(), ce(z, bt, !0), ce(T, "pencil"), !0) : (sa.smallDropplet.play(), ce(qe, !0), ce(Ue, bt, !0), !1)
   }
   l1(bt => {
     bt.type === "leave" && w(N) > 0 && bt.cancel()
@@ -42511,7 +42511,7 @@ function kz(_, s) {
   let Tt = ut(!1);
   An(() => {
     var bt;
-    ce(Tt, !localStorage.getItem(ft) && (((bt = Mt.data) == null ? void 0 : bt.pixelsPainted) ?? 0) < 100, !0)
+    ce(Tt, !localStorage.getItem(ft) && (((bt = It.data) == null ? void 0 : bt.pixelsPainted) ?? 0) < 100, !0)
   }), Xr(() => {
     w(N) > 1 && (ce(Tt, !1), localStorage.setItem(ft, "false"))
   });
@@ -42523,7 +42523,7 @@ function kz(_, s) {
       const Lt = JSON.parse(atob(bt)),
         Vt = (Lt == null ? void 0 : Lt.time) ?? 0,
         Cr = 60 * 1e3;
-      (Lt == null ? void 0 : Lt.userId) !== ((Xe = Mt.data) == null ? void 0 : Xe.id) && Date.now() - Vt < 30 * Cr && !T1 && (Vr.error(JS()), Dt())
+      (Lt == null ? void 0 : Lt.userId) !== ((Xe = It.data) == null ? void 0 : Xe.id) && Date.now() - Vt < 30 * Cr && !T1 && (Vr.error(JS()), Dt())
     } catch (Lt) {
       console.error(Lt)
     }
@@ -42532,7 +42532,7 @@ function kz(_, s) {
   function pt() {
     var Xe;
     const bt = btoa(JSON.stringify({
-      userId: (Xe = Mt.data) == null ? void 0 : Xe.id,
+      userId: (Xe = It.data) == null ? void 0 : Xe.id,
       time: Date.now()
     }));
     localStorage.setItem(xt, bt)
@@ -42729,8 +42729,8 @@ function kz(_, s) {
       w(Ie) && w(N) === 0 ? bt(rr) : bt(er, !1)
     })
   }
-  var It = Z(Xt, 2),
-    ur = E(It);
+  var Mt = Z(Xt, 2),
+    ur = E(Mt);
   ur.__click = [vz, K];
   var yr = E(ur);
   {
@@ -42816,8 +42816,8 @@ function kz(_, s) {
   var Qe = E(ct);
   pl(Qe, {
     class: "size-4"
-  }), k(ct), k(It);
-  var kt = Z(It, 2),
+  }), k(ct), k(Mt);
+  var kt = Z(Mt, 2),
     xe = E(kt);
   ui(xe, 23, () => w(Ae), bt => bt.idx, (bt, Xe, Lt) => {
     const Vt = ht(() => {
@@ -42830,7 +42830,7 @@ function kz(_, s) {
       }),
       Cr = ht(() => w(z) === w(Xe).idx && w(Re)),
       Zr = ht(() => w(Xe).idx === 0),
-      tn = ht(() => Mt.hasColor(w(Xe).idx));
+      tn = ht(() => It.hasColor(w(Xe).idx));
     var br = Pz(),
       fn = E(br);
     fn.__click = [Sz, vt, Xe];
@@ -42921,7 +42921,7 @@ function kz(_, s) {
         ce(W, !0);
         try {
           const tn = await ez();
-          await an.paint(Cr, Vt, tn), await o1(Cr), pt(), Mt.refresh(), Wd.shouldReload = !0, await Dt()
+          await an.paint(Cr, Vt, tn), await o1(Cr), pt(), It.refresh(), Wd.shouldReload = !0, await Dt()
         } catch (tn) {
           Vr.error(`${tn.message}`, {
             duration: 7e3
@@ -44494,7 +44494,7 @@ function Wz(_, s) {
     N = ut(void 0);
   const W = ht(() => {
     var Ee;
-    return `phone:${(Ee=Mt.data)==null?void 0:Ee.id}`
+    return `phone:${(Ee=It.data)==null?void 0:Ee.id}`
   });
   Xr(() => {
     const Ee = localStorage.getItem(w(W));
@@ -44529,7 +44529,7 @@ function Wz(_, s) {
   Xr(() => {
     w(B).length === 6 && (ce(o, !0), (async () => {
       try {
-        await an.verifyOtp(w(B)), await Mt.refresh(), Vr.success(iC()), localStorage.removeItem(w(W)), s.onsuccess(w(y))
+        await an.verifyOtp(w(B)), await It.refresh(), Vr.success(iC()), localStorage.removeItem(w(W)), s.onsuccess(w(y))
       } catch (Ee) {
         Vr.error(Ee.message)
       } finally {
@@ -44562,7 +44562,7 @@ function Wz(_, s) {
               Yi($e, () => _e => (ce(N, Nz(_e, {
                 strictMode: !0,
                 initialCountry: "br",
-                loadUtils: () => A1(() => import("../chunks/D2uUBGng.js"), [], import.meta.url),
+                loadUtils: () => A1(() => import("../chunks/DQuPE30Q.js"), [], import.meta.url),
                 containerClass: "w-full",
                 dropdownContainer: document.body
               })), () => {
@@ -44741,7 +44741,7 @@ var Kz = (_, s) => {
   },
   oL = async (_, s) => {
     try {
-      ce(s, !0), await an.deleteMe(), Vr.warning(wC()), await Mt.logout()
+      ce(s, !0), await an.deleteMe(), Vr.warning(wC()), await It.logout()
     } catch (m) {
       Vr.error(m.message)
     } finally {
@@ -44759,26 +44759,26 @@ function cL(_, s) {
     o = ut(void 0),
     B = ut(void 0);
   An(() => {
-    const It = ur => {
+    const Mt = ur => {
       ur.key === "Escape" && m(!1)
     };
-    return document.addEventListener("keydown", It), () => document.removeEventListener("keydown", It)
+    return document.addEventListener("keydown", Mt), () => document.removeEventListener("keydown", Mt)
   });
   let N = ut(void 0),
     W = ut(void 0);
   Xr(() => {
     ce(y, s.userData.name, !0), ce(z, s.userData.showLastPixel, !0)
   }), Xr(() => {
-    m() && !w(B) && an.getMyProfilePictures().then(It => {
-      ce(B, It, !0)
-    }).catch(It => {
-      Vr.error(It.message)
+    m() && !w(B) && an.getMyProfilePictures().then(Mt => {
+      ce(B, Mt, !0)
+    }).catch(Mt => {
+      Vr.error(Mt.message)
     })
   });
   let K = ut(!1);
-  async function se(It) {
+  async function se(Mt) {
     try {
-      ce(K, !0), await an.changeProfilePicture(It), await Mt.refresh()
+      ce(K, !0), await an.changeProfilePicture(Mt), await It.refresh()
     } finally {
       ce(K, !1)
     }
@@ -44810,7 +44810,7 @@ function cL(_, s) {
   }), k(qe), k(st);
   var Je = Z(st, 2);
   {
-    var Fe = It => {
+    var Fe = Mt => {
       var ur = nL(),
         yr = E(ur),
         Mr = E(yr, !0);
@@ -44879,22 +44879,22 @@ function cL(_, s) {
           })
         }
         H(gr, ue)
-      }), k(Gr), k(ur), Ye(gr => ye(Mr, gr), [() => W2()]), H(It, ur)
+      }), k(Gr), k(ur), Ye(gr => ye(Mr, gr), [() => W2()]), H(Mt, ur)
     };
-    je(Je, It => {
+    je(Je, Mt => {
       var ur;
-      (ur = w(B)) != null && ur.length && It(Fe)
+      (ur = w(B)) != null && ur.length && Mt(Fe)
     })
   }
   k(Oe);
   var it = Z(Oe, 2),
     tt = E(it);
   {
-    let It = ht(() => Hf()),
+    let Mt = ht(() => Hf()),
       ur = ht(() => Hf());
     Xf(tt, {
       get label() {
-        return w(It)
+        return w(Mt)
       },
       get placeholder() {
         return w(ur)
@@ -44917,11 +44917,11 @@ function cL(_, s) {
   }
   var $e = Z(tt, 2);
   {
-    let It = ht(() => J5());
+    let Mt = ht(() => J5());
     Xf($e, {
       label: "Discord",
       get placeholder() {
-        return w(It)
+        return w(Mt)
       },
       max: 32,
       get value() {
@@ -44955,9 +44955,9 @@ function cL(_, s) {
   k(Le);
   var We = Z(Le, 2),
     _t = E(We, !0);
-  k(We), k(ke), k(re), k(Re), k(ge), k(me), Yi(me, () => It => {
+  k(We), k(ke), k(re), k(Re), k(ge), k(me), Yi(me, () => Mt => {
     Xr(() => {
-      m() ? It.show() : It.close()
+      m() ? Mt.show() : Mt.close()
     })
   });
   var zt = Z(me, 2),
@@ -44980,23 +44980,23 @@ function cL(_, s) {
   var Xt = Z(Dt, 2),
     rr = E(Xt),
     er = E(rr, !0);
-  k(rr), k(Xt), k(zt), Xs(zt, It => ce(o, It), () => w(o)), Ye((It, ur, yr, Mr, Gr, xr, Sr, wr, gr, Ar, ue) => {
-    ye(ze, It), kr(qe, "data-tip", ur), ye(Q, ` ${yr??""}`), ye(ae, Mr), Le.disabled = w(T), ye(lt, Gr), We.disabled = w(T), ye(_t, xr), ye(dt, Sr), ye(ft, wr), ye(pt, gr), At.disabled = w(T), ye(Wt, Ar), ye(er, ue)
+  k(rr), k(Xt), k(zt), Xs(zt, Mt => ce(o, Mt), () => w(o)), Ye((Mt, ur, yr, Mr, Gr, xr, Sr, wr, gr, Ar, ue) => {
+    ye(ze, Mt), kr(qe, "data-tip", ur), ye(Q, ` ${yr??""}`), ye(ae, Mr), Le.disabled = w(T), ye(lt, Gr), We.disabled = w(T), ye(_t, xr), ye(dt, Sr), ye(ft, wr), ye(pt, gr), At.disabled = w(T), ye(Wt, Ar), ye(er, ue)
   }, [() => tP(), () => C1(), () => K2(), () => Gg(), () => vc(), () => rw(), () => aw(), () => lw(), () => Tm(), () => Gg(), () => vc()]), Ai("close", me, () => m(!1)), Ai("submit", Re, async () => {
-    var It, ur;
+    var Mt, ur;
     try {
-      if (!((It = w(N)) != null && It()) || !((ur = w(W)) != null && ur())) return;
+      if (!((Mt = w(N)) != null && Mt()) || !((ur = w(W)) != null && ur())) return;
       ce(T, !0), await an.updateMe({
         name: w(y),
         showLastPixel: w(z),
         discord: w(M)
-      }), Mt.refresh(), Vr.success(yC()), m(!1)
+      }), It.refresh(), Vr.success(yC()), m(!1)
     } catch (yr) {
       Vr.error(yr.message)
     } finally {
       ce(T, !1)
     }
-  }), g1(gt, () => w(z), It => ce(z, It)), H(_, X), Fr()
+  }), g1(gt, () => w(z), Mt => ce(z, Mt)), H(_, X), Fr()
 }
 ri(["click"]);
 var uL = Lr('<svg><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"></path></svg>');
@@ -45323,7 +45323,7 @@ function VL(_, s) {
       }
       var rr = Z(Wt, 2),
         er = E(rr),
-        It = E(er, !0);
+        Mt = E(er, !0);
       k(er);
       var ur = Z(er, 2),
         yr = E(ur),
@@ -45482,7 +45482,7 @@ function VL(_, s) {
           ce(m, tr, !0)
         }
       }), Ye((tr, Ht, Yt, ar, qr, yt, sn, Yr, kn, bt, Xe, Lt) => {
-        Ee = zr(ge, 1, "btn size-12 p-0 shadow-md", null, Ee, tr), kr(ge, "title", Ht), kr(tt, "title", s.user.data.name), ye($e, s.user.data.name), zr(Ae, 1, Yt), ye(gt, `#${s.user.data.id??""}`), ye(We, `${ar??""}: `), ye(zt, qr), ye(ft, `Level ${yt??""}`), ye(Tt, ` (${sn??""}%) `), kr(xt, "data-tip", Yr), ye(It, kn), kr(Sr, "data-tip", bt), ye(Ne, ` ${Xe??""}`), jt.disabled = w(y), ye($r, ` ${Lt??""}`)
+        Ee = zr(ge, 1, "btn size-12 p-0 shadow-md", null, Ee, tr), kr(ge, "title", Ht), kr(tt, "title", s.user.data.name), ye($e, s.user.data.name), zr(Ae, 1, Yt), ye(gt, `#${s.user.data.id??""}`), ye(We, `${ar??""}: `), ye(zt, qr), ye(ft, `Level ${yt??""}`), ye(Tt, ` (${sn??""}%) `), kr(xt, "data-tip", Yr), ye(Mt, kn), kr(Sr, "data-tip", bt), ye(Ne, ` ${Xe??""}`), jt.disabled = w(y), ye($r, ` ${Lt??""}`)
       }, [() => ({
         "bg-red-500": w(B)
       }), () => I2(), () => bo(Ri(s.user.data.id)), () => Cm(), () => s.user.data.pixelsPainted.toLocaleString("en-US"), () => Math.floor(s.user.data.level), () => Math.floor(s.user.data.level % 1 * 100), () => H5(), () => k2(), () => fa.muted ? FS() : DS(), () => N2(), () => q2()]), Ai("focus", ge, () => {
@@ -45743,7 +45743,7 @@ function aD(_, s) {
                     ui(ae, 31, () => w(Fe), ke => ke.id, (ke, Le, lt) => {
                       const We = ht(() => {
                         var xr;
-                        return ((xr = Mt.data) == null ? void 0 : xr.id) === w(Le).id
+                        return ((xr = It.data) == null ? void 0 : xr.id) === w(Le).id
                       });
                       var _t = QL();
                       let zt;
@@ -45784,7 +45784,7 @@ function aD(_, s) {
                       }
                       var er = Z(Xt, 2);
                       {
-                        var It = xr => {
+                        var Mt = xr => {
                           Ah(xr, {
                             get username() {
                               return w(Le).discord
@@ -45792,7 +45792,7 @@ function aD(_, s) {
                           })
                         };
                         je(er, xr => {
-                          w(Le).discord && xr(It)
+                          w(Le).discord && xr(Mt)
                         })
                       }
                       var ur = Z(er, 2);
@@ -45841,7 +45841,7 @@ function aD(_, s) {
                         ui(lt, 31, () => w(o), We => We.id, (We, _t, zt) => {
                           const Dt = ht(() => {
                             var Xt;
-                            return ((Xt = Mt.data) == null ? void 0 : Xt.allianceId) === w(_t).id
+                            return ((Xt = It.data) == null ? void 0 : Xt.allianceId) === w(_t).id
                           });
                           var ot = tD();
                           let dt;
@@ -46041,7 +46041,7 @@ var fD = (_, s, m, y, M) => {
     }
   }, zD = Pe('<li><button class="text-error font-medium"><!> </button></li>'), LD = Pe('<div class="dropdown dropdown-top max-sm:dropdown-top max-sm:dropdown-left ml-1"><button tabindex="0" class="btn btn-xs btn-circle"><!></button> <ul tabindex="0" class="dropdown-content menu bg-base-100 z-1 mb-1 w-max gap-0.5 rounded-xl p-2.5 shadow-sm"></ul></div>'), DD = Pe('<div class="flex items-center gap-1"><span> </span> <div class="ml-0.5"><!></div> <div class="flex flex-wrap items-center gap-1"><span><span> </span> <span> </span></span> <!> <!> <!> <!></div> <!></div>'), RD = (_, s) => s.onclickpaint(s.latLon), BD = async (_, s, m, y) => {
     try {
-      ce(s, !0), w(m) ? (await an.deleteFavoriteLocation(w(m).id), Vr.warning(uC())) : (await an.favoriteLocation(w(y).center), Vr.success(pC())), sa.smallPlop.play(), Mt.refresh()
+      ce(s, !0), w(m) ? (await an.deleteFavoriteLocation(w(m).id), Vr.warning(uC())) : (await an.favoriteLocation(w(y).center), Vr.success(pC())), sa.smallPlop.play(), It.refresh()
     } catch (M) {
       Vr.error(M.message)
     } finally {
@@ -46065,7 +46065,7 @@ function jD(_, s) {
     o = ut(!1);
   const B = ht(() => {
       var ot, dt, vt;
-      return !!((dt = (ot = w(m)) == null ? void 0 : ot.paintedBy) != null && dt.id) && ((vt = Mt.data) == null ? void 0 : vt.id) === w(m).paintedBy.id
+      return !!((dt = (ot = w(m)) == null ? void 0 : ot.paintedBy) != null && dt.id) && ((vt = It.data) == null ? void 0 : vt.id) === w(m).paintedBy.id
     }),
     N = ht(() => {
       const [ot, dt] = s.latLon ?? [0, 0], vt = w(y).latLonToPixelBoundsLatLon(ot, dt, s.pixelArtZoom), ft = Bm(vt), {
@@ -46103,7 +46103,7 @@ function jD(_, s) {
     var ft;
     const dt = await an.getPixelInfo({
       ...ot,
-      isModerator: Ou((ft = Mt.data) == null ? void 0 : ft.role, ["admin", "global_moderator", "moderator"])
+      isModerator: Ou((ft = It.data) == null ? void 0 : ft.role, ["admin", "global_moderator", "moderator"])
     });
     if (dt.paintedBy !== void 0) {
       const Tt = K(ot);
@@ -46128,10 +46128,10 @@ function jD(_, s) {
   const ge = ht(() => {
     var ft, Tt, xt, pt, At;
     const ot = [],
-      dt = (Tt = (ft = Mt) == null ? void 0 : ft.data) == null ? void 0 : Tt.role;
-    Ou(dt, ["admin"]) && !w(B) && ot.push("ban-user"), Ou(dt, ["admin", "global_moderator", "moderator"]) && !w(B) && ot.push("timeout-user"), w(B) || ot.push("report-user");
+      dt = (Tt = (ft = It) == null ? void 0 : ft.data) == null ? void 0 : Tt.role;
+    Ou(dt, ["admin"]) && !w(B) && ot.push("ban-user"), Ou(dt, ["admin", "global_moderator", "moderator"]) && !w(B) && ot.push("timeout-user"), !w(B) && It.data && ot.push("report-user");
     const vt = (xt = w(m)) == null ? void 0 : xt.paintedBy;
-    return (vt == null ? void 0 : vt.allianceId) === ((pt = Mt.data) == null ? void 0 : pt.allianceId) && ((At = Mt.data) == null ? void 0 : At.allianceRole) === "admin" && Mt.data.id !== (vt == null ? void 0 : vt.id) && !w(B) && ot.push("ban-alliance"), ot
+    return (vt == null ? void 0 : vt.allianceId) === ((pt = It.data) == null ? void 0 : pt.allianceId) && ((At = It.data) == null ? void 0 : At.allianceRole) === "admin" && It.data.id !== (vt == null ? void 0 : vt.id) && !w(B) && ot.push("ban-alliance"), ot
   });
 
   function Ee(ot) {
@@ -46223,8 +46223,8 @@ function jD(_, s) {
                   return w(pt).picture
                 }
               }), k(rr);
-              var It = Z(rr, 2),
-                ur = E(It),
+              var Mt = Z(rr, 2),
+                ur = E(Mt),
                 yr = E(ur),
                 Mr = E(yr, !0);
               k(yr);
@@ -46281,7 +46281,7 @@ function jD(_, s) {
                     };
                     je(Qe, xe => {
                       var Nt, Jt, jt;
-                      (((Nt = Mt.data) == null ? void 0 : Nt.role) === "admin" || ((Jt = Mt.data) == null ? void 0 : Jt.role) === "moderator" || ((jt = Mt.data) == null ? void 0 : jt.role) === "global_moderator") && xe(kt)
+                      (((Nt = It.data) == null ? void 0 : Nt.role) === "admin" || ((Jt = It.data) == null ? void 0 : Jt.role) === "moderator" || ((jt = It.data) == null ? void 0 : jt.role) === "global_moderator") && xe(kt)
                     })
                   }
                   Ye((xe, Nt) => {
@@ -46322,8 +46322,8 @@ function jD(_, s) {
                   w(m).paintedBy.banned ? Me(Y) : Me(ie, !1)
                 })
               }
-              k(It);
-              var he = Z(It, 2);
+              k(Mt);
+              var he = Z(Mt, 2);
               {
                 var Te = Me => {
                   var we = LD(),
@@ -46439,7 +46439,7 @@ function jD(_, s) {
               }
               k(At), Ye((Me, we) => {
                 var Ne;
-                ye(Xt, `${Me??""}:`), zr(ur, 1, `font-medium ${we??""} flex gap-1.5`), ye(Mr, ((Ne = Mt.data) == null ? void 0 : Ne.id) === w(pt).id ? Mt.data.name : w(pt).name), ye(xr, `#${w(pt).id??""}`)
+                ye(Xt, `${Me??""}:`), zr(ur, 1, `font-medium ${we??""} flex gap-1.5`), ye(Mr, ((Ne = It.data) == null ? void 0 : Ne.id) === w(pt).id ? It.data.name : w(pt).name), ye(xr, `#${w(pt).id??""}`)
               }, [() => yS(), () => Ri(w(pt).id)]), H(xt, At)
             };
           je(vt, xt => {
@@ -46465,8 +46465,8 @@ function jD(_, s) {
   var lt = Z(ae, 2);
   {
     var We = ot => {
-      const dt = ht(() => Mt.data.favoriteLocations.find(At => Math.abs(At.latitude - w(N).center[0]) < 5e-5 && Math.abs(At.longitude - w(N).center[1]) < 5e-5)),
-        vt = ht(() => !w(dt) && Mt.data.favoriteLocations.length >= Mt.data.maxFavoriteLocations);
+      const dt = ht(() => It.data.favoriteLocations.find(At => Math.abs(At.latitude - w(N).center[0]) < 5e-5 && Math.abs(At.longitude - w(N).center[1]) < 5e-5)),
+        vt = ht(() => !w(dt) && It.data.favoriteLocations.length >= It.data.maxFavoriteLocations);
       var ft = FD();
       let Tt;
       ft.__click = [BD, T, dt, N];
@@ -46488,7 +46488,7 @@ function jD(_, s) {
       }), () => w(vt) ? wS() : CS()]), H(ot, ft)
     };
     je(lt, ot => {
-      Mt.data && ot(We)
+      It.data && ot(We)
     })
   }
   var _t = Z(lt, 2);
@@ -46499,7 +46499,7 @@ function jD(_, s) {
   });
   var Dt = Z(zt);
   k(_t), k(_e), k(ze), Xs(ze, ot => ce(z, ot), () => w(z)), Ye((ot, dt) => {
-    ye(Ue, `Pixel: ${w(N).regionPixel[0]??""}, ${w(N).regionPixel[1]??""}`), ae.disabled = Mt.loading, ye(Le, ` ${ot??""}`), ye(Dt, ` ${dt??""}`)
+    ye(Ue, `Pixel: ${w(N).regionPixel[0]??""}, ${w(N).regionPixel[1]??""}`), ae.disabled = It.loading, ye(Le, ` ${ot??""}`), ye(Dt, ` ${dt??""}`)
   }, [() => Vv(), () => MS()]), dp("innerHeight", ot => ce(M, ot, !0)), H(_, ze), Fr()
 }
 ri(["click"]);
@@ -46567,17 +46567,17 @@ function KD(_, s) {
         dt === tt && (ft = st % s.tileSize), ot === it && (vt = Oe % s.tileSize), dt === Ae && (xt = qe % s.tileSize), ot === $e && (Tt = nt % s.tileSize);
         const rr = [ot, dt],
           er = [vt, ft],
-          It = [Tt, xt];
+          Mt = [Tt, xt];
         return {
           response: await an.getPixelAreaInfo({
             season: s.season,
             tile: rr,
             p0: er,
-            p1: It
+            p1: Mt
           }),
           tile: rr,
           p0: er,
-          p1: It
+          p1: Mt
         }
       })),
       _e = await Promise.all(re),
@@ -46594,13 +46594,13 @@ function KD(_, s) {
         for (let Xt = 0; Xt < pt; Xt++) {
           const rr = Wt * pt + Xt,
             er = We.paintedBy[rr];
-          let It = ae.get(er);
-          It || (It = {
+          let Mt = ae.get(er);
+          Mt || (Mt = {
             latitudes: [],
             longitudes: []
-          }, ae.set(er, It));
+          }, ae.set(er, Mt));
           const [ur, yr] = ge.pixelsToLatLon(ot * s.tileSize + (vt + Xt + .5), dt * s.tileSize + (ft + Wt + .5), s.pixelArtZoom);
-          It.latitudes.push(ur), It.longitudes.push(yr)
+          Mt.latitudes.push(ur), Mt.longitudes.push(yr)
         }
     }
     const {
@@ -46740,7 +46740,7 @@ function KD(_, s) {
                       var Xt = Z(Wt, 2),
                         rr = E(Xt),
                         er = E(rr),
-                        It = E(er, !0);
+                        Mt = E(er, !0);
                       k(er);
                       var ur = Z(er, 2),
                         yr = E(ur);
@@ -46762,7 +46762,7 @@ function KD(_, s) {
                       var xr = Z(At),
                         Sr = E(xr, !0);
                       k(xr), k(ft), Ye((wr, gr, Ar) => {
-                        Tt = zr(ft, 1, "hover:bg-base-200 cursor-pointer", null, Tt, wr), ye(pt, w(vt) + 1), zr(rr, 1, `font-medium ${gr??""} flex gap-1.5`), ye(It, w(dt).name), ye(yr, `#${w(dt).id??""}`), ye(Sr, Ar)
+                        Tt = zr(ft, 1, "hover:bg-base-200 cursor-pointer", null, Tt, wr), ye(pt, w(vt) + 1), zr(rr, 1, `font-medium ${gr??""} flex gap-1.5`), ye(Mt, w(dt).name), ye(yr, `#${w(dt).id??""}`), ye(Sr, Ar)
                       }, [() => ({
                         "!bg-base-300": w(dt).id === w(z)
                       }), () => Ri(w(dt).id), () => w(dt).painted.latitudes.length.toLocaleString()]), H(ot, ft)
@@ -46853,7 +46853,7 @@ function hR(_, s) {
   const m = (Ie, Oe = Ta) => {
       const st = ht(() => {
           var ae;
-          return (((ae = Mt.data) == null ? void 0 : ae.droplets) ?? 0) >= T.price
+          return (((ae = It.data) == null ? void 0 : ae.droplets) ?? 0) >= T.price
         }),
         nt = ht(() => w(B) === Oe().id);
       var qe = lR(),
@@ -46885,7 +46885,7 @@ function hR(_, s) {
                   id: z,
                   amount: 1,
                   variant: zt
-                }), Mt.refresh(), sa.notification1.play();
+                }), It.refresh(), sa.notification1.play();
                 const Dt = M.find(ot => ot.id === zt);
                 Dt && (Dt.owned = !0), ce(N, zt, !0)
               } catch (zt) {
@@ -46916,7 +46916,7 @@ function hR(_, s) {
           _e = ae => {
             const ke = ht(() => {
               var ft;
-              return ((ft = Mt.data) == null ? void 0 : ft.equippedFlag) === Oe().id
+              return ((ft = It.data) == null ? void 0 : ft.equippedFlag) === Oe().id
             });
             var Le = oR();
             let lt;
@@ -46924,7 +46924,7 @@ function hR(_, s) {
               try {
                 ce(B, Oe().id, !0);
                 const ft = w(ke) ? 0 : Oe().id;
-                await an.equipFlag(ft), Mt.data && (Mt.data.equippedFlag = ft), Mt.refresh()
+                await an.equipFlag(ft), It.data && (It.data.equippedFlag = ft), It.refresh()
               } catch (ft) {
                 Vr.error(ft.message)
               } finally {
@@ -46983,7 +46983,7 @@ function hR(_, s) {
     },
     y = Xi.countries.map(Ie => ({
       ...Ie,
-      owned: Mt.flagsBitmap.get(Ie.id)
+      owned: It.flagsBitmap.get(Ie.id)
     }));
   y.sort((Ie, Oe) => Number(Oe.owned) - Number(Ie.owned));
   const M = yi(y),
@@ -47219,7 +47219,7 @@ function kR(_, s) {
       {
         let Jt = ht(() => {
           var jt;
-          return ((jt = Mt.data) == null ? void 0 : jt.droplets) ?? 0
+          return ((jt = It.data) == null ? void 0 : jt.droplets) ?? 0
         });
         Lv(vt, {
           get value() {
@@ -47243,7 +47243,7 @@ function kR(_, s) {
         rr = E(Xt, !0);
       k(Xt);
       var er = Z(Xt, 2),
-        It = E(er);
+        Mt = E(er);
       {
         const Jt = hr => {
           PR(hr, {
@@ -47251,7 +47251,7 @@ function kR(_, s) {
           })
         };
         let jt = ht(() => _2());
-        bv(It, {
+        bv(Mt, {
           get productId() {
             return z.id
           },
@@ -47265,13 +47265,13 @@ function kR(_, s) {
             return z.product.price
           },
           get userDroplets() {
-            return Mt.data.droplets
+            return It.data.droplets
           },
           onpurchasecompleted: async hr => {
             var tr, Ht, Yt, ar, qr;
-            const $r = (Ht = (tr = Mt.data) == null ? void 0 : tr.charges) == null ? void 0 : Ht.max;
-            await Mt.refresh();
-            const en = (ar = (Yt = Mt.data) == null ? void 0 : Yt.charges) == null ? void 0 : ar.max;
+            const $r = (Ht = (tr = It.data) == null ? void 0 : tr.charges) == null ? void 0 : Ht.max;
+            await It.refresh();
+            const en = (ar = (Yt = It.data) == null ? void 0 : Yt.charges) == null ? void 0 : ar.max;
             $r !== void 0 && en !== void 0 && (ce(M, {
               name: Hg(),
               prev: $r,
@@ -47284,7 +47284,7 @@ function kR(_, s) {
           }
         })
       }
-      var ur = Z(It, 2);
+      var ur = Z(Mt, 2);
       {
         const Jt = hr => {
           j0(hr, {
@@ -47306,12 +47306,12 @@ function kR(_, s) {
             return T.product.price
           },
           get userDroplets() {
-            return Mt.data.droplets
+            return It.data.droplets
           },
           onpurchasecompleted: async hr => {
             var en, tr, Ht;
-            const $r = (tr = (en = Mt.data) == null ? void 0 : en.charges) == null ? void 0 : tr.count;
-            await Mt.refresh(), $r !== void 0 && (ce(M, {
+            const $r = (tr = (en = It.data) == null ? void 0 : en.charges) == null ? void 0 : tr.count;
+            await It.refresh(), $r !== void 0 && (ce(M, {
               name: n3(),
               prev: Math.floor($r),
               new: Math.floor($r + T.product.items[0].amount * hr)
@@ -47342,13 +47342,13 @@ function kR(_, s) {
         U = E(j);
       Dv(U, {
         get userId() {
-          return Mt.data.id
+          return It.data.id
         },
         get level() {
-          return Mt.data.level
+          return It.data.level
         },
         get pictureUrl() {
-          return Mt.data.picture
+          return It.data.picture
         }
       }), k(j), k(ue), k(Ar);
       var Y = Z(Ar, 2),
@@ -47370,13 +47370,13 @@ function kR(_, s) {
       var xe = Z(yr, 2),
         Nt = E(xe);
       hR(Nt, {}), k(xe), k(ft), k(lt), Ye((Jt, jt, hr, $r, en, tr, Ht, Yt, ar) => {
-        ye(ot, Jt), ye(Wt, jt), ye(rr, hr), ye(Sr, $r), ye(ie, en), ye(Te, tr), kr(Me, "data-tip", Ht), we = zr(Me, 1, "", null, we, Yt), ct.disabled = Mt.data.droplets < o.product.price, ye(kt, ` ${ar??""} `)
+        ye(ot, Jt), ye(Wt, jt), ye(rr, hr), ye(Sr, $r), ye(ie, en), ye(Te, tr), kr(Me, "data-tip", Ht), we = zr(Me, 1, "", null, we, Yt), ct.disabled = It.data.droplets < o.product.price, ye(kt, ` ${ar??""} `)
       }, [() => Ov(), () => o2(), () => u2(), () => hw(), () => y2(), () => w2(), () => fp(), () => ({
-        tooltip: Mt.data.droplets < o.product.price
+        tooltip: It.data.droplets < o.product.price
       }), () => o.product.price.toLocaleString("en-US")]), Ii(2, lt, () => aa), H(Le, lt)
     };
     je(K, Le => {
-      Mt.data && m() && Le(se)
+      It.data && m() && Le(se)
     })
   }
   k(W);
@@ -47614,7 +47614,7 @@ function vB(_, s) {
     K = ut(!1);
   const se = ht(() => {
     var wt;
-    return ((wt = Mt.data) == null ? void 0 : wt.id) === 401
+    return ((wt = It.data) == null ? void 0 : wt.id) === 401
   });
   let X = ut(!1),
     me = ut(yi(T.select && T.pos ? {
@@ -47865,7 +47865,7 @@ function vB(_, s) {
   let Dt = ut(!1);
   Xr(() => {
     const wt = localStorage.getItem(zt);
-    Mt.data && !wt && (ce(Dt, !0), localStorage.setItem(zt, "true"))
+    It.data && !wt && (ce(Dt, !0), localStorage.setItem(zt, "true"))
   });
   let ot = ut(!1),
     dt = ut(yi(ma.url)),
@@ -47880,18 +47880,18 @@ function vB(_, s) {
   const Tt = "view-rules";
   let xt = !1;
   Xr(() => {
-    Mt.data && (!xt && Mt.data.pixelsPainted > 1 && (localStorage.getItem(Tt) || (ce(ft, !0), localStorage.setItem(Tt, "true"))), xt = !0)
+    It.data && (!xt && It.data.pixelsPainted > 1 && (localStorage.getItem(Tt) || (ce(ft, !0), localStorage.setItem(Tt, "true"))), xt = !0)
   });
   let pt = ut(!1);
   Xr(() => {
     var wt;
-    ce(pt, !!((wt = Mt.data) != null && wt.needsPhoneVerification))
+    ce(pt, !!((wt = It.data) != null && wt.needsPhoneVerification))
   });
   let At = ut([]),
     Wt = ht(() => w(W) < z ? "1.0" : w(W) < z + 2 ? "0.5" : "0.3");
   Xr(() => {
     var Gt;
-    const wt = (Gt = Mt.data) == null ? void 0 : Gt.favoriteLocations;
+    const wt = (Gt = It.data) == null ? void 0 : Gt.favoriteLocations;
     if (wt && w(N)) {
       for (const Dr of ll(() => w(At))) Dr.remove();
       ce(At, wt.map(Dr => {
@@ -47936,24 +47936,24 @@ function vB(_, s) {
   });
   let rr = Number.MAX_VALUE;
   Xr(() => {
-    if (Mt.charges !== void 0 && Mt.data) {
-      const wt = Mt.data.charges.max,
-        Gt = Mt.charges;
-      rr < wt && Gt >= wt && sa.notification1.play(), rr = Mt.charges
+    if (It.charges !== void 0 && It.data) {
+      const wt = It.data.charges.max,
+        Gt = It.charges;
+      rr < wt && Gt >= wt && sa.notification1.play(), rr = It.charges
     }
   });
   let er = ut(!1),
-    It = Date.now();
+    Mt = Date.now();
   An(() => {
     const wt = aI(),
       Gt = () => {
         var vn;
-        if (!document.hidden && Date.now() - It > 30 * mc.min) {
+        if (!document.hidden && Date.now() - Mt > 30 * mc.min) {
           if (wt) {
             const Wn = (vn = w(N)) == null ? void 0 : vn.getCenter();
             Wn && os(Wn, w(W)), window.location.replace(ma.url.origin)
-          } else Mt.refresh();
-          It = Date.now()
+          } else It.refresh();
+          Mt = Date.now()
         }
       };
     return document.addEventListener("visibilitychange", Gt), () => document.removeEventListener("visibilitychange", Gt)
@@ -47973,7 +47973,7 @@ function vB(_, s) {
     if (!an.online) {
       const wt = setInterval(() => {
         an.health().then(() => {
-          an.online = !0, !Mt.data && !Mt.loading && Mt.refresh()
+          an.online = !0, !It.data && !It.loading && It.refresh()
         })
       }, 5e3);
       return () => {
@@ -48087,30 +48087,30 @@ function vB(_, s) {
                             };
                           je(On, oa => {
                             var Vn;
-                            ((Vn = Mt.data) == null ? void 0 : Vn.role) === "global_moderator" ? oa(jn): oa(Sn, !1)
+                            ((Vn = It.data) == null ? void 0 : Vn.role) === "global_moderator" ? oa(jn): oa(Sn, !1)
                           }, !0)
                         }
                         H(pn, _n)
                       };
                     je(nn, pn => {
                       var _n;
-                      ((_n = Mt.data) == null ? void 0 : _n.role) === "moderator" ? pn(Xn): pn(di, !1)
+                      ((_n = It.data) == null ? void 0 : _n.role) === "moderator" ? pn(Xn): pn(di, !1)
                     })
                   }
                   k(sr), Ye(() => {
                     var pn;
-                    return kr(sr, "href", ((pn = Mt.data) == null ? void 0 : pn.role) === "admin" ? `${ma.url.origin}/admin/dashboard` : `${ma.url.origin}/moderation`)
+                    return kr(sr, "href", ((pn = It.data) == null ? void 0 : pn.role) === "admin" ? `${ma.url.origin}/admin/dashboard` : `${ma.url.origin}/moderation`)
                   }), H(mn, sr)
                 };
                 je(Tn, mn => {
                   var sr;
-                  Ou((sr = Mt.data) == null ? void 0 : sr.role, ["admin", "moderator", "global_moderator"]) && mn(Un)
+                  Ou((sr = It.data) == null ? void 0 : sr.role, ["admin", "moderator", "global_moderator"]) && mn(Un)
                 })
               }
               var En = Z(Tn, 2);
               VL(En, {
                 get user() {
-                  return Mt
+                  return It
                 },
                 onlogout: () => {
                   ce(me, {
@@ -48131,13 +48131,13 @@ function vB(_, s) {
               })), H(dn, cr)
             };
             je(Wr, dn => {
-              Mt.data && w(N) && w(me).name !== "paintingPixel" && dn(on)
+              It.data && w(N) && w(me).name !== "paintingPixel" && dn(on)
             }, !0)
           }
           H(nr, Ot)
         };
       je(j, nr => {
-        !Mt.loading && !Mt.data ? nr(U) : nr(Y, !1)
+        !It.loading && !It.data ? nr(U) : nr(Y, !1)
       })
     }
     var ie = Z(j, 2);
@@ -48163,7 +48163,7 @@ function vB(_, s) {
               })
             };
             je(Wr, En => {
-              Mt.data && En(on)
+              It.data && En(on)
             })
           }
           var dn = Z(Wr, 2);
@@ -48177,7 +48177,7 @@ function vB(_, s) {
               }), k(mn), Ye(nn => kr(mn, "title", nn), [() => pp()]), H(En, mn)
             };
             je(dn, En => {
-              Mt.data && En(cr)
+              It.data && En(cr)
             })
           }
           var Tn = Z(dn, 2);
@@ -48328,7 +48328,7 @@ function vB(_, s) {
       };
       je($r, nr => {
         var Ot, Wr;
-        w(me).name !== "paintingPixel" && (((Ot = Mt.data) == null ? void 0 : Ot.role) === "admin" || ((Wr = Mt.data) == null ? void 0 : Wr.role) === "global_moderator") && nr(en)
+        w(me).name !== "paintingPixel" && (((Ot = It.data) == null ? void 0 : Ot.role) === "admin" || ((Wr = It.data) == null ? void 0 : Wr.role) === "global_moderator") && nr(en)
       })
     }
     var tr = Z($r, 2);
@@ -48434,20 +48434,20 @@ function vB(_, s) {
             class: "z-30",
             onclick: () => {
               var Ot;
-              (Ot = Mt.data) != null && Ot.needsPhoneVerification ? (ce(pt, !0), Vr.warning($g())) : Mt.charges !== void 0 && Mt.charges < 1 ? Vr.warning(mk, {
+              (Ot = It.data) != null && Ot.needsPhoneVerification ? (ce(pt, !0), Vr.warning($g())) : It.charges !== void 0 && It.charges < 1 ? Vr.warning(mk, {
                 icon: Gf
-              }) : w(N) && Mt.data ? (sa.smallDropplet.play(), ce(me, {
+              }) : w(N) && It.data ? (sa.smallDropplet.play(), ce(me, {
                 name: "paintingPixel"
               }, !0)) : (ce(_e, !0), w(N) && os(w(N).getCenter(), w(W)))
             },
             get disabled() {
-              return Mt.loading
+              return It.loading
             },
             get loading() {
-              return Mt.loading
+              return It.loading
             },
             get charges() {
-              return Mt.charges
+              return It.charges
             }
           })
         },
@@ -48510,15 +48510,15 @@ function vB(_, s) {
                 },
                 onclickpaint: ([mn, sr]) => {
                   var Xn, di, pn;
-                  if (!Mt.data) {
+                  if (!It.data) {
                     ce(_e, !0);
                     return
                   }
-                  if ((Xn = Mt.data) != null && Xn.needsPhoneVerification) {
+                  if ((Xn = It.data) != null && Xn.needsPhoneVerification) {
                     ce(pt, !0), Vr.warning($g());
                     return
                   }
-                  if (Mt.charges !== void 0 && Mt.charges < 1) {
+                  if (It.charges !== void 0 && It.charges < 1) {
                     Vr.warning(wb());
                     return
                   }
@@ -48714,8 +48714,8 @@ function vB(_, s) {
     }, [() => ({
       hidden: w(X)
     }), () => ({
-      "items-end": !Mt.data,
-      "items-center": Mt.data
+      "items-end": !It.data,
+      "items-center": It.data
     }), () => ({
       hidden: w(X)
     }), () => rb(), () => ab(), () => ({
