@@ -1,12 +1,12 @@
 import {
   l as o,
   a as t
-} from "../chunks/Bw81LJ6Q.js";
+} from "../chunks/DhdpDd8P.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "b5b27c83ae3760cb72717576498367b1362fdc48"
+      id: "20acfd88f8d7c9ea7803ba9b0c3c2cc1012eb498"
     }
   } catch {}
 })();

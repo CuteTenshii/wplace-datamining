@@ -1,11 +1,11 @@
 import {
-  S as i
-} from "./Z2vsND-F.js";
+  S as c
+} from "./CI6N1sjN.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "b5b27c83ae3760cb72717576498367b1362fdc48"
+      id: "20acfd88f8d7c9ea7803ba9b0c3c2cc1012eb498"
     }
   } catch {}
 })();
@@ -51,8 +51,8 @@ function k(t) {
 }
 
 function C(t) {
-  t = Math.min(t, i.colors.length - 1);
-  const [e, o, r] = i.colors[t].rgb;
+  t = Math.min(t, c.colors.length - 1);
+  const [e, o, r] = c.colors[t].rgb;
   return {
     r: e,
     g: o,
@@ -60,7 +60,7 @@ function C(t) {
     a: t === 0 ? 0 : 255
   }
 }
-const y = i.colors.map((t, e) => ({
+const y = c.colors.map((t, e) => ({
   ...t,
   idx: e,
   lab: v({
@@ -104,11 +104,11 @@ function m(t, e) {
   s = s < 0 ? 0 : Math.sqrt(s);
   var w = 1 + .045 * n,
     h = 1 + .015 * n,
-    g = o / 1,
-    c = d / w,
-    b = s / h,
-    f = g * g + c * c + b * b;
-  return f < 0 ? 0 : Math.sqrt(f)
+    i = o / 1,
+    g = d / w,
+    f = s / h,
+    b = i * i + g * g + f * f;
+  return b < 0 ? 0 : Math.sqrt(b)
 }
 export {
   E as a, A as b, C as c, x as g, k as h, T as r
