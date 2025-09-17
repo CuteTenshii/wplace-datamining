@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["../nodes/0.B5qrxjZo.js", "../chunks/HzfE2hqq.js", "../chunks/DHdLD-5q.js", "../chunks/CmkSLWfN.js", "../chunks/DqF-nH4N.js", "../chunks/9a07WdYJ.js", "../chunks/DB35kzr3.js", "../chunks/B_rlGoi1.js", "../chunks/x8jfIpNO.js", "../chunks/DeUKCQdQ.js", "../chunks/3NUac6Fk.js", "../chunks/CDetuurO.js", "../chunks/BXUWHfrx.js", "../chunks/D61lAZyl.js", "../chunks/CWQgYVy1.js", "../assets/0.CfkbfZav.css", "../nodes/1.C7zgaviS.js", "../chunks/DPeNil6M.js", "../chunks/BdrPVwJQ.js", "../chunks/BQzYkFC3.js", "../nodes/2.CO2gzEN7.js", "../chunks/pz5lURrh.js", "../chunks/BiD6nwBY.js", "../chunks/mFbtN-Qk.js", "../nodes/3.KlQWpkjD.js", "../nodes/4.DryrEPrj.js", "../chunks/nwHiDM9I.js", "../chunks/x_tmquYb.js", "../chunks/BszyARXr.js", "../chunks/CBABSgsD.js", "../chunks/5ttWnGaE.js", "../chunks/BfFpzy5e.js", "../chunks/B4qBN0ky.js", "../chunks/tuTXZ7lK.js", "../chunks/BMwnVATU.js", "../chunks/c4nOMer_.js", "../assets/ProfileAvatarWithLevel.6dmPRSfx.css", "../chunks/BowxzUhC.js", "../assets/LoginForm.CxMG0irz.css", "../chunks/Cu2nGpX4.js", "../chunks/BhY_CToa.js", "../chunks/C4ZkAw3F.js", "../chunks/BNOkYFVG.js", "../assets/4.BtKF873c.css", "../nodes/5.B01I9s7W.js", "../nodes/6.BW8UjLFC.js", "../nodes/7.Df3hvKaW.js", "../chunks/QHIp-hc5.js", "../chunks/CnhOTa58.js", "../chunks/C9npjijF.js", "../nodes/8.c_CU6lmK.js", "../nodes/9.BrunDak6.js", "../chunks/Dx72SCUe.js", "../chunks/Dl3FGeaC.js", "../nodes/10.DiJRSFAR.js", "../nodes/11.C9Jg9WBz.js", "../chunks/CoOekDfZ.js", "../chunks/BwgXTT5w.js", "../nodes/12.BXx_oN_0.js", "../chunks/Bdk6OVio.js", "../nodes/13.BP15QOlH.js", "../nodes/14.DzNFy-eF.js", "../nodes/15.CpNX-YXR.js", "../nodes/16.BENxF0gK.js", "../nodes/17.Bh4-cTc3.js", "../assets/17.BD1hRFPA.css", "../nodes/18.B2u5bXaI.js", "../nodes/19.Bg-F72ey.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["../nodes/0.-lbLS7ml.js", "../chunks/DiaPSKl-.js", "../chunks/uiMqprfm.js", "../chunks/ByyQE5Km.js", "../chunks/zfal1iE1.js", "../chunks/Ax_eIWsi.js", "../chunks/BTZar6iU.js", "../chunks/BUru5w-q.js", "../chunks/BIw3I6JU.js", "../chunks/DUgAh8V5.js", "../chunks/Cdlizh4b.js", "../chunks/DC8N45Zh.js", "../chunks/p5r8mb3J.js", "../chunks/BfdpATt8.js", "../chunks/3sZo48Kd.js", "../assets/0.CfkbfZav.css", "../nodes/1.olU2-R0I.js", "../chunks/_GkDYiPt.js", "../chunks/pVGY5W0N.js", "../chunks/BH2GtEpv.js", "../nodes/2.BJb8IzHC.js", "../chunks/BcXX1h9-.js", "../chunks/CXO8oq1S.js", "../chunks/D3M5ok9N.js", "../nodes/3.DOKIFB-4.js", "../nodes/4.BEbpx5kd.js", "../chunks/BR43XScb.js", "../chunks/CCAakmMr.js", "../chunks/DssKNtoJ.js", "../chunks/Coyy1mSj.js", "../chunks/DlfWleyg.js", "../chunks/CV5iToCf.js", "../chunks/C0bDRv7i.js", "../chunks/CgERGuNY.js", "../chunks/BoOEm-hu.js", "../chunks/tZtDsZ08.js", "../assets/ProfileAvatarWithLevel.6dmPRSfx.css", "../chunks/BJJobGNr.js", "../assets/LoginForm.CxMG0irz.css", "../chunks/Cw3pgnsg.js", "../chunks/K6PmLLua.js", "../chunks/CuVKuvdf.js", "../chunks/DOGIRmbC.js", "../assets/4.BtKF873c.css", "../nodes/5.C7QPhsIg.js", "../nodes/6.CjTs5TOD.js", "../nodes/7.Db9elu_T.js", "../chunks/CqqAZ3TH.js", "../chunks/Bc2IDKCo.js", "../chunks/DowswFy8.js", "../nodes/8.CyZD-Im0.js", "../nodes/9.C3rdcsKi.js", "../chunks/Dpth4kLH.js", "../chunks/RcYTe6AD.js", "../nodes/10.CHsOYw5N.js", "../nodes/11.DDF9EZiz.js", "../chunks/BbzEhNLa.js", "../chunks/B6GeQrWs.js", "../nodes/12.CpGIo_QA.js", "../chunks/DICKCVrF.js", "../nodes/13.CA01KM4m.js", "../nodes/14.CBtI1tnz.js", "../nodes/15.CwKOEVX3.js", "../nodes/16.CmYHi9EI.js", "../nodes/17.DvECYt73.js", "../assets/17.BD1hRFPA.css", "../nodes/18.DgInFRXg.js", "../nodes/19.Bi7y65vG.js", "../nodes/20.DPbLB_Al.js"]))) => i.map(i => d[i]);
 var Dr = t => {
   throw TypeError(t)
 };
@@ -8,10 +8,10 @@ var q = (t, e, n) => (Mr(t, e, "read from private field"), n ? n.call(t) : e.get
   wn = (t, e, n, r) => (Mr(t, e, "write to private field"), r ? r.call(t, n) : e.set(t, n), n);
 import {
   _ as M
-} from "../chunks/Cu2nGpX4.js";
+} from "../chunks/Cw3pgnsg.js";
 import {
   s as yo
-} from "../chunks/BQzYkFC3.js";
+} from "../chunks/BH2GtEpv.js";
 import {
   aw as ze,
   aW as Eo,
@@ -35,32 +35,32 @@ import {
   u as Mt,
   b4 as Oo,
   t as Lo
-} from "../chunks/CmkSLWfN.js";
+} from "../chunks/ByyQE5Km.js";
 import {
   h as xo,
   m as Do,
   u as Mo,
   s as Fo
-} from "../chunks/DqF-nH4N.js";
-import "../chunks/HzfE2hqq.js";
+} from "../chunks/zfal1iE1.js";
+import "../chunks/DiaPSKl-.js";
 import {
   o as $o
-} from "../chunks/DHdLD-5q.js";
+} from "../chunks/uiMqprfm.js";
 import {
   p as ge,
   i as _e
-} from "../chunks/DeUKCQdQ.js";
+} from "../chunks/DUgAh8V5.js";
 import {
   c as Ft
-} from "../chunks/D61lAZyl.js";
+} from "../chunks/BfdpATt8.js";
 import {
   b as $t
-} from "../chunks/BXUWHfrx.js";
+} from "../chunks/p5r8mb3J.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "7278ed977b90641928943db9499ca73f82620c56"
+      id: "3652c86e8d7e6101a7b8eb8b8b3693725ba4cc26"
     }
   } catch {}
 })();
@@ -68,7 +68,7 @@ try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "70b32418-b043-4cf1-a6db-2f2db584fd38", t._sentryDebugIdIdentifier = "sentry-dbid-70b32418-b043-4cf1-a6db-2f2db584fd38")
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "fc4f5f30-3002-406c-bc70-b3a0c5c5a25c", t._sentryDebugIdIdentifier = "sentry-dbid-fc4f5f30-3002-406c-bc70-b3a0c5c5a25c")
   })()
 } catch {}
 
@@ -7516,7 +7516,7 @@ function Tp(t, e) {
   tt(t, d), Po()
 }
 const Fp = Ho(Tp),
-  $p = [() => M(() => import("../nodes/0.B5qrxjZo.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]), import.meta.url), () => M(() => import("../nodes/1.C7zgaviS.js"), __vite__mapDeps([16, 1, 14, 3, 4, 5, 17, 18, 19, 2]), import.meta.url), () => M(() => import("../nodes/2.CO2gzEN7.js"), __vite__mapDeps([20, 1, 3, 4, 5, 2, 21, 10, 11, 18, 19, 22, 9, 23]), import.meta.url), () => M(() => import("../nodes/3.KlQWpkjD.js"), __vite__mapDeps([24, 1, 3, 4, 5, 2, 21, 10, 11, 18, 19, 23]), import.meta.url), () => M(() => import("../nodes/4.DryrEPrj.js"), __vite__mapDeps([25, 1, 2, 3, 4, 5, 9, 11, 21, 10, 18, 19, 6, 7, 8, 26, 12, 27, 28, 29, 30, 31, 23, 32, 33, 34, 35, 36, 14, 17, 22, 13, 37, 38, 39, 40, 41, 42, 43]), import.meta.url), () => M(() => import("../nodes/5.B01I9s7W.js"), __vite__mapDeps([44, 1, 14, 3, 22, 9, 11]), import.meta.url), () => M(() => import("../nodes/6.BW8UjLFC.js"), __vite__mapDeps([45, 1, 14, 3, 2, 4, 5, 17, 7, 19]), import.meta.url), () => M(() => import("../nodes/7.Df3hvKaW.js"), __vite__mapDeps([46, 1, 2, 3, 4, 5, 9, 10, 11, 28, 19, 6, 7, 40, 47, 48, 49]), import.meta.url), () => M(() => import("../nodes/8.c_CU6lmK.js"), __vite__mapDeps([50, 1, 14, 3, 5, 7, 19, 2, 4]), import.meta.url), () => M(() => import("../nodes/9.BrunDak6.js"), __vite__mapDeps([51, 1, 2, 3, 4, 5, 9, 10, 11, 28, 19, 6, 7, 29, 26, 40, 48, 52, 53, 49]), import.meta.url), () => M(() => import("../nodes/10.DiJRSFAR.js"), __vite__mapDeps([54, 1, 2, 3, 4, 5, 9, 10, 11, 28, 19, 6, 7, 29, 26, 40, 48, 52, 53, 49]), import.meta.url), () => M(() => import("../nodes/11.C9Jg9WBz.js"), __vite__mapDeps([55, 1, 3, 4, 5, 9, 21, 10, 11, 28, 19, 2, 18, 6, 7, 27, 12, 29, 26, 30, 31, 23, 32, 56, 40, 42, 57, 48, 53]), import.meta.url), () => M(() => import("../nodes/12.BXx_oN_0.js"), __vite__mapDeps([58, 1, 2, 3, 4, 5, 9, 19, 18, 6, 7, 37, 11, 12, 22, 38, 59]), import.meta.url), () => M(() => import("../nodes/13.BP15QOlH.js"), __vite__mapDeps([60, 1, 2, 3, 4, 5, 9, 21, 10, 11, 19, 18, 6, 7, 29, 26, 34, 32, 56, 40, 42, 33, 47, 31]), import.meta.url), () => M(() => import("../nodes/14.DzNFy-eF.js"), __vite__mapDeps([61, 1, 14, 3, 4, 5, 17, 22, 9, 11, 40, 41, 7, 42]), import.meta.url), () => M(() => import("../nodes/15.CpNX-YXR.js"), __vite__mapDeps([62, 1, 2, 3, 4, 5, 9, 26, 18, 19, 6, 7, 22, 11, 59]), import.meta.url), () => M(() => import("../nodes/16.BENxF0gK.js"), __vite__mapDeps([63, 1, 3, 4, 5, 9, 10, 11, 28, 12, 19, 2, 6, 7, 35, 29, 26, 36, 34, 30, 57, 31]), import.meta.url), () => M(() => import("../nodes/17.Bh4-cTc3.js"), __vite__mapDeps([64, 1, 14, 3, 5, 22, 9, 11, 65]), import.meta.url), () => M(() => import("../nodes/18.B2u5bXaI.js"), __vite__mapDeps([66, 1, 14, 3, 5, 22, 9, 11]), import.meta.url), () => M(() => import("../nodes/19.Bg-F72ey.js"), __vite__mapDeps([67, 1, 14, 3, 5, 22, 9, 11, 65]), import.meta.url)],
+  $p = [() => M(() => import("../nodes/0.-lbLS7ml.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]), import.meta.url), () => M(() => import("../nodes/1.olU2-R0I.js"), __vite__mapDeps([16, 1, 14, 3, 4, 5, 17, 18, 19, 2]), import.meta.url), () => M(() => import("../nodes/2.BJb8IzHC.js"), __vite__mapDeps([20, 1, 3, 4, 5, 2, 21, 10, 11, 18, 19, 22, 9, 23]), import.meta.url), () => M(() => import("../nodes/3.DOKIFB-4.js"), __vite__mapDeps([24, 1, 3, 4, 5, 2, 21, 10, 11, 18, 19, 23]), import.meta.url), () => M(() => import("../nodes/4.BEbpx5kd.js"), __vite__mapDeps([25, 1, 2, 3, 4, 5, 9, 11, 21, 10, 18, 19, 6, 7, 8, 26, 12, 27, 28, 29, 30, 31, 23, 32, 33, 34, 35, 36, 14, 17, 22, 13, 37, 38, 39, 40, 41, 42, 43]), import.meta.url), () => M(() => import("../nodes/5.C7QPhsIg.js"), __vite__mapDeps([44, 1, 14, 3, 22, 9, 11]), import.meta.url), () => M(() => import("../nodes/6.CjTs5TOD.js"), __vite__mapDeps([45, 1, 14, 3, 2, 4, 5, 17, 7, 19]), import.meta.url), () => M(() => import("../nodes/7.Db9elu_T.js"), __vite__mapDeps([46, 1, 2, 3, 4, 5, 9, 10, 11, 28, 19, 6, 7, 40, 47, 48, 49]), import.meta.url), () => M(() => import("../nodes/8.CyZD-Im0.js"), __vite__mapDeps([50, 1, 14, 3, 5, 7, 19, 2, 4]), import.meta.url), () => M(() => import("../nodes/9.C3rdcsKi.js"), __vite__mapDeps([51, 1, 2, 3, 4, 5, 9, 10, 11, 28, 19, 6, 7, 29, 26, 40, 48, 52, 53, 49]), import.meta.url), () => M(() => import("../nodes/10.CHsOYw5N.js"), __vite__mapDeps([54, 1, 2, 3, 4, 5, 9, 10, 11, 28, 19, 6, 7, 29, 26, 40, 48, 52, 53, 49]), import.meta.url), () => M(() => import("../nodes/11.DDF9EZiz.js"), __vite__mapDeps([55, 1, 3, 4, 5, 9, 21, 10, 11, 28, 19, 2, 18, 6, 7, 27, 12, 29, 26, 30, 31, 23, 32, 56, 40, 42, 57, 48, 53]), import.meta.url), () => M(() => import("../nodes/12.CpGIo_QA.js"), __vite__mapDeps([58, 1, 2, 3, 4, 5, 9, 19, 18, 6, 7, 37, 11, 12, 22, 38, 59]), import.meta.url), () => M(() => import("../nodes/13.CA01KM4m.js"), __vite__mapDeps([60, 1, 2, 3, 4, 5, 9, 21, 10, 11, 19, 18, 6, 7, 29, 26, 34, 32, 56, 40, 42, 33, 47, 31]), import.meta.url), () => M(() => import("../nodes/14.CBtI1tnz.js"), __vite__mapDeps([61, 1, 14, 3, 4, 5, 17, 22, 9, 11, 40, 41, 7, 42]), import.meta.url), () => M(() => import("../nodes/15.CwKOEVX3.js"), __vite__mapDeps([62, 1, 2, 3, 4, 5, 9, 26, 18, 19, 6, 7, 22, 11, 59]), import.meta.url), () => M(() => import("../nodes/16.CmYHi9EI.js"), __vite__mapDeps([63, 1, 3, 4, 5, 9, 10, 11, 28, 12, 19, 2, 6, 7, 35, 29, 26, 36, 34, 30, 57, 31]), import.meta.url), () => M(() => import("../nodes/17.DvECYt73.js"), __vite__mapDeps([64, 1, 14, 3, 5, 22, 9, 11, 65]), import.meta.url), () => M(() => import("../nodes/18.DgInFRXg.js"), __vite__mapDeps([66, 1, 14, 3, 5, 22, 9, 11]), import.meta.url), () => M(() => import("../nodes/19.Bi7y65vG.js"), __vite__mapDeps([67, 1, 14, 3, 5, 22, 9, 11]), import.meta.url), () => M(() => import("../nodes/20.DPbLB_Al.js"), __vite__mapDeps([68, 1, 14, 3, 5, 22, 9, 11, 65]), import.meta.url)],
   Hp = [],
   Bp = {
     "/": [4],
@@ -7534,7 +7534,8 @@ const Fp = Ho(Tp),
     "/profile-picture": [16],
     "/terms/privacy": [17],
     "/terms/return": [18],
-    "/terms/terms-of-service": [19]
+    "/terms/return/pt": [19],
+    "/terms/terms-of-service": [20]
   },
   vp = {
     handleError: yp || (({
