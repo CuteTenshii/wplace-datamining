@@ -3,15 +3,15 @@ import {
   g as E,
   a1 as M,
   H as u,
-  z as d,
+  z as l,
   bk as w,
-  L as l
-} from "./UY5Q__X9.js";
+  L as d
+} from "./CGRAleE5.js";
 (function() {
   try {
     var q = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     q.SENTRY_RELEASE = {
-      id: "c15cd1ace8f581becdea18dd6b1672f67db80587"
+      id: "4e903134a8e52eb1a8da35c90648b14dbd2e6388"
     }
   } catch {}
 })();
@@ -28,8 +28,8 @@ function y(q) {
     A = M(0),
     e;
   return () => {
-    B() && (E(A), u(() => (V === 0 && (e = d(() => q(() => w(A)))), V += 1, () => {
-      l(() => {
+    B() && (E(A), u(() => (V === 0 && (e = l(() => q(() => w(A)))), V += 1, () => {
+      d(() => {
         V -= 1, V === 0 && (e == null || e(), e = void 0, w(A))
       })
     })))
@@ -58,31 +58,31 @@ function T() {
 let t;
 
 function b(q) {
-  return t = q, a({
+  return t = q, i({
     type: "previewPixels",
     data: q
   })
 }
 
-function f() {
-  return t = void 0, a({
+function C() {
+  return t = void 0, i({
     type: "clearPixelPreview"
   })
 }
 
-function C(q) {
-  return a({
+function f(q) {
+  return i({
     type: "paintPixels",
     data: q
   })
 }
 async function x() {
-  t || await a({
+  t || await i({
     type: "clearPixelPreview"
   })
 }
 
-function a(q) {
+function i(q) {
   const V = Math.random(),
     A = {
       ...q,
@@ -90,20 +90,20 @@ function a(q) {
     };
   return new Promise((e, s) => {
     try {
-      const i = navigator.serviceWorker;
-      i || s(new Error("You're an using an older browser, some features might not work. Consider updating or changing browser."));
+      const a = navigator.serviceWorker;
+      a || s(new Error("You're an using an older browser, some features might not work. Consider updating or changing browser."));
       const r = g => {
         var o;
-        ((o = g.data) == null ? void 0 : o.id) === V && (e(void 0), i.removeEventListener("message", r))
+        ((o = g.data) == null ? void 0 : o.id) === V && (e(void 0), a.removeEventListener("message", r))
       };
-      i.addEventListener("message", r);
+      a.addEventListener("message", r);
       const n = navigator.serviceWorker.controller;
       n ? n.postMessage(A) : navigator.serviceWorker.ready.then(g => {
         const o = g.active;
         o ? o == null || o.postMessage(A) : s(new Error("Service worker registration not active"))
       })
-    } catch (i) {
-      s(i)
+    } catch (a) {
+      s(a)
     }
   })
 }
@@ -116,5 +116,5 @@ function U({
   return `t=(${A[0]},${A[1]});p=(${q[0]},${q[1]});s=${V}`
 }
 export {
-  L as A, f as a, C as b, y as c, U as g, b as p, x as s
+  L as A, C as a, f as b, y as c, U as g, b as p, x as s
 };

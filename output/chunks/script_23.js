@@ -1,10 +1,10 @@
 import {
   g as s
-} from "./BnlU_GE9.js";
-import "./Ja2NBWT-.js";
+} from "./nof0iVjR.js";
+import "./Cr5wH5yw.js";
 import {
   o as Se
-} from "./CX1bKweY.js";
+} from "./DGPmC_IR.js";
 import {
   p as me,
   g as o,
@@ -15,49 +15,49 @@ import {
   f as M,
   d as a,
   s as u,
-  bo as Ie,
+  bn as Ie,
   r as n,
   t as k,
   b as v,
-  c as be,
+  c as ge,
   at as Me,
   n as Ue,
   ax as _e,
   b4 as te,
-  ay as pe,
-  a as fe,
+  ay as fe,
+  a as pe,
   v as Ce
-} from "./UY5Q__X9.js";
+} from "./CGRAleE5.js";
 import {
-  s as p
-} from "./aomroAeL.js";
+  s as f
+} from "./Clo3MPMq.js";
 import {
   p as se,
   i as I,
-  r as ge
-} from "./BANHJa2u.js";
+  r as he
+} from "./DkvknUNF.js";
 import {
   e as Pe
-} from "./BkBfm2dN.js";
+} from "./D6n5qNhk.js";
 import {
-  b as he,
+  b as be,
   C as qe,
   f as Oe,
   r as O,
   s as ve,
   g as F,
   a as ze
-} from "./Co50GgH2.js";
+} from "./D7qONhfM.js";
 import {
   t as Ae
-} from "./DP4t6UYt.js";
+} from "./WSj0D139.js";
 import {
   b as je,
   c as Ne
-} from "./-Ctpz_JJ.js";
+} from "./By5WVwOC.js";
 import {
   b as Ze
-} from "./BBVdbTRI.js";
+} from "./CEeRCD-3.js";
 import {
   l as Fe,
   m as He,
@@ -66,24 +66,24 @@ import {
   p as Ye,
   P as re,
   t as ne
-} from "./C8RgS9X_.js";
+} from "./CurjeyiM.js";
 import {
   P as Ge
-} from "./RXkgm_N0.js";
+} from "./mGPByPO3.js";
 import {
   c as Je
-} from "./axB96mQB.js";
+} from "./DdrOyuLc.js";
 import {
   g as Qe
-} from "./DwFqJOJr.js";
+} from "./WUpUbK7J.js";
 import {
   f as We
-} from "./aOEoO1ch.js";
+} from "./TxuBBH32.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "c15cd1ace8f581becdea18dd6b1672f67db80587"
+      id: "4e903134a8e52eb1a8da35c90648b14dbd2e6388"
     }
   } catch {}
 })();
@@ -91,7 +91,7 @@ try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "b5231d20-c178-4f03-b9c6-d2439f29e976", t._sentryDebugIdIdentifier = "sentry-dbid-b5231d20-c178-4f03-b9c6-d2439f29e976")
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "c46f9e44-7e97-403f-afaf-844e359cf115", t._sentryDebugIdIdentifier = "sentry-dbid-c46f9e44-7e97-403f-afaf-844e359cf115")
   })()
 } catch {}
 const Xe = () => "Copy",
@@ -110,14 +110,14 @@ const Xe = () => "Copy",
   ut = () => "Selecione o motivo",
   dt = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? ct() : ut(),
   _t = () => "+18, inappropriate link, highly suggestive content, ...",
-  pt = () => "+18, links inapropriados, conteúdo altamente sugestivo, ...",
-  ft = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? _t() : pt(),
+  ft = () => "+18, links inapropriados, conteúdo altamente sugestivo, ...",
+  pt = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? _t() : ft(),
   vt = () => "Use of software to completely automate painting",
   mt = () => "Uso de software para pintar de forma completamente automatizada ",
-  bt = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? vt() : mt(),
-  gt = () => "Racism, homophobia, hate groups, ...",
-  ht = () => "Racismo, homofobia, grupos de ódio, ...",
-  xt = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? gt() : ht(),
+  gt = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? vt() : mt(),
+  ht = () => "Racism, homophobia, hate groups, ...",
+  bt = () => "Racismo, homofobia, grupos de ódio, ...",
+  xt = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? ht() : bt(),
   yt = () => "Messed up artworks for no reason",
   wt = () => "Estragar desenho dos outros sem motivo",
   Rt = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? yt() : wt(),
@@ -164,14 +164,14 @@ var or = M('<legend class="fieldset-legend"> </legend>'),
 function lr(t, e) {
   me(e, !0);
   let r = se(e, "value", 15),
-    f = se(e, "validate", 15),
-    L = ge(e, ["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate"]),
+    p = se(e, "validate", 15),
+    L = he(e, ["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate"]),
     y = S("");
   const D = ae(() => {
     var l;
     return ((l = r()) == null ? void 0 : l.length) ?? 0
   });
-  f(T);
+  p(T);
 
   function T() {
     return e.min !== void 0 && o(D) < e.min ? (x(y, e.min === 1 ? Qt() : $t({
@@ -188,16 +188,16 @@ function lr(t, e) {
     z = a(B);
   {
     var H = l => {
-      var g = or(),
-        E = a(g, !0);
-      n(g), k(() => p(E, e.label)), v(l, g)
+      var h = or(),
+        E = a(h, !0);
+      n(h), k(() => f(E, e.label)), v(l, h)
     };
     I(z, l => {
       e.label && l(H)
     })
   }
-  var h = u(z, 2);
-  Ie(h), he(h, l => ({
+  var b = u(z, 2);
+  Ie(b), be(b, l => ({
     ...L,
     class: `textarea w-full ${e.class??""}`,
     placeholder: e.placeholder,
@@ -205,22 +205,22 @@ function lr(t, e) {
   }), [() => ({
     "textarea-error": !!o(y)
   })]);
-  var U = u(h, 2),
+  var U = u(b, 2),
     C = a(U),
     K = a(C, !0);
   n(C);
   var m = u(C, 2);
   {
-    var b = l => {
-      var g = sr(),
-        E = a(g, !0);
-      n(g), k(() => p(E, e.max - o(D))), v(l, g)
+    var g = l => {
+      var h = sr(),
+        E = a(h, !0);
+      n(h), k(() => f(E, e.max - o(D))), v(l, h)
     };
     I(m, l => {
-      e.max !== void 0 && l(b)
+      e.max !== void 0 && l(g)
     })
   }
-  n(U), n(B), k(() => p(K, o(y))), je(h, r), v(t, B), be()
+  n(U), n(B), k(() => f(K, o(y))), je(b, r), v(t, B), ge()
 }
 var cr = M('<label class="flex gap-3"><input name="reason" class="radio radio-sm mt-1" type="radio"/> <div><div class="font-semibold"> </div> <div class="text-base-content/80 text-sm"> </div></div></label>'),
   ur = (t, e) => {
@@ -232,7 +232,7 @@ var cr = M('<label class="flex gap-3"><input name="reason" class="radio radio-sm
 function Mr(t, e) {
   me(e, !0);
   const r = [];
-  let f = se(e, "open", 15),
+  let p = se(e, "open", 15),
     L = S(!1),
     y = S(""),
     D = S(""),
@@ -241,7 +241,7 @@ function Mr(t, e) {
   const z = [{
     value: "inappropriate-content",
     label: Fe(),
-    description: ft()
+    description: pt()
   }, {
     value: "hate-speech",
     label: He(),
@@ -253,7 +253,7 @@ function Mr(t, e) {
   }, {
     value: "bot",
     label: Ve(),
-    description: bt()
+    description: gt()
   }, {
     value: "griefing",
     label: Ye(),
@@ -264,29 +264,29 @@ function Mr(t, e) {
     description: Mt()
   }];
   Se(() => {
-    const m = b => {
-      b.key === "Escape" && f(!1)
+    const m = g => {
+      g.key === "Escape" && p(!1)
     };
     return document.addEventListener("keydown", m), () => document.removeEventListener("keydown", m)
   }), oe(() => {
-    f() || (x(y, ""), x(D, ""))
+    p() || (x(y, ""), x(D, ""))
   });
   const H = {
     "report-user": `${re}/report-user`,
     timeout: `${re}/moderator/timeout-user`,
     ban: `${re}/admin/ban-user`
   };
-  var h = _r(),
-    U = a(h),
+  var b = _r(),
+    U = a(b),
     C = u(a(U), 2);
   {
     var K = m => {
-      var b = dr(),
-        l = a(b);
+      var g = dr(),
+        l = a(g);
       O(l);
-      var g = u(l, 2);
-      O(g);
-      var E = u(g, 2);
+      var h = u(l, 2);
+      O(h);
+      var E = u(h, 2);
       O(E);
       var V = u(E, 2);
       O(V);
@@ -307,23 +307,23 @@ function Mr(t, e) {
       {
         var ye = c => {
             var i = te();
-            k(d => p(i, d), [() => rt()]), v(c, i)
+            k(d => f(i, d), [() => rt()]), v(c, i)
           },
           we = c => {
-            var i = pe(),
-              d = fe(i);
+            var i = fe(),
+              d = pe(i);
             {
               var _ = w => {
                   var R = te();
-                  k(P => p(R, P), [() => ot()]), v(w, R)
+                  k(P => f(R, P), [() => ot()]), v(w, R)
                 },
                 j = w => {
-                  var R = pe(),
-                    P = fe(R);
+                  var R = fe(),
+                    P = pe(R);
                   {
                     var N = q => {
                       var Z = te();
-                      k(Te => p(Z, Te), [() => lt()]), v(q, Z)
+                      k(Te => f(Z, Te), [() => lt()]), v(q, Z)
                     };
                     I(P, q => {
                       e.action === "ban" && q(N)
@@ -365,7 +365,7 @@ function Mr(t, e) {
         var N = u(R, 2),
           q = a(N, !0);
         n(N), n(w), n(d), k(() => {
-          ve(_, "aria-label", o(i).label), j !== (j = o(i).value) && (_.value = (_.__value = o(i).value) ?? ""), p(P, o(i).label), p(q, o(i).description)
+          ve(_, "aria-label", o(i).label), j !== (j = o(i).value) && (_.value = (_.__value = o(i).value) ?? ""), f(P, o(i).label), f(q, o(i).description)
         }), Ne(r, [], _, () => (o(i).value, o(y)), Z => x(y, Z)), v(c, d)
       }), n(ue), n(W);
       var $ = u(W, 2),
@@ -400,14 +400,14 @@ function Mr(t, e) {
       n($);
       var de = u($, 2),
         A = a(de);
-      A.__click = [ur, f];
+      A.__click = [ur, p];
       var Ee = a(A, !0);
       n(A);
       var ee = u(A, 2),
         Le = a(ee, !0);
-      n(ee), n(de), n(b), Ze(b, c => x(T, c), () => o(T)), k((c, i, d, _) => {
-        ve(b, "action", H[e.action]), F(l, e.paintedBy.id), F(g, e.latLon[0]), F(E, e.latLon[1]), F(V, e.zoom), ze(J, 1, `font-medium ${c??""} flex gap-1.5`), p(Re, e.paintedBy.name), p(De, `#${e.paintedBy.id??""}`), p(ke, `${i??""}:`), p(Ee, d), ee.disabled = o(L), p(Le, _)
-      }, [() => Qe(e.paintedBy.id), () => dt(), () => Je(), () => zt()]), _e("submit", b, async c => {
+      n(ee), n(de), n(g), Ze(g, c => x(T, c), () => o(T)), k((c, i, d, _) => {
+        ve(g, "action", H[e.action]), F(l, e.paintedBy.id), F(h, e.latLon[0]), F(E, e.latLon[1]), F(V, e.zoom), ze(J, 1, `font-medium ${c??""} flex gap-1.5`), f(Re, e.paintedBy.name), f(De, `#${e.paintedBy.id??""}`), f(ke, `${i??""}:`), f(Ee, d), ee.disabled = o(L), f(Le, _)
+      }, [() => Qe(e.paintedBy.id), () => dt(), () => Je(), () => zt()]), _e("submit", g, async c => {
         if (c.preventDefault(), !o(L) && o(B)()) try {
           x(L, !0);
           const i = new FormData(o(T));
@@ -422,34 +422,34 @@ function Mr(t, e) {
             body: i,
             credentials: "include"
           });
-          _.status === 200 || _.status === 409 ? (ne.info(Nt()), f(!1)) : ne.error(Yt())
+          _.status === 200 || _.status === 409 ? (ne.info(Nt()), p(!1)) : ne.error(Yt())
         } finally {
           x(L, !1)
         }
-      }), Ae(2, b, () => We), v(m, b)
+      }), Ae(2, g, () => We), v(m, g)
     };
     I(C, m => {
-      f() && m(K)
+      p() && m(K)
     })
   }
-  n(U), Ue(2), n(h), Oe(h, () => m => {
+  n(U), Ue(2), n(b), Oe(b, () => m => {
     oe(() => {
-      f() ? m.show() : m.close()
+      p() ? m.show() : m.close()
     })
-  }), _e("close", h, () => f(!1)), v(t, h), be()
+  }), _e("close", b, () => p(!1)), v(t, b), ge()
 }
 Me(["click"]);
-var pr = Ce('<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
+var fr = Ce('<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
 
 function Ur(t, e) {
-  let r = ge(e, ["$$slots", "$$events", "$$legacy"]);
-  var f = pr();
-  he(f, () => ({
+  let r = he(e, ["$$slots", "$$events", "$$legacy"]);
+  var p = fr();
+  be(p, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
     ...r
-  })), v(t, f)
+  })), v(t, p)
 }
 export {
   Ur as D, lr as L, Mr as R, lt as b, Sr as c, Ir as p, rt as r, ot as t
