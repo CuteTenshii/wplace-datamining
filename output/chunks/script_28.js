@@ -2,7 +2,7 @@
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "3652c86e8d7e6101a7b8eb8b8b3693725ba4cc26"
+      id: "7717d06f815fd9b38aee4f2cbbcd5d44b5e4fc77"
     }
   } catch {}
 })();
@@ -50,13 +50,13 @@ function m(e, {
     y = parseFloat(n[`padding${d[1]}`]),
     u = parseFloat(n[`margin${d[0]}`]),
     g = parseFloat(n[`margin${d[1]}`]),
-    b = parseFloat(n[`border${d[0]}Width`]),
-    _ = parseFloat(n[`border${d[1]}Width`]);
+    _ = parseFloat(n[`border${d[0]}Width`]),
+    b = parseFloat(n[`border${d[1]}Width`]);
   return {
     delay: t,
     duration: i,
     easing: s,
-    css: a => `overflow: hidden;opacity: ${Math.min(a*20,1)*c};${p}: ${a*l}px;padding-${o[0]}: ${a*f}px;padding-${o[1]}: ${a*y}px;margin-${o[0]}: ${a*u}px;margin-${o[1]}: ${a*g}px;border-${o[0]}-width: ${a*b}px;border-${o[1]}-width: ${a*_}px;min-${p}: 0`
+    css: a => `overflow: hidden;opacity: ${Math.min(a*20,1)*c};${p}: ${a*l}px;padding-${o[0]}: ${a*f}px;padding-${o[1]}: ${a*y}px;margin-${o[0]}: ${a*u}px;margin-${o[1]}: ${a*g}px;border-${o[0]}-width: ${a*_}px;border-${o[1]}-width: ${a*b}px;min-${p}: 0`
   }
 }
 export {
