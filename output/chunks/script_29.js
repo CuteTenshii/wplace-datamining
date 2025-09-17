@@ -1,25 +1,25 @@
 import {
   g as v
-} from "./DvK4Et8U.js";
-import "./BN3AtG7c.js";
+} from "./BnlU_GE9.js";
+import "./Ja2NBWT-.js";
 import {
   v as i,
   b as l,
   ay as g,
   a as u
-} from "./7GDDwXAz.js";
+} from "./UY5Q__X9.js";
 import {
   b as r
-} from "./CWgitM9t.js";
+} from "./Co50GgH2.js";
 import {
   r as c,
   i as w
-} from "./DwL1DI5R.js";
+} from "./BANHJa2u.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "7717d06f815fd9b38aee4f2cbbcd5d44b5e4fc77"
+      id: "c15cd1ace8f581becdea18dd6b1672f67db80587"
     }
   } catch {}
 })();
@@ -30,9 +30,9 @@ try {
     t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "59573a59-89e2-4bba-ab58-82ec760b86bb", e._sentryDebugIdIdentifier = "sentry-dbid-59573a59-89e2-4bba-ab58-82ec760b86bb")
   })()
 } catch {}
-const b = () => "Pixels painted",
-  h = () => "Pixels pintados",
-  B = (e = {}, t = {}) => (t.locale ?? v()) === "en" ? b() : h(),
+const h = () => "Pixels painted",
+  b = () => "Pixels pintados",
+  B = (e = {}, t = {}) => (t.locale ?? v()) === "en" ? h() : b(),
   T = () => "Description",
   m = () => "Descrição",
   E = (e = {}, t = {}) => (t.locale ?? v()) === "en" ? T() : m(),
