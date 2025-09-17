@@ -1,17 +1,17 @@
 import {
   bj as B,
   g as E,
-  a1 as M,
-  H as u,
-  z as l,
+  a1 as d,
+  H as M,
+  z as u,
   bk as w,
-  L as d
-} from "./BhjnkBaE.js";
+  L as l
+} from "./D6XPBeZs.js";
 (function() {
   try {
     var q = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     q.SENTRY_RELEASE = {
-      id: "ab54e7d2bb082741522faef467264167f3245873"
+      id: "ed542c83f3200bdd2dcdd4a1cf4ac45a32651d00"
     }
   } catch {}
 })();
@@ -25,11 +25,11 @@ try {
 
 function f(q) {
   let V = 0,
-    A = M(0),
+    A = d(0),
     e;
   return () => {
-    B() && (E(A), u(() => (V === 0 && (e = l(() => q(() => w(A)))), V += 1, () => {
-      d(() => {
+    B() && (E(A), M(() => (V === 0 && (e = u(() => q(() => w(A)))), V += 1, () => {
+      l(() => {
         V -= 1, V === 0 && (e == null || e(), e = void 0, w(A))
       })
     })))
@@ -58,31 +58,31 @@ function T() {
 let t;
 
 function L(q) {
-  return t = q, a({
+  return t = q, i({
     type: "previewPixels",
     data: q
   })
 }
 
 function C() {
-  return t = void 0, a({
+  return t = void 0, i({
     type: "clearPixelPreview"
   })
 }
 
-function b(q) {
-  return a({
+function x(q) {
+  return i({
     type: "paintPixels",
     data: q
   })
 }
-async function x() {
-  t || await a({
+async function b() {
+  t || await i({
     type: "clearPixelPreview"
   })
 }
 
-function a(q) {
+function i(q) {
   const V = Math.random(),
     A = {
       ...q,
@@ -90,20 +90,20 @@ function a(q) {
     };
   return new Promise((e, s) => {
     try {
-      const i = navigator.serviceWorker;
-      i || s(new Error("You're an using an older browser, some features might not work. Consider updating or changing browser."));
+      const a = navigator.serviceWorker;
+      a || s(new Error("You're an using an older browser, some features might not work. Consider updating or changing browser."));
       const r = g => {
         var o;
-        ((o = g.data) == null ? void 0 : o.id) === V && (e(void 0), i.removeEventListener("message", r))
+        ((o = g.data) == null ? void 0 : o.id) === V && (e(void 0), a.removeEventListener("message", r))
       };
-      i.addEventListener("message", r);
+      a.addEventListener("message", r);
       const n = navigator.serviceWorker.controller;
       n ? n.postMessage(A) : navigator.serviceWorker.ready.then(g => {
         const o = g.active;
         o ? o == null || o.postMessage(A) : s(new Error("Service worker registration not active"))
       })
-    } catch (i) {
-      s(i)
+    } catch (a) {
+      s(a)
     }
   })
 }
@@ -116,5 +116,5 @@ function U({
   return `t=(${A[0]},${A[1]});p=(${q[0]},${q[1]});s=${V}`
 }
 export {
-  y as A, C as a, b, f as c, U as g, L as p, x as s
+  y as A, C as a, x as b, f as c, U as g, L as p, b as s
 };

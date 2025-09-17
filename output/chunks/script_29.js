@@ -1,25 +1,25 @@
 import {
   g as v
-} from "./7aCKDKSw.js";
-import "./Dxt0_dNQ.js";
+} from "./p5JClCcr.js";
+import "./CS6g-723.js";
 import {
   v as i,
   b as s,
   ay as g,
   a as u
-} from "./BhjnkBaE.js";
+} from "./D6XPBeZs.js";
 import {
-  b as a
-} from "./CnSNf6Bw.js";
+  b as r
+} from "./DQCqOuD2.js";
 import {
   r as c,
   i as w
-} from "./UiQiuWBX.js";
+} from "./TIPq04Zn.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "ab54e7d2bb082741522faef467264167f3245873"
+      id: "ed542c83f3200bdd2dcdd4a1cf4ac45a32651d00"
     }
   } catch {}
 })();
@@ -37,14 +37,14 @@ const h = () => "Pixels painted",
   q = () => "Descrição",
   E = (e = {}, t = {}) => (t.locale ?? v()) === "en" ? m() : q(),
   _ = e => `Copy alliance ID: #${e.allianceId}`,
-  b = e => `Copiar ID da aliança: #${e.allianceId}`,
-  k = (e, t = {}) => (t.locale ?? v()) === "en" ? _(e) : b(e);
-var y = i('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
+  y = e => `Copiar ID da aliança: #${e.allianceId}`,
+  k = (e, t = {}) => (t.locale ?? v()) === "en" ? _(e) : y(e);
+var b = i('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
 
 function G(e, t) {
   let o = c(t, ["$$slots", "$$events", "$$legacy"]);
-  var n = y();
-  a(n, () => ({
+  var n = b();
+  r(n, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
@@ -57,28 +57,28 @@ var $ = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T36
 function P(e, t) {
   let o = c(t, ["$$slots", "$$events", "$$legacy", "filled"]);
   var n = g(),
-    p = u(n);
+    d = u(n);
   {
-    var d = l => {
-        var r = $();
-        a(r, () => ({
+    var p = l => {
+        var a = $();
+        r(a, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
           fill: "currentColor",
           ...o
-        })), s(l, r)
+        })), s(l, a)
       },
       f = l => {
-        var r = Z();
-        a(r, () => ({
+        var a = Z();
+        r(a, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
           fill: "currentColor",
           ...o
-        })), s(l, r)
+        })), s(l, a)
       };
-    w(p, l => {
-      t.filled ? l(d) : l(f, !1)
+    w(d, l => {
+      t.filled ? l(p) : l(f, !1)
     })
   }
   s(e, n)
@@ -88,7 +88,7 @@ var x = i('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-
 function R(e, t) {
   let o = c(t, ["$$slots", "$$events", "$$legacy"]);
   var n = x();
-  a(n, () => ({
+  r(n, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
@@ -100,7 +100,7 @@ var I = i('<svg><path d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320
 function S(e, t) {
   let o = c(t, ["$$slots", "$$events", "$$legacy"]);
   var n = I();
-  a(n, () => ({
+  r(n, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
