@@ -1,11 +1,11 @@
 import {
   g as z
-} from "./BJ-UYlEz.js";
+} from "./CqB2RnAG.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "3c9334ae758047b148030b2b1b11409cfc37ff31"
+      id: "64a827f251b09c64d2dcef6cfc561f774a8ba67c"
     }
   } catch {}
 })();
@@ -31,7 +31,7 @@ function O(t, {
 }, u = {}) {
   var {
     delay: h = 0,
-    duration: a = n => Math.sqrt(n) * 120,
+    duration: i = n => Math.sqrt(n) * 120,
     easing: y = q
   } = u, o = getComputedStyle(t), g = o.transform === "none" ? "" : o.transform, [d, f] = o.transformOrigin.split(" ").map(parseFloat);
   d /= t.clientWidth, f /= t.clientHeight;
@@ -48,13 +48,13 @@ function O(t, {
     _ = e.height / r.height;
   return {
     delay: h,
-    duration: typeof a == "function" ? a(Math.sqrt(s * s + l * l)) : a,
+    duration: typeof i == "function" ? i(Math.sqrt(s * s + l * l)) : i,
     easing: y,
-    css: (n, i) => {
-      var T = i * s,
-        E = i * l,
-        I = n + i * S,
-        $ = n + i * _;
+    css: (n, a) => {
+      var T = a * s,
+        E = a * l,
+        I = n + a * S,
+        $ = n + a * _;
       return `transform: ${g} translate(${T}px, ${E}px) scale(${I}, ${$});`
     }
   }
