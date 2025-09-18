@@ -10,20 +10,20 @@ import {
   O as o,
   o as s,
   P as _
-} from "./CpSY2Qsz.js";
+} from "./DUey02Nl.js";
 (function() {
   try {
-    var d = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    d.SENTRY_RELEASE = {
-      id: "e1fd455bebad189e9f50428480abb20e05c8cf40"
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "3c9334ae758047b148030b2b1b11409cfc37ff31"
     }
   } catch {}
 })();
 try {
   (function() {
-    var d = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new d.Error().stack;
-    n && (d._sentryDebugIds = d._sentryDebugIds || {}, d._sentryDebugIds[n] = "225867f5-5320-4d27-ab51-ebf6afe9bd58", d._sentryDebugIdIdentifier = "sentry-dbid-225867f5-5320-4d27-ab51-ebf6afe9bd58")
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      d = new n.Error().stack;
+    d && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[d] = "225867f5-5320-4d27-ab51-ebf6afe9bd58", n._sentryDebugIdIdentifier = "sentry-dbid-225867f5-5320-4d27-ab51-ebf6afe9bd58")
   })()
 } catch {}
 let e;
@@ -32,19 +32,19 @@ function g() {
   e = void 0
 }
 
-function p(d) {
-  let n = null,
+function p(n) {
+  let d = null,
     l = a;
   var t;
   if (a) {
-    for (n = s, e === void 0 && (e = _(document.head)); e !== null && (e.nodeType !== u || e.data !== y);) e = f(e);
+    for (d = s, e === void 0 && (e = _(document.head)); e !== null && (e.nodeType !== u || e.data !== y);) e = f(e);
     e === null ? i(!1) : e = o(f(e))
   }
   a || (t = document.head.appendChild(r()));
   try {
-    b(() => d(t), h)
+    b(() => n(t), h)
   } finally {
-    l && (i(!0), e = s, o(n))
+    l && (i(!0), e = s, o(d))
   }
 }
 export {
