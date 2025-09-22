@@ -1,25 +1,25 @@
 import {
   g as v
-} from "./BGbZFWri.js";
-import "./n5nMNF0W.js";
+} from "./DQw77beb.js";
+import "./CSs50NID.js";
 import {
   v as i,
   b as l,
   ay as g,
   a as u
-} from "./29bc7E1V.js";
+} from "./CkE8vTi-.js";
 import {
   b as r
-} from "./-KcrKNly.js";
+} from "./NhG3EMiG.js";
 import {
   r as c,
   i as w
-} from "./6Z6Pybkg.js";
+} from "./DJN_gXRC.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "08e863ad0717da163bc2a8f4fbd2a2e653d7b37d"
+      id: "224624400a67b064cf33057a07336c317101aecf"
     }
   } catch {}
 })();
@@ -31,11 +31,11 @@ try {
   })()
 } catch {}
 const h = () => "Pixels painted",
-  b = () => "Pixels pintados",
-  B = (e = {}, t = {}) => (t.locale ?? v()) === "en" ? h() : b(),
-  T = () => "Description",
+  T = () => "Pixels pintados",
+  B = (e = {}, t = {}) => (t.locale ?? v()) === "en" ? h() : T(),
+  b = () => "Description",
   m = () => "Descrição",
-  E = (e = {}, t = {}) => (t.locale ?? v()) === "en" ? T() : m(),
+  E = (e = {}, t = {}) => (t.locale ?? v()) === "en" ? b() : m(),
   q = e => `Copy alliance ID: #${e.allianceId}`,
   _ = e => `Copiar ID da aliança: #${e.allianceId}`,
   k = (e, t = {}) => (t.locale ?? v()) === "en" ? q(e) : _(e);
