@@ -1,41 +1,24 @@
-import "./TAaYXrfn.js";
 import {
-  v as f,
-  b as r
-} from "./C9Y3lpV-.js";
-import {
-  b as s
-} from "./LUgAHJKX.js";
-import {
-  r as d
-} from "./CLofNfgh.js";
+  g as o
+} from "./wTxodMJy.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "7ed500f4877d9522a36ae9e4cb9ffdc698db3fc1"
+      id: "99d09c0a99d21d08ae7e452ed085de091ad1bef9"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "e7827935-ebe4-43f0-84b4-16441b18c03c", e._sentryDebugIdIdentifier = "sentry-dbid-e7827935-ebe4-43f0-84b4-16441b18c03c")
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "a39ce8e6-c68e-4670-97d0-cab3082bdbf7", e._sentryDebugIdIdentifier = "sentry-dbid-a39ce8e6-c68e-4670-97d0-cab3082bdbf7")
   })()
 } catch {}
-var i = f('<svg><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"></path></svg>');
-
-function c(e, t) {
-  let n = d(t, ["$$slots", "$$events", "$$legacy"]);
-  var o = i();
-  s(o, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...n
-  })), r(e, o)
-}
+const d = () => "Confirm",
+  t = () => "Confirmar",
+  r = (e = {}, n = {}) => (n.locale ?? o()) === "en" ? d() : t();
 export {
-  c as R
+  r as c
 };

@@ -1,70 +1,36 @@
 import {
-  g as z
-} from "./DRBNDhDm.js";
+  g as t
+} from "./wTxodMJy.js";
 (function() {
   try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
-      id: "7ed500f4877d9522a36ae9e4cb9ffdc698db3fc1"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "99d09c0a99d21d08ae7e452ed085de091ad1bef9"
     }
   } catch {}
 })();
 try {
   (function() {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "dcdc3bc1-2905-4a7a-b382-b2ec639c05ea", t._sentryDebugIdIdentifier = "sentry-dbid-dcdc3bc1-2905-4a7a-b382-b2ec639c05ea")
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "78305447-0aa0-4fe7-b9f4-39f491404710", e._sentryDebugIdIdentifier = "sentry-dbid-78305447-0aa0-4fe7-b9f4-39f491404710")
   })()
 } catch {}
-const C = () => "Timeout",
-  D = () => "Timeout",
-  M = (t = {}, e = {}) => (e.locale ?? z()) === "en" ? C() : D();
-
-function q(t) {
-  const e = t - 1;
-  return e * e * e + 1
-}
-
-function O(t, {
-  from: e,
-  to: r
-}, u = {}) {
-  var {
-    delay: h = 0,
-    duration: i = n => Math.sqrt(n) * 120,
-    easing: y = q
-  } = u, o = getComputedStyle(t), g = o.transform === "none" ? "" : o.transform, [d, s] = o.transformOrigin.split(" ").map(parseFloat);
-  d /= t.clientWidth, s /= t.clientHeight;
-  var f = H(t),
-    p = t.clientWidth / r.width / f,
-    v = t.clientHeight / r.height / f,
-    b = e.left + e.width * d,
-    m = e.top + e.height * s,
-    w = r.left + r.width * d,
-    x = r.top + r.height * s,
-    c = (b - w) * p,
-    l = (m - x) * v,
-    S = e.width / r.width,
-    _ = e.height / r.height;
-  return {
-    delay: h,
-    duration: typeof i == "function" ? i(Math.sqrt(c * c + l * l)) : i,
-    easing: y,
-    css: (n, a) => {
-      var T = a * c,
-        E = a * l,
-        I = n + a * S,
-        $ = n + a * _;
-      return `transform: ${g} translate(${T}px, ${E}px) scale(${I}, ${$});`
-    }
-  }
-}
-
-function H(t) {
-  if ("currentCSSZoom" in t) return t.currentCSSZoom;
-  for (var e = t, r = 1; e !== null;) r *= +getComputedStyle(e).zoom, e = e.parentElement;
-  return r
-}
+const l = () => "Save",
+  o = () => "Salvar",
+  y = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? l() : o(),
+  s = () => "Members",
+  a = () => "Membros",
+  _ = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? s() : a(),
+  i = () => "Player",
+  c = () => "Jogador",
+  g = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? i() : c(),
+  u = () => "Last pixel",
+  f = () => "Último pixel",
+  m = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? u() : f(),
+  d = () => "Visit",
+  p = () => "Visitar",
+  v = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? d() : p();
 export {
-  O as f, M as t
+  m as l, _ as m, g as p, y as s, v
 };

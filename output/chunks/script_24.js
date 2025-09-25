@@ -1,109 +1,139 @@
 import {
-  F as E,
-  G as _,
-  l as v,
-  z as g,
-  H as i,
-  I as S,
-  h as k,
-  J as I,
-  K as D,
-  L as y
-} from "./C9Y3lpV-.js";
+  g as s
+} from "./wTxodMJy.js";
+import "./DmhV7FWG.js";
+import {
+  p as O,
+  g as o,
+  u as R,
+  aw as w,
+  au as j,
+  y as k,
+  f as g,
+  d as l,
+  s as x,
+  bj as C,
+  r as c,
+  t as v,
+  b,
+  c as N
+} from "./C0IvGZ4J.js";
+import {
+  s as h
+} from "./DY0zCnZE.js";
+import {
+  p as S,
+  i as q,
+  r as Y
+} from "./tSwwO5cy.js";
+import {
+  b as z,
+  C as B
+} from "./DWLg2ogb.js";
+import {
+  b as F
+} from "./CEVHAeEV.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "7ed500f4877d9522a36ae9e4cb9ffdc698db3fc1"
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    t.SENTRY_RELEASE = {
+      id: "99d09c0a99d21d08ae7e452ed085de091ad1bef9"
     }
   } catch {}
 })();
 try {
   (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      d = new e.Error().stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "6fc49d13-f7d8-42d1-9723-e4fb7b109694", e._sentryDebugIdIdentifier = "sentry-dbid-6fc49d13-f7d8-42d1-9723-e4fb7b109694")
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      e = new t.Error().stack;
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "832b2d91-c507-495d-8a1f-d5c91dd6acad", t._sentryDebugIdIdentifier = "sentry-dbid-832b2d91-c507-495d-8a1f-d5c91dd6acad")
   })()
 } catch {}
+const G = () => "Select the reason",
+  H = () => "Selecione o motivo",
+  xe = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? G() : H(),
+  J = () => "Other",
+  K = () => "Outro motivo",
+  ve = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? J() : K(),
+  P = () => "Extra context on what happened (required)",
+  Q = () => "Mais informações sobre o que aconteceu (obrigatório)",
+  be = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? P() : Q(),
+  U = () => "Select the report reason",
+  V = () => "Selecione o motivo da denúncia",
+  he = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? U() : V(),
+  W = () => "Required",
+  X = () => "Obrigatório",
+  Z = (t = {}, e = {}) => (e.locale ?? s()) === "en" ? W() : X(),
+  $ = t => `Min. characters: ${t.min}`,
+  ee = t => `Mínimo de caracteres: ${t.min}`,
+  te = (t, e = {}) => (e.locale ?? s()) === "en" ? $(t) : ee(t),
+  ae = t => `Max. characters: ${t.max}`,
+  re = t => `Máximo de caracteres: ${t.max}`,
+  ne = (t, e = {}) => (e.locale ?? s()) === "en" ? ae(t) : re(t);
+var se = g('<legend class="fieldset-legend"> </legend>'),
+  oe = g('<span class="text-base-content/80"> </span>'),
+  le = g('<fieldset class="fieldset"><!> <textarea></textarea> <div class="flex items-center justify-between text-xs"><span class="text-error"> </span> <!></div></fieldset>');
 
-function A(e, d, l = d) {
-  var c = E(),
-    r = new WeakSet;
-  _(e, "input", s => {
-    var a = s ? e.defaultValue : e.value;
-    if (a = h(e) ? b(a) : a, l(a), v !== null && r.add(v), c && a !== (a = d())) {
-      var t = e.selectionStart,
-        n = e.selectionEnd;
-      e.value = a ?? "", n !== null && (e.selectionStart = t, e.selectionEnd = Math.min(n, e.value.length))
-    }
-  }), (k && e.defaultValue !== e.value || g(d) == null && e.value) && (l(h(e) ? b(e.value) : e.value), v !== null && r.add(v)), i(() => {
-    var s = d();
-    if (e === document.activeElement) {
-      var a = S ?? v;
-      if (r.has(a)) return
-    }
-    h(e) && s === b(e.value) || e.type === "date" && !s && !e.value || s !== e.value && (e.value = s ?? "")
-  })
-}
-const u = new Set;
+function ge(t, e) {
+  O(e, !0);
+  let r = S(e, "value", 15),
+    E = S(e, "validate", 15),
+    I = Y(e, ["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate"]),
+    i = j("");
+  const d = R(() => {
+    var a;
+    return ((a = r()) == null ? void 0 : a.length) ?? 0
+  });
+  E(T);
 
-function C(e, d, l, c, r = c) {
-  var s = l.getAttribute("type") === "checkbox",
-    a = e;
-  let t = !1;
-  if (d !== null)
-    for (var n of d) a = a[n] ?? (a[n] = []);
-  a.push(l), _(l, "change", () => {
-    var f = l.__value;
-    s && (f = m(a, f, l.checked)), r(f)
-  }, () => r(s ? [] : null)), i(() => {
-    var f = c();
-    if (k && l.defaultChecked !== l.checked) {
-      t = !0;
-      return
-    }
-    s ? (f = f || [], l.checked = f.includes(l.__value)) : l.checked = I(l.__value, f)
-  }), D(() => {
-    var f = a.indexOf(l);
-    f !== -1 && a.splice(f, 1)
-  }), u.has(a) || (u.add(a), y(() => {
-    a.sort((f, o) => f.compareDocumentPosition(o) === 4 ? -1 : 1), u.delete(a)
-  })), y(() => {
-    if (t) {
-      var f;
-      if (s) f = m(a, f, l.checked);
-      else {
-        var o = a.find(w => w.checked);
-        f = o == null ? void 0 : o.__value
-      }
-      r(f)
-    }
-  })
-}
-
-function L(e, d, l = d) {
-  _(e, "change", c => {
-    var r = c ? e.defaultChecked : e.checked;
-    l(r)
-  }), (k && e.defaultChecked !== e.checked || g(d) == null) && l(e.checked), i(() => {
-    var c = d();
-    e.checked = !!c
-  })
-}
-
-function m(e, d, l) {
-  for (var c = new Set, r = 0; r < e.length; r += 1) e[r].checked && c.add(e[r].__value);
-  return l || c.delete(d), Array.from(c)
-}
-
-function h(e) {
-  var d = e.type;
-  return d === "number" || d === "range"
-}
-
-function b(e) {
-  return e === "" ? null : +e
+  function T() {
+    return e.min !== void 0 && o(d) < e.min ? (w(i, e.min === 1 ? Z() : te({
+      min: e.min
+    }), !0), !1) : e.max !== void 0 && o(d) > e.max ? (w(i, ne({
+      max: e.max
+    }), !0), !1) : !0
+  }
+  k(() => {
+    var a;
+    e.max !== void 0 && o(d) > e.max && r((a = r()) == null ? void 0 : a.substring(0, e.max))
+  });
+  var f = le(),
+    y = l(f);
+  {
+    var L = a => {
+      var n = se(),
+        m = l(n, !0);
+      c(n), v(() => h(m, e.label)), b(a, n)
+    };
+    q(y, a => {
+      e.label && a(L)
+    })
+  }
+  var u = x(y, 2);
+  C(u), z(u, a => ({
+    ...I,
+    class: `textarea w-full ${e.class??""}`,
+    placeholder: e.placeholder,
+    [B]: a
+  }), [() => ({
+    "textarea-error": !!o(i)
+  })]);
+  var p = x(u, 2),
+    _ = l(p),
+    M = l(_, !0);
+  c(_);
+  var D = x(_, 2);
+  {
+    var A = a => {
+      var n = oe(),
+        m = l(n, !0);
+      c(n), v(() => h(m, e.max - o(d))), b(a, n)
+    };
+    q(D, a => {
+      e.max !== void 0 && a(A)
+    })
+  }
+  c(p), c(f), v(() => h(M, o(i))), F(u, r), b(t, f), N()
 }
 export {
-  L as a, A as b, C as c
+  ge as L, he as a, be as g, ve as o, xe as s
 };
