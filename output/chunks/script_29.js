@@ -1,112 +1,115 @@
 import {
-  g as v
-} from "./7naOYfoA.js";
-import "./DrXF_xKF.js";
-import {
-  v as i,
-  b as l,
-  ay as g,
-  a as u
-} from "./CJ1cckJE.js";
-import {
-  b as r
-} from "./CxPvPfNE.js";
-import {
-  r as c,
-  i as w
-} from "./DarOcbRx.js";
+  S as g
+} from "./C3huTVPk.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "0e3f70f7829e704b21f2ec68a0bb0b01d91efd9a"
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    t.SENTRY_RELEASE = {
+      id: "2fc0c566909334a37ac26a23e56a02c78685632f"
     }
   } catch {}
 })();
 try {
   (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "59573a59-89e2-4bba-ab58-82ec760b86bb", e._sentryDebugIdIdentifier = "sentry-dbid-59573a59-89e2-4bba-ab58-82ec760b86bb")
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      e = new t.Error().stack;
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "93bf6baa-df42-4606-8306-5e02c5577553", t._sentryDebugIdIdentifier = "sentry-dbid-93bf6baa-df42-4606-8306-5e02c5577553")
   })()
 } catch {}
-const b = () => "Pixels painted",
-  h = () => "Pixels pintados",
-  B = (e = {}, t = {}) => (t.locale ?? v()) === "en" ? b() : h(),
-  T = () => "Description",
-  m = () => "Descrição",
-  E = (e = {}, t = {}) => (t.locale ?? v()) === "en" ? T() : m(),
-  q = e => `Copy alliance ID: #${e.allianceId}`,
-  _ = e => `Copiar ID da aliança: #${e.allianceId}`,
-  k = (e, t = {}) => (t.locale ?? v()) === "en" ? q(e) : _(e);
-var y = i('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
+const u = ["text-red-500", "text-orange-500", "text-yellow-500", "text-lime-500", "text-emerald-500", "text-teal-500", "text-cyan-500", "text-sky-500", "text-indigo-500", "text-violet-500", "text-purple-500", "text-fuchsia-500", "text-pink-500", "text-rose-500"],
+  p = ["bg-red-500/10", "bg-orange-500/10", "bg-yellow-500/10", "bg-lime-500/10", "bg-emerald-500/10", "bg-teal-500/10", "bg-cyan-500/10", "bg-sky-500/10", "bg-indigo-500/10", "bg-violet-500/10", "bg-purple-500/10", "bg-fuchsia-500/10", "bg-pink-500/10", "bg-rose-500/10"];
 
-function G(e, t) {
-  let o = c(t, ["$$slots", "$$events", "$$legacy"]);
-  var n = y();
-  r(n, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...o
-  })), l(e, n)
+function x(t) {
+  return u[t % u.length]
 }
-var $ = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
-  Z = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
-function P(e, t) {
-  let o = c(t, ["$$slots", "$$events", "$$legacy", "filled"]);
-  var n = g(),
-    p = u(n);
-  {
-    var d = a => {
-        var s = $();
-        r(s, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...o
-        })), l(a, s)
-      },
-      f = a => {
-        var s = Z();
-        r(s, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...o
-        })), l(a, s)
-      };
-    w(p, a => {
-      t.filled ? a(d) : a(f, !1)
-    })
+function E(t) {
+  return p[t % p.length]
+}
+
+function T({
+  r: t,
+  g: e,
+  b: o
+}) {
+  function r(a) {
+    return a.toString(16).padStart(2, "0")
   }
-  l(e, n)
+  return `#${r(t)}${r(e)}${r(o)}`
 }
-var x = i('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
 
-function R(e, t) {
-  let o = c(t, ["$$slots", "$$events", "$$legacy"]);
-  var n = x();
-  r(n, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...o
-  })), l(e, n)
+function k(t) {
+  return t = t.trim().replace("#", ""), t.length === 3 && (t = t[0] + t[0] + t[1] + t[1] + t[2] + t[2]), t.length !== 6 ? {
+    r: 0,
+    g: 0,
+    b: 0
+  } : {
+    r: +("0x" + t.slice(0, 2)),
+    g: +("0x" + t.slice(2, 4)),
+    b: +("0x" + t.slice(4, 6))
+  }
 }
-var I = i('<svg><path d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z"></path></svg>');
 
-function S(e, t) {
-  let o = c(t, ["$$slots", "$$events", "$$legacy"]);
-  var n = I();
-  r(n, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...o
-  })), l(e, n)
+function C(t) {
+  t = Math.min(t, g.colors.length - 1);
+  const [e, o, r] = g.colors[t].rgb;
+  return {
+    r: e,
+    g: o,
+    b: r,
+    a: t === 0 ? 0 : 255
+  }
+}
+const y = g.colors.map((t, e) => ({
+  ...t,
+  idx: e,
+  lab: v({
+    r: t.rgb[0],
+    g: t.rgb[1],
+    b: t.rgb[2]
+  })
+})).filter(t => t.idx !== 0);
+
+function A(t) {
+  let e = y[0],
+    o = Number.MAX_VALUE;
+  const r = v(t);
+  for (let a of y) {
+    const n = m(r, a.lab);
+    n < o && (e = a, o = n)
+  }
+  return e.idx
+}
+
+function v(t) {
+  var e = t.r / 255,
+    o = t.g / 255,
+    r = t.b / 255,
+    a, n, l;
+  return e = e > .04045 ? Math.pow((e + .055) / 1.055, 2.4) : e / 12.92, o = o > .04045 ? Math.pow((o + .055) / 1.055, 2.4) : o / 12.92, r = r > .04045 ? Math.pow((r + .055) / 1.055, 2.4) : r / 12.92, a = (e * .4124 + o * .3576 + r * .1805) / .95047, n = (e * .2126 + o * .7152 + r * .0722) / 1, l = (e * .0193 + o * .1192 + r * .9505) / 1.08883, a = a > .008856 ? Math.pow(a, 1 / 3) : 7.787 * a + 16 / 116, n = n > .008856 ? Math.pow(n, 1 / 3) : 7.787 * n + 16 / 116, l = l > .008856 ? Math.pow(l, 1 / 3) : 7.787 * l + 16 / 116, {
+    l: 116 * n - 16,
+    a: 500 * (a - n),
+    b: 200 * (n - l)
+  }
+}
+
+function m(t, e) {
+  var o = t.l - e.l,
+    r = t.a - e.a,
+    a = t.b - e.b,
+    n = Math.sqrt(t.a * t.a + t.b * t.b),
+    l = Math.sqrt(e.a * e.a + e.b * e.b),
+    i = n - l,
+    s = r * r + a * a - i * i;
+  s = s < 0 ? 0 : Math.sqrt(s);
+  var w = 1 + .045 * n,
+    h = 1 + .015 * n,
+    c = o / 1,
+    b = i / w,
+    f = s / h,
+    d = c * c + b * b + f * f;
+  return d < 0 ? 0 : Math.sqrt(d)
 }
 export {
-  P as C, R as G, G as L, S as T, k as c, E as d, B as p
+  E as a, A as b, C as c, x as g, k as h, T as r
 };

@@ -1,317 +1,94 @@
-import "./DrXF_xKF.js";
 import {
-  M as ce,
-  z as se,
-  H as oe,
-  C as de,
-  aZ as fe,
-  p as W,
-  aw as M,
-  au as U,
-  ay as ue,
-  a as X,
-  g as v,
-  b as w,
-  c as p,
-  f as V,
-  t as j,
-  u as $,
-  v as ee,
-  av as ve,
-  d,
-  r as f,
-  s as u
-} from "./CJ1cckJE.js";
+  g as p
+} from "./Bh5Ke8_b.js";
+import "./CTisFEgE.js";
 import {
-  s as y
-} from "./CP6unqNE.js";
+  ay as g,
+  a as h,
+  b as r,
+  v
+} from "./bciEXFM-.js";
 import {
-  p as c,
-  i as B,
-  r as te
-} from "./DarOcbRx.js";
+  i as w,
+  r as i
+} from "./DMl4pkgo.js";
 import {
-  a as A,
-  c as G,
-  b as ae,
-  s as Z
-} from "./CxPvPfNE.js";
-import {
-  b as me
-} from "./BpaySCp6.js";
-import {
-  g as R,
-  d as J,
-  P as be,
-  e as _e
-} from "./CtJjuy86.js";
-import {
-  o as ge
-} from "./B7VbU2tM.js";
-import {
-  g as L
-} from "./7naOYfoA.js";
-import {
-  L as he
-} from "./angsGyJV.js";
+  b as s
+} from "./HAxAzJlo.js";
 (function() {
   try {
-    var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    a.SENTRY_RELEASE = {
-      id: "0e3f70f7829e704b21f2ec68a0bb0b01d91efd9a"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "2fc0c566909334a37ac26a23e56a02c78685632f"
     }
   } catch {}
 })();
 try {
   (function() {
-    var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      e = new a.Error().stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "df37a72b-3435-4f1a-8b0e-86b45a0e28ed", a._sentryDebugIdIdentifier = "sentry-dbid-df37a72b-3435-4f1a-8b0e-86b45a0e28ed")
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      o = new e.Error().stack;
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "3298bbfa-10df-4888-8ec0-1b806457f64a", e._sentryDebugIdIdentifier = "sentry-dbid-3298bbfa-10df-4888-8ec0-1b806457f64a")
   })()
 } catch {}
+const m = e => `Copy alliance ID: #${e.allianceId}`,
+  u = e => `Copiar ID da aliança: #${e.allianceId}`,
+  C = (e, o = {}) => (o.locale ?? p()) === "en" ? m(e) : u(e);
+var y = v('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
+  b = v('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
-function ye(a, e, n) {
-  ce(() => {
-    var r = se(() => e(a, n == null ? void 0 : n()) || {});
-    if (n && (r != null && r.update)) {
-      var b = !1,
-        m = {};
-      oe(() => {
-        var s = n();
-        de(s), b && fe(m, s) && (m = s, r.update(s))
-      }), b = !0
-    }
-    if (r != null && r.destroy) return () => r.destroy()
-  })
-}
-const we = a => `Login with ${a.name}`,
-  xe = a => `Entrar com ${a.name}`,
-  Q = (a, e = {}) => (e.locale ?? L()) === "en" ? we(a) : xe(a),
-  ke = () => "By continuing, you agree to our",
-  Ie = () => "Ao continuar, você concorda com nossos",
-  Le = (a = {}, e = {}) => (e.locale ?? L()) === "en" ? ke() : Ie(),
-  Ce = () => "Terms of Service",
-  Ee = () => "Termos de Serviço",
-  Te = (a = {}, e = {}) => (e.locale ?? L()) === "en" ? Ce() : Ee(),
-  ze = () => "and",
-  Be = () => "e",
-  Me = (a = {}, e = {}) => (e.locale ?? L()) === "en" ? ze() : Be(),
-  De = () => "Privacy Policy",
-  Pe = () => "Política de privacidade",
-  Se = (a = {}, e = {}) => (e.locale ?? L()) === "en" ? De() : Pe();
-var Fe = V("<div></div>");
-
-function He(a, e) {
-  W(e, !0);
-  let n = c(e, "widgetId", 15),
-    r = c(e, "appearance", 3, "always"),
-    b = c(e, "language", 3, "auto"),
-    m = c(e, "execution", 3, "render"),
-    s = c(e, "retryInterval", 3, 8e3),
-    D = c(e, "retry", 3, "auto"),
-    g = c(e, "refreshExpired", 3, "auto"),
-    C = c(e, "theme", 3, "auto"),
-    E = c(e, "size", 3, "normal"),
-    P = c(e, "tabIndex", 3, 0);
-  c(e, "reset", 15)(() => {
-    var t;
-    n() && ((t = window == null ? void 0 : window.turnstile) == null || t.reset(n()))
-  });
-  const T = $(() => ({
-      sitekey: e.siteKey,
-      callback: (t, i) => {
-        var l;
-        (l = e.callback) == null || l.call(e, t, i)
-      },
-      "error-callback": t => {
-        var i;
-        (i = e.errorCallback) == null || i.call(e, t)
-      },
-      "timeout-callback": () => {
-        var t;
-        (t = e.timeoutCallback) == null || t.call(e)
-      },
-      "expired-callback": () => {
-        var t;
-        (t = e.expiredCallback) == null || t.call(e)
-      },
-      "before-interactive-callback": () => {
-        var t;
-        (t = e.beforeInteractiveCallback) == null || t.call(e)
-      },
-      "after-interactive-callback": () => {
-        var t;
-        (t = e.afterInteractiveCallback) == null || t.call(e)
-      },
-      "unsupported-callback": () => {
-        var t;
-        return (t = e.unsupportedCallback) == null ? void 0 : t.call(e)
-      },
-      "response-field-name": e.responseFieldName ?? e.formsField ?? "cf-turnstile-response",
-      "response-field": e.responseField ?? e.forms ?? !0,
-      "refresh-expired": g(),
-      "retry-interval": s(),
-      tabindex: P(),
-      appearance: r(),
-      execution: m(),
-      language: b(),
-      action: e.action,
-      retry: D(),
-      theme: C(),
-      cData: e.cData,
-      size: E()
-    })),
-    _ = (t, i) => {
-      let l = window.turnstile.render(t, i);
-      return n(l), {
-        destroy() {
-          window.turnstile.remove(l)
-        },
-        update(o) {
-          window.turnstile.remove(l), l = window.turnstile.render(t, o), n(l)
-        }
-      }
-    };
-  let x = U(!1);
-  ge(() => {
-    if (M(x, !0), !R.turnstatileLoaded) {
-      const t = document.createElement("script");
-      t.type = "text/javascript", t.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit", t.async = !0, t.addEventListener("load", () => R.turnstatileLoaded = !0, {
-        once: !0
-      }), document.head.appendChild(t)
-    }
-    return () => {
-      M(x, !1)
-    }
-  });
-  var k = ue(),
-    z = X(k);
+function H(e, o) {
+  let a = i(o, ["$$slots", "$$events", "$$legacy", "filled"]);
+  var t = g(),
+    f = h(t);
   {
-    var F = t => {
-      var i = Fe();
-      let l;
-      ye(i, (o, H) => _ == null ? void 0 : _(o, H), () => v(T)), j(o => l = A(i, 1, G(e.class), "svelte-1gvfki5", l, o), [() => ({
-        flexible: E() == "flexible"
-      })]), w(t, i)
-    };
-    B(z, t => {
-      R.turnstatileLoaded && v(x) && t(F)
+    var c = l => {
+        var n = y();
+        s(n, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...a
+        })), r(l, n)
+      },
+      d = l => {
+        var n = b();
+        s(n, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...a
+        })), r(l, n)
+      };
+    w(f, l => {
+      o.filled ? l(c) : l(d, !1)
     })
   }
-  w(a, k), p()
+  r(e, t)
 }
-var Ne = ee('<svg><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" fill="#4285F4"></path><path d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" fill="#34A853"></path><path d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" fill="#FBBC05"></path><path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" fill="#EB4335"></path></svg>');
+var T = v('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
 
-function Ke(a, e) {
-  let n = te(e, ["$$slots", "$$events", "$$legacy"]);
-  var r = Ne();
-  ae(r, () => ({
-    viewBox: "0 0 256 262",
+function D(e, o) {
+  let a = i(o, ["$$slots", "$$events", "$$legacy"]);
+  var t = T();
+  s(t, () => ({
     xmlns: "http://www.w3.org/2000/svg",
-    ...n
-  })), w(a, r)
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...a
+  })), r(e, t)
 }
-var Re = ee('<svg><path fill="#fff" d="m2200 1300-400 400h-400l-350 350v-350H600V200h1600z"></path><g fill="#9146ff"><path d="M500 0 0 500v1800h600v500l500-500h400l900-900V0H500zm1700 1300-400 400h-400l-350 350v-350H600V200h1600v1100z"></path><path d="M1700 550h200v600h-200zm-550 0h200v600h-200z"></path></g></svg>');
+var q = v('<svg><path d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z"></path></svg>');
 
-function Ue(a, e) {
-  let n = te(e, ["$$slots", "$$events", "$$legacy"]);
-  var r = Re();
-  ae(r, () => ({
+function M(e, o) {
+  let a = i(o, ["$$slots", "$$events", "$$legacy"]);
+  var t = q();
+  s(t, () => ({
     xmlns: "http://www.w3.org/2000/svg",
-    "xml:space": "preserve",
-    viewBox: "0 0 2400 2800",
-    ...n
-  })), w(a, r)
-}
-var je = V('<a><!> </a> <a><!> </a> <div class="mt-2 flex flex-col items-center gap-1"><!> <!></div>', 1),
-  Ae = V('<div><div class="flex justify-center"><!></div> <form><div class="mt-6 flex flex-col items-center gap-2"><!></div></form> <p class="text-base-content/60 mt-2 text-center text-sm"> <a class="font-medium" href="/terms/terms-of-service" target="_blank"> </a> <a class="font-medium" href="/terms/privacy" target="_blank"> </a></p></div>');
-
-function pe(a, e) {
-  W(e, !0);
-  let n = U(null),
-    r = U(ve(J ? "" : "turnstile-disabled"));
-
-  function b(t, i) {
-    return `${be}/auth/${t}?token=${i}${e.redirect?`&r=${e.redirect}`:""}`
-  }
-  var m = Ae(),
-    s = d(m),
-    D = d(s);
-  he(D, {
-    hasText: !0
-  }), f(s);
-  var g = u(s, 2),
-    C = d(g),
-    E = d(C);
-  {
-    var P = t => {
-      var i = je(),
-        l = X(i),
-        o = d(l);
-      Ke(o, {
-        class: "mr-1 size-5"
-      });
-      var H = u(o);
-      f(l);
-      var I = u(l, 2),
-        Y = d(I);
-      Ue(Y, {
-        class: "mr-1 size-5"
-      });
-      var re = u(Y);
-      f(I);
-      var q = u(I, 2),
-        O = d(q);
-      {
-        var ne = h => {
-          {
-            let N = $(() => _e.trim());
-            He(h, {
-              get siteKey() {
-                return v(N)
-              },
-              callback: K => {
-                M(r, K, !0)
-              }
-            })
-          }
-        };
-        B(O, h => {
-          J && h(ne)
-        })
-      }
-      var le = u(O, 2);
-      B(le, h => {}), f(q), j((h, N, K, ie) => {
-        A(l, 1, G({
-          "btn btn-lg bg-base-100 w-full text-base": !0,
-          "bg-base-content/10 pointer-events-none": !v(r)
-        })), Z(l, "href", h), y(H, ` ${N??""}`), A(I, 1, G({
-          "btn btn-lg bg-base-100 w-full text-base": !0,
-          "bg-base-content/10 pointer-events-none": !v(r)
-        })), Z(I, "href", K), y(re, ` ${ie??""}`)
-      }, [() => v(r) ? b("google", v(r)) : "#", () => Q({
-        name: "Google"
-      }), () => v(r) ? b("twitch", v(r)) : "#", () => Q({
-        name: "Twitch"
-      })]), w(t, i)
-    };
-    B(E, t => {
-      t(P, !1)
-    })
-  }
-  f(C), f(g), me(g, t => M(n, t), () => v(n));
-  var S = u(g, 2),
-    T = d(S),
-    _ = u(T),
-    x = d(_, !0);
-  f(_);
-  var k = u(_),
-    z = u(k),
-    F = d(z, !0);
-  f(z), f(S), f(m), j((t, i, l, o) => {
-    y(T, `${t??""} `), y(x, i), y(k, ` ${l??""} `), y(F, o)
-  }, [() => Le(), () => Te(), () => Me(), () => Se()]), w(a, m), p()
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...a
+  })), r(e, t)
 }
 export {
-  pe as L, Ue as T, He as a
+  H as C, D as G, M as T, C as c
 };

@@ -1,17 +1,17 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["../nodes/0.CGaJYzeu.js", "../chunks/DrXF_xKF.js", "../chunks/B7VbU2tM.js", "../chunks/CJ1cckJE.js", "../chunks/CP6unqNE.js", "../chunks/C545_x4c.js", "../chunks/CtJjuy86.js", "../chunks/7naOYfoA.js", "../chunks/BPQb8q9j.js", "../chunks/DarOcbRx.js", "../chunks/C5k3vU_d.js", "../chunks/CxPvPfNE.js", "../chunks/BpaySCp6.js", "../chunks/-hEo5rsj.js", "../chunks/CwOYEK3A.js", "../assets/0.DnpUNJuo.css", "../nodes/1.DxDAqPjK.js", "../chunks/Dbj59vgp.js", "../chunks/oO5hgeHe.js", "../chunks/BK2EiI7s.js", "../nodes/2.B-VhiNrl.js", "../chunks/mALEh5-1.js", "../chunks/angsGyJV.js", "../chunks/nFSTnMbJ.js", "../nodes/3.3j9Y-DwZ.js", "../nodes/4.qgPLbpa6.js", "../chunks/tlmUO_GN.js", "../chunks/DD000S8G.js", "../chunks/D5REncPQ.js", "../chunks/z-ZvcMvi.js", "../chunks/B32EvRvd.js", "../chunks/Xrr9FS12.js", "../chunks/CZyZzMFr.js", "../chunks/DuqtAK6i.js", "../chunks/BENUh1QF.js", "../chunks/fsMFv8xj.js", "../assets/ProfileAvatarWithLevel.6dmPRSfx.css", "../chunks/DPIkj84I.js", "../assets/LoginForm.CxMG0irz.css", "../chunks/DTs-nnpk.js", "../chunks/DN2R5XKm.js", "../chunks/ByWbcPGu.js", "../chunks/BKAs-tTl.js", "../assets/4.BtKF873c.css", "../nodes/5.D1GO8viU.js", "../nodes/6.DbB0HyyK.js", "../nodes/7.BGSStNIQ.js", "../chunks/D9SL6iZj.js", "../chunks/CNgchK4c.js", "../chunks/CMk4f9XK.js", "../nodes/8.CDZ8SvfF.js", "../nodes/9.BzJyqEPh.js", "../chunks/DDSEA-VD.js", "../chunks/h7Rjgig9.js", "../nodes/10.DHPtcsZv.js", "../nodes/11.DiB8Q8EV.js", "../chunks/a_03akx3.js", "../chunks/NVcNLIo0.js", "../nodes/12._7ahtyQf.js", "../chunks/DK_W8L8J.js", "../nodes/13.CsYwycS1.js", "../nodes/14.DiWiys6-.js", "../nodes/15.4vNIFUXL.js", "../nodes/16.tv-XO1Ey.js", "../nodes/17.wjwrualJ.js", "../assets/17.BD1hRFPA.css", "../nodes/18.D2XovdQ7.js", "../nodes/19._Z9vlWlm.js", "../nodes/20.Dl-PZtXk.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["../nodes/0.BezvgzCU.js", "../chunks/CTisFEgE.js", "../chunks/C0MNmcP3.js", "../chunks/bciEXFM-.js", "../chunks/BiFut16U.js", "../chunks/K1bArTvE.js", "../chunks/C3huTVPk.js", "../chunks/Bh5Ke8_b.js", "../chunks/6s0ECAWM.js", "../chunks/DMl4pkgo.js", "../chunks/BMU6-9WM.js", "../chunks/HAxAzJlo.js", "../chunks/DJclfX_A.js", "../chunks/XlZ_StPa.js", "../chunks/C0nkS0At.js", "../assets/0.gvYbs-Wx.css", "../nodes/1.BcfpzRNp.js", "../chunks/CuHoYA1i.js", "../chunks/BWbSFFLj.js", "../chunks/Dyc0V-Gb.js", "../nodes/2.DjQDNhLg.js", "../chunks/BelySUVW.js", "../chunks/D87KvVbz.js", "../chunks/CvF1-2pU.js", "../nodes/3.pUnFQSeK.js", "../nodes/4.CJWvpkg8.js", "../chunks/BEqQ4654.js", "../chunks/CVFACema.js", "../chunks/CAjugrIW.js", "../chunks/CU_IgY5J.js", "../chunks/g3Mb7rud.js", "../chunks/C3LE90N2.js", "../chunks/DKasThDV.js", "../chunks/DMX-MQ5H.js", "../chunks/O6qyUgcc.js", "../chunks/D9YfYLLE.js", "../chunks/Dhyb-Udm.js", "../chunks/C_mgMlOs.js", "../assets/ProfileAvatarWithLevel.6dmPRSfx.css", "../chunks/5VIRkUs1.js", "../chunks/B2CYOf3b.js", "../assets/LoginForm.CxMG0irz.css", "../chunks/CI9OIGWS.js", "../chunks/o2x6pOMP.js", "../chunks/CdbMLnuN.js", "../chunks/ChvEym8G.js", "../chunks/1oksbYUj.js", "../assets/4.BtKF873c.css", "../nodes/5.DYT_O-N6.js", "../nodes/6.CC8PMCFV.js", "../nodes/7.CbGV9ZP4.js", "../chunks/C7EJ093h.js", "../chunks/Dt25XU_B.js", "../chunks/s68NSQrC.js", "../chunks/GXeDhUfu.js", "../nodes/8.uo0glWyT.js", "../chunks/Ok4ddD3r.js", "../chunks/8ebaFK0R.js", "../chunks/CignvPO9.js", "../nodes/9.Chql1jxH.js", "../nodes/10.C4XwgJXu.js", "../chunks/FHywPgr_.js", "../chunks/ivLpNQWK.js", "../nodes/11.DX_jtKEV.js", "../nodes/12.85-FRlKt.js", "../chunks/BqrKjFyC.js", "../chunks/fToBcJDF.js", "../nodes/13.iTRTPqZ2.js", "../chunks/BqZuZImv.js", "../nodes/14.CE1T7bOr.js", "../nodes/15.BiMciEXq.js", "../nodes/16.DcUM5xZ7.js", "../nodes/17.L1xFh8sD.js", "../nodes/18.4E7s7Oxy.js", "../assets/18.BD1hRFPA.css", "../nodes/19.CkoSf_Dh.js", "../nodes/20.SnzBi8m5.js", "../nodes/21.CwlJq-3J.js"]))) => i.map(i => d[i]);
 var Dr = t => {
   throw TypeError(t)
 };
 var Mr = (t, e, n) => e.has(t) || Dr("Cannot " + n);
 var q = (t, e, n) => (Mr(t, e, "read from private field"), n ? n.call(t) : e.get(t)),
   Rn = (t, e, n) => e.has(t) ? Dr("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, n),
-  wn = (t, e, n, r) => (Mr(t, e, "write to private field"), r ? r.call(t, n) : e.set(t, n), n);
+  An = (t, e, n, r) => (Mr(t, e, "write to private field"), r ? r.call(t, n) : e.set(t, n), n);
 import {
-  _ as M
-} from "../chunks/DTs-nnpk.js";
+  _ as x
+} from "../chunks/CI9OIGWS.js";
 import {
   s as yo
-} from "../chunks/BK2EiI7s.js";
+} from "../chunks/Dyc0V-Gb.js";
 import {
   aw as ze,
   aW as Eo,
@@ -21,9 +21,9 @@ import {
   a0 as vo,
   p as Io,
   x as Ro,
-  y as wo,
-  au as An,
-  aL as Ao,
+  y as Ao,
+  au as wn,
+  aL as wo,
   f as $s,
   a as ct,
   s as ko,
@@ -35,32 +35,32 @@ import {
   u as Mt,
   b4 as Oo,
   t as Lo
-} from "../chunks/CJ1cckJE.js";
+} from "../chunks/bciEXFM-.js";
 import {
   h as xo,
   m as Do,
   u as Mo,
   s as Fo
-} from "../chunks/CP6unqNE.js";
-import "../chunks/DrXF_xKF.js";
+} from "../chunks/BiFut16U.js";
+import "../chunks/CTisFEgE.js";
 import {
   o as $o
-} from "../chunks/B7VbU2tM.js";
+} from "../chunks/C0MNmcP3.js";
 import {
   p as ge,
   i as _e
-} from "../chunks/DarOcbRx.js";
+} from "../chunks/DMl4pkgo.js";
 import {
   c as Ft
-} from "../chunks/-hEo5rsj.js";
+} from "../chunks/XlZ_StPa.js";
 import {
   b as $t
-} from "../chunks/BpaySCp6.js";
+} from "../chunks/DJclfX_A.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "0e3f70f7829e704b21f2ec68a0bb0b01d91efd9a"
+      id: "2fc0c566909334a37ac26a23e56a02c78685632f"
     }
   } catch {}
 })();
@@ -68,7 +68,7 @@ try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "dd68c6bd-436c-4c65-b680-ff97775743ed", t._sentryDebugIdIdentifier = "sentry-dbid-dd68c6bd-436c-4c65-b680-ff97775743ed")
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "16f327dc-ba33-4c65-b919-8b798d1b9978", t._sentryDebugIdIdentifier = "sentry-dbid-16f327dc-ba33-4c65-b919-8b798d1b9978")
   })()
 } catch {}
 
@@ -107,14 +107,14 @@ class Bo {
         return ze(n.get(c) ?? r(c, a), a), Reflect.set(o, c, a)
       }
     });
-    wn(this, et, (e.hydrate ? xo : Do)(e.component, {
+    An(this, et, (e.hydrate ? xo : Do)(e.component, {
       target: e.target,
       anchor: e.anchor,
       props: s,
       context: e.context,
       intro: e.intro ?? !1,
       recover: e.recover
-    })), (!((i = e == null ? void 0 : e.props) != null && i.$$host) || e.sync === !1) && bo(), wn(this, St, s.$$events);
+    })), (!((i = e == null ? void 0 : e.props) != null && i.$$host) || e.sync === !1) && bo(), An(this, St, s.$$events);
     for (const o of Object.keys(q(this, et))) o === "$set" || o === "$destroy" || o === "$on" || To(this, o, {
       get() {
         return q(this, et)[o]
@@ -493,7 +493,7 @@ function ra(t, e) {
   return r.join("")
 }
 
-function we() {
+function Ae() {
   try {
     return mr.document.location.href
   } catch {
@@ -793,17 +793,17 @@ function fa(t) {
   }
 }
 
-function Ae(t, e, n = 2) {
+function we(t, e, n = 2) {
   if (!e || typeof e != "object" || n <= 0) return e;
   if (t && Object.keys(e).length === 0) return t;
   const r = {
     ...t
   };
-  for (const s in e) Object.prototype.hasOwnProperty.call(e, s) && (r[s] = Ae(r[s], e[s], n - 1));
+  for (const s in e) Object.prototype.hasOwnProperty.call(e, s) && (r[s] = we(r[s], e[s], n - 1));
   return r
 }
 
-function wt() {
+function At() {
   return rt()
 }
 
@@ -823,7 +823,7 @@ const la = 100;
 class ft {
   constructor() {
     this._notifyingListeners = !1, this._scopeListeners = [], this._eventProcessors = [], this._breadcrumbs = [], this._attachments = [], this._user = {}, this._tags = {}, this._extra = {}, this._contexts = {}, this._sdkProcessingMetadata = {}, this._propagationContext = {
-      traceId: wt(),
+      traceId: At(),
       sampleRand: Math.random()
     }
   }
@@ -942,7 +942,7 @@ class ft {
   }
   clear() {
     return this._breadcrumbs = [], this._tags = {}, this._extra = {}, this._user = {}, this._contexts = {}, this._level = void 0, this._transactionName = void 0, this._fingerprint = void 0, this._session = void 0, re(this, void 0), this._attachments = [], this.setPropagationContext({
-      traceId: wt(),
+      traceId: At(),
       sampleRand: Math.random()
     }), this._notifyScopeListeners(), this
   }
@@ -987,7 +987,7 @@ class ft {
     }
   }
   setSDKProcessingMetadata(e) {
-    return this._sdkProcessingMetadata = Ae(this._sdkProcessingMetadata, e, 2), this
+    return this._sdkProcessingMetadata = we(this._sdkProcessingMetadata, e, 2), this
   }
   setPropagationContext(e) {
     return this._propagationContext = e, this
@@ -1118,7 +1118,7 @@ function ce(t) {
   return e.acs ? e.acs : Sa()
 }
 
-function A() {
+function w() {
   const t = zt();
   return ce(t).getCurrentScope()
 }
@@ -1143,7 +1143,7 @@ function _n(...t) {
 }
 
 function k() {
-  return A().getClient()
+  return w().getClient()
 }
 
 function Ea(t) {
@@ -1163,7 +1163,7 @@ const z = "sentry.source",
   _r = "sentry.sample_rate",
   Qs = "sentry.previous_trace_sample_rate",
   Tt = "sentry.op",
-  D = "sentry.origin",
+  M = "sentry.origin",
   on = "sentry.idle_span_finish_reason",
   Pe = "sentry.measurement_unit",
   Ne = "sentry.measurement_value",
@@ -1257,7 +1257,7 @@ function an(t) {
 }
 const Sr = "sentry-",
   Ra = /^sentry-/,
-  wa = 8192;
+  Aa = 8192;
 
 function si(t) {
   const e = ka(t);
@@ -1272,7 +1272,7 @@ function si(t) {
   if (Object.keys(n).length > 0) return n
 }
 
-function Aa(t) {
+function wa(t) {
   if (!t) return;
   const e = Object.entries(t).reduce((n, [r, s]) => (s && (n[`${Sr}${r}`] = s), n), {});
   return Pa(e)
@@ -1301,7 +1301,7 @@ function Pa(t) {
   if (Object.keys(t).length !== 0) return Object.entries(t).reduce((e, [n, r], s) => {
     const i = `${encodeURIComponent(n)}=${encodeURIComponent(r)}`,
       o = s === 0 ? i : `${e},${i}`;
-    return o.length > wa ? (h && g.warn(`Not adding key: ${n} with val: ${r} to baggage header due to exceeding baggage size limits.`), e) : o
+    return o.length > Aa ? (h && g.warn(`Not adding key: ${n} with val: ${r} to baggage header due to exceeding baggage size limits.`), e) : o
   }, "")
 }
 const Na = /^o(\d+)\./,
@@ -1415,7 +1415,7 @@ function $a(t, e) {
   const n = ai(t),
     r = si(e);
   if (!(n != null && n.traceId)) return {
-    traceId: wt(),
+    traceId: At(),
     sampleRand: Math.random()
   };
   const s = Ha(n, r);
@@ -1434,7 +1434,7 @@ function $a(t, e) {
   }
 }
 
-function ci(t = wt(), e = ke(), n) {
+function ci(t = At(), e = ke(), n) {
   let r = "";
   return n !== void 0 && (r = n ? "-1" : "-0"), `${t}-${e}${r}`
 }
@@ -1546,7 +1546,7 @@ function I(t) {
       timestamp: Ut(c) || void 0,
       status: fi(a),
       op: s[Tt],
-      origin: s[D],
+      origin: s[M],
       links: di(u)
     }
   }
@@ -1609,7 +1609,7 @@ function U(t) {
 function J() {
   const t = zt(),
     e = ce(t);
-  return e.getActiveSpan ? e.getActiveSpan() : sn(A())
+  return e.getActiveSpan ? e.getActiveSpan() : sn(w())
 }
 
 function Wn() {
@@ -1636,7 +1636,7 @@ function Wa() {
   t.tag = "sentry_tracingErrorCallback", Zr = !0, js(t), qs(t)
 }
 
-function At(t) {
+function wt(t) {
   var n;
   if (typeof __SENTRY_TRACING__ == "boolean" && !__SENTRY_TRACING__) return !1;
   const e = t || ((n = k()) == null ? void 0 : n.getOptions());
@@ -1690,11 +1690,11 @@ function kt(t) {
   const d = mi(t.spanContext().traceId, e),
     p = s[z],
     l = r.description;
-  return p !== "url" && l && (d.transaction = l), At() && (d.sampled = String(Kt(n)), d.sample_rand = (i == null ? void 0 : i.get("sentry.sample_rand")) ?? ((m = an(n).scope) == null ? void 0 : m.getPropagationContext().sampleRand.toString())), c(d), e.emit("createDsc", d, n), d
+  return p !== "url" && l && (d.transaction = l), wt() && (d.sampled = String(Kt(n)), d.sample_rand = (i == null ? void 0 : i.get("sentry.sample_rand")) ?? ((m = an(n).scope) == null ? void 0 : m.getPropagationContext().sampleRand.toString())), c(d), e.emit("createDsc", d, n), d
 }
 class Pt {
   constructor(e = {}) {
-    this._traceId = e.traceId || wt(), this._spanId = e.spanId || ke()
+    this._traceId = e.traceId || At(), this._spanId = e.spanId || ke()
   }
   spanContext() {
     return {
@@ -2112,8 +2112,8 @@ function es(t) {
 const ns = 1e3;
 class hn {
   constructor(e = {}) {
-    this._traceId = e.traceId || wt(), this._spanId = e.spanId || ke(), this._startTime = e.startTimestamp || $(), this._links = e.links, this._attributes = {}, this.setAttributes({
-      [D]: "manual",
+    this._traceId = e.traceId || At(), this._spanId = e.spanId || ke(), this._startTime = e.startTimestamp || $(), this._links = e.links, this._attributes = {}, this.setAttributes({
+      [M]: "manual",
       [Tt]: e.op,
       ...e.attributes
     }), this._name = e.name, e.parentSpanId && (this._parentSpanId = e.parentSpanId), "sampled" in e && (this._sampled = e.sampled), e.endTimestamp && (this._endTime = e.endTimestamp), this._events = [], this._isStandaloneSpan = e.isStandalone, this._endTime && this._onSpanEnded()
@@ -2166,7 +2166,7 @@ class hn {
       status: fi(this._status),
       timestamp: this._endTime,
       trace_id: this._traceId,
-      origin: this._attributes[D],
+      origin: this._attributes[M],
       profile_id: this._attributes[hr],
       exclusive_time: this._attributes[ue],
       measurements: es(this._events),
@@ -2200,7 +2200,7 @@ class hn {
       return
     }
     const r = this._convertSpanToTransaction();
-    r && (an(this).scope || A()).captureEvent(r)
+    r && (an(this).scope || w()).captureEvent(r)
   }
   _convertSpanToTransaction() {
     var f;
@@ -2282,7 +2282,7 @@ function hc(t, e, n) {
 }
 
 function Sc(t, e, n) {
-  if (!At(t)) return [!1];
+  if (!wt(t)) return [!1];
   let r, s;
   typeof t.tracesSampler == "function" ? (s = t.tracesSampler({
     ...e,
@@ -2307,7 +2307,7 @@ function yc(t, e) {
     } = t,
     c = o == null ? void 0 : o.clone();
   return _n(c, () => bc(i)(() => {
-    const u = A(),
+    const u = w(),
       f = bi(u, i),
       p = t.onlyIfParent && !f ? new Pt : yi({
         parentSpan: f,
@@ -2338,7 +2338,7 @@ function Zt(t) {
       parentSpan: s
     } = t;
   return (t.scope ? o => _n(t.scope, o) : s !== void 0 ? o => br(s, o) : o => o())(() => {
-    const o = A(),
+    const o = w(),
       c = bi(o, s);
     return t.onlyIfParent && !c ? new Pt : yi({
       parentSpan: c,
@@ -2360,7 +2360,7 @@ function yi({
   forceTransaction: n,
   scope: r
 }) {
-  if (!At()) {
+  if (!wt()) {
     const o = new Pt;
     if (n || !t) {
       const c = {
@@ -2516,28 +2516,28 @@ function Ti(t, e = {}) {
       beforeSpanEnd: d
     } = e,
     p = k();
-  if (!p || !At()) {
+  if (!p || !wt()) {
     const y = new Pt,
-      w = {
+      A = {
         sample_rate: "0",
         sampled: "false",
         ...kt(y)
       };
-    return Ke(y, w), y
+    return Ke(y, A), y
   }
-  const l = A(),
+  const l = w(),
     m = J(),
-    _ = wc(t);
+    _ = Ac(t);
   _.end = new Proxy(_.end, {
-    apply(y, w, xt) {
-      if (d && d(_), w instanceof Pt) return;
+    apply(y, A, xt) {
+      if (d && d(_), A instanceof Pt) return;
       const [vt, ...It] = xt, pt = vt || $(), L = Ut(pt), B = Je(_).filter(O => O !== _);
-      if (!B.length) return K(L), Reflect.apply(y, w, [L, ...It]);
+      if (!B.length) return K(L), Reflect.apply(y, A, [L, ...It]);
       const Z = B.map(O => I(O).timestamp).filter(O => !!O),
         T = Z.length ? Math.max(...Z) : void 0,
         C = I(_).start_timestamp,
         v = Math.min(C ? C + u / 1e3 : 1 / 0, Math.max(C || -1 / 0, Math.min(L, T || 1 / 0)));
-      return K(v), Reflect.apply(y, w, [v, ...It])
+      return K(v), Reflect.apply(y, A, [v, ...It])
     }
   });
 
@@ -2559,25 +2559,25 @@ function Ti(t, e = {}) {
 
   function j(y) {
     b(), n.set(y, !0);
-    const w = $();
-    H(w + f / 1e3)
+    const A = $();
+    H(A + f / 1e3)
   }
 
   function lt(y) {
     if (n.has(y) && n.delete(y), n.size === 0) {
-      const w = $();
-      P(w + a / 1e3)
+      const A = $();
+      P(A + a / 1e3)
     }
   }
 
   function K(y) {
     r = !0, n.clear(), c.forEach(L => L()), re(l, m);
-    const w = I(_),
+    const A = I(_),
       {
         start_timestamp: xt
-      } = w;
+      } = A;
     if (!xt) return;
-    w.data[on] || _.setAttribute(on, i), g.log(`[Tracing] Idle span "${w.op}" finished`);
+    A.data[on] || _.setAttribute(on, i), g.log(`[Tracing] Idle span "${A.op}" finished`);
     const It = Je(_).filter(L => L !== _);
     let pt = 0;
     It.forEach(L => {
@@ -2614,9 +2614,9 @@ function Ti(t, e = {}) {
   }, u), _
 }
 
-function wc(t) {
+function Ac(t) {
   const e = Zt(t);
-  return re(A(), e), h && g.log("[Tracing] Started span is an idle span"), e
+  return re(w(), e), h && g.log("[Tracing] Started span is an idle span"), e
 }
 const On = 0,
   os = 1,
@@ -2717,7 +2717,7 @@ function Jn(t, e, n, r = 0) {
   })
 }
 
-function Ac(t, e) {
+function wc(t, e) {
   const {
     fingerprint: n,
     span: r,
@@ -2743,14 +2743,14 @@ function cs(t, e) {
     transactionName: l,
     span: m
   } = e;
-  He(t, "extra", n), He(t, "tags", r), He(t, "user", s), He(t, "contexts", i), t.sdkProcessingMetadata = Ae(t.sdkProcessingMetadata, c, 2), o && (t.level = o), l && (t.transactionName = l), m && (t.span = m), a.length && (t.breadcrumbs = [...t.breadcrumbs, ...a]), u.length && (t.fingerprint = [...t.fingerprint, ...u]), f.length && (t.eventProcessors = [...t.eventProcessors, ...f]), d.length && (t.attachments = [...t.attachments, ...d]), t.propagationContext = {
+  He(t, "extra", n), He(t, "tags", r), He(t, "user", s), He(t, "contexts", i), t.sdkProcessingMetadata = we(t.sdkProcessingMetadata, c, 2), o && (t.level = o), l && (t.transactionName = l), m && (t.span = m), a.length && (t.breadcrumbs = [...t.breadcrumbs, ...a]), u.length && (t.fingerprint = [...t.fingerprint, ...u]), f.length && (t.eventProcessors = [...t.eventProcessors, ...f]), d.length && (t.attachments = [...t.attachments, ...d]), t.propagationContext = {
     ...t.propagationContext,
     ...p
   }
 }
 
 function He(t, e, n) {
-  t[e] = Ae(t[e], n, 1)
+  t[e] = we(t[e], n, 1)
 }
 
 function kc(t, e) {
@@ -2854,7 +2854,7 @@ function xc(t, e, n, r, s, i) {
     cs(p, b)
   }
   const l = [...n.attachments || [], ...p.attachments];
-  l.length && (n.attachments = l), Ac(a, p);
+  l.length && (n.attachments = l), wc(a, p);
   const m = [...d, ...p.eventProcessors];
   return Jn(m, a, n).then(b => (b && Fc(b), typeof o == "number" && o > 0 ? Hc(b, o, c) : b))
 }
@@ -2961,11 +2961,11 @@ function Gc(t) {
 }
 
 function vi(t, e) {
-  return A().captureException(t, Uc(e))
+  return w().captureException(t, Uc(e))
 }
 
 function Ii(t, e) {
-  return A().captureEvent(t, e)
+  return w().captureEvent(t, e)
 }
 
 function Vc() {
@@ -2975,7 +2975,7 @@ function Vc() {
 
 function ds(t) {
   const e = Jt(),
-    n = A(),
+    n = w(),
     {
       userAgent: r
     } = R.navigator || {},
@@ -2994,11 +2994,11 @@ function ds(t) {
 
 function Ri() {
   const t = Jt(),
-    n = A().getSession() || t.getSession();
-  n && da(n), wi(), t.setSession()
+    n = w().getSession() || t.getSession();
+  n && da(n), Ai(), t.setSession()
 }
 
-function wi() {
+function Ai() {
   const t = Jt(),
     e = k(),
     n = t.getSession();
@@ -3010,7 +3010,7 @@ function fs(t = !1) {
     Ri();
     return
   }
-  wi()
+  Ai()
 }
 const Wc = "7";
 
@@ -3064,7 +3064,7 @@ function Zc(t) {
 function Qc(t, e) {
   const n = {};
   return e.forEach(r => {
-    r && Ai(t, r, n)
+    r && wi(t, r, n)
   }), n
 }
 
@@ -3072,7 +3072,7 @@ function ps(t, e) {
   for (const n of e) n != null && n.afterAllSetup && n.afterAllSetup(t)
 }
 
-function Ai(t, e, n) {
+function wi(t, e, n) {
   if (n[e.name]) {
     h && g.log(`Integration skipped because it was already installed: ${e.name}`);
     return
@@ -3278,7 +3278,7 @@ class ru {
   }
   addIntegration(e) {
     const n = this._integrations[e.name];
-    Ai(this, e, this._integrations), n || ps(this, [e])
+    wi(this, e, this._integrations), n || ps(this, [e])
   }
   sendEvent(e, n = {}) {
     this.emit("beforeSendEvent", e, n);
@@ -3387,7 +3387,7 @@ class ru {
       }, c
     })
   }
-  _captureEvent(e, n = {}, r = A(), s = Jt()) {
+  _captureEvent(e, n = {}, r = w(), s = Jt()) {
     return h && Kn(e) && g.log(`Captured error event \`${ki(e)[0]||"<unknown>"}\``), this._processEvent(e, n, r, s).then(i => i.event_id, i => {
       h && (hs(i) ? g.log(i.message) : _s(i) ? g.warn(i.message) : g.warn(i))
     })
@@ -3506,7 +3506,7 @@ function iu(t, e, n, r) {
       if (c != null && c.length && Xn(u, c)) return null;
       if (o) {
         const f = o(u);
-        f ? a = Ae(n, nu(f)) : Wn()
+        f ? a = we(n, nu(f)) : Wn()
       }
       if (a.spans) {
         const f = [],
@@ -3584,13 +3584,13 @@ function Oi() {
 function uu(t, e) {
   e.debug === !0 && (h ? g.enable() : Yt(() => {
     console.warn("[Sentry] Cannot initialize SDK with `debug` option using a non-debug bundle.")
-  })), A().update(e.initialScope);
+  })), w().update(e.initialScope);
   const r = new t(e);
   return du(r), r.init(), r
 }
 
 function du(t) {
-  A().setClient(t)
+  w().setClient(t)
 }
 const Li = Symbol.for("SentryBufferFullError");
 
@@ -3772,11 +3772,11 @@ function Mi(t = {}) {
   const n = zt(),
     r = ce(n);
   if (r.getTraceData) return r.getTraceData(t);
-  const s = t.scope || A(),
+  const s = t.scope || w(),
     i = t.span || J(),
     o = i ? ja(i) : vu(s),
     c = i ? kt(i) : gi(e, s),
-    a = Aa(c);
+    a = wa(c);
   if (!oi.test(o)) return g.warn("Invalid sentry-trace data. Cannot generate trace data"), {};
   const f = {
     "sentry-trace": o,
@@ -3825,10 +3825,10 @@ function Wt(t, e) {
   a !== null && (n.emit && n.emit("beforeAddBreadcrumb", a, e), r.addBreadcrumb(a, i))
 }
 let Ss;
-const wu = "FunctionToString",
+const Au = "FunctionToString",
   ys = new WeakMap,
-  Au = (() => ({
-    name: wu,
+  wu = (() => ({
+    name: Au,
     setupOnce() {
       Ss = Function.prototype.toString;
       try {
@@ -3843,7 +3843,7 @@ const wu = "FunctionToString",
       ys.set(t, !0)
     }
   })),
-  ku = Au,
+  ku = wu,
   Pu = [/^Script error\.?$/, /^Javascript error: Script error\.? on line 0$/, /^ResizeObserver loop completed with undelivered notifications.$/, /^Cannot redefine property: googletag$/, /^Can't find variable: gmo$/, /^undefined is not an object \(evaluating 'a\.[A-Z]'\)$/, `can't redefine non-configurable property "solana"`, "vv().getRestrictions is not a function. (In 'vv().getRestrictions(1,a)', 'vv().getRestrictions' is undefined)", "Can't find variable: _AutofillCallbackHandler", /^Non-Error promise rejection captured with value: Object Not Found Matching Id:\d+, MethodName:simulateEvent, ParamCount:\d+$/, /^Java exception was raised during method invocation$/],
   Nu = "EventFilters",
   Cu = (t = {}) => {
@@ -4089,7 +4089,7 @@ function Ju(t, e, n, r, s) {
   const {
     method: i,
     url: o
-  } = t.fetchData, c = At() && e(o);
+  } = t.fetchData, c = wt() && e(o);
   if (t.endTimestamp && c) {
     const l = t.fetchData.__span;
     if (!l) return;
@@ -4106,7 +4106,7 @@ function Ju(t, e, n, r, s) {
   if (t.fetchData.__span = d.spanContext().spanId, r[d.spanContext().spanId] = d, n(t.fetchData.url)) {
     const l = t.args[0],
       m = t.args[1] || {},
-      _ = Ku(l, m, At() && f ? d : void 0, u);
+      _ = Ku(l, m, wt() && f ? d : void 0, u);
     _ && (t.args[1] = m, m.headers = _)
   }
   const p = k();
@@ -4200,7 +4200,7 @@ function ed(t, e, n, r) {
     url: t,
     type: "fetch",
     "http.method": n,
-    [D]: r,
+    [M]: r,
     [Tt]: "http.client"
   };
   return e && (xi(e) || (s["http.url"] = e.href, s["server.address"] = e.host), e.search && (s["http.query"] = e.search), e.hash && (s["http.fragment"] = e.hash)), s
@@ -4426,7 +4426,7 @@ function ie(t, e = {}) {
 }
 
 function Ir() {
-  const t = we(),
+  const t = Ae(),
     {
       referrer: e
     } = E.document || {},
@@ -4448,7 +4448,7 @@ function Ir() {
 }
 
 function Rr(t, e) {
-  const n = wr(t, e),
+  const n = Ar(t, e),
     r = {
       type: _d(e),
       value: hd(e)
@@ -4483,7 +4483,7 @@ function ld(t, e, n, r) {
     extra: c
   };
   if (n) {
-    const u = wr(t, n);
+    const u = Ar(t, n);
     u.length && (a.exception.values[0].stacktrace = {
       frames: u
     })
@@ -4499,7 +4499,7 @@ function Dn(t, e) {
   }
 }
 
-function wr(t, e) {
+function Ar(t, e) {
   const n = e.stacktrace || e.stack || "",
     r = md(e),
     s = gd(e);
@@ -4534,7 +4534,7 @@ function hd(t) {
 
 function Sd(t, e, n, r) {
   const s = (n == null ? void 0 : n.syntheticException) || void 0,
-    i = Ar(t, e, s, r);
+    i = wr(t, e, s, r);
   return ee(i), i.level = "error", n != null && n.event_id && (i.event_id = n.event_id), Vt(i)
 }
 
@@ -4544,7 +4544,7 @@ function yd(t, e, n = "info", r, s) {
   return o.level = n, r != null && r.event_id && (o.event_id = r.event_id), Vt(o)
 }
 
-function Ar(t, e, n, r, s) {
+function wr(t, e, n, r, s) {
   let i;
   if (Vs(e) && e.error) return Dn(t, e.error);
   if (Ur(e) || Zo(e)) {
@@ -4570,7 +4570,7 @@ function Ar(t, e, n, r, s) {
 function nr(t, e, n, r) {
   const s = {};
   if (r && n) {
-    const i = wr(t, n);
+    const i = Ar(t, n);
     i.length && (s.exception = {
       values: [{
         value: e,
@@ -4664,14 +4664,14 @@ function Rd(t) {
 }
 const Sn = typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__,
   S = R,
-  wd = (t, e) => t > e[1] ? "poor" : t > e[0] ? "needs-improvement" : "good",
+  Ad = (t, e) => t > e[1] ? "poor" : t > e[0] ? "needs-improvement" : "good",
   Oe = (t, e, n, r) => {
     let s, i;
     return o => {
-      e.value >= 0 && (o || r) && (i = e.value - (s ?? 0), (i || s === void 0) && (s = e.value, e.delta = i, e.rating = wd(e.value, n), t(e)))
+      e.value >= 0 && (o || r) && (i = e.value - (s ?? 0), (i || s === void 0) && (s = e.value, e.delta = i, e.rating = Ad(e.value, n), t(e)))
     }
   },
-  Ad = () => `v5-${Date.now()}-${Math.floor(Math.random()*(9e12-1))+1e12}`,
+  wd = () => `v5-${Date.now()}-${Math.floor(Math.random()*(9e12-1))+1e12}`,
   Le = (t = !0) => {
     var n, r;
     const e = (r = (n = S.performance) == null ? void 0 : n.getEntriesByType) == null ? void 0 : r.call(n, "navigation")[0];
@@ -4691,7 +4691,7 @@ const Sn = typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__,
       rating: "good",
       delta: 0,
       entries: [],
-      id: Ad(),
+      id: wd(),
       navigationType: r
     }
   },
@@ -5073,7 +5073,7 @@ function Or(t) {
     release: o,
     environment: c,
     sendDefaultPii: a
-  } = e.getOptions(), u = e.getIntegrationByName("Replay"), f = u == null ? void 0 : u.getReplayId(), d = A(), p = d.getUser(), l = p !== void 0 ? p.email || p.id || p.ip_address : void 0;
+  } = e.getOptions(), u = e.getIntegrationByName("Replay"), f = u == null ? void 0 : u.getReplayId(), d = w(), p = d.getUser(), l = p !== void 0 ? p.email || p.id || p.ip_address : void 0;
   let m;
   try {
     m = d.getScopeData().contexts.profile.profile_id
@@ -5103,7 +5103,7 @@ function bn() {
   return S.addEventListener && S.performance
 }
 
-function x(t) {
+function D(t) {
   return t / 1e3
 }
 
@@ -5175,11 +5175,11 @@ function tf(t) {
 function ef(t, e, n, r) {
   var u;
   Sn && g.log(`Sending CLS span (${t})`);
-  const s = x((X() || 0) + ((e == null ? void 0 : e.startTime) || 0)),
-    i = A().getScopeData().transactionName,
+  const s = D((X() || 0) + ((e == null ? void 0 : e.startTime) || 0)),
+    i = w().getScopeData().transactionName,
     o = e ? dt((u = e.sources[0]) == null ? void 0 : u.node) : "Layout shift",
     c = {
-      [D]: "auto.http.browser.cls",
+      [M]: "auto.http.browser.cls",
       [Tt]: "ui.webvital.cls",
       [ue]: (e == null ? void 0 : e.duration) || 0,
       "sentry.pageload.span_id": n,
@@ -5217,11 +5217,11 @@ function nf(t) {
 
 function rf(t, e, n, r) {
   Sn && g.log(`Sending LCP span (${t})`);
-  const s = x((X() || 0) + ((e == null ? void 0 : e.startTime) || 0)),
-    i = A().getScopeData().transactionName,
+  const s = D((X() || 0) + ((e == null ? void 0 : e.startTime) || 0)),
+    i = w().getScopeData().transactionName,
     o = e ? dt(e.element) : "Largest contentful paint",
     c = {
-      [D]: "auto.http.browser.lcp",
+      [M]: "auto.http.browser.lcp",
       [Tt]: "ui.webvital.lcp",
       [ue]: 0,
       "sentry.pageload.span_id": n,
@@ -5240,7 +5240,7 @@ function rf(t, e, n, r) {
   }), a.end(s))
 }
 const sf = 2147483647;
-let ws = 0,
+let As = 0,
   ot = {},
   G, Qt;
 
@@ -5273,13 +5273,13 @@ function af() {
       start_timestamp: r
     } = I(e);
     for (const s of t) {
-      const i = x(X() + s.startTime),
-        o = x(s.duration);
+      const i = D(X() + s.startTime),
+        o = D(s.duration);
       n === "navigation" && r && i < r || Ct(e, i, i + o, {
         name: "Main UI thread blocked",
         op: "ui.long-task",
         attributes: {
-          [D]: "auto.ui.browser.metrics"
+          [M]: "auto.ui.browser.metrics"
         }
       })
     }
@@ -5292,15 +5292,15 @@ function cf() {
     if (n)
       for (const r of e.getEntries()) {
         if (!r.scripts[0]) continue;
-        const s = x(X() + r.startTime),
+        const s = D(X() + r.startTime),
           {
             start_timestamp: i,
             op: o
           } = I(n);
         if (o === "navigation" && i && s < i) continue;
-        const c = x(r.duration),
+        const c = D(r.duration),
           a = {
-            [D]: "auto.ui.browser.metrics"
+            [M]: "auto.ui.browser.metrics"
           },
           u = r.scripts[0],
           {
@@ -5330,14 +5330,14 @@ function uf() {
     if (e) {
       for (const n of t)
         if (n.name === "click") {
-          const r = x(X() + n.startTime),
-            s = x(n.duration),
+          const r = D(X() + n.startTime),
+            s = D(n.duration),
             i = {
               name: dt(n.target),
               op: `ui.interaction.${n.name}`,
               startTime: r,
               attributes: {
-                [D]: "auto.ui.browser.metrics"
+                [M]: "auto.ui.browser.metrics"
               }
             },
             o = Ys(n.target);
@@ -5386,15 +5386,15 @@ function pf(t, e) {
   const n = bn(),
     r = X();
   if (!(n != null && n.getEntries) || !r) return;
-  const s = x(r),
+  const s = D(r),
     i = n.getEntries(),
     {
       op: o,
       start_timestamp: c
     } = I(t);
-  i.slice(ws).forEach(a => {
-    const u = x(a.startTime),
-      f = x(Math.max(0, a.duration));
+  i.slice(As).forEach(a => {
+    const u = D(a.startTime),
+      f = D(Math.max(0, a.duration));
     if (!(o === "navigation" && c && s + u < c)) switch (a.entryType) {
       case "navigation": {
         _f(t, a, s);
@@ -5420,7 +5420,7 @@ function pf(t, e) {
         break
       }
     }
-  }), ws = Math.max(i.length - 1, 0), Ef(t), o === "pageload" && (Tf(ot), e.recordClsOnPageloadSpan || delete ot.cls, e.recordLcpOnPageloadSpan || delete ot.lcp, Object.entries(ot).forEach(([a, u]) => {
+  }), As = Math.max(i.length - 1, 0), Ef(t), o === "pageload" && (Tf(ot), e.recordClsOnPageloadSpan || delete ot.cls, e.recordLcpOnPageloadSpan || delete ot.lcp, Object.entries(ot).forEach(([a, u]) => {
     pc(a, u.value, u.unit)
   }), t.setAttribute("performance.timeOrigin", s), t.setAttribute("performance.activationStart", fe()), bf(t, e)), G = void 0, Qt = void 0, ot = {}
 }
@@ -5428,12 +5428,12 @@ function pf(t, e) {
 function mf(t, e, n, r, s, i) {
   if (["mark", "measure"].includes(e.entryType) && Rt(e.name, i)) return;
   const o = Le(!1),
-    c = x(o ? o.requestStart : 0),
+    c = D(o ? o.requestStart : 0),
     a = s + Math.max(n, c),
     u = s + n,
     f = u + r,
     d = {
-      [D]: "auto.resource.browser.metrics"
+      [M]: "auto.resource.browser.metrics"
     };
   a !== u && (d["sentry.browser.measure_happened_before_request"] = !0, d["sentry.browser.measure_start_time"] = a), gf(d, e), a <= f && Ct(t, a, f, {
     name: e.name,
@@ -5474,11 +5474,11 @@ function Ge(t, e, n, r, s = n) {
   const i = hf(n),
     o = e[i],
     c = e[`${n}Start`];
-  !c || !o || Ct(t, r + x(c), r + x(o), {
+  !c || !o || Ct(t, r + D(c), r + D(o), {
     op: `browser.${s}`,
     name: e.name,
     attributes: {
-      [D]: "auto.ui.browser.metrics",
+      [M]: "auto.ui.browser.metrics",
       ...n === "redirect" && e.redirectCount != null ? {
         "http.redirect_count": e.redirectCount
       } : {}
@@ -5491,20 +5491,20 @@ function hf(t) {
 }
 
 function Sf(t, e, n) {
-  const r = n + x(e.requestStart),
-    s = n + x(e.responseEnd),
-    i = n + x(e.responseStart);
+  const r = n + D(e.requestStart),
+    s = n + D(e.responseEnd),
+    i = n + D(e.responseStart);
   e.responseEnd && (Ct(t, r, s, {
     op: "browser.request",
     name: e.name,
     attributes: {
-      [D]: "auto.ui.browser.metrics"
+      [M]: "auto.ui.browser.metrics"
     }
   }), Ct(t, i, s, {
     op: "browser.response",
     name: e.name,
     attributes: {
-      [D]: "auto.ui.browser.metrics"
+      [M]: "auto.ui.browser.metrics"
     }
   }))
 }
@@ -5515,7 +5515,7 @@ function yf(t, e, n, r, s, i, o) {
   if (o != null && o.includes(c)) return;
   const a = qt(n),
     u = {
-      [D]: "auto.resource.browser.metrics"
+      [M]: "auto.resource.browser.metrics"
     };
   Bn(u, e, "transferSize", "http.response_transfer_size"), Bn(u, e, "encodedBodySize", "http.response_content_length"), Bn(u, e, "decodedBodySize", "http.decoded_response_content_length");
   const f = e.deliveryType;
@@ -5577,7 +5577,7 @@ const If = ({
   }) => {
     const e = J(),
       n = e ? U(e) : void 0,
-      r = n ? I(n).description : A().getScopeData().transactionName;
+      r = n ? I(n).description : w().getScopeData().transactionName;
     t.forEach(s => {
       var l, m;
       const i = s;
@@ -5585,10 +5585,10 @@ const If = ({
       const o = i.name,
         c = i.renderTime,
         a = i.loadTime,
-        [u, f] = a ? [x(a), "load-time"] : c ? [x(c), "render-time"] : [$(), "entry-emission"],
-        d = o === "image-paint" ? x(Math.max(0, (c ?? 0) - (a ?? 0))) : 0,
+        [u, f] = a ? [D(a), "load-time"] : c ? [D(c), "render-time"] : [$(), "entry-emission"],
+        d = o === "image-paint" ? D(Math.max(0, (c ?? 0) - (a ?? 0))) : 0,
         p = {
-          [D]: "auto.ui.browser.elementtiming",
+          [M]: "auto.ui.browser.elementtiming",
           [Tt]: "ui.elementtiming",
           [z]: "component",
           "sentry.span_start_time_source": f,
@@ -5613,13 +5613,13 @@ const If = ({
     })
   },
   Rf = 1e3;
-let As, ir, or;
+let ws, ir, or;
 
-function wf(t) {
-  Ot("dom", t), Lt("dom", Af)
+function Af(t) {
+  Ot("dom", t), Lt("dom", wf)
 }
 
-function Af() {
+function wf() {
   if (!S.document) return;
   const t = nt.bind(null, "dom"),
     e = ks(t, !0);
@@ -5677,7 +5677,7 @@ function ks(t, e = !1) {
       event: n,
       name: s,
       global: e
-    }), ir = n.type, or = r ? r._sentryId : void 0), clearTimeout(As), As = S.setTimeout(() => {
+    }), ir = n.type, or = r ? r._sentryId : void 0), clearTimeout(ws), ws = S.setTimeout(() => {
       or = void 0, ir = void 0
     }, Rf)
   }
@@ -5871,14 +5871,14 @@ const Hf = ({
   metric: t
 }) => {
   if (t.value == null) return;
-  const e = x(t.value);
+  const e = D(t.value);
   if (e > Mf) return;
   const n = t.entries.find(m => m.duration === t.value && Ns[m.name]);
   if (!n) return;
   const {
     interactionId: r
-  } = n, s = Ns[n.name], i = x(X() + n.startTime), o = J(), c = o ? U(o) : void 0, u = (r != null ? en.get(r) : void 0) || c, f = u ? I(u).description : A().getScopeData().transactionName, d = dt(n.target), p = {
-    [D]: "auto.http.browser.inp",
+  } = n, s = Ns[n.name], i = D(X() + n.startTime), o = J(), c = o ? U(o) : void 0, u = (r != null ? en.get(r) : void 0) || c, f = u ? I(u).description : w().getScopeData().transactionName, d = dt(n.target), p = {
+    [M]: "auto.http.browser.inp",
     [Tt]: `ui.interaction.${s}`,
     [ue]: n.duration
   }, l = Or({
@@ -6019,7 +6019,7 @@ const Gf = /^\s*at (\S+?)(?::(\d+))(?::(\d+))\s*$/i,
     return {
       name: nl,
       setup(n) {
-        e.console && Uu(al(n)), e.dom && wf(ol(n, e.dom)), e.xhr && io(cl(n)), e.fetch && Bi(ul(n)), e.history && Lr(dl(n)), e.sentry && n.on("beforeSendEvent", il(n))
+        e.console && Uu(al(n)), e.dom && Af(ol(n, e.dom)), e.xhr && io(cl(n)), e.fetch && Bi(ul(n)), e.history && Lr(dl(n)), e.sentry && n.on("beforeSendEvent", il(n))
       }
     }
   }),
@@ -6339,7 +6339,7 @@ const bl = () => ({
         Error.stackTraceLimit = 50
       },
       setup(n) {
-        e.onerror && (Rl(n), Os("onerror")), e.onunhandledrejection && (wl(n), Os("onunhandledrejection"))
+        e.onerror && (Rl(n), Os("onerror")), e.onunhandledrejection && (Al(n), Os("onunhandledrejection"))
       }
     }
   }),
@@ -6358,7 +6358,7 @@ function Rl(t) {
       line: o,
       column: c,
       error: a
-    } = e, u = Pl(Ar(n, a || s, void 0, r, !1), i, o, c);
+    } = e, u = Pl(wr(n, a || s, void 0, r, !1), i, o, c);
     u.level = "error", Ii(u, {
       originalException: a,
       mechanism: {
@@ -6369,15 +6369,15 @@ function Rl(t) {
   })
 }
 
-function wl(t) {
+function Al(t) {
   qs(e => {
     const {
       stackParser: n,
       attachStacktrace: r
     } = ao();
     if (k() !== t || ji()) return;
-    const s = Al(e),
-      i = ye(s) ? kl(s) : Ar(n, s, void 0, r, !0);
+    const s = wl(e),
+      i = ye(s) ? kl(s) : wr(n, s, void 0, r, !0);
     i.level = "error", Ii(i, {
       originalException: s,
       mechanism: {
@@ -6388,7 +6388,7 @@ function wl(t) {
   })
 }
 
-function Al(t) {
+function wl(t) {
   if (ye(t)) return t;
   try {
     if ("reason" in t) return t.reason;
@@ -6416,7 +6416,7 @@ function Pl(t, e, n, r) {
     a = c.frames = c.frames || [],
     u = r,
     f = n,
-    d = Nl(e) ?? we();
+    d = Nl(e) ?? Ae();
   return a.length === 0 && a.push({
     colno: u,
     filename: d,
@@ -6495,7 +6495,7 @@ function $l() {
   if (t.nw) return !1;
   const e = t.chrome || t.browser;
   if (!((i = e == null ? void 0 : e.runtime) != null && i.id)) return !1;
-  const n = we(),
+  const n = Ae(),
     r = ["chrome-extension", "moz-extension", "ms-browser-extension", "safari-web-extension"];
   return !(E === E.top && r.some(o => n.startsWith(`${o}://`)))
 }
@@ -6625,7 +6625,7 @@ function xs(t) {
 }
 
 function ql(t, e) {
-  const n = we();
+  const n = Ae();
   if (n) {
     let r, s;
     try {
@@ -6648,7 +6648,7 @@ function Gl(t, e, n, r, s) {
   const {
     url: c,
     method: a
-  } = o, u = At() && e(c);
+  } = o, u = wt() && e(c);
   if (t.endTimestamp && u) {
     const b = i.__sentry_xhr_span_id__;
     if (!b) return;
@@ -6668,7 +6668,7 @@ function Gl(t, e, n, r, s) {
         "http.method": a,
         "http.url": f,
         "server.address": d == null ? void 0 : d.host,
-        [D]: "auto.http.browser",
+        [M]: "auto.http.browser",
         [Tt]: "http.client",
         ...(d == null ? void 0 : d.search) && {
           "http.query": d == null ? void 0 : d.search
@@ -6678,7 +6678,7 @@ function Gl(t, e, n, r, s) {
         }
       }
     }) : new Pt;
-  i.__sentry_xhr_span_id__ = m.spanContext().spanId, r[i.__sentry_xhr_span_id__] = m, n(c) && Vl(i, At() && l ? m : void 0, s);
+  i.__sentry_xhr_span_id__ = m.spanContext().spanId, r[i.__sentry_xhr_span_id__] = m, n(c) && Vl(i, wt() && l ? m : void 0, s);
   const _ = k();
   return _ && _.emit("beforeOutgoingRequestSpan", m, t), m
 }
@@ -6748,13 +6748,13 @@ function Kl(t, {
   let s = r ? tp() : void 0;
   t.on("spanStart", o => {
     if (U(o) !== o) return;
-    const c = A().getPropagationContext();
+    const c = w().getPropagationContext();
     s = Zl(s, o, c), r && Ql(s)
   });
   let i = !0;
   n && t.on("beforeSampling", o => {
     if (!s) return;
-    const c = A(),
+    const c = w(),
       a = c.getPropagationContext();
     if (i && a.parentSpanId) {
       i = !1;
@@ -6870,7 +6870,7 @@ const ep = "BrowserTracing",
         ignoreResourceSpans: lt,
         ignorePerformanceApiSpans: K,
         instrumentPageLoad: y,
-        instrumentNavigation: w,
+        instrumentNavigation: A,
         detectRedirects: xt,
         linkPreviousTrace: vt,
         consistentTraceSampling: It,
@@ -6907,7 +6907,7 @@ const ep = "BrowserTracing",
             ignoreResourceSpans: lt,
             ignorePerformanceApiSpans: K
           }), Ms(T, void 0);
-          const gt = A(),
+          const gt = w(),
             pe = gt.getPropagationContext();
           gt.setPropagationContext({
             ...pe,
@@ -6959,12 +6959,12 @@ const ep = "BrowserTracing",
             return
           }
           B = void 0, C(), Jt().setPropagationContext({
-            traceId: wt(),
+            traceId: At(),
             sampleRand: Math.random()
           });
-          const N = A();
+          const N = w();
           N.setPropagationContext({
-            traceId: wt(),
+            traceId: At(),
             sampleRand: Math.random()
           }), N.setSDKProcessingMetadata({
             normalizedRequest: void 0
@@ -6978,7 +6978,7 @@ const ep = "BrowserTracing",
           const N = O.sentryTrace || Ds("sentry-trace"),
             Q = O.baggage || Ds("baggage"),
             at = $a(N, Q),
-            mt = A();
+            mt = w();
           mt.setPropagationContext(at), mt.setSDKProcessingMetadata({
             normalizedRequest: Ir()
           }), Z(T, {
@@ -6988,7 +6988,7 @@ const ep = "BrowserTracing",
         })
       },
       afterAllSetup(T) {
-        let C = we();
+        let C = Ae();
         if (vt !== "off" && Kl(T, {
             linkPreviousTrace: vt,
             consistentTraceSampling: It
@@ -7000,11 +7000,11 @@ const ep = "BrowserTracing",
               startTime: v ? v / 1e3 : void 0,
               attributes: {
                 [z]: "url",
-                [D]: "auto.pageload.browser"
+                [M]: "auto.pageload.browser"
               }
             })
           }
-          w && Lr(({
+          A && Lr(({
             to: v,
             from: O
           }) => {
@@ -7020,7 +7020,7 @@ const ep = "BrowserTracing",
               name: (N == null ? void 0 : N.pathname) || E.location.pathname,
               attributes: {
                 [z]: "url",
-                [D]: "auto.navigation.browser"
+                [M]: "auto.navigation.browser"
               }
             }, {
               url: v,
@@ -7042,7 +7042,7 @@ const ep = "BrowserTracing",
   });
 
 function lo(t, e, n) {
-  t.emit("startPageLoadSpan", e, n), A().setTransactionName(e.name);
+  t.emit("startPageLoadSpan", e, n), w().setTransactionName(e.name);
   const r = ve(t);
   return r && t.emit("afterStartPageLoadSpan", r), r
 }
@@ -7057,7 +7057,7 @@ function po(t, e, n) {
   }), t.emit("startNavigationSpan", e, {
     isRedirect: s
   });
-  const i = A();
+  const i = w();
   return i.setTransactionName(e.name), r && !s && i.setSDKProcessingMetadata({
     normalizedRequest: {
       ...Ir(),
@@ -7175,7 +7175,7 @@ function dp(t) {
       name: e,
       op: "pageload",
       attributes: {
-        [D]: "auto.pageload.sveltekit",
+        [M]: "auto.pageload.sveltekit",
         [z]: "url"
       }
     });
@@ -7183,7 +7183,7 @@ function dp(t) {
     var o;
     if (!s) return;
     const i = (o = s.route) == null ? void 0 : o.id;
-    i && (n.updateName(i), n.setAttribute(z, "route"), A().setTransactionName(i))
+    i && (n.updateName(i), n.setAttribute(z, "route"), w().setTransactionName(i))
   })
 }
 
@@ -7212,7 +7212,7 @@ function fp(t) {
       name: a || o || "unknown",
       op: "navigation",
       attributes: {
-        [D]: "auto.navigation.sveltekit",
+        [M]: "auto.navigation.sveltekit",
         [z]: a ? "route" : "url",
         ...u
       }
@@ -7220,7 +7220,7 @@ function fp(t) {
       op: "ui.sveltekit.routing",
       name: "SvelteKit Route Change",
       attributes: {
-        [D]: "auto.ui.sveltekit",
+        [M]: "auto.ui.sveltekit",
         ...u
       },
       onlyIfParent: !0
@@ -7296,15 +7296,15 @@ function Tp(t, e) {
     s = ge(e, "data_1", 3, null),
     i = ge(e, "data_2", 3, null),
     o = ge(e, "data_3", 3, null);
-  Ro(() => e.stores.page.set(e.page)), wo(() => {
+  Ro(() => e.stores.page.set(e.page)), Ao(() => {
     e.stores, e.page, e.constructors, n(), e.form, r(), s(), i(), o(), e.stores.page.notify()
   });
-  let c = An(!1),
-    a = An(!1),
-    u = An(null);
+  let c = wn(!1),
+    a = wn(!1),
+    u = wn(null);
   $o(() => {
     const P = e.stores.page.subscribe(() => {
-      V(c) && (ze(a, !0), Ao().then(() => {
+      V(c) && (ze(a, !0), wo().then(() => {
         ze(u, document.title || "untitled page", !0)
       }))
     });
@@ -7329,7 +7329,7 @@ function Tp(t, e) {
             get params() {
               return e.page.params
             },
-            children: (w, xt) => {
+            children: (A, xt) => {
               var vt = _t(),
                 It = ct(vt);
               {
@@ -7457,14 +7457,14 @@ function Tp(t, e) {
                   e.constructors[2] ? B(pt) : B(L, !1)
                 })
               }
-              tt(w, vt)
+              tt(A, vt)
             },
             $$slots: {
               default: !0
             }
-          }), w => n()[0] = w, () => {
-            var w;
-            return (w = n()) == null ? void 0 : w[0]
+          }), A => n()[0] = A, () => {
+            var A;
+            return (A = n()) == null ? void 0 : A[0]
           })
         }), tt(P, j)
       },
@@ -7483,9 +7483,9 @@ function Tp(t, e) {
             get params() {
               return e.page.params
             }
-          }), w => n()[0] = w, () => {
-            var w;
-            return (w = n()) == null ? void 0 : w[0]
+          }), A => n()[0] = A, () => {
+            var A;
+            return (A = n()) == null ? void 0 : A[0]
           })
         }), tt(P, j)
       };
@@ -7516,26 +7516,27 @@ function Tp(t, e) {
   tt(t, d), Po()
 }
 const Fp = Ho(Tp),
-  $p = [() => M(() => import("../nodes/0.CGaJYzeu.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]), import.meta.url), () => M(() => import("../nodes/1.DxDAqPjK.js"), __vite__mapDeps([16, 1, 14, 3, 4, 5, 17, 18, 19, 2]), import.meta.url), () => M(() => import("../nodes/2.B-VhiNrl.js"), __vite__mapDeps([20, 1, 3, 4, 5, 2, 21, 10, 11, 18, 19, 22, 9, 23]), import.meta.url), () => M(() => import("../nodes/3.3j9Y-DwZ.js"), __vite__mapDeps([24, 1, 3, 4, 5, 2, 21, 10, 11, 18, 19, 23]), import.meta.url), () => M(() => import("../nodes/4.qgPLbpa6.js"), __vite__mapDeps([25, 1, 2, 3, 4, 5, 9, 11, 21, 10, 18, 19, 6, 7, 8, 26, 12, 27, 28, 29, 30, 31, 23, 32, 33, 34, 35, 36, 14, 17, 22, 13, 37, 38, 39, 40, 41, 42, 43]), import.meta.url), () => M(() => import("../nodes/5.D1GO8viU.js"), __vite__mapDeps([44, 1, 14, 3, 22, 9, 11]), import.meta.url), () => M(() => import("../nodes/6.DbB0HyyK.js"), __vite__mapDeps([45, 1, 14, 3, 2, 4, 5, 17, 7, 19]), import.meta.url), () => M(() => import("../nodes/7.BGSStNIQ.js"), __vite__mapDeps([46, 1, 2, 3, 4, 5, 9, 10, 11, 28, 19, 6, 7, 40, 47, 48, 49]), import.meta.url), () => M(() => import("../nodes/8.CDZ8SvfF.js"), __vite__mapDeps([50, 1, 14, 3, 5, 7, 19, 2, 4]), import.meta.url), () => M(() => import("../nodes/9.BzJyqEPh.js"), __vite__mapDeps([51, 1, 2, 3, 4, 5, 9, 10, 11, 28, 19, 6, 7, 29, 26, 40, 48, 52, 53, 49]), import.meta.url), () => M(() => import("../nodes/10.DHPtcsZv.js"), __vite__mapDeps([54, 1, 2, 3, 4, 5, 9, 10, 11, 28, 19, 6, 7, 29, 26, 40, 48, 52, 53, 49]), import.meta.url), () => M(() => import("../nodes/11.DiB8Q8EV.js"), __vite__mapDeps([55, 1, 3, 4, 5, 9, 21, 10, 11, 28, 19, 2, 18, 6, 7, 27, 12, 29, 26, 30, 31, 23, 32, 56, 40, 42, 57, 48, 53]), import.meta.url), () => M(() => import("../nodes/12._7ahtyQf.js"), __vite__mapDeps([58, 1, 2, 3, 4, 5, 9, 19, 18, 6, 7, 37, 11, 12, 22, 38, 59]), import.meta.url), () => M(() => import("../nodes/13.CsYwycS1.js"), __vite__mapDeps([60, 1, 2, 3, 4, 5, 9, 21, 10, 11, 19, 18, 6, 7, 29, 26, 34, 32, 56, 40, 42, 33, 47, 31]), import.meta.url), () => M(() => import("../nodes/14.DiWiys6-.js"), __vite__mapDeps([61, 1, 14, 3, 4, 5, 17, 22, 9, 11, 40, 41, 7, 42]), import.meta.url), () => M(() => import("../nodes/15.4vNIFUXL.js"), __vite__mapDeps([62, 1, 2, 3, 4, 5, 9, 26, 18, 19, 6, 7, 22, 11, 59]), import.meta.url), () => M(() => import("../nodes/16.tv-XO1Ey.js"), __vite__mapDeps([63, 1, 3, 4, 5, 9, 10, 11, 28, 12, 19, 2, 6, 7, 35, 18, 29, 26, 36, 34, 30, 57, 31]), import.meta.url), () => M(() => import("../nodes/17.wjwrualJ.js"), __vite__mapDeps([64, 1, 14, 3, 5, 22, 9, 11, 65]), import.meta.url), () => M(() => import("../nodes/18.D2XovdQ7.js"), __vite__mapDeps([66, 1, 14, 3, 5, 22, 9, 11]), import.meta.url), () => M(() => import("../nodes/19._Z9vlWlm.js"), __vite__mapDeps([67, 1, 14, 3, 5, 22, 9, 11]), import.meta.url), () => M(() => import("../nodes/20.Dl-PZtXk.js"), __vite__mapDeps([68, 1, 14, 3, 5, 22, 9, 11, 65]), import.meta.url)],
+  $p = [() => x(() => import("../nodes/0.BezvgzCU.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]), import.meta.url), () => x(() => import("../nodes/1.BcfpzRNp.js"), __vite__mapDeps([16, 1, 14, 3, 4, 5, 17, 18, 19, 2]), import.meta.url), () => x(() => import("../nodes/2.DjQDNhLg.js"), __vite__mapDeps([20, 1, 3, 4, 5, 2, 21, 10, 11, 18, 19, 22, 9, 23]), import.meta.url), () => x(() => import("../nodes/3.pUnFQSeK.js"), __vite__mapDeps([24, 1, 3, 4, 5, 2, 21, 10, 11, 18, 19, 23]), import.meta.url), () => x(() => import("../nodes/4.CJWvpkg8.js"), __vite__mapDeps([25, 1, 2, 3, 4, 5, 9, 11, 21, 10, 18, 19, 6, 7, 8, 26, 12, 27, 28, 29, 30, 31, 32, 33, 23, 34, 35, 36, 37, 38, 39, 14, 17, 22, 13, 40, 41, 42, 43, 44, 45, 46, 47]), import.meta.url), () => x(() => import("../nodes/5.DYT_O-N6.js"), __vite__mapDeps([48, 1, 14, 3, 22, 9, 11]), import.meta.url), () => x(() => import("../nodes/6.CC8PMCFV.js"), __vite__mapDeps([49, 1, 14, 3, 2, 4, 5, 17, 7, 19]), import.meta.url), () => x(() => import("../nodes/7.CbGV9ZP4.js"), __vite__mapDeps([50, 1, 3, 4, 5, 9, 21, 10, 11, 28, 19, 2, 18, 6, 7, 27, 32, 26, 30, 44, 46, 29, 43, 34, 51, 52, 53, 54, 33, 23]), import.meta.url), () => x(() => import("../nodes/8.uo0glWyT.js"), __vite__mapDeps([55, 1, 2, 3, 4, 5, 9, 10, 11, 28, 19, 6, 7, 44, 56, 51, 52, 57, 58]), import.meta.url), () => x(() => import("../nodes/9.Chql1jxH.js"), __vite__mapDeps([59, 1, 14, 3, 5, 7, 19, 2, 4]), import.meta.url), () => x(() => import("../nodes/10.C4XwgJXu.js"), __vite__mapDeps([60, 1, 2, 3, 4, 5, 9, 10, 11, 28, 19, 6, 7, 32, 26, 44, 52, 57, 61, 62, 58, 53]), import.meta.url), () => x(() => import("../nodes/11.DX_jtKEV.js"), __vite__mapDeps([63, 1, 2, 3, 4, 5, 9, 10, 11, 28, 19, 6, 7, 32, 26, 44, 52, 57, 61, 62, 58]), import.meta.url), () => x(() => import("../nodes/12.85-FRlKt.js"), __vite__mapDeps([64, 1, 3, 4, 5, 9, 21, 10, 11, 28, 19, 2, 18, 6, 7, 31, 12, 27, 32, 26, 29, 33, 23, 39, 30, 65, 44, 46, 66, 52, 57, 62, 54]), import.meta.url), () => x(() => import("../nodes/13.iTRTPqZ2.js"), __vite__mapDeps([67, 1, 2, 3, 4, 5, 9, 19, 18, 6, 7, 40, 11, 12, 22, 41, 68]), import.meta.url), () => x(() => import("../nodes/14.CE1T7bOr.js"), __vite__mapDeps([69, 1, 2, 3, 4, 5, 9, 21, 10, 11, 19, 18, 6, 7, 32, 26, 36, 39, 30, 65, 44, 46, 35, 56, 33]), import.meta.url), () => x(() => import("../nodes/15.BiMciEXq.js"), __vite__mapDeps([70, 1, 14, 3, 4, 5, 17, 22, 9, 11, 44, 45, 7, 46]), import.meta.url), () => x(() => import("../nodes/16.DcUM5xZ7.js"), __vite__mapDeps([71, 1, 2, 3, 4, 5, 9, 26, 18, 19, 6, 7, 22, 11, 68]), import.meta.url), () => x(() => import("../nodes/17.L1xFh8sD.js"), __vite__mapDeps([72, 1, 3, 4, 5, 9, 10, 11, 28, 12, 19, 2, 6, 7, 37, 18, 32, 26, 38, 36, 29, 43, 66, 33]), import.meta.url), () => x(() => import("../nodes/18.4E7s7Oxy.js"), __vite__mapDeps([73, 1, 14, 3, 5, 22, 9, 11, 74]), import.meta.url), () => x(() => import("../nodes/19.CkoSf_Dh.js"), __vite__mapDeps([75, 1, 14, 3, 5, 22, 9, 11]), import.meta.url), () => x(() => import("../nodes/20.SnzBi8m5.js"), __vite__mapDeps([76, 1, 14, 3, 5, 22, 9, 11]), import.meta.url), () => x(() => import("../nodes/21.CwlJq-3J.js"), __vite__mapDeps([77, 1, 14, 3, 5, 22, 9, 11, 74]), import.meta.url)],
   Hp = [],
   Bp = {
     "/": [4],
     "/404": [5],
     "/admin": [6, [2]],
-    "/admin/dashboard": [7, [2]],
-    "/admin/mods": [8, [2, 3]],
-    "/admin/mods/leaderboard-reports": [10, [2, 3]],
-    "/admin/mods/leaderboard": [9, [2, 3]],
-    "/admin/users": [11, [2]],
-    "/join": [12],
-    "/moderation": [13],
-    "/offline": [14],
-    "/payment/success": [15],
-    "/profile-picture": [16],
-    "/terms/privacy": [17],
-    "/terms/return": [18],
-    "/terms/return/pt": [19],
-    "/terms/terms-of-service": [20]
+    "/admin/alliances": [7, [2]],
+    "/admin/dashboard": [8, [2]],
+    "/admin/mods": [9, [2, 3]],
+    "/admin/mods/leaderboard-reports": [11, [2, 3]],
+    "/admin/mods/leaderboard": [10, [2, 3]],
+    "/admin/users": [12, [2]],
+    "/join": [13],
+    "/moderation": [14],
+    "/offline": [15],
+    "/payment/success": [16],
+    "/profile-picture": [17],
+    "/terms/privacy": [18],
+    "/terms/return": [19],
+    "/terms/return/pt": [20],
+    "/terms/terms-of-service": [21]
   },
   vp = {
     handleError: yp || (({

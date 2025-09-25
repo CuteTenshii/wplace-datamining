@@ -1,41 +1,76 @@
-import "./DrXF_xKF.js";
+import "./CTisFEgE.js";
 import {
-  v as n,
-  b as d
-} from "./CJ1cckJE.js";
+  p as m,
+  f as c,
+  t as d,
+  b as f,
+  c as v,
+  d as y,
+  s as _,
+  r as h
+} from "./bciEXFM-.js";
 import {
-  b as r
-} from "./CxPvPfNE.js";
+  p as w,
+  i as x,
+  r as E
+} from "./DMl4pkgo.js";
 import {
-  r as s
-} from "./DarOcbRx.js";
+  b as T,
+  a as r,
+  s as S
+} from "./HAxAzJlo.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "0e3f70f7829e704b21f2ec68a0bb0b01d91efd9a"
+      id: "2fc0c566909334a37ac26a23e56a02c78685632f"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "3e1dd1be-9b67-4e0f-85d3-1363c1630961", e._sentryDebugIdIdentifier = "sentry-dbid-3e1dd1be-9b67-4e0f-85d3-1363c1630961")
+      a = new e.Error().stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "bfaa257f-561a-4221-9d82-ad8618895a89", e._sentryDebugIdIdentifier = "sentry-dbid-bfaa257f-561a-4221-9d82-ad8618895a89")
   })()
 } catch {}
-var i = n('<svg><path d="M790-56 414-434q-47 11-87.5 33T254-346l-84-86q32-32 69-56t79-42l-90-90q-41 21-76.5 46.5T84-516L0-602q32-32 66.5-57.5T140-708l-84-84 56-56 736 736-58 56Zm-310-64q-42 0-71-29.5T380-220q0-42 29-71t71-29q42 0 71 29t29 71q0 41-29 70.5T480-120Zm236-238-29-29-29-29-144-144q81 8 151.5 41T790-432l-74 74Zm160-158q-77-77-178.5-120.5T480-680q-21 0-40.5 1.5T400-674L298-776q44-12 89.5-18t92.5-6q142 0 265 53t215 145l-84 86Z"></path></svg>');
+const B = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
+var L = c("<span>wplace</span>"),
+  R = c('<div><img alt="Wplace logo"/> <!></div>');
 
-function g(e, t) {
-  let f = s(t, ["$$slots", "$$events", "$$legacy"]);
-  var o = i();
-  r(o, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...f
-  })), d(e, o)
+function z(e, a) {
+  m(a, !0);
+  let t = w(a, "size", 3, "default"),
+    g = E(a, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+  var l = R();
+  T(l, () => ({
+    ...g,
+    class: `flex items-center gap-1.5 ${a.class??""}`
+  }));
+  var i = y(l);
+  let o;
+  var p = _(i, 2);
+  {
+    var u = s => {
+      var n = L();
+      let A;
+      d(b => A = r(n, 1, "text-base-content font-pixel", null, A, b), [() => ({
+        "text-4xl": t() === "default",
+        "text-5xl": t() === "lg" || t() === "medium"
+      })]), f(s, n)
+    };
+    x(p, s => {
+      a.hasText && s(u)
+    })
+  }
+  h(l), d(s => {
+    o = r(i, 1, "pixelated", null, o, s), S(i, "src", B)
+  }, [() => ({
+    "size-10": t() === "default",
+    "size-16": t() === "medium",
+    "size-20": t() === "lg"
+  })]), f(e, l), v()
 }
 export {
-  g as W
+  z as L
 };
