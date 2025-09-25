@@ -4,18 +4,18 @@ import {
   as as u,
   h as d,
   W as y,
-  ak as _,
+  ak as b,
   a9 as i,
   V as o,
   O as s,
-  o as f,
-  P as c
-} from "./Gq9F4eGO.js";
+  o as l,
+  P as _
+} from "./DQc9Bjlo.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "088e15254cf0e82f60d1a6be25f10d078aac5191"
+      id: "96e7de35a79bbd0971b03a9483bfe62a1a391d64"
     }
   } catch {}
 })();
@@ -34,17 +34,17 @@ function g() {
 
 function p(a) {
   let n = null,
-    l = d;
+    f = d;
   var t;
   if (d) {
-    for (n = f, e === void 0 && (e = c(document.head)); e !== null && (e.nodeType !== y || e.data !== _);) e = i(e);
+    for (n = l, e === void 0 && (e = _(document.head)); e !== null && (e.nodeType !== y || e.data !== b);) e = i(e);
     e === null ? o(!1) : e = s(i(e))
   }
   d || (t = document.head.appendChild(r()));
   try {
     h(() => a(t), u)
   } finally {
-    l && (o(!0), e = f, s(n))
+    f && (o(!0), e = l, s(n))
   }
 }
 export {
