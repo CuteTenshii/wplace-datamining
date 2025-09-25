@@ -1,25 +1,25 @@
 import {
   g as p
-} from "./DM7nkZHP.js";
-import "./wl3q8fdg.js";
+} from "./B2fDDN0_.js";
+import "./pVt66Zey.js";
 import {
   ay as g,
   a as h,
   b as r,
   v
-} from "./DZJnUCzD.js";
+} from "./Gq9F4eGO.js";
 import {
   i as w,
   r as i
-} from "./D8_aQ2iA.js";
+} from "./C-xCYuxJ.js";
 import {
   b as s
-} from "./UzYO2_AH.js";
+} from "./CCRDNZ69.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "898d81c1fd54065a15a1bfd2b6539ddebd5eab08"
+      id: "088e15254cf0e82f60d1a6be25f10d078aac5191"
     }
   } catch {}
 })();
@@ -30,10 +30,10 @@ try {
     o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "3298bbfa-10df-4888-8ec0-1b806457f64a", e._sentryDebugIdIdentifier = "sentry-dbid-3298bbfa-10df-4888-8ec0-1b806457f64a")
   })()
 } catch {}
-const b = e => `Copy alliance ID: #${e.allianceId}`,
-  m = e => `Copiar ID da aliança: #${e.allianceId}`,
-  C = (e, o = {}) => (o.locale ?? p()) === "en" ? b(e) : m(e);
-var u = v('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
+const m = e => `Copy alliance ID: #${e.allianceId}`,
+  u = e => `Copiar ID da aliança: #${e.allianceId}`,
+  C = (e, o = {}) => (o.locale ?? p()) === "en" ? m(e) : u(e);
+var b = v('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
   y = v('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
 function H(e, o) {
@@ -41,8 +41,8 @@ function H(e, o) {
   var t = g(),
     f = h(t);
   {
-    var d = l => {
-        var n = u();
+    var c = l => {
+        var n = b();
         s(n, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
@@ -50,7 +50,7 @@ function H(e, o) {
           ...a
         })), r(l, n)
       },
-      c = l => {
+      d = l => {
         var n = y();
         s(n, () => ({
           xmlns: "http://www.w3.org/2000/svg",
@@ -60,7 +60,7 @@ function H(e, o) {
         })), r(l, n)
       };
     w(f, l => {
-      o.filled ? l(d) : l(c, !1)
+      o.filled ? l(c) : l(d, !1)
     })
   }
   r(e, t)

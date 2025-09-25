@@ -1,12 +1,12 @@
 import {
   s as t,
   p as n
-} from "./bnIY5FyO.js";
+} from "./Duttoglz.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "898d81c1fd54065a15a1bfd2b6539ddebd5eab08"
+      id: "088e15254cf0e82f60d1a6be25f10d078aac5191"
     }
   } catch {}
 })();

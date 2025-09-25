@@ -1,10 +1,10 @@
 import {
   g as u
-} from "./DM7nkZHP.js";
-import "./wl3q8fdg.js";
+} from "./B2fDDN0_.js";
+import "./pVt66Zey.js";
 import {
   o as De
-} from "./BgpBw6EK.js";
+} from "./B8N53q5g.js";
 import {
   at as Be,
   p as Te,
@@ -26,18 +26,18 @@ import {
   ay as le,
   a as ce,
   v as Ue
-} from "./DZJnUCzD.js";
+} from "./Gq9F4eGO.js";
 import {
-  s as _
-} from "./DuaAxFHk.js";
+  s as f
+} from "./BXPKJLai.js";
 import {
   p as Ie,
   i as C,
   r as Pe
-} from "./D8_aQ2iA.js";
+} from "./C-xCYuxJ.js";
 import {
   e as Ce
-} from "./YZ1jmPmv.js";
+} from "./DbZslGE1.js";
 import {
   f as ze,
   r as D,
@@ -45,16 +45,16 @@ import {
   g as z,
   a as Me,
   b as Se
-} from "./UzYO2_AH.js";
+} from "./CCRDNZ69.js";
 import {
   t as Ae
-} from "./BmGZxaV6.js";
+} from "./dmbGcFzo.js";
 import {
   c as Oe
-} from "./Dbqwr4fp.js";
+} from "./DOe5jxLX.js";
 import {
   b as je
-} from "./DkjujVei.js";
+} from "./K_nA0b1m.js";
 import {
   i as Ne,
   h as qe,
@@ -63,31 +63,31 @@ import {
   k as He,
   P as Q,
   t as W
-} from "./9OEjcgqq.js";
+} from "./ChUwtUQt.js";
 import {
   o as Ke,
   L as Ve,
   s as Ye,
   a as Ge,
   g as Je
-} from "./C8NnSWLc.js";
+} from "./yCumtOxb.js";
 import {
   P as Qe
-} from "./B6-rzYMU.js";
+} from "./CxIiDBOG.js";
 import {
   c as We
-} from "./GfET99J4.js";
+} from "./D-Yb-E5E.js";
 import {
   g as Xe
-} from "./BpaAYxCz.js";
+} from "./DzsbGiUu.js";
 import {
   f as $e
-} from "./B_ekQbwu.js";
+} from "./COj5CVKO.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "898d81c1fd54065a15a1bfd2b6539ddebd5eab08"
+      id: "088e15254cf0e82f60d1a6be25f10d078aac5191"
     }
   } catch {}
 })();
@@ -110,12 +110,12 @@ const et = () => "Copy",
   lt = () => "Ban User",
   ct = () => "Banir usuário",
   ut = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? lt() : ct(),
-  dt = () => "+18, inappropriate link, highly suggestive content, ...",
-  pt = () => "+18, links inapropriados, conteúdo altamente sugestivo, ...",
-  _t = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? dt() : pt(),
-  ft = () => "Use of software to completely automate painting",
+  pt = () => "+18, inappropriate link, highly suggestive content, ...",
+  dt = () => "+18, links inapropriados, conteúdo altamente sugestivo, ...",
+  ft = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? pt() : dt(),
+  _t = () => "Use of software to completely automate painting",
   mt = () => "Uso de software para pintar de forma completamente automatizada ",
-  vt = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? ft() : mt(),
+  vt = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? _t() : mt(),
   bt = () => "Racism, homophobia, hate groups, ...",
   gt = () => "Racismo, homofobia, grupos de ódio, ...",
   ht = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? bt() : gt(),
@@ -150,16 +150,16 @@ var Nt = X('<label class="flex gap-3"><input name="reason" class="radio radio-sm
 function ur(t, e) {
   Te(e, !0);
   const i = [];
-  let p = Ie(e, "open", 15),
+  let d = Ie(e, "open", 15),
     B = R(!1),
     T = R(""),
     M = R(""),
     E = R(null),
     S = R(null);
-  const de = [{
+  const pe = [{
     value: "inappropriate-content",
     label: Ne(),
-    description: _t()
+    description: ft()
   }, {
     value: "hate-speech",
     label: qe(),
@@ -182,23 +182,23 @@ function ur(t, e) {
     description: Et()
   }];
   De(() => {
-    const f = m => {
-      m.key === "Escape" && p(!1)
+    const _ = m => {
+      m.key === "Escape" && d(!1)
     };
-    return document.addEventListener("keydown", f), () => document.removeEventListener("keydown", f)
+    return document.addEventListener("keydown", _), () => document.removeEventListener("keydown", _)
   }), ae(() => {
-    p() || (h(T, ""), h(M, ""))
+    d() || (h(T, ""), h(M, ""))
   });
-  const pe = {
+  const de = {
     "report-user": `${Q}/report-user`,
     timeout: `${Q}/moderator/timeout-user`,
     ban: `${Q}/admin/ban-user`
   };
   var x = Ft(),
     $ = o(x),
-    _e = c(o($), 2);
+    fe = c(o($), 2);
   {
-    var fe = f => {
+    var _e = _ => {
       var m = Zt(),
         A = o(m);
       D(A);
@@ -225,15 +225,15 @@ function ur(t, e) {
       {
         var ve = a => {
             var r = J();
-            k(l => _(r, l), [() => ot()]), g(a, r)
+            k(l => f(r, l), [() => ot()]), g(a, r)
           },
           be = a => {
             var r = le(),
               l = ce(r);
             {
-              var d = v => {
+              var p = v => {
                   var b = J();
-                  k(y => _(b, y), [() => it()]), g(v, b)
+                  k(y => f(b, y), [() => it()]), g(v, b)
                 },
                 U = v => {
                   var b = le(),
@@ -241,7 +241,7 @@ function ur(t, e) {
                   {
                     var I = w => {
                       var P = J();
-                      k(ke => _(P, ke), [() => ut()]), g(w, P)
+                      k(ke => f(P, ke), [() => ut()]), g(w, P)
                     };
                     C(y, w => {
                       e.action === "ban" && w(I)
@@ -250,7 +250,7 @@ function ur(t, e) {
                   g(v, b)
                 };
               C(l, v => {
-                e.action === "timeout" ? v(d) : v(U, !1)
+                e.action === "timeout" ? v(p) : v(U, !1)
               }, !0)
             }
             g(a, r)
@@ -272,19 +272,19 @@ function ur(t, e) {
         xe = o(V);
       n(V);
       var ne = c(V, 2);
-      Ce(ne, 21, () => de, a => a.value, (a, r) => {
+      Ce(ne, 21, () => pe, a => a.value, (a, r) => {
         var l = Nt(),
-          d = o(l);
-        D(d);
-        var U, v = c(d, 2),
+          p = o(l);
+        D(p);
+        var U, v = c(p, 2),
           b = o(v),
           y = o(b, !0);
         n(b);
         var I = c(b, 2),
           w = o(I, !0);
         n(I), n(v), n(l), k(() => {
-          ue(d, "aria-label", s(r).label), U !== (U = s(r).value) && (d.value = (d.__value = s(r).value) ?? ""), _(y, s(r).label), _(w, s(r).description)
-        }), Oe(i, [], d, () => (s(r).value, s(T)), P => h(T, P)), g(a, l)
+          ue(p, "aria-label", s(r).label), U !== (U = s(r).value) && (p.value = (p.__value = s(r).value) ?? ""), f(y, s(r).label), f(w, s(r).description)
+        }), Oe(i, [], p, () => (s(r).value, s(T)), P => h(T, P)), g(a, l)
       }), n(ne), n(K);
       var Y = c(K, 2),
         ye = o(Y);
@@ -318,13 +318,13 @@ function ur(t, e) {
       n(Y);
       var oe = c(Y, 2),
         L = o(oe);
-      L.__click = [qt, p];
+      L.__click = [qt, d];
       var we = o(L, !0);
       n(L);
       var G = c(L, 2),
         Re = o(G, !0);
-      n(G), n(oe), n(m), je(m, a => h(E, a), () => s(E)), k((a, r, l, d) => {
-        ue(m, "action", pe[e.action]), z(A, e.paintedBy.id), z(O, e.latLon[0]), z(j, e.latLon[1]), z(N, e.zoom), Me(F, 1, `font-medium ${a??""} flex gap-1.5`), _(ge, e.paintedBy.name), _(he, `#${e.paintedBy.id??""}`), _(xe, `${r??""}:`), _(we, l), G.disabled = s(B), _(Re, d)
+      n(G), n(oe), n(m), je(m, a => h(E, a), () => s(E)), k((a, r, l, p) => {
+        ue(m, "action", de[e.action]), z(A, e.paintedBy.id), z(O, e.latLon[0]), z(j, e.latLon[1]), z(N, e.zoom), Me(F, 1, `font-medium ${a??""} flex gap-1.5`), f(ge, e.paintedBy.name), f(he, `#${e.paintedBy.id??""}`), f(xe, `${r??""}:`), f(we, l), G.disabled = s(B), f(Re, p)
       }, [() => Xe(e.paintedBy.id), () => Ye(), () => We(), () => It()]), se("submit", m, async a => {
         if (a.preventDefault(), !s(B) && s(S)()) try {
           h(B, !0);
@@ -335,40 +335,40 @@ function ur(t, e) {
           }
           const l = await e.image;
           r.append("image", l, `report-${Date.now()}.jpeg`);
-          const d = await fetch(s(E).action, {
+          const p = await fetch(s(E).action, {
             method: "POST",
             body: r,
             credentials: "include"
           });
-          d.status === 200 || d.status === 409 ? (W.info(zt()), p(!1)) : W.error(At())
+          p.status === 200 || p.status === 409 ? (W.info(zt()), d(!1)) : W.error(At())
         } finally {
           h(B, !1)
         }
-      }), Ae(2, m, () => $e), g(f, m)
+      }), Ae(2, m, () => $e), g(_, m)
     };
-    C(_e, f => {
-      p() && f(fe)
+    C(fe, _ => {
+      d() && _(_e)
     })
   }
-  n($), Ee(2), n(x), ze(x, () => f => {
+  n($), Ee(2), n(x), ze(x, () => _ => {
     ae(() => {
-      p() ? f.show() : f.close()
+      d() ? _.show() : _.close()
     })
-  }), se("close", x, () => p(!1)), g(t, x), Le()
+  }), se("close", x, () => d(!1)), g(t, x), Le()
 }
 Be(["click"]);
 var Ht = Ue('<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
 
-function dr(t, e) {
+function pr(t, e) {
   let i = Pe(e, ["$$slots", "$$events", "$$legacy"]);
-  var p = Ht();
-  Se(p, () => ({
+  var d = Ht();
+  Se(d, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
     ...i
-  })), g(t, p)
+  })), g(t, d)
 }
 export {
-  dr as D, ur as R, ut as b, lr as c, cr as p, ot as r, it as t
+  pr as D, ur as R, ut as b, lr as c, cr as p, ot as r, it as t
 };
