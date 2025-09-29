@@ -1,25 +1,25 @@
 import {
   g as p
-} from "./DRN7TQJy.js";
-import "./P6ay5t3y.js";
+} from "./DklPLC_x.js";
+import "./B2cHk4HI.js";
 import {
   ay as g,
   a as h,
   b as r,
   v
-} from "./D4j1m9ll.js";
+} from "./BDALf20I.js";
 import {
   i as w,
   r as i
-} from "./CHvTk6SG.js";
+} from "./Bke_korE.js";
 import {
   b as s
-} from "./DhZ-e3cg.js";
+} from "./BNZUboE0.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "c050fa6bdb18cd16824281f5af6d712ea849d5ba"
+      id: "35111e7039e8c68cc677344b7f7c6971567f6820"
     }
   } catch {}
 })();
@@ -31,9 +31,9 @@ try {
   })()
 } catch {}
 const m = e => `Copy alliance ID: #${e.allianceId}`,
-  b = e => `Copiar ID da aliança: #${e.allianceId}`,
-  C = (e, o = {}) => (o.locale ?? p()) === "en" ? m(e) : b(e);
-var u = v('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
+  u = e => `Copiar ID da aliança: #${e.allianceId}`,
+  C = (e, o = {}) => (o.locale ?? p()) === "en" ? m(e) : u(e);
+var b = v('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
   y = v('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
 function H(e, o) {
@@ -41,8 +41,8 @@ function H(e, o) {
   var t = g(),
     f = h(t);
   {
-    var d = l => {
-        var n = u();
+    var c = l => {
+        var n = b();
         s(n, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
@@ -50,7 +50,7 @@ function H(e, o) {
           ...a
         })), r(l, n)
       },
-      c = l => {
+      d = l => {
         var n = y();
         s(n, () => ({
           xmlns: "http://www.w3.org/2000/svg",
@@ -60,7 +60,7 @@ function H(e, o) {
         })), r(l, n)
       };
     w(f, l => {
-      o.filled ? l(d) : l(c, !1)
+      o.filled ? l(c) : l(d, !1)
     })
   }
   r(e, t)

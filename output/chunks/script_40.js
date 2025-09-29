@@ -1,11 +1,11 @@
 import {
   g as o
-} from "./DRN7TQJy.js";
+} from "./DklPLC_x.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "c050fa6bdb18cd16824281f5af6d712ea849d5ba"
+      id: "35111e7039e8c68cc677344b7f7c6971567f6820"
     }
   } catch {}
 })();
@@ -16,9 +16,9 @@ try {
     n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "a39ce8e6-c68e-4670-97d0-cab3082bdbf7", e._sentryDebugIdIdentifier = "sentry-dbid-a39ce8e6-c68e-4670-97d0-cab3082bdbf7")
   })()
 } catch {}
-const d = () => "Confirm",
-  f = () => "Confirmar",
-  r = (e = {}, n = {}) => (n.locale ?? o()) === "en" ? d() : f();
+const f = () => "Confirm",
+  t = () => "Confirmar",
+  r = (e = {}, n = {}) => (n.locale ?? o()) === "en" ? f() : t();
 export {
   r as c
 };
