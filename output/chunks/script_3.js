@@ -18,7 +18,7 @@ var d = (t, e, n) => (Jt(t, e, "read from private field"), n ? n.call(t) : e.get
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "62927027eb35380145df236b415c7021973de3ee"
+      id: "9ccec90dcd6b8d85831cf2b37643f1564d033383"
     }
   } catch {}
 })();
