@@ -13,12 +13,12 @@ import {
   N as T,
   ai as D,
   O as i
-} from "./Cp2nYQu0.js";
+} from "./DwvisW99.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "fe77e0a32f22395333b3f54fb7a95ef6936c7140"
+      id: "62927027eb35380145df236b415c7021973de3ee"
     }
   } catch {}
 })();
@@ -32,14 +32,14 @@ try {
 
 function N(e, n, r = !1, o = !1, I = !1) {
   var l = e,
-    d = "";
+    t = "";
   y(() => {
-    var s = g;
-    if (d === (d = n() ?? "")) {
+    var d = g;
+    if (t === (t = n() ?? "")) {
       h && b();
       return
     }
-    if (s.nodes_start !== null && (p(s.nodes_start, s.nodes_end), s.nodes_start = s.nodes_end = null), d !== "") {
+    if (d.nodes_start !== null && (p(d.nodes_start, d.nodes_end), d.nodes_start = d.nodes_end = null), t !== "") {
       if (h) {
         u.data;
         for (var a = b(), _ = a; a !== null && (a.nodeType !== w || a.data !== "");) _ = a, a = v(a);
@@ -47,9 +47,9 @@ function N(e, n, r = !1, o = !1, I = !1) {
         c(u, _), l = T(a);
         return
       }
-      var t = d + "";
-      r ? t = `<svg>${t}</svg>` : o && (t = `<math>${t}</math>`);
-      var f = D(t);
+      var s = t + "";
+      r ? s = `<svg>${s}</svg>` : o && (s = `<math>${s}</math>`);
+      var f = D(s);
       if ((r || o) && (f = i(f)), c(i(f), f.lastChild), r || o)
         for (; i(f);) l.before(i(f));
       else l.before(f)
