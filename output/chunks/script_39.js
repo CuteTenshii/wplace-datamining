@@ -1,12 +1,12 @@
-import "./B2cHk4HI.js";
+import "./eWGjsHWS.js";
 import {
-  M as ce,
+  ac as ce,
   z as se,
   H as oe,
   C as de,
   aZ as fe,
   p as W,
-  aw as M,
+  aw as D,
   au as U,
   ay as ue,
   a as X,
@@ -21,44 +21,44 @@ import {
   d,
   r as f,
   s as u
-} from "./BDALf20I.js";
+} from "./Cp2nYQu0.js";
 import {
   s as y
-} from "./4k6DpCgf.js";
+} from "./BNRHrDsD.js";
 import {
   p as c,
   i as B,
   r as te
-} from "./Bke_korE.js";
+} from "./Cpqp1vmU.js";
 import {
   a as A,
   c as G,
   b as ae,
   s as Z
-} from "./BNZUboE0.js";
+} from "./Ce8MKdB4.js";
 import {
   b as me
-} from "./BrZ10JY-.js";
+} from "./C29uIekv.js";
 import {
   g as R,
   d as J,
   P as _e,
   e as be
-} from "./DffDvEhl.js";
+} from "./CyIXPQQB.js";
 import {
   o as ge
-} from "./4WsUhDWi.js";
+} from "./C7Eza_iV.js";
 import {
   g as L
-} from "./DklPLC_x.js";
+} from "./DcZIlShl.js";
 import {
   L as he
-} from "./CYItkO2S.js";
+} from "./BD43Ca7B.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "35111e7039e8c68cc677344b7f7c6971567f6820"
+      id: "fe77e0a32f22395333b3f54fb7a95ef6936c7140"
     }
   } catch {}
 })();
@@ -66,7 +66,7 @@ try {
   (function() {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new a.Error().stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "aa310ff8-8885-4639-8b27-0f61ee27218a", a._sentryDebugIdIdentifier = "sentry-dbid-aa310ff8-8885-4639-8b27-0f61ee27218a")
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "8a104a20-9809-4c08-9bf0-4d230399adad", a._sentryDebugIdIdentifier = "sentry-dbid-8a104a20-9809-4c08-9bf0-4d230399adad")
   })()
 } catch {}
 
@@ -95,10 +95,10 @@ const we = a => `Login with ${a.name}`,
   Te = (a = {}, e = {}) => (e.locale ?? L()) === "en" ? Ce() : Ee(),
   ze = () => "and",
   Be = () => "e",
-  Me = (a = {}, e = {}) => (e.locale ?? L()) === "en" ? ze() : Be(),
-  De = () => "Privacy Policy",
+  De = (a = {}, e = {}) => (e.locale ?? L()) === "en" ? ze() : Be(),
+  Me = () => "Privacy Policy",
   Pe = () => "Política de privacidade",
-  Se = (a = {}, e = {}) => (e.locale ?? L()) === "en" ? De() : Pe();
+  Se = (a = {}, e = {}) => (e.locale ?? L()) === "en" ? Me() : Pe();
 var Fe = V("<div></div>");
 
 function He(a, e) {
@@ -108,7 +108,7 @@ function He(a, e) {
     _ = c(e, "language", 3, "auto"),
     m = c(e, "execution", 3, "render"),
     s = c(e, "retryInterval", 3, 8e3),
-    D = c(e, "retry", 3, "auto"),
+    M = c(e, "retry", 3, "auto"),
     g = c(e, "refreshExpired", 3, "auto"),
     C = c(e, "theme", 3, "auto"),
     E = c(e, "size", 3, "normal"),
@@ -156,7 +156,7 @@ function He(a, e) {
       execution: m(),
       language: _(),
       action: e.action,
-      retry: D(),
+      retry: M(),
       theme: C(),
       cData: e.cData,
       size: E()
@@ -174,14 +174,14 @@ function He(a, e) {
     };
   let x = U(!1);
   ge(() => {
-    if (M(x, !0), !R.turnstatileLoaded) {
+    if (D(x, !0), !R.turnstatileLoaded) {
       const t = document.createElement("script");
       t.type = "text/javascript", t.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit", t.async = !0, t.addEventListener("load", () => R.turnstatileLoaded = !0, {
         once: !0
       }), document.head.appendChild(t)
     }
     return () => {
-      M(x, !1)
+      D(x, !1)
     }
   });
   var k = ue(),
@@ -236,8 +236,8 @@ function pe(a, e) {
   }
   var m = Ae(),
     s = d(m),
-    D = d(s);
-  he(D, {
+    M = d(s);
+  he(M, {
     hasText: !0
   }), f(s);
   var g = u(s, 2),
@@ -271,7 +271,7 @@ function pe(a, e) {
                 return v(N)
               },
               callback: K => {
-                M(r, K, !0)
+                D(r, K, !0)
               }
             })
           }
@@ -299,7 +299,7 @@ function pe(a, e) {
       t(P, !1)
     })
   }
-  f(C), f(g), me(g, t => M(n, t), () => v(n));
+  f(C), f(g), me(g, t => D(n, t), () => v(n));
   var S = u(g, 2),
     T = d(S),
     b = u(T),
@@ -310,7 +310,7 @@ function pe(a, e) {
     F = d(z, !0);
   f(z), f(S), f(m), j((t, i, l, o) => {
     y(T, `${t??""} `), y(x, i), y(k, ` ${l??""} `), y(F, o)
-  }, [() => Le(), () => Te(), () => Me(), () => Se()]), w(a, m), p()
+  }, [() => Le(), () => Te(), () => De(), () => Se()]), w(a, m), p()
 }
 export {
   pe as L, Ue as T, He as a

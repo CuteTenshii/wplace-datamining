@@ -1,10 +1,10 @@
 import {
   g as u
-} from "./DklPLC_x.js";
-import "./B2cHk4HI.js";
+} from "./DcZIlShl.js";
+import "./eWGjsHWS.js";
 import {
   o as De
-} from "./4WsUhDWi.js";
+} from "./C7Eza_iV.js";
 import {
   at as Be,
   p as Te,
@@ -17,7 +17,7 @@ import {
   r as n,
   n as Ee,
   ax as se,
-  b as g,
+  b,
   c as Le,
   t as k,
   g as s,
@@ -26,18 +26,18 @@ import {
   ay as le,
   a as ce,
   v as Ue
-} from "./BDALf20I.js";
+} from "./Cp2nYQu0.js";
 import {
-  s as _
-} from "./4k6DpCgf.js";
+  s as f
+} from "./BNRHrDsD.js";
 import {
   p as Ie,
   i as C,
   r as Pe
-} from "./Bke_korE.js";
+} from "./Cpqp1vmU.js";
 import {
   e as Ce
-} from "./CZW2bcQi.js";
+} from "./re32H7hA.js";
 import {
   f as ze,
   r as D,
@@ -45,16 +45,16 @@ import {
   g as z,
   a as Me,
   b as Se
-} from "./BNZUboE0.js";
+} from "./Ce8MKdB4.js";
 import {
   t as Ae
-} from "./BCONGQnO.js";
+} from "./uosWZzaS.js";
 import {
   c as Oe
-} from "./DS58drb5.js";
+} from "./FmeLqAoX.js";
 import {
   b as je
-} from "./BrZ10JY-.js";
+} from "./C29uIekv.js";
 import {
   i as Ne,
   h as qe,
@@ -63,31 +63,31 @@ import {
   k as He,
   P as Q,
   t as W
-} from "./DffDvEhl.js";
+} from "./CyIXPQQB.js";
 import {
   o as Ke,
   L as Ve,
   s as Ye,
   a as Ge,
   g as Je
-} from "./CAQlJ3np.js";
+} from "./L8vjeDxW.js";
 import {
   P as Qe
-} from "./DCxPsWiR.js";
+} from "./De3UNOhq.js";
 import {
   c as We
-} from "./CDZgL_Bh.js";
+} from "./Cb0F7pe6.js";
 import {
   g as Xe
-} from "./ClOhzjRc.js";
+} from "./CBsBC6Ub.js";
 import {
   f as $e
-} from "./DnhglgUZ.js";
+} from "./BHFxxBat.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "35111e7039e8c68cc677344b7f7c6971567f6820"
+      id: "fe77e0a32f22395333b3f54fb7a95ef6936c7140"
     }
   } catch {}
 })();
@@ -95,7 +95,7 @@ try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "66bbb02f-2e45-48b1-b4e0-91d8d5145a93", t._sentryDebugIdIdentifier = "sentry-dbid-66bbb02f-2e45-48b1-b4e0-91d8d5145a93")
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "ec586f40-9abd-4bae-8453-2c8e973cd3d0", t._sentryDebugIdIdentifier = "sentry-dbid-ec586f40-9abd-4bae-8453-2c8e973cd3d0")
   })()
 } catch {}
 const et = () => "Copy",
@@ -112,13 +112,13 @@ const et = () => "Copy",
   ut = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? lt() : ct(),
   pt = () => "+18, inappropriate link, highly suggestive content, ...",
   dt = () => "+18, links inapropriados, conteúdo altamente sugestivo, ...",
-  _t = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? pt() : dt(),
-  ft = () => "Use of software to completely automate painting",
+  ft = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? pt() : dt(),
+  _t = () => "Use of software to completely automate painting",
   mt = () => "Uso de software para pintar de forma completamente automatizada ",
-  vt = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? ft() : mt(),
-  bt = () => "Racism, homophobia, hate groups, ...",
-  gt = () => "Racismo, homofobia, grupos de ódio, ...",
-  ht = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? bt() : gt(),
+  vt = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? _t() : mt(),
+  gt = () => "Racism, homophobia, hate groups, ...",
+  bt = () => "Racismo, homofobia, grupos de ódio, ...",
+  ht = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? gt() : bt(),
   xt = () => "Messed up artworks for no reason",
   yt = () => "Estragar desenho dos outros sem motivo",
   wt = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? xt() : yt(),
@@ -159,7 +159,7 @@ function ur(t, e) {
   const pe = [{
     value: "inappropriate-content",
     label: Ne(),
-    description: _t()
+    description: ft()
   }, {
     value: "hate-speech",
     label: qe(),
@@ -182,10 +182,10 @@ function ur(t, e) {
     description: Et()
   }];
   De(() => {
-    const f = m => {
+    const _ = m => {
       m.key === "Escape" && d(!1)
     };
-    return document.addEventListener("keydown", f), () => document.removeEventListener("keydown", f)
+    return document.addEventListener("keydown", _), () => document.removeEventListener("keydown", _)
   }), ae(() => {
     d() || (h(T, ""), h(M, ""))
   });
@@ -196,9 +196,9 @@ function ur(t, e) {
   };
   var x = Ft(),
     $ = o(x),
-    _e = c(o($), 2);
+    fe = c(o($), 2);
   {
-    var fe = f => {
+    var _e = _ => {
       var m = Zt(),
         A = o(m);
       D(A);
@@ -225,44 +225,44 @@ function ur(t, e) {
       {
         var ve = a => {
             var r = J();
-            k(l => _(r, l), [() => ot()]), g(a, r)
+            k(l => f(r, l), [() => ot()]), b(a, r)
           },
-          be = a => {
+          ge = a => {
             var r = le(),
               l = ce(r);
             {
               var p = v => {
-                  var b = J();
-                  k(y => _(b, y), [() => it()]), g(v, b)
+                  var g = J();
+                  k(y => f(g, y), [() => it()]), b(v, g)
                 },
                 U = v => {
-                  var b = le(),
-                    y = ce(b);
+                  var g = le(),
+                    y = ce(g);
                   {
                     var I = w => {
                       var P = J();
-                      k(ke => _(P, ke), [() => ut()]), g(w, P)
+                      k(ke => f(P, ke), [() => ut()]), b(w, P)
                     };
                     C(y, w => {
                       e.action === "ban" && w(I)
                     }, !0)
                   }
-                  g(v, b)
+                  b(v, g)
                 };
               C(l, v => {
                 e.action === "timeout" ? v(p) : v(U, !1)
               }, !0)
             }
-            g(a, r)
+            b(a, r)
           };
         C(me, a => {
-          e.action === "report-user" ? a(ve) : a(be, !1)
+          e.action === "report-user" ? a(ve) : a(ge, !1)
         })
       }
       n(Z);
       var F = c(Z, 2),
         H = o(F),
-        ge = o(H, !0);
+        be = o(H, !0);
       n(H);
       var re = c(H, 2),
         he = o(re);
@@ -277,14 +277,14 @@ function ur(t, e) {
           p = o(l);
         D(p);
         var U, v = c(p, 2),
-          b = o(v),
-          y = o(b, !0);
-        n(b);
-        var I = c(b, 2),
+          g = o(v),
+          y = o(g, !0);
+        n(g);
+        var I = c(g, 2),
           w = o(I, !0);
         n(I), n(v), n(l), k(() => {
-          ue(p, "aria-label", s(r).label), U !== (U = s(r).value) && (p.value = (p.__value = s(r).value) ?? ""), _(y, s(r).label), _(w, s(r).description)
-        }), Oe(i, [], p, () => (s(r).value, s(T)), P => h(T, P)), g(a, l)
+          ue(p, "aria-label", s(r).label), U !== (U = s(r).value) && (p.value = (p.__value = s(r).value) ?? ""), f(y, s(r).label), f(w, s(r).description)
+        }), Oe(i, [], p, () => (s(r).value, s(T)), P => h(T, P)), b(a, l)
       }), n(ne), n(K);
       var Y = c(K, 2),
         ye = o(Y);
@@ -324,7 +324,7 @@ function ur(t, e) {
       var G = c(L, 2),
         Re = o(G, !0);
       n(G), n(oe), n(m), je(m, a => h(E, a), () => s(E)), k((a, r, l, p) => {
-        ue(m, "action", de[e.action]), z(A, e.paintedBy.id), z(O, e.latLon[0]), z(j, e.latLon[1]), z(N, e.zoom), Me(F, 1, `font-medium ${a??""} flex gap-1.5`), _(ge, e.paintedBy.name), _(he, `#${e.paintedBy.id??""}`), _(xe, `${r??""}:`), _(we, l), G.disabled = s(B), _(Re, p)
+        ue(m, "action", de[e.action]), z(A, e.paintedBy.id), z(O, e.latLon[0]), z(j, e.latLon[1]), z(N, e.zoom), Me(F, 1, `font-medium ${a??""} flex gap-1.5`), f(be, e.paintedBy.name), f(he, `#${e.paintedBy.id??""}`), f(xe, `${r??""}:`), f(we, l), G.disabled = s(B), f(Re, p)
       }, [() => Xe(e.paintedBy.id), () => Ye(), () => We(), () => It()]), se("submit", m, async a => {
         if (a.preventDefault(), !s(B) && s(S)()) try {
           h(B, !0);
@@ -344,17 +344,17 @@ function ur(t, e) {
         } finally {
           h(B, !1)
         }
-      }), Ae(2, m, () => $e), g(f, m)
+      }), Ae(2, m, () => $e), b(_, m)
     };
-    C(_e, f => {
-      d() && f(fe)
+    C(fe, _ => {
+      d() && _(_e)
     })
   }
-  n($), Ee(2), n(x), ze(x, () => f => {
+  n($), Ee(2), n(x), ze(x, () => _ => {
     ae(() => {
-      d() ? f.show() : f.close()
+      d() ? _.show() : _.close()
     })
-  }), se("close", x, () => d(!1)), g(t, x), Le()
+  }), se("close", x, () => d(!1)), b(t, x), Le()
 }
 Be(["click"]);
 var Ht = Ue('<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
@@ -367,7 +367,7 @@ function pr(t, e) {
     viewBox: "0 -960 960 960",
     fill: "currentColor",
     ...i
-  })), g(t, d)
+  })), b(t, d)
 }
 export {
   pr as D, ur as R, ut as b, lr as c, cr as p, ot as r, it as t
