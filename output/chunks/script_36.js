@@ -1,25 +1,25 @@
 import {
   g as p
-} from "./B5bgHpBc.js";
-import "./BBRDBMuY.js";
+} from "./FoV3scVl.js";
+import "./D5_c2Rpc.js";
 import {
   ay as g,
   a as h,
   b as r,
   v
-} from "./DXwQ_faQ.js";
+} from "./CbNWXa9F.js";
 import {
   i as w,
   r as i
-} from "./flon3nJo.js";
+} from "./BZWRFaF1.js";
 import {
   b as s
-} from "./DGuWr-1F.js";
+} from "./DFqm6-NR.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "dafbc8967eb1989b1fe82a14eecd9a7bc2c33606"
+      id: "c52930fdf8854b5f9bae5ed78e18571583cf0fb7"
     }
   } catch {}
 })();
@@ -30,9 +30,9 @@ try {
     o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "3298bbfa-10df-4888-8ec0-1b806457f64a", e._sentryDebugIdIdentifier = "sentry-dbid-3298bbfa-10df-4888-8ec0-1b806457f64a")
   })()
 } catch {}
-const b = e => `Copy alliance ID: #${e.allianceId}`,
-  m = e => `Copiar ID da aliança: #${e.allianceId}`,
-  C = (e, o = {}) => (o.locale ?? p()) === "en" ? b(e) : m(e);
+const m = e => `Copy alliance ID: #${e.allianceId}`,
+  b = e => `Copiar ID da aliança: #${e.allianceId}`,
+  C = (e, o = {}) => (o.locale ?? p()) === "en" ? m(e) : b(e);
 var u = v('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
   y = v('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
