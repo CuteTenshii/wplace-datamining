@@ -1,22 +1,22 @@
 import {
   g as s
-} from "./Dk78P9j5.js";
-import "./DpOQrWTG.js";
+} from "./B5bgHpBc.js";
+import "./BBRDBMuY.js";
 import {
   v as r,
   b as i
-} from "./4_8LKkOo.js";
+} from "./DXwQ_faQ.js";
 import {
   b as a
-} from "./C8XlyrLH.js";
+} from "./DGuWr-1F.js";
 import {
   r as l
-} from "./B6Tnf-7g.js";
+} from "./flon3nJo.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "9b2648606e2bb7a01bef003b9890229599179c1c"
+      id: "dafbc8967eb1989b1fe82a14eecd9a7bc2c33606"
     }
   } catch {}
 })();
@@ -27,9 +27,9 @@ try {
     t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "e9a4a830-f71c-4119-8142-30326aa85639", e._sentryDebugIdIdentifier = "sentry-dbid-e9a4a830-f71c-4119-8142-30326aa85639")
   })()
 } catch {}
-const p = () => "Pixels painted",
-  d = () => "Pixels pintados",
-  T = (e = {}, t = {}) => (t.locale ?? s()) === "en" ? p() : d(),
+const d = () => "Pixels painted",
+  p = () => "Pixels pintados",
+  T = (e = {}, t = {}) => (t.locale ?? s()) === "en" ? d() : p(),
   c = () => "Description",
   f = () => "Descrição",
   m = (e = {}, t = {}) => (t.locale ?? s()) === "en" ? c() : f();
