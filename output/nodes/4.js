@@ -14,11 +14,11 @@ var ot = (m, a, p) => (zf(m, a, "read from private field"), p ? p.call(m) : a.ge
   Ar = (m, a, p) => a.has(m) ? $g("Cannot add the same private member more than once") : a instanceof WeakSet ? a.add(m) : a.set(m, p),
   na = (m, a, p, y) => (zf(m, a, "write to private field"), y ? y.call(m, p) : a.set(m, p), p),
   jr = (m, a, p) => (zf(m, a, "access private method"), p);
-import "../chunks/Ch2Ub8FX.js";
+import "../chunks/DpOQrWTG.js";
 import {
   o as Fn,
   s as oi
-} from "../chunks/DoL3ojdE.js";
+} from "../chunks/TX12bBaL.js";
 import {
   a1 as H1,
   b8 as W1,
@@ -59,20 +59,20 @@ import {
   az as pa,
   bt as Mv,
   $ as rx
-} from "../chunks/CMvZtFtm.js";
+} from "../chunks/4_8LKkOo.js";
 import {
   s as de
-} from "../chunks/DVA6u9-7.js";
+} from "../chunks/BorCHFAQ.js";
 import {
   p as zt,
   i as Oe,
   r as nr,
   s as Is,
   u as kv
-} from "../chunks/BF50aS-j.js";
+} from "../chunks/B6Tnf-7g.js";
 import {
   h as nx
-} from "../chunks/P77cUGnY.js";
+} from "../chunks/ZDdK5ael.js";
 import {
   r as Ka,
   f as Ni,
@@ -83,19 +83,19 @@ import {
   e as kc,
   h as Ou,
   c as Yo
-} from "../chunks/C5yqZvKC.js";
+} from "../chunks/C8XlyrLH.js";
 import {
   a as ll,
   k as ju,
   t as Ai
-} from "../chunks/BBgyHb-Z.js";
+} from "../chunks/C17U14XA.js";
 import {
   g as km,
   b as ix
-} from "../chunks/CyB--sFG.js";
+} from "../chunks/CVScF69k.js";
 import {
   p as yi
-} from "../chunks/B6ZK_HZO.js";
+} from "../chunks/Bd_lWt73.js";
 import {
   S as Wi,
   a as Qr,
@@ -117,7 +117,7 @@ import {
   F as fx,
   d as mx,
   G as _x
-} from "../chunks/BRM3t761.js";
+} from "../chunks/Bg0vAUn6.js";
 import {
   c as Ev,
   A as aa,
@@ -125,28 +125,28 @@ import {
   g as Df,
   p as gx,
   b as vx
-} from "../chunks/C0GlPMrk.js";
+} from "../chunks/DvEd2EUX.js";
 import {
   h as Am
-} from "../chunks/DueIxFLX.js";
+} from "../chunks/zBZ2mJxf.js";
 import {
   b as Ko
-} from "../chunks/0wx1llIh.js";
+} from "../chunks/CaCPOPhz.js";
 import {
   L as yx
-} from "../chunks/CgCA7Awo.js";
+} from "../chunks/CnNsAbZt.js";
 import {
   g as Ne,
   l as xx
-} from "../chunks/CV9xcpLq.js";
+} from "../chunks/Dk78P9j5.js";
 import {
   c as Ah
-} from "../chunks/CHGjpGz-.js";
+} from "../chunks/XzMpLbbK.js";
 import {
   d as bx,
   L as Em,
   p as zm
-} from "../chunks/BKioTOWR.js";
+} from "../chunks/BgI67k8-.js";
 import {
   c as Wf,
   D as zv,
@@ -155,41 +155,41 @@ import {
   t as Cx,
   b as Sx,
   R as Px
-} from "../chunks/Cqwd83E5.js";
+} from "../chunks/D_ML0C5U.js";
 import {
   e as hi,
   i as hp
-} from "../chunks/CXkjfmFU.js";
+} from "../chunks/Dc2CSBJ4.js";
 import {
   c as Lm,
   b as dp,
   a as Ix
-} from "../chunks/Dpga8uG-.js";
+} from "../chunks/CfccUKC3.js";
 import {
   P as co,
   t as Lv
-} from "../chunks/D3yaN7Zl.js";
+} from "../chunks/BOpFnXf0.js";
 import {
   l as Mx,
   p as Dm,
   m as Dv,
   v as kx,
   s as Ax
-} from "../chunks/BsOIMr0T.js";
+} from "../chunks/CSvuVqcv.js";
 import {
   g as Oi,
   a as pp,
   c as Ex,
   b as zx
-} from "../chunks/lE0oaQc5.js";
+} from "../chunks/C2UgZRT_.js";
 import {
   f as cl,
   t as Lx
-} from "../chunks/DBSOMMI_.js";
+} from "../chunks/Dip-Iq2-.js";
 import {
   A as Dx,
   c as Ss
-} from "../chunks/Dt3xBOvm.js";
+} from "../chunks/BszD2vah.js";
 import {
   A as Rv,
   d as Bv,
@@ -201,52 +201,52 @@ import {
   c as Fx,
   P as Ov,
   b as Ox
-} from "../chunks/BA2Qx8r3.js";
+} from "../chunks/TN5nbFp8.js";
 import {
   f as ia,
   s as Hd
-} from "../chunks/wZ7b5CwQ.js";
+} from "../chunks/CXmsxe2n.js";
 import {
   C as Rm,
   G as Xg,
   c as Nx,
   T as Xf
-} from "../chunks/DLfdYhzo.js";
-import "../chunks/BOREeBzQ.js";
+} from "../chunks/BmRw0bSE.js";
+import "../chunks/CHZLTkzL.js";
 import {
   i as Nv
-} from "../chunks/Z_72d8Vp.js";
+} from "../chunks/PLKXemyD.js";
 import {
   L as jv
-} from "../chunks/D3yDgRbd.js";
+} from "../chunks/DZpDL8mn.js";
 import {
   c as xi
-} from "../chunks/CdTXrPIO.js";
+} from "../chunks/DNcZziJW.js";
 import {
   L as jx,
   T as Vv,
   a as Vx
-} from "../chunks/Bn0Xcwmn.js";
+} from "../chunks/B-y9-Hh2.js";
 import {
   _ as qx
-} from "../chunks/BI7eddl7.js";
+} from "../chunks/OykdUrk4.js";
 import {
   c as qv
-} from "../chunks/C4yB2Gnm.js";
+} from "../chunks/CIB7V99c.js";
 import {
   R as Zx
-} from "../chunks/m3o6lEf1.js";
+} from "../chunks/Bn-BhOxE.js";
 import {
   W as Ux
-} from "../chunks/DCynssDD.js";
+} from "../chunks/DjTkB-V5.js";
 import {
   r as $x
-} from "../chunks/C3E1P42D.js";
+} from "../chunks/BtBmRjZ-.js";
 (function() {
   try {
     var m = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     m.SENTRY_RELEASE = {
-      id: "9ccec90dcd6b8d85831cf2b37643f1564d033383"
+      id: "9b2648606e2bb7a01bef003b9890229599179c1c"
     }
   } catch {}
 })();
@@ -254,7 +254,7 @@ try {
   (function() {
     var m = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       a = new m.Error().stack;
-    a && (m._sentryDebugIds = m._sentryDebugIds || {}, m._sentryDebugIds[a] = "adf93bd4-0a14-4f4e-9af7-5f1b369a26cd", m._sentryDebugIdIdentifier = "sentry-dbid-adf93bd4-0a14-4f4e-9af7-5f1b369a26cd")
+    a && (m._sentryDebugIds = m._sentryDebugIds || {}, m._sentryDebugIds[a] = "92d37a62-46fc-4ec7-a1d3-99da2bde1c08", m._sentryDebugIdIdentifier = "sentry-dbid-92d37a62-46fc-4ec7-a1d3-99da2bde1c08")
   })()
 } catch {}
 const Gx = [];
@@ -858,7 +858,7 @@ const Xx = Q1,
   FI = () => "Mais",
   OI = (m = {}, a = {}) => (a.locale ?? Ne()) === "en" ? BI() : FI(),
   NI = () => "This action is irreversible, do you want to proceed?",
-  jI = () => "Esta ação é irreversível,você quer prosseguir?",
+  jI = () => "Esta ação é irreversível, você deseja prosseguir?",
   VI = (m = {}, a = {}) => (a.locale ?? Ne()) === "en" ? NI() : jI(),
   qI = () => "Please confirm by entering your username:",
   ZI = () => "Por favor, confirme digitando seu nome de usuário:",
@@ -44742,7 +44742,7 @@ function fD(m, a) {
               Ni(Ue, () => he => (se(O, aD(he, {
                 strictMode: !0,
                 initialCountry: "br",
-                loadUtils: () => qx(() => import("../chunks/yW7U80iv.js"), [], import.meta.url),
+                loadUtils: () => qx(() => import("../chunks/pRzPh0c_.js"), [], import.meta.url),
                 containerClass: "w-full",
                 dropdownContainer: document.body
               })), () => {
