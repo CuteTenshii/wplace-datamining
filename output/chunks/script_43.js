@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./D26ZZW2W.js";
+} from "./BHVh6a9r.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "271525ca33b9062741a3aa9359d1b5202c5b5a4b"
+      id: "123067dbd61a163d94930a4efc762fdca932af1b"
     }
   } catch {}
 })();
@@ -13,12 +13,12 @@ try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "b6fedc18-c426-4b17-bf09-8644b91cab4b", e._sentryDebugIdIdentifier = "sentry-dbid-b6fedc18-c426-4b17-bf09-8644b91cab4b")
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "4cabca8b-66f2-4e69-bb29-18897bbab378", e._sentryDebugIdIdentifier = "sentry-dbid-4cabca8b-66f2-4e69-bb29-18897bbab378")
   })()
 } catch {}
-const o = () => "Refresh",
-  f = () => "Atualizar",
-  b = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? o() : f();
+const f = () => "Refresh",
+  o = () => "Atualizar",
+  a = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? f() : o();
 export {
-  b as r
+  a as r
 };

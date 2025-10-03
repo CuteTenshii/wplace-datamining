@@ -1,14 +1,14 @@
 import {
   g as j
-} from "./D26ZZW2W.js";
-import "./bMPyssaj.js";
+} from "./BHVh6a9r.js";
+import "./j_EA_LVk.js";
 import {
   o as _t
-} from "./DIzpMSlc.js";
+} from "./CKspCwjb.js";
 import {
-  v as N,
+  v as Y,
   b as d,
-  at as Ye,
+  av as Qe,
   p as Ke,
   ay as Ve,
   a as me,
@@ -22,37 +22,37 @@ import {
   ax as fe,
   y as mt,
   g as _,
-  au as be,
-  aw as L,
+  Y as be,
+  Z as L,
   u as _e,
   b4 as Ce
-} from "./ByX6hzNF.js";
+} from "./BR5XpF1A.js";
 import {
   s as w
-} from "./C5nThJWx.js";
+} from "./C-1uWn9D.js";
 import {
   r as ne,
   p as Ge,
   i as M
-} from "./DE4J66Ju.js";
+} from "./CYVkZf9S.js";
 import {
   b as O,
-  f as gt,
+  d as gt,
   s as ae,
   r as Ie,
   g as Le,
   a as Je,
-  e as xt
-} from "./BjAsoSK5.js";
+  f as xt
+} from "./DqbpgmAY.js";
 import {
   b as ht
-} from "./BF-CrrjR.js";
+} from "./CHwWpExl.js";
 import {
   g as Re
-} from "./Bfnu36pa.js";
+} from "./D54Ix0Yg.js";
 import {
   p as Ae
-} from "./gCZvFuIt.js";
+} from "./B4rJ73cs.js";
 import {
   g as wt,
   u as se,
@@ -60,18 +60,18 @@ import {
   a as $e,
   S as yt,
   P as Fe
-} from "./D5NGR3tF.js";
+} from "./1TzzCJbJ.js";
 import {
   c as kt
-} from "./Dh7kSMLz.js";
+} from "./ITjEQt2I.js";
 import {
   a as Ct
-} from "./Bm52xllv.js";
+} from "./trF1zRLF.js";
 (function() {
   try {
     var s = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     s.SENTRY_RELEASE = {
-      id: "271525ca33b9062741a3aa9359d1b5202c5b5a4b"
+      id: "123067dbd61a163d94930a4efc762fdca932af1b"
     }
   } catch {}
 })();
@@ -79,7 +79,7 @@ try {
   (function() {
     var s = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new s.Error().stack;
-    e && (s._sentryDebugIds = s._sentryDebugIds || {}, s._sentryDebugIds[e] = "0fa0d6bf-0d42-46b8-b804-0b844b6532f6", s._sentryDebugIdIdentifier = "sentry-dbid-0fa0d6bf-0d42-46b8-b804-0b844b6532f6")
+    e && (s._sentryDebugIds = s._sentryDebugIds || {}, s._sentryDebugIds[e] = "23d517b9-39f8-480d-a6ba-68cdae7bd18f", s._sentryDebugIdIdentifier = "sentry-dbid-23d517b9-39f8-480d-a6ba-68cdae7bd18f")
   })()
 } catch {}
 const It = () => "Add profile picture",
@@ -97,7 +97,7 @@ const It = () => "Add profile picture",
   St = () => "For refund requests and processing details, please see our",
   Et = () => "Para pedidos de reembolso, consulte nossa",
   je = (s = {}, e = {}) => (e.locale ?? j()) === "en" ? St() : Et();
-var Bt = N('<svg><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"></path></svg>');
+var Bt = Y('<svg><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"></path></svg>');
 
 function Ht(s, e) {
   let r = ne(e, ["$$slots", "$$events", "$$legacy"]);
@@ -110,18 +110,18 @@ function Ht(s, e) {
   })), d(s, a)
 }
 
-function Ut() {
+function Zt() {
   return j()
 }
 
-function Ne(s) {
-  return `${s}/terms/return${Ut()==="pt"?"/pt":""}`
+function Ye(s) {
+  return `${s}/terms/return${Zt()==="pt"?"/pt":""}`
 }
-var Zt = N('<svg><path d="M480-100q-133 0-226.5-92T160-416q0-63 24.5-120.5T254-638l226-222 226 222q45 44 69.5 101.5T800-416q0 132-93.5 224T480-100Z"></path></svg>');
+var Ut = Y('<svg><path d="M480-100q-133 0-226.5-92T160-416q0-63 24.5-120.5T254-638l226-222 226 222q45 44 69.5 101.5T800-416q0 132-93.5 224T480-100Z"></path></svg>');
 
 function ze(s, e) {
   let r = ne(e, ["$$slots", "$$events", "$$legacy"]);
-  var a = Zt();
+  var a = Ut();
   O(a, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -148,11 +148,11 @@ function Ot(s, e) {
     var C = n(h, 2);
     {
       var q = E => {
-        var Q = Rt(),
-          U = t(Q);
-        Ht(U, {
+        var N = Rt(),
+          Z = t(N);
+        Ht(Z, {
           class: "size-4"
-        }), o(Q), d(E, Q)
+        }), o(N), d(E, N)
       };
       M(C, E => {
         a() && E(q)
@@ -183,10 +183,10 @@ function Ot(s, e) {
   }
   d(s, m), We()
 }
-Ye(["click"]);
-var jt = N('<svg><path d="M880-720v480q0 33-23.5 56.5T800-160H160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720Zm-720 80h640v-80H160v80Zm0 160v240h640v-240H160Zm0 240v-480 480Z"></path></svg>');
+Qe(["click"]);
+var jt = Y('<svg><path d="M880-720v480q0 33-23.5 56.5T800-160H160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720Zm-720 80h640v-80H160v80Zm0 160v240h640v-240H160Zm0 240v-480 480Z"></path></svg>');
 
-function Nt(s, e) {
+function Yt(s, e) {
   let r = ne(e, ["$$slots", "$$events", "$$legacy"]);
   var a = jt();
   O(a, () => ({
@@ -198,11 +198,11 @@ function Nt(s, e) {
     ...r
   })), d(s, a)
 }
-var Qt = N('<svg><path fill="#4db6ac" d="M11.9,12h-0.68l8.04-8.04c2.62-2.61,6.86-2.61,9.48,0L36.78,12H36.1c-1.6,0-3.11,0.62-4.24,1.76	l-6.8,6.77c-0.59,0.59-1.53,0.59-2.12,0l-6.8-6.77C15.01,12.62,13.5,12,11.9,12z"></path><path fill="#4db6ac" d="M36.1,36h0.68l-8.04,8.04c-2.62,2.61-6.86,2.61-9.48,0L11.22,36h0.68c1.6,0,3.11-0.62,4.24-1.76	l6.8-6.77c0.59-0.59,1.53-0.59,2.12,0l6.8,6.77C32.99,35.38,34.5,36,36.1,36z"></path><path fill="#4db6ac" d="M44.04,28.74L38.78,34H36.1c-1.07,0-2.07-0.42-2.83-1.17l-6.8-6.78c-1.36-1.36-3.58-1.36-4.94,0	l-6.8,6.78C13.97,33.58,12.97,34,11.9,34H9.22l-5.26-5.26c-2.61-2.62-2.61-6.86,0-9.48L9.22,14h2.68c1.07,0,2.07,0.42,2.83,1.17	l6.8,6.78c0.68,0.68,1.58,1.02,2.47,1.02s1.79-0.34,2.47-1.02l6.8-6.78C34.03,14.42,35.03,14,36.1,14h2.68l5.26,5.26	C46.65,21.88,46.65,26.12,44.04,28.74z"></path></svg>');
+var Nt = Y('<svg><path fill="#4db6ac" d="M11.9,12h-0.68l8.04-8.04c2.62-2.61,6.86-2.61,9.48,0L36.78,12H36.1c-1.6,0-3.11,0.62-4.24,1.76	l-6.8,6.77c-0.59,0.59-1.53,0.59-2.12,0l-6.8-6.77C15.01,12.62,13.5,12,11.9,12z"></path><path fill="#4db6ac" d="M36.1,36h0.68l-8.04,8.04c-2.62,2.61-6.86,2.61-9.48,0L11.22,36h0.68c1.6,0,3.11-0.62,4.24-1.76	l6.8-6.77c0.59-0.59,1.53-0.59,2.12,0l6.8,6.77C32.99,35.38,34.5,36,36.1,36z"></path><path fill="#4db6ac" d="M44.04,28.74L38.78,34H36.1c-1.07,0-2.07-0.42-2.83-1.17l-6.8-6.78c-1.36-1.36-3.58-1.36-4.94,0	l-6.8,6.78C13.97,33.58,12.97,34,11.9,34H9.22l-5.26-5.26c-2.61-2.62-2.61-6.86,0-9.48L9.22,14h2.68c1.07,0,2.07,0.42,2.83,1.17	l6.8,6.78c0.68,0.68,1.58,1.02,2.47,1.02s1.79-0.34,2.47-1.02l6.8-6.78C34.03,14.42,35.03,14,36.1,14h2.68l5.26,5.26	C46.65,21.88,46.65,26.12,44.04,28.74z"></path></svg>');
 
-function Qe(s, e) {
+function Ne(s, e) {
   let r = ne(e, ["$$slots", "$$events", "$$legacy"]);
-  var a = Qt();
+  var a = Nt();
   O(a, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     x: "0px",
@@ -213,7 +213,7 @@ function Qe(s, e) {
     ...r
   })), d(s, a)
 }
-var Yt = (s, e, r, a, m) => {
+var Qt = (s, e, r, a, m) => {
     _(e).show(), L(r, !0), $e.generatePixQrCode(a()).then(u => {
       L(m, u, !0)
     }).catch(u => {
@@ -284,8 +284,8 @@ function ko(s, e) {
     var C = l => {
       var g = Gt(),
         B = t(g),
-        Z = t(B),
-        le = t(Z);
+        U = t(B),
+        le = t(U);
       ze(le, {
         class: "text-primary size-6"
       });
@@ -303,9 +303,9 @@ function ko(s, e) {
           button: !1
         })
       }
-      o(R), o(Z);
-      var de = n(Z, 2),
-        Y = t(de, !0);
+      o(R), o(U);
+      var de = n(U, 2),
+        Q = t(de, !0);
       o(de), o(B);
       var K = n(B, 2);
       {
@@ -336,9 +336,9 @@ function ko(s, e) {
               $() && I(dt)
             })
           }
-          var Ue = n(He, 2),
-            ct = t(Ue);
-          o(Ue), o(ke);
+          var Ze = n(He, 2),
+            ct = t(Ze);
+          o(Ze), o(ke);
           var pt = n(ke, 2);
           {
             var vt = I => {
@@ -353,16 +353,16 @@ function ko(s, e) {
                 Ie(P);
                 var D = n(P, 2),
                   oe = t(D);
-                Nt(oe, {
+                Yt(oe, {
                   class: "inline size-5"
                 }), X(2), o(D), o(F), o(te);
-                var Ze = n(te, 2),
-                  ue = t(Ze);
-                ue.__click = [Yt, b, a, nt, c];
+                var Ue = n(te, 2),
+                  ue = t(Ue);
+                ue.__click = [Qt, b, a, nt, c];
                 var ft = t(ue);
-                Qe(ft, {
+                Ne(ft, {
                   class: "size-5"
-                }), X(2), o(ue), o(Ze), o(ve), o(x), y(bt => {
+                }), X(2), o(ue), o(Ue), o(ve), o(x), y(bt => {
                   Je(x, 1, `dropdown mt-3 ${lt()??""}`), w(ee, `R$${bt??""}`), ae(F, "action", `${Fe}/payment/create-checkout-session`), Le(P, Se()), D.disabled = _(a), ue.disabled = _(a)
                 }, [() => (he() * 4).toFixed(2).replace(".", ",")]), fe("submit", F, () => {
                   L(a, !0), setTimeout(() => L(a, !1), 3e3)
@@ -462,9 +462,9 @@ function ko(s, e) {
           rt = t(xe, !0);
         o(xe), o(De), o(K), y((A, v, J, $) => {
           w(Me, `${v??""} `), ae(xe, "href", J), w(rt, $)
-        }, [() => Xe(), () => je(), () => Ne(Ae.url.origin), () => Oe()])
+        }, [() => Xe(), () => je(), () => Ye(Ae.url.origin), () => Oe()])
       }
-      o(g), y((z, A, v, J) => w(Y, z), [() => Xe(), () => je(), () => Ne(Ae.url.origin), () => Oe()]), d(l, g)
+      o(g), y((z, A, v, J) => w(Q, z), [() => Xe(), () => je(), () => Ye(Ae.url.origin), () => Oe()]), d(l, g)
     };
     M(S, l => {
       se.data && l(C)
@@ -473,19 +473,19 @@ function ko(s, e) {
   o(h);
   var q = n(h, 2),
     E = t(q),
-    Q = t(E, !0);
+    N = t(E, !0);
   o(E), o(q), o(f), gt(f, () => l => {
     mt(() => {
       r() ? l.show() : l.close()
     })
   });
-  var U = n(f, 2),
-    Pe = t(U),
+  var Z = n(f, 2),
+    Pe = t(Z),
     qe = n(t(Pe), 2),
     ge = t(qe),
     Te = t(ge),
     et = t(Te);
-  Qe(et, {
+  Ne(et, {
     class: "size-10"
   }), X(2), o(Te), o(ge);
   var tt = n(ge, 2);
@@ -493,21 +493,21 @@ function ko(s, e) {
     var ot = l => {
         var g = eo(),
           B = me(g),
-          Z = n(t(B)),
-          le = t(Z);
-        o(Z), o(B);
+          U = n(t(B)),
+          le = t(U);
+        o(U), o(B);
         var R = n(B, 2),
           ie = t(R),
           de = t(ie);
         X(2), o(ie), o(R);
-        var Y = n(R, 2),
-          K = n(t(Y), 2),
+        var Q = n(R, 2),
+          K = n(t(Q), 2),
           H = t(K);
         Ie(H);
         var V = n(H, 2),
           ce = t(V);
-        ce.__click = [Jt, c], o(V), o(K), o(Y);
-        var W = n(Y, 2),
+        ce.__click = [Jt, c], o(V), o(K), o(Q);
+        var W = n(Q, 2),
           G = t(W);
         G.__click = [$t, c, i], o(W), y(pe => {
           w(le, `R$${pe??""}`), ae(de, "src", _(c).qrCode), Le(H, _(c).pixCode), G.disabled = _(i)
@@ -521,17 +521,17 @@ function ko(s, e) {
       _(c) ? l(ot) : l(at, !1)
     })
   }
-  o(qe), o(Pe), o(U), ht(U, l => L(b, l), () => _(b)), y(l => w(Q, l), [() => kt()]), fe("close", f, () => {
+  o(qe), o(Pe), o(Z), ht(Z, l => L(b, l), () => _(b)), y(l => w(N, l), [() => kt()]), fe("close", f, () => {
     r(!1)
-  }), fe("close", U, () => {
+  }), fe("close", Z, () => {
     setTimeout(() => {
       L(c, void 0)
     }, 300)
   }), d(s, p), We()
 }
-Ye(["click"]);
-var ao = N('<svg><path d="M690-240h190v80H610l80-80Zm-500 80-85-85q-23-23-23.5-57t22.5-58l440-456q23-24 56.5-24t56.5 23l199 199q23 23 23 57t-23 57L520-160H190Z"></path></svg>'),
-  so = N('<svg><path d="M690-240h190v80H610l80-80Zm-500 80-85-85q-23-23-23.5-57t22.5-58l440-456q23-24 56.5-24t56.5 23l199 199q23 23 23 57t-23 57L520-160H190Zm296-80 314-322-198-198-442 456 64 64h262Zm-6-240Z"></path></svg>');
+Qe(["click"]);
+var ao = Y('<svg><path d="M690-240h190v80H610l80-80Zm-500 80-85-85q-23-23-23.5-57t22.5-58l440-456q23-24 56.5-24t56.5 23l199 199q23 23 23 57t-23 57L520-160H190Z"></path></svg>'),
+  so = Y('<svg><path d="M690-240h190v80H610l80-80Zm-500 80-85-85q-23-23-23.5-57t22.5-58l440-456q23-24 56.5-24t56.5 23l199 199q23 23 23 57t-23 57L520-160H190Zm296-80 314-322-198-198-442 456 64 64h262Zm-6-240Z"></path></svg>');
 
 function Co(s, e) {
   let r = ne(e, ["$$slots", "$$events", "$$legacy", "filled"]);
@@ -617,5 +617,5 @@ function Lo(s, e) {
   }), () => Math.floor(e.level)]), d(s, a)
 }
 export {
-  Ht as A, Ot as D, Co as I, Lo as P, ze as a, ko as b, wo as c, Ne as d, yo as e, Io as r
+  Ht as A, Ot as D, Co as I, Lo as P, ze as a, ko as b, wo as c, Ye as d, yo as e, Io as r
 };

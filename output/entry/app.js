@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["../nodes/0.BLOxcFk0.js", "../chunks/bMPyssaj.js", "../chunks/DIzpMSlc.js", "../chunks/ByX6hzNF.js", "../chunks/C5nThJWx.js", "../chunks/zXYT7yrv.js", "../chunks/D5NGR3tF.js", "../chunks/D26ZZW2W.js", "../chunks/DKEE6UMw.js", "../chunks/D-qSfoA7.js", "../chunks/DE4J66Ju.js", "../chunks/c9zp7x3R.js", "../chunks/BjAsoSK5.js", "../chunks/BF-CrrjR.js", "../chunks/PaQDKhTA.js", "../chunks/BXEKOsdR.js", "../assets/0.BXV9-z-d.css", "../nodes/1.CQXm6sHJ.js", "../chunks/PjG6NIzU.js", "../chunks/gCZvFuIt.js", "../chunks/Bfnu36pa.js", "../nodes/2.B0Fxe7zT.js", "../chunks/DPeLkW3A.js", "../chunks/D3IW8A9b.js", "../chunks/BRgWQk7F.js", "../nodes/3.CGR6kyQ4.js", "../nodes/4.DT2P6_4P.js", "../chunks/NluDU0nj.js", "../chunks/CBL_FYZm.js", "../chunks/DMdJzLLx.js", "../chunks/CTCS4A0B.js", "../chunks/Debnufp6.js", "../chunks/CjNeAuoq.js", "../chunks/Bm52xllv.js", "../chunks/BJwSEP_C.js", "../chunks/Bed1d1N6.js", "../chunks/B-K0-QeT.js", "../chunks/Dh7kSMLz.js", "../chunks/BHbT38DC.js", "../assets/ProfileAvatarWithLevel.6dmPRSfx.css", "../chunks/kTfaB-xD.js", "../chunks/CcMAS-qV.js", "../assets/LoginForm.CxMG0irz.css", "../chunks/BHe84NO7.js", "../chunks/CHok9xW6.js", "../chunks/Bl_Y9QhS.js", "../chunks/DG2JssIK.js", "../chunks/BDYjjI9H.js", "../assets/4.BtKF873c.css", "../nodes/5.DjLej698.js", "../nodes/6.BXkVUQ48.js", "../nodes/7.C8_aLxsb.js", "../chunks/63MTZBSA.js", "../chunks/D9Z0UF1V.js", "../chunks/CmAvH6uq.js", "../chunks/B4X6Q08t.js", "../nodes/8.BKMFq2uK.js", "../chunks/BiRD16aW.js", "../chunks/DVuNuziv.js", "../chunks/BwLtnN9v.js", "../nodes/9.CbdC12B9.js", "../nodes/10.jJMLcyUb.js", "../chunks/BfBb_3sA.js", "../chunks/BQeyzyLr.js", "../nodes/11.L8yjYDsB.js", "../nodes/12.DfHvkcZ0.js", "../chunks/TxEK35-9.js", "../chunks/Den0mA42.js", "../nodes/13.DwktlqAp.js", "../chunks/C-AIgQHj.js", "../nodes/14.DobkrH4Y.js", "../nodes/15.BvxxeN01.js", "../nodes/16.2RbzkEzm.js", "../nodes/17.BJCEWYmp.js", "../nodes/18.f-ICI646.js", "../assets/18.BD1hRFPA.css", "../nodes/19.DuLmvmaw.js", "../nodes/20.sZqVYm7b.js", "../nodes/21.DmPkBw5e.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["../nodes/0.o2CYLUZ-.js", "../chunks/j_EA_LVk.js", "../chunks/CKspCwjb.js", "../chunks/BR5XpF1A.js", "../chunks/C-1uWn9D.js", "../chunks/25s95Ozt.js", "../chunks/1TzzCJbJ.js", "../chunks/BHVh6a9r.js", "../chunks/3GvnADE0.js", "../chunks/jv6yX6Xj.js", "../chunks/CYVkZf9S.js", "../chunks/D-wGWKJe.js", "../chunks/DqbpgmAY.js", "../chunks/CHwWpExl.js", "../chunks/CvixT5-F.js", "../chunks/DGNQ5UdN.js", "../assets/0.BXV9-z-d.css", "../nodes/1.ujMKoDQt.js", "../chunks/B9Lc3Ksd.js", "../chunks/B4rJ73cs.js", "../chunks/D54Ix0Yg.js", "../nodes/2.CER3disR.js", "../chunks/JFRAHJbA.js", "../chunks/fXnxObSr.js", "../chunks/CS8hSPQd.js", "../nodes/3.C16b9jIZ.js", "../nodes/4.Dm6BIkU2.js", "../chunks/B6GtB6o4.js", "../chunks/CNQkTL-z.js", "../chunks/vGvyqjQZ.js", "../chunks/DBV-XWAA.js", "../chunks/BnyHrHPA.js", "../chunks/DolRDPlL.js", "../chunks/trF1zRLF.js", "../chunks/NBoPTu6w.js", "../chunks/DkU6IOPh.js", "../chunks/CiOuNcRq.js", "../chunks/ITjEQt2I.js", "../chunks/C8aI2Ls3.js", "../assets/ProfileAvatarWithLevel.6dmPRSfx.css", "../chunks/DOnSxF44.js", "../chunks/BPaj077j.js", "../assets/LoginForm.CxMG0irz.css", "../chunks/DFmpm5-t.js", "../chunks/CXFQCqt4.js", "../chunks/DyGw84G5.js", "../chunks/CP1CTEd5.js", "../chunks/zMF1oOIs.js", "../assets/4.BtKF873c.css", "../nodes/5.Cg6LSp8j.js", "../nodes/6.B1r4hbbB.js", "../nodes/7.x2RpGzTS.js", "../chunks/RwfEsoaY.js", "../chunks/z3NM6GDs.js", "../chunks/D-55pRor.js", "../chunks/D91Uy2ur.js", "../nodes/8.CYnqfusi.js", "../chunks/DA7oy7ry.js", "../chunks/BQb6dDiW.js", "../chunks/zmVOPqIL.js", "../nodes/9.C4gK5YHD.js", "../nodes/10.CDhK7yIQ.js", "../chunks/DCExZ5E8.js", "../chunks/Cvki81bR.js", "../nodes/11.D5sXYX1j.js", "../nodes/12.Mg2rURQY.js", "../chunks/CpGgNd15.js", "../chunks/DcYbIqVL.js", "../nodes/13.DtogR8HR.js", "../chunks/DsddKQc4.js", "../nodes/14.C_vtf9KP.js", "../nodes/15.hcZJj-d2.js", "../nodes/16.XVaQywia.js", "../nodes/17.Bdcw_Syx.js", "../nodes/18.CzcU9Ni9.js", "../nodes/19.CvORSdku.js", "../assets/19.BD1hRFPA.css", "../nodes/20.BdM_z_oV.js", "../nodes/21.DcxydlVP.js", "../nodes/22.BDSDgn6J.js"]))) => i.map(i => d[i]);
 var Jn = t => {
   throw TypeError(t)
 };
@@ -7,8 +7,8 @@ var B = (t, e, n) => (Kn(t, e, "read from private field"), n ? n.call(t) : e.get
   Kt = (t, e, n) => e.has(t) ? Jn("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, n),
   Zt = (t, e, n, r) => (Kn(t, e, "write to private field"), r ? r.call(t, n) : e.set(t, n), n);
 import {
-  _ as L
-} from "../chunks/BHe84NO7.js";
+  _ as N
+} from "../chunks/DFmpm5-t.js";
 import {
   D as S,
   d as g,
@@ -37,7 +37,7 @@ import {
   v as Xe,
   w as Q,
   x as da,
-  y as la,
+  y as fa,
   z as Ue,
   A as Cn,
   B as k,
@@ -45,7 +45,7 @@ import {
   E as C,
   F as Et,
   H as Qn,
-  I as fa,
+  I as la,
   J as Gr,
   K as Le,
   L as On,
@@ -124,59 +124,59 @@ import {
   aW as Fa,
   aX as Ma,
   aY as Ha
-} from "../chunks/DKEE6UMw.js";
+} from "../chunks/3GvnADE0.js";
 import {
   s as $a
-} from "../chunks/Bfnu36pa.js";
+} from "../chunks/D54Ix0Yg.js";
 import {
-  aw as vt,
+  Z as vt,
   aW as Ba,
   g as j,
   aF as Ua,
   bo as qa,
-  Z as ja,
+  a9 as ja,
   p as Va,
   x as Wa,
   y as Ga,
-  au as en,
+  Y as en,
   aL as Ya,
   f as os,
   a as ae,
   s as za,
   b as K,
   c as Xa,
-  ay as le,
+  ay as fe,
   d as Ja,
   r as Ka,
   u as Re,
   b4 as Za,
   t as Qa
-} from "../chunks/ByX6hzNF.js";
+} from "../chunks/BR5XpF1A.js";
 import {
   h as ei,
   m as ti,
   u as ni,
   s as ri
-} from "../chunks/C5nThJWx.js";
-import "../chunks/bMPyssaj.js";
+} from "../chunks/C-1uWn9D.js";
+import "../chunks/j_EA_LVk.js";
 import {
   o as si
-} from "../chunks/DIzpMSlc.js";
+} from "../chunks/CKspCwjb.js";
 import {
   p as Ye,
   i as ze
-} from "../chunks/DE4J66Ju.js";
+} from "../chunks/CYVkZf9S.js";
 import {
   c as we
-} from "../chunks/PaQDKhTA.js";
+} from "../chunks/CvixT5-F.js";
 import {
   b as Ae
-} from "../chunks/BF-CrrjR.js";
+} from "../chunks/CHwWpExl.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "271525ca33b9062741a3aa9359d1b5202c5b5a4b"
+      id: "123067dbd61a163d94930a4efc762fdca932af1b"
     }
   } catch {}
 })();
@@ -184,7 +184,7 @@ try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "bcc6de85-c1a7-4324-b950-e2a499027b98", t._sentryDebugIdIdentifier = "sentry-dbid-bcc6de85-c1a7-4324-b950-e2a499027b98")
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "810cbdf2-73a1-4020-9e3f-969741e52fa9", t._sentryDebugIdIdentifier = "sentry-dbid-810cbdf2-73a1-4020-9e3f-969741e52fa9")
   })()
 } catch {}
 
@@ -198,10 +198,10 @@ function ai(t) {
     }
   }
 }
-var fe, Z;
+var le, Z;
 class ii {
   constructor(e) {
-    Kt(this, fe);
+    Kt(this, le);
     Kt(this, Z);
     var a;
     var n = new Map,
@@ -230,7 +230,7 @@ class ii {
       context: e.context,
       intro: e.intro ?? !1,
       recover: e.recover
-    })), (!((a = e == null ? void 0 : e.props) != null && a.$$host) || e.sync === !1) && Ua(), Zt(this, fe, s.$$events);
+    })), (!((a = e == null ? void 0 : e.props) != null && a.$$host) || e.sync === !1) && Ua(), Zt(this, le, s.$$events);
     for (const i of Object.keys(B(this, Z))) i === "$set" || i === "$destroy" || i === "$on" || qa(this, i, {
       get() {
         return B(this, Z)[i]
@@ -250,17 +250,17 @@ class ii {
     B(this, Z).$set(e)
   }
   $on(e, n) {
-    B(this, fe)[e] = B(this, fe)[e] || [];
+    B(this, le)[e] = B(this, le)[e] || [];
     const r = (...s) => n.call(this, ...s);
-    return B(this, fe)[e].push(r), () => {
-      B(this, fe)[e] = B(this, fe)[e].filter(s => s !== r)
+    return B(this, le)[e].push(r), () => {
+      B(this, le)[e] = B(this, le)[e].filter(s => s !== r)
     }
   }
   $destroy() {
     B(this, Z).$destroy()
   }
 }
-fe = new WeakMap, Z = new WeakMap;
+le = new WeakMap, Z = new WeakMap;
 const bt = {},
   ur = {};
 
@@ -387,7 +387,7 @@ function di(t, e) {
   return [n, [...r, e]]
 }
 
-function lr(t, e) {
+function fr(t, e) {
   const n = t[1];
   for (const r of n) {
     const s = r[0].type;
@@ -401,7 +401,7 @@ function _n(t) {
   return e.encodePolyfill ? e.encodePolyfill(t) : new TextEncoder().encode(t)
 }
 
-function li(t) {
+function fi(t) {
   const [e, n] = t;
   let r = JSON.stringify(e);
 
@@ -423,10 +423,10 @@ ${JSON.stringify(i)}
       s(c)
     }
   }
-  return typeof r == "string" ? r : fi(r)
+  return typeof r == "string" ? r : li(r)
 }
 
-function fi(t) {
+function li(t) {
   const e = t.reduce((s, a) => s + a.length, 0),
     n = new Uint8Array(e);
   let r = 0;
@@ -469,7 +469,7 @@ const gi = {
   log: "log_item"
 };
 
-function fr(t) {
+function lr(t) {
   return gi[t]
 }
 
@@ -578,8 +578,8 @@ function yi(t, e, n, r) {
 }
 
 function vi(t, e) {
-  function n(f) {
-    return !!f.trace_id && !!f.public_key
+  function n(l) {
+    return !!l.trace_id && !!l.public_key
   }
   const r = Ne(t[0]),
     s = e == null ? void 0 : e.getDsn(),
@@ -597,17 +597,17 @@ function vi(t, e) {
       beforeSendSpan: o,
       ignoreSpans: c
     } = (e == null ? void 0 : e.getOptions()) || {},
-    u = c != null && c.length ? t.filter(f => !Sn(R(f), c)) : t,
-    l = t.length - u.length;
-  l && (e == null || e.recordDroppedEvent("before_send", "span", l));
-  const d = o ? f => {
-      const m = R(f),
+    u = c != null && c.length ? t.filter(l => !Sn(R(l), c)) : t,
+    f = t.length - u.length;
+  f && (e == null || e.recordDroppedEvent("before_send", "span", f));
+  const d = o ? l => {
+      const m = R(l),
         h = o(m);
       return h || (mn(), m)
     } : R,
     p = [];
-  for (const f of u) {
-    const m = d(f);
+  for (const l of u) {
+    const m = d(l);
     m && p.push(pi(m))
   }
   return qe(i, p)
@@ -624,10 +624,10 @@ function bi(t) {
   } = t.spanContext(), a = Mt(t), i = W(t), o = i === t, c = `[Tracing] Starting ${a?"sampled":"unsampled"} ${o?"root ":""}span`, u = [`op: ${n}`, `name: ${e}`, `ID: ${s}`];
   if (r && u.push(`parent ID: ${r}`), !o) {
     const {
-      op: l,
+      op: f,
       description: d
     } = R(i);
-    u.push(`root ID: ${i.spanContext().spanId}`), l && u.push(`root op: ${l}`), d && u.push(`root description: ${d}`)
+    u.push(`root ID: ${i.spanContext().spanId}`), f && u.push(`root op: ${f}`), d && u.push(`root description: ${d}`)
   }
   g.log(`${c}
   ${u.join(`
@@ -720,7 +720,7 @@ class jt {
       parent_span_id: this._parentSpanId,
       span_id: this._spanId,
       start_timestamp: this._startTime,
-      status: la(this._status),
+      status: fa(this._status),
       timestamp: this._endTime,
       trace_id: this._traceId,
       origin: this._attributes[D],
@@ -760,13 +760,13 @@ class jt {
     r && (Zn(this).scope || C()).captureEvent(r)
   }
   _convertSpanToTransaction() {
-    var l;
+    var f;
     if (!hr(R(this))) return;
     this._name || (S && g.warn("Transaction has no name, falling back to `<unlabeled transaction>`."), this._name = "<unlabeled transaction>");
     const {
       scope: e,
       isolationScope: n
-    } = Zn(this), r = (l = e == null ? void 0 : e.getScopeData().sdkProcessingMetadata) == null ? void 0 : l.normalizedRequest;
+    } = Zn(this), r = (f = e == null ? void 0 : e.getScopeData().sdkProcessingMetadata) == null ? void 0 : f.normalizedRequest;
     if (this._sampled !== !0) return;
     const a = Et(this).filter(d => d !== this && !wi(d)).map(d => R(d)).filter(hr),
       i = this._attributes[Q];
@@ -775,7 +775,7 @@ class jt {
     });
     const o = {
         contexts: {
-          trace: fa(this)
+          trace: la(this)
         },
         spans: a.length > mr ? a.sort((d, p) => d.start_timestamp - p.start_timestamp).slice(0, mr) : a,
         start_timestamp: this._startTime,
@@ -851,7 +851,7 @@ function Ni(t, e, n) {
   const i = n < a;
   return i || S && g.log(`[Tracing] Discarding transaction because it's not included in the random sample (sampling rate = ${Number(s)})`), [i, a, r]
 }
-const ls = "__SENTRY_SUPPRESS_TRACING__";
+const fs = "__SENTRY_SUPPRESS_TRACING__";
 
 function Li(t, e) {
   const n = Mn();
@@ -865,18 +865,18 @@ function Li(t, e) {
     o = i == null ? void 0 : i.clone();
   return Ht(o, () => Oi(a)(() => {
     const u = C(),
-      l = ms(u, a),
-      p = t.onlyIfParent && !l ? new Ee : fs({
-        parentSpan: l,
+      f = ms(u, a),
+      p = t.onlyIfParent && !f ? new Ee : ls({
+        parentSpan: f,
         spanArguments: r,
         forceTransaction: s,
         scope: u
       });
     return $t(u, p), Pi(() => e(p), () => {
       const {
-        status: f
+        status: l
       } = R(p);
-      p.isRecording() && (!f || f === "ok") && p.setStatus({
+      p.isRecording() && (!l || l === "ok") && p.setStatus({
         code: Me,
         message: "internal_error"
       })
@@ -897,7 +897,7 @@ function xe(t) {
   return (t.scope ? i => Ht(t.scope, i) : s !== void 0 ? i => Fn(s, i) : i => i())(() => {
     const i = C(),
       o = ms(i, s);
-    return t.onlyIfParent && !o ? new Ee : fs({
+    return t.onlyIfParent && !o ? new Ee : ls({
       parentSpan: o,
       spanArguments: n,
       forceTransaction: r,
@@ -911,7 +911,7 @@ function Fn(t, e) {
   return n.withActiveSpan ? n.withActiveSpan(t, e) : Ht(r => ($t(r, t || void 0), e(r)))
 }
 
-function fs({
+function ls({
   parentSpan: t,
   spanArguments: e,
   forceTransaction: n,
@@ -1003,29 +1003,29 @@ function _r(t, e, n) {
   const o = i.parentSampled ?? n,
     c = i.spanAttributes,
     u = e.getPropagationContext(),
-    [l, d, p] = e.getScopeData().sdkProcessingMetadata[ls] ? [!1] : Ni(s, {
+    [f, d, p] = e.getScopeData().sdkProcessingMetadata[fs] ? [!1] : Ni(s, {
       name: a,
       parentSampled: o,
       attributes: c,
       parentSampleRate: On((m = u.dsc) == null ? void 0 : m.sample_rate)
     }, u.sampleRand),
-    f = new jt({
+    l = new jt({
       ...t,
       attributes: {
         [Q]: "custom",
         [Jr]: d !== void 0 && p ? d : void 0,
         ...c
       },
-      sampled: l
+      sampled: f
     });
-  return !l && r && (S && g.log("[Tracing] Discarding root span because its trace was not chosen to be sampled."), r.recordDroppedEvent("sample_rate", "transaction")), r && r.emit("spanStart", f), f
+  return !f && r && (S && g.log("[Tracing] Discarding root span because its trace was not chosen to be sampled."), r.recordDroppedEvent("sample_rate", "transaction")), r && r.emit("spanStart", l), l
 }
 
 function Ci(t, e, n) {
   const {
     spanId: r,
     traceId: s
-  } = t.spanContext(), a = e.getScopeData().sdkProcessingMetadata[ls] ? !1 : Mt(t), i = a ? new jt({
+  } = t.spanContext(), a = e.getScopeData().sdkProcessingMetadata[fs] ? !1 : Mt(t), i = a ? new jt({
     ...n,
     parentSpanId: r,
     traceId: s,
@@ -1069,7 +1069,7 @@ function gs(t, e = {}) {
     {
       idleTimeout: c = It.idleTimeout,
       finalTimeout: u = It.finalTimeout,
-      childSpanTimeout: l = It.childSpanTimeout,
+      childSpanTimeout: f = It.childSpanTimeout,
       beforeSpanEnd: d
     } = e,
     p = k();
@@ -1082,18 +1082,18 @@ function gs(t, e = {}) {
       };
     return Tt(E, b), E
   }
-  const f = C(),
+  const l = C(),
     m = G(),
     h = Hi(t);
   h.end = new Proxy(h.end, {
     apply(E, b, be) {
       if (d && d(h), b instanceof Ee) return;
-      const [me, ...ge] = be, ce = me || q(), N = Xe(ce), H = Et(h).filter(P => P !== h);
-      if (!H.length) return z(N), Reflect.apply(E, b, [N, ...ge]);
+      const [me, ...ge] = be, ce = me || q(), L = Xe(ce), H = Et(h).filter(P => P !== h);
+      if (!H.length) return z(L), Reflect.apply(E, b, [L, ...ge]);
       const X = H.map(P => R(P).timestamp).filter(P => !!P),
         y = X.length ? Math.max(...X) : void 0,
         A = R(h).start_timestamp,
-        v = Math.min(A ? A + u / 1e3 : 1 / 0, Math.max(A || -1 / 0, Math.min(N, y || 1 / 0)));
+        v = Math.min(A ? A + u / 1e3 : 1 / 0, Math.max(A || -1 / 0, Math.min(L, y || 1 / 0)));
       return z(v), Reflect.apply(E, b, [v, ...ge])
     }
   });
@@ -1111,13 +1111,13 @@ function gs(t, e = {}) {
   function M(E) {
     s = setTimeout(() => {
       !r && i && (a = xi, h.end(E))
-    }, l)
+    }, f)
   }
 
   function $(E) {
     x(), n.set(E, !0);
     const b = q();
-    M(b + l / 1e3)
+    M(b + f / 1e3)
   }
 
   function oe(E) {
@@ -1128,21 +1128,21 @@ function gs(t, e = {}) {
   }
 
   function z(E) {
-    r = !0, n.clear(), o.forEach(N => N()), $t(f, m);
+    r = !0, n.clear(), o.forEach(L => L()), $t(l, m);
     const b = R(h),
       {
         start_timestamp: be
       } = b;
     if (!be) return;
     b.data[kt] || h.setAttribute(kt, a), g.log(`[Tracing] Idle span "${b.op}" finished`);
-    const ge = Et(h).filter(N => N !== h);
+    const ge = Et(h).filter(L => L !== h);
     let ce = 0;
-    ge.forEach(N => {
-      N.isRecording() && (N.setStatus({
+    ge.forEach(L => {
+      L.isRecording() && (L.setStatus({
         code: Me,
         message: "cancelled"
-      }), N.end(E), S && g.log("[Tracing] Cancelling span since span ended early", JSON.stringify(N, void 0, 2)));
-      const H = R(N),
+      }), L.end(E), S && g.log("[Tracing] Cancelling span since span ended early", JSON.stringify(L, void 0, 2)));
+      const H = R(L),
         {
           timestamp: X = 0,
           start_timestamp: y = 0
@@ -1151,9 +1151,9 @@ function gs(t, e = {}) {
         v = (u + c) / 1e3,
         P = X - y <= v;
       if (S) {
-        const w = JSON.stringify(N, void 0, 2);
+        const w = JSON.stringify(L, void 0, 2);
         A ? P || g.log("[Tracing] Discarding span since it finished after idle span final timeout", w) : g.log("[Tracing] Discarding span since it happened after idle span was finished", w)
-      }(!P || !A) && (ga(h, N), ce++)
+      }(!P || !A) && (ga(h, L), ce++)
     }), ce > 0 && h.setAttribute("sentry.idle_span_discarded_spans", ce)
   }
   return o.push(p.on("spanStart", E => {
@@ -1507,8 +1507,8 @@ class Ji {
     if (a) {
       s = !0;
       for (const u of a) {
-        const l = u.mechanism;
-        if ((l == null ? void 0 : l.handled) === !1) {
+        const f = u.mechanism;
+        if ((f == null ? void 0 : f.handled) === !1) {
           r = !0;
           break
         }
@@ -1563,42 +1563,42 @@ class Ji {
       o = Ts(e),
       c = En(e),
       u = e.type || "error",
-      l = `before send for type \`${u}\``,
+      f = `before send for type \`${u}\``,
       d = typeof i > "u" ? void 0 : On(i);
     if (c && typeof d == "number" && Math.random() > d) return this.recordDroppedEvent("sample_rate", "error"), Nt(rn(`Discarding event because it's not included in the random sample (sampling rate = ${i})`));
     const p = u === "replay_event" ? "replay" : u;
-    return this._prepareEvent(e, n, r, s).then(f => {
-      if (f === null) throw this.recordDroppedEvent("event_processor", p), rn("An event processor returned `null`, will not send event.");
-      if (n.data && n.data.__sentry__ === !0) return f;
-      const h = Zi(this, a, f, n);
-      return Ki(h, l)
-    }).then(f => {
+    return this._prepareEvent(e, n, r, s).then(l => {
+      if (l === null) throw this.recordDroppedEvent("event_processor", p), rn("An event processor returned `null`, will not send event.");
+      if (n.data && n.data.__sentry__ === !0) return l;
+      const h = Zi(this, a, l, n);
+      return Ki(h, f)
+    }).then(l => {
       var x;
-      if (f === null) {
+      if (l === null) {
         if (this.recordDroppedEvent("before_send", p), o) {
           const M = 1 + (e.spans || []).length;
           this.recordDroppedEvent("before_send", "span", M)
         }
-        throw rn(`${l} returned \`null\`, will not send event.`)
+        throw rn(`${f} returned \`null\`, will not send event.`)
       }
       const m = r.getSession() || s.getSession();
-      if (c && m && this._updateSessionFromEvent(m, f), o) {
-        const I = ((x = f.sdkProcessingMetadata) == null ? void 0 : x.spanCountBeforeProcessing) || 0,
-          M = f.spans ? f.spans.length : 0,
+      if (c && m && this._updateSessionFromEvent(m, l), o) {
+        const I = ((x = l.sdkProcessingMetadata) == null ? void 0 : x.spanCountBeforeProcessing) || 0,
+          M = l.spans ? l.spans.length : 0,
           $ = I - M;
         $ > 0 && this.recordDroppedEvent("before_send", "span", $)
       }
-      const h = f.transaction_info;
-      if (o && h && f.transaction !== e.transaction) {
+      const h = l.transaction_info;
+      if (o && h && l.transaction !== e.transaction) {
         const I = "custom";
-        f.transaction_info = {
+        l.transaction_info = {
           ...h,
           source: I
         }
       }
-      return this.sendEvent(f, n), f
-    }).then(null, f => {
-      throw br(f) || vr(f) ? f : (this.captureException(f, {
+      return this.sendEvent(l, n), l
+    }).then(null, l => {
+      throw br(l) || vr(l) ? l : (this.captureException(l, {
         mechanism: {
           handled: !1,
           type: "internal"
@@ -1606,9 +1606,9 @@ class Ji {
         data: {
           __sentry__: !0
         },
-        originalException: f
+        originalException: l
       }), Rt(`Event processing pipeline threw an error, original event will not be sent. Details have been sent as a new event.
-Reason: ${f}`))
+Reason: ${l}`))
     })
   }
   _process(e) {
@@ -1668,24 +1668,24 @@ function Zi(t, e, n, r) {
       const u = zi(c);
       if (o != null && o.length && Sn(u, o)) return null;
       if (i) {
-        const l = i(u);
-        l ? c = Ta(n, Xi(l)) : mn()
+        const f = i(u);
+        f ? c = Ta(n, Xi(f)) : mn()
       }
       if (c.spans) {
-        const l = [],
+        const f = [],
           d = c.spans;
-        for (const f of d) {
-          if (o != null && o.length && Sn(f, o)) {
-            _i(d, f);
+        for (const l of d) {
+          if (o != null && o.length && Sn(l, o)) {
+            _i(d, l);
             continue
           }
           if (i) {
-            const m = i(f);
-            m ? l.push(m) : (mn(), l.push(f))
-          } else l.push(f)
+            const m = i(l);
+            m ? f.push(m) : (mn(), f.push(l))
+          } else f.push(l)
         }
-        const p = c.spans.length - l.length;
-        p && t.recordDroppedEvent("before_send", "span", p), c.spans = l
+        const p = c.spans.length - f.length;
+        p && t.recordDroppedEvent("before_send", "span", p), c.spans = f
       }
     }
     if (a) {
@@ -1778,12 +1778,12 @@ function so(t) {
     return new Kr((o, c) => {
       let u = e.length;
       if (!u) return o(!0);
-      const l = setTimeout(() => {
+      const f = setTimeout(() => {
         i && i > 0 && o(!1)
       }, i);
       e.forEach(d => {
         Ce(d).then(() => {
-          --u || (clearTimeout(l), o(!0))
+          --u || (clearTimeout(f), o(!0))
         }, c)
       })
     })
@@ -1822,37 +1822,37 @@ function uo(t, {
     i = n == null ? void 0 : n["retry-after"];
   if (a)
     for (const o of a.trim().split(",")) {
-      const [c, u, , , l] = o.split(":", 5), d = parseInt(c, 10), p = (isNaN(d) ? 60 : d) * 1e3;
+      const [c, u, , , f] = o.split(":", 5), d = parseInt(c, 10), p = (isNaN(d) ? 60 : d) * 1e3;
       if (!u) s.all = r + p;
       else
-        for (const f of u.split(";")) f === "metric_bucket" ? (!l || l.split(";").includes("custom")) && (s[f] = r + p) : s[f] = r + p
+        for (const l of u.split(";")) l === "metric_bucket" ? (!f || f.split(";").includes("custom")) && (s[l] = r + p) : s[l] = r + p
     } else i ? s.all = r + io(i, r) : e === 429 && (s.all = r + 60 * 1e3);
   return s
 }
-const lo = 64;
+const fo = 64;
 
-function fo(t, e, n = so(t.bufferSize || lo)) {
+function lo(t, e, n = so(t.bufferSize || fo)) {
   let r = {};
   const s = i => n.drain(i);
 
   function a(i) {
     const o = [];
-    if (lr(i, (d, p) => {
-        const f = fr(p);
-        co(r, f) ? t.recordDroppedEvent("ratelimit_backoff", f) : o.push(d)
+    if (fr(i, (d, p) => {
+        const l = lr(p);
+        co(r, l) ? t.recordDroppedEvent("ratelimit_backoff", l) : o.push(d)
       }), o.length === 0) return Ce({});
     const c = qe(i[0], o),
       u = d => {
-        lr(c, (p, f) => {
-          t.recordDroppedEvent(d, fr(f))
+        fr(c, (p, l) => {
+          t.recordDroppedEvent(d, lr(l))
         })
       },
-      l = () => e({
-        body: li(c)
+      f = () => e({
+        body: fi(c)
       }).then(d => (d.statusCode !== void 0 && (d.statusCode < 200 || d.statusCode >= 300) && S && g.warn(`Sentry responded with status code ${d.statusCode} to sent event.`), r = uo(r, d), d), d => {
         throw u("network_error"), S && g.error("Encountered error running transport request:", d), d
       });
-    return n.add(l).then(d => d, d => {
+    return n.add(f).then(d => d, d => {
       if (d === vs) return S && g.error("Skipped sending event because buffer is full."), u("queue_overflow"), Ce({});
       throw d
     })
@@ -1941,15 +1941,15 @@ function Rs(t = {}) {
     o = a ? Ne(a) : Zr(e, s),
     c = Ia(o);
   if (!Ra.test(i)) return g.warn("Invalid sentry-trace data. Cannot generate trace data"), {};
-  const l = {
+  const f = {
     "sentry-trace": i,
     baggage: c
   };
   if (t.propagateTraceparent) {
     const d = So(i);
-    d && (l.traceparent = d)
+    d && (f.traceparent = d)
   }
-  return l
+  return f
 }
 
 function _o(t) {
@@ -2121,15 +2121,15 @@ function Tn(t, e, n, r, s, a, i, o) {
   if (Lt(r[s], Error)) {
     Ar(i, o);
     const u = t(e, r[s]),
-      l = c.length;
-    Pr(u, s, l, o), c = Tn(t, e, n, r[s], s, [u, ...c], u, l)
+      f = c.length;
+    Pr(u, s, f, o), c = Tn(t, e, n, r[s], s, [u, ...c], u, f)
   }
-  return Array.isArray(r.errors) && r.errors.forEach((u, l) => {
+  return Array.isArray(r.errors) && r.errors.forEach((u, f) => {
     if (Lt(u, Error)) {
       Ar(i, o);
       const d = t(e, u),
         p = c.length;
-      Pr(d, `errors[${l}]`, p, o), c = Tn(t, e, n, u, s, [d, ...c], d, p)
+      Pr(d, `errors[${f}]`, p, o), c = Tn(t, e, n, u, s, [d, ...c], d, p)
     }
   }), c
 }
@@ -2254,10 +2254,10 @@ function Vo(t, e, n, r, s) {
     url: i
   } = t.fetchData, o = Le() && e(i);
   if (t.endTimestamp && o) {
-    const f = t.fetchData.__span;
-    if (!f) return;
-    const m = r[f];
-    m && (Go(m, t), delete r[f]);
+    const l = t.fetchData.__span;
+    if (!l) return;
+    const m = r[l];
+    m && (Go(m, t), delete r[l]);
     return
   }
   const {
@@ -2265,22 +2265,22 @@ function Vo(t, e, n, r, s) {
     propagateTraceparent: u = !1
   } = typeof s == "object" ? s : {
     spanOrigin: s
-  }, l = !!G(), d = o && l ? xe(zo(i, a, c)) : new Ee;
+  }, f = !!G(), d = o && f ? xe(zo(i, a, c)) : new Ee;
   if (t.fetchData.__span = d.spanContext().spanId, r[d.spanContext().spanId] = d, n(t.fetchData.url)) {
-    const f = t.args[0],
+    const l = t.args[0],
       m = t.args[1] || {},
-      h = Wo(f, m, Le() && l ? d : void 0, u);
+      h = Wo(l, m, Le() && f ? d : void 0, u);
     h && (t.args[1] = m, m.headers = h)
   }
   const p = k();
   if (p) {
-    const f = {
+    const l = {
       input: t.args,
       response: t.response,
       startTimestamp: t.startTimestamp,
       endTimestamp: t.endTimestamp
     };
-    p.emit("beforeOutgoingRequestSpan", d, f)
+    p.emit("beforeOutgoingRequestSpan", d, l)
   }
   return d
 }
@@ -2299,28 +2299,28 @@ function Wo(t, e, n, r) {
     if (Yo(c)) {
       const u = new Headers(c);
       if (u.get("sentry-trace") || u.set("sentry-trace", a), r && o && !u.get("traceparent") && u.set("traceparent", o), i) {
-        const l = u.get("baggage");
-        l ? mt(l) || u.set("baggage", `${l},${i}`) : u.set("baggage", i)
+        const f = u.get("baggage");
+        f ? mt(f) || u.set("baggage", `${f},${i}`) : u.set("baggage", i)
       }
       return u
     } else if (Array.isArray(c)) {
     const u = [...c];
     c.find(d => d[0] === "sentry-trace") || u.push(["sentry-trace", a]), r && o && !c.find(d => d[0] === "traceparent") && u.push(["traceparent", o]);
-    const l = c.find(d => d[0] === "baggage" && mt(d[1]));
-    return i && !l && u.push(["baggage", i]), u
+    const f = c.find(d => d[0] === "baggage" && mt(d[1]));
+    return i && !f && u.push(["baggage", i]), u
   } else {
     const u = "sentry-trace" in c ? c["sentry-trace"] : void 0,
-      l = "traceparent" in c ? c.traceparent : void 0,
+      f = "traceparent" in c ? c.traceparent : void 0,
       d = "baggage" in c ? c.baggage : void 0,
       p = d ? Array.isArray(d) ? [...d] : [d] : [],
-      f = d && (Array.isArray(d) ? d.find(h => mt(h)) : mt(d));
-    i && !f && p.push(i);
+      l = d && (Array.isArray(d) ? d.find(h => mt(h)) : mt(d));
+    i && !l && p.push(i);
     const m = {
       ...c,
       "sentry-trace": u ?? a,
       baggage: p.length > 0 ? p.join(",") : void 0
     };
-    return r && o && !l && (m.traceparent = o), m
+    return r && o && !f && (m.traceparent = o), m
   } else return {
     ...s
   }
@@ -2614,7 +2614,7 @@ function Bn(t, e) {
   const n = Un(t, e),
     r = {
       type: dc(e),
-      value: lc(e)
+      value: fc(e)
     };
   return n.length && (r.stacktrace = {
     frames: n
@@ -2690,12 +2690,12 @@ function dc(t) {
   return !e && Cs(t) ? t.message && Array.isArray(t.message) && t.message.length == 2 ? t.message[0] : "WebAssembly.Exception" : e
 }
 
-function lc(t) {
+function fc(t) {
   const e = t == null ? void 0 : t.message;
   return Cs(t) ? Array.isArray(t.message) && t.message.length == 2 ? t.message[1] : "wasm exception" : e ? e.error && typeof e.error.message == "string" ? e.error.message : e : "No error message"
 }
 
-function fc(t, e, n, r) {
+function lc(t, e, n, r) {
   const s = (n == null ? void 0 : n.syntheticException) || void 0,
     a = qn(t, e, s, r);
   return tt(a), a.level = "error", n != null && n.event_id && (a.event_id = n.event_id), Ce(a)
@@ -2806,7 +2806,7 @@ class Sc extends Ji {
     })), s && this.on("beforeSendSession", ho)
   }
   eventFromException(e, n) {
-    return fc(this._options.stackParser, e, n, this._options.attachStacktrace)
+    return lc(this._options.stackParser, e, n, this._options.attachStacktrace)
   }
   eventFromMessage(e, n = "info", r) {
     return pc(this._options.stackParser, e, n, r, this._options.attachStacktrace)
@@ -2953,7 +2953,7 @@ const vc = () => {
       let r;
       const s = jn(e, Ot),
         a = u => {
-          for (const l of u) s._processEntry(l);
+          for (const f of u) s._processEntry(f);
           s._sessionValue > n.value && (n.value = s._sessionValue, n.entries = s._sessionEntries, r())
         },
         i = Ve("layout-shift", a);
@@ -3122,7 +3122,7 @@ function Be(t, e) {
   return js(t, e), Ft[t] || (Gc(t), Ft[t] = !0), Vs(t, e)
 }
 
-function lt(t, e) {
+function ft(t, e) {
   const n = Ze[t];
   if (n != null && n.length)
     for (const r of n) try {
@@ -3137,7 +3137,7 @@ Error:`, s)
 
 function qc() {
   return Pc(t => {
-    lt("cls", {
+    ft("cls", {
       metric: t
     }), Ms = t
   }, {
@@ -3147,7 +3147,7 @@ function qc() {
 
 function jc() {
   return Mc(t => {
-    lt("lcp", {
+    ft("lcp", {
       metric: t
     }), Hs = t
   }, {
@@ -3157,7 +3157,7 @@ function jc() {
 
 function Vc() {
   return $c(t => {
-    lt("ttfb", {
+    ft("ttfb", {
       metric: t
     }), $s = t
   })
@@ -3165,7 +3165,7 @@ function Vc() {
 
 function Wc() {
   return xc(t => {
-    lt("inp", {
+    ft("inp", {
       metric: t
     }), Bs = t
   })
@@ -3182,7 +3182,7 @@ function Gt(t, e, n, r, s = !1) {
 function Gc(t) {
   const e = {};
   t === "event" && (e.durationThreshold = 0), Ve(t, n => {
-    lt(t, {
+    ft(t, {
       entries: n
     })
   }, e)
@@ -3236,7 +3236,7 @@ function Yn(t) {
     release: i,
     environment: o,
     sendDefaultPii: c
-  } = e.getOptions(), u = e.getIntegrationByName("Replay"), l = u == null ? void 0 : u.getReplayId(), d = C(), p = d.getUser(), f = p !== void 0 ? p.email || p.id || p.ip_address : void 0;
+  } = e.getOptions(), u = e.getIntegrationByName("Replay"), f = u == null ? void 0 : u.getReplayId(), d = C(), p = d.getUser(), l = p !== void 0 ? p.email || p.id || p.ip_address : void 0;
   let m;
   try {
     m = d.getScopeData().contexts.profile.profile_id
@@ -3244,9 +3244,9 @@ function Yn(t) {
   const h = {
     release: i,
     environment: o,
-    user: f || void 0,
+    user: l || void 0,
     profile_id: m || void 0,
-    replay_id: l || void 0,
+    replay_id: f || void 0,
     transaction: r,
     "user_agent.original": (x = _.navigator) == null ? void 0 : x.userAgent,
     "client.address": c ? "{{auto}}" : void 0,
@@ -3348,8 +3348,8 @@ function Xc(t, e, n, r) {
       "sentry.pageload.span_id": n,
       "sentry.report_event": r
     };
-  e != null && e.sources && e.sources.forEach((l, d) => {
-    o[`cls.source.${d+1}`] = pe(l.node)
+  e != null && e.sources && e.sources.forEach((f, d) => {
+    o[`cls.source.${d+1}`] = pe(f.node)
   });
   const c = Yn({
     name: i,
@@ -3467,13 +3467,13 @@ function tu() {
           },
           u = r.scripts[0],
           {
-            invoker: l,
+            invoker: f,
             invokerType: d,
             sourceURL: p,
-            sourceFunctionName: f,
+            sourceFunctionName: l,
             sourceCharPosition: m
           } = u;
-        c["browser.script.invoker"] = l, c["browser.script.invoker_type"] = d, p && (c["code.filepath"] = p), f && (c["code.function"] = f), m !== -1 && (c["browser.script.source_char_position"] = m), Te(n, s, s + o, {
+        c["browser.script.invoker"] = f, c["browser.script.invoker_type"] = d, p && (c["code.filepath"] = p), l && (c["code.function"] = l), m !== -1 && (c["browser.script.source_char_position"] = m), Te(n, s, s + o, {
           name: "Main UI thread blocked",
           op: "ui.long-animation-frame",
           attributes: c
@@ -3557,7 +3557,7 @@ function iu(t, e) {
     } = R(t);
   a.slice(Cr).forEach(c => {
     const u = O(c.startTime),
-      l = O(Math.max(0, c.duration));
+      f = O(Math.max(0, c.duration));
     if (!(i === "navigation" && o && s + u < o)) switch (c.entryType) {
       case "navigation": {
         uu(t, c, s);
@@ -3566,7 +3566,7 @@ function iu(t, e) {
       case "mark":
       case "paint":
       case "measure": {
-        ou(t, c, u, l, s, e.ignorePerformanceApiSpans);
+        ou(t, c, u, f, s, e.ignorePerformanceApiSpans);
         const d = Wn(),
           p = c.startTime < d.firstHiddenTime;
         c.name === "first-paint" && p && (re.fp = {
@@ -3579,7 +3579,7 @@ function iu(t, e) {
         break
       }
       case "resource": {
-        fu(t, c, c.name, u, l, s, e.ignoreResourceSpans);
+        lu(t, c, c.name, u, f, s, e.ignoreResourceSpans);
         break
       }
     }
@@ -3594,11 +3594,11 @@ function ou(t, e, n, r, s, a) {
     o = O(i ? i.requestStart : 0),
     c = s + Math.max(n, o),
     u = s + n,
-    l = u + r,
+    f = u + r,
     d = {
       [D]: "auto.resource.browser.metrics"
     };
-  c !== u && (d["sentry.browser.measure_happened_before_request"] = !0, d["sentry.browser.measure_start_time"] = c), cu(d, e), c <= l && Te(t, c, l, {
+  c !== u && (d["sentry.browser.measure_happened_before_request"] = !0, d["sentry.browser.measure_start_time"] = c), cu(d, e), c <= f && Te(t, c, f, {
     name: e.name,
     op: e.entryType,
     attributes: d
@@ -3630,7 +3630,7 @@ function cu(t, e) {
 function uu(t, e, n) {
   ["unloadEvent", "redirect", "domContentLoadedEvent", "loadEvent", "connect"].forEach(r => {
     ht(t, e, r, n)
-  }), ht(t, e, "secureConnection", n, "TLS/SSL"), ht(t, e, "fetch", n, "cache"), ht(t, e, "domainLookup", n, "DNS"), lu(t, e, n)
+  }), ht(t, e, "secureConnection", n, "TLS/SSL"), ht(t, e, "fetch", n, "cache"), ht(t, e, "domainLookup", n, "DNS"), fu(t, e, n)
 }
 
 function ht(t, e, n, r, s = n) {
@@ -3653,7 +3653,7 @@ function du(t) {
   return t === "secureConnection" ? "connectEnd" : t === "fetch" ? "domainLookupStart" : `${t}End`
 }
 
-function lu(t, e, n) {
+function fu(t, e, n) {
   const r = n + O(e.requestStart),
     s = n + O(e.responseEnd),
     a = n + O(e.responseStart);
@@ -3672,7 +3672,7 @@ function lu(t, e, n) {
   }))
 }
 
-function fu(t, e, n, r, s, a, i) {
+function lu(t, e, n, r, s, a, i) {
   if (e.initiatorType === "xmlhttprequest" || e.initiatorType === "fetch") return;
   const o = e.initiatorType ? `resource.${e.initiatorType}` : "resource.other";
   if (i != null && i.includes(o)) return;
@@ -3680,9 +3680,9 @@ function fu(t, e, n, r, s, a, i) {
     u = {
       [D]: "auto.resource.browser.metrics"
     };
-  ln(u, e, "transferSize", "http.response_transfer_size"), ln(u, e, "encodedBodySize", "http.response_content_length"), ln(u, e, "decodedBodySize", "http.decoded_response_content_length");
-  const l = e.deliveryType;
-  l != null && (u["http.response_delivery_type"] = l);
+  fn(u, e, "transferSize", "http.response_transfer_size"), fn(u, e, "encodedBodySize", "http.response_content_length"), fn(u, e, "decodedBodySize", "http.decoded_response_content_length");
+  const f = e.deliveryType;
+  f != null && (u["http.response_delivery_type"] = f);
   const d = e.renderBlockingStatus;
   if (d && (u["resource.render_blocking_status"] = d), c.protocol && (u["url.scheme"] = c.protocol.split(":").pop()), c.host && (u["server.address"] = c.host), u["url.same_origin"] = n.includes(_.location.origin), e.nextHopProtocol != null) {
     const {
@@ -3692,8 +3692,8 @@ function fu(t, e, n, r, s, a, i) {
     u["network.protocol.name"] = m, u["network.protocol.version"] = h
   }
   const p = a + r,
-    f = p + s;
-  Te(t, p, f, {
+    l = p + s;
+  Te(t, p, l, {
     name: n.replace(_.location.origin, ""),
     op: o,
     attributes: u
@@ -3714,7 +3714,7 @@ function mu(t, e) {
   U && e.recordLcpOnPageloadSpan && (U.element && t.setAttribute("lcp.element", pe(U.element)), U.id && t.setAttribute("lcp.id", U.id), U.url && t.setAttribute("lcp.url", U.url.trim().slice(0, 200)), U.loadTime != null && t.setAttribute("lcp.loadTime", U.loadTime), U.renderTime != null && t.setAttribute("lcp.renderTime", U.renderTime), t.setAttribute("lcp.size", U.size)), De != null && De.sources && e.recordClsOnPageloadSpan && De.sources.forEach((n, r) => t.setAttribute(`cls.source.${r+1}`, pe(n.node)))
 }
 
-function ln(t, e, n, r) {
+function fn(t, e, n, r) {
   const s = e[n];
   s != null && s < Zc && (t[r] = s)
 }
@@ -3742,22 +3742,22 @@ const _u = ({
       n = e ? W(e) : void 0,
       r = n ? R(n).description : C().getScopeData().transactionName;
     t.forEach(s => {
-      var f, m;
+      var l, m;
       const a = s;
       if (!a.identifier) return;
       const i = a.name,
         o = a.renderTime,
         c = a.loadTime,
-        [u, l] = c ? [O(c), "load-time"] : o ? [O(o), "render-time"] : [q(), "entry-emission"],
+        [u, f] = c ? [O(c), "load-time"] : o ? [O(o), "render-time"] : [q(), "entry-emission"],
         d = i === "image-paint" ? O(Math.max(0, (o ?? 0) - (c ?? 0))) : 0,
         p = {
           [D]: "auto.ui.browser.elementtiming",
           [Se]: "ui.elementtiming",
           [Q]: "component",
-          "sentry.span_start_time_source": l,
+          "sentry.span_start_time_source": f,
           "sentry.transaction_name": r,
           "element.id": a.id,
-          "element.type": ((m = (f = a.element) == null ? void 0 : f.tagName) == null ? void 0 : m.toLowerCase()) || "unknown",
+          "element.type": ((m = (l = a.element) == null ? void 0 : l.tagName) == null ? void 0 : m.toLowerCase()) || "unknown",
           "element.size": a.naturalWidth && a.naturalHeight ? `${a.naturalWidth}x${a.naturalHeight}` : void 0,
           "element.render_time": o,
           "element.load_time": c,
@@ -3790,28 +3790,28 @@ function Tu() {
     var a, i;
     const s = (a = _[n]) == null ? void 0 : a.prototype;
     (i = s == null ? void 0 : s.hasOwnProperty) != null && i.call(s, "addEventListener") && (V(s, "addEventListener", function(o) {
-      return function(c, u, l) {
+      return function(c, u, f) {
         if (c === "click" || c == "keypress") try {
           const d = this.__sentry_instrumentation_handlers__ = this.__sentry_instrumentation_handlers__ || {},
             p = d[c] = d[c] || {
               refCount: 0
             };
           if (!p.handler) {
-            const f = xr(t);
-            p.handler = f, o.call(this, c, f, l)
+            const l = xr(t);
+            p.handler = l, o.call(this, c, l, f)
           }
           p.refCount++
         } catch {}
-        return o.call(this, c, u, l)
+        return o.call(this, c, u, f)
       }
     }), V(s, "removeEventListener", function(o) {
-      return function(c, u, l) {
+      return function(c, u, f) {
         if (c === "click" || c == "keypress") try {
           const d = this.__sentry_instrumentation_handlers__ || {},
             p = d[c];
-          p && (p.refCount--, p.refCount <= 0 && (o.call(this, c, p.handler, l), p.handler = void 0, delete d[c]), Object.keys(d).length === 0 && delete this.__sentry_instrumentation_handlers__)
+          p && (p.refCount--, p.refCount <= 0 && (o.call(this, c, p.handler, f), p.handler = void 0, delete d[c]), Object.keys(d).length === 0 && delete this.__sentry_instrumentation_handlers__)
         } catch {}
-        return o.call(this, c, u, l)
+        return o.call(this, c, u, f)
       }
     }))
   })
@@ -3945,23 +3945,23 @@ function Au() {
           try {
             u.status_code = n.status
           } catch {}
-          const l = {
+          const f = {
             endTimestamp: q() * 1e3,
             startTimestamp: a,
             xhr: n,
             virtualError: s
           };
-          ee("xhr", l)
+          ee("xhr", f)
         }
       };
       return "onreadystatechange" in n && typeof n.onreadystatechange == "function" ? n.onreadystatechange = new Proxy(n.onreadystatechange, {
-        apply(u, l, d) {
-          return c(), u.apply(l, d)
+        apply(u, f, d) {
+          return c(), u.apply(f, d)
         }
       }) : n.addEventListener("readystatechange", c), n.setRequestHeader = new Proxy(n.setRequestHeader, {
-        apply(u, l, d) {
-          const [p, f] = d, m = l[Fe];
-          return m && Je(p) && Je(f) && (m.request_headers[p.toLowerCase()] = f), u.apply(l, d)
+        apply(u, f, d) {
+          const [p, l] = d, m = f[Fe];
+          return m && Je(p) && Je(l) && (m.request_headers[p.toLowerCase()] = l), u.apply(f, d)
         }
       }), e.apply(n, r)
     }
@@ -3985,7 +3985,7 @@ function Pu(t) {
     return t.toString()
   } catch {}
 }
-const fn = [],
+const ln = [],
   At = new Map,
   ku = 60;
 
@@ -4040,20 +4040,20 @@ const Cu = ({
   if (!n) return;
   const {
     interactionId: r
-  } = n, s = Fr[n.name], a = O(Y() + n.startTime), i = G(), o = i ? W(i) : void 0, u = (r != null ? At.get(r) : void 0) || o, l = u ? R(u).description : C().getScopeData().transactionName, d = pe(n.target), p = {
+  } = n, s = Fr[n.name], a = O(Y() + n.startTime), i = G(), o = i ? W(i) : void 0, u = (r != null ? At.get(r) : void 0) || o, f = u ? R(u).description : C().getScopeData().transactionName, d = pe(n.target), p = {
     [D]: "auto.http.browser.inp",
     [Se]: `ui.interaction.${s}`,
     [Ue]: n.duration
-  }, f = Yn({
+  }, l = Yn({
     name: d,
-    transaction: l,
+    transaction: f,
     attributes: p,
     startTime: a
   });
-  f && (f.addEvent("inp", {
+  l && (l.addEvent("inp", {
     [at]: "millisecond",
     [it]: t.value
-  }), f.end(a + e))
+  }), l.end(a + e))
 };
 
 function Ou() {
@@ -4066,11 +4066,11 @@ function Ou() {
       if (!Yc(s) || !r) return;
       const a = s.interactionId;
       if (a != null && !At.has(a)) {
-        if (fn.length > 10) {
-          const i = fn.shift();
+        if (ln.length > 10) {
+          const i = ln.shift();
           At.delete(i)
         }
-        fn.push(a), At.set(a, r)
+        ln.push(a), At.set(a, r)
       }
     })
   };
@@ -4105,7 +4105,7 @@ function xu(t, e = wu("fetch")) {
       return Dr("fetch"), n -= i, r--, Nt(c)
     }
   }
-  return fo(t, s)
+  return lo(t, s)
 }
 const Du = 30,
   Fu = 50;
@@ -4209,11 +4209,11 @@ function Qu(t, e) {
     o && o > St && (te && g.warn(`\`dom.maxStringLength\` cannot exceed ${St}, but a value of ${o} was configured. Sentry will use ${St} instead.`), o = St), typeof i == "string" && (i = [i]);
     try {
       const u = r.event,
-        l = sd(u) ? u.target : u;
-      s = pe(l, {
+        f = sd(u) ? u.target : u;
+      s = pe(f, {
         keyAttrs: i,
         maxStringLength: o
-      }), a = as(l)
+      }), a = as(f)
     } catch {
       s = "<unknown>"
     }
@@ -4267,7 +4267,7 @@ function td(t) {
       url: o,
       status_code: c,
       body: u
-    } = a, l = {
+    } = a, f = {
       method: i,
       url: o,
       status_code: c
@@ -4278,7 +4278,7 @@ function td(t) {
       endTimestamp: s
     }, p = {
       category: "xhr",
-      data: l,
+      data: f,
       type: "http",
       level: Ps(c)
     };
@@ -4371,7 +4371,7 @@ const ad = ["EventTarget", "Window", "Node", "ApplicationCache", "AudioTrackList
       setupOnce() {
         e.setTimeout && V(T, "setTimeout", Mr), e.setInterval && V(T, "setInterval", Mr), e.requestAnimationFrame && V(T, "requestAnimationFrame", ud), e.XMLHttpRequest && "XMLHttpRequest" in T && V(XMLHttpRequest.prototype, "send", dd);
         const n = e.eventTarget;
-        n && (Array.isArray(n) ? n : ad).forEach(s => ld(s, e))
+        n && (Array.isArray(n) ? n : ad).forEach(s => fd(s, e))
       }
     }
   }),
@@ -4424,13 +4424,13 @@ function dd(t) {
   }
 }
 
-function ld(t, e) {
+function fd(t, e) {
   var s, a;
   const r = (s = T[t]) == null ? void 0 : s.prototype;
   (a = r == null ? void 0 : r.hasOwnProperty) != null && a.call(r, "addEventListener") && (V(r, "addEventListener", function(i) {
     return function(o, c, u) {
       try {
-        fd(c) && (c.handleEvent = $e(c.handleEvent, {
+        ld(c) && (c.handleEvent = $e(c.handleEvent, {
           mechanism: {
             data: {
               handler: _e(c),
@@ -4455,15 +4455,15 @@ function ld(t, e) {
   }), V(r, "removeEventListener", function(i) {
     return function(o, c, u) {
       try {
-        const l = c.__sentry_wrapped__;
-        l && i.call(this, o, l, u)
+        const f = c.__sentry_wrapped__;
+        f && i.call(this, o, f, u)
       } catch {}
       return i.call(this, o, c, u)
     }
   }))
 }
 
-function fd(t) {
+function ld(t) {
   return typeof t.handleEvent == "function"
 }
 
@@ -4578,14 +4578,14 @@ function vd(t, e, n, r) {
     o = i.stacktrace = i.stacktrace || {},
     c = o.frames = o.frames || [],
     u = r,
-    l = n,
+    f = n,
     d = bd(e) ?? ot();
   return c.length === 0 && c.push({
     colno: u,
     filename: d,
     function: He,
     in_app: !0,
-    lineno: l
+    lineno: f
   }), t
 }
 
@@ -4728,39 +4728,39 @@ function xd(t, e) {
   } = {
     ...Ks,
     ...e
-  }, u = typeof a == "function" ? a : f => !0, l = f => Fd(f, o), d = {}, p = t.getOptions().propagateTraceparent;
-  n && (t.addEventProcessor(f => (f.type === "transaction" && f.spans && f.spans.forEach(m => {
+  }, u = typeof a == "function" ? a : l => !0, f = l => Fd(l, o), d = {}, p = t.getOptions().propagateTraceparent;
+  n && (t.addEventProcessor(l => (l.type === "transaction" && l.spans && l.spans.forEach(m => {
     if (m.op === "http.client") {
       const h = pn.get(m.span_id);
       h && (m.timestamp = h / 1e3, pn.delete(m.span_id))
     }
-  }), f)), s && Qo(f => {
-    if (f.response) {
-      const m = $r.get(f.response);
-      m && f.endTimestamp && pn.set(m, f.endTimestamp)
+  }), l)), s && Qo(l => {
+    if (l.response) {
+      const m = $r.get(l.response);
+      m && l.endTimestamp && pn.set(m, l.endTimestamp)
     }
-  }), ks(f => {
-    const m = Vo(f, u, l, d, {
+  }), ks(l => {
+    const m = Vo(l, u, f, d, {
       propagateTraceparent: p
     });
-    if (f.response && f.fetchData.__span && $r.set(f.response, f.fetchData.__span), m) {
-      const h = Zs(f.fetchData.url),
+    if (l.response && l.fetchData.__span && $r.set(l.response, l.fetchData.__span), m) {
+      const h = Zs(l.fetchData.url),
         x = h ? ke(h).host : void 0;
       m.setAttributes({
         "http.url": h,
         "server.address": x
       }), i && Br(m), c == null || c(m, {
-        headers: f.headers
+        headers: l.headers
       })
     }
-  })), r && zs(f => {
+  })), r && zs(l => {
     var h;
-    const m = Md(f, u, l, d, p);
+    const m = Md(l, u, f, d, p);
     if (m) {
       i && Br(m);
       let x;
       try {
-        x = new Headers((h = f.xhr.__sentry_xhr_v3__) == null ? void 0 : h.request_headers)
+        x = new Headers((h = l.xhr.__sentry_xhr_v3__) == null ? void 0 : h.request_headers)
       } catch {}
       c == null || c(m, {
         headers: x
@@ -4819,17 +4819,17 @@ function Md(t, e, n, r, s) {
     I && i.status_code !== void 0 && (es(I, i.status_code), I.end(), delete r[x]);
     return
   }
-  const l = Zs(o),
-    d = ke(l || o),
+  const f = Zs(o),
+    d = ke(f || o),
     p = go(o),
-    f = !!G(),
-    m = u && f ? xe({
+    l = !!G(),
+    m = u && l ? xe({
       name: `${c} ${p}`,
       attributes: {
         url: o,
         type: "xhr",
         "http.method": c,
-        "http.url": l,
+        "http.url": f,
         "server.address": d == null ? void 0 : d.host,
         [D]: "auto.http.browser",
         [Se]: "http.client",
@@ -4841,7 +4841,7 @@ function Md(t, e, n, r, s) {
         }
       }
     }) : new Ee;
-  a.__sentry_xhr_span_id__ = m.spanContext().spanId, r[a.__sentry_xhr_span_id__] = m, n(o) && Hd(a, Le() && f ? m : void 0, s);
+  a.__sentry_xhr_span_id__ = m.spanContext().spanId, r[a.__sentry_xhr_span_id__] = m, n(o) && Hd(a, Le() && l ? m : void 0, s);
   const h = k();
   return h && h.emit("beforeOutgoingRequestSpan", m, t), m
 }
@@ -5020,10 +5020,10 @@ const zd = "BrowserTracing",
           enableStandaloneClsSpans: c,
           enableStandaloneLcpSpans: u
         },
-        beforeStartSpan: l,
+        beforeStartSpan: f,
         idleTimeout: d,
         finalTimeout: p,
-        childSpanTimeout: f,
+        childSpanTimeout: l,
         markBackgroundSpan: m,
         traceFetch: h,
         traceXHR: x,
@@ -5042,12 +5042,12 @@ const zd = "BrowserTracing",
         ...Xd,
         ...t
       };
-    let N, H;
+    let L, H;
 
     function X(y, A, v = !0) {
       const P = A.op === "pageload",
         w = A.name,
-        J = l ? l(A) : A,
+        J = f ? f(A) : A,
         se = J.attributes || {};
       if (w !== J.name && (se[Q] = "custom", J.attributes = se), !v) {
         const Ie = Ut();
@@ -5061,10 +5061,10 @@ const zd = "BrowserTracing",
       const ue = gs(J, {
         idleTimeout: d,
         finalTimeout: p,
-        childSpanTimeout: f,
+        childSpanTimeout: l,
         disableAutoFinish: P,
         beforeSpanEnd: Ie => {
-          N == null || N(), iu(Ie, {
+          L == null || L(), iu(Ie, {
             recordClsOnPageloadSpan: !c,
             recordLcpOnPageloadSpan: !u,
             ignoreResourceSpans: oe,
@@ -5082,17 +5082,17 @@ const zd = "BrowserTracing",
       });
       qr(y, ue);
 
-      function ft() {
+      function lt() {
         n && ["interactive", "complete"].includes(n.readyState) && y.emit("idleSpanEnableAutoFinish", ue)
       }
       P && n && (n.addEventListener("readystatechange", () => {
-        ft()
-      }), ft())
+        lt()
+      }), lt())
     }
     return {
       name: zd,
       setup(y) {
-        if (ui(), N = Qc({
+        if (ui(), L = Qc({
             recordClsStandaloneSpans: c || !1,
             recordLcpStandaloneSpans: u || !1,
             client: y
@@ -5191,7 +5191,7 @@ const zd = "BrowserTracing",
             })
           })
         }
-        m && Ud(), o && Kd(y, d, p, f, e), r && Ou(), xd(y, {
+        m && Ud(), o && Kd(y, d, p, l, e), r && Ou(), xd(y, {
           traceFetch: h,
           traceXHR: x,
           trackFetchStreamPerformance: I,
@@ -5242,8 +5242,8 @@ function Kd(t, e, n, r, s) {
     const c = "ui.action.click",
       u = rt(t);
     if (u) {
-      const l = R(u).op;
-      if (["navigation", "pageload"].includes(l)) {
+      const f = R(u).op;
+      if (["navigation", "pageload"].includes(f)) {
         te && g.warn(`[Tracing] Did not create ${c} span because a pageload or navigation span is in progress.`);
         return
       }
@@ -5304,18 +5304,18 @@ const ra = () => {
       updated: t.updated
     }
   },
-  el = {
+  ef = {
     subscribe(t) {
       return ra().page.subscribe(t)
     }
   },
-  tl = {
+  tf = {
     subscribe(t) {
       return ra().navigating.subscribe(t)
     }
   };
 
-function nl(t = {}) {
+function nf(t = {}) {
   const e = {
     ...Jd({
       ...t,
@@ -5326,12 +5326,12 @@ function nl(t = {}) {
   return {
     ...e,
     afterAllSetup: n => {
-      e.afterAllSetup(n), t.instrumentPageLoad !== !1 && rl(n), t.instrumentNavigation !== !1 && sl(n)
+      e.afterAllSetup(n), t.instrumentPageLoad !== !1 && rf(n), t.instrumentNavigation !== !1 && sf(n)
     }
   }
 }
 
-function rl(t) {
+function rf(t) {
   var r;
   const e = (r = T.location) == null ? void 0 : r.pathname,
     n = ea(t, {
@@ -5342,7 +5342,7 @@ function rl(t) {
         [Q]: "url"
       }
     });
-  n && el.subscribe(s => {
+  n && ef.subscribe(s => {
     var i;
     if (!s) return;
     const a = (i = s.route) == null ? void 0 : i.id;
@@ -5350,17 +5350,17 @@ function rl(t) {
   })
 }
 
-function sl(t) {
+function sf(t) {
   let e;
-  tl.subscribe(n => {
-    var l;
+  tf.subscribe(n => {
+    var f;
     if (!n) {
       e && (e.end(), e = void 0);
       return
     }
     const r = n.from,
       s = n.to,
-      a = (r == null ? void 0 : r.url.pathname) || ((l = T.location) == null ? void 0 : l.pathname),
+      a = (r == null ? void 0 : r.url.pathname) || ((f = T.location) == null ? void 0 : f.pathname),
       i = s == null ? void 0 : s.url.pathname;
     if (a === i) return;
     const o = r == null ? void 0 : r.route.id,
@@ -5391,33 +5391,33 @@ function sl(t) {
   })
 }
 
-function al(t) {
+function af(t) {
   const e = {
-    defaultIntegrations: il(),
+    defaultIntegrations: of(),
     ...t
   };
   Hn(e, "sveltekit", ["sveltekit", "svelte"]);
-  const n = ol(),
+  const n = cf(),
     r = Qd(e);
-  return n && cl(n), r
+  return n && uf(n), r
 }
 
-function il(t) {
-  return typeof __SENTRY_TRACING__ > "u" || __SENTRY_TRACING__ ? [...Nn(), nl()] : Nn()
+function of(t) {
+  return typeof __SENTRY_TRACING__ > "u" || __SENTRY_TRACING__ ? [...Nn(), nf()] : Nn()
 }
 
-function ol() {
+function cf() {
   const t = T,
     e = t.fetch;
   if (t._sentryFetchProxy && e) return t.fetch = t._sentryFetchProxy, e
 }
 
-function cl(t) {
+function uf(t) {
   const e = T;
   e._sentryFetchProxy = e.fetch, e.fetch = t
 }
 
-function ul({
+function df({
   error: t
 }) {
   qt(() => {
@@ -5425,9 +5425,9 @@ function ul({
   })
 }
 
-function dl(t) {
-  const e = ul;
-  return n => (ll(n) || rs(n.error, {
+function ff(t) {
+  const e = df;
+  return n => (lf(n) || rs(n.error, {
     mechanism: {
       type: "sveltekit",
       handled: !1
@@ -5435,25 +5435,25 @@ function dl(t) {
   }), e(n))
 }
 
-function ll(t) {
+function lf(t) {
   const {
     status: e
   } = t;
   return e ? e >= 400 && e < 500 : !1
 }
-al({
+af({
   dsn: "https://ef9fc09cd53942366f18dbc146ea7350@o4509998160805888.ingest.us.sentry.io/4509998167687168",
   tracesSampleRate: 1,
   enableLogs: !0,
   environment: "prod",
   replaysOnErrorSampleRate: 1
 });
-const fl = dl(),
-  Nl = {};
-var pl = os('<div id="svelte-announcer" aria-live="assertive" aria-atomic="true" style="position: absolute; left: 0; top: 0; clip: rect(0 0 0 0); clip-path: inset(50%); overflow: hidden; white-space: nowrap; width: 1px; height: 1px"><!></div>'),
-  ml = os("<!> <!>", 1);
+const pf = ff(),
+  Lf = {};
+var mf = os('<div id="svelte-announcer" aria-live="assertive" aria-atomic="true" style="position: absolute; left: 0; top: 0; clip: rect(0 0 0 0); clip-path: inset(50%); overflow: hidden; white-space: nowrap; width: 1px; height: 1px"><!></div>'),
+  gf = os("<!> <!>", 1);
 
-function gl(t, e) {
+function hf(t, e) {
   Va(e, !0);
   let n = Ye(e, "components", 23, () => []),
     r = Ye(e, "data_0", 3, null),
@@ -5474,13 +5474,13 @@ function gl(t, e) {
     });
     return vt(o, !0), I
   });
-  const l = Re(() => e.constructors[3]);
-  var d = ml(),
+  const f = Re(() => e.constructors[3]);
+  var d = gf(),
     p = ae(d);
   {
-    var f = I => {
+    var l = I => {
         const M = Re(() => e.constructors[0]);
-        var $ = le(),
+        var $ = fe(),
           oe = ae($);
         we(oe, () => j(M), (z, E) => {
           Ae(E(z, {
@@ -5494,12 +5494,12 @@ function gl(t, e) {
               return e.page.params
             },
             children: (b, be) => {
-              var me = le(),
+              var me = fe(),
                 ge = ae(me);
               {
                 var ce = H => {
                     const X = Re(() => e.constructors[1]);
-                    var y = le(),
+                    var y = fe(),
                       A = ae(y);
                     we(A, () => j(X), (v, P) => {
                       Ae(P(v, {
@@ -5513,12 +5513,12 @@ function gl(t, e) {
                           return e.page.params
                         },
                         children: (w, J) => {
-                          var se = le(),
+                          var se = fe(),
                             ue = ae(se);
                           {
-                            var ft = de => {
+                            var lt = de => {
                                 const We = Re(() => e.constructors[2]);
-                                var Ge = le(),
+                                var Ge = fe(),
                                   zt = ae(Ge);
                                 we(zt, () => j(We), (Xt, Jt) => {
                                   Ae(Jt(Xt, {
@@ -5531,10 +5531,10 @@ function gl(t, e) {
                                     get params() {
                                       return e.page.params
                                     },
-                                    children: (ne, Sl) => {
-                                      var Xn = le(),
+                                    children: (ne, Ef) => {
+                                      var Xn = fe(),
                                         sa = ae(Xn);
-                                      we(sa, () => j(l), (aa, ia) => {
+                                      we(sa, () => j(f), (aa, ia) => {
                                         Ae(ia(aa, {
                                           get data() {
                                             return i()
@@ -5562,7 +5562,7 @@ function gl(t, e) {
                               },
                               Ie = de => {
                                 const We = Re(() => e.constructors[2]);
-                                var Ge = le(),
+                                var Ge = fe(),
                                   zt = ae(Ge);
                                 we(zt, () => j(We), (Xt, Jt) => {
                                   Ae(Jt(Xt, {
@@ -5582,7 +5582,7 @@ function gl(t, e) {
                                 }), K(de, Ge)
                               };
                             ze(ue, de => {
-                              e.constructors[3] ? de(ft) : de(Ie, !1)
+                              e.constructors[3] ? de(lt) : de(Ie, !1)
                             })
                           }
                           K(w, se)
@@ -5596,9 +5596,9 @@ function gl(t, e) {
                       })
                     }), K(H, y)
                   },
-                  N = H => {
+                  L = H => {
                     const X = Re(() => e.constructors[1]);
-                    var y = le(),
+                    var y = fe(),
                       A = ae(y);
                     we(A, () => j(X), (v, P) => {
                       Ae(P(v, {
@@ -5618,7 +5618,7 @@ function gl(t, e) {
                     }), K(H, y)
                   };
                 ze(ge, H => {
-                  e.constructors[2] ? H(ce) : H(N, !1)
+                  e.constructors[2] ? H(ce) : H(L, !1)
                 })
               }
               K(b, me)
@@ -5634,7 +5634,7 @@ function gl(t, e) {
       },
       m = I => {
         const M = Re(() => e.constructors[0]);
-        var $ = le(),
+        var $ = fe(),
           oe = ae($);
         we(oe, () => j(M), (z, E) => {
           Ae(E(z, {
@@ -5654,13 +5654,13 @@ function gl(t, e) {
         }), K(I, $)
       };
     ze(p, I => {
-      e.constructors[1] ? I(f) : I(m, !1)
+      e.constructors[1] ? I(l) : I(m, !1)
     })
   }
   var h = za(p, 2);
   {
     var x = I => {
-      var M = pl(),
+      var M = mf(),
         $ = Ja(M);
       {
         var oe = z => {
@@ -5679,10 +5679,10 @@ function gl(t, e) {
   }
   K(t, d), Xa()
 }
-const Ll = ai(gl),
-  Cl = [() => L(() => import("../nodes/0.BLOxcFk0.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]), import.meta.url), () => L(() => import("../nodes/1.CQXm6sHJ.js"), __vite__mapDeps([17, 1, 15, 3, 4, 5, 18, 19, 20, 2]), import.meta.url), () => L(() => import("../nodes/2.B0Fxe7zT.js"), __vite__mapDeps([21, 1, 3, 4, 5, 2, 22, 11, 12, 19, 20, 23, 10, 24]), import.meta.url), () => L(() => import("../nodes/3.CGR6kyQ4.js"), __vite__mapDeps([25, 1, 3, 4, 5, 2, 22, 11, 12, 19, 20, 24]), import.meta.url), () => L(() => import("../nodes/4.DT2P6_4P.js"), __vite__mapDeps([26, 1, 2, 3, 4, 5, 10, 12, 22, 11, 20, 19, 6, 7, 8, 9, 27, 13, 28, 29, 30, 31, 32, 33, 34, 24, 35, 36, 37, 38, 39, 40, 15, 18, 23, 14, 41, 42, 43, 44, 45, 46, 47, 48]), import.meta.url), () => L(() => import("../nodes/5.DjLej698.js"), __vite__mapDeps([49, 1, 15, 3, 23, 10, 12]), import.meta.url), () => L(() => import("../nodes/6.BXkVUQ48.js"), __vite__mapDeps([50, 1, 15, 3, 2, 4, 5, 18, 7, 20]), import.meta.url), () => L(() => import("../nodes/7.C8_aLxsb.js"), __vite__mapDeps([51, 1, 3, 4, 5, 10, 22, 11, 12, 29, 20, 2, 19, 6, 7, 8, 28, 33, 27, 31, 45, 47, 30, 44, 35, 52, 53, 54, 55, 34, 24]), import.meta.url), () => L(() => import("../nodes/8.BKMFq2uK.js"), __vite__mapDeps([56, 1, 2, 3, 4, 5, 10, 11, 12, 29, 20, 6, 7, 8, 45, 57, 52, 53, 58, 59]), import.meta.url), () => L(() => import("../nodes/9.CbdC12B9.js"), __vite__mapDeps([60, 1, 15, 3, 5, 7, 20, 2, 4]), import.meta.url), () => L(() => import("../nodes/10.jJMLcyUb.js"), __vite__mapDeps([61, 1, 2, 3, 4, 5, 10, 11, 12, 29, 20, 6, 7, 8, 33, 27, 45, 53, 58, 62, 63, 59, 54]), import.meta.url), () => L(() => import("../nodes/11.L8yjYDsB.js"), __vite__mapDeps([64, 1, 2, 3, 4, 5, 10, 11, 12, 29, 20, 6, 7, 8, 33, 27, 45, 53, 58, 62, 63, 59]), import.meta.url), () => L(() => import("../nodes/12.DfHvkcZ0.js"), __vite__mapDeps([65, 1, 3, 4, 5, 10, 22, 11, 12, 29, 20, 2, 19, 6, 7, 8, 32, 13, 28, 33, 27, 30, 34, 24, 40, 31, 66, 45, 47, 67, 53, 58, 63, 55]), import.meta.url), () => L(() => import("../nodes/13.DwktlqAp.js"), __vite__mapDeps([68, 1, 2, 3, 4, 5, 10, 20, 19, 6, 7, 8, 41, 12, 13, 23, 42, 69]), import.meta.url), () => L(() => import("../nodes/14.DobkrH4Y.js"), __vite__mapDeps([70, 1, 2, 3, 4, 5, 10, 22, 11, 12, 13, 20, 19, 6, 7, 8, 33, 27, 37, 40, 31, 66, 45, 47, 36, 57, 34]), import.meta.url), () => L(() => import("../nodes/15.BvxxeN01.js"), __vite__mapDeps([71, 1, 15, 3, 4, 5, 18, 23, 10, 12, 45, 46, 7, 47]), import.meta.url), () => L(() => import("../nodes/16.2RbzkEzm.js"), __vite__mapDeps([72, 1, 2, 3, 4, 5, 10, 27, 19, 20, 6, 7, 8, 23, 12, 69]), import.meta.url), () => L(() => import("../nodes/17.BJCEWYmp.js"), __vite__mapDeps([73, 1, 3, 4, 5, 10, 11, 12, 29, 13, 20, 2, 6, 7, 8, 38, 19, 37, 33, 27, 39, 30, 44, 67, 34]), import.meta.url), () => L(() => import("../nodes/18.f-ICI646.js"), __vite__mapDeps([74, 1, 15, 3, 5, 23, 10, 12, 75]), import.meta.url), () => L(() => import("../nodes/19.DuLmvmaw.js"), __vite__mapDeps([76, 1, 15, 3, 5, 23, 10, 12]), import.meta.url), () => L(() => import("../nodes/20.sZqVYm7b.js"), __vite__mapDeps([77, 1, 15, 3, 5, 23, 10, 12]), import.meta.url), () => L(() => import("../nodes/21.DmPkBw5e.js"), __vite__mapDeps([78, 1, 15, 3, 5, 23, 10, 12, 75]), import.meta.url)],
-  Ol = [],
-  xl = {
+const Cf = ai(hf),
+  Of = [() => N(() => import("../nodes/0.o2CYLUZ-.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]), import.meta.url), () => N(() => import("../nodes/1.ujMKoDQt.js"), __vite__mapDeps([17, 1, 15, 3, 4, 5, 18, 19, 20, 2]), import.meta.url), () => N(() => import("../nodes/2.CER3disR.js"), __vite__mapDeps([21, 1, 3, 4, 5, 2, 22, 11, 12, 19, 20, 23, 10, 24]), import.meta.url), () => N(() => import("../nodes/3.C16b9jIZ.js"), __vite__mapDeps([25, 1, 3, 4, 5, 2, 22, 11, 12, 19, 20, 24]), import.meta.url), () => N(() => import("../nodes/4.Dm6BIkU2.js"), __vite__mapDeps([26, 1, 2, 3, 4, 5, 10, 12, 22, 11, 20, 19, 6, 7, 8, 9, 27, 13, 28, 29, 30, 31, 32, 33, 34, 24, 35, 36, 37, 38, 39, 40, 15, 18, 23, 14, 41, 42, 43, 44, 45, 46, 47, 48]), import.meta.url), () => N(() => import("../nodes/5.Cg6LSp8j.js"), __vite__mapDeps([49, 1, 15, 3, 23, 10, 12]), import.meta.url), () => N(() => import("../nodes/6.B1r4hbbB.js"), __vite__mapDeps([50, 1, 15, 3, 2, 4, 5, 18, 7, 20]), import.meta.url), () => N(() => import("../nodes/7.x2RpGzTS.js"), __vite__mapDeps([51, 1, 3, 4, 5, 10, 22, 11, 12, 29, 20, 2, 19, 6, 7, 8, 28, 33, 27, 31, 45, 47, 30, 44, 35, 52, 53, 54, 55, 34, 24]), import.meta.url), () => N(() => import("../nodes/8.CYnqfusi.js"), __vite__mapDeps([56, 1, 2, 3, 4, 5, 10, 11, 12, 29, 20, 6, 7, 8, 45, 57, 52, 53, 58, 59]), import.meta.url), () => N(() => import("../nodes/9.C4gK5YHD.js"), __vite__mapDeps([60, 1, 15, 3, 5, 7, 20, 2, 4]), import.meta.url), () => N(() => import("../nodes/10.CDhK7yIQ.js"), __vite__mapDeps([61, 1, 2, 3, 4, 5, 10, 11, 12, 29, 20, 6, 7, 8, 33, 27, 45, 53, 58, 62, 63, 59, 54]), import.meta.url), () => N(() => import("../nodes/11.D5sXYX1j.js"), __vite__mapDeps([64, 1, 2, 3, 4, 5, 10, 11, 12, 29, 20, 6, 7, 8, 33, 27, 45, 53, 58, 62, 63, 59]), import.meta.url), () => N(() => import("../nodes/12.Mg2rURQY.js"), __vite__mapDeps([65, 1, 3, 4, 5, 10, 22, 11, 12, 29, 20, 2, 19, 6, 7, 8, 32, 13, 28, 33, 27, 30, 34, 24, 40, 31, 66, 45, 47, 67, 53, 58, 63, 55]), import.meta.url), () => N(() => import("../nodes/13.DtogR8HR.js"), __vite__mapDeps([68, 1, 2, 3, 4, 5, 10, 20, 19, 6, 7, 8, 41, 12, 13, 23, 42, 69]), import.meta.url), () => N(() => import("../nodes/14.C_vtf9KP.js"), __vite__mapDeps([70, 1, 2, 3, 4, 5, 10, 22, 11, 12, 13, 20, 19, 6, 7, 8, 33, 27, 37, 40, 31, 66, 45, 47, 36, 57, 34]), import.meta.url), () => N(() => import("../nodes/15.hcZJj-d2.js"), __vite__mapDeps([71, 1, 15, 3, 4, 5, 18, 23, 10, 12, 45, 46, 7, 47]), import.meta.url), () => N(() => import("../nodes/16.XVaQywia.js"), __vite__mapDeps([72, 1, 2, 3, 4, 5, 10, 27, 19, 20, 6, 7, 8, 23, 12, 69]), import.meta.url), () => N(() => import("../nodes/17.Bdcw_Syx.js"), __vite__mapDeps([73, 1, 3, 4, 5, 10, 11, 12, 29, 13, 20, 2, 6, 7, 8, 38, 19, 37, 33, 27, 39, 30, 44, 67, 34]), import.meta.url), () => N(() => import("../nodes/18.CzcU9Ni9.js"), __vite__mapDeps([74, 1, 3, 4, 5, 10, 11, 12, 23]), import.meta.url), () => N(() => import("../nodes/19.CvORSdku.js"), __vite__mapDeps([75, 1, 15, 3, 5, 23, 10, 12, 76]), import.meta.url), () => N(() => import("../nodes/20.BdM_z_oV.js"), __vite__mapDeps([77, 1, 15, 3, 5, 23, 10, 12]), import.meta.url), () => N(() => import("../nodes/21.DcxydlVP.js"), __vite__mapDeps([78, 1, 15, 3, 5, 23, 10, 12]), import.meta.url), () => N(() => import("../nodes/22.BDSDgn6J.js"), __vite__mapDeps([79, 1, 15, 3, 5, 23, 10, 12, 76]), import.meta.url)],
+  xf = [],
+  Df = {
     "/": [4],
     "/404": [5],
     "/admin": [6, [2]],
@@ -5697,13 +5697,14 @@ const Ll = ai(gl),
     "/offline": [15],
     "/payment/success": [16],
     "/profile-picture": [17],
-    "/terms/privacy": [18],
-    "/terms/return": [19],
-    "/terms/return/pt": [20],
-    "/terms/terms-of-service": [21]
+    "/terms/code-of-conduct": [18],
+    "/terms/privacy": [19],
+    "/terms/return": [20],
+    "/terms/return/pt": [21],
+    "/terms/terms-of-service": [22]
   },
-  hl = {
-    handleError: fl || (({
+  _f = {
+    handleError: pf || (({
       error: t
     }) => {
       console.error(t)
@@ -5712,9 +5713,9 @@ const Ll = ai(gl),
     reroute: (() => {}),
     transport: {}
   },
-  _l = Object.fromEntries(Object.entries(hl.transport).map(([t, e]) => [t, e.decode])),
-  Dl = !1,
-  Fl = (t, e) => _l[t](e);
+  Sf = Object.fromEntries(Object.entries(_f.transport).map(([t, e]) => [t, e.decode])),
+  Ff = !1,
+  Mf = (t, e) => Sf[t](e);
 export {
-  Fl as decode, _l as decoders, xl as dictionary, Dl as hash, hl as hooks, Nl as matchers, Cl as nodes, Ll as root, Ol as server_loads
+  Mf as decode, Sf as decoders, Df as dictionary, Ff as hash, _f as hooks, Lf as matchers, Of as nodes, Cf as root, xf as server_loads
 };
