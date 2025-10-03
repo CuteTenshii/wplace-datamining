@@ -1,11 +1,11 @@
 import {
   g as o
-} from "./BHVh6a9r.js";
+} from "./DCOr_wmp.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "123067dbd61a163d94930a4efc762fdca932af1b"
+      id: "485fa57ad20bf45d61bdea250be0ef78a269ac0b"
     }
   } catch {}
 })();
@@ -17,8 +17,8 @@ try {
   })()
 } catch {}
 const f = () => "Confirm",
-  d = () => "Confirmar",
-  r = (e = {}, n = {}) => (n.locale ?? o()) === "en" ? f() : d();
+  t = () => "Confirmar",
+  r = (e = {}, n = {}) => (n.locale ?? o()) === "en" ? f() : t();
 export {
   r as c
 };

@@ -1,36 +1,36 @@
-var ye = Object.defineProperty;
+var be = Object.defineProperty;
 var re = a => {
   throw TypeError(a)
 };
-var be = (a, e, t) => e in a ? ye(a, e, {
+var ye = (a, e, t) => e in a ? be(a, e, {
   enumerable: !0,
   configurable: !0,
   writable: !0,
   value: t
 }) : a[e] = t;
-var _ = (a, e, t) => be(a, typeof e != "symbol" ? e + "" : e, t),
+var _ = (a, e, t) => ye(a, typeof e != "symbol" ? e + "" : e, t),
   Se = (a, e, t) => e.has(a) || re("Cannot " + t);
 var u = (a, e, t) => (Se(a, e, "read from private field"), t ? t.call(a) : e.get(a)),
   h = (a, e, t) => e.has(a) ? re("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(a) : e.set(a, t);
 import {
-  Y as b,
+  Y as y,
   aw as Z,
   g as p,
   Z as w,
   z as se,
   u as P
-} from "./BR5XpF1A.js";
+} from "./BONTOiKC.js";
 import {
   g
-} from "./BHVh6a9r.js";
+} from "./DCOr_wmp.js";
 import {
   s as Te
-} from "./3GvnADE0.js";
+} from "./DJD41OkM.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "123067dbd61a163d94930a4efc762fdca932af1b"
+      id: "485fa57ad20bf45d61bdea250be0ef78a269ac0b"
     }
   } catch {}
 })();
@@ -55,8 +55,8 @@ let oe = 0;
 var L, k, C;
 class Ae {
   constructor() {
-    h(this, L, b(Z([])));
-    h(this, k, b(Z([])));
+    h(this, L, y(Z([])));
+    h(this, k, y(Z([])));
     h(this, C, e => {
       const t = this.toasts.findIndex(n => n.id === e);
       return t === -1 ? null : t
@@ -271,7 +271,7 @@ const Ie = xe,
     loading: T.loading,
     getActiveToasts: () => T.toasts.filter(a => !a.dismiss)
   });
-let fe = b(void 0);
+let fe = y(void 0);
 const me = () => p(fe),
   ma = a => {
     const e = new URL(a, ue),
@@ -305,13 +305,13 @@ const ie = "theme";
 var q, M, N, D, B, U, G;
 class Le {
   constructor() {
-    h(this, q, b(!1));
-    h(this, M, b(!1));
-    h(this, N, b(Z(Ce())));
-    h(this, D, b(!1));
-    h(this, B, b("custom-winter"));
-    h(this, U, b(Z(Date.now())));
-    h(this, G, b(void 0));
+    h(this, q, y(!1));
+    h(this, M, y(!1));
+    h(this, N, y(Z(Ce())));
+    h(this, D, y(!1));
+    h(this, B, y("custom-winter"));
+    h(this, U, y(Z(Date.now())));
+    h(this, G, y(void 0));
     setInterval(() => {
       w(u(this, U), Date.now(), !0)
     }, 500), this.theme = localStorage.getItem(ie) || "custom-winter"
@@ -626,9 +626,9 @@ const $e = () => "Unexpected server error. Try again later.",
   _t = () => "You do not have enough droplets to buy this item.",
   pt = () => "Você não tem gotas suficientes para comprar este item.",
   wt = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? _t() : pt(),
-  yt = () => "You already have this item. Please refresh the page.",
-  bt = () => "Você já possui este item. Atualize a página.",
-  St = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? yt() : bt(),
+  bt = () => "You already have this item. Please refresh the page.",
+  yt = () => "Você já possui este item. Atualize a página.",
+  St = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? bt() : yt(),
   Tt = () => "Alliance name exceeded the maximum number of characters",
   Et = () => "O nome da aliança excedeu o número máximo de caracteres",
   vt = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? Tt() : Et(),
@@ -682,10 +682,10 @@ const $e = () => "Unexpected server error. Try again later.",
   _n = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? mn() : hn(),
   pn = () => "Breaking the rules",
   wn = () => "Quebrar as regras",
-  yn = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? pn() : wn(),
-  bn = () => "Your account has been suspended for breaking the rules",
+  bn = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? pn() : wn(),
+  yn = () => "Your account has been suspended for breaking the rules",
   Sn = () => "Sua conta foi suspensa por quebrar as regras",
-  Tn = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? bn() : Sn(),
+  Tn = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? yn() : Sn(),
   En = () => "Your account has been banned for violating the rules",
   vn = () => "A sua conta foi banida por quebrar as regras",
   An = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? En() : vn(),
@@ -714,9 +714,9 @@ const $e = () => "Unexpected server error. Try again later.",
     bot: tn(),
     doxxing: un(),
     "inappropriate-content": Qt(),
-    other: yn()
+    other: bn()
   },
-  ya = {
+  ba = {
     doxxing: "text-red-600",
     "hate-speech": "text-red-600",
     "inappropriate-content": "text-amber-600",
@@ -769,9 +769,9 @@ var R, $, j, F, J, K, z;
 class zn {
   constructor() {
     _(this, "channel", new BroadcastChannel("user-channel"));
-    h(this, R, b());
-    h(this, $, b(!0));
-    h(this, j, b(Date.now()));
+    h(this, R, y());
+    h(this, $, y(!0));
+    h(this, j, y(Date.now()));
     h(this, F, P(() => {
       if (!this.data) return;
       const e = this.data.charges;
@@ -882,7 +882,7 @@ function Vn(a, e) {
   return t
 }
 
-function ba(a, e) {
+function ya(a, e) {
   const t = {};
   for (const n of a) {
     const s = e(n);
@@ -1238,7 +1238,7 @@ function va(a) {
 var V;
 class ra {
   constructor(e) {
-    h(this, V, b(!0));
+    h(this, V, y(!0));
     this.url = e
   }
   get online() {
@@ -1252,13 +1252,13 @@ class ra {
       r = aa("2025-09_pawtect");
     if (!r) throw new Error("paint request while pawtect experiment not found");
     const o = (await Promise.all(Object.values(s).map(d => {
-      const [c, S] = d[0].tile, y = d[0].season, we = {
+      const [c, S] = d[0].tile, b = d[0].season, we = {
         colors: d.map(ne => ne.colorIdx),
         coords: d.flatMap(ne => ne.pixel),
         t,
         fp: n
       }, ae = JSON.stringify(we);
-      return this.request(`/s${y}/pixel/${c}/${S}`, {
+      return this.request(`/s${b}/pixel/${c}/${S}`, {
         method: "POST",
         body: ae,
         headers: {
@@ -1283,9 +1283,9 @@ class ra {
         const S = c == null ? void 0 : c.suspension;
         if (S === "ban") throw new Error(An());
         if (S === "timeout") {
-          const y = new Date(Date.now() + ((c == null ? void 0 : c.durationMs) ?? 0));
+          const b = new Date(Date.now() + ((c == null ? void 0 : c.durationMs) ?? 0));
           throw new Error(In({
-            until: y.toLocaleString()
+            until: b.toLocaleString()
           }))
         } else throw new Error(i())
       } else throw new Error(i())
@@ -2031,7 +2031,7 @@ class ra {
     if (o.status !== 200) throw new f(i(), o.status);
     const d = await o.json(),
       c = Array.isArray(d == null ? void 0 : d.tickets) ? d.tickets : [];
-    return c.sort((S, y) => new Date(y.createdAt).getTime() - new Date(S.createdAt).getTime()), c
+    return c.sort((S, b) => new Date(b.createdAt).getTime() - new Date(S.createdAt).getTime()), c
   }
   mapTicketsToReportRows(e, t) {
     var s, r, l, o, d;
@@ -2039,31 +2039,31 @@ class ra {
     for (const c of e) {
       const S = c.status ?? "open";
       if (t === "received") {
-        for (const y of c.reports) n.push({
-          id: String(y.id),
+        for (const b of c.reports) n.push({
+          id: String(b.id),
           ticketId: String(c.id),
-          createdAt: y.createdAt ?? c.createdAt,
+          createdAt: b.createdAt ?? c.createdAt,
           byUser: {
-            id: Number(y.reportedBy),
-            name: String(y.reportedByName ?? y.reportedBy),
-            picture: y.reportedByPicture ?? null
+            id: Number(b.reportedBy),
+            name: String(b.reportedByName ?? b.reportedBy),
+            picture: b.reportedByPicture ?? null
           },
-          reason: String(y.reason),
+          reason: String(b.reason),
           status: S
         });
         continue
       }
       if (t === "sent") {
-        for (const y of c.reports) n.push({
-          id: String(y.id),
+        for (const b of c.reports) n.push({
+          id: String(b.id),
           ticketId: String(c.id),
-          createdAt: y.createdAt ?? c.createdAt,
+          createdAt: b.createdAt ?? c.createdAt,
           toUser: {
             id: Number(c.reportedUser.id),
             name: String(c.reportedUser.name),
             picture: c.reportedUser.picture ?? null
           },
-          reason: String(y.reason),
+          reason: String(b.reason),
           status: S
         });
         continue
@@ -2129,5 +2129,5 @@ class ra {
 V = new WeakMap;
 let de = new ra(ue);
 export {
-  In as A, ba as B, pe as C, Sa as D, Ta as E, la as F, ua as G, ue as P, na as S, Re as _, de as a, ya as b, i as c, qe as d, da as e, un as f, ke as g, rn as h, Qt as i, tn as j, cn as k, T as l, ga as m, fa as n, aa as o, _a as p, ha as q, pa as r, wa as s, ge as t, X as u, Ea as v, Fn as w, va as x, ma as y, An as z
+  In as A, ya as B, pe as C, Sa as D, Ta as E, la as F, ua as G, ue as P, na as S, Re as _, de as a, ba as b, i as c, qe as d, da as e, un as f, ke as g, rn as h, Qt as i, tn as j, cn as k, T as l, ga as m, fa as n, aa as o, _a as p, ha as q, pa as r, wa as s, ge as t, X as u, Ea as v, Fn as w, va as x, ma as y, An as z
 };

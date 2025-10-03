@@ -26,12 +26,12 @@ import {
   bg as dr,
   bh as vr,
   bi as br
-} from "./BR5XpF1A.js";
+} from "./BONTOiKC.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "123067dbd61a163d94930a4efc762fdca932af1b"
+      id: "485fa57ad20bf45d61bdea250be0ef78a269ac0b"
     }
   } catch {}
 })();
