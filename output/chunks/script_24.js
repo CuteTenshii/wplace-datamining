@@ -13,12 +13,12 @@ import {
   V as E,
   W as R,
   X as i
-} from "./BWEr1aAe.js";
+} from "./DX6AFU53.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "052f352a026d022e3e4fc4fdcb3f4a54614f0cb2"
+      id: "05ce49009207a0735deeeb4c7a853abc987d7d99"
     }
   } catch {}
 })();
@@ -34,12 +34,12 @@ function N(e, n, r = !1, o = !1, D = !1) {
   var l = e,
     t = "";
   y(() => {
-    var d = g;
+    var f = g;
     if (t === (t = n() ?? "")) {
       _ && h();
       return
     }
-    if (d.nodes_start !== null && (p(d.nodes_start, d.nodes_end), d.nodes_start = d.nodes_end = null), t !== "") {
+    if (f.nodes_start !== null && (p(f.nodes_start, f.nodes_end), f.nodes_start = f.nodes_end = null), t !== "") {
       if (_) {
         u.data;
         for (var a = h(), b = a; a !== null && (a.nodeType !== w || a.data !== "");) b = a, a = v(a);
@@ -49,10 +49,10 @@ function N(e, n, r = !1, o = !1, D = !1) {
       }
       var s = t + "";
       r ? s = `<svg>${s}</svg>` : o && (s = `<math>${s}</math>`);
-      var f = R(s);
-      if ((r || o) && (f = i(f)), c(i(f), f.lastChild), r || o)
-        for (; i(f);) l.before(i(f));
-      else l.before(f)
+      var d = R(s);
+      if ((r || o) && (d = i(d)), c(i(d), d.lastChild), r || o)
+        for (; i(d);) l.before(i(d));
+      else l.before(d)
     }
   })
 }

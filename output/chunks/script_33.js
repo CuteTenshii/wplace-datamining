@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./DghIaI4W.js";
+} from "./Ck9C8CiE.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "052f352a026d022e3e4fc4fdcb3f4a54614f0cb2"
+      id: "05ce49009207a0735deeeb4c7a853abc987d7d99"
     }
   } catch {}
 })();
@@ -26,11 +26,11 @@ const l = () => "Save",
   c = () => "Jogador",
   g = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? i() : c(),
   u = () => "Last pixel",
-  f = () => "Último pixel",
-  m = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? u() : f(),
-  d = () => "Visit",
+  d = () => "Último pixel",
+  m = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? u() : d(),
+  f = () => "Visit",
   p = () => "Visitar",
-  v = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? d() : p();
+  v = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? f() : p();
 export {
   m as l, _ as m, g as p, y as s, v
 };
