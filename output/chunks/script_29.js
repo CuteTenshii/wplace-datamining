@@ -1,10 +1,10 @@
 import {
   g as u
-} from "./DCOr_wmp.js";
-import "./CyobRoRg.js";
+} from "./DghIaI4W.js";
+import "./DCqMUsfx.js";
 import {
   o as De
-} from "./BqmM7ezG.js";
+} from "./Nc9KcPd5.js";
 import {
   av as Be,
   p as Te,
@@ -17,7 +17,7 @@ import {
   r as n,
   n as Ee,
   ax as se,
-  b as g,
+  b,
   c as Le,
   t as k,
   g as s,
@@ -26,18 +26,18 @@ import {
   ay as le,
   a as ce,
   v as Ue
-} from "./BONTOiKC.js";
+} from "./BWEr1aAe.js";
 import {
   s as f
-} from "./CyeQPOko.js";
+} from "./BxozQHlW.js";
 import {
   p as Ie,
   i as C,
   r as Pe
-} from "./qhi88Vz3.js";
+} from "./BOg3sS9f.js";
 import {
   e as Ce
-} from "./C0cMYVpd.js";
+} from "./D-unADaP.js";
 import {
   d as ze,
   r as D,
@@ -45,16 +45,16 @@ import {
   g as z,
   a as Me,
   b as Se
-} from "./D7IpANm6.js";
+} from "./DtLJzlVj.js";
 import {
   t as Ae
-} from "./CvRk4mPg.js";
+} from "./DHdyNQqU.js";
 import {
   c as Oe
-} from "./DYD2cagg.js";
+} from "./BLtp4j3L.js";
 import {
   b as je
-} from "./B2jzmfXe.js";
+} from "./DTZ7Mw4l.js";
 import {
   i as Ne,
   h as Ze,
@@ -63,31 +63,31 @@ import {
   k as Fe,
   P as Q,
   t as W
-} from "./DeabDsZ1.js";
+} from "./C4mTXjiT.js";
 import {
   o as He,
   L as Ke,
   s as Ve,
   a as Ge,
   g as Je
-} from "./vuNnQctJ.js";
+} from "./o5rRePSH.js";
 import {
   P as Qe
-} from "./ounG_DGV.js";
+} from "./HzpFLT6G.js";
 import {
   c as We
-} from "./bnWG9YgU.js";
+} from "./DQHHin2J.js";
 import {
   g as Xe
-} from "./B2uneF1n.js";
+} from "./CMYFzx1L.js";
 import {
   f as $e
-} from "./Buu_dV4I.js";
+} from "./Cn2DaIsh.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "485fa57ad20bf45d61bdea250be0ef78a269ac0b"
+      id: "052f352a026d022e3e4fc4fdcb3f4a54614f0cb2"
     }
   } catch {}
 })();
@@ -116,9 +116,9 @@ const et = () => "Copy",
   _t = () => "Use of software to completely automate painting",
   vt = () => "Uso de software para pintar de forma completamente automatizada ",
   mt = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? _t() : vt(),
-  bt = () => "Racism, homophobia, hate groups, ...",
-  gt = () => "Racismo, homofobia, grupos de ódio, ...",
-  ht = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? bt() : gt(),
+  gt = () => "Racism, homophobia, hate groups, ...",
+  bt = () => "Racismo, homofobia, grupos de ódio, ...",
+  ht = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? gt() : bt(),
   xt = () => "Messed up artworks for no reason",
   yt = () => "Estragar desenho dos outros sem motivo",
   wt = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? xt() : yt(),
@@ -225,44 +225,44 @@ function ur(t, e) {
       {
         var me = a => {
             var r = J();
-            k(l => f(r, l), [() => ot()]), g(a, r)
+            k(l => f(r, l), [() => ot()]), b(a, r)
           },
-          be = a => {
+          ge = a => {
             var r = le(),
               l = ce(r);
             {
               var p = m => {
-                  var b = J();
-                  k(y => f(b, y), [() => it()]), g(m, b)
+                  var g = J();
+                  k(y => f(g, y), [() => it()]), b(m, g)
                 },
                 U = m => {
-                  var b = le(),
-                    y = ce(b);
+                  var g = le(),
+                    y = ce(g);
                   {
                     var I = w => {
                       var P = J();
-                      k(ke => f(P, ke), [() => ut()]), g(w, P)
+                      k(ke => f(P, ke), [() => ut()]), b(w, P)
                     };
                     C(y, w => {
                       e.action === "ban" && w(I)
                     }, !0)
                   }
-                  g(m, b)
+                  b(m, g)
                 };
               C(l, m => {
                 e.action === "timeout" ? m(p) : m(U, !1)
               }, !0)
             }
-            g(a, r)
+            b(a, r)
           };
         C(ve, a => {
-          e.action === "report-user" ? a(me) : a(be, !1)
+          e.action === "report-user" ? a(me) : a(ge, !1)
         })
       }
       n(q);
       var Y = c(q, 2),
         F = o(Y),
-        ge = o(F, !0);
+        be = o(F, !0);
       n(F);
       var re = c(F, 2),
         he = o(re);
@@ -277,14 +277,14 @@ function ur(t, e) {
           p = o(l);
         D(p);
         var U, m = c(p, 2),
-          b = o(m),
-          y = o(b, !0);
-        n(b);
-        var I = c(b, 2),
+          g = o(m),
+          y = o(g, !0);
+        n(g);
+        var I = c(g, 2),
           w = o(I, !0);
         n(I), n(m), n(l), k(() => {
           ue(p, "aria-label", s(r).label), U !== (U = s(r).value) && (p.value = (p.__value = s(r).value) ?? ""), f(y, s(r).label), f(w, s(r).description)
-        }), Oe(i, [], p, () => (s(r).value, s(T)), P => h(T, P)), g(a, l)
+        }), Oe(i, [], p, () => (s(r).value, s(T)), P => h(T, P)), b(a, l)
       }), n(ne), n(H);
       var V = c(H, 2),
         ye = o(V);
@@ -324,7 +324,7 @@ function ur(t, e) {
       var G = c(L, 2),
         Re = o(G, !0);
       n(G), n(oe), n(v), je(v, a => h(E, a), () => s(E)), k((a, r, l, p) => {
-        ue(v, "action", de[e.action]), z(A, e.paintedBy.id), z(O, e.latLon[0]), z(j, e.latLon[1]), z(N, e.zoom), Me(Y, 1, `font-medium ${a??""} flex gap-1.5`), f(ge, e.paintedBy.name), f(he, `#${e.paintedBy.id??""}`), f(xe, `${r??""}:`), f(we, l), G.disabled = s(B), f(Re, p)
+        ue(v, "action", de[e.action]), z(A, e.paintedBy.id), z(O, e.latLon[0]), z(j, e.latLon[1]), z(N, e.zoom), Me(Y, 1, `font-medium ${a??""} flex gap-1.5`), f(be, e.paintedBy.name), f(he, `#${e.paintedBy.id??""}`), f(xe, `${r??""}:`), f(we, l), G.disabled = s(B), f(Re, p)
       }, [() => Xe(e.paintedBy.id), () => Ve(), () => We(), () => It()]), se("submit", v, async a => {
         if (a.preventDefault(), !s(B) && s(S)()) try {
           h(B, !0);
@@ -344,7 +344,7 @@ function ur(t, e) {
         } finally {
           h(B, !1)
         }
-      }), Ae(2, v, () => $e), g(_, v)
+      }), Ae(2, v, () => $e), b(_, v)
     };
     C(fe, _ => {
       d() && _(_e)
@@ -354,7 +354,7 @@ function ur(t, e) {
     ae(() => {
       d() ? _.show() : _.close()
     })
-  }), se("close", x, () => d(!1)), g(t, x), Le()
+  }), se("close", x, () => d(!1)), b(t, x), Le()
 }
 Be(["click"]);
 var Ft = Ue('<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
@@ -367,7 +367,7 @@ function pr(t, e) {
     viewBox: "0 -960 960 960",
     fill: "currentColor",
     ...i
-  })), g(t, d)
+  })), b(t, d)
 }
 export {
   pr as D, ur as R, ut as b, lr as c, cr as p, ot as r, it as t
