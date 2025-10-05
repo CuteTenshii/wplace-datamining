@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./Ck9C8CiE.js";
+} from "./DditNrNW.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "05ce49009207a0735deeeb4c7a853abc987d7d99"
+      id: "d8fe2b59c656bd9f6dccc34a4ac724cc1c260861"
     }
   } catch {}
 })();
@@ -22,15 +22,15 @@ const l = () => "Save",
   s = () => "Members",
   a = () => "Membros",
   _ = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? s() : a(),
-  i = () => "Player",
-  c = () => "Jogador",
-  g = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? i() : c(),
+  c = () => "Player",
+  i = () => "Jogador",
+  g = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? c() : i(),
   u = () => "Last pixel",
-  d = () => "Último pixel",
-  m = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? u() : d(),
-  f = () => "Visit",
+  f = () => "Último pixel",
+  m = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? u() : f(),
+  d = () => "Visit",
   p = () => "Visitar",
-  v = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? f() : p();
+  v = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? d() : p();
 export {
   m as l, _ as m, g as p, y as s, v
 };
