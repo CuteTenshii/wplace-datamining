@@ -1,5 +1,5 @@
 import {
-  g as o
+  g as t
 } from "./BzyUMEdi.js";
 (function() {
   try {
@@ -13,12 +13,12 @@ try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "229445bf-dd55-4e7f-99d6-0afe0ad6a0ba", e._sentryDebugIdIdentifier = "sentry-dbid-229445bf-dd55-4e7f-99d6-0afe0ad6a0ba")
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "4cabca8b-66f2-4e69-bb29-18897bbab378", e._sentryDebugIdIdentifier = "sentry-dbid-4cabca8b-66f2-4e69-bb29-18897bbab378")
   })()
 } catch {}
-const d = () => "Select the report reason",
-  t = () => "Selecione o motivo da denúncia",
-  l = (e = {}, n = {}) => (n.locale ?? o()) === "en" ? d() : t();
+const f = () => "Refresh",
+  o = () => "Atualizar",
+  a = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? f() : o();
 export {
-  l as s
+  a as r
 };

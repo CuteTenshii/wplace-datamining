@@ -1,60 +1,60 @@
 import {
-  g as u
-} from "./DditNrNW.js";
-import "./DtSP5h8P.js";
+  g as l
+} from "./BzyUMEdi.js";
+import "./DpsrLiXi.js";
 import {
   o as De
-} from "./Ed3qGoZD.js";
+} from "./NOQ6C_Qr.js";
 import {
-  av as Be,
+  av as Le,
   p as Te,
-  y as ae,
+  y as se,
   Z as h,
-  Y as R,
+  Y as k,
   f as X,
-  d as o,
-  s as c,
+  d as s,
+  s as u,
   r as n,
   n as Ee,
-  ax as se,
+  ax as ae,
   b,
-  c as Le,
-  t as k,
-  g as s,
+  c as Be,
+  t as R,
+  g as i,
   u as ie,
   b4 as J,
   ay as le,
   a as ce,
   v as Ue
-} from "./C7dcjzId.js";
+} from "./nXP0Sia0.js";
 import {
-  s as f
-} from "./DSeReWB4.js";
+  s as _
+} from "./BPjS_4_e.js";
 import {
   p as Ie,
-  i as C,
+  i as S,
   r as Pe
-} from "./DrLYWIGb.js";
+} from "./BjlNU-Hu.js";
 import {
-  e as Ce
-} from "./DijG118o.js";
+  e as Se
+} from "./BbjCTUqG.js";
 import {
-  d as ze,
+  d as Ce,
   r as D,
   s as ue,
-  g as z,
-  a as Me,
-  b as Se
-} from "./D70VCyPd.js";
+  g as C,
+  a as Oe,
+  b as ze
+} from "./D8B8oGuI.js";
 import {
-  t as Ae
-} from "./Dd77gfSy.js";
+  t as Me
+} from "./P28S0XmY.js";
 import {
-  c as Oe
-} from "./ByRxXjgq.js";
+  c as Ae
+} from "./e0IcmQyV.js";
 import {
   b as je
-} from "./BbC4YzBq.js";
+} from "./DMroiBbz.js";
 import {
   i as Ne,
   h as Ze,
@@ -63,31 +63,33 @@ import {
   k as Fe,
   P as Q,
   t as W
-} from "./OJISNkFj.js";
+} from "./DVKUuyXy.js";
 import {
   o as He,
   L as Ke,
   s as Ve,
-  a as Ge,
-  g as Je
-} from "./DUwfAiEy.js";
+  g as Ge
+} from "./CmkCRtu3.js";
 import {
-  P as Qe
-} from "./DMFB93gf.js";
+  P as Je
+} from "./DP9nlxra.js";
 import {
-  c as We
-} from "./DQOdZjDU.js";
+  c as Qe
+} from "./DAvbIACb.js";
+import {
+  s as We
+} from "./CbBzbzXc.js";
 import {
   g as Xe
-} from "./BA2lre1F.js";
+} from "./CN6mSx3H.js";
 import {
   f as $e
-} from "./Od-orMa0.js";
+} from "./C7ykFpXj.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "d8fe2b59c656bd9f6dccc34a4ac724cc1c260861"
+      id: "22dd6d20080aececfaae9b3120dfb71899337f43"
     }
   } catch {}
 })();
@@ -95,122 +97,134 @@ try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "4b377fee-5302-495f-93f0-bc008ccc7dfa", t._sentryDebugIdIdentifier = "sentry-dbid-4b377fee-5302-495f-93f0-bc008ccc7dfa")
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "083e26fc-5932-492d-a9ab-14f3ea30d303", t._sentryDebugIdIdentifier = "sentry-dbid-083e26fc-5932-492d-a9ab-14f3ea30d303")
   })()
 } catch {}
-const et = () => "Copy",
-  tt = () => "Copiar",
-  lr = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? et() : tt(),
-  rt = () => "Report User",
-  nt = () => "Reportar usuário",
-  ot = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? rt() : nt(),
-  at = () => "Timeout User",
-  st = () => "Suspender usuário",
-  it = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? at() : st(),
-  lt = () => "Ban User",
-  ct = () => "Banir usuário",
-  ut = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? lt() : ct(),
-  pt = () => "+18, inappropriate link, highly suggestive content, ...",
-  dt = () => "+18, links inapropriados, conteúdo altamente sugestivo, ...",
-  ft = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? pt() : dt(),
-  _t = () => "Use of software to completely automate painting",
-  vt = () => "Uso de software para pintar de forma completamente automatizada ",
-  mt = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? _t() : vt(),
-  gt = () => "Racism, homophobia, hate groups, ...",
-  bt = () => "Racismo, homofobia, grupos de ódio, ...",
-  ht = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? gt() : bt(),
-  xt = () => "Messed up artworks for no reason",
-  yt = () => "Estragar desenho dos outros sem motivo",
-  wt = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? xt() : yt(),
-  Rt = () => "Released other's personal information without their consent",
-  kt = () => "Vazar informações pessoais de terceiros sem consentimento",
-  Dt = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? Rt() : kt(),
-  Bt = () => "Other reason not listed",
-  Tt = () => "Outro motivo não listado",
-  Et = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? Bt() : Tt(),
-  Lt = () => "Report",
-  Ut = () => "Reportar",
-  It = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? Lt() : Ut(),
-  Pt = () => "Report sent successfully",
-  Ct = () => "Denúncia enviada com sucesso",
-  zt = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? Pt() : Ct(),
+const et = () => "Log Out",
+  tt = () => "Log Out",
+  bo = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? et() : tt(),
+  ot = () => "Copy",
+  rt = () => "Copiar",
+  ho = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? ot() : rt(),
+  nt = () => "Report User",
+  st = () => "Reportar usuário",
+  at = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? nt() : st(),
+  it = () => "Timeout User",
+  lt = () => "Suspender usuário",
+  ct = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? it() : lt(),
+  ut = () => "Ban User",
+  dt = () => "Banir usuário",
+  pt = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? ut() : dt(),
+  _t = () => "+18, inappropriate link, highly suggestive content, ...",
+  ft = () => "+18, links inapropriados, conteúdo altamente sugestivo, ...",
+  vt = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? _t() : ft(),
+  mt = () => "Use of software to completely automate painting",
+  gt = () => "Uso de software para pintar de forma completamente automatizada ",
+  bt = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? mt() : gt(),
+  ht = () => "Racism, homophobia, hate groups, ...",
+  xt = () => "Racismo, homofobia, grupos de ódio, ...",
+  yt = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? ht() : xt(),
+  wt = () => "Messed up artworks for no reason",
+  kt = () => "Estragar desenho dos outros sem motivo",
+  Rt = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? wt() : kt(),
+  Dt = () => "Released other's personal information without their consent",
+  Lt = () => "Vazar informações pessoais de terceiros sem consentimento",
+  Tt = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? Dt() : Lt(),
+  Et = () => "Other reason not listed",
+  Bt = () => "Outro motivo não listado",
+  Ut = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? Et() : Bt(),
+  It = () => "Report",
+  Pt = () => "Reportar",
+  St = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? It() : Pt(),
+  Ct = () => "Report sent successfully",
+  Ot = () => "Denúncia enviada com sucesso",
+  zt = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? Ct() : Ot(),
   Mt = () => "Report failed. Please try again later",
-  St = () => "Denúncia falhou. Por favor, tente novamente mais tarde",
-  At = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? Mt() : St(),
-  Ot = () => "Purchases",
-  jt = () => "Compras",
-  cr = (t = {}, e = {}) => (e.locale ?? u()) === "en" ? Ot() : jt();
-var Nt = X('<label class="flex gap-3"><input name="reason" class="radio radio-sm mt-1" type="radio"/> <div><div class="font-semibold"> </div> <div class="text-base-content/80 text-sm"> </div></div></label>'),
-  Zt = (t, e) => {
+  At = () => "Denúncia falhou. Por favor, tente novamente mais tarde",
+  jt = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? Mt() : At(),
+  Nt = () => "Purchases",
+  Zt = () => "Compras",
+  xo = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? Nt() : Zt(),
+  qt = () => "Log out from all devices",
+  Yt = () => "Sair de todos os dispositivos",
+  yo = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? qt() : Yt(),
+  Ft = () => "Sessions successfully revoked",
+  Ht = () => "Sessões encerradas com sucesso",
+  wo = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? Ft() : Ht(),
+  Kt = () => "Error revoking sessions. Try again later.",
+  Vt = () => "Erro ao encerrar sessões. Tente novamente mais tarde.",
+  ko = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? Kt() : Vt();
+var Gt = X('<label class="flex gap-3"><input name="reason" class="radio radio-sm mt-1" type="radio"/> <div><div class="font-semibold"> </div> <div class="text-base-content/80 text-sm"> </div></div></label>'),
+  Jt = (t, e) => {
     e(!1)
   },
-  qt = X('<form method="POST"><input name="reportedUserId" hidden/> <input name="latitude" hidden/> <input name="longitude" hidden/> <input name="zoom" hidden/> <section class="flex gap-3"><!> <div><h2 class="text-xl font-semibold"><!></h2> <span><span> </span> <span> </span></span></div></section> <section class="mt-6"><h3 class="text-base-content/80 text-base"> </h3> <div class="mt-2 flex flex-col gap-3"></div></section> <section class="mt-6"><!></section> <section class="mt-3 flex justify-end gap-2"><button type="button" class="btn"> </button> <button class="btn btn-error"> </button></section></form>'),
-  Yt = X('<dialog class="modal"><div class="modal-box max-h-[97%] max-w-xl"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <!></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
+  Qt = X('<form method="POST"><input name="reportedUserId" hidden/> <input name="latitude" hidden/> <input name="longitude" hidden/> <input name="zoom" hidden/> <section class="flex gap-3"><!> <div><h2 class="text-xl font-semibold"><!></h2> <span><span> </span> <span> </span></span></div></section> <section class="mt-6"><h3 class="text-base-content/80 text-base"> </h3> <div class="mt-2 flex flex-col gap-3"></div></section> <section class="mt-6"><!></section> <section class="mt-3 flex justify-end gap-2"><button type="button" class="btn"> </button> <button class="btn btn-error"> </button></section></form>'),
+  Wt = X('<dialog class="modal"><div class="modal-box max-h-[97%] max-w-xl"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <!></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
 
-function ur(t, e) {
+function Ro(t, e) {
   Te(e, !0);
-  const i = [];
-  let d = Ie(e, "open", 15),
-    B = R(!1),
-    T = R(""),
-    M = R(""),
-    E = R(null),
-    S = R(null);
-  const pe = [{
+  const o = [];
+  let p = Ie(e, "open", 15),
+    L = k(!1),
+    T = k(""),
+    O = k(""),
+    E = k(null),
+    z = k(null);
+  const de = [{
     value: "inappropriate-content",
     label: Ne(),
-    description: ft()
+    description: vt()
   }, {
     value: "hate-speech",
     label: Ze(),
-    description: ht()
+    description: yt()
   }, {
     value: "doxxing",
     label: qe(),
-    description: Dt()
+    description: Tt()
   }, {
     value: "bot",
     label: Ye(),
-    description: mt()
+    description: bt()
   }, {
     value: "griefing",
     label: Fe(),
-    description: wt()
+    description: Rt()
   }, {
     value: "other",
     label: He(),
-    description: Et()
+    description: Ut()
   }];
   De(() => {
-    const _ = v => {
-      v.key === "Escape" && d(!1)
+    const f = v => {
+      v.key === "Escape" && p(!1)
     };
-    return document.addEventListener("keydown", _), () => document.removeEventListener("keydown", _)
-  }), ae(() => {
-    d() || (h(T, ""), h(M, ""))
+    return document.addEventListener("keydown", f), () => document.removeEventListener("keydown", f)
+  }), se(() => {
+    p() || (h(T, ""), h(O, ""))
   });
-  const de = {
+  const pe = {
     "report-user": `${Q}/report-user`,
     timeout: `${Q}/moderator/timeout-user`,
     ban: `${Q}/admin/ban-user`
   };
-  var x = Yt(),
-    $ = o(x),
-    fe = c(o($), 2);
+  var x = Wt(),
+    $ = s(x),
+    _e = u(s($), 2);
   {
-    var _e = _ => {
-      var v = qt(),
-        A = o(v);
+    var fe = f => {
+      var v = Qt(),
+        M = s(v);
+      D(M);
+      var A = u(M, 2);
       D(A);
-      var O = c(A, 2);
-      D(O);
-      var j = c(O, 2);
+      var j = u(A, 2);
       D(j);
-      var N = c(j, 2);
+      var N = u(j, 2);
       D(N);
-      var Z = c(N, 2),
-        ee = o(Z);
-      Qe(ee, {
+      var Z = u(N, 2),
+        ee = s(Z);
+      Je(ee, {
         get userId() {
           return e.paintedBy.id
         },
@@ -219,21 +233,21 @@ function ur(t, e) {
         },
         class: "size-14"
       });
-      var te = c(ee, 2),
-        q = o(te),
-        ve = o(q);
+      var te = u(ee, 2),
+        q = s(te),
+        ve = s(q);
       {
         var me = a => {
             var r = J();
-            k(l => f(r, l), [() => ot()]), b(a, r)
+            R(c => _(r, c), [() => at()]), b(a, r)
           },
           ge = a => {
             var r = le(),
-              l = ce(r);
+              c = ce(r);
             {
-              var p = m => {
+              var d = m => {
                   var g = J();
-                  k(y => f(g, y), [() => it()]), b(m, g)
+                  R(y => _(g, y), [() => ct()]), b(m, g)
                 },
                 U = m => {
                   var g = le(),
@@ -241,134 +255,134 @@ function ur(t, e) {
                   {
                     var I = w => {
                       var P = J();
-                      k(ke => f(P, ke), [() => ut()]), b(w, P)
+                      R(Re => _(P, Re), [() => pt()]), b(w, P)
                     };
-                    C(y, w => {
+                    S(y, w => {
                       e.action === "ban" && w(I)
                     }, !0)
                   }
                   b(m, g)
                 };
-              C(l, m => {
-                e.action === "timeout" ? m(p) : m(U, !1)
+              S(c, m => {
+                e.action === "timeout" ? m(d) : m(U, !1)
               }, !0)
             }
             b(a, r)
           };
-        C(ve, a => {
+        S(ve, a => {
           e.action === "report-user" ? a(me) : a(ge, !1)
         })
       }
       n(q);
-      var Y = c(q, 2),
-        F = o(Y),
-        be = o(F, !0);
+      var Y = u(q, 2),
+        F = s(Y),
+        be = s(F, !0);
       n(F);
-      var re = c(F, 2),
-        he = o(re);
-      n(re), n(Y), n(te), n(Z);
-      var H = c(Z, 2),
-        K = o(H),
-        xe = o(K);
+      var oe = u(F, 2),
+        he = s(oe);
+      n(oe), n(Y), n(te), n(Z);
+      var H = u(Z, 2),
+        K = s(H),
+        xe = s(K);
       n(K);
-      var ne = c(K, 2);
-      Ce(ne, 21, () => pe, a => a.value, (a, r) => {
-        var l = Nt(),
-          p = o(l);
-        D(p);
-        var U, m = c(p, 2),
-          g = o(m),
-          y = o(g, !0);
+      var re = u(K, 2);
+      Se(re, 21, () => de, a => a.value, (a, r) => {
+        var c = Gt(),
+          d = s(c);
+        D(d);
+        var U, m = u(d, 2),
+          g = s(m),
+          y = s(g, !0);
         n(g);
-        var I = c(g, 2),
-          w = o(I, !0);
-        n(I), n(m), n(l), k(() => {
-          ue(p, "aria-label", s(r).label), U !== (U = s(r).value) && (p.value = (p.__value = s(r).value) ?? ""), f(y, s(r).label), f(w, s(r).description)
-        }), Oe(i, [], p, () => (s(r).value, s(T)), P => h(T, P)), b(a, l)
-      }), n(ne), n(H);
-      var V = c(H, 2),
-        ye = o(V);
+        var I = u(g, 2),
+          w = s(I, !0);
+        n(I), n(m), n(c), R(() => {
+          ue(d, "aria-label", i(r).label), U !== (U = i(r).value) && (d.value = (d.__value = i(r).value) ?? ""), _(y, i(r).label), _(w, i(r).description)
+        }), Ae(o, [], d, () => (i(r).value, i(T)), P => h(T, P)), b(a, c)
+      }), n(re), n(H);
+      var V = u(H, 2),
+        ye = s(V);
       {
-        let a = ie(() => Je()),
-          r = ie(() => s(T) === "doxxing" ? 20 : 5);
+        let a = ie(() => Ge()),
+          r = ie(() => i(T) === "doxxing" ? 20 : 5);
         Ke(ye, {
           class: "h-20 rounded-lg",
           name: "notes",
           get placeholder() {
-            return s(a)
+            return i(a)
           },
           max: 2056,
           get min() {
-            return s(r)
+            return i(r)
           },
           get value() {
-            return s(M)
+            return i(O)
           },
-          set value(l) {
-            h(M, l, !0)
+          set value(c) {
+            h(O, c, !0)
           },
           get validate() {
-            return s(S)
+            return i(z)
           },
-          set validate(l) {
-            h(S, l, !0)
+          set validate(c) {
+            h(z, c, !0)
           }
         })
       }
       n(V);
-      var oe = c(V, 2),
-        L = o(oe);
-      L.__click = [Zt, d];
-      var we = o(L, !0);
-      n(L);
-      var G = c(L, 2),
-        Re = o(G, !0);
-      n(G), n(oe), n(v), je(v, a => h(E, a), () => s(E)), k((a, r, l, p) => {
-        ue(v, "action", de[e.action]), z(A, e.paintedBy.id), z(O, e.latLon[0]), z(j, e.latLon[1]), z(N, e.zoom), Me(Y, 1, `font-medium ${a??""} flex gap-1.5`), f(be, e.paintedBy.name), f(he, `#${e.paintedBy.id??""}`), f(xe, `${r??""}:`), f(we, l), G.disabled = s(B), f(Re, p)
-      }, [() => Xe(e.paintedBy.id), () => Ve(), () => We(), () => It()]), se("submit", v, async a => {
-        if (a.preventDefault(), !s(B) && s(S)()) try {
-          h(B, !0);
-          const r = new FormData(s(E));
+      var ne = u(V, 2),
+        B = s(ne);
+      B.__click = [Jt, p];
+      var we = s(B, !0);
+      n(B);
+      var G = u(B, 2),
+        ke = s(G, !0);
+      n(G), n(ne), n(v), je(v, a => h(E, a), () => i(E)), R((a, r, c, d) => {
+        ue(v, "action", pe[e.action]), C(M, e.paintedBy.id), C(A, e.latLon[0]), C(j, e.latLon[1]), C(N, e.zoom), Oe(Y, 1, `font-medium ${a??""} flex gap-1.5`), _(be, e.paintedBy.name), _(he, `#${e.paintedBy.id??""}`), _(xe, `${r??""}:`), _(we, c), G.disabled = i(L), _(ke, d)
+      }, [() => Xe(e.paintedBy.id), () => Ve(), () => Qe(), () => St()]), ae("submit", v, async a => {
+        if (a.preventDefault(), !i(L) && i(z)()) try {
+          h(L, !0);
+          const r = new FormData(i(E));
           if (!r.get("reason")) {
-            W.error(Ge());
+            W.error(We());
             return
           }
-          const l = await e.image;
-          r.append("image", l, `report-${Date.now()}.jpeg`);
-          const p = await fetch(s(E).action, {
+          const c = await e.image;
+          r.append("image", c, `report-${Date.now()}.jpeg`);
+          const d = await fetch(i(E).action, {
             method: "POST",
             body: r,
             credentials: "include"
           });
-          p.status === 200 || p.status === 409 ? (W.info(zt()), d(!1)) : W.error(At())
+          d.status === 200 || d.status === 409 ? (W.info(zt()), p(!1)) : W.error(jt())
         } finally {
-          h(B, !1)
+          h(L, !1)
         }
-      }), Ae(2, v, () => $e), b(_, v)
+      }), Me(2, v, () => $e), b(f, v)
     };
-    C(fe, _ => {
-      d() && _(_e)
+    S(_e, f => {
+      p() && f(fe)
     })
   }
-  n($), Ee(2), n(x), ze(x, () => _ => {
-    ae(() => {
-      d() ? _.show() : _.close()
+  n($), Ee(2), n(x), Ce(x, () => f => {
+    se(() => {
+      p() ? f.show() : f.close()
     })
-  }), se("close", x, () => d(!1)), b(t, x), Le()
+  }), ae("close", x, () => p(!1)), b(t, x), Be()
 }
-Be(["click"]);
-var Ft = Ue('<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
+Le(["click"]);
+var Xt = Ue('<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
 
-function pr(t, e) {
-  let i = Pe(e, ["$$slots", "$$events", "$$legacy"]);
-  var d = Ft();
-  Se(d, () => ({
+function Do(t, e) {
+  let o = Pe(e, ["$$slots", "$$events", "$$legacy"]);
+  var p = Xt();
+  ze(p, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
-    ...i
-  })), b(t, d)
+    ...o
+  })), b(t, p)
 }
 export {
-  pr as D, ur as R, ut as b, lr as c, cr as p, ot as r, it as t
+  Do as D, Ro as R, bo as a, pt as b, ho as c, ko as d, yo as l, xo as p, at as r, wo as s, ct as t
 };

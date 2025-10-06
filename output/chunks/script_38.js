@@ -1,76 +1,63 @@
-import "./DtSP5h8P.js";
 import {
-  p as m,
-  f as c,
-  t as A,
-  b as f,
-  c as v,
-  d as y,
-  s as _,
-  r as h
-} from "./C7dcjzId.js";
-import {
-  p as w,
-  i as x,
-  r as E
-} from "./DrLYWIGb.js";
-import {
-  b as T,
-  a as r,
-  s as S
-} from "./D70VCyPd.js";
+  w as p,
+  x as g,
+  y as r,
+  z as y,
+  A as _,
+  B as l,
+  g as u,
+  C as w,
+  D as h
+} from "./nXP0Sia0.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "d8fe2b59c656bd9f6dccc34a4ac724cc1c260861"
+      id: "22dd6d20080aececfaae9b3120dfb71899337f43"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      a = new e.Error().stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "036fd0fb-3680-4bdd-a7a7-7d7d5d4cd2a6", e._sentryDebugIdIdentifier = "sentry-dbid-036fd0fb-3680-4bdd-a7a7-7d7d5d4cd2a6")
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "b27063fa-afaa-487d-9b71-b73481204781", e._sentryDebugIdIdentifier = "sentry-dbid-b27063fa-afaa-487d-9b71-b73481204781")
   })()
 } catch {}
-const B = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
-var L = c("<span>wplace</span>"),
-  R = c('<div><img alt="Wplace logo"/> <!></div>');
 
-function z(e, a) {
-  m(a, !0);
-  let t = w(a, "size", 3, "default"),
-    b = E(a, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
-  var d = R();
-  T(d, () => ({
-    ...b,
-    class: `flex items-center gap-1.5 ${a.class??""}`
-  }));
-  var l = y(d);
-  let i;
-  var g = _(l, 2);
-  {
-    var p = s => {
-      var o = L();
-      let n;
-      A(u => n = r(o, 1, "text-base-content font-pixel", null, n, u), [() => ({
-        "text-4xl": t() === "default",
-        "text-5xl": t() === "lg" || t() === "medium"
-      })]), f(s, o)
-    };
-    x(g, s => {
-      a.hasText && s(p)
-    })
+function m(e = !1) {
+  const n = p,
+    f = n.l.u;
+  if (!f) return;
+  let a = () => w(n.s);
+  if (e) {
+    let s = 0,
+      t = {};
+    const b = h(() => {
+      let d = !1;
+      const i = n.s;
+      for (const o in i) i[o] !== t[o] && (t[o] = i[o], d = !0);
+      return d && s++, s
+    });
+    a = () => u(b)
   }
-  h(d), A(s => {
-    i = r(l, 1, "pixelated", null, i, s), S(l, "src", B)
-  }, [() => ({
-    "size-10": t() === "default",
-    "size-16": t() === "medium",
-    "size-20": t() === "lg"
-  })]), f(e, d), v()
+  f.b.length && g(() => {
+    c(n, a), l(f.b)
+  }), r(() => {
+    const s = y(() => f.m.map(_));
+    return () => {
+      for (const t of s) typeof t == "function" && t()
+    }
+  }), f.a.length && r(() => {
+    c(n, a), l(f.a)
+  })
+}
+
+function c(e, n) {
+  if (e.l.s)
+    for (const f of e.l.s) u(f);
+  n()
 }
 export {
-  z as L
+  m as i
 };

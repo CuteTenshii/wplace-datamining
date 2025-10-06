@@ -19,18 +19,18 @@ import {
   Z as w,
   z as se,
   u as P
-} from "./C7dcjzId.js";
+} from "./nXP0Sia0.js";
 import {
   g
-} from "./DditNrNW.js";
+} from "./BzyUMEdi.js";
 import {
   s as Te
-} from "./Bunyh_BE.js";
+} from "./D1aoCxd9.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "d8fe2b59c656bd9f6dccc34a4ac724cc1c260861"
+      id: "22dd6d20080aececfaae9b3120dfb71899337f43"
     }
   } catch {}
 })();
@@ -38,7 +38,7 @@ try {
   (function() {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new a.Error().stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "e524c20a-a4f2-4f11-8304-bfb02e31f663", a._sentryDebugIdIdentifier = "sentry-dbid-e524c20a-a4f2-4f11-8304-bfb02e31f663")
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "fd74202f-5e39-4402-81c5-dcb827f06ebc", a._sentryDebugIdIdentifier = "sentry-dbid-fd74202f-5e39-4402-81c5-dcb827f06ebc")
   })()
 } catch {}
 const Ee = "true",
@@ -52,12 +52,12 @@ function ga(...a) {
 }
 const ve = typeof document < "u";
 let oe = 0;
-var L, k, C;
+var L, q, N;
 class Ae {
   constructor() {
     h(this, L, b(Z([])));
-    h(this, k, b(Z([])));
-    h(this, C, e => {
+    h(this, q, b(Z([])));
+    h(this, N, e => {
       const t = this.toasts.findIndex(n => n.id === e);
       return t === -1 ? null : t
     });
@@ -122,7 +122,7 @@ class Ae {
         this.toasts = [];
         return
       }
-      const t = u(this, C).call(this, e);
+      const t = u(this, N).call(this, e);
       if (t !== null) return this.toasts.splice(t, 1), e
     });
     _(this, "message", (e, t) => this.create({
@@ -211,7 +211,7 @@ class Ae {
       this.heights = this.heights.filter(t => t.toastId !== e)
     });
     _(this, "setHeight", e => {
-      const t = u(this, C).call(this, e.toastId);
+      const t = u(this, N).call(this, e.toastId);
       if (t === null) {
         this.heights.push(e);
         return
@@ -229,13 +229,13 @@ class Ae {
     w(u(this, L), e, !0)
   }
   get heights() {
-    return p(u(this, k))
+    return p(u(this, q))
   }
   set heights(e) {
-    w(u(this, k), e, !0)
+    w(u(this, q), e, !0)
   }
 }
-L = new WeakMap, k = new WeakMap, C = new WeakMap;
+L = new WeakMap, q = new WeakMap, N = new WeakMap;
 
 function Pe(a) {
   return a && typeof a == "object" && "status" in a ? `HTTP error! Status: ${a.status}` : `Error! ${a}`
@@ -302,12 +302,12 @@ function Oe() {
   }, !0)
 }
 const ie = "theme";
-var q, M, N, D, B, U, G;
+var k, C, M, D, B, U, G;
 class Le {
   constructor() {
-    h(this, q, b(!1));
-    h(this, M, b(!1));
-    h(this, N, b(Z(Ce())));
+    h(this, k, b(!1));
+    h(this, C, b(!1));
+    h(this, M, b(Z(Ne())));
     h(this, D, b(!1));
     h(this, B, b("custom-winter"));
     h(this, U, b(Z(Date.now())));
@@ -317,22 +317,22 @@ class Le {
     }, 500), this.theme = localStorage.getItem(ie) || "custom-winter"
   }
   get dropletsDialogOpen() {
-    return p(u(this, q))
+    return p(u(this, k))
   }
   set dropletsDialogOpen(e) {
-    w(u(this, q), e, !0)
+    w(u(this, k), e, !0)
   }
   get muted() {
-    return p(u(this, M))
+    return p(u(this, C))
   }
   set muted(e) {
-    w(u(this, M), e, !0)
+    w(u(this, C), e, !0)
   }
   get language() {
-    return p(u(this, N))
+    return p(u(this, M))
   }
   set language(e) {
-    w(u(this, N), e, !0)
+    w(u(this, M), e, !0)
   }
   get turnstatileLoaded() {
     return p(u(this, D))
@@ -350,7 +350,7 @@ class Le {
     return p(u(this, U))
   }
   get captcha() {
-    return qe ? p(u(this, G)) : {
+    return ke ? p(u(this, G)) : {
       token: "turnstile-disabled",
       time: Date.now()
     }
@@ -359,17 +359,17 @@ class Le {
     w(u(this, G), e, !0)
   }
 }
-q = new WeakMap, M = new WeakMap, N = new WeakMap, D = new WeakMap, B = new WeakMap, U = new WeakMap, G = new WeakMap;
-const ke = new Le;
+k = new WeakMap, C = new WeakMap, M = new WeakMap, D = new WeakMap, B = new WeakMap, U = new WeakMap, G = new WeakMap;
+const qe = new Le;
 
-function Ce() {
+function Ne() {
   if (navigator.languages && navigator.languages.length > 0) {
     const a = navigator.languages.find(e => e.length === 2);
     if (a) return a
   }
   return (navigator.language || navigator.userLanguage || navigator.browserLanguage || "en").substring(0, 2)
 }
-const qe = Ee.toLowerCase() !== "false";
+const ke = Ee.toLowerCase() !== "false";
 let m;
 
 function x(a) {
@@ -417,7 +417,7 @@ const Y = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
       throw Error("TextEncoder not available")
     }
   },
-  Me = typeof Y.encodeInto == "function" ? function(a, e) {
+  Ce = typeof Y.encodeInto == "function" ? function(a, e) {
     return Y.encodeInto(a, e)
   } : function(a, e) {
     const t = Y.encode(a);
@@ -445,7 +445,7 @@ function _e(a, e, t) {
   if (l !== n) {
     l !== 0 && (a = a.slice(l)), s = t(s, n, n = l + a.length * 3, 1) >>> 0;
     const o = W().subarray(s + l, s + n),
-      d = Me(a, o);
+      d = Ce(a, o);
     l += d.written, s = t(s, n, l, 1) >>> 0
   }
   return Q = l, s
@@ -457,7 +457,7 @@ function pa(a) {
   m.request_url(e, t)
 }
 
-function Ne() {
+function Me() {
   let a, e;
   try {
     const t = m.get_load_payload();
@@ -638,12 +638,12 @@ const $e = () => "Unexpected server error. Try again later.",
   It = () => "Alliance with empty name",
   Ot = () => "Aliança com nome vazio",
   Lt = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? It() : Ot(),
-  kt = () => "You are already in an alliance",
-  Ct = () => "Você já está em uma aliança",
-  qt = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? kt() : Ct(),
-  Mt = () => "You are not allowed to do this",
-  Nt = () => "Você não tem permissão para fazer isso",
-  E = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? Mt() : Nt(),
+  qt = () => "You are already in an alliance",
+  Nt = () => "Você já está em uma aliança",
+  kt = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? qt() : Nt(),
+  Ct = () => "You are not allowed to do this",
+  Mt = () => "Você não tem permissão para fazer isso",
+  E = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? Ct() : Mt(),
   Dt = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
   Bt = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
   Ut = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? Dt() : Bt(),
@@ -694,13 +694,13 @@ const $e = () => "Unexpected server error. Try again later.",
   In = (a, e = {}) => (e.locale ?? g()) === "en" ? Pn(a) : xn(a),
   On = () => "You are trying to paint with a color you do not own",
   Ln = () => "Você está tentando pintar com uma cor que não possui",
-  kn = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? On() : Ln(),
-  Cn = () => "The new leader must be a member of the alliance",
-  qn = () => "O novo líder deve ser um membro da aliança",
-  Mn = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? Cn() : qn(),
-  Nn = () => "The name contains disallowed characters or words. Please choose a different name.",
+  qn = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? On() : Ln(),
+  Nn = () => "The new leader must be a member of the alliance",
+  kn = () => "O novo líder deve ser um membro da aliança",
+  Cn = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? Nn() : kn(),
+  Mn = () => "The name contains disallowed characters or words. Please choose a different name.",
   Dn = () => "O nome contém caracteres ou palavras não permitidas. Por favor, escolha outro nome.",
-  Bn = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? Nn() : Dn(),
+  Bn = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? Mn() : Dn(),
   Un = () => "Invalid discord.",
   Gn = () => "Discord inválido.",
   Rn = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? Un() : Gn(),
@@ -776,7 +776,7 @@ class zn {
       if (!this.data) return;
       const e = this.data.charges;
       if (e.count > e.max) return e.count;
-      const t = e.count + Math.max((ke.now - this.lastFetch) / e.cooldownMs, 0);
+      const t = e.count + Math.max((qe.now - this.lastFetch) / e.cooldownMs, 0);
       return Math.min(e.max, t)
     }));
     h(this, J, P(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
@@ -1275,7 +1275,7 @@ class ra {
         if (d.headers.get("cf-mitigated") === "challenge") throw new Error(zt());
         const c = await d.json();
         if ((c == null ? void 0 : c.error) === "refresh") throw new Error(Wt());
-        if ((c == null ? void 0 : c.error) === "color-not-owned") throw new Error(kn());
+        if ((c == null ? void 0 : c.error) === "color-not-owned") throw new Error(qn());
         X.refresh()
       } else if (d.status === 451) {
         const c = await o[0].json();
@@ -1500,7 +1500,7 @@ class ra {
     if (t.status === 400) {
       const n = await t.json();
       throw n.error === "max_characters" ? new Error(vt()) : n.error === "name_taken" ? new Error(xt()) : n.error == "empty_name" ? new Error(Lt()) : new Error(i())
-    } else throw t.status === 403 ? new Error(qt()) : new Error(i())
+    } else throw t.status === 403 ? new Error(kt()) : new Error(i())
   }
   async leaveAlliance() {
     if ((await this.request("/alliance/leave", {
@@ -1692,7 +1692,7 @@ class ra {
     });
     if (n.status === 400) {
       const s = await n.json();
-      throw (s == null ? void 0 : s.error) === "user_not_in_alliance" ? new Error(Mn()) : new Error(i())
+      throw (s == null ? void 0 : s.error) === "user_not_in_alliance" ? new Error(Cn()) : new Error(i())
     } else if (n.status !== 200) throw new f(i(), n.status)
   }
   async banAllAllianceMembers(e, t, n) {
@@ -2103,7 +2103,7 @@ class ra {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
-        pawtectMe: Ne(),
+        pawtectMe: Me(),
         "paint-the": "world",
         "but-not": "using-bots",
         security: "/.well-known/security.txt"
@@ -2125,9 +2125,63 @@ class ra {
     });
     if (e.status !== 200) throw new f(i(), e.status)
   }
+  async deleteAllUserSessions(e) {
+    const t = await this.request(`/admin/users/${e}/sessions`, {
+      method: "DELETE",
+      credentials: "include"
+    });
+    if (t.status !== 200) throw new f(i(), t.status)
+  }
+  async banUsers(e, t, n) {
+    const s = await this.request("/admin/users/ban", {
+      method: "POST",
+      credentials: "include",
+      body: JSON.stringify({
+        userIds: e,
+        reason: t,
+        notes: n
+      })
+    });
+    if (s.status !== 200) throw new f(i(), s.status)
+  }
+  async timeoutUsers(e, t, n) {
+    const s = await this.request("/admin/users/timeout", {
+      method: "POST",
+      credentials: "include",
+      body: JSON.stringify({
+        userIds: e,
+        reason: t,
+        notes: n
+      })
+    });
+    if (s.status !== 200) throw new f(i(), s.status)
+  }
+  async incrementUsersDroplets(e, t, n) {
+    const s = await this.request("/admin/users/increment-droplet", {
+      method: "POST",
+      credentials: "include",
+      body: JSON.stringify({
+        userIds: e,
+        delta: t,
+        notes: n
+      })
+    });
+    if (s.status !== 200) throw new f(i(), s.status)
+  }
+  async postUnbanUsers(e, t) {
+    const n = await this.request("/admin/users/unban", {
+      method: "POST",
+      credentials: "include",
+      body: JSON.stringify({
+        userIds: e,
+        notes: t
+      })
+    });
+    if (n.status !== 200) throw new f(i(), n.status)
+  }
 }
 V = new WeakMap;
 let de = new ra(ue);
 export {
-  In as A, ba as B, pe as C, Sa as D, Ta as E, la as F, ua as G, ue as P, na as S, Re as _, de as a, ya as b, i as c, qe as d, da as e, un as f, ke as g, rn as h, Qt as i, tn as j, cn as k, T as l, ga as m, fa as n, aa as o, _a as p, ha as q, pa as r, wa as s, ge as t, X as u, Ea as v, Fn as w, va as x, ma as y, An as z
+  In as A, ba as B, pe as C, Sa as D, Ta as E, la as F, ua as G, ue as P, na as S, Re as _, de as a, ya as b, i as c, ke as d, da as e, un as f, qe as g, rn as h, Qt as i, tn as j, cn as k, T as l, ga as m, fa as n, aa as o, _a as p, ha as q, pa as r, wa as s, ge as t, X as u, Ea as v, Fn as w, va as x, ma as y, An as z
 };

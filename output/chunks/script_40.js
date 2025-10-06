@@ -1,24 +1,317 @@
+import "./DpsrLiXi.js";
 import {
-  g as o
-} from "./DditNrNW.js";
+  M as ce,
+  z as se,
+  H as oe,
+  C as de,
+  aZ as fe,
+  p as W,
+  Z as M,
+  Y as U,
+  ay as ue,
+  a as X,
+  g as v,
+  b as w,
+  c as p,
+  f as V,
+  t as j,
+  u as $,
+  v as ee,
+  aw as ve,
+  d,
+  r as f,
+  s as u
+} from "./nXP0Sia0.js";
+import {
+  s as y
+} from "./BPjS_4_e.js";
+import {
+  p as c,
+  i as B,
+  r as te
+} from "./BjlNU-Hu.js";
+import {
+  a as A,
+  c as G,
+  b as ae,
+  s as O
+} from "./D8B8oGuI.js";
+import {
+  b as me
+} from "./DMroiBbz.js";
+import {
+  g as R,
+  d as J,
+  P as be,
+  e as _e
+} from "./DVKUuyXy.js";
+import {
+  o as ge
+} from "./NOQ6C_Qr.js";
+import {
+  g as L
+} from "./BzyUMEdi.js";
+import {
+  L as he
+} from "./Ct3VzNTT.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "d8fe2b59c656bd9f6dccc34a4ac724cc1c260861"
+    var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    a.SENTRY_RELEASE = {
+      id: "22dd6d20080aececfaae9b3120dfb71899337f43"
     }
   } catch {}
 })();
 try {
   (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "40e7372b-7a7a-4331-8256-93db1f959536", e._sentryDebugIdIdentifier = "sentry-dbid-40e7372b-7a7a-4331-8256-93db1f959536")
+    var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      e = new a.Error().stack;
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "2b526b51-2c8c-46fc-b029-b948a28d70d2", a._sentryDebugIdIdentifier = "sentry-dbid-2b526b51-2c8c-46fc-b029-b948a28d70d2")
   })()
 } catch {}
-const f = () => "Confirm",
-  t = () => "Confirmar",
-  r = (e = {}, n = {}) => (n.locale ?? o()) === "en" ? f() : t();
+
+function ye(a, e, n) {
+  ce(() => {
+    var r = se(() => e(a, n == null ? void 0 : n()) || {});
+    if (n && (r != null && r.update)) {
+      var b = !1,
+        m = {};
+      oe(() => {
+        var s = n();
+        de(s), b && fe(m, s) && (m = s, r.update(s))
+      }), b = !0
+    }
+    if (r != null && r.destroy) return () => r.destroy()
+  })
+}
+const we = a => `Login with ${a.name}`,
+  xe = a => `Entrar com ${a.name}`,
+  Q = (a, e = {}) => (e.locale ?? L()) === "en" ? we(a) : xe(a),
+  ke = () => "By continuing, you agree to our",
+  Ie = () => "Ao continuar, você concorda com nossos",
+  Le = (a = {}, e = {}) => (e.locale ?? L()) === "en" ? ke() : Ie(),
+  Ce = () => "Terms of Service",
+  Ee = () => "Termos de Serviço",
+  Te = (a = {}, e = {}) => (e.locale ?? L()) === "en" ? Ce() : Ee(),
+  ze = () => "and",
+  Be = () => "e",
+  Me = (a = {}, e = {}) => (e.locale ?? L()) === "en" ? ze() : Be(),
+  De = () => "Privacy Policy",
+  Pe = () => "Política de privacidade",
+  Se = (a = {}, e = {}) => (e.locale ?? L()) === "en" ? De() : Pe();
+var Fe = V("<div></div>");
+
+function He(a, e) {
+  W(e, !0);
+  let n = c(e, "widgetId", 15),
+    r = c(e, "appearance", 3, "always"),
+    b = c(e, "language", 3, "auto"),
+    m = c(e, "execution", 3, "render"),
+    s = c(e, "retryInterval", 3, 8e3),
+    D = c(e, "retry", 3, "auto"),
+    g = c(e, "refreshExpired", 3, "auto"),
+    C = c(e, "theme", 3, "auto"),
+    E = c(e, "size", 3, "normal"),
+    P = c(e, "tabIndex", 3, 0);
+  c(e, "reset", 15)(() => {
+    var t;
+    n() && ((t = window == null ? void 0 : window.turnstile) == null || t.reset(n()))
+  });
+  const T = $(() => ({
+      sitekey: e.siteKey,
+      callback: (t, i) => {
+        var l;
+        (l = e.callback) == null || l.call(e, t, i)
+      },
+      "error-callback": t => {
+        var i;
+        (i = e.errorCallback) == null || i.call(e, t)
+      },
+      "timeout-callback": () => {
+        var t;
+        (t = e.timeoutCallback) == null || t.call(e)
+      },
+      "expired-callback": () => {
+        var t;
+        (t = e.expiredCallback) == null || t.call(e)
+      },
+      "before-interactive-callback": () => {
+        var t;
+        (t = e.beforeInteractiveCallback) == null || t.call(e)
+      },
+      "after-interactive-callback": () => {
+        var t;
+        (t = e.afterInteractiveCallback) == null || t.call(e)
+      },
+      "unsupported-callback": () => {
+        var t;
+        return (t = e.unsupportedCallback) == null ? void 0 : t.call(e)
+      },
+      "response-field-name": e.responseFieldName ?? e.formsField ?? "cf-turnstile-response",
+      "response-field": e.responseField ?? e.forms ?? !0,
+      "refresh-expired": g(),
+      "retry-interval": s(),
+      tabindex: P(),
+      appearance: r(),
+      execution: m(),
+      language: b(),
+      action: e.action,
+      retry: D(),
+      theme: C(),
+      cData: e.cData,
+      size: E()
+    })),
+    _ = (t, i) => {
+      let l = window.turnstile.render(t, i);
+      return n(l), {
+        destroy() {
+          window.turnstile.remove(l)
+        },
+        update(o) {
+          window.turnstile.remove(l), l = window.turnstile.render(t, o), n(l)
+        }
+      }
+    };
+  let x = U(!1);
+  ge(() => {
+    if (M(x, !0), !R.turnstatileLoaded) {
+      const t = document.createElement("script");
+      t.type = "text/javascript", t.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit", t.async = !0, t.addEventListener("load", () => R.turnstatileLoaded = !0, {
+        once: !0
+      }), document.head.appendChild(t)
+    }
+    return () => {
+      M(x, !1)
+    }
+  });
+  var k = ue(),
+    z = X(k);
+  {
+    var F = t => {
+      var i = Fe();
+      let l;
+      ye(i, (o, H) => _ == null ? void 0 : _(o, H), () => v(T)), j(o => l = A(i, 1, G(e.class), "svelte-1gvfki5", l, o), [() => ({
+        flexible: E() == "flexible"
+      })]), w(t, i)
+    };
+    B(z, t => {
+      R.turnstatileLoaded && v(x) && t(F)
+    })
+  }
+  w(a, k), p()
+}
+var Ne = ee('<svg><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" fill="#4285F4"></path><path d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" fill="#34A853"></path><path d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" fill="#FBBC05"></path><path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" fill="#EB4335"></path></svg>');
+
+function Ke(a, e) {
+  let n = te(e, ["$$slots", "$$events", "$$legacy"]);
+  var r = Ne();
+  ae(r, () => ({
+    viewBox: "0 0 256 262",
+    xmlns: "http://www.w3.org/2000/svg",
+    ...n
+  })), w(a, r)
+}
+var Re = ee('<svg><path fill="#fff" d="m2200 1300-400 400h-400l-350 350v-350H600V200h1600z"></path><g fill="#9146ff"><path d="M500 0 0 500v1800h600v500l500-500h400l900-900V0H500zm1700 1300-400 400h-400l-350 350v-350H600V200h1600v1100z"></path><path d="M1700 550h200v600h-200zm-550 0h200v600h-200z"></path></g></svg>');
+
+function Ue(a, e) {
+  let n = te(e, ["$$slots", "$$events", "$$legacy"]);
+  var r = Re();
+  ae(r, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    "xml:space": "preserve",
+    viewBox: "0 0 2400 2800",
+    ...n
+  })), w(a, r)
+}
+var je = V('<a><!> </a> <a><!> </a> <div class="mt-2 flex flex-col items-center gap-1"><!> <!></div>', 1),
+  Ae = V('<div><div class="flex justify-center"><!></div> <form><div class="mt-6 flex flex-col items-center gap-2"><!></div></form> <p class="text-base-content/60 mt-2 text-center text-sm"> <a class="font-medium" href="/terms/terms-of-service" target="_blank"> </a> <a class="font-medium" href="/terms/privacy" target="_blank"> </a></p></div>');
+
+function pe(a, e) {
+  W(e, !0);
+  let n = U(null),
+    r = U(ve(J ? "" : "turnstile-disabled"));
+
+  function b(t, i) {
+    return `${be}/auth/${t}?token=${i}${e.redirect?`&r=${e.redirect}`:""}`
+  }
+  var m = Ae(),
+    s = d(m),
+    D = d(s);
+  he(D, {
+    hasText: !0
+  }), f(s);
+  var g = u(s, 2),
+    C = d(g),
+    E = d(C);
+  {
+    var P = t => {
+      var i = je(),
+        l = X(i),
+        o = d(l);
+      Ke(o, {
+        class: "mr-1 size-5"
+      });
+      var H = u(o);
+      f(l);
+      var I = u(l, 2),
+        Y = d(I);
+      Ue(Y, {
+        class: "mr-1 size-5"
+      });
+      var re = u(Y);
+      f(I);
+      var Z = u(I, 2),
+        q = d(Z);
+      {
+        var ne = h => {
+          {
+            let N = $(() => _e.trim());
+            He(h, {
+              get siteKey() {
+                return v(N)
+              },
+              callback: K => {
+                M(r, K, !0)
+              }
+            })
+          }
+        };
+        B(q, h => {
+          J && h(ne)
+        })
+      }
+      var le = u(q, 2);
+      B(le, h => {}), f(Z), j((h, N, K, ie) => {
+        A(l, 1, G({
+          "btn btn-lg bg-base-100 w-full text-base": !0,
+          "bg-base-content/10 pointer-events-none": !v(r)
+        })), O(l, "href", h), y(H, ` ${N??""}`), A(I, 1, G({
+          "btn btn-lg bg-base-100 w-full text-base": !0,
+          "bg-base-content/10 pointer-events-none": !v(r)
+        })), O(I, "href", K), y(re, ` ${ie??""}`)
+      }, [() => v(r) ? b("google", v(r)) : "#", () => Q({
+        name: "Google"
+      }), () => v(r) ? b("twitch", v(r)) : "#", () => Q({
+        name: "Twitch"
+      })]), w(t, i)
+    };
+    B(E, t => {
+      t(P, !1)
+    })
+  }
+  f(C), f(g), me(g, t => M(n, t), () => v(n));
+  var S = u(g, 2),
+    T = d(S),
+    _ = u(T),
+    x = d(_, !0);
+  f(_);
+  var k = u(_),
+    z = u(k),
+    F = d(z, !0);
+  f(z), f(S), f(m), j((t, i, l, o) => {
+    y(T, `${t??""} `), y(x, i), y(k, ` ${l??""} `), y(F, o)
+  }, [() => Le(), () => Te(), () => Me(), () => Se()]), w(a, m), p()
+}
 export {
-  r as c
+  pe as L, Ue as T, He as a
 };
