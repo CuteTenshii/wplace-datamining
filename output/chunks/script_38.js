@@ -8,12 +8,12 @@ import {
   g as u,
   C as w,
   D as h
-} from "./nXP0Sia0.js";
+} from "./TyfPWVbD.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "22dd6d20080aececfaae9b3120dfb71899337f43"
+      id: "6fe71e2aef866a931e2568b1d6f6762fddc1f62d"
     }
   } catch {}
 })();
