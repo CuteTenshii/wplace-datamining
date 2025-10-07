@@ -1,11 +1,11 @@
 import {
   g as f
-} from "./GKUa23OF.js";
+} from "./DwZ6mW66.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "ff343a05e6db78c3f87c013111bf250a2c453aa7"
+      id: "abd976f8f8e90d32df6a1b04404d40d50ecf5fd4"
     }
   } catch {}
 })();
@@ -13,12 +13,12 @@ try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "4cabca8b-66f2-4e69-bb29-18897bbab378", e._sentryDebugIdIdentifier = "sentry-dbid-4cabca8b-66f2-4e69-bb29-18897bbab378")
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "f933511f-eca4-45a2-9e25-ab9597bb5b6d", e._sentryDebugIdIdentifier = "sentry-dbid-f933511f-eca4-45a2-9e25-ab9597bb5b6d")
   })()
 } catch {}
-const t = () => "Refresh",
-  o = () => "Atualizar",
-  b = (e = {}, n = {}) => (n.locale ?? f()) === "en" ? t() : o();
+const d = () => "Refresh",
+  t = () => "Atualizar",
+  a = (e = {}, n = {}) => (n.locale ?? f()) === "en" ? d() : t();
 export {
-  b as r
+  a as r
 };

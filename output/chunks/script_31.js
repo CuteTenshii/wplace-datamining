@@ -1,11 +1,11 @@
 import {
   g as o
-} from "./GKUa23OF.js";
+} from "./DwZ6mW66.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "ff343a05e6db78c3f87c013111bf250a2c453aa7"
+      id: "abd976f8f8e90d32df6a1b04404d40d50ecf5fd4"
     }
   } catch {}
 })();
@@ -13,12 +13,12 @@ try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "229445bf-dd55-4e7f-99d6-0afe0ad6a0ba", e._sentryDebugIdIdentifier = "sentry-dbid-229445bf-dd55-4e7f-99d6-0afe0ad6a0ba")
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "971da68e-5d87-43de-87f3-65a92b1b8572", e._sentryDebugIdIdentifier = "sentry-dbid-971da68e-5d87-43de-87f3-65a92b1b8572")
   })()
 } catch {}
-const t = () => "Select the report reason",
-  a = () => "Selecione o motivo da denúncia",
-  l = (e = {}, n = {}) => (n.locale ?? o()) === "en" ? t() : a();
+const d = () => "Select the report reason",
+  t = () => "Selecione o motivo da denúncia",
+  l = (e = {}, n = {}) => (n.locale ?? o()) === "en" ? d() : t();
 export {
   l as s
 };
