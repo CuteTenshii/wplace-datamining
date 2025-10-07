@@ -1,24 +1,24 @@
 import {
   t as y,
-  h as b,
-  e as c,
+  h as _,
+  e as h,
   N as g,
   O as p,
-  o as h,
+  o as u,
   P as w,
   Q as v,
   R as m,
   T,
-  U as u,
+  U as c,
   V as E,
   W as R,
   X as i
-} from "./DPblvP8E.js";
+} from "./W5rmRnnG.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "cc0c831cfe290b2f9f3fef653d3fc44d780a59c1"
+      id: "ff343a05e6db78c3f87c013111bf250a2c453aa7"
     }
   } catch {}
 })();
@@ -36,21 +36,21 @@ function N(e, n, r = !1, o = !1, D = !1) {
   y(() => {
     var d = g;
     if (t === (t = n() ?? "")) {
-      b && c();
+      _ && h();
       return
     }
     if (d.nodes_start !== null && (p(d.nodes_start, d.nodes_end), d.nodes_start = d.nodes_end = null), t !== "") {
-      if (b) {
-        h.data;
-        for (var a = c(), _ = a; a !== null && (a.nodeType !== w || a.data !== "");) _ = a, a = v(a);
+      if (_) {
+        u.data;
+        for (var a = h(), b = a; a !== null && (a.nodeType !== w || a.data !== "");) b = a, a = v(a);
         if (a === null) throw m(), T;
-        u(h, _), l = E(a);
+        c(u, b), l = E(a);
         return
       }
       var s = t + "";
       r ? s = `<svg>${s}</svg>` : o && (s = `<math>${s}</math>`);
       var f = R(s);
-      if ((r || o) && (f = i(f)), u(i(f), f.lastChild), r || o)
+      if ((r || o) && (f = i(f)), c(i(f), f.lastChild), r || o)
         for (; i(f);) l.before(i(f));
       else l.before(f)
     }

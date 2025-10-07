@@ -1,29 +1,29 @@
-import "./De0mwVlw.js";
+import "./BSXvrOX2.js";
 import {
   p as m,
   f as c,
-  t as n,
+  t as f,
   b as A,
   c as v,
   d as y,
   s as _,
   r as h
-} from "./DPblvP8E.js";
+} from "./W5rmRnnG.js";
 import {
   p as w,
   i as x,
   r as E
-} from "./DvauhmJi.js";
+} from "./HSr84OsJ.js";
 import {
   b as T,
   a as r,
   s as S
-} from "./B033chXD.js";
+} from "./CaFs3tX3.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "cc0c831cfe290b2f9f3fef653d3fc44d780a59c1"
+      id: "ff343a05e6db78c3f87c013111bf250a2c453aa7"
     }
   } catch {}
 })();
@@ -41,29 +41,29 @@ var L = c("<span>wplace</span>"),
 function z(e, a) {
   m(a, !0);
   let t = w(a, "size", 3, "default"),
-    g = E(a, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+    b = E(a, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
   var d = R();
   T(d, () => ({
-    ...g,
+    ...b,
     class: `flex items-center gap-1.5 ${a.class??""}`
   }));
   var l = y(d);
   let i;
-  var p = _(l, 2);
+  var g = _(l, 2);
   {
-    var u = s => {
+    var p = s => {
       var o = L();
-      let f;
-      n(b => f = r(o, 1, "text-base-content font-pixel", null, f, b), [() => ({
+      let n;
+      f(u => n = r(o, 1, "text-base-content font-pixel", null, n, u), [() => ({
         "text-4xl": t() === "default",
         "text-5xl": t() === "lg" || t() === "medium"
       })]), A(s, o)
     };
-    x(p, s => {
-      a.hasText && s(u)
+    x(g, s => {
+      a.hasText && s(p)
     })
   }
-  h(d), n(s => {
+  h(d), f(s => {
     i = r(l, 1, "pixelated", null, i, s), S(l, "src", B)
   }, [() => ({
     "size-10": t() === "default",
