@@ -1,22 +1,22 @@
 import {
   g as f
-} from "./C2egeWDR.js";
-import "./EbwvLpIo.js";
+} from "./DKiJ5IW8.js";
+import "./De0mwVlw.js";
 import {
   v as r,
   b as s
-} from "./TyfPWVbD.js";
+} from "./DPblvP8E.js";
 import {
-  b as d
-} from "./C3ylFj0Y.js";
+  b as l
+} from "./B033chXD.js";
 import {
-  r as l
-} from "./CwzLapNG.js";
+  r as d
+} from "./DvauhmJi.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "6fe71e2aef866a931e2568b1d6f6762fddc1f62d"
+      id: "cc0c831cfe290b2f9f3fef653d3fc44d780a59c1"
     }
   } catch {}
 })();
@@ -28,14 +28,14 @@ try {
   })()
 } catch {}
 const a = () => "Close",
-  i = () => "Fechar",
-  w = (e = {}, o = {}) => (o.locale ?? f()) === "en" ? a() : i();
-var c = r('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
+  c = () => "Fechar",
+  w = (e = {}, o = {}) => (o.locale ?? f()) === "en" ? a() : c();
+var i = r('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
 
 function v(e, o) {
-  let t = l(o, ["$$slots", "$$events", "$$legacy"]);
-  var n = c();
-  d(n, () => ({
+  let t = d(o, ["$$slots", "$$events", "$$legacy"]);
+  var n = i();
+  l(n, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",

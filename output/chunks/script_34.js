@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./C2egeWDR.js";
+} from "./DKiJ5IW8.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "6fe71e2aef866a931e2568b1d6f6762fddc1f62d"
+      id: "cc0c831cfe290b2f9f3fef653d3fc44d780a59c1"
     }
   } catch {}
 })();
@@ -22,12 +22,12 @@ const l = () => "Save",
   s = () => "Members",
   a = () => "Membros",
   _ = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? s() : a(),
-  i = () => "Player",
-  c = () => "Jogador",
-  g = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? i() : c(),
-  u = () => "Last pixel",
-  f = () => "Último pixel",
-  m = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? u() : f(),
+  c = () => "Player",
+  i = () => "Jogador",
+  g = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? c() : i(),
+  f = () => "Last pixel",
+  u = () => "Último pixel",
+  m = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? f() : u(),
   d = () => "Visit",
   p = () => "Visitar",
   v = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? d() : p();

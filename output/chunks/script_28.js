@@ -1,22 +1,22 @@
 import {
   g as s
-} from "./C2egeWDR.js";
-import "./EbwvLpIo.js";
+} from "./DKiJ5IW8.js";
+import "./De0mwVlw.js";
 import {
   v as r,
   b as i
-} from "./TyfPWVbD.js";
+} from "./DPblvP8E.js";
 import {
   b as d
-} from "./C3ylFj0Y.js";
+} from "./B033chXD.js";
 import {
-  r as a
-} from "./CwzLapNG.js";
+  r as l
+} from "./DvauhmJi.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "6fe71e2aef866a931e2568b1d6f6762fddc1f62d"
+      id: "cc0c831cfe290b2f9f3fef653d3fc44d780a59c1"
     }
   } catch {}
 })();
@@ -27,16 +27,16 @@ try {
     t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "ed64964e-34b7-477c-a036-554742dff13e", e._sentryDebugIdIdentifier = "sentry-dbid-ed64964e-34b7-477c-a036-554742dff13e")
   })()
 } catch {}
-const l = () => "Pixels painted",
+const a = () => "Pixels painted",
   f = () => "Pixels pintados",
-  T = (e = {}, t = {}) => (t.locale ?? s()) === "en" ? l() : f(),
-  p = () => "Description",
-  c = () => "Descrição",
-  m = (e = {}, t = {}) => (t.locale ?? s()) === "en" ? p() : c();
+  T = (e = {}, t = {}) => (t.locale ?? s()) === "en" ? a() : f(),
+  c = () => "Description",
+  p = () => "Descrição",
+  m = (e = {}, t = {}) => (t.locale ?? s()) === "en" ? c() : p();
 var u = r('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
 
 function v(e, t) {
-  let n = a(t, ["$$slots", "$$events", "$$legacy"]);
+  let n = l(t, ["$$slots", "$$events", "$$legacy"]);
   var o = u();
   d(o, () => ({
     xmlns: "http://www.w3.org/2000/svg",

@@ -2,7 +2,7 @@
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "6fe71e2aef866a931e2568b1d6f6762fddc1f62d"
+      id: "cc0c831cfe290b2f9f3fef653d3fc44d780a59c1"
     }
   } catch {}
 })();
@@ -18,34 +18,34 @@ const m = "modulepreload",
     return new URL(e, o).href
   },
   g = {},
-  v = function(o, c, u) {
+  v = function(o, a, u) {
     let h = Promise.resolve();
-    if (c && c.length > 0) {
+    if (a && a.length > 0) {
       let i = function(t) {
-        return Promise.all(t.map(s => Promise.resolve(s).then(d => ({
+        return Promise.all(t.map(s => Promise.resolve(s).then(c => ({
           status: "fulfilled",
-          value: d
-        }), d => ({
+          value: c
+        }), c => ({
           status: "rejected",
-          reason: d
+          reason: c
         }))))
       };
       const n = document.getElementsByTagName("link"),
         l = document.querySelector("meta[property=csp-nonce]"),
         b = (l == null ? void 0 : l.nonce) || (l == null ? void 0 : l.getAttribute("nonce"));
-      h = i(c.map(t => {
+      h = i(a.map(t => {
         if (t = w(t, u), t in g) return;
         g[t] = !0;
         const s = t.endsWith(".css"),
-          d = s ? '[rel="stylesheet"]' : "";
+          c = s ? '[rel="stylesheet"]' : "";
         if (!!u)
           for (let f = n.length - 1; f >= 0; f--) {
-            const a = n[f];
-            if (a.href === t && (!s || a.rel === "stylesheet")) return
-          } else if (document.querySelector(`link[href="${t}"]${d}`)) return;
+            const d = n[f];
+            if (d.href === t && (!s || d.rel === "stylesheet")) return
+          } else if (document.querySelector(`link[href="${t}"]${c}`)) return;
         const r = document.createElement("link");
-        if (r.rel = s ? "stylesheet" : m, s || (r.as = "script"), r.crossOrigin = "", r.href = t, b && r.setAttribute("nonce", b), document.head.appendChild(r), s) return new Promise((f, a) => {
-          r.addEventListener("load", f), r.addEventListener("error", () => a(new Error(`Unable to preload CSS for ${t}`)))
+        if (r.rel = s ? "stylesheet" : m, s || (r.as = "script"), r.crossOrigin = "", r.href = t, b && r.setAttribute("nonce", b), document.head.appendChild(r), s) return new Promise((f, d) => {
+          r.addEventListener("load", f), r.addEventListener("error", () => d(new Error(`Unable to preload CSS for ${t}`)))
         })
       }))
     }
