@@ -19,18 +19,18 @@ import {
   z as y,
   H as oe,
   u as P
-} from "./D2NUMUd6.js";
+} from "./BI2n3g5M.js";
 import {
   g as f
-} from "./CItBVTel.js";
+} from "./4Szs_zBr.js";
 import {
   s as Te
-} from "./NUr-aU6Q.js";
+} from "./B48bNPoR.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "19e8b1e1f621a77f893c0ebf0e975e4ec873201a"
+      id: "396734e5db96c8d18b29022abf53bbd030e61152"
     }
   } catch {}
 })();
@@ -38,7 +38,7 @@ try {
   (function() {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new a.Error().stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "a4c079d0-f62f-4b3d-833d-049429f8908c", a._sentryDebugIdIdentifier = "sentry-dbid-a4c079d0-f62f-4b3d-833d-049429f8908c")
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "125d38cf-0c43-4c0c-af08-5071b9133651", a._sentryDebugIdIdentifier = "sentry-dbid-125d38cf-0c43-4c0c-af08-5071b9133651")
   })()
 } catch {}
 const Ee = "true",
@@ -302,18 +302,18 @@ function Oe() {
   }, !0)
 }
 const ce = "theme";
-var k, C, M, D, U, B, G;
+var k, C, M, D, B, U, G;
 class Le {
   constructor() {
     _(this, k, S(!1));
     _(this, C, S(!1));
     _(this, M, S(Z(Ne())));
     _(this, D, S(!1));
-    _(this, U, S("custom-winter"));
-    _(this, B, S(Z(Date.now())));
+    _(this, B, S("custom-winter"));
+    _(this, U, S(Z(Date.now())));
     _(this, G, S(void 0));
     setInterval(() => {
-      y(u(this, B), Date.now(), !0)
+      y(u(this, U), Date.now(), !0)
     }, 500), this.theme = localStorage.getItem(ce) || "custom-winter"
   }
   get dropletsDialogOpen() {
@@ -341,13 +341,13 @@ class Le {
     y(u(this, D), e, !0)
   }
   get theme() {
-    return w(u(this, U))
+    return w(u(this, B))
   }
   set theme(e) {
-    y(u(this, U), e, !0), localStorage.setItem(ce, e), document.documentElement.setAttribute("data-theme", e)
+    y(u(this, B), e, !0), localStorage.setItem(ce, e), document.documentElement.setAttribute("data-theme", e)
   }
   get now() {
-    return w(u(this, B))
+    return w(u(this, U))
   }
   get captcha() {
     return ke ? w(u(this, G)) : {
@@ -359,7 +359,7 @@ class Le {
     y(u(this, G), e, !0)
   }
 }
-k = new WeakMap, C = new WeakMap, M = new WeakMap, D = new WeakMap, U = new WeakMap, B = new WeakMap, G = new WeakMap;
+k = new WeakMap, C = new WeakMap, M = new WeakMap, D = new WeakMap, B = new WeakMap, U = new WeakMap, G = new WeakMap;
 const qe = new Le;
 
 function Ne() {
@@ -478,7 +478,7 @@ function De(a) {
     m.__wbindgen_free(e, t, 1)
   }
 }
-async function Ue(a, e) {
+async function Be(a, e) {
   if (typeof Response == "function" && a instanceof Response) {
     if (typeof WebAssembly.instantiateStreaming == "function") try {
       return await WebAssembly.instantiateStreaming(a, e)
@@ -497,7 +497,7 @@ async function Ue(a, e) {
   }
 }
 
-function Be() {
+function Ue() {
   const a = {};
   return a.wbg = {}, a.wbg.__wbg_buffer_609cc3eee51ed158 = function(e) {
     return e.buffer
@@ -585,12 +585,12 @@ async function Re(a) {
   typeof a < "u" && (Object.getPrototypeOf(a) === Object.prototype ? {
     module_or_path: a
   } = a : console.warn("using deprecated parameters for the initialization function; pass a single object instead")), typeof a > "u" && (a = new URL("pawtect_wasm_bg.wasm", import.meta.url));
-  const e = Be();
+  const e = Ue();
   (typeof a == "string" || typeof Request == "function" && a instanceof Request || typeof URL == "function" && a instanceof URL) && (a = fetch(a));
   const {
     instance: t,
     module: n
-  } = await Ue(await a, e);
+  } = await Be(await a, e);
   return Ge(t, n)
 }
 const $e = () => "Unexpected server error. Try again later.",
@@ -645,8 +645,8 @@ const $e = () => "Unexpected server error. Try again later.",
   Mt = () => "Você não tem permissão para fazer isso",
   E = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? Ct() : Mt(),
   Dt = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
-  Ut = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
-  Bt = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? Dt() : Ut(),
+  Bt = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
+  Ut = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? Dt() : Bt(),
   Gt = () => "You or someone in your network is making a lot of requests to the server. Try again later.",
   Rt = () => "Você ou alguém na sua rede está fazendo muitas solicitações ao servidor. Tente novamente mais tarde.",
   le = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? Gt() : Rt(),
@@ -700,10 +700,10 @@ const $e = () => "Unexpected server error. Try again later.",
   Cn = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? Nn() : kn(),
   Mn = () => "The name contains disallowed characters or words. Please choose a different name.",
   Dn = () => "O nome contém caracteres ou palavras não permitidas. Por favor, escolha outro nome.",
-  Un = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? Mn() : Dn(),
-  Bn = () => "Invalid discord.",
+  Bn = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? Mn() : Dn(),
+  Un = () => "Invalid discord.",
   Gn = () => "Discord inválido.",
-  Rn = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? Bn() : Gn(),
+  Rn = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? Un() : Gn(),
   $n = () => "The typed username does not match your current username.",
   jn = () => "O nome de usuário digitado não corresponde ao seu nome de usuário atual.",
   Fn = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? $n() : jn(),
@@ -1406,7 +1406,7 @@ class ra {
     });
     if (t.status === 400) {
       const n = await t.json();
-      throw (n == null ? void 0 : n.error) === "invalid_name" ? new Error(Un()) : (n == null ? void 0 : n.error) === "invalid_discord" ? new Error(Rn()) : new Error(n == null ? void 0 : n.error)
+      throw (n == null ? void 0 : n.error) === "invalid_name" ? new Error(Bn()) : (n == null ? void 0 : n.error) === "invalid_discord" ? new Error(Rn()) : new Error(n == null ? void 0 : n.error)
     } else if (t.status !== 200) throw new Error(i())
   }
   async deleteMe(e) {
@@ -1894,7 +1894,7 @@ class ra {
     try {
       n = await fetch(`${this.url}${e}`, t), this.online = !0
     } catch (r) {
-      throw console.error("Fetch error:", r), this.online = !1, new Error(Bt(), {
+      throw console.error("Fetch error:", r), this.online = !1, new Error(Ut(), {
         cause: r
       })
     }
@@ -1951,9 +1951,12 @@ class ra {
     }
   }
   async getMultipleUsersInfoById(e) {
-    const t = await this.request(`/moderator/users?ids=${encodeURIComponent(e.join(","))}`, {
-      method: "GET",
-      credentials: "include"
+    const t = await this.request("/moderator/users", {
+      method: "POST",
+      credentials: "include",
+      body: JSON.stringify({
+        userIds: e
+      })
     });
     if (t.status !== 200) throw new g(i(), t.status);
     return t.json()

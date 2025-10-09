@@ -1,25 +1,25 @@
 import {
   g as p
-} from "./CItBVTel.js";
-import "./VrzobHmv.js";
+} from "./4Szs_zBr.js";
+import "./DEAvTnTw.js";
 import {
   A as g,
   a as h,
   b as r,
   C as i
-} from "./D2NUMUd6.js";
+} from "./BI2n3g5M.js";
 import {
   i as w,
   r as v
-} from "./BAw58UE0.js";
+} from "./CxQBx9cg.js";
 import {
   d as s
-} from "./BI5NG3p0.js";
+} from "./gWTa9VoA.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "19e8b1e1f621a77f893c0ebf0e975e4ec873201a"
+      id: "396734e5db96c8d18b29022abf53bbd030e61152"
     }
   } catch {}
 })();
@@ -31,18 +31,18 @@ try {
   })()
 } catch {}
 const m = e => `Copy alliance ID: #${e.allianceId}`,
-  u = e => `Copiar ID da aliança: #${e.allianceId}`,
-  x = (e, o = {}) => (o.locale ?? p()) === "en" ? m(e) : u(e);
-var y = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
-  T = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
+  b = e => `Copiar ID da aliança: #${e.allianceId}`,
+  x = (e, o = {}) => (o.locale ?? p()) === "en" ? m(e) : b(e);
+var u = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
+  y = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
 function H(e, o) {
   let l = v(o, ["$$slots", "$$events", "$$legacy", "filled"]);
   var t = g(),
-    f = h(t);
+    d = h(t);
   {
-    var c = a => {
-        var n = y();
+    var f = a => {
+        var n = u();
         s(n, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
@@ -50,8 +50,8 @@ function H(e, o) {
           ...l
         })), r(a, n)
       },
-      d = a => {
-        var n = T();
+      c = a => {
+        var n = y();
         s(n, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
@@ -59,17 +59,17 @@ function H(e, o) {
           ...l
         })), r(a, n)
       };
-    w(f, a => {
-      o.filled ? a(c) : a(d, !1)
+    w(d, a => {
+      o.filled ? a(f) : a(c, !1)
     })
   }
   r(e, t)
 }
-var b = i('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
+var T = i('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
 
 function D(e, o) {
   let l = v(o, ["$$slots", "$$events", "$$legacy"]);
-  var t = b();
+  var t = T();
   s(t, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",

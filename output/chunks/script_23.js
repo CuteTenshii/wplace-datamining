@@ -1,11 +1,11 @@
 import {
   g as z
-} from "./CItBVTel.js";
+} from "./4Szs_zBr.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "19e8b1e1f621a77f893c0ebf0e975e4ec873201a"
+      id: "396734e5db96c8d18b29022abf53bbd030e61152"
     }
   } catch {}
 })();
@@ -37,25 +37,25 @@ function O(e, {
     delay: h = 0,
     duration: i = r => Math.sqrt(r) * 120,
     easing: y = R
-  } = c, o = getComputedStyle(e), g = o.transform === "none" ? "" : o.transform, [s, l] = o.transformOrigin.split(" ").map(parseFloat);
-  s /= e.clientWidth, l /= e.clientHeight;
+  } = c, o = getComputedStyle(e), g = o.transform === "none" ? "" : o.transform, [s, d] = o.transformOrigin.split(" ").map(parseFloat);
+  s /= e.clientWidth, d /= e.clientHeight;
   var f = q(e),
     p = e.clientWidth / n.width / f,
     v = e.clientHeight / n.height / f,
     b = t.left + t.width * s,
-    m = t.top + t.height * l,
+    m = t.top + t.height * d,
     w = n.left + n.width * s,
-    x = n.top + n.height * l,
-    d = (b - w) * p,
+    x = n.top + n.height * d,
+    l = (b - w) * p,
     u = (m - x) * v,
     S = t.width / n.width,
     _ = t.height / n.height;
   return {
     delay: h,
-    duration: typeof i == "function" ? i(Math.sqrt(d * d + u * u)) : i,
+    duration: typeof i == "function" ? i(Math.sqrt(l * l + u * u)) : i,
     easing: y,
     css: (r, a) => {
-      var T = a * d,
+      var T = a * l,
         E = a * u,
         I = r + a * S,
         $ = r + a * _;
