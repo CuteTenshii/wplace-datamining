@@ -36,12 +36,12 @@ import {
   U as A,
   aX as x,
   aY as y
-} from "./CwbVIH7w.js";
+} from "./D2NUMUd6.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "abd976f8f8e90d32df6a1b04404d40d50ecf5fd4"
+      id: "19e8b1e1f621a77f893c0ebf0e975e4ec873201a"
     }
   } catch {}
 })();

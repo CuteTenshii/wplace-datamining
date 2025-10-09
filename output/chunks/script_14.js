@@ -1,5 +1,5 @@
 var ye = Object.defineProperty;
-var re = a => {
+var se = a => {
   throw TypeError(a)
 };
 var be = (a, e, t) => e in a ? ye(a, e, {
@@ -8,29 +8,29 @@ var be = (a, e, t) => e in a ? ye(a, e, {
   writable: !0,
   value: t
 }) : a[e] = t;
-var _ = (a, e, t) => be(a, typeof e != "symbol" ? e + "" : e, t),
-  Se = (a, e, t) => e.has(a) || re("Cannot " + t);
+var p = (a, e, t) => be(a, typeof e != "symbol" ? e + "" : e, t),
+  Se = (a, e, t) => e.has(a) || se("Cannot " + t);
 var u = (a, e, t) => (Se(a, e, "read from private field"), t ? t.call(a) : e.get(a)),
-  h = (a, e, t) => e.has(a) ? re("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(a) : e.set(a, t);
+  _ = (a, e, t) => e.has(a) ? se("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(a) : e.set(a, t);
 import {
-  w as b,
+  w as S,
   x as Z,
-  g as p,
-  z as w,
-  H as se,
+  g as w,
+  z as y,
+  H as oe,
   u as P
-} from "./CwbVIH7w.js";
+} from "./D2NUMUd6.js";
 import {
   g as f
-} from "./DwZ6mW66.js";
+} from "./CItBVTel.js";
 import {
   s as Te
-} from "./BrsASLyZ.js";
+} from "./NUr-aU6Q.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "abd976f8f8e90d32df6a1b04404d40d50ecf5fd4"
+      id: "19e8b1e1f621a77f893c0ebf0e975e4ec873201a"
     }
   } catch {}
 })();
@@ -38,33 +38,33 @@ try {
   (function() {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new a.Error().stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "aa060102-6300-484a-a279-0e4a11d2169d", a._sentryDebugIdIdentifier = "sentry-dbid-aa060102-6300-484a-a279-0e4a11d2169d")
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "a4c079d0-f62f-4b3d-833d-049429f8908c", a._sentryDebugIdIdentifier = "sentry-dbid-a4c079d0-f62f-4b3d-833d-049429f8908c")
   })()
 } catch {}
 const Ee = "true",
   la = "https://backend.wplace.live/files",
   da = "0x4AAAAAABpHqZ-6i7uL0nmG",
-  ue = "https://backend.wplace.live",
+  ge = "https://backend.wplace.live",
   ua = "0x4AAAAAABpqJe8FO0N84q0F";
 
 function ga(...a) {
   return a.filter(Boolean).join(" ")
 }
 const ve = typeof document < "u";
-let oe = 0;
+let ie = 0;
 var L, q, N;
 class Ae {
   constructor() {
-    h(this, L, b(Z([])));
-    h(this, q, b(Z([])));
-    h(this, N, e => {
+    _(this, L, S(Z([])));
+    _(this, q, S(Z([])));
+    _(this, N, e => {
       const t = this.toasts.findIndex(n => n.id === e);
       return t === -1 ? null : t
     });
-    _(this, "addToast", e => {
+    p(this, "addToast", e => {
       ve && this.toasts.unshift(e)
     });
-    _(this, "updateToast", ({
+    p(this, "updateToast", ({
       id: e,
       data: t,
       type: n,
@@ -81,13 +81,13 @@ class Ae {
         updated: !0
       }
     });
-    _(this, "create", e => {
+    p(this, "create", e => {
       var o;
       const {
         message: t,
         ...n
-      } = e, s = typeof(e == null ? void 0 : e.id) == "number" || e.id && ((o = e.id) == null ? void 0 : o.length) > 0 ? e.id : oe++, r = e.dismissable === void 0 ? !0 : e.dismissable, l = e.type === void 0 ? "default" : e.type;
-      return se(() => {
+      } = e, s = typeof(e == null ? void 0 : e.id) == "number" || e.id && ((o = e.id) == null ? void 0 : o.length) > 0 ? e.id : ie++, r = e.dismissable === void 0 ? !0 : e.dismissable, l = e.type === void 0 ? "default" : e.type;
+      return oe(() => {
         this.toasts.find(c => c.id === s) ? this.updateToast({
           id: s,
           data: e,
@@ -103,7 +103,7 @@ class Ae {
         })
       }), s
     });
-    _(this, "dismiss", e => (se(() => {
+    p(this, "dismiss", e => (oe(() => {
       if (e === void 0) {
         this.toasts = this.toasts.map(n => ({
           ...n,
@@ -117,7 +117,7 @@ class Ae {
         dismiss: !0
       })
     }), e));
-    _(this, "remove", e => {
+    p(this, "remove", e => {
       if (e === void 0) {
         this.toasts = [];
         return
@@ -125,37 +125,37 @@ class Ae {
       const t = u(this, N).call(this, e);
       if (t !== null) return this.toasts.splice(t, 1), e
     });
-    _(this, "message", (e, t) => this.create({
+    p(this, "message", (e, t) => this.create({
       ...t,
       type: "default",
       message: e
     }));
-    _(this, "error", (e, t) => this.create({
+    p(this, "error", (e, t) => this.create({
       ...t,
       type: "error",
       message: e
     }));
-    _(this, "success", (e, t) => this.create({
+    p(this, "success", (e, t) => this.create({
       ...t,
       type: "success",
       message: e
     }));
-    _(this, "info", (e, t) => this.create({
+    p(this, "info", (e, t) => this.create({
       ...t,
       type: "info",
       message: e
     }));
-    _(this, "warning", (e, t) => this.create({
+    p(this, "warning", (e, t) => this.create({
       ...t,
       type: "warning",
       message: e
     }));
-    _(this, "loading", (e, t) => this.create({
+    p(this, "loading", (e, t) => this.create({
       ...t,
       type: "loading",
       message: e
     }));
-    _(this, "promise", (e, t) => {
+    p(this, "promise", (e, t) => {
       if (!t) return;
       let n;
       t.loading !== void 0 && (n = this.create({
@@ -199,18 +199,18 @@ class Ae {
         r && (this.dismiss(n), n = void 0), (l = t.finally) == null || l.call(t)
       }), n
     });
-    _(this, "custom", (e, t) => {
-      const n = (t == null ? void 0 : t.id) || oe++;
+    p(this, "custom", (e, t) => {
+      const n = (t == null ? void 0 : t.id) || ie++;
       return this.create({
         component: e,
         id: n,
         ...t
       }), n
     });
-    _(this, "removeHeight", e => {
+    p(this, "removeHeight", e => {
       this.heights = this.heights.filter(t => t.toastId !== e)
     });
-    _(this, "setHeight", e => {
+    p(this, "setHeight", e => {
       const t = u(this, N).call(this, e.toastId);
       if (t === null) {
         this.heights.push(e);
@@ -218,21 +218,21 @@ class Ae {
       }
       this.heights[t] = e
     });
-    _(this, "reset", () => {
+    p(this, "reset", () => {
       this.toasts = [], this.heights = []
     })
   }
   get toasts() {
-    return p(u(this, L))
+    return w(u(this, L))
   }
   set toasts(e) {
-    w(u(this, L), e, !0)
+    y(u(this, L), e, !0)
   }
   get heights() {
-    return p(u(this, q))
+    return w(u(this, q))
   }
   set heights(e) {
-    w(u(this, q), e, !0)
+    y(u(this, q), e, !0)
   }
 }
 L = new WeakMap, q = new WeakMap, N = new WeakMap;
@@ -251,15 +251,15 @@ function Ie(a, e) {
 var ee;
 class fa {
   constructor() {
-    h(this, ee, P(() => T.toasts.filter(e => !e.dismiss)))
+    _(this, ee, P(() => T.toasts.filter(e => !e.dismiss)))
   }
   get toasts() {
-    return p(u(this, ee))
+    return w(u(this, ee))
   }
 }
 ee = new WeakMap;
 const xe = Ie,
-  ge = Object.assign(xe, {
+  fe = Object.assign(xe, {
     success: T.success,
     info: T.info,
     warning: T.warning,
@@ -271,11 +271,11 @@ const xe = Ie,
     loading: T.loading,
     getActiveToasts: () => T.toasts.filter(a => !a.dismiss)
   });
-let fe = b(void 0);
-const me = () => p(fe),
+let me = S(void 0);
+const he = () => w(me),
   ma = a => {
-    const e = new URL(a, ue),
-      t = me();
+    const e = new URL(a, ge),
+      t = he();
     return t && e.searchParams.set("override", t.token), e.toString()
   };
 
@@ -294,72 +294,72 @@ function Oe() {
   if (t.length !== 2) throw new Error("override token wrong amount of parts");
   const [n] = t, s = JSON.parse(atob(n));
   if (Date.now() / 1e3 > s.expiresAt) throw new Error("override token expired");
-  ge.info(`Currently using the ${s.id} override. Bugs may occur, go back to ${location.protocol}//${location.host} to clear this override.`, {
+  fe.info(`Currently using the ${s.id} override. Bugs may occur, go back to ${location.protocol}//${location.host} to clear this override.`, {
     duration: 6e4
-  }), w(fe, {
+  }), y(me, {
     token: e,
     payload: s
   }, !0)
 }
-const ie = "theme";
-var k, C, M, D, B, U, G;
+const ce = "theme";
+var k, C, M, D, U, B, G;
 class Le {
   constructor() {
-    h(this, k, b(!1));
-    h(this, C, b(!1));
-    h(this, M, b(Z(Ne())));
-    h(this, D, b(!1));
-    h(this, B, b("custom-winter"));
-    h(this, U, b(Z(Date.now())));
-    h(this, G, b(void 0));
+    _(this, k, S(!1));
+    _(this, C, S(!1));
+    _(this, M, S(Z(Ne())));
+    _(this, D, S(!1));
+    _(this, U, S("custom-winter"));
+    _(this, B, S(Z(Date.now())));
+    _(this, G, S(void 0));
     setInterval(() => {
-      w(u(this, U), Date.now(), !0)
-    }, 500), this.theme = localStorage.getItem(ie) || "custom-winter"
+      y(u(this, B), Date.now(), !0)
+    }, 500), this.theme = localStorage.getItem(ce) || "custom-winter"
   }
   get dropletsDialogOpen() {
-    return p(u(this, k))
+    return w(u(this, k))
   }
   set dropletsDialogOpen(e) {
-    w(u(this, k), e, !0)
+    y(u(this, k), e, !0)
   }
   get muted() {
-    return p(u(this, C))
+    return w(u(this, C))
   }
   set muted(e) {
-    w(u(this, C), e, !0)
+    y(u(this, C), e, !0)
   }
   get language() {
-    return p(u(this, M))
+    return w(u(this, M))
   }
   set language(e) {
-    w(u(this, M), e, !0)
+    y(u(this, M), e, !0)
   }
   get turnstatileLoaded() {
-    return p(u(this, D))
+    return w(u(this, D))
   }
   set turnstatileLoaded(e) {
-    w(u(this, D), e, !0)
+    y(u(this, D), e, !0)
   }
   get theme() {
-    return p(u(this, B))
+    return w(u(this, U))
   }
   set theme(e) {
-    w(u(this, B), e, !0), localStorage.setItem(ie, e), document.documentElement.setAttribute("data-theme", e)
+    y(u(this, U), e, !0), localStorage.setItem(ce, e), document.documentElement.setAttribute("data-theme", e)
   }
   get now() {
-    return p(u(this, U))
+    return w(u(this, B))
   }
   get captcha() {
-    return ke ? p(u(this, G)) : {
+    return ke ? w(u(this, G)) : {
       token: "turnstile-disabled",
       time: Date.now()
     }
   }
   set captcha(e) {
-    w(u(this, G), e, !0)
+    y(u(this, G), e, !0)
   }
 }
-k = new WeakMap, C = new WeakMap, M = new WeakMap, D = new WeakMap, B = new WeakMap, U = new WeakMap, G = new WeakMap;
+k = new WeakMap, C = new WeakMap, M = new WeakMap, D = new WeakMap, U = new WeakMap, B = new WeakMap, G = new WeakMap;
 const qe = new Le;
 
 function Ne() {
@@ -385,7 +385,7 @@ function A(a, e) {
     m.__wbindgen_exn_store(n)
   }
 }
-const he = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
+const _e = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
   ignoreBOM: !0,
   fatal: !0
 }) : {
@@ -393,7 +393,7 @@ const he = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
     throw Error("TextDecoder not available")
   }
 };
-typeof TextDecoder < "u" && he.decode();
+typeof TextDecoder < "u" && _e.decode();
 let x = null;
 
 function W() {
@@ -401,7 +401,7 @@ function W() {
 }
 
 function O(a, e) {
-  return a = a >>> 0, he.decode(W().subarray(a, a + e))
+  return a = a >>> 0, _e.decode(W().subarray(a, a + e))
 }
 
 function V(a) {
@@ -427,7 +427,7 @@ const Y = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
     }
   };
 
-function _e(a, e, t) {
+function pe(a, e, t) {
   if (t === void 0) {
     const o = Y.encode(a),
       d = e(o.length, 1) >>> 0;
@@ -452,7 +452,7 @@ function _e(a, e, t) {
 }
 
 function pa(a) {
-  const e = _e(a, m.__wbindgen_malloc, m.__wbindgen_realloc),
+  const e = pe(a, m.__wbindgen_malloc, m.__wbindgen_realloc),
     t = Q;
   m.request_url(e, t)
 }
@@ -470,7 +470,7 @@ function Me() {
 function De(a) {
   let e, t;
   try {
-    const n = _e(a, m.__wbindgen_malloc, m.__wbindgen_realloc),
+    const n = pe(a, m.__wbindgen_malloc, m.__wbindgen_realloc),
       s = Q,
       r = m.get_pawtected_endpoint_payload(n, s);
     return e = r[0], t = r[1], O(r[0], r[1])
@@ -478,7 +478,7 @@ function De(a) {
     m.__wbindgen_free(e, t, 1)
   }
 }
-async function Be(a, e) {
+async function Ue(a, e) {
   if (typeof Response == "function" && a instanceof Response) {
     if (typeof WebAssembly.instantiateStreaming == "function") try {
       return await WebAssembly.instantiateStreaming(a, e)
@@ -497,7 +497,7 @@ async function Be(a, e) {
   }
 }
 
-function Ue() {
+function Be() {
   const a = {};
   return a.wbg = {}, a.wbg.__wbg_buffer_609cc3eee51ed158 = function(e) {
     return e.buffer
@@ -585,12 +585,12 @@ async function Re(a) {
   typeof a < "u" && (Object.getPrototypeOf(a) === Object.prototype ? {
     module_or_path: a
   } = a : console.warn("using deprecated parameters for the initialization function; pass a single object instead")), typeof a > "u" && (a = new URL("pawtect_wasm_bg.wasm", import.meta.url));
-  const e = Ue();
+  const e = Be();
   (typeof a == "string" || typeof Request == "function" && a instanceof Request || typeof URL == "function" && a instanceof URL) && (a = fetch(a));
   const {
     instance: t,
     module: n
-  } = await Be(await a, e);
+  } = await Ue(await a, e);
   return Ge(t, n)
 }
 const $e = () => "Unexpected server error. Try again later.",
@@ -645,11 +645,11 @@ const $e = () => "Unexpected server error. Try again later.",
   Mt = () => "Você não tem permissão para fazer isso",
   E = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? Ct() : Mt(),
   Dt = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
-  Bt = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
-  Ut = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? Dt() : Bt(),
+  Ut = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
+  Bt = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? Dt() : Ut(),
   Gt = () => "You or someone in your network is making a lot of requests to the server. Try again later.",
   Rt = () => "Você ou alguém na sua rede está fazendo muitas solicitações ao servidor. Tente novamente mais tarde.",
-  ce = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? Gt() : Rt(),
+  le = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? Gt() : Rt(),
   $t = () => "No internet access or the servers are offline. Try again later.",
   jt = () => "Sem acesso à internet ou os servidores estão fora do ar. Tente novamente mais tarde.",
   Ft = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? $t() : jt(),
@@ -700,10 +700,10 @@ const $e = () => "Unexpected server error. Try again later.",
   Cn = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? Nn() : kn(),
   Mn = () => "The name contains disallowed characters or words. Please choose a different name.",
   Dn = () => "O nome contém caracteres ou palavras não permitidas. Por favor, escolha outro nome.",
-  Bn = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? Mn() : Dn(),
-  Un = () => "Invalid discord.",
+  Un = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? Mn() : Dn(),
+  Bn = () => "Invalid discord.",
   Gn = () => "Discord inválido.",
-  Rn = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? Un() : Gn(),
+  Rn = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? Bn() : Gn(),
   $n = () => "The typed username does not match your current username.",
   jn = () => "O nome de usuário digitado não corresponde ao seu nome de usuário atual.",
   Fn = (a = {}, e = {}) => (e.locale ?? f()) === "en" ? $n() : jn(),
@@ -725,7 +725,7 @@ const $e = () => "Unexpected server error. Try again later.",
     griefing: "text-amber-600",
     other: "text-blue-600"
   },
-  le = {
+  de = {
     doxxing: 0,
     "hate-speech": 1,
     "inappropriate-content": 2,
@@ -743,7 +743,7 @@ function Jn(a) {
 }
 class Kn {
   constructor(e) {
-    _(this, "bytes");
+    p(this, "bytes");
     this.bytes = e ?? new Uint8Array
   }
   set(e, t) {
@@ -765,26 +765,40 @@ class Kn {
     return t > s ? !1 : (this.bytes[s - 1 - t] & 1 << n) !== 0
   }
 }
+
+function ba(a) {
+  return new Promise((e, t) => {
+    const n = new FileReader;
+    n.onload = () => {
+      const s = n.result;
+      if (!s || typeof s != "string") {
+        t(new Error("Could not read blob as data URL"));
+        return
+      }
+      e(s.substring(s.indexOf(",") + 1))
+    }, n.readAsDataURL(a)
+  })
+}
 var R, $, j, F, J, K, z;
 class zn {
   constructor() {
-    _(this, "channel", new BroadcastChannel("user-channel"));
-    h(this, R, b());
-    h(this, $, b(!0));
-    h(this, j, b(Date.now()));
-    h(this, F, P(() => {
+    p(this, "channel", new BroadcastChannel("user-channel"));
+    _(this, R, S());
+    _(this, $, S(!0));
+    _(this, j, S(Date.now()));
+    _(this, F, P(() => {
       if (!this.data) return;
       const e = this.data.charges;
       if (e.count > e.max) return e.count;
       const t = e.count + Math.max((qe.now - this.lastFetch) / e.cooldownMs, 0);
       return Math.min(e.max, t)
     }));
-    h(this, J, P(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
-    h(this, K, P(() => {
+    _(this, J, P(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
+    _(this, K, P(() => {
       var e;
       return new Kn(Jn(((e = this.data) == null ? void 0 : e.flagsBitmap) ?? "AA=="))
     }));
-    h(this, z, P(() => {
+    _(this, z, P(() => {
       var t;
       if (!((t = this.data) != null && t.timeoutUntil)) return;
       const e = new Date(this.data.timeoutUntil);
@@ -796,58 +810,58 @@ class zn {
     }
   }
   get data() {
-    return p(u(this, R))
+    return w(u(this, R))
   }
   set data(e) {
-    w(u(this, R), e, !0)
+    y(u(this, R), e, !0)
   }
   get loading() {
-    return p(u(this, $))
+    return w(u(this, $))
   }
   set loading(e) {
-    w(u(this, $), e, !0)
+    y(u(this, $), e, !0)
   }
   get lastFetch() {
-    return p(u(this, j))
+    return w(u(this, j))
   }
   set lastFetch(e) {
-    w(u(this, j), e)
+    y(u(this, j), e)
   }
   get charges() {
-    return p(u(this, F))
+    return w(u(this, F))
   }
   set charges(e) {
-    w(u(this, F), e)
+    y(u(this, F), e)
   }
   get cooldown() {
-    return p(u(this, J))
+    return w(u(this, J))
   }
   set cooldown(e) {
-    w(u(this, J), e)
+    y(u(this, J), e)
   }
   get flagsBitmap() {
-    return p(u(this, K))
+    return w(u(this, K))
   }
   set flagsBitmap(e) {
-    w(u(this, K), e)
+    y(u(this, K), e)
   }
   get timeoutUntil() {
-    return p(u(this, z))
+    return w(u(this, z))
   }
   set timeoutUntil(e) {
-    w(u(this, z), e)
+    y(u(this, z), e)
   }
   async refresh() {
     var e;
     try {
-      return this.loading = !0, this.data = await de.me(), this.lastFetch = Date.now(), this.channel.postMessage(JSON.stringify({
+      return this.loading = !0, this.data = await ue.me(), this.lastFetch = Date.now(), this.channel.postMessage(JSON.stringify({
         type: "refresh",
         data: this.data
       })), (e = this.data) != null && e.id && Te("userId", {
         id: this.data.id
       }), !!this.data
     } catch (t) {
-      return console.error(t), ge.warning(Ft(), {
+      return console.error(t), fe.warning(Ft(), {
         duration: 1e4
       }), !1
     } finally {
@@ -855,7 +869,7 @@ class zn {
     }
   }
   async logout() {
-    await de.logout(), this.channel.postMessage(JSON.stringify({
+    await ue.logout(), this.channel.postMessage(JSON.stringify({
       type: "logout"
     })), this.data = void 0
   }
@@ -882,7 +896,7 @@ function Hn(a, e) {
   return t
 }
 
-function ba(a, e) {
+function Sa(a, e) {
   const t = {};
   for (const n of a) {
     const s = e(n);
@@ -1219,11 +1233,11 @@ const Vn = [{
     countries: ta
   },
   na = te,
-  pe = te.seasons.length - 1,
-  Sa = te.seasons[pe].zoom,
-  Ta = te.seasons[pe].tileSize;
+  we = te.seasons.length - 1,
+  Ta = te.seasons[we].zoom,
+  Ea = te.seasons[we].tileSize;
 
-function Ea(a) {
+function va(a) {
   return na.countries[a - 1]
 }
 
@@ -1231,38 +1245,38 @@ function aa(a) {
   return X.data ? X.data.experiments[a] ?? null : null
 }
 
-function va(a) {
+function Aa(a) {
   var e, t;
   return ((t = (e = X.data) == null ? void 0 : e.experiments[a]) == null ? void 0 : t.enabled) ?? !0
 }
 var H;
 class ra {
   constructor(e) {
-    h(this, H, b(!0));
+    _(this, H, S(!0));
     this.url = e
   }
   get online() {
-    return p(u(this, H))
+    return w(u(this, H))
   }
   set online(e) {
-    w(u(this, H), e, !0)
+    y(u(this, H), e, !0)
   }
   async paint(e, t, n) {
     const s = Hn(e, d => `t=(${d.tile[0]},${d.tile[1]}),s=${d.season}`),
       r = aa("2025-09_pawtect");
     if (!r) throw new Error("paint request while pawtect experiment not found");
     const o = (await Promise.all(Object.values(s).map(d => {
-      const [c, S] = d[0].tile, y = d[0].season, we = {
-        colors: d.map(ne => ne.colorIdx),
-        coords: d.flatMap(ne => ne.pixel),
+      const [c, b] = d[0].tile, h = d[0].season, ne = {
+        colors: d.map(ae => ae.colorIdx),
+        coords: d.flatMap(ae => ae.pixel),
         t,
         fp: n
-      }, ae = JSON.stringify(we);
-      return this.request(`/s${y}/pixel/${c}/${S}`, {
+      }, re = JSON.stringify(ne);
+      return this.request(`/s${h}/pixel/${c}/${b}`, {
         method: "POST",
-        body: ae,
+        body: re,
         headers: {
-          "x-pawtect-token": r.variant !== "disabled" ? De(ae) : "",
+          "x-pawtect-token": r.variant !== "disabled" ? De(re) : "",
           "x-pawtect-variant": r.variant
         },
         credentials: "include"
@@ -1280,12 +1294,12 @@ class ra {
       } else if (d.status === 451) {
         const c = await o[0].json();
         c == null || c.err;
-        const S = c == null ? void 0 : c.suspension;
-        if (S === "ban") throw new Error(An());
-        if (S === "timeout") {
-          const y = new Date(Date.now() + ((c == null ? void 0 : c.durationMs) ?? 0));
+        const b = c == null ? void 0 : c.suspension;
+        if (b === "ban") throw new Error(An());
+        if (b === "timeout") {
+          const h = new Date(Date.now() + ((c == null ? void 0 : c.durationMs) ?? 0));
           throw new Error(xn({
-            until: y.toLocaleString()
+            until: h.toLocaleString()
           }))
         } else throw new Error(i())
       } else throw new Error(i())
@@ -1320,10 +1334,16 @@ class ra {
       credentials: "include"
     });
     if (d.status !== 200) {
-      const c = await d.text();
-      throw console.error("Error while fetching pixel area info", c), new Error(i())
+      const h = await d.text();
+      throw console.error("Error while fetching pixel area info", h), new Error(i())
     }
-    return d.json()
+    const c = await d.arrayBuffer(),
+      b = new DataView(c);
+    return {
+      paintedBy: Array.from({
+        length: c.byteLength / 4
+      }, (h, ne) => b.getUint32(ne * 4, !0))
+    }
   }
   async me() {
     const e = await this.request("/me", {
@@ -1386,7 +1406,7 @@ class ra {
     });
     if (t.status === 400) {
       const n = await t.json();
-      throw (n == null ? void 0 : n.error) === "invalid_name" ? new Error(Bn()) : (n == null ? void 0 : n.error) === "invalid_discord" ? new Error(Rn()) : new Error(n == null ? void 0 : n.error)
+      throw (n == null ? void 0 : n.error) === "invalid_name" ? new Error(Un()) : (n == null ? void 0 : n.error) === "invalid_discord" ? new Error(Rn()) : new Error(n == null ? void 0 : n.error)
     } else if (t.status !== 200) throw new Error(i())
   }
   async deleteMe(e) {
@@ -1818,7 +1838,7 @@ class ra {
     });
     if (e.status !== 200) throw new g(i(), e.status);
     const t = await e.json();
-    for (const n of t.tickets) n.reports.sort((s, r) => le[s.reason] - le[r.reason]);
+    for (const n of t.tickets) n.reports.sort((s, r) => de[s.reason] - de[r.reason]);
     return t
   }
   async countMyTicketsClosedToday() {
@@ -1863,7 +1883,7 @@ class ra {
   }
   async request(e, t) {
     let n;
-    const s = me();
+    const s = he();
     if (s) {
       const r = new Headers(t == null ? void 0 : t.headers);
       r.set("x-alien-override", s.token), t = {
@@ -1874,12 +1894,12 @@ class ra {
     try {
       n = await fetch(`${this.url}${e}`, t), this.online = !0
     } catch (r) {
-      throw console.error("Fetch error:", r), this.online = !1, new Error(Ut(), {
+      throw console.error("Fetch error:", r), this.online = !1, new Error(Bt(), {
         cause: r
       })
     }
-    if (n.status === 429) throw new Error(ce());
-    if (n.status === 503 || n.status === 408) throw new Error(ce());
+    if (n.status === 429) throw new Error(le());
+    if (n.status === 503 || n.status === 408) throw new Error(le());
     return n
   }
   async getOpenTicketsSummary() {
@@ -2031,40 +2051,40 @@ class ra {
     if (o.status !== 200) throw new g(i(), o.status);
     const d = await o.json(),
       c = Array.isArray(d == null ? void 0 : d.tickets) ? d.tickets : [];
-    return c.sort((S, y) => new Date(y.createdAt).getTime() - new Date(S.createdAt).getTime()), c
+    return c.sort((b, h) => new Date(h.createdAt).getTime() - new Date(b.createdAt).getTime()), c
   }
   mapTicketsToReportRows(e, t) {
     var s, r, l, o, d;
     const n = [];
     for (const c of e) {
-      const S = c.status ?? "open";
+      const b = c.status ?? "open";
       if (t === "received") {
-        for (const y of c.reports) n.push({
-          id: String(y.id),
+        for (const h of c.reports) n.push({
+          id: String(h.id),
           ticketId: String(c.id),
-          createdAt: y.createdAt ?? c.createdAt,
+          createdAt: h.createdAt ?? c.createdAt,
           byUser: {
-            id: Number(y.reportedBy),
-            name: String(y.reportedByName ?? y.reportedBy),
-            picture: y.reportedByPicture ?? null
+            id: Number(h.reportedBy),
+            name: String(h.reportedByName ?? h.reportedBy),
+            picture: h.reportedByPicture ?? null
           },
-          reason: String(y.reason),
-          status: S
+          reason: String(h.reason),
+          status: b
         });
         continue
       }
       if (t === "sent") {
-        for (const y of c.reports) n.push({
-          id: String(y.id),
+        for (const h of c.reports) n.push({
+          id: String(h.id),
           ticketId: String(c.id),
-          createdAt: y.createdAt ?? c.createdAt,
+          createdAt: h.createdAt ?? c.createdAt,
           toUser: {
             id: Number(c.reportedUser.id),
             name: String(c.reportedUser.name),
             picture: c.reportedUser.picture ?? null
           },
-          reason: String(y.reason),
-          status: S
+          reason: String(h.reason),
+          status: b
         });
         continue
       }
@@ -2082,10 +2102,10 @@ class ra {
           picture: null
         },
         reason: String(((d = (o = c.reports) == null ? void 0 : o[0]) == null ? void 0 : d.reason) ?? "other"),
-        status: S
+        status: b
       })
     }
-    return n.sort((c, S) => new Date(S.createdAt).getTime() - new Date(c.createdAt).getTime()), n
+    return n.sort((c, b) => new Date(b.createdAt).getTime() - new Date(c.createdAt).getTime()), n
   }
   async getModeratorClosedTicketStats(e) {
     const t = new URLSearchParams({
@@ -2189,9 +2209,16 @@ class ra {
     if (n.status !== 200) throw new g(i(), n.status);
     return n.json()
   }
+  async postUsersSuspend(e) {
+    if ((await this.request("/moderator/users/suspend", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify(e)
+      })).status !== 200) throw new Error(i())
+  }
 }
 H = new WeakMap;
-let de = new ra(ue);
+let ue = new ra(ge);
 export {
-  xn as A, ba as B, pe as C, Sa as D, Ta as E, la as F, ua as G, ue as P, na as S, Re as _, de as a, ya as b, i as c, ke as d, da as e, un as f, qe as g, rn as h, Qt as i, tn as j, cn as k, T as l, ga as m, fa as n, aa as o, _a as p, ha as q, pa as r, wa as s, ge as t, X as u, Ea as v, Fn as w, va as x, ma as y, An as z
+  xn as A, Sa as B, ba as C, we as D, Ta as E, Ea as F, la as G, ua as H, ge as P, na as S, Re as _, ue as a, ya as b, i as c, ke as d, da as e, un as f, qe as g, rn as h, Qt as i, tn as j, cn as k, T as l, ga as m, fa as n, aa as o, _a as p, ha as q, pa as r, wa as s, fe as t, X as u, va as v, Fn as w, Aa as x, ma as y, An as z
 };
