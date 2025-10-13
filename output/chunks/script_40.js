@@ -1,4 +1,4 @@
-import "./DEAvTnTw.js";
+import "./CxZHGuTs.js";
 import {
   T as ce,
   H as se,
@@ -21,44 +21,44 @@ import {
   d,
   r as f,
   s as u
-} from "./BI2n3g5M.js";
+} from "./j_iXX3SE.js";
 import {
   s as y
-} from "./mYfXF1Dx.js";
+} from "./CyTBL2UF.js";
 import {
   p as c,
   i as B,
   r as te
-} from "./CxQBx9cg.js";
+} from "./Cj0u-77H.js";
 import {
   a as j,
   c as G,
   d as ae,
   s as J
-} from "./gWTa9VoA.js";
+} from "./T5YiijHj.js";
 import {
   b as me
-} from "./CEL8vcWn.js";
+} from "./Dd9mJZTK.js";
 import {
   g as A,
   d as Q,
-  P as be,
-  e as _e
-} from "./BvCwe66H.js";
+  P as _e,
+  e as be
+} from "./Dc59j4Mu.js";
 import {
   o as ge
-} from "./Ciikc1uQ.js";
+} from "./CJcG_ADK.js";
 import {
   g as L
-} from "./4Szs_zBr.js";
+} from "./DNe0cQT0.js";
 import {
   L as he
-} from "./C4lkWHmc.js";
+} from "./rqL07w1a.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "396734e5db96c8d18b29022abf53bbd030e61152"
+      id: "29ae9b21d49bd1827c9d9708d11ce0563a962117"
     }
   } catch {}
 })();
@@ -74,12 +74,12 @@ function ye(a, e, n) {
   ce(() => {
     var r = se(() => e(a, n == null ? void 0 : n()) || {});
     if (n && (r != null && r.update)) {
-      var b = !1,
+      var _ = !1,
         m = {};
       oe(() => {
         var s = n();
-        de(s), b && fe(m, s) && (m = s, r.update(s))
-      }), b = !0
+        de(s), _ && fe(m, s) && (m = s, r.update(s))
+      }), _ = !0
     }
     if (r != null && r.destroy) return () => r.destroy()
   })
@@ -105,7 +105,7 @@ function He(a, e) {
   X(e, !0);
   let n = c(e, "widgetId", 15),
     r = c(e, "appearance", 3, "always"),
-    b = c(e, "language", 3, "auto"),
+    _ = c(e, "language", 3, "auto"),
     m = c(e, "execution", 3, "render"),
     s = c(e, "retryInterval", 3, 8e3),
     M = c(e, "retry", 3, "auto"),
@@ -154,14 +154,14 @@ function He(a, e) {
       tabindex: P(),
       appearance: r(),
       execution: m(),
-      language: b(),
+      language: _(),
       action: e.action,
       retry: M(),
       theme: C(),
       cData: e.cData,
       size: E()
     })),
-    _ = (t, i) => {
+    b = (t, i) => {
       let l = window.turnstile.render(t, i);
       return n(l), {
         destroy() {
@@ -190,7 +190,7 @@ function He(a, e) {
     var F = t => {
       var i = Fe();
       let l;
-      ye(i, (o, H) => _ == null ? void 0 : _(o, H), () => v(T)), U(o => l = j(i, 1, G(e.class), "svelte-1gvfki5", l, o), [() => ({
+      ye(i, (o, H) => b == null ? void 0 : b(o, H), () => v(T)), U(o => l = j(i, 1, G(e.class), "svelte-1gvfki5", l, o), [() => ({
         flexible: E() == "flexible"
       })]), w(t, i)
     };
@@ -231,8 +231,8 @@ function pe(a, e) {
   let n = R(null),
     r = R(ve(Q ? "" : "turnstile-disabled"));
 
-  function b(t, i) {
-    return `${be}/auth/${t}?token=${i}${e.redirect?`&r=${e.redirect}`:""}`
+  function _(t, i) {
+    return `${_e}/auth/${t}?token=${i}${e.redirect?`&r=${e.redirect}`:""}`
   }
   var m = je(),
     s = d(m),
@@ -265,7 +265,7 @@ function pe(a, e) {
       {
         var ne = h => {
           {
-            let K = $(() => _e.trim());
+            let K = $(() => be.trim());
             He(h, {
               get siteKey() {
                 return v(K)
@@ -289,9 +289,9 @@ function pe(a, e) {
           "btn btn-lg bg-base-100 w-full text-base": !0,
           "bg-base-content/10 pointer-events-none": !v(r)
         })), J(I, "href", N), y(re, ` ${ie??""}`)
-      }, [() => v(r) ? b("google", v(r)) : "#", () => W({
+      }, [() => v(r) ? _("google", v(r)) : "#", () => W({
         name: "Google"
-      }), () => v(r) ? b("twitch", v(r)) : "#", () => W({
+      }), () => v(r) ? _("twitch", v(r)) : "#", () => W({
         name: "Twitch"
       })]), w(t, i)
     };
@@ -302,10 +302,10 @@ function pe(a, e) {
   f(C), f(g), me(g, t => D(n, t), () => v(n));
   var S = u(g, 2),
     T = d(S),
-    _ = u(T),
-    x = d(_, !0);
-  f(_);
-  var k = u(_),
+    b = u(T),
+    x = d(b, !0);
+  f(b);
+  var k = u(b),
     z = u(k),
     F = d(z, !0);
   f(z), f(S), f(m), U((t, i, l, o) => {
