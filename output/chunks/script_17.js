@@ -37,12 +37,12 @@ import {
   ao as De,
   ap as Ne,
   V as Se
-} from "./j_iXX3SE.js";
+} from "./BhJstTAi.js";
 (function() {
   try {
     var f = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     f.SENTRY_RELEASE = {
-      id: "29ae9b21d49bd1827c9d9708d11ce0563a962117"
+      id: "93ce353ea66c24fd9b67d84d4d5dac764dc78ea8"
     }
   } catch {}
 })();

@@ -1,11 +1,11 @@
 import {
-  S as d
-} from "./Dc59j4Mu.js";
+  S as i
+} from "./A3X97P3-.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "29ae9b21d49bd1827c9d9708d11ce0563a962117"
+      id: "93ce353ea66c24fd9b67d84d4d5dac764dc78ea8"
     }
   } catch {}
 })();
@@ -51,8 +51,8 @@ function k(t) {
 }
 
 function C(t) {
-  t = Math.min(t, d.colors.length - 1);
-  const [e, o, r] = d.colors[t].rgb;
+  t = Math.min(t, i.colors.length - 1);
+  const [e, o, r] = i.colors[t].rgb;
   return {
     r: e,
     g: o,
@@ -60,7 +60,7 @@ function C(t) {
     a: t === 0 ? 0 : 255
   }
 }
-const y = d.colors.map((t, e) => ({
+const y = i.colors.map((t, e) => ({
   ...t,
   idx: e,
   lab: v({
@@ -99,15 +99,15 @@ function m(t, e) {
     n = t.b - e.b,
     a = Math.sqrt(t.a * t.a + t.b * t.b),
     l = Math.sqrt(e.a * e.a + e.b * e.b),
-    i = a - l,
-    s = r * r + n * n - i * i;
+    d = a - l,
+    s = r * r + n * n - d * d;
   s = s < 0 ? 0 : Math.sqrt(s);
   var w = 1 + .045 * a,
     h = 1 + .015 * a,
     g = o / 1,
-    f = i / w,
-    c = s / h,
-    b = g * g + f * f + c * c;
+    c = d / w,
+    f = s / h,
+    b = g * g + c * c + f * f;
   return b < 0 ? 0 : Math.sqrt(b)
 }
 export {
