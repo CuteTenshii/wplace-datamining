@@ -1,10 +1,10 @@
 import {
   g as l
-} from "./BrQ-nIYg.js";
-import "./LCBPFfGI.js";
+} from "./DQ3zwLNx.js";
+import "./DP3S6wrM.js";
 import {
   o as Fe
-} from "./Br1wxASZ.js";
+} from "./D5xPq5IV.js";
 import {
   C as xe,
   b as g,
@@ -22,22 +22,22 @@ import {
   c as Ye,
   t as k,
   g as u,
-  u as fe,
+  u as me,
   B as re,
-  A as me,
+  A as fe,
   a as ve
-} from "./BhJstTAi.js";
+} from "./BR3IUnhn.js";
 import {
-  s as m
-} from "./DJCMa1M6.js";
+  s as f
+} from "./CHZaBqkP.js";
 import {
   r as we,
   p as Je,
   i as B
-} from "./D6dXsuND.js";
+} from "./C4iDVDl6.js";
 import {
   e as Qe
-} from "./B_kMRywk.js";
+} from "./Bid_RAFk.js";
 import {
   d as ke,
   e as Xe,
@@ -45,16 +45,16 @@ import {
   s as ge,
   g as S,
   a as be
-} from "./BB4ePNRt.js";
+} from "./CoPDenOY.js";
 import {
   t as $e
-} from "./9-4zHbE8.js";
+} from "./Q3usAQLi.js";
 import {
   c as et
-} from "./DjzGJnCT.js";
+} from "./ClB-YOqd.js";
 import {
   b as tt
-} from "./UNXg84wE.js";
+} from "./D8gnox_v.js";
 import {
   i as rt,
   h as nt,
@@ -64,34 +64,34 @@ import {
   P as ne,
   t as x,
   a as he
-} from "./A3X97P3-.js";
+} from "./C1Ceda64.js";
 import {
   o as lt,
   L as it,
   s as ct,
   g as ut
-} from "./TWEbylNn.js";
+} from "./BWrMojdO.js";
 import {
   P as dt
-} from "./Qku8r2ef.js";
+} from "./DwJEBHCp.js";
 import {
   c as pt
-} from "./cgXQwd7y.js";
+} from "./CzuorEFz.js";
 import {
   s as _t
-} from "./B3R9mBxq.js";
+} from "./DdowmQO_.js";
 import {
   g as ye,
-  a as ft
-} from "./BGQt1hV3.js";
+  a as mt
+} from "./C5lvp6y_.js";
 import {
-  f as mt
-} from "./Dq1zjT4V.js";
+  f as ft
+} from "./BrpbhtxP.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "93ce353ea66c24fd9b67d84d4d5dac764dc78ea8"
+      id: "b227214883eb8641881975e44ed77db97966a3e5"
     }
   } catch {}
 })();
@@ -99,7 +99,7 @@ try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "4cd27481-e988-4f2d-b175-ebbe9f4b7ca3", t._sentryDebugIdIdentifier = "sentry-dbid-4cd27481-e988-4f2d-b175-ebbe9f4b7ca3")
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "03131645-e2de-4d8a-b05a-93476d68c824", t._sentryDebugIdIdentifier = "sentry-dbid-03131645-e2de-4d8a-b05a-93476d68c824")
   })()
 } catch {}
 const vt = () => "Log Out",
@@ -161,10 +161,10 @@ const vt = () => "Log Out",
   dr = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? cr() : ur(),
   pr = () => "Name reported successfully",
   _r = () => "Nome reportado com sucesso",
-  fr = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? pr() : _r(),
-  mr = () => "Report alliance",
+  mr = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? pr() : _r(),
+  fr = () => "Report alliance",
   vr = () => "Reportar aliança",
-  gr = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? mr() : vr(),
+  gr = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? fr() : vr(),
   br = () => "Alliance name reported successfully",
   hr = () => "Nome da aliança reportado com sucesso",
   yr = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? br() : hr();
@@ -224,8 +224,8 @@ function rn(t, e) {
     description: Gt()
   }];
   Fe(() => {
-    const _ = f => {
-      f.key === "Escape" && p(!1)
+    const _ = m => {
+      m.key === "Escape" && p(!1)
     };
     return document.addEventListener("keydown", _), () => document.removeEventListener("keydown", _)
   }), pe(() => {
@@ -238,7 +238,7 @@ function rn(t, e) {
   };
   async function Te(_) {
     try {
-      v(w, !0), (await he.postReportUserName(_)).status === "ok" ? x.success(fr()) : x.error(I())
+      v(w, !0), (await he.postReportUserName(_)).status === "ok" ? x.success(mr()) : x.error(I())
     } catch {
       x.error(I())
     } finally {
@@ -259,8 +259,8 @@ function rn(t, e) {
     Le = c(a(oe), 2);
   {
     var De = _ => {
-      var f = Dr(),
-        O = a(f);
+      var m = Dr(),
+        O = a(m);
       D(O);
       var M = c(O, 2);
       D(M);
@@ -285,23 +285,23 @@ function rn(t, e) {
       {
         var Ne = s => {
             var n = re();
-            k(i => m(n, i), [() => wt()]), g(s, n)
+            k(i => f(n, i), [() => wt()]), g(s, n)
           },
           Ue = s => {
-            var n = me(),
+            var n = fe(),
               i = ve(n);
             {
               var d = h => {
                   var y = re();
-                  k(T => m(y, T), [() => Rt()]), g(h, y)
+                  k(T => f(y, T), [() => Rt()]), g(h, y)
                 },
                 b = h => {
-                  var y = me(),
+                  var y = fe(),
                     T = ve(y);
                   {
                     var P = E => {
                       var z = re();
-                      k(We => m(z, We), [() => Lt()]), g(E, z)
+                      k(We => f(z, We), [() => Lt()]), g(E, z)
                     };
                     B(T, E => {
                       e.action === "ban" && E(P)
@@ -333,8 +333,8 @@ function rn(t, e) {
           var n = kr(),
             i = a(n, !0);
           o(n), k((d, b) => {
-            be(n, 1, `badge ml-1 border-0 ${d??""} ${b??""}`), m(i, e.paintedBy.allianceName)
-          }, [() => ft(e.paintedBy.allianceId), () => ye(e.paintedBy.allianceId)]), g(s, n)
+            be(n, 1, `badge ml-1 border-0 ${d??""} ${b??""}`), f(i, e.paintedBy.allianceName)
+          }, [() => mt(e.paintedBy.allianceId), () => ye(e.paintedBy.allianceId)]), g(s, n)
         };
         B(le, s => {
           e.paintedBy.allianceName && s(Pe)
@@ -359,7 +359,7 @@ function rn(t, e) {
             i = a(n);
           i.__click = [Rr, Ee, e];
           var d = a(i, !0);
-          o(i), o(n), k(b => m(d, b), [() => gr()]), g(s, n)
+          o(i), o(n), k(b => f(d, b), [() => gr()]), g(s, n)
         };
         B(Ze, s => {
           e.paintedBy.allianceId && s(qe)
@@ -382,14 +382,14 @@ function rn(t, e) {
         var P = c(y, 2),
           E = a(P, !0);
         o(P), o(h), o(i), k(() => {
-          ge(d, "aria-label", u(n).label), b !== (b = u(n).value) && (d.value = (d.__value = u(n).value) ?? ""), m(T, u(n).label), m(E, u(n).description)
+          ge(d, "aria-label", u(n).label), b !== (b = u(n).value) && (d.value = (d.__value = u(n).value) ?? ""), f(T, u(n).label), f(E, u(n).description)
         }), et(r, [], d, () => (u(n).value, u(U)), z => v(U, z)), g(s, i)
       }), o(ue), o(X);
       var ee = c(X, 2),
         Me = a(ee);
       {
-        let s = fe(() => ut()),
-          n = fe(() => u(U) === "doxxing" ? 20 : 5);
+        let s = me(() => ut()),
+          n = me(() => u(U) === "doxxing" ? 20 : 5);
         it(Me, {
           class: "h-20 rounded-lg",
           name: "notes",
@@ -422,9 +422,9 @@ function rn(t, e) {
       o(A);
       var te = c(A, 2),
         He = a(te, !0);
-      o(te), o(de), o(f), tt(f, s => v(C, s), () => u(C)), k((s, n, i, d, b) => {
-        ge(f, "action", Re[e.action]), S(O, e.paintedBy.id), S(M, e.latLon[0]), S(j, e.latLon[1]), S(H, e.zoom), be(G, 1, `font-medium ${s??""} flex gap-1.5`), m(Ce, e.paintedBy.name), m(Ae, `#${e.paintedBy.id??""}`), m(Se, n), m(Oe, `${i??""}:`), m(je, d), te.disabled = u(w), m(He, b)
-      }, [() => ye(e.paintedBy.id), () => dr(), () => ct(), () => pt(), () => Yt()]), _e("submit", f, async s => {
+      o(te), o(de), o(m), tt(m, s => v(C, s), () => u(C)), k((s, n, i, d, b) => {
+        ge(m, "action", Re[e.action]), S(O, e.paintedBy.id), S(M, e.latLon[0]), S(j, e.latLon[1]), S(H, e.zoom), be(G, 1, `font-medium ${s??""} flex gap-1.5`), f(Ce, e.paintedBy.name), f(Ae, `#${e.paintedBy.id??""}`), f(Se, n), f(Oe, `${i??""}:`), f(je, d), te.disabled = u(w), f(He, b)
+      }, [() => ye(e.paintedBy.id), () => dr(), () => ct(), () => pt(), () => Yt()]), _e("submit", m, async s => {
         if (s.preventDefault(), !u(w) && u(q)()) try {
           v(w, !0);
           const n = new FormData(u(C));
@@ -443,7 +443,7 @@ function rn(t, e) {
         } finally {
           v(w, !1)
         }
-      }), $e(2, f, () => mt), g(_, f)
+      }), $e(2, m, () => ft), g(_, m)
     };
     B(Le, _ => {
       p() && _(De)

@@ -19,18 +19,18 @@ import {
   z as y,
   H as oe,
   u as P
-} from "./BhJstTAi.js";
+} from "./BR3IUnhn.js";
 import {
   g
-} from "./BrQ-nIYg.js";
+} from "./DQ3zwLNx.js";
 import {
   s as Te
-} from "./BEZIAzo3.js";
+} from "./DOlCv22H.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "93ce353ea66c24fd9b67d84d4d5dac764dc78ea8"
+      id: "b227214883eb8641881975e44ed77db97966a3e5"
     }
   } catch {}
 })();
@@ -38,7 +38,7 @@ try {
   (function() {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new a.Error().stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "3f1527e0-a48f-4190-82e6-b781058f2802", a._sentryDebugIdIdentifier = "sentry-dbid-3f1527e0-a48f-4190-82e6-b781058f2802")
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "5b0146ec-c5ed-4c7d-bf9b-1f636e464c3b", a._sentryDebugIdIdentifier = "sentry-dbid-5b0146ec-c5ed-4c7d-bf9b-1f636e464c3b")
   })()
 } catch {}
 const Ee = "true",
@@ -2068,6 +2068,18 @@ class ia {
       c = Array.isArray(d == null ? void 0 : d.tickets) ? d.tickets : [];
     return c.sort((b, h) => new Date(h.createdAt).getTime() - new Date(b.createdAt).getTime()), c
   }
+  async getModerationTranslate(e) {
+    const t = await this.request("/moderator/ticket/translate", {
+      method: "POST",
+      credentials: "include",
+      body: JSON.stringify({
+        text: e
+      })
+    });
+    if (t.status !== 200) throw new u(o(), t.status);
+    const n = await t.json();
+    return n == null ? void 0 : n.translation
+  }
   mapTicketsToReportRows(e, t) {
     var s, r, l, i, d;
     const n = [];
@@ -2257,5 +2269,5 @@ class ia {
 z = new WeakMap;
 let ue = new ia(ge);
 export {
-  xn as A, va as B, Ea as C, we as D, Aa as E, Pa as F, ga as G, ma as H, ge as P, sa as S, Re as _, ue as a, Ta as b, o as c, ke as d, fa as e, un as f, qe as g, rn as h, Qt as i, tn as j, cn as k, T as l, ha as m, _a as n, oa as o, ya as p, wa as q, ba as r, Sa as s, fe as t, X as u, Ia as v, Jn as w, xa as x, pa as y, An as z
+  xn as A, va as B, Ea as C, we as D, Aa as E, Pa as F, ga as G, ma as H, ge as P, sa as S, Re as _, ue as a, o as b, Ta as c, ke as d, fa as e, un as f, qe as g, rn as h, Qt as i, tn as j, cn as k, T as l, ha as m, _a as n, oa as o, ya as p, wa as q, ba as r, Sa as s, fe as t, X as u, Ia as v, Jn as w, xa as x, pa as y, An as z
 };
