@@ -1,65 +1,62 @@
-import "./CIV-60i_.js";
+import "./DzQdX4XG.js";
 import {
-  ak as re,
-  H as ne,
-  O as ce,
-  K as ie,
-  a_ as le,
-  p as Q,
-  z as N,
-  w as W,
-  A as oe,
-  a as X,
+  T as te,
+  H as ae,
+  O as ne,
+  K as re,
+  a_ as ce,
+  p as q,
+  z as H,
+  w as V,
+  A as ie,
+  a as J,
   g as w,
-  b as C,
-  c as Z,
-  f as A,
-  t as K,
-  u as p,
-  C as se,
-  x as de,
-  d,
-  r as u,
-  s as v,
-  n as q
-} from "./DUWZzbWe.js";
+  b as x,
+  c as Q,
+  f as S,
+  t as P,
+  u as X,
+  C as le,
+  x as oe,
+  d as u,
+  r as f,
+  s as _,
+  n as O
+} from "./Bry4mTdq.js";
 import {
-  s as y
-} from "./B_aSMPcR.js";
+  s as b
+} from "./MPIITExI.js";
 import {
-  p as s,
-  i as B,
-  r as ue
-} from "./D3IB6IMS.js";
+  p as o,
+  i as E,
+  r as se
+} from "./D0k0_Cqk.js";
 import {
-  a as $,
-  c as ee,
-  d as fe,
-  s as V
-} from "./BCmvehz2.js";
+  a as Z,
+  c as p,
+  d as de,
+  s as W
+} from "./DoR7D8H0.js";
 import {
-  b as _e
-} from "./CWdRwNbo.js";
+  g as G,
+  t as Y,
+  P as ue,
+  a as fe
+} from "./D6yE0IKc.js";
 import {
-  g as O,
-  t as J,
-  P as ve,
-  a as me
-} from "./j2LsR60V.js";
+  o as _e
+} from "./CcAQaqVY.js";
 import {
-  o as be
-} from "./DzkP_rCj.js";
+  g
+} from "./CKM5458v.js";
 import {
-  g as x
-} from "./CC4jxA2W.js";
-import {
-  L as ge
-} from "./DA7yzWIS.js";
+  L as ve
+} from "./BswGF4Un.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "b1e181cfc86240e13a14599ec441e9d2cad6cdd7"
+      id: "1464f4d4be7ab2460627d08ee13d2df2a352bcb2"
     }
   } catch {}
 })();
@@ -67,72 +64,72 @@ try {
   (function() {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new a.Error().stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "dc7b5283-be88-4b5e-9d84-477f8dfd09af", a._sentryDebugIdIdentifier = "sentry-dbid-dc7b5283-be88-4b5e-9d84-477f8dfd09af")
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "d6468efb-6ad2-45fd-9ac7-ee26d8a94706", a._sentryDebugIdIdentifier = "sentry-dbid-d6468efb-6ad2-45fd-9ac7-ee26d8a94706")
   })()
 } catch {}
 
-function he(a, e, r) {
-  re(() => {
-    var c = ne(() => e(a, r == null ? void 0 : r()) || {});
-    if (r && (c != null && c.update)) {
+function me(a, e, c) {
+  te(() => {
+    var i = ae(() => e(a, c == null ? void 0 : c()) || {});
+    if (c && (i != null && i.update)) {
       var m = !1,
-        g = {};
-      ce(() => {
-        var f = r();
-        ie(f), m && le(g, f) && (g = f, c.update(f))
+        v = {};
+      ne(() => {
+        var s = c();
+        re(s), m && ce(v, s) && (v = s, i.update(s))
       }), m = !0
     }
-    if (c != null && c.destroy) return () => c.destroy()
+    if (i != null && i.destroy) return () => i.destroy()
   })
 }
-const ye = a => `Login with ${a.name}`,
-  we = a => `Entrar com ${a.name}`,
-  xe = (a, e = {}) => (e.locale ?? x()) === "en" ? ye(a) : we(a),
-  ke = () => "By continuing, you agree to our",
-  Ie = () => "Ao continuar, você concorda com nossos",
-  Le = (a = {}, e = {}) => (e.locale ?? x()) === "en" ? ke() : Ie(),
-  Ce = () => "Terms of Service",
-  Ee = () => "Termos de Serviço",
-  Te = (a = {}, e = {}) => (e.locale ?? x()) === "en" ? Ce() : Ee(),
-  Me = () => "and",
-  Be = () => "e",
-  De = (a = {}, e = {}) => (e.locale ?? x()) === "en" ? Me() : Be(),
-  Pe = () => "Privacy Policy",
-  Se = () => "Política de privacidade",
-  Fe = (a = {}, e = {}) => (e.locale ?? x()) === "en" ? Pe() : Se(),
-  ze = () => "Do you have a Wplace Twitch account?",
-  Ke = () => "Você tem uma conta Wplace associada à Twitch?",
-  Ne = (a = {}, e = {}) => (e.locale ?? x()) === "en" ? ze() : Ke(),
-  Ae = () => "Migrate your account",
-  Re = () => "Migre sua conta",
-  Ue = (a = {}, e = {}) => (e.locale ?? x()) === "en" ? Ae() : Re();
-var je = A("<div></div>");
+const be = a => `Login with ${a.name}`,
+  ge = a => `Entrar com ${a.name}`,
+  he = (a, e = {}) => (e.locale ?? g()) === "en" ? be(a) : ge(a),
+  ye = () => "By continuing, you agree to our",
+  we = () => "Ao continuar, você concorda com nossos",
+  xe = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? ye() : we(),
+  ke = () => "Terms of Service",
+  Ie = () => "Termos de Serviço",
+  Le = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? ke() : Ie(),
+  Te = () => "and",
+  Ce = () => "e",
+  Ee = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? Te() : Ce(),
+  Me = () => "Privacy Policy",
+  Be = () => "Política de privacidade",
+  De = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? Me() : Be(),
+  Pe = () => "Do you have a Wplace Twitch account?",
+  Se = () => "Você tem uma conta Wplace associada à Twitch?",
+  Fe = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? Pe() : Se(),
+  ze = () => "Migrate your account",
+  Ke = () => "Migre sua conta",
+  Ne = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? ze() : Ke();
+var Ae = S("<div></div>");
 
-function Ge(a, e) {
-  Q(e, !0);
-  let r = s(e, "widgetId", 15),
-    c = s(e, "appearance", 3, "always"),
-    m = s(e, "language", 3, "auto"),
-    g = s(e, "execution", 3, "render"),
-    f = s(e, "retryInterval", 3, 8e3),
-    E = s(e, "retry", 3, "auto"),
-    R = s(e, "refreshExpired", 3, "auto"),
-    k = s(e, "theme", 3, "auto"),
-    T = s(e, "size", 3, "normal"),
-    U = s(e, "tabIndex", 3, 0);
-  s(e, "reset", 15)(() => {
+function Re(a, e) {
+  q(e, !0);
+  let c = o(e, "widgetId", 15),
+    i = o(e, "appearance", 3, "always"),
+    m = o(e, "language", 3, "auto"),
+    v = o(e, "execution", 3, "render"),
+    s = o(e, "retryInterval", 3, 8e3),
+    F = o(e, "retry", 3, "auto"),
+    k = o(e, "refreshExpired", 3, "auto"),
+    z = o(e, "theme", 3, "auto"),
+    M = o(e, "size", 3, "normal"),
+    I = o(e, "tabIndex", 3, 0);
+  o(e, "reset", 15)(() => {
     var t;
-    r() && ((t = window == null ? void 0 : window.turnstile) == null || t.reset(r()))
+    c() && ((t = window == null ? void 0 : window.turnstile) == null || t.reset(c()))
   });
-  const M = p(() => ({
+  const L = X(() => ({
       sitekey: e.siteKey,
-      callback: (t, l) => {
-        var i;
-        (i = e.callback) == null || i.call(e, t, l)
+      callback: (t, n) => {
+        var r;
+        (r = e.callback) == null || r.call(e, t, n)
       },
       "error-callback": t => {
-        var l;
-        (l = e.errorCallback) == null || l.call(e, t)
+        var n;
+        (n = e.errorCallback) == null || n.call(e, t)
       },
       "timeout-callback": () => {
         var t;
@@ -156,163 +153,161 @@ function Ge(a, e) {
       },
       "response-field-name": e.responseFieldName ?? e.formsField ?? "cf-turnstile-response",
       "response-field": e.responseField ?? e.forms ?? !0,
-      "refresh-expired": R(),
-      "retry-interval": f(),
-      tabindex: U(),
-      appearance: c(),
-      execution: g(),
+      "refresh-expired": k(),
+      "retry-interval": s(),
+      tabindex: I(),
+      appearance: i(),
+      execution: v(),
       language: m(),
       action: e.action,
-      retry: E(),
-      theme: k(),
+      retry: F(),
+      theme: z(),
       cData: e.cData,
-      size: T()
+      size: M()
     })),
-    I = (t, l) => {
-      let i = window.turnstile.render(t, l);
-      return r(i), {
+    T = (t, n) => {
+      let r = window.turnstile.render(t, n);
+      return c(r), {
         destroy() {
-          window.turnstile.remove(i)
+          window.turnstile.remove(r)
         },
-        update(n) {
-          window.turnstile.remove(i), i = window.turnstile.render(t, n), r(i)
+        update(l) {
+          window.turnstile.remove(r), r = window.turnstile.render(t, l), c(r)
         }
       }
     };
-  let h = W(!1);
-  be(() => {
-    if (N(h, !0), !O.turnstatileLoaded) {
+  let h = V(!1);
+  _e(() => {
+    if (H(h, !0), !G.turnstatileLoaded) {
       const t = document.createElement("script");
-      t.type = "text/javascript", t.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit", t.async = !0, t.addEventListener("load", () => O.turnstatileLoaded = !0, {
+      t.type = "text/javascript", t.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit", t.async = !0, t.addEventListener("load", () => G.turnstatileLoaded = !0, {
         once: !0
       }), document.head.appendChild(t)
     }
     return () => {
-      N(h, !1)
+      H(h, !1)
     }
   });
-  var D = oe(),
-    P = X(D);
+  var C = ie(),
+    N = J(C);
   {
-    var S = t => {
-      var l = je();
-      let i;
-      he(l, (n, o) => I == null ? void 0 : I(n, o), () => w(M)), K(n => i = $(l, 1, ee(e.class), "svelte-1gvfki5", i, n), [() => ({
-        flexible: T() == "flexible"
-      })]), C(t, l)
+    var A = t => {
+      var n = Ae();
+      let r;
+      me(n, (l, d) => T == null ? void 0 : T(l, d), () => w(L)), P(l => r = Z(n, 1, p(e.class), "svelte-1gvfki5", r, l), [() => ({
+        flexible: M() == "flexible"
+      })]), x(t, n)
     };
-    B(P, t => {
-      O.turnstatileLoaded && w(h) && t(S)
+    E(N, t => {
+      G.turnstatileLoaded && w(h) && t(A)
     })
   }
-  C(a, D), Z()
+  x(a, C), Q()
 }
-var He = se('<svg><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" fill="#4285F4"></path><path d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" fill="#34A853"></path><path d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" fill="#FBBC05"></path><path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" fill="#EB4335"></path></svg>');
+var Ue = le('<svg><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" fill="#4285F4"></path><path d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" fill="#34A853"></path><path d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" fill="#FBBC05"></path><path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" fill="#EB4335"></path></svg>');
 
-function Oe(a, e) {
-  let r = ue(e, ["$$slots", "$$events", "$$legacy"]);
-  var c = He();
-  fe(c, () => ({
+function je(a, e) {
+  let c = se(e, ["$$slots", "$$events", "$$legacy"]);
+  var i = Ue();
+  de(i, () => ({
     viewBox: "0 0 256 262",
     xmlns: "http://www.w3.org/2000/svg",
-    ...r
-  })), C(a, c)
+    ...c
+  })), x(a, i)
 }
-var We = A('<a><!> </a> <div class="mt-2 flex flex-col items-center gap-1"><!> <!></div>', 1),
-  Ye = A('<p class="text-base-content/60 mt-4 text-center text-xs"> <a class="font-medium"> </a>.</p>'),
-  qe = A('<div><div class="flex justify-center"><!></div> <form><div class="mt-6 flex flex-col items-center gap-2"><!></div></form> <p class="text-base-content/60 mt-2 text-center text-xs"> <a class="font-medium" href="/terms/terms-of-service" target="_blank"> </a> <a class="font-medium" href="/terms/privacy" target="_blank"> </a>.</p> <!></div>');
+var Ge = S('<a><!> </a> <div class="mt-2 flex flex-col items-center gap-1"><!> <!></div>', 1),
+  He = S('<p class="text-base-content/60 mt-8 text-center text-xs"> <a class="font-medium"> </a>.</p>'),
+  Oe = S('<div><div class="flex justify-center py-4"><!></div> <div class="flex flex-col items-center gap-2 pt-6"><!></div> <p class="text-base-content/60 mt-2 text-center text-xs"> <a class="font-medium" href="/terms/terms-of-service" target="_blank"> </a> <a class="font-medium" href="/terms/privacy" target="_blank"> </a>.</p> <!></div>');
 
-function rt(a, e) {
-  Q(e, !0);
-  let r = s(e, "showTwitchMigration", 3, !0),
-    c = W(null),
-    m = W(de(J ? "" : "turnstile-disabled"));
+function $e(a, e) {
+  q(e, !0);
+  let c = o(e, "showTwitchMigration", 3, !0),
+    i = V(oe(Y ? "" : "turnstile-disabled"));
 
-  function g(n, o) {
-    return `${ve}/auth/${n}?token=${o}${e.redirect?`&r=${e.redirect}`:""}`
+  function m(n, r) {
+    return `${ue}/auth/${n}?token=${r}${e.redirect?`&r=${e.redirect}`:""}`
   }
-  var f = qe(),
-    E = d(f),
-    R = d(E);
-  ge(R, {
+  var v = Oe(),
+    s = u(v),
+    F = u(s);
+  ve(F, {
     hasText: !0
-  }), u(E);
-  var k = v(E, 2),
-    T = d(k),
-    U = d(T);
+  }), f(s);
+  var k = _(s, 2),
+    z = u(k);
   {
-    var Y = n => {
-      var o = We(),
-        _ = X(o),
-        b = d(_);
-      Oe(b, {
+    var M = n => {
+      var r = Ge(),
+        l = J(r),
+        d = u(l);
+      je(d, {
         class: "mr-1 size-5"
       });
-      var j = v(b);
-      u(_);
-      var F = v(_, 2),
-        z = d(F);
+      var R = _(d);
+      f(l);
+      var B = _(l, 2),
+        D = u(B);
       {
-        var G = L => {
+        var U = y => {
           {
-            let H = p(() => me.trim());
-            Ge(L, {
+            let j = X(() => fe.trim());
+            Re(y, {
               get siteKey() {
-                return w(H)
+                return w(j)
               },
-              callback: ae => {
-                N(m, ae, !0)
+              callback: ee => {
+                H(i, ee, !0)
               }
             })
           }
         };
-        B(z, L => {
-          J && L(G)
+        E(D, y => {
+          Y && y(U)
         })
       }
-      var te = v(z, 2);
-      B(te, L => {}), u(F), K((L, H) => {
-        $(_, 1, ee({
+      var $ = _(D, 2);
+      E($, y => {}), f(B), P((y, j) => {
+        Z(l, 1, p({
           "btn btn-lg bg-base-100 w-full text-base": !0,
-          "bg-base-content/10 pointer-events-none": !w(m)
-        })), V(_, "href", L), y(j, ` ${H??""}`)
-      }, [() => w(m) ? g("google", w(m)) : "#", () => xe({
+          "bg-base-content/10 pointer-events-none": !w(i)
+        })), W(l, "href", y), b(R, ` ${j??""}`)
+      }, [() => w(i) ? m("google", w(i)) : "#", () => he({
         name: "Google"
-      })]), C(n, o)
+      })]), x(n, r)
     };
-    B(U, n => {
-      n(Y, !1)
+    E(z, n => {
+      n(M, !1)
     })
   }
-  u(T), u(k), _e(k, n => N(c, n), () => w(c));
-  var M = v(k, 2),
-    I = d(M),
-    h = v(I),
-    D = d(h, !0);
-  u(h);
-  var P = v(h),
-    S = v(P),
-    t = d(S, !0);
-  u(S), q(), u(M);
-  var l = v(M, 2);
+  f(k);
+  var I = _(k, 2),
+    K = u(I),
+    L = _(K),
+    T = u(L, !0);
+  f(L);
+  var h = _(L),
+    C = _(h),
+    N = u(C, !0);
+  f(C), O(), f(I);
+  var A = _(I, 2);
   {
-    var i = n => {
-      var o = Ye(),
-        _ = d(o),
-        b = v(_),
-        j = d(b, !0);
-      u(b), q(), u(o), K((F, z, G) => {
-        y(_, `${F??""} `), V(b, "href", z), y(j, G)
-      }, [() => Ne(), () => g("twitch", ""), () => Ue()]), C(n, o)
+    var t = n => {
+      var r = He(),
+        l = u(r),
+        d = _(l),
+        R = u(d, !0);
+      f(d), O(), f(r), P((B, D, U) => {
+        b(l, `${B??""} `), W(d, "href", D), b(R, U)
+      }, [() => Fe(), () => m("twitch", ""), () => Ne()]), x(n, r)
     };
-    B(l, n => {
-      r() && n(i)
+    E(A, n => {
+      c() && n(t)
     })
   }
-  u(f), K((n, o, _, b) => {
-    y(I, `${n??""} `), y(D, o), y(P, ` ${_??""} `), y(t, b)
-  }, [() => Le(), () => Te(), () => De(), () => Fe()]), C(a, f), Z()
+  f(v), P((n, r, l, d) => {
+    b(K, `${n??""} `), b(T, r), b(h, ` ${l??""} `), b(N, d)
+  }, [() => xe(), () => Le(), () => Ee(), () => De()]), x(a, v), Q()
 }
 export {
-  rt as L
+  $e as L
 };
