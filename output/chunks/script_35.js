@@ -1,47 +1,36 @@
 import {
-  g as r
-} from "./Y6XeJOU-.js";
-import "./Bbo7sPqH.js";
-import {
-  C as s,
-  b as a
-} from "./CuEZ6s8g.js";
-import {
-  d as f
-} from "./Y9SFqxxU.js";
-import {
-  r as l
-} from "./DG2VKRMA.js";
+  g as t
+} from "./CC4jxA2W.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "987f325885ec99eb8c0fc190246a664bf2e822ff"
+      id: "b1e181cfc86240e13a14599ec441e9d2cad6cdd7"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      o = new e.Error().stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "9beb198c-0bf7-4061-bd60-5940a4d8eaa4", e._sentryDebugIdIdentifier = "sentry-dbid-9beb198c-0bf7-4061-bd60-5940a4d8eaa4")
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "4ea1634f-e102-4adb-aa7c-68f40832fe15", e._sentryDebugIdIdentifier = "sentry-dbid-4ea1634f-e102-4adb-aa7c-68f40832fe15")
   })()
 } catch {}
-const d = () => "Close",
-  i = () => "Fechar",
-  w = (e = {}, o = {}) => (o.locale ?? r()) === "en" ? d() : i();
-var c = s('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
-
-function m(e, o) {
-  let t = l(o, ["$$slots", "$$events", "$$legacy"]);
-  var n = c();
-  f(n, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...t
-  })), a(e, n)
-}
+const l = () => "Save",
+  o = () => "Salvar",
+  y = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? l() : o(),
+  s = () => "Members",
+  a = () => "Membros",
+  _ = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? s() : a(),
+  c = () => "Player",
+  i = () => "Jogador",
+  g = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? c() : i(),
+  u = () => "Last pixel",
+  f = () => "Último pixel",
+  m = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? u() : f(),
+  d = () => "Visit",
+  p = () => "Visitar",
+  v = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? d() : p();
 export {
-  m as A, w as c
+  m as l, _ as m, g as p, y as s, v
 };

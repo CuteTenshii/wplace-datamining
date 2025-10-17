@@ -1,63 +1,94 @@
 import {
-  D as p,
-  F as g,
-  G as a,
-  H as y,
-  I as _,
-  J as l,
-  g as u,
-  K as h,
-  L as w
-} from "./CuEZ6s8g.js";
+  g as p
+} from "./CC4jxA2W.js";
+import "./CIV-60i_.js";
+import {
+  A as g,
+  a as h,
+  b as r,
+  C as i
+} from "./DUWZzbWe.js";
+import {
+  i as w,
+  r as v
+} from "./D3IB6IMS.js";
+import {
+  d as s
+} from "./BCmvehz2.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "987f325885ec99eb8c0fc190246a664bf2e822ff"
+      id: "b1e181cfc86240e13a14599ec441e9d2cad6cdd7"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "466827c8-7394-4483-bcd6-e0d3ff749d8f", e._sentryDebugIdIdentifier = "sentry-dbid-466827c8-7394-4483-bcd6-e0d3ff749d8f")
+      o = new e.Error().stack;
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "e24da1e6-e965-4880-8150-c1f42858575a", e._sentryDebugIdIdentifier = "sentry-dbid-e24da1e6-e965-4880-8150-c1f42858575a")
   })()
 } catch {}
+const m = e => `Copy alliance ID: #${e.allianceId}`,
+  u = e => `Copiar ID da aliança: #${e.allianceId}`,
+  x = (e, o = {}) => (o.locale ?? p()) === "en" ? m(e) : u(e);
+var y = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
+  T = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
-function I(e = !1) {
-  const n = p,
-    f = n.l.u;
-  if (!f) return;
-  let i = () => h(n.s);
-  if (e) {
-    let s = 0,
-      t = {};
-    const b = w(() => {
-      let r = !1;
-      const d = n.s;
-      for (const o in d) d[o] !== t[o] && (t[o] = d[o], r = !0);
-      return r && s++, s
-    });
-    i = () => u(b)
+function H(e, o) {
+  let a = v(o, ["$$slots", "$$events", "$$legacy", "filled"]);
+  var t = g(),
+    c = h(t);
+  {
+    var d = l => {
+        var n = y();
+        s(n, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...a
+        })), r(l, n)
+      },
+      f = l => {
+        var n = T();
+        s(n, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...a
+        })), r(l, n)
+      };
+    w(c, l => {
+      o.filled ? l(d) : l(f, !1)
+    })
   }
-  f.b.length && g(() => {
-    c(n, i), l(f.b)
-  }), a(() => {
-    const s = y(() => f.m.map(_));
-    return () => {
-      for (const t of s) typeof t == "function" && t()
-    }
-  }), f.a.length && a(() => {
-    c(n, i), l(f.a)
-  })
+  r(e, t)
 }
+var q = i('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
 
-function c(e, n) {
-  if (e.l.s)
-    for (const f of e.l.s) u(f);
-  n()
+function D(e, o) {
+  let a = v(o, ["$$slots", "$$events", "$$legacy"]);
+  var t = q();
+  s(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...a
+  })), r(e, t)
+}
+var _ = i('<svg><path d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z"></path></svg>');
+
+function M(e, o) {
+  let a = v(o, ["$$slots", "$$events", "$$legacy"]);
+  var t = _();
+  s(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...a
+  })), r(e, t)
 }
 export {
-  I as i
+  H as C, D as G, M as T, x as c
 };

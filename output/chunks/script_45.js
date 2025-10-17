@@ -1,7 +1,6 @@
 import {
-  l as f,
-  a
-} from "../chunks/Dsl1ytrr.js";
+  g as f
+} from "./CC4jxA2W.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
@@ -13,10 +12,13 @@ import {
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      d = new e.Error().stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "4e2225e5-ec77-4b12-a5e4-b0c92d056a73", e._sentryDebugIdIdentifier = "sentry-dbid-4e2225e5-ec77-4b12-a5e4-b0c92d056a73")
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "f21bf8cc-0e87-4d9c-b3a3-228553277fac", e._sentryDebugIdIdentifier = "sentry-dbid-f21bf8cc-0e87-4d9c-b3a3-228553277fac")
   })()
 } catch {}
+const t = () => "Refresh",
+  d = () => "Atualizar",
+  c = (e = {}, n = {}) => (n.locale ?? f()) === "en" ? t() : d();
 export {
-  f as load_css, a as start
+  c as r
 };
