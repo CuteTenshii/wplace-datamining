@@ -1,11 +1,11 @@
 import {
-  S as g
-} from "./C1Ceda64.js";
+  S as i
+} from "./C_C1DUX7.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "b227214883eb8641881975e44ed77db97966a3e5"
+      id: "987f325885ec99eb8c0fc190246a664bf2e822ff"
     }
   } catch {}
 })();
@@ -51,8 +51,8 @@ function k(t) {
 }
 
 function C(t) {
-  t = Math.min(t, g.colors.length - 1);
-  const [e, o, r] = g.colors[t].rgb;
+  t = Math.min(t, i.colors.length - 1);
+  const [e, o, r] = i.colors[t].rgb;
   return {
     r: e,
     g: o,
@@ -60,7 +60,7 @@ function C(t) {
     a: t === 0 ? 0 : 255
   }
 }
-const y = g.colors.map((t, e) => ({
+const y = i.colors.map((t, e) => ({
   ...t,
   idx: e,
   lab: v({
@@ -99,16 +99,16 @@ function m(t, e) {
     n = t.b - e.b,
     a = Math.sqrt(t.a * t.a + t.b * t.b),
     l = Math.sqrt(e.a * e.a + e.b * e.b),
-    i = a - l,
-    s = r * r + n * n - i * i;
+    f = a - l,
+    s = r * r + n * n - f * f;
   s = s < 0 ? 0 : Math.sqrt(s);
   var w = 1 + .045 * a,
     h = 1 + .015 * a,
-    d = o / 1,
-    f = i / w,
-    b = s / h,
-    c = d * d + f * f + b * b;
-  return c < 0 ? 0 : Math.sqrt(c)
+    g = o / 1,
+    c = f / w,
+    d = s / h,
+    b = g * g + c * c + d * d;
+  return b < 0 ? 0 : Math.sqrt(b)
 }
 export {
   E as a, A as b, C as c, x as g, k as h, T as r

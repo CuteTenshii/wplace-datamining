@@ -2,7 +2,7 @@
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "b227214883eb8641881975e44ed77db97966a3e5"
+      id: "987f325885ec99eb8c0fc190246a664bf2e822ff"
     }
   } catch {}
 })();
@@ -41,9 +41,9 @@ function m(e, {
   axis: r = "y"
 } = {}) {
   const n = getComputedStyle(e),
-    l = +n.opacity,
+    c = +n.opacity,
     p = r === "y" ? "height" : "width",
-    c = parseFloat(n[p]),
+    l = parseFloat(n[p]),
     o = r === "y" ? ["top", "bottom"] : ["left", "right"],
     d = o.map(a => `${a[0].toUpperCase()}${a.slice(1)}`),
     f = parseFloat(n[`padding${d[0]}`]),
@@ -56,7 +56,7 @@ function m(e, {
     delay: t,
     duration: i,
     easing: s,
-    css: a => `overflow: hidden;opacity: ${Math.min(a*20,1)*l};${p}: ${a*c}px;padding-${o[0]}: ${a*f}px;padding-${o[1]}: ${a*y}px;margin-${o[0]}: ${a*u}px;margin-${o[1]}: ${a*g}px;border-${o[0]}-width: ${a*_}px;border-${o[1]}-width: ${a*$}px;min-${p}: 0`
+    css: a => `overflow: hidden;opacity: ${Math.min(a*20,1)*c};${p}: ${a*l}px;padding-${o[0]}: ${a*f}px;padding-${o[1]}: ${a*y}px;margin-${o[0]}: ${a*u}px;margin-${o[1]}: ${a*g}px;border-${o[0]}-width: ${a*_}px;border-${o[1]}-width: ${a*$}px;min-${p}: 0`
   }
 }
 export {

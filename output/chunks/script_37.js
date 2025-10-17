@@ -1,25 +1,25 @@
 import {
   g as p
-} from "./DQ3zwLNx.js";
-import "./DP3S6wrM.js";
+} from "./Y6XeJOU-.js";
+import "./Bbo7sPqH.js";
 import {
   A as g,
   a as h,
   b as r,
   C as i
-} from "./BR3IUnhn.js";
+} from "./CuEZ6s8g.js";
 import {
   i as w,
   r as v
-} from "./C4iDVDl6.js";
+} from "./DG2VKRMA.js";
 import {
   d as s
-} from "./CoPDenOY.js";
+} from "./Y9SFqxxU.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "b227214883eb8641881975e44ed77db97966a3e5"
+      id: "987f325885ec99eb8c0fc190246a664bf2e822ff"
     }
   } catch {}
 })();
@@ -33,24 +33,15 @@ try {
 const m = e => `Copy alliance ID: #${e.allianceId}`,
   u = e => `Copiar ID da aliança: #${e.allianceId}`,
   x = (e, o = {}) => (o.locale ?? p()) === "en" ? m(e) : u(e);
-var b = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
-  y = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
+var y = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
+  T = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
 function H(e, o) {
   let l = v(o, ["$$slots", "$$events", "$$legacy", "filled"]);
   var t = g(),
-    d = h(t);
+    f = h(t);
   {
-    var f = a => {
-        var n = b();
-        s(n, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...l
-        })), r(a, n)
-      },
-      c = a => {
+    var c = a => {
         var n = y();
         s(n, () => ({
           xmlns: "http://www.w3.org/2000/svg",
@@ -58,18 +49,27 @@ function H(e, o) {
           fill: "currentColor",
           ...l
         })), r(a, n)
+      },
+      d = a => {
+        var n = T();
+        s(n, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...l
+        })), r(a, n)
       };
-    w(d, a => {
-      o.filled ? a(f) : a(c, !1)
+    w(f, a => {
+      o.filled ? a(c) : a(d, !1)
     })
   }
   r(e, t)
 }
-var T = i('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
+var b = i('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
 
 function D(e, o) {
   let l = v(o, ["$$slots", "$$events", "$$legacy"]);
-  var t = T();
+  var t = b();
   s(t, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
