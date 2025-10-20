@@ -1,5 +1,5 @@
 import {
-  g as o
+  g as f
 } from "./BgLPZDo-.js";
 (function() {
   try {
@@ -13,12 +13,12 @@ try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "0f6cab18-296c-468b-826d-58d79173c310", e._sentryDebugIdIdentifier = "sentry-dbid-0f6cab18-296c-468b-826d-58d79173c310")
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "f34a6819-208e-49fe-945f-f47a3fc0ea38", e._sentryDebugIdIdentifier = "sentry-dbid-f34a6819-208e-49fe-945f-f47a3fc0ea38")
   })()
 } catch {}
-const t = () => "Select the report reason",
-  d = () => "Selecione o motivo da denúncia",
-  s = (e = {}, n = {}) => (n.locale ?? o()) === "en" ? t() : d();
+const t = () => "Refresh",
+  o = () => "Atualizar",
+  a = (e = {}, n = {}) => (n.locale ?? f()) === "en" ? t() : o();
 export {
-  s
+  a as r
 };

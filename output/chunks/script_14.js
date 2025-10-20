@@ -9,12 +9,12 @@ import {
   g as o,
   z as r,
   x as p
-} from "./Bry4mTdq.js";
+} from "./CX26CINy.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "1464f4d4be7ab2460627d08ee13d2df2a352bcb2"
+      id: "55773afae0bc9cd8753b3f88c13d41d45dcd2072"
     }
   } catch {}
 })();
@@ -22,7 +22,7 @@ try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "debe4481-cc83-4645-9aab-1a1ce2cf1051", t._sentryDebugIdIdentifier = "sentry-dbid-debe4481-cc83-4645-9aab-1a1ce2cf1051")
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "9819dea9-edb2-46cc-a13a-d325dbae638c", t._sentryDebugIdIdentifier = "sentry-dbid-9819dea9-edb2-46cc-a13a-d325dbae638c")
   })()
 } catch {}
 const L = "true",
@@ -30,13 +30,13 @@ const L = "true",
   v = "0x4AAAAAABpHqZ-6i7uL0nmG",
   A = "https://backend.wplace.live",
   w = "theme";
-var g, l, u, d, c, f, h;
+var d, g, l, u, c, f, h;
 class y {
   constructor() {
-    n(this, g, s(!1));
-    n(this, l, s(!1));
-    n(this, u, s(p(I())));
     n(this, d, s(!1));
+    n(this, g, s(!1));
+    n(this, l, s(p(I())));
+    n(this, u, s(!1));
     n(this, c, s("custom-winter"));
     n(this, f, s(p(Date.now())));
     n(this, h, s(void 0));
@@ -45,28 +45,28 @@ class y {
     }, 500), this.theme = localStorage.getItem(w) || "custom-winter"
   }
   get dropletsDialogOpen() {
-    return o(a(this, g))
-  }
-  set dropletsDialogOpen(e) {
-    r(a(this, g), e, !0)
-  }
-  get muted() {
-    return o(a(this, l))
-  }
-  set muted(e) {
-    r(a(this, l), e, !0)
-  }
-  get language() {
-    return o(a(this, u))
-  }
-  set language(e) {
-    r(a(this, u), e, !0)
-  }
-  get turnstatileLoaded() {
     return o(a(this, d))
   }
-  set turnstatileLoaded(e) {
+  set dropletsDialogOpen(e) {
     r(a(this, d), e, !0)
+  }
+  get muted() {
+    return o(a(this, g))
+  }
+  set muted(e) {
+    r(a(this, g), e, !0)
+  }
+  get language() {
+    return o(a(this, l))
+  }
+  set language(e) {
+    r(a(this, l), e, !0)
+  }
+  get turnstatileLoaded() {
+    return o(a(this, u))
+  }
+  set turnstatileLoaded(e) {
+    r(a(this, u), e, !0)
   }
   get theme() {
     return o(a(this, c))
@@ -87,7 +87,7 @@ class y {
     r(a(this, h), e, !0)
   }
 }
-g = new WeakMap, l = new WeakMap, u = new WeakMap, d = new WeakMap, c = new WeakMap, f = new WeakMap, h = new WeakMap;
+d = new WeakMap, g = new WeakMap, l = new WeakMap, u = new WeakMap, c = new WeakMap, f = new WeakMap, h = new WeakMap;
 const T = new y;
 
 function I() {

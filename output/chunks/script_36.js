@@ -1,47 +1,52 @@
 import {
-  g as r
-} from "./CKM5458v.js";
-import "./DzQdX4XG.js";
-import {
-  C as s,
-  b as d
-} from "./Bry4mTdq.js";
-import {
-  d as f
-} from "./DoR7D8H0.js";
-import {
-  r as l
-} from "./D0k0_Cqk.js";
+  D as b,
+  F as y,
+  G as _,
+  i as g,
+  h as l,
+  e as h,
+  j as p,
+  k as v,
+  l as m,
+  m as w,
+  o as I,
+  U as k,
+  q as D
+} from "./CX26CINy.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "1464f4d4be7ab2460627d08ee13d2df2a352bcb2"
+      id: "55773afae0bc9cd8753b3f88c13d41d45dcd2072"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      o = new e.Error().stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "39f1141f-9d07-40d8-9980-cc8574c85448", e._sentryDebugIdIdentifier = "sentry-dbid-39f1141f-9d07-40d8-9980-cc8574c85448")
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "97470109-a95d-4c7d-b05e-671bd5c0b965", e._sentryDebugIdIdentifier = "sentry-dbid-97470109-a95d-4c7d-b05e-671bd5c0b965")
   })()
 } catch {}
-const a = () => "Close",
-  c = () => "Fechar",
-  w = (e = {}, o = {}) => (o.locale ?? r()) === "en" ? a() : c();
-var i = s('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
 
-function m(e, o) {
-  let t = l(o, ["$$slots", "$$events", "$$legacy"]);
-  var n = i();
-  f(n, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...t
-  })), d(e, n)
+function T(e, n, c) {
+  l && h();
+  var d = e,
+    t = k,
+    f, o, a = null,
+    u = b() ? y : _;
+
+  function s() {
+    f && D(f), a !== null && (a.lastChild.remove(), d.before(a), a = null), f = o
+  }
+  g(() => {
+    if (u(t, t = n())) {
+      var i = d,
+        r = w();
+      r && (a = document.createDocumentFragment(), a.append(i = p())), o = v(() => c(i)), r ? m.add_callback(s) : s()
+    }
+  }), l && (d = I)
 }
 export {
-  m as A, w as c
+  T as k
 };

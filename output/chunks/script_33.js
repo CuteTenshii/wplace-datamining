@@ -1,11 +1,11 @@
 import {
-  S as b
-} from "./DIiIwjpZ.js";
+  S as g
+} from "./Jnmo3vl4.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "1464f4d4be7ab2460627d08ee13d2df2a352bcb2"
+      id: "55773afae0bc9cd8753b3f88c13d41d45dcd2072"
     }
   } catch {}
 })();
@@ -13,7 +13,7 @@ try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "bbd39982-a1e9-4bf3-a281-93e7e1e4d572", t._sentryDebugIdIdentifier = "sentry-dbid-bbd39982-a1e9-4bf3-a281-93e7e1e4d572")
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "5a81020c-1d29-4fee-8b98-e9a176204b61", t._sentryDebugIdIdentifier = "sentry-dbid-5a81020c-1d29-4fee-8b98-e9a176204b61")
   })()
 } catch {}
 const u = ["text-red-500", "text-orange-500", "text-yellow-500", "text-lime-500", "text-emerald-500", "text-teal-500", "text-cyan-500", "text-sky-500", "text-indigo-500", "text-violet-500", "text-purple-500", "text-fuchsia-500", "text-pink-500", "text-rose-500"],
@@ -51,8 +51,8 @@ function k(t) {
 }
 
 function C(t) {
-  t = Math.min(t, b.colors.length - 1);
-  const [e, o, r] = b.colors[t].rgb;
+  t = Math.min(t, g.colors.length - 1);
+  const [e, o, r] = g.colors[t].rgb;
   return {
     r: e,
     g: o,
@@ -60,7 +60,7 @@ function C(t) {
     a: t === 0 ? 0 : 255
   }
 }
-const y = b.colors.map((t, e) => ({
+const y = g.colors.map((t, e) => ({
   ...t,
   idx: e,
   lab: v({
@@ -105,9 +105,9 @@ function m(t, e) {
   var w = 1 + .045 * a,
     h = 1 + .015 * a,
     d = o / 1,
-    g = i / w,
-    c = s / h,
-    f = d * d + g * g + c * c;
+    c = i / w,
+    b = s / h,
+    f = d * d + c * c + b * b;
   return f < 0 ? 0 : Math.sqrt(f)
 }
 export {

@@ -1,24 +1,41 @@
+import "./BrPgsScq.js";
 import {
-  g as f
-} from "./CKM5458v.js";
+  H as n,
+  b as f
+} from "./CX26CINy.js";
+import {
+  d as a
+} from "./CkEeWs_R.js";
+import {
+  r
+} from "./aRmAw-LJ.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "1464f4d4be7ab2460627d08ee13d2df2a352bcb2"
+      id: "55773afae0bc9cd8753b3f88c13d41d45dcd2072"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "f21bf8cc-0e87-4d9c-b3a3-228553277fac", e._sentryDebugIdIdentifier = "sentry-dbid-f21bf8cc-0e87-4d9c-b3a3-228553277fac")
+      d = new e.Error().stack;
+    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "ae03018d-787f-4550-add3-db7f7da7adc4", e._sentryDebugIdIdentifier = "sentry-dbid-ae03018d-787f-4550-add3-db7f7da7adc4")
   })()
 } catch {}
-const t = () => "Refresh",
-  d = () => "Atualizar",
-  l = (e = {}, n = {}) => (n.locale ?? f()) === "en" ? t() : d();
+var s = n('<svg><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"></path></svg>');
+
+function g(e, d) {
+  let o = r(d, ["$$slots", "$$events", "$$legacy"]);
+  var t = s();
+  a(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...o
+  })), f(e, t)
+}
 export {
-  l as r
+  g as R
 };

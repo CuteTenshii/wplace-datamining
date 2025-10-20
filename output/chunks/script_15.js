@@ -17,24 +17,24 @@ import {
   x as Z,
   g as b,
   z as S,
-  H as Q,
-  u as A
-} from "./Bry4mTdq.js";
+  L as Q,
+  u as P
+} from "./CX26CINy.js";
 import {
   P as ae,
   g as ge
-} from "./D6yE0IKc.js";
+} from "./B5L9BB4-.js";
 import {
   g as u
-} from "./CKM5458v.js";
+} from "./BgLPZDo-.js";
 import {
   s as me
-} from "./Cz48csc9.js";
+} from "./DovnsRl8.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "1464f4d4be7ab2460627d08ee13d2df2a352bcb2"
+      id: "55773afae0bc9cd8753b3f88c13d41d45dcd2072"
     }
   } catch {}
 })();
@@ -42,7 +42,7 @@ try {
   (function() {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new a.Error().stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "1a3e78df-eddc-45be-94b7-c24fab6764f6", a._sentryDebugIdIdentifier = "sentry-dbid-1a3e78df-eddc-45be-94b7-c24fab6764f6")
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "fa1c791b-468d-41ea-9134-87033c72a9b9", a._sentryDebugIdIdentifier = "sentry-dbid-fa1c791b-468d-41ea-9134-87033c72a9b9")
   })()
 } catch {}
 
@@ -67,15 +67,15 @@ class _e {
       id: e,
       data: t,
       type: n,
-      message: s
+      message: r
     }) => {
-      const r = this.toasts.findIndex(o => o.id === e),
-        c = this.toasts[r];
-      this.toasts[r] = {
+      const s = this.toasts.findIndex(o => o.id === e),
+        c = this.toasts[s];
+      this.toasts[s] = {
         ...c,
         ...t,
         id: e,
-        title: s,
+        title: r,
         type: n,
         updated: !0
       }
@@ -85,22 +85,22 @@ class _e {
       const {
         message: t,
         ...n
-      } = e, s = typeof(e == null ? void 0 : e.id) == "number" || e.id && ((o = e.id) == null ? void 0 : o.length) > 0 ? e.id : X++, r = e.dismissable === void 0 ? !0 : e.dismissable, c = e.type === void 0 ? "default" : e.type;
+      } = e, r = typeof(e == null ? void 0 : e.id) == "number" || e.id && ((o = e.id) == null ? void 0 : o.length) > 0 ? e.id : X++, s = e.dismissable === void 0 ? !0 : e.dismissable, c = e.type === void 0 ? "default" : e.type;
       return Q(() => {
-        this.toasts.find(f => f.id === s) ? this.updateToast({
-          id: s,
+        this.toasts.find(f => f.id === r) ? this.updateToast({
+          id: r,
           data: e,
           type: c,
           message: t,
-          dismissable: r
+          dismissable: s
         }) : this.addToast({
           ...n,
-          id: s,
+          id: r,
           title: t,
-          dismissable: r,
+          dismissable: s,
           type: c
         })
-      }), s
+      }), r
     });
     h(this, "dismiss", e => (Q(() => {
       if (e === void 0) {
@@ -163,11 +163,11 @@ class _e {
         type: "loading",
         message: typeof t.loading == "string" ? t.loading : t.loading()
       }));
-      const s = e instanceof Promise ? e : e();
-      let r = n !== void 0;
-      return s.then(c => {
+      const r = e instanceof Promise ? e : e();
+      let s = n !== void 0;
+      return r.then(c => {
         if (typeof c == "object" && c && "ok" in c && typeof c.ok == "boolean" && !c.ok) {
-          r = !1;
+          s = !1;
           const o = pe(c);
           this.create({
             id: n,
@@ -175,7 +175,7 @@ class _e {
             message: o
           })
         } else if (t.success !== void 0) {
-          r = !1;
+          s = !1;
           const o = typeof t.success == "function" ? t.success(c) : t.success;
           this.create({
             id: n,
@@ -185,7 +185,7 @@ class _e {
         }
       }).catch(c => {
         if (t.error !== void 0) {
-          r = !1;
+          s = !1;
           const o = typeof t.error == "function" ? t.error(c) : t.error;
           this.create({
             id: n,
@@ -195,7 +195,7 @@ class _e {
         }
       }).finally(() => {
         var c;
-        r && (this.dismiss(n), n = void 0), (c = t.finally) == null || c.call(t)
+        s && (this.dismiss(n), n = void 0), (c = t.finally) == null || c.call(t)
       }), n
     });
     h(this, "custom", (e, t) => {
@@ -250,7 +250,7 @@ function we(a, e) {
 var z;
 class ta {
   constructor() {
-    w(this, z, A(() => y.toasts.filter(e => !e.dismiss)))
+    w(this, z, P(() => y.toasts.filter(e => !e.dismiss)))
   }
   get toasts() {
     return b(g(this, z))
@@ -291,13 +291,13 @@ function be() {
   if (!e) return;
   const t = e.split(".");
   if (t.length !== 2) throw new Error("override token wrong amount of parts");
-  const [n] = t, s = JSON.parse(atob(n));
-  if (Date.now() / 1e3 > s.expiresAt) throw new Error("override token expired");
-  re.info(`Currently using the ${s.id} override. Bugs may occur, go back to ${location.protocol}//${location.host} to clear this override.`, {
+  const [n] = t, r = JSON.parse(atob(n));
+  if (Date.now() / 1e3 > r.expiresAt) throw new Error("override token expired");
+  re.info(`Currently using the ${r.id} override. Bugs may occur, go back to ${location.protocol}//${location.host} to clear this override.`, {
     duration: 6e4
   }), S(se, {
     token: e,
-    payload: s
+    payload: r
   }, !0)
 }
 let m;
@@ -307,7 +307,7 @@ function x(a) {
   return m.__wbindgen_export_2.set(e, a), e
 }
 
-function P(a, e) {
+function A(a, e) {
   try {
     return a.apply(this, e)
   } catch (t) {
@@ -364,21 +364,21 @@ function ce(a, e, t) {
     return J().subarray(d, d + o.length).set(o), K = o.length, d
   }
   let n = a.length,
-    s = e(n, 1) >>> 0;
-  const r = J();
+    r = e(n, 1) >>> 0;
+  const s = J();
   let c = 0;
   for (; c < n; c++) {
     const o = a.charCodeAt(c);
     if (o > 127) break;
-    r[s + c] = o
+    s[r + c] = o
   }
   if (c !== n) {
-    c !== 0 && (a = a.slice(c)), s = t(s, n, n = c + a.length * 3, 1) >>> 0;
-    const o = J().subarray(s + c, s + n),
+    c !== 0 && (a = a.slice(c)), r = t(r, n, n = c + a.length * 3, 1) >>> 0;
+    const o = J().subarray(r + c, r + n),
       d = Se(a, o);
-    c += d.written, s = t(s, n, c, 1) >>> 0
+    c += d.written, r = t(r, n, c, 1) >>> 0
   }
-  return K = c, s
+  return K = c, r
 }
 
 function sa(a) {
@@ -401,9 +401,9 @@ function Ee(a) {
   let e, t;
   try {
     const n = ce(a, m.__wbindgen_malloc, m.__wbindgen_realloc),
-      s = K,
-      r = m.get_pawtected_endpoint_payload(n, s);
-    return e = r[0], t = r[1], I(r[0], r[1])
+      r = K,
+      s = m.get_pawtected_endpoint_payload(n, r);
+    return e = s[0], t = s[1], I(s[0], s[1])
   } finally {
     m.__wbindgen_free(e, t, 1)
   }
@@ -427,22 +427,22 @@ async function ve(a, e) {
   }
 }
 
-function Pe() {
+function Ae() {
   const a = {};
   return a.wbg = {}, a.wbg.__wbg_buffer_609cc3eee51ed158 = function(e) {
     return e.buffer
   }, a.wbg.__wbg_call_672a4d21634d4a24 = function() {
-    return P(function(e, t) {
+    return A(function(e, t) {
       return e.call(t)
     }, arguments)
   }, a.wbg.__wbg_call_7cccdd69e0791ae2 = function() {
-    return P(function(e, t, n) {
+    return A(function(e, t, n) {
       return e.call(t, n)
     }, arguments)
   }, a.wbg.__wbg_crypto_574e78ad8b13b65f = function(e) {
     return e.crypto
   }, a.wbg.__wbg_getRandomValues_b8f5dbd5f3995a9e = function() {
-    return P(function(e, t) {
+    return A(function(e, t) {
       e.getRandomValues(t)
     }, arguments)
   }, a.wbg.__wbg_msCrypto_a61aeb35a24c1329 = function(e) {
@@ -460,11 +460,11 @@ function Pe() {
   }, a.wbg.__wbg_process_dc0fbacc7c1c06f7 = function(e) {
     return e.process
   }, a.wbg.__wbg_randomFillSync_ac0988aba3254290 = function() {
-    return P(function(e, t) {
+    return A(function(e, t) {
       e.randomFillSync(t)
     }, arguments)
   }, a.wbg.__wbg_require_60cc747a6bc5215a = function() {
-    return P(function() {
+    return A(function() {
       return module.require
     }, arguments)
   }, a.wbg.__wbg_set_65595bdd868b3009 = function(e, t, n) {
@@ -507,7 +507,7 @@ function Pe() {
   }, a
 }
 
-function Ae(a, e) {
+function Pe(a, e) {
   return m = a.exports, xe.__wbindgen_wasm_module = e, O = null, m.__wbindgen_start(), m
 }
 async function xe(a) {
@@ -515,13 +515,13 @@ async function xe(a) {
   typeof a < "u" && (Object.getPrototypeOf(a) === Object.prototype ? {
     module_or_path: a
   } = a : console.warn("using deprecated parameters for the initialization function; pass a single object instead")), typeof a > "u" && (a = new URL("pawtect_wasm_bg.wasm", import.meta.url));
-  const e = Pe();
+  const e = Ae();
   (typeof a == "string" || typeof Request == "function" && a instanceof Request || typeof URL == "function" && a instanceof URL) && (a = fetch(a));
   const {
     instance: t,
     module: n
   } = await ve(await a, e);
-  return Ae(t, n)
+  return Pe(t, n)
 }
 const Oe = () => "Unexpected server error. Try again later.",
   Ie = () => "Erro inesperado do servidor. Tente novamente mais tarde.",
@@ -576,10 +576,10 @@ const Oe = () => "Unexpected server error. Try again later.",
   T = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? St() : Tt(),
   Et = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
   vt = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
-  Pt = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? Et() : vt(),
-  At = () => "You or someone in your network is making a lot of requests to the server. Try again later.",
+  At = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? Et() : vt(),
+  Pt = () => "You or someone in your network is making a lot of requests to the server. Try again later.",
   xt = () => "Você ou alguém na sua rede está fazendo muitas solicitações ao servidor. Tente novamente mais tarde.",
-  ee = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? At() : xt(),
+  ee = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? Pt() : xt(),
   Ot = () => "No internet access or the servers are offline. Try again later.",
   It = () => "Sem acesso à internet ou os servidores estão fora do ar. Tente novamente mais tarde.",
   qt = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? Ot() : It(),
@@ -631,9 +631,9 @@ const Oe = () => "Unexpected server error. Try again later.",
   Tn = () => "The name contains disallowed characters or words. Please choose a different name.",
   En = () => "O nome contém caracteres ou palavras não permitidas. Por favor, escolha outro nome.",
   vn = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? Tn() : En(),
-  Pn = () => "Invalid discord.",
-  An = () => "Discord inválido.",
-  xn = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? Pn() : An(),
+  An = () => "Invalid discord.",
+  Pn = () => "Discord inválido.",
+  xn = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? An() : Pn(),
   On = () => "The typed username does not match your current username.",
   In = () => "O nome de usuário digitado não corresponde ao seu nome de usuário atual.",
   qn = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? On() : In(),
@@ -681,21 +681,21 @@ class Ln {
   }
   set(e, t) {
     const n = Math.floor(e / 8),
-      s = e % 8;
+      r = e % 8;
     if (n >= this.bytes.length) {
       const c = new Uint8Array(n + 1),
         o = c.length - this.bytes.length;
       for (let d = 0; d < this.bytes.length; d++) c[d + o] = this.bytes[d];
       this.bytes = c
     }
-    const r = this.bytes.length - 1 - n;
-    t ? this.bytes[r] = this.bytes[r] | 1 << s : this.bytes[r] = this.bytes[r] & ~(1 << s)
+    const s = this.bytes.length - 1 - n;
+    t ? this.bytes[s] = this.bytes[s] | 1 << r : this.bytes[s] = this.bytes[s] & ~(1 << r)
   }
   get(e) {
     const t = Math.floor(e / 8),
       n = e % 8,
-      s = this.bytes.length;
-    return t > s ? !1 : (this.bytes[s - 1 - t] & 1 << n) !== 0
+      r = this.bytes.length;
+    return t > r ? !1 : (this.bytes[r - 1 - t] & 1 << n) !== 0
   }
 }
 
@@ -703,12 +703,12 @@ function ca(a) {
   return new Promise((e, t) => {
     const n = new FileReader;
     n.onload = () => {
-      const s = n.result;
-      if (!s || typeof s != "string") {
+      const r = n.result;
+      if (!r || typeof r != "string") {
         t(new Error("Could not read blob as data URL"));
         return
       }
-      e(s.substring(s.indexOf(",") + 1))
+      e(r.substring(r.indexOf(",") + 1))
     }, n.readAsDataURL(a)
   })
 }
@@ -719,19 +719,19 @@ class Dn {
     w(this, M, v());
     w(this, C, v(!0));
     w(this, L, v(Date.now()));
-    w(this, D, A(() => {
+    w(this, D, P(() => {
       if (!this.data) return;
       const e = this.data.charges;
       if (e.count > e.max) return e.count;
       const t = e.count + Math.max((ge.now - this.lastFetch) / e.cooldownMs, 0);
       return Math.min(e.max, t)
     }));
-    w(this, B, A(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
-    w(this, U, A(() => {
+    w(this, B, P(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
+    w(this, U, P(() => {
       var e;
       return new Ln(Cn(((e = this.data) == null ? void 0 : e.flagsBitmap) ?? "AA=="))
     }));
-    w(this, G, A(() => {
+    w(this, G, P(() => {
       var t;
       if (!((t = this.data) != null && t.timeoutUntil)) return;
       const e = new Date(this.data.timeoutUntil);
@@ -822,9 +822,9 @@ class l extends Error {
 function Bn(a, e) {
   const t = {};
   for (const n of a) {
-    const s = e(n);
-    let r = t[s];
-    r ? r.push(n) : t[s] = [n]
+    const r = e(n);
+    let s = t[r];
+    s ? s.push(n) : t[r] = [n]
   }
   return t
 }
@@ -832,8 +832,8 @@ function Bn(a, e) {
 function da(a, e) {
   const t = {};
   for (const n of a) {
-    const s = e(n);
-    t[s] = n
+    const r = e(n);
+    t[r] = n
   }
   return t
 }
@@ -1196,8 +1196,8 @@ class Hn {
   }
   async paint(e, t) {
     const n = Bn(e, o => `t=(${o.tile[0]},${o.tile[1]}),s=${o.season}`),
-      s = zn("2025-09_pawtect");
-    if (!s) throw new Error("paint request while pawtect experiment not found");
+      r = zn("2025-09_pawtect");
+    if (!r) throw new Error("paint request while pawtect experiment not found");
     const c = (await Promise.all(Object.values(n).map(o => {
       const [d, f] = o[0].tile, p = o[0].season, _ = {
         colors: o.map(W => W.colorIdx),
@@ -1208,8 +1208,8 @@ class Hn {
         method: "POST",
         body: $,
         headers: {
-          "x-pawtect-token": s.variant !== "disabled" ? Ee($) : "",
-          "x-pawtect-variant": s.variant
+          "x-pawtect-token": r.variant !== "disabled" ? Ee($) : "",
+          "x-pawtect-variant": r.variant
         },
         credentials: "include"
       })
@@ -1240,11 +1240,11 @@ class Hn {
   async getPixelInfo({
     season: e,
     tile: [t, n],
-    pixel: [s, r],
+    pixel: [r, s],
     isModerator: c = !1
   }) {
     const o = new URLSearchParams;
-    o.set("x", String(s)), o.set("y", String(r));
+    o.set("x", String(r)), o.set("y", String(s));
     const d = await this.request(`${c?"/moderator":""}/s${e}/pixel/${t}/${n}?${o.toString()}`, {
       credentials: c ? "include" : void 0
     });
@@ -1259,10 +1259,10 @@ class Hn {
   async getPixelAreaInfo({
     season: e,
     tile: [t, n],
-    p0: [s, r],
+    p0: [r, s],
     p1: [c, o]
   }) {
-    const d = await this.request(`/moderator/pixel-area/s${e}/${t}/${n}?x0=${s}&y0=${r}&x1=${c}&y1=${o}`, {
+    const d = await this.request(`/moderator/pixel-area/s${e}/${t}/${n}?x0=${r}&y0=${s}&x1=${c}&y1=${o}`, {
       credentials: "include"
     });
     if (d.status !== 200) {
@@ -1338,13 +1338,13 @@ class Hn {
     });
     if (t.status === 400) {
       const n = await t.json(),
-        s = (n == null ? void 0 : n.error) ?? "";
-      if (s === "invalid_name") throw new Error(vn());
-      if (s === "invalid_discord") throw new Error(xn());
-      if (typeof s == "string" && s.startsWith("name_change_cooldown:")) {
-        const r = parseInt(s.split(":")[1] ?? "0", 10);
+        r = (n == null ? void 0 : n.error) ?? "";
+      if (r === "invalid_name") throw new Error(vn());
+      if (r === "invalid_discord") throw new Error(xn());
+      if (typeof r == "string" && r.startsWith("name_change_cooldown:")) {
+        const s = parseInt(r.split(":")[1] ?? "0", 10);
         throw new Error(Mn({
-          days: r
+          days: s
         }))
       }
       throw new Error(n == null ? void 0 : n.error)
@@ -1560,11 +1560,11 @@ class Hn {
         credentials: "include"
       });
     if (n.status !== 200) throw new l(i(), n.status);
-    const s = await n.json();
-    return (Array.isArray(s) ? s : []).map(r => ({
-      id: Number(r.id),
-      name: String(r.name ?? ""),
-      pixelsPainted: Number((r == null ? void 0 : r.pixels_painted) ?? 0)
+    const r = await n.json();
+    return (Array.isArray(r) ? r : []).map(s => ({
+      id: Number(s.id),
+      name: String(s.name ?? ""),
+      pixelsPainted: Number((s == null ? void 0 : s.pixels_painted) ?? 0)
     }))
   }
   async searchAlliances(e) {
@@ -1578,7 +1578,7 @@ class Hn {
     if (t.status === 404) return null;
     if (t.status !== 200) throw new l(i(), t.status);
     const n = await t.json(),
-      s = Array.isArray(n == null ? void 0 : n.members) ? n.members : [];
+      r = Array.isArray(n == null ? void 0 : n.members) ? n.members : [];
     return {
       id: Number(n == null ? void 0 : n.id),
       name: String((n == null ? void 0 : n.name) ?? ""),
@@ -1589,15 +1589,15 @@ class Hn {
       hqLatitude: (n == null ? void 0 : n.hqLatitude) ?? (n == null ? void 0 : n.hq_latitude) ?? null,
       hqLongitude: (n == null ? void 0 : n.hqLongitude) ?? (n == null ? void 0 : n.hq_longitude) ?? null,
       pixelsPainted: Number((n == null ? void 0 : n.pixelsPainted) ?? (n == null ? void 0 : n.pixels_painted) ?? 0),
-      membersCount: Number((n == null ? void 0 : n.membersCount) ?? s.length),
-      members: s.map(r => ({
-        id: Number(r == null ? void 0 : r.id),
-        name: String((r == null ? void 0 : r.name) ?? `#${r==null?void 0:r.id}`),
-        picture: (r == null ? void 0 : r.picture) ?? null,
-        pixelsPainted: Number((r == null ? void 0 : r.pixelsPainted) ?? (r == null ? void 0 : r.pixels_painted) ?? 0),
-        lastPixelLatitude: (r == null ? void 0 : r.lastPixelLatitude) ?? null,
-        lastPixelLongitude: (r == null ? void 0 : r.lastPixelLongitude) ?? null,
-        role: (r == null ? void 0 : r.alliance_role) === "admin" || (r == null ? void 0 : r.role) === "admin" ? "admin" : "member"
+      membersCount: Number((n == null ? void 0 : n.membersCount) ?? r.length),
+      members: r.map(s => ({
+        id: Number(s == null ? void 0 : s.id),
+        name: String((s == null ? void 0 : s.name) ?? `#${s==null?void 0:s.id}`),
+        picture: (s == null ? void 0 : s.picture) ?? null,
+        pixelsPainted: Number((s == null ? void 0 : s.pixelsPainted) ?? (s == null ? void 0 : s.pixels_painted) ?? 0),
+        lastPixelLatitude: (s == null ? void 0 : s.lastPixelLatitude) ?? null,
+        lastPixelLongitude: (s == null ? void 0 : s.lastPixelLongitude) ?? null,
+        role: (s == null ? void 0 : s.alliance_role) === "admin" || (s == null ? void 0 : s.role) === "admin" ? "admin" : "member"
       }))
     }
   }
@@ -1606,17 +1606,17 @@ class Hn {
         page: String(t.page),
         pageSize: String(t.pageSize)
       }),
-      s = await this.request(`/admin/alliances/${e}/members?${n.toString()}`, {
+      r = await this.request(`/admin/alliances/${e}/members?${n.toString()}`, {
         method: "GET",
         credentials: "include"
       });
-    if (s.status === 404) return {
+    if (r.status === 404) return {
       members: [],
       total: 0
     };
-    if (s.status !== 200) throw new l(i(), s.status);
-    const r = await s.json(),
-      c = Array.isArray(r == null ? void 0 : r.members) ? r.members : [];
+    if (r.status !== 200) throw new l(i(), r.status);
+    const s = await r.json(),
+      c = Array.isArray(s == null ? void 0 : s.members) ? s.members : [];
     return {
       members: c.map(o => ({
         id: Number(o == null ? void 0 : o.id),
@@ -1627,7 +1627,7 @@ class Hn {
         lastPixelLongitude: (o == null ? void 0 : o.lastPixelLongitude) ?? null,
         role: (o == null ? void 0 : o.alliance_role) === "admin" || (o == null ? void 0 : o.role) === "admin" ? "admin" : "member"
       })),
-      total: Number((r == null ? void 0 : r.total) ?? c.length)
+      total: Number((s == null ? void 0 : s.total) ?? c.length)
     }
   }
   async renameAlliance(e, t) {
@@ -1639,8 +1639,8 @@ class Hn {
       })
     });
     if (n.status === 400) {
-      const s = await n.json().catch(() => ({}));
-      throw new Error((s == null ? void 0 : s.error) ?? i())
+      const r = await n.json().catch(() => ({}));
+      throw new Error((r == null ? void 0 : r.error) ?? i())
     } else if (n.status !== 200) throw new l(i(), n.status)
   }
   async changeAllianceLeader(e, t) {
@@ -1652,12 +1652,12 @@ class Hn {
       })
     });
     if (n.status === 400) {
-      const s = await n.json();
-      throw (s == null ? void 0 : s.error) === "user_not_in_alliance" ? new Error(Sn()) : new Error(i())
+      const r = await n.json();
+      throw (r == null ? void 0 : r.error) === "user_not_in_alliance" ? new Error(Sn()) : new Error(i())
     } else if (n.status !== 200) throw new l(i(), n.status)
   }
   async banAllAllianceMembers(e, t, n) {
-    const s = await this.request(`/admin/alliances/${e}/ban-all`, {
+    const r = await this.request(`/admin/alliances/${e}/ban-all`, {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
@@ -1665,17 +1665,17 @@ class Hn {
         notes: n
       })
     });
-    if (s.status !== 200) throw new l(i(), s.status)
+    if (r.status !== 200) throw new l(i(), r.status)
   }
   async setAllianceMemberRole(e, t, n) {
-    const s = await this.request(`/admin/alliances/${e}/members/${t}/role`, {
+    const r = await this.request(`/admin/alliances/${e}/members/${t}/role`, {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
         role: n
       })
     });
-    if (s.status !== 200) throw new l(i(), s.status)
+    if (r.status !== 200) throw new l(i(), r.status)
   }
   async removeAllianceMember(e, t) {
     const n = await this.request(`/admin/alliances/${e}/members/${t}/remove`, {
@@ -1745,8 +1745,8 @@ class Hn {
       credentials: "include"
     });
     if (t.status === 400) {
-      const s = await t.json();
-      throw new Error(s == null ? void 0 : s.error)
+      const r = await t.json();
+      throw new Error(r == null ? void 0 : r.error)
     } else {
       if (t.status === 451) throw new Error(dn());
       if (t.status !== 200) throw new Error(i())
@@ -1779,7 +1779,7 @@ class Hn {
     });
     if (e.status !== 200) throw new l(i(), e.status);
     const t = await e.json();
-    for (const n of t.tickets) n.reports.sort((s, r) => te[s.reason] - te[r.reason]);
+    for (const n of t.tickets) n.reports.sort((r, s) => te[r.reason] - te[s.reason]);
     return t
   }
   async countMyTicketsClosedToday() {
@@ -1809,34 +1809,34 @@ class Hn {
     if (e.status !== 200) throw new l(i(), e.status);
     return e.json()
   }
-  async setTicketStatus(e, t, n, s) {
-    const r = await this.request("/moderator/set-ticket-status", {
+  async setTicketStatus(e, t, n, r) {
+    const s = await this.request("/moderator/set-ticket-status", {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
         ticketId: e,
         status: t,
         selectedReportId: n,
-        assignedReason: s
+        assignedReason: r
       })
     });
-    if (r.status !== 200) throw new l(i(), r.status)
+    if (s.status !== 200) throw new l(i(), s.status)
   }
   async request(e, t) {
     let n;
-    const s = oe();
-    if (s) {
-      const r = new Headers(t == null ? void 0 : t.headers);
-      r.set("x-alien-override", s.token), t = {
+    const r = oe();
+    if (r) {
+      const s = new Headers(t == null ? void 0 : t.headers);
+      s.set("x-alien-override", r.token), t = {
         ...t ?? {},
-        headers: r
+        headers: s
       }
     }
     try {
       n = await fetch(`${this.url}${e}`, t), this.online = !0
-    } catch (r) {
-      throw console.error("Fetch error:", r), this.online = !1, new Error(Pt(), {
-        cause: r
+    } catch (s) {
+      throw console.error("Fetch error:", s), this.online = !1, new Error(At(), {
+        cause: s
       })
     }
     if (n.status === 429) throw new Error(ee());
@@ -1865,9 +1865,9 @@ class Hn {
       credentials: "include"
     });
     if (n.status !== 200) throw new l(i(), n.status);
-    return (await n.json()).items.map(r => ({
-      ...r,
-      suspensionRate: (r.ban + r.timeout) / r.total
+    return (await n.json()).items.map(s => ({
+      ...s,
+      suspensionRate: (s.ban + s.timeout) / s.total
     }))
   }
   async getClosedReportsByMod(e, t) {
@@ -1876,9 +1876,9 @@ class Hn {
       credentials: "include"
     });
     if (n.status !== 200) throw new l(i(), n.status);
-    return (await n.json()).items.map(r => ({
-      ...r,
-      suspensionRate: (r.ban + r.timeout) / r.total
+    return (await n.json()).items.map(s => ({
+      ...s,
+      suspensionRate: (s.ban + s.timeout) / s.total
     }))
   }
   async getUserInfoById(e) {
@@ -1933,7 +1933,7 @@ class Hn {
     if (t.status !== 200) throw new l(i(), t.status)
   }
   async getUserNotes(e) {
-    const t = await this.request(`/admin/users/notes?userId=${encodeURIComponent(e)}`, {
+    const t = await this.request(`/moderator/users/notes?userId=${encodeURIComponent(e)}`, {
       method: "GET",
       credentials: "include"
     });
@@ -1941,7 +1941,7 @@ class Hn {
     return t.json()
   }
   async addUserNote(e, t) {
-    const n = await this.request("/admin/users/notes", {
+    const n = await this.request("/moderator/users/notes", {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
@@ -1958,12 +1958,12 @@ class Hn {
     });
     if (t.status !== 200) throw new l(i(), t.status);
     const n = await t.json();
-    return (Array.isArray(n == null ? void 0 : n.purchases) ? n.purchases : []).map(r => ({
-      id: String(r.id ?? ""),
-      product_name: String(r.productName ?? r.product_name ?? ""),
-      price: Number(r.price ?? 0),
-      amount: Number(r.amount ?? 0),
-      createdAt: typeof r.createdAt == "string" ? r.createdAt : r.CreatedAt ? new Date(r.CreatedAt).toISOString() : ""
+    return (Array.isArray(n == null ? void 0 : n.purchases) ? n.purchases : []).map(s => ({
+      id: String(s.id ?? ""),
+      product_name: String(s.productName ?? s.product_name ?? ""),
+      price: Number(s.price ?? 0),
+      amount: Number(s.amount ?? 0),
+      createdAt: typeof s.createdAt == "string" ? s.createdAt : s.CreatedAt ? new Date(s.CreatedAt).toISOString() : ""
     }))
   }
   async postSetUserDroplets(e, t) {
@@ -1981,13 +1981,13 @@ class Hn {
     const {
       userId: t,
       kind: n,
-      page: s = 0,
-      pageSize: r = 20
+      page: r = 0,
+      pageSize: s = 20
     } = e, c = new URLSearchParams({
       userId: String(t),
       kind: n,
-      page: String(s),
-      pageSize: String(r)
+      page: String(r),
+      pageSize: String(s)
     }), o = await this.request(`/moderator/users/tickets?${c.toString()}`, {
       method: "GET",
       credentials: "include"
@@ -2010,7 +2010,7 @@ class Hn {
     return n == null ? void 0 : n.translation
   }
   mapTicketsToReportRows(e, t) {
-    var s, r, c, o, d;
+    var r, s, c, o, d;
     const n = [];
     for (const f of e) {
       const p = f.status ?? "open";
@@ -2049,8 +2049,8 @@ class Hn {
         ticketId: String(f.id),
         createdAt: f.createdAt,
         handledBy: f.status && f.status !== "open" ? {
-          id: ((s = f.handledBy) == null ? void 0 : s.id) ?? 0,
-          name: ((r = f.handledBy) == null ? void 0 : r.name) ?? "Moderator",
+          id: ((r = f.handledBy) == null ? void 0 : r.id) ?? 0,
+          name: ((s = f.handledBy) == null ? void 0 : s.name) ?? "Moderator",
           picture: ((c = f.handledBy) == null ? void 0 : c.picture) ?? null
         } : {
           id: 0,
@@ -2109,7 +2109,7 @@ class Hn {
     if (t.status !== 200) throw new l(i(), t.status)
   }
   async banUsers(e, t, n) {
-    const s = await this.request("/admin/users/ban", {
+    const r = await this.request("/admin/users/ban", {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
@@ -2118,10 +2118,10 @@ class Hn {
         notes: n
       })
     });
-    if (s.status !== 200) throw new l(i(), s.status)
+    if (r.status !== 200) throw new l(i(), r.status)
   }
   async timeoutUsers(e, t, n) {
-    const s = await this.request("/admin/users/timeout", {
+    const r = await this.request("/admin/users/timeout", {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
@@ -2130,10 +2130,10 @@ class Hn {
         notes: n
       })
     });
-    if (s.status !== 200) throw new l(i(), s.status)
+    if (r.status !== 200) throw new l(i(), r.status)
   }
   async incrementUsersDroplets(e, t, n) {
-    const s = await this.request("/admin/users/increment-droplet", {
+    const r = await this.request("/admin/users/increment-droplet", {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
@@ -2142,7 +2142,7 @@ class Hn {
         notes: n
       })
     });
-    if (s.status !== 200) throw new l(i(), s.status)
+    if (r.status !== 200) throw new l(i(), r.status)
   }
   async postUnbanUsers(e, t) {
     const n = await this.request("/admin/users/unban", {
@@ -2194,9 +2194,57 @@ class Hn {
     if (t.status !== 200) throw new l(i(), t.status);
     return t.json()
   }
+  async submitBanAppeal(e) {
+    const t = await this.request("/report/appeal", {
+      method: "POST",
+      credentials: "include",
+      body: JSON.stringify({
+        message: e
+      })
+    });
+    if (t.status !== 200) throw new l(i(), t.status);
+    return await t.json()
+  }
+  async getOpenAppeals() {
+    const e = await this.request("/moderator/report/appeal", {
+      method: "GET",
+      credentials: "include"
+    });
+    if (e.status !== 200) throw new l(i(), e.status);
+    return e.json()
+  }
+  async postResponseAppeal(e, t, n) {
+    const r = await this.request(`/moderator/report/appeal/${e}/handle`, {
+      method: "POST",
+      credentials: "include",
+      body: JSON.stringify({
+        approved: t,
+        appealType: n
+      })
+    });
+    if (r.status !== 200) throw new l(i(), r.status);
+    return await r.json()
+  }
+  async getUserLastAppeal() {
+    const e = await this.request("/me/last-appeal", {
+      method: "GET",
+      credentials: "include"
+    });
+    if (e.status !== 200) throw new l(i(), e.status);
+    const t = await e.json();
+    return (t == null ? void 0 : t.appealDate) ?? null
+  }
+  async assignAppeals() {
+    const e = await this.request("/moderator/report/appeal/assign", {
+      method: "POST",
+      credentials: "include"
+    });
+    if (e.status !== 200) throw new l(i(), e.status);
+    return await e.json()
+  }
 }
 R = new WeakMap;
 let ne = new Hn(ae);
 export {
-  ua as A, de as C, la as P, Vn as S, xe as _, ne as a, i as b, ia as c, Zt as d, jt as e, y as f, Ht as g, Kt as h, Gt as i, ea as j, ta as k, zn as l, ra as m, aa as n, fa as o, qn as p, ga as q, sa as r, oa as s, re as t, V as u, na as v, hn as w, da as x, fn as y, ca as z
+  ua as A, de as C, la as P, Vn as S, xe as _, ne as a, oa as b, i as c, Zt as d, jt as e, y as f, Ht as g, Kt as h, Gt as i, ea as j, ta as k, zn as l, ra as m, aa as n, fa as o, qn as p, ga as q, sa as r, ia as s, re as t, V as u, na as v, hn as w, da as x, fn as y, ca as z
 };

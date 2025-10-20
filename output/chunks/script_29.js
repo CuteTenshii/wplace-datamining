@@ -1,22 +1,22 @@
 import {
   g as s
-} from "./CKM5458v.js";
-import "./DzQdX4XG.js";
+} from "./BgLPZDo-.js";
+import "./BrPgsScq.js";
 import {
-  C as r,
+  H as r,
   b as i
-} from "./Bry4mTdq.js";
+} from "./CX26CINy.js";
 import {
-  d
-} from "./DoR7D8H0.js";
+  d as a
+} from "./CkEeWs_R.js";
 import {
-  r as l
-} from "./D0k0_Cqk.js";
+  r as d
+} from "./aRmAw-LJ.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "1464f4d4be7ab2460627d08ee13d2df2a352bcb2"
+      id: "55773afae0bc9cd8753b3f88c13d41d45dcd2072"
     }
   } catch {}
 })();
@@ -24,21 +24,21 @@ try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "0269563d-00cf-479b-b90e-761264314eb5", e._sentryDebugIdIdentifier = "sentry-dbid-0269563d-00cf-479b-b90e-761264314eb5")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "3a00f3b3-9c6a-4ebe-bf40-448f06359291", e._sentryDebugIdIdentifier = "sentry-dbid-3a00f3b3-9c6a-4ebe-bf40-448f06359291")
   })()
 } catch {}
-const a = () => "Pixels painted",
-  p = () => "Pixels pintados",
-  T = (e = {}, t = {}) => (t.locale ?? s()) === "en" ? a() : p(),
-  f = () => "Description",
+const l = () => "Pixels painted",
+  f = () => "Pixels pintados",
+  T = (e = {}, t = {}) => (t.locale ?? s()) === "en" ? l() : f(),
+  p = () => "Description",
   c = () => "Descrição",
-  m = (e = {}, t = {}) => (t.locale ?? s()) === "en" ? f() : c();
+  m = (e = {}, t = {}) => (t.locale ?? s()) === "en" ? p() : c();
 var u = r('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
 
 function v(e, t) {
-  let n = l(t, ["$$slots", "$$events", "$$legacy"]);
+  let n = d(t, ["$$slots", "$$events", "$$legacy"]);
   var o = u();
-  d(o, () => ({
+  a(o, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",

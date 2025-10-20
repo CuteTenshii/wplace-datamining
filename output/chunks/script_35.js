@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./CKM5458v.js";
+} from "./BgLPZDo-.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "1464f4d4be7ab2460627d08ee13d2df2a352bcb2"
+      id: "55773afae0bc9cd8753b3f88c13d41d45dcd2072"
     }
   } catch {}
 })();
@@ -13,7 +13,7 @@ try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "4ea1634f-e102-4adb-aa7c-68f40832fe15", e._sentryDebugIdIdentifier = "sentry-dbid-4ea1634f-e102-4adb-aa7c-68f40832fe15")
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "16d4e9cd-c894-4216-a4cd-b5d754b78a4c", e._sentryDebugIdIdentifier = "sentry-dbid-16d4e9cd-c894-4216-a4cd-b5d754b78a4c")
   })()
 } catch {}
 const l = () => "Save",
@@ -22,15 +22,15 @@ const l = () => "Save",
   s = () => "Members",
   a = () => "Membros",
   _ = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? s() : a(),
-  i = () => "Player",
-  c = () => "Jogador",
-  g = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? i() : c(),
-  u = () => "Last pixel",
-  f = () => "Último pixel",
-  m = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? u() : f(),
-  d = () => "Visit",
+  c = () => "Player",
+  i = () => "Jogador",
+  g = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? c() : i(),
+  d = () => "Last pixel",
+  u = () => "Último pixel",
+  m = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? d() : u(),
+  f = () => "Visit",
   p = () => "Visitar",
-  v = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? d() : p();
+  v = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? f() : p();
 export {
   m as l, _ as m, g as p, y as s, v
 };

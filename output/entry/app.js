@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["../nodes/0.2NRyTp4_.js", "../chunks/DzQdX4XG.js", "../chunks/CcAQaqVY.js", "../chunks/Bry4mTdq.js", "../chunks/MPIITExI.js", "../chunks/C6NC9fZQ.js", "../chunks/D6yE0IKc.js", "../chunks/DIiIwjpZ.js", "../chunks/CKM5458v.js", "../chunks/Cz48csc9.js", "../chunks/BBu2a8aw.js", "../chunks/D0k0_Cqk.js", "../chunks/B3EocrV_.js", "../chunks/DoR7D8H0.js", "../chunks/DW0exZPg.js", "../chunks/CA-re3-S.js", "../chunks/BlI8kS8t.js", "../assets/0.BKa7n0_Y.css", "../nodes/1.BvUuqVeT.js", "../chunks/B7S3Ha6Z.js", "../chunks/BXTMPf0L.js", "../chunks/BCqZl4XL.js", "../nodes/2.39WGfn7_.js", "../chunks/CODzW-85.js", "../chunks/BswGF4Un.js", "../chunks/DGWTO44h.js", "../nodes/3.Dp1i-hlI.js", "../nodes/4.BOET9h4X.js", "../chunks/BMu0bclS.js", "../chunks/DfEpmZ72.js", "../chunks/DSjqQi55.js", "../chunks/Dk1Jx9vg.js", "../chunks/I-WFIL7A.js", "../chunks/DpMf33pS.js", "../chunks/Mxid1uGM.js", "../chunks/BQkii754.js", "../chunks/CIAslAHI.js", "../chunks/DN5mwDrj.js", "../chunks/C2fupDL4.js", "../chunks/BS_jT7Yy.js", "../chunks/CJVTvjWm.js", "../assets/ProfileAvatarWithLevel.6dmPRSfx.css", "../chunks/nr5zMQ7-.js", "../chunks/C23c5INQ.js", "../assets/LoginForm.CxMG0irz.css", "../chunks/QTVQKC_D.js", "../chunks/DL4lv7co.js", "../chunks/CLHF1zWH.js", "../chunks/UMbeX_ms.js", "../chunks/CgKZRR17.js", "../assets/4.BtKF873c.css", "../nodes/5.B-qUdK2C.js", "../nodes/6.D_H4jlzY.js", "../nodes/7.CIPCyw7I.js", "../chunks/4GZBEb7z.js", "../chunks/BftA1g3B.js", "../chunks/qkb79maX.js", "../chunks/BJqLBvP9.js", "../nodes/8.CCMude6M.js", "../chunks/BkvAJ5FG.js", "../chunks/Cf6OO__L.js", "../chunks/B7XaCw53.js", "../nodes/9.1FUfGzGj.js", "../chunks/Cm-rNlC1.js", "../nodes/10.jntGIWjs.js", "../nodes/11.BskvUci4.js", "../chunks/DCqWfWkM.js", "../nodes/12.CllddaZT.js", "../nodes/13.BMVnLzYV.js", "../chunks/DTelmKQZ.js", "../chunks/ZmJ1ZtmD.js", "../nodes/14.pRvVC4Wk.js", "../chunks/DUV5vm4U.js", "../nodes/15.CWA2obIp.js", "../nodes/16.CKHyuFvj.js", "../nodes/17.CwZyVo89.js", "../nodes/18.D71Z2qux.js", "../nodes/19.Cm1OL-0k.js", "../nodes/20.BMKrkjBc.js", "../assets/20.BD1hRFPA.css", "../nodes/21.C1u1FA25.js", "../nodes/22.12vqmSJI.js", "../nodes/23.vTXXL6Ct.js", "../nodes/24.3qkW8zG4.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["../nodes/0.Kx6Tfsrk.js", "../chunks/BrPgsScq.js", "../chunks/BHP2dowl.js", "../chunks/CX26CINy.js", "../chunks/MFd1c0_0.js", "../chunks/CjomJAve.js", "../chunks/B5L9BB4-.js", "../chunks/Jnmo3vl4.js", "../chunks/BgLPZDo-.js", "../chunks/DovnsRl8.js", "../chunks/CH_4_ZWW.js", "../chunks/aRmAw-LJ.js", "../chunks/DKpwP9Yd.js", "../chunks/CkEeWs_R.js", "../chunks/Dt5L_Ig-.js", "../chunks/BYIYRCS4.js", "../chunks/DbaSogt8.js", "../assets/0.vN3Js4vB.css", "../nodes/1.BwuqcdVT.js", "../chunks/Kiynf-zE.js", "../chunks/ExXJwOiQ.js", "../chunks/BLX0ScPa.js", "../nodes/2.Cfh-fg0A.js", "../chunks/BRPMa-Q5.js", "../chunks/BAF2aXck.js", "../chunks/CuzIUwaf.js", "../chunks/D5qLyAEf.js", "../nodes/3.lnuq9bTb.js", "../nodes/4.CE9msdxG.js", "../chunks/DzoVcXo5.js", "../chunks/BjikWOWK.js", "../chunks/6WB4C1ig.js", "../chunks/Bvij4_IC.js", "../chunks/sumgxlgl.js", "../chunks/B9TLxEdv.js", "../chunks/D23SIyHF.js", "../chunks/CGfi3I2d.js", "../chunks/ry7KhKpz.js", "../chunks/CFWUMMaQ.js", "../chunks/BrtYRyxy.js", "../chunks/BPkOSpHC.js", "../chunks/CjWPL3cy.js", "../assets/ProfileAvatarWithLevel.6dmPRSfx.css", "../chunks/DdbbaEr8.js", "../chunks/CtMU8NxM.js", "../assets/LoginForm.CxMG0irz.css", "../chunks/DgpnwJqB.js", "../chunks/PI1Hn67q.js", "../chunks/BaQYpwqo.js", "../chunks/UoLwuU6R.js", "../chunks/D4qywGjq.js", "../chunks/iOtmrYT0.js", "../assets/4.BtKF873c.css", "../nodes/5.BBFj1Mu6.js", "../nodes/6.Ckg_sv5c.js", "../nodes/7.B2AHqbz8.js", "../chunks/Cg1Kbgi_.js", "../chunks/ChVM86iK.js", "../chunks/Dk1ag993.js", "../chunks/Bos1p2sV.js", "../nodes/8.BM8Li_K0.js", "../chunks/DV8cdr9C.js", "../chunks/imQujcqB.js", "../chunks/C5hLqnSZ.js", "../nodes/9.C-u3pHoR.js", "../chunks/CqkAh-pi.js", "../nodes/10.D7nw4D0o.js", "../nodes/11.HvFTIVmZ.js", "../chunks/BukPyyYI.js", "../nodes/12.CZRuHm8u.js", "../nodes/13.BdRiRwZo.js", "../chunks/hakTNT-v.js", "../chunks/RGSCJr5j.js", "../chunks/B30_JVIM.js", "../nodes/14.BCVFkOqp.js", "../nodes/15.BJJfKnmQ.js", "../chunks/-N4_KMPl.js", "../nodes/16.CYdoqOh5.js", "../nodes/17.CUNARoAm.js", "../nodes/18.B9oq4Ve9.js", "../nodes/19.DJK59v3L.js", "../nodes/20.Cucpo9Lp.js", "../nodes/21.BIKS3XyN.js", "../assets/21.BD1hRFPA.css", "../nodes/22.Co4qAy1s.js", "../nodes/23.wa7CVmfd.js", "../nodes/24.6F9SjnVU.js", "../nodes/25.taCPFikC.js"]))) => i.map(i => d[i]);
 var Jn = t => {
   throw TypeError(t)
 };
@@ -7,8 +7,8 @@ var $ = (t, e, n) => (Kn(t, e, "read from private field"), n ? n.call(t) : e.get
   Kt = (t, e, n) => e.has(t) ? Jn("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, n),
   Qt = (t, e, n, r) => (Kn(t, e, "write to private field"), r ? r.call(t, n) : e.set(t, n), n);
 import {
-  _ as A
-} from "../chunks/QTVQKC_D.js";
+  _ as w
+} from "../chunks/DgpnwJqB.js";
 import {
   D as E,
   d as g,
@@ -32,7 +32,7 @@ import {
   p as it,
   t as q,
   q as Ee,
-  r as D,
+  r as x,
   u as ua,
   v as Xe,
   w as Z,
@@ -86,7 +86,7 @@ import {
   ak as Ra,
   al as wa,
   am as Aa,
-  an as xn,
+  an as Dn,
   ao as Pe,
   ap as he,
   aq as Lt,
@@ -107,39 +107,39 @@ import {
   aF as ss,
   aG as ar,
   aH as La,
-  aI as Dn,
+  aI as xn,
   aJ as Ca,
   aK as Oa,
   aL as Y,
   aM as pe,
   aN as as,
   aO as Je,
-  aP as xa,
+  aP as Da,
   aQ as He,
   aR as ir,
   aS as or,
   aT as cr,
   aU as is,
-  aV as Da,
+  aV as xa,
   aW as Fa,
   aX as Ma,
   aY as Ha
-} from "../chunks/Cz48csc9.js";
+} from "../chunks/DovnsRl8.js";
 import {
   s as Ba
-} from "../chunks/BCqZl4XL.js";
+} from "../chunks/BLX0ScPa.js";
 import {
   z as vt,
-  aX as $a,
+  b4 as $a,
   g as j,
-  aG as Ua,
+  aQ as Ua,
   bo as qa,
-  a7 as ja,
+  ab as ja,
   p as Va,
-  F as Wa,
-  G as Ga,
+  J as Wa,
+  K as Ga,
   w as en,
-  aM as Ya,
+  aW as Ya,
   f as os,
   a as ae,
   s as za,
@@ -151,32 +151,32 @@ import {
   u as Re,
   B as Qa,
   t as Za
-} from "../chunks/Bry4mTdq.js";
+} from "../chunks/CX26CINy.js";
 import {
   h as ei,
   m as ti,
   u as ni,
   s as ri
-} from "../chunks/MPIITExI.js";
-import "../chunks/DzQdX4XG.js";
+} from "../chunks/MFd1c0_0.js";
+import "../chunks/BrPgsScq.js";
 import {
   o as si
-} from "../chunks/CcAQaqVY.js";
+} from "../chunks/BHP2dowl.js";
 import {
   p as Ye,
   i as ze
-} from "../chunks/D0k0_Cqk.js";
+} from "../chunks/aRmAw-LJ.js";
 import {
   c as we
-} from "../chunks/CA-re3-S.js";
+} from "../chunks/BYIYRCS4.js";
 import {
   b as Ae
-} from "../chunks/DW0exZPg.js";
+} from "../chunks/Dt5L_Ig-.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "1464f4d4be7ab2460627d08ee13d2df2a352bcb2"
+      id: "55773afae0bc9cd8753b3f88c13d41d45dcd2072"
     }
   } catch {}
 })();
@@ -184,7 +184,7 @@ try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "e41b16b9-2fa1-491f-b60c-7b95f3c3690e", t._sentryDebugIdIdentifier = "sentry-dbid-e41b16b9-2fa1-491f-b60c-7b95f3c3690e")
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "413fe6af-2980-48f8-95b4-3d56348bcb98", t._sentryDebugIdIdentifier = "sentry-dbid-413fe6af-2980-48f8-95b4-3d56348bcb98")
   })()
 } catch {}
 
@@ -670,7 +670,7 @@ const mr = 1e3;
 class jt {
   constructor(e = {}) {
     this._traceId = e.traceId || Pt(), this._spanId = e.spanId || Vr(), this._startTime = e.startTimestamp || q(), this._links = e.links, this._attributes = {}, this.setAttributes({
-      [D]: "manual",
+      [x]: "manual",
       [Ee]: e.op,
       ...e.attributes
     }), this._name = e.name, e.parentSpanId && (this._parentSpanId = e.parentSpanId), "sampled" in e && (this._sampled = e.sampled), e.endTimestamp && (this._endTime = e.endTimestamp), this._events = [], this._isStandaloneSpan = e.isStandalone, this._endTime && this._onSpanEnded()
@@ -723,7 +723,7 @@ class jt {
       status: la(this._status),
       timestamp: this._endTime,
       trace_id: this._traceId,
-      origin: this._attributes[D],
+      origin: this._attributes[x],
       profile_id: this._attributes[Cn],
       exclusive_time: this._attributes[Ue],
       measurements: pr(this._events),
@@ -886,7 +886,7 @@ function Li(t, e) {
   }))
 }
 
-function xe(t) {
+function De(t) {
   const e = Mn();
   if (e.startInactiveSpan) return e.startInactiveSpan(t);
   const n = ps(t),
@@ -1055,8 +1055,8 @@ const It = {
     finalTimeout: 3e4,
     childSpanTimeout: 15e3
   },
-  xi = "heartbeatFailed",
-  Di = "idleTimeout",
+  Di = "heartbeatFailed",
+  xi = "idleTimeout",
   Fi = "finalTimeout",
   Mi = "externalFinish";
 
@@ -1098,24 +1098,24 @@ function gs(t, e = {}) {
     }
   });
 
-  function x() {
+  function D() {
     s && (clearTimeout(s), s = void 0)
   }
 
   function I(S) {
-    x(), s = setTimeout(() => {
-      !r && n.size === 0 && i && (a = Di, h.end(S))
+    D(), s = setTimeout(() => {
+      !r && n.size === 0 && i && (a = xi, h.end(S))
     }, c)
   }
 
   function M(S) {
     s = setTimeout(() => {
-      !r && i && (a = xi, h.end(S))
+      !r && i && (a = Di, h.end(S))
     }, l)
   }
 
   function B(S) {
-    x(), n.set(S, !0);
+    D(), n.set(S, !0);
     const b = q();
     M(b + l / 1e3)
   }
@@ -1151,8 +1151,8 @@ function gs(t, e = {}) {
         v = (u + c) / 1e3,
         k = X - y <= v;
       if (E) {
-        const w = JSON.stringify(L, void 0, 2);
-        P ? k || g.log("[Tracing] Discarding span since it finished after idle span final timeout", w) : g.log("[Tracing] Discarding span since it happened after idle span was finished", w)
+        const A = JSON.stringify(L, void 0, 2);
+        P ? k || g.log("[Tracing] Discarding span since it finished after idle span final timeout", A) : g.log("[Tracing] Discarding span since it happened after idle span was finished", A)
       }(!k || !P) && (ga(h, L), ce++)
     }), ce > 0 && h.setAttribute("sentry.idle_span_discarded_spans", ce)
   }
@@ -1172,7 +1172,7 @@ function gs(t, e = {}) {
 }
 
 function Hi(t) {
-  const e = xe(t);
+  const e = De(t);
   return Bt(C(), e), E && g.log("[Tracing] Started span is an idle span"), e
 }
 const Bi = "7";
@@ -1573,7 +1573,7 @@ class Ji {
       const h = Qi(this, a, f, n);
       return Ki(h, l)
     }).then(f => {
-      var x;
+      var D;
       if (f === null) {
         if (this.recordDroppedEvent("before_send", p), o) {
           const M = 1 + (e.spans || []).length;
@@ -1583,7 +1583,7 @@ class Ji {
       }
       const m = r.getSession() || s.getSession();
       if (c && m && this._updateSessionFromEvent(m, f), o) {
-        const I = ((x = f.sdkProcessingMetadata) == null ? void 0 : x.spanCountBeforeProcessing) || 0,
+        const I = ((D = f.sdkProcessingMetadata) == null ? void 0 : D.spanCountBeforeProcessing) || 0,
           M = f.spans ? f.spans.length : 0,
           B = I - M;
         B > 0 && this.recordDroppedEvent("before_send", "span", B)
@@ -1996,7 +1996,7 @@ const To = "FunctionToString",
       Ir = Function.prototype.toString;
       try {
         Function.prototype.toString = function(...t) {
-          const e = xn(this),
+          const e = Dn(this),
             n = Rr.has(N()) && e !== void 0 ? e : this;
           return Ir.apply(n, t)
         }
@@ -2108,7 +2108,7 @@ function Oo(t) {
   return (n = (e = t.exception) == null ? void 0 : e.values) != null && n.length ? !t.message && !t.exception.values.some(r => r.stacktrace || r.type && r.type !== "Error" || r.value) : !1
 }
 
-function xo(t, e, n, r, s, a) {
+function Do(t, e, n, r, s, a) {
   var o;
   if (!((o = s.exception) != null && o.values) || !a || !Lt(a.originalException, Error)) return;
   const i = s.exception.values.length > 0 ? s.exception.values[s.exception.values.length - 1] : void 0;
@@ -2160,7 +2160,7 @@ function Pr(t, e, n, r) {
   }
 }
 
-function Do(t) {
+function xo(t) {
   const e = "console";
   ye(e, t), ve(e, Fo)
 }
@@ -2265,7 +2265,7 @@ function Vo(t, e, n, r, s) {
     propagateTraceparent: u = !1
   } = typeof s == "object" ? s : {
     spanOrigin: s
-  }, l = !!G(), d = o && l ? xe(zo(i, a, c)) : new Se;
+  }, l = !!G(), d = o && l ? De(zo(i, a, c)) : new Se;
   if (t.fetchData.__span = d.spanContext().spanId, r[d.spanContext().spanId] = d, n(t.fetchData.url)) {
     const f = t.args[0],
       m = t.args[1] || {},
@@ -2363,7 +2363,7 @@ function Xo(t, e, n, r) {
     url: t,
     type: "fetch",
     "http.method": n,
-    [D]: r,
+    [x]: r,
     [Ee]: "http.client"
   };
   return e && (bs(e) || (s["http.url"] = e.href, s["server.address"] = e.host), e.search && (s["http.query"] = e.search), e.hash && (s["http.fragment"] = e.hash)), s
@@ -2557,7 +2557,7 @@ function Be(t, e = {}) {
   try {
     const s = t.__sentry_wrapped__;
     if (s) return typeof s == "function" ? s : t;
-    if (xn(t)) return t
+    if (Dn(t)) return t
   } catch {
     return t
   }
@@ -2637,7 +2637,7 @@ function ic(t, e, n, r) {
   const c = {
     exception: {
       values: [{
-        type: Dn(e) ? e.constructor.name : r ? "UnhandledRejection" : "Error",
+        type: xn(e) ? e.constructor.name : r ? "UnhandledRejection" : "Error",
         value: mc(e, {
           isUnhandledRejection: r
         })
@@ -2723,7 +2723,7 @@ function qn(t, e, n, r, s) {
       "DOMException.code": `${i.code}`
     }), a
   }
-  return ns(e) ? an(t, e) : gn(e) || Dn(e) ? (a = ic(t, e, n, s), tt(a, {
+  return ns(e) ? an(t, e) : gn(e) || xn(e) ? (a = ic(t, e, n, s), tt(a, {
     synthetic: !0
   }), a) : (a = In(t, e, n, r), hn(a, `${e}`), tt(a, {
     synthetic: !0
@@ -2763,7 +2763,7 @@ function mc(t, {
 }) {
   const n = Oa(t),
     r = e ? "promise rejection" : "exception";
-  return ss(t) ? `Event \`ErrorEvent\` captured as ${r} with message \`${t.message}\`` : Dn(t) ? `Event \`${gc(t)}\` (type=${t.type}) captured as ${r}` : `Object captured as ${r} with keys: ${n}`
+  return ss(t) ? `Event \`ErrorEvent\` captured as ${r} with message \`${t.message}\`` : xn(t) ? `Event \`${gc(t)}\` (type=${t.type}) captured as ${r}` : `Object captured as ${r} with keys: ${n}`
 }
 
 function gc(t) {
@@ -2908,14 +2908,14 @@ const vc = () => {
     var t, e;
     return ((t = _.document) == null ? void 0 : t.visibilityState) === "hidden" && !((e = _.document) != null && e.prerendering) ? 0 : 1 / 0
   },
-  xt = t => {
+  Dt = t => {
     _.document.visibilityState === "hidden" && Ke > -1 && (Ke = t.type === "visibilitychange" ? t.timeStamp : 0, Ic())
   },
   bc = () => {
-    addEventListener("visibilitychange", xt, !0), addEventListener("prerenderingchange", xt, !0)
+    addEventListener("visibilitychange", Dt, !0), addEventListener("prerenderingchange", Dt, !0)
   },
   Ic = () => {
-    removeEventListener("visibilitychange", xt, !0), removeEventListener("prerenderingchange", xt, !0)
+    removeEventListener("visibilitychange", Dt, !0), removeEventListener("prerenderingchange", Dt, !0)
   },
   Wn = () => {
     var t;
@@ -2972,7 +2972,7 @@ const kc = t => {
   })
 };
 let Rn;
-const xs = () => Rn ? Os : performance.interactionCount || 0,
+const Ds = () => Rn ? Os : performance.interactionCount || 0,
   Nc = () => {
     "interactionCount" in performance || Rn || (Rn = Ve("event", kc, {
       type: "event",
@@ -2981,11 +2981,11 @@ const xs = () => Rn ? Os : performance.interactionCount || 0,
     }))
   },
   un = 10;
-let Ds = 0;
-const Lc = () => xs() - Ds;
-class Dt {
+let xs = 0;
+const Lc = () => Ds() - xs;
+class xt {
   constructor() {
-    Dt.prototype.__init.call(this), Dt.prototype.__init2.call(this)
+    xt.prototype.__init.call(this), xt.prototype.__init2.call(this)
   }
   __init() {
     this._longestInteractionList = []
@@ -2994,7 +2994,7 @@ class Dt {
     this._longestInteractionMap = new Map
   }
   _resetInteractions() {
-    Ds = xs(), this._longestInteractionList.length = 0, this._longestInteractionMap.clear()
+    xs = Ds(), this._longestInteractionList.length = 0, this._longestInteractionMap.clear()
   }
   _estimateP98LongestInteraction() {
     const e = Math.min(this._longestInteractionList.length - 1, Math.floor(Lc() / 50));
@@ -3031,12 +3031,12 @@ const Gn = t => {
   },
   Cc = [200, 500],
   Oc = 40,
-  xc = (t, e = {}) => {
+  Dc = (t, e = {}) => {
     globalThis.PerformanceEventTiming && "interactionId" in PerformanceEventTiming.prototype && Wt(() => {
       Nc();
       const n = dt("INP");
       let r;
-      const s = jn(e, Dt),
+      const s = jn(e, xt),
         a = o => {
           Fs(() => {
             for (const u of o) s._processEntry(u);
@@ -3055,7 +3055,7 @@ const Gn = t => {
       }))
     })
   };
-class Dc {
+class xc {
   _processEntry(e) {
     var n;
     (n = this._onBeforeProcessingEntry) == null || n.call(this, e)
@@ -3067,7 +3067,7 @@ const Fc = [2500, 4e3],
       const n = Wn(),
         r = dt("LCP");
       let s;
-      const a = jn(e, Dc),
+      const a = jn(e, xc),
         i = c => {
           e.reportAllChanges || (c = c.slice(-1));
           for (const u of c) a._processEntry(u), u.startTime < n.firstHiddenTime && (r.value = Math.max(u.startTime - je(), 0), r.entries = [u], s())
@@ -3164,7 +3164,7 @@ function Vc() {
 }
 
 function Wc() {
-  return xc(t => {
+  return Dc(t => {
     lt("inp", {
       metric: t
     }), $s = t
@@ -3215,7 +3215,7 @@ function Te(t, e, n, {
 }) {
   const s = R(t).start_timestamp;
   return s && s > e && typeof t.updateStartTime == "function" && t.updateStartTime(e), Fn(t, () => {
-    const a = xe({
+    const a = De({
       startTime: e,
       ...r
     });
@@ -3224,7 +3224,7 @@ function Te(t, e, n, {
 }
 
 function Yn(t) {
-  var x;
+  var D;
   const e = N();
   if (!e) return;
   const {
@@ -3248,11 +3248,11 @@ function Yn(t) {
     profile_id: m || void 0,
     replay_id: l || void 0,
     transaction: r,
-    "user_agent.original": (x = _.navigator) == null ? void 0 : x.userAgent,
+    "user_agent.original": (D = _.navigator) == null ? void 0 : D.userAgent,
     "client.address": c ? "{{auto}}" : void 0,
     ...s
   };
-  return xe({
+  return De({
     name: n,
     attributes: h,
     startTime: a,
@@ -3342,7 +3342,7 @@ function Xc(t, e, n, r) {
     a = C().getScopeData().transactionName,
     i = e ? pe((u = e.sources[0]) == null ? void 0 : u.node) : "Layout shift",
     o = {
-      [D]: "auto.http.browser.cls",
+      [x]: "auto.http.browser.cls",
       [Ee]: "ui.webvital.cls",
       [Ue]: (e == null ? void 0 : e.duration) || 0,
       "sentry.pageload.span_id": n,
@@ -3384,7 +3384,7 @@ function Kc(t, e, n, r) {
     a = C().getScopeData().transactionName,
     i = e ? pe(e.element) : "Largest contentful paint",
     o = {
-      [D]: "auto.http.browser.lcp",
+      [x]: "auto.http.browser.lcp",
       [Ee]: "ui.webvital.lcp",
       [Ue]: 0,
       "sentry.pageload.span_id": n,
@@ -3405,7 +3405,7 @@ function Kc(t, e, n, r) {
 const Qc = 2147483647;
 let Cr = 0,
   re = {},
-  U, De;
+  U, xe;
 
 function Zc({
   recordClsStandaloneSpans: t,
@@ -3442,7 +3442,7 @@ function eu() {
         name: "Main UI thread blocked",
         op: "ui.long-task",
         attributes: {
-          [D]: "auto.ui.browser.metrics"
+          [x]: "auto.ui.browser.metrics"
         }
       })
     }
@@ -3463,7 +3463,7 @@ function tu() {
         if (i === "navigation" && a && s < a) continue;
         const o = O(r.duration),
           c = {
-            [D]: "auto.ui.browser.metrics"
+            [x]: "auto.ui.browser.metrics"
           },
           u = r.scripts[0],
           {
@@ -3500,7 +3500,7 @@ function nu() {
               op: `ui.interaction.${n.name}`,
               startTime: r,
               attributes: {
-                [D]: "auto.ui.browser.metrics"
+                [x]: "auto.ui.browser.metrics"
               }
             },
             i = as(n.target);
@@ -3518,7 +3518,7 @@ function ru() {
     e && (re.cls = {
       value: t.value,
       unit: ""
-    }, De = e)
+    }, xe = e)
   }, !0)
 }
 
@@ -3585,7 +3585,7 @@ function iu(t, e) {
     }
   }), Cr = Math.max(a.length - 1, 0), pu(t), i === "pageload" && (gu(re), e.recordClsOnPageloadSpan || delete re.cls, e.recordLcpOnPageloadSpan || delete re.lcp, Object.entries(re).forEach(([c, u]) => {
     Ri(c, u.value, u.unit)
-  }), t.setAttribute("performance.timeOrigin", s), t.setAttribute("performance.activationStart", je()), mu(t, e)), U = void 0, De = void 0, re = {}
+  }), t.setAttribute("performance.timeOrigin", s), t.setAttribute("performance.activationStart", je()), mu(t, e)), U = void 0, xe = void 0, re = {}
 }
 
 function ou(t, e, n, r, s, a) {
@@ -3596,7 +3596,7 @@ function ou(t, e, n, r, s, a) {
     u = s + n,
     l = u + r,
     d = {
-      [D]: "auto.resource.browser.metrics"
+      [x]: "auto.resource.browser.metrics"
     };
   c !== u && (d["sentry.browser.measure_happened_before_request"] = !0, d["sentry.browser.measure_start_time"] = c), cu(d, e), c <= l && Te(t, c, l, {
     name: e.name,
@@ -3641,7 +3641,7 @@ function ht(t, e, n, r, s = n) {
     op: `browser.${s}`,
     name: e.name,
     attributes: {
-      [D]: "auto.ui.browser.metrics",
+      [x]: "auto.ui.browser.metrics",
       ...n === "redirect" && e.redirectCount != null ? {
         "http.redirect_count": e.redirectCount
       } : {}
@@ -3661,13 +3661,13 @@ function lu(t, e, n) {
     op: "browser.request",
     name: e.name,
     attributes: {
-      [D]: "auto.ui.browser.metrics"
+      [x]: "auto.ui.browser.metrics"
     }
   }), Te(t, a, s, {
     op: "browser.response",
     name: e.name,
     attributes: {
-      [D]: "auto.ui.browser.metrics"
+      [x]: "auto.ui.browser.metrics"
     }
   }))
 }
@@ -3678,7 +3678,7 @@ function fu(t, e, n, r, s, a, i) {
   if (i != null && i.includes(o)) return;
   const c = ke(n),
     u = {
-      [D]: "auto.resource.browser.metrics"
+      [x]: "auto.resource.browser.metrics"
     };
   ln(u, e, "transferSize", "http.response_transfer_size"), ln(u, e, "encodedBodySize", "http.response_content_length"), ln(u, e, "decodedBodySize", "http.decoded_response_content_length");
   const l = e.deliveryType;
@@ -3711,7 +3711,7 @@ function pu(t) {
 }
 
 function mu(t, e) {
-  U && e.recordLcpOnPageloadSpan && (U.element && t.setAttribute("lcp.element", pe(U.element)), U.id && t.setAttribute("lcp.id", U.id), U.url && t.setAttribute("lcp.url", U.url.trim().slice(0, 200)), U.loadTime != null && t.setAttribute("lcp.loadTime", U.loadTime), U.renderTime != null && t.setAttribute("lcp.renderTime", U.renderTime), t.setAttribute("lcp.size", U.size)), De != null && De.sources && e.recordClsOnPageloadSpan && De.sources.forEach((n, r) => t.setAttribute(`cls.source.${r+1}`, pe(n.node)))
+  U && e.recordLcpOnPageloadSpan && (U.element && t.setAttribute("lcp.element", pe(U.element)), U.id && t.setAttribute("lcp.id", U.id), U.url && t.setAttribute("lcp.url", U.url.trim().slice(0, 200)), U.loadTime != null && t.setAttribute("lcp.loadTime", U.loadTime), U.renderTime != null && t.setAttribute("lcp.renderTime", U.renderTime), t.setAttribute("lcp.size", U.size)), xe != null && xe.sources && e.recordClsOnPageloadSpan && xe.sources.forEach((n, r) => t.setAttribute(`cls.source.${r+1}`, pe(n.node)))
 }
 
 function ln(t, e, n, r) {
@@ -3751,7 +3751,7 @@ const _u = ({
         [u, l] = c ? [O(c), "load-time"] : o ? [O(o), "render-time"] : [q(), "entry-emission"],
         d = i === "image-paint" ? O(Math.max(0, (o ?? 0) - (c ?? 0))) : 0,
         p = {
-          [D]: "auto.ui.browser.elementtiming",
+          [x]: "auto.ui.browser.elementtiming",
           [Ee]: "ui.elementtiming",
           [Z]: "component",
           "sentry.span_start_time_source": l,
@@ -3785,7 +3785,7 @@ function Su(t) {
 function Tu() {
   if (!_.document) return;
   const t = ee.bind(null, "dom"),
-    e = xr(t, !0);
+    e = Dr(t, !0);
   _.document.addEventListener("click", e, !1), _.document.addEventListener("keypress", e, !1), ["EventTarget", "Node"].forEach(n => {
     var a, i;
     const s = (a = _[n]) == null ? void 0 : a.prototype;
@@ -3797,7 +3797,7 @@ function Tu() {
               refCount: 0
             };
           if (!p.handler) {
-            const f = xr(t);
+            const f = Dr(t);
             p.handler = f, o.call(this, c, f, l)
           }
           p.refCount++
@@ -3829,7 +3829,7 @@ function vu(t, e) {
   return t !== "keypress" ? !1 : e != null && e.tagName ? !(e.tagName === "INPUT" || e.tagName === "TEXTAREA" || e.isContentEditable) : !0
 }
 
-function xr(t, e = !1) {
+function Dr(t, e = !1) {
   return n => {
     if (!n || n._sentryCaptured) return;
     const r = bu(n);
@@ -3915,7 +3915,7 @@ function wu(t) {
   return n && (wt[t] = n.bind(_))
 }
 
-function Dr(t) {
+function xr(t) {
   wt[t] = void 0
 }
 const Fe = "__sentry_xhr_v3__";
@@ -4041,7 +4041,7 @@ const Cu = ({
   const {
     interactionId: r
   } = n, s = Fr[n.name], a = O(Y() + n.startTime), i = G(), o = i ? W(i) : void 0, u = (r != null ? At.get(r) : void 0) || o, l = u ? R(u).description : C().getScopeData().transactionName, d = pe(n.target), p = {
-    [D]: "auto.http.browser.inp",
+    [x]: "auto.http.browser.inp",
     [Ee]: `ui.interaction.${s}`,
     [Ue]: n.duration
   }, f = Yn({
@@ -4077,7 +4077,7 @@ function Ou() {
   $e("event", t), $e("first-input", t)
 }
 
-function xu(t, e = wu("fetch")) {
+function Du(t, e = wu("fetch")) {
   let n = 0,
     r = 0;
 
@@ -4092,7 +4092,7 @@ function xu(t, e = wu("fetch")) {
       keepalive: n <= 6e4 && r < 15,
       ...t.fetchOptions
     };
-    if (!e) return Dr("fetch"), Nt("No fetch implementation available");
+    if (!e) return xr("fetch"), Nt("No fetch implementation available");
     try {
       return e(t.url, o).then(c => (n -= i, r--, {
         statusCode: c.status,
@@ -4102,12 +4102,12 @@ function xu(t, e = wu("fetch")) {
         }
       }))
     } catch (c) {
-      return Dr("fetch"), n -= i, r--, Nt(c)
+      return xr("fetch"), n -= i, r--, Nt(c)
     }
   }
   return fo(t, s)
 }
-const Du = 30,
+const xu = 30,
   Fu = 50;
 
 function kn(t, e, n, r) {
@@ -4143,7 +4143,7 @@ const Mu = /^\s*at (\S+?)(?::(\d+))(?::(\d+))\s*$/i,
       return kn(i, a, r[3] ? +r[3] : void 0, r[4] ? +r[4] : void 0)
     }
   },
-  qu = [Du, Uu],
+  qu = [xu, Uu],
   ju = /^\s*(.*?)(?:\((.*?)\))?(?:^|@)?((?:[-a-z]+)?:\/.*?|\[native code\]|[^@]*(?:bundle|\d+\.js)|\/[\w\-. /=]+)(?::(\d+))?(?::(\d+))?\s*$/i,
   Vu = /(\S+) line (\d+)(?: > eval line \d+)* > eval/i,
   Wu = t => {
@@ -4160,7 +4160,7 @@ const Mu = /^\s*at (\S+?)(?::(\d+))(?::(\d+))\s*$/i,
   },
   Gu = [Fu, Wu],
   Yu = [qu, Gu],
-  zu = xa(...Yu),
+  zu = Da(...Yu),
   Xs = (t, e) => {
     const n = t.indexOf("safari-extension") !== -1,
       r = t.indexOf("safari-web-extension") !== -1;
@@ -4182,7 +4182,7 @@ const Mu = /^\s*at (\S+?)(?::(\d+))(?::(\d+))\s*$/i,
     return {
       name: Xu,
       setup(n) {
-        e.console && Do(ed(n)), e.dom && Su(Zu(n, e.dom)), e.xhr && zs(td(n)), e.fetch && ks(nd(n)), e.history && zn(rd(n)), e.sentry && n.on("beforeSendEvent", Qu(n))
+        e.console && xo(ed(n)), e.dom && Su(Zu(n, e.dom)), e.xhr && zs(td(n)), e.fetch && ks(nd(n)), e.history && zn(rd(n)), e.sentry && n.on("beforeSendEvent", Qu(n))
       }
     }
   }),
@@ -4417,7 +4417,7 @@ function dd(t) {
               type: `auto.browser.browserapierrors.xhr.${s}`
             }
           },
-          o = xn(a);
+          o = Dn(a);
         return o && (i.mechanism.data.handler = _e(o)), Be(a, i)
       })
     }), t.apply(this, e)
@@ -4639,7 +4639,7 @@ const Id = () => ({
       name: Ad,
       preprocessEvent(r, s, a) {
         const i = a.getOptions();
-        xo($n, i.stackParser, n, e, r, s)
+        Do($n, i.stackParser, n, e, r, s)
       }
     }
   }),
@@ -4672,12 +4672,12 @@ function Cd(t = {}) {
     n = {
       ...t,
       enabled: e ? !1 : t.enabled,
-      stackParser: Da(t.stackParser || zu),
+      stackParser: xa(t.stackParser || zu),
       integrations: Wi({
         integrations: t.integrations,
         defaultIntegrations: t.defaultIntegrations == null ? Nn() : t.defaultIntegrations
       }),
-      transport: t.transport || xu
+      transport: t.transport || Du
     };
   return no(Ec, n)
 }
@@ -4716,7 +4716,7 @@ const Br = new WeakMap,
     trackFetchStreamPerformance: !1
   };
 
-function xd(t, e) {
+function Dd(t, e) {
   const {
     traceFetch: n,
     traceXHR: r,
@@ -4745,10 +4745,10 @@ function xd(t, e) {
     });
     if (f.response && f.fetchData.__span && Br.set(f.response, f.fetchData.__span), m) {
       const h = Qs(f.fetchData.url),
-        x = h ? ke(h).host : void 0;
+        D = h ? ke(h).host : void 0;
       m.setAttributes({
         "http.url": h,
-        "server.address": x
+        "server.address": D
       }), i && $r(m), c == null || c(m, {
         headers: f.headers
       })
@@ -4758,18 +4758,18 @@ function xd(t, e) {
     const m = Md(f, u, l, d, p);
     if (m) {
       i && $r(m);
-      let x;
+      let D;
       try {
-        x = new Headers((h = f.xhr.__sentry_xhr_v3__) == null ? void 0 : h.request_headers)
+        D = new Headers((h = f.xhr.__sentry_xhr_v3__) == null ? void 0 : h.request_headers)
       } catch {}
       c == null || c(m, {
-        headers: x
+        headers: D
       })
     }
   })
 }
 
-function Dd(t) {
+function xd(t) {
   return t.entryType === "resource" && "initiatorType" in t && typeof t.nextHopProtocol == "string" && (t.initiatorType === "fetch" || t.initiatorType === "xmlhttprequest")
 }
 
@@ -4782,7 +4782,7 @@ function $r(t) {
     entries: r
   }) => {
     r.forEach(s => {
-      Dd(s) && s.name.endsWith(e) && (Od(s).forEach(i => t.setAttribute(...i)), setTimeout(n))
+      xd(s) && s.name.endsWith(e) && (Od(s).forEach(i => t.setAttribute(...i)), setTimeout(n))
     })
   })
 }
@@ -4813,17 +4813,17 @@ function Md(t, e, n, r, s) {
     method: c
   } = i, u = Le() && e(o);
   if (t.endTimestamp && u) {
-    const x = a.__sentry_xhr_span_id__;
-    if (!x) return;
-    const I = r[x];
-    I && i.status_code !== void 0 && (es(I, i.status_code), I.end(), delete r[x]);
+    const D = a.__sentry_xhr_span_id__;
+    if (!D) return;
+    const I = r[D];
+    I && i.status_code !== void 0 && (es(I, i.status_code), I.end(), delete r[D]);
     return
   }
   const l = Qs(o),
     d = ke(l || o),
     p = go(o),
     f = !!G(),
-    m = u && f ? xe({
+    m = u && f ? De({
       name: `${c} ${p}`,
       attributes: {
         url: o,
@@ -4831,7 +4831,7 @@ function Md(t, e, n, r, s) {
         "http.method": c,
         "http.url": l,
         "server.address": d == null ? void 0 : d.host,
-        [D]: "auto.http.browser",
+        [x]: "auto.http.browser",
         [Ee]: "http.client",
         ...(d == null ? void 0 : d.search) && {
           "http.query": d == null ? void 0 : d.search
@@ -5026,7 +5026,7 @@ const zd = "BrowserTracing",
         childSpanTimeout: f,
         markBackgroundSpan: m,
         traceFetch: h,
-        traceXHR: x,
+        traceXHR: D,
         trackFetchStreamPerformance: I,
         shouldCreateSpanForRequest: M,
         enableHTTPTimings: B,
@@ -5046,12 +5046,12 @@ const zd = "BrowserTracing",
 
     function X(y, P, v = !0) {
       const k = P.op === "pageload",
-        w = P.name,
+        A = P.name,
         J = l ? l(P) : P,
         se = J.attributes || {};
-      if (w !== J.name && (se[Z] = "custom", J.attributes = se), !v) {
+      if (A !== J.name && (se[Z] = "custom", J.attributes = se), !v) {
         const Ie = Ut();
-        xe({
+        De({
           ...J,
           startTime: Ie
         }).end(Ie);
@@ -5125,11 +5125,11 @@ const zd = "BrowserTracing",
             traceId: Pt(),
             sampleRand: Math.random()
           });
-          const w = C();
-          w.setPropagationContext({
+          const A = C();
+          A.setPropagationContext({
             traceId: Pt(),
             sampleRand: Math.random()
-          }), w.setSDKProcessingMetadata({
+          }), A.setSDKProcessingMetadata({
             normalizedRequest: void 0
           }), X(y, {
             op: "navigation",
@@ -5138,9 +5138,9 @@ const zd = "BrowserTracing",
         }), y.on("startPageLoadSpan", (v, k = {}) => {
           if (N() !== y) return;
           P();
-          const w = k.sentryTrace || Ur("sentry-trace"),
+          const A = k.sentryTrace || Ur("sentry-trace"),
             J = k.baggage || Ur("baggage"),
-            se = Ha(w, J),
+            se = Ha(A, J),
             ue = C();
           ue.setPropagationContext(se), ue.setSDKProcessingMetadata({
             normalizedRequest: Bn()
@@ -5163,7 +5163,7 @@ const zd = "BrowserTracing",
               startTime: v ? v / 1e3 : void 0,
               attributes: {
                 [Z]: "url",
-                [D]: "auto.pageload.browser"
+                [x]: "auto.pageload.browser"
               }
             })
           }
@@ -5176,14 +5176,14 @@ const zd = "BrowserTracing",
               return
             }
             P = void 0;
-            const w = Is(v),
+            const A = Is(v),
               J = rt(y),
               se = J && be && Qd(J, H);
             ta(y, {
-              name: (w == null ? void 0 : w.pathname) || T.location.pathname,
+              name: (A == null ? void 0 : A.pathname) || T.location.pathname,
               attributes: {
                 [Z]: "url",
-                [D]: "auto.navigation.browser"
+                [x]: "auto.navigation.browser"
               }
             }, {
               url: v,
@@ -5191,9 +5191,9 @@ const zd = "BrowserTracing",
             })
           })
         }
-        m && Ud(), o && Kd(y, d, p, f, e), r && Ou(), xd(y, {
+        m && Ud(), o && Kd(y, d, p, f, e), r && Ou(), Dd(y, {
           traceFetch: h,
-          traceXHR: x,
+          traceXHR: D,
           trackFetchStreamPerformance: I,
           tracePropagationTargets: y.getOptions().tracePropagationTargets,
           shouldCreateSpanForRequest: M,
@@ -5338,7 +5338,7 @@ function rl(t) {
       name: e,
       op: "pageload",
       attributes: {
-        [D]: "auto.pageload.sveltekit",
+        [x]: "auto.pageload.sveltekit",
         [Z]: "url"
       }
     });
@@ -5375,15 +5375,15 @@ function sl(t) {
       name: c || i || "unknown",
       op: "navigation",
       attributes: {
-        [D]: "auto.navigation.sveltekit",
+        [x]: "auto.navigation.sveltekit",
         [Z]: c ? "route" : "url",
         ...u
       }
-    }), e = xe({
+    }), e = De({
       op: "ui.sveltekit.routing",
       name: "SvelteKit Route Change",
       attributes: {
-        [D]: "auto.ui.sveltekit",
+        [x]: "auto.ui.sveltekit",
         ...u
       },
       onlyIfParent: !0
@@ -5512,7 +5512,7 @@ function gl(t, e) {
                         get params() {
                           return e.page.params
                         },
-                        children: (w, J) => {
+                        children: (A, J) => {
                           var se = le(),
                             ue = ae(se);
                           {
@@ -5585,14 +5585,14 @@ function gl(t, e) {
                               e.constructors[3] ? de(ft) : de(Ie, !1)
                             })
                           }
-                          K(w, se)
+                          K(A, se)
                         },
                         $$slots: {
                           default: !0
                         }
-                      }), w => n()[1] = w, () => {
-                        var w;
-                        return (w = n()) == null ? void 0 : w[1]
+                      }), A => n()[1] = A, () => {
+                        var A;
+                        return (A = n()) == null ? void 0 : A[1]
                       })
                     }), K(H, y)
                   },
@@ -5611,9 +5611,9 @@ function gl(t, e) {
                         get params() {
                           return e.page.params
                         }
-                      }), w => n()[1] = w, () => {
-                        var w;
-                        return (w = n()) == null ? void 0 : w[1]
+                      }), A => n()[1] = A, () => {
+                        var A;
+                        return (A = n()) == null ? void 0 : A[1]
                       })
                     }), K(H, y)
                   };
@@ -5659,7 +5659,7 @@ function gl(t, e) {
   }
   var h = za(p, 2);
   {
-    var x = I => {
+    var D = I => {
       var M = pl(),
         B = Ja(M);
       {
@@ -5674,15 +5674,15 @@ function gl(t, e) {
       Ka(M), K(I, M)
     };
     ze(h, I => {
-      j(o) && I(x)
+      j(o) && I(D)
     })
   }
   K(t, d), Xa()
 }
 const Ll = ai(gl),
-  Cl = [() => A(() => import("../nodes/0.2NRyTp4_.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]), import.meta.url), () => A(() => import("../nodes/1.BvUuqVeT.js"), __vite__mapDeps([18, 1, 16, 3, 4, 5, 19, 20, 21, 2]), import.meta.url), () => A(() => import("../nodes/2.39WGfn7_.js"), __vite__mapDeps([22, 1, 3, 4, 5, 2, 23, 12, 13, 20, 21, 24, 11, 25]), import.meta.url), () => A(() => import("../nodes/3.Dp1i-hlI.js"), __vite__mapDeps([26, 1, 3, 4, 5, 2, 23, 12, 13, 20, 21, 25]), import.meta.url), () => A(() => import("../nodes/4.BOET9h4X.js"), __vite__mapDeps([27, 1, 2, 3, 4, 5, 11, 13, 23, 12, 21, 20, 6, 7, 8, 9, 10, 28, 29, 14, 30, 31, 32, 33, 34, 35, 36, 37, 25, 38, 39, 40, 41, 42, 16, 19, 24, 15, 43, 44, 45, 46, 47, 48, 49, 50]), import.meta.url), () => A(() => import("../nodes/5.B-qUdK2C.js"), __vite__mapDeps([51, 1, 16, 3, 24, 11, 13]), import.meta.url), () => A(() => import("../nodes/6.D_H4jlzY.js"), __vite__mapDeps([52, 1, 16, 3, 2, 4, 5, 19, 8, 21]), import.meta.url), () => A(() => import("../nodes/7.CIPCyw7I.js"), __vite__mapDeps([53, 1, 3, 4, 5, 11, 23, 12, 13, 31, 21, 2, 20, 7, 6, 8, 9, 30, 35, 29, 33, 47, 49, 32, 46, 38, 36, 54, 55, 56, 57, 37, 25]), import.meta.url), () => A(() => import("../nodes/8.CCMude6M.js"), __vite__mapDeps([58, 1, 2, 3, 4, 5, 11, 12, 13, 31, 21, 7, 6, 8, 9, 30, 47, 59, 54, 55, 60, 61]), import.meta.url), () => A(() => import("../nodes/9.1FUfGzGj.js"), __vite__mapDeps([62, 1, 2, 3, 4, 5, 11, 12, 13, 31, 21, 7, 6, 8, 9, 35, 29, 47, 54, 55, 60, 63, 61]), import.meta.url), () => A(() => import("../nodes/10.jntGIWjs.js"), __vite__mapDeps([64, 1, 16, 3, 5, 8, 21, 2, 4]), import.meta.url), () => A(() => import("../nodes/11.BskvUci4.js"), __vite__mapDeps([65, 1, 2, 3, 4, 5, 11, 12, 13, 31, 21, 7, 6, 8, 9, 35, 29, 47, 55, 60, 63, 61, 66, 56]), import.meta.url), () => A(() => import("../nodes/12.CllddaZT.js"), __vite__mapDeps([67, 1, 2, 3, 4, 5, 11, 12, 13, 31, 21, 7, 6, 8, 9, 35, 29, 47, 55, 60, 63, 61, 66]), import.meta.url), () => A(() => import("../nodes/13.BMVnLzYV.js"), __vite__mapDeps([68, 1, 3, 4, 5, 11, 23, 12, 13, 31, 21, 2, 20, 7, 6, 8, 9, 34, 14, 30, 35, 29, 32, 36, 37, 25, 42, 33, 69, 47, 49, 70, 55, 60, 63, 57]), import.meta.url), () => A(() => import("../nodes/14.pRvVC4Wk.js"), __vite__mapDeps([71, 1, 2, 3, 4, 5, 11, 21, 20, 7, 6, 8, 9, 43, 13, 24, 44, 72]), import.meta.url), () => A(() => import("../nodes/15.CWA2obIp.js"), __vite__mapDeps([73, 1, 2, 3, 4, 5, 11, 23, 12, 13, 14, 21, 20, 7, 6, 8, 9, 28, 35, 29, 39, 42, 33, 69, 47, 49, 59, 37]), import.meta.url), () => A(() => import("../nodes/16.CKHyuFvj.js"), __vite__mapDeps([74, 1, 16, 3, 4, 5, 19, 24, 11, 13, 47, 48, 8, 49]), import.meta.url), () => A(() => import("../nodes/17.CwZyVo89.js"), __vite__mapDeps([75, 1, 2, 3, 4, 5, 11, 29, 20, 21, 7, 6, 8, 9, 24, 13, 72]), import.meta.url), () => A(() => import("../nodes/18.D71Z2qux.js"), __vite__mapDeps([76, 1, 3, 4, 5, 11, 12, 13, 31, 14, 21, 2, 6, 7, 8, 9, 40, 20, 39, 35, 29, 41, 32, 46, 70, 37]), import.meta.url), () => A(() => import("../nodes/19.Cm1OL-0k.js"), __vite__mapDeps([77, 1, 3, 4, 5, 11, 12, 13, 24]), import.meta.url), () => A(() => import("../nodes/20.BMKrkjBc.js"), __vite__mapDeps([78, 1, 16, 3, 5, 24, 11, 13, 79]), import.meta.url), () => A(() => import("../nodes/21.C1u1FA25.js"), __vite__mapDeps([80, 1, 16, 3, 5, 24, 11, 13]), import.meta.url), () => A(() => import("../nodes/22.12vqmSJI.js"), __vite__mapDeps([81, 1, 16, 3, 5, 24, 11, 13]), import.meta.url), () => A(() => import("../nodes/23.vTXXL6Ct.js"), __vite__mapDeps([82, 1, 16, 3, 5, 24, 11, 13, 79]), import.meta.url), () => A(() => import("../nodes/24.3qkW8zG4.js"), __vite__mapDeps([83, 1, 2, 3, 4, 5, 11, 29, 21, 43, 13, 6, 8, 24, 44, 72]), import.meta.url)],
+  Cl = [() => w(() => import("../nodes/0.Kx6Tfsrk.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]), import.meta.url), () => w(() => import("../nodes/1.BwuqcdVT.js"), __vite__mapDeps([18, 1, 16, 3, 4, 5, 19, 20, 21, 2]), import.meta.url), () => w(() => import("../nodes/2.Cfh-fg0A.js"), __vite__mapDeps([22, 1, 3, 4, 5, 2, 23, 12, 13, 24, 20, 21, 25, 11, 26]), import.meta.url), () => w(() => import("../nodes/3.lnuq9bTb.js"), __vite__mapDeps([27, 1, 3, 4, 5, 2, 23, 12, 13, 24, 20, 21, 26]), import.meta.url), () => w(() => import("../nodes/4.CE9msdxG.js"), __vite__mapDeps([28, 1, 2, 3, 4, 5, 11, 13, 24, 12, 21, 20, 6, 7, 8, 9, 10, 29, 30, 14, 31, 32, 33, 34, 35, 36, 37, 38, 26, 39, 23, 40, 41, 42, 43, 16, 19, 25, 15, 44, 45, 46, 47, 48, 49, 50, 51, 52]), import.meta.url), () => w(() => import("../nodes/5.BBFj1Mu6.js"), __vite__mapDeps([53, 1, 16, 3, 25, 11, 13]), import.meta.url), () => w(() => import("../nodes/6.Ckg_sv5c.js"), __vite__mapDeps([54, 1, 16, 3, 2, 4, 5, 19, 8, 21]), import.meta.url), () => w(() => import("../nodes/7.B2AHqbz8.js"), __vite__mapDeps([55, 1, 3, 4, 5, 11, 23, 12, 13, 24, 32, 21, 2, 20, 7, 6, 8, 9, 31, 36, 30, 34, 49, 51, 33, 47, 39, 37, 56, 57, 58, 59, 38, 26]), import.meta.url), () => w(() => import("../nodes/8.BM8Li_K0.js"), __vite__mapDeps([60, 1, 2, 3, 4, 5, 11, 12, 13, 32, 21, 7, 6, 8, 9, 31, 49, 61, 56, 57, 62, 63]), import.meta.url), () => w(() => import("../nodes/9.C-u3pHoR.js"), __vite__mapDeps([64, 1, 2, 3, 4, 5, 11, 12, 13, 32, 21, 7, 6, 8, 9, 36, 30, 49, 56, 57, 62, 65, 63]), import.meta.url), () => w(() => import("../nodes/10.D7nw4D0o.js"), __vite__mapDeps([66, 1, 16, 3, 5, 8, 21, 2, 4]), import.meta.url), () => w(() => import("../nodes/11.HvFTIVmZ.js"), __vite__mapDeps([67, 1, 2, 3, 4, 5, 11, 12, 13, 32, 21, 7, 6, 8, 9, 36, 30, 49, 57, 62, 65, 63, 68, 58]), import.meta.url), () => w(() => import("../nodes/12.CZRuHm8u.js"), __vite__mapDeps([69, 1, 2, 3, 4, 5, 11, 12, 13, 32, 21, 7, 6, 8, 9, 36, 30, 49, 57, 62, 65, 63, 68]), import.meta.url), () => w(() => import("../nodes/13.BdRiRwZo.js"), __vite__mapDeps([70, 1, 3, 4, 5, 11, 23, 12, 13, 32, 21, 2, 20, 7, 6, 8, 9, 35, 24, 14, 31, 36, 30, 33, 37, 38, 26, 43, 48, 34, 71, 49, 51, 72, 57, 62, 65, 59, 73]), import.meta.url), () => w(() => import("../nodes/14.BCVFkOqp.js"), __vite__mapDeps([74, 1, 2, 3, 4, 5, 11, 23, 12, 13, 32, 20, 21, 7, 6, 8, 9, 36, 30, 43, 34, 71, 49, 72, 73, 38]), import.meta.url), () => w(() => import("../nodes/15.BJJfKnmQ.js"), __vite__mapDeps([75, 1, 2, 3, 4, 5, 11, 21, 20, 7, 6, 8, 9, 44, 13, 25, 45, 76]), import.meta.url), () => w(() => import("../nodes/16.CYdoqOh5.js"), __vite__mapDeps([77, 1, 2, 3, 4, 5, 11, 23, 12, 13, 24, 14, 21, 20, 7, 6, 8, 9, 29, 36, 30, 40, 43, 48, 34, 71, 49, 51, 61, 38]), import.meta.url), () => w(() => import("../nodes/17.CUNARoAm.js"), __vite__mapDeps([78, 1, 16, 3, 4, 5, 19, 25, 11, 13, 49, 50, 8, 51]), import.meta.url), () => w(() => import("../nodes/18.B9oq4Ve9.js"), __vite__mapDeps([79, 1, 2, 3, 4, 5, 11, 30, 20, 21, 7, 6, 8, 9, 25, 13, 76]), import.meta.url), () => w(() => import("../nodes/19.DJK59v3L.js"), __vite__mapDeps([80, 1, 3, 4, 5, 11, 12, 13, 32, 14, 21, 2, 6, 7, 8, 9, 41, 20, 40, 36, 30, 42, 33, 47, 72, 38]), import.meta.url), () => w(() => import("../nodes/20.Cucpo9Lp.js"), __vite__mapDeps([81, 1, 3, 4, 5, 11, 12, 13, 25]), import.meta.url), () => w(() => import("../nodes/21.BIKS3XyN.js"), __vite__mapDeps([82, 1, 16, 3, 5, 25, 11, 13, 83]), import.meta.url), () => w(() => import("../nodes/22.Co4qAy1s.js"), __vite__mapDeps([84, 1, 16, 3, 5, 25, 11, 13]), import.meta.url), () => w(() => import("../nodes/23.wa7CVmfd.js"), __vite__mapDeps([85, 1, 16, 3, 5, 25, 11, 13]), import.meta.url), () => w(() => import("../nodes/24.6F9SjnVU.js"), __vite__mapDeps([86, 1, 16, 3, 5, 25, 11, 13, 83]), import.meta.url), () => w(() => import("../nodes/25.taCPFikC.js"), __vite__mapDeps([87, 1, 2, 3, 4, 5, 11, 30, 21, 44, 13, 6, 8, 25, 45, 76]), import.meta.url)],
   Ol = [],
-  xl = {
+  Dl = {
     "/": [4],
     "/404": [5],
     "/admin": [6, [2]],
@@ -5693,17 +5693,18 @@ const Ll = ai(gl),
     "/admin/mods/leaderboard-reports": [12, [2, 3]],
     "/admin/mods/leaderboard": [11, [2, 3]],
     "/admin/users": [13, [2]],
-    "/join": [14],
-    "/moderation": [15],
-    "/offline": [16],
-    "/payment/success": [17],
-    "/profile-picture": [18],
-    "/terms/code-of-conduct": [19],
-    "/terms/privacy": [20],
-    "/terms/return": [21],
-    "/terms/return/pt": [22],
-    "/terms/terms-of-service": [23],
-    "/twitch-migration": [24]
+    "/appeal": [14],
+    "/join": [15],
+    "/moderation": [16],
+    "/offline": [17],
+    "/payment/success": [18],
+    "/profile-picture": [19],
+    "/terms/code-of-conduct": [20],
+    "/terms/privacy": [21],
+    "/terms/return": [22],
+    "/terms/return/pt": [23],
+    "/terms/terms-of-service": [24],
+    "/twitch-migration": [25]
   },
   hl = {
     handleError: fl || (({
@@ -5716,8 +5717,8 @@ const Ll = ai(gl),
     transport: {}
   },
   _l = Object.fromEntries(Object.entries(hl.transport).map(([t, e]) => [t, e.decode])),
-  Dl = !1,
+  xl = !1,
   Fl = (t, e) => _l[t](e);
 export {
-  Fl as decode, _l as decoders, xl as dictionary, Dl as hash, hl as hooks, Nl as matchers, Cl as nodes, Ll as root, Ol as server_loads
+  Fl as decode, _l as decoders, Dl as dictionary, xl as hash, hl as hooks, Nl as matchers, Cl as nodes, Ll as root, Ol as server_loads
 };

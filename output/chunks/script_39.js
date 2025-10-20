@@ -1,63 +1,70 @@
 import {
-  D as p,
-  F as g,
-  G as r,
-  H as y,
-  I as _,
-  J as l,
-  g as u,
-  K as h,
-  L as w
-} from "./Bry4mTdq.js";
+  g as v
+} from "./BgLPZDo-.js";
+import "./BrPgsScq.js";
+import {
+  A as p,
+  a as g,
+  b as l,
+  H as i
+} from "./CX26CINy.js";
+import {
+  i as b,
+  r as u
+} from "./aRmAw-LJ.js";
+import {
+  d
+} from "./CkEeWs_R.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "1464f4d4be7ab2460627d08ee13d2df2a352bcb2"
+      id: "55773afae0bc9cd8753b3f88c13d41d45dcd2072"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "99fa14cf-5f44-425b-9ca8-a63b5df6afc4", e._sentryDebugIdIdentifier = "sentry-dbid-99fa14cf-5f44-425b-9ca8-a63b5df6afc4")
+      a = new e.Error().stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "fd20ccfb-9584-4f4b-ab78-ae4badd6a9aa", e._sentryDebugIdIdentifier = "sentry-dbid-fd20ccfb-9584-4f4b-ab78-ae4badd6a9aa")
   })()
 } catch {}
+const y = e => `Copy alliance ID: #${e.allianceId}`,
+  _ = e => `Copiar ID da aliança: #${e.allianceId}`,
+  D = (e, a = {}) => (a.locale ?? v()) === "en" ? y(e) : _(e);
+var h = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
+  w = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
-function I(e = !1) {
-  const n = p,
-    f = n.l.u;
-  if (!f) return;
-  let a = () => h(n.s);
-  if (e) {
-    let s = 0,
-      t = {};
-    const b = w(() => {
-      let d = !1;
-      const i = n.s;
-      for (const o in i) i[o] !== t[o] && (t[o] = i[o], d = !0);
-      return d && s++, s
-    });
-    a = () => u(b)
+function H(e, a) {
+  let n = u(a, ["$$slots", "$$events", "$$legacy", "filled"]);
+  var r = p(),
+    f = g(r);
+  {
+    var s = o => {
+        var t = h();
+        d(t, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...n
+        })), l(o, t)
+      },
+      c = o => {
+        var t = w();
+        d(t, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...n
+        })), l(o, t)
+      };
+    b(f, o => {
+      a.filled ? o(s) : o(c, !1)
+    })
   }
-  f.b.length && g(() => {
-    c(n, a), l(f.b)
-  }), r(() => {
-    const s = y(() => f.m.map(_));
-    return () => {
-      for (const t of s) typeof t == "function" && t()
-    }
-  }), f.a.length && r(() => {
-    c(n, a), l(f.a)
-  })
-}
-
-function c(e, n) {
-  if (e.l.s)
-    for (const f of e.l.s) u(f);
-  n()
+  l(e, r)
 }
 export {
-  I as i
+  H as C, D as c
 };
