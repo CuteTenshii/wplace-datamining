@@ -1,25 +1,25 @@
 import {
   g as v
-} from "./BgLPZDo-.js";
-import "./BrPgsScq.js";
+} from "./DUz0-UVo.js";
+import "./CkQARuc4.js";
 import {
   A as p,
   a as g,
   b as l,
-  H as i
-} from "./CX26CINy.js";
+  H as d
+} from "./Ho0vwyOn.js";
 import {
   i as b,
   r as u
-} from "./aRmAw-LJ.js";
+} from "./Bay5xsAq.js";
 import {
-  d
-} from "./CkEeWs_R.js";
+  d as i
+} from "./CzhSNNLq.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "55773afae0bc9cd8753b3f88c13d41d45dcd2072"
+      id: "a99f5b701b35c58895f1634e6901454a76d81d81"
     }
   } catch {}
 })();
@@ -33,8 +33,8 @@ try {
 const y = e => `Copy alliance ID: #${e.allianceId}`,
   _ = e => `Copiar ID da aliança: #${e.allianceId}`,
   D = (e, a = {}) => (a.locale ?? v()) === "en" ? y(e) : _(e);
-var h = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
-  w = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
+var h = d('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
+  w = d('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
 function H(e, a) {
   let n = u(a, ["$$slots", "$$events", "$$legacy", "filled"]);
@@ -43,7 +43,7 @@ function H(e, a) {
   {
     var s = o => {
         var t = h();
-        d(t, () => ({
+        i(t, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
           fill: "currentColor",
@@ -52,7 +52,7 @@ function H(e, a) {
       },
       c = o => {
         var t = w();
-        d(t, () => ({
+        i(t, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
           fill: "currentColor",
