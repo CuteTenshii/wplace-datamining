@@ -1,11 +1,11 @@
 import {
   g as f
-} from "./D2n_RoE-.js";
+} from "./BDq3RVkQ.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "216ad21ec8568455da3c6d18d6f039f12382ac60"
+      id: "a284527cbd407023d7d6ce22d7062bdeed40257e"
     }
   } catch {}
 })();
@@ -17,8 +17,8 @@ try {
   })()
 } catch {}
 const t = () => "Refresh",
-  o = () => "Atualizar",
-  a = (e = {}, n = {}) => (n.locale ?? f()) === "en" ? t() : o();
+  d = () => "Atualizar",
+  a = (e = {}, n = {}) => (n.locale ?? f()) === "en" ? t() : d();
 export {
   a as r
 };
