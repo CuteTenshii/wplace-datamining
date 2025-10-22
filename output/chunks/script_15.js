@@ -1,8 +1,8 @@
-var de = Object.defineProperty;
+var le = Object.defineProperty;
 var Y = a => {
   throw TypeError(a)
 };
-var ue = (a, e, t) => e in a ? de(a, e, {
+var ue = (a, e, t) => e in a ? le(a, e, {
   enumerable: !0,
   configurable: !0,
   writable: !0,
@@ -19,22 +19,22 @@ import {
   z as S,
   L as Q,
   u as P
-} from "./Ho0vwyOn.js";
+} from "./CYjwBiB9.js";
 import {
   P as ae,
   g as ge
-} from "./ByeXlp8J.js";
+} from "./CLWnqP62.js";
 import {
   g as u
-} from "./DUz0-UVo.js";
+} from "./D2n_RoE-.js";
 import {
   s as me
-} from "./DtUn1nVE.js";
+} from "./B33w_vNt.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "a99f5b701b35c58895f1634e6901454a76d81d81"
+      id: "216ad21ec8568455da3c6d18d6f039f12382ac60"
     }
   } catch {}
 })();
@@ -360,8 +360,8 @@ const F = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
 function ce(a, e, t) {
   if (t === void 0) {
     const o = F.encode(a),
-      l = e(o.length, 1) >>> 0;
-    return J().subarray(l, l + o.length).set(o), K = o.length, l
+      d = e(o.length, 1) >>> 0;
+    return J().subarray(d, d + o.length).set(o), K = o.length, d
   }
   let n = a.length,
     r = e(n, 1) >>> 0;
@@ -375,8 +375,8 @@ function ce(a, e, t) {
   if (c !== n) {
     c !== 0 && (a = a.slice(c)), r = t(r, n, n = c + a.length * 3, 1) >>> 0;
     const o = J().subarray(r + c, r + n),
-      l = Se(a, o);
-    c += l.written, r = t(r, n, c, 1) >>> 0
+      d = Se(a, o);
+    c += d.written, r = t(r, n, c, 1) >>> 0
   }
   return K = c, r
 }
@@ -559,9 +559,9 @@ const Oe = () => "Unexpected server error. Try again later.",
   ot = () => "You already have this item. Please refresh the page.",
   it = () => "Você já possui este item. Atualize a página.",
   ct = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? ot() : it(),
-  lt = () => "Alliance name exceeded the maximum number of characters",
-  dt = () => "O nome da aliança excedeu o número máximo de caracteres",
-  ut = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? lt() : dt(),
+  dt = () => "Alliance name exceeded the maximum number of characters",
+  lt = () => "O nome da aliança excedeu o número máximo de caracteres",
+  ut = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? dt() : lt(),
   ft = () => "Alliance name already taken",
   gt = () => "Já possui uma aliança com esse nome",
   mt = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? ft() : gt(),
@@ -615,10 +615,10 @@ const Oe = () => "Unexpected server error. Try again later.",
   sn = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? an() : rn(),
   on = () => "Your account has been suspended for breaking the rules",
   cn = () => "Sua conta foi suspensa por quebrar as regras",
-  ln = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? on() : cn(),
-  dn = () => "Your account has been banned for violating the rules",
+  dn = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? on() : cn(),
+  ln = () => "Your account has been banned for violating the rules",
   un = () => "A sua conta foi banida por quebrar as regras",
-  fn = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? dn() : un(),
+  fn = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? ln() : un(),
   gn = a => `Your account has been suspended out until ${a.until}`,
   mn = a => `A sua conta está suspensa até ${a.until}`,
   hn = (a, e = {}) => (e.locale ?? u()) === "en" ? gn(a) : mn(a),
@@ -685,7 +685,7 @@ class Ln {
     if (n >= this.bytes.length) {
       const c = new Uint8Array(n + 1),
         o = c.length - this.bytes.length;
-      for (let l = 0; l < this.bytes.length; l++) c[l + o] = this.bytes[l];
+      for (let d = 0; d < this.bytes.length; d++) c[d + o] = this.bytes[d];
       this.bytes = c
     }
     const s = this.bytes.length - 1 - n;
@@ -813,7 +813,7 @@ class Dn {
 }
 M = new WeakMap, C = new WeakMap, L = new WeakMap, D = new WeakMap, B = new WeakMap, U = new WeakMap, G = new WeakMap;
 const V = new Dn;
-class d extends Error {
+class l extends Error {
   constructor(e, t) {
     super(e), this.message = e, this.status = t
   }
@@ -829,7 +829,7 @@ function Bn(a, e) {
   return t
 }
 
-function la(a, e) {
+function da(a, e) {
   const t = {};
   for (const n of a) {
     const r = e(n);
@@ -1166,9 +1166,9 @@ const Un = [{
     countries: Kn
   },
   Vn = H,
-  le = H.seasons.length - 1,
-  da = H.seasons[le].zoom,
-  ua = H.seasons[le].tileSize;
+  de = H.seasons.length - 1,
+  la = H.seasons[de].zoom,
+  ua = H.seasons[de].tileSize;
 
 function fa(a) {
   return Vn.countries[a - 1]
@@ -1199,12 +1199,12 @@ class Hn {
       r = zn("2025-09_pawtect");
     if (!r) throw new Error("paint request while pawtect experiment not found");
     const c = (await Promise.all(Object.values(n).map(o => {
-      const [l, f] = o[0].tile, p = o[0].season, _ = {
+      const [d, f] = o[0].tile, p = o[0].season, _ = {
         colors: o.map(W => W.colorIdx),
         coords: o.flatMap(W => W.pixel),
         fp: t
       }, $ = JSON.stringify(_);
-      return this.request(`/s${p}/pixel/${l}/${f}`, {
+      return this.request(`/s${p}/pixel/${d}/${f}`, {
         method: "POST",
         body: $,
         headers: {
@@ -1219,17 +1219,17 @@ class Hn {
       if (o.status === 401) throw new Error(ke());
       if (o.status === 403) {
         if (o.headers.get("cf-mitigated") === "challenge") throw new Error(Mt());
-        const l = await o.json();
-        if ((l == null ? void 0 : l.error) === "refresh") throw new Error(Dt());
-        if ((l == null ? void 0 : l.error) === "color-not-owned") throw new Error(wn());
+        const d = await o.json();
+        if ((d == null ? void 0 : d.error) === "refresh") throw new Error(Dt());
+        if ((d == null ? void 0 : d.error) === "color-not-owned") throw new Error(wn());
         V.refresh()
       } else if (o.status === 451) {
-        const l = await c[0].json();
-        l == null || l.err;
-        const f = l == null ? void 0 : l.suspension;
+        const d = await c[0].json();
+        d == null || d.err;
+        const f = d == null ? void 0 : d.suspension;
         if (f === "ban") throw new Error(fn());
         if (f === "timeout") {
-          const p = new Date(Date.now() + ((l == null ? void 0 : l.durationMs) ?? 0));
+          const p = new Date(Date.now() + ((d == null ? void 0 : d.durationMs) ?? 0));
           throw new Error(hn({
             until: p.toLocaleString()
           }))
@@ -1245,16 +1245,16 @@ class Hn {
   }) {
     const o = new URLSearchParams;
     o.set("x", String(r)), o.set("y", String(s));
-    const l = await this.request(`${c?"/moderator":""}/s${e}/pixel/${t}/${n}?${o.toString()}`, {
+    const d = await this.request(`${c?"/moderator":""}/s${e}/pixel/${t}/${n}?${o.toString()}`, {
       credentials: c ? "include" : void 0
     });
-    if (l.status !== 200) {
-      const f = await l.text();
+    if (d.status !== 200) {
+      const f = await d.text();
       throw new Error(Le({
         err: f
       }))
     }
-    return l.json()
+    return d.json()
   }
   async getPixelAreaInfo({
     season: e,
@@ -1262,14 +1262,14 @@ class Hn {
     p0: [r, s],
     p1: [c, o]
   }) {
-    const l = await this.request(`/moderator/pixel-area/s${e}/${t}/${n}?x0=${r}&y0=${s}&x1=${c}&y1=${o}`, {
+    const d = await this.request(`/moderator/pixel-area/s${e}/${t}/${n}?x0=${r}&y0=${s}&x1=${c}&y1=${o}`, {
       credentials: "include"
     });
-    if (l.status !== 200) {
-      const _ = await l.text();
+    if (d.status !== 200) {
+      const _ = await d.text();
       throw console.error("Error while fetching pixel area info", _), new Error(i())
     }
-    const f = await l.arrayBuffer(),
+    const f = await d.arrayBuffer(),
       p = new DataView(f);
     return {
       paintedBy: Array.from({
@@ -1543,7 +1543,7 @@ class Hn {
       credentials: "include"
     });
     if (t.status === 404) return;
-    if (t.status !== 200) throw new d(i(), t.status);
+    if (t.status !== 200) throw new l(i(), t.status);
     const n = await t.json();
     return {
       id: Number(n.id),
@@ -1559,7 +1559,7 @@ class Hn {
         method: "GET",
         credentials: "include"
       });
-    if (n.status !== 200) throw new d(i(), n.status);
+    if (n.status !== 200) throw new l(i(), n.status);
     const r = await n.json();
     return (Array.isArray(r) ? r : []).map(s => ({
       id: Number(s.id),
@@ -1576,7 +1576,7 @@ class Hn {
       credentials: "include"
     });
     if (t.status === 404) return null;
-    if (t.status !== 200) throw new d(i(), t.status);
+    if (t.status !== 200) throw new l(i(), t.status);
     const n = await t.json(),
       r = Array.isArray(n == null ? void 0 : n.members) ? n.members : [];
     return {
@@ -1614,7 +1614,7 @@ class Hn {
       members: [],
       total: 0
     };
-    if (r.status !== 200) throw new d(i(), r.status);
+    if (r.status !== 200) throw new l(i(), r.status);
     const s = await r.json(),
       c = Array.isArray(s == null ? void 0 : s.members) ? s.members : [];
     return {
@@ -1641,7 +1641,7 @@ class Hn {
     if (n.status === 400) {
       const r = await n.json().catch(() => ({}));
       throw new Error((r == null ? void 0 : r.error) ?? i())
-    } else if (n.status !== 200) throw new d(i(), n.status)
+    } else if (n.status !== 200) throw new l(i(), n.status)
   }
   async changeAllianceLeader(e, t) {
     const n = await this.request(`/admin/alliances/${e}/leader`, {
@@ -1654,7 +1654,7 @@ class Hn {
     if (n.status === 400) {
       const r = await n.json();
       throw (r == null ? void 0 : r.error) === "user_not_in_alliance" ? new Error(Sn()) : new Error(i())
-    } else if (n.status !== 200) throw new d(i(), n.status)
+    } else if (n.status !== 200) throw new l(i(), n.status)
   }
   async banAllAllianceMembers(e, t, n) {
     const r = await this.request(`/admin/alliances/${e}/ban-all`, {
@@ -1665,7 +1665,7 @@ class Hn {
         notes: n
       })
     });
-    if (r.status !== 200) throw new d(i(), r.status)
+    if (r.status !== 200) throw new l(i(), r.status)
   }
   async setAllianceMemberRole(e, t, n) {
     const r = await this.request(`/admin/alliances/${e}/members/${t}/role`, {
@@ -1675,14 +1675,14 @@ class Hn {
         role: n
       })
     });
-    if (r.status !== 200) throw new d(i(), r.status)
+    if (r.status !== 200) throw new l(i(), r.status)
   }
   async removeAllianceMember(e, t) {
     const n = await this.request(`/admin/alliances/${e}/members/${t}/remove`, {
       method: "POST",
       credentials: "include"
     });
-    if (n.status !== 200) throw new d(i(), n.status)
+    if (n.status !== 200) throw new l(i(), n.status)
   }
   async giveAllianceAdmin(e) {
     const t = await this.request("/alliance/give-admin", {
@@ -1748,7 +1748,7 @@ class Hn {
       const r = await t.json();
       throw new Error(r == null ? void 0 : r.error)
     } else {
-      if (t.status === 451) throw new Error(ln());
+      if (t.status === 451) throw new Error(dn());
       if (t.status !== 200) throw new Error(i())
     }
     return await t.json()
@@ -1777,7 +1777,7 @@ class Hn {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== 200) throw new d(i(), e.status);
+    if (e.status !== 200) throw new l(i(), e.status);
     const t = await e.json();
     for (const n of t.tickets) n.reports.sort((r, s) => te[r.reason] - te[s.reason]);
     return t
@@ -1787,7 +1787,7 @@ class Hn {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== 200) throw new d(i(), e.status);
+    if (e.status !== 200) throw new l(i(), e.status);
     return e.json()
   }
   async getNonPaidUserOpenTicketsCount() {
@@ -1795,7 +1795,7 @@ class Hn {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== 200) throw new d(i(), e.status);
+    if (e.status !== 200) throw new l(i(), e.status);
     const {
       tickets: t
     } = await e.json();
@@ -1806,7 +1806,7 @@ class Hn {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== 200) throw new d(i(), e.status);
+    if (e.status !== 200) throw new l(i(), e.status);
     return e.json()
   }
   async setTicketStatus(e, t, n, r) {
@@ -1820,7 +1820,7 @@ class Hn {
         assignedReason: r
       })
     });
-    if (s.status !== 200) throw new d(i(), s.status)
+    if (s.status !== 200) throw new l(i(), s.status)
   }
   async request(e, t) {
     let n;
@@ -1848,7 +1848,7 @@ class Hn {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== 200) throw new d(i(), e.status);
+    if (e.status !== 200) throw new l(i(), e.status);
     return e.json()
   }
   async getOpenReportsSummary() {
@@ -1856,7 +1856,7 @@ class Hn {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== 200) throw new d(i(), e.status);
+    if (e.status !== 200) throw new l(i(), e.status);
     return e.json()
   }
   async getClosedTicketsByMod(e, t) {
@@ -1864,7 +1864,7 @@ class Hn {
       method: "GET",
       credentials: "include"
     });
-    if (n.status !== 200) throw new d(i(), n.status);
+    if (n.status !== 200) throw new l(i(), n.status);
     return (await n.json()).items.map(s => ({
       ...s,
       suspensionRate: (s.ban + s.timeout) / s.total
@@ -1875,7 +1875,7 @@ class Hn {
       method: "GET",
       credentials: "include"
     });
-    if (n.status !== 200) throw new d(i(), n.status);
+    if (n.status !== 200) throw new l(i(), n.status);
     return (await n.json()).items.map(s => ({
       ...s,
       suspensionRate: (s.ban + s.timeout) / s.total
@@ -1887,7 +1887,7 @@ class Hn {
       credentials: "include"
     });
     if (t.status !== 404) {
-      if (t.status !== 200) throw new d(i(), t.status);
+      if (t.status !== 200) throw new l(i(), t.status);
       return t.json()
     }
   }
@@ -1899,7 +1899,7 @@ class Hn {
         userIds: e
       })
     });
-    if (t.status !== 200) throw new d(i(), t.status);
+    if (t.status !== 200) throw new l(i(), t.status);
     return t.json()
   }
   async getUserInfoFull(e) {
@@ -1908,7 +1908,7 @@ class Hn {
       credentials: "include"
     });
     if (t.status !== 404) {
-      if (t.status !== 200) throw new d(i(), t.status);
+      if (t.status !== 200) throw new l(i(), t.status);
       return t.json()
     }
   }
@@ -1920,7 +1920,7 @@ class Hn {
         userId: e
       })
     });
-    if (t.status !== 200) throw new d(i(), t.status)
+    if (t.status !== 200) throw new l(i(), t.status)
   }
   async removeBan(e) {
     const t = await this.request("/admin/remove-ban", {
@@ -1930,14 +1930,14 @@ class Hn {
         userId: e
       })
     });
-    if (t.status !== 200) throw new d(i(), t.status)
+    if (t.status !== 200) throw new l(i(), t.status)
   }
   async getUserNotes(e) {
     const t = await this.request(`/moderator/users/notes?userId=${encodeURIComponent(e)}`, {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new d(i(), t.status);
+    if (t.status !== 200) throw new l(i(), t.status);
     return t.json()
   }
   async addUserNote(e, t) {
@@ -1949,14 +1949,14 @@ class Hn {
         note: t
       })
     });
-    if (n.status !== 200) throw new d(i(), n.status)
+    if (n.status !== 200) throw new l(i(), n.status)
   }
   async getUserPurchases(e) {
     const t = await this.request(`/admin/users/purchases?userId=${encodeURIComponent(e)}`, {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new d(i(), t.status);
+    if (t.status !== 200) throw new l(i(), t.status);
     const n = await t.json();
     return (Array.isArray(n == null ? void 0 : n.purchases) ? n.purchases : []).map(s => ({
       id: String(s.id ?? ""),
@@ -1975,7 +1975,7 @@ class Hn {
         droplets: t
       })
     });
-    if (n.status !== 200) throw new d(i(), n.status)
+    if (n.status !== 200) throw new l(i(), n.status)
   }
   async getUserTickets(e) {
     const {
@@ -1992,9 +1992,9 @@ class Hn {
       method: "GET",
       credentials: "include"
     });
-    if (o.status !== 200) throw new d(i(), o.status);
-    const l = await o.json(),
-      f = Array.isArray(l == null ? void 0 : l.tickets) ? l.tickets : [];
+    if (o.status !== 200) throw new l(i(), o.status);
+    const d = await o.json(),
+      f = Array.isArray(d == null ? void 0 : d.tickets) ? d.tickets : [];
     return f.sort((p, _) => new Date(_.createdAt).getTime() - new Date(p.createdAt).getTime()), f
   }
   async getModerationTranslate(e) {
@@ -2005,12 +2005,12 @@ class Hn {
         text: e
       })
     });
-    if (t.status !== 200) throw new d(i(), t.status);
+    if (t.status !== 200) throw new l(i(), t.status);
     const n = await t.json();
     return n == null ? void 0 : n.translation
   }
   mapTicketsToReportRows(e, t) {
-    var r, s, c, o, l;
+    var r, s, c, o, d;
     const n = [];
     for (const f of e) {
       const p = f.status ?? "open";
@@ -2057,7 +2057,7 @@ class Hn {
           name: "—",
           picture: null
         },
-        reason: String(((l = (o = f.reports) == null ? void 0 : o[0]) == null ? void 0 : l.reason) ?? "other"),
+        reason: String(((d = (o = f.reports) == null ? void 0 : o[0]) == null ? void 0 : d.reason) ?? "other"),
         status: p
       })
     }
@@ -2071,7 +2071,7 @@ class Hn {
         method: "GET",
         credentials: "include"
       });
-    if (n.status !== 200) throw new d(i(), n.status);
+    if (n.status !== 200) throw new l(i(), n.status);
     return n.json()
   }
   async postPawtectLoad() {
@@ -2085,28 +2085,28 @@ class Hn {
         security: "/.well-known/security.txt"
       })
     });
-    if (e.status !== 204) throw new d(i(), e.status)
+    if (e.status !== 204) throw new l(i(), e.status)
   }
   async unlinkDiscord() {
     const e = await this.request("/discord/unlink", {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== 204) throw new d(i(), e.status)
+    if (e.status !== 204) throw new l(i(), e.status)
   }
   async deleteSessions() {
     const e = await this.request("/me/sessions", {
       method: "DELETE",
       credentials: "include"
     });
-    if (e.status !== 200) throw new d(i(), e.status)
+    if (e.status !== 200) throw new l(i(), e.status)
   }
   async deleteAllUserSessions(e) {
     const t = await this.request(`/admin/users/${e}/sessions`, {
       method: "DELETE",
       credentials: "include"
     });
-    if (t.status !== 200) throw new d(i(), t.status)
+    if (t.status !== 200) throw new l(i(), t.status)
   }
   async banUsers(e, t, n) {
     const r = await this.request("/admin/users/ban", {
@@ -2118,7 +2118,7 @@ class Hn {
         notes: n
       })
     });
-    if (r.status !== 200) throw new d(i(), r.status)
+    if (r.status !== 200) throw new l(i(), r.status)
   }
   async timeoutUsers(e, t, n) {
     const r = await this.request("/admin/users/timeout", {
@@ -2130,7 +2130,7 @@ class Hn {
         notes: n
       })
     });
-    if (r.status !== 200) throw new d(i(), r.status)
+    if (r.status !== 200) throw new l(i(), r.status)
   }
   async incrementUsersDroplets(e, t, n) {
     const r = await this.request("/admin/users/increment-droplet", {
@@ -2142,7 +2142,7 @@ class Hn {
         notes: n
       })
     });
-    if (r.status !== 200) throw new d(i(), r.status)
+    if (r.status !== 200) throw new l(i(), r.status)
   }
   async postUnbanUsers(e, t) {
     const n = await this.request("/admin/users/unban", {
@@ -2153,7 +2153,7 @@ class Hn {
         notes: t
       })
     });
-    if (n.status !== 200) throw new d(i(), n.status)
+    if (n.status !== 200) throw new l(i(), n.status)
   }
   async getAuditLogs(e) {
     const t = new URLSearchParams;
@@ -2162,7 +2162,7 @@ class Hn {
       method: "GET",
       credentials: "include"
     });
-    if (n.status !== 200) throw new d(i(), n.status);
+    if (n.status !== 200) throw new l(i(), n.status);
     return n.json()
   }
   async postUsersSuspend(e) {
@@ -2180,7 +2180,7 @@ class Hn {
         userId: e
       })
     });
-    if (t.status !== 200) throw new d(i(), t.status);
+    if (t.status !== 200) throw new l(i(), t.status);
     return t.json()
   }
   async postReportAllianceName(e) {
@@ -2191,7 +2191,7 @@ class Hn {
         allianceId: e
       })
     });
-    if (t.status !== 200) throw new d(i(), t.status);
+    if (t.status !== 200) throw new l(i(), t.status);
     return t.json()
   }
   async submitBanAppeal(e) {
@@ -2202,7 +2202,7 @@ class Hn {
         message: e
       })
     });
-    if (t.status !== 200) throw new d(i(), t.status);
+    if (t.status !== 200) throw new l(i(), t.status);
     return await t.json()
   }
   async getOpenAppeals() {
@@ -2210,7 +2210,7 @@ class Hn {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== 200) throw new d(i(), e.status);
+    if (e.status !== 200) throw new l(i(), e.status);
     return e.json()
   }
   async postResponseAppeal(e, t, n) {
@@ -2222,7 +2222,7 @@ class Hn {
         appealType: n
       })
     });
-    if (r.status !== 200) throw new d(i(), r.status);
+    if (r.status !== 200) throw new l(i(), r.status);
     return await r.json()
   }
   async getUserLastAppeal() {
@@ -2230,7 +2230,7 @@ class Hn {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== 200) throw new d(i(), e.status);
+    if (e.status !== 200) throw new l(i(), e.status);
     const t = await e.json();
     return (t == null ? void 0 : t.appealDate) ?? null
   }
@@ -2239,12 +2239,12 @@ class Hn {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== 200) throw new d(i(), e.status);
+    if (e.status !== 200) throw new l(i(), e.status);
     return await e.json()
   }
 }
 R = new WeakMap;
 let ne = new Hn(ae);
 export {
-  ua as A, le as C, da as P, Vn as S, xe as _, ne as a, oa as b, i as c, Zt as d, jt as e, y as f, Ht as g, Kt as h, Gt as i, ea as j, ta as k, zn as l, ra as m, aa as n, fa as o, qn as p, ga as q, sa as r, ia as s, re as t, V as u, na as v, hn as w, la as x, fn as y, ca as z
+  ua as A, de as C, la as P, Vn as S, xe as _, ne as a, oa as b, i as c, Zt as d, jt as e, y as f, Ht as g, Kt as h, Gt as i, ea as j, ta as k, zn as l, ra as m, aa as n, fa as o, qn as p, ga as q, sa as r, ia as s, re as t, V as u, na as v, hn as w, da as x, fn as y, ca as z
 };

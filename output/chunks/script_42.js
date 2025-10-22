@@ -1,4 +1,4 @@
-import "./CkQARuc4.js";
+import "./TMaGer5U.js";
 import {
   X as te,
   L as ae,
@@ -18,45 +18,45 @@ import {
   u as Q,
   H as le,
   x as oe,
-  d,
+  d as u,
   r as f,
   s as _,
   n as O
-} from "./Ho0vwyOn.js";
+} from "./CYjwBiB9.js";
 import {
   s as g
-} from "./DJ3-q85U.js";
+} from "./DBJ_VNCN.js";
 import {
   p as o,
   i as C,
   r as se
-} from "./Bay5xsAq.js";
+} from "./C81l5NQq.js";
 import {
   a as Z,
   c as p,
-  d as ue,
+  d as de,
   s as W
-} from "./CzhSNNLq.js";
+} from "./BWQzvvv8.js";
 import {
   g as j,
   t as Y,
-  P as de,
+  P as ue,
   a as fe
-} from "./ByeXlp8J.js";
+} from "./CLWnqP62.js";
 import {
   o as _e
-} from "./Dy97wYrz.js";
+} from "./D_2ilvxX.js";
 import {
   g as b
-} from "./DUz0-UVo.js";
+} from "./D2n_RoE-.js";
 import {
   L as ve
-} from "./BDVslhQg.js";
+} from "./A0YDW3rs.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "a99f5b701b35c58895f1634e6901454a76d81d81"
+      id: "216ad21ec8568455da3c6d18d6f039f12382ac60"
     }
   } catch {}
 })();
@@ -194,7 +194,7 @@ function Ge(a, e) {
     var A = t => {
       var n = Ae();
       let r;
-      me(n, (l, u) => E == null ? void 0 : E(l, u), () => w(L)), P(l => r = Z(n, 1, p(e.class), "svelte-1gvfki5", r, l), [() => ({
+      me(n, (l, d) => E == null ? void 0 : E(l, d), () => w(L)), P(l => r = Z(n, 1, p(e.class), "svelte-1gvfki5", r, l), [() => ({
         flexible: M() == "flexible"
       })]), x(t, n)
     };
@@ -209,7 +209,7 @@ var Ke = le('<svg><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130
 function Ue(a, e) {
   let c = se(e, ["$$slots", "$$events", "$$legacy"]);
   var i = Ke();
-  ue(i, () => ({
+  de(i, () => ({
     viewBox: "0 0 256 262",
     xmlns: "http://www.w3.org/2000/svg",
     ...c
@@ -225,28 +225,28 @@ function $e(a, e) {
     i = V(oe(Y ? "" : "turnstile-disabled"));
 
   function m(n, r) {
-    return `${de}/auth/${n}?token=${r}${e.redirect?`&r=${e.redirect}`:""}`
+    return `${ue}/auth/${n}?token=${r}${e.redirect?`&r=${e.redirect}`:""}`
   }
   var v = Oe(),
-    s = d(v),
-    F = d(s);
+    s = u(v),
+    F = u(s);
   ve(F, {
     hasText: !0
   }), f(s);
   var k = _(s, 2),
-    z = d(k);
+    z = u(k);
   {
     var M = n => {
       var r = je(),
         l = X(r),
-        u = d(l);
-      Ue(u, {
+        d = u(l);
+      Ue(d, {
         class: "mr-1 size-5"
       });
-      var G = _(u);
+      var G = _(d);
       f(l);
       var B = _(l, 2),
-        D = d(B);
+        D = u(B);
       {
         var K = y => {
           {
@@ -281,31 +281,31 @@ function $e(a, e) {
   }
   f(k);
   var I = _(k, 2),
-    N = d(I),
+    N = u(I),
     L = _(N),
-    E = d(L, !0);
+    E = u(L, !0);
   f(L);
   var h = _(L),
     T = _(h),
-    R = d(T, !0);
+    R = u(T, !0);
   f(T), O(), f(I);
   var A = _(I, 2);
   {
     var t = n => {
       var r = He(),
-        l = d(r),
-        u = _(l),
-        G = d(u, !0);
-      f(u), O(), f(r), P((B, D, K) => {
-        g(l, `${B??""} `), W(u, "href", D), g(G, K)
+        l = u(r),
+        d = _(l),
+        G = u(d, !0);
+      f(d), O(), f(r), P((B, D, K) => {
+        g(l, `${B??""} `), W(d, "href", D), g(G, K)
       }, [() => Fe(), () => m("twitch", ""), () => Re()]), x(n, r)
     };
     C(A, n => {
       c() && n(t)
     })
   }
-  f(v), P((n, r, l, u) => {
-    g(N, `${n??""} `), g(E, r), g(h, ` ${l??""} `), g(R, u)
+  f(v), P((n, r, l, d) => {
+    g(N, `${n??""} `), g(E, r), g(h, ` ${l??""} `), g(R, d)
   }, [() => xe(), () => Le(), () => Ce(), () => De()]), x(a, v), J()
 }
 export {
