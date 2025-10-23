@@ -1,20 +1,20 @@
-var b = t => {
+var f = t => {
   throw TypeError(t)
 };
-var m = (t, e, i) => e.has(t) || b("Cannot " + i);
+var m = (t, e, i) => e.has(t) || f("Cannot " + i);
 var a = (t, e, i) => (m(t, e, "read from private field"), i ? i.call(t) : e.get(t)),
-  n = (t, e, i) => e.has(t) ? b("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, i);
+  n = (t, e, i) => e.has(t) ? f("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, i);
 import {
   w as s,
   g as o,
   z as r,
   x as p
-} from "./DlUXbix6.js";
+} from "./Vo-uc5TQ.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "a284527cbd407023d7d6ce22d7062bdeed40257e"
+      id: "e1bb3bb6ac619eae9d90b3c0ac59135bee8cefab"
     }
   } catch {}
 })();
@@ -30,37 +30,37 @@ const L = "true",
   v = "0x4AAAAAABpHqZ-6i7uL0nmG",
   A = "https://backend.wplace.live",
   w = "theme";
-var d, g, l, u, c, h, f;
+var g, l, d, u, c, h, b;
 class y {
   constructor() {
-    n(this, d, s(!1));
     n(this, g, s(!1));
-    n(this, l, s(p(I())));
+    n(this, l, s(!1));
+    n(this, d, s(p(I())));
     n(this, u, s(!1));
     n(this, c, s("custom-winter"));
     n(this, h, s(p(Date.now())));
-    n(this, f, s(void 0));
+    n(this, b, s(void 0));
     setInterval(() => {
       r(a(this, h), Date.now(), !0)
     }, 500), this.theme = localStorage.getItem(w) || "custom-winter"
   }
   get dropletsDialogOpen() {
-    return o(a(this, d))
-  }
-  set dropletsDialogOpen(e) {
-    r(a(this, d), e, !0)
-  }
-  get muted() {
     return o(a(this, g))
   }
-  set muted(e) {
+  set dropletsDialogOpen(e) {
     r(a(this, g), e, !0)
   }
-  get language() {
+  get muted() {
     return o(a(this, l))
   }
-  set language(e) {
+  set muted(e) {
     r(a(this, l), e, !0)
+  }
+  get language() {
+    return o(a(this, d))
+  }
+  set language(e) {
+    r(a(this, d), e, !0)
   }
   get turnstatileLoaded() {
     return o(a(this, u))
@@ -78,16 +78,16 @@ class y {
     return o(a(this, h))
   }
   get captcha() {
-    return E ? o(a(this, f)) : {
+    return E ? o(a(this, b)) : {
       token: "turnstile-disabled",
       time: Date.now()
     }
   }
   set captcha(e) {
-    r(a(this, f), e, !0)
+    r(a(this, b), e, !0)
   }
 }
-d = new WeakMap, g = new WeakMap, l = new WeakMap, u = new WeakMap, c = new WeakMap, h = new WeakMap, f = new WeakMap;
+g = new WeakMap, l = new WeakMap, d = new WeakMap, u = new WeakMap, c = new WeakMap, h = new WeakMap, b = new WeakMap;
 const T = new y;
 
 function I() {

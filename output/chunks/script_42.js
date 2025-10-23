@@ -1,4 +1,4 @@
-import "./CyCf8Fhi.js";
+import "./BHw0Tm2U.js";
 import {
   X as te,
   L as ae,
@@ -18,45 +18,45 @@ import {
   u as Q,
   H as le,
   x as oe,
-  d as u,
+  d,
   r as f,
   s as _,
   n as O
-} from "./DlUXbix6.js";
+} from "./Vo-uc5TQ.js";
 import {
-  s as g
-} from "./TCxt7trQ.js";
+  s as b
+} from "./DfhHzZuZ.js";
 import {
   p as o,
   i as C,
   r as se
-} from "./BGvmNFno.js";
+} from "./CZ6Bqpor.js";
 import {
   a as Z,
   c as p,
-  d as de,
+  d as ue,
   s as W
-} from "./D4Zr2eK4.js";
+} from "./p0rnLffB.js";
 import {
   g as j,
   t as Y,
-  P as ue,
+  P as de,
   a as fe
-} from "./CyXbXpRe.js";
+} from "./CafyNu7s.js";
 import {
   o as _e
-} from "./CZaYGPHi.js";
+} from "./C2g6UXhL.js";
 import {
-  g as b
-} from "./BDq3RVkQ.js";
+  g
+} from "./Dwv1k78u.js";
 import {
   L as ve
-} from "./wrOF2ViO.js";
+} from "./Dt91N3Dw.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "a284527cbd407023d7d6ce22d7062bdeed40257e"
+      id: "e1bb3bb6ac619eae9d90b3c0ac59135bee8cefab"
     }
   } catch {}
 })();
@@ -82,27 +82,27 @@ function me(a, e, c) {
     if (i != null && i.destroy) return () => i.destroy()
   })
 }
-const ge = a => `Login with ${a.name}`,
-  be = a => `Entrar com ${a.name}`,
-  he = (a, e = {}) => (e.locale ?? b()) === "en" ? ge(a) : be(a),
+const be = a => `Login with ${a.name}`,
+  ge = a => `Entrar com ${a.name}`,
+  he = (a, e = {}) => (e.locale ?? g()) === "en" ? be(a) : ge(a),
   ye = () => "By continuing, you agree to our",
   we = () => "Ao continuar, você concorda com nossos",
-  xe = (a = {}, e = {}) => (e.locale ?? b()) === "en" ? ye() : we(),
+  xe = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? ye() : we(),
   ke = () => "Terms of Service",
   Ie = () => "Termos de Serviço",
-  Le = (a = {}, e = {}) => (e.locale ?? b()) === "en" ? ke() : Ie(),
+  Le = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? ke() : Ie(),
   Ee = () => "and",
   Te = () => "e",
-  Ce = (a = {}, e = {}) => (e.locale ?? b()) === "en" ? Ee() : Te(),
+  Ce = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? Ee() : Te(),
   Me = () => "Privacy Policy",
   Be = () => "Política de privacidade",
-  De = (a = {}, e = {}) => (e.locale ?? b()) === "en" ? Me() : Be(),
+  De = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? Me() : Be(),
   Pe = () => "Do you have a Wplace Twitch account?",
   Se = () => "Você tem uma conta Wplace associada à Twitch?",
-  Fe = (a = {}, e = {}) => (e.locale ?? b()) === "en" ? Pe() : Se(),
+  Fe = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? Pe() : Se(),
   ze = () => "Migrate your account",
   Ne = () => "Migre sua conta",
-  Re = (a = {}, e = {}) => (e.locale ?? b()) === "en" ? ze() : Ne();
+  Re = (a = {}, e = {}) => (e.locale ?? g()) === "en" ? ze() : Ne();
 var Ae = S("<div></div>");
 
 function Ge(a, e) {
@@ -194,7 +194,7 @@ function Ge(a, e) {
     var A = t => {
       var n = Ae();
       let r;
-      me(n, (l, d) => E == null ? void 0 : E(l, d), () => w(L)), P(l => r = Z(n, 1, p(e.class), "svelte-1gvfki5", r, l), [() => ({
+      me(n, (l, u) => E == null ? void 0 : E(l, u), () => w(L)), P(l => r = Z(n, 1, p(e.class), "svelte-1gvfki5", r, l), [() => ({
         flexible: M() == "flexible"
       })]), x(t, n)
     };
@@ -209,7 +209,7 @@ var Ke = le('<svg><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130
 function Ue(a, e) {
   let c = se(e, ["$$slots", "$$events", "$$legacy"]);
   var i = Ke();
-  de(i, () => ({
+  ue(i, () => ({
     viewBox: "0 0 256 262",
     xmlns: "http://www.w3.org/2000/svg",
     ...c
@@ -225,28 +225,28 @@ function $e(a, e) {
     i = V(oe(Y ? "" : "turnstile-disabled"));
 
   function m(n, r) {
-    return `${ue}/auth/${n}?token=${r}${e.redirect?`&r=${e.redirect}`:""}`
+    return `${de}/auth/${n}?token=${r}${e.redirect?`&r=${e.redirect}`:""}`
   }
   var v = Oe(),
-    s = u(v),
-    F = u(s);
+    s = d(v),
+    F = d(s);
   ve(F, {
     hasText: !0
   }), f(s);
   var k = _(s, 2),
-    z = u(k);
+    z = d(k);
   {
     var M = n => {
       var r = je(),
         l = X(r),
-        d = u(l);
-      Ue(d, {
+        u = d(l);
+      Ue(u, {
         class: "mr-1 size-5"
       });
-      var G = _(d);
+      var G = _(u);
       f(l);
       var B = _(l, 2),
-        D = u(B);
+        D = d(B);
       {
         var K = y => {
           {
@@ -270,7 +270,7 @@ function $e(a, e) {
         Z(l, 1, p({
           "btn btn-lg bg-base-100 w-full text-base": !0,
           "bg-base-content/10 pointer-events-none": !w(i)
-        })), W(l, "href", y), g(G, ` ${U??""}`)
+        })), W(l, "href", y), b(G, ` ${U??""}`)
       }, [() => w(i) ? m("google", w(i)) : "#", () => he({
         name: "Google"
       })]), x(n, r)
@@ -281,31 +281,31 @@ function $e(a, e) {
   }
   f(k);
   var I = _(k, 2),
-    N = u(I),
+    N = d(I),
     L = _(N),
-    E = u(L, !0);
+    E = d(L, !0);
   f(L);
   var h = _(L),
     T = _(h),
-    R = u(T, !0);
+    R = d(T, !0);
   f(T), O(), f(I);
   var A = _(I, 2);
   {
     var t = n => {
       var r = He(),
-        l = u(r),
-        d = _(l),
-        G = u(d, !0);
-      f(d), O(), f(r), P((B, D, K) => {
-        g(l, `${B??""} `), W(d, "href", D), g(G, K)
+        l = d(r),
+        u = _(l),
+        G = d(u, !0);
+      f(u), O(), f(r), P((B, D, K) => {
+        b(l, `${B??""} `), W(u, "href", D), b(G, K)
       }, [() => Fe(), () => m("twitch", ""), () => Re()]), x(n, r)
     };
     C(A, n => {
       c() && n(t)
     })
   }
-  f(v), P((n, r, l, d) => {
-    g(N, `${n??""} `), g(E, r), g(h, ` ${l??""} `), g(R, d)
+  f(v), P((n, r, l, u) => {
+    b(N, `${n??""} `), b(E, r), b(h, ` ${l??""} `), b(R, u)
   }, [() => xe(), () => Le(), () => Ce(), () => De()]), x(a, v), J()
 }
 export {

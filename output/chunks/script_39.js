@@ -1,25 +1,25 @@
 import {
   g as v
-} from "./BDq3RVkQ.js";
-import "./CyCf8Fhi.js";
+} from "./Dwv1k78u.js";
+import "./BHw0Tm2U.js";
 import {
-  A as p,
-  a as g,
+  A as b,
+  a as p,
   b as l,
-  H as i
-} from "./DlUXbix6.js";
+  H as s
+} from "./Vo-uc5TQ.js";
 import {
-  i as b,
+  i as g,
   r as u
-} from "./BGvmNFno.js";
+} from "./CZ6Bqpor.js";
 import {
-  d
-} from "./D4Zr2eK4.js";
+  d as i
+} from "./p0rnLffB.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "a284527cbd407023d7d6ce22d7062bdeed40257e"
+      id: "e1bb3bb6ac619eae9d90b3c0ac59135bee8cefab"
     }
   } catch {}
 })();
@@ -33,17 +33,17 @@ try {
 const y = e => `Copy alliance ID: #${e.allianceId}`,
   _ = e => `Copiar ID da aliança: #${e.allianceId}`,
   D = (e, a = {}) => (a.locale ?? v()) === "en" ? y(e) : _(e);
-var h = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
-  w = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
+var h = s('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
+  w = s('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
 function H(e, a) {
   let n = u(a, ["$$slots", "$$events", "$$legacy", "filled"]);
-  var r = p(),
-    s = g(r);
+  var r = b(),
+    d = p(r);
   {
     var f = o => {
         var t = h();
-        d(t, () => ({
+        i(t, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
           fill: "currentColor",
@@ -52,14 +52,14 @@ function H(e, a) {
       },
       c = o => {
         var t = w();
-        d(t, () => ({
+        i(t, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
           fill: "currentColor",
           ...n
         })), l(o, t)
       };
-    b(s, o => {
+    g(d, o => {
       a.filled ? o(f) : o(c, !1)
     })
   }
