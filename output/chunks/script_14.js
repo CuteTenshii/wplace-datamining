@@ -1,20 +1,20 @@
-var f = t => {
+var b = t => {
   throw TypeError(t)
 };
-var m = (t, e, i) => e.has(t) || f("Cannot " + i);
+var m = (t, e, i) => e.has(t) || b("Cannot " + i);
 var a = (t, e, i) => (m(t, e, "read from private field"), i ? i.call(t) : e.get(t)),
-  n = (t, e, i) => e.has(t) ? f("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, i);
+  n = (t, e, i) => e.has(t) ? b("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, i);
 import {
   w as s,
   g as o,
   z as r,
   x as p
-} from "./Vo-uc5TQ.js";
+} from "./D28PF2-5.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "e1bb3bb6ac619eae9d90b3c0ac59135bee8cefab"
+      id: "a8e86ea7c5dac5456cbf3520a3090956fd737b8f"
     }
   } catch {}
 })();
@@ -30,7 +30,7 @@ const L = "true",
   v = "0x4AAAAAABpHqZ-6i7uL0nmG",
   A = "https://backend.wplace.live",
   w = "theme";
-var g, l, d, u, c, h, b;
+var g, l, d, u, c, f, h;
 class y {
   constructor() {
     n(this, g, s(!1));
@@ -38,10 +38,10 @@ class y {
     n(this, d, s(p(I())));
     n(this, u, s(!1));
     n(this, c, s("custom-winter"));
-    n(this, h, s(p(Date.now())));
-    n(this, b, s(void 0));
+    n(this, f, s(p(Date.now())));
+    n(this, h, s(void 0));
     setInterval(() => {
-      r(a(this, h), Date.now(), !0)
+      r(a(this, f), Date.now(), !0)
     }, 500), this.theme = localStorage.getItem(w) || "custom-winter"
   }
   get dropletsDialogOpen() {
@@ -75,19 +75,19 @@ class y {
     r(a(this, c), e, !0), localStorage.setItem(w, e), document.documentElement.setAttribute("data-theme", e)
   }
   get now() {
-    return o(a(this, h))
+    return o(a(this, f))
   }
   get captcha() {
-    return E ? o(a(this, b)) : {
+    return E ? o(a(this, h)) : {
       token: "turnstile-disabled",
       time: Date.now()
     }
   }
   set captcha(e) {
-    r(a(this, b), e, !0)
+    r(a(this, h), e, !0)
   }
 }
-g = new WeakMap, l = new WeakMap, d = new WeakMap, u = new WeakMap, c = new WeakMap, h = new WeakMap, b = new WeakMap;
+g = new WeakMap, l = new WeakMap, d = new WeakMap, u = new WeakMap, c = new WeakMap, f = new WeakMap, h = new WeakMap;
 const T = new y;
 
 function I() {

@@ -1,4 +1,4 @@
-import "./BHw0Tm2U.js";
+import "./C2hHfSVq.js";
 import {
   X as te,
   L as ae,
@@ -18,45 +18,45 @@ import {
   u as Q,
   H as le,
   x as oe,
-  d,
+  d as u,
   r as f,
   s as _,
   n as O
-} from "./Vo-uc5TQ.js";
+} from "./D28PF2-5.js";
 import {
   s as b
-} from "./DfhHzZuZ.js";
+} from "./CpGMhXKK.js";
 import {
   p as o,
   i as C,
   r as se
-} from "./CZ6Bqpor.js";
+} from "./C5kUF3Yf.js";
 import {
   a as Z,
   c as p,
-  d as ue,
+  d as de,
   s as W
-} from "./p0rnLffB.js";
+} from "./DmF_Qh4f.js";
 import {
   g as j,
   t as Y,
-  P as de,
+  P as ue,
   a as fe
-} from "./CafyNu7s.js";
+} from "./VEEGwygJ.js";
 import {
   o as _e
-} from "./C2g6UXhL.js";
+} from "./IMWZaiiY.js";
 import {
   g
-} from "./Dwv1k78u.js";
+} from "./B23hncp3.js";
 import {
   L as ve
-} from "./Dt91N3Dw.js";
+} from "./XDVMUo4S.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "e1bb3bb6ac619eae9d90b3c0ac59135bee8cefab"
+      id: "a8e86ea7c5dac5456cbf3520a3090956fd737b8f"
     }
   } catch {}
 })();
@@ -64,7 +64,7 @@ try {
   (function() {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new a.Error().stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "2102e7af-27cd-4282-9f48-d8fc90c94184", a._sentryDebugIdIdentifier = "sentry-dbid-2102e7af-27cd-4282-9f48-d8fc90c94184")
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "a5131b9b-ad2d-475c-92d3-728f37d9494b", a._sentryDebugIdIdentifier = "sentry-dbid-a5131b9b-ad2d-475c-92d3-728f37d9494b")
   })()
 } catch {}
 
@@ -194,7 +194,7 @@ function Ge(a, e) {
     var A = t => {
       var n = Ae();
       let r;
-      me(n, (l, u) => E == null ? void 0 : E(l, u), () => w(L)), P(l => r = Z(n, 1, p(e.class), "svelte-1gvfki5", r, l), [() => ({
+      me(n, (l, d) => E == null ? void 0 : E(l, d), () => w(L)), P(l => r = Z(n, 1, p(e.class), "svelte-1gvfki5", r, l), [() => ({
         flexible: M() == "flexible"
       })]), x(t, n)
     };
@@ -209,7 +209,7 @@ var Ke = le('<svg><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130
 function Ue(a, e) {
   let c = se(e, ["$$slots", "$$events", "$$legacy"]);
   var i = Ke();
-  ue(i, () => ({
+  de(i, () => ({
     viewBox: "0 0 256 262",
     xmlns: "http://www.w3.org/2000/svg",
     ...c
@@ -225,28 +225,28 @@ function $e(a, e) {
     i = V(oe(Y ? "" : "turnstile-disabled"));
 
   function m(n, r) {
-    return `${de}/auth/${n}?token=${r}${e.redirect?`&r=${e.redirect}`:""}`
+    return `${ue}/auth/${n}?token=${r}${e.redirect?`&r=${e.redirect}`:""}`
   }
   var v = Oe(),
-    s = d(v),
-    F = d(s);
+    s = u(v),
+    F = u(s);
   ve(F, {
     hasText: !0
   }), f(s);
   var k = _(s, 2),
-    z = d(k);
+    z = u(k);
   {
     var M = n => {
       var r = je(),
         l = X(r),
-        u = d(l);
-      Ue(u, {
+        d = u(l);
+      Ue(d, {
         class: "mr-1 size-5"
       });
-      var G = _(u);
+      var G = _(d);
       f(l);
       var B = _(l, 2),
-        D = d(B);
+        D = u(B);
       {
         var K = y => {
           {
@@ -281,31 +281,31 @@ function $e(a, e) {
   }
   f(k);
   var I = _(k, 2),
-    N = d(I),
+    N = u(I),
     L = _(N),
-    E = d(L, !0);
+    E = u(L, !0);
   f(L);
   var h = _(L),
     T = _(h),
-    R = d(T, !0);
+    R = u(T, !0);
   f(T), O(), f(I);
   var A = _(I, 2);
   {
     var t = n => {
       var r = He(),
-        l = d(r),
-        u = _(l),
-        G = d(u, !0);
-      f(u), O(), f(r), P((B, D, K) => {
-        b(l, `${B??""} `), W(u, "href", D), b(G, K)
+        l = u(r),
+        d = _(l),
+        G = u(d, !0);
+      f(d), O(), f(r), P((B, D, K) => {
+        b(l, `${B??""} `), W(d, "href", D), b(G, K)
       }, [() => Fe(), () => m("twitch", ""), () => Re()]), x(n, r)
     };
     C(A, n => {
       c() && n(t)
     })
   }
-  f(v), P((n, r, l, u) => {
-    b(N, `${n??""} `), b(E, r), b(h, ` ${l??""} `), b(R, u)
+  f(v), P((n, r, l, d) => {
+    b(N, `${n??""} `), b(E, r), b(h, ` ${l??""} `), b(R, d)
   }, [() => xe(), () => Le(), () => Ce(), () => De()]), x(a, v), J()
 }
 export {
