@@ -9,12 +9,12 @@ import {
   g as o,
   z as r,
   x as p
-} from "./D28PF2-5.js";
+} from "./BlTsffte.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "a8e86ea7c5dac5456cbf3520a3090956fd737b8f"
+      id: "cf70b86b5c91cdc18d318e8e942fc55d8b1d0f41"
     }
   } catch {}
 })();
@@ -30,12 +30,12 @@ const L = "true",
   v = "0x4AAAAAABpHqZ-6i7uL0nmG",
   A = "https://backend.wplace.live",
   w = "theme";
-var g, l, d, u, c, f, h;
+var d, g, l, u, c, f, h;
 class y {
   constructor() {
+    n(this, d, s(!1));
     n(this, g, s(!1));
-    n(this, l, s(!1));
-    n(this, d, s(p(I())));
+    n(this, l, s(p(I())));
     n(this, u, s(!1));
     n(this, c, s("custom-winter"));
     n(this, f, s(p(Date.now())));
@@ -45,22 +45,22 @@ class y {
     }, 500), this.theme = localStorage.getItem(w) || "custom-winter"
   }
   get dropletsDialogOpen() {
-    return o(a(this, g))
-  }
-  set dropletsDialogOpen(e) {
-    r(a(this, g), e, !0)
-  }
-  get muted() {
-    return o(a(this, l))
-  }
-  set muted(e) {
-    r(a(this, l), e, !0)
-  }
-  get language() {
     return o(a(this, d))
   }
-  set language(e) {
+  set dropletsDialogOpen(e) {
     r(a(this, d), e, !0)
+  }
+  get muted() {
+    return o(a(this, g))
+  }
+  set muted(e) {
+    r(a(this, g), e, !0)
+  }
+  get language() {
+    return o(a(this, l))
+  }
+  set language(e) {
+    r(a(this, l), e, !0)
   }
   get turnstatileLoaded() {
     return o(a(this, u))
@@ -87,7 +87,7 @@ class y {
     r(a(this, h), e, !0)
   }
 }
-g = new WeakMap, l = new WeakMap, d = new WeakMap, u = new WeakMap, c = new WeakMap, f = new WeakMap, h = new WeakMap;
+d = new WeakMap, g = new WeakMap, l = new WeakMap, u = new WeakMap, c = new WeakMap, f = new WeakMap, h = new WeakMap;
 const T = new y;
 
 function I() {
