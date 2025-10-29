@@ -12,12 +12,12 @@ import {
   v as I,
   U as k,
   w as D
-} from "./DzYLfSyw.js";
+} from "./BDq-HR17.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "274e4e697c621b0b0021d13ee96b23137b8f2a87"
+      id: "0f5526c28af3fe231e905447f161f05590c76727"
     }
   } catch {}
 })();
