@@ -13,28 +13,28 @@ var h = (a, e, t) => fe(a, typeof e != "symbol" ? e + "" : e, t),
 var g = (a, e, t) => (ge(a, e, "read from private field"), t ? t.call(a) : e.get(a)),
   p = (a, e, t) => e.has(a) ? Q("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(a) : e.set(a, t);
 import {
-  w as T,
-  x as X,
-  g as y,
-  z as S,
+  g as T,
+  y as X,
+  h as y,
+  e as S,
   L as ee,
   u as A
-} from "./CjHooIZx.js";
+} from "./B5h3_DM3.js";
 import {
   P as re,
   g as me
-} from "./DSGgno5Y.js";
+} from "./Bg0sKKbS.js";
 import {
   g as u
-} from "./44LEXnLU.js";
+} from "./BS_YoBqz.js";
 import {
   s as he
-} from "./Dg1VpGbd.js";
+} from "./DzzTSXAP.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "c5b6f4008280188b6965f20aa04502030e013ff2"
+      id: "30249c0052a6db2e8885effd6fd4553811e48ab4"
     }
   } catch {}
 })();
@@ -42,7 +42,7 @@ try {
   (function() {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new a.Error().stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "fc0fa65b-ae6a-49ca-9e6f-0777faf9b225", a._sentryDebugIdIdentifier = "sentry-dbid-fc0fa65b-ae6a-49ca-9e6f-0777faf9b225")
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "12e5277a-c7a5-478c-ad17-5a8fe754faf7", a._sentryDebugIdIdentifier = "sentry-dbid-12e5277a-c7a5-478c-ad17-5a8fe754faf7")
   })()
 } catch {}
 
@@ -532,9 +532,9 @@ const qe = () => "Unexpected server error. Try again later.",
   Me = a => `Error while painting: ${a.err}`,
   Le = a => `Erro enquanto pinta: ${a.err}`,
   De = (a, e = {}) => (e.locale ?? u()) === "en" ? Me(a) : Le(a),
-  Ue = () => "Invalid phone number",
-  Be = () => "Número de telefone inválido",
-  Re = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? Ue() : Be(),
+  Be = () => "Invalid phone number",
+  Ue = () => "Número de telefone inválido",
+  Re = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? Be() : Ue(),
   Ge = () => "Phone already used",
   $e = () => "Telefone já usado",
   je = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? Ge() : $e(),
@@ -588,10 +588,10 @@ const qe = () => "Unexpected server error. Try again later.",
   Mt = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? kt() : Ct(),
   Lt = () => "Refresh your page to get the latest update",
   Dt = () => "Recarregue sua página para obter as últimas atualizações",
-  Ut = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? Lt() : Dt(),
-  Bt = () => "Inappropriate content",
+  Bt = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? Lt() : Dt(),
+  Ut = () => "Inappropriate content",
   Rt = () => "Conteúdo inapropriado",
-  Gt = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? Bt() : Rt(),
+  Gt = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? Ut() : Rt(),
   $t = () => "Botting",
   jt = () => "Uso de bots",
   Jt = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? $t() : jt(),
@@ -712,22 +712,22 @@ function da(a) {
     }, n.readAsDataURL(a)
   })
 }
-var C, M, L, D, U, B, R, G;
-class Un {
+var C, M, L, D, B, U, R, G;
+class Bn {
   constructor() {
     h(this, "channel", new BroadcastChannel("user-channel"));
     p(this, C, T());
     p(this, M, T(!0));
     p(this, L, T());
     p(this, D, T(Date.now()));
-    p(this, U, A(() => {
+    p(this, B, A(() => {
       if (!this.data) return;
       const e = this.data.charges;
       if (e.count > e.max) return e.count;
       const t = e.count + Math.max((me.now - this.lastFetch) / e.cooldownMs, 0);
       return Math.min(e.max, t)
     }));
-    p(this, B, A(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
+    p(this, U, A(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
     p(this, R, A(() => {
       var e;
       return new Dn(Ln(((e = this.data) == null ? void 0 : e.flagsBitmap) ?? "AA=="))
@@ -768,16 +768,16 @@ class Un {
     S(g(this, D), e)
   }
   get charges() {
-    return y(g(this, U))
-  }
-  set charges(e) {
-    S(g(this, U), e)
-  }
-  get cooldown() {
     return y(g(this, B))
   }
-  set cooldown(e) {
+  set charges(e) {
     S(g(this, B), e)
+  }
+  get cooldown() {
+    return y(g(this, U))
+  }
+  set cooldown(e) {
+    S(g(this, U), e)
   }
   get flagsBitmap() {
     return y(g(this, R))
@@ -820,15 +820,15 @@ class Un {
     return e < 32 ? !0 : ((((n = this.data) == null ? void 0 : n.extraColorsBitmap) ?? 0) & 1 << e - 32) !== 0
   }
 }
-C = new WeakMap, M = new WeakMap, L = new WeakMap, D = new WeakMap, U = new WeakMap, B = new WeakMap, R = new WeakMap, G = new WeakMap;
-const z = new Un;
+C = new WeakMap, M = new WeakMap, L = new WeakMap, D = new WeakMap, B = new WeakMap, U = new WeakMap, R = new WeakMap, G = new WeakMap;
+const z = new Bn;
 class d extends Error {
   constructor(e, t) {
     super(e), this.message = e, this.status = t
   }
 }
 
-function Bn(a, e) {
+function Un(a, e) {
   const t = {};
   for (const n of a) {
     const r = e(n);
@@ -1204,7 +1204,7 @@ class Wn {
     S(g(this, $), e, !0)
   }
   async paint(e, t) {
-    const n = Bn(e, o => `t=(${o.tile[0]},${o.tile[1]}),s=${o.season}`),
+    const n = Un(e, o => `t=(${o.tile[0]},${o.tile[1]}),s=${o.season}`),
       r = Hn("2025-09_pawtect");
     if (!r) throw new Error("paint request while pawtect experiment not found");
     const c = (await Promise.all(Object.values(n).map(o => {
@@ -1229,7 +1229,7 @@ class Wn {
       if (o.status === 403) {
         if (o.headers.get("cf-mitigated") === "challenge") throw new Error(Mt());
         const l = await o.json();
-        if ((l == null ? void 0 : l.error) === "refresh") throw new Error(Ut());
+        if ((l == null ? void 0 : l.error) === "refresh") throw new Error(Bt());
         if ((l == null ? void 0 : l.error) === "color-not-owned") throw new Error(yn());
         z.refresh()
       } else if (o.status === 451) {
@@ -2283,6 +2283,14 @@ class Wn {
   async postNotificationMarkReadAll() {
     const e = await this.request("/notification/mark-read/all", {
       method: "POST",
+      credentials: "include"
+    });
+    if (e.status !== 200) throw new d(i(), e.status);
+    return e.json()
+  }
+  async getAdminBanWaveNext() {
+    const e = await this.request("/admin/ban-wave/next", {
+      method: "GET",
       credentials: "include"
     });
     if (e.status !== 200) throw new d(i(), e.status);

@@ -1,4 +1,4 @@
-import "./DsylX7kx.js";
+import "./YNYGqVbI.js";
 import {
   X as ne,
   L as re,
@@ -6,57 +6,57 @@ import {
   O as oe,
   G as ie,
   p as X,
-  z as W,
-  w as J,
+  e as W,
+  g as J,
   A as le,
   a as Q,
-  g as k,
+  h as k,
   b as C,
   c as Z,
   f as A,
-  t as R,
+  t as z,
   u as p,
   H as se,
-  x as ue,
-  d as u,
-  r as d,
+  y as de,
+  d,
+  r as u,
   s as f,
   n as Y
-} from "./CjHooIZx.js";
+} from "./B5h3_DM3.js";
 import {
   s as g
-} from "./LBM8zJgF.js";
+} from "./BfMGuSK8.js";
 import {
   p as s,
   i as B,
-  r as de
-} from "./DBEJOzbC.js";
+  r as ue
+} from "./CINXNjPK.js";
 import {
   a as $,
   c as ee,
   d as fe,
   s as q
-} from "./CQ7hOUU7.js";
+} from "./DjjYsWFC.js";
 import {
   g as O,
   t as V,
   P as _e,
   a as ve
-} from "./DSGgno5Y.js";
+} from "./Bg0sKKbS.js";
 import {
   o as me
-} from "./CZ0juL9R.js";
+} from "./Da4WTvOv.js";
 import {
   g as h
-} from "./44LEXnLU.js";
+} from "./BS_YoBqz.js";
 import {
   L as be
-} from "./Cf6ViYgo.js";
+} from "./Dx-1CPhW.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "c5b6f4008280188b6965f20aa04502030e013ff2"
+      id: "30249c0052a6db2e8885effd6fd4553811e48ab4"
     }
   } catch {}
 })();
@@ -64,7 +64,7 @@ try {
   (function() {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new a.Error().stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "1eb23a55-61eb-49ed-ac1c-963d49912ab0", a._sentryDebugIdIdentifier = "sentry-dbid-1eb23a55-61eb-49ed-ac1c-963d49912ab0")
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "961b63f2-0dd8-41a2-b919-7ca63e320f06", a._sentryDebugIdIdentifier = "sentry-dbid-961b63f2-0dd8-41a2-b919-7ca63e320f06")
   })()
 } catch {}
 
@@ -98,11 +98,11 @@ const he = a => `Login with ${a.name}`,
   Pe = () => "Política de privacidade",
   Se = (a = {}, e = {}) => (e.locale ?? h()) === "en" ? De() : Pe(),
   Fe = () => "Do you have a Wplace Twitch account?",
-  ze = () => "Você tem uma conta Wplace associada à Twitch?",
-  Ne = (a = {}, e = {}) => (e.locale ?? h()) === "en" ? Fe() : ze(),
-  Re = () => "Migrate your account",
+  Ne = () => "Você tem uma conta Wplace associada à Twitch?",
+  Re = (a = {}, e = {}) => (e.locale ?? h()) === "en" ? Fe() : Ne(),
+  ze = () => "Migrate your account",
   Ae = () => "Migre sua conta",
-  Ge = (a = {}, e = {}) => (e.locale ?? h()) === "en" ? Re() : Ae(),
+  Ge = (a = {}, e = {}) => (e.locale ?? h()) === "en" ? ze() : Ae(),
   Ke = () => "Code of Conduct",
   Ue = () => "Código de Conduta",
   je = (a = {}, e = {}) => (e.locale ?? h()) === "en" ? Ke() : Ue();
@@ -197,7 +197,7 @@ function Oe(a, e) {
     var F = t => {
       var i = He();
       let o;
-      ge(i, (c, l) => T == null ? void 0 : T(c, l), () => k(E)), R(c => o = $(i, 1, ee(e.class), "svelte-1gvfki5", o, c), [() => ({
+      ge(i, (c, l) => T == null ? void 0 : T(c, l), () => k(E)), z(c => o = $(i, 1, ee(e.class), "svelte-1gvfki5", o, c), [() => ({
         flexible: D() == "flexible"
       })]), C(t, i)
     };
@@ -210,7 +210,7 @@ function Oe(a, e) {
 var We = se('<svg><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" fill="#4285F4"></path><path d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" fill="#34A853"></path><path d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" fill="#FBBC05"></path><path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" fill="#EB4335"></path></svg>');
 
 function Ye(a, e) {
-  let n = de(e, ["$$slots", "$$events", "$$legacy"]);
+  let n = ue(e, ["$$slots", "$$events", "$$legacy"]);
   var r = We();
   fe(r, () => ({
     viewBox: "0 0 256 262",
@@ -225,31 +225,31 @@ var qe = A('<a><!> </a> <div class="mt-2 flex flex-col items-center gap-1"><!> <
 function rt(a, e) {
   X(e, !0);
   let n = s(e, "showTwitchMigration", 3, !0),
-    r = J(ue(V ? "" : "turnstile-disabled"));
+    r = J(de(V ? "" : "turnstile-disabled"));
 
   function y(c, l) {
     return `${_e}/auth/${c}?token=${l}${e.redirect?`&r=${e.redirect}`:""}`
   }
   var m = Xe(),
-    _ = u(m),
-    G = u(_);
+    _ = d(m),
+    G = d(_);
   be(G, {
     hasText: !0
-  }), d(_);
+  }), u(_);
   var I = f(_, 2),
-    K = u(I);
+    K = d(I);
   {
     var D = c => {
       var l = qe(),
         v = Q(l),
-        b = u(v);
+        b = d(v);
       Ye(b, {
         class: "mr-1 size-5"
       });
       var M = f(b);
-      d(v);
-      var z = f(v, 2),
-        N = u(z);
+      u(v);
+      var N = f(v, 2),
+        R = d(N);
       {
         var j = x => {
           {
@@ -264,12 +264,12 @@ function rt(a, e) {
             })
           }
         };
-        B(N, x => {
+        B(R, x => {
           V && x(j)
         })
       }
-      var te = f(N, 2);
-      B(te, x => {}), d(z), R((x, H) => {
+      var te = f(R, 2);
+      B(te, x => {}), u(N), z((x, H) => {
         $(v, 1, ee({
           "btn btn-lg bg-base-100 w-full text-base": !0,
           "bg-base-content/10 pointer-events-none": !k(r)
@@ -282,35 +282,35 @@ function rt(a, e) {
       c(D, !1)
     })
   }
-  d(I);
+  u(I);
   var L = f(I, 2),
-    U = u(L),
+    U = d(L),
     E = f(U),
-    T = u(E, !0);
-  d(E);
+    T = d(E, !0);
+  u(E);
   var w = f(E, 2),
-    P = u(w, !0);
-  d(w);
+    P = d(w, !0);
+  u(w);
   var S = f(w),
     F = f(S),
-    t = u(F, !0);
-  d(F), Y(), d(L);
+    t = d(F, !0);
+  u(F), Y(), u(L);
   var i = f(L, 2);
   {
     var o = c => {
       var l = Ve(),
-        v = u(l),
+        v = d(l),
         b = f(v),
-        M = u(b, !0);
-      d(b), Y(), d(l), R((z, N, j) => {
-        g(v, `${z??""} `), q(b, "href", N), g(M, j)
-      }, [() => Ne(), () => y("twitch", ""), () => Ge()]), C(c, l)
+        M = d(b, !0);
+      u(b), Y(), u(l), z((N, R, j) => {
+        g(v, `${N??""} `), q(b, "href", R), g(M, j)
+      }, [() => Re(), () => y("twitch", ""), () => Ge()]), C(c, l)
     };
     B(i, c => {
       n() && c(o)
     })
   }
-  d(m), R((c, l, v, b, M) => {
+  u(m), z((c, l, v, b, M) => {
     g(U, `${c??""} `), g(T, l), g(P, v), g(S, ` ${b??""} `), g(t, M)
   }, [() => Ce(), () => Ee(), () => Se(), () => Be(), () => je()]), C(a, m), Z()
 }
