@@ -5,12 +5,12 @@ var Re = (n, t, i) => t.has(n) || He("Cannot " + i);
 var gt = (n, t, i) => (Re(n, t, "read from private field"), i ? i.call(n) : t.get(n)),
   Qt = (n, t, i) => t.has(n) ? He("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(n) : t.set(n, i),
   qt = (n, t, i, h) => (Re(n, t, "write to private field"), h ? h.call(n, i) : t.set(n, i), i);
-import "../chunks/B5oLh0nu.js";
+import "../chunks/AoAsxiA5.js";
 import {
   o as pt,
   s as it,
   v as en
-} from "../chunks/BQgBiDIg.js";
+} from "../chunks/6aqDpduF.js";
 import {
   p as de,
   f as et,
@@ -38,15 +38,15 @@ import {
   x as on,
   B as Fe,
   H as ne,
-  bm as sn
-} from "../chunks/BDq-HR17.js";
+  bk as sn
+} from "../chunks/CBd9NCKG.js";
 import {
   s as Jt
-} from "../chunks/Dx01DExO.js";
+} from "../chunks/DUA3RLV8.js";
 import {
   g as Ue,
   P as rn
-} from "../chunks/DzZbHAw4.js";
+} from "../chunks/DfCXz481.js";
 import {
   f as G,
   j as xt,
@@ -58,23 +58,23 @@ import {
   a as fn,
   r as vn,
   n as mn
-} from "../chunks/BgbTAlCn.js";
+} from "../chunks/CPd32RcB.js";
 import {
   c as gn,
   A as hn,
   s as _n,
   a as bn
-} from "../chunks/Ccq6WFd0.js";
-import "../chunks/Cop95dKZ.js";
+} from "../chunks/Dev5zsUK.js";
+import "../chunks/eqSfXg5t.js";
 import {
   p as O,
   i as T,
   s as Ae,
   r as wn
-} from "../chunks/D2wtnjjb.js";
+} from "../chunks/48K2UdfX.js";
 import {
   e as Le
-} from "../chunks/DPQYz9rJ.js";
+} from "../chunks/BeGeEKS5.js";
 import {
   c as It,
   a as Tt,
@@ -82,19 +82,19 @@ import {
   f as Ce,
   d as yn,
   S as xn
-} from "../chunks/CLb4R4mm.js";
+} from "../chunks/Djw9YyXo.js";
 import {
   b as Ke
-} from "../chunks/Br_9cmxN.js";
+} from "../chunks/DZVu8Igu.js";
 import {
   c as Pt
-} from "../chunks/DS1eUmt_.js";
-import "../chunks/rTkK1miT.js";
+} from "../chunks/DV_Uyrk9.js";
+import "../chunks/D36qdjQx.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "0f5526c28af3fe231e905447f161f05590c76727"
+      id: "251f3ef5bc14649f46f335286261e6c964681eae"
     }
   } catch {}
 })();
@@ -102,7 +102,7 @@ try {
   (function() {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       t = new n.Error().stack;
-    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "5da295ee-fd70-4ddb-93e7-cee2fe4e55ce", n._sentryDebugIdIdentifier = "sentry-dbid-5da295ee-fd70-4ddb-93e7-cee2fe4e55ce")
+    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "a039532a-aee5-42cb-bd56-b17e91d0dea5", n._sentryDebugIdIdentifier = "sentry-dbid-a039532a-aee5-42cb-bd56-b17e91d0dea5")
   })()
 } catch {}
 const In = !0,
@@ -303,7 +303,7 @@ function qn(n, t) {
   const $ = {
     ...Nn
   };
-  let L = H(!1),
+  let M = H(!1),
     Q = H(!1),
     Ot = H(!1),
     jt = H(!1),
@@ -384,7 +384,7 @@ function qn(n, t) {
     t.toast.updated && (clearTimeout(F), kt = e(me), st())
   }), _t(() => (e(wt) || (t.expanded || t.interacting || he.current ? Ht() : st()), () => clearTimeout(F))), pt(() => {
     var c;
-    u(L, !0);
+    u(M, !0);
     const r = (c = e(nt)) == null ? void 0 : c.getBoundingClientRect().height;
     return u(bt, r, !0), G.setHeight({
       toastId: t.toast.id,
@@ -493,8 +493,8 @@ function qn(n, t) {
               d = ot(o);
             {
               var E = b => {
-                var M = g(),
-                  j = v(M);
+                var L = g(),
+                  j = v(L);
                 {
                   var N = Z => {
                       var z = g(),
@@ -510,7 +510,7 @@ function qn(n, t) {
                     t.toast.icon ? Z(N) : Z(P, !1)
                   })
                 }
-                a(b, M)
+                a(b, L)
               };
               T(d, b => {
                 (t.toast.promise || e(A) === "loading") && b(E)
@@ -519,8 +519,8 @@ function qn(n, t) {
             var R = At(d, 2);
             {
               var s = b => {
-                var M = g(),
-                  j = v(M);
+                var L = g(),
+                  j = v(L);
                 {
                   var N = Z => {
                       var z = g(),
@@ -593,15 +593,15 @@ function qn(n, t) {
                     t.toast.icon ? Z(N) : Z(P, !1)
                   })
                 }
-                a(b, M)
+                a(b, L)
               };
               T(R, b => {
                 t.toast.type !== "loading" && b(s)
               })
             }
             p(o), J(b => Tt(o, 1, b), [() => {
-              var b, M, j;
-              return It(xt((b = e(at)) == null ? void 0 : b.icon, (j = (M = t.toast) == null ? void 0 : M.classes) == null ? void 0 : j.icon))
+              var b, L, j;
+              return It(xt((b = e(at)) == null ? void 0 : b.icon, (j = (L = t.toast) == null ? void 0 : L.classes) == null ? void 0 : j.icon))
             }]), a(x, o)
           };
           T(I, x => {
@@ -618,11 +618,11 @@ function qn(n, t) {
             {
               var E = s => {
                   const b = w(() => t.toast.title);
-                  var M = g(),
-                    j = v(M);
+                  var L = g(),
+                    j = v(L);
                   Pt(j, () => e(b), (N, P) => {
                     P(N, Ae(() => t.toast.componentProps))
-                  }), a(s, M)
+                  }), a(s, L)
                 },
                 R = s => {
                   var b = Fe();
@@ -647,11 +647,11 @@ function qn(n, t) {
             {
               var E = s => {
                   const b = w(() => t.toast.description);
-                  var M = g(),
-                    j = v(M);
+                  var L = g(),
+                    j = v(L);
                   Pt(j, () => e(b), (N, P) => {
                     P(N, Ae(() => t.toast.componentProps))
-                  }), a(s, M)
+                  }), a(s, L)
                 },
                 R = s => {
                   var b = Fe();
@@ -679,14 +679,14 @@ function qn(n, t) {
             {
               var E = s => {
                   var b = g(),
-                    M = v(b);
-                  Pt(M, () => t.toast.cancel, (j, N) => {
+                    L = v(b);
+                  Pt(L, () => t.toast.cancel, (j, N) => {
                     N(j, {})
                   }), a(s, b)
                 },
                 R = s => {
                   var b = g(),
-                    M = v(b);
+                    L = v(b);
                   {
                     var j = N => {
                       var P = Yn();
@@ -699,7 +699,7 @@ function qn(n, t) {
                         return It(xt((z = e(at)) == null ? void 0 : z.cancelButton, (dt = (ct = t.toast) == null ? void 0 : ct.classes) == null ? void 0 : dt.cancelButton))
                       }]), a(N, P)
                     };
-                    T(M, N => {
+                    T(L, N => {
                       ce(t.toast.cancel) && N(j)
                     }, !0)
                   }
@@ -723,14 +723,14 @@ function qn(n, t) {
             {
               var E = s => {
                   var b = g(),
-                    M = v(b);
-                  Pt(M, () => t.toast.action, (j, N) => {
+                    L = v(b);
+                  Pt(L, () => t.toast.action, (j, N) => {
                     N(j, {})
                   }), a(s, b)
                 },
                 R = s => {
                   var b = g(),
-                    M = v(b);
+                    L = v(b);
                   {
                     var j = N => {
                       var P = Gn();
@@ -743,7 +743,7 @@ function qn(n, t) {
                         return It(xt((z = e(at)) == null ? void 0 : z.actionButton, (dt = (ct = t.toast) == null ? void 0 : ct.classes) == null ? void 0 : dt.actionButton))
                       }]), a(N, P)
                     };
-                    T(M, N => {
+                    T(L, N => {
                       ce(t.toast.action) && N(j)
                     }, !0)
                   }
@@ -769,11 +769,11 @@ function qn(n, t) {
     })
   }
   p(y), Ke(y, r => u(nt, r), () => e(nt)), J((r, c, I, S) => {
-    Tt(y, 1, r), C(y, "data-rich-colors", t.toast.richColors ?? Bt()), C(y, "data-styled", !(t.toast.component || t.toast.unstyled || V())), C(y, "data-mounted", e(L)), C(y, "data-promise", c), C(y, "data-swiped", e(zt)), C(y, "data-removed", e(Q)), C(y, "data-visible", e(ve)), C(y, "data-y-position", e(ae)[0]), C(y, "data-x-position", e(ae)[1]), C(y, "data-index", t.index), C(y, "data-front", e(fe)), C(y, "data-swiping", e(Ot)), C(y, "data-dismissable", e(ft)), C(y, "data-type", e(A)), C(y, "data-invert", e(_e)), C(y, "data-swipe-out", e(jt)), C(y, "data-swipe-direction", e(Vt)), C(y, "data-expanded", I), se = Ce(y, `${t.style} ${t.toast.style}`, se, S)
+    Tt(y, 1, r), C(y, "data-rich-colors", t.toast.richColors ?? Bt()), C(y, "data-styled", !(t.toast.component || t.toast.unstyled || V())), C(y, "data-mounted", e(M)), C(y, "data-promise", c), C(y, "data-swiped", e(zt)), C(y, "data-removed", e(Q)), C(y, "data-visible", e(ve)), C(y, "data-y-position", e(ae)[0]), C(y, "data-x-position", e(ae)[1]), C(y, "data-index", t.index), C(y, "data-front", e(fe)), C(y, "data-swiping", e(Ot)), C(y, "data-dismissable", e(ft)), C(y, "data-type", e(A)), C(y, "data-invert", e(_e)), C(y, "data-swipe-out", e(jt)), C(y, "data-swipe-direction", e(Vt)), C(y, "data-expanded", I), se = Ce(y, `${t.style} ${t.toast.style}`, se, S)
   }, [() => {
     var r, c, I, S, B, _;
     return It(xt(t.class, e(Ct), (r = e(at)) == null ? void 0 : r.toast, (I = (c = t.toast) == null ? void 0 : c.classes) == null ? void 0 : I.toast, (S = e(at)) == null ? void 0 : S[e(A)], (_ = (B = t.toast) == null ? void 0 : B.classes) == null ? void 0 : _[e(A)]))
-  }, () => !!t.toast.promise, () => !!(t.expanded || t.expandByDefault && e(L)), () => ({
+  }, () => !!t.toast.promise, () => !!(t.expanded || t.expandByDefault && e(M)), () => ({
     "--index": t.index,
     "--toasts-before": t.index,
     "--z-index": G.toasts.length - t.index,
@@ -828,14 +828,14 @@ function ua(n, t) {
       V = k ? "--mobile-offset" : "--offset",
       Bt = k ? Ze : Ye;
 
-    function $(L) {
+    function $(M) {
       ["top", "right", "bottom", "left"].forEach(Q => {
-        i[`${V}-${Q}`] = typeof L == "number" ? `${L}px` : L
+        i[`${V}-${Q}`] = typeof M == "number" ? `${M}px` : M
       })
     }
-    typeof h == "number" || typeof h == "string" ? $(h) : typeof h == "object" ? ["top", "right", "bottom", "left"].forEach(L => {
-      const Q = h[L];
-      Q === void 0 ? i[`${V}-${L}`] = Bt : i[`${V}-${L}`] = typeof Q == "number" ? `${Q}px` : Q
+    typeof h == "number" || typeof h == "string" ? $(h) : typeof h == "object" ? ["top", "right", "bottom", "left"].forEach(M => {
+      const Q = h[M];
+      Q === void 0 ? i[`${V}-${M}`] = Bt : i[`${V}-${M}`] = typeof Q == "number" ? `${Q}px` : Q
     }) : $(Bt)
   }), i
 }
@@ -854,7 +854,7 @@ function ma(n, t) {
     V = O(t, "expand", 3, !1),
     Bt = O(t, "closeButton", 3, !1),
     $ = O(t, "offset", 3, Ye),
-    L = O(t, "mobileOffset", 3, Ze),
+    M = O(t, "mobileOffset", 3, Ze),
     Q = O(t, "theme", 3, "light"),
     Ot = O(t, "richColors", 3, !1),
     jt = O(t, "duration", 3, la),
@@ -960,7 +960,7 @@ function ma(n, t) {
               x: y
             }
           }),
-          mt = w(() => ua($(), L()));
+          mt = w(() => ua($(), M()));
         var yt = fa();
         yn(yt, (W, y) => ({
           tabindex: -1,
@@ -1288,8 +1288,8 @@ var wa = et('<span class="hidden"> </span> <!> <!>', 1);
 
 function Ra(n, t) {
   de(t, !0), pt(() => {
-    mn(), Pe.refresh().then(L => {
-      L && ha()
+    mn(), Pe.refresh().then(M => {
+      M && ha()
     }), Object.assign(window, {
       eval: ba(eval, function() {}, async () => {
         await fetch(rn + "/me", {
@@ -1313,10 +1313,10 @@ function Ra(n, t) {
   }), _t(() => {
     {
       const $ = Ue.muted;
-      document.querySelectorAll("audio").forEach(L => {
-        L.muted = $
+      document.querySelectorAll("audio").forEach(M => {
+        M.muted = $
       });
-      for (const L of Object.values(hn)) L.muted = $, $ || (L.volume = .3);
+      for (const M of Object.values(hn)) M instanceof Audio && (M.muted = $, $ || (M.volume = .3));
       localStorage.setItem(i, Number($).toString())
     }
   }), pt(() => {});

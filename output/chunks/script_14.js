@@ -9,12 +9,12 @@ import {
   h as o,
   e as r,
   y as p
-} from "./BDq-HR17.js";
+} from "./CBd9NCKG.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "0f5526c28af3fe231e905447f161f05590c76727"
+      id: "251f3ef5bc14649f46f335286261e6c964681eae"
     }
   } catch {}
 })();
@@ -22,39 +22,38 @@ try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "67bafb4a-810d-4aae-85e9-06a8a07e70b8", t._sentryDebugIdIdentifier = "sentry-dbid-67bafb4a-810d-4aae-85e9-06a8a07e70b8")
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "9a05af9e-35b3-4738-8548-703427c1e17f", t._sentryDebugIdIdentifier = "sentry-dbid-9a05af9e-35b3-4738-8548-703427c1e17f")
   })()
 } catch {}
 const L = "true",
-  S = "https://backend.wplace.live/files",
+  D = "https://backend.wplace.live/files",
   v = "0x4AAAAAABpHqZ-6i7uL0nmG",
-  A = "https://backend.wplace.live",
-  m = "theme";
-var g, l, u, d, f, c, h;
+  A = "https://backend.wplace.live";
+var l, g, u, d, f, h, c;
 class y {
   constructor() {
-    n(this, g, s(!1));
     n(this, l, s(!1));
-    n(this, u, s(p(I())));
+    n(this, g, s(!1));
+    n(this, u, s(p(m())));
     n(this, d, s(!1));
-    n(this, f, s("custom-winter"));
-    n(this, c, s(p(Date.now())));
-    n(this, h, s(void 0));
+    n(this, f, s("halloween"));
+    n(this, h, s(p(Date.now())));
+    n(this, c, s(void 0));
     setInterval(() => {
-      r(a(this, c), Date.now(), !0)
-    }, 500), this.theme = localStorage.getItem(m) || "custom-winter"
+      r(a(this, h), Date.now(), !0)
+    }, 500), this.theme = "halloween"
   }
   get dropletsDialogOpen() {
-    return o(a(this, g))
-  }
-  set dropletsDialogOpen(e) {
-    r(a(this, g), e, !0)
-  }
-  get muted() {
     return o(a(this, l))
   }
-  set muted(e) {
+  set dropletsDialogOpen(e) {
     r(a(this, l), e, !0)
+  }
+  get muted() {
+    return o(a(this, g))
+  }
+  set muted(e) {
+    r(a(this, g), e, !0)
   }
   get language() {
     return o(a(this, u))
@@ -72,25 +71,25 @@ class y {
     return o(a(this, f))
   }
   set theme(e) {
-    r(a(this, f), e, !0), localStorage.setItem(m, e), document.documentElement.setAttribute("data-theme", e)
+    r(a(this, f), e, !0), document.documentElement.setAttribute("data-theme", e)
   }
   get now() {
-    return o(a(this, c))
+    return o(a(this, h))
   }
   get captcha() {
-    return E ? o(a(this, h)) : {
+    return E ? o(a(this, c)) : {
       token: "turnstile-disabled",
       time: Date.now()
     }
   }
   set captcha(e) {
-    r(a(this, h), e, !0)
+    r(a(this, c), e, !0)
   }
 }
-g = new WeakMap, l = new WeakMap, u = new WeakMap, d = new WeakMap, f = new WeakMap, c = new WeakMap, h = new WeakMap;
+l = new WeakMap, g = new WeakMap, u = new WeakMap, d = new WeakMap, f = new WeakMap, h = new WeakMap, c = new WeakMap;
 const T = new y;
 
-function I() {
+function m() {
   if (navigator.languages && navigator.languages.length > 0) {
     const t = navigator.languages.find(e => e.length === 2);
     if (t) return t
@@ -99,5 +98,5 @@ function I() {
 }
 const E = L.toLowerCase() !== "false";
 export {
-  A as P, v as a, S as b, T as g, E as t
+  A as P, v as a, D as b, T as g, E as t
 };
