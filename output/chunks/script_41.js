@@ -1,29 +1,29 @@
-import "./_4b585Q4.js";
+import "./DxmA28w3.js";
 import {
   p as m,
-  f,
+  f as c,
   t as A,
-  b as r,
+  b as f,
   c as v,
   d as y,
   s as _,
   r as h
-} from "./DRybHg5Z.js";
+} from "./Ceyo7U-X.js";
 import {
   p as w,
   i as x,
   r as E
-} from "./CxIl7U_E.js";
+} from "./DRq6TJot.js";
 import {
   d as T,
-  a as c,
+  a as r,
   s as S
-} from "./CH9a9qxL.js";
+} from "./DMoiYdRV.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "52c32908d40da7633c03ed8a85ce90814a387626"
+      id: "1eec49a8880aaf0322f1c231fa7de26d6c5b6e23"
     }
   } catch {}
 })();
@@ -35,8 +35,8 @@ try {
   })()
 } catch {}
 const B = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
-var L = f("<span>wplace</span>"),
-  R = f('<div><img alt="Wplace logo"/> <!></div>');
+var L = c("<span>wplace</span>"),
+  R = c('<div><img alt="Wplace logo"/> <!></div>');
 
 function z(e, a) {
   m(a, !0);
@@ -54,22 +54,22 @@ function z(e, a) {
     var p = s => {
       var n = L();
       let d;
-      A(u => d = c(n, 1, "text-base-content font-pixel", null, d, u), [() => ({
+      A(u => d = r(n, 1, "text-base-content font-pixel", null, d, u), [() => ({
         "text-4xl": t() === "default",
         "text-5xl": t() === "lg" || t() === "medium"
-      })]), r(s, n)
+      })]), f(s, n)
     };
     x(g, s => {
       a.hasText && s(p)
     })
   }
   h(l), A(s => {
-    o = c(i, 1, "pixelated", null, o, s), S(i, "src", B)
+    o = r(i, 1, "pixelated", null, o, s), S(i, "src", B)
   }, [() => ({
     "size-10": t() === "default",
     "size-16": t() === "medium",
     "size-20": t() === "lg"
-  })]), r(e, l), v()
+  })]), f(e, l), v()
 }
 export {
   z as L

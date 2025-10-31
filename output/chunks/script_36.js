@@ -12,12 +12,12 @@ import {
   v as I,
   U as k,
   w as D
-} from "./DRybHg5Z.js";
+} from "./Ceyo7U-X.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "52c32908d40da7633c03ed8a85ce90814a387626"
+      id: "1eec49a8880aaf0322f1c231fa7de26d6c5b6e23"
     }
   } catch {}
 })();
@@ -31,21 +31,21 @@ try {
 
 function T(e, n, c) {
   l && p();
-  var d = e,
-    t = k,
-    f, o, a = null,
+  var f = e,
+    d = k,
+    t, o, a = null,
     u = b() ? y : _;
 
   function s() {
-    f && D(f), a !== null && (a.lastChild.remove(), d.before(a), a = null), f = o
+    t && D(t), a !== null && (a.lastChild.remove(), f.before(a), a = null), t = o
   }
   g(() => {
-    if (u(t, t = n())) {
-      var i = d,
+    if (u(d, d = n())) {
+      var i = f,
         r = w();
       r && (a = document.createDocumentFragment(), a.append(i = h())), o = v(() => c(i)), r ? m.add_callback(s) : s()
     }
-  }), l && (d = I)
+  }), l && (f = I)
 }
 export {
   T as k
