@@ -1,29 +1,29 @@
-import "./CupUxZ7_.js";
+import "./DJf8azCZ.js";
 import {
   p as m,
-  f as c,
-  t as d,
-  b as f,
+  f as r,
+  t as f,
+  b as A,
   c as v,
   d as y,
   s as _,
   r as h
-} from "./NLGz-70w.js";
+} from "./KRt5sQSh.js";
 import {
   p as w,
   i as x,
   r as E
-} from "./AgN57aFU.js";
+} from "./B05Gf6YB.js";
 import {
   d as T,
-  a as r,
+  a as c,
   s as S
-} from "./Dk-AZfrG.js";
+} from "./QDzF7g1C.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "41ce59a02f0ef4fd076afbbc4021177761c67304"
+      id: "fccd346089ef1c0c20bf6dbcc60efaf285af3b07"
     }
   } catch {}
 })();
@@ -35,8 +35,8 @@ try {
   })()
 } catch {}
 const B = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
-var L = c("<span>wplace</span>"),
-  R = c('<div><img alt="Wplace logo"/> <!></div>');
+var L = r("<span>wplace</span>"),
+  R = r('<div><img alt="Wplace logo"/> <!></div>');
 
 function z(e, t) {
   m(t, !0);
@@ -53,23 +53,23 @@ function z(e, t) {
   {
     var p = s => {
       var n = L();
-      let A;
-      d(u => A = r(n, 1, "text-base-content font-pixel", null, A, u), [() => ({
+      let d;
+      f(u => d = c(n, 1, "text-base-content font-pixel", null, d, u), [() => ({
         "text-4xl": a() === "default",
         "text-5xl": a() === "lg" || a() === "medium"
-      })]), f(s, n)
+      })]), A(s, n)
     };
     x(g, s => {
       t.hasText && s(p)
     })
   }
-  h(l), d(s => {
-    o = r(i, 1, "pixelated", null, o, s), S(i, "src", B)
+  h(l), f(s => {
+    o = c(i, 1, "pixelated", null, o, s), S(i, "src", B)
   }, [() => ({
     "size-10": a() === "default",
     "size-16": a() === "medium",
     "size-20": a() === "lg"
-  })]), f(e, l), v()
+  })]), A(e, l), v()
 }
 export {
   z as L
