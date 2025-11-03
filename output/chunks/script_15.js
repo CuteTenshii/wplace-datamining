@@ -19,22 +19,22 @@ import {
   e as S,
   L as ee,
   u as A
-} from "./C6P_s34q.js";
+} from "./WvGh61NJ.js";
 import {
   P as re,
   g as he
-} from "./WtJ3DFgL.js";
+} from "./BfCLzTjL.js";
 import {
   g as u
-} from "./DqKoccka.js";
+} from "./BhWn7wLv.js";
 import {
   s as _e
-} from "./D_ayb0_S.js";
+} from "./FH8uIX87.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "5eef7edadf0463417f66f3780a2aa73c26362de2"
+      id: "dd4f8190f88bd342b0302e9b73d1fd999bcdb862"
     }
   } catch {}
 })();
@@ -70,9 +70,9 @@ class we {
       message: r
     }) => {
       const s = this.toasts.findIndex(i => i.id === e),
-        l = this.toasts[s];
+        d = this.toasts[s];
       this.toasts[s] = {
-        ...l,
+        ...d,
         ...t,
         id: e,
         title: r,
@@ -85,12 +85,12 @@ class we {
       const {
         message: t,
         ...n
-      } = e, r = typeof(e == null ? void 0 : e.id) == "number" || e.id && ((i = e.id) == null ? void 0 : i.length) > 0 ? e.id : te++, s = e.dismissable === void 0 ? !0 : e.dismissable, l = e.type === void 0 ? "default" : e.type;
+      } = e, r = typeof(e == null ? void 0 : e.id) == "number" || e.id && ((i = e.id) == null ? void 0 : i.length) > 0 ? e.id : te++, s = e.dismissable === void 0 ? !0 : e.dismissable, d = e.type === void 0 ? "default" : e.type;
       return ee(() => {
         this.toasts.find(f => f.id === r) ? this.updateToast({
           id: r,
           data: e,
-          type: l,
+          type: d,
           message: t,
           dismissable: s
         }) : this.addToast({
@@ -98,7 +98,7 @@ class we {
           id: r,
           title: t,
           dismissable: s,
-          type: l
+          type: d
         })
       }), r
     });
@@ -165,10 +165,10 @@ class we {
       }));
       const r = e instanceof Promise ? e : e();
       let s = n !== void 0;
-      return r.then(l => {
-        if (typeof l == "object" && l && "ok" in l && typeof l.ok == "boolean" && !l.ok) {
+      return r.then(d => {
+        if (typeof d == "object" && d && "ok" in d && typeof d.ok == "boolean" && !d.ok) {
           s = !1;
-          const i = ye(l);
+          const i = ye(d);
           this.create({
             id: n,
             type: "error",
@@ -176,17 +176,17 @@ class we {
           })
         } else if (t.success !== void 0) {
           s = !1;
-          const i = typeof t.success == "function" ? t.success(l) : t.success;
+          const i = typeof t.success == "function" ? t.success(d) : t.success;
           this.create({
             id: n,
             type: "success",
             message: i
           })
         }
-      }).catch(l => {
+      }).catch(d => {
         if (t.error !== void 0) {
           s = !1;
-          const i = typeof t.error == "function" ? t.error(l) : t.error;
+          const i = typeof t.error == "function" ? t.error(d) : t.error;
           this.create({
             id: n,
             type: "error",
@@ -194,8 +194,8 @@ class we {
           })
         }
       }).finally(() => {
-        var l;
-        s && (this.dismiss(n), n = void 0), (l = t.finally) == null || l.call(t)
+        var d;
+        s && (this.dismiss(n), n = void 0), (d = t.finally) == null || d.call(t)
       }), n
     });
     h(this, "custom", (e, t) => {
@@ -357,32 +357,32 @@ const K = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
     }
   };
 
-function le(a, e, t) {
+function de(a, e, t) {
   if (t === void 0) {
     const i = K.encode(a),
-      d = e(i.length, 1) >>> 0;
-    return F().subarray(d, d + i.length).set(i), V = i.length, d
+      l = e(i.length, 1) >>> 0;
+    return F().subarray(l, l + i.length).set(i), V = i.length, l
   }
   let n = a.length,
     r = e(n, 1) >>> 0;
   const s = F();
-  let l = 0;
-  for (; l < n; l++) {
-    const i = a.charCodeAt(l);
+  let d = 0;
+  for (; d < n; d++) {
+    const i = a.charCodeAt(d);
     if (i > 127) break;
-    s[r + l] = i
+    s[r + d] = i
   }
-  if (l !== n) {
-    l !== 0 && (a = a.slice(l)), r = t(r, n, n = l + a.length * 3, 1) >>> 0;
-    const i = F().subarray(r + l, r + n),
-      d = ve(a, i);
-    l += d.written, r = t(r, n, l, 1) >>> 0
+  if (d !== n) {
+    d !== 0 && (a = a.slice(d)), r = t(r, n, n = d + a.length * 3, 1) >>> 0;
+    const i = F().subarray(r + d, r + n),
+      l = ve(a, i);
+    d += l.written, r = t(r, n, d, 1) >>> 0
   }
-  return V = l, r
+  return V = d, r
 }
 
-function la(a) {
-  const e = le(a, m.__wbindgen_malloc, m.__wbindgen_realloc),
+function da(a) {
+  const e = de(a, m.__wbindgen_malloc, m.__wbindgen_realloc),
     t = V;
   m.request_url(e, t)
 }
@@ -400,7 +400,7 @@ function Ee() {
 function Pe(a) {
   let e, t;
   try {
-    const n = le(a, m.__wbindgen_malloc, m.__wbindgen_realloc),
+    const n = de(a, m.__wbindgen_malloc, m.__wbindgen_realloc),
       r = V,
       s = m.get_pawtected_endpoint_payload(n, r);
     return e = s[0], t = s[1], q(s[0], s[1])
@@ -557,8 +557,8 @@ const Ie = () => "Unexpected server error. Try again later.",
   ot = () => "Você não tem gotas suficientes para comprar este item.",
   it = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? st() : ot(),
   ct = () => "You already have this item. Please refresh the page.",
-  lt = () => "Você já possui este item. Atualize a página.",
-  dt = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? ct() : lt(),
+  dt = () => "Você já possui este item. Atualize a página.",
+  lt = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? ct() : dt(),
   ut = () => "Alliance name exceeded the maximum number of characters",
   ft = () => "O nome da aliança excedeu o número máximo de caracteres",
   gt = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? ut() : ft(),
@@ -613,9 +613,9 @@ const Ie = () => "Unexpected server error. Try again later.",
   sn = () => "Breaking the rules",
   on = () => "Quebrar as regras",
   cn = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? sn() : on(),
-  ln = () => "Your account has been suspended for breaking the rules",
-  dn = () => "Sua conta foi suspensa por quebrar as regras",
-  un = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? ln() : dn(),
+  dn = () => "Your account has been suspended for breaking the rules",
+  ln = () => "Sua conta foi suspensa por quebrar as regras",
+  un = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? dn() : ln(),
   fn = () => "Your account has been banned for violating the rules",
   gn = () => "A sua conta foi banida por quebrar as regras",
   mn = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? fn() : gn(),
@@ -640,10 +640,10 @@ const Ie = () => "Unexpected server error. Try again later.",
   kn = a => `You can change your name again in ${a.days} days`,
   Mn = a => `Você pode alterar seu nome novamente em ${a.days} dias.`,
   Ln = (a, e = {}) => (e.locale ?? u()) === "en" ? kn(a) : Mn(a),
-  de = () => "You cannot paint over event pixels",
-  Bn = de,
-  Dn = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? de() : Bn(),
-  da = {
+  le = () => "You cannot paint over event pixels",
+  Bn = le,
+  Dn = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? le() : Bn(),
+  la = {
     griefing: Yt(),
     "multi-accounting": rn(),
     "hate-speech": zt(),
@@ -686,10 +686,10 @@ class Gn {
     const n = Math.floor(e / 8),
       r = e % 8;
     if (n >= this.bytes.length) {
-      const l = new Uint8Array(n + 1),
-        i = l.length - this.bytes.length;
-      for (let d = 0; d < this.bytes.length; d++) l[d + i] = this.bytes[d];
-      this.bytes = l
+      const d = new Uint8Array(n + 1),
+        i = d.length - this.bytes.length;
+      for (let l = 0; l < this.bytes.length; l++) d[l + i] = this.bytes[l];
+      this.bytes = d
     }
     const s = this.bytes.length - 1 - n;
     t ? this.bytes[s] = this.bytes[s] | 1 << r : this.bytes[s] = this.bytes[s] & ~(1 << r)
@@ -1210,13 +1210,13 @@ class Qn {
     const n = $n(e, i => `t=(${i.tile[0]},${i.tile[1]}),s=${i.season}`),
       r = Zn("2025-09_pawtect");
     if (!r) throw new Error("paint request while pawtect experiment not found");
-    const l = (await Promise.all(Object.values(n).map(i => {
-      const [d, f] = i[0].tile, w = i[0].season, _ = {
+    const d = (await Promise.all(Object.values(n).map(i => {
+      const [l, f] = i[0].tile, w = i[0].season, _ = {
         colors: i.map(Y => Y.colorIdx),
         coords: i.flatMap(Y => Y.pixel),
         fp: t
       }, j = JSON.stringify(_);
-      return this.request(`/s${w}/pixel/${d}/${f}`, {
+      return this.request(`/s${w}/pixel/${l}/${f}`, {
         method: "POST",
         body: j,
         headers: {
@@ -1226,23 +1226,23 @@ class Qn {
         credentials: "include"
       })
     }))).filter(i => i.status !== 200);
-    if (l.length) {
-      const i = l[0];
+    if (d.length) {
+      const i = d[0];
       if (i.status === 401) throw new Error(Me());
       if (i.status === 403) {
         if (i.headers.get("cf-mitigated") === "challenge") throw new Error(Lt());
-        const d = await i.json();
-        if ((d == null ? void 0 : d.error) === "refresh") throw new Error(Ut());
-        if ((d == null ? void 0 : d.error) === "color-not-owned") throw new Error(bn());
-        if ((d == null ? void 0 : d.error) === "event-pixel-present") throw new Error(Dn());
+        const l = await i.json();
+        if ((l == null ? void 0 : l.error) === "refresh") throw new Error(Ut());
+        if ((l == null ? void 0 : l.error) === "color-not-owned") throw new Error(bn());
+        if ((l == null ? void 0 : l.error) === "event-pixel-present") throw new Error(Dn());
         z.refresh()
       } else if (i.status === 451) {
-        const d = await l[0].json();
-        d == null || d.err;
-        const f = d == null ? void 0 : d.suspension;
+        const l = await d[0].json();
+        l == null || l.err;
+        const f = l == null ? void 0 : l.suspension;
         if (f === "ban") throw new Error(mn());
         if (f === "timeout") {
-          const w = new Date(Date.now() + ((d == null ? void 0 : d.durationMs) ?? 0));
+          const w = new Date(Date.now() + ((l == null ? void 0 : l.durationMs) ?? 0));
           throw new Error(pn({
             until: w.toLocaleString()
           }))
@@ -1254,35 +1254,35 @@ class Qn {
     season: e,
     tile: [t, n],
     pixel: [r, s],
-    isModerator: l = !1
+    isModerator: d = !1
   }) {
     const i = new URLSearchParams;
     i.set("x", String(r)), i.set("y", String(s));
-    const d = await this.request(`${l?"/moderator":""}/s${e}/pixel/${t}/${n}?${i.toString()}`, {
+    const l = await this.request(`${d?"/moderator":""}/s${e}/pixel/${t}/${n}?${i.toString()}`, {
       credentials: "include"
     });
-    if (d.status !== 200) {
-      const f = await d.text();
+    if (l.status !== 200) {
+      const f = await l.text();
       throw new Error(De({
         err: f
       }))
     }
-    return d.json()
+    return l.json()
   }
   async getPixelAreaInfo({
     season: e,
     tile: [t, n],
     p0: [r, s],
-    p1: [l, i]
+    p1: [d, i]
   }) {
-    const d = await this.request(`/moderator/pixel-area/s${e}/${t}/${n}?x0=${r}&y0=${s}&x1=${l}&y1=${i}`, {
+    const l = await this.request(`/moderator/pixel-area/s${e}/${t}/${n}?x0=${r}&y0=${s}&x1=${d}&y1=${i}`, {
       credentials: "include"
     });
-    if (d.status !== 200) {
-      const _ = await d.text();
+    if (l.status !== 200) {
+      const _ = await l.text();
       throw console.error("Error while fetching pixel area info", _), new Error(o())
     }
-    const f = await d.arrayBuffer(),
+    const f = await l.arrayBuffer(),
       w = new DataView(f);
     return {
       paintedBy: Array.from({
@@ -1452,7 +1452,7 @@ class Qn {
         product: e
       })
     });
-    if (t.status !== 200) throw t.status === 404 ? new Error(rt()) : t.status === 403 ? new Error(it()) : t.status === 409 ? new Error(dt()) : new Error(o())
+    if (t.status !== 200) throw t.status === 404 ? new Error(rt()) : t.status === 403 ? new Error(it()) : t.status === 409 ? new Error(lt()) : new Error(o())
   }
   async getAlliance() {
     const e = await this.request("/alliance", {
@@ -1629,9 +1629,9 @@ class Qn {
     };
     if (r.status !== 200) throw new c(o(), r.status);
     const s = await r.json(),
-      l = Array.isArray(s == null ? void 0 : s.members) ? s.members : [];
+      d = Array.isArray(s == null ? void 0 : s.members) ? s.members : [];
     return {
-      members: l.map(i => ({
+      members: d.map(i => ({
         id: Number(i == null ? void 0 : i.id),
         name: String((i == null ? void 0 : i.name) ?? `#${i==null?void 0:i.id}`),
         picture: (i == null ? void 0 : i.picture) ?? null,
@@ -1640,7 +1640,7 @@ class Qn {
         lastPixelLongitude: (i == null ? void 0 : i.lastPixelLongitude) ?? null,
         role: (i == null ? void 0 : i.alliance_role) === "admin" || (i == null ? void 0 : i.role) === "admin" ? "admin" : "member"
       })),
-      total: Number((s == null ? void 0 : s.total) ?? l.length)
+      total: Number((s == null ? void 0 : s.total) ?? d.length)
     }
   }
   async renameAlliance(e, t) {
@@ -1996,18 +1996,18 @@ class Qn {
       kind: n,
       page: r = 0,
       pageSize: s = 20
-    } = e, l = new URLSearchParams({
+    } = e, d = new URLSearchParams({
       userId: String(t),
       kind: n,
       page: String(r),
       pageSize: String(s)
-    }), i = await this.request(`/moderator/users/tickets?${l.toString()}`, {
+    }), i = await this.request(`/moderator/users/tickets?${d.toString()}`, {
       method: "GET",
       credentials: "include"
     });
     if (i.status !== 200) throw new c(o(), i.status);
-    const d = await i.json(),
-      f = Array.isArray(d == null ? void 0 : d.tickets) ? d.tickets : [];
+    const l = await i.json(),
+      f = Array.isArray(l == null ? void 0 : l.tickets) ? l.tickets : [];
     return f.sort((w, _) => new Date(_.createdAt).getTime() - new Date(w.createdAt).getTime()), f
   }
   async getModerationTranslate(e) {
@@ -2023,7 +2023,7 @@ class Qn {
     return n == null ? void 0 : n.translation
   }
   mapTicketsToReportRows(e, t) {
-    var r, s, l, i, d;
+    var r, s, d, i, l;
     const n = [];
     for (const f of e) {
       const w = f.status ?? "open";
@@ -2064,13 +2064,13 @@ class Qn {
         handledBy: f.status && f.status !== "open" ? {
           id: ((r = f.handledBy) == null ? void 0 : r.id) ?? 0,
           name: ((s = f.handledBy) == null ? void 0 : s.name) ?? "Moderator",
-          picture: ((l = f.handledBy) == null ? void 0 : l.picture) ?? null
+          picture: ((d = f.handledBy) == null ? void 0 : d.picture) ?? null
         } : {
           id: 0,
           name: "—",
           picture: null
         },
-        reason: String(((d = (i = f.reports) == null ? void 0 : i[0]) == null ? void 0 : d.reason) ?? "other"),
+        reason: String(((l = (i = f.reports) == null ? void 0 : i[0]) == null ? void 0 : l.reason) ?? "other"),
         status: w
       })
     }
@@ -2314,7 +2314,7 @@ class Qn {
     tile: [t, n],
     pixel: [r, s]
   }) {
-    const l = await this.request(`/s${e}/event/pixel/claim`, {
+    const d = await this.request(`/s${e}/event/pixel/claim`, {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
@@ -2325,7 +2325,7 @@ class Qn {
         py: s
       })
     });
-    if (l.status !== 200) throw new c(o(), l.status)
+    if (d.status !== 200) throw new c(o(), d.status)
   }
   async getEventStatus() {
     const e = await this.request("/admin/event/status", {
@@ -2372,5 +2372,5 @@ class Qn {
 $ = new WeakMap;
 let Z = new Qn(re);
 export {
-  fa as A, ha as B, ue as C, ma as P, Yn as S, qe as _, Z as a, da as b, o as c, Xt as d, Ft as e, b as f, Yt as g, zt as h, $t as i, ra as j, sa as k, Zn as l, ca as m, ia as n, _a as o, Cn as p, pa as q, la as r, ua as s, se as t, z as u, oa as v, pn as w, rn as x, mn as y, ga as z
+  fa as A, ha as B, ue as C, ma as P, Yn as S, qe as _, Z as a, la as b, o as c, Xt as d, Ft as e, b as f, Yt as g, zt as h, $t as i, ra as j, sa as k, Zn as l, ca as m, ia as n, _a as o, Cn as p, pa as q, da as r, ua as s, se as t, z as u, oa as v, pn as w, rn as x, mn as y, ga as z
 };
