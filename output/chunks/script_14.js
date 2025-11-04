@@ -1,103 +1,174 @@
-var b = t => {
-  throw TypeError(t)
-};
-var w = (t, e, i) => e.has(t) || b("Cannot " + i);
-var a = (t, e, i) => (w(t, e, "read from private field"), i ? i.call(t) : e.get(t)),
-  n = (t, e, i) => e.has(t) ? b("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, i);
 import {
-  g as s,
-  h as o,
-  e as r,
-  y as m
-} from "./WvGh61NJ.js";
+  aQ as y,
+  aR as x,
+  aS as A,
+  g,
+  P as L,
+  a1 as m,
+  x as Y,
+  y as B,
+  aT as N,
+  ao as U,
+  aU as j,
+  aV as K,
+  L as M,
+  aI as Z,
+  aW as $,
+  aX as q,
+  aY as z,
+  Y as I,
+  aZ as E,
+  a_ as c
+} from "./QY1-WrVz.js";
 (function() {
   try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
-      id: "dd4f8190f88bd342b0302e9b73d1fd999bcdb862"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "93d2d5a1c9ea65de4db2c69715b442df23632ed6"
     }
   } catch {}
 })();
 try {
   (function() {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "6bef3fc9-f843-4ac7-8a29-7fa5bfe51600", t._sentryDebugIdIdentifier = "sentry-dbid-6bef3fc9-f843-4ac7-8a29-7fa5bfe51600")
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "897484dd-e8a1-4aa0-8c97-e33562472ea2", e._sentryDebugIdIdentifier = "sentry-dbid-897484dd-e8a1-4aa0-8c97-e33562472ea2")
   })()
 } catch {}
-const L = "true",
-  S = "https://backend.wplace.live/files",
-  v = "0x4AAAAAABpHqZ-6i7uL0nmG",
-  A = "https://backend.wplace.live",
-  p = "theme";
-var g, l, u, d, f, c, h;
-class y {
-  constructor() {
-    n(this, g, s(!1));
-    n(this, l, s(!1));
-    n(this, u, s(m(I())));
-    n(this, d, s(!1));
-    n(this, f, s("custom-winter"));
-    n(this, c, s(m(Date.now())));
-    n(this, h, s(void 0));
-    setInterval(() => {
-      r(a(this, c), Date.now(), !0)
-    }, 500), this.theme = localStorage.getItem(p), this.theme !== "dark" && this.theme !== "custom-winter" && (this.theme = "custom-winter")
-  }
-  get dropletsDialogOpen() {
-    return o(a(this, g))
-  }
-  set dropletsDialogOpen(e) {
-    r(a(this, g), e, !0)
-  }
-  get muted() {
-    return o(a(this, l))
-  }
-  set muted(e) {
-    r(a(this, l), e, !0)
-  }
-  get language() {
-    return o(a(this, u))
-  }
-  set language(e) {
-    r(a(this, u), e, !0)
-  }
-  get turnstatileLoaded() {
-    return o(a(this, d))
-  }
-  set turnstatileLoaded(e) {
-    r(a(this, d), e, !0)
-  }
-  get theme() {
-    return o(a(this, f))
-  }
-  set theme(e) {
-    r(a(this, f), e, !0), localStorage.setItem(p, e), document.documentElement.setAttribute("data-theme", e)
-  }
-  get now() {
-    return o(a(this, c))
-  }
-  get captcha() {
-    return E ? o(a(this, h)) : {
-      token: "turnstile-disabled",
-      time: Date.now()
-    }
-  }
-  set captcha(e) {
-    r(a(this, h), e, !0)
-  }
-}
-g = new WeakMap, l = new WeakMap, u = new WeakMap, d = new WeakMap, f = new WeakMap, c = new WeakMap, h = new WeakMap;
-const T = new y;
+let _ = !1;
 
-function I() {
-  if (navigator.languages && navigator.languages.length > 0) {
-    const t = navigator.languages.find(e => e.length === 2);
-    if (t) return t
+function C(e) {
+  var r = _;
+  try {
+    return _ = !1, [e(), _]
+  } finally {
+    _ = r
   }
-  return (navigator.language || navigator.userLanguage || navigator.browserLanguage || "en").substring(0, 2)
 }
-const E = L.toLowerCase() !== "false";
+
+function W(e, r = 1) {
+  const n = e();
+  return e(n + r), n
+}
+const G = {
+  get(e, r) {
+    if (!e.exclude.includes(r)) return e.props[r]
+  },
+  set(e, r) {
+    return !1
+  },
+  getOwnPropertyDescriptor(e, r) {
+    if (!e.exclude.includes(r) && r in e.props) return {
+      enumerable: !0,
+      configurable: !0,
+      value: e.props[r]
+    }
+  },
+  has(e, r) {
+    return e.exclude.includes(r) ? !1 : r in e.props
+  },
+  ownKeys(e) {
+    return Reflect.ownKeys(e.props).filter(r => !e.exclude.includes(r))
+  }
+};
+
+function X(e, r, n) {
+  return new Proxy({
+    props: e,
+    exclude: r
+  }, G)
+}
+const Q = {
+  get(e, r) {
+    let n = e.props.length;
+    for (; n--;) {
+      let t = e.props[n];
+      if (c(t) && (t = t()), typeof t == "object" && t !== null && r in t) return t[r]
+    }
+  },
+  set(e, r, n) {
+    let t = e.props.length;
+    for (; t--;) {
+      let i = e.props[t];
+      c(i) && (i = i());
+      const a = y(i, r);
+      if (a && a.set) return a.set(n), !0
+    }
+    return !1
+  },
+  getOwnPropertyDescriptor(e, r) {
+    let n = e.props.length;
+    for (; n--;) {
+      let t = e.props[n];
+      if (c(t) && (t = t()), typeof t == "object" && t !== null && r in t) {
+        const i = y(t, r);
+        return i && !i.configurable && (i.configurable = !0), i
+      }
+    }
+  },
+  has(e, r) {
+    if (r === I || r === E) return !1;
+    for (let n of e.props)
+      if (c(n) && (n = n()), n != null && r in n) return !0;
+    return !1
+  },
+  ownKeys(e) {
+    const r = [];
+    for (let n of e.props)
+      if (c(n) && (n = n()), !!n) {
+        for (const t in n) r.includes(t) || r.push(t);
+        for (const t of Object.getOwnPropertySymbols(n)) r.includes(t) || r.push(t)
+      } return r
+  }
+};
+
+function F(...e) {
+  return new Proxy({
+    props: e
+  }, Q)
+}
+
+function H(e, r, n, t) {
+  var P;
+  var i = !Z || (n & $) !== 0,
+    a = (n & K) !== 0,
+    O = (n & z) !== 0,
+    f = t,
+    v = !0,
+    w = () => (v && (v = !1, f = O ? M(t) : t), f),
+    o;
+  if (a) {
+    var R = I in e || E in e;
+    o = ((P = y(e, r)) == null ? void 0 : P.set) ?? (R && r in e ? s => e[r] = s : void 0)
+  }
+  var d, h = !1;
+  a ? [d, h] = C(() => e[r]) : d = e[r], d === void 0 && t !== void 0 && (d = w(), o && (i && x(), o(d)));
+  var u;
+  if (i ? u = () => {
+      var s = e[r];
+      return s === void 0 ? w() : (v = !0, s)
+    } : u = () => {
+      var s = e[r];
+      return s !== void 0 && (f = void 0), s === void 0 ? f : s
+    }, i && (n & A) === 0) return u;
+  if (o) {
+    var T = e.$$legacy;
+    return (function(s, p) {
+      return arguments.length > 0 ? ((!i || !p || T || h) && o(p ? u() : s), s) : u()
+    })
+  }
+  var b = !1,
+    l = ((n & q) !== 0 ? L : m)(() => (b = !1, u()));
+  a && g(l);
+  var D = U;
+  return (function(s, p) {
+    if (arguments.length > 0) {
+      const S = p ? g(l) : i && a ? Y(s) : s;
+      return B(l, S), b = !0, f !== void 0 && (f = S), s
+    }
+    return N && b || (D.f & j) !== 0 ? l.v : g(l)
+  })
+}
 export {
-  A as P, v as a, S as b, T as g, E as t
+  H as p, X as r, F as s, W as u
 };

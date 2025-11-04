@@ -1,25 +1,22 @@
 import {
-  g as v
-} from "./BhWn7wLv.js";
-import "./UlMc9DV9.js";
+  g as r
+} from "./DFNHoEBO.js";
+import "./Dz1gcJiP.js";
 import {
-  A as p,
-  a as g,
-  b as l,
-  H as i
-} from "./WvGh61NJ.js";
+  H as s,
+  b as d
+} from "./QY1-WrVz.js";
 import {
-  i as b,
-  r as u
-} from "./D7cVwFZd.js";
+  d as f
+} from "./B9bGlQNK.js";
 import {
-  d
-} from "./DygNb3Rd.js";
+  r as l
+} from "./EK4fqPP3.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "dd4f8190f88bd342b0302e9b73d1fd999bcdb862"
+      id: "93d2d5a1c9ea65de4db2c69715b442df23632ed6"
     }
   } catch {}
 })();
@@ -27,44 +24,24 @@ try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       o = new e.Error().stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "4e7435db-0f25-49ba-9e95-202f56063d7c", e._sentryDebugIdIdentifier = "sentry-dbid-4e7435db-0f25-49ba-9e95-202f56063d7c")
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "91d957fa-0b6e-45d8-995c-f1838ed31bb1", e._sentryDebugIdIdentifier = "sentry-dbid-91d957fa-0b6e-45d8-995c-f1838ed31bb1")
   })()
 } catch {}
-const y = e => `Copy alliance ID: #${e.allianceId}`,
-  _ = e => `Copiar ID da aliança: #${e.allianceId}`,
-  D = (e, o = {}) => (o.locale ?? v()) === "en" ? y(e) : _(e);
-var h = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
-  w = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
+const a = () => "Close",
+  i = () => "Fechar",
+  w = (e = {}, o = {}) => (o.locale ?? r()) === "en" ? a() : i();
+var c = s('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
 
-function H(e, o) {
-  let n = u(o, ["$$slots", "$$events", "$$legacy", "filled"]);
-  var r = p(),
-    s = g(r);
-  {
-    var f = a => {
-        var t = h();
-        d(t, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...n
-        })), l(a, t)
-      },
-      c = a => {
-        var t = w();
-        d(t, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...n
-        })), l(a, t)
-      };
-    b(s, a => {
-      o.filled ? a(f) : a(c, !1)
-    })
-  }
-  l(e, r)
+function m(e, o) {
+  let t = l(o, ["$$slots", "$$events", "$$legacy"]);
+  var n = c();
+  f(n, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...t
+  })), d(e, n)
 }
 export {
-  H as C, D as c
+  m as A, w as c
 };

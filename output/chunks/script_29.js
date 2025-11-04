@@ -1,50 +1,109 @@
 import {
-  g as s
-} from "./BhWn7wLv.js";
-import "./UlMc9DV9.js";
-import {
-  H as r,
-  b as i
-} from "./WvGh61NJ.js";
-import {
-  d
-} from "./DygNb3Rd.js";
-import {
-  r as a
-} from "./D7cVwFZd.js";
+  D as E,
+  Q as b,
+  l as v,
+  L as g,
+  R as i,
+  S,
+  h as k,
+  T as D,
+  V as T,
+  W as y
+} from "./QY1-WrVz.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "dd4f8190f88bd342b0302e9b73d1fd999bcdb862"
+      id: "93d2d5a1c9ea65de4db2c69715b442df23632ed6"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "71ccaef6-234b-49d6-ac3d-1e3aea9fd440", e._sentryDebugIdIdentifier = "sentry-dbid-71ccaef6-234b-49d6-ac3d-1e3aea9fd440")
+      d = new e.Error().stack;
+    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "c88c8996-8698-402b-9df8-ecde6141659e", e._sentryDebugIdIdentifier = "sentry-dbid-c88c8996-8698-402b-9df8-ecde6141659e")
   })()
 } catch {}
-const l = () => "Pixels painted",
-  f = () => "Pixels pintados",
-  T = (e = {}, t = {}) => (t.locale ?? s()) === "en" ? l() : f(),
-  c = () => "Description",
-  p = () => "Descrição",
-  m = (e = {}, t = {}) => (t.locale ?? s()) === "en" ? c() : p();
-var u = r('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
 
-function v(e, t) {
-  let n = a(t, ["$$slots", "$$events", "$$legacy"]);
-  var o = u();
-  d(o, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...n
-  })), i(e, o)
+function A(e, d, l = d) {
+  var f = E(),
+    r = new WeakSet;
+  b(e, "input", s => {
+    var a = s ? e.defaultValue : e.value;
+    if (a = h(e) ? _(a) : a, l(a), v !== null && r.add(v), f && a !== (a = d())) {
+      var t = e.selectionStart,
+        n = e.selectionEnd;
+      e.value = a ?? "", n !== null && (e.selectionStart = t, e.selectionEnd = Math.min(n, e.value.length))
+    }
+  }), (k && e.defaultValue !== e.value || g(d) == null && e.value) && (l(h(e) ? _(e.value) : e.value), v !== null && r.add(v)), i(() => {
+    var s = d();
+    if (e === document.activeElement) {
+      var a = S ?? v;
+      if (r.has(a)) return
+    }
+    h(e) && s === _(e.value) || e.type === "date" && !s && !e.value || s !== e.value && (e.value = s ?? "")
+  })
+}
+const u = new Set;
+
+function C(e, d, l, f, r = f) {
+  var s = l.getAttribute("type") === "checkbox",
+    a = e;
+  let t = !1;
+  if (d !== null)
+    for (var n of d) a = a[n] ?? (a[n] = []);
+  a.push(l), b(l, "change", () => {
+    var c = l.__value;
+    s && (c = m(a, c, l.checked)), r(c)
+  }, () => r(s ? [] : null)), i(() => {
+    var c = f();
+    if (k && l.defaultChecked !== l.checked) {
+      t = !0;
+      return
+    }
+    s ? (c = c || [], l.checked = c.includes(l.__value)) : l.checked = D(l.__value, c)
+  }), T(() => {
+    var c = a.indexOf(l);
+    c !== -1 && a.splice(c, 1)
+  }), u.has(a) || (u.add(a), y(() => {
+    a.sort((c, o) => c.compareDocumentPosition(o) === 4 ? -1 : 1), u.delete(a)
+  })), y(() => {
+    if (t) {
+      var c;
+      if (s) c = m(a, c, l.checked);
+      else {
+        var o = a.find(w => w.checked);
+        c = o == null ? void 0 : o.__value
+      }
+      r(c)
+    }
+  })
+}
+
+function R(e, d, l = d) {
+  b(e, "change", f => {
+    var r = f ? e.defaultChecked : e.checked;
+    l(r)
+  }), (k && e.defaultChecked !== e.checked || g(d) == null) && l(e.checked), i(() => {
+    var f = d();
+    e.checked = !!f
+  })
+}
+
+function m(e, d, l) {
+  for (var f = new Set, r = 0; r < e.length; r += 1) e[r].checked && f.add(e[r].__value);
+  return l || f.delete(d), Array.from(f)
+}
+
+function h(e) {
+  var d = e.type;
+  return d === "number" || d === "range"
+}
+
+function _(e) {
+  return e === "" ? null : +e
 }
 export {
-  v as L, m as d, T as p
+  R as a, A as b, C as c
 };

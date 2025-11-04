@@ -1,100 +1,103 @@
+var b = t => {
+  throw TypeError(t)
+};
+var w = (t, e, i) => e.has(t) || b("Cannot " + i);
+var a = (t, e, i) => (w(t, e, "read from private field"), i ? i.call(t) : e.get(t)),
+  n = (t, e, i) => e.has(t) ? b("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, i);
+import {
+  w as s,
+  g as o,
+  y as r,
+  x as m
+} from "./QY1-WrVz.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "dd4f8190f88bd342b0302e9b73d1fd999bcdb862"
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    t.SENTRY_RELEASE = {
+      id: "93d2d5a1c9ea65de4db2c69715b442df23632ed6"
     }
   } catch {}
 })();
 try {
   (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      o = new e.Error().stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "138d49da-a363-498b-a700-aea1b9f4af0d", e._sentryDebugIdIdentifier = "sentry-dbid-138d49da-a363-498b-a700-aea1b9f4af0d")
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      e = new t.Error().stack;
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "0aec197e-a630-4819-9465-9a84eaec2304", t._sentryDebugIdIdentifier = "sentry-dbid-0aec197e-a630-4819-9465-9a84eaec2304")
   })()
 } catch {}
-const y = "en",
-  c = ["en", "pt"],
-  d = "PARAGLIDE_LOCALE",
-  g = ["localStorage", "preferredLanguage", "baseLocale"];
-globalThis.__paraglide = {};
-let f = !1,
-  w = () => {
-    let e;
-    for (const o of g) {
-      if (o === "baseLocale") e = y;
-      else if (o === "preferredLanguage") e = L();
-      else if (o === "localStorage") e = localStorage.getItem(d) ?? void 0;
-      else if (u(o) && l.has(o)) {
-        const a = l.get(o);
-        if (a) {
-          const t = a.getLocale();
-          if (t instanceof Promise) continue;
-          e = t
-        }
-      }
-      if (e !== void 0) {
-        const a = h(e);
-        return f || (f = !0, p(a, {
-          reload: !1
-        })), a
-      }
+const L = "true",
+  S = "https://backend.wplace.live/files",
+  v = "0x4AAAAAABpHqZ-6i7uL0nmG",
+  A = "https://backend.wplace.live",
+  p = "theme";
+var g, l, u, d, c, h, f;
+class y {
+  constructor() {
+    n(this, g, s(!1));
+    n(this, l, s(!1));
+    n(this, u, s(m(I())));
+    n(this, d, s(!1));
+    n(this, c, s("custom-winter"));
+    n(this, h, s(m(Date.now())));
+    n(this, f, s(void 0));
+    setInterval(() => {
+      r(a(this, h), Date.now(), !0)
+    }, 500), this.theme = localStorage.getItem(p), this.theme !== "dark" && this.theme !== "custom-winter" && (this.theme = "custom-winter")
+  }
+  get dropletsDialogOpen() {
+    return o(a(this, g))
+  }
+  set dropletsDialogOpen(e) {
+    r(a(this, g), e, !0)
+  }
+  get muted() {
+    return o(a(this, l))
+  }
+  set muted(e) {
+    r(a(this, l), e, !0)
+  }
+  get language() {
+    return o(a(this, u))
+  }
+  set language(e) {
+    r(a(this, u), e, !0)
+  }
+  get turnstatileLoaded() {
+    return o(a(this, d))
+  }
+  set turnstatileLoaded(e) {
+    r(a(this, d), e, !0)
+  }
+  get theme() {
+    return o(a(this, c))
+  }
+  set theme(e) {
+    r(a(this, c), e, !0), localStorage.setItem(p, e), document.documentElement.setAttribute("data-theme", e)
+  }
+  get now() {
+    return o(a(this, h))
+  }
+  get captcha() {
+    return E ? o(a(this, f)) : {
+      token: "turnstile-disabled",
+      time: Date.now()
     }
-    throw new Error("No locale found. Read the docs https://inlang.com/m/gerre34r/library-inlang-paraglideJs/errors#no-locale-found")
-  },
-  p = (e, o) => {
-    const a = {
-      reload: !0,
-      ...o
-    };
-    let t;
-    try {
-      t = w()
-    } catch {}
-    for (const n of g)
-      if (n !== "baseLocale") {
-        if (n === "localStorage" && typeof window < "u") localStorage.setItem(d, e);
-        else if (u(n) && l.has(n)) {
-          const s = l.get(n);
-          if (s) {
-            const i = s.setLocale(e);
-            i instanceof Promise && i.catch(b => {
-              console.warn(`Custom strategy "${n}" setLocale failed:`, b)
-            })
-          }
-        }
-      } a.reload && window.location && e !== t && window.location.reload()
-  };
-
-function r(e) {
-  return e ? c.includes(e) : !1
-}
-
-function h(e) {
-  if (r(e) === !1) throw new Error(`Invalid locale: ${e}. Expected one of: ${c.join(", ")}`);
-  return e
-}
-
-function L() {
-  var o;
-  if (!((o = navigator == null ? void 0 : navigator.languages) != null && o.length)) return;
-  const e = navigator.languages.map(a => {
-    var t;
-    return {
-      fullTag: a.toLowerCase(),
-      baseTag: (t = a.split("-")[0]) == null ? void 0 : t.toLowerCase()
-    }
-  });
-  for (const a of e) {
-    if (r(a.fullTag)) return a.fullTag;
-    if (r(a.baseTag)) return a.baseTag
+  }
+  set captcha(e) {
+    r(a(this, f), e, !0)
   }
 }
-const l = new Map;
+g = new WeakMap, l = new WeakMap, u = new WeakMap, d = new WeakMap, c = new WeakMap, h = new WeakMap, f = new WeakMap;
+const T = new y;
 
-function u(e) {
-  return typeof e == "string" && /^custom-[A-Za-z0-9_-]+$/.test(e)
+function I() {
+  if (navigator.languages && navigator.languages.length > 0) {
+    const t = navigator.languages.find(e => e.length === 2);
+    if (t) return t
+  }
+  return (navigator.language || navigator.userLanguage || navigator.browserLanguage || "en").substring(0, 2)
 }
+const E = L.toLowerCase() !== "false";
 export {
-  w as g, d as l
+  A as P, v as a, S as b, T as g, E as t
 };

@@ -13,12 +13,12 @@ try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "ccbcb242-a46e-40d3-b66f-926d15b2df4f", e._sentryDebugIdIdentifier = "sentry-dbid-ccbcb242-a46e-40d3-b66f-926d15b2df4f")
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "b373e5df-4cb4-4179-a56e-c25c324e6df3", e._sentryDebugIdIdentifier = "sentry-dbid-b373e5df-4cb4-4179-a56e-c25c324e6df3")
   })()
 } catch {}
-const o = () => "Confirm",
-  f = () => "Confirmar",
-  r = (e = {}, n = {}) => (n.locale ?? d()) === "en" ? o() : f();
+const t = () => "Refresh",
+  f = () => "Atualizar",
+  l = (e = {}, n = {}) => (n.locale ?? d()) === "en" ? t() : f();
 export {
-  r as c
+  l as r
 };

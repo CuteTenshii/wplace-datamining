@@ -17,27 +17,27 @@ var Ye = (d, a, h) => (Uf(d, a, "read from private field"), h ? h.call(d) : a.ge
   aa = (d, a, h, y) => (Uf(d, a, "write to private field"), y ? y.call(d, h) : a.set(d, h), h),
   Rr = (d, a, h) => (Uf(d, a, "access private method"), h);
 var cv = (d, a, h) => _x(mx(d), h, a);
-import "../chunks/UlMc9DV9.js";
+import "../chunks/Dz1gcJiP.js";
 import {
   o as Nn,
   s as Jn
-} from "../chunks/B_8X4b_2.js";
+} from "../chunks/CfhuS_bU.js";
 import {
   ae as vx,
   b9 as yx,
   bp as xx,
   bb as bx,
   bq as wx,
-  aJ as Tx,
+  b4 as Tx,
   br as Cx,
-  g as at,
+  w as at,
   bs as uv,
   ac as Sx,
-  h as x,
-  e as ie,
+  g as x,
+  y as ie,
   bl as Fu,
-  y as gi,
-  x as jn,
+  x as gi,
+  v as jn,
   p as Ir,
   f as ge,
   d as M,
@@ -46,7 +46,7 @@ import {
   u as ht,
   n as yn,
   t as qe,
-  z as Zn,
+  A as Zn,
   b as Z,
   c as Mr,
   K as Kr,
@@ -54,60 +54,56 @@ import {
   bn as $u,
   J as Vm,
   L as _l,
-  A as er,
+  B as er,
   a as vt,
-  B as Bi,
-  aT as Px,
-  aS as hv,
-  aU as Ix,
-  aW as Xv,
+  z as Bi,
+  aM as Px,
+  aL as hv,
+  aN as Ix,
+  aP as Xv,
   bt as ho,
   C as oa,
   bu as Yv,
   bm as qm,
   $ as Mx
-} from "../chunks/WvGh61NJ.js";
+} from "../chunks/QY1-WrVz.js";
 import {
   s as se
-} from "../chunks/BOe7v5UW.js";
+} from "../chunks/B2BqFsu3.js";
 import {
-  p as Pt,
-  i as Be,
-  r as ir,
-  s as Ds,
-  u as Kv
-} from "../chunks/D7cVwFZd.js";
+  i as Be
+} from "../chunks/DGzMCtF2.js";
 import {
   h as kx
-} from "../chunks/Cgw9srdi.js";
+} from "../chunks/BDEiwWeX.js";
 import {
   r as Ta,
   e as vi,
   a as zr,
-  g as Jv,
+  g as Kv,
   d as or,
   s as pr,
   f as Lc,
   h as Uu,
   c as ns,
   i as dv
-} from "../chunks/DygNb3Rd.js";
+} from "../chunks/B9bGlQNK.js";
 import {
   a as fl,
   t as qi
-} from "../chunks/Bqzho92f.js";
+} from "../chunks/BTzRiT9X.js";
 import {
   g as up,
   b as Ax
-} from "../chunks/QD-J2a2Q.js";
+} from "../chunks/pvuuvFUo.js";
 import {
   p as ri
-} from "../chunks/ujzB78pH.js";
+} from "../chunks/D9lEalUW.js";
 import {
   g as fa,
   P as Ex,
   b as zx
-} from "../chunks/BfCLzTjL.js";
+} from "../chunks/CAaF0Nrj.js";
 import {
   S as Ki,
   a as tn,
@@ -126,42 +122,48 @@ import {
   C as pv,
   P as $f,
   B as qx
-} from "../chunks/BaLLxgHh.js";
+} from "../chunks/CwSF-4Yz.js";
 import {
-  c as Qv,
+  c as Jv,
   A as Yi,
   a as am,
   g as Gf,
   p as Zx,
   b as Ux
-} from "../chunks/BOf_ZJV8.js";
+} from "../chunks/hggHqPI_.js";
 import {
   f as ml,
   h as Ka,
-  t as e0,
-  R as t0
-} from "../chunks/BHChx0Hy.js";
+  t as Qv,
+  R as e0
+} from "../chunks/BZJRC8Ks.js";
+import {
+  p as Pt,
+  r as ir,
+  s as Ds,
+  u as t0
+} from "../chunks/EK4fqPP3.js";
 import {
   h as wp
-} from "../chunks/D2ppm6iV.js";
+} from "../chunks/DC0Uk3tO.js";
 import {
   b as as
-} from "../chunks/BT6m86fV.js";
+} from "../chunks/RQJ4JYk4.js";
 import {
   L as r0
-} from "../chunks/CZ3a01Da.js";
+} from "../chunks/DV-5BMDY.js";
 import {
   g as Oe,
   l as $x
-} from "../chunks/BhWn7wLv.js";
+} from "../chunks/DFNHoEBO.js";
 import {
   c as Fh
-} from "../chunks/8WKDdIu2.js";
+} from "../chunks/CkDSv6r9.js";
 import {
   d as Gx,
   L as Zm,
   p as Um
-} from "../chunks/uLbl42t4.js";
+} from "../chunks/Rl91yNIF.js";
 import {
   c as om,
   D as n0,
@@ -175,40 +177,40 @@ import {
   t as Qx,
   b as eb,
   R as tb
-} from "../chunks/Czj4EV_n.js";
+} from "../chunks/DHdq_ai_.js";
 import {
   e as ii,
   i as Tp
-} from "../chunks/zLgmu5mk.js";
+} from "../chunks/C54Fooo5.js";
 import {
   c as $m,
   b as Cp,
   a as rb
-} from "../chunks/BPcj2wwD.js";
+} from "../chunks/DbJrukA2.js";
 import {
   P as uo,
   t as a0
-} from "../chunks/B3EEjAwS.js";
+} from "../chunks/Jz3lvSYC.js";
 import {
   l as nb,
   p as Gm,
   m as o0,
   v as ib,
   s as ab
-} from "../chunks/Bo3_uW6m.js";
+} from "../chunks/CyyQk2Ju.js";
 import {
   g as Ri,
   a as Sp,
   c as ob,
   b as sb
-} from "../chunks/DM-RMabv.js";
+} from "../chunks/DooGt5tl.js";
 import {
   k as Gu
-} from "../chunks/DBsFYQgq.js";
+} from "../chunks/CFrZjWIm.js";
 import {
   A as lb,
   c as is
-} from "../chunks/sAVTV-jg.js";
+} from "../chunks/BtYJhxC7.js";
 import {
   A as s0,
   d as l0,
@@ -220,55 +222,55 @@ import {
   c as hb,
   P as u0,
   b as db
-} from "../chunks/D0vcV9Mh.js";
+} from "../chunks/B9lh1YDW.js";
 import {
   f as wa,
   s as ep
-} from "../chunks/DHHlJAmT.js";
+} from "../chunks/H9nMoBGd.js";
 import {
   C as Hm,
   c as pb
-} from "../chunks/lXQxkZyV.js";
-import "../chunks/BsfxsuMm.js";
+} from "../chunks/BMVlaq7i.js";
+import "../chunks/BKFv3DBy.js";
 import {
   i as h0
-} from "../chunks/DKbEF2cT.js";
+} from "../chunks/DMZluzz2.js";
 import {
   L as Wm
-} from "../chunks/n8L823IN.js";
+} from "../chunks/Bz0TDObR.js";
 import {
   c as _i
-} from "../chunks/BUvb2Z2a.js";
+} from "../chunks/B_9bywf7.js";
 import {
   L as fb
-} from "../chunks/Bf5h38e5.js";
+} from "../chunks/DRj6oeNL.js";
 import {
   _ as mb
-} from "../chunks/Dv5V10Uo.js";
+} from "../chunks/BeG3xZT_.js";
 import {
   c as d0
-} from "../chunks/CEaJL2Tn.js";
+} from "../chunks/JbbeDdLY.js";
 import {
   T as Hu,
   G as hp
-} from "../chunks/1sryZLQ5.js";
+} from "../chunks/CjNCT00V.js";
 import {
   C as _b
-} from "../chunks/DI3ow_4g.js";
+} from "../chunks/BGBTOLH7.js";
 import {
   R as gb
-} from "../chunks/HaDpgxmM.js";
+} from "../chunks/O0A8ZNS6.js";
 import {
   W as vb
-} from "../chunks/CUT6FwHD.js";
+} from "../chunks/GQvzOnrG.js";
 import {
   r as yb
-} from "../chunks/CKMvu-ex.js";
+} from "../chunks/D68BTqGF.js";
 (function() {
   try {
     var d = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     d.SENTRY_RELEASE = {
-      id: "dd4f8190f88bd342b0302e9b73d1fd999bcdb862"
+      id: "93d2d5a1c9ea65de4db2c69715b442df23632ed6"
     }
   } catch {}
 })();
@@ -276,7 +278,7 @@ try {
   (function() {
     var d = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       a = new d.Error().stack;
-    a && (d._sentryDebugIds = d._sentryDebugIds || {}, d._sentryDebugIds[a] = "73890799-1f1d-4ed7-b4e0-b22f3d1c09a8", d._sentryDebugIdIdentifier = "sentry-dbid-73890799-1f1d-4ed7-b4e0-b22f3d1c09a8")
+    a && (d._sentryDebugIds = d._sentryDebugIds || {}, d._sentryDebugIds[a] = "63a1509d-012b-49a4-8d0c-33e57fffd26b", d._sentryDebugIdIdentifier = "sentry-dbid-63a1509d-012b-49a4-8d0c-33e57fffd26b")
   })()
 } catch {}
 const xb = [];
@@ -34721,7 +34723,7 @@ function r6(d, a) {
       h() ? nt.show() : nt.close()
     })
   }), qe((nt, Ue, Re, $e, Se, We) => {
-    se(O, nt), se(K, Ue), fe = zr(H, 1, "border-base-content/20 rounded-field relative flex w-full items-center gap-1 border-2 py-1.5 pl-4 pr-2.5", null, fe, Re), Jv(ve, $e), Me = zr(be, 1, "btn btn-primary", null, Me, Se), se(Pe, We)
+    se(O, nt), se(K, Ue), fe = zr(H, 1, "border-base-content/20 rounded-field relative flex w-full items-center gap-1 border-2 py-1.5 pl-4 pr-2.5", null, fe, Re), Kv(ve, $e), Me = zr(be, 1, "btn btn-primary", null, Me, Se), se(Pe, We)
   }, [() => cT(), () => dT(), () => ({
     invisible: !x(y)
   }), () => x(z).toString(), () => ({
@@ -34842,7 +34844,7 @@ let p6 = (Wv = class {
       window: h = h6,
       document: y = h == null ? void 0 : h.document
     } = a;
-    h !== void 0 && (aa(this, Sc, y), aa(this, rh, Qv(P => {
+    h !== void 0 && (aa(this, Sc, y), aa(this, rh, Jv(P => {
       const z = $u(h, "focusin", P),
         b = $u(h, "focusout", P);
       return () => {
@@ -36199,7 +36201,7 @@ function Ok(d, a) {
       h() ? Pe.show() : Pe.close()
     })
   }), qe((Pe, De, Ge, nt) => {
-    se(W, ` ${Pe??""}`), Jv(J, De), ve = zr(fe, 1, "btn btn-primary", null, ve, Ge), se(Ae, nt)
+    se(W, ` ${Pe??""}`), Kv(J, De), ve = zr(fe, 1, "btn btn-primary", null, ve, Ge), se(Ae, nt)
   }, [() => eS(), () => a.url.toString(), () => ({
     "btn-success": x(y)
   }), () => x(y) ? Ym() : om()]), Zn("close", b, () => h(!1)), Z(d, b), Mr()
@@ -37047,7 +37049,7 @@ class qA {
       window: h = jA,
       document: y = h == null ? void 0 : h.document
     } = a;
-    h !== void 0 && (aa(this, Pc, y), aa(this, nh, Qv(P => {
+    h !== void 0 && (aa(this, Pc, y), aa(this, nh, Jv(P => {
       const z = $u(h, "focusin", P),
         b = $u(h, "focusout", P);
       return () => {
@@ -45231,7 +45233,7 @@ function l7(d, a) {
               vi(He, () => pe => (ie(O, QR(pe, {
                 strictMode: !0,
                 initialCountry: "br",
-                loadUtils: () => mb(() => import("../chunks/OOT8BHR9.js"), [], import.meta.url),
+                loadUtils: () => mb(() => import("../chunks/9Gr8IJ6s.js"), [], import.meta.url),
                 containerClass: "w-full",
                 dropdownContainer: document.body
               })), () => {
@@ -47558,7 +47560,7 @@ function _B(d, a) {
                                         wt = M(xn);
                                       Hu(wt, {
                                         class: "text-error size-4"
-                                      }), I(xn), qe(dn => pr(xn, "data-tip", dn), [() => e0()]), Z(Lr, xn)
+                                      }), I(xn), qe(dn => pr(xn, "data-tip", dn), [() => Qv()]), Z(Lr, xn)
                                     };
                                     Be(Hr, Lr => {
                                       x(Dt).timedOut && Lr(Er)
@@ -47992,7 +47994,7 @@ function nF(d, a) {
                         });
                         var ar = F(Ft);
                         I(Zt), qe(() => {
-                          pr(Zt, "data-tip", x(zt).role), se(ar, ` ${t0[x(zt).role]??""}`)
+                          pr(Zt, "data-tip", x(zt).role), se(ar, ` ${e0[x(zt).role]??""}`)
                         }), Z(Mt, Zt)
                       };
                       Be(de, Mt => {
@@ -48051,7 +48053,7 @@ function nF(d, a) {
                                 Br = M(Ar);
                               Hu(Br, {
                                 class: "text-error size-4"
-                              }), I(Ar), qe(Hr => pr(Ar, "data-tip", Hr), [() => e0()]), Z(Gr, Ar)
+                              }), I(Ar), qe(Hr => pr(Ar, "data-tip", Hr), [() => Qv()]), Z(Gr, Ar)
                             };
                             Be(Ft, Gr => {
                               x(h).paintedBy.timedOut && Gr(ar)
@@ -48576,10 +48578,10 @@ function vF(d, a) {
 jn(["click"]);
 var yF = ge('<p class="mt-1 text-center text-sm"> </p>'),
   xF = (d, a) => {
-    Kv(a, -1)
+    t0(a, -1)
   },
   bF = (d, a) => {
-    Kv(a)
+    t0(a)
   },
   wF = (d, a, h) => {
     a(x(h))
@@ -49177,7 +49179,7 @@ var tO = ge('<meta property="og:title" content="Wplace - A massive real-time pix
     }, !0)
   }, NO = ge('<div class="absolute bottom-0 left-0 z-50 w-full sm:left-1/2 sm:max-w-md sm:-translate-x-1/2"><div class="rounded-t-box bg-base-100 border-base-300 sm:rounded-b-box w-full border-t pt-2 sm:mb-3 sm:shadow-xl"><div class="px-3 pb-2 pt-1"><div class="flex items-center justify-between"><span><!> </span> <button class="btn btn-circle btn-sm"><!></button></div> <div class="mt-1 flex items-center justify-center gap-4"><button class="btn btn-primary w-46"><!></button></div></div></div></div>'), jO = ge('<div class="disable-pinch-zoom relative h-full overflow-hidden svelte-6wmtgk"><div id="map" class="h-screen w-screen cursor-default"></div> <div><div><!> <!></div></div> <div><!> <div class="flex flex-col gap-1 max-sm:hidden"><button class="btn btn-sm btn-circle">+</button> <button class="btn btn-sm btn-circle">-</button></div> <!> <!> <!> <!></div> <div><!> <!></div> <div><!></div> <div><!></div> <div><!></div>  <!></div> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!>', 1);
 
-function zN(d, a) {
+function LN(d, a) {
   Ir(a, !0);
   const h = $f,
     y = qx,
@@ -49674,7 +49676,7 @@ function zN(d, a) {
                       pr(Yr, "href", ((_n = St.data) == null ? void 0 : _n.role) === "admin" ? `${ri.url.origin}/admin/dashboard` : `${ri.url.origin}/moderation`), se(mn, Cn)
                     }, [() => {
                       var Cn;
-                      return t0[((Cn = St.data) == null ? void 0 : Cn.role) ?? "moderator"].toUpperCase()
+                      return e0[((Cn = St.data) == null ? void 0 : Cn.role) ?? "moderator"].toUpperCase()
                     }]), Z(bn, Yr)
                   },
                   ui = bn => {
@@ -50486,5 +50488,5 @@ function zN(d, a) {
 }
 jn(["click"]);
 export {
-  zN as component
+  LN as component
 };

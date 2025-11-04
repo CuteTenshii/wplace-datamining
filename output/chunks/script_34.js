@@ -1,64 +1,24 @@
+import {
+  g as d
+} from "./DFNHoEBO.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "dd4f8190f88bd342b0302e9b73d1fd999bcdb862"
+      id: "93d2d5a1c9ea65de4db2c69715b442df23632ed6"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "318a9da5-f9ae-41c4-a6ad-1557223c6f66", e._sentryDebugIdIdentifier = "sentry-dbid-318a9da5-f9ae-41c4-a6ad-1557223c6f66")
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "1145bd35-ad0d-4d60-9cfe-2435a1f61a0f", e._sentryDebugIdIdentifier = "sentry-dbid-1145bd35-ad0d-4d60-9cfe-2435a1f61a0f")
   })()
 } catch {}
-const $ = e => e;
-
-function h(e) {
-  const t = e - 1;
-  return t * t * t + 1
-}
-
-function w(e, {
-  delay: t = 0,
-  duration: i = 400,
-  easing: s = $
-} = {}) {
-  const r = +getComputedStyle(e).opacity;
-  return {
-    delay: t,
-    duration: i,
-    easing: s,
-    css: a => `opacity: ${a*r}`
-  }
-}
-
-function m(e, {
-  delay: t = 0,
-  duration: i = 400,
-  easing: s = h,
-  axis: r = "y"
-} = {}) {
-  const a = getComputedStyle(e),
-    c = +a.opacity,
-    p = r === "y" ? "height" : "width",
-    l = parseFloat(a[p]),
-    o = r === "y" ? ["top", "bottom"] : ["left", "right"],
-    d = o.map(n => `${n[0].toUpperCase()}${n.slice(1)}`),
-    f = parseFloat(a[`padding${d[0]}`]),
-    y = parseFloat(a[`padding${d[1]}`]),
-    u = parseFloat(a[`margin${d[0]}`]),
-    g = parseFloat(a[`margin${d[1]}`]),
-    b = parseFloat(a[`border${d[0]}Width`]),
-    _ = parseFloat(a[`border${d[1]}Width`]);
-  return {
-    delay: t,
-    duration: i,
-    easing: s,
-    css: n => `overflow: hidden;opacity: ${Math.min(n*20,1)*c};${p}: ${n*l}px;padding-${o[0]}: ${n*f}px;padding-${o[1]}: ${n*y}px;margin-${o[0]}: ${n*u}px;margin-${o[1]}: ${n*g}px;border-${o[0]}-width: ${n*b}px;border-${o[1]}-width: ${n*_}px;min-${p}: 0`
-  }
-}
+const o = () => "Select the report reason",
+  t = () => "Selecione o motivo da denúncia",
+  l = (e = {}, n = {}) => (n.locale ?? d()) === "en" ? o() : t();
 export {
-  w as f, m as s
+  l as s
 };
