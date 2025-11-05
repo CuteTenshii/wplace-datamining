@@ -1,20 +1,20 @@
-var b = t => {
+var m = t => {
   throw TypeError(t)
 };
-var w = (t, e, i) => e.has(t) || b("Cannot " + i);
+var w = (t, e, i) => e.has(t) || m("Cannot " + i);
 var a = (t, e, i) => (w(t, e, "read from private field"), i ? i.call(t) : e.get(t)),
-  n = (t, e, i) => e.has(t) ? b("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, i);
+  n = (t, e, i) => e.has(t) ? m("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, i);
 import {
   w as s,
   g as o,
   y as r,
-  x as m
-} from "./CxAzxtpI.js";
+  x as p
+} from "./LdQOE0HW.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "98d1dff4f9f651349c3d8e3f73a4b0b872bc384a"
+      id: "34cc512744102387f2427379e854c2ea08067337"
     }
   } catch {}
 })();
@@ -29,20 +29,20 @@ const L = "true",
   S = "https://backend.wplace.live/files",
   v = "0x4AAAAAABpHqZ-6i7uL0nmG",
   A = "https://backend.wplace.live",
-  p = "theme";
+  b = "theme";
 var g, l, u, d, c, h, f;
 class y {
   constructor() {
     n(this, g, s(!1));
     n(this, l, s(!1));
-    n(this, u, s(m(I())));
+    n(this, u, s(p(I())));
     n(this, d, s(!1));
     n(this, c, s("custom-winter"));
-    n(this, h, s(m(Date.now())));
+    n(this, h, s(p(Date.now())));
     n(this, f, s(void 0));
     setInterval(() => {
       r(a(this, h), Date.now(), !0)
-    }, 500), this.theme = localStorage.getItem(p), this.theme !== "dark" && this.theme !== "custom-winter" && (this.theme = "custom-winter")
+    }, 500), this.theme = localStorage.getItem(b), this.theme !== "dark" && this.theme !== "custom-winter" && (this.theme = "custom-winter")
   }
   get dropletsDialogOpen() {
     return o(a(this, g))
@@ -72,7 +72,7 @@ class y {
     return o(a(this, c))
   }
   set theme(e) {
-    r(a(this, c), e, !0), localStorage.setItem(p, e), document.documentElement.setAttribute("data-theme", e)
+    r(a(this, c), e, !0), localStorage.setItem(b, e), document.documentElement.setAttribute("data-theme", e)
   }
   get now() {
     return o(a(this, h))

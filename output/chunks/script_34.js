@@ -1,11 +1,11 @@
 import {
   g as o
-} from "./Dfvc1QYL.js";
+} from "./DH84GWeD.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "98d1dff4f9f651349c3d8e3f73a4b0b872bc384a"
+      id: "34cc512744102387f2427379e854c2ea08067337"
     }
   } catch {}
 })();
@@ -16,9 +16,9 @@ try {
     n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "1145bd35-ad0d-4d60-9cfe-2435a1f61a0f", e._sentryDebugIdIdentifier = "sentry-dbid-1145bd35-ad0d-4d60-9cfe-2435a1f61a0f")
   })()
 } catch {}
-const d = () => "Select the report reason",
-  t = () => "Selecione o motivo da denúncia",
-  l = (e = {}, n = {}) => (n.locale ?? o()) === "en" ? d() : t();
+const t = () => "Select the report reason",
+  d = () => "Selecione o motivo da denúncia",
+  l = (e = {}, n = {}) => (n.locale ?? o()) === "en" ? t() : d();
 export {
   l as s
 };

@@ -1,11 +1,11 @@
 import {
-  g as d
-} from "./Dfvc1QYL.js";
+  g as o
+} from "./DH84GWeD.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "98d1dff4f9f651349c3d8e3f73a4b0b872bc384a"
+      id: "34cc512744102387f2427379e854c2ea08067337"
     }
   } catch {}
 })();
@@ -16,9 +16,9 @@ try {
     n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "ad827837-1ed3-4476-b8e7-017499620987", e._sentryDebugIdIdentifier = "sentry-dbid-ad827837-1ed3-4476-b8e7-017499620987")
   })()
 } catch {}
-const o = () => "Cancel",
-  t = () => "Cancelar",
-  a = (e = {}, n = {}) => (n.locale ?? d()) === "en" ? o() : t();
+const t = () => "Cancel",
+  d = () => "Cancelar",
+  c = (e = {}, n = {}) => (n.locale ?? o()) === "en" ? t() : d();
 export {
-  a as c
+  c
 };
