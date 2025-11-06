@@ -1,4 +1,4 @@
-import "./DjrL1dN2.js";
+import "./CGPMrROl.js";
 import {
   p as m,
   f as c,
@@ -8,46 +8,46 @@ import {
   d as y,
   s as _,
   r as h
-} from "./B2p_ornx.js";
+} from "./CXlKQ9h7.js";
 import {
   i as w
-} from "./D1SyD4Uo.js";
+} from "./BcplkeTx.js";
 import {
   d as x,
   a as r,
   s as E
-} from "./fcUCCNMH.js";
+} from "./CU4fr_II.js";
 import {
   p as T,
   r as S
-} from "./BJ6BdknY.js";
+} from "./BNKNbz95.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "7467695e43643d993d60a0d9c62083c1cee57cdf"
+      id: "3b81c531726e4eb39728af6e2ad358d2a11d8033"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "cff6ca0f-68d0-469e-af50-e6ab13d98413", e._sentryDebugIdIdentifier = "sentry-dbid-cff6ca0f-68d0-469e-af50-e6ab13d98413")
+      a = new e.Error().stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "cff6ca0f-68d0-469e-af50-e6ab13d98413", e._sentryDebugIdIdentifier = "sentry-dbid-cff6ca0f-68d0-469e-af50-e6ab13d98413")
   })()
 } catch {}
 const B = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
 var L = c("<span>wplace</span>"),
   R = c('<div><img alt="Wplace logo"/> <!></div>');
 
-function D(e, t) {
-  m(t, !0);
-  let a = T(t, "size", 3, "default"),
-    p = S(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+function D(e, a) {
+  m(a, !0);
+  let t = T(a, "size", 3, "default"),
+    p = S(a, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
   var l = R();
   x(l, () => ({
     ...p,
-    class: `flex items-center gap-1.5 ${t.class??""}`
+    class: `flex items-center gap-1.5 ${a.class??""}`
   }));
   var i = y(l);
   let o;
@@ -57,20 +57,20 @@ function D(e, t) {
       var d = L();
       let f;
       n(b => f = r(d, 1, "text-base-content font-pixel", null, f, b), [() => ({
-        "text-4xl": a() === "default",
-        "text-5xl": a() === "lg" || a() === "medium"
+        "text-4xl": t() === "default",
+        "text-5xl": t() === "lg" || t() === "medium"
       })]), A(s, d)
     };
     w(g, s => {
-      t.hasText && s(u)
+      a.hasText && s(u)
     })
   }
   h(l), n(s => {
     o = r(i, 1, "pixelated", null, o, s), E(i, "src", B)
   }, [() => ({
-    "size-10": a() === "default",
-    "size-16": a() === "medium",
-    "size-20": a() === "lg"
+    "size-10": t() === "default",
+    "size-16": t() === "medium",
+    "size-20": t() === "lg"
   })]), A(e, l), v()
 }
 export {

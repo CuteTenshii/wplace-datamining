@@ -9,13 +9,13 @@ import {
   a5 as o,
   _ as f,
   o as s,
-  a0 as c
-} from "./B2p_ornx.js";
+  a0 as b
+} from "./CXlKQ9h7.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "7467695e43643d993d60a0d9c62083c1cee57cdf"
+      id: "3b81c531726e4eb39728af6e2ad358d2a11d8033"
     }
   } catch {}
 })();
@@ -37,7 +37,7 @@ function p(a) {
     l = d;
   var t;
   if (d) {
-    for (n = s, e === void 0 && (e = c(document.head)); e !== null && (e.nodeType !== y || e.data !== _);) e = i(e);
+    for (n = s, e === void 0 && (e = b(document.head)); e !== null && (e.nodeType !== y || e.data !== _);) e = i(e);
     e === null ? o(!1) : e = f(i(e))
   }
   d || (t = document.head.appendChild(r()));

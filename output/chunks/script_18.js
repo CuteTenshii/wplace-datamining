@@ -2,15 +2,15 @@
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "7467695e43643d993d60a0d9c62083c1cee57cdf"
+      id: "3b81c531726e4eb39728af6e2ad358d2a11d8033"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      o = new e.Error().stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "138d49da-a363-498b-a700-aea1b9f4af0d", e._sentryDebugIdIdentifier = "sentry-dbid-138d49da-a363-498b-a700-aea1b9f4af0d")
+      a = new e.Error().stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "138d49da-a363-498b-a700-aea1b9f4af0d", e._sentryDebugIdIdentifier = "sentry-dbid-138d49da-a363-498b-a700-aea1b9f4af0d")
   })()
 } catch {}
 const y = "en",
@@ -21,31 +21,31 @@ globalThis.__paraglide = {};
 let f = !1,
   w = () => {
     let e;
-    for (const o of g) {
-      if (o === "baseLocale") e = y;
-      else if (o === "preferredLanguage") e = L();
-      else if (o === "localStorage") e = localStorage.getItem(d) ?? void 0;
-      else if (u(o) && l.has(o)) {
-        const a = l.get(o);
-        if (a) {
-          const t = a.getLocale();
+    for (const a of g) {
+      if (a === "baseLocale") e = y;
+      else if (a === "preferredLanguage") e = L();
+      else if (a === "localStorage") e = localStorage.getItem(d) ?? void 0;
+      else if (u(a) && l.has(a)) {
+        const o = l.get(a);
+        if (o) {
+          const t = o.getLocale();
           if (t instanceof Promise) continue;
           e = t
         }
       }
       if (e !== void 0) {
-        const a = h(e);
-        return f || (f = !0, p(a, {
+        const o = h(e);
+        return f || (f = !0, p(o, {
           reload: !1
-        })), a
+        })), o
       }
     }
     throw new Error("No locale found. Read the docs https://inlang.com/m/gerre34r/library-inlang-paraglideJs/errors#no-locale-found")
   },
-  p = (e, o) => {
-    const a = {
+  p = (e, a) => {
+    const o = {
       reload: !0,
-      ...o
+      ...a
     };
     let t;
     try {
@@ -63,7 +63,7 @@ let f = !1,
             })
           }
         }
-      } a.reload && window.location && e !== t && window.location.reload()
+      } o.reload && window.location && e !== t && window.location.reload()
   };
 
 function r(e) {
@@ -76,18 +76,18 @@ function h(e) {
 }
 
 function L() {
-  var o;
-  if (!((o = navigator == null ? void 0 : navigator.languages) != null && o.length)) return;
-  const e = navigator.languages.map(a => {
+  var a;
+  if (!((a = navigator == null ? void 0 : navigator.languages) != null && a.length)) return;
+  const e = navigator.languages.map(o => {
     var t;
     return {
-      fullTag: a.toLowerCase(),
-      baseTag: (t = a.split("-")[0]) == null ? void 0 : t.toLowerCase()
+      fullTag: o.toLowerCase(),
+      baseTag: (t = o.split("-")[0]) == null ? void 0 : t.toLowerCase()
     }
   });
-  for (const a of e) {
-    if (r(a.fullTag)) return a.fullTag;
-    if (r(a.baseTag)) return a.baseTag
+  for (const o of e) {
+    if (r(o.fullTag)) return o.fullTag;
+    if (r(o.baseTag)) return o.baseTag
   }
 }
 const l = new Map;

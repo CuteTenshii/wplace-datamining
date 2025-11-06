@@ -1,27 +1,27 @@
 import {
   g as v
-} from "./DsZdAqoa.js";
-import "./DjrL1dN2.js";
+} from "./B_Uj5QW4.js";
+import "./CGPMrROl.js";
 import {
   B as p,
   a as g,
   b as l,
-  H as d
-} from "./B2p_ornx.js";
+  H as f
+} from "./CXlKQ9h7.js";
 import {
-  i as u
-} from "./D1SyD4Uo.js";
+  i as b
+} from "./BcplkeTx.js";
 import {
   d as i
-} from "./fcUCCNMH.js";
+} from "./CU4fr_II.js";
 import {
-  r as y
-} from "./BJ6BdknY.js";
+  r as u
+} from "./BNKNbz95.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "7467695e43643d993d60a0d9c62083c1cee57cdf"
+      id: "3b81c531726e4eb39728af6e2ad358d2a11d8033"
     }
   } catch {}
 })();
@@ -32,16 +32,16 @@ try {
     o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "59d48d80-bc2f-42c4-9d59-7f4fa58b6c9f", e._sentryDebugIdIdentifier = "sentry-dbid-59d48d80-bc2f-42c4-9d59-7f4fa58b6c9f")
   })()
 } catch {}
-const _ = e => `Copy alliance ID: #${e.allianceId}`,
-  b = e => `Copiar ID da aliança: #${e.allianceId}`,
-  H = (e, o = {}) => (o.locale ?? v()) === "en" ? _(e) : b(e);
-var h = d('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
-  m = d('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
+const y = e => `Copy alliance ID: #${e.allianceId}`,
+  _ = e => `Copiar ID da aliança: #${e.allianceId}`,
+  H = (e, o = {}) => (o.locale ?? v()) === "en" ? y(e) : _(e);
+var h = f('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
+  m = f('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
 function Z(e, o) {
-  let n = y(o, ["$$slots", "$$events", "$$legacy", "filled"]);
+  let n = u(o, ["$$slots", "$$events", "$$legacy", "filled"]);
   var r = p(),
-    f = g(r);
+    d = g(r);
   {
     var s = a => {
         var t = h();
@@ -61,7 +61,7 @@ function Z(e, o) {
           ...n
         })), l(a, t)
       };
-    u(f, a => {
+    b(d, a => {
       o.filled ? a(s) : a(c, !1)
     })
   }
