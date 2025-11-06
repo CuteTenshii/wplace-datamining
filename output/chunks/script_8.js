@@ -2,7 +2,7 @@
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "34cc512744102387f2427379e854c2ea08067337"
+      id: "7467695e43643d993d60a0d9c62083c1cee57cdf"
     }
   } catch {}
 })();
@@ -39,13 +39,13 @@ const m = "modulepreload",
         const s = t.endsWith(".css"),
           c = s ? '[rel="stylesheet"]' : "";
         if (!!u)
-          for (let a = n.length - 1; a >= 0; a--) {
-            const d = n[a];
-            if (d.href === t && (!s || d.rel === "stylesheet")) return
+          for (let d = n.length - 1; d >= 0; d--) {
+            const a = n[d];
+            if (a.href === t && (!s || a.rel === "stylesheet")) return
           } else if (document.querySelector(`link[href="${t}"]${c}`)) return;
         const r = document.createElement("link");
-        if (r.rel = s ? "stylesheet" : m, s || (r.as = "script"), r.crossOrigin = "", r.href = t, g && r.setAttribute("nonce", g), document.head.appendChild(r), s) return new Promise((a, d) => {
-          r.addEventListener("load", a), r.addEventListener("error", () => d(new Error(`Unable to preload CSS for ${t}`)))
+        if (r.rel = s ? "stylesheet" : m, s || (r.as = "script"), r.crossOrigin = "", r.href = t, g && r.setAttribute("nonce", g), document.head.appendChild(r), s) return new Promise((d, a) => {
+          r.addEventListener("load", d), r.addEventListener("error", () => a(new Error(`Unable to preload CSS for ${t}`)))
         })
       }))
     }
