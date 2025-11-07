@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./DQLsifzP.js";
+} from "./DO1P0MAk.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "a684b76bda26a353b92d069a016aee15159248aa"
+      id: "80747ca6680cc53dedf6ebd5efc0d97ede3ccece"
     }
   } catch {}
 })();
@@ -16,15 +16,15 @@ try {
     n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "390ea0b0-ec3a-494a-b5f8-b67a0e2ce59e", e._sentryDebugIdIdentifier = "sentry-dbid-390ea0b0-ec3a-494a-b5f8-b67a0e2ce59e")
   })()
 } catch {}
-const a = () => "Save",
-  l = () => "Salvar",
-  y = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? a() : l(),
-  o = () => "Members",
-  s = () => "Membros",
-  _ = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? o() : s(),
-  i = () => "Player",
-  c = () => "Jogador",
-  g = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? i() : c(),
+const l = () => "Save",
+  o = () => "Salvar",
+  y = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? l() : o(),
+  s = () => "Members",
+  a = () => "Membros",
+  _ = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? s() : a(),
+  c = () => "Player",
+  i = () => "Jogador",
+  g = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? c() : i(),
   u = () => "Last pixel",
   d = () => "Último pixel",
   m = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? u() : d(),

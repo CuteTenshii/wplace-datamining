@@ -1,53 +1,53 @@
-import "./0Rmtzvn4.js";
+import "./YezfaOcG.js";
 import {
   p as m,
   f as c,
-  t as f,
+  t as n,
   b as A,
   c as v,
   d as y,
   s as _,
   r as h
-} from "./CoAY_RIV.js";
+} from "./WB2K_T_Y.js";
 import {
   i as w
-} from "./8_0aWUkr.js";
+} from "./Byq5oaCr.js";
 import {
   d as x,
   a as r,
   s as E
-} from "./CXrFq78m.js";
+} from "./BGPoqtx5.js";
 import {
   p as T,
   r as S
-} from "./B8YA1KFW.js";
+} from "./CN7RASCS.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "a684b76bda26a353b92d069a016aee15159248aa"
+      id: "80747ca6680cc53dedf6ebd5efc0d97ede3ccece"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      a = new e.Error().stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "cff6ca0f-68d0-469e-af50-e6ab13d98413", e._sentryDebugIdIdentifier = "sentry-dbid-cff6ca0f-68d0-469e-af50-e6ab13d98413")
+      t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "cff6ca0f-68d0-469e-af50-e6ab13d98413", e._sentryDebugIdIdentifier = "sentry-dbid-cff6ca0f-68d0-469e-af50-e6ab13d98413")
   })()
 } catch {}
 const B = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
 var L = c("<span>wplace</span>"),
   R = c('<div><img alt="Wplace logo"/> <!></div>');
 
-function D(e, a) {
-  m(a, !0);
-  let t = T(a, "size", 3, "default"),
-    p = S(a, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+function D(e, t) {
+  m(t, !0);
+  let a = T(t, "size", 3, "default"),
+    p = S(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
   var l = R();
   x(l, () => ({
     ...p,
-    class: `flex items-center gap-1.5 ${a.class??""}`
+    class: `flex items-center gap-1.5 ${t.class??""}`
   }));
   var i = y(l);
   let o;
@@ -55,22 +55,22 @@ function D(e, a) {
   {
     var u = s => {
       var d = L();
-      let n;
-      f(b => n = r(d, 1, "text-base-content font-pixel", null, n, b), [() => ({
-        "text-4xl": t() === "default",
-        "text-5xl": t() === "lg" || t() === "medium"
+      let f;
+      n(b => f = r(d, 1, "text-base-content font-pixel", null, f, b), [() => ({
+        "text-4xl": a() === "default",
+        "text-5xl": a() === "lg" || a() === "medium"
       })]), A(s, d)
     };
     w(g, s => {
-      a.hasText && s(u)
+      t.hasText && s(u)
     })
   }
-  h(l), f(s => {
+  h(l), n(s => {
     o = r(i, 1, "pixelated", null, o, s), E(i, "src", B)
   }, [() => ({
-    "size-10": t() === "default",
-    "size-16": t() === "medium",
-    "size-20": t() === "lg"
+    "size-10": a() === "default",
+    "size-16": a() === "medium",
+    "size-20": a() === "lg"
   })]), A(e, l), v()
 }
 export {
