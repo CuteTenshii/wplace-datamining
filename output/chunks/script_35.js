@@ -1,11 +1,11 @@
 import {
-  S as c
-} from "./ClCv-iC5.js";
+  S as d
+} from "./CMLP9Z89.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "593fad81c7773faec9a14f5284420d643abf8801"
+      id: "219ea57e7890a3172dffa4aa889d8e60b8db06d9"
     }
   } catch {}
 })();
@@ -51,8 +51,8 @@ function k(t) {
 }
 
 function C(t) {
-  t = Math.min(t, c.colors.length - 1);
-  const [e, o, r] = c.colors[t].rgb;
+  t = Math.min(t, d.colors.length - 1);
+  const [e, o, r] = d.colors[t].rgb;
   return {
     r: e,
     g: o,
@@ -60,7 +60,7 @@ function C(t) {
     a: t === 0 ? 0 : 255
   }
 }
-const y = c.colors.map((t, e) => ({
+const y = d.colors.map((t, e) => ({
   ...t,
   idx: e,
   lab: v({
@@ -105,9 +105,9 @@ function m(t, e) {
   var w = 1 + .045 * n,
     h = 1 + .015 * n,
     g = o / 1,
-    f = i / w,
-    d = s / h,
-    b = g * g + f * f + d * d;
+    c = i / w,
+    f = s / h,
+    b = g * g + c * c + f * f;
   return b < 0 ? 0 : Math.sqrt(b)
 }
 export {
