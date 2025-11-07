@@ -1,27 +1,27 @@
 import {
   g as v
-} from "./vKol3cY0.js";
-import "./BRnRbCXh.js";
+} from "./Pn4dKiI3.js";
+import "./BecEsbZg.js";
 import {
   B as p,
   a as g,
   b as l,
-  H as f
-} from "./CYoegeTR.js";
+  H as i
+} from "./BxgNydnk.js";
 import {
   i as b
-} from "./DIfzTqcZ.js";
+} from "./vtVB1QN9.js";
 import {
-  d as i
-} from "./C4xFVMiL.js";
+  d as f
+} from "./B8ikJ4tO.js";
 import {
   r as u
-} from "./BgDYC9NM.js";
+} from "./DYVs8bcP.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "92ae795e9248bdcce35d232be052f909a85c076d"
+      id: "593fad81c7773faec9a14f5284420d643abf8801"
     }
   } catch {}
 })();
@@ -35,8 +35,8 @@ try {
 const y = e => `Copy alliance ID: #${e.allianceId}`,
   _ = e => `Copiar ID da aliança: #${e.allianceId}`,
   H = (e, o = {}) => (o.locale ?? v()) === "en" ? y(e) : _(e);
-var h = f('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
-  m = f('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
+var h = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
+  m = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
 function Z(e, o) {
   let n = u(o, ["$$slots", "$$events", "$$legacy", "filled"]);
@@ -45,7 +45,7 @@ function Z(e, o) {
   {
     var s = a => {
         var t = h();
-        i(t, () => ({
+        f(t, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
           fill: "currentColor",
@@ -54,7 +54,7 @@ function Z(e, o) {
       },
       c = a => {
         var t = m();
-        i(t, () => ({
+        f(t, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
           fill: "currentColor",

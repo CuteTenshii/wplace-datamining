@@ -1,22 +1,22 @@
 import {
   g as r
-} from "./vKol3cY0.js";
-import "./BRnRbCXh.js";
+} from "./Pn4dKiI3.js";
+import "./BecEsbZg.js";
 import {
   H as s,
-  b as d
-} from "./CYoegeTR.js";
+  b as f
+} from "./BxgNydnk.js";
 import {
-  d as f
-} from "./C4xFVMiL.js";
+  d as a
+} from "./B8ikJ4tO.js";
 import {
-  r as l
-} from "./BgDYC9NM.js";
+  r as d
+} from "./DYVs8bcP.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "92ae795e9248bdcce35d232be052f909a85c076d"
+      id: "593fad81c7773faec9a14f5284420d643abf8801"
     }
   } catch {}
 })();
@@ -27,20 +27,20 @@ try {
     o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "91d957fa-0b6e-45d8-995c-f1838ed31bb1", e._sentryDebugIdIdentifier = "sentry-dbid-91d957fa-0b6e-45d8-995c-f1838ed31bb1")
   })()
 } catch {}
-const a = () => "Close",
+const l = () => "Close",
   i = () => "Fechar",
-  w = (e = {}, o = {}) => (o.locale ?? r()) === "en" ? a() : i();
+  w = (e = {}, o = {}) => (o.locale ?? r()) === "en" ? l() : i();
 var c = s('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
 
 function m(e, o) {
-  let t = l(o, ["$$slots", "$$events", "$$legacy"]);
+  let t = d(o, ["$$slots", "$$events", "$$legacy"]);
   var n = c();
-  f(n, () => ({
+  a(n, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
     ...t
-  })), d(e, n)
+  })), f(e, n)
 }
 export {
   m as A, w as c
