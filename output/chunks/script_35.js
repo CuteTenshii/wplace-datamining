@@ -1,11 +1,11 @@
 import {
-  S as d
-} from "./CMLP9Z89.js";
+  S as c
+} from "./BaMLSbfM.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "219ea57e7890a3172dffa4aa889d8e60b8db06d9"
+      id: "30982d7718bbc4a833ef39834f2cfbbfa1f546ae"
     }
   } catch {}
 })();
@@ -51,8 +51,8 @@ function k(t) {
 }
 
 function C(t) {
-  t = Math.min(t, d.colors.length - 1);
-  const [e, o, r] = d.colors[t].rgb;
+  t = Math.min(t, c.colors.length - 1);
+  const [e, o, r] = c.colors[t].rgb;
   return {
     r: e,
     g: o,
@@ -60,7 +60,7 @@ function C(t) {
     a: t === 0 ? 0 : 255
   }
 }
-const y = d.colors.map((t, e) => ({
+const y = c.colors.map((t, e) => ({
   ...t,
   idx: e,
   lab: v({
@@ -104,10 +104,10 @@ function m(t, e) {
   s = s < 0 ? 0 : Math.sqrt(s);
   var w = 1 + .045 * n,
     h = 1 + .015 * n,
-    g = o / 1,
-    c = i / w,
-    f = s / h,
-    b = g * g + c * c + f * f;
+    f = o / 1,
+    g = i / w,
+    d = s / h,
+    b = f * f + g * g + d * d;
   return b < 0 ? 0 : Math.sqrt(b)
 }
 export {

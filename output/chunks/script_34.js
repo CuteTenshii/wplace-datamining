@@ -1,11 +1,11 @@
 import {
   g as a
-} from "./BksegHYW.js";
+} from "./B3Pi0DVN.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "219ea57e7890a3172dffa4aa889d8e60b8db06d9"
+      id: "30982d7718bbc4a833ef39834f2cfbbfa1f546ae"
     }
   } catch {}
 })();
@@ -18,10 +18,10 @@ try {
 } catch {}
 const o = () => "Select the report reason",
   r = () => "Selecione o motivo da denúncia",
-  d = (e = {}, n = {}) => (n.locale ?? a()) === "en" ? o() : r(),
+  f = (e = {}, n = {}) => (n.locale ?? a()) === "en" ? o() : r(),
   s = () => "Search",
   c = () => "Buscar",
-  f = (e = {}, n = {}) => (n.locale ?? a()) === "en" ? s() : c();
+  d = (e = {}, n = {}) => (n.locale ?? a()) === "en" ? s() : c();
 export {
-  d as a, f as s
+  f as a, d as s
 };
