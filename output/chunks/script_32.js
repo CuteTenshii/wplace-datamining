@@ -1,10 +1,10 @@
 import {
   g as l
-} from "./B3Pi0DVN.js";
-import "./TqSv-OG4.js";
+} from "./DQLsifzP.js";
+import "./0Rmtzvn4.js";
 import {
   o as We
-} from "./Cw8kUfhm.js";
+} from "./CwRBQkP6.js";
 import {
   H as xe,
   b as g,
@@ -22,20 +22,20 @@ import {
   c as Ge,
   t as k,
   g as u,
-  u as fe,
+  u as me,
   z as re,
-  B as me,
+  B as fe,
   a as ve
-} from "./t6Scptgh.js";
+} from "./CoAY_RIV.js";
 import {
-  s as m
-} from "./BIxvKb71.js";
+  s as f
+} from "./CTDclSWK.js";
 import {
   i as B
-} from "./BVOGXu18.js";
+} from "./8_0aWUkr.js";
 import {
   e as Je
-} from "./Cdq9jw1S.js";
+} from "./CJVcniXa.js";
 import {
   d as we,
   e as Qe,
@@ -43,23 +43,23 @@ import {
   s as ge,
   g as S,
   a as be
-} from "./9lPhjRvA.js";
+} from "./CXrFq78m.js";
 import {
   t as Xe
-} from "./BIkJjB7L.js";
+} from "./D0XRsjNt.js";
 import {
   c as $e
-} from "./DX9-2Cfi.js";
+} from "./BsKEyOU1.js";
 import {
   b as et
-} from "./OrH03c1S.js";
+} from "./BRiATXyh.js";
 import {
   r as ke,
   p as tt
-} from "./BfNs_3Yh.js";
+} from "./B8YA1KFW.js";
 import {
   P as ne
-} from "./Cvk6QVAo.js";
+} from "./COVnWZdI.js";
 import {
   i as rt,
   h as nt,
@@ -68,34 +68,34 @@ import {
   g as st,
   t as x,
   a as he
-} from "./BaMLSbfM.js";
+} from "./D-HkZoi_.js";
 import {
   o as lt,
   L as it,
   s as ct,
   g as ut
-} from "./B0ccnJ3y.js";
+} from "./BAdK-O2E.js";
 import {
   P as dt
-} from "./B3Nxic_f.js";
+} from "./DVYiVgXt.js";
 import {
   c as pt
-} from "./BCq_Sdel.js";
+} from "./RJAW5Kh0.js";
 import {
   a as _t
-} from "./BXMNIzHz.js";
+} from "./DcxAxCsO.js";
 import {
   g as ye,
-  a as ft
-} from "./fOITomNF.js";
+  a as mt
+} from "./ohMkcQpn.js";
 import {
-  f as mt
-} from "./B93SUGhW.js";
+  f as ft
+} from "./go9FCkYm.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "30982d7718bbc4a833ef39834f2cfbbfa1f546ae"
+      id: "a684b76bda26a353b92d069a016aee15159248aa"
     }
   } catch {}
 })();
@@ -165,10 +165,10 @@ const vt = () => "Log Out",
   dr = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? cr() : ur(),
   pr = () => "Name reported successfully",
   _r = () => "Nome reportado com sucesso",
-  fr = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? pr() : _r(),
-  mr = () => "Report alliance name",
+  mr = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? pr() : _r(),
+  fr = () => "Report alliance name",
   vr = () => "Reportar nome da aliança",
-  gr = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? mr() : vr(),
+  gr = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? fr() : vr(),
   br = () => "Alliance name reported successfully",
   hr = () => "Nome da aliança reportado com sucesso",
   yr = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? br() : hr();
@@ -228,8 +228,8 @@ function on(t, e) {
     description: Ft()
   }];
   We(() => {
-    const _ = f => {
-      f.key === "Escape" && p(!1)
+    const _ = m => {
+      m.key === "Escape" && p(!1)
     };
     return document.addEventListener("keydown", _), () => document.removeEventListener("keydown", _)
   }), pe(() => {
@@ -242,7 +242,7 @@ function on(t, e) {
   };
   async function Te(_) {
     try {
-      v(w, !0), (await he.postReportUserName(_)).status === "ok" ? x.success(fr()) : x.error(I())
+      v(w, !0), (await he.postReportUserName(_)).status === "ok" ? x.success(mr()) : x.error(I())
     } catch {
       x.error(I())
     } finally {
@@ -263,8 +263,8 @@ function on(t, e) {
     Le = c(a(oe), 2);
   {
     var De = _ => {
-      var f = Dr(),
-        O = a(f);
+      var m = Dr(),
+        O = a(m);
       D(O);
       var M = c(O, 2);
       D(M);
@@ -289,23 +289,23 @@ function on(t, e) {
       {
         var Ne = s => {
             var n = re();
-            k(i => m(n, i), [() => wt()]), g(s, n)
+            k(i => f(n, i), [() => wt()]), g(s, n)
           },
           Ue = s => {
-            var n = me(),
+            var n = fe(),
               i = ve(n);
             {
               var d = h => {
                   var y = re();
-                  k(T => m(y, T), [() => Rt()]), g(h, y)
+                  k(T => f(y, T), [() => Rt()]), g(h, y)
                 },
                 b = h => {
-                  var y = me(),
+                  var y = fe(),
                     T = ve(y);
                   {
                     var P = E => {
                       var z = re();
-                      k(Ke => m(z, Ke), [() => Lt()]), g(E, z)
+                      k(Ke => f(z, Ke), [() => Lt()]), g(E, z)
                     };
                     B(T, E => {
                       e.action === "ban" && E(P)
@@ -337,8 +337,8 @@ function on(t, e) {
           var n = kr(),
             i = a(n, !0);
           o(n), k((d, b) => {
-            be(n, 1, `badge ml-1 border-0 ${d??""} ${b??""}`), m(i, e.paintedBy.allianceName)
-          }, [() => ft(e.paintedBy.allianceId), () => ye(e.paintedBy.allianceId)]), g(s, n)
+            be(n, 1, `badge ml-1 border-0 ${d??""} ${b??""}`), f(i, e.paintedBy.allianceName)
+          }, [() => mt(e.paintedBy.allianceId), () => ye(e.paintedBy.allianceId)]), g(s, n)
         };
         B(le, s => {
           e.paintedBy.allianceName && s(Pe)
@@ -363,7 +363,7 @@ function on(t, e) {
             i = a(n);
           i.__click = [Rr, Ee, e];
           var d = a(i, !0);
-          o(i), o(n), k(b => m(d, b), [() => gr()]), g(s, n)
+          o(i), o(n), k(b => f(d, b), [() => gr()]), g(s, n)
         };
         B(Ze, s => {
           e.paintedBy.allianceId && s(qe)
@@ -386,14 +386,14 @@ function on(t, e) {
         var P = c(y, 2),
           E = a(P, !0);
         o(P), o(h), o(i), k(() => {
-          ge(d, "aria-label", u(n).label), b !== (b = u(n).value) && (d.value = (d.__value = u(n).value) ?? ""), m(T, u(n).label), m(E, u(n).description)
+          ge(d, "aria-label", u(n).label), b !== (b = u(n).value) && (d.value = (d.__value = u(n).value) ?? ""), f(T, u(n).label), f(E, u(n).description)
         }), $e(r, [], d, () => (u(n).value, u(U)), z => v(U, z)), g(s, i)
       }), o(ue), o(X);
       var ee = c(X, 2),
         Me = a(ee);
       {
-        let s = fe(() => ut()),
-          n = fe(() => u(U) === "doxxing" ? 20 : 5);
+        let s = me(() => ut()),
+          n = me(() => u(U) === "doxxing" ? 20 : 5);
         it(Me, {
           class: "h-20 rounded-lg",
           name: "notes",
@@ -426,9 +426,9 @@ function on(t, e) {
       o(C);
       var te = c(C, 2),
         je = a(te, !0);
-      o(te), o(de), o(f), et(f, s => v(A, s), () => u(A)), k((s, n, i, d, b) => {
-        ge(f, "action", Re[e.action]), S(O, e.paintedBy.id), S(M, e.latLon[0]), S(H, e.latLon[1]), S(j, e.zoom), be(F, 1, `font-medium ${s??""} flex gap-1.5`), m(Ae, e.paintedBy.name), m(Ce, `#${e.paintedBy.id??""}`), m(Se, n), m(Oe, `${i??""}:`), m(He, d), te.disabled = u(w), m(je, b)
-      }, [() => ye(e.paintedBy.id), () => dr(), () => ct(), () => pt(), () => Gt()]), _e("submit", f, async s => {
+      o(te), o(de), o(m), et(m, s => v(A, s), () => u(A)), k((s, n, i, d, b) => {
+        ge(m, "action", Re[e.action]), S(O, e.paintedBy.id), S(M, e.latLon[0]), S(H, e.latLon[1]), S(j, e.zoom), be(F, 1, `font-medium ${s??""} flex gap-1.5`), f(Ae, e.paintedBy.name), f(Ce, `#${e.paintedBy.id??""}`), f(Se, n), f(Oe, `${i??""}:`), f(He, d), te.disabled = u(w), f(je, b)
+      }, [() => ye(e.paintedBy.id), () => dr(), () => ct(), () => pt(), () => Gt()]), _e("submit", m, async s => {
         if (s.preventDefault(), !u(w) && u(q)()) try {
           v(w, !0);
           const n = new FormData(u(A));
@@ -447,7 +447,7 @@ function on(t, e) {
         } finally {
           v(w, !1)
         }
-      }), Xe(2, f, () => mt), g(_, f)
+      }), Xe(2, m, () => ft), g(_, m)
     };
     B(Le, _ => {
       p() && _(De)

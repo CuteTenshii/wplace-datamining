@@ -9,12 +9,12 @@ import {
   g as o,
   y as r,
   x as m
-} from "./t6Scptgh.js";
+} from "./CoAY_RIV.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "30982d7718bbc4a833ef39834f2cfbbfa1f546ae"
+      id: "a684b76bda26a353b92d069a016aee15159248aa"
     }
   } catch {}
 })();

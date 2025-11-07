@@ -37,12 +37,12 @@ import {
   am as De,
   an as Ne,
   ao as xe
-} from "./t6Scptgh.js";
+} from "./CoAY_RIV.js";
 (function() {
   try {
     var f = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     f.SENTRY_RELEASE = {
-      id: "30982d7718bbc4a833ef39834f2cfbbfa1f546ae"
+      id: "a684b76bda26a353b92d069a016aee15159248aa"
     }
   } catch {}
 })();
