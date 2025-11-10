@@ -1,11 +1,11 @@
 import {
   g as a
-} from "./DwU20SJL.js";
+} from "./kOljdb2e.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "469a7b97473ab29d501541611648ac6bd4beba7b"
+      id: "5699240c8856da05e48f188a8f5094ebed5a4fea"
     }
   } catch {}
 })();
@@ -21,7 +21,7 @@ const o = () => "Select the report reason",
   d = (e = {}, n = {}) => (n.locale ?? a()) === "en" ? o() : r(),
   s = () => "Search",
   c = () => "Buscar",
-  i = (e = {}, n = {}) => (n.locale ?? a()) === "en" ? s() : c();
+  f = (e = {}, n = {}) => (n.locale ?? a()) === "en" ? s() : c();
 export {
-  d as a, i as s
+  d as a, f as s
 };

@@ -1,31 +1,31 @@
-import "./D0khCE9p.js";
+import "./Bkykk9eX.js";
 import {
   p as m,
   f as c,
-  t as f,
+  t as n,
   b as A,
   c as v,
   d as y,
   s as _,
   r as h
-} from "./DEdiZ67Z.js";
+} from "./CgVbUwWD.js";
 import {
   i as w
-} from "./DMpNbPuN.js";
+} from "./Ct2DDdA8.js";
 import {
   d as x,
   a as r,
   s as E
-} from "./BMo7aRVX.js";
+} from "./dKlGph8B.js";
 import {
   p as T,
   r as S
-} from "./Dm4bzwAH.js";
+} from "./BcoXmxB-.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "469a7b97473ab29d501541611648ac6bd4beba7b"
+      id: "5699240c8856da05e48f188a8f5094ebed5a4fea"
     }
   } catch {}
 })();
@@ -43,29 +43,29 @@ var L = c("<span>wplace</span>"),
 function D(e, a) {
   m(a, !0);
   let t = T(a, "size", 3, "default"),
-    b = S(a, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+    p = S(a, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
   var l = R();
   x(l, () => ({
-    ...b,
+    ...p,
     class: `flex items-center gap-1.5 ${a.class??""}`
   }));
   var i = y(l);
   let o;
-  var p = _(i, 2);
+  var g = _(i, 2);
   {
-    var g = s => {
-      var d = L();
-      let n;
-      f(u => n = r(d, 1, "text-base-content font-pixel", null, n, u), [() => ({
+    var u = s => {
+      var f = L();
+      let d;
+      n(b => d = r(f, 1, "text-base-content font-pixel", null, d, b), [() => ({
         "text-4xl": t() === "default",
         "text-5xl": t() === "lg" || t() === "medium"
-      })]), A(s, d)
+      })]), A(s, f)
     };
-    w(p, s => {
-      a.hasText && s(g)
+    w(g, s => {
+      a.hasText && s(u)
     })
   }
-  h(l), f(s => {
+  h(l), n(s => {
     o = r(i, 1, "pixelated", null, o, s), E(i, "src", B)
   }, [() => ({
     "size-10": t() === "default",
