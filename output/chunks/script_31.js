@@ -1,22 +1,22 @@
 import {
   g as s
-} from "./CGnAXBz7.js";
-import "./BOyEd4Tb.js";
+} from "./DwU20SJL.js";
+import "./D0khCE9p.js";
 import {
   H as r,
   b as i
-} from "./IkYrrgcA.js";
+} from "./DEdiZ67Z.js";
 import {
-  d
-} from "./CewNjJx9.js";
+  d as a
+} from "./BMo7aRVX.js";
 import {
   r as l
-} from "./DKFEIBmk.js";
+} from "./Dm4bzwAH.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "4871fd2f83b0bcd7abd0ecfe3a61b3d6255622d1"
+      id: "469a7b97473ab29d501541611648ac6bd4beba7b"
     }
   } catch {}
 })();
@@ -27,9 +27,9 @@ try {
     t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "45f9c507-8783-4c0b-8043-799c45d52e36", e._sentryDebugIdIdentifier = "sentry-dbid-45f9c507-8783-4c0b-8043-799c45d52e36")
   })()
 } catch {}
-const a = () => "Pixels painted",
+const d = () => "Pixels painted",
   c = () => "Pixels pintados",
-  T = (e = {}, t = {}) => (t.locale ?? s()) === "en" ? a() : c(),
+  T = (e = {}, t = {}) => (t.locale ?? s()) === "en" ? d() : c(),
   p = () => "Description",
   f = () => "Descrição",
   m = (e = {}, t = {}) => (t.locale ?? s()) === "en" ? p() : f();
@@ -38,7 +38,7 @@ var u = r('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q
 function v(e, t) {
   let n = l(t, ["$$slots", "$$events", "$$legacy"]);
   var o = u();
-  d(o, () => ({
+  a(o, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",

@@ -19,22 +19,22 @@ import {
   y as S,
   L as ee,
   u as A
-} from "./IkYrrgcA.js";
+} from "./DEdiZ67Z.js";
 import {
   P as re,
   g as he
-} from "./j937-HrD.js";
+} from "./Jzhnf5XJ.js";
 import {
   g as u
-} from "./CGnAXBz7.js";
+} from "./DwU20SJL.js";
 import {
   s as _e
-} from "./B3z9n8Y3.js";
+} from "./DHoDzdGU.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "4871fd2f83b0bcd7abd0ecfe3a61b3d6255622d1"
+      id: "469a7b97473ab29d501541611648ac6bd4beba7b"
     }
   } catch {}
 })();
@@ -42,7 +42,7 @@ try {
   (function() {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new a.Error().stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "cd3baad1-9040-43e4-bb3c-eebf862c9451", a._sentryDebugIdIdentifier = "sentry-dbid-cd3baad1-9040-43e4-bb3c-eebf862c9451")
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "5b0d9ead-c120-4c10-a86c-f2d0cde7ecf6", a._sentryDebugIdIdentifier = "sentry-dbid-5b0d9ead-c120-4c10-a86c-f2d0cde7ecf6")
   })()
 } catch {}
 
@@ -2193,8 +2193,7 @@ class Qn {
         userId: e
       })
     });
-    if (t.status !== 200) throw new c(o(), t.status);
-    return t.json()
+    if (t.status !== 200) throw new c(o(), t.status)
   }
   async postReportAllianceName(e) {
     const t = await this.request("/report/alliance/name", {
@@ -2380,5 +2379,5 @@ class Qn {
 $ = new WeakMap;
 let Z = new Qn(re);
 export {
-  fa as A, ha as B, ue as C, ma as P, Yn as S, qe as _, Z as a, la as b, o as c, Xt as d, Ft as e, b as f, Yt as g, zt as h, $t as i, ra as j, sa as k, Zn as l, ca as m, ia as n, _a as o, Cn as p, pa as q, da as r, ua as s, se as t, z as u, oa as v, pn as w, rn as x, mn as y, ga as z
+  ga as A, ha as B, ue as C, ma as P, Yn as S, qe as _, Z as a, la as b, o as c, Xt as d, Ft as e, b as f, Yt as g, zt as h, $t as i, ra as j, sa as k, Zn as l, ca as m, ia as n, fa as o, _a as p, Cn as q, da as r, ua as s, se as t, z as u, pa as v, oa as w, pn as x, mn as y, rn as z
 };

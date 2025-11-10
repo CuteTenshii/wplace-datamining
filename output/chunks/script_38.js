@@ -1,52 +1,64 @@
-import {
-  D as u,
-  F as y,
-  G as _,
-  i as g,
-  h as l,
-  e as h,
-  j as p,
-  k as v,
-  l as m,
-  m as w,
-  o as I,
-  U as k,
-  q as D
-} from "./IkYrrgcA.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "4871fd2f83b0bcd7abd0ecfe3a61b3d6255622d1"
+      id: "469a7b97473ab29d501541611648ac6bd4beba7b"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "1c8f7b8c-ebfb-4b32-a3c5-252867ab6df8", e._sentryDebugIdIdentifier = "sentry-dbid-1c8f7b8c-ebfb-4b32-a3c5-252867ab6df8")
+      t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "318a9da5-f9ae-41c4-a6ad-1557223c6f66", e._sentryDebugIdIdentifier = "sentry-dbid-318a9da5-f9ae-41c4-a6ad-1557223c6f66")
   })()
 } catch {}
+const $ = e => e;
 
-function T(e, n, c) {
-  l && h();
-  var f = e,
-    t = k,
-    d, o, a = null,
-    b = u() ? y : _;
+function h(e) {
+  const t = e - 1;
+  return t * t * t + 1
+}
 
-  function s() {
-    d && D(d), a !== null && (a.lastChild.remove(), f.before(a), a = null), d = o
+function w(e, {
+  delay: t = 0,
+  duration: i = 400,
+  easing: s = $
+} = {}) {
+  const r = +getComputedStyle(e).opacity;
+  return {
+    delay: t,
+    duration: i,
+    easing: s,
+    css: n => `opacity: ${n*r}`
   }
-  g(() => {
-    if (b(t, t = n())) {
-      var i = f,
-        r = w();
-      r && (a = document.createDocumentFragment(), a.append(i = p())), o = v(() => c(i)), r ? m.add_callback(s) : s()
-    }
-  }), l && (f = I)
+}
+
+function m(e, {
+  delay: t = 0,
+  duration: i = 400,
+  easing: s = h,
+  axis: r = "y"
+} = {}) {
+  const n = getComputedStyle(e),
+    c = +n.opacity,
+    p = r === "y" ? "height" : "width",
+    l = parseFloat(n[p]),
+    o = r === "y" ? ["top", "bottom"] : ["left", "right"],
+    d = o.map(a => `${a[0].toUpperCase()}${a.slice(1)}`),
+    f = parseFloat(n[`padding${d[0]}`]),
+    y = parseFloat(n[`padding${d[1]}`]),
+    u = parseFloat(n[`margin${d[0]}`]),
+    g = parseFloat(n[`margin${d[1]}`]),
+    b = parseFloat(n[`border${d[0]}Width`]),
+    _ = parseFloat(n[`border${d[1]}Width`]);
+  return {
+    delay: t,
+    duration: i,
+    easing: s,
+    css: a => `overflow: hidden;opacity: ${Math.min(a*20,1)*c};${p}: ${a*l}px;padding-${o[0]}: ${a*f}px;padding-${o[1]}: ${a*y}px;margin-${o[0]}: ${a*u}px;margin-${o[1]}: ${a*g}px;border-${o[0]}-width: ${a*b}px;border-${o[1]}-width: ${a*_}px;min-${p}: 0`
+  }
 }
 export {
-  T as k
+  w as f, m as s
 };
