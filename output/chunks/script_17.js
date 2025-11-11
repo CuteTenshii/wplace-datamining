@@ -19,22 +19,22 @@ import {
   y as S,
   L as ee,
   u as A
-} from "./Bp4OQ9Pq.js";
+} from "./CLhWsqtL.js";
 import {
   P as re,
   g as he
-} from "./DP8j3flC.js";
+} from "./B3ChuloG.js";
 import {
   g as u
-} from "./DDgw7Diq.js";
+} from "./CXfAHmeI.js";
 import {
   s as _e
-} from "./gosoRuqK.js";
+} from "./SgPFBN7-.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "b24cfafde051e0f3170b4fca69cc198662dd9646"
+      id: "11993b5ff9dc393aaf781ae6a4de4b12b8c982b8"
     }
   } catch {}
 })();
@@ -42,7 +42,7 @@ try {
   (function() {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new a.Error().stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "5b0d9ead-c120-4c10-a86c-f2d0cde7ecf6", a._sentryDebugIdIdentifier = "sentry-dbid-5b0d9ead-c120-4c10-a86c-f2d0cde7ecf6")
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "222c9d41-b538-4b08-9cb4-59ea2b07a6aa", a._sentryDebugIdIdentifier = "sentry-dbid-222c9d41-b538-4b08-9cb4-59ea2b07a6aa")
   })()
 } catch {}
 
@@ -800,7 +800,7 @@ class Rn {
       return this.loading = !0, this.data = await Z.me(), this.lastFetch = Date.now(), this.channel.postMessage(JSON.stringify({
         type: "refresh",
         data: this.data
-      })), this.notificiationCount === void 0 && Z.getNotificationCount().then(t => {
+      })), this.data && this.notificiationCount === void 0 && Z.getNotificationCount().then(t => {
         this.notificiationCount = t
       }), (e = this.data) != null && e.id && _e("userId", {
         id: this.data.id
