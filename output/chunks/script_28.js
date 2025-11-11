@@ -1,7 +1,7 @@
 import {
   g as l
-} from "./kOljdb2e.js";
-import "./Bkykk9eX.js";
+} from "./DDgw7Diq.js";
+import "./BzXnzCsy.js";
 import {
   p as R,
   g as s,
@@ -10,36 +10,36 @@ import {
   K as C,
   f as y,
   t as x,
-  b as v,
+  b,
   c as j,
   w as K,
-  s as b,
+  s as v,
   d as o,
   b5 as N,
-  r as i
-} from "./CgVbUwWD.js";
+  r as c
+} from "./Bp4OQ9Pq.js";
 import {
   s as h
-} from "./wBg5PvgU.js";
+} from "./qAiiSEQ_.js";
 import {
   i as E
-} from "./Ct2DDdA8.js";
+} from "./plgfwm2n.js";
 import {
   d as Y,
   C as z
-} from "./dKlGph8B.js";
+} from "./CJU35rVX.js";
 import {
   b as B
-} from "./4PsOFNXT.js";
+} from "./D-Kl7Tog.js";
 import {
   p as g,
   r as F
-} from "./BcoXmxB-.js";
+} from "./S_beUA0T.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "5699240c8856da05e48f188a8f5094ebed5a4fea"
+      id: "b24cfafde051e0f3170b4fca69cc198662dd9646"
     }
   } catch {}
 })();
@@ -55,10 +55,10 @@ const G = () => "Select the reason",
   xe = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? G() : H(),
   J = () => "Other",
   P = () => "Outro motivo",
-  ve = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? J() : P(),
+  be = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? J() : P(),
   Q = () => "Extra context on what happened (required)",
   U = () => "Mais informações sobre o que aconteceu (obrigatório)",
-  be = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? Q() : U(),
+  ve = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? Q() : U(),
   V = () => "Required",
   W = () => "Obrigatório",
   X = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? V() : W(),
@@ -78,7 +78,7 @@ function he(t, e) {
     I = g(e, "validate", 15),
     S = g(e, "disabled", 3, !1),
     T = F(e, ["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate", "disabled"]),
-    c = K("");
+    i = K("");
   const d = k(() => {
     var a;
     return ((a = r()) == null ? void 0 : a.length) ?? 0
@@ -86,9 +86,9 @@ function he(t, e) {
   I(L);
 
   function L() {
-    return e.min !== void 0 && s(d) < e.min ? (q(c, e.min === 1 ? X() : ee({
+    return e.min !== void 0 && s(d) < e.min ? (q(i, e.min === 1 ? X() : ee({
       min: e.min
-    }), !0), !1) : e.max !== void 0 && s(d) > e.max ? (q(c, re({
+    }), !0), !1) : e.max !== void 0 && s(d) > e.max ? (q(i, re({
       max: e.max
     }), !0), !1) : !0
   }
@@ -102,13 +102,13 @@ function he(t, e) {
     var M = a => {
       var n = ne(),
         _ = o(n, !0);
-      i(n), x(() => h(_, e.label)), v(a, n)
+      c(n), x(() => h(_, e.label)), b(a, n)
     };
     E(w, a => {
       e.label && a(M)
     })
   }
-  var f = b(w, 2);
+  var f = v(w, 2);
   N(f), Y(f, a => ({
     ...T,
     class: `textarea w-full ${e.class??""}`,
@@ -116,25 +116,25 @@ function he(t, e) {
     disabled: S(),
     [z]: a
   }), [() => ({
-    "textarea-error": !!s(c)
+    "textarea-error": !!s(i)
   })]);
-  var p = b(f, 2),
+  var p = v(f, 2),
     m = o(p),
     D = o(m, !0);
-  i(m);
-  var A = b(m, 2);
+  c(m);
+  var A = v(m, 2);
   {
     var O = a => {
       var n = se(),
         _ = o(n, !0);
-      i(n), x(() => h(_, e.max - s(d))), v(a, n)
+      c(n), x(() => h(_, e.max - s(d))), b(a, n)
     };
     E(A, a => {
       e.max !== void 0 && a(O)
     })
   }
-  i(p), i(u), x(() => h(D, s(c))), B(f, r), v(t, u), j()
+  c(p), c(u), x(() => h(D, s(i))), B(f, r), b(t, u), j()
 }
 export {
-  he as L, be as g, ve as o, xe as s
+  he as L, ve as g, be as o, xe as s
 };

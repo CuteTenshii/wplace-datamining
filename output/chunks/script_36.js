@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./kOljdb2e.js";
+} from "./DDgw7Diq.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "5699240c8856da05e48f188a8f5094ebed5a4fea"
+      id: "b24cfafde051e0f3170b4fca69cc198662dd9646"
     }
   } catch {}
 })();
@@ -17,11 +17,11 @@ try {
   })()
 } catch {}
 const t = () => "Users banned successfully",
-  u = () => "Usuários banidos com sucesso",
-  a = (e = {}, s = {}) => (s.locale ?? n()) === "en" ? t() : u(),
-  d = () => "Users timeouted successfully",
+  d = () => "Usuários banidos com sucesso",
+  c = (e = {}, s = {}) => (s.locale ?? n()) === "en" ? t() : d(),
+  u = () => "Users timeouted successfully",
   r = () => "Usuários suspensos com sucesso",
-  l = (e = {}, s = {}) => (s.locale ?? n()) === "en" ? d() : r();
+  l = (e = {}, s = {}) => (s.locale ?? n()) === "en" ? u() : r();
 export {
-  l as a, a as u
+  l as a, c as u
 };
