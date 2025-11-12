@@ -1,36 +1,64 @@
-import {
-  g as t
-} from "./CXfAHmeI.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "11993b5ff9dc393aaf781ae6a4de4b12b8c982b8"
+      id: "15fb4e3d80a4de2b957e29f1299dd0b2bef7a1e3"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "390ea0b0-ec3a-494a-b5f8-b67a0e2ce59e", e._sentryDebugIdIdentifier = "sentry-dbid-390ea0b0-ec3a-494a-b5f8-b67a0e2ce59e")
+      t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "318a9da5-f9ae-41c4-a6ad-1557223c6f66", e._sentryDebugIdIdentifier = "sentry-dbid-318a9da5-f9ae-41c4-a6ad-1557223c6f66")
   })()
 } catch {}
-const l = () => "Save",
-  o = () => "Salvar",
-  y = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? l() : o(),
-  s = () => "Members",
-  a = () => "Membros",
-  _ = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? s() : a(),
-  c = () => "Player",
-  i = () => "Jogador",
-  g = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? c() : i(),
-  u = () => "Last pixel",
-  f = () => "Último pixel",
-  m = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? u() : f(),
-  d = () => "Visit",
-  p = () => "Visitar",
-  v = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? d() : p();
+const $ = e => e;
+
+function h(e) {
+  const t = e - 1;
+  return t * t * t + 1
+}
+
+function w(e, {
+  delay: t = 0,
+  duration: i = 400,
+  easing: s = $
+} = {}) {
+  const r = +getComputedStyle(e).opacity;
+  return {
+    delay: t,
+    duration: i,
+    easing: s,
+    css: n => `opacity: ${n*r}`
+  }
+}
+
+function m(e, {
+  delay: t = 0,
+  duration: i = 400,
+  easing: s = h,
+  axis: r = "y"
+} = {}) {
+  const n = getComputedStyle(e),
+    l = +n.opacity,
+    p = r === "y" ? "height" : "width",
+    c = parseFloat(n[p]),
+    o = r === "y" ? ["top", "bottom"] : ["left", "right"],
+    d = o.map(a => `${a[0].toUpperCase()}${a.slice(1)}`),
+    f = parseFloat(n[`padding${d[0]}`]),
+    y = parseFloat(n[`padding${d[1]}`]),
+    u = parseFloat(n[`margin${d[0]}`]),
+    g = parseFloat(n[`margin${d[1]}`]),
+    _ = parseFloat(n[`border${d[0]}Width`]),
+    b = parseFloat(n[`border${d[1]}Width`]);
+  return {
+    delay: t,
+    duration: i,
+    easing: s,
+    css: a => `overflow: hidden;opacity: ${Math.min(a*20,1)*l};${p}: ${a*c}px;padding-${o[0]}: ${a*f}px;padding-${o[1]}: ${a*y}px;margin-${o[0]}: ${a*u}px;margin-${o[1]}: ${a*g}px;border-${o[0]}-width: ${a*_}px;border-${o[1]}-width: ${a*b}px;min-${p}: 0`
+  }
+}
 export {
-  m as l, _ as m, g as p, y as s, v
+  w as f, m as s
 };

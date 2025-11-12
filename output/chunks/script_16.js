@@ -5,16 +5,16 @@ var w = (t, e, i) => e.has(t) || b("Cannot " + i);
 var a = (t, e, i) => (w(t, e, "read from private field"), i ? i.call(t) : e.get(t)),
   n = (t, e, i) => e.has(t) ? b("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, i);
 import {
-  w as s,
+  l as s,
   g as o,
-  y as r,
-  x as m
-} from "./CLhWsqtL.js";
+  o as r,
+  m
+} from "./q9bO_DSU.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "11993b5ff9dc393aaf781ae6a4de4b12b8c982b8"
+      id: "15fb4e3d80a4de2b957e29f1299dd0b2bef7a1e3"
     }
   } catch {}
 })();
@@ -22,7 +22,7 @@ try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "0aec197e-a630-4819-9465-9a84eaec2304", t._sentryDebugIdIdentifier = "sentry-dbid-0aec197e-a630-4819-9465-9a84eaec2304")
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "1a93429f-fa28-46f4-880b-703f42d023d7", t._sentryDebugIdIdentifier = "sentry-dbid-1a93429f-fa28-46f4-880b-703f42d023d7")
   })()
 } catch {}
 const L = "true",
@@ -30,64 +30,64 @@ const L = "true",
   v = "0x4AAAAAABpHqZ-6i7uL0nmG",
   A = "https://backend.wplace.live",
   p = "theme";
-var g, l, u, d, c, h, f;
+var l, g, d, u, f, h, c;
 class y {
   constructor() {
-    n(this, g, s(!1));
     n(this, l, s(!1));
-    n(this, u, s(m(I())));
-    n(this, d, s(!1));
-    n(this, c, s("custom-winter"));
+    n(this, g, s(!1));
+    n(this, d, s(m(I())));
+    n(this, u, s(!1));
+    n(this, f, s("custom-winter"));
     n(this, h, s(m(Date.now())));
-    n(this, f, s(void 0));
+    n(this, c, s(void 0));
     setInterval(() => {
       r(a(this, h), Date.now(), !0)
     }, 500), this.theme = localStorage.getItem(p), this.theme !== "dark" && this.theme !== "custom-winter" && (this.theme = "custom-winter")
   }
   get dropletsDialogOpen() {
-    return o(a(this, g))
-  }
-  set dropletsDialogOpen(e) {
-    r(a(this, g), e, !0)
-  }
-  get muted() {
     return o(a(this, l))
   }
-  set muted(e) {
+  set dropletsDialogOpen(e) {
     r(a(this, l), e, !0)
   }
+  get muted() {
+    return o(a(this, g))
+  }
+  set muted(e) {
+    r(a(this, g), e, !0)
+  }
   get language() {
-    return o(a(this, u))
-  }
-  set language(e) {
-    r(a(this, u), e, !0)
-  }
-  get turnstatileLoaded() {
     return o(a(this, d))
   }
-  set turnstatileLoaded(e) {
+  set language(e) {
     r(a(this, d), e, !0)
   }
+  get turnstatileLoaded() {
+    return o(a(this, u))
+  }
+  set turnstatileLoaded(e) {
+    r(a(this, u), e, !0)
+  }
   get theme() {
-    return o(a(this, c))
+    return o(a(this, f))
   }
   set theme(e) {
-    r(a(this, c), e, !0), localStorage.setItem(p, e), document.documentElement.setAttribute("data-theme", e)
+    r(a(this, f), e, !0), localStorage.setItem(p, e), document.documentElement.setAttribute("data-theme", e)
   }
   get now() {
     return o(a(this, h))
   }
   get captcha() {
-    return E ? o(a(this, f)) : {
+    return E ? o(a(this, c)) : {
       token: "turnstile-disabled",
       time: Date.now()
     }
   }
   set captcha(e) {
-    r(a(this, f), e, !0)
+    r(a(this, c), e, !0)
   }
 }
-g = new WeakMap, l = new WeakMap, u = new WeakMap, d = new WeakMap, c = new WeakMap, h = new WeakMap, f = new WeakMap;
+l = new WeakMap, g = new WeakMap, d = new WeakMap, u = new WeakMap, f = new WeakMap, h = new WeakMap, c = new WeakMap;
 const T = new y;
 
 function I() {

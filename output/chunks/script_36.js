@@ -1,27 +1,27 @@
 import {
-  g as n
-} from "./CXfAHmeI.js";
+  g as a
+} from "./BkjxUA7W.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "11993b5ff9dc393aaf781ae6a4de4b12b8c982b8"
+      id: "15fb4e3d80a4de2b957e29f1299dd0b2bef7a1e3"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      s = new e.Error().stack;
-    s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "af83a02c-2776-476c-8df3-97f0645238fd", e._sentryDebugIdIdentifier = "sentry-dbid-af83a02c-2776-476c-8df3-97f0645238fd")
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "5a7643af-3ca4-442c-8e0b-9858ca2a1a11", e._sentryDebugIdIdentifier = "sentry-dbid-5a7643af-3ca4-442c-8e0b-9858ca2a1a11")
   })()
 } catch {}
-const t = () => "Users banned successfully",
-  u = () => "Usuários banidos com sucesso",
-  a = (e = {}, s = {}) => (s.locale ?? n()) === "en" ? t() : u(),
-  d = () => "Users timeouted successfully",
-  r = () => "Usuários suspensos com sucesso",
-  l = (e = {}, s = {}) => (s.locale ?? n()) === "en" ? d() : r();
+const o = () => "Select the report reason",
+  r = () => "Selecione o motivo da denúncia",
+  d = (e = {}, n = {}) => (n.locale ?? a()) === "en" ? o() : r(),
+  s = () => "Search",
+  c = () => "Buscar",
+  f = (e = {}, n = {}) => (n.locale ?? a()) === "en" ? s() : c();
 export {
-  l as a, a as u
+  d as a, f as s
 };

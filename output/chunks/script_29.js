@@ -1,109 +1,140 @@
 import {
-  D as E,
-  Q as _,
-  l as v,
-  L as g,
-  R as i,
-  S,
-  h as k,
-  T as D,
-  V as T,
-  W as y
-} from "./CLhWsqtL.js";
+  g as l
+} from "./BkjxUA7W.js";
+import "./CoyfYV77.js";
+import {
+  p as R,
+  g as s,
+  u as k,
+  o as q,
+  D as C,
+  f as y,
+  t as x,
+  b,
+  c as j,
+  l as N,
+  s as v,
+  d as o,
+  bi as Y,
+  r as i
+} from "./q9bO_DSU.js";
+import {
+  s as h
+} from "./Cmtfxv8v.js";
+import {
+  i as E
+} from "./BmdGBhaI.js";
+import {
+  d as z,
+  C as B
+} from "./CqluXB0O.js";
+import {
+  b as F
+} from "./DhwiKPC7.js";
+import {
+  p as g,
+  r as G
+} from "./tQ1KAbXL.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "11993b5ff9dc393aaf781ae6a4de4b12b8c982b8"
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    t.SENTRY_RELEASE = {
+      id: "15fb4e3d80a4de2b957e29f1299dd0b2bef7a1e3"
     }
   } catch {}
 })();
 try {
   (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      c = new e.Error().stack;
-    c && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[c] = "c88c8996-8698-402b-9df8-ecde6141659e", e._sentryDebugIdIdentifier = "sentry-dbid-c88c8996-8698-402b-9df8-ecde6141659e")
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      e = new t.Error().stack;
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "a7d5770a-0273-4d45-a526-170d27c6058f", t._sentryDebugIdIdentifier = "sentry-dbid-a7d5770a-0273-4d45-a526-170d27c6058f")
   })()
 } catch {}
+const H = () => "Select the reason",
+  J = () => "Selecione o motivo",
+  xe = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? H() : J(),
+  K = () => "Other",
+  P = () => "Outro motivo",
+  be = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? K() : P(),
+  Q = () => "Extra context on what happened (required)",
+  U = () => "Mais informações sobre o que aconteceu (obrigatório)",
+  ve = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? Q() : U(),
+  V = () => "Required",
+  W = () => "Obrigatório",
+  X = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? V() : W(),
+  Z = t => `Min. characters: ${t.min}`,
+  $ = t => `Mínimo de caracteres: ${t.min}`,
+  ee = (t, e = {}) => (e.locale ?? l()) === "en" ? Z(t) : $(t),
+  te = t => `Max. characters: ${t.max}`,
+  ae = t => `Máximo de caracteres: ${t.max}`,
+  re = (t, e = {}) => (e.locale ?? l()) === "en" ? te(t) : ae(t);
+var ne = y('<legend class="fieldset-legend"> </legend>'),
+  se = y('<span class="text-base-content/80"> </span>'),
+  le = y('<fieldset class="fieldset"><!> <textarea></textarea> <div class="flex items-center justify-between text-xs"><span class="text-error"> </span> <!></div></fieldset>');
 
-function A(e, c, l = c) {
-  var f = E(),
-    d = new WeakSet;
-  _(e, "input", s => {
-    var a = s ? e.defaultValue : e.value;
-    if (a = h(e) ? b(a) : a, l(a), v !== null && d.add(v), f && a !== (a = c())) {
-      var t = e.selectionStart,
-        n = e.selectionEnd;
-      e.value = a ?? "", n !== null && (e.selectionStart = t, e.selectionEnd = Math.min(n, e.value.length))
+function he(t, e) {
+  R(e, !0);
+  let r = g(e, "value", 15),
+    I = g(e, "validate", 15),
+    S = g(e, "disabled", 3, !1),
+    T = G(e, ["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate", "disabled"]),
+    c = N("");
+  const d = k(() => {
+    var a;
+    return ((a = r()) == null ? void 0 : a.length) ?? 0
+  });
+  I(D);
+
+  function D() {
+    return e.min !== void 0 && s(d) < e.min ? (q(c, e.min === 1 ? X() : ee({
+      min: e.min
+    }), !0), !1) : e.max !== void 0 && s(d) > e.max ? (q(c, re({
+      max: e.max
+    }), !0), !1) : !0
+  }
+  C(() => {
+    var a;
+    e.max !== void 0 && s(d) > e.max && r((a = r()) == null ? void 0 : a.substring(0, e.max))
+  });
+  var f = le(),
+    w = o(f);
+  {
+    var L = a => {
+      var n = ne(),
+        _ = o(n, !0);
+      i(n), x(() => h(_, e.label)), b(a, n)
+    };
+    E(w, a => {
+      e.label && a(L)
+    })
+  }
+  var u = v(w, 2);
+  Y(u), z(u, () => ({
+    ...T,
+    class: `textarea w-full ${e.class??""}`,
+    placeholder: e.placeholder,
+    disabled: S(),
+    [B]: {
+      "textarea-error": !!s(c)
     }
-  }), (k && e.defaultValue !== e.value || g(c) == null && e.value) && (l(h(e) ? b(e.value) : e.value), v !== null && d.add(v)), i(() => {
-    var s = c();
-    if (e === document.activeElement) {
-      var a = S ?? v;
-      if (d.has(a)) return
-    }
-    h(e) && s === b(e.value) || e.type === "date" && !s && !e.value || s !== e.value && (e.value = s ?? "")
-  })
-}
-const u = new Set;
-
-function C(e, c, l, f, d = f) {
-  var s = l.getAttribute("type") === "checkbox",
-    a = e;
-  let t = !1;
-  if (c !== null)
-    for (var n of c) a = a[n] ?? (a[n] = []);
-  a.push(l), _(l, "change", () => {
-    var r = l.__value;
-    s && (r = m(a, r, l.checked)), d(r)
-  }, () => d(s ? [] : null)), i(() => {
-    var r = f();
-    if (k && l.defaultChecked !== l.checked) {
-      t = !0;
-      return
-    }
-    s ? (r = r || [], l.checked = r.includes(l.__value)) : l.checked = D(l.__value, r)
-  }), T(() => {
-    var r = a.indexOf(l);
-    r !== -1 && a.splice(r, 1)
-  }), u.has(a) || (u.add(a), y(() => {
-    a.sort((r, o) => r.compareDocumentPosition(o) === 4 ? -1 : 1), u.delete(a)
-  })), y(() => {
-    if (t) {
-      var r;
-      if (s) r = m(a, r, l.checked);
-      else {
-        var o = a.find(w => w.checked);
-        r = o == null ? void 0 : o.__value
-      }
-      d(r)
-    }
-  })
-}
-
-function R(e, c, l = c) {
-  _(e, "change", f => {
-    var d = f ? e.defaultChecked : e.checked;
-    l(d)
-  }), (k && e.defaultChecked !== e.checked || g(c) == null) && l(e.checked), i(() => {
-    var f = c();
-    e.checked = !!f
-  })
-}
-
-function m(e, c, l) {
-  for (var f = new Set, d = 0; d < e.length; d += 1) e[d].checked && f.add(e[d].__value);
-  return l || f.delete(c), Array.from(f)
-}
-
-function h(e) {
-  var c = e.type;
-  return c === "number" || c === "range"
-}
-
-function b(e) {
-  return e === "" ? null : +e
+  }));
+  var p = v(u, 2),
+    m = o(p),
+    M = o(m, !0);
+  i(m);
+  var A = v(m, 2);
+  {
+    var O = a => {
+      var n = se(),
+        _ = o(n, !0);
+      i(n), x(() => h(_, e.max - s(d))), b(a, n)
+    };
+    E(A, a => {
+      e.max !== void 0 && a(O)
+    })
+  }
+  i(p), i(f), x(() => h(M, s(c))), F(u, r), b(t, f), j()
 }
 export {
-  R as a, A as b, C as c
+  he as L, ve as g, be as o, xe as s
 };

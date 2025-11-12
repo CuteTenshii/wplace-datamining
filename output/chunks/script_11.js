@@ -1,80 +1,54 @@
 import {
-  i as k,
-  h as u,
-  e as D,
-  E as A,
-  a2 as N,
-  a3 as R,
-  a4 as S,
-  _ as x,
-  a5 as v,
-  j as F,
-  k as m,
-  l as L,
-  U as q,
-  m as C,
-  af as U,
-  q as Y,
-  o as j
-} from "./CLhWsqtL.js";
+  j as c,
+  h as t,
+  i as u,
+  E as y,
+  Y as _,
+  Z as h,
+  _ as g,
+  V as p,
+  B as E,
+  a0 as i
+} from "./q9bO_DSU.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "11993b5ff9dc393aaf781ae6a4de4b12b8c982b8"
+      id: "15fb4e3d80a4de2b957e29f1299dd0b2bef7a1e3"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      l = new e.Error().stack;
-    l && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[l] = "dd69eb21-7734-4234-9ce7-bf8816382b66", e._sentryDebugIdIdentifier = "sentry-dbid-dd69eb21-7734-4234-9ce7-bf8816382b66")
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "cbc66b29-66a2-450c-8c9d-4fddcdfa07ef", e._sentryDebugIdIdentifier = "sentry-dbid-cbc66b29-66a2-450c-8c9d-4fddcdfa07ef")
   })()
 } catch {}
 
-function O(e, l, E = !1) {
-  u && D();
-  var t = e,
-    f = null,
-    s = null,
-    a = q,
-    T = E ? A : 0,
-    i = !1;
-  const I = (d, n = !0) => {
-    i = !0, b(n, d)
-  };
-  var r = null;
+function w(e, n, l = !1) {
+  t && u();
+  var f = new E(e),
+    o = l ? y : 0;
 
-  function _() {
-    r !== null && (r.lastChild.remove(), t.before(r), r = null);
-    var d = a ? f : s,
-      n = a ? s : f;
-    d && U(d), n && Y(n, () => {
-      a ? s = null : f = null
-    })
-  }
-  const b = (d, n) => {
-    if (a === (a = d)) return;
-    let h = !1;
-    if (u) {
-      const w = N(t) === R;
-      !!a === w && (t = S(), x(t), v(!1), h = !0)
+  function r(a, d) {
+    if (t) {
+      const b = _(e) === h;
+      if (a === b) {
+        var s = g();
+        p(s), f.anchor = s, i(!1), f.ensure(a, d), i(!0);
+        return
+      }
     }
-    var y = C(),
-      o = t;
-    if (y && (r = document.createDocumentFragment(), r.append(o = F())), a ? f ?? (f = n && m(() => n(o))) : s ?? (s = n && m(() => n(o))), y) {
-      var c = L,
-        p = a ? f : s,
-        g = a ? s : f;
-      p && c.skipped_effects.delete(p), g && c.skipped_effects.add(g), c.add_callback(_)
-    } else _();
-    h && v(!0)
-  };
-  k(() => {
-    i = !1, l(I), i || b(null, null)
-  }, T), u && (t = j)
+    f.ensure(a, d)
+  }
+  c(() => {
+    var a = !1;
+    n((d, s = !0) => {
+      a = !0, r(s, d)
+    }), a || r(!1, null)
+  }, o)
 }
 export {
-  O as i
+  w as i
 };

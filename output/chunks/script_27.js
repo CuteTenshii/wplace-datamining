@@ -1,61 +1,75 @@
-import {
-  t as y,
-  h as b,
-  e as u,
-  ao as g,
-  aq as p,
-  o as c,
-  a6 as w,
-  ak as v,
-  ar as m,
-  as as E,
-  at as h,
-  _ as T,
-  au as D,
-  a0 as i
-} from "./CLhWsqtL.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "11993b5ff9dc393aaf781ae6a4de4b12b8c982b8"
+      id: "15fb4e3d80a4de2b957e29f1299dd0b2bef7a1e3"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "06acc62f-716e-4451-b7b1-793b33fb6a3d", e._sentryDebugIdIdentifier = "sentry-dbid-06acc62f-716e-4451-b7b1-793b33fb6a3d")
+      t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "4b1e3b78-51b7-4ecf-8b2d-82d1c4886c5a", e._sentryDebugIdIdentifier = "sentry-dbid-4b1e3b78-51b7-4ecf-8b2d-82d1c4886c5a")
   })()
 } catch {}
 
-function N(e, n, r = !1, o = !1, I = !1) {
-  var l = e,
-    t = "";
-  y(() => {
-    var d = g;
-    if (t === (t = n() ?? "")) {
-      b && u();
-      return
+function C(e, t) {
+  return t.includes(e)
+}
+const D = {
+  user: "user",
+  community_leader: "cl",
+  moderator: "mod",
+  global_moderator: "gm",
+  admin: "admin"
+};
+
+function $(e) {
+  const t = e - 1;
+  return t * t * t + 1
+}
+
+function O(e, {
+  from: t,
+  to: r
+}, c = {}) {
+  var {
+    delay: h = 0,
+    duration: i = n => Math.sqrt(n) * 120,
+    easing: y = $
+  } = c, d = getComputedStyle(e), b = d.transform === "none" ? "" : d.transform, [o, s] = d.transformOrigin.split(" ").map(parseFloat);
+  o /= e.clientWidth, s /= e.clientHeight;
+  var u = z(e),
+    g = e.clientWidth / r.width / u,
+    v = e.clientHeight / r.height / u,
+    p = t.left + t.width * o,
+    m = t.top + t.height * s,
+    w = r.left + r.width * o,
+    x = r.top + r.height * s,
+    l = (p - w) * g,
+    f = (m - x) * v,
+    _ = t.width / r.width,
+    S = t.height / r.height;
+  return {
+    delay: h,
+    duration: typeof i == "function" ? i(Math.sqrt(l * l + f * f)) : i,
+    easing: y,
+    css: (n, a) => {
+      var E = a * l,
+        R = a * f,
+        T = n + a * _,
+        I = n + a * S;
+      return `transform: ${b} translate(${E}px, ${R}px) scale(${T}, ${I});`
     }
-    if (d.nodes_start !== null && (p(d.nodes_start, d.nodes_end), d.nodes_start = d.nodes_end = null), t !== "") {
-      if (b) {
-        c.data;
-        for (var a = u(), _ = a; a !== null && (a.nodeType !== w || a.data !== "");) _ = a, a = v(a);
-        if (a === null) throw m(), E;
-        h(c, _), l = T(a);
-        return
-      }
-      var s = t + "";
-      r ? s = `<svg>${s}</svg>` : o && (s = `<math>${s}</math>`);
-      var f = D(s);
-      if ((r || o) && (f = i(f)), h(i(f), f.lastChild), r || o)
-        for (; i(f);) l.before(i(f));
-      else l.before(f)
-    }
-  })
+  }
+}
+
+function z(e) {
+  if ("currentCSSZoom" in e) return e.currentCSSZoom;
+  for (var t = e, r = 1; t !== null;) r *= +getComputedStyle(t).zoom, t = t.parentElement;
+  return r
 }
 export {
-  N as h
+  D as R, O as f, C as h
 };
