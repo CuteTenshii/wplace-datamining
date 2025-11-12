@@ -9,12 +9,12 @@ import {
   g as o,
   o as r,
   m
-} from "./q9bO_DSU.js";
+} from "./BYknGsrl.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "15fb4e3d80a4de2b957e29f1299dd0b2bef7a1e3"
+      id: "deff0df3054d4e17d810032708dfa15d941dfa1b"
     }
   } catch {}
 })();
@@ -30,12 +30,12 @@ const L = "true",
   v = "0x4AAAAAABpHqZ-6i7uL0nmG",
   A = "https://backend.wplace.live",
   p = "theme";
-var l, g, d, u, f, h, c;
+var l, d, g, u, f, h, c;
 class y {
   constructor() {
     n(this, l, s(!1));
-    n(this, g, s(!1));
-    n(this, d, s(m(I())));
+    n(this, d, s(!1));
+    n(this, g, s(m(I())));
     n(this, u, s(!1));
     n(this, f, s("custom-winter"));
     n(this, h, s(m(Date.now())));
@@ -51,16 +51,16 @@ class y {
     r(a(this, l), e, !0)
   }
   get muted() {
-    return o(a(this, g))
-  }
-  set muted(e) {
-    r(a(this, g), e, !0)
-  }
-  get language() {
     return o(a(this, d))
   }
-  set language(e) {
+  set muted(e) {
     r(a(this, d), e, !0)
+  }
+  get language() {
+    return o(a(this, g))
+  }
+  set language(e) {
+    r(a(this, g), e, !0)
   }
   get turnstatileLoaded() {
     return o(a(this, u))
@@ -87,7 +87,7 @@ class y {
     r(a(this, c), e, !0)
   }
 }
-l = new WeakMap, g = new WeakMap, d = new WeakMap, u = new WeakMap, f = new WeakMap, h = new WeakMap, c = new WeakMap;
+l = new WeakMap, d = new WeakMap, g = new WeakMap, u = new WeakMap, f = new WeakMap, h = new WeakMap, c = new WeakMap;
 const T = new y;
 
 function I() {

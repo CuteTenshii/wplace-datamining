@@ -17,11 +17,11 @@ var Xe = (_, o, f) => (lm(_, o, "read from private field"), f ? f.call(_) : o.ge
   Hi = (_, o, f, x) => (lm(_, o, "write to private field"), x ? x.call(_, f) : o.set(_, f), f),
   Nr = (_, o, f) => (lm(_, o, "access private method"), f);
 var Pv = (_, o, f) => Gx(Zx(_), f, o);
-import "../chunks/CoyfYV77.js";
+import "../chunks/Cw27nx74.js";
 import {
   o as Dn,
   s as ai
-} from "../chunks/CeSVFyiR.js";
+} from "../chunks/D49PgCr6.js";
 import {
   ac as Hx,
   bm as Wx,
@@ -67,17 +67,17 @@ import {
   by as l_,
   e as nb,
   $ as ib
-} from "../chunks/q9bO_DSU.js";
+} from "../chunks/BYknGsrl.js";
 import {
   s as le,
   c as y0
-} from "../chunks/Cmtfxv8v.js";
+} from "../chunks/DIBTlZFn.js";
 import {
   i as Ae
-} from "../chunks/BmdGBhaI.js";
+} from "../chunks/BTgPFS6n.js";
 import {
   h as ab
-} from "../chunks/-orGpXrW.js";
+} from "../chunks/Ap6y55lE.js";
 import {
   r as Ba,
   e as yi,
@@ -89,23 +89,23 @@ import {
   h as Qu,
   c as ls,
   i as Av
-} from "../chunks/CqluXB0O.js";
+} from "../chunks/Cn5Oy8lh.js";
 import {
   a as _l,
   t as aa
-} from "../chunks/CMZ1WONP.js";
+} from "../chunks/DbmPto5a.js";
 import {
   g as Ep,
   b as ob
-} from "../chunks/BlGBfRuM.js";
+} from "../chunks/DvSAGheC.js";
 import {
   p as ui
-} from "../chunks/CVI3x9Sh.js";
+} from "../chunks/D8q-ZcuG.js";
 import {
   g as fa,
   P as sb,
   b as lb
-} from "../chunks/DhWx5VbC.js";
+} from "../chunks/teJafweZ.js";
 import {
   S as ma,
   a as Jr,
@@ -124,46 +124,46 @@ import {
   C as kv,
   P as cm,
   B as vb
-} from "../chunks/DEvoHVj4.js";
+} from "../chunks/BSVnXHM5.js";
 import {
   A as Wi,
   c as Tm,
   g as um,
   p as yb,
   a as b0
-} from "../chunks/B9el3unU.js";
+} from "../chunks/BtelCbDn.js";
 import {
   f as gl,
   h as Ra,
   R as w0
-} from "../chunks/QZQaTvzN.js";
+} from "../chunks/D_kT71G_.js";
 import {
   p as At,
   r as lr,
   s as Fs,
   u as Ev
-} from "../chunks/tQ1KAbXL.js";
+} from "../chunks/C3suNOyS.js";
 import {
   h as Gp
-} from "../chunks/Cn7ZWQHE.js";
+} from "../chunks/1ZI9H75G.js";
 import {
   b as ko
-} from "../chunks/Cqhm8a28.js";
+} from "../chunks/uukjUCe3.js";
 import {
   L as T0
-} from "../chunks/dYv29Rfc.js";
+} from "../chunks/D3BtSZ3q.js";
 import {
   g as De,
   l as xb
-} from "../chunks/BkjxUA7W.js";
+} from "../chunks/4LWkpq0F.js";
 import {
   c as Gh
-} from "../chunks/DRehdENg.js";
+} from "../chunks/CDW00_P_.js";
 import {
   d as bb,
   L as $p,
   p as c_
-} from "../chunks/D3O8hove.js";
+} from "../chunks/DGLtakBr.js";
 import {
   c as Sm,
   b as u_,
@@ -179,40 +179,40 @@ import {
   e as Ab,
   R as kb,
   f as zv
-} from "../chunks/rd2RFHto.js";
+} from "../chunks/T9wOPzhr.js";
 import {
   e as ii,
   i as Hp
-} from "../chunks/fQ7nNgyB.js";
+} from "../chunks/h7grrVmz.js";
 import {
   c as h_,
   b as $h,
   a as Eb
-} from "../chunks/DhwiKPC7.js";
+} from "../chunks/BBviAd0a.js";
 import {
   P as mo,
   t as P0
-} from "../chunks/Mq-UeEVM.js";
+} from "../chunks/C6IY8fTY.js";
 import {
   l as zb,
   p as d_,
   m as I0,
   v as Lb,
   s as Db
-} from "../chunks/DYUfLul6.js";
+} from "../chunks/B9p3YjwK.js";
 import {
   g as Ni,
   a as Wp,
   c as M0,
   b as Rb
-} from "../chunks/JL5Q4bby.js";
+} from "../chunks/Ci1xL3WV.js";
 import {
   k as th
-} from "../chunks/DGXYwP1j.js";
+} from "../chunks/Bac58aDq.js";
 import {
   A as A0,
   c as cs
-} from "../chunks/zbQm_RRe.js";
+} from "../chunks/BbXaNLdk.js";
 import {
   A as k0,
   d as E0,
@@ -224,59 +224,59 @@ import {
   c as Ob,
   P as L0,
   b as Nb
-} from "../chunks/BfOed5Lh.js";
+} from "../chunks/kCxJ8MFM.js";
 import {
   f as Wa,
   s as bp
-} from "../chunks/2qQUb2gF.js";
+} from "../chunks/DfMFfZdb.js";
 import {
   C as p_,
   c as jb
-} from "../chunks/D_f-dc5A.js";
-import "../chunks/_DuaeR9c.js";
+} from "../chunks/Bx36QwHW.js";
+import "../chunks/BsRkBKHV.js";
 import {
   i as D0
-} from "../chunks/CFF5w9KY.js";
+} from "../chunks/DwCUXujR.js";
 import {
   L as f_
-} from "../chunks/CkEKCt7d.js";
+} from "../chunks/A4eoNNfP.js";
 import {
   c as Ti
-} from "../chunks/CABSah-0.js";
+} from "../chunks/6Vh64ShL.js";
 import {
   L as Vb
-} from "../chunks/BSyLJ8ST.js";
+} from "../chunks/il0v3uuI.js";
 import {
   _ as qb
-} from "../chunks/D6h70I3T.js";
+} from "../chunks/yFR0MRV9.js";
 import {
   c as R0
-} from "../chunks/BVXVI3D4.js";
+} from "../chunks/5CvwTMHl.js";
 import {
   s as F0
-} from "../chunks/BUV3Cfgz.js";
+} from "../chunks/Dh7Mmlc1.js";
 import {
   T as rh,
   G as zp,
   t as B0
-} from "../chunks/Ct6BJ5Hw.js";
+} from "../chunks/DFJh75KR.js";
 import {
   C as Ub
-} from "../chunks/BGvoK3UU.js";
+} from "../chunks/ChIoOImv.js";
 import {
   R as Zb
-} from "../chunks/DjuzlcSU.js";
+} from "../chunks/ifahc_88.js";
 import {
   W as Gb
-} from "../chunks/thS8MyQP.js";
+} from "../chunks/CoAvu-dG.js";
 import {
   r as $b
-} from "../chunks/3Vbu53zm.js";
+} from "../chunks/DSfK7Mpt.js";
 (function() {
   try {
     var _ = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     _.SENTRY_RELEASE = {
-      id: "15fb4e3d80a4de2b957e29f1299dd0b2bef7a1e3"
+      id: "deff0df3054d4e17d810032708dfa15d941dfa1b"
     }
   } catch {}
 })();
@@ -284,7 +284,7 @@ try {
   (function() {
     var _ = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       o = new _.Error().stack;
-    o && (_._sentryDebugIds = _._sentryDebugIds || {}, _._sentryDebugIds[o] = "ff33305f-15b4-4ab3-b73d-a3871997ee23", _._sentryDebugIdIdentifier = "sentry-dbid-ff33305f-15b4-4ab3-b73d-a3871997ee23")
+    o && (_._sentryDebugIds = _._sentryDebugIds || {}, _._sentryDebugIds[o] = "31c13ab1-2047-4940-91cd-e2c82abf5dec", _._sentryDebugIdIdentifier = "sentry-dbid-31c13ab1-2047-4940-91cd-e2c82abf5dec")
   })()
 } catch {}
 const Hb = [];
@@ -46398,7 +46398,7 @@ function d7(_, o) {
               yi(Oe, () => Ge => (te(j, a7(Ge, {
                 strictMode: !0,
                 initialCountry: "br",
-                loadUtils: () => qb(() => import("../chunks/DpLVk5gO.js"), [], import.meta.url),
+                loadUtils: () => qb(() => import("../chunks/ClCRXIYx.js"), [], import.meta.url),
                 containerClass: "w-full",
                 dropdownContainer: document.body
               })), () => {
@@ -48641,7 +48641,7 @@ var WF = me("<!> <!>", 1),
   i9 = me('<span class="tooltip svelte-15blegn"><!></span>'),
   a9 = me('<!> <div class="ml-0.5 flex flex-wrap items-center gap-1 svelte-15blegn"><span><span class="svelte-15blegn"> </span> <span class="svelte-15blegn"> </span></span> <!> <!> <div class="ml-0.5 flex items-center svelte-15blegn"><!></div></div>', 1),
   o9 = me('<tr><th class="w-1 svelte-15blegn"><input type="checkbox" class="checkbox-sm checkbox pointer-event-none svelte-15blegn"/></th><td class="flex items-center gap-1 svelte-15blegn"><!></td><td class="text-center svelte-15blegn"> </td></tr>'),
-  s9 = me('<div class="max-h-[27vh] overflow-y-auto svelte-15blegn"><table class="table svelte-15blegn"><thead class="svelte-15blegn"><tr class="svelte-15blegn"><th class="w-1 svelte-15blegn"><input type="checkbox" class="checkbox-sm checkbox svelte-15blegn"/></th><th class="svelte-15blegn">Player <button class="btn btn-xs btn-circle btn-ghost tooltip tooltip-bottom ml-0.5 svelte-15blegn" data-tip="Copy selected players IDs"><!></button> <button class="btn btn-xs btn-circle btn-soft btn-error tooltip tooltip-bottom svelte-15blegn" data-tip="Timeout selected players"><!></button> <!></th><th class="text-center svelte-15blegn"><!> Pixels Painted</th></tr></thead><tbody class="svelte-15blegn"></tbody></table></div>'),
+  s9 = me('<div class="max-h-[27vh] overflow-y-auto overflow-x-hidden svelte-15blegn"><table class="table max-w-full svelte-15blegn"><thead class="svelte-15blegn"><tr class="svelte-15blegn"><th class="w-1 svelte-15blegn"><input type="checkbox" class="checkbox-sm checkbox svelte-15blegn"/></th><th class="svelte-15blegn">Player <button class="btn btn-xs btn-circle btn-ghost tooltip tooltip-bottom ml-0.5 svelte-15blegn" data-tip="Copy selected players IDs"><!></button> <button class="btn btn-xs btn-circle btn-soft btn-error tooltip tooltip-bottom svelte-15blegn" data-tip="Timeout selected players"><!></button> <!></th><th class="text-center svelte-15blegn"><!> Pixels Painted</th></tr></thead><tbody class="svelte-15blegn"></tbody></table></div>'),
   l9 = me('<div class="rounded-t-box bg-base-100 border-base-300 sm:rounded-b-box w-full border-t sm:mb-3 sm:shadow-xl svelte-15blegn"><div class="p-3 svelte-15blegn"><div class="flex justify-between gap-1 svelte-15blegn"><h2 class="flex items-center gap-1 pl-1 text-lg svelte-15blegn"><div class="bg-base-content/20 flex size-6 items-center justify-center rounded-full svelte-15blegn"><!></div> <span class="ml-0.5 svelte-15blegn">Selected area</span> <span class="text-base-content/80 ml-0.5 text-sm svelte-15blegn"> </span></h2> <button class="btn btn-circle btn-sm svelte-15blegn"><!></button></div> <div class="pb-3 svelte-15blegn"><!></div></div></div>');
 
 function c9(_, o) {
@@ -50778,7 +50778,7 @@ var kB = me('<meta property="og:title" content="Wplace - A massive real-time pix
   WB = me("<span></span>"),
   XB = me('<div class="absolute bottom-0 left-0 z-50 w-full sm:left-1/2 sm:max-w-md sm:-translate-x-1/2 md:max-w-lg"><div class="rounded-t-box bg-base-100 border-base-300 sm:rounded-b-box w-full border-t pt-2 sm:mb-3 sm:shadow-xl"><!></div></div>'),
   YB = me('<div class="absolute bottom-0 left-0 z-50 w-full"><div class="rounded-t-box bg-base-100 border-base-300 w-full border-t py-3"><!></div></div>'),
-  KB = me('<div class="absolute bottom-0 left-0 z-50 w-full sm:left-1/2 sm:max-w-md sm:-translate-x-1/2 md:max-w-xl"><!></div>'),
+  KB = me('<div class="absolute bottom-0 left-0 z-50 w-full sm:left-1/2 sm:max-w-lg sm:-translate-x-1/2 md:max-w-xl"><!></div>'),
   JB = me('<div class="absolute bottom-0 left-0 z-50 w-full sm:left-1/2 sm:max-w-md sm:-translate-x-1/2"><div class="rounded-t-box bg-base-100 border-base-300 sm:rounded-b-box w-full border-t pt-2 sm:mb-3 sm:shadow-xl"><div class="px-3 pb-2 pt-1"><div class="flex items-center justify-between"><span><!> </span> <button class="btn btn-circle btn-sm"><!></button></div> <div class="mt-1 flex items-center justify-center gap-4"><button class="btn btn-primary w-46"><!></button></div></div></div></div>'),
   QB = me('<div class="disable-pinch-zoom relative h-full overflow-hidden svelte-1uha8ag"><div id="map" class="h-screen w-screen cursor-default"></div> <div><div><!> <!></div></div> <div><!> <div class="flex flex-col gap-1 max-sm:hidden"><button class="btn btn-sm btn-circle">+</button> <button class="btn btn-sm btn-circle">-</button></div> <!> <!> <!></div> <div><!> <!></div> <div><!></div> <div><!></div> <div><!></div>  <!></div> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!>', 1);
 
