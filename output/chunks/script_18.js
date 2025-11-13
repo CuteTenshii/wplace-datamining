@@ -2,7 +2,7 @@
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "deff0df3054d4e17d810032708dfa15d941dfa1b"
+      id: "c7db87af384652c1dc5fbd166ad20d68993159f9"
     }
   } catch {}
 })();
@@ -14,8 +14,8 @@ try {
   })()
 } catch {}
 const y = "en",
-  d = ["en", "pt"],
-  c = "PARAGLIDE_LOCALE",
+  c = ["en", "pt"],
+  d = "PARAGLIDE_LOCALE",
   g = ["localStorage", "preferredLanguage", "baseLocale"];
 globalThis.__paraglide = {};
 let f = !1,
@@ -24,7 +24,7 @@ let f = !1,
     for (const a of g) {
       if (a === "baseLocale") e = y;
       else if (a === "preferredLanguage") e = L();
-      else if (a === "localStorage") e = localStorage.getItem(c) ?? void 0;
+      else if (a === "localStorage") e = localStorage.getItem(d) ?? void 0;
       else if (u(a) && l.has(a)) {
         const o = l.get(a);
         if (o) {
@@ -53,7 +53,7 @@ let f = !1,
     } catch {}
     for (const n of g)
       if (n !== "baseLocale") {
-        if (n === "localStorage" && typeof window < "u") localStorage.setItem(c, e);
+        if (n === "localStorage" && typeof window < "u") localStorage.setItem(d, e);
         else if (u(n) && l.has(n)) {
           const s = l.get(n);
           if (s) {
@@ -67,11 +67,11 @@ let f = !1,
   };
 
 function r(e) {
-  return e ? d.includes(e) : !1
+  return e ? c.includes(e) : !1
 }
 
 function h(e) {
-  if (r(e) === !1) throw new Error(`Invalid locale: ${e}. Expected one of: ${d.join(", ")}`);
+  if (r(e) === !1) throw new Error(`Invalid locale: ${e}. Expected one of: ${c.join(", ")}`);
   return e
 }
 
@@ -96,5 +96,5 @@ function u(e) {
   return typeof e == "string" && /^custom-[A-Za-z0-9_-]+$/.test(e)
 }
 export {
-  w as g, c as l
+  w as g, d as l
 };

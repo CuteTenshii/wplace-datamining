@@ -1,27 +1,27 @@
 import {
   g as v
-} from "./4LWkpq0F.js";
-import "./Cw27nx74.js";
+} from "./5jGVjnf-.js";
+import "./CG-PeO4C.js";
 import {
   w as p,
   a as g,
   b as l,
-  z as f
-} from "./BYknGsrl.js";
+  z as s
+} from "./ckrD_byn.js";
 import {
   i as b
-} from "./BTgPFS6n.js";
+} from "./DOwqxGBI.js";
 import {
   d as i
-} from "./Cn5Oy8lh.js";
+} from "./BOh9mBcD.js";
 import {
   r as u
-} from "./C3suNOyS.js";
+} from "./DW63ix7D.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "deff0df3054d4e17d810032708dfa15d941dfa1b"
+      id: "c7db87af384652c1dc5fbd166ad20d68993159f9"
     }
   } catch {}
 })();
@@ -35,13 +35,13 @@ try {
 const y = e => `Copy alliance ID: #${e.allianceId}`,
   _ = e => `Copiar ID da aliança: #${e.allianceId}`,
   Z = (e, a = {}) => (a.locale ?? v()) === "en" ? y(e) : _(e);
-var h = f('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
-  w = f('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
+var h = s('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
+  w = s('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
 function x(e, a) {
   let n = u(a, ["$$slots", "$$events", "$$legacy", "filled"]);
   var r = p(),
-    s = g(r);
+    f = g(r);
   {
     var d = o => {
         var t = h();
@@ -61,7 +61,7 @@ function x(e, a) {
           ...n
         })), l(o, t)
       };
-    b(s, o => {
+    b(f, o => {
       a.filled ? o(d) : o(c, !1)
     })
   }

@@ -1,9 +1,9 @@
-import "./teJafweZ.js";
+import "./DBA084Tz.js";
 (function() {
   try {
     var q = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     q.SENTRY_RELEASE = {
-      id: "deff0df3054d4e17d810032708dfa15d941dfa1b"
+      id: "c7db87af384652c1dc5fbd166ad20d68993159f9"
     }
   } catch {}
 })();
@@ -49,13 +49,13 @@ function p() {
   })
 }
 
-function G(q) {
+function c(q) {
   return i({
     type: "paintPixels",
     data: q
   })
 }
-async function c() {
+async function G() {
   s || await i({
     type: "clearPixelPreview"
   })
@@ -63,26 +63,26 @@ async function c() {
 
 function i(q) {
   const V = Math.random(),
-    e = {
+    o = {
       ...q,
       id: V
     };
   return new Promise((B, a) => {
     try {
-      const o = navigator.serviceWorker;
-      o || a(new Error("Service Workers are not supported/enabled in your browser. Some features might not work properly."));
+      const e = navigator.serviceWorker;
+      e || a(new Error("Service Workers are not supported/enabled in your browser. Some features might not work properly."));
       const t = g => {
         var A;
-        ((A = g.data) == null ? void 0 : A.id) === V && (B(void 0), o.removeEventListener("message", t))
+        ((A = g.data) == null ? void 0 : A.id) === V && (B(void 0), e.removeEventListener("message", t))
       };
-      o.addEventListener("message", t);
+      e.addEventListener("message", t);
       const w = navigator.serviceWorker.controller;
-      w ? w.postMessage(e) : navigator.serviceWorker.ready.then(g => {
+      w ? w.postMessage(o) : navigator.serviceWorker.ready.then(g => {
         const A = g.active;
-        A ? A == null || A.postMessage(e) : a(new Error("Service worker registration not active"))
+        A ? A == null || A.postMessage(o) : a(new Error("Service worker registration not active"))
       })
-    } catch (o) {
-      a(o)
+    } catch (e) {
+      a(e)
     }
   })
 }
@@ -90,10 +90,10 @@ function i(q) {
 function T({
   pixel: q,
   season: V,
-  tile: e
+  tile: o
 }) {
-  return `t=(${e[0]},${e[1]});p=(${q[0]},${q[1]});s=${V}`
+  return `t=(${o[0]},${o[1]});p=(${q[0]},${q[1]});s=${V}`
 }
 export {
-  Y as A, G as a, p as c, T as g, m as p, c as s
+  Y as A, c as a, p as c, T as g, m as p, G as s
 };
