@@ -1,63 +1,72 @@
 import {
-  A as p,
-  C as g,
-  D as r,
-  F as y,
-  G as _,
-  H as l,
-  g as u,
-  I as h,
-  J as w
-} from "./BkfL-fjl.js";
+  g as v
+} from "./BRsAXifr.js";
+import "./CMV-Q_pp.js";
+import {
+  w as p,
+  a as g,
+  b as l,
+  z as s
+} from "./Dk_dXCV0.js";
+import {
+  i as b
+} from "./DDlWy7bx.js";
+import {
+  d as i
+} from "./BCEve3v2.js";
+import {
+  r as u
+} from "./BG6weMIA.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "541dfc1c3ac43dc4153801a7513fe5d50ca07655"
+      id: "02a79a68c9311df3cb3141310cf8d650e49567ec"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "72606fcc-f5a4-4427-9c3b-f14259fc0ab7", e._sentryDebugIdIdentifier = "sentry-dbid-72606fcc-f5a4-4427-9c3b-f14259fc0ab7")
+      a = new e.Error().stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "27a03347-91ce-4388-ae4b-e96b7e254fea", e._sentryDebugIdIdentifier = "sentry-dbid-27a03347-91ce-4388-ae4b-e96b7e254fea")
   })()
 } catch {}
+const y = e => `Copy alliance ID: #${e.allianceId}`,
+  _ = e => `Copiar ID da aliança: #${e.allianceId}`,
+  Z = (e, a = {}) => (a.locale ?? v()) === "en" ? y(e) : _(e);
+var h = s('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
+  w = s('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
-function I(e = !1) {
-  const n = p,
-    f = n.l.u;
-  if (!f) return;
-  let a = () => h(n.s);
-  if (e) {
-    let s = 0,
-      t = {};
-    const b = w(() => {
-      let c = !1;
-      const i = n.s;
-      for (const o in i) i[o] !== t[o] && (t[o] = i[o], c = !0);
-      return c && s++, s
-    });
-    a = () => u(b)
+function x(e, a) {
+  let n = u(a, ["$$slots", "$$events", "$$legacy", "filled"]);
+  var r = p(),
+    f = g(r);
+  {
+    var d = o => {
+        var t = h();
+        i(t, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...n
+        })), l(o, t)
+      },
+      c = o => {
+        var t = w();
+        i(t, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...n
+        })), l(o, t)
+      };
+    b(f, o => {
+      a.filled ? o(d) : o(c, !1)
+    })
   }
-  f.b.length && g(() => {
-    d(n, a), l(f.b)
-  }), r(() => {
-    const s = y(() => f.m.map(_));
-    return () => {
-      for (const t of s) typeof t == "function" && t()
-    }
-  }), f.a.length && r(() => {
-    d(n, a), l(f.a)
-  })
-}
-
-function d(e, n) {
-  if (e.l.s)
-    for (const f of e.l.s) u(f);
-  n()
+  l(e, r)
 }
 export {
-  I as i
+  x as C, Z as c
 };

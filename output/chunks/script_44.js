@@ -1,72 +1,35 @@
 import {
-  g as v
-} from "./D6Hk-opx.js";
-import "./CXMW5M0g.js";
-import {
-  w as p,
-  a as g,
-  b as l,
-  z as s
-} from "./BkfL-fjl.js";
-import {
-  i as u
-} from "./DeAouWcO.js";
-import {
-  d as i
-} from "./CcncqYmu.js";
-import {
-  r as y
-} from "./S-47MUQz.js";
+  y as i,
+  j as t,
+  h as s,
+  i as r,
+  B as l
+} from "./Dk_dXCV0.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "541dfc1c3ac43dc4153801a7513fe5d50ca07655"
+      id: "02a79a68c9311df3cb3141310cf8d650e49567ec"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      a = new e.Error().stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "27a03347-91ce-4388-ae4b-e96b7e254fea", e._sentryDebugIdIdentifier = "sentry-dbid-27a03347-91ce-4388-ae4b-e96b7e254fea")
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "883330f6-cac8-4bb0-b244-6e36ad27ffd3", e._sentryDebugIdIdentifier = "sentry-dbid-883330f6-cac8-4bb0-b244-6e36ad27ffd3")
   })()
 } catch {}
-const _ = e => `Copy alliance ID: #${e.allianceId}`,
-  b = e => `Copiar ID da aliança: #${e.allianceId}`,
-  Z = (e, a = {}) => (a.locale ?? v()) === "en" ? _(e) : b(e);
-var h = s('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
-  w = s('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
-function x(e, a) {
-  let n = y(a, ["$$slots", "$$events", "$$legacy", "filled"]);
-  var r = p(),
-    f = g(r);
-  {
-    var d = o => {
-        var t = h();
-        i(t, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...n
-        })), l(o, t)
-      },
-      c = o => {
-        var t = w();
-        i(t, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...n
-        })), l(o, t)
-      };
-    u(f, o => {
-      a.filled ? o(d) : o(c, !1)
-    })
-  }
-  l(e, r)
+function y(e, n, f) {
+  s && r();
+  var a = new l(e),
+    o = !i();
+  t(() => {
+    var d = n();
+    o && d !== null && typeof d == "object" && (d = {}), a.ensure(d, f)
+  })
 }
 export {
-  x as C, Z as c
+  y as k
 };

@@ -1,59 +1,140 @@
 import {
-  g as i
-} from "./D6Hk-opx.js";
-import "./CXMW5M0g.js";
+  g as l
+} from "./BRsAXifr.js";
+import "./CMV-Q_pp.js";
 import {
-  z as r,
-  b as s
-} from "./BkfL-fjl.js";
+  p as R,
+  g as s,
+  u as k,
+  o as q,
+  D as C,
+  f as y,
+  t as x,
+  b as v,
+  c as j,
+  l as N,
+  s as b,
+  d as o,
+  bi as Y,
+  r as i
+} from "./Dk_dXCV0.js";
 import {
-  d as a
-} from "./CcncqYmu.js";
+  s as h
+} from "./DPlYJMSM.js";
 import {
-  r as l
-} from "./S-47MUQz.js";
+  i as E
+} from "./DDlWy7bx.js";
+import {
+  d as z,
+  C as B
+} from "./BCEve3v2.js";
+import {
+  b as F
+} from "./C41AT7Kn.js";
+import {
+  p as g,
+  r as G
+} from "./BG6weMIA.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "541dfc1c3ac43dc4153801a7513fe5d50ca07655"
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    t.SENTRY_RELEASE = {
+      id: "02a79a68c9311df3cb3141310cf8d650e49567ec"
     }
   } catch {}
 })();
 try {
   (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "c5137b0f-e2de-4ab6-ab45-1996c9585ae4", e._sentryDebugIdIdentifier = "sentry-dbid-c5137b0f-e2de-4ab6-ab45-1996c9585ae4")
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      e = new t.Error().stack;
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "a7d5770a-0273-4d45-a526-170d27c6058f", t._sentryDebugIdIdentifier = "sentry-dbid-a7d5770a-0273-4d45-a526-170d27c6058f")
   })()
 } catch {}
-const f = () => "Timeout",
-  d = () => "Timeout",
-  w = (e = {}, t = {}) => (t.locale ?? i()) === "en" ? f() : d();
-var c = r('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
+const H = () => "Select the reason",
+  J = () => "Selecione o motivo",
+  xe = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? H() : J(),
+  K = () => "Other",
+  P = () => "Outro motivo",
+  ve = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? K() : P(),
+  Q = () => "Extra context on what happened (required)",
+  U = () => "Mais informações sobre o que aconteceu (obrigatório)",
+  be = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? Q() : U(),
+  V = () => "Required",
+  W = () => "Obrigatório",
+  X = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? V() : W(),
+  Z = t => `Min. characters: ${t.min}`,
+  $ = t => `Mínimo de caracteres: ${t.min}`,
+  ee = (t, e = {}) => (e.locale ?? l()) === "en" ? Z(t) : $(t),
+  te = t => `Max. characters: ${t.max}`,
+  ae = t => `Máximo de caracteres: ${t.max}`,
+  re = (t, e = {}) => (e.locale ?? l()) === "en" ? te(t) : ae(t);
+var ne = y('<legend class="fieldset-legend"> </legend>'),
+  se = y('<span class="text-base-content/80"> </span>'),
+  le = y('<fieldset class="fieldset"><!> <textarea></textarea> <div class="flex items-center justify-between text-xs"><span class="text-error"> </span> <!></div></fieldset>');
 
-function y(e, t) {
-  let n = l(t, ["$$slots", "$$events", "$$legacy"]);
-  var o = c();
-  a(o, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...n
-  })), s(e, o)
-}
-var p = r('<svg><path d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z"></path></svg>');
+function he(t, e) {
+  R(e, !0);
+  let r = g(e, "value", 15),
+    I = g(e, "validate", 15),
+    S = g(e, "disabled", 3, !1),
+    T = G(e, ["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate", "disabled"]),
+    c = N("");
+  const d = k(() => {
+    var a;
+    return ((a = r()) == null ? void 0 : a.length) ?? 0
+  });
+  I(D);
 
-function h(e, t) {
-  let n = l(t, ["$$slots", "$$events", "$$legacy"]);
-  var o = p();
-  a(o, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...n
-  })), s(e, o)
+  function D() {
+    return e.min !== void 0 && s(d) < e.min ? (q(c, e.min === 1 ? X() : ee({
+      min: e.min
+    }), !0), !1) : e.max !== void 0 && s(d) > e.max ? (q(c, re({
+      max: e.max
+    }), !0), !1) : !0
+  }
+  C(() => {
+    var a;
+    e.max !== void 0 && s(d) > e.max && r((a = r()) == null ? void 0 : a.substring(0, e.max))
+  });
+  var f = le(),
+    w = o(f);
+  {
+    var L = a => {
+      var n = ne(),
+        _ = o(n, !0);
+      i(n), x(() => h(_, e.label)), v(a, n)
+    };
+    E(w, a => {
+      e.label && a(L)
+    })
+  }
+  var u = b(w, 2);
+  Y(u), z(u, () => ({
+    ...T,
+    class: `textarea w-full ${e.class??""}`,
+    placeholder: e.placeholder,
+    disabled: S(),
+    [B]: {
+      "textarea-error": !!s(c)
+    }
+  }));
+  var p = b(u, 2),
+    m = o(p),
+    M = o(m, !0);
+  i(m);
+  var A = b(m, 2);
+  {
+    var O = a => {
+      var n = se(),
+        _ = o(n, !0);
+      i(n), x(() => h(_, e.max - s(d))), v(a, n)
+    };
+    E(A, a => {
+      e.max !== void 0 && a(O)
+    })
+  }
+  i(p), i(f), x(() => h(M, s(c))), F(u, r), v(t, f), j()
 }
 export {
-  y as G, h as T, w as t
+  he as L, be as g, ve as o, xe as s
 };

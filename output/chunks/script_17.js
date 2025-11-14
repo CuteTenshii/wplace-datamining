@@ -11,7 +11,7 @@ var ge = (a, e, t) => e in a ? fe(a, e, {
 var h = (a, e, t) => ge(a, typeof e != "symbol" ? e + "" : e, t),
   me = (a, e, t) => e.has(a) || Q("Cannot " + t);
 var g = (a, e, t) => (me(a, e, "read from private field"), t ? t.call(a) : e.get(a)),
-  p = (a, e, t) => e.has(a) ? Q("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(a) : e.set(a, t);
+  _ = (a, e, t) => e.has(a) ? Q("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(a) : e.set(a, t);
 import {
   l as T,
   m as X,
@@ -19,22 +19,22 @@ import {
   o as S,
   F as ee,
   u as A
-} from "./BkfL-fjl.js";
+} from "./Dk_dXCV0.js";
 import {
   P as re,
   g as he
-} from "./C6l4VxKK.js";
+} from "./DZyIZeuY.js";
 import {
   g as u
-} from "./D6Hk-opx.js";
+} from "./BRsAXifr.js";
 import {
-  s as _e
-} from "./Cxs0bxZS.js";
+  s as pe
+} from "./v0LqQFvz.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "541dfc1c3ac43dc4153801a7513fe5d50ca07655"
+      id: "02a79a68c9311df3cb3141310cf8d650e49567ec"
     }
   } catch {}
 })();
@@ -42,26 +42,26 @@ try {
   (function() {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new a.Error().stack;
-    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "0554fa3c-5b32-4da9-bc2c-afc81ac67e65", a._sentryDebugIdIdentifier = "sentry-dbid-0554fa3c-5b32-4da9-bc2c-afc81ac67e65")
+    e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "d9412f8a-c51e-4eb4-b9ed-5f598d57ea1a", a._sentryDebugIdIdentifier = "sentry-dbid-d9412f8a-c51e-4eb4-b9ed-5f598d57ea1a")
   })()
 } catch {}
 
 function ra(...a) {
   return a.filter(Boolean).join(" ")
 }
-const pe = typeof document < "u";
+const _e = typeof document < "u";
 let te = 0;
 var I, N, C;
 class we {
   constructor() {
-    p(this, I, T(X([])));
-    p(this, N, T(X([])));
-    p(this, C, e => {
+    _(this, I, T(X([])));
+    _(this, N, T(X([])));
+    _(this, C, e => {
       const t = this.toasts.findIndex(n => n.id === e);
       return t === -1 ? null : t
     });
     h(this, "addToast", e => {
-      pe && this.toasts.unshift(e)
+      _e && this.toasts.unshift(e)
     });
     h(this, "updateToast", ({
       id: e,
@@ -250,7 +250,7 @@ function be(a, e) {
 var W;
 class sa {
   constructor() {
-    p(this, W, A(() => b.toasts.filter(e => !e.dismiss)))
+    _(this, W, A(() => b.toasts.filter(e => !e.dismiss)))
   }
   get toasts() {
     return y(g(this, W))
@@ -564,10 +564,10 @@ const Ie = () => "Unexpected server error. Try again later.",
   gt = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? ut() : ft(),
   mt = () => "Alliance name already taken",
   ht = () => "Já possui uma aliança com esse nome",
-  _t = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? mt() : ht(),
-  pt = () => "Alliance with empty name",
+  pt = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? mt() : ht(),
+  _t = () => "Alliance with empty name",
   wt = () => "Aliança com nome vazio",
-  yt = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? pt() : wt(),
+  yt = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? _t() : wt(),
   bt = () => "You are already in an alliance",
   St = () => "Você já está em uma aliança",
   Tt = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? bt() : St(),
@@ -620,8 +620,8 @@ const Ie = () => "Unexpected server error. Try again later.",
   gn = () => "A sua conta foi banida por quebrar as regras",
   mn = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? fn() : gn(),
   hn = a => `Your account has been suspended out until ${a.until}`,
-  _n = a => `A sua conta está suspensa até ${a.until}`,
-  pn = (a, e = {}) => (e.locale ?? u()) === "en" ? hn(a) : _n(a),
+  pn = a => `A sua conta está suspensa até ${a.until}`,
+  _n = (a, e = {}) => (e.locale ?? u()) === "en" ? hn(a) : pn(a),
   wn = () => "You are trying to paint with a color you do not own",
   yn = () => "Você está tentando pintar com uma cor que não possui",
   bn = (a = {}, e = {}) => (e.locale ?? u()) === "en" ? wn() : yn(),
@@ -719,23 +719,23 @@ var k, M, L, B, D, U, G, R;
 class Rn {
   constructor() {
     h(this, "channel", new BroadcastChannel("user-channel"));
-    p(this, k, T());
-    p(this, M, T(!0));
-    p(this, L, T());
-    p(this, B, T(Date.now()));
-    p(this, D, A(() => {
+    _(this, k, T());
+    _(this, M, T(!0));
+    _(this, L, T());
+    _(this, B, T(Date.now()));
+    _(this, D, A(() => {
       if (!this.data) return;
       const e = this.data.charges;
       if (e.count > e.max) return e.count;
       const t = e.count + Math.max((he.now - this.lastFetch) / e.cooldownMs, 0);
       return Math.min(e.max, t)
     }));
-    p(this, U, A(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
-    p(this, G, A(() => {
+    _(this, U, A(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
+    _(this, G, A(() => {
       var e;
       return new Gn(Un(((e = this.data) == null ? void 0 : e.flagsBitmap) ?? "AA=="))
     }));
-    p(this, R, A(() => {
+    _(this, R, A(() => {
       var t;
       if (!((t = this.data) != null && t.timeoutUntil)) return;
       const e = new Date(this.data.timeoutUntil);
@@ -802,7 +802,7 @@ class Rn {
         data: this.data
       })), this.data && this.notificiationCount === void 0 && Z.getNotificationCount().then(t => {
         this.notificiationCount = t
-      }), (e = this.data) != null && e.id && _e("userId", {
+      }), (e = this.data) != null && e.id && pe("userId", {
         id: this.data.id
       }), !!this.data
     } catch (t) {
@@ -1182,7 +1182,7 @@ const jn = [{
   ma = H.seasons[ue].zoom,
   ha = H.seasons[ue].tileSize;
 
-function _a(a) {
+function pa(a) {
   return Yn.countries[a - 1]
 }
 
@@ -1190,14 +1190,14 @@ function Zn(a) {
   return z.data ? z.data.experiments[a] ?? null : null
 }
 
-function pa(a) {
+function _a(a) {
   var e, t;
   return ((t = (e = z.data) == null ? void 0 : e.experiments[a]) == null ? void 0 : t.enabled) ?? !0
 }
 var $;
 class Qn {
   constructor(e) {
-    p(this, $, T(!0));
+    _(this, $, T(!0));
     this.url = e
   }
   get online() {
@@ -1211,11 +1211,11 @@ class Qn {
       r = Zn("2025-09_pawtect");
     if (!r) throw new Error("paint request while pawtect experiment not found");
     const d = (await Promise.all(Object.values(n).map(i => {
-      const [l, f] = i[0].tile, w = i[0].season, _ = {
+      const [l, f] = i[0].tile, w = i[0].season, p = {
         colors: i.map(Y => Y.colorIdx),
         coords: i.flatMap(Y => Y.pixel),
         fp: t
-      }, j = JSON.stringify(_);
+      }, j = JSON.stringify(p);
       return this.request(`/s${w}/pixel/${l}/${f}`, {
         method: "POST",
         body: j,
@@ -1243,12 +1243,31 @@ class Qn {
         if (f === "ban") throw new Error(mn());
         if (f === "timeout") {
           const w = new Date(Date.now() + ((l == null ? void 0 : l.durationMs) ?? 0));
-          throw new Error(pn({
+          throw new Error(_n({
             until: w.toLocaleString()
           }))
         } else throw new Error(o())
       } else throw new Error(o())
     }
+  }
+  async adminAutoPainterPaint(e, t) {
+    const n = {
+        pixels: e.map(s => ({
+          tile: s.tile,
+          pixel: s.pixel,
+          season: s.season,
+          colorIdx: s.colorIdx
+        })),
+        fingerprint: t
+      },
+      r = await this.request("/admin/auto-painter/paint", {
+        method: "POST",
+        body: JSON.stringify(n),
+        credentials: "include"
+      });
+    if (r.status === 403) throw new Error("Auto painter is restricted to administrators.");
+    if (r.status !== 200) throw new Error(o());
+    return r.json()
   }
   async getPixelInfo({
     season: e,
@@ -1279,15 +1298,15 @@ class Qn {
       credentials: "include"
     });
     if (l.status !== 200) {
-      const _ = await l.text();
-      throw console.error("Error while fetching pixel area info", _), new Error(o())
+      const p = await l.text();
+      throw console.error("Error while fetching pixel area info", p), new Error(o())
     }
     const f = await l.arrayBuffer(),
       w = new DataView(f);
     return {
       paintedBy: Array.from({
         length: f.byteLength / 4
-      }, (_, j) => w.getUint32(j * 4, !0))
+      }, (p, j) => w.getUint32(j * 4, !0))
     }
   }
   async me() {
@@ -1473,7 +1492,7 @@ class Qn {
     if (t.status === 200) return t.json();
     if (t.status === 400) {
       const n = await t.json();
-      throw n.error === "max_characters" ? new Error(gt()) : n.error === "name_taken" ? new Error(_t()) : n.error == "empty_name" ? new Error(yt()) : new Error(o())
+      throw n.error === "max_characters" ? new Error(gt()) : n.error === "name_taken" ? new Error(pt()) : n.error == "empty_name" ? new Error(yt()) : new Error(o())
     } else throw t.status === 403 ? new Error(Tt()) : new Error(o())
   }
   async leaveAlliance() {
@@ -2008,7 +2027,7 @@ class Qn {
     if (i.status !== 200) throw new c(o(), i.status);
     const l = await i.json(),
       f = Array.isArray(l == null ? void 0 : l.tickets) ? l.tickets : [];
-    return f.sort((w, _) => new Date(_.createdAt).getTime() - new Date(w.createdAt).getTime()), f
+    return f.sort((w, p) => new Date(p.createdAt).getTime() - new Date(w.createdAt).getTime()), f
   }
   async getModerationTranslate(e) {
     const t = await this.request("/moderator/ticket/translate", {
@@ -2028,31 +2047,31 @@ class Qn {
     for (const f of e) {
       const w = f.status ?? "open";
       if (t === "received") {
-        for (const _ of f.reports) n.push({
-          id: String(_.id),
+        for (const p of f.reports) n.push({
+          id: String(p.id),
           ticketId: String(f.id),
-          createdAt: _.createdAt ?? f.createdAt,
+          createdAt: p.createdAt ?? f.createdAt,
           byUser: {
-            id: Number(_.reportedBy),
-            name: String(_.reportedByName ?? _.reportedBy),
-            picture: _.reportedByPicture ?? null
+            id: Number(p.reportedBy),
+            name: String(p.reportedByName ?? p.reportedBy),
+            picture: p.reportedByPicture ?? null
           },
-          reason: String(_.reason),
+          reason: String(p.reason),
           status: w
         });
         continue
       }
       if (t === "sent") {
-        for (const _ of f.reports) n.push({
-          id: String(_.id),
+        for (const p of f.reports) n.push({
+          id: String(p.id),
           ticketId: String(f.id),
-          createdAt: _.createdAt ?? f.createdAt,
+          createdAt: p.createdAt ?? f.createdAt,
           toUser: {
             id: Number(f.reportedUser.id),
             name: String(f.reportedUser.name),
             picture: f.reportedUser.picture ?? null
           },
-          reason: String(_.reason),
+          reason: String(p.reason),
           status: w
         });
         continue
@@ -2379,5 +2398,5 @@ class Qn {
 $ = new WeakMap;
 let Z = new Qn(re);
 export {
-  ga as A, ha as B, ue as C, ma as P, Yn as S, qe as _, Z as a, la as b, o as c, Xt as d, Ft as e, b as f, Yt as g, zt as h, $t as i, ra as j, sa as k, Zn as l, ca as m, ia as n, fa as o, _a as p, Cn as q, da as r, ua as s, se as t, z as u, pa as v, oa as w, pn as x, mn as y, rn as z
+  ga as A, ha as B, ue as C, ma as P, Yn as S, qe as _, Z as a, la as b, o as c, Xt as d, Ft as e, b as f, Yt as g, zt as h, $t as i, ra as j, sa as k, Zn as l, ca as m, ia as n, fa as o, pa as p, Cn as q, da as r, ua as s, se as t, z as u, _a as v, oa as w, _n as x, mn as y, rn as z
 };

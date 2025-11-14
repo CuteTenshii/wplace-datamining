@@ -1,47 +1,64 @@
-import {
-  g as r
-} from "./D6Hk-opx.js";
-import "./CXMW5M0g.js";
-import {
-  z as s,
-  b as d
-} from "./BkfL-fjl.js";
-import {
-  d as f
-} from "./CcncqYmu.js";
-import {
-  r as a
-} from "./S-47MUQz.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "541dfc1c3ac43dc4153801a7513fe5d50ca07655"
+      id: "02a79a68c9311df3cb3141310cf8d650e49567ec"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      o = new e.Error().stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "e1e82db2-2a4f-44f5-8c91-de40c3e540d7", e._sentryDebugIdIdentifier = "sentry-dbid-e1e82db2-2a4f-44f5-8c91-de40c3e540d7")
+      t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "318a9da5-f9ae-41c4-a6ad-1557223c6f66", e._sentryDebugIdIdentifier = "sentry-dbid-318a9da5-f9ae-41c4-a6ad-1557223c6f66")
   })()
 } catch {}
-const l = () => "Close",
-  c = () => "Fechar",
-  w = (e = {}, o = {}) => (o.locale ?? r()) === "en" ? l() : c();
-var i = s('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
+const b = e => e;
 
-function m(e, o) {
-  let t = a(o, ["$$slots", "$$events", "$$legacy"]);
-  var n = i();
-  f(n, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...t
-  })), d(e, n)
+function h(e) {
+  const t = e - 1;
+  return t * t * t + 1
+}
+
+function w(e, {
+  delay: t = 0,
+  duration: i = 400,
+  easing: s = b
+} = {}) {
+  const r = +getComputedStyle(e).opacity;
+  return {
+    delay: t,
+    duration: i,
+    easing: s,
+    css: n => `opacity: ${n*r}`
+  }
+}
+
+function m(e, {
+  delay: t = 0,
+  duration: i = 400,
+  easing: s = h,
+  axis: r = "y"
+} = {}) {
+  const n = getComputedStyle(e),
+    c = +n.opacity,
+    p = r === "y" ? "height" : "width",
+    l = parseFloat(n[p]),
+    o = r === "y" ? ["top", "bottom"] : ["left", "right"],
+    d = o.map(a => `${a[0].toUpperCase()}${a.slice(1)}`),
+    f = parseFloat(n[`padding${d[0]}`]),
+    y = parseFloat(n[`padding${d[1]}`]),
+    u = parseFloat(n[`margin${d[0]}`]),
+    g = parseFloat(n[`margin${d[1]}`]),
+    _ = parseFloat(n[`border${d[0]}Width`]),
+    $ = parseFloat(n[`border${d[1]}Width`]);
+  return {
+    delay: t,
+    duration: i,
+    easing: s,
+    css: a => `overflow: hidden;opacity: ${Math.min(a*20,1)*c};${p}: ${a*l}px;padding-${o[0]}: ${a*f}px;padding-${o[1]}: ${a*y}px;margin-${o[0]}: ${a*u}px;margin-${o[1]}: ${a*g}px;border-${o[0]}-width: ${a*_}px;border-${o[1]}-width: ${a*$}px;min-${p}: 0`
+  }
 }
 export {
-  m as A, w as c
+  w as f, m as s
 };

@@ -1,14 +1,14 @@
 import {
   a as o
-} from "../chunks/BhO62SWS.js";
+} from "../chunks/ChNH8pib.js";
 import {
-  x as i
-} from "../chunks/DCtGc3aC.js";
+  x as b
+} from "../chunks/DyhYoSug.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "541dfc1c3ac43dc4153801a7513fe5d50ca07655"
+      id: "02a79a68c9311df3cb3141310cf8d650e49567ec"
     }
   } catch {}
 })();
@@ -20,5 +20,5 @@ try {
   })()
 } catch {}
 export {
-  i as load_css, o as start
+  b as load_css, o as start
 };
