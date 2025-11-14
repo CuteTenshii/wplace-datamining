@@ -1,9 +1,9 @@
-import "./B3m8Ax5i.js";
+import "./DVka_m2x.js";
 (function() {
   try {
     var q = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     q.SENTRY_RELEASE = {
-      id: "0fdca126ca32380ac4e95a0011d2b66881dfb9e6"
+      id: "2f23e3a8f8ea879ac9c94b9f80bbe3f77b879d5a"
     }
   } catch {}
 })();
