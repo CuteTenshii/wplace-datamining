@@ -2,7 +2,7 @@
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "2f23e3a8f8ea879ac9c94b9f80bbe3f77b879d5a"
+      id: "541dfc1c3ac43dc4153801a7513fe5d50ca07655"
     }
   } catch {}
 })();

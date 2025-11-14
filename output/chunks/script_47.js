@@ -1,4 +1,4 @@
-import "./WOJUy8pa.js";
+import "./CXMW5M0g.js";
 import {
   e as ne,
   F as re,
@@ -17,48 +17,48 @@ import {
   t as K,
   u as p,
   z as se,
-  m as ue,
-  d as u,
-  r as d,
+  m as de,
+  d,
+  r as u,
   s as f,
   n as H
-} from "./CgLM89MT.js";
+} from "./BkfL-fjl.js";
 import {
-  s as g
-} from "./BWfhra3b.js";
+  s as b
+} from "./VMQMPbBZ.js";
 import {
   i as B
-} from "./BVoOEesO.js";
+} from "./DeAouWcO.js";
 import {
   a as $,
   c as ee,
-  d as de,
+  d as ue,
   s as O
-} from "./lFNF2jsf.js";
+} from "./CcncqYmu.js";
 import {
   p as s,
   r as fe
-} from "./DmGFS7dT.js";
+} from "./S-47MUQz.js";
 import {
   g as Y,
   t as V,
   P as _e,
   a as ve
-} from "./DVka_m2x.js";
+} from "./C6l4VxKK.js";
 import {
   o as me
-} from "./C976l2oN.js";
+} from "./DnzmzcaC.js";
 import {
   g as h
-} from "./BrRyFb7F.js";
+} from "./D6Hk-opx.js";
 import {
-  L as be
-} from "./D0qdFVJr.js";
+  L as ge
+} from "./whYkJm_6.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "2f23e3a8f8ea879ac9c94b9f80bbe3f77b879d5a"
+      id: "541dfc1c3ac43dc4153801a7513fe5d50ca07655"
     }
   } catch {}
 })();
@@ -70,7 +70,7 @@ try {
   })()
 } catch {}
 
-function ge(a, e, n) {
+function be(a, e, n) {
   ne(() => {
     var r = re(() => e(a, n == null ? void 0 : n()) || {});
     if (n && (r != null && r.update)) {
@@ -199,7 +199,7 @@ function Ye(a, e) {
     var S = t => {
       var l = We();
       let o;
-      ge(l, (c, i) => T == null ? void 0 : T(c, i), () => k(E)), K(() => o = $(l, 1, ee(e.class), "svelte-1lm836y", o, {
+      be(l, (c, i) => T == null ? void 0 : T(c, i), () => k(E)), K(() => o = $(l, 1, ee(e.class), "svelte-1lm836y", o, {
         flexible: D() == "flexible"
       })), I(t, l)
     };
@@ -214,7 +214,7 @@ var qe = se('<svg><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130
 function He(a, e) {
   let n = fe(e, ["$$slots", "$$events", "$$legacy"]);
   var r = qe();
-  de(r, () => ({
+  ue(r, () => ({
     viewBox: "0 0 256 262",
     xmlns: "http://www.w3.org/2000/svg",
     ...n
@@ -227,31 +227,31 @@ var Oe = R('<a><!> </a> <div class="mt-2 flex flex-col items-center gap-1"><!> <
 function ct(a, e) {
   J(e, !0);
   let n = s(e, "showTwitchMigration", 3, !0),
-    r = Q(ue(V ? "" : "turnstile-disabled"));
+    r = Q(de(V ? "" : "turnstile-disabled"));
 
   function y(c, i) {
     return `${_e}/auth/${c}?token=${i}${e.redirect?`&r=${e.redirect}`:""}`
   }
   var m = Je(),
-    _ = u(m),
-    U = u(_);
-  be(U, {
+    _ = d(m),
+    U = d(_);
+  ge(U, {
     hasText: !0
-  }), d(_);
+  }), u(_);
   var C = f(_, 2),
-    j = u(C);
+    j = d(C);
   {
     var D = c => {
       var i = Oe(),
         v = X(i),
-        b = u(v);
-      He(b, {
+        g = d(v);
+      He(g, {
         class: "mr-1 size-5"
       });
-      var M = f(b);
-      d(v);
+      var M = f(g);
+      u(v);
       var N = f(v, 2),
-        z = u(N);
+        z = d(N);
       {
         var G = x => {
           {
@@ -271,11 +271,11 @@ function ct(a, e) {
         })
       }
       var te = f(z, 2);
-      B(te, x => {}), d(N), K((x, W) => {
+      B(te, x => {}), u(N), K((x, W) => {
         $(v, 1, ee({
           "btn btn-lg bg-base-100 w-full text-base": !0,
           "bg-base-content/10 pointer-events-none": !k(r)
-        })), O(v, "href", x), g(M, ` ${W??""}`)
+        })), O(v, "href", x), b(M, ` ${W??""}`)
       }, [() => k(r) ? y("google", k(r)) : "#", () => we({
         name: "Google"
       })]), I(c, i)
@@ -284,36 +284,36 @@ function ct(a, e) {
       c(D, !1)
     })
   }
-  d(C);
+  u(C);
   var L = f(C, 2),
-    A = u(L),
+    A = d(L),
     E = f(A),
-    T = u(E, !0);
-  d(E);
+    T = d(E, !0);
+  u(E);
   var w = f(E, 2),
-    F = u(w, !0);
-  d(w);
+    F = d(w, !0);
+  u(w);
   var P = f(w),
     S = f(P),
-    t = u(S, !0);
-  d(S), H(), d(L);
+    t = d(S, !0);
+  u(S), H(), u(L);
   var l = f(L, 2);
   {
     var o = c => {
       var i = Ve(),
-        v = u(i),
-        b = f(v),
-        M = u(b, !0);
-      d(b), H(), d(i), K((N, z, G) => {
-        g(v, `${N??""} `), O(b, "href", z), g(M, G)
+        v = d(i),
+        g = f(v),
+        M = d(g, !0);
+      u(g), H(), u(i), K((N, z, G) => {
+        b(v, `${N??""} `), O(g, "href", z), b(M, G)
       }, [() => ze(), () => y("twitch", ""), () => Ue()]), I(c, i)
     };
     B(l, c => {
       n() && c(o)
     })
   }
-  d(m), K((c, i, v, b, M) => {
-    g(A, `${c??""} `), g(T, i), g(F, v), g(P, ` ${b??""} `), g(t, M)
+  u(m), K((c, i, v, g, M) => {
+    b(A, `${c??""} `), b(T, i), b(F, v), b(P, ` ${g??""} `), b(t, M)
   }, [() => Ie(), () => Ee(), () => Pe(), () => Be(), () => Ge()]), I(a, m), Z()
 }
 export {

@@ -1,9 +1,9 @@
-import "./DVka_m2x.js";
+import "./C6l4VxKK.js";
 (function() {
   try {
     var q = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     q.SENTRY_RELEASE = {
-      id: "2f23e3a8f8ea879ac9c94b9f80bbe3f77b879d5a"
+      id: "541dfc1c3ac43dc4153801a7513fe5d50ca07655"
     }
   } catch {}
 })();
@@ -43,13 +43,13 @@ function m(q) {
   })
 }
 
-function p() {
+function c() {
   return s = void 0, a({
     type: "clearPixelPreview"
   })
 }
 
-function c(q) {
+function p(q) {
   return a({
     type: "paintPixels",
     data: q
@@ -95,5 +95,5 @@ function T({
   return `t=(${e[0]},${e[1]});p=(${q[0]},${q[1]});s=${V}`
 }
 export {
-  Y as A, c as a, p as c, T as g, m as p, G as s
+  Y as A, p as a, c, T as g, m as p, G as s
 };
