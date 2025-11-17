@@ -1,11 +1,11 @@
 import {
   S as i
-} from "./DlQap11Z.js";
+} from "./DoX8u6-c.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "19f2e5962f03ca04a34d7ee46166821cb4d0ab06"
+      id: "17a00565e2756c20c4608d1274a59935337b90b7"
     }
   } catch {}
 })();
@@ -123,9 +123,9 @@ function M(t, e) {
     v = 1 + .015 * r,
     d = a / 1,
     g = s / m,
-    f = c / v,
-    b = d * d + g * g + f * f;
-  return b < 0 ? 0 : Math.sqrt(b)
+    b = c / v,
+    f = d * d + g * g + b * b;
+  return f < 0 ? 0 : Math.sqrt(f)
 }
 
 function x(t, e) {

@@ -13,12 +13,12 @@ import {
   V as T,
   at as D,
   W as i
-} from "./ZncCC91P.js";
+} from "./DCl-iuFc.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "19f2e5962f03ca04a34d7ee46166821cb4d0ab06"
+      id: "17a00565e2756c20c4608d1274a59935337b90b7"
     }
   } catch {}
 })();
@@ -32,14 +32,14 @@ try {
 
 function N(e, n, r = !1, o = !1, I = !1) {
   var l = e,
-    t = "";
+    d = "";
   b(() => {
-    var d = g;
-    if (t === (t = n() ?? "")) {
+    var s = g;
+    if (d === (d = n() ?? "")) {
       h && u();
       return
     }
-    if (d.nodes_start !== null && (p(d.nodes_start, d.nodes_end), d.nodes_start = d.nodes_end = null), t !== "") {
+    if (s.nodes_start !== null && (p(s.nodes_start, s.nodes_end), s.nodes_start = s.nodes_end = null), d !== "") {
       if (h) {
         c.data;
         for (var a = u(), _ = a; a !== null && (a.nodeType !== w || a.data !== "");) _ = a, a = v(a);
@@ -47,9 +47,9 @@ function N(e, n, r = !1, o = !1, I = !1) {
         y(c, _), l = T(a);
         return
       }
-      var s = t + "";
-      r ? s = `<svg>${s}</svg>` : o && (s = `<math>${s}</math>`);
-      var f = D(s);
+      var t = d + "";
+      r ? t = `<svg>${t}</svg>` : o && (t = `<math>${t}</math>`);
+      var f = D(t);
       if ((r || o) && (f = i(f)), y(i(f), f.lastChild), r || o)
         for (; i(f);) l.before(i(f));
       else l.before(f)

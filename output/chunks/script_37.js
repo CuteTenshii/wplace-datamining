@@ -1,22 +1,22 @@
 import {
   g as s
-} from "./B7osW-Zn.js";
-import "./BRVjStkZ.js";
+} from "./3PqU0Kok.js";
+import "./-9fq-A0S.js";
 import {
   z as r,
   b as i
-} from "./ZncCC91P.js";
+} from "./DCl-iuFc.js";
 import {
   d as l
-} from "./BRc2BAlH.js";
+} from "./CrdJ3t3-.js";
 import {
   r as a
-} from "./DOVp_lkX.js";
+} from "./C0nOmWBd.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "19f2e5962f03ca04a34d7ee46166821cb4d0ab06"
+      id: "17a00565e2756c20c4608d1274a59935337b90b7"
     }
   } catch {}
 })();
@@ -28,11 +28,11 @@ try {
   })()
 } catch {}
 const d = () => "Pixels painted",
-  f = () => "Pixels pintados",
-  T = (e = {}, t = {}) => (t.locale ?? s()) === "en" ? d() : f(),
-  c = () => "Description",
+  c = () => "Pixels pintados",
+  T = (e = {}, t = {}) => (t.locale ?? s()) === "en" ? d() : c(),
+  f = () => "Description",
   p = () => "Descrição",
-  m = (e = {}, t = {}) => (t.locale ?? s()) === "en" ? c() : p();
+  m = (e = {}, t = {}) => (t.locale ?? s()) === "en" ? f() : p();
 var u = r('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
 
 function v(e, t) {
