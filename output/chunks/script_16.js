@@ -9,12 +9,12 @@ import {
   g as o,
   o as r,
   m
-} from "./_uPdD6ej.js";
+} from "./h0AjwZJZ.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "8ca9d5bb8d7e9609a9f3fa05a0fcc401dd1cd4cb"
+      id: "1ec3fee10a39ac222b6aa79fae966fd9b93c3dd3"
     }
   } catch {}
 })();
@@ -30,18 +30,18 @@ const L = "true",
   v = "0x4AAAAAABpHqZ-6i7uL0nmG",
   A = "https://backend.wplace.live",
   p = "theme";
-var l, g, d, u, f, c, h;
+var l, g, u, d, f, h, c;
 class y {
   constructor() {
     n(this, l, s(!1));
     n(this, g, s(!1));
-    n(this, d, s(m(I())));
-    n(this, u, s(!1));
+    n(this, u, s(m(I())));
+    n(this, d, s(!1));
     n(this, f, s("custom-winter"));
-    n(this, c, s(m(Date.now())));
-    n(this, h, s(void 0));
+    n(this, h, s(m(Date.now())));
+    n(this, c, s(void 0));
     setInterval(() => {
-      r(a(this, c), Date.now(), !0)
+      r(a(this, h), Date.now(), !0)
     }, 500), this.theme = localStorage.getItem(p), this.theme !== "dark" && this.theme !== "custom-winter" && (this.theme = "custom-winter")
   }
   get dropletsDialogOpen() {
@@ -57,16 +57,16 @@ class y {
     r(a(this, g), e, !0)
   }
   get language() {
-    return o(a(this, d))
-  }
-  set language(e) {
-    r(a(this, d), e, !0)
-  }
-  get turnstatileLoaded() {
     return o(a(this, u))
   }
-  set turnstatileLoaded(e) {
+  set language(e) {
     r(a(this, u), e, !0)
+  }
+  get turnstatileLoaded() {
+    return o(a(this, d))
+  }
+  set turnstatileLoaded(e) {
+    r(a(this, d), e, !0)
   }
   get theme() {
     return o(a(this, f))
@@ -75,19 +75,19 @@ class y {
     r(a(this, f), e, !0), localStorage.setItem(p, e), document.documentElement.setAttribute("data-theme", e)
   }
   get now() {
-    return o(a(this, c))
+    return o(a(this, h))
   }
   get captcha() {
-    return E ? o(a(this, h)) : {
+    return E ? o(a(this, c)) : {
       token: "turnstile-disabled",
       time: Date.now()
     }
   }
   set captcha(e) {
-    r(a(this, h), e, !0)
+    r(a(this, c), e, !0)
   }
 }
-l = new WeakMap, g = new WeakMap, d = new WeakMap, u = new WeakMap, f = new WeakMap, c = new WeakMap, h = new WeakMap;
+l = new WeakMap, g = new WeakMap, u = new WeakMap, d = new WeakMap, f = new WeakMap, h = new WeakMap, c = new WeakMap;
 const T = new y;
 
 function I() {
