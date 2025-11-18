@@ -1,45 +1,11 @@
 import {
-  g as l
-} from "./B6AUkjz0.js";
-import "./ZyxtncWx.js";
-import {
-  p as R,
-  g as s,
-  u as k,
-  o as q,
-  D as C,
-  f as y,
-  t as x,
-  b as v,
-  c as j,
-  l as N,
-  s as b,
-  d as o,
-  bi as Y,
-  r as c
-} from "./DXiHgRqS.js";
-import {
-  s as h
-} from "./BHMkiY2K.js";
-import {
-  i as E
-} from "./CQNyEQ1z.js";
-import {
-  d as z,
-  C as B
-} from "./DDrHLuzM.js";
-import {
-  b as F
-} from "./CosCgRYw.js";
-import {
-  p as g,
-  r as G
-} from "./CgrfesPE.js";
+  S as c
+} from "./CpN6I90v.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "2df914dd371fba2112b2cd92c4cdc7ac8c5482fe"
+      id: "5e7c9fd5f328559866810f75338456562566478c"
     }
   } catch {}
 })();
@@ -47,94 +13,130 @@ try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "a7d5770a-0273-4d45-a526-170d27c6058f", t._sentryDebugIdIdentifier = "sentry-dbid-a7d5770a-0273-4d45-a526-170d27c6058f")
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "82e8e72e-7f23-49a8-aa8a-ea1e842386bf", t._sentryDebugIdIdentifier = "sentry-dbid-82e8e72e-7f23-49a8-aa8a-ea1e842386bf")
   })()
 } catch {}
-const H = () => "Select the reason",
-  J = () => "Selecione o motivo",
-  xe = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? H() : J(),
-  K = () => "Other",
-  P = () => "Outro motivo",
-  ve = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? K() : P(),
-  Q = () => "Extra context on what happened (required)",
-  U = () => "Mais informações sobre o que aconteceu (obrigatório)",
-  be = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? Q() : U(),
-  V = () => "Required",
-  W = () => "Obrigatório",
-  X = (t = {}, e = {}) => (e.locale ?? l()) === "en" ? V() : W(),
-  Z = t => `Min. characters: ${t.min}`,
-  $ = t => `Mínimo de caracteres: ${t.min}`,
-  ee = (t, e = {}) => (e.locale ?? l()) === "en" ? Z(t) : $(t),
-  te = t => `Max. characters: ${t.max}`,
-  ae = t => `Máximo de caracteres: ${t.max}`,
-  re = (t, e = {}) => (e.locale ?? l()) === "en" ? te(t) : ae(t);
-var ne = y('<legend class="fieldset-legend"> </legend>'),
-  se = y('<span class="text-base-content/80"> </span>'),
-  le = y('<fieldset class="fieldset"><!> <textarea></textarea> <div class="flex items-center justify-between text-xs"><span class="text-error"> </span> <!></div></fieldset>');
+const u = ["text-red-500", "text-orange-500", "text-yellow-500", "text-lime-500", "text-emerald-500", "text-teal-500", "text-cyan-500", "text-sky-500", "text-indigo-500", "text-violet-500", "text-purple-500", "text-fuchsia-500", "text-pink-500", "text-rose-500"],
+  p = ["bg-red-500/10", "bg-orange-500/10", "bg-yellow-500/10", "bg-lime-500/10", "bg-emerald-500/10", "bg-teal-500/10", "bg-cyan-500/10", "bg-sky-500/10", "bg-indigo-500/10", "bg-violet-500/10", "bg-purple-500/10", "bg-fuchsia-500/10", "bg-pink-500/10", "bg-rose-500/10"];
 
-function he(t, e) {
-  R(e, !0);
-  let r = g(e, "value", 15),
-    I = g(e, "validate", 15),
-    S = g(e, "disabled", 3, !1),
-    T = G(e, ["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate", "disabled"]),
-    i = N("");
-  const d = k(() => {
-    var a;
-    return ((a = r()) == null ? void 0 : a.length) ?? 0
-  });
-  I(D);
+function A(t) {
+  return u[t % u.length]
+}
 
-  function D() {
-    return e.min !== void 0 && s(d) < e.min ? (q(i, e.min === 1 ? X() : ee({
-      min: e.min
-    }), !0), !1) : e.max !== void 0 && s(d) > e.max ? (q(i, re({
-      max: e.max
-    }), !0), !1) : !0
+function D(t) {
+  return p[t % p.length]
+}
+
+function T({
+  r: t,
+  g: e,
+  b: n
+}) {
+  function o(a) {
+    return a.toString(16).padStart(2, "0")
   }
-  C(() => {
-    var a;
-    e.max !== void 0 && s(d) > e.max && r((a = r()) == null ? void 0 : a.substring(0, e.max))
-  });
-  var f = le(),
-    w = o(f);
-  {
-    var L = a => {
-      var n = ne(),
-        _ = o(n, !0);
-      c(n), x(() => h(_, e.label)), v(a, n)
-    };
-    E(w, a => {
-      e.label && a(L)
+  return `#${o(t)}${o(e)}${o(n)}`
+}
+
+function k(t) {
+  return t = t.trim().replace("#", ""), t.length === 3 && (t = t[0] + t[0] + t[1] + t[1] + t[2] + t[2]), t.length !== 6 ? {
+    r: 0,
+    g: 0,
+    b: 0
+  } : {
+    r: +("0x" + t.slice(0, 2)),
+    g: +("0x" + t.slice(2, 4)),
+    b: +("0x" + t.slice(4, 6))
+  }
+}
+
+function C(t) {
+  t = Math.min(t, c.colors.length - 1);
+  const [e, n, o] = c.colors[t].rgb;
+  return {
+    r: e,
+    g: n,
+    b: o,
+    a: t === 0 ? 0 : 255
+  }
+}
+const y = c.colors.map((t, e) => ({
+    ...t,
+    idx: e,
+    lab: w({
+      r: t.rgb[0],
+      g: t.rgb[1],
+      b: t.rgb[2]
     })
-  }
-  var u = b(w, 2);
-  Y(u), z(u, () => ({
-    ...T,
-    class: `textarea w-full ${e.class??""}`,
-    placeholder: e.placeholder,
-    disabled: S(),
-    [B]: {
-      "textarea-error": !!s(i)
+  })).filter(t => t.idx !== 0),
+  h = c.colors.map((t, e) => ({
+    idx: e,
+    rgb: {
+      r: t.rgb[0],
+      g: t.rgb[1],
+      b: t.rgb[2]
     }
-  }));
-  var p = b(u, 2),
-    m = o(p),
-    M = o(m, !0);
-  c(m);
-  var A = b(m, 2);
-  {
-    var O = a => {
-      var n = se(),
-        _ = o(n, !0);
-      c(n), x(() => h(_, e.max - s(d))), v(a, n)
-    };
-    E(A, a => {
-      e.max !== void 0 && a(O)
-    })
+  })).filter(t => t.idx !== 0);
+
+function R(t, e = "lab") {
+  if (e === "compuphase") {
+    let r = h[0],
+      l = Number.MAX_VALUE;
+    for (const s of h) {
+      const i = x(t, s.rgb);
+      i < l && (r = s, l = i)
+    }
+    return r.idx
   }
-  c(p), c(f), x(() => h(M, s(i))), F(u, r), v(t, f), j()
+  let n = y[0],
+    o = Number.MAX_VALUE;
+  const a = w(t);
+  for (let r of y) {
+    const l = M(a, r.lab);
+    l < o && (n = r, o = l)
+  }
+  return n.idx
+}
+
+function w(t) {
+  var e = t.r / 255,
+    n = t.g / 255,
+    o = t.b / 255,
+    a, r, l;
+  return e = e > .04045 ? Math.pow((e + .055) / 1.055, 2.4) : e / 12.92, n = n > .04045 ? Math.pow((n + .055) / 1.055, 2.4) : n / 12.92, o = o > .04045 ? Math.pow((o + .055) / 1.055, 2.4) : o / 12.92, a = (e * .4124 + n * .3576 + o * .1805) / .95047, r = (e * .2126 + n * .7152 + o * .0722) / 1, l = (e * .0193 + n * .1192 + o * .9505) / 1.08883, a = a > .008856 ? Math.pow(a, 1 / 3) : 7.787 * a + 16 / 116, r = r > .008856 ? Math.pow(r, 1 / 3) : 7.787 * r + 16 / 116, l = l > .008856 ? Math.pow(l, 1 / 3) : 7.787 * l + 16 / 116, {
+    l: 116 * r - 16,
+    a: 500 * (a - r),
+    b: 200 * (r - l)
+  }
+}
+
+function M(t, e) {
+  var n = t.l - e.l,
+    o = t.a - e.a,
+    a = t.b - e.b,
+    r = Math.sqrt(t.a * t.a + t.b * t.b),
+    l = Math.sqrt(e.a * e.a + e.b * e.b),
+    s = r - l,
+    i = o * o + a * a - s * s;
+  i = i < 0 ? 0 : Math.sqrt(i);
+  var m = 1 + .045 * r,
+    v = 1 + .015 * r,
+    g = n / 1,
+    f = s / m,
+    d = i / v,
+    b = g * g + f * f + d * d;
+  return b < 0 ? 0 : Math.sqrt(b)
+}
+
+function x(t, e) {
+  const n = (t.r + e.r) / 2,
+    o = t.r - e.r,
+    a = t.g - e.g,
+    r = t.b - e.b,
+    l = 2 + n / 256,
+    s = 2 + (255 - n) / 256;
+  return l * o * o + 4 * a * a + s * r * r
 }
 export {
-  he as L, be as g, ve as o, xe as s
+  D as a, R as b, C as c, A as g, k as h, T as r
 };

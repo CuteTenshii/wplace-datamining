@@ -1,6 +1,6 @@
 import {
-  T as n
-} from "./Dff7lKDG.js";
+  g as t
+} from "./ByzlWgKr.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
@@ -12,8 +12,13 @@ import {
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      f = new e.Error().stack;
-    f && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[f] = "c4aff0ce-1df5-4f9f-aa19-fccf90923ef5", e._sentryDebugIdIdentifier = "sentry-dbid-c4aff0ce-1df5-4f9f-aa19-fccf90923ef5")
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "c3da3986-2727-41b4-85e7-13fa1662e896", e._sentryDebugIdIdentifier = "sentry-dbid-c3da3986-2727-41b4-85e7-13fa1662e896")
   })()
 } catch {}
-n();
+const f = () => "Refresh",
+  o = () => "Atualizar",
+  l = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? f() : o();
+export {
+  l as r
+};
