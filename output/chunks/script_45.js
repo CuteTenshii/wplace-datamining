@@ -1,68 +1,68 @@
 import {
   g as v
-} from "./mn44wyAY.js";
-import "./CEfzx3TF.js";
+} from "./BhZARl1E.js";
+import "./CBUhUR6C.js";
 import {
   w as p,
   a as g,
   b as l,
   z as s
-} from "./h0AjwZJZ.js";
+} from "./DnEjpmVm.js";
 import {
   i as b
-} from "./B6LpKC-B.js";
+} from "./C8Hybh3d.js";
 import {
   d as i
-} from "./gpnf8i4z.js";
+} from "./Dntd2pOW.js";
 import {
   r as u
-} from "./D2HNK0DY.js";
+} from "./BeBY0h2f.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "1ec3fee10a39ac222b6aa79fae966fd9b93c3dd3"
+      id: "dcafbf70eeb3b56ec7077bb04087bc09c7e58c55"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      a = new e.Error().stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "27a03347-91ce-4388-ae4b-e96b7e254fea", e._sentryDebugIdIdentifier = "sentry-dbid-27a03347-91ce-4388-ae4b-e96b7e254fea")
+      o = new e.Error().stack;
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "27a03347-91ce-4388-ae4b-e96b7e254fea", e._sentryDebugIdIdentifier = "sentry-dbid-27a03347-91ce-4388-ae4b-e96b7e254fea")
   })()
 } catch {}
 const y = e => `Copy alliance ID: #${e.allianceId}`,
   _ = e => `Copiar ID da aliança: #${e.allianceId}`,
-  Z = (e, a = {}) => (a.locale ?? v()) === "en" ? y(e) : _(e);
+  Z = (e, o = {}) => (o.locale ?? v()) === "en" ? y(e) : _(e);
 var h = s('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
   w = s('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
-function x(e, a) {
-  let n = u(a, ["$$slots", "$$events", "$$legacy", "filled"]);
+function x(e, o) {
+  let n = u(o, ["$$slots", "$$events", "$$legacy", "filled"]);
   var r = p(),
     f = g(r);
   {
-    var d = o => {
+    var d = a => {
         var t = h();
         i(t, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
           fill: "currentColor",
           ...n
-        })), l(o, t)
+        })), l(a, t)
       },
-      c = o => {
+      c = a => {
         var t = w();
         i(t, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
           fill: "currentColor",
           ...n
-        })), l(o, t)
+        })), l(a, t)
       };
-    b(f, o => {
-      a.filled ? o(d) : o(c, !1)
+    b(f, a => {
+      o.filled ? a(d) : a(c, !1)
     })
   }
   l(e, r)
