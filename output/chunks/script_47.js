@@ -1,4 +1,4 @@
-import "./CBUhUR6C.js";
+import "./ZyxtncWx.js";
 import {
   e as ne,
   F as re,
@@ -17,48 +17,48 @@ import {
   t as K,
   u as p,
   z as se,
-  m as ue,
-  d as u,
-  r as d,
+  m as de,
+  d,
+  r as u,
   s as f,
   n as H
-} from "./DnEjpmVm.js";
+} from "./DXiHgRqS.js";
 import {
   s as g
-} from "./jR1LGzZ5.js";
+} from "./BHMkiY2K.js";
 import {
   i as B
-} from "./C8Hybh3d.js";
+} from "./CQNyEQ1z.js";
 import {
   a as $,
   c as ee,
-  d as de,
+  d as ue,
   s as O
-} from "./Dntd2pOW.js";
+} from "./DDrHLuzM.js";
 import {
   p as s,
   r as fe
-} from "./BeBY0h2f.js";
+} from "./CgrfesPE.js";
 import {
   g as Y,
   t as V,
   P as _e,
   a as ve
-} from "./CfaFLSYz.js";
+} from "./Cp-YkzdC.js";
 import {
   o as me
-} from "./DkIM-0VG.js";
+} from "./BVDB2GTB.js";
 import {
   g as h
-} from "./BhZARl1E.js";
+} from "./B6AUkjz0.js";
 import {
   L as be
-} from "./BJWaMhn1.js";
+} from "./DC17FldZ.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "dcafbf70eeb3b56ec7077bb04087bc09c7e58c55"
+      id: "2df914dd371fba2112b2cd92c4cdc7ac8c5482fe"
     }
   } catch {}
 })();
@@ -214,7 +214,7 @@ var qe = se('<svg><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130
 function He(a, e) {
   let n = fe(e, ["$$slots", "$$events", "$$legacy"]);
   var r = qe();
-  de(r, () => ({
+  ue(r, () => ({
     viewBox: "0 0 256 262",
     xmlns: "http://www.w3.org/2000/svg",
     ...n
@@ -227,31 +227,31 @@ var Oe = R('<a><!> </a> <div class="mt-2 flex flex-col items-center gap-1"><!> <
 function ct(a, e) {
   J(e, !0);
   let n = s(e, "showTwitchMigration", 3, !0),
-    r = Q(ue(V ? "" : "turnstile-disabled"));
+    r = Q(de(V ? "" : "turnstile-disabled"));
 
   function y(c, i) {
     return `${_e}/auth/${c}?token=${i}${e.redirect?`&r=${e.redirect}`:""}`
   }
   var m = Je(),
-    _ = u(m),
-    U = u(_);
+    _ = d(m),
+    U = d(_);
   be(U, {
     hasText: !0
-  }), d(_);
+  }), u(_);
   var C = f(_, 2),
-    j = u(C);
+    j = d(C);
   {
     var D = c => {
       var i = Oe(),
         v = X(i),
-        b = u(v);
+        b = d(v);
       He(b, {
         class: "mr-1 size-5"
       });
       var M = f(b);
-      d(v);
+      u(v);
       var N = f(v, 2),
-        z = u(N);
+        z = d(N);
       {
         var G = x => {
           {
@@ -271,7 +271,7 @@ function ct(a, e) {
         })
       }
       var te = f(z, 2);
-      B(te, x => {}), d(N), K((x, W) => {
+      B(te, x => {}), u(N), K((x, W) => {
         $(v, 1, ee({
           "btn btn-lg bg-base-100 w-full text-base": !0,
           "bg-base-content/10 pointer-events-none": !k(r)
@@ -284,27 +284,27 @@ function ct(a, e) {
       c(D, !1)
     })
   }
-  d(C);
+  u(C);
   var L = f(C, 2),
-    A = u(L),
+    A = d(L),
     E = f(A),
-    T = u(E, !0);
-  d(E);
+    T = d(E, !0);
+  u(E);
   var w = f(E, 2),
-    F = u(w, !0);
-  d(w);
+    F = d(w, !0);
+  u(w);
   var P = f(w),
     S = f(P),
-    t = u(S, !0);
-  d(S), H(), d(L);
+    t = d(S, !0);
+  u(S), H(), u(L);
   var l = f(L, 2);
   {
     var o = c => {
       var i = Ve(),
-        v = u(i),
+        v = d(i),
         b = f(v),
-        M = u(b, !0);
-      d(b), H(), d(i), K((N, z, G) => {
+        M = d(b, !0);
+      u(b), H(), u(i), K((N, z, G) => {
         g(v, `${N??""} `), O(b, "href", z), g(M, G)
       }, [() => ze(), () => y("twitch", ""), () => Ue()]), I(c, i)
     };
@@ -312,7 +312,7 @@ function ct(a, e) {
       n() && c(o)
     })
   }
-  d(m), K((c, i, v, b, M) => {
+  u(m), K((c, i, v, b, M) => {
     g(A, `${c??""} `), g(T, i), g(F, v), g(P, ` ${b??""} `), g(t, M)
   }, [() => Ie(), () => Ee(), () => Pe(), () => Be(), () => Ge()]), I(a, m), Z()
 }

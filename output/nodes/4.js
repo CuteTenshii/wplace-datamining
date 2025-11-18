@@ -17,12 +17,12 @@ var et = (m, a, d) => (dm(m, a, "read from private field"), d ? d.call(m) : a.ge
   ia = (m, a, d, x) => (dm(m, a, "write to private field"), x ? x.call(m, d) : a.set(m, d), d),
   rn = (m, a, d) => (dm(m, a, "access private method"), d);
 var Rv = (m, a, d) => eb(Qx(m), d, a);
-import "../chunks/CBUhUR6C.js";
+import "../chunks/ZyxtncWx.js";
 import {
   o as Hn,
   a as rb,
   s as _i
-} from "../chunks/DkIM-0VG.js";
+} from "../chunks/BVDB2GTB.js";
 import {
   ac as nb,
   bm as ib,
@@ -74,17 +74,17 @@ import {
   bK as I0,
   e as gb,
   $ as _b
-} from "../chunks/DnEjpmVm.js";
+} from "../chunks/DXiHgRqS.js";
 import {
   s as ue,
   c as M0
-} from "../chunks/jR1LGzZ5.js";
+} from "../chunks/BHMkiY2K.js";
 import {
   i as Ee
-} from "../chunks/C8Hybh3d.js";
+} from "../chunks/CQNyEQ1z.js";
 import {
   h as vb
-} from "../chunks/DecBnUrg.js";
+} from "../chunks/C73QR0On.js";
 import {
   d as vr,
   a as Ur,
@@ -97,23 +97,23 @@ import {
   h as rh,
   c as ys,
   i as Nv
-} from "../chunks/Dntd2pOW.js";
+} from "../chunks/DDrHLuzM.js";
 import {
   a as wl,
   t as xa
-} from "../chunks/Dnm7Qnxu.js";
+} from "../chunks/PUrQFnyW.js";
 import {
   g as Rp,
   b as xb
-} from "../chunks/phHINR7B.js";
+} from "../chunks/DdpS4eyF.js";
 import {
   p as Ti
-} from "../chunks/Bqz1cZD9.js";
+} from "../chunks/mGeN66gR.js";
 import {
   g as Aa,
   P as bb,
   b as A0
-} from "../chunks/CfaFLSYz.js";
+} from "../chunks/Cp-YkzdC.js";
 import {
   S as Ea,
   t as Kt,
@@ -132,41 +132,41 @@ import {
   C as jv,
   P as fm,
   A as Eb
-} from "../chunks/CEH629mT.js";
+} from "../chunks/DkXemo7h.js";
 import {
   A as gi,
   p as pg,
   c as Im,
   g as mm,
   a as Lb
-} from "../chunks/CMk_RRPC.js";
+} from "../chunks/DWlqsQ9J.js";
 import {
   f as Tl,
   h as ka,
   R as k0
-} from "../chunks/BR3gv91E.js";
-import "../chunks/CXbgBnbF.js";
+} from "../chunks/BlHy5cey.js";
+import "../chunks/Dh8mu-4a.js";
 import {
   e as oi,
   i as $h
-} from "../chunks/K6W4igAS.js";
+} from "../chunks/B5_IXuwF.js";
 import {
   a as E0,
   c as fg,
   b as Xh
-} from "../chunks/CtiZJ1_1.js";
+} from "../chunks/CosCgRYw.js";
 import {
   b as so
-} from "../chunks/Bd0G9zCk.js";
+} from "../chunks/C4EpJxKm.js";
 import {
   i as mg
-} from "../chunks/DMcCeT6l.js";
+} from "../chunks/C2oq6QTf.js";
 import {
   r as _r,
   p as Et,
   s as Gs,
   u as Vv
-} from "../chunks/BeBY0h2f.js";
+} from "../chunks/CgrfesPE.js";
 import {
   U as zb,
   A as L0,
@@ -179,31 +179,31 @@ import {
   c as Fb,
   P as R0,
   b as Bb
-} from "../chunks/5d4_yKoU.js";
+} from "../chunks/Dor8q1Oa.js";
 import {
   b as F0,
   c as gg,
   g as Ki,
   a as Kp
-} from "../chunks/CbFSFwFa.js";
+} from "../chunks/A28AC_pl.js";
 import {
   h as Jp
-} from "../chunks/CnMJQEC1.js";
+} from "../chunks/DgZ0vQiQ.js";
 import {
   L as B0
-} from "../chunks/B4t6uaPy.js";
+} from "../chunks/Dw0bP-cQ.js";
 import {
   g as je,
   l as Ob
-} from "../chunks/BhZARl1E.js";
+} from "../chunks/B6AUkjz0.js";
 import {
   c as Yh
-} from "../chunks/DbJhteq3.js";
+} from "../chunks/CUXBR2M2.js";
 import {
   d as Nb,
   L as Qp,
   p as _g
-} from "../chunks/De6k-DzP.js";
+} from "../chunks/BcDkjl7Z.js";
 import {
   c as Am,
   b as vg,
@@ -219,73 +219,73 @@ import {
   e as Wb,
   R as $b,
   f as qv
-} from "../chunks/BTKJ3TrH.js";
+} from "../chunks/Bdz_nWhn.js";
 import {
   P as Mo,
   t as N0
-} from "../chunks/ZumNhavZ.js";
+} from "../chunks/BGcGTREU.js";
 import {
   l as Xb,
   p as xg,
   m as j0,
   v as Yb,
   s as Kb
-} from "../chunks/DKrUNyFy.js";
+} from "../chunks/n7mVoeb5.js";
 import {
   k as ih
-} from "../chunks/8f9jvB7R.js";
+} from "../chunks/B6-245o6.js";
 import {
   A as V0,
   c as xs
-} from "../chunks/BaILXQo5.js";
+} from "../chunks/Di_9lr4c.js";
 import {
   f as oo,
   s as Sp
-} from "../chunks/BWqIErXe.js";
+} from "../chunks/if6KeI7h.js";
 import {
   C as bg,
   c as Jb
-} from "../chunks/YdqXHWc3.js";
+} from "../chunks/C1hMn9aN.js";
 import {
   L as wg
-} from "../chunks/BJWaMhn1.js";
+} from "../chunks/DC17FldZ.js";
 import {
   c as Fi
-} from "../chunks/DS6kYJ0V.js";
+} from "../chunks/CzOhOxXB.js";
 import {
   L as Qb
-} from "../chunks/DnG8661Z.js";
+} from "../chunks/C4-zd6JO.js";
 import {
   _ as e2
-} from "../chunks/D2Ido-tx.js";
+} from "../chunks/DVM2RQis.js";
 import {
   c as q0
-} from "../chunks/L5ucu6VL.js";
+} from "../chunks/CxgLv6Zj.js";
 import {
   s as U0
-} from "../chunks/Dd-yTxZc.js";
+} from "../chunks/I_NRIULy.js";
 import {
   T as ah,
   G as Fp,
   t as Z0
-} from "../chunks/CYRZNw1e.js";
+} from "../chunks/CEviuNks.js";
 import {
   C as t2
-} from "../chunks/DHjp7Ppy.js";
+} from "../chunks/DoinbooG.js";
 import {
   R as r2
-} from "../chunks/BSkxpP4X.js";
+} from "../chunks/PYDX7rzj.js";
 import {
   W as n2
-} from "../chunks/DJo6v5Pu.js";
+} from "../chunks/Bh1QS9Ia.js";
 import {
   r as i2
-} from "../chunks/iFLLUX1-.js";
+} from "../chunks/Cd-TUejU.js";
 (function() {
   try {
     var m = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     m.SENTRY_RELEASE = {
-      id: "dcafbf70eeb3b56ec7077bb04087bc09c7e58c55"
+      id: "2df914dd371fba2112b2cd92c4cdc7ac8c5482fe"
     }
   } catch {}
 })();
@@ -293,7 +293,7 @@ try {
   (function() {
     var m = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       a = new m.Error().stack;
-    a && (m._sentryDebugIds = m._sentryDebugIds || {}, m._sentryDebugIds[a] = "b0dac127-eefb-4ddc-a928-d62d54f0bafe", m._sentryDebugIdIdentifier = "sentry-dbid-b0dac127-eefb-4ddc-a928-d62d54f0bafe")
+    a && (m._sentryDebugIds = m._sentryDebugIds || {}, m._sentryDebugIds[a] = "b5475585-18ce-49d4-a013-a75b05bda886", m._sentryDebugIdIdentifier = "sentry-dbid-b5475585-18ce-49d4-a013-a75b05bda886")
   })()
 } catch {}
 const a2 = [];
@@ -4633,13 +4633,13 @@ function G6() {
           Nr = {
             kind: "padding"
           },
-          Br = {
+          Fr = {
             kind: "colorArray"
           },
           ir = {
             kind: "numberArray"
           },
-          Dr = {
+          Br = {
             kind: "resolvedImage"
           },
           zr = {
@@ -4661,7 +4661,7 @@ function G6() {
           }
           return n.kind
         }
-        const En = [Pt, Ze, kt, Je, ot, Nt, Ar, br, or(Tt), Nr, ir, Br, Dr, zr];
+        const En = [Pt, Ze, kt, Je, ot, Nt, Ar, br, or(Tt), Nr, ir, Fr, Br, zr];
 
         function An(n, t) {
           if (t.kind === "error") return null;
@@ -5018,7 +5018,7 @@ function G6() {
           }
         }
         wr.black = new wr(0, 0, 0, 1), wr.white = new wr(1, 1, 1, 1), wr.transparent = new wr(0, 0, 0, 0), wr.red = new wr(1, 0, 0, 1);
-        class Rr {
+        class Dr {
           constructor(t, r, o) {
             this.sensitivity = t ? r ? "variant" : "case" : r ? "accent" : "base", this.locale = o, this.collator = new Intl.Collator(this.locale ? this.locale : [], {
               sensitivity: this.sensitivity,
@@ -5207,7 +5207,7 @@ function G6() {
         }
 
         function qn(n) {
-          if (n === null || typeof n == "string" || typeof n == "boolean" || typeof n == "number" || n instanceof hn || n instanceof wr || n instanceof Rr || n instanceof Tn || n instanceof Bn || n instanceof jn || n instanceof Sn || n instanceof kn || n instanceof pn) return !0;
+          if (n === null || typeof n == "string" || typeof n == "boolean" || typeof n == "number" || n instanceof hn || n instanceof wr || n instanceof Dr || n instanceof Tn || n instanceof Bn || n instanceof jn || n instanceof Sn || n instanceof kn || n instanceof pn) return !0;
           if (Array.isArray(n)) {
             for (const t of n)
               if (!qn(t)) return !1;
@@ -5228,13 +5228,13 @@ function G6() {
           if (typeof n == "number") return Ze;
           if (n instanceof wr) return ot;
           if (n instanceof hn) return Nt;
-          if (n instanceof Rr) return ur;
+          if (n instanceof Dr) return ur;
           if (n instanceof Tn) return Ar;
           if (n instanceof Bn) return Nr;
           if (n instanceof jn) return ir;
-          if (n instanceof Sn) return Br;
+          if (n instanceof Sn) return Fr;
           if (n instanceof kn) return zr;
-          if (n instanceof pn) return Dr;
+          if (n instanceof pn) return Br;
           if (Array.isArray(n)) {
             const t = n.length;
             let r;
@@ -5897,7 +5897,7 @@ function G6() {
             if (f = r.parse(f, 2, Ze), !f) return null;
             const y = [];
             let w = null;
-            o !== "interpolate-hcl" && o !== "interpolate-lab" || r.expectedType == Br ? r.expectedType && r.expectedType.kind !== "value" && (w = r.expectedType) : w = ot;
+            o !== "interpolate-hcl" && o !== "interpolate-lab" || r.expectedType == Fr ? r.expectedType && r.expectedType.kind !== "value" && (w = r.expectedType) : w = ot;
             for (let P = 0; P < g.length; P += 2) {
               const M = g[P],
                 R = g[P + 1],
@@ -5909,7 +5909,7 @@ function G6() {
               if (!W) return null;
               w = w || W.type, y.push([M, W])
             }
-            return On(w, Ze) || On(w, Nt) || On(w, ot) || On(w, Nr) || On(w, ir) || On(w, Br) || On(w, zr) || On(w, or(Ze)) ? new Zn(w, o, c, f, y) : r.error(`Type ${Yr(w)} is not interpolatable.`)
+            return On(w, Ze) || On(w, Nt) || On(w, ot) || On(w, Nr) || On(w, ir) || On(w, Fr) || On(w, zr) || On(w, or(Ze)) ? new Zn(w, o, c, f, y) : r.error(`Type ${Yr(w)} is not interpolatable.`)
           }
           evaluate(t) {
             const r = this.labels,
@@ -6117,7 +6117,7 @@ function G6() {
             return o.locale && (g = r.parse(o.locale, 1, kt), !g) ? null : new Ws(c, f, g)
           }
           evaluate(t) {
-            return new Rr(this.caseSensitive.evaluate(t), this.diacriticSensitive.evaluate(t), this.locale ? this.locale.evaluate(t) : null)
+            return new Dr(this.caseSensitive.evaluate(t), this.diacriticSensitive.evaluate(t), this.locale ? this.locale.evaluate(t) : null)
           }
           eachChild(t) {
             t(this.caseSensitive), t(this.diacriticSensitive), this.locale && t(this.locale)
@@ -6206,7 +6206,7 @@ function G6() {
           evaluate(t) {
             return new Tn(this.sections.map((r => {
               const o = r.content.evaluate(t);
-              return zn(o) === Dr ? new bn("", o, null, null, null, r.verticalAlign ? r.verticalAlign.evaluate(t) : null) : new bn(ma(o), null, r.scale ? r.scale.evaluate(t) : null, r.font ? r.font.evaluate(t).join(",") : null, r.textColor ? r.textColor.evaluate(t) : null, r.verticalAlign ? r.verticalAlign.evaluate(t) : null)
+              return zn(o) === Br ? new bn("", o, null, null, null, r.verticalAlign ? r.verticalAlign.evaluate(t) : null) : new bn(ma(o), null, r.scale ? r.scale.evaluate(t) : null, r.font ? r.font.evaluate(t).join(",") : null, r.textColor ? r.textColor.evaluate(t) : null, r.verticalAlign ? r.verticalAlign.evaluate(t) : null)
             })))
           }
           eachChild(t) {
@@ -6218,7 +6218,7 @@ function G6() {
         }
         class $s {
           constructor(t) {
-            this.type = Dr, this.input = t
+            this.type = Br, this.input = t
           }
           static parse(t, r) {
             if (t.length !== 2) return r.error("Expected two arguments.");
@@ -7578,9 +7578,9 @@ function G6() {
                 formatted: Ar,
                 padding: Nr,
                 numberArray: ir,
-                colorArray: Br,
+                colorArray: Fr,
                 projectionDefinition: Nt,
-                resolvedImage: Dr,
+                resolvedImage: Br,
                 variableAnchorOffsetCollection: zr
               };
               return f.type === "array" ? or(g[f.value] || Tt, f.length) : g[f.type]
@@ -10172,7 +10172,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
         class Qt extends ac {}
         class nr extends ku {}
         class Lt extends oc {}
-        class Fr extends l {}
+        class Rr extends l {}
         const _n = xi([{
             name: "a_pos",
             components: 2,
@@ -12364,7 +12364,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
         }
         class Nf {
           constructor(t) {
-            this.zoom = t.zoom, this.overscaling = t.overscaling, this.layers = t.layers, this.layerIds = this.layers.map((r => r.id)), this.index = t.index, this.hasDependencies = !1, this.patternFeatures = [], this.layoutVertexArray = new _e, this.indexArray = new Lt, this.indexArray2 = new Fr, this.programConfigurations = new ls(t.layers, t.zoom), this.segments = new wn, this.segments2 = new wn, this.stateDependentLayerIds = this.layers.filter((r => r.isStateDependent())).map((r => r.id))
+            this.zoom = t.zoom, this.overscaling = t.overscaling, this.layers = t.layers, this.layerIds = this.layers.map((r => r.id)), this.index = t.index, this.hasDependencies = !1, this.patternFeatures = [], this.layoutVertexArray = new _e, this.indexArray = new Lt, this.indexArray2 = new Rr, this.programConfigurations = new ls(t.layers, t.zoom), this.segments = new wn, this.segments2 = new wn, this.stateDependentLayerIds = this.layers.filter((r => r.isStateDependent())).map((r => r.id))
           }
           populate(t, r, o) {
             this.hasDependencies = np("fill", this.layers, r);
@@ -15012,7 +15012,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             }
           }
           generateCollisionDebugBuffers() {
-            this.hasDebugData() && this.destroyDebugData(), this.textCollisionBox = new Kf(Qt, R_.members, Fr), this.iconCollisionBox = new Kf(Qt, R_.members, Fr);
+            this.hasDebugData() && this.destroyDebugData(), this.textCollisionBox = new Kf(Qt, R_.members, Rr), this.iconCollisionBox = new Kf(Qt, R_.members, Rr);
             for (let t = 0; t < this.symbolInstances.length; t++) {
               const r = this.symbolInstances.get(t);
               this.addDebugCollisionBoxes(r.textBoxStartIndex, r.textBoxEndIndex, r, !0), this.addDebugCollisionBoxes(r.verticalTextBoxStartIndex, r.verticalTextBoxEndIndex, r, !0), this.addDebugCollisionBoxes(r.iconBoxStartIndex, r.iconBoxEndIndex, r, !1), this.addDebugCollisionBoxes(r.verticalIconBoxStartIndex, r.verticalIconBoxEndIndex, r, !1)
@@ -21561,12 +21561,12 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
               if (ke.zoom < k) continue;
               const nr = q - ke.zoom,
                 Lt = H[0] - .5 - (Fe << nr),
-                Fr = H[1] - .5 - (xe << nr),
+                Rr = H[1] - .5 - (xe << nr),
                 _n = e.reparseOverscaled ? Math.max(ke.zoom, ut) : ke.zoom;
               _e.push({
                 tileID: new s.a0(ke.zoom === L ? _n : ke.zoom, ke.wrap, ke.zoom, Fe, xe),
                 distanceSq: s.ap([re[0] - .5 - Fe, re[1] - .5 - xe]),
-                tileDistanceToCamera: Math.sqrt(Lt * Lt + Fr * Fr)
+                tileDistanceToCamera: Math.sqrt(Lt * Lt + Rr * Rr)
               })
             } else
               for (let nr = 0; nr < 4; nr++) Ae.push({
@@ -22467,8 +22467,8 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             if (!ve) return {
               notEnoughRoom: !0
             };
-            const Ae = Br(ve.first.point.x, ve.first.point.y, e, i),
-              _e = Br(ve.last.point.x, ve.last.point.y, e, i);
+            const Ae = Fr(ve.first.point.x, ve.first.point.y, e, i),
+              _e = Fr(ve.last.point.x, ve.last.point.y, e, i);
             if (v && !p) {
               const ke = br(l.writingMode, Ae, _e, k);
               if (ke) return ke
@@ -22489,8 +22489,8 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                 ve = new s.P(e.lineVertexArray.getx(de), e.lineVertexArray.gety(de)),
                 Ae = Nr(ve.x, ve.y, e),
                 _e = Ae.signedDistanceFromCamera > 0 ? Ae.point : ur(e.tileAnchorPoint, ve, ce, 1, e),
-                ke = Br(ce.x, ce.y, e, i),
-                Fe = Br(_e.x, _e.y, e, i),
+                ke = Fr(ce.x, ce.y, e, i),
+                Fe = Fr(_e.x, _e.y, e, i),
                 xe = br(l.writingMode, ke, Fe, k);
               if (xe) return xe
             }
@@ -22528,7 +22528,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           return i.pitchWithMap ? (p = Ze(l, u, i.pitchedLabelPlaneMatrix, i.getElevation), p.isOccluded = !1) : (p = i.transform.projectTileCoordinates(l, u, i.unwrappedTileID, i.getElevation), p.point.x = (.5 * p.point.x + .5) * i.width, p.point.y = (.5 * -p.point.y + .5) * i.height), p
         }
 
-        function Br(h, e, i, l) {
+        function Fr(h, e, i, l) {
           if (i.pitchWithMap) {
             const u = [h, e, 0, 1];
             return s.aA(u, u, l), i.transform.projectTileCoordinates(u[0] / u[3], u[1] / u[3], i.unwrappedTileID, i.getElevation).point
@@ -22543,7 +22543,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           return i.transform.projectTileCoordinates(h, e, i.unwrappedTileID, i.getElevation)
         }
 
-        function Dr(h, e, i) {
+        function Br(h, e, i) {
           return h._unit()._perp()._mult(e * i)
         }
 
@@ -22552,7 +22552,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           const k = i.add(e);
           if (h + S.direction < l || h + S.direction >= u) return T.projectionCache.offsets[h] = k, k;
           const L = Ar(h + S.direction, T, S),
-            q = Dr(L.sub(i), v, S.direction),
+            q = Br(L.sub(i), v, S.direction),
             B = i.add(q),
             H = L.add(q);
           return T.projectionCache.offsets[h] = s.aB(p, k, B, H) || k, T.projectionCache.offsets[h]
@@ -22585,7 +22585,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             else {
               let nt;
               const st = ce.sub(de);
-              nt = st.mag() === 0 ? Dr(Ar(H + L, T, ct).sub(ce), i, L) : Dr(st, i, L), le || (le = de.add(nt)), re = zr(H, nt, ce, p, v, le, i, T, ct), ke.push(le), Fe = re.sub(le)
+              nt = st.mag() === 0 ? Br(Ar(H + L, T, ct).sub(ce), i, L) : Br(st, i, L), le || (le = de.add(nt)), re = zr(H, nt, ce, p, v, le, i, T, ct), ke.push(le), Fe = re.sub(le)
             }
             Ae = Fe.mag()
           }
@@ -22685,14 +22685,14 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                 const _n = this.projectPathToScreenSpace(nr, Ae);
                 nr = _n.some((Gn => Gn.signedDistanceFromCamera <= 0)) ? [] : _n.map((Gn => Gn.point))
               }
-              let Fr = [];
+              let Rr = [];
               if (nr.length > 0) {
                 const _n = nr[0].clone(),
                   Gn = nr[0].clone();
                 for (let wn = 1; wn < nr.length; wn++) _n.x = Math.min(_n.x, nr[wn].x), _n.y = Math.min(_n.y, nr[wn].y), Gn.x = Math.max(Gn.x, nr[wn].x), Gn.y = Math.max(Gn.y, nr[wn].y);
-                Fr = _n.x >= ct.x && Gn.x <= nt.x && _n.y >= ct.y && Gn.y <= nt.y ? [nr] : Gn.x < ct.x || _n.x > nt.x || Gn.y < ct.y || _n.y > nt.y ? [] : s.aC([nr], ct.x, ct.y, nt.x, nt.y)
+                Rr = _n.x >= ct.x && Gn.x <= nt.x && _n.y >= ct.y && Gn.y <= nt.y ? [nr] : Gn.x < ct.x || _n.x > nt.x || Gn.y < ct.y || _n.y > nt.y ? [] : s.aC([nr], ct.x, ct.y, nt.x, nt.y)
               }
-              for (const _n of Fr) {
+              for (const _n of Rr) {
                 st.reset(_n, .25 * qe);
                 let Gn = 0;
                 Gn = st.length <= .5 * qe ? 1 : Math.ceil(st.paddedLength / Lt) + 1;
@@ -22825,9 +22825,9 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             if (v && !p) {
               const nr = this.projectAndGetPerspectiveRatio(ce + 1, de, u, k, q),
                 Lt = nr.x - S.x,
-                Fr = Math.atan((nr.y - S.y) / Lt) + (Lt < 0 ? Math.PI : 0),
-                _n = Math.sin(Fr),
-                Gn = Math.cos(Fr);
+                Rr = Math.atan((nr.y - S.y) / Lt) + (Lt < 0 ? Math.PI : 0),
+                _n = Math.sin(Rr),
+                Gn = Math.cos(Rr);
               B = Gn, H = _n, re = -_n, le = Gn
             } else if (!v && p) {
               const nr = Pt(this.transform);
@@ -23034,7 +23034,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             const st = this.retainedQueryData[u.bucketInstanceId].tileID,
               ut = this._getTerrainElevationFunc(st),
               Qt = this.transform.getFastPathSimpleProjectionMatrix(st),
-              nr = (Lt, Fr, _n) => {
+              nr = (Lt, Rr, _n) => {
                 var Gn, wn;
                 if (i[Lt.crossTileID]) return;
                 if (q) return void(this.placements[Lt.crossTileID] = new vn(!1, !1, !1));
@@ -23057,8 +23057,8 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                   as = 0,
                   yo = 0,
                   ro = 0;
-                Fr.textFeatureIndex ? as = Fr.textFeatureIndex : Lt.useRuntimeCollisionCircles && (as = Lt.featureIndex), Fr.verticalTextFeatureIndex && (yo = Fr.verticalTextFeatureIndex);
-                const os = Fr.textBox;
+                Rr.textFeatureIndex ? as = Rr.textFeatureIndex : Lt.useRuntimeCollisionCircles && (as = Lt.featureIndex), Rr.verticalTextFeatureIndex && (yo = Rr.verticalTextFeatureIndex);
+                const os = Rr.textBox;
                 if (os) {
                   const da = Pi => {
                       let bi = s.as.horizontal;
@@ -23069,7 +23069,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                       return bi
                     },
                     xo = (Pi, bi) => {
-                      if (u.allowVerticalPlacement && Lt.numVerticalGlyphVertices > 0 && Fr.verticalTextBox) {
+                      if (u.allowVerticalPlacement && Lt.numVerticalGlyphVertices > 0 && Rr.verticalTextBox) {
                         for (const ji of u.writingModes)
                           if (ji === s.as.vertical ? (ii = bi(), Ni = ii) : ii = Pi(), ii && ii.placeable) break
                       } else ii = Pi()
@@ -23082,7 +23082,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                       return ri && ri.placeable && (this.markUsedOrientation(u, ji, Lt), this.placedOrientations[Lt.crossTileID] = ji), ri
                     };
                     xo((() => Pi(os, s.as.horizontal)), (() => {
-                      const bi = Fr.verticalTextBox;
+                      const bi = Rr.verticalTextBox;
                       return u.allowVerticalPlacement && Lt.numVerticalGlyphVertices > 0 && bi ? Pi(bi, s.as.vertical) : {
                         box: null,
                         offscreen: null
@@ -23115,9 +23115,9 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                         occluded: !1
                       }), cs
                     };
-                    xo((() => bi(os, Fr.iconBox, s.as.horizontal)), (() => {
-                      const ri = Fr.verticalTextBox;
-                      return u.allowVerticalPlacement && (!ii || !ii.placeable) && Lt.numVerticalGlyphVertices > 0 && ri ? bi(ri, Fr.verticalIconBox, s.as.vertical) : {
+                    xo((() => bi(os, Rr.iconBox, s.as.horizontal)), (() => {
+                      const ri = Rr.verticalTextBox;
+                      return u.allowVerticalPlacement && (!ii || !ii.placeable) && Lt.numVerticalGlyphVertices > 0 && ri ? bi(ri, Rr.verticalIconBox, s.as.vertical) : {
                         box: null,
                         occluded: !0,
                         offscreen: null
@@ -23136,23 +23136,23 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                     Do = p.get("text-padding");
                   Si = this.collisionIndex.placeCollisionCircles(de, da, u.lineVertexArray, u.glyphOffsetArray, xo, S, k, l, Fe, re.predicate, Lt.collisionCircleDiameter, Do, v, ut), Si.circles.length && Si.collisionDetected && !l && s.w("Collisions detected, but collision boxes are not shown"), Jn = ve || Si.circles.length > 0 && !Si.collisionDetected, ei = ei && Si.offscreen
                 }
-                if (Fr.iconFeatureIndex && (ro = Fr.iconFeatureIndex), Fr.iconBox) {
+                if (Rr.iconFeatureIndex && (ro = Rr.iconFeatureIndex), Rr.iconBox) {
                   const da = xo => this.collisionIndex.placeCollisionBox(xo, Ae, L, st, S, Fe, ke, T, re.predicate, ut, xe && Mi ? Mi : void 0, Qt);
-                  Ni && Ni.placeable && Fr.verticalIconBox ? (ha = da(Fr.verticalIconBox), hi = ha.placeable) : (ha = da(Fr.iconBox), hi = ha.placeable), ei = ei && ha.offscreen
+                  Ni && Ni.placeable && Rr.verticalIconBox ? (ha = da(Rr.verticalIconBox), hi = ha.placeable) : (ha = da(Rr.iconBox), hi = ha.placeable), ei = ei && ha.offscreen
                 }
                 const Ds = le || Lt.numHorizontalGlyphVertices === 0 && Lt.numVerticalGlyphVertices === 0,
                   ss = ce || Lt.numIconVertices === 0;
                 Ds || ss ? ss ? Ds || (hi = hi && Jn) : Jn = hi && Jn : hi = Jn = hi && Jn;
                 const va = hi && ha.placeable;
-                if (Jn && ai.placeable && this.collisionIndex.insertCollisionBox(ai.box, de, p.get("text-ignore-placement"), u.bucketInstanceId, Ni && Ni.placeable && yo ? yo : as, re.ID), va && this.collisionIndex.insertCollisionBox(ha.box, Ae, p.get("icon-ignore-placement"), u.bucketInstanceId, ro, re.ID), Si && Jn && this.collisionIndex.insertCollisionCircles(Si.circles, de, p.get("text-ignore-placement"), u.bucketInstanceId, as, re.ID), l && this.storeCollisionData(u.bucketInstanceId, _n, Fr, ai, ha, Si), Lt.crossTileID === 0) throw new Error("symbolInstance.crossTileID can't be 0");
+                if (Jn && ai.placeable && this.collisionIndex.insertCollisionBox(ai.box, de, p.get("text-ignore-placement"), u.bucketInstanceId, Ni && Ni.placeable && yo ? yo : as, re.ID), va && this.collisionIndex.insertCollisionBox(ha.box, Ae, p.get("icon-ignore-placement"), u.bucketInstanceId, ro, re.ID), Si && Jn && this.collisionIndex.insertCollisionCircles(Si.circles, de, p.get("text-ignore-placement"), u.bucketInstanceId, as, re.ID), l && this.storeCollisionData(u.bucketInstanceId, _n, Rr, ai, ha, Si), Lt.crossTileID === 0) throw new Error("symbolInstance.crossTileID can't be 0");
                 if (u.bucketInstanceId === 0) throw new Error("bucket.bucketInstanceId can't be 0");
                 this.placements[Lt.crossTileID] = new vn((Jn || ct) && !(ai != null && ai.occluded), (hi || nt) && !(ha != null && ha.occluded), ei || u.justReloaded), i[Lt.crossTileID] = !0
               };
             if (qe) {
               if (e.symbolInstanceStart !== 0) throw new Error("bucket.bucketInstanceId should be 0");
               const Lt = u.getSortedSymbolIndexes(-this.transform.bearingInRadians);
-              for (let Fr = Lt.length - 1; Fr >= 0; --Fr) {
-                const _n = Lt[Fr];
+              for (let Rr = Lt.length - 1; Rr >= 0; --Rr) {
+                const _n = Lt[Rr];
                 nr(u.symbolInstances.get(_n), u.collisionArrays[_n], _n)
               }
             } else
@@ -23258,8 +23258,8 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                 const ut = ar(Fe.text);
                 le(e.text, Ae, ct ? Jr : ut), le(e.text, _e, nt ? Jr : ut);
                 const Qt = Fe.text.isHidden();
-                [ve.rightJustifiedTextSymbolIndex, ve.centerJustifiedTextSymbolIndex, ve.leftJustifiedTextSymbolIndex].forEach((Fr => {
-                  Fr >= 0 && (e.text.placedSymbolArray.get(Fr).hidden = Qt || ct ? 1 : 0)
+                [ve.rightJustifiedTextSymbolIndex, ve.centerJustifiedTextSymbolIndex, ve.leftJustifiedTextSymbolIndex].forEach((Rr => {
+                  Rr >= 0 && (e.text.placedSymbolArray.get(Rr).hidden = Qt || ct ? 1 : 0)
                 })), ve.verticalPlacedTextSymbolIndex >= 0 && (e.text.placedSymbolArray.get(ve.verticalPlacedTextSymbolIndex).hidden = Qt || nt ? 1 : 0);
                 const nr = this.variableOffsets[ve.crossTileID];
                 nr && this.markUsedJustification(e, nr.anchor, ve, qe);
@@ -23552,7 +23552,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
         }
         var mr = "void main() {fragColor=vec4(1.0);}";
         const wr = {
-          prelude: Rr(`#ifdef GL_ES
+          prelude: Dr(`#ifdef GL_ES
 precision mediump float;
 #else
 #if !defined(lowp)
@@ -23612,23 +23612,23 @@ vec2 coord=(u_terrain_matrix*vec4(pos,0.0,1.0)).xy*u_terrain_dim+1.0;vec2 f=frac
 return 0.0;
 #endif
 }const float PI=3.141592653589793;uniform mat4 u_projection_matrix;`),
-          projectionMercator: Rr("", "float projectLineThickness(float tileY) {return 1.0;}float projectCircleRadius(float tileY) {return 1.0;}vec4 projectTile(vec2 p) {vec4 result=u_projection_matrix*vec4(p,0.0,1.0);return result;}vec4 projectTile(vec2 p,vec2 rawPos) {vec4 result=u_projection_matrix*vec4(p,0.0,1.0);if (rawPos.y <-32767.5 || rawPos.y > 32766.5) {result.z=-10000000.0;}return result;}vec4 projectTileWithElevation(vec2 posInTile,float elevation) {return u_projection_matrix*vec4(posInTile,elevation,1.0);}vec4 projectTileFor3D(vec2 posInTile,float elevation) {return projectTileWithElevation(posInTile,elevation);}"),
-          projectionGlobe: Rr("", `#define GLOBE_RADIUS 6371008.8
+          projectionMercator: Dr("", "float projectLineThickness(float tileY) {return 1.0;}float projectCircleRadius(float tileY) {return 1.0;}vec4 projectTile(vec2 p) {vec4 result=u_projection_matrix*vec4(p,0.0,1.0);return result;}vec4 projectTile(vec2 p,vec2 rawPos) {vec4 result=u_projection_matrix*vec4(p,0.0,1.0);if (rawPos.y <-32767.5 || rawPos.y > 32766.5) {result.z=-10000000.0;}return result;}vec4 projectTileWithElevation(vec2 posInTile,float elevation) {return u_projection_matrix*vec4(posInTile,elevation,1.0);}vec4 projectTileFor3D(vec2 posInTile,float elevation) {return projectTileWithElevation(posInTile,elevation);}"),
+          projectionGlobe: Dr("", `#define GLOBE_RADIUS 6371008.8
 uniform highp vec4 u_projection_tile_mercator_coords;uniform highp vec4 u_projection_clipping_plane;uniform highp float u_projection_transition;uniform mat4 u_projection_fallback_matrix;vec3 globeRotateVector(vec3 vec,vec2 angles) {vec3 axisRight=vec3(vec.z,0.0,-vec.x);vec3 axisUp=cross(axisRight,vec);axisRight=normalize(axisRight);axisUp=normalize(axisUp);vec2 t=tan(angles);return normalize(vec+axisRight*t.x+axisUp*t.y);}mat3 globeGetRotationMatrix(vec3 spherePos) {vec3 axisRight=vec3(spherePos.z,0.0,-spherePos.x);vec3 axisDown=cross(axisRight,spherePos);axisRight=normalize(axisRight);axisDown=normalize(axisDown);return mat3(axisRight,axisDown,spherePos
 );}float circumferenceRatioAtTileY(float tileY) {float mercator_pos_y=u_projection_tile_mercator_coords.y+u_projection_tile_mercator_coords.w*tileY;float spherical_y=2.0*atan(exp(PI-(mercator_pos_y*PI*2.0)))-PI*0.5;return cos(spherical_y);}float projectLineThickness(float tileY) {float thickness=1.0/circumferenceRatioAtTileY(tileY); 
 if (u_projection_transition < 0.999) {return mix(1.0,thickness,u_projection_transition);} else {return thickness;}}vec3 projectToSphere(vec2 translatedPos,vec2 rawPos) {vec2 mercator_pos=u_projection_tile_mercator_coords.xy+u_projection_tile_mercator_coords.zw*translatedPos;vec2 spherical;spherical.x=mercator_pos.x*PI*2.0+PI;spherical.y=2.0*atan(exp(PI-(mercator_pos.y*PI*2.0)))-PI*0.5;float len=cos(spherical.y);vec3 pos=vec3(sin(spherical.x)*len,sin(spherical.y),cos(spherical.x)*len
 );if (rawPos.y <-32767.5) {pos=vec3(0.0,1.0,0.0);}if (rawPos.y > 32766.5) {pos=vec3(0.0,-1.0,0.0);}return pos;}vec3 projectToSphere(vec2 posInTile) {return projectToSphere(posInTile,vec2(0.0,0.0));}float globeComputeClippingZ(vec3 spherePos) {return (1.0-(dot(spherePos,u_projection_clipping_plane.xyz)+u_projection_clipping_plane.w));}vec4 interpolateProjection(vec2 posInTile,vec3 spherePos,float elevation) {vec3 elevatedPos=spherePos*(1.0+elevation/GLOBE_RADIUS);vec4 globePosition=u_projection_matrix*vec4(elevatedPos,1.0);globePosition.z=globeComputeClippingZ(elevatedPos)*globePosition.w;if (u_projection_transition > 0.999) {return globePosition;}vec4 flatPosition=u_projection_fallback_matrix*vec4(posInTile,elevation,1.0);const float z_globeness_threshold=0.2;vec4 result=globePosition;result.z=mix(0.0,globePosition.z,clamp((u_projection_transition-z_globeness_threshold)/(1.0-z_globeness_threshold),0.0,1.0));result.xyw=mix(flatPosition.xyw,globePosition.xyw,u_projection_transition);if ((posInTile.y <-32767.5) || (posInTile.y > 32766.5)) {result=globePosition;const float poles_hidden_anim_percentage=0.02;result.z=mix(globePosition.z,100.0,pow(max((1.0-u_projection_transition)/poles_hidden_anim_percentage,0.0),8.0));}return result;}vec4 interpolateProjectionFor3D(vec2 posInTile,vec3 spherePos,float elevation) {vec3 elevatedPos=spherePos*(1.0+elevation/GLOBE_RADIUS);vec4 globePosition=u_projection_matrix*vec4(elevatedPos,1.0);if (u_projection_transition > 0.999) {return globePosition;}vec4 fallbackPosition=u_projection_fallback_matrix*vec4(posInTile,elevation,1.0);return mix(fallbackPosition,globePosition,u_projection_transition);}vec4 projectTile(vec2 posInTile) {return interpolateProjection(posInTile,projectToSphere(posInTile),0.0);}vec4 projectTile(vec2 posInTile,vec2 rawPos) {return interpolateProjection(posInTile,projectToSphere(posInTile,rawPos),0.0);}vec4 projectTileWithElevation(vec2 posInTile,float elevation) {return interpolateProjection(posInTile,projectToSphere(posInTile),elevation);}vec4 projectTileFor3D(vec2 posInTile,float elevation) {vec3 spherePos=projectToSphere(posInTile,posInTile);return interpolateProjectionFor3D(posInTile,spherePos,elevation);}`),
-          background: Rr(`uniform vec4 u_color;uniform float u_opacity;void main() {fragColor=u_color*u_opacity;
+          background: Dr(`uniform vec4 u_color;uniform float u_opacity;void main() {fragColor=u_color*u_opacity;
 #ifdef OVERDRAW_INSPECTOR
 fragColor=vec4(1.0);
 #endif
 }`, "in vec2 a_pos;void main() {gl_Position=projectTile(a_pos);}"),
-          backgroundPattern: Rr(`uniform vec2 u_pattern_tl_a;uniform vec2 u_pattern_br_a;uniform vec2 u_pattern_tl_b;uniform vec2 u_pattern_br_b;uniform vec2 u_texsize;uniform float u_mix;uniform float u_opacity;uniform sampler2D u_image;in vec2 v_pos_a;in vec2 v_pos_b;void main() {vec2 imagecoord=mod(v_pos_a,1.0);vec2 pos=mix(u_pattern_tl_a/u_texsize,u_pattern_br_a/u_texsize,imagecoord);vec4 color1=texture(u_image,pos);vec2 imagecoord_b=mod(v_pos_b,1.0);vec2 pos2=mix(u_pattern_tl_b/u_texsize,u_pattern_br_b/u_texsize,imagecoord_b);vec4 color2=texture(u_image,pos2);fragColor=mix(color1,color2,u_mix)*u_opacity;
+          backgroundPattern: Dr(`uniform vec2 u_pattern_tl_a;uniform vec2 u_pattern_br_a;uniform vec2 u_pattern_tl_b;uniform vec2 u_pattern_br_b;uniform vec2 u_texsize;uniform float u_mix;uniform float u_opacity;uniform sampler2D u_image;in vec2 v_pos_a;in vec2 v_pos_b;void main() {vec2 imagecoord=mod(v_pos_a,1.0);vec2 pos=mix(u_pattern_tl_a/u_texsize,u_pattern_br_a/u_texsize,imagecoord);vec4 color1=texture(u_image,pos);vec2 imagecoord_b=mod(v_pos_b,1.0);vec2 pos2=mix(u_pattern_tl_b/u_texsize,u_pattern_br_b/u_texsize,imagecoord_b);vec4 color2=texture(u_image,pos2);fragColor=mix(color1,color2,u_mix)*u_opacity;
 #ifdef OVERDRAW_INSPECTOR
 fragColor=vec4(1.0);
 #endif
 }`, "uniform vec2 u_pattern_size_a;uniform vec2 u_pattern_size_b;uniform vec2 u_pixel_coord_upper;uniform vec2 u_pixel_coord_lower;uniform float u_scale_a;uniform float u_scale_b;uniform float u_tile_units_to_pixels;in vec2 a_pos;out vec2 v_pos_a;out vec2 v_pos_b;void main() {gl_Position=projectTile(a_pos);v_pos_a=get_pattern_pos(u_pixel_coord_upper,u_pixel_coord_lower,u_scale_a*u_pattern_size_a,u_tile_units_to_pixels,a_pos);v_pos_b=get_pattern_pos(u_pixel_coord_upper,u_pixel_coord_lower,u_scale_b*u_pattern_size_b,u_tile_units_to_pixels,a_pos);}"),
-          circle: Rr(`in vec3 v_data;in float v_visibility;
+          circle: Dr(`in vec3 v_data;in float v_visibility;
 #pragma mapbox: define highp vec4 color
 #pragma mapbox: define mediump float radius
 #pragma mapbox: define lowp float blur
@@ -23681,8 +23681,8 @@ vec2 angles=extrude*angle_scale;vec3 corner_vector=globeRotateVector(center_vect
 gl_Position=projectTileWithElevation(corner_position,ele);
 #endif
 } else {gl_Position=projectTileWithElevation(circle_center,ele);if (gl_Position.z/gl_Position.w > 1.0) {gl_Position.xy=vec2(10000.0);}if (u_scale_with_map) {gl_Position.xy+=extrude*(radius+stroke_width)*u_extrude_scale*u_camera_to_center_distance;} else {gl_Position.xy+=extrude*(radius+stroke_width)*u_extrude_scale*gl_Position.w;}}float antialiasblur=-max(1.0/u_device_pixel_ratio/(radius+stroke_width),blur);v_data=vec3(extrude.x,extrude.y,antialiasblur);}`),
-          clippingMask: Rr(mr, "in vec2 a_pos;void main() {gl_Position=projectTile(a_pos);}"),
-          heatmap: Rr(`uniform highp float u_intensity;in vec2 v_extrude;
+          clippingMask: Dr(mr, "in vec2 a_pos;void main() {gl_Position=projectTile(a_pos);}"),
+          heatmap: Dr(`uniform highp float u_intensity;in vec2 v_extrude;
 #pragma mapbox: define highp float weight
 #define GAUSS_COEF 0.3989422804014327
 void main() {
@@ -23706,14 +23706,14 @@ vec2 angles=v_extrude*radius*u_globe_extrude_scale;vec3 center_vector=projectToS
 gl_Position=projectTileFor3D(circle_center+extrude,get_elevation(circle_center));
 #endif
 }`),
-          heatmapTexture: Rr(`uniform sampler2D u_image;uniform sampler2D u_color_ramp;uniform float u_opacity;in vec2 v_pos;void main() {float t=texture(u_image,v_pos).r;vec4 color=texture(u_color_ramp,vec2(t,0.5));fragColor=color*u_opacity;
+          heatmapTexture: Dr(`uniform sampler2D u_image;uniform sampler2D u_color_ramp;uniform float u_opacity;in vec2 v_pos;void main() {float t=texture(u_image,v_pos).r;vec4 color=texture(u_color_ramp,vec2(t,0.5));fragColor=color*u_opacity;
 #ifdef OVERDRAW_INSPECTOR
 fragColor=vec4(0.0);
 #endif
 }`, "uniform mat4 u_matrix;uniform vec2 u_world;in vec2 a_pos;out vec2 v_pos;void main() {gl_Position=u_matrix*vec4(a_pos*u_world,0,1);v_pos.x=a_pos.x;v_pos.y=1.0-a_pos.y;}"),
-          collisionBox: Rr("in float v_placed;in float v_notUsed;void main() {float alpha=0.5;fragColor=vec4(1.0,0.0,0.0,1.0)*alpha;if (v_placed > 0.5) {fragColor=vec4(0.0,0.0,1.0,0.5)*alpha;}if (v_notUsed > 0.5) {fragColor*=.1;}}", "in vec2 a_anchor_pos;in vec2 a_placed;in vec2 a_box_real;uniform vec2 u_pixel_extrude_scale;out float v_placed;out float v_notUsed;void main() {gl_Position=projectTileWithElevation(a_anchor_pos,get_elevation(a_anchor_pos));gl_Position.xy=((a_box_real+0.5)*u_pixel_extrude_scale*2.0-1.0)*vec2(1.0,-1.0)*gl_Position.w;if (gl_Position.z/gl_Position.w < 1.1) {gl_Position.z=0.5;}v_placed=a_placed.x;v_notUsed=a_placed.y;}"),
-          collisionCircle: Rr("in float v_radius;in vec2 v_extrude;in float v_collision;void main() {float alpha=0.5;float stroke_radius=0.9;float distance_to_center=length(v_extrude);float distance_to_edge=abs(distance_to_center-v_radius);float opacity_t=smoothstep(-stroke_radius,0.0,-distance_to_edge);vec4 color=mix(vec4(0.0,0.0,1.0,0.5),vec4(1.0,0.0,0.0,1.0),v_collision);fragColor=color*alpha*opacity_t;}", "in vec2 a_pos;in float a_radius;in vec2 a_flags;uniform vec2 u_viewport_size;out float v_radius;out vec2 v_extrude;out float v_collision;void main() {float radius=a_radius;float collision=a_flags.x;float vertexIdx=a_flags.y;vec2 quadVertexOffset=vec2(mix(-1.0,1.0,float(vertexIdx >=2.0)),mix(-1.0,1.0,float(vertexIdx >=1.0 && vertexIdx <=2.0)));vec2 quadVertexExtent=quadVertexOffset*radius;float padding_factor=1.2;v_radius=radius;v_extrude=quadVertexExtent*padding_factor;v_collision=collision;gl_Position=vec4((a_pos/u_viewport_size*2.0-1.0)*vec2(1.0,-1.0),0.0,1.0)+vec4(quadVertexExtent*padding_factor/u_viewport_size*2.0,0.0,0.0);}"),
-          colorRelief: Rr(`#ifdef GL_ES
+          collisionBox: Dr("in float v_placed;in float v_notUsed;void main() {float alpha=0.5;fragColor=vec4(1.0,0.0,0.0,1.0)*alpha;if (v_placed > 0.5) {fragColor=vec4(0.0,0.0,1.0,0.5)*alpha;}if (v_notUsed > 0.5) {fragColor*=.1;}}", "in vec2 a_anchor_pos;in vec2 a_placed;in vec2 a_box_real;uniform vec2 u_pixel_extrude_scale;out float v_placed;out float v_notUsed;void main() {gl_Position=projectTileWithElevation(a_anchor_pos,get_elevation(a_anchor_pos));gl_Position.xy=((a_box_real+0.5)*u_pixel_extrude_scale*2.0-1.0)*vec2(1.0,-1.0)*gl_Position.w;if (gl_Position.z/gl_Position.w < 1.1) {gl_Position.z=0.5;}v_placed=a_placed.x;v_notUsed=a_placed.y;}"),
+          collisionCircle: Dr("in float v_radius;in vec2 v_extrude;in float v_collision;void main() {float alpha=0.5;float stroke_radius=0.9;float distance_to_center=length(v_extrude);float distance_to_edge=abs(distance_to_center-v_radius);float opacity_t=smoothstep(-stroke_radius,0.0,-distance_to_edge);vec4 color=mix(vec4(0.0,0.0,1.0,0.5),vec4(1.0,0.0,0.0,1.0),v_collision);fragColor=color*alpha*opacity_t;}", "in vec2 a_pos;in float a_radius;in vec2 a_flags;uniform vec2 u_viewport_size;out float v_radius;out vec2 v_extrude;out float v_collision;void main() {float radius=a_radius;float collision=a_flags.x;float vertexIdx=a_flags.y;vec2 quadVertexOffset=vec2(mix(-1.0,1.0,float(vertexIdx >=2.0)),mix(-1.0,1.0,float(vertexIdx >=1.0 && vertexIdx <=2.0)));vec2 quadVertexExtent=quadVertexOffset*radius;float padding_factor=1.2;v_radius=radius;v_extrude=quadVertexExtent*padding_factor;v_collision=collision;gl_Position=vec4((a_pos/u_viewport_size*2.0-1.0)*vec2(1.0,-1.0),0.0,1.0)+vec4(quadVertexExtent*padding_factor/u_viewport_size*2.0,0.0,0.0);}"),
+          colorRelief: Dr(`#ifdef GL_ES
 precision highp float;
 #endif
 uniform sampler2D u_image;uniform vec4 u_unpack;uniform sampler2D u_elevation_stops;uniform sampler2D u_color_stops;uniform int u_color_ramp_size;uniform float u_opacity;in vec2 v_pos;float getElevation(vec2 coord) {vec4 data=texture(u_image,coord)*255.0;data.a=-1.0;return dot(data,u_unpack);}float getElevationStop(int stop) {float x=(float(stop)+0.5)/float(u_color_ramp_size);vec4 data=texture(u_elevation_stops,vec2(x,0))*255.0;data.a=-1.0;return dot(data,u_unpack);}void main() {float el=getElevation(v_pos);int r=(u_color_ramp_size-1);int l=0;float el_l=getElevationStop(l);float el_r=getElevationStop(r);while(r-l > 1){int m=(r+l)/2;float el_m=getElevationStop(m);if(el < el_m){r=m;el_r=el_m;}else
@@ -23722,15 +23722,15 @@ uniform sampler2D u_image;uniform vec4 u_unpack;uniform sampler2D u_elevation_st
 fragColor=vec4(1.0);
 #endif
 }`, "uniform vec2 u_dimension;in vec2 a_pos;out vec2 v_pos;void main() {gl_Position=projectTile(a_pos,a_pos);highp vec2 epsilon=1.0/u_dimension;float scale=(u_dimension.x-2.0)/u_dimension.x;v_pos=(a_pos/8192.0)*scale+epsilon;if (a_pos.y <-32767.5) {v_pos.y=0.0;}if (a_pos.y > 32766.5) {v_pos.y=1.0;}}"),
-          debug: Rr("uniform highp vec4 u_color;uniform sampler2D u_overlay;in vec2 v_uv;void main() {vec4 overlay_color=texture(u_overlay,v_uv);fragColor=mix(u_color,overlay_color,overlay_color.a);}", "in vec2 a_pos;out vec2 v_uv;uniform float u_overlay_scale;void main() {v_uv=a_pos/8192.0;gl_Position=projectTileWithElevation(a_pos*u_overlay_scale,get_elevation(a_pos));}"),
-          depth: Rr(mr, `in vec2 a_pos;void main() {
+          debug: Dr("uniform highp vec4 u_color;uniform sampler2D u_overlay;in vec2 v_uv;void main() {vec4 overlay_color=texture(u_overlay,v_uv);fragColor=mix(u_color,overlay_color,overlay_color.a);}", "in vec2 a_pos;out vec2 v_uv;uniform float u_overlay_scale;void main() {v_uv=a_pos/8192.0;gl_Position=projectTileWithElevation(a_pos*u_overlay_scale,get_elevation(a_pos));}"),
+          depth: Dr(mr, `in vec2 a_pos;void main() {
 #ifdef GLOBE
 gl_Position=projectTileFor3D(a_pos,0.0);
 #else
 gl_Position=u_projection_matrix*vec4(a_pos,0.0,1.0);
 #endif
 }`),
-          fill: Rr(`#pragma mapbox: define highp vec4 color
+          fill: Dr(`#pragma mapbox: define highp vec4 color
 #pragma mapbox: define lowp float opacity
 void main() {
 #pragma mapbox: initialize highp vec4 color
@@ -23746,7 +23746,7 @@ void main() {
 #pragma mapbox: initialize highp vec4 color
 #pragma mapbox: initialize lowp float opacity
 gl_Position=projectTile(a_pos+u_fill_translate,a_pos);}`),
-          fillOutline: Rr(`in vec2 v_pos;
+          fillOutline: Dr(`in vec2 v_pos;
 #ifdef GLOBE
 in float v_depth;
 #endif
@@ -23776,7 +23776,7 @@ gl_Position=projectTile(a_pos+u_fill_translate,a_pos);v_pos=(gl_Position.xy/gl_P
 v_depth=gl_Position.z/gl_Position.w;
 #endif
 }`),
-          fillOutlinePattern: Rr(`uniform vec2 u_texsize;uniform sampler2D u_image;uniform float u_fade;in vec2 v_pos_a;in vec2 v_pos_b;in vec2 v_pos;
+          fillOutlinePattern: Dr(`uniform vec2 u_texsize;uniform sampler2D u_image;uniform float u_fade;in vec2 v_pos_a;in vec2 v_pos_b;in vec2 v_pos;
 #ifdef GLOBE
 in float v_depth;
 #endif
@@ -23814,7 +23814,7 @@ vec2 pattern_tl_a=pattern_from.xy;vec2 pattern_br_a=pattern_from.zw;vec2 pattern
 v_depth=gl_Position.z/gl_Position.w;
 #endif
 }`),
-          fillPattern: Rr(`#ifdef GL_ES
+          fillPattern: Dr(`#ifdef GL_ES
 precision highp float;
 #endif
 uniform vec2 u_texsize;uniform float u_fade;uniform sampler2D u_image;in vec2 v_pos_a;in vec2 v_pos_b;
@@ -23842,7 +23842,7 @@ void main() {
 #pragma mapbox: initialize lowp float pixel_ratio_from
 #pragma mapbox: initialize lowp float pixel_ratio_to
 vec2 pattern_tl_a=pattern_from.xy;vec2 pattern_br_a=pattern_from.zw;vec2 pattern_tl_b=pattern_to.xy;vec2 pattern_br_b=pattern_to.zw;float tileZoomRatio=u_scale.x;float fromScale=u_scale.y;float toScale=u_scale.z;vec2 display_size_a=(pattern_br_a-pattern_tl_a)/pixel_ratio_from;vec2 display_size_b=(pattern_br_b-pattern_tl_b)/pixel_ratio_to;gl_Position=projectTile(a_pos+u_fill_translate,a_pos);v_pos_a=get_pattern_pos(u_pixel_coord_upper,u_pixel_coord_lower,fromScale*display_size_a,tileZoomRatio,a_pos);v_pos_b=get_pattern_pos(u_pixel_coord_upper,u_pixel_coord_lower,toScale*display_size_b,tileZoomRatio,a_pos);}`),
-          fillExtrusion: Rr(`in vec4 v_color;void main() {fragColor=v_color;
+          fillExtrusion: Dr(`in vec4 v_color;void main() {fragColor=v_color;
 #ifdef OVERDRAW_INSPECTOR
 fragColor=vec4(1.0);
 #endif
@@ -23875,7 +23875,7 @@ float colorvalue=color.r*0.2126+color.g*0.7152+color.b*0.0722;v_color=vec4(0.0,0
 mat3 rotMatrix=globeGetRotationMatrix(spherePos);normalForLighting=rotMatrix*normalForLighting;directional=mix(directional,clamp(dot(normalForLighting,u_lightpos_globe),0.0,1.0),u_projection_transition);
 #endif
 directional=mix((1.0-u_lightintensity),max((1.0-colorvalue+u_lightintensity),1.0),directional);if (normal.y !=0.0) {directional*=((1.0-u_vertical_gradient)+(u_vertical_gradient*clamp((t+base)*pow(height/150.0,0.5),mix(0.7,0.98,1.0-u_lightintensity),1.0)));}v_color.r+=clamp(color.r*directional*u_lightcolor.r,mix(0.0,0.3,1.0-u_lightcolor.r),1.0);v_color.g+=clamp(color.g*directional*u_lightcolor.g,mix(0.0,0.3,1.0-u_lightcolor.g),1.0);v_color.b+=clamp(color.b*directional*u_lightcolor.b,mix(0.0,0.3,1.0-u_lightcolor.b),1.0);v_color*=u_opacity;}`),
-          fillExtrusionPattern: Rr(`uniform vec2 u_texsize;uniform float u_fade;uniform sampler2D u_image;in vec2 v_pos_a;in vec2 v_pos_b;in vec4 v_lighting;
+          fillExtrusionPattern: Dr(`uniform vec2 u_texsize;uniform float u_fade;uniform sampler2D u_image;in vec2 v_pos_a;in vec2 v_pos_b;in vec4 v_lighting;
 #pragma mapbox: define lowp float base
 #pragma mapbox: define lowp float height
 #pragma mapbox: define lowp vec4 pattern_from
@@ -23929,7 +23929,7 @@ gl_Position=u_projection_matrix*vec4(posInTile,elevation,1.0);
 vec2 pos=normal.x==1.0 && normal.y==0.0 && normal.z==16384.0
 ? a_pos
 : vec2(edgedistance,elevation*u_height_factor);v_pos_a=get_pattern_pos(u_pixel_coord_upper,u_pixel_coord_lower,fromScale*display_size_a,tileRatio,pos);v_pos_b=get_pattern_pos(u_pixel_coord_upper,u_pixel_coord_lower,toScale*display_size_b,tileRatio,pos);v_lighting=vec4(0.0,0.0,0.0,1.0);float directional=clamp(dot(normal/16383.0,u_lightpos),0.0,1.0);directional=mix((1.0-u_lightintensity),max((0.5+u_lightintensity),1.0),directional);if (normal.y !=0.0) {directional*=((1.0-u_vertical_gradient)+(u_vertical_gradient*clamp((t+base)*pow(height/150.0,0.5),mix(0.7,0.98,1.0-u_lightintensity),1.0)));}v_lighting.rgb+=clamp(directional*u_lightcolor,mix(vec3(0.0),vec3(0.3),1.0-u_lightcolor),vec3(1.0));v_lighting*=u_opacity;}`),
-          hillshadePrepare: Rr(`#ifdef GL_ES
+          hillshadePrepare: Dr(`#ifdef GL_ES
 precision highp float;
 #endif
 uniform sampler2D u_image;in vec2 v_pos;uniform vec2 u_dimension;uniform float u_zoom;uniform vec4 u_unpack;float getElevation(vec2 coord,float bias) {vec4 data=texture(u_image,coord)*255.0;data.a=-1.0;return dot(data,u_unpack);}void main() {vec2 epsilon=1.0/u_dimension;float tileSize=u_dimension.x-2.0;float a=getElevation(v_pos+vec2(-epsilon.x,-epsilon.y),0.0);float b=getElevation(v_pos+vec2(0,-epsilon.y),0.0);float c=getElevation(v_pos+vec2(epsilon.x,-epsilon.y),0.0);float d=getElevation(v_pos+vec2(-epsilon.x,0),0.0);float e=getElevation(v_pos,0.0);float f=getElevation(v_pos+vec2(epsilon.x,0),0.0);float g=getElevation(v_pos+vec2(-epsilon.x,epsilon.y),0.0);float h=getElevation(v_pos+vec2(0,epsilon.y),0.0);float i=getElevation(v_pos+vec2(epsilon.x,epsilon.y),0.0);float exaggerationFactor=u_zoom < 2.0 ? 0.4 : u_zoom < 4.5 ? 0.35 : 0.3;float exaggeration=u_zoom < 15.0 ? (u_zoom-15.0)*exaggerationFactor : 0.0;vec2 deriv=vec2((c+f+f+i)-(a+d+d+g),(g+h+h+i)-(a+b+b+c))*tileSize/pow(2.0,exaggeration+(28.2562-u_zoom));fragColor=clamp(vec4(deriv.x/8.0+0.5,deriv.y/8.0+0.5,1.0,1.0),0.0,1.0);
@@ -23937,7 +23937,7 @@ uniform sampler2D u_image;in vec2 v_pos;uniform vec2 u_dimension;uniform float u
 fragColor=vec4(1.0);
 #endif
 }`, "uniform mat4 u_matrix;uniform vec2 u_dimension;in vec2 a_pos;in vec2 a_texture_pos;out vec2 v_pos;void main() {gl_Position=u_matrix*vec4(a_pos,0,1);highp vec2 epsilon=1.0/u_dimension;float scale=(u_dimension.x-2.0)/u_dimension.x;v_pos=(a_texture_pos/8192.0)*scale+epsilon;}"),
-          hillshade: Rr(`uniform sampler2D u_image;in vec2 v_pos;uniform vec2 u_latrange;uniform float u_exaggeration;uniform vec4 u_accent;uniform int u_method;uniform float u_altitudes[NUM_ILLUMINATION_SOURCES];uniform float u_azimuths[NUM_ILLUMINATION_SOURCES];uniform vec4 u_shadows[NUM_ILLUMINATION_SOURCES];uniform vec4 u_highlights[NUM_ILLUMINATION_SOURCES];
+          hillshade: Dr(`uniform sampler2D u_image;in vec2 v_pos;uniform vec2 u_latrange;uniform float u_exaggeration;uniform vec4 u_accent;uniform int u_method;uniform float u_altitudes[NUM_ILLUMINATION_SOURCES];uniform float u_azimuths[NUM_ILLUMINATION_SOURCES];uniform vec4 u_shadows[NUM_ILLUMINATION_SOURCES];uniform vec4 u_highlights[NUM_ILLUMINATION_SOURCES];
 #define PI 3.141592653589793
 #define STANDARD 0
 #define COMBINED 1
@@ -23951,7 +23951,7 @@ float get_aspect(vec2 deriv){return deriv.x !=0.0 ? atan(deriv.y,-deriv.x) : PI/
 fragColor=vec4(1.0);
 #endif
 }`, "uniform mat4 u_matrix;in vec2 a_pos;out vec2 v_pos;void main() {gl_Position=projectTile(a_pos,a_pos);v_pos=a_pos/8192.0;if (a_pos.y <-32767.5) {v_pos.y=0.0;}if (a_pos.y > 32766.5) {v_pos.y=1.0;}}"),
-          line: Rr(`uniform lowp float u_device_pixel_ratio;in vec2 v_width2;in vec2 v_normal;in float v_gamma_scale;
+          line: Dr(`uniform lowp float u_device_pixel_ratio;in vec2 v_width2;in vec2 v_normal;in float v_gamma_scale;
 #ifdef GLOBE
 in float v_depth;
 #endif
@@ -23998,7 +23998,7 @@ v_gamma_scale=1.0;
 float extrude_length_without_perspective=length(dist);float extrude_length_with_perspective=length((projected_with_extrude.xy-projected_no_extrude.xy)/projected_with_extrude.w*u_units_to_pixels);v_gamma_scale=extrude_length_without_perspective/extrude_length_with_perspective;
 #endif
 v_width2=vec2(outset,inset);}`),
-          lineGradient: Rr(`uniform lowp float u_device_pixel_ratio;uniform sampler2D u_image;in vec2 v_width2;in vec2 v_normal;in float v_gamma_scale;in highp vec2 v_uv;
+          lineGradient: Dr(`uniform lowp float u_device_pixel_ratio;uniform sampler2D u_image;in vec2 v_width2;in vec2 v_normal;in float v_gamma_scale;in highp vec2 v_uv;
 #ifdef GLOBE
 in float v_depth;
 #endif
@@ -24041,7 +24041,7 @@ v_gamma_scale=1.0;
 float extrude_length_without_perspective=length(dist);float extrude_length_with_perspective=length((projected_with_extrude.xy-projected_no_extrude.xy)/projected_with_extrude.w*u_units_to_pixels);v_gamma_scale=extrude_length_without_perspective/extrude_length_with_perspective;
 #endif
 v_width2=vec2(outset,inset);}`),
-          linePattern: Rr(`#ifdef GL_ES
+          linePattern: Dr(`#ifdef GL_ES
 precision highp float;
 #endif
 uniform lowp float u_device_pixel_ratio;uniform vec2 u_texsize;uniform float u_fade;uniform mediump vec3 u_scale;uniform sampler2D u_image;in vec2 v_normal;in vec2 v_width2;in float v_linesofar;in float v_gamma_scale;in float v_width;
@@ -24106,7 +24106,7 @@ v_gamma_scale=1.0;
 float extrude_length_without_perspective=length(dist);float extrude_length_with_perspective=length((projected_with_extrude.xy-projected_no_extrude.xy)/projected_with_extrude.w*u_units_to_pixels);v_gamma_scale=extrude_length_without_perspective/extrude_length_with_perspective;
 #endif
 v_linesofar=a_linesofar;v_width2=vec2(outset,inset);v_width=floorwidth;}`),
-          lineSDF: Rr(`uniform lowp float u_device_pixel_ratio;uniform lowp float u_lineatlas_width;uniform sampler2D u_image;uniform float u_mix;in vec2 v_normal;in vec2 v_width2;in vec2 v_tex_a;in vec2 v_tex_b;in float v_gamma_scale;
+          lineSDF: Dr(`uniform lowp float u_device_pixel_ratio;uniform lowp float u_lineatlas_width;uniform sampler2D u_image;uniform float u_mix;in vec2 v_normal;in vec2 v_width2;in vec2 v_tex_a;in vec2 v_tex_b;in float v_gamma_scale;
 #ifdef GLOBE
 in float v_depth;
 #endif
@@ -24168,7 +24168,7 @@ v_gamma_scale=1.0;
 float extrude_length_without_perspective=length(dist);float extrude_length_with_perspective=length((projected_with_extrude.xy-projected_no_extrude.xy)/projected_with_extrude.w*u_units_to_pixels);v_gamma_scale=extrude_length_without_perspective/extrude_length_with_perspective;
 #endif
 float u_patternscale_a_x=u_tileratio/dasharray_from.w/u_crossfade_from;float u_patternscale_a_y=-dasharray_from.z/2.0/u_lineatlas_height;float u_patternscale_b_x=u_tileratio/dasharray_to.w/u_crossfade_to;float u_patternscale_b_y=-dasharray_to.z/2.0/u_lineatlas_height;v_tex_a=vec2(a_linesofar*u_patternscale_a_x/floorwidth,normal.y*u_patternscale_a_y+(float(dasharray_from.y)+0.5)/u_lineatlas_height);v_tex_b=vec2(a_linesofar*u_patternscale_b_x/floorwidth,normal.y*u_patternscale_b_y+(float(dasharray_to.y)+0.5)/u_lineatlas_height);v_width2=vec2(outset,inset);}`),
-          lineGradientSDF: Rr(`uniform lowp float u_device_pixel_ratio;uniform sampler2D u_image;uniform sampler2D u_image_dash;uniform float u_mix;uniform lowp float u_lineatlas_width;in vec2 v_normal;in vec2 v_width2;in vec2 v_tex_a;in vec2 v_tex_b;in float v_gamma_scale;in highp vec2 v_uv;
+          lineGradientSDF: Dr(`uniform lowp float u_device_pixel_ratio;uniform sampler2D u_image;uniform sampler2D u_image_dash;uniform float u_mix;uniform lowp float u_lineatlas_width;in vec2 v_normal;in vec2 v_width2;in vec2 v_tex_a;in vec2 v_tex_b;in float v_gamma_scale;in highp vec2 v_uv;
 #ifdef GLOBE
 in float v_depth;
 #endif
@@ -24226,7 +24226,7 @@ v_gamma_scale=1.0;
 float extrude_length_without_perspective=length(dist);float extrude_length_with_perspective=length((projected_with_extrude.xy-projected_no_extrude.xy)/projected_with_extrude.w*u_units_to_pixels);v_gamma_scale=extrude_length_without_perspective/extrude_length_with_perspective;
 #endif
 float u_patternscale_a_x=u_tileratio/dasharray_from.w/u_crossfade_from;float u_patternscale_a_y=-dasharray_from.z/2.0/u_lineatlas_height;float u_patternscale_b_x=u_tileratio/dasharray_to.w/u_crossfade_to;float u_patternscale_b_y=-dasharray_to.z/2.0/u_lineatlas_height;v_tex_a=vec2(a_linesofar*u_patternscale_a_x/floorwidth,normal.y*u_patternscale_a_y+(float(dasharray_from.y)+0.5)/u_lineatlas_height);v_tex_b=vec2(a_linesofar*u_patternscale_b_x/floorwidth,normal.y*u_patternscale_b_y+(float(dasharray_to.y)+0.5)/u_lineatlas_height);v_width2=vec2(outset,inset);}`),
-          raster: Rr(`uniform float u_fade_t;uniform float u_opacity;uniform sampler2D u_image0;uniform sampler2D u_image1;in vec2 v_pos0;in vec2 v_pos1;uniform float u_brightness_low;uniform float u_brightness_high;uniform float u_saturation_factor;uniform float u_contrast_factor;uniform vec3 u_spin_weights;void main() {vec4 color0=texture(u_image0,v_pos0);vec4 color1=texture(u_image1,v_pos1);if (color0.a > 0.0) {color0.rgb=color0.rgb/color0.a;}if (color1.a > 0.0) {color1.rgb=color1.rgb/color1.a;}vec4 color=mix(color0,color1,u_fade_t);color.a*=u_opacity;vec3 rgb=color.rgb;rgb=vec3(dot(rgb,u_spin_weights.xyz),dot(rgb,u_spin_weights.zxy),dot(rgb,u_spin_weights.yzx));float average=(color.r+color.g+color.b)/3.0;rgb+=(average-rgb)*u_saturation_factor;rgb=(rgb-0.5)*u_contrast_factor+0.5;vec3 u_high_vec=vec3(u_brightness_low,u_brightness_low,u_brightness_low);vec3 u_low_vec=vec3(u_brightness_high,u_brightness_high,u_brightness_high);fragColor=vec4(mix(u_high_vec,u_low_vec,rgb)*color.a,color.a);
+          raster: Dr(`uniform float u_fade_t;uniform float u_opacity;uniform sampler2D u_image0;uniform sampler2D u_image1;in vec2 v_pos0;in vec2 v_pos1;uniform float u_brightness_low;uniform float u_brightness_high;uniform float u_saturation_factor;uniform float u_contrast_factor;uniform vec3 u_spin_weights;void main() {vec4 color0=texture(u_image0,v_pos0);vec4 color1=texture(u_image1,v_pos1);if (color0.a > 0.0) {color0.rgb=color0.rgb/color0.a;}if (color1.a > 0.0) {color1.rgb=color1.rgb/color1.a;}vec4 color=mix(color0,color1,u_fade_t);color.a*=u_opacity;vec3 rgb=color.rgb;rgb=vec3(dot(rgb,u_spin_weights.xyz),dot(rgb,u_spin_weights.zxy),dot(rgb,u_spin_weights.yzx));float average=(color.r+color.g+color.b)/3.0;rgb+=(average-rgb)*u_saturation_factor;rgb=(rgb-0.5)*u_contrast_factor+0.5;vec3 u_high_vec=vec3(u_brightness_low,u_brightness_low,u_brightness_low);vec3 u_low_vec=vec3(u_brightness_high,u_brightness_high,u_brightness_high);fragColor=vec4(mix(u_high_vec,u_low_vec,rgb)*color.a,color.a);
 #ifdef OVERDRAW_INSPECTOR
 fragColor=vec4(1.0);
 #endif
@@ -24235,7 +24235,7 @@ fragColor=vec4(1.0);
 if (a_pos.y <-32767.5) {v_pos0.y=0.0;}if (a_pos.y > 32766.5) {v_pos0.y=1.0;}
 #endif
 v_pos1=(v_pos0*u_scale_parent)+u_tl_parent;}`),
-          symbolIcon: Rr(`uniform sampler2D u_texture;in vec2 v_tex;in float v_fade_opacity;
+          symbolIcon: Dr(`uniform sampler2D u_texture;in vec2 v_tex;in float v_fade_opacity;
 #pragma mapbox: define lowp float opacity
 void main() {
 #pragma mapbox: initialize lowp float opacity
@@ -24254,7 +24254,7 @@ u_camera_to_center_distance/camera_to_anchor_distance;highp float perspective_ra
 if(u_pitch_with_map) {float anchor_pos_tile_y=(u_coord_matrix*vec4(projected_pos.xy/projected_pos.w,z,1.0)).y;projectionScaling=mix(projectionScaling,1.0/circumferenceRatioAtTileY(anchor_pos_tile_y)*u_pitched_scale,u_projection_transition);}
 #endif
 vec4 finalPos=u_coord_matrix*vec4(projected_pos.xy/projected_pos.w+rotation_matrix*(a_offset/32.0*max(a_minFontScale,fontScale)+a_pxoffset/16.0)*projectionScaling,z,1.0);if(u_pitch_with_map) {finalPos=projectTileWithElevation(finalPos.xy,finalPos.z);}gl_Position=finalPos;v_tex=a_tex/u_texsize;vec2 fade_opacity=unpack_opacity(a_fade_opacity);float fade_change=fade_opacity[1] > 0.5 ? u_fade_change :-u_fade_change;float visibility=calculate_visibility(projectedPoint);v_fade_opacity=max(0.0,min(visibility,fade_opacity[0]+fade_change));}`),
-          symbolSDF: Rr(`#define SDF_PX 8.0
+          symbolSDF: Dr(`#define SDF_PX 8.0
 uniform bool u_is_halo;uniform sampler2D u_texture;uniform highp float u_gamma_scale;uniform lowp float u_device_pixel_ratio;uniform bool u_is_text;in vec2 v_data0;in vec3 v_data1;
 #pragma mapbox: define highp vec4 fill_color
 #pragma mapbox: define highp vec4 halo_color
@@ -24290,7 +24290,7 @@ u_camera_to_center_distance/camera_to_anchor_distance;highp float perspective_ra
 if(u_pitch_with_map) {float anchor_pos_tile_y=(u_coord_matrix*vec4(projected_pos.xy/projected_pos.w,z,1.0)).y;projectionScaling=mix(projectionScaling,1.0/circumferenceRatioAtTileY(anchor_pos_tile_y)*u_pitched_scale,u_projection_transition);}
 #endif
 vec4 finalPos=u_coord_matrix*vec4(projected_pos.xy/projected_pos.w+rotation_matrix*(a_offset/32.0*fontScale+a_pxoffset)*projectionScaling,z,1.0);if(u_pitch_with_map) {finalPos=projectTileWithElevation(finalPos.xy,finalPos.z);}float gamma_scale=finalPos.w;gl_Position=finalPos;vec2 fade_opacity=unpack_opacity(a_fade_opacity);float visibility=calculate_visibility(projectedPoint);float fade_change=fade_opacity[1] > 0.5 ? u_fade_change :-u_fade_change;float interpolated_fade_opacity=max(0.0,min(visibility,fade_opacity[0]+fade_change));v_data0=a_tex/u_texsize;v_data1=vec3(gamma_scale,size,interpolated_fade_opacity);}`),
-          symbolTextAndIcon: Rr(`#define SDF_PX 8.0
+          symbolTextAndIcon: Dr(`#define SDF_PX 8.0
 #define SDF 1.0
 #define ICON 0.0
 uniform bool u_is_halo;uniform sampler2D u_texture;uniform sampler2D u_texture_icon;uniform highp float u_gamma_scale;uniform lowp float u_device_pixel_ratio;in vec4 v_data0;in vec4 v_data1;
@@ -24332,16 +24332,16 @@ u_camera_to_center_distance/camera_to_anchor_distance;highp float perspective_ra
 if(u_pitch_with_map && !u_is_along_line) {float anchor_pos_tile_y=(u_coord_matrix*vec4(projected_pos.xy/projected_pos.w,z,1.0)).y;projectionScaling=mix(projectionScaling,1.0/circumferenceRatioAtTileY(anchor_pos_tile_y)*u_pitched_scale,u_projection_transition);}
 #endif
 vec4 finalPos=u_coord_matrix*vec4(projected_pos.xy/projected_pos.w+rotation_matrix*(a_offset/32.0*fontScale)*projectionScaling,z,1.0);if(u_pitch_with_map) {finalPos=projectTileWithElevation(finalPos.xy,finalPos.z);}float gamma_scale=finalPos.w;gl_Position=finalPos;vec2 fade_opacity=unpack_opacity(a_fade_opacity);float visibility=calculate_visibility(projectedPoint);float fade_change=fade_opacity[1] > 0.5 ? u_fade_change :-u_fade_change;float interpolated_fade_opacity=max(0.0,min(visibility,fade_opacity[0]+fade_change));v_data0.xy=a_tex/u_texsize;v_data0.zw=a_tex/u_texsize_icon;v_data1=vec4(gamma_scale,size,interpolated_fade_opacity,is_sdf);}`),
-          terrain: Rr("uniform sampler2D u_texture;uniform vec4 u_fog_color;uniform vec4 u_horizon_color;uniform float u_fog_ground_blend;uniform float u_fog_ground_blend_opacity;uniform float u_horizon_fog_blend;uniform bool u_is_globe_mode;in vec2 v_texture_pos;in float v_fog_depth;const float gamma=2.2;vec4 gammaToLinear(vec4 color) {return pow(color,vec4(gamma));}vec4 linearToGamma(vec4 color) {return pow(color,vec4(1.0/gamma));}void main() {vec4 surface_color=texture(u_texture,vec2(v_texture_pos.x,1.0-v_texture_pos.y));if (!u_is_globe_mode && v_fog_depth > u_fog_ground_blend) {vec4 surface_color_linear=gammaToLinear(surface_color);float blend_color=smoothstep(0.0,1.0,max((v_fog_depth-u_horizon_fog_blend)/(1.0-u_horizon_fog_blend),0.0));vec4 fog_horizon_color_linear=mix(gammaToLinear(u_fog_color),gammaToLinear(u_horizon_color),blend_color);float factor_fog=max(v_fog_depth-u_fog_ground_blend,0.0)/(1.0-u_fog_ground_blend);fragColor=linearToGamma(mix(surface_color_linear,fog_horizon_color_linear,pow(factor_fog,2.0)*u_fog_ground_blend_opacity));} else {fragColor=surface_color;}}", "in vec3 a_pos3d;uniform mat4 u_fog_matrix;uniform float u_ele_delta;out vec2 v_texture_pos;out float v_fog_depth;void main() {float ele=get_elevation(a_pos3d.xy);float ele_delta=a_pos3d.z==1.0 ? u_ele_delta : 0.0;v_texture_pos=a_pos3d.xy/8192.0;gl_Position=projectTileFor3D(a_pos3d.xy,get_elevation(a_pos3d.xy)-ele_delta);vec4 pos=u_fog_matrix*vec4(a_pos3d.xy,ele,1.0);v_fog_depth=pos.z/pos.w*0.5+0.5;}"),
-          terrainDepth: Rr("in float v_depth;const highp vec4 bitSh=vec4(256.*256.*256.,256.*256.,256.,1.);const highp vec4 bitMsk=vec4(0.,vec3(1./256.0));highp vec4 pack(highp float value) {highp vec4 comp=fract(value*bitSh);comp-=comp.xxyz*bitMsk;return comp;}void main() {fragColor=pack(v_depth);}", "in vec3 a_pos3d;uniform float u_ele_delta;out float v_depth;void main() {float ele=get_elevation(a_pos3d.xy);float ele_delta=a_pos3d.z==1.0 ? u_ele_delta : 0.0;gl_Position=projectTileFor3D(a_pos3d.xy,ele-ele_delta);v_depth=gl_Position.z/gl_Position.w;}"),
-          terrainCoords: Rr("precision mediump float;uniform sampler2D u_texture;uniform float u_terrain_coords_id;in vec2 v_texture_pos;void main() {vec4 rgba=texture(u_texture,v_texture_pos);fragColor=vec4(rgba.r,rgba.g,rgba.b,u_terrain_coords_id);}", "in vec3 a_pos3d;uniform float u_ele_delta;out vec2 v_texture_pos;void main() {float ele=get_elevation(a_pos3d.xy);float ele_delta=a_pos3d.z==1.0 ? u_ele_delta : 0.0;v_texture_pos=a_pos3d.xy/8192.0;gl_Position=projectTileFor3D(a_pos3d.xy,ele-ele_delta);}"),
-          projectionErrorMeasurement: Rr("in vec4 v_output_error_encoded;void main() {fragColor=v_output_error_encoded;}", "in vec2 a_pos;uniform highp float u_input;uniform highp float u_output_expected;out vec4 v_output_error_encoded;void main() {float real_output=2.0*atan(exp(PI-(u_input*PI*2.0)))-PI*0.5;float error=real_output-u_output_expected;float abs_error=abs(error)*128.0;v_output_error_encoded.x=min(floor(abs_error*256.0),255.0)/255.0;abs_error-=v_output_error_encoded.x;v_output_error_encoded.y=min(floor(abs_error*65536.0),255.0)/255.0;abs_error-=v_output_error_encoded.x/255.0;v_output_error_encoded.z=min(floor(abs_error*16777216.0),255.0)/255.0;v_output_error_encoded.w=error >=0.0 ? 1.0 : 0.0;gl_Position=vec4(a_pos,0.0,1.0);}"),
-          atmosphere: Rr(`in vec3 view_direction;uniform vec3 u_sun_pos;uniform vec3 u_globe_position;uniform float u_globe_radius;uniform float u_atmosphere_blend;/**Shader use from https:*Made some change to adapt to MapLibre Globe geometry*/const float PI=3.141592653589793;const int iSteps=5;const int jSteps=3;/*radius of the planet*/const float EARTH_RADIUS=6371e3;/*radius of the atmosphere*/const float ATMOS_RADIUS=6471e3;vec2 rsi(vec3 r0,vec3 rd,float sr) {float a=dot(rd,rd);float b=2.0*dot(rd,r0);float c=dot(r0,r0)-(sr*sr);float d=(b*b)-4.0*a*c;if (d < 0.0) return vec2(1e5,-1e5);return vec2((-b-sqrt(d))/(2.0*a),(-b+sqrt(d))/(2.0*a));}vec4 atmosphere(vec3 r,vec3 r0,vec3 pSun,float iSun,float rPlanet,float rAtmos,vec3 kRlh,float kMie,float shRlh,float shMie,float g) {pSun=normalize(pSun);r=normalize(r);vec2 p=rsi(r0,r,rAtmos);if (p.x > p.y) {return vec4(0.0,0.0,0.0,1.0);}if (p.x < 0.0) {p.x=0.0;}vec3 pos=r0+r*p.x;vec2 p2=rsi(r0,r,rPlanet);if (p2.x <=p2.y && p2.x > 0.0) {p.y=min(p.y,p2.x);}float iStepSize=(p.y-p.x)/float(iSteps);float iTime=p.x+iStepSize*0.5;vec3 totalRlh=vec3(0,0,0);vec3 totalMie=vec3(0,0,0);float iOdRlh=0.0;float iOdMie=0.0;float mu=dot(r,pSun);float mumu=mu*mu;float gg=g*g;float pRlh=3.0/(16.0*PI)*(1.0+mumu);float pMie=3.0/(8.0*PI)*((1.0-gg)*(mumu+1.0))/(pow(1.0+gg-2.0*mu*g,1.5)*(2.0+gg));for (int i=0; i < iSteps; i++) {vec3 iPos=r0+r*iTime;float iHeight=length(iPos)-rPlanet;float odStepRlh=exp(-iHeight/shRlh)*iStepSize;float odStepMie=exp(-iHeight/shMie)*iStepSize;iOdRlh+=odStepRlh;iOdMie+=odStepMie;float jStepSize=rsi(iPos,pSun,rAtmos).y/float(jSteps);float jTime=jStepSize*0.5;float jOdRlh=0.0;float jOdMie=0.0;for (int j=0; j < jSteps; j++) {vec3 jPos=iPos+pSun*jTime;float jHeight=length(jPos)-rPlanet;jOdRlh+=exp(-jHeight/shRlh)*jStepSize;jOdMie+=exp(-jHeight/shMie)*jStepSize;jTime+=jStepSize;}vec3 attn=exp(-(kMie*(iOdMie+jOdMie)+kRlh*(iOdRlh+jOdRlh)));totalRlh+=odStepRlh*attn;totalMie+=odStepMie*attn;iTime+=iStepSize;}float opacity=exp(-(length(kRlh)*length(totalRlh)+kMie*length(totalMie)));vec3 color=iSun*(pRlh*kRlh*totalRlh+pMie*kMie*totalMie);return vec4(color,opacity);}void main() {vec3 scale_camera_pos=-u_globe_position*EARTH_RADIUS/u_globe_radius;vec4 color=atmosphere(normalize(view_direction),scale_camera_pos,u_sun_pos,22.0,EARTH_RADIUS,ATMOS_RADIUS,vec3(5.5e-6,13.0e-6,22.4e-6),21e-6,8e3,1.2e3,0.758
+          terrain: Dr("uniform sampler2D u_texture;uniform vec4 u_fog_color;uniform vec4 u_horizon_color;uniform float u_fog_ground_blend;uniform float u_fog_ground_blend_opacity;uniform float u_horizon_fog_blend;uniform bool u_is_globe_mode;in vec2 v_texture_pos;in float v_fog_depth;const float gamma=2.2;vec4 gammaToLinear(vec4 color) {return pow(color,vec4(gamma));}vec4 linearToGamma(vec4 color) {return pow(color,vec4(1.0/gamma));}void main() {vec4 surface_color=texture(u_texture,vec2(v_texture_pos.x,1.0-v_texture_pos.y));if (!u_is_globe_mode && v_fog_depth > u_fog_ground_blend) {vec4 surface_color_linear=gammaToLinear(surface_color);float blend_color=smoothstep(0.0,1.0,max((v_fog_depth-u_horizon_fog_blend)/(1.0-u_horizon_fog_blend),0.0));vec4 fog_horizon_color_linear=mix(gammaToLinear(u_fog_color),gammaToLinear(u_horizon_color),blend_color);float factor_fog=max(v_fog_depth-u_fog_ground_blend,0.0)/(1.0-u_fog_ground_blend);fragColor=linearToGamma(mix(surface_color_linear,fog_horizon_color_linear,pow(factor_fog,2.0)*u_fog_ground_blend_opacity));} else {fragColor=surface_color;}}", "in vec3 a_pos3d;uniform mat4 u_fog_matrix;uniform float u_ele_delta;out vec2 v_texture_pos;out float v_fog_depth;void main() {float ele=get_elevation(a_pos3d.xy);float ele_delta=a_pos3d.z==1.0 ? u_ele_delta : 0.0;v_texture_pos=a_pos3d.xy/8192.0;gl_Position=projectTileFor3D(a_pos3d.xy,get_elevation(a_pos3d.xy)-ele_delta);vec4 pos=u_fog_matrix*vec4(a_pos3d.xy,ele,1.0);v_fog_depth=pos.z/pos.w*0.5+0.5;}"),
+          terrainDepth: Dr("in float v_depth;const highp vec4 bitSh=vec4(256.*256.*256.,256.*256.,256.,1.);const highp vec4 bitMsk=vec4(0.,vec3(1./256.0));highp vec4 pack(highp float value) {highp vec4 comp=fract(value*bitSh);comp-=comp.xxyz*bitMsk;return comp;}void main() {fragColor=pack(v_depth);}", "in vec3 a_pos3d;uniform float u_ele_delta;out float v_depth;void main() {float ele=get_elevation(a_pos3d.xy);float ele_delta=a_pos3d.z==1.0 ? u_ele_delta : 0.0;gl_Position=projectTileFor3D(a_pos3d.xy,ele-ele_delta);v_depth=gl_Position.z/gl_Position.w;}"),
+          terrainCoords: Dr("precision mediump float;uniform sampler2D u_texture;uniform float u_terrain_coords_id;in vec2 v_texture_pos;void main() {vec4 rgba=texture(u_texture,v_texture_pos);fragColor=vec4(rgba.r,rgba.g,rgba.b,u_terrain_coords_id);}", "in vec3 a_pos3d;uniform float u_ele_delta;out vec2 v_texture_pos;void main() {float ele=get_elevation(a_pos3d.xy);float ele_delta=a_pos3d.z==1.0 ? u_ele_delta : 0.0;v_texture_pos=a_pos3d.xy/8192.0;gl_Position=projectTileFor3D(a_pos3d.xy,ele-ele_delta);}"),
+          projectionErrorMeasurement: Dr("in vec4 v_output_error_encoded;void main() {fragColor=v_output_error_encoded;}", "in vec2 a_pos;uniform highp float u_input;uniform highp float u_output_expected;out vec4 v_output_error_encoded;void main() {float real_output=2.0*atan(exp(PI-(u_input*PI*2.0)))-PI*0.5;float error=real_output-u_output_expected;float abs_error=abs(error)*128.0;v_output_error_encoded.x=min(floor(abs_error*256.0),255.0)/255.0;abs_error-=v_output_error_encoded.x;v_output_error_encoded.y=min(floor(abs_error*65536.0),255.0)/255.0;abs_error-=v_output_error_encoded.x/255.0;v_output_error_encoded.z=min(floor(abs_error*16777216.0),255.0)/255.0;v_output_error_encoded.w=error >=0.0 ? 1.0 : 0.0;gl_Position=vec4(a_pos,0.0,1.0);}"),
+          atmosphere: Dr(`in vec3 view_direction;uniform vec3 u_sun_pos;uniform vec3 u_globe_position;uniform float u_globe_radius;uniform float u_atmosphere_blend;/**Shader use from https:*Made some change to adapt to MapLibre Globe geometry*/const float PI=3.141592653589793;const int iSteps=5;const int jSteps=3;/*radius of the planet*/const float EARTH_RADIUS=6371e3;/*radius of the atmosphere*/const float ATMOS_RADIUS=6471e3;vec2 rsi(vec3 r0,vec3 rd,float sr) {float a=dot(rd,rd);float b=2.0*dot(rd,r0);float c=dot(r0,r0)-(sr*sr);float d=(b*b)-4.0*a*c;if (d < 0.0) return vec2(1e5,-1e5);return vec2((-b-sqrt(d))/(2.0*a),(-b+sqrt(d))/(2.0*a));}vec4 atmosphere(vec3 r,vec3 r0,vec3 pSun,float iSun,float rPlanet,float rAtmos,vec3 kRlh,float kMie,float shRlh,float shMie,float g) {pSun=normalize(pSun);r=normalize(r);vec2 p=rsi(r0,r,rAtmos);if (p.x > p.y) {return vec4(0.0,0.0,0.0,1.0);}if (p.x < 0.0) {p.x=0.0;}vec3 pos=r0+r*p.x;vec2 p2=rsi(r0,r,rPlanet);if (p2.x <=p2.y && p2.x > 0.0) {p.y=min(p.y,p2.x);}float iStepSize=(p.y-p.x)/float(iSteps);float iTime=p.x+iStepSize*0.5;vec3 totalRlh=vec3(0,0,0);vec3 totalMie=vec3(0,0,0);float iOdRlh=0.0;float iOdMie=0.0;float mu=dot(r,pSun);float mumu=mu*mu;float gg=g*g;float pRlh=3.0/(16.0*PI)*(1.0+mumu);float pMie=3.0/(8.0*PI)*((1.0-gg)*(mumu+1.0))/(pow(1.0+gg-2.0*mu*g,1.5)*(2.0+gg));for (int i=0; i < iSteps; i++) {vec3 iPos=r0+r*iTime;float iHeight=length(iPos)-rPlanet;float odStepRlh=exp(-iHeight/shRlh)*iStepSize;float odStepMie=exp(-iHeight/shMie)*iStepSize;iOdRlh+=odStepRlh;iOdMie+=odStepMie;float jStepSize=rsi(iPos,pSun,rAtmos).y/float(jSteps);float jTime=jStepSize*0.5;float jOdRlh=0.0;float jOdMie=0.0;for (int j=0; j < jSteps; j++) {vec3 jPos=iPos+pSun*jTime;float jHeight=length(jPos)-rPlanet;jOdRlh+=exp(-jHeight/shRlh)*jStepSize;jOdMie+=exp(-jHeight/shMie)*jStepSize;jTime+=jStepSize;}vec3 attn=exp(-(kMie*(iOdMie+jOdMie)+kRlh*(iOdRlh+jOdRlh)));totalRlh+=odStepRlh*attn;totalMie+=odStepMie*attn;iTime+=iStepSize;}float opacity=exp(-(length(kRlh)*length(totalRlh)+kMie*length(totalMie)));vec3 color=iSun*(pRlh*kRlh*totalRlh+pMie*kMie*totalMie);return vec4(color,opacity);}void main() {vec3 scale_camera_pos=-u_globe_position*EARTH_RADIUS/u_globe_radius;vec4 color=atmosphere(normalize(view_direction),scale_camera_pos,u_sun_pos,22.0,EARTH_RADIUS,ATMOS_RADIUS,vec3(5.5e-6,13.0e-6,22.4e-6),21e-6,8e3,1.2e3,0.758
 );color.rgb=1.0-exp(-1.0*color.rgb);color=pow(color,vec4(1.0/2.2));fragColor=vec4(color.rgb,1.0-color.a)*u_atmosphere_blend;}`, "in vec2 a_pos;uniform mat4 u_inv_proj_matrix;out vec3 view_direction;void main() {view_direction=(u_inv_proj_matrix*vec4(a_pos,0.0,1.0)).xyz;gl_Position=vec4(a_pos,0.0,1.0);}"),
-          sky: Rr("uniform vec4 u_sky_color;uniform vec4 u_horizon_color;uniform vec2 u_horizon;uniform vec2 u_horizon_normal;uniform float u_sky_horizon_blend;uniform float u_sky_blend;void main() {float x=gl_FragCoord.x;float y=gl_FragCoord.y;float blend=(y-u_horizon.y)*u_horizon_normal.y+(x-u_horizon.x)*u_horizon_normal.x;if (blend > 0.0) {if (blend < u_sky_horizon_blend) {fragColor=mix(u_sky_color,u_horizon_color,pow(1.0-blend/u_sky_horizon_blend,2.0));} else {fragColor=u_sky_color;}}fragColor=mix(fragColor,vec4(vec3(0.0),0.0),u_sky_blend);}", "in vec2 a_pos;void main() {gl_Position=vec4(a_pos,1.0,1.0);}")
+          sky: Dr("uniform vec4 u_sky_color;uniform vec4 u_horizon_color;uniform vec2 u_horizon;uniform vec2 u_horizon_normal;uniform float u_sky_horizon_blend;uniform float u_sky_blend;void main() {float x=gl_FragCoord.x;float y=gl_FragCoord.y;float blend=(y-u_horizon.y)*u_horizon_normal.y+(x-u_horizon.x)*u_horizon_normal.x;if (blend > 0.0) {if (blend < u_sky_horizon_blend) {fragColor=mix(u_sky_color,u_horizon_color,pow(1.0-blend/u_sky_horizon_blend,2.0));} else {fragColor=u_sky_color;}}fragColor=mix(fragColor,vec4(vec3(0.0),0.0),u_sky_blend);}", "in vec2 a_pos;void main() {gl_Position=vec4(a_pos,1.0,1.0);}")
         };
 
-        function Rr(h, e) {
+        function Dr(h, e) {
           const i = /#pragma mapbox: ([\w]+) ([\w]+) ([\w]+) ([\w]+)/g,
             l = e.match(/in ([\w]+) ([\w]+)/g),
             u = h.match(/uniform ([\w]+) ([\w]+)([\s]*)([\w]*)/g),
@@ -29579,11 +29579,11 @@ uniform ${L} ${q} u_${B};
                 anchor: nt,
                 textOffset: st,
                 textBoxScale: ut
-              } = ve, Qt = wd(nt, qe, ct, st, ut, xe), nr = u.getPitchedTextCorrection(Ae.x + k[0], Ae.y + k[1], L), Lt = Gl(ke.point, _e, e, Qt, -u.bearingInRadians, nr), Fr = h.allowVerticalPlacement && de.placedOrientation === s.as.vertical ? Math.PI / 2 : 0;
-              for (let _n = 0; _n < de.numGlyphs; _n++) s.az(H, Lt, Fr);
+              } = ve, Qt = wd(nt, qe, ct, st, ut, xe), nr = u.getPitchedTextCorrection(Ae.x + k[0], Ae.y + k[1], L), Lt = Gl(ke.point, _e, e, Qt, -u.bearingInRadians, nr), Rr = h.allowVerticalPlacement && de.placedOrientation === s.as.vertical ? Math.PI / 2 : 0;
+              for (let _n = 0; _n < de.numGlyphs; _n++) s.az(H, Lt, Rr);
               S && de.associatedIconIndex >= 0 && (le[de.associatedIconIndex] = {
                 shiftedAnchor: Lt,
-                angle: Fr
+                angle: Rr
               })
             } else En(de.numGlyphs, H)
           }
@@ -29631,14 +29631,14 @@ uniform ${L} ${q} u_${B};
             if (!Qt || !Qt.segments.get().length || !Qt.hasVisibleVertices) continue;
             const nr = Qt.programConfigurations.get(i.id),
               Lt = u || ut.sdfIcons,
-              Fr = u ? ut.textSizeData : ut.iconSizeData,
+              Rr = u ? ut.textSizeData : ut.iconSizeData,
               _n = de || le.pitch !== 0,
               Gn = h.useProgram(Wl(Lt, u, ut), nr),
-              wn = s.ar(Fr, le.zoom),
+              wn = s.ar(Rr, le.zoom),
               Jn = h.style.map.terrain && h.style.map.terrain.getTerrainData(nt);
             let hi, ei, Mi, ii, Ni = [0, 0],
               ai = null;
-            if (u) ei = st.glyphAtlasTexture, Mi = re.LINEAR, hi = st.glyphAtlasTexture.size, ut.iconsInText && (Ni = st.imageAtlasTexture.size, ai = st.imageAtlasTexture, ii = _n || h.options.rotating || h.options.zooming || Fr.kind === "composite" || Fr.kind === "camera" ? re.LINEAR : re.NEAREST);
+            if (u) ei = st.glyphAtlasTexture, Mi = re.LINEAR, hi = st.glyphAtlasTexture.size, ut.iconsInText && (Ni = st.imageAtlasTexture.size, ai = st.imageAtlasTexture, ii = _n || h.options.rotating || h.options.zooming || Rr.kind === "composite" || Rr.kind === "camera" ? re.LINEAR : re.NEAREST);
             else {
               const Pi = i.layout.get("icon-size").constantOr(0) !== 1 || ut.iconsNeedLinear;
               ei = st.imageAtlasTexture, Mi = Lt || h.options.rotating || h.options.zooming || Pi || _n ? re.LINEAR : re.NEAREST, hi = st.imageAtlasTexture.size
@@ -29665,7 +29665,7 @@ uniform ${L} ${q} u_${B};
               da = ve || va ? su : de ? ha : h.transform.clipSpaceToPixelsMatrix,
               xo = Lt && i.paint.get(u ? "text-halo-width" : "icon-halo-width").constantOr(1) !== 0;
             let Do;
-            Do = Lt ? ut.iconsInText ? po(Fr.kind, wn, Ae, de, ve, va, h, da, yo, ro, hi, Ni, ct) : Ks(Fr.kind, wn, Ae, de, ve, va, h, da, yo, ro, u, hi, 0, ct) : Jc(Fr.kind, wn, Ae, de, ve, va, h, da, yo, ro, u, hi, ct);
+            Do = Lt ? ut.iconsInText ? po(Rr.kind, wn, Ae, de, ve, va, h, da, yo, ro, hi, Ni, ct) : Ks(Rr.kind, wn, Ae, de, ve, va, h, da, yo, ro, u, hi, 0, ct) : Jc(Rr.kind, wn, Ae, de, ve, va, h, da, yo, ro, u, hi, ct);
             const hl = {
               program: Gn,
               buffers: Qt,
@@ -29988,9 +29988,9 @@ uniform ${L} ${q} u_${B};
                 applyGlobeMatrix: !k,
                 applyTerrainMatrix: !0
               }),
-              Fr = hd(ut, st, Qt.fadeMix, i, T),
+              Rr = hd(ut, st, Qt.fadeMix, i, T),
               _n = le.getMeshFromTileID(q, Fe.canonical, p, v, "raster");
-            H.draw(q, B.TRIANGLES, xe, u ? u[Fe.overscaledZ] : Pn.disabled, ce, S ? gn.frontCCW : gn.backCCW, Fr, nr, Lt, i.id, _n.vertexBuffer, _n.indexBuffer, _n.segments)
+            H.draw(q, B.TRIANGLES, xe, u ? u[Fe.overscaledZ] : Pn.disabled, ce, S ? gn.frontCCW : gn.backCCW, Rr, nr, Lt, i.id, _n.vertexBuffer, _n.indexBuffer, _n.segments)
           }
         }
 
@@ -30406,8 +30406,8 @@ uniform ${L} ${q} u_${B};
                   _e = (function(ut, Qt) {
                     const nr = ut.properties.get("position"),
                       Lt = [-nr.x, -nr.y, -nr.z],
-                      Fr = s.am(new Float64Array(16));
-                    return ut.properties.get("anchor") === "map" && (s.b9(Fr, Fr, Qt.rollInRadians), s.ba(Fr, Fr, -Qt.pitchInRadians), s.b9(Fr, Fr, Qt.bearingInRadians), s.ba(Fr, Fr, Qt.center.lat * Math.PI / 180), s.bC(Fr, Fr, -Qt.center.lng * Math.PI / 180)), s.c9(Lt, Lt, Fr), Lt
+                      Rr = s.am(new Float64Array(16));
+                    return ut.properties.get("anchor") === "map" && (s.b9(Rr, Rr, Qt.rollInRadians), s.ba(Rr, Rr, -Qt.pitchInRadians), s.b9(Rr, Rr, Qt.bearingInRadians), s.ba(Rr, Rr, Qt.center.lat * Math.PI / 180), s.bC(Rr, Rr, -Qt.center.lng * Math.PI / 180)), s.c9(Lt, Lt, Rr), Lt
                   })(re, B.transform),
                   ke = Ae.getProjectionData({
                     overscaledTileID: null,
@@ -30420,12 +30420,12 @@ uniform ${L} ${q} u_${B};
                   qe = Ae.inverseProjectionMatrix,
                   ct = new Float64Array(4);
                 ct[3] = 1, s.aA(ct, ct, Ae.modelViewProjectionMatrix), ct[0] /= ct[3], ct[1] /= ct[3], ct[2] /= ct[3], ct[3] = 1, s.aA(ct, ct, qe), ct[0] /= ct[3], ct[1] /= ct[3], ct[2] /= ct[3], ct[3] = 1;
-                const nt = ((ut, Qt, nr, Lt, Fr) => ({
+                const nt = ((ut, Qt, nr, Lt, Rr) => ({
                     u_sun_pos: ut,
                     u_atmosphere_blend: Qt,
                     u_globe_position: nr,
                     u_globe_radius: Lt,
-                    u_inv_proj_matrix: Fr
+                    u_inv_proj_matrix: Rr
                   }))(_e, Fe, [ct[0], ct[1], ct[2]], xe, qe),
                   st = zo(le, H);
                 de.draw(le, ce.TRIANGLES, ve, Pn.disabled, In.alphaBlended, gn.disabled, nt, null, null, "atmosphere", st.vertexBuffer, st.indexBuffer, st.segments)
@@ -30532,8 +30532,8 @@ uniform ${L} ${q} u_${B};
                     nr = Qt.getBucket(de);
                   if (!nr || !nr.text || !nr.text.segments.get().length) continue;
                   const Lt = s.ar(nr.textSizeData, qe.zoom),
-                    Fr = s.aG(Qt, 1, ce.transform.zoom),
-                    _n = Pr(nt, ce.transform, Fr),
+                    Rr = s.aG(Qt, 1, ce.transform.zoom),
+                    _n = Pr(nt, ce.transform, Rr),
                     Gn = de.layout.get("icon-text-fit") !== "none" && nr.hasIconData();
                   if (Lt) {
                     const wn = Math.pow(2, qe.zoom - Qt.tileID.overscaledZ),
@@ -30565,13 +30565,13 @@ uniform ${L} ${q} u_${B};
                   Qt = S.paint.get("circle-translate-anchor"),
                   nr = s.aH(ve, nt, ut, Qt),
                   Lt = st.programConfigurations.get(S.id),
-                  Fr = v.useProgram("circle", Lt),
+                  Rr = v.useProgram("circle", Lt),
                   _n = st.layoutVertexBuffer,
                   Gn = st.indexBuffer,
                   wn = v.style.map.terrain && v.style.map.terrain.getTerrainData(ct),
                   Jn = {
                     programConfiguration: Lt,
-                    program: Fr,
+                    program: Rr,
                     layoutVertexBuffer: _n,
                     indexBuffer: Gn,
                     uniformValues: hf(v, nt, S, nr, xe),
@@ -30686,8 +30686,8 @@ uniform ${L} ${q} u_${B};
                 if (!Qt) continue;
                 const nr = Qt.programConfigurations.get(S.id),
                   Lt = v.context.program.get(),
-                  Fr = v.useProgram(Fe, nr),
-                  _n = nt || Fr.program !== Lt,
+                  Rr = v.useProgram(Fe, nr),
+                  _n = nt || Rr.program !== Lt,
                   Gn = v.style.map.terrain && v.style.map.terrain.getTerrainData(st),
                   wn = ve.constantOr(null),
                   Jn = ce && ce.constantOr(null);
@@ -30711,7 +30711,7 @@ uniform ${L} ${q} u_${B};
                 let Mi;
                 Ae ? (Mi = Dl(v, ut, S, ei, ke), cu(xe, qe, ut, nr, ke)) : de && _e ? (Mi = ff(v, ut, S, ei, ke, Qt.lineClipsArray.length), Xl(v, T, xe, qe, S, Qt, st, nr, ke)) : de ? (Mi = pf(v, ut, S, ei, ke), Sd(v, xe, qe, nr, _n, ke)) : _e ? (Mi = df(v, ut, S, ei, Qt.lineClipsArray.length), Pd(v, T, xe, qe, S, Qt, st)) : Mi = Lo(v, ut, S, ei);
                 const ii = v.stencilModeForClipping(st);
-                Fr.draw(xe, qe.TRIANGLES, re, ii, le, gn.disabled, Mi, Gn, hi, S.id, Qt.layoutVertexBuffer, Qt.indexBuffer, Qt.segments, S.paint, v.transform.zoom, nr, Qt.layoutVertexBuffer2), nt = !1
+                Rr.draw(xe, qe.TRIANGLES, re, ii, le, gn.disabled, Mi, Gn, hi, S.id, Qt.layoutVertexBuffer, Qt.indexBuffer, Qt.segments, S.paint, v.transform.zoom, nr, Qt.layoutVertexBuffer2), nt = !1
               }
             })(e, i, l, u, p) : s.cj(l) ? (function(v, T, S, k, L) {
               const q = S.paint.get("fill-color"),
@@ -30758,22 +30758,22 @@ uniform ${L} ${q} u_${B};
                     Qt = st.stride,
                     nr = st.getPixels();
                   if (xe.activeTexture.set(qe.TEXTURE1), xe.pixelStoreUnpackPremultiplyAlpha.set(!1), nt.demTexture = nt.demTexture || ce.getTileTexture(Qt), nt.demTexture) {
-                    const Fr = nt.demTexture;
-                    Fr.update(nr, {
+                    const Rr = nt.demTexture;
+                    Rr.update(nr, {
                       premultiply: !1
-                    }), Fr.bind(qe.NEAREST, qe.CLAMP_TO_EDGE)
+                    }), Rr.bind(qe.NEAREST, qe.CLAMP_TO_EDGE)
                   } else nt.demTexture = new s.T(xe, nr, qe.RGBA, {
                     premultiply: !1
                   }), nt.demTexture.bind(qe.NEAREST, qe.CLAMP_TO_EDGE);
                   xe.activeTexture.set(qe.TEXTURE0);
                   let Lt = nt.fbo;
                   if (!Lt) {
-                    const Fr = new s.T(xe, {
+                    const Rr = new s.T(xe, {
                       width: ut,
                       height: ut,
                       data: null
                     }, qe.RGBA);
-                    Fr.bind(qe.LINEAR, qe.CLAMP_TO_EDGE), Lt = nt.fbo = xe.createFramebuffer(ut, ut, !0, !1), Lt.colorAttachment.set(Fr.texture)
+                    Rr.bind(qe.LINEAR, qe.CLAMP_TO_EDGE), Lt = nt.fbo = xe.createFramebuffer(ut, ut, !0, !1), Lt.colorAttachment.set(Rr.texture)
                   }
                   xe.bindFramebuffer.set(Lt.framebuffer), xe.viewport.set([0, 0, ut, ut]), ce.useProgram("hillshadePrepare").draw(xe, qe.TRIANGLES, _e, ke, Fe, gn.disabled, Wo(nt.tileID, st), null, null, Ae.id, ce.rasterBoundsBuffer, ce.quadTriangleIndexBuffer, ce.rasterBoundsSegments), nt.needsHillshadePrepare = !1
                 }
@@ -37555,22 +37555,22 @@ function wE(m, a) {
           const ur = Mr - Ze.r,
             Ar = Pr - Ze.g,
             Nr = lt - Ze.b,
-            Br = (ir, Dr, zr) => {
-              ir[Dr] += ur * zr, ir[Dr + 1] += Ar * zr, ir[Dr + 2] += Nr * zr
+            Fr = (ir, Br, zr) => {
+              ir[Br] += ur * zr, ir[Br + 1] += Ar * zr, ir[Br + 2] += Nr * zr
             };
           if (Ir + 1 < Q) {
             const ir = (Ir + 1) * 3;
-            Br(gt, ir, 7 / 16)
+            Fr(gt, ir, 7 / 16)
           }
           if (Yt + 1 < ze) {
             if (Ir > 0) {
-              const Dr = (Ir - 1) * 3;
-              Br(Jt, Dr, 3 / 16)
+              const Br = (Ir - 1) * 3;
+              Fr(Jt, Br, 3 / 16)
             }
             const ir = Ir * 3;
-            if (Br(Jt, ir, 5 / 16), Ir + 1 < Q) {
-              const Dr = (Ir + 1) * 3;
-              Br(Jt, Dr, 1 / 16)
+            if (Fr(Jt, ir, 5 / 16), Ir + 1 < Q) {
+              const Br = (Ir + 1) * 3;
+              Fr(Jt, Br, 1 / 16)
             }
           }
         }
@@ -37790,16 +37790,16 @@ function wE(m, a) {
                 _(ie) ? zr(Nr, !1) : zr(Ar)
               })
             }
-            var Br = O(ur, 2),
-              ir = O(Br, 2);
+            var Fr = O(ur, 2),
+              ir = O(Fr, 2);
             {
-              var Dr = zr => {
+              var Br = zr => {
                 var or = yE(),
                   Yr = I(or);
                 C(or), Ue(En => ue(Yr, `Ready to paint ${En??""} pixels.`), [() => (_(Ke), Ma(() => _(Ke).pixels.toLocaleString()))]), Z(zr, or)
               };
               Ee(ir, zr => {
-                _(ie) && zr(Dr)
+                _(ie) && zr(Br)
               })
             }
             C(Tt), Ue(() => {
@@ -37811,7 +37811,7 @@ function wE(m, a) {
               _(ie) && Tr()
             }), yb(Je, () => _(ft), zr => Y(ft, zr)), Cn("change", Je, () => {
               _(ie) && Tr()
-            }), Cn("click", br, () => Y(fe, "upload")), Cn("click", Br, yr), Z(Xe, Re)
+            }), Cn("click", br, () => Y(fe, "upload")), Cn("click", Fr, yr), Z(Xe, Re)
           };
           Ee(Q, Xe => {
             _(Ie) && _(Ne) && Xe(ze)
@@ -44445,11 +44445,11 @@ function C7(m, a) {
         center: ir.lngLat,
         zoom: 17
       });
-      const Dr = [ir.lngLat.lat, ir.lngLat.lng];
-      if (_(Pe)) Bt([Dr], _(z));
-      else if (_(Ie)) wt([Dr]);
-      else if (_(Ce)) Ot(Dr, ir.point);
-      else if (_(Ne) && (_(Me).push(Dr), Bt([Dr], 0), _(Me).length >= 2)) {
+      const Br = [ir.lngLat.lat, ir.lngLat.lng];
+      if (_(Pe)) Bt([Br], _(z));
+      else if (_(Ie)) wt([Br]);
+      else if (_(Ce)) Ot(Br, ir.point);
+      else if (_(Ne) && (_(Me).push(Br), Bt([Br], 0), _(Me).length >= 2)) {
         const [or, Yr] = _(Me), [En, An] = _(A).latLonToPixelsFloor(or[0], or[1], a.tileZoom), [Kr, xn] = _(A).latLonToPixelsFloor(Yr[0], Yr[1], a.tileZoom), On = Math.min(En, Kr), Nn = Math.max(En, Kr), vn = Math.min(An, xn), si = Math.max(An, xn), Xn = [];
         for (let li = vn; li <= si; li++) {
           const Ii = _(A).pixelsToLatLon(On + .5, li + .5, a.tileZoom),
@@ -44468,24 +44468,24 @@ function C7(m, a) {
       Y(ie, !0)
     });
 
-    function Pt(ir, Dr) {
+    function Pt(ir, Br) {
       const zr = _(A).latLonToPixels(ir.lat, ir.lng, a.tileZoom),
-        or = Dr ? _(A).latLonToPixels(Dr.lat, Dr.lng, a.tileZoom) : zr;
+        or = Br ? _(A).latLonToPixels(Br.lat, Br.lng, a.tileZoom) : zr;
       return Db(zr, or).map(En => _(A).pixelsToLatLon(En[0] + .5, En[1] + .5, a.tileZoom))
     }
 
-    function Ze(ir, Dr) {
-      const zr = Pt(ir, Dr);
+    function Ze(ir, Br) {
+      const zr = Pt(ir, Br);
       _(Pe) ? Bt(zr, _(z)) : _(Ie) && wt(zr), Y(ie, !0)
     }
     let kt;
 
     function Je(ir) {
-      const Dr = a.map.unproject([ir.clientX, ir.clientY]);
+      const Br = a.map.unproject([ir.clientX, ir.clientY]);
       if (_(Se)) {
-        const zr = Pt(Dr, kt);
+        const zr = Pt(Br, kt);
         wt(zr)
-      }(St || $) && Ze(Dr, kt), kt = Dr
+      }(St || $) && Ze(Br, kt), kt = Br
     }
     window.addEventListener("mousemove", Je);
     let ot = !1;
@@ -44525,7 +44525,7 @@ function C7(m, a) {
       ir.button === 2 && Y(Se, !1)
     }
     document.addEventListener("mouseup", Nr);
-    const Br = ir => {
+    const Fr = ir => {
       switch (ir.code) {
         case "KeyE":
           _(V) > 0 && (_(Ie) ? Y(b, "pencil") : Y(b, "eraser"));
@@ -44538,8 +44538,8 @@ function C7(m, a) {
           return
       }
     };
-    return document.addEventListener("keypress", Br), () => {
-      br.unsubscribe(), Nt.unsubscribe(), lt.unsubscribe(), document.removeEventListener("mousemove", Je), document.removeEventListener("keydown", Tt), document.removeEventListener("keyup", ur), document.removeEventListener("keypress", Br), document.removeEventListener("mousedown", Ar), document.removeEventListener("mouseup", Nr), cr()
+    return document.addEventListener("keypress", Fr), () => {
+      br.unsubscribe(), Nt.unsubscribe(), lt.unsubscribe(), document.removeEventListener("mousemove", Je), document.removeEventListener("keydown", Tt), document.removeEventListener("keyup", ur), document.removeEventListener("keypress", Fr), document.removeEventListener("mousedown", Ar), document.removeEventListener("mouseup", Nr), cr()
     }
   });
   let Qe = !1;
@@ -44557,13 +44557,13 @@ function C7(m, a) {
         pixel: ur,
         season: a.season,
         colorIdx: Pt
-      }, Nr = mm(Ar), Br = s.get(Nr), ir = _(ae) - s.size;
-      if (!Br && ir < 1) {
+      }, Nr = mm(Ar), Fr = s.get(Nr), ir = _(ae) - s.size;
+      if (!Fr && ir < 1) {
         if (Qe && (St || d())) continue;
         Qe = !0, Kt.info(YP());
         continue
       }
-      Br && Br.colorIdx === Pt || (gi.plop.play(), Ze || a.hidePixelHover(), s.set(Nr, Ar), _t.place(Je, Pt), a.crosshair.place(Je), Ze = !0, kt && F.set(Nr, Ar))
+      Fr && Fr.colorIdx === Pt || (gi.plop.play(), Ze || a.hidePixelHover(), s.set(Nr, Ar), _t.place(Je, Pt), a.crosshair.place(Je), Ze = !0, kt && F.set(Nr, Ar))
     }
     Y(V, s.size, !0), Ze && !x() ? yt([...s.values()]) : Ze && x() && kt && yt([...F.values()])
   }
@@ -44605,14 +44605,14 @@ function C7(m, a) {
       br = Math.floor(Pt.x * Nt),
       Tt = Math.floor(Pt.y * Nt);
     a.hidePixelHover(), U8(a.map, br, Tt).then(([ur, Ar, Nr]) => {
-      const Br = F0({
+      const Fr = F0({
         r: ur,
         g: Ar,
         b: Nr
       });
-      Mt(Br), requestAnimationFrame(() => {
+      Mt(Fr), requestAnimationFrame(() => {
         var ir;
-        (ir = document.getElementById(`color-${Br}`)) == null || ir.focus()
+        (ir = document.getElementById(`color-${Fr}`)) == null || ir.focus()
       })
     })
   }
@@ -44761,13 +44761,13 @@ function C7(m, a) {
                 var Tt = Ar => {
                     vl(Ar, {
                       class: "not-touchscreen:hidden",
-                      children: (Nr, Br) => {
+                      children: (Nr, Fr) => {
                         var ir = v7(),
-                          Dr = bt(ir);
-                        b0(Dr, {
+                          Br = bt(ir);
+                        b0(Br, {
                           class: "inline size-5"
                         });
-                        var zr = O(Dr, 1, !0);
+                        var zr = O(Br, 1, !0);
                         Ue(or => ue(zr, or), [() => F3()]), Z(Nr, ir)
                       },
                       $$slots: {
@@ -44777,7 +44777,7 @@ function C7(m, a) {
                   },
                   ur = Ar => {
                     var Nr = lr(),
-                      Br = bt(Nr);
+                      Fr = bt(Nr);
                     {
                       var ir = zr => {
                           vl(zr, {
@@ -44806,7 +44806,7 @@ function C7(m, a) {
                             }
                           })
                         },
-                        Dr = zr => {
+                        Br = zr => {
                           var or = lr(),
                             Yr = bt(or);
                           {
@@ -44883,8 +44883,8 @@ function C7(m, a) {
                           }
                           Z(zr, or)
                         };
-                      Ee(Br, zr => {
-                        _(Pe) && _(V) === 0 ? zr(ir) : zr(Dr, !1)
+                      Ee(Fr, zr => {
+                        _(Pe) && _(V) === 0 ? zr(ir) : zr(Br, !1)
                       }, !0)
                     }
                     Z(Ar, Nr)
@@ -45005,10 +45005,10 @@ function C7(m, a) {
     he = I(K);
   oi(he, 23, () => _(Ye), lt => lt.idx, (lt, Pt, Ze) => {
     const kt = ht(() => {
-        const [Nr, Br, ir] = _(Pt).rgb;
+        const [Nr, Fr, ir] = _(Pt).rgb;
         return {
           r: Nr,
-          g: Br,
+          g: Fr,
           b: ir
         }
       }),
@@ -45023,16 +45023,16 @@ function C7(m, a) {
     var ur = I(Tt);
     {
       var Ar = Nr => {
-        var Br = T7(),
-          ir = bt(Br);
+        var Fr = T7(),
+          ir = bt(Fr);
         sg(ir, {
           class: "center-absolute absolute size-4 opacity-30 sm:hidden sm:size-6"
         });
-        var Dr = O(ir, 2),
-          zr = I(Dr);
+        var Br = O(ir, 2),
+          zr = I(Br);
         sg(zr, {
           class: "text-base-content/80 size-4"
-        }), C(Dr), Z(Nr, Br)
+        }), C(Br), Z(Nr, Fr)
       };
       Ee(ur, Nr => {
         _(Nt) || Nr(Ar)
@@ -47101,7 +47101,7 @@ function q7(m, a) {
               Ei(Ge, () => St => (Y(V, R7(St, {
                 strictMode: !0,
                 initialCountry: "br",
-                loadUtils: () => e2(() => import("../chunks/CGEKhWyl.js"), [], import.meta.url),
+                loadUtils: () => e2(() => import("../chunks/Db0pseiT.js"), [], import.meta.url),
                 containerClass: "w-full",
                 dropdownContainer: document.body
               })), () => {
@@ -48103,7 +48103,7 @@ var OF = me('<span class="tooltip font-flag ml-0.5"> </span>'),
   XF = me('<a class="btn w-full" target="_blank"><!> </a>'),
   YF = me('<a class="btn w-full" target="_blank"><!> </a>'),
   KF = me('<form class="w-full" method="POST"><button class="btn w-full"><!> </button></form> <a class="btn w-full" target="_blank"><!> </a>', 1),
-  JF = me('<div class="dropdown"><div tabindex="0" role="button"><!> <!></div> <div class="dropdown-content menu bg-base-100 rounded-box border-base-300 z-1 right-1 w-[min(100vw-24px,400px)] translate-y-2 border p-4 shadow-md" tabindex="-1"><button class="btn btn-ghost btn-circle absolute right-2 top-2"><!></button> <section class="flex gap-2"><div class="relative"><!> <button class="btn btn-circle btn-sm absolute -bottom-1 -right-1"><!></button></div> <div><div class="flex items-center gap-1.5 pr-8 text-lg font-medium"><h3 class="line-clamp-1 text-ellipsis text-lg"> </h3> <span> </span> <!> <!></div> <div class="flex items-center gap-1"><!> <span> <span class="text-primary font-semibold"> </span></span></div> <div class="flex items-center gap-1"><!> <span class="text-secondary"><span class="font-semibold"> </span> <button class="tooltip"><!></button></span></div></div></section> <section class="mt-3 flex flex-col gap-2"><!> <div class="mb-1 flex items-center justify-between"><h3 class="text-lg font-semibold"> </h3> <div class="flex items-center gap-2"><div class="dropdown dropdown-end"><div tabindex="0" role="button" class="btn btn-sm btn-circle tooltip"><!></div> <ul tabindex="0" class="dropdown-content menu bg-base-100 z-1 w-max rounded-xl p-2 shadow-sm"></ul></div> <div class="tooltip"><button class="btn btn-sm btn-circle"><!></button></div> <!> <!> <button class="btn btn-sm btn-circle tooltip relative before:-left-1/2"><!> <!></button></div></div>  <!> <!> <!> <!> <a class="btn w-full" href="https://www.twitch.tv/directory/category/wplace" target="_blank"><!> </a> <a class="btn w-full" href="http://discord.gg/wplacelive" target="_blank"><!> Discord</a> <a class="btn w-full" href="https://www.reddit.com/r/WplaceLive/" target="_blank"><!> Reddit</a> <!> <button class="btn"><!> </button></section></div></div> <!>', 1);
+  JF = me('<div class="dropdown"><div tabindex="0" role="button"><!> <!></div> <div class="dropdown-content menu bg-base-100 rounded-box border-base-300 right-1 z-1 w-[min(100vw-24px,400px)] translate-y-2 border p-4 shadow-md" tabindex="-1"><button class="btn btn-ghost btn-circle absolute top-2 right-2"><!></button> <section class="flex gap-2"><div class="relative"><!> <button class="btn btn-circle btn-sm absolute -right-1 -bottom-1"><!></button></div> <div><div class="flex items-center gap-1.5 pr-8 text-lg font-medium"><h3 class="line-clamp-1 text-lg text-ellipsis"> </h3> <span> </span> <!> <!></div> <div class="flex items-center gap-1"><!> <span> <span class="text-primary font-semibold"> </span></span></div> <div class="flex items-center gap-1"><!> <span class="text-secondary"><span class="font-semibold"> </span> <button class="tooltip"><!></button></span></div></div></section> <section class="mt-3 flex flex-col gap-2"><!> <div class="mb-1 flex items-center justify-between"><h3 class="text-lg font-semibold"> </h3> <div class="flex items-center gap-2"><div class="dropdown dropdown-end"><div tabindex="0" role="button" class="btn btn-sm btn-circle tooltip"><!></div> <ul tabindex="0" class="dropdown-content menu bg-base-100 z-1 w-max rounded-xl p-2 shadow-sm"></ul></div> <div class="tooltip"><button class="btn btn-sm btn-circle"><!></button></div> <!> <!> <button class="btn btn-sm btn-circle tooltip relative before:-left-1/2"><!> <!></button></div></div>  <!> <!> <!> <!> <a class="btn w-full" href="https://www.twitch.tv/directory/category/wplace" target="_blank"><!> </a> <a class="btn w-full" href="http://discord.gg/wplacelive" target="_blank"><!> Discord</a> <a class="btn w-full" href="https://www.reddit.com/r/WplaceLive/" target="_blank"><!> Reddit</a> <!> <button class="btn"><!> </button></section></div></div> <!>', 1);
 
 function QF(m, a) {
   Wr(a, !0);
@@ -48124,10 +48124,7 @@ function QF(m, a) {
   }];
   let s = tt(""),
     F = tt(void 0);
-  const V = ht(() => {
-    var fe;
-    return !!((fe = a.user.data) != null && fe.banned) || !!a.user.timeoutUntil
-  });
+  const V = ht(() => !!a.user.timeoutUntil);
   var J = lr(),
     ee = bt(J);
   {
@@ -48152,7 +48149,7 @@ function QF(m, a) {
       {
         var Ce = Je => {
           T0(Je, {
-            class: "absolute -right-0.5 -top-0.5",
+            class: "absolute -top-0.5 -right-0.5",
             get count() {
               return a.user.notificiationCount
             }
@@ -48270,8 +48267,8 @@ function QF(m, a) {
           var br = O(Nt, 2);
           {
             var Tt = ir => {
-                var Dr = jF(),
-                  zr = I(Dr),
+                var Br = jF(),
+                  zr = I(Br),
                   or = O(zr);
                 {
                   var Yr = An => {
@@ -48300,11 +48297,11 @@ function QF(m, a) {
                     a.user.data.suspensionReason === "bot" ? An(Yr) : An(En, !1)
                   })
                 }
-                C(Dr), Ue(An => ue(zr, `${An??""} `), [() => Pb()]), Z(ir, Dr)
+                C(Br), Ue(An => ue(zr, `${An??""} `), [() => Pb()]), Z(ir, Br)
               },
               ur = ir => {
-                var Dr = lr(),
-                  zr = bt(Dr);
+                var Br = lr(),
+                  zr = bt(Br);
                 {
                   var or = Yr => {
                     var En = VF(),
@@ -48317,24 +48314,23 @@ function QF(m, a) {
                     a.user.timeoutUntil && Yr(or)
                   }, !0)
                 }
-                Z(ir, Dr)
+                Z(ir, Br)
               };
             Ee(br, ir => {
-              var Dr;
-              (Dr = a.user.data) != null && Dr.banned ? ir(Tt) : ir(ur, !1)
+              a.user.data.timeoutUntil && new Date(a.user.data.timeoutUntil).getTime() >= Date.now() + 31536e6 ? ir(Tt) : ir(ur, !1)
             })
           }
           var Ar = O(br, 2);
           Ar.__click = ir => {
-            var Dr;
-            (Dr = a.onbanappeal) == null || Dr.call(a)
+            var Br;
+            (Br = a.onbanappeal) == null || Br.call(a)
           };
           var Nr = I(Ar);
           lg(Nr, {
             class: "size-5 text-red-500"
           });
-          var Br = O(Nr, 1, !0);
-          C(Ar), C(ot), Ue(ir => ue(Br, ir), [() => FM()]), Z(Je, ot)
+          var Fr = O(Nr, 1, !0);
+          C(Ar), C(ot), Ue(ir => ue(Fr, ir), [() => FM()]), Z(Je, ot)
         };
         Ee(Rt, Je => {
           _(V) && Je(Ht)
@@ -48363,18 +48359,18 @@ function QF(m, a) {
         var Ar = I(Tt);
         {
           var Nr = ir => {
-            var Dr = UF();
-            Z(ir, Dr)
+            var Br = UF();
+            Z(ir, Br)
           };
           Ee(Ar, ir => {
             _(Nt) && ir(Nr)
           })
         }
-        var Br = O(Ar);
+        var Fr = O(Ar);
         C(Tt), C(br), Ue(() => {
           ur = Ur(Tt, 1, "font-flag relative font-medium", null, ur, {
             "bg-base-200": _(Nt)
-          }), ue(Br, ` ${_(ot).label??""}`)
+          }), ue(Fr, ` ${_(ot).label??""}`)
         }), Z(Je, br)
       }), C(Gt), C(yr);
       var Xr = O(yr, 2),
@@ -48474,7 +48470,7 @@ function QF(m, a) {
       {
         var oe = Je => {
           T0(Je, {
-            class: "absolute -right-1 -top-1",
+            class: "absolute -top-1 -right-1",
             get count() {
               return a.user.notificiationCount
             }
@@ -48599,9 +48595,9 @@ function QF(m, a) {
           ch(Nr, {
             class: "size-5"
           });
-          var Br = O(Nr);
-          C(Ar), Ue((ir, Dr, zr) => {
-            dr(Nt, "action", `${bb}/payment/create-portal-session`), ue(ur, ` ${ir??""}`), dr(Ar, "href", Dr), ue(Br, ` ${zr??""}`)
+          var Fr = O(Nr);
+          C(Ar), Ue((ir, Br, zr) => {
+            dr(Nt, "action", `${bb}/payment/create-portal-session`), ue(ur, ` ${ir??""}`), dr(Ar, "href", Br), ue(Fr, ` ${zr??""}`)
           }, [() => Zb(), () => z0(Ti.url.origin), () => J0()]), Z(Je, ot)
         };
         Ee(Mr, Je => {
@@ -48639,10 +48635,10 @@ function QF(m, a) {
         set open(Je) {
           Y(d, Je, !0)
         }
-      }), Ue((Je, ot, Nt, br, Tt, ur, Ar, Nr, Br, ir, Dr, zr, or) => {
+      }), Ue((Je, ot, Nt, br, Tt, ur, Ar, Nr, Fr, ir, Br, zr, or) => {
         Me = Ur(Se, 1, "btn relative size-12 p-0 shadow-md", null, Me, {
           "bg-red-500": _(V)
-        }), dr(Se, "title", Je), dr(vt, "title", a.user.data.name), ue(Zt, a.user.data.name), Ur(_t, 1, ot), ue(St, `#${a.user.data.id??""}`), ue(er, `${Nt??""}: `), ue(dt, br), ue(xr, `Level ${Tt??""}`), ue(Wt, ` (${ur??""}%) `), dr(tr, "data-tip", Ar), ue(kr, Nr), dr(Tr, "data-tip", Br), dr(Xr, "data-tip", ir), dr(we, "data-tip", Dr), ue(Jt, ` ${zr??""}`), lt.disabled = _(x), ue(Ze, ` ${or??""}`)
+        }), dr(Se, "title", Je), dr(vt, "title", a.user.data.name), ue(Zt, a.user.data.name), Ur(_t, 1, ot), ue(St, `#${a.user.data.id??""}`), ue(er, `${Nt??""}: `), ue(dt, br), ue(xr, `Level ${Tt??""}`), ue(Wt, ` (${ur??""}%) `), dr(tr, "data-tip", Ar), ue(kr, Nr), dr(Tr, "data-tip", Fr), dr(Xr, "data-tip", ir), dr(we, "data-tip", Br), ue(Jt, ` ${zr??""}`), lt.disabled = _(x), ue(Ze, ` ${or??""}`)
       }, [() => Hw(), () => ys(Ki(a.user.data.id)), () => _g(), () => a.user.data.pixelsPainted.toLocaleString("en-US"), () => Math.floor(a.user.data.level), () => Math.floor(a.user.data.level % 1 * 100), () => oT(), () => Xw(), () => L6(), () => Aa.muted ? OP() : RP(), () => ry(), () => i5(), () => Ub()]), Cn("focus", Se, () => {
         Y(F, window.pwaInstallPrompt, !0)
       }), Z(fe, ie)
@@ -49437,7 +49433,7 @@ var DB = me("<!> <!>", 1),
   WB = me('<!> <div class="ml-0.5 flex flex-wrap items-center gap-1 svelte-15blegn"><span><span class="svelte-15blegn"> </span> <span class="svelte-15blegn"> </span></span> <!> <!> <div class="ml-0.5 flex items-center svelte-15blegn"><!></div></div>', 1),
   $B = me('<span class="text-primary ml-1 text-xs svelte-15blegn"> </span>'),
   XB = me('<tr><th class="w-1 svelte-15blegn"><input type="checkbox" class="checkbox-sm checkbox pointer-event-none svelte-15blegn"/></th><td class="flex items-center gap-1 svelte-15blegn"><!></td><td class="text-center svelte-15blegn"> <!></td></tr>'),
-  YB = me('<div class="max-h-[27vh] overflow-y-auto overflow-x-hidden svelte-15blegn"><table class="table max-w-full svelte-15blegn"><thead class="svelte-15blegn"><tr class="svelte-15blegn"><th class="w-1 svelte-15blegn"><input type="checkbox" class="checkbox-sm checkbox svelte-15blegn"/></th><th class="svelte-15blegn">Player <button class="btn btn-xs btn-circle btn-ghost tooltip tooltip-bottom ml-0.5 svelte-15blegn" data-tip="Copy selected players IDs"><!></button> <button class="btn btn-xs btn-circle btn-soft btn-error tooltip tooltip-bottom svelte-15blegn" data-tip="Timeout selected players"><!></button> <!></th><th class="text-center svelte-15blegn"><!> Pixels Painted</th></tr></thead><tbody class="svelte-15blegn"></tbody></table></div>'),
+  YB = me('<div class="max-h-[27vh] overflow-x-hidden overflow-y-auto svelte-15blegn"><table class="table max-w-full svelte-15blegn"><thead class="svelte-15blegn"><tr class="svelte-15blegn"><th class="w-1 svelte-15blegn"><input type="checkbox" class="checkbox-sm checkbox svelte-15blegn"/></th><th class="svelte-15blegn">Player <button class="btn btn-xs btn-circle btn-ghost tooltip tooltip-bottom ml-0.5 svelte-15blegn" data-tip="Copy selected players IDs"><!></button> <button class="btn btn-xs btn-circle btn-soft btn-error tooltip tooltip-bottom svelte-15blegn" data-tip="Timeout selected players"><!></button> <!></th><th class="text-center svelte-15blegn"><!> Pixels Painted</th></tr></thead><tbody class="svelte-15blegn"></tbody></table></div>'),
   KB = me('<div class="w-full svelte-15blegn"><div class="rounded-t-box bg-base-100 border-base-300 sm:rounded-b-box w-full border-t sm:mb-3 sm:shadow-xl svelte-15blegn"><div class="p-3 svelte-15blegn"><div class="flex cursor-grab flex-wrap items-center justify-between gap-1 active:cursor-grabbing svelte-15blegn"><h2 class="flex items-center gap-1 pl-1 text-lg svelte-15blegn"><div class="bg-base-content/20 flex size-6 items-center justify-center rounded-full svelte-15blegn"><!></div> <span class="ml-0.5 svelte-15blegn">Selected area</span> <span class="text-base-content/80 ml-0.5 text-sm svelte-15blegn"> </span></h2> <div class="flex items-center gap-1 svelte-15blegn"><button data-tip="Save selected pixel art"><!></button> <button><!></button> <button><!></button> <button><!></button> <button class="btn btn-circle btn-sm svelte-15blegn"><!></button></div></div> <div class="pb-3 svelte-15blegn"><!></div></div></div></div>');
 
 function JB(m, a) {
@@ -49694,15 +49690,15 @@ function JB(m, a) {
       lt = Mr - Dt + 1,
       Pt = Pr - He + 1,
       Ze = new Array(Pt).fill(0).flatMap((Tt, ur) => new Array(lt).fill(0).map(async (Ar, Nr) => {
-        const Br = Dt + Nr,
+        const Fr = Dt + Nr,
           ir = He + ur;
-        let Dr = 0,
+        let Br = 0,
           zr = 0,
           or = a.tileSize - 1,
           Yr = a.tileSize - 1;
-        ir === He && (zr = At % a.tileSize), Br === Dt && (Dr = pt % a.tileSize), ir === Pr && (Yr = gt % a.tileSize), Br === Mr && (or = zt % a.tileSize);
-        const On = [Br, ir],
-          Nn = [Dr, zr],
+        ir === He && (zr = At % a.tileSize), Fr === Dt && (Br = pt % a.tileSize), ir === Pr && (Yr = gt % a.tileSize), Fr === Mr && (or = zt % a.tileSize);
+        const On = [Fr, ir],
+          Nn = [Br, zr],
           vn = [or, Yr];
         return {
           response: await cn.getPixelAreaInfo({
@@ -49726,7 +49722,7 @@ function JB(m, a) {
         tile: Nr
       }
       of kt) {
-      const [Br, ir] = Nr, [Dr, zr] = ur, [or, Yr] = Ar, En = or - Dr + 1, An = Yr - zr + 1;
+      const [Fr, ir] = Nr, [Br, zr] = ur, [or, Yr] = Ar, En = or - Br + 1, An = Yr - zr + 1;
       for (let Kr = 0; Kr < An; Kr++)
         for (let xn = 0; xn < En; xn++) {
           const On = Kr * En + xn,
@@ -49746,25 +49742,25 @@ function JB(m, a) {
             minLon: 1 / 0,
             maxLon: -1 / 0
           }, Je.set(Nn, vn));
-          const si = Dr + xn,
+          const si = Br + xn,
             Xn = zr + Kr,
-            li = Br * a.tileSize + (si + .5),
+            li = Fr * a.tileSize + (si + .5),
             Ii = ir * a.tileSize + (Xn + .5),
             [pi, Li] = he.pixelsToLatLon(li, Ii, a.pixelArtZoom);
-          if (vn.latitudes.push(pi), vn.longitudes.push(Li), vn.tileXs.push(Br), vn.tileYs.push(ir), vn.pixelXs.push(si), vn.pixelYs.push(Xn), vn.globalPx.push(li), vn.globalPy.push(Ii), pi < vn.minLat && (vn.minLat = pi), pi > vn.maxLat && (vn.maxLat = pi), Li < vn.minLon && (vn.minLon = Li), Li > vn.maxLon && (vn.maxLon = Li), Nn !== 0) {
-            const aa = `${Br}:${ir}:${si}:${Xn}`,
+          if (vn.latitudes.push(pi), vn.longitudes.push(Li), vn.tileXs.push(Fr), vn.tileYs.push(ir), vn.pixelXs.push(si), vn.pixelYs.push(Xn), vn.globalPx.push(li), vn.globalPy.push(Ii), pi < vn.minLat && (vn.minLat = pi), pi > vn.maxLat && (vn.maxLat = pi), Li < vn.minLon && (vn.minLon = Li), Li > vn.maxLon && (vn.maxLon = Li), Nn !== 0) {
+            const aa = `${Fr}:${ir}:${si}:${Xn}`,
               Hi = {
                 key: aa,
                 userId: Nn,
                 lat: pi,
                 lon: Li,
-                tile: [Br, ir],
+                tile: [Fr, ir],
                 pixel: [si, Xn],
                 globalPx: li,
                 globalPy: Ii
               };
             _t.set(aa, Hi);
-            const Wi = `${Br}:${ir}`;
+            const Wi = `${Fr}:${ir}`;
             let Ji = St.get(Wi);
             Ji || (Ji = [], St.set(Wi, Ji)), Ji.push(Hi)
           }
@@ -50232,15 +50228,15 @@ function JB(m, a) {
             if (!Ar.ok) throw new Error("Failed to load tile image.");
             const Nr = await Ar.blob();
             if ("createImageBitmap" in window) {
-              const Br = await createImageBitmap(Nr);
-              gt.drawImage(Br, Je - Ze, ot - kt, Tt, ur, Je - K, ot - Q, Tt, ur), Br.close && Br.close()
+              const Fr = await createImageBitmap(Nr);
+              gt.drawImage(Fr, Je - Ze, ot - kt, Tt, ur, Je - K, ot - Q, Tt, ur), Fr.close && Fr.close()
             } else {
-              const Br = URL.createObjectURL(Nr),
-                ir = await new Promise((Dr, zr) => {
+              const Fr = URL.createObjectURL(Nr),
+                ir = await new Promise((Br, zr) => {
                   const or = new Image;
-                  or.crossOrigin = "anonymous", or.onload = () => Dr(or), or.onerror = () => zr(new Error("Failed to decode tile image.")), or.src = Br
+                  or.crossOrigin = "anonymous", or.onload = () => Br(or), or.onerror = () => zr(new Error("Failed to decode tile image.")), or.src = Fr
                 });
-              gt.drawImage(ir, Je - Ze, ot - kt, Tt, ur, Je - K, ot - Q, Tt, ur), URL.revokeObjectURL(Br)
+              gt.drawImage(ir, Je - Ze, ot - kt, Tt, ur, Je - K, ot - Q, Tt, ur), URL.revokeObjectURL(Fr)
             }
           }
         const He = await new Promise((lt, Pt) => {
@@ -50564,10 +50560,10 @@ function JB(m, a) {
         ws(Nr, {
           class: "size-4"
         }), C(Ar), C(Jt), C(Xe);
-        var Br = O(Xe, 2),
-          ir = I(Br);
+        var Fr = O(Xe, 2),
+          ir = I(Fr);
         {
-          var Dr = or => {
+          var Br = or => {
               var Yr = BB();
               Z(or, Yr)
             },
@@ -50676,10 +50672,10 @@ function JB(m, a) {
                           skipCrosshair: !0
                         }), Pe.set(_(Vr).id, _(Vr)), (Sr(_(Vr)) || _(Vr).id === 0) && gi.plop.play())
                       };
-                      var Rr = I(mr),
-                        Fn = I(Rr);
-                      La(Fn), C(Rr);
-                      var bn = O(Rr),
+                      var Dr = I(mr),
+                        Fn = I(Dr);
+                      La(Fn), C(Dr);
+                      var bn = O(Dr),
                         Tn = I(bn);
                       {
                         var Bn = pn => {
@@ -50798,10 +50794,10 @@ function JB(m, a) {
               Z(or, Yr)
             };
           Ee(ir, or => {
-            _(A) ? or(Dr) : or(zr, !1)
+            _(A) ? or(Br) : or(zr, !1)
           })
         }
-        C(Br), C(ze), C(Q), C(K), so(K, or => Y(fe, or), () => _(fe)), Ue(or => {
+        C(Fr), C(ze), C(Q), C(K), so(K, or => Y(fe, or), () => _(fe)), Ue(or => {
           he = bs(K, "", he, {
             transform: `translate3d(${ie.x}px, ${ie.y}px, 0)`,
             "will-change": "transform"
@@ -51322,10 +51318,10 @@ function M9(m, a) {
                                               class: "size-5"
                                             });
                                             var Nr = O(Ar);
-                                            C(Tt), C(br), Ue(Br => {
+                                            C(Tt), C(br), Ue(Fr => {
                                               ur = Ur(Tt, 1, "text-error font-medium", null, ur, {
                                                 "cursor-not-allowed": _(F)
-                                              }), ue(Nr, ` ${Br??""}`)
+                                              }), ue(Nr, ` ${Fr??""}`)
                                             }, [() => Wb()]), Z(Nt, br)
                                           },
                                           ot = Nt => {
@@ -51334,8 +51330,8 @@ function M9(m, a) {
                                             {
                                               var ur = Ar => {
                                                 var Nr = y9(),
-                                                  Br = I(Nr);
-                                                Br.__click = async () => {
+                                                  Fr = I(Nr);
+                                                Fr.__click = async () => {
                                                   Y(s, !0);
                                                   try {
                                                     await cn.banAllianceUser(_(Rt).id), await fe({
@@ -51348,12 +51344,12 @@ function M9(m, a) {
                                                     Y(s, !1)
                                                   }
                                                 };
-                                                var ir = I(Br);
+                                                var ir = I(Fr);
                                                 r9(ir, {
                                                   class: "size-5"
                                                 });
-                                                var Dr = O(ir);
-                                                C(Br), C(Nr), Ue(zr => ue(Dr, ` ${zr??""}`), [() => X0()]), Z(Ar, Nr)
+                                                var Br = O(ir);
+                                                C(Fr), C(Nr), Ue(zr => ue(Br, ` ${zr??""}`), [() => X0()]), Z(Ar, Nr)
                                               };
                                               Ee(Tt, Ar => {
                                                 _(zt) === "ban-alliance" && Ar(ur)
@@ -52040,10 +52036,10 @@ function nO(m, a) {
             return Ft.data.droplets
           },
           onpurchasecompleted: async Nt => {
-            var ur, Ar, Nr, Br;
+            var ur, Ar, Nr, Fr;
             const br = (Ar = (ur = Ft.data) == null ? void 0 : ur.charges) == null ? void 0 : Ar.max;
             await Ft.refresh();
-            const Tt = (Br = (Nr = Ft.data) == null ? void 0 : Nr.charges) == null ? void 0 : Br.max;
+            const Tt = (Fr = (Nr = Ft.data) == null ? void 0 : Nr.charges) == null ? void 0 : Fr.max;
             br !== void 0 && Tt !== void 0 && (Y(A, {
               name: Zv(),
               prev: br,
@@ -52784,16 +52780,16 @@ function zN(m, a) {
         };
         var wr = I(mr);
         {
-          let Rr = ht(() => !_(at));
+          let Dr = ht(() => !_(at));
           Ky(wr, {
             class: "size-5",
             get filled() {
-              return _(Rr)
+              return _(Dr)
             }
           })
         }
-        C(mr), Ue(Rr => {
-          dr(mr, "title", Rr), Ur(mr, 1, ys({
+        C(mr), Ue(Dr => {
+          dr(mr, "title", Dr), Ur(mr, 1, ys({
             "btn btn-lg btn-square sm:btn-xl z-30 shadow-md": !0,
             "text-base-content/80": _(at),
             "btn-primary btn-soft": !_(at)
@@ -52823,7 +52819,7 @@ function zN(m, a) {
         };
         var wr = I(mr);
         {
-          var Rr = bn => {
+          var Dr = bn => {
               cO(bn, {
                 class: "size-5.5 fill-blue-800"
               })
@@ -52836,7 +52832,7 @@ function zN(m, a) {
               }), yn(2), C(Tn), Z(bn, Tn)
             };
           Ee(wr, bn => {
-            _(Ye) ? bn(Rr) : bn(Fn, !1)
+            _(Ye) ? bn(Dr) : bn(Fn, !1)
           })
         }
         C(mr), Ue(bn => dr(mr, "title", bn), [() => Z2()]), Z(Er, mr)
@@ -52850,17 +52846,17 @@ function zN(m, a) {
       var K = Er => {
           var mr = xO();
           mr.__click = () => {
-            var Rr;
-            Y(Xr, !0), _(V) && ps((Rr = _(V)) == null ? void 0 : Rr.getCenter(), _(J))
+            var Dr;
+            Y(Xr, !0), _(V) && ps((Dr = _(V)) == null ? void 0 : Dr.getCenter(), _(J))
           };
           var wr = I(mr, !0);
-          C(mr), Ue(Rr => ue(wr, Rr), [() => d2()]), Z(Er, mr)
+          C(mr), Ue(Dr => ue(wr, Dr), [() => d2()]), Z(Er, mr)
         },
         he = Er => {
           var mr = lr(),
             wr = bt(mr);
           {
-            var Rr = Fn => {
+            var Dr = Fn => {
               var bn = TO(),
                 Tn = I(bn);
               {
@@ -52919,7 +52915,7 @@ function zN(m, a) {
               })), Z(Fn, bn)
             };
             Ee(wr, Fn => {
-              Ft.data && _(V) && _(ie).name !== "paintingPixel" && Fn(Rr)
+              Ft.data && _(V) && _(ie).name !== "paintingPixel" && Fn(Dr)
             }, !0)
           }
           Z(Er, mr)
@@ -52934,7 +52930,7 @@ function zN(m, a) {
           var mr = CO(),
             wr = I(mr);
           {
-            var Rr = tn => {
+            var Dr = tn => {
               var mn = SO(),
                 kn = bt(mn);
               kn.__click = () => {
@@ -52959,7 +52955,7 @@ function zN(m, a) {
               }, [() => G0(), () => tf()]), Z(tn, mn)
             };
             Ee(wr, tn => {
-              Ft.data && tn(Rr)
+              Ft.data && tn(Dr)
             })
           }
           var Fn = O(wr, 2);
@@ -53006,7 +53002,7 @@ function zN(m, a) {
           var mr = lr(),
             wr = bt(mr);
           {
-            var Rr = Fn => {
+            var Dr = Fn => {
               var bn = IO(),
                 Tn = I(bn);
               let Bn;
@@ -53039,7 +53035,7 @@ function zN(m, a) {
               })), Z(Fn, bn)
             };
             Ee(wr, Fn => {
-              _(V) && _(ie).name === "paintingPixel" && Fn(Rr)
+              _(V) && _(ie).name === "paintingPixel" && Fn(Dr)
             }, !0)
           }
           Z(Er, mr)
@@ -53061,7 +53057,7 @@ function zN(m, a) {
         var wr = I(mr);
         aO(wr, {
           class: "size-3.5"
-        }), C(mr), Ue(Rr => dr(mr, "title", Rr), [() => I2()]), Z(Er, mr)
+        }), C(mr), Ue(Dr => dr(mr, "title", Dr), [() => I2()]), Z(Er, mr)
       };
       Ee(pt, Er => {
         _(ie).name !== "paintingPixel" && Er(At)
@@ -53088,8 +53084,8 @@ function zN(m, a) {
             name: "selectArea"
           }, !0)
         };
-        var Rr = I(wr);
-        uh(Rr, {
+        var Dr = I(wr);
+        uh(Dr, {
           class: "size-4"
         }), C(wr), C(mr), Z(Er, mr)
       };
@@ -53107,7 +53103,7 @@ function zN(m, a) {
           onclick: () => {
             Y(fe, !_(fe))
           }
-        }), C(mr), Ue(Rr => dr(mr, "title", Rr), [() => s5()]), Z(Er, mr)
+        }), C(mr), Ue(Dr => dr(mr, "title", Dr), [() => s5()]), Z(Er, mr)
       };
       Ee(Dt, Er => {
         _(ae) && Er(He)
@@ -53123,7 +53119,7 @@ function zN(m, a) {
         var wr = I(mr);
         r2(wr, {
           class: "size-3"
-        }), C(mr), Ue(Rr => dr(mr, "title", Rr), [() => i2()]), Z(Er, mr)
+        }), C(mr), Ue(Dr => dr(mr, "title", Dr), [() => i2()]), Z(Er, mr)
       };
       Ee(Mr, Er => {
         _(ie).name !== "paintingPixel" && Er(Pr)
@@ -53140,8 +53136,8 @@ function zN(m, a) {
         n2(wr, {
           class: "size-5"
         });
-        var Rr = O(wr);
-        C(mr), Ue(Fn => ue(Rr, ` ${Fn??""}`), [() => F2()]), xa(1, mr, () => oo, () => ({
+        var Dr = O(wr);
+        C(mr), Ue(Fn => ue(Dr, ` ${Fn??""}`), [() => F2()]), xa(1, mr, () => oo, () => ({
           duration: 1e3
         })), xa(2, mr, () => oo), Z(Er, mr)
       };
@@ -53164,8 +53160,8 @@ function zN(m, a) {
         hO(wr, {
           class: "size-5"
         });
-        var Rr = O(wr);
-        C(mr), Ue(Fn => ue(Rr, ` ${Fn??""}`), [() => N2()]), xa(3, mr, () => oo, () => ({
+        var Dr = O(wr);
+        C(mr), Ue(Fn => ue(Dr, ` ${Fn??""}`), [() => N2()]), xa(3, mr, () => oo, () => ({
           duration: 300
         })), Z(Er, mr)
       };
@@ -53215,15 +53211,15 @@ function zN(m, a) {
     C(br);
     var Nr = O(br, 2);
     let fi;
-    var Br = I(Nr);
-    ar(Br), C(Nr);
+    var Fr = I(Nr);
+    ar(Fr), C(Nr);
     var ir = O(Nr, 2);
     {
-      var Dr = Er => {
+      var Br = Er => {
         var mr = lr(),
           wr = bt(mr);
         {
-          var Rr = bn => {
+          var Dr = bn => {
               var Tn = RO(),
                 Bn = I(Tn),
                 jn = I(Bn);
@@ -53516,13 +53512,13 @@ function zN(m, a) {
               Z(bn, Tn)
             };
           Ee(wr, bn => {
-            _(ie).name === "pixelSelected" && _(Qe) ? bn(Rr) : bn(Fn, !1)
+            _(ie).name === "pixelSelected" && _(Qe) ? bn(Dr) : bn(Fn, !1)
           })
         }
         Z(Er, mr)
       };
       Ee(ir, Er => {
-        _(V) && Er(Dr)
+        _(V) && Er(Br)
       })
     }
     C(we), Ue((Er, mr) => {
