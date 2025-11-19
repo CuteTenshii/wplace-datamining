@@ -1,9 +1,9 @@
-import "./D_DVwBX9.js";
+import "./Cfpgtd0_.js";
 (function() {
   try {
     var q = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     q.SENTRY_RELEASE = {
-      id: "41710f7ccc2fafb6890924daac86ac6566913848"
+      id: "6d97a8a46c0eab54dca8573924bccbc5e0735b3d"
     }
   } catch {}
 })();

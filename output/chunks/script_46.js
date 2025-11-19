@@ -1,27 +1,27 @@
 import {
   g as v
-} from "./DJY_xlKf.js";
-import "./B3u6ywqi.js";
+} from "./BwmEGhSN.js";
+import "./6XiPGgmk.js";
 import {
   w as p,
   a as b,
   b as l,
-  z as f
-} from "./CJTyhPUr.js";
+  z as d
+} from "./Ci4OD8YS.js";
 import {
   i as g
-} from "./UPSqIJIB.js";
+} from "./2mODvUaD.js";
 import {
   d as i
-} from "./DIbuvbIG.js";
+} from "./BG8dlIP-.js";
 import {
   r as u
-} from "./DR-ReqOF.js";
+} from "./BtU7hyHw.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "41710f7ccc2fafb6890924daac86ac6566913848"
+      id: "6d97a8a46c0eab54dca8573924bccbc5e0735b3d"
     }
   } catch {}
 })();
@@ -35,15 +35,15 @@ try {
 const y = e => `Copy alliance ID: #${e.allianceId}`,
   _ = e => `Copiar ID da aliança: #${e.allianceId}`,
   Z = (e, o = {}) => (o.locale ?? v()) === "en" ? y(e) : _(e);
-var h = f('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
-  w = f('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
+var h = d('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
+  w = d('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
 
 function x(e, o) {
   let n = u(o, ["$$slots", "$$events", "$$legacy", "filled"]);
   var r = p(),
     s = b(r);
   {
-    var d = a => {
+    var f = a => {
         var t = h();
         i(t, () => ({
           xmlns: "http://www.w3.org/2000/svg",
@@ -62,7 +62,7 @@ function x(e, o) {
         })), l(a, t)
       };
     g(s, a => {
-      o.filled ? a(d) : a(c, !1)
+      o.filled ? a(f) : a(c, !1)
     })
   }
   l(e, r)
