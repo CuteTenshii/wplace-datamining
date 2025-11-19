@@ -1,11 +1,11 @@
 import {
-  S as c
-} from "./BvPzsbJY.js";
+  S as i
+} from "./C4MN3mjs.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "fe5b293b0b58eb9d702fd066546411c50747d7aa"
+      id: "399bc8c4e783d71b221f731ebe74f832c15927f3"
     }
   } catch {}
 })();
@@ -13,7 +13,7 @@ try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "82e8e72e-7f23-49a8-aa8a-ea1e842386bf", t._sentryDebugIdIdentifier = "sentry-dbid-82e8e72e-7f23-49a8-aa8a-ea1e842386bf")
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "18acf6a5-96e7-4fb1-9c91-609654ba95e3", t._sentryDebugIdIdentifier = "sentry-dbid-18acf6a5-96e7-4fb1-9c91-609654ba95e3")
   })()
 } catch {}
 const u = ["text-red-500", "text-orange-500", "text-yellow-500", "text-lime-500", "text-emerald-500", "text-teal-500", "text-cyan-500", "text-sky-500", "text-indigo-500", "text-violet-500", "text-purple-500", "text-fuchsia-500", "text-pink-500", "text-rose-500"],
@@ -51,8 +51,8 @@ function k(t) {
 }
 
 function C(t) {
-  t = Math.min(t, c.colors.length - 1);
-  const [e, n, o] = c.colors[t].rgb;
+  t = Math.min(t, i.colors.length - 1);
+  const [e, n, o] = i.colors[t].rgb;
   return {
     r: e,
     g: n,
@@ -60,7 +60,7 @@ function C(t) {
     a: t === 0 ? 0 : 255
   }
 }
-const y = c.colors.map((t, e) => ({
+const y = i.colors.map((t, e) => ({
     ...t,
     idx: e,
     lab: w({
@@ -69,7 +69,7 @@ const y = c.colors.map((t, e) => ({
       b: t.rgb[2]
     })
   })).filter(t => t.idx !== 0),
-  h = c.colors.map((t, e) => ({
+  h = i.colors.map((t, e) => ({
     idx: e,
     rgb: {
       r: t.rgb[0],
@@ -83,8 +83,8 @@ function R(t, e = "lab") {
     let r = h[0],
       l = Number.MAX_VALUE;
     for (const s of h) {
-      const i = x(t, s.rgb);
-      i < l && (r = s, l = i)
+      const c = x(t, s.rgb);
+      c < l && (r = s, l = c)
     }
     return r.idx
   }
@@ -117,15 +117,15 @@ function M(t, e) {
     r = Math.sqrt(t.a * t.a + t.b * t.b),
     l = Math.sqrt(e.a * e.a + e.b * e.b),
     s = r - l,
-    i = o * o + a * a - s * s;
-  i = i < 0 ? 0 : Math.sqrt(i);
+    c = o * o + a * a - s * s;
+  c = c < 0 ? 0 : Math.sqrt(c);
   var m = 1 + .045 * r,
     v = 1 + .015 * r,
     g = n / 1,
     b = s / m,
-    d = i / v,
-    f = g * g + b * b + d * d;
-  return f < 0 ? 0 : Math.sqrt(f)
+    f = c / v,
+    d = g * g + b * b + f * f;
+  return d < 0 ? 0 : Math.sqrt(d)
 }
 
 function x(t, e) {
