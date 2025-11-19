@@ -1,4 +1,4 @@
-import "./C7kAH1Hq.js";
+import "./B3u6ywqi.js";
 import {
   p as u,
   f as c,
@@ -8,24 +8,24 @@ import {
   d as v,
   s as y,
   r as _
-} from "./DKMpf0HC.js";
+} from "./CJTyhPUr.js";
 import {
   i as h
-} from "./CTJ5H8vK.js";
+} from "./UPSqIJIB.js";
 import {
   d as w,
   a as r,
   s as x
-} from "./D_6RnY6R.js";
+} from "./DIbuvbIG.js";
 import {
   p as E,
   r as T
-} from "./BtFnqC_r.js";
+} from "./DR-ReqOF.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "399bc8c4e783d71b221f731ebe74f832c15927f3"
+      id: "41710f7ccc2fafb6890924daac86ac6566913848"
     }
   } catch {}
 })();
@@ -42,36 +42,36 @@ var B = c("<span>wplace</span>"),
 
 function z(e, t) {
   u(t, !0);
-  let s = E(t, "size", 3, "default"),
-    b = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
-  var a = L();
-  w(a, () => ({
-    ...b,
+  let a = E(t, "size", 3, "default"),
+    p = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+  var s = L();
+  w(s, () => ({
+    ...p,
     class: `flex items-center gap-1.5 ${t.class??""}`
   }));
-  var l = v(a);
+  var l = v(s);
   let o;
-  var p = y(l, 2);
+  var b = y(l, 2);
   {
     var g = i => {
       var f = B();
       let n;
       d(() => n = r(f, 1, "text-base-content font-pixel", null, n, {
-        "text-4xl": s() === "default",
-        "text-5xl": s() === "lg" || s() === "medium"
+        "text-4xl": a() === "default",
+        "text-5xl": a() === "lg" || a() === "medium"
       })), A(i, f)
     };
-    h(p, i => {
+    h(b, i => {
       t.hasText && i(g)
     })
   }
-  _(a), d(() => {
+  _(s), d(() => {
     o = r(l, 1, "pixelated", null, o, {
-      "size-10": s() === "default",
-      "size-16": s() === "medium",
-      "size-20": s() === "lg"
+      "size-10": a() === "default",
+      "size-16": a() === "medium",
+      "size-20": a() === "lg"
     }), x(l, "src", S)
-  }), A(e, a), m()
+  }), A(e, s), m()
 }
 export {
   z as L

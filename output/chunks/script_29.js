@@ -8,12 +8,12 @@ import {
   g as u,
   I as h,
   J as w
-} from "./DKMpf0HC.js";
+} from "./CJTyhPUr.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "399bc8c4e783d71b221f731ebe74f832c15927f3"
+      id: "41710f7ccc2fafb6890924daac86ac6566913848"
     }
   } catch {}
 })();
@@ -29,27 +29,27 @@ function I(e = !1) {
   const n = p,
     f = n.l.u;
   if (!f) return;
-  let i = () => h(n.s);
+  let a = () => h(n.s);
   if (e) {
     let s = 0,
       t = {};
     const b = w(() => {
-      let c = !1;
-      const a = n.s;
-      for (const o in a) a[o] !== t[o] && (t[o] = a[o], c = !0);
-      return c && s++, s
+      let i = !1;
+      const c = n.s;
+      for (const o in c) c[o] !== t[o] && (t[o] = c[o], i = !0);
+      return i && s++, s
     });
-    i = () => u(b)
+    a = () => u(b)
   }
   f.b.length && g(() => {
-    l(n, i), r(f.b)
+    l(n, a), r(f.b)
   }), d(() => {
     const s = y(() => f.m.map(_));
     return () => {
       for (const t of s) typeof t == "function" && t()
     }
   }), f.a.length && d(() => {
-    l(n, i), r(f.a)
+    l(n, a), r(f.a)
   })
 }
 
