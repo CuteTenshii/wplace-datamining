@@ -1,10 +1,10 @@
 import {
-  g as m
-} from "./BwmEGhSN.js";
-import "./6XiPGgmk.js";
+  g as f
+} from "./Dn1N4dmO.js";
+import "./B5YT6ZOG.js";
 import {
   o as ot
-} from "./CoXRNLT0.js";
+} from "./BvfTW1rJ.js";
 import {
   z as Pe,
   b as v,
@@ -23,19 +23,19 @@ import {
   g as t,
   u as te,
   t as T,
-  q as fe,
+  q as me,
   w as ae,
   a as re
-} from "./Ci4OD8YS.js";
+} from "./FaeLmLA_.js";
 import {
   s as x
-} from "./CERcNnYT.js";
+} from "./280n_u0P.js";
 import {
   i as R
-} from "./2mODvUaD.js";
+} from "./GwSmVPTs.js";
 import {
   e as Le
-} from "./4Q2aoaAm.js";
+} from "./cP63cRe0.js";
 import {
   d as Ae,
   e as ut,
@@ -43,25 +43,25 @@ import {
   s as j,
   g as dt,
   a as ne
-} from "./BG8dlIP-.js";
+} from "./v2mNV6VW.js";
 import {
   t as _t
-} from "./BtA9Lj99.js";
+} from "./CXWSJHhM.js";
 import {
   c as pt
-} from "./CrByaeVB.js";
+} from "./SxB3zfHF.js";
 import {
   b as vt
-} from "./B6LqSHHM.js";
+} from "./DgMUHfTK.js";
 import {
   r as qe,
-  p as mt
-} from "./BtU7hyHw.js";
+  p as ft
+} from "./YGDO1sUr.js";
 import {
   P as ge
-} from "./Cfpgtd0_.js";
+} from "./BoXu1vcO.js";
 import {
-  i as ft,
+  i as mt,
   h as gt,
   d as bt,
   e as ht,
@@ -69,43 +69,43 @@ import {
   t as U,
   o as yt,
   a as be
-} from "./D1pWKeJi.js";
+} from "./9Sf8jHK-.js";
 import {
   o as wt,
   L as It,
   s as Tt,
   g as Rt
-} from "./BKrLXHBt.js";
+} from "./BxD8ABN8.js";
 import {
   P as De
-} from "./fDJwJ0kV.js";
+} from "./BHts-GTi.js";
 import {
   G as Ee,
   T as Ne,
   t as Se
-} from "./CMWlHs5y.js";
+} from "./BH2ee__k.js";
 import {
   c as kt
-} from "./B4Z5CzHf.js";
+} from "./BijpDVN2.js";
 import {
   a as Lt
-} from "./BLbRJ1Bs.js";
+} from "./BDrt5SMk.js";
 import {
   u as zt,
   a as Dt
-} from "./MTw5pIHh.js";
+} from "./DhvRQF93.js";
 import {
   g as oe,
   a as Ue
-} from "./9pm41bRD.js";
+} from "./DCldh94D.js";
 import {
   f as Et
-} from "./G0_1pcGQ.js";
+} from "./Bfkvr95f.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "6d97a8a46c0eab54dca8573924bccbc5e0735b3d"
+      id: "2a38764e420fdb01cdb08c4f31f9aa71df376c33"
     }
   } catch {}
 })();
@@ -118,73 +118,73 @@ try {
 } catch {}
 const Nt = () => "Log Out",
   St = () => "Log Out",
-  yr = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? Nt() : St(),
+  yr = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? Nt() : St(),
   Ut = () => "Copy",
   Bt = () => "Copiar",
-  wr = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? Ut() : Bt(),
+  wr = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? Ut() : Bt(),
   Ct = () => "Banned",
   Ot = () => "Banido",
-  Be = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? Ct() : Ot(),
+  Be = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? Ct() : Ot(),
   Pt = () => "Report User",
   At = () => "Reportar usuário",
-  qt = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? Pt() : At(),
+  qt = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? Pt() : At(),
   Zt = () => "Timeout User",
   Mt = () => "Suspender usuário",
-  Ce = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? Zt() : Mt(),
+  Ce = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? Zt() : Mt(),
   jt = () => "Ban User",
   Gt = () => "Banir usuário",
-  Oe = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? jt() : Gt(),
+  Oe = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? jt() : Gt(),
   Ht = () => "+18, inappropriate link, highly suggestive content, ...",
   Vt = () => "+18, links inapropriados, conteúdo altamente sugestivo, ...",
-  Wt = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? Ht() : Vt(),
+  Wt = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? Ht() : Vt(),
   Ft = () => "Use of software to completely automate painting",
   Jt = () => "Uso de software para pintar de forma completamente automatizada ",
-  Kt = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? Ft() : Jt(),
+  Kt = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? Ft() : Jt(),
   Yt = () => "Racism, homophobia, hate groups, ...",
   Qt = () => "Racismo, homofobia, grupos de ódio, ...",
-  Xt = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? Yt() : Qt(),
+  Xt = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? Yt() : Qt(),
   $t = () => "Messed up artworks for no reason",
   ea = () => "Estragar desenho dos outros sem motivo",
-  ta = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? $t() : ea(),
+  ta = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? $t() : ea(),
   aa = () => "Released other's personal information without their consent",
   ra = () => "Vazar informações pessoais de terceiros sem consentimento",
-  na = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? aa() : ra(),
+  na = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? aa() : ra(),
   oa = () => "Other reason not listed",
   sa = () => "Outro motivo não listado",
-  la = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? oa() : sa(),
+  la = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? oa() : sa(),
   ia = () => "Report",
   ca = () => "Reportar",
-  ua = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? ia() : ca(),
+  ua = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? ia() : ca(),
   da = () => "Report sent successfully",
   _a = () => "Denúncia enviada com sucesso",
-  pa = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? da() : _a(),
+  pa = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? da() : _a(),
   va = () => "Report failed. Please try again later",
-  ma = () => "Denúncia falhou. Por favor, tente novamente mais tarde",
-  Z = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? va() : ma(),
-  fa = () => "Purchases",
+  fa = () => "Denúncia falhou. Por favor, tente novamente mais tarde",
+  Z = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? va() : fa(),
+  ma = () => "Purchases",
   ga = () => "Compras",
-  Ir = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? fa() : ga(),
+  Ir = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? ma() : ga(),
   ba = () => "Log out from all devices",
   ha = () => "Sair de todos os dispositivos",
-  Tr = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? ba() : ha(),
+  Tr = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? ba() : ha(),
   xa = () => "Sessions successfully revoked",
   ya = () => "Sessões encerradas com sucesso",
-  Rr = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? xa() : ya(),
+  Rr = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? xa() : ya(),
   wa = () => "Error revoking sessions. Try again later.",
   Ia = () => "Erro ao encerrar sessões. Tente novamente mais tarde.",
-  kr = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? wa() : Ia(),
+  kr = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? wa() : Ia(),
   Ta = () => "Report name",
   Ra = () => "Reportar nome",
-  ka = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? Ta() : Ra(),
+  ka = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? Ta() : Ra(),
   La = () => "Name reported successfully",
   za = () => "Nome reportado com sucesso",
-  Da = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? La() : za(),
+  Da = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? La() : za(),
   Ea = () => "Report alliance name",
   Na = () => "Reportar nome da aliança",
-  Sa = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? Ea() : Na(),
+  Sa = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? Ea() : Na(),
   Ua = () => "Alliance name reported successfully",
   Ba = () => "Nome da aliança reportado com sucesso",
-  Ca = (n = {}, e = {}) => (e.locale ?? m()) === "en" ? Ua() : Ba();
+  Ca = (n = {}, e = {}) => (e.locale ?? f()) === "en" ? Ua() : Ba();
 var Oa = Pe('<svg><path d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"></path></svg>');
 
 function Pa(n, e) {
@@ -215,7 +215,7 @@ var Aa = E('<span class="badge badge-sm border-0"> </span>'),
 function Lr(n, e) {
   lt(e, !0);
   const c = [];
-  let k = mt(e, "open", 15),
+  let k = ft(e, "open", 15),
     O = F(!1),
     J = F(""),
     se = F(""),
@@ -223,7 +223,7 @@ function Lr(n, e) {
     le = F(null);
   const Ze = [{
     value: "inappropriate-content",
-    label: ft(),
+    label: mt(),
     description: Wt()
   }, {
     value: "hate-speech",
@@ -327,33 +327,33 @@ function Lr(n, e) {
         Fe = r(ce);
       {
         var Je = s => {
-            var o = fe();
+            var o = me();
             T(d => x(o, d), [() => qt()]), v(s, o)
           },
           Ke = s => {
             var o = ae(),
               d = re(o);
             {
-              var g = f => {
-                  var h = fe();
-                  T(_ => x(h, _), [() => Ce()]), v(f, h)
+              var g = m => {
+                  var h = me();
+                  T(_ => x(h, _), [() => Ce()]), v(m, h)
                 },
-                l = f => {
+                l = m => {
                   var h = ae(),
                     _ = re(h);
                   {
                     var z = I => {
-                      var B = fe();
+                      var B = me();
                       T(M => x(B, M), [() => Oe()]), v(I, B)
                     };
                     R(_, I => {
                       e.action === "ban" && I(z)
                     }, !0)
                   }
-                  v(f, h)
+                  v(m, h)
                 };
-              R(d, f => {
-                e.action === "timeout" ? f(g) : f(l, !1)
+              R(d, m => {
+                e.action === "timeout" ? m(g) : m(l, !1)
               }, !0)
             }
             v(s, o)
@@ -371,9 +371,9 @@ function Lr(n, e) {
             g = r(d),
             l = r(g, !0);
           a(g);
-          var f = p(g, 2),
-            h = r(f);
-          a(f), a(d);
+          var m = p(g, 2),
+            h = r(m);
+          a(m), a(d);
           var _ = p(d, 2);
           {
             var z = u => {
@@ -430,8 +430,8 @@ function Lr(n, e) {
           }
           var H = p(M, 2),
             V = r(H),
-            me = r(V);
-          Pa(me, {
+            fe = r(V);
+          Pa(fe, {
             class: "text-error inline size-4"
           }), a(V);
           var $ = p(V, 2),
@@ -472,8 +472,8 @@ function Lr(n, e) {
           var o = Ja(),
             d = r(o);
           Le(d, 21, () => e.targets, g => g.id, (g, l) => {
-            var f = Fa(),
-              h = r(f);
+            var m = Fa(),
+              h = r(m);
             De(h, {
               class: "size-8 border-0",
               get userId() {
@@ -505,7 +505,7 @@ function Lr(n, e) {
                 t(l).allianceId && t(l).allianceName && w(V)
               })
             }
-            var me = p(H, 2);
+            var fe = p(H, 2);
             {
               var $ = w => {
                   var D = Va(),
@@ -531,13 +531,13 @@ function Lr(n, e) {
                   }
                   v(w, D)
                 };
-              R(me, w => {
+              R(fe, w => {
                 t(l).banned ? w($) : w(W, !1)
               })
             }
-            a(z), a(_), a(f), T(w => {
+            a(z), a(_), a(m), T(w => {
               ne(I, 1, `font-medium ${w??""} flex gap-1.5`), x(M, t(l).name), x(ve, `#${t(l).id??""}`)
-            }, [() => oe(t(l).id)]), v(g, f)
+            }, [() => oe(t(l).id)]), v(g, m)
           }), a(d), a(o), v(s, o)
         };
         R(we, s => {
@@ -553,13 +553,13 @@ function Lr(n, e) {
         var d = Ka(),
           g = r(d);
         ze(g);
-        var l, f = p(g, 2),
-          h = r(f),
+        var l, m = p(g, 2),
+          h = r(m),
           _ = r(h, !0);
         a(h);
         var z = p(h, 2),
           I = r(z, !0);
-        a(z), a(f), a(d), T(() => {
+        a(z), a(m), a(d), T(() => {
           j(g, "aria-label", t(o).label), l !== (l = t(o).value) && (g.value = (g.__value = t(o).value) ?? ""), x(_, t(o).label), x(I, t(o).description)
         }), pt(c, [], g, () => (t(o).value, t(J)), B => S(J, B)), v(s, d)
       }), a(Ie), a(ue);
@@ -605,7 +605,7 @@ function Lr(n, e) {
       a(pe), a(Te), a(b), vt(b, s => S(K, s), () => t(K)), T((s, o, d) => {
         j(b, "action", Me[e.action]), dt(Y, e.zoom), x($e, `${s??""}:`), x(tt, o), pe.disabled = t(O), x(at, d)
       }, [() => Tt(), () => kt(), () => ua()]), ke("submit", b, async s => {
-        var f, h;
+        var m, h;
         if (s.preventDefault(), t(O) || !t(le)()) return;
         const o = new FormData(t(K)),
           d = String(o.get("reason") ?? "");
@@ -629,7 +629,7 @@ function Lr(n, e) {
               body: o,
               credentials: "include"
             });
-            z.status === 200 || z.status === 409 ? (U.info(pa()), (f = e.onsuccess) == null || f.call(e, {
+            z.status === 200 || z.status === 409 ? (U.info(pa()), (m = e.onsuccess) == null || m.call(e, {
               action: e.action,
               userIds: [l[0]]
             }), k(!1)) : U.error(Z())
