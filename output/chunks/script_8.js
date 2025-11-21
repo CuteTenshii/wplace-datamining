@@ -2,7 +2,7 @@
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "52f7dd52d370e3cd3a68b7bd4fba1dfc255f8526"
+      id: "6d992b625daae7fbeceb4c3bf7e8ebe3eb30a19f"
     }
   } catch {}
 })();
@@ -18,47 +18,47 @@ const m = "modulepreload",
     return new URL(e, o).href
   },
   g = {},
-  v = function(o, a, u) {
+  v = function(o, f, u) {
     let h = Promise.resolve();
-    if (a && a.length > 0) {
+    if (f && f.length > 0) {
       let i = function(t) {
-        return Promise.all(t.map(s => Promise.resolve(s).then(d => ({
+        return Promise.all(t.map(s => Promise.resolve(s).then(a => ({
           status: "fulfilled",
-          value: d
-        }), d => ({
+          value: a
+        }), a => ({
           status: "rejected",
-          reason: d
+          reason: a
         }))))
       };
       const n = document.getElementsByTagName("link"),
         l = document.querySelector("meta[property=csp-nonce]"),
-        b = (l == null ? void 0 : l.nonce) || (l == null ? void 0 : l.getAttribute("nonce"));
-      h = i(a.map(t => {
+        y = (l == null ? void 0 : l.nonce) || (l == null ? void 0 : l.getAttribute("nonce"));
+      h = i(f.map(t => {
         if (t = w(t, u), t in g) return;
         g[t] = !0;
         const s = t.endsWith(".css"),
-          d = s ? '[rel="stylesheet"]' : "";
+          a = s ? '[rel="stylesheet"]' : "";
         if (!!u)
           for (let c = n.length - 1; c >= 0; c--) {
-            const f = n[c];
-            if (f.href === t && (!s || f.rel === "stylesheet")) return
-          } else if (document.querySelector(`link[href="${t}"]${d}`)) return;
+            const d = n[c];
+            if (d.href === t && (!s || d.rel === "stylesheet")) return
+          } else if (document.querySelector(`link[href="${t}"]${a}`)) return;
         const r = document.createElement("link");
-        if (r.rel = s ? "stylesheet" : m, s || (r.as = "script"), r.crossOrigin = "", r.href = t, b && r.setAttribute("nonce", b), document.head.appendChild(r), s) return new Promise((c, f) => {
-          r.addEventListener("load", c), r.addEventListener("error", () => f(new Error(`Unable to preload CSS for ${t}`)))
+        if (r.rel = s ? "stylesheet" : m, s || (r.as = "script"), r.crossOrigin = "", r.href = t, y && r.setAttribute("nonce", y), document.head.appendChild(r), s) return new Promise((c, d) => {
+          r.addEventListener("load", c), r.addEventListener("error", () => d(new Error(`Unable to preload CSS for ${t}`)))
         })
       }))
     }
 
-    function y(i) {
+    function b(i) {
       const n = new Event("vite:preloadError", {
         cancelable: !0
       });
       if (n.payload = i, window.dispatchEvent(n), !n.defaultPrevented) throw i
     }
     return h.then(i => {
-      for (const n of i || []) n.status === "rejected" && y(n.reason);
-      return o().catch(y)
+      for (const n of i || []) n.status === "rejected" && b(n.reason);
+      return o().catch(b)
     })
   };
 export {

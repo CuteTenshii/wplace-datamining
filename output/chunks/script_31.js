@@ -1,32 +1,32 @@
 import {
   g as t
-} from "./DaUp8CSR.js";
+} from "./QpTCyiP3.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "52f7dd52d370e3cd3a68b7bd4fba1dfc255f8526"
+      id: "6d992b625daae7fbeceb4c3bf7e8ebe3eb30a19f"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      f = new e.Error().stack;
-    f && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[f] = "51044a4c-f3fe-4463-9d8f-6cdf5fa96774", e._sentryDebugIdIdentifier = "sentry-dbid-51044a4c-f3fe-4463-9d8f-6cdf5fa96774")
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "51044a4c-f3fe-4463-9d8f-6cdf5fa96774", e._sentryDebugIdIdentifier = "sentry-dbid-51044a4c-f3fe-4463-9d8f-6cdf5fa96774")
   })()
 } catch {}
 
-function n() {
+function f() {
   return t()
 }
 
 function r() {
-  return `/terms/return${n()==="pt"?"/pt":""}`
+  return `/terms/return${f()==="pt"?"/pt":""}`
 }
 
 function o() {
-  return `/terms/terms-of-service${n()==="pt"?"/pt":""}`
+  return `/terms/terms-of-service${f()==="pt"?"/pt":""}`
 }
 export {
   r,

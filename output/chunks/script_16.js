@@ -9,12 +9,12 @@ import {
   g as o,
   o as r,
   m
-} from "./DFT4Ffb_.js";
+} from "./CYmALYaf.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "52f7dd52d370e3cd3a68b7bd4fba1dfc255f8526"
+      id: "6d992b625daae7fbeceb4c3bf7e8ebe3eb30a19f"
     }
   } catch {}
 })();
@@ -30,18 +30,18 @@ const L = "true",
   v = "0x4AAAAAABpHqZ-6i7uL0nmG",
   A = "https://backend.wplace.live",
   p = "theme";
-var l, g, d, u, f, c, h;
+var l, g, u, d, c, f, h;
 class y {
   constructor() {
     n(this, l, s(!1));
     n(this, g, s(!1));
-    n(this, d, s(m(I())));
-    n(this, u, s(!1));
-    n(this, f, s("custom-winter"));
-    n(this, c, s(m(Date.now())));
+    n(this, u, s(m(I())));
+    n(this, d, s(!1));
+    n(this, c, s("custom-winter"));
+    n(this, f, s(m(Date.now())));
     n(this, h, s(void 0));
     setInterval(() => {
-      r(a(this, c), Date.now(), !0)
+      r(a(this, f), Date.now(), !0)
     }, 500), this.theme = localStorage.getItem(p), this.theme !== "dark" && this.theme !== "custom-winter" && (this.theme = "custom-winter")
   }
   get dropletsDialogOpen() {
@@ -57,25 +57,25 @@ class y {
     r(a(this, g), e, !0)
   }
   get language() {
-    return o(a(this, d))
-  }
-  set language(e) {
-    r(a(this, d), e, !0)
-  }
-  get turnstatileLoaded() {
     return o(a(this, u))
   }
-  set turnstatileLoaded(e) {
+  set language(e) {
     r(a(this, u), e, !0)
   }
+  get turnstatileLoaded() {
+    return o(a(this, d))
+  }
+  set turnstatileLoaded(e) {
+    r(a(this, d), e, !0)
+  }
   get theme() {
-    return o(a(this, f))
+    return o(a(this, c))
   }
   set theme(e) {
-    r(a(this, f), e, !0), localStorage.setItem(p, e), document.documentElement.setAttribute("data-theme", e)
+    r(a(this, c), e, !0), localStorage.setItem(p, e), document.documentElement.setAttribute("data-theme", e)
   }
   get now() {
-    return o(a(this, c))
+    return o(a(this, f))
   }
   get captcha() {
     return E ? o(a(this, h)) : {
@@ -87,7 +87,7 @@ class y {
     r(a(this, h), e, !0)
   }
 }
-l = new WeakMap, g = new WeakMap, d = new WeakMap, u = new WeakMap, f = new WeakMap, c = new WeakMap, h = new WeakMap;
+l = new WeakMap, g = new WeakMap, u = new WeakMap, d = new WeakMap, c = new WeakMap, f = new WeakMap, h = new WeakMap;
 const T = new y;
 
 function I() {

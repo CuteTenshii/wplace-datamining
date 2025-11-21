@@ -1,31 +1,31 @@
-import "./-859Ysne.js";
+import "./CVtsYuox.js";
 import {
   p as u,
-  f as c,
+  f as b,
   t as n,
   b as A,
   c as m,
   d as v,
   s as y,
   r as _
-} from "./DFT4Ffb_.js";
+} from "./CYmALYaf.js";
 import {
   i as h
-} from "./Bnv7U9XH.js";
+} from "./CUW3HYkd.js";
 import {
   d as w,
   a as r,
   s as x
-} from "./BZtYJdDO.js";
+} from "./DLoppxIO.js";
 import {
   p as E,
   r as T
-} from "./CFijfUr5.js";
+} from "./7r_dBKZS.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "52f7dd52d370e3cd3a68b7bd4fba1dfc255f8526"
+      id: "6d992b625daae7fbeceb4c3bf7e8ebe3eb30a19f"
     }
   } catch {}
 })();
@@ -37,19 +37,19 @@ try {
   })()
 } catch {}
 const S = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
-var B = c("<span>wplace</span>"),
-  L = c('<div><img alt="Wplace logo"/> <!></div>');
+var B = b("<span>wplace</span>"),
+  L = b('<div><img alt="Wplace logo"/> <!></div>');
 
 function z(e, t) {
   u(t, !0);
-  let s = E(t, "size", 3, "default"),
-    b = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
-  var a = L();
-  w(a, () => ({
-    ...b,
+  let a = E(t, "size", 3, "default"),
+    c = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+  var s = L();
+  w(s, () => ({
+    ...c,
     class: `flex items-center gap-1.5 ${t.class??""}`
   }));
-  var l = v(a);
+  var l = v(s);
   let o;
   var p = y(l, 2);
   {
@@ -57,21 +57,21 @@ function z(e, t) {
       var d = B();
       let f;
       n(() => f = r(d, 1, "text-base-content font-pixel", null, f, {
-        "text-4xl": s() === "default",
-        "text-5xl": s() === "lg" || s() === "medium"
+        "text-4xl": a() === "default",
+        "text-5xl": a() === "lg" || a() === "medium"
       })), A(i, d)
     };
     h(p, i => {
       t.hasText && i(g)
     })
   }
-  _(a), n(() => {
+  _(s), n(() => {
     o = r(l, 1, "pixelated", null, o, {
-      "size-10": s() === "default",
-      "size-16": s() === "medium",
-      "size-20": s() === "lg"
+      "size-10": a() === "default",
+      "size-16": a() === "medium",
+      "size-20": a() === "lg"
     }), x(l, "src", S)
-  }), A(e, a), m()
+  }), A(e, s), m()
 }
 export {
   z as L

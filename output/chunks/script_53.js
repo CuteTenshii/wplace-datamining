@@ -1,11 +1,11 @@
 import {
-  g as d
-} from "./DaUp8CSR.js";
+  g as t
+} from "./QpTCyiP3.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "52f7dd52d370e3cd3a68b7bd4fba1dfc255f8526"
+      id: "6d992b625daae7fbeceb4c3bf7e8ebe3eb30a19f"
     }
   } catch {}
 })();
@@ -17,8 +17,8 @@ try {
   })()
 } catch {}
 const f = () => "Refresh",
-  t = () => "Atualizar",
-  l = (e = {}, n = {}) => (n.locale ?? d()) === "en" ? f() : t();
+  o = () => "Atualizar",
+  a = (e = {}, n = {}) => (n.locale ?? t()) === "en" ? f() : o();
 export {
-  l as r
+  a as r
 };

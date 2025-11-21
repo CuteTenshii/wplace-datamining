@@ -1,7 +1,7 @@
 import {
   g as pe
-} from "./DaUp8CSR.js";
-import "./-859Ysne.js";
+} from "./QpTCyiP3.js";
+import "./CVtsYuox.js";
 import {
   z as R,
   b as i,
@@ -17,65 +17,65 @@ import {
   n as Q,
   t as w,
   v as he,
-  D as mt,
+  D as bt,
   g as f,
   l as we,
   o as L,
   u as ye,
   q as Te
-} from "./DFT4Ffb_.js";
+} from "./CYmALYaf.js";
 import {
   d as Z,
-  e as bt,
+  e as mt,
   s as ce,
   r as ze,
   g as Me,
   a as et,
   f as _t
-} from "./BZtYJdDO.js";
+} from "./DLoppxIO.js";
 import {
   r as Y,
   p as tt
-} from "./CFijfUr5.js";
+} from "./7r_dBKZS.js";
 import {
   o as gt
-} from "./BRyQU_Z5.js";
+} from "./CoFbbwJI.js";
 import {
   s as h
-} from "./BViO5eXJ.js";
+} from "./Bxxjoywg.js";
 import {
   i as D
-} from "./Bnv7U9XH.js";
+} from "./CUW3HYkd.js";
 import {
   b as xt
-} from "./Bev2ykbX.js";
+} from "./CcrB9JzQ.js";
 import {
   g as Xe
-} from "./D885ix5-.js";
+} from "./BZrXHqod.js";
 import {
   g as ht,
   P as Oe
-} from "./DTANWaA3.js";
+} from "./CbC_tJ8s.js";
 import {
   u as ie,
   t as de,
   a as je,
   S as wt
-} from "./CwDPGBoe.js";
+} from "./DVBqFXDb.js";
 import {
   r as Ne
-} from "./CwWcc8tL.js";
+} from "./O9kx4_Xe.js";
 import {
   c as yt
-} from "./3V9h2xd0.js";
+} from "./BEAvb4oV.js";
 import {
   a as kt
-} from "./C4Aa3KFE.js";
+} from "./Cd-VjmKT.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "52f7dd52d370e3cd3a68b7bd4fba1dfc255f8526"
+      id: "6d992b625daae7fbeceb4c3bf7e8ebe3eb30a19f"
     }
   } catch {}
 })();
@@ -234,18 +234,18 @@ function yo(a, o) {
   let n = tt(o, "open", 15),
     s = we(!1);
   gt(() => {
-    const l = m => {
-      m.key === "Escape" && n(!1)
+    const l = b => {
+      b.key === "Escape" && n(!1)
     };
     return document.addEventListener("keydown", l), () => document.removeEventListener("keydown", l)
   });
   const k = ye(() => {
-      var l, m;
-      return ((m = (l = ie.data) == null ? void 0 : l.country) == null ? void 0 : m.toUpperCase()) === "BR"
+      var l, b;
+      return ((b = (l = ie.data) == null ? void 0 : l.country) == null ? void 0 : b.toUpperCase()) === "BR"
     }),
     x = ye(() => {
-      var l, m;
-      return ((m = (l = ie.data) == null ? void 0 : l.country) == null ? void 0 : m.toUpperCase()) === "MX"
+      var l, b;
+      return ((b = (l = ie.data) == null ? void 0 : l.country) == null ? void 0 : b.toUpperCase()) === "MX"
     });
   let _ = we(null),
     d = we(void 0),
@@ -256,8 +256,8 @@ function yo(a, o) {
     S = r(e(g), 2);
   {
     var C = l => {
-      var m = Vt(),
-        H = e(m),
+      var b = Vt(),
+        H = e(b),
         F = e(H),
         ve = e(F);
       De(ve, {
@@ -303,8 +303,8 @@ function yo(a, o) {
             Re = e(Pe);
           {
             var dt = I => {
-              var b = Te();
-              w(z => h(b, `${z??""} Droplets`), [() => oe().toLocaleString("en-US")]), i(I, b)
+              var m = Te();
+              w(z => h(m, `${z??""} Droplets`), [() => oe().toLocaleString("en-US")]), i(I, m)
             };
             D(Re, I => {
               se() && I(dt)
@@ -316,8 +316,8 @@ function yo(a, o) {
           var pt = r(Pe, 2);
           {
             var vt = I => {
-                var b = Qt(),
-                  z = e(b),
+                var m = Qt(),
+                  z = e(m),
                   ae = e(z);
                 t(z);
                 var ge = r(z, 2),
@@ -344,15 +344,15 @@ function yo(a, o) {
                 var ft = e(xe);
                 Ve(ft, {
                   class: "size-5"
-                }), Q(2), t(xe), t(Fe), t(ge), t(b), w(le => {
-                  et(b, 1, `dropdown mt-3 ${lt()??""}`), h(ae, `R$${le??""}`), ce(N, "action", `${Oe}/payment/create-checkout-session`), Me(T, He()), M.disabled = f(s), xe.disabled = f(s)
+                }), Q(2), t(xe), t(Fe), t(ge), t(m), w(le => {
+                  et(m, 1, `dropdown mt-3 ${lt()??""}`), h(ae, `R$${le??""}`), ce(N, "action", `${Oe}/payment/create-checkout-session`), Me(T, He()), M.disabled = f(s), xe.disabled = f(s)
                 }, [() => (Ie() * 4).toFixed(2).replace(".", ",")]), he("submit", N, () => {
                   L(s, !0), setTimeout(() => L(s, !1), 3e3)
-                }), i(I, b)
+                }), i(I, m)
               },
               ut = I => {
-                var b = Yt(),
-                  z = e(b);
+                var m = Yt(),
+                  z = e(m);
                 ze(z);
                 var ae = r(z, 2),
                   ge = e(ae);
@@ -369,18 +369,18 @@ function yo(a, o) {
                     f(x) ? T(re) : T(N, !1)
                   })
                 }
-                t(ae), t(b), w(() => {
-                  ce(b, "action", `${Oe}/payment/create-checkout-session`), Me(z, He()), ae.disabled = f(s)
-                }), he("submit", b, () => {
+                t(ae), t(m), w(() => {
+                  ce(m, "action", `${Oe}/payment/create-checkout-session`), Me(z, He()), ae.disabled = f(s)
+                }), he("submit", m, () => {
                   L(s, !0), setTimeout(() => L(s, !1), 3e3)
-                }), i(I, b)
+                }), i(I, m)
               };
             D(pt, I => {
               f(k) ? I(vt) : I(ut, !1)
             })
           }
-          t(Le), w((I, b) => {
-            h(it, `${I??""} `), h(ct, `+${b??""} bonus`)
+          t(Le), w((I, m) => {
+            h(it, `${I??""} `), h(ct, `+${m??""} bonus`)
           }, [() => (oe() + se()).toLocaleString("en-US"), () => se().toLocaleString("en-US")]), i(j, Le)
         };
         var U = e(W),
@@ -393,8 +393,8 @@ function yo(a, o) {
           productId: 10,
           dropdownClass: "dropdown-center"
         }));
-        var me = r(G, 2);
-        P(me, () => ({
+        var be = r(G, 2);
+        P(be, () => ({
           price: 15,
           droplets: 75e3,
           bonus: 3750,
@@ -402,7 +402,7 @@ function yo(a, o) {
           productId: 20,
           dropdownClass: "dropdown-center"
         }));
-        var J = r(me, 2);
+        var J = r(be, 2);
         P(J, () => ({
           price: 30,
           droplets: 15e4,
@@ -429,8 +429,8 @@ function yo(a, o) {
           productId: 50,
           dropdownClass: "dropdown-center"
         }));
-        var be = r(q, 2);
-        P(be, () => ({
+        var me = r(q, 2);
+        P(me, () => ({
           price: 100,
           droplets: 5e5,
           bonus: 125e3,
@@ -446,7 +446,7 @@ function yo(a, o) {
           h(O, `${v??""} `), ce(te, "href", oe), h(_e, se)
         }, [() => Qe(), () => Ke(), Ne, () => Ye()])
       }
-      t(m), w((P, j, v, oe) => h(V, P), [() => Qe(), () => Ke(), Ne, () => Ye()]), i(l, m)
+      t(b), w((P, j, v, oe) => h(V, P), [() => Qe(), () => Ke(), Ne, () => Ye()]), i(l, b)
     };
     D(S, l => {
       ie.data && l(C)
@@ -456,8 +456,8 @@ function yo(a, o) {
   var B = r(g, 2),
     E = e(B),
     K = e(E, !0);
-  t(E), t(B), t(u), bt(u, () => l => {
-    mt(() => {
+  t(E), t(B), t(u), mt(u, () => l => {
+    bt(() => {
       n() ? l.show() : l.close()
     })
   });
@@ -473,8 +473,8 @@ function yo(a, o) {
   var st = r(Ce, 2);
   {
     var at = l => {
-        var m = Wt(),
-          H = ke(m),
+        var b = Wt(),
+          H = ke(b),
           F = r(e(H)),
           ve = e(F);
         t(F), t(H);
@@ -487,15 +487,15 @@ function yo(a, o) {
           U = e(W);
         ze(U);
         var G = r(U, 2),
-          me = e(G);
-        me.__click = () => {
+          be = e(G);
+        be.__click = () => {
           var q;
           navigator.clipboard.writeText(((q = f(d)) == null ? void 0 : q.pixCode) ?? ""), de.success("Código PIX copiado")
         }, t(G), t(W), t(V);
         var J = r(V, 2),
           $ = e(J);
         $.__click = async () => {
-          var q, be, ee;
+          var q, me, ee;
           if (!f(d)) {
             de.info("Espere 1 minuto e recarrege a pagina");
             return
@@ -507,7 +507,7 @@ function yo(a, o) {
             } = await je.getPixStatus(f(d).pixId);
             if (O) {
               const te = f(d).productId.toString(),
-                _e = (ee = (be = (q = wt.products[te]) == null ? void 0 : q.items) == null ? void 0 : be[0]) == null ? void 0 : ee.amount;
+                _e = (ee = (me = (q = wt.products[te]) == null ? void 0 : q.items) == null ? void 0 : me[0]) == null ? void 0 : ee.amount;
               await ie.refresh(), _e ? Xe(`payment/success?droplets=${_e}`) : Xe("payment/success")
             } else de.info("Pagamento ainda não recebido. Desculpe a demora, tente novamente em instantes.", {
               duration: 1e5
@@ -519,11 +519,11 @@ function yo(a, o) {
           }
         }, t(J), w(q => {
           h(ve, `R$${q??""}`), ce(fe, "src", f(d).qrCode), Me(U, f(d).pixCode), $.disabled = f(c)
-        }, [() => (f(d).price / 100).toFixed(2).replace(".", ",")]), i(l, m)
+        }, [() => (f(d).price / 100).toFixed(2).replace(".", ",")]), i(l, b)
       },
       rt = l => {
-        var m = Gt();
-        i(l, m)
+        var b = Gt();
+        i(l, b)
       };
     D(st, l => {
       f(d) ? l(at) : l(rt, !1)
