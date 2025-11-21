@@ -2,7 +2,7 @@
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "2a38764e420fdb01cdb08c4f31f9aa71df376c33"
+      id: "52f7dd52d370e3cd3a68b7bd4fba1dfc255f8526"
     }
   } catch {}
 })();
@@ -38,16 +38,16 @@ function O(e, {
     delay: h = 0,
     duration: i = n => Math.sqrt(n) * 120,
     easing: y = $
-  } = u, d = getComputedStyle(e), g = d.transform === "none" ? "" : d.transform, [o, s] = d.transformOrigin.split(" ").map(parseFloat);
+  } = u, d = getComputedStyle(e), b = d.transform === "none" ? "" : d.transform, [o, s] = d.transformOrigin.split(" ").map(parseFloat);
   o /= e.clientWidth, s /= e.clientHeight;
   var c = z(e),
-    b = e.clientWidth / r.width / c,
+    g = e.clientWidth / r.width / c,
     v = e.clientHeight / r.height / c,
     p = t.left + t.width * o,
     m = t.top + t.height * s,
     w = r.left + r.width * o,
     x = r.top + r.height * s,
-    f = (p - w) * b,
+    f = (p - w) * g,
     l = (m - x) * v,
     _ = t.width / r.width,
     S = t.height / r.height;
@@ -60,7 +60,7 @@ function O(e, {
         R = a * l,
         T = n + a * _,
         I = n + a * S;
-      return `transform: ${g} translate(${E}px, ${R}px) scale(${T}, ${I});`
+      return `transform: ${b} translate(${E}px, ${R}px) scale(${T}, ${I});`
     }
   }
 }
