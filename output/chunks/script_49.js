@@ -1,11 +1,11 @@
 import {
   g as o
-} from "./QpTCyiP3.js";
+} from "./Dc6DF1Sc.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "6d992b625daae7fbeceb4c3bf7e8ebe3eb30a19f"
+      id: "ac7618a676a9d262ff8724cf2a3a13f62011007a"
     }
   } catch {}
 })();
@@ -18,7 +18,7 @@ try {
 } catch {}
 const f = () => "Confirm",
   t = () => "Confirmar",
-  r = (e = {}, n = {}) => (n.locale ?? o()) === "en" ? f() : t();
+  d = (e = {}, n = {}) => (n.locale ?? o()) === "en" ? f() : t();
 export {
-  r as c
+  d as c
 };

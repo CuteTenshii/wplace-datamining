@@ -1,9 +1,9 @@
-import "./CbC_tJ8s.js";
+import "./BvVJohsJ.js";
 (function() {
   try {
     var q = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     q.SENTRY_RELEASE = {
-      id: "6d992b625daae7fbeceb4c3bf7e8ebe3eb30a19f"
+      id: "ac7618a676a9d262ff8724cf2a3a13f62011007a"
     }
   } catch {}
 })();
@@ -37,40 +37,40 @@ function d() {
 let s;
 
 function c(q) {
-  return s = q, i({
+  return s = q, a({
     type: "previewPixels",
     data: q
   })
 }
 
 function m() {
-  return s = void 0, i({
+  return s = void 0, a({
     type: "clearPixelPreview"
   })
 }
 
 function p(q) {
-  return i({
+  return a({
     type: "paintPixels",
     data: q
   })
 }
 async function G() {
-  s || await i({
+  s || await a({
     type: "clearPixelPreview"
   })
 }
 
-function i(q) {
+function a(q) {
   const V = Math.random(),
     e = {
       ...q,
       id: V
     };
-  return new Promise((B, a) => {
+  return new Promise((B, i) => {
     try {
       const o = navigator.serviceWorker;
-      o || a(new Error("Service Workers are not supported/enabled in your browser. Some features might not work properly."));
+      o || i(new Error("Service Workers are not supported/enabled in your browser. Some features might not work properly."));
       const t = g => {
         var A;
         ((A = g.data) == null ? void 0 : A.id) === V && (B(void 0), o.removeEventListener("message", t))
@@ -79,10 +79,10 @@ function i(q) {
       const w = navigator.serviceWorker.controller;
       w ? w.postMessage(e) : navigator.serviceWorker.ready.then(g => {
         const A = g.active;
-        A ? A == null || A.postMessage(e) : a(new Error("Service worker registration not active"))
+        A ? A == null || A.postMessage(e) : i(new Error("Service worker registration not active"))
       })
     } catch (o) {
-      a(o)
+      i(o)
     }
   })
 }
