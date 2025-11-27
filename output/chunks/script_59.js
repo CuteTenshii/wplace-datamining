@@ -1,11 +1,11 @@
 import {
   g as e
-} from "./DZOq0nrk.js";
+} from "./D_510iNw.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "2c85364e3128b797172dc28599b1641f9b6765ae"
+      id: "4cf9aabe150b17ea2cd61bdb51395ac00839c3a5"
     }
   } catch {}
 })();
@@ -18,8 +18,8 @@ try {
 } catch {}
 const d = () => "Administrator",
   i = () => "Administrador",
-  s = () => "管理员",
-  a = () => "Administrator",
+  a = () => "管理员",
+  s = () => "Administrator",
   c = () => "Administrador",
   l = () => "Administrateur",
   _ = () => "Amministratore",
@@ -30,7 +30,7 @@ const d = () => "Administrator",
   g = () => "Quản trị viên",
   M = (t = {}, o = {}) => {
     const r = o.locale ?? e();
-    return r === "en" ? d() : r === "pt" ? i() : r === "ch" ? s() : r === "de" ? a() : r === "es" ? c() : r === "fr" ? l() : r === "it" ? _() : r === "jp" ? f() : r === "pl" ? m() : r === "ru" ? p() : r === "uk" ? b() : g()
+    return r === "en" ? d() : r === "pt" ? i() : r === "ch" ? a() : r === "de" ? s() : r === "es" ? c() : r === "fr" ? l() : r === "it" ? _() : r === "jp" ? f() : r === "pl" ? m() : r === "ru" ? p() : r === "uk" ? b() : g()
   },
   n = () => "Discord Moderator",
   y = () => "Moderador do Discord",
@@ -85,8 +85,8 @@ const d = () => "Administrator",
   ur = () => "用户",
   dr = () => "Benutzer",
   ir = () => "Usuario",
-  sr = () => "Utilisateur",
-  ar = () => "Utente",
+  ar = () => "Utilisateur",
+  sr = () => "Utente",
   cr = () => "ユーザー",
   lr = () => "Użytkownik",
   _r = () => "Пользователь",
@@ -94,7 +94,7 @@ const d = () => "Administrator",
   mr = () => "Người dùng",
   u = (t = {}, o = {}) => {
     const r = o.locale ?? e();
-    return r === "en" ? er() : r === "pt" ? nr() : r === "ch" ? ur() : r === "de" ? dr() : r === "es" ? ir() : r === "fr" ? sr() : r === "it" ? ar() : r === "jp" ? cr() : r === "pl" ? lr() : r === "ru" ? _r() : r === "uk" ? fr() : mr()
+    return r === "en" ? er() : r === "pt" ? nr() : r === "ch" ? ur() : r === "de" ? dr() : r === "es" ? ir() : r === "fr" ? ar() : r === "it" ? sr() : r === "jp" ? cr() : r === "pl" ? lr() : r === "ru" ? _r() : r === "uk" ? fr() : mr()
   },
   br = {
     user: u(),
