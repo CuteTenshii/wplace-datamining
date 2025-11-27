@@ -14,7 +14,7 @@ var m = (n, t, e) => (Ie(n, t, "read from private field"), e ? e.call(n) : t.get
   w = (n, t, e) => t.has(n) ? se("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(n) : t.set(n, e);
 import {
   g as _
-} from "./BOfBLWG1.js";
+} from "./CTj1-3x0.js";
 import {
   e as E,
   g as oe,
@@ -22,20 +22,20 @@ import {
   i as v,
   x as ie,
   u as z
-} from "./BgnSSwn_.js";
+} from "./KxHJurs6.js";
 import {
   P as le,
   g as Ne
-} from "./BGSecLMP.js";
+} from "./C0JCe1DZ.js";
 import {
   s as ze,
   c as qe
-} from "./Bqeol8ev.js";
+} from "./Co7wNKN6.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "1dee92bf582c1a78c458cd2ea7a5f29a8123460e"
+      id: "d750dbde4bb0382aeca7acd55c05ffdf7a87fc2c"
     }
   } catch {}
 })();
@@ -43,7 +43,7 @@ try {
   (function() {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       t = new n.Error().stack;
-    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "36390966-b525-49da-8bf9-4919242e0846", n._sentryDebugIdIdentifier = "sentry-dbid-36390966-b525-49da-8bf9-4919242e0846")
+    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "843183d7-3fb0-4e00-a257-18a11a18dd1c", n._sentryDebugIdIdentifier = "sentry-dbid-843183d7-3fb0-4e00-a257-18a11a18dd1c")
   })()
 } catch {}
 
@@ -1715,8 +1715,8 @@ const gl = {
     dashboard: {
       summary: {
         counters: {
-          allTicketsCount: "staff.dashboard.summary.counters.tickets",
-          allReportsCount: "staff.dashboard.summary.counters.reports"
+          tickets: "staff.dashboard.summary.counters.tickets",
+          reports: "staff.dashboard.summary.counters.reports"
         },
         events: {
           status: "staff.dashboard.summary.events.status",

@@ -1,11 +1,11 @@
 import {
   g as d
-} from "./BOfBLWG1.js";
+} from "./CTj1-3x0.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "1dee92bf582c1a78c458cd2ea7a5f29a8123460e"
+      id: "d750dbde4bb0382aeca7acd55c05ffdf7a87fc2c"
     }
   } catch {}
 })();
@@ -21,7 +21,7 @@ function t() {
   return d()
 }
 
-function f() {
+function r() {
   return `/terms/return${t()==="pt"?"/pt":""}`
 }
 
@@ -29,5 +29,6 @@ function o() {
   return `/terms/terms-of-service${t()==="pt"?"/pt":""}`
 }
 export {
-  f as r, o as t
+  r,
+  o as t
 };
