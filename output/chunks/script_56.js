@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./CTj1-3x0.js";
+} from "./DZOq0nrk.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "d750dbde4bb0382aeca7acd55c05ffdf7a87fc2c"
+      id: "2c85364e3128b797172dc28599b1641f9b6765ae"
     }
   } catch {}
 })();
@@ -20,17 +20,17 @@ const a = () => "Appeals",
   s = () => "Apelos",
   o = () => "申诉",
   p = () => "Einsprüche",
-  d = () => "Apelaciones",
-  u = () => "Recours",
-  f = () => "Ricorsi",
-  i = () => "異議申立て",
-  l = () => "Odwołania",
+  u = () => "Apelaciones",
+  i = () => "Recours",
+  l = () => "Ricorsi",
+  d = () => "異議申立て",
+  f = () => "Odwołania",
   c = () => "Апелляции",
   b = () => "Апеляції",
   _ = () => "Các kháng cáo",
   y = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? a() : e === "pt" ? s() : e === "ch" ? o() : e === "de" ? p() : e === "es" ? d() : e === "fr" ? u() : e === "it" ? f() : e === "jp" ? i() : e === "pl" ? l() : e === "ru" ? c() : e === "uk" ? b() : _()
+    return e === "en" ? a() : e === "pt" ? s() : e === "ch" ? o() : e === "de" ? p() : e === "es" ? u() : e === "fr" ? i() : e === "it" ? l() : e === "jp" ? d() : e === "pl" ? f() : e === "ru" ? c() : e === "uk" ? b() : _()
   };
 export {
   y as a

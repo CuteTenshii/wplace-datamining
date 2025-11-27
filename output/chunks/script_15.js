@@ -10,11 +10,11 @@ var Pe = (n, t, e) => t in n ? je(n, t, {
 }) : n[t] = e;
 var g = (n, t, e) => Pe(n, typeof t != "symbol" ? t + "" : t, e),
   Ie = (n, t, e) => t.has(n) || se("Cannot " + e);
-var m = (n, t, e) => (Ie(n, t, "read from private field"), e ? e.call(n) : t.get(n)),
+var f = (n, t, e) => (Ie(n, t, "read from private field"), e ? e.call(n) : t.get(n)),
   w = (n, t, e) => t.has(n) ? se("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(n) : t.set(n, e);
 import {
   g as _
-} from "./CTj1-3x0.js";
+} from "./DZOq0nrk.js";
 import {
   e as E,
   g as oe,
@@ -22,20 +22,20 @@ import {
   i as v,
   x as ie,
   u as z
-} from "./KxHJurs6.js";
+} from "./Ck_k6HL9.js";
 import {
   P as le,
   g as Ne
-} from "./C0JCe1DZ.js";
+} from "./D5JPIdVm.js";
 import {
   s as ze,
   c as qe
-} from "./Co7wNKN6.js";
+} from "./BCajik1F.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "d750dbde4bb0382aeca7acd55c05ffdf7a87fc2c"
+      id: "2c85364e3128b797172dc28599b1641f9b6765ae"
     }
   } catch {}
 })();
@@ -43,11 +43,11 @@ try {
   (function() {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       t = new n.Error().stack;
-    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "843183d7-3fb0-4e00-a257-18a11a18dd1c", n._sentryDebugIdIdentifier = "sentry-dbid-843183d7-3fb0-4e00-a257-18a11a18dd1c")
+    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "82564913-09bd-4a33-a613-557b983e5a06", n._sentryDebugIdIdentifier = "sentry-dbid-82564913-09bd-4a33-a613-557b983e5a06")
   })()
 } catch {}
 
-function ll(...n) {
+function Xd(...n) {
   return n.filter(Boolean).join(" ")
 }
 const Oe = typeof document < "u";
@@ -122,7 +122,7 @@ class De {
         this.toasts = [];
         return
       }
-      const e = m(this, B).call(this, t);
+      const e = f(this, B).call(this, t);
       if (e !== null) return this.toasts.splice(e, 1), t
     });
     g(this, "message", (t, e) => this.create({
@@ -211,7 +211,7 @@ class De {
       this.heights = this.heights.filter(e => e.toastId !== t)
     });
     g(this, "setHeight", t => {
-      const e = m(this, B).call(this, t.toastId);
+      const e = f(this, B).call(this, t.toastId);
       if (e === null) {
         this.heights.push(t);
         return
@@ -223,16 +223,16 @@ class De {
     })
   }
   get toasts() {
-    return y(m(this, C))
+    return y(f(this, C))
   }
   set toasts(t) {
-    v(m(this, C), t, !0)
+    v(f(this, C), t, !0)
   }
   get heights() {
-    return y(m(this, M))
+    return y(f(this, M))
   }
   set heights(t) {
-    v(m(this, M), t, !0)
+    v(f(this, M), t, !0)
   }
 }
 C = new WeakMap, M = new WeakMap, B = new WeakMap;
@@ -249,12 +249,12 @@ function Me(n, t) {
   })
 }
 var te;
-class _l {
+class Qd {
   constructor() {
     w(this, te, z(() => b.toasts.filter(t => !t.dismiss)))
   }
   get toasts() {
-    return y(m(this, te))
+    return y(f(this, te))
   }
 }
 te = new WeakMap;
@@ -273,13 +273,13 @@ const Be = Me,
   });
 let fe = E(void 0);
 const me = () => y(fe),
-  fl = n => {
+  el = n => {
     const t = new URL(n, le),
       e = me();
     return e && t.searchParams.set("override", e.token), t.toString()
   };
 
-function ml() {
+function tl() {
   try {
     Le()
   } catch (n) {
@@ -926,37 +926,21 @@ const $e = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
     const e = t.locale ?? _();
     return e === "en" ? Wc() : e === "pt" ? Kc() : e === "ch" ? Hc() : e === "de" ? Yc() : e === "es" ? Zc() : e === "fr" ? Xc() : e === "it" ? Qc() : e === "jp" ? ed() : e === "pl" ? td() : e === "ru" ? nd() : e === "uk" ? rd() : ad()
   },
-  sd = () => "Your account has been banned for violating the rules",
-  od = () => "A sua conta foi banida por quebrar as regras",
-  id = () => "你的账号因违反规则已被封禁",
-  ud = () => "Dein Konto wurde wegen Regelverstößen gebannt",
-  cd = () => "Tu cuenta ha sido baneada por infringir las reglas",
-  dd = () => "Votre compte a été banni pour avoir enfreint les règles",
-  ld = () => "Il tuo account è stato bannato per aver infranto le regole",
-  _d = () => "ルール違反により、あなたのアカウントはBANされました。",
-  fd = () => "Twoje konto zostało zbanowane za łamanie zasad",
-  md = () => "Ваш аккаунт был забанен за нарушение правил",
-  hd = () => "Ваш акаунт заблоковано за порушення правил",
-  pd = () => "Tài khoản của bạn đã bị khóa vì vi phạm luật",
-  gd = (n = {}, t = {}) => {
+  sd = n => `Your account has been suspended out until ${n.until}`,
+  od = n => `A sua conta está suspensa até ${n.until}`,
+  id = n => `你的账号已被暂停至 ${n.until}`,
+  ud = n => `Dein Konto ist gesperrt bis ${n.until}`,
+  cd = n => `Tu cuenta ha sido suspendida hasta ${n.until}`,
+  dd = n => `Votre compte est suspendu jusqu’au ${n.until}`,
+  ld = n => `Il tuo account è sospeso fino al ${n.until}`,
+  _d = n => `あなたのアカウントは${n.until}まで一時停止されています。`,
+  fd = n => `Twoje konto zostało zawieszone do ${n.until}`,
+  md = n => `Ваш аккаунт заблокирован до ${n.until}`,
+  hd = n => `Ваш акаунт призупинено до ${n.until}`,
+  pd = n => `Tài khoản của bạn đã bị đình chỉ đến ${n.until}`,
+  gd = (n, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? sd() : e === "pt" ? od() : e === "ch" ? id() : e === "de" ? ud() : e === "es" ? cd() : e === "fr" ? dd() : e === "it" ? ld() : e === "jp" ? _d() : e === "pl" ? fd() : e === "ru" ? md() : e === "uk" ? hd() : pd()
-  },
-  wd = n => `Your account has been suspended out until ${n.until}`,
-  yd = n => `A sua conta está suspensa até ${n.until}`,
-  bd = n => `你的账号已被暂停至 ${n.until}`,
-  vd = n => `Dein Konto ist gesperrt bis ${n.until}`,
-  kd = n => `Tu cuenta ha sido suspendida hasta ${n.until}`,
-  Sd = n => `Votre compte est suspendu jusqu’au ${n.until}`,
-  xd = n => `Il tuo account è sospeso fino al ${n.until}`,
-  Td = n => `あなたのアカウントは${n.until}まで一時停止されています。`,
-  Ed = n => `Twoje konto zostało zawieszone do ${n.until}`,
-  Ad = n => `Ваш аккаунт заблокирован до ${n.until}`,
-  jd = n => `Ваш акаунт призупинено до ${n.until}`,
-  Pd = n => `Tài khoản của bạn đã bị đình chỉ đến ${n.until}`,
-  Id = (n, t = {}) => {
-    const e = t.locale ?? _();
-    return e === "en" ? wd(n) : e === "pt" ? yd(n) : e === "ch" ? bd(n) : e === "de" ? vd(n) : e === "es" ? kd(n) : e === "fr" ? Sd(n) : e === "it" ? xd(n) : e === "jp" ? Td(n) : e === "pl" ? Ed(n) : e === "ru" ? Ad(n) : e === "uk" ? jd(n) : Pd(n)
+    return e === "en" ? sd(n) : e === "pt" ? od(n) : e === "ch" ? id(n) : e === "de" ? ud(n) : e === "es" ? cd(n) : e === "fr" ? dd(n) : e === "it" ? ld(n) : e === "jp" ? _d(n) : e === "pl" ? fd(n) : e === "ru" ? md(n) : e === "uk" ? hd(n) : pd(n)
   };
 let p;
 
@@ -996,7 +980,7 @@ function Y(n) {
   return n == null
 }
 
-function Nd(n) {
+function wd(n) {
   p.set_user_id(n)
 }
 let ee = 0;
@@ -1005,7 +989,7 @@ const X = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
       throw Error("TextEncoder not available")
     }
   },
-  zd = typeof X.encodeInto == "function" ? function(n, t) {
+  yd = typeof X.encodeInto == "function" ? function(n, t) {
     return X.encodeInto(n, t)
   } : function(n, t) {
     const e = X.encode(n);
@@ -1033,19 +1017,19 @@ function ge(n, t, e) {
   if (u !== r) {
     u !== 0 && (n = n.slice(u)), a = e(a, r, r = u + n.length * 3, 1) >>> 0;
     const i = Z().subarray(a + u, a + r),
-      l = zd(n, i);
+      l = yd(n, i);
     u += l.written, a = e(a, r, u, 1) >>> 0
   }
   return ee = u, a
 }
 
-function qd(n) {
+function bd(n) {
   const t = ge(n, p.__wbindgen_malloc, p.__wbindgen_realloc),
     e = ee;
   p.request_url(t, e)
 }
 
-function Od() {
+function vd() {
   let n, t;
   try {
     const e = p.get_load_payload();
@@ -1055,7 +1039,7 @@ function Od() {
   }
 }
 
-function Dd(n) {
+function kd(n) {
   let t, e;
   try {
     const r = ge(n, p.__wbindgen_malloc, p.__wbindgen_realloc),
@@ -1066,7 +1050,7 @@ function Dd(n) {
     p.__wbindgen_free(t, e, 1)
   }
 }
-async function Cd(n, t) {
+async function Sd(n, t) {
   if (typeof Response == "function" && n instanceof Response) {
     if (typeof WebAssembly.instantiateStreaming == "function") try {
       return await WebAssembly.instantiateStreaming(n, t)
@@ -1085,7 +1069,7 @@ async function Cd(n, t) {
   }
 }
 
-function Md() {
+function xd() {
   const n = {};
   return n.wbg = {}, n.wbg.__wbg_buffer_609cc3eee51ed158 = function(t) {
     return t.buffer
@@ -1165,7 +1149,7 @@ function Md() {
   }, n
 }
 
-function Bd(n, t) {
+function Td(n, t) {
   return p = n.exports, we.__wbindgen_wasm_module = t, O = null, p.__wbindgen_start(), p
 }
 async function we(n) {
@@ -1173,13 +1157,13 @@ async function we(n) {
   typeof n < "u" && (Object.getPrototypeOf(n) === Object.prototype ? {
     module_or_path: n
   } = n : console.warn("using deprecated parameters for the initialization function; pass a single object instead")), typeof n > "u" && (n = new URL("pawtect_wasm_bg.wasm", import.meta.url));
-  const t = Md();
+  const t = xd();
   (typeof n == "string" || typeof Request == "function" && n instanceof Request || typeof URL == "function" && n instanceof URL) && (n = fetch(n));
   const {
     instance: e,
     module: r
-  } = await Cd(await n, t);
-  return Bd(e, r)
+  } = await Sd(await n, t);
+  return Td(e, r)
 }
 
 function ye(n, t) {
@@ -1189,19 +1173,19 @@ function ye(n, t) {
   return !1
 }
 
-function Ld(n, t) {
+function Ed(n, t) {
   for (const e of t)
     if (ye(n, e)) return !0;
   return !1
 }
 
-function $d(n) {
+function Ad(n) {
   const t = atob(n),
     e = new Uint8Array(t.length);
   for (let r = 0; r < t.length; r++) e[r] = t.charCodeAt(r);
   return e
 }
-class Ud {
+class jd {
   constructor(t) {
     g(this, "bytes");
     this.bytes = t ?? new Uint8Array
@@ -1226,7 +1210,7 @@ class Ud {
   }
 }
 
-function hl(n) {
+function nl(n) {
   return new Promise((t, e) => {
     const r = new FileReader;
     r.onload = () => {
@@ -1240,7 +1224,7 @@ function hl(n) {
   })
 }
 var L, $, U, R, G, F, V, J;
-class Rd {
+class Pd {
   constructor() {
     g(this, "channel", new BroadcastChannel("user-channel"));
     w(this, L, E());
@@ -1257,7 +1241,7 @@ class Rd {
     w(this, F, z(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
     w(this, V, z(() => {
       var t;
-      return new Ud($d(((t = this.data) == null ? void 0 : t.flagsBitmap) ?? "AA=="))
+      return new jd(Ad(((t = this.data) == null ? void 0 : t.flagsBitmap) ?? "AA=="))
     }));
     w(this, J, z(() => {
       var e;
@@ -1271,52 +1255,52 @@ class Rd {
     }
   }
   get data() {
-    return y(m(this, L))
+    return y(f(this, L))
   }
   set data(t) {
-    v(m(this, L), t, !0)
+    v(f(this, L), t, !0)
   }
   get loading() {
-    return y(m(this, $))
+    return y(f(this, $))
   }
   set loading(t) {
-    v(m(this, $), t, !0)
+    v(f(this, $), t, !0)
   }
   get notificiationCount() {
-    return y(m(this, U))
+    return y(f(this, U))
   }
   set notificiationCount(t) {
-    v(m(this, U), t, !0)
+    v(f(this, U), t, !0)
   }
   get lastFetch() {
-    return y(m(this, R))
+    return y(f(this, R))
   }
   set lastFetch(t) {
-    v(m(this, R), t)
+    v(f(this, R), t)
   }
   get charges() {
-    return y(m(this, G))
+    return y(f(this, G))
   }
   set charges(t) {
-    v(m(this, G), t)
+    v(f(this, G), t)
   }
   get cooldown() {
-    return y(m(this, F))
+    return y(f(this, F))
   }
   set cooldown(t) {
-    v(m(this, F), t)
+    v(f(this, F), t)
   }
   get flagsBitmap() {
-    return y(m(this, V))
+    return y(f(this, V))
   }
   set flagsBitmap(t) {
-    v(m(this, V), t)
+    v(f(this, V), t)
   }
   get timeoutUntil() {
-    return y(m(this, J))
+    return y(f(this, J))
   }
   set timeoutUntil(t) {
-    v(m(this, J), t)
+    v(f(this, J), t)
   }
   async refresh() {
     var t;
@@ -1352,21 +1336,21 @@ class Rd {
   }
   hasAnyPermission(t) {
     var e;
-    return Ld((e = this.data) == null ? void 0 : e.permissions, t)
+    return Ed((e = this.data) == null ? void 0 : e.permissions, t)
   }
 }
 L = new WeakMap, $ = new WeakMap, U = new WeakMap, R = new WeakMap, G = new WeakMap, F = new WeakMap, V = new WeakMap, J = new WeakMap;
-const I = new Rd;
+const I = new Pd;
 
 function be(n) {
   return I.data ? I.data.experiments[n] ?? null : null
 }
 
-function pl(n) {
+function rl(n) {
   var t, e;
   return ((e = (t = I.data) == null ? void 0 : t.experiments[n]) == null ? void 0 : e.enabled) ?? !0
 }
-const gl = {
+const al = {
     griefing: Kr(),
     "multi-accounting": po(),
     "hate-speech": ia(),
@@ -1375,7 +1359,7 @@ const gl = {
     "inappropriate-content": ba(),
     other: ln()
   },
-  wl = {
+  sl = {
     doxxing: "text-red-600",
     "hate-speech": "text-red-400",
     "inappropriate-content": "text-amber-500",
@@ -1393,13 +1377,13 @@ const gl = {
     other: 5,
     griefing: 6
   },
-  Gd = [{
+  Id = [{
     tileSize: 1e3,
     zoom: 11
   }],
-  Fd = 4,
-  Vd = 6e3,
-  Jd = [{
+  Nd = 4,
+  zd = 6e3,
+  qd = [{
     name: "Transparent",
     rgb: [0, 0, 0]
   }, {
@@ -1592,10 +1576,10 @@ const gl = {
     name: "Light Stone",
     rgb: [205, 197, 158]
   }],
-  Wd = {
+  Od = {
     needsPhoneVerification: "needs_phone_verification"
   },
-  Kd = {
+  Dd = {
     Droplet: {},
     "Max. Charge": {},
     "Paint Charge": {},
@@ -1603,7 +1587,7 @@ const gl = {
     Flag: {},
     "Profile Picture": {}
   },
-  Hd = {
+  Cd = {
     10: {
       name: "25,000 Droplets",
       price: 500,
@@ -1710,8 +1694,8 @@ const gl = {
       }]
     }
   },
-  Yd = JSON.parse(`[{"id":1,"name":"Afghanistan","code":"AF","flag":"🇦🇫"},{"id":2,"name":"Albania","code":"AL","flag":"🇦🇱"},{"id":3,"name":"Algeria","code":"DZ","flag":"🇩🇿"},{"id":4,"name":"American Samoa","code":"AS","flag":"🇦🇸"},{"id":5,"name":"Andorra","code":"AD","flag":"🇦🇩"},{"id":6,"name":"Angola","code":"AO","flag":"🇦🇴"},{"id":7,"name":"Anguilla","code":"AI","flag":"🇦🇮"},{"id":8,"name":"Antarctica","code":"AQ","flag":"🇦🇶"},{"id":9,"name":"Antigua and Barbuda","code":"AG","flag":"🇦🇬"},{"id":10,"name":"Argentina","code":"AR","flag":"🇦🇷"},{"id":11,"name":"Armenia","code":"AM","flag":"🇦🇲"},{"id":12,"name":"Aruba","code":"AW","flag":"🇦🇼"},{"id":13,"name":"Australia","code":"AU","flag":"🇦🇺"},{"id":14,"name":"Austria","code":"AT","flag":"🇦🇹"},{"id":15,"name":"Azerbaijan","code":"AZ","flag":"🇦🇿"},{"id":16,"name":"Bahamas","code":"BS","flag":"🇧🇸"},{"id":17,"name":"Bahrain","code":"BH","flag":"🇧🇭"},{"id":18,"name":"Bangladesh","code":"BD","flag":"🇧🇩"},{"id":19,"name":"Barbados","code":"BB","flag":"🇧🇧"},{"id":20,"name":"Belarus","code":"BY","flag":"🇧🇾"},{"id":21,"name":"Belgium","code":"BE","flag":"🇧🇪"},{"id":22,"name":"Belize","code":"BZ","flag":"🇧🇿"},{"id":23,"name":"Benin","code":"BJ","flag":"🇧🇯"},{"id":24,"name":"Bermuda","code":"BM","flag":"🇧🇲"},{"id":25,"name":"Bhutan","code":"BT","flag":"🇧🇹"},{"id":26,"name":"Bolivia","code":"BO","flag":"🇧🇴"},{"id":27,"name":"Bonaire","code":"BQ","flag":"🇧🇶"},{"id":28,"name":"Bosnia and Herzegovina","code":"BA","flag":"🇧🇦"},{"id":29,"name":"Botswana","code":"BW","flag":"🇧🇼"},{"id":30,"name":"Bouvet Island","code":"BV","flag":"🇧🇻"},{"id":31,"name":"Brazil","code":"BR","flag":"🇧🇷"},{"id":32,"name":"British Indian Ocean Territory","code":"IO","flag":"🇮🇴"},{"id":33,"name":"Brunei Darussalam","code":"BN","flag":"🇧🇳"},{"id":34,"name":"Bulgaria","code":"BG","flag":"🇧🇬"},{"id":35,"name":"Burkina Faso","code":"BF","flag":"🇧🇫"},{"id":36,"name":"Burundi","code":"BI","flag":"🇧🇮"},{"id":37,"name":"Cabo Verde","code":"CV","flag":"🇨🇻"},{"id":38,"name":"Cambodia","code":"KH","flag":"🇰🇭"},{"id":39,"name":"Cameroon","code":"CM","flag":"🇨🇲"},{"id":40,"name":"Canada","code":"CA","flag":"🇨🇦"},{"id":41,"name":"Cayman Islands","code":"KY","flag":"🇰🇾"},{"id":42,"name":"Central African Republic","code":"CF","flag":"🇨🇫"},{"id":43,"name":"Chad","code":"TD","flag":"🇹🇩"},{"id":44,"name":"Chile","code":"CL","flag":"🇨🇱"},{"id":45,"name":"China","code":"CN","flag":"🇨🇳"},{"id":46,"name":"Christmas Island","code":"CX","flag":"🇨🇽"},{"id":47,"name":"Cocos (Keeling) Islands","code":"CC","flag":"🇨🇨"},{"id":48,"name":"Colombia","code":"CO","flag":"🇨🇴"},{"id":49,"name":"Comoros","code":"KM","flag":"🇰🇲"},{"id":50,"name":"Congo","code":"CG","flag":"🇨🇬"},{"id":51,"name":"Cook Islands","code":"CK","flag":"🇨🇰"},{"id":52,"name":"Costa Rica","code":"CR","flag":"🇨🇷"},{"id":53,"name":"Croatia","code":"HR","flag":"🇭🇷"},{"id":54,"name":"Cuba","code":"CU","flag":"🇨🇺"},{"id":55,"name":"Curaçao","code":"CW","flag":"🇨🇼"},{"id":56,"name":"Cyprus","code":"CY","flag":"🇨🇾"},{"id":57,"name":"Czechia","code":"CZ","flag":"🇨🇿"},{"id":58,"name":"Côte d'Ivoire","code":"CI","flag":"🇨🇮"},{"id":59,"name":"Denmark","code":"DK","flag":"🇩🇰"},{"id":60,"name":"Djibouti","code":"DJ","flag":"🇩🇯"},{"id":61,"name":"Dominica","code":"DM","flag":"🇩🇲"},{"id":62,"name":"Dominican Republic","code":"DO","flag":"🇩🇴"},{"id":63,"name":"Ecuador","code":"EC","flag":"🇪🇨"},{"id":64,"name":"Egypt","code":"EG","flag":"🇪🇬"},{"id":65,"name":"El Salvador","code":"SV","flag":"🇸🇻"},{"id":66,"name":"Equatorial Guinea","code":"GQ","flag":"🇬🇶"},{"id":67,"name":"Eritrea","code":"ER","flag":"🇪🇷"},{"id":68,"name":"Estonia","code":"EE","flag":"🇪🇪"},{"id":69,"name":"Eswatini","code":"SZ","flag":"🇸🇿"},{"id":70,"name":"Ethiopia","code":"ET","flag":"🇪🇹"},{"id":71,"name":"Falkland Islands (Malvinas)","code":"FK","flag":"🇫🇰"},{"id":72,"name":"Faroe Islands","code":"FO","flag":"🇫🇴"},{"id":73,"name":"Fiji","code":"FJ","flag":"🇫🇯"},{"id":74,"name":"Finland","code":"FI","flag":"🇫🇮"},{"id":75,"name":"France","code":"FR","flag":"🇫🇷"},{"id":76,"name":"French Guiana","code":"GF","flag":"🇬🇫"},{"id":77,"name":"French Polynesia","code":"PF","flag":"🇵🇫"},{"id":78,"name":"French Southern Territories","code":"TF","flag":"🇹🇫"},{"id":79,"name":"Gabon","code":"GA","flag":"🇬🇦"},{"id":80,"name":"Gambia","code":"GM","flag":"🇬🇲"},{"id":81,"name":"Georgia","code":"GE","flag":"🇬🇪"},{"id":82,"name":"Germany","code":"DE","flag":"🇩🇪"},{"id":83,"name":"Ghana","code":"GH","flag":"🇬🇭"},{"id":84,"name":"Gibraltar","code":"GI","flag":"🇬🇮"},{"id":85,"name":"Greece","code":"GR","flag":"🇬🇷"},{"id":86,"name":"Greenland","code":"GL","flag":"🇬🇱"},{"id":87,"name":"Grenada","code":"GD","flag":"🇬🇩"},{"id":88,"name":"Guadeloupe","code":"GP","flag":"🇬🇵"},{"id":89,"name":"Guam","code":"GU","flag":"🇬🇺"},{"id":90,"name":"Guatemala","code":"GT","flag":"🇬🇹"},{"id":91,"name":"Guernsey","code":"GG","flag":"🇬🇬"},{"id":92,"name":"Guinea","code":"GN","flag":"🇬🇳"},{"id":93,"name":"Guinea-Bissau","code":"GW","flag":"🇬🇼"},{"id":94,"name":"Guyana","code":"GY","flag":"🇬🇾"},{"id":95,"name":"Haiti","code":"HT","flag":"🇭🇹"},{"id":96,"name":"Heard Island and McDonald Islands","code":"HM","flag":"🇭🇲"},{"id":97,"name":"Honduras","code":"HN","flag":"🇭🇳"},{"id":98,"name":"Hong Kong","code":"HK","flag":"🇭🇰"},{"id":99,"name":"Hungary","code":"HU","flag":"🇭🇺"},{"id":100,"name":"Iceland","code":"IS","flag":"🇮🇸"},{"id":101,"name":"India","code":"IN","flag":"🇮🇳"},{"id":102,"name":"Indonesia","code":"ID","flag":"🇮🇩"},{"id":103,"name":"Iran","code":"IR","flag":"🇮🇷"},{"id":104,"name":"Iraq","code":"IQ","flag":"🇮🇶"},{"id":105,"name":"Ireland","code":"IE","flag":"🇮🇪"},{"id":106,"name":"Isle of Man","code":"IM","flag":"🇮🇲"},{"id":107,"name":"Israel","code":"IL","flag":"🇮🇱"},{"id":108,"name":"Italy","code":"IT","flag":"🇮🇹"},{"id":109,"name":"Jamaica","code":"JM","flag":"🇯🇲"},{"id":110,"name":"Japan","code":"JP","flag":"🇯🇵"},{"id":111,"name":"Jersey","code":"JE","flag":"🇯🇪"},{"id":112,"name":"Jordan","code":"JO","flag":"🇯🇴"},{"id":113,"name":"Kazakhstan","code":"KZ","flag":"🇰🇿"},{"id":114,"name":"Kenya","code":"KE","flag":"🇰🇪"},{"id":115,"name":"Kiribati","code":"KI","flag":"🇰🇮"},{"id":116,"name":"Kosovo","code":"XK","flag":"🇽🇰"},{"id":117,"name":"Kuwait","code":"KW","flag":"🇰🇼"},{"id":118,"name":"Kyrgyzstan","code":"KG","flag":"🇰🇬"},{"id":119,"name":"Laos","code":"LA","flag":"🇱🇦"},{"id":120,"name":"Latvia","code":"LV","flag":"🇱🇻"},{"id":121,"name":"Lebanon","code":"LB","flag":"🇱🇧"},{"id":122,"name":"Lesotho","code":"LS","flag":"🇱🇸"},{"id":123,"name":"Liberia","code":"LR","flag":"🇱🇷"},{"id":124,"name":"Libya","code":"LY","flag":"🇱🇾"},{"id":125,"name":"Liechtenstein","code":"LI","flag":"🇱🇮"},{"id":126,"name":"Lithuania","code":"LT","flag":"🇱🇹"},{"id":127,"name":"Luxembourg","code":"LU","flag":"🇱🇺"},{"id":128,"name":"Macao","code":"MO","flag":"🇲🇴"},{"id":129,"name":"Madagascar","code":"MG","flag":"🇲🇬"},{"id":130,"name":"Malawi","code":"MW","flag":"🇲🇼"},{"id":131,"name":"Malaysia","code":"MY","flag":"🇲🇾"},{"id":132,"name":"Maldives","code":"MV","flag":"🇲🇻"},{"id":133,"name":"Mali","code":"ML","flag":"🇲🇱"},{"id":134,"name":"Malta","code":"MT","flag":"🇲🇹"},{"id":135,"name":"Marshall Islands","code":"MH","flag":"🇲🇭"},{"id":136,"name":"Martinique","code":"MQ","flag":"🇲🇶"},{"id":137,"name":"Mauritania","code":"MR","flag":"🇲🇷"},{"id":138,"name":"Mauritius","code":"MU","flag":"🇲🇺"},{"id":139,"name":"Mayotte","code":"YT","flag":"🇾🇹"},{"id":140,"name":"Mexico","code":"MX","flag":"🇲🇽"},{"id":141,"name":"Micronesia","code":"FM","flag":"🇫🇲"},{"id":142,"name":"Moldova","code":"MD","flag":"🇲🇩"},{"id":143,"name":"Monaco","code":"MC","flag":"🇲🇨"},{"id":144,"name":"Mongolia","code":"MN","flag":"🇲🇳"},{"id":145,"name":"Montenegro","code":"ME","flag":"🇲🇪"},{"id":146,"name":"Montserrat","code":"MS","flag":"🇲🇸"},{"id":147,"name":"Morocco","code":"MA","flag":"🇲🇦"},{"id":148,"name":"Mozambique","code":"MZ","flag":"🇲🇿"},{"id":149,"name":"Myanmar","code":"MM","flag":"🇲🇲"},{"id":150,"name":"Namibia","code":"NA","flag":"🇳🇦"},{"id":151,"name":"Nauru","code":"NR","flag":"🇳🇷"},{"id":152,"name":"Nepal","code":"NP","flag":"🇳🇵"},{"id":153,"name":"Netherlands","code":"NL","flag":"🇳🇱"},{"id":154,"name":"New Caledonia","code":"NC","flag":"🇳🇨"},{"id":155,"name":"New Zealand","code":"NZ","flag":"🇳🇿"},{"id":156,"name":"Nicaragua","code":"NI","flag":"🇳🇮"},{"id":157,"name":"Niger","code":"NE","flag":"🇳🇪"},{"id":158,"name":"Nigeria","code":"NG","flag":"🇳🇬"},{"id":159,"name":"Niue","code":"NU","flag":"🇳🇺"},{"id":160,"name":"Norfolk Island","code":"NF","flag":"🇳🇫"},{"id":161,"name":"North Korea","code":"KP","flag":"🇰🇵"},{"id":162,"name":"North Macedonia","code":"MK","flag":"🇲🇰"},{"id":163,"name":"Northern Mariana Islands","code":"MP","flag":"🇲🇵"},{"id":164,"name":"Norway","code":"NO","flag":"🇳🇴"},{"id":165,"name":"Oman","code":"OM","flag":"🇴🇲"},{"id":166,"name":"Pakistan","code":"PK","flag":"🇵🇰"},{"id":167,"name":"Palau","code":"PW","flag":"🇵🇼"},{"id":168,"name":"Palestine","code":"PS","flag":"🇵🇸"},{"id":169,"name":"Panama","code":"PA","flag":"🇵🇦"},{"id":170,"name":"Papua New Guinea","code":"PG","flag":"🇵🇬"},{"id":171,"name":"Paraguay","code":"PY","flag":"🇵🇾"},{"id":172,"name":"Peru","code":"PE","flag":"🇵🇪"},{"id":173,"name":"Philippines","code":"PH","flag":"🇵🇭"},{"id":174,"name":"Pitcairn","code":"PN","flag":"🇵🇳"},{"id":175,"name":"Poland","code":"PL","flag":"🇵🇱"},{"id":176,"name":"Portugal","code":"PT","flag":"🇵🇹"},{"id":177,"name":"Puerto Rico","code":"PR","flag":"🇵🇷"},{"id":178,"name":"Qatar","code":"QA","flag":"🇶🇦"},{"id":179,"name":"Republic of the Congo","code":"CD","flag":"🇨🇩"},{"id":180,"name":"Romania","code":"RO","flag":"🇷🇴"},{"id":181,"name":"Russia","code":"RU","flag":"🇷🇺"},{"id":182,"name":"Rwanda","code":"RW","flag":"🇷🇼"},{"id":183,"name":"Réunion","code":"RE","flag":"🇷🇪"},{"id":184,"name":"Saint Barthélemy","code":"BL","flag":"🇧🇱"},{"id":185,"name":"Saint Helena","code":"SH","flag":"🇸🇭"},{"id":186,"name":"Saint Kitts and Nevis","code":"KN","flag":"🇰🇳"},{"id":187,"name":"Saint Lucia","code":"LC","flag":"🇱🇨"},{"id":188,"name":"Saint Martin (French part)","code":"MF","flag":"🇲🇫"},{"id":189,"name":"Saint Pierre and Miquelon","code":"PM","flag":"🇵🇲"},{"id":190,"name":"Saint Vincent and the Grenadines","code":"VC","flag":"🇻🇨"},{"id":191,"name":"Samoa","code":"WS","flag":"🇼🇸"},{"id":192,"name":"San Marino","code":"SM","flag":"🇸🇲"},{"id":193,"name":"Sao Tome and Principe","code":"ST","flag":"🇸🇹"},{"id":194,"name":"Saudi Arabia","code":"SA","flag":"🇸🇦"},{"id":195,"name":"Senegal","code":"SN","flag":"🇸🇳"},{"id":196,"name":"Serbia","code":"RS","flag":"🇷🇸"},{"id":197,"name":"Seychelles","code":"SC","flag":"🇸🇨"},{"id":198,"name":"Sierra Leone","code":"SL","flag":"🇸🇱"},{"id":199,"name":"Singapore","code":"SG","flag":"🇸🇬"},{"id":200,"name":"Sint Maarten (Dutch part)","code":"SX","flag":"🇸🇽"},{"id":201,"name":"Slovakia","code":"SK","flag":"🇸🇰"},{"id":202,"name":"Slovenia","code":"SI","flag":"🇸🇮"},{"id":203,"name":"Solomon Islands","code":"SB","flag":"🇸🇧"},{"id":204,"name":"Somalia","code":"SO","flag":"🇸🇴"},{"id":205,"name":"South Africa","code":"ZA","flag":"🇿🇦"},{"id":206,"name":"South Georgia and the South Sandwich Islands","code":"GS","flag":"🇬🇸"},{"id":207,"name":"South Korea","code":"KR","flag":"🇰🇷"},{"id":208,"name":"South Sudan","code":"SS","flag":"🇸🇸"},{"id":209,"name":"Spain","code":"ES","flag":"🇪🇸"},{"id":210,"name":"Sri Lanka","code":"LK","flag":"🇱🇰"},{"id":211,"name":"Sudan","code":"SD","flag":"🇸🇩"},{"id":212,"name":"Suriname","code":"SR","flag":"🇸🇷"},{"id":213,"name":"Svalbard and Jan Mayen","code":"SJ","flag":"🇸🇯"},{"id":214,"name":"Sweden","code":"SE","flag":"🇸🇪"},{"id":215,"name":"Switzerland","code":"CH","flag":"🇨🇭"},{"id":216,"name":"Syrian Arab Republic","code":"SY","flag":"🇸🇾"},{"id":217,"name":"Taiwan","code":"TW","flag":"🇹🇼"},{"id":218,"name":"Tajikistan","code":"TJ","flag":"🇹🇯"},{"id":219,"name":"Tanzania","code":"TZ","flag":"🇹🇿"},{"id":220,"name":"Thailand","code":"TH","flag":"🇹🇭"},{"id":221,"name":"Timor-Leste","code":"TL","flag":"🇹🇱"},{"id":222,"name":"Togo","code":"TG","flag":"🇹🇬"},{"id":223,"name":"Tokelau","code":"TK","flag":"🇹🇰"},{"id":224,"name":"Tonga","code":"TO","flag":"🇹🇴"},{"id":225,"name":"Trinidad and Tobago","code":"TT","flag":"🇹🇹"},{"id":226,"name":"Tunisia","code":"TN","flag":"🇹🇳"},{"id":227,"name":"Turkmenistan","code":"TM","flag":"🇹🇲"},{"id":228,"name":"Turks and Caicos Islands","code":"TC","flag":"🇹🇨"},{"id":229,"name":"Tuvalu","code":"TV","flag":"🇹🇻"},{"id":230,"name":"Türkiye","code":"TR","flag":"🇹🇷"},{"id":231,"name":"Uganda","code":"UG","flag":"🇺🇬"},{"id":232,"name":"Ukraine","code":"UA","flag":"🇺🇦"},{"id":233,"name":"United Arab Emirates","code":"AE","flag":"🇦🇪"},{"id":234,"name":"United Kingdom","code":"GB","flag":"🇬🇧"},{"id":235,"name":"United States","code":"US","flag":"🇺🇸"},{"id":236,"name":"United States Minor Outlying Islands","code":"UM","flag":"🇺🇲"},{"id":237,"name":"Uruguay","code":"UY","flag":"🇺🇾"},{"id":238,"name":"Uzbekistan","code":"UZ","flag":"🇺🇿"},{"id":239,"name":"Vanuatu","code":"VU","flag":"🇻🇺"},{"id":240,"name":"Vatican City","code":"VA","flag":"🇻🇦"},{"id":241,"name":"Venezuela","code":"VE","flag":"🇻🇪"},{"id":242,"name":"Viet Nam","code":"VN","flag":"🇻🇳"},{"id":243,"name":"Virgin Islands","code":"VG","flag":"🇻🇬"},{"id":244,"name":"Virgin Islands","code":"VI","flag":"🇻🇮"},{"id":245,"name":"Wallis and Futuna","code":"WF","flag":"🇼🇫"},{"id":246,"name":"Western Sahara","code":"EH","flag":"🇪🇭"},{"id":247,"name":"Yemen","code":"YE","flag":"🇾🇪"},{"id":248,"name":"Zambia","code":"ZM","flag":"🇿🇲"},{"id":249,"name":"Zimbabwe","code":"ZW","flag":"🇿🇼"},{"id":250,"name":"Åland Islands","code":"AX","flag":"🇦🇽"},{"id":251,"name":"Canary Islands","code":"IC","flag":"🇮🇨"}]`),
-  Zd = {
+  Md = JSON.parse(`[{"id":1,"name":"Afghanistan","code":"AF","flag":"🇦🇫"},{"id":2,"name":"Albania","code":"AL","flag":"🇦🇱"},{"id":3,"name":"Algeria","code":"DZ","flag":"🇩🇿"},{"id":4,"name":"American Samoa","code":"AS","flag":"🇦🇸"},{"id":5,"name":"Andorra","code":"AD","flag":"🇦🇩"},{"id":6,"name":"Angola","code":"AO","flag":"🇦🇴"},{"id":7,"name":"Anguilla","code":"AI","flag":"🇦🇮"},{"id":8,"name":"Antarctica","code":"AQ","flag":"🇦🇶"},{"id":9,"name":"Antigua and Barbuda","code":"AG","flag":"🇦🇬"},{"id":10,"name":"Argentina","code":"AR","flag":"🇦🇷"},{"id":11,"name":"Armenia","code":"AM","flag":"🇦🇲"},{"id":12,"name":"Aruba","code":"AW","flag":"🇦🇼"},{"id":13,"name":"Australia","code":"AU","flag":"🇦🇺"},{"id":14,"name":"Austria","code":"AT","flag":"🇦🇹"},{"id":15,"name":"Azerbaijan","code":"AZ","flag":"🇦🇿"},{"id":16,"name":"Bahamas","code":"BS","flag":"🇧🇸"},{"id":17,"name":"Bahrain","code":"BH","flag":"🇧🇭"},{"id":18,"name":"Bangladesh","code":"BD","flag":"🇧🇩"},{"id":19,"name":"Barbados","code":"BB","flag":"🇧🇧"},{"id":20,"name":"Belarus","code":"BY","flag":"🇧🇾"},{"id":21,"name":"Belgium","code":"BE","flag":"🇧🇪"},{"id":22,"name":"Belize","code":"BZ","flag":"🇧🇿"},{"id":23,"name":"Benin","code":"BJ","flag":"🇧🇯"},{"id":24,"name":"Bermuda","code":"BM","flag":"🇧🇲"},{"id":25,"name":"Bhutan","code":"BT","flag":"🇧🇹"},{"id":26,"name":"Bolivia","code":"BO","flag":"🇧🇴"},{"id":27,"name":"Bonaire","code":"BQ","flag":"🇧🇶"},{"id":28,"name":"Bosnia and Herzegovina","code":"BA","flag":"🇧🇦"},{"id":29,"name":"Botswana","code":"BW","flag":"🇧🇼"},{"id":30,"name":"Bouvet Island","code":"BV","flag":"🇧🇻"},{"id":31,"name":"Brazil","code":"BR","flag":"🇧🇷"},{"id":32,"name":"British Indian Ocean Territory","code":"IO","flag":"🇮🇴"},{"id":33,"name":"Brunei Darussalam","code":"BN","flag":"🇧🇳"},{"id":34,"name":"Bulgaria","code":"BG","flag":"🇧🇬"},{"id":35,"name":"Burkina Faso","code":"BF","flag":"🇧🇫"},{"id":36,"name":"Burundi","code":"BI","flag":"🇧🇮"},{"id":37,"name":"Cabo Verde","code":"CV","flag":"🇨🇻"},{"id":38,"name":"Cambodia","code":"KH","flag":"🇰🇭"},{"id":39,"name":"Cameroon","code":"CM","flag":"🇨🇲"},{"id":40,"name":"Canada","code":"CA","flag":"🇨🇦"},{"id":41,"name":"Cayman Islands","code":"KY","flag":"🇰🇾"},{"id":42,"name":"Central African Republic","code":"CF","flag":"🇨🇫"},{"id":43,"name":"Chad","code":"TD","flag":"🇹🇩"},{"id":44,"name":"Chile","code":"CL","flag":"🇨🇱"},{"id":45,"name":"China","code":"CN","flag":"🇨🇳"},{"id":46,"name":"Christmas Island","code":"CX","flag":"🇨🇽"},{"id":47,"name":"Cocos (Keeling) Islands","code":"CC","flag":"🇨🇨"},{"id":48,"name":"Colombia","code":"CO","flag":"🇨🇴"},{"id":49,"name":"Comoros","code":"KM","flag":"🇰🇲"},{"id":50,"name":"Congo","code":"CG","flag":"🇨🇬"},{"id":51,"name":"Cook Islands","code":"CK","flag":"🇨🇰"},{"id":52,"name":"Costa Rica","code":"CR","flag":"🇨🇷"},{"id":53,"name":"Croatia","code":"HR","flag":"🇭🇷"},{"id":54,"name":"Cuba","code":"CU","flag":"🇨🇺"},{"id":55,"name":"Curaçao","code":"CW","flag":"🇨🇼"},{"id":56,"name":"Cyprus","code":"CY","flag":"🇨🇾"},{"id":57,"name":"Czechia","code":"CZ","flag":"🇨🇿"},{"id":58,"name":"Côte d'Ivoire","code":"CI","flag":"🇨🇮"},{"id":59,"name":"Denmark","code":"DK","flag":"🇩🇰"},{"id":60,"name":"Djibouti","code":"DJ","flag":"🇩🇯"},{"id":61,"name":"Dominica","code":"DM","flag":"🇩🇲"},{"id":62,"name":"Dominican Republic","code":"DO","flag":"🇩🇴"},{"id":63,"name":"Ecuador","code":"EC","flag":"🇪🇨"},{"id":64,"name":"Egypt","code":"EG","flag":"🇪🇬"},{"id":65,"name":"El Salvador","code":"SV","flag":"🇸🇻"},{"id":66,"name":"Equatorial Guinea","code":"GQ","flag":"🇬🇶"},{"id":67,"name":"Eritrea","code":"ER","flag":"🇪🇷"},{"id":68,"name":"Estonia","code":"EE","flag":"🇪🇪"},{"id":69,"name":"Eswatini","code":"SZ","flag":"🇸🇿"},{"id":70,"name":"Ethiopia","code":"ET","flag":"🇪🇹"},{"id":71,"name":"Falkland Islands (Malvinas)","code":"FK","flag":"🇫🇰"},{"id":72,"name":"Faroe Islands","code":"FO","flag":"🇫🇴"},{"id":73,"name":"Fiji","code":"FJ","flag":"🇫🇯"},{"id":74,"name":"Finland","code":"FI","flag":"🇫🇮"},{"id":75,"name":"France","code":"FR","flag":"🇫🇷"},{"id":76,"name":"French Guiana","code":"GF","flag":"🇬🇫"},{"id":77,"name":"French Polynesia","code":"PF","flag":"🇵🇫"},{"id":78,"name":"French Southern Territories","code":"TF","flag":"🇹🇫"},{"id":79,"name":"Gabon","code":"GA","flag":"🇬🇦"},{"id":80,"name":"Gambia","code":"GM","flag":"🇬🇲"},{"id":81,"name":"Georgia","code":"GE","flag":"🇬🇪"},{"id":82,"name":"Germany","code":"DE","flag":"🇩🇪"},{"id":83,"name":"Ghana","code":"GH","flag":"🇬🇭"},{"id":84,"name":"Gibraltar","code":"GI","flag":"🇬🇮"},{"id":85,"name":"Greece","code":"GR","flag":"🇬🇷"},{"id":86,"name":"Greenland","code":"GL","flag":"🇬🇱"},{"id":87,"name":"Grenada","code":"GD","flag":"🇬🇩"},{"id":88,"name":"Guadeloupe","code":"GP","flag":"🇬🇵"},{"id":89,"name":"Guam","code":"GU","flag":"🇬🇺"},{"id":90,"name":"Guatemala","code":"GT","flag":"🇬🇹"},{"id":91,"name":"Guernsey","code":"GG","flag":"🇬🇬"},{"id":92,"name":"Guinea","code":"GN","flag":"🇬🇳"},{"id":93,"name":"Guinea-Bissau","code":"GW","flag":"🇬🇼"},{"id":94,"name":"Guyana","code":"GY","flag":"🇬🇾"},{"id":95,"name":"Haiti","code":"HT","flag":"🇭🇹"},{"id":96,"name":"Heard Island and McDonald Islands","code":"HM","flag":"🇭🇲"},{"id":97,"name":"Honduras","code":"HN","flag":"🇭🇳"},{"id":98,"name":"Hong Kong","code":"HK","flag":"🇭🇰"},{"id":99,"name":"Hungary","code":"HU","flag":"🇭🇺"},{"id":100,"name":"Iceland","code":"IS","flag":"🇮🇸"},{"id":101,"name":"India","code":"IN","flag":"🇮🇳"},{"id":102,"name":"Indonesia","code":"ID","flag":"🇮🇩"},{"id":103,"name":"Iran","code":"IR","flag":"🇮🇷"},{"id":104,"name":"Iraq","code":"IQ","flag":"🇮🇶"},{"id":105,"name":"Ireland","code":"IE","flag":"🇮🇪"},{"id":106,"name":"Isle of Man","code":"IM","flag":"🇮🇲"},{"id":107,"name":"Israel","code":"IL","flag":"🇮🇱"},{"id":108,"name":"Italy","code":"IT","flag":"🇮🇹"},{"id":109,"name":"Jamaica","code":"JM","flag":"🇯🇲"},{"id":110,"name":"Japan","code":"JP","flag":"🇯🇵"},{"id":111,"name":"Jersey","code":"JE","flag":"🇯🇪"},{"id":112,"name":"Jordan","code":"JO","flag":"🇯🇴"},{"id":113,"name":"Kazakhstan","code":"KZ","flag":"🇰🇿"},{"id":114,"name":"Kenya","code":"KE","flag":"🇰🇪"},{"id":115,"name":"Kiribati","code":"KI","flag":"🇰🇮"},{"id":116,"name":"Kosovo","code":"XK","flag":"🇽🇰"},{"id":117,"name":"Kuwait","code":"KW","flag":"🇰🇼"},{"id":118,"name":"Kyrgyzstan","code":"KG","flag":"🇰🇬"},{"id":119,"name":"Laos","code":"LA","flag":"🇱🇦"},{"id":120,"name":"Latvia","code":"LV","flag":"🇱🇻"},{"id":121,"name":"Lebanon","code":"LB","flag":"🇱🇧"},{"id":122,"name":"Lesotho","code":"LS","flag":"🇱🇸"},{"id":123,"name":"Liberia","code":"LR","flag":"🇱🇷"},{"id":124,"name":"Libya","code":"LY","flag":"🇱🇾"},{"id":125,"name":"Liechtenstein","code":"LI","flag":"🇱🇮"},{"id":126,"name":"Lithuania","code":"LT","flag":"🇱🇹"},{"id":127,"name":"Luxembourg","code":"LU","flag":"🇱🇺"},{"id":128,"name":"Macao","code":"MO","flag":"🇲🇴"},{"id":129,"name":"Madagascar","code":"MG","flag":"🇲🇬"},{"id":130,"name":"Malawi","code":"MW","flag":"🇲🇼"},{"id":131,"name":"Malaysia","code":"MY","flag":"🇲🇾"},{"id":132,"name":"Maldives","code":"MV","flag":"🇲🇻"},{"id":133,"name":"Mali","code":"ML","flag":"🇲🇱"},{"id":134,"name":"Malta","code":"MT","flag":"🇲🇹"},{"id":135,"name":"Marshall Islands","code":"MH","flag":"🇲🇭"},{"id":136,"name":"Martinique","code":"MQ","flag":"🇲🇶"},{"id":137,"name":"Mauritania","code":"MR","flag":"🇲🇷"},{"id":138,"name":"Mauritius","code":"MU","flag":"🇲🇺"},{"id":139,"name":"Mayotte","code":"YT","flag":"🇾🇹"},{"id":140,"name":"Mexico","code":"MX","flag":"🇲🇽"},{"id":141,"name":"Micronesia","code":"FM","flag":"🇫🇲"},{"id":142,"name":"Moldova","code":"MD","flag":"🇲🇩"},{"id":143,"name":"Monaco","code":"MC","flag":"🇲🇨"},{"id":144,"name":"Mongolia","code":"MN","flag":"🇲🇳"},{"id":145,"name":"Montenegro","code":"ME","flag":"🇲🇪"},{"id":146,"name":"Montserrat","code":"MS","flag":"🇲🇸"},{"id":147,"name":"Morocco","code":"MA","flag":"🇲🇦"},{"id":148,"name":"Mozambique","code":"MZ","flag":"🇲🇿"},{"id":149,"name":"Myanmar","code":"MM","flag":"🇲🇲"},{"id":150,"name":"Namibia","code":"NA","flag":"🇳🇦"},{"id":151,"name":"Nauru","code":"NR","flag":"🇳🇷"},{"id":152,"name":"Nepal","code":"NP","flag":"🇳🇵"},{"id":153,"name":"Netherlands","code":"NL","flag":"🇳🇱"},{"id":154,"name":"New Caledonia","code":"NC","flag":"🇳🇨"},{"id":155,"name":"New Zealand","code":"NZ","flag":"🇳🇿"},{"id":156,"name":"Nicaragua","code":"NI","flag":"🇳🇮"},{"id":157,"name":"Niger","code":"NE","flag":"🇳🇪"},{"id":158,"name":"Nigeria","code":"NG","flag":"🇳🇬"},{"id":159,"name":"Niue","code":"NU","flag":"🇳🇺"},{"id":160,"name":"Norfolk Island","code":"NF","flag":"🇳🇫"},{"id":161,"name":"North Korea","code":"KP","flag":"🇰🇵"},{"id":162,"name":"North Macedonia","code":"MK","flag":"🇲🇰"},{"id":163,"name":"Northern Mariana Islands","code":"MP","flag":"🇲🇵"},{"id":164,"name":"Norway","code":"NO","flag":"🇳🇴"},{"id":165,"name":"Oman","code":"OM","flag":"🇴🇲"},{"id":166,"name":"Pakistan","code":"PK","flag":"🇵🇰"},{"id":167,"name":"Palau","code":"PW","flag":"🇵🇼"},{"id":168,"name":"Palestine","code":"PS","flag":"🇵🇸"},{"id":169,"name":"Panama","code":"PA","flag":"🇵🇦"},{"id":170,"name":"Papua New Guinea","code":"PG","flag":"🇵🇬"},{"id":171,"name":"Paraguay","code":"PY","flag":"🇵🇾"},{"id":172,"name":"Peru","code":"PE","flag":"🇵🇪"},{"id":173,"name":"Philippines","code":"PH","flag":"🇵🇭"},{"id":174,"name":"Pitcairn","code":"PN","flag":"🇵🇳"},{"id":175,"name":"Poland","code":"PL","flag":"🇵🇱"},{"id":176,"name":"Portugal","code":"PT","flag":"🇵🇹"},{"id":177,"name":"Puerto Rico","code":"PR","flag":"🇵🇷"},{"id":178,"name":"Qatar","code":"QA","flag":"🇶🇦"},{"id":179,"name":"Republic of the Congo","code":"CD","flag":"🇨🇩"},{"id":180,"name":"Romania","code":"RO","flag":"🇷🇴"},{"id":181,"name":"Russia","code":"RU","flag":"🇷🇺"},{"id":182,"name":"Rwanda","code":"RW","flag":"🇷🇼"},{"id":183,"name":"Réunion","code":"RE","flag":"🇷🇪"},{"id":184,"name":"Saint Barthélemy","code":"BL","flag":"🇧🇱"},{"id":185,"name":"Saint Helena","code":"SH","flag":"🇸🇭"},{"id":186,"name":"Saint Kitts and Nevis","code":"KN","flag":"🇰🇳"},{"id":187,"name":"Saint Lucia","code":"LC","flag":"🇱🇨"},{"id":188,"name":"Saint Martin (French part)","code":"MF","flag":"🇲🇫"},{"id":189,"name":"Saint Pierre and Miquelon","code":"PM","flag":"🇵🇲"},{"id":190,"name":"Saint Vincent and the Grenadines","code":"VC","flag":"🇻🇨"},{"id":191,"name":"Samoa","code":"WS","flag":"🇼🇸"},{"id":192,"name":"San Marino","code":"SM","flag":"🇸🇲"},{"id":193,"name":"Sao Tome and Principe","code":"ST","flag":"🇸🇹"},{"id":194,"name":"Saudi Arabia","code":"SA","flag":"🇸🇦"},{"id":195,"name":"Senegal","code":"SN","flag":"🇸🇳"},{"id":196,"name":"Serbia","code":"RS","flag":"🇷🇸"},{"id":197,"name":"Seychelles","code":"SC","flag":"🇸🇨"},{"id":198,"name":"Sierra Leone","code":"SL","flag":"🇸🇱"},{"id":199,"name":"Singapore","code":"SG","flag":"🇸🇬"},{"id":200,"name":"Sint Maarten (Dutch part)","code":"SX","flag":"🇸🇽"},{"id":201,"name":"Slovakia","code":"SK","flag":"🇸🇰"},{"id":202,"name":"Slovenia","code":"SI","flag":"🇸🇮"},{"id":203,"name":"Solomon Islands","code":"SB","flag":"🇸🇧"},{"id":204,"name":"Somalia","code":"SO","flag":"🇸🇴"},{"id":205,"name":"South Africa","code":"ZA","flag":"🇿🇦"},{"id":206,"name":"South Georgia and the South Sandwich Islands","code":"GS","flag":"🇬🇸"},{"id":207,"name":"South Korea","code":"KR","flag":"🇰🇷"},{"id":208,"name":"South Sudan","code":"SS","flag":"🇸🇸"},{"id":209,"name":"Spain","code":"ES","flag":"🇪🇸"},{"id":210,"name":"Sri Lanka","code":"LK","flag":"🇱🇰"},{"id":211,"name":"Sudan","code":"SD","flag":"🇸🇩"},{"id":212,"name":"Suriname","code":"SR","flag":"🇸🇷"},{"id":213,"name":"Svalbard and Jan Mayen","code":"SJ","flag":"🇸🇯"},{"id":214,"name":"Sweden","code":"SE","flag":"🇸🇪"},{"id":215,"name":"Switzerland","code":"CH","flag":"🇨🇭"},{"id":216,"name":"Syrian Arab Republic","code":"SY","flag":"🇸🇾"},{"id":217,"name":"Taiwan","code":"TW","flag":"🇹🇼"},{"id":218,"name":"Tajikistan","code":"TJ","flag":"🇹🇯"},{"id":219,"name":"Tanzania","code":"TZ","flag":"🇹🇿"},{"id":220,"name":"Thailand","code":"TH","flag":"🇹🇭"},{"id":221,"name":"Timor-Leste","code":"TL","flag":"🇹🇱"},{"id":222,"name":"Togo","code":"TG","flag":"🇹🇬"},{"id":223,"name":"Tokelau","code":"TK","flag":"🇹🇰"},{"id":224,"name":"Tonga","code":"TO","flag":"🇹🇴"},{"id":225,"name":"Trinidad and Tobago","code":"TT","flag":"🇹🇹"},{"id":226,"name":"Tunisia","code":"TN","flag":"🇹🇳"},{"id":227,"name":"Turkmenistan","code":"TM","flag":"🇹🇲"},{"id":228,"name":"Turks and Caicos Islands","code":"TC","flag":"🇹🇨"},{"id":229,"name":"Tuvalu","code":"TV","flag":"🇹🇻"},{"id":230,"name":"Türkiye","code":"TR","flag":"🇹🇷"},{"id":231,"name":"Uganda","code":"UG","flag":"🇺🇬"},{"id":232,"name":"Ukraine","code":"UA","flag":"🇺🇦"},{"id":233,"name":"United Arab Emirates","code":"AE","flag":"🇦🇪"},{"id":234,"name":"United Kingdom","code":"GB","flag":"🇬🇧"},{"id":235,"name":"United States","code":"US","flag":"🇺🇸"},{"id":236,"name":"United States Minor Outlying Islands","code":"UM","flag":"🇺🇲"},{"id":237,"name":"Uruguay","code":"UY","flag":"🇺🇾"},{"id":238,"name":"Uzbekistan","code":"UZ","flag":"🇺🇿"},{"id":239,"name":"Vanuatu","code":"VU","flag":"🇻🇺"},{"id":240,"name":"Vatican City","code":"VA","flag":"🇻🇦"},{"id":241,"name":"Venezuela","code":"VE","flag":"🇻🇪"},{"id":242,"name":"Viet Nam","code":"VN","flag":"🇻🇳"},{"id":243,"name":"Virgin Islands","code":"VG","flag":"🇻🇬"},{"id":244,"name":"Virgin Islands","code":"VI","flag":"🇻🇮"},{"id":245,"name":"Wallis and Futuna","code":"WF","flag":"🇼🇫"},{"id":246,"name":"Western Sahara","code":"EH","flag":"🇪🇭"},{"id":247,"name":"Yemen","code":"YE","flag":"🇾🇪"},{"id":248,"name":"Zambia","code":"ZM","flag":"🇿🇲"},{"id":249,"name":"Zimbabwe","code":"ZW","flag":"🇿🇼"},{"id":250,"name":"Åland Islands","code":"AX","flag":"🇦🇽"},{"id":251,"name":"Canary Islands","code":"IC","flag":"🇮🇨"}]`),
+  Bd = {
     dashboard: {
       summary: {
         counters: {
@@ -1810,23 +1794,23 @@ const gl = {
     }
   },
   K = {
-    seasons: Gd,
-    regionSize: Fd,
-    refreshIntervalMs: Vd,
-    colors: Jd,
-    errors: Wd,
-    items: Kd,
-    products: Hd,
-    countries: Yd,
-    permissions: Zd
+    seasons: Id,
+    regionSize: Nd,
+    refreshIntervalMs: zd,
+    colors: qd,
+    errors: Od,
+    items: Dd,
+    products: Cd,
+    countries: Md,
+    permissions: Bd
   },
   ne = K,
   ve = K.seasons.length - 1,
-  yl = K.seasons[ve].zoom,
-  bl = K.seasons[ve].tileSize,
-  vl = K.permissions;
+  ol = K.seasons[ve].zoom,
+  il = K.seasons[ve].tileSize,
+  ul = K.permissions;
 
-function kl(n) {
+function cl(n) {
   return ne.countries[n - 1]
 }
 class d extends Error {
@@ -1835,7 +1819,7 @@ class d extends Error {
   }
 }
 
-function Xd(n, t) {
+function Ld(n, t) {
   const e = {};
   for (const r of n) {
     const a = t(r);
@@ -1845,7 +1829,7 @@ function Xd(n, t) {
   return e
 }
 
-function Sl(n, t) {
+function dl(n, t) {
   const e = {};
   for (const r of n) {
     const a = t(r);
@@ -1854,16 +1838,16 @@ function Sl(n, t) {
   return e
 }
 var W;
-class Qd {
+class $d {
   constructor(t) {
     w(this, W, E(!0));
     this.url = t
   }
   get online() {
-    return y(m(this, W))
+    return y(f(this, W))
   }
   set online(t) {
-    v(m(this, W), t, !0)
+    v(f(this, W), t, !0)
   }
   async paint(t, e) {
     return this.sendPaintRequests(t, e, (r, a, s) => `/s${r}/pixel/${a}/${s}`)
@@ -1872,20 +1856,20 @@ class Qd {
     return this.sendPaintRequests(t, e, (r, a, s) => `/staff/tools/select-area/clear/s${r}/pixel/${a}/${s}`)
   }
   async sendPaintRequests(t, e, r) {
-    const a = Xd(t, l => `t=(${l.tile[0]},${l.tile[1]}),s=${l.season}`),
+    const a = Ld(t, l => `t=(${l.tile[0]},${l.tile[1]}),s=${l.season}`),
       s = be("2025-09_pawtect");
     if (!s) throw new Error("paint request while pawtect experiment not found");
     const i = (await Promise.all(Object.values(a).map(l => {
-      const [c, h] = l[0].tile, f = l[0].season, T = {
+      const [c, h] = l[0].tile, m = l[0].season, T = {
         colors: l.map(S => S.colorIdx),
         coords: l.flatMap(S => S.pixel),
         fp: e
-      }, A = JSON.stringify(T), k = r(f, c, h);
+      }, A = JSON.stringify(T), k = r(m, c, h);
       return this.request(k, {
         method: "POST",
         body: A,
         headers: {
-          "x-pawtect-token": s.variant !== "disabled" ? al(A) : "",
+          "x-pawtect-token": s.variant !== "disabled" ? Vd(A) : "",
           "x-pawtect-variant": s.variant
         },
         credentials: "include"
@@ -1897,27 +1881,22 @@ class Qd {
       if (l.status === 403) {
         if (l.headers.get("cf-mitigated") === "challenge") throw new Error(cr());
         const c = await l.json();
+        if ((c == null ? void 0 : c.error) === "timeout") {
+          const h = new Date(Date.now() + ((c == null ? void 0 : c.durationMs) ?? 0));
+          throw new Error(gd({
+            until: h.toLocaleString()
+          }))
+        }
         if ((c == null ? void 0 : c.error) === "refresh") throw new Error($i());
         if ((c == null ? void 0 : c.error) === "color-not-owned") throw new Error(mi());
         if ((c == null ? void 0 : c.error) === "event-pixel-present") throw new Error(xn());
         I.refresh()
-      } else if (l.status === 451) {
-        const c = await i[0].json();
-        c == null || c.err;
-        const h = c == null ? void 0 : c.suspension;
-        if (h === "ban") throw new Error(gd());
-        if (h === "timeout") {
-          const f = new Date(Date.now() + ((c == null ? void 0 : c.durationMs) ?? 0));
-          throw new Error(Id({
-            until: f.toLocaleString()
-          }))
-        } else throw new Error(o())
       } else throw new Error(o())
     }
   }
   async adminAutoPainterPaint(t, e) {
-    const r = el(t),
-      a = await tl(r),
+    const r = Ud(t),
+      a = await Rd(r),
       s = new FormData;
     s.append("fingerprint", e), s.append("season", r.season.toString()), s.append("px0", r.offsetX.toString()), s.append("py0", r.offsetY.toString()), s.append("width", r.width.toString()), s.append("height", r.height.toString()), s.append("pixels", t.length.toString()), s.append("bitmap", a, "auto-painter.png");
     const u = await this.request("/staff/tools/auto-painter/paint", {
@@ -1958,15 +1937,15 @@ class Qd {
       credentials: "include"
     });
     if (l.status !== 200) {
-      const f = await l.text();
-      throw console.error("Error while fetching pixel area info", f), new Error(o())
+      const m = await l.text();
+      throw console.error("Error while fetching pixel area info", m), new Error(o())
     }
     const c = await l.arrayBuffer(),
       h = new DataView(c);
     return {
       paintedBy: Array.from({
         length: c.byteLength / 4
-      }, (f, T) => h.getUint32(T * 4, !0))
+      }, (m, T) => h.getUint32(T * 4, !0))
     }
   }
   async me() {
@@ -2700,8 +2679,8 @@ class Qd {
     });
     if (c.status !== 200) throw new d(o(), c.status);
     const h = await c.json(),
-      f = Array.isArray(h == null ? void 0 : h.tickets) ? h.tickets : [];
-    return f.sort((T, A) => new Date(A.createdAt).getTime() - new Date(T.createdAt).getTime()), f
+      m = Array.isArray(h == null ? void 0 : h.tickets) ? h.tickets : [];
+    return m.sort((T, A) => new Date(A.createdAt).getTime() - new Date(T.createdAt).getTime()), m
   }
   async getModerationTranslate(t, e) {
     const r = e == "tickets" ? "/staff/tickets/translate" : "/staff/appeals/translate",
@@ -2722,31 +2701,31 @@ class Qd {
     for (const c of t) {
       const h = c.status ?? "open";
       if (e === "received") {
-        for (const f of c.reports) r.push({
-          id: String(f.id),
+        for (const m of c.reports) r.push({
+          id: String(m.id),
           ticketId: String(c.id),
-          createdAt: f.createdAt ?? c.createdAt,
+          createdAt: m.createdAt ?? c.createdAt,
           byUser: {
-            id: Number(f.reportedBy),
-            name: String(f.reportedByName ?? f.reportedBy),
-            picture: f.reportedByPicture ?? null
+            id: Number(m.reportedBy),
+            name: String(m.reportedByName ?? m.reportedBy),
+            picture: m.reportedByPicture ?? null
           },
-          reason: String(f.reason),
+          reason: String(m.reason),
           status: h
         });
         continue
       }
       if (e === "sent") {
-        for (const f of c.reports) r.push({
-          id: String(f.id),
+        for (const m of c.reports) r.push({
+          id: String(m.id),
           ticketId: String(c.id),
-          createdAt: f.createdAt ?? c.createdAt,
+          createdAt: m.createdAt ?? c.createdAt,
           toUser: {
             id: Number(c.reportedUser.id),
             name: String(c.reportedUser.name),
             picture: c.reportedUser.picture ?? null
           },
-          reason: String(f.reason),
+          reason: String(m.reason),
           status: h
         });
         continue
@@ -2786,7 +2765,7 @@ class Qd {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
-        pawtectMe: Od(),
+        pawtectMe: vd(),
         "paint-the": "world",
         "but-not": "using-bots",
         security: "/.well-known/security.txt"
@@ -3085,7 +3064,7 @@ class Qd {
 }
 W = new WeakMap;
 
-function el(n) {
+function Ud(n) {
   var T, A;
   if (!n.length) throw new Error("Auto painter request does not contain any pixels.");
   const t = n[0].season;
@@ -3110,7 +3089,7 @@ function el(n) {
     c = u - a + 1,
     h = i - s + 1;
   if (!Number.isFinite(c) || !Number.isFinite(h) || c <= 0 || h <= 0) throw new Error("Failed to compute image bounds for auto painter payload.");
-  const f = new Uint8ClampedArray(c * h * 4);
+  const m = new Uint8ClampedArray(c * h * 4);
   for (const {
       x: k,
       y: S,
@@ -3122,10 +3101,10 @@ function el(n) {
     const xe = k - a,
       H = ((S - s) * c + xe) * 4,
       [Te, Ee, Ae] = ae.rgb;
-    f[H] = Te, f[H + 1] = Ee, f[H + 2] = Ae, f[H + 3] = x === 0 ? 0 : 255
+    m[H] = Te, m[H + 1] = Ee, m[H + 2] = Ae, m[H + 3] = x === 0 ? 0 : 255
   }
   return {
-    data: f,
+    data: m,
     width: c,
     height: h,
     offsetX: a,
@@ -3133,8 +3112,8 @@ function el(n) {
     season: t
   }
 }
-async function tl(n) {
-  const t = nl(n.width, n.height),
+async function Rd(n) {
+  const t = Gd(n.width, n.height),
     e = t.getContext("2d");
   if (!e) throw new Error("Canvas API is not available to encode auto painter bitmap.");
   const r = e.createImageData(n.width, n.height);
@@ -3151,7 +3130,7 @@ async function tl(n) {
   })
 }
 
-function nl(n, t) {
+function Gd(n, t) {
   if (typeof OffscreenCanvas < "u") return new OffscreenCanvas(n, t);
   if (typeof document < "u") {
     const e = document.createElement("canvas");
@@ -3159,40 +3138,40 @@ function nl(n, t) {
   }
   throw new Error("Canvas API is not available in the current environment.")
 }
-let Q = new Qd(le),
+let Q = new $d(le),
   re = !1,
   ke;
 
-function xl() {
+function ll() {
   const n = be("2025-09_pawtect");
   if (!n) throw new Error("pawtect experiment not found on load");
-  n.variant !== "disabled" && (re || I.data && we($e).then(rl).catch(t => {
+  n.variant !== "disabled" && (re || I.data && we($e).then(Fd).catch(t => {
     ke = t, qe(t)
   }))
 }
 
-function rl() {
-  Nd(I.data.id), Q.postPawtectLoad();
+function Fd() {
+  wd(I.data.id), Q.postPawtectLoad();
   const n = fetch;
   Object.assign(window, {
     fetch: Se((t, e) => {
       let r = null;
-      return t instanceof Request ? r = t.url : r = t, r.startsWith("/") || qd(r), n.call(window, t, e)
+      return t instanceof Request ? r = t.url : r = t, r.startsWith("/") || bd(r), n.call(window, t, e)
     })
   }), re = !0
 }
 
-function al(n) {
+function Vd(n) {
   if (ke) throw new Error(Su());
   if (!re) throw new Error("Try again in a few seconds");
-  return Dd(n)
+  return kd(n)
 }
 
 function Se(n) {
   return n.bind().bind()
 }
 
-function Tl(n, t, e) {
+function _l(n, t, e) {
   const r = {
     [n.name](...a) {
       return e(...a), t(...a)
@@ -3201,5 +3180,5 @@ function Tl(n, t, e) {
   return Se(r)
 }
 export {
-  Sl as A, bl as B, ve as C, yl as P, vl as S, ne as a, Q as b, o as c, wl as d, kr as e, Zt as f, Kr as g, ia as h, ba as i, b as j, ll as k, _l as l, ml as m, xl as n, Tl as o, hl as p, kl as q, Qi as r, gl as s, _e as t, I as u, pl as v, fl as w, Id as x, gd as y, po as z
+  il as A, ve as C, ol as P, ul as S, ne as a, Q as b, o as c, sl as d, kr as e, Zt as f, Kr as g, ia as h, ba as i, b as j, Xd as k, Qd as l, tl as m, ll as n, _l as o, nl as p, cl as q, Qi as r, al as s, _e as t, I as u, rl as v, el as w, po as x, gd as y, dl as z
 };
