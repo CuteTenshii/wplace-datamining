@@ -14,7 +14,7 @@ var m = (n, t, e) => (Ie(n, t, "read from private field"), e ? e.call(n) : t.get
   w = (n, t, e) => t.has(n) ? se("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(n) : t.set(n, e);
 import {
   g as _
-} from "./DBHcKzVK.js";
+} from "./BOfBLWG1.js";
 import {
   e as E,
   g as oe,
@@ -22,20 +22,20 @@ import {
   i as v,
   x as ie,
   u as z
-} from "./DkqsQ_no.js";
+} from "./BgnSSwn_.js";
 import {
   P as le,
   g as Ne
-} from "./DOlEyguN.js";
+} from "./BGSecLMP.js";
 import {
   s as ze,
   c as qe
-} from "./ljdg6IrV.js";
+} from "./Bqeol8ev.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "a3ac030b39e1c69cc580b4434d12301a02e465ee"
+      id: "1dee92bf582c1a78c458cd2ea7a5f29a8123460e"
     }
   } catch {}
 })();
@@ -43,7 +43,7 @@ try {
   (function() {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       t = new n.Error().stack;
-    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "7c58d0b2-95ee-4586-b8a2-930c0b06d74d", n._sentryDebugIdIdentifier = "sentry-dbid-7c58d0b2-95ee-4586-b8a2-930c0b06d74d")
+    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "36390966-b525-49da-8bf9-4919242e0846", n._sentryDebugIdIdentifier = "sentry-dbid-36390966-b525-49da-8bf9-4919242e0846")
   })()
 } catch {}
 
@@ -1737,8 +1737,8 @@ const gl = {
       },
       users: {
         info: "staff.dashboard.users.info",
-        notes_get: "staff.dashboard.users.notes_get",
-        notes_set: "staff.dashboard.users.notes_set",
+        notesGet: "staff.dashboard.users.notes_get",
+        notesSet: "staff.dashboard.users.notes_set",
         purchases: "staff.dashboard.users.purchases",
         ticketsHistory: "staff.dashboard.users.tickets_history",
         ticketsStats: "staff.dashboard.users.tickets_stats",
@@ -1937,17 +1937,16 @@ class Qd {
   }) {
     const i = new URLSearchParams;
     i.set("x", String(a)), i.set("y", String(s));
-    let l = `/s${t}/pixel/${e}/${r}?${i.toString()}`;
-    const c = await this.request(l, {
+    const l = await this.request(`/s${t}/pixel/${e}/${r}?${i.toString()}`, {
       credentials: "include"
     });
-    if (c.status !== 200) {
-      const h = await c.text();
+    if (l.status !== 200) {
+      const c = await l.text();
       throw new Error(Dr({
-        err: h
+        err: c
       }))
     }
-    return c.json()
+    return l.json()
   }
   async getPixelAreaInfo({
     season: t,
@@ -3202,5 +3201,5 @@ function Tl(n, t, e) {
   return Se(r)
 }
 export {
-  yl as A, bl as B, ve as C, vl as P, ne as S, Q as a, o as b, wl as c, kr as d, Zt as e, b as f, Kr as g, ia as h, ba as i, ll as j, _l as k, ml as l, xl as m, Tl as n, hl as o, kl as p, Qi as q, pl as r, gl as s, _e as t, I as u, fl as v, Id as w, po as x, gd as y, Sl as z
+  Sl as A, bl as B, ve as C, yl as P, vl as S, ne as a, Q as b, o as c, wl as d, kr as e, Zt as f, Kr as g, ia as h, ba as i, b as j, ll as k, _l as l, ml as m, xl as n, Tl as o, hl as p, kl as q, Qi as r, gl as s, _e as t, I as u, pl as v, fl as w, Id as x, gd as y, po as z
 };

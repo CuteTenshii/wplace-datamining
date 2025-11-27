@@ -1,6 +1,6 @@
-import "./C4pz1jNS.js";
+import "./BuqsQCJ3.js";
 import {
-  p as g,
+  p as b,
   f as c,
   t as A,
   b as r,
@@ -8,24 +8,24 @@ import {
   s as v,
   d as w,
   r as y
-} from "./DkqsQ_no.js";
+} from "./BgnSSwn_.js";
 import {
   i as h
-} from "./2ppNae3Y.js";
+} from "./Ql8_IIIv.js";
 import {
   b as _,
   a as f,
   s as x
-} from "./DjUOH9bk.js";
+} from "./CoTCnPJG.js";
 import {
   p as E,
   r as T
-} from "./B1fLW5aC.js";
+} from "./CqfkU8BY.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "a3ac030b39e1c69cc580b4434d12301a02e465ee"
+      id: "1dee92bf582c1a78c458cd2ea7a5f29a8123460e"
     }
   } catch {}
 })();
@@ -41,7 +41,7 @@ var B = c("<span>wplace</span>"),
   L = c('<div><img alt="Wplace logo"/> <!></div>');
 
 function D(e, t) {
-  g(t, !0);
+  b(t, !0);
   let a = E(t, "size", 3, "default"),
     p = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
   var s = L();
@@ -53,7 +53,7 @@ function D(e, t) {
   let i;
   var u = v(l, 2);
   {
-    var b = o => {
+    var g = o => {
       var n = B();
       let d;
       A(() => d = f(n, 1, "text-base-content font-pixel", null, d, {
@@ -62,7 +62,7 @@ function D(e, t) {
       })), r(o, n)
     };
     h(u, o => {
-      t.hasText && o(b)
+      t.hasText && o(g)
     })
   }
   y(s), A(() => {

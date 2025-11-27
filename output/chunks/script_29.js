@@ -1,7 +1,7 @@
 import {
-  g as pe
-} from "./DBHcKzVK.js";
-import "./C4pz1jNS.js";
+  g as ce
+} from "./BOfBLWG1.js";
+import "./BuqsQCJ3.js";
 import {
   o as U,
   b as l,
@@ -23,59 +23,59 @@ import {
   i as q,
   u as we,
   aR as Le
-} from "./DkqsQ_no.js";
+} from "./BgnSSwn_.js";
 import {
   b as R,
   d as mt,
-  s as ce,
+  s as pe,
   r as De,
   g as Te,
   a as et,
   f as bt
-} from "./DjUOH9bk.js";
+} from "./CoTCnPJG.js";
 import {
   r as N,
   p as tt
-} from "./B1fLW5aC.js";
+} from "./CqfkU8BY.js";
 import {
   o as gt
-} from "./CcS44sZC.js";
+} from "./C3UDOFIG.js";
 import {
   s as x
-} from "./DG0P4CpW.js";
+} from "./DTSMFCPF.js";
 import {
   i as M
-} from "./2ppNae3Y.js";
+} from "./Ql8_IIIv.js";
 import {
   b as ht
-} from "./CNTrI1xz.js";
+} from "./B8mw337v.js";
 import {
   g as Fe
-} from "./D-SFj8ce.js";
+} from "./D5hZOH_I.js";
 import {
   g as xt,
   P as Xe
-} from "./DOlEyguN.js";
+} from "./BGSecLMP.js";
 import {
   u as le,
   t as de,
-  a as Ge,
-  S as yt
-} from "./B4qmM7M1.js";
+  b as Ge,
+  a as yt
+} from "./Dw3-b-DI.js";
 import {
   r as Oe
-} from "./xT3AFufj.js";
+} from "./B06_yRgk.js";
 import {
   c as wt
-} from "./C17lPu1s.js";
+} from "./bvE7jGzI.js";
 import {
   a as kt
-} from "./D4wmYLFk.js";
+} from "./DKq45GFC.js";
 (function() {
   try {
     var s = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     s.SENTRY_RELEASE = {
-      id: "a3ac030b39e1c69cc580b4434d12301a02e465ee"
+      id: "1dee92bf582c1a78c458cd2ea7a5f29a8123460e"
     }
   } catch {}
 })();
@@ -83,7 +83,7 @@ try {
   (function() {
     var s = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       o = new s.Error().stack;
-    o && (s._sentryDebugIds = s._sentryDebugIds || {}, s._sentryDebugIds[o] = "ffec2f09-32d2-4f5e-bca6-8793544bf8da", s._sentryDebugIdIdentifier = "sentry-dbid-ffec2f09-32d2-4f5e-bca6-8793544bf8da")
+    o && (s._sentryDebugIds = s._sentryDebugIds || {}, s._sentryDebugIds[o] = "1577540e-acc8-43f8-9b7b-42f7aaa07789", s._sentryDebugIdIdentifier = "sentry-dbid-1577540e-acc8-43f8-9b7b-42f7aaa07789")
   })()
 } catch {}
 const Ct = () => "Add profile picture",
@@ -96,11 +96,11 @@ const Ct = () => "Add profile picture",
   Tt = () => "プロフィール画像を追加",
   Mt = () => "Dodaj zdjęcie profilowe",
   jt = () => "Добавить изображение профиля",
-  St = () => "Додати зображення профілю",
-  Bt = () => "Thêm ảnh đại diện",
+  Bt = () => "Додати зображення профілю",
+  St = () => "Thêm ảnh đại diện",
   vo = (s = {}, o = {}) => {
-    const e = o.locale ?? pe();
-    return e === "en" ? Ct() : e === "pt" ? zt() : e === "ch" ? qt() : e === "de" ? It() : e === "es" ? Pt() : e === "fr" ? Lt() : e === "it" ? Dt() : e === "jp" ? Tt() : e === "pl" ? Mt() : e === "ru" ? jt() : e === "uk" ? St() : Bt()
+    const e = o.locale ?? ce();
+    return e === "en" ? Ct() : e === "pt" ? zt() : e === "ch" ? qt() : e === "de" ? It() : e === "es" ? Pt() : e === "fr" ? Lt() : e === "it" ? Dt() : e === "jp" ? Tt() : e === "pl" ? Mt() : e === "ru" ? jt() : e === "uk" ? Bt() : St()
   },
   Et = () => "Eraser",
   Ht = () => "Borracha",
@@ -115,7 +115,7 @@ const Ct = () => "Add profile picture",
   Kt = () => "Гумка",
   Nt = () => "Cục tẩy",
   mo = (s = {}, o = {}) => {
-    const e = o.locale ?? pe();
+    const e = o.locale ?? ce();
     return e === "en" ? Et() : e === "pt" ? Ht() : e === "ch" ? Rt() : e === "de" ? Ut() : e === "es" ? Zt() : e === "fr" ? At() : e === "it" ? Ft() : e === "jp" ? Xt() : e === "pl" ? Gt() : e === "ru" ? Ot() : e === "uk" ? Kt() : Nt()
   },
   Qt = () => "Refund Policy",
@@ -131,15 +131,15 @@ const Ct = () => "Add profile picture",
   nr = () => "Політика повернення коштів",
   sr = () => "Chính sách hoàn tiền",
   Ke = (s = {}, o = {}) => {
-    const e = o.locale ?? pe();
+    const e = o.locale ?? ce();
     return e === "en" ? Qt() : e === "pt" ? Vt() : e === "ch" ? Yt() : e === "de" ? Wt() : e === "es" ? Jt() : e === "fr" ? $t() : e === "it" ? er() : e === "jp" ? tr() : e === "pl" ? rr() : e === "ru" ? or() : e === "uk" ? nr() : sr()
   },
   ar = () => "For refund requests and processing details, please see our",
   ir = () => "Para pedidos de reembolso, consulte nossa",
   lr = () => "有关退款请求和处理详情，请参阅我们的",
   dr = () => "Für Rückerstattungen und Details siehe unsere",
-  cr = () => "Para solicitudes de reembolso y más detalles, consulta nuestra",
-  pr = () => "Pour les demandes de remboursement et les détails de traitement, consultez notre",
+  pr = () => "Para solicitudes de reembolso y más detalles, consulta nuestra",
+  cr = () => "Pour les demandes de remboursement et les détails de traitement, consultez notre",
   ur = () => "Per richieste di rimborso, consulta la nostra",
   fr = () => "返金の申請方法と詳細については、こちらをご覧ください:",
   _r = () => "Aby uzyskać informacje o zwrotach, zobacz naszą",
@@ -147,8 +147,8 @@ const Ct = () => "Add profile picture",
   mr = () => "Для запитів на повернення та деталей обробки дивіться нашу",
   br = () => "Để yêu cầu hoàn tiền và chi tiết xử lý, hãy xem",
   Ne = (s = {}, o = {}) => {
-    const e = o.locale ?? pe();
-    return e === "en" ? ar() : e === "pt" ? ir() : e === "ch" ? lr() : e === "de" ? dr() : e === "es" ? cr() : e === "fr" ? pr() : e === "it" ? ur() : e === "jp" ? fr() : e === "pl" ? _r() : e === "ru" ? vr() : e === "uk" ? mr() : br()
+    const e = o.locale ?? ce();
+    return e === "en" ? ar() : e === "pt" ? ir() : e === "ch" ? lr() : e === "de" ? dr() : e === "es" ? pr() : e === "fr" ? cr() : e === "it" ? ur() : e === "jp" ? fr() : e === "pl" ? _r() : e === "ru" ? vr() : e === "uk" ? mr() : br()
   },
   gr = () => "You gain 1 droplet per pixel painted and 500 droplets per level",
   hr = () => "Você ganha 1 droplet por pixel pintado e 500 droplets por level",
@@ -163,7 +163,7 @@ const Ct = () => "Add profile picture",
   Pr = () => "Ви отримуєте 1 дроплет за кожен намальований піксель і 500 дроплетів за рівень",
   Lr = () => "Bạn nhận 1 droplet cho mỗi pixel tô và 500 droplets mỗi cấp độ",
   Qe = (s = {}, o = {}) => {
-    const e = o.locale ?? pe();
+    const e = o.locale ?? ce();
     return e === "en" ? gr() : e === "pt" ? hr() : e === "ch" ? xr() : e === "de" ? yr() : e === "es" ? wr() : e === "fr" ? kr() : e === "it" ? Cr() : e === "jp" ? zr() : e === "pl" ? qr() : e === "ru" ? Ir() : e === "uk" ? Pr() : Lr()
   };
 var Dr = U('<svg><path d="M440-320v-326L336-542l-56-58 200-200 200 200-56 58-104-104v326h-80ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
@@ -202,16 +202,16 @@ function Me(s, o) {
     ...e
   })), l(s, n)
 }
-var Sr = w('<span class="btn btn-xs btn-circle btn-primary ml-0.5 size-5"><!></span>'),
-  Br = w('<span class="flex items-center gap-1"><!> <span class="text-primary text-base font-semibold"> <span class="text-xs max-sm:hidden">Droplets</span></span> <!></span>'),
+var Br = w('<span class="btn btn-xs btn-circle btn-primary ml-0.5 size-5"><!></span>'),
+  Sr = w('<span class="flex items-center gap-1"><!> <span class="text-primary text-base font-semibold"> <span class="text-xs max-sm:hidden">Droplets</span></span> <!></span>'),
   Er = w('<button class="badge badge-lg border-base-content/10 right-tooltip cursor-pointer border-2 pl-1 pr-1"><!></button>'),
   Hr = w('<span class="badge badge-lg border-base-content/10 right-tooltip border-2 pl-1 pr-2"><!></span>');
 
 function Rr(s, o) {
   We(o, !0);
-  const e = c => {
-    var p = Br(),
-      f = t(p);
+  const e = p => {
+    var c = Sr(),
+      f = t(c);
     Me(f, {
       class: "text-primary size-4.5"
     });
@@ -220,38 +220,38 @@ function Rr(s, o) {
     K(), r(g);
     var C = a(g, 2);
     {
-      var B = S => {
-        var Q = Sr(),
+      var S = B => {
+        var Q = Br(),
           Z = t(Q);
         Mr(Z, {
           class: "size-4"
-        }), r(Q), l(S, Q)
+        }), r(Q), l(B, Q)
       };
-      M(C, S => {
-        n() && S(B)
+      M(C, B => {
+        n() && B(S)
       })
     }
-    r(p), y(S => x(j, `${S??""} `), [() => o.value.toLocaleString("en-US")]), l(c, p)
+    r(c), y(B => x(j, `${B??""} `), [() => o.value.toLocaleString("en-US")]), l(p, c)
   };
   let n = tt(o, "button", 3, !0);
   var k = Je(),
     h = ke(k);
   {
-    var b = c => {
-        var p = Er();
-        p.__click = () => {
+    var b = p => {
+        var c = Er();
+        c.__click = () => {
           xt.dropletsDialogOpen = !0
         };
-        var f = t(p);
-        e(f), r(p), l(c, p)
+        var f = t(c);
+        e(f), r(c), l(p, c)
       },
-      d = c => {
-        var p = Hr(),
-          f = t(p);
-        e(f), r(p), l(c, p)
+      d = p => {
+        var c = Hr(),
+          f = t(c);
+        e(f), r(c), l(p, c)
       };
-    M(h, c => {
-      n() ? c(b) : c(d, !1)
+    M(h, p => {
+      n() ? p(b) : p(d, !1)
     })
   }
   l(s, k), $e()
@@ -314,9 +314,9 @@ function go(s, o) {
     });
   let b = ye(null),
     d = ye(void 0),
-    c = ye(!1);
-  var p = Qr(),
-    f = ke(p),
+    p = ye(!1);
+  var c = Qr(),
+    f = ke(c),
     g = t(f),
     j = a(t(g), 2);
   {
@@ -376,9 +376,9 @@ function go(s, o) {
             })
           }
           var Ze = a(Ue, 2),
-            ct = t(Ze);
+            pt = t(Ze);
           r(Ze), r(Pe);
-          var pt = a(Pe, 2);
+          var ct = a(Pe, 2);
           {
             var ut = z => {
                 var m = Fr(),
@@ -410,7 +410,7 @@ function go(s, o) {
                 Ve(_t, {
                   class: "size-5"
                 }), K(2), r(he), r(Ae), r(ge), r(m), y(ie => {
-                  et(m, 1, `dropdown mt-3 ${it()??""}`), x(ne, `R$${ie??""}`), ce(O, "action", `${Xe}/payment/create-checkout-session`), Te(L, Ee()), T.disabled = _(n), he.disabled = _(n)
+                  et(m, 1, `dropdown mt-3 ${it()??""}`), x(ne, `R$${ie??""}`), pe(O, "action", `${Xe}/payment/create-checkout-session`), Te(L, Ee()), T.disabled = _(n), he.disabled = _(n)
                 }, [() => (ze() * 4).toFixed(2).replace(".", ",")]), xe("submit", O, () => {
                   q(n, !0), setTimeout(() => q(n, !1), 3e3)
                 }), l(z, m)
@@ -435,17 +435,17 @@ function go(s, o) {
                   })
                 }
                 r(ne), r(m), y(() => {
-                  ce(m, "action", `${Xe}/payment/create-checkout-session`), Te(D, Ee()), ne.disabled = _(n)
+                  pe(m, "action", `${Xe}/payment/create-checkout-session`), Te(D, Ee()), ne.disabled = _(n)
                 }), xe("submit", m, () => {
                   q(n, !0), setTimeout(() => q(n, !1), 3e3)
                 }), l(z, m)
               };
-            M(pt, z => {
+            M(ct, z => {
               _(k) ? z(ut) : z(ft, !1)
             })
           }
           r(qe), y((z, m) => {
-            x(lt, `${z??""} `), x(ct, `+${m??""} bonus`)
+            x(lt, `${z??""} `), x(pt, `+${m??""} bonus`)
           }, [() => (re() + oe()).toLocaleString("en-US"), () => oe().toLocaleString("en-US")]), l(G, qe)
         };
         var H = t(Y),
@@ -508,7 +508,7 @@ function go(s, o) {
           te = a(X),
           be = t(te, !0);
         r(te), r(ee), r(Y), y((G, u, re, oe) => {
-          x(X, `${u??""} `), ce(te, "href", re), x(be, oe)
+          x(X, `${u??""} `), pe(te, "href", re), x(be, oe)
         }, [() => Qe(), () => Ne(), Oe, () => Ke()])
       }
       r(v), y((P, G, u, re) => x(V, P), [() => Qe(), () => Ne(), Oe, () => Ke()]), l(i, v)
@@ -518,23 +518,23 @@ function go(s, o) {
     })
   }
   r(g);
-  var B = a(g, 2),
-    S = t(B),
-    Q = t(S, !0);
-  r(S), r(B), r(f), mt(f, () => i => {
+  var S = a(g, 2),
+    B = t(S),
+    Q = t(B, !0);
+  r(B), r(S), r(f), mt(f, () => i => {
     vt(() => {
       e() ? i.show() : i.close()
     })
   });
   var Z = a(f, 2),
     je = t(Z),
-    Se = a(t(je), 2),
-    Ce = t(Se),
-    Be = t(Ce),
-    rt = t(Be);
+    Be = a(t(je), 2),
+    Ce = t(Be),
+    Se = t(Ce),
+    rt = t(Se);
   Ve(rt, {
     class: "size-10"
-  }), K(2), r(Be), r(Ce);
+  }), K(2), r(Se), r(Ce);
   var ot = a(Ce, 2);
   {
     var nt = i => {
@@ -566,7 +566,7 @@ function go(s, o) {
             return
           }
           try {
-            q(c, !0);
+            q(p, !0);
             const {
               paid: X
             } = await Ge.getPixStatus(_(d).pixId);
@@ -580,10 +580,10 @@ function go(s, o) {
           } catch (X) {
             console.error(X), de.error("Error ao atualizar o status do pix. Tente recarregar a página.")
           } finally {
-            q(c, !1)
+            q(p, !1)
           }
         }, r(J), y(I => {
-          x(ue, `R$${I??""}`), ce(_e, "src", _(d).qrCode), Te(H, _(d).pixCode), $.disabled = _(c)
+          x(ue, `R$${I??""}`), pe(_e, "src", _(d).qrCode), Te(H, _(d).pixCode), $.disabled = _(p)
         }, [() => (_(d).price / 100).toFixed(2).replace(".", ",")]), l(i, v)
       },
       st = i => {
@@ -594,13 +594,13 @@ function go(s, o) {
       _(d) ? i(nt) : i(st, !1)
     })
   }
-  r(Se), r(je), r(Z), ht(Z, i => q(b, i), () => _(b)), y(i => x(Q, i), [() => wt()]), xe("close", f, () => {
+  r(Be), r(je), r(Z), ht(Z, i => q(b, i), () => _(b)), y(i => x(Q, i), [() => wt()]), xe("close", f, () => {
     e(!1)
   }), xe("close", Z, () => {
     setTimeout(() => {
       q(d, void 0)
     }, 300)
-  }), l(s, p), $e()
+  }), l(s, c), $e()
 }
 Ye(["click"]);
 var Vr = U('<svg><path d="M690-240h190v80H610l80-80Zm-500 80-85-85q-23-23-23.5-57t22.5-58l440-456q23-24 56.5-24t56.5 23l199 199q23 23 23 57t-23 57L520-160H190Z"></path></svg>'),
@@ -612,22 +612,22 @@ function ho(s, o) {
     k = ke(n);
   {
     var h = d => {
-        var c = Vr();
-        R(c, () => ({
+        var p = Vr();
+        R(p, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
           fill: "currentColor",
           ...e
-        })), l(d, c)
+        })), l(d, p)
       },
       b = d => {
-        var c = Yr();
-        R(c, () => ({
+        var p = Yr();
+        R(p, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
           fill: "currentColor",
           ...e
-        })), l(d, c)
+        })), l(d, p)
       };
     M(k, d => {
       o.filled ? d(h) : d(b, !1)
@@ -642,13 +642,13 @@ function xo([s, o], [e, n]) {
     h = Math.abs(e - s),
     b = Math.abs(n - o),
     d = s < e ? 1 : -1,
-    c = o < n ? 1 : -1;
-  let p = h - b,
+    p = o < n ? 1 : -1;
+  let c = h - b,
     f = s,
     g = o;
   for (; k.push([f, g]), !(f === e && g === n);) {
-    const j = 2 * p;
-    j > -b && (p -= b, f += d), j < h && (p += h, g += c)
+    const j = 2 * c;
+    j > -b && (c -= b, f += d), j < h && (c += h, g += p)
   }
   return k
 }
@@ -663,19 +663,19 @@ function yo(s, o) {
     b = t(h),
     d = t(b);
   {
-    var c = C => {
+    var p = C => {
         kt(C, {
           get userId() {
             return o.userId
           }
         })
       },
-      p = C => {
-        var B = Wr();
-        y(() => ce(B, "src", o.pictureUrl)), l(C, B)
+      c = C => {
+        var S = Wr();
+        y(() => pe(S, "src", o.pictureUrl)), l(C, S)
       };
     M(d, C => {
-      o.pictureUrl ? C(p, !1) : C(c)
+      o.pictureUrl ? C(c, !1) : C(p)
     })
   }
   r(b), r(h);
