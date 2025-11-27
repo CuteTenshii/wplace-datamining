@@ -1,27 +1,37 @@
 import {
-  g as n
-} from "./Dc6DF1Sc.js";
+  g as r
+} from "./DBHcKzVK.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "ac7618a676a9d262ff8724cf2a3a13f62011007a"
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    t.SENTRY_RELEASE = {
+      id: "a3ac030b39e1c69cc580b4434d12301a02e465ee"
     }
   } catch {}
 })();
 try {
   (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      s = new e.Error().stack;
-    s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "99c76fb0-42a8-4961-809f-fe44a5bd6e78", e._sentryDebugIdIdentifier = "sentry-dbid-99c76fb0-42a8-4961-809f-fe44a5bd6e78")
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      n = new t.Error().stack;
+    n && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[n] = "30edfb15-4df8-4662-9e50-e0b71901b649", t._sentryDebugIdIdentifier = "sentry-dbid-30edfb15-4df8-4662-9e50-e0b71901b649")
   })()
 } catch {}
-const t = () => "Users banned successfully",
-  u = () => "Usuários banidos com sucesso",
-  f = (e = {}, s = {}) => (s.locale ?? n()) === "en" ? t() : u(),
-  r = () => "Users timeouted successfully",
-  d = () => "Usuários suspensos com sucesso",
-  l = (e = {}, s = {}) => (s.locale ?? n()) === "en" ? r() : d();
+const u = () => "Timeout",
+  o = () => "Suspender",
+  i = () => "禁言",
+  f = () => "Timeout",
+  s = () => "Suspender",
+  d = () => "Suspendre",
+  c = () => "Sospendi",
+  l = () => "タイムアウト",
+  a = () => "Zawieszenie",
+  b = () => "Тайм-аут",
+  p = () => "Тайм-аут",
+  m = () => "Tạm khóa",
+  y = (t = {}, n = {}) => {
+    const e = n.locale ?? r();
+    return e === "en" ? u() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? f() : e === "es" ? s() : e === "fr" ? d() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? p() : m()
+  };
 export {
-  l as a, f as u
+  y as t
 };

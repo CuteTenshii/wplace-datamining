@@ -1,41 +1,79 @@
-import "./nL0VRVfA.js";
+import "./C4pz1jNS.js";
 import {
-  z as n,
-  b as d
-} from "./BAiyaAMH.js";
+  p as g,
+  f as c,
+  t as A,
+  b as r,
+  c as m,
+  s as v,
+  d as w,
+  r as y
+} from "./DkqsQ_no.js";
 import {
-  d as r
-} from "./2yNgY6tU.js";
+  i as h
+} from "./2ppNae3Y.js";
 import {
-  r as s
-} from "./PxFakNOO.js";
+  b as _,
+  a as f,
+  s as x
+} from "./DjUOH9bk.js";
+import {
+  p as E,
+  r as T
+} from "./B1fLW5aC.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "ac7618a676a9d262ff8724cf2a3a13f62011007a"
+      id: "a3ac030b39e1c69cc580b4434d12301a02e465ee"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      f = new e.Error().stack;
-    f && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[f] = "90d95e48-a1fc-4f1f-961d-120e80fe1938", e._sentryDebugIdIdentifier = "sentry-dbid-90d95e48-a1fc-4f1f-961d-120e80fe1938")
+      t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "19ccd0ca-bf95-4e01-b240-31c5541d93c2", e._sentryDebugIdIdentifier = "sentry-dbid-19ccd0ca-bf95-4e01-b240-31c5541d93c2")
   })()
 } catch {}
-var a = n('<svg><path d="M790-56 414-434q-47 11-87.5 33T254-346l-84-86q32-32 69-56t79-42l-90-90q-41 21-76.5 46.5T84-516L0-602q32-32 66.5-57.5T140-708l-84-84 56-56 736 736-58 56Zm-310-64q-42 0-71-29.5T380-220q0-42 29-71t71-29q42 0 71 29t29 71q0 41-29 70.5T480-120Zm236-238-29-29-29-29-144-144q81 8 151.5 41T790-432l-74 74Zm160-158q-77-77-178.5-120.5T480-680q-21 0-40.5 1.5T400-674L298-776q44-12 89.5-18t92.5-6q142 0 265 53t215 145l-84 86Z"></path></svg>');
+const S = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
+var B = c("<span>wplace</span>"),
+  L = c('<div><img alt="Wplace logo"/> <!></div>');
 
-function u(e, f) {
-  let o = s(f, ["$$slots", "$$events", "$$legacy"]);
-  var t = a();
-  r(t, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...o
-  })), d(e, t)
+function D(e, t) {
+  g(t, !0);
+  let a = E(t, "size", 3, "default"),
+    p = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+  var s = L();
+  _(s, () => ({
+    ...p,
+    class: `flex items-center gap-1.5 ${t.class??""}`
+  }));
+  var l = w(s);
+  let i;
+  var u = v(l, 2);
+  {
+    var b = o => {
+      var n = B();
+      let d;
+      A(() => d = f(n, 1, "text-base-content font-pixel", null, d, {
+        "text-4xl": a() === "default",
+        "text-5xl": a() === "lg" || a() === "medium"
+      })), r(o, n)
+    };
+    h(u, o => {
+      t.hasText && o(b)
+    })
+  }
+  y(s), A(() => {
+    i = f(l, 1, "pixelated h-auto shrink-0", null, i, {
+      "w-4": a() === "small",
+      "w-10": a() === "default",
+      "w-16": a() === "medium",
+      "w-20": a() === "lg"
+    }), x(l, "src", S)
+  }), r(e, s), m()
 }
 export {
-  u as W
+  D as L
 };

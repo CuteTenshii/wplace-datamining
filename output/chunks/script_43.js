@@ -1,64 +1,53 @@
+import {
+  g as t
+} from "./DBHcKzVK.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "ac7618a676a9d262ff8724cf2a3a13f62011007a"
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "a3ac030b39e1c69cc580b4434d12301a02e465ee"
     }
   } catch {}
 })();
 try {
   (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      a = new e.Error().stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "318a9da5-f9ae-41c4-a6ad-1557223c6f66", e._sentryDebugIdIdentifier = "sentry-dbid-318a9da5-f9ae-41c4-a6ad-1557223c6f66")
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "7607599d-d4b4-4a79-8951-1f47e17579c8", n._sentryDebugIdIdentifier = "sentry-dbid-7607599d-d4b4-4a79-8951-1f47e17579c8")
   })()
 } catch {}
-const b = e => e;
-
-function h(e) {
-  const a = e - 1;
-  return a * a * a + 1
-}
-
-function w(e, {
-  delay: a = 0,
-  duration: i = 400,
-  easing: s = b
-} = {}) {
-  const r = +getComputedStyle(e).opacity;
-  return {
-    delay: a,
-    duration: i,
-    easing: s,
-    css: n => `opacity: ${n*r}`
-  }
-}
-
-function m(e, {
-  delay: a = 0,
-  duration: i = 400,
-  easing: s = h,
-  axis: r = "y"
-} = {}) {
-  const n = getComputedStyle(e),
-    c = +n.opacity,
-    p = r === "y" ? "height" : "width",
-    l = parseFloat(n[p]),
-    o = r === "y" ? ["top", "bottom"] : ["left", "right"],
-    d = o.map(t => `${t[0].toUpperCase()}${t.slice(1)}`),
-    f = parseFloat(n[`padding${d[0]}`]),
-    y = parseFloat(n[`padding${d[1]}`]),
-    u = parseFloat(n[`margin${d[0]}`]),
-    g = parseFloat(n[`margin${d[1]}`]),
-    _ = parseFloat(n[`border${d[0]}Width`]),
-    $ = parseFloat(n[`border${d[1]}Width`]);
-  return {
-    delay: a,
-    duration: i,
-    easing: s,
-    css: t => `overflow: hidden;opacity: ${Math.min(t*20,1)*c};${p}: ${t*l}px;padding-${o[0]}: ${t*f}px;padding-${o[1]}: ${t*y}px;margin-${o[0]}: ${t*u}px;margin-${o[1]}: ${t*g}px;border-${o[0]}-width: ${t*_}px;border-${o[1]}-width: ${t*$}px;min-${p}: 0`
-  }
-}
+const s = () => "Users banned successfully",
+  u = () => "Usuários banidos com sucesso",
+  o = () => "用户已成功封禁",
+  i = () => "Benutzer erfolgreich gebannt",
+  c = () => "Usuarios baneados correctamente",
+  d = () => "Utilisateurs bannis avec succès",
+  a = () => "Utenti bannati con successo",
+  f = () => "ユーザーをBANしました。",
+  _ = () => "Użytkownicy zostali pomyślnie zbanowani",
+  l = () => "Пользователи успешно забанены",
+  b = () => "Користувачів успішно заблоковано",
+  p = () => "Đã cấm người dùng thành công",
+  D = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? d() : e === "it" ? a() : e === "jp" ? f() : e === "pl" ? _() : e === "ru" ? l() : e === "uk" ? b() : p()
+  },
+  m = () => "Users timeouted successfully",
+  g = () => "Usuários suspensos com sucesso",
+  y = () => "用户已成功禁言",
+  h = () => "Benutzer erfolgreich mit Timeout belegt",
+  w = () => "Usuarios suspendidos correctamente",
+  U = () => "Utilisateurs suspendus avec succès",
+  k = () => "Utenti sospesi con successo",
+  z = () => "ユーザーをタイムアウトしました。",
+  v = () => "Użytkownicy zostali pomyślnie zawieszeni",
+  T = () => "Пользователям успешно выдан тайм-аут",
+  E = () => "Користувачам успішно призначено тайм-аут",
+  I = () => "Đã tạm khóa người dùng thành công",
+  B = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? m() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? h() : e === "es" ? w() : e === "fr" ? U() : e === "it" ? k() : e === "jp" ? z() : e === "pl" ? v() : e === "ru" ? T() : e === "uk" ? E() : I()
+  };
 export {
-  w as f, m as s
+  B as a, D as u
 };

@@ -1,24 +1,37 @@
 import {
-  g as o
-} from "./Dc6DF1Sc.js";
+  g as t
+} from "./DBHcKzVK.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "ac7618a676a9d262ff8724cf2a3a13f62011007a"
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "a3ac030b39e1c69cc580b4434d12301a02e465ee"
     }
   } catch {}
 })();
 try {
   (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "b1459c48-7f79-4156-9b25-61f8a00bb671", e._sentryDebugIdIdentifier = "sentry-dbid-b1459c48-7f79-4156-9b25-61f8a00bb671")
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      n = new r.Error().stack;
+    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "b234e053-cc09-4cb3-b18d-34b09fa3ea85", r._sentryDebugIdIdentifier = "sentry-dbid-b234e053-cc09-4cb3-b18d-34b09fa3ea85")
   })()
 } catch {}
-const f = () => "Confirm",
-  t = () => "Confirmar",
-  d = (e = {}, n = {}) => (n.locale ?? o()) === "en" ? f() : t();
+const s = () => "Users",
+  u = () => "Usuários",
+  o = () => "用户",
+  i = () => "Benutzer",
+  f = () => "Usuarios",
+  c = () => "Utilisateurs",
+  d = () => "Utenti",
+  l = () => "ユーザー",
+  a = () => "Użytkownicy",
+  b = () => "Пользователи",
+  p = () => "Користувачі",
+  y = () => "Người dùng",
+  g = (r = {}, n = {}) => {
+    const e = n.locale ?? t();
+    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? f() : e === "fr" ? c() : e === "it" ? d() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? p() : y()
+  };
 export {
-  d as c
+  g as u
 };

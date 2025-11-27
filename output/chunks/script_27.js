@@ -1,75 +1,63 @@
+import {
+  I as p,
+  J as g,
+  K as l,
+  x as y,
+  L as _,
+  M as d,
+  j as u,
+  H as h,
+  N as w
+} from "./DkqsQ_no.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "ac7618a676a9d262ff8724cf2a3a13f62011007a"
+      id: "a3ac030b39e1c69cc580b4434d12301a02e465ee"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "4b1e3b78-51b7-4ecf-8b2d-82d1c4886c5a", e._sentryDebugIdIdentifier = "sentry-dbid-4b1e3b78-51b7-4ecf-8b2d-82d1c4886c5a")
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "3933e62a-9342-401b-b615-677975fab732", e._sentryDebugIdIdentifier = "sentry-dbid-3933e62a-9342-401b-b615-677975fab732")
   })()
 } catch {}
 
-function C(e, t) {
-  return t.includes(e)
-}
-const D = {
-  user: "user",
-  community_leader: "cl",
-  moderator: "mod",
-  global_moderator: "gm",
-  admin: "admin"
-};
-
-function $(e) {
-  const t = e - 1;
-  return t * t * t + 1
-}
-
-function O(e, {
-  from: t,
-  to: r
-}, u = {}) {
-  var {
-    delay: h = 0,
-    duration: i = a => Math.sqrt(a) * 120,
-    easing: y = $
-  } = u, d = getComputedStyle(e), g = d.transform === "none" ? "" : d.transform, [o, s] = d.transformOrigin.split(" ").map(parseFloat);
-  o /= e.clientWidth, s /= e.clientHeight;
-  var c = z(e),
-    b = e.clientWidth / r.width / c,
-    v = e.clientHeight / r.height / c,
-    p = t.left + t.width * o,
-    m = t.top + t.height * s,
-    w = r.left + r.width * o,
-    x = r.top + r.height * s,
-    f = (p - w) * b,
-    l = (m - x) * v,
-    _ = t.width / r.width,
-    S = t.height / r.height;
-  return {
-    delay: h,
-    duration: typeof i == "function" ? i(Math.sqrt(f * f + l * l)) : i,
-    easing: y,
-    css: (a, n) => {
-      var E = n * f,
-        R = n * l,
-        T = a + n * _,
-        I = a + n * S;
-      return `transform: ${g} translate(${E}px, ${R}px) scale(${T}, ${I});`
-    }
+function I(e = !1) {
+  const n = p,
+    t = n.l.u;
+  if (!t) return;
+  let a = () => h(n.s);
+  if (e) {
+    let s = 0,
+      f = {};
+    const b = w(() => {
+      let r = !1;
+      const i = n.s;
+      for (const o in i) i[o] !== f[o] && (f[o] = i[o], r = !0);
+      return r && s++, s
+    });
+    a = () => u(b)
   }
+  t.b.length && g(() => {
+    c(n, a), d(t.b)
+  }), l(() => {
+    const s = y(() => t.m.map(_));
+    return () => {
+      for (const f of s) typeof f == "function" && f()
+    }
+  }), t.a.length && l(() => {
+    c(n, a), d(t.a)
+  })
 }
 
-function z(e) {
-  if ("currentCSSZoom" in e) return e.currentCSSZoom;
-  for (var t = e, r = 1; t !== null;) r *= +getComputedStyle(t).zoom, t = t.parentElement;
-  return r
+function c(e, n) {
+  if (e.l.s)
+    for (const t of e.l.s) u(t);
+  n()
 }
 export {
-  D as R, O as f, C as h
+  I as i
 };

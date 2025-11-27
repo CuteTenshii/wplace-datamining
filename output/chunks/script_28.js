@@ -1,112 +1,96 @@
 import {
-  K as _,
-  L as t,
-  M as E,
-  F as w,
-  N as i,
-  O as S,
-  h as k,
-  P as D,
-  Q as I,
-  R as y
-} from "./BAiyaAMH.js";
+  g as l
+} from "./DBHcKzVK.js";
+import "./C4pz1jNS.js";
+import {
+  o,
+  b as d
+} from "./DkqsQ_no.js";
+import {
+  b as s
+} from "./DjUOH9bk.js";
+import {
+  r as i
+} from "./B1fLW5aC.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "ac7618a676a9d262ff8724cf2a3a13f62011007a"
+      id: "a3ac030b39e1c69cc580b4434d12301a02e465ee"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      c = new e.Error().stack;
-    c && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[c] = "d578c2b9-468c-4126-98a9-7f16f88d20e4", e._sentryDebugIdIdentifier = "sentry-dbid-d578c2b9-468c-4126-98a9-7f16f88d20e4")
+      r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "878ccc33-4f2d-4fcb-b9b2-437e86c0b849", e._sentryDebugIdIdentifier = "sentry-dbid-878ccc33-4f2d-4fcb-b9b2-437e86c0b849")
   })()
 } catch {}
+const c = () => "Reddit",
+  f = () => "Reddit",
+  a = () => "Reddit",
+  u = () => "Reddit",
+  p = () => "Reddit",
+  g = () => "Reddit",
+  v = () => "Reddit",
+  w = () => "Reddit",
+  $ = () => "Reddit",
+  b = () => "Reddit",
+  h = () => "Reddit",
+  _ = () => "Reddit",
+  E = (e = {}, r = {}) => {
+    const t = r.locale ?? l();
+    return t === "en" ? c() : t === "pt" ? f() : t === "ch" ? a() : t === "de" ? u() : t === "es" ? p() : t === "fr" ? g() : t === "it" ? v() : t === "jp" ? w() : t === "pl" ? $() : t === "ru" ? b() : t === "uk" ? h() : _()
+  };
+var y = o('<svg><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path></svg>');
 
-function A(e, c, l = c) {
-  var d = new WeakSet;
-  _(e, "input", async f => {
-    var o = f ? e.defaultValue : e.value;
-    if (o = u(e) ? b(o) : o, l(o), t !== null && d.add(t), await E(), o !== (o = c())) {
-      var r = e.selectionStart,
-        s = e.selectionEnd,
-        v = e.value.length;
-      if (e.value = o ?? "", s !== null) {
-        var a = e.value.length;
-        r === s && s === v && a > v ? (e.selectionStart = a, e.selectionEnd = a) : (e.selectionStart = r, e.selectionEnd = Math.min(s, a))
-      }
-    }
-  }), (k && e.defaultValue !== e.value || w(c) == null && e.value) && (l(u(e) ? b(e.value) : e.value), t !== null && d.add(t)), i(() => {
-    var f = c();
-    if (e === document.activeElement) {
-      var o = S ?? t;
-      if (d.has(o)) return
-    }
-    u(e) && f === b(e.value) || e.type === "date" && !f && !e.value || f !== e.value && (e.value = f ?? "")
-  })
+function M(e, r) {
+  let t = i(r, ["$$slots", "$$events", "$$legacy"]);
+  var n = y();
+  s(n, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...t
+  })), d(e, n)
 }
-const h = new Set;
+var m = o('<svg><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"></path></svg>');
 
-function C(e, c, l, d, f = d) {
-  var o = l.getAttribute("type") === "checkbox",
-    r = e;
-  let s = !1;
-  if (c !== null)
-    for (var v of c) r = r[v] ?? (r[v] = []);
-  r.push(l), _(l, "change", () => {
-    var a = l.__value;
-    o && (a = m(r, a, l.checked)), f(a)
-  }, () => f(o ? [] : null)), i(() => {
-    var a = d();
-    if (k && l.defaultChecked !== l.checked) {
-      s = !0;
-      return
-    }
-    o ? (a = a || [], l.checked = a.includes(l.__value)) : l.checked = D(l.__value, a)
-  }), I(() => {
-    var a = r.indexOf(l);
-    a !== -1 && r.splice(a, 1)
-  }), h.has(r) || (h.add(r), y(() => {
-    r.sort((a, n) => a.compareDocumentPosition(n) === 4 ? -1 : 1), h.delete(r)
-  })), y(() => {
-    if (s) {
-      var a;
-      if (o) a = m(r, a, l.checked);
-      else {
-        var n = r.find(g => g.checked);
-        a = n == null ? void 0 : n.__value
-      }
-      f(a)
-    }
-  })
+function B(e, r) {
+  let t = i(r, ["$$slots", "$$events", "$$legacy"]);
+  var n = m();
+  s(n, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...t
+  })), d(e, n)
 }
+var R = o('<svg><path d="m356-160-56-56 180-180 180 180-56 56-124-124-124 124Zm124-404L300-744l56-56 124 124 124-124 56 56-180 180Z"></path></svg>');
 
-function R(e, c, l = c) {
-  _(e, "change", d => {
-    var f = d ? e.defaultChecked : e.checked;
-    l(f)
-  }), (k && e.defaultChecked !== e.checked || w(c) == null) && l(e.checked), i(() => {
-    var d = c();
-    e.checked = !!d
-  })
+function D(e, r) {
+  let t = i(r, ["$$slots", "$$events", "$$legacy"]);
+  var n = R();
+  s(n, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...t
+  })), d(e, n)
 }
+var T = o('<svg><path d="M480-120 300-300l58-58 122 122 122-122 58 58-180 180ZM358-598l-58-58 180-180 180 180-58 58-122-122-122 122Z"></path></svg>');
 
-function m(e, c, l) {
-  for (var d = new Set, f = 0; f < e.length; f += 1) e[f].checked && d.add(e[f].__value);
-  return l || d.delete(c), Array.from(d)
-}
-
-function u(e) {
-  var c = e.type;
-  return c === "number" || c === "range"
-}
-
-function b(e) {
-  return e === "" ? null : +e
+function L(e, r) {
+  let t = i(r, ["$$slots", "$$events", "$$legacy"]);
+  var n = T();
+  s(n, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...t
+  })), d(e, n)
 }
 export {
-  R as a, A as b, C as c
+  M as C, B as S, D as U, L as a, E as r
 };

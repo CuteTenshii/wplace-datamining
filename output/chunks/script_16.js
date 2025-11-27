@@ -1,103 +1,100 @@
-var m = t => {
-  throw TypeError(t)
-};
-var w = (t, e, i) => e.has(t) || m("Cannot " + i);
-var a = (t, e, i) => (w(t, e, "read from private field"), i ? i.call(t) : e.get(t)),
-  n = (t, e, i) => e.has(t) ? m("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, i);
-import {
-  l as s,
-  g as o,
-  o as r,
-  m as p
-} from "./BAiyaAMH.js";
 (function() {
   try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
-      id: "ac7618a676a9d262ff8724cf2a3a13f62011007a"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "a3ac030b39e1c69cc580b4434d12301a02e465ee"
     }
   } catch {}
 })();
 try {
   (function() {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "904104c3-213d-4638-aa69-106af7fa498e", t._sentryDebugIdIdentifier = "sentry-dbid-904104c3-213d-4638-aa69-106af7fa498e")
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      o = new e.Error().stack;
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "f48e8017-3f7e-40b0-9f34-cb514ffed3f1", e._sentryDebugIdIdentifier = "sentry-dbid-f48e8017-3f7e-40b0-9f34-cb514ffed3f1")
   })()
 } catch {}
-const L = "true",
-  S = "https://backend.wplace.live/files",
-  v = "0x4AAAAAABpHqZ-6i7uL0nmG",
-  A = "https://backend.wplace.live",
-  b = "theme";
-var l, g, u, d, f, c, h;
-class y {
-  constructor() {
-    n(this, l, s(!1));
-    n(this, g, s(!1));
-    n(this, u, s(p(I())));
-    n(this, d, s(!1));
-    n(this, f, s("custom-winter"));
-    n(this, c, s(p(Date.now())));
-    n(this, h, s(void 0));
-    setInterval(() => {
-      r(a(this, c), Date.now(), !0)
-    }, 500), this.theme = localStorage.getItem(b), this.theme !== "dark" && this.theme !== "custom-winter" && (this.theme = "custom-winter")
-  }
-  get dropletsDialogOpen() {
-    return o(a(this, l))
-  }
-  set dropletsDialogOpen(e) {
-    r(a(this, l), e, !0)
-  }
-  get muted() {
-    return o(a(this, g))
-  }
-  set muted(e) {
-    r(a(this, g), e, !0)
-  }
-  get language() {
-    return o(a(this, u))
-  }
-  set language(e) {
-    r(a(this, u), e, !0)
-  }
-  get turnstatileLoaded() {
-    return o(a(this, d))
-  }
-  set turnstatileLoaded(e) {
-    r(a(this, d), e, !0)
-  }
-  get theme() {
-    return o(a(this, f))
-  }
-  set theme(e) {
-    r(a(this, f), e, !0), localStorage.setItem(b, e), document.documentElement.setAttribute("data-theme", e)
-  }
-  get now() {
-    return o(a(this, c))
-  }
-  get captcha() {
-    return E ? o(a(this, h)) : {
-      token: "turnstile-disabled",
-      time: Date.now()
+const y = "en",
+  c = ["en", "pt", "ch", "de", "es", "fr", "it", "jp", "pl", "ru", "uk", "vi"],
+  d = "PARAGLIDE_LOCALE",
+  g = ["localStorage", "preferredLanguage", "baseLocale"];
+globalThis.__paraglide = {};
+let i = !1,
+  p = () => {
+    let e;
+    for (const o of g) {
+      if (o === "baseLocale") e = y;
+      else if (o === "preferredLanguage") e = L();
+      else if (o === "localStorage") e = localStorage.getItem(d) ?? void 0;
+      else if (u(o) && l.has(o)) {
+        const t = l.get(o);
+        if (t) {
+          const a = t.getLocale();
+          if (a instanceof Promise) continue;
+          e = a
+        }
+      }
+      if (e !== void 0) {
+        const t = h(e);
+        return i || (i = !0, w(t, {
+          reload: !1
+        })), t
+      }
     }
-  }
-  set captcha(e) {
-    r(a(this, h), e, !0)
-  }
-}
-l = new WeakMap, g = new WeakMap, u = new WeakMap, d = new WeakMap, f = new WeakMap, c = new WeakMap, h = new WeakMap;
-const T = new y;
+    throw new Error("No locale found. Read the docs https://inlang.com/m/gerre34r/library-inlang-paraglideJs/errors#no-locale-found")
+  },
+  w = (e, o) => {
+    const t = {
+      reload: !0,
+      ...o
+    };
+    let a;
+    try {
+      a = p()
+    } catch {}
+    for (const n of g)
+      if (n !== "baseLocale") {
+        if (n === "localStorage" && typeof window < "u") localStorage.setItem(d, e);
+        else if (u(n) && l.has(n)) {
+          const s = l.get(n);
+          if (s) {
+            const f = s.setLocale(e);
+            f instanceof Promise && f.catch(b => {
+              console.warn(`Custom strategy "${n}" setLocale failed:`, b)
+            })
+          }
+        }
+      } t.reload && window.location && e !== a && window.location.reload()
+  };
 
-function I() {
-  if (navigator.languages && navigator.languages.length > 0) {
-    const t = navigator.languages.find(e => e.length === 2);
-    if (t) return t
-  }
-  return (navigator.language || navigator.userLanguage || navigator.browserLanguage || "en").substring(0, 2)
+function r(e) {
+  return e ? c.includes(e) : !1
 }
-const E = L.toLowerCase() !== "false";
+
+function h(e) {
+  if (r(e) === !1) throw new Error(`Invalid locale: ${e}. Expected one of: ${c.join(", ")}`);
+  return e
+}
+
+function L() {
+  var o;
+  if (!((o = navigator == null ? void 0 : navigator.languages) != null && o.length)) return;
+  const e = navigator.languages.map(t => {
+    var a;
+    return {
+      fullTag: t.toLowerCase(),
+      baseTag: (a = t.split("-")[0]) == null ? void 0 : a.toLowerCase()
+    }
+  });
+  for (const t of e) {
+    if (r(t.fullTag)) return t.fullTag;
+    if (r(t.baseTag)) return t.baseTag
+  }
+}
+const l = new Map;
+
+function u(e) {
+  return typeof e == "string" && /^custom-[A-Za-z0-9_-]+$/.test(e)
+}
 export {
-  A as P, v as a, S as b, T as g, E as t
+  p as g, d as l
 };
