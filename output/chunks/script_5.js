@@ -2,7 +2,7 @@
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "bb5d5d7c8d5938b4a51a8b309833405bb5c12631"
+      id: "f20ce6c7de81c065c8837dcafe40492e8d59c7f8"
     }
   } catch {}
 })();
@@ -10,10 +10,10 @@ try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       d = new e.Error().stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "581db516-8fb9-4689-8a7f-b9349ed65af1", e._sentryDebugIdIdentifier = "sentry-dbid-581db516-8fb9-4689-8a7f-b9349ed65af1")
+    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "b963848a-ae98-4290-a10a-a3bd6ad6b651", e._sentryDebugIdIdentifier = "sentry-dbid-b963848a-ae98-4290-a10a-a3bd6ad6b651")
   })()
 } catch {}
-const n = "1764362922399";
+const n = "1764369215330";
 export {
   n as v
 };
