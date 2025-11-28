@@ -1,20 +1,20 @@
 import {
-  P as y,
-  m as u,
-  aq as b,
+  P as r,
+  m as y,
+  aq as u,
   k as n,
   T as g,
   _ as p,
-  ag as l,
+  ag as a,
   Y as s,
   R as f,
   Z as _
-} from "./v-HkFxbH.js";
+} from "./CfzALrzp.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "55a4772558e3c5a852121d5e5bd7314ba7efe155"
+      id: "bb5d5d7c8d5938b4a51a8b309833405bb5c12631"
     }
   } catch {}
 })();
@@ -26,26 +26,26 @@ try {
   })()
 } catch {}
 
-function c(e, t) {
+function w(e, t) {
   let i = null,
     o = n;
-  var a;
+  var l;
   if (n) {
     i = _;
-    for (var d = g(document.head); d !== null && (d.nodeType !== p || d.data !== e);) d = l(d);
+    for (var d = g(document.head); d !== null && (d.nodeType !== p || d.data !== e);) d = a(d);
     if (d === null) s(!1);
     else {
-      var r = l(d);
-      d.remove(), f(r)
+      var b = a(d);
+      d.remove(), f(b)
     }
   }
-  n || (a = document.head.appendChild(y()));
+  n || (l = document.head.appendChild(r()));
   try {
-    u(() => t(a), b)
+    y(() => t(l), u)
   } finally {
     o && (s(!0), f(i))
   }
 }
 export {
-  c as h
+  w as h
 };
