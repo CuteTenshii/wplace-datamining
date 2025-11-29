@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./ClPe_s4O.js";
+} from "./Blx2cLJH.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "f20ce6c7de81c065c8837dcafe40492e8d59c7f8"
+      id: "c162605020db3f70298b20f062b9da755abfa489"
     }
   } catch {}
 })();
@@ -21,8 +21,8 @@ const s = () => "Users",
   o = () => "用户",
   i = () => "Benutzer",
   f = () => "Usuarios",
-  c = () => "Utilisateurs",
-  d = () => "Utenti",
+  d = () => "Utilisateurs",
+  c = () => "Utenti",
   l = () => "ユーザー",
   a = () => "Użytkownicy",
   b = () => "Пользователи",
@@ -30,7 +30,7 @@ const s = () => "Users",
   y = () => "Người dùng",
   g = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? f() : e === "fr" ? c() : e === "it" ? d() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? p() : y()
+    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? f() : e === "fr" ? d() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? p() : y()
   };
 export {
   g as u
