@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./DSQTBCbU.js";
+} from "./BloWRfoW.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "81e0d27a89a6ed71e59e16e2f2fe2aa899a3b379"
+      id: "c498731282e2bfa2154b3f8dba9ff6bac18e13ab"
     }
   } catch {}
 })();
@@ -21,16 +21,16 @@ const f = () => "Refresh",
   u = () => "刷新",
   i = () => "Aktualisieren",
   o = () => "Actualizar",
-  d = () => "Actualiser",
-  a = () => "Aggiorna",
-  c = () => "更新",
+  c = () => "Actualiser",
+  d = () => "Aggiorna",
+  a = () => "更新",
   l = () => "Odśwież",
-  h = () => "Обновить",
-  b = () => "Оновити",
+  b = () => "Обновить",
+  h = () => "Оновити",
   p = () => "Làm mới",
   g = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? f() : e === "pt" ? s() : e === "ch" ? u() : e === "de" ? i() : e === "es" ? o() : e === "fr" ? d() : e === "it" ? a() : e === "jp" ? c() : e === "pl" ? l() : e === "ru" ? h() : e === "uk" ? b() : p()
+    return e === "en" ? f() : e === "pt" ? s() : e === "ch" ? u() : e === "de" ? i() : e === "es" ? o() : e === "fr" ? c() : e === "it" ? d() : e === "jp" ? a() : e === "pl" ? l() : e === "ru" ? b() : e === "uk" ? h() : p()
   };
 export {
   g as r

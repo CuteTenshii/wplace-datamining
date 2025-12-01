@@ -1,4 +1,4 @@
-import "./CMq8n_wP.js";
+import "./Bu5zGEDI.js";
 import {
   F as nt,
   x as ct,
@@ -20,48 +20,48 @@ import {
   g as st,
   d as s,
   r as l,
-  s as d,
+  s as f,
   n as O
-} from "./Deky9TbN.js";
+} from "./C2eLZfbI.js";
 import {
   s as y
-} from "./B7i6-6-6.js";
+} from "./CRsialeU.js";
 import {
   i as L
-} from "./CQUizzV2.js";
+} from "./DYFiEJBZ.js";
 import {
   a as $,
   c as tt,
   b as lt,
   s as R
-} from "./D9OopTaX.js";
+} from "./CdPKjBA1.js";
 import {
   p as _,
-  r as dt
-} from "./Dee3Pe3j.js";
+  r as ft
+} from "./DoCRcTU4.js";
 import {
   g as q,
   t as V,
-  P as ft,
+  P as dt,
   a as vt
-} from "./B-Hw3HjH.js";
+} from "./BIj5R7BQ.js";
 import {
   t as ht
-} from "./DeYhhoPU.js";
+} from "./DyMrObM5.js";
 import {
   o as mt
-} from "./DmJ6qGXi.js";
+} from "./C5n-UE57.js";
 import {
   g
-} from "./DSQTBCbU.js";
+} from "./BloWRfoW.js";
 import {
   L as yt
-} from "./DAnXsfcl.js";
+} from "./DKlU5Itn.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "81e0d27a89a6ed71e59e16e2f2fe2aa899a3b379"
+      id: "c498731282e2bfa2154b3f8dba9ff6bac18e13ab"
     }
   } catch {}
 })();
@@ -80,8 +80,8 @@ function gt(r, e, t) {
       var w = !1,
         h = {};
       at(() => {
-        var f = t();
-        ot(f), w && it(h, f) && (h = f, c.update(f))
+        var d = t();
+        ot(d), w && it(h, d) && (h = d, c.update(d))
       }), w = !0
     }
     if (c != null && c.destroy) return () => c.destroy()
@@ -143,13 +143,13 @@ const wt = () => "and",
   _e = () => "Avez-vous un compte Wplace associé à Twitch ?",
   se = () => "Hai un account Wplace associato a Twitch?",
   le = () => "WplaceのTwitch連携アカウントをお持ちですか？",
-  de = () => "Czy masz konto Wplace połączone z Twitchem?",
-  fe = () => "У вас есть аккаунт Wplace, связанный с Twitch?",
+  fe = () => "Czy masz konto Wplace połączone z Twitchem?",
+  de = () => "У вас есть аккаунт Wplace, связанный с Twitch?",
   ve = () => "У вас є акаунт Wplace, повʼязаний із Twitch?",
   he = () => "Bạn có tài khoản Wplace liên kết với Twitch không?",
   me = (r = {}, e = {}) => {
     const t = e.locale ?? g();
-    return t === "en" ? ce() : t === "pt" ? ae() : t === "ch" ? oe() : t === "de" ? ie() : t === "es" ? ue() : t === "fr" ? _e() : t === "it" ? se() : t === "jp" ? le() : t === "pl" ? de() : t === "ru" ? fe() : t === "uk" ? ve() : he()
+    return t === "en" ? ce() : t === "pt" ? ae() : t === "ch" ? oe() : t === "de" ? ie() : t === "es" ? ue() : t === "fr" ? _e() : t === "it" ? se() : t === "jp" ? le() : t === "pl" ? fe() : t === "ru" ? de() : t === "uk" ? ve() : he()
   },
   ye = r => `Login with ${r.name}`,
   ge = r => `Entrar com ${r.name}`,
@@ -209,11 +209,11 @@ const wt = () => "and",
   _r = () => "利用規約",
   sr = () => "Warunki korzystania z usługi",
   lr = () => "Условия обслуживания",
-  dr = () => "Умови обслуговування",
-  fr = () => "Điều khoản dịch vụ",
+  fr = () => "Умови обслуговування",
+  dr = () => "Điều khoản dịch vụ",
   vr = (r = {}, e = {}) => {
     const t = e.locale ?? g();
-    return t === "en" ? rr() : t === "pt" ? nr() : t === "ch" ? cr() : t === "de" ? ar() : t === "es" ? or() : t === "fr" ? ir() : t === "it" ? ur() : t === "jp" ? _r() : t === "pl" ? sr() : t === "ru" ? lr() : t === "uk" ? dr() : fr()
+    return t === "en" ? rr() : t === "pt" ? nr() : t === "ch" ? cr() : t === "de" ? ar() : t === "es" ? or() : t === "fr" ? ir() : t === "it" ? ur() : t === "jp" ? _r() : t === "pl" ? sr() : t === "ru" ? lr() : t === "uk" ? fr() : dr()
   };
 var hr = S("<div></div>");
 
@@ -223,7 +223,7 @@ function mr(r, e) {
     c = _(e, "appearance", 3, "always"),
     w = _(e, "language", 3, "auto"),
     h = _(e, "execution", 3, "render"),
-    f = _(e, "retryInterval", 3, 8e3),
+    d = _(e, "retryInterval", 3, 8e3),
     F = _(e, "retry", 3, "auto"),
     j = _(e, "refreshExpired", 3, "auto"),
     A = _(e, "theme", 3, "auto"),
@@ -266,7 +266,7 @@ function mr(r, e) {
       "response-field-name": e.responseFieldName ?? e.formsField ?? "cf-turnstile-response",
       "response-field": e.responseField ?? e.forms ?? !0,
       "refresh-expired": j(),
-      "retry-interval": f(),
+      "retry-interval": d(),
       tabindex: I(),
       appearance: c(),
       execution: h(),
@@ -319,7 +319,7 @@ function mr(r, e) {
 var yr = _t('<svg><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" fill="#4285F4"></path><path d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" fill="#34A853"></path><path d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" fill="#FBBC05"></path><path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" fill="#EB4335"></path></svg>');
 
 function gr(r, e) {
-  let t = dt(e, ["$$slots", "$$events", "$$legacy"]);
+  let t = ft(e, ["$$slots", "$$events", "$$legacy"]);
   var c = yr();
   lt(c, () => ({
     viewBox: "0 0 256 262",
@@ -337,15 +337,15 @@ function Pr(r, e) {
     c = Q(st(V ? "" : "turnstile-disabled"));
 
   function w(a, u) {
-    return `${ft}/auth/${a}?token=${u}${e.redirect?`&r=${e.redirect}`:""}`
+    return `${dt}/auth/${a}?token=${u}${e.redirect?`&r=${e.redirect}`:""}`
   }
   var h = br(),
-    f = s(h),
-    F = s(f);
+    d = s(h),
+    F = s(d);
   yt(F, {
     hasText: !0
-  }), l(f);
-  var j = d(f, 2),
+  }), l(d);
+  var j = f(d, 2),
     A = s(j);
   {
     var W = a => {
@@ -355,9 +355,9 @@ function Pr(r, e) {
       gr(m, {
         class: "mr-1 size-5"
       });
-      var E = d(m);
+      var E = f(m);
       l(v);
-      var k = d(v, 2),
+      var k = f(v, 2),
         B = s(k);
       {
         var U = x => {
@@ -377,7 +377,7 @@ function Pr(r, e) {
           V && x(U)
         })
       }
-      var et = d(B, 2);
+      var et = f(B, 2);
       L(et, x => {}), l(k), K((x, H) => {
         $(v, 1, tt({
           "btn btn-lg bg-base-100 w-full text-base": !0,
@@ -392,24 +392,24 @@ function Pr(r, e) {
     })
   }
   l(j);
-  var I = d(j, 2),
+  var I = f(j, 2),
     N = s(I),
-    b = d(N),
+    b = f(N),
     z = s(b, !0);
   l(b);
-  var p = d(b, 2),
+  var p = f(b, 2),
     M = s(p, !0);
   l(p);
-  var P = d(p),
-    D = d(P),
+  var P = f(p),
+    D = f(P),
     n = s(D, !0);
   l(D), O(), l(I);
-  var i = d(I, 2);
+  var i = f(I, 2);
   {
     var o = a => {
       var u = pr(),
         v = s(u),
-        m = d(v),
+        m = f(v),
         E = s(m, !0);
       l(m), O(), l(u), K((k, B, U) => {
         y(v, `${k??""} `), R(m, "href", B), y(E, U)

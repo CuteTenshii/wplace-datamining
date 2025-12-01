@@ -1,11 +1,11 @@
 import {
-  a as c
-} from "./qgVm6krP.js";
+  a as i
+} from "./D0vVQoZS.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "81e0d27a89a6ed71e59e16e2f2fe2aa899a3b379"
+      id: "c498731282e2bfa2154b3f8dba9ff6bac18e13ab"
     }
   } catch {}
 })();
@@ -51,8 +51,8 @@ function k(t) {
 }
 
 function C(t) {
-  t = Math.min(t, c.colors.length - 1);
-  const [e, n, o] = c.colors[t].rgb;
+  t = Math.min(t, i.colors.length - 1);
+  const [e, n, o] = i.colors[t].rgb;
   return {
     r: e,
     g: n,
@@ -60,7 +60,7 @@ function C(t) {
     a: t === 0 ? 0 : 255
   }
 }
-const y = c.colors.map((t, e) => ({
+const y = i.colors.map((t, e) => ({
     ...t,
     idx: e,
     lab: w({
@@ -69,7 +69,7 @@ const y = c.colors.map((t, e) => ({
       b: t.rgb[2]
     })
   })).filter(t => t.idx !== 0),
-  h = c.colors.map((t, e) => ({
+  h = i.colors.map((t, e) => ({
     idx: e,
     rgb: {
       r: t.rgb[0],
@@ -83,8 +83,8 @@ function R(t, e = "lab") {
     let r = h[0],
       l = Number.MAX_VALUE;
     for (const s of h) {
-      const i = x(t, s.rgb);
-      i < l && (r = s, l = i)
+      const c = x(t, s.rgb);
+      c < l && (r = s, l = c)
     }
     return r.idx
   }
@@ -117,14 +117,14 @@ function M(t, e) {
     r = Math.sqrt(t.a * t.a + t.b * t.b),
     l = Math.sqrt(e.a * e.a + e.b * e.b),
     s = r - l,
-    i = o * o + a * a - s * s;
-  i = i < 0 ? 0 : Math.sqrt(i);
+    c = o * o + a * a - s * s;
+  c = c < 0 ? 0 : Math.sqrt(c);
   var m = 1 + .045 * r,
     v = 1 + .015 * r,
-    g = n / 1,
-    f = s / m,
-    b = i / v,
-    d = g * g + f * f + b * b;
+    f = n / 1,
+    b = s / m,
+    g = c / v,
+    d = f * f + b * b + g * g;
   return d < 0 ? 0 : Math.sqrt(d)
 }
 
