@@ -1,4 +1,4 @@
-import "./Z6hH3yjk.js";
+import "./Dn_KGuKG.js";
 import {
   p as g,
   f as c,
@@ -8,24 +8,24 @@ import {
   s as v,
   d as w,
   r as y
-} from "./B4_s3Bgq.js";
+} from "./Bcwk37oG.js";
 import {
   i as h
-} from "./DKS2ZYVe.js";
+} from "./DAQ9mqAH.js";
 import {
   b as _,
   a as f,
   s as x
-} from "./B6NB4AAV.js";
+} from "./B4ssG4Ze.js";
 import {
   p as E,
   r as T
-} from "./DkktE63P.js";
+} from "./Dc7kg_nw.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "c162605020db3f70298b20f062b9da755abfa489"
+      id: "1d9793ba3d4a0f1311910be29f6f7ac9e32576a2"
     }
   } catch {}
 })();
@@ -43,17 +43,17 @@ var B = c("<span>wplace</span>"),
 function D(e, t) {
   g(t, !0);
   let a = E(t, "size", 3, "default"),
-    b = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+    p = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
   var s = L();
   _(s, () => ({
-    ...b,
+    ...p,
     class: `flex items-center gap-1.5 ${t.class??""}`
   }));
   var l = w(s);
   let i;
-  var p = v(l, 2);
+  var u = v(l, 2);
   {
-    var u = o => {
+    var b = o => {
       var n = B();
       let d;
       A(() => d = f(n, 1, "text-base-content font-pixel", null, d, {
@@ -61,8 +61,8 @@ function D(e, t) {
         "text-5xl": a() === "lg" || a() === "medium"
       })), r(o, n)
     };
-    h(p, o => {
-      t.hasText && o(u)
+    h(u, o => {
+      t.hasText && o(b)
     })
   }
   y(s), A(() => {

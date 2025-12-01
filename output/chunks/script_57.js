@@ -1,11 +1,11 @@
 import {
   g as d
-} from "./Blx2cLJH.js";
+} from "./DwtiR3Y1.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "c162605020db3f70298b20f062b9da755abfa489"
+      id: "1d9793ba3d4a0f1311910be29f6f7ac9e32576a2"
     }
   } catch {}
 })();
@@ -23,14 +23,14 @@ const t = () => "Dashboard",
   f = () => "Panel",
   u = () => "Tableau de bord",
   i = () => "Pannello",
-  b = () => "ダッシュボード",
-  l = () => "Panel",
+  l = () => "ダッシュボード",
+  b = () => "Panel",
   c = () => "Панель",
   h = () => "Панель",
   p = () => "Bảng điều khiển",
   g = (r = {}, n = {}) => {
     const e = n.locale ?? d();
-    return e === "en" ? t() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? s() : e === "es" ? f() : e === "fr" ? u() : e === "it" ? i() : e === "jp" ? b() : e === "pl" ? l() : e === "ru" ? c() : e === "uk" ? h() : p()
+    return e === "en" ? t() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? s() : e === "es" ? f() : e === "fr" ? u() : e === "it" ? i() : e === "jp" ? l() : e === "pl" ? b() : e === "ru" ? c() : e === "uk" ? h() : p()
   };
 export {
   g as d
