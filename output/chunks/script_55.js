@@ -1,19 +1,19 @@
 import {
   g as t
-} from "./BloWRfoW.js";
+} from "./B7-Kr_J8.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "c498731282e2bfa2154b3f8dba9ff6bac18e13ab"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "ee257193e76342130137aa6a9befade083ce2002"
     }
   } catch {}
 })();
 try {
   (function() {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      e = new r.Error().stack;
-    e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "df113091-8f27-4e53-adbc-5b0f3f54fb04", r._sentryDebugIdIdentifier = "sentry-dbid-df113091-8f27-4e53-adbc-5b0f3f54fb04")
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "df113091-8f27-4e53-adbc-5b0f3f54fb04", e._sentryDebugIdIdentifier = "sentry-dbid-df113091-8f27-4e53-adbc-5b0f3f54fb04")
   })()
 } catch {}
 const f = () => "Confirm",
@@ -28,8 +28,8 @@ const f = () => "Confirm",
   b = () => "Подтвердить",
   m = () => "Підтвердити",
   p = () => "Xác nhận",
-  g = (r = {}, e = {}) => {
-    const n = e.locale ?? t();
+  g = (e = {}, r = {}) => {
+    const n = r.locale ?? t();
     return n === "en" ? f() : n === "pt" ? o() : n === "ch" ? i() : n === "de" ? c() : n === "es" ? u() : n === "fr" ? s() : n === "it" ? d() : n === "jp" ? a() : n === "pl" ? l() : n === "ru" ? b() : n === "uk" ? m() : p()
   };
 export {

@@ -1,15 +1,15 @@
 import {
   k as t,
-  l as b,
-  m as i,
-  E as s,
+  l as i,
+  m as s,
+  E as b,
   B as l
-} from "./C2eLZfbI.js";
+} from "./CyCWtGop.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "c498731282e2bfa2154b3f8dba9ff6bac18e13ab"
+      id: "ee257193e76342130137aa6a9befade083ce2002"
     }
   } catch {}
 })();
@@ -22,12 +22,12 @@ try {
 } catch {}
 
 function c(e, n, d) {
-  t && b();
-  var f = new l(e);
-  i(() => {
+  t && i();
+  var o = new l(e);
+  s(() => {
     var a = n() ?? null;
-    f.ensure(a, a && (o => d(o, a)))
-  }, s)
+    o.ensure(a, a && (f => d(f, a)))
+  }, b)
 }
 export {
   c
