@@ -9,12 +9,12 @@ import {
   Y as s,
   R as f,
   Z as _
-} from "./Bcwk37oG.js";
+} from "./Deky9TbN.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "1d9793ba3d4a0f1311910be29f6f7ac9e32576a2"
+      id: "81e0d27a89a6ed71e59e16e2f2fe2aa899a3b379"
     }
   } catch {}
 })();
@@ -26,12 +26,12 @@ try {
   })()
 } catch {}
 
-function c(e, t) {
-  let i = null,
+function E(e, t) {
+  let a = null,
     o = n;
-  var a;
+  var i;
   if (n) {
-    i = _;
+    a = _;
     for (var d = g(document.head); d !== null && (d.nodeType !== p || d.data !== e);) d = l(d);
     if (d === null) s(!1);
     else {
@@ -39,13 +39,13 @@ function c(e, t) {
       d.remove(), f(r)
     }
   }
-  n || (a = document.head.appendChild(y()));
+  n || (i = document.head.appendChild(y()));
   try {
-    u(() => t(a), b)
+    u(() => t(i), b)
   } finally {
-    o && (s(!0), f(i))
+    o && (s(!0), f(a))
   }
 }
 export {
-  c as h
+  E as h
 };

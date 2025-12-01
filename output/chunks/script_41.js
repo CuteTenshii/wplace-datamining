@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./DwtiR3Y1.js";
+} from "./DSQTBCbU.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "1d9793ba3d4a0f1311910be29f6f7ac9e32576a2"
+      id: "81e0d27a89a6ed71e59e16e2f2fe2aa899a3b379"
     }
   } catch {}
 })();
@@ -33,8 +33,8 @@ const s = () => "Last pixel",
     return e === "en" ? s() : e === "pt" ? i() : e === "ch" ? u() : e === "de" ? c() : e === "es" ? o() : e === "fr" ? l() : e === "it" ? a() : e === "jp" ? _() : e === "pl" ? f() : e === "ru" ? p() : e === "uk" ? d() : h()
   },
   v = () => "Search",
-  b = () => "Buscar",
-  x = () => "搜索",
+  x = () => "Buscar",
+  b = () => "搜索",
   g = () => "Suchen",
   y = () => "Buscar",
   k = () => "Rechercher",
@@ -46,7 +46,7 @@ const s = () => "Last pixel",
   T = () => "Tìm kiếm",
   ee = (r = {}, t = {}) => {
     const e = t.locale ?? n();
-    return e === "en" ? v() : e === "pt" ? b() : e === "ch" ? x() : e === "de" ? g() : e === "es" ? y() : e === "fr" ? k() : e === "it" ? m() : e === "jp" ? w() : e === "pl" ? S() : e === "ru" ? j() : e === "uk" ? z() : T()
+    return e === "en" ? v() : e === "pt" ? x() : e === "ch" ? b() : e === "de" ? g() : e === "es" ? y() : e === "fr" ? k() : e === "it" ? m() : e === "jp" ? w() : e === "pl" ? S() : e === "ru" ? j() : e === "uk" ? z() : T()
   },
   D = () => "Select the report reason",
   E = () => "Selecione o motivo da denúncia",
