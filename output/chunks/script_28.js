@@ -1,22 +1,22 @@
 import {
-  g as l
-} from "./DqyvUH8G.js";
-import "./CjCSXRwo.js";
+  g as f
+} from "./D5qrl5-_.js";
+import "./1LqYsSgi.js";
 import {
   o,
   b as d
-} from "./Dc1GUS8h.js";
+} from "./1K8JwQhx.js";
 import {
   b as s
-} from "./BXxJuTGr.js";
+} from "./B7sqKEsM.js";
 import {
   r as i
-} from "./CA5ZckeU.js";
+} from "./Dw4IP7ow.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "69e89c3139d56ad7b72a097a21288d9ef2906bde"
+      id: "1064b7515953fcf97fd0dd3f98c3a1e27dfd80a9"
     }
   } catch {}
 })();
@@ -27,7 +27,7 @@ try {
     r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "878ccc33-4f2d-4fcb-b9b2-437e86c0b849", e._sentryDebugIdIdentifier = "sentry-dbid-878ccc33-4f2d-4fcb-b9b2-437e86c0b849")
   })()
 } catch {}
-const f = () => "Reddit",
+const l = () => "Reddit",
   c = () => "Reddit",
   a = () => "Reddit",
   u = () => "Reddit",
@@ -40,8 +40,8 @@ const f = () => "Reddit",
   h = () => "Reddit",
   _ = () => "Reddit",
   E = (e = {}, r = {}) => {
-    const t = r.locale ?? l();
-    return t === "en" ? f() : t === "pt" ? c() : t === "ch" ? a() : t === "de" ? u() : t === "es" ? p() : t === "fr" ? g() : t === "it" ? v() : t === "jp" ? w() : t === "pl" ? $() : t === "ru" ? b() : t === "uk" ? h() : _()
+    const t = r.locale ?? f();
+    return t === "en" ? l() : t === "pt" ? c() : t === "ch" ? a() : t === "de" ? u() : t === "es" ? p() : t === "fr" ? g() : t === "it" ? v() : t === "jp" ? w() : t === "pl" ? $() : t === "ru" ? b() : t === "uk" ? h() : _()
   };
 var y = o('<svg><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path></svg>');
 

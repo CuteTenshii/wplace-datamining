@@ -1,10 +1,10 @@
 import {
   g as _
-} from "./DqyvUH8G.js";
-import "./CjCSXRwo.js";
+} from "./D5qrl5-_.js";
+import "./1LqYsSgi.js";
 import {
   o as nr
-} from "./ubwK_hqn.js";
+} from "./oxKPdYm7.js";
 import {
   o as Ee,
   b as m,
@@ -22,20 +22,20 @@ import {
   c as ur,
   j as t,
   u as ee,
-  t as z,
+  t as j,
   aR as ve,
   h as re,
   a as te
-} from "./Dc1GUS8h.js";
+} from "./1K8JwQhx.js";
 import {
   s as b
-} from "./DZ3LlY6H.js";
+} from "./DqHcvAL_.js";
 import {
-  i as j
-} from "./Ck2yNMEV.js";
+  i as S
+} from "./RXTSl53j.js";
 import {
   e as Se
-} from "./BapzWszr.js";
+} from "./BOSYWaSi.js";
 import {
   b as Ce,
   d as ar,
@@ -43,23 +43,23 @@ import {
   s as W,
   g as cr,
   a as ne
-} from "./BXxJuTGr.js";
+} from "./B7sqKEsM.js";
 import {
   t as lr
-} from "./Bi9iCYN2.js";
+} from "./CZN-qUbz.js";
 import {
   c as _r
-} from "./DXlIGsSJ.js";
+} from "./Cr6-VqHu.js";
 import {
   b as pr
-} from "./kRLcOLcB.js";
+} from "./BS9UWQPN.js";
 import {
   r as Ze,
   p as dr
-} from "./CA5ZckeU.js";
+} from "./Dw4IP7ow.js";
 import {
   P as fr
-} from "./B1LMvMu3.js";
+} from "./D61ieWwW.js";
 import {
   i as mr,
   h as vr,
@@ -69,48 +69,48 @@ import {
   t as T,
   p as yr,
   b as ge
-} from "./BoORjLyM.js";
+} from "./Biw3LFVS.js";
 import {
   o as kr,
   L as xr,
   s as wr,
   g as zr
-} from "./CwqFlVbl.js";
+} from "./2xm-u7Zx.js";
 import {
   P as Re
-} from "./5T-H9BK6.js";
+} from "./DilxdKMf.js";
 import {
   G as Ie,
   T as Be
-} from "./DpJ1nPGZ.js";
+} from "./GQMTmcTj.js";
 import {
   b as Ne
-} from "./BSyXlvIx.js";
+} from "./DYWvW2Pt.js";
 import {
   c as jr
-} from "./r-UPsL0X.js";
+} from "./Bj5Eck-D.js";
 import {
   a as Sr
-} from "./Bhi7Q2UJ.js";
+} from "./ETipljmk.js";
 import {
-  t as Ae
-} from "./DvDuKNnw.js";
+  t as Te
+} from "./CcrdjxLf.js";
 import {
   u as Dr,
   a as Rr
-} from "./CbeaaIYM.js";
+} from "./4QCOnVrA.js";
 import {
   g as oe,
-  a as Te
-} from "./CXoqGfbS.js";
+  a as Ae
+} from "./D715vCzR.js";
 import {
   f as Ir
-} from "./lkzUzXWB.js";
+} from "./DkeUUM1k.js";
 (function() {
   try {
     var s = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     s.SENTRY_RELEASE = {
-      id: "69e89c3139d56ad7b72a097a21288d9ef2906bde"
+      id: "1064b7515953fcf97fd0dd3f98c3a1e27dfd80a9"
     }
   } catch {}
 })();
@@ -118,13 +118,13 @@ try {
   (function() {
     var s = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       r = new s.Error().stack;
-    r && (s._sentryDebugIds = s._sentryDebugIds || {}, s._sentryDebugIds[r] = "854d1794-5db6-4146-917f-4972d9cf925d", s._sentryDebugIdIdentifier = "sentry-dbid-854d1794-5db6-4146-917f-4972d9cf925d")
+    r && (s._sentryDebugIds = s._sentryDebugIds || {}, s._sentryDebugIds[r] = "dad81fce-8561-4123-b545-efda412fbabc", s._sentryDebugIdIdentifier = "sentry-dbid-dad81fce-8561-4123-b545-efda412fbabc")
   })()
 } catch {}
 const Br = () => "Alliance",
   Nr = () => "Aliança",
-  Ar = () => "联盟",
-  Tr = () => "Allianz",
+  Tr = () => "联盟",
+  Ar = () => "Allianz",
   Lr = () => "Alianza",
   Ur = () => "Alliance",
   Er = () => "Alleanza",
@@ -135,7 +135,7 @@ const Br = () => "Alliance",
   Mr = () => "Liên minh",
   Yu = (s = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? Br() : e === "pt" ? Nr() : e === "ch" ? Ar() : e === "de" ? Tr() : e === "es" ? Lr() : e === "fr" ? Ur() : e === "it" ? Er() : e === "jp" ? Cr() : e === "pl" ? Zr() : e === "ru" ? Pr() : e === "uk" ? qr() : Mr()
+    return e === "en" ? Br() : e === "pt" ? Nr() : e === "ch" ? Tr() : e === "de" ? Ar() : e === "es" ? Lr() : e === "fr" ? Ur() : e === "it" ? Er() : e === "jp" ? Cr() : e === "pl" ? Zr() : e === "ru" ? Pr() : e === "uk" ? qr() : Mr()
   },
   Or = () => "Alliance name reported successfully",
   Gr = () => "Nome da aliança denunciado com sucesso",
@@ -191,15 +191,15 @@ const Br = () => "Alliance",
   It = () => "Kopieren",
   Bt = () => "Copiar",
   Nt = () => "Copier",
-  At = () => "Copia",
-  Tt = () => "コピー",
+  Tt = () => "Copia",
+  At = () => "コピー",
   Lt = () => "Kopiuj",
   Ut = () => "Копировать",
   Et = () => "Копіювати",
   Ct = () => "Sao chép",
   Qu = (s = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? St() : e === "pt" ? Dt() : e === "ch" ? Rt() : e === "de" ? It() : e === "es" ? Bt() : e === "fr" ? Nt() : e === "it" ? At() : e === "jp" ? Tt() : e === "pl" ? Lt() : e === "ru" ? Ut() : e === "uk" ? Et() : Ct()
+    return e === "en" ? St() : e === "pt" ? Dt() : e === "ch" ? Rt() : e === "de" ? It() : e === "es" ? Bt() : e === "fr" ? Nt() : e === "it" ? Tt() : e === "jp" ? At() : e === "pl" ? Lt() : e === "ru" ? Ut() : e === "uk" ? Et() : Ct()
   },
   Zt = () => "Error revoking sessions. Try again later.",
   Pt = () => "Erro ao encerrar sessões. Tente novamente mais tarde.",
@@ -259,11 +259,11 @@ const Br = () => "Alliance",
   In = () => "理由もなく他人の作品を荒らした。",
   Bn = () => "Niszczenie cudzych prac bez powodu",
   Nn = () => "Преднамеренно портил чужие рисунки без причины",
-  An = () => "Псування чужих робіт без причини",
-  Tn = () => "Phá hỏng tranh của người khác mà không có lý do",
+  Tn = () => "Псування чужих робіт без причини",
+  An = () => "Phá hỏng tranh của người khác mà không có lý do",
   Ln = (s = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? xn() : e === "pt" ? wn() : e === "ch" ? zn() : e === "de" ? jn() : e === "es" ? Sn() : e === "fr" ? Dn() : e === "it" ? Rn() : e === "jp" ? In() : e === "pl" ? Bn() : e === "ru" ? Nn() : e === "uk" ? An() : Tn()
+    return e === "en" ? xn() : e === "pt" ? wn() : e === "ch" ? zn() : e === "de" ? jn() : e === "es" ? Sn() : e === "fr" ? Dn() : e === "it" ? Rn() : e === "jp" ? In() : e === "pl" ? Bn() : e === "ru" ? Nn() : e === "uk" ? Tn() : An()
   },
   Un = () => "Racism, homophobia, hate groups, ...",
   En = () => "Racismo, homofobia, grupos de ódio, ...",
@@ -329,8 +329,8 @@ const Br = () => "Alliance",
     const e = r.locale ?? _();
     return e === "en" ? yo() : e === "pt" ? ko() : e === "ch" ? xo() : e === "de" ? wo() : e === "es" ? zo() : e === "fr" ? jo() : e === "it" ? So() : e === "jp" ? Do() : e === "pl" ? Ro() : e === "ru" ? Io() : e === "uk" ? Bo() : No()
   },
-  Ao = () => "Name reported successfully",
-  To = () => "Nome denunciado com sucesso",
+  To = () => "Name reported successfully",
+  Ao = () => "Nome denunciado com sucesso",
   Lo = () => "名称举报成功",
   Uo = () => "Name erfolgreich gemeldet",
   Eo = () => "Nombre reportado correctamente",
@@ -343,7 +343,7 @@ const Br = () => "Alliance",
   Go = () => "Đã báo cáo tên thành công",
   Vo = (s = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? Ao() : e === "pt" ? To() : e === "ch" ? Lo() : e === "de" ? Uo() : e === "es" ? Eo() : e === "fr" ? Co() : e === "it" ? Zo() : e === "jp" ? Po() : e === "pl" ? qo() : e === "ru" ? Mo() : e === "uk" ? Oo() : Go()
+    return e === "en" ? To() : e === "pt" ? Ao() : e === "ch" ? Lo() : e === "de" ? Uo() : e === "es" ? Eo() : e === "fr" ? Co() : e === "it" ? Zo() : e === "jp" ? Po() : e === "pl" ? qo() : e === "ru" ? Mo() : e === "uk" ? Oo() : Go()
   },
   Ko = () => "Other reason not listed",
   Ho = () => "Outro motivo não listado",
@@ -396,8 +396,8 @@ const Br = () => "Alliance",
   Is = () => "Report alliance name",
   Bs = () => "Denunciar nome da aliança",
   Ns = () => "举报联盟名称",
-  As = () => "Allianzname melden",
-  Ts = () => "Reportar nombre de la alianza",
+  Ts = () => "Allianzname melden",
+  As = () => "Reportar nombre de la alianza",
   Ls = () => "Signaler le nom de l’alliance",
   Us = () => "Segnala nome dell'alleanza",
   Es = () => "アライアンス名を通報",
@@ -407,7 +407,7 @@ const Br = () => "Alliance",
   qs = () => "Báo cáo tên liên minh",
   Ms = (s = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? Is() : e === "pt" ? Bs() : e === "ch" ? Ns() : e === "de" ? As() : e === "es" ? Ts() : e === "fr" ? Ls() : e === "it" ? Us() : e === "jp" ? Es() : e === "pl" ? Cs() : e === "ru" ? Zs() : e === "uk" ? Ps() : qs()
+    return e === "en" ? Is() : e === "pt" ? Bs() : e === "ch" ? Ns() : e === "de" ? Ts() : e === "es" ? As() : e === "fr" ? Ls() : e === "it" ? Us() : e === "jp" ? Es() : e === "pl" ? Cs() : e === "ru" ? Zs() : e === "uk" ? Ps() : qs()
   },
   Os = () => "Report failed. Please try again later",
   Gs = () => "Denúncia falhou. Por favor, tente novamente mais tarde",
@@ -463,15 +463,15 @@ const Br = () => "Alliance",
   Ii = () => "Benutzer melden",
   Bi = () => "Reportar usuario",
   Ni = () => "Signaler un utilisateur",
-  Ai = () => "Segnala utente",
-  Ti = () => "ユーザーを通報",
+  Ti = () => "Segnala utente",
+  Ai = () => "ユーザーを通報",
   Li = () => "Zgłoś użytkownika",
   Ui = () => "Пожаловаться на пользователя",
   Ei = () => "Поскаржитися на користувача",
   Ci = () => "Báo cáo người chơi",
   Zi = (s = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? Si() : e === "pt" ? Di() : e === "ch" ? Ri() : e === "de" ? Ii() : e === "es" ? Bi() : e === "fr" ? Ni() : e === "it" ? Ai() : e === "jp" ? Ti() : e === "pl" ? Li() : e === "ru" ? Ui() : e === "uk" ? Ei() : Ci()
+    return e === "en" ? Si() : e === "pt" ? Di() : e === "ch" ? Ri() : e === "de" ? Ii() : e === "es" ? Bi() : e === "fr" ? Ni() : e === "it" ? Ti() : e === "jp" ? Ai() : e === "pl" ? Li() : e === "ru" ? Ui() : e === "uk" ? Ei() : Ci()
   },
   Pi = () => "Sessions successfully revoked",
   qi = () => "Sessões encerradas com sucesso",
@@ -509,13 +509,13 @@ var cu = Ee('<svg><path d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-20
 
 function lu(s, r) {
   let e = Ze(r, ["$$slots", "$$events", "$$legacy"]);
-  var S = cu();
-  Ce(S, () => ({
+  var D = cu();
+  Ce(D, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
     ...e
-  })), m(s, S)
+  })), m(s, D)
 }
 var _u = B('<span class="badge badge-sm border-0"> </span>'),
   pu = B("<span> </span>"),
@@ -535,7 +535,7 @@ var _u = B('<span class="badge badge-sm border-0"> </span>'),
 function oa(s, r) {
   sr(r, !0);
   const e = [];
-  let S = dr(r, "open", 15),
+  let D = dr(r, "open", 15),
     E = H(!1),
     F = H(""),
     se = H(""),
@@ -566,17 +566,17 @@ function oa(s, r) {
     label: kr(),
     description: ns()
   }];
-  let D = ee(() => {
+  let R = ee(() => {
     var y;
     return (y = r.targets) == null ? void 0 : y[0]
   });
   nr(() => {
     const y = k => {
-      k.key === "Escape" && S(!1)
+      k.key === "Escape" && D(!1)
     };
     return document.addEventListener("keydown", y), () => document.removeEventListener("keydown", y)
   }), ze(() => {
-    S() || (A(F, ""), A(se, ""))
+    D() || (A(F, ""), A(se, ""))
   });
   async function qe(y) {
     try {
@@ -621,20 +621,20 @@ function oa(s, r) {
       {
         var Ve = u => {
           {
-            let i = ee(() => t(D).id ?? 0);
+            let i = ee(() => t(R).id ?? 0);
             Re(u, {
               get userId() {
                 return t(i)
               },
               get pictureUrl() {
-                return t(D).picture
+                return t(R).picture
               },
               class: "size-14 border-0"
             })
           }
         };
-        j(be, u => {
-          t(D) && r.targets.length === 1 && u(Ve)
+        S(be, u => {
+          t(R) && r.targets.length === 1 && u(Ve)
         })
       }
       var ye = f(be, 2),
@@ -643,7 +643,7 @@ function oa(s, r) {
       {
         var He = u => {
             var i = ve();
-            z(p => b(i, p), [() => Zi()]), m(u, i)
+            j(p => b(i, p), [() => Zi()]), m(u, i)
           },
           We = u => {
             var i = re(),
@@ -651,29 +651,29 @@ function oa(s, r) {
             {
               var g = v => {
                   var h = ve();
-                  z(d => b(h, d), [() => Ue()]), m(v, h)
+                  j(d => b(h, d), [() => Ue()]), m(v, h)
                 },
                 a = v => {
                   var h = re(),
                     d = te(h);
                   {
-                    var R = w => {
+                    var z = x => {
                       var L = ve();
-                      z(M => b(L, M), [() => Le()]), m(w, L)
+                      j(M => b(L, M), [() => Le()]), m(x, L)
                     };
-                    j(d, w => {
-                      r.action === "ban" && w(R)
+                    S(d, x => {
+                      r.action === "ban" && x(z)
                     }, !0)
                   }
                   m(v, h)
                 };
-              j(p, v => {
+              S(p, v => {
                 r.action === "timeout" ? v(g) : v(a, !1)
               }, !0)
             }
             m(u, i)
           };
-        j(Ke, u => {
+        S(Ke, u => {
           r.action === "report-user" ? u(He) : u(We, !1)
         })
       }
@@ -691,36 +691,36 @@ function oa(s, r) {
           n(v), n(p);
           var d = f(p, 2);
           {
-            var R = l => {
+            var z = l => {
               var c = _u(),
                 N = o(c);
-              n(c), z(() => b(N, `+${r.targets.length-1} more`)), m(l, c)
+              n(c), j(() => b(N, `+${r.targets.length-1} more`)), m(l, c)
             };
-            j(d, l => {
-              r.targets.length > 1 && l(R)
+            S(d, l => {
+              r.targets.length > 1 && l(z)
             })
           }
-          var w = f(d, 2);
+          var x = f(d, 2);
           {
             var L = l => {
               var c = pu(),
                 N = o(c, !0);
-              n(c), z((U, P) => {
-                ne(c, 1, `badge badge-sm ml-0.5 border-0 ${U??""} ${P??""}`), b(N, t(D).allianceName)
-              }, [() => Te(t(D).allianceId), () => oe(t(D).allianceId)]), m(l, c)
+              n(c), j((U, P) => {
+                ne(c, 1, `badge badge-sm ml-0.5 border-0 ${U??""} ${P??""}`), b(N, t(R).allianceName)
+              }, [() => Ae(t(R).allianceId), () => oe(t(R).allianceId)]), m(l, c)
             };
-            j(w, l => {
-              t(D).allianceId && t(D).allianceName && l(L)
+            S(x, l => {
+              t(R).allianceId && t(R).allianceName && l(L)
             })
           }
-          var M = f(w, 2);
+          var M = f(x, 2);
           {
             var Q = l => {
                 var c = du(),
                   N = o(c);
                 Ie(N, {
                   class: "text-error inline size-4"
-                }), n(c), z(U => W(c, "data-tip", U), [() => Ne()]), m(l, c)
+                }), n(c), j(U => W(c, "data-tip", U), [() => Ne()]), m(l, c)
               },
               fe = l => {
                 var c = re(),
@@ -731,16 +731,16 @@ function oa(s, r) {
                       rr = o($);
                     Be(rr, {
                       class: "text-warning inline size-4"
-                    }), n($), z(tr => W($, "data-tip", tr), [() => Ae()]), m(P, $)
+                    }), n($), j(tr => W($, "data-tip", tr), [() => Te()]), m(P, $)
                   };
-                  j(N, P => {
-                    t(D).timedOut && P(U)
+                  S(N, P => {
+                    t(R).timedOut && P(U)
                   }, !0)
                 }
                 m(l, c)
               };
-            j(M, l => {
-              t(D).banned ? l(Q) : l(fe, !1)
+            S(M, l => {
+              t(R).banned ? l(Q) : l(fe, !1)
             })
           }
           var G = f(M, 2),
@@ -751,12 +751,12 @@ function oa(s, r) {
           }), n(V);
           var X = f(V, 2),
             K = o(X),
-            x = o(K);
-          x.__click = async () => {
+            w = o(K);
+          w.__click = async () => {
             await qe(r.targets), document.activeElement.blur()
           };
-          var I = o(x, !0);
-          n(x), n(K);
+          var I = o(w, !0);
+          n(w), n(K);
           var C = f(K, 2);
           {
             var Z = l => {
@@ -766,18 +766,18 @@ function oa(s, r) {
                 await Me(r.targets), document.activeElement.blur()
               };
               var U = o(N, !0);
-              n(N), n(c), z(P => b(U, P), [() => Ms()]), m(l, c)
+              n(N), n(c), j(P => b(U, P), [() => Ms()]), m(l, c)
             };
-            j(C, l => {
+            S(C, l => {
               r.targets.some(c => c.allianceId) && l(Z)
             })
           }
-          n(X), n(G), n(i), z((l, c) => {
-            ne(i, 1, `font-medium ${l??""} flex flex-wrap items-center gap-1.5`), b(a, t(D).name), b(h, `#${t(D).id??""}`), b(I, c)
-          }, [() => oe(t(D).id), () => pi()]), m(u, i)
+          n(X), n(G), n(i), j((l, c) => {
+            ne(i, 1, `font-medium ${l??""} flex flex-wrap items-center gap-1.5`), b(a, t(R).name), b(h, `#${t(R).id??""}`), b(I, c)
+          }, [() => oe(t(R).id), () => pi()]), m(u, i)
         };
-        j(Fe, u => {
-          t(D) && r.targets.length === 1 && u(Je)
+        S(Fe, u => {
+          t(R) && r.targets.length === 1 && u(Je)
         })
       }
       n(ye), n(ae);
@@ -799,37 +799,37 @@ function oa(s, r) {
               }
             });
             var d = f(h, 2),
-              R = o(d),
-              w = o(R),
-              L = o(w),
+              z = o(d),
+              x = o(z),
+              L = o(x),
               M = o(L, !0);
             n(L);
             var Q = f(L, 2),
               fe = o(Q);
-            n(Q), n(w);
-            var G = f(w, 2);
+            n(Q), n(x);
+            var G = f(x, 2);
             {
-              var V = x => {
+              var V = w => {
                 var I = gu(),
                   C = o(I, !0);
-                n(I), z((Z, l) => {
+                n(I), j((Z, l) => {
                   ne(I, 1, `badge badge-xs border-0 ${Z??""} ${l??""}`), b(C, t(a).allianceName)
-                }, [() => Te(t(a).allianceId), () => oe(t(a).allianceId)]), m(x, I)
+                }, [() => Ae(t(a).allianceId), () => oe(t(a).allianceId)]), m(w, I)
               };
-              j(G, x => {
-                t(a).allianceId && t(a).allianceName && x(V)
+              S(G, w => {
+                t(a).allianceId && t(a).allianceName && w(V)
               })
             }
             var me = f(G, 2);
             {
-              var X = x => {
+              var X = w => {
                   var I = hu(),
                     C = o(I);
                   Ie(C, {
                     class: "text-error inline size-3.5"
-                  }), n(I), z(Z => W(I, "data-tip", Z), [() => Ne()]), m(x, I)
+                  }), n(I), j(Z => W(I, "data-tip", Z), [() => Ne()]), m(w, I)
                 },
-                K = x => {
+                K = w => {
                   var I = re(),
                     C = te(I);
                   {
@@ -838,24 +838,24 @@ function oa(s, r) {
                         N = o(c);
                       Be(N, {
                         class: "text-warning inline size-3.5"
-                      }), n(c), z(U => W(c, "data-tip", U), [() => Ae()]), m(l, c)
+                      }), n(c), j(U => W(c, "data-tip", U), [() => Te()]), m(l, c)
                     };
-                    j(C, l => {
+                    S(C, l => {
                       t(a).timedOut && l(Z)
                     }, !0)
                   }
-                  m(x, I)
+                  m(w, I)
                 };
-              j(me, x => {
-                t(a).banned ? x(X) : x(K, !1)
+              S(me, w => {
+                t(a).banned ? w(X) : w(K, !1)
               })
             }
-            n(R), n(d), n(v), z(x => {
-              ne(w, 1, `font-medium ${x??""} flex gap-1.5`), b(M, t(a).name), b(fe, `#${t(a).id??""}`)
+            n(z), n(d), n(v), j(w => {
+              ne(x, 1, `font-medium ${w??""} flex gap-1.5`), b(M, t(a).name), b(fe, `#${t(a).id??""}`)
             }, [() => oe(t(a).id)]), m(g, v)
           }), n(p), n(i), m(u, i)
         };
-        j(ke, u => {
+        S(ke, u => {
           r.targets.length > 1 && u(Ye)
         })
       }
@@ -872,10 +872,10 @@ function oa(s, r) {
           h = o(v),
           d = o(h, !0);
         n(h);
-        var R = f(h, 2),
-          w = o(R, !0);
-        n(R), n(v), n(p), z(() => {
-          W(g, "aria-label", t(i).label), a !== (a = t(i).value) && (g.value = (g.__value = t(i).value) ?? ""), b(d, t(i).label), b(w, t(i).description)
+        var z = f(h, 2),
+          x = o(z, !0);
+        n(z), n(v), n(p), j(() => {
+          W(g, "aria-label", t(i).label), a !== (a = t(i).value) && (g.value = (g.__value = t(i).value) ?? ""), b(d, t(i).label), b(x, t(i).description)
         }), _r(e, [], g, () => (t(i).value, t(F)), L => A(F, L)), m(u, p)
       }), n(xe), n(le);
       var pe = f(le, 2),
@@ -911,13 +911,13 @@ function oa(s, r) {
       var we = f(pe, 2),
         Y = o(we);
       Y.__click = () => {
-        S(!1)
+        D(!1)
       };
       var $e = o(Y, !0);
       n(Y);
       var de = f(Y, 2),
         er = o(de, !0);
-      n(de), n(we), n(k), pr(k, u => A(ie, u), () => t(ie)), z((u, i, p) => {
+      n(de), n(we), n(k), pr(k, u => A(ie, u), () => t(ie)), j((u, i, p) => {
         cr(J, r.zoom), b(Qe, `${u??""}:`), b($e, i), de.disabled = t(E), b(er, p)
       }, [() => wr(), () => jr(), () => Rs()]), je("submit", k, async u => {
         var v, h;
@@ -939,32 +939,32 @@ function oa(s, r) {
             i.append("reportedUserId", String(a[0])), i.append("latitude", r.latLon[0].toString()), i.append("longitude", r.latLon[1].toString()), a.length > 1 && i.append("userIds", JSON.stringify(a));
             const d = await r.image;
             i.append("image", d, `report-${Date.now()}.jpeg`);
-            const R = await fetch(`${fr}/report-user`, {
+            const z = await fetch(`${fr}/report-user`, {
               method: "POST",
               body: i,
               credentials: "include"
             });
-            R.status === 200 || R.status === 409 ? (T.info(ji()), (v = r.onsuccess) == null || v.call(r, {
+            z.status === 200 || z.status === 409 ? ((await z.json()).reason === "reported_user_banned_timeout" ? T.warning("The user you reported is already under an active punishment.") : T.info(ji()), (v = r.onsuccess) == null || v.call(r, {
               action: r.action,
               userIds: [a[0]]
-            }), S(!1)) : T.error(q())
+            }), D(!1)) : T.error(q())
           } else {
             const d = await r.image,
-              R = await yr(d);
+              z = await yr(d);
             await ge.postUsersSuspend({
               userIds: a,
-              imageBase64: R,
+              imageBase64: z,
               latitude: r.latLon[0],
               longitude: r.latLon[1],
               zoom: r.zoom,
               reason: p,
               notes: g
             }, r.origin, r.action);
-            const w = r.action === "ban" ? a.length > 1 ? Dr() : Le() : a.length > 1 ? Rr() : Ue();
-            T.success(w), (h = r.onsuccess) == null || h.call(r, {
+            const x = r.action === "ban" ? a.length > 1 ? Dr() : Le() : a.length > 1 ? Rr() : Ue();
+            T.success(x), (h = r.onsuccess) == null || h.call(r, {
               action: r.action,
               userIds: [a[0]]
-            }), S(!1)
+            }), D(!1)
           }
         } catch (d) {
           T.error((d == null ? void 0 : d.message) ?? q())
@@ -973,28 +973,28 @@ function oa(s, r) {
         }
       }), lr(2, k, () => Ir), m(y, k)
     };
-    j(Oe, y => {
-      S() && y(Ge)
+    S(Oe, y => {
+      D() && y(Ge)
     })
   }
   n(he), ir(2), n(O), ar(O, () => y => {
     ze(() => {
-      S() ? y.show() : y.close()
+      D() ? y.show() : y.close()
     })
-  }), je("close", O, () => S(!1)), m(s, O), ur()
+  }), je("close", O, () => D(!1)), m(s, O), ur()
 }
 or(["click"]);
 var ju = Ee('<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
 
 function sa(s, r) {
   let e = Ze(r, ["$$slots", "$$events", "$$legacy"]);
-  var S = ju();
-  Ce(S, () => ({
+  var D = ju();
+  Ce(D, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
     ...e
-  })), m(s, S)
+  })), m(s, D)
 }
 export {
   sa as D, oa as R, lu as W, ea as a, Xu as b, Qu as c, $u as d, Yu as e, Le as f, q as g, ra as l, ta as p, Zi as r, na as s, Ue as t

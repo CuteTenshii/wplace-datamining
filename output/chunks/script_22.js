@@ -6,15 +6,15 @@ import {
   T as g,
   _ as p,
   ag as l,
-  Y as s,
-  R as f,
+  Y as a,
+  R as s,
   Z as _
-} from "./Dc1GUS8h.js";
+} from "./1K8JwQhx.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "69e89c3139d56ad7b72a097a21288d9ef2906bde"
+      id: "1064b7515953fcf97fd0dd3f98c3a1e27dfd80a9"
     }
   } catch {}
 })();
@@ -26,26 +26,26 @@ try {
   })()
 } catch {}
 
-function c(e, t) {
+function w(e, t) {
   let i = null,
     o = n;
-  var a;
+  var f;
   if (n) {
     i = _;
     for (var d = g(document.head); d !== null && (d.nodeType !== p || d.data !== e);) d = l(d);
-    if (d === null) s(!1);
+    if (d === null) a(!1);
     else {
       var r = l(d);
-      d.remove(), f(r)
+      d.remove(), s(r)
     }
   }
-  n || (a = document.head.appendChild(y()));
+  n || (f = document.head.appendChild(y()));
   try {
-    u(() => t(a), b)
+    u(() => t(f), b)
   } finally {
-    o && (s(!0), f(i))
+    o && (a(!0), s(i))
   }
 }
 export {
-  c as h
+  w as h
 };
