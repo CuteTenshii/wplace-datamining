@@ -1,20 +1,20 @@
 import {
   g as _
-} from "./D5qrl5-_.js";
-import "./1LqYsSgi.js";
+} from "./FJFkb2i2.js";
+import "./3ViHk73K.js";
 import {
   o as nr
-} from "./oxKPdYm7.js";
+} from "./CxgukNzJ.js";
 import {
-  o as Ee,
+  o as Ue,
   b as m,
-  ar as or,
-  p as sr,
+  ar as sr,
+  p as or,
   K as ze,
   i as A,
   e as H,
   f as B,
-  d as o,
+  d as s,
   s as f,
   r as n,
   n as ir,
@@ -26,40 +26,40 @@ import {
   aR as ve,
   h as re,
   a as te
-} from "./1K8JwQhx.js";
+} from "./DHzwV35n.js";
 import {
   s as b
-} from "./DqHcvAL_.js";
+} from "./Dw6VmWej.js";
 import {
   i as S
-} from "./RXTSl53j.js";
+} from "./yWjagcZd.js";
 import {
   e as Se
-} from "./BOSYWaSi.js";
+} from "./TwJB_PGq.js";
 import {
-  b as Ce,
+  b as Ze,
   d as ar,
   r as De,
   s as W,
   g as cr,
   a as ne
-} from "./B7sqKEsM.js";
+} from "./RKLtB9Qy.js";
 import {
   t as lr
-} from "./CZN-qUbz.js";
+} from "./ZEkcpi0I.js";
 import {
   c as _r
-} from "./Cr6-VqHu.js";
+} from "./DEMP5oNZ.js";
 import {
   b as pr
-} from "./BS9UWQPN.js";
+} from "./CMRW_ifP.js";
 import {
-  r as Ze,
+  r as Ce,
   p as dr
-} from "./Dw4IP7ow.js";
+} from "./DiMlrxmI.js";
 import {
   P as fr
-} from "./D61ieWwW.js";
+} from "./C_nNCuhm.js";
 import {
   i as mr,
   h as vr,
@@ -69,56 +69,56 @@ import {
   t as T,
   p as yr,
   b as ge
-} from "./Biw3LFVS.js";
+} from "./C5l8uBgH.js";
 import {
   o as kr,
   L as xr,
   s as wr,
   g as zr
-} from "./2xm-u7Zx.js";
+} from "./A9GegrM_.js";
 import {
   P as Re
-} from "./DilxdKMf.js";
+} from "./DhqG2UPn.js";
 import {
   G as Ie,
   T as Be
-} from "./GQMTmcTj.js";
+} from "./owbqLQuq.js";
 import {
   b as Ne
-} from "./DYWvW2Pt.js";
+} from "./pLmq9c-6.js";
 import {
   c as jr
-} from "./Bj5Eck-D.js";
+} from "./D5Ljd3wj.js";
 import {
   a as Sr
-} from "./ETipljmk.js";
+} from "./CvP5rN-b.js";
 import {
   t as Te
-} from "./CcrdjxLf.js";
+} from "./ESbO1XSY.js";
 import {
   u as Dr,
   a as Rr
-} from "./4QCOnVrA.js";
+} from "./2dx2o1pK.js";
 import {
-  g as oe,
+  g as se,
   a as Ae
-} from "./D715vCzR.js";
+} from "./2WbM1o1l.js";
 import {
   f as Ir
-} from "./DkeUUM1k.js";
+} from "./B606dljb.js";
 (function() {
   try {
-    var s = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    s.SENTRY_RELEASE = {
-      id: "1064b7515953fcf97fd0dd3f98c3a1e27dfd80a9"
+    var o = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    o.SENTRY_RELEASE = {
+      id: "dfb4bddd9fb2b4748eaf19466331b7b547c362b7"
     }
   } catch {}
 })();
 try {
   (function() {
-    var s = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      r = new s.Error().stack;
-    r && (s._sentryDebugIds = s._sentryDebugIds || {}, s._sentryDebugIds[r] = "dad81fce-8561-4123-b545-efda412fbabc", s._sentryDebugIdIdentifier = "sentry-dbid-dad81fce-8561-4123-b545-efda412fbabc")
+    var o = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new o.Error().stack;
+    r && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[r] = "60e05eaf-9885-4e70-a179-d5bc2ccc1d05", o._sentryDebugIdIdentifier = "sentry-dbid-60e05eaf-9885-4e70-a179-d5bc2ccc1d05")
   })()
 } catch {}
 const Br = () => "Alliance",
@@ -126,16 +126,16 @@ const Br = () => "Alliance",
   Tr = () => "联盟",
   Ar = () => "Allianz",
   Lr = () => "Alianza",
-  Ur = () => "Alliance",
-  Er = () => "Alleanza",
-  Cr = () => "アライアンス",
-  Zr = () => "Sojusz",
+  Er = () => "Alliance",
+  Ur = () => "Alleanza",
+  Zr = () => "アライアンス",
+  Cr = () => "Sojusz",
   Pr = () => "Альянс",
   qr = () => "Альянс",
   Mr = () => "Liên minh",
-  Yu = (s = {}, r = {}) => {
+  ca = (o = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? Br() : e === "pt" ? Nr() : e === "ch" ? Tr() : e === "de" ? Ar() : e === "es" ? Lr() : e === "fr" ? Ur() : e === "it" ? Er() : e === "jp" ? Cr() : e === "pl" ? Zr() : e === "ru" ? Pr() : e === "uk" ? qr() : Mr()
+    return e === "en" ? Br() : e === "pt" ? Nr() : e === "ch" ? Tr() : e === "de" ? Ar() : e === "es" ? Lr() : e === "fr" ? Er() : e === "it" ? Ur() : e === "jp" ? Zr() : e === "pl" ? Cr() : e === "ru" ? Pr() : e === "uk" ? qr() : Mr()
   },
   Or = () => "Alliance name reported successfully",
   Gr = () => "Nome da aliança denunciado com sucesso",
@@ -149,15 +149,15 @@ const Br = () => "Alliance",
   Qr = () => "Название альянса успешно пожаловано",
   Xr = () => "Назву альянсу успішно поскаржено",
   $r = () => "Đã báo cáo tên liên minh thành công",
-  et = (s = {}, r = {}) => {
+  et = (o = {}, r = {}) => {
     const e = r.locale ?? _();
     return e === "en" ? Or() : e === "pt" ? Gr() : e === "ch" ? Vr() : e === "de" ? Kr() : e === "es" ? Hr() : e === "fr" ? Wr() : e === "it" ? Fr() : e === "jp" ? Jr() : e === "pl" ? Yr() : e === "ru" ? Qr() : e === "uk" ? Xr() : $r()
   },
   rt = () => "Ban User",
   tt = () => "Banir usuário",
   nt = () => "封禁用户",
-  ot = () => "Benutzer bannen",
-  st = () => "Banear usuario",
+  st = () => "Benutzer bannen",
+  ot = () => "Banear usuario",
   it = () => "Bannir l’utilisateur",
   ut = () => "Banna utente",
   at = () => "ユーザーをBAN",
@@ -165,9 +165,9 @@ const Br = () => "Alliance",
   lt = () => "Забанить пользователя",
   _t = () => "Забанити користувача",
   pt = () => "Cấm người dùng",
-  Le = (s = {}, r = {}) => {
+  Le = (o = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? rt() : e === "pt" ? tt() : e === "ch" ? nt() : e === "de" ? ot() : e === "es" ? st() : e === "fr" ? it() : e === "it" ? ut() : e === "jp" ? at() : e === "pl" ? ct() : e === "ru" ? lt() : e === "uk" ? _t() : pt()
+    return e === "en" ? rt() : e === "pt" ? tt() : e === "ch" ? nt() : e === "de" ? st() : e === "es" ? ot() : e === "fr" ? it() : e === "it" ? ut() : e === "jp" ? at() : e === "pl" ? ct() : e === "ru" ? lt() : e === "uk" ? _t() : pt()
   },
   dt = () => "Use of software to completely automate painting",
   ft = () => "Uso de software para pintar de forma completamente automatizada ",
@@ -181,7 +181,7 @@ const Br = () => "Alliance",
   xt = () => "Использование программ для полной автоматизации рисования",
   wt = () => "Використання програм, які повністю автоматизують малювання",
   zt = () => "Sử dụng phần mềm để tự động hóa hoàn toàn việc tô pixel",
-  jt = (s = {}, r = {}) => {
+  jt = (o = {}, r = {}) => {
     const e = r.locale ?? _();
     return e === "en" ? dt() : e === "pt" ? ft() : e === "ch" ? mt() : e === "de" ? vt() : e === "es" ? gt() : e === "fr" ? ht() : e === "it" ? bt() : e === "jp" ? yt() : e === "pl" ? kt() : e === "ru" ? xt() : e === "uk" ? wt() : zt()
   },
@@ -194,14 +194,14 @@ const Br = () => "Alliance",
   Tt = () => "Copia",
   At = () => "コピー",
   Lt = () => "Kopiuj",
-  Ut = () => "Копировать",
-  Et = () => "Копіювати",
-  Ct = () => "Sao chép",
-  Qu = (s = {}, r = {}) => {
+  Et = () => "Копировать",
+  Ut = () => "Копіювати",
+  Zt = () => "Sao chép",
+  la = (o = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? St() : e === "pt" ? Dt() : e === "ch" ? Rt() : e === "de" ? It() : e === "es" ? Bt() : e === "fr" ? Nt() : e === "it" ? Tt() : e === "jp" ? At() : e === "pl" ? Lt() : e === "ru" ? Ut() : e === "uk" ? Et() : Ct()
+    return e === "en" ? St() : e === "pt" ? Dt() : e === "ch" ? Rt() : e === "de" ? It() : e === "es" ? Bt() : e === "fr" ? Nt() : e === "it" ? Tt() : e === "jp" ? At() : e === "pl" ? Lt() : e === "ru" ? Et() : e === "uk" ? Ut() : Zt()
   },
-  Zt = () => "Error revoking sessions. Try again later.",
+  Ct = () => "Error revoking sessions. Try again later.",
   Pt = () => "Erro ao encerrar sessões. Tente novamente mais tarde.",
   qt = () => "撤销会话时出错。请稍后再试。",
   Mt = () => "Fehler beim Beenden der Sitzungen. Versuche es später erneut.",
@@ -213,9 +213,9 @@ const Br = () => "Alliance",
   Wt = () => "Ошибка при завершении сеансов. Попробуйте позже.",
   Ft = () => "Помилка під час завершення сеансів. Спробуйте пізніше.",
   Jt = () => "Lỗi thu hồi phiên đăng nhập. Hãy thử lại sau.",
-  Xu = (s = {}, r = {}) => {
+  _a = (o = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? Zt() : e === "pt" ? Pt() : e === "ch" ? qt() : e === "de" ? Mt() : e === "es" ? Ot() : e === "fr" ? Gt() : e === "it" ? Vt() : e === "jp" ? Kt() : e === "pl" ? Ht() : e === "ru" ? Wt() : e === "uk" ? Ft() : Jt()
+    return e === "en" ? Ct() : e === "pt" ? Pt() : e === "ch" ? qt() : e === "de" ? Mt() : e === "es" ? Ot() : e === "fr" ? Gt() : e === "it" ? Vt() : e === "jp" ? Kt() : e === "pl" ? Ht() : e === "ru" ? Wt() : e === "uk" ? Ft() : Jt()
   },
   Yt = () => "Discord",
   Qt = () => "Discord",
@@ -225,13 +225,13 @@ const Br = () => "Alliance",
   rn = () => "Discord",
   tn = () => "Discord",
   nn = () => "Discord",
-  on = () => "Discord",
   sn = () => "Discord",
+  on = () => "Discord",
   un = () => "Discord",
   an = () => "Discord",
-  $u = (s = {}, r = {}) => {
+  pa = (o = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? Yt() : e === "pt" ? Qt() : e === "ch" ? Xt() : e === "de" ? $t() : e === "es" ? en() : e === "fr" ? rn() : e === "it" ? tn() : e === "jp" ? nn() : e === "pl" ? on() : e === "ru" ? sn() : e === "uk" ? un() : an()
+    return e === "en" ? Yt() : e === "pt" ? Qt() : e === "ch" ? Xt() : e === "de" ? $t() : e === "es" ? en() : e === "fr" ? rn() : e === "it" ? tn() : e === "jp" ? nn() : e === "pl" ? sn() : e === "ru" ? on() : e === "uk" ? un() : an()
   },
   cn = () => "Released other's personal information without their consent",
   ln = () => "Vazar informações pessoais de terceiros sem consentimento",
@@ -245,7 +245,7 @@ const Br = () => "Alliance",
   hn = () => "Публикация личной информации других людей без их согласия",
   bn = () => "Розповсюдження особистої інформації інших людей без їхньої згоди",
   yn = () => "Công khai thông tin cá nhân của người khác mà không có sự cho phép",
-  kn = (s = {}, r = {}) => {
+  kn = (o = {}, r = {}) => {
     const e = r.locale ?? _();
     return e === "en" ? cn() : e === "pt" ? ln() : e === "ch" ? _n() : e === "de" ? pn() : e === "es" ? dn() : e === "fr" ? fn() : e === "it" ? mn() : e === "jp" ? vn() : e === "pl" ? gn() : e === "ru" ? hn() : e === "uk" ? bn() : yn()
   },
@@ -261,14 +261,14 @@ const Br = () => "Alliance",
   Nn = () => "Преднамеренно портил чужие рисунки без причины",
   Tn = () => "Псування чужих робіт без причини",
   An = () => "Phá hỏng tranh của người khác mà không có lý do",
-  Ln = (s = {}, r = {}) => {
+  Ln = (o = {}, r = {}) => {
     const e = r.locale ?? _();
     return e === "en" ? xn() : e === "pt" ? wn() : e === "ch" ? zn() : e === "de" ? jn() : e === "es" ? Sn() : e === "fr" ? Dn() : e === "it" ? Rn() : e === "jp" ? In() : e === "pl" ? Bn() : e === "ru" ? Nn() : e === "uk" ? Tn() : An()
   },
-  Un = () => "Racism, homophobia, hate groups, ...",
-  En = () => "Racismo, homofobia, grupos de ódio, ...",
-  Cn = () => "种族主义、恐同、仇恨团体等",
-  Zn = () => "Rassismus, Homophobie, Hassgruppen, ...",
+  En = () => "Racism, homophobia, hate groups, ...",
+  Un = () => "Racismo, homofobia, grupos de ódio, ...",
+  Zn = () => "种族主义、恐同、仇恨团体等",
+  Cn = () => "Rassismus, Homophobie, Hassgruppen, ...",
   Pn = () => "Racismo, homofobia, grupos de odio, ...",
   qn = () => "Racisme, homophobie, groupes haineux, ...",
   Mn = () => "Razzismo, omofobia, gruppi d'odio, ...",
@@ -277,9 +277,9 @@ const Br = () => "Alliance",
   Vn = () => "Расизм, гомофобия, группы ненависти и т.п.",
   Kn = () => "Расизм, гомофобія, групи ненависті, ...",
   Hn = () => "Phân biệt chủng tộc, kỳ thị LGBT, nhóm thù hận, ...",
-  Wn = (s = {}, r = {}) => {
+  Wn = (o = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? Un() : e === "pt" ? En() : e === "ch" ? Cn() : e === "de" ? Zn() : e === "es" ? Pn() : e === "fr" ? qn() : e === "it" ? Mn() : e === "jp" ? On() : e === "pl" ? Gn() : e === "ru" ? Vn() : e === "uk" ? Kn() : Hn()
+    return e === "en" ? En() : e === "pt" ? Un() : e === "ch" ? Zn() : e === "de" ? Cn() : e === "es" ? Pn() : e === "fr" ? qn() : e === "it" ? Mn() : e === "jp" ? On() : e === "pl" ? Gn() : e === "ru" ? Vn() : e === "uk" ? Kn() : Hn()
   },
   Fn = () => "+18, inappropriate link, highly suggestive content, ...",
   Jn = () => "+18, links inapropriados, conteúdo altamente sugestivo, ...",
@@ -287,159 +287,159 @@ const Br = () => "Alliance",
   Qn = () => "+18, unangemessene Links, stark anzügliche Inhalte, ...",
   Xn = () => "+18, enlace inapropiado, contenido muy sugerente, ...",
   $n = () => "+18, lien inapproprié, contenu très suggestif, ...",
-  eo = () => "+18, link inappropriati, contenuto altamente esplicito, ...",
-  ro = () => "18禁コンテンツ、不適切なリンク、過度に性的な内容など。",
-  to = () => "+18, nieodpowiedni link, mocno sugestywne treści, ...",
-  no = () => "+18, неприемлемые ссылки, крайне откровенный контент и т.п.",
-  oo = () => "+18, неприйнятні посилання, дуже відвертий контент, ...",
-  so = () => "+18, liên kết không phù hợp, nội dung khiêu gợi mạnh, ...",
-  io = (s = {}, r = {}) => {
+  es = () => "+18, link inappropriati, contenuto altamente esplicito, ...",
+  rs = () => "18禁コンテンツ、不適切なリンク、過度に性的な内容など。",
+  ts = () => "+18, nieodpowiedni link, mocno sugestywne treści, ...",
+  ns = () => "+18, неприемлемые ссылки, крайне откровенный контент и т.п.",
+  ss = () => "+18, неприйнятні посилання, дуже відвертий контент, ...",
+  os = () => "+18, liên kết không phù hợp, nội dung khiêu gợi mạnh, ...",
+  is = (o = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? Fn() : e === "pt" ? Jn() : e === "ch" ? Yn() : e === "de" ? Qn() : e === "es" ? Xn() : e === "fr" ? $n() : e === "it" ? eo() : e === "jp" ? ro() : e === "pl" ? to() : e === "ru" ? no() : e === "uk" ? oo() : so()
+    return e === "en" ? Fn() : e === "pt" ? Jn() : e === "ch" ? Yn() : e === "de" ? Qn() : e === "es" ? Xn() : e === "fr" ? $n() : e === "it" ? es() : e === "jp" ? rs() : e === "pl" ? ts() : e === "ru" ? ns() : e === "uk" ? ss() : os()
   },
-  uo = () => "Logout",
-  ao = () => "Desconectar",
-  co = () => "登出",
-  lo = () => "Ausloggen",
-  _o = () => "Cerrar sesión",
-  po = () => "Se déconnecter",
-  fo = () => "Disconnetti",
-  mo = () => "ログアウト",
-  vo = () => "Wyloguj",
-  go = () => "Выйти",
-  ho = () => "Вийти",
-  bo = () => "Đăng xuất",
-  ea = (s = {}, r = {}) => {
+  us = () => "Logout",
+  as = () => "Desconectar",
+  cs = () => "登出",
+  ls = () => "Ausloggen",
+  _s = () => "Cerrar sesión",
+  ps = () => "Se déconnecter",
+  ds = () => "Disconnetti",
+  fs = () => "ログアウト",
+  ms = () => "Wyloguj",
+  vs = () => "Выйти",
+  gs = () => "Вийти",
+  hs = () => "Đăng xuất",
+  da = (o = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? uo() : e === "pt" ? ao() : e === "ch" ? co() : e === "de" ? lo() : e === "es" ? _o() : e === "fr" ? po() : e === "it" ? fo() : e === "jp" ? mo() : e === "pl" ? vo() : e === "ru" ? go() : e === "uk" ? ho() : bo()
+    return e === "en" ? us() : e === "pt" ? as() : e === "ch" ? cs() : e === "de" ? ls() : e === "es" ? _s() : e === "fr" ? ps() : e === "it" ? ds() : e === "jp" ? fs() : e === "pl" ? ms() : e === "ru" ? vs() : e === "uk" ? gs() : hs()
   },
-  yo = () => "Log out from all devices",
-  ko = () => "Desconectar de todos os dispositivos",
-  xo = () => "从所有设备登出",
-  wo = () => "Von allen Geräten abmelden",
-  zo = () => "Cerrar sesión en todos los dispositivos",
-  jo = () => "Se déconnecter de tous les appareils",
-  So = () => "Disconnetti da tutti i dispositivi",
-  Do = () => "すべての端末からログアウト",
-  Ro = () => "Wyloguj ze wszystkich urządzeń",
-  Io = () => "Выйти на всех устройствах",
-  Bo = () => "Вийти з усіх пристроїв",
-  No = () => "Đăng xuất khỏi mọi thiết bị",
-  ra = (s = {}, r = {}) => {
+  bs = () => "Log out from all devices",
+  ys = () => "Desconectar de todos os dispositivos",
+  ks = () => "从所有设备登出",
+  xs = () => "Von allen Geräten abmelden",
+  ws = () => "Cerrar sesión en todos los dispositivos",
+  zs = () => "Se déconnecter de tous les appareils",
+  js = () => "Disconnetti da tutti i dispositivi",
+  Ss = () => "すべての端末からログアウト",
+  Ds = () => "Wyloguj ze wszystkich urządzeń",
+  Rs = () => "Выйти на всех устройствах",
+  Is = () => "Вийти з усіх пристроїв",
+  Bs = () => "Đăng xuất khỏi mọi thiết bị",
+  fa = (o = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? yo() : e === "pt" ? ko() : e === "ch" ? xo() : e === "de" ? wo() : e === "es" ? zo() : e === "fr" ? jo() : e === "it" ? So() : e === "jp" ? Do() : e === "pl" ? Ro() : e === "ru" ? Io() : e === "uk" ? Bo() : No()
+    return e === "en" ? bs() : e === "pt" ? ys() : e === "ch" ? ks() : e === "de" ? xs() : e === "es" ? ws() : e === "fr" ? zs() : e === "it" ? js() : e === "jp" ? Ss() : e === "pl" ? Ds() : e === "ru" ? Rs() : e === "uk" ? Is() : Bs()
   },
-  To = () => "Name reported successfully",
-  Ao = () => "Nome denunciado com sucesso",
-  Lo = () => "名称举报成功",
-  Uo = () => "Name erfolgreich gemeldet",
-  Eo = () => "Nombre reportado correctamente",
-  Co = () => "Nom signalé avec succès",
-  Zo = () => "Nome segnalato con successo",
-  Po = () => "名前を通報しました。",
-  qo = () => "Nazwa została pomyślnie zgłoszona",
-  Mo = () => "Имя успешно пожаловано",
-  Oo = () => "Імʼя успішно поскаржено",
-  Go = () => "Đã báo cáo tên thành công",
-  Vo = (s = {}, r = {}) => {
+  Ns = () => "Name reported successfully",
+  Ts = () => "Nome denunciado com sucesso",
+  As = () => "名称举报成功",
+  Ls = () => "Name erfolgreich gemeldet",
+  Es = () => "Nombre reportado correctamente",
+  Us = () => "Nom signalé avec succès",
+  Zs = () => "Nome segnalato con successo",
+  Cs = () => "名前を通報しました。",
+  Ps = () => "Nazwa została pomyślnie zgłoszona",
+  qs = () => "Имя успешно пожаловано",
+  Ms = () => "Імʼя успішно поскаржено",
+  Os = () => "Đã báo cáo tên thành công",
+  Gs = (o = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? To() : e === "pt" ? Ao() : e === "ch" ? Lo() : e === "de" ? Uo() : e === "es" ? Eo() : e === "fr" ? Co() : e === "it" ? Zo() : e === "jp" ? Po() : e === "pl" ? qo() : e === "ru" ? Mo() : e === "uk" ? Oo() : Go()
+    return e === "en" ? Ns() : e === "pt" ? Ts() : e === "ch" ? As() : e === "de" ? Ls() : e === "es" ? Es() : e === "fr" ? Us() : e === "it" ? Zs() : e === "jp" ? Cs() : e === "pl" ? Ps() : e === "ru" ? qs() : e === "uk" ? Ms() : Os()
   },
-  Ko = () => "Other reason not listed",
-  Ho = () => "Outro motivo não listado",
-  Wo = () => "未列出的其他原因",
-  Fo = () => "Anderer Grund, der nicht aufgelistet ist",
-  Jo = () => "Otro motivo no listado",
-  Yo = () => "Autre raison non listée",
-  Qo = () => "Altro motivo non elencato",
-  Xo = () => "上記以外の理由",
-  $o = () => "Inny powód, którego nie ma na liście",
-  es = () => "Другая причина, не указанная в списке",
-  rs = () => "Інша причина, не зазначена в списку",
-  ts = () => "Lý do khác không có trong danh sách",
-  ns = (s = {}, r = {}) => {
+  Vs = () => "Other reason not listed",
+  Ks = () => "Outro motivo não listado",
+  Hs = () => "未列出的其他原因",
+  Ws = () => "Anderer Grund, der nicht aufgelistet ist",
+  Fs = () => "Otro motivo no listado",
+  Js = () => "Autre raison non listée",
+  Ys = () => "Altro motivo non elencato",
+  Qs = () => "上記以外の理由",
+  Xs = () => "Inny powód, którego nie ma na liście",
+  $s = () => "Другая причина, не указанная в списке",
+  eo = () => "Інша причина, не зазначена в списку",
+  ro = () => "Lý do khác không có trong danh sách",
+  to = (o = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? Ko() : e === "pt" ? Ho() : e === "ch" ? Wo() : e === "de" ? Fo() : e === "es" ? Jo() : e === "fr" ? Yo() : e === "it" ? Qo() : e === "jp" ? Xo() : e === "pl" ? $o() : e === "ru" ? es() : e === "uk" ? rs() : ts()
+    return e === "en" ? Vs() : e === "pt" ? Ks() : e === "ch" ? Hs() : e === "de" ? Ws() : e === "es" ? Fs() : e === "fr" ? Js() : e === "it" ? Ys() : e === "jp" ? Qs() : e === "pl" ? Xs() : e === "ru" ? $s() : e === "uk" ? eo() : ro()
   },
-  os = () => "Purchases",
-  ss = () => "Compras",
-  is = () => "购买记录",
-  us = () => "Käufe",
-  as = () => "Compras",
-  cs = () => "Achats",
-  ls = () => "Acquisti",
-  _s = () => "購入履歴",
-  ps = () => "Zakupy",
-  ds = () => "Покупки",
-  fs = () => "Покупки",
-  ms = () => "Mua hàng",
-  ta = (s = {}, r = {}) => {
+  no = () => "Purchases",
+  so = () => "Compras",
+  oo = () => "购买记录",
+  io = () => "Käufe",
+  uo = () => "Compras",
+  ao = () => "Achats",
+  co = () => "Acquisti",
+  lo = () => "購入履歴",
+  _o = () => "Zakupy",
+  po = () => "Покупки",
+  fo = () => "Покупки",
+  mo = () => "Mua hàng",
+  ma = (o = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? os() : e === "pt" ? ss() : e === "ch" ? is() : e === "de" ? us() : e === "es" ? as() : e === "fr" ? cs() : e === "it" ? ls() : e === "jp" ? _s() : e === "pl" ? ps() : e === "ru" ? ds() : e === "uk" ? fs() : ms()
+    return e === "en" ? no() : e === "pt" ? so() : e === "ch" ? oo() : e === "de" ? io() : e === "es" ? uo() : e === "fr" ? ao() : e === "it" ? co() : e === "jp" ? lo() : e === "pl" ? _o() : e === "ru" ? po() : e === "uk" ? fo() : mo()
   },
-  vs = () => "Report",
-  gs = () => "Denunciar",
-  hs = () => "举报",
-  bs = () => "Melden",
-  ys = () => "Reportar",
-  ks = () => "Signaler",
-  xs = () => "Segnala",
-  ws = () => "通報",
-  zs = () => "Zgłoś",
-  js = () => "Пожаловаться",
-  Ss = () => "Поскаржитися",
-  Ds = () => "Báo cáo",
-  Rs = (s = {}, r = {}) => {
+  vo = () => "Report",
+  go = () => "Denunciar",
+  ho = () => "举报",
+  bo = () => "Melden",
+  yo = () => "Reportar",
+  ko = () => "Signaler",
+  xo = () => "Segnala",
+  wo = () => "通報",
+  zo = () => "Zgłoś",
+  jo = () => "Пожаловаться",
+  So = () => "Поскаржитися",
+  Do = () => "Báo cáo",
+  Ro = (o = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? vs() : e === "pt" ? gs() : e === "ch" ? hs() : e === "de" ? bs() : e === "es" ? ys() : e === "fr" ? ks() : e === "it" ? xs() : e === "jp" ? ws() : e === "pl" ? zs() : e === "ru" ? js() : e === "uk" ? Ss() : Ds()
+    return e === "en" ? vo() : e === "pt" ? go() : e === "ch" ? ho() : e === "de" ? bo() : e === "es" ? yo() : e === "fr" ? ko() : e === "it" ? xo() : e === "jp" ? wo() : e === "pl" ? zo() : e === "ru" ? jo() : e === "uk" ? So() : Do()
   },
-  Is = () => "Report alliance name",
-  Bs = () => "Denunciar nome da aliança",
-  Ns = () => "举报联盟名称",
-  Ts = () => "Allianzname melden",
-  As = () => "Reportar nombre de la alianza",
-  Ls = () => "Signaler le nom de l’alliance",
-  Us = () => "Segnala nome dell'alleanza",
-  Es = () => "アライアンス名を通報",
-  Cs = () => "Zgłoś nazwę sojuszu",
-  Zs = () => "Пожаловаться на название альянса",
-  Ps = () => "Поскаржитися на назву альянсу",
-  qs = () => "Báo cáo tên liên minh",
-  Ms = (s = {}, r = {}) => {
+  Io = () => "Report alliance name",
+  Bo = () => "Denunciar nome da aliança",
+  No = () => "举报联盟名称",
+  To = () => "Allianzname melden",
+  Ao = () => "Reportar nombre de la alianza",
+  Lo = () => "Signaler le nom de l’alliance",
+  Eo = () => "Segnala nome dell'alleanza",
+  Uo = () => "アライアンス名を通報",
+  Zo = () => "Zgłoś nazwę sojuszu",
+  Co = () => "Пожаловаться на название альянса",
+  Po = () => "Поскаржитися на назву альянсу",
+  qo = () => "Báo cáo tên liên minh",
+  Mo = (o = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? Is() : e === "pt" ? Bs() : e === "ch" ? Ns() : e === "de" ? Ts() : e === "es" ? As() : e === "fr" ? Ls() : e === "it" ? Us() : e === "jp" ? Es() : e === "pl" ? Cs() : e === "ru" ? Zs() : e === "uk" ? Ps() : qs()
+    return e === "en" ? Io() : e === "pt" ? Bo() : e === "ch" ? No() : e === "de" ? To() : e === "es" ? Ao() : e === "fr" ? Lo() : e === "it" ? Eo() : e === "jp" ? Uo() : e === "pl" ? Zo() : e === "ru" ? Co() : e === "uk" ? Po() : qo()
   },
-  Os = () => "Report failed. Please try again later",
-  Gs = () => "Denúncia falhou. Por favor, tente novamente mais tarde",
-  Vs = () => "举报失败，请稍后再试",
-  Ks = () => "Meldung fehlgeschlagen. Bitte versuche es später erneut",
-  Hs = () => "Error al enviar el reporte. Inténtalo de nuevo más tarde",
-  Ws = () => "Échec du signalement. Veuillez réessayer plus tard",
-  Fs = () => "Segnalazione fallita. Riprova più tardi",
-  Js = () => "通報に失敗しました。時間をおいて再度お試しください",
-  Ys = () => "Zgłoszenie nie powiodło się. Spróbuj ponownie później",
-  Qs = () => "Не удалось отправить жалобу. Попробуйте позже.",
-  Xs = () => "Не вдалося відправити скаргу. Спробуйте пізніше.",
-  $s = () => "Báo cáo thất bại. Vui lòng thử lại sau",
-  q = (s = {}, r = {}) => {
+  Oo = () => "Report failed. Please try again later",
+  Go = () => "Denúncia falhou. Por favor, tente novamente mais tarde",
+  Vo = () => "举报失败，请稍后再试",
+  Ko = () => "Meldung fehlgeschlagen. Bitte versuche es später erneut",
+  Ho = () => "Error al enviar el reporte. Inténtalo de nuevo más tarde",
+  Wo = () => "Échec du signalement. Veuillez réessayer plus tard",
+  Fo = () => "Segnalazione fallita. Riprova più tardi",
+  Jo = () => "通報に失敗しました。時間をおいて再度お試しください",
+  Yo = () => "Zgłoszenie nie powiodło się. Spróbuj ponownie później",
+  Qo = () => "Не удалось отправить жалобу. Попробуйте позже.",
+  Xo = () => "Не вдалося відправити скаргу. Спробуйте пізніше.",
+  $o = () => "Báo cáo thất bại. Vui lòng thử lại sau",
+  q = (o = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? Os() : e === "pt" ? Gs() : e === "ch" ? Vs() : e === "de" ? Ks() : e === "es" ? Hs() : e === "fr" ? Ws() : e === "it" ? Fs() : e === "jp" ? Js() : e === "pl" ? Ys() : e === "ru" ? Qs() : e === "uk" ? Xs() : $s()
+    return e === "en" ? Oo() : e === "pt" ? Go() : e === "ch" ? Vo() : e === "de" ? Ko() : e === "es" ? Ho() : e === "fr" ? Wo() : e === "it" ? Fo() : e === "jp" ? Jo() : e === "pl" ? Yo() : e === "ru" ? Qo() : e === "uk" ? Xo() : $o()
   },
   ei = () => "Report name",
   ri = () => "Denunciar nome",
   ti = () => "举报名称",
   ni = () => "Namen melden",
-  oi = () => "Reportar nombre",
-  si = () => "Signaler un nom",
+  si = () => "Reportar nombre",
+  oi = () => "Signaler un nom",
   ii = () => "Segnala nome",
   ui = () => "名前を通報",
   ai = () => "Zgłoś nazwę",
   ci = () => "Пожаловаться на имя",
   li = () => "Поскаржитися на імʼя",
   _i = () => "Báo cáo tên",
-  pi = (s = {}, r = {}) => {
+  pi = (o = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? ei() : e === "pt" ? ri() : e === "ch" ? ti() : e === "de" ? ni() : e === "es" ? oi() : e === "fr" ? si() : e === "it" ? ii() : e === "jp" ? ui() : e === "pl" ? ai() : e === "ru" ? ci() : e === "uk" ? li() : _i()
+    return e === "en" ? ei() : e === "pt" ? ri() : e === "ch" ? ti() : e === "de" ? ni() : e === "es" ? si() : e === "fr" ? oi() : e === "it" ? ii() : e === "jp" ? ui() : e === "pl" ? ai() : e === "ru" ? ci() : e === "uk" ? li() : _i()
   },
   di = () => "Report sent successfully",
   fi = () => "Denúncia enviada com sucesso",
@@ -453,7 +453,7 @@ const Br = () => "Alliance",
   xi = () => "Жалоба успешно отправлена",
   wi = () => "Скаргу успішно надіслано",
   zi = () => "Đã gửi báo cáo thành công",
-  ji = (s = {}, r = {}) => {
+  ji = (o = {}, r = {}) => {
     const e = r.locale ?? _();
     return e === "en" ? di() : e === "pt" ? fi() : e === "ch" ? mi() : e === "de" ? vi() : e === "es" ? gi() : e === "fr" ? hi() : e === "it" ? bi() : e === "jp" ? yi() : e === "pl" ? ki() : e === "ru" ? xi() : e === "uk" ? wi() : zi()
   },
@@ -466,12 +466,12 @@ const Br = () => "Alliance",
   Ti = () => "Segnala utente",
   Ai = () => "ユーザーを通報",
   Li = () => "Zgłoś użytkownika",
-  Ui = () => "Пожаловаться на пользователя",
-  Ei = () => "Поскаржитися на користувача",
-  Ci = () => "Báo cáo người chơi",
-  Zi = (s = {}, r = {}) => {
+  Ei = () => "Пожаловаться на пользователя",
+  Ui = () => "Поскаржитися на користувача",
+  Zi = () => "Báo cáo người chơi",
+  Ci = (o = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? Si() : e === "pt" ? Di() : e === "ch" ? Ri() : e === "de" ? Ii() : e === "es" ? Bi() : e === "fr" ? Ni() : e === "it" ? Ti() : e === "jp" ? Ai() : e === "pl" ? Li() : e === "ru" ? Ui() : e === "uk" ? Ei() : Ci()
+    return e === "en" ? Si() : e === "pt" ? Di() : e === "ch" ? Ri() : e === "de" ? Ii() : e === "es" ? Bi() : e === "fr" ? Ni() : e === "it" ? Ti() : e === "jp" ? Ai() : e === "pl" ? Li() : e === "ru" ? Ei() : e === "uk" ? Ui() : Zi()
   },
   Pi = () => "Sessions successfully revoked",
   qi = () => "Sessões encerradas com sucesso",
@@ -485,7 +485,7 @@ const Br = () => "Alliance",
   Fi = () => "Сеансы успешно завершены",
   Ji = () => "Сеанси успішно завершено",
   Yi = () => "Đã thu hồi phiên đăng nhập thành công",
-  na = (s = {}, r = {}) => {
+  va = (o = {}, r = {}) => {
     const e = r.locale ?? _();
     return e === "en" ? Pi() : e === "pt" ? qi() : e === "ch" ? Mi() : e === "de" ? Oi() : e === "es" ? Gi() : e === "fr" ? Vi() : e === "it" ? Ki() : e === "jp" ? Hi() : e === "pl" ? Wi() : e === "ru" ? Fi() : e === "uk" ? Ji() : Yi()
   },
@@ -496,55 +496,71 @@ const Br = () => "Alliance",
   ru = () => "Suspender usuario",
   tu = () => "Suspendre l’utilisateur",
   nu = () => "Sospendi utente",
-  ou = () => "ユーザーをタイムアウト",
-  su = () => "Zawieś użytkownika",
+  su = () => "ユーザーをタイムアウト",
+  ou = () => "Zawieś użytkownika",
   iu = () => "Дать тайм-аут пользователю",
   uu = () => "Дати тайм-аут користувачу",
   au = () => "Tạm khóa người dùng",
-  Ue = (s = {}, r = {}) => {
+  Ee = (o = {}, r = {}) => {
     const e = r.locale ?? _();
-    return e === "en" ? Qi() : e === "pt" ? Xi() : e === "ch" ? $i() : e === "de" ? eu() : e === "es" ? ru() : e === "fr" ? tu() : e === "it" ? nu() : e === "jp" ? ou() : e === "pl" ? su() : e === "ru" ? iu() : e === "uk" ? uu() : au()
+    return e === "en" ? Qi() : e === "pt" ? Xi() : e === "ch" ? $i() : e === "de" ? eu() : e === "es" ? ru() : e === "fr" ? tu() : e === "it" ? nu() : e === "jp" ? su() : e === "pl" ? ou() : e === "ru" ? iu() : e === "uk" ? uu() : au()
+  },
+  cu = () => "The reported user is already suspended",
+  lu = () => "O usuário denunciado já está suspenso",
+  _u = () => "被举报的用户已被暂停",
+  pu = () => "Der gemeldete Benutzer ist bereits gesperrt",
+  du = () => "El usuario reportado ya está suspendido",
+  fu = () => "L'utilisateur signalé est déjà suspendu",
+  mu = () => "L'utente segnalato è già sospeso",
+  vu = () => "報告されたユーザーはすでに停止されています",
+  gu = () => "Zgłoszony użytkownik jest już zawieszony",
+  hu = () => "Заблокированный пользователь уже отстранен",
+  bu = () => "На користувача, про якого повідомили, вже накладено блокування",
+  yu = () => "Người dùng bị báo cáo đã bị đình chỉ",
+  ku = (o = {}, r = {}) => {
+    const e = r.locale ?? _();
+    return e === "en" ? cu() : e === "pt" ? lu() : e === "ch" ? _u() : e === "de" ? pu() : e === "es" ? du() : e === "fr" ? fu() : e === "it" ? mu() : e === "jp" ? vu() : e === "pl" ? gu() : e === "ru" ? hu() : e === "uk" ? bu() : yu()
   };
-var cu = Ee('<svg><path d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"></path></svg>');
+var xu = Ue('<svg><path d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"></path></svg>');
 
-function lu(s, r) {
-  let e = Ze(r, ["$$slots", "$$events", "$$legacy"]);
-  var D = cu();
-  Ce(D, () => ({
+function wu(o, r) {
+  let e = Ce(r, ["$$slots", "$$events", "$$legacy"]);
+  var D = xu();
+  Ze(D, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
     ...e
-  })), m(s, D)
+  })), m(o, D)
 }
-var _u = B('<span class="badge badge-sm border-0"> </span>'),
-  pu = B("<span> </span>"),
-  du = B('<span class="tooltip"><!></span>'),
-  fu = B('<span class="tooltip"><!></span>'),
-  mu = B('<li><button class="text-error py-2 font-medium"> </button></li>'),
-  vu = B('<div><span class="flex gap-1.5"><span> </span> <span> </span></span> <!> <!> <!> <div class="dropdown dropdown-bottom max-sm:dropdown-bottom max-sm:dropdown-left"><button tabindex="0" class="btn btn-xs btn-circle btn-ghost"><!></button> <ul class="dropdown-content menu bg-base-100 z-1 mb-1 w-max gap-0.5 rounded-xl p-2.5 shadow-sm"><li><button class="text-error py-2 font-medium"> </button></li> <!></ul></div></div>'),
-  gu = B("<span> </span>"),
-  hu = B('<span class="tooltip"><!></span>'),
-  bu = B('<span class="tooltip"><!></span>'),
-  yu = B('<li class="flex items-center gap-2 px-3 py-2"><!> <div class="min-w-0"><div class="flex flex-wrap items-center gap-1"><span><span> </span> <span> </span></span> <!> <!></div></div></li>'),
-  ku = B('<div class="border-base-300 mt-4 max-h-40 overflow-y-auto rounded-lg border"><ul class="divide-base-200 divide-y"></ul></div>'),
-  xu = B('<label class="flex gap-3"><input name="reason" class="radio radio-sm mt-1" type="radio"/> <div><div class="font-semibold"> </div> <div class="text-base-content/80 text-sm"> </div></div></label>'),
-  wu = B('<form method="POST"><input name="zoom" hidden=""/> <section class="flex gap-3"><!> <div class="min-w-0"><h2 class="text-xl font-semibold"><!></h2> <!></div></section> <!> <section class="mt-6"><h3 class="text-base-content/80 text-base"> </h3> <div class="mt-2 flex flex-col gap-3"></div></section> <section class="mt-6"><!></section> <section class="mt-3 flex justify-end gap-2"><button type="button" class="btn"> </button> <button class="btn btn-error"> </button></section></form>'),
-  zu = B('<dialog class="modal"><div class="modal-box max-h-[97%] max-w-xl"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <!></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
+var zu = B('<span class="badge badge-sm border-0"> </span>'),
+  ju = B("<span> </span>"),
+  Su = B('<span class="tooltip"><!></span>'),
+  Du = B('<span class="tooltip"><!></span>'),
+  Ru = B('<li><button class="text-error py-2 font-medium"> </button></li>'),
+  Iu = B('<div><span class="flex gap-1.5"><span> </span> <span> </span></span> <!> <!> <!> <div class="dropdown dropdown-bottom max-sm:dropdown-bottom max-sm:dropdown-left"><button tabindex="0" class="btn btn-xs btn-circle btn-ghost"><!></button> <ul class="dropdown-content menu bg-base-100 z-1 mb-1 w-max gap-0.5 rounded-xl p-2.5 shadow-sm"><li><button class="text-error py-2 font-medium"> </button></li> <!></ul></div></div>'),
+  Bu = B("<span> </span>"),
+  Nu = B('<span class="tooltip"><!></span>'),
+  Tu = B('<span class="tooltip"><!></span>'),
+  Au = B('<li class="flex items-center gap-2 px-3 py-2"><!> <div class="min-w-0"><div class="flex flex-wrap items-center gap-1"><span><span> </span> <span> </span></span> <!> <!></div></div></li>'),
+  Lu = B('<div class="border-base-300 mt-4 max-h-40 overflow-y-auto rounded-lg border"><ul class="divide-base-200 divide-y"></ul></div>'),
+  Eu = B('<label class="flex gap-3"><input name="reason" class="radio radio-sm mt-1" type="radio"/> <div><div class="font-semibold"> </div> <div class="text-base-content/80 text-sm"> </div></div></label>'),
+  Uu = B('<form method="POST"><input name="zoom" hidden=""/> <section class="flex gap-3"><!> <div class="min-w-0"><h2 class="text-xl font-semibold"><!></h2> <!></div></section> <!> <section class="mt-6"><h3 class="text-base-content/80 text-base"> </h3> <div class="mt-2 flex flex-col gap-3"></div></section> <section class="mt-6"><!></section> <section class="mt-3 flex justify-end gap-2"><button type="button" class="btn"> </button> <button class="btn btn-error"> </button></section></form>'),
+  Zu = B('<dialog class="modal"><div class="modal-box max-h-[97%] max-w-xl"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <!></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
 
-function oa(s, r) {
-  sr(r, !0);
+function ga(o, r) {
+  or(r, !0);
   const e = [];
   let D = dr(r, "open", 15),
-    E = H(!1),
+    U = H(!1),
     F = H(""),
-    se = H(""),
+    oe = H(""),
     ie = H(null),
     ue = H(null);
   const Pe = [{
     value: "inappropriate-content",
     label: mr(),
-    description: io()
+    description: is()
   }, {
     value: "hate-speech",
     label: vr(),
@@ -564,7 +580,7 @@ function oa(s, r) {
   }, {
     value: "other",
     label: kr(),
-    description: ns()
+    description: to()
   }];
   let R = ee(() => {
     var y;
@@ -576,26 +592,26 @@ function oa(s, r) {
     };
     return document.addEventListener("keydown", y), () => document.removeEventListener("keydown", y)
   }), ze(() => {
-    D() || (A(F, ""), A(se, ""))
+    D() || (A(F, ""), A(oe, ""))
   });
   async function qe(y) {
     try {
-      A(E, !0);
+      A(U, !0);
       for (const k of y)
         if (k.id !== 0) try {
-          await ge.postReportUserName(k.id), T.success(Vo())
+          await ge.postReportUserName(k.id), T.success(Gs())
         } catch {
           T.error(q())
         }
     } catch {
       T.error(q())
     } finally {
-      A(E, !1)
+      A(U, !1)
     }
   }
   async function Me(y) {
     try {
-      A(E, !0);
+      A(U, !0);
       for (const k of y)
         if (k.allianceId) try {
           await ge.postReportAllianceName(k.allianceId), T.success(et())
@@ -605,19 +621,19 @@ function oa(s, r) {
     } catch {
       T.error(q())
     } finally {
-      A(E, !1)
+      A(U, !1)
     }
   }
-  var O = zu(),
-    he = o(O),
-    Oe = f(o(he), 2);
+  var O = Zu(),
+    he = s(O),
+    Oe = f(s(he), 2);
   {
     var Ge = y => {
-      var k = wu(),
-        J = o(k);
+      var k = Uu(),
+        J = s(k);
       De(J);
       var ae = f(J, 2),
-        be = o(ae);
+        be = s(ae);
       {
         var Ve = u => {
           {
@@ -638,12 +654,12 @@ function oa(s, r) {
         })
       }
       var ye = f(be, 2),
-        ce = o(ye),
-        Ke = o(ce);
+        ce = s(ye),
+        Ke = s(ce);
       {
         var He = u => {
             var i = ve();
-            j(p => b(i, p), [() => Zi()]), m(u, i)
+            j(p => b(i, p), [() => Ci()]), m(u, i)
           },
           We = u => {
             var i = re(),
@@ -651,7 +667,7 @@ function oa(s, r) {
             {
               var g = v => {
                   var h = ve();
-                  j(d => b(h, d), [() => Ue()]), m(v, h)
+                  j(d => b(h, d), [() => Ee()]), m(v, h)
                 },
                 a = v => {
                   var h = re(),
@@ -681,19 +697,19 @@ function oa(s, r) {
       var Fe = f(ce, 2);
       {
         var Je = u => {
-          var i = vu(),
-            p = o(i),
-            g = o(p),
-            a = o(g, !0);
+          var i = Iu(),
+            p = s(i),
+            g = s(p),
+            a = s(g, !0);
           n(g);
           var v = f(g, 2),
-            h = o(v);
+            h = s(v);
           n(v), n(p);
           var d = f(p, 2);
           {
             var z = l => {
-              var c = _u(),
-                N = o(c);
+              var c = zu(),
+                N = s(c);
               n(c), j(() => b(N, `+${r.targets.length-1} more`)), m(l, c)
             };
             S(d, l => {
@@ -703,11 +719,11 @@ function oa(s, r) {
           var x = f(d, 2);
           {
             var L = l => {
-              var c = pu(),
-                N = o(c, !0);
-              n(c), j((U, P) => {
-                ne(c, 1, `badge badge-sm ml-0.5 border-0 ${U??""} ${P??""}`), b(N, t(R).allianceName)
-              }, [() => Ae(t(R).allianceId), () => oe(t(R).allianceId)]), m(l, c)
+              var c = ju(),
+                N = s(c, !0);
+              n(c), j((E, P) => {
+                ne(c, 1, `badge badge-sm ml-0.5 border-0 ${E??""} ${P??""}`), b(N, t(R).allianceName)
+              }, [() => Ae(t(R).allianceId), () => se(t(R).allianceId)]), m(l, c)
             };
             S(x, l => {
               t(R).allianceId && t(R).allianceName && l(L)
@@ -716,25 +732,25 @@ function oa(s, r) {
           var M = f(x, 2);
           {
             var Q = l => {
-                var c = du(),
-                  N = o(c);
+                var c = Su(),
+                  N = s(c);
                 Ie(N, {
                   class: "text-error inline size-4"
-                }), n(c), j(U => W(c, "data-tip", U), [() => Ne()]), m(l, c)
+                }), n(c), j(E => W(c, "data-tip", E), [() => Ne()]), m(l, c)
               },
               fe = l => {
                 var c = re(),
                   N = te(c);
                 {
-                  var U = P => {
-                    var $ = fu(),
-                      rr = o($);
+                  var E = P => {
+                    var $ = Du(),
+                      rr = s($);
                     Be(rr, {
                       class: "text-warning inline size-4"
                     }), n($), j(tr => W($, "data-tip", tr), [() => Te()]), m(P, $)
                   };
                   S(N, P => {
-                    t(R).timedOut && P(U)
+                    t(R).timedOut && P(E)
                   }, !0)
                 }
                 m(l, c)
@@ -744,37 +760,37 @@ function oa(s, r) {
             })
           }
           var G = f(M, 2),
-            V = o(G),
-            me = o(V);
-          lu(me, {
+            V = s(G),
+            me = s(V);
+          wu(me, {
             class: "text-error inline size-4"
           }), n(V);
           var X = f(V, 2),
-            K = o(X),
-            w = o(K);
+            K = s(X),
+            w = s(K);
           w.__click = async () => {
             await qe(r.targets), document.activeElement.blur()
           };
-          var I = o(w, !0);
+          var I = s(w, !0);
           n(w), n(K);
-          var C = f(K, 2);
+          var Z = f(K, 2);
           {
-            var Z = l => {
-              var c = mu(),
-                N = o(c);
+            var C = l => {
+              var c = Ru(),
+                N = s(c);
               N.__click = async () => {
                 await Me(r.targets), document.activeElement.blur()
               };
-              var U = o(N, !0);
-              n(N), n(c), j(P => b(U, P), [() => Ms()]), m(l, c)
+              var E = s(N, !0);
+              n(N), n(c), j(P => b(E, P), [() => Mo()]), m(l, c)
             };
-            S(C, l => {
-              r.targets.some(c => c.allianceId) && l(Z)
+            S(Z, l => {
+              r.targets.some(c => c.allianceId) && l(C)
             })
           }
           n(X), n(G), n(i), j((l, c) => {
             ne(i, 1, `font-medium ${l??""} flex flex-wrap items-center gap-1.5`), b(a, t(R).name), b(h, `#${t(R).id??""}`), b(I, c)
-          }, [() => oe(t(R).id), () => pi()]), m(u, i)
+          }, [() => se(t(R).id), () => pi()]), m(u, i)
         };
         S(Fe, u => {
           t(R) && r.targets.length === 1 && u(Je)
@@ -784,11 +800,11 @@ function oa(s, r) {
       var ke = f(ae, 2);
       {
         var Ye = u => {
-          var i = ku(),
-            p = o(i);
+          var i = Lu(),
+            p = s(i);
           Se(p, 21, () => r.targets, g => g.id, (g, a) => {
-            var v = yu(),
-              h = o(v);
+            var v = Au(),
+              h = s(v);
             Re(h, {
               class: "size-8 border-0",
               get userId() {
@@ -799,22 +815,22 @@ function oa(s, r) {
               }
             });
             var d = f(h, 2),
-              z = o(d),
-              x = o(z),
-              L = o(x),
-              M = o(L, !0);
+              z = s(d),
+              x = s(z),
+              L = s(x),
+              M = s(L, !0);
             n(L);
             var Q = f(L, 2),
-              fe = o(Q);
+              fe = s(Q);
             n(Q), n(x);
             var G = f(x, 2);
             {
               var V = w => {
-                var I = gu(),
-                  C = o(I, !0);
-                n(I), j((Z, l) => {
-                  ne(I, 1, `badge badge-xs border-0 ${Z??""} ${l??""}`), b(C, t(a).allianceName)
-                }, [() => Ae(t(a).allianceId), () => oe(t(a).allianceId)]), m(w, I)
+                var I = Bu(),
+                  Z = s(I, !0);
+                n(I), j((C, l) => {
+                  ne(I, 1, `badge badge-xs border-0 ${C??""} ${l??""}`), b(Z, t(a).allianceName)
+                }, [() => Ae(t(a).allianceId), () => se(t(a).allianceId)]), m(w, I)
               };
               S(G, w => {
                 t(a).allianceId && t(a).allianceName && w(V)
@@ -823,25 +839,25 @@ function oa(s, r) {
             var me = f(G, 2);
             {
               var X = w => {
-                  var I = hu(),
-                    C = o(I);
-                  Ie(C, {
+                  var I = Nu(),
+                    Z = s(I);
+                  Ie(Z, {
                     class: "text-error inline size-3.5"
-                  }), n(I), j(Z => W(I, "data-tip", Z), [() => Ne()]), m(w, I)
+                  }), n(I), j(C => W(I, "data-tip", C), [() => Ne()]), m(w, I)
                 },
                 K = w => {
                   var I = re(),
-                    C = te(I);
+                    Z = te(I);
                   {
-                    var Z = l => {
-                      var c = bu(),
-                        N = o(c);
+                    var C = l => {
+                      var c = Tu(),
+                        N = s(c);
                       Be(N, {
                         class: "text-warning inline size-3.5"
-                      }), n(c), j(U => W(c, "data-tip", U), [() => Te()]), m(l, c)
+                      }), n(c), j(E => W(c, "data-tip", E), [() => Te()]), m(l, c)
                     };
-                    S(C, l => {
-                      t(a).timedOut && l(Z)
+                    S(Z, l => {
+                      t(a).timedOut && l(C)
                     }, !0)
                   }
                   m(w, I)
@@ -852,7 +868,7 @@ function oa(s, r) {
             }
             n(z), n(d), n(v), j(w => {
               ne(x, 1, `font-medium ${w??""} flex gap-1.5`), b(M, t(a).name), b(fe, `#${t(a).id??""}`)
-            }, [() => oe(t(a).id)]), m(g, v)
+            }, [() => se(t(a).id)]), m(g, v)
           }), n(p), n(i), m(u, i)
         };
         S(ke, u => {
@@ -860,26 +876,26 @@ function oa(s, r) {
         })
       }
       var le = f(ke, 2),
-        _e = o(le),
-        Qe = o(_e);
+        _e = s(le),
+        Qe = s(_e);
       n(_e);
       var xe = f(_e, 2);
       Se(xe, 21, () => Pe, u => u.value, (u, i) => {
-        var p = xu(),
-          g = o(p);
+        var p = Eu(),
+          g = s(p);
         De(g);
         var a, v = f(g, 2),
-          h = o(v),
-          d = o(h, !0);
+          h = s(v),
+          d = s(h, !0);
         n(h);
         var z = f(h, 2),
-          x = o(z, !0);
+          x = s(z, !0);
         n(z), n(v), n(p), j(() => {
           W(g, "aria-label", t(i).label), a !== (a = t(i).value) && (g.value = (g.__value = t(i).value) ?? ""), b(d, t(i).label), b(x, t(i).description)
         }), _r(e, [], g, () => (t(i).value, t(F)), L => A(F, L)), m(u, p)
       }), n(xe), n(le);
       var pe = f(le, 2),
-        Xe = o(pe);
+        Xe = s(pe);
       {
         let u = ee(() => zr()),
           i = ee(() => t(F) === "doxxing" ? 20 : 5);
@@ -894,10 +910,10 @@ function oa(s, r) {
             return t(i)
           },
           get value() {
-            return t(se)
+            return t(oe)
           },
           set value(p) {
-            A(se, p, !0)
+            A(oe, p, !0)
           },
           get validate() {
             return t(ue)
@@ -909,19 +925,19 @@ function oa(s, r) {
       }
       n(pe);
       var we = f(pe, 2),
-        Y = o(we);
+        Y = s(we);
       Y.__click = () => {
         D(!1)
       };
-      var $e = o(Y, !0);
+      var $e = s(Y, !0);
       n(Y);
       var de = f(Y, 2),
-        er = o(de, !0);
+        er = s(de, !0);
       n(de), n(we), n(k), pr(k, u => A(ie, u), () => t(ie)), j((u, i, p) => {
-        cr(J, r.zoom), b(Qe, `${u??""}:`), b($e, i), de.disabled = t(E), b(er, p)
-      }, [() => wr(), () => jr(), () => Rs()]), je("submit", k, async u => {
+        cr(J, r.zoom), b(Qe, `${u??""}:`), b($e, i), de.disabled = t(U), b(er, p)
+      }, [() => wr(), () => jr(), () => Ro()]), je("submit", k, async u => {
         var v, h;
-        if (u.preventDefault(), t(E) || !t(ue)()) return;
+        if (u.preventDefault(), t(U) || !t(ue)()) return;
         const i = new FormData(t(ie)),
           p = String(i.get("reason") ?? "");
         if (!p) {
@@ -935,7 +951,7 @@ function oa(s, r) {
           return
         }
         try {
-          if (A(E, !0), r.action === "report-user") {
+          if (A(U, !0), r.action === "report-user") {
             i.append("reportedUserId", String(a[0])), i.append("latitude", r.latLon[0].toString()), i.append("longitude", r.latLon[1].toString()), a.length > 1 && i.append("userIds", JSON.stringify(a));
             const d = await r.image;
             i.append("image", d, `report-${Date.now()}.jpeg`);
@@ -944,7 +960,7 @@ function oa(s, r) {
               body: i,
               credentials: "include"
             });
-            z.status === 200 || z.status === 409 ? ((await z.json()).reason === "reported_user_banned_timeout" ? T.warning("The user you reported is already under an active punishment.") : T.info(ji()), (v = r.onsuccess) == null || v.call(r, {
+            z.status === 200 || z.status === 409 ? ((await z.json()).reason === "reported_user_banned_timeout" ? T.warning(ku()) : T.info(ji()), (v = r.onsuccess) == null || v.call(r, {
               action: r.action,
               userIds: [a[0]]
             }), D(!1)) : T.error(q())
@@ -960,7 +976,7 @@ function oa(s, r) {
               reason: p,
               notes: g
             }, r.origin, r.action);
-            const x = r.action === "ban" ? a.length > 1 ? Dr() : Le() : a.length > 1 ? Rr() : Ue();
+            const x = r.action === "ban" ? a.length > 1 ? Dr() : Le() : a.length > 1 ? Rr() : Ee();
             T.success(x), (h = r.onsuccess) == null || h.call(r, {
               action: r.action,
               userIds: [a[0]]
@@ -969,7 +985,7 @@ function oa(s, r) {
         } catch (d) {
           T.error((d == null ? void 0 : d.message) ?? q())
         } finally {
-          A(E, !1)
+          A(U, !1)
         }
       }), lr(2, k, () => Ir), m(y, k)
     };
@@ -981,21 +997,21 @@ function oa(s, r) {
     ze(() => {
       D() ? y.show() : y.close()
     })
-  }), je("close", O, () => D(!1)), m(s, O), ur()
+  }), je("close", O, () => D(!1)), m(o, O), ur()
 }
-or(["click"]);
-var ju = Ee('<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
+sr(["click"]);
+var Cu = Ue('<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
 
-function sa(s, r) {
-  let e = Ze(r, ["$$slots", "$$events", "$$legacy"]);
-  var D = ju();
-  Ce(D, () => ({
+function ha(o, r) {
+  let e = Ce(r, ["$$slots", "$$events", "$$legacy"]);
+  var D = Cu();
+  Ze(D, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
     ...e
-  })), m(s, D)
+  })), m(o, D)
 }
 export {
-  sa as D, oa as R, lu as W, ea as a, Xu as b, Qu as c, $u as d, Yu as e, Le as f, q as g, ra as l, ta as p, Zi as r, na as s, Ue as t
+  ha as D, ga as R, wu as W, da as a, _a as b, la as c, pa as d, ca as e, Le as f, q as g, fa as l, ma as p, Ci as r, va as s, Ee as t
 };

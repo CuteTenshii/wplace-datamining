@@ -1,11 +1,11 @@
 import {
-  g as f
-} from "./D5qrl5-_.js";
+  g as t
+} from "./FJFkb2i2.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "1064b7515953fcf97fd0dd3f98c3a1e27dfd80a9"
+      id: "dfb4bddd9fb2b4748eaf19466331b7b547c362b7"
     }
   } catch {}
 })();
@@ -16,7 +16,7 @@ try {
     e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "df113091-8f27-4e53-adbc-5b0f3f54fb04", r._sentryDebugIdIdentifier = "sentry-dbid-df113091-8f27-4e53-adbc-5b0f3f54fb04")
   })()
 } catch {}
-const t = () => "Confirm",
+const f = () => "Confirm",
   o = () => "Confirmar",
   i = () => "确认",
   c = () => "Bestätigen",
@@ -24,13 +24,13 @@ const t = () => "Confirm",
   d = () => "Confirmer",
   s = () => "Conferma",
   l = () => "確認",
-  a = () => "Potwierdź",
-  b = () => "Подтвердить",
+  b = () => "Potwierdź",
+  a = () => "Подтвердить",
   m = () => "Підтвердити",
   p = () => "Xác nhận",
   g = (r = {}, e = {}) => {
-    const n = e.locale ?? f();
-    return n === "en" ? t() : n === "pt" ? o() : n === "ch" ? i() : n === "de" ? c() : n === "es" ? u() : n === "fr" ? d() : n === "it" ? s() : n === "jp" ? l() : n === "pl" ? a() : n === "ru" ? b() : n === "uk" ? m() : p()
+    const n = e.locale ?? t();
+    return n === "en" ? f() : n === "pt" ? o() : n === "ch" ? i() : n === "de" ? c() : n === "es" ? u() : n === "fr" ? d() : n === "it" ? s() : n === "jp" ? l() : n === "pl" ? b() : n === "ru" ? a() : n === "uk" ? m() : p()
   };
 export {
   g as c
