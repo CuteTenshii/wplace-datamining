@@ -1,44 +1,44 @@
-import "./3ViHk73K.js";
-import "./CKBRQcbH.js";
+import "./BaEU23u2.js";
+import "./BnWksfGF.js";
 import {
   p as T,
   f as m,
   d as l,
   r as f,
   t as p,
-  b,
+  b as c,
   c as I,
   s as g,
   x as _,
   H as r
-} from "./DHzwV35n.js";
+} from "./CZoruRVW.js";
 import {
   s as u
-} from "./Dw6VmWej.js";
+} from "./BaYKnAhr.js";
 import {
   i as D
-} from "./yWjagcZd.js";
+} from "./BrshGqtt.js";
 import {
   a as k
-} from "./RKLtB9Qy.js";
+} from "./Cv5qs_pw.js";
 import {
   i as A
-} from "./D_K4uU9s.js";
+} from "./BUOwQLt-.js";
 import {
   p as v
-} from "./DiMlrxmI.js";
+} from "./CcIZg8y0.js";
 import {
   R as y,
   a as w
-} from "./CAOXTBWF.js";
+} from "./BIlNrtKa.js";
 import {
   L as h
-} from "./Beqx-cqm.js";
+} from "./CVftI7WR.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "dfb4bddd9fb2b4748eaf19466331b7b547c362b7"
+      id: "333b60866c7f52d6a6d78eeaca70d7067d67d0c1"
     }
   } catch {}
 })();
@@ -59,7 +59,7 @@ function G(e, t) {
     x = v(t, "big", 8, !1);
   A();
   var n = S();
-  let c;
+  let b;
   var E = l(n);
   {
     var R = s => {
@@ -69,7 +69,7 @@ function G(e, t) {
           size: "none"
         });
         var d = g(i, 1, !0);
-        f(o), p(() => u(d, (r(y), r(a()), _(() => y[a()])))), b(s, o)
+        f(o), p(() => u(d, (r(y), r(a()), _(() => y[a()])))), c(s, o)
       },
       L = s => {
         var o = O(),
@@ -78,17 +78,17 @@ function G(e, t) {
           size: "small"
         });
         var d = g(i, 1, !0);
-        f(o), p(() => u(d, (r(w), r(a()), _(() => w[a()])))), b(s, o)
+        f(o), p(() => u(d, (r(w), r(a()), _(() => w[a()])))), c(s, o)
       };
     D(E, s => {
       x() ? s(R) : s(L, !1)
     })
   }
-  f(n), p(() => c = k(n, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center whitespace-nowrap pt-0.5 font-semibold leading-none shadow", null, c, {
+  f(n), p(() => b = k(n, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center whitespace-nowrap pt-0.5 font-semibold leading-none shadow", null, b, {
     "badge-info": a() === "admin",
     "badge-secondary": a() === "moderator" || a() == "global_moderator",
     "badge-warning": a() === "community_leader"
-  })), b(e, n), I()
+  })), c(e, n), I()
 }
 export {
   G as R
