@@ -1,11 +1,11 @@
 import {
   a as i
-} from "./CTRl5rUh.js";
+} from "./CmQ5WwDX.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "72535b980ce58632366910417763e3bb1f48d885"
+      id: "ada152f6c93ea91d04a55442a56d263a5f091eaf"
     }
   } catch {}
 })();
@@ -30,12 +30,12 @@ function D(t) {
 function T({
   r: t,
   g: e,
-  b: n
+  b: a
 }) {
-  function o(a) {
-    return a.toString(16).padStart(2, "0")
+  function o(n) {
+    return n.toString(16).padStart(2, "0")
   }
-  return `#${o(t)}${o(e)}${o(n)}`
+  return `#${o(t)}${o(e)}${o(a)}`
 }
 
 function k(t) {
@@ -52,10 +52,10 @@ function k(t) {
 
 function C(t) {
   t = Math.min(t, i.colors.length - 1);
-  const [e, n, o] = i.colors[t].rgb;
+  const [e, a, o] = i.colors[t].rgb;
   return {
     r: e,
-    g: n,
+    g: a,
     b: o,
     a: t === 0 ? 0 : 255
   }
@@ -88,54 +88,54 @@ function R(t, e = "lab") {
     }
     return r.idx
   }
-  let n = y[0],
+  let a = y[0],
     o = Number.MAX_VALUE;
-  const a = w(t);
+  const n = w(t);
   for (let r of y) {
-    const l = M(a, r.lab);
-    l < o && (n = r, o = l)
+    const l = M(n, r.lab);
+    l < o && (a = r, o = l)
   }
-  return n.idx
+  return a.idx
 }
 
 function w(t) {
   var e = t.r / 255,
-    n = t.g / 255,
+    a = t.g / 255,
     o = t.b / 255,
-    a, r, l;
-  return e = e > .04045 ? Math.pow((e + .055) / 1.055, 2.4) : e / 12.92, n = n > .04045 ? Math.pow((n + .055) / 1.055, 2.4) : n / 12.92, o = o > .04045 ? Math.pow((o + .055) / 1.055, 2.4) : o / 12.92, a = (e * .4124 + n * .3576 + o * .1805) / .95047, r = (e * .2126 + n * .7152 + o * .0722) / 1, l = (e * .0193 + n * .1192 + o * .9505) / 1.08883, a = a > .008856 ? Math.pow(a, 1 / 3) : 7.787 * a + 16 / 116, r = r > .008856 ? Math.pow(r, 1 / 3) : 7.787 * r + 16 / 116, l = l > .008856 ? Math.pow(l, 1 / 3) : 7.787 * l + 16 / 116, {
+    n, r, l;
+  return e = e > .04045 ? Math.pow((e + .055) / 1.055, 2.4) : e / 12.92, a = a > .04045 ? Math.pow((a + .055) / 1.055, 2.4) : a / 12.92, o = o > .04045 ? Math.pow((o + .055) / 1.055, 2.4) : o / 12.92, n = (e * .4124 + a * .3576 + o * .1805) / .95047, r = (e * .2126 + a * .7152 + o * .0722) / 1, l = (e * .0193 + a * .1192 + o * .9505) / 1.08883, n = n > .008856 ? Math.pow(n, 1 / 3) : 7.787 * n + 16 / 116, r = r > .008856 ? Math.pow(r, 1 / 3) : 7.787 * r + 16 / 116, l = l > .008856 ? Math.pow(l, 1 / 3) : 7.787 * l + 16 / 116, {
     l: 116 * r - 16,
-    a: 500 * (a - r),
+    a: 500 * (n - r),
     b: 200 * (r - l)
   }
 }
 
 function M(t, e) {
-  var n = t.l - e.l,
+  var a = t.l - e.l,
     o = t.a - e.a,
-    a = t.b - e.b,
+    n = t.b - e.b,
     r = Math.sqrt(t.a * t.a + t.b * t.b),
     l = Math.sqrt(e.a * e.a + e.b * e.b),
     s = r - l,
-    c = o * o + a * a - s * s;
+    c = o * o + n * n - s * s;
   c = c < 0 ? 0 : Math.sqrt(c);
   var m = 1 + .045 * r,
     v = 1 + .015 * r,
-    g = n / 1,
-    b = s / m,
-    f = c / v,
-    d = g * g + b * b + f * f;
-  return d < 0 ? 0 : Math.sqrt(d)
+    f = a / 1,
+    g = s / m,
+    d = c / v,
+    b = f * f + g * g + d * d;
+  return b < 0 ? 0 : Math.sqrt(b)
 }
 
 function x(t, e) {
-  const n = (t.r + e.r) / 2,
+  const a = (t.r + e.r) / 2,
     o = t.r - e.r,
-    a = t.g - e.g,
+    n = t.g - e.g,
     r = t.b - e.b,
-    l = 2 + n / 256,
-    s = 2 + (255 - n) / 256;
-  return l * o * o + 4 * a * a + s * r * r
+    l = 2 + a / 256,
+    s = 2 + (255 - a) / 256;
+  return l * o * o + 4 * n * n + s * r * r
 }
 export {
   D as a, R as b, C as c, A as g, k as h, T as r
