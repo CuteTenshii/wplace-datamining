@@ -1,7 +1,7 @@
 import {
-  g as ce
-} from "./CHxYu7UU.js";
-import "./CAirFcp8.js";
+  g as pe
+} from "./cZ5Ywt-D.js";
+import "./Bk8zK65h.js";
 import {
   o as U,
   b as l,
@@ -23,59 +23,59 @@ import {
   i as q,
   u as we,
   aR as Le
-} from "./BW4WXvX9.js";
+} from "./CHoDuZDi.js";
 import {
   b as R,
   d as mt,
-  s as pe,
+  s as ce,
   r as De,
   g as Te,
   a as et,
   f as bt
-} from "./Dx8K2xEf.js";
+} from "./B8NlhSoZ.js";
 import {
   r as N,
   p as tt
-} from "./YRRwmdc-.js";
+} from "./BsooVcXt.js";
 import {
   o as gt
-} from "./Bi19FPUN.js";
+} from "./BMjEqvKe.js";
 import {
   s as x
-} from "./D-KZl3-a.js";
+} from "./DsfQQ8pE.js";
 import {
   i as M
-} from "./C6ZS2tVt.js";
+} from "./CfVnil9P.js";
 import {
   b as ht
-} from "./D8CGuJsi.js";
+} from "./ChpmLcm0.js";
 import {
   g as Fe
-} from "./D54axrKk.js";
+} from "./BY0QGUVJ.js";
 import {
   g as xt,
   P as Xe
-} from "./Cf8WeqlJ.js";
+} from "./BYupXjqA.js";
 import {
   u as le,
   t as de,
   b as Ge,
   a as yt
-} from "./CmQ5WwDX.js";
+} from "./DFWqMOBz.js";
 import {
   r as Oe
-} from "./CzD8DA0J.js";
+} from "./CNFEGbOp.js";
 import {
   c as wt
-} from "./CSExGZaY.js";
+} from "./jcqhECGu.js";
 import {
   a as kt
-} from "./DRarqRVM.js";
+} from "./BVKXh6oN.js";
 (function() {
   try {
     var s = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     s.SENTRY_RELEASE = {
-      id: "ada152f6c93ea91d04a55442a56d263a5f091eaf"
+      id: "55c2e0b318410e9d206d43885c4f592c4c06606c"
     }
   } catch {}
 })();
@@ -99,7 +99,7 @@ const Ct = () => "Add profile picture",
   Bt = () => "Додати зображення профілю",
   St = () => "Thêm ảnh đại diện",
   vo = (s = {}, o = {}) => {
-    const e = o.locale ?? ce();
+    const e = o.locale ?? pe();
     return e === "en" ? Ct() : e === "pt" ? zt() : e === "ch" ? qt() : e === "de" ? It() : e === "es" ? Pt() : e === "fr" ? Lt() : e === "it" ? Dt() : e === "jp" ? Tt() : e === "pl" ? Mt() : e === "ru" ? jt() : e === "uk" ? Bt() : St()
   },
   Et = () => "Eraser",
@@ -115,7 +115,7 @@ const Ct = () => "Add profile picture",
   Kt = () => "Гумка",
   Nt = () => "Cục tẩy",
   mo = (s = {}, o = {}) => {
-    const e = o.locale ?? ce();
+    const e = o.locale ?? pe();
     return e === "en" ? Et() : e === "pt" ? Ht() : e === "ch" ? Rt() : e === "de" ? Ut() : e === "es" ? Zt() : e === "fr" ? At() : e === "it" ? Ft() : e === "jp" ? Xt() : e === "pl" ? Gt() : e === "ru" ? Ot() : e === "uk" ? Kt() : Nt()
   },
   Qt = () => "Refund Policy",
@@ -131,15 +131,15 @@ const Ct = () => "Add profile picture",
   nr = () => "Політика повернення коштів",
   sr = () => "Chính sách hoàn tiền",
   Ke = (s = {}, o = {}) => {
-    const e = o.locale ?? ce();
+    const e = o.locale ?? pe();
     return e === "en" ? Qt() : e === "pt" ? Vt() : e === "ch" ? Yt() : e === "de" ? Wt() : e === "es" ? Jt() : e === "fr" ? $t() : e === "it" ? er() : e === "jp" ? tr() : e === "pl" ? rr() : e === "ru" ? or() : e === "uk" ? nr() : sr()
   },
   ar = () => "For refund requests and processing details, please see our",
   ir = () => "Para pedidos de reembolso, consulte nossa",
   lr = () => "有关退款请求和处理详情，请参阅我们的",
   dr = () => "Für Rückerstattungen und Details siehe unsere",
-  pr = () => "Para solicitudes de reembolso y más detalles, consulta nuestra",
-  cr = () => "Pour les demandes de remboursement et les détails de traitement, consultez notre",
+  cr = () => "Para solicitudes de reembolso y más detalles, consulta nuestra",
+  pr = () => "Pour les demandes de remboursement et les détails de traitement, consultez notre",
   ur = () => "Per richieste di rimborso, consulta la nostra",
   fr = () => "返金の申請方法と詳細については、こちらをご覧ください:",
   _r = () => "Aby uzyskać informacje o zwrotach, zobacz naszą",
@@ -147,8 +147,8 @@ const Ct = () => "Add profile picture",
   mr = () => "Для запитів на повернення та деталей обробки дивіться нашу",
   br = () => "Để yêu cầu hoàn tiền và chi tiết xử lý, hãy xem",
   Ne = (s = {}, o = {}) => {
-    const e = o.locale ?? ce();
-    return e === "en" ? ar() : e === "pt" ? ir() : e === "ch" ? lr() : e === "de" ? dr() : e === "es" ? pr() : e === "fr" ? cr() : e === "it" ? ur() : e === "jp" ? fr() : e === "pl" ? _r() : e === "ru" ? vr() : e === "uk" ? mr() : br()
+    const e = o.locale ?? pe();
+    return e === "en" ? ar() : e === "pt" ? ir() : e === "ch" ? lr() : e === "de" ? dr() : e === "es" ? cr() : e === "fr" ? pr() : e === "it" ? ur() : e === "jp" ? fr() : e === "pl" ? _r() : e === "ru" ? vr() : e === "uk" ? mr() : br()
   },
   gr = () => "You gain 1 droplet per pixel painted and 500 droplets per level",
   hr = () => "Você ganha 1 droplet por pixel pintado e 500 droplets por level",
@@ -163,7 +163,7 @@ const Ct = () => "Add profile picture",
   Pr = () => "Ви отримуєте 1 дроплет за кожен намальований піксель і 500 дроплетів за рівень",
   Lr = () => "Bạn nhận 1 droplet cho mỗi pixel tô và 500 droplets mỗi cấp độ",
   Qe = (s = {}, o = {}) => {
-    const e = o.locale ?? ce();
+    const e = o.locale ?? pe();
     return e === "en" ? gr() : e === "pt" ? hr() : e === "ch" ? xr() : e === "de" ? yr() : e === "es" ? wr() : e === "fr" ? kr() : e === "it" ? Cr() : e === "jp" ? zr() : e === "pl" ? qr() : e === "ru" ? Ir() : e === "uk" ? Pr() : Lr()
   };
 var Dr = U('<svg><path d="M440-320v-326L336-542l-56-58 200-200 200 200-56 58-104-104v326h-80ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
@@ -209,9 +209,9 @@ var Br = w('<span class="btn btn-xs btn-circle btn-primary ml-0.5 size-5"><!></s
 
 function Rr(s, o) {
   We(o, !0);
-  const e = p => {
-    var c = Sr(),
-      f = t(c);
+  const e = c => {
+    var p = Sr(),
+      f = t(p);
     Me(f, {
       class: "text-primary size-4.5"
     });
@@ -231,27 +231,27 @@ function Rr(s, o) {
         n() && B(S)
       })
     }
-    r(c), y(B => x(j, `${B??""} `), [() => o.value.toLocaleString("en-US")]), l(p, c)
+    r(p), y(B => x(j, `${B??""} `), [() => o.value.toLocaleString("en-US")]), l(c, p)
   };
   let n = tt(o, "button", 3, !0);
   var k = Je(),
     h = ke(k);
   {
-    var b = p => {
-        var c = Er();
-        c.__click = () => {
+    var b = c => {
+        var p = Er();
+        p.__click = () => {
           xt.dropletsDialogOpen = !0
         };
-        var f = t(c);
-        e(f), r(c), l(p, c)
+        var f = t(p);
+        e(f), r(p), l(c, p)
       },
-      d = p => {
-        var c = Hr(),
-          f = t(c);
-        e(f), r(c), l(p, c)
+      d = c => {
+        var p = Hr(),
+          f = t(p);
+        e(f), r(p), l(c, p)
       };
-    M(h, p => {
-      n() ? p(b) : p(d, !1)
+    M(h, c => {
+      n() ? c(b) : c(d, !1)
     })
   }
   l(s, k), $e()
@@ -314,9 +314,9 @@ function go(s, o) {
     });
   let b = ye(null),
     d = ye(void 0),
-    p = ye(!1);
-  var c = Qr(),
-    f = ke(c),
+    c = ye(!1);
+  var p = Qr(),
+    f = ke(p),
     g = t(f),
     j = a(t(g), 2);
   {
@@ -376,9 +376,9 @@ function go(s, o) {
             })
           }
           var Ze = a(Ue, 2),
-            pt = t(Ze);
+            ct = t(Ze);
           r(Ze), r(Pe);
-          var ct = a(Pe, 2);
+          var pt = a(Pe, 2);
           {
             var ut = z => {
                 var m = Fr(),
@@ -410,7 +410,7 @@ function go(s, o) {
                 Ve(_t, {
                   class: "size-5"
                 }), K(2), r(he), r(Ae), r(ge), r(m), y(ie => {
-                  et(m, 1, `dropdown mt-3 ${it()??""}`), x(ne, `R$${ie??""}`), pe(O, "action", `${Xe}/payment/create-checkout-session`), Te(L, Ee()), T.disabled = _(n), he.disabled = _(n)
+                  et(m, 1, `dropdown mt-3 ${it()??""}`), x(ne, `R$${ie??""}`), ce(O, "action", `${Xe}/payment/create-checkout-session`), Te(L, Ee()), T.disabled = _(n), he.disabled = _(n)
                 }, [() => (ze() * 4).toFixed(2).replace(".", ",")]), xe("submit", O, () => {
                   q(n, !0), setTimeout(() => q(n, !1), 3e3)
                 }), l(z, m)
@@ -435,17 +435,17 @@ function go(s, o) {
                   })
                 }
                 r(ne), r(m), y(() => {
-                  pe(m, "action", `${Xe}/payment/create-checkout-session`), Te(D, Ee()), ne.disabled = _(n)
+                  ce(m, "action", `${Xe}/payment/create-checkout-session`), Te(D, Ee()), ne.disabled = _(n)
                 }), xe("submit", m, () => {
                   q(n, !0), setTimeout(() => q(n, !1), 3e3)
                 }), l(z, m)
               };
-            M(ct, z => {
+            M(pt, z => {
               _(k) ? z(ut) : z(ft, !1)
             })
           }
           r(qe), y((z, m) => {
-            x(lt, `${z??""} `), x(pt, `+${m??""} bonus`)
+            x(lt, `${z??""} `), x(ct, `+${m??""} bonus`)
           }, [() => (re() + oe()).toLocaleString("en-US"), () => oe().toLocaleString("en-US")]), l(G, qe)
         };
         var H = t(Y),
@@ -508,7 +508,7 @@ function go(s, o) {
           te = a(X),
           be = t(te, !0);
         r(te), r(ee), r(Y), y((G, u, re, oe) => {
-          x(X, `${u??""} `), pe(te, "href", re), x(be, oe)
+          x(X, `${u??""} `), ce(te, "href", re), x(be, oe)
         }, [() => Qe(), () => Ne(), Oe, () => Ke()])
       }
       r(v), y((P, G, u, re) => x(V, P), [() => Qe(), () => Ne(), Oe, () => Ke()]), l(i, v)
@@ -566,7 +566,7 @@ function go(s, o) {
             return
           }
           try {
-            q(p, !0);
+            q(c, !0);
             const {
               paid: X
             } = await Ge.getPixStatus(_(d).pixId);
@@ -580,10 +580,10 @@ function go(s, o) {
           } catch (X) {
             console.error(X), de.error("Error ao atualizar o status do pix. Tente recarregar a página.")
           } finally {
-            q(p, !1)
+            q(c, !1)
           }
         }, r(J), y(I => {
-          x(ue, `R$${I??""}`), pe(_e, "src", _(d).qrCode), Te(H, _(d).pixCode), $.disabled = _(p)
+          x(ue, `R$${I??""}`), ce(_e, "src", _(d).qrCode), Te(H, _(d).pixCode), $.disabled = _(c)
         }, [() => (_(d).price / 100).toFixed(2).replace(".", ",")]), l(i, v)
       },
       st = i => {
@@ -600,7 +600,7 @@ function go(s, o) {
     setTimeout(() => {
       q(d, void 0)
     }, 300)
-  }), l(s, c), $e()
+  }), l(s, p), $e()
 }
 Ye(["click"]);
 var Vr = U('<svg><path d="M690-240h190v80H610l80-80Zm-500 80-85-85q-23-23-23.5-57t22.5-58l440-456q23-24 56.5-24t56.5 23l199 199q23 23 23 57t-23 57L520-160H190Z"></path></svg>'),
@@ -612,22 +612,22 @@ function ho(s, o) {
     k = ke(n);
   {
     var h = d => {
-        var p = Vr();
-        R(p, () => ({
+        var c = Vr();
+        R(c, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
           fill: "currentColor",
           ...e
-        })), l(d, p)
+        })), l(d, c)
       },
       b = d => {
-        var p = Yr();
-        R(p, () => ({
+        var c = Yr();
+        R(c, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
           fill: "currentColor",
           ...e
-        })), l(d, p)
+        })), l(d, c)
       };
     M(k, d => {
       o.filled ? d(h) : d(b, !1)
@@ -642,13 +642,13 @@ function xo([s, o], [e, n]) {
     h = Math.abs(e - s),
     b = Math.abs(n - o),
     d = s < e ? 1 : -1,
-    p = o < n ? 1 : -1;
-  let c = h - b,
+    c = o < n ? 1 : -1;
+  let p = h - b,
     f = s,
     g = o;
   for (; k.push([f, g]), !(f === e && g === n);) {
-    const j = 2 * c;
-    j > -b && (c -= b, f += d), j < h && (c += h, g += p)
+    const j = 2 * p;
+    j > -b && (p -= b, f += d), j < h && (p += h, g += c)
   }
   return k
 }
@@ -663,19 +663,19 @@ function yo(s, o) {
     b = t(h),
     d = t(b);
   {
-    var p = C => {
+    var c = C => {
         kt(C, {
           get userId() {
             return o.userId
           }
         })
       },
-      c = C => {
+      p = C => {
         var S = Wr();
-        y(() => pe(S, "src", o.pictureUrl)), l(C, S)
+        y(() => ce(S, "src", o.pictureUrl)), l(C, S)
       };
     M(d, C => {
-      o.pictureUrl ? C(c, !1) : C(p)
+      o.pictureUrl ? C(p, !1) : C(c)
     })
   }
   r(b), r(h);

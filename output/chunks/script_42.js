@@ -1,11 +1,11 @@
 import {
   g as r
-} from "./CHxYu7UU.js";
+} from "./cZ5Ywt-D.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "ada152f6c93ea91d04a55442a56d263a5f091eaf"
+      id: "55c2e0b318410e9d206d43885c4f592c4c06606c"
     }
   } catch {}
 })();
@@ -20,17 +20,17 @@ const u = () => "Timeout",
   o = () => "Suspender",
   i = () => "禁言",
   f = () => "Timeout",
-  d = () => "Suspender",
-  s = () => "Suspendre",
-  a = () => "Sospendi",
-  c = () => "タイムアウト",
-  l = () => "Zawieszenie",
-  p = () => "Тайм-аут",
+  s = () => "Suspender",
+  d = () => "Suspendre",
+  c = () => "Sospendi",
+  l = () => "タイムアウト",
+  p = () => "Zawieszenie",
+  a = () => "Тайм-аут",
   b = () => "Тайм-аут",
   m = () => "Tạm khóa",
   y = (t = {}, n = {}) => {
     const e = n.locale ?? r();
-    return e === "en" ? u() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? f() : e === "es" ? d() : e === "fr" ? s() : e === "it" ? a() : e === "jp" ? c() : e === "pl" ? l() : e === "ru" ? p() : e === "uk" ? b() : m()
+    return e === "en" ? u() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? f() : e === "es" ? s() : e === "fr" ? d() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? p() : e === "ru" ? a() : e === "uk" ? b() : m()
   };
 export {
   y as t
