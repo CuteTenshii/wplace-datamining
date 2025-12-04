@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./Bgt9i30j.js";
+} from "./uhNN53MD.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "51633bbb0f20b0f5578caf566ba6bc15f3497cdd"
+      id: "72535b980ce58632366910417763e3bb1f48d885"
     }
   } catch {}
 })();
