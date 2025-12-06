@@ -1,11 +1,11 @@
 import {
   g as r
-} from "./cZ5Ywt-D.js";
+} from "./2XTl0KMm.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "55c2e0b318410e9d206d43885c4f592c4c06606c"
+      id: "3e986a58fcb30a2298358520e06507a40603fbb7"
     }
   } catch {}
 })();
@@ -17,20 +17,20 @@ try {
   })()
 } catch {}
 const d = () => "Banned",
-  o = () => "Banido",
-  f = () => "已封禁",
-  u = () => "Gebannt",
-  a = () => "Baneado",
+  f = () => "Banido",
+  o = () => "已封禁",
+  a = () => "Gebannt",
+  u = () => "Baneado",
   i = () => "Banni",
   b = () => "Bannato",
-  c = () => "BAN済み",
-  s = () => "Zbanowany",
+  s = () => "BAN済み",
+  c = () => "Zbanowany",
   l = () => "Забанен",
   p = () => "Заблоковано",
   _ = () => "Đã bị cấm",
   g = (e = {}, t = {}) => {
     const n = t.locale ?? r();
-    return n === "en" ? d() : n === "pt" ? o() : n === "ch" ? f() : n === "de" ? u() : n === "es" ? a() : n === "fr" ? i() : n === "it" ? b() : n === "jp" ? c() : n === "pl" ? s() : n === "ru" ? l() : n === "uk" ? p() : _()
+    return n === "en" ? d() : n === "pt" ? f() : n === "ch" ? o() : n === "de" ? a() : n === "es" ? u() : n === "fr" ? i() : n === "it" ? b() : n === "jp" ? s() : n === "pl" ? c() : n === "ru" ? l() : n === "uk" ? p() : _()
   };
 export {
   g as b
