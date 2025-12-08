@@ -14,7 +14,7 @@ var f = (n, t, e) => (Pe(n, t, "read from private field"), e ? e.call(n) : t.get
   w = (n, t, e) => t.has(n) ? se("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(n) : t.set(n, e);
 import {
   g as _
-} from "./D4nF9vGJ.js";
+} from "./CHeeGe8w.js";
 import {
   e as E,
   g as oe,
@@ -22,20 +22,20 @@ import {
   i as v,
   x as ie,
   u as z
-} from "./BNGAEk_0.js";
+} from "./wA7ZkjY7.js";
 import {
   P as le,
   g as Ie
-} from "./DKCQxHmS.js";
+} from "./K1b6tteZ.js";
 import {
   s as Ne,
   c as ze
-} from "./CdYrGseA.js";
+} from "./BcbxdsfT.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "3a8d7c66397947b49ed2868fcbd9febd8dcf5eb4"
+      id: "d65f9ae170f28bf8512e5ff594eb3797e287c65b"
     }
   } catch {}
 })();
@@ -43,7 +43,7 @@ try {
   (function() {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       t = new n.Error().stack;
-    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "64df26a7-d409-4bdb-9575-7d3fcde54591", n._sentryDebugIdIdentifier = "sentry-dbid-64df26a7-d409-4bdb-9575-7d3fcde54591")
+    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "f7213e62-1ffa-43ae-8dd3-30fa24e6a01b", n._sentryDebugIdIdentifier = "sentry-dbid-f7213e62-1ffa-43ae-8dd3-30fa24e6a01b")
   })()
 } catch {}
 
@@ -2581,6 +2581,16 @@ class Qd {
   }
   async getUserInfoFull(t) {
     const e = await this.request(`/staff/dashboard/users/info?id=${encodeURIComponent(t)}`, {
+      method: "GET",
+      credentials: "include"
+    });
+    if (e.status !== 404) {
+      if (e.status !== 200) throw new d(o(), e.status);
+      return e.json()
+    }
+  }
+  async getUserInfoByEmail(t) {
+    const e = await this.request(`/staff/dashboard/users/info-by-email?email=${encodeURIComponent(t)}`, {
       method: "GET",
       credentials: "include"
     });

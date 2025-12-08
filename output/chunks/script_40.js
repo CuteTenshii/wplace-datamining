@@ -1,11 +1,11 @@
 import {
   g as r
-} from "./D4nF9vGJ.js";
+} from "./CHeeGe8w.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "3a8d7c66397947b49ed2868fcbd9febd8dcf5eb4"
+      id: "d65f9ae170f28bf8512e5ff594eb3797e287c65b"
     }
   } catch {}
 })();
@@ -16,13 +16,13 @@ try {
     t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "4e41f913-b9c0-4fd2-8f25-86202f1bb7c6", e._sentryDebugIdIdentifier = "sentry-dbid-4e41f913-b9c0-4fd2-8f25-86202f1bb7c6")
   })()
 } catch {}
-const d = () => "Banned",
-  f = () => "Banido",
+const f = () => "Banned",
+  d = () => "Banido",
   o = () => "已封禁",
   u = () => "Gebannt",
   a = () => "Baneado",
-  b = () => "Banni",
-  i = () => "Bannato",
+  i = () => "Banni",
+  b = () => "Bannato",
   s = () => "BAN済み",
   c = () => "Zbanowany",
   l = () => "Забанен",
@@ -30,7 +30,7 @@ const d = () => "Banned",
   _ = () => "Đã bị cấm",
   g = (e = {}, t = {}) => {
     const n = t.locale ?? r();
-    return n === "en" ? d() : n === "pt" ? f() : n === "ch" ? o() : n === "de" ? u() : n === "es" ? a() : n === "fr" ? b() : n === "it" ? i() : n === "jp" ? s() : n === "pl" ? c() : n === "ru" ? l() : n === "uk" ? p() : _()
+    return n === "en" ? f() : n === "pt" ? d() : n === "ch" ? o() : n === "de" ? u() : n === "es" ? a() : n === "fr" ? i() : n === "it" ? b() : n === "jp" ? s() : n === "pl" ? c() : n === "ru" ? l() : n === "uk" ? p() : _()
   };
 export {
   g as b

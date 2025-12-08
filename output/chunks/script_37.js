@@ -1,22 +1,22 @@
 import {
   g as i
-} from "./D4nF9vGJ.js";
-import "./Bl4yT6VV.js";
+} from "./CHeeGe8w.js";
+import "./B6RC-CnX.js";
 import {
   o as s,
   b as o
-} from "./BNGAEk_0.js";
+} from "./wA7ZkjY7.js";
 import {
-  b as c
-} from "./CW8MUBIu.js";
+  b as p
+} from "./Drb-AHdW.js";
 import {
-  r as p
-} from "./BJ2sBARx.js";
+  r as c
+} from "./Cg-iF6tr.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "3a8d7c66397947b49ed2868fcbd9febd8dcf5eb4"
+      id: "d65f9ae170f28bf8512e5ff594eb3797e287c65b"
     }
   } catch {}
 })();
@@ -29,8 +29,8 @@ try {
 } catch {}
 const u = () => "Description",
   d = () => "Descrição",
-  l = () => "描述",
-  f = () => "Beschreibung",
+  f = () => "描述",
+  l = () => "Beschreibung",
   a = () => "Descripción",
   _ = () => "Description",
   b = () => "Descrizione",
@@ -41,7 +41,7 @@ const u = () => "Description",
   h = () => "Mô tả",
   z = (t = {}, n = {}) => {
     const e = n.locale ?? i();
-    return e === "en" ? u() : e === "pt" ? d() : e === "ch" ? l() : e === "de" ? f() : e === "es" ? a() : e === "fr" ? _() : e === "it" ? b() : e === "jp" ? x() : e === "pl" ? g() : e === "ru" ? y() : e === "uk" ? w() : h()
+    return e === "en" ? u() : e === "pt" ? d() : e === "ch" ? f() : e === "de" ? l() : e === "es" ? a() : e === "fr" ? _() : e === "it" ? b() : e === "jp" ? x() : e === "pl" ? g() : e === "ru" ? y() : e === "uk" ? w() : h()
   },
   m = () => "Pixels painted",
   v = () => "Pixels pintados",
@@ -62,9 +62,9 @@ const u = () => "Description",
 var B = s('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
 
 function C(t, n) {
-  let e = p(n, ["$$slots", "$$events", "$$legacy"]);
+  let e = c(n, ["$$slots", "$$events", "$$legacy"]);
   var r = B();
-  c(r, () => ({
+  p(r, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",

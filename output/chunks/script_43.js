@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./D4nF9vGJ.js";
+} from "./CHeeGe8w.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "3a8d7c66397947b49ed2868fcbd9febd8dcf5eb4"
+      id: "d65f9ae170f28bf8512e5ff594eb3797e287c65b"
     }
   } catch {}
 })();
@@ -22,15 +22,15 @@ const s = () => "Users banned successfully",
   i = () => "Benutzer erfolgreich gebannt",
   c = () => "Usuarios baneados correctamente",
   d = () => "Utilisateurs bannis avec succès",
-  a = () => "Utenti bannati con successo",
-  f = () => "ユーザーをBANしました。",
+  f = () => "Utenti bannati con successo",
+  a = () => "ユーザーをBANしました。",
   _ = () => "Użytkownicy zostali pomyślnie zbanowani",
   l = () => "Пользователи успешно забанены",
   b = () => "Користувачів успішно заблоковано",
   p = () => "Đã cấm người dùng thành công",
   D = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? d() : e === "it" ? a() : e === "jp" ? f() : e === "pl" ? _() : e === "ru" ? l() : e === "uk" ? b() : p()
+    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? d() : e === "it" ? f() : e === "jp" ? a() : e === "pl" ? _() : e === "ru" ? l() : e === "uk" ? b() : p()
   },
   m = () => "Users timeouted successfully",
   g = () => "Usuários suspensos com sucesso",
