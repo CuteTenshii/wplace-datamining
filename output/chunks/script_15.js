@@ -14,7 +14,7 @@ var f = (n, t, e) => (Pe(n, t, "read from private field"), e ? e.call(n) : t.get
   w = (n, t, e) => t.has(n) ? se("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(n) : t.set(n, e);
 import {
   g as _
-} from "./BMZgV-pO.js";
+} from "./BsHwvxn8.js";
 import {
   e as E,
   g as oe,
@@ -22,20 +22,20 @@ import {
   i as v,
   x as ie,
   u as z
-} from "./BXFuHbHZ.js";
+} from "./BnnwGbo9.js";
 import {
   P as le,
   g as Ie
-} from "./CS5OR2e8.js";
+} from "./Dutiof8Y.js";
 import {
   s as Ne,
   c as ze
-} from "./BL8NY0M9.js";
+} from "./DQDZ4DxX.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "38bb15d6890b2160becfb07b4396631f8d785598"
+      id: "e76e01713b9f24724b47470026b2b700ac9e05af"
     }
   } catch {}
 })();
@@ -43,7 +43,7 @@ try {
   (function() {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       t = new n.Error().stack;
-    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "a0510cf1-fb2d-4d3f-90dd-269ee7a8f384", n._sentryDebugIdIdentifier = "sentry-dbid-a0510cf1-fb2d-4d3f-90dd-269ee7a8f384")
+    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "64df26a7-d409-4bdb-9575-7d3fcde54591", n._sentryDebugIdIdentifier = "sentry-dbid-64df26a7-d409-4bdb-9575-7d3fcde54591")
   })()
 } catch {}
 
@@ -862,7 +862,7 @@ const Le = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
     const e = t.locale ?? _();
     return e === "en" ? Yu() : e === "pt" ? Zu() : e === "ch" ? Xu() : e === "de" ? Qu() : e === "es" ? ec() : e === "fr" ? tc() : e === "it" ? nc() : e === "jp" ? rc() : e === "pl" ? ac() : e === "ru" ? sc() : e === "uk" ? oc() : ic()
   },
-  uc = () => "You do not have enough droplets to buy this item.",
+  uc = () => "You do not have enough Gouttelettes to buy this item.",
   cc = () => "Você não tem gotas suficientes para comprar este item.",
   dc = () => "你的水滴不足，无法购买此物品。",
   lc = () => "Du hast nicht genug Droplets, um dieses Item zu kaufen.",

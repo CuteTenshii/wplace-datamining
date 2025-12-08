@@ -1,10 +1,10 @@
 import {
   g as _
-} from "./BMZgV-pO.js";
-import "./DA-G3wnD.js";
+} from "./BsHwvxn8.js";
+import "./DY7xnStP.js";
 import {
   o as nr
-} from "./DC6vz62W.js";
+} from "./B1AZJvFo.js";
 import {
   o as Ue,
   b as m,
@@ -26,16 +26,16 @@ import {
   aR as ve,
   h as re,
   a as te
-} from "./BXFuHbHZ.js";
+} from "./BnnwGbo9.js";
 import {
   s as b
-} from "./BLT8Ijbx.js";
+} from "./CHaT1zrU.js";
 import {
   i as S
-} from "./DN8uVqgr.js";
+} from "./BkhpDRks.js";
 import {
   e as Se
-} from "./Bn4BYoDf.js";
+} from "./BB-v54M_.js";
 import {
   b as Ze,
   d as ar,
@@ -43,23 +43,23 @@ import {
   s as W,
   g as cr,
   a as ne
-} from "./XpddNcxm.js";
+} from "./2z4inOa3.js";
 import {
   t as lr
-} from "./NO3t-3He.js";
+} from "./BiUhNzGy.js";
 import {
   c as _r
-} from "./Bq2X7jvF.js";
+} from "./DTf9GJW2.js";
 import {
   b as pr
-} from "./C5POA94F.js";
+} from "./DOn3DNKP.js";
 import {
   r as Ce,
   p as dr
-} from "./DERnt8AX.js";
+} from "./MQjh4H31.js";
 import {
   P as fr
-} from "./CS5OR2e8.js";
+} from "./Dutiof8Y.js";
 import {
   i as mr,
   h as vr,
@@ -69,48 +69,48 @@ import {
   t as T,
   p as yr,
   b as ge
-} from "./DYPOMPjY.js";
+} from "./DOSnmeqm.js";
 import {
   o as kr,
   L as xr,
   s as wr,
   g as zr
-} from "./BFodZme9.js";
+} from "./18S_3gTv.js";
 import {
   P as Re
-} from "./MoKYHUWs.js";
+} from "./DbCMAySt.js";
 import {
   G as Ie,
   T as Be
-} from "./K9GG75kn.js";
+} from "./DpGZ8_KB.js";
 import {
   b as Ne
-} from "./7hQ9VfNC.js";
+} from "./BazR7k_b.js";
 import {
   c as jr
-} from "./CJi2UJ3O.js";
+} from "./_KcqMkJO.js";
 import {
   a as Sr
-} from "./BTYqr7MJ.js";
+} from "./C49eVGwr.js";
 import {
   t as Te
-} from "./D0SSBWDM.js";
+} from "./BVJKRz2s.js";
 import {
   u as Dr,
   a as Rr
-} from "./DvRIt6UI.js";
+} from "./Bgsdbo7t.js";
 import {
   g as se,
   a as Ae
-} from "./DJnKihYv.js";
+} from "./D9eU8q7o.js";
 import {
   f as Ir
-} from "./BXrUMpWz.js";
+} from "./B3itTX18.js";
 (function() {
   try {
     var o = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     o.SENTRY_RELEASE = {
-      id: "38bb15d6890b2160becfb07b4396631f8d785598"
+      id: "e76e01713b9f24724b47470026b2b700ac9e05af"
     }
   } catch {}
 })();
@@ -118,7 +118,7 @@ try {
   (function() {
     var o = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       r = new o.Error().stack;
-    r && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[r] = "60e05eaf-9885-4e70-a179-d5bc2ccc1d05", o._sentryDebugIdIdentifier = "sentry-dbid-60e05eaf-9885-4e70-a179-d5bc2ccc1d05")
+    r && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[r] = "d97ed9ff-f4ff-4456-8574-4365a11f1e53", o._sentryDebugIdIdentifier = "sentry-dbid-d97ed9ff-f4ff-4456-8574-4365a11f1e53")
   })()
 } catch {}
 const Br = () => "Alliance",
@@ -258,7 +258,7 @@ const Br = () => "Alliance",
   Rn = () => "Rovinare il disegno degli altri senza motivo",
   In = () => "理由もなく他人の作品を荒らした。",
   Bn = () => "Niszczenie cudzych prac bez powodu",
-  Nn = () => "Преднамеренно портил чужие рисунки без причины",
+  Nn = () => "Преднамеренная порча чужих рисунков без причины",
   Tn = () => "Псування чужих робіт без причини",
   An = () => "Phá hỏng tranh của người khác mà không có lý do",
   Ln = (o = {}, r = {}) => {
