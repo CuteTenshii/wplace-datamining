@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./2XTl0KMm.js";
+} from "./BMZgV-pO.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "3e986a58fcb30a2298358520e06507a40603fbb7"
+      id: "38bb15d6890b2160becfb07b4396631f8d785598"
     }
   } catch {}
 })();
@@ -17,8 +17,8 @@ try {
   })()
 } catch {}
 const d = () => "Leaderboard",
-  a = () => "Ranking",
-  o = () => "排行榜",
+  o = () => "Ranking",
+  a = () => "排行榜",
   f = () => "Bestenliste",
   i = () => "Clasificación",
   l = () => "Classement",
@@ -30,7 +30,7 @@ const d = () => "Leaderboard",
   p = () => "Bảng xếp hạng",
   y = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? d() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? f() : e === "es" ? i() : e === "fr" ? l() : e === "it" ? s() : e === "jp" ? u() : e === "pl" ? b() : e === "ru" ? c() : e === "uk" ? g() : p()
+    return e === "en" ? d() : e === "pt" ? o() : e === "ch" ? a() : e === "de" ? f() : e === "es" ? i() : e === "fr" ? l() : e === "it" ? s() : e === "jp" ? u() : e === "pl" ? b() : e === "ru" ? c() : e === "uk" ? g() : p()
   };
 export {
   y as l

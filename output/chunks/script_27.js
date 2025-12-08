@@ -5,15 +5,15 @@ import {
   x as y,
   L as _,
   M as d,
-  j as u,
+  j as c,
   H as h,
   N as w
-} from "./BJ2w7gDG.js";
+} from "./BXFuHbHZ.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "3e986a58fcb30a2298358520e06507a40603fbb7"
+      id: "38bb15d6890b2160becfb07b4396631f8d785598"
     }
   } catch {}
 })();
@@ -33,29 +33,29 @@ function I(e = !1) {
   if (e) {
     let s = 0,
       f = {};
-    const b = w(() => {
+    const u = w(() => {
       let r = !1;
       const i = n.s;
       for (const o in i) i[o] !== f[o] && (f[o] = i[o], r = !0);
       return r && s++, s
     });
-    a = () => u(b)
+    a = () => c(u)
   }
   t.b.length && g(() => {
-    c(n, a), d(t.b)
+    b(n, a), d(t.b)
   }), l(() => {
     const s = y(() => t.m.map(_));
     return () => {
       for (const f of s) typeof f == "function" && f()
     }
   }), t.a.length && l(() => {
-    c(n, a), d(t.a)
+    b(n, a), d(t.a)
   })
 }
 
-function c(e, n) {
+function b(e, n) {
   if (e.l.s)
-    for (const t of e.l.s) u(t);
+    for (const t of e.l.s) c(t);
   n()
 }
 export {

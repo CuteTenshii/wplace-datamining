@@ -1,44 +1,44 @@
-import "./ITlDn3u3.js";
-import "./Cx-czHTL.js";
+import "./DA-G3wnD.js";
+import "./Bsr-Hy3i.js";
 import {
   p as T,
-  f as c,
+  f as m,
   d as l,
   r as f,
   t as p,
-  b as m,
+  b,
   c as I,
   s as g,
   x as _,
   H as r
-} from "./BJ2w7gDG.js";
+} from "./BXFuHbHZ.js";
 import {
   s as u
-} from "./BXzxOg8s.js";
+} from "./BLT8Ijbx.js";
 import {
   i as D
-} from "./Bo_xQEI6.js";
+} from "./DN8uVqgr.js";
 import {
   a as k
-} from "./BEX6hheo.js";
+} from "./XpddNcxm.js";
 import {
   i as A
-} from "./D0zn7qac.js";
+} from "./BfCSyPVW.js";
 import {
   p as v
-} from "./Ditx7OVn.js";
+} from "./DERnt8AX.js";
 import {
   R as y,
   a as w
-} from "./D1vK7itL.js";
+} from "./D57e1ymB.js";
 import {
   L as h
-} from "./CzbK6Kfw.js";
+} from "./CxrGA-uK.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "3e986a58fcb30a2298358520e06507a40603fbb7"
+      id: "38bb15d6890b2160becfb07b4396631f8d785598"
     }
   } catch {}
 })();
@@ -49,9 +49,9 @@ try {
     t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "796ec903-36dc-4704-abaf-eda3ca576017", e._sentryDebugIdIdentifier = "sentry-dbid-796ec903-36dc-4704-abaf-eda3ca576017")
   })()
 } catch {}
-var N = c('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
-  O = c('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
-  S = c("<span><!></span>");
+var N = m('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
+  O = m('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
+  S = m("<span><!></span>");
 
 function G(e, t) {
   T(t, !1);
@@ -59,7 +59,7 @@ function G(e, t) {
     x = v(t, "big", 8, !1);
   A();
   var n = S();
-  let b;
+  let c;
   var E = l(n);
   {
     var R = s => {
@@ -69,7 +69,7 @@ function G(e, t) {
           size: "none"
         });
         var d = g(i, 1, !0);
-        f(o), p(() => u(d, (r(y), r(a()), _(() => y[a()])))), m(s, o)
+        f(o), p(() => u(d, (r(y), r(a()), _(() => y[a()])))), b(s, o)
       },
       L = s => {
         var o = O(),
@@ -78,17 +78,17 @@ function G(e, t) {
           size: "small"
         });
         var d = g(i, 1, !0);
-        f(o), p(() => u(d, (r(w), r(a()), _(() => w[a()])))), m(s, o)
+        f(o), p(() => u(d, (r(w), r(a()), _(() => w[a()])))), b(s, o)
       };
     D(E, s => {
       x() ? s(R) : s(L, !1)
     })
   }
-  f(n), p(() => b = k(n, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center whitespace-nowrap pt-0.5 font-semibold leading-none shadow", null, b, {
+  f(n), p(() => c = k(n, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center whitespace-nowrap pt-0.5 font-semibold leading-none shadow", null, c, {
     "badge-info": a() === "admin",
     "badge-secondary": a() === "moderator" || a() == "global_moderator",
     "badge-warning": a() === "community_leader"
-  })), m(e, n), I()
+  })), b(e, n), I()
 }
 export {
   G as R
