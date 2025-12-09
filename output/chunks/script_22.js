@@ -1,20 +1,20 @@
 import {
-  P as y,
-  m as u,
-  aq as b,
+  P as r,
+  m as y,
+  aq as u,
   k as n,
   T as g,
-  _ as p,
-  ag as a,
-  Y as s,
-  R as f,
-  Z as _
-} from "./wic4j6Xz.js";
+  _ as c,
+  ag as l,
+  Y as f,
+  R as s,
+  Z as p
+} from "./8QS50H2t.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "4732328793523ae4665fa1786d8c6f0e6111919b"
+      id: "e56bf90e2bb69bf6dd1cbc6ce0cb1afca52af8e3"
     }
   } catch {}
 })();
@@ -26,26 +26,26 @@ try {
   })()
 } catch {}
 
-function c(e, t) {
+function w(e, t) {
   let i = null,
     o = n;
-  var l;
+  var a;
   if (n) {
-    i = _;
-    for (var d = g(document.head); d !== null && (d.nodeType !== p || d.data !== e);) d = a(d);
-    if (d === null) s(!1);
+    i = p;
+    for (var d = g(document.head); d !== null && (d.nodeType !== c || d.data !== e);) d = l(d);
+    if (d === null) f(!1);
     else {
-      var r = a(d);
-      d.remove(), f(r)
+      var b = l(d);
+      d.remove(), s(b)
     }
   }
-  n || (l = document.head.appendChild(y()));
+  n || (a = document.head.appendChild(r()));
   try {
-    u(() => t(l), b)
+    y(() => t(a), u)
   } finally {
-    o && (s(!0), f(i))
+    o && (f(!0), s(i))
   }
 }
 export {
-  c as h
+  w as h
 };
