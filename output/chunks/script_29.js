@@ -1,7 +1,7 @@
 import {
   g as pe
-} from "./CHeeGe8w.js";
-import "./B6RC-CnX.js";
+} from "./IUeg5Z1n.js";
+import "./BtgrdE-9.js";
 import {
   o as U,
   b as l,
@@ -18,12 +18,12 @@ import {
   t as y,
   as as xe,
   K as vt,
-  j as _,
+  j as f,
   e as ye,
   i as q,
   u as we,
   aR as Le
-} from "./wA7ZkjY7.js";
+} from "./wic4j6Xz.js";
 import {
   b as R,
   d as mt,
@@ -32,50 +32,50 @@ import {
   g as Te,
   a as et,
   f as bt
-} from "./Drb-AHdW.js";
+} from "./pj7r7t38.js";
 import {
   r as N,
   p as tt
-} from "./Cg-iF6tr.js";
+} from "./CkKgyB2C.js";
 import {
   o as gt
-} from "./DwTcQcu_.js";
+} from "./BM9J77aR.js";
 import {
   s as x
-} from "./CG3cG_D1.js";
+} from "./C3EYBr8x.js";
 import {
   i as M
-} from "./Cw6CuVcr.js";
+} from "./CblOqFTx.js";
 import {
   b as ht
-} from "./DPy_sRdI.js";
+} from "./D2_md6N4.js";
 import {
   g as Fe
-} from "./Bwg47EWp.js";
+} from "./CZM4jyak.js";
 import {
   g as xt,
   P as Ge
-} from "./K1b6tteZ.js";
+} from "./LrHXjDpi.js";
 import {
   u as le,
   t as de,
   b as Xe,
   a as yt
-} from "./DKg2XWRD.js";
+} from "./YqJmuHGo.js";
 import {
   r as Oe
-} from "./HKW0nfmX.js";
+} from "./Cb7fVoDh.js";
 import {
   c as wt
-} from "./DdetgCsL.js";
+} from "./BGmzBmbK.js";
 import {
   a as kt
-} from "./CjW0K1nU.js";
+} from "./BPrSlkYW.js";
 (function() {
   try {
     var s = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     s.SENTRY_RELEASE = {
-      id: "d65f9ae170f28bf8512e5ff594eb3797e287c65b"
+      id: "4732328793523ae4665fa1786d8c6f0e6111919b"
     }
   } catch {}
 })();
@@ -141,14 +141,14 @@ const Ct = () => "Add profile picture",
   cr = () => "Para solicitudes de reembolso y más detalles, consulta nuestra",
   pr = () => "Pour les demandes de remboursement et les détails de traitement, consultez notre",
   ur = () => "Per richieste di rimborso, consulta la nostra",
-  fr = () => "返金の申請方法と詳細については、こちらをご覧ください:",
-  _r = () => "Aby uzyskać informacje o zwrotach, zobacz naszą",
+  _r = () => "返金の申請方法と詳細については、こちらをご覧ください:",
+  fr = () => "Aby uzyskać informacje o zwrotach, zobacz naszą",
   vr = () => "Для запросов на возврат средств и деталей обработки см. нашу",
   mr = () => "Для запитів на повернення та деталей обробки дивіться нашу",
   br = () => "Để yêu cầu hoàn tiền và chi tiết xử lý, hãy xem",
   Ne = (s = {}, o = {}) => {
     const e = o.locale ?? pe();
-    return e === "en" ? ar() : e === "pt" ? ir() : e === "ch" ? lr() : e === "de" ? dr() : e === "es" ? cr() : e === "fr" ? pr() : e === "it" ? ur() : e === "jp" ? fr() : e === "pl" ? _r() : e === "ru" ? vr() : e === "uk" ? mr() : br()
+    return e === "en" ? ar() : e === "pt" ? ir() : e === "ch" ? lr() : e === "de" ? dr() : e === "es" ? cr() : e === "fr" ? pr() : e === "it" ? ur() : e === "jp" ? _r() : e === "pl" ? fr() : e === "ru" ? vr() : e === "uk" ? mr() : br()
   },
   gr = () => "You gain 1 droplet per pixel painted and 500 Gouttelettes per niveau",
   hr = () => "Você ganha 1 droplet por pixel pintado e 500 droplets por level",
@@ -211,11 +211,11 @@ function Rr(s, o) {
   We(o, !0);
   const e = c => {
     var p = Sr(),
-      f = t(p);
-    Me(f, {
+      _ = t(p);
+    Me(_, {
       class: "text-primary size-4.5"
     });
-    var g = a(f, 2),
+    var g = a(_, 2),
       j = t(g);
     K(), r(g);
     var C = a(g, 2);
@@ -242,13 +242,13 @@ function Rr(s, o) {
         p.__click = () => {
           xt.dropletsDialogOpen = !0
         };
-        var f = t(p);
-        e(f), r(p), l(c, p)
+        var _ = t(p);
+        e(_), r(p), l(c, p)
       },
       d = c => {
         var p = Hr(),
-          f = t(p);
-        e(f), r(p), l(c, p)
+          _ = t(p);
+        e(_), r(p), l(c, p)
       };
     M(h, c => {
       n() ? c(b) : c(d, !1)
@@ -316,8 +316,8 @@ function go(s, o) {
     d = ye(void 0),
     c = ye(!1);
   var p = Qr(),
-    f = ke(p),
-    g = t(f),
+    _ = ke(p),
+    g = t(_),
     j = a(t(g), 2);
   {
     var C = i => {
@@ -329,23 +329,23 @@ function go(s, o) {
         class: "text-primary size-6"
       });
       var F = a(ue, 4),
-        fe = t(F);
+        _e = t(F);
       {
         let P = we(() => {
           var X;
           return ((X = le.data) == null ? void 0 : X.droplets) ?? 0
         });
-        Rr(fe, {
+        Rr(_e, {
           get value() {
-            return _(P)
+            return f(P)
           },
           button: !1
         })
       }
       r(F), r(A);
-      var _e = a(A, 2),
-        V = t(_e, !0);
-      r(_e), r(E);
+      var fe = a(A, 2),
+        V = t(fe, !0);
+      r(fe), r(E);
       var Y = a(E, 2);
       {
         const P = (X, u) => {
@@ -398,7 +398,7 @@ function go(s, o) {
                 var Ae = a(se, 2),
                   he = t(Ae);
                 he.__click = () => {
-                  _(b).show(), q(n, !0), Xe.generatePixQrCode(at()).then(ie => {
+                  f(b).show(), q(n, !0), Xe.generatePixQrCode(at()).then(ie => {
                     q(d, ie, !0)
                   }).catch(ie => {
                     de.error(ie.message)
@@ -406,16 +406,16 @@ function go(s, o) {
                     q(n, !1)
                   })
                 };
-                var _t = t(he);
-                Ve(_t, {
+                var ft = t(he);
+                Ve(ft, {
                   class: "size-5"
                 }), K(2), r(he), r(Ae), r(ge), r(m), y(ie => {
-                  et(m, 1, `dropdown mt-3 ${it()??""}`), x(ne, `R$${ie??""}`), ce(O, "action", `${Ge}/payment/create-checkout-session`), Te(L, Ee()), T.disabled = _(n), he.disabled = _(n)
+                  et(m, 1, `dropdown mt-3 ${it()??""}`), x(ne, `R$${ie??""}`), ce(O, "action", `${Ge}/payment/create-checkout-session`), Te(L, Ee()), T.disabled = f(n), he.disabled = f(n)
                 }, [() => (ze() * 4).toFixed(2).replace(".", ",")]), xe("submit", O, () => {
                   q(n, !0), setTimeout(() => q(n, !1), 3e3)
                 }), l(z, m)
               },
-              ft = z => {
+              _t = z => {
                 var m = Gr(),
                   D = t(m);
                 De(D);
@@ -431,17 +431,17 @@ function go(s, o) {
                       y(ae => x(T, `$${ae??""}`), [() => ze().toFixed(2)]), l(L, T)
                     };
                   M(ge, L => {
-                    _(h) ? L(se) : L(O, !1)
+                    f(h) ? L(se) : L(O, !1)
                   })
                 }
                 r(ne), r(m), y(() => {
-                  ce(m, "action", `${Ge}/payment/create-checkout-session`), Te(D, Ee()), ne.disabled = _(n)
+                  ce(m, "action", `${Ge}/payment/create-checkout-session`), Te(D, Ee()), ne.disabled = f(n)
                 }), xe("submit", m, () => {
                   q(n, !0), setTimeout(() => q(n, !1), 3e3)
                 }), l(z, m)
               };
             M(pt, z => {
-              _(k) ? z(ut) : z(ft, !1)
+              f(k) ? z(ut) : z(_t, !1)
             })
           }
           r(qe), y((z, m) => {
@@ -521,12 +521,12 @@ function go(s, o) {
   var S = a(g, 2),
     B = t(S),
     Q = t(B, !0);
-  r(B), r(S), r(f), mt(f, () => i => {
+  r(B), r(S), r(_), mt(_, () => i => {
     vt(() => {
       e() ? i.show() : i.close()
     })
   });
-  var Z = a(f, 2),
+  var Z = a(_, 2),
     je = t(Z),
     Be = a(t(je), 2),
     Ce = t(Be),
@@ -544,9 +544,9 @@ function go(s, o) {
           ue = t(A);
         r(A), r(E);
         var F = a(E, 2),
-          fe = t(F),
-          _e = t(fe);
-        K(2), r(fe), r(F);
+          _e = t(F),
+          fe = t(_e);
+        K(2), r(_e), r(F);
         var V = a(F, 2),
           Y = a(t(V), 2),
           H = t(Y);
@@ -555,13 +555,13 @@ function go(s, o) {
           ve = t(W);
         ve.__click = () => {
           var I;
-          navigator.clipboard.writeText(((I = _(d)) == null ? void 0 : I.pixCode) ?? ""), de.success("Código PIX copiado")
+          navigator.clipboard.writeText(((I = f(d)) == null ? void 0 : I.pixCode) ?? ""), de.success("Código PIX copiado")
         }, r(W), r(Y), r(V);
         var J = a(V, 2),
           $ = t(J);
         $.__click = async () => {
           var I, me, ee;
-          if (!_(d)) {
+          if (!f(d)) {
             de.info("Espere 1 minuto e recarrege a pagina");
             return
           }
@@ -569,9 +569,9 @@ function go(s, o) {
             q(c, !0);
             const {
               paid: G
-            } = await Xe.getPixStatus(_(d).pixId);
+            } = await Xe.getPixStatus(f(d).pixId);
             if (G) {
-              const te = _(d).productId.toString(),
+              const te = f(d).productId.toString(),
                 be = (ee = (me = (I = yt.products[te]) == null ? void 0 : I.items) == null ? void 0 : me[0]) == null ? void 0 : ee.amount;
               await le.refresh(), be ? Fe(`payment/success?droplets=${be}`) : Fe("payment/success")
             } else de.info("Pagamento ainda não recebido. Desculpe a demora, tente novamente em instantes.", {
@@ -583,18 +583,18 @@ function go(s, o) {
             q(c, !1)
           }
         }, r(J), y(I => {
-          x(ue, `R$${I??""}`), ce(_e, "src", _(d).qrCode), Te(H, _(d).pixCode), $.disabled = _(c)
-        }, [() => (_(d).price / 100).toFixed(2).replace(".", ",")]), l(i, v)
+          x(ue, `R$${I??""}`), ce(fe, "src", f(d).qrCode), Te(H, f(d).pixCode), $.disabled = f(c)
+        }, [() => (f(d).price / 100).toFixed(2).replace(".", ",")]), l(i, v)
       },
       st = i => {
         var v = Nr();
         l(i, v)
       };
     M(ot, i => {
-      _(d) ? i(nt) : i(st, !1)
+      f(d) ? i(nt) : i(st, !1)
     })
   }
-  r(Be), r(je), r(Z), ht(Z, i => q(b, i), () => _(b)), y(i => x(Q, i), [() => wt()]), xe("close", f, () => {
+  r(Be), r(je), r(Z), ht(Z, i => q(b, i), () => f(b)), y(i => x(Q, i), [() => wt()]), xe("close", _, () => {
     e(!1)
   }), xe("close", Z, () => {
     setTimeout(() => {
@@ -644,11 +644,11 @@ function xo([s, o], [e, n]) {
     d = s < e ? 1 : -1,
     c = o < n ? 1 : -1;
   let p = h - b,
-    f = s,
+    _ = s,
     g = o;
-  for (; k.push([f, g]), !(f === e && g === n);) {
+  for (; k.push([_, g]), !(_ === e && g === n);) {
     const j = 2 * p;
-    j > -b && (p -= b, f += d), j < h && (p += h, g += c)
+    j > -b && (p -= b, _ += d), j < h && (p += h, g += c)
   }
   return k
 }
@@ -679,11 +679,11 @@ function yo(s, o) {
     })
   }
   r(b), r(h);
-  var f = a(h, 2);
+  var _ = a(h, 2);
   let g;
-  var j = t(f, !0);
-  r(f), r(n), y(C => {
-    bt(k, `--angle: ${_(e)??""}deg; --color: var(--color-secondary)`), g = et(f, 1, "text-primary-content bg-secondary absolute bottom-0 flex items-center justify-center rounded-full px-[5px] py-0 text-xs font-bold", null, g, {
+  var j = t(_, !0);
+  r(_), r(n), y(C => {
+    bt(k, `--angle: ${f(e)??""}deg; --color: var(--color-secondary)`), g = et(_, 1, "text-primary-content bg-secondary absolute bottom-0 flex items-center justify-center rounded-full px-[5px] py-0 text-xs font-bold", null, g, {
       "left-0": o.level > 99,
       "-left-1": o.level > 99
     }), x(j, C)

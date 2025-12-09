@@ -1,22 +1,22 @@
 import {
   g as i
-} from "./CHeeGe8w.js";
-import "./B6RC-CnX.js";
+} from "./IUeg5Z1n.js";
+import "./BtgrdE-9.js";
 import {
   o as s,
   b as o
-} from "./wA7ZkjY7.js";
+} from "./wic4j6Xz.js";
 import {
   b as p
-} from "./Drb-AHdW.js";
+} from "./pj7r7t38.js";
 import {
   r as c
-} from "./Cg-iF6tr.js";
+} from "./CkKgyB2C.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "d65f9ae170f28bf8512e5ff594eb3797e287c65b"
+      id: "4732328793523ae4665fa1786d8c6f0e6111919b"
     }
   } catch {}
 })();
@@ -29,8 +29,8 @@ try {
 } catch {}
 const u = () => "Description",
   d = () => "Descrição",
-  f = () => "描述",
-  l = () => "Beschreibung",
+  l = () => "描述",
+  f = () => "Beschreibung",
   a = () => "Descripción",
   _ = () => "Description",
   b = () => "Descrizione",
@@ -41,7 +41,7 @@ const u = () => "Description",
   h = () => "Mô tả",
   z = (t = {}, n = {}) => {
     const e = n.locale ?? i();
-    return e === "en" ? u() : e === "pt" ? d() : e === "ch" ? f() : e === "de" ? l() : e === "es" ? a() : e === "fr" ? _() : e === "it" ? b() : e === "jp" ? x() : e === "pl" ? g() : e === "ru" ? y() : e === "uk" ? w() : h()
+    return e === "en" ? u() : e === "pt" ? d() : e === "ch" ? l() : e === "de" ? f() : e === "es" ? a() : e === "fr" ? _() : e === "it" ? b() : e === "jp" ? x() : e === "pl" ? g() : e === "ru" ? y() : e === "uk" ? w() : h()
   },
   m = () => "Pixels painted",
   v = () => "Pixels pintados",

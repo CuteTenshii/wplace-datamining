@@ -1,31 +1,31 @@
-import "./B6RC-CnX.js";
+import "./BtgrdE-9.js";
 import {
-  p as g,
+  p as b,
   f as c,
-  t as f,
-  b as A,
+  t as A,
+  b as r,
   c as m,
   s as v,
   d as w,
   r as y
-} from "./wA7ZkjY7.js";
+} from "./wic4j6Xz.js";
 import {
   i as h
-} from "./Cw6CuVcr.js";
+} from "./CblOqFTx.js";
 import {
   b as _,
-  a as r,
+  a as f,
   s as x
-} from "./Drb-AHdW.js";
+} from "./pj7r7t38.js";
 import {
   p as E,
   r as T
-} from "./Cg-iF6tr.js";
+} from "./CkKgyB2C.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "d65f9ae170f28bf8512e5ff594eb3797e287c65b"
+      id: "4732328793523ae4665fa1786d8c6f0e6111919b"
     }
   } catch {}
 })();
@@ -41,38 +41,38 @@ var B = c("<span>wplace</span>"),
   L = c('<div><img alt="Wplace logo"/> <!></div>');
 
 function D(e, t) {
-  g(t, !0);
+  b(t, !0);
   let a = E(t, "size", 3, "default"),
-    b = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+    p = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
   var s = L();
   _(s, () => ({
-    ...b,
+    ...p,
     class: `flex items-center gap-1.5 ${t.class??""}`
   }));
   var l = w(s);
   let i;
-  var p = v(l, 2);
+  var u = v(l, 2);
   {
-    var u = o => {
+    var g = o => {
       var n = B();
       let d;
-      f(() => d = r(n, 1, "text-base-content font-pixel", null, d, {
+      A(() => d = f(n, 1, "text-base-content font-pixel", null, d, {
         "text-4xl": a() === "default",
         "text-5xl": a() === "lg" || a() === "medium"
-      })), A(o, n)
+      })), r(o, n)
     };
-    h(p, o => {
-      t.hasText && o(u)
+    h(u, o => {
+      t.hasText && o(g)
     })
   }
-  y(s), f(() => {
-    i = r(l, 1, "pixelated h-auto shrink-0", null, i, {
+  y(s), A(() => {
+    i = f(l, 1, "pixelated h-auto shrink-0", null, i, {
       "w-4": a() === "small",
       "w-10": a() === "default",
       "w-16": a() === "medium",
       "w-20": a() === "lg"
     }), x(l, "src", S)
-  }), A(e, s), m()
+  }), r(e, s), m()
 }
 export {
   D as L
