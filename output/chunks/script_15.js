@@ -14,7 +14,7 @@ var f = (n, t, e) => (Pe(n, t, "read from private field"), e ? e.call(n) : t.get
   w = (n, t, e) => t.has(n) ? se("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(n) : t.set(n, e);
 import {
   g as _
-} from "./DqmGa208.js";
+} from "./CUHA8AfX.js";
 import {
   e as E,
   g as oe,
@@ -22,20 +22,20 @@ import {
   i as v,
   x as ie,
   u as z
-} from "./D97WGl3O.js";
+} from "./DpwlbZC_.js";
 import {
   P as le,
   g as Ie
-} from "./M1MEZkhI.js";
+} from "./DBhlGjEd.js";
 import {
   s as Ne,
   c as ze
-} from "./DdHoMs6h.js";
+} from "./DahkMirC.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "4a4894320a12997d7c10bab38a71bb767b99274e"
+      id: "2d93caab31ad43e5d9e57c08634e0a6280bfa30c"
     }
   } catch {}
 })();
@@ -43,7 +43,7 @@ try {
   (function() {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       t = new n.Error().stack;
-    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "0a874ccb-626e-4dad-a5b6-fb849dc97ce3", n._sentryDebugIdIdentifier = "sentry-dbid-0a874ccb-626e-4dad-a5b6-fb849dc97ce3")
+    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "b33032c8-2dba-42d7-bab4-5d30c2ae3321", n._sentryDebugIdIdentifier = "sentry-dbid-b33032c8-2dba-42d7-bab4-5d30c2ae3321")
   })()
 } catch {}
 
@@ -2555,7 +2555,11 @@ class Qd {
       credentials: "include"
     });
     if (r.status !== 200) throw new d(o(), r.status);
-    return (await r.json()).items ?? []
+    const a = await r.json();
+    return {
+      items: a.items ?? [],
+      globals: a.globals
+    }
   }
   async getClosedTicketsByMod(t, e) {
     const r = await this.request(`/staff/dashboard/team/closed-tickets?start=${encodeURIComponent(t)}&end=${encodeURIComponent(e)}`, {
