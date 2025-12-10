@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./BnZUZ40m.js";
+} from "./DqmGa208.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "1dc76760b5957a0899b63650345eafb40d771701"
+      id: "4a4894320a12997d7c10bab38a71bb767b99274e"
     }
   } catch {}
 })();
@@ -13,24 +13,24 @@ try {
   (function() {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "d2b667be-8c5f-43c5-998b-f2ad92193f52", r._sentryDebugIdIdentifier = "sentry-dbid-d2b667be-8c5f-43c5-998b-f2ad92193f52")
+    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "760c09b1-ad8e-4500-8f32-80057e903a29", r._sentryDebugIdIdentifier = "sentry-dbid-760c09b1-ad8e-4500-8f32-80057e903a29")
   })()
 } catch {}
-const d = () => "Leaderboard",
-  a = () => "Ranking",
+const a = () => "Leaderboard",
+  d = () => "Ranking",
   o = () => "排行榜",
-  f = () => "Bestenliste",
-  i = () => "Clasificación",
-  l = () => "Classement",
-  s = () => "Classifica",
-  u = () => "ランキング",
+  i = () => "Bestenliste",
+  l = () => "Clasificación",
+  s = () => "Classement",
+  u = () => "Classifica",
+  f = () => "ランキング",
   b = () => "Ranking",
   c = () => "Таблица лидеров",
   g = () => "Таблиця лідерів",
   p = () => "Bảng xếp hạng",
   y = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? d() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? f() : e === "es" ? i() : e === "fr" ? l() : e === "it" ? s() : e === "jp" ? u() : e === "pl" ? b() : e === "ru" ? c() : e === "uk" ? g() : p()
+    return e === "en" ? a() : e === "pt" ? d() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? l() : e === "fr" ? s() : e === "it" ? u() : e === "jp" ? f() : e === "pl" ? b() : e === "ru" ? c() : e === "uk" ? g() : p()
   };
 export {
   y as l

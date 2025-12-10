@@ -1,37 +1,37 @@
 import {
-  g as t
-} from "./BnZUZ40m.js";
+  g as r
+} from "./DqmGa208.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "1dc76760b5957a0899b63650345eafb40d771701"
+      id: "4a4894320a12997d7c10bab38a71bb767b99274e"
     }
   } catch {}
 })();
 try {
   (function() {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      r = new n.Error().stack;
-    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "0e8a60a4-8fd6-4de6-b91d-370359835fa2", n._sentryDebugIdIdentifier = "sentry-dbid-0e8a60a4-8fd6-4de6-b91d-370359835fa2")
+      a = new n.Error().stack;
+    a && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[a] = "ac2bd81a-caea-402f-892c-71119d430310", n._sentryDebugIdIdentifier = "sentry-dbid-ac2bd81a-caea-402f-892c-71119d430310")
   })()
 } catch {}
-const l = () => "Alliances",
-  a = () => "Alianças",
-  i = () => "联盟",
-  s = () => "Allianzen",
-  o = () => "Alianzas",
-  u = () => "Alliances",
-  c = () => "Alleanze",
-  f = () => "アライアンス",
-  d = () => "Sojusze",
-  b = () => "Альянсы",
-  p = () => "Альянси",
-  _ = () => "Các liên minh",
-  g = (n = {}, r = {}) => {
-    const e = r.locale ?? t();
-    return e === "en" ? l() : e === "pt" ? a() : e === "ch" ? i() : e === "de" ? s() : e === "es" ? o() : e === "fr" ? u() : e === "it" ? c() : e === "jp" ? f() : e === "pl" ? d() : e === "ru" ? b() : e === "uk" ? p() : _()
+const t = () => "Ban appeal",
+  o = () => "Revisão de banimento",
+  p = () => "封禁申诉",
+  i = () => "Bann-Einspruch",
+  u = () => "Apelación de ban",
+  l = () => "Recours de bannissement",
+  s = () => "Ricorso contro il ban",
+  c = () => "BANの異議申立て",
+  d = () => "Odwołanie od bana",
+  b = () => "Апелляция на бан",
+  f = () => "Апеляція на бан",
+  _ = () => "Kháng cáo lệnh cấm",
+  y = (n = {}, a = {}) => {
+    const e = a.locale ?? r();
+    return e === "en" ? t() : e === "pt" ? o() : e === "ch" ? p() : e === "de" ? i() : e === "es" ? u() : e === "fr" ? l() : e === "it" ? s() : e === "jp" ? c() : e === "pl" ? d() : e === "ru" ? b() : e === "uk" ? f() : _()
   };
 export {
-  g as a
+  y as b
 };

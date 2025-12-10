@@ -1,11 +1,11 @@
 import {
   g as r
-} from "./BnZUZ40m.js";
+} from "./DqmGa208.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "1dc76760b5957a0899b63650345eafb40d771701"
+      id: "4a4894320a12997d7c10bab38a71bb767b99274e"
     }
   } catch {}
 })();
@@ -13,24 +13,24 @@ try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       n = new t.Error().stack;
-    n && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[n] = "30edfb15-4df8-4662-9e50-e0b71901b649", t._sentryDebugIdIdentifier = "sentry-dbid-30edfb15-4df8-4662-9e50-e0b71901b649")
+    n && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[n] = "c5a13364-7383-4199-b1dc-304ba976a3c6", t._sentryDebugIdIdentifier = "sentry-dbid-c5a13364-7383-4199-b1dc-304ba976a3c6")
   })()
 } catch {}
 const u = () => "Timeout",
   o = () => "Suspender",
   i = () => "禁言",
-  f = () => "Timeout",
-  s = () => "Suspender",
-  d = () => "Suspendre",
+  s = () => "Timeout",
+  d = () => "Suspender",
+  f = () => "Suspendre",
   c = () => "Sospendi",
-  l = () => "タイムアウト",
-  a = () => "Zawieszenie",
+  a = () => "タイムアウト",
+  l = () => "Zawieszenie",
   b = () => "Тайм-аут",
   p = () => "Тайм-аут",
   m = () => "Tạm khóa",
   y = (t = {}, n = {}) => {
     const e = n.locale ?? r();
-    return e === "en" ? u() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? f() : e === "es" ? s() : e === "fr" ? d() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? p() : m()
+    return e === "en" ? u() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? s() : e === "es" ? d() : e === "fr" ? f() : e === "it" ? c() : e === "jp" ? a() : e === "pl" ? l() : e === "ru" ? b() : e === "uk" ? p() : m()
   };
 export {
   y as t

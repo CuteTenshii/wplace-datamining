@@ -1,22 +1,22 @@
 import {
   g as i
-} from "./BnZUZ40m.js";
-import "./DfRvk52k.js";
+} from "./DqmGa208.js";
+import "./CmoIL2IL.js";
 import {
   o as s,
   b as o
-} from "./ZybFQ5qV.js";
+} from "./D97WGl3O.js";
 import {
   b as p
-} from "./BHPeit1R.js";
+} from "./BgiljoBh.js";
 import {
-  r as c
-} from "./CiC96CXU.js";
+  r as u
+} from "./CeGBFfcL.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "1dc76760b5957a0899b63650345eafb40d771701"
+      id: "4a4894320a12997d7c10bab38a71bb767b99274e"
     }
   } catch {}
 })();
@@ -24,14 +24,14 @@ try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       n = new t.Error().stack;
-    n && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[n] = "93435cc3-8cd7-4c73-b35a-b1e0cac551cb", t._sentryDebugIdIdentifier = "sentry-dbid-93435cc3-8cd7-4c73-b35a-b1e0cac551cb")
+    n && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[n] = "d35f43c8-4493-4241-b352-31437e1c6f69", t._sentryDebugIdIdentifier = "sentry-dbid-d35f43c8-4493-4241-b352-31437e1c6f69")
   })()
 } catch {}
-const u = () => "Description",
+const c = () => "Description",
   d = () => "Descrição",
   l = () => "描述",
-  a = () => "Beschreibung",
-  f = () => "Descripción",
+  f = () => "Beschreibung",
+  a = () => "Descripción",
   _ = () => "Description",
   b = () => "Descrizione",
   x = () => "説明",
@@ -41,7 +41,7 @@ const u = () => "Description",
   h = () => "Mô tả",
   z = (t = {}, n = {}) => {
     const e = n.locale ?? i();
-    return e === "en" ? u() : e === "pt" ? d() : e === "ch" ? l() : e === "de" ? a() : e === "es" ? f() : e === "fr" ? _() : e === "it" ? b() : e === "jp" ? x() : e === "pl" ? g() : e === "ru" ? y() : e === "uk" ? w() : h()
+    return e === "en" ? c() : e === "pt" ? d() : e === "ch" ? l() : e === "de" ? f() : e === "es" ? a() : e === "fr" ? _() : e === "it" ? b() : e === "jp" ? x() : e === "pl" ? g() : e === "ru" ? y() : e === "uk" ? w() : h()
   },
   m = () => "Pixels painted",
   v = () => "Pixels pintados",
@@ -62,7 +62,7 @@ const u = () => "Description",
 var B = s('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
 
 function C(t, n) {
-  let e = c(n, ["$$slots", "$$events", "$$legacy"]);
+  let e = u(n, ["$$slots", "$$events", "$$legacy"]);
   var r = B();
   p(r, () => ({
     xmlns: "http://www.w3.org/2000/svg",

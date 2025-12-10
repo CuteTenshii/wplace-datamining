@@ -9,12 +9,12 @@ import {
   j as o,
   i as r,
   g as m
-} from "./ZybFQ5qV.js";
+} from "./D97WGl3O.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "1dc76760b5957a0899b63650345eafb40d771701"
+      id: "4a4894320a12997d7c10bab38a71bb767b99274e"
     }
   } catch {}
 })();
@@ -22,7 +22,7 @@ try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "cf2c9d33-3f64-4a93-9969-b08ac45a50c6", t._sentryDebugIdIdentifier = "sentry-dbid-cf2c9d33-3f64-4a93-9969-b08ac45a50c6")
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "354704f0-d058-47f8-8a70-1a252452b689", t._sentryDebugIdIdentifier = "sentry-dbid-354704f0-d058-47f8-8a70-1a252452b689")
   })()
 } catch {}
 const L = "true",
@@ -30,18 +30,18 @@ const L = "true",
   v = "0x4AAAAAABpHqZ-6i7uL0nmG",
   A = "https://backend.wplace.live",
   p = "theme";
-var g, l, u, d, c, h, f;
+var g, l, u, d, h, c, f;
 class y {
   constructor() {
     n(this, g, s(!1));
     n(this, l, s(!1));
     n(this, u, s(m(I())));
     n(this, d, s(!1));
-    n(this, c, s("custom-winter"));
-    n(this, h, s(m(Date.now())));
+    n(this, h, s("custom-winter"));
+    n(this, c, s(m(Date.now())));
     n(this, f, s(void 0));
     setInterval(() => {
-      r(a(this, h), Date.now(), !0)
+      r(a(this, c), Date.now(), !0)
     }, 500), this.theme = localStorage.getItem(p), this.theme !== "dark" && this.theme !== "custom-winter" && (this.theme = "custom-winter")
   }
   get dropletsDialogOpen() {
@@ -69,13 +69,13 @@ class y {
     r(a(this, d), e, !0)
   }
   get theme() {
-    return o(a(this, c))
+    return o(a(this, h))
   }
   set theme(e) {
-    r(a(this, c), e, !0), localStorage.setItem(p, e), document.documentElement.setAttribute("data-theme", e)
+    r(a(this, h), e, !0), localStorage.setItem(p, e), document.documentElement.setAttribute("data-theme", e)
   }
   get now() {
-    return o(a(this, h))
+    return o(a(this, c))
   }
   get captcha() {
     return E ? o(a(this, f)) : {
@@ -87,7 +87,7 @@ class y {
     r(a(this, f), e, !0)
   }
 }
-g = new WeakMap, l = new WeakMap, u = new WeakMap, d = new WeakMap, c = new WeakMap, h = new WeakMap, f = new WeakMap;
+g = new WeakMap, l = new WeakMap, u = new WeakMap, d = new WeakMap, h = new WeakMap, c = new WeakMap, f = new WeakMap;
 const T = new y;
 
 function I() {

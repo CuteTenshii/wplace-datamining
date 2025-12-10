@@ -1,7 +1,7 @@
 import {
-  g as pe
-} from "./BnZUZ40m.js";
-import "./DfRvk52k.js";
+  g as ce
+} from "./DqmGa208.js";
+import "./CmoIL2IL.js";
 import {
   o as U,
   b as l,
@@ -23,59 +23,59 @@ import {
   i as q,
   u as we,
   aR as Le
-} from "./ZybFQ5qV.js";
+} from "./D97WGl3O.js";
 import {
   b as R,
   d as mt,
-  s as ce,
+  s as pe,
   r as De,
   g as Te,
   a as et,
   f as bt
-} from "./BHPeit1R.js";
+} from "./BgiljoBh.js";
 import {
   r as N,
   p as tt
-} from "./CiC96CXU.js";
+} from "./CeGBFfcL.js";
 import {
   o as gt
-} from "./DFGWYax0.js";
+} from "./B51Rslyn.js";
 import {
   s as x
-} from "./BwiGtDz0.js";
+} from "./B5WKxvRg.js";
 import {
   i as M
-} from "./DwjA8j88.js";
+} from "./Dd-jkK0t.js";
 import {
   b as ht
-} from "./k2mnPrds.js";
+} from "./CfoU8BTG.js";
 import {
   g as Fe
-} from "./ePa96SXn.js";
+} from "./BHmnXMKy.js";
 import {
   g as xt,
-  P as Ge
-} from "./xbe0KMIm.js";
+  P as Xe
+} from "./M1MEZkhI.js";
 import {
   u as le,
   t as de,
-  b as Xe,
+  b as Ge,
   a as yt
-} from "./BAGYynGw.js";
+} from "./BNGEskOa.js";
 import {
   r as Oe
-} from "./D4_l2s2g.js";
+} from "./DRn0JrMP.js";
 import {
   c as wt
-} from "./gCvdNZfr.js";
+} from "./CoG_kfM2.js";
 import {
   a as kt
-} from "./CSENNo1E.js";
+} from "./1YMa35Xn.js";
 (function() {
   try {
     var s = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     s.SENTRY_RELEASE = {
-      id: "1dc76760b5957a0899b63650345eafb40d771701"
+      id: "4a4894320a12997d7c10bab38a71bb767b99274e"
     }
   } catch {}
 })();
@@ -83,7 +83,7 @@ try {
   (function() {
     var s = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       o = new s.Error().stack;
-    o && (s._sentryDebugIds = s._sentryDebugIds || {}, s._sentryDebugIds[o] = "075ccb26-b74d-4636-9ea4-51024c26ce55", s._sentryDebugIdIdentifier = "sentry-dbid-075ccb26-b74d-4636-9ea4-51024c26ce55")
+    o && (s._sentryDebugIds = s._sentryDebugIds || {}, s._sentryDebugIds[o] = "c52c36b4-fead-4005-b040-1813d18d1bd1", s._sentryDebugIdIdentifier = "sentry-dbid-c52c36b4-fead-4005-b040-1813d18d1bd1")
   })()
 } catch {}
 const Ct = () => "Add profile picture",
@@ -99,7 +99,7 @@ const Ct = () => "Add profile picture",
   Bt = () => "Додати зображення профілю",
   St = () => "Thêm ảnh đại diện",
   vo = (s = {}, o = {}) => {
-    const e = o.locale ?? pe();
+    const e = o.locale ?? ce();
     return e === "en" ? Ct() : e === "pt" ? zt() : e === "ch" ? qt() : e === "de" ? It() : e === "es" ? Pt() : e === "fr" ? Lt() : e === "it" ? Dt() : e === "jp" ? Tt() : e === "pl" ? Mt() : e === "ru" ? jt() : e === "uk" ? Bt() : St()
   },
   Et = () => "Eraser",
@@ -109,14 +109,14 @@ const Ct = () => "Add profile picture",
   Zt = () => "Borrador",
   At = () => "Gomme",
   Ft = () => "Gomma",
-  Gt = () => "消しゴム",
-  Xt = () => "Gumka",
+  Xt = () => "消しゴム",
+  Gt = () => "Gumka",
   Ot = () => "Ластик",
   Kt = () => "Гумка",
   Nt = () => "Cục tẩy",
   mo = (s = {}, o = {}) => {
-    const e = o.locale ?? pe();
-    return e === "en" ? Et() : e === "pt" ? Ht() : e === "ch" ? Rt() : e === "de" ? Ut() : e === "es" ? Zt() : e === "fr" ? At() : e === "it" ? Ft() : e === "jp" ? Gt() : e === "pl" ? Xt() : e === "ru" ? Ot() : e === "uk" ? Kt() : Nt()
+    const e = o.locale ?? ce();
+    return e === "en" ? Et() : e === "pt" ? Ht() : e === "ch" ? Rt() : e === "de" ? Ut() : e === "es" ? Zt() : e === "fr" ? At() : e === "it" ? Ft() : e === "jp" ? Xt() : e === "pl" ? Gt() : e === "ru" ? Ot() : e === "uk" ? Kt() : Nt()
   },
   Qt = () => "Refund Policy",
   Vt = () => "Política de Reembolso",
@@ -131,15 +131,15 @@ const Ct = () => "Add profile picture",
   nr = () => "Політика повернення коштів",
   sr = () => "Chính sách hoàn tiền",
   Ke = (s = {}, o = {}) => {
-    const e = o.locale ?? pe();
+    const e = o.locale ?? ce();
     return e === "en" ? Qt() : e === "pt" ? Vt() : e === "ch" ? Yt() : e === "de" ? Wt() : e === "es" ? Jt() : e === "fr" ? $t() : e === "it" ? er() : e === "jp" ? tr() : e === "pl" ? rr() : e === "ru" ? or() : e === "uk" ? nr() : sr()
   },
   ar = () => "For refund requests and processing details, please see our",
   ir = () => "Para pedidos de reembolso, consulte nossa",
   lr = () => "有关退款请求和处理详情，请参阅我们的",
   dr = () => "Für Rückerstattungen und Details siehe unsere",
-  cr = () => "Para solicitudes de reembolso y más detalles, consulta nuestra",
-  pr = () => "Pour les demandes de remboursement et les détails de traitement, consultez notre",
+  pr = () => "Para solicitudes de reembolso y más detalles, consulta nuestra",
+  cr = () => "Pour les demandes de remboursement et les détails de traitement, consultez notre",
   ur = () => "Per richieste di rimborso, consulta la nostra",
   _r = () => "返金の申請方法と詳細については、こちらをご覧ください:",
   fr = () => "Aby uzyskać informacje o zwrotach, zobacz naszą",
@@ -147,10 +147,10 @@ const Ct = () => "Add profile picture",
   mr = () => "Для запитів на повернення та деталей обробки дивіться нашу",
   br = () => "Để yêu cầu hoàn tiền và chi tiết xử lý, hãy xem",
   Ne = (s = {}, o = {}) => {
-    const e = o.locale ?? pe();
-    return e === "en" ? ar() : e === "pt" ? ir() : e === "ch" ? lr() : e === "de" ? dr() : e === "es" ? cr() : e === "fr" ? pr() : e === "it" ? ur() : e === "jp" ? _r() : e === "pl" ? fr() : e === "ru" ? vr() : e === "uk" ? mr() : br()
+    const e = o.locale ?? ce();
+    return e === "en" ? ar() : e === "pt" ? ir() : e === "ch" ? lr() : e === "de" ? dr() : e === "es" ? pr() : e === "fr" ? cr() : e === "it" ? ur() : e === "jp" ? _r() : e === "pl" ? fr() : e === "ru" ? vr() : e === "uk" ? mr() : br()
   },
-  gr = () => "You gain 1 droplet per pixel painted and 500 Gouttelettes per niveau",
+  gr = () => "You gain 1 droplet per pixel painted and 500 Droplets per niveau",
   hr = () => "Você ganha 1 droplet por pixel pintado e 500 droplets por level",
   xr = () => "你每绘制 1 个像素可获得 1 个水滴，每升 1 级可获得 500 个水滴",
   yr = () => "Du erhältst 1 Droplet pro gemaltem Pixel und 500 Droplets pro Level",
@@ -163,7 +163,7 @@ const Ct = () => "Add profile picture",
   Pr = () => "Ви отримуєте 1 дроплет за кожен намальований піксель і 500 дроплетів за рівень",
   Lr = () => "Bạn nhận 1 droplet cho mỗi pixel tô và 500 droplets mỗi cấp độ",
   Qe = (s = {}, o = {}) => {
-    const e = o.locale ?? pe();
+    const e = o.locale ?? ce();
     return e === "en" ? gr() : e === "pt" ? hr() : e === "ch" ? xr() : e === "de" ? yr() : e === "es" ? wr() : e === "fr" ? kr() : e === "it" ? Cr() : e === "jp" ? zr() : e === "pl" ? qr() : e === "ru" ? Ir() : e === "uk" ? Pr() : Lr()
   };
 var Dr = U('<svg><path d="M440-320v-326L336-542l-56-58 200-200 200 200-56 58-104-104v326h-80ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
@@ -209,9 +209,9 @@ var Br = w('<span class="btn btn-xs btn-circle btn-primary ml-0.5 size-5"><!></s
 
 function Rr(s, o) {
   We(o, !0);
-  const e = c => {
-    var p = Sr(),
-      _ = t(p);
+  const e = p => {
+    var c = Sr(),
+      _ = t(c);
     Me(_, {
       class: "text-primary size-4.5"
     });
@@ -231,27 +231,27 @@ function Rr(s, o) {
         n() && B(S)
       })
     }
-    r(p), y(B => x(j, `${B??""} `), [() => o.value.toLocaleString("en-US")]), l(c, p)
+    r(c), y(B => x(j, `${B??""} `), [() => o.value.toLocaleString("en-US")]), l(p, c)
   };
   let n = tt(o, "button", 3, !0);
   var k = Je(),
     h = ke(k);
   {
-    var b = c => {
-        var p = Er();
-        p.__click = () => {
+    var b = p => {
+        var c = Er();
+        c.__click = () => {
           xt.dropletsDialogOpen = !0
         };
-        var _ = t(p);
-        e(_), r(p), l(c, p)
+        var _ = t(c);
+        e(_), r(c), l(p, c)
       },
-      d = c => {
-        var p = Hr(),
-          _ = t(p);
-        e(_), r(p), l(c, p)
+      d = p => {
+        var c = Hr(),
+          _ = t(c);
+        e(_), r(c), l(p, c)
       };
-    M(h, c => {
-      n() ? c(b) : c(d, !1)
+    M(h, p => {
+      n() ? p(b) : p(d, !1)
     })
   }
   l(s, k), $e()
@@ -287,8 +287,8 @@ function Ve(s, o) {
   })), l(s, n)
 }
 var Fr = w('<div><div tabindex="0" class="btn btn-lg btn-primary h-10"> </div> <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 border-base-content/20 m-1 w-max rounded-xl border p-2 shadow"><li><form method="POST"><input type="hidden" name="lookup_key"/> <button class="flex items-center gap-1.5"><!> <span>Cartão ou Boleto</span></button></form></li> <li><button class="flex items-center gap-1.5"><!> <span>Pix</span></button></li></ul></div>'),
-  Gr = w('<form method="POST"><input type="hidden" name="lookup_key"/> <button class="btn btn-lg btn-primary mt-3 h-10" type="submit"><!></button></form>'),
-  Xr = w('<div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-4"><p class="text-primary text-3xl font-bold"><!> <span> <span class="text-lg font-normal">Droplets</span></span></p> <p class="text-base-content/80 mt-0.5 text-center text-xs"><!> <span class="text-primary/80 font-medium"> </span></p> <!></div>'),
+  Xr = w('<form method="POST"><input type="hidden" name="lookup_key"/> <button class="btn btn-lg btn-primary mt-3 h-10" type="submit"><!></button></form>'),
+  Gr = w('<div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-4"><p class="text-primary text-3xl font-bold"><!> <span> <span class="text-lg font-normal">Droplets</span></span></p> <p class="text-base-content/80 mt-0.5 text-center text-xs"><!> <span class="text-primary/80 font-medium"> </span></p> <!></div>'),
   Or = w('<div class="flex flex-col gap-4"><section><div class="flex items-center gap-1"><!> <h3 class="text-xl font-bold">Droplets</h3> <div class="ml-auto mr-4"><!></div></div> <p class="text-base-content/80 mt-1 text-sm"> </p></section> <section><div class="grid gap-3 sm:grid-cols-2"><!> <!> <!> <!> <!> <!></div> <p class="text-base-content/60 mt-4 text-center text-sm"> <a class="font-medium" target="_blank"> </a></p></section></div>'),
   Kr = w('<p class="text-base-content/80">Efetue o pagamento do PIX no valor de <span class="font-semibold"> </span></p> <section><div class="relative"><img class="pixelated w-70 aspect-square" alt="QR code PIX"/> <div class="center-absolute border-6 absolute size-[95%] border-black"></div></div></section> <section class="w-full"><span class="text-base-content/80 ml-4 text-sm font-semibold">Código</span> <div class="border-base-content/20 rounded-field flex w-full items-center gap-1 border-2 py-1.5 pl-4 pr-2.5"><input class="text-base-content/80 w-full min-w-10 grow text-sm font-medium" readonly=""/> <div class="h-10"><button class="btn btn-primary">Copiar</button></div></div></section> <section class="mt-2"><button class="btn btn-primary btn-lg">Fiz o pagamento</button></section>', 1),
   Nr = w('<div class="flex h-96 items-center justify-center"><span class="loading loading-spinner loading-xl"></span></div>'),
@@ -314,9 +314,9 @@ function go(s, o) {
     });
   let b = ye(null),
     d = ye(void 0),
-    c = ye(!1);
-  var p = Qr(),
-    _ = ke(p),
+    p = ye(!1);
+  var c = Qr(),
+    _ = ke(c),
     g = t(_),
     j = a(t(g), 2);
   {
@@ -332,8 +332,8 @@ function go(s, o) {
         _e = t(F);
       {
         let P = we(() => {
-          var X;
-          return ((X = le.data) == null ? void 0 : X.droplets) ?? 0
+          var G;
+          return ((G = le.data) == null ? void 0 : G.droplets) ?? 0
         });
         Rr(_e, {
           get value() {
@@ -348,14 +348,14 @@ function go(s, o) {
       r(fe), r(E);
       var Y = a(E, 2);
       {
-        const P = (X, u) => {
+        const P = (G, u) => {
           let re = () => u == null ? void 0 : u().droplets,
             oe = () => u == null ? void 0 : u().bonus,
             ze = () => u == null ? void 0 : u().price,
             Ee = () => u == null ? void 0 : u().stripeLookupkey,
             at = () => u == null ? void 0 : u().productId,
             it = () => u == null ? void 0 : u().dropdownClass;
-          var qe = Xr(),
+          var qe = Gr(),
             Ie = t(qe),
             He = t(Ie);
           Me(He, {
@@ -376,9 +376,9 @@ function go(s, o) {
             })
           }
           var Ze = a(Ue, 2),
-            ct = t(Ze);
+            pt = t(Ze);
           r(Ze), r(Pe);
-          var pt = a(Pe, 2);
+          var ct = a(Pe, 2);
           {
             var ut = z => {
                 var m = Fr(),
@@ -398,7 +398,7 @@ function go(s, o) {
                 var Ae = a(se, 2),
                   he = t(Ae);
                 he.__click = () => {
-                  f(b).show(), q(n, !0), Xe.generatePixQrCode(at()).then(ie => {
+                  f(b).show(), q(n, !0), Ge.generatePixQrCode(at()).then(ie => {
                     q(d, ie, !0)
                   }).catch(ie => {
                     de.error(ie.message)
@@ -410,13 +410,13 @@ function go(s, o) {
                 Ve(ft, {
                   class: "size-5"
                 }), K(2), r(he), r(Ae), r(ge), r(m), y(ie => {
-                  et(m, 1, `dropdown mt-3 ${it()??""}`), x(ne, `R$${ie??""}`), ce(O, "action", `${Ge}/payment/create-checkout-session`), Te(L, Ee()), T.disabled = f(n), he.disabled = f(n)
+                  et(m, 1, `dropdown mt-3 ${it()??""}`), x(ne, `R$${ie??""}`), pe(O, "action", `${Xe}/payment/create-checkout-session`), Te(L, Ee()), T.disabled = f(n), he.disabled = f(n)
                 }, [() => (ze() * 4).toFixed(2).replace(".", ",")]), xe("submit", O, () => {
                   q(n, !0), setTimeout(() => q(n, !1), 3e3)
                 }), l(z, m)
               },
               _t = z => {
-                var m = Gr(),
+                var m = Xr(),
                   D = t(m);
                 De(D);
                 var ne = a(D, 2),
@@ -435,18 +435,18 @@ function go(s, o) {
                   })
                 }
                 r(ne), r(m), y(() => {
-                  ce(m, "action", `${Ge}/payment/create-checkout-session`), Te(D, Ee()), ne.disabled = f(n)
+                  pe(m, "action", `${Xe}/payment/create-checkout-session`), Te(D, Ee()), ne.disabled = f(n)
                 }), xe("submit", m, () => {
                   q(n, !0), setTimeout(() => q(n, !1), 3e3)
                 }), l(z, m)
               };
-            M(pt, z => {
+            M(ct, z => {
               f(k) ? z(ut) : z(_t, !1)
             })
           }
           r(qe), y((z, m) => {
-            x(lt, `${z??""} `), x(ct, `+${m??""} bonus`)
-          }, [() => (re() + oe()).toLocaleString("en-US"), () => oe().toLocaleString("en-US")]), l(X, qe)
+            x(lt, `${z??""} `), x(pt, `+${m??""} bonus`)
+          }, [() => (re() + oe()).toLocaleString("en-US"), () => oe().toLocaleString("en-US")]), l(G, qe)
         };
         var H = t(Y),
           W = t(H);
@@ -504,14 +504,14 @@ function go(s, o) {
           dropdownClass: "max-sm:dropdown-top dropdown-center"
         })), r(H);
         var ee = a(H, 2),
-          G = t(ee),
-          te = a(G),
+          X = t(ee),
+          te = a(X),
           be = t(te, !0);
-        r(te), r(ee), r(Y), y((X, u, re, oe) => {
-          x(G, `${u??""} `), ce(te, "href", re), x(be, oe)
+        r(te), r(ee), r(Y), y((G, u, re, oe) => {
+          x(X, `${u??""} `), pe(te, "href", re), x(be, oe)
         }, [() => Qe(), () => Ne(), Oe, () => Ke()])
       }
-      r(v), y((P, X, u, re) => x(V, P), [() => Qe(), () => Ne(), Oe, () => Ke()]), l(i, v)
+      r(v), y((P, G, u, re) => x(V, P), [() => Qe(), () => Ne(), Oe, () => Ke()]), l(i, v)
     };
     M(j, i => {
       le.data && i(C)
@@ -566,24 +566,24 @@ function go(s, o) {
             return
           }
           try {
-            q(c, !0);
+            q(p, !0);
             const {
-              paid: G
-            } = await Xe.getPixStatus(f(d).pixId);
-            if (G) {
+              paid: X
+            } = await Ge.getPixStatus(f(d).pixId);
+            if (X) {
               const te = f(d).productId.toString(),
                 be = (ee = (me = (I = yt.products[te]) == null ? void 0 : I.items) == null ? void 0 : me[0]) == null ? void 0 : ee.amount;
               await le.refresh(), be ? Fe(`payment/success?droplets=${be}`) : Fe("payment/success")
             } else de.info("Pagamento ainda não recebido. Desculpe a demora, tente novamente em instantes.", {
               duration: 1e5
             })
-          } catch (G) {
-            console.error(G), de.error("Error ao atualizar o status do pix. Tente recarregar a página.")
+          } catch (X) {
+            console.error(X), de.error("Error ao atualizar o status do pix. Tente recarregar a página.")
           } finally {
-            q(c, !1)
+            q(p, !1)
           }
         }, r(J), y(I => {
-          x(ue, `R$${I??""}`), ce(fe, "src", f(d).qrCode), Te(H, f(d).pixCode), $.disabled = f(c)
+          x(ue, `R$${I??""}`), pe(fe, "src", f(d).qrCode), Te(H, f(d).pixCode), $.disabled = f(p)
         }, [() => (f(d).price / 100).toFixed(2).replace(".", ",")]), l(i, v)
       },
       st = i => {
@@ -600,7 +600,7 @@ function go(s, o) {
     setTimeout(() => {
       q(d, void 0)
     }, 300)
-  }), l(s, p), $e()
+  }), l(s, c), $e()
 }
 Ye(["click"]);
 var Vr = U('<svg><path d="M690-240h190v80H610l80-80Zm-500 80-85-85q-23-23-23.5-57t22.5-58l440-456q23-24 56.5-24t56.5 23l199 199q23 23 23 57t-23 57L520-160H190Z"></path></svg>'),
@@ -612,22 +612,22 @@ function ho(s, o) {
     k = ke(n);
   {
     var h = d => {
-        var c = Vr();
-        R(c, () => ({
+        var p = Vr();
+        R(p, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
           fill: "currentColor",
           ...e
-        })), l(d, c)
+        })), l(d, p)
       },
       b = d => {
-        var c = Yr();
-        R(c, () => ({
+        var p = Yr();
+        R(p, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
           fill: "currentColor",
           ...e
-        })), l(d, c)
+        })), l(d, p)
       };
     M(k, d => {
       o.filled ? d(h) : d(b, !1)
@@ -642,13 +642,13 @@ function xo([s, o], [e, n]) {
     h = Math.abs(e - s),
     b = Math.abs(n - o),
     d = s < e ? 1 : -1,
-    c = o < n ? 1 : -1;
-  let p = h - b,
+    p = o < n ? 1 : -1;
+  let c = h - b,
     _ = s,
     g = o;
   for (; k.push([_, g]), !(_ === e && g === n);) {
-    const j = 2 * p;
-    j > -b && (p -= b, _ += d), j < h && (p += h, g += c)
+    const j = 2 * c;
+    j > -b && (c -= b, _ += d), j < h && (c += h, g += p)
   }
   return k
 }
@@ -663,19 +663,19 @@ function yo(s, o) {
     b = t(h),
     d = t(b);
   {
-    var c = C => {
+    var p = C => {
         kt(C, {
           get userId() {
             return o.userId
           }
         })
       },
-      p = C => {
+      c = C => {
         var S = Wr();
-        y(() => ce(S, "src", o.pictureUrl)), l(C, S)
+        y(() => pe(S, "src", o.pictureUrl)), l(C, S)
       };
     M(d, C => {
-      o.pictureUrl ? C(p, !1) : C(c)
+      o.pictureUrl ? C(c, !1) : C(p)
     })
   }
   r(b), r(h);

@@ -14,7 +14,7 @@ var f = (n, t, e) => (Pe(n, t, "read from private field"), e ? e.call(n) : t.get
   w = (n, t, e) => t.has(n) ? se("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(n) : t.set(n, e);
 import {
   g as _
-} from "./BnZUZ40m.js";
+} from "./DqmGa208.js";
 import {
   e as E,
   g as oe,
@@ -22,20 +22,20 @@ import {
   i as v,
   x as ie,
   u as z
-} from "./ZybFQ5qV.js";
+} from "./D97WGl3O.js";
 import {
   P as le,
   g as Ie
-} from "./xbe0KMIm.js";
+} from "./M1MEZkhI.js";
 import {
   s as Ne,
   c as ze
-} from "./BY5gzsGG.js";
+} from "./DdHoMs6h.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "1dc76760b5957a0899b63650345eafb40d771701"
+      id: "4a4894320a12997d7c10bab38a71bb767b99274e"
     }
   } catch {}
 })();
@@ -43,7 +43,7 @@ try {
   (function() {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       t = new n.Error().stack;
-    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "8de939c9-4d0a-47b0-83c1-6f212264507d", n._sentryDebugIdIdentifier = "sentry-dbid-8de939c9-4d0a-47b0-83c1-6f212264507d")
+    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "0a874ccb-626e-4dad-a5b6-fb849dc97ce3", n._sentryDebugIdIdentifier = "sentry-dbid-0a874ccb-626e-4dad-a5b6-fb849dc97ce3")
   })()
 } catch {}
 
@@ -345,10 +345,10 @@ const Le = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   bt = () => "Nazwa sojuszu przekroczyła maksymalną liczbę znaków",
   vt = () => "Название альянса превышает максимальную длину",
   kt = () => "Назва альянсу перевищує максимально допустиму кількість символів",
-  xt = () => "Tên liên minh vượt quá số ký tự cho phép",
-  St = (n = {}, t = {}) => {
+  St = () => "Tên liên minh vượt quá số ký tự cho phép",
+  xt = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? _t() : e === "pt" ? ft() : e === "ch" ? mt() : e === "de" ? ht() : e === "es" ? pt() : e === "fr" ? gt() : e === "it" ? wt() : e === "jp" ? yt() : e === "pl" ? bt() : e === "ru" ? vt() : e === "uk" ? kt() : xt()
+    return e === "en" ? _t() : e === "pt" ? ft() : e === "ch" ? mt() : e === "de" ? ht() : e === "es" ? pt() : e === "fr" ? gt() : e === "it" ? wt() : e === "jp" ? yt() : e === "pl" ? bt() : e === "ru" ? vt() : e === "uk" ? kt() : St()
   },
   Tt = () => "Alliance with empty name",
   Et = () => "Aliança com nome vazio",
@@ -410,11 +410,11 @@ const Le = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   bn = () => "Вы не можете рисовать по пикселям события",
   vn = () => "Ви не можете малювати поверх пікселів події",
   kn = () => "Bạn không thể tô lên pixel sự kiện",
-  xn = (n = {}, t = {}) => {
+  Sn = (n = {}, t = {}) => {
     const e = t.locale ?? _();
     return e === "en" ? ln() : e === "pt" ? _n() : e === "ch" ? fn() : e === "de" ? mn() : e === "es" ? hn() : e === "fr" ? pn() : e === "it" ? gn() : e === "jp" ? wn() : e === "pl" ? yn() : e === "ru" ? bn() : e === "uk" ? vn() : kn()
   },
-  Sn = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
+  xn = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
   Tn = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
   En = () => "无法连接到服务器。可能是你没有网络，或服务器已离线。请稍后重试。",
   An = () => "Server nicht erreichbar. Vielleicht hast du keine Internetverbindung oder der Server ist offline. Versuche es später erneut.",
@@ -428,7 +428,7 @@ const Le = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Dn = () => "Không thể kết nối tới máy chủ. Có thể bạn đang mất kết nối mạng hoặc máy chủ đang tạm ngưng. Hãy thử lại sau",
   Cn = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Sn() : e === "pt" ? Tn() : e === "ch" ? En() : e === "de" ? An() : e === "es" ? jn() : e === "fr" ? Pn() : e === "it" ? In() : e === "jp" ? Nn() : e === "pl" ? zn() : e === "ru" ? qn() : e === "uk" ? On() : Dn()
+    return e === "en" ? xn() : e === "pt" ? Tn() : e === "ch" ? En() : e === "de" ? An() : e === "es" ? jn() : e === "fr" ? Pn() : e === "it" ? In() : e === "jp" ? Nn() : e === "pl" ? zn() : e === "ru" ? qn() : e === "uk" ? On() : Dn()
   },
   Mn = () => "Couldn't complete the purchase. This item does not exist.",
   Bn = () => "Não foi possível concluir a compra. Este item não existe.",
@@ -479,8 +479,8 @@ const Le = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
     return e === "en" ? cr() : e === "pt" ? dr() : e === "ch" ? lr() : e === "de" ? _r() : e === "es" ? fr() : e === "fr" ? mr() : e === "it" ? hr() : e === "jp" ? pr() : e === "pl" ? gr() : e === "ru" ? wr() : e === "uk" ? yr() : br()
   },
   kr = n => `Error while painting: ${n.err}`,
-  xr = n => `Erro enquanto pinta: ${n.err}`,
-  Sr = n => `绘制时出错：${n.err}`,
+  Sr = n => `Erro enquanto pinta: ${n.err}`,
+  xr = n => `绘制时出错：${n.err}`,
   Tr = n => `Fehler beim Malen: ${n.err}`,
   Er = n => `Error al pintar: ${n.err}`,
   Ar = n => `Erreur lors de la peinture : ${n.err}`,
@@ -492,7 +492,7 @@ const Le = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   qr = n => `Lỗi khi tô: ${n.err}`,
   Or = (n, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? kr(n) : e === "pt" ? xr(n) : e === "ch" ? Sr(n) : e === "de" ? Tr(n) : e === "es" ? Er(n) : e === "fr" ? Ar(n) : e === "it" ? jr(n) : e === "jp" ? Pr(n) : e === "pl" ? Ir(n) : e === "ru" ? Nr(n) : e === "uk" ? zr(n) : qr(n)
+    return e === "en" ? kr(n) : e === "pt" ? Sr(n) : e === "ch" ? xr(n) : e === "de" ? Tr(n) : e === "es" ? Er(n) : e === "fr" ? Ar(n) : e === "it" ? jr(n) : e === "jp" ? Pr(n) : e === "pl" ? Ir(n) : e === "ru" ? Nr(n) : e === "uk" ? zr(n) : qr(n)
   },
   Dr = () => "Griefing",
   Cr = () => "Griefing",
@@ -545,8 +545,8 @@ const Le = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   ba = () => "Invalid code",
   va = () => "Código inválido",
   ka = () => "验证码无效",
-  xa = () => "Ungültiger Code",
-  Sa = () => "Código inválido",
+  Sa = () => "Ungültiger Code",
+  xa = () => "Código inválido",
   Ta = () => "Code invalide",
   Ea = () => "Codice non valido",
   Aa = () => "無効なコードです。",
@@ -556,7 +556,7 @@ const Le = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Na = () => "Mã không hợp lệ",
   za = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? ba() : e === "pt" ? va() : e === "ch" ? ka() : e === "de" ? xa() : e === "es" ? Sa() : e === "fr" ? Ta() : e === "it" ? Ea() : e === "jp" ? Aa() : e === "pl" ? ja() : e === "ru" ? Pa() : e === "uk" ? Ia() : Na()
+    return e === "en" ? ba() : e === "pt" ? va() : e === "ch" ? ka() : e === "de" ? Sa() : e === "es" ? xa() : e === "fr" ? Ta() : e === "it" ? Ea() : e === "jp" ? Aa() : e === "pl" ? ja() : e === "ru" ? Pa() : e === "uk" ? Ia() : Na()
   },
   qa = () => "Invalid discord.",
   Oa = () => "Discord inválido.",
@@ -611,8 +611,8 @@ const Le = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   bs = () => "新盟主必须是联盟成员",
   vs = () => "Der neue Anführer muss Mitglied der Allianz sein",
   ks = () => "El nuevo líder debe ser miembro de la alianza",
-  xs = () => "Le nouveau chef doit être membre de l’alliance",
-  Ss = () => "Il nuovo leader deve essere un membro dell'alleanza",
+  Ss = () => "Le nouveau chef doit être membre de l’alliance",
+  xs = () => "Il nuovo leader deve essere un membro dell'alleanza",
   Ts = () => "新しいリーダーはアライアンスのメンバーである必要があります。",
   Es = () => "Nowy lider musi być członkiem sojuszu",
   As = () => "Новый лидер должен быть участником альянса",
@@ -620,7 +620,7 @@ const Le = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Ps = () => "Thủ lĩnh mới phải là thành viên của liên minh",
   Is = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? ws() : e === "pt" ? ys() : e === "ch" ? bs() : e === "de" ? vs() : e === "es" ? ks() : e === "fr" ? xs() : e === "it" ? Ss() : e === "jp" ? Ts() : e === "pl" ? Es() : e === "ru" ? As() : e === "uk" ? js() : Ps()
+    return e === "en" ? ws() : e === "pt" ? ys() : e === "ch" ? bs() : e === "de" ? vs() : e === "es" ? ks() : e === "fr" ? Ss() : e === "it" ? xs() : e === "jp" ? Ts() : e === "pl" ? Es() : e === "ru" ? As() : e === "uk" ? js() : Ps()
   },
   Ns = () => "Leaderboard is temporarily disabled",
   zs = () => "O ranking está temporariamente desativado",
@@ -677,14 +677,14 @@ const Le = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   bo = n => `Podrás cambiar tu nombre de nuevo en ${n.days} días`,
   vo = n => `Vous pourrez changer votre nom à nouveau dans ${n.days} jours`,
   ko = n => `Potrai cambiare di nuovo il tuo nome tra ${n.days} giorni.`,
-  xo = n => `${n.days}日後に再び名前を変更できます。`,
-  So = n => `Następną zmianę nazwy możesz wykonać za ${n.days} dni`,
+  So = n => `${n.days}日後に再び名前を変更できます。`,
+  xo = n => `Następną zmianę nazwy możesz wykonać za ${n.days} dni`,
   To = n => `Вы сможете изменить имя снова через ${n.days} дн.`,
   Eo = n => `Ви зможете змінити імʼя знову через ${n.days} днів`,
   Ao = n => `Bạn có thể đổi tên lại sau ${n.days} ngày`,
   jo = (n, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? po(n) : e === "pt" ? go(n) : e === "ch" ? wo(n) : e === "de" ? yo(n) : e === "es" ? bo(n) : e === "fr" ? vo(n) : e === "it" ? ko(n) : e === "jp" ? xo(n) : e === "pl" ? So(n) : e === "ru" ? To(n) : e === "uk" ? Eo(n) : Ao(n)
+    return e === "en" ? po(n) : e === "pt" ? go(n) : e === "ch" ? wo(n) : e === "de" ? yo(n) : e === "es" ? bo(n) : e === "fr" ? vo(n) : e === "it" ? ko(n) : e === "jp" ? So(n) : e === "pl" ? xo(n) : e === "ru" ? To(n) : e === "uk" ? Eo(n) : Ao(n)
   },
   Po = () => "No internet access or the servers are offline. Try again later.",
   Io = () => "Sem acesso à internet ou os servidores estão fora do ar. Tente novamente mais tarde.",
@@ -743,12 +743,12 @@ const Le = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   bi = () => "Telefono già utilizzato",
   vi = () => "この電話番号は既に使用されています。",
   ki = () => "Numer telefonu jest już używany",
-  xi = () => "Телефон уже используется",
-  Si = () => "Номер телефону вже використовується",
+  Si = () => "Телефон уже используется",
+  xi = () => "Номер телефону вже використовується",
   Ti = () => "Số điện thoại đã được sử dụng",
   Ei = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? mi() : e === "pt" ? hi() : e === "ch" ? pi() : e === "de" ? gi() : e === "es" ? wi() : e === "fr" ? yi() : e === "it" ? bi() : e === "jp" ? vi() : e === "pl" ? ki() : e === "ru" ? xi() : e === "uk" ? Si() : Ti()
+    return e === "en" ? mi() : e === "pt" ? hi() : e === "ch" ? pi() : e === "de" ? gi() : e === "es" ? wi() : e === "fr" ? yi() : e === "it" ? bi() : e === "jp" ? vi() : e === "pl" ? ki() : e === "ru" ? Si() : e === "uk" ? xi() : Ti()
   },
   Ai = () => "Refresh your page to get the latest update",
   ji = () => "Recarregue sua página para obter as últimas atualizações",
@@ -810,11 +810,11 @@ const Le = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   bu = () => "Ошибка при загрузке модуля WebAssembly. Попробуйте использовать другой браузер.",
   vu = () => "Не вдалося завантажити модуль WebAssembly. Спробуйте інший браузер.",
   ku = () => "Lỗi tải mô-đun WebAssembly. Hãy thử dùng trình duyệt khác.",
-  xu = (n = {}, t = {}) => {
+  Su = (n = {}, t = {}) => {
     const e = t.locale ?? _();
     return e === "en" ? lu() : e === "pt" ? _u() : e === "ch" ? fu() : e === "de" ? mu() : e === "es" ? hu() : e === "fr" ? pu() : e === "it" ? gu() : e === "jp" ? wu() : e === "pl" ? yu() : e === "ru" ? bu() : e === "uk" ? vu() : ku()
   },
-  Su = () => "You already have this item. Please refresh the page.",
+  xu = () => "You already have this item. Please refresh the page.",
   Tu = () => "Você já possui este item. Atualize a página.",
   Eu = () => "你已经拥有此物品。请刷新页面。",
   Au = () => "Du besitzt dieses Item bereits. Bitte aktualisiere die Seite.",
@@ -828,7 +828,7 @@ const Le = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Du = () => "Bạn đã sở hữu vật phẩm này. Hãy tải lại trang.",
   Cu = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Su() : e === "pt" ? Tu() : e === "ch" ? Eu() : e === "de" ? Au() : e === "es" ? ju() : e === "fr" ? Pu() : e === "it" ? Iu() : e === "jp" ? Nu() : e === "pl" ? zu() : e === "ru" ? qu() : e === "uk" ? Ou() : Du()
+    return e === "en" ? xu() : e === "pt" ? Tu() : e === "ch" ? Eu() : e === "de" ? Au() : e === "es" ? ju() : e === "fr" ? Pu() : e === "it" ? Iu() : e === "jp" ? Nu() : e === "pl" ? zu() : e === "ru" ? qu() : e === "uk" ? Ou() : Du()
   },
   Mu = () => "You are already in an alliance",
   Bu = () => "Você já está em uma aliança",
@@ -862,7 +862,7 @@ const Le = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
     const e = t.locale ?? _();
     return e === "en" ? Yu() : e === "pt" ? Zu() : e === "ch" ? Xu() : e === "de" ? Qu() : e === "es" ? ec() : e === "fr" ? tc() : e === "it" ? nc() : e === "jp" ? rc() : e === "pl" ? ac() : e === "ru" ? sc() : e === "uk" ? oc() : ic()
   },
-  uc = () => "You do not have enough Gouttelettes to buy this item.",
+  uc = () => "You do not have enough Droplets to buy this item.",
   cc = () => "Você não tem gotas suficientes para comprar este item.",
   dc = () => "你的水滴不足，无法购买此物品。",
   lc = () => "Du hast nicht genug Droplets, um dieses Item zu kaufen.",
@@ -880,8 +880,8 @@ const Le = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   },
   vc = () => "You have to wait to resend a code",
   kc = () => "Você tem de esperar para reenviar um código",
-  xc = () => "你需要等待一段时间才能重新发送验证码",
-  Sc = () => "Du musst warten, bevor du einen Code erneut senden kannst",
+  Sc = () => "你需要等待一段时间才能重新发送验证码",
+  xc = () => "Du musst warten, bevor du einen Code erneut senden kannst",
   Tc = () => "Tienes que esperar para reenviar un código",
   Ec = () => "Vous devez attendre avant de renvoyer un code",
   Ac = () => "Devi aspettare per reinviare un codice",
@@ -892,7 +892,7 @@ const Le = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   zc = () => "Bạn phải chờ trước khi gửi lại mã",
   qc = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? vc() : e === "pt" ? kc() : e === "ch" ? xc() : e === "de" ? Sc() : e === "es" ? Tc() : e === "fr" ? Ec() : e === "it" ? Ac() : e === "jp" ? jc() : e === "pl" ? Pc() : e === "ru" ? Ic() : e === "uk" ? Nc() : zc()
+    return e === "en" ? vc() : e === "pt" ? kc() : e === "ch" ? Sc() : e === "de" ? xc() : e === "es" ? Tc() : e === "fr" ? Ec() : e === "it" ? Ac() : e === "jp" ? jc() : e === "pl" ? Pc() : e === "ru" ? Ic() : e === "uk" ? Nc() : zc()
   },
   Oc = () => "You need to be logged in to paint",
   Dc = () => "Você precisa estar conectado para pintar",
@@ -947,8 +947,8 @@ const Le = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   bd = () => "超出最大字符数",
   vd = () => "Maximale Zeichenanzahl überschritten",
   kd = () => "Se excedió el número máximo de caracteres",
-  xd = () => "Nombre maximal de caractères dépassé",
-  Sd = () => "Numero massimo di caratteri superato",
+  Sd = () => "Nombre maximal de caractères dépassé",
+  xd = () => "Numero massimo di caratteri superato",
   Td = () => "最大文字数を超過しました",
   Ed = () => "Przekroczono maksymalną liczbę znaków",
   Ad = () => "Превышено максимальное количество символов",
@@ -956,7 +956,7 @@ const Le = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Pd = () => "Đã vượt quá số ký tự tối đa",
   Id = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? wd() : e === "pt" ? yd() : e === "ch" ? bd() : e === "de" ? vd() : e === "es" ? kd() : e === "fr" ? xd() : e === "it" ? Sd() : e === "jp" ? Td() : e === "pl" ? Ed() : e === "ru" ? Ad() : e === "uk" ? jd() : Pd()
+    return e === "en" ? wd() : e === "pt" ? yd() : e === "ch" ? bd() : e === "de" ? vd() : e === "es" ? kd() : e === "fr" ? Sd() : e === "it" ? xd() : e === "jp" ? Td() : e === "pl" ? Ed() : e === "ru" ? Ad() : e === "uk" ? jd() : Pd()
   };
 let p;
 
@@ -1770,6 +1770,9 @@ const gl = {
       banWaves: {
         see: "staff.dashboard.ban_waves.see",
         execute: "staff.dashboard.ban_waves.execute"
+      },
+      banAppeals: {
+        see: "staff.dashboard.ban_appeals.see"
       }
     },
     tickets: {
@@ -1845,7 +1848,7 @@ function Xd(n, t) {
   return e
 }
 
-function xl(n, t) {
+function Sl(n, t) {
   const e = {};
   for (const r of n) {
     const a = t(r);
@@ -1877,8 +1880,8 @@ class Qd {
     if (!s) throw new Error("paint request while pawtect experiment not found");
     const i = (await Promise.all(Object.values(a).map(l => {
       const [c, h] = l[0].tile, m = l[0].season, T = {
-        colors: l.map(x => x.colorIdx),
-        coords: l.flatMap(x => x.pixel),
+        colors: l.map(S => S.colorIdx),
+        coords: l.flatMap(S => S.pixel),
         fp: e
       }, A = JSON.stringify(T), k = r(m, c, h);
       return this.request(k, {
@@ -1905,7 +1908,7 @@ class Qd {
         }
         if ((c == null ? void 0 : c.error) === "refresh") throw new Error(Li());
         if ((c == null ? void 0 : c.error) === "color-not-owned") throw new Error(fi());
-        if ((c == null ? void 0 : c.error) === "event-pixel-present") throw new Error(xn());
+        if ((c == null ? void 0 : c.error) === "event-pixel-present") throw new Error(Sn());
         I.refresh()
       } else throw new Error(o())
     }
@@ -2147,7 +2150,7 @@ class Qd {
     if (e.status === 200) return e.json();
     if (e.status === 400) {
       const r = await e.json();
-      throw r.error === "max_characters" ? new Error(St()) : r.error === "name_taken" ? new Error(lt()) : r.error == "empty_name" ? new Error(Mt()) : new Error(o())
+      throw r.error === "max_characters" ? new Error(xt()) : r.error === "name_taken" ? new Error(lt()) : r.error == "empty_name" ? new Error(Mt()) : new Error(o())
     } else throw e.status === 403 ? new Error(Hu()) : new Error(o())
   }
   async leaveAlliance() {
@@ -2545,6 +2548,14 @@ class Qd {
     });
     if (t.status !== 200) throw new d(o(), t.status);
     return t.json()
+  }
+  async getBanAppealStats(t, e) {
+    const r = await this.request(`/staff/dashboard/ban-appeals/see?start=${encodeURIComponent(t)}&end=${encodeURIComponent(e)}`, {
+      method: "GET",
+      credentials: "include"
+    });
+    if (r.status !== 200) throw new d(o(), r.status);
+    return (await r.json()).items ?? []
   }
   async getClosedTicketsByMod(t, e) {
     const r = await this.request(`/staff/dashboard/team/closed-tickets?start=${encodeURIComponent(t)}&end=${encodeURIComponent(e)}`, {
@@ -3104,11 +3115,11 @@ function el(n) {
     u = Number.NEGATIVE_INFINITY,
     i = Number.NEGATIVE_INFINITY;
   const l = n.map(k => {
-      const x = Math.round(k.tile[0] * r + k.pixel[0]),
-        S = Math.round(k.tile[1] * r + k.pixel[1]);
-      return x < a && (a = x), S < s && (s = S), x > u && (u = x), S > i && (i = S), {
-        x,
-        y: S,
+      const S = Math.round(k.tile[0] * r + k.pixel[0]),
+        x = Math.round(k.tile[1] * r + k.pixel[1]);
+      return S < a && (a = S), x < s && (s = x), S > u && (u = S), x > i && (i = x), {
+        x: S,
+        y: x,
         colorIdx: k.colorIdx
       }
     }),
@@ -3118,16 +3129,16 @@ function el(n) {
   const m = new Uint8ClampedArray(c * h * 4);
   for (const {
       x: k,
-      y: x,
-      colorIdx: S
+      y: S,
+      colorIdx: x
     }
     of l) {
-    const ae = (A = ne.colors) == null ? void 0 : A[S];
-    if (!ae) throw new Error(`Unknown palette color index: ${S}`);
-    const xe = k - a,
-      H = ((x - s) * c + xe) * 4,
-      [Se, Te, Ee] = ae.rgb;
-    m[H] = Se, m[H + 1] = Te, m[H + 2] = Ee, m[H + 3] = S === 0 ? 0 : 255
+    const ae = (A = ne.colors) == null ? void 0 : A[x];
+    if (!ae) throw new Error(`Unknown palette color index: ${x}`);
+    const Se = k - a,
+      H = ((S - s) * c + Se) * 4,
+      [xe, Te, Ee] = ae.rgb;
+    m[H] = xe, m[H + 1] = Te, m[H + 2] = Ee, m[H + 3] = x === 0 ? 0 : 255
   }
   return {
     data: m,
@@ -3168,7 +3179,7 @@ let Q = new Qd(le),
   re = !1,
   ve;
 
-function Sl() {
+function xl() {
   const n = ye("2025-09_pawtect");
   if (!n) throw new Error("pawtect experiment not found on load");
   n.variant !== "disabled" && (re || I.data && ge(Le).then(rl).catch(t => {
@@ -3188,7 +3199,7 @@ function rl() {
 }
 
 function al(n) {
-  if (ve) throw new Error(xu());
+  if (ve) throw new Error(Su());
   if (!re) throw new Error("Try again in a few seconds or reload the page.");
   return Dd(n)
 }
@@ -3206,5 +3217,5 @@ function Tl(n, t, e) {
   return ke(r)
 }
 export {
-  bl as A, be as C, yl as P, vl as S, ne as a, Q as b, o as c, wl as d, vr as e, Yt as f, Wr as g, oa as h, ya as i, b as j, ll as k, _l as l, ml as m, Sl as n, Tl as o, hl as p, kl as q, Xi as r, gl as s, _e as t, I as u, pl as v, fl as w, ho as x, gd as y, xl as z
+  bl as A, be as C, yl as P, vl as S, ne as a, Q as b, o as c, wl as d, vr as e, Yt as f, Wr as g, oa as h, ya as i, b as j, ll as k, _l as l, ho as m, ml as n, xl as o, Tl as p, hl as q, kl as r, gl as s, _e as t, I as u, Xi as v, pl as w, fl as x, gd as y, Sl as z
 };
