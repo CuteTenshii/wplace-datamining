@@ -1,37 +1,37 @@
 import {
   g as t
-} from "./Bu_K0cwi.js";
+} from "./DCTOo5lo.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "22a546fbb215f27eb1e048884138171ecb9ba2c5"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "98e9f0a798d14aeefb12d06ee236fbfeb3f778fb"
     }
   } catch {}
 })();
 try {
   (function() {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      r = new n.Error().stack;
-    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "ce125a4d-45c0-48a4-bfc6-e93640e57cc3", n._sentryDebugIdIdentifier = "sentry-dbid-ce125a4d-45c0-48a4-bfc6-e93640e57cc3")
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "484aa75f-fcab-41a2-9e77-87c3b236cbd0", e._sentryDebugIdIdentifier = "sentry-dbid-484aa75f-fcab-41a2-9e77-87c3b236cbd0")
   })()
 } catch {}
-const a = () => "Appeals",
-  s = () => "Apelos",
-  o = () => "申诉",
-  p = () => "Einsprüche",
-  c = () => "Apelaciones",
-  u = () => "Recours",
-  i = () => "Ricorsi",
-  l = () => "異議申立て",
-  f = () => "Odwołania",
-  d = () => "Апелляции",
-  b = () => "Апеляції",
-  _ = () => "Các kháng cáo",
-  y = (n = {}, r = {}) => {
-    const e = r.locale ?? t();
-    return e === "en" ? a() : e === "pt" ? s() : e === "ch" ? o() : e === "de" ? p() : e === "es" ? c() : e === "fr" ? u() : e === "it" ? i() : e === "jp" ? l() : e === "pl" ? f() : e === "ru" ? d() : e === "uk" ? b() : _()
+const f = () => "Confirm",
+  o = () => "Confirmar",
+  i = () => "确认",
+  c = () => "Bestätigen",
+  u = () => "Confirmar",
+  s = () => "Confirmer",
+  d = () => "Conferma",
+  a = () => "確認",
+  l = () => "Potwierdź",
+  b = () => "Подтвердить",
+  m = () => "Підтвердити",
+  p = () => "Xác nhận",
+  g = (e = {}, r = {}) => {
+    const n = r.locale ?? t();
+    return n === "en" ? f() : n === "pt" ? o() : n === "ch" ? i() : n === "de" ? c() : n === "es" ? u() : n === "fr" ? s() : n === "it" ? d() : n === "jp" ? a() : n === "pl" ? l() : n === "ru" ? b() : n === "uk" ? m() : p()
   };
 export {
-  y as a
+  g as c
 };

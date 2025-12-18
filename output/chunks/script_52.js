@@ -1,79 +1,53 @@
-import "./DDpMCJH1.js";
 import {
-  p as g,
-  f as c,
-  t as A,
-  b as r,
-  c as m,
-  s as v,
-  d as w,
-  r as y
-} from "./CQZMEYoL.js";
-import {
-  i as h
-} from "./Dsa6Vynv.js";
-import {
-  b as _,
-  a as f,
-  s as x
-} from "./C2XzIybF.js";
-import {
-  p as E,
-  r as T
-} from "./bk-D59aY.js";
+  g as t
+} from "./DCTOo5lo.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "22a546fbb215f27eb1e048884138171ecb9ba2c5"
+      id: "98e9f0a798d14aeefb12d06ee236fbfeb3f778fb"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      a = new e.Error().stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "7b56e66e-0dcd-4d0a-a6d5-79840b1778a3", e._sentryDebugIdIdentifier = "sentry-dbid-7b56e66e-0dcd-4d0a-a6d5-79840b1778a3")
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "07c3209e-18c7-4afb-bdae-8868be727c67", e._sentryDebugIdIdentifier = "sentry-dbid-07c3209e-18c7-4afb-bdae-8868be727c67")
   })()
 } catch {}
-const S = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
-var B = c("<span>wplace</span>"),
-  L = c('<div><img alt="Wplace logo"/> <!></div>');
-
-function D(e, a) {
-  g(a, !0);
-  let t = E(a, "size", 3, "default"),
-    b = T(a, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
-  var s = L();
-  _(s, () => ({
-    ...b,
-    class: `flex items-center gap-1.5 ${a.class??""}`
-  }));
-  var l = w(s);
-  let i;
-  var p = v(l, 2);
-  {
-    var u = o => {
-      var d = B();
-      let n;
-      A(() => n = f(d, 1, "text-base-content font-pixel", null, n, {
-        "text-4xl": t() === "default",
-        "text-5xl": t() === "lg" || t() === "medium"
-      })), r(o, d)
-    };
-    h(p, o => {
-      a.hasText && o(u)
-    })
-  }
-  y(s), A(() => {
-    i = f(l, 1, "pixelated h-auto shrink-0", null, i, {
-      "w-4": t() === "small",
-      "w-10": t() === "default",
-      "w-16": t() === "medium",
-      "w-20": t() === "lg"
-    }), x(l, "src", S)
-  }), r(e, s), m()
-}
+const o = () => "End",
+  i = () => "Fim",
+  u = () => "结束",
+  d = () => "Ende",
+  f = () => "Fin",
+  c = () => "Fin",
+  a = () => "Fine",
+  s = () => "終了",
+  l = () => "Koniec",
+  _ = () => "Конец",
+  g = () => "Кінець",
+  b = () => "Kết thúc",
+  L = (e = {}, n = {}) => {
+    const r = n.locale ?? t();
+    return r === "en" ? o() : r === "pt" ? i() : r === "ch" ? u() : r === "de" ? d() : r === "es" ? f() : r === "fr" ? c() : r === "it" ? a() : r === "jp" ? s() : r === "pl" ? l() : r === "ru" ? _() : r === "uk" ? g() : b()
+  },
+  p = () => "Error loading",
+  y = () => "Erro ao carregar",
+  h = () => "加载出错",
+  E = () => "Fehler beim Laden",
+  w = () => "Error al cargar",
+  m = () => "Erreur lors du chargement",
+  k = () => "Errore nel caricamento",
+  F = () => "読み込みエラー",
+  I = () => "Błąd ładowania",
+  T = () => "Ошибка загрузки",
+  j = () => "Помилка завантаження",
+  v = () => "Lỗi tải dữ liệu",
+  K = (e = {}, n = {}) => {
+    const r = n.locale ?? t();
+    return r === "en" ? p() : r === "pt" ? y() : r === "ch" ? h() : r === "de" ? E() : r === "es" ? w() : r === "fr" ? m() : r === "it" ? k() : r === "jp" ? F() : r === "pl" ? I() : r === "ru" ? T() : r === "uk" ? j() : v()
+  };
 export {
-  D as L
+  L as a, K as e
 };

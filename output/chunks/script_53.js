@@ -1,37 +1,79 @@
+import "./DQR1M6Or.js";
 import {
-  g as r
-} from "./Bu_K0cwi.js";
+  p as g,
+  f as b,
+  t as n,
+  b as A,
+  c as m,
+  s as v,
+  d as w,
+  r as y
+} from "./BdthSYuV.js";
+import {
+  i as h
+} from "./CqpwyTww.js";
+import {
+  b as _,
+  a as r,
+  s as x
+} from "./nqTt6Pp1.js";
+import {
+  p as E,
+  r as T
+} from "./DJaRQTNf.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "22a546fbb215f27eb1e048884138171ecb9ba2c5"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "98e9f0a798d14aeefb12d06ee236fbfeb3f778fb"
     }
   } catch {}
 })();
 try {
   (function() {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      a = new n.Error().stack;
-    a && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[a] = "ac2bd81a-caea-402f-892c-71119d430310", n._sentryDebugIdIdentifier = "sentry-dbid-ac2bd81a-caea-402f-892c-71119d430310")
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "661e7bf7-715f-4797-919b-d7dba827d8e1", e._sentryDebugIdIdentifier = "sentry-dbid-661e7bf7-715f-4797-919b-d7dba827d8e1")
   })()
 } catch {}
-const t = () => "Ban appeal",
-  o = () => "Revisão de banimento",
-  p = () => "封禁申诉",
-  i = () => "Bann-Einspruch",
-  u = () => "Apelación de ban",
-  l = () => "Recours de bannissement",
-  s = () => "Ricorso contro il ban",
-  c = () => "BANの異議申立て",
-  f = () => "Odwołanie od bana",
-  b = () => "Апелляция на бан",
-  d = () => "Апеляція на бан",
-  _ = () => "Kháng cáo lệnh cấm",
-  y = (n = {}, a = {}) => {
-    const e = a.locale ?? r();
-    return e === "en" ? t() : e === "pt" ? o() : e === "ch" ? p() : e === "de" ? i() : e === "es" ? u() : e === "fr" ? l() : e === "it" ? s() : e === "jp" ? c() : e === "pl" ? f() : e === "ru" ? b() : e === "uk" ? d() : _()
-  };
+const S = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
+var B = b("<span>wplace</span>"),
+  L = b('<div><img alt="Wplace logo"/> <!></div>');
+
+function D(e, t) {
+  g(t, !0);
+  let a = E(t, "size", 3, "default"),
+    c = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+  var s = L();
+  _(s, () => ({
+    ...c,
+    class: `flex items-center gap-1.5 ${t.class??""}`
+  }));
+  var l = w(s);
+  let i;
+  var p = v(l, 2);
+  {
+    var u = o => {
+      var d = B();
+      let f;
+      n(() => f = r(d, 1, "text-base-content font-pixel", null, f, {
+        "text-4xl": a() === "default",
+        "text-5xl": a() === "lg" || a() === "medium"
+      })), A(o, d)
+    };
+    h(p, o => {
+      t.hasText && o(u)
+    })
+  }
+  y(s), n(() => {
+    i = r(l, 1, "pixelated h-auto shrink-0", null, i, {
+      "w-4": a() === "small",
+      "w-10": a() === "default",
+      "w-16": a() === "medium",
+      "w-20": a() === "lg"
+    }), x(l, "src", S)
+  }), A(e, s), m()
+}
 export {
-  y as b
+  D as L
 };

@@ -1,22 +1,22 @@
 import {
   g as c
-} from "./Bu_K0cwi.js";
-import "./DDpMCJH1.js";
+} from "./DCTOo5lo.js";
+import "./DQR1M6Or.js";
 import {
   o as r,
   b as o
-} from "./CQZMEYoL.js";
+} from "./BdthSYuV.js";
 import {
   b as t
-} from "./C2XzIybF.js";
+} from "./nqTt6Pp1.js";
 import {
   r as i
-} from "./bk-D59aY.js";
+} from "./DJaRQTNf.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "22a546fbb215f27eb1e048884138171ecb9ba2c5"
+      id: "98e9f0a798d14aeefb12d06ee236fbfeb3f778fb"
     }
   } catch {}
 })();
@@ -24,7 +24,7 @@ try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       l = new e.Error().stack;
-    l && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[l] = "3f733826-a4b4-4deb-ab8e-4838d744dfb6", e._sentryDebugIdIdentifier = "sentry-dbid-3f733826-a4b4-4deb-ab8e-4838d744dfb6")
+    l && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[l] = "ba27398e-deeb-4275-8d3b-f6501cfe32a9", e._sentryDebugIdIdentifier = "sentry-dbid-ba27398e-deeb-4275-8d3b-f6501cfe32a9")
   })()
 } catch {}
 const d = e => `Copy alliance ID: #${e.allianceId}`,
@@ -35,13 +35,13 @@ const d = e => `Copy alliance ID: #${e.allianceId}`,
   u = e => `Copier l’ID de l’alliance : #${e.allianceId}`,
   y = e => `Copia ID dell'alleanza: #${e.allianceId}`,
   I = e => `アライアンスIDをコピー: #${e.allianceId}`,
-  b = e => `Kopiuj ID sojuszu: #${e.allianceId}`,
-  g = e => `Скопировать ID альянса: #${e.allianceId}`,
-  v = e => `Скопіювати ID альянсу: #${e.allianceId}`,
+  g = e => `Kopiuj ID sojuszu: #${e.allianceId}`,
+  v = e => `Скопировать ID альянса: #${e.allianceId}`,
+  b = e => `Скопіювати ID альянсу: #${e.allianceId}`,
   $ = e => `Sao chép ID liên minh: #${e.allianceId}`,
   C = (e, l = {}) => {
     const a = l.locale ?? c();
-    return a === "en" ? d(e) : a === "pt" ? f(e) : a === "ch" ? s(e) : a === "de" ? _(e) : a === "es" ? p(e) : a === "fr" ? u(e) : a === "it" ? y(e) : a === "jp" ? I(e) : a === "pl" ? b(e) : a === "ru" ? g(e) : a === "uk" ? v(e) : $(e)
+    return a === "en" ? d(e) : a === "pt" ? f(e) : a === "ch" ? s(e) : a === "de" ? _(e) : a === "es" ? p(e) : a === "fr" ? u(e) : a === "it" ? y(e) : a === "jp" ? I(e) : a === "pl" ? g(e) : a === "ru" ? v(e) : a === "uk" ? b(e) : $(e)
   };
 var m = r('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
 
