@@ -1,6 +1,6 @@
-import "./tNQCRQie.js";
+import "./DDpMCJH1.js";
 import {
-  p as b,
+  p as g,
   f as c,
   t as A,
   b as r,
@@ -8,24 +8,24 @@ import {
   s as v,
   d as w,
   r as y
-} from "./HtHXdD60.js";
+} from "./CQZMEYoL.js";
 import {
   i as h
-} from "./if-7Y7Ks.js";
+} from "./Dsa6Vynv.js";
 import {
   b as _,
   a as f,
   s as x
-} from "./ChcQ3zDA.js";
+} from "./C2XzIybF.js";
 import {
   p as E,
   r as T
-} from "./BvbKNzW-.js";
+} from "./bk-D59aY.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "3555dcfd10153d679a83fc3bd1544987e233c7a6"
+      id: "22a546fbb215f27eb1e048884138171ecb9ba2c5"
     }
   } catch {}
 })();
@@ -41,32 +41,32 @@ var B = c("<span>wplace</span>"),
   L = c('<div><img alt="Wplace logo"/> <!></div>');
 
 function D(e, a) {
-  b(a, !0);
+  g(a, !0);
   let t = E(a, "size", 3, "default"),
-    p = T(a, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+    b = T(a, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
   var s = L();
   _(s, () => ({
-    ...p,
+    ...b,
     class: `flex items-center gap-1.5 ${a.class??""}`
   }));
   var l = w(s);
-  let d;
-  var u = v(l, 2);
+  let i;
+  var p = v(l, 2);
   {
-    var g = o => {
-      var i = B();
+    var u = o => {
+      var d = B();
       let n;
-      A(() => n = f(i, 1, "text-base-content font-pixel", null, n, {
+      A(() => n = f(d, 1, "text-base-content font-pixel", null, n, {
         "text-4xl": t() === "default",
         "text-5xl": t() === "lg" || t() === "medium"
-      })), r(o, i)
+      })), r(o, d)
     };
-    h(u, o => {
-      a.hasText && o(g)
+    h(p, o => {
+      a.hasText && o(u)
     })
   }
   y(s), A(() => {
-    d = f(l, 1, "pixelated h-auto shrink-0", null, d, {
+    i = f(l, 1, "pixelated h-auto shrink-0", null, i, {
       "w-4": t() === "small",
       "w-10": t() === "default",
       "w-16": t() === "medium",

@@ -1,11 +1,11 @@
 import {
   g as e
-} from "./CVslo3Xr.js";
+} from "./Bu_K0cwi.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "3555dcfd10153d679a83fc3bd1544987e233c7a6"
+      id: "22a546fbb215f27eb1e048884138171ecb9ba2c5"
     }
   } catch {}
 })();
@@ -16,8 +16,8 @@ try {
     o && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[o] = "b7850824-069f-4be7-b009-d136f1039271", t._sentryDebugIdIdentifier = "sentry-dbid-b7850824-069f-4be7-b009-d136f1039271")
   })()
 } catch {}
-const d = () => "Administrator",
-  u = () => "Administrador",
+const u = () => "Administrator",
+  d = () => "Administrador",
   i = () => "管理员",
   s = () => "Administrator",
   a = () => "Administrador",
@@ -26,11 +26,11 @@ const d = () => "Administrator",
   _ = () => "管理者",
   f = () => "Administrator",
   m = () => "Администратор",
-  p = () => "Адміністратор",
-  b = () => "Quản trị viên",
+  b = () => "Адміністратор",
+  p = () => "Quản trị viên",
   g = (t = {}, o = {}) => {
     const r = o.locale ?? e();
-    return r === "en" ? d() : r === "pt" ? u() : r === "ch" ? i() : r === "de" ? s() : r === "es" ? a() : r === "fr" ? c() : r === "it" ? l() : r === "jp" ? _() : r === "pl" ? f() : r === "ru" ? m() : r === "uk" ? p() : b()
+    return r === "en" ? u() : r === "pt" ? d() : r === "ch" ? i() : r === "de" ? s() : r === "es" ? a() : r === "fr" ? c() : r === "it" ? l() : r === "jp" ? _() : r === "pl" ? f() : r === "ru" ? m() : r === "uk" ? b() : p()
   },
   M = () => "Discord Moderator",
   y = () => "Moderador do Discord",
@@ -82,8 +82,8 @@ const d = () => "Administrator",
   },
   er = () => "User",
   nr = () => "Usuário",
-  dr = () => "用户",
-  ur = () => "Benutzer",
+  ur = () => "用户",
+  dr = () => "Benutzer",
   ir = () => "Usuario",
   sr = () => "Utilisateur",
   ar = () => "Utente",
@@ -94,9 +94,9 @@ const d = () => "Administrator",
   mr = () => "Người dùng",
   n = (t = {}, o = {}) => {
     const r = o.locale ?? e();
-    return r === "en" ? er() : r === "pt" ? nr() : r === "ch" ? dr() : r === "de" ? ur() : r === "es" ? ir() : r === "fr" ? sr() : r === "it" ? ar() : r === "jp" ? cr() : r === "pl" ? lr() : r === "ru" ? _r() : r === "uk" ? fr() : mr()
+    return r === "en" ? er() : r === "pt" ? nr() : r === "ch" ? ur() : r === "de" ? dr() : r === "es" ? ir() : r === "fr" ? sr() : r === "it" ? ar() : r === "jp" ? cr() : r === "pl" ? lr() : r === "ru" ? _r() : r === "uk" ? fr() : mr()
   },
-  br = {
+  pr = {
     user: n(),
     community_leader: "Disc. Mod",
     moderator: "MOD",
@@ -111,5 +111,5 @@ const d = () => "Administrator",
     admin: g()
   };
 export {
-  gr as R, br as a
+  gr as R, pr as a
 };

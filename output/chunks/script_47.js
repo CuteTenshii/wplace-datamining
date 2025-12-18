@@ -1,15 +1,15 @@
 import {
   G as t,
   m as i,
-  k as s,
-  l as r,
-  B as l
-} from "./HtHXdD60.js";
+  k as b,
+  l as s,
+  B as r
+} from "./CQZMEYoL.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "3555dcfd10153d679a83fc3bd1544987e233c7a6"
+      id: "22a546fbb215f27eb1e048884138171ecb9ba2c5"
     }
   } catch {}
 })();
@@ -22,8 +22,8 @@ try {
 } catch {}
 
 function c(e, n, f) {
-  s && r();
-  var a = new l(e),
+  b && s();
+  var a = new r(e),
     o = !t();
   i(() => {
     var d = n();
