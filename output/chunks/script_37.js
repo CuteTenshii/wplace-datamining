@@ -1,22 +1,22 @@
 import {
   g as i
-} from "./DPMSJe7W.js";
-import "./BrLaT1mT.js";
+} from "./C78XSJmb.js";
+import "./DOoz6V9P.js";
 import {
   o as s,
   b as o
-} from "./6mH-Phwe.js";
+} from "./DAiWoJQM.js";
 import {
   b as p
-} from "./D_FC_TEr.js";
+} from "./DexA-uuz.js";
 import {
   r as c
-} from "./BM4e7f7A.js";
+} from "./BHI_t0iS.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "ed3bbe4c8b5513729863e5c0724fcbd405ffa555"
+      id: "718929eb34b39115ade64201f12b715208957752"
     }
   } catch {}
 })();
@@ -29,19 +29,19 @@ try {
 } catch {}
 const u = () => "Description",
   d = () => "Descrição",
-  f = () => "描述",
-  l = () => "Beschreibung",
+  l = () => "描述",
+  f = () => "Beschreibung",
   a = () => "Descripción",
   _ = () => "Description",
-  b = () => "Descrizione",
-  x = () => "説明",
+  x = () => "Descrizione",
+  b = () => "説明",
   g = () => "Opis",
   y = () => "Описание",
   w = () => "Опис",
   h = () => "Mô tả",
   z = (t = {}, n = {}) => {
     const e = n.locale ?? i();
-    return e === "en" ? u() : e === "pt" ? d() : e === "ch" ? f() : e === "de" ? l() : e === "es" ? a() : e === "fr" ? _() : e === "it" ? b() : e === "jp" ? x() : e === "pl" ? g() : e === "ru" ? y() : e === "uk" ? w() : h()
+    return e === "en" ? u() : e === "pt" ? d() : e === "ch" ? l() : e === "de" ? f() : e === "es" ? a() : e === "fr" ? _() : e === "it" ? x() : e === "jp" ? b() : e === "pl" ? g() : e === "ru" ? y() : e === "uk" ? w() : h()
   },
   m = () => "Pixels painted",
   v = () => "Pixels pintados",

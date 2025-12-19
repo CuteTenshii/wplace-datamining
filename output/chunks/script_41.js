@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./DPMSJe7W.js";
+} from "./C78XSJmb.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "ed3bbe4c8b5513729863e5c0724fcbd405ffa555"
+      id: "718929eb34b39115ade64201f12b715208957752"
     }
   } catch {}
 })();
@@ -19,8 +19,8 @@ try {
 const s = () => "Last pixel",
   i = () => "Último pixel",
   u = () => "最后一个像素",
-  c = () => "Letzter Pixel",
-  o = () => "Último píxel",
+  o = () => "Letzter Pixel",
+  c = () => "Último píxel",
   l = () => "Dernier pixel",
   a = () => "Ultimo pixel",
   _ = () => "最後のピクセル",
@@ -30,7 +30,7 @@ const s = () => "Last pixel",
   h = () => "Pixel cuối cùng",
   $ = (r = {}, t = {}) => {
     const e = t.locale ?? n();
-    return e === "en" ? s() : e === "pt" ? i() : e === "ch" ? u() : e === "de" ? c() : e === "es" ? o() : e === "fr" ? l() : e === "it" ? a() : e === "jp" ? _() : e === "pl" ? f() : e === "ru" ? p() : e === "uk" ? d() : h()
+    return e === "en" ? s() : e === "pt" ? i() : e === "ch" ? u() : e === "de" ? o() : e === "es" ? c() : e === "fr" ? l() : e === "it" ? a() : e === "jp" ? _() : e === "pl" ? f() : e === "ru" ? p() : e === "uk" ? d() : h()
   },
   b = () => "Search",
   v = () => "Buscar",
