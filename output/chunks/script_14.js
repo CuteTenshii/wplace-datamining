@@ -9,12 +9,12 @@ import {
   j as r,
   i as s,
   g as m
-} from "./AT3DTgMx.js";
+} from "./Doh7472n.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "38850961237e3d7e0cabf73306ceed2d401b42cd"
+      id: "38af963429a32dfcd0b04890bc625a0716dd4620"
     }
   } catch {}
 })();
@@ -31,15 +31,15 @@ const y = "true",
   T = "https://backend.wplace.live",
   p = "theme",
   L = "snowflakes-enabled";
-var d, g, u, c, l, f, h, b;
+var d, g, u, f, l, c, h, b;
 class E {
   constructor() {
     n(this, d, o(!1));
     n(this, g, o(!1));
     n(this, u, o(m(S())));
-    n(this, c, o(!1));
+    n(this, f, o(!1));
     n(this, l, o(!0));
-    n(this, f, o("custom-winter"));
+    n(this, c, o("custom-winter"));
     n(this, h, o(m(Date.now())));
     n(this, b, o(void 0));
     setInterval(() => {
@@ -70,10 +70,10 @@ class E {
     s(a(this, u), e, !0)
   }
   get turnstatileLoaded() {
-    return r(a(this, c))
+    return r(a(this, f))
   }
   set turnstatileLoaded(e) {
-    s(a(this, c), e, !0)
+    s(a(this, f), e, !0)
   }
   get snowflakesEnabled() {
     return r(a(this, l))
@@ -82,10 +82,10 @@ class E {
     s(a(this, l), e, !0), localStorage.setItem(L, String(e))
   }
   get theme() {
-    return r(a(this, f))
+    return r(a(this, c))
   }
   set theme(e) {
-    s(a(this, f), e, !0), localStorage.setItem(p, e), document.documentElement.setAttribute("data-theme", e)
+    s(a(this, c), e, !0), localStorage.setItem(p, e), document.documentElement.setAttribute("data-theme", e)
   }
   get now() {
     return r(a(this, h))
@@ -100,7 +100,7 @@ class E {
     s(a(this, b), e, !0)
   }
 }
-d = new WeakMap, g = new WeakMap, u = new WeakMap, c = new WeakMap, l = new WeakMap, f = new WeakMap, h = new WeakMap, b = new WeakMap;
+d = new WeakMap, g = new WeakMap, u = new WeakMap, f = new WeakMap, l = new WeakMap, c = new WeakMap, h = new WeakMap, b = new WeakMap;
 const U = new E;
 
 function S() {
