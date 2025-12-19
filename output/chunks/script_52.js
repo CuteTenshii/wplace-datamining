@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./BjhkMKVQ.js";
+} from "./BQcfAKNa.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "19c3537dbd7586a0b5506248246feedd8f873fcf"
+      id: "c74d55667ae34a0f1e0fb08ba8f2c36320dfa773"
     }
   } catch {}
 })();
@@ -21,16 +21,16 @@ const o = () => "End",
   u = () => "结束",
   d = () => "Ende",
   c = () => "Fin",
-  f = () => "Fin",
-  s = () => "Fine",
-  a = () => "終了",
+  a = () => "Fin",
+  f = () => "Fine",
+  s = () => "終了",
   l = () => "Koniec",
   _ = () => "Конец",
   g = () => "Кінець",
   p = () => "Kết thúc",
   L = (e = {}, n = {}) => {
     const r = n.locale ?? t();
-    return r === "en" ? o() : r === "pt" ? i() : r === "ch" ? u() : r === "de" ? d() : r === "es" ? c() : r === "fr" ? f() : r === "it" ? s() : r === "jp" ? a() : r === "pl" ? l() : r === "ru" ? _() : r === "uk" ? g() : p()
+    return r === "en" ? o() : r === "pt" ? i() : r === "ch" ? u() : r === "de" ? d() : r === "es" ? c() : r === "fr" ? a() : r === "it" ? f() : r === "jp" ? s() : r === "pl" ? l() : r === "ru" ? _() : r === "uk" ? g() : p()
   },
   b = () => "Error loading",
   y = () => "Erro ao carregar",

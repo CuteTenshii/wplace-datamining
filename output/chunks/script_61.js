@@ -1,11 +1,11 @@
 import {
   g as e
-} from "./BjhkMKVQ.js";
+} from "./BQcfAKNa.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "19c3537dbd7586a0b5506248246feedd8f873fcf"
+      id: "c74d55667ae34a0f1e0fb08ba8f2c36320dfa773"
     }
   } catch {}
 })();
@@ -16,8 +16,8 @@ try {
     o && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[o] = "b7850824-069f-4be7-b009-d136f1039271", t._sentryDebugIdIdentifier = "sentry-dbid-b7850824-069f-4be7-b009-d136f1039271")
   })()
 } catch {}
-const d = () => "Administrator",
-  u = () => "Administrador",
+const u = () => "Administrator",
+  d = () => "Administrador",
   i = () => "管理员",
   s = () => "Administrator",
   a = () => "Administrador",
@@ -30,7 +30,7 @@ const d = () => "Administrator",
   b = () => "Quản trị viên",
   g = (t = {}, o = {}) => {
     const r = o.locale ?? e();
-    return r === "en" ? d() : r === "pt" ? u() : r === "ch" ? i() : r === "de" ? s() : r === "es" ? a() : r === "fr" ? c() : r === "it" ? l() : r === "jp" ? _() : r === "pl" ? f() : r === "ru" ? m() : r === "uk" ? p() : b()
+    return r === "en" ? u() : r === "pt" ? d() : r === "ch" ? i() : r === "de" ? s() : r === "es" ? a() : r === "fr" ? c() : r === "it" ? l() : r === "jp" ? _() : r === "pl" ? f() : r === "ru" ? m() : r === "uk" ? p() : b()
   },
   M = () => "Discord Moderator",
   y = () => "Moderador do Discord",
@@ -82,8 +82,8 @@ const d = () => "Administrator",
   },
   er = () => "User",
   nr = () => "Usuário",
-  dr = () => "用户",
-  ur = () => "Benutzer",
+  ur = () => "用户",
+  dr = () => "Benutzer",
   ir = () => "Usuario",
   sr = () => "Utilisateur",
   ar = () => "Utente",
@@ -94,7 +94,7 @@ const d = () => "Administrator",
   mr = () => "Người dùng",
   n = (t = {}, o = {}) => {
     const r = o.locale ?? e();
-    return r === "en" ? er() : r === "pt" ? nr() : r === "ch" ? dr() : r === "de" ? ur() : r === "es" ? ir() : r === "fr" ? sr() : r === "it" ? ar() : r === "jp" ? cr() : r === "pl" ? lr() : r === "ru" ? _r() : r === "uk" ? fr() : mr()
+    return r === "en" ? er() : r === "pt" ? nr() : r === "ch" ? ur() : r === "de" ? dr() : r === "es" ? ir() : r === "fr" ? sr() : r === "it" ? ar() : r === "jp" ? cr() : r === "pl" ? lr() : r === "ru" ? _r() : r === "uk" ? fr() : mr()
   },
   br = {
     user: n(),
