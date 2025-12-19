@@ -4,21 +4,21 @@ import {
   l as h,
   ak as b,
   al as p,
-  Z as y,
+  Z as c,
   _ as w,
   ag as v,
   am as m,
   an as T,
-  ao as c,
+  ao as y,
   R as E,
   ap as R,
   T as i
-} from "./B027wXXf.js";
+} from "./CRdf5mx2.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "1fc63189bd875d45532225bb2fa0d0f149510e94"
+      id: "65f7af1ca1d715ef20a4159507e8f6b55052c932"
     }
   } catch {}
 })();
@@ -41,16 +41,16 @@ function k(e, f, r = !1, o = !1, D = !1) {
     }
     if (n.nodes_start !== null && (p(n.nodes_start, n.nodes_end), n.nodes_start = n.nodes_end = null), t !== "") {
       if (u) {
-        y.data;
+        c.data;
         for (var a = h(), _ = a; a !== null && (a.nodeType !== w || a.data !== "");) _ = a, a = v(a);
         if (a === null) throw m(), T;
-        c(y, _), l = E(a);
+        y(c, _), l = E(a);
         return
       }
       var s = t + "";
       r ? s = `<svg>${s}</svg>` : o && (s = `<math>${s}</math>`);
       var d = R(s);
-      if ((r || o) && (d = i(d)), c(i(d), d.lastChild), r || o)
+      if ((r || o) && (d = i(d)), y(i(d), d.lastChild), r || o)
         for (; i(d);) l.before(i(d));
       else l.before(d)
     }
