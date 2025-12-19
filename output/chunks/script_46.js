@@ -2,7 +2,7 @@
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "38af963429a32dfcd0b04890bc625a0716dd4620"
+      id: "19c3537dbd7586a0b5506248246feedd8f873fcf"
     }
   } catch {}
 })();
@@ -25,7 +25,7 @@ function D(t, {
 }, c = {}) {
   var {
     delay: h = 0,
-    duration: i = n => Math.sqrt(n) * 120,
+    duration: a = n => Math.sqrt(n) * 120,
     easing: y = z
   } = c, d = getComputedStyle(t), g = d.transform === "none" ? "" : d.transform, [f, o] = d.transformOrigin.split(" ").map(parseFloat);
   f /= t.clientWidth, o /= t.clientHeight;
@@ -42,13 +42,13 @@ function D(t, {
     E = e.height / r.height;
   return {
     delay: h,
-    duration: typeof i == "function" ? i(Math.sqrt(s * s + l * l)) : i,
+    duration: typeof a == "function" ? a(Math.sqrt(s * s + l * l)) : a,
     easing: y,
-    css: (n, a) => {
-      var _ = a * s,
-        I = a * l,
-        T = n + a * S,
-        $ = n + a * E;
+    css: (n, i) => {
+      var _ = i * s,
+        I = i * l,
+        T = n + i * S,
+        $ = n + i * E;
       return `transform: ${g} translate(${_}px, ${I}px) scale(${T}, ${$});`
     }
   }
