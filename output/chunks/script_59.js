@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./BQcfAKNa.js";
+} from "./Doj4Osb_.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "c74d55667ae34a0f1e0fb08ba8f2c36320dfa773"
+      id: "1fc63189bd875d45532225bb2fa0d0f149510e94"
     }
   } catch {}
 })();
@@ -17,11 +17,11 @@ try {
   })()
 } catch {}
 const d = () => "Dashboard",
-  a = () => "Painel",
-  o = () => "控制台",
+  o = () => "Painel",
+  a = () => "控制台",
   s = () => "Dashboard",
-  f = () => "Panel",
-  u = () => "Tableau de bord",
+  u = () => "Panel",
+  f = () => "Tableau de bord",
   i = () => "Pannello",
   b = () => "ダッシュボード",
   l = () => "Panel",
@@ -30,7 +30,7 @@ const d = () => "Dashboard",
   p = () => "Bảng điều khiển",
   g = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? d() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? s() : e === "es" ? f() : e === "fr" ? u() : e === "it" ? i() : e === "jp" ? b() : e === "pl" ? l() : e === "ru" ? c() : e === "uk" ? h() : p()
+    return e === "en" ? d() : e === "pt" ? o() : e === "ch" ? a() : e === "de" ? s() : e === "es" ? u() : e === "fr" ? f() : e === "it" ? i() : e === "jp" ? b() : e === "pl" ? l() : e === "ru" ? c() : e === "uk" ? h() : p()
   };
 export {
   g as d
