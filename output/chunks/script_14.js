@@ -9,12 +9,12 @@ import {
   j as r,
   i as s,
   g as m
-} from "./CRdf5mx2.js";
+} from "./6mH-Phwe.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "65f7af1ca1d715ef20a4159507e8f6b55052c932"
+      id: "ed3bbe4c8b5513729863e5c0724fcbd405ffa555"
     }
   } catch {}
 })();
@@ -31,11 +31,11 @@ const y = "true",
   T = "https://backend.wplace.live",
   p = "theme",
   L = "snowflakes-enabled";
-var g, d, u, f, l, c, h, b;
+var d, g, u, f, l, c, h, b;
 class E {
   constructor() {
-    n(this, g, o(!1));
     n(this, d, o(!1));
+    n(this, g, o(!1));
     n(this, u, o(m(S())));
     n(this, f, o(!1));
     n(this, l, o(!0));
@@ -52,16 +52,16 @@ class E {
     }
   }
   get dropletsDialogOpen() {
-    return r(a(this, g))
-  }
-  set dropletsDialogOpen(e) {
-    s(a(this, g), e, !0)
-  }
-  get muted() {
     return r(a(this, d))
   }
-  set muted(e) {
+  set dropletsDialogOpen(e) {
     s(a(this, d), e, !0)
+  }
+  get muted() {
+    return r(a(this, g))
+  }
+  set muted(e) {
+    s(a(this, g), e, !0)
   }
   get language() {
     return r(a(this, u))
@@ -100,7 +100,7 @@ class E {
     s(a(this, b), e, !0)
   }
 }
-g = new WeakMap, d = new WeakMap, u = new WeakMap, f = new WeakMap, l = new WeakMap, c = new WeakMap, h = new WeakMap, b = new WeakMap;
+d = new WeakMap, g = new WeakMap, u = new WeakMap, f = new WeakMap, l = new WeakMap, c = new WeakMap, h = new WeakMap, b = new WeakMap;
 const U = new E;
 
 function S() {

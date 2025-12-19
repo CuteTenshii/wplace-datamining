@@ -1,11 +1,11 @@
 import {
   g as e
-} from "./D5pF9uVW.js";
+} from "./DPMSJe7W.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "65f7af1ca1d715ef20a4159507e8f6b55052c932"
+      id: "ed3bbe4c8b5513729863e5c0724fcbd405ffa555"
     }
   } catch {}
 })();
@@ -26,11 +26,11 @@ const u = () => "Administrator",
   _ = () => "管理者",
   f = () => "Administrator",
   m = () => "Администратор",
-  p = () => "Адміністратор",
-  b = () => "Quản trị viên",
+  b = () => "Адміністратор",
+  p = () => "Quản trị viên",
   g = (t = {}, o = {}) => {
     const r = o.locale ?? e();
-    return r === "en" ? u() : r === "pt" ? d() : r === "ch" ? i() : r === "de" ? s() : r === "es" ? a() : r === "fr" ? c() : r === "it" ? l() : r === "jp" ? _() : r === "pl" ? f() : r === "ru" ? m() : r === "uk" ? p() : b()
+    return r === "en" ? u() : r === "pt" ? d() : r === "ch" ? i() : r === "de" ? s() : r === "es" ? a() : r === "fr" ? c() : r === "it" ? l() : r === "jp" ? _() : r === "pl" ? f() : r === "ru" ? m() : r === "uk" ? b() : p()
   },
   M = () => "Discord Moderator",
   y = () => "Moderador do Discord",
@@ -96,7 +96,7 @@ const u = () => "Administrator",
     const r = o.locale ?? e();
     return r === "en" ? er() : r === "pt" ? nr() : r === "ch" ? ur() : r === "de" ? dr() : r === "es" ? ir() : r === "fr" ? sr() : r === "it" ? ar() : r === "jp" ? cr() : r === "pl" ? lr() : r === "ru" ? _r() : r === "uk" ? fr() : mr()
   },
-  br = {
+  pr = {
     user: n(),
     community_leader: "Disc. Mod",
     moderator: "MOD",
@@ -111,5 +111,5 @@ const u = () => "Administrator",
     admin: g()
   };
 export {
-  gr as R, br as a
+  gr as R, pr as a
 };

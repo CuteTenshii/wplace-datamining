@@ -1,31 +1,31 @@
-import "./B6gWK9Qj.js";
+import "./BrLaT1mT.js";
 import {
   p as g,
-  f as c,
+  f as b,
   t as f,
   b as A,
   c as m,
   s as v,
   d as w,
   r as y
-} from "./CRdf5mx2.js";
+} from "./6mH-Phwe.js";
 import {
   i as h
-} from "./BNTdvh8t.js";
+} from "./iOb0rBbR.js";
 import {
   b as _,
   a as r,
   s as x
-} from "./B2Lez2fR.js";
+} from "./D_FC_TEr.js";
 import {
   p as E,
   r as T
-} from "./1N3k-Mrn.js";
+} from "./BM4e7f7A.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "65f7af1ca1d715ef20a4159507e8f6b55052c932"
+      id: "ed3bbe4c8b5513729863e5c0724fcbd405ffa555"
     }
   } catch {}
 })();
@@ -37,16 +37,16 @@ try {
   })()
 } catch {}
 const S = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
-var B = c("<span>wplace</span>"),
-  L = c('<div><img alt="Wplace logo"/> <!></div>');
+var B = b("<span>wplace</span>"),
+  L = b('<div><img alt="Wplace logo"/> <!></div>');
 
 function D(e, t) {
   g(t, !0);
   let a = E(t, "size", 3, "default"),
-    b = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+    c = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
   var s = L();
   _(s, () => ({
-    ...b,
+    ...c,
     class: `flex items-center gap-1.5 ${t.class??""}`
   }));
   var l = w(s);
@@ -54,12 +54,12 @@ function D(e, t) {
   var p = v(l, 2);
   {
     var u = o => {
-      var n = B();
-      let d;
-      f(() => d = r(n, 1, "text-base-content font-pixel", null, d, {
+      var d = B();
+      let n;
+      f(() => n = r(d, 1, "text-base-content font-pixel", null, n, {
         "text-4xl": a() === "default",
         "text-5xl": a() === "lg" || a() === "medium"
-      })), A(o, n)
+      })), A(o, d)
     };
     h(p, o => {
       t.hasText && o(u)

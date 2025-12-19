@@ -1,11 +1,11 @@
 import {
   a as i
-} from "./BVhG-cPP.js";
+} from "./-G7ZKA3W.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "65f7af1ca1d715ef20a4159507e8f6b55052c932"
+      id: "ed3bbe4c8b5513729863e5c0724fcbd405ffa555"
     }
   } catch {}
 })();
@@ -123,9 +123,9 @@ function M(t, e) {
     v = 1 + .015 * r,
     f = n / 1,
     g = s / m,
-    d = c / v,
-    b = f * f + g * g + d * d;
-  return b < 0 ? 0 : Math.sqrt(b)
+    b = c / v,
+    d = f * f + g * g + b * b;
+  return d < 0 ? 0 : Math.sqrt(d)
 }
 
 function x(t, e) {
