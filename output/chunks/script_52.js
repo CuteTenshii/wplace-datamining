@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./C78XSJmb.js";
+} from "./CQePO0m_.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "718929eb34b39115ade64201f12b715208957752"
+      id: "50c680b400b1bbcc8448fbf904e79ce0ac9a7ba9"
     }
   } catch {}
 })();
@@ -21,18 +21,18 @@ const o = () => "End",
   u = () => "结束",
   d = () => "Ende",
   c = () => "Fin",
-  s = () => "Fin",
-  a = () => "Fine",
+  a = () => "Fin",
+  s = () => "Fine",
   f = () => "終了",
   l = () => "Koniec",
   _ = () => "Конец",
   g = () => "Кінець",
-  p = () => "Kết thúc",
+  b = () => "Kết thúc",
   L = (e = {}, n = {}) => {
     const r = n.locale ?? t();
-    return r === "en" ? o() : r === "pt" ? i() : r === "ch" ? u() : r === "de" ? d() : r === "es" ? c() : r === "fr" ? s() : r === "it" ? a() : r === "jp" ? f() : r === "pl" ? l() : r === "ru" ? _() : r === "uk" ? g() : p()
+    return r === "en" ? o() : r === "pt" ? i() : r === "ch" ? u() : r === "de" ? d() : r === "es" ? c() : r === "fr" ? a() : r === "it" ? s() : r === "jp" ? f() : r === "pl" ? l() : r === "ru" ? _() : r === "uk" ? g() : b()
   },
-  b = () => "Error loading",
+  p = () => "Error loading",
   y = () => "Erro ao carregar",
   h = () => "加载出错",
   E = () => "Fehler beim Laden",
@@ -46,7 +46,7 @@ const o = () => "End",
   v = () => "Lỗi tải dữ liệu",
   K = (e = {}, n = {}) => {
     const r = n.locale ?? t();
-    return r === "en" ? b() : r === "pt" ? y() : r === "ch" ? h() : r === "de" ? E() : r === "es" ? w() : r === "fr" ? m() : r === "it" ? k() : r === "jp" ? F() : r === "pl" ? I() : r === "ru" ? T() : r === "uk" ? j() : v()
+    return r === "en" ? p() : r === "pt" ? y() : r === "ch" ? h() : r === "de" ? E() : r === "es" ? w() : r === "fr" ? m() : r === "it" ? k() : r === "jp" ? F() : r === "pl" ? I() : r === "ru" ? T() : r === "uk" ? j() : v()
   };
 export {
   L as a, K as e

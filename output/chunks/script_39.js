@@ -1,22 +1,22 @@
 import {
   g as c
-} from "./C78XSJmb.js";
-import "./DOoz6V9P.js";
+} from "./CQePO0m_.js";
+import "./CH7bPVZ-.js";
 import {
   o as r,
   b as o
-} from "./DAiWoJQM.js";
+} from "./lghyzkeh.js";
 import {
   b as t
-} from "./DexA-uuz.js";
+} from "./B41b44vU.js";
 import {
   r as i
-} from "./BHI_t0iS.js";
+} from "./9N34mgL9.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "718929eb34b39115ade64201f12b715208957752"
+      id: "50c680b400b1bbcc8448fbf904e79ce0ac9a7ba9"
     }
   } catch {}
 })();
@@ -28,20 +28,20 @@ try {
   })()
 } catch {}
 const d = e => `Copy alliance ID: #${e.allianceId}`,
-  s = e => `Copiar ID da aliança: #${e.allianceId}`,
-  f = e => `复制联盟 ID：#${e.allianceId}`,
+  f = e => `Copiar ID da aliança: #${e.allianceId}`,
+  s = e => `复制联盟 ID：#${e.allianceId}`,
   _ = e => `Allianz-ID kopieren: #${e.allianceId}`,
   p = e => `Copiar ID de la alianza: #${e.allianceId}`,
   u = e => `Copier l’ID de l’alliance : #${e.allianceId}`,
   y = e => `Copia ID dell'alleanza: #${e.allianceId}`,
   I = e => `アライアンスIDをコピー: #${e.allianceId}`,
-  g = e => `Kopiuj ID sojuszu: #${e.allianceId}`,
-  v = e => `Скопировать ID альянса: #${e.allianceId}`,
-  b = e => `Скопіювати ID альянсу: #${e.allianceId}`,
+  b = e => `Kopiuj ID sojuszu: #${e.allianceId}`,
+  g = e => `Скопировать ID альянса: #${e.allianceId}`,
+  v = e => `Скопіювати ID альянсу: #${e.allianceId}`,
   $ = e => `Sao chép ID liên minh: #${e.allianceId}`,
   C = (e, l = {}) => {
     const a = l.locale ?? c();
-    return a === "en" ? d(e) : a === "pt" ? s(e) : a === "ch" ? f(e) : a === "de" ? _(e) : a === "es" ? p(e) : a === "fr" ? u(e) : a === "it" ? y(e) : a === "jp" ? I(e) : a === "pl" ? g(e) : a === "ru" ? v(e) : a === "uk" ? b(e) : $(e)
+    return a === "en" ? d(e) : a === "pt" ? f(e) : a === "ch" ? s(e) : a === "de" ? _(e) : a === "es" ? p(e) : a === "fr" ? u(e) : a === "it" ? y(e) : a === "jp" ? I(e) : a === "pl" ? b(e) : a === "ru" ? g(e) : a === "uk" ? v(e) : $(e)
   };
 var m = r('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
 
