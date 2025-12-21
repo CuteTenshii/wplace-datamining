@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./Cg2XhUFn.js";
+} from "./D6q4lDPF.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "10c5dbe739336528c9b18a68ad9bf5dfd745fca4"
+      id: "df9c0bc1fb3c4ec52327763de3771537961b5859"
     }
   } catch {}
 })();
@@ -23,14 +23,14 @@ const c = () => "Cancel",
   o = () => "Cancelar",
   a = () => "Annuler",
   i = () => "Annulla",
-  d = () => "キャンセル",
-  s = () => "Anuluj",
+  s = () => "キャンセル",
+  d = () => "Anuluj",
   b = () => "Отмена",
   p = () => "Скасувати",
   _ = () => "Hủy",
   g = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? c() : e === "pt" ? f() : e === "ch" ? l() : e === "de" ? u() : e === "es" ? o() : e === "fr" ? a() : e === "it" ? i() : e === "jp" ? d() : e === "pl" ? s() : e === "ru" ? b() : e === "uk" ? p() : _()
+    return e === "en" ? c() : e === "pt" ? f() : e === "ch" ? l() : e === "de" ? u() : e === "es" ? o() : e === "fr" ? a() : e === "it" ? i() : e === "jp" ? s() : e === "pl" ? d() : e === "ru" ? b() : e === "uk" ? p() : _()
   };
 export {
   g as c
