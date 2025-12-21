@@ -1,9 +1,9 @@
-import "./QXhM8ouP.js";
+import "./CREYxt0H.js";
 (function() {
   try {
     var V = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     V.SENTRY_RELEASE = {
-      id: "df9c0bc1fb3c4ec52327763de3771537961b5859"
+      id: "93f384388d5e7c5014b7c7528c87cda732169ee9"
     }
   } catch {}
 })();
@@ -38,17 +38,17 @@ function C() {
   for (const A of Object.values(V)) A.preload = "auto", A.volume = .3;
   return V
 }
-let n;
+let a;
 
 function M(V) {
-  return n = V, t({
+  return a = V, t({
     type: "previewPixels",
     data: V
   })
 }
 
 function E() {
-  return n = void 0, t({
+  return a = void 0, t({
     type: "clearPixelPreview"
   })
 }
@@ -60,7 +60,7 @@ function I(V) {
   })
 }
 async function Q() {
-  n || await t({
+  a || await t({
     type: "clearPixelPreview"
   })
 }
@@ -75,11 +75,11 @@ function t(V) {
     try {
       const s = navigator.serviceWorker;
       s || i(new Error("Service Workers are not supported/enabled in your browser. Some features might not work properly."));
-      const a = r => {
+      const n = r => {
         var e;
-        ((e = r.data) == null ? void 0 : e.id) === A && (l(void 0), s.removeEventListener("message", a))
+        ((e = r.data) == null ? void 0 : e.id) === A && (l(void 0), s.removeEventListener("message", n))
       };
-      s.addEventListener("message", a);
+      s.addEventListener("message", n);
       const g = navigator.serviceWorker.controller;
       g ? g.postMessage(o) : navigator.serviceWorker.ready.then(r => {
         const e = r.active;

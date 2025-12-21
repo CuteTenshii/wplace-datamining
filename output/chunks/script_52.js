@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./D6q4lDPF.js";
+} from "./Ebtv1rHw.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "df9c0bc1fb3c4ec52327763de3771537961b5859"
+      id: "93f384388d5e7c5014b7c7528c87cda732169ee9"
     }
   } catch {}
 })();
@@ -22,15 +22,15 @@ const o = () => "End",
   d = () => "Ende",
   c = () => "Fin",
   s = () => "Fin",
-  f = () => "Fine",
-  a = () => "終了",
+  a = () => "Fine",
+  f = () => "終了",
   l = () => "Koniec",
   _ = () => "Конец",
   g = () => "Кінець",
   p = () => "Kết thúc",
   L = (e = {}, n = {}) => {
     const r = n.locale ?? t();
-    return r === "en" ? o() : r === "pt" ? i() : r === "ch" ? u() : r === "de" ? d() : r === "es" ? c() : r === "fr" ? s() : r === "it" ? f() : r === "jp" ? a() : r === "pl" ? l() : r === "ru" ? _() : r === "uk" ? g() : p()
+    return r === "en" ? o() : r === "pt" ? i() : r === "ch" ? u() : r === "de" ? d() : r === "es" ? c() : r === "fr" ? s() : r === "it" ? a() : r === "jp" ? f() : r === "pl" ? l() : r === "ru" ? _() : r === "uk" ? g() : p()
   },
   b = () => "Error loading",
   y = () => "Erro ao carregar",
