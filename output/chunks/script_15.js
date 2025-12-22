@@ -14,7 +14,7 @@ var f = (n, t, e) => (qe(n, t, "read from private field"), e ? e.call(n) : t.get
   w = (n, t, e) => t.has(n) ? oe("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(n) : t.set(n, e);
 import {
   g as _
-} from "./Ebtv1rHw.js";
+} from "./g2ZRSQwI.js";
 import {
   e as T,
   g as ie,
@@ -22,20 +22,20 @@ import {
   i as v,
   x as ue,
   u as q
-} from "./BsKihL7x.js";
+} from "./DuPBYAm5.js";
 import {
   P as me,
   g as ze
-} from "./CREYxt0H.js";
+} from "./D8YTb9xp.js";
 import {
   s as Oe,
   c as Ce
-} from "./D3dLs2SV.js";
+} from "./B5rpPQYT.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "93f384388d5e7c5014b7c7528c87cda732169ee9"
+      id: "f4e63ff6847082fed878819138982e523bd7482d"
     }
   } catch {}
 })();
@@ -43,7 +43,7 @@ try {
   (function() {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       t = new n.Error().stack;
-    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "e5ee8dd6-4142-44e8-8506-4c9fabbed793", n._sentryDebugIdIdentifier = "sentry-dbid-e5ee8dd6-4142-44e8-8506-4c9fabbed793")
+    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "41f79d3e-dc44-4873-9c6f-fc8dcf326989", n._sentryDebugIdIdentifier = "sentry-dbid-41f79d3e-dc44-4873-9c6f-fc8dcf326989")
   })()
 } catch {}
 
@@ -2971,17 +2971,16 @@ class Qd {
     if (t.status !== 200) throw new c(o(), t.status);
     return t.json()
   }
-  async postResponseAppeal(t, e, r) {
-    const a = await this.request(`/staff/appeals/${t}/handle`, {
+  async postResponseAppeal(t, e) {
+    const r = await this.request(`/staff/appeals/${t}/handle`, {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
-        approved: e,
-        appealType: r
+        approved: e
       })
     });
-    if (a.status !== 200) throw new c(o(), a.status);
-    return await a.json()
+    if (r.status !== 200) throw new c(o(), r.status);
+    return await r.json()
   }
   async getUserLastAppeal() {
     const t = await this.request("/me/last-appeal", {
