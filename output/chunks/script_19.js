@@ -28,12 +28,12 @@ import {
   D as _r,
   bv as Ar,
   bw as Sr
-} from "./DHOOAIHf.js";
+} from "./UgOLX8QU.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "2e64873115a19acf275cba17d06aff2c6f4b185d"
+      id: "8706a848567fc83422d651908aa77f13fdf383e3"
     }
   } catch {}
 })();

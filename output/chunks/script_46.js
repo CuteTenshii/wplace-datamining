@@ -2,7 +2,7 @@
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "2e64873115a19acf275cba17d06aff2c6f4b185d"
+      id: "8706a848567fc83422d651908aa77f13fdf383e3"
     }
   } catch {}
 })();
@@ -22,22 +22,22 @@ function z(t) {
 function D(t, {
   from: e,
   to: r
-}, u = {}) {
+}, c = {}) {
   var {
     delay: h = 0,
     duration: i = n => Math.sqrt(n) * 120,
     easing: y = z
-  } = u, d = getComputedStyle(t), g = d.transform === "none" ? "" : d.transform, [f, o] = d.transformOrigin.split(" ").map(parseFloat);
+  } = c, d = getComputedStyle(t), g = d.transform === "none" ? "" : d.transform, [f, o] = d.transformOrigin.split(" ").map(parseFloat);
   f /= t.clientWidth, o /= t.clientHeight;
-  var c = C(t),
-    v = t.clientWidth / r.width / c,
-    p = t.clientHeight / r.height / c,
-    b = e.left + e.width * f,
-    w = e.top + e.height * o,
+  var u = C(t),
+    v = t.clientWidth / r.width / u,
+    p = t.clientHeight / r.height / u,
+    w = e.left + e.width * f,
+    b = e.top + e.height * o,
     x = r.left + r.width * f,
     m = r.top + r.height * o,
-    s = (b - x) * v,
-    l = (w - m) * p,
+    s = (w - x) * v,
+    l = (b - m) * p,
     S = e.width / r.width,
     E = e.height / r.height;
   return {

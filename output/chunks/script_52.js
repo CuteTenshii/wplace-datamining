@@ -1,11 +1,11 @@
 import {
   g as r
-} from "./CgRLIIvp.js";
+} from "./CMw04vg4.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "2e64873115a19acf275cba17d06aff2c6f4b185d"
+      id: "8706a848567fc83422d651908aa77f13fdf383e3"
     }
   } catch {}
 })();
@@ -25,12 +25,12 @@ const d = () => "End",
   c = () => "Fine",
   a = () => "終了",
   l = () => "Koniec",
-  b = () => "Конец",
-  p = () => "Кінець",
-  _ = () => "Kết thúc",
+  p = () => "Конец",
+  _ = () => "Кінець",
+  b = () => "Kết thúc",
   g = (n = {}, t = {}) => {
     const e = t.locale ?? r();
-    return e === "en" ? d() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? u() : e === "es" ? f() : e === "fr" ? s() : e === "it" ? c() : e === "jp" ? a() : e === "pl" ? l() : e === "ru" ? b() : e === "uk" ? p() : _()
+    return e === "en" ? d() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? u() : e === "es" ? f() : e === "fr" ? s() : e === "it" ? c() : e === "jp" ? a() : e === "pl" ? l() : e === "ru" ? p() : e === "uk" ? _() : b()
   };
 export {
   g as e

@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./CgRLIIvp.js";
+} from "./CMw04vg4.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "2e64873115a19acf275cba17d06aff2c6f4b185d"
+      id: "8706a848567fc83422d651908aa77f13fdf383e3"
     }
   } catch {}
 })();
@@ -26,12 +26,12 @@ const f = () => "Refresh",
   a = () => "更新",
   l = () => "Odśwież",
   h = () => "Обновить",
-  b = () => "Оновити",
-  p = () => "Làm mới",
-  g = (r = {}, n = {}) => {
+  p = () => "Оновити",
+  _ = () => "Làm mới",
+  b = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? f() : e === "pt" ? s() : e === "ch" ? u() : e === "de" ? i() : e === "es" ? o() : e === "fr" ? d() : e === "it" ? c() : e === "jp" ? a() : e === "pl" ? l() : e === "ru" ? h() : e === "uk" ? b() : p()
+    return e === "en" ? f() : e === "pt" ? s() : e === "ch" ? u() : e === "de" ? i() : e === "es" ? o() : e === "fr" ? d() : e === "it" ? c() : e === "jp" ? a() : e === "pl" ? l() : e === "ru" ? h() : e === "uk" ? p() : _()
   };
 export {
-  g as r
+  b as r
 };
