@@ -1,37 +1,37 @@
 import {
-  g as r
-} from "./g2ZRSQwI.js";
+  g as t
+} from "./CgRLIIvp.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "f4e63ff6847082fed878819138982e523bd7482d"
+      id: "2e64873115a19acf275cba17d06aff2c6f4b185d"
     }
   } catch {}
 })();
 try {
   (function() {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      a = new n.Error().stack;
-    a && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[a] = "ac2bd81a-caea-402f-892c-71119d430310", n._sentryDebugIdIdentifier = "sentry-dbid-ac2bd81a-caea-402f-892c-71119d430310")
+      r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "74037bd5-9c91-4508-bba1-603aade3ed7d", n._sentryDebugIdIdentifier = "sentry-dbid-74037bd5-9c91-4508-bba1-603aade3ed7d")
   })()
 } catch {}
-const t = () => "Ban appeal",
-  o = () => "Revisão de banimento",
-  p = () => "封禁申诉",
-  i = () => "Bann-Einspruch",
-  u = () => "Apelación de ban",
-  l = () => "Recours de bannissement",
-  f = () => "Ricorso contro il ban",
-  d = () => "BANの異議申立て",
-  s = () => "Odwołanie od bana",
-  c = () => "Апелляция на бан",
-  b = () => "Апеляція на бан",
-  _ = () => "Kháng cáo lệnh cấm",
-  y = (n = {}, a = {}) => {
-    const e = a.locale ?? r();
-    return e === "en" ? t() : e === "pt" ? o() : e === "ch" ? p() : e === "de" ? i() : e === "es" ? u() : e === "fr" ? l() : e === "it" ? f() : e === "jp" ? d() : e === "pl" ? s() : e === "ru" ? c() : e === "uk" ? b() : _()
+const l = () => "Alliances",
+  a = () => "Alianças",
+  i = () => "联盟",
+  s = () => "Allianzen",
+  c = () => "Alianzas",
+  o = () => "Alliances",
+  u = () => "Alleanze",
+  f = () => "アライアンス",
+  d = () => "Sojusze",
+  b = () => "Альянсы",
+  p = () => "Альянси",
+  _ = () => "Các liên minh",
+  g = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? l() : e === "pt" ? a() : e === "ch" ? i() : e === "de" ? s() : e === "es" ? c() : e === "fr" ? o() : e === "it" ? u() : e === "jp" ? f() : e === "pl" ? d() : e === "ru" ? b() : e === "uk" ? p() : _()
   };
 export {
-  y as b
+  g as a
 };

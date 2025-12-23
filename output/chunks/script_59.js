@@ -1,37 +1,37 @@
 import {
   g as t
-} from "./g2ZRSQwI.js";
+} from "./CgRLIIvp.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "f4e63ff6847082fed878819138982e523bd7482d"
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "2e64873115a19acf275cba17d06aff2c6f4b185d"
     }
   } catch {}
 })();
 try {
   (function() {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "85ea9c1c-def8-408f-b928-76e6302b759b", r._sentryDebugIdIdentifier = "sentry-dbid-85ea9c1c-def8-408f-b928-76e6302b759b")
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "ce125a4d-45c0-48a4-bfc6-e93640e57cc3", n._sentryDebugIdIdentifier = "sentry-dbid-ce125a4d-45c0-48a4-bfc6-e93640e57cc3")
   })()
 } catch {}
-const d = () => "Dashboard",
-  o = () => "Painel",
-  a = () => "控制台",
-  s = () => "Dashboard",
-  f = () => "Panel",
-  u = () => "Tableau de bord",
-  i = () => "Pannello",
-  b = () => "ダッシュボード",
-  l = () => "Panel",
-  c = () => "Панель",
-  h = () => "Панель",
-  p = () => "Bảng điều khiển",
-  g = (r = {}, n = {}) => {
-    const e = n.locale ?? t();
-    return e === "en" ? d() : e === "pt" ? o() : e === "ch" ? a() : e === "de" ? s() : e === "es" ? f() : e === "fr" ? u() : e === "it" ? i() : e === "jp" ? b() : e === "pl" ? l() : e === "ru" ? c() : e === "uk" ? h() : p()
+const a = () => "Appeals",
+  s = () => "Apelos",
+  o = () => "申诉",
+  p = () => "Einsprüche",
+  c = () => "Apelaciones",
+  u = () => "Recours",
+  f = () => "Ricorsi",
+  i = () => "異議申立て",
+  l = () => "Odwołania",
+  d = () => "Апелляции",
+  b = () => "Апеляції",
+  _ = () => "Các kháng cáo",
+  y = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? a() : e === "pt" ? s() : e === "ch" ? o() : e === "de" ? p() : e === "es" ? c() : e === "fr" ? u() : e === "it" ? f() : e === "jp" ? i() : e === "pl" ? l() : e === "ru" ? d() : e === "uk" ? b() : _()
   };
 export {
-  g as d
+  y as a
 };

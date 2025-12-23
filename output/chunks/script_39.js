@@ -1,30 +1,30 @@
 import {
   g as c
-} from "./g2ZRSQwI.js";
-import "./DyTAnIvR.js";
+} from "./CgRLIIvp.js";
+import "./BPEqWyOF.js";
 import {
   o as r,
   b as o
-} from "./DuPBYAm5.js";
+} from "./DHOOAIHf.js";
 import {
   b as t
-} from "./DWTMwUVX.js";
+} from "./D6V6Q0mg.js";
 import {
   r as i
-} from "./BKq0MFT9.js";
+} from "./DWvIqByP.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "f4e63ff6847082fed878819138982e523bd7482d"
+      id: "2e64873115a19acf275cba17d06aff2c6f4b185d"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "8bd67b5c-6705-4582-b4ed-f99d823f5b1f", e._sentryDebugIdIdentifier = "sentry-dbid-8bd67b5c-6705-4582-b4ed-f99d823f5b1f")
+      a = new e.Error().stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "8bd67b5c-6705-4582-b4ed-f99d823f5b1f", e._sentryDebugIdIdentifier = "sentry-dbid-8bd67b5c-6705-4582-b4ed-f99d823f5b1f")
   })()
 } catch {}
 const d = e => `Copy alliance ID: #${e.allianceId}`,
@@ -39,33 +39,33 @@ const d = e => `Copy alliance ID: #${e.allianceId}`,
   v = e => `Скопировать ID альянса: #${e.allianceId}`,
   b = e => `Скопіювати ID альянсу: #${e.allianceId}`,
   $ = e => `Sao chép ID liên minh: #${e.allianceId}`,
-  C = (e, n = {}) => {
-    const l = n.locale ?? c();
+  C = (e, a = {}) => {
+    const l = a.locale ?? c();
     return l === "en" ? d(e) : l === "pt" ? f(e) : l === "ch" ? s(e) : l === "de" ? _(e) : l === "es" ? p(e) : l === "fr" ? u(e) : l === "it" ? y(e) : l === "jp" ? I(e) : l === "pl" ? g(e) : l === "ru" ? v(e) : l === "uk" ? b(e) : $(e)
   };
 var m = r('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
 
-function x(e, n) {
-  let l = i(n, ["$$slots", "$$events", "$$legacy"]);
-  var a = m();
-  t(a, () => ({
+function x(e, a) {
+  let l = i(a, ["$$slots", "$$events", "$$legacy"]);
+  var n = m();
+  t(n, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
     ...l
-  })), o(e, a)
+  })), o(e, n)
 }
 var h = r('<svg><path d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z"></path></svg>');
 
-function E(e, n) {
-  let l = i(n, ["$$slots", "$$events", "$$legacy"]);
-  var a = h();
-  t(a, () => ({
+function E(e, a) {
+  let l = i(a, ["$$slots", "$$events", "$$legacy"]);
+  var n = h();
+  t(n, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
     ...l
-  })), o(e, a)
+  })), o(e, n)
 }
 export {
   x as G, E as T, C as c
