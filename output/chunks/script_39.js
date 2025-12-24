@@ -1,22 +1,22 @@
 import {
   g as c
-} from "./CMw04vg4.js";
-import "./CTrCRyKF.js";
+} from "./C1q_NHWL.js";
+import "./CyowT92m.js";
 import {
   o as r,
   b as o
-} from "./UgOLX8QU.js";
+} from "./DjohHawT.js";
 import {
   b as t
-} from "./BC_VrHlu.js";
+} from "./CYfF4_oC.js";
 import {
   r as i
-} from "./BgG4u6MS.js";
+} from "./BzXXm7KY.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "8706a848567fc83422d651908aa77f13fdf383e3"
+      id: "43095d4f05ba46dbb6f54b9ec680b6ad581b5a8e"
     }
   } catch {}
 })();
@@ -35,13 +35,13 @@ const d = e => `Copy alliance ID: #${e.allianceId}`,
   u = e => `Copier l’ID de l’alliance : #${e.allianceId}`,
   y = e => `Copia ID dell'alleanza: #${e.allianceId}`,
   I = e => `アライアンスIDをコピー: #${e.allianceId}`,
-  g = e => `Kopiuj ID sojuszu: #${e.allianceId}`,
-  v = e => `Скопировать ID альянса: #${e.allianceId}`,
-  $ = e => `Скопіювати ID альянсу: #${e.allianceId}`,
-  b = e => `Sao chép ID liên minh: #${e.allianceId}`,
+  b = e => `Kopiuj ID sojuszu: #${e.allianceId}`,
+  g = e => `Скопировать ID альянса: #${e.allianceId}`,
+  v = e => `Скопіювати ID альянсу: #${e.allianceId}`,
+  $ = e => `Sao chép ID liên minh: #${e.allianceId}`,
   C = (e, a = {}) => {
     const l = a.locale ?? c();
-    return l === "en" ? d(e) : l === "pt" ? f(e) : l === "ch" ? s(e) : l === "de" ? _(e) : l === "es" ? p(e) : l === "fr" ? u(e) : l === "it" ? y(e) : l === "jp" ? I(e) : l === "pl" ? g(e) : l === "ru" ? v(e) : l === "uk" ? $(e) : b(e)
+    return l === "en" ? d(e) : l === "pt" ? f(e) : l === "ch" ? s(e) : l === "de" ? _(e) : l === "es" ? p(e) : l === "fr" ? u(e) : l === "it" ? y(e) : l === "jp" ? I(e) : l === "pl" ? b(e) : l === "ru" ? g(e) : l === "uk" ? v(e) : $(e)
   };
 var m = r('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
 

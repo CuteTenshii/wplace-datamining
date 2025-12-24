@@ -5,15 +5,15 @@ import {
   x as y,
   L as _,
   M as l,
-  j as u,
+  j as b,
   H as h,
   N as w
-} from "./UgOLX8QU.js";
+} from "./DjohHawT.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "8706a848567fc83422d651908aa77f13fdf383e3"
+      id: "43095d4f05ba46dbb6f54b9ec680b6ad581b5a8e"
     }
   } catch {}
 })();
@@ -33,13 +33,13 @@ function I(e = !1) {
   if (e) {
     let s = 0,
       t = {};
-    const b = w(() => {
-      let d = !1;
-      const i = n.s;
-      for (const o in i) i[o] !== t[o] && (t[o] = i[o], d = !0);
-      return d && s++, s
+    const u = w(() => {
+      let i = !1;
+      const d = n.s;
+      for (const o in d) d[o] !== t[o] && (t[o] = d[o], i = !0);
+      return i && s++, s
     });
-    a = () => u(b)
+    a = () => b(u)
   }
   f.b.length && g(() => {
     c(n, a), l(f.b)
@@ -55,7 +55,7 @@ function I(e = !1) {
 
 function c(e, n) {
   if (e.l.s)
-    for (const f of e.l.s) u(f);
+    for (const f of e.l.s) b(f);
   n()
 }
 export {

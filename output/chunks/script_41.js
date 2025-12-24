@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./CMw04vg4.js";
+} from "./C1q_NHWL.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "8706a848567fc83422d651908aa77f13fdf383e3"
+      id: "43095d4f05ba46dbb6f54b9ec680b6ad581b5a8e"
     }
   } catch {}
 })();
@@ -33,9 +33,9 @@ const s = () => "Last pixel",
     return e === "en" ? s() : e === "pt" ? i() : e === "ch" ? u() : e === "de" ? c() : e === "es" ? o() : e === "fr" ? a() : e === "it" ? l() : e === "jp" ? _() : e === "pl" ? f() : e === "ru" ? p() : e === "uk" ? d() : v()
   },
   h = () => "Save",
-  x = () => "Salvar",
-  g = () => "保存",
-  b = () => "Speichern",
+  b = () => "Salvar",
+  x = () => "保存",
+  g = () => "Speichern",
   y = () => "Guardar",
   k = () => "Enregistrer",
   S = () => "Salva",
@@ -46,7 +46,7 @@ const s = () => "Last pixel",
   T = () => "Lưu",
   fe = (r = {}, t = {}) => {
     const e = t.locale ?? n();
-    return e === "en" ? h() : e === "pt" ? x() : e === "ch" ? g() : e === "de" ? b() : e === "es" ? y() : e === "fr" ? k() : e === "it" ? S() : e === "jp" ? m() : e === "pl" ? w() : e === "ru" ? j() : e === "uk" ? z() : T()
+    return e === "en" ? h() : e === "pt" ? b() : e === "ch" ? x() : e === "de" ? g() : e === "es" ? y() : e === "fr" ? k() : e === "it" ? S() : e === "jp" ? m() : e === "pl" ? w() : e === "ru" ? j() : e === "uk" ? z() : T()
   },
   E = () => "Search",
   D = () => "Buscar",

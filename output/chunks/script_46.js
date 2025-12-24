@@ -2,7 +2,7 @@
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "8706a848567fc83422d651908aa77f13fdf383e3"
+      id: "43095d4f05ba46dbb6f54b9ec680b6ad581b5a8e"
     }
   } catch {}
 })();
@@ -32,12 +32,12 @@ function D(t, {
   var u = C(t),
     v = t.clientWidth / r.width / u,
     p = t.clientHeight / r.height / u,
-    w = e.left + e.width * f,
-    b = e.top + e.height * o,
+    b = e.left + e.width * f,
+    w = e.top + e.height * o,
     x = r.left + r.width * f,
     m = r.top + r.height * o,
-    s = (w - x) * v,
-    l = (b - m) * p,
+    s = (b - x) * v,
+    l = (w - m) * p,
     S = e.width / r.width,
     E = e.height / r.height;
   return {
