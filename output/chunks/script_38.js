@@ -1,7 +1,7 @@
 import {
   g as e
-} from "./E8BzAKy9.js";
-import "./4LXgBC_f.js";
+} from "./EJbZrqRQ.js";
+import "./uQezCtmX.js";
 import {
   h as Y,
   a as $,
@@ -23,10 +23,10 @@ import {
   u as or,
   t as C,
   aR as kr
-} from "./Asu1Vc5j.js";
+} from "./B5DfIUL7.js";
 import {
   i as S
-} from "./CRP4q2XU.js";
+} from "./DCG6lGjq.js";
 import {
   b as ir,
   d as Fo,
@@ -34,32 +34,32 @@ import {
   s as X,
   g as Uo,
   a as cr
-} from "./DHEGICqL.js";
+} from "./B1ueQKgF.js";
 import {
   r as vr,
   p as Oo
-} from "./DlbOGcoQ.js";
+} from "./BMivKLHT.js";
 import {
   o as Zo
-} from "./Ca570FFj.js";
+} from "./BlQDVUG2.js";
 import {
   s as v
-} from "./D0_Kmdei.js";
+} from "./BM3Iei3U.js";
 import {
   e as Ar
-} from "./BpfvvNWp.js";
+} from "./D--qyOOG.js";
 import {
   t as Jo
-} from "./C0dNMM8D.js";
+} from "./DhnnMhZ0.js";
 import {
   c as Wo
-} from "./9GSmCX3F.js";
+} from "./DQ_Rf6RS.js";
 import {
   b as Qo
-} from "./DOBNGB5q.js";
+} from "./BdG0kCw9.js";
 import {
   P as Xo
-} from "./Bb_O8deK.js";
+} from "./GXrihzDr.js";
 import {
   i as Yo,
   h as $o,
@@ -70,48 +70,48 @@ import {
   t as I,
   q as uc,
   b as mr
-} from "./N0WmqbJZ.js";
+} from "./CWIfyuFs.js";
 import {
   o as oc,
   L as cc,
   s as _c,
   g as ic
-} from "./uahyf5aU.js";
+} from "./BY1AzlLg.js";
 import {
   P as Tr
-} from "./BNnem-Vu.js";
+} from "./BeOZl5Vx.js";
 import {
   G as Ir,
   T as xr
-} from "./DCEEVz4T.js";
+} from "./D5s52xZO.js";
 import {
   b as Pr
-} from "./BLR_YuCg.js";
+} from "./Ch6HTk3k.js";
 import {
   c as sc
-} from "./CXOakTo5.js";
+} from "./CeJIDBKP.js";
 import {
   b as ac
-} from "./B654HwZl.js";
+} from "./DaBDbQAG.js";
 import {
   t as Nr
-} from "./BzOQj4wA.js";
+} from "./C0XvgO4N.js";
 import {
   u as lc,
   a as fc
-} from "./H1fYl9io.js";
+} from "./DRTRCjn0.js";
 import {
   g as _r,
   a as Lr
-} from "./lCOZljNr.js";
+} from "./DQ3wtpzw.js";
 import {
   f as pc
-} from "./D7vtCqIR.js";
+} from "./wjdd2BkV.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "ee860fc816b3b13288b485f763a0872cd79cba7b"
+      id: "0d09a81b307e3e50e12318a904f634e48415b56b"
     }
   } catch {}
 })();
@@ -1452,138 +1452,138 @@ const yc = () => "Alliance",
   },
   YS = () => "Light Beige",
   $S = () => "Bege Claro",
-  rM = () => "浅米色",
-  tM = () => "Hellbeige",
-  nM = () => "Beige claro",
-  eM = () => "Beige clair",
-  uM = () => "Beige chiaro",
-  oM = () => "ライトベージュ",
-  cM = () => "Jasny Beż",
-  _M = () => "Светло-бежевый",
-  iM = () => "Світло-бежевий",
-  sM = () => "Be nhạt",
-  aM = (n = {}, t = {}) => {
+  r1 = () => "浅米色",
+  t1 = () => "Hellbeige",
+  n1 = () => "Beige claro",
+  e1 = () => "Beige clair",
+  u1 = () => "Beige chiaro",
+  o1 = () => "ライトベージュ",
+  c1 = () => "Jasny Beż",
+  _1 = () => "Светло-бежевый",
+  i1 = () => "Світло-бежевий",
+  s1 = () => "Be nhạt",
+  a1 = (n = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? YS() : r === "pt" ? $S() : r === "ch" ? rM() : r === "de" ? tM() : r === "es" ? nM() : r === "fr" ? eM() : r === "it" ? uM() : r === "jp" ? oM() : r === "pl" ? cM() : r === "ru" ? _M() : r === "uk" ? iM() : sM()
+    return r === "en" ? YS() : r === "pt" ? $S() : r === "ch" ? r1() : r === "de" ? t1() : r === "es" ? n1() : r === "fr" ? e1() : r === "it" ? u1() : r === "jp" ? o1() : r === "pl" ? c1() : r === "ru" ? _1() : r === "uk" ? i1() : s1()
   },
-  lM = () => "Dark Peach",
-  fM = () => "Pêssego Escuro",
-  pM = () => "深桃色",
-  yM = () => "Dunkler Pfirsich",
-  dM = () => "Melocotón oscuro",
-  hM = () => "Pêche Foncé",
-  gM = () => "Pesca Scura",
-  kM = () => "ダークピーチ",
-  mM = () => "Ciemna Brzoskwinia",
-  vM = () => "Темный персик",
-  bM = () => "Темний персик",
-  jM = () => "Đào Đậm",
-  wM = (n = {}, t = {}) => {
+  l1 = () => "Dark Peach",
+  f1 = () => "Pêssego Escuro",
+  p1 = () => "深桃色",
+  y1 = () => "Dunkler Pfirsich",
+  d1 = () => "Melocotón oscuro",
+  h1 = () => "Pêche Foncé",
+  g1 = () => "Pesca Scura",
+  k1 = () => "ダークピーチ",
+  m1 = () => "Ciemna Brzoskwinia",
+  v1 = () => "Темный персик",
+  b1 = () => "Темний персик",
+  j1 = () => "Đào Đậm",
+  w1 = (n = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? lM() : r === "pt" ? fM() : r === "ch" ? pM() : r === "de" ? yM() : r === "es" ? dM() : r === "fr" ? hM() : r === "it" ? gM() : r === "jp" ? kM() : r === "pl" ? mM() : r === "ru" ? vM() : r === "uk" ? bM() : jM()
+    return r === "en" ? l1() : r === "pt" ? f1() : r === "ch" ? p1() : r === "de" ? y1() : r === "es" ? d1() : r === "fr" ? h1() : r === "it" ? g1() : r === "jp" ? k1() : r === "pl" ? m1() : r === "ru" ? v1() : r === "uk" ? b1() : j1()
   },
-  zM = () => "Peach",
-  SM = () => "Pêssego",
-  MM = () => "桃子",
-  CM = () => "Pfirsich",
-  BM = () => "Melocotón",
-  GM = () => "Pêche",
-  AM = () => "Pesca",
-  TM = () => "桃",
-  IM = () => "Brzoskwinia",
-  xM = () => "Персик",
-  PM = () => "Персик",
-  NM = () => "Đào",
-  LM = (n = {}, t = {}) => {
+  z1 = () => "Peach",
+  S1 = () => "Pêssego",
+  M1 = () => "桃子",
+  C1 = () => "Pfirsich",
+  B1 = () => "Melocotón",
+  G1 = () => "Pêche",
+  A1 = () => "Pesca",
+  T1 = () => "桃",
+  I1 = () => "Brzoskwinia",
+  x1 = () => "Персик",
+  P1 = () => "Персик",
+  N1 = () => "Đào",
+  L1 = (n = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? zM() : r === "pt" ? SM() : r === "ch" ? MM() : r === "de" ? CM() : r === "es" ? BM() : r === "fr" ? GM() : r === "it" ? AM() : r === "jp" ? TM() : r === "pl" ? IM() : r === "ru" ? xM() : r === "uk" ? PM() : NM()
+    return r === "en" ? z1() : r === "pt" ? S1() : r === "ch" ? M1() : r === "de" ? C1() : r === "es" ? B1() : r === "fr" ? G1() : r === "it" ? A1() : r === "jp" ? T1() : r === "pl" ? I1() : r === "ru" ? x1() : r === "uk" ? P1() : N1()
   },
-  RM = () => "Light Peach",
-  qM = () => "Pêssego Claro",
-  DM = () => "浅桃色",
-  KM = () => "Heller Pfirsich",
-  EM = () => "Melocotón claro",
-  VM = () => "Pêche Claire",
-  HM = () => "Pesca Chiara",
-  FM = () => "ライトピーチ",
-  UM = () => "Jasna Brzoskwinia",
-  OM = () => "Светлый персик",
-  ZM = () => "Світлий персик",
-  JM = () => "Đào nhạt",
-  WM = (n = {}, t = {}) => {
+  R1 = () => "Light Peach",
+  q1 = () => "Pêssego Claro",
+  D1 = () => "浅桃色",
+  K1 = () => "Heller Pfirsich",
+  E1 = () => "Melocotón claro",
+  V1 = () => "Pêche Claire",
+  H1 = () => "Pesca Chiara",
+  F1 = () => "ライトピーチ",
+  U1 = () => "Jasna Brzoskwinia",
+  O1 = () => "Светлый персик",
+  Z1 = () => "Світлий персик",
+  J1 = () => "Đào nhạt",
+  W1 = (n = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? RM() : r === "pt" ? qM() : r === "ch" ? DM() : r === "de" ? KM() : r === "es" ? EM() : r === "fr" ? VM() : r === "it" ? HM() : r === "jp" ? FM() : r === "pl" ? UM() : r === "ru" ? OM() : r === "uk" ? ZM() : JM()
+    return r === "en" ? R1() : r === "pt" ? q1() : r === "ch" ? D1() : r === "de" ? K1() : r === "es" ? E1() : r === "fr" ? V1() : r === "it" ? H1() : r === "jp" ? F1() : r === "pl" ? U1() : r === "ru" ? O1() : r === "uk" ? Z1() : J1()
   },
-  QM = () => "Dark Tan",
-  XM = () => "Bronzeado Escuro",
-  YM = () => "深棕褐色",
-  $M = () => "Dunkelbraun",
-  r1 = () => "Bronceado Oscuro",
-  t1 = () => "Bronzage Foncé",
-  n1 = () => "Abbronzatura scura",
-  e1 = () => "濃い日焼け色",
-  u1 = () => "Ciemny beż",
-  o1 = () => "Темный загар",
-  c1 = () => "Темна засмага",
-  _1 = () => "Rám nắng đậm",
-  i1 = (n = {}, t = {}) => {
+  Q1 = () => "Dark Tan",
+  X1 = () => "Bronzeado Escuro",
+  Y1 = () => "深棕褐色",
+  $1 = () => "Dunkelbraun",
+  rM = () => "Bronceado Oscuro",
+  tM = () => "Bronzage Foncé",
+  nM = () => "Abbronzatura scura",
+  eM = () => "濃い日焼け色",
+  uM = () => "Ciemny beż",
+  oM = () => "Темный загар",
+  cM = () => "Темна засмага",
+  _M = () => "Rám nắng đậm",
+  iM = (n = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? QM() : r === "pt" ? XM() : r === "ch" ? YM() : r === "de" ? $M() : r === "es" ? r1() : r === "fr" ? t1() : r === "it" ? n1() : r === "jp" ? e1() : r === "pl" ? u1() : r === "ru" ? o1() : r === "uk" ? c1() : _1()
+    return r === "en" ? Q1() : r === "pt" ? X1() : r === "ch" ? Y1() : r === "de" ? $1() : r === "es" ? rM() : r === "fr" ? tM() : r === "it" ? nM() : r === "jp" ? eM() : r === "pl" ? uM() : r === "ru" ? oM() : r === "uk" ? cM() : _M()
   },
-  s1 = () => "Tan",
-  a1 = () => "Bronzeado",
-  l1 = () => "谭",
-  f1 = () => "Hellbraun",
-  p1 = () => "Tan",
-  y1 = () => "Bronzé",
-  d1 = () => "abbronzatura",
-  h1 = () => "黄褐色",
-  g1 = () => "Opalenizna",
-  k1 = () => "Загар",
-  m1 = () => "Бежевий",
-  v1 = () => "Tân",
-  b1 = (n = {}, t = {}) => {
+  sM = () => "Tan",
+  aM = () => "Bronzeado",
+  lM = () => "谭",
+  fM = () => "Hellbraun",
+  pM = () => "Tan",
+  yM = () => "Bronzé",
+  dM = () => "abbronzatura",
+  hM = () => "黄褐色",
+  gM = () => "Opalenizna",
+  kM = () => "Загар",
+  mM = () => "Бежевий",
+  vM = () => "Tân",
+  bM = (n = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? s1() : r === "pt" ? a1() : r === "ch" ? l1() : r === "de" ? f1() : r === "es" ? p1() : r === "fr" ? y1() : r === "it" ? d1() : r === "jp" ? h1() : r === "pl" ? g1() : r === "ru" ? k1() : r === "uk" ? m1() : v1()
+    return r === "en" ? sM() : r === "pt" ? aM() : r === "ch" ? lM() : r === "de" ? fM() : r === "es" ? pM() : r === "fr" ? yM() : r === "it" ? dM() : r === "jp" ? hM() : r === "pl" ? gM() : r === "ru" ? kM() : r === "uk" ? mM() : vM()
   },
-  j1 = () => "Dark Slate",
-  w1 = () => "Ardósia Escura",
-  z1 = () => "深板岩",
-  S1 = () => "Dunkelschiefer",
-  M1 = () => "Pizarra Oscura",
-  C1 = () => "Ardoise foncée",
-  B1 = () => "Ardesia scura",
-  G1 = () => "ダークスレート",
-  A1 = () => "Ciemny Łupek",
-  T1 = () => "Темный сланец",
-  I1 = () => "Темний шифер",
-  x1 = () => "Xám đá phiến đậm",
-  P1 = (n = {}, t = {}) => {
+  jM = () => "Dark Slate",
+  wM = () => "Ardósia Escura",
+  zM = () => "深板岩",
+  SM = () => "Dunkelschiefer",
+  MM = () => "Pizarra Oscura",
+  CM = () => "Ardoise foncée",
+  BM = () => "Ardesia scura",
+  GM = () => "ダークスレート",
+  AM = () => "Ciemny Łupek",
+  TM = () => "Темный сланец",
+  IM = () => "Темний шифер",
+  xM = () => "Xám đá phiến đậm",
+  PM = (n = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? j1() : r === "pt" ? w1() : r === "ch" ? z1() : r === "de" ? S1() : r === "es" ? M1() : r === "fr" ? C1() : r === "it" ? B1() : r === "jp" ? G1() : r === "pl" ? A1() : r === "ru" ? T1() : r === "uk" ? I1() : x1()
+    return r === "en" ? jM() : r === "pt" ? wM() : r === "ch" ? zM() : r === "de" ? SM() : r === "es" ? MM() : r === "fr" ? CM() : r === "it" ? BM() : r === "jp" ? GM() : r === "pl" ? AM() : r === "ru" ? TM() : r === "uk" ? IM() : xM()
   },
-  N1 = () => "Slate",
-  L1 = () => "Ardósia",
-  R1 = () => "石板",
-  q1 = () => "Schiefer",
-  D1 = () => "Pizarra",
-  K1 = () => "Ardoise",
-  E1 = () => "Ardesia",
-  V1 = () => "スレート",
-  H1 = () => "Łupek",
-  F1 = () => "Сланец",
-  U1 = () => "Сланець",
-  O1 = () => "Đá phiến",
-  Z1 = (n = {}, t = {}) => {
+  NM = () => "Slate",
+  LM = () => "Ardósia",
+  RM = () => "石板",
+  qM = () => "Schiefer",
+  DM = () => "Pizarra",
+  KM = () => "Ardoise",
+  EM = () => "Ardesia",
+  VM = () => "スレート",
+  HM = () => "Łupek",
+  FM = () => "Сланец",
+  UM = () => "Сланець",
+  OM = () => "Đá phiến",
+  ZM = (n = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? N1() : r === "pt" ? L1() : r === "ch" ? R1() : r === "de" ? q1() : r === "es" ? D1() : r === "fr" ? K1() : r === "it" ? E1() : r === "jp" ? V1() : r === "pl" ? H1() : r === "ru" ? F1() : r === "uk" ? U1() : O1()
+    return r === "en" ? NM() : r === "pt" ? LM() : r === "ch" ? RM() : r === "de" ? qM() : r === "es" ? DM() : r === "fr" ? KM() : r === "it" ? EM() : r === "jp" ? VM() : r === "pl" ? HM() : r === "ru" ? FM() : r === "uk" ? UM() : OM()
   },
-  J1 = () => "Light Slate",
-  W1 = () => "Ardósia Clara",
-  Q1 = () => "浅青灰",
-  X1 = () => "Helles Schiefergrau",
-  Y1 = () => "Pizarra Clara",
-  $1 = () => "Ardoise claire",
+  JM = () => "Light Slate",
+  WM = () => "Ardósia Clara",
+  QM = () => "浅青灰",
+  XM = () => "Helles Schiefergrau",
+  YM = () => "Pizarra Clara",
+  $M = () => "Ardoise claire",
   rC = () => "Ardesia Chiara",
   tC = () => "ライトスレート",
   nC = () => "Jasny Łupek",
@@ -1592,7 +1592,7 @@ const yc = () => "Alliance",
   oC = () => "Xám đá nhạt",
   cC = (n = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? J1() : r === "pt" ? W1() : r === "ch" ? Q1() : r === "de" ? X1() : r === "es" ? Y1() : r === "fr" ? $1() : r === "it" ? rC() : r === "jp" ? tC() : r === "pl" ? nC() : r === "ru" ? eC() : r === "uk" ? uC() : oC()
+    return r === "en" ? JM() : r === "pt" ? WM() : r === "ch" ? QM() : r === "de" ? XM() : r === "es" ? YM() : r === "fr" ? $M() : r === "it" ? rC() : r === "jp" ? tC() : r === "pl" ? nC() : r === "ru" ? eC() : r === "uk" ? uC() : oC()
   },
   _C = () => "Dark Stone",
   iC = () => "Pedra Escura",
@@ -2876,150 +2876,150 @@ const yc = () => "Alliance",
   },
   YK = () => "French Southern Territories",
   $K = () => "Territórios Austrais Franceses",
-  rE = () => "法属南部领地",
-  tE = () => "Französische Süd- und Antarktisgebiete",
-  nE = () => "Territorios Australes Franceses",
-  eE = () => "Terres australes et antarctiques françaises",
-  uE = () => "Territori australi francesi",
-  oE = () => "フランス領南方地域",
-  cE = () => "Francuskie Terytoria Południowe",
-  _E = () => "Французские Южные территории",
-  iE = () => "Французькі Південні Території",
-  sE = () => "Lãnh thổ phía Nam nước Pháp",
+  r3 = () => "法属南部领地",
+  t3 = () => "Französische Süd- und Antarktisgebiete",
+  n3 = () => "Territorios Australes Franceses",
+  e3 = () => "Terres australes et antarctiques françaises",
+  u3 = () => "Territori australi francesi",
+  o3 = () => "フランス領南方地域",
+  c3 = () => "Francuskie Terytoria Południowe",
+  _3 = () => "Французские Южные территории",
+  i3 = () => "Французькі Південні Території",
+  s3 = () => "Lãnh thổ phía Nam nước Pháp",
   sn = (n = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? YK() : r === "pt" ? $K() : r === "ch" ? rE() : r === "de" ? tE() : r === "es" ? nE() : r === "fr" ? eE() : r === "it" ? uE() : r === "jp" ? oE() : r === "pl" ? cE() : r === "ru" ? _E() : r === "uk" ? iE() : sE()
+    return r === "en" ? YK() : r === "pt" ? $K() : r === "ch" ? r3() : r === "de" ? t3() : r === "es" ? n3() : r === "fr" ? e3() : r === "it" ? u3() : r === "jp" ? o3() : r === "pl" ? c3() : r === "ru" ? _3() : r === "uk" ? i3() : s3()
   },
-  aE = () => "Gabon",
-  lE = () => "Gabão",
-  fE = () => "加蓬",
-  pE = () => "Gabun",
-  yE = () => "Gabón",
-  dE = () => "Gabon",
-  hE = () => "Gabon",
-  gE = () => "ガボン",
-  kE = () => "Gabon",
-  mE = () => "Габон",
-  vE = () => "Габон",
-  bE = () => "Gabon",
+  a3 = () => "Gabon",
+  l3 = () => "Gabão",
+  f3 = () => "加蓬",
+  p3 = () => "Gabun",
+  y3 = () => "Gabón",
+  d3 = () => "Gabon",
+  h3 = () => "Gabon",
+  g3 = () => "ガボン",
+  k3 = () => "Gabon",
+  m3 = () => "Габон",
+  v3 = () => "Габон",
+  b3 = () => "Gabon",
   an = (n = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? aE() : r === "pt" ? lE() : r === "ch" ? fE() : r === "de" ? pE() : r === "es" ? yE() : r === "fr" ? dE() : r === "it" ? hE() : r === "jp" ? gE() : r === "pl" ? kE() : r === "ru" ? mE() : r === "uk" ? vE() : bE()
+    return r === "en" ? a3() : r === "pt" ? l3() : r === "ch" ? f3() : r === "de" ? p3() : r === "es" ? y3() : r === "fr" ? d3() : r === "it" ? h3() : r === "jp" ? g3() : r === "pl" ? k3() : r === "ru" ? m3() : r === "uk" ? v3() : b3()
   },
-  jE = () => "Gambia",
-  wE = () => "Gâmbia",
-  zE = () => "冈比亚",
-  SE = () => "Gambia",
-  ME = () => "Gambia",
-  CE = () => "Gambie",
-  BE = () => "Gambia",
-  GE = () => "ガンビア",
-  AE = () => "Gambia",
-  TE = () => "Гамбия",
-  IE = () => "Гамбія",
-  xE = () => "Gambia",
+  j3 = () => "Gambia",
+  w3 = () => "Gâmbia",
+  z3 = () => "冈比亚",
+  S3 = () => "Gambia",
+  M3 = () => "Gambia",
+  C3 = () => "Gambie",
+  B3 = () => "Gambia",
+  G3 = () => "ガンビア",
+  A3 = () => "Gambia",
+  T3 = () => "Гамбия",
+  I3 = () => "Гамбія",
+  x3 = () => "Gambia",
   ln = (n = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? jE() : r === "pt" ? wE() : r === "ch" ? zE() : r === "de" ? SE() : r === "es" ? ME() : r === "fr" ? CE() : r === "it" ? BE() : r === "jp" ? GE() : r === "pl" ? AE() : r === "ru" ? TE() : r === "uk" ? IE() : xE()
+    return r === "en" ? j3() : r === "pt" ? w3() : r === "ch" ? z3() : r === "de" ? S3() : r === "es" ? M3() : r === "fr" ? C3() : r === "it" ? B3() : r === "jp" ? G3() : r === "pl" ? A3() : r === "ru" ? T3() : r === "uk" ? I3() : x3()
   },
-  PE = () => "Georgia",
-  NE = () => "Geórgia",
-  LE = () => "格鲁吉亚",
-  RE = () => "Georgien",
-  qE = () => "Georgia",
-  DE = () => "Géorgie",
-  KE = () => "Georgia",
-  EE = () => "ジョージア",
-  VE = () => "Gruzja",
-  HE = () => "Грузия",
-  FE = () => "Грузія",
-  UE = () => "Gruzia",
+  P3 = () => "Georgia",
+  N3 = () => "Geórgia",
+  L3 = () => "格鲁吉亚",
+  R3 = () => "Georgien",
+  q3 = () => "Georgia",
+  D3 = () => "Géorgie",
+  K3 = () => "Georgia",
+  E3 = () => "ジョージア",
+  V3 = () => "Gruzja",
+  H3 = () => "Грузия",
+  F3 = () => "Грузія",
+  U3 = () => "Gruzia",
   fn = (n = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? PE() : r === "pt" ? NE() : r === "ch" ? LE() : r === "de" ? RE() : r === "es" ? qE() : r === "fr" ? DE() : r === "it" ? KE() : r === "jp" ? EE() : r === "pl" ? VE() : r === "ru" ? HE() : r === "uk" ? FE() : UE()
+    return r === "en" ? P3() : r === "pt" ? N3() : r === "ch" ? L3() : r === "de" ? R3() : r === "es" ? q3() : r === "fr" ? D3() : r === "it" ? K3() : r === "jp" ? E3() : r === "pl" ? V3() : r === "ru" ? H3() : r === "uk" ? F3() : U3()
   },
-  OE = () => "Germany",
-  ZE = () => "Alemanha",
-  JE = () => "德国",
-  WE = () => "Deutschland",
-  QE = () => "Alemania",
-  XE = () => "Allemagne",
-  YE = () => "Germania",
-  $E = () => "ドイツ",
-  r3 = () => "Niemcy",
-  t3 = () => "Германия",
-  n3 = () => "Німеччина",
-  e3 = () => "Đức",
+  O3 = () => "Germany",
+  Z3 = () => "Alemanha",
+  J3 = () => "德国",
+  W3 = () => "Deutschland",
+  Q3 = () => "Alemania",
+  X3 = () => "Allemagne",
+  Y3 = () => "Germania",
+  $3 = () => "ドイツ",
+  rE = () => "Niemcy",
+  tE = () => "Германия",
+  nE = () => "Німеччина",
+  eE = () => "Đức",
   pn = (n = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? OE() : r === "pt" ? ZE() : r === "ch" ? JE() : r === "de" ? WE() : r === "es" ? QE() : r === "fr" ? XE() : r === "it" ? YE() : r === "jp" ? $E() : r === "pl" ? r3() : r === "ru" ? t3() : r === "uk" ? n3() : e3()
+    return r === "en" ? O3() : r === "pt" ? Z3() : r === "ch" ? J3() : r === "de" ? W3() : r === "es" ? Q3() : r === "fr" ? X3() : r === "it" ? Y3() : r === "jp" ? $3() : r === "pl" ? rE() : r === "ru" ? tE() : r === "uk" ? nE() : eE()
   },
-  u3 = () => "Ghana",
-  o3 = () => "Gana",
-  c3 = () => "加纳",
-  _3 = () => "Ghana",
-  i3 = () => "Ghana",
-  s3 = () => "Ghana",
-  a3 = () => "Ghana",
-  l3 = () => "ガーナ",
-  f3 = () => "Ghana",
-  p3 = () => "Гана",
-  y3 = () => "Гана",
-  d3 = () => "Ghana",
+  uE = () => "Ghana",
+  oE = () => "Gana",
+  cE = () => "加纳",
+  _E = () => "Ghana",
+  iE = () => "Ghana",
+  sE = () => "Ghana",
+  aE = () => "Ghana",
+  lE = () => "ガーナ",
+  fE = () => "Ghana",
+  pE = () => "Гана",
+  yE = () => "Гана",
+  dE = () => "Ghana",
   yn = (n = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? u3() : r === "pt" ? o3() : r === "ch" ? c3() : r === "de" ? _3() : r === "es" ? i3() : r === "fr" ? s3() : r === "it" ? a3() : r === "jp" ? l3() : r === "pl" ? f3() : r === "ru" ? p3() : r === "uk" ? y3() : d3()
+    return r === "en" ? uE() : r === "pt" ? oE() : r === "ch" ? cE() : r === "de" ? _E() : r === "es" ? iE() : r === "fr" ? sE() : r === "it" ? aE() : r === "jp" ? lE() : r === "pl" ? fE() : r === "ru" ? pE() : r === "uk" ? yE() : dE()
   },
-  h3 = () => "Gibraltar",
-  g3 = () => "Gibraltar",
-  k3 = () => "直布罗陀",
-  m3 = () => "Gibraltar",
-  v3 = () => "Gibraltar",
-  b3 = () => "Gibraltar",
-  j3 = () => "Gibilterra",
-  w3 = () => "ジブラルタル",
-  z3 = () => "Gibraltar",
-  S3 = () => "Гибралтар",
-  M3 = () => "Гібралтар",
-  C3 = () => "Gibraltar",
+  hE = () => "Gibraltar",
+  gE = () => "Gibraltar",
+  kE = () => "直布罗陀",
+  mE = () => "Gibraltar",
+  vE = () => "Gibraltar",
+  bE = () => "Gibraltar",
+  jE = () => "Gibilterra",
+  wE = () => "ジブラルタル",
+  zE = () => "Gibraltar",
+  SE = () => "Гибралтар",
+  ME = () => "Гібралтар",
+  CE = () => "Gibraltar",
   dn = (n = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? h3() : r === "pt" ? g3() : r === "ch" ? k3() : r === "de" ? m3() : r === "es" ? v3() : r === "fr" ? b3() : r === "it" ? j3() : r === "jp" ? w3() : r === "pl" ? z3() : r === "ru" ? S3() : r === "uk" ? M3() : C3()
+    return r === "en" ? hE() : r === "pt" ? gE() : r === "ch" ? kE() : r === "de" ? mE() : r === "es" ? vE() : r === "fr" ? bE() : r === "it" ? jE() : r === "jp" ? wE() : r === "pl" ? zE() : r === "ru" ? SE() : r === "uk" ? ME() : CE()
   },
-  B3 = () => "Greece",
-  G3 = () => "Grécia",
-  A3 = () => "希腊",
-  T3 = () => "Griechenland",
-  I3 = () => "Grecia",
-  x3 = () => "Grèce",
-  P3 = () => "Grecia",
-  N3 = () => "ギリシャ",
-  L3 = () => "Grecja",
-  R3 = () => "Греция",
-  q3 = () => "Греція",
-  D3 = () => "Hy Lạp",
+  BE = () => "Greece",
+  GE = () => "Grécia",
+  AE = () => "希腊",
+  TE = () => "Griechenland",
+  IE = () => "Grecia",
+  xE = () => "Grèce",
+  PE = () => "Grecia",
+  NE = () => "ギリシャ",
+  LE = () => "Grecja",
+  RE = () => "Греция",
+  qE = () => "Греція",
+  DE = () => "Hy Lạp",
   hn = (n = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? B3() : r === "pt" ? G3() : r === "ch" ? A3() : r === "de" ? T3() : r === "es" ? I3() : r === "fr" ? x3() : r === "it" ? P3() : r === "jp" ? N3() : r === "pl" ? L3() : r === "ru" ? R3() : r === "uk" ? q3() : D3()
+    return r === "en" ? BE() : r === "pt" ? GE() : r === "ch" ? AE() : r === "de" ? TE() : r === "es" ? IE() : r === "fr" ? xE() : r === "it" ? PE() : r === "jp" ? NE() : r === "pl" ? LE() : r === "ru" ? RE() : r === "uk" ? qE() : DE()
   },
-  K3 = () => "Greenland",
-  E3 = () => "Groenlândia",
-  V3 = () => "格陵兰",
-  H3 = () => "Grönland",
-  F3 = () => "Groenlandia",
-  U3 = () => "Groenland",
-  O3 = () => "Groenlandia",
-  Z3 = () => "グリーンランド",
-  J3 = () => "Grenlandia",
-  W3 = () => "Гренландия",
-  Q3 = () => "Гренландія",
-  X3 = () => "Greenland",
+  KE = () => "Greenland",
+  EE = () => "Groenlândia",
+  VE = () => "格陵兰",
+  HE = () => "Grönland",
+  FE = () => "Groenlandia",
+  UE = () => "Groenland",
+  OE = () => "Groenlandia",
+  ZE = () => "グリーンランド",
+  JE = () => "Grenlandia",
+  WE = () => "Гренландия",
+  QE = () => "Гренландія",
+  XE = () => "Greenland",
   gn = (n = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? K3() : r === "pt" ? E3() : r === "ch" ? V3() : r === "de" ? H3() : r === "es" ? F3() : r === "fr" ? U3() : r === "it" ? O3() : r === "jp" ? Z3() : r === "pl" ? J3() : r === "ru" ? W3() : r === "uk" ? Q3() : X3()
+    return r === "en" ? KE() : r === "pt" ? EE() : r === "ch" ? VE() : r === "de" ? HE() : r === "es" ? FE() : r === "fr" ? UE() : r === "it" ? OE() : r === "jp" ? ZE() : r === "pl" ? JE() : r === "ru" ? WE() : r === "uk" ? QE() : XE()
   },
-  Y3 = () => "Grenada",
-  $3 = () => "Granada",
+  YE = () => "Grenada",
+  $E = () => "Granada",
   r6 = () => "格林纳达",
   t6 = () => "Grenada",
   n6 = () => "Granada",
@@ -3032,7 +3032,7 @@ const yc = () => "Alliance",
   s6 = () => "Grenada",
   kn = (n = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? Y3() : r === "pt" ? $3() : r === "ch" ? r6() : r === "de" ? t6() : r === "es" ? n6() : r === "fr" ? e6() : r === "it" ? u6() : r === "jp" ? o6() : r === "pl" ? c6() : r === "ru" ? _6() : r === "uk" ? i6() : s6()
+    return r === "en" ? YE() : r === "pt" ? $E() : r === "ch" ? r6() : r === "de" ? t6() : r === "es" ? n6() : r === "fr" ? e6() : r === "it" ? u6() : r === "jp" ? o6() : r === "pl" ? c6() : r === "ru" ? _6() : r === "uk" ? i6() : s6()
   },
   a6 = () => "Guadeloupe",
   l6 = () => "Guadalupe",
@@ -6254,14 +6254,14 @@ const rjr = {
     49: SS,
     50: qS,
     51: XS,
-    52: aM,
-    53: wM,
-    54: LM,
-    55: WM,
-    56: i1,
-    57: b1,
-    58: P1,
-    59: Z1,
+    52: a1,
+    53: w1,
+    54: L1,
+    55: W1,
+    56: iM,
+    57: bM,
+    58: PM,
+    59: ZM,
     60: cC,
     61: mC,
     62: IC,

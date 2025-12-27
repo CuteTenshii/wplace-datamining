@@ -1,4 +1,4 @@
-import "./4LXgBC_f.js";
+import "./uQezCtmX.js";
 import {
   F as nt,
   x as ct,
@@ -22,46 +22,46 @@ import {
   r as l,
   s as f,
   n as O
-} from "./Asu1Vc5j.js";
+} from "./B5DfIUL7.js";
 import {
   s as y
-} from "./D0_Kmdei.js";
+} from "./BM3Iei3U.js";
 import {
   i as L
-} from "./CRP4q2XU.js";
+} from "./DCG6lGjq.js";
 import {
   a as $,
   c as tt,
   b as lt,
   s as R
-} from "./DHEGICqL.js";
+} from "./B1ueQKgF.js";
 import {
   p as _,
   r as ft
-} from "./DlbOGcoQ.js";
+} from "./BMivKLHT.js";
 import {
   g as q,
   t as V,
   P as dt,
   a as vt
-} from "./Bb_O8deK.js";
+} from "./GXrihzDr.js";
 import {
   t as ht
-} from "./BQAq1IiW.js";
+} from "./BaBZaJR7.js";
 import {
   o as mt
-} from "./Ca570FFj.js";
+} from "./BlQDVUG2.js";
 import {
   g
-} from "./E8BzAKy9.js";
+} from "./EJbZrqRQ.js";
 import {
   L as yt
-} from "./B1-Nd4i9.js";
+} from "./B8aVZqby.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "ee860fc816b3b13288b485f763a0872cd79cba7b"
+      id: "0d09a81b307e3e50e12318a904f634e48415b56b"
     }
   } catch {}
 })();
@@ -77,18 +77,18 @@ function gt(r, e, t) {
   nt(() => {
     var c = ct(() => e(r, t == null ? void 0 : t()) || {});
     if (t && (c != null && c.update)) {
-      var b = !1,
+      var w = !1,
         h = {};
       ot(() => {
         var d = t();
-        it(d), b && at(h, d) && (h = d, c.update(d))
-      }), b = !0
+        it(d), w && at(h, d) && (h = d, c.update(d))
+      }), w = !0
     }
     if (c != null && c.destroy) return () => c.destroy()
   })
 }
-const bt = () => "and",
-  wt = () => "e",
+const wt = () => "and",
+  bt = () => "e",
   pt = () => "和",
   kt = () => "und",
   xt = () => "y",
@@ -101,7 +101,7 @@ const bt = () => "and",
   Lt = () => "và",
   Wt = (r = {}, e = {}) => {
     const t = e.locale ?? g();
-    return t === "en" ? bt() : t === "pt" ? wt() : t === "ch" ? pt() : t === "de" ? kt() : t === "es" ? xt() : t === "fr" ? Tt() : t === "it" ? Ct() : t === "jp" ? jt() : t === "pl" ? It() : t === "ru" ? zt() : t === "uk" ? Et() : Lt()
+    return t === "en" ? wt() : t === "pt" ? bt() : t === "ch" ? pt() : t === "de" ? kt() : t === "es" ? xt() : t === "fr" ? Tt() : t === "it" ? Ct() : t === "jp" ? jt() : t === "pl" ? It() : t === "ru" ? zt() : t === "uk" ? Et() : Lt()
   },
   Mt = () => "By continuing, you agree to our",
   Pt = () => "Ao continuar, você concorda com nossos",
@@ -153,8 +153,8 @@ const bt = () => "and",
   },
   ye = r => `Login with ${r.name}`,
   ge = r => `Entrar com ${r.name}`,
-  be = r => `使用 ${r.name} 登录`,
-  we = r => `Einloggen mit ${r.name}`,
+  we = r => `使用 ${r.name} 登录`,
+  be = r => `Einloggen mit ${r.name}`,
   pe = r => `Iniciar sesión con ${r.name}`,
   ke = r => `Se connecter avec ${r.name}`,
   xe = r => `Accedi con ${r.name}`,
@@ -165,7 +165,7 @@ const bt = () => "and",
   ze = r => `Đăng nhập bằng ${r.name}`,
   Ee = (r, e = {}) => {
     const t = e.locale ?? g();
-    return t === "en" ? ye(r) : t === "pt" ? ge(r) : t === "ch" ? be(r) : t === "de" ? we(r) : t === "es" ? pe(r) : t === "fr" ? ke(r) : t === "it" ? xe(r) : t === "jp" ? Te(r) : t === "pl" ? Ce(r) : t === "ru" ? je(r) : t === "uk" ? Ie(r) : ze(r)
+    return t === "en" ? ye(r) : t === "pt" ? ge(r) : t === "ch" ? we(r) : t === "de" ? be(r) : t === "es" ? pe(r) : t === "fr" ? ke(r) : t === "it" ? xe(r) : t === "jp" ? Te(r) : t === "pl" ? Ce(r) : t === "ru" ? je(r) : t === "uk" ? Ie(r) : ze(r)
   },
   Le = () => "Migrate your account",
   We = () => "Migre sua conta",
@@ -221,7 +221,7 @@ function mr(r, e) {
   Y(e, !0);
   let t = _(e, "widgetId", 15),
     c = _(e, "appearance", 3, "always"),
-    b = _(e, "language", 3, "auto"),
+    w = _(e, "language", 3, "auto"),
     h = _(e, "execution", 3, "render"),
     d = _(e, "retryInterval", 3, 8e3),
     F = _(e, "retry", 3, "auto"),
@@ -270,7 +270,7 @@ function mr(r, e) {
       tabindex: I(),
       appearance: c(),
       execution: h(),
-      language: b(),
+      language: w(),
       action: e.action,
       retry: F(),
       theme: A(),
@@ -288,16 +288,16 @@ function mr(r, e) {
         }
       }
     };
-  let w = Q(!1);
+  let b = Q(!1);
   mt(() => {
-    if (G(w, !0), !q.turnstatileLoaded) {
+    if (G(b, !0), !q.turnstatileLoaded) {
       const n = document.createElement("script");
       n.type = "text/javascript", n.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit", n.async = !0, n.addEventListener("load", () => q.turnstatileLoaded = !0, {
         once: !0
       }), document.head.appendChild(n)
     }
     return () => {
-      G(w, !1)
+      G(b, !1)
     }
   });
   var M = ut(),
@@ -311,7 +311,7 @@ function mr(r, e) {
       })), C(n, a)
     };
     L(P, n => {
-      q.turnstatileLoaded && T(w) && n(D)
+      q.turnstatileLoaded && T(b) && n(D)
     })
   }
   C(r, M), J()
@@ -327,8 +327,8 @@ function gr(r, e) {
     ...t
   })), C(r, c)
 }
-var br = S('<a><!> </a> <div class="mt-2 flex flex-col items-center gap-1"><!> <!></div>', 1),
-  wr = S('<p class="text-base-content/60 mt-8 text-center text-xs"> <a class="font-medium"> </a>.</p>'),
+var wr = S('<a><!> </a> <div class="mt-2 flex flex-col items-center gap-1"><!> <!></div>', 1),
+  br = S('<p class="text-base-content/60 mt-8 text-center text-xs"> <a class="font-medium"> </a>.</p>'),
   pr = S('<div><div class="flex justify-center py-4"><!></div> <div class="flex flex-col items-center gap-2 pt-6"><!></div> <p class="text-base-content/60 mt-2 text-center text-xs"> <a class="font-medium" target="_blank"> </a>, <a class="font-medium" href="/terms/privacy" target="_blank"> </a> <a class="font-medium" href="/terms/code-of-conduct" target="_blank"> </a>.</p> <!></div>');
 
 function Pr(r, e) {
@@ -336,7 +336,7 @@ function Pr(r, e) {
   let t = _(e, "showTwitchMigration", 3, !0),
     c = Q(st(V ? "" : "turnstile-disabled"));
 
-  function b(o, u) {
+  function w(o, u) {
     return `${dt}/auth/${o}?token=${u}${e.redirect?`&r=${e.redirect}`:""}`
   }
   var h = pr(),
@@ -349,7 +349,7 @@ function Pr(r, e) {
     A = s(j);
   {
     var W = o => {
-      var u = br(),
+      var u = wr(),
         v = Z(u),
         m = s(v);
       gr(m, {
@@ -383,7 +383,7 @@ function Pr(r, e) {
           "btn btn-lg bg-base-100 w-full text-base": !0,
           "bg-base-content/10 pointer-events-none": !T(c)
         })), R(v, "href", x), y(E, ` ${H??""}`)
-      }, [() => T(c) ? b("google", T(c)) : "#", () => Ee({
+      }, [() => T(c) ? w("google", T(c)) : "#", () => Ee({
         name: "Google"
       })]), C(o, u)
     };
@@ -397,23 +397,23 @@ function Pr(r, e) {
     p = f(N),
     z = s(p, !0);
   l(p);
-  var w = f(p, 2),
-    M = s(w, !0);
-  l(w);
-  var P = f(w),
+  var b = f(p, 2),
+    M = s(b, !0);
+  l(b);
+  var P = f(b),
     D = f(P),
     n = s(D, !0);
   l(D), O(), l(I);
   var a = f(I, 2);
   {
     var i = o => {
-      var u = wr(),
+      var u = br(),
         v = s(u),
         m = f(v),
         E = s(m, !0);
       l(m), O(), l(u), K((k, B, U) => {
         y(v, `${k??""} `), R(m, "href", B), y(E, U)
-      }, [() => me(), () => b("twitch", ""), () => He()]), C(o, u)
+      }, [() => me(), () => w("twitch", ""), () => He()]), C(o, u)
     };
     L(a, o => {
       t() && o(i)

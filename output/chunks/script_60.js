@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./E8BzAKy9.js";
+} from "./EJbZrqRQ.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "ee860fc816b3b13288b485f763a0872cd79cba7b"
+      id: "0d09a81b307e3e50e12318a904f634e48415b56b"
     }
   } catch {}
 })();
@@ -22,15 +22,15 @@ const d = () => "Dashboard",
   s = () => "Dashboard",
   u = () => "Panel",
   f = () => "Tableau de bord",
-  b = () => "Pannello",
-  i = () => "ダッシュボード",
-  c = () => "Panel",
-  l = () => "Панель",
+  i = () => "Pannello",
+  b = () => "ダッシュボード",
+  l = () => "Panel",
+  c = () => "Панель",
   h = () => "Панель",
   p = () => "Bảng điều khiển",
   g = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? d() : e === "pt" ? o() : e === "ch" ? a() : e === "de" ? s() : e === "es" ? u() : e === "fr" ? f() : e === "it" ? b() : e === "jp" ? i() : e === "pl" ? c() : e === "ru" ? l() : e === "uk" ? h() : p()
+    return e === "en" ? d() : e === "pt" ? o() : e === "ch" ? a() : e === "de" ? s() : e === "es" ? u() : e === "fr" ? f() : e === "it" ? i() : e === "jp" ? b() : e === "pl" ? l() : e === "ru" ? c() : e === "uk" ? h() : p()
   };
 export {
   g as d

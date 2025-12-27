@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./E8BzAKy9.js";
+} from "./EJbZrqRQ.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "ee860fc816b3b13288b485f763a0872cd79cba7b"
+      id: "0d09a81b307e3e50e12318a904f634e48415b56b"
     }
   } catch {}
 })();
@@ -17,9 +17,9 @@ try {
   })()
 } catch {}
 const c = () => "Cancel",
-  f = () => "Cancelar",
-  l = () => "取消",
-  u = () => "Abbrechen",
+  l = () => "Cancelar",
+  u = () => "取消",
+  f = () => "Abbrechen",
   o = () => "Cancelar",
   a = () => "Annuler",
   i = () => "Annulla",
@@ -30,7 +30,7 @@ const c = () => "Cancel",
   _ = () => "Hủy",
   g = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? c() : e === "pt" ? f() : e === "ch" ? l() : e === "de" ? u() : e === "es" ? o() : e === "fr" ? a() : e === "it" ? i() : e === "jp" ? s() : e === "pl" ? d() : e === "ru" ? b() : e === "uk" ? p() : _()
+    return e === "en" ? c() : e === "pt" ? l() : e === "ch" ? u() : e === "de" ? f() : e === "es" ? o() : e === "fr" ? a() : e === "it" ? i() : e === "jp" ? s() : e === "pl" ? d() : e === "ru" ? b() : e === "uk" ? p() : _()
   };
 export {
   g as c
