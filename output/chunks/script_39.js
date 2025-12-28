@@ -1,22 +1,22 @@
 import {
   g as c
-} from "./EJbZrqRQ.js";
-import "./uQezCtmX.js";
+} from "./CO85j776.js";
+import "./C4ylbf71.js";
 import {
   o as r,
   b as o
-} from "./B5DfIUL7.js";
+} from "./C0b57ARY.js";
 import {
   b as t
-} from "./B1ueQKgF.js";
+} from "./DuDgfQFI.js";
 import {
   r as i
-} from "./BMivKLHT.js";
+} from "./BBK6kTAl.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "0d09a81b307e3e50e12318a904f634e48415b56b"
+      id: "e61b7999f3615b75da925cd12f2c77d312c3e072"
     }
   } catch {}
 })();
@@ -35,13 +35,13 @@ const d = e => `Copy alliance ID: #${e.allianceId}`,
   u = e => `Copier l’ID de l’alliance : #${e.allianceId}`,
   y = e => `Copia ID dell'alleanza: #${e.allianceId}`,
   I = e => `アライアンスIDをコピー: #${e.allianceId}`,
-  b = e => `Kopiuj ID sojuszu: #${e.allianceId}`,
-  g = e => `Скопировать ID альянса: #${e.allianceId}`,
-  v = e => `Скопіювати ID альянсу: #${e.allianceId}`,
+  g = e => `Kopiuj ID sojuszu: #${e.allianceId}`,
+  v = e => `Скопировать ID альянса: #${e.allianceId}`,
+  b = e => `Скопіювати ID альянсу: #${e.allianceId}`,
   $ = e => `Sao chép ID liên minh: #${e.allianceId}`,
   C = (e, a = {}) => {
     const l = a.locale ?? c();
-    return l === "en" ? d(e) : l === "pt" ? f(e) : l === "ch" ? s(e) : l === "de" ? _(e) : l === "es" ? p(e) : l === "fr" ? u(e) : l === "it" ? y(e) : l === "jp" ? I(e) : l === "pl" ? b(e) : l === "ru" ? g(e) : l === "uk" ? v(e) : $(e)
+    return l === "en" ? d(e) : l === "pt" ? f(e) : l === "ch" ? s(e) : l === "de" ? _(e) : l === "es" ? p(e) : l === "fr" ? u(e) : l === "it" ? y(e) : l === "jp" ? I(e) : l === "pl" ? g(e) : l === "ru" ? v(e) : l === "uk" ? b(e) : $(e)
   };
 var m = r('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
 
