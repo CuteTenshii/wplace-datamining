@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./OgFRl3VB.js";
+} from "./B1vEyi0i.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "1cf3d1d65c850769ca5bf6ca373d9d4a175b4f5c"
+      id: "f3dcc3e771086c0f63d8ece84cd728044b2a0f0d"
     }
   } catch {}
 })();
@@ -25,12 +25,12 @@ const s = () => "Users",
   d = () => "Utenti",
   l = () => "ユーザー",
   a = () => "Użytkownicy",
-  b = () => "Пользователи",
-  p = () => "Користувачі",
-  y = () => "Người dùng",
+  p = () => "Пользователи",
+  y = () => "Користувачі",
+  _ = () => "Người dùng",
   g = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? f() : e === "fr" ? c() : e === "it" ? d() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? p() : y()
+    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? f() : e === "fr" ? c() : e === "it" ? d() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? p() : e === "uk" ? y() : _()
   };
 export {
   g as u
