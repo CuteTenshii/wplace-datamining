@@ -1,10 +1,10 @@
-import "./C4ylbf71.js";
+import "./vZM1VUvd.js";
 import {
   F as nt,
   x as ct,
   y as ot,
-  H as it,
-  by as at,
+  H as at,
+  by as it,
   p as Y,
   i as G,
   e as Q,
@@ -22,46 +22,46 @@ import {
   r as l,
   s as f,
   n as O
-} from "./C0b57ARY.js";
+} from "./wpHPN6yk.js";
 import {
   s as y
-} from "./DA1VrThx.js";
+} from "./CQr6jTJ2.js";
 import {
   i as L
-} from "./iWEMl2TA.js";
+} from "./DA7Abhx6.js";
 import {
   a as $,
   c as tt,
   b as lt,
   s as R
-} from "./DuDgfQFI.js";
+} from "./zRHOaRGE.js";
 import {
   p as _,
   r as ft
-} from "./BBK6kTAl.js";
+} from "./DJOSKIfY.js";
 import {
   g as q,
   t as V,
   P as dt,
   a as vt
-} from "./Dy2Wd_MZ.js";
+} from "./BnSJEPHB.js";
 import {
   t as ht
-} from "./Dqz4Hah9.js";
+} from "./TpYlDQ1A.js";
 import {
   o as mt
-} from "./DyRgkJmE.js";
+} from "./CsZe7pev.js";
 import {
   g
-} from "./CO85j776.js";
+} from "./OgFRl3VB.js";
 import {
   L as yt
-} from "./3j7-g7BX.js";
+} from "./D8eLBh29.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "e61b7999f3615b75da925cd12f2c77d312c3e072"
+      id: "1cf3d1d65c850769ca5bf6ca373d9d4a175b4f5c"
     }
   } catch {}
 })();
@@ -81,7 +81,7 @@ function gt(r, e, t) {
         h = {};
       ot(() => {
         var d = t();
-        it(d), w && at(h, d) && (h = d, c.update(d))
+        at(d), w && it(h, d) && (h = d, c.update(d))
       }), w = !0
     }
     if (c != null && c.destroy) return () => c.destroy()
@@ -137,8 +137,8 @@ const wt = () => "and",
   },
   ce = () => "Do you have a Wplace Twitch account?",
   oe = () => "Você tem uma conta Wplace associada à Twitch?",
-  ie = () => "你有 Wplace Twitch 账号吗？",
-  ae = () => "Hast du ein Wplace-Konto über Twitch?",
+  ae = () => "你有 Wplace Twitch 账号吗？",
+  ie = () => "Hast du ein Wplace-Konto über Twitch?",
   ue = () => "¿Tienes una cuenta de Wplace asociada a Twitch?",
   _e = () => "Avez-vous un compte Wplace associé à Twitch ?",
   se = () => "Hai un account Wplace associato a Twitch?",
@@ -149,7 +149,7 @@ const wt = () => "and",
   he = () => "Bạn có tài khoản Wplace liên kết với Twitch không?",
   me = (r = {}, e = {}) => {
     const t = e.locale ?? g();
-    return t === "en" ? ce() : t === "pt" ? oe() : t === "ch" ? ie() : t === "de" ? ae() : t === "es" ? ue() : t === "fr" ? _e() : t === "it" ? se() : t === "jp" ? le() : t === "pl" ? fe() : t === "ru" ? de() : t === "uk" ? ve() : he()
+    return t === "en" ? ce() : t === "pt" ? oe() : t === "ch" ? ae() : t === "de" ? ie() : t === "es" ? ue() : t === "fr" ? _e() : t === "it" ? se() : t === "jp" ? le() : t === "pl" ? fe() : t === "ru" ? de() : t === "uk" ? ve() : he()
   },
   ye = r => `Login with ${r.name}`,
   ge = r => `Entrar com ${r.name}`,
@@ -203,8 +203,8 @@ const wt = () => "and",
   nr = () => "Termos de Serviço",
   cr = () => "服务条款",
   or = () => "Nutzungsbedingungen",
-  ir = () => "Términos de servicio",
-  ar = () => "Conditions d’utilisation",
+  ar = () => "Términos de servicio",
+  ir = () => "Conditions d’utilisation",
   ur = () => "Termini di servizio",
   _r = () => "利用規約",
   sr = () => "Warunki korzystania z usługi",
@@ -213,7 +213,7 @@ const wt = () => "and",
   dr = () => "Điều khoản dịch vụ",
   vr = (r = {}, e = {}) => {
     const t = e.locale ?? g();
-    return t === "en" ? rr() : t === "pt" ? nr() : t === "ch" ? cr() : t === "de" ? or() : t === "es" ? ir() : t === "fr" ? ar() : t === "it" ? ur() : t === "jp" ? _r() : t === "pl" ? sr() : t === "ru" ? lr() : t === "uk" ? fr() : dr()
+    return t === "en" ? rr() : t === "pt" ? nr() : t === "ch" ? cr() : t === "de" ? or() : t === "es" ? ar() : t === "fr" ? ir() : t === "it" ? ur() : t === "jp" ? _r() : t === "pl" ? sr() : t === "ru" ? lr() : t === "uk" ? fr() : dr()
   };
 var hr = S("<div></div>");
 
@@ -235,13 +235,13 @@ function mr(r, e) {
   });
   const p = X(() => ({
       sitekey: e.siteKey,
-      callback: (n, a) => {
-        var i;
-        (i = e.callback) == null || i.call(e, n, a)
+      callback: (n, i) => {
+        var a;
+        (a = e.callback) == null || a.call(e, n, i)
       },
       "error-callback": n => {
-        var a;
-        (a = e.errorCallback) == null || a.call(e, n)
+        var i;
+        (i = e.errorCallback) == null || i.call(e, n)
       },
       "timeout-callback": () => {
         var n;
@@ -277,14 +277,14 @@ function mr(r, e) {
       cData: e.cData,
       size: W()
     })),
-    z = (n, a) => {
-      let i = window.turnstile.render(n, a);
-      return t(i), {
+    z = (n, i) => {
+      let a = window.turnstile.render(n, i);
+      return t(a), {
         destroy() {
-          window.turnstile.remove(i)
+          window.turnstile.remove(a)
         },
         update(o) {
-          window.turnstile.remove(i), i = window.turnstile.render(n, o), t(i)
+          window.turnstile.remove(a), a = window.turnstile.render(n, o), t(a)
         }
       }
     };
@@ -304,11 +304,11 @@ function mr(r, e) {
     P = Z(M);
   {
     var D = n => {
-      var a = hr();
-      let i;
-      gt(a, (o, u) => z == null ? void 0 : z(o, u), () => T(p)), K(() => i = $(a, 1, tt(e.class), "svelte-1lm836y", i, {
+      var i = hr();
+      let a;
+      gt(i, (o, u) => z == null ? void 0 : z(o, u), () => T(p)), K(() => a = $(i, 1, tt(e.class), "svelte-1lm836y", a, {
         flexible: W() == "flexible"
-      })), C(n, a)
+      })), C(n, i)
     };
     L(P, n => {
       q.turnstatileLoaded && T(b) && n(D)
@@ -404,9 +404,9 @@ function Pr(r, e) {
     D = f(P),
     n = s(D, !0);
   l(D), O(), l(I);
-  var a = f(I, 2);
+  var i = f(I, 2);
   {
-    var i = o => {
+    var a = o => {
       var u = br(),
         v = s(u),
         m = f(v),
@@ -415,8 +415,8 @@ function Pr(r, e) {
         y(v, `${k??""} `), R(m, "href", B), y(E, U)
       }, [() => me(), () => w("twitch", ""), () => He()]), C(o, u)
     };
-    L(a, o => {
-      t() && o(i)
+    L(i, o => {
+      t() && o(a)
     })
   }
   l(h), K((o, u, v, m, E, k) => {

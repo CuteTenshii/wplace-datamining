@@ -1,11 +1,11 @@
 import {
   g as r
-} from "./CO85j776.js";
+} from "./OgFRl3VB.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "e61b7999f3615b75da925cd12f2c77d312c3e072"
+      id: "1cf3d1d65c850769ca5bf6ca373d9d4a175b4f5c"
     }
   } catch {}
 })();
@@ -23,14 +23,14 @@ const d = () => "End",
   f = () => "Fin",
   s = () => "Fin",
   c = () => "Fine",
-  l = () => "終了",
-  a = () => "Koniec",
+  a = () => "終了",
+  l = () => "Koniec",
   b = () => "Конец",
   p = () => "Кінець",
   _ = () => "Kết thúc",
   g = (n = {}, t = {}) => {
     const e = t.locale ?? r();
-    return e === "en" ? d() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? u() : e === "es" ? f() : e === "fr" ? s() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? p() : _()
+    return e === "en" ? d() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? u() : e === "es" ? f() : e === "fr" ? s() : e === "it" ? c() : e === "jp" ? a() : e === "pl" ? l() : e === "ru" ? b() : e === "uk" ? p() : _()
   };
 export {
   g as e

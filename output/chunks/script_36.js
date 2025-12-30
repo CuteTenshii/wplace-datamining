@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./CO85j776.js";
+} from "./OgFRl3VB.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "e61b7999f3615b75da925cd12f2c77d312c3e072"
+      id: "1cf3d1d65c850769ca5bf6ca373d9d4a175b4f5c"
     }
   } catch {}
 })();
@@ -23,14 +23,14 @@ const c = () => "Cancel",
   o = () => "Cancelar",
   a = () => "Annuler",
   i = () => "Annulla",
-  s = () => "キャンセル",
-  d = () => "Anuluj",
+  d = () => "キャンセル",
+  s = () => "Anuluj",
   b = () => "Отмена",
   p = () => "Скасувати",
   _ = () => "Hủy",
   g = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? c() : e === "pt" ? f() : e === "ch" ? l() : e === "de" ? u() : e === "es" ? o() : e === "fr" ? a() : e === "it" ? i() : e === "jp" ? s() : e === "pl" ? d() : e === "ru" ? b() : e === "uk" ? p() : _()
+    return e === "en" ? c() : e === "pt" ? f() : e === "ch" ? l() : e === "de" ? u() : e === "es" ? o() : e === "fr" ? a() : e === "it" ? i() : e === "jp" ? d() : e === "pl" ? s() : e === "ru" ? b() : e === "uk" ? p() : _()
   };
 export {
   g as c
