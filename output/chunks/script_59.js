@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./B1vEyi0i.js";
+} from "./JcMV53SJ.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "f3dcc3e771086c0f63d8ece84cd728044b2a0f0d"
+      id: "5f26df466977fd01d18eb1a4a8743e0ce83f1b4f"
     }
   } catch {}
 })();
@@ -16,21 +16,21 @@ try {
     r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "ce125a4d-45c0-48a4-bfc6-e93640e57cc3", n._sentryDebugIdIdentifier = "sentry-dbid-ce125a4d-45c0-48a4-bfc6-e93640e57cc3")
   })()
 } catch {}
-const s = () => "Appeals",
-  a = () => "Apelos",
+const a = () => "Appeals",
+  s = () => "Apelos",
   o = () => "申诉",
   p = () => "Einsprüche",
-  c = () => "Apelaciones",
+  f = () => "Apelaciones",
   u = () => "Recours",
-  i = () => "Ricorsi",
-  l = () => "異議申立て",
-  f = () => "Odwołania",
+  c = () => "Ricorsi",
+  i = () => "異議申立て",
+  l = () => "Odwołania",
   d = () => "Апелляции",
-  _ = () => "Апеляції",
-  b = () => "Các kháng cáo",
+  b = () => "Апеляції",
+  _ = () => "Các kháng cáo",
   y = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? s() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? p() : e === "es" ? c() : e === "fr" ? u() : e === "it" ? i() : e === "jp" ? l() : e === "pl" ? f() : e === "ru" ? d() : e === "uk" ? _() : b()
+    return e === "en" ? a() : e === "pt" ? s() : e === "ch" ? o() : e === "de" ? p() : e === "es" ? f() : e === "fr" ? u() : e === "it" ? c() : e === "jp" ? i() : e === "pl" ? l() : e === "ru" ? d() : e === "uk" ? b() : _()
   };
 export {
   y as a

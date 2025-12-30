@@ -1,22 +1,22 @@
 import {
   g as f
-} from "./B1vEyi0i.js";
-import "./Cu0Q6Hwn.js";
+} from "./JcMV53SJ.js";
+import "./B4ChKoOX.js";
 import {
   o,
   b as d
-} from "./Cp11ShwH.js";
+} from "./I4j7of_K.js";
 import {
   b as s
-} from "./Cq1WQH95.js";
+} from "./BhOu8MeW.js";
 import {
   r as i
-} from "./BaHfsert.js";
+} from "./GI-gjqpA.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "f3dcc3e771086c0f63d8ece84cd728044b2a0f0d"
+      id: "5f26df466977fd01d18eb1a4a8743e0ce83f1b4f"
     }
   } catch {}
 })();
@@ -28,9 +28,9 @@ try {
   })()
 } catch {}
 const l = () => "Reddit",
-  c = () => "Reddit",
   a = () => "Reddit",
   u = () => "Reddit",
+  c = () => "Reddit",
   p = () => "Reddit",
   g = () => "Reddit",
   v = () => "Reddit",
@@ -41,7 +41,7 @@ const l = () => "Reddit",
   _ = () => "Reddit",
   E = (t = {}, r = {}) => {
     const e = r.locale ?? f();
-    return e === "en" ? l() : e === "pt" ? c() : e === "ch" ? a() : e === "de" ? u() : e === "es" ? p() : e === "fr" ? g() : e === "it" ? v() : e === "jp" ? w() : e === "pl" ? $() : e === "ru" ? b() : e === "uk" ? h() : _()
+    return e === "en" ? l() : e === "pt" ? a() : e === "ch" ? u() : e === "de" ? c() : e === "es" ? p() : e === "fr" ? g() : e === "it" ? v() : e === "jp" ? w() : e === "pl" ? $() : e === "ru" ? b() : e === "uk" ? h() : _()
   };
 var y = o('<svg><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path></svg>');
 

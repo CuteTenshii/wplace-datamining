@@ -1,11 +1,11 @@
 import {
   g as o
-} from "./B1vEyi0i.js";
+} from "./JcMV53SJ.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "f3dcc3e771086c0f63d8ece84cd728044b2a0f0d"
+      id: "5f26df466977fd01d18eb1a4a8743e0ce83f1b4f"
     }
   } catch {}
 })();
@@ -23,14 +23,14 @@ const t = () => "Error loading",
   l = () => "Error al cargar",
   u = () => "Erreur lors du chargement",
   f = () => "Errore nel caricamento",
-  c = () => "読み込みエラー",
-  s = () => "Błąd ładowania",
+  s = () => "読み込みエラー",
+  c = () => "Błąd ładowania",
   g = () => "Ошибка загрузки",
   _ = () => "Помилка завантаження",
   b = () => "Lỗi tải dữ liệu",
   y = (e = {}, n = {}) => {
     const r = n.locale ?? o();
-    return r === "en" ? t() : r === "pt" ? i() : r === "ch" ? d() : r === "de" ? a() : r === "es" ? l() : r === "fr" ? u() : r === "it" ? f() : r === "jp" ? c() : r === "pl" ? s() : r === "ru" ? g() : r === "uk" ? _() : b()
+    return r === "en" ? t() : r === "pt" ? i() : r === "ch" ? d() : r === "de" ? a() : r === "es" ? l() : r === "fr" ? u() : r === "it" ? f() : r === "jp" ? s() : r === "pl" ? c() : r === "ru" ? g() : r === "uk" ? _() : b()
   };
 export {
   y as e

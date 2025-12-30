@@ -1,31 +1,31 @@
-import "./Cu0Q6Hwn.js";
+import "./B4ChKoOX.js";
 import {
-  p as b,
+  p as g,
   f as c,
-  t as A,
-  b as r,
+  t as f,
+  b as A,
   c as m,
   s as v,
   d as w,
   r as y
-} from "./Cp11ShwH.js";
+} from "./I4j7of_K.js";
 import {
   i as h
-} from "./RBjXUxGY.js";
+} from "./DfRO1b1n.js";
 import {
   b as _,
-  a as f,
+  a as r,
   s as x
-} from "./Cq1WQH95.js";
+} from "./BhOu8MeW.js";
 import {
   p as E,
   r as T
-} from "./BaHfsert.js";
+} from "./GI-gjqpA.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "f3dcc3e771086c0f63d8ece84cd728044b2a0f0d"
+      id: "5f26df466977fd01d18eb1a4a8743e0ce83f1b4f"
     }
   } catch {}
 })();
@@ -41,7 +41,7 @@ var B = c("<span>wplace</span>"),
   L = c('<div><img alt="Wplace logo"/> <!></div>');
 
 function D(e, t) {
-  b(t, !0);
+  g(t, !0);
   let a = E(t, "size", 3, "default"),
     p = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
   var s = L();
@@ -53,26 +53,26 @@ function D(e, t) {
   let d;
   var u = v(l, 2);
   {
-    var g = o => {
+    var b = o => {
       var i = B();
       let n;
-      A(() => n = f(i, 1, "text-base-content font-pixel", null, n, {
+      f(() => n = r(i, 1, "text-base-content font-pixel", null, n, {
         "text-4xl": a() === "default",
         "text-5xl": a() === "lg" || a() === "medium"
-      })), r(o, i)
+      })), A(o, i)
     };
     h(u, o => {
-      t.hasText && o(g)
+      t.hasText && o(b)
     })
   }
-  y(s), A(() => {
-    d = f(l, 1, "pixelated h-auto shrink-0", null, d, {
+  y(s), f(() => {
+    d = r(l, 1, "pixelated h-auto shrink-0", null, d, {
       "w-4": a() === "small",
       "w-10": a() === "default",
       "w-16": a() === "medium",
       "w-20": a() === "lg"
     }), x(l, "src", S)
-  }), r(e, s), m()
+  }), A(e, s), m()
 }
 export {
   D as L
