@@ -8,12 +8,12 @@ import {
   j as u,
   H as h,
   N as w
-} from "./I4j7of_K.js";
+} from "./B2A4K7wt.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "5f26df466977fd01d18eb1a4a8743e0ce83f1b4f"
+      id: "6bc8c324ce1f230e3a6c17fd8c71ebea9f521c24"
     }
   } catch {}
 })();
@@ -34,10 +34,10 @@ function I(e = !1) {
     let s = 0,
       t = {};
     const b = w(() => {
-      let i = !1;
-      const d = n.s;
-      for (const o in d) d[o] !== t[o] && (t[o] = d[o], i = !0);
-      return i && s++, s
+      let d = !1;
+      const i = n.s;
+      for (const o in i) i[o] !== t[o] && (t[o] = i[o], d = !0);
+      return d && s++, s
     });
     a = () => u(b)
   }

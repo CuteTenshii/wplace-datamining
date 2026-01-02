@@ -3,13 +3,13 @@ import {
   m as i,
   k as s,
   l as r,
-  B as l
-} from "./I4j7of_K.js";
+  B as c
+} from "./B2A4K7wt.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "5f26df466977fd01d18eb1a4a8743e0ce83f1b4f"
+      id: "6bc8c324ce1f230e3a6c17fd8c71ebea9f521c24"
     }
   } catch {}
 })();
@@ -21,9 +21,9 @@ try {
   })()
 } catch {}
 
-function y(e, n, f) {
+function b(e, n, f) {
   s && r();
-  var a = new l(e),
+  var a = new c(e),
     o = !t();
   i(() => {
     var d = n();
@@ -31,5 +31,5 @@ function y(e, n, f) {
   })
 }
 export {
-  y as k
+  b as k
 };

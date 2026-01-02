@@ -9,12 +9,12 @@ import {
   j as o,
   i as r,
   g as p
-} from "./I4j7of_K.js";
+} from "./B2A4K7wt.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "5f26df466977fd01d18eb1a4a8743e0ce83f1b4f"
+      id: "6bc8c324ce1f230e3a6c17fd8c71ebea9f521c24"
     }
   } catch {}
 })();
@@ -30,19 +30,19 @@ const E = "true",
   A = "0x4AAAAAABpHqZ-6i7uL0nmG",
   T = "https://backend.wplace.live",
   w = "theme";
-var l, g, u, d, f, h, c, b;
+var l, g, u, d, c, h, f, b;
 class y {
   constructor() {
     n(this, l, s(!1));
     n(this, g, s(!1));
     n(this, u, s(p(I())));
     n(this, d, s(!1));
-    n(this, f, s("custom-winter"));
+    n(this, c, s("custom-winter"));
     n(this, h, s(!0));
-    n(this, c, s(p(Date.now())));
+    n(this, f, s(p(Date.now())));
     n(this, b, s(void 0));
     setInterval(() => {
-      r(a(this, c), Date.now(), !0)
+      r(a(this, f), Date.now(), !0)
     }, 500), this.theme = localStorage.getItem(w), this.theme !== "dark" && this.theme !== "custom-winter" && (this.theme = "custom-winter")
   }
   get dropletsDialogOpen() {
@@ -70,10 +70,10 @@ class y {
     r(a(this, d), e, !0)
   }
   get theme() {
-    return o(a(this, f))
+    return o(a(this, c))
   }
   set theme(e) {
-    r(a(this, f), e, !0), localStorage.setItem(w, e), document.documentElement.setAttribute("data-theme", e)
+    r(a(this, c), e, !0), localStorage.setItem(w, e), document.documentElement.setAttribute("data-theme", e)
   }
   get snowflakesEnabled() {
     return o(a(this, h))
@@ -82,7 +82,7 @@ class y {
     r(a(this, h), e, !0)
   }
   get now() {
-    return o(a(this, c))
+    return o(a(this, f))
   }
   get captcha() {
     return _ ? o(a(this, b)) : {
@@ -94,7 +94,7 @@ class y {
     r(a(this, b), e, !0)
   }
 }
-l = new WeakMap, g = new WeakMap, u = new WeakMap, d = new WeakMap, f = new WeakMap, h = new WeakMap, c = new WeakMap, b = new WeakMap;
+l = new WeakMap, g = new WeakMap, u = new WeakMap, d = new WeakMap, c = new WeakMap, h = new WeakMap, f = new WeakMap, b = new WeakMap;
 const U = new y;
 
 function I() {
