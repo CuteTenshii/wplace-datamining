@@ -1,23 +1,23 @@
 import {
   g as t
-} from "./BHOVlP7C.js";
+} from "./CCwyOsrP.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "6bc8c324ce1f230e3a6c17fd8c71ebea9f521c24"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "845cd245f9645ae957e3eeb4920045ede245aa3a"
     }
   } catch {}
 })();
 try {
   (function() {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      e = new r.Error().stack;
-    e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "484aa75f-fcab-41a2-9e77-87c3b236cbd0", r._sentryDebugIdIdentifier = "sentry-dbid-484aa75f-fcab-41a2-9e77-87c3b236cbd0")
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "484aa75f-fcab-41a2-9e77-87c3b236cbd0", e._sentryDebugIdIdentifier = "sentry-dbid-484aa75f-fcab-41a2-9e77-87c3b236cbd0")
   })()
 } catch {}
-const f = () => "Confirm",
-  o = () => "Confirmar",
+const o = () => "Confirm",
+  f = () => "Confirmar",
   i = () => "确认",
   c = () => "Bestätigen",
   u = () => "Confirmar",
@@ -28,9 +28,9 @@ const f = () => "Confirm",
   b = () => "Подтвердить",
   m = () => "Підтвердити",
   p = () => "Xác nhận",
-  g = (r = {}, e = {}) => {
-    const n = e.locale ?? t();
-    return n === "en" ? f() : n === "pt" ? o() : n === "ch" ? i() : n === "de" ? c() : n === "es" ? u() : n === "fr" ? s() : n === "it" ? d() : n === "jp" ? a() : n === "pl" ? l() : n === "ru" ? b() : n === "uk" ? m() : p()
+  g = (e = {}, r = {}) => {
+    const n = r.locale ?? t();
+    return n === "en" ? o() : n === "pt" ? f() : n === "ch" ? i() : n === "de" ? c() : n === "es" ? u() : n === "fr" ? s() : n === "it" ? d() : n === "jp" ? a() : n === "pl" ? l() : n === "ru" ? b() : n === "uk" ? m() : p()
   };
 export {
   g as c

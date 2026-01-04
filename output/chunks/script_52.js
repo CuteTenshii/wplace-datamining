@@ -1,11 +1,11 @@
 import {
   g as r
-} from "./BHOVlP7C.js";
+} from "./CCwyOsrP.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "6bc8c324ce1f230e3a6c17fd8c71ebea9f521c24"
+      id: "845cd245f9645ae957e3eeb4920045ede245aa3a"
     }
   } catch {}
 })();
@@ -23,14 +23,14 @@ const d = () => "End",
   f = () => "Fin",
   s = () => "Fin",
   c = () => "Fine",
-  l = () => "終了",
-  a = () => "Koniec",
-  b = () => "Конец",
-  p = () => "Кінець",
-  _ = () => "Kết thúc",
+  a = () => "終了",
+  l = () => "Koniec",
+  p = () => "Конец",
+  _ = () => "Кінець",
+  b = () => "Kết thúc",
   g = (n = {}, t = {}) => {
     const e = t.locale ?? r();
-    return e === "en" ? d() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? u() : e === "es" ? f() : e === "fr" ? s() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? p() : _()
+    return e === "en" ? d() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? u() : e === "es" ? f() : e === "fr" ? s() : e === "it" ? c() : e === "jp" ? a() : e === "pl" ? l() : e === "ru" ? p() : e === "uk" ? _() : b()
   };
 export {
   g as e

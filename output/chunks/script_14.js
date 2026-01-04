@@ -9,12 +9,12 @@ import {
   j as o,
   i as r,
   g as p
-} from "./B2A4K7wt.js";
+} from "./7dqXbHhh.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "6bc8c324ce1f230e3a6c17fd8c71ebea9f521c24"
+      id: "845cd245f9645ae957e3eeb4920045ede245aa3a"
     }
   } catch {}
 })();
@@ -30,15 +30,15 @@ const E = "true",
   A = "0x4AAAAAABpHqZ-6i7uL0nmG",
   T = "https://backend.wplace.live",
   w = "theme";
-var l, g, u, d, c, h, f, b;
+var l, g, u, d, h, c, f, b;
 class y {
   constructor() {
     n(this, l, s(!1));
     n(this, g, s(!1));
     n(this, u, s(p(I())));
     n(this, d, s(!1));
-    n(this, c, s("custom-winter"));
-    n(this, h, s(!0));
+    n(this, h, s("custom-winter"));
+    n(this, c, s(!0));
     n(this, f, s(p(Date.now())));
     n(this, b, s(void 0));
     setInterval(() => {
@@ -70,16 +70,16 @@ class y {
     r(a(this, d), e, !0)
   }
   get theme() {
-    return o(a(this, c))
-  }
-  set theme(e) {
-    r(a(this, c), e, !0), localStorage.setItem(w, e), document.documentElement.setAttribute("data-theme", e)
-  }
-  get snowflakesEnabled() {
     return o(a(this, h))
   }
+  set theme(e) {
+    r(a(this, h), e, !0), localStorage.setItem(w, e), document.documentElement.setAttribute("data-theme", e)
+  }
+  get snowflakesEnabled() {
+    return o(a(this, c))
+  }
   set snowflakesEnabled(e) {
-    r(a(this, h), e, !0)
+    r(a(this, c), e, !0)
   }
   get now() {
     return o(a(this, f))
@@ -94,7 +94,7 @@ class y {
     r(a(this, b), e, !0)
   }
 }
-l = new WeakMap, g = new WeakMap, u = new WeakMap, d = new WeakMap, c = new WeakMap, h = new WeakMap, f = new WeakMap, b = new WeakMap;
+l = new WeakMap, g = new WeakMap, u = new WeakMap, d = new WeakMap, h = new WeakMap, c = new WeakMap, f = new WeakMap, b = new WeakMap;
 const U = new y;
 
 function I() {

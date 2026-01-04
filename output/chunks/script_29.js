@@ -1,7 +1,7 @@
 import {
   g as K
-} from "./BHOVlP7C.js";
-import "./DzVvNvq7.js";
+} from "./CCwyOsrP.js";
+import "./BogmcaYM.js";
 import {
   o as U,
   b as i,
@@ -23,7 +23,7 @@ import {
   i as P,
   u as ye,
   aR as Le
-} from "./B2A4K7wt.js";
+} from "./7dqXbHhh.js";
 import {
   b as R,
   d as mt,
@@ -32,47 +32,47 @@ import {
   g as Te,
   a as et,
   f as bt
-} from "./BDAeaKzA.js";
+} from "./Bl5Caycm.js";
 import {
   r as N,
   p as tt
-} from "./DxCrXrYn.js";
+} from "./BH7Vj6ya.js";
 import {
   s as x
-} from "./CNHg1khH.js";
+} from "./tm_aTfIa.js";
 import {
   i as j
-} from "./DjhfW3nG.js";
+} from "./CvjZfGTK.js";
 import {
   b as gt
-} from "./Bd9c_u6r.js";
+} from "./C65p71IP.js";
 import {
   g as Fe
-} from "./Bp3GOu9N.js";
+} from "./DNLY7XGi.js";
 import {
   g as ht,
   P as Xe
-} from "./BhCTVVBF.js";
+} from "./CST6ZfRY.js";
 import {
-  u as pe,
-  t as de,
+  u as de,
+  t as pe,
   b as Ge,
   a as xt
-} from "./DkN1SYfC.js";
+} from "./9MPNPwPW.js";
 import {
   r as Oe
-} from "./C6PImex_.js";
+} from "./niWYP1ll.js";
 import {
   c as wt
-} from "./CCMz2Q16.js";
+} from "./DsZ8PpdE.js";
 import {
   a as yt
-} from "./CWwxty1P.js";
+} from "./OOcifG2U.js";
 (function() {
   try {
     var s = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     s.SENTRY_RELEASE = {
-      id: "6bc8c324ce1f230e3a6c17fd8c71ebea9f521c24"
+      id: "845cd245f9645ae957e3eeb4920045ede245aa3a"
     }
   } catch {}
 })();
@@ -135,8 +135,8 @@ const kt = () => "Add profile picture",
   ar = () => "Política de Reembolso",
   ir = () => "退款政策",
   lr = () => "Rückerstattungsrichtlinie",
-  pr = () => "Política de reembolso",
-  dr = () => "Politique de remboursement",
+  dr = () => "Política de reembolso",
+  pr = () => "Politique de remboursement",
   ur = () => "Politica di rimborso",
   cr = () => "返金ポリシー",
   fr = () => "Polityka zwrotów",
@@ -145,7 +145,7 @@ const kt = () => "Add profile picture",
   mr = () => "Chính sách hoàn tiền",
   Ve = (s = {}, o = {}) => {
     const e = o.locale ?? K();
-    return e === "en" ? sr() : e === "pt" ? ar() : e === "ch" ? ir() : e === "de" ? lr() : e === "es" ? pr() : e === "fr" ? dr() : e === "it" ? ur() : e === "jp" ? cr() : e === "pl" ? fr() : e === "ru" ? _r() : e === "uk" ? vr() : mr()
+    return e === "en" ? sr() : e === "pt" ? ar() : e === "ch" ? ir() : e === "de" ? lr() : e === "es" ? dr() : e === "fr" ? pr() : e === "it" ? ur() : e === "jp" ? cr() : e === "pl" ? fr() : e === "ru" ? _r() : e === "uk" ? vr() : mr()
   },
   br = () => "For refund requests and processing details, please see our",
   gr = () => "Para pedidos de reembolso, consulte nossa",
@@ -222,7 +222,7 @@ var Or = y('<span class="btn btn-xs btn-circle btn-primary ml-0.5 size-5"><!></s
 
 function Qr(s, o) {
   We(o, !0);
-  const e = d => {
+  const e = p => {
     var u = Vr(),
       f = t(u);
     je(f, {
@@ -244,27 +244,27 @@ function Qr(s, o) {
         n() && B(S)
       })
     }
-    r(u), w(B => x(M, `${B??""} `), [() => o.value.toLocaleString("en-US")]), i(d, u)
+    r(u), w(B => x(M, `${B??""} `), [() => o.value.toLocaleString("en-US")]), i(p, u)
   };
   let n = tt(o, "button", 3, !0);
   var k = Je(),
     h = ke(k);
   {
-    var m = d => {
+    var m = p => {
         var u = Kr();
         u.__click = () => {
           ht.dropletsDialogOpen = !0
         };
         var f = t(u);
-        e(f), r(u), i(d, u)
+        e(f), r(u), i(p, u)
       },
-      l = d => {
+      l = p => {
         var u = Nr(),
           f = t(u);
-        e(f), r(u), i(d, u)
+        e(f), r(u), i(p, u)
       };
-    j(h, d => {
-      n() ? d(m) : d(l, !1)
+    j(h, p => {
+      n() ? p(m) : p(l, !1)
     })
   }
   i(s, k), $e()
@@ -312,22 +312,22 @@ function Lo(s, o) {
   let e = tt(o, "open", 15),
     n = we(!1);
   const k = ye(() => {
-      var p, g;
-      return ((g = (p = pe.data) == null ? void 0 : p.country) == null ? void 0 : g.toUpperCase()) === "BR"
+      var d, g;
+      return ((g = (d = de.data) == null ? void 0 : d.country) == null ? void 0 : g.toUpperCase()) === "BR"
     }),
     h = ye(() => {
-      var p, g;
-      return ((g = (p = pe.data) == null ? void 0 : p.country) == null ? void 0 : g.toUpperCase()) === "MX"
+      var d, g;
+      return ((g = (d = de.data) == null ? void 0 : d.country) == null ? void 0 : g.toUpperCase()) === "MX"
     });
   let m = we(null),
     l = we(void 0),
-    d = we(!1);
+    p = we(!1);
   var u = so(),
     f = ke(u),
     b = t(f),
     M = a(t(b), 2);
   {
-    var C = p => {
+    var C = d => {
       var g = ro(),
         A = t(g),
         E = t(A),
@@ -340,7 +340,7 @@ function Lo(s, o) {
       {
         let I = ye(() => {
           var G;
-          return ((G = pe.data) == null ? void 0 : G.droplets) ?? 0
+          return ((G = de.data) == null ? void 0 : G.droplets) ?? 0
         });
         Qr(fe, {
           get value() {
@@ -374,16 +374,16 @@ function Lo(s, o) {
           var Ie = a(qe, 2),
             Ue = t(Ie);
           {
-            var pt = z => {
+            var dt = z => {
               var v = Le();
               w(D => x(v, `${D??""} Droplets`), [() => oe().toLocaleString("en-US")]), i(z, v)
             };
             j(Ue, z => {
-              ne() && z(pt)
+              ne() && z(dt)
             })
           }
           var Ze = a(Ue, 2),
-            dt = t(Ze);
+            pt = t(Ze);
           r(Ze), r(Ie);
           var ut = a(Ie, 2);
           {
@@ -408,7 +408,7 @@ function Lo(s, o) {
                   _(m).show(), P(n, !0), Ge.generatePixQrCode(at()).then(le => {
                     P(l, le, !0)
                   }).catch(le => {
-                    de.error(le.message)
+                    pe.error(le.message)
                   }).finally(() => {
                     P(n, !1)
                   })
@@ -452,7 +452,7 @@ function Lo(s, o) {
             })
           }
           r(Pe), w((z, v) => {
-            x(lt, `${z??""} `), x(dt, `+${v??""} bonus`)
+            x(lt, `${z??""} `), x(pt, `+${v??""} bonus`)
           }, [() => (oe() + ne()).toLocaleString("en-US"), () => ne().toLocaleString("en-US")]), i(G, Pe)
         };
         var H = t(W),
@@ -518,19 +518,19 @@ function Lo(s, o) {
           x(X, `${c??""} `), ue(re, "href", oe), x(be, ne)
         }, [() => Ne(), () => Ke(), Oe, () => Ve()])
       }
-      r(g), w((I, G, c, oe) => x(Y, I), [() => Ne(), () => Ke(), Oe, () => Ve()]), i(p, g)
+      r(g), w((I, G, c, oe) => x(Y, I), [() => Ne(), () => Ke(), Oe, () => Ve()]), i(d, g)
     };
-    j(M, p => {
-      pe.data && p(C)
+    j(M, d => {
+      de.data && d(C)
     })
   }
   r(b);
   var S = a(b, 2),
     B = t(S),
     Q = t(B, !0);
-  r(B), r(S), r(f), mt(f, () => p => {
+  r(B), r(S), r(f), mt(f, () => d => {
     vt(() => {
-      e() ? p.show() : p.close()
+      e() ? d.show() : d.close()
     })
   });
   var Z = a(f, 2),
@@ -544,7 +544,7 @@ function Lo(s, o) {
   }), V(2), r(Se), r(Ce);
   var ot = a(Ce, 2);
   {
-    var nt = p => {
+    var nt = d => {
         var g = oo(),
           A = ke(g),
           E = a(t(A)),
@@ -562,46 +562,46 @@ function Lo(s, o) {
           ve = t(J);
         ve.__click = () => {
           var q;
-          navigator.clipboard.writeText(((q = _(l)) == null ? void 0 : q.pixCode) ?? ""), de.success("Código PIX copiado")
+          navigator.clipboard.writeText(((q = _(l)) == null ? void 0 : q.pixCode) ?? ""), pe.success("Código PIX copiado")
         }, r(J), r(W), r(Y);
         var $ = a(Y, 2),
           ee = t($);
         ee.__click = async () => {
           var q, me, te;
           if (!_(l)) {
-            de.info("Espere 1 minuto e recarrege a pagina");
+            pe.info("Espere 1 minuto e recarrege a pagina");
             return
           }
           try {
-            P(d, !0);
+            P(p, !0);
             const {
               paid: X
             } = await Ge.getPixStatus(_(l).pixId);
             if (X) {
               const re = _(l).productId.toString(),
                 be = (te = (me = (q = xt.products[re]) == null ? void 0 : q.items) == null ? void 0 : me[0]) == null ? void 0 : te.amount;
-              await pe.refresh(), be ? Fe(`payment/success?droplets=${be}`) : Fe("payment/success")
-            } else de.info("Pagamento ainda não recebido. Desculpe a demora, tente novamente em instantes.", {
+              await de.refresh(), be ? Fe(`payment/success?droplets=${be}`) : Fe("payment/success")
+            } else pe.info("Pagamento ainda não recebido. Desculpe a demora, tente novamente em instantes.", {
               duration: 1e5
             })
           } catch (X) {
-            console.error(X), de.error("Error ao atualizar o status do pix. Tente recarregar a página.")
+            console.error(X), pe.error("Error ao atualizar o status do pix. Tente recarregar a página.")
           } finally {
-            P(d, !1)
+            P(p, !1)
           }
         }, r($), w(q => {
-          x(ce, `R$${q??""}`), ue(_e, "src", _(l).qrCode), Te(H, _(l).pixCode), ee.disabled = _(d)
-        }, [() => (_(l).price / 100).toFixed(2).replace(".", ",")]), i(p, g)
+          x(ce, `R$${q??""}`), ue(_e, "src", _(l).qrCode), Te(H, _(l).pixCode), ee.disabled = _(p)
+        }, [() => (_(l).price / 100).toFixed(2).replace(".", ",")]), i(d, g)
       },
-      st = p => {
+      st = d => {
         var g = no();
-        i(p, g)
+        i(d, g)
       };
-    j(ot, p => {
-      _(l) ? p(nt) : p(st, !1)
+    j(ot, d => {
+      _(l) ? d(nt) : d(st, !1)
     })
   }
-  r(Be), r(Me), r(Z), gt(Z, p => P(m, p), () => _(m)), w(p => x(Q, p), [() => wt()]), xe("close", f, () => {
+  r(Be), r(Me), r(Z), gt(Z, d => P(m, d), () => _(m)), w(d => x(Q, d), [() => wt()]), xe("close", f, () => {
     e(!1)
   }), xe("close", Z, () => {
     setTimeout(() => {
@@ -619,22 +619,22 @@ function Do(s, o) {
     k = ke(n);
   {
     var h = l => {
-        var d = ao();
-        R(d, () => ({
+        var p = ao();
+        R(p, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
           fill: "currentColor",
           ...e
-        })), i(l, d)
+        })), i(l, p)
       },
       m = l => {
-        var d = io();
-        R(d, () => ({
+        var p = io();
+        R(p, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
           fill: "currentColor",
           ...e
-        })), i(l, d)
+        })), i(l, p)
       };
     j(k, l => {
       o.filled ? l(h) : l(m, !1)
@@ -649,13 +649,13 @@ function To([s, o], [e, n]) {
     h = Math.abs(e - s),
     m = Math.abs(n - o),
     l = s < e ? 1 : -1,
-    d = o < n ? 1 : -1;
+    p = o < n ? 1 : -1;
   let u = h - m,
     f = s,
     b = o;
   for (; k.push([f, b]), !(f === e && b === n);) {
     const M = 2 * u;
-    M > -m && (u -= m, f += l), M < h && (u += h, b += d)
+    M > -m && (u -= m, f += l), M < h && (u += h, b += p)
   }
   return k
 }
@@ -670,7 +670,7 @@ function jo(s, o) {
     m = t(h),
     l = t(m);
   {
-    var d = C => {
+    var p = C => {
         yt(C, {
           get userId() {
             return o.userId
@@ -682,7 +682,7 @@ function jo(s, o) {
         w(() => ue(S, "src", o.pictureUrl)), i(C, S)
       };
     j(l, C => {
-      o.pictureUrl ? C(u, !1) : C(d)
+      o.pictureUrl ? C(u, !1) : C(p)
     })
   }
   r(m), r(h);

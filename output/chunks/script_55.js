@@ -1,10 +1,10 @@
-import "./DzVvNvq7.js";
+import "./BogmcaYM.js";
 import {
   F as nt,
   x as ct,
-  y as ot,
-  H as it,
-  by as at,
+  y as at,
+  H as ot,
+  by as it,
   p as Y,
   i as G,
   e as Q,
@@ -22,46 +22,46 @@ import {
   r as l,
   s as f,
   n as O
-} from "./B2A4K7wt.js";
+} from "./7dqXbHhh.js";
 import {
   s as y
-} from "./CNHg1khH.js";
+} from "./tm_aTfIa.js";
 import {
   i as L
-} from "./DjhfW3nG.js";
+} from "./CvjZfGTK.js";
 import {
   a as $,
   c as tt,
   b as lt,
   s as R
-} from "./BDAeaKzA.js";
+} from "./Bl5Caycm.js";
 import {
   p as _,
   r as ft
-} from "./DxCrXrYn.js";
+} from "./BH7Vj6ya.js";
 import {
   g as q,
   t as V,
   P as dt,
   a as vt
-} from "./BhCTVVBF.js";
+} from "./CST6ZfRY.js";
 import {
   t as ht
-} from "./C6PImex_.js";
+} from "./niWYP1ll.js";
 import {
   o as mt
-} from "./CMQ3h4df.js";
+} from "./BaHFpIg7.js";
 import {
   g
-} from "./BHOVlP7C.js";
+} from "./CCwyOsrP.js";
 import {
   L as yt
-} from "./Dthn1Yur.js";
+} from "./Dpjuuntr.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "6bc8c324ce1f230e3a6c17fd8c71ebea9f521c24"
+      id: "845cd245f9645ae957e3eeb4920045ede245aa3a"
     }
   } catch {}
 })();
@@ -79,9 +79,9 @@ function gt(r, e, t) {
     if (t && (c != null && c.update)) {
       var w = !1,
         h = {};
-      ot(() => {
+      at(() => {
         var d = t();
-        it(d), w && at(h, d) && (h = d, c.update(d))
+        ot(d), w && it(h, d) && (h = d, c.update(d))
       }), w = !0
     }
     if (c != null && c.destroy) return () => c.destroy()
@@ -136,9 +136,9 @@ const wt = () => "and",
     return t === "en" ? Gt() : t === "pt" ? Ot() : t === "ch" ? Vt() : t === "de" ? Yt() : t === "es" ? Qt() : t === "fr" ? Zt() : t === "it" ? Jt() : t === "jp" ? Xt() : t === "pl" ? $t() : t === "ru" ? te() : t === "uk" ? ee() : re()
   },
   ce = () => "Do you have a Wplace Twitch account?",
-  oe = () => "Você tem uma conta Wplace associada à Twitch?",
-  ie = () => "你有 Wplace Twitch 账号吗？",
-  ae = () => "Hast du ein Wplace-Konto über Twitch?",
+  ae = () => "Você tem uma conta Wplace associada à Twitch?",
+  oe = () => "你有 Wplace Twitch 账号吗？",
+  ie = () => "Hast du ein Wplace-Konto über Twitch?",
   ue = () => "¿Tienes una cuenta de Wplace asociada a Twitch?",
   _e = () => "Avez-vous un compte Wplace associé à Twitch ?",
   se = () => "Hai un account Wplace associato a Twitch?",
@@ -149,7 +149,7 @@ const wt = () => "and",
   he = () => "Bạn có tài khoản Wplace liên kết với Twitch không?",
   me = (r = {}, e = {}) => {
     const t = e.locale ?? g();
-    return t === "en" ? ce() : t === "pt" ? oe() : t === "ch" ? ie() : t === "de" ? ae() : t === "es" ? ue() : t === "fr" ? _e() : t === "it" ? se() : t === "jp" ? le() : t === "pl" ? fe() : t === "ru" ? de() : t === "uk" ? ve() : he()
+    return t === "en" ? ce() : t === "pt" ? ae() : t === "ch" ? oe() : t === "de" ? ie() : t === "es" ? ue() : t === "fr" ? _e() : t === "it" ? se() : t === "jp" ? le() : t === "pl" ? fe() : t === "ru" ? de() : t === "uk" ? ve() : he()
   },
   ye = r => `Login with ${r.name}`,
   ge = r => `Entrar com ${r.name}`,
@@ -202,9 +202,9 @@ const wt = () => "and",
   rr = () => "Terms of Service",
   nr = () => "Termos de Serviço",
   cr = () => "服务条款",
-  or = () => "Nutzungsbedingungen",
-  ir = () => "Términos de servicio",
-  ar = () => "Conditions d’utilisation",
+  ar = () => "Nutzungsbedingungen",
+  or = () => "Términos de servicio",
+  ir = () => "Conditions d’utilisation",
   ur = () => "Termini di servizio",
   _r = () => "利用規約",
   sr = () => "Warunki korzystania z usługi",
@@ -213,7 +213,7 @@ const wt = () => "and",
   dr = () => "Điều khoản dịch vụ",
   vr = (r = {}, e = {}) => {
     const t = e.locale ?? g();
-    return t === "en" ? rr() : t === "pt" ? nr() : t === "ch" ? cr() : t === "de" ? or() : t === "es" ? ir() : t === "fr" ? ar() : t === "it" ? ur() : t === "jp" ? _r() : t === "pl" ? sr() : t === "ru" ? lr() : t === "uk" ? fr() : dr()
+    return t === "en" ? rr() : t === "pt" ? nr() : t === "ch" ? cr() : t === "de" ? ar() : t === "es" ? or() : t === "fr" ? ir() : t === "it" ? ur() : t === "jp" ? _r() : t === "pl" ? sr() : t === "ru" ? lr() : t === "uk" ? fr() : dr()
   };
 var hr = S("<div></div>");
 
@@ -235,13 +235,13 @@ function mr(r, e) {
   });
   const p = X(() => ({
       sitekey: e.siteKey,
-      callback: (n, a) => {
-        var i;
-        (i = e.callback) == null || i.call(e, n, a)
+      callback: (n, i) => {
+        var o;
+        (o = e.callback) == null || o.call(e, n, i)
       },
       "error-callback": n => {
-        var a;
-        (a = e.errorCallback) == null || a.call(e, n)
+        var i;
+        (i = e.errorCallback) == null || i.call(e, n)
       },
       "timeout-callback": () => {
         var n;
@@ -277,14 +277,14 @@ function mr(r, e) {
       cData: e.cData,
       size: W()
     })),
-    z = (n, a) => {
-      let i = window.turnstile.render(n, a);
-      return t(i), {
+    z = (n, i) => {
+      let o = window.turnstile.render(n, i);
+      return t(o), {
         destroy() {
-          window.turnstile.remove(i)
+          window.turnstile.remove(o)
         },
-        update(o) {
-          window.turnstile.remove(i), i = window.turnstile.render(n, o), t(i)
+        update(a) {
+          window.turnstile.remove(o), o = window.turnstile.render(n, a), t(o)
         }
       }
     };
@@ -304,11 +304,11 @@ function mr(r, e) {
     P = Z(M);
   {
     var D = n => {
-      var a = hr();
-      let i;
-      gt(a, (o, u) => z == null ? void 0 : z(o, u), () => T(p)), K(() => i = $(a, 1, tt(e.class), "svelte-1lm836y", i, {
+      var i = hr();
+      let o;
+      gt(i, (a, u) => z == null ? void 0 : z(a, u), () => T(p)), K(() => o = $(i, 1, tt(e.class), "svelte-1lm836y", o, {
         flexible: W() == "flexible"
-      })), C(n, a)
+      })), C(n, i)
     };
     L(P, n => {
       q.turnstatileLoaded && T(b) && n(D)
@@ -336,8 +336,8 @@ function Pr(r, e) {
   let t = _(e, "showTwitchMigration", 3, !0),
     c = Q(st(V ? "" : "turnstile-disabled"));
 
-  function w(o, u) {
-    return `${dt}/auth/${o}?token=${u}${e.redirect?`&r=${e.redirect}`:""}`
+  function w(a, u) {
+    return `${dt}/auth/${a}?token=${u}${e.redirect?`&r=${e.redirect}`:""}`
   }
   var h = pr(),
     d = s(h),
@@ -348,7 +348,7 @@ function Pr(r, e) {
   var j = f(d, 2),
     A = s(j);
   {
-    var W = o => {
+    var W = a => {
       var u = wr(),
         v = Z(u),
         m = s(v);
@@ -385,10 +385,10 @@ function Pr(r, e) {
         })), R(v, "href", x), y(E, ` ${H??""}`)
       }, [() => T(c) ? w("google", T(c)) : "#", () => Ee({
         name: "Google"
-      })]), C(o, u)
+      })]), C(a, u)
     };
-    L(A, o => {
-      o(W, !1)
+    L(A, a => {
+      a(W, !1)
     })
   }
   l(j);
@@ -404,23 +404,23 @@ function Pr(r, e) {
     D = f(P),
     n = s(D, !0);
   l(D), O(), l(I);
-  var a = f(I, 2);
+  var i = f(I, 2);
   {
-    var i = o => {
+    var o = a => {
       var u = br(),
         v = s(u),
         m = f(v),
         E = s(m, !0);
       l(m), O(), l(u), K((k, B, U) => {
         y(v, `${k??""} `), R(m, "href", B), y(E, U)
-      }, [() => me(), () => w("twitch", ""), () => He()]), C(o, u)
+      }, [() => me(), () => w("twitch", ""), () => He()]), C(a, u)
     };
-    L(a, o => {
-      t() && o(i)
+    L(i, a => {
+      t() && a(o)
     })
   }
-  l(h), K((o, u, v, m, E, k) => {
-    y(N, `${o??""} `), R(p, "href", u), y(z, v), y(M, m), y(P, ` ${E??""} `), y(n, k)
+  l(h), K((a, u, v, m, E, k) => {
+    y(N, `${a??""} `), R(p, "href", u), y(z, v), y(M, m), y(P, ` ${E??""} `), y(n, k)
   }, [() => qt(), ht, () => vr(), () => er(), () => Wt(), () => ne()]), C(r, h), J()
 }
 export {

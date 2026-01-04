@@ -1,19 +1,19 @@
 import {
-  g as e
-} from "./BHOVlP7C.js";
+  g as o
+} from "./CCwyOsrP.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "6bc8c324ce1f230e3a6c17fd8c71ebea9f521c24"
+      id: "845cd245f9645ae957e3eeb4920045ede245aa3a"
     }
   } catch {}
 })();
 try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      o = new t.Error().stack;
-    o && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[o] = "b7850824-069f-4be7-b009-d136f1039271", t._sentryDebugIdIdentifier = "sentry-dbid-b7850824-069f-4be7-b009-d136f1039271")
+      e = new t.Error().stack;
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "b7850824-069f-4be7-b009-d136f1039271", t._sentryDebugIdIdentifier = "sentry-dbid-b7850824-069f-4be7-b009-d136f1039271")
   })()
 } catch {}
 const u = () => "Administrator",
@@ -28,8 +28,8 @@ const u = () => "Administrator",
   m = () => "Администратор",
   p = () => "Адміністратор",
   b = () => "Quản trị viên",
-  g = (t = {}, o = {}) => {
-    const r = o.locale ?? e();
+  g = (t = {}, e = {}) => {
+    const r = e.locale ?? o();
     return r === "en" ? u() : r === "pt" ? d() : r === "ch" ? i() : r === "de" ? s() : r === "es" ? a() : r === "fr" ? c() : r === "it" ? l() : r === "jp" ? _() : r === "pl" ? f() : r === "ru" ? m() : r === "uk" ? p() : b()
   },
   M = () => "Discord Moderator",
@@ -44,8 +44,8 @@ const u = () => "Administrator",
   v = () => "Модератор Discord",
   U = () => "Модератор Discord",
   G = () => "Discord Moderator",
-  L = (t = {}, o = {}) => {
-    const r = o.locale ?? e();
+  L = (t = {}, e = {}) => {
+    const r = e.locale ?? o();
     return r === "en" ? M() : r === "pt" ? y() : r === "ch" ? D() : r === "de" ? h() : r === "es" ? k() : r === "fr" ? A() : r === "it" ? j() : r === "jp" ? w() : r === "pl" ? E() : r === "ru" ? v() : r === "uk" ? U() : G()
   },
   R = () => "Global Moderator",
@@ -60,8 +60,8 @@ const u = () => "Administrator",
   F = () => "Глобальный модератор",
   H = () => "Глобальний модератор",
   Q = () => "Global Moderator",
-  Y = (t = {}, o = {}) => {
-    const r = o.locale ?? e();
+  Y = (t = {}, e = {}) => {
+    const r = e.locale ?? o();
     return r === "en" ? R() : r === "pt" ? T() : r === "ch" ? I() : r === "de" ? N() : r === "es" ? O() : r === "fr" ? S() : r === "it" ? x() : r === "jp" ? z() : r === "pl" ? B() : r === "ru" ? F() : r === "uk" ? H() : Q()
   },
   q = () => "Moderator",
@@ -76,11 +76,11 @@ const u = () => "Administrator",
   $ = () => "Модератор",
   rr = () => "Модератор",
   tr = () => "Moderator",
-  or = (t = {}, o = {}) => {
-    const r = o.locale ?? e();
+  er = (t = {}, e = {}) => {
+    const r = e.locale ?? o();
     return r === "en" ? q() : r === "pt" ? C() : r === "ch" ? J() : r === "de" ? K() : r === "es" ? P() : r === "fr" ? V() : r === "it" ? W() : r === "jp" ? X() : r === "pl" ? Z() : r === "ru" ? $() : r === "uk" ? rr() : tr()
   },
-  er = () => "User",
+  or = () => "User",
   nr = () => "Usuário",
   ur = () => "用户",
   dr = () => "Benutzer",
@@ -92,9 +92,9 @@ const u = () => "Administrator",
   _r = () => "Пользователь",
   fr = () => "Користувач",
   mr = () => "Người dùng",
-  n = (t = {}, o = {}) => {
-    const r = o.locale ?? e();
-    return r === "en" ? er() : r === "pt" ? nr() : r === "ch" ? ur() : r === "de" ? dr() : r === "es" ? ir() : r === "fr" ? sr() : r === "it" ? ar() : r === "jp" ? cr() : r === "pl" ? lr() : r === "ru" ? _r() : r === "uk" ? fr() : mr()
+  n = (t = {}, e = {}) => {
+    const r = e.locale ?? o();
+    return r === "en" ? or() : r === "pt" ? nr() : r === "ch" ? ur() : r === "de" ? dr() : r === "es" ? ir() : r === "fr" ? sr() : r === "it" ? ar() : r === "jp" ? cr() : r === "pl" ? lr() : r === "ru" ? _r() : r === "uk" ? fr() : mr()
   },
   br = {
     user: n(),
@@ -106,7 +106,7 @@ const u = () => "Administrator",
   gr = {
     user: n(),
     community_leader: L(),
-    moderator: or(),
+    moderator: er(),
     global_moderator: Y(),
     admin: g()
   };
