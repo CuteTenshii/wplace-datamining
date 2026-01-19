@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./CCwyOsrP.js";
+} from "./BfjUzAZv.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "845cd245f9645ae957e3eeb4920045ede245aa3a"
+      id: "358b627090e665fa84c80454e90310d86dcaf84d"
     }
   } catch {}
 })();
@@ -13,7 +13,7 @@ try {
   (function() {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       r = new n.Error().stack;
-    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "3ed1e834-7694-4275-85c3-039985d62c49", n._sentryDebugIdIdentifier = "sentry-dbid-3ed1e834-7694-4275-85c3-039985d62c49")
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "f60ca58b-8256-4afb-a38d-d63926b5b7c6", n._sentryDebugIdIdentifier = "sentry-dbid-f60ca58b-8256-4afb-a38d-d63926b5b7c6")
   })()
 } catch {}
 const s = () => "Users banned successfully",

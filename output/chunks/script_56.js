@@ -1,37 +1,37 @@
 import {
-  g as r
-} from "./CCwyOsrP.js";
+  g as t
+} from "./BfjUzAZv.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "845cd245f9645ae957e3eeb4920045ede245aa3a"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "358b627090e665fa84c80454e90310d86dcaf84d"
     }
   } catch {}
 })();
 try {
   (function() {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      a = new n.Error().stack;
-    a && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[a] = "ac2bd81a-caea-402f-892c-71119d430310", n._sentryDebugIdIdentifier = "sentry-dbid-ac2bd81a-caea-402f-892c-71119d430310")
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "3ade8edc-016b-4728-b445-ee4a7f661645", e._sentryDebugIdIdentifier = "sentry-dbid-3ade8edc-016b-4728-b445-ee4a7f661645")
   })()
 } catch {}
-const t = () => "Ban appeal",
-  o = () => "Revisão de banimento",
-  p = () => "封禁申诉",
-  i = () => "Bann-Einspruch",
-  u = () => "Apelación de ban",
-  l = () => "Recours de bannissement",
-  s = () => "Ricorso contro il ban",
-  d = () => "BANの異議申立て",
-  c = () => "Odwołanie od bana",
-  f = () => "Апелляция на бан",
-  b = () => "Апеляція на бан",
-  _ = () => "Kháng cáo lệnh cấm",
-  y = (n = {}, a = {}) => {
-    const e = a.locale ?? r();
-    return e === "en" ? t() : e === "pt" ? o() : e === "ch" ? p() : e === "de" ? i() : e === "es" ? u() : e === "fr" ? l() : e === "it" ? s() : e === "jp" ? d() : e === "pl" ? c() : e === "ru" ? f() : e === "uk" ? b() : _()
+const o = () => "Confirm",
+  f = () => "Confirmar",
+  i = () => "确认",
+  c = () => "Bestätigen",
+  u = () => "Confirmar",
+  d = () => "Confirmer",
+  s = () => "Conferma",
+  a = () => "確認",
+  l = () => "Potwierdź",
+  m = () => "Подтвердить",
+  b = () => "Підтвердити",
+  p = () => "Xác nhận",
+  g = (e = {}, r = {}) => {
+    const n = r.locale ?? t();
+    return n === "en" ? o() : n === "pt" ? f() : n === "ch" ? i() : n === "de" ? c() : n === "es" ? u() : n === "fr" ? d() : n === "it" ? s() : n === "jp" ? a() : n === "pl" ? l() : n === "ru" ? m() : n === "uk" ? b() : p()
   };
 export {
-  y as b
+  g as c
 };

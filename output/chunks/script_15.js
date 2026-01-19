@@ -2,40 +2,40 @@ var Ie = Object.defineProperty;
 var oe = n => {
   throw TypeError(n)
 };
-var Ne = (n, t, e) => t in n ? Ie(n, t, {
+var qe = (n, t, e) => t in n ? Ie(n, t, {
   enumerable: !0,
   configurable: !0,
   writable: !0,
   value: e
 }) : n[t] = e;
-var g = (n, t, e) => Ne(n, typeof t != "symbol" ? t + "" : t, e),
-  qe = (n, t, e) => t.has(n) || oe("Cannot " + e);
-var f = (n, t, e) => (qe(n, t, "read from private field"), e ? e.call(n) : t.get(n)),
+var p = (n, t, e) => qe(n, typeof t != "symbol" ? t + "" : t, e),
+  Ne = (n, t, e) => t.has(n) || oe("Cannot " + e);
+var f = (n, t, e) => (Ne(n, t, "read from private field"), e ? e.call(n) : t.get(n)),
   w = (n, t, e) => t.has(n) ? oe("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(n) : t.set(n, e);
 import {
   g as _
-} from "./CCwyOsrP.js";
+} from "./BfjUzAZv.js";
 import {
-  e as T,
+  e as E,
   g as ie,
   j as y,
   i as v,
-  x as ue,
-  u as q
-} from "./7dqXbHhh.js";
+  w as ue,
+  u as N
+} from "./DcuED2r1.js";
 import {
   P as me,
   g as ze
-} from "./CST6ZfRY.js";
+} from "./4McVxkKC.js";
 import {
   s as Oe,
   c as De
-} from "./7V2Vw2F8.js";
+} from "./BsCzrKc6.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "845cd245f9645ae957e3eeb4920045ede245aa3a"
+      id: "358b627090e665fa84c80454e90310d86dcaf84d"
     }
   } catch {}
 })();
@@ -43,7 +43,7 @@ try {
   (function() {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       t = new n.Error().stack;
-    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "2099b685-6d12-4ac0-a229-0be30f79f500", n._sentryDebugIdIdentifier = "sentry-dbid-2099b685-6d12-4ac0-a229-0be30f79f500")
+    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "60e5b67d-33a8-470a-9700-4b84b577d96c", n._sentryDebugIdIdentifier = "sentry-dbid-60e5b67d-33a8-470a-9700-4b84b577d96c")
   })()
 } catch {}
 
@@ -55,25 +55,25 @@ let ce = 0;
 var C, M, B;
 class Me {
   constructor() {
-    w(this, C, T(ie([])));
-    w(this, M, T(ie([])));
+    w(this, C, E(ie([])));
+    w(this, M, E(ie([])));
     w(this, B, t => {
       const e = this.toasts.findIndex(r => r.id === t);
       return e === -1 ? null : e
     });
-    g(this, "addToast", t => {
+    p(this, "addToast", t => {
       Ce && this.toasts.unshift(t)
     });
-    g(this, "updateToast", ({
+    p(this, "updateToast", ({
       id: t,
       data: e,
       type: r,
       message: a
     }) => {
-      const s = this.toasts.findIndex(i => i.id === t),
-        u = this.toasts[s];
+      const s = this.toasts.findIndex(u => u.id === t),
+        i = this.toasts[s];
       this.toasts[s] = {
-        ...u,
+        ...i,
         ...e,
         id: t,
         title: a,
@@ -81,17 +81,17 @@ class Me {
         updated: !0
       }
     });
-    g(this, "create", t => {
-      var i;
+    p(this, "create", t => {
+      var u;
       const {
         message: e,
         ...r
-      } = t, a = typeof(t == null ? void 0 : t.id) == "number" || t.id && ((i = t.id) == null ? void 0 : i.length) > 0 ? t.id : ce++, s = t.dismissable === void 0 ? !0 : t.dismissable, u = t.type === void 0 ? "default" : t.type;
+      } = t, a = typeof(t == null ? void 0 : t.id) == "number" || t.id && ((u = t.id) == null ? void 0 : u.length) > 0 ? t.id : ce++, s = t.dismissable === void 0 ? !0 : t.dismissable, i = t.type === void 0 ? "default" : t.type;
       return ue(() => {
         this.toasts.find(d => d.id === a) ? this.updateToast({
           id: a,
           data: t,
-          type: u,
+          type: i,
           message: e,
           dismissable: s
         }) : this.addToast({
@@ -99,11 +99,11 @@ class Me {
           id: a,
           title: e,
           dismissable: s,
-          type: u
+          type: i
         })
       }), a
     });
-    g(this, "dismiss", t => (ue(() => {
+    p(this, "dismiss", t => (ue(() => {
       if (t === void 0) {
         this.toasts = this.toasts.map(r => ({
           ...r,
@@ -117,7 +117,7 @@ class Me {
         dismiss: !0
       })
     }), t));
-    g(this, "remove", t => {
+    p(this, "remove", t => {
       if (t === void 0) {
         this.toasts = [];
         return
@@ -125,37 +125,37 @@ class Me {
       const e = f(this, B).call(this, t);
       if (e !== null) return this.toasts.splice(e, 1), t
     });
-    g(this, "message", (t, e) => this.create({
+    p(this, "message", (t, e) => this.create({
       ...e,
       type: "default",
       message: t
     }));
-    g(this, "error", (t, e) => this.create({
+    p(this, "error", (t, e) => this.create({
       ...e,
       type: "error",
       message: t
     }));
-    g(this, "success", (t, e) => this.create({
+    p(this, "success", (t, e) => this.create({
       ...e,
       type: "success",
       message: t
     }));
-    g(this, "info", (t, e) => this.create({
+    p(this, "info", (t, e) => this.create({
       ...e,
       type: "info",
       message: t
     }));
-    g(this, "warning", (t, e) => this.create({
+    p(this, "warning", (t, e) => this.create({
       ...e,
       type: "warning",
       message: t
     }));
-    g(this, "loading", (t, e) => this.create({
+    p(this, "loading", (t, e) => this.create({
       ...e,
       type: "loading",
       message: t
     }));
-    g(this, "promise", (t, e) => {
+    p(this, "promise", (t, e) => {
       if (!e) return;
       let r;
       e.loading !== void 0 && (r = this.create({
@@ -166,40 +166,40 @@ class Me {
       }));
       const a = t instanceof Promise ? t : t();
       let s = r !== void 0;
-      return a.then(u => {
-        if (typeof u == "object" && u && "ok" in u && typeof u.ok == "boolean" && !u.ok) {
+      return a.then(i => {
+        if (typeof i == "object" && i && "ok" in i && typeof i.ok == "boolean" && !i.ok) {
           s = !1;
-          const i = Be(u);
+          const u = Be(i);
           this.create({
             id: r,
             type: "error",
-            message: i
+            message: u
           })
         } else if (e.success !== void 0) {
           s = !1;
-          const i = typeof e.success == "function" ? e.success(u) : e.success;
+          const u = typeof e.success == "function" ? e.success(i) : e.success;
           this.create({
             id: r,
             type: "success",
-            message: i
+            message: u
           })
         }
-      }).catch(u => {
+      }).catch(i => {
         if (e.error !== void 0) {
           s = !1;
-          const i = typeof e.error == "function" ? e.error(u) : e.error;
+          const u = typeof e.error == "function" ? e.error(i) : e.error;
           this.create({
             id: r,
             type: "error",
-            message: i
+            message: u
           })
         }
       }).finally(() => {
-        var u;
-        s && (this.dismiss(r), r = void 0), (u = e.finally) == null || u.call(e)
+        var i;
+        s && (this.dismiss(r), r = void 0), (i = e.finally) == null || i.call(e)
       }), r
     });
-    g(this, "custom", (t, e) => {
+    p(this, "custom", (t, e) => {
       const r = (e == null ? void 0 : e.id) || ce++;
       return this.create({
         component: t,
@@ -207,10 +207,10 @@ class Me {
         ...e
       }), r
     });
-    g(this, "removeHeight", t => {
+    p(this, "removeHeight", t => {
       this.heights = this.heights.filter(e => e.toastId !== t)
     });
-    g(this, "setHeight", t => {
+    p(this, "setHeight", t => {
       const e = f(this, B).call(this, t.toastId);
       if (e === null) {
         this.heights.push(t);
@@ -218,7 +218,7 @@ class Me {
       }
       this.heights[e] = t
     });
-    g(this, "reset", () => {
+    p(this, "reset", () => {
       this.toasts = [], this.heights = []
     })
   }
@@ -242,7 +242,7 @@ function Be(n) {
 }
 const b = new Me;
 
-function Le(n, t) {
+function $e(n, t) {
   return b.create({
     message: n,
     ...t
@@ -251,15 +251,15 @@ function Le(n, t) {
 var te;
 class _l {
   constructor() {
-    w(this, te, q(() => b.toasts.filter(t => !t.dismiss)))
+    w(this, te, N(() => b.toasts.filter(t => !t.dismiss)))
   }
   get toasts() {
     return y(f(this, te))
   }
 }
 te = new WeakMap;
-const Ue = Le,
-  he = Object.assign(Ue, {
+const Le = $e,
+  he = Object.assign(Le, {
     success: b.success,
     info: b.info,
     warning: b.warning,
@@ -271,7 +271,7 @@ const Ue = Le,
     loading: b.loading,
     getActiveToasts: () => b.toasts.filter(n => !n.dismiss)
   });
-let pe = T(void 0);
+let pe = E(void 0);
 const ge = () => y(pe),
   fl = n => {
     const t = new URL(n, me),
@@ -281,13 +281,13 @@ const ge = () => y(pe),
 
 function ml() {
   try {
-    $e()
+    Ue()
   } catch (n) {
     console.error("failed to load override", n)
   }
 }
 
-function $e() {
+function Ue() {
   const t = new URL(location.href).searchParams.get("override");
   if (!t) return;
   const e = t.split(".");
@@ -354,20 +354,20 @@ const Re = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   jt = () => "Aliança com nome vazio",
   Pt = () => "名称为空的联盟",
   It = () => "Allianz mit leerem Namen",
-  Nt = () => "Alianza con nombre vacío",
-  qt = () => "Alliance avec nom vide",
+  qt = () => "Alianza con nombre vacío",
+  Nt = () => "Alliance avec nom vide",
   zt = () => "Alleanza con nome vuoto",
   Ot = () => "名前が空のアライアンスです。",
   Dt = () => "Sojusz z pustą nazwą",
   Ct = () => "Альянс с пустым названием",
   Mt = () => "Альянс із порожньою назвою",
   Bt = () => "Liên minh không có tên",
-  Lt = (n = {}, t = {}) => {
+  $t = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? At() : e === "pt" ? jt() : e === "ch" ? Pt() : e === "de" ? It() : e === "es" ? Nt() : e === "fr" ? qt() : e === "it" ? zt() : e === "jp" ? Ot() : e === "pl" ? Dt() : e === "ru" ? Ct() : e === "uk" ? Mt() : Bt()
+    return e === "en" ? At() : e === "pt" ? jt() : e === "ch" ? Pt() : e === "de" ? It() : e === "es" ? qt() : e === "fr" ? Nt() : e === "it" ? zt() : e === "jp" ? Ot() : e === "pl" ? Dt() : e === "ru" ? Ct() : e === "uk" ? Mt() : Bt()
   },
-  Ut = () => "Botting",
-  $t = () => "Uso de bots",
+  Lt = () => "Botting",
+  Ut = () => "Uso de bots",
   Rt = () => "脚本",
   Gt = () => "Bot-Nutzung",
   Ft = () => "Botting",
@@ -380,7 +380,7 @@ const Re = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Zt = () => "Botting",
   Xt = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Ut() : e === "pt" ? $t() : e === "ch" ? Rt() : e === "de" ? Gt() : e === "es" ? Ft() : e === "fr" ? Vt() : e === "it" ? Jt() : e === "jp" ? Wt() : e === "pl" ? Kt() : e === "ru" ? Ht() : e === "uk" ? Yt() : Zt()
+    return e === "en" ? Lt() : e === "pt" ? Ut() : e === "ch" ? Rt() : e === "de" ? Gt() : e === "es" ? Ft() : e === "fr" ? Vt() : e === "it" ? Jt() : e === "jp" ? Wt() : e === "pl" ? Kt() : e === "ru" ? Ht() : e === "uk" ? Yt() : Zt()
   },
   Qt = () => "Breaking the rules",
   en = () => "Quebrar as regras",
@@ -419,8 +419,8 @@ const Re = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   jn = () => "无法连接到服务器。可能是你没有网络，或服务器已离线。请稍后重试。",
   Pn = () => "Server nicht erreichbar. Vielleicht hast du keine Internetverbindung oder der Server ist offline. Versuche es später erneut.",
   In = () => "No se puede conectar con el servidor. Puede que estés sin internet o el servidor esté caído. Inténtalo de nuevo más tarde.",
-  Nn = () => "Impossible d’atteindre le serveur. Vous n’êtes peut-être pas connecté à Internet ou le serveur est hors ligne. Réessayez plus tard.",
-  qn = () => "Impossibile contattare il server. Forse sei senza connessione o il server è offline. Riprova più tardi.",
+  qn = () => "Impossible d’atteindre le serveur. Vous n’êtes peut-être pas connecté à Internet ou le serveur est hors ligne. Réessayez plus tard.",
+  Nn = () => "Impossibile contattare il server. Forse sei senza connessione o il server è offline. Riprova più tardi.",
   zn = () => "サーバーに接続できません。インターネットに接続されていないか、サーバーが停止している可能性があります。しばらくしてからもう一度お試しください。",
   On = () => "Nie można połączyć się z serwerem. Być może nie masz internetu lub serwer nie działa. Spróbuj ponownie później.",
   Dn = () => "Не удаётся подключиться к серверу. Возможно, у вас нет доступа к интернету или сервер недоступен. Попробуйте позже.",
@@ -428,11 +428,11 @@ const Re = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Mn = () => "Không thể kết nối tới máy chủ. Có thể bạn đang mất kết nối mạng hoặc máy chủ đang tạm ngưng. Hãy thử lại sau",
   Bn = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Tn() : e === "pt" ? An() : e === "ch" ? jn() : e === "de" ? Pn() : e === "es" ? In() : e === "fr" ? Nn() : e === "it" ? qn() : e === "jp" ? zn() : e === "pl" ? On() : e === "ru" ? Dn() : e === "uk" ? Cn() : Mn()
+    return e === "en" ? Tn() : e === "pt" ? An() : e === "ch" ? jn() : e === "de" ? Pn() : e === "es" ? In() : e === "fr" ? qn() : e === "it" ? Nn() : e === "jp" ? zn() : e === "pl" ? On() : e === "ru" ? Dn() : e === "uk" ? Cn() : Mn()
   },
-  Ln = () => "Couldn't complete the purchase. This item does not exist.",
-  Un = () => "Não foi possível concluir a compra. Este item não existe.",
-  $n = () => "无法完成购买。该物品不存在。",
+  $n = () => "Couldn't complete the purchase. This item does not exist.",
+  Ln = () => "Não foi possível concluir a compra. Este item não existe.",
+  Un = () => "无法完成购买。该物品不存在。",
   Rn = () => "Kauf konnte nicht abgeschlossen werden. Dieses Item existiert nicht.",
   Gn = () => "No se pudo completar la compra. Este ítem no existe.",
   Fn = () => "Achat impossible. Cet objet n’existe pas.",
@@ -444,7 +444,7 @@ const Re = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Yn = () => "Không thể hoàn tất giao dịch. Vật phẩm này không tồn tại.",
   Zn = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Ln() : e === "pt" ? Un() : e === "ch" ? $n() : e === "de" ? Rn() : e === "es" ? Gn() : e === "fr" ? Fn() : e === "it" ? Vn() : e === "jp" ? Jn() : e === "pl" ? Wn() : e === "ru" ? Kn() : e === "uk" ? Hn() : Yn()
+    return e === "en" ? $n() : e === "pt" ? Ln() : e === "ch" ? Un() : e === "de" ? Rn() : e === "es" ? Gn() : e === "fr" ? Fn() : e === "it" ? Vn() : e === "jp" ? Jn() : e === "pl" ? Wn() : e === "ru" ? Kn() : e === "uk" ? Hn() : Yn()
   },
   Xn = () => "We’re currently experiencing high traffic. Some requests may not be processed at this time—please try again later. Thank you for your patience.",
   Qn = () => "Estamos enfrentando um volume alto de acessos no momento. Algumas solicitações podem não ser processadas agora — por favor, tente novamente mais tarde. Agradecemos a sua compreensão.",
@@ -485,20 +485,20 @@ const Re = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   jr = n => `Error al pintar: ${n.err}`,
   Pr = n => `Erreur lors de la peinture : ${n.err}`,
   Ir = n => `Errore durante la pittura: ${n.err}`,
-  Nr = n => `ペイント中にエラーが発生しました: ${n.err}`,
-  qr = n => `Błąd podczas malowania: ${n.err}`,
+  qr = n => `ペイント中にエラーが発生しました: ${n.err}`,
+  Nr = n => `Błąd podczas malowania: ${n.err}`,
   zr = n => `Ошибка при рисовании: ${n.err}`,
   Or = n => `Помилка під час малювання: ${n.err}`,
   Dr = n => `Lỗi khi tô: ${n.err}`,
   Cr = (n, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? xr(n) : e === "pt" ? Er(n) : e === "ch" ? Tr(n) : e === "de" ? Ar(n) : e === "es" ? jr(n) : e === "fr" ? Pr(n) : e === "it" ? Ir(n) : e === "jp" ? Nr(n) : e === "pl" ? qr(n) : e === "ru" ? zr(n) : e === "uk" ? Or(n) : Dr(n)
+    return e === "en" ? xr(n) : e === "pt" ? Er(n) : e === "ch" ? Tr(n) : e === "de" ? Ar(n) : e === "es" ? jr(n) : e === "fr" ? Pr(n) : e === "it" ? Ir(n) : e === "jp" ? qr(n) : e === "pl" ? Nr(n) : e === "ru" ? zr(n) : e === "uk" ? Or(n) : Dr(n)
   },
   Mr = () => "Griefing",
   Br = () => "Griefing",
-  Lr = () => "破坏行为",
+  $r = () => "破坏行为",
+  Lr = () => "Griefing",
   Ur = () => "Griefing",
-  $r = () => "Griefing",
   Rr = () => "Griefing",
   Gr = () => "Griefing",
   Fr = () => "グリーフィング",
@@ -508,7 +508,7 @@ const Re = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Kr = () => "Griefing",
   Hr = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Mr() : e === "pt" ? Br() : e === "ch" ? Lr() : e === "de" ? Ur() : e === "es" ? $r() : e === "fr" ? Rr() : e === "it" ? Gr() : e === "jp" ? Fr() : e === "pl" ? Vr() : e === "ru" ? Jr() : e === "uk" ? Wr() : Kr()
+    return e === "en" ? Mr() : e === "pt" ? Br() : e === "ch" ? $r() : e === "de" ? Lr() : e === "es" ? Ur() : e === "fr" ? Rr() : e === "it" ? Gr() : e === "jp" ? Fr() : e === "pl" ? Vr() : e === "ru" ? Jr() : e === "uk" ? Wr() : Kr()
   },
   Yr = () => "Hate speech",
   Zr = () => "Discurso de Ódio",
@@ -551,20 +551,20 @@ const Re = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   ja = () => "Codice non valido",
   Pa = () => "無効なコードです。",
   Ia = () => "Nieprawidłowy kod",
-  Na = () => "Неверный код",
-  qa = () => "Невірний код",
+  qa = () => "Неверный код",
+  Na = () => "Невірний код",
   za = () => "Mã không hợp lệ",
   Oa = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? ka() : e === "pt" ? Sa() : e === "ch" ? xa() : e === "de" ? Ea() : e === "es" ? Ta() : e === "fr" ? Aa() : e === "it" ? ja() : e === "jp" ? Pa() : e === "pl" ? Ia() : e === "ru" ? Na() : e === "uk" ? qa() : za()
+    return e === "en" ? ka() : e === "pt" ? Sa() : e === "ch" ? xa() : e === "de" ? Ea() : e === "es" ? Ta() : e === "fr" ? Aa() : e === "it" ? ja() : e === "jp" ? Pa() : e === "pl" ? Ia() : e === "ru" ? qa() : e === "uk" ? Na() : za()
   },
   Da = () => "Invalid discord.",
   Ca = () => "Discord inválido.",
   Ma = () => "无效的 Discord。",
   Ba = () => "Ungültiger Discord.",
-  La = () => "Discord inválido.",
-  Ua = () => "Discord invalide.",
-  $a = () => "Discord non valido.",
+  $a = () => "Discord inválido.",
+  La = () => "Discord invalide.",
+  Ua = () => "Discord non valido.",
   Ra = () => "無効なDiscordアカウントです。",
   Ga = () => "Nieprawidłowy Discord.",
   Fa = () => "Неверный Discord.",
@@ -572,7 +572,7 @@ const Re = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Ja = () => "Discord không hợp lệ.",
   Wa = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Da() : e === "pt" ? Ca() : e === "ch" ? Ma() : e === "de" ? Ba() : e === "es" ? La() : e === "fr" ? Ua() : e === "it" ? $a() : e === "jp" ? Ra() : e === "pl" ? Ga() : e === "ru" ? Fa() : e === "uk" ? Va() : Ja()
+    return e === "en" ? Da() : e === "pt" ? Ca() : e === "ch" ? Ma() : e === "de" ? Ba() : e === "es" ? $a() : e === "fr" ? La() : e === "it" ? Ua() : e === "jp" ? Ra() : e === "pl" ? Ga() : e === "ru" ? Fa() : e === "uk" ? Va() : Ja()
   },
   Ka = () => "The name contains disallowed characters or words. Please choose a different name.",
   Ha = () => "O nome contém caracteres ou palavras não permitidas. Por favor, escolha outro nome.",
@@ -618,25 +618,25 @@ const Re = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   js = () => "Новый лидер должен быть участником альянса",
   Ps = () => "Новий лідер має бути учасником альянсу",
   Is = () => "Thủ lĩnh mới phải là thành viên của liên minh",
-  Ns = (n = {}, t = {}) => {
+  qs = (n = {}, t = {}) => {
     const e = t.locale ?? _();
     return e === "en" ? ys() : e === "pt" ? bs() : e === "ch" ? vs() : e === "de" ? ks() : e === "es" ? Ss() : e === "fr" ? xs() : e === "it" ? Es() : e === "jp" ? Ts() : e === "pl" ? As() : e === "ru" ? js() : e === "uk" ? Ps() : Is()
   },
-  qs = () => "Leaderboard is temporarily disabled",
+  Ns = () => "Leaderboard is temporarily disabled",
   zs = () => "O ranking está temporariamente desativado",
   Os = () => "排行榜已暂时停用",
   Ds = () => "Die Bestenliste ist vorübergehend deaktiviert",
   Cs = () => "La clasificación está deshabilitada temporalmente",
   Ms = () => "Le classement est temporairement désactivé",
   Bs = () => "La classifica è temporaneamente disattivata",
-  Ls = () => "ランキングは一時的に無効になっています。",
-  Us = () => "Ranking jest tymczasowo wyłączony",
-  $s = () => "Таблица лидеров временно отключена",
+  $s = () => "ランキングは一時的に無効になっています。",
+  Ls = () => "Ranking jest tymczasowo wyłączony",
+  Us = () => "Таблица лидеров временно отключена",
   Rs = () => "Таблиця лідерів тимчасово вимкнена",
   Gs = () => "Bảng xếp hạng tạm thời bị vô hiệu hóa",
-  j = (n = {}, t = {}) => {
+  T = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? qs() : e === "pt" ? zs() : e === "ch" ? Os() : e === "de" ? Ds() : e === "es" ? Cs() : e === "fr" ? Ms() : e === "it" ? Bs() : e === "jp" ? Ls() : e === "pl" ? Us() : e === "ru" ? $s() : e === "uk" ? Rs() : Gs()
+    return e === "en" ? Ns() : e === "pt" ? zs() : e === "ch" ? Os() : e === "de" ? Ds() : e === "es" ? Cs() : e === "fr" ? Ms() : e === "it" ? Bs() : e === "jp" ? $s() : e === "pl" ? Ls() : e === "ru" ? Us() : e === "uk" ? Rs() : Gs()
   },
   Fs = () => "Location name is too big (max. 128 characters)",
   Vs = () => "Nome da localização é grande demais (max. 128 caracteres)",
@@ -687,20 +687,20 @@ const Re = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
     return e === "en" ? go(n) : e === "pt" ? wo(n) : e === "ch" ? yo(n) : e === "de" ? bo(n) : e === "es" ? vo(n) : e === "fr" ? ko(n) : e === "it" ? So(n) : e === "jp" ? xo(n) : e === "pl" ? Eo(n) : e === "ru" ? To(n) : e === "uk" ? Ao(n) : jo(n)
   },
   Io = () => "No internet access or the servers are offline. Try again later.",
-  No = () => "Sem acesso à internet ou os servidores estão fora do ar. Tente novamente mais tarde.",
-  qo = () => "没有网络连接或服务器已离线。请稍后重试。",
+  qo = () => "Sem acesso à internet ou os servidores estão fora do ar. Tente novamente mais tarde.",
+  No = () => "没有网络连接或服务器已离线。请稍后重试。",
   zo = () => "Keine Internetverbindung oder Server offline. Versuche es später erneut.",
   Oo = () => "Sin acceso a internet o los servidores están fuera de línea. Inténtalo de nuevo más tarde.",
   Do = () => "Pas d’accès à Internet ou serveurs hors ligne. Réessayez plus tard.",
   Co = () => "Nessun accesso a internet o server offline. Riprova più tardi.",
   Mo = () => "インターネットに接続されていないか、サーバーがオフラインです。しばらくしてから再度お試しください。",
   Bo = () => "Brak dostępu do internetu lub serwery są offline. Spróbuj ponownie później.",
-  Lo = () => "Нет доступа к интернету или серверы недоступны. Попробуйте позже.",
-  Uo = () => "Немає доступу до інтернету або сервери недоступні. Спробуйте пізніше.",
-  $o = () => "Không có kết nối internet hoặc máy chủ đang ngoại tuyến. Hãy thử lại sau.",
+  $o = () => "Нет доступа к интернету или серверы недоступны. Попробуйте позже.",
+  Lo = () => "Немає доступу до інтернету або сервери недоступні. Спробуйте пізніше.",
+  Uo = () => "Không có kết nối internet hoặc máy chủ đang ngoại tuyến. Hãy thử lại sau.",
   Ro = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Io() : e === "pt" ? No() : e === "ch" ? qo() : e === "de" ? zo() : e === "es" ? Oo() : e === "fr" ? Do() : e === "it" ? Co() : e === "jp" ? Mo() : e === "pl" ? Bo() : e === "ru" ? Lo() : e === "uk" ? Uo() : $o()
+    return e === "en" ? Io() : e === "pt" ? qo() : e === "ch" ? No() : e === "de" ? zo() : e === "es" ? Oo() : e === "fr" ? Do() : e === "it" ? Co() : e === "jp" ? Mo() : e === "pl" ? Bo() : e === "ru" ? $o() : e === "uk" ? Lo() : Uo()
   },
   Go = () => "Operation not allowed. Maybe you have too many favorite locations.",
   Fo = () => "Operação não permitida. Talvez você tenha muitos locais favoritos.",
@@ -753,20 +753,20 @@ const Re = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   ji = () => "Refresh your page to get the latest update",
   Pi = () => "Recarregue sua página para obter as últimas atualizações",
   Ii = () => "刷新页面以获取最新更新",
-  Ni = () => "Aktualisiere die Seite, um die neuesten Updates zu erhalten",
-  qi = () => "Actualiza la página para obtener la última versión",
+  qi = () => "Aktualisiere die Seite, um die neuesten Updates zu erhalten",
+  Ni = () => "Actualiza la página para obtener la última versión",
   zi = () => "Actualisez la page pour obtenir les dernières mises à jour",
   Oi = () => "Ricarica la pagina per ottenere gli ultimi aggiornamenti",
   Di = () => "最新の状態にするにはページを再読み込みしてください。",
   Ci = () => "Odśwież stronę, aby zobaczyć najnowszą aktualizację",
   Mi = () => "Обновите страницу, чтобы получить последние изменения",
   Bi = () => "Оновіть сторінку, щоб отримати останні оновлення",
-  Li = () => "Hãy làm mới trang để nhận được cập nhật mới nhất",
-  Ui = (n = {}, t = {}) => {
+  $i = () => "Hãy làm mới trang để nhận được cập nhật mới nhất",
+  Li = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? ji() : e === "pt" ? Pi() : e === "ch" ? Ii() : e === "de" ? Ni() : e === "es" ? qi() : e === "fr" ? zi() : e === "it" ? Oi() : e === "jp" ? Di() : e === "pl" ? Ci() : e === "ru" ? Mi() : e === "uk" ? Bi() : Li()
+    return e === "en" ? ji() : e === "pt" ? Pi() : e === "ch" ? Ii() : e === "de" ? qi() : e === "es" ? Ni() : e === "fr" ? zi() : e === "it" ? Oi() : e === "jp" ? Di() : e === "pl" ? Ci() : e === "ru" ? Mi() : e === "uk" ? Bi() : $i()
   },
-  $i = () => "The typed username does not match your current username.",
+  Ui = () => "The typed username does not match your current username.",
   Ri = () => "O nome de usuário digitado não corresponde ao seu nome de usuário atual.",
   Gi = () => "输入的用户名与当前用户名不匹配。",
   Fi = () => "Der eingegebene Benutzername stimmt nicht mit deinem aktuellen Benutzernamen überein.",
@@ -780,7 +780,7 @@ const Re = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Xi = () => "Tên người dùng nhập vào không trùng với tên hiện tại.",
   Qi = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? $i() : e === "pt" ? Ri() : e === "ch" ? Gi() : e === "de" ? Fi() : e === "es" ? Vi() : e === "fr" ? Ji() : e === "it" ? Wi() : e === "jp" ? Ki() : e === "pl" ? Hi() : e === "ru" ? Yi() : e === "uk" ? Zi() : Xi()
+    return e === "en" ? Ui() : e === "pt" ? Ri() : e === "ch" ? Gi() : e === "de" ? Fi() : e === "es" ? Vi() : e === "fr" ? Ji() : e === "it" ? Wi() : e === "jp" ? Ki() : e === "pl" ? Hi() : e === "ru" ? Yi() : e === "uk" ? Zi() : Xi()
   },
   eu = () => "Unexpected server error. Try again later.",
   tu = () => "Erro inesperado do servidor. Tente novamente mais tarde.",
@@ -820,20 +820,20 @@ const Re = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   ju = () => "Du besitzt dieses Item bereits. Bitte aktualisiere die Seite.",
   Pu = () => "Ya tienes este ítem. Actualiza la página.",
   Iu = () => "Vous possédez déjà cet objet. Actualisez la page.",
-  Nu = () => "Possiedi già questo oggetto. Aggiorna la pagina.",
-  qu = () => "このアイテムはすでに所持しています。ページを更新してください。",
+  qu = () => "Possiedi già questo oggetto. Aggiorna la pagina.",
+  Nu = () => "このアイテムはすでに所持しています。ページを更新してください。",
   zu = () => "Masz już ten przedmiot. Odśwież stronę.",
   Ou = () => "У вас уже есть этот предмет. Обновите страницу.",
   Du = () => "У вас уже є цей предмет. Оновіть сторінку.",
   Cu = () => "Bạn đã sở hữu vật phẩm này. Hãy tải lại trang.",
   Mu = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Eu() : e === "pt" ? Tu() : e === "ch" ? Au() : e === "de" ? ju() : e === "es" ? Pu() : e === "fr" ? Iu() : e === "it" ? Nu() : e === "jp" ? qu() : e === "pl" ? zu() : e === "ru" ? Ou() : e === "uk" ? Du() : Cu()
+    return e === "en" ? Eu() : e === "pt" ? Tu() : e === "ch" ? Au() : e === "de" ? ju() : e === "es" ? Pu() : e === "fr" ? Iu() : e === "it" ? qu() : e === "jp" ? Nu() : e === "pl" ? zu() : e === "ru" ? Ou() : e === "uk" ? Du() : Cu()
   },
   Bu = () => "You are already in an alliance",
-  Lu = () => "Você já está em uma aliança",
-  Uu = () => "你已经在一个联盟中",
-  $u = () => "Du bist bereits in einer Allianz",
+  $u = () => "Você já está em uma aliança",
+  Lu = () => "你已经在一个联盟中",
+  Uu = () => "Du bist bereits in einer Allianz",
   Ru = () => "Ya estás en una alianza",
   Gu = () => "Vous êtes déjà dans une alliance",
   Fu = () => "Sei già in un'alleanza",
@@ -844,7 +844,7 @@ const Re = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Hu = () => "Bạn đã ở trong một liên minh",
   Yu = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Bu() : e === "pt" ? Lu() : e === "ch" ? Uu() : e === "de" ? $u() : e === "es" ? Ru() : e === "fr" ? Gu() : e === "it" ? Fu() : e === "jp" ? Vu() : e === "pl" ? Ju() : e === "ru" ? Wu() : e === "uk" ? Ku() : Hu()
+    return e === "en" ? Bu() : e === "pt" ? $u() : e === "ch" ? Lu() : e === "de" ? Uu() : e === "es" ? Ru() : e === "fr" ? Gu() : e === "it" ? Fu() : e === "jp" ? Vu() : e === "pl" ? Ju() : e === "ru" ? Wu() : e === "uk" ? Ku() : Hu()
   },
   Zu = () => "You are not allowed to do this",
   Xu = () => "Você não tem permissão para fazer isso",
@@ -858,7 +858,7 @@ const Re = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   oc = () => "У вас нет прав для этого действия",
   ic = () => "Ви не маєте права це робити",
   uc = () => "Bạn không có quyền làm việc này",
-  P = (n = {}, t = {}) => {
+  A = (n = {}, t = {}) => {
     const e = t.locale ?? _();
     return e === "en" ? Zu() : e === "pt" ? Xu() : e === "ch" ? Qu() : e === "de" ? ec() : e === "es" ? tc() : e === "fr" ? nc() : e === "it" ? rc() : e === "jp" ? ac() : e === "pl" ? sc() : e === "ru" ? oc() : e === "uk" ? ic() : uc()
   },
@@ -887,20 +887,20 @@ const Re = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   jc = () => "Devi aspettare per reinviare un codice",
   Pc = () => "コードを再送信するまでしばらくお待ちください。",
   Ic = () => "Musisz poczekać, zanim wyślesz kod ponownie",
-  Nc = () => "Вам нужно подождать, прежде чем отправить код ещё раз",
-  qc = () => "Перш ніж повторно надіслати код, потрібно почекати",
+  qc = () => "Вам нужно подождать, прежде чем отправить код ещё раз",
+  Nc = () => "Перш ніж повторно надіслати код, потрібно почекати",
   zc = () => "Bạn phải chờ trước khi gửi lại mã",
   Oc = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? kc() : e === "pt" ? Sc() : e === "ch" ? xc() : e === "de" ? Ec() : e === "es" ? Tc() : e === "fr" ? Ac() : e === "it" ? jc() : e === "jp" ? Pc() : e === "pl" ? Ic() : e === "ru" ? Nc() : e === "uk" ? qc() : zc()
+    return e === "en" ? kc() : e === "pt" ? Sc() : e === "ch" ? xc() : e === "de" ? Ec() : e === "es" ? Tc() : e === "fr" ? Ac() : e === "it" ? jc() : e === "jp" ? Pc() : e === "pl" ? Ic() : e === "ru" ? qc() : e === "uk" ? Nc() : zc()
   },
   Dc = () => "You need to be logged in to paint",
   Cc = () => "Você precisa estar conectado para pintar",
   Mc = () => "你需要登录才能进行绘制",
   Bc = () => "Du musst eingeloggt sein, um zu malen",
-  Lc = () => "Debes iniciar sesión para pintar",
-  Uc = () => "Vous devez être connecté pour peindre",
-  $c = () => "Devi avere effettuato l'accesso per dipingere",
+  $c = () => "Debes iniciar sesión para pintar",
+  Lc = () => "Vous devez être connecté pour peindre",
+  Uc = () => "Devi avere effettuato l'accesso per dipingere",
   Rc = () => "ペイントするにはログインが必要です。",
   Gc = () => "Musisz być zalogowany, aby malować",
   Fc = () => "Чтобы рисовать, нужно войти в аккаунт",
@@ -908,7 +908,7 @@ const Re = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Jc = () => "Bạn cần đăng nhập để tô",
   ne = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Dc() : e === "pt" ? Cc() : e === "ch" ? Mc() : e === "de" ? Bc() : e === "es" ? Lc() : e === "fr" ? Uc() : e === "it" ? $c() : e === "jp" ? Rc() : e === "pl" ? Gc() : e === "ru" ? Fc() : e === "uk" ? Vc() : Jc()
+    return e === "en" ? Dc() : e === "pt" ? Cc() : e === "ch" ? Mc() : e === "de" ? Bc() : e === "es" ? $c() : e === "fr" ? Lc() : e === "it" ? Uc() : e === "jp" ? Rc() : e === "pl" ? Gc() : e === "ru" ? Fc() : e === "uk" ? Vc() : Jc()
   },
   Wc = () => "You or someone in your network is making a lot of requests to the server. Try again later.",
   Kc = () => "Você ou alguém na sua rede está fazendo muitas solicitações ao servidor. Tente novamente mais tarde.",
@@ -958,19 +958,19 @@ const Re = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
     const e = t.locale ?? _();
     return e === "en" ? wd() : e === "pt" ? yd() : e === "ch" ? bd() : e === "de" ? vd() : e === "es" ? kd() : e === "fr" ? Sd() : e === "it" ? xd() : e === "jp" ? Ed() : e === "pl" ? Td() : e === "ru" ? Ad() : e === "uk" ? jd() : Pd()
   };
-let p;
+let h;
 
 function z(n) {
-  const t = p.__externref_table_alloc();
-  return p.__wbindgen_export_2.set(t, n), t
+  const t = h.__externref_table_alloc();
+  return h.__wbindgen_export_2.set(t, n), t
 }
 
-function N(n, t) {
+function q(n, t) {
   try {
     return n.apply(this, t)
   } catch (e) {
     const r = z(e);
-    p.__wbindgen_exn_store(r)
+    h.__wbindgen_exn_store(r)
   }
 }
 const we = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
@@ -985,7 +985,7 @@ typeof TextDecoder < "u" && we.decode();
 let O = null;
 
 function Z() {
-  return (O === null || O.byteLength === 0) && (O = new Uint8Array(p.memory.buffer)), O
+  return (O === null || O.byteLength === 0) && (O = new Uint8Array(h.memory.buffer)), O
 }
 
 function D(n, t) {
@@ -996,8 +996,8 @@ function Y(n) {
   return n == null
 }
 
-function Nd(n) {
-  p.set_user_id(n)
+function qd(n) {
+  h.set_user_id(n)
 }
 let ee = 0;
 const X = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
@@ -1005,7 +1005,7 @@ const X = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
       throw Error("TextEncoder not available")
     }
   },
-  qd = typeof X.encodeInto == "function" ? function(n, t) {
+  Nd = typeof X.encodeInto == "function" ? function(n, t) {
     return X.encodeInto(n, t)
   } : function(n, t) {
     const e = X.encode(n);
@@ -1017,53 +1017,53 @@ const X = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
 
 function ye(n, t, e) {
   if (e === void 0) {
-    const i = X.encode(n),
-      l = t(i.length, 1) >>> 0;
-    return Z().subarray(l, l + i.length).set(i), ee = i.length, l
+    const u = X.encode(n),
+      l = t(u.length, 1) >>> 0;
+    return Z().subarray(l, l + u.length).set(u), ee = u.length, l
   }
   let r = n.length,
     a = t(r, 1) >>> 0;
   const s = Z();
-  let u = 0;
-  for (; u < r; u++) {
-    const i = n.charCodeAt(u);
-    if (i > 127) break;
-    s[a + u] = i
+  let i = 0;
+  for (; i < r; i++) {
+    const u = n.charCodeAt(i);
+    if (u > 127) break;
+    s[a + i] = u
   }
-  if (u !== r) {
-    u !== 0 && (n = n.slice(u)), a = e(a, r, r = u + n.length * 3, 1) >>> 0;
-    const i = Z().subarray(a + u, a + r),
-      l = qd(n, i);
-    u += l.written, a = e(a, r, u, 1) >>> 0
+  if (i !== r) {
+    i !== 0 && (n = n.slice(i)), a = e(a, r, r = i + n.length * 3, 1) >>> 0;
+    const u = Z().subarray(a + i, a + r),
+      l = Nd(n, u);
+    i += l.written, a = e(a, r, i, 1) >>> 0
   }
-  return ee = u, a
+  return ee = i, a
 }
 
 function zd(n) {
-  const t = ye(n, p.__wbindgen_malloc, p.__wbindgen_realloc),
+  const t = ye(n, h.__wbindgen_malloc, h.__wbindgen_realloc),
     e = ee;
-  p.request_url(t, e)
+  h.request_url(t, e)
 }
 
 function Od() {
   let n, t;
   try {
-    const e = p.get_load_payload();
+    const e = h.get_load_payload();
     return n = e[0], t = e[1], D(e[0], e[1])
   } finally {
-    p.__wbindgen_free(n, t, 1)
+    h.__wbindgen_free(n, t, 1)
   }
 }
 
 function Dd(n) {
   let t, e;
   try {
-    const r = ye(n, p.__wbindgen_malloc, p.__wbindgen_realloc),
+    const r = ye(n, h.__wbindgen_malloc, h.__wbindgen_realloc),
       a = ee,
-      s = p.get_pawtected_endpoint_payload(r, a);
+      s = h.get_pawtected_endpoint_payload(r, a);
     return t = s[0], e = s[1], D(s[0], s[1])
   } finally {
-    p.__wbindgen_free(t, e, 1)
+    h.__wbindgen_free(t, e, 1)
   }
 }
 async function Cd(n, t) {
@@ -1090,17 +1090,17 @@ function Md() {
   return n.wbg = {}, n.wbg.__wbg_buffer_609cc3eee51ed158 = function(t) {
     return t.buffer
   }, n.wbg.__wbg_call_672a4d21634d4a24 = function() {
-    return N(function(t, e) {
+    return q(function(t, e) {
       return t.call(e)
     }, arguments)
   }, n.wbg.__wbg_call_7cccdd69e0791ae2 = function() {
-    return N(function(t, e, r) {
+    return q(function(t, e, r) {
       return t.call(e, r)
     }, arguments)
   }, n.wbg.__wbg_crypto_574e78ad8b13b65f = function(t) {
     return t.crypto
   }, n.wbg.__wbg_getRandomValues_b8f5dbd5f3995a9e = function() {
-    return N(function(t, e) {
+    return q(function(t, e) {
       t.getRandomValues(e)
     }, arguments)
   }, n.wbg.__wbg_msCrypto_a61aeb35a24c1329 = function(t) {
@@ -1118,11 +1118,11 @@ function Md() {
   }, n.wbg.__wbg_process_dc0fbacc7c1c06f7 = function(t) {
     return t.process
   }, n.wbg.__wbg_randomFillSync_ac0988aba3254290 = function() {
-    return N(function(t, e) {
+    return q(function(t, e) {
       t.randomFillSync(e)
     }, arguments)
   }, n.wbg.__wbg_require_60cc747a6bc5215a = function() {
-    return N(function() {
+    return q(function() {
       return module.require
     }, arguments)
   }, n.wbg.__wbg_set_65595bdd868b3009 = function(t, e, r) {
@@ -1144,7 +1144,7 @@ function Md() {
   }, n.wbg.__wbg_versions_c01dfd4722a88165 = function(t) {
     return t.versions
   }, n.wbg.__wbindgen_init_externref_table = function() {
-    const t = p.__wbindgen_export_2,
+    const t = h.__wbindgen_export_2,
       e = t.grow(4);
     t.set(0, void 0), t.set(e + 0, void 0), t.set(e + 1, null), t.set(e + 2, !0), t.set(e + 3, !1)
   }, n.wbg.__wbindgen_is_function = function(t) {
@@ -1157,7 +1157,7 @@ function Md() {
   }, n.wbg.__wbindgen_is_undefined = function(t) {
     return t === void 0
   }, n.wbg.__wbindgen_memory = function() {
-    return p.memory
+    return h.memory
   }, n.wbg.__wbindgen_string_new = function(t, e) {
     return D(t, e)
   }, n.wbg.__wbindgen_throw = function(t, e) {
@@ -1166,10 +1166,10 @@ function Md() {
 }
 
 function Bd(n, t) {
-  return p = n.exports, be.__wbindgen_wasm_module = t, O = null, p.__wbindgen_start(), p
+  return h = n.exports, be.__wbindgen_wasm_module = t, O = null, h.__wbindgen_start(), h
 }
 async function be(n) {
-  if (p !== void 0) return p;
+  if (h !== void 0) return h;
   typeof n < "u" && (Object.getPrototypeOf(n) === Object.prototype ? {
     module_or_path: n
   } = n : console.warn("using deprecated parameters for the initialization function; pass a single object instead")), typeof n > "u" && (n = new URL("pawtect_wasm_bg.wasm", import.meta.url));
@@ -1189,31 +1189,31 @@ function ve(n, t) {
   return !1
 }
 
-function Ld(n, t) {
+function $d(n, t) {
   for (const e of t)
     if (ve(n, e)) return !0;
   return !1
 }
 
-function Ud(n) {
+function Ld(n) {
   const t = atob(n),
     e = new Uint8Array(t.length);
   for (let r = 0; r < t.length; r++) e[r] = t.charCodeAt(r);
   return e
 }
-class $d {
+class Ud {
   constructor(t) {
-    g(this, "bytes");
+    p(this, "bytes");
     this.bytes = t ?? new Uint8Array
   }
   set(t, e) {
     const r = Math.floor(t / 8),
       a = t % 8;
     if (r >= this.bytes.length) {
-      const u = new Uint8Array(r + 1),
-        i = u.length - this.bytes.length;
-      for (let l = 0; l < this.bytes.length; l++) u[l + i] = this.bytes[l];
-      this.bytes = u
+      const i = new Uint8Array(r + 1),
+        u = i.length - this.bytes.length;
+      for (let l = 0; l < this.bytes.length; l++) i[l + u] = this.bytes[l];
+      this.bytes = i
     }
     const s = this.bytes.length - 1 - r;
     e ? this.bytes[s] = this.bytes[s] | 1 << a : this.bytes[s] = this.bytes[s] & ~(1 << a)
@@ -1239,27 +1239,27 @@ function hl(n) {
     }, r.readAsDataURL(n)
   })
 }
-var L, U, $, R, G, F, V, J;
+var $, L, U, R, G, F, V, J;
 class Rd {
   constructor() {
-    g(this, "channel", new BroadcastChannel("user-channel"));
-    w(this, L, T());
-    w(this, U, T(!0));
-    w(this, $, T());
-    w(this, R, T(Date.now()));
-    w(this, G, q(() => {
+    p(this, "channel", new BroadcastChannel("user-channel"));
+    w(this, $, E());
+    w(this, L, E(!0));
+    w(this, U, E());
+    w(this, R, E(Date.now()));
+    w(this, G, N(() => {
       if (!this.data) return;
       const t = this.data.charges;
       if (t.count > t.max) return t.count;
       const e = t.count + Math.max((ze.now - this.lastFetch) / t.cooldownMs, 0);
       return Math.min(t.max, e)
     }));
-    w(this, F, q(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
-    w(this, V, q(() => {
+    w(this, F, N(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
+    w(this, V, N(() => {
       var t;
-      return new $d(Ud(((t = this.data) == null ? void 0 : t.flagsBitmap) ?? "AA=="))
+      return new Ud(Ld(((t = this.data) == null ? void 0 : t.flagsBitmap) ?? "AA=="))
     }));
-    w(this, J, q(() => {
+    w(this, J, N(() => {
       var e;
       if (!((e = this.data) != null && e.timeoutUntil)) return;
       const t = new Date(this.data.timeoutUntil);
@@ -1271,22 +1271,22 @@ class Rd {
     }
   }
   get data() {
-    return y(f(this, L))
-  }
-  set data(t) {
-    v(f(this, L), t, !0)
-  }
-  get loading() {
-    return y(f(this, U))
-  }
-  set loading(t) {
-    v(f(this, U), t, !0)
-  }
-  get notificiationCount() {
     return y(f(this, $))
   }
-  set notificiationCount(t) {
+  set data(t) {
     v(f(this, $), t, !0)
+  }
+  get loading() {
+    return y(f(this, L))
+  }
+  set loading(t) {
+    v(f(this, L), t, !0)
+  }
+  get notificiationCount() {
+    return y(f(this, U))
+  }
+  set notificiationCount(t) {
+    v(f(this, U), t, !0)
   }
   get lastFetch() {
     return y(f(this, R))
@@ -1352,19 +1352,19 @@ class Rd {
   }
   hasAnyPermission(t) {
     var e;
-    return Ld((e = this.data) == null ? void 0 : e.permissions, t)
+    return $d((e = this.data) == null ? void 0 : e.permissions, t)
   }
 }
-L = new WeakMap, U = new WeakMap, $ = new WeakMap, R = new WeakMap, G = new WeakMap, F = new WeakMap, V = new WeakMap, J = new WeakMap;
-const I = new Rd;
+$ = new WeakMap, L = new WeakMap, U = new WeakMap, R = new WeakMap, G = new WeakMap, F = new WeakMap, V = new WeakMap, J = new WeakMap;
+const P = new Rd;
 
 function ke(n) {
-  return I.data ? I.data.experiments[n] ?? null : null
+  return P.data ? P.data.experiments[n] ?? null : null
 }
 
 function pl(n) {
   var t, e;
-  return ((e = (t = I.data) == null ? void 0 : t.experiments[n]) == null ? void 0 : e.enabled) ?? !0
+  return ((e = (t = P.data) == null ? void 0 : t.experiments[n]) == null ? void 0 : e.enabled) ?? !0
 }
 const gl = {
     griefing: Hr(),
@@ -1807,7 +1807,10 @@ const gl = {
         seePunishment: "staff.tools.select_pixel.see_punishment",
         archive: "staff.tools.select_pixel.archive"
       },
-      autoPainter: "staff.tools.auto_painter.paint"
+      autoPainter: "staff.tools.auto_painter.paint",
+      wayback: {
+        wayback: "staff.tools.wayback.wayback"
+      }
     },
     ui: {
       themeDarkMode: "staff.ui.theme.dark_mode",
@@ -1861,7 +1864,7 @@ function Sl(n, t) {
 var W;
 class Qd {
   constructor(t) {
-    w(this, W, T(!0));
+    w(this, W, E(!0));
     this.url = t
   }
   get online() {
@@ -1880,71 +1883,71 @@ class Qd {
     const a = Xd(t, l => `t=(${l.tile[0]},${l.tile[1]}),s=${l.season}`),
       s = ke("2025-09_pawtect");
     if (!s) throw new Error("paint request while pawtect experiment not found");
-    const i = (await Promise.all(Object.values(a).map(l => {
-      const [d, h] = l[0].tile, m = l[0].season, E = {
+    const u = (await Promise.all(Object.values(a).map(l => {
+      const [d, g] = l[0].tile, m = l[0].season, j = {
         colors: l.map(S => S.colorIdx),
         coords: l.flatMap(S => S.pixel),
         fp: e
-      }, A = JSON.stringify(E), k = r(m, d, h);
+      }, I = JSON.stringify(j), k = r(m, d, g);
       return this.request(k, {
         method: "POST",
-        body: A,
+        body: I,
         headers: {
-          "x-pawtect-token": s.variant !== "disabled" ? al(A) : "",
+          "x-pawtect-token": s.variant !== "disabled" ? al(I) : "",
           "x-pawtect-variant": s.variant
         },
         credentials: "include"
       })
     }))).filter(l => l.status !== 200);
-    if (i.length) {
-      const l = i[0];
+    if (u.length) {
+      const l = u[0];
       if (l.status === 401) throw new Error(ne());
       if (l.status === 403) {
         if (l.headers.get("cf-mitigated") === "challenge") throw new Error(dr());
         const d = await l.json();
         if ((d == null ? void 0 : d.error) === "timeout") {
-          const h = new Date(Date.now() + ((d == null ? void 0 : d.durationMs) ?? 0));
+          const g = new Date(Date.now() + ((d == null ? void 0 : d.durationMs) ?? 0));
           throw new Error(gd({
-            until: h.toLocaleString()
+            until: g.toLocaleString()
           }))
         }
-        if ((d == null ? void 0 : d.error) === "refresh") throw new Error(Ui());
+        if ((d == null ? void 0 : d.error) === "refresh") throw new Error(Li());
         if ((d == null ? void 0 : d.error) === "color-not-owned") throw new Error(mi());
         if ((d == null ? void 0 : d.error) === "event-pixel-present") throw new Error(En());
-        I.refresh()
+        P.refresh()
       } else throw new Error(o())
     }
   }
   async adminAutoPainterPaint(t, e, r) {
     const a = el(t),
       s = await tl(a),
-      u = new FormData;
-    u.append("fingerprint", e), u.append("season", a.season.toString()), u.append("px0", a.offsetX.toString()), u.append("py0", a.offsetY.toString()), u.append("width", a.width.toString()), u.append("height", a.height.toString()), u.append("pixels", t.length.toString()), u.append("bitmap", s, "auto-painter.png"), u.append("userId", r.toString());
-    const i = await this.request("/staff/tools/auto-painter/paint", {
+      i = new FormData;
+    i.append("fingerprint", e), i.append("season", a.season.toString()), i.append("px0", a.offsetX.toString()), i.append("py0", a.offsetY.toString()), i.append("width", a.width.toString()), i.append("height", a.height.toString()), i.append("pixels", t.length.toString()), i.append("bitmap", s, "auto-painter.png"), i.append("userId", r.toString());
+    const u = await this.request("/staff/tools/auto-painter/paint", {
       method: "POST",
-      body: u,
+      body: i,
       credentials: "include"
     });
-    if (i.status === 403) throw new Error("Auto painter is restricted to administrators.");
-    if (i.status !== 200) throw new Error(o());
-    return i.json()
+    if (u.status === 403) throw new Error("Auto painter is restricted to administrators.");
+    if (u.status !== 200) throw new Error(o());
+    return u.json()
   }
   async getPixelInfo({
     season: t,
     tile: [e, r],
     pixel: [a, s],
-    role: u,
-    christmasTreeId: i
+    role: i,
+    christmasTreeId: u
   }) {
     const l = new URLSearchParams;
-    l.set("x", String(a)), l.set("y", String(s)), i !== void 0 && l.set("christmasTreeId", String(i));
+    l.set("x", String(a)), l.set("y", String(s)), u !== void 0 && l.set("christmasTreeId", String(u));
     const d = await this.request(`/s${t}/pixel/${e}/${r}?${l.toString()}`, {
       credentials: "include"
     });
     if (d.status !== 200) {
-      const h = await d.text();
+      const g = await d.text();
       throw new Error(Cr({
-        err: h
+        err: g
       }))
     }
     return d.json()
@@ -1953,9 +1956,9 @@ class Qd {
     season: t,
     tile: [e, r],
     p0: [a, s],
-    p1: [u, i]
+    p1: [i, u]
   }) {
-    const l = await this.request(`/staff/tools/select-area/s${t}/${e}/${r}?x0=${a}&y0=${s}&x1=${u}&y1=${i}`, {
+    const l = await this.request(`/staff/tools/select-area/s${t}/${e}/${r}?x0=${a}&y0=${s}&x1=${i}&y1=${u}`, {
       credentials: "include"
     });
     if (l.status !== 200) {
@@ -1963,11 +1966,11 @@ class Qd {
       throw console.error("Error while fetching pixel area info", m), new Error(o())
     }
     const d = await l.arrayBuffer(),
-      h = new DataView(d);
+      g = new DataView(d);
     return {
       paintedBy: Array.from({
         length: d.byteLength / 4
-      }, (m, E) => h.getUint32(E * 4, !0))
+      }, (m, j) => g.getUint32(j * 4, !0))
     }
   }
   async me() {
@@ -2089,35 +2092,35 @@ class Qd {
   }
   async leaderboardPlayers(t) {
     const e = await this.request(`/leaderboard/player/${t}`);
-    if (e.status !== 200) throw new Error(j());
+    if (e.status !== 200) throw new Error(T());
     return e.json()
   }
   async leaderboardAlliances(t) {
     const e = await this.request(`/leaderboard/alliance/${t}`);
-    if (e.status !== 200) throw new Error(j());
+    if (e.status !== 200) throw new Error(T());
     return e.json()
   }
   async leaderboardRegions(t, e = 0) {
     const r = await this.request(`/leaderboard/region/${t}/${e}`);
     if (r.status === 200) return r.json();
-    throw new Error(j())
+    throw new Error(T())
   }
   async leaderboardRegionPlayers(t, e) {
     const r = await this.request(`/leaderboard/region/players/${t}/${e}`);
     if (r.status === 200) return r.json();
-    throw new Error(j())
+    throw new Error(T())
   }
   async leaderboardRegionAlliances(t, e) {
     const r = await this.request(`/leaderboard/region/alliances/${t}/${e}`);
     if (r.status === 200) return r.json();
-    throw new Error(j())
+    throw new Error(T())
   }
   async leaderboardCountries(t) {
     const e = await this.request(`/leaderboard/country/${t}`, {
       credentials: "include"
     });
     if (e.status === 200) return e.json();
-    throw new Error(j())
+    throw new Error(T())
   }
   async getRandomTile(t) {
     const e = await this.request(`/s${t}/tile/random`);
@@ -2153,7 +2156,7 @@ class Qd {
     if (e.status === 200) return e.json();
     if (e.status === 400) {
       const r = await e.json();
-      throw r.error === "max_characters" ? new Error(Tt()) : r.error === "name_taken" ? new Error(ft()) : r.error == "empty_name" ? new Error(Lt()) : new Error(o())
+      throw r.error === "max_characters" ? new Error(Tt()) : r.error === "name_taken" ? new Error(ft()) : r.error == "empty_name" ? new Error($t()) : new Error(o())
     } else throw e.status === 403 ? new Error(Yu()) : new Error(o())
   }
   async leaveAlliance() {
@@ -2170,7 +2173,7 @@ class Qd {
         description: t
       })
     });
-    if (e.status !== 200) throw e.status === 403 ? new Error(P()) : e.status === 400 ? new Error(Id()) : new Error(o())
+    if (e.status !== 200) throw e.status === 403 ? new Error(A()) : e.status === 400 ? new Error(Id()) : new Error(o())
   }
   async updateAllianceHeadquarters(t, e) {
     const r = await this.request("/alliance/update-headquarters", {
@@ -2181,21 +2184,21 @@ class Qd {
         longitude: e
       })
     });
-    if (r.status !== 200) throw r.status === 403 ? new Error(P()) : new Error(o())
+    if (r.status !== 200) throw r.status === 403 ? new Error(A()) : new Error(o())
   }
   async allianceLeaderboard(t) {
     const e = await this.request(`/alliance/leaderboard/${t}`, {
       credentials: "include"
     });
     if (e.status === 200) return e.json();
-    throw e.status === 403 ? new Error(P()) : new Error(j())
+    throw e.status === 403 ? new Error(A()) : new Error(T())
   }
   async getAllianceInvites() {
     const t = await this.request("/alliance/invites", {
       credentials: "include"
     });
     if (t.status === 200) return t.json();
-    throw t.status === 403 ? new Error(P()) : new Error(o())
+    throw t.status === 403 ? new Error(A()) : new Error(o())
   }
   async joinAlliance(t) {
     switch ((await this.request(`/alliance/join/${t}`, {
@@ -2309,18 +2312,18 @@ class Qd {
     };
     if (a.status !== 200) throw new c(o(), a.status);
     const s = await a.json(),
-      u = Array.isArray(s == null ? void 0 : s.members) ? s.members : [];
+      i = Array.isArray(s == null ? void 0 : s.members) ? s.members : [];
     return {
-      members: u.map(i => ({
-        id: Number(i == null ? void 0 : i.id),
-        name: String((i == null ? void 0 : i.name) ?? `#${i==null?void 0:i.id}`),
-        picture: (i == null ? void 0 : i.picture) ?? null,
-        pixelsPainted: Number((i == null ? void 0 : i.pixelsPainted) ?? (i == null ? void 0 : i.pixels_painted) ?? 0),
-        lastPixelLatitude: (i == null ? void 0 : i.lastPixelLatitude) ?? null,
-        lastPixelLongitude: (i == null ? void 0 : i.lastPixelLongitude) ?? null,
-        role: (i == null ? void 0 : i.alliance_role) === "admin" || (i == null ? void 0 : i.role) === "admin" ? "admin" : "member"
+      members: i.map(u => ({
+        id: Number(u == null ? void 0 : u.id),
+        name: String((u == null ? void 0 : u.name) ?? `#${u==null?void 0:u.id}`),
+        picture: (u == null ? void 0 : u.picture) ?? null,
+        pixelsPainted: Number((u == null ? void 0 : u.pixelsPainted) ?? (u == null ? void 0 : u.pixels_painted) ?? 0),
+        lastPixelLatitude: (u == null ? void 0 : u.lastPixelLatitude) ?? null,
+        lastPixelLongitude: (u == null ? void 0 : u.lastPixelLongitude) ?? null,
+        role: (u == null ? void 0 : u.alliance_role) === "admin" || (u == null ? void 0 : u.role) === "admin" ? "admin" : "member"
       })),
-      total: Number((s == null ? void 0 : s.total) ?? u.length)
+      total: Number((s == null ? void 0 : s.total) ?? i.length)
     }
   }
   async renameAlliance(t, e) {
@@ -2346,7 +2349,7 @@ class Qd {
     });
     if (r.status === 400) {
       const a = await r.json();
-      throw (a == null ? void 0 : a.error) === "user_not_in_alliance" ? new Error(Ns()) : new Error(o())
+      throw (a == null ? void 0 : a.error) === "user_not_in_alliance" ? new Error(qs()) : new Error(o())
     } else if (r.status !== 200) throw new c(o(), r.status)
   }
   async banAllAllianceMembers(t, e, r) {
@@ -2385,7 +2388,7 @@ class Qd {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== 200) throw e.status === 403 ? new Error(P()) : new Error(o())
+    if (e.status !== 200) throw e.status === 403 ? new Error(A()) : new Error(o())
   }
   async banAllianceUser(t) {
     const e = await this.request("/alliance/ban", {
@@ -2395,7 +2398,7 @@ class Qd {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== 200) throw e.status === 403 ? new Error(P()) : new Error(o())
+    if (e.status !== 200) throw e.status === 403 ? new Error(A()) : new Error(o())
   }
   async equipFlag(t) {
     if ((await this.request(`/flag/equip/${t}`, {
@@ -2427,7 +2430,7 @@ class Qd {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== 200) throw e.status === 403 ? new Error(P()) : new Error(o())
+    if (e.status !== 200) throw e.status === 403 ? new Error(A()) : new Error(o())
   }
   async health() {
     return (await this.request("/health")).json()
@@ -2678,18 +2681,18 @@ class Qd {
     if (e.status !== 200) throw new c(o(), e.status);
     const r = await e.json();
     return (Array.isArray(r == null ? void 0 : r.purchases) ? r.purchases : []).map(s => {
-      const u = s.is_dollar ?? s.isDollar ?? s.currency ?? s.Currency ?? 0;
-      let i;
-      if (typeof u == "string") {
-        const d = u.toLowerCase();
-        i = d === "usd" || d === "dollar" || d === "true"
-      } else typeof u == "number" ? i = u !== 0 : i = !!u;
+      const i = s.is_dollar ?? s.isDollar ?? s.currency ?? s.Currency ?? 0;
+      let u;
+      if (typeof i == "string") {
+        const d = i.toLowerCase();
+        u = d === "usd" || d === "dollar" || d === "true"
+      } else typeof i == "number" ? u = i !== 0 : u = !!i;
       const l = typeof s.createdAt == "string" ? s.createdAt : s.CreatedAt ? new Date(s.CreatedAt).toISOString() : "";
       return {
         product_name: String(s.productName ?? s.product_name ?? ""),
         amount: Number(s.amount ?? 0),
         price: Number(s.price ?? 0),
-        is_dollar: i,
+        is_dollar: u,
         created_at: l,
         product_variant: Number(s.product_variant ?? s.productVariant ?? 0)
       }
@@ -2718,30 +2721,24 @@ class Qd {
     });
     if (a.status === 400) {
       const s = await a.json(),
-        u = (s == null ? void 0 : s.error) ?? "";
-      throw u === "invalid_name" ? new c(le(), 400) : new c(typeof u == "string" && u ? u : o(), 400)
+        i = (s == null ? void 0 : s.error) ?? "";
+      throw i === "invalid_name" ? new c(le(), 400) : new c(typeof i == "string" && i ? i : o(), 400)
     }
     if (a.status !== 200) throw new c(o(), a.status)
   }
   async getUserTickets(t, e) {
-    const {
-      userId: r,
-      kind: a,
-      page: s = 0,
-      pageSize: u = 20
-    } = t, i = new URLSearchParams({
-      userId: String(r),
-      kind: a,
-      page: String(s),
-      pageSize: String(u)
-    }), l = e == "tickets" ? `/staff/dashboard/users/tickets?${i.toString()}` : `/staff/appeals/tickets?${i.toString()}`, d = await this.request(l, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (d.status !== 200) throw new c(o(), d.status);
-    const h = await d.json(),
-      m = Array.isArray(h == null ? void 0 : h.tickets) ? h.tickets : [];
-    return m.sort((E, A) => new Date(A.createdAt).getTime() - new Date(E.createdAt).getTime()), m
+    if (e === "appeals" && (t.appealId ?? 0) <= 0) throw new Error("Appeal id is required.");
+    const r = new URLSearchParams;
+    r.set("userId", String(t.userId)), r.set("kind", String(t.kind)), r.set("page", String(t.page ?? 0)), r.set("pageSize", String(t.pageSize ?? 20)), e === "appeals" && r.set("appealId", String(t.appealId));
+    const a = e === "appeals" ? `/staff/appeals/tickets?${r.toString()}` : `/staff/dashboard/users/tickets?${r.toString()}`,
+      s = await this.request(a, {
+        method: "GET",
+        credentials: "include"
+      });
+    if (s.status !== 200) throw new c(o(), s.status);
+    const i = await s.json(),
+      u = Array.isArray(i == null ? void 0 : i.tickets) ? i.tickets : [];
+    return u.sort((l, d) => new Date(d.createdAt).getTime() - new Date(l.createdAt).getTime()), u
   }
   async getModerationTranslate(t, e) {
     const r = e == "tickets" ? "/staff/tickets/translate" : "/staff/appeals/translate",
@@ -2757,10 +2754,10 @@ class Qd {
     return s == null ? void 0 : s.translation
   }
   mapTicketsToReportRows(t, e) {
-    var a, s, u, i, l;
+    var a, s, i, u, l;
     const r = [];
     for (const d of t) {
-      const h = d.status ?? "open";
+      const g = d.status ?? "open";
       if (e === "received") {
         for (const m of d.reports) r.push({
           id: String(m.id),
@@ -2772,7 +2769,7 @@ class Qd {
             picture: m.reportedByPicture ?? null
           },
           reason: String(m.reason),
-          status: h
+          status: g
         });
         continue
       }
@@ -2787,7 +2784,7 @@ class Qd {
             picture: d.reportedUser.picture ?? null
           },
           reason: String(m.reason),
-          status: h
+          status: g
         });
         continue
       }
@@ -2798,17 +2795,17 @@ class Qd {
         handledBy: d.status && d.status !== "open" ? {
           id: ((a = d.handledBy) == null ? void 0 : a.id) ?? 0,
           name: ((s = d.handledBy) == null ? void 0 : s.name) ?? "Moderator",
-          picture: ((u = d.handledBy) == null ? void 0 : u.picture) ?? null
+          picture: ((i = d.handledBy) == null ? void 0 : i.picture) ?? null
         } : {
           id: 0,
           name: "—",
           picture: null
         },
-        reason: String(((l = (i = d.reports) == null ? void 0 : i[0]) == null ? void 0 : l.reason) ?? "other"),
-        status: h
+        reason: String(((l = (u = d.reports) == null ? void 0 : u[0]) == null ? void 0 : l.reason) ?? "other"),
+        status: g
       })
     }
-    return r.sort((d, h) => new Date(h.createdAt).getTime() - new Date(d.createdAt).getTime()), r
+    return r.sort((d, g) => new Date(g.createdAt).getTime() - new Date(d.createdAt).getTime()), r
   }
   async getModeratorClosedTicketStats(t) {
     const e = new URLSearchParams({
@@ -2961,8 +2958,8 @@ class Qd {
         message: t
       })
     });
-    if (e.status !== 200) throw new c(o(), e.status);
-    return await e.json()
+    if (e.status !== 200 && e.status !== 208) throw new c(o(), e.status);
+    return e.status
   }
   async getOpenAppeals() {
     const t = await this.request("/staff/appeals/get", {
@@ -2972,7 +2969,7 @@ class Qd {
     if (t.status !== 200) throw new c(o(), t.status);
     return t.json()
   }
-  async postResponseAppeal(t, e) {
+  async postSolveAppeal(t, e) {
     const r = await this.request(`/staff/appeals/${t}/handle`, {
       method: "POST",
       credentials: "include",
@@ -3163,42 +3160,128 @@ class Qd {
     });
     if (e.status !== 200) throw new c(o(), e.status)
   }
+  async getWaybackEvents(t) {
+    const e = {
+        tile_x: t.tileX,
+        tile_y: t.tileY,
+        x0: t.x0,
+        y0: t.y0,
+        x1: t.x1,
+        y1: t.y1,
+        user_id: t.userId,
+        alliance_id: t.allianceId,
+        region_id: t.regionId,
+        limit: t.limit
+      },
+      r = new URLSearchParams({
+        from_ts: t.fromTs.toString(),
+        to_ts: t.toTs.toString()
+      });
+    for (const [s, i] of Object.entries(e)) i !== void 0 && r.set(s, i.toString());
+    const a = await this.request(`/staff/tools/wayback/s${t.season}?${r.toString()}`, {
+      method: "GET",
+      credentials: "include"
+    });
+    if (a.status === 403) throw new Error("Access denied");
+    if (a.status !== 200) throw new Error("Failed to fetch wayback events");
+    return a.json()
+  }
+  async getWaybackWithSnapshot(t) {
+    const e = {
+        tile_x: t.tileX,
+        tile_y: t.tileY,
+        x0: t.x0,
+        y0: t.y0,
+        x1: t.x1,
+        y1: t.y1,
+        user_id: t.userId,
+        alliance_id: t.allianceId,
+        region_id: t.regionId,
+        limit: t.limit
+      },
+      r = new URLSearchParams({
+        from_ts: t.fromTs.toString(),
+        to_ts: t.toTs.toString()
+      });
+    for (const [s, i] of Object.entries(e)) i !== void 0 && r.set(s, i.toString());
+    const a = await this.request(`/staff/tools/wayback/s${t.season}/snapshot?${r.toString()}`, {
+      method: "GET",
+      credentials: "include"
+    });
+    if (a.status === 403) throw new Error("Access denied");
+    if (a.status !== 200) throw new Error("Failed to fetch wayback events with snapshot");
+    return a.json()
+  }
+  async getWaybackVideo(t, e) {
+    const r = await this.request(`/staff/tools/wayback/s${t}/video?${e}`, {
+      method: "GET",
+      credentials: "include"
+    });
+    if (r.status === 403) throw new Error("Access denied");
+    if (r.status !== 200) throw new Error("Failed to fetch wayback video");
+    return r
+  }
+  async postWaybackReconstruct(t, e) {
+    const r = await this.request(`/staff/tools/wayback/s${t}/reconstruct`, {
+      method: "POST",
+      credentials: "include",
+      body: JSON.stringify(e)
+    });
+    if (r.status === 403) throw new Error("Access denied");
+    if (r.status !== 200) throw new Error("Failed to reconstruct wayback data");
+    return r
+  }
+  async getWaybackReconstructImage(t) {
+    const e = new URLSearchParams({
+        from_ts: String(t.fromTs),
+        to_ts: String(t.toTs),
+        tile_x: String(t.tileX),
+        tile_y: String(t.tileY)
+      }),
+      r = await this.request(`/staff/tools/wayback/s${t.season}/reconstruct?${e.toString()}`, {
+        method: "GET",
+        credentials: "include"
+      });
+    if (r.status === 403) throw new Error("Access denied");
+    if (r.status !== 200) throw new Error("Failed to fetch wayback reconstruct image");
+    return r.blob()
+  }
 }
 W = new WeakMap;
 
 function el(n) {
-  var E, A;
+  var j, I;
   if (!n.length) throw new Error("Auto painter request does not contain any pixels.");
   const t = n[0].season;
   for (const k of n)
     if (k.season !== t) throw new Error("Auto painter requests cannot mix seasons.");
-  const e = (E = re.seasons) == null ? void 0 : E[t];
+  const e = (j = re.seasons) == null ? void 0 : j[t];
   if (!e) throw new Error("Invalid season selected for auto painter request.");
   const r = e.tileSize;
   let a = Number.POSITIVE_INFINITY,
     s = Number.POSITIVE_INFINITY,
-    u = Number.NEGATIVE_INFINITY,
-    i = Number.NEGATIVE_INFINITY;
+    i = Number.NEGATIVE_INFINITY,
+    u = Number.NEGATIVE_INFINITY;
   const l = n.map(k => {
       const S = Math.round(k.tile[0] * r + k.pixel[0]),
         x = Math.round(k.tile[1] * r + k.pixel[1]);
-      return S < a && (a = S), x < s && (s = x), S > u && (u = S), x > i && (i = x), {
+      return S < a && (a = S), x < s && (s = x), S > i && (i = S), x > u && (u = x), {
         x: S,
         y: x,
         colorIdx: k.colorIdx
       }
     }),
-    d = u - a + 1,
-    h = i - s + 1;
-  if (!Number.isFinite(d) || !Number.isFinite(h) || d <= 0 || h <= 0) throw new Error("Failed to compute image bounds for auto painter payload.");
-  const m = new Uint8ClampedArray(d * h * 4);
+    d = i - a + 1,
+    g = u - s + 1;
+  if (!Number.isFinite(d) || !Number.isFinite(g) || d <= 0 || g <= 0) throw new Error("Failed to compute image bounds for auto painter payload.");
+  const m = new Uint8ClampedArray(d * g * 4);
   for (const {
       x: k,
       y: S,
       colorIdx: x
     }
     of l) {
-    const se = (A = re.colors) == null ? void 0 : A[x];
+    const se = (I = re.colors) == null ? void 0 : I[x];
     if (!se) throw new Error(`Unknown palette color index: ${x}`);
     const Te = k - a,
       H = ((S - s) * d + Te) * 4,
@@ -3208,7 +3291,7 @@ function el(n) {
   return {
     data: m,
     width: d,
-    height: h,
+    height: g,
     offsetX: a,
     offsetY: s,
     season: t
@@ -3222,12 +3305,12 @@ async function tl(n) {
   return r.data.set(n.data), e.putImageData(r, 0, 0), "convertToBlob" in t ? t.convertToBlob({
     type: "image/png"
   }) : new Promise((a, s) => {
-    t.toBlob(u => {
-      if (!u) {
+    t.toBlob(i => {
+      if (!i) {
         s(new Error("Failed to encode auto painter bitmap."));
         return
       }
-      a(u)
+      a(i)
     }, "image/png")
   })
 }
@@ -3247,13 +3330,13 @@ let Q = new Qd(me),
 function xl() {
   const n = ke("2025-09_pawtect");
   if (!n) throw new Error("pawtect experiment not found on load");
-  n.variant !== "disabled" && (ae || I.data && be(Re).then(rl).catch(t => {
+  n.variant !== "disabled" && (ae || P.data && be(Re).then(rl).catch(t => {
     xe = t, De(t)
   }))
 }
 
 function rl() {
-  Nd(I.data.id), Q.postPawtectLoad();
+  qd(P.data.id), Q.postPawtectLoad();
   const n = fetch;
   Object.assign(window, {
     fetch: Ee((t, e) => {
@@ -3282,5 +3365,5 @@ function El(n, t, e) {
   return Ee(r)
 }
 export {
-  bl as A, Se as C, yl as P, vl as S, re as a, Q as b, o as c, wl as d, Sr as e, Xt as f, Hr as g, ua as h, va as i, b as j, ll as k, _l as l, po as m, ml as n, xl as o, El as p, hl as q, kl as r, gl as s, he as t, I as u, Qi as v, pl as w, fl as x, gd as y, Sl as z
+  yl as A, Se as C, bl as P, re as S, Q as a, vl as b, o as c, wl as d, Sr as e, Xt as f, Hr as g, ua as h, va as i, b as j, ll as k, _l as l, po as m, ml as n, xl as o, El as p, hl as q, kl as r, gl as s, he as t, P as u, Qi as v, pl as w, fl as x, gd as y, Sl as z
 };

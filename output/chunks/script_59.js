@@ -1,37 +1,37 @@
 import {
   g as t
-} from "./CCwyOsrP.js";
+} from "./BfjUzAZv.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "845cd245f9645ae957e3eeb4920045ede245aa3a"
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "358b627090e665fa84c80454e90310d86dcaf84d"
     }
   } catch {}
 })();
 try {
   (function() {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      r = new n.Error().stack;
-    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "ce125a4d-45c0-48a4-bfc6-e93640e57cc3", n._sentryDebugIdIdentifier = "sentry-dbid-ce125a4d-45c0-48a4-bfc6-e93640e57cc3")
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      n = new r.Error().stack;
+    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "2a1b64cf-3a6b-4638-b7b1-7dfa0bc62766", r._sentryDebugIdIdentifier = "sentry-dbid-2a1b64cf-3a6b-4638-b7b1-7dfa0bc62766")
   })()
 } catch {}
-const a = () => "Appeals",
-  s = () => "Apelos",
-  o = () => "申诉",
-  p = () => "Einsprüche",
-  u = () => "Apelaciones",
-  c = () => "Recours",
-  i = () => "Ricorsi",
-  l = () => "異議申立て",
-  f = () => "Odwołania",
-  d = () => "Апелляции",
-  _ = () => "Апеляції",
-  b = () => "Các kháng cáo",
-  y = (n = {}, r = {}) => {
-    const e = r.locale ?? t();
-    return e === "en" ? a() : e === "pt" ? s() : e === "ch" ? o() : e === "de" ? p() : e === "es" ? u() : e === "fr" ? c() : e === "it" ? i() : e === "jp" ? l() : e === "pl" ? f() : e === "ru" ? d() : e === "uk" ? _() : b()
+const d = () => "Dashboard",
+  a = () => "Painel",
+  o = () => "控制台",
+  s = () => "Dashboard",
+  u = () => "Panel",
+  f = () => "Tableau de bord",
+  b = () => "Pannello",
+  i = () => "ダッシュボード",
+  l = () => "Panel",
+  c = () => "Панель",
+  h = () => "Панель",
+  p = () => "Bảng điều khiển",
+  g = (r = {}, n = {}) => {
+    const e = n.locale ?? t();
+    return e === "en" ? d() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? s() : e === "es" ? u() : e === "fr" ? f() : e === "it" ? b() : e === "jp" ? i() : e === "pl" ? l() : e === "ru" ? c() : e === "uk" ? h() : p()
   };
 export {
-  y as a
+  g as d
 };

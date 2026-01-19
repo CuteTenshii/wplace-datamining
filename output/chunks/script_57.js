@@ -1,37 +1,37 @@
 import {
-  g as t
-} from "./CCwyOsrP.js";
+  g as o
+} from "./BfjUzAZv.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "845cd245f9645ae957e3eeb4920045ede245aa3a"
+      id: "358b627090e665fa84c80454e90310d86dcaf84d"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "484aa75f-fcab-41a2-9e77-87c3b236cbd0", e._sentryDebugIdIdentifier = "sentry-dbid-484aa75f-fcab-41a2-9e77-87c3b236cbd0")
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "98b6700c-9ee7-4263-b75a-d4d75b76f7b6", e._sentryDebugIdIdentifier = "sentry-dbid-98b6700c-9ee7-4263-b75a-d4d75b76f7b6")
   })()
 } catch {}
-const o = () => "Confirm",
-  f = () => "Confirmar",
-  i = () => "确认",
-  c = () => "Bestätigen",
-  u = () => "Confirmar",
-  s = () => "Confirmer",
-  d = () => "Conferma",
-  a = () => "確認",
-  l = () => "Potwierdź",
-  b = () => "Подтвердить",
-  m = () => "Підтвердити",
-  p = () => "Xác nhận",
-  g = (e = {}, r = {}) => {
-    const n = r.locale ?? t();
-    return n === "en" ? o() : n === "pt" ? f() : n === "ch" ? i() : n === "de" ? c() : n === "es" ? u() : n === "fr" ? s() : n === "it" ? d() : n === "jp" ? a() : n === "pl" ? l() : n === "ru" ? b() : n === "uk" ? m() : p()
+const t = () => "Error loading",
+  i = () => "Erro ao carregar",
+  d = () => "加载出错",
+  a = () => "Fehler beim Laden",
+  l = () => "Error al cargar",
+  u = () => "Erreur lors du chargement",
+  f = () => "Errore nel caricamento",
+  s = () => "読み込みエラー",
+  c = () => "Błąd ładowania",
+  g = () => "Ошибка загрузки",
+  _ = () => "Помилка завантаження",
+  b = () => "Lỗi tải dữ liệu",
+  y = (e = {}, n = {}) => {
+    const r = n.locale ?? o();
+    return r === "en" ? t() : r === "pt" ? i() : r === "ch" ? d() : r === "de" ? a() : r === "es" ? l() : r === "fr" ? u() : r === "it" ? f() : r === "jp" ? s() : r === "pl" ? c() : r === "ru" ? g() : r === "uk" ? _() : b()
   };
 export {
-  g as c
+  y as e
 };
