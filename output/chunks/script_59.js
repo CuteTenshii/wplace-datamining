@@ -1,37 +1,37 @@
 import {
   g as t
-} from "./BfjUzAZv.js";
+} from "./lNmZA2C_.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "358b627090e665fa84c80454e90310d86dcaf84d"
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "0e0f1d9d12a0c5d9ef5f263afa770640948e8e71"
     }
   } catch {}
 })();
 try {
   (function() {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "2a1b64cf-3a6b-4638-b7b1-7dfa0bc62766", r._sentryDebugIdIdentifier = "sentry-dbid-2a1b64cf-3a6b-4638-b7b1-7dfa0bc62766")
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "d7259a40-c1c5-461e-be64-30d5de91a088", n._sentryDebugIdIdentifier = "sentry-dbid-d7259a40-c1c5-461e-be64-30d5de91a088")
   })()
 } catch {}
-const d = () => "Dashboard",
-  a = () => "Painel",
-  o = () => "控制台",
-  s = () => "Dashboard",
-  u = () => "Panel",
-  f = () => "Tableau de bord",
-  b = () => "Pannello",
-  i = () => "ダッシュボード",
-  l = () => "Panel",
-  c = () => "Панель",
-  h = () => "Панель",
-  p = () => "Bảng điều khiển",
-  g = (r = {}, n = {}) => {
-    const e = n.locale ?? t();
-    return e === "en" ? d() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? s() : e === "es" ? u() : e === "fr" ? f() : e === "it" ? b() : e === "jp" ? i() : e === "pl" ? l() : e === "ru" ? c() : e === "uk" ? h() : p()
+const l = () => "Alliances",
+  a = () => "Alianças",
+  i = () => "联盟",
+  s = () => "Allianzen",
+  c = () => "Alianzas",
+  o = () => "Alliances",
+  u = () => "Alleanze",
+  f = () => "アライアンス",
+  d = () => "Sojusze",
+  p = () => "Альянсы",
+  _ = () => "Альянси",
+  b = () => "Các liên minh",
+  g = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? l() : e === "pt" ? a() : e === "ch" ? i() : e === "de" ? s() : e === "es" ? c() : e === "fr" ? o() : e === "it" ? u() : e === "jp" ? f() : e === "pl" ? d() : e === "ru" ? p() : e === "uk" ? _() : b()
   };
 export {
-  g as d
+  g as a
 };

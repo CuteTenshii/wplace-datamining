@@ -14,28 +14,28 @@ var f = (n, t, e) => (Ne(n, t, "read from private field"), e ? e.call(n) : t.get
   w = (n, t, e) => t.has(n) ? oe("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(n) : t.set(n, e);
 import {
   g as _
-} from "./BfjUzAZv.js";
+} from "./lNmZA2C_.js";
 import {
   e as E,
   g as ie,
   j as y,
   i as v,
-  w as ue,
+  x as ue,
   u as N
-} from "./DcuED2r1.js";
+} from "./8X9bXL-a.js";
 import {
   P as me,
   g as ze
-} from "./4McVxkKC.js";
+} from "./CmkX6TYZ.js";
 import {
   s as Oe,
   c as De
-} from "./BsCzrKc6.js";
+} from "./CZxZ9WaG.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "358b627090e665fa84c80454e90310d86dcaf84d"
+      id: "0e0f1d9d12a0c5d9ef5f263afa770640948e8e71"
     }
   } catch {}
 })();
@@ -43,7 +43,7 @@ try {
   (function() {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       t = new n.Error().stack;
-    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "60e5b67d-33a8-470a-9700-4b84b577d96c", n._sentryDebugIdIdentifier = "sentry-dbid-60e5b67d-33a8-470a-9700-4b84b577d96c")
+    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "633839be-7730-4326-b564-4c50e483ed6a", n._sentryDebugIdIdentifier = "sentry-dbid-633839be-7730-4326-b564-4c50e483ed6a")
   })()
 } catch {}
 
@@ -1774,6 +1774,9 @@ const gl = {
       },
       banAppeals: {
         see: "staff.dashboard.ban_appeals.see"
+      },
+      kpi: {
+        tickets: "staff.dashboard.kpi.tickets"
       }
     },
     tickets: {
@@ -3246,6 +3249,16 @@ class Qd {
     if (r.status !== 200) throw new Error("Failed to fetch wayback reconstruct image");
     return r.blob()
   }
+  async getTicketsKpi(t) {
+    const e = new URLSearchParams;
+    e.set("start", t.startIso), e.set("end", t.endIso), t.compare && e.set("compare", "1"), t.userId != null && e.set("userId", String(t.userId)), t.allianceId != null && e.set("allianceId", String(t.allianceId)), t.reason != null && e.set("reason", t.reason), t.punishment != null && e.set("punishment", t.punishment), t.granularity != null && e.set("granularity", t.granularity);
+    const r = await this.request(`/staff/dashboard/kpi/tickets?${e.toString()}`, {
+      method: "GET",
+      credentials: "include"
+    });
+    if (r.status !== 200) throw new c(o(), r.status);
+    return r.json()
+  }
 }
 W = new WeakMap;
 
@@ -3365,5 +3378,5 @@ function El(n, t, e) {
   return Ee(r)
 }
 export {
-  yl as A, Se as C, bl as P, re as S, Q as a, vl as b, o as c, wl as d, Sr as e, Xt as f, Hr as g, ua as h, va as i, b as j, ll as k, _l as l, po as m, ml as n, xl as o, El as p, hl as q, kl as r, gl as s, he as t, P as u, Qi as v, pl as w, fl as x, gd as y, Sl as z
+  Oc as $, Bn as A, Zn as B, Se as C, dr as D, Cr as E, Id as F, Oa as G, Wa as H, le as I, ws as J, qs as K, T as L, no as M, Po as N, Ro as O, bl as P, ti as Q, mi as R, re as S, Ai as T, Li as U, Qi as V, xu as W, Mu as X, Yu as Y, A as Z, vc as _, Q as a, ne as a0, _e as a1, gd as a2, kl as a3, pl as a4, fl as a5, Sl as a6, yl as a7, gl as b, Xt as c, Sr as d, o as e, vl as f, Hr as g, ua as h, va as i, hl as j, b as k, ll as l, po as m, _l as n, ml as o, xl as p, El as q, de as r, wl as s, he as t, P as u, ft as v, Tt as w, $t as x, _n as y, En as z
 };

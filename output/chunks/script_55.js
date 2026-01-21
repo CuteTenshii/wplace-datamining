@@ -1,37 +1,64 @@
-import {
-  g as a
-} from "./BfjUzAZv.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "358b627090e665fa84c80454e90310d86dcaf84d"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "0e0f1d9d12a0c5d9ef5f263afa770640948e8e71"
     }
   } catch {}
 })();
 try {
   (function() {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      r = new n.Error().stack;
-    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "0d37c3d9-ec60-4f81-8244-71c5305fe21f", n._sentryDebugIdIdentifier = "sentry-dbid-0d37c3d9-ec60-4f81-8244-71c5305fe21f")
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "318a9da5-f9ae-41c4-a6ad-1557223c6f66", e._sentryDebugIdIdentifier = "sentry-dbid-318a9da5-f9ae-41c4-a6ad-1557223c6f66")
   })()
 } catch {}
-const t = () => "Ban appeal",
-  o = () => "Revisão de banimento",
-  p = () => "封禁申诉",
-  i = () => "Bann-Einspruch",
-  f = () => "Apelación de ban",
-  u = () => "Recours de bannissement",
-  l = () => "Ricorso contro il ban",
-  d = () => "BANの異議申立て",
-  s = () => "Odwołanie od bana",
-  c = () => "Апелляция на бан",
-  b = () => "Апеляція на бан",
-  _ = () => "Kháng cáo lệnh cấm",
-  y = (n = {}, r = {}) => {
-    const e = r.locale ?? a();
-    return e === "en" ? t() : e === "pt" ? o() : e === "ch" ? p() : e === "de" ? i() : e === "es" ? f() : e === "fr" ? u() : e === "it" ? l() : e === "jp" ? d() : e === "pl" ? s() : e === "ru" ? c() : e === "uk" ? b() : _()
-  };
+const b = e => e;
+
+function h(e) {
+  const t = e - 1;
+  return t * t * t + 1
+}
+
+function w(e, {
+  delay: t = 0,
+  duration: i = 400,
+  easing: s = b
+} = {}) {
+  const r = +getComputedStyle(e).opacity;
+  return {
+    delay: t,
+    duration: i,
+    easing: s,
+    css: n => `opacity: ${n*r}`
+  }
+}
+
+function m(e, {
+  delay: t = 0,
+  duration: i = 400,
+  easing: s = h,
+  axis: r = "y"
+} = {}) {
+  const n = getComputedStyle(e),
+    c = +n.opacity,
+    p = r === "y" ? "height" : "width",
+    l = parseFloat(n[p]),
+    o = r === "y" ? ["top", "bottom"] : ["left", "right"],
+    d = o.map(a => `${a[0].toUpperCase()}${a.slice(1)}`),
+    f = parseFloat(n[`padding${d[0]}`]),
+    y = parseFloat(n[`padding${d[1]}`]),
+    u = parseFloat(n[`margin${d[0]}`]),
+    g = parseFloat(n[`margin${d[1]}`]),
+    _ = parseFloat(n[`border${d[0]}Width`]),
+    $ = parseFloat(n[`border${d[1]}Width`]);
+  return {
+    delay: t,
+    duration: i,
+    easing: s,
+    css: a => `overflow: hidden;opacity: ${Math.min(a*20,1)*c};${p}: ${a*l}px;padding-${o[0]}: ${a*f}px;padding-${o[1]}: ${a*y}px;margin-${o[0]}: ${a*u}px;margin-${o[1]}: ${a*g}px;border-${o[0]}-width: ${a*_}px;border-${o[1]}-width: ${a*$}px;min-${p}: 0`
+  }
+}
 export {
-  y as b
+  w as f, m as s
 };

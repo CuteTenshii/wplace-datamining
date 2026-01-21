@@ -1,41 +1,37 @@
-import "./Dzr0zEgr.js";
 import {
-  o as f,
-  b as d
-} from "./DcuED2r1.js";
-import {
-  b as r
-} from "./DqnGd6Ri.js";
-import {
-  r as s
-} from "./CVvyswV1.js";
+  g as o
+} from "./lNmZA2C_.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "358b627090e665fa84c80454e90310d86dcaf84d"
+      id: "0e0f1d9d12a0c5d9ef5f263afa770640948e8e71"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "7b8117f3-7404-41cd-b03c-135b4ad6387b", e._sentryDebugIdIdentifier = "sentry-dbid-7b8117f3-7404-41cd-b03c-135b4ad6387b")
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "0ea7cc9d-2ea5-4af5-a99a-39bddccfd536", e._sentryDebugIdIdentifier = "sentry-dbid-0ea7cc9d-2ea5-4af5-a99a-39bddccfd536")
   })()
 } catch {}
-var i = f('<svg><path d="M790-56 414-434q-47 11-87.5 33T254-346l-84-86q32-32 69-56t79-42l-90-90q-41 21-76.5 46.5T84-516L0-602q32-32 66.5-57.5T140-708l-84-84 56-56 736 736-58 56Zm-310-64q-42 0-71-29.5T380-220q0-42 29-71t71-29q42 0 71 29t29 71q0 41-29 70.5T480-120Zm236-238-29-29-29-29-144-144q81 8 151.5 41T790-432l-74 74Zm160-158q-77-77-178.5-120.5T480-680q-21 0-40.5 1.5T400-674L298-776q44-12 89.5-18t92.5-6q142 0 265 53t215 145l-84 86Z"></path></svg>');
-
-function g(e, t) {
-  let n = s(t, ["$$slots", "$$events", "$$legacy"]);
-  var o = i();
-  r(o, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...n
-  })), d(e, o)
-}
+const t = () => "Error loading",
+  d = () => "Erro ao carregar",
+  a = () => "加载出错",
+  i = () => "Fehler beim Laden",
+  l = () => "Error al cargar",
+  u = () => "Erreur lors du chargement",
+  f = () => "Errore nel caricamento",
+  c = () => "読み込みエラー",
+  s = () => "Błąd ładowania",
+  g = () => "Ошибка загрузки",
+  _ = () => "Помилка завантаження",
+  p = () => "Lỗi tải dữ liệu",
+  y = (e = {}, n = {}) => {
+    const r = n.locale ?? o();
+    return r === "en" ? t() : r === "pt" ? d() : r === "ch" ? a() : r === "de" ? i() : r === "es" ? l() : r === "fr" ? u() : r === "it" ? f() : r === "jp" ? c() : r === "pl" ? s() : r === "ru" ? g() : r === "uk" ? _() : p()
+  };
 export {
-  g as W
+  y as e
 };

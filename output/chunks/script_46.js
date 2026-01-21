@@ -1,64 +1,35 @@
+import {
+  D as t,
+  m as i,
+  k as s,
+  l as r,
+  B as l
+} from "./8X9bXL-a.js";
 (function() {
   try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
-      id: "358b627090e665fa84c80454e90310d86dcaf84d"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "0e0f1d9d12a0c5d9ef5f263afa770640948e8e71"
     }
   } catch {}
 })();
 try {
   (function() {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "3165cf74-2c30-440d-8753-7217d3d69437", t._sentryDebugIdIdentifier = "sentry-dbid-3165cf74-2c30-440d-8753-7217d3d69437")
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "c10412f6-3506-46ad-95cb-92bc4c89dd7c", e._sentryDebugIdIdentifier = "sentry-dbid-c10412f6-3506-46ad-95cb-92bc4c89dd7c")
   })()
 } catch {}
 
-function z(t) {
-  const e = t - 1;
-  return e * e * e + 1
-}
-
-function D(t, {
-  from: e,
-  to: r
-}, c = {}) {
-  var {
-    delay: h = 0,
-    duration: i = n => Math.sqrt(n) * 120,
-    easing: y = z
-  } = c, d = getComputedStyle(t), g = d.transform === "none" ? "" : d.transform, [f, o] = d.transformOrigin.split(" ").map(parseFloat);
-  f /= t.clientWidth, o /= t.clientHeight;
-  var u = C(t),
-    v = t.clientWidth / r.width / u,
-    p = t.clientHeight / r.height / u,
-    b = e.left + e.width * f,
-    w = e.top + e.height * o,
-    x = r.left + r.width * f,
-    m = r.top + r.height * o,
-    s = (b - x) * v,
-    l = (w - m) * p,
-    S = e.width / r.width,
-    E = e.height / r.height;
-  return {
-    delay: h,
-    duration: typeof i == "function" ? i(Math.sqrt(s * s + l * l)) : i,
-    easing: y,
-    css: (n, a) => {
-      var _ = a * s,
-        I = a * l,
-        T = n + a * S,
-        $ = n + a * E;
-      return `transform: ${g} translate(${_}px, ${I}px) scale(${T}, ${$});`
-    }
-  }
-}
-
-function C(t) {
-  if ("currentCSSZoom" in t) return t.currentCSSZoom;
-  for (var e = t, r = 1; e !== null;) r *= +getComputedStyle(e).zoom, e = e.parentElement;
-  return r
+function y(e, n, a) {
+  s && r();
+  var f = new l(e),
+    o = !t();
+  i(() => {
+    var d = n();
+    o && d !== null && typeof d == "object" && (d = {}), f.ensure(d, a)
+  })
 }
 export {
-  D as f
+  y as k
 };

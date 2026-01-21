@@ -1,96 +1,77 @@
+import "./NJ1wl9Ag.js";
 import {
-  g as l
-} from "./BfjUzAZv.js";
-import "./Dzr0zEgr.js";
+  A as r,
+  b as n
+} from "./8X9bXL-a.js";
 import {
-  o,
-  b as d
-} from "./DcuED2r1.js";
+  d as l
+} from "./dddymV92.js";
 import {
-  b as s
-} from "./DqnGd6Ri.js";
-import {
-  r as i
-} from "./CVvyswV1.js";
+  r as a
+} from "./CFd8M3Ff.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "358b627090e665fa84c80454e90310d86dcaf84d"
+      id: "0e0f1d9d12a0c5d9ef5f263afa770640948e8e71"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "b0f53e1f-2cae-4743-8564-d061a10631f6", e._sentryDebugIdIdentifier = "sentry-dbid-b0f53e1f-2cae-4743-8564-d061a10631f6")
+      o = new e.Error().stack;
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "bf083e81-69eb-459c-8271-1127bbeb1f73", e._sentryDebugIdIdentifier = "sentry-dbid-bf083e81-69eb-459c-8271-1127bbeb1f73")
   })()
 } catch {}
-const f = () => "Reddit",
-  a = () => "Reddit",
-  u = () => "Reddit",
-  c = () => "Reddit",
-  p = () => "Reddit",
-  g = () => "Reddit",
-  v = () => "Reddit",
-  w = () => "Reddit",
-  $ = () => "Reddit",
-  h = () => "Reddit",
-  _ = () => "Reddit",
-  b = () => "Reddit",
-  E = (e = {}, r = {}) => {
-    const t = r.locale ?? l();
-    return t === "en" ? f() : t === "pt" ? a() : t === "ch" ? u() : t === "de" ? c() : t === "es" ? p() : t === "fr" ? g() : t === "it" ? v() : t === "jp" ? w() : t === "pl" ? $() : t === "ru" ? h() : t === "uk" ? _() : b()
-  };
-var y = o('<svg><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path></svg>');
+var f = r('<svg><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path></svg>');
 
-function M(e, r) {
-  let t = i(r, ["$$slots", "$$events", "$$legacy"]);
-  var n = y();
-  s(n, () => ({
+function $(e, o) {
+  let s = a(o, ["$$slots", "$$events", "$$legacy"]);
+  var t = f();
+  l(t, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
-    ...t
-  })), d(e, n)
+    ...s
+  })), n(e, t)
 }
-var m = o('<svg><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"></path></svg>');
+var d = r('<svg><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"></path></svg>');
 
-function B(e, r) {
-  let t = i(r, ["$$slots", "$$events", "$$legacy"]);
-  var n = m();
-  s(n, () => ({
+function b(e, o) {
+  let s = a(o, ["$$slots", "$$events", "$$legacy"]);
+  var t = d();
+  l(t, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
-    ...t
-  })), d(e, n)
+    ...s
+  })), n(e, t)
 }
-var R = o('<svg><path d="m356-160-56-56 180-180 180 180-56 56-124-124-124 124Zm124-404L300-744l56-56 124 124 124-124 56 56-180 180Z"></path></svg>');
+var i = r('<svg><path d="m356-160-56-56 180-180 180 180-56 56-124-124-124 124Zm124-404L300-744l56-56 124 124 124-124 56 56-180 180Z"></path></svg>');
 
-function D(e, r) {
-  let t = i(r, ["$$slots", "$$events", "$$legacy"]);
-  var n = R();
-  s(n, () => ({
+function u(e, o) {
+  let s = a(o, ["$$slots", "$$events", "$$legacy"]);
+  var t = i();
+  l(t, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
-    ...t
-  })), d(e, n)
+    ...s
+  })), n(e, t)
 }
-var T = o('<svg><path d="M480-120 300-300l58-58 122 122 122-122 58 58-180 180ZM358-598l-58-58 180-180 180 180-58 58-122-122-122 122Z"></path></svg>');
+var g = r('<svg><path d="M480-120 300-300l58-58 122 122 122-122 58 58-180 180ZM358-598l-58-58 180-180 180 180-58 58-122-122-122 122Z"></path></svg>');
 
-function L(e, r) {
-  let t = i(r, ["$$slots", "$$events", "$$legacy"]);
-  var n = T();
-  s(n, () => ({
+function h(e, o) {
+  let s = a(o, ["$$slots", "$$events", "$$legacy"]);
+  var t = g();
+  l(t, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
-    ...t
-  })), d(e, n)
+    ...s
+  })), n(e, t)
 }
 export {
-  M as C, B as S, D as U, L as a, E as r
+  $ as C, b as S, u as U, h as a
 };

@@ -1,37 +1,79 @@
+import "./NJ1wl9Ag.js";
 import {
-  g as t
-} from "./BfjUzAZv.js";
+  p as m,
+  f as c,
+  t as A,
+  b as f,
+  c as b,
+  s as v,
+  d as w,
+  r as y
+} from "./8X9bXL-a.js";
+import {
+  i as h
+} from "./DX5d1P7w.js";
+import {
+  d as _,
+  a as r,
+  s as x
+} from "./dddymV92.js";
+import {
+  p as E,
+  r as T
+} from "./CFd8M3Ff.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "358b627090e665fa84c80454e90310d86dcaf84d"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "0e0f1d9d12a0c5d9ef5f263afa770640948e8e71"
     }
   } catch {}
 })();
 try {
   (function() {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      r = new n.Error().stack;
-    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "2286b3af-f8a0-4989-8e2f-205215de8c3c", n._sentryDebugIdIdentifier = "sentry-dbid-2286b3af-f8a0-4989-8e2f-205215de8c3c")
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "82990726-5c36-46a4-b780-d2c097458fc5", e._sentryDebugIdIdentifier = "sentry-dbid-82990726-5c36-46a4-b780-d2c097458fc5")
   })()
 } catch {}
-const a = () => "Appeals",
-  s = () => "Apelos",
-  o = () => "申诉",
-  p = () => "Einsprüche",
-  f = () => "Apelaciones",
-  u = () => "Recours",
-  i = () => "Ricorsi",
-  l = () => "異議申立て",
-  c = () => "Odwołania",
-  d = () => "Апелляции",
-  _ = () => "Апеляції",
-  b = () => "Các kháng cáo",
-  y = (n = {}, r = {}) => {
-    const e = r.locale ?? t();
-    return e === "en" ? a() : e === "pt" ? s() : e === "ch" ? o() : e === "de" ? p() : e === "es" ? f() : e === "fr" ? u() : e === "it" ? i() : e === "jp" ? l() : e === "pl" ? c() : e === "ru" ? d() : e === "uk" ? _() : b()
-  };
+const S = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
+var B = c("<span>wplace</span>"),
+  L = c('<div><img alt="Wplace logo"/> <!></div>');
+
+function D(e, t) {
+  m(t, !0);
+  let a = E(t, "size", 3, "default"),
+    p = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+  var s = L();
+  _(s, () => ({
+    ...p,
+    class: `flex items-center gap-1.5 ${t.class??""}`
+  }));
+  var l = w(s);
+  let i;
+  var u = v(l, 2);
+  {
+    var g = o => {
+      var n = B();
+      let d;
+      A(() => d = r(n, 1, "text-base-content font-pixel", null, d, {
+        "text-4xl": a() === "default",
+        "text-5xl": a() === "lg" || a() === "medium"
+      })), f(o, n)
+    };
+    h(u, o => {
+      t.hasText && o(g)
+    })
+  }
+  y(s), A(() => {
+    i = r(l, 1, "pixelated h-auto shrink-0", null, i, {
+      "w-4": a() === "small",
+      "w-10": a() === "default",
+      "w-16": a() === "medium",
+      "w-20": a() === "lg"
+    }), x(l, "src", S)
+  }), f(e, s), b()
+}
 export {
-  y as a
+  D as L
 };

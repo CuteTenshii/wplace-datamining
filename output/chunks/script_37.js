@@ -1,76 +1,117 @@
 import {
-  g as i
-} from "./BfjUzAZv.js";
-import "./Dzr0zEgr.js";
-import {
-  o as s,
-  b as o
-} from "./DcuED2r1.js";
-import {
-  b as p
-} from "./DqnGd6Ri.js";
-import {
-  r as c
-} from "./CVvyswV1.js";
+  g as n
+} from "./lNmZA2C_.js";
 (function() {
   try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
-      id: "358b627090e665fa84c80454e90310d86dcaf84d"
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "0e0f1d9d12a0c5d9ef5f263afa770640948e8e71"
     }
   } catch {}
 })();
 try {
   (function() {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new t.Error().stack;
-    n && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[n] = "f57298f7-dd5c-439c-9366-5674d2d18e24", t._sentryDebugIdIdentifier = "sentry-dbid-f57298f7-dd5c-439c-9366-5674d2d18e24")
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      t = new r.Error().stack;
+    t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "94fcf748-b1ce-4545-9469-518c73c2a628", r._sentryDebugIdIdentifier = "sentry-dbid-94fcf748-b1ce-4545-9469-518c73c2a628")
   })()
 } catch {}
-const d = () => "Description",
-  u = () => "Descrição",
-  f = () => "描述",
-  l = () => "Beschreibung",
-  a = () => "Descripción",
-  _ = () => "Description",
-  x = () => "Descrizione",
-  g = () => "説明",
-  b = () => "Opis",
-  y = () => "Описание",
-  w = () => "Опис",
-  h = () => "Mô tả",
-  z = (t = {}, n = {}) => {
-    const e = n.locale ?? i();
-    return e === "en" ? d() : e === "pt" ? u() : e === "ch" ? f() : e === "de" ? l() : e === "es" ? a() : e === "fr" ? _() : e === "it" ? x() : e === "jp" ? g() : e === "pl" ? b() : e === "ru" ? y() : e === "uk" ? w() : h()
+const c = () => "Extra context on what happened (required)",
+  o = () => "Mais informações sobre o que aconteceu (obrigatório)",
+  i = () => "请提供发生情况的额外背景（必填）",
+  a = () => "Zusätzliche Informationen zum Vorfall (erforderlich)",
+  u = () => "Más contexto sobre lo que ocurrió (obligatorio)",
+  s = () => "Contexte supplémentaire sur ce qui s’est passé (obligatoire)",
+  _ = () => "Maggiori informazioni su ciò che è successo (obbligatorio)",
+  f = () => "何が起きたかの詳細な説明（必須）",
+  l = () => "Dodatkowy kontekst tego, co się stało (wymagane)",
+  h = () => "Дополнительный контекст о произошедшем (обязательно)",
+  d = () => "Додаткова інформація про те, що сталося (обовʼязково)",
+  m = () => "Thêm ngữ cảnh về chuyện đã xảy ra (bắt buộc)",
+  kr = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? c() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? a() : e === "es" ? u() : e === "fr" ? s() : e === "it" ? _() : e === "jp" ? f() : e === "pl" ? l() : e === "ru" ? h() : e === "uk" ? d() : m()
   },
-  m = () => "Pixels painted",
-  v = () => "Pixels pintados",
-  T = () => "已绘制像素数",
-  D = () => "Gemalte Pixel",
-  P = () => "Píxeles pintados",
-  q = () => "Pixels peints",
-  k = () => "Pixel dipinti",
-  I = () => "塗られたピクセル数",
-  $ = () => "Pomalowane piksele",
-  E = () => "Нарисованные пиксели",
-  j = () => "Намальовані пікселі",
-  L = () => "Pixel đã tô",
-  A = (t = {}, n = {}) => {
-    const e = n.locale ?? i();
-    return e === "en" ? m() : e === "pt" ? v() : e === "ch" ? T() : e === "de" ? D() : e === "es" ? P() : e === "fr" ? q() : e === "it" ? k() : e === "jp" ? I() : e === "pl" ? $() : e === "ru" ? E() : e === "uk" ? j() : L()
+  x = r => `Max. characters: ${r.max}`,
+  g = r => `Máximo de caracteres: ${r.max}`,
+  p = r => `最大字符数：${r.max}`,
+  b = r => `Max. Zeichen: ${r.max}`,
+  v = r => `Máx. de caracteres: ${r.max}`,
+  $ = r => `Max. de caractères : ${r.max}`,
+  y = r => `Numero massimo di caratteri: ${r.max}`,
+  k = r => `最大文字数: ${r.max}`,
+  q = r => `Maks. znaków: ${r.max}`,
+  w = r => `Макс. символов: ${r.max}`,
+  M = r => `Макс. символів: ${r.max}`,
+  j = r => `Số ký tự tối đa: ${r.max}`,
+  qr = (r, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? x(r) : e === "pt" ? g(r) : e === "ch" ? p(r) : e === "de" ? b(r) : e === "es" ? v(r) : e === "fr" ? $(r) : e === "it" ? y(r) : e === "jp" ? k(r) : e === "pl" ? q(r) : e === "ru" ? w(r) : e === "uk" ? M(r) : j(r)
+  },
+  S = r => `Min. characters: ${r.min}`,
+  z = r => `Mínimo de caracteres: ${r.min}`,
+  E = r => `最少字符数：${r.min}`,
+  I = r => `Min. Zeichen: ${r.min}`,
+  O = r => `Mín. de caracteres: ${r.min}`,
+  T = r => `Min. de caractères : ${r.min}`,
+  D = r => `Numero minimo di caratteri: ${r.min}`,
+  A = r => `最小文字数: ${r.min}`,
+  N = r => `Min. znaków: ${r.min}`,
+  R = r => `Мин. символов: ${r.min}`,
+  Z = r => `Мін. символів: ${r.min}`,
+  C = r => `Số ký tự tối thiểu: ${r.min}`,
+  wr = (r, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? S(r) : e === "pt" ? z(r) : e === "ch" ? E(r) : e === "de" ? I(r) : e === "es" ? O(r) : e === "fr" ? T(r) : e === "it" ? D(r) : e === "jp" ? A(r) : e === "pl" ? N(r) : e === "ru" ? R(r) : e === "uk" ? Z(r) : C(r)
+  },
+  G = () => "Other",
+  L = () => "Outro motivo",
+  W = () => "其他",
+  B = () => "Anderer Grund",
+  K = () => "Otro",
+  V = () => "Autre raison",
+  Y = () => "Altro motivo",
+  F = () => "その他",
+  H = () => "Inny powód",
+  J = () => "Другое",
+  P = () => "Інше",
+  Q = () => "Khác",
+  Mr = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? G() : e === "pt" ? L() : e === "ch" ? W() : e === "de" ? B() : e === "es" ? K() : e === "fr" ? V() : e === "it" ? Y() : e === "jp" ? F() : e === "pl" ? H() : e === "ru" ? J() : e === "uk" ? P() : Q()
+  },
+  U = () => "Required",
+  X = () => "Obrigatório",
+  rr = () => "必填",
+  er = () => "Erforderlich",
+  tr = () => "Obligatorio",
+  nr = () => "Obligatoire",
+  cr = () => "Obbligatorio",
+  or = () => "必須",
+  ir = () => "Wymagane",
+  ar = () => "Обязательно",
+  ur = () => "Обовʼязково",
+  sr = () => "Bắt buộc",
+  jr = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? U() : e === "pt" ? X() : e === "ch" ? rr() : e === "de" ? er() : e === "es" ? tr() : e === "fr" ? nr() : e === "it" ? cr() : e === "jp" ? or() : e === "pl" ? ir() : e === "ru" ? ar() : e === "uk" ? ur() : sr()
+  },
+  _r = () => "Select the reason",
+  fr = () => "Selecione o motivo",
+  lr = () => "选择原因",
+  hr = () => "Grund auswählen",
+  dr = () => "Selecciona el motivo",
+  mr = () => "Sélectionnez la raison",
+  xr = () => "Seleziona il motivo",
+  gr = () => "理由を選択",
+  pr = () => "Wybierz powód",
+  br = () => "Выберите причину",
+  vr = () => "Виберіть причину",
+  $r = () => "Chọn lý do",
+  Sr = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? _r() : e === "pt" ? fr() : e === "ch" ? lr() : e === "de" ? hr() : e === "es" ? dr() : e === "fr" ? mr() : e === "it" ? xr() : e === "jp" ? gr() : e === "pl" ? pr() : e === "ru" ? br() : e === "uk" ? vr() : $r()
   };
-var B = s('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
-
-function C(t, n) {
-  let e = c(n, ["$$slots", "$$events", "$$legacy"]);
-  var r = B();
-  p(r, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...e
-  })), o(t, r)
-}
 export {
-  C as L, z as d, A as p
+  qr as a, kr as g, wr as m, Mr as o, jr as r, Sr as s
 };

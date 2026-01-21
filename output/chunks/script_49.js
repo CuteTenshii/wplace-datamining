@@ -1,36 +1,36 @@
 import {
   g as t
-} from "./BfjUzAZv.js";
+} from "./lNmZA2C_.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "358b627090e665fa84c80454e90310d86dcaf84d"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "0e0f1d9d12a0c5d9ef5f263afa770640948e8e71"
     }
   } catch {}
 })();
 try {
   (function() {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "efeb4788-30e8-4007-afe1-36e7912acf69", r._sentryDebugIdIdentifier = "sentry-dbid-efeb4788-30e8-4007-afe1-36e7912acf69")
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "e3adb9f0-cb18-41f3-8576-b659a72798fa", e._sentryDebugIdIdentifier = "sentry-dbid-e3adb9f0-cb18-41f3-8576-b659a72798fa")
   })()
 } catch {}
-const s = () => "Users",
-  u = () => "Usuários",
-  o = () => "用户",
-  f = () => "Benutzer",
-  i = () => "Usuarios",
-  d = () => "Utilisateurs",
-  c = () => "Utenti",
-  l = () => "ユーザー",
-  a = () => "Użytkownicy",
-  p = () => "Пользователи",
-  y = () => "Користувачі",
-  _ = () => "Người dùng",
-  g = (r = {}, n = {}) => {
-    const e = n.locale ?? t();
-    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? f() : e === "es" ? i() : e === "fr" ? d() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? p() : e === "uk" ? y() : _()
+const u = () => "Unban",
+  a = () => "Desbanir",
+  f = () => "解封",
+  o = () => "Entbannen",
+  i = () => "Desbanear",
+  b = () => "Débannir",
+  s = () => "Unban",
+  d = () => "BANを解除",
+  c = () => "Odbanuj",
+  l = () => "Разбанить",
+  p = () => "Розбанити",
+  _ = () => "Gỡ cấm",
+  g = (e = {}, r = {}) => {
+    const n = r.locale ?? t();
+    return n === "en" ? u() : n === "pt" ? a() : n === "ch" ? f() : n === "de" ? o() : n === "es" ? i() : n === "fr" ? b() : n === "it" ? s() : n === "jp" ? d() : n === "pl" ? c() : n === "ru" ? l() : n === "uk" ? p() : _()
   };
 export {
   g as u

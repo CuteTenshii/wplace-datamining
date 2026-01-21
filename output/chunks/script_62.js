@@ -1,41 +1,37 @@
-import "./Dzr0zEgr.js";
 import {
-  o as d,
-  b as f
-} from "./DcuED2r1.js";
-import {
-  b as r
-} from "./DqnGd6Ri.js";
-import {
-  r as s
-} from "./CVvyswV1.js";
+  g as r
+} from "./lNmZA2C_.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "358b627090e665fa84c80454e90310d86dcaf84d"
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "0e0f1d9d12a0c5d9ef5f263afa770640948e8e71"
     }
   } catch {}
 })();
 try {
   (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      o = new e.Error().stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "a63e53ba-db27-416f-9b51-c055df4235ce", e._sentryDebugIdIdentifier = "sentry-dbid-a63e53ba-db27-416f-9b51-c055df4235ce")
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      a = new n.Error().stack;
+    a && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[a] = "fe83abd1-5077-4cc1-8f46-ccf36b0aea9c", n._sentryDebugIdIdentifier = "sentry-dbid-fe83abd1-5077-4cc1-8f46-ccf36b0aea9c")
   })()
 } catch {}
-var a = d('<svg><path d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"></path></svg>');
-
-function c(e, o) {
-  let n = s(o, ["$$slots", "$$events", "$$legacy"]);
-  var t = a();
-  r(t, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...n
-  })), f(e, t)
-}
+const t = () => "Ban appeal",
+  o = () => "Revisão de banimento",
+  f = () => "封禁申诉",
+  p = () => "Bann-Einspruch",
+  i = () => "Apelación de ban",
+  u = () => "Recours de bannissement",
+  c = () => "Ricorso contro il ban",
+  l = () => "BANの異議申立て",
+  s = () => "Odwołanie od bana",
+  d = () => "Апелляция на бан",
+  b = () => "Апеляція на бан",
+  _ = () => "Kháng cáo lệnh cấm",
+  y = (n = {}, a = {}) => {
+    const e = a.locale ?? r();
+    return e === "en" ? t() : e === "pt" ? o() : e === "ch" ? f() : e === "de" ? p() : e === "es" ? i() : e === "fr" ? u() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? s() : e === "ru" ? d() : e === "uk" ? b() : _()
+  };
 export {
-  c as C
+  y as b
 };

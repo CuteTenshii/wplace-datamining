@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./BfjUzAZv.js";
+} from "./lNmZA2C_.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "358b627090e665fa84c80454e90310d86dcaf84d"
+      id: "0e0f1d9d12a0c5d9ef5f263afa770640948e8e71"
     }
   } catch {}
 })();
@@ -13,25 +13,25 @@ try {
   (function() {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "30a9209d-2079-44c4-8f8d-d1c5f5293581", r._sentryDebugIdIdentifier = "sentry-dbid-30a9209d-2079-44c4-8f8d-d1c5f5293581")
+    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "5d9c477c-a16f-4bdf-a858-e65edb32d2cc", r._sentryDebugIdIdentifier = "sentry-dbid-5d9c477c-a16f-4bdf-a858-e65edb32d2cc")
   })()
 } catch {}
-const d = () => "Leaderboard",
-  a = () => "Ranking",
-  o = () => "排行榜",
-  i = () => "Bestenliste",
-  f = () => "Clasificación",
-  l = () => "Classement",
-  s = () => "Classifica",
-  u = () => "ランキング",
-  c = () => "Ranking",
-  b = () => "Таблица лидеров",
-  g = () => "Таблиця лідерів",
-  p = () => "Bảng xếp hạng",
-  y = (r = {}, n = {}) => {
+const s = () => "Users",
+  u = () => "Usuários",
+  o = () => "用户",
+  f = () => "Benutzer",
+  i = () => "Usuarios",
+  d = () => "Utilisateurs",
+  c = () => "Utenti",
+  l = () => "ユーザー",
+  a = () => "Użytkownicy",
+  b = () => "Пользователи",
+  p = () => "Користувачі",
+  y = () => "Người dùng",
+  g = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? d() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? f() : e === "fr" ? l() : e === "it" ? s() : e === "jp" ? u() : e === "pl" ? c() : e === "ru" ? b() : e === "uk" ? g() : p()
+    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? f() : e === "es" ? i() : e === "fr" ? d() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? p() : y()
   };
 export {
-  y as l
+  g as u
 };

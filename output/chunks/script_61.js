@@ -1,115 +1,149 @@
 import {
   g as e
-} from "./BfjUzAZv.js";
+} from "./lNmZA2C_.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "358b627090e665fa84c80454e90310d86dcaf84d"
+      id: "0e0f1d9d12a0c5d9ef5f263afa770640948e8e71"
     }
   } catch {}
 })();
 try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      o = new t.Error().stack;
-    o && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[o] = "b64957e5-f888-48b7-9d7c-01c7228bd5f9", t._sentryDebugIdIdentifier = "sentry-dbid-b64957e5-f888-48b7-9d7c-01c7228bd5f9")
+      r = new t.Error().stack;
+    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "da48c81b-4878-4668-9913-c6f04261a52f", t._sentryDebugIdIdentifier = "sentry-dbid-da48c81b-4878-4668-9913-c6f04261a52f")
   })()
 } catch {}
-const d = () => "Administrator",
-  u = () => "Administrador",
-  i = () => "管理员",
-  s = () => "Administrator",
-  a = () => "Administrador",
-  c = () => "Administrateur",
-  l = () => "Amministratore",
-  _ = () => "管理者",
-  f = () => "Administrator",
-  m = () => "Администратор",
-  p = () => "Адміністратор",
-  b = () => "Quản trị viên",
-  g = (t = {}, o = {}) => {
-    const r = o.locale ?? e();
-    return r === "en" ? d() : r === "pt" ? u() : r === "ch" ? i() : r === "de" ? s() : r === "es" ? a() : r === "fr" ? c() : r === "it" ? l() : r === "jp" ? _() : r === "pl" ? f() : r === "ru" ? m() : r === "uk" ? p() : b()
+const c = () => "and",
+  o = () => "e",
+  u = () => "和",
+  i = () => "und",
+  _ = () => "y",
+  a = () => "et",
+  s = () => "e",
+  f = () => "と",
+  d = () => "i",
+  l = () => "и",
+  p = () => "та",
+  y = () => "và",
+  Fn = (t = {}, r = {}) => {
+    const n = r.locale ?? e();
+    return n === "en" ? c() : n === "pt" ? o() : n === "ch" ? u() : n === "de" ? i() : n === "es" ? _() : n === "fr" ? a() : n === "it" ? s() : n === "jp" ? f() : n === "pl" ? d() : n === "ru" ? l() : n === "uk" ? p() : y()
   },
-  M = () => "Discord Moderator",
-  y = () => "Moderador do Discord",
-  D = () => "Discord 管理员",
-  h = () => "Discord-Moderator",
-  k = () => "Moderador de Discord",
-  A = () => "Modérateur Discord",
-  j = () => "Moderatore Discord",
-  w = () => "Discordモデレーター",
-  E = () => "Moderator Discord",
-  v = () => "Модератор Discord",
-  U = () => "Модератор Discord",
-  G = () => "Discord Moderator",
-  L = (t = {}, o = {}) => {
-    const r = o.locale ?? e();
-    return r === "en" ? M() : r === "pt" ? y() : r === "ch" ? D() : r === "de" ? h() : r === "es" ? k() : r === "fr" ? A() : r === "it" ? j() : r === "jp" ? w() : r === "pl" ? E() : r === "ru" ? v() : r === "uk" ? U() : G()
+  h = () => "By continuing, you agree to our",
+  g = () => "Ao continuar, você concorda com nossos",
+  v = () => "继续即表示你同意我们的",
+  w = () => "Wenn du fortfährst, stimmst du unseren",
+  m = () => "Al continuar, aceptas nuestra",
+  b = () => "En continuant, vous acceptez nos",
+  k = () => "Continuando, accetti i nostri",
+  T = () => "続行すると、以下に同意したものとみなされます:",
+  j = () => "Kontynuując, akceptujesz nasze",
+  z = () => "Продолжая, вы соглашаетесь с нашими",
+  W = () => "Продовжуючи, ви погоджуєтеся з нашими",
+  C = () => "Khi tiếp tục, bạn đồng ý với",
+  Gn = (t = {}, r = {}) => {
+    const n = r.locale ?? e();
+    return n === "en" ? h() : n === "pt" ? g() : n === "ch" ? v() : n === "de" ? w() : n === "es" ? m() : n === "fr" ? b() : n === "it" ? k() : n === "jp" ? T() : n === "pl" ? j() : n === "ru" ? z() : n === "uk" ? W() : C()
   },
-  R = () => "Global Moderator",
-  T = () => "Moderador Global",
-  I = () => "全局版主",
-  N = () => "Globaler Moderator",
-  O = () => "Moderador global",
-  S = () => "Modérateur global",
-  x = () => "Moderatore globale",
-  z = () => "グローバルモデレーター",
-  B = () => "Globalny moderator",
-  F = () => "Глобальный модератор",
-  H = () => "Глобальний модератор",
-  Q = () => "Global Moderator",
-  Y = (t = {}, o = {}) => {
-    const r = o.locale ?? e();
-    return r === "en" ? R() : r === "pt" ? T() : r === "ch" ? I() : r === "de" ? N() : r === "es" ? O() : r === "fr" ? S() : r === "it" ? x() : r === "jp" ? z() : r === "pl" ? B() : r === "ru" ? F() : r === "uk" ? H() : Q()
+  $ = () => "Code of Conduct",
+  E = () => "Código de Conduta",
+  D = () => "行为守则",
+  I = () => "Verhaltenskodex",
+  P = () => "Código de Conducta",
+  A = () => "Code de conduite",
+  K = () => "Codice di condotta",
+  M = () => "行動規範",
+  S = () => "Kodeks postępowania",
+  x = () => "Кодекс поведения",
+  L = () => "Кодекс поведінки",
+  q = () => "Quy tắc ứng xử",
+  Jn = (t = {}, r = {}) => {
+    const n = r.locale ?? e();
+    return n === "en" ? $() : n === "pt" ? E() : n === "ch" ? D() : n === "de" ? I() : n === "es" ? P() : n === "fr" ? A() : n === "it" ? K() : n === "jp" ? M() : n === "pl" ? S() : n === "ru" ? x() : n === "uk" ? L() : q()
   },
-  q = () => "Moderator",
-  C = () => "Moderador",
-  J = () => "版主",
-  K = () => "Moderator",
-  P = () => "Moderador",
-  V = () => "Modérateur",
-  W = () => "Moderatore",
-  X = () => "モデレーター",
-  Z = () => "Moderator",
-  $ = () => "Модератор",
-  rr = () => "Модератор",
-  tr = () => "Moderator",
-  or = (t = {}, o = {}) => {
-    const r = o.locale ?? e();
-    return r === "en" ? q() : r === "pt" ? C() : r === "ch" ? J() : r === "de" ? K() : r === "es" ? P() : r === "fr" ? V() : r === "it" ? W() : r === "jp" ? X() : r === "pl" ? Z() : r === "ru" ? $() : r === "uk" ? rr() : tr()
+  B = () => "Do you have a Wplace Twitch account?",
+  H = () => "Você tem uma conta Wplace associada à Twitch?",
+  N = () => "你有 Wplace Twitch 账号吗？",
+  R = () => "Hast du ein Wplace-Konto über Twitch?",
+  V = () => "¿Tienes una cuenta de Wplace asociada a Twitch?",
+  Q = () => "Avez-vous un compte Wplace associé à Twitch ?",
+  Y = () => "Hai un account Wplace associato a Twitch?",
+  Z = () => "WplaceのTwitch連携アカウントをお持ちですか？",
+  F = () => "Czy masz konto Wplace połączone z Twitchem?",
+  G = () => "У вас есть аккаунт Wplace, связанный с Twitch?",
+  J = () => "У вас є акаунт Wplace, повʼязаний із Twitch?",
+  O = () => "Bạn có tài khoản Wplace liên kết với Twitch không?",
+  On = (t = {}, r = {}) => {
+    const n = r.locale ?? e();
+    return n === "en" ? B() : n === "pt" ? H() : n === "ch" ? N() : n === "de" ? R() : n === "es" ? V() : n === "fr" ? Q() : n === "it" ? Y() : n === "jp" ? Z() : n === "pl" ? F() : n === "ru" ? G() : n === "uk" ? J() : O()
   },
-  er = () => "User",
-  nr = () => "Usuário",
-  dr = () => "用户",
-  ur = () => "Benutzer",
-  ir = () => "Usuario",
-  sr = () => "Utilisateur",
-  ar = () => "Utente",
-  cr = () => "ユーザー",
-  lr = () => "Użytkownik",
-  _r = () => "Пользователь",
-  fr = () => "Користувач",
-  mr = () => "Người dùng",
-  n = (t = {}, o = {}) => {
-    const r = o.locale ?? e();
-    return r === "en" ? er() : r === "pt" ? nr() : r === "ch" ? dr() : r === "de" ? ur() : r === "es" ? ir() : r === "fr" ? sr() : r === "it" ? ar() : r === "jp" ? cr() : r === "pl" ? lr() : r === "ru" ? _r() : r === "uk" ? fr() : mr()
+  U = t => `Login with ${t.name}`,
+  X = t => `Entrar com ${t.name}`,
+  nn = t => `使用 ${t.name} 登录`,
+  tn = t => `Einloggen mit ${t.name}`,
+  rn = t => `Iniciar sesión con ${t.name}`,
+  en = t => `Se connecter avec ${t.name}`,
+  cn = t => `Accedi con ${t.name}`,
+  on = t => `${t.name}でログイン`,
+  un = t => `Zaloguj przez ${t.name}`,
+  _n = t => `Войти через ${t.name}`,
+  an = t => `Увійти через ${t.name}`,
+  sn = t => `Đăng nhập bằng ${t.name}`,
+  Un = (t, r = {}) => {
+    const n = r.locale ?? e();
+    return n === "en" ? U(t) : n === "pt" ? X(t) : n === "ch" ? nn(t) : n === "de" ? tn(t) : n === "es" ? rn(t) : n === "fr" ? en(t) : n === "it" ? cn(t) : n === "jp" ? on(t) : n === "pl" ? un(t) : n === "ru" ? _n(t) : n === "uk" ? an(t) : sn(t)
   },
-  br = {
-    user: n(),
-    community_leader: "Disc. Mod",
-    moderator: "MOD",
-    global_moderator: "GM",
-    admin: "Admin"
+  fn = () => "Migrate your account",
+  dn = () => "Migre sua conta",
+  ln = () => "迁移你的账号",
+  pn = () => "Konto migrieren",
+  yn = () => "Migra tu cuenta",
+  hn = () => "Migrer votre compte",
+  gn = () => "Migra il tuo account",
+  vn = () => "アカウントを移行",
+  wn = () => "Przenieś swoje konto",
+  mn = () => "Мигрировать аккаунт",
+  bn = () => "Перенести акаунт",
+  kn = () => "Di chuyển tài khoản",
+  Xn = (t = {}, r = {}) => {
+    const n = r.locale ?? e();
+    return n === "en" ? fn() : n === "pt" ? dn() : n === "ch" ? ln() : n === "de" ? pn() : n === "es" ? yn() : n === "fr" ? hn() : n === "it" ? gn() : n === "jp" ? vn() : n === "pl" ? wn() : n === "ru" ? mn() : n === "uk" ? bn() : kn()
   },
-  gr = {
-    user: n(),
-    community_leader: L(),
-    moderator: or(),
-    global_moderator: Y(),
-    admin: g()
+  Tn = () => "Privacy Policy",
+  jn = () => "Política de privacidade",
+  zn = () => "隐私政策",
+  Wn = () => "Datenschutzerklärung",
+  Cn = () => "Política de privacidad",
+  $n = () => "Politique de confidentialité",
+  En = () => "Informativa sulla privacy",
+  Dn = () => "プライバシーポリシー",
+  In = () => "Polityka prywatności",
+  Pn = () => "Политика конфиденциальности",
+  An = () => "Політика конфіденційності",
+  Kn = () => "Chính sách quyền riêng tư",
+  nt = (t = {}, r = {}) => {
+    const n = r.locale ?? e();
+    return n === "en" ? Tn() : n === "pt" ? jn() : n === "ch" ? zn() : n === "de" ? Wn() : n === "es" ? Cn() : n === "fr" ? $n() : n === "it" ? En() : n === "jp" ? Dn() : n === "pl" ? In() : n === "ru" ? Pn() : n === "uk" ? An() : Kn()
+  },
+  Mn = () => "Terms of Service",
+  Sn = () => "Termos de Serviço",
+  xn = () => "服务条款",
+  Ln = () => "Nutzungsbedingungen",
+  qn = () => "Términos de servicio",
+  Bn = () => "Conditions d’utilisation",
+  Hn = () => "Termini di servizio",
+  Nn = () => "利用規約",
+  Rn = () => "Warunki korzystania z usługi",
+  Vn = () => "Условия обслуживания",
+  Qn = () => "Умови обслуговування",
+  Yn = () => "Điều khoản dịch vụ",
+  tt = (t = {}, r = {}) => {
+    const n = r.locale ?? e();
+    return n === "en" ? Mn() : n === "pt" ? Sn() : n === "ch" ? xn() : n === "de" ? Ln() : n === "es" ? qn() : n === "fr" ? Bn() : n === "it" ? Hn() : n === "jp" ? Nn() : n === "pl" ? Rn() : n === "ru" ? Vn() : n === "uk" ? Qn() : Yn()
   };
 export {
-  gr as R, br as a
+  Fn as a, Gn as b, Jn as c, On as d, Un as l, Xn as m, nt as p, tt as t
 };
