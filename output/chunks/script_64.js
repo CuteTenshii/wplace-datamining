@@ -1,11 +1,11 @@
 import {
   g as o
-} from "./lNmZA2C_.js";
+} from "./BWURdrR3.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "0e0f1d9d12a0c5d9ef5f263afa770640948e8e71"
+      id: "57f41670f2805f713b0da8f3636738eb734a70e1"
     }
   } catch {}
 })();
@@ -18,8 +18,8 @@ try {
 } catch {}
 const t = () => "Error loading",
   d = () => "Erro ao carregar",
-  a = () => "加载出错",
-  i = () => "Fehler beim Laden",
+  i = () => "加载出错",
+  a = () => "Fehler beim Laden",
   l = () => "Error al cargar",
   u = () => "Erreur lors du chargement",
   f = () => "Errore nel caricamento",
@@ -27,10 +27,10 @@ const t = () => "Error loading",
   s = () => "Błąd ładowania",
   g = () => "Ошибка загрузки",
   _ = () => "Помилка завантаження",
-  p = () => "Lỗi tải dữ liệu",
+  b = () => "Lỗi tải dữ liệu",
   y = (e = {}, n = {}) => {
     const r = n.locale ?? o();
-    return r === "en" ? t() : r === "pt" ? d() : r === "ch" ? a() : r === "de" ? i() : r === "es" ? l() : r === "fr" ? u() : r === "it" ? f() : r === "jp" ? c() : r === "pl" ? s() : r === "ru" ? g() : r === "uk" ? _() : p()
+    return r === "en" ? t() : r === "pt" ? d() : r === "ch" ? i() : r === "de" ? a() : r === "es" ? l() : r === "fr" ? u() : r === "it" ? f() : r === "jp" ? c() : r === "pl" ? s() : r === "ru" ? g() : r === "uk" ? _() : b()
   };
 export {
   y as e

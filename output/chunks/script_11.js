@@ -1,15 +1,15 @@
 import {
   C as n,
-  Q as a,
-  x as t,
+  Q as t,
+  x as a,
   R as b,
   S as y
-} from "./8X9bXL-a.js";
+} from "./CYj7RoHR.js";
 (function() {
   try {
     var f = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     f.SENTRY_RELEASE = {
-      id: "0e0f1d9d12a0c5d9ef5f263afa770640948e8e71"
+      id: "57f41670f2805f713b0da8f3636738eb734a70e1"
     }
   } catch {}
 })();
@@ -25,20 +25,20 @@ function r(f, i) {
   return f === i || (f == null ? void 0 : f[y]) === i
 }
 
-function g(f = {}, i, d, l) {
+function o(f = {}, i, d, l) {
   return n(() => {
-    var s, e;
-    return a(() => {
-      s = e, e = [], t(() => {
-        f !== d(...e) && (i(f, ...e), s && r(d(...s), f) && i(null, ...s))
+    var e, s;
+    return t(() => {
+      e = s, s = [], a(() => {
+        f !== d(...s) && (i(f, ...s), e && r(d(...e), f) && i(null, ...e))
       })
     }), () => {
       b(() => {
-        e && r(d(...e), f) && i(null, ...e)
+        s && r(d(...s), f) && i(null, ...s)
       })
     }
   }), f
 }
 export {
-  g as b
+  o as b
 };

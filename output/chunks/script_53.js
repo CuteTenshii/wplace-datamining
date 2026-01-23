@@ -1,11 +1,11 @@
 import {
   g as r
-} from "./lNmZA2C_.js";
+} from "./BWURdrR3.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "0e0f1d9d12a0c5d9ef5f263afa770640948e8e71"
+      id: "57f41670f2805f713b0da8f3636738eb734a70e1"
     }
   } catch {}
 })();
@@ -28,10 +28,10 @@ const u = () => "Timeout",
   p = () => "Тайм-аут",
   m = () => "Тайм-аут",
   _ = () => "Tạm khóa",
-  g = (t = {}, n = {}) => {
+  y = (t = {}, n = {}) => {
     const e = n.locale ?? r();
     return e === "en" ? u() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? f() : e === "es" ? d() : e === "fr" ? s() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? p() : e === "uk" ? m() : _()
   };
 export {
-  g as t
+  y as t
 };
