@@ -1,11 +1,11 @@
 import {
   g as l
-} from "./CQ_gfREe.js";
+} from "./C_a06lyj.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "e6efb14bb5e52798ae71a524d6603a123d144219"
+      id: "a2d67f85c31e3fef075f7f6dde31a8af3e9f3dda"
     }
   } catch {}
 })();
@@ -16,8 +16,8 @@ try {
     n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "324233cd-ca74-4b7f-9e3a-affcd97c4ef0", e._sentryDebugIdIdentifier = "sentry-dbid-324233cd-ca74-4b7f-9e3a-affcd97c4ef0")
   })()
 } catch {}
-const i = e => `Copy alliance ID: #${e.allianceId}`,
-  c = e => `Copiar ID da aliança: #${e.allianceId}`,
+const c = e => `Copy alliance ID: #${e.allianceId}`,
+  i = e => `Copiar ID da aliança: #${e.allianceId}`,
   r = e => `复制联盟 ID：#${e.allianceId}`,
   d = e => `Allianz-ID kopieren: #${e.allianceId}`,
   o = e => `Copiar ID de la alianza: #${e.allianceId}`,
@@ -28,10 +28,10 @@ const i = e => `Copy alliance ID: #${e.allianceId}`,
   y = e => `Скопировать ID альянса: #${e.allianceId}`,
   I = e => `Скопіювати ID альянсу: #${e.allianceId}`,
   p = e => `Sao chép ID liên minh: #${e.allianceId}`,
-  b = (e, n = {}) => {
+  D = (e, n = {}) => {
     const a = n.locale ?? l();
-    return a === "en" ? i(e) : a === "pt" ? c(e) : a === "ch" ? r(e) : a === "de" ? d(e) : a === "es" ? o(e) : a === "fr" ? t(e) : a === "it" ? f(e) : a === "jp" ? _(e) : a === "pl" ? u(e) : a === "ru" ? y(e) : a === "uk" ? I(e) : p(e)
+    return a === "en" ? c(e) : a === "pt" ? i(e) : a === "ch" ? r(e) : a === "de" ? d(e) : a === "es" ? o(e) : a === "fr" ? t(e) : a === "it" ? f(e) : a === "jp" ? _(e) : a === "pl" ? u(e) : a === "ru" ? y(e) : a === "uk" ? I(e) : p(e)
   };
 export {
-  b as c
+  D as c
 };

@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./CQ_gfREe.js";
+} from "./C_a06lyj.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "e6efb14bb5e52798ae71a524d6603a123d144219"
+      id: "a2d67f85c31e3fef075f7f6dde31a8af3e9f3dda"
     }
   } catch {}
 })();
@@ -20,8 +20,8 @@ const a = () => "Name",
   o = () => "Nome",
   u = () => "名称",
   s = () => "Name",
-  i = () => "Nombre",
-  f = () => "Nom",
+  f = () => "Nombre",
+  i = () => "Nom",
   c = () => "Nome",
   _ = () => "名前",
   d = () => "Nazwa",
@@ -30,10 +30,10 @@ const a = () => "Name",
   p = () => "Tên",
   D = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? a() : e === "pt" ? o() : e === "ch" ? u() : e === "de" ? s() : e === "es" ? i() : e === "fr" ? f() : e === "it" ? c() : e === "jp" ? _() : e === "pl" ? d() : e === "ru" ? m() : e === "uk" ? l() : p()
+    return e === "en" ? a() : e === "pt" ? o() : e === "ch" ? u() : e === "de" ? s() : e === "es" ? f() : e === "fr" ? i() : e === "it" ? c() : e === "jp" ? _() : e === "pl" ? d() : e === "ru" ? m() : e === "uk" ? l() : p()
   },
-  b = () => "We don't have frames yet, create your first one!",
-  y = () => "Ainda não temos molduras, crie sua primeira!",
+  y = () => "We don't have frames yet, create your first one!",
+  b = () => "Ainda não temos molduras, crie sua primeira!",
   h = () => "我们还没有相框可供购买，敬请期待未来的更新 :)",
   g = () => "Wir haben noch keine Rahmen zum Kauf, bleibt dran für zukünftige Updates ;)",
   k = () => "Aún no tenemos marcos para comprar, espera futuras actualizaciones ;)",
@@ -46,7 +46,7 @@ const a = () => "Name",
   E = () => "Chúng tôi chưa có khung ảnh để bán đâu, hãy chờ các bản cập nhật sắp tới nhé ;)",
   A = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? b() : e === "pt" ? y() : e === "ch" ? h() : e === "de" ? g() : e === "es" ? k() : e === "fr" ? z() : e === "it" ? N() : e === "jp" ? w() : e === "pl" ? j() : e === "ru" ? v() : e === "uk" ? T() : E()
+    return e === "en" ? y() : e === "pt" ? b() : e === "ch" ? h() : e === "de" ? g() : e === "es" ? k() : e === "fr" ? z() : e === "it" ? N() : e === "jp" ? w() : e === "pl" ? j() : e === "ru" ? v() : e === "uk" ? T() : E()
   };
 export {
   A as a, D as n

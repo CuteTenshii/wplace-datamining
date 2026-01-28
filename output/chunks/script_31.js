@@ -1,11 +1,11 @@
 import {
-  g as f
-} from "./CQ_gfREe.js";
+  g as t
+} from "./C_a06lyj.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "e6efb14bb5e52798ae71a524d6603a123d144219"
+      id: "a2d67f85c31e3fef075f7f6dde31a8af3e9f3dda"
     }
   } catch {}
 })();
@@ -17,17 +17,17 @@ try {
   })()
 } catch {}
 
-function t() {
-  return f()
+function f() {
+  return t()
 }
 
-function d() {
-  return `/terms/return${t()==="pt"?"/pt":""}`
+function r() {
+  return `/terms/return${f()==="pt"?"/pt":""}`
 }
 
 function o() {
-  return `/terms/terms-of-service${t()==="pt"?"/pt":""}`
+  return `/terms/terms-of-service${f()==="pt"?"/pt":""}`
 }
 export {
-  t as g, d as r, o as t
+  f as g, r, o as t
 };

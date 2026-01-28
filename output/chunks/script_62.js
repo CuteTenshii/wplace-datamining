@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./CQ_gfREe.js";
+} from "./C_a06lyj.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "e6efb14bb5e52798ae71a524d6603a123d144219"
+      id: "a2d67f85c31e3fef075f7f6dde31a8af3e9f3dda"
     }
   } catch {}
 })();
@@ -20,17 +20,17 @@ const l = () => "Alliances",
   a = () => "Alianças",
   i = () => "联盟",
   s = () => "Allianzen",
-  o = () => "Alianzas",
-  u = () => "Alliances",
-  c = () => "Alleanze",
-  d = () => "アライアンス",
-  f = () => "Sojusze",
+  f = () => "Alianzas",
+  o = () => "Alliances",
+  u = () => "Alleanze",
+  c = () => "アライアンス",
+  d = () => "Sojusze",
   b = () => "Альянсы",
   p = () => "Альянси",
   _ = () => "Các liên minh",
   g = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? l() : e === "pt" ? a() : e === "ch" ? i() : e === "de" ? s() : e === "es" ? o() : e === "fr" ? u() : e === "it" ? c() : e === "jp" ? d() : e === "pl" ? f() : e === "ru" ? b() : e === "uk" ? p() : _()
+    return e === "en" ? l() : e === "pt" ? a() : e === "ch" ? i() : e === "de" ? s() : e === "es" ? f() : e === "fr" ? o() : e === "it" ? u() : e === "jp" ? c() : e === "pl" ? d() : e === "ru" ? b() : e === "uk" ? p() : _()
   };
 export {
   g as a
