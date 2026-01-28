@@ -1,53 +1,53 @@
-import "./CRtM9yEB.js";
 import {
-  A as s,
-  b as r
-} from "./CYj7RoHR.js";
-import {
-  d as f
-} from "./CxnK3XnS.js";
-import {
-  r as d
-} from "./DCiGwyYv.js";
+  g as t
+} from "./CQ_gfREe.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "57f41670f2805f713b0da8f3636738eb734a70e1"
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "e6efb14bb5e52798ae71a524d6603a123d144219"
     }
   } catch {}
 })();
 try {
   (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "b9f6da2e-4876-4bb6-a0fd-8d89b9903667", e._sentryDebugIdIdentifier = "sentry-dbid-b9f6da2e-4876-4bb6-a0fd-8d89b9903667")
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "4a05b333-b65d-4d37-ba55-f3be096b7668", n._sentryDebugIdIdentifier = "sentry-dbid-4a05b333-b65d-4d37-ba55-f3be096b7668")
   })()
 } catch {}
-var l = s('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
-
-function g(e, t) {
-  let n = d(t, ["$$slots", "$$events", "$$legacy"]);
-  var o = l();
-  f(o, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...n
-  })), r(e, o)
-}
-var a = s('<svg><path d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z"></path></svg>');
-
-function u(e, t) {
-  let n = d(t, ["$$slots", "$$events", "$$legacy"]);
-  var o = a();
-  f(o, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...n
-  })), r(e, o)
-}
+const a = () => "Name",
+  o = () => "Nome",
+  u = () => "名称",
+  s = () => "Name",
+  i = () => "Nombre",
+  f = () => "Nom",
+  c = () => "Nome",
+  _ = () => "名前",
+  d = () => "Nazwa",
+  m = () => "Имя",
+  l = () => "Імʼя",
+  p = () => "Tên",
+  D = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? a() : e === "pt" ? o() : e === "ch" ? u() : e === "de" ? s() : e === "es" ? i() : e === "fr" ? f() : e === "it" ? c() : e === "jp" ? _() : e === "pl" ? d() : e === "ru" ? m() : e === "uk" ? l() : p()
+  },
+  b = () => "We don't have frames yet, create your first one!",
+  y = () => "Ainda não temos molduras, crie sua primeira!",
+  h = () => "我们还没有相框可供购买，敬请期待未来的更新 :)",
+  g = () => "Wir haben noch keine Rahmen zum Kauf, bleibt dran für zukünftige Updates ;)",
+  k = () => "Aún no tenemos marcos para comprar, espera futuras actualizaciones ;)",
+  z = () => "Nous n'avons pas encore de cadres à acheter, attendez les futures mises à jour ;)",
+  N = () => "Non abbiamo ancora cornici da acquistare, attendete futuri aggiornamenti ;)",
+  w = () => "まだ購入できるフレームはありません。今後のアップデートをお待ちくださいね ;)",
+  j = () => "Nie mamy jeszcze ramek do kupienia, poczekaj na przyszłe aktualizacje ;)",
+  v = () => "У нас пока нет рам для покупки, ждите будущих обновлений ;)",
+  T = () => "У нас ще немає рам для покупки, чекайте майбутніх оновлень ;)",
+  E = () => "Chúng tôi chưa có khung ảnh để bán đâu, hãy chờ các bản cập nhật sắp tới nhé ;)",
+  A = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? b() : e === "pt" ? y() : e === "ch" ? h() : e === "de" ? g() : e === "es" ? k() : e === "fr" ? z() : e === "it" ? N() : e === "jp" ? w() : e === "pl" ? j() : e === "ru" ? v() : e === "uk" ? T() : E()
+  };
 export {
-  g as G, u as T
+  A as a, D as n
 };

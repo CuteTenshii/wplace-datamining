@@ -1,41 +1,37 @@
-import "./CRtM9yEB.js";
 import {
-  A as f,
-  b as n
-} from "./CYj7RoHR.js";
-import {
-  d as r
-} from "./CxnK3XnS.js";
-import {
-  r as s
-} from "./DCiGwyYv.js";
+  g as r
+} from "./CQ_gfREe.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "57f41670f2805f713b0da8f3636738eb734a70e1"
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    t.SENTRY_RELEASE = {
+      id: "e6efb14bb5e52798ae71a524d6603a123d144219"
     }
   } catch {}
 })();
 try {
   (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      o = new e.Error().stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "2e7f54bd-c457-4148-b625-5d05d34ddf5b", e._sentryDebugIdIdentifier = "sentry-dbid-2e7f54bd-c457-4148-b625-5d05d34ddf5b")
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      d = new t.Error().stack;
+    d && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[d] = "f6c51e82-ad75-484c-a01d-9731c98e9de5", t._sentryDebugIdIdentifier = "sentry-dbid-f6c51e82-ad75-484c-a01d-9731c98e9de5")
   })()
 } catch {}
-var i = f('<svg><path d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"></path></svg>');
-
-function g(e, o) {
-  let t = s(o, ["$$slots", "$$events", "$$legacy"]);
-  var d = i();
-  r(d, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...t
-  })), n(e, d)
-}
+const n = () => "Reddit",
+  i = () => "Reddit",
+  o = () => "Reddit",
+  u = () => "Reddit",
+  f = () => "Reddit",
+  s = () => "Reddit",
+  c = () => "Reddit",
+  l = () => "Reddit",
+  a = () => "Reddit",
+  p = () => "Reddit",
+  _ = () => "Reddit",
+  b = () => "Reddit",
+  g = (t = {}, d = {}) => {
+    const e = d.locale ?? r();
+    return e === "en" ? n() : e === "pt" ? i() : e === "ch" ? o() : e === "de" ? u() : e === "es" ? f() : e === "fr" ? s() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? p() : e === "uk" ? _() : b()
+  };
 export {
-  g as C
+  g as r
 };

@@ -1,53 +1,37 @@
 import {
-  g as r
-} from "./BWURdrR3.js";
+  g as t
+} from "./CQ_gfREe.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "57f41670f2805f713b0da8f3636738eb734a70e1"
+      id: "e6efb14bb5e52798ae71a524d6603a123d144219"
     }
   } catch {}
 })();
 try {
   (function() {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new n.Error().stack;
-    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "3f8a47d5-3d9c-4954-89bf-c99c5fab64ef", n._sentryDebugIdIdentifier = "sentry-dbid-3f8a47d5-3d9c-4954-89bf-c99c5fab64ef")
+      r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "d5467f2c-fd41-4e78-8ffc-826136ab96ef", n._sentryDebugIdIdentifier = "sentry-dbid-d5467f2c-fd41-4e78-8ffc-826136ab96ef")
   })()
 } catch {}
-const i = () => "Description",
-  s = () => "Descrição",
-  o = () => "描述",
-  p = () => "Beschreibung",
-  u = () => "Descripción",
-  c = () => "Description",
-  d = () => "Descrizione",
-  f = () => "説明",
-  l = () => "Opis",
-  a = () => "Описание",
-  _ = () => "Опис",
-  x = () => "Mô tả",
-  v = (n = {}, t = {}) => {
-    const e = t.locale ?? r();
-    return e === "en" ? i() : e === "pt" ? s() : e === "ch" ? o() : e === "de" ? p() : e === "es" ? u() : e === "fr" ? c() : e === "it" ? d() : e === "jp" ? f() : e === "pl" ? l() : e === "ru" ? a() : e === "uk" ? _() : x()
-  },
-  b = () => "Pixels painted",
-  g = () => "Pixels pintados",
-  y = () => "已绘制像素数",
-  h = () => "Gemalte Pixel",
-  w = () => "Píxeles pintados",
-  D = () => "Pixels peints",
-  P = () => "Pixel dipinti",
-  k = () => "塗られたピクセル数",
-  E = () => "Pomalowane piksele",
-  I = () => "Нарисованные пиксели",
-  T = () => "Намальовані пікселі",
-  j = () => "Pixel đã tô",
-  L = (n = {}, t = {}) => {
-    const e = t.locale ?? r();
-    return e === "en" ? b() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? h() : e === "es" ? w() : e === "fr" ? D() : e === "it" ? P() : e === "jp" ? k() : e === "pl" ? E() : e === "ru" ? I() : e === "uk" ? T() : j()
+const c = () => "Cancel",
+  f = () => "Cancelar",
+  l = () => "取消",
+  u = () => "Abbrechen",
+  o = () => "Cancelar",
+  a = () => "Annuler",
+  i = () => "Annulla",
+  d = () => "キャンセル",
+  s = () => "Anuluj",
+  b = () => "Отмена",
+  p = () => "Скасувати",
+  _ = () => "Hủy",
+  g = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? c() : e === "pt" ? f() : e === "ch" ? l() : e === "de" ? u() : e === "es" ? o() : e === "fr" ? a() : e === "it" ? i() : e === "jp" ? d() : e === "pl" ? s() : e === "ru" ? b() : e === "uk" ? p() : _()
   };
 export {
-  v as d, L as p
+  g as c
 };

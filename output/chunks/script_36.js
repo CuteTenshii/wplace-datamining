@@ -1,48 +1,11 @@
-import "./CRtM9yEB.js";
 import {
-  p as C,
-  j as r,
-  u as R,
-  i as I,
-  e as q,
-  v as z,
-  f as y,
-  d as i,
-  s as c,
-  z as N,
-  r as n,
-  t as v,
-  b as x,
-  c as Y
-} from "./CYj7RoHR.js";
-import {
-  s as _
-} from "./B6QbPa6V.js";
-import {
-  i as T
-} from "./Cf5AFK_W.js";
-import {
-  d as B,
-  C as F
-} from "./CxnK3XnS.js";
-import {
-  b as G
-} from "./CRHmzY0-.js";
-import {
-  p as g,
-  r as H
-} from "./DCiGwyYv.js";
-import "./BWURdrR3.js";
-import {
-  r as J,
-  m as K,
-  a as M
-} from "./BrCkhUHa.js";
+  f as i
+} from "./DG0HWvBF.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "57f41670f2805f713b0da8f3636738eb734a70e1"
+      id: "e6efb14bb5e52798ae71a524d6603a123d144219"
     }
   } catch {}
 })();
@@ -50,76 +13,130 @@ try {
   (function() {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "d444f69e-4652-49b5-9e8d-9d86836deb1b", t._sentryDebugIdIdentifier = "sentry-dbid-d444f69e-4652-49b5-9e8d-9d86836deb1b")
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "ceef1835-9981-4d37-8005-fce59d7dca01", t._sentryDebugIdIdentifier = "sentry-dbid-ceef1835-9981-4d37-8005-fce59d7dca01")
   })()
 } catch {}
-var O = y('<legend class="fieldset-legend"> </legend>'),
-  P = y('<span class="text-base-content/80"> </span>'),
-  Q = y('<fieldset class="fieldset"><!> <textarea></textarea> <div class="flex items-center justify-between text-xs"><span class="text-error"> </span> <!></div></fieldset>');
+const u = ["text-red-500", "text-orange-500", "text-yellow-500", "text-lime-500", "text-emerald-500", "text-teal-500", "text-cyan-500", "text-sky-500", "text-indigo-500", "text-violet-500", "text-purple-500", "text-fuchsia-500", "text-pink-500", "text-rose-500"],
+  p = ["bg-red-500/10", "bg-orange-500/10", "bg-yellow-500/10", "bg-lime-500/10", "bg-emerald-500/10", "bg-teal-500/10", "bg-cyan-500/10", "bg-sky-500/10", "bg-indigo-500/10", "bg-violet-500/10", "bg-purple-500/10", "bg-fuchsia-500/10", "bg-pink-500/10", "bg-rose-500/10"];
 
-function de(t, e) {
-  C(e, !0);
-  let s = g(e, "value", 15),
-    E = g(e, "validate", 15),
-    D = g(e, "disabled", 3, !1),
-    L = H(e, ["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate", "disabled"]),
-    l = q("");
-  const f = R(() => {
-    var a;
-    return ((a = s()) == null ? void 0 : a.length) ?? 0
-  });
-  E(S);
+function A(t) {
+  return u[t % u.length]
+}
 
-  function S() {
-    return e.min !== void 0 && r(f) < e.min ? (I(l, e.min === 1 ? J() : K({
-      min: e.min
-    }), !0), !1) : e.max !== void 0 && r(f) > e.max ? (I(l, M({
-      max: e.max
-    }), !0), !1) : !0
+function D(t) {
+  return p[t % p.length]
+}
+
+function T({
+  r: t,
+  g: e,
+  b: n
+}) {
+  function o(a) {
+    return a.toString(16).padStart(2, "0")
   }
-  z(() => {
-    var a;
-    e.max !== void 0 && r(f) > e.max && s((a = s()) == null ? void 0 : a.substring(0, e.max))
-  });
-  var u = Q(),
-    h = i(u);
-  {
-    var A = a => {
-      var d = O(),
-        b = i(d, !0);
-      n(d), v(() => _(b, e.label)), x(a, d)
-    };
-    T(h, a => {
-      e.label && a(A)
+  return `#${o(t)}${o(e)}${o(n)}`
+}
+
+function k(t) {
+  return t = t.trim().replace("#", ""), t.length === 3 && (t = t[0] + t[0] + t[1] + t[1] + t[2] + t[2]), t.length !== 6 ? {
+    r: 0,
+    g: 0,
+    b: 0
+  } : {
+    r: +("0x" + t.slice(0, 2)),
+    g: +("0x" + t.slice(2, 4)),
+    b: +("0x" + t.slice(4, 6))
+  }
+}
+
+function C(t) {
+  t = Math.min(t, i.colors.length - 1);
+  const [e, n, o] = i.colors[t].rgb;
+  return {
+    r: e,
+    g: n,
+    b: o,
+    a: t === 0 ? 0 : 255
+  }
+}
+const y = i.colors.map((t, e) => ({
+    ...t,
+    idx: e,
+    lab: w({
+      r: t.rgb[0],
+      g: t.rgb[1],
+      b: t.rgb[2]
     })
-  }
-  var o = c(h, 2);
-  N(o), B(o, () => ({
-    ...L,
-    class: `textarea w-full ${e.class??""}`,
-    placeholder: e.placeholder,
-    disabled: D(),
-    [F]: {
-      "textarea-error": !!r(l)
+  })).filter(t => t.idx !== 0),
+  h = i.colors.map((t, e) => ({
+    idx: e,
+    rgb: {
+      r: t.rgb[0],
+      g: t.rgb[1],
+      b: t.rgb[2]
     }
-  }));
-  var w = c(o, 2),
-    m = i(w),
-    j = i(m, !0);
-  n(m);
-  var k = c(m, 2);
-  {
-    var p = a => {
-      var d = P(),
-        b = i(d, !0);
-      n(d), v(() => _(b, e.max - r(f))), x(a, d)
-    };
-    T(k, a => {
-      e.max !== void 0 && a(p)
-    })
+  })).filter(t => t.idx !== 0);
+
+function R(t, e = "lab") {
+  if (e === "compuphase") {
+    let r = h[0],
+      l = Number.MAX_VALUE;
+    for (const s of h) {
+      const c = x(t, s.rgb);
+      c < l && (r = s, l = c)
+    }
+    return r.idx
   }
-  n(w), n(u), v(() => _(j, r(l))), G(o, s), x(t, u), Y()
+  let n = y[0],
+    o = Number.MAX_VALUE;
+  const a = w(t);
+  for (let r of y) {
+    const l = M(a, r.lab);
+    l < o && (n = r, o = l)
+  }
+  return n.idx
+}
+
+function w(t) {
+  var e = t.r / 255,
+    n = t.g / 255,
+    o = t.b / 255,
+    a, r, l;
+  return e = e > .04045 ? Math.pow((e + .055) / 1.055, 2.4) : e / 12.92, n = n > .04045 ? Math.pow((n + .055) / 1.055, 2.4) : n / 12.92, o = o > .04045 ? Math.pow((o + .055) / 1.055, 2.4) : o / 12.92, a = (e * .4124 + n * .3576 + o * .1805) / .95047, r = (e * .2126 + n * .7152 + o * .0722) / 1, l = (e * .0193 + n * .1192 + o * .9505) / 1.08883, a = a > .008856 ? Math.pow(a, 1 / 3) : 7.787 * a + 16 / 116, r = r > .008856 ? Math.pow(r, 1 / 3) : 7.787 * r + 16 / 116, l = l > .008856 ? Math.pow(l, 1 / 3) : 7.787 * l + 16 / 116, {
+    l: 116 * r - 16,
+    a: 500 * (a - r),
+    b: 200 * (r - l)
+  }
+}
+
+function M(t, e) {
+  var n = t.l - e.l,
+    o = t.a - e.a,
+    a = t.b - e.b,
+    r = Math.sqrt(t.a * t.a + t.b * t.b),
+    l = Math.sqrt(e.a * e.a + e.b * e.b),
+    s = r - l,
+    c = o * o + a * a - s * s;
+  c = c < 0 ? 0 : Math.sqrt(c);
+  var m = 1 + .045 * r,
+    v = 1 + .015 * r,
+    d = n / 1,
+    g = s / m,
+    f = c / v,
+    b = d * d + g * g + f * f;
+  return b < 0 ? 0 : Math.sqrt(b)
+}
+
+function x(t, e) {
+  const n = (t.r + e.r) / 2,
+    o = t.r - e.r,
+    a = t.g - e.g,
+    r = t.b - e.b,
+    l = 2 + n / 256,
+    s = 2 + (255 - n) / 256;
+  return l * o * o + 4 * a * a + s * r * r
 }
 export {
-  de as L
+  D as a, R as b, C as c, A as g, k as h, T as r
 };

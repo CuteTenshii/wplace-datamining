@@ -1,31 +1,8 @@
-import "./CRtM9yEB.js";
-import {
-  p as b,
-  f as c,
-  t as d,
-  b as f,
-  c as m,
-  s as v,
-  d as w,
-  r as y
-} from "./CYj7RoHR.js";
-import {
-  i as h
-} from "./Cf5AFK_W.js";
-import {
-  d as _,
-  a as r,
-  s as x
-} from "./CxnK3XnS.js";
-import {
-  p as E,
-  r as T
-} from "./DCiGwyYv.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "57f41670f2805f713b0da8f3636738eb734a70e1"
+      id: "e6efb14bb5e52798ae71a524d6603a123d144219"
     }
   } catch {}
 })();
@@ -33,47 +10,55 @@ try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "82990726-5c36-46a4-b780-d2c097458fc5", e._sentryDebugIdIdentifier = "sentry-dbid-82990726-5c36-46a4-b780-d2c097458fc5")
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "318a9da5-f9ae-41c4-a6ad-1557223c6f66", e._sentryDebugIdIdentifier = "sentry-dbid-318a9da5-f9ae-41c4-a6ad-1557223c6f66")
   })()
 } catch {}
-const S = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
-var B = c("<span>wplace</span>"),
-  L = c('<div><img alt="Wplace logo"/> <!></div>');
+const b = e => e;
 
-function D(e, t) {
-  b(t, !0);
-  let a = E(t, "size", 3, "default"),
-    p = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
-  var s = L();
-  _(s, () => ({
-    ...p,
-    class: `flex items-center gap-1.5 ${t.class??""}`
-  }));
-  var l = w(s);
-  let i;
-  var u = v(l, 2);
-  {
-    var g = o => {
-      var n = B();
-      let A;
-      d(() => A = r(n, 1, "text-base-content font-pixel", null, A, {
-        "text-4xl": a() === "default",
-        "text-5xl": a() === "lg" || a() === "medium"
-      })), f(o, n)
-    };
-    h(u, o => {
-      t.hasText && o(g)
-    })
+function h(e) {
+  const t = e - 1;
+  return t * t * t + 1
+}
+
+function w(e, {
+  delay: t = 0,
+  duration: i = 400,
+  easing: s = b
+} = {}) {
+  const r = +getComputedStyle(e).opacity;
+  return {
+    delay: t,
+    duration: i,
+    easing: s,
+    css: n => `opacity: ${n*r}`
   }
-  y(s), d(() => {
-    i = r(l, 1, "pixelated h-auto shrink-0", null, i, {
-      "w-4": a() === "small",
-      "w-10": a() === "default",
-      "w-16": a() === "medium",
-      "w-20": a() === "lg"
-    }), x(l, "src", S)
-  }), f(e, s), m()
+}
+
+function m(e, {
+  delay: t = 0,
+  duration: i = 400,
+  easing: s = h,
+  axis: r = "y"
+} = {}) {
+  const n = getComputedStyle(e),
+    l = +n.opacity,
+    p = r === "y" ? "height" : "width",
+    c = parseFloat(n[p]),
+    o = r === "y" ? ["top", "bottom"] : ["left", "right"],
+    d = o.map(a => `${a[0].toUpperCase()}${a.slice(1)}`),
+    f = parseFloat(n[`padding${d[0]}`]),
+    y = parseFloat(n[`padding${d[1]}`]),
+    u = parseFloat(n[`margin${d[0]}`]),
+    g = parseFloat(n[`margin${d[1]}`]),
+    _ = parseFloat(n[`border${d[0]}Width`]),
+    $ = parseFloat(n[`border${d[1]}Width`]);
+  return {
+    delay: t,
+    duration: i,
+    easing: s,
+    css: a => `overflow: hidden;opacity: ${Math.min(a*20,1)*l};${p}: ${a*c}px;padding-${o[0]}: ${a*f}px;padding-${o[1]}: ${a*y}px;margin-${o[0]}: ${a*u}px;margin-${o[1]}: ${a*g}px;border-${o[0]}-width: ${a*_}px;border-${o[1]}-width: ${a*$}px;min-${p}: 0`
+  }
 }
 export {
-  D as L
+  w as f, m as s
 };

@@ -1,40 +1,37 @@
-import "./BWURdrR3.js";
 import {
-  a,
-  g as n,
-  m as r,
-  d as t,
-  u as o
-} from "./DSIRHLEW.js";
+  g as t
+} from "./CQ_gfREe.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "57f41670f2805f713b0da8f3636738eb734a70e1"
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "e6efb14bb5e52798ae71a524d6603a123d144219"
     }
   } catch {}
 })();
 try {
   (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      d = new e.Error().stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "9fe5d65d-3073-448b-854e-da049d696dd9", e._sentryDebugIdIdentifier = "sentry-dbid-9fe5d65d-3073-448b-854e-da049d696dd9")
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "bebb4e96-3c86-49f3-92f8-00c1c85e4e63", n._sentryDebugIdIdentifier = "sentry-dbid-bebb4e96-3c86-49f3-92f8-00c1c85e4e63")
   })()
 } catch {}
-const f = {
-    user: o(),
-    community_leader: "Disc. Mod",
-    moderator: "MOD",
-    global_moderator: "GM",
-    admin: "Admin"
-  },
-  l = {
-    user: o(),
-    community_leader: t(),
-    moderator: r(),
-    global_moderator: n(),
-    admin: a()
+const s = () => "Appeals",
+  a = () => "Apelos",
+  o = () => "申诉",
+  p = () => "Einsprüche",
+  u = () => "Apelaciones",
+  i = () => "Recours",
+  l = () => "Ricorsi",
+  f = () => "異議申立て",
+  c = () => "Odwołania",
+  d = () => "Апелляции",
+  b = () => "Апеляції",
+  _ = () => "Các kháng cáo",
+  y = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? s() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? p() : e === "es" ? u() : e === "fr" ? i() : e === "it" ? l() : e === "jp" ? f() : e === "pl" ? c() : e === "ru" ? d() : e === "uk" ? b() : _()
   };
 export {
-  l as R, f as a
+  y as a
 };

@@ -1,37 +1,37 @@
 import {
-  g as t
-} from "./BWURdrR3.js";
+  g as r
+} from "./CQ_gfREe.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "57f41670f2805f713b0da8f3636738eb734a70e1"
+      id: "e6efb14bb5e52798ae71a524d6603a123d144219"
     }
   } catch {}
 })();
 try {
   (function() {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      r = new n.Error().stack;
-    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "1c6dbdf6-dd82-431c-9d28-e752c32322ea", n._sentryDebugIdIdentifier = "sentry-dbid-1c6dbdf6-dd82-431c-9d28-e752c32322ea")
+      a = new n.Error().stack;
+    a && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[a] = "dbe4153e-51b8-49ec-99c6-2b9751d8a5e4", n._sentryDebugIdIdentifier = "sentry-dbid-dbe4153e-51b8-49ec-99c6-2b9751d8a5e4")
   })()
 } catch {}
-const s = () => "Appeals",
-  a = () => "Apelos",
-  o = () => "申诉",
-  p = () => "Einsprüche",
-  u = () => "Apelaciones",
-  f = () => "Recours",
-  i = () => "Ricorsi",
-  l = () => "異議申立て",
-  d = () => "Odwołania",
-  c = () => "Апелляции",
-  b = () => "Апеляції",
-  _ = () => "Các kháng cáo",
-  y = (n = {}, r = {}) => {
-    const e = r.locale ?? t();
-    return e === "en" ? s() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? p() : e === "es" ? u() : e === "fr" ? f() : e === "it" ? i() : e === "jp" ? l() : e === "pl" ? d() : e === "ru" ? c() : e === "uk" ? b() : _()
+const t = () => "Ban appeal",
+  o = () => "Revisão de banimento",
+  p = () => "封禁申诉",
+  i = () => "Bann-Einspruch",
+  u = () => "Apelación de ban",
+  l = () => "Recours de bannissement",
+  s = () => "Ricorso contro il ban",
+  b = () => "BANの異議申立て",
+  d = () => "Odwołanie od bana",
+  f = () => "Апелляция на бан",
+  c = () => "Апеляція на бан",
+  _ = () => "Kháng cáo lệnh cấm",
+  y = (n = {}, a = {}) => {
+    const e = a.locale ?? r();
+    return e === "en" ? t() : e === "pt" ? o() : e === "ch" ? p() : e === "de" ? i() : e === "es" ? u() : e === "fr" ? l() : e === "it" ? s() : e === "jp" ? b() : e === "pl" ? d() : e === "ru" ? f() : e === "uk" ? c() : _()
   };
 export {
-  y as a
+  y as b
 };

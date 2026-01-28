@@ -1,37 +1,37 @@
 import {
   g as t
-} from "./BWURdrR3.js";
+} from "./CQ_gfREe.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "57f41670f2805f713b0da8f3636738eb734a70e1"
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "e6efb14bb5e52798ae71a524d6603a123d144219"
     }
   } catch {}
 })();
 try {
   (function() {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "148ff59f-9fda-447c-a2a3-99accec6281a", r._sentryDebugIdIdentifier = "sentry-dbid-148ff59f-9fda-447c-a2a3-99accec6281a")
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "f1be55e0-ef80-4068-94e4-e5552e62f5d0", n._sentryDebugIdIdentifier = "sentry-dbid-f1be55e0-ef80-4068-94e4-e5552e62f5d0")
   })()
 } catch {}
-const a = () => "Dashboard",
-  d = () => "Painel",
-  o = () => "控制台",
-  s = () => "Dashboard",
-  f = () => "Panel",
-  u = () => "Tableau de bord",
-  i = () => "Pannello",
-  c = () => "ダッシュボード",
-  l = () => "Panel",
-  b = () => "Панель",
-  h = () => "Панель",
-  p = () => "Bảng điều khiển",
-  g = (r = {}, n = {}) => {
-    const e = n.locale ?? t();
-    return e === "en" ? a() : e === "pt" ? d() : e === "ch" ? o() : e === "de" ? s() : e === "es" ? f() : e === "fr" ? u() : e === "it" ? i() : e === "jp" ? c() : e === "pl" ? l() : e === "ru" ? b() : e === "uk" ? h() : p()
+const f = () => "Confirm",
+  o = () => "Confirmar",
+  i = () => "确认",
+  u = () => "Bestätigen",
+  c = () => "Confirmar",
+  s = () => "Confirmer",
+  d = () => "Conferma",
+  l = () => "確認",
+  a = () => "Potwierdź",
+  m = () => "Подтвердить",
+  b = () => "Підтвердити",
+  p = () => "Xác nhận",
+  g = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? f() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? u() : e === "es" ? c() : e === "fr" ? s() : e === "it" ? d() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? m() : e === "uk" ? b() : p()
   };
 export {
-  g as d
+  g as c
 };

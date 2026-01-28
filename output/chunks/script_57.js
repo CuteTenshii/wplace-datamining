@@ -1,66 +1,53 @@
-import "./CRtM9yEB.js";
 import {
-  h as g,
-  a as p,
-  b as r,
-  A as d
-} from "./CYj7RoHR.js";
-import {
-  i as b
-} from "./Cf5AFK_W.js";
-import {
-  d as a
-} from "./CxnK3XnS.js";
-import {
-  r as c
-} from "./DCiGwyYv.js";
+  g as t
+} from "./CQ_gfREe.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "57f41670f2805f713b0da8f3636738eb734a70e1"
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "e6efb14bb5e52798ae71a524d6603a123d144219"
     }
   } catch {}
 })();
 try {
   (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      o = new e.Error().stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "5f09d9b4-880d-4446-8422-b6fc69a4ec9c", e._sentryDebugIdIdentifier = "sentry-dbid-5f09d9b4-880d-4446-8422-b6fc69a4ec9c")
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "361009ac-bdfc-49c6-ae0b-41e743c14776", n._sentryDebugIdIdentifier = "sentry-dbid-361009ac-bdfc-49c6-ae0b-41e743c14776")
   })()
 } catch {}
-var h = d('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
-  w = d('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
-
-function q(e, o) {
-  let n = c(o, ["$$slots", "$$events", "$$legacy", "filled"]);
-  var s = g(),
-    i = p(s);
-  {
-    var l = t => {
-        var f = h();
-        a(f, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...n
-        })), r(t, f)
-      },
-      v = t => {
-        var f = w();
-        a(f, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...n
-        })), r(t, f)
-      };
-    b(i, t => {
-      o.filled ? t(l) : t(v, !1)
-    })
-  }
-  r(e, s)
-}
+const s = () => "Users banned successfully",
+  u = () => "Usuários banidos com sucesso",
+  o = () => "用户已成功封禁",
+  i = () => "Benutzer erfolgreich gebannt",
+  c = () => "Usuarios baneados correctamente",
+  d = () => "Utilisateurs bannis avec succès",
+  a = () => "Utenti bannati con successo",
+  f = () => "ユーザーをBANしました。",
+  _ = () => "Użytkownicy zostali pomyślnie zbanowani",
+  l = () => "Пользователи успешно забанены",
+  b = () => "Користувачів успішно заблоковано",
+  p = () => "Đã cấm người dùng thành công",
+  D = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? d() : e === "it" ? a() : e === "jp" ? f() : e === "pl" ? _() : e === "ru" ? l() : e === "uk" ? b() : p()
+  },
+  m = () => "Users timeouted successfully",
+  g = () => "Usuários suspensos com sucesso",
+  y = () => "用户已成功禁言",
+  h = () => "Benutzer erfolgreich mit Timeout belegt",
+  w = () => "Usuarios suspendidos correctamente",
+  U = () => "Utilisateurs suspendus avec succès",
+  k = () => "Utenti sospesi con successo",
+  z = () => "ユーザーをタイムアウトしました。",
+  v = () => "Użytkownicy zostali pomyślnie zawieszeni",
+  T = () => "Пользователям успешно выдан тайм-аут",
+  E = () => "Користувачам успішно призначено тайм-аут",
+  I = () => "Đã tạm khóa người dùng thành công",
+  B = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? m() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? h() : e === "es" ? w() : e === "fr" ? U() : e === "it" ? k() : e === "jp" ? z() : e === "pl" ? v() : e === "ru" ? T() : e === "uk" ? E() : I()
+  };
 export {
-  q as C
+  B as a, D as u
 };

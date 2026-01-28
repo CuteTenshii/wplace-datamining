@@ -1,7 +1,3 @@
-import {
-  l as f,
-  a as o
-} from "../chunks/B9mmiAoC.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
@@ -13,10 +9,11 @@ import {
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      d = new e.Error().stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "080ead9e-8a65-4078-938c-ad958f945764", e._sentryDebugIdIdentifier = "sentry-dbid-080ead9e-8a65-4078-938c-ad958f945764")
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "e39994ec-97e3-4b4f-aa24-7b503409e6f1", e._sentryDebugIdIdentifier = "sentry-dbid-e39994ec-97e3-4b4f-aa24-7b503409e6f1")
   })()
 } catch {}
+const d = "1769622947706";
 export {
-  f as load_css, o as start
+  d as v
 };

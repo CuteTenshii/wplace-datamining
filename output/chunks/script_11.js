@@ -1,44 +1,36 @@
 import {
-  C as n,
-  Q as t,
-  x as a,
-  R as b,
-  S as y
-} from "./CYj7RoHR.js";
+  k as t,
+  l as b,
+  m as i,
+  E as r
+} from "./DguyhcA0.js";
+import {
+  B as s
+} from "./Z1td0T_V.js";
 (function() {
   try {
-    var f = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    f.SENTRY_RELEASE = {
-      id: "57f41670f2805f713b0da8f3636738eb734a70e1"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "e6efb14bb5e52798ae71a524d6603a123d144219"
     }
   } catch {}
 })();
 try {
   (function() {
-    var f = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      i = new f.Error().stack;
-    i && (f._sentryDebugIds = f._sentryDebugIds || {}, f._sentryDebugIds[i] = "1fb37f78-6f5a-472e-98c1-873a0925b1f3", f._sentryDebugIdIdentifier = "sentry-dbid-1fb37f78-6f5a-472e-98c1-873a0925b1f3")
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "6b38a800-f32b-41b7-b269-efdd60da6eb0", e._sentryDebugIdIdentifier = "sentry-dbid-6b38a800-f32b-41b7-b269-efdd60da6eb0")
   })()
 } catch {}
 
-function r(f, i) {
-  return f === i || (f == null ? void 0 : f[y]) === i
-}
-
-function o(f = {}, i, d, l) {
-  return n(() => {
-    var e, s;
-    return t(() => {
-      e = s, s = [], a(() => {
-        f !== d(...s) && (i(f, ...s), e && r(d(...e), f) && i(null, ...e))
-      })
-    }), () => {
-      b(() => {
-        s && r(d(...s), f) && i(null, ...s)
-      })
-    }
-  }), f
+function y(e, n, a) {
+  t && b();
+  var o = new s(e);
+  i(() => {
+    var d = n() ?? null;
+    o.ensure(d, d && (f => a(f, d)))
+  }, r)
 }
 export {
-  o as b
+  y as c
 };

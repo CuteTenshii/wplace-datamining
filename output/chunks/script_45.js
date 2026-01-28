@@ -1,64 +1,53 @@
+import {
+  g as t
+} from "./CQ_gfREe.js";
 (function() {
   try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
-      id: "57f41670f2805f713b0da8f3636738eb734a70e1"
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "e6efb14bb5e52798ae71a524d6603a123d144219"
     }
   } catch {}
 })();
 try {
   (function() {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "3165cf74-2c30-440d-8753-7217d3d69437", t._sentryDebugIdIdentifier = "sentry-dbid-3165cf74-2c30-440d-8753-7217d3d69437")
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      n = new r.Error().stack;
+    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "7deb3759-e2f1-46a1-a938-a0fe039d7679", r._sentryDebugIdIdentifier = "sentry-dbid-7deb3759-e2f1-46a1-a938-a0fe039d7679")
   })()
 } catch {}
-
-function z(t) {
-  const e = t - 1;
-  return e * e * e + 1
-}
-
-function D(t, {
-  from: e,
-  to: r
-}, h = {}) {
-  var {
-    delay: y = 0,
-    duration: i = n => Math.sqrt(n) * 120,
-    easing: c = z
-  } = h, d = getComputedStyle(t), g = d.transform === "none" ? "" : d.transform, [f, o] = d.transformOrigin.split(" ").map(parseFloat);
-  f /= t.clientWidth, o /= t.clientHeight;
-  var u = C(t),
-    v = t.clientWidth / r.width / u,
-    p = t.clientHeight / r.height / u,
-    b = e.left + e.width * f,
-    w = e.top + e.height * o,
-    x = r.left + r.width * f,
-    m = r.top + r.height * o,
-    s = (b - x) * v,
-    l = (w - m) * p,
-    S = e.width / r.width,
-    E = e.height / r.height;
-  return {
-    delay: y,
-    duration: typeof i == "function" ? i(Math.sqrt(s * s + l * l)) : i,
-    easing: c,
-    css: (n, a) => {
-      var _ = a * s,
-        I = a * l,
-        T = n + a * S,
-        $ = n + a * E;
-      return `transform: ${g} translate(${_}px, ${I}px) scale(${T}, ${$});`
-    }
-  }
-}
-
-function C(t) {
-  if ("currentCSSZoom" in t) return t.currentCSSZoom;
-  for (var e = t, r = 1; e !== null;) r *= +getComputedStyle(e).zoom, e = e.parentElement;
-  return r
-}
+const u = () => "Members",
+  s = () => "Membros",
+  o = () => "成员",
+  i = () => "Mitglieder",
+  f = () => "Miembros",
+  l = () => "Membres",
+  a = () => "Membri",
+  c = () => "メンバー",
+  d = () => "Członkowie",
+  p = () => "Участники",
+  b = () => "Учасники",
+  m = () => "Thành viên",
+  J = (r = {}, n = {}) => {
+    const e = n.locale ?? t();
+    return e === "en" ? u() : e === "pt" ? s() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? f() : e === "fr" ? l() : e === "it" ? a() : e === "jp" ? c() : e === "pl" ? d() : e === "ru" ? p() : e === "uk" ? b() : m()
+  },
+  y = () => "Player",
+  _ = () => "Jogador",
+  g = () => "玩家",
+  h = () => "Spieler",
+  w = () => "Jugador",
+  k = () => "Joueur",
+  M = () => "Giocatore",
+  T = () => "プレイヤー",
+  v = () => "Gracz",
+  E = () => "Игрок",
+  I = () => "Гравець",
+  j = () => "Người chơi",
+  S = (r = {}, n = {}) => {
+    const e = n.locale ?? t();
+    return e === "en" ? y() : e === "pt" ? _() : e === "ch" ? g() : e === "de" ? h() : e === "es" ? w() : e === "fr" ? k() : e === "it" ? M() : e === "jp" ? T() : e === "pl" ? v() : e === "ru" ? E() : e === "uk" ? I() : j()
+  };
 export {
-  D as f
+  J as m, S as p
 };

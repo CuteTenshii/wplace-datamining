@@ -1,37 +1,33 @@
 import {
-  g as t
-} from "./BWURdrR3.js";
+  g as f
+} from "./CQ_gfREe.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "57f41670f2805f713b0da8f3636738eb734a70e1"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "e6efb14bb5e52798ae71a524d6603a123d144219"
     }
   } catch {}
 })();
 try {
   (function() {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      r = new n.Error().stack;
-    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "439c79ad-52e2-42b8-8583-6d2684186a86", n._sentryDebugIdIdentifier = "sentry-dbid-439c79ad-52e2-42b8-8583-6d2684186a86")
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "861b2fac-78cb-4dac-97f5-3669527e949c", e._sentryDebugIdIdentifier = "sentry-dbid-861b2fac-78cb-4dac-97f5-3669527e949c")
   })()
 } catch {}
-const o = () => "Close",
-  s = () => "Fechar",
-  c = () => "关闭",
-  u = () => "Schließen",
-  i = () => "Cerrar",
-  l = () => "Fermer",
-  f = () => "Chiudi",
-  d = () => "閉じる",
-  a = () => "Zamknij",
-  b = () => "Закрыть",
-  p = () => "Закрити",
-  _ = () => "Đóng",
-  y = (n = {}, r = {}) => {
-    const e = r.locale ?? t();
-    return e === "en" ? o() : e === "pt" ? s() : e === "ch" ? c() : e === "de" ? u() : e === "es" ? i() : e === "fr" ? l() : e === "it" ? f() : e === "jp" ? d() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? p() : _()
-  };
+
+function t() {
+  return f()
+}
+
+function d() {
+  return `/terms/return${t()==="pt"?"/pt":""}`
+}
+
+function o() {
+  return `/terms/terms-of-service${t()==="pt"?"/pt":""}`
+}
 export {
-  y as c
+  t as g, d as r, o as t
 };
