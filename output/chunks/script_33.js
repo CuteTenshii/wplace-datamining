@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./C_a06lyj.js";
+} from "./DolGb-m3.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "a2d67f85c31e3fef075f7f6dde31a8af3e9f3dda"
+      id: "ee10936229c2fb895ed8cbcf3dab6bc48981481b"
     }
   } catch {}
 })();
@@ -24,13 +24,13 @@ const o = () => "Add profile picture",
   p = () => "Ajouter une image de profil",
   d = () => "Aggiungi immagine del profilo",
   l = () => "プロフィール画像を追加",
-  f = () => "Dodaj zdjęcie profilowe",
-  a = () => "Добавить изображение профиля",
-  c = () => "Додати зображення профілю",
+  c = () => "Dodaj zdjęcie profilowe",
+  f = () => "Добавить изображение профиля",
+  a = () => "Додати зображення профілю",
   y = () => "Thêm ảnh đại diện",
   le = (r = {}, t = {}) => {
     const e = t.locale ?? n();
-    return e === "en" ? o() : e === "pt" ? u() : e === "ch" ? i() : e === "de" ? _() : e === "es" ? s() : e === "fr" ? p() : e === "it" ? d() : e === "jp" ? l() : e === "pl" ? f() : e === "ru" ? a() : e === "uk" ? c() : y()
+    return e === "en" ? o() : e === "pt" ? u() : e === "ch" ? i() : e === "de" ? _() : e === "es" ? s() : e === "fr" ? p() : e === "it" ? d() : e === "jp" ? l() : e === "pl" ? c() : e === "ru" ? f() : e === "uk" ? a() : y()
   },
   g = () => "Eraser",
   m = () => "Borracha",
@@ -44,7 +44,7 @@ const o = () => "Add profile picture",
   z = () => "Ластик",
   w = () => "Гумка",
   P = () => "Cục tẩy",
-  fe = (r = {}, t = {}) => {
+  ce = (r = {}, t = {}) => {
     const e = t.locale ?? n();
     return e === "en" ? g() : e === "pt" ? m() : e === "ch" ? h() : e === "de" ? b() : e === "es" ? x() : e === "fr" ? k() : e === "it" ? j() : e === "jp" ? q() : e === "pl" ? v() : e === "ru" ? z() : e === "uk" ? w() : P()
   },
@@ -60,7 +60,7 @@ const o = () => "Add profile picture",
   C = () => "Политика возврата средств",
   F = () => "Політика повернення коштів",
   S = () => "Chính sách hoàn tiền",
-  ae = (r = {}, t = {}) => {
+  fe = (r = {}, t = {}) => {
     const e = t.locale ?? n();
     return e === "en" ? D() : e === "pt" ? A() : e === "ch" ? R() : e === "de" ? E() : e === "es" ? T() : e === "fr" ? G() : e === "it" ? I() : e === "jp" ? B() : e === "pl" ? L() : e === "ru" ? C() : e === "uk" ? F() : S()
   },
@@ -76,7 +76,7 @@ const o = () => "Add profile picture",
   U = () => "Для запросов на возврат средств и деталей обработки см. нашу",
   W = () => "Для запитів на повернення та деталей обробки дивіться нашу",
   X = () => "Để yêu cầu hoàn tiền và chi tiết xử lý, hãy xem",
-  ce = (r = {}, t = {}) => {
+  ae = (r = {}, t = {}) => {
     const e = t.locale ?? n();
     return e === "en" ? V() : e === "pt" ? Y() : e === "ch" ? N() : e === "de" ? O() : e === "es" ? H() : e === "fr" ? J() : e === "it" ? K() : e === "jp" ? M() : e === "pl" ? Q() : e === "ru" ? U() : e === "uk" ? W() : X()
   },
@@ -97,5 +97,5 @@ const o = () => "Add profile picture",
     return e === "en" ? Z() : e === "pt" ? $() : e === "ch" ? ee() : e === "de" ? re() : e === "es" ? te() : e === "fr" ? ne() : e === "it" ? oe() : e === "jp" ? ue() : e === "pl" ? ie() : e === "ru" ? _e() : e === "uk" ? se() : pe()
   };
 export {
-  le as a, ae as b, fe as e, ce as r, ye as y
+  le as a, fe as b, ce as e, ae as r, ye as y
 };

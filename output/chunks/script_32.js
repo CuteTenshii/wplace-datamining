@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./C_a06lyj.js";
+} from "./DolGb-m3.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "a2d67f85c31e3fef075f7f6dde31a8af3e9f3dda"
+      id: "ee10936229c2fb895ed8cbcf3dab6bc48981481b"
     }
   } catch {}
 })();
@@ -17,12 +17,12 @@ try {
   })()
 } catch {}
 const o = () => "Close",
-  s = () => "Fechar",
-  c = () => "关闭",
-  f = () => "Schließen",
-  u = () => "Cerrar",
-  i = () => "Fermer",
-  l = () => "Chiudi",
+  c = () => "Fechar",
+  s = () => "关闭",
+  u = () => "Schließen",
+  i = () => "Cerrar",
+  l = () => "Fermer",
+  f = () => "Chiudi",
   d = () => "閉じる",
   a = () => "Zamknij",
   b = () => "Закрыть",
@@ -30,7 +30,7 @@ const o = () => "Close",
   _ = () => "Đóng",
   y = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? o() : e === "pt" ? s() : e === "ch" ? c() : e === "de" ? f() : e === "es" ? u() : e === "fr" ? i() : e === "it" ? l() : e === "jp" ? d() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? p() : _()
+    return e === "en" ? o() : e === "pt" ? c() : e === "ch" ? s() : e === "de" ? u() : e === "es" ? i() : e === "fr" ? l() : e === "it" ? f() : e === "jp" ? d() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? p() : _()
   };
 export {
   y as c

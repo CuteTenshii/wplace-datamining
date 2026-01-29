@@ -1,11 +1,11 @@
 import {
   g as o
-} from "./C_a06lyj.js";
+} from "./DolGb-m3.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "a2d67f85c31e3fef075f7f6dde31a8af3e9f3dda"
+      id: "ee10936229c2fb895ed8cbcf3dab6bc48981481b"
     }
   } catch {}
 })();
@@ -23,14 +23,14 @@ const n = () => "Administrator",
   s = () => "Administrador",
   a = () => "Administrateur",
   c = () => "Amministratore",
-  f = () => "管理者",
-  l = () => "Administrator",
+  l = () => "管理者",
+  f = () => "Administrator",
   _ = () => "Администратор",
   m = () => "Адміністратор",
   p = () => "Quản trị viên",
-  fr = (t = {}, e = {}) => {
+  lr = (t = {}, e = {}) => {
     const r = e.locale ?? o();
-    return r === "en" ? n() : r === "pt" ? u() : r === "ch" ? d() : r === "de" ? i() : r === "es" ? s() : r === "fr" ? a() : r === "it" ? c() : r === "jp" ? f() : r === "pl" ? l() : r === "ru" ? _() : r === "uk" ? m() : p()
+    return r === "en" ? n() : r === "pt" ? u() : r === "ch" ? d() : r === "de" ? i() : r === "es" ? s() : r === "fr" ? a() : r === "it" ? c() : r === "jp" ? l() : r === "pl" ? f() : r === "ru" ? _() : r === "uk" ? m() : p()
   },
   b = () => "Discord Moderator",
   g = () => "Moderador do Discord",
@@ -44,7 +44,7 @@ const n = () => "Administrator",
   v = () => "Модератор Discord",
   A = () => "Модератор Discord",
   U = () => "Discord Moderator",
-  lr = (t = {}, e = {}) => {
+  fr = (t = {}, e = {}) => {
     const r = e.locale ?? o();
     return r === "en" ? b() : r === "pt" ? g() : r === "ch" ? M() : r === "de" ? y() : r === "es" ? h() : r === "fr" ? D() : r === "it" ? k() : r === "jp" ? j() : r === "pl" ? w() : r === "ru" ? v() : r === "uk" ? A() : U()
   },
@@ -97,5 +97,5 @@ const n = () => "Administrator",
     return r === "en" ? Z() : r === "pt" ? $() : r === "ch" ? rr() : r === "de" ? tr() : r === "es" ? er() : r === "fr" ? or() : r === "it" ? nr() : r === "jp" ? ur() : r === "pl" ? dr() : r === "ru" ? ir() : r === "uk" ? sr() : ar()
   };
 export {
-  fr as a, lr as d, _r as g, mr as m, pr as u
+  lr as a, fr as d, _r as g, mr as m, pr as u
 };

@@ -1,11 +1,11 @@
 import {
   g as r
-} from "./C_a06lyj.js";
+} from "./DolGb-m3.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "a2d67f85c31e3fef075f7f6dde31a8af3e9f3dda"
+      id: "ee10936229c2fb895ed8cbcf3dab6bc48981481b"
     }
   } catch {}
 })();
@@ -19,20 +19,20 @@ try {
 const i = () => "Description",
   s = () => "Descrição",
   o = () => "描述",
-  d = () => "Beschreibung",
+  c = () => "Beschreibung",
   p = () => "Descripción",
-  u = () => "Description",
-  c = () => "Descrizione",
+  d = () => "Description",
+  u = () => "Descrizione",
   f = () => "説明",
   l = () => "Opis",
   a = () => "Описание",
   _ = () => "Опис",
-  x = () => "Mô tả",
+  b = () => "Mô tả",
   v = (n = {}, t = {}) => {
     const e = t.locale ?? r();
-    return e === "en" ? i() : e === "pt" ? s() : e === "ch" ? o() : e === "de" ? d() : e === "es" ? p() : e === "fr" ? u() : e === "it" ? c() : e === "jp" ? f() : e === "pl" ? l() : e === "ru" ? a() : e === "uk" ? _() : x()
+    return e === "en" ? i() : e === "pt" ? s() : e === "ch" ? o() : e === "de" ? c() : e === "es" ? p() : e === "fr" ? d() : e === "it" ? u() : e === "jp" ? f() : e === "pl" ? l() : e === "ru" ? a() : e === "uk" ? _() : b()
   },
-  b = () => "Pixels painted",
+  x = () => "Pixels painted",
   g = () => "Pixels pintados",
   y = () => "已绘制像素数",
   h = () => "Gemalte Pixel",
@@ -46,7 +46,7 @@ const i = () => "Description",
   j = () => "Pixel đã tô",
   L = (n = {}, t = {}) => {
     const e = t.locale ?? r();
-    return e === "en" ? b() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? h() : e === "es" ? w() : e === "fr" ? D() : e === "it" ? P() : e === "jp" ? k() : e === "pl" ? E() : e === "ru" ? I() : e === "uk" ? T() : j()
+    return e === "en" ? x() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? h() : e === "es" ? w() : e === "fr" ? D() : e === "it" ? P() : e === "jp" ? k() : e === "pl" ? E() : e === "ru" ? I() : e === "uk" ? T() : j()
   };
 export {
   v as d, L as p

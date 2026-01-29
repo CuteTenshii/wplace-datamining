@@ -1,11 +1,11 @@
 import {
   g as l
-} from "./C_a06lyj.js";
+} from "./DolGb-m3.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "a2d67f85c31e3fef075f7f6dde31a8af3e9f3dda"
+      id: "ee10936229c2fb895ed8cbcf3dab6bc48981481b"
     }
   } catch {}
 })();
@@ -28,10 +28,10 @@ const c = e => `Copy alliance ID: #${e.allianceId}`,
   y = e => `Скопировать ID альянса: #${e.allianceId}`,
   I = e => `Скопіювати ID альянсу: #${e.allianceId}`,
   p = e => `Sao chép ID liên minh: #${e.allianceId}`,
-  D = (e, n = {}) => {
+  b = (e, n = {}) => {
     const a = n.locale ?? l();
     return a === "en" ? c(e) : a === "pt" ? i(e) : a === "ch" ? r(e) : a === "de" ? d(e) : a === "es" ? o(e) : a === "fr" ? t(e) : a === "it" ? f(e) : a === "jp" ? _(e) : a === "pl" ? u(e) : a === "ru" ? y(e) : a === "uk" ? I(e) : p(e)
   };
 export {
-  D as c
+  b as c
 };
