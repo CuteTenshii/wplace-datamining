@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./DolGb-m3.js";
+} from "./DXljTAZ5.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "ee10936229c2fb895ed8cbcf3dab6bc48981481b"
+      id: "af4d0c48dcaddf93c9bc56ee907626a523833bd3"
     }
   } catch {}
 })();
@@ -25,12 +25,12 @@ const f = () => "Refresh",
   c = () => "Aggiorna",
   l = () => "更新",
   a = () => "Odśwież",
-  b = () => "Обновить",
-  h = () => "Оновити",
+  h = () => "Обновить",
+  b = () => "Оновити",
   p = () => "Làm mới",
   g = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? f() : e === "pt" ? s() : e === "ch" ? u() : e === "de" ? i() : e === "es" ? o() : e === "fr" ? d() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? h() : p()
+    return e === "en" ? f() : e === "pt" ? s() : e === "ch" ? u() : e === "de" ? i() : e === "es" ? o() : e === "fr" ? d() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? h() : e === "uk" ? b() : p()
   };
 export {
   g as r

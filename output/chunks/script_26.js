@@ -1,11 +1,11 @@
 import {
   S as y
-} from "./DWNvpsFU.js";
+} from "./CnU2kreR.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "ee10936229c2fb895ed8cbcf3dab6bc48981481b"
+      id: "af4d0c48dcaddf93c9bc56ee907626a523833bd3"
     }
   } catch {}
 })();
@@ -18,11 +18,11 @@ try {
 } catch {}
 const g = y;
 
-function b(n) {
+function u(n) {
   const e = [],
     d = e,
-    u = Object.keys(n);
-  for (const i of u) {
+    b = Object.keys(n);
+  for (const i of b) {
     const s = n[i];
     if (typeof s == "string") {
       d.push(s), Object.defineProperty(e, i, {
@@ -33,7 +33,7 @@ function b(n) {
       });
       continue
     }
-    const o = b(s);
+    const o = u(s);
     Object.defineProperty(e, i, {
       value: o,
       enumerable: !0,
@@ -84,7 +84,7 @@ function b(n) {
     writable: !1
   }), Object.freeze(e)
 }
-const h = b(g);
+const h = u(g);
 export {
   h as P
 };

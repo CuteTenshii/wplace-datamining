@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./DolGb-m3.js";
+} from "./DXljTAZ5.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "ee10936229c2fb895ed8cbcf3dab6bc48981481b"
+      id: "af4d0c48dcaddf93c9bc56ee907626a523833bd3"
     }
   } catch {}
 })();
@@ -27,12 +27,12 @@ const a = () => "Name",
   d = () => "Nazwa",
   m = () => "Имя",
   l = () => "Імʼя",
-  b = () => "Tên",
+  p = () => "Tên",
   D = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? a() : e === "pt" ? o() : e === "ch" ? u() : e === "de" ? s() : e === "es" ? i() : e === "fr" ? f() : e === "it" ? c() : e === "jp" ? _() : e === "pl" ? d() : e === "ru" ? m() : e === "uk" ? l() : b()
+    return e === "en" ? a() : e === "pt" ? o() : e === "ch" ? u() : e === "de" ? s() : e === "es" ? i() : e === "fr" ? f() : e === "it" ? c() : e === "jp" ? _() : e === "pl" ? d() : e === "ru" ? m() : e === "uk" ? l() : p()
   },
-  p = () => "We don't have frames yet, create your first one!",
+  b = () => "We don't have frames yet, create your first one!",
   y = () => "Ainda não temos molduras, crie sua primeira!",
   h = () => "我们还没有相框可供购买，敬请期待未来的更新 :)",
   g = () => "Wir haben noch keine Rahmen zum Kauf, bleibt dran für zukünftige Updates ;)",
@@ -46,7 +46,7 @@ const a = () => "Name",
   E = () => "Chúng tôi chưa có khung ảnh để bán đâu, hãy chờ các bản cập nhật sắp tới nhé ;)",
   A = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? p() : e === "pt" ? y() : e === "ch" ? h() : e === "de" ? g() : e === "es" ? k() : e === "fr" ? z() : e === "it" ? N() : e === "jp" ? w() : e === "pl" ? j() : e === "ru" ? v() : e === "uk" ? T() : E()
+    return e === "en" ? b() : e === "pt" ? y() : e === "ch" ? h() : e === "de" ? g() : e === "es" ? k() : e === "fr" ? z() : e === "it" ? N() : e === "jp" ? w() : e === "pl" ? j() : e === "ru" ? v() : e === "uk" ? T() : E()
   };
 export {
   A as a, D as n

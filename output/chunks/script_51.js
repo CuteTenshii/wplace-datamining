@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./DolGb-m3.js";
+} from "./DXljTAZ5.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "ee10936229c2fb895ed8cbcf3dab6bc48981481b"
+      id: "af4d0c48dcaddf93c9bc56ee907626a523833bd3"
     }
   } catch {}
 })();
@@ -24,13 +24,13 @@ const s = () => "Users",
   d = () => "Utilisateurs",
   c = () => "Utenti",
   l = () => "ユーザー",
-  b = () => "Użytkownicy",
-  a = () => "Пользователи",
+  a = () => "Użytkownicy",
+  b = () => "Пользователи",
   p = () => "Користувачі",
   y = () => "Người dùng",
   g = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? f() : e === "es" ? i() : e === "fr" ? d() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? b() : e === "ru" ? a() : e === "uk" ? p() : y()
+    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? f() : e === "es" ? i() : e === "fr" ? d() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? p() : y()
   };
 export {
   g as u

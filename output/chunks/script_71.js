@@ -1,11 +1,11 @@
 import {
   g as r
-} from "./DolGb-m3.js";
+} from "./DXljTAZ5.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "ee10936229c2fb895ed8cbcf3dab6bc48981481b"
+      id: "af4d0c48dcaddf93c9bc56ee907626a523833bd3"
     }
   } catch {}
 })();
@@ -25,12 +25,12 @@ const n = () => "Reddit",
   s = () => "Reddit",
   l = () => "Reddit",
   a = () => "Reddit",
-  b = () => "Reddit",
   p = () => "Reddit",
   _ = () => "Reddit",
+  b = () => "Reddit",
   g = (t = {}, d = {}) => {
     const e = d.locale ?? r();
-    return e === "en" ? n() : e === "pt" ? i() : e === "ch" ? o() : e === "de" ? u() : e === "es" ? f() : e === "fr" ? c() : e === "it" ? s() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? p() : _()
+    return e === "en" ? n() : e === "pt" ? i() : e === "ch" ? o() : e === "de" ? u() : e === "es" ? f() : e === "fr" ? c() : e === "it" ? s() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? p() : e === "uk" ? _() : b()
   };
 export {
   g as r

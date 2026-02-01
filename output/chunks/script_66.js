@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./DolGb-m3.js";
+} from "./DXljTAZ5.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "ee10936229c2fb895ed8cbcf3dab6bc48981481b"
+      id: "af4d0c48dcaddf93c9bc56ee907626a523833bd3"
     }
   } catch {}
 })();
@@ -21,16 +21,16 @@ const f = () => "Confirm",
   i = () => "确认",
   c = () => "Bestätigen",
   u = () => "Confirmar",
-  s = () => "Confirmer",
-  d = () => "Conferma",
+  d = () => "Confirmer",
+  s = () => "Conferma",
   l = () => "確認",
   a = () => "Potwierdź",
-  b = () => "Подтвердить",
-  m = () => "Підтвердити",
+  m = () => "Подтвердить",
+  b = () => "Підтвердити",
   p = () => "Xác nhận",
   g = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? f() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? c() : e === "es" ? u() : e === "fr" ? s() : e === "it" ? d() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? m() : p()
+    return e === "en" ? f() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? c() : e === "es" ? u() : e === "fr" ? d() : e === "it" ? s() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? m() : e === "uk" ? b() : p()
   };
 export {
   g as c
