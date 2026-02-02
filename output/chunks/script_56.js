@@ -1,11 +1,11 @@
 import {
   g as r
-} from "./DXljTAZ5.js";
+} from "./CxGAPZJ7.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "af4d0c48dcaddf93c9bc56ee907626a523833bd3"
+      id: "aa4c5126665948c178117465fb480b1b818fb90b"
     }
   } catch {}
 })();
@@ -23,14 +23,14 @@ const u = () => "Timeout",
   s = () => "Suspender",
   d = () => "Suspendre",
   c = () => "Sospendi",
-  a = () => "タイムアウト",
-  b = () => "Zawieszenie",
-  l = () => "Тайм-аут",
+  b = () => "タイムアウト",
+  l = () => "Zawieszenie",
+  a = () => "Тайм-аут",
   p = () => "Тайм-аут",
   m = () => "Tạm khóa",
   y = (t = {}, n = {}) => {
     const e = n.locale ?? r();
-    return e === "en" ? u() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? f() : e === "es" ? s() : e === "fr" ? d() : e === "it" ? c() : e === "jp" ? a() : e === "pl" ? b() : e === "ru" ? l() : e === "uk" ? p() : m()
+    return e === "en" ? u() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? f() : e === "es" ? s() : e === "fr" ? d() : e === "it" ? c() : e === "jp" ? b() : e === "pl" ? l() : e === "ru" ? a() : e === "uk" ? p() : m()
   };
 export {
   y as t

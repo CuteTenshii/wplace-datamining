@@ -1,11 +1,11 @@
 import {
   g as o
-} from "./DXljTAZ5.js";
+} from "./CxGAPZJ7.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "af4d0c48dcaddf93c9bc56ee907626a523833bd3"
+      id: "aa4c5126665948c178117465fb480b1b818fb90b"
     }
   } catch {}
 })();
@@ -18,19 +18,19 @@ try {
 } catch {}
 const t = () => "Error loading",
   i = () => "Erro ao carregar",
-  d = () => "加载出错",
-  a = () => "Fehler beim Laden",
+  a = () => "加载出错",
+  d = () => "Fehler beim Laden",
   l = () => "Error al cargar",
   u = () => "Erreur lors du chargement",
   f = () => "Errore nel caricamento",
-  c = () => "読み込みエラー",
-  s = () => "Błąd ładowania",
+  s = () => "読み込みエラー",
+  c = () => "Błąd ładowania",
   g = () => "Ошибка загрузки",
   _ = () => "Помилка завантаження",
   b = () => "Lỗi tải dữ liệu",
   y = (e = {}, n = {}) => {
     const r = n.locale ?? o();
-    return r === "en" ? t() : r === "pt" ? i() : r === "ch" ? d() : r === "de" ? a() : r === "es" ? l() : r === "fr" ? u() : r === "it" ? f() : r === "jp" ? c() : r === "pl" ? s() : r === "ru" ? g() : r === "uk" ? _() : b()
+    return r === "en" ? t() : r === "pt" ? i() : r === "ch" ? a() : r === "de" ? d() : r === "es" ? l() : r === "fr" ? u() : r === "it" ? f() : r === "jp" ? s() : r === "pl" ? c() : r === "ru" ? g() : r === "uk" ? _() : b()
   };
 export {
   y as e

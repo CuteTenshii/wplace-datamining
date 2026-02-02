@@ -1,11 +1,11 @@
 import {
-  g as d
-} from "./DXljTAZ5.js";
+  g as f
+} from "./CxGAPZJ7.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "af4d0c48dcaddf93c9bc56ee907626a523833bd3"
+      id: "aa4c5126665948c178117465fb480b1b818fb90b"
     }
   } catch {}
 })();
@@ -18,10 +18,10 @@ try {
 } catch {}
 
 function t() {
-  return d()
+  return f()
 }
 
-function r() {
+function d() {
   return `/terms/return${t()==="pt"?"/pt":""}`
 }
 
@@ -29,5 +29,5 @@ function o() {
   return `/terms/terms-of-service${t()==="pt"?"/pt":""}`
 }
 export {
-  t as g, r, o as t
+  t as g, d as r, o as t
 };

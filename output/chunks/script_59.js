@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./DXljTAZ5.js";
+} from "./CxGAPZJ7.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "af4d0c48dcaddf93c9bc56ee907626a523833bd3"
+      id: "aa4c5126665948c178117465fb480b1b818fb90b"
     }
   } catch {}
 })();
@@ -21,16 +21,16 @@ const d = () => "Leaderboard",
   o = () => "排行榜",
   i = () => "Bestenliste",
   l = () => "Clasificación",
-  c = () => "Classement",
-  f = () => "Classifica",
-  s = () => "ランキング",
-  u = () => "Ranking",
+  f = () => "Classement",
+  s = () => "Classifica",
+  u = () => "ランキング",
+  c = () => "Ranking",
   b = () => "Таблица лидеров",
   g = () => "Таблиця лідерів",
   p = () => "Bảng xếp hạng",
   y = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? d() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? l() : e === "fr" ? c() : e === "it" ? f() : e === "jp" ? s() : e === "pl" ? u() : e === "ru" ? b() : e === "uk" ? g() : p()
+    return e === "en" ? d() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? l() : e === "fr" ? f() : e === "it" ? s() : e === "jp" ? u() : e === "pl" ? c() : e === "ru" ? b() : e === "uk" ? g() : p()
   };
 export {
   y as l
