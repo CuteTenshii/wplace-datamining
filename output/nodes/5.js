@@ -17,12 +17,12 @@ var ar = (y, l, _) => (Kf(y, l, "read from private field"), _ ? _.call(y) : l.ge
   In = (y, l, _, x) => (Kf(y, l, "write to private field"), x ? x.call(y, _) : l.set(y, _), _),
   oi = (y, l, _) => (Kf(y, l, "access private method"), _);
 var pv = (y, l, _) => R1(D1(y), _, l);
-import "../chunks/DlAkGZ8n.js";
+import "../chunks/Dqa_tdCE.js";
 import {
   o as Oa,
   a as B1,
   s as La
-} from "../chunks/DlTkWHq_.js";
+} from "../chunks/CpPRlDQ1.js";
 import {
   a4 as O1,
   bn as j1,
@@ -74,17 +74,17 @@ import {
   bJ as h0,
   B as J1,
   $ as $1
-} from "../chunks/0lw74TdK.js";
+} from "../chunks/BrDbkhPu.js";
 import {
   s as ee,
   c as d0
-} from "../chunks/BplYE9J1.js";
+} from "../chunks/CGiign8e.js";
 import {
   i as Te
-} from "../chunks/DrYQconx.js";
+} from "../chunks/BSSwFqdp.js";
 import {
   h as Q1
-} from "../chunks/D8pSy3yz.js";
+} from "../chunks/GXvI3ZZl.js";
 import {
   f as jr,
   a as Er,
@@ -97,23 +97,23 @@ import {
   c as _l,
   i as op,
   h as cm
-} from "../chunks/k6HFfx4L.js";
+} from "../chunks/Dc7LljEh.js";
 import {
   a as vl,
   t as dn
-} from "../chunks/DjMfWez_.js";
+} from "../chunks/Dq-2xpKC.js";
 import {
   g as xp,
   b as tb
-} from "../chunks/B-QRVwQr.js";
+} from "../chunks/BmncvXuN.js";
 import {
   p as xa
-} from "../chunks/DdHDK7rw.js";
+} from "../chunks/CBY5JXq2.js";
 import {
   g as An,
   P as rb,
   b as p0
-} from "../chunks/DW62wkuM.js";
+} from "../chunks/DkwOTGwi.js";
 import {
   f as yn,
   u as bt,
@@ -131,45 +131,45 @@ import {
   C as _v,
   a7 as ep,
   P as hb
-} from "../chunks/B9gXPY1h.js";
+} from "../chunks/7DPziOfr.js";
 import {
   A as aa,
   p as Km,
   c as um,
   g as $f,
   a as db
-} from "../chunks/ByBsf8KY.js";
+} from "../chunks/0qfPfmZU.js";
 import {
   P as Ba
-} from "../chunks/C6emUhxg.js";
-import "../chunks/ClStfkDU.js";
+} from "../chunks/BZe6ahrY.js";
+import "../chunks/ITRe8Xpq.js";
 import {
   e as Hi,
   i as po
-} from "../chunks/DFZpsCZi.js";
+} from "../chunks/CxLWdkNQ.js";
 import {
   a as bp,
   b as Tl,
   c as Jm
-} from "../chunks/CNwSYcGi.js";
+} from "../chunks/HUhPalzC.js";
 import {
   b as Rn
-} from "../chunks/BAtTA0rW.js";
+} from "../chunks/Bc49wlpk.js";
 import {
   i as $m
-} from "../chunks/C8_1Llf1.js";
+} from "../chunks/C1Bg15b7.js";
 import {
   r as Or,
   p as Ot,
   s as Bc,
   u as vv
-} from "../chunks/BVnMFPWi.js";
+} from "../chunks/DhCXuMRP.js";
 import {
   C as ss,
   S as pb,
   U as fb,
   a as mb
-} from "../chunks/Ebt0t3sf.js";
+} from "../chunks/DrVvbq9a.js";
 import {
   U as gb,
   A as f0,
@@ -179,30 +179,30 @@ import {
   r as _b,
   P as vb,
   b as yb
-} from "../chunks/j4Qjc9dn.js";
+} from "../chunks/DuAUtBcr.js";
 import {
   c as wp,
   b as g0,
   g as Dn,
   a as Rp
-} from "../chunks/CHKffhHq.js";
+} from "../chunks/CnUIr4Kz.js";
 import {
   h as Fp
-} from "../chunks/BG1CVDss.js";
+} from "../chunks/CyBBFp9G.js";
 import {
   L as _0
-} from "../chunks/BhHW1-Ny.js";
+} from "../chunks/Lg8d8G_0.js";
 import {
   l as xb,
   g as bb
-} from "../chunks/B4ScQ8O8.js";
+} from "../chunks/DSNL03G2.js";
 import {
   c as No
-} from "../chunks/BRuuuT7Z.js";
+} from "../chunks/D1ax6UlM.js";
 import {
   d as wb,
   p as Qm
-} from "../chunks/BzgNYTzr.js";
+} from "../chunks/BJBzrDCl.js";
 import {
   cv as Tb,
   aZ as v0,
@@ -436,51 +436,51 @@ import {
   aG as t3,
   cG as r3,
   bV as i3
-} from "../chunks/8IX2LmQh.js";
+} from "../chunks/DdYhn4-q.js";
 import {
   c as pm
-} from "../chunks/BqLPkksm.js";
+} from "../chunks/21-0LpmU.js";
 import {
   P as xn,
   t as a3
-} from "../chunks/o4g-ODLe.js";
+} from "../chunks/DL8j407a.js";
 import {
   L as qp
-} from "../chunks/DOYrYFWl.js";
+} from "../chunks/DAVw7V6K.js";
 import {
   l as n3,
   v as s3,
   a as Ju,
   s as k0
-} from "../chunks/DFsNZrpK.js";
+} from "../chunks/CKvJcuEj.js";
 import {
   p as ng,
   m as z0
-} from "../chunks/beTePQCK.js";
+} from "../chunks/7QV-Ugqg.js";
 import {
   f as yl
-} from "../chunks/DtoI2s-n.js";
+} from "../chunks/C76VUhLh.js";
 import {
   k as bl
-} from "../chunks/DMCnP3fO.js";
+} from "../chunks/ChdlfvK6.js";
 import {
   A as sg
-} from "../chunks/BWntUev2.js";
+} from "../chunks/BHBgurgG.js";
 import {
   b as og
-} from "../chunks/DsFF7srT.js";
+} from "../chunks/3Yc_MOfC.js";
 import {
   u as o3
-} from "../chunks/CIkUZhFt.js";
+} from "../chunks/BZweT99J.js";
 import {
   u as l3
-} from "../chunks/DrHZZv-O.js";
+} from "../chunks/B0QHxwHn.js";
 import {
   n as fm,
   c as E0,
   b as c3,
   a as u3
-} from "../chunks/Cll1_FyH.js";
+} from "../chunks/d9qYXZvc.js";
 import {
   E as mm,
   D as lg,
@@ -488,10 +488,10 @@ import {
   W as h3,
   b as d3,
   R as p3
-} from "../chunks/DPamu4da.js";
+} from "../chunks/BB9jnTcr.js";
 import {
   l as cg
-} from "../chunks/B57qrehG.js";
+} from "../chunks/BDBqx6fY.js";
 import {
   g as Np,
   s as f3,
@@ -509,89 +509,89 @@ import {
   a as w3,
   u as T3,
   t as kv
-} from "../chunks/sNfa56tR.js";
+} from "../chunks/BVe9pfHg.js";
 import {
   f as Jn,
   s as lp
-} from "../chunks/CwqewPLj.js";
+} from "../chunks/H1cTE9pD.js";
 import {
   C as ug
-} from "../chunks/IrrsCbb0.js";
+} from "../chunks/q5PCcATk.js";
 import {
   L as R0
-} from "../chunks/Bsd4Muko.js";
+} from "../chunks/BTjJA6By.js";
 import {
   t as S3,
   r as F0,
   g as P3
-} from "../chunks/BuAE_Wr8.js";
+} from "../chunks/Dn6uhKBL.js";
 import {
   c as uo
-} from "../chunks/CrKysR5z.js";
+} from "../chunks/CKaVbRas.js";
 import {
   c as vn
-} from "../chunks/CsIYiUsz.js";
+} from "../chunks/DLgWrYvh.js";
 import {
   a as B0
-} from "../chunks/LN3UvmMu.js";
+} from "../chunks/CH6nNZkF.js";
 import {
   L as I3
-} from "../chunks/jo0Q_umH.js";
+} from "../chunks/BTvtSSra.js";
 import {
   e as M3,
   a as C3
-} from "../chunks/B7VdVKH0.js";
+} from "../chunks/BjHUV6iw.js";
 import {
   b as A3
-} from "../chunks/CX68O5RR.js";
+} from "../chunks/BEIMVhHG.js";
 import {
   c as O0
-} from "../chunks/Clb-ozfU.js";
+} from "../chunks/DFsyeqi2.js";
 import {
   e as j0
-} from "../chunks/CcSthooV.js";
+} from "../chunks/DgcdJieH.js";
 import {
   p as q0
-} from "../chunks/B9cUUb5S.js";
+} from "../chunks/_a8MhbQP.js";
 import {
   a as k3
-} from "../chunks/DqrtUWaq.js";
+} from "../chunks/CwdliJQg.js";
 import {
   d as z3
-} from "../chunks/Chmsy1Od.js";
+} from "../chunks/CjZCrJ3O.js";
 import {
   r as E3
-} from "../chunks/DsrQ_cZr.js";
+} from "../chunks/CMK_WvR9.js";
 import {
   p as L3
-} from "../chunks/C55B_mZa.js";
+} from "../chunks/7EXfkTnv.js";
 import {
   R as N0
-} from "../chunks/C_bK1kXP.js";
+} from "../chunks/gxVDAh9z.js";
 import {
   T as $u,
   G as Pp
-} from "../chunks/B4v3dcfT.js";
+} from "../chunks/Co_Bv8EJ.js";
 import {
   t as V0
-} from "../chunks/BgE5SU0n.js";
+} from "../chunks/Ev9nfz5D.js";
 import {
   C as D3
-} from "../chunks/DPluhmNp.js";
+} from "../chunks/DBRhOXMz.js";
 import {
   R as R3
-} from "../chunks/Dd-Ph71i.js";
+} from "../chunks/C-ArxQ12.js";
 import {
   W as F3
-} from "../chunks/DW6EEXao.js";
+} from "../chunks/Bs3NuzvK.js";
 import {
   r as B3
-} from "../chunks/DcvuOPd_.js";
+} from "../chunks/DONT-9yG.js";
 (function() {
   try {
     var y = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     y.SENTRY_RELEASE = {
-      id: "1be1930440b8b07ce70b7b458d3e953490a5a011"
+      id: "29e4431f574f09d587efe1de5f4cdc3c0249ff76"
     }
   } catch {}
 })();
@@ -599,7 +599,7 @@ try {
   (function() {
     var y = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       l = new y.Error().stack;
-    l && (y._sentryDebugIds = y._sentryDebugIds || {}, y._sentryDebugIds[l] = "6c912d2e-c353-44e3-ae5e-60060f1c9cb2", y._sentryDebugIdIdentifier = "sentry-dbid-6c912d2e-c353-44e3-ae5e-60060f1c9cb2")
+    l && (y._sentryDebugIds = y._sentryDebugIds || {}, y._sentryDebugIds[l] = "9056426b-7ced-43a5-aec3-da7e6df99845", y._sentryDebugIdIdentifier = "sentry-dbid-9056426b-7ced-43a5-aec3-da7e6df99845")
   })()
 } catch {}
 const O3 = [];
@@ -52288,7 +52288,7 @@ var gL = ae('<meta property="og:title" content="Wplace - A massive real-time pix
   yL = ae('<button class="btn btn-lg btn-square sm:btn-xl z-30 shadow-md"><!></button>'),
   xL = ae('<button class="btn btn-primary shadow-xl"> </button>'),
   bL = ae('<div class="absolute top-0 -left-2 -translate-x-full translate-y-1/2 select-none"><!></div>'),
-  wL = ae('<div class="relative"><!> <!></div>'),
+  wL = ae('<div class="relative z-50"><!> <!></div>'),
   TL = ae('<button class="btn btn-square shadow-md"><!></button> <button class="btn btn-square relative shadow-md"><!></button>', 1),
   SL = ae('<button title="Auto painter" class="btn btn-square shadow-md"><!></button>'),
   PL = ae('<button title="Video Wayback" class="btn btn-square shadow-md"><!></button>'),
@@ -53510,7 +53510,7 @@ function rR(y, l) {
       })
     }
     S(se), ke((Ir, wr) => {
-      dr = Er(te, 1, "absolute top-2 right-2 z-30", null, dr, {
+      dr = Er(te, 1, "absolute top-2 right-2 z-40", null, dr, {
         hidden: h(q)
       }), pi = Er(_e, 1, "flex flex-col gap-4", null, pi, {
         "items-end": !bt.data,

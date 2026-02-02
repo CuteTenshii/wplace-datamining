@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./B4ScQ8O8.js";
+} from "./DSNL03G2.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "1be1930440b8b07ce70b7b458d3e953490a5a011"
+      id: "29e4431f574f09d587efe1de5f4cdc3c0249ff76"
     }
   } catch {}
 })();
@@ -21,16 +21,16 @@ const u = () => "Members",
   o = () => "成员",
   i = () => "Mitglieder",
   f = () => "Miembros",
-  l = () => "Membres",
-  c = () => "Membri",
+  c = () => "Membres",
+  l = () => "Membri",
   a = () => "メンバー",
   d = () => "Członkowie",
   p = () => "Участники",
-  b = () => "Учасники",
-  m = () => "Thành viên",
+  m = () => "Учасники",
+  b = () => "Thành viên",
   J = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? u() : e === "pt" ? s() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? f() : e === "fr" ? l() : e === "it" ? c() : e === "jp" ? a() : e === "pl" ? d() : e === "ru" ? p() : e === "uk" ? b() : m()
+    return e === "en" ? u() : e === "pt" ? s() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? f() : e === "fr" ? c() : e === "it" ? l() : e === "jp" ? a() : e === "pl" ? d() : e === "ru" ? p() : e === "uk" ? m() : b()
   },
   y = () => "Player",
   _ = () => "Jogador",

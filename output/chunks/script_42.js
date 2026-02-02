@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./B4ScQ8O8.js";
+} from "./DSNL03G2.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "1be1930440b8b07ce70b7b458d3e953490a5a011"
+      id: "29e4431f574f09d587efe1de5f4cdc3c0249ff76"
     }
   } catch {}
 })();
@@ -17,20 +17,20 @@ try {
   })()
 } catch {}
 const o = () => "Copy",
-  i = () => "Copiar",
-  u = () => "复制",
-  c = () => "Kopieren",
   f = () => "Copiar",
+  c = () => "复制",
+  i = () => "Kopieren",
+  u = () => "Copiar",
   p = () => "Copier",
-  s = () => "Copia",
-  d = () => "コピー",
-  a = () => "Kopiuj",
-  y = () => "Копировать",
+  d = () => "Copia",
+  s = () => "コピー",
+  y = () => "Kopiuj",
+  a = () => "Копировать",
   l = () => "Копіювати",
-  b = () => "Sao chép",
+  _ = () => "Sao chép",
   g = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? o() : e === "pt" ? i() : e === "ch" ? u() : e === "de" ? c() : e === "es" ? f() : e === "fr" ? p() : e === "it" ? s() : e === "jp" ? d() : e === "pl" ? a() : e === "ru" ? y() : e === "uk" ? l() : b()
+    return e === "en" ? o() : e === "pt" ? f() : e === "ch" ? c() : e === "de" ? i() : e === "es" ? u() : e === "fr" ? p() : e === "it" ? d() : e === "jp" ? s() : e === "pl" ? y() : e === "ru" ? a() : e === "uk" ? l() : _()
   };
 export {
   g as c
