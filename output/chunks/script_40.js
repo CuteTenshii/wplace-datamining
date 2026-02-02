@@ -1,11 +1,11 @@
 import {
   g as r
-} from "./DSNL03G2.js";
+} from "./CWSLadsn.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "29e4431f574f09d587efe1de5f4cdc3c0249ff76"
+      id: "79d1d83bf3d0a0f1d4fd38112e69555e6d7fe1e9"
     }
   } catch {}
 })();
@@ -21,18 +21,18 @@ const i = () => "Description",
   o = () => "描述",
   d = () => "Beschreibung",
   p = () => "Descripción",
-  c = () => "Description",
-  u = () => "Descrizione",
+  u = () => "Description",
+  c = () => "Descrizione",
   f = () => "説明",
   l = () => "Opis",
   a = () => "Описание",
   _ = () => "Опис",
-  x = () => "Mô tả",
+  b = () => "Mô tả",
   v = (n = {}, t = {}) => {
     const e = t.locale ?? r();
-    return e === "en" ? i() : e === "pt" ? s() : e === "ch" ? o() : e === "de" ? d() : e === "es" ? p() : e === "fr" ? c() : e === "it" ? u() : e === "jp" ? f() : e === "pl" ? l() : e === "ru" ? a() : e === "uk" ? _() : x()
+    return e === "en" ? i() : e === "pt" ? s() : e === "ch" ? o() : e === "de" ? d() : e === "es" ? p() : e === "fr" ? u() : e === "it" ? c() : e === "jp" ? f() : e === "pl" ? l() : e === "ru" ? a() : e === "uk" ? _() : b()
   },
-  b = () => "Pixels painted",
+  x = () => "Pixels painted",
   g = () => "Pixels pintados",
   y = () => "已绘制像素数",
   h = () => "Gemalte Pixel",
@@ -46,7 +46,7 @@ const i = () => "Description",
   j = () => "Pixel đã tô",
   L = (n = {}, t = {}) => {
     const e = t.locale ?? r();
-    return e === "en" ? b() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? h() : e === "es" ? w() : e === "fr" ? D() : e === "it" ? P() : e === "jp" ? k() : e === "pl" ? E() : e === "ru" ? I() : e === "uk" ? T() : j()
+    return e === "en" ? x() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? h() : e === "es" ? w() : e === "fr" ? D() : e === "it" ? P() : e === "jp" ? k() : e === "pl" ? E() : e === "ru" ? I() : e === "uk" ? T() : j()
   };
 export {
   v as d, L as p

@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./DSNL03G2.js";
+} from "./CWSLadsn.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "29e4431f574f09d587efe1de5f4cdc3c0249ff76"
+      id: "79d1d83bf3d0a0f1d4fd38112e69555e6d7fe1e9"
     }
   } catch {}
 })();
@@ -22,15 +22,15 @@ const f = () => "Refresh",
   i = () => "Aktualisieren",
   o = () => "Actualizar",
   d = () => "Actualiser",
-  c = () => "Aggiorna",
-  l = () => "更新",
+  l = () => "Aggiorna",
+  c = () => "更新",
   a = () => "Odśwież",
   h = () => "Обновить",
   b = () => "Оновити",
   p = () => "Làm mới",
   g = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? f() : e === "pt" ? s() : e === "ch" ? u() : e === "de" ? i() : e === "es" ? o() : e === "fr" ? d() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? h() : e === "uk" ? b() : p()
+    return e === "en" ? f() : e === "pt" ? s() : e === "ch" ? u() : e === "de" ? i() : e === "es" ? o() : e === "fr" ? d() : e === "it" ? l() : e === "jp" ? c() : e === "pl" ? a() : e === "ru" ? h() : e === "uk" ? b() : p()
   };
 export {
   g as r

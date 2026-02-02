@@ -4,12 +4,12 @@ import {
   y as a,
   S as y,
   T as b
-} from "./BrDbkhPu.js";
+} from "./Pvk3sEWX.js";
 (function() {
   try {
     var f = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     f.SENTRY_RELEASE = {
-      id: "29e4431f574f09d587efe1de5f4cdc3c0249ff76"
+      id: "79d1d83bf3d0a0f1d4fd38112e69555e6d7fe1e9"
     }
   } catch {}
 })();
@@ -25,20 +25,20 @@ function r(f, e) {
   return f === e || (f == null ? void 0 : f[b]) === e
 }
 
-function g(f = {}, e, s, l) {
+function o(f = {}, e, s, l) {
   return n(() => {
-    var d, i;
+    var i, d;
     return t(() => {
-      d = i, i = [], a(() => {
-        f !== s(...i) && (e(f, ...i), d && r(s(...d), f) && e(null, ...d))
+      i = d, d = [], a(() => {
+        f !== s(...d) && (e(f, ...d), i && r(s(...i), f) && e(null, ...i))
       })
     }), () => {
       y(() => {
-        i && r(s(...i), f) && e(null, ...i)
+        d && r(s(...d), f) && e(null, ...d)
       })
     }
   }), f
 }
 export {
-  g as b
+  o as b
 };

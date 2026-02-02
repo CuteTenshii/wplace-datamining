@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./DSNL03G2.js";
+} from "./CWSLadsn.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "29e4431f574f09d587efe1de5f4cdc3c0249ff76"
+      id: "79d1d83bf3d0a0f1d4fd38112e69555e6d7fe1e9"
     }
   } catch {}
 })();
@@ -20,17 +20,17 @@ const i = () => "Preview",
   f = () => "Prévia",
   o = () => "预览",
   u = () => "Vorschau",
-  s = () => "Vista previa",
-  d = () => "Aperçu",
+  d = () => "Vista previa",
+  s = () => "Aperçu",
   p = () => "Anteprima",
-  c = () => "プレビュー",
-  l = () => "Podgląd",
-  a = () => "Предпросмотр",
+  a = () => "プレビュー",
+  c = () => "Podgląd",
+  l = () => "Предпросмотр",
   b = () => "Попередній перегляд",
   w = () => "Xem trước",
   _ = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? i() : e === "pt" ? f() : e === "ch" ? o() : e === "de" ? u() : e === "es" ? s() : e === "fr" ? d() : e === "it" ? p() : e === "jp" ? c() : e === "pl" ? l() : e === "ru" ? a() : e === "uk" ? b() : w()
+    return e === "en" ? i() : e === "pt" ? f() : e === "ch" ? o() : e === "de" ? u() : e === "es" ? d() : e === "fr" ? s() : e === "it" ? p() : e === "jp" ? a() : e === "pl" ? c() : e === "ru" ? l() : e === "uk" ? b() : w()
   };
 export {
   _ as p

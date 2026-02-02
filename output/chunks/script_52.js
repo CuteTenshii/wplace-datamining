@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./DSNL03G2.js";
+} from "./CWSLadsn.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "29e4431f574f09d587efe1de5f4cdc3c0249ff76"
+      id: "79d1d83bf3d0a0f1d4fd38112e69555e6d7fe1e9"
     }
   } catch {}
 })();
@@ -16,21 +16,21 @@ try {
     t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "72ebc558-bb0c-4257-bd7a-4aded45c169f", r._sentryDebugIdIdentifier = "sentry-dbid-72ebc558-bb0c-4257-bd7a-4aded45c169f")
   })()
 } catch {}
-const s = () => "Name",
-  a = () => "Nome",
+const a = () => "Name",
+  s = () => "Nome",
   u = () => "名称",
   o = () => "Name",
-  c = () => "Nombre",
-  i = () => "Nom",
-  f = () => "Nome",
-  _ = () => "名前",
+  i = () => "Nombre",
+  c = () => "Nom",
+  _ = () => "Nome",
+  f = () => "名前",
   l = () => "Nazwa",
-  m = () => "Имя",
-  d = () => "Імʼя",
+  d = () => "Имя",
+  m = () => "Імʼя",
   p = () => "Tên",
   $ = (r = {}, t = {}) => {
     const e = t.locale ?? n();
-    return e === "en" ? s() : e === "pt" ? a() : e === "ch" ? u() : e === "de" ? o() : e === "es" ? c() : e === "fr" ? i() : e === "it" ? f() : e === "jp" ? _() : e === "pl" ? l() : e === "ru" ? m() : e === "uk" ? d() : p()
+    return e === "en" ? a() : e === "pt" ? s() : e === "ch" ? u() : e === "de" ? o() : e === "es" ? i() : e === "fr" ? c() : e === "it" ? _() : e === "jp" ? f() : e === "pl" ? l() : e === "ru" ? d() : e === "uk" ? m() : p()
   },
   b = () => "We don't have frames to buy yet, wait for future updates ;)",
   y = () => "Ainda não temos molduras, crie sua primeira!",

@@ -9,12 +9,12 @@ import {
   j as o,
   i as r,
   g as p
-} from "./BrDbkhPu.js";
+} from "./Pvk3sEWX.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "29e4431f574f09d587efe1de5f4cdc3c0249ff76"
+      id: "79d1d83bf3d0a0f1d4fd38112e69555e6d7fe1e9"
     }
   } catch {}
 })();
@@ -30,13 +30,13 @@ const E = "true",
   A = "0x4AAAAAABpHqZ-6i7uL0nmG",
   T = "https://backend.wplace.live",
   w = "theme";
-var l, g, u, d, c, f, h, b;
+var l, d, g, u, c, f, h, b;
 class y {
   constructor() {
     n(this, l, s(!1));
-    n(this, g, s(!1));
-    n(this, u, s(p(I())));
     n(this, d, s(!1));
+    n(this, g, s(p(I())));
+    n(this, u, s(!1));
     n(this, c, s("custom-winter"));
     n(this, f, s(!0));
     n(this, h, s(p(Date.now())));
@@ -52,22 +52,22 @@ class y {
     r(a(this, l), e, !0)
   }
   get muted() {
-    return o(a(this, g))
-  }
-  set muted(e) {
-    r(a(this, g), e, !0)
-  }
-  get language() {
-    return o(a(this, u))
-  }
-  set language(e) {
-    r(a(this, u), e, !0)
-  }
-  get turnstatileLoaded() {
     return o(a(this, d))
   }
-  set turnstatileLoaded(e) {
+  set muted(e) {
     r(a(this, d), e, !0)
+  }
+  get language() {
+    return o(a(this, g))
+  }
+  set language(e) {
+    r(a(this, g), e, !0)
+  }
+  get turnstatileLoaded() {
+    return o(a(this, u))
+  }
+  set turnstatileLoaded(e) {
+    r(a(this, u), e, !0)
   }
   get theme() {
     return o(a(this, c))
@@ -94,7 +94,7 @@ class y {
     r(a(this, b), e, !0)
   }
 }
-l = new WeakMap, g = new WeakMap, u = new WeakMap, d = new WeakMap, c = new WeakMap, f = new WeakMap, h = new WeakMap, b = new WeakMap;
+l = new WeakMap, d = new WeakMap, g = new WeakMap, u = new WeakMap, c = new WeakMap, f = new WeakMap, h = new WeakMap, b = new WeakMap;
 const U = new y;
 
 function I() {

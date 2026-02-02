@@ -1,19 +1,19 @@
 import {
   g as r
-} from "./DSNL03G2.js";
+} from "./CWSLadsn.js";
 (function() {
   try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
-      id: "29e4431f574f09d587efe1de5f4cdc3c0249ff76"
+    var d = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    d.SENTRY_RELEASE = {
+      id: "79d1d83bf3d0a0f1d4fd38112e69555e6d7fe1e9"
     }
   } catch {}
 })();
 try {
   (function() {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      d = new t.Error().stack;
-    d && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[d] = "f6c51e82-ad75-484c-a01d-9731c98e9de5", t._sentryDebugIdIdentifier = "sentry-dbid-f6c51e82-ad75-484c-a01d-9731c98e9de5")
+    var d = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      t = new d.Error().stack;
+    t && (d._sentryDebugIds = d._sentryDebugIds || {}, d._sentryDebugIds[t] = "f6c51e82-ad75-484c-a01d-9731c98e9de5", d._sentryDebugIdIdentifier = "sentry-dbid-f6c51e82-ad75-484c-a01d-9731c98e9de5")
   })()
 } catch {}
 const n = () => "Reddit",
@@ -28,10 +28,10 @@ const n = () => "Reddit",
   p = () => "Reddit",
   _ = () => "Reddit",
   y = () => "Reddit",
-  R = (t = {}, d = {}) => {
-    const e = d.locale ?? r();
+  g = (d = {}, t = {}) => {
+    const e = t.locale ?? r();
     return e === "en" ? n() : e === "pt" ? i() : e === "ch" ? f() : e === "de" ? o() : e === "es" ? u() : e === "fr" ? s() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? p() : e === "uk" ? _() : y()
   };
 export {
-  R as r
+  g as r
 };
