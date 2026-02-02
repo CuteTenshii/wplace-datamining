@@ -9,12 +9,12 @@ import {
   j as o,
   i as r,
   g as p
-} from "./CJKTONAG.js";
+} from "./0lw74TdK.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "aa4c5126665948c178117465fb480b1b818fb90b"
+      id: "1be1930440b8b07ce70b7b458d3e953490a5a011"
     }
   } catch {}
 })();
@@ -30,7 +30,7 @@ const E = "true",
   A = "0x4AAAAAABpHqZ-6i7uL0nmG",
   T = "https://backend.wplace.live",
   w = "theme";
-var l, g, u, d, c, h, f, b;
+var l, g, u, d, c, h, b, f;
 class y {
   constructor() {
     n(this, l, s(!1));
@@ -39,10 +39,10 @@ class y {
     n(this, d, s(!1));
     n(this, c, s("custom-winter"));
     n(this, h, s(!0));
-    n(this, f, s(p(Date.now())));
-    n(this, b, s(void 0));
+    n(this, b, s(p(Date.now())));
+    n(this, f, s(void 0));
     setInterval(() => {
-      r(a(this, f), Date.now(), !0)
+      r(a(this, b), Date.now(), !0)
     }, 500), this.theme = localStorage.getItem(w), this.theme !== "dark" && this.theme !== "custom-winter" && (this.theme = "custom-winter")
   }
   get dropletsDialogOpen() {
@@ -82,19 +82,19 @@ class y {
     r(a(this, h), e, !0)
   }
   get now() {
-    return o(a(this, f))
+    return o(a(this, b))
   }
   get captcha() {
-    return _ ? o(a(this, b)) : {
+    return _ ? o(a(this, f)) : {
       token: "turnstile-disabled",
       time: Date.now()
     }
   }
   set captcha(e) {
-    r(a(this, b), e, !0)
+    r(a(this, f), e, !0)
   }
 }
-l = new WeakMap, g = new WeakMap, u = new WeakMap, d = new WeakMap, c = new WeakMap, h = new WeakMap, f = new WeakMap, b = new WeakMap;
+l = new WeakMap, g = new WeakMap, u = new WeakMap, d = new WeakMap, c = new WeakMap, h = new WeakMap, b = new WeakMap, f = new WeakMap;
 const U = new y;
 
 function I() {

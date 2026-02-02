@@ -1,31 +1,31 @@
-import "./YEnWJlcv.js";
+import "./DlAkGZ8n.js";
 import {
   p as g,
-  f as c,
+  f as b,
   t as A,
   b as r,
   c as m,
   s as v,
   d as w,
   r as y
-} from "./CJKTONAG.js";
+} from "./0lw74TdK.js";
 import {
   i as h
-} from "./CHFbJKTA.js";
+} from "./DrYQconx.js";
 import {
   f as _,
   a as d,
   s as x
-} from "./AvkrwbMM.js";
+} from "./k6HFfx4L.js";
 import {
   p as E,
   r as T
-} from "./C99XV9yw.js";
+} from "./BVnMFPWi.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "aa4c5126665948c178117465fb480b1b818fb90b"
+      id: "1be1930440b8b07ce70b7b458d3e953490a5a011"
     }
   } catch {}
 })();
@@ -37,16 +37,16 @@ try {
   })()
 } catch {}
 const S = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
-var B = c("<span>wplace</span>"),
-  L = c('<div><img alt="Wplace logo"/> <!></div>');
+var B = b("<span>wplace</span>"),
+  L = b('<div><img alt="Wplace logo"/> <!></div>');
 
 function D(e, t) {
   g(t, !0);
   let a = E(t, "size", 3, "default"),
-    b = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+    c = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
   var s = L();
   _(s, () => ({
-    ...b,
+    ...c,
     class: `flex items-center gap-1.5 ${t.class??""}`
   }));
   var l = w(s);

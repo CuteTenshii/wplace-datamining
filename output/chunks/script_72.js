@@ -2,7 +2,7 @@
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "aa4c5126665948c178117465fb480b1b818fb90b"
+      id: "1be1930440b8b07ce70b7b458d3e953490a5a011"
     }
   } catch {}
 })();
@@ -10,7 +10,7 @@ try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       o = new e.Error().stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "4367cb17-2b05-4bf8-9f97-7365a659ddc7", e._sentryDebugIdIdentifier = "sentry-dbid-4367cb17-2b05-4bf8-9f97-7365a659ddc7")
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "7d579fb5-aff7-458f-8496-99f7f1de1a06", e._sentryDebugIdIdentifier = "sentry-dbid-7d579fb5-aff7-458f-8496-99f7f1de1a06")
   })()
 } catch {}
 const t = [{
@@ -69,6 +69,21 @@ To apply your profile frames, custom fonts and name styles, **click your profile
 This is just the beginning of a new chapter for Wplace! You can expect more frequent updates to the website, as we have many features already in the works, and even more planned! We thank you for your suggestions and patience, as we continue working to keep up with a response that's far exceeded our expectations!
 
 The **More Like You Update** is **LIVE NOW** - go check it out and share what designs you come up with! 🎉`
+}, {
+  version: "1.1.1",
+  title: "🛠️ Quality & Cosmetics Improvements",
+  markdown: `## Quality & Cosmetics Improvements
+
+This update brings several improvements and fixes for a smoother experience:
+
+- Small bugs fixed on the frontend for both mobile and desktop
+- Fixed minor issues when equipping cosmetics
+- Cosmetics released within the last 7 days now display a "New" badge
+- 5 new frames are now available in the shop
+- New shop view to see all available frames
+- Improved consistency of texts for translations
+
+We continue to listen to community feedback to make WPlace even better!`
 }];
 export {
   t as p

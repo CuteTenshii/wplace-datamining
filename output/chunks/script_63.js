@@ -1,4 +1,4 @@
-import "./YEnWJlcv.js";
+import "./DlAkGZ8n.js";
 import {
   B as ae,
   y as re,
@@ -8,7 +8,7 @@ import {
   p as Q,
   i as q,
   e as V,
-  h as se,
+  h as ce,
   a as W,
   j as I,
   b as C,
@@ -16,42 +16,42 @@ import {
   f as R,
   t as N,
   u as Z,
-  A as ce,
+  A as se,
   g as de,
   d as o,
   r as f,
   s as u,
   n as H
-} from "./CJKTONAG.js";
+} from "./0lw74TdK.js";
 import {
   s as g
-} from "./C7A6x7gN.js";
+} from "./BplYE9J1.js";
 import {
   i as D
-} from "./CHFbJKTA.js";
+} from "./DrYQconx.js";
 import {
   a as p,
   c as $,
   f as oe,
   s as O
-} from "./AvkrwbMM.js";
+} from "./k6HFfx4L.js";
 import {
   p as d,
   r as fe
-} from "./C99XV9yw.js";
+} from "./BVnMFPWi.js";
 import {
   g as Y,
   t as J,
   P as ue,
   a as ve
-} from "./DgK1w-Bm.js";
+} from "./DW62wkuM.js";
 import {
   t as me
-} from "./u6E-OnTt.js";
+} from "./BuAE_Wr8.js";
 import {
   o as be
-} from "./DEgci2JP.js";
-import "./CxGAPZJ7.js";
+} from "./DlTkWHq_.js";
+import "./B4ScQ8O8.js";
 import {
   b as _e,
   t as ge,
@@ -61,15 +61,15 @@ import {
   l as we,
   d as ke,
   m as Ie
-} from "./BxT1StWY.js";
+} from "./EOKNnSct.js";
 import {
   L as Ce
-} from "./m1ANYXXs.js";
+} from "./Bsd4Muko.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "aa4c5126665948c178117465fb480b1b818fb90b"
+      id: "1be1930440b8b07ce70b7b458d3e953490a5a011"
     }
   } catch {}
 })();
@@ -77,7 +77,7 @@ try {
   (function() {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new r.Error().stack;
-    e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "6bd18163-ff07-451a-9f92-be2692b9c38e", r._sentryDebugIdIdentifier = "sentry-dbid-6bd18163-ff07-451a-9f92-be2692b9c38e")
+    e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "c6c822a3-a005-4b32-b234-ffb39d8d9ecc", r._sentryDebugIdIdentifier = "sentry-dbid-c6c822a3-a005-4b32-b234-ffb39d8d9ecc")
   })()
 } catch {}
 
@@ -115,13 +115,13 @@ function Te(r, e) {
   });
   const y = Z(() => ({
       sitekey: e.siteKey,
-      callback: (t, s) => {
+      callback: (t, c) => {
         var l;
-        (l = e.callback) == null || l.call(e, t, s)
+        (l = e.callback) == null || l.call(e, t, c)
       },
       "error-callback": t => {
-        var s;
-        (s = e.errorCallback) == null || s.call(e, t)
+        var c;
+        (c = e.errorCallback) == null || c.call(e, t)
       },
       "timeout-callback": () => {
         var t;
@@ -157,8 +157,8 @@ function Te(r, e) {
       cData: e.cData,
       size: M()
     })),
-    T = (t, s) => {
-      let l = window.turnstile.render(t, s);
+    T = (t, c) => {
+      let l = window.turnstile.render(t, c);
       return i(l), {
         destroy() {
           window.turnstile.remove(l)
@@ -180,15 +180,15 @@ function Te(r, e) {
       q(x, !1)
     }
   });
-  var F = se(),
+  var F = ce(),
     S = W(F);
   {
     var j = t => {
-      var s = Le();
+      var c = Le();
       let l;
-      Ee(s, (n, c) => T == null ? void 0 : T(n, c), () => I(y)), N(() => l = p(s, 1, $(e.class), "svelte-1lm836y", l, {
+      Ee(c, (n, s) => T == null ? void 0 : T(n, s), () => I(y)), N(() => l = p(c, 1, $(e.class), "svelte-1lm836y", l, {
         flexible: M() == "flexible"
-      })), C(t, s)
+      })), C(t, c)
     };
     D(S, t => {
       Y.turnstatileLoaded && I(x) && t(j)
@@ -196,7 +196,7 @@ function Te(r, e) {
   }
   C(r, F), X()
 }
-var Be = ce('<svg><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" fill="#4285F4"></path><path d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" fill="#34A853"></path><path d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" fill="#FBBC05"></path><path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" fill="#EB4335"></path></svg>');
+var Be = se('<svg><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" fill="#4285F4"></path><path d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" fill="#34A853"></path><path d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" fill="#FBBC05"></path><path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" fill="#EB4335"></path></svg>');
 
 function De(r, e) {
   let i = fe(e, ["$$slots", "$$events", "$$legacy"]);
@@ -216,8 +216,8 @@ function He(r, e) {
   let i = d(e, "showTwitchMigration", 3, !0),
     a = V(de(J ? "" : "turnstile-disabled"));
 
-  function h(n, c) {
-    return `${ue}/auth/${n}?token=${c}${e.redirect?`&r=${e.redirect}`:""}`
+  function h(n, s) {
+    return `${ue}/auth/${n}?token=${s}${e.redirect?`&r=${e.redirect}`:""}`
   }
   var b = Se(),
     v = o(b),
@@ -229,8 +229,8 @@ function He(r, e) {
     K = o(E);
   {
     var M = n => {
-      var c = Me(),
-        m = W(c),
+      var s = Me(),
+        m = W(s),
         _ = o(m);
       De(_, {
         class: "mr-1 size-5"
@@ -265,7 +265,7 @@ function He(r, e) {
         })), O(m, "href", k), g(B, ` ${G??""}`)
       }, [() => I(a) ? h("google", I(a)) : "#", () => we({
         name: "Google"
-      })]), C(n, c)
+      })]), C(n, s)
     };
     D(K, n => {
       n(M, !1)
@@ -284,23 +284,23 @@ function He(r, e) {
     j = u(S),
     t = o(j, !0);
   f(j), H(), f(L);
-  var s = u(L, 2);
+  var c = u(L, 2);
   {
     var l = n => {
-      var c = Fe(),
-        m = o(c),
+      var s = Fe(),
+        m = o(s),
         _ = u(m),
         B = o(_, !0);
-      f(_), H(), f(c), N((w, z, A) => {
+      f(_), H(), f(s), N((w, z, A) => {
         g(m, `${w??""} `), O(_, "href", z), g(B, A)
-      }, [() => ke(), () => h("twitch", ""), () => Ie()]), C(n, c)
+      }, [() => ke(), () => h("twitch", ""), () => Ie()]), C(n, s)
     };
-    D(s, n => {
+    D(c, n => {
       i() && n(l)
     })
   }
-  f(b), N((n, c, m, _, B, w) => {
-    g(P, `${n??""} `), O(y, "href", c), g(T, m), g(F, _), g(S, ` ${B??""} `), g(t, w)
+  f(b), N((n, s, m, _, B, w) => {
+    g(P, `${n??""} `), O(y, "href", s), g(T, m), g(F, _), g(S, ` ${B??""} `), g(t, w)
   }, [() => _e(), me, () => ge(), () => he(), () => xe(), () => ye()]), C(r, b), X()
 }
 export {

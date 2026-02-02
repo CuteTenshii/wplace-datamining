@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./CxGAPZJ7.js";
+} from "./B4ScQ8O8.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "aa4c5126665948c178117465fb480b1b818fb90b"
+      id: "1be1930440b8b07ce70b7b458d3e953490a5a011"
     }
   } catch {}
 })();
@@ -13,7 +13,7 @@ try {
   (function() {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       e = new n.Error().stack;
-    e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "bbf89b5e-e8dc-4a3c-a948-74dd3434ff7c", n._sentryDebugIdIdentifier = "sentry-dbid-bbf89b5e-e8dc-4a3c-a948-74dd3434ff7c")
+    e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "dca43167-302e-4852-b919-aa39ed239b91", n._sentryDebugIdIdentifier = "sentry-dbid-dca43167-302e-4852-b919-aa39ed239b91")
   })()
 } catch {}
 const o = () => "OR",
@@ -28,7 +28,7 @@ const o = () => "OR",
   f = () => "ИЛИ",
   d = () => "АБО",
   h = () => "HOẶC",
-  q2 = (n = {}, e = {}) => {
+  RZ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? o() : r === "pt" ? u() : r === "ch" ? i() : r === "de" ? s() : r === "es" ? c() : r === "fr" ? a() : r === "it" ? _() : r === "jp" ? l() : r === "pl" ? p() : r === "ru" ? f() : r === "uk" ? d() : h()
   },
@@ -44,13 +44,13 @@ const o = () => "OR",
   x = () => "ПРОБЕЛ",
   q = () => "ПРОБІЛ",
   S = () => "PHÍM CÁCH",
-  S2 = (n = {}, e = {}) => {
+  KZ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? m() : r === "pt" ? g() : r === "ch" ? k() : r === "de" ? b() : r === "es" ? v() : r === "fr" ? y() : r === "it" ? w() : r === "jp" ? j() : r === "pl" ? z() : r === "ru" ? x() : r === "uk" ? q() : S()
   },
   P = () => "Account Enforcement Policy and Code of Conduct",
-  C = () => "Política de Aplicação da Conta e Código de Conduta",
-  N = () => "账号执行政策与行为守则",
+  N = () => "Política de Aplicação da Conta e Código de Conduta",
+  C = () => "账号执行政策与行为守则",
   A = () => "Richtlinie zur Kontodurchsetzung und Verhaltenskodex",
   D = () => "Política de Cumplimiento de Cuenta y Código de Conducta",
   T = () => "Politique d’application du compte et Code de conduite",
@@ -60,15 +60,15 @@ const o = () => "OR",
   I = () => "Политика применения санкций к аккаунтам и Кодекс поведения",
   R = () => "Політика застосування санкцій до акаунтів та Кодекс поведінки",
   K = () => "Chính sách Xử lý Tài khoản và Quy tắc Ứng xử",
-  P2 = (n = {}, e = {}) => {
+  LZ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? P() : r === "pt" ? C() : r === "ch" ? N() : r === "de" ? A() : r === "es" ? D() : r === "fr" ? T() : r === "it" ? M() : r === "jp" ? E() : r === "pl" ? B() : r === "ru" ? I() : r === "uk" ? R() : K()
+    return r === "en" ? P() : r === "pt" ? N() : r === "ch" ? C() : r === "de" ? A() : r === "es" ? D() : r === "fr" ? T() : r === "it" ? M() : r === "jp" ? E() : r === "pl" ? B() : r === "ru" ? I() : r === "uk" ? R() : K()
   },
   L = () => "Account successfully deleted",
   W = () => "Conta deletada com sucesso",
   $ = () => "账号已成功删除",
-  O = () => "Konto erfolgreich gelöscht",
-  V = () => "Cuenta eliminada correctamente",
+  V = () => "Konto erfolgreich gelöscht",
+  O = () => "Cuenta eliminada correctamente",
   U = () => "Compte supprimé avec succès",
   H = () => "Account eliminato con successo",
   F = () => "アカウントを削除しました。",
@@ -76,9 +76,9 @@ const o = () => "OR",
   G = () => "Аккаунт успешно удалён",
   Q = () => "Обліковий запис успішно видалено",
   Y = () => "Đã xóa tài khoản thành công",
-  C2 = (n = {}, e = {}) => {
+  WZ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? L() : r === "pt" ? W() : r === "ch" ? $() : r === "de" ? O() : r === "es" ? V() : r === "fr" ? U() : r === "it" ? H() : r === "jp" ? F() : r === "pl" ? Z() : r === "ru" ? G() : r === "uk" ? Q() : Y()
+    return r === "en" ? L() : r === "pt" ? W() : r === "ch" ? $() : r === "de" ? V() : r === "es" ? O() : r === "fr" ? U() : r === "it" ? H() : r === "jp" ? F() : r === "pl" ? Z() : r === "ru" ? G() : r === "uk" ? Q() : Y()
   },
   J = () => "Add New",
   X = () => "Adicionar Novo",
@@ -92,7 +92,7 @@ const o = () => "OR",
   sr = () => "Добавить новый",
   cr = () => "Додати нове",
   ar = () => "Thêm Mới",
-  N2 = (n = {}, e = {}) => {
+  $Z = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? J() : r === "pt" ? X() : r === "ch" ? rr() : r === "de" ? er() : r === "es" ? nr() : r === "fr" ? tr() : r === "it" ? or() : r === "jp" ? ur() : r === "pl" ? ir() : r === "ru" ? sr() : r === "uk" ? cr() : ar()
   },
@@ -108,7 +108,7 @@ const o = () => "OR",
   br = () => "За всё время",
   vr = () => "За весь час",
   yr = () => "Toàn thời gian",
-  A2 = (n = {}, e = {}) => {
+  VZ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? _r() : r === "pt" ? lr() : r === "ch" ? pr() : r === "de" ? fr() : r === "es" ? dr() : r === "fr" ? hr() : r === "it" ? mr() : r === "jp" ? gr() : r === "pl" ? kr() : r === "ru" ? br() : r === "uk" ? vr() : yr()
   },
@@ -119,14 +119,14 @@ const o = () => "OR",
   qr = () => "Nombre de la alianza",
   Sr = () => "Nom de l’alliance",
   Pr = () => "Nome dell'alleanza",
-  Cr = () => "アライアンス名",
-  Nr = () => "Nazwa sojuszu",
+  Nr = () => "アライアンス名",
+  Cr = () => "Nazwa sojuszu",
   Ar = () => "Название альянса",
   Dr = () => "Назва альянсу",
   Tr = () => "Tên liên minh",
-  D2 = (n = {}, e = {}) => {
+  OZ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? wr() : r === "pt" ? jr() : r === "ch" ? zr() : r === "de" ? xr() : r === "es" ? qr() : r === "fr" ? Sr() : r === "it" ? Pr() : r === "jp" ? Cr() : r === "pl" ? Nr() : r === "ru" ? Ar() : r === "uk" ? Dr() : Tr()
+    return r === "en" ? wr() : r === "pt" ? jr() : r === "ch" ? zr() : r === "de" ? xr() : r === "es" ? qr() : r === "fr" ? Sr() : r === "it" ? Pr() : r === "jp" ? Nr() : r === "pl" ? Cr() : r === "ru" ? Ar() : r === "uk" ? Dr() : Tr()
   },
   Mr = n => `+${n.amount} Max. Charges`,
   Er = n => `+${n.amount} Tinta máxima`,
@@ -137,12 +137,12 @@ const o = () => "OR",
   Lr = n => `+${n.amount} cariche massime`,
   Wr = n => `最大チャージ +${n.amount}`,
   $r = n => `+${n.amount} maks. ładunków`,
-  Or = n => `+${n.amount} макс. зарядов`,
-  Vr = n => `+${n.amount} макс. зарядів`,
+  Vr = n => `+${n.amount} макс. зарядов`,
+  Or = n => `+${n.amount} макс. зарядів`,
   Ur = n => `+${n.amount} lượt tô tối đa`,
-  T2 = (n, e = {}) => {
+  UZ = (n, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Mr(n) : r === "pt" ? Er(n) : r === "ch" ? Br(n) : r === "de" ? Ir(n) : r === "es" ? Rr(n) : r === "fr" ? Kr(n) : r === "it" ? Lr(n) : r === "jp" ? Wr(n) : r === "pl" ? $r(n) : r === "ru" ? Or(n) : r === "uk" ? Vr(n) : Ur(n)
+    return r === "en" ? Mr(n) : r === "pt" ? Er(n) : r === "ch" ? Br(n) : r === "de" ? Ir(n) : r === "es" ? Rr(n) : r === "fr" ? Kr(n) : r === "it" ? Lr(n) : r === "jp" ? Wr(n) : r === "pl" ? $r(n) : r === "ru" ? Vr(n) : r === "uk" ? Or(n) : Ur(n)
   },
   Hr = n => `+${n.amount} Paint Charges`,
   Fr = n => `+${n.amount} Tintas`,
@@ -156,7 +156,7 @@ const o = () => "OR",
   ee = n => `+${n.amount} зарядов`,
   ne = n => `+${n.amount} зарядів фарби`,
   te = n => `+${n.amount} lượt tô`,
-  M2 = (n, e = {}) => {
+  HZ = (n, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Hr(n) : r === "pt" ? Fr(n) : r === "ch" ? Zr(n) : r === "de" ? Gr(n) : r === "es" ? Qr(n) : r === "fr" ? Yr(n) : r === "it" ? Jr(n) : r === "jp" ? Xr(n) : r === "pl" ? re(n) : r === "ru" ? ee(n) : r === "uk" ? ne(n) : te(n)
   },
@@ -172,7 +172,7 @@ const o = () => "OR",
   fe = () => "и перемещайте курсор по карте.",
   de = () => "і проведіть курсором по карті.",
   he = () => "và di chuyển con trỏ của bạn trên bản đồ.",
-  E2 = (n = {}, e = {}) => {
+  FZ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? oe() : r === "pt" ? ue() : r === "ch" ? ie() : r === "de" ? se() : r === "es" ? ce() : r === "fr" ? ae() : r === "it" ? _e() : r === "jp" ? le() : r === "pl" ? pe() : r === "ru" ? fe() : r === "uk" ? de() : he()
   },
@@ -188,13 +188,13 @@ const o = () => "OR",
   xe = () => "Почему, по вашему мнению, блокировка должна быть снята?",
   qe = () => "Чому, на вашу думку, блокування має бути скасовано?",
   Se = () => "Vì sao việc đình chỉ tài khoản của bạn nên được gỡ bỏ?",
-  B2 = (n = {}, e = {}) => {
+  ZZ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? me() : r === "pt" ? ge() : r === "ch" ? ke() : r === "de" ? be() : r === "es" ? ve() : r === "fr" ? ye() : r === "it" ? we() : r === "jp" ? je() : r === "pl" ? ze() : r === "ru" ? xe() : r === "uk" ? qe() : Se()
   },
   Pe = () => "Tell us why you think your suspension should be reconsidered",
-  Ce = () => "Explique por que você acha que sua suspensão deve ser reconsiderada",
-  Ne = () => "告诉我们你认为封禁应被重新考虑的原因",
+  Ne = () => "Explique por que você acha que sua suspensão deve ser reconsiderada",
+  Ce = () => "告诉我们你认为封禁应被重新考虑的原因",
   Ae = () => "Erkläre uns, warum deine Sperre deiner Meinung nach überprüft werden sollte",
   De = () => "Cuéntanos por qué crees que tu suspensión debería ser reconsiderada",
   Te = () => "Expliquez-nous pourquoi vous pensez que votre suspension devrait être reconsidérée",
@@ -204,15 +204,15 @@ const o = () => "OR",
   Ie = () => "Расскажите, почему вы считаете, что вашу блокировку стоит пересмотреть",
   Re = () => "Опишіть, чому ви вважаєте, що блокування слід переглянути",
   Ke = () => "Hãy cho chúng tôi biết vì sao bạn nghĩ việc đình chỉ tài khoản nên được xem xét lại",
-  I2 = (n = {}, e = {}) => {
+  GZ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Pe() : r === "pt" ? Ce() : r === "ch" ? Ne() : r === "de" ? Ae() : r === "es" ? De() : r === "fr" ? Te() : r === "it" ? Me() : r === "jp" ? Ee() : r === "pl" ? Be() : r === "ru" ? Ie() : r === "uk" ? Re() : Ke()
+    return r === "en" ? Pe() : r === "pt" ? Ne() : r === "ch" ? Ce() : r === "de" ? Ae() : r === "es" ? De() : r === "fr" ? Te() : r === "it" ? Me() : r === "jp" ? Ee() : r === "pl" ? Be() : r === "ru" ? Ie() : r === "uk" ? Re() : Ke()
   },
   Le = () => "Appeal sent successfully",
   We = () => "Apelo enviado com sucesso",
   $e = () => "申诉已成功发送",
-  Oe = () => "Einspruch erfolgreich gesendet",
-  Ve = () => "Apelación enviada correctamente",
+  Ve = () => "Einspruch erfolgreich gesendet",
+  Oe = () => "Apelación enviada correctamente",
   Ue = () => "Recours envoyé avec succès",
   He = () => "Ricorso inviato con successo",
   Fe = () => "異議申立てを送信しました。",
@@ -220,9 +220,9 @@ const o = () => "OR",
   Ge = () => "Апелляция успешно отправлена",
   Qe = () => "Апеляцію успішно надіслано",
   Ye = () => "Đã gửi kháng cáo thành công",
-  R2 = (n = {}, e = {}) => {
+  QZ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Le() : r === "pt" ? We() : r === "ch" ? $e() : r === "de" ? Oe() : r === "es" ? Ve() : r === "fr" ? Ue() : r === "it" ? He() : r === "jp" ? Fe() : r === "pl" ? Ze() : r === "ru" ? Ge() : r === "uk" ? Qe() : Ye()
+    return r === "en" ? Le() : r === "pt" ? We() : r === "ch" ? $e() : r === "de" ? Ve() : r === "es" ? Oe() : r === "fr" ? Ue() : r === "it" ? He() : r === "jp" ? Fe() : r === "pl" ? Ze() : r === "ru" ? Ge() : r === "uk" ? Qe() : Ye()
   },
   Je = () => "Are you absolutely sure?",
   Xe = () => "Você tem certeza absoluta?",
@@ -236,7 +236,7 @@ const o = () => "OR",
   cn = () => "Вы уверены?",
   an = () => "Ви абсолютно впевнені?",
   _n = () => "Bạn có thực sự chắc chắn?",
-  K2 = (n = {}, e = {}) => {
+  YZ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Je() : r === "pt" ? Xe() : r === "ch" ? rn() : r === "de" ? en() : r === "es" ? nn() : r === "fr" ? tn() : r === "it" ? on() : r === "jp" ? un() : r === "pl" ? sn() : r === "ru" ? cn() : r === "uk" ? an() : _n()
   },
@@ -252,7 +252,7 @@ const o = () => "OR",
   vn = () => "Забанить в альянсе",
   yn = () => "Забанити в альянсі",
   wn = () => "Cấm khỏi liên minh",
-  L2 = (n = {}, e = {}) => {
+  JZ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? ln() : r === "pt" ? pn() : r === "ch" ? fn() : r === "de" ? dn() : r === "es" ? hn() : r === "fr" ? mn() : r === "it" ? gn() : r === "jp" ? kn() : r === "pl" ? bn() : r === "ru" ? vn() : r === "uk" ? yn() : wn()
   },
@@ -262,15 +262,15 @@ const o = () => "OR",
   qn = n => `Grund: ${n.reason}`,
   Sn = n => `Motivo: ${n.reason}`,
   Pn = n => `Raison : ${n.reason}`,
-  Cn = n => `Motivo: ${n.reason}`,
-  Nn = n => `理由: ${n.reason}`,
+  Nn = n => `Motivo: ${n.reason}`,
+  Cn = n => `理由: ${n.reason}`,
   An = n => `Powód: ${n.reason}`,
   Dn = n => `Причина: ${n.reason}`,
   Tn = n => `Причина: ${n.reason}`,
   Mn = n => `Lý do: ${n.reason}`,
-  W2 = (n, e = {}) => {
+  XZ = (n, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? jn(n) : r === "pt" ? zn(n) : r === "ch" ? xn(n) : r === "de" ? qn(n) : r === "es" ? Sn(n) : r === "fr" ? Pn(n) : r === "it" ? Cn(n) : r === "jp" ? Nn(n) : r === "pl" ? An(n) : r === "ru" ? Dn(n) : r === "uk" ? Tn(n) : Mn(n)
+    return r === "en" ? jn(n) : r === "pt" ? zn(n) : r === "ch" ? xn(n) : r === "de" ? qn(n) : r === "es" ? Sn(n) : r === "fr" ? Pn(n) : r === "it" ? Nn(n) : r === "jp" ? Cn(n) : r === "pl" ? An(n) : r === "ru" ? Dn(n) : r === "uk" ? Tn(n) : Mn(n)
   },
   En = () => "Bug report",
   Bn = () => "Reportar bug",
@@ -280,13 +280,13 @@ const o = () => "OR",
   Ln = () => "Signaler un bug",
   Wn = () => "Segnala bug",
   $n = () => "バグ報告",
-  On = () => "Zgłoszenie błędu",
-  Vn = () => "Сообщить об ошибке",
+  Vn = () => "Zgłoszenie błędu",
+  On = () => "Сообщить об ошибке",
   Un = () => "Звіт про баг",
   Hn = () => "Báo lỗi",
-  $2 = (n = {}, e = {}) => {
+  rG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? En() : r === "pt" ? Bn() : r === "ch" ? In() : r === "de" ? Rn() : r === "es" ? Kn() : r === "fr" ? Ln() : r === "it" ? Wn() : r === "jp" ? $n() : r === "pl" ? On() : r === "ru" ? Vn() : r === "uk" ? Un() : Hn()
+    return r === "en" ? En() : r === "pt" ? Bn() : r === "ch" ? In() : r === "de" ? Rn() : r === "es" ? Kn() : r === "fr" ? Ln() : r === "it" ? Wn() : r === "jp" ? $n() : r === "pl" ? Vn() : r === "ru" ? On() : r === "uk" ? Un() : Hn()
   },
   Fn = () => "Change language",
   Zn = () => "Mudar idioma",
@@ -300,7 +300,7 @@ const o = () => "OR",
   nt = () => "Изменить язык",
   tt = () => "Змінити мову",
   ot = () => "Thay đổi ngôn ngữ",
-  O2 = (n = {}, e = {}) => {
+  eG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Fn() : r === "pt" ? Zn() : r === "ch" ? Gn() : r === "de" ? Qn() : r === "es" ? Yn() : r === "fr" ? Jn() : r === "it" ? Xn() : r === "jp" ? rt() : r === "pl" ? et() : r === "ru" ? nt() : r === "uk" ? tt() : ot()
   },
@@ -316,7 +316,7 @@ const o = () => "OR",
   dt = () => "Изменить изображение:",
   ht = () => "Змінити зображення:",
   mt = () => "Đổi ảnh:",
-  V2 = (n = {}, e = {}) => {
+  nG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? ut() : r === "pt" ? it() : r === "ch" ? st() : r === "de" ? ct() : r === "es" ? at() : r === "fr" ? _t() : r === "it" ? lt() : r === "jp" ? pt() : r === "pl" ? ft() : r === "ru" ? dt() : r === "uk" ? ht() : mt()
   },
@@ -332,12 +332,12 @@ const o = () => "OR",
   qt = () => "Получить",
   St = () => "Отримати",
   Pt = () => "Nhận",
-  U2 = (n = {}, e = {}) => {
+  tG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? gt() : r === "pt" ? kt() : r === "ch" ? bt() : r === "de" ? vt() : r === "es" ? yt() : r === "fr" ? wt() : r === "it" ? jt() : r === "jp" ? zt() : r === "pl" ? xt() : r === "ru" ? qt() : r === "uk" ? St() : Pt()
   },
-  Ct = () => "Claimed",
-  Nt = () => "Resgatado",
+  Nt = () => "Claimed",
+  Ct = () => "Resgatado",
   At = () => "已领取",
   Dt = () => "Eingesammelt",
   Tt = () => "Reclamado",
@@ -348,14 +348,14 @@ const o = () => "OR",
   Rt = () => "Получено",
   Kt = () => "Отримано",
   Lt = () => "Đã nhận",
-  H2 = (n = {}, e = {}) => {
+  oG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Ct() : r === "pt" ? Nt() : r === "ch" ? At() : r === "de" ? Dt() : r === "es" ? Tt() : r === "fr" ? Mt() : r === "it" ? Et() : r === "jp" ? Bt() : r === "pl" ? It() : r === "ru" ? Rt() : r === "uk" ? Kt() : Lt()
+    return r === "en" ? Nt() : r === "pt" ? Ct() : r === "ch" ? At() : r === "de" ? Dt() : r === "es" ? Tt() : r === "fr" ? Mt() : r === "it" ? Et() : r === "jp" ? Bt() : r === "pl" ? It() : r === "ru" ? Rt() : r === "uk" ? Kt() : Lt()
   },
   Wt = () => "Click",
   $t = () => "Clique",
-  Ot = () => "点击",
-  Vt = () => "Klicken",
+  Vt = () => "点击",
+  Ot = () => "Klicken",
   Ut = () => "Haz clic",
   Ht = () => "Cliquez",
   Ft = () => "Clicca",
@@ -364,9 +364,9 @@ const o = () => "OR",
   Qt = () => "Клик",
   Yt = () => "Клацніть",
   Jt = () => "Nhấp",
-  F2 = (n = {}, e = {}) => {
+  uG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Wt() : r === "pt" ? $t() : r === "ch" ? Ot() : r === "de" ? Vt() : r === "es" ? Ut() : r === "fr" ? Ht() : r === "it" ? Ft() : r === "jp" ? Zt() : r === "pl" ? Gt() : r === "ru" ? Qt() : r === "uk" ? Yt() : Jt()
+    return r === "en" ? Wt() : r === "pt" ? $t() : r === "ch" ? Vt() : r === "de" ? Ot() : r === "es" ? Ut() : r === "fr" ? Ht() : r === "it" ? Ft() : r === "jp" ? Zt() : r === "pl" ? Gt() : r === "ru" ? Qt() : r === "uk" ? Yt() : Jt()
   },
   Xt = () => "Color Picker",
   ro = () => "Conta Gotas",
@@ -380,7 +380,7 @@ const o = () => "OR",
   co = () => "Пипетка",
   ao = () => "Піпетка",
   _o = () => "Bảng chọn màu",
-  Z2 = (n = {}, e = {}) => {
+  iG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Xt() : r === "pt" ? ro() : r === "ch" ? eo() : r === "de" ? no() : r === "es" ? to() : r === "fr" ? oo() : r === "it" ? uo() : r === "jp" ? io() : r === "pl" ? so() : r === "ru" ? co() : r === "uk" ? ao() : _o()
   },
@@ -396,7 +396,7 @@ const o = () => "OR",
   yo = () => "Координаты",
   wo = () => "Координати",
   jo = () => "Tọa độ",
-  G2 = (n = {}, e = {}) => {
+  sG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? lo() : r === "pt" ? po() : r === "ch" ? fo() : r === "de" ? ho() : r === "es" ? mo() : r === "fr" ? go() : r === "it" ? ko() : r === "jp" ? bo() : r === "pl" ? vo() : r === "ru" ? yo() : r === "uk" ? wo() : jo()
   },
@@ -405,16 +405,16 @@ const o = () => "OR",
   qo = () => "已复制",
   So = () => "Kopiert",
   Po = () => "Copiado",
-  Co = () => "Copié",
-  No = () => "Copiato",
+  No = () => "Copié",
+  Co = () => "Copiato",
   Ao = () => "コピーしました。",
   Do = () => "Skopiowano",
   To = () => "Скопировано",
   Mo = () => "Скопійовано",
   Eo = () => "Đã sao chép",
-  Q2 = (n = {}, e = {}) => {
+  cG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? zo() : r === "pt" ? xo() : r === "ch" ? qo() : r === "de" ? So() : r === "es" ? Po() : r === "fr" ? Co() : r === "it" ? No() : r === "jp" ? Ao() : r === "pl" ? Do() : r === "ru" ? To() : r === "uk" ? Mo() : Eo()
+    return r === "en" ? zo() : r === "pt" ? xo() : r === "ch" ? qo() : r === "de" ? So() : r === "es" ? Po() : r === "fr" ? No() : r === "it" ? Co() : r === "jp" ? Ao() : r === "pl" ? Do() : r === "ru" ? To() : r === "uk" ? Mo() : Eo()
   },
   Bo = n => `Could not install the app: ${n.error}`,
   Io = n => `Não pode instalar o app: ${n.error}`,
@@ -423,14 +423,14 @@ const o = () => "OR",
   Lo = n => `No se pudo instalar la app: ${n.error}`,
   Wo = n => `Impossible d’installer l’application : ${n.error}`,
   $o = n => `Impossibile installare l'app: ${n.error}`,
-  Oo = n => `アプリをインストールできませんでした: ${n.error}`,
-  Vo = n => `Nie udało się zainstalować aplikacji: ${n.error}`,
+  Vo = n => `アプリをインストールできませんでした: ${n.error}`,
+  Oo = n => `Nie udało się zainstalować aplikacji: ${n.error}`,
   Uo = n => `Не удалось установить приложение: ${n.error}`,
   Ho = n => `Не вдалося встановити застосунок: ${n.error}`,
   Fo = n => `Không thể cài đặt ứng dụng: ${n.error}`,
-  Y2 = (n, e = {}) => {
+  aG = (n, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Bo(n) : r === "pt" ? Io(n) : r === "ch" ? Ro(n) : r === "de" ? Ko(n) : r === "es" ? Lo(n) : r === "fr" ? Wo(n) : r === "it" ? $o(n) : r === "jp" ? Oo(n) : r === "pl" ? Vo(n) : r === "ru" ? Uo(n) : r === "uk" ? Ho(n) : Fo(n)
+    return r === "en" ? Bo(n) : r === "pt" ? Io(n) : r === "ch" ? Ro(n) : r === "de" ? Ko(n) : r === "es" ? Lo(n) : r === "fr" ? Wo(n) : r === "it" ? $o(n) : r === "jp" ? Vo(n) : r === "pl" ? Oo(n) : r === "ru" ? Uo(n) : r === "uk" ? Ho(n) : Fo(n)
   },
   Zo = () => "Could not logout. Try refreshing the page.",
   Go = () => "Não foi possível sair da conta. Tente recarregar a página.",
@@ -444,7 +444,7 @@ const o = () => "OR",
   tu = () => "Не удалось выйти из аккаунта. Попробуйте перезагрузить страницу.",
   ou = () => "Не вдалося вийти з акаунта. Спробуйте оновити сторінку.",
   uu = () => "Không thể đăng xuất. Hãy thử tải lại trang.",
-  J2 = (n = {}, e = {}) => {
+  _G = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Zo() : r === "pt" ? Go() : r === "ch" ? Qo() : r === "de" ? Yo() : r === "es" ? Jo() : r === "fr" ? Xo() : r === "it" ? ru() : r === "jp" ? eu() : r === "pl" ? nu() : r === "ru" ? tu() : r === "uk" ? ou() : uu()
   },
@@ -460,7 +460,7 @@ const o = () => "OR",
   hu = () => "Страны",
   mu = () => "Країни",
   gu = () => "Quốc gia",
-  X2 = (n = {}, e = {}) => {
+  lG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? iu() : r === "pt" ? su() : r === "ch" ? cu() : r === "de" ? au() : r === "es" ? _u() : r === "fr" ? lu() : r === "it" ? pu() : r === "jp" ? fu() : r === "pl" ? du() : r === "ru" ? hu() : r === "uk" ? mu() : gu()
   },
@@ -475,12 +475,12 @@ const o = () => "OR",
   qu = () => "Kraj",
   Su = () => "Страна",
   Pu = () => "Країна",
-  Cu = () => "Quốc gia",
-  rG = (n = {}, e = {}) => {
+  Nu = () => "Quốc gia",
+  pG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? ku() : r === "pt" ? bu() : r === "ch" ? vu() : r === "de" ? yu() : r === "es" ? wu() : r === "fr" ? ju() : r === "it" ? zu() : r === "jp" ? xu() : r === "pl" ? qu() : r === "ru" ? Su() : r === "uk" ? Pu() : Cu()
+    return r === "en" ? ku() : r === "pt" ? bu() : r === "ch" ? vu() : r === "de" ? yu() : r === "es" ? wu() : r === "fr" ? ju() : r === "it" ? zu() : r === "jp" ? xu() : r === "pl" ? qu() : r === "ru" ? Su() : r === "uk" ? Pu() : Nu()
   },
-  Nu = () => "Create",
+  Cu = () => "Create",
   Au = () => "Criar",
   Du = () => "创建",
   Tu = () => "Erstellen",
@@ -492,13 +492,13 @@ const o = () => "OR",
   Ku = () => "Создать",
   Lu = () => "Створити",
   Wu = () => "Tạo",
-  eG = (n = {}, e = {}) => {
+  fG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Nu() : r === "pt" ? Au() : r === "ch" ? Du() : r === "de" ? Tu() : r === "es" ? Mu() : r === "fr" ? Eu() : r === "it" ? Bu() : r === "jp" ? Iu() : r === "pl" ? Ru() : r === "ru" ? Ku() : r === "uk" ? Lu() : Wu()
+    return r === "en" ? Cu() : r === "pt" ? Au() : r === "ch" ? Du() : r === "de" ? Tu() : r === "es" ? Mu() : r === "fr" ? Eu() : r === "it" ? Bu() : r === "jp" ? Iu() : r === "pl" ? Ru() : r === "ru" ? Ku() : r === "uk" ? Lu() : Wu()
   },
   $u = () => "Create alliance",
-  Ou = () => "Criar aliança",
-  Vu = () => "创建联盟",
+  Vu = () => "Criar aliança",
+  Ou = () => "创建联盟",
   Uu = () => "Allianz erstellen",
   Hu = () => "Crear alianza",
   Fu = () => "Créer une alliance",
@@ -508,9 +508,9 @@ const o = () => "OR",
   Yu = () => "Создать альянс",
   Ju = () => "Створити альянс",
   Xu = () => "Tạo liên minh",
-  nG = (n = {}, e = {}) => {
+  dG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? $u() : r === "pt" ? Ou() : r === "ch" ? Vu() : r === "de" ? Uu() : r === "es" ? Hu() : r === "fr" ? Fu() : r === "it" ? Zu() : r === "jp" ? Gu() : r === "pl" ? Qu() : r === "ru" ? Yu() : r === "uk" ? Ju() : Xu()
+    return r === "en" ? $u() : r === "pt" ? Vu() : r === "ch" ? Ou() : r === "de" ? Uu() : r === "es" ? Hu() : r === "fr" ? Fu() : r === "it" ? Zu() : r === "jp" ? Gu() : r === "pl" ? Qu() : r === "ru" ? Yu() : r === "uk" ? Ju() : Xu()
   },
   ri = () => "Create an alliance",
   ei = () => "Crie uma aliança",
@@ -524,7 +524,7 @@ const o = () => "OR",
   ai = () => "Создать альянс",
   _i = () => "Створіть альянс",
   li = () => "Tạo một liên minh",
-  tG = (n = {}, e = {}) => {
+  hG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? ri() : r === "pt" ? ei() : r === "ch" ? ni() : r === "de" ? ti() : r === "es" ? oi() : r === "fr" ? ui() : r === "it" ? ii() : r === "jp" ? si() : r === "pl" ? ci() : r === "ru" ? ai() : r === "uk" ? _i() : li()
   },
@@ -540,7 +540,7 @@ const o = () => "OR",
   yi = () => "Текущее изображение",
   wi = () => "Поточне зображення",
   ji = () => "Ảnh hiện tại",
-  oG = (n = {}, e = {}) => {
+  mG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? pi() : r === "pt" ? fi() : r === "ch" ? di() : r === "de" ? hi() : r === "es" ? mi() : r === "fr" ? gi() : r === "it" ? ki() : r === "jp" ? bi() : r === "pl" ? vi() : r === "ru" ? yi() : r === "uk" ? wi() : ji()
   },
@@ -549,16 +549,16 @@ const o = () => "OR",
   qi = () => "深色模式",
   Si = () => "Dunkler Modus",
   Pi = () => "Modo oscuro",
-  Ci = () => "Mode sombre",
-  Ni = () => "Tema scuro",
+  Ni = () => "Mode sombre",
+  Ci = () => "Tema scuro",
   Ai = () => "ダークテーマ",
   Di = () => "Tryb ciemny",
   Ti = () => "Тёмная тема",
   Mi = () => "Темна тема",
   Ei = () => "Chế độ tối",
-  uG = (n = {}, e = {}) => {
+  gG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? zi() : r === "pt" ? xi() : r === "ch" ? qi() : r === "de" ? Si() : r === "es" ? Pi() : r === "fr" ? Ci() : r === "it" ? Ni() : r === "jp" ? Ai() : r === "pl" ? Di() : r === "ru" ? Ti() : r === "uk" ? Mi() : Ei()
+    return r === "en" ? zi() : r === "pt" ? xi() : r === "ch" ? qi() : r === "de" ? Si() : r === "es" ? Pi() : r === "fr" ? Ni() : r === "it" ? Ci() : r === "jp" ? Ai() : r === "pl" ? Di() : r === "ru" ? Ti() : r === "uk" ? Mi() : Ei()
   },
   Bi = () => "Delete Account",
   Ii = () => "Deletar Conta",
@@ -567,14 +567,14 @@ const o = () => "OR",
   Li = () => "Eliminar cuenta",
   Wi = () => "Supprimer le compte",
   $i = () => "Elimina account",
-  Oi = () => "アカウントを削除",
-  Vi = () => "Usuń konto",
+  Vi = () => "アカウントを削除",
+  Oi = () => "Usuń konto",
   Ui = () => "Удалить аккаунт",
   Hi = () => "Видалити акаунт",
   Fi = () => "Xóa tài khoản",
-  iG = (n = {}, e = {}) => {
+  kG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Bi() : r === "pt" ? Ii() : r === "ch" ? Ri() : r === "de" ? Ki() : r === "es" ? Li() : r === "fr" ? Wi() : r === "it" ? $i() : r === "jp" ? Oi() : r === "pl" ? Vi() : r === "ru" ? Ui() : r === "uk" ? Hi() : Fi()
+    return r === "en" ? Bi() : r === "pt" ? Ii() : r === "ch" ? Ri() : r === "de" ? Ki() : r === "es" ? Li() : r === "fr" ? Wi() : r === "it" ? $i() : r === "jp" ? Vi() : r === "pl" ? Oi() : r === "ru" ? Ui() : r === "uk" ? Hi() : Fi()
   },
   Zi = () => "🙅 Disclosing other's personal information is not allowed",
   Gi = () => "🙅 Divulgar informações pessoais dos outros não é permitido",
@@ -588,7 +588,7 @@ const o = () => "OR",
   ts = () => "🙅 Публикация личной информации других людей запрещена",
   os = () => "🙅 Поширення особистої інформації інших людей заборонено",
   us = () => "🙅 Không được phép tiết lộ thông tin cá nhân của người khác",
-  sG = (n = {}, e = {}) => {
+  bG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Zi() : r === "pt" ? Gi() : r === "ch" ? Qi() : r === "de" ? Yi() : r === "es" ? Ji() : r === "fr" ? Xi() : r === "it" ? rs() : r === "jp" ? es() : r === "pl" ? ns() : r === "ru" ? ts() : r === "uk" ? os() : us()
   },
@@ -604,7 +604,7 @@ const o = () => "OR",
   hs = () => "Ваш аккаунт Discord успешно привязан.",
   ms = () => "Ваш акаунт Discord успішно привʼязано.",
   gs = () => "Đã liên kết tài khoản Discord của bạn thành công.",
-  cG = (n = {}, e = {}) => {
+  vG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? is() : r === "pt" ? ss() : r === "ch" ? cs() : r === "de" ? as() : r === "es" ? _s() : r === "fr" ? ls() : r === "it" ? ps() : r === "jp" ? fs() : r === "pl" ? ds() : r === "ru" ? hs() : r === "uk" ? ms() : gs()
   },
@@ -619,12 +619,12 @@ const o = () => "OR",
   qs = () => "Nazwa użytkownika Discord",
   Ss = () => "Имя пользователя в Discord",
   Ps = () => "Імʼя в Discord",
-  Cs = () => "Tên người dùng Discord",
-  aG = (n = {}, e = {}) => {
+  Ns = () => "Tên người dùng Discord",
+  yG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? ks() : r === "pt" ? bs() : r === "ch" ? vs() : r === "de" ? ys() : r === "es" ? ws() : r === "fr" ? js() : r === "it" ? zs() : r === "jp" ? xs() : r === "pl" ? qs() : r === "ru" ? Ss() : r === "uk" ? Ps() : Cs()
+    return r === "en" ? ks() : r === "pt" ? bs() : r === "ch" ? vs() : r === "de" ? ys() : r === "es" ? ws() : r === "fr" ? js() : r === "it" ? zs() : r === "jp" ? xs() : r === "pl" ? qs() : r === "ru" ? Ss() : r === "uk" ? Ps() : Ns()
   },
-  Ns = () => "Display your country’s flag next to your username. Plus, when painting in regions where you own the corresponding flag, you recover 10% of the charges spent.",
+  Cs = () => "Display your country’s flag next to your username. Plus, when painting in regions where you own the corresponding flag, you recover 10% of the charges spent.",
   As = () => "Exiba a bandeira do seu país ao lado do seu nome de usuário. Além disso, ao pintar em regiões onde você possui a bandeira correspondente, você recupera 10% das tintas gastas.",
   Ds = () => "在用户名旁显示你的国家国旗。此外，当你在拥有对应国旗的区域内绘制像素时，可以返还 10% 消耗的充能。",
   Ts = () => "Zeige die Flagge deines Landes neben deinem Benutzernamen an. Wenn du in Regionen malst, in denen du die entsprechende Flagge besitzt, erhältst du 10 % der verbrauchten Pixel zurück.",
@@ -636,13 +636,13 @@ const o = () => "OR",
   Ks = () => "Покажите флаг своей страны рядом с именем пользователя. Кроме того, рисуя в регионах, где у вас есть соответствующий флаг, вы возвращаете 10% потраченных зарядов.",
   Ls = () => "Показуйте прапор своєї країни поруч із ім’ям користувача. Також, коли ви малюєте в регіонах, що відповідають вашому прапору, ви повертаєте 10% витрачених зарядів.",
   Ws = () => "Hiển thị cờ quốc gia bên cạnh tên người dùng của bạn. Ngoài ra, khi tô trong khu vực tương ứng với lá cờ bạn sở hữu, bạn sẽ nhận lại 10% lượt tô đã dùng.",
-  _G = (n = {}, e = {}) => {
+  wG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Ns() : r === "pt" ? As() : r === "ch" ? Ds() : r === "de" ? Ts() : r === "es" ? Ms() : r === "fr" ? Es() : r === "it" ? Bs() : r === "jp" ? Is() : r === "pl" ? Rs() : r === "ru" ? Ks() : r === "uk" ? Ls() : Ws()
+    return r === "en" ? Cs() : r === "pt" ? As() : r === "ch" ? Ds() : r === "de" ? Ts() : r === "es" ? Ms() : r === "fr" ? Es() : r === "it" ? Bs() : r === "jp" ? Is() : r === "pl" ? Rs() : r === "ru" ? Ks() : r === "uk" ? Ls() : Ws()
   },
   $s = () => "😈 Do not paint over other artworks using random colors or patterns just to mess things up",
-  Os = () => "😈 Não desenhe por cima de outras artes usando cores ou padrões aleatórios só para bagunçar",
-  Vs = () => "😈 请不要随意用随机颜色或图案覆盖他人的作品来捣乱",
+  Vs = () => "😈 Não desenhe por cima de outras artes usando cores ou padrões aleatórios só para bagunçar",
+  Os = () => "😈 请不要随意用随机颜色或图案覆盖他人的作品来捣乱",
   Us = () => "😈 Übermale nicht andere Kunstwerke mit irgendwelchen Farben oder Mustern, nur um Chaos zu stiften",
   Hs = () => "😈 No pintes sobre las obras de otros usando colores o patrones aleatorios sólo para arruinar",
   Fs = () => "😈 Ne peignez pas par-dessus les œuvres des autres avec des couleurs ou motifs aléatoires juste pour gâcher",
@@ -652,9 +652,9 @@ const o = () => "OR",
   Ys = () => "😈 Не рисуйте поверх чужих работ случайными цветами или узорами просто ради того, чтобы испортить их",
   Js = () => "😈 Не малюйте поверх чужих робіт випадковими кольорами чи візерунками лише заради псування",
   Xs = () => "😈 Đừng tô đè lên tác phẩm của người khác bằng màu ngẫu nhiên chỉ để phá",
-  lG = (n = {}, e = {}) => {
+  jG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? $s() : r === "pt" ? Os() : r === "ch" ? Vs() : r === "de" ? Us() : r === "es" ? Hs() : r === "fr" ? Fs() : r === "it" ? Zs() : r === "jp" ? Gs() : r === "pl" ? Qs() : r === "ru" ? Ys() : r === "uk" ? Js() : Xs()
+    return r === "en" ? $s() : r === "pt" ? Vs() : r === "ch" ? Os() : r === "de" ? Us() : r === "es" ? Hs() : r === "fr" ? Fs() : r === "it" ? Zs() : r === "jp" ? Gs() : r === "pl" ? Qs() : r === "ru" ? Ys() : r === "uk" ? Js() : Xs()
   },
   rc = () => "Does not need to be equipped to provide the bonus",
   ec = () => "Não precisa estar equipada para obter o bônus",
@@ -668,7 +668,7 @@ const o = () => "OR",
   ac = () => "Не нужно экипировать, чтобы получить бонус",
   _c = () => "Не обовʼязково обладнувати, щоб отримати бонус",
   lc = () => "Không cần trang bị để nhận hiệu ứng",
-  pG = (n = {}, e = {}) => {
+  zG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? rc() : r === "pt" ? ec() : r === "ch" ? nc() : r === "de" ? tc() : r === "es" ? oc() : r === "fr" ? uc() : r === "it" ? ic() : r === "jp" ? sc() : r === "pl" ? cc() : r === "ru" ? ac() : r === "uk" ? _c() : lc()
   },
@@ -684,7 +684,7 @@ const o = () => "OR",
   yc = () => "Скачать",
   wc = () => "Завантажити",
   jc = () => "Tải xuống",
-  fG = (n = {}, e = {}) => {
+  xG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? pc() : r === "pt" ? fc() : r === "ch" ? dc() : r === "de" ? hc() : r === "es" ? mc() : r === "fr" ? gc() : r === "it" ? kc() : r === "jp" ? bc() : r === "pl" ? vc() : r === "ru" ? yc() : r === "uk" ? wc() : jc()
   },
@@ -693,16 +693,16 @@ const o = () => "OR",
   qc = () => "编辑个人资料",
   Sc = () => "Profil bearbeiten",
   Pc = () => "Editar perfil",
-  Cc = () => "Modifier le profil",
-  Nc = () => "Modifica profilo",
+  Nc = () => "Modifier le profil",
+  Cc = () => "Modifica profilo",
   Ac = () => "プロフィールを編集",
   Dc = () => "Edytuj profil",
   Tc = () => "Редактировать профиль",
   Mc = () => "Редагувати профіль",
   Ec = () => "Chỉnh sửa hồ sơ",
-  dG = (n = {}, e = {}) => {
+  qG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? zc() : r === "pt" ? xc() : r === "ch" ? qc() : r === "de" ? Sc() : r === "es" ? Pc() : r === "fr" ? Cc() : r === "it" ? Nc() : r === "jp" ? Ac() : r === "pl" ? Dc() : r === "ru" ? Tc() : r === "uk" ? Mc() : Ec()
+    return r === "en" ? zc() : r === "pt" ? xc() : r === "ch" ? qc() : r === "de" ? Sc() : r === "es" ? Pc() : r === "fr" ? Nc() : r === "it" ? Cc() : r === "jp" ? Ac() : r === "pl" ? Dc() : r === "ru" ? Tc() : r === "uk" ? Mc() : Ec()
   },
   Bc = () => "Equip",
   Ic = () => "Equipar",
@@ -711,14 +711,14 @@ const o = () => "OR",
   Lc = () => "Equipar",
   Wc = () => "Équiper",
   $c = () => "Equipaggia",
-  Oc = () => "装備する",
-  Vc = () => "Załóż",
+  Vc = () => "装備する",
+  Oc = () => "Załóż",
   Uc = () => "Экипировать",
   Hc = () => "Оснастити",
   Fc = () => "Trang bị",
-  hG = (n = {}, e = {}) => {
+  SG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Bc() : r === "pt" ? Ic() : r === "ch" ? Rc() : r === "de" ? Kc() : r === "es" ? Lc() : r === "fr" ? Wc() : r === "it" ? $c() : r === "jp" ? Oc() : r === "pl" ? Vc() : r === "ru" ? Uc() : r === "uk" ? Hc() : Fc()
+    return r === "en" ? Bc() : r === "pt" ? Ic() : r === "ch" ? Rc() : r === "de" ? Kc() : r === "es" ? Lc() : r === "fr" ? Wc() : r === "it" ? $c() : r === "jp" ? Vc() : r === "pl" ? Oc() : r === "ru" ? Uc() : r === "uk" ? Hc() : Fc()
   },
   Zc = () => "Equipped",
   Gc = () => "Equipado",
@@ -732,7 +732,7 @@ const o = () => "OR",
   ta = () => "Экипировано",
   oa = () => "Оснащено",
   ua = () => "Đã trang bị",
-  mG = (n = {}, e = {}) => {
+  PG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Zc() : r === "pt" ? Gc() : r === "ch" ? Qc() : r === "de" ? Yc() : r === "es" ? Jc() : r === "fr" ? Xc() : r === "it" ? ra() : r === "jp" ? ea() : r === "pl" ? na() : r === "ru" ? ta() : r === "uk" ? oa() : ua()
   },
@@ -748,7 +748,7 @@ const o = () => "OR",
   ha = () => "Изображение экипировано!",
   ma = () => "Зображення встановлено!",
   ga = () => "Đã trang bị ảnh!",
-  gG = (n = {}, e = {}) => {
+  NG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? ia() : r === "pt" ? sa() : r === "ch" ? ca() : r === "de" ? aa() : r === "es" ? _a() : r === "fr" ? la() : r === "it" ? pa() : r === "jp" ? fa() : r === "pl" ? da() : r === "ru" ? ha() : r === "uk" ? ma() : ga()
   },
@@ -763,12 +763,12 @@ const o = () => "OR",
   qa = () => "Błąd podczas nadawania uprawnień admina",
   Sa = () => "Ошибка при выдаче прав админа пользователю",
   Pa = () => "Помилка під час надання прав адміністратора",
-  Ca = () => "Lỗi khi gán quyền admin cho người dùng",
-  kG = (n = {}, e = {}) => {
+  Na = () => "Lỗi khi gán quyền admin cho người dùng",
+  CG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? ka() : r === "pt" ? ba() : r === "ch" ? va() : r === "de" ? ya() : r === "es" ? wa() : r === "fr" ? ja() : r === "it" ? za() : r === "jp" ? xa() : r === "pl" ? qa() : r === "ru" ? Sa() : r === "uk" ? Pa() : Ca()
+    return r === "en" ? ka() : r === "pt" ? ba() : r === "ch" ? va() : r === "de" ? ya() : r === "es" ? wa() : r === "fr" ? ja() : r === "it" ? za() : r === "jp" ? xa() : r === "pl" ? qa() : r === "ru" ? Sa() : r === "uk" ? Pa() : Na()
   },
-  Na = () => "Event",
+  Ca = () => "Event",
   Aa = () => "Evento",
   Da = () => "活动",
   Ta = () => "Event",
@@ -780,13 +780,13 @@ const o = () => "OR",
   Ka = () => "Событие",
   La = () => "Подія",
   Wa = () => "Sự kiện",
-  bG = (n = {}, e = {}) => {
+  AG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Na() : r === "pt" ? Aa() : r === "ch" ? Da() : r === "de" ? Ta() : r === "es" ? Ma() : r === "fr" ? Ea() : r === "it" ? Ba() : r === "jp" ? Ia() : r === "pl" ? Ra() : r === "ru" ? Ka() : r === "uk" ? La() : Wa()
+    return r === "en" ? Ca() : r === "pt" ? Aa() : r === "ch" ? Da() : r === "de" ? Ta() : r === "es" ? Ma() : r === "fr" ? Ea() : r === "it" ? Ba() : r === "jp" ? Ia() : r === "pl" ? Ra() : r === "ru" ? Ka() : r === "uk" ? La() : Wa()
   },
   $a = () => "Favorite",
-  Oa = () => "Favoritar",
-  Va = () => "收藏",
+  Va = () => "Favoritar",
+  Oa = () => "收藏",
   Ua = () => "Favorit",
   Ha = () => "Favorito",
   Fa = () => "Favori",
@@ -796,9 +796,9 @@ const o = () => "OR",
   Ya = () => "Избранное",
   Ja = () => "У вибране",
   Xa = () => "Yêu thích",
-  vG = (n = {}, e = {}) => {
+  DG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? $a() : r === "pt" ? Oa() : r === "ch" ? Va() : r === "de" ? Ua() : r === "es" ? Ha() : r === "fr" ? Fa() : r === "it" ? Za() : r === "jp" ? Ga() : r === "pl" ? Qa() : r === "ru" ? Ya() : r === "uk" ? Ja() : Xa()
+    return r === "en" ? $a() : r === "pt" ? Va() : r === "ch" ? Oa() : r === "de" ? Ua() : r === "es" ? Ha() : r === "fr" ? Fa() : r === "it" ? Za() : r === "jp" ? Ga() : r === "pl" ? Qa() : r === "ru" ? Ya() : r === "uk" ? Ja() : Xa()
   },
   r_ = n => `The flag of <b>${n.country}</b> does not have corresponding areas on the map and will only have cosmetic effects.`,
   e_ = n => `A bandeira <b>${n.country}</b> não possui regiões correspondente no mapa e só terá efeito cosmético.`,
@@ -812,7 +812,7 @@ const o = () => "OR",
   a_ = n => `Флаг <b>${n.country}</b> не имеет соответствующей области на карте и будет выполнять только косметическую функцию.`,
   __ = n => `Прапор <b>${n.country}</b> не має відповідних областей на карті та матиме лише візуальний ефект.`,
   l_ = n => `Cờ của <b>${n.country}</b> không có khu vực tương ứng trên bản đồ và chỉ có tác dụng trang trí.`,
-  yG = (n, e = {}) => {
+  TG = (n, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? r_(n) : r === "pt" ? e_(n) : r === "ch" ? n_(n) : r === "de" ? t_(n) : r === "es" ? o_(n) : r === "fr" ? u_(n) : r === "it" ? i_(n) : r === "jp" ? s_(n) : r === "pl" ? c_(n) : r === "ru" ? a_(n) : r === "uk" ? __(n) : l_(n)
   },
@@ -828,7 +828,7 @@ const o = () => "OR",
   y_ = () => "Флаг без региона на карте",
   w_ = () => "Прапор без регіону на карті",
   j_ = () => "Cờ không có vùng trên bản đồ",
-  wG = (n = {}, e = {}) => {
+  MG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? p_() : r === "pt" ? f_() : r === "ch" ? d_() : r === "de" ? h_() : r === "es" ? m_() : r === "fr" ? g_() : r === "it" ? k_() : r === "jp" ? b_() : r === "pl" ? v_() : r === "ru" ? y_() : r === "uk" ? w_() : j_()
   },
@@ -837,16 +837,16 @@ const o = () => "OR",
   q_ = () => "请按照说明启用硬件加速",
   S_ = () => "Folge den Anweisungen, um Hardwarebeschleunigung zu aktivieren",
   P_ = () => "Sigue las instrucciones para habilitar la aceleración por hardware",
-  C_ = () => "Suivez les instructions pour activer l’accélération matérielle",
-  N_ = () => "Segui le istruzioni per abilitare l'accelerazione hardware",
+  N_ = () => "Suivez les instructions pour activer l’accélération matérielle",
+  C_ = () => "Segui le istruzioni per abilitare l'accelerazione hardware",
   A_ = () => "ハードウェアアクセラレーションを有効にする手順に従ってください。",
   D_ = () => "Postępuj zgodnie z instrukcjami, aby włączyć akcelerację sprzętową",
   T_ = () => "Следуйте инструкциям, чтобы включить аппаратное ускорение",
   M_ = () => "Дотримуйтесь інструкцій, щоб увімкнути апаратне прискорення",
   E_ = () => "Làm theo hướng dẫn để bật tăng tốc phần cứng",
-  jG = (n = {}, e = {}) => {
+  EG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? z_() : r === "pt" ? x_() : r === "ch" ? q_() : r === "de" ? S_() : r === "es" ? P_() : r === "fr" ? C_() : r === "it" ? N_() : r === "jp" ? A_() : r === "pl" ? D_() : r === "ru" ? T_() : r === "uk" ? M_() : E_()
+    return r === "en" ? z_() : r === "pt" ? x_() : r === "ch" ? q_() : r === "de" ? S_() : r === "es" ? P_() : r === "fr" ? N_() : r === "it" ? C_() : r === "jp" ? A_() : r === "pl" ? D_() : r === "ru" ? T_() : r === "uk" ? M_() : E_()
   },
   B_ = () => "For more details, see our",
   I_ = () => "Para mais detalhes, veja nossa",
@@ -855,14 +855,14 @@ const o = () => "OR",
   L_ = () => "Para más detalles, consulta nuestra",
   W_ = () => "Pour plus de détails, consultez notre",
   $_ = () => "Per maggiori dettagli, consulta la nostra",
-  O_ = () => "詳しくは、こちらをご覧ください:",
-  V_ = () => "Po więcej informacji zobacz naszą",
+  V_ = () => "詳しくは、こちらをご覧ください:",
+  O_ = () => "Po więcej informacji zobacz naszą",
   U_ = () => "Подробнее см. в наших",
   H_ = () => "Для отримання додаткової інформації перегляньте наші",
   F_ = () => "Để biết thêm chi tiết, hãy xem",
-  zG = (n = {}, e = {}) => {
+  BG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? B_() : r === "pt" ? I_() : r === "ch" ? R_() : r === "de" ? K_() : r === "es" ? L_() : r === "fr" ? W_() : r === "it" ? $_() : r === "jp" ? O_() : r === "pl" ? V_() : r === "ru" ? U_() : r === "uk" ? H_() : F_()
+    return r === "en" ? B_() : r === "pt" ? I_() : r === "ch" ? R_() : r === "de" ? K_() : r === "es" ? L_() : r === "fr" ? W_() : r === "it" ? $_() : r === "jp" ? V_() : r === "pl" ? O_() : r === "ru" ? U_() : r === "uk" ? H_() : F_()
   },
   Z_ = () => "Get invited to an alliance",
   G_ = () => "Seja convidado para uma aliança",
@@ -876,7 +876,7 @@ const o = () => "OR",
   tl = () => "Получите приглашение в альянс",
   ol = () => "Отримайте запрошення в альянс",
   ul = () => "Nhận lời mời vào một liên minh",
-  xG = (n = {}, e = {}) => {
+  IG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Z_() : r === "pt" ? G_() : r === "ch" ? Q_() : r === "de" ? Y_() : r === "es" ? J_() : r === "fr" ? X_() : r === "it" ? rl() : r === "jp" ? el() : r === "pl" ? nl() : r === "ru" ? tl() : r === "uk" ? ol() : ul()
   },
@@ -892,7 +892,7 @@ const o = () => "OR",
   hl = () => "Получить больше зарядов",
   ml = () => "Отримати більше зарядів",
   gl = () => "Nhận thêm lượt tô",
-  qG = (n = {}, e = {}) => {
+  RG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? il() : r === "pt" ? sl() : r === "ch" ? cl() : r === "de" ? al() : r === "es" ? _l() : r === "fr" ? ll() : r === "it" ? pl() : r === "jp" ? fl() : r === "pl" ? dl() : r === "ru" ? hl() : r === "uk" ? ml() : gl()
   },
@@ -907,12 +907,12 @@ const o = () => "OR",
   ql = () => "Nadaj uprawnienia admina",
   Sl = () => "Сделать админом",
   Pl = () => "Надати адмін-права",
-  Cl = () => "Gán quyền admin",
-  SG = (n = {}, e = {}) => {
+  Nl = () => "Gán quyền admin",
+  KG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? kl() : r === "pt" ? bl() : r === "ch" ? vl() : r === "de" ? yl() : r === "es" ? wl() : r === "fr" ? jl() : r === "it" ? zl() : r === "jp" ? xl() : r === "pl" ? ql() : r === "ru" ? Sl() : r === "uk" ? Pl() : Cl()
+    return r === "en" ? kl() : r === "pt" ? bl() : r === "ch" ? vl() : r === "de" ? yl() : r === "es" ? wl() : r === "fr" ? jl() : r === "it" ? zl() : r === "jp" ? xl() : r === "pl" ? ql() : r === "ru" ? Sl() : r === "uk" ? Pl() : Nl()
   },
-  Nl = () => "Giving admin to user",
+  Cl = () => "Giving admin to user",
   Al = () => "Tornar usuário um admin",
   Dl = () => "正在授予管理员权限",
   Tl = () => "Vergebe Admin-Rechte an Benutzer",
@@ -924,13 +924,13 @@ const o = () => "OR",
   Kl = () => "Выдача прав админа пользователю",
   Ll = () => "Надання користувачу прав адміністратора",
   Wl = () => "Đang gán quyền admin cho người dùng",
-  PG = (n = {}, e = {}) => {
+  LG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Nl() : r === "pt" ? Al() : r === "ch" ? Dl() : r === "de" ? Tl() : r === "es" ? Ml() : r === "fr" ? El() : r === "it" ? Bl() : r === "jp" ? Il() : r === "pl" ? Rl() : r === "ru" ? Kl() : r === "uk" ? Ll() : Wl()
+    return r === "en" ? Cl() : r === "pt" ? Al() : r === "ch" ? Dl() : r === "de" ? Tl() : r === "es" ? Ml() : r === "fr" ? El() : r === "it" ? Bl() : r === "jp" ? Il() : r === "pl" ? Rl() : r === "ru" ? Kl() : r === "uk" ? Ll() : Wl()
   },
   $l = () => "Headquarters",
-  Ol = () => "Quartel General",
-  Vl = () => "总部",
+  Vl = () => "Quartel General",
+  Ol = () => "总部",
   Ul = () => "Hauptquartier",
   Hl = () => "Cuartel general",
   Fl = () => "Quartier général",
@@ -940,9 +940,9 @@ const o = () => "OR",
   Yl = () => "Штаб-квартира",
   Jl = () => "Штаб-квартира",
   Xl = () => "Trụ sở",
-  CG = (n = {}, e = {}) => {
+  WG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? $l() : r === "pt" ? Ol() : r === "ch" ? Vl() : r === "de" ? Ul() : r === "es" ? Hl() : r === "fr" ? Fl() : r === "it" ? Zl() : r === "jp" ? Gl() : r === "pl" ? Ql() : r === "ru" ? Yl() : r === "uk" ? Jl() : Xl()
+    return r === "en" ? $l() : r === "pt" ? Vl() : r === "ch" ? Ol() : r === "de" ? Ul() : r === "es" ? Hl() : r === "fr" ? Fl() : r === "it" ? Zl() : r === "jp" ? Gl() : r === "pl" ? Ql() : r === "ru" ? Yl() : r === "uk" ? Jl() : Xl()
   },
   rp = () => "Hide pixel art",
   ep = () => "Esconder Pixel Art",
@@ -956,7 +956,7 @@ const o = () => "OR",
   ap = () => "Скрыть пиксель-арт",
   _p = () => "Приховати піксель-арт",
   lp = () => "Ẩn pixel art",
-  NG = (n = {}, e = {}) => {
+  $G = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? rp() : r === "pt" ? ep() : r === "ch" ? np() : r === "de" ? tp() : r === "es" ? op() : r === "fr" ? up() : r === "it" ? ip() : r === "jp" ? sp() : r === "pl" ? cp() : r === "ru" ? ap() : r === "uk" ? _p() : lp()
   },
@@ -972,7 +972,7 @@ const o = () => "OR",
   yp = () => "Скрыть интерфейс",
   wp = () => "Приховати інтерфейс",
   jp = () => "Ẩn giao diện",
-  AG = (n = {}, e = {}) => {
+  VG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? pp() : r === "pt" ? fp() : r === "ch" ? dp() : r === "de" ? hp() : r === "es" ? mp() : r === "fr" ? gp() : r === "it" ? kp() : r === "jp" ? bp() : r === "pl" ? vp() : r === "ru" ? yp() : r === "uk" ? wp() : jp()
   },
@@ -981,16 +981,16 @@ const o = () => "OR",
   qp = () => "按住",
   Sp = () => "Halten",
   Pp = () => "Mantener",
-  Cp = () => "Maintenir",
-  Np = () => "Tieni premuto",
+  Np = () => "Maintenir",
+  Cp = () => "Tieni premuto",
   Ap = () => "長押し",
   Dp = () => "Przytrzymaj",
   Tp = () => "Удерживать",
   Mp = () => "Утримуйте",
   Ep = () => "Giữ",
-  DG = (n = {}, e = {}) => {
+  OG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? zp() : r === "pt" ? xp() : r === "ch" ? qp() : r === "de" ? Sp() : r === "es" ? Pp() : r === "fr" ? Cp() : r === "it" ? Np() : r === "jp" ? Ap() : r === "pl" ? Dp() : r === "ru" ? Tp() : r === "uk" ? Mp() : Ep()
+    return r === "en" ? zp() : r === "pt" ? xp() : r === "ch" ? qp() : r === "de" ? Sp() : r === "es" ? Pp() : r === "fr" ? Np() : r === "it" ? Cp() : r === "jp" ? Ap() : r === "pl" ? Dp() : r === "ru" ? Tp() : r === "uk" ? Mp() : Ep()
   },
   Bp = () => "How to paint faster",
   Ip = () => "Como pintar mais rápido",
@@ -999,14 +999,14 @@ const o = () => "OR",
   Lp = () => "Cómo pintar más rápido",
   Wp = () => "Comment peindre plus vite",
   $p = () => "Come dipingere più velocemente",
-  Op = () => "早く塗るには",
-  Vp = () => "Jak malować szybciej",
+  Vp = () => "早く塗るには",
+  Op = () => "Jak malować szybciej",
   Up = () => "Как рисовать быстрее",
   Hp = () => "Як малювати швидше",
   Fp = () => "Cách tô nhanh hơn",
-  TG = (n = {}, e = {}) => {
+  UG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Bp() : r === "pt" ? Ip() : r === "ch" ? Rp() : r === "de" ? Kp() : r === "es" ? Lp() : r === "fr" ? Wp() : r === "it" ? $p() : r === "jp" ? Op() : r === "pl" ? Vp() : r === "ru" ? Up() : r === "uk" ? Hp() : Fp()
+    return r === "en" ? Bp() : r === "pt" ? Ip() : r === "ch" ? Rp() : r === "de" ? Kp() : r === "es" ? Lp() : r === "fr" ? Wp() : r === "it" ? $p() : r === "jp" ? Vp() : r === "pl" ? Op() : r === "ru" ? Up() : r === "uk" ? Hp() : Fp()
   },
   Zp = () => "Image",
   Gp = () => "Imagem",
@@ -1020,7 +1020,7 @@ const o = () => "OR",
   tf = () => "Изображение",
   of = () => "Зображення",
   uf = () => "Hình ảnh",
-  MG = (n = {}, e = {}) => {
+  HG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Zp() : r === "pt" ? Gp() : r === "ch" ? Qp() : r === "de" ? Yp() : r === "es" ? Jp() : r === "fr" ? Xp() : r === "it" ? rf() : r === "jp" ? ef() : r === "pl" ? nf() : r === "ru" ? tf() : r === "uk" ? of() : uf()
   },
@@ -1036,7 +1036,7 @@ const o = () => "OR",
   mf = () => "Изображение скопировано в буфер обмена",
   gf = () => "Зображення скопійовано до буфера обміну",
   kf = () => "Đã sao chép hình ảnh vào clipboard",
-  EG = (n = {}, e = {}) => {
+  FG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sf() : r === "pt" ? cf() : r === "ch" ? af() : r === "de" ? _f() : r === "es" ? lf() : r === "fr" ? pf() : r === "it" ? ff() : r === "jp" ? df() : r === "pl" ? hf() : r === "ru" ? mf() : r === "uk" ? gf() : kf()
   },
@@ -1050,11 +1050,11 @@ const o = () => "OR",
   qf = () => "重要",
   Sf = () => "Ważne",
   Pf = () => "Важно",
-  Cf = () => "Важливо",
-  Nf = () => "Quan trọng",
-  BG = (n = {}, e = {}) => {
+  Nf = () => "Важливо",
+  Cf = () => "Quan trọng",
+  ZG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? bf() : r === "pt" ? vf() : r === "ch" ? yf() : r === "de" ? wf() : r === "es" ? jf() : r === "fr" ? zf() : r === "it" ? xf() : r === "jp" ? qf() : r === "pl" ? Sf() : r === "ru" ? Pf() : r === "uk" ? Cf() : Nf()
+    return r === "en" ? bf() : r === "pt" ? vf() : r === "ch" ? yf() : r === "de" ? wf() : r === "es" ? jf() : r === "fr" ? zf() : r === "it" ? xf() : r === "jp" ? qf() : r === "pl" ? Sf() : r === "ru" ? Pf() : r === "uk" ? Nf() : Cf()
   },
   Af = () => "Increase your maximum paint charges capacity",
   Df = () => "Aumente sua capacidade máxima de tinta",
@@ -1068,12 +1068,12 @@ const o = () => "OR",
   Lf = () => "Увеличьте максимальное количество зарядов",
   Wf = () => "Збільште максимальну кількість зарядів фарби",
   $f = () => "Tăng số lượt tô tối đa",
-  IG = (n = {}, e = {}) => {
+  GG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Af() : r === "pt" ? Df() : r === "ch" ? Tf() : r === "de" ? Mf() : r === "es" ? Ef() : r === "fr" ? Bf() : r === "it" ? If() : r === "jp" ? Rf() : r === "pl" ? Kf() : r === "ru" ? Lf() : r === "uk" ? Wf() : $f()
   },
-  Of = () => "Info",
-  Vf = () => "Informações",
+  Vf = () => "Info",
+  Of = () => "Informações",
   Uf = () => "信息",
   Hf = () => "Info",
   Ff = () => "Info",
@@ -1084,9 +1084,9 @@ const o = () => "OR",
   Jf = () => "Инфо",
   Xf = () => "Інформація",
   rd = () => "Thông tin",
-  RG = (n = {}, e = {}) => {
+  QG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Of() : r === "pt" ? Vf() : r === "ch" ? Uf() : r === "de" ? Hf() : r === "es" ? Ff() : r === "fr" ? Zf() : r === "it" ? Gf() : r === "jp" ? Qf() : r === "pl" ? Yf() : r === "ru" ? Jf() : r === "uk" ? Xf() : rd()
+    return r === "en" ? Vf() : r === "pt" ? Of() : r === "ch" ? Uf() : r === "de" ? Hf() : r === "es" ? Ff() : r === "fr" ? Zf() : r === "it" ? Gf() : r === "jp" ? Qf() : r === "pl" ? Yf() : r === "ru" ? Jf() : r === "uk" ? Xf() : rd()
   },
   ed = () => "Install App",
   nd = () => "Instalar App",
@@ -1100,7 +1100,7 @@ const o = () => "OR",
   _d = () => "Установить приложение",
   ld = () => "Встановити застосунок",
   pd = () => "Cài đặt ứng dụng",
-  KG = (n = {}, e = {}) => {
+  YG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? ed() : r === "pt" ? nd() : r === "ch" ? td() : r === "de" ? od() : r === "es" ? ud() : r === "fr" ? id() : r === "it" ? sd() : r === "jp" ? cd() : r === "pl" ? ad() : r === "ru" ? _d() : r === "uk" ? ld() : pd()
   },
@@ -1116,7 +1116,7 @@ const o = () => "OR",
   wd = () => "Пригласить",
   jd = () => "Запросити",
   zd = () => "Mời",
-  LG = (n = {}, e = {}) => {
+  JG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fd() : r === "pt" ? dd() : r === "ch" ? hd() : r === "de" ? md() : r === "es" ? gd() : r === "fr" ? kd() : r === "it" ? bd() : r === "jp" ? vd() : r === "pl" ? yd() : r === "ru" ? wd() : r === "uk" ? jd() : zd()
   },
@@ -1124,17 +1124,17 @@ const o = () => "OR",
   qd = () => "Link de convite",
   Sd = () => "邀请链接",
   Pd = () => "Einladungslink",
-  Cd = () => "Enlace de invitación",
-  Nd = () => "Lien d’invitation",
+  Nd = () => "Enlace de invitación",
+  Cd = () => "Lien d’invitation",
   Ad = () => "Link di invito",
   Dd = () => "招待リンク",
   Td = () => "Link zaproszenia",
   Md = () => "Ссылка-приглашение",
   Ed = () => "Посилання-запрошення",
   Bd = () => "Liên kết mời",
-  WG = (n = {}, e = {}) => {
+  XG = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? xd() : r === "pt" ? qd() : r === "ch" ? Sd() : r === "de" ? Pd() : r === "es" ? Cd() : r === "fr" ? Nd() : r === "it" ? Ad() : r === "jp" ? Dd() : r === "pl" ? Td() : r === "ru" ? Md() : r === "uk" ? Ed() : Bd()
+    return r === "en" ? xd() : r === "pt" ? qd() : r === "ch" ? Sd() : r === "de" ? Pd() : r === "es" ? Nd() : r === "fr" ? Cd() : r === "it" ? Ad() : r === "jp" ? Dd() : r === "pl" ? Td() : r === "ru" ? Md() : r === "uk" ? Ed() : Bd()
   },
   Id = () => "is enabled on",
   Rd = () => "está habilitado em",
@@ -1142,15 +1142,15 @@ const o = () => "OR",
   Ld = () => "aktiviert ist auf",
   Wd = () => "está habilitado en",
   $d = () => "est activé sur",
-  Od = () => "è abilitato su",
-  Vd = () => "は次で有効です:",
+  Vd = () => "è abilitato su",
+  Od = () => "は次で有効です:",
   Ud = () => "jest włączone na",
   Hd = () => "включено на",
   Fd = () => "увімкнено на",
   Zd = () => "được bật trên",
-  $G = (n = {}, e = {}) => {
+  r0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Id() : r === "pt" ? Rd() : r === "ch" ? Kd() : r === "de" ? Ld() : r === "es" ? Wd() : r === "fr" ? $d() : r === "it" ? Od() : r === "jp" ? Vd() : r === "pl" ? Ud() : r === "ru" ? Hd() : r === "uk" ? Fd() : Zd()
+    return r === "en" ? Id() : r === "pt" ? Rd() : r === "ch" ? Kd() : r === "de" ? Ld() : r === "es" ? Wd() : r === "fr" ? $d() : r === "it" ? Vd() : r === "jp" ? Od() : r === "pl" ? Ud() : r === "ru" ? Hd() : r === "uk" ? Fd() : Zd()
   },
   Gd = () => "Items",
   Qd = () => "Itens",
@@ -1164,7 +1164,7 @@ const o = () => "OR",
   oh = () => "Предметы",
   uh = () => "Предмети",
   ih = () => "Vật phẩm",
-  OG = (n = {}, e = {}) => {
+  e0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Gd() : r === "pt" ? Qd() : r === "ch" ? Yd() : r === "de" ? Jd() : r === "es" ? Xd() : r === "fr" ? rh() : r === "it" ? eh() : r === "jp" ? nh() : r === "pl" ? th() : r === "ru" ? oh() : r === "uk" ? uh() : ih()
   },
@@ -1180,7 +1180,7 @@ const o = () => "OR",
   mh = () => "Выйти из альянса",
   gh = () => "Вийти з альянсу",
   kh = () => "Rời liên minh",
-  VG = (n = {}, e = {}) => {
+  n0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sh() : r === "pt" ? ch() : r === "ch" ? ah() : r === "de" ? _h() : r === "es" ? lh() : r === "fr" ? ph() : r === "it" ? fh() : r === "jp" ? dh() : r === "pl" ? hh() : r === "ru" ? mh() : r === "uk" ? gh() : kh()
   },
@@ -1194,11 +1194,11 @@ const o = () => "OR",
   qh = () => "ライトテーマ",
   Sh = () => "Tryb jasny",
   Ph = () => "Светлая тема",
-  Ch = () => "Світла тема",
-  Nh = () => "Chế độ sáng",
-  UG = (n = {}, e = {}) => {
+  Nh = () => "Світла тема",
+  Ch = () => "Chế độ sáng",
+  t0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? bh() : r === "pt" ? vh() : r === "ch" ? yh() : r === "de" ? wh() : r === "es" ? jh() : r === "fr" ? zh() : r === "it" ? xh() : r === "jp" ? qh() : r === "pl" ? Sh() : r === "ru" ? Ph() : r === "uk" ? Ch() : Nh()
+    return r === "en" ? bh() : r === "pt" ? vh() : r === "ch" ? yh() : r === "de" ? wh() : r === "es" ? jh() : r === "fr" ? zh() : r === "it" ? xh() : r === "jp" ? qh() : r === "pl" ? Sh() : r === "ru" ? Ph() : r === "uk" ? Nh() : Ch()
   },
   Ah = () => "Limit reached",
   Dh = () => "Limite atingido",
@@ -1212,12 +1212,12 @@ const o = () => "OR",
   Lh = () => "Достигнут лимит",
   Wh = () => "Досягнуто ліміт",
   $h = () => "Đã đạt giới hạn",
-  HG = (n = {}, e = {}) => {
+  o0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Ah() : r === "pt" ? Dh() : r === "ch" ? Th() : r === "de" ? Mh() : r === "es" ? Eh() : r === "fr" ? Bh() : r === "it" ? Ih() : r === "jp" ? Rh() : r === "pl" ? Kh() : r === "ru" ? Lh() : r === "uk" ? Wh() : $h()
   },
-  Oh = () => "Link your Discord",
-  Vh = () => "Conectar Discord",
+  Vh = () => "Link your Discord",
+  Oh = () => "Conectar Discord",
   Uh = () => "关联你的 Discord",
   Hh = () => "Discord verknüpfen",
   Fh = () => "Vincular Discord",
@@ -1228,9 +1228,9 @@ const o = () => "OR",
   Jh = () => "Привязать Discord",
   Xh = () => "Привʼязати Discord",
   rm = () => "Liên kết Discord",
-  FG = (n = {}, e = {}) => {
+  u0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Oh() : r === "pt" ? Vh() : r === "ch" ? Uh() : r === "de" ? Hh() : r === "es" ? Fh() : r === "fr" ? Zh() : r === "it" ? Gh() : r === "jp" ? Qh() : r === "pl" ? Yh() : r === "ru" ? Jh() : r === "uk" ? Xh() : rm()
+    return r === "en" ? Vh() : r === "pt" ? Oh() : r === "ch" ? Uh() : r === "de" ? Hh() : r === "es" ? Fh() : r === "fr" ? Zh() : r === "it" ? Gh() : r === "jp" ? Qh() : r === "pl" ? Yh() : r === "ru" ? Jh() : r === "uk" ? Xh() : rm()
   },
   em = () => "Location favorited",
   nm = () => "Localização favoritada",
@@ -1244,7 +1244,7 @@ const o = () => "OR",
   _m = () => "Локация добавлена в избранное",
   lm = () => "Локацію додано до вибраних",
   pm = () => "Đã thêm vị trí vào yêu thích",
-  ZG = (n = {}, e = {}) => {
+  i0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? em() : r === "pt" ? nm() : r === "ch" ? tm() : r === "de" ? om() : r === "es" ? um() : r === "fr" ? im() : r === "it" ? sm() : r === "jp" ? cm() : r === "pl" ? am() : r === "ru" ? _m() : r === "uk" ? lm() : pm()
   },
@@ -1260,7 +1260,7 @@ const o = () => "OR",
   wm = () => "Локация удалена из избранного",
   jm = () => "Локацію вилучено з вибраних",
   zm = () => "Đã bỏ yêu thích vị trí",
-  GG = (n = {}, e = {}) => {
+  s0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fm() : r === "pt" ? dm() : r === "ch" ? hm() : r === "de" ? mm() : r === "es" ? gm() : r === "fr" ? km() : r === "it" ? bm() : r === "jp" ? vm() : r === "pl" ? ym() : r === "ru" ? wm() : r === "uk" ? jm() : zm()
   },
@@ -1268,17 +1268,17 @@ const o = () => "OR",
   qm = () => "Travar",
   Sm = () => "锁定",
   Pm = () => "Sperren",
-  Cm = () => "Bloquear",
-  Nm = () => "Verrouiller",
+  Nm = () => "Bloquear",
+  Cm = () => "Verrouiller",
   Am = () => "Blocca",
   Dm = () => "ロック",
   Tm = () => "Zablokuj",
   Mm = () => "Заблокировать",
   Em = () => "Заблокувати",
   Bm = () => "Khóa",
-  QG = (n = {}, e = {}) => {
+  c0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? xm() : r === "pt" ? qm() : r === "ch" ? Sm() : r === "de" ? Pm() : r === "es" ? Cm() : r === "fr" ? Nm() : r === "it" ? Am() : r === "jp" ? Dm() : r === "pl" ? Tm() : r === "ru" ? Mm() : r === "uk" ? Em() : Bm()
+    return r === "en" ? xm() : r === "pt" ? qm() : r === "ch" ? Sm() : r === "de" ? Pm() : r === "es" ? Nm() : r === "fr" ? Cm() : r === "it" ? Am() : r === "jp" ? Dm() : r === "pl" ? Tm() : r === "ru" ? Mm() : r === "uk" ? Em() : Bm()
   },
   Im = () => "Log in",
   Rm = () => "Entrar",
@@ -1286,15 +1286,15 @@ const o = () => "OR",
   Lm = () => "Einloggen",
   Wm = () => "Iniciar sesión",
   $m = () => "Se connecter",
-  Om = () => "Accedi",
-  Vm = () => "ログイン",
+  Vm = () => "Accedi",
+  Om = () => "ログイン",
   Um = () => "Zaloguj się",
   Hm = () => "Войти",
   Fm = () => "Увійти",
   Zm = () => "Đăng nhập",
-  YG = (n = {}, e = {}) => {
+  a0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Im() : r === "pt" ? Rm() : r === "ch" ? Km() : r === "de" ? Lm() : r === "es" ? Wm() : r === "fr" ? $m() : r === "it" ? Om() : r === "jp" ? Vm() : r === "pl" ? Um() : r === "ru" ? Hm() : r === "uk" ? Fm() : Zm()
+    return r === "en" ? Im() : r === "pt" ? Rm() : r === "ch" ? Km() : r === "de" ? Lm() : r === "es" ? Wm() : r === "fr" ? $m() : r === "it" ? Vm() : r === "jp" ? Om() : r === "pl" ? Um() : r === "ru" ? Hm() : r === "uk" ? Fm() : Zm()
   },
   Gm = () => "Logged out",
   Qm = () => "Logout feito",
@@ -1308,7 +1308,7 @@ const o = () => "OR",
   og = () => "Вы вышли из аккаунта",
   ug = () => "Вихід виконано",
   ig = () => "Đã đăng xuất",
-  JG = (n = {}, e = {}) => {
+  _0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Gm() : r === "pt" ? Qm() : r === "ch" ? Ym() : r === "de" ? Jm() : r === "es" ? Xm() : r === "fr" ? rg() : r === "it" ? eg() : r === "jp" ? ng() : r === "pl" ? tg() : r === "ru" ? og() : r === "uk" ? ug() : ig()
   },
@@ -1324,7 +1324,7 @@ const o = () => "OR",
   mg = () => "Это действие завершит ваш сеанс на всех устройствах.",
   gg = () => "Ця дія виведе ваш акаунт з усіх пристроїв.",
   kg = () => "Hành động này sẽ đăng xuất tài khoản của bạn khỏi tất cả thiết bị.",
-  XG = (n = {}, e = {}) => {
+  l0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sg() : r === "pt" ? cg() : r === "ch" ? ag() : r === "de" ? _g() : r === "es" ? lg() : r === "fr" ? pg() : r === "it" ? fg() : r === "jp" ? dg() : r === "pl" ? hg() : r === "ru" ? mg() : r === "uk" ? gg() : kg()
   },
@@ -1338,11 +1338,11 @@ const o = () => "OR",
   qg = () => "マップの動作が重いです。",
   Sg = () => "Mapa się zacina",
   Pg = () => "Карта тормозит",
-  Cg = () => "Карта гальмує",
-  Ng = () => "Bản đồ của tôi đang bị lag",
-  r0 = (n = {}, e = {}) => {
+  Ng = () => "Карта гальмує",
+  Cg = () => "Bản đồ của tôi đang bị lag",
+  p0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? bg() : r === "pt" ? vg() : r === "ch" ? yg() : r === "de" ? wg() : r === "es" ? jg() : r === "fr" ? zg() : r === "it" ? xg() : r === "jp" ? qg() : r === "pl" ? Sg() : r === "ru" ? Pg() : r === "uk" ? Cg() : Ng()
+    return r === "en" ? bg() : r === "pt" ? vg() : r === "ch" ? yg() : r === "de" ? wg() : r === "es" ? jg() : r === "fr" ? zg() : r === "it" ? xg() : r === "jp" ? qg() : r === "pl" ? Sg() : r === "ru" ? Pg() : r === "uk" ? Ng() : Cg()
   },
   Ag = () => "Mark all as read",
   Dg = () => "Marcar tudo como lido",
@@ -1356,12 +1356,12 @@ const o = () => "OR",
   Lg = () => "Отметить всё как прочитанное",
   Wg = () => "Позначити все як прочитане",
   $g = () => "Đánh dấu tất cả là đã đọc",
-  e0 = (n = {}, e = {}) => {
+  f0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Ag() : r === "pt" ? Dg() : r === "ch" ? Tg() : r === "de" ? Mg() : r === "es" ? Eg() : r === "fr" ? Bg() : r === "it" ? Ig() : r === "jp" ? Rg() : r === "pl" ? Kg() : r === "ru" ? Lg() : r === "uk" ? Wg() : $g()
   },
-  Og = () => "+2 max. charge/niveau",
-  Vg = () => "+2 tinta máxima/level",
+  Vg = () => "+2 max. charge/niveau",
+  Og = () => "+2 tinta máxima/level",
   Ug = () => "每级 +2 最大充能",
   Hg = () => "+2 max. Ladung/Level",
   Fg = () => "+2 carga máxima/nivel",
@@ -1372,9 +1372,9 @@ const o = () => "OR",
   Jg = () => "+2 макс. заряда/уровень",
   Xg = () => "+2 макс. заряд/рівень",
   rk = () => "+2 lượt tô tối đa mỗi cấp",
-  n0 = (n = {}, e = {}) => {
+  d0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Og() : r === "pt" ? Vg() : r === "ch" ? Ug() : r === "de" ? Hg() : r === "es" ? Fg() : r === "fr" ? Zg() : r === "it" ? Gg() : r === "jp" ? Qg() : r === "pl" ? Yg() : r === "ru" ? Jg() : r === "uk" ? Xg() : rk()
+    return r === "en" ? Vg() : r === "pt" ? Og() : r === "ch" ? Ug() : r === "de" ? Hg() : r === "es" ? Fg() : r === "fr" ? Zg() : r === "it" ? Gg() : r === "jp" ? Qg() : r === "pl" ? Yg() : r === "ru" ? Jg() : r === "uk" ? Xg() : rk()
   },
   ek = () => "Menu",
   nk = () => "Menu",
@@ -1388,7 +1388,7 @@ const o = () => "OR",
   _k = () => "Меню",
   lk = () => "Меню",
   pk = () => "Menu",
-  t0 = (n = {}, e = {}) => {
+  h0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? ek() : r === "pt" ? nk() : r === "ch" ? tk() : r === "de" ? ok() : r === "es" ? uk() : r === "fr" ? ik() : r === "it" ? sk() : r === "jp" ? ck() : r === "pl" ? ak() : r === "ru" ? _k() : r === "uk" ? lk() : pk()
   },
@@ -1404,7 +1404,7 @@ const o = () => "OR",
   wk = () => "Месяц",
   jk = () => "Місяць",
   zk = () => "Tháng",
-  o0 = (n = {}, e = {}) => {
+  m0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fk() : r === "pt" ? dk() : r === "ch" ? hk() : r === "de" ? mk() : r === "es" ? gk() : r === "fr" ? kk() : r === "it" ? bk() : r === "jp" ? vk() : r === "pl" ? yk() : r === "ru" ? wk() : r === "uk" ? jk() : zk()
   },
@@ -1412,17 +1412,17 @@ const o = () => "OR",
   qk = () => "Mais",
   Sk = () => "更多",
   Pk = () => "Mehr",
-  Ck = () => "Más",
-  Nk = () => "Plus",
+  Nk = () => "Más",
+  Ck = () => "Plus",
   Ak = () => "Altro",
   Dk = () => "もっと見る",
   Tk = () => "Więcej",
   Mk = () => "Ещё",
   Ek = () => "Більше",
   Bk = () => "Thêm",
-  u0 = (n = {}, e = {}) => {
+  g0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? xk() : r === "pt" ? qk() : r === "ch" ? Sk() : r === "de" ? Pk() : r === "es" ? Ck() : r === "fr" ? Nk() : r === "it" ? Ak() : r === "jp" ? Dk() : r === "pl" ? Tk() : r === "ru" ? Mk() : r === "uk" ? Ek() : Bk()
+    return r === "en" ? xk() : r === "pt" ? qk() : r === "ch" ? Sk() : r === "de" ? Pk() : r === "es" ? Nk() : r === "fr" ? Ck() : r === "it" ? Ak() : r === "jp" ? Dk() : r === "pl" ? Tk() : r === "ru" ? Mk() : r === "uk" ? Ek() : Bk()
   },
   Ik = () => "Mute",
   Rk = () => "Mutar",
@@ -1430,15 +1430,15 @@ const o = () => "OR",
   Lk = () => "Stummschalten",
   Wk = () => "Silenciar",
   $k = () => "Muet",
-  Ok = () => "Muta",
-  Vk = () => "ミュート",
+  Vk = () => "Muta",
+  Ok = () => "ミュート",
   Uk = () => "Wycisz",
   Hk = () => "Замьютить",
   Fk = () => "Заглушити",
   Zk = () => "Tắt tiếng",
-  i0 = (n = {}, e = {}) => {
+  k0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Ik() : r === "pt" ? Rk() : r === "ch" ? Kk() : r === "de" ? Lk() : r === "es" ? Wk() : r === "fr" ? $k() : r === "it" ? Ok() : r === "jp" ? Vk() : r === "pl" ? Uk() : r === "ru" ? Hk() : r === "uk" ? Fk() : Zk()
+    return r === "en" ? Ik() : r === "pt" ? Rk() : r === "ch" ? Kk() : r === "de" ? Lk() : r === "es" ? Wk() : r === "fr" ? $k() : r === "it" ? Vk() : r === "jp" ? Ok() : r === "pl" ? Uk() : r === "ru" ? Hk() : r === "uk" ? Fk() : Zk()
   },
   Gk = () => "My location",
   Qk = () => "Minha localização",
@@ -1452,7 +1452,7 @@ const o = () => "OR",
   ob = () => "Моё местоположение",
   ub = () => "Моє місцезнаходження",
   ib = () => "Vị trí của tôi",
-  s0 = (n = {}, e = {}) => {
+  b0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Gk() : r === "pt" ? Qk() : r === "ch" ? Yk() : r === "de" ? Jk() : r === "es" ? Xk() : r === "fr" ? rb() : r === "it" ? eb() : r === "jp" ? nb() : r === "pl" ? tb() : r === "ru" ? ob() : r === "uk" ? ub() : ib()
   },
@@ -1468,7 +1468,7 @@ const o = () => "OR",
   mb = () => "Ваше имя — то, как вас видят другие пользователи в Wplace. Его можно менять раз в 60 дней.",
   gb = () => "Ваше імʼя — це те, як інші користувачі бачитимуть вас у Wplace. Його можна змінювати раз на 60 днів.",
   kb = () => "Tên là cách người chơi khác nhìn thấy bạn trong Wplace. Bạn có thể đổi tên mỗi 60 ngày.",
-  c0 = (n = {}, e = {}) => {
+  v0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sb() : r === "pt" ? cb() : r === "ch" ? ab() : r === "de" ? _b() : r === "es" ? lb() : r === "fr" ? pb() : r === "it" ? fb() : r === "jp" ? db() : r === "pl" ? hb() : r === "ru" ? mb() : r === "uk" ? gb() : kb()
   },
@@ -1482,11 +1482,11 @@ const o = () => "OR",
   qb = () => "対応なし",
   Sb = () => "Brak akcji",
   Pb = () => "Нет действия",
-  Cb = () => "Немає дії",
-  Nb = () => "Không có hành động",
-  a0 = (n = {}, e = {}) => {
+  Nb = () => "Немає дії",
+  Cb = () => "Không có hành động",
+  y0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? bb() : r === "pt" ? vb() : r === "ch" ? yb() : r === "de" ? wb() : r === "es" ? jb() : r === "fr" ? zb() : r === "it" ? xb() : r === "jp" ? qb() : r === "pl" ? Sb() : r === "ru" ? Pb() : r === "uk" ? Cb() : Nb()
+    return r === "en" ? bb() : r === "pt" ? vb() : r === "ch" ? yb() : r === "de" ? wb() : r === "es" ? jb() : r === "fr" ? zb() : r === "it" ? xb() : r === "jp" ? qb() : r === "pl" ? Sb() : r === "ru" ? Pb() : r === "uk" ? Nb() : Cb()
   },
   Ab = () => "No banned users",
   Db = () => "Sem usuários banidos",
@@ -1500,12 +1500,12 @@ const o = () => "OR",
   Lb = () => "Нет забаненных пользователей",
   Wb = () => "Немає заблокованих користувачів",
   $b = () => "Không có người dùng bị cấm",
-  _0 = (n = {}, e = {}) => {
+  w0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Ab() : r === "pt" ? Db() : r === "ch" ? Tb() : r === "de" ? Mb() : r === "es" ? Eb() : r === "fr" ? Bb() : r === "it" ? Ib() : r === "jp" ? Rb() : r === "pl" ? Kb() : r === "ru" ? Lb() : r === "uk" ? Wb() : $b()
   },
-  Ob = () => "No country found.",
-  Vb = () => "País não encontrado.",
+  Vb = () => "No country found.",
+  Ob = () => "País não encontrado.",
   Ub = () => "未找到国家。",
   Hb = () => "Kein Land gefunden.",
   Fb = () => "No se encontró ningún país.",
@@ -1516,9 +1516,9 @@ const o = () => "OR",
   Jb = () => "Страна не найдена.",
   Xb = () => "Країну не знайдено.",
   rv = () => "Không tìm thấy quốc gia.",
-  l0 = (n = {}, e = {}) => {
+  j0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Ob() : r === "pt" ? Vb() : r === "ch" ? Ub() : r === "de" ? Hb() : r === "es" ? Fb() : r === "fr" ? Zb() : r === "it" ? Gb() : r === "jp" ? Qb() : r === "pl" ? Yb() : r === "ru" ? Jb() : r === "uk" ? Xb() : rv()
+    return r === "en" ? Vb() : r === "pt" ? Ob() : r === "ch" ? Ub() : r === "de" ? Hb() : r === "es" ? Fb() : r === "fr" ? Zb() : r === "it" ? Gb() : r === "jp" ? Qb() : r === "pl" ? Yb() : r === "ru" ? Jb() : r === "uk" ? Xb() : rv()
   },
   ev = () => "No description",
   nv = () => "Sem descrição",
@@ -1532,7 +1532,7 @@ const o = () => "OR",
   _v = () => "Без описания",
   lv = () => "Без опису",
   pv = () => "Không có mô tả",
-  p0 = (n = {}, e = {}) => {
+  z0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? ev() : r === "pt" ? nv() : r === "ch" ? tv() : r === "de" ? ov() : r === "es" ? uv() : r === "fr" ? iv() : r === "it" ? sv() : r === "jp" ? cv() : r === "pl" ? av() : r === "ru" ? _v() : r === "uk" ? lv() : pv()
   },
@@ -1548,7 +1548,7 @@ const o = () => "OR",
   wv = () => "🚫 Никакого неприемлемого контента (+18, речь ненависти, неприемлемые ссылки, крайне откровенный контент и т.п.)",
   jv = () => "🚫 Жодного неприйнятного контенту (+18, мова ворожнечі, неприйнятні посилання, дуже відвертий контент, ...)",
   zv = () => "🚫 Không cho phép nội dung không phù hợp (+18, ngôn từ thù hằn, liên kết không phù hợp, nội dung khiêu gợi mạnh, ...)",
-  f0 = (n = {}, e = {}) => {
+  x0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fv() : r === "pt" ? dv() : r === "ch" ? hv() : r === "de" ? mv() : r === "es" ? gv() : r === "fr" ? kv() : r === "it" ? bv() : r === "jp" ? vv() : r === "pl" ? yv() : r === "ru" ? wv() : r === "uk" ? jv() : zv()
   },
@@ -1556,17 +1556,17 @@ const o = () => "OR",
   qv = () => "Acabou a tinta",
   Sv = () => "没有剩余充能",
   Pv = () => "Keine Ladungen mehr",
-  Cv = () => "No tienes más cargas",
-  Nv = () => "Plus de charges",
+  Nv = () => "No tienes más cargas",
+  Cv = () => "Plus de charges",
   Av = () => "Vernice esaurita",
   Dv = () => "チャージが残っていません。",
   Tv = () => "Brak ładunków",
   Mv = () => "Заряды закончились",
   Ev = () => "Заряд закінчився",
   Bv = () => "Không còn lượt tô",
-  d0 = (n = {}, e = {}) => {
+  q0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? xv() : r === "pt" ? qv() : r === "ch" ? Sv() : r === "de" ? Pv() : r === "es" ? Cv() : r === "fr" ? Nv() : r === "it" ? Av() : r === "jp" ? Dv() : r === "pl" ? Tv() : r === "ru" ? Mv() : r === "uk" ? Ev() : Bv()
+    return r === "en" ? xv() : r === "pt" ? qv() : r === "ch" ? Sv() : r === "de" ? Pv() : r === "es" ? Nv() : r === "fr" ? Cv() : r === "it" ? Av() : r === "jp" ? Dv() : r === "pl" ? Tv() : r === "ru" ? Mv() : r === "uk" ? Ev() : Bv()
   },
   Iv = () => "🧑‍🤝‍🧑 Do not paint with more than one account",
   Rv = () => "🧑‍🤝‍🧑 Não desenhe com mais de uma conta",
@@ -1574,15 +1574,15 @@ const o = () => "OR",
   Lv = () => "🧑‍🤝‍🧑 Verwende nicht mehr als ein Konto zum Malen",
   Wv = () => "🧑‍🤝‍🧑 No pintes con más de una cuenta",
   $v = () => "🧑‍🤝‍🧑 Ne dessinez pas avec plus d’un compte",
-  Ov = () => "🧑‍🤝‍🧑 Non disegnare con più di un account",
-  Vv = () => "🧑‍🤝‍🧑 複数のアカウントでペイントしないでください。",
+  Vv = () => "🧑‍🤝‍🧑 Non disegnare con più di un account",
+  Ov = () => "🧑‍🤝‍🧑 複数のアカウントでペイントしないでください。",
   Uv = () => "🧑‍🤝‍🧑 Nie maluj, używając więcej niż jednego konta",
   Hv = () => "🧑‍🤝‍🧑 Нельзя рисовать с более чем одного аккаунта",
   Fv = () => "🧑‍🤝‍🧑 Не використовуйте більше одного акаунта",
   Zv = () => "🧑‍🤝‍🧑 Không tô bằng nhiều hơn một tài khoản",
-  h0 = (n = {}, e = {}) => {
+  S0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Iv() : r === "pt" ? Rv() : r === "ch" ? Kv() : r === "de" ? Lv() : r === "es" ? Wv() : r === "fr" ? $v() : r === "it" ? Ov() : r === "jp" ? Vv() : r === "pl" ? Uv() : r === "ru" ? Hv() : r === "uk" ? Fv() : Zv()
+    return r === "en" ? Iv() : r === "pt" ? Rv() : r === "ch" ? Kv() : r === "de" ? Lv() : r === "es" ? Wv() : r === "fr" ? $v() : r === "it" ? Vv() : r === "jp" ? Ov() : r === "pl" ? Uv() : r === "ru" ? Hv() : r === "uk" ? Fv() : Zv()
   },
   Gv = () => "You are not allowed to use multiple accounts. Use your main account to paint.",
   Qv = () => "Não é permitido usar várias contas. Use sua conta principal para pintar.",
@@ -1596,7 +1596,7 @@ const o = () => "OR",
   oy = () => "Запрещено использовать несколько аккаунтов. Используйте основной аккаунт для рисования.",
   uy = () => "Використовувати кілька акаунтів заборонено. Використовуйте свій основний акаунт для малювання.",
   iy = () => "Bạn không được phép sử dụng nhiều tài khoản. Hãy dùng tài khoản chính của bạn để tô.",
-  m0 = (n = {}, e = {}) => {
+  P0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Gv() : r === "pt" ? Qv() : r === "ch" ? Yv() : r === "de" ? Jv() : r === "es" ? Xv() : r === "fr" ? ry() : r === "it" ? ey() : r === "jp" ? ny() : r === "pl" ? ty() : r === "ru" ? oy() : r === "uk" ? uy() : iy()
   },
@@ -1612,7 +1612,7 @@ const o = () => "OR",
   my = () => "Нет уведомлений",
   gy = () => "Немає сповіщень",
   ky = () => "Không có thông báo",
-  g0 = (n = {}, e = {}) => {
+  N0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sy() : r === "pt" ? cy() : r === "ch" ? ay() : r === "de" ? _y() : r === "es" ? ly() : r === "fr" ? py() : r === "it" ? fy() : r === "jp" ? dy() : r === "pl" ? hy() : r === "ru" ? my() : r === "uk" ? gy() : ky()
   },
@@ -1626,11 +1626,11 @@ const o = () => "OR",
   qy = () => "まだピクセルが塗られていません。",
   Sy = () => "Brak pomalowanych pikseli",
   Py = () => "Нет нарисованных пикселей",
-  Cy = () => "Жодного пікселя не намальовано",
-  Ny = () => "Chưa có pixel nào được tô",
-  k0 = (n = {}, e = {}) => {
+  Ny = () => "Жодного пікселя не намальовано",
+  Cy = () => "Chưa có pixel nào được tô",
+  C0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? by() : r === "pt" ? vy() : r === "ch" ? yy() : r === "de" ? wy() : r === "es" ? jy() : r === "fr" ? zy() : r === "it" ? xy() : r === "jp" ? qy() : r === "pl" ? Sy() : r === "ru" ? Py() : r === "uk" ? Cy() : Ny()
+    return r === "en" ? by() : r === "pt" ? vy() : r === "ch" ? yy() : r === "de" ? wy() : r === "es" ? jy() : r === "fr" ? zy() : r === "it" ? xy() : r === "jp" ? qy() : r === "pl" ? Sy() : r === "ru" ? Py() : r === "uk" ? Ny() : Cy()
   },
   Ay = () => "No place found",
   Dy = () => "Nenhum local encontrado",
@@ -1644,12 +1644,12 @@ const o = () => "OR",
   Ly = () => "Места не найдены",
   Wy = () => "Місце не знайдено",
   $y = () => "Không tìm thấy địa điểm nào",
-  b0 = (n = {}, e = {}) => {
+  A0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Ay() : r === "pt" ? Dy() : r === "ch" ? Ty() : r === "de" ? My() : r === "es" ? Ey() : r === "fr" ? By() : r === "it" ? Iy() : r === "jp" ? Ry() : r === "pl" ? Ky() : r === "ru" ? Ly() : r === "uk" ? Wy() : $y()
   },
-  Oy = () => "No profile pictures",
-  Vy = () => "Sem fotos de perfil",
+  Vy = () => "No profile pictures",
+  Oy = () => "Sem fotos de perfil",
   Uy = () => "没有个人资料图片",
   Hy = () => "Keine Profilbilder",
   Fy = () => "Sin fotos de perfil",
@@ -1660,9 +1660,9 @@ const o = () => "OR",
   Jy = () => "Нет фотографий профиля",
   Xy = () => "Без фотографій профілю",
   rw = () => "Không có ảnh đại diện",
-  v0 = (n = {}, e = {}) => {
+  D0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Oy() : r === "pt" ? Vy() : r === "ch" ? Uy() : r === "de" ? Hy() : r === "es" ? Fy() : r === "fr" ? Zy() : r === "it" ? Gy() : r === "jp" ? Qy() : r === "pl" ? Yy() : r === "ru" ? Jy() : r === "uk" ? Xy() : rw()
+    return r === "en" ? Vy() : r === "pt" ? Oy() : r === "ch" ? Uy() : r === "de" ? Hy() : r === "es" ? Fy() : r === "fr" ? Zy() : r === "it" ? Gy() : r === "jp" ? Qy() : r === "pl" ? Yy() : r === "ru" ? Jy() : r === "uk" ? Xy() : rw()
   },
   ew = () => "No recent locations",
   nw = () => "Nenhum local recente",
@@ -1676,7 +1676,7 @@ const o = () => "OR",
   _w = () => "Нет недавних локаций",
   lw = () => "Немає нещодавніх локацій",
   pw = () => "Không có vị trí gần đây",
-  y0 = (n = {}, e = {}) => {
+  T0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? ew() : r === "pt" ? nw() : r === "ch" ? tw() : r === "de" ? ow() : r === "es" ? uw() : r === "fr" ? iw() : r === "it" ? sw() : r === "jp" ? cw() : r === "pl" ? aw() : r === "ru" ? _w() : r === "uk" ? lw() : pw()
   },
@@ -1692,7 +1692,7 @@ const o = () => "OR",
   ww = () => "Нет соответствующей области на карте (только косметический эффект)",
   jw = () => "Немає відповідної області на карті (лише косметичний ефект)",
   zw = () => "Không có vùng tương ứng trên bản đồ (chỉ có tác dụng trang trí)",
-  w0 = (n = {}, e = {}) => {
+  M0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fw() : r === "pt" ? dw() : r === "ch" ? hw() : r === "de" ? mw() : r === "es" ? gw() : r === "fr" ? kw() : r === "it" ? bw() : r === "jp" ? vw() : r === "pl" ? yw() : r === "ru" ? ww() : r === "uk" ? jw() : zw()
   },
@@ -1700,17 +1700,17 @@ const o = () => "OR",
   qw = () => "🤖 Usar bots não é permitido",
   Sw = () => "🤖 不允许使用机器人或脚本",
   Pw = () => "🤖 Das Verwenden von Bots ist verboten",
-  Cw = () => "🤖 No se permite el uso de bots",
-  Nw = () => "🤖 L’utilisation de bots n’est pas autorisée",
+  Nw = () => "🤖 No se permite el uso de bots",
+  Cw = () => "🤖 L’utilisation de bots n’est pas autorisée",
   Aw = () => "🤖 L'uso di bot non è consentito",
   Dw = () => "🤖 ボットの使用は禁止されています。",
   Tw = () => "🤖 Używanie botów jest zabronione",
   Mw = () => "🤖 Использование ботов запрещено",
   Ew = () => "🤖 Використання ботів заборонено",
   Bw = () => "🤖 Không được phép sử dụng bot",
-  j0 = (n = {}, e = {}) => {
+  E0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? xw() : r === "pt" ? qw() : r === "ch" ? Sw() : r === "de" ? Pw() : r === "es" ? Cw() : r === "fr" ? Nw() : r === "it" ? Aw() : r === "jp" ? Dw() : r === "pl" ? Tw() : r === "ru" ? Mw() : r === "uk" ? Ew() : Bw()
+    return r === "en" ? xw() : r === "pt" ? qw() : r === "ch" ? Sw() : r === "de" ? Pw() : r === "es" ? Nw() : r === "fr" ? Cw() : r === "it" ? Aw() : r === "jp" ? Dw() : r === "pl" ? Tw() : r === "ru" ? Mw() : r === "uk" ? Ew() : Bw()
   },
   Iw = () => "Not enough Droplets",
   Rw = () => "Droplets insuficientes",
@@ -1718,15 +1718,15 @@ const o = () => "OR",
   Lw = () => "Nicht genug Droplets",
   Ww = () => "No tienes suficientes gotas",
   $w = () => "Pas assez de droplets",
-  Ow = () => "Gocce insufficienti",
-  Vw = () => "ドロップレットが足りません。",
+  Vw = () => "Gocce insufficienti",
+  Ow = () => "ドロップレットが足りません。",
   Uw = () => "Za mało kropli",
   Hw = () => "Недостаточно droplets",
   Fw = () => "Недостатньо дроплетів",
   Zw = () => "Không đủ droplets",
-  z0 = (n = {}, e = {}) => {
+  B0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Iw() : r === "pt" ? Rw() : r === "ch" ? Kw() : r === "de" ? Lw() : r === "es" ? Ww() : r === "fr" ? $w() : r === "it" ? Ow() : r === "jp" ? Vw() : r === "pl" ? Uw() : r === "ru" ? Hw() : r === "uk" ? Fw() : Zw()
+    return r === "en" ? Iw() : r === "pt" ? Rw() : r === "ch" ? Kw() : r === "de" ? Lw() : r === "es" ? Ww() : r === "fr" ? $w() : r === "it" ? Vw() : r === "jp" ? Ow() : r === "pl" ? Uw() : r === "ru" ? Hw() : r === "uk" ? Fw() : Zw()
   },
   Gw = () => "You are not in an alliance",
   Qw = () => "Você não está em uma aliança",
@@ -1740,7 +1740,7 @@ const o = () => "OR",
   oj = () => "Вы не состоите в альянсе",
   uj = () => "Ви не перебуваєте в альянсі",
   ij = () => "Bạn không ở trong liên minh nào",
-  x0 = (n = {}, e = {}) => {
+  I0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Gw() : r === "pt" ? Qw() : r === "ch" ? Yw() : r === "de" ? Jw() : r === "es" ? Xw() : r === "fr" ? rj() : r === "it" ? ej() : r === "jp" ? nj() : r === "pl" ? tj() : r === "ru" ? oj() : r === "uk" ? uj() : ij()
   },
@@ -1756,7 +1756,7 @@ const o = () => "OR",
   mj = () => "Не нарисовано",
   gj = () => "Не намальовано",
   kj = () => "Chưa tô",
-  q0 = (n = {}, e = {}) => {
+  R0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sj() : r === "pt" ? cj() : r === "ch" ? aj() : r === "de" ? _j() : r === "es" ? lj() : r === "fr" ? pj() : r === "it" ? fj() : r === "jp" ? dj() : r === "pl" ? hj() : r === "ru" ? mj() : r === "uk" ? gj() : kj()
   },
@@ -1770,11 +1770,11 @@ const o = () => "OR",
   qj = () => "未設定",
   Sj = () => "Nie ustawiono",
   Pj = () => "Не задано",
-  Cj = () => "Не задано",
-  Nj = () => "Chưa đặt",
-  S0 = (n = {}, e = {}) => {
+  Nj = () => "Не задано",
+  Cj = () => "Chưa đặt",
+  K0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? bj() : r === "pt" ? vj() : r === "ch" ? yj() : r === "de" ? wj() : r === "es" ? jj() : r === "fr" ? zj() : r === "it" ? xj() : r === "jp" ? qj() : r === "pl" ? Sj() : r === "ru" ? Pj() : r === "uk" ? Cj() : Nj()
+    return r === "en" ? bj() : r === "pt" ? vj() : r === "ch" ? yj() : r === "de" ? wj() : r === "es" ? jj() : r === "fr" ? zj() : r === "it" ? xj() : r === "jp" ? qj() : r === "pl" ? Sj() : r === "ru" ? Pj() : r === "uk" ? Nj() : Cj()
   },
   Aj = () => "Notifications",
   Dj = () => "Notificações",
@@ -1788,12 +1788,12 @@ const o = () => "OR",
   Lj = () => "Уведомления",
   Wj = () => "Сповіщення",
   $j = () => "Thông báo",
-  P0 = (n = {}, e = {}) => {
+  L0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Aj() : r === "pt" ? Dj() : r === "ch" ? Tj() : r === "de" ? Mj() : r === "es" ? Ej() : r === "fr" ? Bj() : r === "it" ? Ij() : r === "jp" ? Rj() : r === "pl" ? Kj() : r === "ru" ? Lj() : r === "uk" ? Wj() : $j()
   },
-  Oj = () => "Offline",
-  Vj = () => "Desconectado",
+  Vj = () => "Offline",
+  Oj = () => "Desconectado",
   Uj = () => "离线",
   Hj = () => "Offline",
   Fj = () => "Desconectado",
@@ -1804,9 +1804,9 @@ const o = () => "OR",
   Jj = () => "Оффлайн",
   Xj = () => "Офлайн",
   rz = () => "Ngoại tuyến",
-  C0 = (n = {}, e = {}) => {
+  W0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Oj() : r === "pt" ? Vj() : r === "ch" ? Uj() : r === "de" ? Hj() : r === "es" ? Fj() : r === "fr" ? Zj() : r === "it" ? Gj() : r === "jp" ? Qj() : r === "pl" ? Yj() : r === "ru" ? Jj() : r === "uk" ? Xj() : rz()
+    return r === "en" ? Vj() : r === "pt" ? Oj() : r === "ch" ? Uj() : r === "de" ? Hj() : r === "es" ? Fj() : r === "fr" ? Zj() : r === "it" ? Gj() : r === "jp" ? Qj() : r === "pl" ? Yj() : r === "ru" ? Jj() : r === "uk" ? Xj() : rz()
   },
   ez = () => "on the top right corner of the screen. This will lock the screen but it'll also enable painting by moving your finger over the map.",
   nz = () => "no canto superior direito da tela. Isso bloqueará a tela, mas também permitirá pintar movendo o dedo sobre o mapa.",
@@ -1820,7 +1820,7 @@ const o = () => "OR",
   _z = () => "в правом верхнем углу экрана. Экран будет заблокирован, но при этом можно рисовать, проводя пальцем по карте.",
   lz = () => "у верхньому правому куті екрана. Це заблокує екран, але дозволить малювати, проводячи пальцем по карті.",
   pz = () => "ở góc trên bên phải màn hình. Điều này sẽ khóa màn hình nhưng cho phép bạn tô bằng cách rê ngón tay trên bản đồ.",
-  N0 = (n = {}, e = {}) => {
+  $0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? ez() : r === "pt" ? nz() : r === "ch" ? tz() : r === "de" ? oz() : r === "es" ? uz() : r === "fr" ? iz() : r === "it" ? sz() : r === "jp" ? cz() : r === "pl" ? az() : r === "ru" ? _z() : r === "uk" ? lz() : pz()
   },
@@ -1836,7 +1836,7 @@ const o = () => "OR",
   wz = () => "Данные OpenMapTiles от",
   jz = () => "Дані OpenMapTiles від",
   zz = () => "Dữ liệu OpenMapTiles từ",
-  A0 = (n = {}, e = {}) => {
+  V0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fz() : r === "pt" ? dz() : r === "ch" ? hz() : r === "de" ? mz() : r === "es" ? gz() : r === "fr" ? kz() : r === "it" ? bz() : r === "jp" ? vz() : r === "pl" ? yz() : r === "ru" ? wz() : r === "uk" ? jz() : zz()
   },
@@ -1844,17 +1844,17 @@ const o = () => "OR",
   qz = () => "ou segure",
   Sz = () => "或按住",
   Pz = () => "oder",
-  Cz = () => "o mantén pulsado",
-  Nz = () => "ou maintenez",
+  Nz = () => "o mantén pulsado",
+  Cz = () => "ou maintenez",
   Az = () => "o tieni premuto",
   Dz = () => "または長押し",
   Tz = () => "lub przytrzymaj",
   Mz = () => "или удерживайте",
   Ez = () => "або утримуйте",
   Bz = () => "hoặc giữ",
-  D0 = (n = {}, e = {}) => {
+  O0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? xz() : r === "pt" ? qz() : r === "ch" ? Sz() : r === "de" ? Pz() : r === "es" ? Cz() : r === "fr" ? Nz() : r === "it" ? Az() : r === "jp" ? Dz() : r === "pl" ? Tz() : r === "ru" ? Mz() : r === "uk" ? Ez() : Bz()
+    return r === "en" ? xz() : r === "pt" ? qz() : r === "ch" ? Sz() : r === "de" ? Pz() : r === "es" ? Nz() : r === "fr" ? Cz() : r === "it" ? Az() : r === "jp" ? Dz() : r === "pl" ? Tz() : r === "ru" ? Mz() : r === "uk" ? Ez() : Bz()
   },
   Iz = () => "Overview",
   Rz = () => "Visão Geral",
@@ -1862,15 +1862,15 @@ const o = () => "OR",
   Lz = () => "Übersicht",
   Wz = () => "Resumen",
   $z = () => "Vue d’ensemble",
-  Oz = () => "Panoramica",
-  Vz = () => "概要",
+  Vz = () => "Panoramica",
+  Oz = () => "概要",
   Uz = () => "Przegląd",
   Hz = () => "Обзор",
   Fz = () => "Огляд",
   Zz = () => "Tổng quan",
-  T0 = (n = {}, e = {}) => {
+  U0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Iz() : r === "pt" ? Rz() : r === "ch" ? Kz() : r === "de" ? Lz() : r === "es" ? Wz() : r === "fr" ? $z() : r === "it" ? Oz() : r === "jp" ? Vz() : r === "pl" ? Uz() : r === "ru" ? Hz() : r === "uk" ? Fz() : Zz()
+    return r === "en" ? Iz() : r === "pt" ? Rz() : r === "ch" ? Kz() : r === "de" ? Lz() : r === "es" ? Wz() : r === "fr" ? $z() : r === "it" ? Vz() : r === "jp" ? Oz() : r === "pl" ? Uz() : r === "ru" ? Hz() : r === "uk" ? Fz() : Zz()
   },
   Gz = () => "Paint",
   Qz = () => "Pintar",
@@ -1884,7 +1884,7 @@ const o = () => "OR",
   ox = () => "Рисовать",
   ux = () => "Малювати",
   ix = () => "Tô",
-  M0 = (n = {}, e = {}) => {
+  H0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Gz() : r === "pt" ? Qz() : r === "ch" ? Yz() : r === "de" ? Jz() : r === "es" ? Xz() : r === "fr" ? rx() : r === "it" ? ex() : r === "jp" ? nx() : r === "pl" ? tx() : r === "ru" ? ox() : r === "uk" ? ux() : ix()
   },
@@ -1900,7 +1900,7 @@ const o = () => "OR",
   mx = () => "Нарисовать пиксель",
   gx = () => "Намалювати піксель",
   kx = () => "Tô pixel",
-  E0 = (n = {}, e = {}) => {
+  F0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sx() : r === "pt" ? cx() : r === "ch" ? ax() : r === "de" ? _x() : r === "es" ? lx() : r === "fr" ? px() : r === "it" ? fx() : r === "jp" ? dx() : r === "pl" ? hx() : r === "ru" ? mx() : r === "uk" ? gx() : kx()
   },
@@ -1914,1804 +1914,1820 @@ const o = () => "OR",
   qx = () => "塗られた",
   Sx = () => "Pomalowane",
   Px = () => "Нарисовано",
-  Cx = () => "Намальовано",
-  Nx = () => "Đã tô",
-  B0 = (n = {}, e = {}) => {
+  Nx = () => "Намальовано",
+  Cx = () => "Đã tô",
+  Z0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? bx() : r === "pt" ? vx() : r === "ch" ? yx() : r === "de" ? wx() : r === "es" ? jx() : r === "fr" ? zx() : r === "it" ? xx() : r === "jp" ? qx() : r === "pl" ? Sx() : r === "ru" ? Px() : r === "uk" ? Cx() : Nx()
+    return r === "en" ? bx() : r === "pt" ? vx() : r === "ch" ? yx() : r === "de" ? wx() : r === "es" ? jx() : r === "fr" ? zx() : r === "it" ? xx() : r === "jp" ? qx() : r === "pl" ? Sx() : r === "ru" ? Px() : r === "uk" ? Nx() : Cx()
   },
-  Ax = () => "Painted by",
-  Dx = () => "Pintado por",
-  Tx = () => "绘制者",
-  Mx = () => "Gemalt von",
-  Ex = () => "Pintado por",
-  Bx = () => "Peint par",
-  Ix = () => "Dipinto da",
-  Rx = () => "塗ったユーザー",
-  Kx = () => "Pomalowane przez",
-  Lx = () => "Нарисовано",
-  Wx = () => "Намальовано",
-  $x = () => "Được tô bởi",
-  I0 = (n = {}, e = {}) => {
+  Ax = () => "✅ Painting over other artworks to complement them or create a new drawing is allowed",
+  Dx = () => "✅ Desenhar sobre outras artes para complementar ou criar novas artes é permitido",
+  Tx = () => "✅ 在不破坏作品的前提下，对他人作品进行补充或创作新图是允许的",
+  Mx = () => "✅ Über andere Kunstwerke zu malen, um sie zu ergänzen oder ein neues Bild zu erstellen, ist erlaubt",
+  Ex = () => "✅ Pintar sobre las obras de otros para complementarlas o crear un nuevo dibujo está permitido",
+  Bx = () => "✅ Peindre par-dessus d’autres œuvres pour les compléter ou créer un nouveau dessin est autorisé",
+  Ix = () => "✅ Disegnare sopra le opere altrui per completarle o creare nuove opere è consentito",
+  Rx = () => "✅ 他人の作品を補完したり、新しい絵を作る目的で上から描き足すことは許可されています。",
+  Kx = () => "✅ Malowanie po cudzych pracach, aby je uzupełnić lub stworzyć nowy rysunek, jest dozwolone",
+  Lx = () => "✅ Рисовать поверх чужих работ, чтобы дополнить их или создать новый рисунок, разрешено",
+  Wx = () => "✅ Малювати поверх чужих робіт, щоб доповнити їх або створити новий малюнок, дозволено",
+  $x = () => "✅ Tô đè lên tác phẩm của người khác để bổ sung hoặc tạo tranh mới là được phép",
+  G0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Ax() : r === "pt" ? Dx() : r === "ch" ? Tx() : r === "de" ? Mx() : r === "es" ? Ex() : r === "fr" ? Bx() : r === "it" ? Ix() : r === "jp" ? Rx() : r === "pl" ? Kx() : r === "ru" ? Lx() : r === "uk" ? Wx() : $x()
   },
-  Ox = () => "✅ Painting over other artworks to complement them or create a new drawing is allowed",
-  Vx = () => "✅ Desenhar sobre outras artes para complementar ou criar novas artes é permitido",
-  Ux = () => "✅ 在不破坏作品的前提下，对他人作品进行补充或创作新图是允许的",
-  Hx = () => "✅ Über andere Kunstwerke zu malen, um sie zu ergänzen oder ein neues Bild zu erstellen, ist erlaubt",
-  Fx = () => "✅ Pintar sobre las obras de otros para complementarlas o crear un nuevo dibujo está permitido",
-  Zx = () => "✅ Peindre par-dessus d’autres œuvres pour les compléter ou créer un nouveau dessin est autorisé",
-  Gx = () => "✅ Disegnare sopra le opere altrui per completarle o creare nuove opere è consentito",
-  Qx = () => "✅ 他人の作品を補完したり、新しい絵を作る目的で上から描き足すことは許可されています。",
-  Yx = () => "✅ Malowanie po cudzych pracach, aby je uzupełnić lub stworzyć nowy rysunek, jest dozwolone",
-  Jx = () => "✅ Рисовать поверх чужих работ, чтобы дополнить их или создать новый рисунок, разрешено",
-  Xx = () => "✅ Малювати поверх чужих робіт, щоб доповнити їх або створити новий малюнок, дозволено",
-  rq = () => "✅ Tô đè lên tác phẩm của người khác để bổ sung hoặc tạo tranh mới là được phép",
-  R0 = (n = {}, e = {}) => {
+  Vx = () => "Phone verification required",
+  Ox = () => "Verificação de telefone necessária",
+  Ux = () => "需要进行电话验证",
+  Hx = () => "Telefon-Verifizierung erforderlich",
+  Fx = () => "Se requiere verificación de teléfono",
+  Zx = () => "Vérification du téléphone requise",
+  Gx = () => "Verifica del telefono richiesta",
+  Qx = () => "電話番号の確認が必要です。",
+  Yx = () => "Wymagana weryfikacja telefonu",
+  Jx = () => "Требуется подтверждение телефона",
+  Xx = () => "Потрібне підтвердження телефону",
+  rq = () => "Yêu cầu xác minh số điện thoại",
+  Q0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Ox() : r === "pt" ? Vx() : r === "ch" ? Ux() : r === "de" ? Hx() : r === "es" ? Fx() : r === "fr" ? Zx() : r === "it" ? Gx() : r === "jp" ? Qx() : r === "pl" ? Yx() : r === "ru" ? Jx() : r === "uk" ? Xx() : rq()
+    return r === "en" ? Vx() : r === "pt" ? Ox() : r === "ch" ? Ux() : r === "de" ? Hx() : r === "es" ? Fx() : r === "fr" ? Zx() : r === "it" ? Gx() : r === "jp" ? Qx() : r === "pl" ? Yx() : r === "ru" ? Jx() : r === "uk" ? Xx() : rq()
   },
-  eq = () => "Phone verification required",
-  nq = () => "Verificação de telefone necessária",
-  tq = () => "需要进行电话验证",
-  oq = () => "Telefon-Verifizierung erforderlich",
-  uq = () => "Se requiere verificación de teléfono",
-  iq = () => "Vérification du téléphone requise",
-  sq = () => "Verifica del telefono richiesta",
-  cq = () => "電話番号の確認が必要です。",
-  aq = () => "Wymagana weryfikacja telefonu",
-  _q = () => "Требуется подтверждение телефона",
-  lq = () => "Потрібне підтвердження телефону",
-  pq = () => "Yêu cầu xác minh số điện thoại",
-  K0 = (n = {}, e = {}) => {
+  eq = () => "Pick a color from the map",
+  nq = () => "Escolha uma cor do mapa",
+  tq = () => "从地图中拾取颜色",
+  oq = () => "Farbe von der Karte auswählen",
+  uq = () => "Elige un color del mapa",
+  iq = () => "Choisissez une couleur sur la carte",
+  sq = () => "Scegli un colore dalla mappa",
+  cq = () => "マップから色を拾う",
+  aq = () => "Wybierz kolor z mapy",
+  _q = () => "Выберите цвет на карте",
+  lq = () => "Оберіть колір на карті",
+  pq = () => "Chọn một màu từ bản đồ",
+  Y0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? eq() : r === "pt" ? nq() : r === "ch" ? tq() : r === "de" ? oq() : r === "es" ? uq() : r === "fr" ? iq() : r === "it" ? sq() : r === "jp" ? cq() : r === "pl" ? aq() : r === "ru" ? _q() : r === "uk" ? lq() : pq()
   },
-  fq = () => "Pick a color from the map",
-  dq = () => "Escolha uma cor do mapa",
-  hq = () => "从地图中拾取颜色",
-  mq = () => "Farbe von der Karte auswählen",
-  gq = () => "Elige un color del mapa",
-  kq = () => "Choisissez une couleur sur la carte",
-  bq = () => "Scegli un colore dalla mappa",
-  vq = () => "マップから色を拾う",
-  yq = () => "Wybierz kolor z mapy",
-  wq = () => "Выберите цвет на карте",
-  jq = () => "Оберіть колір на карті",
-  zq = () => "Chọn một màu từ bản đồ",
-  L0 = (n = {}, e = {}) => {
+  fq = () => "Pixels",
+  dq = () => "Pixels",
+  hq = () => "像素",
+  mq = () => "Pixel",
+  gq = () => "Píxeles",
+  kq = () => "Pixels",
+  bq = () => "Pixel",
+  vq = () => "ピクセル",
+  yq = () => "Piksele",
+  wq = () => "Пиксели",
+  jq = () => "Пікселі",
+  zq = () => "Pixel",
+  J0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fq() : r === "pt" ? dq() : r === "ch" ? hq() : r === "de" ? mq() : r === "es" ? gq() : r === "fr" ? kq() : r === "it" ? bq() : r === "jp" ? vq() : r === "pl" ? yq() : r === "ru" ? wq() : r === "uk" ? jq() : zq()
   },
-  xq = () => "Pixels",
-  qq = () => "Pixels",
-  Sq = () => "像素",
-  Pq = () => "Pixel",
-  Cq = () => "Píxeles",
-  Nq = () => "Pixels",
-  Aq = () => "Pixel",
-  Dq = () => "ピクセル",
-  Tq = () => "Piksele",
-  Mq = () => "Пиксели",
-  Eq = () => "Пікселі",
-  Bq = () => "Pixel",
-  W0 = (n = {}, e = {}) => {
+  xq = () => "Pixels painted inside the country",
+  qq = () => "Pixels pintados dentro do país",
+  Sq = () => "在该国家内绘制的像素数",
+  Pq = () => "Pixel, die innerhalb des Landes gemalt wurden",
+  Nq = () => "Píxeles pintados dentro del país",
+  Cq = () => "Pixels peints dans le pays",
+  Aq = () => "Pixel dipinti all'interno del paese",
+  Dq = () => "その国の領域内で塗られたピクセル数",
+  Tq = () => "Piksele pomalowane wewnątrz kraju",
+  Mq = () => "Пиксели, нарисованные внутри страны",
+  Eq = () => "Пікселі, намальовані всередині країни",
+  Bq = () => "Pixel đã tô trong quốc gia",
+  X0 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? xq() : r === "pt" ? qq() : r === "ch" ? Sq() : r === "de" ? Pq() : r === "es" ? Cq() : r === "fr" ? Nq() : r === "it" ? Aq() : r === "jp" ? Dq() : r === "pl" ? Tq() : r === "ru" ? Mq() : r === "uk" ? Eq() : Bq()
+    return r === "en" ? xq() : r === "pt" ? qq() : r === "ch" ? Sq() : r === "de" ? Pq() : r === "es" ? Nq() : r === "fr" ? Cq() : r === "it" ? Aq() : r === "jp" ? Dq() : r === "pl" ? Tq() : r === "ru" ? Mq() : r === "uk" ? Eq() : Bq()
   },
-  Iq = () => "Pixels painted inside the country",
-  Rq = () => "Pixels pintados dentro do país",
-  Kq = () => "在该国家内绘制的像素数",
-  Lq = () => "Pixel, die innerhalb des Landes gemalt wurden",
-  Wq = () => "Píxeles pintados dentro del país",
-  $q = () => "Pixels peints dans le pays",
-  Oq = () => "Pixel dipinti all'interno del paese",
-  Vq = () => "その国の領域内で塗られたピクセル数",
-  Uq = () => "Piksele pomalowane wewnątrz kraju",
-  Hq = () => "Пиксели, нарисованные внутри страны",
-  Fq = () => "Пікселі, намальовані всередині країни",
-  Zq = () => "Pixel đã tô trong quốc gia",
-  $0 = (n = {}, e = {}) => {
+  Iq = () => "Pixels painted inside the region",
+  Rq = () => "Pixels pintados dentro da região",
+  Kq = () => "在该区域内绘制的像素数",
+  Lq = () => "Pixel, die innerhalb der Region gemalt wurden",
+  Wq = () => "Píxeles pintados dentro de la región",
+  $q = () => "Pixels peints dans la région",
+  Vq = () => "Pixel dipinti all'interno della regione",
+  Oq = () => "その地域内で塗られたピクセル数",
+  Uq = () => "Piksele pomalowane wewnątrz regionu",
+  Hq = () => "Пиксели, нарисованные внутри региона",
+  Fq = () => "Пікселі, намальовані в межах регіону",
+  Zq = () => "Pixel đã tô trong vùng",
+  r5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? Iq() : r === "pt" ? Rq() : r === "ch" ? Kq() : r === "de" ? Lq() : r === "es" ? Wq() : r === "fr" ? $q() : r === "it" ? Oq() : r === "jp" ? Vq() : r === "pl" ? Uq() : r === "ru" ? Hq() : r === "uk" ? Fq() : Zq()
+    return r === "en" ? Iq() : r === "pt" ? Rq() : r === "ch" ? Kq() : r === "de" ? Lq() : r === "es" ? Wq() : r === "fr" ? $q() : r === "it" ? Vq() : r === "jp" ? Oq() : r === "pl" ? Uq() : r === "ru" ? Hq() : r === "uk" ? Fq() : Zq()
   },
-  Gq = () => "Pixels painted inside the region",
-  Qq = () => "Pixels pintados dentro da região",
-  Yq = () => "在该区域内绘制的像素数",
-  Jq = () => "Pixel, die innerhalb der Region gemalt wurden",
-  Xq = () => "Píxeles pintados dentro de la región",
-  rS = () => "Pixels peints dans la région",
-  eS = () => "Pixel dipinti all'interno della regione",
-  nS = () => "その地域内で塗られたピクセル数",
-  tS = () => "Piksele pomalowane wewnątrz regionu",
-  oS = () => "Пиксели, нарисованные внутри региона",
-  uS = () => "Пікселі, намальовані в межах регіону",
-  iS = () => "Pixel đã tô trong vùng",
-  O0 = (n = {}, e = {}) => {
+  Gq = () => "Players",
+  Qq = () => "Jogadores",
+  Yq = () => "玩家",
+  Jq = () => "Spieler",
+  Xq = () => "Jugadores",
+  rS = () => "Joueurs",
+  eS = () => "Giocatori",
+  nS = () => "プレイヤー",
+  tS = () => "Gracze",
+  oS = () => "Игроки",
+  uS = () => "Гравці",
+  iS = () => "Người chơi",
+  e5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Gq() : r === "pt" ? Qq() : r === "ch" ? Yq() : r === "de" ? Jq() : r === "es" ? Xq() : r === "fr" ? rS() : r === "it" ? eS() : r === "jp" ? nS() : r === "pl" ? tS() : r === "ru" ? oS() : r === "uk" ? uS() : iS()
   },
-  sS = () => "Players",
-  cS = () => "Jogadores",
-  aS = () => "玩家",
-  _S = () => "Spieler",
-  lS = () => "Jugadores",
-  pS = () => "Joueurs",
-  fS = () => "Giocatori",
-  dS = () => "プレイヤー",
-  hS = () => "Gracze",
-  mS = () => "Игроки",
-  gS = () => "Гравці",
-  kS = () => "Người chơi",
-  V0 = (n = {}, e = {}) => {
+  sS = () => "✅ Griefing political party flags or portraits of politicians is allowed",
+  cS = () => "✅ Desenhar sobre bandeiras de partidos e retratos de políticos é permitido",
+  aS = () => "✅ 破坏政党旗帜或政治人物肖像是允许的",
+  _S = () => "✅ Das Griefen von Parteiflaggen oder Politikerporträts ist erlaubt",
+  lS = () => "✅ Griefear banderas de partidos políticos o retratos de políticos está permitido",
+  pS = () => "✅ Peindre par-dessus les drapeaux de partis politiques ou les portraits de politiciens est autorisé",
+  fS = () => "✅ È consentito disegnare sopra bandiere di partito e ritratti di politici",
+  dS = () => "✅ 政党の旗や政治家の肖像画をグリーフィングすることは許可されています。",
+  hS = () => "✅ Niszczenie flag partii politycznych lub portretów polityków jest dozwolone",
+  mS = () => "✅ Гриферство по отношению к флагам партий или портретам политиков разрешено",
+  gS = () => "✅ Малювати поверх прапорів партій або портретів політиків дозволено",
+  kS = () => "✅ Tô đè lên cờ đảng phái chính trị hoặc chân dung chính trị gia là được phép",
+  n5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sS() : r === "pt" ? cS() : r === "ch" ? aS() : r === "de" ? _S() : r === "es" ? lS() : r === "fr" ? pS() : r === "it" ? fS() : r === "jp" ? dS() : r === "pl" ? hS() : r === "ru" ? mS() : r === "uk" ? gS() : kS()
   },
-  bS = () => "✅ Griefing political party flags or portraits of politicians is allowed",
-  vS = () => "✅ Desenhar sobre bandeiras de partidos e retratos de políticos é permitido",
-  yS = () => "✅ 破坏政党旗帜或政治人物肖像是允许的",
-  wS = () => "✅ Das Griefen von Parteiflaggen oder Politikerporträts ist erlaubt",
-  jS = () => "✅ Griefear banderas de partidos políticos o retratos de políticos está permitido",
-  zS = () => "✅ Peindre par-dessus les drapeaux de partis politiques ou les portraits de politiciens est autorisé",
-  xS = () => "✅ È consentito disegnare sopra bandiere di partito e ritratti di politici",
-  qS = () => "✅ 政党の旗や政治家の肖像画をグリーフィングすることは許可されています。",
-  SS = () => "✅ Niszczenie flag partii politycznych lub portretów polityków jest dozwolone",
-  PS = () => "✅ Гриферство по отношению к флагам партий или портретам политиков разрешено",
-  CS = () => "✅ Малювати поверх прапорів партій або портретів політиків дозволено",
-  NS = () => "✅ Tô đè lên cờ đảng phái chính trị hoặc chân dung chính trị gia là được phép",
-  U0 = (n = {}, e = {}) => {
+  bS = () => "Map powered by:",
+  vS = () => "Mapa fornecido por:",
+  yS = () => "地图支持：",
+  wS = () => "Karte bereitgestellt von:",
+  jS = () => "Mapa proporcionado por:",
+  zS = () => "Carte fournie par :",
+  xS = () => "Mappa fornita da:",
+  qS = () => "地図提供:",
+  SS = () => "Mapa dostarczana przez:",
+  PS = () => "Карта на основе:",
+  NS = () => "Карта на основі:",
+  CS = () => "Bản đồ được cung cấp bởi:",
+  t5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? bS() : r === "pt" ? vS() : r === "ch" ? yS() : r === "de" ? wS() : r === "es" ? jS() : r === "fr" ? zS() : r === "it" ? xS() : r === "jp" ? qS() : r === "pl" ? SS() : r === "ru" ? PS() : r === "uk" ? CS() : NS()
+    return r === "en" ? bS() : r === "pt" ? vS() : r === "ch" ? yS() : r === "de" ? wS() : r === "es" ? jS() : r === "fr" ? zS() : r === "it" ? xS() : r === "jp" ? qS() : r === "pl" ? SS() : r === "ru" ? PS() : r === "uk" ? NS() : CS()
   },
-  AS = () => "Map powered by:",
-  DS = () => "Mapa fornecido por:",
-  TS = () => "地图支持：",
-  MS = () => "Karte bereitgestellt von:",
-  ES = () => "Mapa proporcionado por:",
-  BS = () => "Carte fournie par :",
-  IS = () => "Mappa fornita da:",
-  RS = () => "地図提供:",
-  KS = () => "Mapa dostarczana przez:",
-  LS = () => "Карта на основе:",
-  WS = () => "Карта на основі:",
-  $S = () => "Bản đồ được cung cấp bởi:",
-  H0 = (n = {}, e = {}) => {
+  AS = () => "Privacy",
+  DS = () => "Privacidade",
+  TS = () => "隐私",
+  MS = () => "Datenschutz",
+  ES = () => "Privacidad",
+  BS = () => "Confidentialité",
+  IS = () => "Privacy",
+  RS = () => "プライバシー",
+  KS = () => "Prywatność",
+  LS = () => "Конфиденциальность",
+  WS = () => "Конфіденційність",
+  $S = () => "Quyền riêng tư",
+  o5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? AS() : r === "pt" ? DS() : r === "ch" ? TS() : r === "de" ? MS() : r === "es" ? ES() : r === "fr" ? BS() : r === "it" ? IS() : r === "jp" ? RS() : r === "pl" ? KS() : r === "ru" ? LS() : r === "uk" ? WS() : $S()
   },
-  OS = () => "Privacy",
-  VS = () => "Privacidade",
-  US = () => "隐私",
-  HS = () => "Datenschutz",
-  FS = () => "Privacidad",
-  ZS = () => "Confidentialité",
-  GS = () => "Privacy",
-  QS = () => "プライバシー",
-  YS = () => "Prywatność",
-  JS = () => "Конфиденциальность",
-  XS = () => "Конфіденційність",
-  rP = () => "Quyền riêng tư",
-  F0 = (n = {}, e = {}) => {
+  VS = () => "Profile",
+  OS = () => "Perfil",
+  US = () => "个人资料",
+  HS = () => "Profil",
+  FS = () => "Perfil",
+  ZS = () => "Profil",
+  GS = () => "Profilo",
+  QS = () => "プロフィール",
+  YS = () => "Profil",
+  JS = () => "Профиль",
+  XS = () => "Профіль",
+  rP = () => "Hồ sơ",
+  u5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? OS() : r === "pt" ? VS() : r === "ch" ? US() : r === "de" ? HS() : r === "es" ? FS() : r === "fr" ? ZS() : r === "it" ? GS() : r === "jp" ? QS() : r === "pl" ? YS() : r === "ru" ? JS() : r === "uk" ? XS() : rP()
+    return r === "en" ? VS() : r === "pt" ? OS() : r === "ch" ? US() : r === "de" ? HS() : r === "es" ? FS() : r === "fr" ? ZS() : r === "it" ? GS() : r === "jp" ? QS() : r === "pl" ? YS() : r === "ru" ? JS() : r === "uk" ? XS() : rP()
   },
-  eP = () => "Profile",
-  nP = () => "Perfil",
-  tP = () => "个人资料",
-  oP = () => "Profil",
-  uP = () => "Perfil",
-  iP = () => "Profil",
-  sP = () => "Profilo",
-  cP = () => "プロフィール",
-  aP = () => "Profil",
-  _P = () => "Профиль",
-  lP = () => "Профіль",
-  pP = () => "Hồ sơ",
-  Z0 = (n = {}, e = {}) => {
+  eP = () => "Profile updated",
+  nP = () => "Perfil atualizado",
+  tP = () => "个人资料已更新",
+  oP = () => "Profil aktualisiert",
+  uP = () => "Perfil actualizado",
+  iP = () => "Profil mis à jour",
+  sP = () => "Profilo aggiornato",
+  cP = () => "プロフィールを更新しました。",
+  aP = () => "Profil zaktualizowany",
+  _P = () => "Профиль обновлён",
+  lP = () => "Профіль оновлено",
+  pP = () => "Đã cập nhật hồ sơ",
+  i5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? eP() : r === "pt" ? nP() : r === "ch" ? tP() : r === "de" ? oP() : r === "es" ? uP() : r === "fr" ? iP() : r === "it" ? sP() : r === "jp" ? cP() : r === "pl" ? aP() : r === "ru" ? _P() : r === "uk" ? lP() : pP()
   },
-  fP = () => "Profile updated",
-  dP = () => "Perfil atualizado",
-  hP = () => "个人资料已更新",
-  mP = () => "Profil aktualisiert",
-  gP = () => "Perfil actualizado",
-  kP = () => "Profil mis à jour",
-  bP = () => "Profilo aggiornato",
-  vP = () => "プロフィールを更新しました。",
-  yP = () => "Profil zaktualizowany",
-  wP = () => "Профиль обновлён",
-  jP = () => "Профіль оновлено",
-  zP = () => "Đã cập nhật hồ sơ",
-  G0 = (n = {}, e = {}) => {
+  fP = () => "Random place",
+  dP = () => "Local aleatório",
+  hP = () => "随机地点",
+  mP = () => "Zufälliger Ort",
+  gP = () => "Lugar aleatorio",
+  kP = () => "Lieu aléatoire",
+  bP = () => "Luogo casuale",
+  vP = () => "ランダムな場所",
+  yP = () => "Losowe miejsce",
+  wP = () => "Случайное место",
+  jP = () => "Випадкове місце",
+  zP = () => "Vị trí ngẫu nhiên",
+  s5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fP() : r === "pt" ? dP() : r === "ch" ? hP() : r === "de" ? mP() : r === "es" ? gP() : r === "fr" ? kP() : r === "it" ? bP() : r === "jp" ? vP() : r === "pl" ? yP() : r === "ru" ? wP() : r === "uk" ? jP() : zP()
   },
-  xP = () => "Random place",
-  qP = () => "Local aleatório",
-  SP = () => "随机地点",
-  PP = () => "Zufälliger Ort",
-  CP = () => "Lugar aleatorio",
-  NP = () => "Lieu aléatoire",
-  AP = () => "Luogo casuale",
-  DP = () => "ランダムな場所",
-  TP = () => "Losowe miejsce",
-  MP = () => "Случайное место",
-  EP = () => "Випадкове місце",
-  BP = () => "Vị trí ngẫu nhiên",
-  Q0 = (n = {}, e = {}) => {
+  xP = () => "Recent",
+  qP = () => "Recente",
+  SP = () => "最近",
+  PP = () => "Aktuell",
+  NP = () => "Reciente",
+  CP = () => "Récent",
+  AP = () => "Recente",
+  DP = () => "最近",
+  TP = () => "Ostatnie",
+  MP = () => "Недавние",
+  EP = () => "Нещодавні",
+  BP = () => "Gần đây",
+  c5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? xP() : r === "pt" ? qP() : r === "ch" ? SP() : r === "de" ? PP() : r === "es" ? CP() : r === "fr" ? NP() : r === "it" ? AP() : r === "jp" ? DP() : r === "pl" ? TP() : r === "ru" ? MP() : r === "uk" ? EP() : BP()
+    return r === "en" ? xP() : r === "pt" ? qP() : r === "ch" ? SP() : r === "de" ? PP() : r === "es" ? NP() : r === "fr" ? CP() : r === "it" ? AP() : r === "jp" ? DP() : r === "pl" ? TP() : r === "ru" ? MP() : r === "uk" ? EP() : BP()
   },
-  IP = () => "Recent",
-  RP = () => "Recente",
-  KP = () => "最近",
-  LP = () => "Aktuell",
-  WP = () => "Reciente",
-  $P = () => "Récent",
-  OP = () => "Recente",
-  VP = () => "最近",
-  UP = () => "Ostatnie",
-  HP = () => "Недавние",
-  FP = () => "Нещодавні",
-  ZP = () => "Gần đây",
-  Y0 = (n = {}, e = {}) => {
+  IP = () => "Recharge paint charges",
+  RP = () => "Recarga de tinta",
+  KP = () => "为绘制充能充电",
+  LP = () => "Pixel-Ladungen aufladen",
+  WP = () => "Recargar cargas de pintura",
+  $P = () => "Recharger les charges de peinture",
+  VP = () => "Ricarica della vernice",
+  OP = () => "ペイントチャージを回復",
+  UP = () => "Doładuj ładunki malowania",
+  HP = () => "Восстановить заряды",
+  FP = () => "Поповнити заряди фарби",
+  ZP = () => "Nạp lại lượt tô",
+  a5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? IP() : r === "pt" ? RP() : r === "ch" ? KP() : r === "de" ? LP() : r === "es" ? WP() : r === "fr" ? $P() : r === "it" ? OP() : r === "jp" ? VP() : r === "pl" ? UP() : r === "ru" ? HP() : r === "uk" ? FP() : ZP()
+    return r === "en" ? IP() : r === "pt" ? RP() : r === "ch" ? KP() : r === "de" ? LP() : r === "es" ? WP() : r === "fr" ? $P() : r === "it" ? VP() : r === "jp" ? OP() : r === "pl" ? UP() : r === "ru" ? HP() : r === "uk" ? FP() : ZP()
   },
-  GP = () => "Recharge paint charges",
-  QP = () => "Recarga de tinta",
-  YP = () => "为绘制充能充电",
-  JP = () => "Pixel-Ladungen aufladen",
-  XP = () => "Recargar cargas de pintura",
-  rC = () => "Recharger les charges de peinture",
-  eC = () => "Ricarica della vernice",
-  nC = () => "ペイントチャージを回復",
-  tC = () => "Doładuj ładunki malowania",
-  oC = () => "Восстановить заряды",
-  uC = () => "Поповнити заряди фарби",
-  iC = () => "Nạp lại lượt tô",
-  J0 = (n = {}, e = {}) => {
+  GP = () => "Redo",
+  QP = () => "Refazer",
+  YP = () => "重做",
+  JP = () => "Wiederholen",
+  XP = () => "Rehacer",
+  rN = () => "Rétablir",
+  eN = () => "Rifai",
+  nN = () => "やり直す",
+  tN = () => "Ponów",
+  oN = () => "Повторить",
+  uN = () => "Повторити",
+  iN = () => "Làm lại",
+  _5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? GP() : r === "pt" ? QP() : r === "ch" ? YP() : r === "de" ? JP() : r === "es" ? XP() : r === "fr" ? rC() : r === "it" ? eC() : r === "jp" ? nC() : r === "pl" ? tC() : r === "ru" ? oC() : r === "uk" ? uC() : iC()
+    return r === "en" ? GP() : r === "pt" ? QP() : r === "ch" ? YP() : r === "de" ? JP() : r === "es" ? XP() : r === "fr" ? rN() : r === "it" ? eN() : r === "jp" ? nN() : r === "pl" ? tN() : r === "ru" ? oN() : r === "uk" ? uN() : iN()
   },
-  sC = () => "Redo",
-  cC = () => "Refazer",
-  aC = () => "重做",
-  _C = () => "Wiederholen",
-  lC = () => "Rehacer",
-  pC = () => "Rétablir",
-  fC = () => "Rifai",
-  dC = () => "やり直す",
-  hC = () => "Ponów",
-  mC = () => "Повторить",
-  gC = () => "Повторити",
-  kC = () => "Làm lại",
-  X0 = (n = {}, e = {}) => {
+  sN = () => "Refund",
+  cN = () => "Reembolso",
+  aN = () => "退款",
+  _N = () => "Rückerstattung",
+  lN = () => "Reembolso",
+  pN = () => "Remboursement",
+  fN = () => "Rimborso",
+  dN = () => "返金",
+  hN = () => "Zwrot",
+  mN = () => "Возврат средств",
+  gN = () => "Повернення коштів",
+  kN = () => "Hoàn tiền",
+  l5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? sC() : r === "pt" ? cC() : r === "ch" ? aC() : r === "de" ? _C() : r === "es" ? lC() : r === "fr" ? pC() : r === "it" ? fC() : r === "jp" ? dC() : r === "pl" ? hC() : r === "ru" ? mC() : r === "uk" ? gC() : kC()
+    return r === "en" ? sN() : r === "pt" ? cN() : r === "ch" ? aN() : r === "de" ? _N() : r === "es" ? lN() : r === "fr" ? pN() : r === "it" ? fN() : r === "jp" ? dN() : r === "pl" ? hN() : r === "ru" ? mN() : r === "uk" ? gN() : kN()
   },
-  bC = () => "Refund",
-  vC = () => "Reembolso",
-  yC = () => "退款",
-  wC = () => "Rückerstattung",
-  jC = () => "Reembolso",
-  zC = () => "Remboursement",
-  xC = () => "Rimborso",
-  qC = () => "返金",
-  SC = () => "Zwrot",
-  PC = () => "Возврат средств",
-  CC = () => "Повернення коштів",
-  NC = () => "Hoàn tiền",
-  r8 = (n = {}, e = {}) => {
+  bN = () => "Region",
+  vN = () => "Região",
+  yN = () => "区域",
+  wN = () => "Region",
+  jN = () => "Región",
+  zN = () => "Région",
+  xN = () => "Regione",
+  qN = () => "地域",
+  SN = () => "Region",
+  PN = () => "Регион",
+  NN = () => "Регіон",
+  CN = () => "Vùng",
+  p5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? bC() : r === "pt" ? vC() : r === "ch" ? yC() : r === "de" ? wC() : r === "es" ? jC() : r === "fr" ? zC() : r === "it" ? xC() : r === "jp" ? qC() : r === "pl" ? SC() : r === "ru" ? PC() : r === "uk" ? CC() : NC()
+    return r === "en" ? bN() : r === "pt" ? vN() : r === "ch" ? yN() : r === "de" ? wN() : r === "es" ? jN() : r === "fr" ? zN() : r === "it" ? xN() : r === "jp" ? qN() : r === "pl" ? SN() : r === "ru" ? PN() : r === "uk" ? NN() : CN()
   },
-  AC = () => "Region",
-  DC = () => "Região",
-  TC = () => "区域",
-  MC = () => "Region",
-  EC = () => "Región",
-  BC = () => "Région",
-  IC = () => "Regione",
-  RC = () => "地域",
-  KC = () => "Region",
-  LC = () => "Регион",
-  WC = () => "Регіон",
-  $C = () => "Vùng",
-  e8 = (n = {}, e = {}) => {
+  AN = () => "Regions",
+  DN = () => "Regiões",
+  TN = () => "区域",
+  MN = () => "Regionen",
+  EN = () => "Regiones",
+  BN = () => "Régions",
+  IN = () => "Regioni",
+  RN = () => "地域",
+  KN = () => "Regiony",
+  LN = () => "Регионы",
+  WN = () => "Регіони",
+  $N = () => "Các vùng",
+  f5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? AC() : r === "pt" ? DC() : r === "ch" ? TC() : r === "de" ? MC() : r === "es" ? EC() : r === "fr" ? BC() : r === "it" ? IC() : r === "jp" ? RC() : r === "pl" ? KC() : r === "ru" ? LC() : r === "uk" ? WC() : $C()
+    return r === "en" ? AN() : r === "pt" ? DN() : r === "ch" ? TN() : r === "de" ? MN() : r === "es" ? EN() : r === "fr" ? BN() : r === "it" ? IN() : r === "jp" ? RN() : r === "pl" ? KN() : r === "ru" ? LN() : r === "uk" ? WN() : $N()
   },
-  OC = () => "Regions",
-  VC = () => "Regiões",
-  UC = () => "区域",
-  HC = () => "Regionen",
-  FC = () => "Regiones",
-  ZC = () => "Régions",
-  GC = () => "Regioni",
-  QC = () => "地域",
-  YC = () => "Regiony",
-  JC = () => "Регионы",
-  XC = () => "Регіони",
-  rN = () => "Các vùng",
-  n8 = (n = {}, e = {}) => {
+  VN = () => "Report feedback",
+  ON = () => "Feedback de denúncia",
+  UN = () => "举报反馈",
+  HN = () => "Meldungs-Feedback",
+  FN = () => "Feedback del reporte",
+  ZN = () => "Retour de signalement",
+  GN = () => "Feedback segnalazione",
+  QN = () => "通報のフィードバック",
+  YN = () => "Informacja zwrotna o zgłoszeniu",
+  JN = () => "Обратная связь по жалобе",
+  XN = () => "Відгук щодо скарги",
+  rC = () => "Phản hồi báo cáo",
+  d5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? OC() : r === "pt" ? VC() : r === "ch" ? UC() : r === "de" ? HC() : r === "es" ? FC() : r === "fr" ? ZC() : r === "it" ? GC() : r === "jp" ? QC() : r === "pl" ? YC() : r === "ru" ? JC() : r === "uk" ? XC() : rN()
+    return r === "en" ? VN() : r === "pt" ? ON() : r === "ch" ? UN() : r === "de" ? HN() : r === "es" ? FN() : r === "fr" ? ZN() : r === "it" ? GN() : r === "jp" ? QN() : r === "pl" ? YN() : r === "ru" ? JN() : r === "uk" ? XN() : rC()
   },
-  eN = () => "Report feedback",
-  nN = () => "Feedback de denúncia",
-  tN = () => "举报反馈",
-  oN = () => "Meldungs-Feedback",
-  uN = () => "Feedback del reporte",
-  iN = () => "Retour de signalement",
-  sN = () => "Feedback segnalazione",
-  cN = () => "通報のフィードバック",
-  aN = () => "Informacja zwrotna o zgłoszeniu",
-  _N = () => "Обратная связь по жалобе",
-  lN = () => "Відгук щодо скарги",
-  pN = () => "Phản hồi báo cáo",
-  t8 = (n = {}, e = {}) => {
+  eC = () => "Your report has been reviewed, and a penalty has been applied to the reported player.",
+  nC = () => "Um jogador denunciado recentemente por você foi punido.",
+  tC = () => "你的举报已被审核，对被举报玩家已施加惩罚。",
+  oC = () => "Deine Meldung wurde überprüft und der gemeldete Spieler wurde bestraft.",
+  uC = () => "Un jugador reportado recientemente por ti ha sido sancionado.",
+  iC = () => "Votre signalement a été analysé et une sanction a été appliquée au joueur signalé.",
+  sC = () => "Un giocatore che hai segnalato di recente è stato punito.",
+  cC = () => "あなたの通報が確認され、対象のプレイヤーに処罰が適用されました。",
+  aC = () => "Twoje zgłoszenie zostało przeanalizowane i na ukaranego gracza nałożono karę.",
+  _C = () => "Ваша недавняя жалоба была рассмотрена, и к указанному игроку применено наказание.",
+  lC = () => "Користувача, на якого ви нещодавно поскаржилися, було покарано.",
+  pC = () => "Báo cáo gần đây của bạn đã được xử lý và người chơi bị báo cáo đã bị phạt.",
+  h5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? eN() : r === "pt" ? nN() : r === "ch" ? tN() : r === "de" ? oN() : r === "es" ? uN() : r === "fr" ? iN() : r === "it" ? sN() : r === "jp" ? cN() : r === "pl" ? aN() : r === "ru" ? _N() : r === "uk" ? lN() : pN()
+    return r === "en" ? eC() : r === "pt" ? nC() : r === "ch" ? tC() : r === "de" ? oC() : r === "es" ? uC() : r === "fr" ? iC() : r === "it" ? sC() : r === "jp" ? cC() : r === "pl" ? aC() : r === "ru" ? _C() : r === "uk" ? lC() : pC()
   },
-  fN = () => "Your report has been reviewed, and a penalty has been applied to the reported player.",
-  dN = () => "Um jogador denunciado recentemente por você foi punido.",
-  hN = () => "你的举报已被审核，对被举报玩家已施加惩罚。",
-  mN = () => "Deine Meldung wurde überprüft und der gemeldete Spieler wurde bestraft.",
-  gN = () => "Un jugador reportado recientemente por ti ha sido sancionado.",
-  kN = () => "Votre signalement a été analysé et une sanction a été appliquée au joueur signalé.",
-  bN = () => "Un giocatore che hai segnalato di recente è stato punito.",
-  vN = () => "あなたの通報が確認され、対象のプレイヤーに処罰が適用されました。",
-  yN = () => "Twoje zgłoszenie zostało przeanalizowane i na ukaranego gracza nałożono karę.",
-  wN = () => "Ваша недавняя жалоба была рассмотрена, и к указанному игроку применено наказание.",
-  jN = () => "Користувача, на якого ви нещодавно поскаржилися, було покарано.",
-  zN = () => "Báo cáo gần đây của bạn đã được xử lý và người chơi bị báo cáo đã bị phạt.",
-  o8 = (n = {}, e = {}) => {
+  fC = () => "Thank you for helping keep the community fair and safe.",
+  dC = () => "Obrigado por ajudar a manter a comunidade justa e segura!",
+  hC = () => "感谢你帮助维护社区的公平与安全。",
+  mC = () => "Danke, dass du hilfst, die Community fair und sicher zu halten.",
+  gC = () => "Gracias por ayudar a mantener la comunidad justa y segura.",
+  kC = () => "Merci d’aider à garder la communauté juste et sûre.",
+  bC = () => "Grazie per aiutare a mantenere la comunità giusta e sicura!",
+  vC = () => "コミュニティを公正で安全に保つためにご協力いただき、ありがとうございます。",
+  yC = () => "Dziękujemy za pomoc w utrzymaniu uczciwej i bezpiecznej społeczności.",
+  wC = () => "Спасибо, что помогаете делать сообщество честнее и безопаснее.",
+  jC = () => "Дякуємо, що допомагаєте підтримувати чесність та безпеку спільноти.",
+  zC = () => "Cảm ơn bạn đã giúp giữ cộng đồng công bằng và an toàn.",
+  m5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? fN() : r === "pt" ? dN() : r === "ch" ? hN() : r === "de" ? mN() : r === "es" ? gN() : r === "fr" ? kN() : r === "it" ? bN() : r === "jp" ? vN() : r === "pl" ? yN() : r === "ru" ? wN() : r === "uk" ? jN() : zN()
+    return r === "en" ? fC() : r === "pt" ? dC() : r === "ch" ? hC() : r === "de" ? mC() : r === "es" ? gC() : r === "fr" ? kC() : r === "it" ? bC() : r === "jp" ? vC() : r === "pl" ? yC() : r === "ru" ? wC() : r === "uk" ? jC() : zC()
   },
-  xN = () => "Thank you for helping keep the community fair and safe.",
-  qN = () => "Obrigado por ajudar a manter a comunidade justa e segura!",
-  SN = () => "感谢你帮助维护社区的公平与安全。",
-  PN = () => "Danke, dass du hilfst, die Community fair und sicher zu halten.",
-  CN = () => "Gracias por ayudar a mantener la comunidad justa y segura.",
-  NN = () => "Merci d’aider à garder la communauté juste et sûre.",
-  AN = () => "Grazie per aiutare a mantenere la comunità giusta e sicura!",
-  DN = () => "コミュニティを公正で安全に保つためにご協力いただき、ありがとうございます。",
-  TN = () => "Dziękujemy za pomoc w utrzymaniu uczciwej i bezpiecznej społeczności.",
-  MN = () => "Спасибо, что помогаете делать сообщество честнее и безопаснее.",
-  EN = () => "Дякуємо, що допомагаєте підтримувати чесність та безпеку спільноти.",
-  BN = () => "Cảm ơn bạn đã giúp giữ cộng đồng công bằng và an toàn.",
-  u8 = (n = {}, e = {}) => {
+  xC = () => "This action may take some time to be completed.",
+  qC = () => "Essa ação pode levar algum tempo para ser realizada.",
+  SC = () => "该操作可能需要一些时间才能完成。",
+  PC = () => "Diese Aktion kann etwas Zeit in Anspruch nehmen.",
+  NC = () => "Esta acción puede tardar un poco en completarse.",
+  CC = () => "Cette action peut prendre un certain temps à être complétée.",
+  AC = () => "Questa azione potrebbe richiedere del tempo per essere completata.",
+  DC = () => "この操作の完了には時間がかかる場合があります。",
+  TC = () => "Ta akcja może chwilę potrwać.",
+  MC = () => "Это действие может занять некоторое время.",
+  EC = () => "Ця дія може зайняти деякий час.",
+  BC = () => "Hành động này có thể mất một lúc để hoàn thành.",
+  g5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? xN() : r === "pt" ? qN() : r === "ch" ? SN() : r === "de" ? PN() : r === "es" ? CN() : r === "fr" ? NN() : r === "it" ? AN() : r === "jp" ? DN() : r === "pl" ? TN() : r === "ru" ? MN() : r === "uk" ? EN() : BN()
+    return r === "en" ? xC() : r === "pt" ? qC() : r === "ch" ? SC() : r === "de" ? PC() : r === "es" ? NC() : r === "fr" ? CC() : r === "it" ? AC() : r === "jp" ? DC() : r === "pl" ? TC() : r === "ru" ? MC() : r === "uk" ? EC() : BC()
   },
-  IN = () => "This action may take some time to be completed.",
-  RN = () => "Essa ação pode levar algum tempo para ser realizada.",
-  KN = () => "该操作可能需要一些时间才能完成。",
-  LN = () => "Diese Aktion kann etwas Zeit in Anspruch nehmen.",
-  WN = () => "Esta acción puede tardar un poco en completarse.",
-  $N = () => "Cette action peut prendre un certain temps à être complétée.",
-  ON = () => "Questa azione potrebbe richiedere del tempo per essere completata.",
-  VN = () => "この操作の完了には時間がかかる場合があります。",
-  UN = () => "Ta akcja może chwilę potrwać.",
-  HN = () => "Это действие может занять некоторое время.",
-  FN = () => "Ця дія може зайняти деякий час.",
-  ZN = () => "Hành động này có thể mất một lúc để hoàn thành.",
-  i8 = (n = {}, e = {}) => {
+  IC = () => "Rules",
+  RC = () => "Regras",
+  KC = () => "规则",
+  LC = () => "Regeln",
+  WC = () => "Reglas",
+  $C = () => "Règles",
+  VC = () => "Regole",
+  OC = () => "ルール",
+  UC = () => "Zasady",
+  HC = () => "Правила",
+  FC = () => "Правила",
+  ZC = () => "Luật",
+  k5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? IN() : r === "pt" ? RN() : r === "ch" ? KN() : r === "de" ? LN() : r === "es" ? WN() : r === "fr" ? $N() : r === "it" ? ON() : r === "jp" ? VN() : r === "pl" ? UN() : r === "ru" ? HN() : r === "uk" ? FN() : ZN()
+    return r === "en" ? IC() : r === "pt" ? RC() : r === "ch" ? KC() : r === "de" ? LC() : r === "es" ? WC() : r === "fr" ? $C() : r === "it" ? VC() : r === "jp" ? OC() : r === "pl" ? UC() : r === "ru" ? HC() : r === "uk" ? FC() : ZC()
   },
-  GN = () => "Rules",
-  QN = () => "Regras",
-  YN = () => "规则",
-  JN = () => "Regeln",
-  XN = () => "Reglas",
-  rA = () => "Règles",
-  eA = () => "Regole",
-  nA = () => "ルール",
-  tA = () => "Zasady",
-  oA = () => "Правила",
-  uA = () => "Правила",
-  iA = () => "Luật",
-  s8 = (n = {}, e = {}) => {
+  GC = () => "Select a color",
+  QC = () => "Selecione uma color",
+  YC = () => "选择一种颜色",
+  JC = () => "Farbe auswählen",
+  XC = () => "Selecciona un color",
+  rA = () => "Sélectionnez une couleur",
+  eA = () => "Seleziona un colore",
+  nA = () => "色を選択",
+  tA = () => "Wybierz kolor",
+  oA = () => "Выберите цвет",
+  uA = () => "Виберіть колір",
+  iA = () => "Chọn một màu",
+  b5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? GN() : r === "pt" ? QN() : r === "ch" ? YN() : r === "de" ? JN() : r === "es" ? XN() : r === "fr" ? rA() : r === "it" ? eA() : r === "jp" ? nA() : r === "pl" ? tA() : r === "ru" ? oA() : r === "uk" ? uA() : iA()
+    return r === "en" ? GC() : r === "pt" ? QC() : r === "ch" ? YC() : r === "de" ? JC() : r === "es" ? XC() : r === "fr" ? rA() : r === "it" ? eA() : r === "jp" ? nA() : r === "pl" ? tA() : r === "ru" ? oA() : r === "uk" ? uA() : iA()
   },
-  sA = () => "Select a color",
-  cA = () => "Selecione uma color",
-  aA = () => "选择一种颜色",
-  _A = () => "Farbe auswählen",
-  lA = () => "Selecciona un color",
-  pA = () => "Sélectionnez une couleur",
-  fA = () => "Seleziona un colore",
-  dA = () => "色を選択",
-  hA = () => "Wybierz kolor",
-  mA = () => "Выберите цвет",
-  gA = () => "Виберіть колір",
-  kA = () => "Chọn một màu",
-  c8 = (n = {}, e = {}) => {
+  sA = () => "Select a pixel to erase",
+  cA = () => "Selecione um pixel para apagar",
+  aA = () => "选择要擦除的像素",
+  _A = () => "Pixel zum Löschen auswählen",
+  lA = () => "Selecciona un píxel para borrar",
+  pA = () => "Sélectionnez un pixel à effacer",
+  fA = () => "Seleziona un pixel da cancellare",
+  dA = () => "消したいピクセルを選択",
+  hA = () => "Wybierz piksel do usunięcia",
+  mA = () => "Выберите пиксель для стирания",
+  gA = () => "Виберіть піксель для стирання",
+  kA = () => "Chọn pixel để xóa",
+  v5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sA() : r === "pt" ? cA() : r === "ch" ? aA() : r === "de" ? _A() : r === "es" ? lA() : r === "fr" ? pA() : r === "it" ? fA() : r === "jp" ? dA() : r === "pl" ? hA() : r === "ru" ? mA() : r === "uk" ? gA() : kA()
   },
-  bA = () => "Select a pixel to erase",
-  vA = () => "Selecione um pixel para apagar",
-  yA = () => "选择要擦除的像素",
-  wA = () => "Pixel zum Löschen auswählen",
-  jA = () => "Selecciona un píxel para borrar",
-  zA = () => "Sélectionnez un pixel à effacer",
-  xA = () => "Seleziona un pixel da cancellare",
-  qA = () => "消したいピクセルを選択",
-  SA = () => "Wybierz piksel do usunięcia",
-  PA = () => "Выберите пиксель для стирания",
-  CA = () => "Виберіть піксель для стирання",
-  NA = () => "Chọn pixel để xóa",
-  a8 = (n = {}, e = {}) => {
+  bA = () => "Select the area's first corner",
+  vA = () => "Selecione o primeiro canto da área",
+  yA = () => "选择区域的第一个角",
+  wA = () => "Erste Ecke des Bereichs auswählen",
+  jA = () => "Selecciona la primera esquina del área",
+  zA = () => "Sélectionnez le premier coin de la zone",
+  xA = () => "Seleziona il primo angolo dell'area",
+  qA = () => "領域の最初の角を選択",
+  SA = () => "Wybierz pierwszy narożnik obszaru",
+  PA = () => "Выберите первый угол области",
+  NA = () => "Виберіть перший кут області",
+  CA = () => "Chọn góc đầu tiên của vùng",
+  y5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? bA() : r === "pt" ? vA() : r === "ch" ? yA() : r === "de" ? wA() : r === "es" ? jA() : r === "fr" ? zA() : r === "it" ? xA() : r === "jp" ? qA() : r === "pl" ? SA() : r === "ru" ? PA() : r === "uk" ? CA() : NA()
+    return r === "en" ? bA() : r === "pt" ? vA() : r === "ch" ? yA() : r === "de" ? wA() : r === "es" ? jA() : r === "fr" ? zA() : r === "it" ? xA() : r === "jp" ? qA() : r === "pl" ? SA() : r === "ru" ? PA() : r === "uk" ? NA() : CA()
   },
-  AA = () => "Select the area's first corner",
-  DA = () => "Selecione o primeiro canto da área",
-  TA = () => "选择区域的第一个角",
-  MA = () => "Erste Ecke des Bereichs auswählen",
-  EA = () => "Selecciona la primera esquina del área",
-  BA = () => "Sélectionnez le premier coin de la zone",
-  IA = () => "Seleziona il primo angolo dell'area",
-  RA = () => "領域の最初の角を選択",
-  KA = () => "Wybierz pierwszy narożnik obszaru",
-  LA = () => "Выберите первый угол области",
-  WA = () => "Виберіть перший кут області",
-  $A = () => "Chọn góc đầu tiên của vùng",
-  _8 = (n = {}, e = {}) => {
+  AA = () => "Select the area's opposite corner",
+  DA = () => "Selecione o canto oposto da área",
+  TA = () => "选择区域的对角",
+  MA = () => "Gegenüberliegende Ecke des Bereichs auswählen",
+  EA = () => "Selecciona la esquina opuesta del área",
+  BA = () => "Sélectionnez le coin opposé de la zone",
+  IA = () => "Seleziona l'angolo opposto dell'area",
+  RA = () => "領域の反対側の角を選択",
+  KA = () => "Wybierz przeciwległy narożnik obszaru",
+  LA = () => "Выберите противоположный угол области",
+  WA = () => "Виберіть протилежний кут області",
+  $A = () => "Chọn góc đối diện của vùng",
+  w5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? AA() : r === "pt" ? DA() : r === "ch" ? TA() : r === "de" ? MA() : r === "es" ? EA() : r === "fr" ? BA() : r === "it" ? IA() : r === "jp" ? RA() : r === "pl" ? KA() : r === "ru" ? LA() : r === "uk" ? WA() : $A()
   },
-  OA = () => "Select the area's opposite corner",
-  VA = () => "Selecione o canto oposto da área",
-  UA = () => "选择区域的对角",
-  HA = () => "Gegenüberliegende Ecke des Bereichs auswählen",
-  FA = () => "Selecciona la esquina opuesta del área",
-  ZA = () => "Sélectionnez le coin opposé de la zone",
-  GA = () => "Seleziona l'angolo opposto dell'area",
-  QA = () => "領域の反対側の角を選択",
-  YA = () => "Wybierz przeciwległy narożnik obszaru",
-  JA = () => "Выберите противоположный угол области",
-  XA = () => "Виберіть протилежний кут області",
-  rD = () => "Chọn góc đối diện của vùng",
-  l8 = (n = {}, e = {}) => {
+  VA = () => "Select the headquarters location",
+  OA = () => "Selecione a localização do quartel general",
+  UA = () => "选择总部位置",
+  HA = () => "Standort des Hauptquartiers auswählen",
+  FA = () => "Selecciona la ubicación del cuartel general",
+  ZA = () => "Sélectionnez l’emplacement du quartier général",
+  GA = () => "Seleziona la posizione del quartier generale",
+  QA = () => "拠点の場所を選択",
+  YA = () => "Wybierz lokalizację siedziby",
+  JA = () => "Выберите местоположение штаб-квартиры",
+  XA = () => "Виберіть розташування штаб-квартири",
+  rD = () => "Chọn vị trí trụ sở",
+  j5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? OA() : r === "pt" ? VA() : r === "ch" ? UA() : r === "de" ? HA() : r === "es" ? FA() : r === "fr" ? ZA() : r === "it" ? GA() : r === "jp" ? QA() : r === "pl" ? YA() : r === "ru" ? JA() : r === "uk" ? XA() : rD()
+    return r === "en" ? VA() : r === "pt" ? OA() : r === "ch" ? UA() : r === "de" ? HA() : r === "es" ? FA() : r === "fr" ? ZA() : r === "it" ? GA() : r === "jp" ? QA() : r === "pl" ? YA() : r === "ru" ? JA() : r === "uk" ? XA() : rD()
   },
-  eD = () => "Select the headquarters location",
-  nD = () => "Selecione a localização do quartel general",
-  tD = () => "选择总部位置",
-  oD = () => "Standort des Hauptquartiers auswählen",
-  uD = () => "Selecciona la ubicación del cuartel general",
-  iD = () => "Sélectionnez l’emplacement du quartier général",
-  sD = () => "Seleziona la posizione del quartier generale",
-  cD = () => "拠点の場所を選択",
-  aD = () => "Wybierz lokalizację siedziby",
-  _D = () => "Выберите местоположение штаб-квартиры",
-  lD = () => "Виберіть розташування штаб-квартири",
-  pD = () => "Chọn vị trí trụ sở",
-  p8 = (n = {}, e = {}) => {
+  eD = () => "Send the link below to everybody you want to invite to the alliance",
+  nD = () => "Envie o link abaixo para quem você deseja convidar para a aliança",
+  tD = () => "将下面的链接发送给你想邀请加入联盟的所有人",
+  oD = () => "Sende den untenstehenden Link an alle, die du in die Allianz einladen möchtest",
+  uD = () => "Envía el siguiente enlace a las personas que quieras invitar a la alianza",
+  iD = () => "Envoyez le lien ci-dessous à toutes les personnes que vous souhaitez inviter dans l’alliance",
+  sD = () => "Invia il link qui sotto a chi vuoi invitare nell'alleanza",
+  cD = () => "アライアンスに招待したい相手に、以下のリンクを送ってください。",
+  aD = () => "Wyślij poniższy link wszystkim, których chcesz zaprosić do sojuszu",
+  _D = () => "Отправьте ссылку ниже всем, кого хотите пригласить в альянс",
+  lD = () => "Надішліть посилання нижче всім, кого хочете запросити в альянс",
+  pD = () => "Gửi liên kết dưới đây cho những người bạn muốn mời vào liên minh",
+  z5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? eD() : r === "pt" ? nD() : r === "ch" ? tD() : r === "de" ? oD() : r === "es" ? uD() : r === "fr" ? iD() : r === "it" ? sD() : r === "jp" ? cD() : r === "pl" ? aD() : r === "ru" ? _D() : r === "uk" ? lD() : pD()
   },
-  fD = () => "Send the link below to everybody you want to invite to the alliance",
-  dD = () => "Envie o link abaixo para quem você deseja convidar para a aliança",
-  hD = () => "将下面的链接发送给你想邀请加入联盟的所有人",
-  mD = () => "Sende den untenstehenden Link an alle, die du in die Allianz einladen möchtest",
-  gD = () => "Envía el siguiente enlace a las personas que quieras invitar a la alianza",
-  kD = () => "Envoyez le lien ci-dessous à toutes les personnes que vous souhaitez inviter dans l’alliance",
-  bD = () => "Invia il link qui sotto a chi vuoi invitare nell'alleanza",
-  vD = () => "アライアンスに招待したい相手に、以下のリンクを送ってください。",
-  yD = () => "Wyślij poniższy link wszystkim, których chcesz zaprosić do sojuszu",
-  wD = () => "Отправьте ссылку ниже всем, кого хотите пригласить в альянс",
-  jD = () => "Надішліть посилання нижче всім, кого хочете запросити в альянс",
-  zD = () => "Gửi liên kết dưới đây cho những người bạn muốn mời vào liên minh",
-  f8 = (n = {}, e = {}) => {
+  fD = () => "Your browser doesn't seem to be compatible to load the map. Please try another browser",
+  dD = () => "Seu navegador não parece ser compatível para o mapa. Por favor, tente outro navegador",
+  hD = () => "您的浏览器似乎不兼容加载地图。请尝试使用其他浏览器",
+  mD = () => "Ihr Browser scheint nicht kompatibel zu sein, um die Karte zu laden. Bitte versuchen Sie es mit einem anderen Browser",
+  gD = () => "Tu navegador no parece ser compatible para cargar el mapa. Por favor, prueba con otro navegador.",
+  kD = () => "Votre navigateur ne semble pas compatible pour charger la carte. Veuillez essayer un autre navigateur",
+  bD = () => "Il tuo browser non sembra essere compatibile per caricare la mappa. Prova un altro browser",
+  vD = () => "お使いのブラウザは地図の読み込みに対応していないようです。別のブラウザをお試しください。",
+  yD = () => "Twoja przeglądarka wydaje się być niekompatybilna z ładowaniem mapy. Spróbuj innej przeglądarki.",
+  wD = () => "Ваш браузер, похоже, не поддерживает загрузку карты. Пожалуйста, попробуйте другой браузер.",
+  jD = () => "Ваш браузер, схоже, несумісний для завантаження карти. Будь ласка, спробуйте інший браузер",
+  zD = () => "Trình duyệt của bạn có vẻ không tương thích để tải bản đồ. Vui lòng thử trình duyệt khác",
+  x5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fD() : r === "pt" ? dD() : r === "ch" ? hD() : r === "de" ? mD() : r === "es" ? gD() : r === "fr" ? kD() : r === "it" ? bD() : r === "jp" ? vD() : r === "pl" ? yD() : r === "ru" ? wD() : r === "uk" ? jD() : zD()
   },
-  xD = () => "Your browser doesn't seem to be compatible to load the map. Please try another browser",
-  qD = () => "Seu navegador não parece ser compatível para o mapa. Por favor, tente outro navegador",
-  SD = () => "您的浏览器似乎不兼容加载地图。请尝试使用其他浏览器",
-  PD = () => "Ihr Browser scheint nicht kompatibel zu sein, um die Karte zu laden. Bitte versuchen Sie es mit einem anderen Browser",
-  CD = () => "Tu navegador no parece ser compatible para cargar el mapa. Por favor, prueba con otro navegador.",
-  ND = () => "Votre navigateur ne semble pas compatible pour charger la carte. Veuillez essayer un autre navigateur",
-  AD = () => "Il tuo browser non sembra essere compatibile per caricare la mappa. Prova un altro browser",
-  DD = () => "お使いのブラウザは地図の読み込みに対応していないようです。別のブラウザをお試しください。",
-  TD = () => "Twoja przeglądarka wydaje się być niekompatybilna z ładowaniem mapy. Spróbuj innej przeglądarki.",
-  MD = () => "Ваш браузер, похоже, не поддерживает загрузку карты. Пожалуйста, попробуйте другой браузер.",
-  ED = () => "Ваш браузер, схоже, несумісний для завантаження карти. Будь ласка, спробуйте інший браузер",
-  BD = () => "Trình duyệt của bạn có vẻ không tương thích để tải bản đồ. Vui lòng thử trình duyệt khác",
-  d8 = (n = {}, e = {}) => {
+  xD = () => "Share",
+  qD = () => "Compartilhar",
+  SD = () => "分享",
+  PD = () => "Teilen",
+  ND = () => "Compartir",
+  CD = () => "Partager",
+  AD = () => "Condividi",
+  DD = () => "共有",
+  TD = () => "Udostępnij",
+  MD = () => "Поделиться",
+  ED = () => "Поділитися",
+  BD = () => "Chia sẻ",
+  q5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? xD() : r === "pt" ? qD() : r === "ch" ? SD() : r === "de" ? PD() : r === "es" ? CD() : r === "fr" ? ND() : r === "it" ? AD() : r === "jp" ? DD() : r === "pl" ? TD() : r === "ru" ? MD() : r === "uk" ? ED() : BD()
+    return r === "en" ? xD() : r === "pt" ? qD() : r === "ch" ? SD() : r === "de" ? PD() : r === "es" ? ND() : r === "fr" ? CD() : r === "it" ? AD() : r === "jp" ? DD() : r === "pl" ? TD() : r === "ru" ? MD() : r === "uk" ? ED() : BD()
   },
-  ID = () => "Share",
-  RD = () => "Compartilhar",
-  KD = () => "分享",
-  LD = () => "Teilen",
-  WD = () => "Compartir",
-  $D = () => "Partager",
-  OD = () => "Condividi",
-  VD = () => "共有",
-  UD = () => "Udostępnij",
-  HD = () => "Поделиться",
-  FD = () => "Поділитися",
-  ZD = () => "Chia sẻ",
-  h8 = (n = {}, e = {}) => {
+  ID = () => "Share place",
+  RD = () => "Compartilhar local",
+  KD = () => "分享地点",
+  LD = () => "Ort teilen",
+  WD = () => "Compartir lugar",
+  $D = () => "Partager le lieu",
+  VD = () => "Condividi luogo",
+  OD = () => "場所を共有",
+  UD = () => "Udostępnij miejsce",
+  HD = () => "Поделиться местом",
+  FD = () => "Поділитися місцем",
+  ZD = () => "Chia sẻ vị trí",
+  S5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? ID() : r === "pt" ? RD() : r === "ch" ? KD() : r === "de" ? LD() : r === "es" ? WD() : r === "fr" ? $D() : r === "it" ? OD() : r === "jp" ? VD() : r === "pl" ? UD() : r === "ru" ? HD() : r === "uk" ? FD() : ZD()
+    return r === "en" ? ID() : r === "pt" ? RD() : r === "ch" ? KD() : r === "de" ? LD() : r === "es" ? WD() : r === "fr" ? $D() : r === "it" ? VD() : r === "jp" ? OD() : r === "pl" ? UD() : r === "ru" ? HD() : r === "uk" ? FD() : ZD()
   },
-  GD = () => "Share place",
-  QD = () => "Compartilhar local",
-  YD = () => "分享地点",
-  JD = () => "Ort teilen",
-  XD = () => "Compartir lugar",
-  rT = () => "Partager le lieu",
-  eT = () => "Condividi luogo",
-  nT = () => "場所を共有",
-  tT = () => "Udostępnij miejsce",
-  oT = () => "Поделиться местом",
-  uT = () => "Поділитися місцем",
-  iT = () => "Chia sẻ vị trí",
-  m8 = (n = {}, e = {}) => {
+  GD = () => "Show last painted pixel on alliance",
+  QD = () => "Mostrar último pixel pintado na aliança",
+  YD = () => "在联盟中显示最后绘制的像素",
+  JD = () => "Zuletzt gemalten Pixel in der Allianz anzeigen",
+  XD = () => "Mostrar el último píxel pintado en la alianza",
+  rT = () => "Afficher le dernier pixel peint dans l’alliance",
+  eT = () => "Mostra l'ultimo pixel dipinto nell'alleanza",
+  nT = () => "アライアンスの最後に塗られたピクセルを表示",
+  tT = () => "Pokaż ostatni pomalowany piksel w sojuszu",
+  oT = () => "Показать последний пиксель, нарисованный альянсом",
+  uT = () => "Показати останній намальований піксель в альянсі",
+  iT = () => "Hiển thị pixel cuối cùng được tô của liên minh",
+  P5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? GD() : r === "pt" ? QD() : r === "ch" ? YD() : r === "de" ? JD() : r === "es" ? XD() : r === "fr" ? rT() : r === "it" ? eT() : r === "jp" ? nT() : r === "pl" ? tT() : r === "ru" ? oT() : r === "uk" ? uT() : iT()
   },
-  sT = () => "Show last painted pixel on alliance",
-  cT = () => "Mostrar último pixel pintado na aliança",
-  aT = () => "在联盟中显示最后绘制的像素",
-  _T = () => "Zuletzt gemalten Pixel in der Allianz anzeigen",
-  lT = () => "Mostrar el último píxel pintado en la alianza",
-  pT = () => "Afficher le dernier pixel peint dans l’alliance",
-  fT = () => "Mostra l'ultimo pixel dipinto nell'alleanza",
-  dT = () => "アライアンスの最後に塗られたピクセルを表示",
-  hT = () => "Pokaż ostatni pomalowany piksel w sojuszu",
-  mT = () => "Показать последний пиксель, нарисованный альянсом",
-  gT = () => "Показати останній намальований піксель в альянсі",
-  kT = () => "Hiển thị pixel cuối cùng được tô của liên minh",
-  g8 = (n = {}, e = {}) => {
+  sT = () => "Show Pixel Art",
+  cT = () => "Mostrar Pixel Art",
+  aT = () => "显示像素艺术",
+  _T = () => "Pixel-Art anzeigen",
+  lT = () => "Mostrar Pixel Art",
+  pT = () => "Afficher le pixel art",
+  fT = () => "Mostra Pixel Art",
+  dT = () => "ピクセルアートを表示",
+  hT = () => "Pokaż Pixel Art",
+  mT = () => "Показать пиксель-арт",
+  gT = () => "Показати Pixel Art",
+  kT = () => "Hiển thị pixel art",
+  N5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sT() : r === "pt" ? cT() : r === "ch" ? aT() : r === "de" ? _T() : r === "es" ? lT() : r === "fr" ? pT() : r === "it" ? fT() : r === "jp" ? dT() : r === "pl" ? hT() : r === "ru" ? mT() : r === "uk" ? gT() : kT()
   },
-  bT = () => "Show Pixel Art",
-  vT = () => "Mostrar Pixel Art",
-  yT = () => "显示像素艺术",
-  wT = () => "Pixel-Art anzeigen",
-  jT = () => "Mostrar Pixel Art",
-  zT = () => "Afficher le pixel art",
-  xT = () => "Mostra Pixel Art",
-  qT = () => "ピクセルアートを表示",
-  ST = () => "Pokaż Pixel Art",
-  PT = () => "Показать пиксель-арт",
-  CT = () => "Показати Pixel Art",
-  NT = () => "Hiển thị pixel art",
-  k8 = (n = {}, e = {}) => {
+  bT = () => "Show profile",
+  vT = () => "Exibir perfil",
+  yT = () => "查看个人资料",
+  wT = () => "Profil anzeigen",
+  jT = () => "Mostrar perfil",
+  zT = () => "Afficher le profil",
+  xT = () => "Mostra profilo",
+  qT = () => "プロフィールを見る",
+  ST = () => "Pokaż profil",
+  PT = () => "Показать профиль",
+  NT = () => "Показати профіль",
+  CT = () => "Hiển thị hồ sơ",
+  C5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? bT() : r === "pt" ? vT() : r === "ch" ? yT() : r === "de" ? wT() : r === "es" ? jT() : r === "fr" ? zT() : r === "it" ? xT() : r === "jp" ? qT() : r === "pl" ? ST() : r === "ru" ? PT() : r === "uk" ? CT() : NT()
+    return r === "en" ? bT() : r === "pt" ? vT() : r === "ch" ? yT() : r === "de" ? wT() : r === "es" ? jT() : r === "fr" ? zT() : r === "it" ? xT() : r === "jp" ? qT() : r === "pl" ? ST() : r === "ru" ? PT() : r === "uk" ? NT() : CT()
   },
-  AT = () => "Show profile",
-  DT = () => "Exibir perfil",
-  TT = () => "查看个人资料",
-  MT = () => "Profil anzeigen",
-  ET = () => "Mostrar perfil",
-  BT = () => "Afficher le profil",
-  IT = () => "Mostra profilo",
-  RT = () => "プロフィールを見る",
-  KT = () => "Pokaż profil",
-  LT = () => "Показать профиль",
-  WT = () => "Показати профіль",
-  $T = () => "Hiển thị hồ sơ",
-  b8 = (n = {}, e = {}) => {
+  AT = () => "SPACE",
+  DT = () => "Espaço",
+  TT = () => "空格键",
+  MT = () => "Leertaste",
+  ET = () => "Espacio",
+  BT = () => "Espace",
+  IT = () => "Spazio",
+  RT = () => "スペース",
+  KT = () => "SPACJA",
+  LT = () => "Пробел",
+  WT = () => "Пробіл",
+  $T = () => "Phím cách",
+  A5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? AT() : r === "pt" ? DT() : r === "ch" ? TT() : r === "de" ? MT() : r === "es" ? ET() : r === "fr" ? BT() : r === "it" ? IT() : r === "jp" ? RT() : r === "pl" ? KT() : r === "ru" ? LT() : r === "uk" ? WT() : $T()
   },
-  OT = () => "SPACE",
-  VT = () => "Espaço",
-  UT = () => "空格键",
-  HT = () => "Leertaste",
-  FT = () => "Espacio",
-  ZT = () => "Espace",
-  GT = () => "Spazio",
-  QT = () => "スペース",
-  YT = () => "SPACJA",
-  JT = () => "Пробел",
-  XT = () => "Пробіл",
-  rM = () => "Phím cách",
-  v8 = (n = {}, e = {}) => {
+  VT = () => "Store",
+  OT = () => "Loja",
+  UT = () => "商店",
+  HT = () => "Shop",
+  FT = () => "Tienda",
+  ZT = () => "Boutique",
+  GT = () => "Negozio",
+  QT = () => "ストア",
+  YT = () => "Sklep",
+  JT = () => "Магазин",
+  XT = () => "Магазин",
+  rM = () => "Cửa hàng",
+  D5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? OT() : r === "pt" ? VT() : r === "ch" ? UT() : r === "de" ? HT() : r === "es" ? FT() : r === "fr" ? ZT() : r === "it" ? GT() : r === "jp" ? QT() : r === "pl" ? YT() : r === "ru" ? JT() : r === "uk" ? XT() : rM()
+    return r === "en" ? VT() : r === "pt" ? OT() : r === "ch" ? UT() : r === "de" ? HT() : r === "es" ? FT() : r === "fr" ? ZT() : r === "it" ? GT() : r === "jp" ? QT() : r === "pl" ? YT() : r === "ru" ? JT() : r === "uk" ? XT() : rM()
   },
-  eM = () => "Store",
-  nM = () => "Loja",
-  tM = () => "商店",
-  oM = () => "Shop",
-  uM = () => "Tienda",
-  iM = () => "Boutique",
-  sM = () => "Negozio",
-  cM = () => "ストア",
-  aM = () => "Sklep",
-  _M = () => "Магазин",
-  lM = () => "Магазин",
-  pM = () => "Cửa hàng",
-  y8 = (n = {}, e = {}) => {
+  eM = () => "Submit",
+  nM = () => "Enviar",
+  tM = () => "提交",
+  oM = () => "Senden",
+  uM = () => "Enviar",
+  iM = () => "Envoyer",
+  sM = () => "Invia",
+  cM = () => "送信",
+  aM = () => "Wyślij",
+  _M = () => "Отправить",
+  lM = () => "Надіслати",
+  pM = () => "Gửi",
+  T5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? eM() : r === "pt" ? nM() : r === "ch" ? tM() : r === "de" ? oM() : r === "es" ? uM() : r === "fr" ? iM() : r === "it" ? sM() : r === "jp" ? cM() : r === "pl" ? aM() : r === "ru" ? _M() : r === "uk" ? lM() : pM()
   },
-  fM = () => "Submit",
-  dM = () => "Enviar",
-  hM = () => "提交",
-  mM = () => "Senden",
-  gM = () => "Enviar",
-  kM = () => "Envoyer",
-  bM = () => "Invia",
-  vM = () => "送信",
-  yM = () => "Wyślij",
-  wM = () => "Отправить",
-  jM = () => "Надіслати",
-  zM = () => "Gửi",
-  w8 = (n = {}, e = {}) => {
+  fM = () => "Suggestions",
+  dM = () => "Sugestões",
+  hM = () => "建议",
+  mM = () => "Vorschläge",
+  gM = () => "Sugerencias",
+  kM = () => "Suggestions",
+  bM = () => "Suggerimenti",
+  vM = () => "提案",
+  yM = () => "Sugestie",
+  wM = () => "Предложения",
+  jM = () => "Пропозиції",
+  zM = () => "Gợi ý",
+  M5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fM() : r === "pt" ? dM() : r === "ch" ? hM() : r === "de" ? mM() : r === "es" ? gM() : r === "fr" ? kM() : r === "it" ? bM() : r === "jp" ? vM() : r === "pl" ? yM() : r === "ru" ? wM() : r === "uk" ? jM() : zM()
   },
-  xM = () => "Suggestions",
-  qM = () => "Sugestões",
-  SM = () => "建议",
-  PM = () => "Vorschläge",
-  CM = () => "Sugerencias",
-  NM = () => "Suggestions",
-  AM = () => "Suggerimenti",
-  DM = () => "提案",
-  TM = () => "Sugestie",
-  MM = () => "Предложения",
-  EM = () => "Пропозиції",
-  BM = () => "Gợi ý",
-  j8 = (n = {}, e = {}) => {
+  xM = () => "Service Workers are not supported/enabled in your browser. Some features might not work properly.",
+  qM = () => "Service Workers não são suportados ou estão desativados em seu navegador. Alguns recursos podem não funcionar corretamente.",
+  SM = () => "你的浏览器不支持/未启用 Service Worker。一些功能可能无法正常工作。",
+  PM = () => "Service Worker werden in deinem Browser nicht unterstützt/aktiviert. Einige Funktionen könnten nicht richtig funktionieren.",
+  NM = () => "Service Workers no están soportados o están desactivados en tu navegador. Algunas funciones pueden no funcionar correctamente.",
+  CM = () => "Les Service Workers ne sont pas pris en charge/activés dans votre navigateur. Certaines fonctionnalités peuvent ne pas fonctionner correctement.",
+  AM = () => "I Service Worker non sono supportati o sono disabilitati nel tuo browser. Alcune funzionalità potrebbero non funzionare correttamente.",
+  DM = () => "お使いのブラウザではService Workerがサポートされていないか無効になっています。一部の機能が正しく動作しない可能性があります。",
+  TM = () => "Service Workers nie są obsługiwane lub są wyłączone w Twojej przeglądarce. Niektóre funkcje mogą nie działać poprawnie.",
+  MM = () => "Service Workers не поддерживаются или отключены в вашем браузере. Некоторые функции могут работать некорректно.",
+  EM = () => "Service Workers не підтримуються або вимкнені у вашому браузері. Деякі функції можуть працювати некоректно.",
+  BM = () => "Trình duyệt của bạn không hỗ trợ/bật Service Workers. Một số tính năng có thể không hoạt động đúng.",
+  E5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? xM() : r === "pt" ? qM() : r === "ch" ? SM() : r === "de" ? PM() : r === "es" ? CM() : r === "fr" ? NM() : r === "it" ? AM() : r === "jp" ? DM() : r === "pl" ? TM() : r === "ru" ? MM() : r === "uk" ? EM() : BM()
+    return r === "en" ? xM() : r === "pt" ? qM() : r === "ch" ? SM() : r === "de" ? PM() : r === "es" ? NM() : r === "fr" ? CM() : r === "it" ? AM() : r === "jp" ? DM() : r === "pl" ? TM() : r === "ru" ? MM() : r === "uk" ? EM() : BM()
   },
-  IM = () => "Service Workers are not supported/enabled in your browser. Some features might not work properly.",
-  RM = () => "Service Workers não são suportados ou estão desativados em seu navegador. Alguns recursos podem não funcionar corretamente.",
-  KM = () => "你的浏览器不支持/未启用 Service Worker。一些功能可能无法正常工作。",
-  LM = () => "Service Worker werden in deinem Browser nicht unterstützt/aktiviert. Einige Funktionen könnten nicht richtig funktionieren.",
-  WM = () => "Service Workers no están soportados o están desactivados en tu navegador. Algunas funciones pueden no funcionar correctamente.",
-  $M = () => "Les Service Workers ne sont pas pris en charge/activés dans votre navigateur. Certaines fonctionnalités peuvent ne pas fonctionner correctement.",
-  OM = () => "I Service Worker non sono supportati o sono disabilitati nel tuo browser. Alcune funzionalità potrebbero non funzionare correttamente.",
-  VM = () => "お使いのブラウザではService Workerがサポートされていないか無効になっています。一部の機能が正しく動作しない可能性があります。",
-  UM = () => "Service Workers nie są obsługiwane lub są wyłączone w Twojej przeglądarce. Niektóre funkcje mogą nie działać poprawnie.",
-  HM = () => "Service Workers не поддерживаются или отключены в вашем браузере. Некоторые функции могут работать некорректно.",
-  FM = () => "Service Workers не підтримуються або вимкнені у вашому браузері. Деякі функції можуть працювати некоректно.",
-  ZM = () => "Trình duyệt của bạn không hỗ trợ/bật Service Workers. Một số tính năng có thể không hoạt động đúng.",
-  z8 = (n = {}, e = {}) => {
+  IM = () => "Terms",
+  RM = () => "Termos",
+  KM = () => "条款",
+  LM = () => "Bedingungen",
+  WM = () => "Términos",
+  $M = () => "Conditions",
+  VM = () => "Termini",
+  OM = () => "利用規約",
+  UM = () => "Warunki",
+  HM = () => "Условия",
+  FM = () => "Умови",
+  ZM = () => "Điều khoản",
+  B5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? IM() : r === "pt" ? RM() : r === "ch" ? KM() : r === "de" ? LM() : r === "es" ? WM() : r === "fr" ? $M() : r === "it" ? OM() : r === "jp" ? VM() : r === "pl" ? UM() : r === "ru" ? HM() : r === "uk" ? FM() : ZM()
+    return r === "en" ? IM() : r === "pt" ? RM() : r === "ch" ? KM() : r === "de" ? LM() : r === "es" ? WM() : r === "fr" ? $M() : r === "it" ? VM() : r === "jp" ? OM() : r === "pl" ? UM() : r === "ru" ? HM() : r === "uk" ? FM() : ZM()
   },
-  GM = () => "Terms",
-  QM = () => "Termos",
-  YM = () => "条款",
-  JM = () => "Bedingungen",
-  XM = () => "Términos",
-  rE = () => "Conditions",
-  eE = () => "Termini",
-  nE = () => "利用規約",
-  tE = () => "Warunki",
-  oE = () => "Условия",
-  uE = () => "Умови",
-  iE = () => "Điều khoản",
-  x8 = (n = {}, e = {}) => {
+  GM = () => "This action is irreversible, do you want to proceed?",
+  QM = () => "Esta ação é irreversível, você deseja prosseguir?",
+  YM = () => "此操作不可逆，是否继续？",
+  JM = () => "Diese Aktion ist irreversibel. Möchtest du fortfahren?",
+  XM = () => "Esta acción es irreversible, ¿quieres continuar?",
+  rE = () => "Cette action est irréversible, souhaitez-vous continuer ?",
+  eE = () => "Questa azione è irreversibile, vuoi procedere?",
+  nE = () => "この操作は元に戻せません。実行してもよろしいですか？",
+  tE = () => "Ta akcja jest nieodwracalna. Czy chcesz kontynuować?",
+  oE = () => "Это действие необратимо. Продолжить?",
+  uE = () => "Цю дію неможливо скасувати. Продовжити?",
+  iE = () => "Hành động này không thể hoàn tác, bạn có muốn tiếp tục?",
+  I5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? GM() : r === "pt" ? QM() : r === "ch" ? YM() : r === "de" ? JM() : r === "es" ? XM() : r === "fr" ? rE() : r === "it" ? eE() : r === "jp" ? nE() : r === "pl" ? tE() : r === "ru" ? oE() : r === "uk" ? uE() : iE()
   },
-  sE = () => "This action is irreversible, do you want to proceed?",
-  cE = () => "Esta ação é irreversível, você deseja prosseguir?",
-  aE = () => "此操作不可逆，是否继续？",
-  _E = () => "Diese Aktion ist irreversibel. Möchtest du fortfahren?",
-  lE = () => "Esta acción es irreversible, ¿quieres continuar?",
-  pE = () => "Cette action est irréversible, souhaitez-vous continuer ?",
-  fE = () => "Questa azione è irreversibile, vuoi procedere?",
-  dE = () => "この操作は元に戻せません。実行してもよろしいですか？",
-  hE = () => "Ta akcja jest nieodwracalna. Czy chcesz kontynuować?",
-  mE = () => "Это действие необратимо. Продолжить?",
-  gE = () => "Цю дію неможливо скасувати. Продовжити?",
-  kE = () => "Hành động này không thể hoàn tác, bạn có muốn tiếp tục?",
-  q8 = (n = {}, e = {}) => {
+  sE = () => "this month",
+  cE = () => "neste mês",
+  aE = () => "本月",
+  _E = () => "diesen Monat",
+  lE = () => "este mes",
+  pE = () => "ce mois-ci",
+  fE = () => "questo mese",
+  dE = () => "今月",
+  hE = () => "w tym miesiącu",
+  mE = () => "в этом месяце",
+  gE = () => "цього місяця",
+  kE = () => "tháng này",
+  R5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sE() : r === "pt" ? cE() : r === "ch" ? aE() : r === "de" ? _E() : r === "es" ? lE() : r === "fr" ? pE() : r === "it" ? fE() : r === "jp" ? dE() : r === "pl" ? hE() : r === "ru" ? mE() : r === "uk" ? gE() : kE()
   },
-  bE = () => "this month",
-  vE = () => "neste mês",
-  yE = () => "本月",
-  wE = () => "diesen Monat",
-  jE = () => "este mes",
-  zE = () => "ce mois-ci",
-  xE = () => "questo mese",
-  qE = () => "今月",
-  SE = () => "w tym miesiącu",
-  PE = () => "в этом месяце",
-  CE = () => "цього місяця",
-  NE = () => "tháng này",
-  S8 = (n = {}, e = {}) => {
+  bE = () => "this week",
+  vE = () => "nesta semana",
+  yE = () => "本周",
+  wE = () => "diese Woche",
+  jE = () => "esta semana",
+  zE = () => "cette semaine",
+  xE = () => "questa settimana",
+  qE = () => "今週",
+  SE = () => "w tym tygodniu",
+  PE = () => "на этой неделе",
+  NE = () => "цього тижня",
+  CE = () => "tuần này",
+  K5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? bE() : r === "pt" ? vE() : r === "ch" ? yE() : r === "de" ? wE() : r === "es" ? jE() : r === "fr" ? zE() : r === "it" ? xE() : r === "jp" ? qE() : r === "pl" ? SE() : r === "ru" ? PE() : r === "uk" ? CE() : NE()
+    return r === "en" ? bE() : r === "pt" ? vE() : r === "ch" ? yE() : r === "de" ? wE() : r === "es" ? jE() : r === "fr" ? zE() : r === "it" ? xE() : r === "jp" ? qE() : r === "pl" ? SE() : r === "ru" ? PE() : r === "uk" ? NE() : CE()
   },
-  AE = () => "this week",
-  DE = () => "nesta semana",
-  TE = () => "本周",
-  ME = () => "diese Woche",
-  EE = () => "esta semana",
-  BE = () => "cette semaine",
-  IE = () => "questa settimana",
-  RE = () => "今週",
-  KE = () => "w tym tygodniu",
-  LE = () => "на этой неделе",
-  WE = () => "цього тижня",
-  $E = () => "tuần này",
-  P8 = (n = {}, e = {}) => {
+  AE = () => "This will permanently delete your account and all associated data. This action cannot be undone.",
+  DE = () => "Isso excluirá permanentemente sua conta e todos os dados associados. Esta ação não pode ser desfeita.",
+  TE = () => "这将永久删除你的账号及所有相关数据，此操作无法撤销。",
+  ME = () => "Dies wird dein Konto und alle dazugehörigen Daten dauerhaft löschen. Diese Aktion kann nicht rückgängig gemacht werden.",
+  EE = () => "Esto eliminará permanentemente tu cuenta y todos los datos asociados. Esta acción no se puede deshacer.",
+  BE = () => "Cela supprimera définitivement votre compte et toutes les données associées. Cette action est irréversible.",
+  IE = () => "Questa azione eliminerà definitivamente il tuo account e tutti i dati associati. Non potrà essere annullata.",
+  RE = () => "この操作により、アカウントと関連するすべてのデータが完全に削除されます。元に戻すことはできません。",
+  KE = () => "To trwale usunie Twoje konto i wszystkie powiązane dane. Tej akcji nie można cofnąć.",
+  LE = () => "Это действие навсегда удалит ваш аккаунт и все связанные данные. Его нельзя отменить.",
+  WE = () => "Це назавжди видалить ваш акаунт і всі повʼязані дані. Цю дію не можна буде скасувати.",
+  $E = () => "Việc này sẽ xóa vĩnh viễn tài khoản và tất cả dữ liệu liên quan. Hành động này không thể hoàn tác.",
+  L5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? AE() : r === "pt" ? DE() : r === "ch" ? TE() : r === "de" ? ME() : r === "es" ? EE() : r === "fr" ? BE() : r === "it" ? IE() : r === "jp" ? RE() : r === "pl" ? KE() : r === "ru" ? LE() : r === "uk" ? WE() : $E()
   },
-  OE = () => "This will permanently delete your account and all associated data. This action cannot be undone.",
-  VE = () => "Isso excluirá permanentemente sua conta e todos os dados associados. Esta ação não pode ser desfeita.",
-  UE = () => "这将永久删除你的账号及所有相关数据，此操作无法撤销。",
-  HE = () => "Dies wird dein Konto und alle dazugehörigen Daten dauerhaft löschen. Diese Aktion kann nicht rückgängig gemacht werden.",
-  FE = () => "Esto eliminará permanentemente tu cuenta y todos los datos asociados. Esta acción no se puede deshacer.",
-  ZE = () => "Cela supprimera définitivement votre compte et toutes les données associées. Cette action est irréversible.",
-  GE = () => "Questa azione eliminerà definitivamente il tuo account e tutti i dati associati. Non potrà essere annullata.",
-  QE = () => "この操作により、アカウントと関連するすべてのデータが完全に削除されます。元に戻すことはできません。",
-  YE = () => "To trwale usunie Twoje konto i wszystkie powiązane dane. Tej akcji nie można cofnąć.",
-  JE = () => "Это действие навсегда удалит ваш аккаунт и все связанные данные. Его нельзя отменить.",
-  XE = () => "Це назавжди видалить ваш акаунт і всі повʼязані дані. Цю дію не можна буде скасувати.",
-  rB = () => "Việc này sẽ xóa vĩnh viễn tài khoản và tất cả dữ liệu liên quan. Hành động này không thể hoàn tác.",
-  C8 = (n = {}, e = {}) => {
+  VE = () => "Tickets",
+  OE = () => "Tickets",
+  UE = () => "工单",
+  HE = () => "Tickets",
+  FE = () => "Tickets",
+  ZE = () => "Tickets",
+  GE = () => "Ticket",
+  QE = () => "チケット",
+  YE = () => "Tickety",
+  JE = () => "Тикеты",
+  XE = () => "Тікети",
+  rB = () => "Phiếu hỗ trợ",
+  W5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? OE() : r === "pt" ? VE() : r === "ch" ? UE() : r === "de" ? HE() : r === "es" ? FE() : r === "fr" ? ZE() : r === "it" ? GE() : r === "jp" ? QE() : r === "pl" ? YE() : r === "ru" ? JE() : r === "uk" ? XE() : rB()
+    return r === "en" ? VE() : r === "pt" ? OE() : r === "ch" ? UE() : r === "de" ? HE() : r === "es" ? FE() : r === "fr" ? ZE() : r === "it" ? GE() : r === "jp" ? QE() : r === "pl" ? YE() : r === "ru" ? JE() : r === "uk" ? XE() : rB()
   },
-  eB = () => "Tickets",
-  nB = () => "Tickets",
-  tB = () => "工单",
-  oB = () => "Tickets",
-  uB = () => "Tickets",
-  iB = () => "Tickets",
-  sB = () => "Ticket",
-  cB = () => "チケット",
-  aB = () => "Tickety",
-  _B = () => "Тикеты",
-  lB = () => "Тікети",
-  pB = () => "Phiếu hỗ trợ",
-  N8 = (n = {}, e = {}) => {
+  eB = () => "Timeout appeal",
+  nB = () => "Revisão de suspensão",
+  tB = () => "禁言申诉",
+  oB = () => "Timeout-Einspruch",
+  uB = () => "Apelación de suspensión",
+  iB = () => "Recours de suspension",
+  sB = () => "Ricorso contro la sospensione",
+  cB = () => "タイムアウトの異議申立て",
+  aB = () => "Odwołanie od zawieszenia",
+  _B = () => "Апелляция на тайм-аут",
+  lB = () => "Апеляція на тайм-аут",
+  pB = () => "Kháng cáo tạm khóa",
+  $5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? eB() : r === "pt" ? nB() : r === "ch" ? tB() : r === "de" ? oB() : r === "es" ? uB() : r === "fr" ? iB() : r === "it" ? sB() : r === "jp" ? cB() : r === "pl" ? aB() : r === "ru" ? _B() : r === "uk" ? lB() : pB()
   },
-  fB = () => "Timeout appeal",
-  dB = () => "Revisão de suspensão",
-  hB = () => "禁言申诉",
-  mB = () => "Timeout-Einspruch",
-  gB = () => "Apelación de suspensión",
-  kB = () => "Recours de suspension",
-  bB = () => "Ricorso contro la sospensione",
-  vB = () => "タイムアウトの異議申立て",
-  yB = () => "Odwołanie od zawieszenia",
-  wB = () => "Апелляция на тайм-аут",
-  jB = () => "Апеляція на тайм-аут",
-  zB = () => "Kháng cáo tạm khóa",
-  A8 = (n = {}, e = {}) => {
+  fB = () => "Appeal",
+  dB = () => "Apelar",
+  hB = () => "申诉",
+  mB = () => "Einspruch",
+  gB = () => "Apelar",
+  kB = () => "Recours",
+  bB = () => "Fare ricorso",
+  vB = () => "異議申立て",
+  yB = () => "Odwołaj się",
+  wB = () => "Апелляция",
+  jB = () => "Подати апеляцію",
+  zB = () => "Kháng cáo",
+  V5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fB() : r === "pt" ? dB() : r === "ch" ? hB() : r === "de" ? mB() : r === "es" ? gB() : r === "fr" ? kB() : r === "it" ? bB() : r === "jp" ? vB() : r === "pl" ? yB() : r === "ru" ? wB() : r === "uk" ? jB() : zB()
   },
-  xB = () => "Appeal",
-  qB = () => "Apelar",
-  SB = () => "申诉",
-  PB = () => "Einspruch",
-  CB = () => "Apelar",
-  NB = () => "Recours",
-  AB = () => "Fare ricorso",
-  DB = () => "異議申立て",
-  TB = () => "Odwołaj się",
-  MB = () => "Апелляция",
-  EB = () => "Подати апеляцію",
-  BB = () => "Kháng cáo",
-  D8 = (n = {}, e = {}) => {
+  xB = () => "to paint.",
+  qB = () => "para pintar",
+  SB = () => "进行绘制，",
+  PB = () => "gedrückt halten, um zu malen",
+  NB = () => "para pintar.",
+  CB = () => "pour peindre.",
+  AB = () => "per dipingere",
+  DB = () => "塗るには",
+  TB = () => "aby malować.",
+  MB = () => "чтобы рисовать.",
+  EB = () => "щоб малювати.",
+  BB = () => "để tô.",
+  O5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? xB() : r === "pt" ? qB() : r === "ch" ? SB() : r === "de" ? PB() : r === "es" ? CB() : r === "fr" ? NB() : r === "it" ? AB() : r === "jp" ? DB() : r === "pl" ? TB() : r === "ru" ? MB() : r === "uk" ? EB() : BB()
+    return r === "en" ? xB() : r === "pt" ? qB() : r === "ch" ? SB() : r === "de" ? PB() : r === "es" ? NB() : r === "fr" ? CB() : r === "it" ? AB() : r === "jp" ? DB() : r === "pl" ? TB() : r === "ru" ? MB() : r === "uk" ? EB() : BB()
   },
-  IB = () => "to paint.",
-  RB = () => "para pintar",
-  KB = () => "进行绘制，",
-  LB = () => "gedrückt halten, um zu malen",
-  WB = () => "para pintar.",
-  $B = () => "pour peindre.",
-  OB = () => "per dipingere",
-  VB = () => "塗るには",
-  UB = () => "aby malować.",
-  HB = () => "чтобы рисовать.",
-  FB = () => "щоб малювати.",
-  ZB = () => "để tô.",
-  T8 = (n = {}, e = {}) => {
+  IB = () => "You can paint more than 1 pixel",
+  RB = () => "Você pode pintar mais de 1 pixel",
+  KB = () => "你可以一次绘制多个像素",
+  LB = () => "Du kannst mehr als 1 Pixel malen",
+  WB = () => "Puedes pintar más de 1 píxel",
+  $B = () => "Vous pouvez peindre plus d’un pixel",
+  VB = () => "Puoi dipingere più di 1 pixel",
+  OB = () => "1つ以上のピクセルをまとめて塗ることができます。",
+  UB = () => "Możesz pomalować więcej niż 1 piksel",
+  HB = () => "Вы можете рисовать более чем 1 пиксель",
+  FB = () => "Ви можете малювати більше, ніж 1 піксель",
+  ZB = () => "Bạn có thể tô nhiều hơn 1 pixel",
+  U5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? IB() : r === "pt" ? RB() : r === "ch" ? KB() : r === "de" ? LB() : r === "es" ? WB() : r === "fr" ? $B() : r === "it" ? OB() : r === "jp" ? VB() : r === "pl" ? UB() : r === "ru" ? HB() : r === "uk" ? FB() : ZB()
+    return r === "en" ? IB() : r === "pt" ? RB() : r === "ch" ? KB() : r === "de" ? LB() : r === "es" ? WB() : r === "fr" ? $B() : r === "it" ? VB() : r === "jp" ? OB() : r === "pl" ? UB() : r === "ru" ? HB() : r === "uk" ? FB() : ZB()
   },
-  GB = () => "You can paint more than 1 pixel",
-  QB = () => "Você pode pintar mais de 1 pixel",
-  YB = () => "你可以一次绘制多个像素",
-  JB = () => "Du kannst mehr als 1 Pixel malen",
-  XB = () => "Puedes pintar más de 1 píxel",
-  rI = () => "Vous pouvez peindre plus d’un pixel",
-  eI = () => "Puoi dipingere più di 1 pixel",
-  nI = () => "1つ以上のピクセルをまとめて塗ることができます。",
-  tI = () => "Możesz pomalować więcej niż 1 piksel",
-  oI = () => "Вы можете рисовать более чем 1 пиксель",
-  uI = () => "Ви можете малювати більше, ніж 1 піксель",
-  iI = () => "Bạn có thể tô nhiều hơn 1 pixel",
-  M8 = (n = {}, e = {}) => {
+  GB = () => "Today",
+  QB = () => "Hoje",
+  YB = () => "今天",
+  JB = () => "Heute",
+  XB = () => "Hoy",
+  rI = () => "Aujourd’hui",
+  eI = () => "Oggi",
+  nI = () => "今日",
+  tI = () => "Dziś",
+  oI = () => "Сегодня",
+  uI = () => "Сьогодні",
+  iI = () => "Hôm nay",
+  H5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? GB() : r === "pt" ? QB() : r === "ch" ? YB() : r === "de" ? JB() : r === "es" ? XB() : r === "fr" ? rI() : r === "it" ? eI() : r === "jp" ? nI() : r === "pl" ? tI() : r === "ru" ? oI() : r === "uk" ? uI() : iI()
   },
-  sI = () => "Today",
-  cI = () => "Hoje",
-  aI = () => "今天",
-  _I = () => "Heute",
-  lI = () => "Hoy",
-  pI = () => "Aujourd’hui",
-  fI = () => "Oggi",
-  dI = () => "今日",
-  hI = () => "Dziś",
-  mI = () => "Сегодня",
-  gI = () => "Сьогодні",
-  kI = () => "Hôm nay",
-  E8 = (n = {}, e = {}) => {
+  sI = () => "Toggle art opacity",
+  cI = () => "Alterar opacidade",
+  aI = () => "切换作品不透明度",
+  _I = () => "Art-Transparenz umschalten",
+  lI = () => "Alternar opacidad del arte",
+  pI = () => "Basculer l’opacité de l’art",
+  fI = () => "Modifica opacità",
+  dI = () => "アートの不透明度を切り替え",
+  hI = () => "Przełącz przezroczystość grafik",
+  mI = () => "Переключить непрозрачность арта",
+  gI = () => "Перемкнути прозорість арту",
+  kI = () => "Chuyển độ trong suốt của art",
+  F5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sI() : r === "pt" ? cI() : r === "ch" ? aI() : r === "de" ? _I() : r === "es" ? lI() : r === "fr" ? pI() : r === "it" ? fI() : r === "jp" ? dI() : r === "pl" ? hI() : r === "ru" ? mI() : r === "uk" ? gI() : kI()
   },
-  bI = () => "Toggle art opacity",
-  vI = () => "Alterar opacidade",
-  yI = () => "切换作品不透明度",
-  wI = () => "Art-Transparenz umschalten",
-  jI = () => "Alternar opacidad del arte",
-  zI = () => "Basculer l’opacité de l’art",
-  xI = () => "Modifica opacità",
-  qI = () => "アートの不透明度を切り替え",
-  SI = () => "Przełącz przezroczystość grafik",
-  PI = () => "Переключить непрозрачность арта",
-  CI = () => "Перемкнути прозорість арту",
-  NI = () => "Chuyển độ trong suốt của art",
-  B8 = (n = {}, e = {}) => {
+  bI = () => "Twitch account migrated successfully.",
+  vI = () => "Conta da Twitch migrada com sucesso.",
+  yI = () => "Twitch 账号迁移成功。",
+  wI = () => "Twitch-Konto erfolgreich migriert.",
+  jI = () => "Cuenta de Twitch migrada correctamente.",
+  zI = () => "Compte Twitch migré avec succès.",
+  xI = () => "Account Twitch migrato con successo.",
+  qI = () => "Twitchアカウントの移行が完了しました。",
+  SI = () => "Konto Twitch zostało pomyślnie przeniesione.",
+  PI = () => "Аккаунт Twitch успешно мигрирован.",
+  NI = () => "Акаунт Twitch успішно перенесено.",
+  CI = () => "Đã di chuyển tài khoản Twitch thành công.",
+  Z5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? bI() : r === "pt" ? vI() : r === "ch" ? yI() : r === "de" ? wI() : r === "es" ? jI() : r === "fr" ? zI() : r === "it" ? xI() : r === "jp" ? qI() : r === "pl" ? SI() : r === "ru" ? PI() : r === "uk" ? CI() : NI()
+    return r === "en" ? bI() : r === "pt" ? vI() : r === "ch" ? yI() : r === "de" ? wI() : r === "es" ? jI() : r === "fr" ? zI() : r === "it" ? xI() : r === "jp" ? qI() : r === "pl" ? SI() : r === "ru" ? PI() : r === "uk" ? NI() : CI()
   },
-  AI = () => "Twitch account migrated successfully.",
-  DI = () => "Conta da Twitch migrada com sucesso.",
-  TI = () => "Twitch 账号迁移成功。",
-  MI = () => "Twitch-Konto erfolgreich migriert.",
-  EI = () => "Cuenta de Twitch migrada correctamente.",
-  BI = () => "Compte Twitch migré avec succès.",
-  II = () => "Account Twitch migrato con successo.",
-  RI = () => "Twitchアカウントの移行が完了しました。",
-  KI = () => "Konto Twitch zostało pomyślnie przeniesione.",
-  LI = () => "Аккаунт Twitch успешно мигрирован.",
-  WI = () => "Акаунт Twitch успішно перенесено.",
-  $I = () => "Đã di chuyển tài khoản Twitch thành công.",
-  I8 = (n = {}, e = {}) => {
+  AI = () => "Please confirm by entering your username:",
+  DI = () => "Por favor, confirme digitando seu nome de usuário:",
+  TI = () => "请通过输入用户名进行确认：",
+  MI = () => "Bitte bestätige, indem du deinen Benutzernamen eingibst:",
+  EI = () => "Confirma escribiendo tu nombre de usuario:",
+  BI = () => "Veuillez confirmer en entrant votre nom d’utilisateur :",
+  II = () => "Conferma digitando il tuo nome utente:",
+  RI = () => "確認のため、ユーザー名を入力してください:",
+  KI = () => "Potwierdź, wpisując swoją nazwę użytkownika:",
+  LI = () => "Для подтверждения введите ваше имя пользователя:",
+  WI = () => "Підтвердіть, будь ласка, ввівши ваше імʼя користувача:",
+  $I = () => "Hãy xác nhận bằng cách nhập tên người dùng của bạn:",
+  G5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? AI() : r === "pt" ? DI() : r === "ch" ? TI() : r === "de" ? MI() : r === "es" ? EI() : r === "fr" ? BI() : r === "it" ? II() : r === "jp" ? RI() : r === "pl" ? KI() : r === "ru" ? LI() : r === "uk" ? WI() : $I()
   },
-  OI = () => "Please confirm by entering your username:",
-  VI = () => "Por favor, confirme digitando seu nome de usuário:",
-  UI = () => "请通过输入用户名进行确认：",
-  HI = () => "Bitte bestätige, indem du deinen Benutzernamen eingibst:",
-  FI = () => "Confirma escribiendo tu nombre de usuario:",
-  ZI = () => "Veuillez confirmer en entrant votre nom d’utilisateur :",
-  GI = () => "Conferma digitando il tuo nome utente:",
-  QI = () => "確認のため、ユーザー名を入力してください:",
-  YI = () => "Potwierdź, wpisując swoją nazwę użytkownika:",
-  JI = () => "Для подтверждения введите ваше имя пользователя:",
-  XI = () => "Підтвердіть, будь ласка, ввівши ваше імʼя користувача:",
-  rR = () => "Hãy xác nhận bằng cách nhập tên người dùng của bạn:",
-  R8 = (n = {}, e = {}) => {
+  VI = () => "Type your username",
+  OI = () => "Digite seu nome de usuário",
+  UI = () => "输入你的用户名",
+  HI = () => "Benutzernamen eingeben",
+  FI = () => "Escribe tu nombre de usuario",
+  ZI = () => "Tapez votre nom d’utilisateur",
+  GI = () => "Digita il tuo nome utente",
+  QI = () => "ユーザー名を入力",
+  YI = () => "Wpisz swoją nazwę użytkownika",
+  JI = () => "Введите имя пользователя",
+  XI = () => "Введіть своє імʼя користувача",
+  rR = () => "Nhập tên người dùng",
+  Q5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? OI() : r === "pt" ? VI() : r === "ch" ? UI() : r === "de" ? HI() : r === "es" ? FI() : r === "fr" ? ZI() : r === "it" ? GI() : r === "jp" ? QI() : r === "pl" ? YI() : r === "ru" ? JI() : r === "uk" ? XI() : rR()
+    return r === "en" ? VI() : r === "pt" ? OI() : r === "ch" ? UI() : r === "de" ? HI() : r === "es" ? FI() : r === "fr" ? ZI() : r === "it" ? GI() : r === "jp" ? QI() : r === "pl" ? YI() : r === "ru" ? JI() : r === "uk" ? XI() : rR()
   },
-  eR = () => "Type your username",
-  nR = () => "Digite seu nome de usuário",
-  tR = () => "输入你的用户名",
-  oR = () => "Benutzernamen eingeben",
-  uR = () => "Escribe tu nombre de usuario",
-  iR = () => "Tapez votre nom d’utilisateur",
-  sR = () => "Digita il tuo nome utente",
-  cR = () => "ユーザー名を入力",
-  aR = () => "Wpisz swoją nazwę użytkownika",
-  _R = () => "Введите имя пользователя",
-  lR = () => "Введіть своє імʼя користувача",
-  pR = () => "Nhập tên người dùng",
-  K8 = (n = {}, e = {}) => {
+  eR = () => "Understood",
+  nR = () => "Entendido",
+  tR = () => "我已了解",
+  oR = () => "Verstanden",
+  uR = () => "Entendido",
+  iR = () => "Compris",
+  sR = () => "Capito",
+  cR = () => "理解しました",
+  aR = () => "Zrozumiałem",
+  _R = () => "Понятно",
+  lR = () => "Зрозуміло",
+  pR = () => "Đã hiểu",
+  Y5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? eR() : r === "pt" ? nR() : r === "ch" ? tR() : r === "de" ? oR() : r === "es" ? uR() : r === "fr" ? iR() : r === "it" ? sR() : r === "jp" ? cR() : r === "pl" ? aR() : r === "ru" ? _R() : r === "uk" ? lR() : pR()
   },
-  fR = () => "Understood",
-  dR = () => "Entendido",
-  hR = () => "我已了解",
-  mR = () => "Verstanden",
-  gR = () => "Entendido",
-  kR = () => "Compris",
-  bR = () => "Capito",
-  vR = () => "理解しました",
-  yR = () => "Zrozumiałem",
-  wR = () => "Понятно",
-  jR = () => "Зрозуміло",
-  zR = () => "Đã hiểu",
-  L8 = (n = {}, e = {}) => {
+  fR = () => "Undo",
+  dR = () => "Desfazer",
+  hR = () => "撤消",
+  mR = () => "Rückgängig machen",
+  gR = () => "Deshacer",
+  kR = () => "Annuler",
+  bR = () => "Annulla",
+  vR = () => "元に戻す",
+  yR = () => "Cofnij",
+  wR = () => "Отменить",
+  jR = () => "Скасувати",
+  zR = () => "Hoàn tác",
+  J5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fR() : r === "pt" ? dR() : r === "ch" ? hR() : r === "de" ? mR() : r === "es" ? gR() : r === "fr" ? kR() : r === "it" ? bR() : r === "jp" ? vR() : r === "pl" ? yR() : r === "ru" ? wR() : r === "uk" ? jR() : zR()
   },
-  xR = () => "Undo",
-  qR = () => "Desfazer",
-  SR = () => "撤消",
-  PR = () => "Rückgängig machen",
-  CR = () => "Deshacer",
-  NR = () => "Annuler",
-  AR = () => "Annulla",
-  DR = () => "元に戻す",
-  TR = () => "Cofnij",
-  MR = () => "Отменить",
-  ER = () => "Скасувати",
-  BR = () => "Hoàn tác",
-  W8 = (n = {}, e = {}) => {
+  xR = n => `Unlink Discord (${n.username})`,
+  qR = n => `Desconectar Discord (${n.username})`,
+  SR = n => `取消关联 Discord（${n.username}）`,
+  PR = n => `Discord trennen (${n.username})`,
+  NR = n => `Desvincular Discord (${n.username})`,
+  CR = n => `Dissocier Discord (${n.username})`,
+  AR = n => `Scollega Discord (${n.username})`,
+  DR = n => `Discordとの連携を解除 (${n.username})`,
+  TR = n => `Odłącz Discord (${n.username})`,
+  MR = n => `Отвязать Discord (${n.username})`,
+  ER = n => `Відʼєднати Discord (${n.username})`,
+  BR = n => `Hủy liên kết Discord (${n.username})`,
+  X5 = (n, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? xR() : r === "pt" ? qR() : r === "ch" ? SR() : r === "de" ? PR() : r === "es" ? CR() : r === "fr" ? NR() : r === "it" ? AR() : r === "jp" ? DR() : r === "pl" ? TR() : r === "ru" ? MR() : r === "uk" ? ER() : BR()
+    return r === "en" ? xR(n) : r === "pt" ? qR(n) : r === "ch" ? SR(n) : r === "de" ? PR(n) : r === "es" ? NR(n) : r === "fr" ? CR(n) : r === "it" ? AR(n) : r === "jp" ? DR(n) : r === "pl" ? TR(n) : r === "ru" ? MR(n) : r === "uk" ? ER(n) : BR(n)
   },
-  IR = n => `Unlink Discord (${n.username})`,
-  RR = n => `Desconectar Discord (${n.username})`,
-  KR = n => `取消关联 Discord（${n.username}）`,
-  LR = n => `Discord trennen (${n.username})`,
-  WR = n => `Desvincular Discord (${n.username})`,
-  $R = n => `Dissocier Discord (${n.username})`,
-  OR = n => `Scollega Discord (${n.username})`,
-  VR = n => `Discordとの連携を解除 (${n.username})`,
-  UR = n => `Odłącz Discord (${n.username})`,
-  HR = n => `Отвязать Discord (${n.username})`,
-  FR = n => `Відʼєднати Discord (${n.username})`,
-  ZR = n => `Hủy liên kết Discord (${n.username})`,
-  $8 = (n, e = {}) => {
+  IR = () => "Discord unlinked",
+  RR = () => "Discord desconectado",
+  KR = () => "Discord 已取消关联",
+  LR = () => "Discord-Konto getrennt",
+  WR = () => "Discord desvinculado",
+  $R = () => "Discord dissocié",
+  VR = () => "Discord scollegato",
+  OR = () => "Discordとの連携を解除しました。",
+  UR = () => "Discord odłączony",
+  HR = () => "Discord отвязан",
+  FR = () => "Discord відʼєднано",
+  ZR = () => "Đã hủy liên kết Discord",
+  rQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? IR(n) : r === "pt" ? RR(n) : r === "ch" ? KR(n) : r === "de" ? LR(n) : r === "es" ? WR(n) : r === "fr" ? $R(n) : r === "it" ? OR(n) : r === "jp" ? VR(n) : r === "pl" ? UR(n) : r === "ru" ? HR(n) : r === "uk" ? FR(n) : ZR(n)
+    return r === "en" ? IR() : r === "pt" ? RR() : r === "ch" ? KR() : r === "de" ? LR() : r === "es" ? WR() : r === "fr" ? $R() : r === "it" ? VR() : r === "jp" ? OR() : r === "pl" ? UR() : r === "ru" ? HR() : r === "uk" ? FR() : ZR()
   },
-  GR = () => "Discord unlinked",
-  QR = () => "Discord desconectado",
-  YR = () => "Discord 已取消关联",
-  JR = () => "Discord-Konto getrennt",
-  XR = () => "Discord desvinculado",
-  rK = () => "Discord dissocié",
-  eK = () => "Discord scollegato",
-  nK = () => "Discordとの連携を解除しました。",
-  tK = () => "Discord odłączony",
-  oK = () => "Discord отвязан",
-  uK = () => "Discord відʼєднано",
-  iK = () => "Đã hủy liên kết Discord",
-  O8 = (n = {}, e = {}) => {
+  GR = () => "Unmute",
+  QR = () => "Desmutar",
+  YR = () => "取消静音",
+  JR = () => "Stummschaltung aufheben",
+  XR = () => "Quitar silencio",
+  rK = () => "Réactiver le son",
+  eK = () => "Riattiva audio",
+  nK = () => "ミュート解除",
+  tK = () => "Wyłącz wyciszenie",
+  oK = () => "Снять мьют",
+  uK = () => "Увімкнути звук",
+  iK = () => "Bật tiếng",
+  eQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? GR() : r === "pt" ? QR() : r === "ch" ? YR() : r === "de" ? JR() : r === "es" ? XR() : r === "fr" ? rK() : r === "it" ? eK() : r === "jp" ? nK() : r === "pl" ? tK() : r === "ru" ? oK() : r === "uk" ? uK() : iK()
   },
-  sK = () => "Unmute",
-  cK = () => "Desmutar",
-  aK = () => "取消静音",
-  _K = () => "Stummschaltung aufheben",
-  lK = () => "Quitar silencio",
-  pK = () => "Réactiver le son",
-  fK = () => "Riattiva audio",
-  dK = () => "ミュート解除",
-  hK = () => "Wyłącz wyciszenie",
-  mK = () => "Снять мьют",
-  gK = () => "Увімкнути звук",
-  kK = () => "Bật tiếng",
-  V8 = (n = {}, e = {}) => {
+  sK = () => "Update",
+  cK = () => "Atualizar",
+  aK = () => "更新",
+  _K = () => "Aktualisieren",
+  lK = () => "Actualizar",
+  pK = () => "Mettre à jour",
+  fK = () => "Aggiorna",
+  dK = () => "更新",
+  hK = () => "Aktualizuj",
+  mK = () => "Обновить",
+  gK = () => "Оновити",
+  kK = () => "Cập nhật",
+  nQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sK() : r === "pt" ? cK() : r === "ch" ? aK() : r === "de" ? _K() : r === "es" ? lK() : r === "fr" ? pK() : r === "it" ? fK() : r === "jp" ? dK() : r === "pl" ? hK() : r === "ru" ? mK() : r === "uk" ? gK() : kK()
   },
-  bK = () => "Update",
-  vK = () => "Atualizar",
-  yK = () => "更新",
-  wK = () => "Aktualisieren",
-  jK = () => "Actualizar",
-  zK = () => "Mettre à jour",
-  xK = () => "Aggiorna",
-  qK = () => "更新",
-  SK = () => "Aktualizuj",
-  PK = () => "Обновить",
-  CK = () => "Оновити",
-  NK = () => "Cập nhật",
-  U8 = (n = {}, e = {}) => {
+  bK = () => "Use hardware acceleration when available",
+  vK = () => "Usar aceleração gráfica quando disponível",
+  yK = () => "在可用时使用硬件加速",
+  wK = () => "Hardwarebeschleunigung verwenden, wenn verfügbar",
+  jK = () => "Usar aceleración por hardware cuando esté disponible",
+  zK = () => "Utiliser l’accélération matérielle lorsqu’elle est disponible",
+  xK = () => "Usa l'accelerazione grafica quando disponibile",
+  qK = () => "利用可能な場合はハードウェアアクセラレーションを使用する",
+  SK = () => "Używaj akceleracji sprzętowej, gdy jest dostępna",
+  PK = () => "Использовать аппаратное ускорение, если доступно",
+  NK = () => "Використовувати апаратне прискорення, якщо доступно",
+  CK = () => "Dùng tăng tốc phần cứng khi có thể",
+  tQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? bK() : r === "pt" ? vK() : r === "ch" ? yK() : r === "de" ? wK() : r === "es" ? jK() : r === "fr" ? zK() : r === "it" ? xK() : r === "jp" ? qK() : r === "pl" ? SK() : r === "ru" ? PK() : r === "uk" ? CK() : NK()
+    return r === "en" ? bK() : r === "pt" ? vK() : r === "ch" ? yK() : r === "de" ? wK() : r === "es" ? jK() : r === "fr" ? zK() : r === "it" ? xK() : r === "jp" ? qK() : r === "pl" ? SK() : r === "ru" ? PK() : r === "uk" ? NK() : CK()
   },
-  AK = () => "Use hardware acceleration when available",
-  DK = () => "Usar aceleração gráfica quando disponível",
-  TK = () => "在可用时使用硬件加速",
-  MK = () => "Hardwarebeschleunigung verwenden, wenn verfügbar",
-  EK = () => "Usar aceleración por hardware cuando esté disponible",
-  BK = () => "Utiliser l’accélération matérielle lorsqu’elle est disponible",
-  IK = () => "Usa l'accelerazione grafica quando disponibile",
-  RK = () => "利用可能な場合はハードウェアアクセラレーションを使用する",
-  KK = () => "Używaj akceleracji sprzętowej, gdy jest dostępna",
-  LK = () => "Использовать аппаратное ускорение, если доступно",
-  WK = () => "Використовувати апаратне прискорення, якщо доступно",
-  $K = () => "Dùng tăng tốc phần cứng khi có thể",
-  H8 = (n = {}, e = {}) => {
+  AK = () => "Username copied to clipboard",
+  DK = () => "Usuário copiado",
+  TK = () => "用户名已复制到剪贴板",
+  MK = () => "Benutzername in die Zwischenablage kopiert",
+  EK = () => "Nombre de usuario copiado al portapapeles",
+  BK = () => "Nom d’utilisateur copié",
+  IK = () => "Nome utente copiato",
+  RK = () => "ユーザー名をクリップボードにコピーしました。",
+  KK = () => "Nazwa użytkownika skopiowana do schowka",
+  LK = () => "Имя пользователя скопировано в буфер обмена",
+  WK = () => "Імʼя користувача скопійовано в буфер обміну",
+  $K = () => "Đã sao chép tên người dùng vào clipboard",
+  oQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? AK() : r === "pt" ? DK() : r === "ch" ? TK() : r === "de" ? MK() : r === "es" ? EK() : r === "fr" ? BK() : r === "it" ? IK() : r === "jp" ? RK() : r === "pl" ? KK() : r === "ru" ? LK() : r === "uk" ? WK() : $K()
   },
-  OK = () => "Username copied to clipboard",
-  VK = () => "Usuário copiado",
-  UK = () => "用户名已复制到剪贴板",
-  HK = () => "Benutzername in die Zwischenablage kopiert",
-  FK = () => "Nombre de usuario copiado al portapapeles",
-  ZK = () => "Nom d’utilisateur copié",
-  GK = () => "Nome utente copiato",
-  QK = () => "ユーザー名をクリップボードにコピーしました。",
-  YK = () => "Nazwa użytkownika skopiowana do schowka",
-  JK = () => "Имя пользователя скопировано в буфер обмена",
-  XK = () => "Імʼя користувача скопійовано в буфер обміну",
-  rL = () => "Đã sao chép tên người dùng vào clipboard",
-  F8 = (n = {}, e = {}) => {
+  VK = () => "Verify if",
+  OK = () => "Verifique se",
+  UK = () => "请检查是否",
+  HK = () => "Überprüfe, ob",
+  FK = () => "Verifica si",
+  ZK = () => "Vérifiez si",
+  GK = () => "Verifica se",
+  QK = () => "次を確認:",
+  YK = () => "Sprawdź, czy",
+  JK = () => "Удостоверьтесь в том, что",
+  XK = () => "Переконайтеся, що",
+  rL = () => "Kiểm tra xem",
+  uQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? OK() : r === "pt" ? VK() : r === "ch" ? UK() : r === "de" ? HK() : r === "es" ? FK() : r === "fr" ? ZK() : r === "it" ? GK() : r === "jp" ? QK() : r === "pl" ? YK() : r === "ru" ? JK() : r === "uk" ? XK() : rL()
+    return r === "en" ? VK() : r === "pt" ? OK() : r === "ch" ? UK() : r === "de" ? HK() : r === "es" ? FK() : r === "fr" ? ZK() : r === "it" ? GK() : r === "jp" ? QK() : r === "pl" ? YK() : r === "ru" ? JK() : r === "uk" ? XK() : rL()
   },
-  eL = () => "Verify if",
-  nL = () => "Verifique se",
-  tL = () => "请检查是否",
-  oL = () => "Überprüfe, ob",
-  uL = () => "Verifica si",
-  iL = () => "Vérifiez si",
-  sL = () => "Verifica se",
-  cL = () => "次を確認:",
-  aL = () => "Sprawdź, czy",
-  _L = () => "Удостоверьтесь в том, что",
-  lL = () => "Переконайтеся, що",
-  pL = () => "Kiểm tra xem",
-  Z8 = (n = {}, e = {}) => {
+  eL = () => "Violations of these rules may lead to suspension of your account or removal of drawings.",
+  nL = () => "A violação destas regras pode levar à suspensão da conta ou à remoção de desenhos.",
+  tL = () => "违反这些规则可能导致你的账号被暂停或作品被移除。",
+  oL = () => "Verstöße gegen diese Regeln können zur Sperrung deines Kontos oder zur Entfernung von Zeichnungen führen.",
+  uL = () => "Las violaciones de estas reglas pueden resultar en la suspensión de tu cuenta o la eliminación de dibujos.",
+  iL = () => "La violation de ces règles peut entraîner la suspension de votre compte ou la suppression de dessins.",
+  sL = () => "La violazione di queste regole può portare alla sospensione dell'account o alla rimozione dei disegni.",
+  cL = () => "これらのルールに違反した場合、アカウントの停止や作品の削除などの措置が取られることがあります。",
+  aL = () => "Łamanie tych zasad może skutkować zawieszeniem konta lub usunięciem rysunków.",
+  _L = () => "Нарушение этих правил может привести к блокировке аккаунта или удалению рисунков.",
+  lL = () => "Порушення цих правил може призвести до блокування акаунта або видалення малюнків.",
+  pL = () => "Vi phạm các luật này có thể dẫn đến việc đình chỉ tài khoản hoặc xóa tranh.",
+  iQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? eL() : r === "pt" ? nL() : r === "ch" ? tL() : r === "de" ? oL() : r === "es" ? uL() : r === "fr" ? iL() : r === "it" ? sL() : r === "jp" ? cL() : r === "pl" ? aL() : r === "ru" ? _L() : r === "uk" ? lL() : pL()
   },
-  fL = () => "Violations of these rules may lead to suspension of your account or removal of drawings.",
-  dL = () => "A violação destas regras pode levar à suspensão da conta ou à remoção de desenhos.",
-  hL = () => "违反这些规则可能导致你的账号被暂停或作品被移除。",
-  mL = () => "Verstöße gegen diese Regeln können zur Sperrung deines Kontos oder zur Entfernung von Zeichnungen führen.",
-  gL = () => "Las violaciones de estas reglas pueden resultar en la suspensión de tu cuenta o la eliminación de dibujos.",
-  kL = () => "La violation de ces règles peut entraîner la suspension de votre compte ou la suppression de dessins.",
-  bL = () => "La violazione di queste regole può portare alla sospensione dell'account o alla rimozione dei disegni.",
-  vL = () => "これらのルールに違反した場合、アカウントの停止や作品の削除などの措置が取られることがあります。",
-  yL = () => "Łamanie tych zasad może skutkować zawieszeniem konta lub usunięciem rysunków.",
-  wL = () => "Нарушение этих правил может привести к блокировке аккаунта или удалению рисунков.",
-  jL = () => "Порушення цих правил може призвести до блокування акаунта або видалення малюнків.",
-  zL = () => "Vi phạm các luật này có thể dẫn đến việc đình chỉ tài khoản hoặc xóa tranh.",
-  G8 = (n = {}, e = {}) => {
+  fL = () => "Week",
+  dL = () => "Semana",
+  hL = () => "周",
+  mL = () => "Woche",
+  gL = () => "Semana",
+  kL = () => "Semaine",
+  bL = () => "Settimana",
+  vL = () => "週",
+  yL = () => "Tydzień",
+  wL = () => "Неделя",
+  jL = () => "Тиждень",
+  zL = () => "Tuần",
+  sQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fL() : r === "pt" ? dL() : r === "ch" ? hL() : r === "de" ? mL() : r === "es" ? gL() : r === "fr" ? kL() : r === "it" ? bL() : r === "jp" ? vL() : r === "pl" ? yL() : r === "ru" ? wL() : r === "uk" ? jL() : zL()
   },
-  xL = () => "Week",
-  qL = () => "Semana",
-  SL = () => "周",
-  PL = () => "Woche",
-  CL = () => "Semana",
-  NL = () => "Semaine",
-  AL = () => "Settimana",
-  DL = () => "週",
-  TL = () => "Tydzień",
-  ML = () => "Неделя",
-  EL = () => "Тиждень",
-  BL = () => "Tuần",
-  Q8 = (n = {}, e = {}) => {
+  xL = () => "Welcome to",
+  qL = () => "Bem vindo ao",
+  SL = () => "欢迎来到",
+  PL = () => "Willkommen bei",
+  NL = () => "Bienvenido a",
+  CL = () => "Bienvenue sur",
+  AL = () => "Benvenuto su",
+  DL = () => "ようこそ",
+  TL = () => "Witamy w",
+  ML = () => "Добро пожаловать в",
+  EL = () => "Ласкаво просимо до",
+  BL = () => "Chào mừng đến với",
+  cQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? xL() : r === "pt" ? qL() : r === "ch" ? SL() : r === "de" ? PL() : r === "es" ? CL() : r === "fr" ? NL() : r === "it" ? AL() : r === "jp" ? DL() : r === "pl" ? TL() : r === "ru" ? ML() : r === "uk" ? EL() : BL()
+    return r === "en" ? xL() : r === "pt" ? qL() : r === "ch" ? SL() : r === "de" ? PL() : r === "es" ? NL() : r === "fr" ? CL() : r === "it" ? AL() : r === "jp" ? DL() : r === "pl" ? TL() : r === "ru" ? ML() : r === "uk" ? EL() : BL()
   },
-  IL = () => "Welcome to",
-  RL = () => "Bem vindo ao",
-  KL = () => "欢迎来到",
-  LL = () => "Willkommen bei",
-  WL = () => "Bienvenido a",
-  $L = () => "Bienvenue sur",
-  OL = () => "Benvenuto su",
-  VL = () => "ようこそ",
-  UL = () => "Witamy w",
-  HL = () => "Добро пожаловать в",
-  FL = () => "Ласкаво просимо до",
-  ZL = () => "Chào mừng đến với",
-  Y8 = (n = {}, e = {}) => {
+  IL = () => "When painting, click on the button",
+  RL = () => "Quando pintar clique no botão",
+  KL = () => "在绘制时，点击按钮",
+  LL = () => "Wenn du malst, klicke auf den Button",
+  WL = () => "Cuando estés pintando, haz clic en el botón",
+  $L = () => "En peignant, cliquez sur le bouton",
+  VL = () => "Quando dipingi, clicca sul pulsante",
+  OL = () => "ペイント中に、次のボタンをクリックしてください。",
+  UL = () => "Podczas malowania kliknij przycisk",
+  HL = () => "Во время рисования нажмите кнопку",
+  FL = () => "Під час малювання натисніть кнопку",
+  ZL = () => "Khi tô, hãy nhấp vào nút",
+  aQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? IL() : r === "pt" ? RL() : r === "ch" ? KL() : r === "de" ? LL() : r === "es" ? WL() : r === "fr" ? $L() : r === "it" ? OL() : r === "jp" ? VL() : r === "pl" ? UL() : r === "ru" ? HL() : r === "uk" ? FL() : ZL()
+    return r === "en" ? IL() : r === "pt" ? RL() : r === "ch" ? KL() : r === "de" ? LL() : r === "es" ? WL() : r === "fr" ? $L() : r === "it" ? VL() : r === "jp" ? OL() : r === "pl" ? UL() : r === "ru" ? HL() : r === "uk" ? FL() : ZL()
   },
-  GL = () => "When painting, click on the button",
-  QL = () => "Quando pintar clique no botão",
-  YL = () => "在绘制时，点击按钮",
-  JL = () => "Wenn du malst, klicke auf den Button",
-  XL = () => "Cuando estés pintando, haz clic en el botón",
-  rW = () => "En peignant, cliquez sur le bouton",
-  eW = () => "Quando dipingi, clicca sul pulsante",
-  nW = () => "ペイント中に、次のボタンをクリックしてください。",
-  tW = () => "Podczas malowania kliknij przycisk",
-  oW = () => "Во время рисования нажмите кнопку",
-  uW = () => "Під час малювання натисніть кнопку",
-  iW = () => "Khi tô, hãy nhấp vào nút",
-  J8 = (n = {}, e = {}) => {
+  GL = () => "You don't have charges to paint. Wait to recharge.",
+  QL = () => "Você não possui tinta para pintar. Aguarde para carrega-las.",
+  YL = () => "你没有可用充能，請等待充能恢复。",
+  JL = () => "Du hast keine Ladungen zum Malen. Warte, bis sie sich aufladen.",
+  XL = () => "No tienes cargas para pintar. Espera a que se recarguen.",
+  rW = () => "Vous n’avez pas de charges pour peindre. Attendez qu’elles se rechargent.",
+  eW = () => "Non hai vernice per dipingere. Attendi la ricarica.",
+  nW = () => "ペイント用のチャージがありません。回復するまでお待ちください。",
+  tW = () => "Nie masz ładunków do malowania. Poczekaj na doładowanie.",
+  oW = () => "У вас нет зарядов для рисования. Подождите, пока они восстановятся.",
+  uW = () => "У вас немає зарядів для малювання. Зачекайте, поки вони відновляться.",
+  iW = () => "Bạn không còn lượt tô để vẽ. Hãy chờ nạp lại.",
+  _Q = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? GL() : r === "pt" ? QL() : r === "ch" ? YL() : r === "de" ? JL() : r === "es" ? XL() : r === "fr" ? rW() : r === "it" ? eW() : r === "jp" ? nW() : r === "pl" ? tW() : r === "ru" ? oW() : r === "uk" ? uW() : iW()
   },
-  sW = () => "You don't have charges to paint. Wait to recharge.",
-  cW = () => "Você não possui tinta para pintar. Aguarde para carrega-las.",
-  aW = () => "你没有可用充能，請等待充能恢复。",
-  _W = () => "Du hast keine Ladungen zum Malen. Warte, bis sie sich aufladen.",
-  lW = () => "No tienes cargas para pintar. Espera a que se recarguen.",
-  pW = () => "Vous n’avez pas de charges pour peindre. Attendez qu’elles se rechargent.",
-  fW = () => "Non hai vernice per dipingere. Attendi la ricarica.",
-  dW = () => "ペイント用のチャージがありません。回復するまでお待ちください。",
-  hW = () => "Nie masz ładunków do malowania. Poczekaj na doładowanie.",
-  mW = () => "У вас нет зарядов для рисования. Подождите, пока они восстановятся.",
-  gW = () => "У вас немає зарядів для малювання. Зачекайте, поки вони відновляться.",
-  kW = () => "Bạn không còn lượt tô để vẽ. Hãy chờ nạp lại.",
-  X8 = (n = {}, e = {}) => {
+  sW = () => "You need to zoom in to select a pixel",
+  cW = () => "Dê zoom para selecionar um pixel",
+  aW = () => "你需要放大才能选择像素",
+  _W = () => "Du musst hineinzoomen, um einen Pixel zu wählen",
+  lW = () => "Acerca el zoom para seleccionar un píxel",
+  pW = () => "Zoomez pour sélectionner un pixel",
+  fW = () => "Devi fare zoom per selezionare un pixel",
+  dW = () => "ピクセルを選択するにはズームインしてください。",
+  hW = () => "Musisz przybliżyć, aby wybrać piksel",
+  mW = () => "Приблизьте карту, чтобы выбрать пиксель",
+  gW = () => "Збільшіть масштаб, щоб вибрати піксель",
+  kW = () => "Bạn cần phóng to để chọn pixel",
+  lQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sW() : r === "pt" ? cW() : r === "ch" ? aW() : r === "de" ? _W() : r === "es" ? lW() : r === "fr" ? pW() : r === "it" ? fW() : r === "jp" ? dW() : r === "pl" ? hW() : r === "ru" ? mW() : r === "uk" ? gW() : kW()
   },
-  bW = () => "You need to zoom in to select a pixel",
-  vW = () => "Dê zoom para selecionar um pixel",
-  yW = () => "你需要放大才能选择像素",
-  wW = () => "Du musst hineinzoomen, um einen Pixel zu wählen",
-  jW = () => "Acerca el zoom para seleccionar un píxel",
-  zW = () => "Zoomez pour sélectionner un pixel",
-  xW = () => "Devi fare zoom per selezionare un pixel",
-  qW = () => "ピクセルを選択するにはズームインしてください。",
-  SW = () => "Musisz przybliżyć, aby wybrać piksel",
-  PW = () => "Приблизьте карту, чтобы выбрать пиксель",
-  CW = () => "Збільшіть масштаб, щоб вибрати піксель",
-  NW = () => "Bạn cần phóng to để chọn pixel",
-  r5 = (n = {}, e = {}) => {
+  bW = () => "Your account has been banned for violating the rules",
+  vW = () => "A sua conta foi banida por quebrar as regras",
+  yW = () => "你的账号因违反规则已被封禁",
+  wW = () => "Dein Konto wurde wegen Regelverstößen gebannt",
+  jW = () => "Tu cuenta ha sido baneada por infringir las reglas",
+  zW = () => "Votre compte a été banni pour avoir enfreint les règles",
+  xW = () => "Il tuo account è stato bannato per aver infranto le regole",
+  qW = () => "ルール違反により、あなたのアカウントはBANされました。",
+  SW = () => "Twoje konto zostało zbanowane za łamanie zasad",
+  PW = () => "Ваш аккаунт был забанен за нарушение правил",
+  NW = () => "Ваш акаунт заблоковано за порушення правил",
+  CW = () => "Tài khoản của bạn đã bị khóa vì vi phạm luật",
+  pQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? bW() : r === "pt" ? vW() : r === "ch" ? yW() : r === "de" ? wW() : r === "es" ? jW() : r === "fr" ? zW() : r === "it" ? xW() : r === "jp" ? qW() : r === "pl" ? SW() : r === "ru" ? PW() : r === "uk" ? CW() : NW()
+    return r === "en" ? bW() : r === "pt" ? vW() : r === "ch" ? yW() : r === "de" ? wW() : r === "es" ? jW() : r === "fr" ? zW() : r === "it" ? xW() : r === "jp" ? qW() : r === "pl" ? SW() : r === "ru" ? PW() : r === "uk" ? NW() : CW()
   },
-  AW = () => "Your account has been banned for violating the rules",
-  DW = () => "A sua conta foi banida por quebrar as regras",
-  TW = () => "你的账号因违反规则已被封禁",
-  MW = () => "Dein Konto wurde wegen Regelverstößen gebannt",
-  EW = () => "Tu cuenta ha sido baneada por infringir las reglas",
-  BW = () => "Votre compte a été banni pour avoir enfreint les règles",
-  IW = () => "Il tuo account è stato bannato per aver infranto le regole",
-  RW = () => "ルール違反により、あなたのアカウントはBANされました。",
-  KW = () => "Twoje konto zostało zbanowane za łamanie zasad",
-  LW = () => "Ваш аккаунт был забанен за нарушение правил",
-  WW = () => "Ваш акаунт заблоковано за порушення правил",
-  $W = () => "Tài khoản của bạn đã bị khóa vì vi phạm luật",
-  e5 = (n = {}, e = {}) => {
+  AW = () => "Zoom in",
+  DW = () => "Aumentar zoom",
+  TW = () => "放大",
+  MW = () => "Hineinzoomen",
+  EW = () => "Acercar",
+  BW = () => "Zoom avant",
+  IW = () => "Zoom avanti",
+  RW = () => "ズームイン",
+  KW = () => "Przybliż",
+  LW = () => "Приблизить",
+  WW = () => "Збільшити",
+  $W = () => "Phóng to",
+  fQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? AW() : r === "pt" ? DW() : r === "ch" ? TW() : r === "de" ? MW() : r === "es" ? EW() : r === "fr" ? BW() : r === "it" ? IW() : r === "jp" ? RW() : r === "pl" ? KW() : r === "ru" ? LW() : r === "uk" ? WW() : $W()
   },
-  OW = () => "Zoom in",
-  VW = () => "Aumentar zoom",
-  UW = () => "放大",
-  HW = () => "Hineinzoomen",
-  FW = () => "Acercar",
-  ZW = () => "Zoom avant",
-  GW = () => "Zoom avanti",
-  QW = () => "ズームイン",
-  YW = () => "Przybliż",
-  JW = () => "Приблизить",
-  XW = () => "Збільшити",
-  r$ = () => "Phóng to",
-  n5 = (n = {}, e = {}) => {
+  VW = () => "Zoom in to see the pixels",
+  OW = () => "Amplie para ver os pixels",
+  UW = () => "放大以查看像素",
+  HW = () => "Hineinzoomen, um die Pixel zu sehen",
+  FW = () => "Acerca el zoom para ver los píxeles",
+  ZW = () => "Zoomez pour voir les pixels",
+  GW = () => "Ingrandisci per vedere i pixel",
+  QW = () => "ピクセルを見るにはズームインしてください。",
+  YW = () => "Przybliż, aby zobaczyć piksele",
+  JW = () => "Приблизьте карту, чтобы увидеть пиксели",
+  XW = () => "Збільшіть масштаб, щоб побачити пікселі",
+  r$ = () => "Phóng to để thấy các pixel",
+  dQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? OW() : r === "pt" ? VW() : r === "ch" ? UW() : r === "de" ? HW() : r === "es" ? FW() : r === "fr" ? ZW() : r === "it" ? GW() : r === "jp" ? QW() : r === "pl" ? YW() : r === "ru" ? JW() : r === "uk" ? XW() : r$()
+    return r === "en" ? VW() : r === "pt" ? OW() : r === "ch" ? UW() : r === "de" ? HW() : r === "es" ? FW() : r === "fr" ? ZW() : r === "it" ? GW() : r === "jp" ? QW() : r === "pl" ? YW() : r === "ru" ? JW() : r === "uk" ? XW() : r$()
   },
-  e$ = () => "Zoom in to see the pixels",
-  n$ = () => "Amplie para ver os pixels",
-  t$ = () => "放大以查看像素",
-  o$ = () => "Hineinzoomen, um die Pixel zu sehen",
-  u$ = () => "Acerca el zoom para ver los píxeles",
-  i$ = () => "Zoomez pour voir les pixels",
-  s$ = () => "Ingrandisci per vedere i pixel",
-  c$ = () => "ピクセルを見るにはズームインしてください。",
-  a$ = () => "Przybliż, aby zobaczyć piksele",
-  _$ = () => "Приблизьте карту, чтобы увидеть пиксели",
-  l$ = () => "Збільшіть масштаб, щоб побачити пікселі",
-  p$ = () => "Phóng to để thấy các pixel",
-  t5 = (n = {}, e = {}) => {
+  e$ = () => "Zoom out",
+  n$ = () => "Diminuir zoom",
+  t$ = () => "缩小",
+  o$ = () => "Herauszoomen",
+  u$ = () => "Alejar",
+  i$ = () => "Zoom arrière",
+  s$ = () => "Zoom indietro",
+  c$ = () => "ズームアウト",
+  a$ = () => "Oddal",
+  _$ = () => "Отдалить",
+  l$ = () => "Зменшити",
+  p$ = () => "Thu nhỏ",
+  hQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? e$() : r === "pt" ? n$() : r === "ch" ? t$() : r === "de" ? o$() : r === "es" ? u$() : r === "fr" ? i$() : r === "it" ? s$() : r === "jp" ? c$() : r === "pl" ? a$() : r === "ru" ? _$() : r === "uk" ? l$() : p$()
   },
-  f$ = () => "Zoom out",
-  d$ = () => "Diminuir zoom",
-  h$ = () => "缩小",
-  m$ = () => "Herauszoomen",
-  g$ = () => "Alejar",
-  k$ = () => "Zoom arrière",
-  b$ = () => "Zoom indietro",
-  v$ = () => "ズームアウト",
-  y$ = () => "Oddal",
-  w$ = () => "Отдалить",
-  j$ = () => "Зменшити",
-  z$ = () => "Thu nhỏ",
-  o5 = (n = {}, e = {}) => {
+  f$ = () => "Save with map",
+  d$ = () => "Salvar com mapa",
+  h$ = () => "连同地图一起保存",
+  m$ = () => "Mit Karte speichern",
+  g$ = () => "Guardar con mapa",
+  k$ = () => "Enregistrer avec la carte",
+  b$ = () => "Salva con mappa",
+  v$ = () => "マップ付きで保存",
+  y$ = () => "Zapisz z mapą",
+  w$ = () => "Сохранить с картой",
+  j$ = () => "Зберегти з картою",
+  z$ = () => "Lưu kèm bản đồ",
+  mQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? f$() : r === "pt" ? d$() : r === "ch" ? h$() : r === "de" ? m$() : r === "es" ? g$() : r === "fr" ? k$() : r === "it" ? b$() : r === "jp" ? v$() : r === "pl" ? y$() : r === "ru" ? w$() : r === "uk" ? j$() : z$()
   },
-  x$ = () => "Save with map",
-  q$ = () => "Salvar com mapa",
-  S$ = () => "连同地图一起保存",
-  P$ = () => "Mit Karte speichern",
-  C$ = () => "Guardar con mapa",
-  N$ = () => "Enregistrer avec la carte",
-  A$ = () => "Salva con mappa",
-  D$ = () => "マップ付きで保存",
-  T$ = () => "Zapisz z mapą",
-  M$ = () => "Сохранить с картой",
-  E$ = () => "Зберегти з картою",
-  B$ = () => "Lưu kèm bản đồ",
-  u5 = (n = {}, e = {}) => {
+  x$ = () => "Show less",
+  q$ = () => "Mostrar menos",
+  S$ = () => "收起",
+  P$ = () => "Weniger anzeigen",
+  N$ = () => "Mostrar menos",
+  C$ = () => "Afficher moins",
+  A$ = () => "Mostra meno",
+  D$ = () => "少なく表示",
+  T$ = () => "Pokaż mniej",
+  M$ = () => "Показать меньше",
+  E$ = () => "Показати менше",
+  B$ = () => "Ẩn bớt",
+  gQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? x$() : r === "pt" ? q$() : r === "ch" ? S$() : r === "de" ? P$() : r === "es" ? C$() : r === "fr" ? N$() : r === "it" ? A$() : r === "jp" ? D$() : r === "pl" ? T$() : r === "ru" ? M$() : r === "uk" ? E$() : B$()
+    return r === "en" ? x$() : r === "pt" ? q$() : r === "ch" ? S$() : r === "de" ? P$() : r === "es" ? N$() : r === "fr" ? C$() : r === "it" ? A$() : r === "jp" ? D$() : r === "pl" ? T$() : r === "ru" ? M$() : r === "uk" ? E$() : B$()
   },
-  I$ = () => "Show less",
-  R$ = () => "Mostrar menos",
-  K$ = () => "收起",
-  L$ = () => "Weniger anzeigen",
-  W$ = () => "Mostrar menos",
-  $$ = () => "Afficher moins",
-  O$ = () => "Mostra meno",
-  V$ = () => "少なく表示",
-  U$ = () => "Pokaż mniej",
-  H$ = () => "Показать меньше",
-  F$ = () => "Показати менше",
-  Z$ = () => "Ẩn bớt",
-  i5 = (n = {}, e = {}) => {
+  I$ = () => "Show more",
+  R$ = () => "Mostrar mais",
+  K$ = () => "显示更多",
+  L$ = () => "Mehr anzeigen",
+  W$ = () => "Mostrar más",
+  $$ = () => "Afficher plus",
+  V$ = () => "Mostra altro",
+  O$ = () => "もっと見る",
+  U$ = () => "Pokaż więcej",
+  H$ = () => "Показать больше",
+  F$ = () => "Показати більше",
+  Z$ = () => "Hiển thị thêm",
+  kQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? I$() : r === "pt" ? R$() : r === "ch" ? K$() : r === "de" ? L$() : r === "es" ? W$() : r === "fr" ? $$() : r === "it" ? O$() : r === "jp" ? V$() : r === "pl" ? U$() : r === "ru" ? H$() : r === "uk" ? F$() : Z$()
+    return r === "en" ? I$() : r === "pt" ? R$() : r === "ch" ? K$() : r === "de" ? L$() : r === "es" ? W$() : r === "fr" ? $$() : r === "it" ? V$() : r === "jp" ? O$() : r === "pl" ? U$() : r === "ru" ? H$() : r === "uk" ? F$() : Z$()
   },
-  G$ = () => "Show more",
-  Q$ = () => "Mostrar mais",
-  Y$ = () => "显示更多",
-  J$ = () => "Mehr anzeigen",
-  X$ = () => "Mostrar más",
-  rO = () => "Afficher plus",
-  eO = () => "Mostra altro",
-  nO = () => "もっと見る",
-  tO = () => "Pokaż więcej",
-  oO = () => "Показать больше",
-  uO = () => "Показати більше",
-  iO = () => "Hiển thị thêm",
-  s5 = (n = {}, e = {}) => {
+  G$ = () => "Flags",
+  Q$ = () => "Bandeiras",
+  Y$ = () => "旗帜",
+  J$ = () => "Flaggen",
+  X$ = () => "Banderas",
+  rV = () => "Drapeaux",
+  eV = () => "Bandiere",
+  nV = () => "旗",
+  tV = () => "Flagi",
+  oV = () => "Флаги",
+  uV = () => "Прапори",
+  iV = () => "Cờ",
+  bQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? G$() : r === "pt" ? Q$() : r === "ch" ? Y$() : r === "de" ? J$() : r === "es" ? X$() : r === "fr" ? rO() : r === "it" ? eO() : r === "jp" ? nO() : r === "pl" ? tO() : r === "ru" ? oO() : r === "uk" ? uO() : iO()
+    return r === "en" ? G$() : r === "pt" ? Q$() : r === "ch" ? Y$() : r === "de" ? J$() : r === "es" ? X$() : r === "fr" ? rV() : r === "it" ? eV() : r === "jp" ? nV() : r === "pl" ? tV() : r === "ru" ? oV() : r === "uk" ? uV() : iV()
   },
-  sO = () => "Flags",
-  cO = () => "Bandeiras",
-  aO = () => "旗帜",
-  _O = () => "Flaggen",
-  lO = () => "Banderas",
-  pO = () => "Drapeaux",
-  fO = () => "Bandiere",
-  dO = () => "旗",
-  hO = () => "Flagi",
-  mO = () => "Флаги",
-  gO = () => "Прапори",
-  kO = () => "Cờ",
-  c5 = (n = {}, e = {}) => {
+  sV = () => "Free",
+  cV = () => "Grátis",
+  aV = () => "免费",
+  _V = () => "Kostenlos",
+  lV = () => "Gratis",
+  pV = () => "Gratuit",
+  fV = () => "Gratuito",
+  dV = () => "無料",
+  hV = () => "Darmowy",
+  mV = () => "Бесплатно",
+  gV = () => "Безкоштовно",
+  kV = () => "Miễn phí",
+  vQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? sO() : r === "pt" ? cO() : r === "ch" ? aO() : r === "de" ? _O() : r === "es" ? lO() : r === "fr" ? pO() : r === "it" ? fO() : r === "jp" ? dO() : r === "pl" ? hO() : r === "ru" ? mO() : r === "uk" ? gO() : kO()
+    return r === "en" ? sV() : r === "pt" ? cV() : r === "ch" ? aV() : r === "de" ? _V() : r === "es" ? lV() : r === "fr" ? pV() : r === "it" ? fV() : r === "jp" ? dV() : r === "pl" ? hV() : r === "ru" ? mV() : r === "uk" ? gV() : kV()
   },
-  bO = () => "Free",
-  vO = () => "Grátis",
-  yO = () => "免费",
-  wO = () => "Kostenlos",
-  jO = () => "Gratis",
-  zO = () => "Gratuit",
-  xO = () => "Gratuito",
-  qO = () => "無料",
-  SO = () => "Darmowy",
-  PO = () => "Бесплатно",
-  CO = () => "Безкоштовно",
-  NO = () => "Miễn phí",
-  a5 = (n = {}, e = {}) => {
+  bV = () => "Change frame",
+  vV = () => "Alterar moldura",
+  yV = () => "更改框架",
+  wV = () => "Rahmen ändern",
+  jV = () => "Cambiar marco",
+  zV = () => "Changer de cadre",
+  xV = () => "Cambia cornice",
+  qV = () => "フレームを変更",
+  SV = () => "Zmień ramkę",
+  PV = () => "Изменить кадр",
+  NV = () => "Змінити кадр",
+  CV = () => "Đổi khung",
+  yQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? bO() : r === "pt" ? vO() : r === "ch" ? yO() : r === "de" ? wO() : r === "es" ? jO() : r === "fr" ? zO() : r === "it" ? xO() : r === "jp" ? qO() : r === "pl" ? SO() : r === "ru" ? PO() : r === "uk" ? CO() : NO()
+    return r === "en" ? bV() : r === "pt" ? vV() : r === "ch" ? yV() : r === "de" ? wV() : r === "es" ? jV() : r === "fr" ? zV() : r === "it" ? xV() : r === "jp" ? qV() : r === "pl" ? SV() : r === "ru" ? PV() : r === "uk" ? NV() : CV()
   },
-  AO = () => "Change frame",
-  DO = () => "Alterar moldura",
-  TO = () => "更改框架",
-  MO = () => "Rahmen ändern",
-  EO = () => "Cambiar marco",
-  BO = () => "Changer de cadre",
-  IO = () => "Cambia cornice",
-  RO = () => "フレームを変更",
-  KO = () => "Zmień ramkę",
-  LO = () => "Изменить кадр",
-  WO = () => "Змінити кадр",
-  $O = () => "Đổi khung",
-  _5 = (n = {}, e = {}) => {
+  AV = () => "Frame equipped!",
+  DV = () => "Moldura equipada!",
+  TV = () => "框架已装备！",
+  MV = () => "Rahmen ausgerüstet!",
+  EV = () => "¡Marco equipado!",
+  BV = () => "Cadre équipé !",
+  IV = () => "Telaio equipaggiato!",
+  RV = () => "フレームを装備しました！",
+  KV = () => "Rama wyposażona!",
+  LV = () => "Рама снаряжена!",
+  WV = () => "Раму оснащено!",
+  $V = () => "Đã trang bị khung!",
+  wQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? AO() : r === "pt" ? DO() : r === "ch" ? TO() : r === "de" ? MO() : r === "es" ? EO() : r === "fr" ? BO() : r === "it" ? IO() : r === "jp" ? RO() : r === "pl" ? KO() : r === "ru" ? LO() : r === "uk" ? WO() : $O()
+    return r === "en" ? AV() : r === "pt" ? DV() : r === "ch" ? TV() : r === "de" ? MV() : r === "es" ? EV() : r === "fr" ? BV() : r === "it" ? IV() : r === "jp" ? RV() : r === "pl" ? KV() : r === "ru" ? LV() : r === "uk" ? WV() : $V()
   },
-  OO = () => "Frame equipped!",
-  VO = () => "Moldura equipada!",
-  UO = () => "框架已装备！",
-  HO = () => "Rahmen ausgerüstet!",
-  FO = () => "¡Marco equipado!",
-  ZO = () => "Cadre équipé !",
-  GO = () => "Telaio equipaggiato!",
-  QO = () => "フレームを装備しました！",
-  YO = () => "Rama wyposażona!",
-  JO = () => "Рама снаряжена!",
-  XO = () => "Раму оснащено!",
-  rV = () => "Đã trang bị khung!",
-  l5 = (n = {}, e = {}) => {
+  VV = () => "Frame Inventory",
+  OV = () => "Inventário de Molduras",
+  UV = () => "框架库存",
+  HV = () => "Rahmenbestand",
+  FV = () => "Inventario de marcos",
+  ZV = () => "Inventaire de cadres",
+  GV = () => "Inventario telai",
+  QV = () => "フレーム在庫",
+  YV = () => "Inwentarz ram",
+  JV = () => "Инвентарь рамок",
+  XV = () => "Інвентар рам",
+  rO = () => "Tồn kho khung",
+  jQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? OO() : r === "pt" ? VO() : r === "ch" ? UO() : r === "de" ? HO() : r === "es" ? FO() : r === "fr" ? ZO() : r === "it" ? GO() : r === "jp" ? QO() : r === "pl" ? YO() : r === "ru" ? JO() : r === "uk" ? XO() : rV()
+    return r === "en" ? VV() : r === "pt" ? OV() : r === "ch" ? UV() : r === "de" ? HV() : r === "es" ? FV() : r === "fr" ? ZV() : r === "it" ? GV() : r === "jp" ? QV() : r === "pl" ? YV() : r === "ru" ? JV() : r === "uk" ? XV() : rO()
   },
-  eV = () => "Frame Inventory",
-  nV = () => "Inventário de Molduras",
-  tV = () => "框架库存",
-  oV = () => "Rahmenbestand",
-  uV = () => "Inventario de marcos",
-  iV = () => "Inventaire de cadres",
-  sV = () => "Inventario telai",
-  cV = () => "フレーム在庫",
-  aV = () => "Inwentarz ram",
-  _V = () => "Инвентарь рамок",
-  lV = () => "Інвентар рам",
-  pV = () => "Tồn kho khung",
-  p5 = (n = {}, e = {}) => {
+  eO = () => "Choose a frame for your profile picture",
+  nO = () => "Escolha uma moldura para sua foto de perfil",
+  tO = () => "选择一个边框作为您的个人资料图片",
+  oO = () => "Wähle einen Rahmen für dein Profilbild",
+  uO = () => "Elige un marco para tu foto de perfil",
+  iO = () => "Choisissez un cadre pour votre photo de profil",
+  sO = () => "Scegli una cornice per la tua immagine del profilo",
+  cO = () => "プロフィール写真のフレームを選択",
+  aO = () => "Wybierz ramkę do swojego zdjęcia profilowego",
+  _O = () => "Выберите рамку для своей фотографии профиля",
+  lO = () => "Оберіть рамку для свого фото профілю",
+  pO = () => "Chọn một khung cho ảnh đại diện của bạn",
+  zQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? eV() : r === "pt" ? nV() : r === "ch" ? tV() : r === "de" ? oV() : r === "es" ? uV() : r === "fr" ? iV() : r === "it" ? sV() : r === "jp" ? cV() : r === "pl" ? aV() : r === "ru" ? _V() : r === "uk" ? lV() : pV()
+    return r === "en" ? eO() : r === "pt" ? nO() : r === "ch" ? tO() : r === "de" ? oO() : r === "es" ? uO() : r === "fr" ? iO() : r === "it" ? sO() : r === "jp" ? cO() : r === "pl" ? aO() : r === "ru" ? _O() : r === "uk" ? lO() : pO()
   },
-  fV = () => "Choose a frame for your profile picture",
-  dV = () => "Escolha uma moldura para sua foto de perfil",
-  hV = () => "选择一个边框作为您的个人资料图片",
-  mV = () => "Wähle einen Rahmen für dein Profilbild",
-  gV = () => "Elige un marco para tu foto de perfil",
-  kV = () => "Choisissez un cadre pour votre photo de profil",
-  bV = () => "Scegli una cornice per la tua immagine del profilo",
-  vV = () => "プロフィール写真のフレームを選択",
-  yV = () => "Wybierz ramkę do swojego zdjęcia profilowego",
-  wV = () => "Выберите рамку для своей фотографии профиля",
-  jV = () => "Оберіть рамку для свого фото профілю",
-  zV = () => "Chọn một khung cho ảnh đại diện của bạn",
-  f5 = (n = {}, e = {}) => {
+  fO = () => "Your frames",
+  dO = () => "Suas molduras",
+  hO = () => "您的帧",
+  mO = () => "Ihre Rahmen",
+  gO = () => "Tus marcos",
+  kO = () => "Vos montures",
+  bO = () => "Le tue cornici",
+  vO = () => "あなたのフレーム",
+  yO = () => "Twoje ramki",
+  wO = () => "Ваши кадры",
+  jO = () => "Ваші оправи",
+  zO = () => "Khung của bạn",
+  xQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? fV() : r === "pt" ? dV() : r === "ch" ? hV() : r === "de" ? mV() : r === "es" ? gV() : r === "fr" ? kV() : r === "it" ? bV() : r === "jp" ? vV() : r === "pl" ? yV() : r === "ru" ? wV() : r === "uk" ? jV() : zV()
+    return r === "en" ? fO() : r === "pt" ? dO() : r === "ch" ? hO() : r === "de" ? mO() : r === "es" ? gO() : r === "fr" ? kO() : r === "it" ? bO() : r === "jp" ? vO() : r === "pl" ? yO() : r === "ru" ? wO() : r === "uk" ? jO() : zO()
   },
-  xV = () => "Your frames",
-  qV = () => "Suas molduras",
-  SV = () => "您的帧",
-  PV = () => "Ihre Rahmen",
-  CV = () => "Tus marcos",
-  NV = () => "Vos montures",
-  AV = () => "Le tue cornici",
-  DV = () => "あなたのフレーム",
-  TV = () => "Twoje ramki",
-  MV = () => "Ваши кадры",
-  EV = () => "Ваші оправи",
-  BV = () => "Khung của bạn",
-  d5 = (n = {}, e = {}) => {
+  xO = () => "No frame in your profile",
+  qO = () => "Sem moldura no seu perfil",
+  SO = () => "您的个人资料中没有相框",
+  PO = () => "Kein Rahmen in deinem Profil",
+  NO = () => "Sin marco en tu perfil",
+  CO = () => "Aucun cadre dans votre profil",
+  AO = () => "Nessuna cornice nel tuo profilo",
+  DO = () => "プロフィールにフレームがありません",
+  TO = () => "Brak ramki w Twoim profilu",
+  MO = () => "Нет рамки в вашем профиле",
+  EO = () => "У вашому профілі немає рамки",
+  BO = () => "Không có khung hình trong hồ sơ của bạn",
+  qQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? xV() : r === "pt" ? qV() : r === "ch" ? SV() : r === "de" ? PV() : r === "es" ? CV() : r === "fr" ? NV() : r === "it" ? AV() : r === "jp" ? DV() : r === "pl" ? TV() : r === "ru" ? MV() : r === "uk" ? EV() : BV()
+    return r === "en" ? xO() : r === "pt" ? qO() : r === "ch" ? SO() : r === "de" ? PO() : r === "es" ? NO() : r === "fr" ? CO() : r === "it" ? AO() : r === "jp" ? DO() : r === "pl" ? TO() : r === "ru" ? MO() : r === "uk" ? EO() : BO()
   },
-  IV = () => "No frame in your profile",
-  RV = () => "Sem moldura no seu perfil",
-  KV = () => "您的个人资料中没有相框",
-  LV = () => "Kein Rahmen in deinem Profil",
-  WV = () => "Sin marco en tu perfil",
-  $V = () => "Aucun cadre dans votre profil",
-  OV = () => "Nessuna cornice nel tuo profilo",
-  VV = () => "プロフィールにフレームがありません",
-  UV = () => "Brak ramki w Twoim profilu",
-  HV = () => "Нет рамки в вашем профиле",
-  FV = () => "У вашому профілі немає рамки",
-  ZV = () => "Không có khung hình trong hồ sơ của bạn",
-  h5 = (n = {}, e = {}) => {
+  IO = () => "Selected",
+  RO = () => "Selecionado",
+  KO = () => "已选中",
+  LO = () => "Ausgewählt",
+  WO = () => "Seleccionado",
+  $O = () => "Sélectionné",
+  VO = () => "Selezionato",
+  OO = () => "選択済み",
+  UO = () => "Wybrano",
+  HO = () => "Выбрано",
+  FO = () => "Вибрано",
+  ZO = () => "Đã chọn",
+  SQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? IV() : r === "pt" ? RV() : r === "ch" ? KV() : r === "de" ? LV() : r === "es" ? WV() : r === "fr" ? $V() : r === "it" ? OV() : r === "jp" ? VV() : r === "pl" ? UV() : r === "ru" ? HV() : r === "uk" ? FV() : ZV()
+    return r === "en" ? IO() : r === "pt" ? RO() : r === "ch" ? KO() : r === "de" ? LO() : r === "es" ? WO() : r === "fr" ? $O() : r === "it" ? VO() : r === "jp" ? OO() : r === "pl" ? UO() : r === "ru" ? HO() : r === "uk" ? FO() : ZO()
   },
-  GV = () => "Selected",
-  QV = () => "Selecionado",
-  YV = () => "已选中",
-  JV = () => "Ausgewählt",
-  XV = () => "Seleccionado",
-  r1 = () => "Sélectionné",
-  e1 = () => "Selezionato",
-  n1 = () => "選択済み",
-  t1 = () => "Wybrano",
-  o1 = () => "Выбрано",
-  u1 = () => "Вибрано",
-  i1 = () => "Đã chọn",
-  m5 = (n = {}, e = {}) => {
+  GO = () => "Frames store",
+  QO = () => "Moldura",
+  YO = () => "帧存储",
+  JO = () => "Rahmenspeicher",
+  XO = () => "Tienda de marcos",
+  r1 = () => "Magasin de cadres",
+  e1 = () => "Corniceria",
+  n1 = () => "フレームストア",
+  t1 = () => "Sklep z ramkami",
+  o1 = () => "Магазин рамок",
+  u1 = () => "Магазин рамок",
+  i1 = () => "Cửa hàng khung",
+  PQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? GV() : r === "pt" ? QV() : r === "ch" ? YV() : r === "de" ? JV() : r === "es" ? XV() : r === "fr" ? r1() : r === "it" ? e1() : r === "jp" ? n1() : r === "pl" ? t1() : r === "ru" ? o1() : r === "uk" ? u1() : i1()
+    return r === "en" ? GO() : r === "pt" ? QO() : r === "ch" ? YO() : r === "de" ? JO() : r === "es" ? XO() : r === "fr" ? r1() : r === "it" ? e1() : r === "jp" ? n1() : r === "pl" ? t1() : r === "ru" ? o1() : r === "uk" ? u1() : i1()
   },
-  s1 = () => "Frames store",
-  c1 = () => "Moldura",
-  a1 = () => "帧存储",
-  _1 = () => "Rahmenspeicher",
-  l1 = () => "Tienda de marcos",
-  p1 = () => "Magasin de cadres",
-  f1 = () => "Corniceria",
-  d1 = () => "フレームストア",
-  h1 = () => "Sklep z ramkami",
-  m1 = () => "Магазин рамок",
-  g1 = () => "Магазин рамок",
-  k1 = () => "Cửa hàng khung",
-  g5 = (n = {}, e = {}) => {
+  s1 = () => "None",
+  c1 = () => "Nenhum",
+  a1 = () => "无",
+  _1 = () => "Keine",
+  l1 = () => "Ninguno",
+  p1 = () => "Aucun",
+  f1 = () => "Nessuno",
+  d1 = () => "なし",
+  h1 = () => "Brak",
+  m1 = () => "Нет",
+  g1 = () => "Жодного",
+  k1 = () => "Không có",
+  NQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? s1() : r === "pt" ? c1() : r === "ch" ? a1() : r === "de" ? _1() : r === "es" ? l1() : r === "fr" ? p1() : r === "it" ? f1() : r === "jp" ? d1() : r === "pl" ? h1() : r === "ru" ? m1() : r === "uk" ? g1() : k1()
   },
-  b1 = () => "None",
-  v1 = () => "Nenhum",
-  y1 = () => "无",
-  w1 = () => "Keine",
-  j1 = () => "Ninguno",
-  z1 = () => "Aucun",
-  x1 = () => "Nessuno",
-  q1 = () => "なし",
-  S1 = () => "Brak",
-  P1 = () => "Нет",
-  C1 = () => "Жодного",
-  N1 = () => "Không có",
-  k5 = (n = {}, e = {}) => {
+  b1 = () => "No frame",
+  v1 = () => "Sem moldura",
+  y1 = () => "无边框",
+  w1 = () => "Kein Rahmen",
+  j1 = () => "Sin marco",
+  z1 = () => "Aucun cadre",
+  x1 = () => "Nessuna cornice",
+  q1 = () => "フレームなし",
+  S1 = () => "Brak ramki",
+  P1 = () => "Без рамки",
+  N1 = () => "Без рамки",
+  C1 = () => "Không khung",
+  CQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? b1() : r === "pt" ? v1() : r === "ch" ? y1() : r === "de" ? w1() : r === "es" ? j1() : r === "fr" ? z1() : r === "it" ? x1() : r === "jp" ? q1() : r === "pl" ? S1() : r === "ru" ? P1() : r === "uk" ? C1() : N1()
+    return r === "en" ? b1() : r === "pt" ? v1() : r === "ch" ? y1() : r === "de" ? w1() : r === "es" ? j1() : r === "fr" ? z1() : r === "it" ? x1() : r === "jp" ? q1() : r === "pl" ? S1() : r === "ru" ? P1() : r === "uk" ? N1() : C1()
   },
-  A1 = () => "No frame",
-  D1 = () => "Sem moldura",
-  T1 = () => "无边框",
-  M1 = () => "Kein Rahmen",
-  E1 = () => "Sin marco",
-  B1 = () => "Aucun cadre",
-  I1 = () => "Nessuna cornice",
-  R1 = () => "フレームなし",
-  K1 = () => "Brak ramki",
-  L1 = () => "Без рамки",
-  W1 = () => "Без рамки",
-  $1 = () => "Không khung",
-  b5 = (n = {}, e = {}) => {
+  A1 = () => "Styles",
+  D1 = () => "Estilos",
+  T1 = () => "样式",
+  M1 = () => "Stile",
+  E1 = () => "Estilos",
+  B1 = () => "Styles",
+  I1 = () => "Stili",
+  R1 = () => "スタイル",
+  K1 = () => "Style",
+  L1 = () => "Стили",
+  W1 = () => "Стилі",
+  $1 = () => "Kiểu",
+  AQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? A1() : r === "pt" ? D1() : r === "ch" ? T1() : r === "de" ? M1() : r === "es" ? E1() : r === "fr" ? B1() : r === "it" ? I1() : r === "jp" ? R1() : r === "pl" ? K1() : r === "ru" ? L1() : r === "uk" ? W1() : $1()
   },
-  O1 = () => "Styles",
-  V1 = () => "Estilos",
-  U1 = () => "样式",
-  H1 = () => "Stile",
-  F1 = () => "Estilos",
-  Z1 = () => "Styles",
-  G1 = () => "Stili",
-  Q1 = () => "スタイル",
-  Y1 = () => "Style",
-  J1 = () => "Стили",
-  X1 = () => "Стилі",
-  rU = () => "Kiểu",
-  v5 = (n = {}, e = {}) => {
+  V1 = () => "Fonts",
+  O1 = () => "Fontes",
+  U1 = () => "字体",
+  H1 = () => "Schriftarten",
+  F1 = () => "Fuentes",
+  Z1 = () => "Polices",
+  G1 = () => "Caratteri",
+  Q1 = () => "フォント",
+  Y1 = () => "Czcionki",
+  J1 = () => "Шрифты",
+  X1 = () => "Шрифти",
+  rU = () => "Phông chữ",
+  DQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? O1() : r === "pt" ? V1() : r === "ch" ? U1() : r === "de" ? H1() : r === "es" ? F1() : r === "fr" ? Z1() : r === "it" ? G1() : r === "jp" ? Q1() : r === "pl" ? Y1() : r === "ru" ? J1() : r === "uk" ? X1() : rU()
+    return r === "en" ? V1() : r === "pt" ? O1() : r === "ch" ? U1() : r === "de" ? H1() : r === "es" ? F1() : r === "fr" ? Z1() : r === "it" ? G1() : r === "jp" ? Q1() : r === "pl" ? Y1() : r === "ru" ? J1() : r === "uk" ? X1() : rU()
   },
-  eU = () => "Fonts",
-  nU = () => "Fontes",
-  tU = () => "字体",
-  oU = () => "Schriftarten",
-  uU = () => "Fuentes",
-  iU = () => "Polices",
-  sU = () => "Caratteri",
-  cU = () => "フォント",
-  aU = () => "Czcionki",
-  _U = () => "Шрифты",
-  lU = () => "Шрифти",
-  pU = () => "Phông chữ",
-  y5 = (n = {}, e = {}) => {
+  eU = () => "Text Styles",
+  nU = () => "Estilos de Texto",
+  tU = () => "文本样式",
+  oU = () => "Textstile",
+  uU = () => "Estilos de texto",
+  iU = () => "Styles de texte",
+  sU = () => "Stili di testo",
+  cU = () => "テキストスタイル",
+  aU = () => "Style tekstu",
+  _U = () => "Стили текста",
+  lU = () => "Текстові стилі",
+  pU = () => "Kiểu văn bản",
+  TQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? eU() : r === "pt" ? nU() : r === "ch" ? tU() : r === "de" ? oU() : r === "es" ? uU() : r === "fr" ? iU() : r === "it" ? sU() : r === "jp" ? cU() : r === "pl" ? aU() : r === "ru" ? _U() : r === "uk" ? lU() : pU()
   },
-  fU = () => "Text Styles",
-  dU = () => "Estilos de Texto",
-  hU = () => "文本样式",
-  mU = () => "Textstile",
-  gU = () => "Estilos de texto",
-  kU = () => "Styles de texte",
-  bU = () => "Stili di testo",
-  vU = () => "テキストスタイル",
-  yU = () => "Style tekstu",
-  wU = () => "Стили текста",
-  jU = () => "Текстові стилі",
-  zU = () => "Kiểu văn bản",
-  w5 = (n = {}, e = {}) => {
+  fU = () => "No styles available",
+  dU = () => "Nenhum estilo disponível",
+  hU = () => "没有可用样式",
+  mU = () => "Keine Stile verfügbar",
+  gU = () => "No hay estilos disponibles",
+  kU = () => "Aucun style disponible",
+  bU = () => "Nessuno stile disponibile",
+  vU = () => "スタイルはありません",
+  yU = () => "Brak dostępnych stylów",
+  wU = () => "Нет доступных стилей",
+  jU = () => "Немає доступних стилів",
+  zU = () => "Không có kiểu nào khả dụng",
+  MQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fU() : r === "pt" ? dU() : r === "ch" ? hU() : r === "de" ? mU() : r === "es" ? gU() : r === "fr" ? kU() : r === "it" ? bU() : r === "jp" ? vU() : r === "pl" ? yU() : r === "ru" ? wU() : r === "uk" ? jU() : zU()
   },
-  xU = () => "No styles available",
-  qU = () => "Nenhum estilo disponível",
-  SU = () => "没有可用样式",
-  PU = () => "Keine Stile verfügbar",
-  CU = () => "No hay estilos disponibles",
-  NU = () => "Aucun style disponible",
-  AU = () => "Nessuno stile disponibile",
-  DU = () => "スタイルはありません",
-  TU = () => "Brak dostępnych stylów",
-  MU = () => "Нет доступных стилей",
-  EU = () => "Немає доступних стилів",
-  BU = () => "Không có kiểu nào khả dụng",
-  j5 = (n = {}, e = {}) => {
+  xU = () => "Wayback Tool",
+  qU = () => "Ferramenta Wayback",
+  SU = () => "Wayback 工具",
+  PU = () => "Wayback-Werkzeug",
+  NU = () => "Herramienta Wayback",
+  CU = () => "Outil Wayback",
+  AU = () => "Strumento Wayback",
+  DU = () => "Wayback ツール",
+  TU = () => "Narzędzie Wayback",
+  MU = () => "Инструмент Wayback",
+  EU = () => "Інструмент Wayback",
+  BU = () => "Công cụ Wayback",
+  EQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? xU() : r === "pt" ? qU() : r === "ch" ? SU() : r === "de" ? PU() : r === "es" ? CU() : r === "fr" ? NU() : r === "it" ? AU() : r === "jp" ? DU() : r === "pl" ? TU() : r === "ru" ? MU() : r === "uk" ? EU() : BU()
+    return r === "en" ? xU() : r === "pt" ? qU() : r === "ch" ? SU() : r === "de" ? PU() : r === "es" ? NU() : r === "fr" ? CU() : r === "it" ? AU() : r === "jp" ? DU() : r === "pl" ? TU() : r === "ru" ? MU() : r === "uk" ? EU() : BU()
   },
-  IU = () => "Wayback Tool",
-  RU = () => "Ferramenta Wayback",
-  KU = () => "Wayback 工具",
-  LU = () => "Wayback-Werkzeug",
-  WU = () => "Herramienta Wayback",
-  $U = () => "Outil Wayback",
-  OU = () => "Strumento Wayback",
-  VU = () => "Wayback ツール",
-  UU = () => "Narzędzie Wayback",
-  HU = () => "Инструмент Wayback",
-  FU = () => "Інструмент Wayback",
-  ZU = () => "Công cụ Wayback",
-  z5 = (n = {}, e = {}) => {
+  IU = () => "Badge equipped!",
+  RU = () => "Distintivo equipado!",
+  KU = () => "徽章已装备！",
+  LU = () => "Abzeichen ausgerüstet!",
+  WU = () => "¡Insignia equipada!",
+  $U = () => "Badge équipé !",
+  VU = () => "Distintivo equipaggiato!",
+  OU = () => "バッジを装備しました！",
+  UU = () => "Odznaka wyposażona!",
+  HU = () => "Значок экипирован!",
+  FU = () => "Значок одягнуто!",
+  ZU = () => "Huy hiệu đã trang bị!",
+  BQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? IU() : r === "pt" ? RU() : r === "ch" ? KU() : r === "de" ? LU() : r === "es" ? WU() : r === "fr" ? $U() : r === "it" ? OU() : r === "jp" ? VU() : r === "pl" ? UU() : r === "ru" ? HU() : r === "uk" ? FU() : ZU()
+    return r === "en" ? IU() : r === "pt" ? RU() : r === "ch" ? KU() : r === "de" ? LU() : r === "es" ? WU() : r === "fr" ? $U() : r === "it" ? VU() : r === "jp" ? OU() : r === "pl" ? UU() : r === "ru" ? HU() : r === "uk" ? FU() : ZU()
   },
-  GU = () => "Badge equipped!",
-  QU = () => "Distintivo equipado!",
-  YU = () => "徽章已装备！",
-  JU = () => "Abzeichen ausgerüstet!",
-  XU = () => "¡Insignia equipada!",
-  rH = () => "Badge équipé !",
-  eH = () => "Distintivo equipaggiato!",
-  nH = () => "バッジを装備しました！",
-  tH = () => "Odznaka wyposażona!",
-  oH = () => "Значок экипирован!",
-  uH = () => "Значок одягнуто!",
-  iH = () => "Huy hiệu đã trang bị!",
-  x5 = (n = {}, e = {}) => {
+  GU = () => "Error equipping badge. Try again later.",
+  QU = () => "Erro ao equipar o distintivo. Tente novamente mais tarde.",
+  YU = () => "装备徽章失败。请稍后重试。",
+  JU = () => "Fehler beim Ausrüsten des Abzeichens. Versuchen Sie es später erneut.",
+  XU = () => "Error al equipar la insignia. Inténtalo de nuevo más tarde.",
+  rH = () => "Erreur lors de l'équipement du badge. Veuillez réessayer plus tard.",
+  eH = () => "Errore nell'equipaggiamento del badge. Riprova più tardi.",
+  nH = () => "バッジの装備中にエラーが発生しました。後で再度お試しください。",
+  tH = () => "Błąd wyposażania odznaki. Spróbuj ponownie później.",
+  oH = () => "Ошибка при установке значка. Повторите попытку позже.",
+  uH = () => "Помилка при екіпіруванні значка. Спробуйте пізніше.",
+  iH = () => "Lỗi khi trang bị huy hiệu. Vui lòng thử lại sau.",
+  IQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? GU() : r === "pt" ? QU() : r === "ch" ? YU() : r === "de" ? JU() : r === "es" ? XU() : r === "fr" ? rH() : r === "it" ? eH() : r === "jp" ? nH() : r === "pl" ? tH() : r === "ru" ? oH() : r === "uk" ? uH() : iH()
   },
-  sH = () => "Error equipping badge. Try again later.",
-  cH = () => "Erro ao equipar o distintivo. Tente novamente mais tarde.",
-  aH = () => "装备徽章失败。请稍后重试。",
-  _H = () => "Fehler beim Ausrüsten des Abzeichens. Versuchen Sie es später erneut.",
-  lH = () => "Error al equipar la insignia. Inténtalo de nuevo más tarde.",
-  pH = () => "Erreur lors de l'équipement du badge. Veuillez réessayer plus tard.",
-  fH = () => "Errore nell'equipaggiamento del badge. Riprova più tardi.",
-  dH = () => "バッジの装備中にエラーが発生しました。後で再度お試しください。",
-  hH = () => "Błąd wyposażania odznaki. Spróbuj ponownie później.",
-  mH = () => "Ошибка при установке значка. Повторите попытку позже.",
-  gH = () => "Помилка при екіпіруванні значка. Спробуйте пізніше.",
-  kH = () => "Lỗi khi trang bị huy hiệu. Vui lòng thử lại sau.",
-  q5 = (n = {}, e = {}) => {
+  sH = () => "Badge Inventory",
+  cH = () => "Inventário de Distintivos",
+  aH = () => "徽章库存",
+  _H = () => "Abzeicheninventar",
+  lH = () => "Inventario de insignias",
+  pH = () => "Inventaire des badges",
+  fH = () => "Inventario badge",
+  dH = () => "バッジインベントリ",
+  hH = () => "Ekwipunek Odznak",
+  mH = () => "Инвентарь значков",
+  gH = () => "Інвентар значків",
+  kH = () => "Kho huy hiệu",
+  RQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sH() : r === "pt" ? cH() : r === "ch" ? aH() : r === "de" ? _H() : r === "es" ? lH() : r === "fr" ? pH() : r === "it" ? fH() : r === "jp" ? dH() : r === "pl" ? hH() : r === "ru" ? mH() : r === "uk" ? gH() : kH()
   },
-  bH = () => "Badge Inventory",
-  vH = () => "Inventário de Distintivos",
-  yH = () => "徽章库存",
-  wH = () => "Abzeicheninventar",
-  jH = () => "Inventario de insignias",
-  zH = () => "Inventaire des badges",
-  xH = () => "Inventario badge",
-  qH = () => "バッジインベントリ",
-  SH = () => "Ekwipunek Odznak",
-  PH = () => "Инвентарь значков",
-  CH = () => "Інвентар значків",
-  NH = () => "Kho huy hiệu",
-  S5 = (n = {}, e = {}) => {
+  bH = () => "Choose a badge for this slot",
+  vH = () => "Escolha um distintivo para este espaço",
+  yH = () => "为此槽位选择一个徽章",
+  wH = () => "Wählen Sie ein Abzeichen für diesen Steckplatz",
+  jH = () => "Elige una insignia para esta ranura",
+  zH = () => "Choisissez un badge pour cet emplacement",
+  xH = () => "Scegli un badge per questo slot",
+  qH = () => "このスロットのバッジを選択してください",
+  SH = () => "Wybierz odznakę dla tego slotu",
+  PH = () => "Выберите значок для этого слота",
+  NH = () => "Оберіть значок для цього слота",
+  CH = () => "Chọn huy hiệu cho ô này",
+  KQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? bH() : r === "pt" ? vH() : r === "ch" ? yH() : r === "de" ? wH() : r === "es" ? jH() : r === "fr" ? zH() : r === "it" ? xH() : r === "jp" ? qH() : r === "pl" ? SH() : r === "ru" ? PH() : r === "uk" ? CH() : NH()
+    return r === "en" ? bH() : r === "pt" ? vH() : r === "ch" ? yH() : r === "de" ? wH() : r === "es" ? jH() : r === "fr" ? zH() : r === "it" ? xH() : r === "jp" ? qH() : r === "pl" ? SH() : r === "ru" ? PH() : r === "uk" ? NH() : CH()
   },
-  AH = () => "Choose a badge for this slot",
-  DH = () => "Escolha um distintivo para este espaço",
-  TH = () => "为此槽位选择一个徽章",
-  MH = () => "Wählen Sie ein Abzeichen für diesen Steckplatz",
-  EH = () => "Elige una insignia para esta ranura",
-  BH = () => "Choisissez un badge pour cet emplacement",
-  IH = () => "Scegli un badge per questo slot",
-  RH = () => "このスロットのバッジを選択してください",
-  KH = () => "Wybierz odznakę dla tego slotu",
-  LH = () => "Выберите значок для этого слота",
-  WH = () => "Оберіть значок для цього слота",
-  $H = () => "Chọn huy hiệu cho ô này",
-  P5 = (n = {}, e = {}) => {
+  AH = () => "Your badges",
+  DH = () => "Seus distintivos",
+  TH = () => "您的徽章",
+  MH = () => "Deine Abzeichen",
+  EH = () => "Tus insignias",
+  BH = () => "Vos badges",
+  IH = () => "I tuoi badge",
+  RH = () => "あなたのバッジ",
+  KH = () => "Twoje odznaki",
+  LH = () => "Ваши значки",
+  WH = () => "Ваші значки",
+  $H = () => "Huy hiệu của bạn",
+  LQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? AH() : r === "pt" ? DH() : r === "ch" ? TH() : r === "de" ? MH() : r === "es" ? EH() : r === "fr" ? BH() : r === "it" ? IH() : r === "jp" ? RH() : r === "pl" ? KH() : r === "ru" ? LH() : r === "uk" ? WH() : $H()
   },
-  OH = () => "Your badges",
-  VH = () => "Seus distintivos",
-  UH = () => "您的徽章",
-  HH = () => "Deine Abzeichen",
-  FH = () => "Tus insignias",
-  ZH = () => "Vos badges",
-  GH = () => "I tuoi badge",
-  QH = () => "あなたのバッジ",
-  YH = () => "Twoje odznaki",
-  JH = () => "Ваши значки",
-  XH = () => "Ваші значки",
-  rF = () => "Huy hiệu của bạn",
-  C5 = (n = {}, e = {}) => {
+  VH = () => "No badge in this slot",
+  OH = () => "Nenhum emblema neste slot",
+  UH = () => "此卡槽中没有徽章",
+  HH = () => "Kein Abzeichen in diesem Steckplatz",
+  FH = () => "No hay insignia en esta ranura",
+  ZH = () => "Aucun badge dans cet emplacement",
+  GH = () => "Nessun badge in questo slot",
+  QH = () => "このスロットにはバッジがありません",
+  YH = () => "Brak odznaki w tym slocie",
+  JH = () => "Нет значка в этом слоте",
+  XH = () => "У цьому слоті немає значка",
+  rF = () => "Không có huy hiệu trong ô này",
+  WQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? OH() : r === "pt" ? VH() : r === "ch" ? UH() : r === "de" ? HH() : r === "es" ? FH() : r === "fr" ? ZH() : r === "it" ? GH() : r === "jp" ? QH() : r === "pl" ? YH() : r === "ru" ? JH() : r === "uk" ? XH() : rF()
+    return r === "en" ? VH() : r === "pt" ? OH() : r === "ch" ? UH() : r === "de" ? HH() : r === "es" ? FH() : r === "fr" ? ZH() : r === "it" ? GH() : r === "jp" ? QH() : r === "pl" ? YH() : r === "ru" ? JH() : r === "uk" ? XH() : rF()
   },
-  eF = () => "No badge in this slot",
-  nF = () => "Nenhum emblema neste slot",
-  tF = () => "此卡槽中没有徽章",
-  oF = () => "Kein Abzeichen in diesem Steckplatz",
-  uF = () => "No hay insignia en esta ranura",
-  iF = () => "Aucun badge dans cet emplacement",
-  sF = () => "Nessun badge in questo slot",
-  cF = () => "このスロットにはバッジがありません",
-  aF = () => "Brak odznaki w tym slocie",
-  _F = () => "Нет значка в этом слоте",
-  lF = () => "У цьому слоті немає значка",
-  pF = () => "Không có huy hiệu trong ô này",
-  N5 = (n = {}, e = {}) => {
+  eF = () => "No badge selected",
+  nF = () => "Nenhum emblema selecionado",
+  tF = () => "未选择徽章",
+  oF = () => "Kein Abzeichen ausgewählt",
+  uF = () => "Ninguna insignia seleccionada",
+  iF = () => "Aucun badge sélectionné",
+  sF = () => "Nessun badge selezionato",
+  cF = () => "バッジが選択されていません",
+  aF = () => "Nie wybrano odznaki",
+  _F = () => "Значок не выбран",
+  lF = () => "Значок не вибрано",
+  pF = () => "Chưa chọn huy hiệu",
+  $Q = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? eF() : r === "pt" ? nF() : r === "ch" ? tF() : r === "de" ? oF() : r === "es" ? uF() : r === "fr" ? iF() : r === "it" ? sF() : r === "jp" ? cF() : r === "pl" ? aF() : r === "ru" ? _F() : r === "uk" ? lF() : pF()
   },
-  fF = () => "No badge selected",
-  dF = () => "Nenhum emblema selecionado",
-  hF = () => "未选择徽章",
-  mF = () => "Kein Abzeichen ausgewählt",
-  gF = () => "Ninguna insignia seleccionada",
-  kF = () => "Aucun badge sélectionné",
-  bF = () => "Nessun badge selezionato",
-  vF = () => "バッジが選択されていません",
-  yF = () => "Nie wybrano odznaki",
-  wF = () => "Значок не выбран",
-  jF = () => "Значок не вибрано",
-  zF = () => "Chưa chọn huy hiệu",
-  A5 = (n = {}, e = {}) => {
+  fF = () => "Equipped slots:",
+  dF = () => "Slots equipados:",
+  hF = () => "已装备槽位:",
+  mF = () => "Ausgerüstete Plätze:",
+  gF = () => "Espacios equipados:",
+  kF = () => "Emplacements équipés :",
+  bF = () => "Slot equipaggiati:",
+  vF = () => "装備スロット:",
+  yF = () => "Wyposażone miejsca:",
+  wF = () => "Занятые слоты:",
+  jF = () => "Обладнані слоти:",
+  zF = () => "Ô đã trang bị:",
+  VQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fF() : r === "pt" ? dF() : r === "ch" ? hF() : r === "de" ? mF() : r === "es" ? gF() : r === "fr" ? kF() : r === "it" ? bF() : r === "jp" ? vF() : r === "pl" ? yF() : r === "ru" ? wF() : r === "uk" ? jF() : zF()
   },
-  xF = () => "Equipped slots:",
-  qF = () => "Slots equipados:",
-  SF = () => "已装备槽位:",
-  PF = () => "Ausgerüstete Plätze:",
-  CF = () => "Espacios equipados:",
-  NF = () => "Emplacements équipés :",
-  AF = () => "Slot equipaggiati:",
-  DF = () => "装備スロット:",
-  TF = () => "Wyposażone miejsca:",
-  MF = () => "Занятые слоты:",
-  EF = () => "Обладнані слоти:",
-  BF = () => "Ô đã trang bị:",
-  D5 = (n = {}, e = {}) => {
+  xF = () => "You can only appeal once per punishment",
+  qF = () => "Você só pode apelar uma vez por punição",
+  SF = () => "您只能对每次处罚上诉一次。",
+  PF = () => "Sie können nur einmal pro Bestrafung Berufung einlegen.",
+  NF = () => "Solo puedes apelar una vez por sanción",
+  CF = () => "Vous ne pouvez faire appel qu'une seule fois par sanction.",
+  AF = () => "Puoi appellare solo una volta per punizione",
+  DF = () => "罰則につき、異議申し立ては一度しかできません。",
+  TF = () => "Możesz odwołać się tylko raz od każdej kary",
+  MF = () => "Вы можете подать апелляцию только один раз за каждое наказание",
+  EF = () => "Ви можете подати апеляцію лише один раз за покарання.",
+  BF = () => "Bạn chỉ có thể kháng cáo một lần cho mỗi hình phạt.",
+  OQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? xF() : r === "pt" ? qF() : r === "ch" ? SF() : r === "de" ? PF() : r === "es" ? CF() : r === "fr" ? NF() : r === "it" ? AF() : r === "jp" ? DF() : r === "pl" ? TF() : r === "ru" ? MF() : r === "uk" ? EF() : BF()
+    return r === "en" ? xF() : r === "pt" ? qF() : r === "ch" ? SF() : r === "de" ? PF() : r === "es" ? NF() : r === "fr" ? CF() : r === "it" ? AF() : r === "jp" ? DF() : r === "pl" ? TF() : r === "ru" ? MF() : r === "uk" ? EF() : BF()
   },
-  IF = () => "You can only appeal once per punishment",
-  RF = () => "Você só pode apelar uma vez por punição",
-  KF = () => "您只能对每次处罚上诉一次。",
-  LF = () => "Sie können nur einmal pro Bestrafung Berufung einlegen.",
-  WF = () => "Solo puedes apelar una vez por sanción",
-  $F = () => "Vous ne pouvez faire appel qu'une seule fois par sanction.",
-  OF = () => "Puoi appellare solo una volta per punizione",
-  VF = () => "罰則につき、異議申し立ては一度しかできません。",
-  UF = () => "Możesz odwołać się tylko raz od każdej kary",
-  HF = () => "Вы можете подать апелляцию только один раз за каждое наказание",
-  FF = () => "Ви можете подати апеляцію лише один раз за покарання.",
-  ZF = () => "Bạn chỉ có thể kháng cáo một lần cho mỗi hình phạt.",
-  T5 = (n = {}, e = {}) => {
+  IF = () => "Appeal feedback",
+  RF = () => "Feedback de apelo",
+  KF = () => "上诉反馈",
+  LF = () => "Rückmeldung zum Einspruch",
+  WF = () => "Retroalimentación de apelación",
+  $F = () => "Retour d'information sur l'appel",
+  VF = () => "Feedback d'appello",
+  OF = () => "異議申し立てのフィードバック",
+  UF = () => "Informacja zwrotna dotycząca odwołania",
+  HF = () => "Обратная связь по апелляции",
+  FF = () => "Відгук щодо апеляції",
+  ZF = () => "Phản hồi về khiếu nại",
+  UQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? IF() : r === "pt" ? RF() : r === "ch" ? KF() : r === "de" ? LF() : r === "es" ? WF() : r === "fr" ? $F() : r === "it" ? OF() : r === "jp" ? VF() : r === "pl" ? UF() : r === "ru" ? HF() : r === "uk" ? FF() : ZF()
+    return r === "en" ? IF() : r === "pt" ? RF() : r === "ch" ? KF() : r === "de" ? LF() : r === "es" ? WF() : r === "fr" ? $F() : r === "it" ? VF() : r === "jp" ? OF() : r === "pl" ? UF() : r === "ru" ? HF() : r === "uk" ? FF() : ZF()
   },
-  GF = () => "Appeal feedback",
-  QF = () => "Feedback de apelo",
-  YF = () => "上诉反馈",
-  JF = () => "Rückmeldung zum Einspruch",
-  XF = () => "Retroalimentación de apelación",
-  rZ = () => "Retour d'information sur l'appel",
-  eZ = () => "Feedback d'appello",
-  nZ = () => "異議申し立てのフィードバック",
-  tZ = () => "Informacja zwrotna dotycząca odwołania",
-  oZ = () => "Обратная связь по апелляции",
-  uZ = () => "Відгук щодо апеляції",
-  iZ = () => "Phản hồi về khiếu nại",
-  M5 = (n = {}, e = {}) => {
+  GF = () => "Your appeal was reviewed by the moderation team and approved. The applied sanction was reversed.",
+  QF = () => "Sua apelação foi revisada pela equipe de moderação e aprovada. A sanção aplicada foi revertida.",
+  YF = () => "您的申诉已由审核团队审查并批准。所施加的处罚已被撤销。",
+  JF = () => "Ihr Einspruch wurde vom Moderationsteam geprüft und genehmigt. Die verhängte Sanktion wurde aufgehoben.",
+  XF = () => "Su apelación fue revisada por el equipo de moderación y aprobada. La sanción aplicada fue revertida.",
+  r2 = () => "Votre appel a été examiné par l'équipe de modération et approuvé. La sanction appliquée a été annulée.",
+  e2 = () => "Il tuo ricorso è stato esaminato dal team di moderazione e approvato. La sanzione applicata è stata revocata.",
+  n2 = () => "お客様の異議申し立てはモデレーションチームによって審査され、承認されました。適用された制裁は撤回されました。",
+  t2 = () => "Twoja apelacja została rozpatrzona przez zespół moderacji i zatwierdzona. Nałożona sankcja została anulowana.",
+  o2 = () => "Ваша апелляция была рассмотрена командой модерации и одобрена. Примененная санкция была отменена.",
+  u2 = () => "Ваша апеляція була розглянута командою модерації та схвалена. Застосована санкція була скасована.",
+  i2 = () => "Khiếu nại của bạn đã được đội ngũ kiểm duyệt xem xét và chấp thuận. Biện pháp trừng phạt đã áp dụng đã được gỡ bỏ.",
+  HQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? GF() : r === "pt" ? QF() : r === "ch" ? YF() : r === "de" ? JF() : r === "es" ? XF() : r === "fr" ? rZ() : r === "it" ? eZ() : r === "jp" ? nZ() : r === "pl" ? tZ() : r === "ru" ? oZ() : r === "uk" ? uZ() : iZ()
+    return r === "en" ? GF() : r === "pt" ? QF() : r === "ch" ? YF() : r === "de" ? JF() : r === "es" ? XF() : r === "fr" ? r2() : r === "it" ? e2() : r === "jp" ? n2() : r === "pl" ? t2() : r === "ru" ? o2() : r === "uk" ? u2() : i2()
   },
-  sZ = () => "Your appeal was reviewed by the moderation team and approved. The applied sanction was reversed.",
-  cZ = () => "Sua apelação foi revisada pela equipe de moderação e aprovada. A sanção aplicada foi revertida.",
-  aZ = () => "您的申诉已由审核团队审查并批准。所施加的处罚已被撤销。",
-  _Z = () => "Ihr Einspruch wurde vom Moderationsteam geprüft und genehmigt. Die verhängte Sanktion wurde aufgehoben.",
-  lZ = () => "Su apelación fue revisada por el equipo de moderación y aprobada. La sanción aplicada fue revertida.",
-  pZ = () => "Votre appel a été examiné par l'équipe de modération et approuvé. La sanction appliquée a été annulée.",
-  fZ = () => "Il tuo ricorso è stato esaminato dal team di moderazione e approvato. La sanzione applicata è stata revocata.",
-  dZ = () => "お客様の異議申し立てはモデレーションチームによって審査され、承認されました。適用された制裁は撤回されました。",
-  hZ = () => "Twoja apelacja została rozpatrzona przez zespół moderacji i zatwierdzona. Nałożona sankcja została anulowana.",
-  mZ = () => "Ваша апелляция была рассмотрена командой модерации и одобрена. Примененная санкция была отменена.",
-  gZ = () => "Ваша апеляція була розглянута командою модерації та схвалена. Застосована санкція була скасована.",
-  kZ = () => "Khiếu nại của bạn đã được đội ngũ kiểm duyệt xem xét và chấp thuận. Biện pháp trừng phạt đã áp dụng đã được gỡ bỏ.",
-  E5 = (n = {}, e = {}) => {
+  s2 = () => "Your appeal was reviewed by the moderation team and the decision was upheld.",
+  c2 = () => "Sua apelação foi revisada pela equipe de moderação e a decisao foi mantida.",
+  a2 = () => "您的申诉已由审核团队审核，并维持原判。",
+  _2 = () => "Ihr Einspruch wurde vom Moderationsteam überprüft und die Entscheidung wurde beibehalten.",
+  l2 = () => "Su apelación fue revisada por el equipo de moderación y la decisión fue confirmada.",
+  p2 = () => "Votre appel a été examiné par l'équipe de modération et la décision a été maintenue.",
+  f2 = () => "Il tuo appello è stato esaminato dal team di moderazione e la decisione è stata confermata.",
+  d2 = () => "あなたの異議申し立てはモデレーションチームによって審査され、決定は維持されました。",
+  h2 = () => "Twoja apelacja została rozpatrzona przez zespół moderacji i decyzja została podtrzymana.",
+  m2 = () => "Ваша апелляция была рассмотрена командой модерации, и решение было оставлено в силе.",
+  g2 = () => "Ваша апеляція була розглянута командою модераторів, і рішення було залишено в силі.",
+  k2 = () => "Đơn kháng nghị của bạn đã được đội ngũ kiểm duyệt xem xét và quyết định đã được giữ nguyên.",
+  FQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? sZ() : r === "pt" ? cZ() : r === "ch" ? aZ() : r === "de" ? _Z() : r === "es" ? lZ() : r === "fr" ? pZ() : r === "it" ? fZ() : r === "jp" ? dZ() : r === "pl" ? hZ() : r === "ru" ? mZ() : r === "uk" ? gZ() : kZ()
+    return r === "en" ? s2() : r === "pt" ? c2() : r === "ch" ? a2() : r === "de" ? _2() : r === "es" ? l2() : r === "fr" ? p2() : r === "it" ? f2() : r === "jp" ? d2() : r === "pl" ? h2() : r === "ru" ? m2() : r === "uk" ? g2() : k2()
   },
-  bZ = () => "Your appeal was reviewed by the moderation team and the decision was upheld.",
-  vZ = () => "Sua apelação foi revisada pela equipe de moderação e a decisao foi mantida.",
-  yZ = () => "您的申诉已由审核团队审核，并维持原判。",
-  wZ = () => "Ihr Einspruch wurde vom Moderationsteam überprüft und die Entscheidung wurde beibehalten.",
-  jZ = () => "Su apelación fue revisada por el equipo de moderación y la decisión fue confirmada.",
-  zZ = () => "Votre appel a été examiné par l'équipe de modération et la décision a été maintenue.",
-  xZ = () => "Il tuo appello è stato esaminato dal team di moderazione e la decisione è stata confermata.",
-  qZ = () => "あなたの異議申し立てはモデレーションチームによって審査され、決定は維持されました。",
-  SZ = () => "Twoja apelacja została rozpatrzona przez zespół moderacji i decyzja została podtrzymana.",
-  PZ = () => "Ваша апелляция была рассмотрена командой модерации, и решение было оставлено в силе.",
-  CZ = () => "Ваша апеляція була розглянута командою модераторів, і рішення було залишено в силі.",
-  NZ = () => "Đơn kháng nghị của bạn đã được đội ngũ kiểm duyệt xem xét và quyết định đã được giữ nguyên.",
-  B5 = (n = {}, e = {}) => {
+  b2 = () => "Always remember to follow our code of conduct.",
+  v2 = () => "Lembre-se de sempre seguir o nosso código de conduta.",
+  y2 = () => "请始终遵守我们的行为准则。",
+  w2 = () => "Denken Sie immer daran, unseren Verhaltenskodex zu befolgen.",
+  j2 = () => "Recuerda siempre seguir nuestro código de conducta.",
+  z2 = () => "N'oubliez pas de toujours suivre notre code de conduite.",
+  x2 = () => "Ricorda di seguire sempre il nostro codice di condotta.",
+  q2 = () => "私たちの行動規範を常に守るようにしてください。",
+  S2 = () => "Zawsze pamiętaj o przestrzeganiu naszego kodeksu postępowania.",
+  P2 = () => "Всегда помните о соблюдении нашего кодекса поведения.",
+  N2 = () => "Пам'ятайте завжди дотримуватися нашого кодексу поведінки.",
+  C2 = () => "Hãy luôn nhớ tuân thủ quy tắc ứng xử của chúng tôi.",
+  ZQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? bZ() : r === "pt" ? vZ() : r === "ch" ? yZ() : r === "de" ? wZ() : r === "es" ? jZ() : r === "fr" ? zZ() : r === "it" ? xZ() : r === "jp" ? qZ() : r === "pl" ? SZ() : r === "ru" ? PZ() : r === "uk" ? CZ() : NZ()
+    return r === "en" ? b2() : r === "pt" ? v2() : r === "ch" ? y2() : r === "de" ? w2() : r === "es" ? j2() : r === "fr" ? z2() : r === "it" ? x2() : r === "jp" ? q2() : r === "pl" ? S2() : r === "ru" ? P2() : r === "uk" ? N2() : C2()
   },
-  AZ = () => "If you believe your suspension was a mistake, you can submit an appeal to have your punishment reviewed.<br><br>Each punishment allows only <b>1 appeal</b>. If you have already submitted an appeal for this punishment, you will not be able to submit another for the same case.<br><br>Submitting an appeal <b>does not guarantee that your suspension will be removed</b>; however, our team will review your situation again.<br><br>After the review, <b>you will receive a notification</b>.",
-  DZ = () => "Se você acredita que sua suspensão foi um erro, você pode enviar um apelo para que sua punição seja revisada.<br><br>Cada punição permite apenas <b>1 apelo</b>. Se você já enviou um apelo para esta punição, não será possível enviar outro para o mesmo caso.<br><br>Enviar um apelo <b>não garante que sua suspensão será removida</b>; no entanto, nossa equipe analisará sua situação novamente.<br><br>Após a revisão, <b>você receberá uma notificação</b>.",
-  TZ = () => "如果您认为您的禁令有误，您可以提交申诉以重新审核您的处罚。<br><br>每个处罚仅允许提交<b>1次申诉</b>。如果您已针对此处罚提交过申诉，则无法再次为同一案件提交申诉。<br><br>提交申诉<b>不能保证您的禁令会被移除</b>；但是，我们的团队将重新审查您的情况。<br><br>审核后，<b>您将收到通知</b>。",
-  MZ = () => "Wenn Sie glauben, dass Ihre Sperre ein Fehler war, können Sie Berufung einlegen, damit Ihre Strafe überprüft wird.<br><br>Jede Strafe erlaubt nur <b>1 Berufung</b>. Wenn Sie bereits Berufung für diese Strafe eingelegt haben, ist es nicht möglich, eine weitere für denselben Fall einzureichen.<br><br>Das Einreichen einer Berufung <b>garantiert nicht, dass Ihre Sperre aufgehoben wird</b>; unser Team wird Ihre Situation jedoch erneut prüfen.<br><br>Nach der Überprüfung <b>erhalten Sie eine Benachrichtigung</b>.",
-  EZ = () => "Si crees que tu suspensión fue un error, puedes enviar una apelación para que tu sanción sea revisada.<br><br>Cada sanción permite solo <b>1 apelación</b>. Si ya enviaste una apelación para esta sanción, no será posible enviar otra para el mismo caso.<br><br>Enviar una apelación <b>no garantiza que tu suspensión será eliminada</b>; sin embargo, nuestro equipo revisará tu situación nuevamente.<br><br>Después de la revisión, <b>recibirás una notificación</b>.",
-  BZ = () => "Si vous estimez que votre suspension était une erreur, vous pouvez soumettre un appel pour que votre sanction soit révisée.<br><br>Chaque sanction n'autorise qu'<b>un seul appel</b>. Si vous avez déjà soumis un appel pour cette sanction, il ne sera pas possible d'en soumettre un autre pour le même cas.<br><br>Soumettre un appel <b>ne garantit pas que votre suspension sera levée</b> ; cependant, notre équipe examinera à nouveau votre situation.<br><br>Après examen, <b>vous recevrez une notification</b>.",
-  IZ = () => "Se ritieni che la tua sospensione sia stata un errore, puoi inviare un ricorso affinché la tua punizione venga riesaminata.<br><br>Ogni punizione consente solo <b>1 ricorso</b>. Se hai già inviato un ricorso per questa punizione, non sarà possibile inviarne un altro per lo stesso caso.<br><br>L'invio di un ricorso <b>non garantisce che la tua sospensione verrà rimossa</b>; tuttavia, il nostro team esaminerà nuovamente la tua situazione.<br><br>Dopo la revisione, <b>riceverai una notifica</b>.",
-  RZ = () => "もしご自身の停止が誤りであるとお考えでしたら、異議申し立てを送信して、処罰の再審査を依頼できます。<br><br>各処罰につき、異議申し立ては<b>1回のみ</b>可能です。既にこの処罰に対して異議申し立てを送信されている場合、同じ案件で再度送信することはできません。<br><br>異議申し立てを送信しても、<b>停止が解除されることを保証するものではありません</b>。ただし、弊社のチームがお客様の状況を再審査いたします。<br><br>審査後、<b>お客様に通知が届きます</b>。",
-  KZ = () => "Jeśli uważasz, że Twoje zawieszenie było błędem, możesz wysłać odwołanie w celu ponownego rozpatrzenia kary.<br><br>Każda kara pozwala tylko na <b>1 odwołanie</b>. Jeśli już wysłałeś odwołanie dotyczące tej kary, nie będzie możliwe wysłanie kolejnego w tej samej sprawie.<br><br>Wysłanie odwołania <b>nie gwarantuje usunięcia Twojego zawieszenia</b>; jednakże nasz zespół ponownie przeanalizuje Twoją sytuację.<br><br>Po rozpatrzeniu, <b>otrzymasz powiadomienie</b>.",
-  LZ = () => "Если вы считаете, что ваше отстранение было ошибкой, вы можете подать апелляцию для пересмотра вашего наказания.<br><br>За каждое наказание допускается только <b>1 апелляция</b>. Если вы уже подавали апелляцию по этому наказанию, вы не сможете подать другую по тому же делу.<br><br>Подача апелляции <b>не гарантирует отмену вашего отстранения</b>; однако наша команда снова рассмотрит вашу ситуацию.<br><br>После рассмотрения <b>вы получите уведомление</b>.",
-  WZ = () => "Якщо ви вважаєте, що ваше блокування було помилковим, ви можете подати апеляцію для перегляду вашого покарання.<br><br>За кожне покарання дозволяється лише <b>1 апеляція</b>. Якщо ви вже подавали апеляцію щодо цього покарання, ви не зможете подати іншу для того ж випадку.<br><br>Подання апеляції <b>не гарантує скасування вашого блокування</b>; однак, наша команда знову розгляне вашу ситуацію.<br><br>Після перегляду <b>ви отримаєте сповіщення</b>.",
-  $Z = () => "Nếu bạn tin rằng việc đình chỉ của mình là một sai lầm, bạn có thể gửi một kháng nghị để hình phạt của bạn được xem xét lại.<br><br>Mỗi hình phạt chỉ cho phép <b>1 lần kháng nghị</b>. Nếu bạn đã gửi kháng nghị cho hình phạt này, bạn sẽ không thể gửi thêm một kháng nghị nào khác cho cùng trường hợp.<br><br>Việc gửi kháng nghị <b>không đảm bảo rằng lệnh đình chỉ của bạn sẽ bị xóa bỏ</b>; tuy nhiên, đội ngũ của chúng tôi sẽ xem xét lại tình hình của bạn.<br><br>Sau khi xem xét, <b>bạn sẽ nhận được một thông báo</b>.",
-  I5 = (n = {}, e = {}) => {
+  A2 = () => "If you believe your suspension was a mistake, you can submit an appeal to have your punishment reviewed.<br><br>Each punishment allows only <b>1 appeal</b>. If you have already submitted an appeal for this punishment, you will not be able to submit another for the same case.<br><br>Submitting an appeal <b>does not guarantee that your suspension will be removed</b>; however, our team will review your situation again.<br><br>After the review, <b>you will receive a notification</b>.",
+  D2 = () => "Se você acredita que sua suspensão foi um erro, você pode enviar um apelo para que sua punição seja revisada.<br><br>Cada punição permite apenas <b>1 apelo</b>. Se você já enviou um apelo para esta punição, não será possível enviar outro para o mesmo caso.<br><br>Enviar um apelo <b>não garante que sua suspensão será removida</b>; no entanto, nossa equipe analisará sua situação novamente.<br><br>Após a revisão, <b>você receberá uma notificação</b>.",
+  T2 = () => "如果您认为您的禁令有误，您可以提交申诉以重新审核您的处罚。<br><br>每个处罚仅允许提交<b>1次申诉</b>。如果您已针对此处罚提交过申诉，则无法再次为同一案件提交申诉。<br><br>提交申诉<b>不能保证您的禁令会被移除</b>；但是，我们的团队将重新审查您的情况。<br><br>审核后，<b>您将收到通知</b>。",
+  M2 = () => "Wenn Sie glauben, dass Ihre Sperre ein Fehler war, können Sie Berufung einlegen, damit Ihre Strafe überprüft wird.<br><br>Jede Strafe erlaubt nur <b>1 Berufung</b>. Wenn Sie bereits Berufung für diese Strafe eingelegt haben, ist es nicht möglich, eine weitere für denselben Fall einzureichen.<br><br>Das Einreichen einer Berufung <b>garantiert nicht, dass Ihre Sperre aufgehoben wird</b>; unser Team wird Ihre Situation jedoch erneut prüfen.<br><br>Nach der Überprüfung <b>erhalten Sie eine Benachrichtigung</b>.",
+  E2 = () => "Si crees que tu suspensión fue un error, puedes enviar una apelación para que tu sanción sea revisada.<br><br>Cada sanción permite solo <b>1 apelación</b>. Si ya enviaste una apelación para esta sanción, no será posible enviar otra para el mismo caso.<br><br>Enviar una apelación <b>no garantiza que tu suspensión será eliminada</b>; sin embargo, nuestro equipo revisará tu situación nuevamente.<br><br>Después de la revisión, <b>recibirás una notificación</b>.",
+  B2 = () => "Si vous estimez que votre suspension était une erreur, vous pouvez soumettre un appel pour que votre sanction soit révisée.<br><br>Chaque sanction n'autorise qu'<b>un seul appel</b>. Si vous avez déjà soumis un appel pour cette sanction, il ne sera pas possible d'en soumettre un autre pour le même cas.<br><br>Soumettre un appel <b>ne garantit pas que votre suspension sera levée</b> ; cependant, notre équipe examinera à nouveau votre situation.<br><br>Après examen, <b>vous recevrez une notification</b>.",
+  I2 = () => "Se ritieni che la tua sospensione sia stata un errore, puoi inviare un ricorso affinché la tua punizione venga riesaminata.<br><br>Ogni punizione consente solo <b>1 ricorso</b>. Se hai già inviato un ricorso per questa punizione, non sarà possibile inviarne un altro per lo stesso caso.<br><br>L'invio di un ricorso <b>non garantisce che la tua sospensione verrà rimossa</b>; tuttavia, il nostro team esaminerà nuovamente la tua situazione.<br><br>Dopo la revisione, <b>riceverai una notifica</b>.",
+  R2 = () => "もしご自身の停止が誤りであるとお考えでしたら、異議申し立てを送信して、処罰の再審査を依頼できます。<br><br>各処罰につき、異議申し立ては<b>1回のみ</b>可能です。既にこの処罰に対して異議申し立てを送信されている場合、同じ案件で再度送信することはできません。<br><br>異議申し立てを送信しても、<b>停止が解除されることを保証するものではありません</b>。ただし、弊社のチームがお客様の状況を再審査いたします。<br><br>審査後、<b>お客様に通知が届きます</b>。",
+  K2 = () => "Jeśli uważasz, że Twoje zawieszenie było błędem, możesz wysłać odwołanie w celu ponownego rozpatrzenia kary.<br><br>Każda kara pozwala tylko na <b>1 odwołanie</b>. Jeśli już wysłałeś odwołanie dotyczące tej kary, nie będzie możliwe wysłanie kolejnego w tej samej sprawie.<br><br>Wysłanie odwołania <b>nie gwarantuje usunięcia Twojego zawieszenia</b>; jednakże nasz zespół ponownie przeanalizuje Twoją sytuację.<br><br>Po rozpatrzeniu, <b>otrzymasz powiadomienie</b>.",
+  L2 = () => "Если вы считаете, что ваше отстранение было ошибкой, вы можете подать апелляцию для пересмотра вашего наказания.<br><br>За каждое наказание допускается только <b>1 апелляция</b>. Если вы уже подавали апелляцию по этому наказанию, вы не сможете подать другую по тому же делу.<br><br>Подача апелляции <b>не гарантирует отмену вашего отстранения</b>; однако наша команда снова рассмотрит вашу ситуацию.<br><br>После рассмотрения <b>вы получите уведомление</b>.",
+  W2 = () => "Якщо ви вважаєте, що ваше блокування було помилковим, ви можете подати апеляцію для перегляду вашого покарання.<br><br>За кожне покарання дозволяється лише <b>1 апеляція</b>. Якщо ви вже подавали апеляцію щодо цього покарання, ви не зможете подати іншу для того ж випадку.<br><br>Подання апеляції <b>не гарантує скасування вашого блокування</b>; однак, наша команда знову розгляне вашу ситуацію.<br><br>Після перегляду <b>ви отримаєте сповіщення</b>.",
+  $2 = () => "Nếu bạn tin rằng việc đình chỉ của mình là một sai lầm, bạn có thể gửi một kháng nghị để hình phạt của bạn được xem xét lại.<br><br>Mỗi hình phạt chỉ cho phép <b>1 lần kháng nghị</b>. Nếu bạn đã gửi kháng nghị cho hình phạt này, bạn sẽ không thể gửi thêm một kháng nghị nào khác cho cùng trường hợp.<br><br>Việc gửi kháng nghị <b>không đảm bảo rằng lệnh đình chỉ của bạn sẽ bị xóa bỏ</b>; tuy nhiên, đội ngũ của chúng tôi sẽ xem xét lại tình hình của bạn.<br><br>Sau khi xem xét, <b>bạn sẽ nhận được một thông báo</b>.",
+  GQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? AZ() : r === "pt" ? DZ() : r === "ch" ? TZ() : r === "de" ? MZ() : r === "es" ? EZ() : r === "fr" ? BZ() : r === "it" ? IZ() : r === "jp" ? RZ() : r === "pl" ? KZ() : r === "ru" ? LZ() : r === "uk" ? WZ() : $Z()
+    return r === "en" ? A2() : r === "pt" ? D2() : r === "ch" ? T2() : r === "de" ? M2() : r === "es" ? E2() : r === "fr" ? B2() : r === "it" ? I2() : r === "jp" ? R2() : r === "pl" ? K2() : r === "ru" ? L2() : r === "uk" ? W2() : $2()
   },
-  OZ = () => "Always remember to follow our code of conduct.",
-  VZ = () => "Lembre-se de sempre seguir o nosso código de conduta.",
-  UZ = () => "请始终遵守我们的行为准则。",
-  HZ = () => "Denken Sie immer daran, unseren Verhaltenskodex zu befolgen.",
-  FZ = () => "Recuerda siempre seguir nuestro código de conducta.",
-  ZZ = () => "N'oubliez pas de toujours suivre notre code de conduite.",
-  GZ = () => "Ricorda di seguire sempre il nostro codice di condotta.",
-  QZ = () => "私たちの行動規範を常に守るようにしてください。",
-  YZ = () => "Zawsze pamiętaj o przestrzeganiu naszego kodeksu postępowania.",
-  JZ = () => "Всегда помните о соблюдении нашего кодекса поведения.",
-  XZ = () => "Пам'ятайте завжди дотримуватися нашого кодексу поведінки.",
-  r2 = () => "Hãy luôn nhớ tuân thủ quy tắc ứng xử của chúng tôi.",
-  R5 = (n = {}, e = {}) => {
+  V2 = () => "Blocked",
+  O2 = () => "Bloqueado",
+  U2 = () => "已屏蔽",
+  H2 = () => "Blockiert",
+  F2 = () => "Bloqueado",
+  Z2 = () => "Bloqué",
+  G2 = () => "Bloccato",
+  Q2 = () => "ブロック済み",
+  Y2 = () => "Zablokowany",
+  J2 = () => "Заблокировано",
+  X2 = () => "Заблоковано",
+  rZ = () => "Bị chặn",
+  QQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? OZ() : r === "pt" ? VZ() : r === "ch" ? UZ() : r === "de" ? HZ() : r === "es" ? FZ() : r === "fr" ? ZZ() : r === "it" ? GZ() : r === "jp" ? QZ() : r === "pl" ? YZ() : r === "ru" ? JZ() : r === "uk" ? XZ() : r2()
+    return r === "en" ? V2() : r === "pt" ? O2() : r === "ch" ? U2() : r === "de" ? H2() : r === "es" ? F2() : r === "fr" ? Z2() : r === "it" ? G2() : r === "jp" ? Q2() : r === "pl" ? Y2() : r === "ru" ? J2() : r === "uk" ? X2() : rZ()
   },
-  e2 = () => "Owned",
-  n2 = () => "Possuído",
-  t2 = () => "拥有",
-  o2 = () => "Gehört",
-  u2 = () => "Propiedad",
-  i2 = () => "Possédé",
-  s2 = () => "Di proprietà",
-  c2 = () => "所有済み",
-  a2 = () => "Posiadany",
-  _2 = () => "Принадлежит",
-  l2 = () => "Належить",
-  p2 = () => "Đã sở hữu",
-  K5 = (n = {}, e = {}) => {
+  eZ = () => "Owned",
+  nZ = () => "Possuído",
+  tZ = () => "拥有",
+  oZ = () => "Gehört",
+  uZ = () => "Propiedad",
+  iZ = () => "Possédé",
+  sZ = () => "Di proprietà",
+  cZ = () => "所有済み",
+  aZ = () => "Posiadany",
+  _Z = () => "Принадлежит",
+  lZ = () => "Належить",
+  pZ = () => "Đã sở hữu",
+  YQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? e2() : r === "pt" ? n2() : r === "ch" ? t2() : r === "de" ? o2() : r === "es" ? u2() : r === "fr" ? i2() : r === "it" ? s2() : r === "jp" ? c2() : r === "pl" ? a2() : r === "ru" ? _2() : r === "uk" ? l2() : p2()
+    return r === "en" ? eZ() : r === "pt" ? nZ() : r === "ch" ? tZ() : r === "de" ? oZ() : r === "es" ? uZ() : r === "fr" ? iZ() : r === "it" ? sZ() : r === "jp" ? cZ() : r === "pl" ? aZ() : r === "ru" ? _Z() : r === "uk" ? lZ() : pZ()
   },
-  f2 = () => "Blocked",
-  d2 = () => "Bloqueado",
-  h2 = () => "已屏蔽",
-  m2 = () => "Blockiert",
-  g2 = () => "Bloqueado",
-  k2 = () => "Bloqué",
-  b2 = () => "Bloccato",
-  v2 = () => "ブロック済み",
-  y2 = () => "Zablokowany",
-  w2 = () => "Заблокировано",
-  j2 = () => "Заблоковано",
-  z2 = () => "Bị chặn",
-  L5 = (n = {}, e = {}) => {
+  fZ = () => "New",
+  dZ = () => "Novo",
+  hZ = () => "新",
+  mZ = () => "Neu",
+  gZ = () => "Nuevo",
+  kZ = () => "Nouveau",
+  bZ = () => "Nuovo",
+  vZ = () => "新規",
+  yZ = () => "Nowy",
+  wZ = () => "Новый",
+  jZ = () => "Новий",
+  zZ = () => "Mới",
+  JQ = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? f2() : r === "pt" ? d2() : r === "ch" ? h2() : r === "de" ? m2() : r === "es" ? g2() : r === "fr" ? k2() : r === "it" ? b2() : r === "jp" ? v2() : r === "pl" ? y2() : r === "ru" ? w2() : r === "uk" ? j2() : z2()
+    return r === "en" ? fZ() : r === "pt" ? dZ() : r === "ch" ? hZ() : r === "de" ? mZ() : r === "es" ? gZ() : r === "fr" ? kZ() : r === "it" ? bZ() : r === "jp" ? vZ() : r === "pl" ? yZ() : r === "ru" ? wZ() : r === "uk" ? jZ() : zZ()
+  },
+  xZ = () => "View all",
+  qZ = () => "Ver todos",
+  SZ = () => "查看全部",
+  PZ = () => "Alle anzeigen",
+  NZ = () => "Ver todos",
+  CZ = () => "Voir tous",
+  AZ = () => "Vedi tutti",
+  DZ = () => "すべて表示",
+  TZ = () => "Zobacz wszystkie",
+  MZ = () => "Посмотреть все",
+  EZ = () => "Переглянути всі",
+  BZ = () => "Xem tất cả",
+  XQ = (n = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? xZ() : r === "pt" ? qZ() : r === "ch" ? SZ() : r === "de" ? PZ() : r === "es" ? NZ() : r === "fr" ? CZ() : r === "it" ? AZ() : r === "jp" ? DZ() : r === "pl" ? TZ() : r === "ru" ? MZ() : r === "uk" ? EZ() : BZ()
   };
 export {
-  hG as $, V2 as A, P5 as B, f5 as C, U2 as D, H2 as E, F2 as F, Z2 as G, G2 as H, Q2 as I, Y2 as J, J2 as K, X2 as L, rG as M, eG as N, nG as O, tG as P, oG as Q, uG as R, iG as S, sG as T, cG as U, aG as V, _G as W, lG as X, pG as Y, fG as Z, dG as _, P2 as a, f0 as a$, mG as a0, gG as a1, D5 as a2, q5 as a3, kG as a4, bG as a5, vG as a6, yG as a7, wG as a8, c5 as a9, VG as aA, UG as aB, HG as aC, FG as aD, ZG as aE, GG as aF, QG as aG, YG as aH, JG as aI, XG as aJ, r0 as aK, e0 as aL, n0 as aM, t0 as aN, o0 as aO, u0 as aP, i0 as aQ, s0 as aR, c0 as aS, a0 as aT, N5 as aU, A5 as aV, _0 as aW, l0 as aX, p0 as aY, b5 as aZ, h5 as a_, jG as aa, y5 as ab, zG as ac, l5 as ad, p5 as ae, g5 as af, a5 as ag, xG as ah, qG as ai, SG as aj, PG as ak, CG as al, NG as am, AG as an, DG as ao, TG as ap, MG as aq, EG as ar, BG as as, IG as at, RG as au, KG as av, LG as aw, WG as ax, $G as ay, OG as az, C2 as b, g8 as b$, d0 as b0, h0 as b1, m0 as b2, g0 as b3, k0 as b4, b0 as b5, v0 as b6, y0 as b7, w0 as b8, j5 as b9, F0 as bA, Z0 as bB, G0 as bC, Q0 as bD, Y0 as bE, J0 as bF, X0 as bG, r8 as bH, e8 as bI, n8 as bJ, R5 as bK, t8 as bL, o8 as bM, u8 as bN, i8 as bO, s8 as bP, u5 as bQ, c8 as bR, a8 as bS, _8 as bT, l8 as bU, p8 as bV, m5 as bW, f8 as bX, d8 as bY, h8 as bZ, m8 as b_, j0 as ba, k5 as bb, z0 as bc, x0 as bd, q0 as be, S0 as bf, P0 as bg, C0 as bh, N0 as bi, A0 as bj, D0 as bk, T0 as bl, K5 as bm, M0 as bn, E0 as bo, B0 as bp, I0 as bq, R0 as br, K0 as bs, L0 as bt, W0 as bu, $0 as bv, O0 as bw, V0 as bx, U0 as by, H0 as bz, N2 as c, i5 as c0, s5 as c1, k8 as c2, b8 as c3, v8 as c4, y8 as c5, v5 as c6, w8 as c7, j8 as c8, z8 as c9, z5 as cA, Q8 as cB, Y8 as cC, J8 as cD, T5 as cE, X8 as cF, r5 as cG, e5 as cH, C5 as cI, d5 as cJ, n5 as cK, t5 as cL, o5 as cM, x8 as ca, w5 as cb, q8 as cc, S8 as cd, P8 as ce, C8 as cf, N8 as cg, A8 as ch, D8 as ci, T8 as cj, M8 as ck, E8 as cl, B8 as cm, I8 as cn, R8 as co, K8 as cp, L8 as cq, W8 as cr, $8 as cs, O8 as ct, V8 as cu, U8 as cv, H8 as cw, F8 as cx, Z8 as cy, G8 as cz, A2 as d, D2 as e, T2 as f, M2 as g, E2 as h, I5 as i, M5 as j, E5 as k, B5 as l, B2 as m, I2 as n, q2 as o, R2 as p, K2 as q, x5 as r, S2 as s, S5 as t, L2 as u, W2 as v, L5 as w, $2 as x, _5 as y, O2 as z
+  SG as $, nG as A, KQ as B, zQ as C, tG as D, oG as E, uG as F, iG as G, sG as H, cG as I, aG as J, _G as K, lG as L, pG as M, fG as N, dG as O, hG as P, mG as Q, gG as R, kG as S, bG as T, vG as U, yG as V, wG as W, jG as X, zG as Y, xG as Z, qG as _, LZ as a, qQ as a$, PG as a0, NG as a1, VQ as a2, IQ as a3, CG as a4, AG as a5, DG as a6, TG as a7, MG as a8, bQ as a9, n0 as aA, t0 as aB, o0 as aC, u0 as aD, i0 as aE, s0 as aF, c0 as aG, a0 as aH, _0 as aI, l0 as aJ, p0 as aK, f0 as aL, d0 as aM, h0 as aN, m0 as aO, g0 as aP, k0 as aQ, b0 as aR, v0 as aS, JQ as aT, y0 as aU, WQ as aV, $Q as aW, w0 as aX, j0 as aY, z0 as aZ, CQ as a_, EG as aa, DQ as ab, BG as ac, wQ as ad, jQ as ae, PQ as af, vQ as ag, IG as ah, RG as ai, KG as aj, LG as ak, WG as al, $G as am, VG as an, OG as ao, UG as ap, HG as aq, FG as ar, ZG as as, GG as at, QG as au, YG as av, JG as aw, XG as ax, r0 as ay, e0 as az, WZ as b, P5 as b$, x0 as b0, q0 as b1, S0 as b2, P0 as b3, N0 as b4, C0 as b5, A0 as b6, D0 as b7, T0 as b8, M0 as b9, o5 as bA, u5 as bB, i5 as bC, s5 as bD, c5 as bE, a5 as bF, _5 as bG, l5 as bH, p5 as bI, f5 as bJ, ZQ as bK, d5 as bL, h5 as bM, m5 as bN, g5 as bO, k5 as bP, mQ as bQ, b5 as bR, v5 as bS, y5 as bT, w5 as bU, j5 as bV, SQ as bW, z5 as bX, x5 as bY, q5 as bZ, S5 as b_, MQ as ba, E0 as bb, NQ as bc, B0 as bd, I0 as be, R0 as bf, K0 as bg, L0 as bh, W0 as bi, $0 as bj, V0 as bk, O0 as bl, U0 as bm, YQ as bn, H0 as bo, F0 as bp, Z0 as bq, G0 as br, Q0 as bs, Y0 as bt, J0 as bu, X0 as bv, r5 as bw, e5 as bx, n5 as by, t5 as bz, $Z as c, gQ as c0, kQ as c1, N5 as c2, C5 as c3, A5 as c4, D5 as c5, AQ as c6, T5 as c7, M5 as c8, E5 as c9, iQ as cA, EQ as cB, sQ as cC, cQ as cD, aQ as cE, OQ as cF, _Q as cG, lQ as cH, pQ as cI, LQ as cJ, xQ as cK, fQ as cL, dQ as cM, hQ as cN, B5 as ca, TQ as cb, I5 as cc, R5 as cd, K5 as ce, L5 as cf, W5 as cg, $5 as ch, V5 as ci, O5 as cj, U5 as ck, H5 as cl, F5 as cm, Z5 as cn, G5 as co, Q5 as cp, Y5 as cq, J5 as cr, X5 as cs, rQ as ct, eQ as cu, nQ as cv, tQ as cw, oQ as cx, uQ as cy, XQ as cz, VZ as d, OZ as e, UZ as f, HZ as g, FZ as h, GQ as i, UQ as j, HQ as k, FQ as l, ZZ as m, GZ as n, RZ as o, QZ as p, YZ as q, BQ as r, KZ as s, RQ as t, JZ as u, XZ as v, QQ as w, rG as x, yQ as y, eG as z
 };
