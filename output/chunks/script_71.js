@@ -1,36 +1,36 @@
 import {
   g as r
-} from "./CWSLadsn.js";
+} from "./DZjUHX_D.js";
 (function() {
   try {
-    var d = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    d.SENTRY_RELEASE = {
-      id: "79d1d83bf3d0a0f1d4fd38112e69555e6d7fe1e9"
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    t.SENTRY_RELEASE = {
+      id: "393d80b8e89856a8eed8a9424bbd25f96eb3752b"
     }
   } catch {}
 })();
 try {
   (function() {
-    var d = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new d.Error().stack;
-    t && (d._sentryDebugIds = d._sentryDebugIds || {}, d._sentryDebugIds[t] = "f6c51e82-ad75-484c-a01d-9731c98e9de5", d._sentryDebugIdIdentifier = "sentry-dbid-f6c51e82-ad75-484c-a01d-9731c98e9de5")
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      d = new t.Error().stack;
+    d && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[d] = "f6c51e82-ad75-484c-a01d-9731c98e9de5", t._sentryDebugIdIdentifier = "sentry-dbid-f6c51e82-ad75-484c-a01d-9731c98e9de5")
   })()
 } catch {}
 const n = () => "Reddit",
   i = () => "Reddit",
-  f = () => "Reddit",
   o = () => "Reddit",
   u = () => "Reddit",
+  f = () => "Reddit",
   s = () => "Reddit",
   c = () => "Reddit",
   l = () => "Reddit",
   a = () => "Reddit",
+  b = () => "Reddit",
   p = () => "Reddit",
   _ = () => "Reddit",
-  y = () => "Reddit",
-  g = (d = {}, t = {}) => {
-    const e = t.locale ?? r();
-    return e === "en" ? n() : e === "pt" ? i() : e === "ch" ? f() : e === "de" ? o() : e === "es" ? u() : e === "fr" ? s() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? p() : e === "uk" ? _() : y()
+  g = (t = {}, d = {}) => {
+    const e = d.locale ?? r();
+    return e === "en" ? n() : e === "pt" ? i() : e === "ch" ? o() : e === "de" ? u() : e === "es" ? f() : e === "fr" ? s() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? p() : _()
   };
 export {
   g as r

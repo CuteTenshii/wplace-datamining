@@ -17,12 +17,12 @@ var ar = (y, l, _) => (Kf(y, l, "read from private field"), _ ? _.call(y) : l.ge
   In = (y, l, _, x) => (Kf(y, l, "write to private field"), x ? x.call(y, _) : l.set(y, _), _),
   oi = (y, l, _) => (Kf(y, l, "access private method"), _);
 var pv = (y, l, _) => R1(D1(y), _, l);
-import "../chunks/DPZdjjZd.js";
+import "../chunks/DXA8xiqF.js";
 import {
   o as Oa,
   a as B1,
   s as La
-} from "../chunks/ClBOpu9U.js";
+} from "../chunks/AqXWCex6.js";
 import {
   a4 as O1,
   bn as j1,
@@ -60,7 +60,7 @@ import {
   bH as X1,
   q as ja,
   g as Wi,
-  o as Vi,
+  o as Ui,
   u as Je,
   v as Qr,
   by as yp,
@@ -74,17 +74,17 @@ import {
   bJ as h0,
   B as J1,
   $ as $1
-} from "../chunks/Pvk3sEWX.js";
+} from "../chunks/BxNCv_Ey.js";
 import {
   s as ee,
   c as d0
-} from "../chunks/hs28gpr-.js";
+} from "../chunks/B1PX4FK4.js";
 import {
   i as Te
-} from "../chunks/Ds-0gO1P.js";
+} from "../chunks/zcVxw4u0.js";
 import {
   h as Q1
-} from "../chunks/BBIu93xK.js";
+} from "../chunks/DarHx-rF.js";
 import {
   f as jr,
   a as Er,
@@ -97,23 +97,23 @@ import {
   c as _l,
   i as op,
   h as cm
-} from "../chunks/BmR5KTho.js";
+} from "../chunks/DSU-b6Ke.js";
 import {
   a as vl,
   t as dn
-} from "../chunks/JTNXApNk.js";
+} from "../chunks/GTq5ZJsd.js";
 import {
   g as xp,
   b as tb
-} from "../chunks/2BylvuNy.js";
+} from "../chunks/Dv5bwE7r.js";
 import {
   p as xa
-} from "../chunks/MHy4tHpM.js";
+} from "../chunks/CgwL_uRD.js";
 import {
   g as An,
   P as rb,
   b as p0
-} from "../chunks/RaW8Txcl.js";
+} from "../chunks/BUzmv_UY.js";
 import {
   f as yn,
   u as bt,
@@ -131,45 +131,45 @@ import {
   C as _v,
   a7 as ep,
   P as hb
-} from "../chunks/DpJUZDDk.js";
+} from "../chunks/BGM-0sZ0.js";
 import {
   A as aa,
   p as Km,
   c as um,
   g as $f,
   a as db
-} from "../chunks/Bs6g-mPo.js";
+} from "../chunks/ifLYdrxZ.js";
 import {
   P as Ba
-} from "../chunks/BaJL3pO7.js";
-import "../chunks/C6AVNCrd.js";
+} from "../chunks/CwgRF1i8.js";
+import "../chunks/BGJPcQJP.js";
 import {
   e as Hi,
   i as po
-} from "../chunks/B6pCixWW.js";
+} from "../chunks/RY6X5ul4.js";
 import {
   a as bp,
   b as Tl,
   c as Jm
-} from "../chunks/DFc4z7R_.js";
+} from "../chunks/DF2erVoZ.js";
 import {
   b as Rn
-} from "../chunks/aISnle2L.js";
+} from "../chunks/DuqZAMK7.js";
 import {
   i as $m
-} from "../chunks/BajjglEE.js";
+} from "../chunks/DyWrACYb.js";
 import {
   r as Or,
   p as Ot,
   s as Bc,
   u as vv
-} from "../chunks/mIF7DKfq.js";
+} from "../chunks/VIHo17in.js";
 import {
   C as ss,
   S as pb,
   U as fb,
   a as mb
-} from "../chunks/MBy6hR4h.js";
+} from "../chunks/Du2o_F0-.js";
 import {
   U as gb,
   A as f0,
@@ -179,30 +179,30 @@ import {
   r as _b,
   P as vb,
   b as yb
-} from "../chunks/Ct8acNTF.js";
+} from "../chunks/DtLNBgUI.js";
 import {
   c as wp,
   b as g0,
   g as Dn,
   a as Rp
-} from "../chunks/Dz_Ty3Ct.js";
+} from "../chunks/BTymKZwI.js";
 import {
   h as Fp
-} from "../chunks/B7eL8fjY.js";
+} from "../chunks/Cjls5VnM.js";
 import {
   L as _0
-} from "../chunks/DGETEbUO.js";
+} from "../chunks/hKyfpvUf.js";
 import {
   l as xb,
   g as bb
-} from "../chunks/CWSLadsn.js";
+} from "../chunks/DZjUHX_D.js";
 import {
   c as No
-} from "../chunks/D2ler74w.js";
+} from "../chunks/CPjP-Dkd.js";
 import {
   d as wb,
   p as Qm
-} from "../chunks/x5_OkeDh.js";
+} from "../chunks/BcxIrDLw.js";
 import {
   cv as Tb,
   aZ as v0,
@@ -436,51 +436,51 @@ import {
   aG as t3,
   cG as r3,
   bV as i3
-} from "../chunks/DdzXe3rn.js";
+} from "../chunks/CgZqHKnc.js";
 import {
   c as pm
-} from "../chunks/DG2U050d.js";
+} from "../chunks/Oq2Wl-TX.js";
 import {
   P as xn,
   t as a3
-} from "../chunks/wn4zyU6f.js";
+} from "../chunks/e-QFvTXi.js";
 import {
   L as qp
-} from "../chunks/B4sGmVt2.js";
+} from "../chunks/D5yPnUEt.js";
 import {
   l as n3,
   v as s3,
   a as Ju,
   s as k0
-} from "../chunks/BUErXNEF.js";
+} from "../chunks/Cz0R5CO8.js";
 import {
   p as ng,
   m as z0
-} from "../chunks/Dvg_7xDR.js";
+} from "../chunks/pyT3Ul81.js";
 import {
   f as yl
-} from "../chunks/CWxpK_q_.js";
+} from "../chunks/BF3ewL6t.js";
 import {
   k as bl
-} from "../chunks/gbRXuiPh.js";
+} from "../chunks/D-aXVA4a.js";
 import {
   A as sg
-} from "../chunks/C8NH2_gw.js";
+} from "../chunks/Dn2qAtfu.js";
 import {
   b as og
-} from "../chunks/nRFsqytY.js";
+} from "../chunks/BpK_88hZ.js";
 import {
   u as o3
-} from "../chunks/CV7oI9t-.js";
+} from "../chunks/QjrCuICe.js";
 import {
   u as l3
-} from "../chunks/Bou9x6J8.js";
+} from "../chunks/BvThq3VJ.js";
 import {
   n as fm,
   c as E0,
   b as c3,
   a as u3
-} from "../chunks/JfHQYx4o.js";
+} from "../chunks/DM_K0J9J.js";
 import {
   E as mm,
   D as lg,
@@ -488,10 +488,10 @@ import {
   W as h3,
   b as d3,
   R as p3
-} from "../chunks/8BmxBueG.js";
+} from "../chunks/UVO2oLhe.js";
 import {
   l as cg
-} from "../chunks/DAS0928U.js";
+} from "../chunks/mmdZ4yBM.js";
 import {
   g as Np,
   s as f3,
@@ -509,89 +509,89 @@ import {
   a as w3,
   u as T3,
   t as kv
-} from "../chunks/BJ_3IXyO.js";
+} from "../chunks/BC3ofVMJ.js";
 import {
   f as Jn,
   s as lp
-} from "../chunks/DkILUzkD.js";
+} from "../chunks/D8JLXgGK.js";
 import {
   C as ug
-} from "../chunks/D6z2_OGY.js";
+} from "../chunks/BpVcNKm5.js";
 import {
   L as R0
-} from "../chunks/BpVmWO6G.js";
+} from "../chunks/CIySl3_V.js";
 import {
   t as S3,
   r as F0,
   g as P3
-} from "../chunks/B53W_TkO.js";
+} from "../chunks/CMYxboKz.js";
 import {
   c as uo
-} from "../chunks/Bb7j3TLz.js";
+} from "../chunks/Gv2f_yqH.js";
 import {
   c as vn
-} from "../chunks/C5-z5pq6.js";
+} from "../chunks/B5zMMuLe.js";
 import {
   a as B0
-} from "../chunks/BeZXUWkH.js";
+} from "../chunks/CSeQUMOl.js";
 import {
   L as I3
-} from "../chunks/-aWLkluK.js";
+} from "../chunks/NQjgsWJH.js";
 import {
   e as M3,
   a as C3
-} from "../chunks/D-woDsor.js";
+} from "../chunks/95UPbyJo.js";
 import {
   b as A3
-} from "../chunks/5G3jEX5v.js";
+} from "../chunks/WICGGD1L.js";
 import {
   c as O0
-} from "../chunks/DC6rJxH0.js";
+} from "../chunks/B09yfRJM.js";
 import {
   e as j0
-} from "../chunks/C9w_jOuD.js";
+} from "../chunks/BKpHG1P_.js";
 import {
   p as q0
-} from "../chunks/BpE5PqSt.js";
+} from "../chunks/JBdmlnH5.js";
 import {
   a as k3
-} from "../chunks/Bu9UjI9V.js";
+} from "../chunks/Bc6fLgQm.js";
 import {
   d as z3
-} from "../chunks/nPu1JtK5.js";
+} from "../chunks/DMGBgfX3.js";
 import {
   r as E3
-} from "../chunks/DWdA1N7K.js";
+} from "../chunks/CXWLslvK.js";
 import {
   p as L3
-} from "../chunks/B1N-GDU1.js";
+} from "../chunks/Bi37DNhF.js";
 import {
   R as N0
-} from "../chunks/Dq7pDvpd.js";
+} from "../chunks/BtmpKUDT.js";
 import {
   T as $u,
   G as Pp
-} from "../chunks/BM0_t459.js";
+} from "../chunks/DQKYBykM.js";
 import {
   t as V0
-} from "../chunks/B-PFH8Qy.js";
+} from "../chunks/DdIoPPh6.js";
 import {
   C as D3
-} from "../chunks/B1R6N2ET.js";
+} from "../chunks/BSZk-3Yo.js";
 import {
   R as R3
-} from "../chunks/D9_-ei3m.js";
+} from "../chunks/Ck10iez5.js";
 import {
   W as F3
-} from "../chunks/BTHd5dJU.js";
+} from "../chunks/CD614T6Q.js";
 import {
   r as B3
-} from "../chunks/BE0Hrai3.js";
+} from "../chunks/zYz5r948.js";
 (function() {
   try {
     var y = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     y.SENTRY_RELEASE = {
-      id: "79d1d83bf3d0a0f1d4fd38112e69555e6d7fe1e9"
+      id: "393d80b8e89856a8eed8a9424bbd25f96eb3752b"
     }
   } catch {}
 })();
@@ -599,7 +599,7 @@ try {
   (function() {
     var y = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       l = new y.Error().stack;
-    l && (y._sentryDebugIds = y._sentryDebugIds || {}, y._sentryDebugIds[l] = "9056426b-7ced-43a5-aec3-da7e6df99845", y._sentryDebugIdIdentifier = "sentry-dbid-9056426b-7ced-43a5-aec3-da7e6df99845")
+    l && (y._sentryDebugIds = y._sentryDebugIds || {}, y._sentryDebugIds[l] = "e28faca2-ff23-48ba-9280-020d1b6cd16e", y._sentryDebugIdIdentifier = "sentry-dbid-e28faca2-ff23-48ba-9280-020d1b6cd16e")
   })()
 } catch {}
 const O3 = [];
@@ -4386,7 +4386,7 @@ function Q3() {
           return Object.prototype.hasOwnProperty.call(i, t)
         };
 
-        function Li(i, t) {
+        function Ei(i, t) {
           return Zi(i, t) ? i[t] : void 0
         }
 
@@ -4572,7 +4572,7 @@ function Q3() {
             if (typeof t != "string") return;
             const r = (function(n) {
               if ((n = n.toLowerCase().trim()) === "transparent") return [0, 0, 0, 0];
-              const c = Li(gi, n);
+              const c = Ei(gi, n);
               if (c) {
                 const [m, v, b] = c;
                 return [m / 255, v / 255, b / 255, 1]
@@ -4684,7 +4684,7 @@ function Q3() {
           }
         }
         const Xi = ["bottom", "center", "top"];
-        class Ui {
+        class Vi {
           constructor(t, r, n, c, f, m) {
             this.text = t, this.image = r, this.scale = n, this.fontStack = c, this.textColor = f, this.verticalAlign = m
           }
@@ -4694,7 +4694,7 @@ function Q3() {
             this.sections = t
           }
           static fromString(t) {
-            return new Di([new Ui(t, null, null, null, null, null)])
+            return new Di([new Vi(t, null, null, null, null, null)])
           }
           isEmpty() {
             return this.sections.length === 0 || !this.sections.some((t => t.text.length !== 0 || t.image && t.image.name.length !== 0))
@@ -5857,7 +5857,7 @@ function Q3() {
           evaluate(t) {
             return new Di(this.sections.map((r => {
               const n = r.content.evaluate(t);
-              return ea(n) === pr ? new Ui("", n, null, null, null, r.verticalAlign ? r.verticalAlign.evaluate(t) : null) : new Ui(pa(n), null, r.scale ? r.scale.evaluate(t) : null, r.font ? r.font.evaluate(t).join(",") : null, r.textColor ? r.textColor.evaluate(t) : null, r.verticalAlign ? r.verticalAlign.evaluate(t) : null)
+              return ea(n) === pr ? new Vi("", n, null, null, null, r.verticalAlign ? r.verticalAlign.evaluate(t) : null) : new Vi(pa(n), null, r.scale ? r.scale.evaluate(t) : null, r.font ? r.font.evaluate(t).join(",") : null, r.textColor ? r.textColor.evaluate(t) : null, r.verticalAlign ? r.verticalAlign.evaluate(t) : null)
             })))
           }
           eachChild(t) {
@@ -6619,7 +6619,7 @@ function Q3() {
           evaluate(t) {
             var r;
             const n = (r = t.globals) === null || r === void 0 ? void 0 : r.globalState;
-            return n && Object.keys(n).length !== 0 ? Li(n, this.key) : null
+            return n && Object.keys(n).length !== 0 ? Ei(n, this.key) : null
           }
           eachChild() {}
           outputDefined() {
@@ -7496,10 +7496,10 @@ function Q3() {
           if (M !== "object") return [new Ke(t, r, `object expected, ${M} found`)];
           for (const C in r) {
             const D = C.split(".")[0],
-              N = Li(n, D) || n["*"];
+              N = Ei(n, D) || n["*"];
             let W;
-            if (Li(c, D)) W = c[D];
-            else if (Li(n, D)) W = v;
+            if (Ei(c, D)) W = c[D];
+            else if (Ei(n, D)) W = v;
             else if (c["*"]) W = c["*"];
             else {
               if (!n["*"]) {
@@ -9832,13 +9832,13 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           {
             members: Qi
           } = Pi;
-        class Ei {
+        class Li {
           constructor(t = []) {
             this._forceNewSegmentOnNextPrepare = !1, this.segments = t
           }
           prepareSegment(t, r, n, c) {
             const f = this.segments[this.segments.length - 1];
-            return t > Ei.MAX_VERTEX_ARRAY_LENGTH && St(`Max vertices per segment is ${Ei.MAX_VERTEX_ARRAY_LENGTH}: bucket requested ${t}. Consider using the \`fillLargeMeshArrays\` function if you require meshes with more than ${Ei.MAX_VERTEX_ARRAY_LENGTH} vertices.`), this._forceNewSegmentOnNextPrepare || !f || f.vertexLength + t > Ei.MAX_VERTEX_ARRAY_LENGTH || f.sortKey !== c ? this.createNewSegment(r, n, c) : f
+            return t > Li.MAX_VERTEX_ARRAY_LENGTH && St(`Max vertices per segment is ${Li.MAX_VERTEX_ARRAY_LENGTH}: bucket requested ${t}. Consider using the \`fillLargeMeshArrays\` function if you require meshes with more than ${Li.MAX_VERTEX_ARRAY_LENGTH} vertices.`), this._forceNewSegmentOnNextPrepare || !f || f.vertexLength + t > Li.MAX_VERTEX_ARRAY_LENGTH || f.sortKey !== c ? this.createNewSegment(r, n, c) : f
           }
           createNewSegment(t, r, n) {
             const c = {
@@ -9864,7 +9864,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
               for (const r in t.vaos) t.vaos[r].destroy()
           }
           static simpleSegment(t, r, n, c) {
-            return new Ei([{
+            return new Li([{
               vertexOffset: t,
               primitiveOffset: r,
               vertexLength: n,
@@ -9878,7 +9878,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
         function ra(i, t) {
           return 256 * (i = Zt(Math.floor(i), 0, 255)) + Zt(Math.floor(t), 0, 255)
         }
-        Ei.MAX_VERTEX_ARRAY_LENGTH = Math.pow(2, 16) - 1, zr("SegmentVector", Ei);
+        Li.MAX_VERTEX_ARRAY_LENGTH = Math.pow(2, 16) - 1, zr("SegmentVector", Li);
         const va = wa([{
             name: "a_pattern_from",
             components: 4,
@@ -10471,7 +10471,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
         }
         class df {
           constructor(t) {
-            this.zoom = t.zoom, this.overscaling = t.overscaling, this.layers = t.layers, this.layerIds = this.layers.map((r => r.id)), this.index = t.index, this.hasDependencies = !1, this.layoutVertexArray = new Be, this.indexArray = new Nt, this.segments = new Ei, this.programConfigurations = new to(t.layers, t.zoom), this.stateDependentLayerIds = this.layers.filter((r => r.isStateDependent())).map((r => r.id))
+            this.zoom = t.zoom, this.overscaling = t.overscaling, this.layers = t.layers, this.layerIds = this.layers.map((r => r.id)), this.index = t.index, this.hasDependencies = !1, this.layoutVertexArray = new Be, this.indexArray = new Nt, this.segments = new Li, this.programConfigurations = new to(t.layers, t.zoom), this.stateDependentLayerIds = this.layers.filter((r => r.isStateDependent())).map((r => r.id))
           }
           populate(t, r, n) {
             const c = this.layers[0],
@@ -11946,7 +11946,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
         function e_(i, t, r, n, c, f, m, v, b) {
           const M = c.length / 2,
             C = m && v && b;
-          if (M < Ei.MAX_VERTEX_ARRAY_LENGTH) {
+          if (M < Li.MAX_VERTEX_ARRAY_LENGTH) {
             const D = t.prepareSegment(M, r, n),
               N = D.vertexLength;
             for (let Q = 0; Q < f.length; Q += 3) n.emplaceBack(N + f[Q], N + f[Q + 1], N + f[Q + 2]);
@@ -11975,7 +11975,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
               let yr = we[$t] < De,
                 $r = we[Tr] < De,
                 gr = we[hr] < De;
-              Ze.vertexLength + ((yr ? 1 : 0) + ($r ? 1 : 0) + (gr ? 1 : 0)) > Ei.MAX_VERTEX_ARRAY_LENGTH && (Ze = D.createNewSegment(N, W), De = et.count, yr = !0, $r = !0, gr = !0, mt = 0);
+              Ze.vertexLength + ((yr ? 1 : 0) + ($r ? 1 : 0) + (gr ? 1 : 0)) > Li.MAX_VERTEX_ARRAY_LENGTH && (Ze = D.createNewSegment(N, W), De = et.count, yr = !0, $r = !0, gr = !0, mt = 0);
               const xr = Fu(we, X, le, et, $t, yr, Ze),
                 Ft = Fu(we, X, le, et, Tr, $r, Ze),
                 mi = Fu(we, X, le, et, hr, gr, Ze);
@@ -11997,7 +11997,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                   yr = $t[Tr];
                 let $r = we[hr] < De,
                   gr = we[yr] < De;
-                Ze.vertexLength + (($r ? 1 : 0) + (gr ? 1 : 0)) > Ei.MAX_VERTEX_ARRAY_LENGTH && (Ze = D.createNewSegment(N, W), De = et.count, $r = !0, gr = !0, mt = 0);
+                Ze.vertexLength + (($r ? 1 : 0) + (gr ? 1 : 0)) > Li.MAX_VERTEX_ARRAY_LENGTH && (Ze = D.createNewSegment(N, W), De = et.count, $r = !0, gr = !0, mt = 0);
                 const xr = Fu(we, X, le, et, hr, $r, Ze),
                   Ft = Fu(we, X, le, et, yr, gr, Ze);
                 W.emplaceBack(mt + xr - De, mt + Ft - De), Ze.primitiveLength++
@@ -12015,7 +12015,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
         }
         class Tf {
           constructor(t) {
-            this.zoom = t.zoom, this.overscaling = t.overscaling, this.layers = t.layers, this.layerIds = this.layers.map((r => r.id)), this.index = t.index, this.hasDependencies = !1, this.patternFeatures = [], this.layoutVertexArray = new Ie, this.indexArray = new Nt, this.indexArray2 = new Nr, this.programConfigurations = new to(t.layers, t.zoom), this.segments = new Ei, this.segments2 = new Ei, this.stateDependentLayerIds = this.layers.filter((r => r.isStateDependent())).map((r => r.id))
+            this.zoom = t.zoom, this.overscaling = t.overscaling, this.layers = t.layers, this.layerIds = this.layers.map((r => r.id)), this.index = t.index, this.hasDependencies = !1, this.patternFeatures = [], this.layoutVertexArray = new Ie, this.indexArray = new Nt, this.indexArray2 = new Nr, this.programConfigurations = new to(t.layers, t.zoom), this.segments = new Li, this.segments2 = new Li, this.stateDependentLayerIds = this.layers.filter((r => r.isStateDependent())).map((r => r.id))
           }
           populate(t, r, n) {
             this.hasDependencies = Od("fill", this.layers, r);
@@ -12337,7 +12337,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
         }
         class Pf {
           constructor(t) {
-            this.zoom = t.zoom, this.overscaling = t.overscaling, this.layers = t.layers, this.layerIds = this.layers.map((r => r.id)), this.index = t.index, this.hasDependencies = !1, this.layoutVertexArray = new Oe, this.centroidVertexArray = new Ce, this.indexArray = new Nt, this.programConfigurations = new to(t.layers, t.zoom), this.segments = new Ei, this.stateDependentLayerIds = this.layers.filter((r => r.isStateDependent())).map((r => r.id))
+            this.zoom = t.zoom, this.overscaling = t.overscaling, this.layers = t.layers, this.layerIds = this.layers.map((r => r.id)), this.index = t.index, this.hasDependencies = !1, this.layoutVertexArray = new Oe, this.centroidVertexArray = new Ce, this.indexArray = new Nt, this.programConfigurations = new to(t.layers, t.zoom), this.segments = new Li, this.stateDependentLayerIds = this.layers.filter((r => r.isStateDependent())).map((r => r.id))
           }
           populate(t, r, n) {
             this.features = [], this.hasDependencies = Od("fill-extrusion", this.layers, r);
@@ -12435,7 +12435,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
               const f = t[c],
                 m = t[c - 1];
               if (Tx(f, m)) continue;
-              r.segment.vertexLength + 4 > Ei.MAX_VERTEX_ARRAY_LENGTH && (r.segment = this.segments.prepareSegment(4, this.layoutVertexArray, this.indexArray));
+              r.segment.vertexLength + 4 > Li.MAX_VERTEX_ARRAY_LENGTH && (r.segment = this.segments.prepareSegment(4, this.layoutVertexArray, this.indexArray));
               const v = f.sub(m)._perp()._unit(),
                 b = m.dist(f);
               n + b > 32768 && (n = 0), Bu(this.layoutVertexArray, f.x, f.y, v.x, v.y, 0, 0, n), Bu(this.layoutVertexArray, f.x, f.y, v.x, v.y, 0, 1, n), n += b, Bu(this.layoutVertexArray, m.x, m.y, v.x, v.y, 0, 0, n), Bu(this.layoutVertexArray, m.x, m.y, v.x, v.y, 0, 1, n);
@@ -12628,7 +12628,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           constructor(t) {
             this.zoom = t.zoom, this.overscaling = t.overscaling, this.layers = t.layers, this.layerIds = this.layers.map((r => r.id)), this.index = t.index, this.hasDependencies = !1, this.patternFeatures = [], this.lineClipsArray = [], this.gradients = {}, this.layers.forEach((r => {
               this.gradients[r.id] = {}
-            })), this.layoutVertexArray = new He, this.layoutVertexArray2 = new Le, this.indexArray = new Nt, this.programConfigurations = new to(t.layers, t.zoom), this.segments = new Ei, this.maxLineLength = 0, this.stateDependentLayerIds = this.layers.filter((r => r.isStateDependent())).map((r => r.id))
+            })), this.layoutVertexArray = new He, this.layoutVertexArray2 = new Le, this.indexArray = new Nt, this.programConfigurations = new to(t.layers, t.zoom), this.segments = new Li, this.maxLineLength = 0, this.stateDependentLayerIds = this.layers.filter((r => r.isStateDependent())).map((r => r.id))
           }
           populate(t, r, n) {
             this.hasDependencies = Od("line", this.layers, r) || this.hasLineDasharray(this.layers);
@@ -14414,7 +14414,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
         }
         class Df {
           constructor(t) {
-            this.layoutVertexArray = new ft, this.indexArray = new Nt, this.programConfigurations = t, this.segments = new Ei, this.dynamicLayoutVertexArray = new gt, this.opacityVertexArray = new xt, this.hasVisibleVertices = !1, this.placedSymbolArray = new A
+            this.layoutVertexArray = new ft, this.indexArray = new Nt, this.programConfigurations = t, this.segments = new Li, this.dynamicLayoutVertexArray = new gt, this.opacityVertexArray = new xt, this.hasVisibleVertices = !1, this.placedSymbolArray = new A
           }
           isEmpty() {
             return this.layoutVertexArray.length === 0 && this.indexArray.length === 0 && this.dynamicLayoutVertexArray.length === 0 && this.opacityVertexArray.length === 0
@@ -14429,7 +14429,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
         zr("SymbolBuffers", Df);
         class Rf {
           constructor(t, r, n) {
-            this.layoutVertexArray = new t, this.layoutAttributes = r, this.indexArray = new n, this.segments = new Ei, this.collisionVertexArray = new cr
+            this.layoutVertexArray = new t, this.layoutAttributes = r, this.indexArray = new n, this.segments = new Li, this.collisionVertexArray = new cr
           }
           upload(t) {
             this.layoutVertexBuffer = t.createVertexBuffer(this.layoutVertexArray, this.layoutAttributes), this.indexBuffer = t.createIndexBuffer(this.indexArray), this.collisionVertexBuffer = t.createVertexBuffer(this.collisionVertexArray, Rx.members, !0)
@@ -16478,7 +16478,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             r = [r[0] * v - r[1] * m, r[0] * m + r[1] * v]
           }
           return [c ? r[0] : ot(t, r[0], i.zoom), c ? r[1] : ot(t, r[1], i.zoom)]
-        }, T.aJ = Ef, T.aK = qf, T.aL = zf, T.aM = Nf, T.aN = wa, T.aO = Nd, T.aP = Ce, T.aQ = Ei, T.aR = Nt, T.aS = vr, T.aT = B_, T.aU = Me, T.aV = Ae, T.aW = function(i) {
+        }, T.aJ = Ef, T.aK = qf, T.aL = zf, T.aM = Nf, T.aN = wa, T.aO = Nd, T.aP = Ce, T.aQ = Li, T.aR = Nt, T.aS = vr, T.aT = B_, T.aU = Me, T.aV = Ae, T.aW = function(i) {
           var t = new xe(3);
           return t[0] = i[0], t[1] = i[1], t[2] = i[2], t
         }, T.aX = function(i, t, r) {
@@ -22340,15 +22340,15 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
               if (cr.length > 0) {
                 const Pi = cr[0].clone(),
                   Qi = cr[0].clone();
-                for (let Ei = 1; Ei < cr.length; Ei++) Pi.x = Math.min(Pi.x, cr[Ei].x), Pi.y = Math.min(Pi.y, cr[Ei].y), Qi.x = Math.max(Qi.x, cr[Ei].x), Qi.y = Math.max(Qi.y, cr[Ei].y);
+                for (let Li = 1; Li < cr.length; Li++) Pi.x = Math.min(Pi.x, cr[Li].x), Pi.y = Math.min(Pi.y, cr[Li].y), Qi.x = Math.max(Qi.x, cr[Li].x), Qi.y = Math.max(Qi.y, cr[Li].y);
                 Nr = Pi.x >= vt.x && Qi.x <= ft.x && Pi.y >= vt.y && Qi.y <= ft.y ? [cr] : Qi.x < vt.x || Pi.x > ft.x || Qi.y < vt.y || Pi.y > ft.y ? [] : s.aC([cr], vt.x, vt.y, ft.x, ft.y)
               }
               for (const Pi of Nr) {
                 gt.reset(Pi, .25 * $e);
                 let Qi = 0;
                 Qi = gt.length <= .5 * $e ? 1 : Math.ceil(gt.paddedLength / Nt) + 1;
-                for (let Ei = 0; Ei < Qi; Ei++) {
-                  const ra = Ei / Math.max(Qi - 1, 1),
+                for (let Li = 0; Li < Qi; Li++) {
+                  const ra = Li / Math.max(Qi - 1, 1),
                     va = gt.lerp(ra),
                     na = va.x + Vr,
                     za = va.y + Vr;
@@ -22686,7 +22686,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
               xt = this._getTerrainElevationFunc(gt),
               lr = this.transform.getFastPathSimpleProjectionMatrix(gt),
               cr = (Nt, Nr, Pi) => {
-                var Qi, Ei;
+                var Qi, Li;
                 if (a[Nt.crossTileID]) return;
                 if (O) return void(this.placements[Nt.crossTileID] = new qi(!1, !1, !1));
                 let ra = !1,
@@ -22740,7 +22740,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                       }
                     })), un(ha && ha.placeable)
                   } else {
-                    let Aa = s.aI[(Ei = (Qi = this.prevPlacement) === null || Qi === void 0 ? void 0 : Qi.variableOffsets[Nt.crossTileID]) === null || Ei === void 0 ? void 0 : Ei.anchor];
+                    let Aa = s.aI[(Li = (Qi = this.prevPlacement) === null || Qi === void 0 ? void 0 : Qi.variableOffsets[Nt.crossTileID]) === null || Li === void 0 ? void 0 : Li.anchor];
                     const Ta = (oa, Gn, As) => {
                       const Ed = oa.x2 - oa.x1,
                         Ld = oa.y2 - oa.y1,
@@ -22995,7 +22995,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           return a * ci + e * ui + a * pt + e * kt + a * dr + e * pi + a * vi + e
         }
         const Zi = 0;
-        class Li {
+        class Ei {
           constructor(e) {
             this._sortAcrossTiles = e.layout.get("symbol-z-order") !== "viewport-y" && !e.layout.get("symbol-sort-key").isConstant(), this._currentTileIndex = 0, this._currentPartIndex = 0, this._seenCrossTileIDs = {}, this._bucketParts = []
           }
@@ -23022,7 +23022,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
               const g = a[e[this._currentPlacementIndex]],
                 w = this.placement.collisionIndex.transform.zoom;
               if (g.type === "symbol" && (!g.minzoom || g.minzoom <= w) && (!g.maxzoom || g.maxzoom > w)) {
-                if (this._inProgressLayer || (this._inProgressLayer = new Li(g)), this._inProgressLayer.continuePlacement(o[g.source], this.placement, this._showCollisionBoxes, g, p)) return;
+                if (this._inProgressLayer || (this._inProgressLayer = new Ei(g)), this._inProgressLayer.continuePlacement(o[g.source], this.placement, this._showCollisionBoxes, g, p)) return;
                 delete this._inProgressLayer
               }
               this._currentPlacementIndex--
@@ -24067,7 +24067,7 @@ uniform ${L} ${O} u_${R};
             this.vertexBuffer.destroy(), this.indexBuffer.destroy(), this.segments.destroy(), this.vertexBuffer = null, this.indexBuffer = null, this.segments = null
           }
         }
-        var Ui = s.aN([{
+        var Vi = s.aN([{
           name: "a_pos",
           type: "Int16",
           components: 2
@@ -24114,7 +24114,7 @@ uniform ${L} ${O} u_${R};
             if (this._cachedMesh) return this._cachedMesh;
             const g = new s.aP;
             g.emplaceBack(0, 0), g.emplaceBack(s.a3, 0), g.emplaceBack(0, s.a3), g.emplaceBack(s.a3, s.a3);
-            const w = e.createVertexBuffer(g, Ui.members),
+            const w = e.createVertexBuffer(g, Vi.members),
               I = s.aQ.simpleSegment(0, 0, 4, 2),
               A = new s.aR;
             A.emplaceBack(1, 0, 2), A.emplaceBack(1, 2, 3);
@@ -25306,7 +25306,7 @@ uniform ${L} ${O} u_${R};
             const u = new s.aP;
             u.emplaceBack(-1, -1), u.emplaceBack(2, -1), u.emplaceBack(-1, 2);
             const p = new s.aR;
-            p.emplaceBack(0, 1, 2), this._fullscreenTriangle = new Xi(a.createVertexBuffer(u, Ui.members), a.createIndexBuffer(p), s.aQ.simpleSegment(0, 0, u.length, p.length)), this._resultBuffer = new Uint8Array(4), a.activeTexture.set(o.TEXTURE1);
+            p.emplaceBack(0, 1, 2), this._fullscreenTriangle = new Xi(a.createVertexBuffer(u, Vi.members), a.createIndexBuffer(p), s.aQ.simpleSegment(0, 0, u.length, p.length)), this._resultBuffer = new Uint8Array(4), a.activeTexture.set(o.TEXTURE1);
             const g = o.createTexture();
             o.bindTexture(o.TEXTURE_2D, g), o.texParameteri(o.TEXTURE_2D, o.TEXTURE_WRAP_S, o.CLAMP_TO_EDGE), o.texParameteri(o.TEXTURE_2D, o.TEXTURE_WRAP_T, o.CLAMP_TO_EDGE), o.texParameteri(o.TEXTURE_2D, o.TEXTURE_MIN_FILTER, o.NEAREST), o.texParameteri(o.TEXTURE_2D, o.TEXTURE_MAG_FILTER, o.NEAREST), o.texImage2D(o.TEXTURE_2D, 0, this._texFormat, this._texWidth, this._texHeight, 0, this._texFormat, this._texType, null), this._fbo = a.createFramebuffer(this._texWidth, this._texHeight, !1, !1), this._fbo.colorAttachment.set(g), Va(o) && (this._pbo = o.createBuffer(), o.bindBuffer(o.PIXEL_PACK_BUFFER, this._pbo), o.bufferData(o.PIXEL_PACK_BUFFER, 4, o.STREAM_READ), o.bindBuffer(o.PIXEL_PACK_BUFFER, null))
           }
@@ -25478,7 +25478,7 @@ uniform ${L} ${O} u_${R};
                   arrayBuffer: w.indices,
                   length: w.indices.byteLength / 2 / 3
                 });
-              return new Xi(p.createVertexBuffer(I, Ui.members), p.createIndexBuffer(A), s.aQ.simpleSegment(0, 0, I.length, A.length))
+              return new Xi(p.createVertexBuffer(I, Vi.members), p.createIndexBuffer(A), s.aQ.simpleSegment(0, 0, I.length, A.length))
             })(e, a);
             return this._tileMeshCache[o] = u, u
           }
@@ -29285,7 +29285,7 @@ uniform ${L} ${O} u_${R};
               Nr = u ? xt.textSizeData : xt.iconSizeData,
               Pi = de || ce.pitch !== 0,
               Qi = d.useProgram(Vl(Nt, u, xt), cr),
-              Ei = s.ar(Nr, ce.zoom),
+              Li = s.ar(Nr, ce.zoom),
               ra = d.style.map.terrain && d.style.map.terrain.getTerrainData(ft);
             let va, na, za, ha, Ua = [0, 0],
               da = null;
@@ -29316,7 +29316,7 @@ uniform ${L} ${O} u_${R};
               un = Ce || gn ? iu : de ? cn : d.transform.clipSpaceToPixelsMatrix,
               gs = Nt && a.paint.get(u ? "text-halo-width" : "icon-halo-width").constantOr(1) !== 0;
             let Cs;
-            Cs = Nt ? xt.iconsInText ? cs(Nr.kind, Ei, Be, de, Ce, gn, d, un, ms, as, va, Ua, vt) : Xo(Nr.kind, Ei, Be, de, Ce, gn, d, un, ms, as, u, va, 0, vt) : Xc(Nr.kind, Ei, Be, de, Ce, gn, d, un, ms, as, u, va, vt);
+            Cs = Nt ? xt.iconsInText ? cs(Nr.kind, Li, Be, de, Ce, gn, d, un, ms, as, va, Ua, vt) : Xo(Nr.kind, Li, Be, de, Ce, gn, d, un, ms, as, u, va, 0, vt) : Xc(Nr.kind, Li, Be, de, Ce, gn, d, un, ms, as, u, va, vt);
             const ll = {
               program: Qi,
               buffers: lr,
@@ -29788,7 +29788,7 @@ uniform ${L} ${O} u_${R};
             const a = new s.aP;
             a.emplaceBack(-1, -1), a.emplaceBack(1, -1), a.emplaceBack(1, 1), a.emplaceBack(-1, 1);
             const o = new s.aR;
-            o.emplaceBack(0, 1, 2), o.emplaceBack(0, 2, 3), e.mesh = new Xi(d.createVertexBuffer(a, Ui.members), d.createIndexBuffer(o), s.aQ.simpleSegment(0, 0, a.length, o.length))
+            o.emplaceBack(0, 1, 2), o.emplaceBack(0, 2, 3), e.mesh = new Xi(d.createVertexBuffer(a, Vi.members), d.createIndexBuffer(o), s.aQ.simpleSegment(0, 0, a.length, o.length))
           }
           return e.mesh
         }
@@ -29807,15 +29807,15 @@ uniform ${L} ${O} u_${R};
           setup() {
             const e = this.context,
               a = new s.aP;
-            a.emplaceBack(0, 0), a.emplaceBack(s.a3, 0), a.emplaceBack(0, s.a3), a.emplaceBack(s.a3, s.a3), this.tileExtentBuffer = e.createVertexBuffer(a, Ui.members), this.tileExtentSegments = s.aQ.simpleSegment(0, 0, 4, 2);
+            a.emplaceBack(0, 0), a.emplaceBack(s.a3, 0), a.emplaceBack(0, s.a3), a.emplaceBack(s.a3, s.a3), this.tileExtentBuffer = e.createVertexBuffer(a, Vi.members), this.tileExtentSegments = s.aQ.simpleSegment(0, 0, 4, 2);
             const o = new s.aP;
-            o.emplaceBack(0, 0), o.emplaceBack(s.a3, 0), o.emplaceBack(0, s.a3), o.emplaceBack(s.a3, s.a3), this.debugBuffer = e.createVertexBuffer(o, Ui.members), this.debugSegments = s.aQ.simpleSegment(0, 0, 4, 5);
+            o.emplaceBack(0, 0), o.emplaceBack(s.a3, 0), o.emplaceBack(0, s.a3), o.emplaceBack(s.a3, s.a3), this.debugBuffer = e.createVertexBuffer(o, Vi.members), this.debugSegments = s.aQ.simpleSegment(0, 0, 4, 5);
             const u = new s.ca;
             u.emplaceBack(0, 0, 0, 0), u.emplaceBack(s.a3, 0, s.a3, 0), u.emplaceBack(0, s.a3, 0, s.a3), u.emplaceBack(s.a3, s.a3, s.a3, s.a3), this.rasterBoundsBuffer = e.createVertexBuffer(u, qc.members), this.rasterBoundsSegments = s.aQ.simpleSegment(0, 0, 4, 2);
             const p = new s.aP;
-            p.emplaceBack(0, 0), p.emplaceBack(s.a3, 0), p.emplaceBack(0, s.a3), p.emplaceBack(s.a3, s.a3), this.rasterBoundsBufferPosOnly = e.createVertexBuffer(p, Ui.members), this.rasterBoundsSegmentsPosOnly = s.aQ.simpleSegment(0, 0, 4, 5);
+            p.emplaceBack(0, 0), p.emplaceBack(s.a3, 0), p.emplaceBack(0, s.a3), p.emplaceBack(s.a3, s.a3), this.rasterBoundsBufferPosOnly = e.createVertexBuffer(p, Vi.members), this.rasterBoundsSegmentsPosOnly = s.aQ.simpleSegment(0, 0, 4, 5);
             const g = new s.aP;
-            g.emplaceBack(0, 0), g.emplaceBack(1, 0), g.emplaceBack(0, 1), g.emplaceBack(1, 1), this.viewportBuffer = e.createVertexBuffer(g, Ui.members), this.viewportSegments = s.aQ.simpleSegment(0, 0, 4, 2);
+            g.emplaceBack(0, 0), g.emplaceBack(1, 0), g.emplaceBack(0, 1), g.emplaceBack(1, 1), this.viewportBuffer = e.createVertexBuffer(g, Vi.members), this.viewportSegments = s.aQ.simpleSegment(0, 0, 4, 2);
             const w = new s.cb;
             w.emplaceBack(0), w.emplaceBack(1), w.emplaceBack(3), w.emplaceBack(2), w.emplaceBack(0), this.tileBorderIndexBuffer = e.createIndexBuffer(w);
             const I = new s.aR;
@@ -30187,9 +30187,9 @@ uniform ${L} ${O} u_${R};
                     Pi = Wt(ft, ue.transform, Nr),
                     Qi = de.layout.get("icon-text-fit") !== "none" && cr.hasIconData();
                   if (Nt) {
-                    const Ei = Math.pow(2, $e.zoom - lr.tileID.overscaledZ),
+                    const Li = Math.pow(2, $e.zoom - lr.tileID.overscaledZ),
                       ra = vt ? (va, na) => vt.getElevation(xt, va, na) : null;
-                    Nl(cr, ft, gt, Le, $e, Pi, Ei, Nt, Qi, s.aH($e, lr, Oe, He), xt.toUnwrapped(), ra)
+                    Nl(cr, ft, gt, Le, $e, Pi, Li, Nt, Qi, s.aH($e, lr, Oe, He), xt.toUnwrapped(), ra)
                   }
                 }
               })(A, g, I, w, I.layout.get("text-rotation-alignment"), I.layout.get("text-pitch-alignment"), I.paint.get("text-translate"), I.paint.get("text-translate-anchor"), L), I.paint.get("icon-opacity").constantOr(1) !== 0 && Ws(g, w, I, A, !1, I.paint.get("icon-translate"), I.paint.get("icon-translate-anchor"), I.layout.get("icon-rotation-alignment"), I.layout.get("icon-pitch-alignment"), I.layout.get("icon-keep-upright"), H, $, R), I.paint.get("text-opacity").constantOr(1) !== 0 && Ws(g, w, I, A, !0, I.paint.get("text-translate"), I.paint.get("text-translate-anchor"), I.layout.get("text-rotation-alignment"), I.layout.get("text-pitch-alignment"), I.layout.get("text-keep-upright"), H, $, R), w.map.showCollisionBoxes && (Jo(g, w, I, A, !0), Jo(g, w, I, A, !1))
@@ -30219,14 +30219,14 @@ uniform ${L} ${O} u_${R};
                   Nr = g.useProgram("circle", Nt),
                   Pi = gt.layoutVertexBuffer,
                   Qi = gt.indexBuffer,
-                  Ei = g.style.map.terrain && g.style.map.terrain.getTerrainData(vt),
+                  Li = g.style.map.terrain && g.style.map.terrain.getTerrainData(vt),
                   ra = {
                     programConfiguration: Nt,
                     program: Nr,
                     layoutVertexBuffer: Pi,
                     indexBuffer: Qi,
                     uniformValues: Xp(g, ft, I, cr, Le),
-                    terrainData: Ei,
+                    terrainData: Li,
                     projectionData: Ce.getProjectionData({
                       overscaledTileID: vt,
                       applyGlobeMatrix: !O,
@@ -30340,12 +30340,12 @@ uniform ${L} ${O} u_${R};
                   Nr = g.useProgram(He, cr),
                   Pi = ft || Nr.program !== Nt,
                   Qi = g.style.map.terrain && g.style.map.terrain.getTerrainData(gt),
-                  Ei = Ce.constantOr(null),
+                  Li = Ce.constantOr(null),
                   ra = ue && ue.constantOr(null);
-                if (Ei && xt.imageAtlas) {
+                if (Li && xt.imageAtlas) {
                   const Ua = xt.imageAtlas,
-                    da = Ua.patternPositions[Ei.to.toString()],
-                    Ca = Ua.patternPositions[Ei.from.toString()];
+                    da = Ua.patternPositions[Li.to.toString()],
+                    Ca = Ua.patternPositions[Li.from.toString()];
                   da && Ca && cr.setConstantPatternPositions(da, Ca)
                 } else if (ra) {
                   const Ua = I.layout.get("line-cap") === "round",
@@ -37614,7 +37614,7 @@ function zS(y, l) {
     }
   }), B(y, T), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var ES = ae('<span class="loading loading-spinner loading-md center-absolute absolute"></span>'),
   LS = ae('<dialog class="modal" closedby="any"><div class="modal-box"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <h3 class="flex items-center gap-1.5 text-lg font-bold"> </h3> <span class="text-base-content/80 text-sm"> </span> <div class="relative mt-4"><div><input class="text-base-content/80 min-w-10 grow text-sm font-medium" readonly=""/> <div class="h-10"><button> </button></div></div> <!></div></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
 
@@ -37676,7 +37676,7 @@ function DS(y, l) {
     }), ee(xe, Ae)
   }, [() => Sb(), () => Pb(), () => h(z).toString(), () => h(k) ? eg() : pm()]), Ci("close", T, () => _(!1)), B(y, T), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var RS = Yr('<svg><path d="M216.856 16.597A208.502 208.502 0 0 0 164.042 0c-2.275 4.113-4.933 9.645-6.766 14.046-19.692-2.961-39.203-2.961-58.533 0-1.832-4.4-4.55-9.933-6.846-14.046a207.809 207.809 0 0 0-52.855 16.638C5.618 67.147-3.443 116.4 1.087 164.956c22.169 16.555 43.653 26.612 64.775 33.193A161.094 161.094 0 0 0 79.735 175.3a136.413 136.413 0 0 1-21.846-10.632 108.636 108.636 0 0 0 5.356-4.237c42.122 19.702 87.89 19.702 129.51 0a131.66 131.66 0 0 0 5.355 4.237 136.07 136.07 0 0 1-21.886 10.653c4.006 8.02 8.638 15.67 13.873 22.848 21.142-6.58 42.646-16.637 64.815-33.213 5.316-56.288-9.08-105.09-38.056-148.36ZM85.474 135.095c-12.645 0-23.015-11.805-23.015-26.18s10.149-26.2 23.015-26.2c12.867 0 23.236 11.804 23.015 26.2.02 14.375-10.148 26.18-23.015 26.18Zm85.051 0c-12.645 0-23.014-11.805-23.014-26.18s10.148-26.2 23.014-26.2c12.867 0 23.236 11.804 23.015 26.2 0 14.375-10.148 26.18-23.015 26.18Z" fill="#5865F2"></path></svg>');
 
 function xm(y, l) {
@@ -37740,7 +37740,7 @@ function Fh(y, l) {
   }
   S(x), ke(() => ee(T, `Discord: ${l.username??""}`)), B(y, x), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var qS = ae('<input type="radio" class="tab max-[380px]:px-3"/>'),
   NS = ae('<div class="tabs tabs-border w-max font-medium"></div>');
 
@@ -38201,7 +38201,7 @@ function oP(y, l) {
   }
   S(G), S(Z), Eh("innerWidth", q => j(z, q, !0)), B(y, Z), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var lP = Yr('<svg><path d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"></path></svg>');
 
 function vg(y, l) {
@@ -38449,7 +38449,7 @@ function vP(y, l) {
     ee(Z, Ae), Xt(G, "aria-label", Me), Xt(be, "aria-label", Ee)
   }, [() => z0(), () => l3(), () => og()]), B(y, k), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var yP = ae('<span class="label"> </span>'),
   xP = ae('<span class="hidden px-1 text-[10px] peer-focus:block"> </span>'),
   bP = ae('<p class="text-error ml-3 text-sm"> </p>'),
@@ -38589,7 +38589,7 @@ function SP(y, l) {
     }
   }), B(y, T), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var PP = Yr('<svg><path d="M360-440h80v-110h80v110h80v-190l-120-80-120 80v190ZM480-80Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
 
 function IP(y, l) {
@@ -38978,7 +38978,7 @@ function WP(y, l) {
   }
   S(G), B(y, G), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var HP = Yr('<svg><path d="M40-160v-160q0-34 23.5-57t56.5-23h131q20 0 38 10t29 27q29 39 71.5 61t90.5 22q49 0 91.5-22t70.5-61q13-17 30.5-27t36.5-10h131q34 0 57 23t23 57v160H640v-91q-35 25-75.5 38T480-200q-43 0-84-13.5T320-252v92H40Zm440-160q-38 0-72-17.5T351-386q-17-25-42.5-39.5T253-440q22-37 93-58.5T480-520q63 0 134 21.5t93 58.5q-29 0-55 14.5T609-386q-22 32-56 49t-73 17ZM160-440q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T280-560q0 50-34.5 85T160-440Zm640 0q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T920-560q0 50-34.5 85T800-440ZM480-560q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-680q0 50-34.5 85T480-560Z"></path></svg>');
 
 function Up(y, l) {
@@ -39266,9 +39266,7 @@ function sI(y, l) {
     }), ee(be, Pe)
   }, [() => Wb(), () => l.url.toString(), () => h(x) ? eg() : pm()]), Ci("close", s, () => _(!1)), B(y, s), Wr()
 }
-Vi(["click"]);
-Vi(["click"]);
-Vi(["click"]);
+Ui(["click"]);
 var oI = Yr('<svg><path d="m576-160-56-56 104-104-104-104 56-56 104 104 104-104 56 56-104 104 104 104-56 56-104-104-104 104Zm79-360L513-662l56-56 85 85 170-170 56 57-225 226ZM80-280v-80h360v80H80Zm0-320v-80h360v80H80Z"></path></svg>');
 
 function lI(y, l) {
@@ -39351,7 +39349,7 @@ function dI(y, l) {
     ee(F, q), ee(me, ye)
   }, [() => l2(), () => c2()]), Ci("close", x, () => _(!1)), B(y, x), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 
 function pI() {
   const y = navigator.userAgent,
@@ -41910,7 +41908,7 @@ function r0(y, l) {
     h(k).focus()
   }), B(y, F), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var I6 = Yr('<svg><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-7-.5-14.5T799-507q-5 29-27 48t-52 19h-80q-33 0-56.5-23.5T560-520v-40H400v-80q0-33 23.5-56.5T480-720h40q0-23 12.5-40.5T563-789q-20-5-40.5-8t-42.5-3q-134 0-227 93t-93 227h200q66 0 113 47t47 113v40H400v110q20 5 39.5 7.5T480-160Z"></path></svg>');
 
 function Cy(y, l) {
@@ -42480,7 +42478,7 @@ function Z6(y, l) {
   }
   Eh("innerWidth", Se => j(x, Se, !0)), B(y, re), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var G6 = Yr('<svg><path d="M160-200h160v-320H160v320Zm240 0h160v-560H400v560Zm240 0h160v-240H640v240ZM80-120v-480h240v-240h320v320h240v400H80Z"></path></svg>');
 
 function Ay(y, l) {
@@ -42638,7 +42636,7 @@ function iC(y, l) {
     }
   }), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 
 function aC(y) {
   const l = new Date;
@@ -42687,7 +42685,7 @@ function i0(y, l) {
     ee(Z, l.title), ee(re, be), ee(ye, l.message)
   }, [() => aC(l.createdAt)]), B(y, x), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var oC = Yr('<svg><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h168q13-36 43.5-58t68.5-22q38 0 68.5 22t43.5 58h168q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm80-80h280v-80H280v80Zm0-160h400v-80H280v80Zm0-160h400v-80H280v80Zm200-190q13 0 21.5-8.5T510-820q0-13-8.5-21.5T480-850q-13 0-21.5 8.5T450-820q0 13 8.5 21.5T480-790ZM200-200v-560 560Z"></path></svg>');
 
 function a0(y, l) {
@@ -42924,7 +42922,7 @@ ${Tv()}`, !0), j(T, !0)
     }
   }), B(y, Z), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var gC = ae("<canvas></canvas>");
 
 function ky(y, l) {
@@ -43367,7 +43365,7 @@ function jC(y, l) {
     })
   }), Ci("close", Z, () => _(!1)), B(y, Z), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var qC = Yr('<svg><path d="M120-120v-190l358-358-58-56 58-56 76 76 124-124q5-5 12.5-8t15.5-3q8 0 15 3t13 8l94 94q5 6 8 13t3 15q0 8-3 15.5t-8 12.5L705-555l76 78-57 57-56-58-358 358H120Zm80-80h78l332-334-76-76-334 332v78Zm447-410 96-96-37-37-96 96 37 37Zm0 0-37-37 37 37Z"></path></svg>');
 
 function n0(y, l) {
@@ -44005,8 +44003,8 @@ function aA(y, l) {
                                 vi = P(pi, !0);
                               S(pi), S(kt);
                               var Ji = E(kt);
-                              ke((Zi, Li, ca, Ir) => {
-                                ee(pt, Zi), ee(dr, `${Li??""} `), ee(vi, ca), ee(Ji, ` ${Ir??""}`)
+                              ke((Zi, Ei, ca, Ir) => {
+                                ee(pt, Zi), ee(dr, `${Ei??""} `), ee(vi, ca), ee(Ji, ` ${Ir??""}`)
                               }, [() => W2(), () => H2(), () => X2(), () => Y2()]), B(tr, Zr)
                             },
                             $$slots: {
@@ -44322,7 +44320,7 @@ function aA(y, l) {
     }), Sr.disabled = h(Z) === 0
   }, [() => j2(), () => q2(), () => P0(), () => N2(), () => V2(), () => M3()]), Eh("innerHeight", It => j(ze, It, !0)), B(y, nr), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var nA = ae('<dialog class="modal"><div class="modal-box max-h-11/12"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <h3 class="flex items-center gap-1.5 text-lg font-bold"> </h3> <form class="mt-3 w-full"><p class="whitespace-pre-wrap"><!></p> <div class="mt-4"><!></div> <div class="mt-2 flex justify-end gap-2"><button class="btn btn-soft tooltip" type="button"> </button> <button class="btn btn-primary" type="submit"> </button></div></form></div></dialog>');
 
 function sA(y, l) {
@@ -44397,7 +44395,7 @@ function sA(y, l) {
     }
   }), B(y, z), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var oA = ae("<span> </span>");
 
 function s0(y, l) {
@@ -44504,7 +44502,7 @@ function hA(y, l) {
     ee(re, at), ee(q, nt), ee(ye, ` ${ot??""}`), ee(qe, `${ut??""} ${st??""}`), ee(Ye, h(T)), Xt(We, "placeholder", wt), ee(Me, Ct), Ee.disabled = h(z), ee(Qe, `${rr??""} `), ee(dt, Zt)
   }, [() => dm(), () => nw(), () => sw(), () => ow(), () => lw(), () => cw(), () => No(), () => dm(), () => uo()]), Ci("close", s, () => _(!1)), Tl(We, () => h(x), at => j(x, at)), B(y, s), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var dA = ae('<p class="text-base-content/80 text-sm"> </p>'),
   pA = ae('<span class="loading loading-spinner center-absolute absolute"></span>'),
   fA = ae('<h3 class="flex items-center gap-1.5 text-lg font-bold"> </h3> <p class="mt-4"> </p> <!> <div class="mt-4 flex justify-end gap-2"><form method="dialog"><button class="btn btn-soft"> </button></form> <button> <!></button></div>', 1);
@@ -44579,7 +44577,7 @@ function mA(y, l) {
     }
   }), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 
 function gA(y, l) {
   Gr(l, !0);
@@ -44738,7 +44736,7 @@ function yA(y, l) {
     return ((ot = h(he)) == null ? void 0 : ot.name) ?? ((ut = dw) == null ? void 0 : ut()) ?? "Sem estilos"
   }]), B(y, q), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var xA = ae('<div class="mt-1 flex w-full justify-center"><span class="badge badge-primary badge-sm"> </span></div>'),
   bA = ae('<div class="mt-1 flex w-full justify-center"><span class="badge badge-primary badge-sm"> </span></div>'),
   wA = ae('<button type="button"><div class="flex flex-1 flex-col items-center justify-center gap-1"><div class="relative flex size-16 items-center justify-center overflow-hidden rounded-full"><img class="pointer-events-none absolute inset-0 rounded-full object-cover"/></div></div> <div class="mt-1 flex w-full flex-col items-center text-center"><span class="line-clamp-1 w-full text-xs font-medium"> </span> <span class="text-base-content/70 mt-0.5 w-full text-[11px]"> </span></div> <!></button>'),
@@ -45069,7 +45067,7 @@ function IA(y, l) {
     ee(Me, Yt), ee(Qe, sr), ee(_t, Kt), Er(at, 1, `bg-base-200/80 hover:bg-base-300 group flex h-40 flex-col items-center justify-between rounded-lg p-3 text-xs transition disabled:opacity-50 ${h(G)===0?" border-primary bg-primary/10":""}`), at.disabled = h(K), ee(ut, vr), ee(Ct, Lr), ee(Zt, ii), ee(nr, mr), Gt.disabled = h(K), ee(Rt, ge), ir.disabled = h(K) || h(G) === null || h(re) === null || h(he) === null
   }, [() => pw(), () => fw(), () => mw(), () => M0(), () => gw(), () => _w(), () => q0(), () => No()]), Ci("close", We, () => _(!1)), B(y, We), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var MA = ae('<span class="center-absolute loading loading-spinner absolute"></span>'),
   CA = ae('<button type="button" class="relative hover:brightness-95 disabled:opacity-50"><!> <!></button>'),
   AA = ae('<span class="center-absolute loading loading-spinner absolute"></span>'),
@@ -45419,7 +45417,7 @@ function RA(y, l) {
     }
   }), bp(Ct, () => h(z), Kt => j(z, Kt)), B(y, be), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var FA = Yr('<svg><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"></path></svg>');
 
 function BA(y, l) {
@@ -45949,7 +45947,7 @@ function vk(y, l) {
 								${h(K)===0?" border-primary bg-primary/10":""}`), St.disabled = h(T), ee(Gt, Ne), ee(ir, Ge), vr.disabled = h(T), ee(Lr, pe), ii.disabled = Ve
   }, [() => kw(), () => zw(), () => q0(), () => Ew(), () => No(), () => h(T) || !h(me)(), () => Lw(), () => M0(), () => Dw(), () => No(), () => h(T) || !h(me)()]), Ci("close", qe, () => _(!1)), B(y, qe), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var yk = ae('<span class="tooltip font-flag ml-0.5"> </span>'),
   xk = ae('<div class="mt-1"><!></div>'),
   bk = ae('<button class="tooltip hover:border-primary size-7 overflow-hidden rounded-full"><img class="size-full object-cover"/></button>'),
@@ -46264,7 +46262,7 @@ function qk(y, l) {
                   Ji = P(vi),
                   Zi = E(Ji);
                 {
-                  var Li = Ir => {
+                  var Ei = Ir => {
                       var wr = ja();
                       ke(Ai => ee(wr, `(${Ai??""})`), [() => Pv({
                         reason: sb()
@@ -46287,7 +46285,7 @@ function qk(y, l) {
                       B(Ir, wr)
                     };
                   Te(Zi, Ir => {
-                    l.user.data.suspensionReason === "bot" ? Ir(Li) : Ir(ca, !1)
+                    l.user.data.suspensionReason === "bot" ? Ir(Ei) : Ir(ca, !1)
                   })
                 }
                 S(vi), ke(Ir => ee(Ji, `${Ir??""} `), [() => e5()]), B(pi, vi)
@@ -46296,15 +46294,15 @@ function qk(y, l) {
                 var vi = br(),
                   Ji = zt(vi);
                 {
-                  var Zi = Li => {
+                  var Zi = Ei => {
                     var ca = Sk(),
                       Ir = P(ca);
                     Fp(Ir, () => ob({
                       until: `<span class="text-secondary font-medium text-nowrap">${l.user.timeoutUntil.toLocaleString(navigator.language)}</span>`
-                    })), S(ca), B(Li, ca)
+                    })), S(ca), B(Ei, ca)
                   };
-                  Te(Ji, Li => {
-                    l.user.timeoutUntil && Li(Zi)
+                  Te(Ji, Ei => {
+                    l.user.timeoutUntil && Ei(Zi)
                   }, !0)
                 }
                 B(pi, vi)
@@ -46662,10 +46660,10 @@ function qk(y, l) {
         set open(Pt) {
           j(s, Pt, !0)
         }
-      }), ke((Pt, tr, Br, Zr, ci, ui, pt, kt, dr, pi, vi, Ji, Zi, Li) => {
+      }), ke((Pt, tr, Br, Zr, ci, ui, pt, kt, dr, pi, vi, Ji, Zi, Ei) => {
         rt = Er(je, 1, "btn relative size-12 p-0 shadow-md", null, rt, {
           "bg-red-500": h(q)
-        }), Xt(je, "title", Pt), ee(Gt, `${tr??""}: `), ee(ir, Br), ee(sr, `Level ${Zr??""}`), ee(Kt, ` (${ci??""}%) `), Xt(vr, "data-tip", ui), ee(te, pt), Xt(ne, "data-tip", kt), Xt(ve, "data-tip", dr), Xt(Ge, "data-tip", pi), Xt(At, "data-tip", vi), ee(qr, ` ${Ji??""}`), ee(di, ` ${Zi??""}`), Rr.disabled = h(Z), ee(Ri, ` ${Li??""}`)
+        }), Xt(je, "title", Pt), ee(Gt, `${tr??""}: `), ee(ir, Br), ee(sr, `Level ${Zr??""}`), ee(Kt, ` (${ci??""}%) `), Xt(vr, "data-tip", ui), ee(te, pt), Xt(ne, "data-tip", kt), Xt(ve, "data-tip", dr), Xt(Ge, "data-tip", pi), Xt(At, "data-tip", vi), ee(qr, ` ${Ji??""}`), ee(di, ` ${Zi??""}`), Rr.disabled = h(Z), ee(Ri, ` ${Ei??""}`)
       }, [() => jw(), () => Qm(), () => l.user.data.pixelsPainted.toLocaleString(navigator.language), () => Math.floor(l.user.data.level), () => Math.floor(l.user.data.level % 1 * 100), () => qw(), () => Nw(), () => Vw(), () => An.muted ? Uw() : Zw(), () => An.theme === "dark" ? Gw() : Ww(), () => T0(), () => g3(), () => E3(), () => _3()]), Ci("focus", je, () => {
         j(me, window.pwaInstallPrompt, !0)
       }), B(Ee, Qe)
@@ -46714,7 +46712,7 @@ function qk(y, l) {
   }
   B(y, xe), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var Nk = ae('<label class="tab grow font-semibold max-sm:h-10"><input type="radio" class="tab grow"/> <!> </label>'),
   Vk = ae('<div class="text-base-content/80 mt-20 text-center text-sm"> <!></div>'),
   Uk = ae('<span class="font-flag tooltip ml-0.5"> </span>'),
@@ -47221,7 +47219,7 @@ function lm(y, l) {
   }
   B(y, x), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var n8 = Yr('<svg><path d="m336-280 144-144 144 144 56-56-144-144 144-144-56-56-144 144-144-144-56 56 144 144-144 144 56 56ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"></path></svg>');
 
 function s8(y, l) {
@@ -47497,7 +47495,7 @@ function m8(y, l) {
     h(G) ? me(h(G)) : T.pending ? j(k, !0) : (Ue = h(F)) != null && Ue.length && me(h(F)[0])
   }), Tl(Ye, () => h(x), Ue => j(x, Ue)), B(y, ye), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var g8 = Yr('<svg><path d="M200-80q-50 0-85-35t-35-85q0-39 22.5-69.5T160-313v-334q-35-13-57.5-43.5T80-760q0-50 35-85t85-35q39 0 69.5 22.5T313-800h334q12-35 42.5-57.5T760-880q50 0 85 35t35 85q0 40-22.5 70.5T800-647v334q35 13 57.5 43.5T880-200q0 50-35 85t-85 35q-39 0-69.5-22.5T647-160H313q-13 35-43.5 57.5T200-80Zm0-640q17 0 28.5-11.5T240-760q0-17-11.5-28.5T200-800q-17 0-28.5 11.5T160-760q0 17 11.5 28.5T200-720Zm560 0q17 0 28.5-11.5T800-760q0-17-11.5-28.5T760-800q-17 0-28.5 11.5T720-760q0 17 11.5 28.5T760-720ZM313-240h334q9-26 28-45t45-28v-334q-26-9-45-28t-28-45H313q-9 26-28 45t-45 28v334q26 9 45 28t28 45Zm447 80q17 0 28.5-11.5T800-200q0-17-11.5-28.5T760-240q-17 0-28.5 11.5T720-200q0 17 11.5 28.5T760-160Zm-560 0q17 0 28.5-11.5T240-200q0-17-11.5-28.5T200-240q-17 0-28.5 11.5T160-200q0 17 11.5 28.5T200-160Zm0-600Zm560 0Zm0 560Zm-560 0Z"></path></svg>');
 
 function Gm(y, l) {
@@ -48836,7 +48834,7 @@ function Z8(y, l) {
                     }
                     var Zi = E(vi, 2);
                     {
-                      var Li = gi => {
+                      var Ei = gi => {
                         var Cr = z8();
                         Cr.__click = () => {
                           const Ar = _e();
@@ -48848,7 +48846,7 @@ function Z8(y, l) {
                         }), S(Cr), ke(() => Cr.disabled = h(z)), B(gi, Cr)
                       };
                       Te(Zi, gi => {
-                        bt.hasPermission(Ba.tools.selectArea.ban) && gi(Li)
+                        bt.hasPermission(Ba.tools.selectArea.ban) && gi(Ei)
                       })
                     }
                     S(kt);
@@ -48861,8 +48859,8 @@ function Z8(y, l) {
                         var _i = P(Cr);
                         {
                           var Ar = Xi => {
-                              var Ui = E8();
-                              B(Xi, Ui)
+                              var Vi = E8();
+                              B(Xi, Vi)
                             },
                             ri = Xi => {
                               hm(Xi, {
@@ -48884,7 +48882,7 @@ function Z8(y, l) {
                     Hi(Ai, 23, () => h(x), gi => gi.id, (gi, Cr, _i, Ar) => {
                       const ri = Je(() => xe.has(h(Cr).id)),
                         Xi = Je(() => h(ze).get(h(Cr).id) ?? 0),
-                        Ui = Je(() => h(ri) || h(Xi) > 0);
+                        Vi = Je(() => h(ri) || h(Xi) > 0);
                       var Di = N8();
                       let ki;
                       Di.__click = () => {
@@ -49002,7 +49000,7 @@ function Z8(y, l) {
                       }
                       S(ua), S(Di), ke(pa => {
                         ki = Er(Di, 1, "hover:bg-base-300 cursor-pointer svelte-15blegn", null, ki, {
-                          "bg-base-200": h(Ui)
+                          "bg-base-200": h(Vi)
                         }), cm(yi, h(ri)), yi.indeterminate = !h(ri) && h(Xi) > 0, ee(Da, `${pa??""} `)
                       }, [() => h(Cr).painted.latitudes.length.toLocaleString(navigator.language)]), B(gi, Di)
                     }), S(Ai), S(Br), S(tr), ke(() => {
@@ -49043,7 +49041,7 @@ function Z8(y, l) {
   }
   B(y, ne), Wr()
 }
-Vi(["pointerdown", "click"]);
+Ui(["pointerdown", "click"]);
 var G8 = Yr('<svg><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"></path></svg>');
 
 function wg(y, l) {
@@ -49746,7 +49744,7 @@ function yz(y, l) {
     ee(Qe, `${h(K).regionPixel[0]??""}, ${h(K).regionPixel[1]??""}`), ee(Zt, ` ${lt??""}`)
   }, [() => l5()]), Eh("innerHeight", lt => j(k, lt, !0)), B(y, qe), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 
 function xz(y) {
   var x;
@@ -50046,7 +50044,7 @@ function Rz(y, l) {
     ee(q, ze), ee(be, Se), ee(We, Pe)
   }, [() => _5(), () => v5(), () => h(F) ? y5() : x5()]), B(y, G), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var Fz = ae('<p class="mt-1 text-center text-sm"> </p>'),
   Bz = ae('<button class="text-base-content/80 absolute top-1/2 left-full ml-2 size-10 -translate-y-1/2 rounded-full text-[10px] font-bold">MAX</button>'),
   Oz = ae('<span class="loading loading-spinner center-absolute absolute"></span>'),
@@ -50141,7 +50139,7 @@ function c0(y, l) {
     }), We.disabled = l.userDroplets < h(x) || h(z) || !_(), ee(Ae, ` ${je??""} `), ee(Ee, rt)
   }, [() => l.title(_()), () => Op(), () => h(x).toLocaleString(navigator.language), () => Sp()]), Tl(q, _), B(y, T), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var qz = Yr('<svg><path d="M346-140 100-386q-10-10-15-22t-5-25q0-13 5-25t15-22l230-229-106-106 62-65 400 400q10 10 14.5 22t4.5 25q0 13-4.5 25T686-386L440-140q-10 10-22 15t-25 5q-13 0-25-5t-22-15Zm47-506L179-432h428L393-646Zm399 526q-36 0-61-25.5T706-208q0-27 13.5-51t30.5-47l42-54 44 54q16 23 30 47t14 51q0 37-26 62.5T792-120Z"></path></svg>');
 
 function Nz(y, l) {
@@ -50280,7 +50278,7 @@ function Qz(y, l) {
   }
   S(T), S(k), ke(() => Er(k, 1, `flex min-h-0 flex-col ${_()??""}`)), B(y, k), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var eE = ae('<div class="size-16 sm:size-24"><img class="size-full object-cover"/></div>'),
   tE = ae('<span class="badge badge-secondary absolute -top-2 -right-2 text-[10px] font-bold" aria-label="New"> </span>'),
   rE = ae('<button type="button"><div class="relative"><!> <!></div></button>'),
@@ -50520,7 +50518,7 @@ function By(y, l) {
     q.disabled = l.frames.length <= 1 || x(), be.disabled = l.frames.length <= 1 || x()
   }), B(y, he), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var dE = ae('<button type="button"><div><img class="pixelated size-full object-cover"/></div></button>'),
   pE = ae('<span class="loading loading-spinner loading-sm"></span>'),
   fE = ae('<span class="text-lg font-bold"> </span> <span class="text-sm">droplets</span>', 1),
@@ -50720,7 +50718,7 @@ function wE(y, l) {
     ye.disabled = h(z).length <= 1 || x(), qe.disabled = h(z).length <= 1 || x()
   }), B(y, me), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var TE = ae('<button class="btn btn-primary min-w-32 rounded-full text-sm sm:min-w-40 sm:text-base"> </button>'),
   SE = ae('<button class="btn btn-primary min-w-32 rounded-full text-sm sm:min-w-40 sm:text-base"> </button>'),
   PE = ae('<div class="mx-auto flex w-full max-w-4xl flex-col gap-6 px-4 sm:gap-10"><div class="flex flex-col items-center gap-3"><h4 class="text-base-content/70 text-sm font-semibold"> </h4> <div class="flex w-full items-center justify-center gap-2 text-center sm:gap-4"><button class="btn btn-circle btn-primary btn-sm flex-shrink-0"><!></button> <div class="grid w-full max-w-[280px] grid-cols-[1fr_auto_1fr] items-center gap-2 sm:max-w-[400px] sm:gap-4 md:max-w-[500px]"><span class="text-base-content/40 truncate text-right text-xs sm:text-sm"> </span> <span class="px-2 text-center text-lg font-bold whitespace-nowrap sm:text-2xl md:text-3xl"> </span> <span class="text-base-content/40 truncate text-left text-xs sm:text-sm"> </span></div> <button class="btn btn-circle btn-primary btn-sm flex-shrink-0"><!></button></div> <!></div> <div class="flex flex-col items-center gap-3"><h4 class="text-base-content/70 text-sm font-semibold"> </h4> <div class="flex w-full items-center justify-center gap-2 text-center sm:gap-4"><button class="btn btn-circle btn-primary btn-sm shrink-0"><!></button> <div class="grid w-full max-w-[280px] grid-cols-[1fr_auto_1fr] items-center gap-2 sm:max-w-[400px] sm:gap-4 md:max-w-[500px]"><span class="text-base-content/40 truncate text-right text-xs sm:text-sm"> </span> <span class="px-2 text-center text-lg font-bold whitespace-nowrap sm:text-2xl md:text-3xl"> </span> <span class="text-base-content/40 truncate text-left text-xs sm:text-sm"> </span></div> <button class="btn btn-circle btn-primary btn-sm shrink-0"><!></button></div> <!></div></div>');
@@ -50863,7 +50861,7 @@ function IE(y, l) {
     ee(xe, Et), ee(Ae, (ir = l.fonts[(_() - 1 + l.fonts.length) % l.fonts.length]) == null ? void 0 : ir.name), Qn(Me, Ut), ee(Ee, l.userName), ee(Ue, (kr = l.fonts[(_() + 1) % l.fonts.length]) == null ? void 0 : kr.name), ee(ot, Gt), ee(Zt, (_r = l.styles[(x() - 1 + l.styles.length) % l.styles.length]) == null ? void 0 : _r.name), Qn(lt, Rt), ee(ht, l.userName), ee(Vt, (fr = l.styles[(x() + 1) % l.styles.length]) == null ? void 0 : fr.name)
   }, [() => C5(), () => q(h(Z)), () => A5(), () => q(h(K)) + q(h(Z))]), B(y, ye), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var ME = ae('<span class="badge badge-secondary absolute -top-2 -right-2 text-[10px] font-bold" aria-label="New"> </span>'),
   CE = ae('<button class="btn btn-sm btn-primary w-full" disabled> </button>'),
   AE = ae('<span class="loading loading-spinner loading-xs"></span>'),
@@ -51006,7 +51004,7 @@ function RE(y, l) {
 		${k()?"ring-primary ring-2":""}`), z.disabled = _(), ee(G, l.frameName)
   }), B(y, z), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var FE = ae('<div class="text-base-content/60 flex flex-col items-center justify-center py-12 text-sm"> </div>'),
   BE = ae('<div class="flex flex-col"><div class="mb-4 flex items-center gap-2"><button type="button" class="btn btn-ghost btn-sm gap-1"><!> </button> <h2 class="text-lg font-semibold"> </h2></div> <div class="bg-base-300 mb-4 shrink-0 rounded-xl p-4"><!></div> <div><div class="grid grid-cols-2 gap-2 px-1 pb-4 sm:grid-cols-3 sm:gap-3 md:grid-cols-4"></div> <!></div></div>');
 
@@ -51161,7 +51159,7 @@ function OE(y, l) {
     return ((Ae = u3) == null ? void 0 : Ae()) ?? "All Frames"
   }]), B(y, re), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var jE = ae('<div class="flex flex-col gap-6 px-6 pb-6"><section><div class="text-primary flex items-center gap-1"><!> <h3 class="text-xl font-medium"> </h3></div> <p class="text-base-content/80 text-sm"> </p> <div class="mt-3 grid gap-3 sm:grid-cols-2"><!> <!></div></section> <section><div class="text-primary flex items-center gap-1"><!> <h3 class="text-xl font-medium"> </h3></div> <div class="mt-3"><!></div></section> <section><!></section></div>'),
   qE = ae('<div class="flex flex-col px-6 pb-6"><!></div>'),
   NE = ae('<div><section class="not-stuck:border-transparent stuck:border-base-content/10 bg-base-100/70 sticky top-0 z-10 border-b px-6 pt-6 pb-4 backdrop-blur-sm"><div class="relative flex items-center gap-1"><!> <h3 class="text-3xl font-bold"> </h3> <div class="mr-4 ml-auto"><!></div> <form method="dialog" class="absolute -top-4 -right-4"><button class="btn btn-sm btn-circle btn-ghost">✕</button></form></div></section> <!></div>'),
@@ -51753,7 +51751,7 @@ function ZE(y, l) {
     ee(Ct, fe), ee(Dt, h(Ye).name), ee(jt, `${h(Ye).prev??""} `), ee(St, `(+${h(Ye).new-h(Ye).prev})`), ee(Rt, h(Ye).new), ee(_r, `${ve??""} `), ee(Kt, ie), ee(mr, Y), ee(se, Fe), ee(_e, Ne), ee(oe, Ge)
   }, [() => uo(), () => uo(), () => uo(), () => k5(), () => No(), () => O0(), () => uo()]), Ci("close", at, () => qe(!1)), B(y, dt), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var GE = Yr('<svg><path d="M480-680q-33 0-56.5-23.5T400-760q0-33 23.5-56.5T480-840q33 0 56.5 23.5T560-760q0 33-23.5 56.5T480-680Zm-60 560v-480h120v480H420Z"></path></svg>');
 
 function WE(y, l) {
@@ -52269,7 +52267,7 @@ function pL(y, l) {
     ee(st, `${h(xe).length??""} events`), ee(Ct, `${h(Ye)??""} pixels`), ee(Zt, `${h(We)??""} users`), Vt.disabled = h(z) || h(xe).length === 0 || h(ze) === 0, ee(mr, te), Xt(ge, "min", h(s)), Xt(ge, "max", h(F)), ee(U, _e), ee(se, Re)
   }, [() => rt(h(s)), () => rt(h(F)), () => rt(h(Z))]), Tl(ge, () => h(Z), te => j(Z, te)), dn(3, dt, () => Jn), B(y, dt), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 var fL = Yr('<svg><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"></path></svg>');
 
 function mL(y, l) {
@@ -52347,11 +52345,11 @@ function rR(y, l) {
         const {
           lat: vi,
           lng: Ji
-        } = h(G).unproject([dr.clientX, dr.clientY]), Zi = z.latLonToPixels(vi, Ji, x), Li = Math.floor(Zi[0]), ca = Math.floor(Zi[1]);
-        if (pt[0] !== Li || pt[1] !== ca) {
+        } = h(G).unproject([dr.clientX, dr.clientY]), Zi = z.latLonToPixels(vi, Ji, x), Ei = Math.floor(Zi[0]), ca = Math.floor(Zi[1]);
+        if (pt[0] !== Ei || pt[1] !== ca) {
           const Ir = z.latLonToPixelBoundsLatLon(vi, Ji, x),
             wr = hg(Ir, !0);
-          (pi = h(G).getSource(Pe)) == null || pi.setCoordinates(wr), pt = [Li, ca]
+          (pi = h(G).getSource(Pe)) == null || pi.setCoordinates(wr), pt = [Ei, ca]
         }
       }
     }
@@ -52382,7 +52380,7 @@ function rR(y, l) {
       ...U0.tokyo
     });
     const kt = await new Promise(Zi => {
-        const Li = new tp.Map({
+        const Ei = new tp.Map({
           style: qe(An.theme),
           center: pt,
           zoom: pt.zoom,
@@ -52393,12 +52391,12 @@ function rR(y, l) {
           maxPitch: 0,
           attributionControl: !1
         });
-        Li.touchZoomRotate.disableRotation(), Li.on("styledata", ca => {
-          xe || (An.theme === "custom-winter" && (Li.setLayoutProperty("poi_transit", "visibility", "none"), Li.setLayoutProperty("poi_r20", "visibility", "none"), Li.setLayoutProperty("poi_r7", "visibility", "none"), Li.setLayoutProperty("poi_r1", "visibility", "none"), Li.setLayoutProperty("building", "visibility", "none"), Li.setLayoutProperty("building-3d", "visibility", "none"), Li.setLayoutProperty("landuse_pitch", "visibility", "none"), Li.setLayoutProperty("landuse_hospital", "visibility", "none"), Li.setLayoutProperty("landuse_school", "visibility", "none"), Li.setLayoutProperty("landuse_residential", "visibility", "none"), Li.setLayoutProperty("waterway_tunnel", "visibility", "none"), Li.setFilter("water", ["all", ["!=", "brunnel", "tunnel"],
+        Ei.touchZoomRotate.disableRotation(), Ei.on("styledata", ca => {
+          xe || (An.theme === "custom-winter" && (Ei.setLayoutProperty("poi_transit", "visibility", "none"), Ei.setLayoutProperty("poi_r20", "visibility", "none"), Ei.setLayoutProperty("poi_r7", "visibility", "none"), Ei.setLayoutProperty("poi_r1", "visibility", "none"), Ei.setLayoutProperty("building", "visibility", "none"), Ei.setLayoutProperty("building-3d", "visibility", "none"), Ei.setLayoutProperty("landuse_pitch", "visibility", "none"), Ei.setLayoutProperty("landuse_hospital", "visibility", "none"), Ei.setLayoutProperty("landuse_school", "visibility", "none"), Ei.setLayoutProperty("landuse_residential", "visibility", "none"), Ei.setLayoutProperty("waterway_tunnel", "visibility", "none"), Ei.setFilter("water", ["all", ["!=", "brunnel", "tunnel"],
             ["!=", "class", "swimming_pool"]
-          ])), Se(Li), Qe(), xe = !0)
-        }), Li.on("style.load", () => {
-          Zi(Li)
+          ])), Ei.moveLayer("water", "waterway"), Se(Ei), Qe(), xe = !0)
+        }), Ei.on("style.load", () => {
+          Zi(Ei)
         })
       }),
       dr = yn.refreshIntervalMs;
@@ -52430,9 +52428,9 @@ function rR(y, l) {
       Ue()
     }), kt.on("click", async Zi => {
       var Ai;
-      const Li = Zi.lngLat.lat,
+      const Ei = Zi.lngLat.lat,
         ca = Zi.lngLat.lng,
-        Ir = [Li, ca];
+        Ir = [Ei, ca];
       if (h(be).name === "paintingPixel" || h(be).name === "selectArea") return;
       if (h(be).name === "selectHq") {
         h(be).hq = Ir, (Ai = h(st)) == null || Ai.clearAndPlace(Ir);
@@ -52444,7 +52442,7 @@ function rR(y, l) {
         return
       }
       so({
-        lat: Li,
+        lat: Ei,
         lng: ca
       }, wr), j(be, {
         name: "pixelSelected",
@@ -52840,18 +52838,18 @@ function rR(y, l) {
               var _i = wL(),
                 Ar = P(_i);
               {
-                var ri = Ui => {
+                var ri = Vi => {
                   var Di = bL(),
                     ki = P(Di);
                   N0(ki, {
                     get role() {
                       return bt.data.role
                     }
-                  }), S(Di), B(Ui, Di)
+                  }), S(Di), B(Vi, Di)
                 };
-                Te(Ar, Ui => {
+                Te(Ar, Vi => {
                   var Di;
-                  (Di = bt.data) != null && Di.role && bt.data.role !== "user" && Ui(ri)
+                  (Di = bt.data) != null && Di.role && bt.data.role !== "user" && Vi(ri)
                 })
               }
               var Xi = E(Ar, 2);
@@ -52870,8 +52868,8 @@ function rR(y, l) {
                 onnotificationclick: () => {
                   j(Yt, !0)
                 },
-                ontogglepixelarts: Ui => {
-                  j(rt, Ui, !0)
+                ontogglepixelarts: Vi => {
+                  j(rt, Vi, !0)
                 }
               }), S(_i), dn(3, _i, () => Jn, () => ({
                 duration: 150
@@ -52939,7 +52937,7 @@ function rR(y, l) {
           }), S(Ar);
           var Xi = E(Ar, 2);
           {
-            var Ui = zi => {
+            var Vi = zi => {
               var yi = SL();
               yi.__click = () => {
                 h(G) && j(be, {
@@ -52952,7 +52950,7 @@ function rR(y, l) {
               }), S(yi), B(zi, yi)
             };
             Te(Xi, zi => {
-              bt.hasPermission(Ba.tools.autoPainter) && zi(Ui)
+              bt.hasPermission(Ba.tools.autoPainter) && zi(Vi)
             })
           }
           var Di = E(Xi, 2);
@@ -52990,7 +52988,7 @@ function rR(y, l) {
               };
               var Xi = P(Ar);
               {
-                var Ui = ki => {
+                var Vi = ki => {
                     rh(ki, {
                       class: "size-5"
                     })
@@ -53001,7 +52999,7 @@ function rR(y, l) {
                     })
                   };
                 Te(Xi, ki => {
-                  h(he) ? ki(Ui) : ki(Di, !1)
+                  h(he) ? ki(Vi) : ki(Di, !1)
                 })
               }
               S(Ar), S(_i), ke(ki => {
@@ -53154,7 +53152,7 @@ function rR(y, l) {
     var Ht = P(tt);
     pt(Ht), S(tt);
     var Qt = E(tt, 2);
-    let Li;
+    let Ei;
     var Sr = P(Qt);
     {
       var ei = Ir => {
@@ -53239,10 +53237,10 @@ function rR(y, l) {
                 onclose: () => j(be, {
                   name: "mainMenu"
                 }, !0),
-                onclickshare: Ui => {
-                  j(rr, Ui, !0), j(Ct, !0)
+                onclickshare: Vi => {
+                  j(rr, Vi, !0), j(Ct, !0)
                 },
-                onclickpaint: ([Ui, Di]) => {
+                onclickpaint: ([Vi, Di]) => {
                   var zi, yi, fi;
                   if (!bt.data) {
                     j(Kt, !0);
@@ -53256,7 +53254,7 @@ function rR(y, l) {
                     Bt.warning(r3());
                     return
                   }
-                  const ki = dg(z.latLonToPixelBoundsLatLon(Ui, Di, x));
+                  const ki = dg(z.latLonToPixelBoundsLatLon(Vi, Di, x));
                   (yi = h(G)) == null || yi.flyTo({
                     center: {
                       lat: ki[0],
@@ -53264,24 +53262,24 @@ function rR(y, l) {
                     }
                   }), j(be, {
                     name: "paintingPixel",
-                    clickedLatLon: [Ui, Di]
+                    clickedLatLon: [Vi, Di]
                   }, !0), (fi = h(st)) == null || fi.clear()
                 },
-                onclickregion: Ui => {
-                  j(Zt, Ui, !0), j(V, !0)
+                onclickregion: Vi => {
+                  j(Zt, Vi, !0), j(V, !0)
                 },
-                onclickmodaction: (Ui, Di, ki, zi) => {
+                onclickmodaction: (Vi, Di, ki, zi) => {
                   var tn, Yi, sa;
                   (tn = h(G)) == null || tn.setZoom(Math.max(h(re), x + 3.5));
                   const yi = z.latLonToPixelBoundsLatLon(ki[0], ki[1], x);
                   if ((Yi = h(G)) == null || Yi.setCenter({
                       lat: yi.min[0],
                       lng: (yi.max[1] + yi.min[1]) / 2
-                    }), !(Ui != null && Ui.paintedBy)) {
+                    }), !(Vi != null && Vi.paintedBy)) {
                     Bt.error(kv());
                     return
                   }
-                  const fi = Ui.paintedBy;
+                  const fi = Vi.paintedBy;
                   j(Ut, Di, !0), j(Gt, [{
                     id: fi.id,
                     name: fi.name,
@@ -53353,7 +53351,7 @@ function rR(y, l) {
                       duration: 100
                     })), B(Di, ki)
                   },
-                  Ui = Di => {
+                  Vi = Di => {
                     var ki = br(),
                       zi = zt(ki);
                     {
@@ -53494,7 +53492,7 @@ function rR(y, l) {
                     B(Di, ki)
                   };
                 Te(ri, Di => {
-                  h(be).name === "paintingPixel" && h(wt) ? Di(Xi) : Di(Ui, !1)
+                  h(be).name === "paintingPixel" && h(wt) ? Di(Xi) : Di(Vi, !1)
                 }, !0)
               }
               B(_i, Ar)
@@ -53521,7 +53519,7 @@ function rR(y, l) {
         hidden: h(q)
       }), Zi = Er(tt, 1, "absolute bottom-3 left-3 z-30", null, Zi, {
         hidden: h(q)
-      }), Li = Er(Qt, 1, "absolute bottom-3 left-1/2 z-30 -translate-x-1/2", null, Li, {
+      }), Ei = Er(Qt, 1, "absolute bottom-3 left-1/2 z-30 -translate-x-1/2", null, Ei, {
         hidden: h(q)
       }), ca = Er(Dr, 1, "absolute right-3 bottom-3 z-30", null, ca, {
         hidden: h(q)
@@ -53797,7 +53795,7 @@ function rR(y, l) {
   }
   Eh("innerWidth", pt => j(Z, pt, !0)), B(y, J), Wr()
 }
-Vi(["click"]);
+Ui(["click"]);
 export {
   rR as component
 };

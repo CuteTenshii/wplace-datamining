@@ -9,12 +9,12 @@ import {
   j as o,
   i as r,
   g as p
-} from "./Pvk3sEWX.js";
+} from "./BxNCv_Ey.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "79d1d83bf3d0a0f1d4fd38112e69555e6d7fe1e9"
+      id: "393d80b8e89856a8eed8a9424bbd25f96eb3752b"
     }
   } catch {}
 })();
@@ -30,19 +30,19 @@ const E = "true",
   A = "0x4AAAAAABpHqZ-6i7uL0nmG",
   T = "https://backend.wplace.live",
   w = "theme";
-var l, d, g, u, c, f, h, b;
+var l, g, u, d, c, h, f, b;
 class y {
   constructor() {
     n(this, l, s(!1));
+    n(this, g, s(!1));
+    n(this, u, s(p(I())));
     n(this, d, s(!1));
-    n(this, g, s(p(I())));
-    n(this, u, s(!1));
     n(this, c, s("custom-winter"));
-    n(this, f, s(!0));
-    n(this, h, s(p(Date.now())));
+    n(this, h, s(!0));
+    n(this, f, s(p(Date.now())));
     n(this, b, s(void 0));
     setInterval(() => {
-      r(a(this, h), Date.now(), !0)
+      r(a(this, f), Date.now(), !0)
     }, 500), this.theme = localStorage.getItem(w), this.theme !== "dark" && this.theme !== "custom-winter" && (this.theme = "custom-winter")
   }
   get dropletsDialogOpen() {
@@ -52,22 +52,22 @@ class y {
     r(a(this, l), e, !0)
   }
   get muted() {
-    return o(a(this, d))
-  }
-  set muted(e) {
-    r(a(this, d), e, !0)
-  }
-  get language() {
     return o(a(this, g))
   }
-  set language(e) {
+  set muted(e) {
     r(a(this, g), e, !0)
   }
-  get turnstatileLoaded() {
+  get language() {
     return o(a(this, u))
   }
-  set turnstatileLoaded(e) {
+  set language(e) {
     r(a(this, u), e, !0)
+  }
+  get turnstatileLoaded() {
+    return o(a(this, d))
+  }
+  set turnstatileLoaded(e) {
+    r(a(this, d), e, !0)
   }
   get theme() {
     return o(a(this, c))
@@ -76,13 +76,13 @@ class y {
     r(a(this, c), e, !0), localStorage.setItem(w, e), document.documentElement.setAttribute("data-theme", e)
   }
   get snowflakesEnabled() {
-    return o(a(this, f))
+    return o(a(this, h))
   }
   set snowflakesEnabled(e) {
-    r(a(this, f), e, !0)
+    r(a(this, h), e, !0)
   }
   get now() {
-    return o(a(this, h))
+    return o(a(this, f))
   }
   get captcha() {
     return _ ? o(a(this, b)) : {
@@ -94,7 +94,7 @@ class y {
     r(a(this, b), e, !0)
   }
 }
-l = new WeakMap, d = new WeakMap, g = new WeakMap, u = new WeakMap, c = new WeakMap, f = new WeakMap, h = new WeakMap, b = new WeakMap;
+l = new WeakMap, g = new WeakMap, u = new WeakMap, d = new WeakMap, c = new WeakMap, h = new WeakMap, f = new WeakMap, b = new WeakMap;
 const U = new y;
 
 function I() {

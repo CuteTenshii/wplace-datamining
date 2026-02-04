@@ -1,11 +1,11 @@
 import {
   g as r
-} from "./CWSLadsn.js";
+} from "./DZjUHX_D.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "79d1d83bf3d0a0f1d4fd38112e69555e6d7fe1e9"
+      id: "393d80b8e89856a8eed8a9424bbd25f96eb3752b"
     }
   } catch {}
 })();
@@ -23,14 +23,14 @@ const i = () => "Description",
   p = () => "Descripción",
   u = () => "Description",
   c = () => "Descrizione",
-  f = () => "説明",
-  l = () => "Opis",
+  l = () => "説明",
+  f = () => "Opis",
   a = () => "Описание",
   _ = () => "Опис",
   b = () => "Mô tả",
   v = (n = {}, t = {}) => {
     const e = t.locale ?? r();
-    return e === "en" ? i() : e === "pt" ? s() : e === "ch" ? o() : e === "de" ? d() : e === "es" ? p() : e === "fr" ? u() : e === "it" ? c() : e === "jp" ? f() : e === "pl" ? l() : e === "ru" ? a() : e === "uk" ? _() : b()
+    return e === "en" ? i() : e === "pt" ? s() : e === "ch" ? o() : e === "de" ? d() : e === "es" ? p() : e === "fr" ? u() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? f() : e === "ru" ? a() : e === "uk" ? _() : b()
   },
   x = () => "Pixels painted",
   g = () => "Pixels pintados",
