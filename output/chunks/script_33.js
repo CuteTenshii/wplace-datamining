@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./DZjUHX_D.js";
+} from "./DFupwelK.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "393d80b8e89856a8eed8a9424bbd25f96eb3752b"
+      id: "70dda2bcd37c81e0ed25f634cf032d8abd8db068"
     }
   } catch {}
 })();
@@ -25,12 +25,12 @@ const o = () => "Add profile picture",
   d = () => "Aggiungi immagine del profilo",
   l = () => "プロフィール画像を追加",
   f = () => "Dodaj zdjęcie profilowe",
-  a = () => "Добавить изображение профиля",
-  c = () => "Додати зображення профілю",
+  c = () => "Добавить изображение профиля",
+  a = () => "Додати зображення профілю",
   y = () => "Thêm ảnh đại diện",
   le = (r = {}, t = {}) => {
     const e = t.locale ?? n();
-    return e === "en" ? o() : e === "pt" ? u() : e === "ch" ? i() : e === "de" ? _() : e === "es" ? s() : e === "fr" ? p() : e === "it" ? d() : e === "jp" ? l() : e === "pl" ? f() : e === "ru" ? a() : e === "uk" ? c() : y()
+    return e === "en" ? o() : e === "pt" ? u() : e === "ch" ? i() : e === "de" ? _() : e === "es" ? s() : e === "fr" ? p() : e === "it" ? d() : e === "jp" ? l() : e === "pl" ? f() : e === "ru" ? c() : e === "uk" ? a() : y()
   },
   g = () => "Eraser",
   m = () => "Borracha",
@@ -60,7 +60,7 @@ const o = () => "Add profile picture",
   C = () => "Политика возврата средств",
   F = () => "Політика повернення коштів",
   S = () => "Chính sách hoàn tiền",
-  ae = (r = {}, t = {}) => {
+  ce = (r = {}, t = {}) => {
     const e = t.locale ?? n();
     return e === "en" ? D() : e === "pt" ? A() : e === "ch" ? R() : e === "de" ? E() : e === "es" ? T() : e === "fr" ? G() : e === "it" ? I() : e === "jp" ? B() : e === "pl" ? L() : e === "ru" ? C() : e === "uk" ? F() : S()
   },
@@ -76,7 +76,7 @@ const o = () => "Add profile picture",
   U = () => "Для запросов на возврат средств и деталей обработки см. нашу",
   W = () => "Для запитів на повернення та деталей обробки дивіться нашу",
   X = () => "Để yêu cầu hoàn tiền và chi tiết xử lý, hãy xem",
-  ce = (r = {}, t = {}) => {
+  ae = (r = {}, t = {}) => {
     const e = t.locale ?? n();
     return e === "en" ? V() : e === "pt" ? Y() : e === "ch" ? N() : e === "de" ? O() : e === "es" ? H() : e === "fr" ? J() : e === "it" ? K() : e === "jp" ? M() : e === "pl" ? Q() : e === "ru" ? U() : e === "uk" ? W() : X()
   },
@@ -97,5 +97,5 @@ const o = () => "Add profile picture",
     return e === "en" ? Z() : e === "pt" ? $() : e === "ch" ? ee() : e === "de" ? re() : e === "es" ? te() : e === "fr" ? ne() : e === "it" ? oe() : e === "jp" ? ue() : e === "pl" ? ie() : e === "ru" ? _e() : e === "uk" ? se() : pe()
   };
 export {
-  le as a, ae as b, fe as e, ce as r, ye as y
+  le as a, ce as b, fe as e, ae as r, ye as y
 };

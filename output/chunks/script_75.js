@@ -1,11 +1,11 @@
 import {
   g as o
-} from "./DZjUHX_D.js";
+} from "./DFupwelK.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "393d80b8e89856a8eed8a9424bbd25f96eb3752b"
+      id: "70dda2bcd37c81e0ed25f634cf032d8abd8db068"
     }
   } catch {}
 })();
@@ -24,13 +24,13 @@ const n = () => "Administrator",
   a = () => "Administrateur",
   c = () => "Amministratore",
   l = () => "管理者",
-  _ = () => "Administrator",
-  f = () => "Администратор",
+  f = () => "Administrator",
+  _ = () => "Администратор",
   m = () => "Адміністратор",
   p = () => "Quản trị viên",
   lr = (t = {}, e = {}) => {
     const r = e.locale ?? o();
-    return r === "en" ? n() : r === "pt" ? u() : r === "ch" ? d() : r === "de" ? i() : r === "es" ? s() : r === "fr" ? a() : r === "it" ? c() : r === "jp" ? l() : r === "pl" ? _() : r === "ru" ? f() : r === "uk" ? m() : p()
+    return r === "en" ? n() : r === "pt" ? u() : r === "ch" ? d() : r === "de" ? i() : r === "es" ? s() : r === "fr" ? a() : r === "it" ? c() : r === "jp" ? l() : r === "pl" ? f() : r === "ru" ? _() : r === "uk" ? m() : p()
   },
   b = () => "Discord Moderator",
   g = () => "Moderador do Discord",
@@ -44,7 +44,7 @@ const n = () => "Administrator",
   v = () => "Модератор Discord",
   A = () => "Модератор Discord",
   U = () => "Discord Moderator",
-  _r = (t = {}, e = {}) => {
+  fr = (t = {}, e = {}) => {
     const r = e.locale ?? o();
     return r === "en" ? b() : r === "pt" ? g() : r === "ch" ? M() : r === "de" ? y() : r === "es" ? h() : r === "fr" ? D() : r === "it" ? k() : r === "jp" ? j() : r === "pl" ? w() : r === "ru" ? v() : r === "uk" ? A() : U()
   },
@@ -60,7 +60,7 @@ const n = () => "Administrator",
   z = () => "Глобальный модератор",
   B = () => "Глобальний модератор",
   Q = () => "Global Moderator",
-  fr = (t = {}, e = {}) => {
+  _r = (t = {}, e = {}) => {
     const r = e.locale ?? o();
     return r === "en" ? E() : r === "pt" ? G() : r === "ch" ? I() : r === "de" ? T() : r === "es" ? L() : r === "fr" ? N() : r === "it" ? R() : r === "jp" ? S() : r === "pl" ? x() : r === "ru" ? z() : r === "uk" ? B() : Q()
   },
@@ -97,5 +97,5 @@ const n = () => "Administrator",
     return r === "en" ? Z() : r === "pt" ? $() : r === "ch" ? rr() : r === "de" ? tr() : r === "es" ? er() : r === "fr" ? or() : r === "it" ? nr() : r === "jp" ? ur() : r === "pl" ? dr() : r === "ru" ? ir() : r === "uk" ? sr() : ar()
   };
 export {
-  lr as a, _r as d, fr as g, mr as m, pr as u
+  lr as a, fr as d, _r as g, mr as m, pr as u
 };

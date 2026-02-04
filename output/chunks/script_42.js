@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./DZjUHX_D.js";
+} from "./DFupwelK.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "393d80b8e89856a8eed8a9424bbd25f96eb3752b"
+      id: "70dda2bcd37c81e0ed25f634cf032d8abd8db068"
     }
   } catch {}
 })();
@@ -17,12 +17,12 @@ try {
   })()
 } catch {}
 const o = () => "Copy",
-  i = () => "Copiar",
-  u = () => "复制",
-  f = () => "Kopieren",
   c = () => "Copiar",
-  p = () => "Copier",
-  d = () => "Copia",
+  i = () => "复制",
+  u = () => "Kopieren",
+  f = () => "Copiar",
+  d = () => "Copier",
+  p = () => "Copia",
   s = () => "コピー",
   a = () => "Kopiuj",
   y = () => "Копировать",
@@ -30,7 +30,7 @@ const o = () => "Copy",
   b = () => "Sao chép",
   g = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? o() : e === "pt" ? i() : e === "ch" ? u() : e === "de" ? f() : e === "es" ? c() : e === "fr" ? p() : e === "it" ? d() : e === "jp" ? s() : e === "pl" ? a() : e === "ru" ? y() : e === "uk" ? l() : b()
+    return e === "en" ? o() : e === "pt" ? c() : e === "ch" ? i() : e === "de" ? u() : e === "es" ? f() : e === "fr" ? d() : e === "it" ? p() : e === "jp" ? s() : e === "pl" ? a() : e === "ru" ? y() : e === "uk" ? l() : b()
   };
 export {
   g as c

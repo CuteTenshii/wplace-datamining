@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./DZjUHX_D.js";
+} from "./DFupwelK.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "393d80b8e89856a8eed8a9424bbd25f96eb3752b"
+      id: "70dda2bcd37c81e0ed25f634cf032d8abd8db068"
     }
   } catch {}
 })();
@@ -21,16 +21,16 @@ const u = () => "Members",
   o = () => "成员",
   i = () => "Mitglieder",
   f = () => "Miembros",
-  l = () => "Membres",
-  a = () => "Membri",
-  c = () => "メンバー",
+  c = () => "Membres",
+  l = () => "Membri",
+  a = () => "メンバー",
   d = () => "Członkowie",
   p = () => "Участники",
   b = () => "Учасники",
   m = () => "Thành viên",
   J = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? u() : e === "pt" ? s() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? f() : e === "fr" ? l() : e === "it" ? a() : e === "jp" ? c() : e === "pl" ? d() : e === "ru" ? p() : e === "uk" ? b() : m()
+    return e === "en" ? u() : e === "pt" ? s() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? f() : e === "fr" ? c() : e === "it" ? l() : e === "jp" ? a() : e === "pl" ? d() : e === "ru" ? p() : e === "uk" ? b() : m()
   },
   y = () => "Player",
   _ = () => "Jogador",

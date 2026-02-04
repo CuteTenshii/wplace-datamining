@@ -4,17 +4,17 @@ import {
   ak as u,
   k as n,
   V as g,
-  X as p,
+  X as c,
   a8 as l,
   Q as s,
   P as a,
-  J as _
-} from "./BxNCv_Ey.js";
+  J as p
+} from "./B2OmeKf3.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "393d80b8e89856a8eed8a9424bbd25f96eb3752b"
+      id: "70dda2bcd37c81e0ed25f634cf032d8abd8db068"
     }
   } catch {}
 })();
@@ -31,8 +31,8 @@ function w(e, t) {
     o = n;
   var f;
   if (n) {
-    i = _;
-    for (var d = g(document.head); d !== null && (d.nodeType !== p || d.data !== e);) d = l(d);
+    i = p;
+    for (var d = g(document.head); d !== null && (d.nodeType !== c || d.data !== e);) d = l(d);
     if (d === null) s(!1);
     else {
       var b = l(d);

@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./DZjUHX_D.js";
+} from "./DFupwelK.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "393d80b8e89856a8eed8a9424bbd25f96eb3752b"
+      id: "70dda2bcd37c81e0ed25f634cf032d8abd8db068"
     }
   } catch {}
 })();
@@ -22,15 +22,15 @@ const f = () => "Refresh",
   i = () => "Aktualisieren",
   o = () => "Actualizar",
   d = () => "Actualiser",
-  l = () => "Aggiorna",
-  c = () => "更新",
+  c = () => "Aggiorna",
+  l = () => "更新",
   a = () => "Odśwież",
-  b = () => "Обновить",
-  h = () => "Оновити",
+  h = () => "Обновить",
+  b = () => "Оновити",
   p = () => "Làm mới",
   g = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? f() : e === "pt" ? s() : e === "ch" ? u() : e === "de" ? i() : e === "es" ? o() : e === "fr" ? d() : e === "it" ? l() : e === "jp" ? c() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? h() : p()
+    return e === "en" ? f() : e === "pt" ? s() : e === "ch" ? u() : e === "de" ? i() : e === "es" ? o() : e === "fr" ? d() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? h() : e === "uk" ? b() : p()
   };
 export {
   g as r
