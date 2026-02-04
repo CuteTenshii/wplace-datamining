@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./DFupwelK.js";
+} from "./VsNXmfsE.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "70dda2bcd37c81e0ed25f634cf032d8abd8db068"
+      id: "1ff68788c5989e2fec5a9c9b2aaa5ef268601fd5"
     }
   } catch {}
 })();
@@ -22,15 +22,15 @@ const a = () => "Name",
   o = () => "Name",
   c = () => "Nombre",
   i = () => "Nom",
-  _ = () => "Nome",
-  f = () => "名前",
+  f = () => "Nome",
+  _ = () => "名前",
   l = () => "Nazwa",
-  d = () => "Имя",
-  m = () => "Імʼя",
+  m = () => "Имя",
+  d = () => "Імʼя",
   p = () => "Tên",
   $ = (r = {}, t = {}) => {
     const e = t.locale ?? n();
-    return e === "en" ? a() : e === "pt" ? s() : e === "ch" ? u() : e === "de" ? o() : e === "es" ? c() : e === "fr" ? i() : e === "it" ? _() : e === "jp" ? f() : e === "pl" ? l() : e === "ru" ? d() : e === "uk" ? m() : p()
+    return e === "en" ? a() : e === "pt" ? s() : e === "ch" ? u() : e === "de" ? o() : e === "es" ? c() : e === "fr" ? i() : e === "it" ? f() : e === "jp" ? _() : e === "pl" ? l() : e === "ru" ? m() : e === "uk" ? d() : p()
   },
   b = () => "We don't have frames to buy yet, wait for future updates ;)",
   y = () => "Ainda não temos molduras, crie sua primeira!",

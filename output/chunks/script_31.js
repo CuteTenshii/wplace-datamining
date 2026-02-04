@@ -1,11 +1,11 @@
 import {
-  g as d
-} from "./DFupwelK.js";
+  g as f
+} from "./VsNXmfsE.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "70dda2bcd37c81e0ed25f634cf032d8abd8db068"
+      id: "1ff68788c5989e2fec5a9c9b2aaa5ef268601fd5"
     }
   } catch {}
 })();
@@ -18,10 +18,10 @@ try {
 } catch {}
 
 function t() {
-  return d()
+  return f()
 }
 
-function r() {
+function d() {
   return `/terms/return${t()==="pt"?"/pt":""}`
 }
 
@@ -29,5 +29,5 @@ function o() {
   return `/terms/terms-of-service${t()==="pt"?"/pt":""}`
 }
 export {
-  t as g, r, o as t
+  t as g, d as r, o as t
 };

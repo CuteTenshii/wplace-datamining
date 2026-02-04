@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./DFupwelK.js";
+} from "./VsNXmfsE.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "70dda2bcd37c81e0ed25f634cf032d8abd8db068"
+      id: "1ff68788c5989e2fec5a9c9b2aaa5ef268601fd5"
     }
   } catch {}
 })();
@@ -20,17 +20,17 @@ const o = () => "Close",
   c = () => "Fechar",
   s = () => "关闭",
   u = () => "Schließen",
-  i = () => "Cerrar",
-  l = () => "Fermer",
-  d = () => "Chiudi",
-  f = () => "閉じる",
+  f = () => "Cerrar",
+  i = () => "Fermer",
+  l = () => "Chiudi",
+  d = () => "閉じる",
   a = () => "Zamknij",
   b = () => "Закрыть",
   p = () => "Закрити",
   _ = () => "Đóng",
   y = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? o() : e === "pt" ? c() : e === "ch" ? s() : e === "de" ? u() : e === "es" ? i() : e === "fr" ? l() : e === "it" ? d() : e === "jp" ? f() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? p() : _()
+    return e === "en" ? o() : e === "pt" ? c() : e === "ch" ? s() : e === "de" ? u() : e === "es" ? f() : e === "fr" ? i() : e === "it" ? l() : e === "jp" ? d() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? p() : _()
   };
 export {
   y as c

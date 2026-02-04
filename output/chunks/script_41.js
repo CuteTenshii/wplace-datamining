@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./DFupwelK.js";
+} from "./VsNXmfsE.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "70dda2bcd37c81e0ed25f634cf032d8abd8db068"
+      id: "1ff68788c5989e2fec5a9c9b2aaa5ef268601fd5"
     }
   } catch {}
 })();
@@ -2012,7 +2012,7 @@ const o = () => "OR",
   Hq = () => "Пиксели, нарисованные внутри региона",
   Fq = () => "Пікселі, намальовані в межах регіону",
   Zq = () => "Pixel đã tô trong vùng",
-  r8 = (n = {}, e = {}) => {
+  r5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Iq() : r === "pt" ? Rq() : r === "ch" ? Kq() : r === "de" ? Lq() : r === "es" ? Wq() : r === "fr" ? $q() : r === "it" ? Vq() : r === "jp" ? Oq() : r === "pl" ? Uq() : r === "ru" ? Hq() : r === "uk" ? Fq() : Zq()
   },
@@ -2028,7 +2028,7 @@ const o = () => "OR",
   oS = () => "Игроки",
   uS = () => "Гравці",
   iS = () => "Người chơi",
-  e8 = (n = {}, e = {}) => {
+  e5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? Gq() : r === "pt" ? Qq() : r === "ch" ? Yq() : r === "de" ? Jq() : r === "es" ? Xq() : r === "fr" ? rS() : r === "it" ? eS() : r === "jp" ? nS() : r === "pl" ? tS() : r === "ru" ? oS() : r === "uk" ? uS() : iS()
   },
@@ -2044,7 +2044,7 @@ const o = () => "OR",
   mS = () => "✅ Гриферство по отношению к флагам партий или портретам политиков разрешено",
   gS = () => "✅ Малювати поверх прапорів партій або портретів політиків дозволено",
   kS = () => "✅ Tô đè lên cờ đảng phái chính trị hoặc chân dung chính trị gia là được phép",
-  n8 = (n = {}, e = {}) => {
+  n5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sS() : r === "pt" ? cS() : r === "ch" ? aS() : r === "de" ? _S() : r === "es" ? lS() : r === "fr" ? pS() : r === "it" ? fS() : r === "jp" ? dS() : r === "pl" ? hS() : r === "ru" ? mS() : r === "uk" ? gS() : kS()
   },
@@ -2060,7 +2060,7 @@ const o = () => "OR",
   PS = () => "Карта на основе:",
   NS = () => "Карта на основі:",
   CS = () => "Bản đồ được cung cấp bởi:",
-  t8 = (n = {}, e = {}) => {
+  t5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? bS() : r === "pt" ? vS() : r === "ch" ? yS() : r === "de" ? wS() : r === "es" ? jS() : r === "fr" ? zS() : r === "it" ? xS() : r === "jp" ? qS() : r === "pl" ? SS() : r === "ru" ? PS() : r === "uk" ? NS() : CS()
   },
@@ -2076,7 +2076,7 @@ const o = () => "OR",
   LS = () => "Конфиденциальность",
   WS = () => "Конфіденційність",
   $S = () => "Quyền riêng tư",
-  o8 = (n = {}, e = {}) => {
+  o5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? AS() : r === "pt" ? DS() : r === "ch" ? TS() : r === "de" ? MS() : r === "es" ? ES() : r === "fr" ? BS() : r === "it" ? IS() : r === "jp" ? RS() : r === "pl" ? KS() : r === "ru" ? LS() : r === "uk" ? WS() : $S()
   },
@@ -2092,7 +2092,7 @@ const o = () => "OR",
   JS = () => "Профиль",
   XS = () => "Профіль",
   rP = () => "Hồ sơ",
-  u8 = (n = {}, e = {}) => {
+  u5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? VS() : r === "pt" ? OS() : r === "ch" ? US() : r === "de" ? HS() : r === "es" ? FS() : r === "fr" ? ZS() : r === "it" ? GS() : r === "jp" ? QS() : r === "pl" ? YS() : r === "ru" ? JS() : r === "uk" ? XS() : rP()
   },
@@ -2108,7 +2108,7 @@ const o = () => "OR",
   _P = () => "Профиль обновлён",
   lP = () => "Профіль оновлено",
   pP = () => "Đã cập nhật hồ sơ",
-  i8 = (n = {}, e = {}) => {
+  i5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? eP() : r === "pt" ? nP() : r === "ch" ? tP() : r === "de" ? oP() : r === "es" ? uP() : r === "fr" ? iP() : r === "it" ? sP() : r === "jp" ? cP() : r === "pl" ? aP() : r === "ru" ? _P() : r === "uk" ? lP() : pP()
   },
@@ -2124,7 +2124,7 @@ const o = () => "OR",
   wP = () => "Случайное место",
   jP = () => "Випадкове місце",
   zP = () => "Vị trí ngẫu nhiên",
-  s8 = (n = {}, e = {}) => {
+  s5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fP() : r === "pt" ? dP() : r === "ch" ? hP() : r === "de" ? mP() : r === "es" ? gP() : r === "fr" ? kP() : r === "it" ? bP() : r === "jp" ? vP() : r === "pl" ? yP() : r === "ru" ? wP() : r === "uk" ? jP() : zP()
   },
@@ -2140,7 +2140,7 @@ const o = () => "OR",
   MP = () => "Недавние",
   EP = () => "Нещодавні",
   BP = () => "Gần đây",
-  c8 = (n = {}, e = {}) => {
+  c5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? xP() : r === "pt" ? qP() : r === "ch" ? SP() : r === "de" ? PP() : r === "es" ? NP() : r === "fr" ? CP() : r === "it" ? AP() : r === "jp" ? DP() : r === "pl" ? TP() : r === "ru" ? MP() : r === "uk" ? EP() : BP()
   },
@@ -2156,7 +2156,7 @@ const o = () => "OR",
   HP = () => "Восстановить заряды",
   FP = () => "Поповнити заряди фарби",
   ZP = () => "Nạp lại lượt tô",
-  a8 = (n = {}, e = {}) => {
+  a5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? IP() : r === "pt" ? RP() : r === "ch" ? KP() : r === "de" ? LP() : r === "es" ? WP() : r === "fr" ? $P() : r === "it" ? VP() : r === "jp" ? OP() : r === "pl" ? UP() : r === "ru" ? HP() : r === "uk" ? FP() : ZP()
   },
@@ -2172,7 +2172,7 @@ const o = () => "OR",
   oN = () => "Повторить",
   uN = () => "Повторити",
   iN = () => "Làm lại",
-  _8 = (n = {}, e = {}) => {
+  _5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? GP() : r === "pt" ? QP() : r === "ch" ? YP() : r === "de" ? JP() : r === "es" ? XP() : r === "fr" ? rN() : r === "it" ? eN() : r === "jp" ? nN() : r === "pl" ? tN() : r === "ru" ? oN() : r === "uk" ? uN() : iN()
   },
@@ -2188,7 +2188,7 @@ const o = () => "OR",
   mN = () => "Возврат средств",
   gN = () => "Повернення коштів",
   kN = () => "Hoàn tiền",
-  l8 = (n = {}, e = {}) => {
+  l5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sN() : r === "pt" ? cN() : r === "ch" ? aN() : r === "de" ? _N() : r === "es" ? lN() : r === "fr" ? pN() : r === "it" ? fN() : r === "jp" ? dN() : r === "pl" ? hN() : r === "ru" ? mN() : r === "uk" ? gN() : kN()
   },
@@ -2204,7 +2204,7 @@ const o = () => "OR",
   PN = () => "Регион",
   NN = () => "Регіон",
   CN = () => "Vùng",
-  p8 = (n = {}, e = {}) => {
+  p5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? bN() : r === "pt" ? vN() : r === "ch" ? yN() : r === "de" ? wN() : r === "es" ? jN() : r === "fr" ? zN() : r === "it" ? xN() : r === "jp" ? qN() : r === "pl" ? SN() : r === "ru" ? PN() : r === "uk" ? NN() : CN()
   },
@@ -2220,7 +2220,7 @@ const o = () => "OR",
   LN = () => "Регионы",
   WN = () => "Регіони",
   $N = () => "Các vùng",
-  f8 = (n = {}, e = {}) => {
+  f5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? AN() : r === "pt" ? DN() : r === "ch" ? TN() : r === "de" ? MN() : r === "es" ? EN() : r === "fr" ? BN() : r === "it" ? IN() : r === "jp" ? RN() : r === "pl" ? KN() : r === "ru" ? LN() : r === "uk" ? WN() : $N()
   },
@@ -2236,7 +2236,7 @@ const o = () => "OR",
   JN = () => "Обратная связь по жалобе",
   XN = () => "Відгук щодо скарги",
   rC = () => "Phản hồi báo cáo",
-  d8 = (n = {}, e = {}) => {
+  d5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? VN() : r === "pt" ? ON() : r === "ch" ? UN() : r === "de" ? HN() : r === "es" ? FN() : r === "fr" ? ZN() : r === "it" ? GN() : r === "jp" ? QN() : r === "pl" ? YN() : r === "ru" ? JN() : r === "uk" ? XN() : rC()
   },
@@ -2252,7 +2252,7 @@ const o = () => "OR",
   _C = () => "Ваша недавняя жалоба была рассмотрена, и к указанному игроку применено наказание.",
   lC = () => "Користувача, на якого ви нещодавно поскаржилися, було покарано.",
   pC = () => "Báo cáo gần đây của bạn đã được xử lý và người chơi bị báo cáo đã bị phạt.",
-  h8 = (n = {}, e = {}) => {
+  h5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? eC() : r === "pt" ? nC() : r === "ch" ? tC() : r === "de" ? oC() : r === "es" ? uC() : r === "fr" ? iC() : r === "it" ? sC() : r === "jp" ? cC() : r === "pl" ? aC() : r === "ru" ? _C() : r === "uk" ? lC() : pC()
   },
@@ -2268,7 +2268,7 @@ const o = () => "OR",
   wC = () => "Спасибо, что помогаете делать сообщество честнее и безопаснее.",
   jC = () => "Дякуємо, що допомагаєте підтримувати чесність та безпеку спільноти.",
   zC = () => "Cảm ơn bạn đã giúp giữ cộng đồng công bằng và an toàn.",
-  m8 = (n = {}, e = {}) => {
+  m5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fC() : r === "pt" ? dC() : r === "ch" ? hC() : r === "de" ? mC() : r === "es" ? gC() : r === "fr" ? kC() : r === "it" ? bC() : r === "jp" ? vC() : r === "pl" ? yC() : r === "ru" ? wC() : r === "uk" ? jC() : zC()
   },
@@ -2284,7 +2284,7 @@ const o = () => "OR",
   MC = () => "Это действие может занять некоторое время.",
   EC = () => "Ця дія може зайняти деякий час.",
   BC = () => "Hành động này có thể mất một lúc để hoàn thành.",
-  g8 = (n = {}, e = {}) => {
+  g5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? xC() : r === "pt" ? qC() : r === "ch" ? SC() : r === "de" ? PC() : r === "es" ? NC() : r === "fr" ? CC() : r === "it" ? AC() : r === "jp" ? DC() : r === "pl" ? TC() : r === "ru" ? MC() : r === "uk" ? EC() : BC()
   },
@@ -2300,7 +2300,7 @@ const o = () => "OR",
   HC = () => "Правила",
   FC = () => "Правила",
   ZC = () => "Luật",
-  k8 = (n = {}, e = {}) => {
+  k5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? IC() : r === "pt" ? RC() : r === "ch" ? KC() : r === "de" ? LC() : r === "es" ? WC() : r === "fr" ? $C() : r === "it" ? VC() : r === "jp" ? OC() : r === "pl" ? UC() : r === "ru" ? HC() : r === "uk" ? FC() : ZC()
   },
@@ -2316,7 +2316,7 @@ const o = () => "OR",
   oA = () => "Выберите цвет",
   uA = () => "Виберіть колір",
   iA = () => "Chọn một màu",
-  b8 = (n = {}, e = {}) => {
+  b5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? GC() : r === "pt" ? QC() : r === "ch" ? YC() : r === "de" ? JC() : r === "es" ? XC() : r === "fr" ? rA() : r === "it" ? eA() : r === "jp" ? nA() : r === "pl" ? tA() : r === "ru" ? oA() : r === "uk" ? uA() : iA()
   },
@@ -2332,7 +2332,7 @@ const o = () => "OR",
   mA = () => "Выберите пиксель для стирания",
   gA = () => "Виберіть піксель для стирання",
   kA = () => "Chọn pixel để xóa",
-  v8 = (n = {}, e = {}) => {
+  v5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sA() : r === "pt" ? cA() : r === "ch" ? aA() : r === "de" ? _A() : r === "es" ? lA() : r === "fr" ? pA() : r === "it" ? fA() : r === "jp" ? dA() : r === "pl" ? hA() : r === "ru" ? mA() : r === "uk" ? gA() : kA()
   },
@@ -2348,7 +2348,7 @@ const o = () => "OR",
   PA = () => "Выберите первый угол области",
   NA = () => "Виберіть перший кут області",
   CA = () => "Chọn góc đầu tiên của vùng",
-  y8 = (n = {}, e = {}) => {
+  y5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? bA() : r === "pt" ? vA() : r === "ch" ? yA() : r === "de" ? wA() : r === "es" ? jA() : r === "fr" ? zA() : r === "it" ? xA() : r === "jp" ? qA() : r === "pl" ? SA() : r === "ru" ? PA() : r === "uk" ? NA() : CA()
   },
@@ -2364,7 +2364,7 @@ const o = () => "OR",
   LA = () => "Выберите противоположный угол области",
   WA = () => "Виберіть протилежний кут області",
   $A = () => "Chọn góc đối diện của vùng",
-  w8 = (n = {}, e = {}) => {
+  w5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? AA() : r === "pt" ? DA() : r === "ch" ? TA() : r === "de" ? MA() : r === "es" ? EA() : r === "fr" ? BA() : r === "it" ? IA() : r === "jp" ? RA() : r === "pl" ? KA() : r === "ru" ? LA() : r === "uk" ? WA() : $A()
   },
@@ -2380,7 +2380,7 @@ const o = () => "OR",
   JA = () => "Выберите местоположение штаб-квартиры",
   XA = () => "Виберіть розташування штаб-квартири",
   rD = () => "Chọn vị trí trụ sở",
-  j8 = (n = {}, e = {}) => {
+  j5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? VA() : r === "pt" ? OA() : r === "ch" ? UA() : r === "de" ? HA() : r === "es" ? FA() : r === "fr" ? ZA() : r === "it" ? GA() : r === "jp" ? QA() : r === "pl" ? YA() : r === "ru" ? JA() : r === "uk" ? XA() : rD()
   },
@@ -2396,7 +2396,7 @@ const o = () => "OR",
   _D = () => "Отправьте ссылку ниже всем, кого хотите пригласить в альянс",
   lD = () => "Надішліть посилання нижче всім, кого хочете запросити в альянс",
   pD = () => "Gửi liên kết dưới đây cho những người bạn muốn mời vào liên minh",
-  z8 = (n = {}, e = {}) => {
+  z5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? eD() : r === "pt" ? nD() : r === "ch" ? tD() : r === "de" ? oD() : r === "es" ? uD() : r === "fr" ? iD() : r === "it" ? sD() : r === "jp" ? cD() : r === "pl" ? aD() : r === "ru" ? _D() : r === "uk" ? lD() : pD()
   },
@@ -2412,7 +2412,7 @@ const o = () => "OR",
   wD = () => "Ваш браузер, похоже, не поддерживает загрузку карты. Пожалуйста, попробуйте другой браузер.",
   jD = () => "Ваш браузер, схоже, несумісний для завантаження карти. Будь ласка, спробуйте інший браузер",
   zD = () => "Trình duyệt của bạn có vẻ không tương thích để tải bản đồ. Vui lòng thử trình duyệt khác",
-  x8 = (n = {}, e = {}) => {
+  x5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fD() : r === "pt" ? dD() : r === "ch" ? hD() : r === "de" ? mD() : r === "es" ? gD() : r === "fr" ? kD() : r === "it" ? bD() : r === "jp" ? vD() : r === "pl" ? yD() : r === "ru" ? wD() : r === "uk" ? jD() : zD()
   },
@@ -2428,7 +2428,7 @@ const o = () => "OR",
   MD = () => "Поделиться",
   ED = () => "Поділитися",
   BD = () => "Chia sẻ",
-  q8 = (n = {}, e = {}) => {
+  q5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? xD() : r === "pt" ? qD() : r === "ch" ? SD() : r === "de" ? PD() : r === "es" ? ND() : r === "fr" ? CD() : r === "it" ? AD() : r === "jp" ? DD() : r === "pl" ? TD() : r === "ru" ? MD() : r === "uk" ? ED() : BD()
   },
@@ -2444,7 +2444,7 @@ const o = () => "OR",
   HD = () => "Поделиться местом",
   FD = () => "Поділитися місцем",
   ZD = () => "Chia sẻ vị trí",
-  S8 = (n = {}, e = {}) => {
+  S5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? ID() : r === "pt" ? RD() : r === "ch" ? KD() : r === "de" ? LD() : r === "es" ? WD() : r === "fr" ? $D() : r === "it" ? VD() : r === "jp" ? OD() : r === "pl" ? UD() : r === "ru" ? HD() : r === "uk" ? FD() : ZD()
   },
@@ -2460,7 +2460,7 @@ const o = () => "OR",
   oT = () => "Показать последний пиксель, нарисованный альянсом",
   uT = () => "Показати останній намальований піксель в альянсі",
   iT = () => "Hiển thị pixel cuối cùng được tô của liên minh",
-  P8 = (n = {}, e = {}) => {
+  P5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? GD() : r === "pt" ? QD() : r === "ch" ? YD() : r === "de" ? JD() : r === "es" ? XD() : r === "fr" ? rT() : r === "it" ? eT() : r === "jp" ? nT() : r === "pl" ? tT() : r === "ru" ? oT() : r === "uk" ? uT() : iT()
   },
@@ -2476,7 +2476,7 @@ const o = () => "OR",
   mT = () => "Показать пиксель-арт",
   gT = () => "Показати Pixel Art",
   kT = () => "Hiển thị pixel art",
-  N8 = (n = {}, e = {}) => {
+  N5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sT() : r === "pt" ? cT() : r === "ch" ? aT() : r === "de" ? _T() : r === "es" ? lT() : r === "fr" ? pT() : r === "it" ? fT() : r === "jp" ? dT() : r === "pl" ? hT() : r === "ru" ? mT() : r === "uk" ? gT() : kT()
   },
@@ -2492,7 +2492,7 @@ const o = () => "OR",
   PT = () => "Показать профиль",
   NT = () => "Показати профіль",
   CT = () => "Hiển thị hồ sơ",
-  C8 = (n = {}, e = {}) => {
+  C5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? bT() : r === "pt" ? vT() : r === "ch" ? yT() : r === "de" ? wT() : r === "es" ? jT() : r === "fr" ? zT() : r === "it" ? xT() : r === "jp" ? qT() : r === "pl" ? ST() : r === "ru" ? PT() : r === "uk" ? NT() : CT()
   },
@@ -2508,7 +2508,7 @@ const o = () => "OR",
   LT = () => "Пробел",
   WT = () => "Пробіл",
   $T = () => "Phím cách",
-  A8 = (n = {}, e = {}) => {
+  A5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? AT() : r === "pt" ? DT() : r === "ch" ? TT() : r === "de" ? MT() : r === "es" ? ET() : r === "fr" ? BT() : r === "it" ? IT() : r === "jp" ? RT() : r === "pl" ? KT() : r === "ru" ? LT() : r === "uk" ? WT() : $T()
   },
@@ -2524,7 +2524,7 @@ const o = () => "OR",
   JT = () => "Магазин",
   XT = () => "Магазин",
   rM = () => "Cửa hàng",
-  D8 = (n = {}, e = {}) => {
+  D5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? VT() : r === "pt" ? OT() : r === "ch" ? UT() : r === "de" ? HT() : r === "es" ? FT() : r === "fr" ? ZT() : r === "it" ? GT() : r === "jp" ? QT() : r === "pl" ? YT() : r === "ru" ? JT() : r === "uk" ? XT() : rM()
   },
@@ -2540,7 +2540,7 @@ const o = () => "OR",
   _M = () => "Отправить",
   lM = () => "Надіслати",
   pM = () => "Gửi",
-  T8 = (n = {}, e = {}) => {
+  T5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? eM() : r === "pt" ? nM() : r === "ch" ? tM() : r === "de" ? oM() : r === "es" ? uM() : r === "fr" ? iM() : r === "it" ? sM() : r === "jp" ? cM() : r === "pl" ? aM() : r === "ru" ? _M() : r === "uk" ? lM() : pM()
   },
@@ -2556,7 +2556,7 @@ const o = () => "OR",
   wM = () => "Предложения",
   jM = () => "Пропозиції",
   zM = () => "Gợi ý",
-  M8 = (n = {}, e = {}) => {
+  M5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fM() : r === "pt" ? dM() : r === "ch" ? hM() : r === "de" ? mM() : r === "es" ? gM() : r === "fr" ? kM() : r === "it" ? bM() : r === "jp" ? vM() : r === "pl" ? yM() : r === "ru" ? wM() : r === "uk" ? jM() : zM()
   },
@@ -2572,7 +2572,7 @@ const o = () => "OR",
   MM = () => "Service Workers не поддерживаются или отключены в вашем браузере. Некоторые функции могут работать некорректно.",
   EM = () => "Service Workers не підтримуються або вимкнені у вашому браузері. Деякі функції можуть працювати некоректно.",
   BM = () => "Trình duyệt của bạn không hỗ trợ/bật Service Workers. Một số tính năng có thể không hoạt động đúng.",
-  E8 = (n = {}, e = {}) => {
+  E5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? xM() : r === "pt" ? qM() : r === "ch" ? SM() : r === "de" ? PM() : r === "es" ? NM() : r === "fr" ? CM() : r === "it" ? AM() : r === "jp" ? DM() : r === "pl" ? TM() : r === "ru" ? MM() : r === "uk" ? EM() : BM()
   },
@@ -2588,7 +2588,7 @@ const o = () => "OR",
   HM = () => "Условия",
   FM = () => "Умови",
   ZM = () => "Điều khoản",
-  B8 = (n = {}, e = {}) => {
+  B5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? IM() : r === "pt" ? RM() : r === "ch" ? KM() : r === "de" ? LM() : r === "es" ? WM() : r === "fr" ? $M() : r === "it" ? VM() : r === "jp" ? OM() : r === "pl" ? UM() : r === "ru" ? HM() : r === "uk" ? FM() : ZM()
   },
@@ -2604,7 +2604,7 @@ const o = () => "OR",
   oE = () => "Это действие необратимо. Продолжить?",
   uE = () => "Цю дію неможливо скасувати. Продовжити?",
   iE = () => "Hành động này không thể hoàn tác, bạn có muốn tiếp tục?",
-  I8 = (n = {}, e = {}) => {
+  I5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? GM() : r === "pt" ? QM() : r === "ch" ? YM() : r === "de" ? JM() : r === "es" ? XM() : r === "fr" ? rE() : r === "it" ? eE() : r === "jp" ? nE() : r === "pl" ? tE() : r === "ru" ? oE() : r === "uk" ? uE() : iE()
   },
@@ -2620,7 +2620,7 @@ const o = () => "OR",
   mE = () => "в этом месяце",
   gE = () => "цього місяця",
   kE = () => "tháng này",
-  R8 = (n = {}, e = {}) => {
+  R5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sE() : r === "pt" ? cE() : r === "ch" ? aE() : r === "de" ? _E() : r === "es" ? lE() : r === "fr" ? pE() : r === "it" ? fE() : r === "jp" ? dE() : r === "pl" ? hE() : r === "ru" ? mE() : r === "uk" ? gE() : kE()
   },
@@ -2636,7 +2636,7 @@ const o = () => "OR",
   PE = () => "на этой неделе",
   NE = () => "цього тижня",
   CE = () => "tuần này",
-  K8 = (n = {}, e = {}) => {
+  K5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? bE() : r === "pt" ? vE() : r === "ch" ? yE() : r === "de" ? wE() : r === "es" ? jE() : r === "fr" ? zE() : r === "it" ? xE() : r === "jp" ? qE() : r === "pl" ? SE() : r === "ru" ? PE() : r === "uk" ? NE() : CE()
   },
@@ -2652,7 +2652,7 @@ const o = () => "OR",
   LE = () => "Это действие навсегда удалит ваш аккаунт и все связанные данные. Его нельзя отменить.",
   WE = () => "Це назавжди видалить ваш акаунт і всі повʼязані дані. Цю дію не можна буде скасувати.",
   $E = () => "Việc này sẽ xóa vĩnh viễn tài khoản và tất cả dữ liệu liên quan. Hành động này không thể hoàn tác.",
-  L8 = (n = {}, e = {}) => {
+  L5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? AE() : r === "pt" ? DE() : r === "ch" ? TE() : r === "de" ? ME() : r === "es" ? EE() : r === "fr" ? BE() : r === "it" ? IE() : r === "jp" ? RE() : r === "pl" ? KE() : r === "ru" ? LE() : r === "uk" ? WE() : $E()
   },
@@ -2668,7 +2668,7 @@ const o = () => "OR",
   JE = () => "Тикеты",
   XE = () => "Тікети",
   rB = () => "Phiếu hỗ trợ",
-  W8 = (n = {}, e = {}) => {
+  W5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? VE() : r === "pt" ? OE() : r === "ch" ? UE() : r === "de" ? HE() : r === "es" ? FE() : r === "fr" ? ZE() : r === "it" ? GE() : r === "jp" ? QE() : r === "pl" ? YE() : r === "ru" ? JE() : r === "uk" ? XE() : rB()
   },
@@ -2684,7 +2684,7 @@ const o = () => "OR",
   _B = () => "Апелляция на тайм-аут",
   lB = () => "Апеляція на тайм-аут",
   pB = () => "Kháng cáo tạm khóa",
-  $8 = (n = {}, e = {}) => {
+  $5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? eB() : r === "pt" ? nB() : r === "ch" ? tB() : r === "de" ? oB() : r === "es" ? uB() : r === "fr" ? iB() : r === "it" ? sB() : r === "jp" ? cB() : r === "pl" ? aB() : r === "ru" ? _B() : r === "uk" ? lB() : pB()
   },
@@ -2700,7 +2700,7 @@ const o = () => "OR",
   wB = () => "Апелляция",
   jB = () => "Подати апеляцію",
   zB = () => "Kháng cáo",
-  V8 = (n = {}, e = {}) => {
+  V5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fB() : r === "pt" ? dB() : r === "ch" ? hB() : r === "de" ? mB() : r === "es" ? gB() : r === "fr" ? kB() : r === "it" ? bB() : r === "jp" ? vB() : r === "pl" ? yB() : r === "ru" ? wB() : r === "uk" ? jB() : zB()
   },
@@ -2716,7 +2716,7 @@ const o = () => "OR",
   MB = () => "чтобы рисовать.",
   EB = () => "щоб малювати.",
   BB = () => "để tô.",
-  O8 = (n = {}, e = {}) => {
+  O5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? xB() : r === "pt" ? qB() : r === "ch" ? SB() : r === "de" ? PB() : r === "es" ? NB() : r === "fr" ? CB() : r === "it" ? AB() : r === "jp" ? DB() : r === "pl" ? TB() : r === "ru" ? MB() : r === "uk" ? EB() : BB()
   },
@@ -2732,7 +2732,7 @@ const o = () => "OR",
   HB = () => "Вы можете рисовать более чем 1 пиксель",
   FB = () => "Ви можете малювати більше, ніж 1 піксель",
   ZB = () => "Bạn có thể tô nhiều hơn 1 pixel",
-  U8 = (n = {}, e = {}) => {
+  U5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? IB() : r === "pt" ? RB() : r === "ch" ? KB() : r === "de" ? LB() : r === "es" ? WB() : r === "fr" ? $B() : r === "it" ? VB() : r === "jp" ? OB() : r === "pl" ? UB() : r === "ru" ? HB() : r === "uk" ? FB() : ZB()
   },
@@ -2748,7 +2748,7 @@ const o = () => "OR",
   oI = () => "Сегодня",
   uI = () => "Сьогодні",
   iI = () => "Hôm nay",
-  H8 = (n = {}, e = {}) => {
+  H5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? GB() : r === "pt" ? QB() : r === "ch" ? YB() : r === "de" ? JB() : r === "es" ? XB() : r === "fr" ? rI() : r === "it" ? eI() : r === "jp" ? nI() : r === "pl" ? tI() : r === "ru" ? oI() : r === "uk" ? uI() : iI()
   },
@@ -2764,7 +2764,7 @@ const o = () => "OR",
   mI = () => "Переключить непрозрачность арта",
   gI = () => "Перемкнути прозорість арту",
   kI = () => "Chuyển độ trong suốt của art",
-  F8 = (n = {}, e = {}) => {
+  F5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sI() : r === "pt" ? cI() : r === "ch" ? aI() : r === "de" ? _I() : r === "es" ? lI() : r === "fr" ? pI() : r === "it" ? fI() : r === "jp" ? dI() : r === "pl" ? hI() : r === "ru" ? mI() : r === "uk" ? gI() : kI()
   },
@@ -2780,7 +2780,7 @@ const o = () => "OR",
   PI = () => "Аккаунт Twitch успешно мигрирован.",
   NI = () => "Акаунт Twitch успішно перенесено.",
   CI = () => "Đã di chuyển tài khoản Twitch thành công.",
-  Z8 = (n = {}, e = {}) => {
+  Z5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? bI() : r === "pt" ? vI() : r === "ch" ? yI() : r === "de" ? wI() : r === "es" ? jI() : r === "fr" ? zI() : r === "it" ? xI() : r === "jp" ? qI() : r === "pl" ? SI() : r === "ru" ? PI() : r === "uk" ? NI() : CI()
   },
@@ -2796,7 +2796,7 @@ const o = () => "OR",
   LI = () => "Для подтверждения введите ваше имя пользователя:",
   WI = () => "Підтвердіть, будь ласка, ввівши ваше імʼя користувача:",
   $I = () => "Hãy xác nhận bằng cách nhập tên người dùng của bạn:",
-  G8 = (n = {}, e = {}) => {
+  G5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? AI() : r === "pt" ? DI() : r === "ch" ? TI() : r === "de" ? MI() : r === "es" ? EI() : r === "fr" ? BI() : r === "it" ? II() : r === "jp" ? RI() : r === "pl" ? KI() : r === "ru" ? LI() : r === "uk" ? WI() : $I()
   },
@@ -2812,7 +2812,7 @@ const o = () => "OR",
   JI = () => "Введите имя пользователя",
   XI = () => "Введіть своє імʼя користувача",
   rR = () => "Nhập tên người dùng",
-  Q8 = (n = {}, e = {}) => {
+  Q5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? VI() : r === "pt" ? OI() : r === "ch" ? UI() : r === "de" ? HI() : r === "es" ? FI() : r === "fr" ? ZI() : r === "it" ? GI() : r === "jp" ? QI() : r === "pl" ? YI() : r === "ru" ? JI() : r === "uk" ? XI() : rR()
   },
@@ -2828,7 +2828,7 @@ const o = () => "OR",
   _R = () => "Понятно",
   lR = () => "Зрозуміло",
   pR = () => "Đã hiểu",
-  Y8 = (n = {}, e = {}) => {
+  Y5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? eR() : r === "pt" ? nR() : r === "ch" ? tR() : r === "de" ? oR() : r === "es" ? uR() : r === "fr" ? iR() : r === "it" ? sR() : r === "jp" ? cR() : r === "pl" ? aR() : r === "ru" ? _R() : r === "uk" ? lR() : pR()
   },
@@ -2844,7 +2844,7 @@ const o = () => "OR",
   wR = () => "Отменить",
   jR = () => "Скасувати",
   zR = () => "Hoàn tác",
-  J8 = (n = {}, e = {}) => {
+  J5 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fR() : r === "pt" ? dR() : r === "ch" ? hR() : r === "de" ? mR() : r === "es" ? gR() : r === "fr" ? kR() : r === "it" ? bR() : r === "jp" ? vR() : r === "pl" ? yR() : r === "ru" ? wR() : r === "uk" ? jR() : zR()
   },
@@ -2860,7 +2860,7 @@ const o = () => "OR",
   MR = n => `Отвязать Discord (${n.username})`,
   ER = n => `Відʼєднати Discord (${n.username})`,
   BR = n => `Hủy liên kết Discord (${n.username})`,
-  X8 = (n, e = {}) => {
+  X5 = (n, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? xR(n) : r === "pt" ? qR(n) : r === "ch" ? SR(n) : r === "de" ? PR(n) : r === "es" ? NR(n) : r === "fr" ? CR(n) : r === "it" ? AR(n) : r === "jp" ? DR(n) : r === "pl" ? TR(n) : r === "ru" ? MR(n) : r === "uk" ? ER(n) : BR(n)
   },
@@ -2876,7 +2876,7 @@ const o = () => "OR",
   HR = () => "Discord отвязан",
   FR = () => "Discord відʼєднано",
   ZR = () => "Đã hủy liên kết Discord",
-  rQ = (n = {}, e = {}) => {
+  r8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? IR() : r === "pt" ? RR() : r === "ch" ? KR() : r === "de" ? LR() : r === "es" ? WR() : r === "fr" ? $R() : r === "it" ? VR() : r === "jp" ? OR() : r === "pl" ? UR() : r === "ru" ? HR() : r === "uk" ? FR() : ZR()
   },
@@ -2892,7 +2892,7 @@ const o = () => "OR",
   oK = () => "Снять мьют",
   uK = () => "Увімкнути звук",
   iK = () => "Bật tiếng",
-  eQ = (n = {}, e = {}) => {
+  e8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? GR() : r === "pt" ? QR() : r === "ch" ? YR() : r === "de" ? JR() : r === "es" ? XR() : r === "fr" ? rK() : r === "it" ? eK() : r === "jp" ? nK() : r === "pl" ? tK() : r === "ru" ? oK() : r === "uk" ? uK() : iK()
   },
@@ -2908,7 +2908,7 @@ const o = () => "OR",
   mK = () => "Обновить",
   gK = () => "Оновити",
   kK = () => "Cập nhật",
-  nQ = (n = {}, e = {}) => {
+  n8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sK() : r === "pt" ? cK() : r === "ch" ? aK() : r === "de" ? _K() : r === "es" ? lK() : r === "fr" ? pK() : r === "it" ? fK() : r === "jp" ? dK() : r === "pl" ? hK() : r === "ru" ? mK() : r === "uk" ? gK() : kK()
   },
@@ -2924,7 +2924,7 @@ const o = () => "OR",
   PK = () => "Использовать аппаратное ускорение, если доступно",
   NK = () => "Використовувати апаратне прискорення, якщо доступно",
   CK = () => "Dùng tăng tốc phần cứng khi có thể",
-  tQ = (n = {}, e = {}) => {
+  t8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? bK() : r === "pt" ? vK() : r === "ch" ? yK() : r === "de" ? wK() : r === "es" ? jK() : r === "fr" ? zK() : r === "it" ? xK() : r === "jp" ? qK() : r === "pl" ? SK() : r === "ru" ? PK() : r === "uk" ? NK() : CK()
   },
@@ -2940,7 +2940,7 @@ const o = () => "OR",
   LK = () => "Имя пользователя скопировано в буфер обмена",
   WK = () => "Імʼя користувача скопійовано в буфер обміну",
   $K = () => "Đã sao chép tên người dùng vào clipboard",
-  oQ = (n = {}, e = {}) => {
+  o8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? AK() : r === "pt" ? DK() : r === "ch" ? TK() : r === "de" ? MK() : r === "es" ? EK() : r === "fr" ? BK() : r === "it" ? IK() : r === "jp" ? RK() : r === "pl" ? KK() : r === "ru" ? LK() : r === "uk" ? WK() : $K()
   },
@@ -2956,7 +2956,7 @@ const o = () => "OR",
   JK = () => "Удостоверьтесь в том, что",
   XK = () => "Переконайтеся, що",
   rL = () => "Kiểm tra xem",
-  uQ = (n = {}, e = {}) => {
+  u8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? VK() : r === "pt" ? OK() : r === "ch" ? UK() : r === "de" ? HK() : r === "es" ? FK() : r === "fr" ? ZK() : r === "it" ? GK() : r === "jp" ? QK() : r === "pl" ? YK() : r === "ru" ? JK() : r === "uk" ? XK() : rL()
   },
@@ -2972,7 +2972,7 @@ const o = () => "OR",
   _L = () => "Нарушение этих правил может привести к блокировке аккаунта или удалению рисунков.",
   lL = () => "Порушення цих правил може призвести до блокування акаунта або видалення малюнків.",
   pL = () => "Vi phạm các luật này có thể dẫn đến việc đình chỉ tài khoản hoặc xóa tranh.",
-  iQ = (n = {}, e = {}) => {
+  i8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? eL() : r === "pt" ? nL() : r === "ch" ? tL() : r === "de" ? oL() : r === "es" ? uL() : r === "fr" ? iL() : r === "it" ? sL() : r === "jp" ? cL() : r === "pl" ? aL() : r === "ru" ? _L() : r === "uk" ? lL() : pL()
   },
@@ -2988,7 +2988,7 @@ const o = () => "OR",
   wL = () => "Неделя",
   jL = () => "Тиждень",
   zL = () => "Tuần",
-  sQ = (n = {}, e = {}) => {
+  s8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fL() : r === "pt" ? dL() : r === "ch" ? hL() : r === "de" ? mL() : r === "es" ? gL() : r === "fr" ? kL() : r === "it" ? bL() : r === "jp" ? vL() : r === "pl" ? yL() : r === "ru" ? wL() : r === "uk" ? jL() : zL()
   },
@@ -3004,7 +3004,7 @@ const o = () => "OR",
   ML = () => "Добро пожаловать в",
   EL = () => "Ласкаво просимо до",
   BL = () => "Chào mừng đến với",
-  cQ = (n = {}, e = {}) => {
+  c8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? xL() : r === "pt" ? qL() : r === "ch" ? SL() : r === "de" ? PL() : r === "es" ? NL() : r === "fr" ? CL() : r === "it" ? AL() : r === "jp" ? DL() : r === "pl" ? TL() : r === "ru" ? ML() : r === "uk" ? EL() : BL()
   },
@@ -3020,7 +3020,7 @@ const o = () => "OR",
   HL = () => "Во время рисования нажмите кнопку",
   FL = () => "Під час малювання натисніть кнопку",
   ZL = () => "Khi tô, hãy nhấp vào nút",
-  aQ = (n = {}, e = {}) => {
+  a8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? IL() : r === "pt" ? RL() : r === "ch" ? KL() : r === "de" ? LL() : r === "es" ? WL() : r === "fr" ? $L() : r === "it" ? VL() : r === "jp" ? OL() : r === "pl" ? UL() : r === "ru" ? HL() : r === "uk" ? FL() : ZL()
   },
@@ -3036,7 +3036,7 @@ const o = () => "OR",
   oW = () => "У вас нет зарядов для рисования. Подождите, пока они восстановятся.",
   uW = () => "У вас немає зарядів для малювання. Зачекайте, поки вони відновляться.",
   iW = () => "Bạn không còn lượt tô để vẽ. Hãy chờ nạp lại.",
-  _Q = (n = {}, e = {}) => {
+  _8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? GL() : r === "pt" ? QL() : r === "ch" ? YL() : r === "de" ? JL() : r === "es" ? XL() : r === "fr" ? rW() : r === "it" ? eW() : r === "jp" ? nW() : r === "pl" ? tW() : r === "ru" ? oW() : r === "uk" ? uW() : iW()
   },
@@ -3052,7 +3052,7 @@ const o = () => "OR",
   mW = () => "Приблизьте карту, чтобы выбрать пиксель",
   gW = () => "Збільшіть масштаб, щоб вибрати піксель",
   kW = () => "Bạn cần phóng to để chọn pixel",
-  lQ = (n = {}, e = {}) => {
+  l8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sW() : r === "pt" ? cW() : r === "ch" ? aW() : r === "de" ? _W() : r === "es" ? lW() : r === "fr" ? pW() : r === "it" ? fW() : r === "jp" ? dW() : r === "pl" ? hW() : r === "ru" ? mW() : r === "uk" ? gW() : kW()
   },
@@ -3068,7 +3068,7 @@ const o = () => "OR",
   PW = () => "Ваш аккаунт был забанен за нарушение правил",
   NW = () => "Ваш акаунт заблоковано за порушення правил",
   CW = () => "Tài khoản của bạn đã bị khóa vì vi phạm luật",
-  pQ = (n = {}, e = {}) => {
+  p8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? bW() : r === "pt" ? vW() : r === "ch" ? yW() : r === "de" ? wW() : r === "es" ? jW() : r === "fr" ? zW() : r === "it" ? xW() : r === "jp" ? qW() : r === "pl" ? SW() : r === "ru" ? PW() : r === "uk" ? NW() : CW()
   },
@@ -3084,7 +3084,7 @@ const o = () => "OR",
   LW = () => "Приблизить",
   WW = () => "Збільшити",
   $W = () => "Phóng to",
-  fQ = (n = {}, e = {}) => {
+  f8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? AW() : r === "pt" ? DW() : r === "ch" ? TW() : r === "de" ? MW() : r === "es" ? EW() : r === "fr" ? BW() : r === "it" ? IW() : r === "jp" ? RW() : r === "pl" ? KW() : r === "ru" ? LW() : r === "uk" ? WW() : $W()
   },
@@ -3100,7 +3100,7 @@ const o = () => "OR",
   JW = () => "Приблизьте карту, чтобы увидеть пиксели",
   XW = () => "Збільшіть масштаб, щоб побачити пікселі",
   r$ = () => "Phóng to để thấy các pixel",
-  dQ = (n = {}, e = {}) => {
+  d8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? VW() : r === "pt" ? OW() : r === "ch" ? UW() : r === "de" ? HW() : r === "es" ? FW() : r === "fr" ? ZW() : r === "it" ? GW() : r === "jp" ? QW() : r === "pl" ? YW() : r === "ru" ? JW() : r === "uk" ? XW() : r$()
   },
@@ -3116,7 +3116,7 @@ const o = () => "OR",
   _$ = () => "Отдалить",
   l$ = () => "Зменшити",
   p$ = () => "Thu nhỏ",
-  hQ = (n = {}, e = {}) => {
+  h8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? e$() : r === "pt" ? n$() : r === "ch" ? t$() : r === "de" ? o$() : r === "es" ? u$() : r === "fr" ? i$() : r === "it" ? s$() : r === "jp" ? c$() : r === "pl" ? a$() : r === "ru" ? _$() : r === "uk" ? l$() : p$()
   },
@@ -3132,7 +3132,7 @@ const o = () => "OR",
   w$ = () => "Сохранить с картой",
   j$ = () => "Зберегти з картою",
   z$ = () => "Lưu kèm bản đồ",
-  mQ = (n = {}, e = {}) => {
+  m8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? f$() : r === "pt" ? d$() : r === "ch" ? h$() : r === "de" ? m$() : r === "es" ? g$() : r === "fr" ? k$() : r === "it" ? b$() : r === "jp" ? v$() : r === "pl" ? y$() : r === "ru" ? w$() : r === "uk" ? j$() : z$()
   },
@@ -3148,7 +3148,7 @@ const o = () => "OR",
   M$ = () => "Показать меньше",
   E$ = () => "Показати менше",
   B$ = () => "Ẩn bớt",
-  gQ = (n = {}, e = {}) => {
+  g8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? x$() : r === "pt" ? q$() : r === "ch" ? S$() : r === "de" ? P$() : r === "es" ? N$() : r === "fr" ? C$() : r === "it" ? A$() : r === "jp" ? D$() : r === "pl" ? T$() : r === "ru" ? M$() : r === "uk" ? E$() : B$()
   },
@@ -3164,7 +3164,7 @@ const o = () => "OR",
   H$ = () => "Показать больше",
   F$ = () => "Показати більше",
   Z$ = () => "Hiển thị thêm",
-  kQ = (n = {}, e = {}) => {
+  k8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? I$() : r === "pt" ? R$() : r === "ch" ? K$() : r === "de" ? L$() : r === "es" ? W$() : r === "fr" ? $$() : r === "it" ? V$() : r === "jp" ? O$() : r === "pl" ? U$() : r === "ru" ? H$() : r === "uk" ? F$() : Z$()
   },
@@ -3180,7 +3180,7 @@ const o = () => "OR",
   oV = () => "Флаги",
   uV = () => "Прапори",
   iV = () => "Cờ",
-  bQ = (n = {}, e = {}) => {
+  b8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? G$() : r === "pt" ? Q$() : r === "ch" ? Y$() : r === "de" ? J$() : r === "es" ? X$() : r === "fr" ? rV() : r === "it" ? eV() : r === "jp" ? nV() : r === "pl" ? tV() : r === "ru" ? oV() : r === "uk" ? uV() : iV()
   },
@@ -3196,7 +3196,7 @@ const o = () => "OR",
   mV = () => "Бесплатно",
   gV = () => "Безкоштовно",
   kV = () => "Miễn phí",
-  vQ = (n = {}, e = {}) => {
+  v8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sV() : r === "pt" ? cV() : r === "ch" ? aV() : r === "de" ? _V() : r === "es" ? lV() : r === "fr" ? pV() : r === "it" ? fV() : r === "jp" ? dV() : r === "pl" ? hV() : r === "ru" ? mV() : r === "uk" ? gV() : kV()
   },
@@ -3212,7 +3212,7 @@ const o = () => "OR",
   PV = () => "Изменить кадр",
   NV = () => "Змінити кадр",
   CV = () => "Đổi khung",
-  yQ = (n = {}, e = {}) => {
+  y8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? bV() : r === "pt" ? vV() : r === "ch" ? yV() : r === "de" ? wV() : r === "es" ? jV() : r === "fr" ? zV() : r === "it" ? xV() : r === "jp" ? qV() : r === "pl" ? SV() : r === "ru" ? PV() : r === "uk" ? NV() : CV()
   },
@@ -3228,7 +3228,7 @@ const o = () => "OR",
   LV = () => "Рама снаряжена!",
   WV = () => "Раму оснащено!",
   $V = () => "Đã trang bị khung!",
-  wQ = (n = {}, e = {}) => {
+  w8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? AV() : r === "pt" ? DV() : r === "ch" ? TV() : r === "de" ? MV() : r === "es" ? EV() : r === "fr" ? BV() : r === "it" ? IV() : r === "jp" ? RV() : r === "pl" ? KV() : r === "ru" ? LV() : r === "uk" ? WV() : $V()
   },
@@ -3244,7 +3244,7 @@ const o = () => "OR",
   JV = () => "Инвентарь рамок",
   XV = () => "Інвентар рам",
   rO = () => "Tồn kho khung",
-  jQ = (n = {}, e = {}) => {
+  j8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? VV() : r === "pt" ? OV() : r === "ch" ? UV() : r === "de" ? HV() : r === "es" ? FV() : r === "fr" ? ZV() : r === "it" ? GV() : r === "jp" ? QV() : r === "pl" ? YV() : r === "ru" ? JV() : r === "uk" ? XV() : rO()
   },
@@ -3260,7 +3260,7 @@ const o = () => "OR",
   _O = () => "Выберите рамку для своей фотографии профиля",
   lO = () => "Оберіть рамку для свого фото профілю",
   pO = () => "Chọn một khung cho ảnh đại diện của bạn",
-  zQ = (n = {}, e = {}) => {
+  z8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? eO() : r === "pt" ? nO() : r === "ch" ? tO() : r === "de" ? oO() : r === "es" ? uO() : r === "fr" ? iO() : r === "it" ? sO() : r === "jp" ? cO() : r === "pl" ? aO() : r === "ru" ? _O() : r === "uk" ? lO() : pO()
   },
@@ -3276,7 +3276,7 @@ const o = () => "OR",
   wO = () => "Ваши кадры",
   jO = () => "Ваші оправи",
   zO = () => "Khung của bạn",
-  xQ = (n = {}, e = {}) => {
+  x8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fO() : r === "pt" ? dO() : r === "ch" ? hO() : r === "de" ? mO() : r === "es" ? gO() : r === "fr" ? kO() : r === "it" ? bO() : r === "jp" ? vO() : r === "pl" ? yO() : r === "ru" ? wO() : r === "uk" ? jO() : zO()
   },
@@ -3292,7 +3292,7 @@ const o = () => "OR",
   MO = () => "Нет рамки в вашем профиле",
   EO = () => "У вашому профілі немає рамки",
   BO = () => "Không có khung hình trong hồ sơ của bạn",
-  qQ = (n = {}, e = {}) => {
+  q8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? xO() : r === "pt" ? qO() : r === "ch" ? SO() : r === "de" ? PO() : r === "es" ? NO() : r === "fr" ? CO() : r === "it" ? AO() : r === "jp" ? DO() : r === "pl" ? TO() : r === "ru" ? MO() : r === "uk" ? EO() : BO()
   },
@@ -3308,7 +3308,7 @@ const o = () => "OR",
   HO = () => "Выбрано",
   FO = () => "Вибрано",
   ZO = () => "Đã chọn",
-  SQ = (n = {}, e = {}) => {
+  S8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? IO() : r === "pt" ? RO() : r === "ch" ? KO() : r === "de" ? LO() : r === "es" ? WO() : r === "fr" ? $O() : r === "it" ? VO() : r === "jp" ? OO() : r === "pl" ? UO() : r === "ru" ? HO() : r === "uk" ? FO() : ZO()
   },
@@ -3324,7 +3324,7 @@ const o = () => "OR",
   o1 = () => "Магазин рамок",
   u1 = () => "Магазин рамок",
   i1 = () => "Cửa hàng khung",
-  PQ = (n = {}, e = {}) => {
+  P8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? GO() : r === "pt" ? QO() : r === "ch" ? YO() : r === "de" ? JO() : r === "es" ? XO() : r === "fr" ? r1() : r === "it" ? e1() : r === "jp" ? n1() : r === "pl" ? t1() : r === "ru" ? o1() : r === "uk" ? u1() : i1()
   },
@@ -3340,7 +3340,7 @@ const o = () => "OR",
   m1 = () => "Нет",
   g1 = () => "Жодного",
   k1 = () => "Không có",
-  NQ = (n = {}, e = {}) => {
+  N8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? s1() : r === "pt" ? c1() : r === "ch" ? a1() : r === "de" ? _1() : r === "es" ? l1() : r === "fr" ? p1() : r === "it" ? f1() : r === "jp" ? d1() : r === "pl" ? h1() : r === "ru" ? m1() : r === "uk" ? g1() : k1()
   },
@@ -3356,7 +3356,7 @@ const o = () => "OR",
   P1 = () => "Без рамки",
   N1 = () => "Без рамки",
   C1 = () => "Không khung",
-  CQ = (n = {}, e = {}) => {
+  C8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? b1() : r === "pt" ? v1() : r === "ch" ? y1() : r === "de" ? w1() : r === "es" ? j1() : r === "fr" ? z1() : r === "it" ? x1() : r === "jp" ? q1() : r === "pl" ? S1() : r === "ru" ? P1() : r === "uk" ? N1() : C1()
   },
@@ -3372,7 +3372,7 @@ const o = () => "OR",
   L1 = () => "Стили",
   W1 = () => "Стилі",
   $1 = () => "Kiểu",
-  AQ = (n = {}, e = {}) => {
+  A8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? A1() : r === "pt" ? D1() : r === "ch" ? T1() : r === "de" ? M1() : r === "es" ? E1() : r === "fr" ? B1() : r === "it" ? I1() : r === "jp" ? R1() : r === "pl" ? K1() : r === "ru" ? L1() : r === "uk" ? W1() : $1()
   },
@@ -3388,7 +3388,7 @@ const o = () => "OR",
   J1 = () => "Шрифты",
   X1 = () => "Шрифти",
   rU = () => "Phông chữ",
-  DQ = (n = {}, e = {}) => {
+  D8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? V1() : r === "pt" ? O1() : r === "ch" ? U1() : r === "de" ? H1() : r === "es" ? F1() : r === "fr" ? Z1() : r === "it" ? G1() : r === "jp" ? Q1() : r === "pl" ? Y1() : r === "ru" ? J1() : r === "uk" ? X1() : rU()
   },
@@ -3404,7 +3404,7 @@ const o = () => "OR",
   _U = () => "Стили текста",
   lU = () => "Текстові стилі",
   pU = () => "Kiểu văn bản",
-  TQ = (n = {}, e = {}) => {
+  T8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? eU() : r === "pt" ? nU() : r === "ch" ? tU() : r === "de" ? oU() : r === "es" ? uU() : r === "fr" ? iU() : r === "it" ? sU() : r === "jp" ? cU() : r === "pl" ? aU() : r === "ru" ? _U() : r === "uk" ? lU() : pU()
   },
@@ -3420,7 +3420,7 @@ const o = () => "OR",
   wU = () => "Нет доступных стилей",
   jU = () => "Немає доступних стилів",
   zU = () => "Không có kiểu nào khả dụng",
-  MQ = (n = {}, e = {}) => {
+  M8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fU() : r === "pt" ? dU() : r === "ch" ? hU() : r === "de" ? mU() : r === "es" ? gU() : r === "fr" ? kU() : r === "it" ? bU() : r === "jp" ? vU() : r === "pl" ? yU() : r === "ru" ? wU() : r === "uk" ? jU() : zU()
   },
@@ -3436,7 +3436,7 @@ const o = () => "OR",
   MU = () => "Инструмент Wayback",
   EU = () => "Інструмент Wayback",
   BU = () => "Công cụ Wayback",
-  EQ = (n = {}, e = {}) => {
+  E8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? xU() : r === "pt" ? qU() : r === "ch" ? SU() : r === "de" ? PU() : r === "es" ? NU() : r === "fr" ? CU() : r === "it" ? AU() : r === "jp" ? DU() : r === "pl" ? TU() : r === "ru" ? MU() : r === "uk" ? EU() : BU()
   },
@@ -3452,7 +3452,7 @@ const o = () => "OR",
   HU = () => "Значок экипирован!",
   FU = () => "Значок одягнуто!",
   ZU = () => "Huy hiệu đã trang bị!",
-  BQ = (n = {}, e = {}) => {
+  B8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? IU() : r === "pt" ? RU() : r === "ch" ? KU() : r === "de" ? LU() : r === "es" ? WU() : r === "fr" ? $U() : r === "it" ? VU() : r === "jp" ? OU() : r === "pl" ? UU() : r === "ru" ? HU() : r === "uk" ? FU() : ZU()
   },
@@ -3468,7 +3468,7 @@ const o = () => "OR",
   oH = () => "Ошибка при установке значка. Повторите попытку позже.",
   uH = () => "Помилка при екіпіруванні значка. Спробуйте пізніше.",
   iH = () => "Lỗi khi trang bị huy hiệu. Vui lòng thử lại sau.",
-  IQ = (n = {}, e = {}) => {
+  I8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? GU() : r === "pt" ? QU() : r === "ch" ? YU() : r === "de" ? JU() : r === "es" ? XU() : r === "fr" ? rH() : r === "it" ? eH() : r === "jp" ? nH() : r === "pl" ? tH() : r === "ru" ? oH() : r === "uk" ? uH() : iH()
   },
@@ -3484,7 +3484,7 @@ const o = () => "OR",
   mH = () => "Инвентарь значков",
   gH = () => "Інвентар значків",
   kH = () => "Kho huy hiệu",
-  RQ = (n = {}, e = {}) => {
+  R8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? sH() : r === "pt" ? cH() : r === "ch" ? aH() : r === "de" ? _H() : r === "es" ? lH() : r === "fr" ? pH() : r === "it" ? fH() : r === "jp" ? dH() : r === "pl" ? hH() : r === "ru" ? mH() : r === "uk" ? gH() : kH()
   },
@@ -3500,7 +3500,7 @@ const o = () => "OR",
   PH = () => "Выберите значок для этого слота",
   NH = () => "Оберіть значок для цього слота",
   CH = () => "Chọn huy hiệu cho ô này",
-  KQ = (n = {}, e = {}) => {
+  K8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? bH() : r === "pt" ? vH() : r === "ch" ? yH() : r === "de" ? wH() : r === "es" ? jH() : r === "fr" ? zH() : r === "it" ? xH() : r === "jp" ? qH() : r === "pl" ? SH() : r === "ru" ? PH() : r === "uk" ? NH() : CH()
   },
@@ -3516,7 +3516,7 @@ const o = () => "OR",
   LH = () => "Ваши значки",
   WH = () => "Ваші значки",
   $H = () => "Huy hiệu của bạn",
-  LQ = (n = {}, e = {}) => {
+  L8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? AH() : r === "pt" ? DH() : r === "ch" ? TH() : r === "de" ? MH() : r === "es" ? EH() : r === "fr" ? BH() : r === "it" ? IH() : r === "jp" ? RH() : r === "pl" ? KH() : r === "ru" ? LH() : r === "uk" ? WH() : $H()
   },
@@ -3532,7 +3532,7 @@ const o = () => "OR",
   JH = () => "Нет значка в этом слоте",
   XH = () => "У цьому слоті немає значка",
   rF = () => "Không có huy hiệu trong ô này",
-  WQ = (n = {}, e = {}) => {
+  W8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? VH() : r === "pt" ? OH() : r === "ch" ? UH() : r === "de" ? HH() : r === "es" ? FH() : r === "fr" ? ZH() : r === "it" ? GH() : r === "jp" ? QH() : r === "pl" ? YH() : r === "ru" ? JH() : r === "uk" ? XH() : rF()
   },
@@ -3548,7 +3548,7 @@ const o = () => "OR",
   _F = () => "Значок не выбран",
   lF = () => "Значок не вибрано",
   pF = () => "Chưa chọn huy hiệu",
-  $Q = (n = {}, e = {}) => {
+  $8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? eF() : r === "pt" ? nF() : r === "ch" ? tF() : r === "de" ? oF() : r === "es" ? uF() : r === "fr" ? iF() : r === "it" ? sF() : r === "jp" ? cF() : r === "pl" ? aF() : r === "ru" ? _F() : r === "uk" ? lF() : pF()
   },
@@ -3564,7 +3564,7 @@ const o = () => "OR",
   wF = () => "Занятые слоты:",
   jF = () => "Обладнані слоти:",
   zF = () => "Ô đã trang bị:",
-  VQ = (n = {}, e = {}) => {
+  V8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fF() : r === "pt" ? dF() : r === "ch" ? hF() : r === "de" ? mF() : r === "es" ? gF() : r === "fr" ? kF() : r === "it" ? bF() : r === "jp" ? vF() : r === "pl" ? yF() : r === "ru" ? wF() : r === "uk" ? jF() : zF()
   },
@@ -3580,7 +3580,7 @@ const o = () => "OR",
   MF = () => "Вы можете подать апелляцию только один раз за каждое наказание",
   EF = () => "Ви можете подати апеляцію лише один раз за покарання.",
   BF = () => "Bạn chỉ có thể kháng cáo một lần cho mỗi hình phạt.",
-  OQ = (n = {}, e = {}) => {
+  O8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? xF() : r === "pt" ? qF() : r === "ch" ? SF() : r === "de" ? PF() : r === "es" ? NF() : r === "fr" ? CF() : r === "it" ? AF() : r === "jp" ? DF() : r === "pl" ? TF() : r === "ru" ? MF() : r === "uk" ? EF() : BF()
   },
@@ -3596,7 +3596,7 @@ const o = () => "OR",
   HF = () => "Обратная связь по апелляции",
   FF = () => "Відгук щодо апеляції",
   ZF = () => "Phản hồi về khiếu nại",
-  UQ = (n = {}, e = {}) => {
+  U8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? IF() : r === "pt" ? RF() : r === "ch" ? KF() : r === "de" ? LF() : r === "es" ? WF() : r === "fr" ? $F() : r === "it" ? VF() : r === "jp" ? OF() : r === "pl" ? UF() : r === "ru" ? HF() : r === "uk" ? FF() : ZF()
   },
@@ -3612,7 +3612,7 @@ const o = () => "OR",
   o2 = () => "Ваша апелляция была рассмотрена командой модерации и одобрена. Примененная санкция была отменена.",
   u2 = () => "Ваша апеляція була розглянута командою модерації та схвалена. Застосована санкція була скасована.",
   i2 = () => "Khiếu nại của bạn đã được đội ngũ kiểm duyệt xem xét và chấp thuận. Biện pháp trừng phạt đã áp dụng đã được gỡ bỏ.",
-  HQ = (n = {}, e = {}) => {
+  H8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? GF() : r === "pt" ? QF() : r === "ch" ? YF() : r === "de" ? JF() : r === "es" ? XF() : r === "fr" ? r2() : r === "it" ? e2() : r === "jp" ? n2() : r === "pl" ? t2() : r === "ru" ? o2() : r === "uk" ? u2() : i2()
   },
@@ -3628,7 +3628,7 @@ const o = () => "OR",
   m2 = () => "Ваша апелляция была рассмотрена командой модерации, и решение было оставлено в силе.",
   g2 = () => "Ваша апеляція була розглянута командою модераторів, і рішення було залишено в силі.",
   k2 = () => "Đơn kháng nghị của bạn đã được đội ngũ kiểm duyệt xem xét và quyết định đã được giữ nguyên.",
-  FQ = (n = {}, e = {}) => {
+  F8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? s2() : r === "pt" ? c2() : r === "ch" ? a2() : r === "de" ? _2() : r === "es" ? l2() : r === "fr" ? p2() : r === "it" ? f2() : r === "jp" ? d2() : r === "pl" ? h2() : r === "ru" ? m2() : r === "uk" ? g2() : k2()
   },
@@ -3644,7 +3644,7 @@ const o = () => "OR",
   P2 = () => "Всегда помните о соблюдении нашего кодекса поведения.",
   N2 = () => "Пам'ятайте завжди дотримуватися нашого кодексу поведінки.",
   C2 = () => "Hãy luôn nhớ tuân thủ quy tắc ứng xử của chúng tôi.",
-  ZQ = (n = {}, e = {}) => {
+  Z8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? b2() : r === "pt" ? v2() : r === "ch" ? y2() : r === "de" ? w2() : r === "es" ? j2() : r === "fr" ? z2() : r === "it" ? x2() : r === "jp" ? q2() : r === "pl" ? S2() : r === "ru" ? P2() : r === "uk" ? N2() : C2()
   },
@@ -3660,7 +3660,7 @@ const o = () => "OR",
   L2 = () => "Если вы считаете, что ваше отстранение было ошибкой, вы можете подать апелляцию для пересмотра вашего наказания.<br><br>За каждое наказание допускается только <b>1 апелляция</b>. Если вы уже подавали апелляцию по этому наказанию, вы не сможете подать другую по тому же делу.<br><br>Подача апелляции <b>не гарантирует отмену вашего отстранения</b>; однако наша команда снова рассмотрит вашу ситуацию.<br><br>После рассмотрения <b>вы получите уведомление</b>.",
   W2 = () => "Якщо ви вважаєте, що ваше блокування було помилковим, ви можете подати апеляцію для перегляду вашого покарання.<br><br>За кожне покарання дозволяється лише <b>1 апеляція</b>. Якщо ви вже подавали апеляцію щодо цього покарання, ви не зможете подати іншу для того ж випадку.<br><br>Подання апеляції <b>не гарантує скасування вашого блокування</b>; однак, наша команда знову розгляне вашу ситуацію.<br><br>Після перегляду <b>ви отримаєте сповіщення</b>.",
   $2 = () => "Nếu bạn tin rằng việc đình chỉ của mình là một sai lầm, bạn có thể gửi một kháng nghị để hình phạt của bạn được xem xét lại.<br><br>Mỗi hình phạt chỉ cho phép <b>1 lần kháng nghị</b>. Nếu bạn đã gửi kháng nghị cho hình phạt này, bạn sẽ không thể gửi thêm một kháng nghị nào khác cho cùng trường hợp.<br><br>Việc gửi kháng nghị <b>không đảm bảo rằng lệnh đình chỉ của bạn sẽ bị xóa bỏ</b>; tuy nhiên, đội ngũ của chúng tôi sẽ xem xét lại tình hình của bạn.<br><br>Sau khi xem xét, <b>bạn sẽ nhận được một thông báo</b>.",
-  GQ = (n = {}, e = {}) => {
+  G8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? A2() : r === "pt" ? D2() : r === "ch" ? T2() : r === "de" ? M2() : r === "es" ? E2() : r === "fr" ? B2() : r === "it" ? I2() : r === "jp" ? R2() : r === "pl" ? K2() : r === "ru" ? L2() : r === "uk" ? W2() : $2()
   },
@@ -3676,7 +3676,7 @@ const o = () => "OR",
   J2 = () => "Заблокировано",
   X2 = () => "Заблоковано",
   rZ = () => "Bị chặn",
-  QQ = (n = {}, e = {}) => {
+  Q8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? V2() : r === "pt" ? O2() : r === "ch" ? U2() : r === "de" ? H2() : r === "es" ? F2() : r === "fr" ? Z2() : r === "it" ? G2() : r === "jp" ? Q2() : r === "pl" ? Y2() : r === "ru" ? J2() : r === "uk" ? X2() : rZ()
   },
@@ -3692,7 +3692,7 @@ const o = () => "OR",
   _Z = () => "Принадлежит",
   lZ = () => "Належить",
   pZ = () => "Đã sở hữu",
-  YQ = (n = {}, e = {}) => {
+  Y8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? eZ() : r === "pt" ? nZ() : r === "ch" ? tZ() : r === "de" ? oZ() : r === "es" ? uZ() : r === "fr" ? iZ() : r === "it" ? sZ() : r === "jp" ? cZ() : r === "pl" ? aZ() : r === "ru" ? _Z() : r === "uk" ? lZ() : pZ()
   },
@@ -3708,7 +3708,7 @@ const o = () => "OR",
   wZ = () => "Новый",
   jZ = () => "Новий",
   zZ = () => "Mới",
-  JQ = (n = {}, e = {}) => {
+  J8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? fZ() : r === "pt" ? dZ() : r === "ch" ? hZ() : r === "de" ? mZ() : r === "es" ? gZ() : r === "fr" ? kZ() : r === "it" ? bZ() : r === "jp" ? vZ() : r === "pl" ? yZ() : r === "ru" ? wZ() : r === "uk" ? jZ() : zZ()
   },
@@ -3724,10 +3724,10 @@ const o = () => "OR",
   MZ = () => "Посмотреть все",
   EZ = () => "Переглянути всі",
   BZ = () => "Xem tất cả",
-  XQ = (n = {}, e = {}) => {
+  X8 = (n = {}, e = {}) => {
     const r = e.locale ?? t();
     return r === "en" ? xZ() : r === "pt" ? qZ() : r === "ch" ? SZ() : r === "de" ? PZ() : r === "es" ? NZ() : r === "fr" ? CZ() : r === "it" ? AZ() : r === "jp" ? DZ() : r === "pl" ? TZ() : r === "ru" ? MZ() : r === "uk" ? EZ() : BZ()
   };
 export {
-  SG as $, nG as A, KQ as B, zQ as C, tG as D, oG as E, uG as F, iG as G, sG as H, cG as I, aG as J, _G as K, lG as L, pG as M, fG as N, dG as O, hG as P, mG as Q, gG as R, kG as S, bG as T, vG as U, yG as V, wG as W, jG as X, zG as Y, xG as Z, qG as _, LZ as a, qQ as a$, PG as a0, NG as a1, VQ as a2, IQ as a3, CG as a4, AG as a5, DG as a6, TG as a7, MG as a8, bQ as a9, n0 as aA, t0 as aB, o0 as aC, u0 as aD, i0 as aE, s0 as aF, c0 as aG, a0 as aH, _0 as aI, l0 as aJ, p0 as aK, f0 as aL, d0 as aM, h0 as aN, m0 as aO, g0 as aP, k0 as aQ, b0 as aR, v0 as aS, JQ as aT, y0 as aU, WQ as aV, $Q as aW, w0 as aX, j0 as aY, z0 as aZ, CQ as a_, EG as aa, DQ as ab, BG as ac, wQ as ad, jQ as ae, PQ as af, vQ as ag, IG as ah, RG as ai, KG as aj, LG as ak, WG as al, $G as am, VG as an, OG as ao, UG as ap, HG as aq, FG as ar, ZG as as, GG as at, QG as au, YG as av, JG as aw, XG as ax, r0 as ay, e0 as az, WZ as b, P8 as b$, x0 as b0, q0 as b1, S0 as b2, P0 as b3, N0 as b4, C0 as b5, A0 as b6, D0 as b7, T0 as b8, M0 as b9, o8 as bA, u8 as bB, i8 as bC, s8 as bD, c8 as bE, a8 as bF, _8 as bG, l8 as bH, p8 as bI, f8 as bJ, ZQ as bK, d8 as bL, h8 as bM, m8 as bN, g8 as bO, k8 as bP, mQ as bQ, b8 as bR, v8 as bS, y8 as bT, w8 as bU, j8 as bV, SQ as bW, z8 as bX, x8 as bY, q8 as bZ, S8 as b_, MQ as ba, E0 as bb, NQ as bc, B0 as bd, I0 as be, R0 as bf, K0 as bg, L0 as bh, W0 as bi, $0 as bj, V0 as bk, O0 as bl, U0 as bm, YQ as bn, H0 as bo, F0 as bp, Z0 as bq, G0 as br, Q0 as bs, Y0 as bt, J0 as bu, X0 as bv, r8 as bw, e8 as bx, n8 as by, t8 as bz, $Z as c, gQ as c0, kQ as c1, N8 as c2, C8 as c3, A8 as c4, D8 as c5, AQ as c6, T8 as c7, M8 as c8, E8 as c9, iQ as cA, EQ as cB, sQ as cC, cQ as cD, aQ as cE, OQ as cF, _Q as cG, lQ as cH, pQ as cI, LQ as cJ, xQ as cK, fQ as cL, dQ as cM, hQ as cN, B8 as ca, TQ as cb, I8 as cc, R8 as cd, K8 as ce, L8 as cf, W8 as cg, $8 as ch, V8 as ci, O8 as cj, U8 as ck, H8 as cl, F8 as cm, Z8 as cn, G8 as co, Q8 as cp, Y8 as cq, J8 as cr, X8 as cs, rQ as ct, eQ as cu, nQ as cv, tQ as cw, oQ as cx, uQ as cy, XQ as cz, VZ as d, OZ as e, UZ as f, HZ as g, FZ as h, GQ as i, UQ as j, HQ as k, FQ as l, ZZ as m, GZ as n, RZ as o, QZ as p, YZ as q, BQ as r, KZ as s, RQ as t, JZ as u, XZ as v, QQ as w, rG as x, yQ as y, eG as z
+  SG as $, nG as A, K8 as B, z8 as C, tG as D, oG as E, uG as F, iG as G, sG as H, cG as I, aG as J, _G as K, lG as L, pG as M, fG as N, dG as O, hG as P, mG as Q, gG as R, kG as S, bG as T, vG as U, yG as V, wG as W, jG as X, zG as Y, xG as Z, qG as _, LZ as a, q8 as a$, PG as a0, NG as a1, V8 as a2, I8 as a3, CG as a4, AG as a5, DG as a6, TG as a7, MG as a8, b8 as a9, n0 as aA, t0 as aB, o0 as aC, u0 as aD, i0 as aE, s0 as aF, c0 as aG, a0 as aH, _0 as aI, l0 as aJ, p0 as aK, f0 as aL, d0 as aM, h0 as aN, m0 as aO, g0 as aP, k0 as aQ, b0 as aR, v0 as aS, J8 as aT, y0 as aU, W8 as aV, $8 as aW, w0 as aX, j0 as aY, z0 as aZ, C8 as a_, EG as aa, D8 as ab, BG as ac, w8 as ad, j8 as ae, P8 as af, v8 as ag, IG as ah, RG as ai, KG as aj, LG as ak, WG as al, $G as am, VG as an, OG as ao, UG as ap, HG as aq, FG as ar, ZG as as, GG as at, QG as au, YG as av, JG as aw, XG as ax, r0 as ay, e0 as az, WZ as b, P5 as b$, x0 as b0, q0 as b1, S0 as b2, P0 as b3, N0 as b4, C0 as b5, A0 as b6, D0 as b7, T0 as b8, M0 as b9, o5 as bA, u5 as bB, i5 as bC, s5 as bD, c5 as bE, a5 as bF, _5 as bG, l5 as bH, p5 as bI, f5 as bJ, Z8 as bK, d5 as bL, h5 as bM, m5 as bN, g5 as bO, k5 as bP, m8 as bQ, b5 as bR, v5 as bS, y5 as bT, w5 as bU, j5 as bV, S8 as bW, z5 as bX, x5 as bY, q5 as bZ, S5 as b_, M8 as ba, E0 as bb, N8 as bc, B0 as bd, I0 as be, R0 as bf, K0 as bg, L0 as bh, W0 as bi, $0 as bj, V0 as bk, O0 as bl, U0 as bm, Y8 as bn, H0 as bo, F0 as bp, Z0 as bq, G0 as br, Q0 as bs, Y0 as bt, J0 as bu, X0 as bv, r5 as bw, e5 as bx, n5 as by, t5 as bz, $Z as c, g8 as c0, k8 as c1, N5 as c2, C5 as c3, A5 as c4, D5 as c5, A8 as c6, T5 as c7, M5 as c8, E5 as c9, i8 as cA, E8 as cB, s8 as cC, c8 as cD, a8 as cE, O8 as cF, _8 as cG, l8 as cH, p8 as cI, L8 as cJ, x8 as cK, f8 as cL, d8 as cM, h8 as cN, B5 as ca, T8 as cb, I5 as cc, R5 as cd, K5 as ce, L5 as cf, W5 as cg, $5 as ch, V5 as ci, O5 as cj, U5 as ck, H5 as cl, F5 as cm, Z5 as cn, G5 as co, Q5 as cp, Y5 as cq, J5 as cr, X5 as cs, r8 as ct, e8 as cu, n8 as cv, t8 as cw, o8 as cx, u8 as cy, X8 as cz, VZ as d, OZ as e, UZ as f, HZ as g, FZ as h, G8 as i, U8 as j, H8 as k, F8 as l, ZZ as m, GZ as n, RZ as o, QZ as p, YZ as q, B8 as r, KZ as s, R8 as t, JZ as u, XZ as v, Q8 as w, rG as x, y8 as y, eG as z
 };

@@ -2,7 +2,7 @@
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "70dda2bcd37c81e0ed25f634cf032d8abd8db068"
+      id: "1ff68788c5989e2fec5a9c9b2aaa5ef268601fd5"
     }
   } catch {}
 })();
@@ -44,19 +44,19 @@ function m(e, {
     c = +n.opacity,
     p = r === "y" ? "height" : "width",
     l = parseFloat(n[p]),
-    d = r === "y" ? ["top", "bottom"] : ["left", "right"],
-    o = d.map(a => `${a[0].toUpperCase()}${a.slice(1)}`),
-    f = parseFloat(n[`padding${o[0]}`]),
-    y = parseFloat(n[`padding${o[1]}`]),
-    u = parseFloat(n[`margin${o[0]}`]),
-    g = parseFloat(n[`margin${o[1]}`]),
-    _ = parseFloat(n[`border${o[0]}Width`]),
-    $ = parseFloat(n[`border${o[1]}Width`]);
+    o = r === "y" ? ["top", "bottom"] : ["left", "right"],
+    d = o.map(a => `${a[0].toUpperCase()}${a.slice(1)}`),
+    f = parseFloat(n[`padding${d[0]}`]),
+    y = parseFloat(n[`padding${d[1]}`]),
+    u = parseFloat(n[`margin${d[0]}`]),
+    g = parseFloat(n[`margin${d[1]}`]),
+    _ = parseFloat(n[`border${d[0]}Width`]),
+    $ = parseFloat(n[`border${d[1]}Width`]);
   return {
     delay: t,
     duration: i,
     easing: s,
-    css: a => `overflow: hidden;opacity: ${Math.min(a*20,1)*c};${p}: ${a*l}px;padding-${d[0]}: ${a*f}px;padding-${d[1]}: ${a*y}px;margin-${d[0]}: ${a*u}px;margin-${d[1]}: ${a*g}px;border-${d[0]}-width: ${a*_}px;border-${d[1]}-width: ${a*$}px;min-${p}: 0`
+    css: a => `overflow: hidden;opacity: ${Math.min(a*20,1)*c};${p}: ${a*l}px;padding-${o[0]}: ${a*f}px;padding-${o[1]}: ${a*y}px;margin-${o[0]}: ${a*u}px;margin-${o[1]}: ${a*g}px;border-${o[0]}-width: ${a*_}px;border-${o[1]}-width: ${a*$}px;min-${p}: 0`
   }
 }
 export {
