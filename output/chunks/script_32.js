@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./VsNXmfsE.js";
+} from "./tk-xaxvS.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "1ff68788c5989e2fec5a9c9b2aaa5ef268601fd5"
+      id: "5813ae56f58e7333550e54b13dee572a566ecd62"
     }
   } catch {}
 })();
@@ -17,12 +17,12 @@ try {
   })()
 } catch {}
 const o = () => "Close",
-  c = () => "Fechar",
-  s = () => "关闭",
+  s = () => "Fechar",
+  c = () => "关闭",
   u = () => "Schließen",
-  f = () => "Cerrar",
-  i = () => "Fermer",
-  l = () => "Chiudi",
+  i = () => "Cerrar",
+  l = () => "Fermer",
+  f = () => "Chiudi",
   d = () => "閉じる",
   a = () => "Zamknij",
   b = () => "Закрыть",
@@ -30,7 +30,7 @@ const o = () => "Close",
   _ = () => "Đóng",
   y = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? o() : e === "pt" ? c() : e === "ch" ? s() : e === "de" ? u() : e === "es" ? f() : e === "fr" ? i() : e === "it" ? l() : e === "jp" ? d() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? p() : _()
+    return e === "en" ? o() : e === "pt" ? s() : e === "ch" ? c() : e === "de" ? u() : e === "es" ? i() : e === "fr" ? l() : e === "it" ? f() : e === "jp" ? d() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? p() : _()
   };
 export {
   y as c

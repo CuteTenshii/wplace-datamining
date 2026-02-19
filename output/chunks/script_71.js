@@ -1,11 +1,11 @@
 import {
   g as r
-} from "./VsNXmfsE.js";
+} from "./tk-xaxvS.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "1ff68788c5989e2fec5a9c9b2aaa5ef268601fd5"
+      id: "5813ae56f58e7333550e54b13dee572a566ecd62"
     }
   } catch {}
 })();
@@ -18,9 +18,9 @@ try {
 } catch {}
 const n = () => "Reddit",
   i = () => "Reddit",
-  f = () => "Reddit",
   o = () => "Reddit",
   u = () => "Reddit",
+  f = () => "Reddit",
   s = () => "Reddit",
   c = () => "Reddit",
   l = () => "Reddit",
@@ -30,7 +30,7 @@ const n = () => "Reddit",
   y = () => "Reddit",
   g = (t = {}, d = {}) => {
     const e = d.locale ?? r();
-    return e === "en" ? n() : e === "pt" ? i() : e === "ch" ? f() : e === "de" ? o() : e === "es" ? u() : e === "fr" ? s() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? p() : e === "uk" ? _() : y()
+    return e === "en" ? n() : e === "pt" ? i() : e === "ch" ? o() : e === "de" ? u() : e === "es" ? f() : e === "fr" ? s() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? p() : e === "uk" ? _() : y()
   };
 export {
   g as r

@@ -1,41 +1,41 @@
-var ze = Object.defineProperty;
+var Oe = Object.defineProperty;
 var oe = n => {
   throw TypeError(n)
 };
-var Oe = (n, t, e) => t in n ? ze(n, t, {
+var ze = (n, t, e) => t in n ? Oe(n, t, {
   enumerable: !0,
   configurable: !0,
   writable: !0,
   value: e
 }) : n[t] = e;
-var p = (n, t, e) => Oe(n, typeof t != "symbol" ? t + "" : t, e),
+var p = (n, t, e) => ze(n, typeof t != "symbol" ? t + "" : t, e),
   Ce = (n, t, e) => t.has(n) || oe("Cannot " + e);
 var f = (n, t, e) => (Ce(n, t, "read from private field"), e ? e.call(n) : t.get(n)),
   w = (n, t, e) => t.has(n) ? oe("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(n) : t.set(n, e);
 import {
   g as _
-} from "./VsNXmfsE.js";
+} from "./tk-xaxvS.js";
 import {
   e as E,
   g as ie,
   j as y,
   i as v,
   y as ue,
-  u as N
-} from "./ik5_Egbm.js";
+  u as I
+} from "./Bl5qixfQ.js";
 import {
   P as ge,
   g as De
-} from "./BHWlz8lF.js";
+} from "./fSMWwOhh.js";
 import {
   s as Me,
   c as Be
-} from "./nk5c1HB7.js";
+} from "./BiEbO4CX.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "1ff68788c5989e2fec5a9c9b2aaa5ef268601fd5"
+      id: "5813ae56f58e7333550e54b13dee572a566ecd62"
     }
   } catch {}
 })();
@@ -43,7 +43,7 @@ try {
   (function() {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       t = new n.Error().stack;
-    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "ba8eaa7b-9c44-4f15-bac1-2f20caa10a5c", n._sentryDebugIdIdentifier = "sentry-dbid-ba8eaa7b-9c44-4f15-bac1-2f20caa10a5c")
+    t && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[t] = "7ffb92fe-fd24-4f29-939f-a4544ebfc31c", n._sentryDebugIdIdentifier = "sentry-dbid-7ffb92fe-fd24-4f29-939f-a4544ebfc31c")
   })()
 } catch {}
 
@@ -70,10 +70,10 @@ class Le {
       type: r,
       message: a
     }) => {
-      const s = this.toasts.findIndex(u => u.id === t),
-        i = this.toasts[s];
+      const s = this.toasts.findIndex(i => i.id === t),
+        c = this.toasts[s];
       this.toasts[s] = {
-        ...i,
+        ...c,
         ...e,
         id: t,
         title: a,
@@ -82,16 +82,16 @@ class Le {
       }
     });
     p(this, "create", t => {
-      var u;
+      var i;
       const {
         message: e,
         ...r
-      } = t, a = typeof(t == null ? void 0 : t.id) == "number" || t.id && ((u = t.id) == null ? void 0 : u.length) > 0 ? t.id : ce++, s = t.dismissable === void 0 ? !0 : t.dismissable, i = t.type === void 0 ? "default" : t.type;
+      } = t, a = typeof(t == null ? void 0 : t.id) == "number" || t.id && ((i = t.id) == null ? void 0 : i.length) > 0 ? t.id : ce++, s = t.dismissable === void 0 ? !0 : t.dismissable, c = t.type === void 0 ? "default" : t.type;
       return ue(() => {
         this.toasts.find(d => d.id === a) ? this.updateToast({
           id: a,
           data: t,
-          type: i,
+          type: c,
           message: e,
           dismissable: s
         }) : this.addToast({
@@ -99,7 +99,7 @@ class Le {
           id: a,
           title: e,
           dismissable: s,
-          type: i
+          type: c
         })
       }), a
     });
@@ -166,37 +166,37 @@ class Le {
       }));
       const a = t instanceof Promise ? t : t();
       let s = r !== void 0;
-      return a.then(i => {
-        if (typeof i == "object" && i && "ok" in i && typeof i.ok == "boolean" && !i.ok) {
+      return a.then(c => {
+        if (typeof c == "object" && c && "ok" in c && typeof c.ok == "boolean" && !c.ok) {
           s = !1;
-          const u = Ue(i);
+          const i = Ue(c);
           this.create({
             id: r,
             type: "error",
-            message: u
+            message: i
           })
         } else if (e.success !== void 0) {
           s = !1;
-          const u = typeof e.success == "function" ? e.success(i) : e.success;
+          const i = typeof e.success == "function" ? e.success(c) : e.success;
           this.create({
             id: r,
             type: "success",
-            message: u
+            message: i
           })
         }
-      }).catch(i => {
+      }).catch(c => {
         if (e.error !== void 0) {
           s = !1;
-          const u = typeof e.error == "function" ? e.error(i) : e.error;
+          const i = typeof e.error == "function" ? e.error(c) : e.error;
           this.create({
             id: r,
             type: "error",
-            message: u
+            message: i
           })
         }
       }).finally(() => {
-        var i;
-        s && (this.dismiss(r), r = void 0), (i = e.finally) == null || i.call(e)
+        var c;
+        s && (this.dismiss(r), r = void 0), (c = e.finally) == null || c.call(e)
       }), r
     });
     p(this, "custom", (t, e) => {
@@ -251,7 +251,7 @@ function Re(n, t) {
 var te;
 class _l {
   constructor() {
-    w(this, te, N(() => b.toasts.filter(t => !t.dismiss)))
+    w(this, te, I(() => b.toasts.filter(t => !t.dismiss)))
   }
   get toasts() {
     return y(f(this, te))
@@ -312,11 +312,11 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Qe = () => "ルール違反により、あなたのアカウントは一時停止されています。",
   et = () => "Twoje konto zostało zawieszone za łamanie zasad",
   tt = () => "Ваш аккаунт был временно заблокирован за нарушение правил",
-  nt = () => "Ваш обліковий запис було призупинено за порушення правил",
-  rt = () => "Tài khoản của bạn đã bị tạm đình chỉ vì vi phạm luật",
+  rt = () => "Ваш обліковий запис було призупинено за порушення правил",
+  nt = () => "Tài khoản của bạn đã bị tạm đình chỉ vì vi phạm luật",
   de = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Je() : e === "pt" ? We() : e === "ch" ? Ke() : e === "de" ? He() : e === "es" ? Ye() : e === "fr" ? Ze() : e === "it" ? Xe() : e === "jp" ? Qe() : e === "pl" ? et() : e === "ru" ? tt() : e === "uk" ? nt() : rt()
+    return e === "en" ? Je() : e === "pt" ? We() : e === "ch" ? Ke() : e === "de" ? He() : e === "es" ? Ye() : e === "fr" ? Ze() : e === "it" ? Xe() : e === "jp" ? Qe() : e === "pl" ? et() : e === "ru" ? tt() : e === "uk" ? rt() : nt()
   },
   at = () => "Alliance name already taken",
   st = () => "Já possui uma aliança com esse nome",
@@ -344,17 +344,17 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   xt = () => "アライアンス名が最大文字数を超えています。",
   Et = () => "Nazwa sojuszu przekroczyła maksymalną liczbę znaków",
   Tt = () => "Название альянса превышает максимальную длину",
-  At = () => "Назва альянсу перевищує максимально допустиму кількість символів",
-  jt = () => "Tên liên minh vượt quá số ký tự cho phép",
-  Pt = (n = {}, t = {}) => {
+  Pt = () => "Назва альянсу перевищує максимально допустиму кількість символів",
+  At = () => "Tên liên minh vượt quá số ký tự cho phép",
+  Nt = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? gt() : e === "pt" ? wt() : e === "ch" ? yt() : e === "de" ? bt() : e === "es" ? vt() : e === "fr" ? St() : e === "it" ? kt() : e === "jp" ? xt() : e === "pl" ? Et() : e === "ru" ? Tt() : e === "uk" ? At() : jt()
+    return e === "en" ? gt() : e === "pt" ? wt() : e === "ch" ? yt() : e === "de" ? bt() : e === "es" ? vt() : e === "fr" ? St() : e === "it" ? kt() : e === "jp" ? xt() : e === "pl" ? Et() : e === "ru" ? Tt() : e === "uk" ? Pt() : At()
   },
-  qt = () => "Alliance with empty name",
-  It = () => "Aliança com nome vazio",
-  Nt = () => "名称为空的联盟",
-  zt = () => "Allianz mit leerem Namen",
-  Ot = () => "Alianza con nombre vacío",
+  jt = () => "Alliance with empty name",
+  qt = () => "Aliança com nome vazio",
+  It = () => "名称为空的联盟",
+  Ot = () => "Allianz mit leerem Namen",
+  zt = () => "Alianza con nombre vacío",
   Ct = () => "Alliance avec nom vide",
   Dt = () => "Alleanza con nome vuoto",
   Mt = () => "名前が空のアライアンスです。",
@@ -364,7 +364,7 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Ut = () => "Liên minh không có tên",
   Rt = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? qt() : e === "pt" ? It() : e === "ch" ? Nt() : e === "de" ? zt() : e === "es" ? Ot() : e === "fr" ? Ct() : e === "it" ? Dt() : e === "jp" ? Mt() : e === "pl" ? Bt() : e === "ru" ? $t() : e === "uk" ? Lt() : Ut()
+    return e === "en" ? jt() : e === "pt" ? qt() : e === "ch" ? It() : e === "de" ? Ot() : e === "es" ? zt() : e === "fr" ? Ct() : e === "it" ? Dt() : e === "jp" ? Mt() : e === "pl" ? Bt() : e === "ru" ? $t() : e === "uk" ? Lt() : Ut()
   },
   Gt = () => "Botting",
   Ft = () => "Uso de bots",
@@ -377,145 +377,145 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Zt = () => "Botting",
   Xt = () => "Боттинг",
   Qt = () => "Боти",
-  en = () => "Botting",
-  tn = (n = {}, t = {}) => {
+  er = () => "Botting",
+  tr = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Gt() : e === "pt" ? Ft() : e === "ch" ? Vt() : e === "de" ? Jt() : e === "es" ? Wt() : e === "fr" ? Kt() : e === "it" ? Ht() : e === "jp" ? Yt() : e === "pl" ? Zt() : e === "ru" ? Xt() : e === "uk" ? Qt() : en()
+    return e === "en" ? Gt() : e === "pt" ? Ft() : e === "ch" ? Vt() : e === "de" ? Jt() : e === "es" ? Wt() : e === "fr" ? Kt() : e === "it" ? Ht() : e === "jp" ? Yt() : e === "pl" ? Zt() : e === "ru" ? Xt() : e === "uk" ? Qt() : er()
   },
-  nn = () => "Breaking the rules",
-  rn = () => "Quebrar as regras",
-  an = () => "违反规则",
-  sn = () => "Regeln brechen",
-  on = () => "Romper las reglas",
-  un = () => "Violation des règles",
-  cn = () => "Violazione delle regole",
-  dn = () => "ルール違反",
-  ln = () => "Łamanie zasad",
-  _n = () => "Нарушение правил",
-  fn = () => "Порушення правил",
-  mn = () => "Vi phạm luật",
-  hn = (n = {}, t = {}) => {
+  rr = () => "Breaking the rules",
+  nr = () => "Quebrar as regras",
+  ar = () => "违反规则",
+  sr = () => "Regeln brechen",
+  or = () => "Romper las reglas",
+  ir = () => "Violation des règles",
+  ur = () => "Violazione delle regole",
+  cr = () => "ルール違反",
+  dr = () => "Łamanie zasad",
+  lr = () => "Нарушение правил",
+  _r = () => "Порушення правил",
+  fr = () => "Vi phạm luật",
+  mr = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? nn() : e === "pt" ? rn() : e === "ch" ? an() : e === "de" ? sn() : e === "es" ? on() : e === "fr" ? un() : e === "it" ? cn() : e === "jp" ? dn() : e === "pl" ? ln() : e === "ru" ? _n() : e === "uk" ? fn() : mn()
+    return e === "en" ? rr() : e === "pt" ? nr() : e === "ch" ? ar() : e === "de" ? sr() : e === "es" ? or() : e === "fr" ? ir() : e === "it" ? ur() : e === "jp" ? cr() : e === "pl" ? dr() : e === "ru" ? lr() : e === "uk" ? _r() : fr()
   },
-  pn = () => "You cannot paint over event pixels",
-  gn = () => "Você não pode pintar sobre pixels de eventos",
-  wn = () => "你不能覆盖活动像素",
-  yn = () => "Du kannst nicht über Event-Pixel malen",
-  bn = () => "No puedes pintar sobre píxeles de evento",
-  vn = () => "Vous ne pouvez pas peindre sur des pixels d’événement",
-  Sn = () => "Non puoi dipingere sopra i pixel dell'evento",
-  kn = () => "イベント用のピクセルの上には塗れません。",
-  xn = () => "Nie możesz malować po pikselach wydarzenia",
-  En = () => "Вы не можете рисовать по пикселям события",
-  Tn = () => "Ви не можете малювати поверх пікселів події",
-  An = () => "Bạn không thể tô lên pixel sự kiện",
-  jn = (n = {}, t = {}) => {
+  hr = () => "You cannot paint over event pixels",
+  pr = () => "Você não pode pintar sobre pixels de eventos",
+  gr = () => "你不能覆盖活动像素",
+  wr = () => "Du kannst nicht über Event-Pixel malen",
+  yr = () => "No puedes pintar sobre píxeles de evento",
+  br = () => "Vous ne pouvez pas peindre sur des pixels d’événement",
+  vr = () => "Non puoi dipingere sopra i pixel dell'evento",
+  Sr = () => "イベント用のピクセルの上には塗れません。",
+  kr = () => "Nie możesz malować po pikselach wydarzenia",
+  xr = () => "Вы не можете рисовать по пикселям события",
+  Er = () => "Ви не можете малювати поверх пікселів події",
+  Tr = () => "Bạn không thể tô lên pixel sự kiện",
+  Pr = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? pn() : e === "pt" ? gn() : e === "ch" ? wn() : e === "de" ? yn() : e === "es" ? bn() : e === "fr" ? vn() : e === "it" ? Sn() : e === "jp" ? kn() : e === "pl" ? xn() : e === "ru" ? En() : e === "uk" ? Tn() : An()
+    return e === "en" ? hr() : e === "pt" ? pr() : e === "ch" ? gr() : e === "de" ? wr() : e === "es" ? yr() : e === "fr" ? br() : e === "it" ? vr() : e === "jp" ? Sr() : e === "pl" ? kr() : e === "ru" ? xr() : e === "uk" ? Er() : Tr()
   },
-  Pn = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
-  qn = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
-  In = () => "无法连接到服务器。可能是你没有网络，或服务器已离线。请稍后重试。",
-  Nn = () => "Server nicht erreichbar. Vielleicht hast du keine Internetverbindung oder der Server ist offline. Versuche es später erneut.",
-  zn = () => "No se puede conectar con el servidor. Puede que estés sin internet o el servidor esté caído. Inténtalo de nuevo más tarde.",
-  On = () => "Impossible d’atteindre le serveur. Vous n’êtes peut-être pas connecté à Internet ou le serveur est hors ligne. Réessayez plus tard.",
-  Cn = () => "Impossibile contattare il server. Forse sei senza connessione o il server è offline. Riprova più tardi.",
-  Dn = () => "サーバーに接続できません。インターネットに接続されていないか、サーバーが停止している可能性があります。しばらくしてからもう一度お試しください。",
-  Mn = () => "Nie można połączyć się z serwerem. Być może nie masz internetu lub serwer nie działa. Spróbuj ponownie później.",
-  Bn = () => "Не удаётся подключиться к серверу. Возможно, у вас нет доступа к интернету или сервер недоступен. Попробуйте позже.",
-  $n = () => "Не вдається підключитися до сервера. Можливо, у вас немає інтернет-зʼєднання або сервер недоступний. Спробуйте пізніше.",
-  Ln = () => "Không thể kết nối tới máy chủ. Có thể bạn đang mất kết nối mạng hoặc máy chủ đang tạm ngưng. Hãy thử lại sau",
-  Un = (n = {}, t = {}) => {
+  Ar = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
+  Nr = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
+  jr = () => "无法连接到服务器。可能是你没有网络，或服务器已离线。请稍后重试。",
+  qr = () => "Server nicht erreichbar. Vielleicht hast du keine Internetverbindung oder der Server ist offline. Versuche es später erneut.",
+  Ir = () => "No se puede conectar con el servidor. Puede que estés sin internet o el servidor esté caído. Inténtalo de nuevo más tarde.",
+  Or = () => "Impossible d’atteindre le serveur. Vous n’êtes peut-être pas connecté à Internet ou le serveur est hors ligne. Réessayez plus tard.",
+  zr = () => "Impossibile contattare il server. Forse sei senza connessione o il server è offline. Riprova più tardi.",
+  Cr = () => "サーバーに接続できません。インターネットに接続されていないか、サーバーが停止している可能性があります。しばらくしてからもう一度お試しください。",
+  Dr = () => "Nie można połączyć się z serwerem. Być może nie masz internetu lub serwer nie działa. Spróbuj ponownie później.",
+  Mr = () => "Не удаётся подключиться к серверу. Возможно, у вас нет доступа к интернету или сервер недоступен. Попробуйте позже.",
+  Br = () => "Не вдається підключитися до сервера. Можливо, у вас немає інтернет-зʼєднання або сервер недоступний. Спробуйте пізніше.",
+  $r = () => "Không thể kết nối tới máy chủ. Có thể bạn đang mất kết nối mạng hoặc máy chủ đang tạm ngưng. Hãy thử lại sau",
+  Lr = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Pn() : e === "pt" ? qn() : e === "ch" ? In() : e === "de" ? Nn() : e === "es" ? zn() : e === "fr" ? On() : e === "it" ? Cn() : e === "jp" ? Dn() : e === "pl" ? Mn() : e === "ru" ? Bn() : e === "uk" ? $n() : Ln()
+    return e === "en" ? Ar() : e === "pt" ? Nr() : e === "ch" ? jr() : e === "de" ? qr() : e === "es" ? Ir() : e === "fr" ? Or() : e === "it" ? zr() : e === "jp" ? Cr() : e === "pl" ? Dr() : e === "ru" ? Mr() : e === "uk" ? Br() : $r()
   },
-  Rn = () => "Couldn't complete the purchase. This item does not exist.",
-  Gn = () => "Não foi possível concluir a compra. Este item não existe.",
-  Fn = () => "无法完成购买。该物品不存在。",
-  Vn = () => "Kauf konnte nicht abgeschlossen werden. Dieses Item existiert nicht.",
-  Jn = () => "No se pudo completar la compra. Este ítem no existe.",
-  Wn = () => "Achat impossible. Cet objet n’existe pas.",
-  Kn = () => "Impossibile completare l'acquisto. Questo oggetto non esiste.",
-  Hn = () => "購入を完了できませんでした。このアイテムは存在しません。",
-  Yn = () => "Nie udało się dokończyć zakupu. Ten przedmiot nie istnieje.",
-  Zn = () => "Не удалось завершить покупку. Этот предмет не существует.",
-  Xn = () => "Не вдалося завершити покупку. Цей предмет не існує.",
-  Qn = () => "Không thể hoàn tất giao dịch. Vật phẩm này không tồn tại.",
+  Ur = () => "Couldn't complete the purchase. This item does not exist.",
+  Rr = () => "Não foi possível concluir a compra. Este item não existe.",
+  Gr = () => "无法完成购买。该物品不存在。",
+  Fr = () => "Kauf konnte nicht abgeschlossen werden. Dieses Item existiert nicht.",
+  Vr = () => "No se pudo completar la compra. Este ítem no existe.",
+  Jr = () => "Achat impossible. Cet objet n’existe pas.",
+  Wr = () => "Impossibile completare l'acquisto. Questo oggetto non esiste.",
+  Kr = () => "購入を完了できませんでした。このアイテムは存在しません。",
+  Hr = () => "Nie udało się dokończyć zakupu. Ten przedmiot nie istnieje.",
+  Yr = () => "Не удалось завершить покупку. Этот предмет не существует.",
+  Zr = () => "Не вдалося завершити покупку. Цей предмет не існує.",
+  Xr = () => "Không thể hoàn tất giao dịch. Vật phẩm này không tồn tại.",
   le = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Rn() : e === "pt" ? Gn() : e === "ch" ? Fn() : e === "de" ? Vn() : e === "es" ? Jn() : e === "fr" ? Wn() : e === "it" ? Kn() : e === "jp" ? Hn() : e === "pl" ? Yn() : e === "ru" ? Zn() : e === "uk" ? Xn() : Qn()
+    return e === "en" ? Ur() : e === "pt" ? Rr() : e === "ch" ? Gr() : e === "de" ? Fr() : e === "es" ? Vr() : e === "fr" ? Jr() : e === "it" ? Wr() : e === "jp" ? Kr() : e === "pl" ? Hr() : e === "ru" ? Yr() : e === "uk" ? Zr() : Xr()
   },
-  er = () => "We’re currently experiencing high traffic. Some requests may not be processed at this time—please try again later. Thank you for your patience.",
-  tr = () => "Estamos enfrentando um volume alto de acessos no momento. Algumas solicitações podem não ser processadas agora — por favor, tente novamente mais tarde. Agradecemos a sua compreensão.",
-  nr = () => "我们当前正遭遇高流量。一些请求可能无法立即处理——请稍后再试。感谢你的耐心。",
-  rr = () => "Wir haben gerade sehr viel Traffic. Einige Anfragen können momentan nicht verarbeitet werden – bitte versuche es später erneut. Danke für deine Geduld.",
-  ar = () => "Actualmente estamos recibiendo mucho tráfico. Es posible que algunas solicitudes no se procesen en este momento; inténtalo de nuevo más tarde. Gracias por tu paciencia.",
-  sr = () => "Nous subissons actuellement un trafic élevé. Certaines requêtes peuvent ne pas être traitées pour le moment — veuillez réessayer plus tard. Merci pour votre patience.",
-  or = () => "Stiamo affrontando un elevato volume di accessi in questo momento. Alcune richieste potrebbero non essere elaborate ora — riprova più tardi. Grazie per la comprensione.",
-  ir = () => "現在アクセスが集中しています。一部のリクエストが処理されない場合があります。しばらくしてからもう一度お試しください。ご理解ありがとうございます。",
-  ur = () => "Obecnie doświadczamy dużego ruchu. Niektóre żądania mogą nie zostać teraz przetworzone — spróbuj ponownie później. Dziękujemy za cierpliwość.",
-  cr = () => "Сейчас мы испытываем очень высокую нагрузку. Некоторые запросы могут не обрабатываться — попробуйте позже. Спасибо за ваше терпение.",
-  dr = () => "Зараз ми отримуємо великий обсяг трафіку. Деякі запити можуть тимчасово не оброблятися — будь ласка, спробуйте пізніше. Дякуємо за розуміння.",
-  lr = () => "Hiện chúng tôi đang chịu lượng truy cập rất cao. Một số yêu cầu có thể không được xử lý ngay bây giờ — hãy thử lại sau. Cảm ơn bạn đã thông cảm.",
-  _r = (n = {}, t = {}) => {
+  Qr = () => "We’re currently experiencing high traffic. Some requests may not be processed at this time—please try again later. Thank you for your patience.",
+  en = () => "Estamos enfrentando um volume alto de acessos no momento. Algumas solicitações podem não ser processadas agora — por favor, tente novamente mais tarde. Agradecemos a sua compreensão.",
+  tn = () => "我们当前正遭遇高流量。一些请求可能无法立即处理——请稍后再试。感谢你的耐心。",
+  rn = () => "Wir haben gerade sehr viel Traffic. Einige Anfragen können momentan nicht verarbeitet werden – bitte versuche es später erneut. Danke für deine Geduld.",
+  nn = () => "Actualmente estamos recibiendo mucho tráfico. Es posible que algunas solicitudes no se procesen en este momento; inténtalo de nuevo más tarde. Gracias por tu paciencia.",
+  an = () => "Nous subissons actuellement un trafic élevé. Certaines requêtes peuvent ne pas être traitées pour le moment — veuillez réessayer plus tard. Merci pour votre patience.",
+  sn = () => "Stiamo affrontando un elevato volume di accessi in questo momento. Alcune richieste potrebbero non essere elaborate ora — riprova più tardi. Grazie per la comprensione.",
+  on = () => "現在アクセスが集中しています。一部のリクエストが処理されない場合があります。しばらくしてからもう一度お試しください。ご理解ありがとうございます。",
+  un = () => "Obecnie doświadczamy dużego ruchu. Niektóre żądania mogą nie zostać teraz przetworzone — spróbuj ponownie później. Dziękujemy za cierpliwość.",
+  cn = () => "Сейчас мы испытываем очень высокую нагрузку. Некоторые запросы могут не обрабатываться — попробуйте позже. Спасибо за ваше терпение.",
+  dn = () => "Зараз ми отримуємо великий обсяг трафіку. Деякі запити можуть тимчасово не оброблятися — будь ласка, спробуйте пізніше. Дякуємо за розуміння.",
+  ln = () => "Hiện chúng tôi đang chịu lượng truy cập rất cao. Một số yêu cầu có thể không được xử lý ngay bây giờ — hãy thử lại sau. Cảm ơn bạn đã thông cảm.",
+  _n = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? er() : e === "pt" ? tr() : e === "ch" ? nr() : e === "de" ? rr() : e === "es" ? ar() : e === "fr" ? sr() : e === "it" ? or() : e === "jp" ? ir() : e === "pl" ? ur() : e === "ru" ? cr() : e === "uk" ? dr() : lr()
+    return e === "en" ? Qr() : e === "pt" ? en() : e === "ch" ? tn() : e === "de" ? rn() : e === "es" ? nn() : e === "fr" ? an() : e === "it" ? sn() : e === "jp" ? on() : e === "pl" ? un() : e === "ru" ? cn() : e === "uk" ? dn() : ln()
   },
-  fr = () => "Doxxing",
-  mr = () => "Doxxing",
-  hr = () => "人肉搜索",
-  pr = () => "Doxxing",
-  gr = () => "Doxxing",
-  wr = () => "Doxxing",
-  yr = () => "Doxxing",
-  br = () => "ドックス（Doxxing）",
-  vr = () => "Doxxing",
-  Sr = () => "Докcинг",
-  kr = () => "Докcинг",
-  xr = () => "Doxxing",
-  Er = (n = {}, t = {}) => {
+  fn = () => "Doxxing",
+  mn = () => "Doxxing",
+  hn = () => "人肉搜索",
+  pn = () => "Doxxing",
+  gn = () => "Doxxing",
+  wn = () => "Doxxing",
+  yn = () => "Doxxing",
+  bn = () => "ドックス（Doxxing）",
+  vn = () => "Doxxing",
+  Sn = () => "Докcинг",
+  kn = () => "Докcинг",
+  xn = () => "Doxxing",
+  En = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? fr() : e === "pt" ? mr() : e === "ch" ? hr() : e === "de" ? pr() : e === "es" ? gr() : e === "fr" ? wr() : e === "it" ? yr() : e === "jp" ? br() : e === "pl" ? vr() : e === "ru" ? Sr() : e === "uk" ? kr() : xr()
+    return e === "en" ? fn() : e === "pt" ? mn() : e === "ch" ? hn() : e === "de" ? pn() : e === "es" ? gn() : e === "fr" ? wn() : e === "it" ? yn() : e === "jp" ? bn() : e === "pl" ? vn() : e === "ru" ? Sn() : e === "uk" ? kn() : xn()
   },
-  Tr = n => `Error while painting: ${n.err}`,
-  Ar = n => `Erro enquanto pinta: ${n.err}`,
-  jr = n => `绘制时出错：${n.err}`,
-  Pr = n => `Fehler beim Malen: ${n.err}`,
-  qr = n => `Error al pintar: ${n.err}`,
-  Ir = n => `Erreur lors de la peinture : ${n.err}`,
-  Nr = n => `Errore durante la pittura: ${n.err}`,
-  zr = n => `ペイント中にエラーが発生しました: ${n.err}`,
-  Or = n => `Błąd podczas malowania: ${n.err}`,
-  Cr = n => `Ошибка при рисовании: ${n.err}`,
-  Dr = n => `Помилка під час малювання: ${n.err}`,
-  Mr = n => `Lỗi khi tô: ${n.err}`,
-  Br = (n, t = {}) => {
+  Tn = n => `Error while painting: ${n.err}`,
+  Pn = n => `Erro enquanto pinta: ${n.err}`,
+  An = n => `绘制时出错：${n.err}`,
+  Nn = n => `Fehler beim Malen: ${n.err}`,
+  jn = n => `Error al pintar: ${n.err}`,
+  qn = n => `Erreur lors de la peinture : ${n.err}`,
+  In = n => `Errore durante la pittura: ${n.err}`,
+  On = n => `ペイント中にエラーが発生しました: ${n.err}`,
+  zn = n => `Błąd podczas malowania: ${n.err}`,
+  Cn = n => `Ошибка при рисовании: ${n.err}`,
+  Dn = n => `Помилка під час малювання: ${n.err}`,
+  Mn = n => `Lỗi khi tô: ${n.err}`,
+  Bn = (n, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Tr(n) : e === "pt" ? Ar(n) : e === "ch" ? jr(n) : e === "de" ? Pr(n) : e === "es" ? qr(n) : e === "fr" ? Ir(n) : e === "it" ? Nr(n) : e === "jp" ? zr(n) : e === "pl" ? Or(n) : e === "ru" ? Cr(n) : e === "uk" ? Dr(n) : Mr(n)
+    return e === "en" ? Tn(n) : e === "pt" ? Pn(n) : e === "ch" ? An(n) : e === "de" ? Nn(n) : e === "es" ? jn(n) : e === "fr" ? qn(n) : e === "it" ? In(n) : e === "jp" ? On(n) : e === "pl" ? zn(n) : e === "ru" ? Cn(n) : e === "uk" ? Dn(n) : Mn(n)
   },
-  $r = () => "Griefing",
-  Lr = () => "Griefing",
-  Ur = () => "破坏行为",
-  Rr = () => "Griefing",
-  Gr = () => "Griefing",
-  Fr = () => "Griefing",
-  Vr = () => "Griefing",
-  Jr = () => "グリーフィング",
-  Wr = () => "Griefing",
-  Kr = () => "Гриферство",
-  Hr = () => "Гріфінг",
-  Yr = () => "Griefing",
-  Zr = (n = {}, t = {}) => {
+  $n = () => "Griefing",
+  Ln = () => "Griefing",
+  Un = () => "破坏行为",
+  Rn = () => "Griefing",
+  Gn = () => "Griefing",
+  Fn = () => "Griefing",
+  Vn = () => "Griefing",
+  Jn = () => "グリーフィング",
+  Wn = () => "Griefing",
+  Kn = () => "Гриферство",
+  Hn = () => "Гріфінг",
+  Yn = () => "Griefing",
+  Zn = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? $r() : e === "pt" ? Lr() : e === "ch" ? Ur() : e === "de" ? Rr() : e === "es" ? Gr() : e === "fr" ? Fr() : e === "it" ? Vr() : e === "jp" ? Jr() : e === "pl" ? Wr() : e === "ru" ? Kr() : e === "uk" ? Hr() : Yr()
+    return e === "en" ? $n() : e === "pt" ? Ln() : e === "ch" ? Un() : e === "de" ? Rn() : e === "es" ? Gn() : e === "fr" ? Fn() : e === "it" ? Vn() : e === "jp" ? Jn() : e === "pl" ? Wn() : e === "ru" ? Kn() : e === "uk" ? Hn() : Yn()
   },
-  Xr = () => "Hate speech",
-  Qr = () => "Discurso de Ódio",
+  Xn = () => "Hate speech",
+  Qn = () => "Discurso de Ódio",
   ea = () => "仇恨言论",
   ta = () => "Hassrede",
-  na = () => "Discurso de odio",
-  ra = () => "Discours haineux",
+  ra = () => "Discurso de odio",
+  na = () => "Discours haineux",
   aa = () => "Discorso d'odio",
   sa = () => "ヘイトスピーチ",
   oa = () => "Mowa nienawiści",
@@ -524,7 +524,7 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   ca = () => "Ngôn từ thù hằn",
   da = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Xr() : e === "pt" ? Qr() : e === "ch" ? ea() : e === "de" ? ta() : e === "es" ? na() : e === "fr" ? ra() : e === "it" ? aa() : e === "jp" ? sa() : e === "pl" ? oa() : e === "ru" ? ia() : e === "uk" ? ua() : ca()
+    return e === "en" ? Xn() : e === "pt" ? Qn() : e === "ch" ? ea() : e === "de" ? ta() : e === "es" ? ra() : e === "fr" ? na() : e === "it" ? aa() : e === "jp" ? sa() : e === "pl" ? oa() : e === "ru" ? ia() : e === "uk" ? ua() : ca()
   },
   la = () => "Inappropriate content",
   _a = () => "Conteúdo inapropriado",
@@ -545,18 +545,18 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   xa = () => "Invalid code",
   Ea = () => "Código inválido",
   Ta = () => "验证码无效",
-  Aa = () => "Ungültiger Code",
-  ja = () => "Código inválido",
-  Pa = () => "Code invalide",
-  qa = () => "Codice non valido",
-  Ia = () => "無効なコードです。",
-  Na = () => "Nieprawidłowy kod",
-  za = () => "Неверный код",
-  Oa = () => "Невірний код",
+  Pa = () => "Ungültiger Code",
+  Aa = () => "Código inválido",
+  Na = () => "Code invalide",
+  ja = () => "Codice non valido",
+  qa = () => "無効なコードです。",
+  Ia = () => "Nieprawidłowy kod",
+  Oa = () => "Неверный код",
+  za = () => "Невірний код",
   Ca = () => "Mã không hợp lệ",
   Da = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? xa() : e === "pt" ? Ea() : e === "ch" ? Ta() : e === "de" ? Aa() : e === "es" ? ja() : e === "fr" ? Pa() : e === "it" ? qa() : e === "jp" ? Ia() : e === "pl" ? Na() : e === "ru" ? za() : e === "uk" ? Oa() : Ca()
+    return e === "en" ? xa() : e === "pt" ? Ea() : e === "ch" ? Ta() : e === "de" ? Pa() : e === "es" ? Aa() : e === "fr" ? Na() : e === "it" ? ja() : e === "jp" ? qa() : e === "pl" ? Ia() : e === "ru" ? Oa() : e === "uk" ? za() : Ca()
   },
   Ma = () => "Invalid discord.",
   Ba = () => "Discord inválido.",
@@ -580,15 +580,15 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Qa = () => "Der Name enthält nicht erlaubte Zeichen oder Wörter. Bitte wähle einen anderen Namen.",
   es = () => "El nombre contiene caracteres o palabras no permitidas. Elige otro nombre.",
   ts = () => "Le nom contient des caractères ou des mots non autorisés. Veuillez choisir un autre nom.",
-  ns = () => "Il nome contiene caratteri o parole non consentiti. Scegli un altro nome.",
-  rs = () => "この名前には使用できない文字または単語が含まれています。別の名前を選んでください。",
+  rs = () => "Il nome contiene caratteri o parole non consentiti. Scegli un altro nome.",
+  ns = () => "この名前には使用できない文字または単語が含まれています。別の名前を選んでください。",
   as = () => "Nazwa zawiera niedozwolone znaki lub słowa. Wybierz inną nazwę.",
   ss = () => "Имя содержит запрещённые символы или слова. Пожалуйста, выберите другое имя.",
   os = () => "Імʼя містить заборонені символи або слова. Оберіть інше імʼя.",
   is = () => "Tên chứa ký tự hoặc từ không được phép. Hãy chọn tên khác.",
   _e = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Ya() : e === "pt" ? Za() : e === "ch" ? Xa() : e === "de" ? Qa() : e === "es" ? es() : e === "fr" ? ts() : e === "it" ? ns() : e === "jp" ? rs() : e === "pl" ? as() : e === "ru" ? ss() : e === "uk" ? os() : is()
+    return e === "en" ? Ya() : e === "pt" ? Za() : e === "ch" ? Xa() : e === "de" ? Qa() : e === "es" ? es() : e === "fr" ? ts() : e === "it" ? rs() : e === "jp" ? ns() : e === "pl" ? as() : e === "ru" ? ss() : e === "uk" ? os() : is()
   },
   us = () => "Invalid phone number",
   cs = () => "Número de telefone inválido",
@@ -612,17 +612,17 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   xs = () => "Der neue Anführer muss Mitglied der Allianz sein",
   Es = () => "El nuevo líder debe ser miembro de la alianza",
   Ts = () => "Le nouveau chef doit être membre de l’alliance",
-  As = () => "Il nuovo leader deve essere un membro dell'alleanza",
-  js = () => "新しいリーダーはアライアンスのメンバーである必要があります。",
-  Ps = () => "Nowy lider musi być członkiem sojuszu",
-  qs = () => "Новый лидер должен быть участником альянса",
-  Is = () => "Новий лідер має бути учасником альянсу",
-  Ns = () => "Thủ lĩnh mới phải là thành viên của liên minh",
-  zs = (n = {}, t = {}) => {
+  Ps = () => "Il nuovo leader deve essere un membro dell'alleanza",
+  As = () => "新しいリーダーはアライアンスのメンバーである必要があります。",
+  Ns = () => "Nowy lider musi być członkiem sojuszu",
+  js = () => "Новый лидер должен быть участником альянса",
+  qs = () => "Новий лідер має бути учасником альянсу",
+  Is = () => "Thủ lĩnh mới phải là thành viên của liên minh",
+  Os = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? vs() : e === "pt" ? Ss() : e === "ch" ? ks() : e === "de" ? xs() : e === "es" ? Es() : e === "fr" ? Ts() : e === "it" ? As() : e === "jp" ? js() : e === "pl" ? Ps() : e === "ru" ? qs() : e === "uk" ? Is() : Ns()
+    return e === "en" ? vs() : e === "pt" ? Ss() : e === "ch" ? ks() : e === "de" ? xs() : e === "es" ? Es() : e === "fr" ? Ts() : e === "it" ? Ps() : e === "jp" ? As() : e === "pl" ? Ns() : e === "ru" ? js() : e === "uk" ? qs() : Is()
   },
-  Os = () => "Leaderboard is temporarily disabled",
+  zs = () => "Leaderboard is temporarily disabled",
   Cs = () => "O ranking está temporariamente desativado",
   Ds = () => "排行榜已暂时停用",
   Ms = () => "Die Bestenliste ist vorübergehend deaktiviert",
@@ -636,7 +636,7 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Vs = () => "Bảng xếp hạng tạm thời bị vô hiệu hóa",
   T = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Os() : e === "pt" ? Cs() : e === "ch" ? Ds() : e === "de" ? Ms() : e === "es" ? Bs() : e === "fr" ? $s() : e === "it" ? Ls() : e === "jp" ? Us() : e === "pl" ? Rs() : e === "ru" ? Gs() : e === "uk" ? Fs() : Vs()
+    return e === "en" ? zs() : e === "pt" ? Cs() : e === "ch" ? Ds() : e === "de" ? Ms() : e === "es" ? Bs() : e === "fr" ? $s() : e === "it" ? Ls() : e === "jp" ? Us() : e === "pl" ? Rs() : e === "ru" ? Gs() : e === "uk" ? Fs() : Vs()
   },
   Js = () => "Location name is too big (max. 128 characters)",
   Ws = () => "Nome da localização é grande demais (max. 128 caracteres)",
@@ -648,11 +648,11 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Qs = () => "場所の名前が長すぎます（最大128文字）。",
   eo = () => "Nazwa lokalizacji jest za długa (maks. 128 znaków)",
   to = () => "Название локации слишком длинное (макс. 128 символов)",
-  no = () => "Назва локації надто довга (макс. 128 символів)",
-  ro = () => "Tên vị trí quá dài (tối đa 128 ký tự)",
+  ro = () => "Назва локації надто довга (макс. 128 символів)",
+  no = () => "Tên vị trí quá dài (tối đa 128 ký tự)",
   ao = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Js() : e === "pt" ? Ws() : e === "ch" ? Ks() : e === "de" ? Hs() : e === "es" ? Ys() : e === "fr" ? Zs() : e === "it" ? Xs() : e === "jp" ? Qs() : e === "pl" ? eo() : e === "ru" ? to() : e === "uk" ? no() : ro()
+    return e === "en" ? Js() : e === "pt" ? Ws() : e === "ch" ? Ks() : e === "de" ? Hs() : e === "es" ? Ys() : e === "fr" ? Zs() : e === "it" ? Xs() : e === "jp" ? Qs() : e === "pl" ? eo() : e === "ru" ? to() : e === "uk" ? ro() : no()
   },
   so = () => "Multi-accounting",
   oo = () => "Múltiplas contas",
@@ -678,17 +678,17 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   xo = n => `Vous pourrez changer votre nom à nouveau dans ${n.days} jours`,
   Eo = n => `Potrai cambiare di nuovo il tuo nome tra ${n.days} giorni.`,
   To = n => `${n.days}日後に再び名前を変更できます。`,
-  Ao = n => `Następną zmianę nazwy możesz wykonać za ${n.days} dni`,
-  jo = n => `Вы сможете изменить имя снова через ${n.days} дн.`,
-  Po = n => `Ви зможете змінити імʼя знову через ${n.days} днів`,
-  qo = n => `Bạn có thể đổi tên lại sau ${n.days} ngày`,
-  Io = (n, t = {}) => {
+  Po = n => `Następną zmianę nazwy możesz wykonać za ${n.days} dni`,
+  Ao = n => `Вы сможете изменить имя снова через ${n.days} дн.`,
+  No = n => `Ви зможете змінити імʼя знову через ${n.days} днів`,
+  jo = n => `Bạn có thể đổi tên lại sau ${n.days} ngày`,
+  qo = (n, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? yo(n) : e === "pt" ? bo(n) : e === "ch" ? vo(n) : e === "de" ? So(n) : e === "es" ? ko(n) : e === "fr" ? xo(n) : e === "it" ? Eo(n) : e === "jp" ? To(n) : e === "pl" ? Ao(n) : e === "ru" ? jo(n) : e === "uk" ? Po(n) : qo(n)
+    return e === "en" ? yo(n) : e === "pt" ? bo(n) : e === "ch" ? vo(n) : e === "de" ? So(n) : e === "es" ? ko(n) : e === "fr" ? xo(n) : e === "it" ? Eo(n) : e === "jp" ? To(n) : e === "pl" ? Po(n) : e === "ru" ? Ao(n) : e === "uk" ? No(n) : jo(n)
   },
-  No = () => "No internet access or the servers are offline. Try again later.",
-  zo = () => "Sem acesso à internet ou os servidores estão fora do ar. Tente novamente mais tarde.",
-  Oo = () => "没有网络连接或服务器已离线。请稍后重试。",
+  Io = () => "No internet access or the servers are offline. Try again later.",
+  Oo = () => "Sem acesso à internet ou os servidores estão fora do ar. Tente novamente mais tarde.",
+  zo = () => "没有网络连接或服务器已离线。请稍后重试。",
   Co = () => "Keine Internetverbindung oder Server offline. Versuche es später erneut.",
   Do = () => "Sin acceso a internet o los servidores están fuera de línea. Inténtalo de nuevo más tarde.",
   Mo = () => "Pas d’accès à Internet ou serveurs hors ligne. Réessayez plus tard.",
@@ -700,7 +700,7 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Go = () => "Không có kết nối internet hoặc máy chủ đang ngoại tuyến. Hãy thử lại sau.",
   Fo = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? No() : e === "pt" ? zo() : e === "ch" ? Oo() : e === "de" ? Co() : e === "es" ? Do() : e === "fr" ? Mo() : e === "it" ? Bo() : e === "jp" ? $o() : e === "pl" ? Lo() : e === "ru" ? Uo() : e === "uk" ? Ro() : Go()
+    return e === "en" ? Io() : e === "pt" ? Oo() : e === "ch" ? zo() : e === "de" ? Co() : e === "es" ? Do() : e === "fr" ? Mo() : e === "it" ? Bo() : e === "jp" ? $o() : e === "pl" ? Lo() : e === "ru" ? Uo() : e === "uk" ? Ro() : Go()
   },
   Vo = () => "Operation not allowed. Maybe you have too many favorite locations.",
   Jo = () => "Operação não permitida. Talvez você tenha muitos locais favoritos.",
@@ -713,10 +713,10 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Qo = () => "Operacja niedozwolona. Możliwe, że masz zbyt wiele ulubionych lokalizacji.",
   ei = () => "Операция запрещена. Возможно, у вас слишком много избранных локаций.",
   ti = () => "Операцію заборонено. Можливо, у вас забагато вибраних локацій.",
-  ni = () => "Thao tác không được phép. Có thể bạn đã có quá nhiều vị trí yêu thích.",
-  ri = (n = {}, t = {}) => {
+  ri = () => "Thao tác không được phép. Có thể bạn đã có quá nhiều vị trí yêu thích.",
+  ni = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Vo() : e === "pt" ? Jo() : e === "ch" ? Wo() : e === "de" ? Ko() : e === "es" ? Ho() : e === "fr" ? Yo() : e === "it" ? Zo() : e === "jp" ? Xo() : e === "pl" ? Qo() : e === "ru" ? ei() : e === "uk" ? ti() : ni()
+    return e === "en" ? Vo() : e === "pt" ? Jo() : e === "ch" ? Wo() : e === "de" ? Ko() : e === "es" ? Ho() : e === "fr" ? Yo() : e === "it" ? Zo() : e === "jp" ? Xo() : e === "pl" ? Qo() : e === "ru" ? ei() : e === "uk" ? ti() : ri()
   },
   ai = () => "You are trying to paint with a color you do not own",
   si = () => "Você está tentando pintar com uma cor que não possui",
@@ -744,17 +744,17 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   xi = () => "この電話番号は既に使用されています。",
   Ei = () => "Numer telefonu jest już używany",
   Ti = () => "Телефон уже используется",
-  Ai = () => "Номер телефону вже використовується",
-  ji = () => "Số điện thoại đã được sử dụng",
-  Pi = (n = {}, t = {}) => {
+  Pi = () => "Номер телефону вже використовується",
+  Ai = () => "Số điện thoại đã được sử dụng",
+  Ni = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? gi() : e === "pt" ? wi() : e === "ch" ? yi() : e === "de" ? bi() : e === "es" ? vi() : e === "fr" ? Si() : e === "it" ? ki() : e === "jp" ? xi() : e === "pl" ? Ei() : e === "ru" ? Ti() : e === "uk" ? Ai() : ji()
+    return e === "en" ? gi() : e === "pt" ? wi() : e === "ch" ? yi() : e === "de" ? bi() : e === "es" ? vi() : e === "fr" ? Si() : e === "it" ? ki() : e === "jp" ? xi() : e === "pl" ? Ei() : e === "ru" ? Ti() : e === "uk" ? Pi() : Ai()
   },
-  qi = () => "Refresh your page to get the latest update",
-  Ii = () => "Recarregue sua página para obter as últimas atualizações",
-  Ni = () => "刷新页面以获取最新更新",
-  zi = () => "Aktualisiere die Seite, um die neuesten Updates zu erhalten",
-  Oi = () => "Actualiza la página para obtener la última versión",
+  ji = () => "Refresh your page to get the latest update",
+  qi = () => "Recarregue sua página para obter as últimas atualizações",
+  Ii = () => "刷新页面以获取最新更新",
+  Oi = () => "Aktualisiere die Seite, um die neuesten Updates zu erhalten",
+  zi = () => "Actualiza la página para obtener la última versión",
   Ci = () => "Actualisez la page pour obtenir les dernières mises à jour",
   Di = () => "Ricarica la pagina per ottenere gli ultimi aggiornamenti",
   Mi = () => "最新の状態にするにはページを再読み込みしてください。",
@@ -764,7 +764,7 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Ui = () => "Hãy làm mới trang để nhận được cập nhật mới nhất",
   Ri = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? qi() : e === "pt" ? Ii() : e === "ch" ? Ni() : e === "de" ? zi() : e === "es" ? Oi() : e === "fr" ? Ci() : e === "it" ? Di() : e === "jp" ? Mi() : e === "pl" ? Bi() : e === "ru" ? $i() : e === "uk" ? Li() : Ui()
+    return e === "en" ? ji() : e === "pt" ? qi() : e === "ch" ? Ii() : e === "de" ? Oi() : e === "es" ? zi() : e === "fr" ? Ci() : e === "it" ? Di() : e === "jp" ? Mi() : e === "pl" ? Bi() : e === "ru" ? $i() : e === "uk" ? Li() : Ui()
   },
   Gi = () => "The typed username does not match your current username.",
   Fi = () => "O nome de usuário digitado não corresponde ao seu nome de usuário atual.",
@@ -782,8 +782,8 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
     const e = t.locale ?? _();
     return e === "en" ? Gi() : e === "pt" ? Fi() : e === "ch" ? Vi() : e === "de" ? Ji() : e === "es" ? Wi() : e === "fr" ? Ki() : e === "it" ? Hi() : e === "jp" ? Yi() : e === "pl" ? Zi() : e === "ru" ? Xi() : e === "uk" ? Qi() : eu()
   },
-  nu = () => "Unexpected server error. Try again later.",
-  ru = () => "Erro inesperado do servidor. Tente novamente mais tarde.",
+  ru = () => "Unexpected server error. Try again later.",
+  nu = () => "Erro inesperado do servidor. Tente novamente mais tarde.",
   au = () => "服务器出现意外错误。请稍后再试。",
   su = () => "Unerwarteter Serverfehler. Versuche es später erneut.",
   ou = () => "Error inesperado del servidor. Inténtalo de nuevo más tarde.",
@@ -796,7 +796,7 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   fu = () => "Lỗi máy chủ không mong muốn. Hãy thử lại sau.",
   o = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? nu() : e === "pt" ? ru() : e === "ch" ? au() : e === "de" ? su() : e === "es" ? ou() : e === "fr" ? iu() : e === "it" ? uu() : e === "jp" ? cu() : e === "pl" ? du() : e === "ru" ? lu() : e === "uk" ? _u() : fu()
+    return e === "en" ? ru() : e === "pt" ? nu() : e === "ch" ? au() : e === "de" ? su() : e === "es" ? ou() : e === "fr" ? iu() : e === "it" ? uu() : e === "jp" ? cu() : e === "pl" ? du() : e === "ru" ? lu() : e === "uk" ? _u() : fu()
   },
   mu = () => "Failed to load WebAssembly module. Try to use another browser.",
   hu = () => "Erro ao carregar módulo WebAssembly. Tente usar outro navegador.",
@@ -814,21 +814,21 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
     const e = t.locale ?? _();
     return e === "en" ? mu() : e === "pt" ? hu() : e === "ch" ? pu() : e === "de" ? gu() : e === "es" ? wu() : e === "fr" ? yu() : e === "it" ? bu() : e === "jp" ? vu() : e === "pl" ? Su() : e === "ru" ? ku() : e === "uk" ? xu() : Eu()
   },
-  Au = () => "You already have this item. Please refresh the page.",
-  ju = () => "Você já possui este item. Atualize a página.",
-  Pu = () => "你已经拥有此物品。请刷新页面。",
-  qu = () => "Du besitzt dieses Item bereits. Bitte aktualisiere die Seite.",
-  Iu = () => "Ya tienes este ítem. Actualiza la página.",
-  Nu = () => "Vous possédez déjà cet objet. Actualisez la page.",
-  zu = () => "Possiedi già questo oggetto. Aggiorna la pagina.",
-  Ou = () => "このアイテムはすでに所持しています。ページを更新してください。",
+  Pu = () => "You already have this item. Please refresh the page.",
+  Au = () => "Você já possui este item. Atualize a página.",
+  Nu = () => "你已经拥有此物品。请刷新页面。",
+  ju = () => "Du besitzt dieses Item bereits. Bitte aktualisiere die Seite.",
+  qu = () => "Ya tienes este ítem. Actualiza la página.",
+  Iu = () => "Vous possédez déjà cet objet. Actualisez la page.",
+  Ou = () => "Possiedi già questo oggetto. Aggiorna la pagina.",
+  zu = () => "このアイテムはすでに所持しています。ページを更新してください。",
   Cu = () => "Masz już ten przedmiot. Odśwież stronę.",
   Du = () => "У вас уже есть этот предмет. Обновите страницу.",
   Mu = () => "У вас уже є цей предмет. Оновіть сторінку.",
   Bu = () => "Bạn đã sở hữu vật phẩm này. Hãy tải lại trang.",
   fe = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Au() : e === "pt" ? ju() : e === "ch" ? Pu() : e === "de" ? qu() : e === "es" ? Iu() : e === "fr" ? Nu() : e === "it" ? zu() : e === "jp" ? Ou() : e === "pl" ? Cu() : e === "ru" ? Du() : e === "uk" ? Mu() : Bu()
+    return e === "en" ? Pu() : e === "pt" ? Au() : e === "ch" ? Nu() : e === "de" ? ju() : e === "es" ? qu() : e === "fr" ? Iu() : e === "it" ? Ou() : e === "jp" ? zu() : e === "pl" ? Cu() : e === "ru" ? Du() : e === "uk" ? Mu() : Bu()
   },
   $u = () => "You are already in an alliance",
   Lu = () => "Você já está em uma aliança",
@@ -850,17 +850,17 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Qu = () => "Você não tem permissão para fazer isso",
   ec = () => "你无权执行此操作",
   tc = () => "Du bist dazu nicht berechtigt",
-  nc = () => "No tienes permiso para hacer esto",
-  rc = () => "Vous n’êtes pas autorisé à faire cela",
+  rc = () => "No tienes permiso para hacer esto",
+  nc = () => "Vous n’êtes pas autorisé à faire cela",
   ac = () => "Non hai il permesso di farlo",
   sc = () => "この操作を行う権限がありません。",
   oc = () => "Nie masz uprawnień, aby to zrobić",
   ic = () => "У вас нет прав для этого действия",
   uc = () => "Ви не маєте права це робити",
   cc = () => "Bạn không có quyền làm việc này",
-  A = (n = {}, t = {}) => {
+  P = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Xu() : e === "pt" ? Qu() : e === "ch" ? ec() : e === "de" ? tc() : e === "es" ? nc() : e === "fr" ? rc() : e === "it" ? ac() : e === "jp" ? sc() : e === "pl" ? oc() : e === "ru" ? ic() : e === "uk" ? uc() : cc()
+    return e === "en" ? Xu() : e === "pt" ? Qu() : e === "ch" ? ec() : e === "de" ? tc() : e === "es" ? rc() : e === "fr" ? nc() : e === "it" ? ac() : e === "jp" ? sc() : e === "pl" ? oc() : e === "ru" ? ic() : e === "uk" ? uc() : cc()
   },
   dc = () => "You do not have enough Droplets to buy this item.",
   lc = () => "Você não tem gotas suficientes para comprar este item.",
@@ -883,16 +883,16 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   xc = () => "你需要等待一段时间才能重新发送验证码",
   Ec = () => "Du musst warten, bevor du einen Code erneut senden kannst",
   Tc = () => "Tienes que esperar para reenviar un código",
-  Ac = () => "Vous devez attendre avant de renvoyer un code",
-  jc = () => "Devi aspettare per reinviare un codice",
-  Pc = () => "コードを再送信するまでしばらくお待ちください。",
-  qc = () => "Musisz poczekać, zanim wyślesz kod ponownie",
-  Ic = () => "Вам нужно подождать, прежде чем отправить код ещё раз",
-  Nc = () => "Перш ніж повторно надіслати код, потрібно почекати",
-  zc = () => "Bạn phải chờ trước khi gửi lại mã",
-  Oc = (n = {}, t = {}) => {
+  Pc = () => "Vous devez attendre avant de renvoyer un code",
+  Ac = () => "Devi aspettare per reinviare un codice",
+  Nc = () => "コードを再送信するまでしばらくお待ちください。",
+  jc = () => "Musisz poczekać, zanim wyślesz kod ponownie",
+  qc = () => "Вам нужно подождать, прежде чем отправить код ещё раз",
+  Ic = () => "Перш ніж повторно надіслати код, потрібно почекати",
+  Oc = () => "Bạn phải chờ trước khi gửi lại mã",
+  zc = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Sc() : e === "pt" ? kc() : e === "ch" ? xc() : e === "de" ? Ec() : e === "es" ? Tc() : e === "fr" ? Ac() : e === "it" ? jc() : e === "jp" ? Pc() : e === "pl" ? qc() : e === "ru" ? Ic() : e === "uk" ? Nc() : zc()
+    return e === "en" ? Sc() : e === "pt" ? kc() : e === "ch" ? xc() : e === "de" ? Ec() : e === "es" ? Tc() : e === "fr" ? Pc() : e === "it" ? Ac() : e === "jp" ? Nc() : e === "pl" ? jc() : e === "ru" ? qc() : e === "uk" ? Ic() : Oc()
   },
   Cc = () => "You need to be logged in to paint",
   Dc = () => "Você precisa estar conectado para pintar",
@@ -906,7 +906,7 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Fc = () => "Чтобы рисовать, нужно войти в аккаунт",
   Vc = () => "Щоб малювати, необхідно увійти в акаунт",
   Jc = () => "Bạn cần đăng nhập để tô",
-  ne = (n = {}, t = {}) => {
+  re = (n = {}, t = {}) => {
     const e = t.locale ?? _();
     return e === "en" ? Cc() : e === "pt" ? Dc() : e === "ch" ? Mc() : e === "de" ? Bc() : e === "es" ? $c() : e === "fr" ? Lc() : e === "it" ? Uc() : e === "jp" ? Rc() : e === "pl" ? Gc() : e === "ru" ? Fc() : e === "uk" ? Vc() : Jc()
   },
@@ -919,12 +919,12 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Qc = () => "Tu o qualcuno nella tua rete state facendo troppe richieste al server. Riprova più tardi.",
   ed = () => "あなた、または同じネットワーク上の誰かがサーバーへ大量のリクエストを送信しています。しばらくしてから再度お試しください。",
   td = () => "Ty lub ktoś w Twojej sieci wysyła zbyt wiele żądań do serwera. Spróbuj ponownie później.",
-  nd = () => "Вы или кто-то в вашей сети делает слишком много запросов к серверу. Попробуйте позже.",
-  rd = () => "Ви або хтось у вашій мережі надсилає надто багато запитів до сервера. Спробуйте пізніше.",
+  rd = () => "Вы или кто-то в вашей сети делает слишком много запросов к серверу. Попробуйте позже.",
+  nd = () => "Ви або хтось у вашій мережі надсилає надто багато запитів до сервера. Спробуйте пізніше.",
   ad = () => "Bạn hoặc ai đó trong mạng của bạn đang gửi quá nhiều yêu cầu đến máy chủ. Hãy thử lại sau.",
   he = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Wc() : e === "pt" ? Kc() : e === "ch" ? Hc() : e === "de" ? Yc() : e === "es" ? Zc() : e === "fr" ? Xc() : e === "it" ? Qc() : e === "jp" ? ed() : e === "pl" ? td() : e === "ru" ? nd() : e === "uk" ? rd() : ad()
+    return e === "en" ? Wc() : e === "pt" ? Kc() : e === "ch" ? Hc() : e === "de" ? Yc() : e === "es" ? Zc() : e === "fr" ? Xc() : e === "it" ? Qc() : e === "jp" ? ed() : e === "pl" ? td() : e === "ru" ? rd() : e === "uk" ? nd() : ad()
   },
   sd = n => `Your account has been suspended out until ${n.until}`,
   od = n => `A sua conta está suspensa até ${n.until}`,
@@ -951,25 +951,25 @@ const Ve = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   xd = () => "Numero massimo di caratteri superato",
   Ed = () => "最大文字数を超過しました",
   Td = () => "Przekroczono maksymalną liczbę znaków",
-  Ad = () => "Превышено максимальное количество символов",
-  jd = () => "Перевищено максимальну кількість символів",
-  Pd = () => "Đã vượt quá số ký tự tối đa",
-  qd = (n = {}, t = {}) => {
+  Pd = () => "Превышено максимальное количество символов",
+  Ad = () => "Перевищено максимальну кількість символів",
+  Nd = () => "Đã vượt quá số ký tự tối đa",
+  jd = (n = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? wd() : e === "pt" ? yd() : e === "ch" ? bd() : e === "de" ? vd() : e === "es" ? Sd() : e === "fr" ? kd() : e === "it" ? xd() : e === "jp" ? Ed() : e === "pl" ? Td() : e === "ru" ? Ad() : e === "uk" ? jd() : Pd()
+    return e === "en" ? wd() : e === "pt" ? yd() : e === "ch" ? bd() : e === "de" ? vd() : e === "es" ? Sd() : e === "fr" ? kd() : e === "it" ? xd() : e === "jp" ? Ed() : e === "pl" ? Td() : e === "ru" ? Pd() : e === "uk" ? Ad() : Nd()
   };
 let h;
 
-function z(n) {
+function O(n) {
   const t = h.__externref_table_alloc();
   return h.__wbindgen_export_2.set(t, n), t
 }
 
-function I(n, t) {
+function q(n, t) {
   try {
     return n.apply(this, t)
   } catch (e) {
-    const r = z(e);
+    const r = O(e);
     h.__wbindgen_exn_store(r)
   }
 }
@@ -982,10 +982,10 @@ const ve = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
   }
 };
 typeof TextDecoder < "u" && ve.decode();
-let O = null;
+let z = null;
 
 function Z() {
-  return (O === null || O.byteLength === 0) && (O = new Uint8Array(h.memory.buffer)), O
+  return (z === null || z.byteLength === 0) && (z = new Uint8Array(h.memory.buffer)), z
 }
 
 function C(n, t) {
@@ -996,7 +996,7 @@ function Y(n) {
   return n == null
 }
 
-function Id(n) {
+function qd(n) {
   h.set_user_id(n)
 }
 let ee = 0;
@@ -1005,7 +1005,7 @@ const X = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
       throw Error("TextEncoder not available")
     }
   },
-  Nd = typeof X.encodeInto == "function" ? function(n, t) {
+  Id = typeof X.encodeInto == "function" ? function(n, t) {
     return X.encodeInto(n, t)
   } : function(n, t) {
     const e = X.encode(n);
@@ -1017,35 +1017,35 @@ const X = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
 
 function Se(n, t, e) {
   if (e === void 0) {
-    const u = X.encode(n),
-      l = t(u.length, 1) >>> 0;
-    return Z().subarray(l, l + u.length).set(u), ee = u.length, l
+    const i = X.encode(n),
+      l = t(i.length, 1) >>> 0;
+    return Z().subarray(l, l + i.length).set(i), ee = i.length, l
   }
   let r = n.length,
     a = t(r, 1) >>> 0;
   const s = Z();
-  let i = 0;
-  for (; i < r; i++) {
-    const u = n.charCodeAt(i);
-    if (u > 127) break;
-    s[a + i] = u
+  let c = 0;
+  for (; c < r; c++) {
+    const i = n.charCodeAt(c);
+    if (i > 127) break;
+    s[a + c] = i
   }
-  if (i !== r) {
-    i !== 0 && (n = n.slice(i)), a = e(a, r, r = i + n.length * 3, 1) >>> 0;
-    const u = Z().subarray(a + i, a + r),
-      l = Nd(n, u);
-    i += l.written, a = e(a, r, i, 1) >>> 0
+  if (c !== r) {
+    c !== 0 && (n = n.slice(c)), a = e(a, r, r = c + n.length * 3, 1) >>> 0;
+    const i = Z().subarray(a + c, a + r),
+      l = Id(n, i);
+    c += l.written, a = e(a, r, c, 1) >>> 0
   }
-  return ee = i, a
+  return ee = c, a
 }
 
-function zd(n) {
+function Od(n) {
   const t = Se(n, h.__wbindgen_malloc, h.__wbindgen_realloc),
     e = ee;
   h.request_url(t, e)
 }
 
-function Od() {
+function zd() {
   let n, t;
   try {
     const e = h.get_load_payload();
@@ -1090,17 +1090,17 @@ function Md() {
   return n.wbg = {}, n.wbg.__wbg_buffer_609cc3eee51ed158 = function(t) {
     return t.buffer
   }, n.wbg.__wbg_call_672a4d21634d4a24 = function() {
-    return I(function(t, e) {
+    return q(function(t, e) {
       return t.call(e)
     }, arguments)
   }, n.wbg.__wbg_call_7cccdd69e0791ae2 = function() {
-    return I(function(t, e, r) {
+    return q(function(t, e, r) {
       return t.call(e, r)
     }, arguments)
   }, n.wbg.__wbg_crypto_574e78ad8b13b65f = function(t) {
     return t.crypto
   }, n.wbg.__wbg_getRandomValues_b8f5dbd5f3995a9e = function() {
-    return I(function(t, e) {
+    return q(function(t, e) {
       t.getRandomValues(e)
     }, arguments)
   }, n.wbg.__wbg_msCrypto_a61aeb35a24c1329 = function(t) {
@@ -1118,27 +1118,27 @@ function Md() {
   }, n.wbg.__wbg_process_dc0fbacc7c1c06f7 = function(t) {
     return t.process
   }, n.wbg.__wbg_randomFillSync_ac0988aba3254290 = function() {
-    return I(function(t, e) {
+    return q(function(t, e) {
       t.randomFillSync(e)
     }, arguments)
   }, n.wbg.__wbg_require_60cc747a6bc5215a = function() {
-    return I(function() {
+    return q(function() {
       return module.require
     }, arguments)
   }, n.wbg.__wbg_set_65595bdd868b3009 = function(t, e, r) {
     t.set(e, r >>> 0)
   }, n.wbg.__wbg_static_accessor_GLOBAL_88a902d13a557d07 = function() {
     const t = typeof global > "u" ? null : global;
-    return Y(t) ? 0 : z(t)
+    return Y(t) ? 0 : O(t)
   }, n.wbg.__wbg_static_accessor_GLOBAL_THIS_56578be7e9f832b0 = function() {
     const t = typeof globalThis > "u" ? null : globalThis;
-    return Y(t) ? 0 : z(t)
+    return Y(t) ? 0 : O(t)
   }, n.wbg.__wbg_static_accessor_SELF_37c5d418e4bf5819 = function() {
     const t = typeof self > "u" ? null : self;
-    return Y(t) ? 0 : z(t)
+    return Y(t) ? 0 : O(t)
   }, n.wbg.__wbg_static_accessor_WINDOW_5de37043a91a9c40 = function() {
     const t = typeof window > "u" ? null : window;
-    return Y(t) ? 0 : z(t)
+    return Y(t) ? 0 : O(t)
   }, n.wbg.__wbg_subarray_aa9065fa9dc5df96 = function(t, e, r) {
     return t.subarray(e >>> 0, r >>> 0)
   }, n.wbg.__wbg_versions_c01dfd4722a88165 = function(t) {
@@ -1166,7 +1166,7 @@ function Md() {
 }
 
 function Bd(n, t) {
-  return h = n.exports, ke.__wbindgen_wasm_module = t, O = null, h.__wbindgen_start(), h
+  return h = n.exports, ke.__wbindgen_wasm_module = t, z = null, h.__wbindgen_start(), h
 }
 async function ke(n) {
   if (h !== void 0) return h;
@@ -1210,10 +1210,10 @@ class Ud {
     const r = Math.floor(t / 8),
       a = t % 8;
     if (r >= this.bytes.length) {
-      const i = new Uint8Array(r + 1),
-        u = i.length - this.bytes.length;
-      for (let l = 0; l < this.bytes.length; l++) i[l + u] = this.bytes[l];
-      this.bytes = i
+      const c = new Uint8Array(r + 1),
+        i = c.length - this.bytes.length;
+      for (let l = 0; l < this.bytes.length; l++) c[l + i] = this.bytes[l];
+      this.bytes = c
     }
     const s = this.bytes.length - 1 - r;
     e ? this.bytes[s] = this.bytes[s] | 1 << a : this.bytes[s] = this.bytes[s] & ~(1 << a)
@@ -1247,19 +1247,19 @@ class Rd {
     w(this, L, E(!0));
     w(this, U, E());
     w(this, R, E(Date.now()));
-    w(this, G, N(() => {
+    w(this, G, I(() => {
       if (!this.data) return;
       const t = this.data.charges;
       if (t.count > t.max) return t.count;
       const e = t.count + Math.max((De.now - this.lastFetch) / t.cooldownMs, 0);
       return Math.min(t.max, e)
     }));
-    w(this, F, N(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
-    w(this, V, N(() => {
+    w(this, F, I(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
+    w(this, V, I(() => {
       var t;
       return new Ud(Ld(((t = this.data) == null ? void 0 : t.flagsBitmap) ?? "AA=="))
     }));
-    w(this, J, N(() => {
+    w(this, J, I(() => {
       var e;
       if (!((e = this.data) != null && e.timeoutUntil)) return;
       const t = new Date(this.data.timeoutUntil);
@@ -1356,24 +1356,24 @@ class Rd {
   }
 }
 $ = new WeakMap, L = new WeakMap, U = new WeakMap, R = new WeakMap, G = new WeakMap, F = new WeakMap, V = new WeakMap, J = new WeakMap;
-const P = new Rd;
+const N = new Rd;
 
 function Ee(n) {
-  return P.data ? P.data.experiments[n] ?? null : null
+  return N.data ? N.data.experiments[n] ?? null : null
 }
 
 function pl(n) {
   var t, e;
-  return ((e = (t = P.data) == null ? void 0 : t.experiments[n]) == null ? void 0 : e.enabled) ?? !0
+  return ((e = (t = N.data) == null ? void 0 : t.experiments[n]) == null ? void 0 : e.enabled) ?? !0
 }
 const gl = {
-    griefing: Zr(),
+    griefing: Zn(),
     "multi-accounting": wo(),
     "hate-speech": da(),
-    bot: tn(),
-    doxxing: Er(),
+    bot: tr(),
+    doxxing: En(),
     "inappropriate-content": ka(),
-    other: hn()
+    other: mr()
   },
   wl = {
     doxxing: "text-red-600",
@@ -1869,16 +1869,16 @@ const gl = {
     countries: Yd,
     permissions: Zd
   },
-  re = K,
+  ne = K,
   Te = K.seasons.length - 1,
   yl = K.seasons[Te].zoom,
   bl = K.seasons[Te].tileSize,
   vl = K.permissions;
 
 function Sl(n) {
-  return re.countries[n - 1]
+  return ne.countries[n - 1]
 }
-class c extends Error {
+class u extends Error {
   constructor(t, e) {
     super(t), this.message = t, this.status = e
   }
@@ -1924,27 +1924,27 @@ class Qd {
     const a = Xd(t, l => `t=(${l.tile[0]},${l.tile[1]}),s=${l.season}`),
       s = Ee("2025-09_pawtect");
     if (!s) throw new Error("paint request while pawtect experiment not found");
-    const u = (await Promise.all(Object.values(a).map(l => {
-      const [d, g] = l[0].tile, m = l[0].season, j = {
+    const i = (await Promise.all(Object.values(a).map(l => {
+      const [d, g] = l[0].tile, m = l[0].season, A = {
         colors: l.map(k => k.colorIdx),
         coords: l.flatMap(k => k.pixel),
         fp: e
-      }, q = JSON.stringify(j), S = r(m, d, g);
+      }, j = JSON.stringify(A), S = r(m, d, g);
       return this.request(S, {
         method: "POST",
-        body: q,
+        body: j,
         headers: {
-          "x-pawtect-token": s.variant !== "disabled" ? al(q) : "",
+          "x-pawtect-token": s.variant !== "disabled" ? al(j) : "",
           "x-pawtect-variant": s.variant
         },
         credentials: "include"
       })
     }))).filter(l => l.status !== 200);
-    if (u.length) {
-      const l = u[0];
-      if (l.status === 401) throw new Error(ne());
+    if (i.length) {
+      const l = i[0];
+      if (l.status === 401) throw new Error(re());
       if (l.status === 403) {
-        if (l.headers.get("cf-mitigated") === "challenge") throw new Error(_r());
+        if (l.headers.get("cf-mitigated") === "challenge") throw new Error(_n());
         const d = await l.json();
         if ((d == null ? void 0 : d.error) === "timeout") {
           const g = new Date(Date.now() + ((d == null ? void 0 : d.durationMs) ?? 0));
@@ -1954,40 +1954,40 @@ class Qd {
         }
         if ((d == null ? void 0 : d.error) === "refresh") throw new Error(Ri());
         if ((d == null ? void 0 : d.error) === "color-not-owned") throw new Error(pi());
-        if ((d == null ? void 0 : d.error) === "event-pixel-present") throw new Error(jn());
-        P.refresh()
+        if ((d == null ? void 0 : d.error) === "event-pixel-present") throw new Error(Pr());
+        N.refresh()
       } else throw new Error(o())
     }
   }
   async adminAutoPainterPaint(t, e, r) {
     const a = el(t),
       s = await tl(a),
-      i = new FormData;
-    i.append("fingerprint", e), i.append("season", a.season.toString()), i.append("px0", a.offsetX.toString()), i.append("py0", a.offsetY.toString()), i.append("width", a.width.toString()), i.append("height", a.height.toString()), i.append("pixels", t.length.toString()), i.append("bitmap", s, "auto-painter.png"), i.append("userId", r.toString());
-    const u = await this.request("/staff/tools/auto-painter/paint", {
+      c = new FormData;
+    c.append("fingerprint", e), c.append("season", a.season.toString()), c.append("px0", a.offsetX.toString()), c.append("py0", a.offsetY.toString()), c.append("width", a.width.toString()), c.append("height", a.height.toString()), c.append("pixels", t.length.toString()), c.append("bitmap", s, "auto-painter.png"), c.append("userId", r.toString());
+    const i = await this.request("/staff/tools/auto-painter/paint", {
       method: "POST",
-      body: i,
+      body: c,
       credentials: "include"
     });
-    if (u.status === 403) throw new Error("Auto painter is restricted to administrators.");
-    if (u.status !== 200) throw new Error(o());
-    return u.json()
+    if (i.status === 403) throw new Error("Auto painter is restricted to administrators.");
+    if (i.status !== 200) throw new Error(o());
+    return i.json()
   }
   async getPixelInfo({
     season: t,
     tile: [e, r],
     pixel: [a, s],
-    role: i,
-    christmasTreeId: u
+    role: c,
+    christmasTreeId: i
   }) {
     const l = new URLSearchParams;
-    l.set("x", String(a)), l.set("y", String(s)), u !== void 0 && l.set("christmasTreeId", String(u));
+    l.set("x", String(a)), l.set("y", String(s)), i !== void 0 && l.set("christmasTreeId", String(i));
     const d = await this.request(`/s${t}/pixel/${e}/${r}?${l.toString()}`, {
       credentials: "include"
     });
     if (d.status !== 200) {
       const g = await d.text();
-      throw new Error(Br({
+      throw new Error(Bn({
         err: g
       }))
     }
@@ -1997,9 +1997,9 @@ class Qd {
     season: t,
     tile: [e, r],
     p0: [a, s],
-    p1: [i, u]
+    p1: [c, i]
   }) {
-    const l = await this.request(`/staff/tools/select-area/s${t}/${e}/${r}?x0=${a}&y0=${s}&x1=${i}&y1=${u}`, {
+    const l = await this.request(`/staff/tools/select-area/s${t}/${e}/${r}?x0=${a}&y0=${s}&x1=${c}&y1=${i}`, {
       credentials: "include"
     });
     if (l.status !== 200) {
@@ -2011,7 +2011,7 @@ class Qd {
     return {
       paintedBy: Array.from({
         length: d.byteLength / 4
-      }, (m, j) => g.getUint32(j * 4, !0))
+      }, (m, A) => g.getUint32(A * 4, !0))
     }
   }
   async me() {
@@ -2050,8 +2050,8 @@ class Qd {
       })
     });
     if (e.status === 400) throw new Error(bs());
-    if (e.status === 403) throw new Error(Pi());
-    if (e.status === 429) throw new Error(Oc());
+    if (e.status === 403) throw new Error(Ni());
+    if (e.status === 429) throw new Error(zc());
     if (e.status !== 200) throw new Error(o());
     return await e.json()
   }
@@ -2080,7 +2080,7 @@ class Qd {
       if (a === "invalid_discord") throw new Error(Ha());
       if (typeof a == "string" && a.startsWith("name_change_cooldown:")) {
         const s = parseInt(a.split(":")[1] ?? "0", 10);
-        throw new Error(Io({
+        throw new Error(qo({
           days: s
         }))
       }
@@ -2107,7 +2107,7 @@ class Qd {
       }),
       credentials: "include"
     });
-    if (e.status === 403) throw new Error(ri());
+    if (e.status === 403) throw new Error(ni());
     if (e.status !== 200) throw new Error(o())
   }
   async deleteFavoriteLocation(t) {
@@ -2197,7 +2197,7 @@ class Qd {
     if (e.status === 200) return e.json();
     if (e.status === 400) {
       const r = await e.json();
-      throw r.error === "max_characters" ? new Error(Pt()) : r.error === "name_taken" ? new Error(pt()) : r.error == "empty_name" ? new Error(Rt()) : new Error(o())
+      throw r.error === "max_characters" ? new Error(Nt()) : r.error === "name_taken" ? new Error(pt()) : r.error == "empty_name" ? new Error(Rt()) : new Error(o())
     } else throw e.status === 403 ? new Error(Zu()) : new Error(o())
   }
   async leaveAlliance() {
@@ -2214,7 +2214,7 @@ class Qd {
         description: t
       })
     });
-    if (e.status !== 200) throw e.status === 403 ? new Error(A()) : e.status === 400 ? new Error(qd()) : new Error(o())
+    if (e.status !== 200) throw e.status === 403 ? new Error(P()) : e.status === 400 ? new Error(jd()) : new Error(o())
   }
   async updateAllianceHeadquarters(t, e) {
     const r = await this.request("/alliance/update-headquarters", {
@@ -2225,21 +2225,21 @@ class Qd {
         longitude: e
       })
     });
-    if (r.status !== 200) throw r.status === 403 ? new Error(A()) : new Error(o())
+    if (r.status !== 200) throw r.status === 403 ? new Error(P()) : new Error(o())
   }
   async allianceLeaderboard(t) {
     const e = await this.request(`/alliance/leaderboard/${t}`, {
       credentials: "include"
     });
     if (e.status === 200) return e.json();
-    throw e.status === 403 ? new Error(A()) : new Error(T())
+    throw e.status === 403 ? new Error(P()) : new Error(T())
   }
   async getAllianceInvites() {
     const t = await this.request("/alliance/invites", {
       credentials: "include"
     });
     if (t.status === 200) return t.json();
-    throw t.status === 403 ? new Error(A()) : new Error(o())
+    throw t.status === 403 ? new Error(P()) : new Error(o())
   }
   async joinAlliance(t) {
     switch ((await this.request(`/alliance/join/${t}`, {
@@ -2280,7 +2280,7 @@ class Qd {
       credentials: "include"
     });
     if (e.status === 404) return;
-    if (e.status !== 200) throw new c(o(), e.status);
+    if (e.status !== 200) throw new u(o(), e.status);
     const r = await e.json();
     return {
       id: Number(r.id),
@@ -2296,7 +2296,7 @@ class Qd {
         method: "GET",
         credentials: "include"
       });
-    if (r.status !== 200) throw new c(o(), r.status);
+    if (r.status !== 200) throw new u(o(), r.status);
     const a = await r.json();
     return (Array.isArray(a) ? a : []).map(s => ({
       id: Number(s.id),
@@ -2313,7 +2313,7 @@ class Qd {
       credentials: "include"
     });
     if (e.status === 404) return null;
-    if (e.status !== 200) throw new c(o(), e.status);
+    if (e.status !== 200) throw new u(o(), e.status);
     const r = await e.json(),
       a = Array.isArray(r == null ? void 0 : r.members) ? r.members : [];
     return {
@@ -2351,20 +2351,20 @@ class Qd {
       members: [],
       total: 0
     };
-    if (a.status !== 200) throw new c(o(), a.status);
+    if (a.status !== 200) throw new u(o(), a.status);
     const s = await a.json(),
-      i = Array.isArray(s == null ? void 0 : s.members) ? s.members : [];
+      c = Array.isArray(s == null ? void 0 : s.members) ? s.members : [];
     return {
-      members: i.map(u => ({
-        id: Number(u == null ? void 0 : u.id),
-        name: String((u == null ? void 0 : u.name) ?? `#${u==null?void 0:u.id}`),
-        picture: (u == null ? void 0 : u.picture) ?? null,
-        pixelsPainted: Number((u == null ? void 0 : u.pixelsPainted) ?? (u == null ? void 0 : u.pixels_painted) ?? 0),
-        lastPixelLatitude: (u == null ? void 0 : u.lastPixelLatitude) ?? null,
-        lastPixelLongitude: (u == null ? void 0 : u.lastPixelLongitude) ?? null,
-        role: (u == null ? void 0 : u.alliance_role) === "admin" || (u == null ? void 0 : u.role) === "admin" ? "admin" : "member"
+      members: c.map(i => ({
+        id: Number(i == null ? void 0 : i.id),
+        name: String((i == null ? void 0 : i.name) ?? `#${i==null?void 0:i.id}`),
+        picture: (i == null ? void 0 : i.picture) ?? null,
+        pixelsPainted: Number((i == null ? void 0 : i.pixelsPainted) ?? (i == null ? void 0 : i.pixels_painted) ?? 0),
+        lastPixelLatitude: (i == null ? void 0 : i.lastPixelLatitude) ?? null,
+        lastPixelLongitude: (i == null ? void 0 : i.lastPixelLongitude) ?? null,
+        role: (i == null ? void 0 : i.alliance_role) === "admin" || (i == null ? void 0 : i.role) === "admin" ? "admin" : "member"
       })),
-      total: Number((s == null ? void 0 : s.total) ?? i.length)
+      total: Number((s == null ? void 0 : s.total) ?? c.length)
     }
   }
   async renameAlliance(t, e) {
@@ -2378,7 +2378,7 @@ class Qd {
     if (r.status === 400) {
       const a = await r.json().catch(() => ({}));
       throw new Error((a == null ? void 0 : a.error) ?? o())
-    } else if (r.status !== 200) throw new c(o(), r.status)
+    } else if (r.status !== 200) throw new u(o(), r.status)
   }
   async changeAllianceLeader(t, e) {
     const r = await this.request(`/staff/dashboard/alliances/${t}/leader`, {
@@ -2390,8 +2390,8 @@ class Qd {
     });
     if (r.status === 400) {
       const a = await r.json();
-      throw (a == null ? void 0 : a.error) === "user_not_in_alliance" ? new Error(zs()) : new Error(o())
-    } else if (r.status !== 200) throw new c(o(), r.status)
+      throw (a == null ? void 0 : a.error) === "user_not_in_alliance" ? new Error(Os()) : new Error(o())
+    } else if (r.status !== 200) throw new u(o(), r.status)
   }
   async banAllAllianceMembers(t, e, r) {
     const a = await this.request(`/staff/dashboard/alliances/${t}/ban-all`, {
@@ -2402,7 +2402,7 @@ class Qd {
         notes: r
       })
     });
-    if (a.status !== 200) throw new c(o(), a.status)
+    if (a.status !== 200) throw new u(o(), a.status)
   }
   async setAllianceMemberRole(t, e, r) {
     const a = await this.request(`/staff/dashboard/alliances/${t}/members/${e}/role`, {
@@ -2412,14 +2412,14 @@ class Qd {
         role: r
       })
     });
-    if (a.status !== 200) throw new c(o(), a.status)
+    if (a.status !== 200) throw new u(o(), a.status)
   }
   async removeAllianceMember(t, e) {
     const r = await this.request(`/staff/dashboard/alliances/${t}/members/${e}/remove`, {
       method: "POST",
       credentials: "include"
     });
-    if (r.status !== 200) throw new c(o(), r.status)
+    if (r.status !== 200) throw new u(o(), r.status)
   }
   async giveAllianceAdmin(t) {
     const e = await this.request("/alliance/give-admin", {
@@ -2429,7 +2429,7 @@ class Qd {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== 200) throw e.status === 403 ? new Error(A()) : new Error(o())
+    if (e.status !== 200) throw e.status === 403 ? new Error(P()) : new Error(o())
   }
   async banAllianceUser(t) {
     const e = await this.request("/alliance/ban", {
@@ -2439,7 +2439,7 @@ class Qd {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== 200) throw e.status === 403 ? new Error(A()) : new Error(o())
+    if (e.status !== 200) throw e.status === 403 ? new Error(P()) : new Error(o())
   }
   async equipFlag(t) {
     if ((await this.request(`/flag/equip/${t}`, {
@@ -2471,7 +2471,7 @@ class Qd {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== 200) throw e.status === 403 ? new Error(A()) : new Error(o())
+    if (e.status !== 200) throw e.status === 403 ? new Error(P()) : new Error(o())
   }
   async health() {
     return (await this.request("/health")).json()
@@ -2514,7 +2514,7 @@ class Qd {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     const e = await t.json();
     for (const r of e.tickets) r.reports.sort((a, s) => pe[a.reason] - pe[s.reason]);
     return e
@@ -2524,7 +2524,7 @@ class Qd {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     return t.json()
   }
   async getNonPaidUserOpenTicketsCount() {
@@ -2532,7 +2532,7 @@ class Qd {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     const {
       tickets: e
     } = await t.json();
@@ -2543,7 +2543,7 @@ class Qd {
       method: "POST",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     return t.json()
   }
   async setTicketStatus(t, e, r, a) {
@@ -2557,7 +2557,7 @@ class Qd {
         assignedReason: a
       })
     });
-    if (s.status !== 200 && s.status !== 400) throw new c(o(), s.status)
+    if (s.status !== 200 && s.status !== 400) throw new u(o(), s.status)
   }
   async request(t, e) {
     let r;
@@ -2572,7 +2572,7 @@ class Qd {
     try {
       r = await fetch(`${this.url}${t}`, e), this.online = !0
     } catch (s) {
-      throw console.error("Fetch error:", s), this.online = !1, new Error(Un(), {
+      throw console.error("Fetch error:", s), this.online = !1, new Error(Lr(), {
         cause: s
       })
     }
@@ -2585,7 +2585,7 @@ class Qd {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     return t.json()
   }
   async getOpenReportsSummary() {
@@ -2593,7 +2593,7 @@ class Qd {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     return t.json()
   }
   async getBanAppealStats(t, e) {
@@ -2601,7 +2601,7 @@ class Qd {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== 200) throw new c(o(), r.status);
+    if (r.status !== 200) throw new u(o(), r.status);
     const a = await r.json();
     return {
       items: a.items ?? [],
@@ -2613,7 +2613,7 @@ class Qd {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== 200) throw new c(o(), r.status);
+    if (r.status !== 200) throw new u(o(), r.status);
     return (await r.json()).items.map(s => ({
       ...s,
       suspensionRate: (s.ban + s.timeout) / s.total
@@ -2624,7 +2624,7 @@ class Qd {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== 200) throw new c(o(), r.status);
+    if (r.status !== 200) throw new u(o(), r.status);
     return (await r.json()).items.map(s => ({
       ...s,
       suspensionRate: (s.ban + s.timeout) / s.total
@@ -2638,7 +2638,7 @@ class Qd {
         userIds: t
       })
     });
-    if (e.status !== 200) throw new c(o(), e.status);
+    if (e.status !== 200) throw new u(o(), e.status);
     return e.json()
   }
   async getUserInfoFull(t) {
@@ -2647,7 +2647,7 @@ class Qd {
       credentials: "include"
     });
     if (e.status !== 404) {
-      if (e.status !== 200) throw new c(o(), e.status);
+      if (e.status !== 200) throw new u(o(), e.status);
       return e.json()
     }
   }
@@ -2657,7 +2657,7 @@ class Qd {
       credentials: "include"
     });
     if (e.status !== 404) {
-      if (e.status !== 200) throw new c(o(), e.status);
+      if (e.status !== 200) throw new u(o(), e.status);
       return e.json()
     }
   }
@@ -2670,7 +2670,7 @@ class Qd {
           userId: t
         })
       });
-    if (a.status !== 200) throw new c(o(), a.status)
+    if (a.status !== 200) throw new u(o(), a.status)
   }
   async getUserNotes(t, e) {
     const r = e == "dashboard" ? `/staff/dashboard/users/notes?userId=${encodeURIComponent(t)}` : `/staff/appeals/notes?userId=${encodeURIComponent(t)}`,
@@ -2678,7 +2678,7 @@ class Qd {
         method: "GET",
         credentials: "include"
       });
-    if (a.status !== 200) throw new c(o(), a.status);
+    if (a.status !== 200) throw new u(o(), a.status);
     return a.json()
   }
   async addUserNote(t, e, r) {
@@ -2691,14 +2691,14 @@ class Qd {
           note: e
         })
       });
-    if (s.status !== 200) throw new c(o(), s.status)
+    if (s.status !== 200) throw new u(o(), s.status)
   }
   async getUserPermissions(t) {
     const e = await this.request(`/staff/dashboard/permissions/get?userId=${encodeURIComponent(t)}`, {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== 200) throw new c(o(), e.status);
+    if (e.status !== 200) throw new u(o(), e.status);
     return e.json()
   }
   async setUserPermissions(t, e) {
@@ -2710,7 +2710,7 @@ class Qd {
         permissions: Array.from(e)
       })
     });
-    if (r.status !== 200) throw new c(o(), r.status);
+    if (r.status !== 200) throw new u(o(), r.status);
     const a = await r.json();
     return Array.isArray(a == null ? void 0 : a.permissions) ? a.permissions : []
   }
@@ -2719,21 +2719,21 @@ class Qd {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== 200) throw new c(o(), e.status);
+    if (e.status !== 200) throw new u(o(), e.status);
     const r = await e.json();
     return (Array.isArray(r == null ? void 0 : r.purchases) ? r.purchases : []).map(s => {
-      const i = s.is_dollar ?? s.isDollar ?? s.currency ?? s.Currency ?? 0;
-      let u;
-      if (typeof i == "string") {
-        const d = i.toLowerCase();
-        u = d === "usd" || d === "dollar" || d === "true"
-      } else typeof i == "number" ? u = i !== 0 : u = !!i;
+      const c = s.is_dollar ?? s.isDollar ?? s.currency ?? s.Currency ?? 0;
+      let i;
+      if (typeof c == "string") {
+        const d = c.toLowerCase();
+        i = d === "usd" || d === "dollar" || d === "true"
+      } else typeof c == "number" ? i = c !== 0 : i = !!c;
       const l = typeof s.createdAt == "string" ? s.createdAt : s.CreatedAt ? new Date(s.CreatedAt).toISOString() : "";
       return {
         product_name: String(s.productName ?? s.product_name ?? ""),
         amount: Number(s.amount ?? 0),
         price: Number(s.price ?? 0),
-        is_dollar: u,
+        is_dollar: i,
         created_at: l,
         product_variant: Number(s.product_variant ?? s.productVariant ?? 0)
       }
@@ -2748,7 +2748,7 @@ class Qd {
         droplets: e
       })
     });
-    if (r.status !== 200) throw new c(o(), r.status)
+    if (r.status !== 200) throw new u(o(), r.status)
   }
   async postAdminRenameUser(t, e, r) {
     const a = await this.request("/staff/dashboard/users/rename", {
@@ -2762,10 +2762,10 @@ class Qd {
     });
     if (a.status === 400) {
       const s = await a.json(),
-        i = (s == null ? void 0 : s.error) ?? "";
-      throw i === "invalid_name" ? new c(_e(), 400) : new c(typeof i == "string" && i ? i : o(), 400)
+        c = (s == null ? void 0 : s.error) ?? "";
+      throw c === "invalid_name" ? new u(_e(), 400) : new u(typeof c == "string" && c ? c : o(), 400)
     }
-    if (a.status !== 200) throw new c(o(), a.status)
+    if (a.status !== 200) throw new u(o(), a.status)
   }
   async getUserTickets(t, e) {
     if (e === "appeals" && (t.appealId ?? 0) <= 0) throw new Error("Appeal id is required.");
@@ -2776,10 +2776,10 @@ class Qd {
         method: "GET",
         credentials: "include"
       });
-    if (s.status !== 200) throw new c(o(), s.status);
-    const i = await s.json(),
-      u = Array.isArray(i == null ? void 0 : i.tickets) ? i.tickets : [];
-    return u.sort((l, d) => new Date(d.createdAt).getTime() - new Date(l.createdAt).getTime()), u
+    if (s.status !== 200) throw new u(o(), s.status);
+    const c = await s.json(),
+      i = Array.isArray(c == null ? void 0 : c.tickets) ? c.tickets : [];
+    return i.sort((l, d) => new Date(d.createdAt).getTime() - new Date(l.createdAt).getTime()), i
   }
   async getModerationTranslate(t, e) {
     const r = e == "tickets" ? "/staff/tickets/translate" : "/staff/appeals/translate",
@@ -2790,12 +2790,12 @@ class Qd {
           text: t
         })
       });
-    if (a.status !== 200) throw new c(o(), a.status);
+    if (a.status !== 200) throw new u(o(), a.status);
     const s = await a.json();
     return s == null ? void 0 : s.translation
   }
   mapTicketsToReportRows(t, e) {
-    var a, s, i, u, l;
+    var a, s, c, i, l;
     const r = [];
     for (const d of t) {
       const g = d.status ?? "open";
@@ -2836,13 +2836,13 @@ class Qd {
         handledBy: d.status && d.status !== "open" ? {
           id: ((a = d.handledBy) == null ? void 0 : a.id) ?? 0,
           name: ((s = d.handledBy) == null ? void 0 : s.name) ?? "Moderator",
-          picture: ((i = d.handledBy) == null ? void 0 : i.picture) ?? null
+          picture: ((c = d.handledBy) == null ? void 0 : c.picture) ?? null
         } : {
           id: 0,
           name: "—",
           picture: null
         },
-        reason: String(((l = (u = d.reports) == null ? void 0 : u[0]) == null ? void 0 : l.reason) ?? "other"),
+        reason: String(((l = (i = d.reports) == null ? void 0 : i[0]) == null ? void 0 : l.reason) ?? "other"),
         status: g
       })
     }
@@ -2856,7 +2856,7 @@ class Qd {
         method: "GET",
         credentials: "include"
       });
-    if (r.status !== 200) throw new c(o(), r.status);
+    if (r.status !== 200) throw new u(o(), r.status);
     return r.json()
   }
   async postPawtectLoad() {
@@ -2864,34 +2864,34 @@ class Qd {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
-        pawtectMe: Od(),
+        pawtectMe: zd(),
         "paint-the": "world",
         "but-not": "using-bots",
         security: "/.well-known/security.txt"
       })
     });
-    if (t.status !== 204) throw new c(o(), t.status)
+    if (t.status !== 204) throw new u(o(), t.status)
   }
   async unlinkDiscord() {
     const t = await this.request("/discord/unlink", {
       method: "POST",
       credentials: "include"
     });
-    if (t.status !== 204) throw new c(o(), t.status)
+    if (t.status !== 204) throw new u(o(), t.status)
   }
   async deleteSessions() {
     const t = await this.request("/me/sessions", {
       method: "DELETE",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status)
+    if (t.status !== 200) throw new u(o(), t.status)
   }
   async deleteAllUserSessions(t) {
     const e = await this.request(`/staff/dashboard/users/${t}/sessions`, {
       method: "DELETE",
       credentials: "include"
     });
-    if (e.status !== 200) throw new c(o(), e.status)
+    if (e.status !== 200) throw new u(o(), e.status)
   }
   async banUsers(t, e, r) {
     const a = await this.request("/staff/dashboard/summary/users/ban", {
@@ -2903,7 +2903,7 @@ class Qd {
         notes: r
       })
     });
-    if (a.status !== 200) throw new c(o(), a.status)
+    if (a.status !== 200) throw new u(o(), a.status)
   }
   async timeoutUsers(t, e, r) {
     const a = await this.request("/staff/dashboard/summary/users/timeout", {
@@ -2915,7 +2915,7 @@ class Qd {
         notes: r
       })
     });
-    if (a.status !== 200) throw new c(o(), a.status)
+    if (a.status !== 200) throw new u(o(), a.status)
   }
   async incrementUsersDroplets(t, e, r) {
     const a = await this.request("/staff/dashboard/summary/users/increment-droplet", {
@@ -2927,7 +2927,7 @@ class Qd {
         notes: r
       })
     });
-    if (a.status !== 200) throw new c(o(), a.status)
+    if (a.status !== 200) throw new u(o(), a.status)
   }
   async postUnbanUsers(t, e) {
     const r = await this.request("/staff/dashboard/summary/users/unban", {
@@ -2938,7 +2938,7 @@ class Qd {
         notes: e
       })
     });
-    if (r.status !== 200) throw new c(o(), r.status)
+    if (r.status !== 200) throw new u(o(), r.status)
   }
   async getAuditLogs(t) {
     const e = new URLSearchParams;
@@ -2947,7 +2947,7 @@ class Qd {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== 200) throw new c(o(), r.status);
+    if (r.status !== 200) throw new u(o(), r.status);
     return r.json()
   }
   async postUsersSuspend(t, e, r) {
@@ -2978,7 +2978,7 @@ class Qd {
         userId: t
       })
     });
-    if (e.status !== 200) throw new c(o(), e.status)
+    if (e.status !== 200) throw new u(o(), e.status)
   }
   async postReportAllianceName(t) {
     const e = await this.request("/report/alliance/name", {
@@ -2988,7 +2988,7 @@ class Qd {
         allianceId: t
       })
     });
-    if (e.status !== 200) throw new c(o(), e.status);
+    if (e.status !== 200) throw new u(o(), e.status);
     return e.json()
   }
   async submitBanAppeal(t) {
@@ -2999,7 +2999,7 @@ class Qd {
         message: t
       })
     });
-    if (e.status !== 200 && e.status !== 208) throw new c(o(), e.status);
+    if (e.status !== 200 && e.status !== 208) throw new u(o(), e.status);
     return e.status
   }
   async getOpenAppeals() {
@@ -3007,7 +3007,7 @@ class Qd {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     return t.json()
   }
   async postSolveAppeal(t, e) {
@@ -3018,7 +3018,7 @@ class Qd {
         approved: e
       })
     });
-    if (r.status !== 200) throw new c(o(), r.status);
+    if (r.status !== 200) throw new u(o(), r.status);
     return await r.json()
   }
   async getUserLastAppeal() {
@@ -3026,7 +3026,7 @@ class Qd {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     const e = await t.json();
     return (e == null ? void 0 : e.appealDate) ?? null
   }
@@ -3035,14 +3035,14 @@ class Qd {
       method: "POST",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     return await t.json()
   }
   async getNotificationCount() {
     const t = await this.request("/notification/count", {
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     const {
       count: e
     } = await t.json();
@@ -3053,7 +3053,7 @@ class Qd {
       a = await this.request(r, {
         credentials: "include"
       });
-    if (a.status !== 200) throw new c(o(), a.status);
+    if (a.status !== 200) throw new u(o(), a.status);
     return a.json()
   }
   async postNotificationMarkRead(t) {
@@ -3064,7 +3064,7 @@ class Qd {
         notificationIds: t
       })
     });
-    if (e.status !== 200) throw new c(o(), e.status);
+    if (e.status !== 200) throw new u(o(), e.status);
     return e.json()
   }
   async postNotificationMarkReadAll() {
@@ -3072,7 +3072,7 @@ class Qd {
       method: "POST",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     return t.json()
   }
   async getAdminBanWave() {
@@ -3080,7 +3080,7 @@ class Qd {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     return t.json()
   }
   async postAdminBanWave() {
@@ -3088,7 +3088,7 @@ class Qd {
       method: "POST",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     return t.json()
   }
   async getPendingAppealsCount() {
@@ -3096,7 +3096,7 @@ class Qd {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     const e = await t.json();
     return (e == null ? void 0 : e.appeals) ?? 0
   }
@@ -3105,7 +3105,7 @@ class Qd {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== 200) throw new c(o(), e.status);
+    if (e.status !== 200) throw new u(o(), e.status);
     return e.json()
   }
   async getEventStatus() {
@@ -3113,7 +3113,7 @@ class Qd {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     return t.json()
   }
   async postEventStart(t, e, r, a) {
@@ -3127,7 +3127,7 @@ class Qd {
         endEventDate: a
       })
     });
-    if (s.status !== 200) throw new c(o(), s.status);
+    if (s.status !== 200) throw new u(o(), s.status);
     return s.json()
   }
   async postEventStop(t) {
@@ -3138,7 +3138,7 @@ class Qd {
         event: t
       })
     });
-    if (e.status !== 200) throw new c(o(), e.status);
+    if (e.status !== 200) throw new u(o(), e.status);
     return e.json()
   }
   async getEventAnchors(t) {
@@ -3154,7 +3154,7 @@ class Qd {
       method: "GET",
       credentials: "include"
     });
-    if (t.status === 401) throw new Error(ne());
+    if (t.status === 401) throw new Error(re());
     if (t.status !== 200) throw new Error(o());
     return t.json()
   }
@@ -3167,7 +3167,7 @@ class Qd {
       const e = await t.json().catch(() => ({}));
       throw ((e == null ? void 0 : e.error) ?? "") === "no-presents" ? new Error("Você não tem presentes de Natal disponíveis.") : new Error((e == null ? void 0 : e.error) ?? o())
     } else {
-      if (t.status === 401) throw new Error(ne());
+      if (t.status === 401) throw new Error(re());
       if (t.status === 451) throw new Error(de());
       if (t.status === 404) return {
         rewardItemId: 5,
@@ -3182,7 +3182,7 @@ class Qd {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     const e = await t.json();
     return (e == null ? void 0 : e.paintedToday) ?? 0
   }
@@ -3191,7 +3191,7 @@ class Qd {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     return t.json()
   }
   async postEquipUserFrame(t) {
@@ -3199,14 +3199,14 @@ class Qd {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== 200) throw new c(o(), e.status)
+    if (e.status !== 200) throw new u(o(), e.status)
   }
   async getUserBadges() {
     const t = await this.request("/me/badges", {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     return t.json()
   }
   async postEquipUserBadge(t) {
@@ -3215,59 +3215,38 @@ class Qd {
       credentials: "include",
       body: JSON.stringify(t)
     });
-    if (e.status !== 200) throw new c(o(), e.status)
+    if (e.status !== 200) throw new u(o(), e.status)
   }
   async getWaybackEvents(t) {
-    const e = {
-        tile_x: t.tileX,
-        tile_y: t.tileY,
-        x0: t.x0,
-        y0: t.y0,
-        x1: t.x1,
-        y1: t.y1,
-        user_id: t.userId,
-        alliance_id: t.allianceId,
-        region_id: t.regionId,
-        limit: t.limit
-      },
-      r = new URLSearchParams({
-        from_ts: t.fromTs.toString(),
-        to_ts: t.toTs.toString()
-      });
-    for (const [s, i] of Object.entries(e)) i !== void 0 && r.set(s, i.toString());
-    const a = await this.request(`/staff/tools/wayback/s${t.season}?${r.toString()}`, {
+    const e = new URLSearchParams({
+      from_ts: String(t.fromTs),
+      to_ts: String(t.toTs)
+    });
+    this.setOptionalNumberParam(e, "tile_x", t.tileX), this.setOptionalNumberParam(e, "tile_y", t.tileY), this.setOptionalNumberParam(e, "x0", t.x0), this.setOptionalNumberParam(e, "y0", t.y0), this.setOptionalNumberParam(e, "x1", t.x1), this.setOptionalNumberParam(e, "y1", t.y1), this.setOptionalNumberParam(e, "user_id", t.userId), this.setOptionalNumberParam(e, "alliance_id", t.allianceId), this.setOptionalNumberParam(e, "region_id", t.regionId), this.setOptionalNumberParam(e, "limit", t.limit);
+    const r = await this.request(`/staff/tools/wayback/s${t.season}?${e.toString()}`, {
       method: "GET",
       credentials: "include"
     });
-    if (a.status === 403) throw new Error("Access denied");
-    if (a.status !== 200) throw new Error("Failed to fetch wayback events");
-    return a.json()
+    if (r.status === 403) throw new Error("Access denied");
+    if (r.status !== 200) throw new Error("Failed to fetch wayback events");
+    return r.json()
+  }
+  setOptionalNumberParam(t, e, r) {
+    r !== void 0 && typeof r == "number" && (!Number.isFinite(r) || Number.isNaN(r) || t.set(e, String(Math.trunc(r))))
   }
   async getWaybackWithSnapshot(t) {
-    const e = {
-        tile_x: t.tileX,
-        tile_y: t.tileY,
-        x0: t.x0,
-        y0: t.y0,
-        x1: t.x1,
-        y1: t.y1,
-        user_id: t.userId,
-        alliance_id: t.allianceId,
-        region_id: t.regionId,
-        limit: t.limit
-      },
-      r = new URLSearchParams({
-        from_ts: t.fromTs.toString(),
-        to_ts: t.toTs.toString()
-      });
-    for (const [s, i] of Object.entries(e)) i !== void 0 && r.set(s, i.toString());
-    const a = await this.request(`/staff/tools/wayback/s${t.season}/snapshot?${r.toString()}`, {
+    const e = new URLSearchParams({
+      from_ts: String(t.fromTs),
+      to_ts: String(t.toTs)
+    });
+    this.setOptionalNumberParam(e, "tile_x", t.tileX), this.setOptionalNumberParam(e, "tile_y", t.tileY), this.setOptionalNumberParam(e, "x0", t.x0), this.setOptionalNumberParam(e, "y0", t.y0), this.setOptionalNumberParam(e, "x1", t.x1), this.setOptionalNumberParam(e, "y1", t.y1), this.setOptionalNumberParam(e, "user_id", t.userId), this.setOptionalNumberParam(e, "alliance_id", t.allianceId), this.setOptionalNumberParam(e, "region_id", t.regionId), this.setOptionalNumberParam(e, "limit", t.limit);
+    const r = await this.request(`/staff/tools/wayback/s${t.season}/snapshot?${e.toString()}`, {
       method: "GET",
       credentials: "include"
     });
-    if (a.status === 403) throw new Error("Access denied");
-    if (a.status !== 200) throw new Error("Failed to fetch wayback events with snapshot");
-    return a.json()
+    if (r.status === 403) throw new Error("Access denied");
+    if (r.status !== 200) throw new Error("Failed to fetch wayback events with snapshot");
+    return r.json()
   }
   async getWaybackVideo(t, e) {
     const r = await this.request(`/staff/tools/wayback/s${t}/video?${e}`, {
@@ -3308,7 +3287,7 @@ class Qd {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     return t.json()
   }
   async postBuyUserFrame(t) {
@@ -3327,14 +3306,14 @@ class Qd {
       credentials: "include",
       body: JSON.stringify(t)
     });
-    if (e.status !== 200) throw new c(o(), e.status)
+    if (e.status !== 200) throw new u(o(), e.status)
   }
   async getStoreNameCosmetics() {
     const t = await this.request("/store/name", {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     return await t.json()
   }
   async postBuyCosmetic(t) {
@@ -3342,14 +3321,14 @@ class Qd {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== 200) throw new c(o(), e.status)
+    if (e.status !== 200) throw new u(o(), e.status)
   }
   async getMyNameCosmetics() {
     const t = await this.request("/me/cosmetics/name", {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== 200) throw new c(o(), t.status);
+    if (t.status !== 200) throw new u(o(), t.status);
     return await t.json()
   }
   async getTicketsKpi(t) {
@@ -3359,7 +3338,7 @@ class Qd {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== 200) throw new c(o(), r.status);
+    if (r.status !== 200) throw new u(o(), r.status);
     return r.json()
   }
   async postCreateFrame(t) {
@@ -3370,7 +3349,7 @@ class Qd {
       credentials: "include",
       body: e
     });
-    if (r.status !== 200) throw new c(o(), r.status)
+    if (r.status !== 200) throw new u(o(), r.status)
   }
   async postCreateFont(t) {
     const e = await this.request("/staff/store-manager/fonts", {
@@ -3378,7 +3357,7 @@ class Qd {
       credentials: "include",
       body: JSON.stringify(t)
     });
-    if (e.status !== 200) throw new c(o(), e.status)
+    if (e.status !== 200) throw new u(o(), e.status)
   }
   async postCreateStyle(t) {
     const e = await this.request("/staff/store-manager/styles", {
@@ -3386,7 +3365,7 @@ class Qd {
       credentials: "include",
       body: JSON.stringify(t)
     });
-    if (e.status !== 200) throw new c(o(), e.status)
+    if (e.status !== 200) throw new u(o(), e.status)
   }
   async postCreateBadge(t) {
     const e = await this.request("/staff/dashboard/store-manager/badges", {
@@ -3394,7 +3373,7 @@ class Qd {
       credentials: "include",
       body: JSON.stringify(t)
     });
-    if (e.status !== 200) throw new c(o(), e.status)
+    if (e.status !== 200) throw new u(o(), e.status)
   }
   async getR2Images(t) {
     const e = new URLSearchParams({
@@ -3405,7 +3384,7 @@ class Qd {
         method: "GET",
         credentials: "include"
       });
-    if (r.status !== 200) throw new c(o(), r.status);
+    if (r.status !== 200) throw new u(o(), r.status);
     return r.json()
   }
   async postUploadR2Image(t) {
@@ -3416,7 +3395,7 @@ class Qd {
       credentials: "include",
       body: e
     });
-    if (r.status !== 200) throw new c(o(), r.status);
+    if (r.status !== 200) throw new u(o(), r.status);
     return r.json()
   }
   async deleteR2Image(t) {
@@ -3424,35 +3403,35 @@ class Qd {
       method: "DELETE",
       credentials: "include"
     });
-    if (e.status !== 200) throw new c(o(), e.status)
+    if (e.status !== 200) throw new u(o(), e.status)
   }
 }
 W = new WeakMap;
 
 function el(n) {
-  var j, q;
+  var A, j;
   if (!n.length) throw new Error("Auto painter request does not contain any pixels.");
   const t = n[0].season;
   for (const S of n)
     if (S.season !== t) throw new Error("Auto painter requests cannot mix seasons.");
-  const e = (j = re.seasons) == null ? void 0 : j[t];
+  const e = (A = ne.seasons) == null ? void 0 : A[t];
   if (!e) throw new Error("Invalid season selected for auto painter request.");
   const r = e.tileSize;
   let a = Number.POSITIVE_INFINITY,
     s = Number.POSITIVE_INFINITY,
-    i = Number.NEGATIVE_INFINITY,
-    u = Number.NEGATIVE_INFINITY;
+    c = Number.NEGATIVE_INFINITY,
+    i = Number.NEGATIVE_INFINITY;
   const l = n.map(S => {
       const k = Math.round(S.tile[0] * r + S.pixel[0]),
         x = Math.round(S.tile[1] * r + S.pixel[1]);
-      return k < a && (a = k), x < s && (s = x), k > i && (i = k), x > u && (u = x), {
+      return k < a && (a = k), x < s && (s = x), k > c && (c = k), x > i && (i = x), {
         x: k,
         y: x,
         colorIdx: S.colorIdx
       }
     }),
-    d = i - a + 1,
-    g = u - s + 1;
+    d = c - a + 1,
+    g = i - s + 1;
   if (!Number.isFinite(d) || !Number.isFinite(g) || d <= 0 || g <= 0) throw new Error("Failed to compute image bounds for auto painter payload.");
   const m = new Uint8ClampedArray(d * g * 4);
   for (const {
@@ -3461,12 +3440,12 @@ function el(n) {
       colorIdx: x
     }
     of l) {
-    const se = (q = re.colors) == null ? void 0 : q[x];
+    const se = (j = ne.colors) == null ? void 0 : j[x];
     if (!se) throw new Error(`Unknown palette color index: ${x}`);
-    const Pe = S - a,
-      H = ((k - s) * d + Pe) * 4,
-      [qe, Ie, Ne] = se.rgb;
-    m[H] = qe, m[H + 1] = Ie, m[H + 2] = Ne, m[H + 3] = x === 0 ? 1 : 255
+    const Ne = S - a,
+      H = ((k - s) * d + Ne) * 4,
+      [je, qe, Ie] = se.rgb;
+    m[H] = je, m[H + 1] = qe, m[H + 2] = Ie, m[H + 3] = x === 0 ? 1 : 255
   }
   return {
     data: m,
@@ -3478,24 +3457,24 @@ function el(n) {
   }
 }
 async function tl(n) {
-  const t = nl(n.width, n.height),
+  const t = rl(n.width, n.height),
     e = t.getContext("2d");
   if (!e) throw new Error("Canvas API is not available to encode auto painter bitmap.");
   const r = e.createImageData(n.width, n.height);
   return r.data.set(n.data), e.putImageData(r, 0, 0), "convertToBlob" in t ? t.convertToBlob({
     type: "image/png"
   }) : new Promise((a, s) => {
-    t.toBlob(i => {
-      if (!i) {
+    t.toBlob(c => {
+      if (!c) {
         s(new Error("Failed to encode auto painter bitmap."));
         return
       }
-      a(i)
+      a(c)
     }, "image/png")
   })
 }
 
-function nl(n, t) {
+function rl(n, t) {
   if (typeof OffscreenCanvas < "u") return new OffscreenCanvas(n, t);
   if (typeof document < "u") {
     const e = document.createElement("canvas");
@@ -3505,34 +3484,34 @@ function nl(n, t) {
 }
 let Q = new Qd(ge),
   ae = !1,
-  Ae;
+  Pe;
 
 function xl() {
   const n = Ee("2025-09_pawtect");
   if (!n) throw new Error("pawtect experiment not found on load");
-  n.variant !== "disabled" && (ae || P.data && ke(Ve).then(rl).catch(t => {
-    Ae = t, Be(t)
+  n.variant !== "disabled" && (ae || N.data && ke(Ve).then(nl).catch(t => {
+    Pe = t, Be(t)
   }))
 }
 
-function rl() {
-  Id(P.data.id), Q.postPawtectLoad();
+function nl() {
+  qd(N.data.id), Q.postPawtectLoad();
   const n = fetch;
   Object.assign(window, {
-    fetch: je((t, e) => {
+    fetch: Ae((t, e) => {
       let r = null;
-      return t instanceof Request ? r = t.url : r = t, r.startsWith("/") || zd(r), n.call(window, t, e)
+      return t instanceof Request ? r = t.url : r = t, r.startsWith("/") || Od(r), n.call(window, t, e)
     })
   }), ae = !0
 }
 
 function al(n) {
-  if (Ae) throw new Error(Tu());
+  if (Pe) throw new Error(Tu());
   if (!ae) throw new Error("Try again in a few seconds or reload the page.");
   return Cd(n)
 }
 
-function je(n) {
+function Ae(n) {
   return n.bind().bind()
 }
 
@@ -3542,8 +3521,8 @@ function El(n, t, e) {
       return e(...a), t(...a)
     }
   } [n.name];
-  return je(r)
+  return Ae(r)
 }
 export {
-  Oc as $, Un as A, le as B, Te as C, _r as D, Br as E, qd as F, Da as G, Ha as H, _e as I, bs as J, zs as K, T as L, ao as M, Io as N, Fo as O, bl as P, ri as Q, pi as R, vl as S, Pi as T, Ri as U, tu as V, Tu as W, fe as X, Zu as Y, A as Z, me as _, Q as a, ne as a0, he as a1, gd as a2, Sl as a3, pl as a4, fl as a5, kl as a6, yl as a7, gl as b, tn as c, Er as d, o as e, re as f, Zr as g, da as h, ka as i, hl as j, b as k, ll as l, wo as m, _l as n, ml as o, xl as p, El as q, de as r, wl as s, we as t, P as u, pt as v, Pt as w, Rt as x, hn as y, jn as z
+  zc as $, Lr as A, le as B, Te as C, _n as D, Bn as E, jd as F, Da as G, Ha as H, _e as I, bs as J, Os as K, T as L, ao as M, qo as N, Fo as O, bl as P, ni as Q, pi as R, vl as S, Ni as T, Ri as U, tu as V, Tu as W, fe as X, Zu as Y, P as Z, me as _, Q as a, re as a0, he as a1, gd as a2, Sl as a3, pl as a4, fl as a5, kl as a6, yl as a7, gl as b, tr as c, En as d, o as e, ne as f, Zn as g, da as h, ka as i, hl as j, b as k, ll as l, wo as m, _l as n, ml as o, xl as p, El as q, de as r, wl as s, we as t, N as u, pt as v, Nt as w, Rt as x, mr as y, Pr as z
 };

@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./VsNXmfsE.js";
+} from "./tk-xaxvS.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "1ff68788c5989e2fec5a9c9b2aaa5ef268601fd5"
+      id: "5813ae56f58e7333550e54b13dee572a566ecd62"
     }
   } catch {}
 })();
@@ -22,15 +22,15 @@ const a = () => "Name",
   o = () => "Name",
   c = () => "Nombre",
   i = () => "Nom",
-  f = () => "Nome",
-  _ = () => "名前",
+  _ = () => "Nome",
+  f = () => "名前",
   l = () => "Nazwa",
   m = () => "Имя",
   d = () => "Імʼя",
   p = () => "Tên",
   $ = (r = {}, t = {}) => {
     const e = t.locale ?? n();
-    return e === "en" ? a() : e === "pt" ? s() : e === "ch" ? u() : e === "de" ? o() : e === "es" ? c() : e === "fr" ? i() : e === "it" ? f() : e === "jp" ? _() : e === "pl" ? l() : e === "ru" ? m() : e === "uk" ? d() : p()
+    return e === "en" ? a() : e === "pt" ? s() : e === "ch" ? u() : e === "de" ? o() : e === "es" ? c() : e === "fr" ? i() : e === "it" ? _() : e === "jp" ? f() : e === "pl" ? l() : e === "ru" ? m() : e === "uk" ? d() : p()
   },
   b = () => "We don't have frames to buy yet, wait for future updates ;)",
   y = () => "Ainda não temos molduras, crie sua primeira!",

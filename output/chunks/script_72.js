@@ -2,7 +2,7 @@
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "1ff68788c5989e2fec5a9c9b2aaa5ef268601fd5"
+      id: "5813ae56f58e7333550e54b13dee572a566ecd62"
     }
   } catch {}
 })();
@@ -10,7 +10,7 @@ try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
       o = new e.Error().stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "7d579fb5-aff7-458f-8496-99f7f1de1a06", e._sentryDebugIdIdentifier = "sentry-dbid-7d579fb5-aff7-458f-8496-99f7f1de1a06")
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "c89b230e-4564-4099-8384-da484b251c4f", e._sentryDebugIdIdentifier = "sentry-dbid-c89b230e-4564-4099-8384-da484b251c4f")
   })()
 } catch {}
 const t = [{
@@ -84,6 +84,16 @@ This update brings several improvements and fixes for a smoother experience:
 - Improved consistency of texts for translations
 
 We continue to listen to community feedback to make WPlace even better!`
+}, {
+  version: "1.1.2",
+  title: "🧰 UI Fixes & Moderation Improvements",
+  markdown: `## UI Fixes & Moderation Improvements
+
+This patch focuses on interface stability across devices and a better moderation workflow:
+
+- Fixed the side menu layout where buttons could overflow outside the menu bounds
+- Fixed the pixel information layout that was displaying incorrectly on some devices
+- Delivered multiple fixes and improvements to the staff moderation screen`
 }];
 export {
   t as p
