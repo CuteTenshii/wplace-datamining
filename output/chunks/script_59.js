@@ -1,32 +1,37 @@
 import {
-  g as n
-} from "./BIwJezZo.js";
+  g as t
+} from "./BERb6pDx.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "e65d2160-87a3-4c4c-9e7a-6fbff79400c2", e._sentryDebugIdIdentifier = "sentry-dbid-e65d2160-87a3-4c4c-9e7a-6fbff79400c2")
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
-const u = () => "Timeout",
-  o = () => "Suspender",
-  i = () => "禁言",
-  s = () => "Timeout",
-  f = () => "Suspender",
-  d = () => "Suspendre",
-  c = () => "Sospendi",
-  a = () => "タイムアウト",
-  m = () => "Zawieszenie",
-  l = () => "Тайм-аут",
-  p = () => "Тайм-аут",
-  _ = () => "Tạm khóa",
-  g = (e = {}, r = {}) => {
-    const t = r.locale ?? n();
-    return t === "en" ? u() : t === "pt" ? o() : t === "ch" ? i() : t === "de" ? s() : t === "es" ? f() : t === "fr" ? d() : t === "it" ? c() : t === "jp" ? a() : t === "pl" ? m() : t === "ru" ? l() : t === "uk" ? p() : _()
+try {
+  (function() {
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      n = new r.Error().stack;
+    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "c521f84a-2107-4ec8-8d09-ba09cdbc69c2", r._sentryDebugIdIdentifier = "sentry-dbid-c521f84a-2107-4ec8-8d09-ba09cdbc69c2")
+  })()
+} catch {}
+const d = () => "Leaderboard",
+  a = () => "Ranking",
+  o = () => "排行榜",
+  i = () => "Bestenliste",
+  l = () => "Clasificación",
+  s = () => "Classement",
+  u = () => "Classifica",
+  c = () => "ランキング",
+  f = () => "Ranking",
+  b = () => "Таблица лидеров",
+  g = () => "Таблиця лідерів",
+  p = () => "Bảng xếp hạng",
+  y = (r = {}, n = {}) => {
+    const e = n.locale ?? t();
+    return e === "en" ? d() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? l() : e === "fr" ? s() : e === "it" ? u() : e === "jp" ? c() : e === "pl" ? f() : e === "ru" ? b() : e === "uk" ? g() : p()
   };
 export {
-  g as t
+  y as l
 };

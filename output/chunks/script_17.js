@@ -2,23 +2,28 @@
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var o = new e.Error().stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "f48e8017-3f7e-40b0-9f34-cb514ffed3f1", e._sentryDebugIdIdentifier = "sentry-dbid-f48e8017-3f7e-40b0-9f34-cb514ffed3f1")
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
-const L = "en",
+try {
+  (function() {
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      o = new e.Error().stack;
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "f48e8017-3f7e-40b0-9f34-cb514ffed3f1", e._sentryDebugIdIdentifier = "sentry-dbid-f48e8017-3f7e-40b0-9f34-cb514ffed3f1")
+  })()
+} catch {}
+const y = "en",
   c = ["en", "pt", "ch", "de", "es", "fr", "it", "jp", "pl", "ru", "uk", "vi"],
   d = "PARAGLIDE_LOCALE",
   g = ["localStorage", "preferredLanguage", "baseLocale"];
 globalThis.__paraglide = {};
-let f = !1,
+let i = !1,
   p = () => {
     let e;
     for (const o of g) {
-      if (o === "baseLocale") e = L;
-      else if (o === "preferredLanguage") e = w();
+      if (o === "baseLocale") e = y;
+      else if (o === "preferredLanguage") e = L();
       else if (o === "localStorage") e = localStorage.getItem(d) ?? void 0;
       else if (u(o) && l.has(o)) {
         const t = l.get(o);
@@ -30,14 +35,14 @@ let f = !1,
       }
       if (e !== void 0) {
         const t = h(e);
-        return f || (f = !0, y(t, {
+        return i || (i = !0, w(t, {
           reload: !1
         })), t
       }
     }
     throw new Error("No locale found. Read the docs https://inlang.com/m/gerre34r/library-inlang-paraglideJs/errors#no-locale-found")
   },
-  y = (e, o) => {
+  w = (e, o) => {
     const t = {
       reload: !0,
       ...o
@@ -46,31 +51,31 @@ let f = !1,
     try {
       a = p()
     } catch {}
-    for (const r of g)
-      if (r !== "baseLocale") {
-        if (r === "localStorage" && typeof window < "u") localStorage.setItem(d, e);
-        else if (u(r) && l.has(r)) {
-          const s = l.get(r);
+    for (const n of g)
+      if (n !== "baseLocale") {
+        if (n === "localStorage" && typeof window < "u") localStorage.setItem(d, e);
+        else if (u(n) && l.has(n)) {
+          const s = l.get(n);
           if (s) {
-            const i = s.setLocale(e);
-            i instanceof Promise && i.catch(b => {
-              console.warn(`Custom strategy "${r}" setLocale failed:`, b)
+            const f = s.setLocale(e);
+            f instanceof Promise && f.catch(b => {
+              console.warn(`Custom strategy "${n}" setLocale failed:`, b)
             })
           }
         }
       } t.reload && window.location && e !== a && window.location.reload()
   };
 
-function n(e) {
+function r(e) {
   return e ? c.includes(e) : !1
 }
 
 function h(e) {
-  if (n(e) === !1) throw new Error(`Invalid locale: ${e}. Expected one of: ${c.join(", ")}`);
+  if (r(e) === !1) throw new Error(`Invalid locale: ${e}. Expected one of: ${c.join(", ")}`);
   return e
 }
 
-function w() {
+function L() {
   var o;
   if (!((o = navigator == null ? void 0 : navigator.languages) != null && o.length)) return;
   const e = navigator.languages.map(t => {
@@ -81,8 +86,8 @@ function w() {
     }
   });
   for (const t of e) {
-    if (n(t.fullTag)) return t.fullTag;
-    if (n(t.baseTag)) return t.baseTag
+    if (r(t.fullTag)) return t.fullTag;
+    if (r(t.baseTag)) return t.baseTag
   }
 }
 const l = new Map;

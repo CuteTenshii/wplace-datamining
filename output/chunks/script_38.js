@@ -1,59 +1,117 @@
 import {
-  t as E,
-  k as c,
-  l as u,
-  aC as g,
-  aD as p,
-  w as b,
-  a9 as v,
-  aq as w,
-  aE as T,
-  aF as A,
-  aG as y,
-  q as D,
-  aH as I,
-  aI as M,
-  aJ as N,
-  a8 as l
-} from "./BGZizgo7.js";
+  g as n
+} from "./BERb6pDx.js";
 (function() {
   try {
-    var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    a.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var r = new a.Error().stack;
-    r && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[r] = "3518bcaa-dcd5-4073-a9f3-25290f89d595", a._sentryDebugIdIdentifier = "sentry-dbid-3518bcaa-dcd5-4073-a9f3-25290f89d595")
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
-
-function C(a, r, d = !1, s = !1, R = !1) {
-  var i = a,
-    t = "";
-  E(() => {
-    var f = g;
-    if (t === (t = r() ?? "")) {
-      c && u();
-      return
-    }
-    if (f.nodes !== null && (p(f.nodes.start, f.nodes.end), f.nodes = null), t !== "") {
-      if (c) {
-        b.data;
-        for (var e = u(), _ = e; e !== null && (e.nodeType !== v || e.data !== "");) _ = e, e = w(e);
-        if (e === null) throw T(), A;
-        y(b, _), i = D(e);
-        return
-      }
-      var h = d ? M : s ? N : void 0,
-        o = I(d ? "svg" : s ? "math" : "template", h);
-      o.innerHTML = t;
-      var n = d || s ? o : o.content;
-      if (y(l(n), n.lastChild), d || s)
-        for (; l(n);) i.before(l(n));
-      else i.before(n)
-    }
-  })
-}
+try {
+  (function() {
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      t = new r.Error().stack;
+    t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "c610c432-f2a4-4db6-8247-2674955666af", r._sentryDebugIdIdentifier = "sentry-dbid-c610c432-f2a4-4db6-8247-2674955666af")
+  })()
+} catch {}
+const c = () => "Extra context on what happened (required)",
+  o = () => "Mais informações sobre o que aconteceu (obrigatório)",
+  a = () => "请提供发生情况的额外背景（必填）",
+  i = () => "Zusätzliche Informationen zum Vorfall (erforderlich)",
+  u = () => "Más contexto sobre lo que ocurrió (obligatorio)",
+  s = () => "Contexte supplémentaire sur ce qui s’est passé (obligatoire)",
+  _ = () => "Maggiori informazioni su ciò che è successo (obbligatorio)",
+  f = () => "何が起きたかの詳細な説明（必須）",
+  l = () => "Dodatkowy kontekst tego, co się stało (wymagane)",
+  h = () => "Дополнительный контекст о произошедшем (обязательно)",
+  d = () => "Додаткова інформація про те, що сталося (обовʼязково)",
+  m = () => "Thêm ngữ cảnh về chuyện đã xảy ra (bắt buộc)",
+  kr = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? c() : e === "pt" ? o() : e === "ch" ? a() : e === "de" ? i() : e === "es" ? u() : e === "fr" ? s() : e === "it" ? _() : e === "jp" ? f() : e === "pl" ? l() : e === "ru" ? h() : e === "uk" ? d() : m()
+  },
+  x = r => `Max. characters: ${r.max}`,
+  g = r => `Máximo de caracteres: ${r.max}`,
+  p = r => `最大字符数：${r.max}`,
+  b = r => `Max. Zeichen: ${r.max}`,
+  v = r => `Máx. de caracteres: ${r.max}`,
+  $ = r => `Max. de caractères : ${r.max}`,
+  y = r => `Numero massimo di caratteri: ${r.max}`,
+  k = r => `最大文字数: ${r.max}`,
+  q = r => `Maks. znaków: ${r.max}`,
+  w = r => `Макс. символов: ${r.max}`,
+  M = r => `Макс. символів: ${r.max}`,
+  j = r => `Số ký tự tối đa: ${r.max}`,
+  qr = (r, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? x(r) : e === "pt" ? g(r) : e === "ch" ? p(r) : e === "de" ? b(r) : e === "es" ? v(r) : e === "fr" ? $(r) : e === "it" ? y(r) : e === "jp" ? k(r) : e === "pl" ? q(r) : e === "ru" ? w(r) : e === "uk" ? M(r) : j(r)
+  },
+  S = r => `Min. characters: ${r.min}`,
+  z = r => `Mínimo de caracteres: ${r.min}`,
+  E = r => `最少字符数：${r.min}`,
+  I = r => `Min. Zeichen: ${r.min}`,
+  O = r => `Mín. de caracteres: ${r.min}`,
+  T = r => `Min. de caractères : ${r.min}`,
+  D = r => `Numero minimo di caratteri: ${r.min}`,
+  A = r => `最小文字数: ${r.min}`,
+  N = r => `Min. znaków: ${r.min}`,
+  R = r => `Мин. символов: ${r.min}`,
+  Z = r => `Мін. символів: ${r.min}`,
+  C = r => `Số ký tự tối thiểu: ${r.min}`,
+  wr = (r, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? S(r) : e === "pt" ? z(r) : e === "ch" ? E(r) : e === "de" ? I(r) : e === "es" ? O(r) : e === "fr" ? T(r) : e === "it" ? D(r) : e === "jp" ? A(r) : e === "pl" ? N(r) : e === "ru" ? R(r) : e === "uk" ? Z(r) : C(r)
+  },
+  G = () => "Other",
+  L = () => "Outro motivo",
+  W = () => "其他",
+  B = () => "Anderer Grund",
+  K = () => "Otro",
+  V = () => "Autre raison",
+  Y = () => "Altro motivo",
+  F = () => "その他",
+  H = () => "Inny powód",
+  J = () => "Другое",
+  P = () => "Інше",
+  Q = () => "Khác",
+  Mr = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? G() : e === "pt" ? L() : e === "ch" ? W() : e === "de" ? B() : e === "es" ? K() : e === "fr" ? V() : e === "it" ? Y() : e === "jp" ? F() : e === "pl" ? H() : e === "ru" ? J() : e === "uk" ? P() : Q()
+  },
+  U = () => "Required",
+  X = () => "Obrigatório",
+  rr = () => "必填",
+  er = () => "Erforderlich",
+  tr = () => "Obligatorio",
+  nr = () => "Obligatoire",
+  cr = () => "Obbligatorio",
+  or = () => "必須",
+  ar = () => "Wymagane",
+  ir = () => "Обязательно",
+  ur = () => "Обовʼязково",
+  sr = () => "Bắt buộc",
+  jr = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? U() : e === "pt" ? X() : e === "ch" ? rr() : e === "de" ? er() : e === "es" ? tr() : e === "fr" ? nr() : e === "it" ? cr() : e === "jp" ? or() : e === "pl" ? ar() : e === "ru" ? ir() : e === "uk" ? ur() : sr()
+  },
+  _r = () => "Select the reason",
+  fr = () => "Selecione o motivo",
+  lr = () => "选择原因",
+  hr = () => "Grund auswählen",
+  dr = () => "Selecciona el motivo",
+  mr = () => "Sélectionnez la raison",
+  xr = () => "Seleziona il motivo",
+  gr = () => "理由を選択",
+  pr = () => "Wybierz powód",
+  br = () => "Выберите причину",
+  vr = () => "Виберіть причину",
+  $r = () => "Chọn lý do",
+  Sr = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? _r() : e === "pt" ? fr() : e === "ch" ? lr() : e === "de" ? hr() : e === "es" ? dr() : e === "fr" ? mr() : e === "it" ? xr() : e === "jp" ? gr() : e === "pl" ? pr() : e === "ru" ? br() : e === "uk" ? vr() : $r()
+  };
 export {
-  C as h
+  qr as a, kr as g, wr as m, Mr as o, jr as r, Sr as s
 };

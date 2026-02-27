@@ -1,32 +1,37 @@
 import {
-  g as o
-} from "./BIwJezZo.js";
+  g as t
+} from "./BERb6pDx.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "4a5c7974-0033-48df-9303-4bfb47be1c3c", e._sentryDebugIdIdentifier = "sentry-dbid-4a5c7974-0033-48df-9303-4bfb47be1c3c")
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
-const t = () => "Error loading",
-  i = () => "Erro ao carregar",
-  d = () => "加载出错",
-  a = () => "Fehler beim Laden",
-  u = () => "Error al cargar",
-  l = () => "Erreur lors du chargement",
-  c = () => "Errore nel caricamento",
-  s = () => "読み込みエラー",
-  f = () => "Błąd ładowania",
-  _ = () => "Ошибка загрузки",
-  g = () => "Помилка завантаження",
-  b = () => "Lỗi tải dữ liệu",
-  y = (e = {}, n = {}) => {
-    const r = n.locale ?? o();
-    return r === "en" ? t() : r === "pt" ? i() : r === "ch" ? d() : r === "de" ? a() : r === "es" ? u() : r === "fr" ? l() : r === "it" ? c() : r === "jp" ? s() : r === "pl" ? f() : r === "ru" ? _() : r === "uk" ? g() : b()
+try {
+  (function() {
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "bebb4e96-3c86-49f3-92f8-00c1c85e4e63", n._sentryDebugIdIdentifier = "sentry-dbid-bebb4e96-3c86-49f3-92f8-00c1c85e4e63")
+  })()
+} catch {}
+const s = () => "Appeals",
+  a = () => "Apelos",
+  o = () => "申诉",
+  p = () => "Einsprüche",
+  u = () => "Apelaciones",
+  i = () => "Recours",
+  l = () => "Ricorsi",
+  f = () => "異議申立て",
+  c = () => "Odwołania",
+  d = () => "Апелляции",
+  b = () => "Апеляції",
+  _ = () => "Các kháng cáo",
+  y = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? s() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? p() : e === "es" ? u() : e === "fr" ? i() : e === "it" ? l() : e === "jp" ? f() : e === "pl" ? c() : e === "ru" ? d() : e === "uk" ? b() : _()
   };
 export {
-  y as e
+  y as a
 };

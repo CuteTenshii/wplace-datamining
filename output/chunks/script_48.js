@@ -1,48 +1,41 @@
+import "./Cz-os3rt.js";
 import {
-  g as n
-} from "./BIwJezZo.js";
+  A as f,
+  b as n
+} from "./C_uavZQJ.js";
+import {
+  f as r
+} from "./CiokZgy7.js";
+import {
+  r as s
+} from "./C4tLH6MW.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "cb8a8c42-bfef-4d63-bd7e-6819d1f929eb", e._sentryDebugIdIdentifier = "sentry-dbid-cb8a8c42-bfef-4d63-bd7e-6819d1f929eb")
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
-const u = () => "Members",
-  s = () => "Membros",
-  o = () => "成员",
-  i = () => "Mitglieder",
-  c = () => "Miembros",
-  f = () => "Membres",
-  l = () => "Membri",
-  a = () => "メンバー",
-  b = () => "Członkowie",
-  d = () => "Участники",
-  p = () => "Учасники",
-  m = () => "Thành viên",
-  J = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? u() : r === "pt" ? s() : r === "ch" ? o() : r === "de" ? i() : r === "es" ? c() : r === "fr" ? f() : r === "it" ? l() : r === "jp" ? a() : r === "pl" ? b() : r === "ru" ? d() : r === "uk" ? p() : m()
-  },
-  _ = () => "Player",
-  y = () => "Jogador",
-  g = () => "玩家",
-  h = () => "Spieler",
-  k = () => "Jugador",
-  w = () => "Joueur",
-  M = () => "Giocatore",
-  v = () => "プレイヤー",
-  E = () => "Gracz",
-  I = () => "Игрок",
-  j = () => "Гравець",
-  D = () => "Người chơi",
-  S = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _() : r === "pt" ? y() : r === "ch" ? g() : r === "de" ? h() : r === "es" ? k() : r === "fr" ? w() : r === "it" ? M() : r === "jp" ? v() : r === "pl" ? E() : r === "ru" ? I() : r === "uk" ? j() : D()
-  };
+try {
+  (function() {
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      d = new e.Error().stack;
+    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "d6834dd2-ccd4-4e15-a77c-d88fb3f76f03", e._sentryDebugIdIdentifier = "sentry-dbid-d6834dd2-ccd4-4e15-a77c-d88fb3f76f03")
+  })()
+} catch {}
+var a = f('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
+
+function b(e, d) {
+  let t = s(d, ["$$slots", "$$events", "$$legacy"]);
+  var o = a();
+  r(o, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...t
+  })), n(e, o)
+}
 export {
-  J as m, S as p
+  b as A
 };

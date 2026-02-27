@@ -1,32 +1,37 @@
 import {
-  g as n
-} from "./BIwJezZo.js";
+  g as d
+} from "./BERb6pDx.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var t = new r.Error().stack;
-    t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "34b20000-aaf6-474f-a087-a222515fb8cf", r._sentryDebugIdIdentifier = "sentry-dbid-34b20000-aaf6-474f-a087-a222515fb8cf")
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
-const i = () => "Preview",
-  u = () => "Prévia",
-  f = () => "预览",
-  o = () => "Vorschau",
-  s = () => "Vista previa",
-  p = () => "Aperçu",
-  c = () => "Anteprima",
-  a = () => "プレビュー",
-  d = () => "Podgląd",
-  v = () => "Предпросмотр",
-  w = () => "Попередній перегляд",
-  l = () => "Xem trước",
-  b = (r = {}, t = {}) => {
-    const e = t.locale ?? n();
-    return e === "en" ? i() : e === "pt" ? u() : e === "ch" ? f() : e === "de" ? o() : e === "es" ? s() : e === "fr" ? p() : e === "it" ? c() : e === "jp" ? a() : e === "pl" ? d() : e === "ru" ? v() : e === "uk" ? w() : l()
+try {
+  (function() {
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      n = new r.Error().stack;
+    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "b98ef8da-2454-4f67-9269-74b924e89c0b", r._sentryDebugIdIdentifier = "sentry-dbid-b98ef8da-2454-4f67-9269-74b924e89c0b")
+  })()
+} catch {}
+const t = () => "Dashboard",
+  o = () => "Painel",
+  a = () => "控制台",
+  s = () => "Dashboard",
+  u = () => "Panel",
+  f = () => "Tableau de bord",
+  i = () => "Pannello",
+  b = () => "ダッシュボード",
+  l = () => "Panel",
+  c = () => "Панель",
+  h = () => "Панель",
+  p = () => "Bảng điều khiển",
+  g = (r = {}, n = {}) => {
+    const e = n.locale ?? d();
+    return e === "en" ? t() : e === "pt" ? o() : e === "ch" ? a() : e === "de" ? s() : e === "es" ? u() : e === "fr" ? f() : e === "it" ? i() : e === "jp" ? b() : e === "pl" ? l() : e === "ru" ? c() : e === "uk" ? h() : p()
   };
 export {
-  b as p
+  g as d
 };

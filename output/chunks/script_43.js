@@ -1,48 +1,41 @@
+import "./Cz-os3rt.js";
 import {
-  g as n
-} from "./BIwJezZo.js";
+  A as f,
+  b as d
+} from "./C_uavZQJ.js";
+import {
+  f as r
+} from "./CiokZgy7.js";
+import {
+  r as s
+} from "./C4tLH6MW.js";
 (function() {
   try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var r = new t.Error().stack;
-    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "8b661710-f58b-4309-8992-d1f0962ae2da", t._sentryDebugIdIdentifier = "sentry-dbid-8b661710-f58b-4309-8992-d1f0962ae2da")
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
-const i = () => "Description",
-  s = () => "Descrição",
-  p = () => "描述",
-  o = () => "Beschreibung",
-  u = () => "Descripción",
-  c = () => "Description",
-  d = () => "Descrizione",
-  l = () => "説明",
-  f = () => "Opis",
-  _ = () => "Описание",
-  a = () => "Опис",
-  x = () => "Mô tả",
-  T = (t = {}, r = {}) => {
-    const e = r.locale ?? n();
-    return e === "en" ? i() : e === "pt" ? s() : e === "ch" ? p() : e === "de" ? o() : e === "es" ? u() : e === "fr" ? c() : e === "it" ? d() : e === "jp" ? l() : e === "pl" ? f() : e === "ru" ? _() : e === "uk" ? a() : x()
-  },
-  b = () => "Pixels painted",
-  g = () => "Pixels pintados",
-  y = () => "已绘制像素数",
-  D = () => "Gemalte Pixel",
-  h = () => "Píxeles pintados",
-  P = () => "Pixels peints",
-  k = () => "Pixel dipinti",
-  w = () => "塗られたピクセル数",
-  E = () => "Pomalowane piksele",
-  I = () => "Нарисованные пиксели",
-  j = () => "Намальовані пікселі",
-  m = () => "Pixel đã tô",
-  L = (t = {}, r = {}) => {
-    const e = r.locale ?? n();
-    return e === "en" ? b() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? D() : e === "es" ? h() : e === "fr" ? P() : e === "it" ? k() : e === "jp" ? w() : e === "pl" ? E() : e === "ru" ? I() : e === "uk" ? j() : m()
-  };
+try {
+  (function() {
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      o = new e.Error().stack;
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "f9b93962-fea2-427c-bb72-5e953664986e", e._sentryDebugIdIdentifier = "sentry-dbid-f9b93962-fea2-427c-bb72-5e953664986e")
+  })()
+} catch {}
+var i = f('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
+
+function g(e, o) {
+  let n = s(o, ["$$slots", "$$events", "$$legacy"]);
+  var t = i();
+  r(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...n
+  })), d(e, t)
+}
 export {
-  T as d, L as p
+  g as L
 };

@@ -1,32 +1,37 @@
 import {
-  g as a
-} from "./BIwJezZo.js";
+  g as o
+} from "./BERb6pDx.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var r = new n.Error().stack;
-    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "ffe8b5ce-112e-4e22-9d99-575b1568dd07", n._sentryDebugIdIdentifier = "sentry-dbid-ffe8b5ce-112e-4e22-9d99-575b1568dd07")
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
-const t = () => "Ban appeal",
-  p = () => "Revisão de banimento",
-  o = () => "封禁申诉",
-  u = () => "Bann-Einspruch",
-  s = () => "Apelación de ban",
-  i = () => "Recours de bannissement",
-  d = () => "Ricorso contro il ban",
-  b = () => "BANの異議申立て",
-  l = () => "Odwołanie od bana",
-  c = () => "Апелляция на бан",
-  f = () => "Апеляція на бан",
-  _ = () => "Kháng cáo lệnh cấm",
-  y = (n = {}, r = {}) => {
-    const e = r.locale ?? a();
-    return e === "en" ? t() : e === "pt" ? p() : e === "ch" ? o() : e === "de" ? u() : e === "es" ? s() : e === "fr" ? i() : e === "it" ? d() : e === "jp" ? b() : e === "pl" ? l() : e === "ru" ? c() : e === "uk" ? f() : _()
+try {
+  (function() {
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "5e3a4020-2252-4fc6-bf0b-4092111ea40f", e._sentryDebugIdIdentifier = "sentry-dbid-5e3a4020-2252-4fc6-bf0b-4092111ea40f")
+  })()
+} catch {}
+const t = () => "Error loading",
+  i = () => "Erro ao carregar",
+  d = () => "加载出错",
+  a = () => "Fehler beim Laden",
+  l = () => "Error al cargar",
+  u = () => "Erreur lors du chargement",
+  f = () => "Errore nel caricamento",
+  s = () => "読み込みエラー",
+  c = () => "Błąd ładowania",
+  g = () => "Ошибка загрузки",
+  _ = () => "Помилка завантаження",
+  b = () => "Lỗi tải dữ liệu",
+  y = (e = {}, n = {}) => {
+    const r = n.locale ?? o();
+    return r === "en" ? t() : r === "pt" ? i() : r === "ch" ? d() : r === "de" ? a() : r === "es" ? l() : r === "fr" ? u() : r === "it" ? f() : r === "jp" ? s() : r === "pl" ? c() : r === "ru" ? g() : r === "uk" ? _() : b()
   };
 export {
-  y as b
+  y as e
 };

@@ -1,48 +1,53 @@
-import "./BLuq94kG.js";
 import {
-  a as s,
-  J as a
-} from "./BGZizgo7.js";
-import {
-  f as n
-} from "./Bhr_YgHq.js";
-import {
-  r as l
-} from "./B9brejRs.js";
+  g as t
+} from "./BERb6pDx.js";
 (function() {
   try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "b6b88bcc-1034-4072-a832-f383eb446f6b", t._sentryDebugIdIdentifier = "sentry-dbid-b6b88bcc-1034-4072-a832-f383eb446f6b")
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
-var f = a('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
-
-function g(t, e) {
-  let r = l(e, ["$$slots", "$$events", "$$legacy"]);
-  var o = f();
-  n(o, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...r
-  })), s(t, o)
-}
-var d = a('<svg><path d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z"></path></svg>');
-
-function c(t, e) {
-  let r = l(e, ["$$slots", "$$events", "$$legacy"]);
-  var o = d();
-  n(o, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...r
-  })), s(t, o)
-}
+try {
+  (function() {
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "361009ac-bdfc-49c6-ae0b-41e743c14776", n._sentryDebugIdIdentifier = "sentry-dbid-361009ac-bdfc-49c6-ae0b-41e743c14776")
+  })()
+} catch {}
+const s = () => "Users banned successfully",
+  u = () => "Usuários banidos com sucesso",
+  o = () => "用户已成功封禁",
+  i = () => "Benutzer erfolgreich gebannt",
+  c = () => "Usuarios baneados correctamente",
+  d = () => "Utilisateurs bannis avec succès",
+  a = () => "Utenti bannati con successo",
+  f = () => "ユーザーをBANしました。",
+  _ = () => "Użytkownicy zostali pomyślnie zbanowani",
+  l = () => "Пользователи успешно забанены",
+  b = () => "Користувачів успішно заблоковано",
+  p = () => "Đã cấm người dùng thành công",
+  D = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? d() : e === "it" ? a() : e === "jp" ? f() : e === "pl" ? _() : e === "ru" ? l() : e === "uk" ? b() : p()
+  },
+  m = () => "Users timeouted successfully",
+  g = () => "Usuários suspensos com sucesso",
+  y = () => "用户已成功禁言",
+  h = () => "Benutzer erfolgreich mit Timeout belegt",
+  w = () => "Usuarios suspendidos correctamente",
+  U = () => "Utilisateurs suspendus avec succès",
+  k = () => "Utenti sospesi con successo",
+  z = () => "ユーザーをタイムアウトしました。",
+  v = () => "Użytkownicy zostali pomyślnie zawieszeni",
+  T = () => "Пользователям успешно выдан тайм-аут",
+  E = () => "Користувачам успішно призначено тайм-аут",
+  I = () => "Đã tạm khóa người dùng thành công",
+  B = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? m() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? h() : e === "es" ? w() : e === "fr" ? U() : e === "it" ? k() : e === "jp" ? z() : e === "pl" ? v() : e === "ru" ? T() : e === "uk" ? E() : I()
+  };
 export {
-  g as G, c as T
+  B as a, D as u
 };

@@ -1,36 +1,37 @@
-import "./BLuq94kG.js";
 import {
-  a as d,
-  J as s
-} from "./BGZizgo7.js";
-import {
-  f
-} from "./Bhr_YgHq.js";
-import {
-  r as a
-} from "./B9brejRs.js";
+  g as t
+} from "./BERb6pDx.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "f641d18f-4f83-44ae-829d-8dec78711c1e", e._sentryDebugIdIdentifier = "sentry-dbid-f641d18f-4f83-44ae-829d-8dec78711c1e")
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
-var n = s('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
-
-function g(e, r) {
-  let t = a(r, ["$$slots", "$$events", "$$legacy"]);
-  var o = n();
-  f(o, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...t
-  })), d(e, o)
-}
+try {
+  (function() {
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      n = new r.Error().stack;
+    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "0eb5f393-b093-42ef-9434-768f285309dd", r._sentryDebugIdIdentifier = "sentry-dbid-0eb5f393-b093-42ef-9434-768f285309dd")
+  })()
+} catch {}
+const s = () => "Users",
+  u = () => "Usuários",
+  o = () => "用户",
+  i = () => "Benutzer",
+  f = () => "Usuarios",
+  d = () => "Utilisateurs",
+  c = () => "Utenti",
+  l = () => "ユーザー",
+  a = () => "Użytkownicy",
+  b = () => "Пользователи",
+  p = () => "Користувачі",
+  y = () => "Người dùng",
+  g = (r = {}, n = {}) => {
+    const e = n.locale ?? t();
+    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? f() : e === "fr" ? d() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? b() : e === "uk" ? p() : y()
+  };
 export {
-  g as A
+  g as u
 };

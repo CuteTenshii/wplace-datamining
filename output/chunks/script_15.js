@@ -3,94 +3,99 @@ var m = t => {
 };
 var L = (t, e, i) => e.has(t) || m("Cannot " + i);
 var a = (t, e, i) => (L(t, e, "read from private field"), i ? i.call(t) : e.get(t)),
-  s = (t, e, i) => e.has(t) ? m("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, i);
+  n = (t, e, i) => e.has(t) ? m("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, i);
 import {
-  e as n,
+  e as s,
+  j as o,
   i as r,
-  h as o,
   g as p
-} from "./BGZizgo7.js";
+} from "./C_uavZQJ.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "f459a571-edc9-4ec1-9bd5-0c9a9f3b7ffc", t._sentryDebugIdIdentifier = "sentry-dbid-f459a571-edc9-4ec1-9bd5-0c9a9f3b7ffc")
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
+try {
+  (function() {
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      e = new t.Error().stack;
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "ecb2670c-cadb-41d4-9793-995bb029f727", t._sentryDebugIdIdentifier = "sentry-dbid-ecb2670c-cadb-41d4-9793-995bb029f727")
+  })()
+} catch {}
 const E = "true",
-  S = "https://maps.wplace.live/styles/liberty",
-  U = "https://backend.wplace.live/files",
-  k = "https://backend.wplace.live",
+  v = "https://backend.wplace.live/files",
+  A = "0x4AAAAAABpHqZ-6i7uL0nmG",
+  T = "https://backend.wplace.live",
   w = "theme";
-var l, g, u, d, c, h, f, b;
+var l, g, d, u, c, h, f, b;
 class y {
   constructor() {
-    s(this, l, n(!1));
-    s(this, g, n(!1));
-    s(this, u, n(p(I())));
-    s(this, d, n(!1));
-    s(this, c, n("custom-winter"));
-    s(this, h, n(!0));
-    s(this, f, n(p(Date.now())));
-    s(this, b, n(void 0));
+    n(this, l, s(!1));
+    n(this, g, s(!1));
+    n(this, d, s(p(I())));
+    n(this, u, s(!1));
+    n(this, c, s("custom-winter"));
+    n(this, h, s(!0));
+    n(this, f, s(p(Date.now())));
+    n(this, b, s(void 0));
     setInterval(() => {
-      o(a(this, f), Date.now(), !0)
+      r(a(this, f), Date.now(), !0)
     }, 500), this.theme = localStorage.getItem(w), this.theme !== "dark" && this.theme !== "custom-winter" && (this.theme = "custom-winter")
   }
   get dropletsDialogOpen() {
-    return r(a(this, l))
+    return o(a(this, l))
   }
   set dropletsDialogOpen(e) {
-    o(a(this, l), e, !0)
+    r(a(this, l), e, !0)
   }
   get muted() {
-    return r(a(this, g))
+    return o(a(this, g))
   }
   set muted(e) {
-    o(a(this, g), e, !0)
+    r(a(this, g), e, !0)
   }
   get language() {
-    return r(a(this, u))
+    return o(a(this, d))
   }
   set language(e) {
-    o(a(this, u), e, !0)
+    r(a(this, d), e, !0)
   }
   get turnstatileLoaded() {
-    return r(a(this, d))
+    return o(a(this, u))
   }
   set turnstatileLoaded(e) {
-    o(a(this, d), e, !0)
+    r(a(this, u), e, !0)
   }
   get theme() {
-    return r(a(this, c))
+    return o(a(this, c))
   }
   set theme(e) {
-    o(a(this, c), e, !0), localStorage.setItem(w, e), document.documentElement.setAttribute("data-theme", e)
+    r(a(this, c), e, !0), localStorage.setItem(w, e), document.documentElement.setAttribute("data-theme", e)
   }
   get snowflakesEnabled() {
-    return r(a(this, h))
+    return o(a(this, h))
   }
   set snowflakesEnabled(e) {
-    o(a(this, h), e, !0)
+    r(a(this, h), e, !0)
   }
   get now() {
-    return r(a(this, f))
+    return o(a(this, f))
   }
   get captcha() {
-    return _ ? r(a(this, b)) : {
+    return _ ? o(a(this, b)) : {
       token: "turnstile-disabled",
       time: Date.now()
     }
   }
   set captcha(e) {
-    o(a(this, b), e, !0)
+    r(a(this, b), e, !0)
   }
 }
-l = new WeakMap, g = new WeakMap, u = new WeakMap, d = new WeakMap, c = new WeakMap, h = new WeakMap, f = new WeakMap, b = new WeakMap;
-const B = new y;
+l = new WeakMap, g = new WeakMap, d = new WeakMap, u = new WeakMap, c = new WeakMap, h = new WeakMap, f = new WeakMap, b = new WeakMap;
+const U = new y;
 
 function I() {
   if (navigator.languages && navigator.languages.length > 0) {
@@ -101,5 +106,5 @@ function I() {
 }
 const _ = E.toLowerCase() !== "false";
 export {
-  k as P, U as a, S as b, B as g, _ as t
+  T as P, A as a, v as b, U as g, _ as t
 };

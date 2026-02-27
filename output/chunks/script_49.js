@@ -1,59 +1,37 @@
+import {
+  g as r
+} from "./BERb6pDx.js";
 (function() {
   try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var r = new t.Error().stack;
-    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "3165cf74-2c30-440d-8753-7217d3d69437", t._sentryDebugIdIdentifier = "sentry-dbid-3165cf74-2c30-440d-8753-7217d3d69437")
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
-
-function C(t) {
-  const r = t - 1;
-  return r * r * r + 1
-}
-
-function T(t, {
-  from: r,
-  to: e
-}, h = {}) {
-  var {
-    delay: u = 0,
-    duration: i = a => Math.sqrt(a) * 120,
-    easing: v = C
-  } = h, d = getComputedStyle(t), y = d.transform === "none" ? "" : d.transform, [s, o] = d.transformOrigin.split(" ").map(parseFloat);
-  s /= t.clientWidth, o /= t.clientHeight;
-  var c = D(t),
-    g = t.clientWidth / e.width / c,
-    p = t.clientHeight / e.height / c,
-    b = r.left + r.width * s,
-    w = r.top + r.height * o,
-    x = e.left + e.width * s,
-    m = e.top + e.height * o,
-    f = (b - x) * g,
-    l = (w - m) * p,
-    S = r.width / e.width,
-    E = r.height / e.height;
-  return {
-    delay: u,
-    duration: typeof i == "function" ? i(Math.sqrt(f * f + l * l)) : i,
-    easing: v,
-    css: (a, n) => {
-      var _ = n * f,
-        I = n * l,
-        $ = a + n * S,
-        z = a + n * E;
-      return `transform: ${y} translate(${_}px, ${I}px) scale(${$}, ${z});`
-    }
-  }
-}
-
-function D(t) {
-  if ("currentCSSZoom" in t) return t.currentCSSZoom;
-  for (var r = t, e = 1; r !== null;) e *= +getComputedStyle(r).zoom, r = r.parentElement;
-  return e
-}
+try {
+  (function() {
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "bce39049-6b42-4b6c-adf5-3d5097a65b7e", e._sentryDebugIdIdentifier = "sentry-dbid-bce39049-6b42-4b6c-adf5-3d5097a65b7e")
+  })()
+} catch {}
+const d = () => "Banned",
+  a = () => "Banido",
+  o = () => "已封禁",
+  u = () => "Gebannt",
+  b = () => "Baneado",
+  f = () => "Banni",
+  i = () => "Bannato",
+  s = () => "BAN済み",
+  c = () => "Zbanowany",
+  l = () => "Забанен",
+  p = () => "Заблоковано",
+  _ = () => "Đã bị cấm",
+  g = (e = {}, t = {}) => {
+    const n = t.locale ?? r();
+    return n === "en" ? d() : n === "pt" ? a() : n === "ch" ? o() : n === "de" ? u() : n === "es" ? b() : n === "fr" ? f() : n === "it" ? i() : n === "jp" ? s() : n === "pl" ? c() : n === "ru" ? l() : n === "uk" ? p() : _()
+  };
 export {
-  T as f
+  g as b
 };

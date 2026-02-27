@@ -1,33 +1,37 @@
 import {
-  av as t,
-  m as o,
-  k as f,
-  l as i
-} from "./BGZizgo7.js";
-import {
-  B as b
-} from "./mM-ynKa3.js";
+  g as t
+} from "./BERb6pDx.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "8a58b531-6cef-4071-b12a-e3c204ac7381", e._sentryDebugIdIdentifier = "sentry-dbid-8a58b531-6cef-4071-b12a-e3c204ac7381")
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
-const c = Symbol("NaN");
-
-function u(e, n, r) {
-  f && i();
-  var d = new b(e),
-    s = !t();
-  o(() => {
-    var a = n();
-    a !== a && (a = c), s && a !== null && typeof a == "object" && (a = {}), d.ensure(a, r)
-  })
-}
+try {
+  (function() {
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "4b52d08f-5fc6-4075-96a4-14dbcb10c32c", e._sentryDebugIdIdentifier = "sentry-dbid-4b52d08f-5fc6-4075-96a4-14dbcb10c32c")
+  })()
+} catch {}
+const u = () => "Unban",
+  a = () => "Desbanir",
+  o = () => "解封",
+  f = () => "Entbannen",
+  b = () => "Desbanear",
+  i = () => "Débannir",
+  d = () => "Unban",
+  c = () => "BANを解除",
+  s = () => "Odbanuj",
+  l = () => "Разбанить",
+  p = () => "Розбанити",
+  _ = () => "Gỡ cấm",
+  g = (e = {}, r = {}) => {
+    const n = r.locale ?? t();
+    return n === "en" ? u() : n === "pt" ? a() : n === "ch" ? o() : n === "de" ? f() : n === "es" ? b() : n === "fr" ? i() : n === "it" ? d() : n === "jp" ? c() : n === "pl" ? s() : n === "ru" ? l() : n === "uk" ? p() : _()
+  };
 export {
-  u as k
+  g as u
 };

@@ -1,31 +1,36 @@
 import {
   g as t
-} from "./BIwJezZo.js";
+} from "./BERb6pDx.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "5f94ed96-6b3a-41b9-b71c-23a660596945", e._sentryDebugIdIdentifier = "sentry-dbid-5f94ed96-6b3a-41b9-b71c-23a660596945")
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
-const c = () => "Cancel",
-  u = () => "Cancelar",
-  a = () => "取消",
-  l = () => "Abbrechen",
-  o = () => "Cancelar",
-  s = () => "Annuler",
-  f = () => "Annulla",
-  i = () => "キャンセル",
-  d = () => "Anuluj",
-  b = () => "Отмена",
-  _ = () => "Скасувати",
-  p = () => "Hủy",
-  g = (e = {}, r = {}) => {
-    const n = r.locale ?? t();
-    return n === "en" ? c() : n === "pt" ? u() : n === "ch" ? a() : n === "de" ? l() : n === "es" ? o() : n === "fr" ? s() : n === "it" ? f() : n === "jp" ? i() : n === "pl" ? d() : n === "ru" ? b() : n === "uk" ? _() : p()
+try {
+  (function() {
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "3a050333-53db-420a-8f81-a65e0619efde", n._sentryDebugIdIdentifier = "sentry-dbid-3a050333-53db-420a-8f81-a65e0619efde")
+  })()
+} catch {}
+const o = () => "Copy",
+  c = () => "Copiar",
+  i = () => "复制",
+  u = () => "Kopieren",
+  f = () => "Copiar",
+  d = () => "Copier",
+  p = () => "Copia",
+  s = () => "コピー",
+  a = () => "Kopiuj",
+  y = () => "Копировать",
+  l = () => "Копіювати",
+  b = () => "Sao chép",
+  g = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? o() : e === "pt" ? c() : e === "ch" ? i() : e === "de" ? u() : e === "es" ? f() : e === "fr" ? d() : e === "it" ? p() : e === "jp" ? s() : e === "pl" ? a() : e === "ru" ? y() : e === "uk" ? l() : b()
   };
 export {
   g as c

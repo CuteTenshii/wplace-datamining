@@ -1,59 +1,79 @@
+import "./Cz-os3rt.js";
+import {
+  p as g,
+  f as c,
+  t as f,
+  b as A,
+  c as m,
+  s as v,
+  d as w,
+  r as y
+} from "./C_uavZQJ.js";
+import {
+  i as h
+} from "./ChKIMXcl.js";
+import {
+  f as _,
+  a as r,
+  s as x
+} from "./CiokZgy7.js";
+import {
+  p as E,
+  r as T
+} from "./C4tLH6MW.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var a = new e.Error().stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "318a9da5-f9ae-41c4-a6ad-1557223c6f66", e._sentryDebugIdIdentifier = "sentry-dbid-318a9da5-f9ae-41c4-a6ad-1557223c6f66")
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
-const b = e => e;
+try {
+  (function() {
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "92fecf6b-355f-4bbb-8d2c-75718e6a4266", e._sentryDebugIdIdentifier = "sentry-dbid-92fecf6b-355f-4bbb-8d2c-75718e6a4266")
+  })()
+} catch {}
+const S = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
+var B = c("<span>wplace</span>"),
+  L = c('<div><img alt="Wplace logo"/> <!></div>');
 
-function h(e) {
-  const a = e - 1;
-  return a * a * a + 1
-}
-
-function m(e, {
-  delay: a = 0,
-  duration: n = 400,
-  easing: s = b
-} = {}) {
-  const i = +getComputedStyle(e).opacity;
-  return {
-    delay: a,
-    duration: n,
-    easing: s,
-    css: o => `opacity: ${o*i}`
+function D(e, t) {
+  g(t, !0);
+  let a = E(t, "size", 3, "default"),
+    b = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+  var s = L();
+  _(s, () => ({
+    ...b,
+    class: `flex items-center gap-1.5 ${t.class??""}`
+  }));
+  var l = w(s);
+  let i;
+  var p = v(l, 2);
+  {
+    var u = o => {
+      var n = B();
+      let d;
+      f(() => d = r(n, 1, "text-base-content font-pixel", null, d, {
+        "text-4xl": a() === "default",
+        "text-5xl": a() === "lg" || a() === "medium"
+      })), A(o, n)
+    };
+    h(p, o => {
+      t.hasText && o(u)
+    })
   }
-}
-
-function w(e, {
-  delay: a = 0,
-  duration: n = 400,
-  easing: s = h,
-  axis: i = "y"
-} = {}) {
-  const o = getComputedStyle(e),
-    c = +o.opacity,
-    p = i === "y" ? "height" : "width",
-    l = parseFloat(o[p]),
-    r = i === "y" ? ["top", "bottom"] : ["left", "right"],
-    d = r.map(t => `${t[0].toUpperCase()}${t.slice(1)}`),
-    y = parseFloat(o[`padding${d[0]}`]),
-    u = parseFloat(o[`padding${d[1]}`]),
-    _ = parseFloat(o[`margin${d[0]}`]),
-    f = parseFloat(o[`margin${d[1]}`]),
-    $ = parseFloat(o[`border${d[0]}Width`]),
-    g = parseFloat(o[`border${d[1]}Width`]);
-  return {
-    delay: a,
-    duration: n,
-    easing: s,
-    css: t => `overflow: hidden;opacity: ${Math.min(t*20,1)*c};${p}: ${t*l}px;padding-${r[0]}: ${t*y}px;padding-${r[1]}: ${t*u}px;margin-${r[0]}: ${t*_}px;margin-${r[1]}: ${t*f}px;border-${r[0]}-width: ${t*$}px;border-${r[1]}-width: ${t*g}px;min-${p}: 0`
-  }
+  y(s), f(() => {
+    i = r(l, 1, "pixelated h-auto shrink-0", null, i, {
+      "w-4": a() === "small",
+      "w-10": a() === "default",
+      "w-16": a() === "medium",
+      "w-20": a() === "lg"
+    }), x(l, "src", S)
+  }), A(e, s), m()
 }
 export {
-  m as f, w as s
+  D as L
 };

@@ -1,32 +1,95 @@
+import "./Cz-os3rt.js";
+import "./CFVvlG7S.js";
 import {
-  g as d
-} from "./BIwJezZo.js";
+  p as T,
+  f as m,
+  d as l,
+  r as f,
+  t as p,
+  b as c,
+  c as I,
+  s as g,
+  y as _,
+  z as r
+} from "./C_uavZQJ.js";
+import {
+  s as u
+} from "./DMUmq8Bg.js";
+import {
+  i as D
+} from "./ChKIMXcl.js";
+import {
+  a as k
+} from "./CiokZgy7.js";
+import {
+  i as z
+} from "./B81Gw3VZ.js";
+import {
+  p as v
+} from "./C4tLH6MW.js";
+import {
+  R as y,
+  a as w
+} from "./COezPv-Y.js";
+import {
+  L as h
+} from "./DfPiLG8b.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "bf585c41-8158-4483-ac0f-660c137c9fc1", e._sentryDebugIdIdentifier = "sentry-dbid-bf585c41-8158-4483-ac0f-660c137c9fc1")
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
-const n = () => "Reddit",
-  i = () => "Reddit",
-  u = () => "Reddit",
-  c = () => "Reddit",
-  f = () => "Reddit",
-  o = () => "Reddit",
-  s = () => "Reddit",
-  l = () => "Reddit",
-  _ = () => "Reddit",
-  a = () => "Reddit",
-  R = () => "Reddit",
-  b = () => "Reddit",
-  g = (e = {}, r = {}) => {
-    const t = r.locale ?? d();
-    return t === "en" ? n() : t === "pt" ? i() : t === "ch" ? u() : t === "de" ? c() : t === "es" ? f() : t === "fr" ? o() : t === "it" ? s() : t === "jp" ? l() : t === "pl" ? _() : t === "ru" ? a() : t === "uk" ? R() : b()
-  };
+try {
+  (function() {
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "4c7dddfe-4c26-4ab5-9599-1030213c9737", e._sentryDebugIdIdentifier = "sentry-dbid-4c7dddfe-4c26-4ab5-9599-1030213c9737")
+  })()
+} catch {}
+var A = m('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
+  N = m('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
+  O = m("<span><!></span>");
+
+function G(e, t) {
+  T(t, !1);
+  let a = v(t, "role", 8),
+    x = v(t, "big", 8, !1);
+  z();
+  var n = O();
+  let b;
+  var E = l(n);
+  {
+    var R = s => {
+        var o = A(),
+          i = l(o);
+        h(i, {
+          size: "none"
+        });
+        var d = g(i, 1, !0);
+        f(o), p(() => u(d, (r(y), r(a()), _(() => y[a()])))), c(s, o)
+      },
+      L = s => {
+        var o = N(),
+          i = l(o);
+        h(i, {
+          size: "small"
+        });
+        var d = g(i, 1, !0);
+        f(o), p(() => u(d, (r(w), r(a()), _(() => w[a()])))), c(s, o)
+      };
+    D(E, s => {
+      x() ? s(R) : s(L, !1)
+    })
+  }
+  f(n), p(() => b = k(n, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center whitespace-nowrap pt-0.5 font-semibold leading-none shadow", null, b, {
+    "badge-info": a() === "admin",
+    "badge-secondary": a() === "moderator" || a() == "global_moderator",
+    "badge-warning": a() === "community_leader"
+  })), c(e, n), I()
+}
 export {
-  g as r
+  G as R
 };

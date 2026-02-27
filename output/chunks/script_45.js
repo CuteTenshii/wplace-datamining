@@ -1,32 +1,53 @@
 import {
   g as t
-} from "./BIwJezZo.js";
+} from "./BERb6pDx.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "63f7c335-11b0-44dc-8251-4ab0ac9f111e", e._sentryDebugIdIdentifier = "sentry-dbid-63f7c335-11b0-44dc-8251-4ab0ac9f111e")
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
-const o = () => "Copy",
-  c = () => "Copiar",
-  u = () => "复制",
-  i = () => "Kopieren",
-  p = () => "Copiar",
-  s = () => "Copier",
-  f = () => "Copia",
-  d = () => "コピー",
-  y = () => "Kopiuj",
-  a = () => "Копировать",
-  l = () => "Копіювати",
-  _ = () => "Sao chép",
-  g = (e = {}, n = {}) => {
-    const r = n.locale ?? t();
-    return r === "en" ? o() : r === "pt" ? c() : r === "ch" ? u() : r === "de" ? i() : r === "es" ? p() : r === "fr" ? s() : r === "it" ? f() : r === "jp" ? d() : r === "pl" ? y() : r === "ru" ? a() : r === "uk" ? l() : _()
+try {
+  (function() {
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      n = new r.Error().stack;
+    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "7deb3759-e2f1-46a1-a938-a0fe039d7679", r._sentryDebugIdIdentifier = "sentry-dbid-7deb3759-e2f1-46a1-a938-a0fe039d7679")
+  })()
+} catch {}
+const u = () => "Members",
+  s = () => "Membros",
+  o = () => "成员",
+  i = () => "Mitglieder",
+  f = () => "Miembros",
+  c = () => "Membres",
+  l = () => "Membri",
+  a = () => "メンバー",
+  d = () => "Członkowie",
+  p = () => "Участники",
+  b = () => "Учасники",
+  m = () => "Thành viên",
+  J = (r = {}, n = {}) => {
+    const e = n.locale ?? t();
+    return e === "en" ? u() : e === "pt" ? s() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? f() : e === "fr" ? c() : e === "it" ? l() : e === "jp" ? a() : e === "pl" ? d() : e === "ru" ? p() : e === "uk" ? b() : m()
+  },
+  y = () => "Player",
+  _ = () => "Jogador",
+  g = () => "玩家",
+  h = () => "Spieler",
+  w = () => "Jugador",
+  k = () => "Joueur",
+  M = () => "Giocatore",
+  T = () => "プレイヤー",
+  v = () => "Gracz",
+  E = () => "Игрок",
+  I = () => "Гравець",
+  j = () => "Người chơi",
+  S = (r = {}, n = {}) => {
+    const e = n.locale ?? t();
+    return e === "en" ? y() : e === "pt" ? _() : e === "ch" ? g() : e === "de" ? h() : e === "es" ? w() : e === "fr" ? k() : e === "it" ? M() : e === "jp" ? T() : e === "pl" ? v() : e === "ru" ? E() : e === "uk" ? I() : j()
   };
 export {
-  g as c
+  J as m, S as p
 };

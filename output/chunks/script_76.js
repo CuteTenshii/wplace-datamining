@@ -1,35 +1,41 @@
-import "./BIwJezZo.js";
+import "./Cz-os3rt.js";
 import {
-  a as r,
-  g as a,
-  m as t,
-  d as s,
-  u as o
-} from "./BrI_-UPT.js";
+  A as r,
+  b as d
+} from "./C_uavZQJ.js";
+import {
+  f as s
+} from "./CiokZgy7.js";
+import {
+  r as f
+} from "./C4tLH6MW.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var d = new e.Error().stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "bb24ee29-1e07-4729-b200-0e8942ffe90f", e._sentryDebugIdIdentifier = "sentry-dbid-bb24ee29-1e07-4729-b200-0e8942ffe90f")
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
-const f = {
-    user: o(),
-    community_leader: "Disc. Mod",
-    moderator: "MOD",
-    global_moderator: "GM",
-    admin: "Admin"
-  },
-  m = {
-    user: o(),
-    community_leader: s(),
-    moderator: t(),
-    global_moderator: a(),
-    admin: r()
-  };
+try {
+  (function() {
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      o = new e.Error().stack;
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "18673b34-7157-48c5-9384-495bec554404", e._sentryDebugIdIdentifier = "sentry-dbid-18673b34-7157-48c5-9384-495bec554404")
+  })()
+} catch {}
+var i = r('<svg><path d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"></path></svg>');
+
+function c(e, o) {
+  let n = f(o, ["$$slots", "$$events", "$$legacy"]);
+  var t = i();
+  s(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...n
+  })), d(e, t)
+}
 export {
-  m as R, f as a
+  c as C
 };

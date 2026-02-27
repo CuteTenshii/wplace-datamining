@@ -1,32 +1,37 @@
 import {
   g as t
-} from "./BIwJezZo.js";
+} from "./BERb6pDx.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "1e93dc64-ec27-4951-9b91-00817e081e2b", r._sentryDebugIdIdentifier = "sentry-dbid-1e93dc64-ec27-4951-9b91-00817e081e2b")
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
-const d = () => "Leaderboard",
-  a = () => "Ranking",
-  o = () => "排行榜",
-  s = () => "Bestenliste",
-  u = () => "Clasificación",
-  i = () => "Classement",
-  l = () => "Classifica",
-  c = () => "ランキング",
-  b = () => "Ranking",
-  f = () => "Таблица лидеров",
-  _ = () => "Таблиця лідерів",
-  g = () => "Bảng xếp hạng",
-  y = (r = {}, n = {}) => {
-    const e = n.locale ?? t();
-    return e === "en" ? d() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? s() : e === "es" ? u() : e === "fr" ? i() : e === "it" ? l() : e === "jp" ? c() : e === "pl" ? b() : e === "ru" ? f() : e === "uk" ? _() : g()
+try {
+  (function() {
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "8d7de972-68a4-48d9-81b1-8b33885572d7", n._sentryDebugIdIdentifier = "sentry-dbid-8d7de972-68a4-48d9-81b1-8b33885572d7")
+  })()
+} catch {}
+const l = () => "Alliances",
+  i = () => "Alianças",
+  a = () => "联盟",
+  s = () => "Allianzen",
+  c = () => "Alianzas",
+  o = () => "Alliances",
+  u = () => "Alleanze",
+  d = () => "アライアンス",
+  f = () => "Sojusze",
+  b = () => "Альянсы",
+  p = () => "Альянси",
+  _ = () => "Các liên minh",
+  g = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? l() : e === "pt" ? i() : e === "ch" ? a() : e === "de" ? s() : e === "es" ? c() : e === "fr" ? o() : e === "it" ? u() : e === "jp" ? d() : e === "pl" ? f() : e === "ru" ? b() : e === "uk" ? p() : _()
   };
 export {
-  y as l
+  g as a
 };

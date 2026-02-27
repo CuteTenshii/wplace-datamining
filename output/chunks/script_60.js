@@ -1,48 +1,66 @@
+import "./Cz-os3rt.js";
 import {
-  g as s
-} from "./BIwJezZo.js";
+  h as g,
+  a as p,
+  b as n,
+  A as a
+} from "./C_uavZQJ.js";
+import {
+  i as b
+} from "./ChKIMXcl.js";
+import {
+  f as s
+} from "./CiokZgy7.js";
+import {
+  r as c
+} from "./C4tLH6MW.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "64bdeb03-6475-42ba-8f82-6d42b2713838", r._sentryDebugIdIdentifier = "sentry-dbid-64bdeb03-6475-42ba-8f82-6d42b2713838")
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
-const t = () => "Users banned successfully",
-  u = () => "Usuários banidos com sucesso",
-  o = () => "用户已成功封禁",
-  i = () => "Benutzer erfolgreich gebannt",
-  c = () => "Usuarios baneados correctamente",
-  d = () => "Utilisateurs bannis avec succès",
-  a = () => "Utenti bannati con successo",
-  _ = () => "ユーザーをBANしました。",
-  f = () => "Użytkownicy zostali pomyślnie zbanowani",
-  b = () => "Пользователи успешно забанены",
-  l = () => "Користувачів успішно заблоковано",
-  m = () => "Đã cấm người dùng thành công",
-  T = (r = {}, n = {}) => {
-    const e = n.locale ?? s();
-    return e === "en" ? t() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? d() : e === "it" ? a() : e === "jp" ? _() : e === "pl" ? f() : e === "ru" ? b() : e === "uk" ? l() : m()
-  },
-  p = () => "Users timeouted successfully",
-  g = () => "Usuários suspensos com sucesso",
-  y = () => "用户已成功禁言",
-  h = () => "Benutzer erfolgreich mit Timeout belegt",
-  U = () => "Usuarios suspendidos correctamente",
-  w = () => "Utilisateurs suspendus avec succès",
-  k = () => "Utenti sospesi con successo",
-  z = () => "ユーザーをタイムアウトしました。",
-  v = () => "Użytkownicy zostali pomyślnie zawieszeni",
-  E = () => "Пользователям успешно выдан тайм-аут",
-  I = () => "Користувачам успішно призначено тайм-аут",
-  j = () => "Đã tạm khóa người dùng thành công",
-  B = (r = {}, n = {}) => {
-    const e = n.locale ?? s();
-    return e === "en" ? p() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? h() : e === "es" ? U() : e === "fr" ? w() : e === "it" ? k() : e === "jp" ? z() : e === "pl" ? v() : e === "ru" ? E() : e === "uk" ? I() : j()
-  };
+try {
+  (function() {
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      o = new e.Error().stack;
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "8bc293d0-1d07-4db8-b3a5-5ef198626ee0", e._sentryDebugIdIdentifier = "sentry-dbid-8bc293d0-1d07-4db8-b3a5-5ef198626ee0")
+  })()
+} catch {}
+var h = a('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
+  w = a('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
+
+function q(e, o) {
+  let d = c(o, ["$$slots", "$$events", "$$legacy", "filled"]);
+  var f = g(),
+    i = p(f);
+  {
+    var l = t => {
+        var r = h();
+        s(r, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...d
+        })), n(t, r)
+      },
+      v = t => {
+        var r = w();
+        s(r, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...d
+        })), n(t, r)
+      };
+    b(i, t => {
+      o.filled ? t(l) : t(v, !1)
+    })
+  }
+  n(e, f)
+}
 export {
-  B as a, T as u
+  q as C
 };

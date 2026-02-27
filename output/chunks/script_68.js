@@ -1,32 +1,37 @@
 import {
   g as t
-} from "./BIwJezZo.js";
+} from "./BERb6pDx.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "dd0db09d87e18c857d845e6560045af9b8610366"
-    };
-    var e = new n.Error().stack;
-    e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "555d803c-dfac-4d48-b1e9-55a3f0927340", n._sentryDebugIdIdentifier = "sentry-dbid-555d803c-dfac-4d48-b1e9-55a3f0927340")
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
+    }
   } catch {}
 })();
-const o = () => "Confirm",
-  f = () => "Confirmar",
-  i = () => "确认",
-  c = () => "Bestätigen",
-  u = () => "Confirmar",
-  s = () => "Confirmer",
-  d = () => "Conferma",
-  a = () => "確認",
-  m = () => "Potwierdź",
-  l = () => "Подтвердить",
-  _ = () => "Підтвердити",
-  b = () => "Xác nhận",
-  g = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? o() : r === "pt" ? f() : r === "ch" ? i() : r === "de" ? c() : r === "es" ? u() : r === "fr" ? s() : r === "it" ? d() : r === "jp" ? a() : r === "pl" ? m() : r === "ru" ? l() : r === "uk" ? _() : b()
+try {
+  (function() {
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      n = new r.Error().stack;
+    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "b4ff575e-d7a2-4f76-bf89-beb0a499b1b2", r._sentryDebugIdIdentifier = "sentry-dbid-b4ff575e-d7a2-4f76-bf89-beb0a499b1b2")
+  })()
+} catch {}
+const i = () => "Preview",
+  f = () => "Prévia",
+  o = () => "预览",
+  u = () => "Vorschau",
+  d = () => "Vista previa",
+  s = () => "Aperçu",
+  p = () => "Anteprima",
+  c = () => "プレビュー",
+  a = () => "Podgląd",
+  l = () => "Предпросмотр",
+  b = () => "Попередній перегляд",
+  w = () => "Xem trước",
+  _ = (r = {}, n = {}) => {
+    const e = n.locale ?? t();
+    return e === "en" ? i() : e === "pt" ? f() : e === "ch" ? o() : e === "de" ? u() : e === "es" ? d() : e === "fr" ? s() : e === "it" ? p() : e === "jp" ? c() : e === "pl" ? a() : e === "ru" ? l() : e === "uk" ? b() : w()
   };
 export {
-  g as c
+  _ as p
 };
