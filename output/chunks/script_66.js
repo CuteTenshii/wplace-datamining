@@ -1,36 +1,31 @@
 import {
-  g as r
-} from "./DvwOtY4M.js";
+  g as a
+} from "./sPnE0boO.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
-    }
+      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+    };
+    var r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "ffe8b5ce-112e-4e22-9d99-575b1568dd07", n._sentryDebugIdIdentifier = "sentry-dbid-ffe8b5ce-112e-4e22-9d99-575b1568dd07")
   } catch {}
 })();
-try {
-  (function() {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      a = new n.Error().stack;
-    a && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[a] = "dbe4153e-51b8-49ec-99c6-2b9751d8a5e4", n._sentryDebugIdIdentifier = "sentry-dbid-dbe4153e-51b8-49ec-99c6-2b9751d8a5e4")
-  })()
-} catch {}
 const t = () => "Ban appeal",
-  o = () => "Revisão de banimento",
-  p = () => "封禁申诉",
-  i = () => "Bann-Einspruch",
-  u = () => "Apelación de ban",
-  l = () => "Recours de bannissement",
+  p = () => "Revisão de banimento",
+  o = () => "封禁申诉",
+  u = () => "Bann-Einspruch",
+  s = () => "Apelación de ban",
+  i = () => "Recours de bannissement",
   d = () => "Ricorso contro il ban",
-  s = () => "BANの異議申立て",
-  b = () => "Odwołanie od bana",
-  c = () => "Апелляция на бан",
+  b = () => "BANの異議申立て",
+  c = () => "Odwołanie od bana",
+  l = () => "Апелляция на бан",
   f = () => "Апеляція на бан",
   _ = () => "Kháng cáo lệnh cấm",
-  y = (n = {}, a = {}) => {
-    const e = a.locale ?? r();
-    return e === "en" ? t() : e === "pt" ? o() : e === "ch" ? p() : e === "de" ? i() : e === "es" ? u() : e === "fr" ? l() : e === "it" ? d() : e === "jp" ? s() : e === "pl" ? b() : e === "ru" ? c() : e === "uk" ? f() : _()
+  y = (n = {}, r = {}) => {
+    const e = r.locale ?? a();
+    return e === "en" ? t() : e === "pt" ? p() : e === "ch" ? o() : e === "de" ? u() : e === "es" ? s() : e === "fr" ? i() : e === "it" ? d() : e === "jp" ? b() : e === "pl" ? c() : e === "ru" ? l() : e === "uk" ? f() : _()
   };
 export {
   y as b

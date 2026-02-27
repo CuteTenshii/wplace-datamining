@@ -1,36 +1,31 @@
 import {
-  g as d
-} from "./DvwOtY4M.js";
+  g as t
+} from "./sPnE0boO.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
-    }
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+    };
+    var n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "9e1c69b5-b723-411d-98e1-8b15a711bd6c", e._sentryDebugIdIdentifier = "sentry-dbid-9e1c69b5-b723-411d-98e1-8b15a711bd6c")
   } catch {}
 })();
-try {
-  (function() {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "b98ef8da-2454-4f67-9269-74b924e89c0b", r._sentryDebugIdIdentifier = "sentry-dbid-b98ef8da-2454-4f67-9269-74b924e89c0b")
-  })()
-} catch {}
-const t = () => "Dashboard",
-  o = () => "Painel",
-  a = () => "控制台",
+const d = () => "Dashboard",
+  a = () => "Painel",
+  o = () => "控制台",
   s = () => "Dashboard",
   u = () => "Panel",
-  f = () => "Tableau de bord",
+  b = () => "Tableau de bord",
   i = () => "Pannello",
-  b = () => "ダッシュボード",
-  l = () => "Panel",
-  c = () => "Панель",
+  c = () => "ダッシュボード",
+  f = () => "Panel",
+  l = () => "Панель",
   h = () => "Панель",
-  p = () => "Bảng điều khiển",
-  g = (r = {}, n = {}) => {
-    const e = n.locale ?? d();
-    return e === "en" ? t() : e === "pt" ? o() : e === "ch" ? a() : e === "de" ? s() : e === "es" ? u() : e === "fr" ? f() : e === "it" ? i() : e === "jp" ? b() : e === "pl" ? l() : e === "ru" ? c() : e === "uk" ? h() : p()
+  _ = () => "Bảng điều khiển",
+  g = (e = {}, n = {}) => {
+    const r = n.locale ?? t();
+    return r === "en" ? d() : r === "pt" ? a() : r === "ch" ? o() : r === "de" ? s() : r === "es" ? u() : r === "fr" ? b() : r === "it" ? i() : r === "jp" ? c() : r === "pl" ? f() : r === "ru" ? l() : r === "uk" ? h() : _()
   };
 export {
   g as d

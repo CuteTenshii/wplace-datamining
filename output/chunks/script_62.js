@@ -1,66 +1,74 @@
-import "./DfSPqPjB.js";
+import "./D_QYbpqW.js";
 import {
-  h as g,
-  a as p,
-  b as f,
-  A as d
-} from "./BX08WKHH.js";
+  p as u,
+  t as d,
+  a as n,
+  b,
+  c,
+  d as v,
+  s as _,
+  r as w
+} from "./C3nPqK5x.js";
 import {
-  i as b
-} from "./WtIPnxxX.js";
+  i as h
+} from "./ajdkTjia.js";
 import {
-  f as s
-} from "./D1NSdIK5.js";
+  f as x,
+  a as f,
+  s as E
+} from "./kg9Z0q_v.js";
 import {
-  r as c
-} from "./BdjyGa6-.js";
+  p as y,
+  r as S
+} from "./CR98XY6P.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
-    }
+      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+    };
+    var a = new e.Error().stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "af11b4e2-e417-45de-97d7-26e805a1777c", e._sentryDebugIdIdentifier = "sentry-dbid-af11b4e2-e417-45de-97d7-26e805a1777c")
   } catch {}
 })();
-try {
-  (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      o = new e.Error().stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "609563da-9e18-427a-bda0-4ef967a4c70b", e._sentryDebugIdIdentifier = "sentry-dbid-609563da-9e18-427a-bda0-4ef967a4c70b")
-  })()
-} catch {}
-var h = d('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
-  w = d('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
+const B = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
+var L = c("<span>wplace</span>"),
+  R = c('<div><img alt="Wplace logo"/> <!></div>');
 
-function q(e, o) {
-  let r = c(o, ["$$slots", "$$events", "$$legacy", "filled"]);
-  var n = g(),
-    i = p(n);
+function D(e, a) {
+  u(a, !0);
+  let t = y(a, "size", 3, "default"),
+    p = S(a, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+  var s = R();
+  x(s, () => ({
+    ...p,
+    class: `flex items-center gap-1.5 ${a.class??""}`
+  }));
+  var l = v(s);
+  let o;
+  var g = _(l, 2);
   {
-    var l = t => {
-        var a = h();
-        s(a, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...r
-        })), f(t, a)
-      },
-      v = t => {
-        var a = w();
-        s(a, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...r
-        })), f(t, a)
-      };
-    b(i, t => {
-      o.filled ? t(l) : t(v, !1)
+    var m = A => {
+      var r = L();
+      let i;
+      d(() => i = f(r, 1, "text-base-content font-pixel", null, i, {
+        "text-4xl": t() === "default",
+        "text-5xl": t() === "lg" || t() === "medium"
+      })), n(A, r)
+    };
+    h(g, A => {
+      a.hasText && A(m)
     })
   }
-  f(e, n)
+  w(s), d(() => {
+    o = f(l, 1, "pixelated h-auto shrink-0", null, o, {
+      "w-4": t() === "small",
+      "w-10": t() === "default",
+      "w-16": t() === "medium",
+      "w-20": t() === "lg"
+    }), E(l, "src", B)
+  }), n(e, s), b()
 }
 export {
-  q as C
+  D as L
 };

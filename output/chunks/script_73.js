@@ -2,18 +2,13 @@
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
-    }
+      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+    };
+    var o = new e.Error().stack;
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "c89b230e-4564-4099-8384-da484b251c4f", e._sentryDebugIdIdentifier = "sentry-dbid-c89b230e-4564-4099-8384-da484b251c4f")
   } catch {}
 })();
-try {
-  (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      o = new e.Error().stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "c89b230e-4564-4099-8384-da484b251c4f", e._sentryDebugIdIdentifier = "sentry-dbid-c89b230e-4564-4099-8384-da484b251c4f")
-  })()
-} catch {}
-const t = [{
+const a = [{
   version: "1.0.0",
   title: "Welcome to WPlace!",
   markdown: `## Initial release
@@ -96,5 +91,5 @@ This patch focuses on interface stability across devices and a better moderation
 - Delivered multiple fixes and improvements to the staff moderation screen`
 }];
 export {
-  t as p
+  a as p
 };

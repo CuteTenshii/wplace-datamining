@@ -1,37 +1,32 @@
 import {
-  g as r
-} from "./DvwOtY4M.js";
+  g as t
+} from "./sPnE0boO.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
-    }
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+    };
+    var e = new r.Error().stack;
+    e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "dfe69cb2-8751-4dcb-a10b-7c55004c903c", r._sentryDebugIdIdentifier = "sentry-dbid-dfe69cb2-8751-4dcb-a10b-7c55004c903c")
   } catch {}
 })();
-try {
-  (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "bce39049-6b42-4b6c-adf5-3d5097a65b7e", e._sentryDebugIdIdentifier = "sentry-dbid-bce39049-6b42-4b6c-adf5-3d5097a65b7e")
-  })()
-} catch {}
-const d = () => "Banned",
-  a = () => "Banido",
-  o = () => "已封禁",
-  u = () => "Gebannt",
-  f = () => "Baneado",
-  b = () => "Banni",
-  i = () => "Bannato",
-  s = () => "BAN済み",
-  c = () => "Zbanowany",
-  l = () => "Забанен",
-  p = () => "Заблоковано",
-  _ = () => "Đã bị cấm",
-  g = (e = {}, t = {}) => {
-    const n = t.locale ?? r();
-    return n === "en" ? d() : n === "pt" ? a() : n === "ch" ? o() : n === "de" ? u() : n === "es" ? f() : n === "fr" ? b() : n === "it" ? i() : n === "jp" ? s() : n === "pl" ? c() : n === "ru" ? l() : n === "uk" ? p() : _()
+const u = () => "Unban",
+  a = () => "Desbanir",
+  b = () => "解封",
+  c = () => "Entbannen",
+  s = () => "Desbanear",
+  o = () => "Débannir",
+  i = () => "Unban",
+  f = () => "BANを解除",
+  d = () => "Odbanuj",
+  l = () => "Разбанить",
+  _ = () => "Розбанити",
+  p = () => "Gỡ cấm",
+  y = (r = {}, e = {}) => {
+    const n = e.locale ?? t();
+    return n === "en" ? u() : n === "pt" ? a() : n === "ch" ? b() : n === "de" ? c() : n === "es" ? s() : n === "fr" ? o() : n === "it" ? i() : n === "jp" ? f() : n === "pl" ? d() : n === "ru" ? l() : n === "uk" ? _() : p()
   };
 export {
-  g as b
+  y as u
 };

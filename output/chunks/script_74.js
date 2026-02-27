@@ -1,95 +1,90 @@
-import "./DfSPqPjB.js";
-import "./CJA2c4gL.js";
+import "./D_QYbpqW.js";
+import "./CNabPtHD.js";
 import {
-  p as T,
-  f as m,
+  p as I,
   d as l,
   r as f,
-  t as p,
-  b,
-  c as I,
-  s as g,
-  y as _,
-  z as r
-} from "./BX08WKHH.js";
+  t as m,
+  a as p,
+  b as D,
+  s as _,
+  G as n,
+  I as g,
+  c as b
+} from "./C3nPqK5x.js";
 import {
-  s as u
-} from "./BuYVmOfq.js";
+  s as v
+} from "./BFSLG3Mv.js";
 import {
-  i as D
-} from "./WtIPnxxX.js";
+  i as T
+} from "./ajdkTjia.js";
 import {
   a as k
-} from "./D1NSdIK5.js";
+} from "./kg9Z0q_v.js";
 import {
-  i as z
-} from "./D4Udo5qv.js";
+  i as A
+} from "./ClhTAEXD.js";
 import {
-  p as v
-} from "./BdjyGa6-.js";
+  p as u
+} from "./CR98XY6P.js";
 import {
   R as y,
   a as w
-} from "./wVWz-iIE.js";
+} from "./BB9s9uSt.js";
 import {
-  L as h
-} from "./D2ykjXls.js";
+  L as x
+} from "./C5LxozVQ.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
-    }
+    var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    a.SENTRY_RELEASE = {
+      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+    };
+    var s = new a.Error().stack;
+    s && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[s] = "107087f8-ebce-4bae-933c-f13d10470464", a._sentryDebugIdIdentifier = "sentry-dbid-107087f8-ebce-4bae-933c-f13d10470464")
   } catch {}
 })();
-try {
-  (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "f074424b-cf5b-4825-b723-2e605b14616c", e._sentryDebugIdIdentifier = "sentry-dbid-f074424b-cf5b-4825-b723-2e605b14616c")
-  })()
-} catch {}
-var A = m('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
-  N = m('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
-  O = m("<span><!></span>");
+var N = b('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
+  O = b('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
+  S = b("<span><!></span>");
 
-function G(e, t) {
-  T(t, !1);
-  let a = v(t, "role", 8),
-    x = v(t, "big", 8, !1);
-  z();
-  var n = O();
+function C(a, s) {
+  I(s, !1);
+  let e = u(s, "role", 8),
+    E = u(s, "big", 8, !1);
+  A();
+  var i = S();
   let c;
-  var E = l(n);
+  var h = l(i);
   {
-    var R = s => {
-        var o = A(),
-          i = l(o);
-        h(i, {
+    var R = r => {
+        var t = N(),
+          o = l(t);
+        x(o, {
           size: "none"
         });
-        var d = g(i, 1, !0);
-        f(o), p(() => u(d, (r(y), r(a()), _(() => y[a()])))), b(s, o)
+        var d = _(o, 1, !0);
+        f(t), m(() => v(d, (n(y), n(e()), g(() => y[e()])))), p(r, t)
       },
-      L = s => {
-        var o = N(),
-          i = l(o);
-        h(i, {
+      L = r => {
+        var t = O(),
+          o = l(t);
+        x(o, {
           size: "small"
         });
-        var d = g(i, 1, !0);
-        f(o), p(() => u(d, (r(w), r(a()), _(() => w[a()])))), b(s, o)
+        var d = _(o, 1, !0);
+        f(t), m(() => v(d, (n(w), n(e()), g(() => w[e()])))), p(r, t)
       };
-    D(E, s => {
-      x() ? s(R) : s(L, !1)
+    T(h, r => {
+      E() ? r(R) : r(L, !1)
     })
   }
-  f(n), p(() => c = k(n, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center whitespace-nowrap pt-0.5 font-semibold leading-none shadow", null, c, {
-    "badge-info": a() === "admin",
-    "badge-secondary": a() === "moderator" || a() == "global_moderator",
-    "badge-warning": a() === "community_leader"
-  })), b(e, n), I()
+  f(i), m(() => c = k(i, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center whitespace-nowrap pt-0.5 font-semibold leading-none shadow", null, c, {
+    "badge-info": e() === "admin",
+    "badge-secondary": e() === "moderator" || e() == "global_moderator",
+    "badge-warning": e() === "community_leader"
+  })), p(a, i), D()
 }
 export {
-  G as R
+  C as R
 };

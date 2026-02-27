@@ -1,36 +1,31 @@
 import {
   g as o
-} from "./DvwOtY4M.js";
+} from "./sPnE0boO.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
-    }
+      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+    };
+    var n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "4a5c7974-0033-48df-9303-4bfb47be1c3c", e._sentryDebugIdIdentifier = "sentry-dbid-4a5c7974-0033-48df-9303-4bfb47be1c3c")
   } catch {}
 })();
-try {
-  (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "5e3a4020-2252-4fc6-bf0b-4092111ea40f", e._sentryDebugIdIdentifier = "sentry-dbid-5e3a4020-2252-4fc6-bf0b-4092111ea40f")
-  })()
-} catch {}
 const t = () => "Error loading",
   i = () => "Erro ao carregar",
   d = () => "加载出错",
   a = () => "Fehler beim Laden",
-  f = () => "Error al cargar",
-  l = () => "Erreur lors du chargement",
-  u = () => "Errore nel caricamento",
+  u = () => "Error al cargar",
+  c = () => "Erreur lors du chargement",
+  l = () => "Errore nel caricamento",
   s = () => "読み込みエラー",
-  c = () => "Błąd ładowania",
-  g = () => "Ошибка загрузки",
-  _ = () => "Помилка завантаження",
+  f = () => "Błąd ładowania",
+  _ = () => "Ошибка загрузки",
+  g = () => "Помилка завантаження",
   b = () => "Lỗi tải dữ liệu",
   y = (e = {}, n = {}) => {
     const r = n.locale ?? o();
-    return r === "en" ? t() : r === "pt" ? i() : r === "ch" ? d() : r === "de" ? a() : r === "es" ? f() : r === "fr" ? l() : r === "it" ? u() : r === "jp" ? s() : r === "pl" ? c() : r === "ru" ? g() : r === "uk" ? _() : b()
+    return r === "en" ? t() : r === "pt" ? i() : r === "ch" ? d() : r === "de" ? a() : r === "es" ? u() : r === "fr" ? c() : r === "it" ? l() : r === "jp" ? s() : r === "pl" ? f() : r === "ru" ? _() : r === "uk" ? g() : b()
   };
 export {
   y as e

@@ -1,22 +1,17 @@
 import {
-  l as a,
-  a as o
-} from "../chunks/DQmhlg5M.js";
+  l as t,
+  d as o
+} from "../chunks/D6vMtL5S.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
-    }
+      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+    };
+    var d = new e.Error().stack;
+    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "0cee40ed-d185-46d5-9770-fe21dc5e1f61", e._sentryDebugIdIdentifier = "sentry-dbid-0cee40ed-d185-46d5-9770-fe21dc5e1f61")
   } catch {}
 })();
-try {
-  (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      d = new e.Error().stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "080ead9e-8a65-4078-938c-ad958f945764", e._sentryDebugIdIdentifier = "sentry-dbid-080ead9e-8a65-4078-938c-ad958f945764")
-  })()
-} catch {}
 export {
-  a as load_css, o as start
+  t as load_css, o as start
 };

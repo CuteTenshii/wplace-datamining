@@ -1,37 +1,61 @@
+import "./D_QYbpqW.js";
 import {
-  g as t
-} from "./DvwOtY4M.js";
+  z as g,
+  f as p,
+  a as s,
+  J as d
+} from "./C3nPqK5x.js";
+import {
+  i as b
+} from "./ajdkTjia.js";
+import {
+  f as v
+} from "./kg9Z0q_v.js";
+import {
+  r as c
+} from "./CR98XY6P.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
-    }
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+    };
+    var r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "1c0e8d55-b03f-42d1-a6df-be2c04fa317b", e._sentryDebugIdIdentifier = "sentry-dbid-1c0e8d55-b03f-42d1-a6df-be2c04fa317b")
   } catch {}
 })();
-try {
-  (function() {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "c521f84a-2107-4ec8-8d09-ba09cdbc69c2", r._sentryDebugIdIdentifier = "sentry-dbid-c521f84a-2107-4ec8-8d09-ba09cdbc69c2")
-  })()
-} catch {}
-const d = () => "Leaderboard",
-  a = () => "Ranking",
-  o = () => "排行榜",
-  i = () => "Bestenliste",
-  l = () => "Clasificación",
-  f = () => "Classement",
-  s = () => "Classifica",
-  u = () => "ランキング",
-  c = () => "Ranking",
-  b = () => "Таблица лидеров",
-  g = () => "Таблиця лідерів",
-  p = () => "Bảng xếp hạng",
-  y = (r = {}, n = {}) => {
-    const e = n.locale ?? t();
-    return e === "en" ? d() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? l() : e === "fr" ? f() : e === "it" ? s() : e === "jp" ? u() : e === "pl" ? c() : e === "ru" ? b() : e === "uk" ? g() : p()
-  };
+var h = d('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
+  m = d('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
+
+function q(e, r) {
+  let a = c(r, ["$$slots", "$$events", "$$legacy", "filled"]);
+  var f = g(),
+    i = p(f);
+  {
+    var n = t => {
+        var o = h();
+        v(o, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...a
+        })), s(t, o)
+      },
+      l = t => {
+        var o = m();
+        v(o, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...a
+        })), s(t, o)
+      };
+    b(i, t => {
+      r.filled ? t(n) : t(l, !1)
+    })
+  }
+  s(e, f)
+}
 export {
-  y as l
+  q as C
 };

@@ -1,41 +1,32 @@
-import "./DfSPqPjB.js";
 import {
-  A as n,
-  b as d
-} from "./BX08WKHH.js";
-import {
-  f as r
-} from "./D1NSdIK5.js";
-import {
-  r as s
-} from "./BdjyGa6-.js";
+  g as t
+} from "./sPnE0boO.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
-    }
+      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+    };
+    var r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "28330452-4c28-42a6-9da5-ea3f247cb1a8", e._sentryDebugIdIdentifier = "sentry-dbid-28330452-4c28-42a6-9da5-ea3f247cb1a8")
   } catch {}
 })();
-try {
-  (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      o = new e.Error().stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "f8c0653d-c9d2-436a-9ca6-b90303e172f9", e._sentryDebugIdIdentifier = "sentry-dbid-f8c0653d-c9d2-436a-9ca6-b90303e172f9")
-  })()
-} catch {}
-var a = n('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
-
-function b(e, o) {
-  let f = s(o, ["$$slots", "$$events", "$$legacy"]);
-  var t = a();
-  r(t, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...f
-  })), d(e, t)
-}
+const a = () => "Banned",
+  d = () => "Banido",
+  u = () => "已封禁",
+  o = () => "Gebannt",
+  s = () => "Baneado",
+  i = () => "Banni",
+  b = () => "Bannato",
+  c = () => "BAN済み",
+  f = () => "Zbanowany",
+  l = () => "Забанен",
+  _ = () => "Заблоковано",
+  p = () => "Đã bị cấm",
+  g = (e = {}, r = {}) => {
+    const n = r.locale ?? t();
+    return n === "en" ? a() : n === "pt" ? d() : n === "ch" ? u() : n === "de" ? o() : n === "es" ? s() : n === "fr" ? i() : n === "it" ? b() : n === "jp" ? c() : n === "pl" ? f() : n === "ru" ? l() : n === "uk" ? _() : p()
+  };
 export {
-  b as A
+  g as b
 };

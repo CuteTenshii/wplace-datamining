@@ -1,37 +1,32 @@
 import {
   g as t
-} from "./DvwOtY4M.js";
+} from "./sPnE0boO.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
-    }
+      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+    };
+    var r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "b4aa13f6-08c7-49cd-9e53-dfbd6f6305da", n._sentryDebugIdIdentifier = "sentry-dbid-b4aa13f6-08c7-49cd-9e53-dfbd6f6305da")
   } catch {}
 })();
-try {
-  (function() {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      r = new n.Error().stack;
-    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "8d7de972-68a4-48d9-81b1-8b33885572d7", n._sentryDebugIdIdentifier = "sentry-dbid-8d7de972-68a4-48d9-81b1-8b33885572d7")
-  })()
-} catch {}
-const l = () => "Alliances",
-  i = () => "Alianças",
-  a = () => "联盟",
-  s = () => "Allianzen",
+const a = () => "Alliances",
+  l = () => "Alianças",
+  s = () => "联盟",
+  i = () => "Allianzen",
   c = () => "Alianzas",
-  o = () => "Alliances",
-  u = () => "Alleanze",
-  d = () => "アライアンス",
-  f = () => "Sojusze",
-  b = () => "Альянсы",
-  p = () => "Альянси",
-  _ = () => "Các liên minh",
-  g = (n = {}, r = {}) => {
+  u = () => "Alliances",
+  f = () => "Alleanze",
+  o = () => "アライアンス",
+  d = () => "Sojusze",
+  _ = () => "Альянсы",
+  b = () => "Альянси",
+  p = () => "Các liên minh",
+  y = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? l() : e === "pt" ? i() : e === "ch" ? a() : e === "de" ? s() : e === "es" ? c() : e === "fr" ? o() : e === "it" ? u() : e === "jp" ? d() : e === "pl" ? f() : e === "ru" ? b() : e === "uk" ? p() : _()
+    return e === "en" ? a() : e === "pt" ? l() : e === "ch" ? s() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? u() : e === "it" ? f() : e === "jp" ? o() : e === "pl" ? d() : e === "ru" ? _() : e === "uk" ? b() : p()
   };
 export {
-  g as a
+  y as a
 };

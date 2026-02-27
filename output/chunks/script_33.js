@@ -1,33 +1,32 @@
 import {
-  g as f
-} from "./DvwOtY4M.js";
+  g as t
+} from "./sPnE0boO.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
-    }
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+    };
+    var n = new r.Error().stack;
+    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "fde52f20-e9b7-4a5a-9d4e-f7e9760c9b21", r._sentryDebugIdIdentifier = "sentry-dbid-fde52f20-e9b7-4a5a-9d4e-f7e9760c9b21")
   } catch {}
 })();
-try {
-  (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "861b2fac-78cb-4dac-97f5-3669527e949c", e._sentryDebugIdIdentifier = "sentry-dbid-861b2fac-78cb-4dac-97f5-3669527e949c")
-  })()
-} catch {}
-
-function t() {
-  return f()
-}
-
-function r() {
-  return `/terms/return${t()==="pt"?"/pt":""}`
-}
-
-function o() {
-  return `/terms/terms-of-service${t()==="pt"?"/pt":""}`
-}
+const o = () => "Close",
+  s = () => "Fechar",
+  c = () => "关闭",
+  u = () => "Schließen",
+  f = () => "Cerrar",
+  i = () => "Fermer",
+  l = () => "Chiudi",
+  d = () => "閉じる",
+  a = () => "Zamknij",
+  _ = () => "Закрыть",
+  b = () => "Закрити",
+  p = () => "Đóng",
+  y = (r = {}, n = {}) => {
+    const e = n.locale ?? t();
+    return e === "en" ? o() : e === "pt" ? s() : e === "ch" ? c() : e === "de" ? u() : e === "es" ? f() : e === "fr" ? i() : e === "it" ? l() : e === "jp" ? d() : e === "pl" ? a() : e === "ru" ? _() : e === "uk" ? b() : p()
+  };
 export {
-  t as g, r, o as t
+  y as c
 };

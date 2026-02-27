@@ -1,37 +1,36 @@
+import "./D_QYbpqW.js";
 import {
-  g as t
-} from "./DvwOtY4M.js";
+  a as d,
+  J as s
+} from "./C3nPqK5x.js";
+import {
+  f as a
+} from "./kg9Z0q_v.js";
+import {
+  r as n
+} from "./CR98XY6P.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
-    }
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+    };
+    var t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "87b7ad30-b972-443a-94dd-c97c1ce33cf5", e._sentryDebugIdIdentifier = "sentry-dbid-87b7ad30-b972-443a-94dd-c97c1ce33cf5")
   } catch {}
 })();
-try {
-  (function() {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      r = new n.Error().stack;
-    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "3a050333-53db-420a-8f81-a65e0619efde", n._sentryDebugIdIdentifier = "sentry-dbid-3a050333-53db-420a-8f81-a65e0619efde")
-  })()
-} catch {}
-const o = () => "Copy",
-  c = () => "Copiar",
-  f = () => "复制",
-  i = () => "Kopieren",
-  u = () => "Copiar",
-  d = () => "Copier",
-  p = () => "Copia",
-  s = () => "コピー",
-  a = () => "Kopiuj",
-  y = () => "Копировать",
-  l = () => "Копіювати",
-  b = () => "Sao chép",
-  g = (n = {}, r = {}) => {
-    const e = r.locale ?? t();
-    return e === "en" ? o() : e === "pt" ? c() : e === "ch" ? f() : e === "de" ? i() : e === "es" ? u() : e === "fr" ? d() : e === "it" ? p() : e === "jp" ? s() : e === "pl" ? a() : e === "ru" ? y() : e === "uk" ? l() : b()
-  };
+var f = s('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
+
+function b(e, t) {
+  let o = n(t, ["$$slots", "$$events", "$$legacy"]);
+  var r = f();
+  a(r, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...o
+  })), d(e, r)
+}
 export {
-  g as c
+  b as L
 };
