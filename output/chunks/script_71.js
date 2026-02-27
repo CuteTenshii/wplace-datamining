@@ -1,37 +1,37 @@
 import {
-  g as r
-} from "./tk-xaxvS.js";
+  g as d
+} from "./DvwOtY4M.js";
 (function() {
   try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
-      id: "5813ae56f58e7333550e54b13dee572a566ecd62"
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
     }
   } catch {}
 })();
 try {
   (function() {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      d = new t.Error().stack;
-    d && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[d] = "f6c51e82-ad75-484c-a01d-9731c98e9de5", t._sentryDebugIdIdentifier = "sentry-dbid-f6c51e82-ad75-484c-a01d-9731c98e9de5")
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      n = new r.Error().stack;
+    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "b98ef8da-2454-4f67-9269-74b924e89c0b", r._sentryDebugIdIdentifier = "sentry-dbid-b98ef8da-2454-4f67-9269-74b924e89c0b")
   })()
 } catch {}
-const n = () => "Reddit",
-  i = () => "Reddit",
-  o = () => "Reddit",
-  u = () => "Reddit",
-  f = () => "Reddit",
-  s = () => "Reddit",
-  c = () => "Reddit",
-  l = () => "Reddit",
-  a = () => "Reddit",
-  p = () => "Reddit",
-  _ = () => "Reddit",
-  y = () => "Reddit",
-  g = (t = {}, d = {}) => {
-    const e = d.locale ?? r();
-    return e === "en" ? n() : e === "pt" ? i() : e === "ch" ? o() : e === "de" ? u() : e === "es" ? f() : e === "fr" ? s() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? p() : e === "uk" ? _() : y()
+const t = () => "Dashboard",
+  o = () => "Painel",
+  a = () => "控制台",
+  s = () => "Dashboard",
+  u = () => "Panel",
+  f = () => "Tableau de bord",
+  i = () => "Pannello",
+  b = () => "ダッシュボード",
+  l = () => "Panel",
+  c = () => "Панель",
+  h = () => "Панель",
+  p = () => "Bảng điều khiển",
+  g = (r = {}, n = {}) => {
+    const e = n.locale ?? d();
+    return e === "en" ? t() : e === "pt" ? o() : e === "ch" ? a() : e === "de" ? s() : e === "es" ? u() : e === "fr" ? f() : e === "it" ? i() : e === "jp" ? b() : e === "pl" ? l() : e === "ru" ? c() : e === "uk" ? h() : p()
   };
 export {
-  g as r
+  g as d
 };

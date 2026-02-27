@@ -1,37 +1,53 @@
 import {
   g as t
-} from "./tk-xaxvS.js";
+} from "./DvwOtY4M.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "5813ae56f58e7333550e54b13dee572a566ecd62"
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
     }
   } catch {}
 })();
 try {
   (function() {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "c521f84a-2107-4ec8-8d09-ba09cdbc69c2", r._sentryDebugIdIdentifier = "sentry-dbid-c521f84a-2107-4ec8-8d09-ba09cdbc69c2")
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "361009ac-bdfc-49c6-ae0b-41e743c14776", n._sentryDebugIdIdentifier = "sentry-dbid-361009ac-bdfc-49c6-ae0b-41e743c14776")
   })()
 } catch {}
-const d = () => "Leaderboard",
-  a = () => "Ranking",
-  o = () => "排行榜",
-  i = () => "Bestenliste",
-  l = () => "Clasificación",
-  s = () => "Classement",
-  u = () => "Classifica",
-  f = () => "ランキング",
-  c = () => "Ranking",
-  b = () => "Таблица лидеров",
-  g = () => "Таблиця лідерів",
-  p = () => "Bảng xếp hạng",
-  y = (r = {}, n = {}) => {
-    const e = n.locale ?? t();
-    return e === "en" ? d() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? l() : e === "fr" ? s() : e === "it" ? u() : e === "jp" ? f() : e === "pl" ? c() : e === "ru" ? b() : e === "uk" ? g() : p()
+const s = () => "Users banned successfully",
+  u = () => "Usuários banidos com sucesso",
+  o = () => "用户已成功封禁",
+  i = () => "Benutzer erfolgreich gebannt",
+  c = () => "Usuarios baneados correctamente",
+  d = () => "Utilisateurs bannis avec succès",
+  a = () => "Utenti bannati con successo",
+  f = () => "ユーザーをBANしました。",
+  _ = () => "Użytkownicy zostali pomyślnie zbanowani",
+  l = () => "Пользователи успешно забанены",
+  b = () => "Користувачів успішно заблоковано",
+  p = () => "Đã cấm người dùng thành công",
+  D = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? d() : e === "it" ? a() : e === "jp" ? f() : e === "pl" ? _() : e === "ru" ? l() : e === "uk" ? b() : p()
+  },
+  m = () => "Users timeouted successfully",
+  g = () => "Usuários suspensos com sucesso",
+  y = () => "用户已成功禁言",
+  h = () => "Benutzer erfolgreich mit Timeout belegt",
+  w = () => "Usuarios suspendidos correctamente",
+  U = () => "Utilisateurs suspendus avec succès",
+  k = () => "Utenti sospesi con successo",
+  z = () => "ユーザーをタイムアウトしました。",
+  v = () => "Użytkownicy zostali pomyślnie zawieszeni",
+  T = () => "Пользователям успешно выдан тайм-аут",
+  E = () => "Користувачам успішно призначено тайм-аут",
+  I = () => "Đã tạm khóa người dùng thành công",
+  B = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? m() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? h() : e === "es" ? w() : e === "fr" ? U() : e === "it" ? k() : e === "jp" ? z() : e === "pl" ? v() : e === "ru" ? T() : e === "uk" ? E() : I()
   };
 export {
-  y as l
+  B as a, D as u
 };

@@ -1,37 +1,41 @@
+import "./DfSPqPjB.js";
 import {
-  g as t
-} from "./tk-xaxvS.js";
+  A as n,
+  b as d
+} from "./BX08WKHH.js";
+import {
+  f as r
+} from "./D1NSdIK5.js";
+import {
+  r as s
+} from "./BdjyGa6-.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "5813ae56f58e7333550e54b13dee572a566ecd62"
+      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "4b52d08f-5fc6-4075-96a4-14dbcb10c32c", e._sentryDebugIdIdentifier = "sentry-dbid-4b52d08f-5fc6-4075-96a4-14dbcb10c32c")
+      o = new e.Error().stack;
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "f8c0653d-c9d2-436a-9ca6-b90303e172f9", e._sentryDebugIdIdentifier = "sentry-dbid-f8c0653d-c9d2-436a-9ca6-b90303e172f9")
   })()
 } catch {}
-const u = () => "Unban",
-  a = () => "Desbanir",
-  o = () => "解封",
-  f = () => "Entbannen",
-  b = () => "Desbanear",
-  i = () => "Débannir",
-  s = () => "Unban",
-  d = () => "BANを解除",
-  c = () => "Odbanuj",
-  l = () => "Разбанить",
-  p = () => "Розбанити",
-  _ = () => "Gỡ cấm",
-  g = (e = {}, r = {}) => {
-    const n = r.locale ?? t();
-    return n === "en" ? u() : n === "pt" ? a() : n === "ch" ? o() : n === "de" ? f() : n === "es" ? b() : n === "fr" ? i() : n === "it" ? s() : n === "jp" ? d() : n === "pl" ? c() : n === "ru" ? l() : n === "uk" ? p() : _()
-  };
+var a = n('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
+
+function b(e, o) {
+  let f = s(o, ["$$slots", "$$events", "$$legacy"]);
+  var t = a();
+  r(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...f
+  })), d(e, t)
+}
 export {
-  g as u
+  b as A
 };

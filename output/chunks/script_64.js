@@ -1,149 +1,127 @@
+import "./DfSPqPjB.js";
 import {
-  g as e
-} from "./tk-xaxvS.js";
+  p as j,
+  e as F,
+  g as K,
+  f as y,
+  d as r,
+  r as o,
+  s as i,
+  n as k,
+  t as x,
+  b as g,
+  c as O
+} from "./BX08WKHH.js";
+import {
+  s as n
+} from "./BuYVmOfq.js";
+import {
+  i as E
+} from "./WtIPnxxX.js";
+import {
+  s as L
+} from "./D1NSdIK5.js";
+import {
+  p as Y
+} from "./BdjyGa6-.js";
+import {
+  t as q,
+  P as z
+} from "./D_ezuiS5.js";
+import {
+  t as G
+} from "./Bcfa49nr.js";
+import "./DvwOtY4M.js";
+import {
+  b as H,
+  t as J,
+  p as Q,
+  a as V,
+  c as W,
+  d as X,
+  e as Z,
+  m as tt
+} from "./7no19ZIF.js";
+import {
+  L as et
+} from "./D2ykjXls.js";
 (function() {
   try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
-      id: "5813ae56f58e7333550e54b13dee572a566ecd62"
+    var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    a.SENTRY_RELEASE = {
+      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
     }
   } catch {}
 })();
 try {
   (function() {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      r = new t.Error().stack;
-    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "f4fd1dfe-84b9-44fc-8600-ca41ca756e41", t._sentryDebugIdIdentifier = "sentry-dbid-f4fd1dfe-84b9-44fc-8600-ca41ca756e41")
+    var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      s = new a.Error().stack;
+    s && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[s] = "ad6869a7-87c0-4463-b7a6-ebfb44cba66f", a._sentryDebugIdIdentifier = "sentry-dbid-ad6869a7-87c0-4463-b7a6-ebfb44cba66f")
   })()
 } catch {}
-const c = () => "and",
-  o = () => "e",
-  u = () => "和",
-  i = () => "und",
-  _ = () => "y",
-  a = () => "et",
-  s = () => "e",
-  f = () => "と",
-  d = () => "i",
-  l = () => "и",
-  p = () => "та",
-  y = () => "và",
-  Fn = (t = {}, r = {}) => {
-    const n = r.locale ?? e();
-    return n === "en" ? c() : n === "pt" ? o() : n === "ch" ? u() : n === "de" ? i() : n === "es" ? _() : n === "fr" ? a() : n === "it" ? s() : n === "jp" ? f() : n === "pl" ? d() : n === "ru" ? l() : n === "uk" ? p() : y()
-  },
-  h = () => "By continuing, you agree to our",
-  g = () => "Ao continuar, você concorda com nossos",
-  v = () => "继续即表示你同意我们的",
-  w = () => "Wenn du fortfährst, stimmst du unseren",
-  m = () => "Al continuar, aceptas nuestra",
-  b = () => "En continuant, vous acceptez nos",
-  k = () => "Continuando, accetti i nostri",
-  T = () => "続行すると、以下に同意したものとみなされます:",
-  j = () => "Kontynuując, akceptujesz nasze",
-  z = () => "Продолжая, вы соглашаетесь с нашими",
-  W = () => "Продовжуючи, ви погоджуєтеся з нашими",
-  C = () => "Khi tiếp tục, bạn đồng ý với",
-  Gn = (t = {}, r = {}) => {
-    const n = r.locale ?? e();
-    return n === "en" ? h() : n === "pt" ? g() : n === "ch" ? v() : n === "de" ? w() : n === "es" ? m() : n === "fr" ? b() : n === "it" ? k() : n === "jp" ? T() : n === "pl" ? j() : n === "ru" ? z() : n === "uk" ? W() : C()
-  },
-  $ = () => "Code of Conduct",
-  E = () => "Código de Conduta",
-  D = () => "行为守则",
-  I = () => "Verhaltenskodex",
-  P = () => "Código de Conducta",
-  A = () => "Code de conduite",
-  K = () => "Codice di condotta",
-  M = () => "行動規範",
-  S = () => "Kodeks postępowania",
-  x = () => "Кодекс поведения",
-  L = () => "Кодекс поведінки",
-  q = () => "Quy tắc ứng xử",
-  Jn = (t = {}, r = {}) => {
-    const n = r.locale ?? e();
-    return n === "en" ? $() : n === "pt" ? E() : n === "ch" ? D() : n === "de" ? I() : n === "es" ? P() : n === "fr" ? A() : n === "it" ? K() : n === "jp" ? M() : n === "pl" ? S() : n === "ru" ? x() : n === "uk" ? L() : q()
-  },
-  B = () => "Do you have a Wplace Twitch account?",
-  H = () => "Você tem uma conta Wplace associada à Twitch?",
-  N = () => "你有 Wplace Twitch 账号吗？",
-  R = () => "Hast du ein Wplace-Konto über Twitch?",
-  V = () => "¿Tienes una cuenta de Wplace asociada a Twitch?",
-  Q = () => "Avez-vous un compte Wplace associé à Twitch ?",
-  Y = () => "Hai un account Wplace associato a Twitch?",
-  Z = () => "WplaceのTwitch連携アカウントをお持ちですか？",
-  F = () => "Czy masz konto Wplace połączone z Twitchem?",
-  G = () => "У вас есть аккаунт Wplace, связанный с Twitch?",
-  J = () => "У вас є акаунт Wplace, повʼязаний із Twitch?",
-  O = () => "Bạn có tài khoản Wplace liên kết với Twitch không?",
-  On = (t = {}, r = {}) => {
-    const n = r.locale ?? e();
-    return n === "en" ? B() : n === "pt" ? H() : n === "ch" ? N() : n === "de" ? R() : n === "es" ? V() : n === "fr" ? Q() : n === "it" ? Y() : n === "jp" ? Z() : n === "pl" ? F() : n === "ru" ? G() : n === "uk" ? J() : O()
-  },
-  U = t => `Login with ${t.name}`,
-  X = t => `Entrar com ${t.name}`,
-  nn = t => `使用 ${t.name} 登录`,
-  tn = t => `Einloggen mit ${t.name}`,
-  rn = t => `Iniciar sesión con ${t.name}`,
-  en = t => `Se connecter avec ${t.name}`,
-  cn = t => `Accedi con ${t.name}`,
-  on = t => `${t.name}でログイン`,
-  un = t => `Zaloguj przez ${t.name}`,
-  _n = t => `Войти через ${t.name}`,
-  an = t => `Увійти через ${t.name}`,
-  sn = t => `Đăng nhập bằng ${t.name}`,
-  Un = (t, r = {}) => {
-    const n = r.locale ?? e();
-    return n === "en" ? U(t) : n === "pt" ? X(t) : n === "ch" ? nn(t) : n === "de" ? tn(t) : n === "es" ? rn(t) : n === "fr" ? en(t) : n === "it" ? cn(t) : n === "jp" ? on(t) : n === "pl" ? un(t) : n === "ru" ? _n(t) : n === "uk" ? an(t) : sn(t)
-  },
-  fn = () => "Migrate your account",
-  dn = () => "Migre sua conta",
-  ln = () => "迁移你的账号",
-  pn = () => "Konto migrieren",
-  yn = () => "Migra tu cuenta",
-  hn = () => "Migrer votre compte",
-  gn = () => "Migra il tuo account",
-  vn = () => "アカウントを移行",
-  wn = () => "Przenieś swoje konto",
-  mn = () => "Мигрировать аккаунт",
-  bn = () => "Перенести акаунт",
-  kn = () => "Di chuyển tài khoản",
-  Xn = (t = {}, r = {}) => {
-    const n = r.locale ?? e();
-    return n === "en" ? fn() : n === "pt" ? dn() : n === "ch" ? ln() : n === "de" ? pn() : n === "es" ? yn() : n === "fr" ? hn() : n === "it" ? gn() : n === "jp" ? vn() : n === "pl" ? wn() : n === "ru" ? mn() : n === "uk" ? bn() : kn()
-  },
-  Tn = () => "Privacy Policy",
-  jn = () => "Política de privacidade",
-  zn = () => "隐私政策",
-  Wn = () => "Datenschutzerklärung",
-  Cn = () => "Política de privacidad",
-  $n = () => "Politique de confidentialité",
-  En = () => "Informativa sulla privacy",
-  Dn = () => "プライバシーポリシー",
-  In = () => "Polityka prywatności",
-  Pn = () => "Политика конфиденциальности",
-  An = () => "Політика конфіденційності",
-  Kn = () => "Chính sách quyền riêng tư",
-  nt = (t = {}, r = {}) => {
-    const n = r.locale ?? e();
-    return n === "en" ? Tn() : n === "pt" ? jn() : n === "ch" ? zn() : n === "de" ? Wn() : n === "es" ? Cn() : n === "fr" ? $n() : n === "it" ? En() : n === "jp" ? Dn() : n === "pl" ? In() : n === "ru" ? Pn() : n === "uk" ? An() : Kn()
-  },
-  Mn = () => "Terms of Service",
-  Sn = () => "Termos de Serviço",
-  xn = () => "服务条款",
-  Ln = () => "Nutzungsbedingungen",
-  qn = () => "Términos de servicio",
-  Bn = () => "Conditions d’utilisation",
-  Hn = () => "Termini di servizio",
-  Nn = () => "利用規約",
-  Rn = () => "Warunki korzystania z usługi",
-  Vn = () => "Условия обслуживания",
-  Qn = () => "Умови обслуговування",
-  Yn = () => "Điều khoản dịch vụ",
-  tt = (t = {}, r = {}) => {
-    const n = r.locale ?? e();
-    return n === "en" ? Mn() : n === "pt" ? Sn() : n === "ch" ? xn() : n === "de" ? Ln() : n === "es" ? qn() : n === "fr" ? Bn() : n === "it" ? Hn() : n === "jp" ? Nn() : n === "pl" ? Rn() : n === "ru" ? Vn() : n === "uk" ? Qn() : Yn()
-  };
+var at = y('<p class="my-2 text-center text-lg"> </p>'),
+  rt = y('<p class="text-base-content/60 mt-8 text-center text-xs"> <a class="font-medium"> </a>.</p>'),
+  ot = y('<div><div class="flex justify-center py-4"><!></div> <div class="flex flex-col items-center gap-2 pt-6"><!></div> <p class="text-base-content/60 mt-2 text-center text-xs"> <a class="font-medium" target="_blank"> </a>, <a class="font-medium" href="/terms/privacy" target="_blank"> </a> <a class="font-medium" href="/terms/code-of-conduct" target="_blank"> </a>.</p> <!></div>');
+
+function vt(a, s) {
+  j(s, !0);
+  let I = Y(s, "showTwitchMigration", 3, !0);
+  F(K(q ? "" : "turnstile-disabled"));
+
+  function D(t, e) {
+    return `${z}/auth/${t}?token=${e}${s.redirect?`&r=${s.redirect}`:""}`
+  }
+  var l = ot(),
+    _ = r(l),
+    R = r(_);
+  et(R, {
+    hasText: !0
+  }), o(_);
+  var m = i(_, 2),
+    S = r(m);
+  {
+    var U = t => {
+      var e = at(),
+        c = r(e, !0);
+      o(e), x(d => n(c, d), [() => X()]), g(t, e)
+    };
+    E(S, t => {
+      t(U)
+    })
+  }
+  o(m);
+  var p = i(m, 2),
+    h = r(p),
+    f = i(h),
+    A = r(f, !0);
+  o(f);
+  var u = i(f, 2),
+    B = r(u, !0);
+  o(u);
+  var w = i(u),
+    T = i(w),
+    C = r(T, !0);
+  o(T), k(), o(p);
+  var M = i(p, 2);
+  {
+    var N = t => {
+      var e = rt(),
+        c = r(e),
+        d = i(c),
+        v = r(d, !0);
+      o(d), k(), o(e), x((b, P, $) => {
+        n(c, `${b??""} `), L(d, "href", P), n(v, $)
+      }, [() => Z(), () => D("twitch", ""), () => tt()]), g(t, e)
+    };
+    E(M, t => {
+      I() && t(N)
+    })
+  }
+  o(l), x((t, e, c, d, v, b) => {
+    n(h, `${t??""} `), L(f, "href", e), n(A, c), n(B, d), n(w, ` ${v??""} `), n(C, b)
+  }, [() => H(), G, () => J(), () => Q(), () => V(), () => W()]), g(a, l), O()
+}
 export {
-  Fn as a, Gn as b, Jn as c, On as d, Un as l, Xn as m, nt as p, tt as t
+  vt as L
 };

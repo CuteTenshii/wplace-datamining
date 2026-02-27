@@ -1,37 +1,37 @@
 import {
-  g as r
-} from "./tk-xaxvS.js";
+  aj as t,
+  m as i,
+  k as r,
+  l as s
+} from "./BX08WKHH.js";
+import {
+  B as l
+} from "./BOruZFU3.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "5813ae56f58e7333550e54b13dee572a566ecd62"
+      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
     }
   } catch {}
 })();
 try {
   (function() {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "bce39049-6b42-4b6c-adf5-3d5097a65b7e", e._sentryDebugIdIdentifier = "sentry-dbid-bce39049-6b42-4b6c-adf5-3d5097a65b7e")
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "58791f92-8da6-480b-a9e3-bd9f0e2188fb", e._sentryDebugIdIdentifier = "sentry-dbid-58791f92-8da6-480b-a9e3-bd9f0e2188fb")
   })()
 } catch {}
-const d = () => "Banned",
-  a = () => "Banido",
-  o = () => "已封禁",
-  u = () => "Gebannt",
-  f = () => "Baneado",
-  i = () => "Banni",
-  b = () => "Bannato",
-  s = () => "BAN済み",
-  c = () => "Zbanowany",
-  l = () => "Забанен",
-  p = () => "Заблоковано",
-  _ = () => "Đã bị cấm",
-  g = (e = {}, t = {}) => {
-    const n = t.locale ?? r();
-    return n === "en" ? d() : n === "pt" ? a() : n === "ch" ? o() : n === "de" ? u() : n === "es" ? f() : n === "fr" ? i() : n === "it" ? b() : n === "jp" ? s() : n === "pl" ? c() : n === "ru" ? l() : n === "uk" ? p() : _()
-  };
+
+function u(e, n, f) {
+  r && s();
+  var a = new l(e),
+    o = !t();
+  i(() => {
+    var d = n();
+    o && d !== null && typeof d == "object" && (d = {}), a.ensure(d, f)
+  })
+}
 export {
-  g as b
+  u as k
 };

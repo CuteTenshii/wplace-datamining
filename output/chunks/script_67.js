@@ -1,37 +1,37 @@
 import {
-  g as o
-} from "./tk-xaxvS.js";
+  g as t
+} from "./DvwOtY4M.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "5813ae56f58e7333550e54b13dee572a566ecd62"
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
     }
   } catch {}
 })();
 try {
   (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "5e3a4020-2252-4fc6-bf0b-4092111ea40f", e._sentryDebugIdIdentifier = "sentry-dbid-5e3a4020-2252-4fc6-bf0b-4092111ea40f")
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "f1be55e0-ef80-4068-94e4-e5552e62f5d0", n._sentryDebugIdIdentifier = "sentry-dbid-f1be55e0-ef80-4068-94e4-e5552e62f5d0")
   })()
 } catch {}
-const t = () => "Error loading",
-  i = () => "Erro ao carregar",
-  a = () => "加载出错",
-  d = () => "Fehler beim Laden",
-  l = () => "Error al cargar",
-  u = () => "Erreur lors du chargement",
-  f = () => "Errore nel caricamento",
-  s = () => "読み込みエラー",
-  c = () => "Błąd ładowania",
-  g = () => "Ошибка загрузки",
-  _ = () => "Помилка завантаження",
-  b = () => "Lỗi tải dữ liệu",
-  y = (e = {}, n = {}) => {
-    const r = n.locale ?? o();
-    return r === "en" ? t() : r === "pt" ? i() : r === "ch" ? a() : r === "de" ? d() : r === "es" ? l() : r === "fr" ? u() : r === "it" ? f() : r === "jp" ? s() : r === "pl" ? c() : r === "ru" ? g() : r === "uk" ? _() : b()
+const f = () => "Confirm",
+  o = () => "Confirmar",
+  i = () => "确认",
+  c = () => "Bestätigen",
+  u = () => "Confirmar",
+  d = () => "Confirmer",
+  s = () => "Conferma",
+  l = () => "確認",
+  a = () => "Potwierdź",
+  m = () => "Подтвердить",
+  b = () => "Підтвердити",
+  p = () => "Xác nhận",
+  g = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? f() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? c() : e === "es" ? u() : e === "fr" ? d() : e === "it" ? s() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? m() : e === "uk" ? b() : p()
   };
 export {
-  y as e
+  g as c
 };

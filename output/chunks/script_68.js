@@ -1,37 +1,37 @@
 import {
-  g as t
-} from "./tk-xaxvS.js";
+  g as o
+} from "./DvwOtY4M.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "5813ae56f58e7333550e54b13dee572a566ecd62"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
     }
   } catch {}
 })();
 try {
   (function() {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "b4ff575e-d7a2-4f76-bf89-beb0a499b1b2", r._sentryDebugIdIdentifier = "sentry-dbid-b4ff575e-d7a2-4f76-bf89-beb0a499b1b2")
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "5e3a4020-2252-4fc6-bf0b-4092111ea40f", e._sentryDebugIdIdentifier = "sentry-dbid-5e3a4020-2252-4fc6-bf0b-4092111ea40f")
   })()
 } catch {}
-const i = () => "Preview",
-  f = () => "Prévia",
-  o = () => "预览",
-  u = () => "Vorschau",
-  s = () => "Vista previa",
-  d = () => "Aperçu",
-  p = () => "Anteprima",
-  a = () => "プレビュー",
-  c = () => "Podgląd",
-  l = () => "Предпросмотр",
-  b = () => "Попередній перегляд",
-  w = () => "Xem trước",
-  _ = (r = {}, n = {}) => {
-    const e = n.locale ?? t();
-    return e === "en" ? i() : e === "pt" ? f() : e === "ch" ? o() : e === "de" ? u() : e === "es" ? s() : e === "fr" ? d() : e === "it" ? p() : e === "jp" ? a() : e === "pl" ? c() : e === "ru" ? l() : e === "uk" ? b() : w()
+const t = () => "Error loading",
+  i = () => "Erro ao carregar",
+  d = () => "加载出错",
+  a = () => "Fehler beim Laden",
+  f = () => "Error al cargar",
+  l = () => "Erreur lors du chargement",
+  u = () => "Errore nel caricamento",
+  s = () => "読み込みエラー",
+  c = () => "Błąd ładowania",
+  g = () => "Ошибка загрузки",
+  _ = () => "Помилка завантаження",
+  b = () => "Lỗi tải dữ liệu",
+  y = (e = {}, n = {}) => {
+    const r = n.locale ?? o();
+    return r === "en" ? t() : r === "pt" ? i() : r === "ch" ? d() : r === "de" ? a() : r === "es" ? f() : r === "fr" ? l() : r === "it" ? u() : r === "jp" ? s() : r === "pl" ? c() : r === "ru" ? g() : r === "uk" ? _() : b()
   };
 export {
-  _ as p
+  y as e
 };

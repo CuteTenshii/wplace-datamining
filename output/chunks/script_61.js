@@ -1,79 +1,37 @@
-import "./kZfU15Ra.js";
 import {
-  p as g,
-  f as c,
-  t as A,
-  b as d,
-  c as m,
-  s as v,
-  d as w,
-  r as y
-} from "./Bl5qixfQ.js";
-import {
-  i as h
-} from "./x9vpwYqi.js";
-import {
-  f as _,
-  a as r,
-  s as x
-} from "./CPfmVeRK.js";
-import {
-  p as E,
-  r as T
-} from "./CbYkHxcu.js";
+  g as t
+} from "./DvwOtY4M.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "5813ae56f58e7333550e54b13dee572a566ecd62"
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
     }
   } catch {}
 })();
 try {
   (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "92fecf6b-355f-4bbb-8d2c-75718e6a4266", e._sentryDebugIdIdentifier = "sentry-dbid-92fecf6b-355f-4bbb-8d2c-75718e6a4266")
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      n = new r.Error().stack;
+    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "c521f84a-2107-4ec8-8d09-ba09cdbc69c2", r._sentryDebugIdIdentifier = "sentry-dbid-c521f84a-2107-4ec8-8d09-ba09cdbc69c2")
   })()
 } catch {}
-const S = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
-var B = c("<span>wplace</span>"),
-  L = c('<div><img alt="Wplace logo"/> <!></div>');
-
-function D(e, t) {
-  g(t, !0);
-  let a = E(t, "size", 3, "default"),
-    b = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
-  var s = L();
-  _(s, () => ({
-    ...b,
-    class: `flex items-center gap-1.5 ${t.class??""}`
-  }));
-  var l = w(s);
-  let i;
-  var p = v(l, 2);
-  {
-    var u = o => {
-      var n = B();
-      let f;
-      A(() => f = r(n, 1, "text-base-content font-pixel", null, f, {
-        "text-4xl": a() === "default",
-        "text-5xl": a() === "lg" || a() === "medium"
-      })), d(o, n)
-    };
-    h(p, o => {
-      t.hasText && o(u)
-    })
-  }
-  y(s), A(() => {
-    i = r(l, 1, "pixelated h-auto shrink-0", null, i, {
-      "w-4": a() === "small",
-      "w-10": a() === "default",
-      "w-16": a() === "medium",
-      "w-20": a() === "lg"
-    }), x(l, "src", S)
-  }), d(e, s), m()
-}
+const d = () => "Leaderboard",
+  a = () => "Ranking",
+  o = () => "排行榜",
+  i = () => "Bestenliste",
+  l = () => "Clasificación",
+  f = () => "Classement",
+  s = () => "Classifica",
+  u = () => "ランキング",
+  c = () => "Ranking",
+  b = () => "Таблица лидеров",
+  g = () => "Таблиця лідерів",
+  p = () => "Bảng xếp hạng",
+  y = (r = {}, n = {}) => {
+    const e = n.locale ?? t();
+    return e === "en" ? d() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? l() : e === "fr" ? f() : e === "it" ? s() : e === "jp" ? u() : e === "pl" ? c() : e === "ru" ? b() : e === "uk" ? g() : p()
+  };
 export {
-  D as L
+  y as l
 };

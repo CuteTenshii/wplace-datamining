@@ -1,37 +1,37 @@
 import {
   g as t
-} from "./tk-xaxvS.js";
+} from "./DvwOtY4M.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "5813ae56f58e7333550e54b13dee572a566ecd62"
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "7643ba5d2918c38f2d3e1507dfee87cd2c0bfa50"
     }
   } catch {}
 })();
 try {
   (function() {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      r = new n.Error().stack;
-    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "bebb4e96-3c86-49f3-92f8-00c1c85e4e63", n._sentryDebugIdIdentifier = "sentry-dbid-bebb4e96-3c86-49f3-92f8-00c1c85e4e63")
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
+      n = new r.Error().stack;
+    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "b4ff575e-d7a2-4f76-bf89-beb0a499b1b2", r._sentryDebugIdIdentifier = "sentry-dbid-b4ff575e-d7a2-4f76-bf89-beb0a499b1b2")
   })()
 } catch {}
-const s = () => "Appeals",
-  a = () => "Apelos",
-  o = () => "申诉",
-  p = () => "Einsprüche",
-  u = () => "Apelaciones",
-  i = () => "Recours",
-  l = () => "Ricorsi",
-  f = () => "異議申立て",
-  c = () => "Odwołania",
-  d = () => "Апелляции",
-  b = () => "Апеляції",
-  _ = () => "Các kháng cáo",
-  y = (n = {}, r = {}) => {
-    const e = r.locale ?? t();
-    return e === "en" ? s() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? p() : e === "es" ? u() : e === "fr" ? i() : e === "it" ? l() : e === "jp" ? f() : e === "pl" ? c() : e === "ru" ? d() : e === "uk" ? b() : _()
+const i = () => "Preview",
+  f = () => "Prévia",
+  o = () => "预览",
+  u = () => "Vorschau",
+  d = () => "Vista previa",
+  s = () => "Aperçu",
+  p = () => "Anteprima",
+  c = () => "プレビュー",
+  a = () => "Podgląd",
+  l = () => "Предпросмотр",
+  b = () => "Попередній перегляд",
+  w = () => "Xem trước",
+  _ = (r = {}, n = {}) => {
+    const e = n.locale ?? t();
+    return e === "en" ? i() : e === "pt" ? f() : e === "ch" ? o() : e === "de" ? u() : e === "es" ? d() : e === "fr" ? s() : e === "it" ? p() : e === "jp" ? c() : e === "pl" ? a() : e === "ru" ? l() : e === "uk" ? b() : w()
   };
 export {
-  y as a
+  _ as p
 };
