@@ -1,32 +1,32 @@
 import {
   g as t
-} from "./sPnE0boO.js";
+} from "./BIwJezZo.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+      id: "dd0db09d87e18c857d845e6560045af9b8610366"
     };
-    var s = new e.Error().stack;
-    s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "50940088-af83-42e8-aba1-1a0496c32d43", e._sentryDebugIdIdentifier = "sentry-dbid-50940088-af83-42e8-aba1-1a0496c32d43")
+    var r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "28330452-4c28-42a6-9da5-ea3f247cb1a8", e._sentryDebugIdIdentifier = "sentry-dbid-28330452-4c28-42a6-9da5-ea3f247cb1a8")
   } catch {}
 })();
-const n = () => "Users",
-  u = () => "Usuários",
-  i = () => "用户",
-  o = () => "Benutzer",
-  f = () => "Usuarios",
-  c = () => "Utilisateurs",
-  d = () => "Utenti",
-  a = () => "ユーザー",
-  l = () => "Użytkownicy",
-  _ = () => "Пользователи",
-  b = () => "Користувачі",
-  p = () => "Người dùng",
-  y = (e = {}, s = {}) => {
-    const r = s.locale ?? t();
-    return r === "en" ? n() : r === "pt" ? u() : r === "ch" ? i() : r === "de" ? o() : r === "es" ? f() : r === "fr" ? c() : r === "it" ? d() : r === "jp" ? a() : r === "pl" ? l() : r === "ru" ? _() : r === "uk" ? b() : p()
+const a = () => "Banned",
+  d = () => "Banido",
+  u = () => "已封禁",
+  o = () => "Gebannt",
+  s = () => "Baneado",
+  i = () => "Banni",
+  b = () => "Bannato",
+  c = () => "BAN済み",
+  f = () => "Zbanowany",
+  l = () => "Забанен",
+  _ = () => "Заблоковано",
+  p = () => "Đã bị cấm",
+  g = (e = {}, r = {}) => {
+    const n = r.locale ?? t();
+    return n === "en" ? a() : n === "pt" ? d() : n === "ch" ? u() : n === "de" ? o() : n === "es" ? s() : n === "fr" ? i() : n === "it" ? b() : n === "jp" ? c() : n === "pl" ? f() : n === "ru" ? l() : n === "uk" ? _() : p()
   };
 export {
-  y as u
+  g as b
 };

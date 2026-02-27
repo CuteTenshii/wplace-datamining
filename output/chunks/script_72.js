@@ -1,32 +1,32 @@
 import {
   g as d
-} from "./sPnE0boO.js";
+} from "./BIwJezZo.js";
 (function() {
   try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
-      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "dd0db09d87e18c857d845e6560045af9b8610366"
     };
-    var r = new t.Error().stack;
-    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "bf585c41-8158-4483-ac0f-660c137c9fc1", t._sentryDebugIdIdentifier = "sentry-dbid-bf585c41-8158-4483-ac0f-660c137c9fc1")
+    var n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "9e1c69b5-b723-411d-98e1-8b15a711bd6c", e._sentryDebugIdIdentifier = "sentry-dbid-9e1c69b5-b723-411d-98e1-8b15a711bd6c")
   } catch {}
 })();
-const n = () => "Reddit",
-  i = () => "Reddit",
-  u = () => "Reddit",
-  c = () => "Reddit",
-  f = () => "Reddit",
-  o = () => "Reddit",
-  s = () => "Reddit",
-  a = () => "Reddit",
-  l = () => "Reddit",
-  _ = () => "Reddit",
-  R = () => "Reddit",
-  b = () => "Reddit",
-  g = (t = {}, r = {}) => {
-    const e = r.locale ?? d();
-    return e === "en" ? n() : e === "pt" ? i() : e === "ch" ? u() : e === "de" ? c() : e === "es" ? f() : e === "fr" ? o() : e === "it" ? s() : e === "jp" ? a() : e === "pl" ? l() : e === "ru" ? _() : e === "uk" ? R() : b()
+const t = () => "Dashboard",
+  a = () => "Painel",
+  o = () => "控制台",
+  s = () => "Dashboard",
+  u = () => "Panel",
+  b = () => "Tableau de bord",
+  i = () => "Pannello",
+  c = () => "ダッシュボード",
+  f = () => "Panel",
+  l = () => "Панель",
+  h = () => "Панель",
+  _ = () => "Bảng điều khiển",
+  g = (e = {}, n = {}) => {
+    const r = n.locale ?? d();
+    return r === "en" ? t() : r === "pt" ? a() : r === "ch" ? o() : r === "de" ? s() : r === "es" ? u() : r === "fr" ? b() : r === "it" ? i() : r === "jp" ? c() : r === "pl" ? f() : r === "ru" ? l() : r === "uk" ? h() : _()
   };
 export {
-  g as r
+  g as d
 };

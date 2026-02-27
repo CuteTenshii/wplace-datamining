@@ -1,32 +1,48 @@
+import "./BLuq94kG.js";
 import {
-  g as n
-} from "./sPnE0boO.js";
+  a as s,
+  J as a
+} from "./BGZizgo7.js";
+import {
+  f as n
+} from "./Bhr_YgHq.js";
+import {
+  r as l
+} from "./B9brejRs.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+      id: "dd0db09d87e18c857d845e6560045af9b8610366"
     };
-    var r = new t.Error().stack;
-    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "e65d2160-87a3-4c4c-9e7a-6fbff79400c2", t._sentryDebugIdIdentifier = "sentry-dbid-e65d2160-87a3-4c4c-9e7a-6fbff79400c2")
+    var e = new t.Error().stack;
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "b6b88bcc-1034-4072-a832-f383eb446f6b", t._sentryDebugIdIdentifier = "sentry-dbid-b6b88bcc-1034-4072-a832-f383eb446f6b")
   } catch {}
 })();
-const u = () => "Timeout",
-  o = () => "Suspender",
-  i = () => "禁言",
-  s = () => "Timeout",
-  f = () => "Suspender",
-  c = () => "Suspendre",
-  d = () => "Sospendi",
-  a = () => "タイムアウト",
-  m = () => "Zawieszenie",
-  l = () => "Тайм-аут",
-  p = () => "Тайм-аут",
-  _ = () => "Tạm khóa",
-  g = (t = {}, r = {}) => {
-    const e = r.locale ?? n();
-    return e === "en" ? u() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? s() : e === "es" ? f() : e === "fr" ? c() : e === "it" ? d() : e === "jp" ? a() : e === "pl" ? m() : e === "ru" ? l() : e === "uk" ? p() : _()
-  };
+var f = a('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
+
+function g(t, e) {
+  let r = l(e, ["$$slots", "$$events", "$$legacy"]);
+  var o = f();
+  n(o, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...r
+  })), s(t, o)
+}
+var d = a('<svg><path d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z"></path></svg>');
+
+function c(t, e) {
+  let r = l(e, ["$$slots", "$$events", "$$legacy"]);
+  var o = d();
+  n(o, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...r
+  })), s(t, o)
+}
 export {
-  g as t
+  g as G, c as T
 };

@@ -1,59 +1,32 @@
+import {
+  g as n
+} from "./BIwJezZo.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+      id: "dd0db09d87e18c857d845e6560045af9b8610366"
     };
-    var a = new e.Error().stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "318a9da5-f9ae-41c4-a6ad-1557223c6f66", e._sentryDebugIdIdentifier = "sentry-dbid-318a9da5-f9ae-41c4-a6ad-1557223c6f66")
+    var r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "e65d2160-87a3-4c4c-9e7a-6fbff79400c2", e._sentryDebugIdIdentifier = "sentry-dbid-e65d2160-87a3-4c4c-9e7a-6fbff79400c2")
   } catch {}
 })();
-const b = e => e;
-
-function h(e) {
-  const a = e - 1;
-  return a * a * a + 1
-}
-
-function m(e, {
-  delay: a = 0,
-  duration: n = 400,
-  easing: s = b
-} = {}) {
-  const i = +getComputedStyle(e).opacity;
-  return {
-    delay: a,
-    duration: n,
-    easing: s,
-    css: o => `opacity: ${o*i}`
-  }
-}
-
-function w(e, {
-  delay: a = 0,
-  duration: n = 400,
-  easing: s = h,
-  axis: i = "y"
-} = {}) {
-  const o = getComputedStyle(e),
-    c = +o.opacity,
-    p = i === "y" ? "height" : "width",
-    l = parseFloat(o[p]),
-    r = i === "y" ? ["top", "bottom"] : ["left", "right"],
-    d = r.map(t => `${t[0].toUpperCase()}${t.slice(1)}`),
-    y = parseFloat(o[`padding${d[0]}`]),
-    f = parseFloat(o[`padding${d[1]}`]),
-    u = parseFloat(o[`margin${d[0]}`]),
-    _ = parseFloat(o[`margin${d[1]}`]),
-    $ = parseFloat(o[`border${d[0]}Width`]),
-    g = parseFloat(o[`border${d[1]}Width`]);
-  return {
-    delay: a,
-    duration: n,
-    easing: s,
-    css: t => `overflow: hidden;opacity: ${Math.min(t*20,1)*c};${p}: ${t*l}px;padding-${r[0]}: ${t*y}px;padding-${r[1]}: ${t*f}px;margin-${r[0]}: ${t*u}px;margin-${r[1]}: ${t*_}px;border-${r[0]}-width: ${t*$}px;border-${r[1]}-width: ${t*g}px;min-${p}: 0`
-  }
-}
+const u = () => "Timeout",
+  o = () => "Suspender",
+  i = () => "禁言",
+  s = () => "Timeout",
+  f = () => "Suspender",
+  d = () => "Suspendre",
+  c = () => "Sospendi",
+  a = () => "タイムアウト",
+  m = () => "Zawieszenie",
+  l = () => "Тайм-аут",
+  p = () => "Тайм-аут",
+  _ = () => "Tạm khóa",
+  g = (e = {}, r = {}) => {
+    const t = r.locale ?? n();
+    return t === "en" ? u() : t === "pt" ? o() : t === "ch" ? i() : t === "de" ? s() : t === "es" ? f() : t === "fr" ? d() : t === "it" ? c() : t === "jp" ? a() : t === "pl" ? m() : t === "ru" ? l() : t === "uk" ? p() : _()
+  };
 export {
-  m as f, w as s
+  g as t
 };

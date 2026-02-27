@@ -1,28 +1,105 @@
+var m = t => {
+  throw TypeError(t)
+};
+var L = (t, e, i) => e.has(t) || m("Cannot " + i);
+var a = (t, e, i) => (L(t, e, "read from private field"), i ? i.call(t) : e.get(t)),
+  s = (t, e, i) => e.has(t) ? m("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, i);
 import {
-  m as t,
-  E as o
-} from "./C3nPqK5x.js";
-import {
-  B as i
-} from "./C6C0bLUE.js";
+  e as n,
+  i as r,
+  h as o,
+  g as p
+} from "./BGZizgo7.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    t.SENTRY_RELEASE = {
+      id: "dd0db09d87e18c857d845e6560045af9b8610366"
     };
-    var a = new e.Error().stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "363b173e-aae9-4dd0-ac26-79a9cba3308d", e._sentryDebugIdIdentifier = "sentry-dbid-363b173e-aae9-4dd0-ac26-79a9cba3308d")
+    var e = new t.Error().stack;
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "f459a571-edc9-4ec1-9bd5-0c9a9f3b7ffc", t._sentryDebugIdIdentifier = "sentry-dbid-f459a571-edc9-4ec1-9bd5-0c9a9f3b7ffc")
   } catch {}
 })();
-
-function c(e, a, ...d) {
-  var s = new i(e);
-  t(() => {
-    const n = a() ?? null;
-    s.ensure(n, n && (r => n(r, ...d)))
-  }, o)
+const E = "true",
+  S = "https://maps.wplace.live/styles/liberty",
+  U = "https://backend.wplace.live/files",
+  k = "https://backend.wplace.live",
+  w = "theme";
+var l, g, u, d, c, h, f, b;
+class y {
+  constructor() {
+    s(this, l, n(!1));
+    s(this, g, n(!1));
+    s(this, u, n(p(I())));
+    s(this, d, n(!1));
+    s(this, c, n("custom-winter"));
+    s(this, h, n(!0));
+    s(this, f, n(p(Date.now())));
+    s(this, b, n(void 0));
+    setInterval(() => {
+      o(a(this, f), Date.now(), !0)
+    }, 500), this.theme = localStorage.getItem(w), this.theme !== "dark" && this.theme !== "custom-winter" && (this.theme = "custom-winter")
+  }
+  get dropletsDialogOpen() {
+    return r(a(this, l))
+  }
+  set dropletsDialogOpen(e) {
+    o(a(this, l), e, !0)
+  }
+  get muted() {
+    return r(a(this, g))
+  }
+  set muted(e) {
+    o(a(this, g), e, !0)
+  }
+  get language() {
+    return r(a(this, u))
+  }
+  set language(e) {
+    o(a(this, u), e, !0)
+  }
+  get turnstatileLoaded() {
+    return r(a(this, d))
+  }
+  set turnstatileLoaded(e) {
+    o(a(this, d), e, !0)
+  }
+  get theme() {
+    return r(a(this, c))
+  }
+  set theme(e) {
+    o(a(this, c), e, !0), localStorage.setItem(w, e), document.documentElement.setAttribute("data-theme", e)
+  }
+  get snowflakesEnabled() {
+    return r(a(this, h))
+  }
+  set snowflakesEnabled(e) {
+    o(a(this, h), e, !0)
+  }
+  get now() {
+    return r(a(this, f))
+  }
+  get captcha() {
+    return _ ? r(a(this, b)) : {
+      token: "turnstile-disabled",
+      time: Date.now()
+    }
+  }
+  set captcha(e) {
+    o(a(this, b), e, !0)
+  }
 }
+l = new WeakMap, g = new WeakMap, u = new WeakMap, d = new WeakMap, c = new WeakMap, h = new WeakMap, f = new WeakMap, b = new WeakMap;
+const B = new y;
+
+function I() {
+  if (navigator.languages && navigator.languages.length > 0) {
+    const t = navigator.languages.find(e => e.length === 2);
+    if (t) return t
+  }
+  return (navigator.language || navigator.userLanguage || navigator.browserLanguage || "en").substring(0, 2)
+}
+const _ = E.toLowerCase() !== "false";
 export {
-  c as s
+  k as P, U as a, S as b, B as g, _ as t
 };

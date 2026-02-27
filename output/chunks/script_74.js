@@ -1,90 +1,95 @@
-import "./D_QYbpqW.js";
-import "./CNabPtHD.js";
-import {
-  p as I,
-  d as l,
-  r as f,
-  t as m,
-  a as p,
-  b as D,
-  s as _,
-  G as n,
-  I as g,
-  c as b
-} from "./C3nPqK5x.js";
-import {
-  s as v
-} from "./BFSLG3Mv.js";
-import {
-  i as T
-} from "./ajdkTjia.js";
-import {
-  a as k
-} from "./kg9Z0q_v.js";
-import {
-  i as A
-} from "./ClhTAEXD.js";
-import {
-  p as u
-} from "./CR98XY6P.js";
-import {
-  R as y,
-  a as w
-} from "./BB9s9uSt.js";
-import {
-  L as x
-} from "./C5LxozVQ.js";
 (function() {
   try {
-    var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    a.SENTRY_RELEASE = {
-      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "dd0db09d87e18c857d845e6560045af9b8610366"
     };
-    var s = new a.Error().stack;
-    s && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[s] = "107087f8-ebce-4bae-933c-f13d10470464", a._sentryDebugIdIdentifier = "sentry-dbid-107087f8-ebce-4bae-933c-f13d10470464")
+    var o = new e.Error().stack;
+    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "c89b230e-4564-4099-8384-da484b251c4f", e._sentryDebugIdIdentifier = "sentry-dbid-c89b230e-4564-4099-8384-da484b251c4f")
   } catch {}
 })();
-var N = b('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
-  O = b('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
-  S = b("<span><!></span>");
+const a = [{
+  version: "1.0.0",
+  title: "Welcome to WPlace!",
+  markdown: `## Initial release
+Welcome to WPlace, a platform to share and explore pixel art creations!`
+}, {
+  version: "1.1.0",
+  title: "✨ More Like You Update",
+  markdown: `## A New Way to Customize Your Profile
 
-function C(a, s) {
-  I(s, !1);
-  let e = u(s, "role", 8),
-    E = u(s, "big", 8, !1);
-  A();
-  var i = S();
-  let c;
-  var h = l(i);
-  {
-    var R = r => {
-        var t = N(),
-          o = l(t);
-        x(o, {
-          size: "none"
-        });
-        var d = _(o, 1, !0);
-        f(t), m(() => v(d, (n(y), n(e()), g(() => y[e()])))), p(r, t)
-      },
-      L = r => {
-        var t = O(),
-          o = l(t);
-        x(o, {
-          size: "small"
-        });
-        var d = _(o, 1, !0);
-        f(t), m(() => v(d, (n(w), n(e()), g(() => w[e()])))), p(r, t)
-      };
-    T(h, r => {
-      E() ? r(R) : r(L, !1)
-    })
-  }
-  f(i), m(() => c = k(i, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center whitespace-nowrap pt-0.5 font-semibold leading-none shadow", null, c, {
-    "badge-info": e() === "admin",
-    "badge-secondary": e() === "moderator" || e() == "global_moderator",
-    "badge-warning": e() === "community_leader"
-  })), p(a, i), D()
-}
+We have just launched a new update focused on **personalization**!
+You can now customize your profile with **profile frames**, **custom fonts**, and **name styles**, to really show off who you are to anyone who clicks on your pixels!
+
+### 🖼️ Profile Frames
+Frame your profile in style!
+- Custom borders around your profile picture - just like our Event Frames
+- Launching with **over 10 frames**
+- You can own **multiple** frames and change them whenever you want
+
+### 🔤 Custom Fonts
+Choose the perfect font for your name!
+- Launching with **5 new fonts**
+- Fonts are only applied to your name, not your ID (\`#123456\`)
+
+### 🎨 Name Styles
+Stand out with color _and_ animation!
+- Colorful effects
+- Subtle animations in select styles
+
+### 🏅 Badges
+Badges are rare items that players earn through merit. No badge can be purchased, transferred, or obtained by any means other than:
+- Participating in events
+- Completing challenging missions in the game
+- In some cases, being part of Wplace's history
+
+Badges are essentially honors for players to display on their profile. We're launching with **4 visible badges**!
+
+### 🎃 Updated Event Frames
+We have also updated the existing **Christmas** and **Halloween** event frames:
+- Properly scaled to your avatar
+- More polished with detailed designs
+- Better fit for Wplace's style
+
+### 🌙 Dark Mode
+You can rest your eyes! We're releasing the existing version of our dark mode to all users.
+- Additional themes will be added in the future
+- To apply dark mode, click your profile and find the button next to the notifications icon
+
+### 🛒 Obtaining the new styles
+The new **profile frames**, **custom fonts** and **name styles** can all be found in **the shop**, purchasable with **Droplets**!
+To apply your profile frames, custom fonts and name styles, **click your profile**, followed by the **pencil icon**.
+
+### 🚀 Future updates
+This is just the beginning of a new chapter for Wplace! You can expect more frequent updates to the website, as we have many features already in the works, and even more planned! We thank you for your suggestions and patience, as we continue working to keep up with a response that's far exceeded our expectations!
+
+The **More Like You Update** is **LIVE NOW** - go check it out and share what designs you come up with! 🎉`
+}, {
+  version: "1.1.1",
+  title: "🛠️ Quality & Cosmetics Improvements",
+  markdown: `## Quality & Cosmetics Improvements
+
+This update brings several improvements and fixes for a smoother experience:
+
+- Small bugs fixed on the frontend for both mobile and desktop
+- Fixed minor issues when equipping cosmetics
+- Cosmetics released within the last 7 days now display a "New" badge
+- 5 new frames are now available in the shop
+- New shop view to see all available frames
+- Improved consistency of texts for translations
+
+We continue to listen to community feedback to make WPlace even better!`
+}, {
+  version: "1.1.2",
+  title: "🧰 UI Fixes & Moderation Improvements",
+  markdown: `## UI Fixes & Moderation Improvements
+
+This patch focuses on interface stability across devices and a better moderation workflow:
+
+- Fixed the side menu layout where buttons could overflow outside the menu bounds
+- Fixed the pixel information layout that was displaying incorrectly on some devices
+- Delivered multiple fixes and improvements to the staff moderation screen`
+}];
 export {
-  C as R
+  a as p
 };

@@ -1,32 +1,32 @@
 import {
-  g as t
-} from "./sPnE0boO.js";
+  g as n
+} from "./BIwJezZo.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+      id: "dd0db09d87e18c857d845e6560045af9b8610366"
     };
-    var n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "996525c0-034f-472b-9f89-f66661d27508", r._sentryDebugIdIdentifier = "sentry-dbid-996525c0-034f-472b-9f89-f66661d27508")
+    var t = new r.Error().stack;
+    t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "34b20000-aaf6-474f-a087-a222515fb8cf", r._sentryDebugIdIdentifier = "sentry-dbid-34b20000-aaf6-474f-a087-a222515fb8cf")
   } catch {}
 })();
-const s = () => "Appeals",
-  a = () => "Apelos",
-  p = () => "申诉",
-  u = () => "Einsprüche",
-  o = () => "Apelaciones",
-  f = () => "Recours",
-  i = () => "Ricorsi",
-  c = () => "異議申立て",
-  l = () => "Odwołania",
-  d = () => "Апелляции",
-  _ = () => "Апеляції",
-  b = () => "Các kháng cáo",
-  y = (r = {}, n = {}) => {
-    const e = n.locale ?? t();
-    return e === "en" ? s() : e === "pt" ? a() : e === "ch" ? p() : e === "de" ? u() : e === "es" ? o() : e === "fr" ? f() : e === "it" ? i() : e === "jp" ? c() : e === "pl" ? l() : e === "ru" ? d() : e === "uk" ? _() : b()
+const i = () => "Preview",
+  u = () => "Prévia",
+  f = () => "预览",
+  o = () => "Vorschau",
+  s = () => "Vista previa",
+  p = () => "Aperçu",
+  c = () => "Anteprima",
+  a = () => "プレビュー",
+  d = () => "Podgląd",
+  v = () => "Предпросмотр",
+  w = () => "Попередній перегляд",
+  l = () => "Xem trước",
+  b = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? i() : e === "pt" ? u() : e === "ch" ? f() : e === "de" ? o() : e === "es" ? s() : e === "fr" ? p() : e === "it" ? c() : e === "jp" ? a() : e === "pl" ? d() : e === "ru" ? v() : e === "uk" ? w() : l()
   };
 export {
-  y as a
+  b as p
 };

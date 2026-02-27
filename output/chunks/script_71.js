@@ -1,32 +1,32 @@
 import {
   g as t
-} from "./sPnE0boO.js";
+} from "./BIwJezZo.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "dd0db09d87e18c857d845e6560045af9b8610366"
     };
-    var n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "9e1c69b5-b723-411d-98e1-8b15a711bd6c", e._sentryDebugIdIdentifier = "sentry-dbid-9e1c69b5-b723-411d-98e1-8b15a711bd6c")
+    var n = new r.Error().stack;
+    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "996525c0-034f-472b-9f89-f66661d27508", r._sentryDebugIdIdentifier = "sentry-dbid-996525c0-034f-472b-9f89-f66661d27508")
   } catch {}
 })();
-const d = () => "Dashboard",
-  a = () => "Painel",
-  o = () => "控制台",
-  s = () => "Dashboard",
-  u = () => "Panel",
-  b = () => "Tableau de bord",
-  i = () => "Pannello",
-  c = () => "ダッシュボード",
-  f = () => "Panel",
-  l = () => "Панель",
-  h = () => "Панель",
-  _ = () => "Bảng điều khiển",
-  g = (e = {}, n = {}) => {
-    const r = n.locale ?? t();
-    return r === "en" ? d() : r === "pt" ? a() : r === "ch" ? o() : r === "de" ? s() : r === "es" ? u() : r === "fr" ? b() : r === "it" ? i() : r === "jp" ? c() : r === "pl" ? f() : r === "ru" ? l() : r === "uk" ? h() : _()
+const s = () => "Appeals",
+  a = () => "Apelos",
+  p = () => "申诉",
+  u = () => "Einsprüche",
+  o = () => "Apelaciones",
+  i = () => "Recours",
+  f = () => "Ricorsi",
+  l = () => "異議申立て",
+  c = () => "Odwołania",
+  d = () => "Апелляции",
+  _ = () => "Апеляції",
+  b = () => "Các kháng cáo",
+  y = (r = {}, n = {}) => {
+    const e = n.locale ?? t();
+    return e === "en" ? s() : e === "pt" ? a() : e === "ch" ? p() : e === "de" ? u() : e === "es" ? o() : e === "fr" ? i() : e === "it" ? f() : e === "jp" ? l() : e === "pl" ? c() : e === "ru" ? d() : e === "uk" ? _() : b()
   };
 export {
-  g as d
+  y as a
 };

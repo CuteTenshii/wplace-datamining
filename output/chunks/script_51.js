@@ -1,32 +1,36 @@
+import "./BLuq94kG.js";
 import {
-  g as t
-} from "./sPnE0boO.js";
+  a as d,
+  J as s
+} from "./BGZizgo7.js";
+import {
+  f
+} from "./Bhr_YgHq.js";
+import {
+  r as a
+} from "./B9brejRs.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "dd0db09d87e18c857d845e6560045af9b8610366"
     };
-    var e = new r.Error().stack;
-    e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "dfe69cb2-8751-4dcb-a10b-7c55004c903c", r._sentryDebugIdIdentifier = "sentry-dbid-dfe69cb2-8751-4dcb-a10b-7c55004c903c")
+    var r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "f641d18f-4f83-44ae-829d-8dec78711c1e", e._sentryDebugIdIdentifier = "sentry-dbid-f641d18f-4f83-44ae-829d-8dec78711c1e")
   } catch {}
 })();
-const u = () => "Unban",
-  a = () => "Desbanir",
-  b = () => "解封",
-  c = () => "Entbannen",
-  s = () => "Desbanear",
-  o = () => "Débannir",
-  i = () => "Unban",
-  f = () => "BANを解除",
-  d = () => "Odbanuj",
-  l = () => "Разбанить",
-  _ = () => "Розбанити",
-  p = () => "Gỡ cấm",
-  y = (r = {}, e = {}) => {
-    const n = e.locale ?? t();
-    return n === "en" ? u() : n === "pt" ? a() : n === "ch" ? b() : n === "de" ? c() : n === "es" ? s() : n === "fr" ? o() : n === "it" ? i() : n === "jp" ? f() : n === "pl" ? d() : n === "ru" ? l() : n === "uk" ? _() : p()
-  };
+var n = s('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
+
+function g(e, r) {
+  let t = a(r, ["$$slots", "$$events", "$$legacy"]);
+  var o = n();
+  f(o, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...t
+  })), d(e, o)
+}
 export {
-  y as u
+  g as A
 };

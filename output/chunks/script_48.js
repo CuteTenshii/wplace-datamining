@@ -1,33 +1,48 @@
 import {
-  av as t,
-  m as f,
-  k as o,
-  l as i
-} from "./C3nPqK5x.js";
-import {
-  B as b
-} from "./C6C0bLUE.js";
+  g as n
+} from "./BIwJezZo.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+      id: "dd0db09d87e18c857d845e6560045af9b8610366"
     };
-    var n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "8a58b531-6cef-4071-b12a-e3c204ac7381", e._sentryDebugIdIdentifier = "sentry-dbid-8a58b531-6cef-4071-b12a-e3c204ac7381")
+    var t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "cb8a8c42-bfef-4d63-bd7e-6819d1f929eb", e._sentryDebugIdIdentifier = "sentry-dbid-cb8a8c42-bfef-4d63-bd7e-6819d1f929eb")
   } catch {}
 })();
-const c = Symbol("NaN");
-
-function u(e, n, r) {
-  o && i();
-  var d = new b(e),
-    s = !t();
-  f(() => {
-    var a = n();
-    a !== a && (a = c), s && a !== null && typeof a == "object" && (a = {}), d.ensure(a, r)
-  })
-}
+const u = () => "Members",
+  s = () => "Membros",
+  o = () => "成员",
+  i = () => "Mitglieder",
+  c = () => "Miembros",
+  f = () => "Membres",
+  l = () => "Membri",
+  a = () => "メンバー",
+  b = () => "Członkowie",
+  d = () => "Участники",
+  p = () => "Учасники",
+  m = () => "Thành viên",
+  J = (e = {}, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? u() : r === "pt" ? s() : r === "ch" ? o() : r === "de" ? i() : r === "es" ? c() : r === "fr" ? f() : r === "it" ? l() : r === "jp" ? a() : r === "pl" ? b() : r === "ru" ? d() : r === "uk" ? p() : m()
+  },
+  _ = () => "Player",
+  y = () => "Jogador",
+  g = () => "玩家",
+  h = () => "Spieler",
+  k = () => "Jugador",
+  w = () => "Joueur",
+  M = () => "Giocatore",
+  v = () => "プレイヤー",
+  E = () => "Gracz",
+  I = () => "Игрок",
+  j = () => "Гравець",
+  D = () => "Người chơi",
+  S = (e = {}, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? _() : r === "pt" ? y() : r === "ch" ? g() : r === "de" ? h() : r === "es" ? k() : r === "fr" ? w() : r === "it" ? M() : r === "jp" ? v() : r === "pl" ? E() : r === "ru" ? I() : r === "uk" ? j() : D()
+  };
 export {
-  u as k
+  J as m, S as p
 };

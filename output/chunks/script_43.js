@@ -1,32 +1,48 @@
 import {
-  g as t
-} from "./sPnE0boO.js";
+  g as n
+} from "./BIwJezZo.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "4dec865342b25be0d3f9a4de40183446fa2d5c45"
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    t.SENTRY_RELEASE = {
+      id: "dd0db09d87e18c857d845e6560045af9b8610366"
     };
-    var n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "63f7c335-11b0-44dc-8251-4ab0ac9f111e", e._sentryDebugIdIdentifier = "sentry-dbid-63f7c335-11b0-44dc-8251-4ab0ac9f111e")
+    var r = new t.Error().stack;
+    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "8b661710-f58b-4309-8992-d1f0962ae2da", t._sentryDebugIdIdentifier = "sentry-dbid-8b661710-f58b-4309-8992-d1f0962ae2da")
   } catch {}
 })();
-const o = () => "Copy",
-  c = () => "Copiar",
-  u = () => "复制",
-  i = () => "Kopieren",
-  p = () => "Copiar",
-  f = () => "Copier",
-  s = () => "Copia",
-  d = () => "コピー",
-  y = () => "Kopiuj",
-  a = () => "Копировать",
-  l = () => "Копіювати",
-  _ = () => "Sao chép",
-  g = (e = {}, n = {}) => {
-    const r = n.locale ?? t();
-    return r === "en" ? o() : r === "pt" ? c() : r === "ch" ? u() : r === "de" ? i() : r === "es" ? p() : r === "fr" ? f() : r === "it" ? s() : r === "jp" ? d() : r === "pl" ? y() : r === "ru" ? a() : r === "uk" ? l() : _()
+const i = () => "Description",
+  s = () => "Descrição",
+  p = () => "描述",
+  o = () => "Beschreibung",
+  u = () => "Descripción",
+  c = () => "Description",
+  d = () => "Descrizione",
+  l = () => "説明",
+  f = () => "Opis",
+  _ = () => "Описание",
+  a = () => "Опис",
+  x = () => "Mô tả",
+  T = (t = {}, r = {}) => {
+    const e = r.locale ?? n();
+    return e === "en" ? i() : e === "pt" ? s() : e === "ch" ? p() : e === "de" ? o() : e === "es" ? u() : e === "fr" ? c() : e === "it" ? d() : e === "jp" ? l() : e === "pl" ? f() : e === "ru" ? _() : e === "uk" ? a() : x()
+  },
+  b = () => "Pixels painted",
+  g = () => "Pixels pintados",
+  y = () => "已绘制像素数",
+  D = () => "Gemalte Pixel",
+  h = () => "Píxeles pintados",
+  P = () => "Pixels peints",
+  k = () => "Pixel dipinti",
+  w = () => "塗られたピクセル数",
+  E = () => "Pomalowane piksele",
+  I = () => "Нарисованные пиксели",
+  j = () => "Намальовані пікселі",
+  m = () => "Pixel đã tô",
+  L = (t = {}, r = {}) => {
+    const e = r.locale ?? n();
+    return e === "en" ? b() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? D() : e === "es" ? h() : e === "fr" ? P() : e === "it" ? k() : e === "jp" ? w() : e === "pl" ? E() : e === "ru" ? I() : e === "uk" ? j() : m()
   };
 export {
-  g as c
+  T as d, L as p
 };
