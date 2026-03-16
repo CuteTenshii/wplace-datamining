@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./CCnR8d1l.js";
+} from "./BEvqmbiy.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "6c9b69506cfe19dc0f0d9bebc0491abdbf11db02"
+      id: "8b4ab28972d63cbdad1764e9fac2da360f24ece0"
     };
     var e = new t.Error().stack;
     e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "12b42eb8-202a-4da8-bbd3-614a85a9de45", t._sentryDebugIdIdentifier = "sentry-dbid-12b42eb8-202a-4da8-bbd3-614a85a9de45")
@@ -15,8 +15,8 @@ const s = () => "Last pixel",
   i = () => "Último pixel",
   u = () => "最后一个像素",
   c = () => "Letzter Pixel",
-  o = () => "Último píxel",
-  a = () => "Dernier pixel",
+  a = () => "Último píxel",
+  o = () => "Dernier pixel",
   l = () => "Ultimo pixel",
   _ = () => "最後のピクセル",
   f = () => "Ostatni piksel",
@@ -25,7 +25,7 @@ const s = () => "Last pixel",
   v = () => "Pixel cuối cùng",
   _r = (t = {}, e = {}) => {
     const r = e.locale ?? n();
-    return r === "en" ? s() : r === "pt" ? i() : r === "ch" ? u() : r === "de" ? c() : r === "es" ? o() : r === "fr" ? a() : r === "it" ? l() : r === "jp" ? _() : r === "pl" ? f() : r === "ru" ? p() : r === "uk" ? d() : v()
+    return r === "en" ? s() : r === "pt" ? i() : r === "ch" ? u() : r === "de" ? c() : r === "es" ? a() : r === "fr" ? o() : r === "it" ? l() : r === "jp" ? _() : r === "pl" ? f() : r === "ru" ? p() : r === "uk" ? d() : v()
   },
   h = () => "Save",
   b = () => "Salvar",
@@ -85,11 +85,11 @@ const s = () => "Last pixel",
   ir = () => "訪問",
   ur = () => "Odwiedź",
   cr = () => "Перейти",
-  or = () => "Перейти",
-  ar = () => "Thăm",
+  ar = () => "Перейти",
+  or = () => "Thăm",
   vr = (t = {}, e = {}) => {
     const r = e.locale ?? n();
-    return r === "en" ? X() : r === "pt" ? $() : r === "ch" ? rr() : r === "de" ? er() : r === "es" ? tr() : r === "fr" ? nr() : r === "it" ? sr() : r === "jp" ? ir() : r === "pl" ? ur() : r === "ru" ? cr() : r === "uk" ? or() : ar()
+    return r === "en" ? X() : r === "pt" ? $() : r === "ch" ? rr() : r === "de" ? er() : r === "es" ? tr() : r === "fr" ? nr() : r === "it" ? sr() : r === "jp" ? ir() : r === "pl" ? ur() : r === "ru" ? cr() : r === "uk" ? ar() : or()
   };
 export {
   fr as a, dr as b, _r as l, pr as s, vr as v

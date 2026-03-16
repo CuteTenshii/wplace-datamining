@@ -1,4 +1,4 @@
-import "./M8DO3TCO.js";
+import "./BlzsQxXy.js";
 import {
   M as ae,
   G as re,
@@ -22,38 +22,38 @@ import {
   r as f,
   s as u,
   x as H
-} from "./Df0Hz134.js";
+} from "./BpkiS5AT.js";
 import {
   s as x
-} from "./BXg7_WfL.js";
+} from "./BpAiHbma.js";
 import {
   i as B
-} from "./2QgDRSWz.js";
+} from "./C7ij7NCq.js";
 import {
   a as p,
   c as $,
   d as oe,
   s as A
-} from "./CHn7OGu9.js";
+} from "./YwLJDD6g.js";
 import {
   p as d,
   r as fe
-} from "./D71bP1Ad.js";
+} from "./CmUbnRpp.js";
 import {
   g as O,
   t as J,
   P as ue,
   b as ve
-} from "./CT3gKcs2.js";
+} from "./Cq5TfNM2.js";
 import {
   t as me
-} from "./HplOtS-b.js";
+} from "./CHd0Oj_r.js";
 import {
-  o as be
-} from "./BaHNFH1d.js";
-import "./CCnR8d1l.js";
+  o as _e
+} from "./ZRbD53rn.js";
+import "./BEvqmbiy.js";
 import {
-  b as _e,
+  b as be,
   t as xe,
   p as ge,
   a as he,
@@ -61,15 +61,15 @@ import {
   l as we,
   d as ke,
   m as Ie
-} from "./CSaUSxm9.js";
+} from "./CD74tnDr.js";
 import {
   L as Ce
-} from "./DuVKmYNZ.js";
+} from "./CaNBQiEP.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "6c9b69506cfe19dc0f0d9bebc0491abdbf11db02"
+      id: "8b4ab28972d63cbdad1764e9fac2da360f24ece0"
     };
     var e = new n.Error().stack;
     e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "635ad329-31cf-4bf1-ab15-83f68744c4c5", n._sentryDebugIdIdentifier = "sentry-dbid-635ad329-31cf-4bf1-ab15-83f68744c4c5")
@@ -81,10 +81,10 @@ function Ee(n, e, r) {
     var a = re(() => e(n, r == null ? void 0 : r()) || {});
     if (r && (a != null && a.update)) {
       var g = !1,
-        b = {};
+        _ = {};
       ie(() => {
         var v = r();
-        ne(v), g && le(b, v) && (b = v, a.update(v))
+        ne(v), g && le(_, v) && (_ = v, a.update(v))
       }), g = !0
     }
     if (a != null && a.destroy) return () => a.destroy()
@@ -97,7 +97,7 @@ function Te(n, e) {
   let r = d(e, "widgetId", 15),
     a = d(e, "appearance", 3, "always"),
     g = d(e, "language", 3, "auto"),
-    b = d(e, "execution", 3, "render"),
+    _ = d(e, "execution", 3, "render"),
     v = d(e, "retryInterval", 3, 8e3),
     K = d(e, "retry", 3, "auto"),
     E = d(e, "refreshExpired", 3, "auto"),
@@ -144,7 +144,7 @@ function Te(n, e) {
       "retry-interval": v(),
       tabindex: L(),
       appearance: a(),
-      execution: b(),
+      execution: _(),
       language: g(),
       action: e.action,
       retry: K(),
@@ -164,7 +164,7 @@ function Te(n, e) {
       }
     };
   let h = X(!1);
-  be(() => {
+  _e(() => {
     if (q(h, !0), !O.turnstatileLoaded) {
       const t = document.createElement("script");
       t.type = "text/javascript", t.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit", t.async = !0, t.addEventListener("load", () => O.turnstatileLoaded = !0, {
@@ -214,8 +214,8 @@ function He(n, e) {
   function g(i, s) {
     return `${ue}/auth/${i}?token=${s}${e.redirect?`&r=${e.redirect}`:""}`
   }
-  var b = Se(),
-    v = o(b),
+  var _ = Se(),
+    v = o(_),
     K = o(v);
   Ce(K, {
     hasText: !0
@@ -226,11 +226,11 @@ function He(n, e) {
     var D = i => {
       var s = De(),
         m = V(s),
-        _ = o(m);
-      Be(_, {
+        b = o(m);
+      Be(b, {
         class: "mr-1 size-5"
       });
-      var M = u(_);
+      var M = u(b);
       f(m);
       var w = u(m, 2),
         N = o(w);
@@ -284,19 +284,19 @@ function He(n, e) {
     var l = i => {
       var s = Fe(),
         m = o(s),
-        _ = u(m),
-        M = o(_, !0);
-      f(_), H(), f(s), U((w, N, j) => {
-        x(m, `${w??""} `), A(_, "href", N), x(M, j)
+        b = u(m),
+        M = o(b, !0);
+      f(b), H(), f(s), U((w, N, j) => {
+        x(m, `${w??""} `), A(b, "href", N), x(M, j)
       }, [() => ke(), () => g("twitch", ""), () => Ie()]), C(i, s)
     };
     B(c, i => {
       r() && i(l)
     })
   }
-  f(b), U((i, s, m, _, M, w) => {
-    x(R, `${i??""} `), A(y, "href", s), x(T, m), x(F, _), x(S, ` ${M??""} `), x(t, w)
-  }, [() => _e(), me, () => xe(), () => ge(), () => he(), () => ye()]), C(n, b), W()
+  f(_), U((i, s, m, b, M, w) => {
+    x(R, `${i??""} `), A(y, "href", s), x(T, m), x(F, b), x(S, ` ${M??""} `), x(t, w)
+  }, [() => be(), me, () => xe(), () => ge(), () => he(), () => ye()]), C(n, _), W()
 }
 export {
   He as L
