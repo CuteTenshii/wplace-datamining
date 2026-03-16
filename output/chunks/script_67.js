@@ -1,31 +1,31 @@
 import {
   g as t
-} from "./DawG3Hoa.js";
+} from "./DIegaxO1.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "a1c3c518b70a92c25ec2b85baf48e9981ce90ce8"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "d07d8848ea889a09465db794dc92b79d5c096c7e"
     };
-    var r = new n.Error().stack;
-    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "b4aa13f6-08c7-49cd-9e53-dfbd6f6305da", n._sentryDebugIdIdentifier = "sentry-dbid-b4aa13f6-08c7-49cd-9e53-dfbd6f6305da")
+    var r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "b4aa13f6-08c7-49cd-9e53-dfbd6f6305da", e._sentryDebugIdIdentifier = "sentry-dbid-b4aa13f6-08c7-49cd-9e53-dfbd6f6305da")
   } catch {}
 })();
 const a = () => "Alliances",
   l = () => "Alianças",
   s = () => "联盟",
-  c = () => "Allianzen",
-  i = () => "Alianzas",
+  i = () => "Allianzen",
+  c = () => "Alianzas",
   u = () => "Alliances",
-  f = () => "Alleanze",
+  d = () => "Alleanze",
   o = () => "アライアンス",
-  d = () => "Sojusze",
+  f = () => "Sojusze",
   _ = () => "Альянсы",
   b = () => "Альянси",
   p = () => "Các liên minh",
-  y = (n = {}, r = {}) => {
-    const e = r.locale ?? t();
-    return e === "en" ? a() : e === "pt" ? l() : e === "ch" ? s() : e === "de" ? c() : e === "es" ? i() : e === "fr" ? u() : e === "it" ? f() : e === "jp" ? o() : e === "pl" ? d() : e === "ru" ? _() : e === "uk" ? b() : p()
+  y = (e = {}, r = {}) => {
+    const n = r.locale ?? t();
+    return n === "en" ? a() : n === "pt" ? l() : n === "ch" ? s() : n === "de" ? i() : n === "es" ? c() : n === "fr" ? u() : n === "it" ? d() : n === "jp" ? o() : n === "pl" ? f() : n === "ru" ? _() : n === "uk" ? b() : p()
   };
 export {
   y as a

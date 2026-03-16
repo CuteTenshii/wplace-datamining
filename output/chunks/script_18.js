@@ -14,7 +14,7 @@ var m = (r, t, e) => (Be(r, t, "read from private field"), e ? e.call(r) : t.get
   g = (r, t, e) => t.has(r) ? ie("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(r) : t.set(r, e);
 import {
   g as d
-} from "./DawG3Hoa.js";
+} from "./DIegaxO1.js";
 import {
   e as R,
   g as ce,
@@ -22,23 +22,23 @@ import {
   h as O,
   G as ue,
   u as U
-} from "./G_TaGb8Z.js";
+} from "./DBVFc_3b.js";
 import {
   P as we,
   g as Me
-} from "./jQT47AAc.js";
+} from "./Ja69YbZW.js";
 import {
   s as qe,
   c as Ke
-} from "./CokRbG7R.js";
+} from "./BcUWlO2E.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "a1c3c518b70a92c25ec2b85baf48e9981ce90ce8"
+      id: "d07d8848ea889a09465db794dc92b79d5c096c7e"
     };
     var t = new r.Error().stack;
-    t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "04140c62-6405-4f29-93e8-d83979acbed6", r._sentryDebugIdIdentifier = "sentry-dbid-04140c62-6405-4f29-93e8-d83979acbed6")
+    t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "ca863270-33ac-478f-a571-ec92c8d1a87a", r._sentryDebugIdIdentifier = "sentry-dbid-ca863270-33ac-478f-a571-ec92c8d1a87a")
   } catch {}
 })();
 
@@ -1321,10 +1321,10 @@ class nl {
       const t = new Date(this.data.timeoutUntil);
       if (!(t.getTime() < Date.now())) return t
     }));
-    this.channel.onmessage = t => {
+    this.channel && (this.channel.onmessage = t => {
       const e = JSON.parse(t.data);
       e.type === "refresh" ? (this.data = e.data, this.lastFetch = Date.now()) : e.type === "logout" && (this.data = void 0)
-    }
+    })
   }
   get data() {
     return w(m(this, z))
@@ -1375,18 +1375,18 @@ class nl {
     O(m(this, W), t)
   }
   async refresh() {
-    var t;
+    var t, e;
     try {
-      return this.loading = !0, this.data = await ee.me(), this.lastFetch = Date.now(), this.channel.postMessage(JSON.stringify({
+      return this.loading = !0, this.data = await ee.me(), this.lastFetch = Date.now(), (t = this.channel) == null || t.postMessage(JSON.stringify({
         type: "refresh",
         data: this.data
-      })), this.data && this.notificationCount === void 0 && ee.getNotificationCount().then(e => {
-        this.notificationCount = e
-      }), (t = this.data) != null && t.id && qe("userId", {
+      })), this.data && this.notificationCount === void 0 && ee.getNotificationCount().then(n => {
+        this.notificationCount = n
+      }), (e = this.data) != null && e.id && qe("userId", {
         id: this.data.id
       }), !!this.data
-    } catch (e) {
-      return console.error(e), ye.warning(si(), {
+    } catch (n) {
+      return console.error(n), ye.warning(si(), {
         duration: 1e4
       }), !1
     } finally {
@@ -1394,7 +1394,8 @@ class nl {
     }
   }
   async logout() {
-    await ee.logout(), this.channel.postMessage(JSON.stringify({
+    var t;
+    await ee.logout(), (t = this.channel) == null || t.postMessage(JSON.stringify({
       type: "logout"
     })), this.data = void 0
   }

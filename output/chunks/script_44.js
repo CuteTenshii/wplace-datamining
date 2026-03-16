@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./DawG3Hoa.js";
+} from "./DIegaxO1.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "a1c3c518b70a92c25ec2b85baf48e9981ce90ce8"
+      id: "d07d8848ea889a09465db794dc92b79d5c096c7e"
     };
     var n = new e.Error().stack;
     n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "63f7c335-11b0-44dc-8251-4ab0ac9f111e", e._sentryDebugIdIdentifier = "sentry-dbid-63f7c335-11b0-44dc-8251-4ab0ac9f111e")
@@ -18,14 +18,14 @@ const o = () => "Copy",
   p = () => "Copiar",
   s = () => "Copier",
   f = () => "Copia",
-  a = () => "コピー",
+  d = () => "コピー",
   y = () => "Kopiuj",
-  d = () => "Копировать",
+  a = () => "Копировать",
   l = () => "Копіювати",
   _ = () => "Sao chép",
   g = (e = {}, n = {}) => {
     const r = n.locale ?? t();
-    return r === "en" ? o() : r === "pt" ? c() : r === "ch" ? u() : r === "de" ? i() : r === "es" ? p() : r === "fr" ? s() : r === "it" ? f() : r === "jp" ? a() : r === "pl" ? y() : r === "ru" ? d() : r === "uk" ? l() : _()
+    return r === "en" ? o() : r === "pt" ? c() : r === "ch" ? u() : r === "de" ? i() : r === "es" ? p() : r === "fr" ? s() : r === "it" ? f() : r === "jp" ? d() : r === "pl" ? y() : r === "ru" ? a() : r === "uk" ? l() : _()
   };
 export {
   g as c

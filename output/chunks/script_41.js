@@ -1,31 +1,31 @@
 import {
-  g as c
-} from "./DawG3Hoa.js";
+  g as t
+} from "./DIegaxO1.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "a1c3c518b70a92c25ec2b85baf48e9981ce90ce8"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "d07d8848ea889a09465db794dc92b79d5c096c7e"
     };
-    var r = new n.Error().stack;
-    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "5f94ed96-6b3a-41b9-b71c-23a660596945", n._sentryDebugIdIdentifier = "sentry-dbid-5f94ed96-6b3a-41b9-b71c-23a660596945")
+    var r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "5f94ed96-6b3a-41b9-b71c-23a660596945", e._sentryDebugIdIdentifier = "sentry-dbid-5f94ed96-6b3a-41b9-b71c-23a660596945")
   } catch {}
 })();
-const t = () => "Cancel",
+const c = () => "Cancel",
   u = () => "Cancelar",
   a = () => "取消",
   l = () => "Abbrechen",
   o = () => "Cancelar",
   s = () => "Annuler",
-  f = () => "Annulla",
-  i = () => "キャンセル",
+  i = () => "Annulla",
+  f = () => "キャンセル",
   d = () => "Anuluj",
   b = () => "Отмена",
   _ = () => "Скасувати",
   p = () => "Hủy",
-  g = (n = {}, r = {}) => {
-    const e = r.locale ?? c();
-    return e === "en" ? t() : e === "pt" ? u() : e === "ch" ? a() : e === "de" ? l() : e === "es" ? o() : e === "fr" ? s() : e === "it" ? f() : e === "jp" ? i() : e === "pl" ? d() : e === "ru" ? b() : e === "uk" ? _() : p()
+  g = (e = {}, r = {}) => {
+    const n = r.locale ?? t();
+    return n === "en" ? c() : n === "pt" ? u() : n === "ch" ? a() : n === "de" ? l() : n === "es" ? o() : n === "fr" ? s() : n === "it" ? i() : n === "jp" ? f() : n === "pl" ? d() : n === "ru" ? b() : n === "uk" ? _() : p()
   };
 export {
   g as c

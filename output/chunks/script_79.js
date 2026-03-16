@@ -1,11 +1,11 @@
 import {
   g as e
-} from "./DawG3Hoa.js";
+} from "./DIegaxO1.js";
 (function() {
   try {
     var o = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     o.SENTRY_RELEASE = {
-      id: "a1c3c518b70a92c25ec2b85baf48e9981ce90ce8"
+      id: "d07d8848ea889a09465db794dc92b79d5c096c7e"
     };
     var t = new o.Error().stack;
     t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "06a4257e-48de-44e6-9e5a-c48f500f2c23", o._sentryDebugIdIdentifier = "sentry-dbid-06a4257e-48de-44e6-9e5a-c48f500f2c23")
@@ -13,8 +13,8 @@ import {
 })();
 const n = () => "Administrator",
   u = () => "Administrador",
-  s = () => "管理员",
-  d = () => "Administrator",
+  d = () => "管理员",
+  s = () => "Administrator",
   i = () => "Administrador",
   a = () => "Administrateur",
   c = () => "Amministratore",
@@ -25,7 +25,7 @@ const n = () => "Administrator",
   p = () => "Quản trị viên",
   _r = (o = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? n() : r === "pt" ? u() : r === "ch" ? s() : r === "de" ? d() : r === "es" ? i() : r === "fr" ? a() : r === "it" ? c() : r === "jp" ? _() : r === "pl" ? l() : r === "ru" ? f() : r === "uk" ? m() : p()
+    return r === "en" ? n() : r === "pt" ? u() : r === "ch" ? d() : r === "de" ? s() : r === "es" ? i() : r === "fr" ? a() : r === "it" ? c() : r === "jp" ? _() : r === "pl" ? l() : r === "ru" ? f() : r === "uk" ? m() : p()
   },
   b = () => "Discord Moderator",
   g = () => "Moderador do Discord",
@@ -83,13 +83,13 @@ const n = () => "Administrator",
   er = () => "Utilisateur",
   nr = () => "Utente",
   ur = () => "ユーザー",
-  sr = () => "Użytkownik",
-  dr = () => "Пользователь",
+  dr = () => "Użytkownik",
+  sr = () => "Пользователь",
   ir = () => "Користувач",
   ar = () => "Người dùng",
   pr = (o = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? Z() : r === "pt" ? $() : r === "ch" ? rr() : r === "de" ? tr() : r === "es" ? or() : r === "fr" ? er() : r === "it" ? nr() : r === "jp" ? ur() : r === "pl" ? sr() : r === "ru" ? dr() : r === "uk" ? ir() : ar()
+    return r === "en" ? Z() : r === "pt" ? $() : r === "ch" ? rr() : r === "de" ? tr() : r === "es" ? or() : r === "fr" ? er() : r === "it" ? nr() : r === "jp" ? ur() : r === "pl" ? dr() : r === "ru" ? sr() : r === "uk" ? ir() : ar()
   };
 export {
   _r as a, lr as d, fr as g, mr as m, pr as u
