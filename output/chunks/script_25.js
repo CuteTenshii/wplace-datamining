@@ -1,38 +1,28 @@
 import {
-  s as n,
-  p as d
-} from "./t2OUuDdW.js";
+  m as r,
+  E as t
+} from "./DOAgMrHD.js";
+import {
+  B as o
+} from "./BGZlwEO3.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
-    }
+      id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
+    };
+    var a = new e.Error().stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "afc54e5f-c51f-4dda-902e-af344121ca15", e._sentryDebugIdIdentifier = "sentry-dbid-afc54e5f-c51f-4dda-902e-af344121ca15")
   } catch {}
 })();
-try {
-  (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "d1fdd55a-732a-4e0b-9184-fae0134e4dde", e._sentryDebugIdIdentifier = "sentry-dbid-d1fdd55a-732a-4e0b-9184-fae0134e4dde")
-  })()
-} catch {}
-const r = {
-  get error() {
-    return d.error
-  },
-  get params() {
-    return d.params
-  },
-  get status() {
-    return d.status
-  },
-  get url() {
-    return d.url
-  }
-};
-n.updated.check;
-const o = r;
+
+function b(e, a, ...f) {
+  var d = new o(e);
+  r(() => {
+    const n = a() ?? null;
+    d.ensure(n, n && (s => n(s, ...f)))
+  }, t)
+}
 export {
-  o as p
+  b as s
 };

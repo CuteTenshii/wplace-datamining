@@ -1,51 +1,32 @@
 import {
-  H as y,
-  m as b,
-  ak as u,
-  k as n,
-  W as g,
-  Y as p,
-  a9 as l,
-  Q as s,
-  P as a,
-  J as c
-} from "./C_uavZQJ.js";
+  g as t
+} from "./-EY-P68S.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
-    }
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
+    };
+    var r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "c7520e27-33cf-4c89-adfd-ce21cf4ded9d", n._sentryDebugIdIdentifier = "sentry-dbid-c7520e27-33cf-4c89-adfd-ce21cf4ded9d")
   } catch {}
 })();
-try {
-  (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      d = new e.Error().stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "f0c577ee-84b0-4562-92be-4fb4280e6011", e._sentryDebugIdIdentifier = "sentry-dbid-f0c577ee-84b0-4562-92be-4fb4280e6011")
-  })()
-} catch {}
-
-function w(e, d) {
-  let i = null,
-    o = n;
-  var f;
-  if (n) {
-    i = c;
-    for (var t = g(document.head); t !== null && (t.nodeType !== p || t.data !== e);) t = l(t);
-    if (t === null) s(!1);
-    else {
-      var r = l(t);
-      t.remove(), a(r)
-    }
-  }
-  n || (f = document.head.appendChild(y()));
-  try {
-    b(() => d(f), u)
-  } finally {
-    o && (s(!0), a(i))
-  }
-}
+const s = () => "Our servers are down for maintenance. We should be back soon",
+  a = () => "Our servers are down for maintenance. We should be back soon.",
+  o = () => "我们的服务器正在维护中，很快就会恢复。",
+  i = () => "Unsere Server sind wegen Wartungsarbeiten offline. Wir sind bald wieder da.",
+  c = () => "Nuestros servidores están en mantenimiento. Volveremos pronto.",
+  u = () => "Nos serveurs sont en maintenance. Nous serons bientôt de retour.",
+  d = () => "I nostri server sono in manutenzione. Torneremo presto.",
+  f = () => "現在サーバーはメンテナンス中です。しばらくしてからまたお越しください。",
+  m = () => "Nasze serwery są w trakcie konserwacji. Wkrótce wrócimy.",
+  _ = () => "Наши серверы временно недоступны для обслуживания. Скоро мы вернёмся.",
+  g = () => "Наші сервери зараз на технічному обслуговуванні. Ми скоро повернемось.",
+  l = () => "Máy chủ của chúng tôi đang bảo trì. Chúng tôi sẽ sớm hoạt động trở lại",
+  p = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? s() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? u() : e === "it" ? d() : e === "jp" ? f() : e === "pl" ? m() : e === "ru" ? _() : e === "uk" ? g() : l()
+  };
 export {
-  w as h
+  p as m
 };

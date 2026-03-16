@@ -1,100 +1,32 @@
+import {
+  g as o
+} from "./-EY-P68S.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
-    }
+      id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
+    };
+    var n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "4a5c7974-0033-48df-9303-4bfb47be1c3c", e._sentryDebugIdIdentifier = "sentry-dbid-4a5c7974-0033-48df-9303-4bfb47be1c3c")
   } catch {}
 })();
-try {
-  (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      o = new e.Error().stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "c89b230e-4564-4099-8384-da484b251c4f", e._sentryDebugIdIdentifier = "sentry-dbid-c89b230e-4564-4099-8384-da484b251c4f")
-  })()
-} catch {}
-const t = [{
-  version: "1.0.0",
-  title: "Welcome to WPlace!",
-  markdown: `## Initial release
-Welcome to WPlace, a platform to share and explore pixel art creations!`
-}, {
-  version: "1.1.0",
-  title: "✨ More Like You Update",
-  markdown: `## A New Way to Customize Your Profile
-
-We have just launched a new update focused on **personalization**!
-You can now customize your profile with **profile frames**, **custom fonts**, and **name styles**, to really show off who you are to anyone who clicks on your pixels!
-
-### 🖼️ Profile Frames
-Frame your profile in style!
-- Custom borders around your profile picture - just like our Event Frames
-- Launching with **over 10 frames**
-- You can own **multiple** frames and change them whenever you want
-
-### 🔤 Custom Fonts
-Choose the perfect font for your name!
-- Launching with **5 new fonts**
-- Fonts are only applied to your name, not your ID (\`#123456\`)
-
-### 🎨 Name Styles
-Stand out with color _and_ animation!
-- Colorful effects
-- Subtle animations in select styles
-
-### 🏅 Badges
-Badges are rare items that players earn through merit. No badge can be purchased, transferred, or obtained by any means other than:
-- Participating in events
-- Completing challenging missions in the game
-- In some cases, being part of Wplace's history
-
-Badges are essentially honors for players to display on their profile. We're launching with **4 visible badges**!
-
-### 🎃 Updated Event Frames
-We have also updated the existing **Christmas** and **Halloween** event frames:
-- Properly scaled to your avatar
-- More polished with detailed designs
-- Better fit for Wplace's style
-
-### 🌙 Dark Mode
-You can rest your eyes! We're releasing the existing version of our dark mode to all users.
-- Additional themes will be added in the future
-- To apply dark mode, click your profile and find the button next to the notifications icon
-
-### 🛒 Obtaining the new styles
-The new **profile frames**, **custom fonts** and **name styles** can all be found in **the shop**, purchasable with **Droplets**!
-To apply your profile frames, custom fonts and name styles, **click your profile**, followed by the **pencil icon**.
-
-### 🚀 Future updates
-This is just the beginning of a new chapter for Wplace! You can expect more frequent updates to the website, as we have many features already in the works, and even more planned! We thank you for your suggestions and patience, as we continue working to keep up with a response that's far exceeded our expectations!
-
-The **More Like You Update** is **LIVE NOW** - go check it out and share what designs you come up with! 🎉`
-}, {
-  version: "1.1.1",
-  title: "🛠️ Quality & Cosmetics Improvements",
-  markdown: `## Quality & Cosmetics Improvements
-
-This update brings several improvements and fixes for a smoother experience:
-
-- Small bugs fixed on the frontend for both mobile and desktop
-- Fixed minor issues when equipping cosmetics
-- Cosmetics released within the last 7 days now display a "New" badge
-- 5 new frames are now available in the shop
-- New shop view to see all available frames
-- Improved consistency of texts for translations
-
-We continue to listen to community feedback to make WPlace even better!`
-}, {
-  version: "1.1.2",
-  title: "🧰 UI Fixes & Moderation Improvements",
-  markdown: `## UI Fixes & Moderation Improvements
-
-This patch focuses on interface stability across devices and a better moderation workflow:
-
-- Fixed the side menu layout where buttons could overflow outside the menu bounds
-- Fixed the pixel information layout that was displaying incorrectly on some devices
-- Delivered multiple fixes and improvements to the staff moderation screen`
-}];
+const t = () => "Error loading",
+  i = () => "Erro ao carregar",
+  a = () => "加载出错",
+  d = () => "Fehler beim Laden",
+  u = () => "Error al cargar",
+  c = () => "Erreur lors du chargement",
+  l = () => "Errore nel caricamento",
+  f = () => "読み込みエラー",
+  s = () => "Błąd ładowania",
+  _ = () => "Ошибка загрузки",
+  g = () => "Помилка завантаження",
+  b = () => "Lỗi tải dữ liệu",
+  y = (e = {}, n = {}) => {
+    const r = n.locale ?? o();
+    return r === "en" ? t() : r === "pt" ? i() : r === "ch" ? a() : r === "de" ? d() : r === "es" ? u() : r === "fr" ? c() : r === "it" ? l() : r === "jp" ? f() : r === "pl" ? s() : r === "ru" ? _() : r === "uk" ? g() : b()
+  };
 export {
-  t as p
+  y as e
 };

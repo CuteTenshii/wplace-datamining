@@ -1,37 +1,32 @@
 import {
-  g as r
-} from "./BERb6pDx.js";
+  g as d
+} from "./-EY-P68S.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
-    }
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
+    };
+    var r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "bf585c41-8158-4483-ac0f-660c137c9fc1", e._sentryDebugIdIdentifier = "sentry-dbid-bf585c41-8158-4483-ac0f-660c137c9fc1")
   } catch {}
 })();
-try {
-  (function() {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      a = new n.Error().stack;
-    a && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[a] = "dbe4153e-51b8-49ec-99c6-2b9751d8a5e4", n._sentryDebugIdIdentifier = "sentry-dbid-dbe4153e-51b8-49ec-99c6-2b9751d8a5e4")
-  })()
-} catch {}
-const t = () => "Ban appeal",
-  o = () => "Revisão de banimento",
-  p = () => "封禁申诉",
-  i = () => "Bann-Einspruch",
-  u = () => "Apelación de ban",
-  l = () => "Recours de bannissement",
-  d = () => "Ricorso contro il ban",
-  s = () => "BANの異議申立て",
-  b = () => "Odwołanie od bana",
-  c = () => "Апелляция на бан",
-  f = () => "Апеляція на бан",
-  _ = () => "Kháng cáo lệnh cấm",
-  y = (n = {}, a = {}) => {
-    const e = a.locale ?? r();
-    return e === "en" ? t() : e === "pt" ? o() : e === "ch" ? p() : e === "de" ? i() : e === "es" ? u() : e === "fr" ? l() : e === "it" ? d() : e === "jp" ? s() : e === "pl" ? b() : e === "ru" ? c() : e === "uk" ? f() : _()
+const n = () => "Reddit",
+  i = () => "Reddit",
+  u = () => "Reddit",
+  c = () => "Reddit",
+  f = () => "Reddit",
+  o = () => "Reddit",
+  s = () => "Reddit",
+  a = () => "Reddit",
+  l = () => "Reddit",
+  _ = () => "Reddit",
+  R = () => "Reddit",
+  b = () => "Reddit",
+  g = (e = {}, r = {}) => {
+    const t = r.locale ?? d();
+    return t === "en" ? n() : t === "pt" ? i() : t === "ch" ? u() : t === "de" ? c() : t === "es" ? f() : t === "fr" ? o() : t === "it" ? s() : t === "jp" ? a() : t === "pl" ? l() : t === "ru" ? _() : t === "uk" ? R() : b()
   };
 export {
-  y as b
+  g as r
 };

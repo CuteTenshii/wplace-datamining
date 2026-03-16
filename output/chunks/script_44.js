@@ -1,101 +1,48 @@
 import {
   g as n
-} from "./BERb6pDx.js";
+} from "./-EY-P68S.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
-    }
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    t.SENTRY_RELEASE = {
+      id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
+    };
+    var r = new t.Error().stack;
+    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "8b661710-f58b-4309-8992-d1f0962ae2da", t._sentryDebugIdIdentifier = "sentry-dbid-8b661710-f58b-4309-8992-d1f0962ae2da")
   } catch {}
 })();
-try {
-  (function() {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new r.Error().stack;
-    t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "319387bd-40c5-4170-85b3-9456c2adac84", r._sentryDebugIdIdentifier = "sentry-dbid-319387bd-40c5-4170-85b3-9456c2adac84")
-  })()
-} catch {}
-const s = () => "Last pixel",
-  i = () => "Último pixel",
-  u = () => "最后一个像素",
-  c = () => "Letzter Pixel",
-  o = () => "Último píxel",
-  a = () => "Dernier pixel",
-  l = () => "Ultimo pixel",
-  _ = () => "最後のピクセル",
-  f = () => "Ostatni piksel",
-  p = () => "Последний пиксель",
-  d = () => "Останній піксель",
-  v = () => "Pixel cuối cùng",
-  _e = (r = {}, t = {}) => {
-    const e = t.locale ?? n();
-    return e === "en" ? s() : e === "pt" ? i() : e === "ch" ? u() : e === "de" ? c() : e === "es" ? o() : e === "fr" ? a() : e === "it" ? l() : e === "jp" ? _() : e === "pl" ? f() : e === "ru" ? p() : e === "uk" ? d() : v()
+const i = () => "Description",
+  s = () => "Descrição",
+  p = () => "描述",
+  o = () => "Beschreibung",
+  u = () => "Descripción",
+  c = () => "Description",
+  d = () => "Descrizione",
+  f = () => "説明",
+  l = () => "Opis",
+  a = () => "Описание",
+  _ = () => "Опис",
+  x = () => "Mô tả",
+  T = (t = {}, r = {}) => {
+    const e = r.locale ?? n();
+    return e === "en" ? i() : e === "pt" ? s() : e === "ch" ? p() : e === "de" ? o() : e === "es" ? u() : e === "fr" ? c() : e === "it" ? d() : e === "jp" ? f() : e === "pl" ? l() : e === "ru" ? a() : e === "uk" ? _() : x()
   },
-  h = () => "Save",
-  b = () => "Salvar",
-  x = () => "保存",
-  g = () => "Speichern",
-  y = () => "Guardar",
-  k = () => "Enregistrer",
-  S = () => "Salva",
-  m = () => "保存",
-  w = () => "Zapisz",
-  j = () => "Сохранить",
-  z = () => "Зберегти",
-  T = () => "Lưu",
-  fe = (r = {}, t = {}) => {
-    const e = t.locale ?? n();
-    return e === "en" ? h() : e === "pt" ? b() : e === "ch" ? x() : e === "de" ? g() : e === "es" ? y() : e === "fr" ? k() : e === "it" ? S() : e === "jp" ? m() : e === "pl" ? w() : e === "ru" ? j() : e === "uk" ? z() : T()
-  },
-  E = () => "Search",
-  D = () => "Buscar",
-  I = () => "搜索",
-  L = () => "Suchen",
-  V = () => "Buscar",
-  B = () => "Rechercher",
-  R = () => "Cerca",
-  C = () => "検索",
-  G = () => "Szukaj",
-  O = () => "Поиск",
-  P = () => "Пошук",
-  A = () => "Tìm kiếm",
-  pe = (r = {}, t = {}) => {
-    const e = t.locale ?? n();
-    return e === "en" ? E() : e === "pt" ? D() : e === "ch" ? I() : e === "de" ? L() : e === "es" ? V() : e === "fr" ? B() : e === "it" ? R() : e === "jp" ? C() : e === "pl" ? G() : e === "ru" ? O() : e === "uk" ? P() : A()
-  },
-  M = () => "Select the report reason",
-  N = () => "Selecione o motivo da denúncia",
-  U = () => "选择举报原因",
-  W = () => "Grund für die Meldung auswählen",
-  Y = () => "Selecciona el motivo del reporte",
-  Z = () => "Sélectionnez la raison du signalement",
-  q = () => "Seleziona il motivo della segnalazione",
-  F = () => "通報理由を選択",
-  H = () => "Wybierz powód zgłoszenia",
-  J = () => "Выберите причину жалобы",
-  K = () => "Виберіть причину скарги",
-  Q = () => "Chọn lý do báo cáo",
-  de = (r = {}, t = {}) => {
-    const e = t.locale ?? n();
-    return e === "en" ? M() : e === "pt" ? N() : e === "ch" ? U() : e === "de" ? W() : e === "es" ? Y() : e === "fr" ? Z() : e === "it" ? q() : e === "jp" ? F() : e === "pl" ? H() : e === "ru" ? J() : e === "uk" ? K() : Q()
-  },
-  X = () => "Visit",
-  $ = () => "Visitar",
-  ee = () => "访问",
-  re = () => "Besuchen",
-  te = () => "Visitar",
-  ne = () => "Visiter",
-  se = () => "Visita",
-  ie = () => "訪問",
-  ue = () => "Odwiedź",
-  ce = () => "Перейти",
-  oe = () => "Перейти",
-  ae = () => "Thăm",
-  ve = (r = {}, t = {}) => {
-    const e = t.locale ?? n();
-    return e === "en" ? X() : e === "pt" ? $() : e === "ch" ? ee() : e === "de" ? re() : e === "es" ? te() : e === "fr" ? ne() : e === "it" ? se() : e === "jp" ? ie() : e === "pl" ? ue() : e === "ru" ? ce() : e === "uk" ? oe() : ae()
+  b = () => "Pixels painted",
+  g = () => "Pixels pintados",
+  y = () => "已绘制像素数",
+  D = () => "Gemalte Pixel",
+  h = () => "Píxeles pintados",
+  P = () => "Pixels peints",
+  k = () => "Pixel dipinti",
+  w = () => "塗られたピクセル数",
+  E = () => "Pomalowane piksele",
+  I = () => "Нарисованные пиксели",
+  j = () => "Намальовані пікселі",
+  m = () => "Pixel đã tô",
+  L = (t = {}, r = {}) => {
+    const e = r.locale ?? n();
+    return e === "en" ? b() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? D() : e === "es" ? h() : e === "fr" ? P() : e === "it" ? k() : e === "jp" ? w() : e === "pl" ? E() : e === "ru" ? I() : e === "uk" ? j() : m()
   };
 export {
-  fe as a, de as b, _e as l, pe as s, ve as v
+  T as d, L as p
 };

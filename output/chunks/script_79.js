@@ -1,37 +1,35 @@
+import "./-EY-P68S.js";
 import {
-  g as t
-} from "./BERb6pDx.js";
+  a as o,
+  g as r,
+  m as t,
+  d as s,
+  u as a
+} from "./CzjNaIWS.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
-    }
+    var d = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    d.SENTRY_RELEASE = {
+      id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
+    };
+    var e = new d.Error().stack;
+    e && (d._sentryDebugIds = d._sentryDebugIds || {}, d._sentryDebugIds[e] = "2ff3ce6d-bde4-4578-b63f-7a44f4c29c7d", d._sentryDebugIdIdentifier = "sentry-dbid-2ff3ce6d-bde4-4578-b63f-7a44f4c29c7d")
   } catch {}
 })();
-try {
-  (function() {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "b927753e-6222-4006-a4b4-e4dd84cef392", r._sentryDebugIdIdentifier = "sentry-dbid-b927753e-6222-4006-a4b4-e4dd84cef392")
-  })()
-} catch {}
-const f = () => "Refresh",
-  s = () => "Atualizar",
-  u = () => "刷新",
-  i = () => "Aktualisieren",
-  o = () => "Actualizar",
-  d = () => "Actualiser",
-  c = () => "Aggiorna",
-  l = () => "更新",
-  a = () => "Odśwież",
-  h = () => "Обновить",
-  b = () => "Оновити",
-  p = () => "Làm mới",
-  g = (r = {}, n = {}) => {
-    const e = n.locale ?? t();
-    return e === "en" ? f() : e === "pt" ? s() : e === "ch" ? u() : e === "de" ? i() : e === "es" ? o() : e === "fr" ? d() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? h() : e === "uk" ? b() : p()
+const c = {
+    user: a(),
+    community_leader: "Disc. Mod",
+    moderator: "MOD",
+    global_moderator: "GM",
+    admin: "Admin"
+  },
+  m = {
+    user: a(),
+    community_leader: s(),
+    moderator: t(),
+    global_moderator: r(),
+    admin: o()
   };
 export {
-  g as r
+  m as R, c as a
 };

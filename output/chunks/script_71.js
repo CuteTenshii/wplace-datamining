@@ -1,37 +1,32 @@
 import {
-  g as r
-} from "./BERb6pDx.js";
+  g as a
+} from "./-EY-P68S.js";
 (function() {
   try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
-      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
-    }
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
+    };
+    var r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "ffe8b5ce-112e-4e22-9d99-575b1568dd07", n._sentryDebugIdIdentifier = "sentry-dbid-ffe8b5ce-112e-4e22-9d99-575b1568dd07")
   } catch {}
 })();
-try {
-  (function() {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      d = new t.Error().stack;
-    d && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[d] = "f6c51e82-ad75-484c-a01d-9731c98e9de5", t._sentryDebugIdIdentifier = "sentry-dbid-f6c51e82-ad75-484c-a01d-9731c98e9de5")
-  })()
-} catch {}
-const n = () => "Reddit",
-  i = () => "Reddit",
-  o = () => "Reddit",
-  u = () => "Reddit",
-  f = () => "Reddit",
-  s = () => "Reddit",
-  c = () => "Reddit",
-  l = () => "Reddit",
-  a = () => "Reddit",
-  p = () => "Reddit",
-  _ = () => "Reddit",
-  b = () => "Reddit",
-  g = (t = {}, d = {}) => {
-    const e = d.locale ?? r();
-    return e === "en" ? n() : e === "pt" ? i() : e === "ch" ? o() : e === "de" ? u() : e === "es" ? f() : e === "fr" ? s() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? a() : e === "ru" ? p() : e === "uk" ? _() : b()
+const t = () => "Ban appeal",
+  p = () => "Revisão de banimento",
+  o = () => "封禁申诉",
+  u = () => "Bann-Einspruch",
+  s = () => "Apelación de ban",
+  i = () => "Recours de bannissement",
+  c = () => "Ricorso contro il ban",
+  b = () => "BANの異議申立て",
+  f = () => "Odwołanie od bana",
+  l = () => "Апелляция на бан",
+  d = () => "Апеляція на бан",
+  _ = () => "Kháng cáo lệnh cấm",
+  y = (n = {}, r = {}) => {
+    const e = r.locale ?? a();
+    return e === "en" ? t() : e === "pt" ? p() : e === "ch" ? o() : e === "de" ? u() : e === "es" ? s() : e === "fr" ? i() : e === "it" ? c() : e === "jp" ? b() : e === "pl" ? f() : e === "ru" ? l() : e === "uk" ? d() : _()
   };
 export {
-  g as r
+  y as b
 };

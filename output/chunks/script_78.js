@@ -1,41 +1,90 @@
-import "./Cz-os3rt.js";
+import "./Bd9SjhhN.js";
+import "./XUZnH5Sm.js";
 import {
-  A as f,
-  b as d
-} from "./C_uavZQJ.js";
+  p as I,
+  d as l,
+  r as f,
+  t as m,
+  a as p,
+  b as D,
+  s as _,
+  F as n,
+  G as g,
+  c as b
+} from "./DOAgMrHD.js";
 import {
-  f as r
-} from "./CiokZgy7.js";
+  s as v
+} from "./BvtnAOCY.js";
 import {
-  r as s
-} from "./C4tLH6MW.js";
+  i as T
+} from "./DWlonM8C.js";
+import {
+  a as k
+} from "./CpI0CI6P.js";
+import {
+  i as A
+} from "./CsVPChnJ.js";
+import {
+  p as u
+} from "./BElcPT_j.js";
+import {
+  R as y,
+  a as w
+} from "./OD4tuqYN.js";
+import {
+  L as x
+} from "./Bpbc5lxn.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
-    }
+    var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    a.SENTRY_RELEASE = {
+      id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
+    };
+    var s = new a.Error().stack;
+    s && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[s] = "ea156420-b17a-4014-8a6a-bf8e7dd31b8f", a._sentryDebugIdIdentifier = "sentry-dbid-ea156420-b17a-4014-8a6a-bf8e7dd31b8f")
   } catch {}
 })();
-try {
-  (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "626bc5ec-8547-466a-bae7-22159b52f7a9", e._sentryDebugIdIdentifier = "sentry-dbid-626bc5ec-8547-466a-bae7-22159b52f7a9")
-  })()
-} catch {}
-var a = f('<svg><path d="M790-56 414-434q-47 11-87.5 33T254-346l-84-86q32-32 69-56t79-42l-90-90q-41 21-76.5 46.5T84-516L0-602q32-32 66.5-57.5T140-708l-84-84 56-56 736 736-58 56Zm-310-64q-42 0-71-29.5T380-220q0-42 29-71t71-29q42 0 71 29t29 71q0 41-29 70.5T480-120Zm236-238-29-29-29-29-144-144q81 8 151.5 41T790-432l-74 74Zm160-158q-77-77-178.5-120.5T480-680q-21 0-40.5 1.5T400-674L298-776q44-12 89.5-18t92.5-6q142 0 265 53t215 145l-84 86Z"></path></svg>');
+var N = b('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
+  O = b('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
+  S = b("<span><!></span>");
 
-function c(e, t) {
-  let n = s(t, ["$$slots", "$$events", "$$legacy"]);
-  var o = a();
-  r(o, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...n
-  })), d(e, o)
+function C(a, s) {
+  I(s, !1);
+  let e = u(s, "role", 8),
+    E = u(s, "big", 8, !1);
+  A();
+  var i = S();
+  let c;
+  var h = l(i);
+  {
+    var R = r => {
+        var t = N(),
+          o = l(t);
+        x(o, {
+          size: "none"
+        });
+        var d = _(o, 1, !0);
+        f(t), m(() => v(d, (n(y), n(e()), g(() => y[e()])))), p(r, t)
+      },
+      L = r => {
+        var t = O(),
+          o = l(t);
+        x(o, {
+          size: "small"
+        });
+        var d = _(o, 1, !0);
+        f(t), m(() => v(d, (n(w), n(e()), g(() => w[e()])))), p(r, t)
+      };
+    T(h, r => {
+      E() ? r(R) : r(L, !1)
+    })
+  }
+  f(i), m(() => c = k(i, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center whitespace-nowrap pt-0.5 font-semibold leading-none shadow", null, c, {
+    "badge-info": e() === "admin",
+    "badge-secondary": e() === "moderator" || e() == "global_moderator",
+    "badge-warning": e() === "community_leader"
+  })), p(a, i), D()
 }
 export {
-  c as W
+  C as R
 };

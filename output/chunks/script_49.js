@@ -1,37 +1,48 @@
 import {
-  g as r
-} from "./BERb6pDx.js";
+  g as n
+} from "./-EY-P68S.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
-    }
+      id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
+    };
+    var t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "cb8a8c42-bfef-4d63-bd7e-6819d1f929eb", e._sentryDebugIdIdentifier = "sentry-dbid-cb8a8c42-bfef-4d63-bd7e-6819d1f929eb")
   } catch {}
 })();
-try {
-  (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "bce39049-6b42-4b6c-adf5-3d5097a65b7e", e._sentryDebugIdIdentifier = "sentry-dbid-bce39049-6b42-4b6c-adf5-3d5097a65b7e")
-  })()
-} catch {}
-const d = () => "Banned",
-  a = () => "Banido",
-  o = () => "已封禁",
-  u = () => "Gebannt",
-  b = () => "Baneado",
-  f = () => "Banni",
-  i = () => "Bannato",
-  s = () => "BAN済み",
-  c = () => "Zbanowany",
-  l = () => "Забанен",
-  p = () => "Заблоковано",
-  _ = () => "Đã bị cấm",
-  g = (e = {}, t = {}) => {
-    const n = t.locale ?? r();
-    return n === "en" ? d() : n === "pt" ? a() : n === "ch" ? o() : n === "de" ? u() : n === "es" ? b() : n === "fr" ? f() : n === "it" ? i() : n === "jp" ? s() : n === "pl" ? c() : n === "ru" ? l() : n === "uk" ? p() : _()
+const u = () => "Members",
+  s = () => "Membros",
+  o = () => "成员",
+  i = () => "Mitglieder",
+  c = () => "Miembros",
+  f = () => "Membres",
+  a = () => "Membri",
+  l = () => "メンバー",
+  b = () => "Członkowie",
+  p = () => "Участники",
+  m = () => "Учасники",
+  d = () => "Thành viên",
+  J = (e = {}, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? u() : r === "pt" ? s() : r === "ch" ? o() : r === "de" ? i() : r === "es" ? c() : r === "fr" ? f() : r === "it" ? a() : r === "jp" ? l() : r === "pl" ? b() : r === "ru" ? p() : r === "uk" ? m() : d()
+  },
+  _ = () => "Player",
+  y = () => "Jogador",
+  g = () => "玩家",
+  h = () => "Spieler",
+  k = () => "Jugador",
+  w = () => "Joueur",
+  M = () => "Giocatore",
+  v = () => "プレイヤー",
+  E = () => "Gracz",
+  I = () => "Игрок",
+  j = () => "Гравець",
+  D = () => "Người chơi",
+  S = (e = {}, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? _() : r === "pt" ? y() : r === "ch" ? g() : r === "de" ? h() : r === "es" ? k() : r === "fr" ? w() : r === "it" ? M() : r === "jp" ? v() : r === "pl" ? E() : r === "ru" ? I() : r === "uk" ? j() : D()
   };
 export {
-  g as b
+  J as m, S as p
 };

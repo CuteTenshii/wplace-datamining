@@ -1,37 +1,59 @@
-import {
-  g as t
-} from "./BERb6pDx.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
-    }
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
+    };
+    var t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "318a9da5-f9ae-41c4-a6ad-1557223c6f66", e._sentryDebugIdIdentifier = "sentry-dbid-318a9da5-f9ae-41c4-a6ad-1557223c6f66")
   } catch {}
 })();
-try {
-  (function() {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      r = new n.Error().stack;
-    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "8d7de972-68a4-48d9-81b1-8b33885572d7", n._sentryDebugIdIdentifier = "sentry-dbid-8d7de972-68a4-48d9-81b1-8b33885572d7")
-  })()
-} catch {}
-const l = () => "Alliances",
-  i = () => "Alianças",
-  a = () => "联盟",
-  s = () => "Allianzen",
-  c = () => "Alianzas",
-  o = () => "Alliances",
-  u = () => "Alleanze",
-  d = () => "アライアンス",
-  f = () => "Sojusze",
-  b = () => "Альянсы",
-  p = () => "Альянси",
-  _ = () => "Các liên minh",
-  g = (n = {}, r = {}) => {
-    const e = r.locale ?? t();
-    return e === "en" ? l() : e === "pt" ? i() : e === "ch" ? a() : e === "de" ? s() : e === "es" ? c() : e === "fr" ? o() : e === "it" ? u() : e === "jp" ? d() : e === "pl" ? f() : e === "ru" ? b() : e === "uk" ? p() : _()
-  };
+const b = e => e;
+
+function h(e) {
+  const t = e - 1;
+  return t * t * t + 1
+}
+
+function m(e, {
+  delay: t = 0,
+  duration: d = 400,
+  easing: s = b
+} = {}) {
+  const i = +getComputedStyle(e).opacity;
+  return {
+    delay: t,
+    duration: d,
+    easing: s,
+    css: o => `opacity: ${o*i}`
+  }
+}
+
+function w(e, {
+  delay: t = 0,
+  duration: d = 400,
+  easing: s = h,
+  axis: i = "y"
+} = {}) {
+  const o = getComputedStyle(e),
+    c = +o.opacity,
+    p = i === "y" ? "height" : "width",
+    l = parseFloat(o[p]),
+    r = i === "y" ? ["top", "bottom"] : ["left", "right"],
+    n = r.map(a => `${a[0].toUpperCase()}${a.slice(1)}`),
+    f = parseFloat(o[`padding${n[0]}`]),
+    y = parseFloat(o[`padding${n[1]}`]),
+    u = parseFloat(o[`margin${n[0]}`]),
+    _ = parseFloat(o[`margin${n[1]}`]),
+    $ = parseFloat(o[`border${n[0]}Width`]),
+    g = parseFloat(o[`border${n[1]}Width`]);
+  return {
+    delay: t,
+    duration: d,
+    easing: s,
+    css: a => `overflow: hidden;opacity: ${Math.min(a*20,1)*c};${p}: ${a*l}px;padding-${r[0]}: ${a*f}px;padding-${r[1]}: ${a*y}px;margin-${r[0]}: ${a*u}px;margin-${r[1]}: ${a*_}px;border-${r[0]}-width: ${a*$}px;border-${r[1]}-width: ${a*g}px;min-${p}: 0`
+  }
+}
 export {
-  g as a
+  m as f, w as s
 };

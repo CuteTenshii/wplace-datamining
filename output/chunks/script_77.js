@@ -1,41 +1,60 @@
-import "./Cz-os3rt.js";
+import "./Bd9SjhhN.js";
+import "./XUZnH5Sm.js";
 import {
-  A as d,
-  b as f
-} from "./C_uavZQJ.js";
+  p as n,
+  a as p,
+  b as l,
+  c,
+  r as m,
+  i as r,
+  K as b
+} from "./DOAgMrHD.js";
 import {
-  f as r
-} from "./CiokZgy7.js";
+  e as u
+} from "./BgvyQ0lW.js";
 import {
-  r as s
-} from "./C4tLH6MW.js";
+  i as g
+} from "./CsVPChnJ.js";
+import {
+  p as h,
+  V as v,
+  P as y
+} from "./DqZgTFJa.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
-    }
+      id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
+    };
+    var a = new e.Error().stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "2092d20e-7ef0-40a4-af0e-5070b3c82862", e._sentryDebugIdIdentifier = "sentry-dbid-2092d20e-7ef0-40a4-af0e-5070b3c82862")
   } catch {}
 })();
-try {
-  (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "37fa5c52-210d-4a91-b9d6-3602e4b8b010", e._sentryDebugIdIdentifier = "sentry-dbid-37fa5c52-210d-4a91-b9d6-3602e4b8b010")
-  })()
-} catch {}
-var a = d('<svg><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"></path></svg>');
+var _ = c('<div class="flex flex-col gap-6"></div>');
 
-function g(e, t) {
-  let n = s(t, ["$$slots", "$$events", "$$legacy"]);
-  var o = a();
-  r(o, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...n
-  })), f(e, o)
+function x(e, a) {
+  n(a, !1);
+  const o = [...h].reverse().map(t => ({
+    version: t.version,
+    title: t.title,
+    html: v(t.markdown)
+  }));
+  g();
+  var s = _();
+  u(s, 7, () => o, t => t.version, (t, i, f) => {
+    {
+      let d = b(() => r(f) === 0);
+      y(t, {
+        get patchNote() {
+          return r(i)
+        },
+        get latest() {
+          return r(d)
+        }
+      })
+    }
+  }), m(s), p(e, s), l()
 }
 export {
-  g as R
+  x as P
 };

@@ -1,37 +1,48 @@
 import {
-  g as o
-} from "./BERb6pDx.js";
+  g as n
+} from "./-EY-P68S.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
-    }
+      id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
+    };
+    var r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "e8766c05-867d-4e65-ae94-0e09d1aad9d4", e._sentryDebugIdIdentifier = "sentry-dbid-e8766c05-867d-4e65-ae94-0e09d1aad9d4")
   } catch {}
 })();
-try {
-  (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "5e3a4020-2252-4fc6-bf0b-4092111ea40f", e._sentryDebugIdIdentifier = "sentry-dbid-5e3a4020-2252-4fc6-bf0b-4092111ea40f")
-  })()
-} catch {}
-const t = () => "Error loading",
-  i = () => "Erro ao carregar",
-  d = () => "加载出错",
-  a = () => "Fehler beim Laden",
-  l = () => "Error al cargar",
-  u = () => "Erreur lors du chargement",
-  f = () => "Errore nel caricamento",
-  s = () => "読み込みエラー",
-  c = () => "Błąd ładowania",
-  g = () => "Ошибка загрузки",
-  _ = () => "Помилка завантаження",
-  b = () => "Lỗi tải dữ liệu",
-  y = (e = {}, n = {}) => {
-    const r = n.locale ?? o();
-    return r === "en" ? t() : r === "pt" ? i() : r === "ch" ? d() : r === "de" ? a() : r === "es" ? l() : r === "fr" ? u() : r === "it" ? f() : r === "jp" ? s() : r === "pl" ? c() : r === "ru" ? g() : r === "uk" ? _() : b()
+const s = () => "Patch notes",
+  o = () => "Notas de atualização",
+  u = () => "更新日志",
+  a = () => "Versionshinweise",
+  c = () => "Notas de actualización",
+  i = () => "Notes de mise à jour",
+  f = () => "Note di aggiornamento",
+  l = () => "リリースノート",
+  _ = () => "Informacje o aktualizacji",
+  d = () => "Примечания к обновлению",
+  p = () => "Нотатки про оновлення",
+  h = () => "Ghi chú cập nhật",
+  L = (e = {}, r = {}) => {
+    const t = r.locale ?? n();
+    return t === "en" ? s() : t === "pt" ? o() : t === "ch" ? u() : t === "de" ? a() : t === "es" ? c() : t === "fr" ? i() : t === "it" ? f() : t === "jp" ? l() : t === "pl" ? _() : t === "ru" ? d() : t === "uk" ? p() : h()
+  },
+  g = () => "Latest",
+  b = () => "Mais recente",
+  y = () => "最新",
+  j = () => "Neueste",
+  m = () => "Último",
+  w = () => "Derniers",
+  N = () => "Ultimi",
+  k = () => "最新",
+  I = () => "Najnowsze",
+  D = () => "Последние",
+  E = () => "Останні",
+  v = () => "Mới nhất",
+  T = (e = {}, r = {}) => {
+    const t = r.locale ?? n();
+    return t === "en" ? g() : t === "pt" ? b() : t === "ch" ? y() : t === "de" ? j() : t === "es" ? m() : t === "fr" ? w() : t === "it" ? N() : t === "jp" ? k() : t === "pl" ? I() : t === "ru" ? D() : t === "uk" ? E() : v()
   };
 export {
-  y as e
+  T as l, L as p
 };

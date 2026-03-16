@@ -1,40 +1,32 @@
-import "./BERb6pDx.js";
 import {
-  a,
-  g as n,
-  m as r,
-  d as t,
-  u as o
-} from "./C-oBY0os.js";
+  g as t
+} from "./-EY-P68S.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "448b4ed83dade10ecee1f50ce15a9606b232dc90"
-    }
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
+    };
+    var e = new n.Error().stack;
+    e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "555d803c-dfac-4d48-b1e9-55a3f0927340", n._sentryDebugIdIdentifier = "sentry-dbid-555d803c-dfac-4d48-b1e9-55a3f0927340")
   } catch {}
 })();
-try {
-  (function() {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {},
-      d = new e.Error().stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "599942de-6010-4013-9101-20f4d64804e8", e._sentryDebugIdIdentifier = "sentry-dbid-599942de-6010-4013-9101-20f4d64804e8")
-  })()
-} catch {}
-const l = {
-    user: o(),
-    community_leader: "Disc. Mod",
-    moderator: "MOD",
-    global_moderator: "GM",
-    admin: "Admin"
-  },
-  f = {
-    user: o(),
-    community_leader: t(),
-    moderator: r(),
-    global_moderator: n(),
-    admin: a()
+const f = () => "Confirm",
+  o = () => "Confirmar",
+  i = () => "确认",
+  c = () => "Bestätigen",
+  u = () => "Confirmar",
+  s = () => "Confirmer",
+  d = () => "Conferma",
+  a = () => "確認",
+  m = () => "Potwierdź",
+  l = () => "Подтвердить",
+  _ = () => "Підтвердити",
+  b = () => "Xác nhận",
+  g = (n = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? f() : r === "pt" ? o() : r === "ch" ? i() : r === "de" ? c() : r === "es" ? u() : r === "fr" ? s() : r === "it" ? d() : r === "jp" ? a() : r === "pl" ? m() : r === "ru" ? l() : r === "uk" ? _() : b()
   };
 export {
-  f as R, l as a
+  g as c
 };
