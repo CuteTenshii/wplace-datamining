@@ -1,48 +1,33 @@
 import {
-  g as n
-} from "./-EY-P68S.js";
+  aw as t,
+  m as b,
+  k as d,
+  l as o
+} from "./CEUoH-Z0.js";
+import {
+  B as i
+} from "./B3wCPi05.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
       id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
     };
-    var t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "cb8a8c42-bfef-4d63-bd7e-6819d1f929eb", e._sentryDebugIdIdentifier = "sentry-dbid-cb8a8c42-bfef-4d63-bd7e-6819d1f929eb")
+    var n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "1430ef2b-7bfa-4093-bdca-029b20ece08e", e._sentryDebugIdIdentifier = "sentry-dbid-1430ef2b-7bfa-4093-bdca-029b20ece08e")
   } catch {}
 })();
-const u = () => "Members",
-  s = () => "Membros",
-  o = () => "成员",
-  i = () => "Mitglieder",
-  c = () => "Miembros",
-  f = () => "Membres",
-  a = () => "Membri",
-  l = () => "メンバー",
-  b = () => "Członkowie",
-  p = () => "Участники",
-  m = () => "Учасники",
-  d = () => "Thành viên",
-  J = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? u() : r === "pt" ? s() : r === "ch" ? o() : r === "de" ? i() : r === "es" ? c() : r === "fr" ? f() : r === "it" ? a() : r === "jp" ? l() : r === "pl" ? b() : r === "ru" ? p() : r === "uk" ? m() : d()
-  },
-  _ = () => "Player",
-  y = () => "Jogador",
-  g = () => "玩家",
-  h = () => "Spieler",
-  k = () => "Jugador",
-  w = () => "Joueur",
-  M = () => "Giocatore",
-  v = () => "プレイヤー",
-  E = () => "Gracz",
-  I = () => "Игрок",
-  j = () => "Гравець",
-  D = () => "Người chơi",
-  S = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _() : r === "pt" ? y() : r === "ch" ? g() : r === "de" ? h() : r === "es" ? k() : r === "fr" ? w() : r === "it" ? M() : r === "jp" ? v() : r === "pl" ? E() : r === "ru" ? I() : r === "uk" ? j() : D()
-  };
+const c = Symbol("NaN");
+
+function u(e, n, f) {
+  d && o();
+  var r = new i(e),
+    s = !t();
+  b(() => {
+    var a = n();
+    a !== a && (a = c), s && a !== null && typeof a == "object" && (a = {}), r.ensure(a, f)
+  })
+}
 export {
-  J as m, S as p
+  u as k
 };

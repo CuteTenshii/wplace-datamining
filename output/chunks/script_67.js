@@ -1,5 +1,5 @@
 import {
-  g as n
+  g as t
 } from "./-EY-P68S.js";
 (function() {
   try {
@@ -8,41 +8,25 @@ import {
       id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
     };
     var r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "e8766c05-867d-4e65-ae94-0e09d1aad9d4", e._sentryDebugIdIdentifier = "sentry-dbid-e8766c05-867d-4e65-ae94-0e09d1aad9d4")
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "b4aa13f6-08c7-49cd-9e53-dfbd6f6305da", e._sentryDebugIdIdentifier = "sentry-dbid-b4aa13f6-08c7-49cd-9e53-dfbd6f6305da")
   } catch {}
 })();
-const s = () => "Patch notes",
-  o = () => "Notas de atualização",
-  u = () => "更新日志",
-  a = () => "Versionshinweise",
-  c = () => "Notas de actualización",
-  i = () => "Notes de mise à jour",
-  f = () => "Note di aggiornamento",
-  l = () => "リリースノート",
-  _ = () => "Informacje o aktualizacji",
-  d = () => "Примечания к обновлению",
-  p = () => "Нотатки про оновлення",
-  h = () => "Ghi chú cập nhật",
-  L = (e = {}, r = {}) => {
-    const t = r.locale ?? n();
-    return t === "en" ? s() : t === "pt" ? o() : t === "ch" ? u() : t === "de" ? a() : t === "es" ? c() : t === "fr" ? i() : t === "it" ? f() : t === "jp" ? l() : t === "pl" ? _() : t === "ru" ? d() : t === "uk" ? p() : h()
-  },
-  g = () => "Latest",
-  b = () => "Mais recente",
-  y = () => "最新",
-  j = () => "Neueste",
-  m = () => "Último",
-  w = () => "Derniers",
-  N = () => "Ultimi",
-  k = () => "最新",
-  I = () => "Najnowsze",
-  D = () => "Последние",
-  E = () => "Останні",
-  v = () => "Mới nhất",
-  T = (e = {}, r = {}) => {
-    const t = r.locale ?? n();
-    return t === "en" ? g() : t === "pt" ? b() : t === "ch" ? y() : t === "de" ? j() : t === "es" ? m() : t === "fr" ? w() : t === "it" ? N() : t === "jp" ? k() : t === "pl" ? I() : t === "ru" ? D() : t === "uk" ? E() : v()
+const a = () => "Alliances",
+  l = () => "Alianças",
+  s = () => "联盟",
+  i = () => "Allianzen",
+  c = () => "Alianzas",
+  u = () => "Alliances",
+  f = () => "Alleanze",
+  o = () => "アライアンス",
+  d = () => "Sojusze",
+  _ = () => "Альянсы",
+  b = () => "Альянси",
+  p = () => "Các liên minh",
+  y = (e = {}, r = {}) => {
+    const n = r.locale ?? t();
+    return n === "en" ? a() : n === "pt" ? l() : n === "ch" ? s() : n === "de" ? i() : n === "es" ? c() : n === "fr" ? u() : n === "it" ? f() : n === "jp" ? o() : n === "pl" ? d() : n === "ru" ? _() : n === "uk" ? b() : p()
   };
 export {
-  T as l, L as p
+  y as a
 };

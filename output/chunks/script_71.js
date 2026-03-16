@@ -1,32 +1,32 @@
 import {
-  g as a
+  g as o
 } from "./-EY-P68S.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
       id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
     };
-    var r = new n.Error().stack;
-    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "ffe8b5ce-112e-4e22-9d99-575b1568dd07", n._sentryDebugIdIdentifier = "sentry-dbid-ffe8b5ce-112e-4e22-9d99-575b1568dd07")
+    var n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "4a5c7974-0033-48df-9303-4bfb47be1c3c", e._sentryDebugIdIdentifier = "sentry-dbid-4a5c7974-0033-48df-9303-4bfb47be1c3c")
   } catch {}
 })();
-const t = () => "Ban appeal",
-  p = () => "Revisão de banimento",
-  o = () => "封禁申诉",
-  u = () => "Bann-Einspruch",
-  s = () => "Apelación de ban",
-  i = () => "Recours de bannissement",
-  c = () => "Ricorso contro il ban",
-  b = () => "BANの異議申立て",
-  f = () => "Odwołanie od bana",
-  l = () => "Апелляция на бан",
-  d = () => "Апеляція на бан",
-  _ = () => "Kháng cáo lệnh cấm",
-  y = (n = {}, r = {}) => {
-    const e = r.locale ?? a();
-    return e === "en" ? t() : e === "pt" ? p() : e === "ch" ? o() : e === "de" ? u() : e === "es" ? s() : e === "fr" ? i() : e === "it" ? c() : e === "jp" ? b() : e === "pl" ? f() : e === "ru" ? l() : e === "uk" ? d() : _()
+const t = () => "Error loading",
+  i = () => "Erro ao carregar",
+  a = () => "加载出错",
+  d = () => "Fehler beim Laden",
+  u = () => "Error al cargar",
+  c = () => "Erreur lors du chargement",
+  l = () => "Errore nel caricamento",
+  f = () => "読み込みエラー",
+  s = () => "Błąd ładowania",
+  _ = () => "Ошибка загрузки",
+  g = () => "Помилка завантаження",
+  b = () => "Lỗi tải dữ liệu",
+  y = (e = {}, n = {}) => {
+    const r = n.locale ?? o();
+    return r === "en" ? t() : r === "pt" ? i() : r === "ch" ? a() : r === "de" ? d() : r === "es" ? u() : r === "fr" ? c() : r === "it" ? l() : r === "jp" ? f() : r === "pl" ? s() : r === "ru" ? _() : r === "uk" ? g() : b()
   };
 export {
-  y as b
+  y as e
 };

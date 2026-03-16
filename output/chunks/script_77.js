@@ -1,60 +1,90 @@
 import "./Bd9SjhhN.js";
-import "./XUZnH5Sm.js";
+import "./DjFZH-nD.js";
 import {
-  p as n,
+  p as I,
+  d as l,
+  r as f,
+  t as m,
   a as p,
-  b as l,
-  c,
-  r as m,
-  i as r,
-  K as b
-} from "./DOAgMrHD.js";
+  b as D,
+  s as _,
+  F as n,
+  G as g,
+  c as b
+} from "./CEUoH-Z0.js";
 import {
-  e as u
-} from "./BgvyQ0lW.js";
+  s as v
+} from "./C8hol3LD.js";
 import {
-  i as g
-} from "./CsVPChnJ.js";
+  i as T
+} from "./BPHMutr-.js";
 import {
-  p as h,
-  V as v,
-  P as y
-} from "./DqZgTFJa.js";
+  a as k
+} from "./UqMcdnk8.js";
+import {
+  i as A
+} from "./ByfGy_IH.js";
+import {
+  p as u
+} from "./b3QwEAUc.js";
+import {
+  R as y,
+  a as w
+} from "./BmJcmzOs.js";
+import {
+  L as x
+} from "./DlWUtIJX.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
+    var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    a.SENTRY_RELEASE = {
       id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
     };
-    var a = new e.Error().stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "2092d20e-7ef0-40a4-af0e-5070b3c82862", e._sentryDebugIdIdentifier = "sentry-dbid-2092d20e-7ef0-40a4-af0e-5070b3c82862")
+    var s = new a.Error().stack;
+    s && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[s] = "ea156420-b17a-4014-8a6a-bf8e7dd31b8f", a._sentryDebugIdIdentifier = "sentry-dbid-ea156420-b17a-4014-8a6a-bf8e7dd31b8f")
   } catch {}
 })();
-var _ = c('<div class="flex flex-col gap-6"></div>');
+var N = b('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
+  O = b('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
+  S = b("<span><!></span>");
 
-function x(e, a) {
-  n(a, !1);
-  const o = [...h].reverse().map(t => ({
-    version: t.version,
-    title: t.title,
-    html: v(t.markdown)
-  }));
-  g();
-  var s = _();
-  u(s, 7, () => o, t => t.version, (t, i, f) => {
-    {
-      let d = b(() => r(f) === 0);
-      y(t, {
-        get patchNote() {
-          return r(i)
-        },
-        get latest() {
-          return r(d)
-        }
-      })
-    }
-  }), m(s), p(e, s), l()
+function C(a, s) {
+  I(s, !1);
+  let e = u(s, "role", 8),
+    E = u(s, "big", 8, !1);
+  A();
+  var i = S();
+  let c;
+  var h = l(i);
+  {
+    var R = r => {
+        var t = N(),
+          o = l(t);
+        x(o, {
+          size: "none"
+        });
+        var d = _(o, 1, !0);
+        f(t), m(() => v(d, (n(y), n(e()), g(() => y[e()])))), p(r, t)
+      },
+      L = r => {
+        var t = O(),
+          o = l(t);
+        x(o, {
+          size: "small"
+        });
+        var d = _(o, 1, !0);
+        f(t), m(() => v(d, (n(w), n(e()), g(() => w[e()])))), p(r, t)
+      };
+    T(h, r => {
+      E() ? r(R) : r(L, !1)
+    })
+  }
+  f(i), m(() => c = k(i, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center whitespace-nowrap pt-0.5 font-semibold leading-none shadow", null, c, {
+    "badge-info": e() === "admin",
+    "badge-secondary": e() === "moderator" || e() == "global_moderator",
+    "badge-warning": e() === "community_leader"
+  })), p(a, i), D()
 }
 export {
-  x as P
+  C as R
 };

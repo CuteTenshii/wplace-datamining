@@ -3,30 +3,30 @@ import {
 } from "./-EY-P68S.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
       id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
     };
-    var e = new n.Error().stack;
-    e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "555d803c-dfac-4d48-b1e9-55a3f0927340", n._sentryDebugIdIdentifier = "sentry-dbid-555d803c-dfac-4d48-b1e9-55a3f0927340")
+    var n = new r.Error().stack;
+    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "996525c0-034f-472b-9f89-f66661d27508", r._sentryDebugIdIdentifier = "sentry-dbid-996525c0-034f-472b-9f89-f66661d27508")
   } catch {}
 })();
-const f = () => "Confirm",
-  o = () => "Confirmar",
-  i = () => "确认",
-  c = () => "Bestätigen",
-  u = () => "Confirmar",
-  s = () => "Confirmer",
-  d = () => "Conferma",
-  a = () => "確認",
-  m = () => "Potwierdź",
-  l = () => "Подтвердить",
-  _ = () => "Підтвердити",
-  b = () => "Xác nhận",
-  g = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? f() : r === "pt" ? o() : r === "ch" ? i() : r === "de" ? c() : r === "es" ? u() : r === "fr" ? s() : r === "it" ? d() : r === "jp" ? a() : r === "pl" ? m() : r === "ru" ? l() : r === "uk" ? _() : b()
+const s = () => "Appeals",
+  a = () => "Apelos",
+  p = () => "申诉",
+  u = () => "Einsprüche",
+  o = () => "Apelaciones",
+  f = () => "Recours",
+  c = () => "Ricorsi",
+  i = () => "異議申立て",
+  l = () => "Odwołania",
+  d = () => "Апелляции",
+  _ = () => "Апеляції",
+  b = () => "Các kháng cáo",
+  y = (r = {}, n = {}) => {
+    const e = n.locale ?? t();
+    return e === "en" ? s() : e === "pt" ? a() : e === "ch" ? p() : e === "de" ? u() : e === "es" ? o() : e === "fr" ? f() : e === "it" ? c() : e === "jp" ? i() : e === "pl" ? l() : e === "ru" ? d() : e === "uk" ? _() : b()
   };
 export {
-  g as c
+  y as a
 };

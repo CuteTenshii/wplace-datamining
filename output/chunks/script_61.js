@@ -1,5 +1,5 @@
 import {
-  g as s
+  g as t
 } from "./-EY-P68S.js";
 (function() {
   try {
@@ -8,41 +8,25 @@ import {
       id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
     };
     var n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "64bdeb03-6475-42ba-8f82-6d42b2713838", r._sentryDebugIdIdentifier = "sentry-dbid-64bdeb03-6475-42ba-8f82-6d42b2713838")
+    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "1e93dc64-ec27-4951-9b91-00817e081e2b", r._sentryDebugIdIdentifier = "sentry-dbid-1e93dc64-ec27-4951-9b91-00817e081e2b")
   } catch {}
 })();
-const t = () => "Users banned successfully",
-  u = () => "Usuários banidos com sucesso",
-  o = () => "用户已成功封禁",
-  i = () => "Benutzer erfolgreich gebannt",
-  c = () => "Usuarios baneados correctamente",
-  d = () => "Utilisateurs bannis avec succès",
-  a = () => "Utenti bannati con successo",
-  _ = () => "ユーザーをBANしました。",
-  f = () => "Użytkownicy zostali pomyślnie zbanowani",
-  b = () => "Пользователи успешно забанены",
-  l = () => "Користувачів успішно заблоковано",
-  m = () => "Đã cấm người dùng thành công",
-  T = (r = {}, n = {}) => {
-    const e = n.locale ?? s();
-    return e === "en" ? t() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? d() : e === "it" ? a() : e === "jp" ? _() : e === "pl" ? f() : e === "ru" ? b() : e === "uk" ? l() : m()
-  },
-  p = () => "Users timeouted successfully",
-  g = () => "Usuários suspensos com sucesso",
-  y = () => "用户已成功禁言",
-  h = () => "Benutzer erfolgreich mit Timeout belegt",
-  U = () => "Usuarios suspendidos correctamente",
-  w = () => "Utilisateurs suspendus avec succès",
-  k = () => "Utenti sospesi con successo",
-  z = () => "ユーザーをタイムアウトしました。",
-  v = () => "Użytkownicy zostali pomyślnie zawieszeni",
-  E = () => "Пользователям успешно выдан тайм-аут",
-  I = () => "Користувачам успішно призначено тайм-аут",
-  j = () => "Đã tạm khóa người dùng thành công",
-  B = (r = {}, n = {}) => {
-    const e = n.locale ?? s();
-    return e === "en" ? p() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? h() : e === "es" ? U() : e === "fr" ? w() : e === "it" ? k() : e === "jp" ? z() : e === "pl" ? v() : e === "ru" ? E() : e === "uk" ? I() : j()
+const a = () => "Leaderboard",
+  d = () => "Ranking",
+  o = () => "排行榜",
+  s = () => "Bestenliste",
+  u = () => "Clasificación",
+  i = () => "Classement",
+  l = () => "Classifica",
+  c = () => "ランキング",
+  f = () => "Ranking",
+  b = () => "Таблица лидеров",
+  _ = () => "Таблиця лідерів",
+  g = () => "Bảng xếp hạng",
+  y = (r = {}, n = {}) => {
+    const e = n.locale ?? t();
+    return e === "en" ? a() : e === "pt" ? d() : e === "ch" ? o() : e === "de" ? s() : e === "es" ? u() : e === "fr" ? i() : e === "it" ? l() : e === "jp" ? c() : e === "pl" ? f() : e === "ru" ? b() : e === "uk" ? _() : g()
   };
 export {
-  B as a, T as u
+  y as l
 };

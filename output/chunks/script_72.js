@@ -1,32 +1,32 @@
 import {
-  g as o
+  g as n
 } from "./-EY-P68S.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
       id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
     };
-    var n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "4a5c7974-0033-48df-9303-4bfb47be1c3c", e._sentryDebugIdIdentifier = "sentry-dbid-4a5c7974-0033-48df-9303-4bfb47be1c3c")
+    var t = new r.Error().stack;
+    t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "34b20000-aaf6-474f-a087-a222515fb8cf", r._sentryDebugIdIdentifier = "sentry-dbid-34b20000-aaf6-474f-a087-a222515fb8cf")
   } catch {}
 })();
-const t = () => "Error loading",
-  i = () => "Erro ao carregar",
-  a = () => "加载出错",
-  d = () => "Fehler beim Laden",
-  u = () => "Error al cargar",
-  c = () => "Erreur lors du chargement",
-  l = () => "Errore nel caricamento",
-  f = () => "読み込みエラー",
-  s = () => "Błąd ładowania",
-  _ = () => "Ошибка загрузки",
-  g = () => "Помилка завантаження",
-  b = () => "Lỗi tải dữ liệu",
-  y = (e = {}, n = {}) => {
-    const r = n.locale ?? o();
-    return r === "en" ? t() : r === "pt" ? i() : r === "ch" ? a() : r === "de" ? d() : r === "es" ? u() : r === "fr" ? c() : r === "it" ? l() : r === "jp" ? f() : r === "pl" ? s() : r === "ru" ? _() : r === "uk" ? g() : b()
+const i = () => "Preview",
+  u = () => "Prévia",
+  f = () => "预览",
+  o = () => "Vorschau",
+  s = () => "Vista previa",
+  a = () => "Aperçu",
+  c = () => "Anteprima",
+  p = () => "プレビュー",
+  d = () => "Podgląd",
+  v = () => "Предпросмотр",
+  w = () => "Попередній перегляд",
+  l = () => "Xem trước",
+  b = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? i() : e === "pt" ? u() : e === "ch" ? f() : e === "de" ? o() : e === "es" ? s() : e === "fr" ? a() : e === "it" ? c() : e === "jp" ? p() : e === "pl" ? d() : e === "ru" ? v() : e === "uk" ? w() : l()
   };
 export {
-  y as e
+  b as p
 };

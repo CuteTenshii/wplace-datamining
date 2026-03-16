@@ -1,48 +1,32 @@
 import {
-  g as n
+  g as t
 } from "./-EY-P68S.js";
 (function() {
   try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
       id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
     };
-    var r = new t.Error().stack;
-    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "8b661710-f58b-4309-8992-d1f0962ae2da", t._sentryDebugIdIdentifier = "sentry-dbid-8b661710-f58b-4309-8992-d1f0962ae2da")
+    var n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "63f7c335-11b0-44dc-8251-4ab0ac9f111e", e._sentryDebugIdIdentifier = "sentry-dbid-63f7c335-11b0-44dc-8251-4ab0ac9f111e")
   } catch {}
 })();
-const i = () => "Description",
-  s = () => "Descrição",
-  p = () => "描述",
-  o = () => "Beschreibung",
-  u = () => "Descripción",
-  c = () => "Description",
-  d = () => "Descrizione",
-  f = () => "説明",
-  l = () => "Opis",
-  a = () => "Описание",
-  _ = () => "Опис",
-  x = () => "Mô tả",
-  T = (t = {}, r = {}) => {
-    const e = r.locale ?? n();
-    return e === "en" ? i() : e === "pt" ? s() : e === "ch" ? p() : e === "de" ? o() : e === "es" ? u() : e === "fr" ? c() : e === "it" ? d() : e === "jp" ? f() : e === "pl" ? l() : e === "ru" ? a() : e === "uk" ? _() : x()
-  },
-  b = () => "Pixels painted",
-  g = () => "Pixels pintados",
-  y = () => "已绘制像素数",
-  D = () => "Gemalte Pixel",
-  h = () => "Píxeles pintados",
-  P = () => "Pixels peints",
-  k = () => "Pixel dipinti",
-  w = () => "塗られたピクセル数",
-  E = () => "Pomalowane piksele",
-  I = () => "Нарисованные пиксели",
-  j = () => "Намальовані пікселі",
-  m = () => "Pixel đã tô",
-  L = (t = {}, r = {}) => {
-    const e = r.locale ?? n();
-    return e === "en" ? b() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? D() : e === "es" ? h() : e === "fr" ? P() : e === "it" ? k() : e === "jp" ? w() : e === "pl" ? E() : e === "ru" ? I() : e === "uk" ? j() : m()
+const o = () => "Copy",
+  c = () => "Copiar",
+  u = () => "复制",
+  i = () => "Kopieren",
+  f = () => "Copiar",
+  p = () => "Copier",
+  s = () => "Copia",
+  a = () => "コピー",
+  y = () => "Kopiuj",
+  d = () => "Копировать",
+  l = () => "Копіювати",
+  _ = () => "Sao chép",
+  g = (e = {}, n = {}) => {
+    const r = n.locale ?? t();
+    return r === "en" ? o() : r === "pt" ? c() : r === "ch" ? u() : r === "de" ? i() : r === "es" ? f() : r === "fr" ? p() : r === "it" ? s() : r === "jp" ? a() : r === "pl" ? y() : r === "ru" ? d() : r === "uk" ? l() : _()
   };
 export {
-  T as d, L as p
+  g as c
 };

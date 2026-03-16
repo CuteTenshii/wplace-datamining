@@ -3,30 +3,30 @@ import {
 } from "./-EY-P68S.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
       id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
     };
-    var n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "996525c0-034f-472b-9f89-f66661d27508", r._sentryDebugIdIdentifier = "sentry-dbid-996525c0-034f-472b-9f89-f66661d27508")
+    var n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "9e1c69b5-b723-411d-98e1-8b15a711bd6c", e._sentryDebugIdIdentifier = "sentry-dbid-9e1c69b5-b723-411d-98e1-8b15a711bd6c")
   } catch {}
 })();
-const s = () => "Appeals",
-  a = () => "Apelos",
-  p = () => "申诉",
-  u = () => "Einsprüche",
-  o = () => "Apelaciones",
-  f = () => "Recours",
-  c = () => "Ricorsi",
-  i = () => "異議申立て",
-  l = () => "Odwołania",
-  d = () => "Апелляции",
-  _ = () => "Апеляції",
-  b = () => "Các kháng cáo",
-  y = (r = {}, n = {}) => {
-    const e = n.locale ?? t();
-    return e === "en" ? s() : e === "pt" ? a() : e === "ch" ? p() : e === "de" ? u() : e === "es" ? o() : e === "fr" ? f() : e === "it" ? c() : e === "jp" ? i() : e === "pl" ? l() : e === "ru" ? d() : e === "uk" ? _() : b()
+const a = () => "Dashboard",
+  d = () => "Painel",
+  o = () => "控制台",
+  s = () => "Dashboard",
+  u = () => "Panel",
+  b = () => "Tableau de bord",
+  i = () => "Pannello",
+  c = () => "ダッシュボード",
+  f = () => "Panel",
+  l = () => "Панель",
+  h = () => "Панель",
+  _ = () => "Bảng điều khiển",
+  g = (e = {}, n = {}) => {
+    const r = n.locale ?? t();
+    return r === "en" ? a() : r === "pt" ? d() : r === "ch" ? o() : r === "de" ? s() : r === "es" ? u() : r === "fr" ? b() : r === "it" ? i() : r === "jp" ? c() : r === "pl" ? f() : r === "ru" ? l() : r === "uk" ? h() : _()
   };
 export {
-  y as a
+  g as d
 };

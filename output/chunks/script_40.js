@@ -1,155 +1,112 @@
 import {
-  S as g
-} from "./CT2BteVo.js";
+  g as n
+} from "./-EY-P68S.js";
 (function() {
   try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
       id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
     };
-    var e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "2c8defd1-230e-42d3-b36b-5377287d8a17", t._sentryDebugIdIdentifier = "sentry-dbid-2c8defd1-230e-42d3-b36b-5377287d8a17")
+    var t = new r.Error().stack;
+    t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "3c170bda-c666-43d6-85a6-5d1a13ae8f7a", r._sentryDebugIdIdentifier = "sentry-dbid-3c170bda-c666-43d6-85a6-5d1a13ae8f7a")
   } catch {}
 })();
-const m = ["text-red-500", "text-orange-500", "text-yellow-500", "text-lime-500", "text-emerald-500", "text-teal-500", "text-cyan-500", "text-sky-500", "text-indigo-500", "text-violet-500", "text-purple-500", "text-fuchsia-500", "text-pink-500", "text-rose-500"],
-  v = ["bg-red-500/10", "bg-orange-500/10", "bg-yellow-500/10", "bg-lime-500/10", "bg-emerald-500/10", "bg-teal-500/10", "bg-cyan-500/10", "bg-sky-500/10", "bg-indigo-500/10", "bg-violet-500/10", "bg-purple-500/10", "bg-fuchsia-500/10", "bg-pink-500/10", "bg-rose-500/10"];
-
-function D(t) {
-  return m[t % m.length]
-}
-
-function R(t) {
-  return v[t % v.length]
-}
-
-function B({
-  r: t,
-  g: e,
-  b: r
-}) {
-  function o(a) {
-    return a.toString(16).padStart(2, "0")
-  }
-  return `#${o(t)}${o(e)}${o(r)}`
-}
-
-function T(t) {
-  return t = t.trim().replace("#", ""), t.length === 3 && (t = t[0] + t[0] + t[1] + t[1] + t[2] + t[2]), t.length !== 6 ? {
-    r: 0,
-    g: 0,
-    b: 0
-  } : {
-    r: +("0x" + t.slice(0, 2)),
-    g: +("0x" + t.slice(2, 4)),
-    b: +("0x" + t.slice(4, 6))
-  }
-}
-
-function _(t) {
-  t = Math.min(t, g.colors.length - 1);
-  const [e, r, o] = g.colors[t].rgb;
-  return {
-    r: e,
-    g: r,
-    b: o,
-    a: t === 0 ? 0 : 255
-  }
-}
-const b = g.colors.map((t, e) => ({
-    ...t,
-    idx: e,
-    lab: w({
-      r: t.rgb[0],
-      g: t.rgb[1],
-      b: t.rgb[2]
-    })
-  })).filter(t => t.idx !== 0),
-  d = g.colors.map((t, e) => ({
-    idx: e,
-    rgb: {
-      r: t.rgb[0],
-      g: t.rgb[1],
-      b: t.rgb[2]
-    }
-  })).filter(t => t.idx !== 0),
-  E = new Array(g.colors.length);
-for (const t of b) E[t.idx] = t;
-const A = new Array(g.colors.length);
-for (const t of d) A[t.idx] = t;
-
-function N(t, e = "lab", r) {
-  if (e === "compuphase") {
-    let n = d[0].idx,
-      c = Number.MAX_VALUE;
-    if (r && r.length > 0)
-      for (let i = 0; i < r.length; i++) {
-        const l = A[r[i]];
-        if (!l) continue;
-        const f = M(t, l.rgb);
-        f < c && (n = l.idx, c = f)
-      } else
-        for (const i of d) {
-          const l = M(t, i.rgb);
-          l < c && (n = i.idx, c = l)
-        }
-    return n
-  }
-  let o = b[0].idx,
-    a = Number.MAX_VALUE;
-  const s = w(t);
-  if (r && r.length > 0)
-    for (let n = 0; n < r.length; n++) {
-      const c = E[r[n]];
-      if (!c) continue;
-      const i = x(s, c.lab);
-      i < a && (o = c.idx, a = i)
-    } else
-      for (const n of b) {
-        const c = x(s, n.lab);
-        c < a && (o = n.idx, a = c)
-      }
-  return o
-}
-
-function w(t) {
-  var e = t.r / 255,
-    r = t.g / 255,
-    o = t.b / 255,
-    a, s, n;
-  return e = e > .04045 ? Math.pow((e + .055) / 1.055, 2.4) : e / 12.92, r = r > .04045 ? Math.pow((r + .055) / 1.055, 2.4) : r / 12.92, o = o > .04045 ? Math.pow((o + .055) / 1.055, 2.4) : o / 12.92, a = (e * .4124 + r * .3576 + o * .1805) / .95047, s = (e * .2126 + r * .7152 + o * .0722) / 1, n = (e * .0193 + r * .1192 + o * .9505) / 1.08883, a = a > .008856 ? Math.pow(a, 1 / 3) : 7.787 * a + 16 / 116, s = s > .008856 ? Math.pow(s, 1 / 3) : 7.787 * s + 16 / 116, n = n > .008856 ? Math.pow(n, 1 / 3) : 7.787 * n + 16 / 116, {
-    l: 116 * s - 16,
-    a: 500 * (a - s),
-    b: 200 * (s - n)
-  }
-}
-
-function x(t, e) {
-  var r = t.l - e.l,
-    o = t.a - e.a,
-    a = t.b - e.b,
-    s = Math.sqrt(t.a * t.a + t.b * t.b),
-    n = Math.sqrt(e.a * e.a + e.b * e.b),
-    c = s - n,
-    i = o * o + a * a - c * c;
-  i = i < 0 ? 0 : Math.sqrt(i);
-  var l = 1 + .045 * s,
-    f = 1 + .015 * s,
-    u = r / 1,
-    p = c / l,
-    h = i / f,
-    y = u * u + p * p + h * h;
-  return y < 0 ? 0 : Math.sqrt(y)
-}
-
-function M(t, e) {
-  const r = (t.r + e.r) / 2,
-    o = t.r - e.r,
-    a = t.g - e.g,
-    s = t.b - e.b,
-    n = 2 + r / 256,
-    c = 2 + (255 - r) / 256;
-  return n * o * o + 4 * a * a + c * s * s
-}
+const c = () => "Extra context on what happened (required)",
+  o = () => "Mais informações sobre o que aconteceu (obrigatório)",
+  a = () => "请提供发生情况的额外背景（必填）",
+  i = () => "Zusätzliche Informationen zum Vorfall (erforderlich)",
+  u = () => "Más contexto sobre lo que ocurrió (obligatorio)",
+  s = () => "Contexte supplémentaire sur ce qui s’est passé (obligatoire)",
+  _ = () => "Maggiori informazioni su ciò che è successo (obbligatorio)",
+  f = () => "何が起きたかの詳細な説明（必須）",
+  h = () => "Dodatkowy kontekst tego, co się stało (wymagane)",
+  l = () => "Дополнительный контекст о произошедшем (обязательно)",
+  m = () => "Додаткова інформація про те, що сталося (обовʼязково)",
+  d = () => "Thêm ngữ cảnh về chuyện đã xảy ra (bắt buộc)",
+  qr = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? c() : e === "pt" ? o() : e === "ch" ? a() : e === "de" ? i() : e === "es" ? u() : e === "fr" ? s() : e === "it" ? _() : e === "jp" ? f() : e === "pl" ? h() : e === "ru" ? l() : e === "uk" ? m() : d()
+  },
+  x = r => `Max. characters: ${r.max}`,
+  g = r => `Máximo de caracteres: ${r.max}`,
+  p = r => `最大字符数：${r.max}`,
+  b = r => `Max. Zeichen: ${r.max}`,
+  v = r => `Máx. de caracteres: ${r.max}`,
+  $ = r => `Max. de caractères : ${r.max}`,
+  k = r => `Numero massimo di caratteri: ${r.max}`,
+  q = r => `最大文字数: ${r.max}`,
+  y = r => `Maks. znaków: ${r.max}`,
+  M = r => `Макс. символов: ${r.max}`,
+  w = r => `Макс. символів: ${r.max}`,
+  j = r => `Số ký tự tối đa: ${r.max}`,
+  yr = (r, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? x(r) : e === "pt" ? g(r) : e === "ch" ? p(r) : e === "de" ? b(r) : e === "es" ? v(r) : e === "fr" ? $(r) : e === "it" ? k(r) : e === "jp" ? q(r) : e === "pl" ? y(r) : e === "ru" ? M(r) : e === "uk" ? w(r) : j(r)
+  },
+  S = r => `Min. characters: ${r.min}`,
+  z = r => `Mínimo de caracteres: ${r.min}`,
+  E = r => `最少字符数：${r.min}`,
+  I = r => `Min. Zeichen: ${r.min}`,
+  O = r => `Mín. de caracteres: ${r.min}`,
+  D = r => `Min. de caractères : ${r.min}`,
+  A = r => `Numero minimo di caratteri: ${r.min}`,
+  T = r => `最小文字数: ${r.min}`,
+  N = r => `Min. znaków: ${r.min}`,
+  R = r => `Мин. символов: ${r.min}`,
+  Z = r => `Мін. символів: ${r.min}`,
+  C = r => `Số ký tự tối thiểu: ${r.min}`,
+  Mr = (r, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? S(r) : e === "pt" ? z(r) : e === "ch" ? E(r) : e === "de" ? I(r) : e === "es" ? O(r) : e === "fr" ? D(r) : e === "it" ? A(r) : e === "jp" ? T(r) : e === "pl" ? N(r) : e === "ru" ? R(r) : e === "uk" ? Z(r) : C(r)
+  },
+  G = () => "Other",
+  L = () => "Outro motivo",
+  W = () => "其他",
+  B = () => "Anderer Grund",
+  K = () => "Otro",
+  V = () => "Autre raison",
+  Y = () => "Altro motivo",
+  F = () => "その他",
+  H = () => "Inny powód",
+  J = () => "Другое",
+  P = () => "Інше",
+  Q = () => "Khác",
+  wr = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? G() : e === "pt" ? L() : e === "ch" ? W() : e === "de" ? B() : e === "es" ? K() : e === "fr" ? V() : e === "it" ? Y() : e === "jp" ? F() : e === "pl" ? H() : e === "ru" ? J() : e === "uk" ? P() : Q()
+  },
+  U = () => "Required",
+  X = () => "Obrigatório",
+  rr = () => "必填",
+  er = () => "Erforderlich",
+  tr = () => "Obligatorio",
+  nr = () => "Obligatoire",
+  cr = () => "Obbligatorio",
+  or = () => "必須",
+  ar = () => "Wymagane",
+  ir = () => "Обязательно",
+  ur = () => "Обовʼязково",
+  sr = () => "Bắt buộc",
+  jr = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? U() : e === "pt" ? X() : e === "ch" ? rr() : e === "de" ? er() : e === "es" ? tr() : e === "fr" ? nr() : e === "it" ? cr() : e === "jp" ? or() : e === "pl" ? ar() : e === "ru" ? ir() : e === "uk" ? ur() : sr()
+  },
+  _r = () => "Select the reason",
+  fr = () => "Selecione o motivo",
+  hr = () => "选择原因",
+  lr = () => "Grund auswählen",
+  mr = () => "Selecciona el motivo",
+  dr = () => "Sélectionnez la raison",
+  xr = () => "Seleziona il motivo",
+  gr = () => "理由を選択",
+  pr = () => "Wybierz powód",
+  br = () => "Выберите причину",
+  vr = () => "Виберіть причину",
+  $r = () => "Chọn lý do",
+  Sr = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? _r() : e === "pt" ? fr() : e === "ch" ? hr() : e === "de" ? lr() : e === "es" ? mr() : e === "fr" ? dr() : e === "it" ? xr() : e === "jp" ? gr() : e === "pl" ? pr() : e === "ru" ? br() : e === "uk" ? vr() : $r()
+  };
 export {
-  R as a, N as b, _ as c, D as g, T as h, B as r
+  yr as a, qr as g, Mr as m, wr as o, jr as r, Sr as s
 };

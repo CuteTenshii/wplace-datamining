@@ -1,32 +1,59 @@
-import {
-  g as n
-} from "./-EY-P68S.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
       id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
     };
-    var r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "e65d2160-87a3-4c4c-9e7a-6fbff79400c2", e._sentryDebugIdIdentifier = "sentry-dbid-e65d2160-87a3-4c4c-9e7a-6fbff79400c2")
+    var t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "318a9da5-f9ae-41c4-a6ad-1557223c6f66", e._sentryDebugIdIdentifier = "sentry-dbid-318a9da5-f9ae-41c4-a6ad-1557223c6f66")
   } catch {}
 })();
-const u = () => "Timeout",
-  o = () => "Suspender",
-  i = () => "禁言",
-  s = () => "Timeout",
-  f = () => "Suspender",
-  c = () => "Suspendre",
-  d = () => "Sospendi",
-  a = () => "タイムアウト",
-  m = () => "Zawieszenie",
-  l = () => "Тайм-аут",
-  p = () => "Тайм-аут",
-  _ = () => "Tạm khóa",
-  g = (e = {}, r = {}) => {
-    const t = r.locale ?? n();
-    return t === "en" ? u() : t === "pt" ? o() : t === "ch" ? i() : t === "de" ? s() : t === "es" ? f() : t === "fr" ? c() : t === "it" ? d() : t === "jp" ? a() : t === "pl" ? m() : t === "ru" ? l() : t === "uk" ? p() : _()
-  };
+const b = e => e;
+
+function h(e) {
+  const t = e - 1;
+  return t * t * t + 1
+}
+
+function m(e, {
+  delay: t = 0,
+  duration: d = 400,
+  easing: s = b
+} = {}) {
+  const i = +getComputedStyle(e).opacity;
+  return {
+    delay: t,
+    duration: d,
+    easing: s,
+    css: o => `opacity: ${o*i}`
+  }
+}
+
+function w(e, {
+  delay: t = 0,
+  duration: d = 400,
+  easing: s = h,
+  axis: i = "y"
+} = {}) {
+  const o = getComputedStyle(e),
+    c = +o.opacity,
+    p = i === "y" ? "height" : "width",
+    l = parseFloat(o[p]),
+    r = i === "y" ? ["top", "bottom"] : ["left", "right"],
+    n = r.map(a => `${a[0].toUpperCase()}${a.slice(1)}`),
+    f = parseFloat(o[`padding${n[0]}`]),
+    y = parseFloat(o[`padding${n[1]}`]),
+    u = parseFloat(o[`margin${n[0]}`]),
+    _ = parseFloat(o[`margin${n[1]}`]),
+    $ = parseFloat(o[`border${n[0]}Width`]),
+    g = parseFloat(o[`border${n[1]}Width`]);
+  return {
+    delay: t,
+    duration: d,
+    easing: s,
+    css: a => `overflow: hidden;opacity: ${Math.min(a*20,1)*c};${p}: ${a*l}px;padding-${r[0]}: ${a*f}px;padding-${r[1]}: ${a*y}px;margin-${r[0]}: ${a*u}px;margin-${r[1]}: ${a*_}px;border-${r[0]}-width: ${a*$}px;border-${r[1]}-width: ${a*g}px;min-${p}: 0`
+  }
+}
 export {
-  g as t
+  m as f, w as s
 };

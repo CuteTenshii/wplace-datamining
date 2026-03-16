@@ -1,36 +1,32 @@
-import "./Bd9SjhhN.js";
 import {
-  a as o,
-  J as s
-} from "./DOAgMrHD.js";
-import {
-  d as f
-} from "./CpI0CI6P.js";
-import {
-  r as n
-} from "./BElcPT_j.js";
+  g as t
+} from "./-EY-P68S.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
       id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
     };
-    var r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "e7cb3e6b-68f6-4ea6-a6bf-186a434035cd", e._sentryDebugIdIdentifier = "sentry-dbid-e7cb3e6b-68f6-4ea6-a6bf-186a434035cd")
+    var e = new r.Error().stack;
+    e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "dfe69cb2-8751-4dcb-a10b-7c55004c903c", r._sentryDebugIdIdentifier = "sentry-dbid-dfe69cb2-8751-4dcb-a10b-7c55004c903c")
   } catch {}
 })();
-var d = s('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
-
-function l(e, r) {
-  let t = n(r, ["$$slots", "$$events", "$$legacy"]);
-  var a = d();
-  f(a, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...t
-  })), o(e, a)
-}
+const u = () => "Unban",
+  a = () => "Desbanir",
+  b = () => "解封",
+  c = () => "Entbannen",
+  s = () => "Desbanear",
+  f = () => "Débannir",
+  o = () => "Unban",
+  i = () => "BANを解除",
+  d = () => "Odbanuj",
+  l = () => "Разбанить",
+  _ = () => "Розбанити",
+  p = () => "Gỡ cấm",
+  y = (r = {}, e = {}) => {
+    const n = e.locale ?? t();
+    return n === "en" ? u() : n === "pt" ? a() : n === "ch" ? b() : n === "de" ? c() : n === "es" ? s() : n === "fr" ? f() : n === "it" ? o() : n === "jp" ? i() : n === "pl" ? d() : n === "ru" ? l() : n === "uk" ? _() : p()
+  };
 export {
-  l as A
+  y as u
 };

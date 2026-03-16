@@ -7,26 +7,26 @@ import {
     e.SENTRY_RELEASE = {
       id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
     };
-    var r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "28330452-4c28-42a6-9da5-ea3f247cb1a8", e._sentryDebugIdIdentifier = "sentry-dbid-28330452-4c28-42a6-9da5-ea3f247cb1a8")
+    var s = new e.Error().stack;
+    s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "50940088-af83-42e8-aba1-1a0496c32d43", e._sentryDebugIdIdentifier = "sentry-dbid-50940088-af83-42e8-aba1-1a0496c32d43")
   } catch {}
 })();
-const a = () => "Banned",
-  d = () => "Banido",
-  u = () => "已封禁",
-  o = () => "Gebannt",
-  f = () => "Baneado",
-  s = () => "Banni",
-  c = () => "Bannato",
-  i = () => "BAN済み",
-  b = () => "Zbanowany",
-  l = () => "Забанен",
-  _ = () => "Заблоковано",
-  p = () => "Đã bị cấm",
-  g = (e = {}, r = {}) => {
-    const n = r.locale ?? t();
-    return n === "en" ? a() : n === "pt" ? d() : n === "ch" ? u() : n === "de" ? o() : n === "es" ? f() : n === "fr" ? s() : n === "it" ? c() : n === "jp" ? i() : n === "pl" ? b() : n === "ru" ? l() : n === "uk" ? _() : p()
+const n = () => "Users",
+  u = () => "Usuários",
+  i = () => "用户",
+  o = () => "Benutzer",
+  f = () => "Usuarios",
+  c = () => "Utilisateurs",
+  a = () => "Utenti",
+  d = () => "ユーザー",
+  l = () => "Użytkownicy",
+  _ = () => "Пользователи",
+  b = () => "Користувачі",
+  p = () => "Người dùng",
+  y = (e = {}, s = {}) => {
+    const r = s.locale ?? t();
+    return r === "en" ? n() : r === "pt" ? u() : r === "ch" ? i() : r === "de" ? o() : r === "es" ? f() : r === "fr" ? c() : r === "it" ? a() : r === "jp" ? d() : r === "pl" ? l() : r === "ru" ? _() : r === "uk" ? b() : p()
   };
 export {
-  g as b
+  y as u
 };
