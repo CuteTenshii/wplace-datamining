@@ -1,21 +1,21 @@
 import {
   g as t
-} from "./-EY-P68S.js";
+} from "./DawG3Hoa.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "a1c3c518b70a92c25ec2b85baf48e9981ce90ce8"
     };
-    var r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "b4aa13f6-08c7-49cd-9e53-dfbd6f6305da", e._sentryDebugIdIdentifier = "sentry-dbid-b4aa13f6-08c7-49cd-9e53-dfbd6f6305da")
+    var r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "b4aa13f6-08c7-49cd-9e53-dfbd6f6305da", n._sentryDebugIdIdentifier = "sentry-dbid-b4aa13f6-08c7-49cd-9e53-dfbd6f6305da")
   } catch {}
 })();
 const a = () => "Alliances",
   l = () => "Alianças",
   s = () => "联盟",
-  i = () => "Allianzen",
-  c = () => "Alianzas",
+  c = () => "Allianzen",
+  i = () => "Alianzas",
   u = () => "Alliances",
   f = () => "Alleanze",
   o = () => "アライアンス",
@@ -23,9 +23,9 @@ const a = () => "Alliances",
   _ = () => "Альянсы",
   b = () => "Альянси",
   p = () => "Các liên minh",
-  y = (e = {}, r = {}) => {
-    const n = r.locale ?? t();
-    return n === "en" ? a() : n === "pt" ? l() : n === "ch" ? s() : n === "de" ? i() : n === "es" ? c() : n === "fr" ? u() : n === "it" ? f() : n === "jp" ? o() : n === "pl" ? d() : n === "ru" ? _() : n === "uk" ? b() : p()
+  y = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? a() : e === "pt" ? l() : e === "ch" ? s() : e === "de" ? c() : e === "es" ? i() : e === "fr" ? u() : e === "it" ? f() : e === "jp" ? o() : e === "pl" ? d() : e === "ru" ? _() : e === "uk" ? b() : p()
   };
 export {
   y as a

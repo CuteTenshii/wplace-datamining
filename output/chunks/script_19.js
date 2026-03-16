@@ -2,24 +2,24 @@
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
+      id: "a1c3c518b70a92c25ec2b85baf48e9981ce90ce8"
     };
     var o = new e.Error().stack;
     o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "f48e8017-3f7e-40b0-9f34-cb514ffed3f1", e._sentryDebugIdIdentifier = "sentry-dbid-f48e8017-3f7e-40b0-9f34-cb514ffed3f1")
   } catch {}
 })();
 const L = "en",
-  c = ["en", "pt", "ch", "de", "es", "fr", "it", "jp", "pl", "ru", "uk", "vi"],
-  d = "PARAGLIDE_LOCALE",
-  g = ["localStorage", "preferredLanguage", "baseLocale"];
+  f = ["en", "pt", "ch", "de", "es", "fr", "it", "jp", "pl", "ru", "uk", "vi"],
+  g = "PARAGLIDE_LOCALE",
+  d = ["localStorage", "preferredLanguage", "baseLocale"];
 globalThis.__paraglide = {};
-let i = !1,
+let c = !1,
   p = () => {
     let e;
-    for (const o of g) {
+    for (const o of d) {
       if (o === "baseLocale") e = L;
       else if (o === "preferredLanguage") e = w();
-      else if (o === "localStorage") e = localStorage.getItem(d) ?? void 0;
+      else if (o === "localStorage") e = localStorage.getItem(g) ?? void 0;
       else if (u(o) && l.has(o)) {
         const t = l.get(o);
         if (t) {
@@ -30,7 +30,7 @@ let i = !1,
       }
       if (e !== void 0) {
         const t = h(e);
-        return i || (i = !0, y(t, {
+        return c || (c = !0, y(t, {
           reload: !1
         })), t
       }
@@ -46,14 +46,14 @@ let i = !1,
     try {
       a = p()
     } catch {}
-    for (const r of g)
+    for (const r of d)
       if (r !== "baseLocale") {
-        if (r === "localStorage" && typeof window < "u") localStorage.setItem(d, e);
+        if (r === "localStorage" && typeof window < "u") localStorage.setItem(g, e);
         else if (u(r) && l.has(r)) {
           const s = l.get(r);
           if (s) {
-            const f = s.setLocale(e);
-            f instanceof Promise && f.catch(b => {
+            const i = s.setLocale(e);
+            i instanceof Promise && i.catch(b => {
               console.warn(`Custom strategy "${r}" setLocale failed:`, b)
             })
           }
@@ -62,11 +62,11 @@ let i = !1,
   };
 
 function n(e) {
-  return e ? c.includes(e) : !1
+  return e ? f.includes(e) : !1
 }
 
 function h(e) {
-  if (n(e) === !1) throw new Error(`Invalid locale: ${e}. Expected one of: ${c.join(", ")}`);
+  if (n(e) === !1) throw new Error(`Invalid locale: ${e}. Expected one of: ${f.join(", ")}`);
   return e
 }
 
@@ -91,5 +91,5 @@ function u(e) {
   return typeof e == "string" && /^custom-[A-Za-z0-9_-]+$/.test(e)
 }
 export {
-  p as g, d as l
+  p as g, g as l
 };

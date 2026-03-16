@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./-EY-P68S.js";
+} from "./DawG3Hoa.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
+      id: "a1c3c518b70a92c25ec2b85baf48e9981ce90ce8"
     };
     var n = new r.Error().stack;
     n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "996525c0-034f-472b-9f89-f66661d27508", r._sentryDebugIdIdentifier = "sentry-dbid-996525c0-034f-472b-9f89-f66661d27508")
@@ -16,16 +16,16 @@ const s = () => "Appeals",
   p = () => "申诉",
   u = () => "Einsprüche",
   o = () => "Apelaciones",
-  f = () => "Recours",
-  c = () => "Ricorsi",
-  i = () => "異議申立て",
+  c = () => "Recours",
+  i = () => "Ricorsi",
+  f = () => "異議申立て",
   l = () => "Odwołania",
   d = () => "Апелляции",
   _ = () => "Апеляції",
   b = () => "Các kháng cáo",
   y = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? s() : e === "pt" ? a() : e === "ch" ? p() : e === "de" ? u() : e === "es" ? o() : e === "fr" ? f() : e === "it" ? c() : e === "jp" ? i() : e === "pl" ? l() : e === "ru" ? d() : e === "uk" ? _() : b()
+    return e === "en" ? s() : e === "pt" ? a() : e === "ch" ? p() : e === "de" ? u() : e === "es" ? o() : e === "fr" ? c() : e === "it" ? i() : e === "jp" ? f() : e === "pl" ? l() : e === "ru" ? d() : e === "uk" ? _() : b()
   };
 export {
   y as a

@@ -1,31 +1,31 @@
 import {
   g as n
-} from "./-EY-P68S.js";
+} from "./DawG3Hoa.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    t.SENTRY_RELEASE = {
+      id: "a1c3c518b70a92c25ec2b85baf48e9981ce90ce8"
     };
-    var r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "e65d2160-87a3-4c4c-9e7a-6fbff79400c2", e._sentryDebugIdIdentifier = "sentry-dbid-e65d2160-87a3-4c4c-9e7a-6fbff79400c2")
+    var r = new t.Error().stack;
+    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "e65d2160-87a3-4c4c-9e7a-6fbff79400c2", t._sentryDebugIdIdentifier = "sentry-dbid-e65d2160-87a3-4c4c-9e7a-6fbff79400c2")
   } catch {}
 })();
 const u = () => "Timeout",
   o = () => "Suspender",
   i = () => "禁言",
   s = () => "Timeout",
-  f = () => "Suspender",
-  c = () => "Suspendre",
+  c = () => "Suspender",
+  f = () => "Suspendre",
   d = () => "Sospendi",
   a = () => "タイムアウト",
   m = () => "Zawieszenie",
   l = () => "Тайм-аут",
   p = () => "Тайм-аут",
   _ = () => "Tạm khóa",
-  g = (e = {}, r = {}) => {
-    const t = r.locale ?? n();
-    return t === "en" ? u() : t === "pt" ? o() : t === "ch" ? i() : t === "de" ? s() : t === "es" ? f() : t === "fr" ? c() : t === "it" ? d() : t === "jp" ? a() : t === "pl" ? m() : t === "ru" ? l() : t === "uk" ? p() : _()
+  g = (t = {}, r = {}) => {
+    const e = r.locale ?? n();
+    return e === "en" ? u() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? s() : e === "es" ? c() : e === "fr" ? f() : e === "it" ? d() : e === "jp" ? a() : e === "pl" ? m() : e === "ru" ? l() : e === "uk" ? p() : _()
   };
 export {
   g as t

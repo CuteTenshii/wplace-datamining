@@ -1,11 +1,11 @@
 import {
   S as g
-} from "./DTvwujfW.js";
+} from "./rmW26SZb.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
+      id: "a1c3c518b70a92c25ec2b85baf48e9981ce90ce8"
     };
     var e = new t.Error().stack;
     e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "2c8defd1-230e-42d3-b36b-5377287d8a17", t._sentryDebugIdIdentifier = "sentry-dbid-2c8defd1-230e-42d3-b36b-5377287d8a17")
@@ -27,8 +27,8 @@ function B({
   g: e,
   b: r
 }) {
-  function o(a) {
-    return a.toString(16).padStart(2, "0")
+  function o(c) {
+    return c.toString(16).padStart(2, "0")
   }
   return `#${o(t)}${o(e)}${o(r)}`
 }
@@ -55,7 +55,7 @@ function _(t) {
     a: t === 0 ? 0 : 255
   }
 }
-const b = g.colors.map((t, e) => ({
+const f = g.colors.map((t, e) => ({
     ...t,
     idx: e,
     lab: w({
@@ -73,40 +73,40 @@ const b = g.colors.map((t, e) => ({
     }
   })).filter(t => t.idx !== 0),
   E = new Array(g.colors.length);
-for (const t of b) E[t.idx] = t;
+for (const t of f) E[t.idx] = t;
 const A = new Array(g.colors.length);
 for (const t of d) A[t.idx] = t;
 
 function N(t, e = "lab", r) {
   if (e === "compuphase") {
     let n = d[0].idx,
-      c = Number.MAX_VALUE;
+      a = Number.MAX_VALUE;
     if (r && r.length > 0)
       for (let i = 0; i < r.length; i++) {
         const l = A[r[i]];
         if (!l) continue;
-        const f = M(t, l.rgb);
-        f < c && (n = l.idx, c = f)
+        const b = M(t, l.rgb);
+        b < a && (n = l.idx, a = b)
       } else
         for (const i of d) {
           const l = M(t, i.rgb);
-          l < c && (n = i.idx, c = l)
+          l < a && (n = i.idx, a = l)
         }
     return n
   }
-  let o = b[0].idx,
-    a = Number.MAX_VALUE;
+  let o = f[0].idx,
+    c = Number.MAX_VALUE;
   const s = w(t);
   if (r && r.length > 0)
     for (let n = 0; n < r.length; n++) {
-      const c = E[r[n]];
-      if (!c) continue;
-      const i = x(s, c.lab);
-      i < a && (o = c.idx, a = i)
+      const a = E[r[n]];
+      if (!a) continue;
+      const i = x(s, a.lab);
+      i < c && (o = a.idx, c = i)
     } else
-      for (const n of b) {
-        const c = x(s, n.lab);
-        c < a && (o = n.idx, a = c)
+      for (const n of f) {
+        const a = x(s, n.lab);
+        a < c && (o = n.idx, c = a)
       }
   return o
 }
@@ -115,10 +115,10 @@ function w(t) {
   var e = t.r / 255,
     r = t.g / 255,
     o = t.b / 255,
-    a, s, n;
-  return e = e > .04045 ? Math.pow((e + .055) / 1.055, 2.4) : e / 12.92, r = r > .04045 ? Math.pow((r + .055) / 1.055, 2.4) : r / 12.92, o = o > .04045 ? Math.pow((o + .055) / 1.055, 2.4) : o / 12.92, a = (e * .4124 + r * .3576 + o * .1805) / .95047, s = (e * .2126 + r * .7152 + o * .0722) / 1, n = (e * .0193 + r * .1192 + o * .9505) / 1.08883, a = a > .008856 ? Math.pow(a, 1 / 3) : 7.787 * a + 16 / 116, s = s > .008856 ? Math.pow(s, 1 / 3) : 7.787 * s + 16 / 116, n = n > .008856 ? Math.pow(n, 1 / 3) : 7.787 * n + 16 / 116, {
+    c, s, n;
+  return e = e > .04045 ? Math.pow((e + .055) / 1.055, 2.4) : e / 12.92, r = r > .04045 ? Math.pow((r + .055) / 1.055, 2.4) : r / 12.92, o = o > .04045 ? Math.pow((o + .055) / 1.055, 2.4) : o / 12.92, c = (e * .4124 + r * .3576 + o * .1805) / .95047, s = (e * .2126 + r * .7152 + o * .0722) / 1, n = (e * .0193 + r * .1192 + o * .9505) / 1.08883, c = c > .008856 ? Math.pow(c, 1 / 3) : 7.787 * c + 16 / 116, s = s > .008856 ? Math.pow(s, 1 / 3) : 7.787 * s + 16 / 116, n = n > .008856 ? Math.pow(n, 1 / 3) : 7.787 * n + 16 / 116, {
     l: 116 * s - 16,
-    a: 500 * (a - s),
+    a: 500 * (c - s),
     b: 200 * (s - n)
   }
 }
@@ -126,17 +126,17 @@ function w(t) {
 function x(t, e) {
   var r = t.l - e.l,
     o = t.a - e.a,
-    a = t.b - e.b,
+    c = t.b - e.b,
     s = Math.sqrt(t.a * t.a + t.b * t.b),
     n = Math.sqrt(e.a * e.a + e.b * e.b),
-    c = s - n,
-    i = o * o + a * a - c * c;
+    a = s - n,
+    i = o * o + c * c - a * a;
   i = i < 0 ? 0 : Math.sqrt(i);
   var l = 1 + .045 * s,
-    f = 1 + .015 * s,
+    b = 1 + .015 * s,
     u = r / 1,
-    p = c / l,
-    h = i / f,
+    p = a / l,
+    h = i / b,
     y = u * u + p * p + h * h;
   return y < 0 ? 0 : Math.sqrt(y)
 }
@@ -144,11 +144,11 @@ function x(t, e) {
 function M(t, e) {
   const r = (t.r + e.r) / 2,
     o = t.r - e.r,
-    a = t.g - e.g,
+    c = t.g - e.g,
     s = t.b - e.b,
     n = 2 + r / 256,
-    c = 2 + (255 - r) / 256;
-  return n * o * o + 4 * a * a + c * s * s
+    a = 2 + (255 - r) / 256;
+  return n * o * o + 4 * c * c + a * s * s
 }
 export {
   R as a, N as b, _ as c, D as g, T as h, B as r

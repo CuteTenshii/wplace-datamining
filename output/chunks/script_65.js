@@ -6,7 +6,7 @@ var Pe = (r, e, t) => e in r ? _e(r, e, {
   value: t
 }) : r[e] = t;
 var b = (r, e, t) => Pe(r, typeof e != "symbol" ? e + "" : e, t);
-import "./Bd9SjhhN.js";
+import "./iF_u2ama.js";
 import {
   p as Ie,
   d as $,
@@ -16,34 +16,34 @@ import {
   a as ae,
   b as Ce,
   c as de
-} from "./CEUoH-Z0.js";
+} from "./G_TaGb8Z.js";
 import {
   s as O
-} from "./C8hol3LD.js";
+} from "./SdvYsWW1.js";
 import {
   i as Le
-} from "./BPHMutr-.js";
+} from "./DKxzbz1e.js";
 import {
   h as Ee
-} from "./otIvNZLE.js";
+} from "./B9RDdBCa.js";
 import {
   s as Be
-} from "./UqMcdnk8.js";
+} from "./Dt2tWuyU.js";
 import {
   p as qe
-} from "./b3QwEAUc.js";
-import "./-EY-P68S.js";
+} from "./CcbhMLbo.js";
+import "./DawG3Hoa.js";
 import {
   l as De
-} from "./DIKtHerP.js";
+} from "./BQpWgpsg.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "7a2da3ca311c6628f40e8aafbf8f9127c2b42592"
+      id: "a1c3c518b70a92c25ec2b85baf48e9981ce90ce8"
     };
     var e = new r.Error().stack;
-    e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "2e3c657c-3807-49a1-bee3-22d62bf1bbed", r._sentryDebugIdIdentifier = "sentry-dbid-2e3c657c-3807-49a1-bee3-22d62bf1bbed")
+    e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "8892e7dc-80b3-4b4e-beff-824897164123", r._sentryDebugIdIdentifier = "sentry-dbid-8892e7dc-80b3-4b4e-beff-824897164123")
   } catch {}
 })();
 const Nt = [{
@@ -138,7 +138,6 @@ New exclusive Avatar Frames that can only be unlocked through gameplay! Reach an
 - 100,000 Pixels Painted
 - 500,000 Pixels Painted
 - 1,000,000 Pixels Painted
-- 1,000 Max Charges
 
 **Note:** Existing players who already meet these milestones will need to paint at least one pixel to retroactively unlock their frames.
 
