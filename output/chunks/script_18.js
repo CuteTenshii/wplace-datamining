@@ -13,40 +13,40 @@ var p = (r, t, e) => je(r, typeof t != "symbol" ? t + "" : t, e),
 var m = (r, t, e) => (Be(r, t, "read from private field"), e ? e.call(r) : t.get(r)),
   g = (r, t, e) => t.has(r) ? ie("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(r) : t.set(r, e);
 import {
-  g as d
-} from "./DIegaxO1.js";
+  g as _
+} from "./CCnR8d1l.js";
 import {
   e as R,
   g as ce,
   i as w,
-  h as O,
+  h as T,
   G as ue,
   u as U
-} from "./DBVFc_3b.js";
+} from "./Df0Hz134.js";
 import {
   P as we,
   g as Me
-} from "./Ja69YbZW.js";
+} from "./CT3gKcs2.js";
 import {
   s as qe,
   c as Ke
-} from "./BcUWlO2E.js";
+} from "./BoxERE1W.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "d07d8848ea889a09465db794dc92b79d5c096c7e"
+      id: "6c9b69506cfe19dc0f0d9bebc0491abdbf11db02"
     };
     var t = new r.Error().stack;
-    t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "ca863270-33ac-478f-a571-ec92c8d1a87a", r._sentryDebugIdIdentifier = "sentry-dbid-ca863270-33ac-478f-a571-ec92c8d1a87a")
+    t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "9fd109c5-db3c-4c8b-9bc5-b84180c12ad7", r._sentryDebugIdIdentifier = "sentry-dbid-9fd109c5-db3c-4c8b-9bc5-b84180c12ad7")
   } catch {}
 })();
 
-function Dl(...r) {
+function md(...r) {
   return r.filter(Boolean).join(" ")
 }
 const ze = typeof document < "u";
-let _e = 0;
+let le = 0;
 var M, q, K;
 class Fe {
   constructor() {
@@ -66,9 +66,9 @@ class Fe {
       message: s
     }) => {
       const o = this.toasts.findIndex(c => c.id === t),
-        _ = this.toasts[o];
+        l = this.toasts[o];
       this.toasts[o] = {
-        ..._,
+        ...l,
         ...e,
         id: t,
         title: s,
@@ -81,12 +81,12 @@ class Fe {
       const {
         message: e,
         ...n
-      } = t, s = typeof(t == null ? void 0 : t.id) == "number" || t.id && ((c = t.id) == null ? void 0 : c.length) > 0 ? t.id : _e++, o = t.dismissable === void 0 ? !0 : t.dismissable, _ = t.type === void 0 ? "default" : t.type;
+      } = t, s = typeof(t == null ? void 0 : t.id) == "number" || t.id && ((c = t.id) == null ? void 0 : c.length) > 0 ? t.id : le++, o = t.dismissable === void 0 ? !0 : t.dismissable, l = t.type === void 0 ? "default" : t.type;
       return ue(() => {
         this.toasts.find(f => f.id === s) ? this.updateToast({
           id: s,
           data: t,
-          type: _,
+          type: l,
           message: e,
           dismissable: o
         }) : this.addToast({
@@ -94,7 +94,7 @@ class Fe {
           id: s,
           title: e,
           dismissable: o,
-          type: _
+          type: l
         })
       }), s
     });
@@ -161,10 +161,10 @@ class Fe {
       }));
       const s = t instanceof Promise ? t : t();
       let o = n !== void 0;
-      return s.then(_ => {
-        if (typeof _ == "object" && _ && "ok" in _ && typeof _.ok == "boolean" && !_.ok) {
+      return s.then(l => {
+        if (typeof l == "object" && l && "ok" in l && typeof l.ok == "boolean" && !l.ok) {
           o = !1;
-          const c = Ge(_);
+          const c = Ge(l);
           this.create({
             id: n,
             type: "error",
@@ -172,17 +172,17 @@ class Fe {
           })
         } else if (e.success !== void 0) {
           o = !1;
-          const c = typeof e.success == "function" ? e.success(_) : e.success;
+          const c = typeof e.success == "function" ? e.success(l) : e.success;
           this.create({
             id: n,
             type: "success",
             message: c
           })
         }
-      }).catch(_ => {
+      }).catch(l => {
         if (e.error !== void 0) {
           o = !1;
-          const c = typeof e.error == "function" ? e.error(_) : e.error;
+          const c = typeof e.error == "function" ? e.error(l) : e.error;
           this.create({
             id: n,
             type: "error",
@@ -190,12 +190,12 @@ class Fe {
           })
         }
       }).finally(() => {
-        var _;
-        o && (this.dismiss(n), n = void 0), (_ = e.finally) == null || _.call(e)
+        var l;
+        o && (this.dismiss(n), n = void 0), (l = e.finally) == null || l.call(e)
       }), n
     });
     p(this, "custom", (t, e) => {
-      const n = (e == null ? void 0 : e.id) || _e++;
+      const n = (e == null ? void 0 : e.id) || le++;
       return this.create({
         component: t,
         id: n,
@@ -221,13 +221,13 @@ class Fe {
     return w(m(this, M))
   }
   set toasts(t) {
-    O(m(this, M), t, !0)
+    T(m(this, M), t, !0)
   }
   get heights() {
     return w(m(this, q))
   }
   set heights(t) {
-    O(m(this, q), t, !0)
+    T(m(this, q), t, !0)
   }
 }
 M = new WeakMap, q = new WeakMap, K = new WeakMap;
@@ -244,7 +244,7 @@ function $e(r, t) {
   })
 }
 var re;
-class Sl {
+class hd {
   constructor() {
     g(this, re, U(() => E.toasts.filter(t => !t.dismiss)))
   }
@@ -268,13 +268,13 @@ const Ce = $e,
   });
 let be = R(void 0);
 const Ee = () => w(be),
-  kl = r => {
+  pd = r => {
     const t = new URL(r, we),
       e = Ee();
     return e && t.searchParams.set("override", e.token), t.toString()
   };
 
-function xl() {
+function gd() {
   try {
     Ve()
   } catch (r) {
@@ -291,7 +291,7 @@ function Ve() {
   if (Date.now() / 1e3 > s.expiresAt) throw new Error("override token expired");
   ye.info(`Currently using the ${s.id} override. Bugs may occur, go back to ${location.protocol}//${location.host} to clear this override.`, {
     duration: 6e4
-  }), O(be, {
+  }), T(be, {
     token: t,
     payload: s
   }, !0)
@@ -299,8 +299,8 @@ function Ve() {
 const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.url).href,
   We = () => "Your account has been suspended for breaking the rules",
   Ye = () => "Sua conta foi suspensa por quebrar as regras",
-  Je = () => "您的账号因违反规则已被暂停",
-  Qe = () => "Dein Konto wurde wegen Regelverstößen gesperrt",
+  Qe = () => "您的账号因违反规则已被暂停",
+  Je = () => "Dein Konto wurde wegen Regelverstößen gesperrt",
   Xe = () => "Tu cuenta ha sido suspendida por infringir las regras",
   Ze = () => "Votre compte a été suspendu pour avoir enfreint les règles",
   et = () => "Il tuo account è stato sospeso per aver infranto le regole",
@@ -309,16 +309,16 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   nt = () => "Ваш аккаунт был временно заблокирован за нарушение правил",
   at = () => "Ваш обліковий запис було призупинено за порушення правил",
   st = () => "Tài khoản của bạn đã bị tạm đình chỉ vì vi phạm luật",
-  le = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? We() : e === "pt" ? Ye() : e === "ch" ? Je() : e === "de" ? Qe() : e === "es" ? Xe() : e === "fr" ? Ze() : e === "it" ? et() : e === "jp" ? tt() : e === "pl" ? rt() : e === "ru" ? nt() : e === "uk" ? at() : st()
+  _e = (r = {}, t = {}) => {
+    const e = t.locale ?? _();
+    return e === "en" ? We() : e === "pt" ? Ye() : e === "ch" ? Qe() : e === "de" ? Je() : e === "es" ? Xe() : e === "fr" ? Ze() : e === "it" ? et() : e === "jp" ? tt() : e === "pl" ? rt() : e === "ru" ? nt() : e === "uk" ? at() : st()
   },
   ot = () => "Alliance name already taken",
   it = () => "Já possui uma aliança com esse nome",
   ct = () => "该联盟名称已被占用",
   ut = () => "Der Allianzname ist bereits vergeben",
-  _t = () => "Ese nombre de alianza ya está en uso",
-  lt = () => "Ce nom d’alliance est déjà pris",
+  lt = () => "Ese nombre de alianza ya está en uso",
+  _t = () => "Ce nom d’alliance est déjà pris",
   dt = () => "Esiste già un'alleanza con questo nome",
   ft = () => "このアライアンス名は既に使用されています。",
   mt = () => "Nazwa sojuszu jest już zajęta",
@@ -326,14 +326,14 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   pt = () => "Назва альянсу вже зайнята",
   gt = () => "Tên liên minh đã được sử dụng",
   wt = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? ot() : e === "pt" ? it() : e === "ch" ? ct() : e === "de" ? ut() : e === "es" ? _t() : e === "fr" ? lt() : e === "it" ? dt() : e === "jp" ? ft() : e === "pl" ? mt() : e === "ru" ? ht() : e === "uk" ? pt() : gt()
+    const e = t.locale ?? _();
+    return e === "en" ? ot() : e === "pt" ? it() : e === "ch" ? ct() : e === "de" ? ut() : e === "es" ? lt() : e === "fr" ? _t() : e === "it" ? dt() : e === "jp" ? ft() : e === "pl" ? mt() : e === "ru" ? ht() : e === "uk" ? pt() : gt()
   },
   yt = () => "Alliance name exceeded the maximum number of characters",
   bt = () => "O nome da aliança excedeu o número máximo de caracteres",
   Et = () => "联盟名称超过最大字符数限制",
-  Ot = () => "Der Allianzname überschreitet die maximale Zeichenanzahl",
-  Tt = () => "El nombre de la alianza superó el número máximo de caracteres",
+  Tt = () => "Der Allianzname überschreitet die maximale Zeichenanzahl",
+  Ot = () => "El nombre de la alianza superó el número máximo de caracteres",
   vt = () => "Le nom de l’alliance a dépassé le nombre maximal de caractères",
   It = () => "Il nome dell'alleanza ha superato il numero massimo di caratteri",
   Nt = () => "アライアンス名が最大文字数を超えています。",
@@ -342,8 +342,8 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Dt = () => "Назва альянсу перевищує максимально допустиму кількість символів",
   St = () => "Tên liên minh vượt quá số ký tự cho phép",
   kt = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? yt() : e === "pt" ? bt() : e === "ch" ? Et() : e === "de" ? Ot() : e === "es" ? Tt() : e === "fr" ? vt() : e === "it" ? It() : e === "jp" ? Nt() : e === "pl" ? Rt() : e === "ru" ? At() : e === "uk" ? Dt() : St()
+    const e = t.locale ?? _();
+    return e === "en" ? yt() : e === "pt" ? bt() : e === "ch" ? Et() : e === "de" ? Tt() : e === "es" ? Ot() : e === "fr" ? vt() : e === "it" ? It() : e === "jp" ? Nt() : e === "pl" ? Rt() : e === "ru" ? At() : e === "uk" ? Dt() : St()
   },
   xt = () => "Alliance with empty name",
   Pt = () => "Aliança com nome vazio",
@@ -358,7 +358,7 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Ft = () => "Альянс із порожньою назвою",
   Gt = () => "Liên minh không có tên",
   $t = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
+    const e = t.locale ?? _();
     return e === "en" ? xt() : e === "pt" ? Pt() : e === "ch" ? Ut() : e === "de" ? Lt() : e === "es" ? jt() : e === "fr" ? Bt() : e === "it" ? Mt() : e === "jp" ? qt() : e === "pl" ? Kt() : e === "ru" ? zt() : e === "uk" ? Ft() : Gt()
   },
   Ct = () => "Botting",
@@ -366,16 +366,16 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Ht = () => "脚本",
   Wt = () => "Bot-Nutzung",
   Yt = () => "Botting",
-  Jt = () => "Bots",
-  Qt = () => "Uso di bot",
+  Qt = () => "Bots",
+  Jt = () => "Uso di bot",
   Xt = () => "ボット使用",
   Zt = () => "Botting",
   er = () => "Боттинг",
   tr = () => "Боти",
   rr = () => "Botting",
   nr = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Ct() : e === "pt" ? Vt() : e === "ch" ? Ht() : e === "de" ? Wt() : e === "es" ? Yt() : e === "fr" ? Jt() : e === "it" ? Qt() : e === "jp" ? Xt() : e === "pl" ? Zt() : e === "ru" ? er() : e === "uk" ? tr() : rr()
+    const e = t.locale ?? _();
+    return e === "en" ? Ct() : e === "pt" ? Vt() : e === "ch" ? Ht() : e === "de" ? Wt() : e === "es" ? Yt() : e === "fr" ? Qt() : e === "it" ? Jt() : e === "jp" ? Xt() : e === "pl" ? Zt() : e === "ru" ? er() : e === "uk" ? tr() : rr()
   },
   ar = () => "Breaking the rules",
   sr = () => "Quebrar as regras",
@@ -383,31 +383,31 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   ir = () => "Regeln brechen",
   cr = () => "Romper las reglas",
   ur = () => "Violation des règles",
-  _r = () => "Violazione delle regole",
-  lr = () => "ルール違反",
+  lr = () => "Violazione delle regole",
+  _r = () => "ルール違反",
   dr = () => "Łamanie zasad",
   fr = () => "Нарушение правил",
   mr = () => "Порушення правил",
   hr = () => "Vi phạm luật",
   pr = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? ar() : e === "pt" ? sr() : e === "ch" ? or() : e === "de" ? ir() : e === "es" ? cr() : e === "fr" ? ur() : e === "it" ? _r() : e === "jp" ? lr() : e === "pl" ? dr() : e === "ru" ? fr() : e === "uk" ? mr() : hr()
+    const e = t.locale ?? _();
+    return e === "en" ? ar() : e === "pt" ? sr() : e === "ch" ? or() : e === "de" ? ir() : e === "es" ? cr() : e === "fr" ? ur() : e === "it" ? lr() : e === "jp" ? _r() : e === "pl" ? dr() : e === "ru" ? fr() : e === "uk" ? mr() : hr()
   },
   gr = () => "You cannot paint over event pixels",
   wr = () => "Você não pode pintar sobre pixels de eventos",
   yr = () => "你不能覆盖活动像素",
   br = () => "Du kannst nicht über Event-Pixel malen",
   Er = () => "No puedes pintar sobre píxeles de evento",
-  Or = () => "Vous ne pouvez pas peindre sur des pixels d’événement",
-  Tr = () => "Non puoi dipingere sopra i pixel dell'evento",
+  Tr = () => "Vous ne pouvez pas peindre sur des pixels d’événement",
+  Or = () => "Non puoi dipingere sopra i pixel dell'evento",
   vr = () => "イベント用のピクセルの上には塗れません。",
   Ir = () => "Nie możesz malować po pikselach wydarzenia",
   Nr = () => "Вы не можете рисовать по пикселям события",
   Rr = () => "Ви не можете малювати поверх пікселів події",
   Ar = () => "Bạn không thể tô lên pixel sự kiện",
   Dr = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? gr() : e === "pt" ? wr() : e === "ch" ? yr() : e === "de" ? br() : e === "es" ? Er() : e === "fr" ? Or() : e === "it" ? Tr() : e === "jp" ? vr() : e === "pl" ? Ir() : e === "ru" ? Nr() : e === "uk" ? Rr() : Ar()
+    const e = t.locale ?? _();
+    return e === "en" ? gr() : e === "pt" ? wr() : e === "ch" ? yr() : e === "de" ? br() : e === "es" ? Er() : e === "fr" ? Tr() : e === "it" ? Or() : e === "jp" ? vr() : e === "pl" ? Ir() : e === "ru" ? Nr() : e === "uk" ? Rr() : Ar()
   },
   Sr = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
   kr = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
@@ -422,7 +422,7 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Kr = () => "Не вдається підключитися до сервера. Можливо, у вас немає інтернет-зʼєднання або сервер недоступний. Спробуйте пізніше.",
   zr = () => "Không thể kết nối tới máy chủ. Có thể bạn đang mất kết nối mạng hoặc máy chủ đang tạm ngưng. Hãy thử lại sau",
   Fr = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
+    const e = t.locale ?? _();
     return e === "en" ? Sr() : e === "pt" ? kr() : e === "ch" ? xr() : e === "de" ? Pr() : e === "es" ? Ur() : e === "fr" ? Lr() : e === "it" ? jr() : e === "jp" ? Br() : e === "pl" ? Mr() : e === "ru" ? qr() : e === "uk" ? Kr() : zr()
   },
   Gr = () => "Couldn't complete the purchase. This item does not exist.",
@@ -432,14 +432,14 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Hr = () => "No se pudo completar la compra. Este ítem no existe.",
   Wr = () => "Achat impossible. Cet objet n’existe pas.",
   Yr = () => "Impossibile completare l'acquisto. Questo oggetto non esiste.",
-  Jr = () => "購入を完了できませんでした。このアイテムは存在しません。",
-  Qr = () => "Nie udało się dokończyć zakupu. Ten przedmiot nie istnieje.",
+  Qr = () => "購入を完了できませんでした。このアイテムは存在しません。",
+  Jr = () => "Nie udało się dokończyć zakupu. Ten przedmiot nie istnieje.",
   Xr = () => "Не удалось завершить покупку. Этот предмет не существует.",
   Zr = () => "Не вдалося завершити покупку. Цей предмет не існує.",
   en = () => "Không thể hoàn tất giao dịch. Vật phẩm này không tồn tại.",
   de = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Gr() : e === "pt" ? $r() : e === "ch" ? Cr() : e === "de" ? Vr() : e === "es" ? Hr() : e === "fr" ? Wr() : e === "it" ? Yr() : e === "jp" ? Jr() : e === "pl" ? Qr() : e === "ru" ? Xr() : e === "uk" ? Zr() : en()
+    const e = t.locale ?? _();
+    return e === "en" ? Gr() : e === "pt" ? $r() : e === "ch" ? Cr() : e === "de" ? Vr() : e === "es" ? Hr() : e === "fr" ? Wr() : e === "it" ? Yr() : e === "jp" ? Qr() : e === "pl" ? Jr() : e === "ru" ? Xr() : e === "uk" ? Zr() : en()
   },
   tn = () => "We’re currently experiencing high traffic. Some requests may not be processed at this time—please try again later. Thank you for your patience.",
   rn = () => "Estamos enfrentando um volume alto de acessos no momento. Algumas solicitações podem não ser processadas agora — por favor, tente novamente mais tarde. Agradecemos a sua compreensão.",
@@ -449,13 +449,13 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   on = () => "Nous subissons actuellement un trafic élevé. Certaines requêtes peuvent ne pas être traitées pour le moment — veuillez réessayer plus tard. Merci pour votre patience.",
   cn = () => "Stiamo affrontando un elevato volume di accessi in questo momento. Alcune richieste potrebbero non essere elaborate ora — riprova più tardi. Grazie per la comprensione.",
   un = () => "現在アクセスが集中しています。一部のリクエストが処理されない場合があります。しばらくしてからもう一度お試しください。ご理解ありがとうございます。",
-  _n = () => "Obecnie doświadczamy dużego ruchu. Niektóre żądania mogą nie zostać teraz przetworzone — spróbuj ponownie później. Dziękujemy za cierpliwość.",
-  ln = () => "Сейчас мы испытываем очень высокую нагрузку. Некоторые запросы могут не обрабатываться — попробуйте позже. Спасибо за ваше терпение.",
+  ln = () => "Obecnie doświadczamy dużego ruchu. Niektóre żądania mogą nie zostać teraz przetworzone — spróbuj ponownie później. Dziękujemy za cierpliwość.",
+  _n = () => "Сейчас мы испытываем очень высокую нагрузку. Некоторые запросы могут не обрабатываться — попробуйте позже. Спасибо за ваше терпение.",
   dn = () => "Зараз ми отримуємо великий обсяг трафіку. Деякі запити можуть тимчасово не оброблятися — будь ласка, спробуйте пізніше. Дякуємо за розуміння.",
   fn = () => "Hiện chúng tôi đang chịu lượng truy cập rất cao. Một số yêu cầu có thể không được xử lý ngay bây giờ — hãy thử lại sau. Cảm ơn bạn đã thông cảm.",
   mn = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? tn() : e === "pt" ? rn() : e === "ch" ? nn() : e === "de" ? an() : e === "es" ? sn() : e === "fr" ? on() : e === "it" ? cn() : e === "jp" ? un() : e === "pl" ? _n() : e === "ru" ? ln() : e === "uk" ? dn() : fn()
+    const e = t.locale ?? _();
+    return e === "en" ? tn() : e === "pt" ? rn() : e === "ch" ? nn() : e === "de" ? an() : e === "es" ? sn() : e === "fr" ? on() : e === "it" ? cn() : e === "jp" ? un() : e === "pl" ? ln() : e === "ru" ? _n() : e === "uk" ? dn() : fn()
   },
   hn = () => "Doxxing",
   pn = () => "Doxxing",
@@ -464,14 +464,14 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   yn = () => "Doxxing",
   bn = () => "Doxxing",
   En = () => "Doxxing",
-  On = () => "ドックス（Doxxing）",
-  Tn = () => "Doxxing",
+  Tn = () => "ドックス（Doxxing）",
+  On = () => "Doxxing",
   vn = () => "Докcинг",
   In = () => "Докcинг",
   Nn = () => "Doxxing",
   Rn = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? hn() : e === "pt" ? pn() : e === "ch" ? gn() : e === "de" ? wn() : e === "es" ? yn() : e === "fr" ? bn() : e === "it" ? En() : e === "jp" ? On() : e === "pl" ? Tn() : e === "ru" ? vn() : e === "uk" ? In() : Nn()
+    const e = t.locale ?? _();
+    return e === "en" ? hn() : e === "pt" ? pn() : e === "ch" ? gn() : e === "de" ? wn() : e === "es" ? yn() : e === "fr" ? bn() : e === "it" ? En() : e === "jp" ? Tn() : e === "pl" ? On() : e === "ru" ? vn() : e === "uk" ? In() : Nn()
   },
   An = r => `Error while painting: ${r.err}`,
   Dn = r => `Erro enquanto pinta: ${r.err}`,
@@ -486,7 +486,7 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Mn = r => `Помилка під час малювання: ${r.err}`,
   qn = r => `Lỗi khi tô: ${r.err}`,
   Kn = (r, t = {}) => {
-    const e = t.locale ?? d();
+    const e = t.locale ?? _();
     return e === "en" ? An(r) : e === "pt" ? Dn(r) : e === "ch" ? Sn(r) : e === "de" ? kn(r) : e === "es" ? xn(r) : e === "fr" ? Pn(r) : e === "it" ? Un(r) : e === "jp" ? Ln(r) : e === "pl" ? jn(r) : e === "ru" ? Bn(r) : e === "uk" ? Mn(r) : qn(r)
   },
   zn = () => "Griefing",
@@ -498,12 +498,12 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Hn = () => "Griefing",
   Wn = () => "グリーフィング",
   Yn = () => "Griefing",
-  Jn = () => "Гриферство",
-  Qn = () => "Гріфінг",
+  Qn = () => "Гриферство",
+  Jn = () => "Гріфінг",
   Xn = () => "Griefing",
   Zn = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? zn() : e === "pt" ? Fn() : e === "ch" ? Gn() : e === "de" ? $n() : e === "es" ? Cn() : e === "fr" ? Vn() : e === "it" ? Hn() : e === "jp" ? Wn() : e === "pl" ? Yn() : e === "ru" ? Jn() : e === "uk" ? Qn() : Xn()
+    const e = t.locale ?? _();
+    return e === "en" ? zn() : e === "pt" ? Fn() : e === "ch" ? Gn() : e === "de" ? $n() : e === "es" ? Cn() : e === "fr" ? Vn() : e === "it" ? Hn() : e === "jp" ? Wn() : e === "pl" ? Yn() : e === "ru" ? Qn() : e === "uk" ? Jn() : Xn()
   },
   ea = () => "Hate speech",
   ta = () => "Discurso de Ódio",
@@ -515,11 +515,11 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   ia = () => "ヘイトスピーチ",
   ca = () => "Mowa nienawiści",
   ua = () => "Речь ненависти",
-  _a = () => "Мова ворожнечі",
-  la = () => "Ngôn từ thù hằn",
+  la = () => "Мова ворожнечі",
+  _a = () => "Ngôn từ thù hằn",
   da = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? ea() : e === "pt" ? ta() : e === "ch" ? ra() : e === "de" ? na() : e === "es" ? aa() : e === "fr" ? sa() : e === "it" ? oa() : e === "jp" ? ia() : e === "pl" ? ca() : e === "ru" ? ua() : e === "uk" ? _a() : la()
+    const e = t.locale ?? _();
+    return e === "en" ? ea() : e === "pt" ? ta() : e === "ch" ? ra() : e === "de" ? na() : e === "es" ? aa() : e === "fr" ? sa() : e === "it" ? oa() : e === "jp" ? ia() : e === "pl" ? ca() : e === "ru" ? ua() : e === "uk" ? la() : _a()
   },
   fa = () => "Inappropriate content",
   ma = () => "Conteúdo inapropriado",
@@ -530,12 +530,12 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   ya = () => "Contenuto inappropriato",
   ba = () => "不適切なコンテンツ",
   Ea = () => "Nieodpowiednie treści",
-  Oa = () => "Неприемлемый контент",
-  Ta = () => "Неприйнятний вміст",
+  Ta = () => "Неприемлемый контент",
+  Oa = () => "Неприйнятний вміст",
   va = () => "Nội dung không phù hợp",
   Ia = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? fa() : e === "pt" ? ma() : e === "ch" ? ha() : e === "de" ? pa() : e === "es" ? ga() : e === "fr" ? wa() : e === "it" ? ya() : e === "jp" ? ba() : e === "pl" ? Ea() : e === "ru" ? Oa() : e === "uk" ? Ta() : va()
+    const e = t.locale ?? _();
+    return e === "en" ? fa() : e === "pt" ? ma() : e === "ch" ? ha() : e === "de" ? pa() : e === "es" ? ga() : e === "fr" ? wa() : e === "it" ? ya() : e === "jp" ? ba() : e === "pl" ? Ea() : e === "ru" ? Ta() : e === "uk" ? Oa() : va()
   },
   Na = () => "Invalid code",
   Ra = () => "Código inválido",
@@ -550,7 +550,7 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   ja = () => "Невірний код",
   Ba = () => "Mã không hợp lệ",
   Ma = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
+    const e = t.locale ?? _();
     return e === "en" ? Na() : e === "pt" ? Ra() : e === "ch" ? Aa() : e === "de" ? Da() : e === "es" ? Sa() : e === "fr" ? ka() : e === "it" ? xa() : e === "jp" ? Pa() : e === "pl" ? Ua() : e === "ru" ? La() : e === "uk" ? ja() : Ba()
   },
   qa = () => "Verification code expired. Please request a new one.",
@@ -564,10 +564,10 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Ha = () => "Kod weryfikacyjny wygasł. Poproś o nowy.",
   Wa = () => "Код подтверждения истёк. Пожалуйста, запросите новый.",
   Ya = () => "Код підтвердження закінчився. Будь ласка, запросіть новий.",
-  Ja = () => "Mã xác minh đã hết hạn. Vui lòng yêu cầu mã mới.",
-  Qa = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? qa() : e === "pt" ? Ka() : e === "ch" ? za() : e === "de" ? Fa() : e === "es" ? Ga() : e === "fr" ? $a() : e === "it" ? Ca() : e === "jp" ? Va() : e === "pl" ? Ha() : e === "ru" ? Wa() : e === "uk" ? Ya() : Ja()
+  Qa = () => "Mã xác minh đã hết hạn. Vui lòng yêu cầu mã mới.",
+  Ja = (r = {}, t = {}) => {
+    const e = t.locale ?? _();
+    return e === "en" ? qa() : e === "pt" ? Ka() : e === "ch" ? za() : e === "de" ? Fa() : e === "es" ? Ga() : e === "fr" ? $a() : e === "it" ? Ca() : e === "jp" ? Va() : e === "pl" ? Ha() : e === "ru" ? Wa() : e === "uk" ? Ya() : Qa()
   },
   Xa = () => "Invalid discord.",
   Za = () => "Discord inválido.",
@@ -581,11 +581,11 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   is = () => "Неверный Discord.",
   cs = () => "Некоректний Discord.",
   us = () => "Discord không hợp lệ.",
-  _s = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
+  ls = (r = {}, t = {}) => {
+    const e = t.locale ?? _();
     return e === "en" ? Xa() : e === "pt" ? Za() : e === "ch" ? es() : e === "de" ? ts() : e === "es" ? rs() : e === "fr" ? ns() : e === "it" ? as() : e === "jp" ? ss() : e === "pl" ? os() : e === "ru" ? is() : e === "uk" ? cs() : us()
   },
-  ls = () => "The name contains disallowed characters or words. Please choose a different name.",
+  _s = () => "The name contains disallowed characters or words. Please choose a different name.",
   ds = () => "O nome contém caracteres ou palavras não permitidas. Por favor, escolha outro nome.",
   fs = () => "名称包含禁止的字符或词语，请选择其他名称。",
   ms = () => "Der Name enthält nicht erlaubte Zeichen oder Wörter. Bitte wähle einen anderen Namen.",
@@ -596,12 +596,12 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   ys = () => "Nazwa zawiera niedozwolone znaki lub słowa. Wybierz inną nazwę.",
   bs = () => "Имя содержит запрещённые символы или слова. Пожалуйста, выберите другое имя.",
   Es = () => "Імʼя містить заборонені символи або слова. Оберіть інше імʼя.",
-  Os = () => "Tên chứa ký tự hoặc từ không được phép. Hãy chọn tên khác.",
+  Ts = () => "Tên chứa ký tự hoặc từ không được phép. Hãy chọn tên khác.",
   fe = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? ls() : e === "pt" ? ds() : e === "ch" ? fs() : e === "de" ? ms() : e === "es" ? hs() : e === "fr" ? ps() : e === "it" ? gs() : e === "jp" ? ws() : e === "pl" ? ys() : e === "ru" ? bs() : e === "uk" ? Es() : Os()
+    const e = t.locale ?? _();
+    return e === "en" ? _s() : e === "pt" ? ds() : e === "ch" ? fs() : e === "de" ? ms() : e === "es" ? hs() : e === "fr" ? ps() : e === "it" ? gs() : e === "jp" ? ws() : e === "pl" ? ys() : e === "ru" ? bs() : e === "uk" ? Es() : Ts()
   },
-  Ts = () => "Invalid phone number",
+  Os = () => "Invalid phone number",
   vs = () => "Número de telefone inválido",
   Is = () => "无效的电话号码",
   Ns = () => "Ungültige Telefonnummer",
@@ -614,8 +614,8 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Ps = () => "Некоректний номер телефону",
   Us = () => "Số điện thoại không hợp lệ",
   Ls = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Ts() : e === "pt" ? vs() : e === "ch" ? Is() : e === "de" ? Ns() : e === "es" ? Rs() : e === "fr" ? As() : e === "it" ? Ds() : e === "jp" ? Ss() : e === "pl" ? ks() : e === "ru" ? xs() : e === "uk" ? Ps() : Us()
+    const e = t.locale ?? _();
+    return e === "en" ? Os() : e === "pt" ? vs() : e === "ch" ? Is() : e === "de" ? Ns() : e === "es" ? Rs() : e === "fr" ? As() : e === "it" ? Ds() : e === "jp" ? Ss() : e === "pl" ? ks() : e === "ru" ? xs() : e === "uk" ? Ps() : Us()
   },
   js = () => "The new leader must be a member of the alliance",
   Bs = () => "O novo líder deve ser um membro da aliança",
@@ -630,12 +630,12 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Vs = () => "Новий лідер має бути учасником альянсу",
   Hs = () => "Thủ lĩnh mới phải là thành viên của liên minh",
   Ws = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
+    const e = t.locale ?? _();
     return e === "en" ? js() : e === "pt" ? Bs() : e === "ch" ? Ms() : e === "de" ? qs() : e === "es" ? Ks() : e === "fr" ? zs() : e === "it" ? Fs() : e === "jp" ? Gs() : e === "pl" ? $s() : e === "ru" ? Cs() : e === "uk" ? Vs() : Hs()
   },
   Ys = () => "Leaderboard is temporarily disabled",
-  Js = () => "O ranking está temporariamente desativado",
-  Qs = () => "排行榜已暂时停用",
+  Qs = () => "O ranking está temporariamente desativado",
+  Js = () => "排行榜已暂时停用",
   Xs = () => "Die Bestenliste ist vorübergehend deaktiviert",
   Zs = () => "La clasificación está deshabilitada temporalmente",
   eo = () => "Le classement est temporairement désactivé",
@@ -646,14 +646,14 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   so = () => "Таблиця лідерів тимчасово вимкнена",
   oo = () => "Bảng xếp hạng tạm thời bị vô hiệu hóa",
   A = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Ys() : e === "pt" ? Js() : e === "ch" ? Qs() : e === "de" ? Xs() : e === "es" ? Zs() : e === "fr" ? eo() : e === "it" ? to() : e === "jp" ? ro() : e === "pl" ? no() : e === "ru" ? ao() : e === "uk" ? so() : oo()
+    const e = t.locale ?? _();
+    return e === "en" ? Ys() : e === "pt" ? Qs() : e === "ch" ? Js() : e === "de" ? Xs() : e === "es" ? Zs() : e === "fr" ? eo() : e === "it" ? to() : e === "jp" ? ro() : e === "pl" ? no() : e === "ru" ? ao() : e === "uk" ? so() : oo()
   },
   io = () => "Location name is too big (max. 128 characters)",
   co = () => "Nome da localização é grande demais (max. 128 caracteres)",
   uo = () => "位置名称过长（最大 128 个字符）",
-  _o = () => "Ortsname ist zu lang (max. 128 Zeichen)",
-  lo = () => "El nombre de la ubicación es demasiado largo (máx. 128 caracteres)",
+  lo = () => "Ortsname ist zu lang (max. 128 Zeichen)",
+  _o = () => "El nombre de la ubicación es demasiado largo (máx. 128 caracteres)",
   fo = () => "Le nom de l’emplacement est trop long (max. 128 caractères)",
   mo = () => "Il nome della località è troppo lungo (max. 128 caratteri)",
   ho = () => "場所の名前が長すぎます（最大128文字）。",
@@ -662,12 +662,12 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   wo = () => "Назва локації надто довга (макс. 128 символів)",
   yo = () => "Tên vị trí quá dài (tối đa 128 ký tự)",
   bo = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? io() : e === "pt" ? co() : e === "ch" ? uo() : e === "de" ? _o() : e === "es" ? lo() : e === "fr" ? fo() : e === "it" ? mo() : e === "jp" ? ho() : e === "pl" ? po() : e === "ru" ? go() : e === "uk" ? wo() : yo()
+    const e = t.locale ?? _();
+    return e === "en" ? io() : e === "pt" ? co() : e === "ch" ? uo() : e === "de" ? lo() : e === "es" ? _o() : e === "fr" ? fo() : e === "it" ? mo() : e === "jp" ? ho() : e === "pl" ? po() : e === "ru" ? go() : e === "uk" ? wo() : yo()
   },
   Eo = () => "Multi-accounting",
-  Oo = () => "Múltiplas contas",
-  To = () => "多账号",
+  To = () => "Múltiplas contas",
+  Oo = () => "多账号",
   vo = () => "Multi-Accounting",
   Io = () => "Multi-cuentas",
   No = () => "Multi-comptes",
@@ -678,8 +678,8 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   ko = () => "Мультиакаунтинг",
   xo = () => "Nhiều tài khoản",
   Po = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Eo() : e === "pt" ? Oo() : e === "ch" ? To() : e === "de" ? vo() : e === "es" ? Io() : e === "fr" ? No() : e === "it" ? Ro() : e === "jp" ? Ao() : e === "pl" ? Do() : e === "ru" ? So() : e === "uk" ? ko() : xo()
+    const e = t.locale ?? _();
+    return e === "en" ? Eo() : e === "pt" ? To() : e === "ch" ? Oo() : e === "de" ? vo() : e === "es" ? Io() : e === "fr" ? No() : e === "it" ? Ro() : e === "jp" ? Ao() : e === "pl" ? Do() : e === "ru" ? So() : e === "uk" ? ko() : xo()
   },
   Uo = r => `You can change your name again in ${r.days} days`,
   Lo = r => `Você pode alterar seu nome novamente em ${r.days} dias.`,
@@ -694,14 +694,14 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   $o = r => `Ви зможете змінити імʼя знову через ${r.days} днів`,
   Co = r => `Bạn có thể đổi tên lại sau ${r.days} ngày`,
   Vo = (r, t = {}) => {
-    const e = t.locale ?? d();
+    const e = t.locale ?? _();
     return e === "en" ? Uo(r) : e === "pt" ? Lo(r) : e === "ch" ? jo(r) : e === "de" ? Bo(r) : e === "es" ? Mo(r) : e === "fr" ? qo(r) : e === "it" ? Ko(r) : e === "jp" ? zo(r) : e === "pl" ? Fo(r) : e === "ru" ? Go(r) : e === "uk" ? $o(r) : Co(r)
   },
   Ho = () => "No internet access or the servers are offline. Try again later.",
   Wo = () => "Sem acesso à internet ou os servidores estão fora do ar. Tente novamente mais tarde.",
   Yo = () => "没有网络连接或服务器已离线。请稍后重试。",
-  Jo = () => "Keine Internetverbindung oder Server offline. Versuche es später erneut.",
-  Qo = () => "Sin acceso a internet o los servidores están fuera de línea. Inténtalo de nuevo más tarde.",
+  Qo = () => "Keine Internetverbindung oder Server offline. Versuche es später erneut.",
+  Jo = () => "Sin acceso a internet o los servidores están fuera de línea. Inténtalo de nuevo más tarde.",
   Xo = () => "Pas d’accès à Internet ou serveurs hors ligne. Réessayez plus tard.",
   Zo = () => "Nessun accesso a internet o server offline. Riprova più tardi.",
   ei = () => "インターネットに接続されていないか、サーバーがオフラインです。しばらくしてから再度お試しください。",
@@ -710,15 +710,15 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   ni = () => "Немає доступу до інтернету або сервери недоступні. Спробуйте пізніше.",
   ai = () => "Không có kết nối internet hoặc máy chủ đang ngoại tuyến. Hãy thử lại sau.",
   si = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Ho() : e === "pt" ? Wo() : e === "ch" ? Yo() : e === "de" ? Jo() : e === "es" ? Qo() : e === "fr" ? Xo() : e === "it" ? Zo() : e === "jp" ? ei() : e === "pl" ? ti() : e === "ru" ? ri() : e === "uk" ? ni() : ai()
+    const e = t.locale ?? _();
+    return e === "en" ? Ho() : e === "pt" ? Wo() : e === "ch" ? Yo() : e === "de" ? Qo() : e === "es" ? Jo() : e === "fr" ? Xo() : e === "it" ? Zo() : e === "jp" ? ei() : e === "pl" ? ti() : e === "ru" ? ri() : e === "uk" ? ni() : ai()
   },
   oi = () => "Operation not allowed. Maybe you have too many favorite locations.",
   ii = () => "Operação não permitida. Talvez você tenha muitos locais favoritos.",
   ci = () => "操作不被允许。你的收藏位置可能过多。",
   ui = () => "Aktion nicht erlaubt. Vielleicht hast du zu viele Lieblingsorte.",
-  _i = () => "Operación no permitida. Puede que tengas demasiadas ubicaciones favoritas.",
-  li = () => "Opération non autorisée. Vous avez peut-être trop d’emplacements favoris.",
+  li = () => "Operación no permitida. Puede que tengas demasiadas ubicaciones favoritas.",
+  _i = () => "Opération non autorisée. Vous avez peut-être trop d’emplacements favoris.",
   di = () => "Operazione non consentita. Forse hai troppi luoghi preferiti.",
   fi = () => "この操作は許可されていません。お気に入りの場所が多すぎる可能性があります。",
   mi = () => "Operacja niedozwolona. Możliwe, że masz zbyt wiele ulubionych lokalizacji.",
@@ -726,14 +726,14 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   pi = () => "Операцію заборонено. Можливо, у вас забагато вибраних локацій.",
   gi = () => "Thao tác không được phép. Có thể bạn đã có quá nhiều vị trí yêu thích.",
   wi = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? oi() : e === "pt" ? ii() : e === "ch" ? ci() : e === "de" ? ui() : e === "es" ? _i() : e === "fr" ? li() : e === "it" ? di() : e === "jp" ? fi() : e === "pl" ? mi() : e === "ru" ? hi() : e === "uk" ? pi() : gi()
+    const e = t.locale ?? _();
+    return e === "en" ? oi() : e === "pt" ? ii() : e === "ch" ? ci() : e === "de" ? ui() : e === "es" ? li() : e === "fr" ? _i() : e === "it" ? di() : e === "jp" ? fi() : e === "pl" ? mi() : e === "ru" ? hi() : e === "uk" ? pi() : gi()
   },
   yi = () => "You are trying to paint with a color you do not own",
   bi = () => "Você está tentando pintar com uma cor que não possui",
   Ei = () => "你正在尝试使用尚未拥有的颜色进行绘制",
-  Oi = () => "Du versuchst mit einer Farbe zu malen, die du nicht besitzt",
-  Ti = () => "Estás intentando pintar con un color que no posees",
+  Ti = () => "Du versuchst mit einer Farbe zu malen, die du nicht besitzt",
+  Oi = () => "Estás intentando pintar con un color que no posees",
   vi = () => "Vous essayez de peindre avec une couleur que vous ne possédez pas",
   Ii = () => "Stai cercando di dipingere con un colore che non possiedi",
   Ni = () => "所持していない色で塗ろうとしています。",
@@ -742,8 +742,8 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Di = () => "Ви намагаєтеся малювати кольором, якого не маєте",
   Si = () => "Bạn đang cố tô bằng một màu bạn không sở hữu",
   ki = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? yi() : e === "pt" ? bi() : e === "ch" ? Ei() : e === "de" ? Oi() : e === "es" ? Ti() : e === "fr" ? vi() : e === "it" ? Ii() : e === "jp" ? Ni() : e === "pl" ? Ri() : e === "ru" ? Ai() : e === "uk" ? Di() : Si()
+    const e = t.locale ?? _();
+    return e === "en" ? yi() : e === "pt" ? bi() : e === "ch" ? Ei() : e === "de" ? Ti() : e === "es" ? Oi() : e === "fr" ? vi() : e === "it" ? Ii() : e === "jp" ? Ni() : e === "pl" ? Ri() : e === "ru" ? Ai() : e === "uk" ? Di() : Si()
   },
   xi = () => "Phone already used",
   Pi = () => "Telefone já usado",
@@ -758,7 +758,7 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Fi = () => "Номер телефону вже використовується",
   Gi = () => "Số điện thoại đã được sử dụng",
   $i = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
+    const e = t.locale ?? _();
     return e === "en" ? xi() : e === "pt" ? Pi() : e === "ch" ? Ui() : e === "de" ? Li() : e === "es" ? ji() : e === "fr" ? Bi() : e === "it" ? Mi() : e === "jp" ? qi() : e === "pl" ? Ki() : e === "ru" ? zi() : e === "uk" ? Fi() : Gi()
   },
   Ci = () => "Refresh your page to get the latest update",
@@ -766,16 +766,16 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Hi = () => "刷新页面以获取最新更新",
   Wi = () => "Aktualisiere die Seite, um die neuesten Updates zu erhalten",
   Yi = () => "Actualiza la página para obtener la última versión",
-  Ji = () => "Actualisez la page pour obtenir les dernières mises à jour",
-  Qi = () => "Ricarica la pagina per ottenere gli ultimi aggiornamenti",
+  Qi = () => "Actualisez la page pour obtenir les dernières mises à jour",
+  Ji = () => "Ricarica la pagina per ottenere gli ultimi aggiornamenti",
   Xi = () => "最新の状態にするにはページを再読み込みしてください。",
   Zi = () => "Odśwież stronę, aby zobaczyć najnowszą aktualizację",
   ec = () => "Обновите страницу, чтобы получить последние изменения",
   tc = () => "Оновіть сторінку, щоб отримати останні оновлення",
   rc = () => "Hãy làm mới trang để nhận được cập nhật mới nhất",
   nc = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Ci() : e === "pt" ? Vi() : e === "ch" ? Hi() : e === "de" ? Wi() : e === "es" ? Yi() : e === "fr" ? Ji() : e === "it" ? Qi() : e === "jp" ? Xi() : e === "pl" ? Zi() : e === "ru" ? ec() : e === "uk" ? tc() : rc()
+    const e = t.locale ?? _();
+    return e === "en" ? Ci() : e === "pt" ? Vi() : e === "ch" ? Hi() : e === "de" ? Wi() : e === "es" ? Yi() : e === "fr" ? Qi() : e === "it" ? Ji() : e === "jp" ? Xi() : e === "pl" ? Zi() : e === "ru" ? ec() : e === "uk" ? tc() : rc()
   },
   ac = () => "The typed username does not match your current username.",
   sc = () => "O nome de usuário digitado não corresponde ao seu nome de usuário atual.",
@@ -783,31 +783,31 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   ic = () => "Der eingegebene Benutzername stimmt nicht mit deinem aktuellen Benutzernamen überein.",
   cc = () => "El nombre de usuario ingresado no coincide con tu nombre de usuario actual.",
   uc = () => "Le nom d’utilisateur saisi ne correspond pas à votre nom d’utilisateur actuel.",
-  _c = () => "Il nome utente inserito non corrisponde al tuo nome utente attuale.",
-  lc = () => "入力されたユーザー名が、現在のユーザー名と一致しません。",
+  lc = () => "Il nome utente inserito non corrisponde al tuo nome utente attuale.",
+  _c = () => "入力されたユーザー名が、現在のユーザー名と一致しません。",
   dc = () => "Wpisana nazwa użytkownika nie zgadza się z obecną nazwą.",
   fc = () => "Введённое имя пользователя не совпадает с текущим.",
   mc = () => "Введене імʼя користувача не збігається з поточним.",
   hc = () => "Tên người dùng nhập vào không trùng với tên hiện tại.",
   pc = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? ac() : e === "pt" ? sc() : e === "ch" ? oc() : e === "de" ? ic() : e === "es" ? cc() : e === "fr" ? uc() : e === "it" ? _c() : e === "jp" ? lc() : e === "pl" ? dc() : e === "ru" ? fc() : e === "uk" ? mc() : hc()
+    const e = t.locale ?? _();
+    return e === "en" ? ac() : e === "pt" ? sc() : e === "ch" ? oc() : e === "de" ? ic() : e === "es" ? cc() : e === "fr" ? uc() : e === "it" ? lc() : e === "jp" ? _c() : e === "pl" ? dc() : e === "ru" ? fc() : e === "uk" ? mc() : hc()
   },
   gc = () => "Unexpected server error. Try again later.",
   wc = () => "Erro inesperado do servidor. Tente novamente mais tarde.",
   yc = () => "服务器出现意外错误。请稍后再试。",
   bc = () => "Unerwarteter Serverfehler. Versuche es später erneut.",
   Ec = () => "Error inesperado del servidor. Inténtalo de nuevo más tarde.",
-  Oc = () => "Erreur serveur inattendue. Réessayez plus tard.",
-  Tc = () => "Errore imprevisto del server. Riprova più tardi.",
+  Tc = () => "Erreur serveur inattendue. Réessayez plus tard.",
+  Oc = () => "Errore imprevisto del server. Riprova più tardi.",
   vc = () => "予期しないサーバーエラーが発生しました。時間をおいて再度お試しください。",
   Ic = () => "Nieoczekiwany błąd serwera. Spróbuj ponownie później.",
   Nc = () => "Непредвиденная ошибка сервера. Попробуйте позже.",
   Rc = () => "Неочікувана помилка сервера. Спробуйте пізніше.",
   Ac = () => "Lỗi máy chủ không mong muốn. Hãy thử lại sau.",
   i = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? gc() : e === "pt" ? wc() : e === "ch" ? yc() : e === "de" ? bc() : e === "es" ? Ec() : e === "fr" ? Oc() : e === "it" ? Tc() : e === "jp" ? vc() : e === "pl" ? Ic() : e === "ru" ? Nc() : e === "uk" ? Rc() : Ac()
+    const e = t.locale ?? _();
+    return e === "en" ? gc() : e === "pt" ? wc() : e === "ch" ? yc() : e === "de" ? bc() : e === "es" ? Ec() : e === "fr" ? Tc() : e === "it" ? Oc() : e === "jp" ? vc() : e === "pl" ? Ic() : e === "ru" ? Nc() : e === "uk" ? Rc() : Ac()
   },
   Dc = () => "Failed to load WebAssembly module. Try to use another browser.",
   Sc = () => "Erro ao carregar módulo WebAssembly. Tente usar outro navegador.",
@@ -822,7 +822,7 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   qc = () => "Не вдалося завантажити модуль WebAssembly. Спробуйте інший браузер.",
   Kc = () => "Lỗi tải mô-đun WebAssembly. Hãy thử dùng trình duyệt khác.",
   zc = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
+    const e = t.locale ?? _();
     return e === "en" ? Dc() : e === "pt" ? Sc() : e === "ch" ? kc() : e === "de" ? xc() : e === "es" ? Pc() : e === "fr" ? Uc() : e === "it" ? Lc() : e === "jp" ? jc() : e === "pl" ? Bc() : e === "ru" ? Mc() : e === "uk" ? qc() : Kc()
   },
   Fc = () => "You already have this item. Please refresh the page.",
@@ -833,13 +833,13 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Hc = () => "Vous possédez déjà cet objet. Actualisez la page.",
   Wc = () => "Possiedi già questo oggetto. Aggiorna la pagina.",
   Yc = () => "このアイテムはすでに所持しています。ページを更新してください。",
-  Jc = () => "Masz już ten przedmiot. Odśwież stronę.",
-  Qc = () => "У вас уже есть этот предмет. Обновите страницу.",
+  Qc = () => "Masz już ten przedmiot. Odśwież stronę.",
+  Jc = () => "У вас уже есть этот предмет. Обновите страницу.",
   Xc = () => "У вас уже є цей предмет. Оновіть сторінку.",
   Zc = () => "Bạn đã sở hữu vật phẩm này. Hãy tải lại trang.",
   me = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Fc() : e === "pt" ? Gc() : e === "ch" ? $c() : e === "de" ? Cc() : e === "es" ? Vc() : e === "fr" ? Hc() : e === "it" ? Wc() : e === "jp" ? Yc() : e === "pl" ? Jc() : e === "ru" ? Qc() : e === "uk" ? Xc() : Zc()
+    const e = t.locale ?? _();
+    return e === "en" ? Fc() : e === "pt" ? Gc() : e === "ch" ? $c() : e === "de" ? Cc() : e === "es" ? Vc() : e === "fr" ? Hc() : e === "it" ? Wc() : e === "jp" ? Yc() : e === "pl" ? Qc() : e === "ru" ? Jc() : e === "uk" ? Xc() : Zc()
   },
   eu = () => "You are already in an alliance",
   tu = () => "Você já está em uma aliança",
@@ -851,11 +851,11 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   iu = () => "すでにアライアンスに所属しています。",
   cu = () => "Jesteś już w sojuszu",
   uu = () => "Вы уже состоите в альянсе",
-  _u = () => "Ви вже перебуваєте в альянсі",
-  lu = () => "Bạn đã ở trong một liên minh",
+  lu = () => "Ви вже перебуваєте в альянсі",
+  _u = () => "Bạn đã ở trong một liên minh",
   du = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? eu() : e === "pt" ? tu() : e === "ch" ? ru() : e === "de" ? nu() : e === "es" ? au() : e === "fr" ? su() : e === "it" ? ou() : e === "jp" ? iu() : e === "pl" ? cu() : e === "ru" ? uu() : e === "uk" ? _u() : lu()
+    const e = t.locale ?? _();
+    return e === "en" ? eu() : e === "pt" ? tu() : e === "ch" ? ru() : e === "de" ? nu() : e === "es" ? au() : e === "fr" ? su() : e === "it" ? ou() : e === "jp" ? iu() : e === "pl" ? cu() : e === "ru" ? uu() : e === "uk" ? lu() : _u()
   },
   fu = () => "You are not allowed to do this",
   mu = () => "Você não tem permissão para fazer isso",
@@ -866,12 +866,12 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   yu = () => "Non hai il permesso di farlo",
   bu = () => "この操作を行う権限がありません。",
   Eu = () => "Nie masz uprawnień, aby to zrobić",
-  Ou = () => "У вас нет прав для этого действия",
-  Tu = () => "Ви не маєте права це робити",
+  Tu = () => "У вас нет прав для этого действия",
+  Ou = () => "Ви не маєте права це робити",
   vu = () => "Bạn không có quyền làm việc này",
   D = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? fu() : e === "pt" ? mu() : e === "ch" ? hu() : e === "de" ? pu() : e === "es" ? gu() : e === "fr" ? wu() : e === "it" ? yu() : e === "jp" ? bu() : e === "pl" ? Eu() : e === "ru" ? Ou() : e === "uk" ? Tu() : vu()
+    const e = t.locale ?? _();
+    return e === "en" ? fu() : e === "pt" ? mu() : e === "ch" ? hu() : e === "de" ? pu() : e === "es" ? gu() : e === "fr" ? wu() : e === "it" ? yu() : e === "jp" ? bu() : e === "pl" ? Eu() : e === "ru" ? Tu() : e === "uk" ? Ou() : vu()
   },
   Iu = () => "You do not have enough Droplets to buy this item.",
   Nu = () => "Você não tem gotas suficientes para comprar este item.",
@@ -886,88 +886,136 @@ const He = "" + new URL("../assets/pawtect_wasm_bg.BvxCe1S1.wasm", import.meta.u
   Lu = () => "У вас недостатньо дроплетів, щоб купити цей предмет.",
   ju = () => "Bạn không có đủ droplets để mua vật phẩm này.",
   he = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
+    const e = t.locale ?? _();
     return e === "en" ? Iu() : e === "pt" ? Nu() : e === "ch" ? Ru() : e === "de" ? Au() : e === "es" ? Du() : e === "fr" ? Su() : e === "it" ? ku() : e === "jp" ? xu() : e === "pl" ? Pu() : e === "ru" ? Uu() : e === "uk" ? Lu() : ju()
   },
-  Bu = () => "You have to wait to resend a code",
-  Mu = () => "Você tem de esperar para reenviar um código",
-  qu = () => "你需要等待一段时间才能重新发送验证码",
-  Ku = () => "Du musst warten, bevor du einen Code erneut senden kannst",
-  zu = () => "Tienes que esperar para reenviar un código",
-  Fu = () => "Vous devez attendre avant de renvoyer un code",
-  Gu = () => "Devi aspettare per reinviare un codice",
-  $u = () => "コードを再送信するまでしばらくお待ちください。",
-  Cu = () => "Musisz poczekać, zanim wyślesz kod ponownie",
-  Vu = () => "Вам нужно подождать, прежде чем отправить код ещё раз",
-  Hu = () => "Перш ніж повторно надіслати код, потрібно почекати",
-  Wu = () => "Bạn phải chờ trước khi gửi lại mã",
-  Yu = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
+  Bu = () => "You need to be logged in to paint",
+  Mu = () => "Você precisa estar conectado para pintar",
+  qu = () => "你需要登录才能进行绘制",
+  Ku = () => "Du musst eingeloggt sein, um zu malen",
+  zu = () => "Debes iniciar sesión para pintar",
+  Fu = () => "Vous devez être connecté pour peindre",
+  Gu = () => "Devi avere effettuato l'accesso per dipingere",
+  $u = () => "ペイントするにはログインが必要です。",
+  Cu = () => "Musisz być zalogowany, aby malować",
+  Vu = () => "Чтобы рисовать, нужно войти в аккаунт",
+  Hu = () => "Щоб малювати, необхідно увійти в акаунт",
+  Wu = () => "Bạn cần đăng nhập để tô",
+  ne = (r = {}, t = {}) => {
+    const e = t.locale ?? _();
     return e === "en" ? Bu() : e === "pt" ? Mu() : e === "ch" ? qu() : e === "de" ? Ku() : e === "es" ? zu() : e === "fr" ? Fu() : e === "it" ? Gu() : e === "jp" ? $u() : e === "pl" ? Cu() : e === "ru" ? Vu() : e === "uk" ? Hu() : Wu()
   },
-  Ju = () => "You need to be logged in to paint",
-  Qu = () => "Você precisa estar conectado para pintar",
-  Xu = () => "你需要登录才能进行绘制",
-  Zu = () => "Du musst eingeloggt sein, um zu malen",
-  e_ = () => "Debes iniciar sesión para pintar",
-  t_ = () => "Vous devez être connecté pour peindre",
-  r_ = () => "Devi avere effettuato l'accesso per dipingere",
-  n_ = () => "ペイントするにはログインが必要です。",
-  a_ = () => "Musisz być zalogowany, aby malować",
-  s_ = () => "Чтобы рисовать, нужно войти в аккаунт",
-  o_ = () => "Щоб малювати, необхідно увійти в акаунт",
-  i_ = () => "Bạn cần đăng nhập để tô",
-  ne = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Ju() : e === "pt" ? Qu() : e === "ch" ? Xu() : e === "de" ? Zu() : e === "es" ? e_() : e === "fr" ? t_() : e === "it" ? r_() : e === "jp" ? n_() : e === "pl" ? a_() : e === "ru" ? s_() : e === "uk" ? o_() : i_()
-  },
-  c_ = () => "You or someone in your network is making a lot of requests to the server. Try again later.",
-  u_ = () => "Você ou alguém na sua rede está fazendo muitas solicitações ao servidor. Tente novamente mais tarde.",
-  __ = () => "你或与你同一网络中的某人向服务器发出了大量请求。请稍后再试。",
-  l_ = () => "Du oder jemand in deinem Netzwerk sendet sehr viele Anfragen an den Server. Versuche es später erneut.",
-  d_ = () => "Tú o alguien en tu red está realizando demasiadas solicitudes al servidor. Inténtalo de nuevo más tarde.",
-  f_ = () => "Vous ou quelqu’un sur votre réseau envoie beaucoup de requêtes au serveur. Réessayez plus tard.",
-  m_ = () => "Tu o qualcuno nella tua rete state facendo troppe richieste al server. Riprova più tardi.",
-  h_ = () => "あなた、または同じネットワーク上の誰かがサーバーへ大量のリクエストを送信しています。しばらくしてから再度お試しください。",
-  p_ = () => "Ty lub ktoś w Twojej sieci wysyła zbyt wiele żądań do serwera. Spróbuj ponownie później.",
-  g_ = () => "Вы или кто-то в вашей сети делает слишком много запросов к серверу. Попробуйте позже.",
-  w_ = () => "Ви або хтось у вашій мережі надсилає надто багато запитів до сервера. Спробуйте пізніше.",
-  y_ = () => "Bạn hoặc ai đó trong mạng của bạn đang gửi quá nhiều yêu cầu đến máy chủ. Hãy thử lại sau.",
+  Yu = () => "You or someone in your network is making a lot of requests to the server. Try again later.",
+  Qu = () => "Você ou alguém na sua rede está fazendo muitas solicitações ao servidor. Tente novamente mais tarde.",
+  Ju = () => "你或与你同一网络中的某人向服务器发出了大量请求。请稍后再试。",
+  Xu = () => "Du oder jemand in deinem Netzwerk sendet sehr viele Anfragen an den Server. Versuche es später erneut.",
+  Zu = () => "Tú o alguien en tu red está realizando demasiadas solicitudes al servidor. Inténtalo de nuevo más tarde.",
+  el = () => "Vous ou quelqu’un sur votre réseau envoie beaucoup de requêtes au serveur. Réessayez plus tard.",
+  tl = () => "Tu o qualcuno nella tua rete state facendo troppe richieste al server. Riprova più tardi.",
+  rl = () => "あなた、または同じネットワーク上の誰かがサーバーへ大量のリクエストを送信しています。しばらくしてから再度お試しください。",
+  nl = () => "Ty lub ktoś w Twojej sieci wysyła zbyt wiele żądań do serwera. Spróbuj ponownie później.",
+  al = () => "Вы или кто-то в вашей сети делает слишком много запросов к серверу. Попробуйте позже.",
+  sl = () => "Ви або хтось у вашій мережі надсилає надто багато запитів до сервера. Спробуйте пізніше.",
+  ol = () => "Bạn hoặc ai đó trong mạng của bạn đang gửi quá nhiều yêu cầu đến máy chủ. Hãy thử lại sau.",
   pe = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? c_() : e === "pt" ? u_() : e === "ch" ? __() : e === "de" ? l_() : e === "es" ? d_() : e === "fr" ? f_() : e === "it" ? m_() : e === "jp" ? h_() : e === "pl" ? p_() : e === "ru" ? g_() : e === "uk" ? w_() : y_()
+    const e = t.locale ?? _();
+    return e === "en" ? Yu() : e === "pt" ? Qu() : e === "ch" ? Ju() : e === "de" ? Xu() : e === "es" ? Zu() : e === "fr" ? el() : e === "it" ? tl() : e === "jp" ? rl() : e === "pl" ? nl() : e === "ru" ? al() : e === "uk" ? sl() : ol()
   },
-  b_ = r => `Your account has been suspended out until ${r.until}`,
-  E_ = r => `A sua conta está suspensa até ${r.until}`,
-  O_ = r => `你的账号已被暂停至 ${r.until}`,
-  T_ = r => `Dein Konto ist gesperrt bis ${r.until}`,
-  v_ = r => `Tu cuenta ha sido suspendida hasta ${r.until}`,
-  I_ = r => `Votre compte est suspendu jusqu’au ${r.until}`,
-  N_ = r => `Il tuo account è sospeso fino al ${r.until}`,
-  R_ = r => `あなたのアカウントは${r.until}まで一時停止されています。`,
-  A_ = r => `Twoje konto zostało zawieszone do ${r.until}`,
-  D_ = r => `Ваш аккаунт заблокирован до ${r.until}`,
-  S_ = r => `Ваш акаунт призупинено до ${r.until}`,
-  k_ = r => `Tài khoản của bạn đã bị đình chỉ đến ${r.until}`,
-  x_ = (r, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? b_(r) : e === "pt" ? E_(r) : e === "ch" ? O_(r) : e === "de" ? T_(r) : e === "es" ? v_(r) : e === "fr" ? I_(r) : e === "it" ? N_(r) : e === "jp" ? R_(r) : e === "pl" ? A_(r) : e === "ru" ? D_(r) : e === "uk" ? S_(r) : k_(r)
+  il = r => `Your account has been suspended out until ${r.until}`,
+  cl = r => `A sua conta está suspensa até ${r.until}`,
+  ul = r => `你的账号已被暂停至 ${r.until}`,
+  ll = r => `Dein Konto ist gesperrt bis ${r.until}`,
+  _l = r => `Tu cuenta ha sido suspendida hasta ${r.until}`,
+  dl = r => `Votre compte est suspendu jusqu’au ${r.until}`,
+  fl = r => `Il tuo account è sospeso fino al ${r.until}`,
+  ml = r => `あなたのアカウントは${r.until}まで一時停止されています。`,
+  hl = r => `Twoje konto zostało zawieszone do ${r.until}`,
+  pl = r => `Ваш аккаунт заблокирован до ${r.until}`,
+  gl = r => `Ваш акаунт призупинено до ${r.until}`,
+  wl = r => `Tài khoản của bạn đã bị đình chỉ đến ${r.until}`,
+  yl = (r, t = {}) => {
+    const e = t.locale ?? _();
+    return e === "en" ? il(r) : e === "pt" ? cl(r) : e === "ch" ? ul(r) : e === "de" ? ll(r) : e === "es" ? _l(r) : e === "fr" ? dl(r) : e === "it" ? fl(r) : e === "jp" ? ml(r) : e === "pl" ? hl(r) : e === "ru" ? pl(r) : e === "uk" ? gl(r) : wl(r)
   },
-  P_ = () => "Exceeded maximum number of characters",
-  U_ = () => "Excedeu o número máximo de caracteres permitidos",
-  L_ = () => "超出最大字符数",
-  j_ = () => "Maximale Zeichenanzahl überschritten",
-  B_ = () => "Se excedió el número máximo de caracteres",
-  M_ = () => "Nombre maximal de caractères dépassé",
-  q_ = () => "Numero massimo di caratteri superato",
-  K_ = () => "最大文字数を超過しました",
-  z_ = () => "Przekroczono maksymalną liczbę znaków",
-  F_ = () => "Превышено максимальное количество символов",
-  G_ = () => "Перевищено максимальну кількість символів",
-  $_ = () => "Đã vượt quá số ký tự tối đa",
-  C_ = (r = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? P_() : e === "pt" ? U_() : e === "ch" ? L_() : e === "de" ? j_() : e === "es" ? B_() : e === "fr" ? M_() : e === "it" ? q_() : e === "jp" ? K_() : e === "pl" ? z_() : e === "ru" ? F_() : e === "uk" ? G_() : $_()
+  bl = () => "Exceeded maximum number of characters",
+  El = () => "Excedeu o número máximo de caracteres permitidos",
+  Tl = () => "超出最大字符数",
+  Ol = () => "Maximale Zeichenanzahl überschritten",
+  vl = () => "Se excedió el número máximo de caracteres",
+  Il = () => "Nombre maximal de caractères dépassé",
+  Nl = () => "Numero massimo di caratteri superato",
+  Rl = () => "最大文字数を超過しました",
+  Al = () => "Przekroczono maksymalną liczbę znaków",
+  Dl = () => "Превышено максимальное количество символов",
+  Sl = () => "Перевищено максимальну кількість символів",
+  kl = () => "Đã vượt quá số ký tự tối đa",
+  xl = (r = {}, t = {}) => {
+    const e = t.locale ?? _();
+    return e === "en" ? bl() : e === "pt" ? El() : e === "ch" ? Tl() : e === "de" ? Ol() : e === "es" ? vl() : e === "fr" ? Il() : e === "it" ? Nl() : e === "jp" ? Rl() : e === "pl" ? Al() : e === "ru" ? Dl() : e === "uk" ? Sl() : kl()
+  },
+  Pl = () => "This phone number is already verified with another account",
+  Ul = () => "Este número de telefone já está verificado com outra conta",
+  Ll = () => "此电话号码已通过另一个账户验证",
+  jl = () => "Diese Telefonnummer ist bereits mit einem anderen Konto verifiziert.",
+  Bl = () => "Este número de teléfono ya está verificado con otra cuenta",
+  Ml = () => "Ce numéro de téléphone est déjà vérifié avec un autre compte",
+  ql = () => "Questo numero di telefono è già verificato con un altro account",
+  Kl = () => "この電話番号はすでに別のアカウントで認証されています",
+  zl = () => "Ten numer telefonu jest już zweryfikowany z innym kontem",
+  Fl = () => "Этот номер телефона уже привязан к другому аккаунту",
+  Gl = () => "Цей номер телефону вже підтверджено з іншим обліковим записом",
+  $l = () => "Số điện thoại này đã được xác minh với một tài khoản khác",
+  Cl = (r = {}, t = {}) => {
+    const e = t.locale ?? _();
+    return e === "en" ? Pl() : e === "pt" ? Ul() : e === "ch" ? Ll() : e === "de" ? jl() : e === "es" ? Bl() : e === "fr" ? Ml() : e === "it" ? ql() : e === "jp" ? Kl() : e === "pl" ? zl() : e === "ru" ? Fl() : e === "uk" ? Gl() : $l()
+  },
+  Vl = () => "This phone number's region is not supported",
+  Hl = () => "A região deste número de telefone não é suportada",
+  Wl = () => "此电话号码的地区不受支持",
+  Yl = () => "Die Region dieser Telefonnummer wird nicht unterstützt",
+  Ql = () => "La región de este número de teléfono no es compatible",
+  Jl = () => "La région de ce numéro de téléphone n'est pas prise en charge",
+  Xl = () => "La regione di questo numero di telefono non è supportata",
+  Zl = () => "この電話番号の地域はサポートされていません",
+  e_ = () => "Region tego numeru telefonu nie jest obsługiwany",
+  t_ = () => "Регион этого номера телефона не поддерживается",
+  r_ = () => "Регіон цього номера телефону не підтримується",
+  n_ = () => "Vùng của số điện thoại này không được hỗ trợ",
+  a_ = (r = {}, t = {}) => {
+    const e = t.locale ?? _();
+    return e === "en" ? Vl() : e === "pt" ? Hl() : e === "ch" ? Wl() : e === "de" ? Yl() : e === "es" ? Ql() : e === "fr" ? Jl() : e === "it" ? Xl() : e === "jp" ? Zl() : e === "pl" ? e_() : e === "ru" ? t_() : e === "uk" ? r_() : n_()
+  },
+  s_ = () => "Too many attempts. Please try again later",
+  o_ = () => "Muitas tentativas. Por favor, tente novamente mais tarde.",
+  i_ = () => "尝试次数过多，请稍后再试",
+  c_ = () => "Zu viele Versuche. Bitte versuchen Sie es später erneut",
+  u_ = () => "Demasiados intentos. Por favor, inténtalo de nuevo más tarde",
+  l_ = () => "Trop de tentatives. Veuillez réessayer plus tard",
+  __ = () => "Troppi tentativi. Riprova più tardi.",
+  d_ = () => "試行回数が多すぎます。後で再度お試しください。",
+  f_ = () => "Zbyt wiele prób. Proszę spróbować ponownie później",
+  m_ = () => "Слишком много попыток. Пожалуйста, попробуйте позже",
+  h_ = () => "Забагато спроб. Будь ласка, спробуйте пізніше",
+  p_ = () => "Quá nhiều lần thử. Vui lòng thử lại sau.",
+  g_ = (r = {}, t = {}) => {
+    const e = t.locale ?? _();
+    return e === "en" ? s_() : e === "pt" ? o_() : e === "ch" ? i_() : e === "de" ? c_() : e === "es" ? u_() : e === "fr" ? l_() : e === "it" ? __() : e === "jp" ? d_() : e === "pl" ? f_() : e === "ru" ? m_() : e === "uk" ? h_() : p_()
+  },
+  w_ = () => "You are not allowed to verify a phone number. Try refreshing the page",
+  y_ = () => "Você não está autorizado a verificar um número de telefone. Tente atualizar a página.",
+  b_ = () => "您无权验证电话号码。请尝试刷新页面。",
+  E_ = () => "Sie dürfen keine Telefonnummer verifizieren. Versuchen Sie, die Seite zu aktualisieren.",
+  T_ = () => "No tienes permiso para verificar un número de teléfono. Prueba a recargar la página.",
+  O_ = () => "Vous n'êtes pas autorisé à vérifier un numéro de téléphone. Essayez d'actualiser la page.",
+  v_ = () => "Non ti è consentito verificare un numero di telefono. Prova ad aggiornare la pagina.",
+  I_ = () => "電話番号の認証は許可されていません。ページを更新してみてください。",
+  N_ = () => "Nie możesz zweryfikować numeru telefonu. Spróbuj odświeżyć stronę.",
+  R_ = () => "Вам не разрешено подтверждать номер телефона. Попробуйте обновить страницу.",
+  A_ = () => "Вам не дозволено перевіряти номер телефону. Спробуйте оновити сторінку.",
+  D_ = () => "Bạn không được phép xác minh số điện thoại. Vui lòng thử tải lại trang.",
+  S_ = (r = {}, t = {}) => {
+    const e = t.locale ?? _();
+    return e === "en" ? w_() : e === "pt" ? y_() : e === "ch" ? b_() : e === "de" ? E_() : e === "es" ? T_() : e === "fr" ? O_() : e === "it" ? v_() : e === "jp" ? I_() : e === "pl" ? N_() : e === "ru" ? R_() : e === "uk" ? A_() : D_()
   };
 let h;
 
@@ -984,7 +1032,7 @@ function P(r, t) {
     h.__wbindgen_exn_store(n)
   }
 }
-const Oe = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
+const Te = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
   ignoreBOM: !0,
   fatal: !0
 }) : {
@@ -992,7 +1040,7 @@ const Oe = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
     throw Error("TextDecoder not available")
   }
 };
-typeof TextDecoder < "u" && Oe.decode();
+typeof TextDecoder < "u" && Te.decode();
 let j = null;
 
 function X() {
@@ -1000,14 +1048,14 @@ function X() {
 }
 
 function B(r, t) {
-  return r = r >>> 0, Oe.decode(X().subarray(r, r + t))
+  return r = r >>> 0, Te.decode(X().subarray(r, r + t))
 }
 
-function Q(r) {
+function J(r) {
   return r == null
 }
 
-function V_(r) {
+function k_(r) {
   h.set_user_id(r)
 }
 let te = 0;
@@ -1016,7 +1064,7 @@ const Z = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
       throw Error("TextEncoder not available")
     }
   },
-  H_ = typeof Z.encodeInto == "function" ? function(r, t) {
+  x_ = typeof Z.encodeInto == "function" ? function(r, t) {
     return Z.encodeInto(r, t)
   } : function(r, t) {
     const e = Z.encode(r);
@@ -1026,37 +1074,37 @@ const Z = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
     }
   };
 
-function Te(r, t, e) {
+function Oe(r, t, e) {
   if (e === void 0) {
     const c = Z.encode(r),
-      l = t(c.length, 1) >>> 0;
-    return X().subarray(l, l + c.length).set(c), te = c.length, l
+      d = t(c.length, 1) >>> 0;
+    return X().subarray(d, d + c.length).set(c), te = c.length, d
   }
   let n = r.length,
     s = t(n, 1) >>> 0;
   const o = X();
-  let _ = 0;
-  for (; _ < n; _++) {
-    const c = r.charCodeAt(_);
+  let l = 0;
+  for (; l < n; l++) {
+    const c = r.charCodeAt(l);
     if (c > 127) break;
-    o[s + _] = c
+    o[s + l] = c
   }
-  if (_ !== n) {
-    _ !== 0 && (r = r.slice(_)), s = e(s, n, n = _ + r.length * 3, 1) >>> 0;
-    const c = X().subarray(s + _, s + n),
-      l = H_(r, c);
-    _ += l.written, s = e(s, n, _, 1) >>> 0
+  if (l !== n) {
+    l !== 0 && (r = r.slice(l)), s = e(s, n, n = l + r.length * 3, 1) >>> 0;
+    const c = X().subarray(s + l, s + n),
+      d = x_(r, c);
+    l += d.written, s = e(s, n, l, 1) >>> 0
   }
-  return te = _, s
+  return te = l, s
 }
 
-function W_(r) {
-  const t = Te(r, h.__wbindgen_malloc, h.__wbindgen_realloc),
+function P_(r) {
+  const t = Oe(r, h.__wbindgen_malloc, h.__wbindgen_realloc),
     e = te;
   h.request_url(t, e)
 }
 
-function Y_() {
+function U_() {
   let r, t;
   try {
     const e = h.get_load_payload();
@@ -1066,10 +1114,10 @@ function Y_() {
   }
 }
 
-function J_(r) {
+function L_(r) {
   let t, e;
   try {
-    const n = Te(r, h.__wbindgen_malloc, h.__wbindgen_realloc),
+    const n = Oe(r, h.__wbindgen_malloc, h.__wbindgen_realloc),
       s = te,
       o = h.get_pawtected_endpoint_payload(n, s);
     return t = o[0], e = o[1], B(o[0], o[1])
@@ -1077,7 +1125,7 @@ function J_(r) {
     h.__wbindgen_free(t, e, 1)
   }
 }
-async function Q_(r, t) {
+async function j_(r, t) {
   if (typeof Response == "function" && r instanceof Response) {
     if (typeof WebAssembly.instantiateStreaming == "function") try {
       return await WebAssembly.instantiateStreaming(r, t)
@@ -1096,7 +1144,7 @@ async function Q_(r, t) {
   }
 }
 
-function X_() {
+function B_() {
   const r = {};
   return r.wbg = {}, r.wbg.__wbg_buffer_609cc3eee51ed158 = function(t) {
     return t.buffer
@@ -1140,16 +1188,16 @@ function X_() {
     t.set(e, n >>> 0)
   }, r.wbg.__wbg_static_accessor_GLOBAL_88a902d13a557d07 = function() {
     const t = typeof global > "u" ? null : global;
-    return Q(t) ? 0 : L(t)
+    return J(t) ? 0 : L(t)
   }, r.wbg.__wbg_static_accessor_GLOBAL_THIS_56578be7e9f832b0 = function() {
     const t = typeof globalThis > "u" ? null : globalThis;
-    return Q(t) ? 0 : L(t)
+    return J(t) ? 0 : L(t)
   }, r.wbg.__wbg_static_accessor_SELF_37c5d418e4bf5819 = function() {
     const t = typeof self > "u" ? null : self;
-    return Q(t) ? 0 : L(t)
+    return J(t) ? 0 : L(t)
   }, r.wbg.__wbg_static_accessor_WINDOW_5de37043a91a9c40 = function() {
     const t = typeof window > "u" ? null : window;
-    return Q(t) ? 0 : L(t)
+    return J(t) ? 0 : L(t)
   }, r.wbg.__wbg_subarray_aa9065fa9dc5df96 = function(t, e, n) {
     return t.subarray(e >>> 0, n >>> 0)
   }, r.wbg.__wbg_versions_c01dfd4722a88165 = function(t) {
@@ -1176,7 +1224,7 @@ function X_() {
   }, r
 }
 
-function Z_(r, t) {
+function M_(r, t) {
   return h = r.exports, ve.__wbindgen_wasm_module = t, j = null, h.__wbindgen_start(), h
 }
 async function ve(r) {
@@ -1184,13 +1232,13 @@ async function ve(r) {
   typeof r < "u" && (Object.getPrototypeOf(r) === Object.prototype ? {
     module_or_path: r
   } = r : console.warn("using deprecated parameters for the initialization function; pass a single object instead")), typeof r > "u" && (r = new URL("pawtect_wasm_bg.wasm", import.meta.url));
-  const t = X_();
+  const t = B_();
   (typeof r == "string" || typeof Request == "function" && r instanceof Request || typeof URL == "function" && r instanceof URL) && (r = fetch(r));
   const {
     instance: e,
     module: n
-  } = await Q_(await r, t);
-  return Z_(e, n)
+  } = await j_(await r, t);
+  return M_(e, n)
 }
 
 function Ie(r, t) {
@@ -1200,7 +1248,7 @@ function Ie(r, t) {
   return !1
 }
 
-function el(r, t) {
+function q_(r, t) {
   for (const e of t)
     if (Ie(r, e)) return !0;
   return !1
@@ -1213,13 +1261,13 @@ function Ne(r) {
   return e
 }
 
-function tl(r) {
+function K_(r) {
   if (typeof Buffer < "u") return Buffer.from(r).toString("base64");
   let t = "";
   for (let e = 0; e < r.length; e++) t += String.fromCharCode(r[e]);
   return btoa(t)
 }
-class rl {
+class z_ {
   constructor(t) {
     p(this, "bytes");
     this.bytes = t ?? new Uint8Array
@@ -1228,10 +1276,10 @@ class rl {
     const n = Math.floor(t / 8),
       s = t % 8;
     if (n >= this.bytes.length) {
-      const _ = new Uint8Array(n + 1),
-        c = _.length - this.bytes.length;
-      for (let l = 0; l < this.bytes.length; l++) _[l + c] = this.bytes[l];
-      this.bytes = _
+      const l = new Uint8Array(n + 1),
+        c = l.length - this.bytes.length;
+      for (let d = 0; d < this.bytes.length; d++) l[d + c] = this.bytes[d];
+      this.bytes = l
     }
     const o = this.bytes.length - 1 - n;
     e ? this.bytes[o] = this.bytes[o] | 1 << s : this.bytes[o] = this.bytes[o] & ~(1 << s)
@@ -1244,7 +1292,7 @@ class rl {
   }
 }
 
-function Pl(r) {
+function wd(r) {
   return new Promise((t, e) => {
     const n = new FileReader;
     n.onload = () => {
@@ -1258,10 +1306,10 @@ function Pl(r) {
   })
 }
 
-function Ul(r) {
+function yd(r) {
   if (typeof FileReader > "u") {
     const t = r.type || "application/octet-stream";
-    return r.arrayBuffer().then(e => `data:${t};base64,${tl(new Uint8Array(e))}`)
+    return r.arrayBuffer().then(e => `data:${t};base64,${K_(new Uint8Array(e))}`)
   }
   return new Promise((t, e) => {
     const n = new FileReader;
@@ -1276,7 +1324,7 @@ function Ul(r) {
   })
 }
 
-function Ll(r) {
+function bd(r) {
   if (!r.startsWith("data:")) throw new Error("Could not parse data URL");
   const t = r.indexOf(",");
   if (t === -1) throw new Error("Could not parse data URL");
@@ -1285,9 +1333,9 @@ function Ll(r) {
     s = e.indexOf(";base64"),
     o = (s === -1 ? e : e.slice(0, s)) || "text/plain";
   if (s !== -1) {
-    const _ = Ne(n),
-      c = new Uint8Array(_.byteLength);
-    return c.set(_), new Blob([c], {
+    const l = Ne(n),
+      c = new Uint8Array(l.byteLength);
+    return c.set(l), new Blob([c], {
       type: o
     })
   }
@@ -1296,7 +1344,7 @@ function Ll(r) {
   })
 }
 var z, F, G, $, C, V, H, W;
-class nl {
+class F_ {
   constructor() {
     p(this, "channel", new BroadcastChannel("user-channel"));
     g(this, z, R());
@@ -1313,7 +1361,7 @@ class nl {
     g(this, V, U(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
     g(this, H, U(() => {
       var t;
-      return new rl(Ne(((t = this.data) == null ? void 0 : t.flagsBitmap) ?? "AA=="))
+      return new z_(Ne(((t = this.data) == null ? void 0 : t.flagsBitmap) ?? "AA=="))
     }));
     g(this, W, U(() => {
       var e;
@@ -1330,49 +1378,49 @@ class nl {
     return w(m(this, z))
   }
   set data(t) {
-    O(m(this, z), t, !0)
+    T(m(this, z), t, !0)
   }
   get loading() {
     return w(m(this, F))
   }
   set loading(t) {
-    O(m(this, F), t, !0)
+    T(m(this, F), t, !0)
   }
   get notificationCount() {
     return w(m(this, G))
   }
   set notificationCount(t) {
-    O(m(this, G), t, !0)
+    T(m(this, G), t, !0)
   }
   get lastFetch() {
     return w(m(this, $))
   }
   set lastFetch(t) {
-    O(m(this, $), t)
+    T(m(this, $), t)
   }
   get charges() {
     return w(m(this, C))
   }
   set charges(t) {
-    O(m(this, C), t)
+    T(m(this, C), t)
   }
   get cooldown() {
     return w(m(this, V))
   }
   set cooldown(t) {
-    O(m(this, V), t)
+    T(m(this, V), t)
   }
   get flagsBitmap() {
     return w(m(this, H))
   }
   set flagsBitmap(t) {
-    O(m(this, H), t)
+    T(m(this, H), t)
   }
   get timeoutUntil() {
     return w(m(this, W))
   }
   set timeoutUntil(t) {
-    O(m(this, W), t)
+    T(m(this, W), t)
   }
   async refresh() {
     var t, e;
@@ -1409,21 +1457,22 @@ class nl {
   }
   hasAnyPermission(t) {
     var e;
-    return el((e = this.data) == null ? void 0 : e.permissions, t)
+    return q_((e = this.data) == null ? void 0 : e.permissions, t)
   }
 }
 z = new WeakMap, F = new WeakMap, G = new WeakMap, $ = new WeakMap, C = new WeakMap, V = new WeakMap, H = new WeakMap, W = new WeakMap;
-const k = new nl;
+const k = new F_;
 
 function Re(r) {
   return k.data ? k.data.experiments[r] ?? null : null
 }
 
-function jl(r) {
+function Ed(r) {
   var t, e;
   return ((e = (t = k.data) == null ? void 0 : t.experiments[r]) == null ? void 0 : e.enabled) ?? !0
 }
-const Bl = {
+var a = (r => (r[r.CONTINUE = 100] = "CONTINUE", r[r.SWITCHING_PROTOCOLS = 101] = "SWITCHING_PROTOCOLS", r[r.PROCESSING = 102] = "PROCESSING", r[r.EARLY_HINTS = 103] = "EARLY_HINTS", r[r.OK = 200] = "OK", r[r.CREATED = 201] = "CREATED", r[r.ACCEPTED = 202] = "ACCEPTED", r[r.NON_AUTHORITATIVE_INFORMATION = 203] = "NON_AUTHORITATIVE_INFORMATION", r[r.NO_CONTENT = 204] = "NO_CONTENT", r[r.RESET_CONTENT = 205] = "RESET_CONTENT", r[r.PARTIAL_CONTENT = 206] = "PARTIAL_CONTENT", r[r.MULTI_STATUS = 207] = "MULTI_STATUS", r[r.ALREADY_REPORTED = 208] = "ALREADY_REPORTED", r[r.IM_USED = 226] = "IM_USED", r[r.MULTIPLE_CHOICES = 300] = "MULTIPLE_CHOICES", r[r.MOVED_PERMANENTLY = 301] = "MOVED_PERMANENTLY", r[r.MOVED_TEMPORARILY = 302] = "MOVED_TEMPORARILY", r[r.FOUND = 302] = "FOUND", r[r.SEE_OTHER = 303] = "SEE_OTHER", r[r.NOT_MODIFIED = 304] = "NOT_MODIFIED", r[r.USE_PROXY = 305] = "USE_PROXY", r[r.SWITCH_PROXY = 306] = "SWITCH_PROXY", r[r.TEMPORARY_REDIRECT = 307] = "TEMPORARY_REDIRECT", r[r.PERMANENT_REDIRECT = 308] = "PERMANENT_REDIRECT", r[r.BAD_REQUEST = 400] = "BAD_REQUEST", r[r.UNAUTHORIZED = 401] = "UNAUTHORIZED", r[r.PAYMENT_REQUIRED = 402] = "PAYMENT_REQUIRED", r[r.FORBIDDEN = 403] = "FORBIDDEN", r[r.NOT_FOUND = 404] = "NOT_FOUND", r[r.METHOD_NOT_ALLOWED = 405] = "METHOD_NOT_ALLOWED", r[r.NOT_ACCEPTABLE = 406] = "NOT_ACCEPTABLE", r[r.PROXY_AUTHENTICATION_REQUIRED = 407] = "PROXY_AUTHENTICATION_REQUIRED", r[r.REQUEST_TIMEOUT = 408] = "REQUEST_TIMEOUT", r[r.CONFLICT = 409] = "CONFLICT", r[r.GONE = 410] = "GONE", r[r.LENGTH_REQUIRED = 411] = "LENGTH_REQUIRED", r[r.PRECONDITION_FAILED = 412] = "PRECONDITION_FAILED", r[r.REQUEST_TOO_LONG = 413] = "REQUEST_TOO_LONG", r[r.CONTENT_TOO_LARGE = 413] = "CONTENT_TOO_LARGE", r[r.REQUEST_URI_TOO_LONG = 414] = "REQUEST_URI_TOO_LONG", r[r.URI_TOO_LONG = 414] = "URI_TOO_LONG", r[r.UNSUPPORTED_MEDIA_TYPE = 415] = "UNSUPPORTED_MEDIA_TYPE", r[r.REQUESTED_RANGE_NOT_SATISFIABLE = 416] = "REQUESTED_RANGE_NOT_SATISFIABLE", r[r.RANGE_NOT_SATISFIABLE = 416] = "RANGE_NOT_SATISFIABLE", r[r.EXPECTATION_FAILED = 417] = "EXPECTATION_FAILED", r[r.IM_A_TEAPOT = 418] = "IM_A_TEAPOT", r[r.INSUFFICIENT_SPACE_ON_RESOURCE = 419] = "INSUFFICIENT_SPACE_ON_RESOURCE", r[r.MISDIRECTED_REQUEST = 421] = "MISDIRECTED_REQUEST", r[r.UNPROCESSABLE_ENTITY = 422] = "UNPROCESSABLE_ENTITY", r[r.UNPROCESSABLE_CONTENT = 422] = "UNPROCESSABLE_CONTENT", r[r.LOCKED = 423] = "LOCKED", r[r.FAILED_DEPENDENCY = 424] = "FAILED_DEPENDENCY", r[r.TOO_EARLY = 425] = "TOO_EARLY", r[r.UPGRADE_REQUIRED = 426] = "UPGRADE_REQUIRED", r[r.PRECONDITION_REQUIRED = 428] = "PRECONDITION_REQUIRED", r[r.TOO_MANY_REQUESTS = 429] = "TOO_MANY_REQUESTS", r[r.REQUEST_HEADER_FIELDS_TOO_LARGE = 431] = "REQUEST_HEADER_FIELDS_TOO_LARGE", r[r.UNAVAILABLE_FOR_LEGAL_REASONS = 451] = "UNAVAILABLE_FOR_LEGAL_REASONS", r[r.INTERNAL_SERVER_ERROR = 500] = "INTERNAL_SERVER_ERROR", r[r.NOT_IMPLEMENTED = 501] = "NOT_IMPLEMENTED", r[r.BAD_GATEWAY = 502] = "BAD_GATEWAY", r[r.SERVICE_UNAVAILABLE = 503] = "SERVICE_UNAVAILABLE", r[r.GATEWAY_TIMEOUT = 504] = "GATEWAY_TIMEOUT", r[r.HTTP_VERSION_NOT_SUPPORTED = 505] = "HTTP_VERSION_NOT_SUPPORTED", r[r.VARIANT_ALSO_NEGOTIATES = 506] = "VARIANT_ALSO_NEGOTIATES", r[r.INSUFFICIENT_STORAGE = 507] = "INSUFFICIENT_STORAGE", r[r.LOOP_DETECTED = 508] = "LOOP_DETECTED", r[r.NOT_EXTENDED = 510] = "NOT_EXTENDED", r[r.NETWORK_AUTHENTICATION_REQUIRED = 511] = "NETWORK_AUTHENTICATION_REQUIRED", r[r.AWS_ELB_000 = 0] = "AWS_ELB_000", r[r.THIS_IS_FINE = 218] = "THIS_IS_FINE", r[r.PAGE_EXPIRED = 419] = "PAGE_EXPIRED", r[r.METHOD_FAILURE = 420] = "METHOD_FAILURE", r[r.ENHANCE_YOUR_CALM = 420] = "ENHANCE_YOUR_CALM", r[r.REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY = 430] = "REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY", r[r.SHOPIFY_SECURITY_REJECTION = 430] = "SHOPIFY_SECURITY_REJECTION", r[r.LOGIN_TIME_OUT = 440] = "LOGIN_TIME_OUT", r[r.NO_RESPONSE = 444] = "NO_RESPONSE", r[r.RETRY_WITH = 449] = "RETRY_WITH", r[r.BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS = 450] = "BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS", r[r.REDIRECT_IIS = 451] = "REDIRECT_IIS", r[r.CLIENT_CLOSED_CONNECTION_AWS_ELB = 460] = "CLIENT_CLOSED_CONNECTION_AWS_ELB", r[r.X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB = 463] = "X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB", r[r.INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB = 464] = "INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB", r[r.REQUEST_HEADER_TOO_LARGE = 494] = "REQUEST_HEADER_TOO_LARGE", r[r.SSL_CERTIFICATE_ERROR = 495] = "SSL_CERTIFICATE_ERROR", r[r.SSL_CERTIFICATE_REQUIRED = 496] = "SSL_CERTIFICATE_REQUIRED", r[r.HTTP_REQUEST_SENT_TO_HTTPS_PORT = 497] = "HTTP_REQUEST_SENT_TO_HTTPS_PORT", r[r.INVALID_TOKEN = 498] = "INVALID_TOKEN", r[r.CLIENT_CLOSED_REQUEST = 499] = "CLIENT_CLOSED_REQUEST", r[r.TOKEN_REQUIRED = 499] = "TOKEN_REQUIRED", r[r.BANDWIDTH_LIMIT_EXCEEDED = 509] = "BANDWIDTH_LIMIT_EXCEEDED", r[r.RESOURCE_LIMIT_IS_REACHED = 508] = "RESOURCE_LIMIT_IS_REACHED", r[r.WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR = 520] = "WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR", r[r.WEB_SERVER_IS_DOWN = 521] = "WEB_SERVER_IS_DOWN", r[r.CONNECTION_TIMED_OUT = 522] = "CONNECTION_TIMED_OUT", r[r.ORIGIN_IS_UNREACHABLE = 523] = "ORIGIN_IS_UNREACHABLE", r[r.A_TIMEOUT_OCCURRED = 524] = "A_TIMEOUT_OCCURRED", r[r.SSL_HANDSHAKE_FAILED = 525] = "SSL_HANDSHAKE_FAILED", r[r.INVALID_SSL_CERTIFICATE = 526] = "INVALID_SSL_CERTIFICATE", r[r.RAILGUN_ERROR = 527] = "RAILGUN_ERROR", r[r.SITE_IS_OVERLOADED = 529] = "SITE_IS_OVERLOADED", r[r.ORIGIN_UNAVAILABLE = 530] = "ORIGIN_UNAVAILABLE", r[r.ORIGIN_DNS_ERROR = 530] = "ORIGIN_DNS_ERROR", r[r.SITE_IS_FROZEN = 530] = "SITE_IS_FROZEN", r[r.TEMPORARILY_DISABLED = 540] = "TEMPORARILY_DISABLED", r[r.UNAUTHORIZED_AWS_ELB = 561] = "UNAUTHORIZED_AWS_ELB", r[r.NETWORK_READ_TIMEOUT_ERROR = 598] = "NETWORK_READ_TIMEOUT_ERROR", r[r.NETWORK_CONNECT_TIMEOUT_ERROR = 599] = "NETWORK_CONNECT_TIMEOUT_ERROR", r[r.UNEXPECTED_TOKEN = 783] = "UNEXPECTED_TOKEN", r[r.REQUEST_DENIED = 999] = "REQUEST_DENIED", r))(a || {});
+const Td = {
     griefing: Zn(),
     "multi-accounting": Po(),
     "hate-speech": da(),
@@ -1432,7 +1481,7 @@ const Bl = {
     "inappropriate-content": Ia(),
     other: pr()
   },
-  Ml = {
+  Od = {
     doxxing: "text-red-600",
     "hate-speech": "text-red-400",
     "inappropriate-content": "text-amber-500",
@@ -1450,13 +1499,13 @@ const Bl = {
     other: 5,
     griefing: 6
   },
-  al = [{
+  G_ = [{
     tileSize: 1e3,
     zoom: 11
   }],
-  sl = 4,
-  ol = 6e3,
-  il = [{
+  $_ = 4,
+  C_ = 6e3,
+  V_ = [{
     name: "Transparent",
     rgb: [0, 0, 0]
   }, {
@@ -1649,10 +1698,10 @@ const Bl = {
     name: "Light Stone",
     rgb: [205, 197, 158]
   }],
-  cl = {
+  H_ = {
     needsPhoneVerification: "needs_phone_verification"
   },
-  ul = {
+  W_ = {
     Droplet: {},
     "Max. Charge": {},
     "Paint Charge": {},
@@ -1663,7 +1712,7 @@ const Bl = {
     "Custom Name Font": {},
     "Custom Name Style": {}
   },
-  _l = {
+  Y_ = {
     10: {
       name: "25,000 Droplets",
       price: 500,
@@ -1794,8 +1843,8 @@ const Bl = {
       }]
     }
   },
-  ll = JSON.parse(`[{"id":1,"name":"Afghanistan","code":"AF","flag":"🇦🇫"},{"id":2,"name":"Albania","code":"AL","flag":"🇦🇱"},{"id":3,"name":"Algeria","code":"DZ","flag":"🇩🇿"},{"id":4,"name":"American Samoa","code":"AS","flag":"🇦🇸"},{"id":5,"name":"Andorra","code":"AD","flag":"🇦🇩"},{"id":6,"name":"Angola","code":"AO","flag":"🇦🇴"},{"id":7,"name":"Anguilla","code":"AI","flag":"🇦🇮"},{"id":8,"name":"Antarctica","code":"AQ","flag":"🇦🇶"},{"id":9,"name":"Antigua and Barbuda","code":"AG","flag":"🇦🇬"},{"id":10,"name":"Argentina","code":"AR","flag":"🇦🇷"},{"id":11,"name":"Armenia","code":"AM","flag":"🇦🇲"},{"id":12,"name":"Aruba","code":"AW","flag":"🇦🇼"},{"id":13,"name":"Australia","code":"AU","flag":"🇦🇺"},{"id":14,"name":"Austria","code":"AT","flag":"🇦🇹"},{"id":15,"name":"Azerbaijan","code":"AZ","flag":"🇦🇿"},{"id":16,"name":"Bahamas","code":"BS","flag":"🇧🇸"},{"id":17,"name":"Bahrain","code":"BH","flag":"🇧🇭"},{"id":18,"name":"Bangladesh","code":"BD","flag":"🇧🇩"},{"id":19,"name":"Barbados","code":"BB","flag":"🇧🇧"},{"id":20,"name":"Belarus","code":"BY","flag":"🇧🇾"},{"id":21,"name":"Belgium","code":"BE","flag":"🇧🇪"},{"id":22,"name":"Belize","code":"BZ","flag":"🇧🇿"},{"id":23,"name":"Benin","code":"BJ","flag":"🇧🇯"},{"id":24,"name":"Bermuda","code":"BM","flag":"🇧🇲"},{"id":25,"name":"Bhutan","code":"BT","flag":"🇧🇹"},{"id":26,"name":"Bolivia","code":"BO","flag":"🇧🇴"},{"id":27,"name":"Bonaire","code":"BQ","flag":"🇧🇶"},{"id":28,"name":"Bosnia and Herzegovina","code":"BA","flag":"🇧🇦"},{"id":29,"name":"Botswana","code":"BW","flag":"🇧🇼"},{"id":30,"name":"Bouvet Island","code":"BV","flag":"🇧🇻"},{"id":31,"name":"Brazil","code":"BR","flag":"🇧🇷"},{"id":32,"name":"British Indian Ocean Territory","code":"IO","flag":"🇮🇴"},{"id":33,"name":"Brunei Darussalam","code":"BN","flag":"🇧🇳"},{"id":34,"name":"Bulgaria","code":"BG","flag":"🇧🇬"},{"id":35,"name":"Burkina Faso","code":"BF","flag":"🇧🇫"},{"id":36,"name":"Burundi","code":"BI","flag":"🇧🇮"},{"id":37,"name":"Cabo Verde","code":"CV","flag":"🇨🇻"},{"id":38,"name":"Cambodia","code":"KH","flag":"🇰🇭"},{"id":39,"name":"Cameroon","code":"CM","flag":"🇨🇲"},{"id":40,"name":"Canada","code":"CA","flag":"🇨🇦"},{"id":41,"name":"Cayman Islands","code":"KY","flag":"🇰🇾"},{"id":42,"name":"Central African Republic","code":"CF","flag":"🇨🇫"},{"id":43,"name":"Chad","code":"TD","flag":"🇹🇩"},{"id":44,"name":"Chile","code":"CL","flag":"🇨🇱"},{"id":45,"name":"China","code":"CN","flag":"🇨🇳"},{"id":46,"name":"Christmas Island","code":"CX","flag":"🇨🇽"},{"id":47,"name":"Cocos (Keeling) Islands","code":"CC","flag":"🇨🇨"},{"id":48,"name":"Colombia","code":"CO","flag":"🇨🇴"},{"id":49,"name":"Comoros","code":"KM","flag":"🇰🇲"},{"id":50,"name":"Congo","code":"CG","flag":"🇨🇬"},{"id":51,"name":"Cook Islands","code":"CK","flag":"🇨🇰"},{"id":52,"name":"Costa Rica","code":"CR","flag":"🇨🇷"},{"id":53,"name":"Croatia","code":"HR","flag":"🇭🇷"},{"id":54,"name":"Cuba","code":"CU","flag":"🇨🇺"},{"id":55,"name":"Curaçao","code":"CW","flag":"🇨🇼"},{"id":56,"name":"Cyprus","code":"CY","flag":"🇨🇾"},{"id":57,"name":"Czechia","code":"CZ","flag":"🇨🇿"},{"id":58,"name":"Côte d'Ivoire","code":"CI","flag":"🇨🇮"},{"id":59,"name":"Denmark","code":"DK","flag":"🇩🇰"},{"id":60,"name":"Djibouti","code":"DJ","flag":"🇩🇯"},{"id":61,"name":"Dominica","code":"DM","flag":"🇩🇲"},{"id":62,"name":"Dominican Republic","code":"DO","flag":"🇩🇴"},{"id":63,"name":"Ecuador","code":"EC","flag":"🇪🇨"},{"id":64,"name":"Egypt","code":"EG","flag":"🇪🇬"},{"id":65,"name":"El Salvador","code":"SV","flag":"🇸🇻"},{"id":66,"name":"Equatorial Guinea","code":"GQ","flag":"🇬🇶"},{"id":67,"name":"Eritrea","code":"ER","flag":"🇪🇷"},{"id":68,"name":"Estonia","code":"EE","flag":"🇪🇪"},{"id":69,"name":"Eswatini","code":"SZ","flag":"🇸🇿"},{"id":70,"name":"Ethiopia","code":"ET","flag":"🇪🇹"},{"id":71,"name":"Falkland Islands (Malvinas)","code":"FK","flag":"🇫🇰"},{"id":72,"name":"Faroe Islands","code":"FO","flag":"🇫🇴"},{"id":73,"name":"Fiji","code":"FJ","flag":"🇫🇯"},{"id":74,"name":"Finland","code":"FI","flag":"🇫🇮"},{"id":75,"name":"France","code":"FR","flag":"🇫🇷"},{"id":76,"name":"French Guiana","code":"GF","flag":"🇬🇫"},{"id":77,"name":"French Polynesia","code":"PF","flag":"🇵🇫"},{"id":78,"name":"French Southern Territories","code":"TF","flag":"🇹🇫"},{"id":79,"name":"Gabon","code":"GA","flag":"🇬🇦"},{"id":80,"name":"Gambia","code":"GM","flag":"🇬🇲"},{"id":81,"name":"Georgia","code":"GE","flag":"🇬🇪"},{"id":82,"name":"Germany","code":"DE","flag":"🇩🇪"},{"id":83,"name":"Ghana","code":"GH","flag":"🇬🇭"},{"id":84,"name":"Gibraltar","code":"GI","flag":"🇬🇮"},{"id":85,"name":"Greece","code":"GR","flag":"🇬🇷"},{"id":86,"name":"Greenland","code":"GL","flag":"🇬🇱"},{"id":87,"name":"Grenada","code":"GD","flag":"🇬🇩"},{"id":88,"name":"Guadeloupe","code":"GP","flag":"🇬🇵"},{"id":89,"name":"Guam","code":"GU","flag":"🇬🇺"},{"id":90,"name":"Guatemala","code":"GT","flag":"🇬🇹"},{"id":91,"name":"Guernsey","code":"GG","flag":"🇬🇬"},{"id":92,"name":"Guinea","code":"GN","flag":"🇬🇳"},{"id":93,"name":"Guinea-Bissau","code":"GW","flag":"🇬🇼"},{"id":94,"name":"Guyana","code":"GY","flag":"🇬🇾"},{"id":95,"name":"Haiti","code":"HT","flag":"🇭🇹"},{"id":96,"name":"Heard Island and McDonald Islands","code":"HM","flag":"🇭🇲"},{"id":97,"name":"Honduras","code":"HN","flag":"🇭🇳"},{"id":98,"name":"Hong Kong","code":"HK","flag":"🇭🇰"},{"id":99,"name":"Hungary","code":"HU","flag":"🇭🇺"},{"id":100,"name":"Iceland","code":"IS","flag":"🇮🇸"},{"id":101,"name":"India","code":"IN","flag":"🇮🇳"},{"id":102,"name":"Indonesia","code":"ID","flag":"🇮🇩"},{"id":103,"name":"Iran","code":"IR","flag":"🇮🇷"},{"id":104,"name":"Iraq","code":"IQ","flag":"🇮🇶"},{"id":105,"name":"Ireland","code":"IE","flag":"🇮🇪"},{"id":106,"name":"Isle of Man","code":"IM","flag":"🇮🇲"},{"id":107,"name":"Israel","code":"IL","flag":"🇮🇱"},{"id":108,"name":"Italy","code":"IT","flag":"🇮🇹"},{"id":109,"name":"Jamaica","code":"JM","flag":"🇯🇲"},{"id":110,"name":"Japan","code":"JP","flag":"🇯🇵"},{"id":111,"name":"Jersey","code":"JE","flag":"🇯🇪"},{"id":112,"name":"Jordan","code":"JO","flag":"🇯🇴"},{"id":113,"name":"Kazakhstan","code":"KZ","flag":"🇰🇿"},{"id":114,"name":"Kenya","code":"KE","flag":"🇰🇪"},{"id":115,"name":"Kiribati","code":"KI","flag":"🇰🇮"},{"id":116,"name":"Kosovo","code":"XK","flag":"🇽🇰"},{"id":117,"name":"Kuwait","code":"KW","flag":"🇰🇼"},{"id":118,"name":"Kyrgyzstan","code":"KG","flag":"🇰🇬"},{"id":119,"name":"Laos","code":"LA","flag":"🇱🇦"},{"id":120,"name":"Latvia","code":"LV","flag":"🇱🇻"},{"id":121,"name":"Lebanon","code":"LB","flag":"🇱🇧"},{"id":122,"name":"Lesotho","code":"LS","flag":"🇱🇸"},{"id":123,"name":"Liberia","code":"LR","flag":"🇱🇷"},{"id":124,"name":"Libya","code":"LY","flag":"🇱🇾"},{"id":125,"name":"Liechtenstein","code":"LI","flag":"🇱🇮"},{"id":126,"name":"Lithuania","code":"LT","flag":"🇱🇹"},{"id":127,"name":"Luxembourg","code":"LU","flag":"🇱🇺"},{"id":128,"name":"Macao","code":"MO","flag":"🇲🇴"},{"id":129,"name":"Madagascar","code":"MG","flag":"🇲🇬"},{"id":130,"name":"Malawi","code":"MW","flag":"🇲🇼"},{"id":131,"name":"Malaysia","code":"MY","flag":"🇲🇾"},{"id":132,"name":"Maldives","code":"MV","flag":"🇲🇻"},{"id":133,"name":"Mali","code":"ML","flag":"🇲🇱"},{"id":134,"name":"Malta","code":"MT","flag":"🇲🇹"},{"id":135,"name":"Marshall Islands","code":"MH","flag":"🇲🇭"},{"id":136,"name":"Martinique","code":"MQ","flag":"🇲🇶"},{"id":137,"name":"Mauritania","code":"MR","flag":"🇲🇷"},{"id":138,"name":"Mauritius","code":"MU","flag":"🇲🇺"},{"id":139,"name":"Mayotte","code":"YT","flag":"🇾🇹"},{"id":140,"name":"Mexico","code":"MX","flag":"🇲🇽"},{"id":141,"name":"Micronesia","code":"FM","flag":"🇫🇲"},{"id":142,"name":"Moldova","code":"MD","flag":"🇲🇩"},{"id":143,"name":"Monaco","code":"MC","flag":"🇲🇨"},{"id":144,"name":"Mongolia","code":"MN","flag":"🇲🇳"},{"id":145,"name":"Montenegro","code":"ME","flag":"🇲🇪"},{"id":146,"name":"Montserrat","code":"MS","flag":"🇲🇸"},{"id":147,"name":"Morocco","code":"MA","flag":"🇲🇦"},{"id":148,"name":"Mozambique","code":"MZ","flag":"🇲🇿"},{"id":149,"name":"Myanmar","code":"MM","flag":"🇲🇲"},{"id":150,"name":"Namibia","code":"NA","flag":"🇳🇦"},{"id":151,"name":"Nauru","code":"NR","flag":"🇳🇷"},{"id":152,"name":"Nepal","code":"NP","flag":"🇳🇵"},{"id":153,"name":"Netherlands","code":"NL","flag":"🇳🇱"},{"id":154,"name":"New Caledonia","code":"NC","flag":"🇳🇨"},{"id":155,"name":"New Zealand","code":"NZ","flag":"🇳🇿"},{"id":156,"name":"Nicaragua","code":"NI","flag":"🇳🇮"},{"id":157,"name":"Niger","code":"NE","flag":"🇳🇪"},{"id":158,"name":"Nigeria","code":"NG","flag":"🇳🇬"},{"id":159,"name":"Niue","code":"NU","flag":"🇳🇺"},{"id":160,"name":"Norfolk Island","code":"NF","flag":"🇳🇫"},{"id":161,"name":"North Korea","code":"KP","flag":"🇰🇵"},{"id":162,"name":"North Macedonia","code":"MK","flag":"🇲🇰"},{"id":163,"name":"Northern Mariana Islands","code":"MP","flag":"🇲🇵"},{"id":164,"name":"Norway","code":"NO","flag":"🇳🇴"},{"id":165,"name":"Oman","code":"OM","flag":"🇴🇲"},{"id":166,"name":"Pakistan","code":"PK","flag":"🇵🇰"},{"id":167,"name":"Palau","code":"PW","flag":"🇵🇼"},{"id":168,"name":"Palestine","code":"PS","flag":"🇵🇸"},{"id":169,"name":"Panama","code":"PA","flag":"🇵🇦"},{"id":170,"name":"Papua New Guinea","code":"PG","flag":"🇵🇬"},{"id":171,"name":"Paraguay","code":"PY","flag":"🇵🇾"},{"id":172,"name":"Peru","code":"PE","flag":"🇵🇪"},{"id":173,"name":"Philippines","code":"PH","flag":"🇵🇭"},{"id":174,"name":"Pitcairn","code":"PN","flag":"🇵🇳"},{"id":175,"name":"Poland","code":"PL","flag":"🇵🇱"},{"id":176,"name":"Portugal","code":"PT","flag":"🇵🇹"},{"id":177,"name":"Puerto Rico","code":"PR","flag":"🇵🇷"},{"id":178,"name":"Qatar","code":"QA","flag":"🇶🇦"},{"id":179,"name":"Republic of the Congo","code":"CD","flag":"🇨🇩"},{"id":180,"name":"Romania","code":"RO","flag":"🇷🇴"},{"id":181,"name":"Russia","code":"RU","flag":"🇷🇺"},{"id":182,"name":"Rwanda","code":"RW","flag":"🇷🇼"},{"id":183,"name":"Réunion","code":"RE","flag":"🇷🇪"},{"id":184,"name":"Saint Barthélemy","code":"BL","flag":"🇧🇱"},{"id":185,"name":"Saint Helena","code":"SH","flag":"🇸🇭"},{"id":186,"name":"Saint Kitts and Nevis","code":"KN","flag":"🇰🇳"},{"id":187,"name":"Saint Lucia","code":"LC","flag":"🇱🇨"},{"id":188,"name":"Saint Martin (French part)","code":"MF","flag":"🇲🇫"},{"id":189,"name":"Saint Pierre and Miquelon","code":"PM","flag":"🇵🇲"},{"id":190,"name":"Saint Vincent and the Grenadines","code":"VC","flag":"🇻🇨"},{"id":191,"name":"Samoa","code":"WS","flag":"🇼🇸"},{"id":192,"name":"San Marino","code":"SM","flag":"🇸🇲"},{"id":193,"name":"Sao Tome and Principe","code":"ST","flag":"🇸🇹"},{"id":194,"name":"Saudi Arabia","code":"SA","flag":"🇸🇦"},{"id":195,"name":"Senegal","code":"SN","flag":"🇸🇳"},{"id":196,"name":"Serbia","code":"RS","flag":"🇷🇸"},{"id":197,"name":"Seychelles","code":"SC","flag":"🇸🇨"},{"id":198,"name":"Sierra Leone","code":"SL","flag":"🇸🇱"},{"id":199,"name":"Singapore","code":"SG","flag":"🇸🇬"},{"id":200,"name":"Sint Maarten (Dutch part)","code":"SX","flag":"🇸🇽"},{"id":201,"name":"Slovakia","code":"SK","flag":"🇸🇰"},{"id":202,"name":"Slovenia","code":"SI","flag":"🇸🇮"},{"id":203,"name":"Solomon Islands","code":"SB","flag":"🇸🇧"},{"id":204,"name":"Somalia","code":"SO","flag":"🇸🇴"},{"id":205,"name":"South Africa","code":"ZA","flag":"🇿🇦"},{"id":206,"name":"South Georgia and the South Sandwich Islands","code":"GS","flag":"🇬🇸"},{"id":207,"name":"South Korea","code":"KR","flag":"🇰🇷"},{"id":208,"name":"South Sudan","code":"SS","flag":"🇸🇸"},{"id":209,"name":"Spain","code":"ES","flag":"🇪🇸"},{"id":210,"name":"Sri Lanka","code":"LK","flag":"🇱🇰"},{"id":211,"name":"Sudan","code":"SD","flag":"🇸🇩"},{"id":212,"name":"Suriname","code":"SR","flag":"🇸🇷"},{"id":213,"name":"Svalbard and Jan Mayen","code":"SJ","flag":"🇸🇯"},{"id":214,"name":"Sweden","code":"SE","flag":"🇸🇪"},{"id":215,"name":"Switzerland","code":"CH","flag":"🇨🇭"},{"id":216,"name":"Syrian Arab Republic","code":"SY","flag":"🇸🇾"},{"id":217,"name":"Taiwan","code":"TW","flag":"🇹🇼"},{"id":218,"name":"Tajikistan","code":"TJ","flag":"🇹🇯"},{"id":219,"name":"Tanzania","code":"TZ","flag":"🇹🇿"},{"id":220,"name":"Thailand","code":"TH","flag":"🇹🇭"},{"id":221,"name":"Timor-Leste","code":"TL","flag":"🇹🇱"},{"id":222,"name":"Togo","code":"TG","flag":"🇹🇬"},{"id":223,"name":"Tokelau","code":"TK","flag":"🇹🇰"},{"id":224,"name":"Tonga","code":"TO","flag":"🇹🇴"},{"id":225,"name":"Trinidad and Tobago","code":"TT","flag":"🇹🇹"},{"id":226,"name":"Tunisia","code":"TN","flag":"🇹🇳"},{"id":227,"name":"Turkmenistan","code":"TM","flag":"🇹🇲"},{"id":228,"name":"Turks and Caicos Islands","code":"TC","flag":"🇹🇨"},{"id":229,"name":"Tuvalu","code":"TV","flag":"🇹🇻"},{"id":230,"name":"Türkiye","code":"TR","flag":"🇹🇷"},{"id":231,"name":"Uganda","code":"UG","flag":"🇺🇬"},{"id":232,"name":"Ukraine","code":"UA","flag":"🇺🇦"},{"id":233,"name":"United Arab Emirates","code":"AE","flag":"🇦🇪"},{"id":234,"name":"United Kingdom","code":"GB","flag":"🇬🇧"},{"id":235,"name":"United States","code":"US","flag":"🇺🇸"},{"id":236,"name":"United States Minor Outlying Islands","code":"UM","flag":"🇺🇲"},{"id":237,"name":"Uruguay","code":"UY","flag":"🇺🇾"},{"id":238,"name":"Uzbekistan","code":"UZ","flag":"🇺🇿"},{"id":239,"name":"Vanuatu","code":"VU","flag":"🇻🇺"},{"id":240,"name":"Vatican City","code":"VA","flag":"🇻🇦"},{"id":241,"name":"Venezuela","code":"VE","flag":"🇻🇪"},{"id":242,"name":"Viet Nam","code":"VN","flag":"🇻🇳"},{"id":243,"name":"Virgin Islands","code":"VG","flag":"🇻🇬"},{"id":244,"name":"Virgin Islands","code":"VI","flag":"🇻🇮"},{"id":245,"name":"Wallis and Futuna","code":"WF","flag":"🇼🇫"},{"id":246,"name":"Western Sahara","code":"EH","flag":"🇪🇭"},{"id":247,"name":"Yemen","code":"YE","flag":"🇾🇪"},{"id":248,"name":"Zambia","code":"ZM","flag":"🇿🇲"},{"id":249,"name":"Zimbabwe","code":"ZW","flag":"🇿🇼"},{"id":250,"name":"Åland Islands","code":"AX","flag":"🇦🇽"},{"id":251,"name":"Canary Islands","code":"IC","flag":"🇮🇨"}]`),
-  dl = {
+  Q_ = JSON.parse(`[{"id":1,"name":"Afghanistan","code":"AF","flag":"🇦🇫"},{"id":2,"name":"Albania","code":"AL","flag":"🇦🇱"},{"id":3,"name":"Algeria","code":"DZ","flag":"🇩🇿"},{"id":4,"name":"American Samoa","code":"AS","flag":"🇦🇸"},{"id":5,"name":"Andorra","code":"AD","flag":"🇦🇩"},{"id":6,"name":"Angola","code":"AO","flag":"🇦🇴"},{"id":7,"name":"Anguilla","code":"AI","flag":"🇦🇮"},{"id":8,"name":"Antarctica","code":"AQ","flag":"🇦🇶"},{"id":9,"name":"Antigua and Barbuda","code":"AG","flag":"🇦🇬"},{"id":10,"name":"Argentina","code":"AR","flag":"🇦🇷"},{"id":11,"name":"Armenia","code":"AM","flag":"🇦🇲"},{"id":12,"name":"Aruba","code":"AW","flag":"🇦🇼"},{"id":13,"name":"Australia","code":"AU","flag":"🇦🇺"},{"id":14,"name":"Austria","code":"AT","flag":"🇦🇹"},{"id":15,"name":"Azerbaijan","code":"AZ","flag":"🇦🇿"},{"id":16,"name":"Bahamas","code":"BS","flag":"🇧🇸"},{"id":17,"name":"Bahrain","code":"BH","flag":"🇧🇭"},{"id":18,"name":"Bangladesh","code":"BD","flag":"🇧🇩"},{"id":19,"name":"Barbados","code":"BB","flag":"🇧🇧"},{"id":20,"name":"Belarus","code":"BY","flag":"🇧🇾"},{"id":21,"name":"Belgium","code":"BE","flag":"🇧🇪"},{"id":22,"name":"Belize","code":"BZ","flag":"🇧🇿"},{"id":23,"name":"Benin","code":"BJ","flag":"🇧🇯"},{"id":24,"name":"Bermuda","code":"BM","flag":"🇧🇲"},{"id":25,"name":"Bhutan","code":"BT","flag":"🇧🇹"},{"id":26,"name":"Bolivia","code":"BO","flag":"🇧🇴"},{"id":27,"name":"Bonaire","code":"BQ","flag":"🇧🇶"},{"id":28,"name":"Bosnia and Herzegovina","code":"BA","flag":"🇧🇦"},{"id":29,"name":"Botswana","code":"BW","flag":"🇧🇼"},{"id":30,"name":"Bouvet Island","code":"BV","flag":"🇧🇻"},{"id":31,"name":"Brazil","code":"BR","flag":"🇧🇷"},{"id":32,"name":"British Indian Ocean Territory","code":"IO","flag":"🇮🇴"},{"id":33,"name":"Brunei Darussalam","code":"BN","flag":"🇧🇳"},{"id":34,"name":"Bulgaria","code":"BG","flag":"🇧🇬"},{"id":35,"name":"Burkina Faso","code":"BF","flag":"🇧🇫"},{"id":36,"name":"Burundi","code":"BI","flag":"🇧🇮"},{"id":37,"name":"Cabo Verde","code":"CV","flag":"🇨🇻"},{"id":38,"name":"Cambodia","code":"KH","flag":"🇰🇭"},{"id":39,"name":"Cameroon","code":"CM","flag":"🇨🇲"},{"id":40,"name":"Canada","code":"CA","flag":"🇨🇦"},{"id":41,"name":"Cayman Islands","code":"KY","flag":"🇰🇾"},{"id":42,"name":"Central African Republic","code":"CF","flag":"🇨🇫"},{"id":43,"name":"Chad","code":"TD","flag":"🇹🇩"},{"id":44,"name":"Chile","code":"CL","flag":"🇨🇱"},{"id":45,"name":"China","code":"CN","flag":"🇨🇳"},{"id":46,"name":"Christmas Island","code":"CX","flag":"🇨🇽"},{"id":47,"name":"Cocos (Keeling) Islands","code":"CC","flag":"🇨🇨"},{"id":48,"name":"Colombia","code":"CO","flag":"🇨🇴"},{"id":49,"name":"Comoros","code":"KM","flag":"🇰🇲"},{"id":50,"name":"Congo","code":"CG","flag":"🇨🇬"},{"id":51,"name":"Cook Islands","code":"CK","flag":"🇨🇰"},{"id":52,"name":"Costa Rica","code":"CR","flag":"🇨🇷"},{"id":53,"name":"Croatia","code":"HR","flag":"🇭🇷"},{"id":54,"name":"Cuba","code":"CU","flag":"🇨🇺"},{"id":55,"name":"Curaçao","code":"CW","flag":"🇨🇼"},{"id":56,"name":"Cyprus","code":"CY","flag":"🇨🇾"},{"id":57,"name":"Czechia","code":"CZ","flag":"🇨🇿"},{"id":58,"name":"Côte d'Ivoire","code":"CI","flag":"🇨🇮"},{"id":59,"name":"Denmark","code":"DK","flag":"🇩🇰"},{"id":60,"name":"Djibouti","code":"DJ","flag":"🇩🇯"},{"id":61,"name":"Dominica","code":"DM","flag":"🇩🇲"},{"id":62,"name":"Dominican Republic","code":"DO","flag":"🇩🇴"},{"id":63,"name":"Ecuador","code":"EC","flag":"🇪🇨"},{"id":64,"name":"Egypt","code":"EG","flag":"🇪🇬"},{"id":65,"name":"El Salvador","code":"SV","flag":"🇸🇻"},{"id":66,"name":"Equatorial Guinea","code":"GQ","flag":"🇬🇶"},{"id":67,"name":"Eritrea","code":"ER","flag":"🇪🇷"},{"id":68,"name":"Estonia","code":"EE","flag":"🇪🇪"},{"id":69,"name":"Eswatini","code":"SZ","flag":"🇸🇿"},{"id":70,"name":"Ethiopia","code":"ET","flag":"🇪🇹"},{"id":71,"name":"Falkland Islands (Malvinas)","code":"FK","flag":"🇫🇰"},{"id":72,"name":"Faroe Islands","code":"FO","flag":"🇫🇴"},{"id":73,"name":"Fiji","code":"FJ","flag":"🇫🇯"},{"id":74,"name":"Finland","code":"FI","flag":"🇫🇮"},{"id":75,"name":"France","code":"FR","flag":"🇫🇷"},{"id":76,"name":"French Guiana","code":"GF","flag":"🇬🇫"},{"id":77,"name":"French Polynesia","code":"PF","flag":"🇵🇫"},{"id":78,"name":"French Southern Territories","code":"TF","flag":"🇹🇫"},{"id":79,"name":"Gabon","code":"GA","flag":"🇬🇦"},{"id":80,"name":"Gambia","code":"GM","flag":"🇬🇲"},{"id":81,"name":"Georgia","code":"GE","flag":"🇬🇪"},{"id":82,"name":"Germany","code":"DE","flag":"🇩🇪"},{"id":83,"name":"Ghana","code":"GH","flag":"🇬🇭"},{"id":84,"name":"Gibraltar","code":"GI","flag":"🇬🇮"},{"id":85,"name":"Greece","code":"GR","flag":"🇬🇷"},{"id":86,"name":"Greenland","code":"GL","flag":"🇬🇱"},{"id":87,"name":"Grenada","code":"GD","flag":"🇬🇩"},{"id":88,"name":"Guadeloupe","code":"GP","flag":"🇬🇵"},{"id":89,"name":"Guam","code":"GU","flag":"🇬🇺"},{"id":90,"name":"Guatemala","code":"GT","flag":"🇬🇹"},{"id":91,"name":"Guernsey","code":"GG","flag":"🇬🇬"},{"id":92,"name":"Guinea","code":"GN","flag":"🇬🇳"},{"id":93,"name":"Guinea-Bissau","code":"GW","flag":"🇬🇼"},{"id":94,"name":"Guyana","code":"GY","flag":"🇬🇾"},{"id":95,"name":"Haiti","code":"HT","flag":"🇭🇹"},{"id":96,"name":"Heard Island and McDonald Islands","code":"HM","flag":"🇭🇲"},{"id":97,"name":"Honduras","code":"HN","flag":"🇭🇳"},{"id":98,"name":"Hong Kong","code":"HK","flag":"🇭🇰"},{"id":99,"name":"Hungary","code":"HU","flag":"🇭🇺"},{"id":100,"name":"Iceland","code":"IS","flag":"🇮🇸"},{"id":101,"name":"India","code":"IN","flag":"🇮🇳"},{"id":102,"name":"Indonesia","code":"ID","flag":"🇮🇩"},{"id":103,"name":"Iran","code":"IR","flag":"🇮🇷"},{"id":104,"name":"Iraq","code":"IQ","flag":"🇮🇶"},{"id":105,"name":"Ireland","code":"IE","flag":"🇮🇪"},{"id":106,"name":"Isle of Man","code":"IM","flag":"🇮🇲"},{"id":107,"name":"Israel","code":"IL","flag":"🇮🇱"},{"id":108,"name":"Italy","code":"IT","flag":"🇮🇹"},{"id":109,"name":"Jamaica","code":"JM","flag":"🇯🇲"},{"id":110,"name":"Japan","code":"JP","flag":"🇯🇵"},{"id":111,"name":"Jersey","code":"JE","flag":"🇯🇪"},{"id":112,"name":"Jordan","code":"JO","flag":"🇯🇴"},{"id":113,"name":"Kazakhstan","code":"KZ","flag":"🇰🇿"},{"id":114,"name":"Kenya","code":"KE","flag":"🇰🇪"},{"id":115,"name":"Kiribati","code":"KI","flag":"🇰🇮"},{"id":116,"name":"Kosovo","code":"XK","flag":"🇽🇰"},{"id":117,"name":"Kuwait","code":"KW","flag":"🇰🇼"},{"id":118,"name":"Kyrgyzstan","code":"KG","flag":"🇰🇬"},{"id":119,"name":"Laos","code":"LA","flag":"🇱🇦"},{"id":120,"name":"Latvia","code":"LV","flag":"🇱🇻"},{"id":121,"name":"Lebanon","code":"LB","flag":"🇱🇧"},{"id":122,"name":"Lesotho","code":"LS","flag":"🇱🇸"},{"id":123,"name":"Liberia","code":"LR","flag":"🇱🇷"},{"id":124,"name":"Libya","code":"LY","flag":"🇱🇾"},{"id":125,"name":"Liechtenstein","code":"LI","flag":"🇱🇮"},{"id":126,"name":"Lithuania","code":"LT","flag":"🇱🇹"},{"id":127,"name":"Luxembourg","code":"LU","flag":"🇱🇺"},{"id":128,"name":"Macao","code":"MO","flag":"🇲🇴"},{"id":129,"name":"Madagascar","code":"MG","flag":"🇲🇬"},{"id":130,"name":"Malawi","code":"MW","flag":"🇲🇼"},{"id":131,"name":"Malaysia","code":"MY","flag":"🇲🇾"},{"id":132,"name":"Maldives","code":"MV","flag":"🇲🇻"},{"id":133,"name":"Mali","code":"ML","flag":"🇲🇱"},{"id":134,"name":"Malta","code":"MT","flag":"🇲🇹"},{"id":135,"name":"Marshall Islands","code":"MH","flag":"🇲🇭"},{"id":136,"name":"Martinique","code":"MQ","flag":"🇲🇶"},{"id":137,"name":"Mauritania","code":"MR","flag":"🇲🇷"},{"id":138,"name":"Mauritius","code":"MU","flag":"🇲🇺"},{"id":139,"name":"Mayotte","code":"YT","flag":"🇾🇹"},{"id":140,"name":"Mexico","code":"MX","flag":"🇲🇽"},{"id":141,"name":"Micronesia","code":"FM","flag":"🇫🇲"},{"id":142,"name":"Moldova","code":"MD","flag":"🇲🇩"},{"id":143,"name":"Monaco","code":"MC","flag":"🇲🇨"},{"id":144,"name":"Mongolia","code":"MN","flag":"🇲🇳"},{"id":145,"name":"Montenegro","code":"ME","flag":"🇲🇪"},{"id":146,"name":"Montserrat","code":"MS","flag":"🇲🇸"},{"id":147,"name":"Morocco","code":"MA","flag":"🇲🇦"},{"id":148,"name":"Mozambique","code":"MZ","flag":"🇲🇿"},{"id":149,"name":"Myanmar","code":"MM","flag":"🇲🇲"},{"id":150,"name":"Namibia","code":"NA","flag":"🇳🇦"},{"id":151,"name":"Nauru","code":"NR","flag":"🇳🇷"},{"id":152,"name":"Nepal","code":"NP","flag":"🇳🇵"},{"id":153,"name":"Netherlands","code":"NL","flag":"🇳🇱"},{"id":154,"name":"New Caledonia","code":"NC","flag":"🇳🇨"},{"id":155,"name":"New Zealand","code":"NZ","flag":"🇳🇿"},{"id":156,"name":"Nicaragua","code":"NI","flag":"🇳🇮"},{"id":157,"name":"Niger","code":"NE","flag":"🇳🇪"},{"id":158,"name":"Nigeria","code":"NG","flag":"🇳🇬"},{"id":159,"name":"Niue","code":"NU","flag":"🇳🇺"},{"id":160,"name":"Norfolk Island","code":"NF","flag":"🇳🇫"},{"id":161,"name":"North Korea","code":"KP","flag":"🇰🇵"},{"id":162,"name":"North Macedonia","code":"MK","flag":"🇲🇰"},{"id":163,"name":"Northern Mariana Islands","code":"MP","flag":"🇲🇵"},{"id":164,"name":"Norway","code":"NO","flag":"🇳🇴"},{"id":165,"name":"Oman","code":"OM","flag":"🇴🇲"},{"id":166,"name":"Pakistan","code":"PK","flag":"🇵🇰"},{"id":167,"name":"Palau","code":"PW","flag":"🇵🇼"},{"id":168,"name":"Palestine","code":"PS","flag":"🇵🇸"},{"id":169,"name":"Panama","code":"PA","flag":"🇵🇦"},{"id":170,"name":"Papua New Guinea","code":"PG","flag":"🇵🇬"},{"id":171,"name":"Paraguay","code":"PY","flag":"🇵🇾"},{"id":172,"name":"Peru","code":"PE","flag":"🇵🇪"},{"id":173,"name":"Philippines","code":"PH","flag":"🇵🇭"},{"id":174,"name":"Pitcairn","code":"PN","flag":"🇵🇳"},{"id":175,"name":"Poland","code":"PL","flag":"🇵🇱"},{"id":176,"name":"Portugal","code":"PT","flag":"🇵🇹"},{"id":177,"name":"Puerto Rico","code":"PR","flag":"🇵🇷"},{"id":178,"name":"Qatar","code":"QA","flag":"🇶🇦"},{"id":179,"name":"Republic of the Congo","code":"CD","flag":"🇨🇩"},{"id":180,"name":"Romania","code":"RO","flag":"🇷🇴"},{"id":181,"name":"Russia","code":"RU","flag":"🇷🇺"},{"id":182,"name":"Rwanda","code":"RW","flag":"🇷🇼"},{"id":183,"name":"Réunion","code":"RE","flag":"🇷🇪"},{"id":184,"name":"Saint Barthélemy","code":"BL","flag":"🇧🇱"},{"id":185,"name":"Saint Helena","code":"SH","flag":"🇸🇭"},{"id":186,"name":"Saint Kitts and Nevis","code":"KN","flag":"🇰🇳"},{"id":187,"name":"Saint Lucia","code":"LC","flag":"🇱🇨"},{"id":188,"name":"Saint Martin (French part)","code":"MF","flag":"🇲🇫"},{"id":189,"name":"Saint Pierre and Miquelon","code":"PM","flag":"🇵🇲"},{"id":190,"name":"Saint Vincent and the Grenadines","code":"VC","flag":"🇻🇨"},{"id":191,"name":"Samoa","code":"WS","flag":"🇼🇸"},{"id":192,"name":"San Marino","code":"SM","flag":"🇸🇲"},{"id":193,"name":"Sao Tome and Principe","code":"ST","flag":"🇸🇹"},{"id":194,"name":"Saudi Arabia","code":"SA","flag":"🇸🇦"},{"id":195,"name":"Senegal","code":"SN","flag":"🇸🇳"},{"id":196,"name":"Serbia","code":"RS","flag":"🇷🇸"},{"id":197,"name":"Seychelles","code":"SC","flag":"🇸🇨"},{"id":198,"name":"Sierra Leone","code":"SL","flag":"🇸🇱"},{"id":199,"name":"Singapore","code":"SG","flag":"🇸🇬"},{"id":200,"name":"Sint Maarten (Dutch part)","code":"SX","flag":"🇸🇽"},{"id":201,"name":"Slovakia","code":"SK","flag":"🇸🇰"},{"id":202,"name":"Slovenia","code":"SI","flag":"🇸🇮"},{"id":203,"name":"Solomon Islands","code":"SB","flag":"🇸🇧"},{"id":204,"name":"Somalia","code":"SO","flag":"🇸🇴"},{"id":205,"name":"South Africa","code":"ZA","flag":"🇿🇦"},{"id":206,"name":"South Georgia and the South Sandwich Islands","code":"GS","flag":"🇬🇸"},{"id":207,"name":"South Korea","code":"KR","flag":"🇰🇷"},{"id":208,"name":"South Sudan","code":"SS","flag":"🇸🇸"},{"id":209,"name":"Spain","code":"ES","flag":"🇪🇸"},{"id":210,"name":"Sri Lanka","code":"LK","flag":"🇱🇰"},{"id":211,"name":"Sudan","code":"SD","flag":"🇸🇩"},{"id":212,"name":"Suriname","code":"SR","flag":"🇸🇷"},{"id":213,"name":"Svalbard and Jan Mayen","code":"SJ","flag":"🇸🇯"},{"id":214,"name":"Sweden","code":"SE","flag":"🇸🇪"},{"id":215,"name":"Switzerland","code":"CH","flag":"🇨🇭"},{"id":216,"name":"Syrian Arab Republic","code":"SY","flag":"🇸🇾"},{"id":217,"name":"Taiwan","code":"TW","flag":"🇹🇼"},{"id":218,"name":"Tajikistan","code":"TJ","flag":"🇹🇯"},{"id":219,"name":"Tanzania","code":"TZ","flag":"🇹🇿"},{"id":220,"name":"Thailand","code":"TH","flag":"🇹🇭"},{"id":221,"name":"Timor-Leste","code":"TL","flag":"🇹🇱"},{"id":222,"name":"Togo","code":"TG","flag":"🇹🇬"},{"id":223,"name":"Tokelau","code":"TK","flag":"🇹🇰"},{"id":224,"name":"Tonga","code":"TO","flag":"🇹🇴"},{"id":225,"name":"Trinidad and Tobago","code":"TT","flag":"🇹🇹"},{"id":226,"name":"Tunisia","code":"TN","flag":"🇹🇳"},{"id":227,"name":"Turkmenistan","code":"TM","flag":"🇹🇲"},{"id":228,"name":"Turks and Caicos Islands","code":"TC","flag":"🇹🇨"},{"id":229,"name":"Tuvalu","code":"TV","flag":"🇹🇻"},{"id":230,"name":"Türkiye","code":"TR","flag":"🇹🇷"},{"id":231,"name":"Uganda","code":"UG","flag":"🇺🇬"},{"id":232,"name":"Ukraine","code":"UA","flag":"🇺🇦"},{"id":233,"name":"United Arab Emirates","code":"AE","flag":"🇦🇪"},{"id":234,"name":"United Kingdom","code":"GB","flag":"🇬🇧"},{"id":235,"name":"United States","code":"US","flag":"🇺🇸"},{"id":236,"name":"United States Minor Outlying Islands","code":"UM","flag":"🇺🇲"},{"id":237,"name":"Uruguay","code":"UY","flag":"🇺🇾"},{"id":238,"name":"Uzbekistan","code":"UZ","flag":"🇺🇿"},{"id":239,"name":"Vanuatu","code":"VU","flag":"🇻🇺"},{"id":240,"name":"Vatican City","code":"VA","flag":"🇻🇦"},{"id":241,"name":"Venezuela","code":"VE","flag":"🇻🇪"},{"id":242,"name":"Viet Nam","code":"VN","flag":"🇻🇳"},{"id":243,"name":"Virgin Islands","code":"VG","flag":"🇻🇬"},{"id":244,"name":"Virgin Islands","code":"VI","flag":"🇻🇮"},{"id":245,"name":"Wallis and Futuna","code":"WF","flag":"🇼🇫"},{"id":246,"name":"Western Sahara","code":"EH","flag":"🇪🇭"},{"id":247,"name":"Yemen","code":"YE","flag":"🇾🇪"},{"id":248,"name":"Zambia","code":"ZM","flag":"🇿🇲"},{"id":249,"name":"Zimbabwe","code":"ZW","flag":"🇿🇼"},{"id":250,"name":"Åland Islands","code":"AX","flag":"🇦🇽"},{"id":251,"name":"Canary Islands","code":"IC","flag":"🇮🇨"}]`),
+  J_ = {
     dashboard: {
       summary: {
         counters: {
@@ -1914,7 +1963,7 @@ const Bl = {
       assignCosmetics: "staff.cosmetics.assign_cosmetics"
     }
   },
-  fl = {
+  X_ = {
     tools: {
       wayback: {
         limit: 500
@@ -1922,26 +1971,26 @@ const Bl = {
     }
   },
   S = {
-    seasons: al,
-    regionSize: sl,
-    refreshIntervalMs: ol,
-    colors: il,
-    errors: cl,
-    items: ul,
-    products: _l,
-    countries: ll,
-    permissions: dl,
-    settings: fl
+    seasons: G_,
+    regionSize: $_,
+    refreshIntervalMs: C_,
+    colors: V_,
+    errors: H_,
+    items: W_,
+    products: Y_,
+    countries: Q_,
+    permissions: J_,
+    settings: X_
   },
   ae = S,
-  ml = S.seasons,
+  Z_ = S.seasons,
   Ae = S.seasons.length - 1,
-  ql = S.seasons[Ae].zoom,
-  Kl = S.seasons[Ae].tileSize,
-  zl = S.permissions,
-  hl = S.settings;
+  vd = S.seasons[Ae].zoom,
+  Id = S.seasons[Ae].tileSize,
+  Nd = S.permissions,
+  ed = S.settings;
 
-function Fl(r) {
+function Rd(r) {
   return ae.countries[r - 1]
 }
 class u extends Error {
@@ -1950,7 +1999,7 @@ class u extends Error {
   }
 }
 
-function pl(r, t) {
+function td(r, t) {
   const e = {};
   for (const n of r) {
     const s = t(n);
@@ -1960,7 +2009,7 @@ function pl(r, t) {
   return e
 }
 
-function Gl(r, t) {
+function Ad(r, t) {
   const e = {};
   for (const n of r) {
     const s = t(n);
@@ -1968,9 +2017,8 @@ function Gl(r, t) {
   }
   return e
 }
-var a = (r => (r[r.CONTINUE = 100] = "CONTINUE", r[r.SWITCHING_PROTOCOLS = 101] = "SWITCHING_PROTOCOLS", r[r.PROCESSING = 102] = "PROCESSING", r[r.EARLY_HINTS = 103] = "EARLY_HINTS", r[r.OK = 200] = "OK", r[r.CREATED = 201] = "CREATED", r[r.ACCEPTED = 202] = "ACCEPTED", r[r.NON_AUTHORITATIVE_INFORMATION = 203] = "NON_AUTHORITATIVE_INFORMATION", r[r.NO_CONTENT = 204] = "NO_CONTENT", r[r.RESET_CONTENT = 205] = "RESET_CONTENT", r[r.PARTIAL_CONTENT = 206] = "PARTIAL_CONTENT", r[r.MULTI_STATUS = 207] = "MULTI_STATUS", r[r.ALREADY_REPORTED = 208] = "ALREADY_REPORTED", r[r.IM_USED = 226] = "IM_USED", r[r.MULTIPLE_CHOICES = 300] = "MULTIPLE_CHOICES", r[r.MOVED_PERMANENTLY = 301] = "MOVED_PERMANENTLY", r[r.MOVED_TEMPORARILY = 302] = "MOVED_TEMPORARILY", r[r.FOUND = 302] = "FOUND", r[r.SEE_OTHER = 303] = "SEE_OTHER", r[r.NOT_MODIFIED = 304] = "NOT_MODIFIED", r[r.USE_PROXY = 305] = "USE_PROXY", r[r.SWITCH_PROXY = 306] = "SWITCH_PROXY", r[r.TEMPORARY_REDIRECT = 307] = "TEMPORARY_REDIRECT", r[r.PERMANENT_REDIRECT = 308] = "PERMANENT_REDIRECT", r[r.BAD_REQUEST = 400] = "BAD_REQUEST", r[r.UNAUTHORIZED = 401] = "UNAUTHORIZED", r[r.PAYMENT_REQUIRED = 402] = "PAYMENT_REQUIRED", r[r.FORBIDDEN = 403] = "FORBIDDEN", r[r.NOT_FOUND = 404] = "NOT_FOUND", r[r.METHOD_NOT_ALLOWED = 405] = "METHOD_NOT_ALLOWED", r[r.NOT_ACCEPTABLE = 406] = "NOT_ACCEPTABLE", r[r.PROXY_AUTHENTICATION_REQUIRED = 407] = "PROXY_AUTHENTICATION_REQUIRED", r[r.REQUEST_TIMEOUT = 408] = "REQUEST_TIMEOUT", r[r.CONFLICT = 409] = "CONFLICT", r[r.GONE = 410] = "GONE", r[r.LENGTH_REQUIRED = 411] = "LENGTH_REQUIRED", r[r.PRECONDITION_FAILED = 412] = "PRECONDITION_FAILED", r[r.REQUEST_TOO_LONG = 413] = "REQUEST_TOO_LONG", r[r.CONTENT_TOO_LARGE = 413] = "CONTENT_TOO_LARGE", r[r.REQUEST_URI_TOO_LONG = 414] = "REQUEST_URI_TOO_LONG", r[r.URI_TOO_LONG = 414] = "URI_TOO_LONG", r[r.UNSUPPORTED_MEDIA_TYPE = 415] = "UNSUPPORTED_MEDIA_TYPE", r[r.REQUESTED_RANGE_NOT_SATISFIABLE = 416] = "REQUESTED_RANGE_NOT_SATISFIABLE", r[r.RANGE_NOT_SATISFIABLE = 416] = "RANGE_NOT_SATISFIABLE", r[r.EXPECTATION_FAILED = 417] = "EXPECTATION_FAILED", r[r.IM_A_TEAPOT = 418] = "IM_A_TEAPOT", r[r.INSUFFICIENT_SPACE_ON_RESOURCE = 419] = "INSUFFICIENT_SPACE_ON_RESOURCE", r[r.MISDIRECTED_REQUEST = 421] = "MISDIRECTED_REQUEST", r[r.UNPROCESSABLE_ENTITY = 422] = "UNPROCESSABLE_ENTITY", r[r.UNPROCESSABLE_CONTENT = 422] = "UNPROCESSABLE_CONTENT", r[r.LOCKED = 423] = "LOCKED", r[r.FAILED_DEPENDENCY = 424] = "FAILED_DEPENDENCY", r[r.TOO_EARLY = 425] = "TOO_EARLY", r[r.UPGRADE_REQUIRED = 426] = "UPGRADE_REQUIRED", r[r.PRECONDITION_REQUIRED = 428] = "PRECONDITION_REQUIRED", r[r.TOO_MANY_REQUESTS = 429] = "TOO_MANY_REQUESTS", r[r.REQUEST_HEADER_FIELDS_TOO_LARGE = 431] = "REQUEST_HEADER_FIELDS_TOO_LARGE", r[r.UNAVAILABLE_FOR_LEGAL_REASONS = 451] = "UNAVAILABLE_FOR_LEGAL_REASONS", r[r.INTERNAL_SERVER_ERROR = 500] = "INTERNAL_SERVER_ERROR", r[r.NOT_IMPLEMENTED = 501] = "NOT_IMPLEMENTED", r[r.BAD_GATEWAY = 502] = "BAD_GATEWAY", r[r.SERVICE_UNAVAILABLE = 503] = "SERVICE_UNAVAILABLE", r[r.GATEWAY_TIMEOUT = 504] = "GATEWAY_TIMEOUT", r[r.HTTP_VERSION_NOT_SUPPORTED = 505] = "HTTP_VERSION_NOT_SUPPORTED", r[r.VARIANT_ALSO_NEGOTIATES = 506] = "VARIANT_ALSO_NEGOTIATES", r[r.INSUFFICIENT_STORAGE = 507] = "INSUFFICIENT_STORAGE", r[r.LOOP_DETECTED = 508] = "LOOP_DETECTED", r[r.NOT_EXTENDED = 510] = "NOT_EXTENDED", r[r.NETWORK_AUTHENTICATION_REQUIRED = 511] = "NETWORK_AUTHENTICATION_REQUIRED", r[r.AWS_ELB_000 = 0] = "AWS_ELB_000", r[r.THIS_IS_FINE = 218] = "THIS_IS_FINE", r[r.PAGE_EXPIRED = 419] = "PAGE_EXPIRED", r[r.METHOD_FAILURE = 420] = "METHOD_FAILURE", r[r.ENHANCE_YOUR_CALM = 420] = "ENHANCE_YOUR_CALM", r[r.REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY = 430] = "REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY", r[r.SHOPIFY_SECURITY_REJECTION = 430] = "SHOPIFY_SECURITY_REJECTION", r[r.LOGIN_TIME_OUT = 440] = "LOGIN_TIME_OUT", r[r.NO_RESPONSE = 444] = "NO_RESPONSE", r[r.RETRY_WITH = 449] = "RETRY_WITH", r[r.BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS = 450] = "BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS", r[r.REDIRECT_IIS = 451] = "REDIRECT_IIS", r[r.CLIENT_CLOSED_CONNECTION_AWS_ELB = 460] = "CLIENT_CLOSED_CONNECTION_AWS_ELB", r[r.X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB = 463] = "X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB", r[r.INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB = 464] = "INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB", r[r.REQUEST_HEADER_TOO_LARGE = 494] = "REQUEST_HEADER_TOO_LARGE", r[r.SSL_CERTIFICATE_ERROR = 495] = "SSL_CERTIFICATE_ERROR", r[r.SSL_CERTIFICATE_REQUIRED = 496] = "SSL_CERTIFICATE_REQUIRED", r[r.HTTP_REQUEST_SENT_TO_HTTPS_PORT = 497] = "HTTP_REQUEST_SENT_TO_HTTPS_PORT", r[r.INVALID_TOKEN = 498] = "INVALID_TOKEN", r[r.CLIENT_CLOSED_REQUEST = 499] = "CLIENT_CLOSED_REQUEST", r[r.TOKEN_REQUIRED = 499] = "TOKEN_REQUIRED", r[r.BANDWIDTH_LIMIT_EXCEEDED = 509] = "BANDWIDTH_LIMIT_EXCEEDED", r[r.RESOURCE_LIMIT_IS_REACHED = 508] = "RESOURCE_LIMIT_IS_REACHED", r[r.WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR = 520] = "WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR", r[r.WEB_SERVER_IS_DOWN = 521] = "WEB_SERVER_IS_DOWN", r[r.CONNECTION_TIMED_OUT = 522] = "CONNECTION_TIMED_OUT", r[r.ORIGIN_IS_UNREACHABLE = 523] = "ORIGIN_IS_UNREACHABLE", r[r.A_TIMEOUT_OCCURRED = 524] = "A_TIMEOUT_OCCURRED", r[r.SSL_HANDSHAKE_FAILED = 525] = "SSL_HANDSHAKE_FAILED", r[r.INVALID_SSL_CERTIFICATE = 526] = "INVALID_SSL_CERTIFICATE", r[r.RAILGUN_ERROR = 527] = "RAILGUN_ERROR", r[r.SITE_IS_OVERLOADED = 529] = "SITE_IS_OVERLOADED", r[r.ORIGIN_UNAVAILABLE = 530] = "ORIGIN_UNAVAILABLE", r[r.ORIGIN_DNS_ERROR = 530] = "ORIGIN_DNS_ERROR", r[r.SITE_IS_FROZEN = 530] = "SITE_IS_FROZEN", r[r.TEMPORARILY_DISABLED = 540] = "TEMPORARILY_DISABLED", r[r.UNAUTHORIZED_AWS_ELB = 561] = "UNAUTHORIZED_AWS_ELB", r[r.NETWORK_READ_TIMEOUT_ERROR = 598] = "NETWORK_READ_TIMEOUT_ERROR", r[r.NETWORK_CONNECT_TIMEOUT_ERROR = 599] = "NETWORK_CONNECT_TIMEOUT_ERROR", r[r.UNEXPECTED_TOKEN = 783] = "UNEXPECTED_TOKEN", r[r.REQUEST_DENIED = 999] = "REQUEST_DENIED", r))(a || {}),
-  Y;
-class gl {
+var Y;
+class rd {
   constructor(t) {
     g(this, Y, R(!0));
     this.url = t
@@ -1979,7 +2027,7 @@ class gl {
     return w(m(this, Y))
   }
   set online(t) {
-    O(m(this, Y), t, !0)
+    T(m(this, Y), t, !0)
   }
   async paint(t, e) {
     return this.sendPaintRequests(t, e, (n, s, o) => `/s${n}/pixel/${s}/${o}`)
@@ -2044,34 +2092,34 @@ class gl {
     return n.json()
   }
   async sendPaintRequests(t, e, n) {
-    const s = pl(t, l => `t=(${l.tile[0]},${l.tile[1]}),s=${l.season}`),
+    const s = td(t, d => `t=(${d.tile[0]},${d.tile[1]}),s=${d.season}`),
       o = Re("2025-09_pawtect");
     if (!o) throw new Error("paint request while pawtect experiment not found");
-    const c = (await Promise.all(Object.values(s).map(l => {
-      const [f, y] = l[0].tile, b = l[0].season, I = {
-        colors: l.map(v => v.colorIdx),
-        coords: l.flatMap(v => v.pixel),
+    const c = (await Promise.all(Object.values(s).map(d => {
+      const [f, y] = d[0].tile, b = d[0].season, I = {
+        colors: d.map(v => v.colorIdx),
+        coords: d.flatMap(v => v.pixel),
         fp: e
-      }, x = JSON.stringify(I), T = n(b, f, y);
-      return this.request(T, {
+      }, x = JSON.stringify(I), O = n(b, f, y);
+      return this.request(O, {
         method: "POST",
         body: x,
         headers: {
-          "x-pawtect-token": o.variant !== "disabled" ? Ol(x) : "",
+          "x-pawtect-token": o.variant !== "disabled" ? id(x) : "",
           "x-pawtect-variant": o.variant
         },
         credentials: "include"
       })
-    }))).filter(l => l.status !== a.OK);
+    }))).filter(d => d.status !== a.OK);
     if (c.length) {
-      const l = c[0];
-      if (l.status === a.UNAUTHORIZED) throw new Error(ne());
-      if (l.status === a.FORBIDDEN) {
-        if (l.headers.get("cf-mitigated") === "challenge") throw new Error(mn());
-        const f = await l.json();
+      const d = c[0];
+      if (d.status === a.UNAUTHORIZED) throw new Error(ne());
+      if (d.status === a.FORBIDDEN) {
+        if (d.headers.get("cf-mitigated") === "challenge") throw new Error(mn());
+        const f = await d.json();
         if ((f == null ? void 0 : f.error) === "timeout") {
           const y = new Date(Date.now() + ((f == null ? void 0 : f.durationMs) ?? 0));
-          throw new Error(x_({
+          throw new Error(yl({
             until: y.toLocaleString()
           }))
         }
@@ -2083,13 +2131,13 @@ class gl {
     }
   }
   async adminAutoPainterPaint(t, e, n) {
-    const s = wl(t),
-      o = await yl(s),
-      _ = new FormData;
-    _.append("fingerprint", e), _.append("season", s.season.toString()), _.append("px0", s.offsetX.toString()), _.append("py0", s.offsetY.toString()), _.append("width", s.width.toString()), _.append("height", s.height.toString()), _.append("pixels", t.length.toString()), _.append("bitmap", o, "auto-painter.png"), _.append("userId", n.toString());
+    const s = nd(t),
+      o = await ad(s),
+      l = new FormData;
+    l.append("fingerprint", e), l.append("season", s.season.toString()), l.append("px0", s.offsetX.toString()), l.append("py0", s.offsetY.toString()), l.append("width", s.width.toString()), l.append("height", s.height.toString()), l.append("pixels", t.length.toString()), l.append("bitmap", o, "auto-painter.png"), l.append("userId", n.toString());
     const c = await this.request("/staff/tools/auto-painter/paint", {
       method: "POST",
-      body: _,
+      body: l,
       credentials: "include"
     });
     if (c.status === a.FORBIDDEN) throw new Error("Auto painter is restricted to administrators.");
@@ -2100,35 +2148,35 @@ class gl {
     season: t,
     tile: [e, n],
     pixel: [s, o],
-    christmasTreeId: _
+    christmasTreeId: l
   }) {
     const c = new URLSearchParams;
-    c.set("x", String(s)), c.set("y", String(o)), _ !== void 0 && c.set("christmasTreeId", String(_));
-    const l = await this.request(`/s${t}/pixel/${e}/${n}?${c.toString()}`, {
+    c.set("x", String(s)), c.set("y", String(o)), l !== void 0 && c.set("christmasTreeId", String(l));
+    const d = await this.request(`/s${t}/pixel/${e}/${n}?${c.toString()}`, {
       credentials: "include"
     });
-    if (l.status !== a.OK) {
-      const f = await l.text();
+    if (d.status !== a.OK) {
+      const f = await d.text();
       throw new Error(Kn({
         err: f
       }))
     }
-    return l.json()
+    return d.json()
   }
   async getPixelAreaInfo({
     season: t,
     tile: [e, n],
     p0: [s, o],
-    p1: [_, c]
+    p1: [l, c]
   }) {
-    const l = await this.request(`/staff/tools/select-area/s${t}/${e}/${n}?x0=${s}&y0=${o}&x1=${_}&y1=${c}`, {
+    const d = await this.request(`/staff/tools/select-area/s${t}/${e}/${n}?x0=${s}&y0=${o}&x1=${l}&y1=${c}`, {
       credentials: "include"
     });
-    if (l.status !== a.OK) {
-      const b = await l.text();
+    if (d.status !== a.OK) {
+      const b = await d.text();
       throw console.error("Error while fetching pixel area info", b), new Error(i())
     }
-    const f = await l.arrayBuffer(),
+    const f = await d.arrayBuffer(),
       y = new DataView(f);
     return {
       paintedBy: Array.from({
@@ -2172,8 +2220,10 @@ class gl {
       })
     });
     if (e.status === a.BAD_REQUEST) throw new Error(Ls());
-    if (e.status === a.FORBIDDEN) throw new Error($i());
-    if (e.status === a.TOO_MANY_REQUESTS) throw new Error(Yu());
+    if (e.status === a.CONFLICT) throw new Error($i());
+    if (e.status === a.FORBIDDEN) throw new Error(S_());
+    if (e.status === a.TOO_MANY_REQUESTS) throw new Error(g_());
+    if (e.status === a.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(a_());
     if (e.status !== a.OK) throw new Error(i());
     return await e.json()
   }
@@ -2185,8 +2235,9 @@ class gl {
         code: t
       })
     });
-    if (e.status === a.GONE) throw new Error(Qa());
+    if (e.status === a.GONE) throw new Error(Ja());
     if (e.status === a.BAD_REQUEST) throw new Error(Ma());
+    if (e.status === a.FORBIDDEN) throw new Error(Cl());
     if (e.status !== a.OK) throw new Error(i());
     return await e.json()
   }
@@ -2200,7 +2251,7 @@ class gl {
       const n = await e.json(),
         s = (n == null ? void 0 : n.error) ?? "";
       if (s === "invalid_name") throw new Error(fe());
-      if (s === "invalid_discord") throw new Error(_s());
+      if (s === "invalid_discord") throw new Error(ls());
       if (typeof s == "string" && s.startsWith("name_change_cooldown:")) {
         const o = parseInt(s.split(":")[1] ?? "0", 10);
         throw new Error(Vo({
@@ -2337,7 +2388,7 @@ class gl {
         description: t
       })
     });
-    if (e.status !== a.OK) throw e.status === a.FORBIDDEN ? new Error(D()) : e.status === a.BAD_REQUEST ? new Error(C_()) : new Error(i())
+    if (e.status !== a.OK) throw e.status === a.FORBIDDEN ? new Error(D()) : e.status === a.BAD_REQUEST ? new Error(xl()) : new Error(i())
   }
   async updateAllianceHeadquarters(t, e) {
     const n = await this.request("/alliance/update-headquarters", {
@@ -2476,9 +2527,9 @@ class gl {
     };
     if (s.status !== a.OK) throw new u(i(), s.status);
     const o = await s.json(),
-      _ = Array.isArray(o == null ? void 0 : o.members) ? o.members : [];
+      l = Array.isArray(o == null ? void 0 : o.members) ? o.members : [];
     return {
-      members: _.map(c => ({
+      members: l.map(c => ({
         id: Number(c == null ? void 0 : c.id),
         name: String((c == null ? void 0 : c.name) ?? `#${c==null?void 0:c.id}`),
         picture: (c == null ? void 0 : c.picture) ?? null,
@@ -2487,7 +2538,7 @@ class gl {
         lastPixelLongitude: (c == null ? void 0 : c.lastPixelLongitude) ?? null,
         role: (c == null ? void 0 : c.alliance_role) === "admin" || (c == null ? void 0 : c.role) === "admin" ? "admin" : "member"
       })),
-      total: Number((o == null ? void 0 : o.total) ?? _.length)
+      total: Number((o == null ? void 0 : o.total) ?? l.length)
     }
   }
   async renameAlliance(t, e) {
@@ -2608,7 +2659,7 @@ class gl {
       const s = await e.json();
       throw new Error(s == null ? void 0 : s.error)
     } else {
-      if (e.status === a.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(le());
+      if (e.status === a.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(_e());
       if (e.status !== a.OK) throw new Error(i())
     }
     return await e.json()
@@ -2845,19 +2896,19 @@ class gl {
     if (e.status !== a.OK) throw new u(i(), e.status);
     const n = await e.json();
     return (Array.isArray(n == null ? void 0 : n.purchases) ? n.purchases : []).map(o => {
-      const _ = o.is_dollar ?? o.isDollar ?? o.currency ?? o.Currency ?? 0;
+      const l = o.is_dollar ?? o.isDollar ?? o.currency ?? o.Currency ?? 0;
       let c;
-      if (typeof _ == "string") {
-        const f = _.toLowerCase();
+      if (typeof l == "string") {
+        const f = l.toLowerCase();
         c = f === "usd" || f === "dollar" || f === "true"
-      } else typeof _ == "number" ? c = _ !== 0 : c = !!_;
-      const l = typeof o.createdAt == "string" ? o.createdAt : o.CreatedAt ? new Date(o.CreatedAt).toISOString() : "";
+      } else typeof l == "number" ? c = l !== 0 : c = !!l;
+      const d = typeof o.createdAt == "string" ? o.createdAt : o.CreatedAt ? new Date(o.CreatedAt).toISOString() : "";
       return {
         product_name: String(o.productName ?? o.product_name ?? ""),
         amount: Number(o.amount ?? 0),
         price: Number(o.price ?? 0),
         is_dollar: c,
-        created_at: l,
+        created_at: d,
         product_variant: Number(o.product_variant ?? o.productVariant ?? 0)
       }
     })
@@ -2885,8 +2936,8 @@ class gl {
     });
     if (s.status === a.BAD_REQUEST) {
       const o = await s.json(),
-        _ = (o == null ? void 0 : o.error) ?? "";
-      throw _ === "invalid_name" ? new u(fe(), a.BAD_REQUEST) : new u(typeof _ == "string" && _ ? _ : i(), a.BAD_REQUEST)
+        l = (o == null ? void 0 : o.error) ?? "";
+      throw l === "invalid_name" ? new u(fe(), a.BAD_REQUEST) : new u(typeof l == "string" && l ? l : i(), a.BAD_REQUEST)
     }
     if (s.status !== a.OK) throw new u(i(), s.status)
   }
@@ -2900,9 +2951,9 @@ class gl {
         credentials: "include"
       });
     if (o.status !== a.OK) throw new u(i(), o.status);
-    const _ = await o.json(),
-      c = Array.isArray(_ == null ? void 0 : _.tickets) ? _.tickets : [];
-    return c.sort((l, f) => new Date(f.createdAt).getTime() - new Date(l.createdAt).getTime()), c
+    const l = await o.json(),
+      c = Array.isArray(l == null ? void 0 : l.tickets) ? l.tickets : [];
+    return c.sort((d, f) => new Date(f.createdAt).getTime() - new Date(d.createdAt).getTime()), c
   }
   async getUserAppeals(t) {
     const e = new URLSearchParams;
@@ -2944,7 +2995,7 @@ class gl {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
-        pawtectMe: Y_(),
+        pawtectMe: U_(),
         "paint-the": "world",
         "but-not": "using-bots",
         security: "/.well-known/security.txt"
@@ -3248,7 +3299,7 @@ class gl {
       throw ((e == null ? void 0 : e.error) ?? "") === "no-presents" ? new Error("Você não tem presentes de Natal disponíveis.") : new Error((e == null ? void 0 : e.error) ?? i())
     } else {
       if (t.status === a.UNAUTHORIZED) throw new Error(ne());
-      if (t.status === a.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(le());
+      if (t.status === a.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(_e());
       if (t.status === a.NOT_FOUND) return {
         rewardItemId: 5,
         remainingPresents: 2
@@ -3299,15 +3350,15 @@ class gl {
   }
   validWaybackInput(t) {
     const e = Number.isFinite(t.timestamp) && Number.isInteger(t.timestamp) && t.timestamp >= 0 && t.timestamp <= Date.now(),
-      n = Number.isFinite(t.season) && Number.isInteger(t.season) && t.season >= 0 && t.season < ml.length,
-      s = Number.isFinite(t.limit) && Number.isInteger(t.limit) && t.limit > 0 && t.limit <= hl.tools.wayback.limit,
+      n = Number.isFinite(t.season) && Number.isInteger(t.season) && t.season >= 0 && t.season < Z_.length,
+      s = Number.isFinite(t.limit) && Number.isInteger(t.limit) && t.limit > 0 && t.limit <= ed.tools.wayback.limit,
       o = Number.isFinite(t.tileX) && Number.isFinite(t.tileY) && Number.isInteger(t.tileX) && Number.isInteger(t.tileY) && t.tileX >= 0 && t.tileY >= 0,
-      _ = t.cursorTs !== void 0,
+      l = t.cursorTs !== void 0,
       c = t.cursorUserId !== void 0,
-      l = t.cursorAllianceId !== void 0,
+      d = t.cursorAllianceId !== void 0,
       f = t.cursorPixelsCount !== void 0,
-      y = _ || c || l || f,
-      b = _ && c && l && f;
+      y = l || c || d || f,
+      b = l && c && d && f;
     let I = !0;
     return y && (I = b && Number.isFinite(t.cursorTs) && Number.isInteger(t.cursorTs) && t.cursorTs >= 0 && t.cursorTs <= t.timestamp && Number.isFinite(t.cursorUserId) && Number.isInteger(t.cursorUserId) && t.cursorUserId >= 0 && Number.isFinite(t.cursorAllianceId) && Number.isInteger(t.cursorAllianceId) && t.cursorAllianceId >= 0 && Number.isFinite(t.cursorPixelsCount) && Number.isInteger(t.cursorPixelsCount) && t.cursorPixelsCount >= 0), !(!n || !s || !o || !e || !I)
   }
@@ -3474,44 +3525,44 @@ class gl {
 }
 Y = new WeakMap;
 
-function wl(r) {
+function nd(r) {
   var I, x;
   if (!r.length) throw new Error("Auto painter request does not contain any pixels.");
   const t = r[0].season;
-  for (const T of r)
-    if (T.season !== t) throw new Error("Auto painter requests cannot mix seasons.");
+  for (const O of r)
+    if (O.season !== t) throw new Error("Auto painter requests cannot mix seasons.");
   const e = (I = ae.seasons) == null ? void 0 : I[t];
   if (!e) throw new Error("Invalid season selected for auto painter request.");
   const n = e.tileSize;
   let s = Number.POSITIVE_INFINITY,
     o = Number.POSITIVE_INFINITY,
-    _ = Number.NEGATIVE_INFINITY,
+    l = Number.NEGATIVE_INFINITY,
     c = Number.NEGATIVE_INFINITY;
-  const l = r.map(T => {
-      const v = Math.round(T.tile[0] * n + T.pixel[0]),
-        N = Math.round(T.tile[1] * n + T.pixel[1]);
-      return v < s && (s = v), N < o && (o = N), v > _ && (_ = v), N > c && (c = N), {
+  const d = r.map(O => {
+      const v = Math.round(O.tile[0] * n + O.pixel[0]),
+        N = Math.round(O.tile[1] * n + O.pixel[1]);
+      return v < s && (s = v), N < o && (o = N), v > l && (l = v), N > c && (c = N), {
         x: v,
         y: N,
-        colorIdx: T.colorIdx
+        colorIdx: O.colorIdx
       }
     }),
-    f = _ - s + 1,
+    f = l - s + 1,
     y = c - o + 1;
   if (!Number.isFinite(f) || !Number.isFinite(y) || f <= 0 || y <= 0) throw new Error("Failed to compute image bounds for auto painter payload.");
   const b = new Uint8ClampedArray(f * y * 4);
   for (const {
-      x: T,
+      x: O,
       y: v,
       colorIdx: N
     }
-    of l) {
+    of d) {
     const oe = (x = ae.colors) == null ? void 0 : x[N];
     if (!oe) throw new Error(`Unknown palette color index: ${N}`);
-    const ke = T - s,
-      J = ((v - o) * f + ke) * 4,
+    const ke = O - s,
+      Q = ((v - o) * f + ke) * 4,
       [xe, Pe, Ue] = oe.rgb;
-    b[J] = xe, b[J + 1] = Pe, b[J + 2] = Ue, b[J + 3] = N === 0 ? 1 : 255
+    b[Q] = xe, b[Q + 1] = Pe, b[Q + 2] = Ue, b[Q + 3] = N === 0 ? 1 : 255
   }
   return {
     data: b,
@@ -3522,25 +3573,25 @@ function wl(r) {
     season: t
   }
 }
-async function yl(r) {
-  const t = bl(r.width, r.height),
+async function ad(r) {
+  const t = sd(r.width, r.height),
     e = t.getContext("2d");
   if (!e) throw new Error("Canvas API is not available to encode auto painter bitmap.");
   const n = e.createImageData(r.width, r.height);
   return n.data.set(r.data), e.putImageData(n, 0, 0), "convertToBlob" in t ? t.convertToBlob({
     type: "image/png"
   }) : new Promise((s, o) => {
-    t.toBlob(_ => {
-      if (!_) {
+    t.toBlob(l => {
+      if (!l) {
         o(new Error("Failed to encode auto painter bitmap."));
         return
       }
-      s(_)
+      s(l)
     }, "image/png")
   })
 }
 
-function bl(r, t) {
+function sd(r, t) {
   if (typeof OffscreenCanvas < "u") return new OffscreenCanvas(r, t);
   if (typeof document < "u") {
     const e = document.createElement("canvas");
@@ -3548,40 +3599,40 @@ function bl(r, t) {
   }
   throw new Error("Canvas API is not available in the current environment.")
 }
-let ee = new gl(we),
+let ee = new rd(we),
   se = !1,
   De;
 
-function $l() {
+function Dd() {
   const r = Re("2025-09_pawtect");
   if (!r) throw new Error("pawtect experiment not found on load");
-  r.variant !== "disabled" && (se || k.data && ve(He).then(El).catch(t => {
+  r.variant !== "disabled" && (se || k.data && ve(He).then(od).catch(t => {
     De = t, Ke(t)
   }))
 }
 
-function El() {
-  V_(k.data.id), ee.postPawtectLoad();
+function od() {
+  k_(k.data.id), ee.postPawtectLoad();
   const r = fetch;
   Object.assign(window, {
     fetch: Se((t, e) => {
       let n = null;
-      return t instanceof Request ? n = t.url : n = t, n.startsWith("/") || W_(n), r.call(window, t, e)
+      return t instanceof Request ? n = t.url : n = t, n.startsWith("/") || P_(n), r.call(window, t, e)
     })
   }), se = !0
 }
 
-function Ol(r) {
+function id(r) {
   if (De) throw new Error(zc());
   if (!se) throw new Error("Try again in a few seconds or reload the page.");
-  return J_(r)
+  return L_(r)
 }
 
 function Se(r) {
   return r.bind().bind()
 }
 
-function Cl(r, t, e) {
+function Sd(r, t, e) {
   const n = {
     [r.name](...s) {
       return e(...s), t(...s)
@@ -3590,5 +3641,5 @@ function Cl(r, t, e) {
   return Se(n)
 }
 export {
-  he as $, Fr as A, de as B, Ae as C, mn as D, Kn as E, C_ as F, Qa as G, Ma as H, _s as I, fe as J, Ls as K, Ws as L, A as M, bo as N, Vo as O, Kl as P, si as Q, wi as R, ae as S, ki as T, $i as U, nc as V, pc as W, zc as X, me as Y, du as Z, D as _, ee as a, Yu as a0, ne as a1, pe as a2, x_ as a3, Ul as a4, Ll as a5, Fl as a6, jl as a7, kl as a8, Gl as a9, ql as aa, Bl as b, nr as c, Rn as d, i as e, zl as f, Zn as g, da as h, Ia as i, Pl as j, E as k, Dl as l, Po as m, Sl as n, xl as o, $l as p, Cl as q, le as r, Ml as s, ye as t, k as u, wt as v, kt as w, $t as x, pr as y, Dr as z
+  S_ as $, yl as A, Ad as B, Ae as C, vd as D, _e as E, wt as F, kt as G, $t as H, pr as I, Dr as J, Fr as K, de as L, mn as M, Kn as N, xl as O, Id as P, Ja as Q, Ma as R, ae as S, ls as T, fe as U, Ls as V, Ws as W, A as X, bo as Y, Vo as Z, si as _, ee as a, wi as a0, ki as a1, $i as a2, Cl as a3, a_ as a4, nc as a5, g_ as a6, zc as a7, me as a8, du as a9, D as aa, he as ab, ne as ac, pe as ad, Td as b, nr as c, Rn as d, i as e, Nd as f, Zn as g, da as h, Ia as i, wd as j, E as k, md as l, Po as m, hd as n, gd as o, Dd as p, Sd as q, yd as r, Od as s, ye as t, k as u, bd as v, Rd as w, pc as x, Ed as y, pd as z
 };

@@ -1,11 +1,11 @@
 import {
   g as e
-} from "./DIegaxO1.js";
+} from "./CCnR8d1l.js";
 (function() {
   try {
     var o = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     o.SENTRY_RELEASE = {
-      id: "d07d8848ea889a09465db794dc92b79d5c096c7e"
+      id: "6c9b69506cfe19dc0f0d9bebc0491abdbf11db02"
     };
     var t = new o.Error().stack;
     t && (o._sentryDebugIds = o._sentryDebugIds || {}, o._sentryDebugIds[t] = "06a4257e-48de-44e6-9e5a-c48f500f2c23", o._sentryDebugIdIdentifier = "sentry-dbid-06a4257e-48de-44e6-9e5a-c48f500f2c23")
@@ -19,13 +19,13 @@ const n = () => "Administrator",
   a = () => "Administrateur",
   c = () => "Amministratore",
   _ = () => "管理者",
-  l = () => "Administrator",
-  f = () => "Администратор",
+  f = () => "Administrator",
+  l = () => "Администратор",
   m = () => "Адміністратор",
   p = () => "Quản trị viên",
   _r = (o = {}, t = {}) => {
     const r = t.locale ?? e();
-    return r === "en" ? n() : r === "pt" ? u() : r === "ch" ? d() : r === "de" ? s() : r === "es" ? i() : r === "fr" ? a() : r === "it" ? c() : r === "jp" ? _() : r === "pl" ? l() : r === "ru" ? f() : r === "uk" ? m() : p()
+    return r === "en" ? n() : r === "pt" ? u() : r === "ch" ? d() : r === "de" ? s() : r === "es" ? i() : r === "fr" ? a() : r === "it" ? c() : r === "jp" ? _() : r === "pl" ? f() : r === "ru" ? l() : r === "uk" ? m() : p()
   },
   b = () => "Discord Moderator",
   g = () => "Moderador do Discord",
@@ -39,7 +39,7 @@ const n = () => "Administrator",
   A = () => "Модератор Discord",
   w = () => "Модератор Discord",
   U = () => "Discord Moderator",
-  lr = (o = {}, t = {}) => {
+  fr = (o = {}, t = {}) => {
     const r = t.locale ?? e();
     return r === "en" ? b() : r === "pt" ? g() : r === "ch" ? M() : r === "de" ? D() : r === "es" ? h() : r === "fr" ? k() : r === "it" ? y() : r === "jp" ? j() : r === "pl" ? v() : r === "ru" ? A() : r === "uk" ? w() : U()
   },
@@ -55,7 +55,7 @@ const n = () => "Administrator",
   z = () => "Глобальный модератор",
   B = () => "Глобальний модератор",
   Q = () => "Global Moderator",
-  fr = (o = {}, t = {}) => {
+  lr = (o = {}, t = {}) => {
     const r = t.locale ?? e();
     return r === "en" ? E() : r === "pt" ? G() : r === "ch" ? I() : r === "de" ? T() : r === "es" ? L() : r === "fr" ? N() : r === "it" ? R() : r === "jp" ? S() : r === "pl" ? x() : r === "ru" ? z() : r === "uk" ? B() : Q()
   },
@@ -92,5 +92,5 @@ const n = () => "Administrator",
     return r === "en" ? Z() : r === "pt" ? $() : r === "ch" ? rr() : r === "de" ? tr() : r === "es" ? or() : r === "fr" ? er() : r === "it" ? nr() : r === "jp" ? ur() : r === "pl" ? dr() : r === "ru" ? sr() : r === "uk" ? ir() : ar()
   };
 export {
-  _r as a, lr as d, fr as g, mr as m, pr as u
+  _r as a, fr as d, lr as g, mr as m, pr as u
 };

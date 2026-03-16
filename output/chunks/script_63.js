@@ -1,4 +1,4 @@
-import "./DTln4VLu.js";
+import "./M8DO3TCO.js";
 import {
   p as m,
   t as d,
@@ -8,41 +8,41 @@ import {
   d as v,
   s as _,
   r as w
-} from "./DBVFc_3b.js";
+} from "./Df0Hz134.js";
 import {
   i as h
-} from "./iiPVLS4p.js";
+} from "./2QgDRSWz.js";
 import {
   d as x,
   a as f,
   s as E
-} from "./5cOkalqm.js";
+} from "./CHn7OGu9.js";
 import {
   p as y,
   r as S
-} from "./SPA6DZVo.js";
+} from "./D71bP1Ad.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "d07d8848ea889a09465db794dc92b79d5c096c7e"
+      id: "6c9b69506cfe19dc0f0d9bebc0491abdbf11db02"
     };
-    var a = new e.Error().stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "f52050fc-5447-4bd5-9aee-5662b4bbc81b", e._sentryDebugIdIdentifier = "sentry-dbid-f52050fc-5447-4bd5-9aee-5662b4bbc81b")
+    var t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "f52050fc-5447-4bd5-9aee-5662b4bbc81b", e._sentryDebugIdIdentifier = "sentry-dbid-f52050fc-5447-4bd5-9aee-5662b4bbc81b")
   } catch {}
 })();
 const B = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
 var L = c("<span>wplace</span>"),
   R = c('<div><img alt="Wplace logo"/> <!></div>');
 
-function D(e, a) {
-  m(a, !0);
-  let t = y(a, "size", 3, "default"),
-    b = S(a, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+function D(e, t) {
+  m(t, !0);
+  let a = y(t, "size", 3, "default"),
+    b = S(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
   var s = R();
   x(s, () => ({
     ...b,
-    class: `flex items-center gap-1.5 ${a.class??""}`
+    class: `flex items-center gap-1.5 ${t.class??""}`
   }));
   var l = v(s);
   let o;
@@ -52,20 +52,20 @@ function D(e, a) {
       var r = L();
       let i;
       d(() => i = f(r, 1, "text-base-content font-pixel", null, i, {
-        "text-4xl": t() === "default",
-        "text-5xl": t() === "lg" || t() === "medium"
+        "text-4xl": a() === "default",
+        "text-5xl": a() === "lg" || a() === "medium"
       })), n(A, r)
     };
     h(p, A => {
-      a.hasText && A(g)
+      t.hasText && A(g)
     })
   }
   w(s), d(() => {
     o = f(l, 1, "pixelated h-auto shrink-0", null, o, {
-      "w-4": t() === "small",
-      "w-10": t() === "default",
-      "w-16": t() === "medium",
-      "w-20": t() === "lg"
+      "w-4": a() === "small",
+      "w-10": a() === "default",
+      "w-16": a() === "medium",
+      "w-20": a() === "lg"
     }), E(l, "src", B)
   }), n(e, s), u()
 }

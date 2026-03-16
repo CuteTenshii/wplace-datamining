@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./DIegaxO1.js";
+} from "./CCnR8d1l.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "d07d8848ea889a09465db794dc92b79d5c096c7e"
+      id: "6c9b69506cfe19dc0f0d9bebc0491abdbf11db02"
     };
     var t = new r.Error().stack;
     t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "34b20000-aaf6-474f-a087-a222515fb8cf", r._sentryDebugIdIdentifier = "sentry-dbid-34b20000-aaf6-474f-a087-a222515fb8cf")
@@ -20,13 +20,13 @@ const i = () => "Preview",
   p = () => "Anteprima",
   a = () => "プレビュー",
   d = () => "Podgląd",
-  v = () => "Предпросмотр",
-  w = () => "Попередній перегляд",
-  l = () => "Xem trước",
-  b = (r = {}, t = {}) => {
+  b = () => "Предпросмотр",
+  v = () => "Попередній перегляд",
+  w = () => "Xem trước",
+  _ = (r = {}, t = {}) => {
     const e = t.locale ?? n();
-    return e === "en" ? i() : e === "pt" ? u() : e === "ch" ? f() : e === "de" ? o() : e === "es" ? s() : e === "fr" ? c() : e === "it" ? p() : e === "jp" ? a() : e === "pl" ? d() : e === "ru" ? v() : e === "uk" ? w() : l()
+    return e === "en" ? i() : e === "pt" ? u() : e === "ch" ? f() : e === "de" ? o() : e === "es" ? s() : e === "fr" ? c() : e === "it" ? p() : e === "jp" ? a() : e === "pl" ? d() : e === "ru" ? b() : e === "uk" ? v() : w()
   };
 export {
-  b as p
+  _ as p
 };

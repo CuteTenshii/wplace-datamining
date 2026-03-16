@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./DIegaxO1.js";
+} from "./CCnR8d1l.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "d07d8848ea889a09465db794dc92b79d5c096c7e"
+      id: "6c9b69506cfe19dc0f0d9bebc0491abdbf11db02"
     };
     var r = new e.Error().stack;
     r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "e65d2160-87a3-4c4c-9e7a-6fbff79400c2", e._sentryDebugIdIdentifier = "sentry-dbid-e65d2160-87a3-4c4c-9e7a-6fbff79400c2")
@@ -15,17 +15,17 @@ const u = () => "Timeout",
   o = () => "Suspender",
   i = () => "禁言",
   s = () => "Timeout",
-  c = () => "Suspender",
-  f = () => "Suspendre",
+  f = () => "Suspender",
+  c = () => "Suspendre",
   d = () => "Sospendi",
   a = () => "タイムアウト",
   m = () => "Zawieszenie",
+  b = () => "Тайм-аут",
   l = () => "Тайм-аут",
-  p = () => "Тайм-аут",
-  _ = () => "Tạm khóa",
+  p = () => "Tạm khóa",
   g = (e = {}, r = {}) => {
     const t = r.locale ?? n();
-    return t === "en" ? u() : t === "pt" ? o() : t === "ch" ? i() : t === "de" ? s() : t === "es" ? c() : t === "fr" ? f() : t === "it" ? d() : t === "jp" ? a() : t === "pl" ? m() : t === "ru" ? l() : t === "uk" ? p() : _()
+    return t === "en" ? u() : t === "pt" ? o() : t === "ch" ? i() : t === "de" ? s() : t === "es" ? f() : t === "fr" ? c() : t === "it" ? d() : t === "jp" ? a() : t === "pl" ? m() : t === "ru" ? b() : t === "uk" ? l() : p()
   };
 export {
   g as t

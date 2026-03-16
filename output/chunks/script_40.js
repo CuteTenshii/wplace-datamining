@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./DIegaxO1.js";
+} from "./CCnR8d1l.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "d07d8848ea889a09465db794dc92b79d5c096c7e"
+      id: "6c9b69506cfe19dc0f0d9bebc0491abdbf11db02"
     };
     var t = new r.Error().stack;
     t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "3c170bda-c666-43d6-85a6-5d1a13ae8f7a", r._sentryDebugIdIdentifier = "sentry-dbid-3c170bda-c666-43d6-85a6-5d1a13ae8f7a")
@@ -21,16 +21,16 @@ const c = () => "Extra context on what happened (required)",
   f = () => "何が起きたかの詳細な説明（必須）",
   h = () => "Dodatkowy kontekst tego, co się stało (wymagane)",
   l = () => "Дополнительный контекст о произошедшем (обязательно)",
-  d = () => "Додаткова інформація про те, що сталося (обовʼязково)",
-  m = () => "Thêm ngữ cảnh về chuyện đã xảy ra (bắt buộc)",
+  m = () => "Додаткова інформація про те, що сталося (обовʼязково)",
+  d = () => "Thêm ngữ cảnh về chuyện đã xảy ra (bắt buộc)",
   qr = (r = {}, t = {}) => {
     const e = t.locale ?? n();
-    return e === "en" ? c() : e === "pt" ? o() : e === "ch" ? a() : e === "de" ? i() : e === "es" ? u() : e === "fr" ? s() : e === "it" ? _() : e === "jp" ? f() : e === "pl" ? h() : e === "ru" ? l() : e === "uk" ? d() : m()
+    return e === "en" ? c() : e === "pt" ? o() : e === "ch" ? a() : e === "de" ? i() : e === "es" ? u() : e === "fr" ? s() : e === "it" ? _() : e === "jp" ? f() : e === "pl" ? h() : e === "ru" ? l() : e === "uk" ? m() : d()
   },
   x = r => `Max. characters: ${r.max}`,
   g = r => `Máximo de caracteres: ${r.max}`,
-  p = r => `最大字符数：${r.max}`,
-  b = r => `Max. Zeichen: ${r.max}`,
+  b = r => `最大字符数：${r.max}`,
+  p = r => `Max. Zeichen: ${r.max}`,
   v = r => `Máx. de caracteres: ${r.max}`,
   $ = r => `Max. de caractères : ${r.max}`,
   k = r => `Numero massimo di caratteri: ${r.max}`,
@@ -41,7 +41,7 @@ const c = () => "Extra context on what happened (required)",
   j = r => `Số ký tự tối đa: ${r.max}`,
   yr = (r, t = {}) => {
     const e = t.locale ?? n();
-    return e === "en" ? x(r) : e === "pt" ? g(r) : e === "ch" ? p(r) : e === "de" ? b(r) : e === "es" ? v(r) : e === "fr" ? $(r) : e === "it" ? k(r) : e === "jp" ? q(r) : e === "pl" ? y(r) : e === "ru" ? M(r) : e === "uk" ? w(r) : j(r)
+    return e === "en" ? x(r) : e === "pt" ? g(r) : e === "ch" ? b(r) : e === "de" ? p(r) : e === "es" ? v(r) : e === "fr" ? $(r) : e === "it" ? k(r) : e === "jp" ? q(r) : e === "pl" ? y(r) : e === "ru" ? M(r) : e === "uk" ? w(r) : j(r)
   },
   S = r => `Min. characters: ${r.min}`,
   z = r => `Mínimo de caracteres: ${r.min}`,
@@ -95,17 +95,17 @@ const c = () => "Extra context on what happened (required)",
   fr = () => "Selecione o motivo",
   hr = () => "选择原因",
   lr = () => "Grund auswählen",
-  dr = () => "Selecciona el motivo",
-  mr = () => "Sélectionnez la raison",
+  mr = () => "Selecciona el motivo",
+  dr = () => "Sélectionnez la raison",
   xr = () => "Seleziona il motivo",
   gr = () => "理由を選択",
-  pr = () => "Wybierz powód",
-  br = () => "Выберите причину",
+  br = () => "Wybierz powód",
+  pr = () => "Выберите причину",
   vr = () => "Виберіть причину",
   $r = () => "Chọn lý do",
   Sr = (r = {}, t = {}) => {
     const e = t.locale ?? n();
-    return e === "en" ? _r() : e === "pt" ? fr() : e === "ch" ? hr() : e === "de" ? lr() : e === "es" ? dr() : e === "fr" ? mr() : e === "it" ? xr() : e === "jp" ? gr() : e === "pl" ? pr() : e === "ru" ? br() : e === "uk" ? vr() : $r()
+    return e === "en" ? _r() : e === "pt" ? fr() : e === "ch" ? hr() : e === "de" ? lr() : e === "es" ? mr() : e === "fr" ? dr() : e === "it" ? xr() : e === "jp" ? gr() : e === "pl" ? br() : e === "ru" ? pr() : e === "uk" ? vr() : $r()
   };
 export {
   yr as a, qr as g, Mr as m, wr as o, jr as r, Sr as s
