@@ -17,11 +17,11 @@ var bt = (v, s, m) => (Hg(v, s, "read from private field"), m ? m.call(v) : s.ge
   ns = (v, s, m, y) => (Hg(v, s, "write to private field"), y ? y.call(v, m) : s.set(v, m), m),
   On = (v, s, m) => (Hg(v, s, "access private method"), m);
 var ax = (v, s, m) => F5(R5(v), m, s);
-import "../chunks/C6F2EJBU.js";
+import "../chunks/CnGLP4Ih.js";
 import {
   o as Aa,
   a as O5
-} from "../chunks/K3iHyanV.js";
+} from "../chunks/B1GkBQMi.js";
 import {
   ag as N5,
   bw as q5,
@@ -74,21 +74,21 @@ import {
   bT as J5,
   M as Q5,
   $ as $5
-} from "../chunks/Cvq33p-I.js";
+} from "../chunks/CCHDI9er.js";
 import {
   s as ee,
   c as Cb
-} from "../chunks/CQJ1gLMQ.js";
+} from "../chunks/B_uZjy7q.js";
 import {
   i as Ve
-} from "../chunks/DaJK_foC.js";
+} from "../chunks/y740Qaql.js";
 import {
   a as tu,
   t as ms
-} from "../chunks/DvwtjR3Y.js";
+} from "../chunks/COuiJgAH.js";
 import {
   h as e3
-} from "../chunks/C_mVAe-d.js";
+} from "../chunks/BY7QtLoJ.js";
 import {
   d as Xr,
   a as jr,
@@ -103,29 +103,29 @@ import {
   h as Ed,
   j as t3,
   k as r3
-} from "../chunks/BwDROv2K.js";
+} from "../chunks/CDjtL1RV.js";
 import {
   b as n3,
   a as i3,
   g as au,
   c as a3
-} from "../chunks/DZKfqSC0.js";
+} from "../chunks/CfhLPnT0.js";
 import {
   p as ha
-} from "../chunks/C4XciXHr.js";
+} from "../chunks/Cjh6K8Me.js";
 import {
   g as Es,
   P as s3,
   a as t_,
   c as o3
-} from "../chunks/CWQIz53j.js";
+} from "../chunks/Dtv2OTZc.js";
 import {
   S as ia,
   r as l3,
   v as c3,
   u as At,
   t as Yt,
-  a as bn,
+  a as _n,
   w as ml,
   x as u3,
   y as h3,
@@ -138,7 +138,7 @@ import {
   C as cx,
   D as Of,
   P as _3
-} from "../chunks/Dcu7PFJ7.js";
+} from "../chunks/DbEOHiZl.js";
 import {
   A as Li,
   p as r_,
@@ -146,38 +146,38 @@ import {
   g as Xg,
   a as y3,
   r as x3
-} from "../chunks/DGwQ7P5D.js";
+} from "../chunks/XdAO5AY1.js";
 import {
   P as Ea
-} from "../chunks/QbAotbja.js";
-import "../chunks/BVxW-5JH.js";
+} from "../chunks/NA3RvsKp.js";
+import "../chunks/D_GVCOzg.js";
 import {
   e as xi,
   i as Do
-} from "../chunks/CSaMn-qQ.js";
+} from "../chunks/qjlVzwAf.js";
 import {
   a as nm,
   b as el,
   c as n_
-} from "../chunks/CT-eFD4T.js";
+} from "../chunks/B603ApE2.js";
 import {
   b as ss
-} from "../chunks/C1RwUXlh.js";
+} from "../chunks/C13ifpNr.js";
 import {
   i as i_
-} from "../chunks/DAlIvMSu.js";
+} from "../chunks/zCfBhihK.js";
 import {
   r as Qr,
   p as Rt,
   s as gc,
   u as ux
-} from "../chunks/D5saCjJm.js";
+} from "../chunks/D9Kwocaz.js";
 import {
   C as Lo,
   S as b3,
   U as Mb,
   a as Eb
-} from "../chunks/D-IUgxdg.js";
+} from "../chunks/CMoZ6EqC.js";
 import {
   U as cv,
   A as im,
@@ -188,30 +188,30 @@ import {
   P as T3,
   D as S3,
   c as I3
-} from "../chunks/B-8KCqz1.js";
+} from "../chunks/Bs7SldHz.js";
 import {
   c as su,
   b as Ad,
   g as io,
   a as Pm
-} from "../chunks/kN2JN9v1.js";
+} from "../chunks/fWS9bYj4.js";
 import {
   h as Cm
-} from "../chunks/CsPw68Ii.js";
+} from "../chunks/C8MLU5lC.js";
 import {
   L as kb
-} from "../chunks/CRmJ4PlB.js";
+} from "../chunks/v8d4tgYl.js";
 import {
   l as P3,
   g as C3
-} from "../chunks/Cl6aE3Q9.js";
+} from "../chunks/CcrZu3Ih.js";
 import {
   c as mc
-} from "../chunks/CVJDkqBP.js";
+} from "../chunks/CUCMFPaO.js";
 import {
   d as M3,
   p as a_
-} from "../chunks/CYetGHOJ.js";
+} from "../chunks/COo-T8sW.js";
 import {
   u as E3,
   b as Db,
@@ -526,53 +526,53 @@ import {
   e1 as Ex,
   e2 as TC,
   e3 as SC
-} from "../chunks/DMkdgrtp.js";
+} from "../chunks/DWDplM1p.js";
 import {
   c as fv
-} from "../chunks/yLZGpPfp.js";
+} from "../chunks/2rJFyzQJ.js";
 import {
   P as vs,
   t as Zb
-} from "../chunks/PGZJ0AM_.js";
+} from "../chunks/CuCkj4C_.js";
 import {
   L as Em
-} from "../chunks/MWaCz8MU.js";
+} from "../chunks/Dc1jSDHS.js";
 import {
   l as IC,
   v as PC,
   a as sm,
   s as Gb,
   c as CC
-} from "../chunks/BvIk7fIC.js";
+} from "../chunks/D1rG6l_X.js";
 import {
   p as h_,
   m as Hb
-} from "../chunks/Cu3PSU03.js";
+} from "../chunks/CxGaALo5.js";
 import {
   f as ru
-} from "../chunks/CXMutVjq.js";
+} from "../chunks/BBnguRsl.js";
 import {
   k as cu
-} from "../chunks/DcT8Usd8.js";
+} from "../chunks/ClYemnGk.js";
 import {
   A as gh
-} from "../chunks/I0ToMk2Z.js";
+} from "../chunks/B1GD16LA.js";
 import {
   b as d_
-} from "../chunks/DTK2Teyl.js";
+} from "../chunks/CPrDgdHJ.js";
 import {
   u as MC
-} from "../chunks/Bk7rGVm3.js";
+} from "../chunks/CYu8fiR3.js";
 import {
   u as EC
-} from "../chunks/PSGhILDr.js";
+} from "../chunks/C6fJ5p0v.js";
 import {
   n as mv,
   c as Wb,
   b as AC,
   a as kC,
   _ as Ax
-} from "../chunks/DQ0mO9Ao.js";
+} from "../chunks/BQyfzkiF.js";
 import {
   E as kd,
   D as Am,
@@ -580,10 +580,10 @@ import {
   W as Xb,
   b as DC,
   R as LC
-} from "../chunks/0w1ud7tL.js";
+} from "../chunks/DE44EsV5.js";
 import {
   l as p_
-} from "../chunks/9qR7Sibh.js";
+} from "../chunks/WYkXaA24.js";
 import {
   a as km,
   c as zC,
@@ -601,105 +601,105 @@ import {
   b as jC,
   u as UC,
   h as Dx
-} from "../chunks/B7T0DJ-5.js";
+} from "../chunks/LM7tIkWU.js";
 import {
   f as go,
   s as Cd
-} from "../chunks/BAatmupM.js";
+} from "../chunks/VOHKIMvY.js";
 import {
   C as f_
-} from "../chunks/BdG4O-nW.js";
+} from "../chunks/nXH0_f1e.js";
 import {
   L as Kb
-} from "../chunks/3fGM6IjD.js";
+} from "../chunks/YvTO2X0w.js";
 import {
   t as ZC,
   r as Jb,
   g as GC
-} from "../chunks/Dh5LZ2oa.js";
+} from "../chunks/DyagZutD.js";
 import {
   c as Qo
-} from "../chunks/D8IUJIWe.js";
+} from "../chunks/YelAaEUp.js";
 import {
   r as HC
-} from "../chunks/zbp2IZqw.js";
+} from "../chunks/C9H7HURN.js";
 import {
   p as _v
-} from "../chunks/CLtsDuc1.js";
+} from "../chunks/NcwOQjkV.js";
 import {
   c as Ua
-} from "../chunks/D7JUGBmO.js";
+} from "../chunks/DtbEE-Hd.js";
 import {
   s as ra
-} from "../chunks/Dkw_HunX.js";
+} from "../chunks/D7dj6lk6.js";
 import {
   a as Qb
-} from "../chunks/Bc5Yk6Ob.js";
+} from "../chunks/D_CoO0Lv.js";
 import {
   L as WC
-} from "../chunks/DIWjSIBU.js";
+} from "../chunks/BHu9RInQ.js";
 import {
   n as Dm,
   e as XC,
   a as YC
-} from "../chunks/BgpXiidC.js";
+} from "../chunks/pZl96L2h.js";
 import {
   b as KC
-} from "../chunks/CKBB4QoF.js";
+} from "../chunks/DzMxZNs9.js";
 import {
   e as $b
-} from "../chunks/BMuWtQB2.js";
+} from "../chunks/CK4Ym6G4.js";
 import {
   p as e1
-} from "../chunks/BA6HrKci.js";
+} from "../chunks/Bri_vGXT.js";
 import {
   c as t1
-} from "../chunks/C7VT-z5p.js";
+} from "../chunks/BJZlnjBb.js";
 import {
   a as JC
-} from "../chunks/CWHh-Qua.js";
+} from "../chunks/q3iFh02L.js";
 import {
   d as QC
-} from "../chunks/D9ael7Or.js";
+} from "../chunks/BBYXuRSn.js";
 import {
   p as Lx
-} from "../chunks/YFbBQWNG.js";
+} from "../chunks/B--6t_bg.js";
 import {
   P as $C
-} from "../chunks/dWuywDJn.js";
+} from "../chunks/DypWf8lf.js";
 import {
   R as m_
-} from "../chunks/DfpDlPVO.js";
+} from "../chunks/CJU6Sklq.js";
 import {
   R as e4
-} from "../chunks/Bxdz1vR6.js";
+} from "../chunks/DXjiTTcd.js";
 import {
   T as vh,
   G as lm
-} from "../chunks/ZmqG_iFg.js";
+} from "../chunks/Ci2CSZdc.js";
 import {
   t as r1
-} from "../chunks/D-xEyWV1.js";
+} from "../chunks/DZUSH9B-.js";
 import {
   R as t4
-} from "../chunks/26Miu_Xc.js";
+} from "../chunks/LW0YZBnh.js";
 import {
   W as r4
-} from "../chunks/BCDqVIpg.js";
+} from "../chunks/BWuF2Vdd.js";
 import {
   r as n4
-} from "../chunks/DQvaxfq6.js";
+} from "../chunks/a1qh1krC.js";
 import {
   _ as i4
-} from "../chunks/C9Dt6kKM.js";
+} from "../chunks/D_cSQwjG.js";
 (function() {
   try {
     var v = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     v.SENTRY_RELEASE = {
-      id: "017c00da74943be59fb953c55a7af7db0cfe4436"
+      id: "5075ea86ba38314c7942ca2e67d3e2ff3d377749"
     };
     var s = new v.Error().stack;
-    s && (v._sentryDebugIds = v._sentryDebugIds || {}, v._sentryDebugIds[s] = "390566eb-34d1-4b26-80ef-b95b70e4fa2b", v._sentryDebugIdIdentifier = "sentry-dbid-390566eb-34d1-4b26-80ef-b95b70e4fa2b")
+    s && (v._sentryDebugIds = v._sentryDebugIds || {}, v._sentryDebugIds[s] = "f85fd60d-457b-4010-9506-3d60095b993e", v._sentryDebugIdIdentifier = "sentry-dbid-f85fd60d-457b-4010-9506-3d60095b993e")
   } catch {}
 })();
 const a4 = [];
@@ -4604,13 +4604,13 @@ function S4() {
             super(r), this.message = r, this.key = e
           }
         }
-        class _n {
+        class yn {
           constructor(e, r = []) {
             this.parent = e, this.bindings = {};
             for (const [a, u] of r) this.bindings[a] = u
           }
           concat(e) {
-            return new _n(this, e)
+            return new yn(this, e)
           }
           get(e) {
             if (this.bindings[e]) return this.bindings[e];
@@ -5126,15 +5126,15 @@ function S4() {
             return new rn(mt(e.values, r.values, a))
           }
         }
-        class yn {
+        class xn {
           constructor(e) {
             this.values = e.slice()
           }
           static parse(e) {
-            if (e instanceof yn) return e;
+            if (e instanceof xn) return e;
             if (typeof e == "string") {
               const a = dt.parse(e);
-              return a ? new yn([a]) : void 0
+              return a ? new xn([a]) : void 0
             }
             if (!Array.isArray(e)) return;
             const r = [];
@@ -5144,7 +5144,7 @@ function S4() {
               if (!u) return;
               r.push(u)
             }
-            return new yn(r)
+            return new xn(r)
           }
           toString() {
             return JSON.stringify(this.values)
@@ -5153,7 +5153,7 @@ function S4() {
             const d = [];
             if (e.values.length != r.values.length) throw new Error(`colorArray: Arrays have mismatched length (${e.values.length} vs. ${r.values.length}), cannot interpolate.`);
             for (let p = 0; p < e.values.length; p++) d.push(dt.interpolate(e.values[p], r.values[p], a, u));
-            return new yn(d)
+            return new xn(d)
           }
         }
         class Pt extends Error {
@@ -5228,7 +5228,7 @@ function S4() {
         }
 
         function fi(n) {
-          if (n === null || typeof n == "string" || typeof n == "boolean" || typeof n == "number" || n instanceof Fn || n instanceof dt || n instanceof jt || n instanceof Hr || n instanceof wr || n instanceof rn || n instanceof yn || n instanceof kr || n instanceof fn) return !0;
+          if (n === null || typeof n == "string" || typeof n == "boolean" || typeof n == "number" || n instanceof Fn || n instanceof dt || n instanceof jt || n instanceof Hr || n instanceof wr || n instanceof rn || n instanceof xn || n instanceof kr || n instanceof fn) return !0;
           if (Array.isArray(n)) {
             for (const e of n)
               if (!fi(e)) return !1;
@@ -5253,7 +5253,7 @@ function S4() {
           if (n instanceof Hr) return vi;
           if (n instanceof wr) return Ei;
           if (n instanceof rn) return Bi;
-          if (n instanceof yn) return Fi;
+          if (n instanceof xn) return Fi;
           if (n instanceof kr) return di;
           if (n instanceof fn) return Ii;
           if (Array.isArray(n)) {
@@ -5275,7 +5275,7 @@ function S4() {
 
         function Ce(n) {
           const e = typeof n;
-          return n === null ? "" : e === "string" || e === "number" || e === "boolean" ? String(n) : n instanceof dt || n instanceof Fn || n instanceof Hr || n instanceof wr || n instanceof rn || n instanceof yn || n instanceof kr || n instanceof fn ? n.toString() : JSON.stringify(n)
+          return n === null ? "" : e === "string" || e === "number" || e === "boolean" ? String(n) : n instanceof dt || n instanceof Fn || n instanceof Hr || n instanceof wr || n instanceof rn || n instanceof xn || n instanceof kr || n instanceof fn ? n.toString() : JSON.stringify(n)
         }
         class Ze {
           constructor(e, r) {
@@ -5411,7 +5411,7 @@ function S4() {
                 let r;
                 for (const a of this.args) {
                   r = a.evaluate(e);
-                  const u = yn.parse(r);
+                  const u = xn.parse(r);
                   if (u) return u
                 }
                 throw new Pt(`Could not parse colorArray from value '${typeof r=="string"?r:JSON.stringify(r)}'`)
@@ -5477,7 +5477,7 @@ function S4() {
           }
         }
         class Nr {
-          constructor(e, r, a = [], u, d = new _n, p = []) {
+          constructor(e, r, a = [], u, d = new yn, p = []) {
             this.registry = e, this.path = a, this.key = a.map((_ => `[${_}]`)).join(""), this.scope = d, this.errors = p, this.expectedType = u, this._isConstant = r
           }
           parse(e, r, a, u, d = {}) {
@@ -5709,7 +5709,7 @@ function S4() {
             return this.outputs.every((e => e.outputDefined())) && this.otherwise.outputDefined()
           }
         }
-        class xn {
+        class bn {
           constructor(e, r, a) {
             this.type = e, this.branches = r, this.otherwise = a
           }
@@ -5729,7 +5729,7 @@ function S4() {
             const d = r.parse(e[e.length - 1], e.length - 1, a);
             if (!d) return null;
             if (!a) throw new Error("Can't infer output type");
-            return new xn(a, u, d)
+            return new bn(a, u, d)
           }
           evaluate(e) {
             for (const [r, a] of this.branches)
@@ -5954,7 +5954,7 @@ function S4() {
                   case "padding":
                     return wr.interpolate(w, P, _);
                   case "colorArray":
-                    return yn.interpolate(w, P, _);
+                    return xn.interpolate(w, P, _);
                   case "numberArray":
                     return rn.interpolate(w, P, _);
                   case "variableAnchorOffsetCollection":
@@ -5969,14 +5969,14 @@ function S4() {
                   case "color":
                     return dt.interpolate(w, P, _, "hcl");
                   case "colorArray":
-                    return yn.interpolate(w, P, _, "hcl")
+                    return xn.interpolate(w, P, _, "hcl")
                 }
               case "interpolate-lab":
                 switch (this.type.kind) {
                   case "color":
                     return dt.interpolate(w, P, _, "lab");
                   case "colorArray":
-                    return yn.interpolate(w, P, _, "lab")
+                    return xn.interpolate(w, P, _, "lab")
                 }
             }
           }
@@ -5999,7 +5999,7 @@ function S4() {
           number: Kr,
           padding: wr.interpolate,
           numberArray: rn.interpolate,
-          colorArray: yn.interpolate,
+          colorArray: xn.interpolate,
           variableAnchorOffsetCollection: kr.interpolate,
           array: mt
         };
@@ -7006,7 +7006,7 @@ function S4() {
           array: wt,
           at: Ln,
           boolean: wt,
-          case: xn,
+          case: bn,
           coalesce: ri,
           collator: gi,
           format: Ni,
@@ -7213,7 +7213,7 @@ function S4() {
                 case "numberArray":
                   return rn.parse;
                 case "colorArray":
-                  return yn.parse;
+                  return xn.parse;
                 default:
                   return null
               }
@@ -7352,7 +7352,7 @@ function S4() {
               r = wr.parse(r);
               break;
             case "colorArray":
-              r = yn.parse(r);
+              r = xn.parse(r);
               break;
             case "numberArray":
               r = rn.parse(r);
@@ -7558,7 +7558,7 @@ function S4() {
                 case "numberArray":
                   return rn.parse(u.default) || null;
                 case "colorArray":
-                  return yn.parse(u.default) || null;
+                  return xn.parse(u.default) || null;
                 case "variableAnchorOffsetCollection":
                   return kr.parse(u.default) || null;
                 case "projectionDefinition":
@@ -9104,7 +9104,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                 return _.value
               } {
                 let _ = u;
-                return d.type === "color" && typeof u == "string" ? _ = dt.parse(u) : d.type !== "padding" || typeof u != "number" && !Array.isArray(u) ? d.type !== "numberArray" || typeof u != "number" && !Array.isArray(u) ? d.type !== "colorArray" || typeof u != "string" && !Array.isArray(u) ? d.type === "variableAnchorOffsetCollection" && Array.isArray(u) ? _ = kr.parse(u) : d.type === "projectionDefinition" && typeof u == "string" && (_ = Fn.parse(u)) : _ = yn.parse(u) : _ = rn.parse(u) : _ = wr.parse(u), {
+                return d.type === "color" && typeof u == "string" ? _ = dt.parse(u) : d.type !== "padding" || typeof u != "number" && !Array.isArray(u) ? d.type !== "numberArray" || typeof u != "number" && !Array.isArray(u) ? d.type !== "colorArray" || typeof u != "string" && !Array.isArray(u) ? d.type === "variableAnchorOffsetCollection" && Array.isArray(u) ? _ = kr.parse(u) : d.type === "projectionDefinition" && typeof u == "string" && (_ = Fn.parse(u)) : _ = xn.parse(u) : _ = rn.parse(u) : _ = wr.parse(u), {
                   globalStateRefs: new Set,
                   _globalState: null,
                   kind: "constant",
@@ -20137,7 +20137,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                 const en = L.layers[Ar];
                 if (!en) continue;
                 en.version === 1 && S.w(`Vector tile source "${this.source}" layer "${Ar}" does not use vector tile spec v2 and therefore may have some rendering errors.`);
-                const _n = ie.encode(Ar),
+                const yn = ie.encode(Ar),
                   In = [];
                 for (let Ft = 0; Ft < en.length; Ft++) {
                   const Wr = en.feature(Ft),
@@ -20146,7 +20146,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                     feature: Wr,
                     id: qr,
                     index: Ft,
-                    sourceLayerIndex: _n
+                    sourceLayerIndex: yn
                   })
                 }
                 for (const Ft of ut[Ar]) {
@@ -20158,7 +20158,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                     pixelRatio: this.pixelRatio,
                     overscaling: this.overscaling,
                     collisionBoxArray: this.collisionBoxArray,
-                    sourceLayerIndex: _n,
+                    sourceLayerIndex: yn,
                     sourceID: this.source
                   })).populate(In, Re, this.tileID.canonical), Pe.bucketLayerIDs.push(Ft.map((qr => qr.id))))
                 }
@@ -24471,7 +24471,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           return !!f.selfFading || !f.hasData() && !!t.has(h) && (f.setSelfFadeLogic(i + l), !0)
         }
 
-        function _n(f, t) {
+        function yn(f, t) {
           var i;
           f.needsHillshadePrepare = !0, f.needsTerrainPrepare = !0;
           let l = t.tileID.canonical.x - f.tileID.canonical.x;
@@ -24638,7 +24638,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
               for (const z of C) {
                 if (!h.neighboringTiles || !h.neighboringTiles[z]) continue;
                 const B = g.getTileById(z);
-                h.neighboringTiles[z].backfilled || _n(h, B), !((I = (x = B.neighboringTiles) === null || x === void 0 ? void 0 : x[h.tileID.key]) === null || I === void 0) && I.backfilled || _n(B, h)
+                h.neighboringTiles[z].backfilled || yn(h, B), !((I = (x = B.neighboringTiles) === null || x === void 0 ? void 0 : x[h.tileID.key]) === null || I === void 0) && I.backfilled || yn(B, h)
               }
             })(t, this._inViewTiles), this._state.initializeTileState(t, this.map ? this.map.painter : null), t.aborted || this._source.fire(new o.l("data", {
               dataType: "source",
@@ -26397,7 +26397,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           }
         }
         var rn = "void main() {fragColor=vec4(1.0);}";
-        const yn = {
+        const xn = {
           prelude: Pt(`#ifdef GL_ES
 precision mediump float;
 #else
@@ -27289,10 +27289,10 @@ uniform ${B} ${H} u_${G};
             return fn
           }
           get shaderPreludeCode() {
-            return yn.projectionMercator
+            return xn.projectionMercator
           }
           get vertexShaderPreludeCode() {
-            return yn.projectionMercator.vertexSource
+            return xn.projectionMercator.vertexSource
           }
           get subdivisionGranularity() {
             return o.aV.noSubdivision
@@ -28501,12 +28501,12 @@ uniform ${B} ${H} u_${G};
         }
         Fr.ReadOnly = !1, Fr.ReadWrite = !0, Fr.disabled = new Fr(519, Fr.ReadOnly, [0, 1]);
         const kn = 7680;
-        class xn {
+        class bn {
           constructor(t, i, l, h, g, x) {
             this.test = t, this.ref = i, this.mask = l, this.fail = h, this.depthFail = g, this.pass = x
           }
         }
-        xn.disabled = new xn({
+        bn.disabled = new bn({
           func: 519,
           mask: 0
         }, 0, 0, kn, kn, kn);
@@ -28554,7 +28554,7 @@ uniform ${B} ${H} u_${G};
               h = l.gl;
             if (this._bindFramebuffer(), l.viewport.set([0, 0, this._texWidth, this._texHeight]), l.clear({
                 color: o.bp.transparent
-              }), this._cachedRenderContext.useProgram("projectionErrorMeasurement").draw(l, h.TRIANGLES, Fr.disabled, xn.disabled, Cr.unblended, Rr.disabled, ((g, x) => ({
+              }), this._cachedRenderContext.useProgram("projectionErrorMeasurement").draw(l, h.TRIANGLES, Fr.disabled, bn.disabled, Cr.unblended, Rr.disabled, ((g, x) => ({
                 u_input: g,
                 u_output_expected: x
               }))(t, i), null, null, "$clipping", this._fullscreenTriangle.vertexBuffer, this._fullscreenTriangle.indexBuffer, this._fullscreenTriangle.segments), this._pbo && Un(h)) {
@@ -28652,10 +28652,10 @@ uniform ${B} ${H} u_${G};
             return "#define GLOBE"
           }
           get shaderPreludeCode() {
-            return yn.projectionGlobe
+            return xn.projectionGlobe
           }
           get vertexShaderPreludeCode() {
-            return yn.projectionMercator.vertexSource
+            return xn.projectionMercator.vertexSource
           }
           get subdivisionGranularity() {
             return _i
@@ -31169,7 +31169,7 @@ uniform ${B} ${H} u_${G};
             const H = qa(i.staticAttributes),
               G = l ? l.getBinderAttributes() : [],
               $ = H.concat(G),
-              le = yn.prelude.staticUniforms ? qa(yn.prelude.staticUniforms) : [],
+              le = xn.prelude.staticUniforms ? qa(xn.prelude.staticUniforms) : [],
               Ee = I.staticUniforms ? qa(I.staticUniforms) : [],
               ke = i.staticUniforms ? qa(i.staticUniforms) : [],
               Ae = l ? l.getBinderUniforms() : [],
@@ -31178,9 +31178,9 @@ uniform ${B} ${H} u_${G};
             for (const zt of Ge) rt.indexOf(zt) < 0 && rt.push(zt);
             const qe = l ? l.defines() : [];
             Un(B) && qe.unshift("#version 300 es"), g && qe.push("#define OVERDRAW_INSPECTOR;"), x && qe.push("#define TERRAIN3D;"), C && qe.push(C), z && qe.push(...z);
-            let nt = qe.concat(yn.prelude.fragmentSource, I.fragmentSource, i.fragmentSource).join(`
+            let nt = qe.concat(xn.prelude.fragmentSource, I.fragmentSource, i.fragmentSource).join(`
 `),
-              ht = qe.concat(yn.prelude.vertexSource, I.vertexSource, i.vertexSource).join(`
+              ht = qe.concat(xn.prelude.vertexSource, I.vertexSource, i.vertexSource).join(`
 `);
             Un(B) || (nt = (function(zt) {
               return zt.replace(/\bin\s/g, "varying ").replace("out highp vec4 fragColor;", "").replace(/fragColor/g, "gl_FragColor").replace(/texture\(/g, "texture2D(")
@@ -32384,7 +32384,7 @@ uniform ${B} ${H} u_${G};
               circleArray: nt,
               circleOffset: H,
               coord: Ge
-            }), B += nt.length / 4, H = B), qe && C.draw(g, I.LINES, Fr.disabled, xn.disabled, f.colorModeForRenderPass(), Rr.disabled, zi(f.transform), f.style.map.terrain && f.style.map.terrain.getTerrainData(Ge), x.getProjectionData({
+            }), B += nt.length / 4, H = B), qe && C.draw(g, I.LINES, Fr.disabled, bn.disabled, f.colorModeForRenderPass(), Rr.disabled, zi(f.transform), f.style.map.terrain && f.style.map.terrain.getTerrainData(Ge), x.getProjectionData({
               overscaledTileID: Ge,
               applyGlobeMatrix: !0,
               applyTerrainMatrix: !0
@@ -32417,7 +32417,7 @@ uniform ${B} ${H} u_${G};
             ke = g.createVertexBuffer($, o.cb.members, !0);
           for (const Ae of z) {
             const Ge = Bn(f.transform);
-            G.draw(g, I.TRIANGLES, Fr.disabled, xn.disabled, f.colorModeForRenderPass(), Rr.disabled, Ge, f.style.map.terrain && f.style.map.terrain.getTerrainData(Ae.coord), null, i.id, ke, Ee, o.aX.simpleSegment(0, 2 * Ae.circleOffset, Ae.circleArray.length, Ae.circleArray.length / 2), null, f.transform.zoom, null, null, null)
+            G.draw(g, I.TRIANGLES, Fr.disabled, bn.disabled, f.colorModeForRenderPass(), Rr.disabled, Ge, f.style.map.terrain && f.style.map.terrain.getTerrainData(Ae.coord), null, i.id, ke, Ee, o.aX.simpleSegment(0, 2 * Ae.circleOffset, Ae.circleArray.length, Ae.circleArray.length / 2), null, f.transform.zoom, null, null, null)
           }
           ke.destroy(), Ee.destroy()
         }
@@ -32613,7 +32613,7 @@ uniform ${B} ${H} u_${G};
         function Op(f, t, i, l, h) {
           const g = f.context,
             x = g.gl,
-            I = xn.disabled,
+            I = bn.disabled,
             C = new Cr([x.ONE, x.ONE], o.bp.transparent, [!0, !0, !0, !0]),
             z = t.getBucket(i);
           if (!z) return;
@@ -32648,7 +32648,7 @@ uniform ${B} ${H} u_${G};
             applyTerrainMatrix: h,
             applyGlobeMatrix: !l
           });
-          f.useProgram("heatmapTexture").draw(g, x.TRIANGLES, Fr.disabled, xn.disabled, f.colorModeForRenderPass(), Rr.disabled, sa(f, t, 0, 1), null, H, t.id, f.rasterBoundsBuffer, f.quadTriangleIndexBuffer, f.rasterBoundsSegments, t.paint, I.zoom), B.destroy(), t.heatmapFbos.delete(z)
+          f.useProgram("heatmapTexture").draw(g, x.TRIANGLES, Fr.disabled, bn.disabled, f.colorModeForRenderPass(), Rr.disabled, sa(f, t, 0, 1), null, H, t.id, f.rasterBoundsBuffer, f.quadTriangleIndexBuffer, f.rasterBoundsSegments, t.paint, I.zoom), B.destroy(), t.heatmapFbos.delete(z)
         }
 
         function Su(f, t, i) {
@@ -32891,7 +32891,7 @@ uniform ${B} ${H} u_${G};
               }),
               Cn = Gl(Nt, kt, Vr.fadeMix, i, I),
               ii = Ee.getMeshFromTileID(H, ht.canonical, g, x, "raster");
-            $.draw(H, G.TRIANGLES, Je, h ? h[ht.overscaledZ] : xn.disabled, ke, C ? Rr.frontCCW : Rr.backCCW, Cn, Zr, nr, i.id, ii.vertexBuffer, ii.indexBuffer, ii.segments)
+            $.draw(H, G.TRIANGLES, Je, h ? h[ht.overscaledZ] : bn.disabled, ke, C ? Rr.frontCCW : Rr.backCCW, Cn, Zr, nr, i.id, ii.vertexBuffer, ii.indexBuffer, ii.segments)
           }
         }
 
@@ -32986,7 +32986,7 @@ uniform ${B} ${H} u_${G};
             h = l.gl,
             g = f.useProgram("debug"),
             x = Fr.disabled,
-            I = xn.disabled,
+            I = bn.disabled,
             C = f.colorModeForRenderPass(),
             z = "$debug",
             B = f.style.map.terrain && f.style.map.terrain.getTerrainData(i);
@@ -33029,7 +33029,7 @@ uniform ${B} ${H} u_${G};
                 applyTerrainMatrix: !1,
                 applyGlobeMatrix: !0
               });
-            B.draw(g, x.TRIANGLES, z, xn.disabled, C, Rr.backCCW, Ae, le, Ge, "terrain", G.vertexBuffer, G.indexBuffer, G.segments)
+            B.draw(g, x.TRIANGLES, z, bn.disabled, C, Rr.backCCW, Ae, le, Ge, "terrain", G.vertexBuffer, G.indexBuffer, G.segments)
           }
         }
 
@@ -33071,7 +33071,7 @@ uniform ${B} ${H} u_${G};
             const C = new o.aY;
             C.emplaceBack(1, 0, 2), C.emplaceBack(1, 2, 3), this.quadTriangleIndexBuffer = t.createIndexBuffer(C);
             const z = this.context.gl;
-            this.stencilClearMode = new xn({
+            this.stencilClearMode = new bn({
               func: z.ALWAYS,
               mask: 0
             }, 0, 255, z.ZERO, z.ZERO, z.ZERO), this.tileExtentMesh = new gr(this.tileExtentBuffer, this.quadTriangleIndexBuffer, this.tileExtentSegments)
@@ -33115,7 +33115,7 @@ uniform ${B} ${H} u_${G};
                   applyGlobeMatrix: !l,
                   applyTerrainMatrix: !0
                 });
-              z.draw(g, x.TRIANGLES, Fr.disabled, new xn({
+              z.draw(g, x.TRIANGLES, Fr.disabled, new bn({
                 func: x.ALWAYS,
                 mask: 0
               }, H, 255, x.KEEP, x.KEEP, x.REPLACE), Cr.disabled, l ? Rr.disabled : Rr.backCCW, null, G, le, "$clipping", $.vertexBuffer, $.indexBuffer, $.segments)
@@ -33139,21 +33139,21 @@ uniform ${B} ${H} u_${G};
                   applyGlobeMatrix: !0,
                   applyTerrainMatrix: !0
                 });
-              g.draw(t, i.TRIANGLES, x, xn.disabled, Cr.disabled, Rr.backCCW, null, z, H, "$clipping", B.vertexBuffer, B.indexBuffer, B.segments)
+              g.draw(t, i.TRIANGLES, x, bn.disabled, Cr.disabled, Rr.backCCW, null, z, H, "$clipping", B.vertexBuffer, B.indexBuffer, B.segments)
             }
           }
           stencilModeFor3D() {
             this.currentStencilSource = void 0, this.nextStencilID + 1 > 256 && this.clearStencil();
             const t = this.nextStencilID++,
               i = this.context.gl;
-            return new xn({
+            return new bn({
               func: i.NOTEQUAL,
               mask: 255
             }, t, 255, i.KEEP, i.KEEP, i.REPLACE)
           }
           stencilModeForClipping(t) {
             const i = this.context.gl;
-            return new xn({
+            return new bn({
               func: i.EQUAL,
               mask: 255
             }, this._tileClippingMaskIDs[t.key], 0, i.KEEP, i.KEEP, i.REPLACE)
@@ -33166,14 +33166,14 @@ uniform ${B} ${H} u_${G};
             if (g > 1) {
               this.currentStencilSource = void 0, this.nextStencilID + g > 256 && this.clearStencil();
               const x = {};
-              for (let I = 0; I < g; I++) x[I + h] = new xn({
+              for (let I = 0; I < g; I++) x[I + h] = new bn({
                 func: i.GEQUAL,
                 mask: 255
               }, I + this.nextStencilID, 255, i.KEEP, i.KEEP, i.REPLACE);
               return this.nextStencilID += g, [x, l]
             }
             return [{
-              [h]: xn.disabled
+              [h]: bn.disabled
             }, l]
           }
           stencilConfigForOverlapTwoPass(t) {
@@ -33184,22 +33184,22 @@ uniform ${B} ${H} u_${G};
             if (this.clearStencil(), g > 1) {
               const x = {},
                 I = {};
-              for (let C = 0; C < g; C++) x[C + h] = new xn({
+              for (let C = 0; C < g; C++) x[C + h] = new bn({
                 func: i.GREATER,
                 mask: 255
-              }, g + 1 + C, 255, i.KEEP, i.KEEP, i.REPLACE), I[C + h] = new xn({
+              }, g + 1 + C, 255, i.KEEP, i.KEEP, i.REPLACE), I[C + h] = new bn({
                 func: i.GREATER,
                 mask: 255
               }, 1 + C, 255, i.KEEP, i.KEEP, i.REPLACE);
               return this.nextStencilID = 2 * g + 1, [x, I, l]
             }
             return this.nextStencilID = 3, [{
-              [h]: new xn({
+              [h]: new bn({
                 func: i.GREATER,
                 mask: 255
               }, 2, 255, i.KEEP, i.KEEP, i.REPLACE)
             }, {
-              [h]: new xn({
+              [h]: new bn({
                 func: i.GREATER,
                 mask: 255
               }, 1, 255, i.KEEP, i.KEEP, i.REPLACE)
@@ -33276,7 +33276,7 @@ uniform ${B} ${H} u_${G};
                     }
                   })($, G.style.map.transform, G.pixelRatio),
                   Ae = new Fr(Ee.LEQUAL, Fr.ReadWrite, [0, 1]),
-                  Ge = xn.disabled,
+                  Ge = bn.disabled,
                   rt = G.colorModeForRenderPass(),
                   qe = G.useProgram("sky"),
                   nt = Lh(le, $);
@@ -33329,7 +33329,7 @@ uniform ${B} ${H} u_${G};
                     u_inv_proj_matrix: Cn
                   }))(qe, ht, [qt[0], qt[1], qt[2]], Je, yt),
                   kt = Lh(Ee, $);
-                Ae.draw(Ee, ke.TRIANGLES, Ge, xn.disabled, Cr.alphaBlended, Rr.disabled, zt, null, null, "atmosphere", kt.vertexBuffer, kt.indexBuffer, kt.segments)
+                Ae.draw(Ee, ke.TRIANGLES, Ge, bn.disabled, Cr.alphaBlended, Rr.disabled, zt, null, null, "atmosphere", kt.vertexBuffer, kt.indexBuffer, kt.segments)
               })(this, this.style.sky, this.style.light), this.options.showTileBoundaries) {
               const G = (function($, le) {
                 let Ee = null;
@@ -33382,7 +33382,7 @@ uniform ${B} ${H} u_${G};
                   Ge = {
                     u_ele_delta: x.getMeshFrameDelta(z.zoom)
                   };
-                $.draw(I, C.TRIANGLES, H, xn.disabled, B, Rr.backCCW, Ge, ke, Ae, "terrain", Ee.vertexBuffer, Ee.indexBuffer, Ee.segments)
+                $.draw(I, C.TRIANGLES, H, bn.disabled, B, Rr.backCCW, Ge, ke, Ae, "terrain", Ee.vertexBuffer, Ee.indexBuffer, Ee.segments)
               }
               I.bindFramebuffer.set(null), I.viewport.set([0, 0, g.width, g.height])
             })(this, this.style.map.terrain), (function(g, x) {
@@ -33412,7 +33412,7 @@ uniform ${B} ${H} u_${G};
                     applyTerrainMatrix: !1,
                     applyGlobeMatrix: !0
                   });
-                le.draw(I, C.TRIANGLES, H, xn.disabled, B, Rr.backCCW, Ge, Ae, rt, "terrain", ke.vertexBuffer, ke.indexBuffer, ke.segments), x.coordsIndex.push(Ee.tileID.key)
+                le.draw(I, C.TRIANGLES, H, bn.disabled, B, Rr.backCCW, Ge, Ae, rt, "terrain", ke.vertexBuffer, ke.indexBuffer, ke.segments), x.coordsIndex.push(Ee.tileID.key)
               }
               I.bindFramebuffer.set(null), I.viewport.set([0, 0, g.width, g.height])
             })(this, this.style.map.terrain))
@@ -33422,7 +33422,7 @@ uniform ${B} ${H} u_${G};
               if (x.renderPass !== "translucent") return;
               const {
                 isRenderingToTexture: G
-              } = H, $ = xn.disabled, le = x.colorModeForRenderPass();
+              } = H, $ = bn.disabled, le = x.colorModeForRenderPass();
               (C._unevaluatedLayout.hasValue("text-variable-anchor") || C._unevaluatedLayout.hasValue("text-variable-anchor-offset")) && (function(Ee, ke, Ae, Ge, rt, qe, nt, ht, Je) {
                 const yt = ke.transform,
                   qt = ke.style.map.terrain,
@@ -33453,7 +33453,7 @@ uniform ${B} ${H} u_${G};
                 Ae = ke.gl,
                 Ge = x.transform,
                 rt = x.getDepthModeForSublayer(0, Fr.ReadOnly),
-                qe = xn.disabled,
+                qe = bn.disabled,
                 nt = x.colorModeForRenderPass(),
                 ht = [],
                 Je = Ge.getCircleRadiusCorrection();
@@ -33526,7 +33526,7 @@ uniform ${B} ${H} u_${G};
                 const Ge = le.context,
                   rt = Ge.gl,
                   qe = le.transform,
-                  nt = xn.disabled,
+                  nt = bn.disabled,
                   ht = new Cr([rt.ONE, rt.ONE], o.bp.transparent, [!0, !0, !0, !0]);
                 (function(Je, yt, qt) {
                   const zt = Je.gl;
@@ -33558,7 +33558,7 @@ uniform ${B} ${H} u_${G};
                   Ae = ke.gl;
                 ke.setColorMode(le.colorModeForRenderPass());
                 const Ge = Ee.heatmapFbos.get(o.cd);
-                Ge && (ke.activeTexture.set(Ae.TEXTURE0), Ae.bindTexture(Ae.TEXTURE_2D, Ge.colorAttachment.get()), ke.activeTexture.set(Ae.TEXTURE1), Np(ke, Ee).bind(Ae.LINEAR, Ae.CLAMP_TO_EDGE), le.useProgram("heatmapTexture").draw(ke, Ae.TRIANGLES, Fr.disabled, xn.disabled, le.colorModeForRenderPass(), Rr.disabled, sa(le, Ee, 0, 1), null, null, Ee.id, le.viewportBuffer, le.quadTriangleIndexBuffer, le.viewportSegments, Ee.paint, le.transform.zoom))
+                Ge && (ke.activeTexture.set(Ae.TEXTURE0), Ae.bindTexture(Ae.TEXTURE_2D, Ge.colorAttachment.get()), ke.activeTexture.set(Ae.TEXTURE1), Np(ke, Ee).bind(Ae.LINEAR, Ae.CLAMP_TO_EDGE), le.useProgram("heatmapTexture").draw(ke, Ae.TRIANGLES, Fr.disabled, bn.disabled, le.colorModeForRenderPass(), Rr.disabled, sa(le, Ee, 0, 1), null, null, Ee.id, le.viewportBuffer, le.quadTriangleIndexBuffer, le.viewportSegments, Ee.paint, le.transform.zoom))
               })(x, C)
             })(t, i, l, h, g) : o.cp(l) ? (function(x, I, C, z, B) {
               if (x.renderPass !== "translucent") return;
@@ -33637,10 +33637,10 @@ uniform ${B} ${H} u_${G};
               } = B;
               if (x.renderPass === "translucent") {
                 const $ = new Fr(x.context.gl.LEQUAL, Fr.ReadWrite, x.depthRangeFor3D);
-                if (H !== 1 || C.paint.get("fill-extrusion-pattern").constantOr(1)) ol(x, I, C, z, $, xn.disabled, Cr.disabled, G), ol(x, I, C, z, $, x.stencilModeFor3D(), x.colorModeForRenderPass(), G);
+                if (H !== 1 || C.paint.get("fill-extrusion-pattern").constantOr(1)) ol(x, I, C, z, $, bn.disabled, Cr.disabled, G), ol(x, I, C, z, $, x.stencilModeFor3D(), x.colorModeForRenderPass(), G);
                 else {
                   const le = x.colorModeForRenderPass();
-                  ol(x, I, C, z, $, xn.disabled, le, G)
+                  ol(x, I, C, z, $, bn.disabled, le, G)
                 }
               }
             })(t, i, l, h, g) : o.cs(l) ? (function(x, I, C, z, B) {
@@ -33678,7 +33678,7 @@ uniform ${B} ${H} u_${G};
                   }
                   Je.bindFramebuffer.set(nr.framebuffer), Je.viewport.set([0, 0, Nt, Nt]), ke.useProgram("hillshadePrepare").draw(Je, yt.TRIANGLES, qe, nt, ht, Rr.disabled, bs(zt.tileID, kt), null, null, rt.id, ke.rasterBoundsBuffer, ke.quadTriangleIndexBuffer, ke.rasterBoundsSegments), zt.needsHillshadePrepare = !1
                 }
-              })(x, I, z, C, le, xn.disabled, Ee), G.viewport.set([0, 0, x.width, x.height]);
+              })(x, I, z, C, le, bn.disabled, Ee), G.viewport.set([0, 0, x.width, x.height]);
               else if (x.renderPass === "translucent")
                 if ($) {
                   const [ke, Ae, Ge] = x.stencilConfigForOverlapTwoPass(z);
@@ -33722,7 +33722,7 @@ uniform ${B} ${H} u_${G};
               if (x.isPatternMissing(rt)) return;
               const qe = !rt && H.a === 1 && G === 1 && x.opaquePassEnabledForLayer() ? "opaque" : "translucent";
               if (x.renderPass !== qe) return;
-              const nt = xn.disabled,
+              const nt = bn.disabled,
                 ht = x.getDepthModeForSublayer(0, qe === "opaque" ? Fr.ReadWrite : Fr.ReadOnly),
                 Je = x.colorModeForRenderPass(),
                 yt = x.useProgram(rt ? "backgroundPattern" : "background"),
@@ -33768,7 +33768,7 @@ ${$.shaderPreludeCode.vertexSource}`,
                 const Ge = G.prerender;
                 Ge && (x.setCustomLayerDefaults(), H.setColorMode(x.colorModeForRenderPass()), Ge.call(G, H.gl, ke), H.setDirty(), x.setBaseState())
               } else if (x.renderPass === "translucent") {
-                x.setCustomLayerDefaults(), H.setColorMode(x.colorModeForRenderPass()), H.setStencilMode(xn.disabled);
+                x.setCustomLayerDefaults(), H.setColorMode(x.colorModeForRenderPass()), H.setStencilMode(bn.disabled);
                 const Ge = Ae === "3d" ? x.getDepthModeFor3D() : x.getDepthModeForSublayer(0, Fr.ReadOnly);
                 H.setDepthMode(Ge), G.render(H.gl, ke), H.setDirty(), x.setBaseState(), H.bindFramebuffer.set(null)
               }
@@ -33793,10 +33793,10 @@ ${$.shaderPreludeCode.vertexSource}`,
             this.cache = this.cache || {};
             const g = !!this.style.map.terrain,
               x = this.style.projection,
-              I = l ? yn.projectionMercator : x.shaderPreludeCode,
+              I = l ? xn.projectionMercator : x.shaderPreludeCode,
               C = l ? fn : x.shaderDefine,
               z = t + (i ? i.cacheKey : "") + `/${l?Fn:x.shaderVariantName}` + (this._showOverdrawInspector ? "/overdraw" : "") + (g ? "/terrain" : "") + (h ? `/${h.join("/")}` : "");
-            return this.cache[z] || (this.cache[z] = new As(this.context, yn[t], i, ks[t], this._showOverdrawInspector, g, I, C, h)), this.cache[z]
+            return this.cache[z] || (this.cache[z] = new As(this.context, xn[t], i, ks[t], this._showOverdrawInspector, g, I, C, h)), this.cache[z]
           }
           setCustomLayerDefaults() {
             this.context.unbindVAO(), this.context.cullFace.setDefault(), this.context.activeTexture.setDefault(), this.context.pixelStoreUnpack.setDefault(), this.context.pixelStoreUnpackPremultiplyAlpha.setDefault(), this.context.pixelStoreUnpackFlipY.setDefault()
@@ -40376,12 +40376,12 @@ function eE(v, s) {
       br = st + Jt / 2,
       xt = lt - mr / 2,
       Ar = lt + mr / 2,
-      [en, _n] = c(re).pixelsToLatLon(vr, xt, U()),
+      [en, yn] = c(re).pixelsToLatLon(vr, xt, U()),
       [In, Ft] = c(re).pixelsToLatLon(br, Ar, U());
     ir({
       north: en,
       south: In,
-      west: _n,
+      west: yn,
       east: Ft
     }), Sr()
   }
@@ -40437,9 +40437,9 @@ function eE(v, s) {
       vr = ze.includes("n") ? st.north : st.south,
       br = ze.includes("w") ? st.west : st.east,
       [xt, Ar] = c(re).latLonToPixels(Jt, mr, U()),
-      [en, _n] = c(re).latLonToPixels(vr, br, U());
+      [en, yn] = c(re).latLonToPixels(vr, br, U());
     let In = en - xt,
-      Ft = _n - Ar,
+      Ft = yn - Ar,
       Wr = Math.sign(In) || (ze.includes("w") ? -1 : 1),
       qr = Math.sign(Ft) || (ze.includes("n") ? -1 : 1),
       Wn = Math.abs(In),
@@ -40616,23 +40616,23 @@ function eE(v, s) {
     let Ar = null,
       en = null;
     if (xt) {
-      const _n = lt * 3;
-      Ar = new Float32Array(_n), en = new Float32Array(_n)
+      const yn = lt * 3;
+      Ar = new Float32Array(yn), en = new Float32Array(yn)
     }
-    for (let _n = 0; _n < ft; _n++) {
+    for (let yn = 0; yn < ft; yn++) {
       if (xt && Ar && en) {
         const In = Ar;
         Ar = en, en = In, en.fill(0)
       }
       for (let In = 0; In < lt; In++) {
-        const Ft = (_n * lt + In) * 4;
+        const Ft = (yn * lt + In) * 4;
         if (mr[Ft + 3] < 16) {
           if (mr[Ft + 3] = 0, !c(tt)) continue;
           const di = 0,
             Qt = su(di);
           mr[Ft] = Qt.r, mr[Ft + 1] = Qt.g, mr[Ft + 2] = Qt.b;
           const Ir = c(xe).px0 + In + .5,
-            sn = c(xe).py0 + _n + .5,
+            sn = c(xe).py0 + yn + .5,
             {
               tile: Ur,
               pixel: un
@@ -40672,7 +40672,7 @@ function eE(v, s) {
             const Ur = (In + 1) * 3;
             sn(Ar, Ur, 7 / 16)
           }
-          if (_n + 1 < ft) {
+          if (yn + 1 < ft) {
             if (In > 0) {
               const un = (In - 1) * 3;
               sn(en, un, 3 / 16)
@@ -40685,7 +40685,7 @@ function eE(v, s) {
           }
         }
         const hi = c(xe).px0 + In + .5,
-          vi = c(xe).py0 + _n + .5,
+          vi = c(xe).py0 + yn + .5,
           {
             tile: Ei,
             pixel: Fi
@@ -40722,7 +40722,7 @@ function eE(v, s) {
             color: lt,
             ...ft
           }) => ft);
-        await bn.adminAutoPainterPaint(st, ze, c(_e)), await r_(oe), te()(), At.refresh(), Yt.success("Art painted successfully."), at()
+        await _n.adminAutoPainterPaint(st, ze, c(_e)), await r_(oe), te()(), At.refresh(), Yt.success("Art painted successfully."), at()
       } catch (ze) {
         console.error(ze), Yt.error(ze.message ?? "Failed to paint art.")
       } finally {
@@ -40826,8 +40826,8 @@ function eE(v, s) {
         var Ar = k(Jt, 2),
           en = T(Ar);
         Ht(en, "for", M);
-        var _n = k(en, 2);
-        fa(_n), Ht(_n, "id", M), b(Ar);
+        var yn = k(en, 2);
+        fa(yn), Ht(yn, "id", M), b(Ar);
         var In = k(Ar, 2),
           Ft = T(In);
         Ht(Ft, "for", A);
@@ -40915,8 +40915,8 @@ function eE(v, s) {
           })
         }
         b(Ir), De(() => {
-          ee(vr, c(Te)), ee(xt, `Target size: ${c(xe),Ys(()=>c(xe).width)??""} × ${c(xe),Ys(()=>c(xe).height)??""} pixels`), e_(_n, c(Ke) * 100)
-        }), gt("input", _n, Rn => {
+          ee(vr, c(Te)), ee(xt, `Target size: ${c(xe),Ys(()=>c(xe).width)??""} × ${c(xe),Ys(()=>c(xe).height)??""} pixels`), e_(yn, c(Ke) * 100)
+        }), gt("input", yn, Rn => {
           const Pn = Rn.target;
           O(Ke, Number(Pn.value) / 100)
         }), gt("change", Wr, () => {
@@ -40988,7 +40988,7 @@ function rE(v, s) {
     var ye, ue, Te;
     try {
       if (!((ye = c(A)) != null && ye())) return;
-      O(y, !0), s.description !== c(M) && await bn.updateAllianceDescription(c(M)), await ((ue = s.onsuccess) == null ? void 0 : ue.call(s, c(M))), (Te = m()) == null || Te.close()
+      O(y, !0), s.description !== c(M) && await _n.updateAllianceDescription(c(M)), await ((ue = s.onsuccess) == null ? void 0 : ue.call(s, c(M))), (Te = m()) == null || Te.close()
     } catch (je) {
       Yt.error(je.message)
     } finally {
@@ -41010,7 +41010,7 @@ function aE(v, s) {
     M = Ne(!1);
   const A = Se(() => ha.url.origin + `/join?id=${c(y)}`);
   mn(() => {
-    m() && bn.getAllianceInvites().then(Ue => {
+    m() && _n.getAllianceInvites().then(Ue => {
       O(y, Ue[0], !0)
     }).catch(Ue => {
       Yt.error(Ue.message)
@@ -41374,7 +41374,7 @@ function DE(v, s) {
 
   function F() {
     const W = c(S);
-    bn.allianceLeaderboard(W).then(we => {
+    _n.allianceLeaderboard(W).then(we => {
       O(M, we), o = {
         [W]: we
       }, O(y, !1)
@@ -41389,7 +41389,7 @@ function DE(v, s) {
       O(M, we), O(y, !1);
       return
     }
-    O(y, !0), bn.allianceLeaderboard(W).then(ye => {
+    O(y, !0), _n.allianceLeaderboard(W).then(ye => {
       O(M, ye), o[W] = ye, O(y, !1)
     }).catch(ye => {
       Yt.error(ye.message)
@@ -41671,7 +41671,7 @@ function UE(v, s) {
             fr.disabled = c(pe).loading, ee($r, Xe), St.disabled = c(pe).loading, ee(cr, Ct)
           }, [() => F3(), () => Lb()]), gt("click", fr, async () => {
             try {
-              c(pe).loading = !0, await bn.giveAllianceAdmin(c(pe).id), c(pe).role = "admin"
+              c(pe).loading = !0, await _n.giveAllianceAdmin(c(pe).id), c(pe).role = "admin"
             } catch {
               Yt.error(B3())
             } finally {
@@ -41679,7 +41679,7 @@ function UE(v, s) {
             }
           }), gt("click", St, async () => {
             try {
-              c(pe).loading = !0, await bn.banAllianceUser(c(pe).id), m.data = m.data.filter(Xe => Xe.id !== c(pe).id)
+              c(pe).loading = !0, await _n.banAllianceUser(c(pe).id), m.data = m.data.filter(Xe => Xe.id !== c(pe).id)
             } catch {
               Yt.error(O3())
             } finally {
@@ -41712,7 +41712,7 @@ function UE(v, s) {
         var vt = OE();
         ka(vt, () => tt => {
           const Fe = new IntersectionObserver($e => {
-            $e[0].isIntersecting && !m.loading && (m.loading = !0, bn.getAllianceMembers(m.page).then(Le => {
+            $e[0].isIntersecting && !m.loading && (m.loading = !0, _n.getAllianceMembers(m.page).then(Le => {
               m.data = [...m.data, ...Le.data], m.hasNextPage = Le.hasNext, m.page++
             }).catch(Le => {
               Yt.error(Le.message)
@@ -41758,7 +41758,7 @@ function UE(v, s) {
     b(He), b(Ye), b(Ke), De((Dt, Zt) => {
       jr($e, 1, `font-semibold ${Dt??""}`), ee(Le, `${c(pe).name??""} #${c(pe).id??""}`), He.disabled = c(pe).loading, ee(Vt, Zt)
     }, [() => io(c(pe).id), () => MC()]), gt("click", He, () => {
-      bn.unbanAllianceUser(c(pe).id).then(() => {
+      _n.unbanAllianceUser(c(pe).id).then(() => {
         y.data = y.data.filter(Dt => Dt.id !== c(pe).id)
       }).catch(Dt => Yt.error(Dt.message)).finally(() => {
         c(pe).loading = !1
@@ -41785,7 +41785,7 @@ function UE(v, s) {
         var vt = VE();
         ka(vt, () => tt => {
           const Fe = new IntersectionObserver($e => {
-            $e[0].isIntersecting && !y.loading && (y.loading = !0, bn.getAllianceBannedMembers(y.page).then(Le => {
+            $e[0].isIntersecting && !y.loading && (y.loading = !0, _n.getAllianceBannedMembers(y.page).then(Le => {
               y.data = [...y.data, ...Le.data], y.hasNextPage = Le.hasNext, y.page++
             }).catch(Le => {
               Yt.error(Le.message)
@@ -41934,7 +41934,7 @@ function YE(v, s) {
       O(y, !0);
       const {
         id: Te
-      } = await bn.createAlliance(c(M));
+      } = await _n.createAlliance(c(M));
       await s.onsuccess(Te), (ue = m()) == null || ue.close()
     } catch (Te) {
       Yt.error(Te.message)
@@ -42035,7 +42035,7 @@ function vA(v, s) {
   });
   async function K() {
     try {
-      O(m, await bn.getAlliance(), !0), c(m) && c(U)(), O(y, !1), Jf.shouldReload = !1
+      O(m, await _n.getAlliance(), !0), c(m) && c(U)(), O(y, !1), Jf.shouldReload = !1
     } catch (we) {
       Yt.error(we.message)
     }
@@ -42254,7 +42254,7 @@ function vA(v, s) {
           ee(je, c(m).name), Ke.disabled = c(A), ee(vt, er), ee(Zt, `${Sr??""}: `), ee(ir, Yr), ee(Tr, `${Lr??""}: `), ee(cr, Er)
         }, [() => Z3(), () => a_(), () => c(m).pixelsPainted.toLocaleString(navigator.language), () => Hb(), () => p_()]), gt("click", Ke, async () => {
           try {
-            O(A, !0), await bn.leaveAlliance(), O(y, !0), await K()
+            O(A, !0), await _n.leaveAlliance(), O(y, !0), await K()
           } catch (er) {
             Yt.error(er.message)
           } finally {
@@ -42944,7 +42944,7 @@ function ak(v, s) {
               Ar = T(xt, !0);
             b(xt);
             var en = k(xt),
-              _n = k(en);
+              yn = k(en);
             {
               var In = Wr => {
                   var qr = ek();
@@ -42954,7 +42954,7 @@ function ak(v, s) {
                   var qr = tk();
                   ui(), q(Wr, qr)
                 };
-              Ve(_n, Wr => {
+              Ve(yn, Wr => {
                 M === "Chrome" ? Wr(In) : M === "Edge" && Wr(Ft, 1)
               })
             }
@@ -42985,9 +42985,9 @@ function ak(v, s) {
       b(st);
       var ft = k(st, 2),
         Jt = T(ft, !0);
-      b(ft), b(ut), b(re), De((mr, vr, br, xt, Ar, en, _n, In, Ft, Wr, qr, Wn, Gn, Si, tn, hi, vi, Ei, Fi, Bi, Ii, di, Qt, Ir) => {
+      b(ft), b(ut), b(re), De((mr, vr, br, xt, Ar, en, yn, In, Ft, Wr, qr, Wn, Gn, Si, tn, hi, vi, Ei, Fi, Bi, Ii, di, Qt, Ir) => {
         ee(we, `${mr??""} `), ee(ye, ` ©
-						${vr??""} `), ee(Ue, `v${m??""}`), ee(pe, br), ee(tt, xt), ee(Ye, Ar), ee(Zt, en), ee(Bt, _n), ee(xr, In), ee(hr, Ft), ee(Xe, Wr), Ht(Ct, "src", Es.language === "pt" ? "https://www.youtube.com/embed/AcE85QM4iPQ?si=wbeZD8vxOzvlB_Z9" : "https://www.youtube.com/embed/xOXtd-WzRxA?si=fHz8Z6ecXGYrDhkN"), ee(er, qr), ee(Yr, `${Wn??""} `), ee(ar, ` ${Gn??""}`), ee(zr, `${Si??""} `), ee(ve, tn), ee(J, ` ${hi??""}`), ee(j, vi), Ht(et, "href", Ei), ee(Ie, Fi), Ht(Mt, "href", `${ha.url.origin??""}/terms/privacy`), ee(ot, Bi), Ht(ct, "href", Ii), ee(ze, di), ee(lt, Qt), ee(Jt, Ir)
+						${vr??""} `), ee(Ue, `v${m??""}`), ee(pe, br), ee(tt, xt), ee(Ye, Ar), ee(Zt, en), ee(Bt, yn), ee(xr, In), ee(hr, Ft), ee(Xe, Wr), Ht(Ct, "src", Es.language === "pt" ? "https://www.youtube.com/embed/AcE85QM4iPQ?si=wbeZD8vxOzvlB_Z9" : "https://www.youtube.com/embed/xOXtd-WzRxA?si=fHz8Z6ecXGYrDhkN"), ee(er, qr), ee(Yr, `${Wn??""} `), ee(ar, ` ${Gn??""}`), ee(zr, `${Si??""} `), ee(ve, tn), ee(J, ` ${hi??""}`), ee(j, vi), Ht(et, "href", Ei), ee(Ie, Fi), Ht(Mt, "href", `${ha.url.origin??""}/terms/privacy`), ee(ot, Bi), Ht(ct, "href", Ii), ee(ze, di), ee(lt, Qt), ee(Jt, Ir)
       }, [() => gT(), () => vT(), () => zC(), () => HC(), () => _T(), () => yT(), () => xT(), () => bT(), () => wT(), () => TT(), () => ST(), () => IT(), () => PT(), () => CT(), () => MT(), () => ET(), () => AT(), ZC, () => kT(), () => DT(), Jb, () => Rb(), () => LT(), () => zT()]), ms(2, re, () => go, () => ({
         duration: 300
       })), q(fe, re)
@@ -46006,22 +46006,22 @@ function OD(v, s) {
     const de = c(A),
       oe = c(o),
       pe = c(F);
-    oe === "players" && (!U[oe][de] || Date.now() - U[oe][de].time > te) ? bn.leaderboardPlayers(de).then(Ke => {
+    oe === "players" && (!U[oe][de] || Date.now() - U[oe][de].time > te) ? _n.leaderboardPlayers(de).then(Ke => {
       U[oe][de] = {
         time: Date.now(),
         entries: Ke
       }
-    }).catch(Ke => Yt.error(Ke.message)) : oe === "alliances" && (!U[oe][de] || Date.now() - U[oe][de].time > te) ? bn.leaderboardAlliances(de).then(Ke => {
+    }).catch(Ke => Yt.error(Ke.message)) : oe === "alliances" && (!U[oe][de] || Date.now() - U[oe][de].time > te) ? _n.leaderboardAlliances(de).then(Ke => {
       U[oe][de] = {
         time: Date.now(),
         entries: Ke
       }
-    }).catch(Ke => Yt.error(Ke.message)) : oe === "countries" && (!U[oe][de] || Date.now() - U[oe][de].time > te) ? bn.leaderboardCountries(de).then(Ke => {
+    }).catch(Ke => Yt.error(Ke.message)) : oe === "countries" && (!U[oe][de] || Date.now() - U[oe][de].time > te) ? _n.leaderboardCountries(de).then(Ke => {
       U[oe][de] = {
         time: Date.now(),
         entries: Ke
       }
-    }).catch(Ke => Yt.error(Ke.message)) : oe === "regions" && (!((Oe = U[oe][pe]) != null && Oe[de]) || Date.now() - U[oe][pe][de].time > te) && bn.leaderboardRegions(de, pe).then(Ke => {
+    }).catch(Ke => Yt.error(Ke.message)) : oe === "regions" && (!((Oe = U[oe][pe]) != null && Oe[de]) || Date.now() - U[oe][pe][de].time > te) && _n.leaderboardRegions(de, pe).then(Ke => {
       U[oe][pe] || (U[oe][pe] = {}), U[oe][pe][de] = {
         time: Date.now(),
         entries: Ke
@@ -46690,7 +46690,7 @@ function uL(v, s) {
           var pe = nL(),
             Oe = T(pe, !0);
           b(pe), De(Ke => ee(Oe, Ke), [() => GT()]), gt("click", pe, async () => {
-            if (bn.postNotificationMarkReadAll(), At.notificationCount = 0, c(M))
+            if (_n.postNotificationMarkReadAll(), At.notificationCount = 0, c(M))
               for (const Ke of c(M)) Ke.read = !0
           }), q(oe, pe)
         };
@@ -46818,10 +46818,10 @@ ${mx()}`, !0), O(S, !0)
           var pe = sL();
           ka(pe, () => Oe => {
             const Ke = new IntersectionObserver(vt => {
-              vt[0].isIntersecting && !c(y) && (O(y, !0), bn.getNotificationPage(c(A)).then(tt => {
+              vt[0].isIntersecting && !c(y) && (O(y, !0), _n.getNotificationPage(c(A)).then(tt => {
                 O(M, [...c(M) ?? [], ...tt.notifications], !0), O(A, tt.nextCursor, !0);
                 const Fe = tt.notifications.filter($e => !$e.read).map($e => $e.id);
-                Fe.length > 0 && (bn.postNotificationMarkRead(Fe), At.notificationCount !== void 0 && (At.notificationCount = Math.max(0, At.notificationCount - Fe.length)))
+                Fe.length > 0 && (_n.postNotificationMarkRead(Fe), At.notificationCount !== void 0 && (At.notificationCount = Math.max(0, At.notificationCount - Fe.length)))
               }).catch(tt => {
                 Yt.error(tt.message)
               }).finally(() => {
@@ -47347,7 +47347,7 @@ function NL(v, s) {
         }), Ke.disabled = c(M) < F.price || c(A) || c(S)
       }, [() => Dm()]), gt("click", Ke, async () => {
         try {
-          O(A, !0), await bn.purchase({
+          O(A, !0), await _n.purchase({
             id: o,
             amount: 1,
             variant: s.colorIdx
@@ -48218,8 +48218,8 @@ function iz(v, s) {
     }), q(Qt, oi)
   }), b(Ar), b(xt);
   var en = k(xt, 2),
-    _n = T(en),
-    In = T(_n);
+    yn = T(en),
+    In = T(yn);
   {
     var Ft = Qt => {
         Mb(Qt, {
@@ -48235,8 +48235,8 @@ function iz(v, s) {
       c(pe) ? Qt(Ft) : Qt(Wr, !1)
     })
   }
-  b(_n);
-  var qr = k(_n, 2),
+  b(yn);
+  var qr = k(yn, 2),
     Wn = T(qr);
   {
     let Qt = Se(() => c(U) > 100 ? "animate-pulse" : ""),
@@ -48260,7 +48260,7 @@ function iz(v, s) {
         O(K, !0);
         try {
           const Ur = await b_();
-          await bn.paint(sn, Ur), await r_(sn), fr(), At.refresh(), Jf.shouldReload = !0, await Ut()
+          await _n.paint(sn, Ur), await r_(sn), fr(), At.refresh(), Jf.shouldReload = !0, await Ut()
         } catch (Ur) {
           Yt.error(`${Ur.message}`, {
             duration: 7e3
@@ -48325,7 +48325,7 @@ function iz(v, s) {
     hr.redo()
   }), gt("click", vr, () => {
     Li.smallPlop.play(), Ut()
-  }), gt("click", _n, () => {
+  }), gt("click", yn, () => {
     O(pe, !c(pe))
   }), gt("click", vi, () => {
     O(S, c(S) === "eraser" ? "pencil" : "eraser", !0)
@@ -48389,7 +48389,7 @@ function sz(v, s) {
     ee(F, ue), ce.disabled = c(y), ee(W, Te), we.disabled = c(y) || c(M).length <= 1, ee(ye, je)
   }, [() => s.userData.banned ? KC() : cS(), () => Qo(), () => uS()]), ai("close", A, () => m(!1)), ai("submit", U, async () => {
     try {
-      if (O(y, !0), await bn.submitBanAppeal(c(M)) === 208) {
+      if (O(y, !0), await _n.submitBanAppeal(c(M)) === 208) {
         Yt.error(hS());
         return
       }
@@ -48487,7 +48487,7 @@ function Pz(v, s) {
     };
     O(S, !0);
     try {
-      await bn.postEquipUserBadge(de), await At.refresh(), Yt.success(xS()), m(!1)
+      await _n.postEquipUserBadge(de), await At.refresh(), Yt.success(xS()), m(!1)
     } catch {
       Yt.error(bS())
     } finally {
@@ -48510,7 +48510,7 @@ function Pz(v, s) {
   }
   Aa(async () => {
     try {
-      O(M, await bn.getUserBadges(), !0)
+      O(M, await _n.getUserBadges(), !0)
     } catch {
       Yt.error($b())
     }
@@ -48599,10 +48599,10 @@ function Pz(v, s) {
               }
               b(vr);
               var en = k(vr, 2),
-                _n = T(en),
-                In = T(_n, !0);
-              b(_n);
-              var Ft = k(_n, 2),
+                yn = T(en),
+                In = T(yn, !0);
+              b(yn);
+              var Ft = k(yn, 2),
                 Wr = T(Ft, !0);
               b(Ft);
               var qr = k(Ft, 2),
@@ -48620,7 +48620,7 @@ function Pz(v, s) {
                 })
               }
               b(en), De((tn, hi) => {
-                Ht(br, "src", c(ot).imageUrl), Ht(br, "alt", c(ot).name), jr(br, 1, `size-20 rounded-full object-cover ${c(ct)?"grayscale":""}`), jr(_n, 1, `wrap-break-words font-medium whitespace-normal ${c(ct)?"text-base-content/50":""}`), ee(In, c(ot).name), jr(Ft, 1, `text-xs capitalize ${tn??""}`), ee(Wr, hi), ee(Wn, c(ot).description)
+                Ht(br, "src", c(ot).imageUrl), Ht(br, "alt", c(ot).name), jr(br, 1, `size-20 rounded-full object-cover ${c(ct)?"grayscale":""}`), jr(yn, 1, `wrap-break-words font-medium whitespace-normal ${c(ct)?"text-base-content/50":""}`), ee(In, c(ot).name), jr(Ft, 1, `text-xs capitalize ${tn??""}`), ee(Wr, hi), ee(Wn, c(ot).description)
               }, [() => c(ct) ? "text-base-content/40" : we(c(ot).rarity), () => c(ct) ? Yg() : c(ot).rarity]), q(Jt, mr)
             },
             ft = Jt => {
@@ -48726,21 +48726,21 @@ function Pz(v, s) {
         b(br), b(Jt);
         var Ar = k(Jt, 2);
         {
-          var en = _n => {
+          var en = yn => {
             var In = xz(),
               Ft = T(In),
               Wr = T(Ft, !0);
-            b(Ft), b(In), De(qr => ee(Wr, qr), [() => am()]), q(_n, In)
+            b(Ft), b(In), De(qr => ee(Wr, qr), [() => am()]), q(yn, In)
           };
-          Ve(Ar, _n => {
-            c(K) === c(ot).id && _n(en)
+          Ve(Ar, yn => {
+            c(K) === c(ot).id && yn(en)
           })
         }
-        b(ct), De(_n => {
+        b(ct), De(yn => {
           jr(ct, 1, `bg-base-200/80 hover:bg-base-300 group flex h-40 flex-col items-center justify-between rounded-lg p-3 text-xs
 									transition
 									${c(S)?"opacity-50":""}
-									${c(K)===c(ot).id?" border-primary bg-primary/10":""}`), ct.disabled = c(S), Ht(ft, "src", c(ot).imageUrl), Ht(ft, "alt", c(ot).name), ee(vr, c(ot).name), jr(br, 1, `mt-0.5 w-full text-[11px] capitalize ${_n??""}`), ee(xt, c(ot).rarity)
+									${c(K)===c(ot).id?" border-primary bg-primary/10":""}`), ct.disabled = c(S), Ht(ft, "src", c(ot).imageUrl), Ht(ft, "alt", c(ot).name), ee(vr, c(ot).name), jr(br, 1, `mt-0.5 w-full text-[11px] capitalize ${yn??""}`), ee(xt, c(ot).rarity)
         }, [() => we(c(ot).rarity)]), gt("click", ct, () => ce(c(ot).id)), q(Mt, ct)
       }), b(Lr);
       var j = k(Lr, 2);
@@ -48763,13 +48763,13 @@ function Pz(v, s) {
               _h(en, {
                 class: "text-error size-6"
               }), b(Ar), b(vr), b(mr);
-              var _n = k(mr, 2),
-                In = T(_n),
+              var yn = k(mr, 2),
+                In = T(yn),
                 Ft = T(In, !0);
               b(In);
               var Wr = k(In, 2),
                 qr = T(Wr, !0);
-              b(Wr), b(_n), b(Jt), De(Wn => {
+              b(Wr), b(yn), b(Jt), De(Wn => {
                 jr(Jt, 1, `bg-base-200/80 hover:bg-base-300 group flex h-40 flex-col items-center justify-between rounded-lg p-3 text-xs
 									transition
 									${c(S)?"opacity-50":""}
@@ -48906,7 +48906,7 @@ function Az(v, s) {
       return
     }
     try {
-      O(A, !0), await bn.deleteMe(c(S)), Yt.warning(CS()), await At.logout(), m(!1)
+      O(A, !0), await _n.deleteMe(c(S)), Yt.warning(CS()), await At.logout(), m(!1)
     } catch (Ye) {
       Yt.error(Ye.message)
     } finally {
@@ -49010,7 +49010,7 @@ function zz(v, s) {
       },
       onConfirm: async () => {
         try {
-          return await bn.deleteSessions(), Yt.success(RC()), await At.logout(), !0
+          return await _n.deleteSessions(), Yt.success(RC()), await At.logout(), !0
         } catch {
           return Yt.error(FC()), !1
         }
@@ -49508,17 +49508,17 @@ function Jz(v, s) {
   }
   async function we() {
     try {
-      O(y, await bn.getUserFrames(), !0)
+      O(y, await _n.getUserFrames(), !0)
     } catch {
       Yt.error($b())
     }
     try {
-      O(M, await bn.getStoreFrames(), !0)
+      O(M, await _n.getStoreFrames(), !0)
     } catch {
       O(M, [], !0)
     }
     try {
-      const Ue = await bn.getMyNameCosmetics();
+      const Ue = await _n.getMyNameCosmetics();
       O(S, Ue.fonts.map(xe => {
         var de;
         return {
@@ -49546,7 +49546,7 @@ function Jz(v, s) {
     if (!c(K) && !(c(te) === null || c(fe) === null || c(re) === null)) {
       O(K, !0);
       try {
-        c(te) !== c(_e) && (await bn.postEquipCosmetics({
+        c(te) !== c(_e) && (await _n.postEquipCosmetics({
           frameId: c(te),
           fontId: c(fe),
           styleId: c(re)
@@ -49836,7 +49836,7 @@ function sR(v, s) {
   mn(() => {
     O(y, s.userData.name, !0), O(A, s.userData.showLastPixel, !0)
   }), mn(() => {
-    m() && !c(o) && bn.getMyProfilePictures().then(ar => {
+    m() && !c(o) && _n.getMyProfilePictures().then(ar => {
       O(o, ar, !0)
     }).catch(ar => {
       Yt.error(ar.message)
@@ -49845,7 +49845,7 @@ function sR(v, s) {
   let ce = Ne(!1);
   async function W(ar) {
     try {
-      O(ce, !0), await bn.changeProfilePicture(ar), await At.refresh()
+      O(ce, !0), await _n.changeProfilePicture(ar), await At.refresh()
     } finally {
       O(ce, !1)
     }
@@ -50028,7 +50028,7 @@ function sR(v, s) {
                 })
               }]), gt("click", L, async () => {
                 try {
-                  O(S, !0), await bn.unlinkDiscord(), At.refresh(), Yt.success(JS()), O(te, !1)
+                  O(S, !0), await _n.unlinkDiscord(), At.refresh(), Yt.success(JS()), O(te, !1)
                 } catch (Z) {
                   Yt.error(Z.message, {
                     duration: 5e3
@@ -50134,7 +50134,7 @@ function sR(v, s) {
     var ar;
     try {
       if (!((ar = c(re)) != null && ar())) return;
-      O(S, !0), await bn.updateMe({
+      O(S, !0), await _n.updateMe({
         name: c(y),
         showLastPixel: c(A)
       }), At.refresh(), Yt.success(HS()), m(!1)
@@ -50858,9 +50858,9 @@ function WR(v, s) {
               Ht(Br, "href", c(W)), ee(Zn, ` ${ei??""}`)
             }, [() => QC()]), q(Wt, Br)
           },
-          _n = Se(() => s.user.hasAnyPermission(Ea.dashboard));
+          yn = Se(() => s.user.hasAnyPermission(Ea.dashboard));
         Ve(Ar, Wt => {
-          c(_n) && Wt(en)
+          c(yn) && Wt(en)
         })
       }
       var In = k(Ar, 2);
@@ -51112,11 +51112,11 @@ function iF(v, s) {
     if (c(o)) return;
     const W = c(y),
       we = c(A);
-    we === "players" ? bn.leaderboardRegionPlayers(s.regionId, W).then(ye => {
+    we === "players" ? _n.leaderboardRegionPlayers(s.regionId, W).then(ye => {
       S[we][W] = ye
     }).catch(ye => {
       Yt.error(ye.message)
-    }) : we === "alliances" && bn.leaderboardRegionAlliances(s.regionId, W).then(ye => {
+    }) : we === "alliances" && _n.leaderboardRegionAlliances(s.regionId, W).then(ye => {
       S[we][W] = ye
     }).catch(ye => {
       Yt.error(ye.message)
@@ -51626,7 +51626,7 @@ function wF(v, s) {
     const {
       tile: tt,
       pixel: Fe
-    } = await bn.getRandomTile(s.season), $e = new gs(s.tileSize), Le = tt.x * s.tileSize + Fe.x, Ye = tt.y * s.tileSize + Fe.y, [He, Vt] = $e.pixelsToLatLon(Le, Ye, s.tileZoom), Dt = {
+    } = await _n.getRandomTile(s.season), $e = new gs(s.tileSize), Le = tt.x * s.tileSize + Fe.x, Ye = tt.y * s.tileSize + Fe.y, [He, Vt] = $e.pixelsToLatLon(Le, Ye, s.tileZoom), Dt = {
       lat: He,
       lng: Vt
     }, Zt = s.tileZoom + 2;
@@ -51915,12 +51915,12 @@ function BF(v, s) {
     }), O(A, "loading"), O(S, [], !0), O(o, !1), O(F, !1), O(U, null), O(K, []), O(te, !1), O(W, null);
     try {
       const Lt = de(),
-        lr = await bn.createReverseSession(y()),
+        lr = await _n.createReverseSession(y()),
         er = oe(Lt);
       if (Ct !== we) return;
       O(W, lr.sessionId, !0);
       const Sr = de(),
-        Yr = await bn.getReverseTimestamps(lr.sessionId),
+        Yr = await _n.getReverseTimestamps(lr.sessionId),
         Lr = oe(Sr);
       if (Ct !== we) return;
       O(S, Yr.timestamps, !0), O(o, Yr.hasMore, !0), O(A, "gallery"), Oe("loadTimestamps:resolved", {
@@ -51959,7 +51959,7 @@ function BF(v, s) {
       loadedSnapshots: c(S).length
     });
     try {
-      const er = await bn.getReverseTimestamps(c(W), Ct);
+      const er = await _n.getReverseTimestamps(c(W), Ct);
       if (Xe !== we) return;
       O(S, [...c(S), ...er.timestamps], !0), O(o, er.hasMore, !0), Oe("loadMoreTimestamps:resolved", {
         season: s.season,
@@ -51995,7 +51995,7 @@ function BF(v, s) {
     });
     try {
       const er = de(),
-        Sr = await bn.getReversePreview(Xe, Ct),
+        Sr = await _n.getReversePreview(Xe, Ct),
         Yr = oe(er);
       if (lr !== ye || (O(K, Sr.pixels), await new Promise(ar => requestAnimationFrame(() => ar())), lr !== ye)) return;
       const Lr = de();
@@ -52400,17 +52400,17 @@ function BF(v, s) {
               class: "size-4 rotate-180"
             }), b(xt), b(mr), b(ot);
             var en = k(ot, 2),
-              _n = T(en);
+              yn = T(en);
             {
               var In = cn => {
                 var jn = AF();
                 q(cn, jn)
               };
-              Ve(_n, cn => {
+              Ve(yn, cn => {
                 c(Ye) && cn(In)
               })
             }
-            var Ft = k(_n, 2);
+            var Ft = k(yn, 2);
             ss(Ft, cn => O(re, cn), () => c(re)), b(en);
             var Wr = k(en, 2),
               qr = T(Wr),
@@ -52471,10 +52471,10 @@ function BF(v, s) {
                   c(Ye) && c(U) === c(jn).depth && wr(Hr)
                 })
               }
-              b(dt), b(me), De((wr, rn, yn, Pt, gr, kr) => {
+              b(dt), b(me), De((wr, rn, xn, Pt, gr, kr) => {
                 Ht(me, "id", wr), We = jr(me, 1, "reverse-gallery-item svelte-o0qsvj", null, We, {
                   "reverse-gallery-item-active": c(U) === c(jn).depth
-                }), ee(Gt, `${rn??""} `), ee(Gr, `#${c(pi)+1}`), ee(mt, `${yn??""} · ${Pt??""}`), ee(En, `${gr??""}
+                }), ee(Gt, `${rn??""} `), ee(Gr, `#${c(pi)+1}`), ee(mt, `${xn??""} · ${Pt??""}`), ee(En, `${gr??""}
 										${kr??""}`)
               }, [() => fr(c(jn).depth), () => Tr(c(jn).ts), () => ur(c(jn).ts), () => xr(c(jn).ts), () => c(jn).pixelCount.toLocaleString(), () => yx()]), gt("click", me, () => c(W) && Dt(c(W), c(jn).depth)), q(cn, me)
             }), b(Rn);
@@ -52810,7 +52810,7 @@ function IB(v, s) {
     Li.droppletAndPlop.play(), _e = mr();
     const We = async Hr => {
       if (c(He) === "user-picker") {
-        await _n(Hr, "select");
+        await yn(Hr, "select");
         return
       }
       if (hr()) {
@@ -52830,20 +52830,20 @@ function IB(v, s) {
         O(M, !1)
       }
     }, _t = async Hr => {
-      var rn, yn;
+      var rn, xn;
       if (c(He) === "user-picker") {
         (rn = Hr.preventDefault) == null || rn.call(Hr);
         const Pt = Hr.originalEvent;
         Pt == null || Pt.preventDefault();
         try {
-          await _n(Hr, "deselect")
+          await yn(Hr, "deselect")
         } catch (gr) {
           console.error(gr)
         }
         return
       }
       if (!hr()) return;
-      (yn = Hr.preventDefault) == null || yn.call(Hr);
+      (xn = Hr.preventDefault) == null || xn.call(Hr);
       const wr = Hr.originalEvent;
       wr == null || wr.preventDefault(), Ii(Hr, "remove")
     }, Xt = Hr => {
@@ -52860,9 +52860,9 @@ function IB(v, s) {
       const wr = je;
       if (!wr || Hr.pointerId !== wr.pointerId) return;
       const rn = Hr.clientX - wr.startX,
-        yn = Hr.clientY - wr.startY;
+        xn = Hr.clientY - wr.startY;
       let Pt = wr.startPosX + rn,
-        gr = wr.startPosY + yn;
+        gr = wr.startPosY + xn;
       const kr = wr.containerRect.left - wr.baseLeft,
         fn = wr.containerRect.right - wr.baseLeft - wr.panelWidth,
         Fn = wr.containerRect.top - wr.baseTop,
@@ -52963,9 +52963,9 @@ function IB(v, s) {
     const Hr = Math.floor(Gr / s.tileSize),
       wr = Math.floor(Kr / s.tileSize),
       rn = Math.floor(mt / s.tileSize),
-      yn = Math.floor(dt / s.tileSize),
+      xn = Math.floor(dt / s.tileSize),
       Pt = rn - Hr + 1,
-      gr = yn - wr + 1,
+      gr = xn - wr + 1,
       kr = [];
     for (let wt = 0; wt < gr; wt += 1)
       for (let $t = 0; $t < Pt; $t += 1) {
@@ -52975,7 +52975,7 @@ function IB(v, s) {
           Nr = 0,
           Dr = s.tileSize - 1,
           Cr = s.tileSize - 1;
-        Tn === wr && (Nr = Kr % s.tileSize), Or === Hr && (ln = Gr % s.tileSize), Tn === yn && (Cr = dt % s.tileSize), Or === rn && (Dr = mt % s.tileSize), kr.push({
+        Tn === wr && (Nr = Kr % s.tileSize), Or === Hr && (ln = Gr % s.tileSize), Tn === xn && (Cr = dt % s.tileSize), Or === rn && (Dr = mt % s.tileSize), kr.push({
           tile: [Or, Tn],
           p0: [ln, Nr],
           p1: [Dr, Cr]
@@ -52991,7 +52991,7 @@ function IB(v, s) {
         if (Fn += 1, $t >= kr.length) return;
         const Or = kr[$t];
         fn[$t] = {
-          response: await bn.getPixelAreaInfo({
+          response: await _n.getPixelAreaInfo({
             season: s.season,
             tile: Or.tile,
             p0: Or.p0,
@@ -53013,9 +53013,9 @@ function IB(v, s) {
       }
       of fn) {
       const [ln, Nr] = Tn, [Dr, Cr] = $t, [Ln, Rr] = Or, Fr = Ln - Dr + 1, kn = Rr - Cr + 1;
-      for (let xn = 0; xn < kn; xn++)
+      for (let bn = 0; bn < kn; bn++)
         for (let Ri = 0; Ri < Fr; Ri++) {
-          const Un = xn * Fr + Ri,
+          const Un = bn * Fr + Ri,
             $n = wt.paintedBy[Un];
           let mi = se.get($n);
           mi || (mi = {
@@ -53028,7 +53028,7 @@ function IB(v, s) {
           }, se.set($n, mi));
           const Yn = wt.colors[Un],
             _i = Dr + Ri,
-            Ai = Cr + xn;
+            Ai = Cr + bn;
           mi.tileXs.push(ln), mi.tileYs.push(Nr), mi.pixelXs.push(_i), mi.pixelYs.push(Ai), mi.colorIdxs.push(Yn), mi.colorCounts[Yn] += 1;
           const Pi = Tt(ln, Nr, _i, Ai),
             wi = {
@@ -53046,7 +53046,7 @@ function IB(v, s) {
     }
     const {
       users: Ce
-    } = await bn.getMultipleUsersInfoById([...se.keys()]), Ze = v3(Ce, wt => wt.id), it = [...se.entries()].map(([wt, $t]) => ({
+    } = await _n.getMultipleUsersInfoById([...se.keys()]), Ze = v3(Ce, wt => wt.id), it = [...se.entries()].map(([wt, $t]) => ({
       ...Ze[wt] ?? {
         id: wt,
         name: "Player",
@@ -53280,11 +53280,11 @@ function IB(v, s) {
     const We = new gs(s.tileSize);
     let _t, Xt, sr, Gt;
     if (m.length >= 2) {
-      const rn = m.map(yn => We.latLonToPixelsFloor(yn.lat, yn.lng, s.pixelArtZoom));
-      _t = Math.min(...rn.map(([yn]) => yn)), Xt = Math.max(...rn.map(([yn]) => yn)) + 1, sr = Math.min(...rn.map(([, yn]) => yn)), Gt = Math.max(...rn.map(([, yn]) => yn)) + 1
+      const rn = m.map(xn => We.latLonToPixelsFloor(xn.lat, xn.lng, s.pixelArtZoom));
+      _t = Math.min(...rn.map(([xn]) => xn)), Xt = Math.max(...rn.map(([xn]) => xn)) + 1, sr = Math.min(...rn.map(([, xn]) => xn)), Gt = Math.max(...rn.map(([, xn]) => xn)) + 1
     } else if (m.length === 1 && ye) {
-      const [rn, yn] = We.latLonToPixelsFloor(m[0].lat, m[0].lng, s.pixelArtZoom), Pt = s.map.unproject([ye.x, ye.y]), [gr, kr] = We.latLonToPixelsFloor(Pt.lat, Pt.lng, s.pixelArtZoom);
-      _t = Math.min(rn, gr), Xt = Math.max(rn, gr) + 1, sr = Math.min(yn, kr), Gt = Math.max(yn, kr) + 1
+      const [rn, xn] = We.latLonToPixelsFloor(m[0].lat, m[0].lng, s.pixelArtZoom), Pt = s.map.unproject([ye.x, ye.y]), [gr, kr] = We.latLonToPixelsFloor(Pt.lat, Pt.lng, s.pixelArtZoom);
+      _t = Math.min(rn, gr), Xt = Math.max(rn, gr) + 1, sr = Math.min(xn, kr), Gt = Math.max(xn, kr) + 1
     } else {
       me.style.display = "none";
       return
@@ -53338,7 +53338,7 @@ function IB(v, s) {
     const _t = document.createElement("div");
     return _t.style.position = "absolute", _t.style.pointerEvents = "none", _t.style.zIndex = "5", _t.style.display = "none", _t.style.mixBlendMode = "difference", _t.style.backgroundColor = "rgba(255, 255, 255, 0.9)", We === "horizontal" ? (_t.style.left = "0", _t.style.right = "0", _t.style.height = "1px") : (_t.style.top = "0", _t.style.bottom = "0", _t.style.width = "1px"), me.appendChild(_t), _t
   }
-  async function _n(me, We = "select") {
+  async function yn(me, We = "select") {
     if (!c(Vt)) {
       if (c(M)) {
         Yt.info("Wait until the selected area finishes loading.");
@@ -53357,7 +53357,7 @@ function IB(v, s) {
           } = _t.latLonToTileAndPixel(me.lngLat.lat, me.lngLat.lng, s.pixelArtZoom),
           {
             paintedBy: Gt
-          } = await bn.getPixelInfo({
+          } = await _n.getPixelInfo({
             season: s.season,
             tile: Xt,
             pixel: sr
@@ -53560,8 +53560,8 @@ function IB(v, s) {
       Hr = [];
     for (let wr = dt; wr <= jt; wr++)
       for (let rn = En; rn <= Jn; rn++) {
-        const yn = ar(wr, rn),
-          Pt = It.get(yn);
+        const xn = ar(wr, rn),
+          Pt = It.get(xn);
         if (Pt)
           for (const gr of Pt) {
             const kr = gr.tile[0] * s.tileSize + gr.pixel[0] + .5 - Xt,
@@ -53629,9 +53629,9 @@ function IB(v, s) {
     const Hr = me.width / We.width,
       wr = me.height / We.height,
       rn = Math.floor(Kr * Hr),
-      yn = Math.floor(dt * wr),
+      xn = Math.floor(dt * wr),
       Pt = Math.max(1, Math.ceil(mt * Hr) - rn),
-      gr = Math.max(1, Math.ceil(jt * wr) - yn),
+      gr = Math.max(1, Math.ceil(jt * wr) - xn),
       kr = await pm(s.map);
     let fn;
     if ("createImageBitmap" in window) fn = await createImageBitmap(kr);
@@ -53646,7 +53646,7 @@ function IB(v, s) {
     Fn.width = Pt, Fn.height = gr;
     const Xn = Fn.getContext("2d");
     if (!Xn) return "close" in fn && fn.close(), Yt.error("Unable to create drawing context."), !1;
-    Xn.drawImage(fn, rn, yn, Pt, gr, 0, 0, Pt, gr), "close" in fn && fn.close();
+    Xn.drawImage(fn, rn, xn, Pt, gr, 0, 0, Pt, gr), "close" in fn && fn.close();
     const fi = await new Promise((Ze, it) => {
         Fn.toBlob(wt => {
           wt ? Ze(wt) : it(new Error("Failed to prepare download."))
@@ -53738,8 +53738,8 @@ function IB(v, s) {
                 }, "image/png")
               }),
               rn = URL.createObjectURL(wr),
-              yn = document.createElement("a");
-            yn.href = rn, yn.download = `selected-area-${Gr}x${Kr}.png`, document.body.appendChild(yn), yn.click(), document.body.removeChild(yn), URL.revokeObjectURL(rn), Yt.success("Selected area image saved")
+              xn = document.createElement("a");
+            xn.href = rn, xn.download = `selected-area-${Gr}x${Kr}.png`, document.body.appendChild(xn), xn.click(), document.body.removeChild(xn), URL.revokeObjectURL(rn), Yt.success("Selected area image saved")
         }
       } catch (me) {
         Yt.error(me.message)
@@ -53789,7 +53789,7 @@ function IB(v, s) {
         ...Gt,
         colorIdx: 0
       });
-      await bn.selectAreaClear(_t, We);
+      await _n.selectAreaClear(_t, We);
       const Xt = su(0),
         sr = _t.map(({
           tile: Gt,
@@ -53980,7 +53980,7 @@ function IB(v, s) {
     }), O(o, !0);
     try {
       const Xt = xr(),
-        sr = await bn.applyReverse(me, We),
+        sr = await _n.applyReverse(me, We),
         Gt = yr(Xt);
       Li.droppletAndPlop.play();
       const Ot = xr();
@@ -54161,7 +54161,7 @@ function IB(v, s) {
         var wr = k(Hr, 2);
         fa(wr), b(Jn);
         var rn = k(Jn, 2),
-          yn = T(rn);
+          xn = T(rn);
         {
           var Pt = Rr => {
               var Fr = XF();
@@ -54172,7 +54172,7 @@ function IB(v, s) {
                 class: "size-4"
               })
             };
-          Ve(yn, Rr => {
+          Ve(xn, Rr => {
             c(fe) ? Rr(Pt) : Rr(gr, !1)
           })
         }
@@ -54226,8 +54226,8 @@ function IB(v, s) {
             Ln = Rr => {
               var Fr = wB(),
                 kn = _r(Fr),
-                xn = T(kn),
-                Ri = T(xn),
+                bn = T(kn),
+                Ri = T(bn),
                 Un = T(Ri),
                 $n = T(Un),
                 mi = T($n),
@@ -54335,7 +54335,7 @@ function IB(v, s) {
                   c(Ye) && gi(qi)
                 })
               }
-              b(xn), b(kn);
+              b(bn), b(kn);
               var ma = k(kn, 2);
               {
                 var Ta = gi => {
@@ -54809,7 +54809,7 @@ function $B(v, s) {
     _e = Se(() => {
       const X = Math.trunc(c(re).tile[0]),
         ie = Math.trunc(c(re).tile[1]),
-        Pe = Date.now();
+        Pe = _n.clampWaybackTimestamp(Date.now());
       return `${ha.url.origin}/wayback?tileX=${X}&tileY=${ie}&timestamp=${Pe}`
     });
   mn(() => {
@@ -54833,7 +54833,7 @@ function $B(v, s) {
     s.pixelInfoCache.size === 0 && (ce = 0), ce++, ce > 6 ? (clearTimeout(we), we = setTimeout(async () => ye(X), 500)) : ye(X)
   });
   async function ye(X) {
-    const ie = await bn.getPixelInfo(X);
+    const ie = await _n.getPixelInfo(X);
     if (ie.paintedBy !== void 0) {
       const be = W(X);
       s.pixelInfoCache.set(be, ie)
@@ -54863,7 +54863,7 @@ function $B(v, s) {
   }
   async function je() {
     try {
-      O(S, !0), c(U) ? (await bn.deleteFavoriteLocation(c(U).id), Yt.warning(BI())) : (await bn.favoriteLocation(c(re).center), Yt.success(Kg())), Li.smallPlop.play(), At.refresh()
+      O(S, !0), c(U) ? (await _n.deleteFavoriteLocation(c(U).id), Yt.warning(BI())) : (await _n.favoriteLocation(c(re).center), Yt.success(Kg())), Li.smallPlop.play(), At.refresh()
     } catch (X) {
       Yt.error(X.message)
     } finally {
@@ -55070,7 +55070,7 @@ function $B(v, s) {
               b(mr), b(Jt), De(xt => ee(br, ` ${xt??""}`), [() => Lb()]), gt("click", mr, async () => {
                 O(o, !0);
                 try {
-                  await bn.banAllianceUser(c(ft).id), await ye({
+                  await _n.banAllianceUser(c(ft).id), await ye({
                     ...c(re),
                     season: s.season
                   })
@@ -56485,7 +56485,7 @@ function gO(v, s) {
             }), gt("click", It, async () => {
               if (!(c(Oe) && !await s.promptUserConfirmation(xe().label))) try {
                 const hr = xe().id;
-                O(U, hr, !0), await bn.purchase({
+                O(U, hr, !0), await _n.purchase({
                   id: S,
                   amount: 1,
                   variant: hr
@@ -56548,7 +56548,7 @@ function gO(v, s) {
               try {
                 O(U, xe().id, !0);
                 const Xe = c(It) ? 0 : xe().id;
-                await bn.equipFlag(Xe), At.data && (At.data.equippedFlag = Xe), At.refresh()
+                await _n.equipFlag(Xe), At.data && (At.data.equippedFlag = Xe), At.refresh()
               } catch (Xe) {
                 Yt.error(Xe.message)
               } finally {
@@ -56700,7 +56700,7 @@ function _b(v, s) {
     ux(m)
   }), gt("click", je, async () => {
     try {
-      O(A, !0), await bn.purchase({
+      O(A, !0), await _n.purchase({
         id: s.productId,
         amount: m()
       }), Li.notification1.play(), s.onpurchasecompleted(m())
@@ -57181,7 +57181,7 @@ function ZO(v, s) {
   async function Ke(ot) {
     var ct;
     try {
-      O(o, !0), O(F, ot.id, !0), await bn.postBuyUserFrame(ot.id), At.refresh(), Li.notification1.play();
+      O(o, !0), O(F, ot.id, !0), await _n.postBuyUserFrame(ot.id), At.refresh(), Li.notification1.play();
       const ze = (ct = c(A)) == null ? void 0 : ct.find(st => st.id === ot.id);
       ze && (ze.owned = !0)
     } catch (ze) {
@@ -57193,7 +57193,7 @@ function ZO(v, s) {
   async function vt(ot) {
     var ct;
     try {
-      O(o, !0), O(F, ot.id, !0), await bn.postEquipUserFrame(ot.id), await At.refresh(), Li.notification1.play(), Yt.success(((ct = uP) == null ? void 0 : ct()) ?? "Frame equipped!")
+      O(o, !0), O(F, ot.id, !0), await _n.postEquipUserFrame(ot.id), await At.refresh(), Li.notification1.play(), Yt.success(((ct = uP) == null ? void 0 : ct()) ?? "Frame equipped!")
     } catch (ze) {
       Yt.error(ze.message)
     } finally {
@@ -57202,7 +57202,7 @@ function ZO(v, s) {
   }
   async function tt(ot) {
     try {
-      O(fe, !0), await bn.changeProfilePicture(ot.id), await At.refresh(), Li.notification1.play(), Yt.success(Sx())
+      O(fe, !0), await _n.changeProfilePicture(ot.id), await At.refresh(), Li.notification1.play(), Yt.success(Sx())
     } catch (ct) {
       Yt.error(ct.message)
     } finally {
@@ -57211,7 +57211,7 @@ function ZO(v, s) {
   }
   async function Fe() {
     try {
-      O(fe, !0), await bn.changeProfilePicture(), await At.refresh(), Li.notification1.play(), Yt.success(Sx())
+      O(fe, !0), await _n.changeProfilePicture(), await At.refresh(), Li.notification1.play(), Yt.success(Sx())
     } catch (ot) {
       Yt.error(ot.message)
     } finally {
@@ -57221,7 +57221,7 @@ function ZO(v, s) {
   async function $e(ot) {
     try {
       if (ot.id === 10) return;
-      O(ce, !0), await bn.postBuyCosmetic(ot.id), await At.refresh(), Li.notification1.play();
+      O(ce, !0), await _n.postBuyCosmetic(ot.id), await At.refresh(), Li.notification1.play();
       const ct = c(W).find(ze => ze.id === ot.id);
       ct && (ct.owned = !0)
     } catch (ct) {
@@ -57233,7 +57233,7 @@ function ZO(v, s) {
   async function Le(ot) {
     try {
       if (ot.id === 20) return;
-      O(ce, !0), await bn.postBuyCosmetic(ot.id), await At.refresh(), Li.notification1.play();
+      O(ce, !0), await _n.postBuyCosmetic(ot.id), await At.refresh(), Li.notification1.play();
       const ct = c(we).find(ze => ze.id === ot.id);
       ct && (ct.owned = !0)
     } catch (ct) {
@@ -57261,7 +57261,7 @@ function ZO(v, s) {
       const lt = ((ct = At.data) == null ? void 0 : ct.equippedFrameId) ?? 0,
         ft = ((st = (ze = At.data) == null ? void 0 : ze.equippedNameCosmetic) == null ? void 0 : st.styleId) ?? He();
       if (ft === null) throw new Error("No style available to equip with this font.");
-      await bn.postEquipCosmetics({
+      await _n.postEquipCosmetics({
         frameId: lt,
         fontId: ot.id,
         styleId: ft
@@ -57279,7 +57279,7 @@ function ZO(v, s) {
       const lt = ((ct = At.data) == null ? void 0 : ct.equippedFrameId) ?? 0,
         ft = ((st = (ze = At.data) == null ? void 0 : ze.equippedNameCosmetic) == null ? void 0 : st.fontId) ?? Ye();
       if (ft === null) throw new Error("No font available to equip with this style.");
-      await bn.postEquipCosmetics({
+      await _n.postEquipCosmetics({
         frameId: lt,
         fontId: ft,
         styleId: ot.id
@@ -57292,8 +57292,8 @@ function ZO(v, s) {
   }
   Aa(async () => {
     try {
-      O(A, await bn.getStoreFrames(), !0);
-      const ot = await bn.getStoreNameCosmetics();
+      O(A, await _n.getStoreFrames(), !0);
+      const ot = await _n.getStoreNameCosmetics();
       O(W, ot.fonts.map(ct => ({
         id: ct.id,
         name: ct.name,
@@ -57311,7 +57311,7 @@ function ZO(v, s) {
       O(A, [], !0)
     }
     try {
-      O(K, await bn.getMyProfilePictures(), !0)
+      O(K, await _n.getMyProfilePictures(), !0)
     } catch {
       O(K, [], !0)
     }
@@ -57336,8 +57336,8 @@ function ZO(v, s) {
         vr = T(mr);
       {
         let en = Se(() => {
-          var _n;
-          return ((_n = At.data) == null ? void 0 : _n.droplets) ?? 0
+          var yn;
+          return ((yn = At.data) == null ? void 0 : yn.droplets) ?? 0
         });
         Ab(vr, {
           get value() {
@@ -57349,8 +57349,8 @@ function ZO(v, s) {
       var br = k(ze, 2);
       {
         var xt = en => {
-            var _n = NO(),
-              In = T(_n),
+            var yn = NO(),
+              In = T(yn),
               Ft = T(In),
               Wr = T(Ft);
             DO(Wr, {
@@ -57484,13 +57484,13 @@ function ZO(v, s) {
               Ur = T(sn);
             gO(Ur, {
               promptUserConfirmation: Oe
-            }), b(sn), b(_n), De((un, nn, zn) => {
+            }), b(sn), b(yn), De((un, nn, zn) => {
               ee(Wn, un), ee(Si, nn), ee(di, zn)
-            }, [() => iP(), () => aP(), () => sP()]), q(en, _n)
+            }, [() => iP(), () => aP(), () => sP()]), q(en, yn)
           },
           Ar = en => {
-            var _n = qO(),
-              In = T(_n);
+            var yn = qO(),
+              In = T(yn);
             {
               let Ft = Se(() => {
                   var Gn;
@@ -57537,7 +57537,7 @@ function ZO(v, s) {
                 }
               })
             }
-            b(_n), q(en, _n)
+            b(yn), q(en, yn)
           };
         Ve(br, en => {
           c(U) === "main" ? en(xt) : c(U) === "all-frames" && en(Ar, 1)
@@ -58622,8 +58622,8 @@ function eN(v, s) {
           ctx: kn
         } = we(Ze.width, Ze.height);
         kn.clearRect(0, 0, Ze.width, Ze.height), kn.imageSmoothingEnabled = !1, kn.drawImage(Ce, 0, 0, Ze.width, Ze.height);
-        const xn = kn.getImageData(0, 0, Ze.width, Ze.height);
-        ie(xn.data, Ze.width, Ze.height, it, wt, $t, Or), Nr = new ImageData(new Uint8ClampedArray(xn.data), Ze.width, Ze.height)
+        const bn = kn.getImageData(0, 0, Ze.width, Ze.height);
+        ie(bn.data, Ze.width, Ze.height, it, wt, $t, Or), Nr = new ImageData(new Uint8ClampedArray(bn.data), Ze.width, Ze.height)
       }
     } else {
       const {
@@ -58665,10 +58665,10 @@ function eN(v, s) {
             se[kn + 3] = 0;
             continue
           }
-          const xn = Fr * 3,
-            Ri = ur(Math.round(se[kn] + Dr[xn]), 0, 255),
-            Un = ur(Math.round(se[kn + 1] + Dr[xn + 1]), 0, 255),
-            $n = ur(Math.round(se[kn + 2] + Dr[xn + 2]), 0, 255),
+          const bn = Fr * 3,
+            Ri = ur(Math.round(se[kn] + Dr[bn]), 0, 255),
+            Un = ur(Math.round(se[kn + 1] + Dr[bn + 1]), 0, 255),
+            $n = ur(Math.round(se[kn + 2] + Dr[bn + 2]), 0, 255),
             mi = Ri << 16 | Un << 8 | $n;
           let Yn = Tn.get(mi);
           Yn === void 0 && (ln.r = Ri, ln.g = Un, ln.b = $n, Yn = Ad(ln, it, $t), Tn.set(mi, Yn));
@@ -58803,11 +58803,11 @@ function eN(v, s) {
       Fr = Rr === "center" ? st : Rr === "diagonal" ? lt : 1;
     let kn = mr(it.width, it.height, Fr);
     (Rr === "center" || Rr === "diagonal") && kn % 2 === 0 && kn--;
-    const xn = Rr === "normal" || kn < 2 ? (() => {
+    const bn = Rr === "normal" || kn < 2 ? (() => {
         const $n = mi => mi > 0 && (mi & mi - 1) === 0;
         return $n(it.width) && $n(it.height) ? 3 : 1
       })() : kn,
-      Ri = Rr === "normal" || kn < 2 ? xn : kn;
+      Ri = Rr === "normal" || kn < 2 ? bn : kn;
     !ze && $t && (ct && (ct.destroy(), ct = null), ct = A_.tryCreate(), ct || (ze = !0));
     let Un;
     if (ct) {
@@ -58825,7 +58825,7 @@ function eN(v, s) {
       const $n = new Uint32Array(Dr.buffer, Dr.byteOffset, Dr.length >> 2),
         mi = Cr ? br(Cr) : 0;
       if (Rr === "normal" || kn < 2) {
-        Un.width = it.width * xn, Un.height = it.height * xn;
+        Un.width = it.width * bn, Un.height = it.height * bn;
         const Yn = Un.getContext("2d");
         if (!Yn) {
           Un.width = 0, Un.height = 0;
@@ -58840,7 +58840,7 @@ function eN(v, s) {
           for (let Ci = 0; Ci < wi; Ci++) $n[Ci] === mi && (Pi[Ci] = $n[Ci]);
           _i = Ai
         }
-        if (xn === 1) Yn.putImageData(_i, 0, 0);
+        if (bn === 1) Yn.putImageData(_i, 0, 0);
         else {
           const {
             canvas: Ai,
@@ -58955,7 +58955,7 @@ function eN(v, s) {
     Tn && (Tn.imageSmoothingEnabled = !1, Tn.drawImage(Ce, 0, 0, wt, $t), c(te).set(se, Or.toDataURL()), Or.width = 0, Or.height = 0, O(te, new Map(c(te)), !0))
   }
 
-  function _n() {
+  function yn() {
     for (const se of Dn.templates) en(se.id)
   }
 
@@ -59364,9 +59364,9 @@ function eN(v, s) {
     let Fr = Math.abs(Dr),
       kn = Math.abs(Cr);
     if (Fr === 0 && kn === 0) return Ze;
-    const xn = kn * $t,
+    const bn = kn * $t,
       Ri = Fr / $t;
-    xn > Fr ? Fr = xn : kn = Ri;
+    bn > Fr ? Fr = bn : kn = Ri;
     const Un = Or + Ln * Math.max(1, Math.round(Fr)),
       $n = Tn + Rr * Math.max(1, Math.round(kn));
     return Ce.includes("n") ? Ze.northPx = $n : Ze.southPx = $n, Ce.includes("w") ? Ze.westPx = Un : Ze.eastPx = Un, Ze
@@ -59502,7 +59502,7 @@ function eN(v, s) {
           $t = Wr(wt);
         c(K).set(Ze.id, $t)
       })), O(K, new Map(c(K)), !0), Er(), requestAnimationFrame(() => {
-        be(), _n()
+        be(), yn()
       })
     })();
     const se = () => {
@@ -59540,9 +59540,9 @@ function eN(v, s) {
         wt = it.width / it.height;
       return Math.abs(Ze - wt) < .01
     });
-  var yn = $9();
+  var xn = $9();
   ai("dragover", ko, Si), ai("drop", ko, hi), ai("dragleave", ko, tn);
-  var Pt = _r(yn);
+  var Pt = _r(xn);
   xi(Pt, 21, () => c(Hr), se => se.id, (se, Ce) => {
     const Ze = Se(() => c(fe).get(c(Ce).id)),
       it = Se(() => c(K).has(c(Ce).id)),
@@ -59559,15 +59559,15 @@ function eN(v, s) {
         var Rr = k(Ln, 2);
         {
           var Fr = kn => {
-            var xn = N9(),
-              Ri = _r(xn),
+            var bn = N9(),
+              Ri = _r(bn),
               Un = k(Ri, 2);
             xi(Un, 16, () => o, $n => $n, ($n, mi) => {
               var Yn = O9();
               De(() => {
                 jr(Yn, 1, `handle handle-${mi}`, "svelte-1mwy93i"), Ht(Yn, "aria-label", `Resize ${mi}`)
               }), gt("pointerdown", Yn, _i => Gr(_i, c(Ce).id, mi)), q($n, Yn)
-            }), gt("pointerdown", Ri, $n => Ot($n, c(Ce).id)), q(kn, xn)
+            }), gt("pointerdown", Ri, $n => Ot($n, c(Ce).id)), q(kn, bn)
           };
           Ve(Rr, kn => {
             c(Nr) && kn(Fr)
@@ -59647,8 +59647,8 @@ function eN(v, s) {
         Fr = T(Rr, !0);
       b(Rr), b(Tn), b(wt);
       var kn = k(wt, 2),
-        xn = T(kn),
-        Ri = k(xn, 2),
+        bn = T(kn),
+        Ri = k(bn, 2),
         Un = k(Ri, 2),
         $n = T(Un);
       im($n, {
@@ -59790,7 +59790,7 @@ function eN(v, s) {
         Oi.show()
       }), De((Oi, Di, Mi, Qi, qi) => {
         ee(Dr, Oi), ee(Ln, c(Hr).length), ee(Fr, Di), Ht(Ri, "accept", o9), ee(mi, ` ${Mi??""}`), ee(Ai, ` ${Qi??""}`), ee(ki, qi)
-      }, [() => _P(), () => yP(), () => xP(), () => Px(), () => Qo()]), ai("close", Ce, an), gt("change", xn, Wn), gt("change", Ri, Gn), q(se, Ce)
+      }, [() => _P(), () => yP(), () => xP(), () => Px(), () => Qo()]), ai("close", Ce, an), gt("change", bn, Wn), gt("change", Ri, Gn), q(se, Ce)
     };
     Ve(kr, se => {
       c(Ue) === "gallery" && se(fn)
@@ -59829,7 +59829,7 @@ function eN(v, s) {
             var Fr = k(Dr, 2),
               kn = T(Fr);
             {
-              var xn = Nn => {
+              var bn = Nn => {
                   var ri = H9();
                   fa(ri), ss(ri, ki => O(vt, ki), () => c(vt)), gt("keydown", ri, ki => {
                     ki.key === "Enter" && Ji(), ki.key === "Escape" && ti()
@@ -59848,7 +59848,7 @@ function eN(v, s) {
                   }, [() => VP()]), gt("click", ri, () => ei(c(wr).id)), q(Nn, ri)
                 };
               Ve(kn, Nn => {
-                c(Oe) === c(wr).id ? Nn(xn) : Nn(Ri, !1)
+                c(Oe) === c(wr).id ? Nn(bn) : Nn(Ri, !1)
               })
             }
             var Un = k(kn, 2),
@@ -59956,13 +59956,13 @@ function eN(v, s) {
             let Rr;
             var Fr = k(Ln, 2);
             let kn;
-            var xn = k(Fr, 2);
+            var bn = k(Fr, 2);
             let Ri;
-            var Un = T(xn);
+            var Un = T(bn);
             k9(Un, {
               class: "size-5"
-            }), b(xn);
-            var $n = k(xn, 4);
+            }), b(bn);
+            var $n = k(bn, 4);
             let mi;
             var Yn = T($n);
             {
@@ -59987,12 +59987,12 @@ function eN(v, s) {
                 "btn-active": c(de) === "normal"
               }), Ht(Ln, "title", Nn), kn = jr(Fr, 1, "btn btn-ghost btn-xs btn-square", null, kn, {
                 "btn-active": c(de) === "diagonal"
-              }), Ht(Fr, "title", ri), Ri = jr(xn, 1, "btn btn-ghost btn-sm", null, Ri, {
+              }), Ht(Fr, "title", ri), Ri = jr(bn, 1, "btn btn-ghost btn-sm", null, Ri, {
                 "btn-active": fs.highlightSelectedColor
-              }), Ht(xn, "title", ki), mi = jr($n, 1, "btn btn-ghost btn-sm btn-square not-touchscreen:hidden shrink-0", null, mi, {
+              }), Ht(bn, "title", ki), mi = jr($n, 1, "btn btn-ghost btn-sm btn-square not-touchscreen:hidden shrink-0", null, mi, {
                 "btn-active": m()
               }), Ht($n, "title", Oi)
-            }, [() => AP(), () => kP(), () => DP(), () => LP(), () => zP(), () => fs.highlightSelectedColor ? RP() : FP(), () => m() ? BP() : OP()]), gt("click", Tn, Ur), gt("click", Dr, () => Pn("center")), gt("click", Ln, () => Pn("normal")), gt("click", Fr, () => Pn("diagonal")), gt("click", xn, () => {
+            }, [() => AP(), () => kP(), () => DP(), () => LP(), () => zP(), () => fs.highlightSelectedColor ? RP() : FP(), () => m() ? BP() : OP()]), gt("click", Tn, Ur), gt("click", Dr, () => Pn("center")), gt("click", Ln, () => Pn("normal")), gt("click", Fr, () => Pn("diagonal")), gt("click", bn, () => {
               const Pi = !fs.highlightSelectedColor;
               fs.setHighlightSelectedColor(Pi), Li.smallDropplet.play()
             }), gt("click", $n, () => {
@@ -60009,7 +60009,7 @@ function eN(v, s) {
       c(Ue) !== "gallery" && c(wr) && se(fi)
     })
   }
-  b(Fn), q(v, yn), pn()
+  b(Fn), q(v, xn), pn()
 }
 bi(["pointerdown", "change", "click", "keydown"]);
 
@@ -61941,7 +61941,7 @@ function gN(v, s) {
     const we = localStorage.getItem(c(K));
     we && O(y, we, !0)
   }), Aa(() => {
-    bn.getOtpCooldown().then(ue => {
+    _n.getOtpCooldown().then(ue => {
       O(M, ue.cooldownMs, !0)
     }).catch(ue => {
       Yt.error(ue.message)
@@ -61959,7 +61959,7 @@ function gN(v, s) {
   async function te(we) {
     try {
       O(A, !0);
-      const ye = await bn.sendOtp(we);
+      const ye = await _n.sendOtp(we);
       Yt.info(`${lC()} ${ye.phone}`), O(y, ye.phone, !0), O(M, ye.cooldownMs, !0), localStorage.setItem(c(K), c(y))
     } catch (ye) {
       Yt.error(ye.message)
@@ -61970,7 +61970,7 @@ function gN(v, s) {
   mn(() => {
     c(F).length === 6 && (O(o, !0), (async () => {
       try {
-        await bn.verifyOtp(c(F)), await At.refresh(), Yt.success(QP()), localStorage.removeItem(c(K)), s.onsuccess(c(y))
+        await _n.verifyOtp(c(F)), await At.refresh(), Yt.success(QP()), localStorage.removeItem(c(K)), s.onsuccess(c(y))
       } catch (we) {
         Yt.error(we.message)
       } finally {
@@ -62000,7 +62000,7 @@ function gN(v, s) {
         ka(pe, () => Le => (O(U, cN(Le, {
           strictMode: !0,
           initialCountry: "br",
-          loadUtils: () => i4(() => import("../chunks/Ba35yXP-.js"), [], import.meta.url),
+          loadUtils: () => i4(() => import("../chunks/C3RnjWHF.js"), [], import.meta.url),
           containerClass: "w-full",
           dropdownContainer: document.body
         })), () => {
@@ -62205,7 +62205,7 @@ function EN(v, s) {
           max_lon: Z.getEast().toString(),
           limit: te.toString()
         }),
-        ie = await bn.getWaybackVideo(s.season, X.toString());
+        ie = await _n.getWaybackVideo(s.season, X.toString());
       if (!ie.ok) throw new Error("Failed to load events");
       const be = ((await ie.json()).events ?? []).map(Re => ({
         ...Re,
@@ -62232,7 +62232,7 @@ function EN(v, s) {
             max_lon: Z.getEast().toString(),
             limit: te.toString()
           }),
-          ie = await bn.getWaybackVideo(s.season, X.toString());
+          ie = await _n.getWaybackVideo(s.season, X.toString());
         if (!ie.ok) throw new Error("Failed to load more events");
         const be = ((await ie.json()).events ?? []).map(Re => ({
           ...Re,
@@ -62292,8 +62292,8 @@ function EN(v, s) {
             re.fillStyle = `rgb(${vr}, ${br}, ${xt})`;
             const Ar = ze + 1,
               en = st + 1,
-              _n = c(ye).pixelsToLatLon(Ar + .5, en + .5, s.pixelArtZoom),
-              In = s.map.project([_n[1], _n[0]]),
+              yn = c(ye).pixelsToLatLon(Ar + .5, en + .5, s.pixelArtZoom),
+              In = s.map.project([yn[1], yn[0]]),
               Ft = Math.max(1, Math.abs(In.x - ft.x)),
               Wr = Math.max(1, Math.abs(In.y - ft.y));
             re.fillRect(Math.floor(ft.x), Math.floor(ft.y), Math.ceil(Ft), Math.ceil(Wr)), c(W) !== null && ((Re = c(M)[c(W)]) == null ? void 0 : Re.userId) === et.userId && (re.strokeStyle = "rgba(255, 255, 0, 0.8)", re.lineWidth = 2, re.strokeRect(Math.floor(ft.x) - 1, Math.floor(ft.y) - 1, Math.ceil(Ft) + 2, Math.ceil(Wr) + 2))
@@ -62388,7 +62388,7 @@ function EN(v, s) {
               userIds: et.map(ot => ot.userId)
             }]
           };
-        if (!(await bn.postWaybackReconstruct(s.season, Ie)).ok) throw new Error(`Failed to reconstruct tile ${ie}`);
+        if (!(await _n.postWaybackReconstruct(s.season, Ie)).ok) throw new Error(`Failed to reconstruct tile ${ie}`);
         X += et.length
       }
       s.refreshPixelArt(), Yt.success(`Reconstructed ${X} pixels from ${c(ue).length} events`)
@@ -62720,11 +62720,11 @@ function TV(v, s) {
         const {
           lat: Jn,
           lng: Hr
-        } = c(re).unproject([jt.clientX, jt.clientY]), wr = o.latLonToPixels(Jn, Hr, A), rn = Math.floor(wr[0]), yn = Math.floor(wr[1]);
-        if (mt[0] !== rn || mt[1] !== yn) {
+        } = c(re).unproject([jt.clientX, jt.clientY]), wr = o.latLonToPixels(Jn, Hr, A), rn = Math.floor(wr[0]), xn = Math.floor(wr[1]);
+        if (mt[0] !== rn || mt[1] !== xn) {
           const Pt = o.latLonToPixelBoundsLatLon(Jn, Hr, A),
             gr = g_(Pt, !0);
-          (En = c(re).getSource(Ye)) == null || En.setCoordinates(gr), mt = [rn, yn]
+          (En = c(re).getSource(Ye)) == null || En.setCoordinates(gr), mt = [rn, xn]
         }
       }
     }
@@ -62766,7 +62766,7 @@ function TV(v, s) {
           maxPitch: 0,
           attributionControl: !1
         });
-        rn.touchZoomRotate.disableRotation(), rn.on("styledata", yn => {
+        rn.touchZoomRotate.disableRotation(), rn.on("styledata", xn => {
           vt || (Es.theme === "custom-winter" && (rn.setLayoutProperty("poi_transit", "visibility", "none"), rn.setLayoutProperty("poi_r20", "visibility", "none"), rn.setLayoutProperty("poi_r7", "visibility", "none"), rn.setLayoutProperty("poi_r1", "visibility", "none"), rn.setLayoutProperty("building", "visibility", "none"), rn.setLayoutProperty("building-3d", "visibility", "none"), rn.setLayoutProperty("landuse_pitch", "visibility", "none"), rn.setLayoutProperty("landuse_hospital", "visibility", "none"), rn.setLayoutProperty("landuse_school", "visibility", "none"), rn.setLayoutProperty("landuse_residential", "visibility", "none"), rn.setLayoutProperty("waterway_tunnel", "visibility", "none"), rn.setFilter("water", ["all", ["!=", "brunnel", "tunnel"],
             ["!=", "class", "swimming_pool"]
           ])), Es.theme === "dark" && (rn.moveLayer("water", "waterway"), rn.moveLayer("boundary_country_z0-4", "water"), rn.moveLayer("boundary_country_z5-", "water"), rn.moveLayer("boundary_state", "water")), Le(rn), Zt(), vt = !0)
@@ -62804,8 +62804,8 @@ function TV(v, s) {
     }), dt.on("click", async wr => {
       var kr;
       const rn = wr.lngLat.lat,
-        yn = wr.lngLat.lng,
-        Pt = [rn, yn];
+        xn = wr.lngLat.lng,
+        Pt = [rn, xn];
       if (c(Ue) || c(ue).name === "paintingPixel" || c(ue).name === "selectArea") return;
       if (c(ue).name === "selectHq") {
         c(ue).hq = Pt, (kr = c(fr)) == null || kr.clearAndPlace(Pt);
@@ -62818,7 +62818,7 @@ function TV(v, s) {
       }
       Rl({
         lat: rn,
-        lng: yn
+        lng: xn
       }, gr), O(ue, {
         name: "pixelSelected",
         latLon: Pt
@@ -63043,21 +63043,21 @@ function TV(v, s) {
     return document.addEventListener("visibilitychange", dt), () => document.removeEventListener("visibilitychange", dt)
   }), Aa(() => {
     function mt() {
-      bn.online = !0
+      _n.online = !0
     }
     window.addEventListener("online", mt);
 
     function dt() {
-      bn.online = !1
+      _n.online = !1
     }
     return window.addEventListener("offline", dt), () => {
       window.removeEventListener("online", mt), window.removeEventListener("offline", dt)
     }
   }), mn(() => {
-    if (!bn.online) {
+    if (!_n.online) {
       const mt = setInterval(() => {
-        bn.health().then(() => {
-          bn.online = !0, !At.data && !At.loading && At.refresh()
+        _n.health().then(() => {
+          _n.online = !0, !At.data && !At.loading && At.refresh()
         })
       }, 5e3);
       return () => {
@@ -63399,7 +63399,7 @@ function TV(v, s) {
     }
     var Ar = k(br, 2),
       en = T(Ar),
-      _n = k(en, 2);
+      yn = k(en, 2);
     b(Ar);
     var In = k(Ar, 2);
     {
@@ -63468,7 +63468,7 @@ function TV(v, s) {
         })), ms(2, gr, () => go), q(Pt, gr)
       };
       Ve(hi, Pt => {
-        bn.online || Pt(vi)
+        _n.online || Pt(vi)
       })
     }
     var Ei = k(hi, 2);
@@ -63541,7 +63541,7 @@ function TV(v, s) {
     }
     b(di);
     var Ur = k(di, 2);
-    let yn;
+    let xn;
     var un = T(Ur);
     dt(un), b(Ur);
     var nn = k(Ur, 2);
@@ -63786,11 +63786,11 @@ function TV(v, s) {
                 if (c(ue).name === "selectHq") {
                   const kn = c(ue).hq;
                   if (kn) try {
-                    O(Sr, !0), await bn.updateAllianceHeadquarters(kn[0], kn[1]), (Fr = c(fr)) == null || Fr.clear(), O(Re, !0), O(ue, {
+                    O(Sr, !0), await _n.updateAllianceHeadquarters(kn[0], kn[1]), (Fr = c(fr)) == null || Fr.clear(), O(Re, !0), O(ue, {
                       name: "mainMenu"
                     }, !0)
-                  } catch (xn) {
-                    Yt.error(xn.message)
+                  } catch (bn) {
+                    Yt.error(bn.message)
                   } finally {
                     O(Sr, !1)
                   }
@@ -63846,19 +63846,19 @@ function TV(v, s) {
         "items-center": At.data
       }), Jn = jr(vr, 1, "absolute top-2 left-2 z-30 flex flex-col gap-3", null, Jn, {
         hidden: c(je)
-      }), Ht(en, "title", Pt), Ht(_n, "title", gr), Hr = jr(tn, 1, "absolute top-2 left-1/2 z-30 flex -translate-x-1/2 flex-col items-center justify-center gap-2", null, Hr, {
+      }), Ht(en, "title", Pt), Ht(yn, "title", gr), Hr = jr(tn, 1, "absolute top-2 left-1/2 z-30 flex -translate-x-1/2 flex-col items-center justify-center gap-2", null, Hr, {
         hidden: c(je)
       }), wr = jr(Bi, 1, "absolute bottom-3 left-3 z-30", null, wr, {
         hidden: c(je)
       }), rn = jr(di, 1, "absolute bottom-3 left-1/2 z-30 -translate-x-1/2", null, rn, {
         hidden: c(je)
-      }), yn = jr(Ur, 1, "absolute right-3 bottom-3 z-30", null, yn, {
+      }), xn = jr(Ur, 1, "absolute right-3 bottom-3 z-30", null, xn, {
         hidden: c(je)
       })
     }, [() => uC(), () => hC()]), gt("click", en, () => {
       var Pt;
       (Pt = c(re)) == null || Pt.zoomIn()
-    }), gt("click", _n, () => {
+    }), gt("click", yn, () => {
       var Pt;
       (Pt = c(re)) == null || Pt.zoomOut()
     })

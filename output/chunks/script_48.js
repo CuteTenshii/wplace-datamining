@@ -2,7 +2,7 @@
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "017c00da74943be59fb953c55a7af7db0cfe4436"
+      id: "5075ea86ba38314c7942ca2e67d3e2ff3d377749"
     };
     var r = new t.Error().stack;
     r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "3165cf74-2c30-440d-8753-7217d3d69437", t._sentryDebugIdIdentifier = "sentry-dbid-3165cf74-2c30-440d-8753-7217d3d69437")
@@ -24,24 +24,24 @@ function T(t, {
     easing: v = C
   } = h, d = getComputedStyle(t), y = d.transform === "none" ? "" : d.transform, [s, f] = d.transformOrigin.split(" ").map(parseFloat);
   s /= t.clientWidth, f /= t.clientHeight;
-  var l = D(t),
-    g = t.clientWidth / e.width / l,
-    p = t.clientHeight / e.height / l,
+  var c = D(t),
+    g = t.clientWidth / e.width / c,
+    p = t.clientHeight / e.height / c,
     b = r.left + r.width * s,
     w = r.top + r.height * f,
     x = e.left + e.width * s,
     m = e.top + e.height * f,
     o = (b - x) * g,
-    c = (w - m) * p,
+    l = (w - m) * p,
     S = r.width / e.width,
     E = r.height / e.height;
   return {
     delay: u,
-    duration: typeof i == "function" ? i(Math.sqrt(o * o + c * c)) : i,
+    duration: typeof i == "function" ? i(Math.sqrt(o * o + l * l)) : i,
     easing: v,
     css: (a, n) => {
       var _ = n * o,
-        I = n * c,
+        I = n * l,
         $ = a + n * S,
         z = a + n * E;
       return `transform: ${y} translate(${_}px, ${I}px) scale(${$}, ${z});`

@@ -1,4 +1,4 @@
-import "./C6F2EJBU.js";
+import "./CnGLP4Ih.js";
 import {
   a as n,
   J as S,
@@ -15,71 +15,71 @@ import {
   x as J,
   t as w,
   D as ht,
-  C as be,
+  C as me,
   i as f,
   h as L,
   e as xt,
   u as yt,
   B as qt
-} from "./Cvq33p-I.js";
+} from "./CCHDI9er.js";
 import {
   d as B,
-  f as me,
+  f as be,
   s as vt,
   r as zt,
   g as Dt,
   a as te,
   e as ge
-} from "./BwDROv2K.js";
+} from "./CDjtL1RV.js";
 import {
   r as A,
   p as ee
-} from "./D5saCjJm.js";
+} from "./D9Kwocaz.js";
 import {
   s as x
-} from "./CQJ1gLMQ.js";
+} from "./B_uZjy7q.js";
 import {
   i as P
-} from "./DaJK_foC.js";
+} from "./y740Qaql.js";
 import {
   b as _e
-} from "./C1RwUXlh.js";
+} from "./C13ifpNr.js";
 import {
   g as Ft
-} from "./DZKfqSC0.js";
+} from "./CfhLPnT0.js";
 import {
   g as he,
   P as Ot
-} from "./CWQIz53j.js";
+} from "./Dtv2OTZc.js";
 import {
   u as it,
   t as dt,
   a as jt,
   S as xe
-} from "./Dcu7PFJ7.js";
+} from "./DbEOHiZl.js";
 import {
   r as Nt
-} from "./Dh5LZ2oa.js";
-import "./Cl6aE3Q9.js";
+} from "./DyagZutD.js";
+import "./CcrZu3Ih.js";
 import {
   c as we
-} from "./D8IUJIWe.js";
+} from "./YelAaEUp.js";
 import {
   y as Qt,
   r as Jt,
   b as Kt
-} from "./BgpXiidC.js";
+} from "./pZl96L2h.js";
 import {
   a as ye
-} from "./PGZJ0AM_.js";
+} from "./CuCkj4C_.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "017c00da74943be59fb953c55a7af7db0cfe4436"
+      id: "5075ea86ba38314c7942ca2e67d3e2ff3d377749"
     };
     var s = new r.Error().stack;
-    s && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[s] = "d8a184a6-2c40-49d0-b8b5-8e5730d8f8b1", r._sentryDebugIdIdentifier = "sentry-dbid-d8a184a6-2c40-49d0-b8b5-8e5730d8f8b1")
+    s && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[s] = "6f9d2e77-e00e-4a87-ad1b-cf802fdb8f0d", r._sentryDebugIdIdentifier = "sentry-dbid-6f9d2e77-e00e-4a87-ad1b-cf802fdb8f0d")
   } catch {}
 })();
 var ke = S('<svg><path d="M440-320v-326L336-542l-56-58 200-200 200 200-56 58-104-104v326h-80ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
@@ -153,7 +153,7 @@ function De(r, s) {
   var k = Vt(),
     h = kt(k);
   {
-    var m = v => {
+    var b = v => {
         var c = qe(),
           u = t(c);
         l(u), e(c), wt("click", c, () => {
@@ -166,7 +166,7 @@ function De(r, s) {
         l(u), e(c), n(v, c)
       };
     P(h, v => {
-      a() ? v(m) : v(i, !1)
+      a() ? v(b) : v(i, !1)
     })
   }
   n(r, k), $t()
@@ -201,13 +201,13 @@ function Wt(r, s) {
     ...l
   })), n(r, a)
 }
-var Be = y('<div><div tabindex="0" class="btn btn-lg btn-primary h-10"> </div> <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-1 border-base-content/20 m-1 w-max rounded-xl border p-2 shadow"><li><form method="POST"><input type="hidden" name="lookup_key"/> <button class="flex items-center gap-1.5"><!> <span>Cartão ou Boleto</span></button></form></li> <li><button class="flex items-center gap-1.5"><!> <span>Pix</span></button></li></ul></div>'),
+var Be = y('<div><div tabindex="0" class="btn btn-lg btn-primary h-10"> </div> <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box border-base-content/20 z-1 m-1 w-max rounded-xl border p-2 shadow"><li><form method="POST"><input type="hidden" name="lookup_key"/> <button class="flex items-center gap-1.5"><!> <span>Cartão ou Boleto</span></button></form></li> <li><button class="flex items-center gap-1.5"><!> <span>Pix</span></button></li></ul></div>'),
   Se = y('<form method="POST"><input type="hidden" name="lookup_key"/> <button class="btn btn-lg btn-primary mt-3 h-10" type="submit"><!></button></form>'),
   Ee = y('<div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-4"><p class="text-primary text-3xl font-bold"><!> <span> <span class="text-lg font-normal">Droplets</span></span></p> <p class="text-base-content/80 mt-0.5 text-center text-xs"><!> <span class="text-primary/80 font-medium"> </span></p> <!></div>'),
-  Ue = y('<div class="flex flex-col gap-4"><section><div class="flex items-center gap-1"><!> <h3 class="text-xl font-bold">Droplets</h3> <div class="ml-auto mr-4"><!></div></div> <p class="text-base-content/80 mt-1 text-sm"> </p></section> <section><div class="grid gap-3 sm:grid-cols-2"><!> <!> <!> <!> <!> <!></div> <p class="text-base-content/60 mt-4 text-center text-sm"> <a class="font-medium" target="_blank"> </a></p></section></div>'),
-  Re = y('<p class="text-base-content/80">Efetue o pagamento do PIX no valor de <span class="font-semibold"> </span></p> <section><div class="relative"><img class="pixelated w-70 aspect-square" alt="QR code PIX"/> <div class="center-absolute border-6 absolute size-[95%] border-black"></div></div></section> <section class="w-full"><span class="text-base-content/80 ml-4 text-sm font-semibold">Código</span> <div class="border-base-content/20 rounded-field flex w-full items-center gap-1 border-2 py-1.5 pl-4 pr-2.5"><input class="text-base-content/80 w-full min-w-10 grow text-sm font-medium" readonly=""/> <div class="h-10"><button class="btn btn-primary">Copiar</button></div></div></section> <section class="mt-2"><button class="btn btn-primary btn-lg">Fiz o pagamento</button></section>', 1),
+  Ue = y('<div class="flex flex-col gap-4"><section><div class="flex items-center gap-1"><!> <h3 class="text-xl font-bold">Droplets</h3> <div class="mr-4 ml-auto"><!></div></div> <p class="text-base-content/80 mt-1 text-sm"> </p></section> <section><div class="grid gap-3 sm:grid-cols-2"><!> <!> <!> <!> <!> <!></div> <p class="text-base-content/60 mt-4 text-center text-sm"> <a class="font-medium" target="_blank"> </a></p></section></div>'),
+  Re = y('<p class="text-base-content/80">Efetue o pagamento do PIX no valor de <span class="font-semibold"> </span></p> <section><div class="relative"><img class="pixelated aspect-square w-70" alt="QR code PIX"/> <div class="center-absolute absolute size-[95%] border-6 border-black"></div></div></section> <section class="w-full"><span class="text-base-content/80 ml-4 text-sm font-semibold">Código</span> <div class="border-base-content/20 rounded-field flex w-full items-center gap-1 border-2 py-1.5 pr-2.5 pl-4"><input class="text-base-content/80 w-full min-w-10 grow text-sm font-medium" readonly=""/> <div class="h-10"><button class="btn btn-primary">Copiar</button></div></div></section> <section class="mt-2"><button class="btn btn-primary btn-lg">Fiz o pagamento</button></section>', 1),
   Ae = y('<div class="flex h-96 items-center justify-center"><span class="loading loading-spinner loading-xl"></span></div>'),
-  Xe = y('<dialog class="modal bg-black/90!" closedby="any"><div class="modal-box max-h-11/12 w-11/12 max-w-2xl pb-4"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <!></div> <form method="dialog" class="modal-backdrop"><button> </button></form></dialog> <dialog class="modal !bg-black/90"><div class="modal-box max-h-11/12 w-11/12 max-w-lg"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button></form> <div class="flex h-full flex-col items-center gap-4"><section><div class="flex items-center gap-2"><!> <h3 class="text-4xl font-bold">PIX</h3></div></section> <!></div></div></dialog>', 1);
+  Xe = y('<dialog class="modal bg-black/90!" closedby="any"><div class="modal-box max-h-11/12 w-11/12 max-w-2xl pb-4"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute top-2 right-2">✕</button></form> <!></div> <form method="dialog" class="modal-backdrop"><button> </button></form></dialog> <dialog class="modal !bg-black/90"><div class="modal-box max-h-11/12 w-11/12 max-w-lg"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute top-2 right-2">✕</button></form> <div class="flex h-full flex-col items-center gap-4"><section><div class="flex items-center gap-2"><!> <h3 class="text-4xl font-bold">PIX</h3></div></section> <!></div></div></dialog>', 1);
 
 function da(r, s) {
   Gt(s, !0);
@@ -221,7 +221,7 @@ function da(r, s) {
       var d, _;
       return ((_ = (d = it.data) == null ? void 0 : d.country) == null ? void 0 : _.toUpperCase()) === "MX"
     });
-  let m = xt(null),
+  let b = xt(null),
     i = xt(void 0),
     v = xt(!1);
   var c = Xe(),
@@ -277,8 +277,8 @@ function da(r, s) {
             Rt = t(Tt);
           {
             var de = I => {
-              var b = qt();
-              w(z => x(b, `${z??""} Droplets`), [() => at().toLocaleString(navigator.language)]), n(I, b)
+              var m = qt();
+              w(z => x(m, `${z??""} Droplets`), [() => at().toLocaleString(navigator.language)]), n(I, m)
             };
             P(Rt, I => {
               st() && I(de)
@@ -290,8 +290,8 @@ function da(r, s) {
           var ce = o(Tt, 2);
           {
             var pe = I => {
-                var b = Be(),
-                  z = t(b),
+                var m = Be(),
+                  z = t(m),
                   ot = t(z);
                 e(z);
                 var gt = o(z, 2),
@@ -309,23 +309,23 @@ function da(r, s) {
                   fe = t(_t);
                 Wt(fe, {
                   class: "size-5"
-                }), J(2), e(_t), e(Xt), e(gt), e(b), w(nt => {
-                  te(b, 1, `dropdown mt-3 ${ne()??""}`), x(ot, `R$${nt??""}`), vt(Q, "action", `${Ot}/payment/create-checkout-session`), Dt(q, St()), D.disabled = f(a), _t.disabled = f(a)
+                }), J(2), e(_t), e(Xt), e(gt), e(m), w(nt => {
+                  te(m, 1, `dropdown mt-3 ${ne()??""}`), x(ot, `R$${nt??""}`), vt(Q, "action", `${Ot}/payment/create-checkout-session`), Dt(q, St()), D.disabled = f(a), _t.disabled = f(a)
                 }, [() => (It() * 4).toFixed(2).replace(".", ",")]), ht("submit", Q, () => {
                   L(a, !0), setTimeout(() => L(a, !1), 3e3)
                 }), wt("click", _t, () => {
-                  f(m).show(), L(a, !0), jt.generatePixQrCode(le()).then(nt => {
+                  f(b).show(), L(a, !0), jt.generatePixQrCode(le()).then(nt => {
                     L(i, nt, !0)
                   }).catch(nt => {
                     dt.error(nt.message)
                   }).finally(() => {
                     L(a, !1)
                   })
-                }), n(I, b)
+                }), n(I, m)
               },
               ue = I => {
-                var b = Se(),
-                  z = t(b);
+                var m = Se(),
+                  z = t(m);
                 zt(z);
                 var ot = o(z, 2),
                   gt = t(ot);
@@ -342,18 +342,18 @@ function da(r, s) {
                     f(h) ? q(rt) : q(Q, !1)
                   })
                 }
-                e(ot), e(b), w(() => {
-                  vt(b, "action", `${Ot}/payment/create-checkout-session`), Dt(z, St()), ot.disabled = f(a)
-                }), ht("submit", b, () => {
+                e(ot), e(m), w(() => {
+                  vt(m, "action", `${Ot}/payment/create-checkout-session`), Dt(z, St()), ot.disabled = f(a)
+                }), ht("submit", m, () => {
                   L(a, !0), setTimeout(() => L(a, !1), 3e3)
-                }), n(I, b)
+                }), n(I, m)
               };
             P(ce, I => {
               f(k) ? I(pe) : I(ue, !1)
             })
           }
-          e(Lt), w((I, b) => {
-            x(ie, `${I??""} `), x(ve, `+${b??""} bonus`)
+          e(Lt), w((I, m) => {
+            x(ie, `${I??""} `), x(ve, `+${m??""} bonus`)
           }, [() => (at() + st()).toLocaleString(navigator.language), () => st().toLocaleString(navigator.language)]), n(N, Lt)
         };
         var R = t(Y),
@@ -402,8 +402,8 @@ function da(r, s) {
           productId: 50,
           dropdownClass: "dropdown-center"
         }));
-        var bt = o(M, 2);
-        T(bt, () => ({
+        var mt = o(M, 2);
+        T(mt, () => ({
           price: 100,
           droplets: 5e5,
           bonus: 125e3,
@@ -414,9 +414,9 @@ function da(r, s) {
         var tt = o(R, 2),
           j = t(tt),
           et = o(j),
-          mt = t(et, !0);
+          bt = t(et, !0);
         e(et), e(tt), e(Y), w((N, p, at, st) => {
-          x(j, `${p??""} `), vt(et, "href", at), x(mt, st)
+          x(j, `${p??""} `), vt(et, "href", at), x(bt, st)
         }, [() => Qt(), () => Jt(), Nt, () => Kt()])
       }
       e(_), w((T, N, p, at) => x(W, T), [() => Qt(), () => Jt(), Nt, () => Kt()]), n(d, _)
@@ -429,8 +429,8 @@ function da(r, s) {
   var E = o(g, 2),
     H = t(E),
     K = t(H, !0);
-  e(H), e(E), e(u), me(u, () => d => {
-    be(() => {
+  e(H), e(E), e(u), be(u, () => d => {
+    me(() => {
       l() ? d.show() : d.close()
     })
   });
@@ -470,7 +470,7 @@ function da(r, s) {
           var M;
           navigator.clipboard.writeText(((M = f(i)) == null ? void 0 : M.pixCode) ?? ""), dt.success("Código PIX copiado")
         }), wt("click", $, async () => {
-          var M, bt, tt;
+          var M, mt, tt;
           if (!f(i)) {
             dt.info("Espere 1 minuto e recarrege a pagina");
             return
@@ -482,8 +482,8 @@ function da(r, s) {
             } = await jt.getPixStatus(f(i).pixId);
             if (j) {
               const et = f(i).productId.toString(),
-                mt = (tt = (bt = (M = xe.products[et]) == null ? void 0 : M.items) == null ? void 0 : bt[0]) == null ? void 0 : tt.amount;
-              await it.refresh(), mt ? Ft(`payment/success?droplets=${mt}`) : Ft("payment/success")
+                bt = (tt = (mt = (M = xe.products[et]) == null ? void 0 : M.items) == null ? void 0 : mt[0]) == null ? void 0 : tt.amount;
+              await it.refresh(), bt ? Ft(`payment/success?droplets=${bt}`) : Ft("payment/success")
             } else dt.info("Pagamento ainda não recebido. Desculpe a demora, tente novamente em instantes.", {
               duration: 1e5
             })
@@ -502,7 +502,7 @@ function da(r, s) {
       f(i) ? d(oe) : d(re, !1)
     })
   }
-  e(Ht), e(Zt), e(X), _e(X, d => L(m, d), () => f(m)), w(d => x(K, d), [() => we()]), ht("close", u, () => {
+  e(Ht), e(Zt), e(X), _e(X, d => L(b, d), () => f(b)), w(d => x(K, d), [() => we()]), ht("close", u, () => {
     l(!1)
   }), ht("close", X, () => {
     setTimeout(() => {
@@ -528,7 +528,7 @@ function va(r, s) {
           ...l
         })), n(i, v)
       },
-      m = i => {
+      b = i => {
         var v = Oe();
         B(v, () => ({
           xmlns: "http://www.w3.org/2000/svg",
@@ -538,7 +538,7 @@ function va(r, s) {
         })), n(i, v)
       };
     P(k, i => {
-      s.filled ? i(h) : i(m, !1)
+      s.filled ? i(h) : i(b, !1)
     })
   }
   n(r, a)
@@ -548,15 +548,15 @@ function ca([r, s], [l, a]) {
   r = Math.floor(r), s = Math.floor(s), l = Math.floor(l), a = Math.floor(a);
   const k = [],
     h = Math.abs(l - r),
-    m = Math.abs(a - s),
+    b = Math.abs(a - s),
     i = r < l ? 1 : -1,
     v = s < a ? 1 : -1;
-  let c = h - m,
+  let c = h - b,
     u = r,
     g = s;
   for (; k.push([u, g]), !(u === l && g === a);) {
     const Z = 2 * c;
-    Z > -m && (c -= m, u += i), Z < h && (c += h, g += v)
+    Z > -b && (c -= b, u += i), Z < h && (c += h, g += v)
   }
   return k
 }
@@ -568,8 +568,8 @@ function pa(r, s) {
   var a = Ne(),
     k = o(t(a), 2),
     h = o(k, 2),
-    m = t(h),
-    i = t(m);
+    b = t(h),
+    i = t(b);
   {
     var v = C => {
         ye(C, {
@@ -586,7 +586,7 @@ function pa(r, s) {
       s.pictureUrl ? C(c, !1) : C(v)
     })
   }
-  e(m), e(h);
+  e(b), e(h);
   var u = o(h, 2);
   let g;
   var Z = t(u, !0);

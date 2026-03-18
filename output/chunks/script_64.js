@@ -1,14 +1,14 @@
 import {
   g as d
-} from "./Cl6aE3Q9.js";
+} from "./CcrZu3Ih.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "017c00da74943be59fb953c55a7af7db0cfe4436"
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    t.SENTRY_RELEASE = {
+      id: "5075ea86ba38314c7942ca2e67d3e2ff3d377749"
     };
-    var r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "bf585c41-8158-4483-ac0f-660c137c9fc1", e._sentryDebugIdIdentifier = "sentry-dbid-bf585c41-8158-4483-ac0f-660c137c9fc1")
+    var r = new t.Error().stack;
+    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "bf585c41-8158-4483-ac0f-660c137c9fc1", t._sentryDebugIdIdentifier = "sentry-dbid-bf585c41-8158-4483-ac0f-660c137c9fc1")
   } catch {}
 })();
 const n = () => "Reddit",
@@ -21,11 +21,11 @@ const n = () => "Reddit",
   a = () => "Reddit",
   l = () => "Reddit",
   _ = () => "Reddit",
-  b = () => "Reddit",
   R = () => "Reddit",
-  g = (e = {}, r = {}) => {
-    const t = r.locale ?? d();
-    return t === "en" ? n() : t === "pt" ? i() : t === "ch" ? u() : t === "de" ? c() : t === "es" ? f() : t === "fr" ? o() : t === "it" ? s() : t === "jp" ? a() : t === "pl" ? l() : t === "ru" ? _() : t === "uk" ? b() : R()
+  p = () => "Reddit",
+  g = (t = {}, r = {}) => {
+    const e = r.locale ?? d();
+    return e === "en" ? n() : e === "pt" ? i() : e === "ch" ? u() : e === "de" ? c() : e === "es" ? f() : e === "fr" ? o() : e === "it" ? s() : e === "jp" ? a() : e === "pl" ? l() : e === "ru" ? _() : e === "uk" ? R() : p()
   };
 export {
   g as r

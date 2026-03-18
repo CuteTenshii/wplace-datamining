@@ -1,30 +1,30 @@
-import "./C6F2EJBU.js";
-import "./BVxW-5JH.js";
+import "./CnGLP4Ih.js";
+import "./D_GVCOzg.js";
 import {
-  p as n,
+  p as f,
   a as c,
   b as p,
   c as l,
   r as b,
   i as r,
   K as m
-} from "./Cvq33p-I.js";
+} from "./CCHDI9er.js";
 import {
   e as u
-} from "./CSaMn-qQ.js";
+} from "./qjlVzwAf.js";
 import {
   i as g
-} from "./DAlIvMSu.js";
+} from "./zCfBhihK.js";
 import {
   p as h,
   V as v,
   P as y
-} from "./CLtsDuc1.js";
+} from "./NcwOQjkV.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "017c00da74943be59fb953c55a7af7db0cfe4436"
+      id: "5075ea86ba38314c7942ca2e67d3e2ff3d377749"
     };
     var a = new e.Error().stack;
     a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "d7cf74b9-ecdb-4a29-b58d-3b8e4de02c2d", e._sentryDebugIdIdentifier = "sentry-dbid-d7cf74b9-ecdb-4a29-b58d-3b8e4de02c2d")
@@ -33,7 +33,7 @@ import {
 var _ = l('<div class="flex flex-col gap-6"></div>');
 
 function x(e, a) {
-  n(a, !1);
+  f(a, !1);
   const o = [...h].reverse().map(t => ({
     version: t.version,
     title: t.title,
@@ -43,13 +43,13 @@ function x(e, a) {
   var s = _();
   u(s, 7, () => o, t => t.version, (t, d, i) => {
     {
-      let f = m(() => r(i) === 0);
+      let n = m(() => r(i) === 0);
       y(t, {
         get patchNote() {
           return r(d)
         },
         get latest() {
-          return r(f)
+          return r(n)
         }
       })
     }
