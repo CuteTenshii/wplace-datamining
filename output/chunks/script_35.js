@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./B1qPfvhw.js";
+} from "./BqmyO7Vr.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "8982ef6b1b489154c6458cf227ee17f00e1038fe"
+      id: "405d9b08e89656e997bc9e3c862de93d5b969d8c"
     };
     var r = new t.Error().stack;
     r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "67f79cc8-22ab-47de-af8c-13ae3a039fcf", t._sentryDebugIdIdentifier = "sentry-dbid-67f79cc8-22ab-47de-af8c-13ae3a039fcf")
@@ -17,15 +17,15 @@ const o = () => "Add profile picture",
   _ = () => "Profilbild hinzufügen",
   s = () => "Añadir imagen de perfil",
   p = () => "Ajouter une image de profil",
-  l = () => "Aggiungi immagine del profilo",
-  c = () => "プロフィール画像を追加",
+  c = () => "Aggiungi immagine del profilo",
+  l = () => "プロフィール画像を追加",
   d = () => "Dodaj zdjęcie profilowe",
   f = () => "Добавить изображение профиля",
   a = () => "Додати зображення профілю",
   g = () => "Thêm ảnh đại diện",
   ve = (t = {}, r = {}) => {
     const e = r.locale ?? n();
-    return e === "en" ? o() : e === "pt" ? u() : e === "ch" ? i() : e === "de" ? _() : e === "es" ? s() : e === "fr" ? p() : e === "it" ? l() : e === "jp" ? c() : e === "pl" ? d() : e === "ru" ? f() : e === "uk" ? a() : g()
+    return e === "en" ? o() : e === "pt" ? u() : e === "ch" ? i() : e === "de" ? _() : e === "es" ? s() : e === "fr" ? p() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? d() : e === "ru" ? f() : e === "uk" ? a() : g()
   },
   h = () => "Eraser",
   y = () => "Borracha",
@@ -91,8 +91,8 @@ const o = () => "Add profile picture",
     const e = r.locale ?? n();
     return e === "en" ? X() : e === "pt" ? $() : e === "ch" ? ee() : e === "de" ? re() : e === "es" ? te() : e === "fr" ? ne() : e === "it" ? oe() : e === "jp" ? ue() : e === "pl" ? ie() : e === "ru" ? _e() : e === "uk" ? se() : pe()
   },
-  le = () => "You gain 1 droplet per pixel painted and 500 Droplets per level",
-  ce = () => "Você ganha 1 droplet por pixel pintado e 500 droplets por level",
+  ce = () => "You gain 1 droplet per pixel painted and 500 Droplets per level",
+  le = () => "Você ganha 1 droplet por pixel pintado e 500 droplets por level",
   de = () => "你每绘制 1 个像素可获得 1 个水滴，每升 1 级可获得 500 个水滴",
   fe = () => "Du erhältst 1 Droplet pro gemaltem Pixel und 500 Droplets pro Level",
   ae = () => "Ganas 1 gota por píxel pintado y 500 gotas por nivel",
@@ -105,7 +105,7 @@ const o = () => "Add profile picture",
   xe = () => "Bạn nhận 1 droplet cho mỗi pixel tô và 500 droplets mỗi cấp độ",
   we = (t = {}, r = {}) => {
     const e = r.locale ?? n();
-    return e === "en" ? le() : e === "pt" ? ce() : e === "ch" ? de() : e === "de" ? fe() : e === "es" ? ae() : e === "fr" ? ge() : e === "it" ? he() : e === "jp" ? ye() : e === "pl" ? me() : e === "ru" ? be() : e === "uk" ? ke() : xe()
+    return e === "en" ? ce() : e === "pt" ? le() : e === "ch" ? de() : e === "de" ? fe() : e === "es" ? ae() : e === "fr" ? ge() : e === "it" ? he() : e === "jp" ? ye() : e === "pl" ? me() : e === "ru" ? be() : e === "uk" ? ke() : xe()
   };
 export {
   ve as a, De as b, ze as e, qe as n, Pe as r, we as y

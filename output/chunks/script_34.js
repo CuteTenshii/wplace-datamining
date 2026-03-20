@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./B1qPfvhw.js";
+} from "./BqmyO7Vr.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "8982ef6b1b489154c6458cf227ee17f00e1038fe"
+      id: "405d9b08e89656e997bc9e3c862de93d5b969d8c"
     };
     var n = new r.Error().stack;
     n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "fde52f20-e9b7-4a5a-9d4e-f7e9760c9b21", r._sentryDebugIdIdentifier = "sentry-dbid-fde52f20-e9b7-4a5a-9d4e-f7e9760c9b21")
@@ -15,8 +15,8 @@ const o = () => "Close",
   s = () => "Fechar",
   c = () => "关闭",
   u = () => "Schließen",
-  f = () => "Cerrar",
-  i = () => "Fermer",
+  i = () => "Cerrar",
+  f = () => "Fermer",
   l = () => "Chiudi",
   d = () => "閉じる",
   a = () => "Zamknij",
@@ -25,7 +25,7 @@ const o = () => "Close",
   p = () => "Đóng",
   y = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? o() : e === "pt" ? s() : e === "ch" ? c() : e === "de" ? u() : e === "es" ? f() : e === "fr" ? i() : e === "it" ? l() : e === "jp" ? d() : e === "pl" ? a() : e === "ru" ? _() : e === "uk" ? b() : p()
+    return e === "en" ? o() : e === "pt" ? s() : e === "ch" ? c() : e === "de" ? u() : e === "es" ? i() : e === "fr" ? f() : e === "it" ? l() : e === "jp" ? d() : e === "pl" ? a() : e === "ru" ? _() : e === "uk" ? b() : p()
   };
 export {
   y as c
