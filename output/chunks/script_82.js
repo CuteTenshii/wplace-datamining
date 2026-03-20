@@ -1,31 +1,31 @@
 import {
   g as n
-} from "./BqmyO7Vr.js";
+} from "./D6nvKN2h.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "405d9b08e89656e997bc9e3c862de93d5b969d8c"
+      id: "712356e502b473ac28f78925f6e5ee7bbba0c9dd"
     };
     var t = new e.Error().stack;
     t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "10929b4a-a6c3-45b2-ac09-e2df787ceff3", e._sentryDebugIdIdentifier = "sentry-dbid-10929b4a-a6c3-45b2-ac09-e2df787ceff3")
   } catch {}
 })();
-const s = () => "Refresh",
-  f = () => "Atualizar",
+const f = () => "Refresh",
+  s = () => "Atualizar",
   u = () => "刷新",
   i = () => "Aktualisieren",
   c = () => "Actualizar",
   o = () => "Actualiser",
-  d = () => "Aggiorna",
-  a = () => "更新",
+  a = () => "Aggiorna",
+  d = () => "更新",
   l = () => "Odśwież",
   h = () => "Обновить",
-  _ = () => "Оновити",
-  b = () => "Làm mới",
+  b = () => "Оновити",
+  _ = () => "Làm mới",
   g = (e = {}, t = {}) => {
     const r = t.locale ?? n();
-    return r === "en" ? s() : r === "pt" ? f() : r === "ch" ? u() : r === "de" ? i() : r === "es" ? c() : r === "fr" ? o() : r === "it" ? d() : r === "jp" ? a() : r === "pl" ? l() : r === "ru" ? h() : r === "uk" ? _() : b()
+    return r === "en" ? f() : r === "pt" ? s() : r === "ch" ? u() : r === "de" ? i() : r === "es" ? c() : r === "fr" ? o() : r === "it" ? a() : r === "jp" ? d() : r === "pl" ? l() : r === "ru" ? h() : r === "uk" ? b() : _()
   };
 export {
   g as r

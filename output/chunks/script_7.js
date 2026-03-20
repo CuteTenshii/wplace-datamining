@@ -2,7 +2,7 @@
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "405d9b08e89656e997bc9e3c862de93d5b969d8c"
+      id: "712356e502b473ac28f78925f6e5ee7bbba0c9dd"
     };
     var o = new t.Error().stack;
     o && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[o] = "2873cead-a87c-4550-afcc-7d8128f4def3", t._sentryDebugIdIdentifier = "sentry-dbid-2873cead-a87c-4550-afcc-7d8128f4def3")
@@ -12,7 +12,7 @@ const g = "modulepreload",
   E = function(t, o) {
     return new URL(t, o).href
   },
-  b = {},
+  m = {},
   w = function(o, d, u) {
     let h = Promise.resolve();
     if (d && d.length > 0) {
@@ -27,10 +27,10 @@ const g = "modulepreload",
       };
       const n = document.getElementsByTagName("link"),
         l = document.querySelector("meta[property=csp-nonce]"),
-        m = (l == null ? void 0 : l.nonce) || (l == null ? void 0 : l.getAttribute("nonce"));
+        b = (l == null ? void 0 : l.nonce) || (l == null ? void 0 : l.getAttribute("nonce"));
       h = i(d.map(e => {
-        if (e = E(e, u), e in b) return;
-        b[e] = !0;
+        if (e = E(e, u), e in m) return;
+        m[e] = !0;
         const s = e.endsWith(".css"),
           c = s ? '[rel="stylesheet"]' : "";
         if (!!u)
@@ -39,7 +39,7 @@ const g = "modulepreload",
             if (f.href === e && (!s || f.rel === "stylesheet")) return
           } else if (document.querySelector(`link[href="${e}"]${c}`)) return;
         const r = document.createElement("link");
-        if (r.rel = s ? "stylesheet" : g, s || (r.as = "script"), r.crossOrigin = "", r.href = e, m && r.setAttribute("nonce", m), document.head.appendChild(r), s) return new Promise((a, f) => {
+        if (r.rel = s ? "stylesheet" : g, s || (r.as = "script"), r.crossOrigin = "", r.href = e, b && r.setAttribute("nonce", b), document.head.appendChild(r), s) return new Promise((a, f) => {
           r.addEventListener("load", a), r.addEventListener("error", () => f(new Error(`Unable to preload CSS for ${e}`)))
         })
       }))

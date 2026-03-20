@@ -1,4 +1,4 @@
-import "./B6L2Wv0c.js";
+import "./CvrwJurA.js";
 import {
   p as m,
   t as d,
@@ -8,24 +8,24 @@ import {
   d as v,
   s as _,
   r as w
-} from "./CqOPxJme.js";
+} from "./D5ICCrBp.js";
 import {
   i as h
-} from "./Drv-8na6.js";
+} from "./Bn--y9Za.js";
 import {
   d as x,
   a as c,
   s as E
-} from "./BxG0geMD.js";
+} from "./Clag-b_x.js";
 import {
   p as y,
   r as S
-} from "./DZyy70sN.js";
+} from "./BJC_m3PQ.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "405d9b08e89656e997bc9e3c862de93d5b969d8c"
+      id: "712356e502b473ac28f78925f6e5ee7bbba0c9dd"
     };
     var e = new a.Error().stack;
     e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "cacd889a-2fc2-4da8-b582-ba16071aa927", a._sentryDebugIdIdentifier = "sentry-dbid-cacd889a-2fc2-4da8-b582-ba16071aa927")
@@ -38,15 +38,15 @@ var L = f("<span>wplace</span>"),
 function D(a, e) {
   m(e, !0);
   let t = y(e, "size", 3, "default"),
-    p = S(e, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+    b = S(e, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
   var s = R();
   x(s, () => ({
-    ...p,
+    ...b,
     class: `flex items-center gap-1.5 ${e.class??""}`
   }));
   var l = v(s);
   let o;
-  var b = _(l, 2);
+  var p = _(l, 2);
   {
     var g = A => {
       var r = L();
@@ -56,7 +56,7 @@ function D(a, e) {
         "text-5xl": t() === "lg" || t() === "medium"
       })), n(A, r)
     };
-    h(b, A => {
+    h(p, A => {
       e.hasText && A(g)
     })
   }
