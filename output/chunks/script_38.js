@@ -1,11 +1,11 @@
 import {
   S as g
-} from "./b4QoX2I8.js";
+} from "./l767qpmR.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "712356e502b473ac28f78925f6e5ee7bbba0c9dd"
+      id: "e30448959e42fd3ea2fc5cd1f2671639056880b6"
     };
     var e = new t.Error().stack;
     e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "2c8defd1-230e-42d3-b36b-5377287d8a17", t._sentryDebugIdIdentifier = "sentry-dbid-2c8defd1-230e-42d3-b36b-5377287d8a17")
@@ -55,7 +55,7 @@ function _(t) {
     a: t === 0 ? 0 : 255
   }
 }
-const f = g.colors.map((t, e) => ({
+const b = g.colors.map((t, e) => ({
     ...t,
     idx: e,
     lab: w({
@@ -73,7 +73,7 @@ const f = g.colors.map((t, e) => ({
     }
   })).filter(t => t.idx !== 0),
   E = new Array(g.colors.length);
-for (const t of f) E[t.idx] = t;
+for (const t of b) E[t.idx] = t;
 const A = new Array(g.colors.length);
 for (const t of d) A[t.idx] = t;
 
@@ -85,8 +85,8 @@ function N(t, e = "lab", r) {
       for (let i = 0; i < r.length; i++) {
         const l = A[r[i]];
         if (!l) continue;
-        const b = M(t, l.rgb);
-        b < c && (n = l.idx, c = b)
+        const f = M(t, l.rgb);
+        f < c && (n = l.idx, c = f)
       } else
         for (const i of d) {
           const l = M(t, i.rgb);
@@ -94,7 +94,7 @@ function N(t, e = "lab", r) {
         }
     return n
   }
-  let o = f[0].idx,
+  let o = b[0].idx,
     s = Number.MAX_VALUE;
   const a = w(t);
   if (r && r.length > 0)
@@ -104,7 +104,7 @@ function N(t, e = "lab", r) {
       const i = x(a, c.lab);
       i < s && (o = c.idx, s = i)
     } else
-      for (const n of f) {
+      for (const n of b) {
         const c = x(a, n.lab);
         c < s && (o = n.idx, s = c)
       }
@@ -133,10 +133,10 @@ function x(t, e) {
     i = o * o + s * s - c * c;
   i = i < 0 ? 0 : Math.sqrt(i);
   var l = 1 + .045 * a,
-    b = 1 + .015 * a,
+    f = 1 + .015 * a,
     u = r / 1,
     p = c / l,
-    h = i / b,
+    h = i / f,
     y = u * u + p * p + h * h;
   return y < 0 ? 0 : Math.sqrt(y)
 }

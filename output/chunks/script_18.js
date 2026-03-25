@@ -14,7 +14,7 @@ var m = (r, t, e) => (Me(r, t, "read from private field"), e ? e.call(r) : t.get
   w = (r, t, e) => t.has(r) ? ce("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(r) : t.set(r, e);
 import {
   g as _
-} from "./D6nvKN2h.js";
+} from "./Cq_U3JVf.js";
 import {
   e as R,
   g as ue,
@@ -22,23 +22,23 @@ import {
   h as O,
   G as le,
   u as U
-} from "./D5ICCrBp.js";
+} from "./cgON64Hl.js";
 import {
   P as we,
   g as qe
-} from "./D31J91Sp.js";
+} from "./D-qvmHVo.js";
 import {
   s as Be,
   c as ze
-} from "./DH5mnHHU.js";
+} from "./C4RDc2Nc.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "712356e502b473ac28f78925f6e5ee7bbba0c9dd"
+      id: "e30448959e42fd3ea2fc5cd1f2671639056880b6"
     };
     var t = new r.Error().stack;
-    t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "96cb70a1-606a-40e0-bfac-8129ec23a178", r._sentryDebugIdIdentifier = "sentry-dbid-96cb70a1-606a-40e0-bfac-8129ec23a178")
+    t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "d71ac948-f5f0-44c6-88f5-476d900de560", r._sentryDebugIdIdentifier = "sentry-dbid-d71ac948-f5f0-44c6-88f5-476d900de560")
   } catch {}
 })();
 
@@ -2122,50 +2122,68 @@ class Fd {
     if (e.status !== a.OK) throw new l(i(), e.status);
     return e.json()
   }
-  async getReverseTimestamps(t, e) {
-    const n = await this.request("/staff/tools/select-area/reverse/timestamps", {
+  async getReverseTimestamps(t, e = {}) {
+    const {
+      mode: n = "depth",
+      beforeDepth: s,
+      beforeTimestamp: o
+    } = e, c = await this.request("/staff/tools/select-area/reverse/timestamps", {
       method: "POST",
       body: JSON.stringify({
         sessionId: t,
-        beforeDepth: e
+        mode: n,
+        beforeDepth: s,
+        beforeTimestamp: o
       }),
       headers: {
         "Content-Type": "application/json"
       },
       credentials: "include"
     });
-    if (n.status !== a.OK) throw new l(i(), n.status);
-    return n.json()
+    if (c.status !== a.OK) throw new l(i(), c.status);
+    return c.json()
   }
   async getReversePreview(t, e) {
-    const n = await this.request("/staff/tools/select-area/reverse/preview", {
+    const {
+      mode: n = "depth",
+      snapshotDepth: s,
+      timestamp: o
+    } = e, c = await this.request("/staff/tools/select-area/reverse/preview", {
       method: "POST",
       body: JSON.stringify({
         sessionId: t,
-        snapshotDepth: e
+        mode: n,
+        snapshotDepth: s,
+        timestamp: o
       }),
       headers: {
         "Content-Type": "application/json"
       },
       credentials: "include"
     });
-    if (n.status !== a.OK) throw new l(i(), n.status);
-    return n.json()
+    if (c.status !== a.OK) throw new l(i(), c.status);
+    return c.json()
   }
   async applyReverse(t, e) {
-    const n = await this.request("/staff/tools/select-area/reverse/apply", {
+    const {
+      mode: n = "depth",
+      snapshotDepth: s,
+      timestamp: o
+    } = e, c = await this.request("/staff/tools/select-area/reverse/apply", {
       method: "POST",
       body: JSON.stringify({
         sessionId: t,
-        snapshotDepth: e
+        mode: n,
+        snapshotDepth: s,
+        timestamp: o
       }),
       headers: {
         "Content-Type": "application/json"
       },
       credentials: "include"
     });
-    if (n.status !== a.OK) throw new l(i(), n.status);
-    return n.json()
+    if (c.status !== a.OK) throw new l(i(), c.status);
+    return c.json()
   }
   async sendPaintRequests(t, e, n) {
     const s = Kd(t, d => `t=(${d.tile[0]},${d.tile[1]}),s=${d.season}`),
