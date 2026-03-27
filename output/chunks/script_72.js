@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./CDV-gvd8.js";
+} from "./BjaF463B.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "1bbcc3358655daa550788b301977152f07a3b6b2"
+      id: "ed2835ed53e86562ae86aab3834736b02129c64f"
     };
     var t = new r.Error().stack;
     t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "34b20000-aaf6-474f-a087-a222515fb8cf", r._sentryDebugIdIdentifier = "sentry-dbid-34b20000-aaf6-474f-a087-a222515fb8cf")
@@ -22,11 +22,11 @@ const i = () => "Preview",
   d = () => "Podgląd",
   v = () => "Предпросмотр",
   w = () => "Попередній перегляд",
-  b = () => "Xem trước",
-  _ = (r = {}, t = {}) => {
+  l = () => "Xem trước",
+  b = (r = {}, t = {}) => {
     const e = t.locale ?? n();
-    return e === "en" ? i() : e === "pt" ? u() : e === "ch" ? f() : e === "de" ? o() : e === "es" ? s() : e === "fr" ? p() : e === "it" ? a() : e === "jp" ? c() : e === "pl" ? d() : e === "ru" ? v() : e === "uk" ? w() : b()
+    return e === "en" ? i() : e === "pt" ? u() : e === "ch" ? f() : e === "de" ? o() : e === "es" ? s() : e === "fr" ? p() : e === "it" ? a() : e === "jp" ? c() : e === "pl" ? d() : e === "ru" ? v() : e === "uk" ? w() : l()
   };
 export {
-  _ as p
+  b as p
 };

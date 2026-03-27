@@ -1,48 +1,32 @@
 import {
-  g as n
-} from "./CDV-gvd8.js";
+  g as d
+} from "./BjaF463B.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "1bbcc3358655daa550788b301977152f07a3b6b2"
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    t.SENTRY_RELEASE = {
+      id: "ed2835ed53e86562ae86aab3834736b02129c64f"
     };
-    var r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "e8766c05-867d-4e65-ae94-0e09d1aad9d4", e._sentryDebugIdIdentifier = "sentry-dbid-e8766c05-867d-4e65-ae94-0e09d1aad9d4")
+    var r = new t.Error().stack;
+    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "bf585c41-8158-4483-ac0f-660c137c9fc1", t._sentryDebugIdIdentifier = "sentry-dbid-bf585c41-8158-4483-ac0f-660c137c9fc1")
   } catch {}
 })();
-const s = () => "Patch notes",
-  o = () => "Notas de atualização",
-  u = () => "更新日志",
-  a = () => "Versionshinweise",
-  c = () => "Notas de actualización",
-  i = () => "Notes de mise à jour",
-  l = () => "Note di aggiornamento",
-  _ = () => "リリースノート",
-  f = () => "Informacje o aktualizacji",
-  d = () => "Примечания к обновлению",
-  p = () => "Нотатки про оновлення",
-  h = () => "Ghi chú cập nhật",
-  L = (e = {}, r = {}) => {
-    const t = r.locale ?? n();
-    return t === "en" ? s() : t === "pt" ? o() : t === "ch" ? u() : t === "de" ? a() : t === "es" ? c() : t === "fr" ? i() : t === "it" ? l() : t === "jp" ? _() : t === "pl" ? f() : t === "ru" ? d() : t === "uk" ? p() : h()
-  },
-  b = () => "Latest",
-  g = () => "Mais recente",
-  y = () => "最新",
-  j = () => "Neueste",
-  m = () => "Último",
-  w = () => "Derniers",
-  N = () => "Ultimi",
-  k = () => "最新",
-  I = () => "Najnowsze",
-  D = () => "Последние",
-  E = () => "Останні",
-  v = () => "Mới nhất",
-  T = (e = {}, r = {}) => {
-    const t = r.locale ?? n();
-    return t === "en" ? b() : t === "pt" ? g() : t === "ch" ? y() : t === "de" ? j() : t === "es" ? m() : t === "fr" ? w() : t === "it" ? N() : t === "jp" ? k() : t === "pl" ? I() : t === "ru" ? D() : t === "uk" ? E() : v()
+const n = () => "Reddit",
+  i = () => "Reddit",
+  u = () => "Reddit",
+  c = () => "Reddit",
+  f = () => "Reddit",
+  o = () => "Reddit",
+  s = () => "Reddit",
+  a = () => "Reddit",
+  l = () => "Reddit",
+  _ = () => "Reddit",
+  R = () => "Reddit",
+  b = () => "Reddit",
+  g = (t = {}, r = {}) => {
+    const e = r.locale ?? d();
+    return e === "en" ? n() : e === "pt" ? i() : e === "ch" ? u() : e === "de" ? c() : e === "es" ? f() : e === "fr" ? o() : e === "it" ? s() : e === "jp" ? a() : e === "pl" ? l() : e === "ru" ? _() : e === "uk" ? R() : b()
   };
 export {
-  T as l, L as p
+  g as r
 };
