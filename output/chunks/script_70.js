@@ -1,11 +1,11 @@
 import {
   g as a
-} from "./BTC2qzU8.js";
+} from "./CUn96ABT.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "65a3db4a500394d84da74f59d1f734aa6c59383c"
+      id: "5b6c982e9643479451e4387b2e009c10939a1316"
     };
     var r = new n.Error().stack;
     r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "ffe8b5ce-112e-4e22-9d99-575b1568dd07", n._sentryDebugIdIdentifier = "sentry-dbid-ffe8b5ce-112e-4e22-9d99-575b1568dd07")
@@ -17,15 +17,15 @@ const t = () => "Ban appeal",
   u = () => "Bann-Einspruch",
   s = () => "Apelación de ban",
   i = () => "Recours de bannissement",
-  d = () => "Ricorso contro il ban",
+  b = () => "Ricorso contro il ban",
   c = () => "BANの異議申立て",
   l = () => "Odwołanie od bana",
-  b = () => "Апелляция на бан",
+  d = () => "Апелляция на бан",
   f = () => "Апеляція на бан",
   _ = () => "Kháng cáo lệnh cấm",
   y = (n = {}, r = {}) => {
     const e = r.locale ?? a();
-    return e === "en" ? t() : e === "pt" ? p() : e === "ch" ? o() : e === "de" ? u() : e === "es" ? s() : e === "fr" ? i() : e === "it" ? d() : e === "jp" ? c() : e === "pl" ? l() : e === "ru" ? b() : e === "uk" ? f() : _()
+    return e === "en" ? t() : e === "pt" ? p() : e === "ch" ? o() : e === "de" ? u() : e === "es" ? s() : e === "fr" ? i() : e === "it" ? b() : e === "jp" ? c() : e === "pl" ? l() : e === "ru" ? d() : e === "uk" ? f() : _()
   };
 export {
   y as b

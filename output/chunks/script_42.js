@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./BTC2qzU8.js";
+} from "./CUn96ABT.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "65a3db4a500394d84da74f59d1f734aa6c59383c"
+      id: "5b6c982e9643479451e4387b2e009c10939a1316"
     };
     var r = new t.Error().stack;
     r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "8b661710-f58b-4309-8992-d1f0962ae2da", t._sentryDebugIdIdentifier = "sentry-dbid-8b661710-f58b-4309-8992-d1f0962ae2da")
@@ -20,12 +20,12 @@ const i = () => "Description",
   d = () => "Descrizione",
   l = () => "説明",
   f = () => "Opis",
-  a = () => "Описание",
-  _ = () => "Опис",
+  _ = () => "Описание",
+  a = () => "Опис",
   x = () => "Mô tả",
   T = (t = {}, r = {}) => {
     const e = r.locale ?? n();
-    return e === "en" ? i() : e === "pt" ? s() : e === "ch" ? p() : e === "de" ? o() : e === "es" ? u() : e === "fr" ? c() : e === "it" ? d() : e === "jp" ? l() : e === "pl" ? f() : e === "ru" ? a() : e === "uk" ? _() : x()
+    return e === "en" ? i() : e === "pt" ? s() : e === "ch" ? p() : e === "de" ? o() : e === "es" ? u() : e === "fr" ? c() : e === "it" ? d() : e === "jp" ? l() : e === "pl" ? f() : e === "ru" ? _() : e === "uk" ? a() : x()
   },
   b = () => "Pixels painted",
   g = () => "Pixels pintados",
