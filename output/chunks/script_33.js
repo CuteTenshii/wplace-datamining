@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./DMLR2ssG.js";
+} from "./dO1JPExC.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "c25d240cfeb94229297bfd517188330be66c0dac"
+      id: "5caf19ac7c00bf81392f2f2ae2213734555d83f2"
     };
     var t = new e.Error().stack;
     t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "ec311c48-704d-4d83-9057-a66cf103fa2c", e._sentryDebugIdIdentifier = "sentry-dbid-ec311c48-704d-4d83-9057-a66cf103fa2c")
@@ -16,13 +16,13 @@ function r() {
   return n()
 }
 
-function c() {
+function s() {
   return `/terms/return${r()==="pt"?"/pt":""}`
 }
 
-function s() {
+function a() {
   return `/terms/terms-of-service${r()==="pt"?"/pt":""}`
 }
 export {
-  r as g, c as r, s as t
+  r as g, s as r, a as t
 };
