@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./CUn96ABT.js";
+} from "./56ZBUmtO.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "5b6c982e9643479451e4387b2e009c10939a1316"
+      id: "b137ab40316e1e3f22728d8060cbbff276df86f5"
     };
     var t = new e.Error().stack;
     t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "ec311c48-704d-4d83-9057-a66cf103fa2c", e._sentryDebugIdIdentifier = "sentry-dbid-ec311c48-704d-4d83-9057-a66cf103fa2c")
@@ -20,9 +20,9 @@ function s() {
   return `/terms/return${r()==="pt"?"/pt":""}`
 }
 
-function c() {
+function o() {
   return `/terms/terms-of-service${r()==="pt"?"/pt":""}`
 }
 export {
-  r as g, s as r, c as t
+  r as g, s as r, o as t
 };

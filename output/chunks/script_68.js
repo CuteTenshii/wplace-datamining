@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./CUn96ABT.js";
+} from "./56ZBUmtO.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "5b6c982e9643479451e4387b2e009c10939a1316"
+      id: "b137ab40316e1e3f22728d8060cbbff276df86f5"
     };
     var r = new e.Error().stack;
     r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "e8766c05-867d-4e65-ae94-0e09d1aad9d4", e._sentryDebugIdIdentifier = "sentry-dbid-e8766c05-867d-4e65-ae94-0e09d1aad9d4")
@@ -17,18 +17,18 @@ const s = () => "Patch notes",
   a = () => "Versionshinweise",
   c = () => "Notas de actualización",
   i = () => "Notes de mise à jour",
-  l = () => "Note di aggiornamento",
-  _ = () => "リリースノート",
-  f = () => "Informacje o aktualizacji",
-  p = () => "Примечания к обновлению",
-  d = () => "Нотатки про оновлення",
+  f = () => "Note di aggiornamento",
+  l = () => "リリースノート",
+  _ = () => "Informacje o aktualizacji",
+  d = () => "Примечания к обновлению",
+  p = () => "Нотатки про оновлення",
   h = () => "Ghi chú cập nhật",
   L = (e = {}, r = {}) => {
     const t = r.locale ?? n();
-    return t === "en" ? s() : t === "pt" ? o() : t === "ch" ? u() : t === "de" ? a() : t === "es" ? c() : t === "fr" ? i() : t === "it" ? l() : t === "jp" ? _() : t === "pl" ? f() : t === "ru" ? p() : t === "uk" ? d() : h()
+    return t === "en" ? s() : t === "pt" ? o() : t === "ch" ? u() : t === "de" ? a() : t === "es" ? c() : t === "fr" ? i() : t === "it" ? f() : t === "jp" ? l() : t === "pl" ? _() : t === "ru" ? d() : t === "uk" ? p() : h()
   },
-  g = () => "Latest",
-  b = () => "Mais recente",
+  b = () => "Latest",
+  g = () => "Mais recente",
   y = () => "最新",
   j = () => "Neueste",
   m = () => "Último",
@@ -41,7 +41,7 @@ const s = () => "Patch notes",
   v = () => "Mới nhất",
   T = (e = {}, r = {}) => {
     const t = r.locale ?? n();
-    return t === "en" ? g() : t === "pt" ? b() : t === "ch" ? y() : t === "de" ? j() : t === "es" ? m() : t === "fr" ? w() : t === "it" ? N() : t === "jp" ? k() : t === "pl" ? I() : t === "ru" ? D() : t === "uk" ? E() : v()
+    return t === "en" ? b() : t === "pt" ? g() : t === "ch" ? y() : t === "de" ? j() : t === "es" ? m() : t === "fr" ? w() : t === "it" ? N() : t === "jp" ? k() : t === "pl" ? I() : t === "ru" ? D() : t === "uk" ? E() : v()
   };
 export {
   T as l, L as p

@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./CUn96ABT.js";
+} from "./56ZBUmtO.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "5b6c982e9643479451e4387b2e009c10939a1316"
+      id: "b137ab40316e1e3f22728d8060cbbff276df86f5"
     };
     var n = new r.Error().stack;
     n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "1e93dc64-ec27-4951-9b91-00817e081e2b", r._sentryDebugIdIdentifier = "sentry-dbid-1e93dc64-ec27-4951-9b91-00817e081e2b")
@@ -18,14 +18,14 @@ const d = () => "Leaderboard",
   u = () => "Clasificación",
   i = () => "Classement",
   l = () => "Classifica",
-  c = () => "ランキング",
+  f = () => "ランキング",
   b = () => "Ranking",
-  f = () => "Таблица лидеров",
+  c = () => "Таблица лидеров",
   _ = () => "Таблиця лідерів",
   g = () => "Bảng xếp hạng",
   y = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? d() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? s() : e === "es" ? u() : e === "fr" ? i() : e === "it" ? l() : e === "jp" ? c() : e === "pl" ? b() : e === "ru" ? f() : e === "uk" ? _() : g()
+    return e === "en" ? d() : e === "pt" ? a() : e === "ch" ? o() : e === "de" ? s() : e === "es" ? u() : e === "fr" ? i() : e === "it" ? l() : e === "jp" ? f() : e === "pl" ? b() : e === "ru" ? c() : e === "uk" ? _() : g()
   };
 export {
   y as l

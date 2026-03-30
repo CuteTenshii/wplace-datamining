@@ -1,21 +1,21 @@
 import {
   g as n
-} from "./CUn96ABT.js";
+} from "./56ZBUmtO.js";
 (function() {
   try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
-      id: "5b6c982e9643479451e4387b2e009c10939a1316"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "b137ab40316e1e3f22728d8060cbbff276df86f5"
     };
-    var r = new t.Error().stack;
-    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "e65d2160-87a3-4c4c-9e7a-6fbff79400c2", t._sentryDebugIdIdentifier = "sentry-dbid-e65d2160-87a3-4c4c-9e7a-6fbff79400c2")
+    var r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "e65d2160-87a3-4c4c-9e7a-6fbff79400c2", e._sentryDebugIdIdentifier = "sentry-dbid-e65d2160-87a3-4c4c-9e7a-6fbff79400c2")
   } catch {}
 })();
 const u = () => "Timeout",
   o = () => "Suspender",
   i = () => "禁言",
-  s = () => "Timeout",
-  f = () => "Suspender",
+  f = () => "Timeout",
+  s = () => "Suspender",
   c = () => "Suspendre",
   d = () => "Sospendi",
   a = () => "タイムアウト",
@@ -23,9 +23,9 @@ const u = () => "Timeout",
   l = () => "Тайм-аут",
   p = () => "Тайм-аут",
   _ = () => "Tạm khóa",
-  g = (t = {}, r = {}) => {
-    const e = r.locale ?? n();
-    return e === "en" ? u() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? s() : e === "es" ? f() : e === "fr" ? c() : e === "it" ? d() : e === "jp" ? a() : e === "pl" ? m() : e === "ru" ? l() : e === "uk" ? p() : _()
+  g = (e = {}, r = {}) => {
+    const t = r.locale ?? n();
+    return t === "en" ? u() : t === "pt" ? o() : t === "ch" ? i() : t === "de" ? f() : t === "es" ? s() : t === "fr" ? c() : t === "it" ? d() : t === "jp" ? a() : t === "pl" ? m() : t === "ru" ? l() : t === "uk" ? p() : _()
   };
 export {
   g as t
