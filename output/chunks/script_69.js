@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./56ZBUmtO.js";
+} from "./DMLR2ssG.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "b137ab40316e1e3f22728d8060cbbff276df86f5"
+      id: "c25d240cfeb94229297bfd517188330be66c0dac"
     };
     var r = new e.Error().stack;
     r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "b4aa13f6-08c7-49cd-9e53-dfbd6f6305da", e._sentryDebugIdIdentifier = "sentry-dbid-b4aa13f6-08c7-49cd-9e53-dfbd6f6305da")
@@ -20,12 +20,12 @@ const a = () => "Alliances",
   f = () => "Alleanze",
   o = () => "アライアンス",
   d = () => "Sojusze",
-  b = () => "Альянсы",
-  _ = () => "Альянси",
+  _ = () => "Альянсы",
+  b = () => "Альянси",
   p = () => "Các liên minh",
   y = (e = {}, r = {}) => {
     const n = r.locale ?? t();
-    return n === "en" ? a() : n === "pt" ? l() : n === "ch" ? s() : n === "de" ? i() : n === "es" ? c() : n === "fr" ? u() : n === "it" ? f() : n === "jp" ? o() : n === "pl" ? d() : n === "ru" ? b() : n === "uk" ? _() : p()
+    return n === "en" ? a() : n === "pt" ? l() : n === "ch" ? s() : n === "de" ? i() : n === "es" ? c() : n === "fr" ? u() : n === "it" ? f() : n === "jp" ? o() : n === "pl" ? d() : n === "ru" ? _() : n === "uk" ? b() : p()
   };
 export {
   y as a
