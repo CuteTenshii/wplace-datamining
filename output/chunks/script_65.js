@@ -1,31 +1,31 @@
-import "./DugeDHlw.js";
+import "./BpFtEuzJ.js";
 import {
-  p as m,
+  p as u,
   t as d,
   a as n,
-  b as u,
+  b,
   c,
   d as v,
   s as _,
   r as w
-} from "./DjL4expl.js";
+} from "./Dwt3-WzD.js";
 import {
   i as h
-} from "./BOBK-G_0.js";
+} from "./Cet_iMrh.js";
 import {
   d as x,
   a as f,
   s as E
-} from "./pkT0smK6.js";
+} from "./B5GLusoU.js";
 import {
   p as y,
   r as S
-} from "./DREba0zN.js";
+} from "./B_Pp_K5E.js";
 (function() {
   try {
     var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     a.SENTRY_RELEASE = {
-      id: "13a4af59f5d722706755b32f23a5d4b27cdb64ce"
+      id: "474a06d87b269a074076fdcef11eba6226920584"
     };
     var e = new a.Error().stack;
     e && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[e] = "cacd889a-2fc2-4da8-b582-ba16071aa927", a._sentryDebugIdIdentifier = "sentry-dbid-cacd889a-2fc2-4da8-b582-ba16071aa927")
@@ -36,7 +36,7 @@ var L = c("<span>wplace</span>"),
   R = c('<div><img alt="Wplace logo"/> <!></div>');
 
 function D(a, e) {
-  m(e, !0);
+  u(e, !0);
   let t = y(e, "size", 3, "default"),
     p = S(e, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
   var s = R();
@@ -46,9 +46,9 @@ function D(a, e) {
   }));
   var l = v(s);
   let o;
-  var b = _(l, 2);
+  var g = _(l, 2);
   {
-    var g = A => {
+    var m = A => {
       var r = L();
       let i;
       d(() => i = f(r, 1, "text-base-content font-pixel", null, i, {
@@ -56,8 +56,8 @@ function D(a, e) {
         "text-5xl": t() === "lg" || t() === "medium"
       })), n(A, r)
     };
-    h(b, A => {
-      e.hasText && A(g)
+    h(g, A => {
+      e.hasText && A(m)
     })
   }
   w(s), d(() => {
@@ -67,7 +67,7 @@ function D(a, e) {
       "w-16": t() === "medium",
       "w-20": t() === "lg"
     }), E(l, "src", B)
-  }), n(a, s), u()
+  }), n(a, s), b()
 }
 export {
   D as L
