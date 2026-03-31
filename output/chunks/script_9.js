@@ -2,12 +2,12 @@
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "5caf19ac7c00bf81392f2f2ae2213734555d83f2"
+      id: "13a4af59f5d722706755b32f23a5d4b27cdb64ce"
     };
     var d = new e.Error().stack;
     d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "de59cd8a-506f-43e6-a3d3-bc92e3ebaf74", e._sentryDebugIdIdentifier = "sentry-dbid-de59cd8a-506f-43e6-a3d3-bc92e3ebaf74")
   } catch {}
 })();
-const n = "5";
-var f;
-typeof window < "u" && ((f = window.__svelte ?? (window.__svelte = {})).v ?? (f.v = new Set)).add(n);
+const f = "5";
+var n;
+typeof window < "u" && ((n = window.__svelte ?? (window.__svelte = {})).v ?? (n.v = new Set)).add(f);

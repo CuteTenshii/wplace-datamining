@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./dO1JPExC.js";
+} from "./B5qsSgN7.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "5caf19ac7c00bf81392f2f2ae2213734555d83f2"
+      id: "13a4af59f5d722706755b32f23a5d4b27cdb64ce"
     };
     var r = new e.Error().stack;
     r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "5f94ed96-6b3a-41b9-b71c-23a660596945", e._sentryDebugIdIdentifier = "sentry-dbid-5f94ed96-6b3a-41b9-b71c-23a660596945")
@@ -15,9 +15,9 @@ const c = () => "Cancel",
   u = () => "Cancelar",
   a = () => "取消",
   l = () => "Abbrechen",
-  f = () => "Cancelar",
-  o = () => "Annuler",
-  s = () => "Annulla",
+  o = () => "Cancelar",
+  s = () => "Annuler",
+  f = () => "Annulla",
   i = () => "キャンセル",
   d = () => "Anuluj",
   b = () => "Отмена",
@@ -25,7 +25,7 @@ const c = () => "Cancel",
   p = () => "Hủy",
   g = (e = {}, r = {}) => {
     const n = r.locale ?? t();
-    return n === "en" ? c() : n === "pt" ? u() : n === "ch" ? a() : n === "de" ? l() : n === "es" ? f() : n === "fr" ? o() : n === "it" ? s() : n === "jp" ? i() : n === "pl" ? d() : n === "ru" ? b() : n === "uk" ? _() : p()
+    return n === "en" ? c() : n === "pt" ? u() : n === "ch" ? a() : n === "de" ? l() : n === "es" ? o() : n === "fr" ? s() : n === "it" ? f() : n === "jp" ? i() : n === "pl" ? d() : n === "ru" ? b() : n === "uk" ? _() : p()
   };
 export {
   g as c

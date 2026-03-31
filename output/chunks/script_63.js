@@ -6,7 +6,7 @@ var Pe = (r, e, t) => e in r ? _e(r, e, {
   value: t
 }) : r[e] = t;
 var b = (r, e, t) => Pe(r, typeof e != "symbol" ? e + "" : e, t);
-import "./CNjNV5vn.js";
+import "./DugeDHlw.js";
 import {
   p as Ie,
   d as $,
@@ -15,32 +15,32 @@ import {
   t as le,
   a as ae,
   b as Ce,
-  c as de
-} from "./mNi6L4zY.js";
+  c as ge
+} from "./DjL4expl.js";
 import {
   s as O
-} from "./BUEYNK6K.js";
+} from "./BPHRt5Oo.js";
 import {
   i as Le
-} from "./BeHiov6n.js";
+} from "./BOBK-G_0.js";
 import {
   h as Ee
-} from "./xKsXYRKY.js";
+} from "./qYFl7yxm.js";
 import {
   s as Be
-} from "./DWcK70nS.js";
+} from "./pkT0smK6.js";
 import {
   p as qe
-} from "./CWFkhVoi.js";
-import "./dO1JPExC.js";
+} from "./DREba0zN.js";
+import "./B5qsSgN7.js";
 import {
   l as De
-} from "./DAqrkxfr.js";
+} from "./B4ZBIYhv.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "5caf19ac7c00bf81392f2f2ae2213734555d83f2"
+      id: "13a4af59f5d722706755b32f23a5d4b27cdb64ce"
     };
     var e = new r.Error().stack;
     e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "a410538a-fadf-491e-b3d4-d680f97f78b1", r._sentryDebugIdIdentifier = "sentry-dbid-a410538a-fadf-491e-b3d4-d680f97f78b1")
@@ -222,8 +222,8 @@ var Fe = (() => {
   ht = f("^[^_*]*?\\*\\*[^_*]*?_[^_*]*?(?=\\*\\*)|[^_]+(?=[^_])|(?!_)punct(_+)(?=[\\s]|$)|notPunctSpace(_+)(?!_)(?=punctSpace|$)|(?!_)punctSpace(_+)(?=notPunctSpace)|[\\s](_+)(?!_)(?=punct)|(?!_)punct(_+)(?!_)(?=punct)", "gu").replace(/notPunctSpace/g, we).replace(/punctSpace/g, te).replace(/punct/g, H).getRegex(),
   pt = f(/^~~?(?:((?!~)punct)|[^\s~])/, "u").replace(/punct/g, Se).getRegex(),
   ut = "^[^~]+(?=[^~])|(?!~)punct(~~?)(?=[\\s]|$)|notPunctSpace(~~?)(?!~)(?=punctSpace|$)|(?!~)punctSpace(~~?)(?=notPunctSpace)|[\\s](~~?)(?!~)(?=punct)|(?!~)punct(~~?)(?!~)(?=punct)|notPunctSpace(~~?)(?=notPunctSpace)",
-  gt = f(ut, "gu").replace(/notPunctSpace/g, st).replace(/punctSpace/g, nt).replace(/punct/g, Se).getRegex(),
-  dt = f(/\\(punct)/, "gu").replace(/punct/g, H).getRegex(),
+  dt = f(ut, "gu").replace(/notPunctSpace/g, st).replace(/punctSpace/g, nt).replace(/punct/g, Se).getRegex(),
+  gt = f(/\\(punct)/, "gu").replace(/punct/g, H).getRegex(),
   ft = f(/^<(scheme:[^\s\x00-\x1f<>]*|email)>/).replace("scheme", /[a-zA-Z][a-zA-Z0-9+.-]{1,31}/).replace("email", /[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+(@)[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+(?![-_])/).getRegex(),
   kt = f(K).replace("(?:-->|$)", "-->").getRegex(),
   xt = f("^comment|^</[a-zA-Z][\\w:-]*\\s*>|^<[a-zA-Z][\\w-]*(?:attribute)*?\\s*/?>|^<\\?[\\s\\S]*?\\?>|^<![a-zA-Z]+\\s[\\s\\S]*?>|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>").replace("comment", kt).replace("attribute", /\s+[a-zA-Z:_][\w.:-]*(?:\s*=\s*"[^"]*"|\s*=\s*'[^']*'|\s*=\s*[^\s"'=<>`]+)?/).getRegex(),
@@ -235,7 +235,7 @@ var Fe = (() => {
   ce = /[hH][tT][tT][pP][sS]?|[fF][tT][pP]/,
   re = {
     _backpedal: z,
-    anyPunctuation: dt,
+    anyPunctuation: gt,
     autolink: ft,
     blockSkip: it,
     br: me,
@@ -266,7 +266,7 @@ var Fe = (() => {
     emStrongRDelimAst: ct,
     emStrongLDelim: at,
     delLDelim: pt,
-    delRDelim: gt,
+    delRDelim: dt,
     url: f(/^((?:protocol):\/\/|www\.)(?:[a-zA-Z0-9\-]+\.?)+[^\s<]*|^email/).replace("protocol", ce).replace("email", /[A-Za-z0-9._+-]+(@)[a-zA-Z0-9-_]+(?:\.[a-zA-Z0-9-_]*[a-zA-Z0-9])+(?![-_])/).getRegex(),
     _backpedal: /(?:[^?!.,:;*_'"~()&]+|\([^)]*\)|&(?![a-zA-Z0-9]+;$)|[?!.,:;*_'"~)]+(?!$))+/,
     del: /^(~~?)(?=[^\s~])((?:\\[\s\S]|[^\\])*?(?:\\[\s\S]|[^\s~\\]))\1(?=[^~]|$)/,
@@ -360,7 +360,7 @@ function vt(r, e = 0) {
   return s
 }
 
-function ge(r, e, t, s, n) {
+function de(r, e, t, s, n) {
   let l = e.href,
     a = e.title || null,
     i = r[1].replace(n.other.outputLinkReplace, "$1");
@@ -479,8 +479,8 @@ var N = class {
           s = s ? `${s}
 ${o}` : o, n = n ? `${n}
 ${p}` : p;
-          let g = this.lexer.state.top;
-          if (this.lexer.state.top = !0, this.lexer.blockTokens(p, l, !0), this.lexer.state.top = g, t.length === 0) break;
+          let d = this.lexer.state.top;
+          if (this.lexer.state.top = !0, this.lexer.blockTokens(p, l, !0), this.lexer.state.top = d, t.length === 0) break;
           let u = l.at(-1);
           if ((u == null ? void 0 : u.type) === "code") break;
           if ((u == null ? void 0 : u.type) === "blockquote") {
@@ -488,16 +488,16 @@ ${p}` : p;
               k = c.raw + `
 ` + t.join(`
 `),
-              d = this.blockquote(k);
-            l[l.length - 1] = d, s = s.substring(0, s.length - c.raw.length) + d.raw, n = n.substring(0, n.length - c.text.length) + d.text;
+              g = this.blockquote(k);
+            l[l.length - 1] = g, s = s.substring(0, s.length - c.raw.length) + g.raw, n = n.substring(0, n.length - c.text.length) + g.text;
             break
           } else if ((u == null ? void 0 : u.type) === "list") {
             let c = u,
               k = c.raw + `
 ` + t.join(`
 `),
-              d = this.list(k);
-            l[l.length - 1] = d, s = s.substring(0, s.length - u.raw.length) + d.raw, n = n.substring(0, n.length - c.raw.length) + d.raw, t = k.substring(l.at(-1).raw.length).split(`
+              g = this.list(k);
+            l[l.length - 1] = g, s = s.substring(0, s.length - u.raw.length) + g.raw, n = n.substring(0, n.length - c.raw.length) + g.raw, t = k.substring(l.at(-1).raw.length).split(`
 `);
             continue
           }
@@ -529,17 +529,17 @@ ${p}` : p;
           h = !1;
         for (; r;) {
           let p = !1,
-            g = "",
+            d = "",
             u = "";
           if (!(e = i.exec(r)) || this.rules.block.hr.test(r)) break;
-          g = e[0], r = r.substring(g.length);
+          d = e[0], r = r.substring(d.length);
           let c = vt(e[2].split(`
 `, 1)[0], e[1].length),
             k = r.split(`
 `, 1)[0],
-            d = !c.trim(),
+            g = !c.trim(),
             m = 0;
-          if (this.options.pedantic ? (m = 2, u = c.trimStart()) : d ? m = e[1].length + 1 : (m = c.search(this.rules.other.nonSpaceChar), m = m > 4 ? 1 : m, u = c.slice(m), m += e[1].length), d && this.rules.other.blankLine.test(k) && (g += k + `
+          if (this.options.pedantic ? (m = 2, u = c.trimStart()) : g ? m = e[1].length + 1 : (m = c.search(this.rules.other.nonSpaceChar), m = m > 4 ? 1 : m, u = c.slice(m), m += e[1].length), g && this.rules.other.blankLine.test(k) && (d += k + `
 `, r = r.substring(k.length + 1), p = !0), !p) {
             let v = this.rules.other.nextBulletRegex(m),
               B = this.rules.other.hrRegex(m),
@@ -555,22 +555,22 @@ ${p}` : p;
               if (P.search(this.rules.other.nonSpaceChar) >= m || !k.trim()) u += `
 ` + P.slice(m);
               else {
-                if (d || c.replace(this.rules.other.tabCharGlobal, "    ").search(this.rules.other.nonSpaceChar) >= 4 || se.test(c) || ie.test(c) || B.test(c)) break;
+                if (g || c.replace(this.rules.other.tabCharGlobal, "    ").search(this.rules.other.nonSpaceChar) >= 4 || se.test(c) || ie.test(c) || B.test(c)) break;
                 u += `
 ` + k
               }
-              d = !k.trim(), g += W + `
+              g = !k.trim(), d += W + `
 `, r = r.substring(W.length + 1), c = P.slice(m)
             }
           }
-          a.loose || (h ? a.loose = !0 : this.rules.other.doubleBlankLine.test(g) && (h = !0)), a.items.push({
+          a.loose || (h ? a.loose = !0 : this.rules.other.doubleBlankLine.test(d) && (h = !0)), a.items.push({
             type: "list_item",
-            raw: g,
+            raw: d,
             task: !!this.options.gfm && this.rules.other.listIsTask.test(u),
             loose: !1,
             text: u,
             tokens: []
-          }), a.raw += g
+          }), a.raw += d
         }
         let o = a.items.at(-1);
         if (o) o.raw = o.raw.trimEnd(), o.text = o.text.trimEnd();
@@ -586,12 +586,12 @@ ${p}` : p;
                   break
                 }
             }
-            let g = this.rules.other.listTaskCheckbox.exec(p.raw);
-            if (g) {
+            let d = this.rules.other.listTaskCheckbox.exec(p.raw);
+            if (d) {
               let u = {
                 type: "checkbox",
-                raw: g[0] + " ",
-                checked: g[0] !== "[ ]"
+                raw: d[0] + " ",
+                checked: d[0] !== "[ ]"
               };
               p.checked = u.checked, a.loose ? p.tokens[0] && ["paragraph", "text"].includes(p.tokens[0].type) && "tokens" in p.tokens[0] && p.tokens[0].tokens ? (p.tokens[0].raw = u.raw + p.tokens[0].raw, p.tokens[0].text = u.raw + p.tokens[0].text, p.tokens[0].tokens.unshift(u)) : p.tokens.unshift({
                 type: "paragraph",
@@ -602,15 +602,15 @@ ${p}` : p;
             }
           }
           if (!a.loose) {
-            let g = p.tokens.filter(c => c.type === "space"),
-              u = g.length > 0 && g.some(c => this.rules.other.anyLine.test(c.raw));
+            let d = p.tokens.filter(c => c.type === "space"),
+              u = d.length > 0 && d.some(c => this.rules.other.anyLine.test(c.raw));
             a.loose = u
           }
         }
         if (a.loose)
           for (let p of a.items) {
             p.loose = !0;
-            for (let g of p.tokens) g.type === "text" && (g.type = "paragraph")
+            for (let d of p.tokens) d.type === "text" && (d.type = "paragraph")
           }
         return a
       }
@@ -745,7 +745,7 @@ ${p}` : p;
           let l = this.rules.other.pedanticHrefTitle.exec(s);
           l && (s = l[1], n = l[3])
         } else n = e[3] ? e[3].slice(1, -1) : "";
-        return s = s.trim(), this.rules.other.startAngleBracket.test(s) && (this.options.pedantic && !this.rules.other.endAngleBracket.test(t) ? s = s.slice(1) : s = s.slice(1, -1)), ge(e, {
+        return s = s.trim(), this.rules.other.startAngleBracket.test(s) && (this.options.pedantic && !this.rules.other.endAngleBracket.test(t) ? s = s.slice(1) : s = s.slice(1, -1)), de(e, {
           href: s && s.replace(this.rules.inline.anyPunctuation, "$1"),
           title: n && n.replace(this.rules.inline.anyPunctuation, "$1")
         }, e[0], this.lexer, this.rules)
@@ -764,7 +764,7 @@ ${p}` : p;
             text: l
           }
         }
-        return ge(t, n, t[0], this.lexer, this.rules)
+        return de(t, n, t[0], this.lexer, this.rules)
       }
     }
     emStrong(r, e, t = "") {
@@ -787,20 +787,20 @@ ${p}` : p;
           if (i -= a, i > 0) continue;
           a = Math.min(a, a + i + h);
           let p = [...s[0]][0].length,
-            g = r.slice(0, n + s.index + p + a);
+            d = r.slice(0, n + s.index + p + a);
           if (Math.min(n, a) % 2) {
-            let c = g.slice(1, -1);
+            let c = d.slice(1, -1);
             return {
               type: "em",
-              raw: g,
+              raw: d,
               text: c,
               tokens: this.lexer.inlineTokens(c)
             }
           }
-          let u = g.slice(2, -2);
+          let u = d.slice(2, -2);
           return {
             type: "strong",
-            raw: g,
+            raw: d,
             text: u,
             tokens: this.lexer.inlineTokens(u)
           }
@@ -844,12 +844,12 @@ ${p}` : p;
           a = Math.min(a, a + i);
           let o = [...s[0]][0].length,
             p = r.slice(0, n + s.index + o + a),
-            g = p.slice(n, -n);
+            d = p.slice(n, -n);
           return {
             type: "del",
             raw: p,
-            text: g,
-            tokens: this.lexer.inlineTokens(g)
+            text: d,
+            tokens: this.lexer.inlineTokens(d)
           }
         }
       }
@@ -1019,11 +1019,11 @@ ${p}` : p;
         if ((a = this.options.extensions) != null && a.startBlock) {
           let o = 1 / 0,
             p = e.slice(1),
-            g;
+            d;
           this.options.extensions.startBlock.forEach(u => {
-            g = u.call({
+            d = u.call({
               lexer: this
-            }, p), typeof g == "number" && g >= 0 && (o = Math.min(o, g))
+            }, p), typeof d == "number" && d >= 0 && (o = Math.min(o, d))
           }), o < 1 / 0 && o >= 0 && (h = e.substring(0, o + 1))
         }
         if (this.state.top && (i = this.tokenizer.paragraph(h))) {
@@ -1060,7 +1060,7 @@ ${p}` : p;
       }), t
     }
     inlineTokens(e, t = []) {
-      var h, o, p, g, u;
+      var h, o, p, d, u;
       let s = e,
         n = null;
       if (this.tokens.links) {
@@ -1082,7 +1082,7 @@ ${p}` : p;
       for (; e;) {
         a || (i = ""), a = !1;
         let c;
-        if ((g = (p = this.options.extensions) == null ? void 0 : p.inline) != null && g.some(d => (c = d.call({
+        if ((d = (p = this.options.extensions) == null ? void 0 : p.inline) != null && d.some(g => (c = g.call({
             lexer: this
           }, e, t)) ? (e = e.substring(c.raw.length), t.push(c), !0) : !1)) continue;
         if (c = this.tokenizer.escape(e)) {
@@ -1099,8 +1099,8 @@ ${p}` : p;
         }
         if (c = this.tokenizer.reflink(e, this.tokens.links)) {
           e = e.substring(c.raw.length);
-          let d = t.at(-1);
-          c.type === "text" && (d == null ? void 0 : d.type) === "text" ? (d.raw += c.raw, d.text += c.text) : t.push(c);
+          let g = t.at(-1);
+          c.type === "text" && (g == null ? void 0 : g.type) === "text" ? (g.raw += c.raw, g.text += c.text) : t.push(c);
           continue
         }
         if (c = this.tokenizer.emStrong(e, s, i)) {
@@ -1129,27 +1129,27 @@ ${p}` : p;
         }
         let k = e;
         if ((u = this.options.extensions) != null && u.startInline) {
-          let d = 1 / 0,
+          let g = 1 / 0,
             m = e.slice(1),
             v;
           this.options.extensions.startInline.forEach(B => {
             v = B.call({
               lexer: this
-            }, m), typeof v == "number" && v >= 0 && (d = Math.min(d, v))
-          }), d < 1 / 0 && d >= 0 && (k = e.substring(0, d + 1))
+            }, m), typeof v == "number" && v >= 0 && (g = Math.min(g, v))
+          }), g < 1 / 0 && g >= 0 && (k = e.substring(0, g + 1))
         }
         if (c = this.tokenizer.inlineText(k)) {
           e = e.substring(c.raw.length), c.raw.slice(-1) !== "_" && (i = c.raw.slice(-1)), a = !0;
-          let d = t.at(-1);
-          (d == null ? void 0 : d.type) === "text" ? (d.raw += c.raw, d.text += c.text) : t.push(c);
+          let g = t.at(-1);
+          (g == null ? void 0 : g.type) === "text" ? (g.raw += c.raw, g.text += c.text) : t.push(c);
           continue
         }
         if (e) {
-          let d = "Infinite loop on byte: " + e.charCodeAt(0);
+          let g = "Infinite loop on byte: " + e.charCodeAt(0);
           if (this.options.silent) {
-            console.error(d);
+            console.error(g);
             break
-          } else throw new Error(d)
+          } else throw new Error(g)
         }
       }
       return t
@@ -1655,15 +1655,15 @@ ${r}</tr>
               h = n[a];
             L.passThroughHooks.has(l) ? n[a] = o => {
               if (this.defaults.async && L.passThroughHooksRespectAsync.has(l)) return (async () => {
-                let g = await i.call(n, o);
-                return h.call(n, g)
+                let d = await i.call(n, o);
+                return h.call(n, d)
               })();
               let p = i.call(n, o);
               return h.call(n, p)
             } : n[a] = (...o) => {
               if (this.defaults.async) return (async () => {
-                let g = await i.apply(n, o);
-                return g === !1 && (g = await h.apply(n, o)), g
+                let d = await i.apply(n, o);
+                return d === !1 && (d = await h.apply(n, o)), d
               })();
               let p = i.apply(n, o);
               return p === !1 && (p = h.apply(n, o)), p
@@ -1897,8 +1897,8 @@ New Avatar Frames are now available for purchase in the Store:
 - Fixed color picker sampling on high-DPI and fullscreen setups
 - Fixed a stray canvas click when confirming a profile picture`
 }];
-var zt = de('<span class="badge badge-primary"> </span>'),
-  At = de('<article class="card border-base-content/10 bg-base-100 border shadow-sm"><div class="card-body gap-4"><div class="flex items-center gap-3"><span class="badge badge-ghost"> </span> <!></div> <h2 class="text-xl font-semibold"> </h2> <div class="prose max-w-none"><!></div></div></article>');
+var zt = ge('<span class="badge badge-primary"> </span>'),
+  At = ge('<article class="card border-base-content/10 bg-base-100 border shadow-sm"><div class="card-body gap-4"><div class="flex items-center gap-3"><span class="badge badge-ghost"> </span> <!></div> <h2 class="text-xl font-semibold"> </h2> <div class="prose max-w-none"><!></div></div></article>');
 
 function Zt(r, e) {
   Ie(e, !0);
@@ -1912,9 +1912,9 @@ function Zt(r, e) {
   var h = Q(a, 2);
   {
     var o = k => {
-      var d = zt(),
-        m = $(d, !0);
-      T(d), le(v => O(m, v), [() => De()]), ae(k, d)
+      var g = zt(),
+        m = $(g, !0);
+      T(g), le(v => O(m, v), [() => De()]), ae(k, g)
     };
     Le(h, k => {
       t() && k(o)
@@ -1922,12 +1922,12 @@ function Zt(r, e) {
   }
   T(l);
   var p = Q(l, 2),
-    g = $(p, !0);
+    d = $(p, !0);
   T(p);
   var u = Q(p, 2),
     c = $(u);
   Ee(c, () => e.patchNote.html), T(u), T(n), T(s), le(() => {
-    O(i, `v${e.patchNote.version??""}`), Be(p, "id", e.patchNote.version), O(g, e.patchNote.title)
+    O(i, `v${e.patchNote.version??""}`), Be(p, "id", e.patchNote.version), O(d, e.patchNote.title)
   }), ae(r, s), Ce()
 }
 export {
