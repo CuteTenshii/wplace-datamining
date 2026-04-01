@@ -1,36 +1,32 @@
-import "./BpFtEuzJ.js";
 import {
-  a as d,
-  J as s
-} from "./Dwt3-WzD.js";
-import {
-  d as a
-} from "./B5GLusoU.js";
-import {
-  r as n
-} from "./B_Pp_K5E.js";
+  g as t
+} from "./BT9k_vYz.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "474a06d87b269a074076fdcef11eba6226920584"
+      id: "be8234278ededc2527fbc3b765caee2baaf18120"
     };
-    var t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "30a9277d-629f-42bd-9ece-b82935d3dacf", e._sentryDebugIdIdentifier = "sentry-dbid-30a9277d-629f-42bd-9ece-b82935d3dacf")
+    var n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "63f7c335-11b0-44dc-8251-4ab0ac9f111e", e._sentryDebugIdIdentifier = "sentry-dbid-63f7c335-11b0-44dc-8251-4ab0ac9f111e")
   } catch {}
 })();
-var f = s('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
-
-function c(e, t) {
-  let o = n(t, ["$$slots", "$$events", "$$legacy"]);
-  var r = f();
-  a(r, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...o
-  })), d(e, r)
-}
+const o = () => "Copy",
+  c = () => "Copiar",
+  u = () => "复制",
+  i = () => "Kopieren",
+  p = () => "Copiar",
+  f = () => "Copier",
+  s = () => "Copia",
+  a = () => "コピー",
+  d = () => "Kopiuj",
+  y = () => "Копировать",
+  b = () => "Копіювати",
+  l = () => "Sao chép",
+  g = (e = {}, n = {}) => {
+    const r = n.locale ?? t();
+    return r === "en" ? o() : r === "pt" ? c() : r === "ch" ? u() : r === "de" ? i() : r === "es" ? p() : r === "fr" ? f() : r === "it" ? s() : r === "jp" ? a() : r === "pl" ? d() : r === "ru" ? y() : r === "uk" ? b() : l()
+  };
 export {
-  c as L
+  g as c
 };

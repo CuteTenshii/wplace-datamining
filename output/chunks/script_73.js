@@ -1,32 +1,32 @@
 import {
-  g as t
-} from "./rVFhRxiC.js";
+  g as n
+} from "./BT9k_vYz.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "474a06d87b269a074076fdcef11eba6226920584"
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "be8234278ededc2527fbc3b765caee2baaf18120"
     };
-    var e = new n.Error().stack;
-    e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "555d803c-dfac-4d48-b1e9-55a3f0927340", n._sentryDebugIdIdentifier = "sentry-dbid-555d803c-dfac-4d48-b1e9-55a3f0927340")
+    var t = new r.Error().stack;
+    t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "34b20000-aaf6-474f-a087-a222515fb8cf", r._sentryDebugIdIdentifier = "sentry-dbid-34b20000-aaf6-474f-a087-a222515fb8cf")
   } catch {}
 })();
-const o = () => "Confirm",
-  f = () => "Confirmar",
-  i = () => "确认",
-  c = () => "Bestätigen",
-  u = () => "Confirmar",
-  s = () => "Confirmer",
-  d = () => "Conferma",
-  a = () => "確認",
-  m = () => "Potwierdź",
-  l = () => "Подтвердить",
-  _ = () => "Підтвердити",
-  b = () => "Xác nhận",
-  g = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? o() : r === "pt" ? f() : r === "ch" ? i() : r === "de" ? c() : r === "es" ? u() : r === "fr" ? s() : r === "it" ? d() : r === "jp" ? a() : r === "pl" ? m() : r === "ru" ? l() : r === "uk" ? _() : b()
+const i = () => "Preview",
+  u = () => "Prévia",
+  f = () => "预览",
+  o = () => "Vorschau",
+  s = () => "Vista previa",
+  c = () => "Aperçu",
+  p = () => "Anteprima",
+  a = () => "プレビュー",
+  d = () => "Podgląd",
+  v = () => "Предпросмотр",
+  w = () => "Попередній перегляд",
+  l = () => "Xem trước",
+  _ = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? i() : e === "pt" ? u() : e === "ch" ? f() : e === "de" ? o() : e === "es" ? s() : e === "fr" ? c() : e === "it" ? p() : e === "jp" ? a() : e === "pl" ? d() : e === "ru" ? v() : e === "uk" ? w() : l()
   };
 export {
-  g as c
+  _ as p
 };
