@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./BT9k_vYz.js";
+} from "./CshrrOY6.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "be8234278ededc2527fbc3b765caee2baaf18120"
+      id: "524c6de5688559bfa8d287b7b1a6e5caba19cb91"
     };
     var e = new r.Error().stack;
     e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "09cfb7ee-331a-466f-8b4c-b58cf29ac265", r._sentryDebugIdIdentifier = "sentry-dbid-09cfb7ee-331a-466f-8b4c-b58cf29ac265")
@@ -29,8 +29,8 @@ const i = () => "and",
   },
   g = () => "By continuing, you agree to our",
   v = () => "Ao continuar, você concorda com nossos",
-  h = () => "继续即表示你同意我们的",
-  b = () => "Wenn du fortfährst, stimmst du unseren",
+  b = () => "继续即表示你同意我们的",
+  h = () => "Wenn du fortfährst, stimmst du unseren",
   y = () => "Al continuar, aceptas nuestra",
   m = () => "En continuant, vous acceptez nos",
   k = () => "Continuando, accetti i nostri",
@@ -41,7 +41,7 @@ const i = () => "and",
   C = () => "Khi tiếp tục, bạn đồng ý với",
   Sr = (r = {}, e = {}) => {
     const n = e.locale ?? t();
-    return n === "en" ? g() : n === "pt" ? v() : n === "ch" ? h() : n === "de" ? b() : n === "es" ? y() : n === "fr" ? m() : n === "it" ? k() : n === "jp" ? j() : n === "pl" ? z() : n === "ru" ? T() : n === "uk" ? W() : C()
+    return n === "en" ? g() : n === "pt" ? v() : n === "ch" ? b() : n === "de" ? h() : n === "es" ? y() : n === "fr" ? m() : n === "it" ? k() : n === "jp" ? j() : n === "pl" ? z() : n === "ru" ? T() : n === "uk" ? W() : C()
   },
   $ = () => "Code of Conduct",
   A = () => "Código de Conduta",
@@ -98,14 +98,14 @@ const i = () => "and",
   pn = () => "Migra tu cuenta",
   gn = () => "Migrer votre compte",
   vn = () => "Migra il tuo account",
-  hn = () => "アカウントを移行",
-  bn = () => "Przenieś swoje konto",
+  bn = () => "アカウントを移行",
+  hn = () => "Przenieś swoje konto",
   yn = () => "Мигрировать аккаунт",
   mn = () => "Перенести акаунт",
   kn = () => "Di chuyển tài khoản",
   Pr = (r = {}, e = {}) => {
     const n = e.locale ?? t();
-    return n === "en" ? fn() : n === "pt" ? ln() : n === "ch" ? wn() : n === "de" ? dn() : n === "es" ? pn() : n === "fr" ? gn() : n === "it" ? vn() : n === "jp" ? hn() : n === "pl" ? bn() : n === "ru" ? yn() : n === "uk" ? mn() : kn()
+    return n === "en" ? fn() : n === "pt" ? ln() : n === "ch" ? wn() : n === "de" ? dn() : n === "es" ? pn() : n === "fr" ? gn() : n === "it" ? vn() : n === "jp" ? bn() : n === "pl" ? hn() : n === "ru" ? yn() : n === "uk" ? mn() : kn()
   },
   jn = () => "Privacy Policy",
   zn = () => "Política de privacidade",
@@ -172,8 +172,8 @@ const i = () => "and",
     return n === "en" ? or() : n === "pt" ? cr() : n === "ch" ? ur() : n === "de" ? _r() : n === "es" ? ar() : n === "fr" ? sr() : n === "it" ? fr() : n === "jp" ? lr() : n === "pl" ? wr() : n === "ru" ? dr() : n === "uk" ? pr() : gr()
   },
   vr = () => "Terms of Service",
-  hr = () => "Termos de Serviço",
-  br = () => "服务条款",
+  br = () => "Termos de Serviço",
+  hr = () => "服务条款",
   yr = () => "Nutzungsbedingungen",
   mr = () => "Términos de servicio",
   kr = () => "Conditions d’utilisation",
@@ -185,7 +185,7 @@ const i = () => "and",
   $r = () => "Điều khoản dịch vụ",
   Vr = (r = {}, e = {}) => {
     const n = e.locale ?? t();
-    return n === "en" ? vr() : n === "pt" ? hr() : n === "ch" ? br() : n === "de" ? yr() : n === "es" ? mr() : n === "fr" ? kr() : n === "it" ? jr() : n === "jp" ? zr() : n === "pl" ? Tr() : n === "ru" ? Wr() : n === "uk" ? Cr() : $r()
+    return n === "en" ? vr() : n === "pt" ? br() : n === "ch" ? hr() : n === "de" ? yr() : n === "es" ? mr() : n === "fr" ? kr() : n === "it" ? jr() : n === "jp" ? zr() : n === "pl" ? Tr() : n === "ru" ? Wr() : n === "uk" ? Cr() : $r()
   };
 export {
   Er as a, Sr as b, Ir as c, Dr as d, Nr as e, Mr as l, Pr as m, Rr as o, Br as p, Vr as t, Kr as w
