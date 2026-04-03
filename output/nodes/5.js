@@ -17,11 +17,11 @@ var mt = (_, s, g) => (gv(_, s, "read from private field"), g ? g.call(_) : s.ge
   ms = (_, s, g, b) => (gv(_, s, "write to private field"), b ? b.call(_, g) : s.set(_, g), g),
   Ui = (_, s, g) => (gv(_, s, "access private method"), g);
 var W1 = (_, s, g) => X3(H3(_), g, s);
-import "../chunks/DWiaIDSa.js";
+import "../chunks/B09UZB6b.js";
 import {
   o as za,
   a as K3
-} from "../chunks/DhsOqLaA.js";
+} from "../chunks/D2_dw002.js";
 import {
   ag as J3,
   bw as Q3,
@@ -74,24 +74,24 @@ import {
   bT as cT,
   M as uT,
   $ as dT
-} from "../chunks/C6Ld_Ouf.js";
+} from "../chunks/D28CkLTn.js";
 import {
   s as $,
   c as vb
-} from "../chunks/C_VcZRp0.js";
+} from "../chunks/CV_nAUeA.js";
 import {
   i as Ve
-} from "../chunks/DqvAWVT4.js";
+} from "../chunks/BgsVc-HP.js";
 import {
   k as wc
-} from "../chunks/WardBs2f.js";
+} from "../chunks/CRWPqL0H.js";
 import {
   a as fu,
   t as ks
-} from "../chunks/D3IMvlb4.js";
+} from "../chunks/CKv-NyOo.js";
 import {
   h as hT
-} from "../chunks/B-83DEDl.js";
+} from "../chunks/D109EqPs.js";
 import {
   d as Br,
   a as Lr,
@@ -106,22 +106,22 @@ import {
   j as fT,
   k as pT,
   h as Vh
-} from "../chunks/ozaL_Q3i.js";
+} from "../chunks/D7e8c29C.js";
 import {
   b as mT,
   a as gT,
   g as _u,
   c as vT
-} from "../chunks/BwaAmpZA.js";
+} from "../chunks/vD1wPL_D.js";
 import {
   p as Ca
-} from "../chunks/B__Nbadi.js";
+} from "../chunks/DCpywXW0.js";
 import {
   g as js,
   P as _T,
   a as E0,
   c as yT
-} from "../chunks/CmOznUX0.js";
+} from "../chunks/BTcDF2-G.js";
 import {
   S as da,
   ad as xT,
@@ -141,7 +141,7 @@ import {
   C as K1,
   aj as Kp,
   P as AT
-} from "../chunks/DkGJDvMv.js";
+} from "../chunks/B_O0Dpyj.js";
 import {
   A as Vn,
   p as A0,
@@ -149,38 +149,38 @@ import {
   g as _v,
   a as kT,
   r as LT
-} from "../chunks/CmqbMj-x.js";
+} from "../chunks/B551YeJd.js";
 import {
   P as qa
-} from "../chunks/_7eZZQfG.js";
-import "../chunks/CsthDKuu.js";
+} from "../chunks/DRvCK6fL.js";
+import "../chunks/Cy_rJVW5.js";
 import {
   e as Pn,
   i as zo
-} from "../chunks/CW8d8ZWe.js";
+} from "../chunks/6hMu5fzO.js";
 import {
   a as jh,
   b as tl,
   c as k0
-} from "../chunks/BOKkMK6F.js";
+} from "../chunks/ZW2Oop-6.js";
 import {
   b as ys
-} from "../chunks/Bb48Kdes.js";
+} from "../chunks/Fdu-Og86.js";
 import {
   i as L0
-} from "../chunks/DK8lZfZe.js";
+} from "../chunks/PXM7jBCO.js";
 import {
   r as qr,
   p as Mt,
   s as Sc,
   u as J1
-} from "../chunks/CtRVT2QZ.js";
+} from "../chunks/8KzsfsAH.js";
 import {
   C as Po,
   S as DT,
   a as _b,
   U as yb
-} from "../chunks/BVcHwGl-.js";
+} from "../chunks/BfbxLU1e.js";
 import {
   U as Rv,
   A as pm,
@@ -191,30 +191,30 @@ import {
   r as RT,
   P as FT,
   c as BT
-} from "../chunks/BdlOMNgJ.js";
+} from "../chunks/DJI_W1p7.js";
 import {
   c as yu,
   b as Uh,
   g as mo,
   a as Fm
-} from "../chunks/BE9PvZnF.js";
+} from "../chunks/DRRXWV-2.js";
 import {
   h as qf
-} from "../chunks/DZR8lRqP.js";
+} from "../chunks/CJUZ1b4m.js";
 import {
   L as bb
-} from "../chunks/CFflQpF-.js";
+} from "../chunks/BqznIaCG.js";
 import {
   g as D0,
   l as OT
-} from "../chunks/CshrrOY6.js";
+} from "../chunks/DNNhrQmR.js";
 import {
   c as Tc
-} from "../chunks/0zPjI8Km.js";
+} from "../chunks/Cn6DGkbX.js";
 import {
   d as NT,
   p as z0
-} from "../chunks/CziY8qrf.js";
+} from "../chunks/Dkm3w7Ws.js";
 import {
   d_ as qT,
   b9 as wb,
@@ -543,50 +543,50 @@ import {
   cr as yx,
   e9 as UC,
   dj as ZC
-} from "../chunks/B7sR6Ugt.js";
+} from "../chunks/Ceo6bXtB.js";
 import {
   c as qv
-} from "../chunks/ChAKSNrL.js";
+} from "../chunks/Dq1Kv__D.js";
 import {
   P as Ls,
   t as q0
-} from "../chunks/2GeVZVai.js";
+} from "../chunks/_H7IdD6O.js";
 import {
   L as Om
-} from "../chunks/625T1E_J.js";
+} from "../chunks/C-rxYIr5.js";
 import {
   l as GC,
   v as WC,
   a as gm,
   s as zb,
   c as HC
-} from "../chunks/BY83M7w7.js";
+} from "../chunks/B9A0ZQu4.js";
 import {
   p as V0,
   m as Rb
-} from "../chunks/ilpgHEn-.js";
+} from "../chunks/xTlnpV_P.js";
 import {
   f as mu
-} from "../chunks/BJTEcEsp.js";
+} from "../chunks/CRa97O5W.js";
 import {
   A as Id
-} from "../chunks/BqpIk1-e.js";
+} from "../chunks/D7OfVg5Q.js";
 import {
   b as j0
-} from "../chunks/BqOKqYOt.js";
+} from "../chunks/BdqtEtf1.js";
 import {
   u as XC
-} from "../chunks/BNYqiOMc.js";
+} from "../chunks/COkP88_1.js";
 import {
   u as YC
-} from "../chunks/DaC3L_CC.js";
+} from "../chunks/CoBAx8sG.js";
 import {
   n as Vv,
   _ as xx,
   c as Fb,
   b as KC,
   a as JC
-} from "../chunks/CltdiZ8w.js";
+} from "../chunks/B8pf_i58.js";
 import {
   E as Zh,
   D as Nm,
@@ -594,10 +594,10 @@ import {
   a as jv,
   b as QC,
   R as $C
-} from "../chunks/BF6lsCdn.js";
+} from "../chunks/CV2Xssnb.js";
 import {
   l as Z0
-} from "../chunks/-oAIfK9y.js";
+} from "../chunks/WGNGpni-.js";
 import {
   a as qm,
   c as e6,
@@ -615,109 +615,109 @@ import {
   b as l6,
   u as c6,
   h as wx
-} from "../chunks/DURB_VJ7.js";
+} from "../chunks/DR3bhw8b.js";
 import {
   f as So,
   s as Nh
-} from "../chunks/B6f4bvzp.js";
+} from "../chunks/DZ-LW3c1.js";
 import {
   C as G0
-} from "../chunks/Dd3AkP9_.js";
+} from "../chunks/B9J6jxia.js";
 import {
   s as fa
-} from "../chunks/CwLShC5N.js";
+} from "../chunks/Ci59rY0c.js";
 import {
   c as $o
-} from "../chunks/CeCdYfi8.js";
+} from "../chunks/JXnENwl7.js";
 import {
   y as u6,
   B as d6,
   p as Zv
-} from "../chunks/Bjb7XYSv.js";
+} from "../chunks/BBn3p5xz.js";
 import {
   l as h6,
   L as Ob
-} from "../chunks/SU5qPGHS.js";
+} from "../chunks/DONtVPip.js";
 import {
   d as f6,
   L as p6
-} from "../chunks/BOmc8DiB.js";
+} from "../chunks/BhOXU8F8.js";
 import {
   t as m6,
   r as Nb,
   g as g6
-} from "../chunks/BNxgPTBl.js";
+} from "../chunks/BP6LkdVP.js";
 import {
   r as v6
-} from "../chunks/DmIqgqe_.js";
+} from "../chunks/DQDGMS8-.js";
 import {
   c as $a
-} from "../chunks/a70ccHTV.js";
+} from "../chunks/CYRUze8I.js";
 import {
   a as qb
-} from "../chunks/4jUMOJkb.js";
+} from "../chunks/Bq3TyRi2.js";
 import {
   c as Vb
-} from "../chunks/B2k0YO8L.js";
+} from "../chunks/D8sjQk00.js";
 import {
   n as Vm,
   e as _6,
   a as y6
-} from "../chunks/DRKf22jK.js";
+} from "../chunks/CfLo4qge.js";
 import {
   _ as x6
-} from "../chunks/BJBmZ7K0.js";
+} from "../chunks/1ZKGNXBO.js";
 import {
   b as b6
-} from "../chunks/BKHaBhKX.js";
+} from "../chunks/ChTpk957.js";
 import {
   e as jb
-} from "../chunks/l_tWSytf.js";
+} from "../chunks/BeZ8q2TX.js";
 import {
   p as Ub
-} from "../chunks/B_29BeuS.js";
+} from "../chunks/DkyV3N9z.js";
 import {
   a as w6
-} from "../chunks/C1Q-Lw57.js";
+} from "../chunks/DV_Gzqmm.js";
 import {
   d as T6
-} from "../chunks/B-1iOvdX.js";
+} from "../chunks/C6BEeOP4.js";
 import {
   p as Tx
-} from "../chunks/IVMt-Xnm.js";
+} from "../chunks/S5MZwqF-.js";
 import {
   P as S6
-} from "../chunks/EuXzCUcb.js";
+} from "../chunks/ehkqKQEu.js";
 import {
   R as W0
-} from "../chunks/BO35uI3_.js";
+} from "../chunks/CjtrA-NX.js";
 import {
   R as I6
-} from "../chunks/BR01szQu.js";
+} from "../chunks/C_pTW-C0.js";
 import {
   T as Pd,
   G as _m
-} from "../chunks/DNWXBXrE.js";
+} from "../chunks/CS0CPdqP.js";
 import {
   t as Zb
-} from "../chunks/DvkhmBmQ.js";
+} from "../chunks/SbDqeMnj.js";
 import {
   R as P6
-} from "../chunks/CHG_4Ky8.js";
+} from "../chunks/CsJAcljs.js";
 import {
   W as C6
-} from "../chunks/CkOtx7UW.js";
+} from "../chunks/D_d4qCsy.js";
 import {
   r as M6
-} from "../chunks/6FfcaTZk.js";
+} from "../chunks/DEyFV8iW.js";
 (function() {
   try {
     var _ = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     _.SENTRY_RELEASE = {
-      id: "524c6de5688559bfa8d287b7b1a6e5caba19cb91"
+      id: "ceaf71126b6ebfffce341bb7a3def1f2574f660c"
     };
     var s = new _.Error().stack;
-    s && (_._sentryDebugIds = _._sentryDebugIds || {}, _._sentryDebugIds[s] = "ee86e759-a548-4d39-8ddc-74c721519f06", _._sentryDebugIdIdentifier = "sentry-dbid-ee86e759-a548-4d39-8ddc-74c721519f06")
+    s && (_._sentryDebugIds = _._sentryDebugIds || {}, _._sentryDebugIds[s] = "59b7f01b-609a-4069-af2f-49cbbc16a84d", _._sentryDebugIdIdentifier = "sentry-dbid-59b7f01b-609a-4069-af2f-49cbbc16a84d")
   } catch {}
 })();
 const E6 = [];
@@ -43415,7 +43415,7 @@ Estamos muito animados para ver o que a comunidade vai criar com toda a sua cria
 ![](/img/events/r-wplaced/announcement-image.jpeg)
 Wplace exists because of the magic of r/place. To pay homage to it, we're bringing it back - Wplace style. 
 
-We have dedicated a special \`2000x1000\` canvas on the map for this event. Team up with your alliance, claim your territory, defend your art, and create something worth remembering!
+We have dedicated a special \`2000x2000\` canvas on the map for this event. Team up with your alliance, claim your territory, defend your art, and create something worth remembering!
 
 ## Event Details:
 - The canvas is live now! Click on the button below to visit
@@ -43428,7 +43428,7 @@ Good luck out there, artists!`,
 
 O Wplace existe por causa da magia do r/place. Para homenageá-lo, estamos trazendo isso de volta - no estilo Wplace.
 
-Dedicamos um canvas especial de \`2000x1000\` no mapa para este evento. Junte-se à sua aliança, reivindique seu território, defenda sua arte e crie algo digno de ser lembrado!
+Dedicamos um canvas especial de \`2000x2000\` no mapa para este evento. Junte-se à sua aliança, reivindique seu território, defenda sua arte e crie algo digno de ser lembrado!
 
 ## Detalhes do Evento:
 - O canvas já está ao vivo! Clique no botão abaixo para visitar
@@ -43626,8 +43626,8 @@ function Ek(_, s) {
     }) => ue),
     N = "r-wplaced-1",
     G = {
-      lat: -39.16407290251327,
-      lng: 15.644091796874974,
+      lat: -39.234091252620075,
+      lng: 15.645322265624973,
       zoom: 10.7
     },
     K = new Map(o.map(ue => [ue.id, yk(ue.markdown)])),
@@ -54130,7 +54130,7 @@ function _7(_, s) {
         Va(H, () => _e => (F(G, d7(_e, {
           strictMode: !0,
           initialCountry: "br",
-          loadUtils: () => x6(() => import("../chunks/NxZTi9hO.js"), [], import.meta.url),
+          loadUtils: () => x6(() => import("../chunks/lmiIarWz.js"), [], import.meta.url),
           containerClass: "w-full",
           dropdownContainer: document.body
         })), () => {
@@ -65920,7 +65920,7 @@ function SU(_, s) {
               },
               maxTile: {
                 x: 1113,
-                y: 1266
+                y: 1267
               }
             },
             color: "#ff4500",

@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./CshrrOY6.js";
+} from "./DNNhrQmR.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "524c6de5688559bfa8d287b7b1a6e5caba19cb91"
+      id: "ceaf71126b6ebfffce341bb7a3def1f2574f660c"
     };
     var r = new e.Error().stack;
     r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "e8766c05-867d-4e65-ae94-0e09d1aad9d4", e._sentryDebugIdIdentifier = "sentry-dbid-e8766c05-867d-4e65-ae94-0e09d1aad9d4")
@@ -17,15 +17,15 @@ const s = () => "Patch notes",
   a = () => "Versionshinweise",
   c = () => "Notas de actualización",
   i = () => "Notes de mise à jour",
-  l = () => "Note di aggiornamento",
-  _ = () => "リリースノート",
-  f = () => "Informacje o aktualizacji",
+  f = () => "Note di aggiornamento",
+  l = () => "リリースノート",
+  _ = () => "Informacje o aktualizacji",
   d = () => "Примечания к обновлению",
   p = () => "Нотатки про оновлення",
   h = () => "Ghi chú cập nhật",
   L = (e = {}, r = {}) => {
     const t = r.locale ?? n();
-    return t === "en" ? s() : t === "pt" ? o() : t === "ch" ? u() : t === "de" ? a() : t === "es" ? c() : t === "fr" ? i() : t === "it" ? l() : t === "jp" ? _() : t === "pl" ? f() : t === "ru" ? d() : t === "uk" ? p() : h()
+    return t === "en" ? s() : t === "pt" ? o() : t === "ch" ? u() : t === "de" ? a() : t === "es" ? c() : t === "fr" ? i() : t === "it" ? f() : t === "jp" ? l() : t === "pl" ? _() : t === "ru" ? d() : t === "uk" ? p() : h()
   },
   b = () => "Latest",
   g = () => "Mais recente",
