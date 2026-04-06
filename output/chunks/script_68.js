@@ -1,31 +1,31 @@
 import {
   g as d
-} from "./DNNhrQmR.js";
+} from "./rBENuJnv.js";
 (function() {
   try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
-      id: "ceaf71126b6ebfffce341bb7a3def1f2574f660c"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "1df086015dcad95f71ef916d3761e849d40d98a2"
     };
-    var r = new t.Error().stack;
-    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "bf585c41-8158-4483-ac0f-660c137c9fc1", t._sentryDebugIdIdentifier = "sentry-dbid-bf585c41-8158-4483-ac0f-660c137c9fc1")
+    var r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "bf585c41-8158-4483-ac0f-660c137c9fc1", e._sentryDebugIdIdentifier = "sentry-dbid-bf585c41-8158-4483-ac0f-660c137c9fc1")
   } catch {}
 })();
 const n = () => "Reddit",
   i = () => "Reddit",
-  f = () => "Reddit",
   u = () => "Reddit",
+  f = () => "Reddit",
   c = () => "Reddit",
   o = () => "Reddit",
   s = () => "Reddit",
   a = () => "Reddit",
   l = () => "Reddit",
   _ = () => "Reddit",
-  b = () => "Reddit",
   R = () => "Reddit",
-  g = (t = {}, r = {}) => {
-    const e = r.locale ?? d();
-    return e === "en" ? n() : e === "pt" ? i() : e === "ch" ? f() : e === "de" ? u() : e === "es" ? c() : e === "fr" ? o() : e === "it" ? s() : e === "jp" ? a() : e === "pl" ? l() : e === "ru" ? _() : e === "uk" ? b() : R()
+  p = () => "Reddit",
+  g = (e = {}, r = {}) => {
+    const t = r.locale ?? d();
+    return t === "en" ? n() : t === "pt" ? i() : t === "ch" ? u() : t === "de" ? f() : t === "es" ? c() : t === "fr" ? o() : t === "it" ? s() : t === "jp" ? a() : t === "pl" ? l() : t === "ru" ? _() : t === "uk" ? R() : p()
   };
 export {
   g as r

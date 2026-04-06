@@ -1,32 +1,32 @@
 import {
   g as n
-} from "./DNNhrQmR.js";
+} from "./rBENuJnv.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "ceaf71126b6ebfffce341bb7a3def1f2574f660c"
+      id: "1df086015dcad95f71ef916d3761e849d40d98a2"
     };
     var t = new r.Error().stack;
     t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "34b20000-aaf6-474f-a087-a222515fb8cf", r._sentryDebugIdIdentifier = "sentry-dbid-34b20000-aaf6-474f-a087-a222515fb8cf")
   } catch {}
 })();
 const i = () => "Preview",
-  f = () => "Prévia",
-  u = () => "预览",
+  u = () => "Prévia",
+  f = () => "预览",
   o = () => "Vorschau",
   s = () => "Vista previa",
-  c = () => "Aperçu",
-  p = () => "Anteprima",
-  a = () => "プレビュー",
+  p = () => "Aperçu",
+  a = () => "Anteprima",
+  c = () => "プレビュー",
   d = () => "Podgląd",
   v = () => "Предпросмотр",
   w = () => "Попередній перегляд",
   l = () => "Xem trước",
-  _ = (r = {}, t = {}) => {
+  b = (r = {}, t = {}) => {
     const e = t.locale ?? n();
-    return e === "en" ? i() : e === "pt" ? f() : e === "ch" ? u() : e === "de" ? o() : e === "es" ? s() : e === "fr" ? c() : e === "it" ? p() : e === "jp" ? a() : e === "pl" ? d() : e === "ru" ? v() : e === "uk" ? w() : l()
+    return e === "en" ? i() : e === "pt" ? u() : e === "ch" ? f() : e === "de" ? o() : e === "es" ? s() : e === "fr" ? p() : e === "it" ? a() : e === "jp" ? c() : e === "pl" ? d() : e === "ru" ? v() : e === "uk" ? w() : l()
   };
 export {
-  _ as p
+  b as p
 };

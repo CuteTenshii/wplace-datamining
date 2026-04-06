@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./DNNhrQmR.js";
+} from "./rBENuJnv.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "ceaf71126b6ebfffce341bb7a3def1f2574f660c"
+      id: "1df086015dcad95f71ef916d3761e849d40d98a2"
     };
     var r = new t.Error().stack;
     r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "ef8b3040-6b93-4d0f-be51-bb5dbad08aed", t._sentryDebugIdIdentifier = "sentry-dbid-ef8b3040-6b93-4d0f-be51-bb5dbad08aed")
@@ -15,17 +15,17 @@ const s = () => "Name",
   u = () => "Nome",
   a = () => "名称",
   o = () => "Name",
-  c = () => "Nombre",
-  i = () => "Nom",
-  _ = () => "Nome",
-  f = () => "名前",
-  l = () => "Nazwa",
+  i = () => "Nombre",
+  _ = () => "Nom",
+  c = () => "Nome",
+  l = () => "名前",
+  f = () => "Nazwa",
   d = () => "Имя",
   m = () => "Імʼя",
   p = () => "Tên",
-  fe = (t = {}, r = {}) => {
+  le = (t = {}, r = {}) => {
     const e = r.locale ?? n();
-    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? a() : e === "de" ? o() : e === "es" ? c() : e === "fr" ? i() : e === "it" ? _() : e === "jp" ? f() : e === "pl" ? l() : e === "ru" ? d() : e === "uk" ? m() : p()
+    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? a() : e === "de" ? o() : e === "es" ? i() : e === "fr" ? _() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? f() : e === "ru" ? d() : e === "uk" ? m() : p()
   },
   b = () => "We don't have frames to buy yet, wait for future updates ;)",
   k = () => "Ainda não temos molduras, crie sua primeira!",
@@ -39,7 +39,7 @@ const s = () => "Name",
   T = () => "У нас пока нет рам для покупки, ждите будущих обновлений ;)",
   w = () => "У нас ще немає рам для покупки, чекайте майбутніх оновлень ;)",
   E = () => "Chúng tôi chưa có khung ảnh để bán đâu, hãy chờ các bản cập nhật sắp tới nhé ;)",
-  le = (t = {}, r = {}) => {
+  fe = (t = {}, r = {}) => {
     const e = r.locale ?? n();
     return e === "en" ? b() : e === "pt" ? k() : e === "ch" ? h() : e === "de" ? y() : e === "es" ? g() : e === "fr" ? j() : e === "it" ? z() : e === "jp" ? N() : e === "pl" ? v() : e === "ru" ? T() : e === "uk" ? w() : E()
   },
@@ -85,12 +85,12 @@ const s = () => "Name",
   ue = () => "削除",
   ae = () => "Usuń",
   oe = () => "Удалить",
-  ce = () => "Видалити",
-  ie = () => "Xóa",
+  ie = () => "Видалити",
+  _e = () => "Xóa",
   pe = (t = {}, r = {}) => {
     const e = r.locale ?? n();
-    return e === "en" ? P() : e === "pt" ? $() : e === "ch" ? ee() : e === "de" ? re() : e === "es" ? te() : e === "fr" ? ne() : e === "it" ? se() : e === "jp" ? ue() : e === "pl" ? ae() : e === "ru" ? oe() : e === "uk" ? ce() : ie()
+    return e === "en" ? P() : e === "pt" ? $() : e === "ch" ? ee() : e === "de" ? re() : e === "es" ? te() : e === "fr" ? ne() : e === "it" ? se() : e === "jp" ? ue() : e === "pl" ? ae() : e === "ru" ? oe() : e === "uk" ? ie() : _e()
   };
 export {
-  pe as _, de as a, me as b, le as c, fe as n
+  pe as _, de as a, me as b, fe as c, le as n
 };

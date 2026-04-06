@@ -1,14 +1,14 @@
 import {
   g as t
-} from "./DNNhrQmR.js";
+} from "./rBENuJnv.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "ceaf71126b6ebfffce341bb7a3def1f2574f660c"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "1df086015dcad95f71ef916d3761e849d40d98a2"
     };
-    var r = new n.Error().stack;
-    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "b4aa13f6-08c7-49cd-9e53-dfbd6f6305da", n._sentryDebugIdIdentifier = "sentry-dbid-b4aa13f6-08c7-49cd-9e53-dfbd6f6305da")
+    var r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "b4aa13f6-08c7-49cd-9e53-dfbd6f6305da", e._sentryDebugIdIdentifier = "sentry-dbid-b4aa13f6-08c7-49cd-9e53-dfbd6f6305da")
   } catch {}
 })();
 const a = () => "Alliances",
@@ -16,16 +16,16 @@ const a = () => "Alliances",
   s = () => "联盟",
   i = () => "Allianzen",
   c = () => "Alianzas",
-  f = () => "Alliances",
-  u = () => "Alleanze",
-  o = () => "アライアンス",
-  d = () => "Sojusze",
-  b = () => "Альянсы",
-  _ = () => "Альянси",
+  u = () => "Alliances",
+  f = () => "Alleanze",
+  d = () => "アライアンス",
+  o = () => "Sojusze",
+  _ = () => "Альянсы",
+  b = () => "Альянси",
   p = () => "Các liên minh",
-  y = (n = {}, r = {}) => {
-    const e = r.locale ?? t();
-    return e === "en" ? a() : e === "pt" ? l() : e === "ch" ? s() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? f() : e === "it" ? u() : e === "jp" ? o() : e === "pl" ? d() : e === "ru" ? b() : e === "uk" ? _() : p()
+  y = (e = {}, r = {}) => {
+    const n = r.locale ?? t();
+    return n === "en" ? a() : n === "pt" ? l() : n === "ch" ? s() : n === "de" ? i() : n === "es" ? c() : n === "fr" ? u() : n === "it" ? f() : n === "jp" ? d() : n === "pl" ? o() : n === "ru" ? _() : n === "uk" ? b() : p()
   };
 export {
   y as a
