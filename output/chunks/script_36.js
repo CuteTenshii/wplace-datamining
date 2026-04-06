@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./rBENuJnv.js";
+} from "./n6S4vljj.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "1df086015dcad95f71ef916d3761e849d40d98a2"
+      id: "499b14f045c01e257aa2f9d700904a576cc252cf"
     };
     var r = new t.Error().stack;
     r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "67f79cc8-22ab-47de-af8c-13ae3a039fcf", t._sentryDebugIdIdentifier = "sentry-dbid-67f79cc8-22ab-47de-af8c-13ae3a039fcf")
@@ -17,21 +17,21 @@ const o = () => "Add profile picture",
   _ = () => "Profilbild hinzufügen",
   s = () => "Añadir imagen de perfil",
   p = () => "Ajouter une image de profil",
-  l = () => "Aggiungi immagine del profilo",
-  c = () => "プロフィール画像を追加",
+  c = () => "Aggiungi immagine del profilo",
+  l = () => "プロフィール画像を追加",
   d = () => "Dodaj zdjęcie profilowe",
   f = () => "Добавить изображение профиля",
   a = () => "Додати зображення профілю",
   g = () => "Thêm ảnh đại diện",
   ve = (t = {}, r = {}) => {
     const e = r.locale ?? n();
-    return e === "en" ? o() : e === "pt" ? u() : e === "ch" ? i() : e === "de" ? _() : e === "es" ? s() : e === "fr" ? p() : e === "it" ? l() : e === "jp" ? c() : e === "pl" ? d() : e === "ru" ? f() : e === "uk" ? a() : g()
+    return e === "en" ? o() : e === "pt" ? u() : e === "ch" ? i() : e === "de" ? _() : e === "es" ? s() : e === "fr" ? p() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? d() : e === "ru" ? f() : e === "uk" ? a() : g()
   },
   h = () => "Eraser",
   y = () => "Borracha",
   m = () => "橡皮擦",
-  k = () => "Radierer",
-  b = () => "Borrador",
+  b = () => "Radierer",
+  k = () => "Borrador",
   x = () => "Gomme",
   j = () => "Gomma",
   v = () => "消しゴム",
@@ -41,7 +41,7 @@ const o = () => "Add profile picture",
   P = () => "Cục tẩy",
   ze = (t = {}, r = {}) => {
     const e = r.locale ?? n();
-    return e === "en" ? h() : e === "pt" ? y() : e === "ch" ? m() : e === "de" ? k() : e === "es" ? b() : e === "fr" ? x() : e === "it" ? j() : e === "jp" ? v() : e === "pl" ? z() : e === "ru" ? q() : e === "uk" ? D() : P()
+    return e === "en" ? h() : e === "pt" ? y() : e === "ch" ? m() : e === "de" ? b() : e === "es" ? k() : e === "fr" ? x() : e === "it" ? j() : e === "jp" ? v() : e === "pl" ? z() : e === "ru" ? q() : e === "uk" ? D() : P()
   },
   w = () => "Not enough Droplets",
   A = () => "Droplets insuficientes",
@@ -91,8 +91,8 @@ const o = () => "Add profile picture",
     const e = r.locale ?? n();
     return e === "en" ? X() : e === "pt" ? $() : e === "ch" ? ee() : e === "de" ? re() : e === "es" ? te() : e === "fr" ? ne() : e === "it" ? oe() : e === "jp" ? ue() : e === "pl" ? ie() : e === "ru" ? _e() : e === "uk" ? se() : pe()
   },
-  le = () => "You gain 1 droplet per pixel painted and 500 Droplets per level",
-  ce = () => "Você ganha 1 droplet por pixel pintado e 500 droplets por level",
+  ce = () => "You gain 1 droplet per pixel painted and 500 Droplets per level",
+  le = () => "Você ganha 1 droplet por pixel pintado e 500 droplets por level",
   de = () => "你每绘制 1 个像素可获得 1 个水滴，每升 1 级可获得 500 个水滴",
   fe = () => "Du erhältst 1 Droplet pro gemaltem Pixel und 500 Droplets pro Level",
   ae = () => "Ganas 1 gota por píxel pintado y 500 gotas por nivel",
@@ -100,12 +100,12 @@ const o = () => "Add profile picture",
   he = () => "Guadagni 1 goccia per ogni pixel dipinto e 500 gocce per livello",
   ye = () => "ピクセルを1つ塗るごとにドロップレットを1つ、レベルごとに500ドロップレットを獲得します。",
   me = () => "Otrzymujesz 1 kroplę za każdy pomalowany piksel i 500 kropli za każdy poziom",
-  ke = () => "Вы получаете 1 droplet за каждый нарисованный пиксель и 500 droplets за уровень",
-  be = () => "Ви отримуєте 1 дроплет за кожен намальований піксель і 500 дроплетів за рівень",
+  be = () => "Вы получаете 1 droplet за каждый нарисованный пиксель и 500 droplets за уровень",
+  ke = () => "Ви отримуєте 1 дроплет за кожен намальований піксель і 500 дроплетів за рівень",
   xe = () => "Bạn nhận 1 droplet cho mỗi pixel tô và 500 droplets mỗi cấp độ",
   we = (t = {}, r = {}) => {
     const e = r.locale ?? n();
-    return e === "en" ? le() : e === "pt" ? ce() : e === "ch" ? de() : e === "de" ? fe() : e === "es" ? ae() : e === "fr" ? ge() : e === "it" ? he() : e === "jp" ? ye() : e === "pl" ? me() : e === "ru" ? ke() : e === "uk" ? be() : xe()
+    return e === "en" ? ce() : e === "pt" ? le() : e === "ch" ? de() : e === "de" ? fe() : e === "es" ? ae() : e === "fr" ? ge() : e === "it" ? he() : e === "jp" ? ye() : e === "pl" ? me() : e === "ru" ? be() : e === "uk" ? ke() : xe()
   };
 export {
   ve as a, De as b, ze as e, qe as n, Pe as r, we as y

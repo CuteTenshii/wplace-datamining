@@ -2,17 +2,17 @@
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "1df086015dcad95f71ef916d3761e849d40d98a2"
+      id: "499b14f045c01e257aa2f9d700904a576cc252cf"
     };
     var o = new t.Error().stack;
     o && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[o] = "2873cead-a87c-4550-afcc-7d8128f4def3", t._sentryDebugIdIdentifier = "sentry-dbid-2873cead-a87c-4550-afcc-7d8128f4def3")
   } catch {}
 })();
-const E = "modulepreload",
-  b = function(t, o) {
+const g = "modulepreload",
+  E = function(t, o) {
     return new URL(t, o).href
   },
-  g = {},
+  b = {},
   w = function(o, d, u) {
     let h = Promise.resolve();
     if (d && d.length > 0) {
@@ -29,8 +29,8 @@ const E = "modulepreload",
         l = document.querySelector("meta[property=csp-nonce]"),
         m = (l == null ? void 0 : l.nonce) || (l == null ? void 0 : l.getAttribute("nonce"));
       h = i(d.map(e => {
-        if (e = b(e, u), e in g) return;
-        g[e] = !0;
+        if (e = E(e, u), e in b) return;
+        b[e] = !0;
         const s = e.endsWith(".css"),
           c = s ? '[rel="stylesheet"]' : "";
         if (!!u)
@@ -39,7 +39,7 @@ const E = "modulepreload",
             if (f.href === e && (!s || f.rel === "stylesheet")) return
           } else if (document.querySelector(`link[href="${e}"]${c}`)) return;
         const r = document.createElement("link");
-        if (r.rel = s ? "stylesheet" : E, s || (r.as = "script"), r.crossOrigin = "", r.href = e, m && r.setAttribute("nonce", m), document.head.appendChild(r), s) return new Promise((a, f) => {
+        if (r.rel = s ? "stylesheet" : g, s || (r.as = "script"), r.crossOrigin = "", r.href = e, m && r.setAttribute("nonce", m), document.head.appendChild(r), s) return new Promise((a, f) => {
           r.addEventListener("load", a), r.addEventListener("error", () => f(new Error(`Unable to preload CSS for ${e}`)))
         })
       }))

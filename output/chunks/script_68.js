@@ -1,11 +1,11 @@
 import {
   g as d
-} from "./rBENuJnv.js";
+} from "./n6S4vljj.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "1df086015dcad95f71ef916d3761e849d40d98a2"
+      id: "499b14f045c01e257aa2f9d700904a576cc252cf"
     };
     var r = new e.Error().stack;
     r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "bf585c41-8158-4483-ac0f-660c137c9fc1", e._sentryDebugIdIdentifier = "sentry-dbid-bf585c41-8158-4483-ac0f-660c137c9fc1")
@@ -14,8 +14,8 @@ import {
 const n = () => "Reddit",
   i = () => "Reddit",
   u = () => "Reddit",
-  f = () => "Reddit",
   c = () => "Reddit",
+  f = () => "Reddit",
   o = () => "Reddit",
   s = () => "Reddit",
   a = () => "Reddit",
@@ -25,7 +25,7 @@ const n = () => "Reddit",
   p = () => "Reddit",
   g = (e = {}, r = {}) => {
     const t = r.locale ?? d();
-    return t === "en" ? n() : t === "pt" ? i() : t === "ch" ? u() : t === "de" ? f() : t === "es" ? c() : t === "fr" ? o() : t === "it" ? s() : t === "jp" ? a() : t === "pl" ? l() : t === "ru" ? _() : t === "uk" ? R() : p()
+    return t === "en" ? n() : t === "pt" ? i() : t === "ch" ? u() : t === "de" ? c() : t === "es" ? f() : t === "fr" ? o() : t === "it" ? s() : t === "jp" ? a() : t === "pl" ? l() : t === "ru" ? _() : t === "uk" ? R() : p()
   };
 export {
   g as r

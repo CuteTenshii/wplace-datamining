@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./rBENuJnv.js";
+} from "./n6S4vljj.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "1df086015dcad95f71ef916d3761e849d40d98a2"
+      id: "499b14f045c01e257aa2f9d700904a576cc252cf"
     };
     var r = new e.Error().stack;
     r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "e8766c05-867d-4e65-ae94-0e09d1aad9d4", e._sentryDebugIdIdentifier = "sentry-dbid-e8766c05-867d-4e65-ae94-0e09d1aad9d4")
@@ -28,8 +28,8 @@ const s = () => "Patch notes",
     return t === "en" ? s() : t === "pt" ? o() : t === "ch" ? u() : t === "de" ? a() : t === "es" ? c() : t === "fr" ? i() : t === "it" ? f() : t === "jp" ? l() : t === "pl" ? _() : t === "ru" ? d() : t === "uk" ? p() : h()
   },
   g = () => "Latest",
-  y = () => "Mais recente",
-  b = () => "最新",
+  b = () => "Mais recente",
+  y = () => "最新",
   j = () => "Neueste",
   m = () => "Último",
   w = () => "Derniers",
@@ -41,7 +41,7 @@ const s = () => "Patch notes",
   v = () => "Mới nhất",
   T = (e = {}, r = {}) => {
     const t = r.locale ?? n();
-    return t === "en" ? g() : t === "pt" ? y() : t === "ch" ? b() : t === "de" ? j() : t === "es" ? m() : t === "fr" ? w() : t === "it" ? N() : t === "jp" ? k() : t === "pl" ? I() : t === "ru" ? D() : t === "uk" ? E() : v()
+    return t === "en" ? g() : t === "pt" ? b() : t === "ch" ? y() : t === "de" ? j() : t === "es" ? m() : t === "fr" ? w() : t === "it" ? N() : t === "jp" ? k() : t === "pl" ? I() : t === "ru" ? D() : t === "uk" ? E() : v()
   };
 export {
   T as l, L as p
