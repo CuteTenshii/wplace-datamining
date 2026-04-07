@@ -1,32 +1,48 @@
 import {
-  g as c
-} from "./n6S4vljj.js";
+  g as n
+} from "./CTqtndnH.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "499b14f045c01e257aa2f9d700904a576cc252cf"
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    t.SENTRY_RELEASE = {
+      id: "1ae31973f4926d133f10795b35e7941f19bd2842"
     };
-    var r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "5f94ed96-6b3a-41b9-b71c-23a660596945", e._sentryDebugIdIdentifier = "sentry-dbid-5f94ed96-6b3a-41b9-b71c-23a660596945")
+    var r = new t.Error().stack;
+    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "8b661710-f58b-4309-8992-d1f0962ae2da", t._sentryDebugIdIdentifier = "sentry-dbid-8b661710-f58b-4309-8992-d1f0962ae2da")
   } catch {}
 })();
-const t = () => "Cancel",
-  u = () => "Cancelar",
-  a = () => "取消",
-  l = () => "Abbrechen",
-  o = () => "Cancelar",
-  s = () => "Annuler",
-  f = () => "Annulla",
-  i = () => "キャンセル",
-  d = () => "Anuluj",
-  b = () => "Отмена",
-  _ = () => "Скасувати",
-  p = () => "Hủy",
-  g = (e = {}, r = {}) => {
-    const n = r.locale ?? c();
-    return n === "en" ? t() : n === "pt" ? u() : n === "ch" ? a() : n === "de" ? l() : n === "es" ? o() : n === "fr" ? s() : n === "it" ? f() : n === "jp" ? i() : n === "pl" ? d() : n === "ru" ? b() : n === "uk" ? _() : p()
+const i = () => "Description",
+  s = () => "Descrição",
+  p = () => "描述",
+  o = () => "Beschreibung",
+  u = () => "Descripción",
+  c = () => "Description",
+  d = () => "Descrizione",
+  f = () => "説明",
+  l = () => "Opis",
+  _ = () => "Описание",
+  a = () => "Опис",
+  x = () => "Mô tả",
+  T = (t = {}, r = {}) => {
+    const e = r.locale ?? n();
+    return e === "en" ? i() : e === "pt" ? s() : e === "ch" ? p() : e === "de" ? o() : e === "es" ? u() : e === "fr" ? c() : e === "it" ? d() : e === "jp" ? f() : e === "pl" ? l() : e === "ru" ? _() : e === "uk" ? a() : x()
+  },
+  b = () => "Pixels painted",
+  g = () => "Pixels pintados",
+  y = () => "已绘制像素数",
+  D = () => "Gemalte Pixel",
+  h = () => "Píxeles pintados",
+  P = () => "Pixels peints",
+  k = () => "Pixel dipinti",
+  w = () => "塗られたピクセル数",
+  E = () => "Pomalowane piksele",
+  I = () => "Нарисованные пиксели",
+  j = () => "Намальовані пікселі",
+  m = () => "Pixel đã tô",
+  L = (t = {}, r = {}) => {
+    const e = r.locale ?? n();
+    return e === "en" ? b() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? D() : e === "es" ? h() : e === "fr" ? P() : e === "it" ? k() : e === "jp" ? w() : e === "pl" ? E() : e === "ru" ? I() : e === "uk" ? j() : m()
   };
 export {
-  g as c
+  T as d, L as p
 };

@@ -1,32 +1,36 @@
+import "./CMG6YQUx.js";
 import {
-  g as t
-} from "./n6S4vljj.js";
+  a as d,
+  J as s
+} from "./DEEyd5H-.js";
+import {
+  d as a
+} from "./akmeWrm-.js";
+import {
+  r as f
+} from "./5Zk4sd1d.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "499b14f045c01e257aa2f9d700904a576cc252cf"
+      id: "1ae31973f4926d133f10795b35e7941f19bd2842"
     };
-    var n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "63f7c335-11b0-44dc-8251-4ab0ac9f111e", e._sentryDebugIdIdentifier = "sentry-dbid-63f7c335-11b0-44dc-8251-4ab0ac9f111e")
+    var t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "30a9277d-629f-42bd-9ece-b82935d3dacf", e._sentryDebugIdIdentifier = "sentry-dbid-30a9277d-629f-42bd-9ece-b82935d3dacf")
   } catch {}
 })();
-const o = () => "Copy",
-  c = () => "Copiar",
-  u = () => "复制",
-  i = () => "Kopieren",
-  p = () => "Copiar",
-  f = () => "Copier",
-  s = () => "Copia",
-  a = () => "コピー",
-  y = () => "Kopiuj",
-  d = () => "Копировать",
-  l = () => "Копіювати",
-  _ = () => "Sao chép",
-  g = (e = {}, n = {}) => {
-    const r = n.locale ?? t();
-    return r === "en" ? o() : r === "pt" ? c() : r === "ch" ? u() : r === "de" ? i() : r === "es" ? p() : r === "fr" ? f() : r === "it" ? s() : r === "jp" ? a() : r === "pl" ? y() : r === "ru" ? d() : r === "uk" ? l() : _()
-  };
+var n = s('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
+
+function g(e, t) {
+  let o = f(t, ["$$slots", "$$events", "$$legacy"]);
+  var r = n();
+  a(r, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...o
+  })), d(e, r)
+}
 export {
-  g as c
+  g as L
 };

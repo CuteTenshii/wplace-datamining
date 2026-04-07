@@ -1,48 +1,59 @@
-import {
-  g as n
-} from "./n6S4vljj.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "499b14f045c01e257aa2f9d700904a576cc252cf"
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    t.SENTRY_RELEASE = {
+      id: "1ae31973f4926d133f10795b35e7941f19bd2842"
     };
-    var t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "cb8a8c42-bfef-4d63-bd7e-6819d1f929eb", e._sentryDebugIdIdentifier = "sentry-dbid-cb8a8c42-bfef-4d63-bd7e-6819d1f929eb")
+    var r = new t.Error().stack;
+    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "3165cf74-2c30-440d-8753-7217d3d69437", t._sentryDebugIdIdentifier = "sentry-dbid-3165cf74-2c30-440d-8753-7217d3d69437")
   } catch {}
 })();
-const u = () => "Members",
-  s = () => "Membros",
-  o = () => "成员",
-  i = () => "Mitglieder",
-  c = () => "Miembros",
-  f = () => "Membres",
-  a = () => "Membri",
-  l = () => "メンバー",
-  b = () => "Członkowie",
-  p = () => "Участники",
-  m = () => "Учасники",
-  d = () => "Thành viên",
-  J = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? u() : r === "pt" ? s() : r === "ch" ? o() : r === "de" ? i() : r === "es" ? c() : r === "fr" ? f() : r === "it" ? a() : r === "jp" ? l() : r === "pl" ? b() : r === "ru" ? p() : r === "uk" ? m() : d()
-  },
-  _ = () => "Player",
-  y = () => "Jogador",
-  g = () => "玩家",
-  h = () => "Spieler",
-  k = () => "Jugador",
-  w = () => "Joueur",
-  M = () => "Giocatore",
-  v = () => "プレイヤー",
-  E = () => "Gracz",
-  I = () => "Игрок",
-  j = () => "Гравець",
-  D = () => "Người chơi",
-  S = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _() : r === "pt" ? y() : r === "ch" ? g() : r === "de" ? h() : r === "es" ? k() : r === "fr" ? w() : r === "it" ? M() : r === "jp" ? v() : r === "pl" ? E() : r === "ru" ? I() : r === "uk" ? j() : D()
-  };
+
+function C(t) {
+  const r = t - 1;
+  return r * r * r + 1
+}
+
+function T(t, {
+  from: r,
+  to: e
+}, u = {}) {
+  var {
+    delay: c = 0,
+    duration: i = a => Math.sqrt(a) * 120,
+    easing: v = C
+  } = u, d = getComputedStyle(t), y = d.transform === "none" ? "" : d.transform, [s, f] = d.transformOrigin.split(" ").map(parseFloat);
+  s /= t.clientWidth, f /= t.clientHeight;
+  var h = D(t),
+    g = t.clientWidth / e.width / h,
+    p = t.clientHeight / e.height / h,
+    b = r.left + r.width * s,
+    w = r.top + r.height * f,
+    x = e.left + e.width * s,
+    m = e.top + e.height * f,
+    o = (b - x) * g,
+    l = (w - m) * p,
+    S = r.width / e.width,
+    E = r.height / e.height;
+  return {
+    delay: c,
+    duration: typeof i == "function" ? i(Math.sqrt(o * o + l * l)) : i,
+    easing: v,
+    css: (a, n) => {
+      var _ = n * o,
+        I = n * l,
+        $ = a + n * S,
+        z = a + n * E;
+      return `transform: ${y} translate(${_}px, ${I}px) scale(${$}, ${z});`
+    }
+  }
+}
+
+function D(t) {
+  if ("currentCSSZoom" in t) return t.currentCSSZoom;
+  for (var r = t, e = 1; r !== null;) e *= +getComputedStyle(r).zoom, r = r.parentElement;
+  return e
+}
 export {
-  J as m, S as p
+  T as f
 };

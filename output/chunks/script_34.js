@@ -1,28 +1,32 @@
 import {
-  g as n
-} from "./n6S4vljj.js";
+  g as t
+} from "./CTqtndnH.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "499b14f045c01e257aa2f9d700904a576cc252cf"
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "1ae31973f4926d133f10795b35e7941f19bd2842"
     };
-    var t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "ec311c48-704d-4d83-9057-a66cf103fa2c", e._sentryDebugIdIdentifier = "sentry-dbid-ec311c48-704d-4d83-9057-a66cf103fa2c")
+    var n = new r.Error().stack;
+    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "fde52f20-e9b7-4a5a-9d4e-f7e9760c9b21", r._sentryDebugIdIdentifier = "sentry-dbid-fde52f20-e9b7-4a5a-9d4e-f7e9760c9b21")
   } catch {}
 })();
-
-function r() {
-  return n()
-}
-
-function c() {
-  return `/terms/return${r()==="pt"?"/pt":""}`
-}
-
-function s() {
-  return `/terms/terms-of-service${r()==="pt"?"/pt":""}`
-}
+const o = () => "Close",
+  s = () => "Fechar",
+  c = () => "关闭",
+  u = () => "Schließen",
+  f = () => "Cerrar",
+  i = () => "Fermer",
+  l = () => "Chiudi",
+  d = () => "閉じる",
+  a = () => "Zamknij",
+  _ = () => "Закрыть",
+  b = () => "Закрити",
+  p = () => "Đóng",
+  y = (r = {}, n = {}) => {
+    const e = n.locale ?? t();
+    return e === "en" ? o() : e === "pt" ? s() : e === "ch" ? c() : e === "de" ? u() : e === "es" ? f() : e === "fr" ? i() : e === "it" ? l() : e === "jp" ? d() : e === "pl" ? a() : e === "ru" ? _() : e === "uk" ? b() : p()
+  };
 export {
-  r as g, c as r, s as t
+  y as c
 };
