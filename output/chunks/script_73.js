@@ -1,32 +1,32 @@
 import {
-  g as n
-} from "./CTqtndnH.js";
+  g as a
+} from "./DrzYdI9r.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "1ae31973f4926d133f10795b35e7941f19bd2842"
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "72fbd38af17dae1ddf2de413da161ffaa3b3b729"
     };
-    var t = new r.Error().stack;
-    t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "34b20000-aaf6-474f-a087-a222515fb8cf", r._sentryDebugIdIdentifier = "sentry-dbid-34b20000-aaf6-474f-a087-a222515fb8cf")
+    var r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "ffe8b5ce-112e-4e22-9d99-575b1568dd07", n._sentryDebugIdIdentifier = "sentry-dbid-ffe8b5ce-112e-4e22-9d99-575b1568dd07")
   } catch {}
 })();
-const i = () => "Preview",
-  u = () => "Prévia",
-  f = () => "预览",
-  o = () => "Vorschau",
-  s = () => "Vista previa",
-  p = () => "Aperçu",
-  a = () => "Anteprima",
-  c = () => "プレビュー",
-  d = () => "Podgląd",
-  v = () => "Предпросмотр",
-  w = () => "Попередній перегляд",
-  l = () => "Xem trước",
-  b = (r = {}, t = {}) => {
-    const e = t.locale ?? n();
-    return e === "en" ? i() : e === "pt" ? u() : e === "ch" ? f() : e === "de" ? o() : e === "es" ? s() : e === "fr" ? p() : e === "it" ? a() : e === "jp" ? c() : e === "pl" ? d() : e === "ru" ? v() : e === "uk" ? w() : l()
+const t = () => "Ban appeal",
+  p = () => "Revisão de banimento",
+  o = () => "封禁申诉",
+  u = () => "Bann-Einspruch",
+  s = () => "Apelación de ban",
+  d = () => "Recours de bannissement",
+  i = () => "Ricorso contro il ban",
+  b = () => "BANの異議申立て",
+  f = () => "Odwołanie od bana",
+  l = () => "Апелляция на бан",
+  c = () => "Апеляція на бан",
+  _ = () => "Kháng cáo lệnh cấm",
+  y = (n = {}, r = {}) => {
+    const e = r.locale ?? a();
+    return e === "en" ? t() : e === "pt" ? p() : e === "ch" ? o() : e === "de" ? u() : e === "es" ? s() : e === "fr" ? d() : e === "it" ? i() : e === "jp" ? b() : e === "pl" ? f() : e === "ru" ? l() : e === "uk" ? c() : _()
   };
 export {
-  b as p
+  y as b
 };

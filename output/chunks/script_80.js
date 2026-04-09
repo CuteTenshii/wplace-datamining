@@ -1,36 +1,35 @@
-import "./CMG6YQUx.js";
+import "./DrzYdI9r.js";
 import {
-  a as s,
-  J as d
-} from "./DEEyd5H-.js";
-import {
-  d as a
-} from "./akmeWrm-.js";
-import {
-  r as f
-} from "./5Zk4sd1d.js";
+  a as o,
+  g as r,
+  m as t,
+  d as s,
+  u as a
+} from "./Dh35rxGp.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "1ae31973f4926d133f10795b35e7941f19bd2842"
+    var d = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    d.SENTRY_RELEASE = {
+      id: "72fbd38af17dae1ddf2de413da161ffaa3b3b729"
     };
-    var t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "dde8a037-466f-4d6e-8e3e-c603a389174e", e._sentryDebugIdIdentifier = "sentry-dbid-dde8a037-466f-4d6e-8e3e-c603a389174e")
+    var e = new d.Error().stack;
+    e && (d._sentryDebugIds = d._sentryDebugIds || {}, d._sentryDebugIds[e] = "e8fab307-0c19-489f-9189-255b4f099f28", d._sentryDebugIdIdentifier = "sentry-dbid-e8fab307-0c19-489f-9189-255b4f099f28")
   } catch {}
 })();
-var n = d('<svg><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"></path></svg>');
-
-function v(e, t) {
-  let r = f(t, ["$$slots", "$$events", "$$legacy"]);
-  var o = n();
-  a(o, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...r
-  })), s(e, o)
-}
+const b = {
+    user: a(),
+    community_leader: "Disc. Mod",
+    moderator: "MOD",
+    global_moderator: "GM",
+    admin: "Admin"
+  },
+  m = {
+    user: a(),
+    community_leader: s(),
+    moderator: t(),
+    global_moderator: r(),
+    admin: o()
+  };
 export {
-  v as R
+  m as R, b as a
 };

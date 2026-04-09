@@ -1,32 +1,32 @@
 import {
-  g as t
-} from "./CTqtndnH.js";
+  g as n
+} from "./DrzYdI9r.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "1ae31973f4926d133f10795b35e7941f19bd2842"
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "72fbd38af17dae1ddf2de413da161ffaa3b3b729"
     };
-    var n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "9e1c69b5-b723-411d-98e1-8b15a711bd6c", e._sentryDebugIdIdentifier = "sentry-dbid-9e1c69b5-b723-411d-98e1-8b15a711bd6c")
+    var t = new r.Error().stack;
+    t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "34b20000-aaf6-474f-a087-a222515fb8cf", r._sentryDebugIdIdentifier = "sentry-dbid-34b20000-aaf6-474f-a087-a222515fb8cf")
   } catch {}
 })();
-const d = () => "Dashboard",
-  a = () => "Painel",
-  o = () => "控制台",
-  s = () => "Dashboard",
-  u = () => "Panel",
-  b = () => "Tableau de bord",
-  i = () => "Pannello",
-  f = () => "ダッシュボード",
-  c = () => "Panel",
-  l = () => "Панель",
-  h = () => "Панель",
-  _ = () => "Bảng điều khiển",
-  g = (e = {}, n = {}) => {
-    const r = n.locale ?? t();
-    return r === "en" ? d() : r === "pt" ? a() : r === "ch" ? o() : r === "de" ? s() : r === "es" ? u() : r === "fr" ? b() : r === "it" ? i() : r === "jp" ? f() : r === "pl" ? c() : r === "ru" ? l() : r === "uk" ? h() : _()
+const i = () => "Preview",
+  u = () => "Prévia",
+  f = () => "预览",
+  o = () => "Vorschau",
+  s = () => "Vista previa",
+  a = () => "Aperçu",
+  p = () => "Anteprima",
+  d = () => "プレビュー",
+  c = () => "Podgląd",
+  v = () => "Предпросмотр",
+  w = () => "Попередній перегляд",
+  l = () => "Xem trước",
+  b = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? i() : e === "pt" ? u() : e === "ch" ? f() : e === "de" ? o() : e === "es" ? s() : e === "fr" ? a() : e === "it" ? p() : e === "jp" ? d() : e === "pl" ? c() : e === "ru" ? v() : e === "uk" ? w() : l()
   };
 export {
-  g as d
+  b as p
 };

@@ -1,32 +1,36 @@
+import "./Bw2t7C85.js";
 import {
-  g as a
-} from "./CTqtndnH.js";
+  a as o,
+  J as s
+} from "./Cu0FD5l7.js";
+import {
+  d as a
+} from "./CjbocO6j.js";
+import {
+  r as f
+} from "./BGoOJG7D.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "1ae31973f4926d133f10795b35e7941f19bd2842"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "72fbd38af17dae1ddf2de413da161ffaa3b3b729"
     };
-    var r = new n.Error().stack;
-    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "ffe8b5ce-112e-4e22-9d99-575b1568dd07", n._sentryDebugIdIdentifier = "sentry-dbid-ffe8b5ce-112e-4e22-9d99-575b1568dd07")
+    var t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "dde8a037-466f-4d6e-8e3e-c603a389174e", e._sentryDebugIdIdentifier = "sentry-dbid-dde8a037-466f-4d6e-8e3e-c603a389174e")
   } catch {}
 })();
-const t = () => "Ban appeal",
-  p = () => "Revisão de banimento",
-  o = () => "封禁申诉",
-  u = () => "Bann-Einspruch",
-  s = () => "Apelación de ban",
-  i = () => "Recours de bannissement",
-  b = () => "Ricorso contro il ban",
-  l = () => "BANの異議申立て",
-  d = () => "Odwołanie od bana",
-  f = () => "Апелляция на бан",
-  c = () => "Апеляція на бан",
-  _ = () => "Kháng cáo lệnh cấm",
-  y = (n = {}, r = {}) => {
-    const e = r.locale ?? a();
-    return e === "en" ? t() : e === "pt" ? p() : e === "ch" ? o() : e === "de" ? u() : e === "es" ? s() : e === "fr" ? i() : e === "it" ? b() : e === "jp" ? l() : e === "pl" ? d() : e === "ru" ? f() : e === "uk" ? c() : _()
-  };
+var n = s('<svg><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"></path></svg>');
+
+function v(e, t) {
+  let r = f(t, ["$$slots", "$$events", "$$legacy"]);
+  var d = n();
+  a(d, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...r
+  })), o(e, d)
+}
 export {
-  y as b
+  v as R
 };

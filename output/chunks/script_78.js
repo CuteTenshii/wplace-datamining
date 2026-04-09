@@ -1,35 +1,60 @@
-import "./CTqtndnH.js";
+import "./Bw2t7C85.js";
+import "./BV9B4E7T.js";
 import {
-  a as d,
-  g as a,
-  m as t,
-  d as s,
-  u as r
-} from "./DXeNVQQi.js";
+  p as n,
+  a as p,
+  b as l,
+  c as b,
+  r as c,
+  i as d,
+  K as m
+} from "./Cu0FD5l7.js";
+import {
+  e as u
+} from "./Bi3kWf99.js";
+import {
+  i as g
+} from "./Cod6-w0f.js";
+import {
+  p as h,
+  V as v,
+  P as y
+} from "./B8QXp_Ht.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "1ae31973f4926d133f10795b35e7941f19bd2842"
+      id: "72fbd38af17dae1ddf2de413da161ffaa3b3b729"
     };
-    var o = new e.Error().stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "e8fab307-0c19-489f-9189-255b4f099f28", e._sentryDebugIdIdentifier = "sentry-dbid-e8fab307-0c19-489f-9189-255b4f099f28")
+    var a = new e.Error().stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "d7cf74b9-ecdb-4a29-b58d-3b8e4de02c2d", e._sentryDebugIdIdentifier = "sentry-dbid-d7cf74b9-ecdb-4a29-b58d-3b8e4de02c2d")
   } catch {}
 })();
-const m = {
-    user: r(),
-    community_leader: "Disc. Mod",
-    moderator: "MOD",
-    global_moderator: "GM",
-    admin: "Admin"
-  },
-  b = {
-    user: r(),
-    community_leader: s(),
-    moderator: t(),
-    global_moderator: a(),
-    admin: d()
-  };
+var _ = b('<div class="flex flex-col gap-6"></div>');
+
+function x(e, a) {
+  n(a, !1);
+  const r = [...h].reverse().map(t => ({
+    version: t.version,
+    title: t.title,
+    html: v(t.markdown)
+  }));
+  g();
+  var s = _();
+  u(s, 7, () => r, t => t.version, (t, o, i) => {
+    {
+      let f = m(() => d(i) === 0);
+      y(t, {
+        get patchNote() {
+          return d(o)
+        },
+        get latest() {
+          return d(f)
+        }
+      })
+    }
+  }), c(s), p(e, s), l()
+}
 export {
-  b as R, m as a
+  x as P
 };

@@ -1,32 +1,32 @@
 import {
-  g as o
-} from "./CTqtndnH.js";
+  g as t
+} from "./DrzYdI9r.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "1ae31973f4926d133f10795b35e7941f19bd2842"
+      id: "72fbd38af17dae1ddf2de413da161ffaa3b3b729"
     };
-    var n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "4a5c7974-0033-48df-9303-4bfb47be1c3c", e._sentryDebugIdIdentifier = "sentry-dbid-4a5c7974-0033-48df-9303-4bfb47be1c3c")
+    var r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "78e0385c-af8c-4072-92de-17e3eda2f679", e._sentryDebugIdIdentifier = "sentry-dbid-78e0385c-af8c-4072-92de-17e3eda2f679")
   } catch {}
 })();
-const t = () => "Error loading",
-  i = () => "Erro ao carregar",
-  a = () => "加载出错",
-  d = () => "Fehler beim Laden",
-  u = () => "Error al cargar",
-  l = () => "Erreur lors du chargement",
-  c = () => "Errore nel caricamento",
-  f = () => "読み込みエラー",
-  s = () => "Błąd ładowania",
-  _ = () => "Ошибка загрузки",
-  g = () => "Помилка завантаження",
-  b = () => "Lỗi tải dữ liệu",
-  y = (e = {}, n = {}) => {
-    const r = n.locale ?? o();
-    return r === "en" ? t() : r === "pt" ? i() : r === "ch" ? a() : r === "de" ? d() : r === "es" ? u() : r === "fr" ? l() : r === "it" ? c() : r === "jp" ? f() : r === "pl" ? s() : r === "ru" ? _() : r === "uk" ? g() : b()
+const o = () => "Loading...",
+  d = () => "Carregando...",
+  a = () => "加载中...",
+  i = () => "Laden...",
+  u = () => "Cargando...",
+  f = () => "Chargement...",
+  s = () => "Caricamento...",
+  l = () => "読み込み中...",
+  c = () => "Ładowanie...",
+  g = () => "Загрузка...",
+  _ = () => "Завантаження...",
+  p = () => "Đang tải...",
+  y = (e = {}, r = {}) => {
+    const n = r.locale ?? t();
+    return n === "en" ? o() : n === "pt" ? d() : n === "ch" ? a() : n === "de" ? i() : n === "es" ? u() : n === "fr" ? f() : n === "it" ? s() : n === "jp" ? l() : n === "pl" ? c() : n === "ru" ? g() : n === "uk" ? _() : p()
   };
 export {
-  y as e
+  y as l
 };
