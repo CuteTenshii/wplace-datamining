@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./DrzYdI9r.js";
+} from "./obv90mRu.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "72fbd38af17dae1ddf2de413da161ffaa3b3b729"
+      id: "1e0e8686272f8ab69a6b4937a8dffbb2f245b796"
     };
     var t = new e.Error().stack;
     t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "10929b4a-a6c3-45b2-ac09-e2df787ceff3", e._sentryDebugIdIdentifier = "sentry-dbid-10929b4a-a6c3-45b2-ac09-e2df787ceff3")
@@ -16,16 +16,16 @@ const f = () => "Refresh",
   u = () => "刷新",
   i = () => "Aktualisieren",
   o = () => "Actualizar",
-  a = () => "Actualiser",
-  c = () => "Aggiorna",
+  c = () => "Actualiser",
+  a = () => "Aggiorna",
   d = () => "更新",
   l = () => "Odśwież",
   h = () => "Обновить",
-  _ = () => "Оновити",
-  b = () => "Làm mới",
+  b = () => "Оновити",
+  _ = () => "Làm mới",
   g = (e = {}, t = {}) => {
     const r = t.locale ?? n();
-    return r === "en" ? f() : r === "pt" ? s() : r === "ch" ? u() : r === "de" ? i() : r === "es" ? o() : r === "fr" ? a() : r === "it" ? c() : r === "jp" ? d() : r === "pl" ? l() : r === "ru" ? h() : r === "uk" ? _() : b()
+    return r === "en" ? f() : r === "pt" ? s() : r === "ch" ? u() : r === "de" ? i() : r === "es" ? o() : r === "fr" ? c() : r === "it" ? a() : r === "jp" ? d() : r === "pl" ? l() : r === "ru" ? h() : r === "uk" ? b() : _()
   };
 export {
   g as r

@@ -1,11 +1,11 @@
 import {
   g as o
-} from "./DrzYdI9r.js";
+} from "./obv90mRu.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "72fbd38af17dae1ddf2de413da161ffaa3b3b729"
+      id: "1e0e8686272f8ab69a6b4937a8dffbb2f245b796"
     };
     var n = new e.Error().stack;
     n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "4a5c7974-0033-48df-9303-4bfb47be1c3c", e._sentryDebugIdIdentifier = "sentry-dbid-4a5c7974-0033-48df-9303-4bfb47be1c3c")
@@ -17,15 +17,15 @@ const t = () => "Error loading",
   d = () => "Fehler beim Laden",
   u = () => "Error al cargar",
   l = () => "Erreur lors du chargement",
-  f = () => "Errore nel caricamento",
-  c = () => "読み込みエラー",
+  c = () => "Errore nel caricamento",
+  f = () => "読み込みエラー",
   s = () => "Błąd ładowania",
   _ = () => "Ошибка загрузки",
   g = () => "Помилка завантаження",
   b = () => "Lỗi tải dữ liệu",
   y = (e = {}, n = {}) => {
     const r = n.locale ?? o();
-    return r === "en" ? t() : r === "pt" ? i() : r === "ch" ? a() : r === "de" ? d() : r === "es" ? u() : r === "fr" ? l() : r === "it" ? f() : r === "jp" ? c() : r === "pl" ? s() : r === "ru" ? _() : r === "uk" ? g() : b()
+    return r === "en" ? t() : r === "pt" ? i() : r === "ch" ? a() : r === "de" ? d() : r === "es" ? u() : r === "fr" ? l() : r === "it" ? c() : r === "jp" ? f() : r === "pl" ? s() : r === "ru" ? _() : r === "uk" ? g() : b()
   };
 export {
   y as e
