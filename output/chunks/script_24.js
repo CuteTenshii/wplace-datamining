@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./C-uTzaOB.js";
+} from "./CpNXwF3K.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "bd6ed46249e1ed5fe7432cfb3a9b80dcfb887d57"
+      id: "cfa0387f7130e8b16c3d20b0694a74c32ca6dc49"
     };
     var n = new r.Error().stack;
     n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "50477add-904f-43c4-90bf-18e8935268e0", r._sentryDebugIdIdentifier = "sentry-dbid-50477add-904f-43c4-90bf-18e8935268e0")
@@ -14,8 +14,8 @@ import {
 const o = () => "Input the code",
   i = () => "Insira o código",
   u = () => "输入验证码",
-  s = () => "Code eingeben",
-  c = () => "Introduce el código",
+  c = () => "Code eingeben",
+  s = () => "Introduce el código",
   _ = () => "Entrez le code",
   a = () => "Inserisci il codice",
   f = () => "コードを入力してください。",
@@ -25,7 +25,7 @@ const o = () => "Input the code",
   l = () => "Nhập mã",
   Nn = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? o() : e === "pt" ? i() : e === "ch" ? u() : e === "de" ? s() : e === "es" ? c() : e === "fr" ? _() : e === "it" ? a() : e === "jp" ? f() : e === "pl" ? p() : e === "ru" ? d() : e === "uk" ? h() : l()
+    return e === "en" ? o() : e === "pt" ? i() : e === "ch" ? u() : e === "de" ? c() : e === "es" ? s() : e === "fr" ? _() : e === "it" ? a() : e === "jp" ? f() : e === "pl" ? p() : e === "ru" ? d() : e === "uk" ? h() : l()
   },
   v = () => "Not a valid phone number",
   m = () => "Não é um número válido",
@@ -84,12 +84,12 @@ const o = () => "Input the code",
   oe = () => "Verifica il tuo numero di telefono per continuare a dipingere. Questo ci aiuta a filtrare i bot e mantenere un'esperienza sicura e creativa per tutti.",
   ie = () => "描き続けるには電話番号の確認が必要です。これはボットを排除し、すべてのプレイヤーに安全でクリエイティブな体験を提供するために必要な手順です。",
   ue = () => "Zweryfikuj swój numer telefonu, aby kontynuować malowanie. Pomaga nam to powstrzymywać boty i zapewniać bezpieczną, kreatywną zabawę dla wszystkich.",
-  se = () => "Пожалуйста, подтвердите свой номер телефона, чтобы продолжить рисование. Это помогает нам защищаться от ботов и поддерживать безопасную и творческую атмосферу для всех.",
-  ce = () => "Будь ласка, підтвердьте свій номер телефону, щоб продовжити малювання. Це допомагає нам відсіювати ботів і забезпечувати безпечний та креативний досвід для всіх.",
+  ce = () => "Пожалуйста, подтвердите свой номер телефона, чтобы продолжить рисование. Это помогает нам защищаться от ботов и поддерживать безопасную и творческую атмосферу для всех.",
+  se = () => "Будь ласка, підтвердьте свій номер телефону, щоб продовжити малювання. Це допомагає нам відсіювати ботів і забезпечувати безпечний та креативний досвід для всіх.",
   _e = () => "Vui lòng xác minh số điện thoại của bạn để tiếp tục vẽ. Điều này giúp chúng tôi ngăn bot và giữ trải nghiệm sáng tạo, an toàn cho mọi người.",
   Pn = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? O() : e === "pt" ? $() : e === "ch" ? ee() : e === "de" ? ne() : e === "es" ? re() : e === "fr" ? te() : e === "it" ? oe() : e === "jp" ? ie() : e === "pl" ? ue() : e === "ru" ? se() : e === "uk" ? ce() : _e()
+    return e === "en" ? O() : e === "pt" ? $() : e === "ch" ? ee() : e === "de" ? ne() : e === "es" ? re() : e === "fr" ? te() : e === "it" ? oe() : e === "jp" ? ie() : e === "pl" ? ue() : e === "ru" ? ce() : e === "uk" ? se() : _e()
   },
   ae = () => "Phone successfully verified",
   fe = () => "Telefone verificado com sucesso",
@@ -157,8 +157,8 @@ const o = () => "Input the code",
   },
   on = () => "SMS sent to",
   un = () => "SMS enviado para",
-  sn = () => "短信已发送至",
-  cn = () => "SMS gesendet an",
+  cn = () => "短信已发送至",
+  sn = () => "SMS gesendet an",
   _n = () => "SMS enviado a",
   an = () => "SMS envoyé à",
   fn = () => "SMS inviato a",
@@ -169,7 +169,7 @@ const o = () => "Input the code",
   vn = () => "SMS được gửi tới",
   qn = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? on() : e === "pt" ? un() : e === "ch" ? sn() : e === "de" ? cn() : e === "es" ? _n() : e === "fr" ? an() : e === "it" ? fn() : e === "jp" ? pn() : e === "pl" ? dn() : e === "ru" ? hn() : e === "uk" ? ln() : vn()
+    return e === "en" ? on() : e === "pt" ? un() : e === "ch" ? cn() : e === "de" ? sn() : e === "es" ? _n() : e === "fr" ? an() : e === "it" ? fn() : e === "jp" ? pn() : e === "pl" ? dn() : e === "ru" ? hn() : e === "uk" ? ln() : vn()
   },
   mn = () => "Try another number",
   yn = () => "Tentar outro número",
