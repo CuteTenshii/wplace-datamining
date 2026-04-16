@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./kxb4d0Jk.js";
+} from "./CBHToml_.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "209576268ed2d55d78b1f313fb4db5f4a92290b5"
+      id: "804fae10c9a96a4658fed8df64d864b17b400aa1"
     };
     var r = new n.Error().stack;
     r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "e0ff4e4a-9644-4fb0-8d54-8257f281c4f6", n._sentryDebugIdIdentifier = "sentry-dbid-e0ff4e4a-9644-4fb0-8d54-8257f281c4f6")
@@ -13,19 +13,19 @@ import {
 })();
 const c = () => "Cancel",
   u = () => "Cancelar",
-  f = () => "取消",
-  l = () => "Abbrechen",
-  a = () => "Cancelar",
+  a = () => "取消",
+  f = () => "Abbrechen",
+  l = () => "Cancelar",
   o = () => "Annuler",
   s = () => "Annulla",
   i = () => "キャンセル",
   d = () => "Anuluj",
-  b = () => "Отмена",
-  _ = () => "Скасувати",
+  _ = () => "Отмена",
+  b = () => "Скасувати",
   p = () => "Hủy",
   g = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? c() : e === "pt" ? u() : e === "ch" ? f() : e === "de" ? l() : e === "es" ? a() : e === "fr" ? o() : e === "it" ? s() : e === "jp" ? i() : e === "pl" ? d() : e === "ru" ? b() : e === "uk" ? _() : p()
+    return e === "en" ? c() : e === "pt" ? u() : e === "ch" ? a() : e === "de" ? f() : e === "es" ? l() : e === "fr" ? o() : e === "it" ? s() : e === "jp" ? i() : e === "pl" ? d() : e === "ru" ? _() : e === "uk" ? b() : p()
   };
 export {
   g as c

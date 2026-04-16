@@ -2,7 +2,7 @@
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "209576268ed2d55d78b1f313fb4db5f4a92290b5"
+      id: "804fae10c9a96a4658fed8df64d864b17b400aa1"
     };
     var o = new t.Error().stack;
     o && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[o] = "2873cead-a87c-4550-afcc-7d8128f4def3", t._sentryDebugIdIdentifier = "sentry-dbid-2873cead-a87c-4550-afcc-7d8128f4def3")
@@ -12,35 +12,35 @@ const g = "modulepreload",
   E = function(t, o) {
     return new URL(t, o).href
   },
-  m = {},
+  b = {},
   w = function(o, d, u) {
     let h = Promise.resolve();
     if (d && d.length > 0) {
       let i = function(e) {
-        return Promise.all(e.map(s => Promise.resolve(s).then(c => ({
+        return Promise.all(e.map(s => Promise.resolve(s).then(a => ({
           status: "fulfilled",
-          value: c
-        }), c => ({
+          value: a
+        }), a => ({
           status: "rejected",
-          reason: c
+          reason: a
         }))))
       };
       const n = document.getElementsByTagName("link"),
         l = document.querySelector("meta[property=csp-nonce]"),
-        b = (l == null ? void 0 : l.nonce) || (l == null ? void 0 : l.getAttribute("nonce"));
+        m = (l == null ? void 0 : l.nonce) || (l == null ? void 0 : l.getAttribute("nonce"));
       h = i(d.map(e => {
-        if (e = E(e, u), e in m) return;
-        m[e] = !0;
+        if (e = E(e, u), e in b) return;
+        b[e] = !0;
         const s = e.endsWith(".css"),
-          c = s ? '[rel="stylesheet"]' : "";
+          a = s ? '[rel="stylesheet"]' : "";
         if (!!u)
-          for (let a = n.length - 1; a >= 0; a--) {
-            const f = n[a];
+          for (let c = n.length - 1; c >= 0; c--) {
+            const f = n[c];
             if (f.href === e && (!s || f.rel === "stylesheet")) return
-          } else if (document.querySelector(`link[href="${e}"]${c}`)) return;
+          } else if (document.querySelector(`link[href="${e}"]${a}`)) return;
         const r = document.createElement("link");
-        if (r.rel = s ? "stylesheet" : g, s || (r.as = "script"), r.crossOrigin = "", r.href = e, b && r.setAttribute("nonce", b), document.head.appendChild(r), s) return new Promise((a, f) => {
-          r.addEventListener("load", a), r.addEventListener("error", () => f(new Error(`Unable to preload CSS for ${e}`)))
+        if (r.rel = s ? "stylesheet" : g, s || (r.as = "script"), r.crossOrigin = "", r.href = e, m && r.setAttribute("nonce", m), document.head.appendChild(r), s) return new Promise((c, f) => {
+          r.addEventListener("load", c), r.addEventListener("error", () => f(new Error(`Unable to preload CSS for ${e}`)))
         })
       }))
     }

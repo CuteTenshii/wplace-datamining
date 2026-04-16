@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./kxb4d0Jk.js";
+} from "./CBHToml_.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "209576268ed2d55d78b1f313fb4db5f4a92290b5"
+      id: "804fae10c9a96a4658fed8df64d864b17b400aa1"
     };
     var t = new r.Error().stack;
     t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "9c643bfc-4f5a-442c-b51b-f705e3a32d86", r._sentryDebugIdIdentifier = "sentry-dbid-9c643bfc-4f5a-442c-b51b-f705e3a32d86")
@@ -4500,224 +4500,224 @@ Nếu tăng thêm, bản xem trước có thể lỗi, chế độ xây dựng c
   Y3 = () => "样式",
   Q3 = () => "Stile",
   X3 = () => "Estilos",
-  e9 = () => "Styles",
-  r9 = () => "Stili",
-  t9 = () => "スタイル",
-  n9 = () => "Style",
-  o9 = () => "Стили",
-  u9 = () => "Стилі",
-  i9 = () => "Kiểu",
+  e8 = () => "Styles",
+  r8 = () => "Stili",
+  t8 = () => "スタイル",
+  n8 = () => "Style",
+  o8 = () => "Стили",
+  u8 = () => "Стилі",
+  i8 = () => "Kiểu",
   Ehe = (r = {}, t = {}) => {
     const e = t.locale ?? n();
-    return e === "en" ? Z3() : e === "pt" ? J3() : e === "ch" ? Y3() : e === "de" ? Q3() : e === "es" ? X3() : e === "fr" ? e9() : e === "it" ? r9() : e === "jp" ? t9() : e === "pl" ? n9() : e === "ru" ? o9() : e === "uk" ? u9() : i9()
+    return e === "en" ? Z3() : e === "pt" ? J3() : e === "ch" ? Y3() : e === "de" ? Q3() : e === "es" ? X3() : e === "fr" ? e8() : e === "it" ? r8() : e === "jp" ? t8() : e === "pl" ? n8() : e === "ru" ? o8() : e === "uk" ? u8() : i8()
   },
-  s9 = () => "Submit",
-  a9 = () => "Enviar",
-  _9 = () => "提交",
-  c9 = () => "Senden",
-  l9 = () => "Enviar",
-  p9 = () => "Envoyer",
-  f9 = () => "Invia",
-  d9 = () => "送信",
-  h9 = () => "Wyślij",
-  m9 = () => "Отправить",
-  v9 = () => "Надіслати",
-  g9 = () => "Gửi",
+  s8 = () => "Submit",
+  a8 = () => "Enviar",
+  _8 = () => "提交",
+  c8 = () => "Senden",
+  l8 = () => "Enviar",
+  p8 = () => "Envoyer",
+  f8 = () => "Invia",
+  d8 = () => "送信",
+  h8 = () => "Wyślij",
+  m8 = () => "Отправить",
+  v8 = () => "Надіслати",
+  g8 = () => "Gửi",
   Mhe = (r = {}, t = {}) => {
-    const e = t.locale ?? n();
-    return e === "en" ? s9() : e === "pt" ? a9() : e === "ch" ? _9() : e === "de" ? c9() : e === "es" ? l9() : e === "fr" ? p9() : e === "it" ? f9() : e === "jp" ? d9() : e === "pl" ? h9() : e === "ru" ? m9() : e === "uk" ? v9() : g9()
-  },
-  y9 = () => "submit an appeal",
-  k9 = () => "enviar um recurso",
-  b9 = () => "提交申诉",
-  w9 = () => "Eine Ressource senden",
-  j9 = () => "enviar un recurso",
-  z9 = () => "Envoyer un recours",
-  x9 = () => "inviare una risorsa",
-  P9 = () => "リソースを提出する",
-  q9 = () => "wysłać zasób",
-  S9 = () => "подать апелляцию",
-  N9 = () => "подати запит",
-  C9 = () => "gửi kháng nghị",
-  Bhe = (r = {}, t = {}) => {
-    const e = t.locale ?? n();
-    return e === "en" ? y9() : e === "pt" ? k9() : e === "ch" ? b9() : e === "de" ? w9() : e === "es" ? j9() : e === "fr" ? z9() : e === "it" ? x9() : e === "jp" ? P9() : e === "pl" ? q9() : e === "ru" ? S9() : e === "uk" ? N9() : C9()
-  },
-  D9 = () => "Suggestions",
-  A9 = () => "Sugestões",
-  T9 = () => "建议",
-  E9 = () => "Vorschläge",
-  M9 = () => "Sugerencias",
-  B9 = () => "Suggestions",
-  R9 = () => "Suggerimenti",
-  O9 = () => "提案",
-  I9 = () => "Sugestie",
-  $9 = () => "Предложения",
-  L9 = () => "Пропозиції",
-  W9 = () => "Gợi ý",
-  Rhe = (r = {}, t = {}) => {
-    const e = t.locale ?? n();
-    return e === "en" ? D9() : e === "pt" ? A9() : e === "ch" ? T9() : e === "de" ? E9() : e === "es" ? M9() : e === "fr" ? B9() : e === "it" ? R9() : e === "jp" ? O9() : e === "pl" ? I9() : e === "ru" ? $9() : e === "uk" ? L9() : W9()
-  },
-  V9 = () => "Service Workers are not supported/enabled in your browser. Some features might not work properly.",
-  K9 = () => "Service Workers não são suportados ou estão desativados em seu navegador. Alguns recursos podem não funcionar corretamente.",
-  G9 = () => "你的浏览器不支持/未启用 Service Worker。一些功能可能无法正常工作。",
-  U9 = () => "Service Worker werden in deinem Browser nicht unterstützt/aktiviert. Einige Funktionen könnten nicht richtig funktionieren.",
-  H9 = () => "Service Workers no están soportados o están desactivados en tu navegador. Algunas funciones pueden no funcionar correctamente.",
-  F9 = () => "Les Service Workers ne sont pas pris en charge/activés dans votre navigateur. Certaines fonctionnalités peuvent ne pas fonctionner correctement.",
-  Z9 = () => "I Service Worker non sono supportati o sono disabilitati nel tuo browser. Alcune funzionalità potrebbero non funzionare correttamente.",
-  J9 = () => "お使いのブラウザではService Workerがサポートされていないか無効になっています。一部の機能が正しく動作しない可能性があります。",
-  Y9 = () => "Service Workers nie są obsługiwane lub są wyłączone w Twojej przeglądarce. Niektóre funkcje mogą nie działać poprawnie.",
-  Q9 = () => "Service Workers не поддерживаются или отключены в вашем браузере. Некоторые функции могут работать некорректно.",
-  X9 = () => "Service Workers не підтримуються або вимкнені у вашому браузері. Деякі функції можуть працювати некоректно.",
-  e7 = () => "Trình duyệt của bạn không hỗ trợ/bật Service Workers. Một số tính năng có thể không hoạt động đúng.",
-  Ohe = (r = {}, t = {}) => {
-    const e = t.locale ?? n();
-    return e === "en" ? V9() : e === "pt" ? K9() : e === "ch" ? G9() : e === "de" ? U9() : e === "es" ? H9() : e === "fr" ? F9() : e === "it" ? Z9() : e === "jp" ? J9() : e === "pl" ? Y9() : e === "ru" ? Q9() : e === "uk" ? X9() : e7()
-  },
-  r7 = () => "Temporary restricted",
-  t7 = () => "Restrito temporariamente",
-  n7 = () => "暂时受限",
-  o7 = () => "Vorübergehend eingeschränkt",
-  u7 = () => "Restringido temporalmente",
-  i7 = () => "Temporairement restreint",
-  s7 = () => "Temporaneamente limitato",
-  a7 = () => "一時制限",
-  _7 = () => "Tymczasowo ograniczony",
-  c7 = () => "Временно ограничено",
-  l7 = () => "Тимчасово обмежено",
-  p7 = () => "Tạm thời bị hạn chế",
-  Ihe = (r = {}, t = {}) => {
-    const e = t.locale ?? n();
-    return e === "en" ? r7() : e === "pt" ? t7() : e === "ch" ? n7() : e === "de" ? o7() : e === "es" ? u7() : e === "fr" ? i7() : e === "it" ? s7() : e === "jp" ? a7() : e === "pl" ? _7() : e === "ru" ? c7() : e === "uk" ? l7() : p7()
-  },
-  f7 = () => "Terms",
-  d7 = () => "Termos",
-  h7 = () => "条款",
-  m7 = () => "Bedingungen",
-  v7 = () => "Términos",
-  g7 = () => "Conditions",
-  y7 = () => "Termini",
-  k7 = () => "利用規約",
-  b7 = () => "Warunki",
-  w7 = () => "Условия",
-  j7 = () => "Умови",
-  z7 = () => "Điều khoản",
-  $he = (r = {}, t = {}) => {
-    const e = t.locale ?? n();
-    return e === "en" ? f7() : e === "pt" ? d7() : e === "ch" ? h7() : e === "de" ? m7() : e === "es" ? v7() : e === "fr" ? g7() : e === "it" ? y7() : e === "jp" ? k7() : e === "pl" ? b7() : e === "ru" ? w7() : e === "uk" ? j7() : z7()
-  },
-  x7 = () => "Text Styles",
-  P7 = () => "Estilos de Texto",
-  q7 = () => "文本样式",
-  S7 = () => "Textstile",
-  N7 = () => "Estilos de texto",
-  C7 = () => "Styles de texte",
-  D7 = () => "Stili di testo",
-  A7 = () => "テキストスタイル",
-  T7 = () => "Style tekstu",
-  E7 = () => "Стили текста",
-  M7 = () => "Текстові стилі",
-  B7 = () => "Kiểu văn bản",
-  Lhe = (r = {}, t = {}) => {
-    const e = t.locale ?? n();
-    return e === "en" ? x7() : e === "pt" ? P7() : e === "ch" ? q7() : e === "de" ? S7() : e === "es" ? N7() : e === "fr" ? C7() : e === "it" ? D7() : e === "jp" ? A7() : e === "pl" ? T7() : e === "ru" ? E7() : e === "uk" ? M7() : B7()
-  },
-  R7 = () => "This action is irreversible, do you want to proceed?",
-  O7 = () => "Esta ação é irreversível, você deseja prosseguir?",
-  I7 = () => "此操作不可逆，是否继续？",
-  $7 = () => "Diese Aktion ist irreversibel. Möchtest du fortfahren?",
-  L7 = () => "Esta acción es irreversible, ¿quieres continuar?",
-  W7 = () => "Cette action est irréversible, souhaitez-vous continuer ?",
-  V7 = () => "Questa azione è irreversibile, vuoi procedere?",
-  K7 = () => "この操作は元に戻せません。実行してもよろしいですか？",
-  G7 = () => "Ta akcja jest nieodwracalna. Czy chcesz kontynuować?",
-  U7 = () => "Это действие необратимо. Продолжить?",
-  H7 = () => "Цю дію неможливо скасувати. Продовжити?",
-  F7 = () => "Hành động này không thể hoàn tác, bạn có muốn tiếp tục?",
-  Whe = (r = {}, t = {}) => {
-    const e = t.locale ?? n();
-    return e === "en" ? R7() : e === "pt" ? O7() : e === "ch" ? I7() : e === "de" ? $7() : e === "es" ? L7() : e === "fr" ? W7() : e === "it" ? V7() : e === "jp" ? K7() : e === "pl" ? G7() : e === "ru" ? U7() : e === "uk" ? H7() : F7()
-  },
-  Z7 = () => "this month",
-  J7 = () => "neste mês",
-  Y7 = () => "本月",
-  Q7 = () => "diesen Monat",
-  X7 = () => "este mes",
-  e8 = () => "ce mois-ci",
-  r8 = () => "questo mese",
-  t8 = () => "今月",
-  n8 = () => "w tym miesiącu",
-  o8 = () => "в этом месяце",
-  u8 = () => "цього місяця",
-  i8 = () => "tháng này",
-  Vhe = (r = {}, t = {}) => {
-    const e = t.locale ?? n();
-    return e === "en" ? Z7() : e === "pt" ? J7() : e === "ch" ? Y7() : e === "de" ? Q7() : e === "es" ? X7() : e === "fr" ? e8() : e === "it" ? r8() : e === "jp" ? t8() : e === "pl" ? n8() : e === "ru" ? o8() : e === "uk" ? u8() : i8()
-  },
-  s8 = () => "this week",
-  a8 = () => "nesta semana",
-  _8 = () => "本周",
-  c8 = () => "diese Woche",
-  l8 = () => "esta semana",
-  p8 = () => "cette semaine",
-  f8 = () => "questa settimana",
-  d8 = () => "今週",
-  h8 = () => "w tym tygodniu",
-  m8 = () => "на этой неделе",
-  v8 = () => "цього тижня",
-  g8 = () => "tuần này",
-  Khe = (r = {}, t = {}) => {
     const e = t.locale ?? n();
     return e === "en" ? s8() : e === "pt" ? a8() : e === "ch" ? _8() : e === "de" ? c8() : e === "es" ? l8() : e === "fr" ? p8() : e === "it" ? f8() : e === "jp" ? d8() : e === "pl" ? h8() : e === "ru" ? m8() : e === "uk" ? v8() : g8()
   },
-  y8 = () => "This will permanently delete your account and all associated data. This action cannot be undone.",
-  k8 = () => "Isso excluirá permanentemente sua conta e todos os dados associados. Esta ação não pode ser desfeita.",
-  b8 = () => "这将永久删除你的账号及所有相关数据，此操作无法撤销。",
-  w8 = () => "Dies wird dein Konto und alle dazugehörigen Daten dauerhaft löschen. Diese Aktion kann nicht rückgängig gemacht werden.",
-  j8 = () => "Esto eliminará permanentemente tu cuenta y todos los datos asociados. Esta acción no se puede deshacer.",
-  z8 = () => "Cela supprimera définitivement votre compte et toutes les données associées. Cette action est irréversible.",
-  x8 = () => "Questa azione eliminerà definitivamente il tuo account e tutti i dati associati. Non potrà essere annullata.",
-  P8 = () => "この操作により、アカウントと関連するすべてのデータが完全に削除されます。元に戻すことはできません。",
-  q8 = () => "To trwale usunie Twoje konto i wszystkie powiązane dane. Tej akcji nie można cofnąć.",
-  S8 = () => "Это действие навсегда удалит ваш аккаунт и все связанные данные. Его нельзя отменить.",
-  N8 = () => "Це назавжди видалить ваш акаунт і всі повʼязані дані. Цю дію не можна буде скасувати.",
-  C8 = () => "Việc này sẽ xóa vĩnh viễn tài khoản và tất cả dữ liệu liên quan. Hành động này không thể hoàn tác.",
-  Ghe = (r = {}, t = {}) => {
+  y8 = () => "submit an appeal",
+  k8 = () => "enviar um recurso",
+  b8 = () => "提交申诉",
+  w8 = () => "Eine Ressource senden",
+  j8 = () => "enviar un recurso",
+  z8 = () => "Envoyer un recours",
+  x8 = () => "inviare una risorsa",
+  P8 = () => "リソースを提出する",
+  q8 = () => "wysłać zasób",
+  S8 = () => "подать апелляцию",
+  N8 = () => "подати запит",
+  C8 = () => "gửi kháng nghị",
+  Bhe = (r = {}, t = {}) => {
     const e = t.locale ?? n();
     return e === "en" ? y8() : e === "pt" ? k8() : e === "ch" ? b8() : e === "de" ? w8() : e === "es" ? j8() : e === "fr" ? z8() : e === "it" ? x8() : e === "jp" ? P8() : e === "pl" ? q8() : e === "ru" ? S8() : e === "uk" ? N8() : C8()
   },
-  D8 = () => "Tickets",
-  A8 = () => "Tickets",
-  T8 = () => "工单",
-  E8 = () => "Tickets",
-  M8 = () => "Tickets",
-  B8 = () => "Tickets",
-  R8 = () => "Ticket",
-  O8 = () => "チケット",
-  I8 = () => "Tickety",
-  $8 = () => "Тикеты",
-  L8 = () => "Тікети",
-  W8 = () => "Phiếu hỗ trợ",
-  Uhe = (r = {}, t = {}) => {
+  D8 = () => "Suggestions",
+  A8 = () => "Sugestões",
+  T8 = () => "建议",
+  E8 = () => "Vorschläge",
+  M8 = () => "Sugerencias",
+  B8 = () => "Suggestions",
+  R8 = () => "Suggerimenti",
+  O8 = () => "提案",
+  I8 = () => "Sugestie",
+  $8 = () => "Предложения",
+  L8 = () => "Пропозиції",
+  W8 = () => "Gợi ý",
+  Rhe = (r = {}, t = {}) => {
     const e = t.locale ?? n();
     return e === "en" ? D8() : e === "pt" ? A8() : e === "ch" ? T8() : e === "de" ? E8() : e === "es" ? M8() : e === "fr" ? B8() : e === "it" ? R8() : e === "jp" ? O8() : e === "pl" ? I8() : e === "ru" ? $8() : e === "uk" ? L8() : W8()
   },
-  V8 = () => "Tiktok",
-  K8 = () => "Tiktok",
-  G8 = () => "抖音",
-  U8 = () => "Tiktok",
-  H8 = () => "TikTok",
-  F8 = () => "Tiktok",
-  Z8 = () => "Tiktok",
-  J8 = () => "ティックトック",
-  Y8 = () => "Tiktok",
-  Q8 = () => "ТикТок",
-  X8 = () => "TikTok",
+  V8 = () => "Service Workers are not supported/enabled in your browser. Some features might not work properly.",
+  K8 = () => "Service Workers não são suportados ou estão desativados em seu navegador. Alguns recursos podem não funcionar corretamente.",
+  G8 = () => "你的浏览器不支持/未启用 Service Worker。一些功能可能无法正常工作。",
+  U8 = () => "Service Worker werden in deinem Browser nicht unterstützt/aktiviert. Einige Funktionen könnten nicht richtig funktionieren.",
+  H8 = () => "Service Workers no están soportados o están desactivados en tu navegador. Algunas funciones pueden no funcionar correctamente.",
+  F8 = () => "Les Service Workers ne sont pas pris en charge/activés dans votre navigateur. Certaines fonctionnalités peuvent ne pas fonctionner correctement.",
+  Z8 = () => "I Service Worker non sono supportati o sono disabilitati nel tuo browser. Alcune funzionalità potrebbero non funzionare correttamente.",
+  J8 = () => "お使いのブラウザではService Workerがサポートされていないか無効になっています。一部の機能が正しく動作しない可能性があります。",
+  Y8 = () => "Service Workers nie są obsługiwane lub są wyłączone w Twojej przeglądarce. Niektóre funkcje mogą nie działać poprawnie.",
+  Q8 = () => "Service Workers не поддерживаются или отключены в вашем браузере. Некоторые функции могут работать некорректно.",
+  X8 = () => "Service Workers не підтримуються або вимкнені у вашому браузері. Деякі функції можуть працювати некоректно.",
+  e9 = () => "Trình duyệt của bạn không hỗ trợ/bật Service Workers. Một số tính năng có thể không hoạt động đúng.",
+  Ohe = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? V8() : e === "pt" ? K8() : e === "ch" ? G8() : e === "de" ? U8() : e === "es" ? H8() : e === "fr" ? F8() : e === "it" ? Z8() : e === "jp" ? J8() : e === "pl" ? Y8() : e === "ru" ? Q8() : e === "uk" ? X8() : e9()
+  },
+  r9 = () => "Temporary restricted",
+  t9 = () => "Restrito temporariamente",
+  n9 = () => "暂时受限",
+  o9 = () => "Vorübergehend eingeschränkt",
+  u9 = () => "Restringido temporalmente",
+  i9 = () => "Temporairement restreint",
+  s9 = () => "Temporaneamente limitato",
+  a9 = () => "一時制限",
+  _9 = () => "Tymczasowo ograniczony",
+  c9 = () => "Временно ограничено",
+  l9 = () => "Тимчасово обмежено",
+  p9 = () => "Tạm thời bị hạn chế",
+  Ihe = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? r9() : e === "pt" ? t9() : e === "ch" ? n9() : e === "de" ? o9() : e === "es" ? u9() : e === "fr" ? i9() : e === "it" ? s9() : e === "jp" ? a9() : e === "pl" ? _9() : e === "ru" ? c9() : e === "uk" ? l9() : p9()
+  },
+  f9 = () => "Terms",
+  d9 = () => "Termos",
+  h9 = () => "条款",
+  m9 = () => "Bedingungen",
+  v9 = () => "Términos",
+  g9 = () => "Conditions",
+  y9 = () => "Termini",
+  k9 = () => "利用規約",
+  b9 = () => "Warunki",
+  w9 = () => "Условия",
+  j9 = () => "Умови",
+  z9 = () => "Điều khoản",
+  $he = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? f9() : e === "pt" ? d9() : e === "ch" ? h9() : e === "de" ? m9() : e === "es" ? v9() : e === "fr" ? g9() : e === "it" ? y9() : e === "jp" ? k9() : e === "pl" ? b9() : e === "ru" ? w9() : e === "uk" ? j9() : z9()
+  },
+  x9 = () => "Text Styles",
+  P9 = () => "Estilos de Texto",
+  q9 = () => "文本样式",
+  S9 = () => "Textstile",
+  N9 = () => "Estilos de texto",
+  C9 = () => "Styles de texte",
+  D9 = () => "Stili di testo",
+  A9 = () => "テキストスタイル",
+  T9 = () => "Style tekstu",
+  E9 = () => "Стили текста",
+  M9 = () => "Текстові стилі",
+  B9 = () => "Kiểu văn bản",
+  Lhe = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? x9() : e === "pt" ? P9() : e === "ch" ? q9() : e === "de" ? S9() : e === "es" ? N9() : e === "fr" ? C9() : e === "it" ? D9() : e === "jp" ? A9() : e === "pl" ? T9() : e === "ru" ? E9() : e === "uk" ? M9() : B9()
+  },
+  R9 = () => "This action is irreversible, do you want to proceed?",
+  O9 = () => "Esta ação é irreversível, você deseja prosseguir?",
+  I9 = () => "此操作不可逆，是否继续？",
+  $9 = () => "Diese Aktion ist irreversibel. Möchtest du fortfahren?",
+  L9 = () => "Esta acción es irreversible, ¿quieres continuar?",
+  W9 = () => "Cette action est irréversible, souhaitez-vous continuer ?",
+  V9 = () => "Questa azione è irreversibile, vuoi procedere?",
+  K9 = () => "この操作は元に戻せません。実行してもよろしいですか？",
+  G9 = () => "Ta akcja jest nieodwracalna. Czy chcesz kontynuować?",
+  U9 = () => "Это действие необратимо. Продолжить?",
+  H9 = () => "Цю дію неможливо скасувати. Продовжити?",
+  F9 = () => "Hành động này không thể hoàn tác, bạn có muốn tiếp tục?",
+  Whe = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? R9() : e === "pt" ? O9() : e === "ch" ? I9() : e === "de" ? $9() : e === "es" ? L9() : e === "fr" ? W9() : e === "it" ? V9() : e === "jp" ? K9() : e === "pl" ? G9() : e === "ru" ? U9() : e === "uk" ? H9() : F9()
+  },
+  Z9 = () => "this month",
+  J9 = () => "neste mês",
+  Y9 = () => "本月",
+  Q9 = () => "diesen Monat",
+  X9 = () => "este mes",
+  e7 = () => "ce mois-ci",
+  r7 = () => "questo mese",
+  t7 = () => "今月",
+  n7 = () => "w tym miesiącu",
+  o7 = () => "в этом месяце",
+  u7 = () => "цього місяця",
+  i7 = () => "tháng này",
+  Vhe = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? Z9() : e === "pt" ? J9() : e === "ch" ? Y9() : e === "de" ? Q9() : e === "es" ? X9() : e === "fr" ? e7() : e === "it" ? r7() : e === "jp" ? t7() : e === "pl" ? n7() : e === "ru" ? o7() : e === "uk" ? u7() : i7()
+  },
+  s7 = () => "this week",
+  a7 = () => "nesta semana",
+  _7 = () => "本周",
+  c7 = () => "diese Woche",
+  l7 = () => "esta semana",
+  p7 = () => "cette semaine",
+  f7 = () => "questa settimana",
+  d7 = () => "今週",
+  h7 = () => "w tym tygodniu",
+  m7 = () => "на этой неделе",
+  v7 = () => "цього тижня",
+  g7 = () => "tuần này",
+  Khe = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? s7() : e === "pt" ? a7() : e === "ch" ? _7() : e === "de" ? c7() : e === "es" ? l7() : e === "fr" ? p7() : e === "it" ? f7() : e === "jp" ? d7() : e === "pl" ? h7() : e === "ru" ? m7() : e === "uk" ? v7() : g7()
+  },
+  y7 = () => "This will permanently delete your account and all associated data. This action cannot be undone.",
+  k7 = () => "Isso excluirá permanentemente sua conta e todos os dados associados. Esta ação não pode ser desfeita.",
+  b7 = () => "这将永久删除你的账号及所有相关数据，此操作无法撤销。",
+  w7 = () => "Dies wird dein Konto und alle dazugehörigen Daten dauerhaft löschen. Diese Aktion kann nicht rückgängig gemacht werden.",
+  j7 = () => "Esto eliminará permanentemente tu cuenta y todos los datos asociados. Esta acción no se puede deshacer.",
+  z7 = () => "Cela supprimera définitivement votre compte et toutes les données associées. Cette action est irréversible.",
+  x7 = () => "Questa azione eliminerà definitivamente il tuo account e tutti i dati associati. Non potrà essere annullata.",
+  P7 = () => "この操作により、アカウントと関連するすべてのデータが完全に削除されます。元に戻すことはできません。",
+  q7 = () => "To trwale usunie Twoje konto i wszystkie powiązane dane. Tej akcji nie można cofnąć.",
+  S7 = () => "Это действие навсегда удалит ваш аккаунт и все связанные данные. Его нельзя отменить.",
+  N7 = () => "Це назавжди видалить ваш акаунт і всі повʼязані дані. Цю дію не можна буде скасувати.",
+  C7 = () => "Việc này sẽ xóa vĩnh viễn tài khoản và tất cả dữ liệu liên quan. Hành động này không thể hoàn tác.",
+  Ghe = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? y7() : e === "pt" ? k7() : e === "ch" ? b7() : e === "de" ? w7() : e === "es" ? j7() : e === "fr" ? z7() : e === "it" ? x7() : e === "jp" ? P7() : e === "pl" ? q7() : e === "ru" ? S7() : e === "uk" ? N7() : C7()
+  },
+  D7 = () => "Tickets",
+  A7 = () => "Tickets",
+  T7 = () => "工单",
+  E7 = () => "Tickets",
+  M7 = () => "Tickets",
+  B7 = () => "Tickets",
+  R7 = () => "Ticket",
+  O7 = () => "チケット",
+  I7 = () => "Tickety",
+  $7 = () => "Тикеты",
+  L7 = () => "Тікети",
+  W7 = () => "Phiếu hỗ trợ",
+  Uhe = (r = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? D7() : e === "pt" ? A7() : e === "ch" ? T7() : e === "de" ? E7() : e === "es" ? M7() : e === "fr" ? B7() : e === "it" ? R7() : e === "jp" ? O7() : e === "pl" ? I7() : e === "ru" ? $7() : e === "uk" ? L7() : W7()
+  },
+  V7 = () => "Tiktok",
+  K7 = () => "Tiktok",
+  G7 = () => "抖音",
+  U7 = () => "Tiktok",
+  H7 = () => "TikTok",
+  F7 = () => "Tiktok",
+  Z7 = () => "Tiktok",
+  J7 = () => "ティックトック",
+  Y7 = () => "Tiktok",
+  Q7 = () => "ТикТок",
+  X7 = () => "TikTok",
   eee = () => "Tiktok",
   Hhe = (r = {}, t = {}) => {
     const e = t.locale ?? n();
-    return e === "en" ? V8() : e === "pt" ? K8() : e === "ch" ? G8() : e === "de" ? U8() : e === "es" ? H8() : e === "fr" ? F8() : e === "it" ? Z8() : e === "jp" ? J8() : e === "pl" ? Y8() : e === "ru" ? Q8() : e === "uk" ? X8() : eee()
+    return e === "en" ? V7() : e === "pt" ? K7() : e === "ch" ? G7() : e === "de" ? U7() : e === "es" ? H7() : e === "fr" ? F7() : e === "it" ? Z7() : e === "jp" ? J7() : e === "pl" ? Y7() : e === "ru" ? Q7() : e === "uk" ? X7() : eee()
   },
   ree = () => "Timeout appeal",
   tee = () => "Revisão de suspensão",

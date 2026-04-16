@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./kxb4d0Jk.js";
+} from "./CBHToml_.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "209576268ed2d55d78b1f313fb4db5f4a92290b5"
+      id: "804fae10c9a96a4658fed8df64d864b17b400aa1"
     };
     var r = new t.Error().stack;
     r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "993d5df6-6e47-4522-a281-4a70aec8b474", t._sentryDebugIdIdentifier = "sentry-dbid-993d5df6-6e47-4522-a281-4a70aec8b474")
@@ -18,14 +18,14 @@ const o = () => "Eraser",
   _ = () => "Borrador",
   p = () => "Gomme",
   l = () => "Gomma",
-  d = () => "消しゴム",
-  c = () => "Gumka",
+  c = () => "消しゴム",
+  d = () => "Gumka",
   a = () => "Ластик",
   f = () => "Гумка",
   g = () => "Cục tẩy",
-  de = (t = {}, r = {}) => {
+  ce = (t = {}, r = {}) => {
     const e = r.locale ?? n();
-    return e === "en" ? o() : e === "pt" ? u() : e === "ch" ? s() : e === "de" ? i() : e === "es" ? _() : e === "fr" ? p() : e === "it" ? l() : e === "jp" ? d() : e === "pl" ? c() : e === "ru" ? a() : e === "uk" ? f() : g()
+    return e === "en" ? o() : e === "pt" ? u() : e === "ch" ? s() : e === "de" ? i() : e === "es" ? _() : e === "fr" ? p() : e === "it" ? l() : e === "jp" ? c() : e === "pl" ? d() : e === "ru" ? a() : e === "uk" ? f() : g()
   },
   y = () => "Not enough Droplets",
   h = () => "Droplets insuficientes",
@@ -39,7 +39,7 @@ const o = () => "Eraser",
   j = () => "Недостаточно droplets",
   D = () => "Недостатньо дроплетів",
   P = () => "Không đủ droplets",
-  ce = (t = {}, r = {}) => {
+  de = (t = {}, r = {}) => {
     const e = r.locale ?? n();
     return e === "en" ? y() : e === "pt" ? h() : e === "ch" ? m() : e === "de" ? b() : e === "es" ? x() : e === "fr" ? k() : e === "it" ? q() : e === "jp" ? v() : e === "pl" ? z() : e === "ru" ? j() : e === "uk" ? D() : P()
   },
@@ -92,5 +92,5 @@ const o = () => "Eraser",
     return e === "en" ? X() : e === "pt" ? $() : e === "ch" ? ee() : e === "de" ? re() : e === "es" ? te() : e === "fr" ? ne() : e === "it" ? oe() : e === "jp" ? ue() : e === "pl" ? se() : e === "ru" ? ie() : e === "uk" ? _e() : pe()
   };
 export {
-  ae as a, de as e, ce as n, fe as r, ge as y
+  ae as a, ce as e, de as n, fe as r, ge as y
 };
