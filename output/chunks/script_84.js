@@ -1,22 +1,22 @@
 import {
   g as t
-} from "./CBHToml_.js";
+} from "./8FlXsgLB.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "804fae10c9a96a4658fed8df64d864b17b400aa1"
+      id: "d92995df349756f69cfad78cc6651ba9aa7c7814"
     };
     var n = new r.Error().stack;
     n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "1c6dbdf6-dd82-431c-9d28-e752c32322ea", r._sentryDebugIdIdentifier = "sentry-dbid-1c6dbdf6-dd82-431c-9d28-e752c32322ea")
   } catch {}
 })();
-const a = () => "Appeals",
-  s = () => "Apelos",
+const s = () => "Appeals",
+  a = () => "Apelos",
   p = () => "申诉",
-  u = () => "Einsprüche",
-  o = () => "Apelaciones",
-  c = () => "Recours",
+  c = () => "Einsprüche",
+  u = () => "Apelaciones",
+  o = () => "Recours",
   d = () => "Ricorsi",
   i = () => "異議申立て",
   l = () => "Odwołania",
@@ -25,7 +25,7 @@ const a = () => "Appeals",
   b = () => "Các kháng cáo",
   y = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? a() : e === "pt" ? s() : e === "ch" ? p() : e === "de" ? u() : e === "es" ? o() : e === "fr" ? c() : e === "it" ? d() : e === "jp" ? i() : e === "pl" ? l() : e === "ru" ? f() : e === "uk" ? _() : b()
+    return e === "en" ? s() : e === "pt" ? a() : e === "ch" ? p() : e === "de" ? c() : e === "es" ? u() : e === "fr" ? o() : e === "it" ? d() : e === "jp" ? i() : e === "pl" ? l() : e === "ru" ? f() : e === "uk" ? _() : b()
   };
 export {
   y as a

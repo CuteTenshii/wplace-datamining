@@ -1,14 +1,14 @@
 import {
   g as a
-} from "./CBHToml_.js";
+} from "./8FlXsgLB.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "804fae10c9a96a4658fed8df64d864b17b400aa1"
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "d92995df349756f69cfad78cc6651ba9aa7c7814"
     };
-    var n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "148ff59f-9fda-447c-a2a3-99accec6281a", e._sentryDebugIdIdentifier = "sentry-dbid-148ff59f-9fda-447c-a2a3-99accec6281a")
+    var e = new n.Error().stack;
+    e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "148ff59f-9fda-447c-a2a3-99accec6281a", n._sentryDebugIdIdentifier = "sentry-dbid-148ff59f-9fda-447c-a2a3-99accec6281a")
   } catch {}
 })();
 const t = () => "Dashboard",
@@ -23,8 +23,8 @@ const t = () => "Dashboard",
   l = () => "Панель",
   h = () => "Панель",
   _ = () => "Bảng điều khiển",
-  g = (e = {}, n = {}) => {
-    const r = n.locale ?? a();
+  g = (n = {}, e = {}) => {
+    const r = e.locale ?? a();
     return r === "en" ? t() : r === "pt" ? d() : r === "ch" ? o() : r === "de" ? s() : r === "es" ? u() : r === "fr" ? f() : r === "it" ? c() : r === "jp" ? i() : r === "pl" ? b() : r === "ru" ? l() : r === "uk" ? h() : _()
   };
 export {

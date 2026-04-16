@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./CBHToml_.js";
+} from "./8FlXsgLB.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "804fae10c9a96a4658fed8df64d864b17b400aa1"
+      id: "d92995df349756f69cfad78cc6651ba9aa7c7814"
     };
     var s = new e.Error().stack;
     s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "5d9c477c-a16f-4bdf-a858-e65edb32d2cc", e._sentryDebugIdIdentifier = "sentry-dbid-5d9c477c-a16f-4bdf-a858-e65edb32d2cc")
@@ -13,9 +13,9 @@ import {
 })();
 const n = () => "Users",
   u = () => "Usuários",
-  i = () => "用户",
-  o = () => "Benutzer",
-  c = () => "Usuarios",
+  c = () => "用户",
+  i = () => "Benutzer",
+  o = () => "Usuarios",
   f = () => "Utilisateurs",
   d = () => "Utenti",
   a = () => "ユーザー",
@@ -25,7 +25,7 @@ const n = () => "Users",
   p = () => "Người dùng",
   y = (e = {}, s = {}) => {
     const r = s.locale ?? t();
-    return r === "en" ? n() : r === "pt" ? u() : r === "ch" ? i() : r === "de" ? o() : r === "es" ? c() : r === "fr" ? f() : r === "it" ? d() : r === "jp" ? a() : r === "pl" ? l() : r === "ru" ? _() : r === "uk" ? b() : p()
+    return r === "en" ? n() : r === "pt" ? u() : r === "ch" ? c() : r === "de" ? i() : r === "es" ? o() : r === "fr" ? f() : r === "it" ? d() : r === "jp" ? a() : r === "pl" ? l() : r === "ru" ? _() : r === "uk" ? b() : p()
   };
 export {
   y as u
