@@ -1,11 +1,11 @@
 import {
   g as o
-} from "./DwxruM8H.js";
+} from "./C6AhFN09.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "c68723346dc53cede4c33166e0b3070fd4fa2ccb"
+      id: "1f8643ac63030331424d23f5f462150829277f89"
     };
     var n = new e.Error().stack;
     n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "0ea7cc9d-2ea5-4af5-a99a-39bddccfd536", e._sentryDebugIdIdentifier = "sentry-dbid-0ea7cc9d-2ea5-4af5-a99a-39bddccfd536")
@@ -13,19 +13,19 @@ import {
 })();
 const t = () => "Error loading",
   a = () => "Erro ao carregar",
-  d = () => "加载出错",
-  i = () => "Fehler beim Laden",
-  c = () => "Error al cargar",
-  u = () => "Erreur lors du chargement",
+  i = () => "加载出错",
+  d = () => "Fehler beim Laden",
+  u = () => "Error al cargar",
+  c = () => "Erreur lors du chargement",
   l = () => "Errore nel caricamento",
-  s = () => "読み込みエラー",
-  f = () => "Błąd ładowania",
+  f = () => "読み込みエラー",
+  s = () => "Błąd ładowania",
   _ = () => "Ошибка загрузки",
   g = () => "Помилка завантаження",
-  b = () => "Lỗi tải dữ liệu",
+  p = () => "Lỗi tải dữ liệu",
   y = (e = {}, n = {}) => {
     const r = n.locale ?? o();
-    return r === "en" ? t() : r === "pt" ? a() : r === "ch" ? d() : r === "de" ? i() : r === "es" ? c() : r === "fr" ? u() : r === "it" ? l() : r === "jp" ? s() : r === "pl" ? f() : r === "ru" ? _() : r === "uk" ? g() : b()
+    return r === "en" ? t() : r === "pt" ? a() : r === "ch" ? i() : r === "de" ? d() : r === "es" ? u() : r === "fr" ? c() : r === "it" ? l() : r === "jp" ? f() : r === "pl" ? s() : r === "ru" ? _() : r === "uk" ? g() : p()
   };
 export {
   y as e

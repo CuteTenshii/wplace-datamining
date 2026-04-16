@@ -1,14 +1,14 @@
 import {
   g as t
-} from "./DwxruM8H.js";
+} from "./C6AhFN09.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "c68723346dc53cede4c33166e0b3070fd4fa2ccb"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "1f8643ac63030331424d23f5f462150829277f89"
     };
-    var n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "6f73ead8-0cc2-4bd8-a02a-414b83a59993", r._sentryDebugIdIdentifier = "sentry-dbid-6f73ead8-0cc2-4bd8-a02a-414b83a59993")
+    var n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "6f73ead8-0cc2-4bd8-a02a-414b83a59993", e._sentryDebugIdIdentifier = "sentry-dbid-6f73ead8-0cc2-4bd8-a02a-414b83a59993")
   } catch {}
 })();
 const a = () => "Leaderboard",
@@ -17,15 +17,15 @@ const a = () => "Leaderboard",
   s = () => "Bestenliste",
   u = () => "Clasificación",
   i = () => "Classement",
-  c = () => "Classifica",
-  l = () => "ランキング",
-  f = () => "Ranking",
+  l = () => "Classifica",
+  f = () => "ランキング",
+  c = () => "Ranking",
   b = () => "Таблица лидеров",
   _ = () => "Таблиця лідерів",
   g = () => "Bảng xếp hạng",
-  y = (r = {}, n = {}) => {
-    const e = n.locale ?? t();
-    return e === "en" ? a() : e === "pt" ? d() : e === "ch" ? o() : e === "de" ? s() : e === "es" ? u() : e === "fr" ? i() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? f() : e === "ru" ? b() : e === "uk" ? _() : g()
+  y = (e = {}, n = {}) => {
+    const r = n.locale ?? t();
+    return r === "en" ? a() : r === "pt" ? d() : r === "ch" ? o() : r === "de" ? s() : r === "es" ? u() : r === "fr" ? i() : r === "it" ? l() : r === "jp" ? f() : r === "pl" ? c() : r === "ru" ? b() : r === "uk" ? _() : g()
   };
 export {
   y as l

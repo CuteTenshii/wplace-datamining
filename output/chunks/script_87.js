@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./DwxruM8H.js";
+} from "./C6AhFN09.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "c68723346dc53cede4c33166e0b3070fd4fa2ccb"
+      id: "1f8643ac63030331424d23f5f462150829277f89"
     };
     var n = new e.Error().stack;
     n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "69d9428a-ccc2-4782-9b8d-56e43e6f6563", e._sentryDebugIdIdentifier = "sentry-dbid-69d9428a-ccc2-4782-9b8d-56e43e6f6563")
@@ -14,18 +14,18 @@ import {
 const o = () => "Reason",
   s = () => "Motivo",
   u = () => "原因",
-  c = () => "Grund",
-  i = () => "Motivo",
+  i = () => "Grund",
+  f = () => "Motivo",
   a = () => "Raison",
-  d = () => "Motivo",
-  f = () => "理由",
+  c = () => "Motivo",
+  d = () => "理由",
   l = () => "Powód",
   _ = () => "Причина",
-  b = () => "Причина",
-  p = () => "Lý do",
+  p = () => "Причина",
+  b = () => "Lý do",
   y = (e = {}, n = {}) => {
     const r = n.locale ?? t();
-    return r === "en" ? o() : r === "pt" ? s() : r === "ch" ? u() : r === "de" ? c() : r === "es" ? i() : r === "fr" ? a() : r === "it" ? d() : r === "jp" ? f() : r === "pl" ? l() : r === "ru" ? _() : r === "uk" ? b() : p()
+    return r === "en" ? o() : r === "pt" ? s() : r === "ch" ? u() : r === "de" ? i() : r === "es" ? f() : r === "fr" ? a() : r === "it" ? c() : r === "jp" ? d() : r === "pl" ? l() : r === "ru" ? _() : r === "uk" ? p() : b()
   };
 export {
   y as r

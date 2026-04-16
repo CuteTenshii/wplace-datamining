@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./DwxruM8H.js";
+} from "./C6AhFN09.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "c68723346dc53cede4c33166e0b3070fd4fa2ccb"
+      id: "1f8643ac63030331424d23f5f462150829277f89"
     };
     var r = new e.Error().stack;
     r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "5e55f805-801d-468d-93e7-0a6fcf9fa52d", e._sentryDebugIdIdentifier = "sentry-dbid-5e55f805-801d-468d-93e7-0a6fcf9fa52d")
@@ -14,22 +14,22 @@ import {
 const s = () => "Latest",
   o = () => "Mais recente",
   u = () => "最新",
-  c = () => "Neueste",
-  a = () => "Último",
+  a = () => "Neueste",
+  c = () => "Último",
   i = () => "Derniers",
   f = () => "Ultimi",
   l = () => "最新",
   _ = () => "Najnowsze",
-  d = () => "Последние",
-  p = () => "Останні",
+  p = () => "Последние",
+  d = () => "Останні",
   h = () => "Mới nhất",
   L = (e = {}, r = {}) => {
     const t = r.locale ?? n();
-    return t === "en" ? s() : t === "pt" ? o() : t === "ch" ? u() : t === "de" ? c() : t === "es" ? a() : t === "fr" ? i() : t === "it" ? f() : t === "jp" ? l() : t === "pl" ? _() : t === "ru" ? d() : t === "uk" ? p() : h()
+    return t === "en" ? s() : t === "pt" ? o() : t === "ch" ? u() : t === "de" ? a() : t === "es" ? c() : t === "fr" ? i() : t === "it" ? f() : t === "jp" ? l() : t === "pl" ? _() : t === "ru" ? p() : t === "uk" ? d() : h()
   },
   g = () => "Patch notes",
-  b = () => "Notas de atualização",
-  y = () => "更新日志",
+  y = () => "Notas de atualização",
+  b = () => "更新日志",
   j = () => "Versionshinweise",
   m = () => "Notas de actualización",
   w = () => "Notes de mise à jour",
@@ -41,7 +41,7 @@ const s = () => "Latest",
   v = () => "Ghi chú cập nhật",
   T = (e = {}, r = {}) => {
     const t = r.locale ?? n();
-    return t === "en" ? g() : t === "pt" ? b() : t === "ch" ? y() : t === "de" ? j() : t === "es" ? m() : t === "fr" ? w() : t === "it" ? N() : t === "jp" ? k() : t === "pl" ? I() : t === "ru" ? D() : t === "uk" ? E() : v()
+    return t === "en" ? g() : t === "pt" ? y() : t === "ch" ? b() : t === "de" ? j() : t === "es" ? m() : t === "fr" ? w() : t === "it" ? N() : t === "jp" ? k() : t === "pl" ? I() : t === "ru" ? D() : t === "uk" ? E() : v()
   };
 export {
   L as l, T as p

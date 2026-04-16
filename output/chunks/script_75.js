@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./DwxruM8H.js";
+} from "./C6AhFN09.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "c68723346dc53cede4c33166e0b3070fd4fa2ccb"
+      id: "1f8643ac63030331424d23f5f462150829277f89"
     };
     var e = new n.Error().stack;
     e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "09e8c7b4-b47a-42dd-9a91-ebaa6a75318f", n._sentryDebugIdIdentifier = "sentry-dbid-09e8c7b4-b47a-42dd-9a91-ebaa6a75318f")
@@ -17,15 +17,15 @@ const o = () => "Confirm",
   c = () => "Bestätigen",
   u = () => "Confirmar",
   s = () => "Confirmer",
-  d = () => "Conferma",
-  a = () => "確認",
+  a = () => "Conferma",
+  d = () => "確認",
   m = () => "Potwierdź",
-  b = () => "Подтвердить",
-  l = () => "Підтвердити",
-  _ = () => "Xác nhận",
+  l = () => "Подтвердить",
+  _ = () => "Підтвердити",
+  b = () => "Xác nhận",
   g = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? o() : r === "pt" ? f() : r === "ch" ? i() : r === "de" ? c() : r === "es" ? u() : r === "fr" ? s() : r === "it" ? d() : r === "jp" ? a() : r === "pl" ? m() : r === "ru" ? b() : r === "uk" ? l() : _()
+    return r === "en" ? o() : r === "pt" ? f() : r === "ch" ? i() : r === "de" ? c() : r === "es" ? u() : r === "fr" ? s() : r === "it" ? a() : r === "jp" ? d() : r === "pl" ? m() : r === "ru" ? l() : r === "uk" ? _() : b()
   };
 export {
   g as c
