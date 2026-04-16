@@ -1,31 +1,31 @@
 import {
-  g as c
-} from "./CpNXwF3K.js";
+  g as t
+} from "./kxb4d0Jk.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "cfa0387f7130e8b16c3d20b0694a74c32ca6dc49"
+      id: "209576268ed2d55d78b1f313fb4db5f4a92290b5"
     };
     var r = new n.Error().stack;
     r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "e0ff4e4a-9644-4fb0-8d54-8257f281c4f6", n._sentryDebugIdIdentifier = "sentry-dbid-e0ff4e4a-9644-4fb0-8d54-8257f281c4f6")
   } catch {}
 })();
-const t = () => "Cancel",
+const c = () => "Cancel",
   u = () => "Cancelar",
   f = () => "取消",
-  a = () => "Abbrechen",
-  l = () => "Cancelar",
+  l = () => "Abbrechen",
+  a = () => "Cancelar",
   o = () => "Annuler",
   s = () => "Annulla",
   i = () => "キャンセル",
   d = () => "Anuluj",
-  _ = () => "Отмена",
-  b = () => "Скасувати",
+  b = () => "Отмена",
+  _ = () => "Скасувати",
   p = () => "Hủy",
   g = (n = {}, r = {}) => {
-    const e = r.locale ?? c();
-    return e === "en" ? t() : e === "pt" ? u() : e === "ch" ? f() : e === "de" ? a() : e === "es" ? l() : e === "fr" ? o() : e === "it" ? s() : e === "jp" ? i() : e === "pl" ? d() : e === "ru" ? _() : e === "uk" ? b() : p()
+    const e = r.locale ?? t();
+    return e === "en" ? c() : e === "pt" ? u() : e === "ch" ? f() : e === "de" ? l() : e === "es" ? a() : e === "fr" ? o() : e === "it" ? s() : e === "jp" ? i() : e === "pl" ? d() : e === "ru" ? b() : e === "uk" ? _() : p()
   };
 export {
   g as c

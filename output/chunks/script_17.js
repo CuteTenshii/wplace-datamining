@@ -14,7 +14,7 @@ var b = (t, n, e) => (Hn(t, n, "read from private field"), e ? e.call(t) : n.get
   D = (t, n, e) => n.has(t) ? xt("Cannot add the same private member more than once") : n instanceof WeakSet ? n.add(t) : n.set(t, e);
 import {
   g as h
-} from "./CpNXwF3K.js";
+} from "./kxb4d0Jk.js";
 import {
   e as B,
   i as M,
@@ -22,26 +22,26 @@ import {
   g as at,
   x as Dt,
   u as we
-} from "./CaCjFaGC.js";
+} from "./DjeFwfzX.js";
 import {
   s as Yn,
   c as Zn
-} from "./FLW0-BPB.js";
+} from "./6Td9G63n.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "cfa0387f7130e8b16c3d20b0694a74c32ca6dc49"
+      id: "209576268ed2d55d78b1f313fb4db5f4a92290b5"
     };
     var n = new t.Error().stack;
-    n && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[n] = "8e769aab-4ef7-47ef-a585-029b32d4855a", t._sentryDebugIdIdentifier = "sentry-dbid-8e769aab-4ef7-47ef-a585-029b32d4855a")
+    n && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[n] = "ce35c978-d391-45db-8513-0f8ffd338899", t._sentryDebugIdIdentifier = "sentry-dbid-ce35c978-d391-45db-8513-0f8ffd338899")
   } catch {}
 })();
-const eb = "https://maps.wplace.live",
-  tb = "8d582454-e5ec-4314-b1c2-89e460ac1d28",
+const tb = "https://maps.wplace.live",
+  nb = "8d582454-e5ec-4314-b1c2-89e460ac1d28",
   $n = "true",
-  nb = "0x4AAAAAABpHqZ-6i7uL0nmG",
-  rb = "https://backend.wplace.live/files",
+  rb = "0x4AAAAAABpHqZ-6i7uL0nmG",
+  ab = "https://backend.wplace.live/files",
   bt = "https://backend.wplace.live",
   Lt = "theme";
 var Ae, ke, Re, Ne, xe, De, Le, Me, Pe;
@@ -127,14 +127,14 @@ function Qn() {
 }
 const er = $n.toLowerCase() !== "false",
   tr = "" + new URL("../assets/pawtect_wasm_bg.9gmZk8aU.wasm", import.meta.url).href;
-var ht = function() {
-  return ht = Object.assign || function(n) {
+var gt = function() {
+  return gt = Object.assign || function(n) {
     for (var e, r = 1, a = arguments.length; r < a; r++) {
       e = arguments[r];
       for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && (n[i] = e[i])
     }
     return n
-  }, ht.apply(this, arguments)
+  }, gt.apply(this, arguments)
 };
 
 function Q(t, n, e, r) {
@@ -495,7 +495,7 @@ function _r(t, n) {
 
 function fr(t) {
   var n;
-  return ht({
+  return gt({
     name: t.name,
     message: t.message,
     stack: (n = t.stack) === null || n === void 0 ? void 0 : n.split(`
@@ -956,11 +956,11 @@ function Gr(t) {
 
 function Wr(t, n) {
   qr(t, n);
-  var e = dt(t),
-    r = dt(t);
+  var e = _t(t),
+    r = _t(t);
   if (e !== r) return ["unstable", "unstable"];
   Kr(t, n);
-  var a = dt(t);
+  var a = _t(t);
   return [a, e]
 }
 
@@ -986,7 +986,7 @@ function Kr(t, n) {
   n.fillStyle = "#f9c", n.arc(60, 60, 60, 0, Math.PI * 2, !0), n.arc(60, 60, 20, 0, Math.PI * 2, !0), n.fill("evenodd")
 }
 
-function dt(t) {
+function _t(t) {
   return t.toDataURL()
 }
 
@@ -1050,13 +1050,13 @@ function ea() {
 }
 var ta = 2500,
   na = 10,
-  nt, _t;
+  nt, ft;
 
 function ra() {
-  if (_t === void 0) {
+  if (ft === void 0) {
     var t = function() {
-      var n = gt();
-      wt(n) ? _t = setTimeout(t, ta) : (nt = n, _t = void 0)
+      var n = wt();
+      yt(n) ? ft = setTimeout(t, ta) : (nt = n, ft = void 0)
     };
     t()
   }
@@ -1071,11 +1071,11 @@ function aa() {
         return ee(this, function(e) {
           switch (e.label) {
             case 0:
-              return n = gt(), wt(n) ? nt ? [2, mn([], nt, !0)] : Tr() ? [4, Or()] : [3, 2] : [3, 2];
+              return n = wt(), yt(n) ? nt ? [2, mn([], nt, !0)] : Tr() ? [4, Or()] : [3, 2] : [3, 2];
             case 1:
-              e.sent(), n = gt(), e.label = 2;
+              e.sent(), n = wt(), e.label = 2;
             case 2:
-              return wt(n) || (nt = n), [2, n]
+              return yt(n) || (nt = n), [2, n]
           }
         })
       })
@@ -1105,12 +1105,12 @@ function ia() {
   }
 }
 
-function gt() {
+function wt() {
   var t = screen;
   return [re(J(t.availTop), null), re(J(t.width) - J(t.availWidth) - re(J(t.availLeft), 0), null), re(J(t.height) - J(t.availHeight) - re(J(t.availTop), 0), null), re(J(t.availLeft), null)]
 }
 
-function wt(t) {
+function yt(t) {
   for (var n = 0; n < 4; ++n)
     if (t[n]) return !1;
   return !0
@@ -1466,7 +1466,7 @@ function Da() {
   }
 }
 var La = "mmMwWLliI0fiflO&1",
-  ft = {
+  mt = {
     default: [],
     apple: [{
       font: "-apple-system-body"
@@ -1490,9 +1490,9 @@ var La = "mmMwWLliI0fiflO&1",
 
 function Ma() {
   return Pa(function(t, n) {
-    for (var e = {}, r = {}, a = 0, i = Object.keys(ft); a < i.length; a++) {
+    for (var e = {}, r = {}, a = 0, i = Object.keys(mt); a < i.length; a++) {
       var o = i[a],
-        s = ft[o],
+        s = mt[o],
         u = s[0],
         l = u === void 0 ? {} : u,
         _ = s[1],
@@ -1506,7 +1506,7 @@ function Ma() {
       }
       e[o] = p, n.append(t.createElement("br"), p)
     }
-    for (var S = 0, R = Object.keys(ft); S < R.length; S++) {
+    for (var S = 0, R = Object.keys(mt); S < R.length; S++) {
       var o = R[S];
       r[o] = e[o].getBoundingClientRect().width
     }
@@ -1625,8 +1625,8 @@ function Ya(t) {
   for (var v = 0, $ = Wa; v < $.length; v++)
     for (var G = $[v], V = 0, te = qa; V < te.length; V++) {
       var fe = te[V],
-        lt = Za(e, G, fe);
-      l.push("".concat(G, ".").concat(fe, "=").concat(lt.join(",")))
+        dt = Za(e, G, fe);
+      l.push("".concat(G, ".").concat(fe, "=").concat(dt.join(",")))
     }
   return u.sort(), s.sort(), {
     contextAttributes: o,
@@ -1860,10 +1860,10 @@ var Rn = {
   hashComponents: kn,
   componentsToDebugString: An
 };
-let mt = null,
+let pt = null,
   ot;
 async function _i() {
-  return mt || (mt = Rn.load()), mt
+  return pt || (pt = Rn.load()), pt
 }
 async function st() {
   return ot || fi().then(t => t.visitorId)
@@ -3272,8 +3272,8 @@ let U = av(),
   At = !1,
   Pn = 0;
 
-function ab() {
-  cn || typeof window > "u" || (cn = !0, U.focusStartMs = performance.now(), U.windowStartMs = Date.now(), N = _v(), window.addEventListener("pointermove", t => {
+function ib() {
+  cn || typeof window > "u" || (cn = !0, U.focusStartMs = performance.now(), U.windowStartMs = Date.now(), N = fv(), window.addEventListener("pointermove", t => {
     const n = performance.now();
     n - U.lastMouseSampleMs < Qy || (U.lastMouseSampleMs = n, Ln.push({
       x: t.clientX,
@@ -3298,15 +3298,19 @@ function ab() {
     U.idleStartMs > 0 && (U.totalIdleMs += performance.now() - U.idleStartMs, U.idleStartMs = 0), U.focusStartMs = performance.now()
   }, {
     passive: !0
-  }), fv(), setInterval(() => {
-    typeof requestIdleCallback < "u" ? requestIdleCallback(() => yt(), {
+  }), mv(), setInterval(() => {
+    typeof requestIdleCallback < "u" ? requestIdleCallback(() => ut(), {
       timeout: 5e3
-    }) : yt()
+    }) : ut()
   }, ev))
 }
 
 function Un() {
-  Oe || (Oe = yt());
+  ut()
+}
+
+function iv() {
+  Oe || (Oe = ut());
   try {
     const t = Oe,
       n = new Uint8Array(40),
@@ -3321,17 +3325,17 @@ function Un() {
   }
 }
 
-function yt() {
+function ut() {
   const t = Date.now(),
     n = U.windowStartMs,
     e = performance.now(),
     r = Ln.drain(),
     a = Mn.drain(),
-    i = lv(U, e);
+    i = dv(U, e);
   U.totalIdleMs = 0, U.totalFocusMs = 0, U.focusStartMs = e, U.windowStartMs = t;
-  const o = ov(r),
-    s = sv(a),
-    u = uv(a, r),
+  const o = sv(r),
+    s = cv(a),
+    u = lv(a, r),
     l = o.straightnessAvg > .95 && r.length > 10,
     _ = o.jitterAvg < .01 && r.length > 10,
     d = s.stddev / Math.max(1, s.avg) < .05 && a.length >= 5;
@@ -3356,7 +3360,7 @@ function yt() {
     hasZeroJitter: _
   }, Oe
 }
-const iv = {
+const ov = {
   speedAvg: 0,
   speedStddev: 0,
   jitterAvg: 0,
@@ -3371,8 +3375,8 @@ const iv = {
   speeds: []
 };
 
-function ov(t) {
-  if (t.length < 3) return iv;
+function sv(t) {
+  if (t.length < 3) return ov;
   const n = [],
     e = [],
     r = [];
@@ -3397,10 +3401,10 @@ function ov(t) {
     if (w >= 2) {
       const te = t[w - 1].x - t[w - 2].x,
         fe = t[w - 1].y - t[w - 2].y,
-        lt = O * te + v * fe,
+        dt = O * te + v * fe,
         Rt = Math.sqrt(O * O + v * v),
         Nt = Math.sqrt(te * te + fe * fe);
-      Rt > 0 && Nt > 0 && e.push(1 - Math.abs(lt / (Rt * Nt)));
+      Rt > 0 && Nt > 0 && e.push(1 - Math.abs(dt / (Rt * Nt)));
       const Wn = n[n.length - 2] || 0;
       r.push(Math.abs(V - Wn))
     }
@@ -3471,7 +3475,7 @@ function ov(t) {
   }
 }
 
-function sv(t) {
+function cv(t) {
   if (t.length < 2) return {
     avg: 0,
     stddev: 0
@@ -3486,7 +3490,7 @@ function sv(t) {
   }
 }
 
-function cv(t, n) {
+function uv(t, n) {
   let e = 0,
     r = t.length - 1,
     a = -1;
@@ -3497,18 +3501,18 @@ function cv(t, n) {
   return a
 }
 
-function uv(t, n) {
+function lv(t, n) {
   if (t.length === 0 || n.length < 2) return 0;
   let e = 0,
     r = 0;
   for (const a of t) {
-    const i = cv(n, a);
+    const i = uv(n, a);
     i >= 0 && (e += a - n[i].t, r++)
   }
   return r > 0 ? e / r : 0
 }
 
-function lv(t, n) {
+function dv(t, n) {
   const e = Math.round(t.totalIdleMs + (t.idleStartMs > 0 ? n - t.idleStartMs : 0)),
     r = Math.round(t.totalFocusMs + (t.idleStartMs === 0 ? n - t.focusStartMs : 0));
   return {
@@ -3538,7 +3542,7 @@ function un(t) {
   return a > 0 ? i / a : 0
 }
 
-function dv() {
+function _v() {
   var r;
   let t = 0;
   const n = navigator,
@@ -3631,7 +3635,7 @@ function dv() {
   return t
 }
 
-function _v() {
+function fv() {
   const t = navigator,
     n = t.plugins ? t.plugins.length : 0,
     e = "ontouchstart" in window || t.maxTouchPoints > 0,
@@ -3677,7 +3681,7 @@ function _v() {
   } catch {}
   const p = t.languages ? t.languages.length : 0,
     y = window.outerWidth === 0 || window.outerHeight === 0,
-    E = dv();
+    E = _v();
   return {
     pc: n,
     sw: screen.width,
@@ -3695,7 +3699,7 @@ function _v() {
   }
 }
 
-function fv() {
+function mv() {
   const t = [];
 
   function e(r) {
@@ -3718,7 +3722,7 @@ function fv() {
 function oe(t) {
   return Math.round(t * 1e3) / 1e3
 }
-const mv = `
+const pv = `
 self.onmessage = function(e) {
   const { prefix, difficulty } = e.data;
 
@@ -3759,14 +3763,14 @@ self.onmessage = function(e) {
   solve().catch(err => self.postMessage({ error: err.message }));
 };
 `;
-async function pv() {
+async function hv() {
   try {
     const t = await fetch(`${bt}/anticheat/pow/challenge`, {
       credentials: "include"
     });
     if (!t.ok) return null;
     const n = await t.json(),
-      e = await hv(n.prefix, n.difficulty);
+      e = await gv(n.prefix, n.difficulty);
     return e ? {
       ...n,
       nonce: e
@@ -3775,9 +3779,9 @@ async function pv() {
     return null
   }
 }
-async function hv(t, n) {
+async function gv(t, n) {
   return new Promise(e => {
-    const r = new Blob([mv], {
+    const r = new Blob([pv], {
         type: "application/javascript"
       }),
       a = URL.createObjectURL(r),
@@ -3797,7 +3801,7 @@ async function hv(t, n) {
 }
 const kt = 3;
 var Ue, Ce;
-class gv {
+class wv {
   constructor() {
     D(this, Ue, B(null));
     D(this, Ce, B(0))
@@ -3816,13 +3820,13 @@ class gv {
   }
 }
 Ue = new WeakMap, Ce = new WeakMap;
-const z = new gv;
+const z = new wv;
 async function ln(t) {
-  return t === 1 ? wv() : t === 2 || t === 3 ? vv(t) : t === 4 ? yv() : !1
+  return t === 1 ? yv() : t === 2 || t === 3 ? bv(t) : t === 4 ? vv() : !1
 }
-async function wv() {
+async function yv() {
   for (let t = 0; t < kt; t++) try {
-    const n = await pv();
+    const n = await hv();
     if (!n) continue;
     return await ge.verifyChallenge({
       type: "pow",
@@ -3833,7 +3837,7 @@ async function wv() {
   return !1
 }
 
-function yv() {
+function vv() {
   return new Promise(t => {
     z.errorCount = 0, z.current = {
       tier: 4,
@@ -3842,7 +3846,7 @@ function yv() {
   })
 }
 
-function vv(t) {
+function bv(t) {
   return new Promise(n => {
     z.errorCount = 0, z.current = {
       tier: t,
@@ -3851,7 +3855,7 @@ function vv(t) {
   })
 }
 
-function ib(t) {
+function ob(t) {
   const n = z.current;
   if (!n) return;
   const e = n.tier === 2 ? "turnstile" : "hcaptcha";
@@ -3868,21 +3872,21 @@ function ib(t) {
   })
 }
 
-function ob() {
+function sb() {
   const t = z.current;
   t && (z.errorCount += 1, z.errorCount >= kt && (t.resolve(!1), z.current = null))
 }
 
-function sb() {
+function cb() {
   const t = z.current;
   !t || t.tier !== 4 || (t.resolve(!0), z.current = null)
 }
 
-function cb() {
+function ub() {
   z.current && (z.current.resolve(!1), z.current = null)
 }
 var c = (t => (t[t.CONTINUE = 100] = "CONTINUE", t[t.SWITCHING_PROTOCOLS = 101] = "SWITCHING_PROTOCOLS", t[t.PROCESSING = 102] = "PROCESSING", t[t.EARLY_HINTS = 103] = "EARLY_HINTS", t[t.OK = 200] = "OK", t[t.CREATED = 201] = "CREATED", t[t.ACCEPTED = 202] = "ACCEPTED", t[t.NON_AUTHORITATIVE_INFORMATION = 203] = "NON_AUTHORITATIVE_INFORMATION", t[t.NO_CONTENT = 204] = "NO_CONTENT", t[t.RESET_CONTENT = 205] = "RESET_CONTENT", t[t.PARTIAL_CONTENT = 206] = "PARTIAL_CONTENT", t[t.MULTI_STATUS = 207] = "MULTI_STATUS", t[t.ALREADY_REPORTED = 208] = "ALREADY_REPORTED", t[t.IM_USED = 226] = "IM_USED", t[t.MULTIPLE_CHOICES = 300] = "MULTIPLE_CHOICES", t[t.MOVED_PERMANENTLY = 301] = "MOVED_PERMANENTLY", t[t.MOVED_TEMPORARILY = 302] = "MOVED_TEMPORARILY", t[t.FOUND = 302] = "FOUND", t[t.SEE_OTHER = 303] = "SEE_OTHER", t[t.NOT_MODIFIED = 304] = "NOT_MODIFIED", t[t.USE_PROXY = 305] = "USE_PROXY", t[t.SWITCH_PROXY = 306] = "SWITCH_PROXY", t[t.TEMPORARY_REDIRECT = 307] = "TEMPORARY_REDIRECT", t[t.PERMANENT_REDIRECT = 308] = "PERMANENT_REDIRECT", t[t.BAD_REQUEST = 400] = "BAD_REQUEST", t[t.UNAUTHORIZED = 401] = "UNAUTHORIZED", t[t.PAYMENT_REQUIRED = 402] = "PAYMENT_REQUIRED", t[t.FORBIDDEN = 403] = "FORBIDDEN", t[t.NOT_FOUND = 404] = "NOT_FOUND", t[t.METHOD_NOT_ALLOWED = 405] = "METHOD_NOT_ALLOWED", t[t.NOT_ACCEPTABLE = 406] = "NOT_ACCEPTABLE", t[t.PROXY_AUTHENTICATION_REQUIRED = 407] = "PROXY_AUTHENTICATION_REQUIRED", t[t.REQUEST_TIMEOUT = 408] = "REQUEST_TIMEOUT", t[t.CONFLICT = 409] = "CONFLICT", t[t.GONE = 410] = "GONE", t[t.LENGTH_REQUIRED = 411] = "LENGTH_REQUIRED", t[t.PRECONDITION_FAILED = 412] = "PRECONDITION_FAILED", t[t.REQUEST_TOO_LONG = 413] = "REQUEST_TOO_LONG", t[t.CONTENT_TOO_LARGE = 413] = "CONTENT_TOO_LARGE", t[t.REQUEST_URI_TOO_LONG = 414] = "REQUEST_URI_TOO_LONG", t[t.URI_TOO_LONG = 414] = "URI_TOO_LONG", t[t.UNSUPPORTED_MEDIA_TYPE = 415] = "UNSUPPORTED_MEDIA_TYPE", t[t.REQUESTED_RANGE_NOT_SATISFIABLE = 416] = "REQUESTED_RANGE_NOT_SATISFIABLE", t[t.RANGE_NOT_SATISFIABLE = 416] = "RANGE_NOT_SATISFIABLE", t[t.EXPECTATION_FAILED = 417] = "EXPECTATION_FAILED", t[t.IM_A_TEAPOT = 418] = "IM_A_TEAPOT", t[t.INSUFFICIENT_SPACE_ON_RESOURCE = 419] = "INSUFFICIENT_SPACE_ON_RESOURCE", t[t.MISDIRECTED_REQUEST = 421] = "MISDIRECTED_REQUEST", t[t.UNPROCESSABLE_ENTITY = 422] = "UNPROCESSABLE_ENTITY", t[t.UNPROCESSABLE_CONTENT = 422] = "UNPROCESSABLE_CONTENT", t[t.LOCKED = 423] = "LOCKED", t[t.FAILED_DEPENDENCY = 424] = "FAILED_DEPENDENCY", t[t.TOO_EARLY = 425] = "TOO_EARLY", t[t.UPGRADE_REQUIRED = 426] = "UPGRADE_REQUIRED", t[t.PRECONDITION_REQUIRED = 428] = "PRECONDITION_REQUIRED", t[t.TOO_MANY_REQUESTS = 429] = "TOO_MANY_REQUESTS", t[t.REQUEST_HEADER_FIELDS_TOO_LARGE = 431] = "REQUEST_HEADER_FIELDS_TOO_LARGE", t[t.UNAVAILABLE_FOR_LEGAL_REASONS = 451] = "UNAVAILABLE_FOR_LEGAL_REASONS", t[t.INTERNAL_SERVER_ERROR = 500] = "INTERNAL_SERVER_ERROR", t[t.NOT_IMPLEMENTED = 501] = "NOT_IMPLEMENTED", t[t.BAD_GATEWAY = 502] = "BAD_GATEWAY", t[t.SERVICE_UNAVAILABLE = 503] = "SERVICE_UNAVAILABLE", t[t.GATEWAY_TIMEOUT = 504] = "GATEWAY_TIMEOUT", t[t.HTTP_VERSION_NOT_SUPPORTED = 505] = "HTTP_VERSION_NOT_SUPPORTED", t[t.VARIANT_ALSO_NEGOTIATES = 506] = "VARIANT_ALSO_NEGOTIATES", t[t.INSUFFICIENT_STORAGE = 507] = "INSUFFICIENT_STORAGE", t[t.LOOP_DETECTED = 508] = "LOOP_DETECTED", t[t.NOT_EXTENDED = 510] = "NOT_EXTENDED", t[t.NETWORK_AUTHENTICATION_REQUIRED = 511] = "NETWORK_AUTHENTICATION_REQUIRED", t[t.AWS_ELB_000 = 0] = "AWS_ELB_000", t[t.THIS_IS_FINE = 218] = "THIS_IS_FINE", t[t.PAGE_EXPIRED = 419] = "PAGE_EXPIRED", t[t.METHOD_FAILURE = 420] = "METHOD_FAILURE", t[t.ENHANCE_YOUR_CALM = 420] = "ENHANCE_YOUR_CALM", t[t.REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY = 430] = "REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY", t[t.SHOPIFY_SECURITY_REJECTION = 430] = "SHOPIFY_SECURITY_REJECTION", t[t.LOGIN_TIME_OUT = 440] = "LOGIN_TIME_OUT", t[t.NO_RESPONSE = 444] = "NO_RESPONSE", t[t.RETRY_WITH = 449] = "RETRY_WITH", t[t.BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS = 450] = "BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS", t[t.REDIRECT_IIS = 451] = "REDIRECT_IIS", t[t.CLIENT_CLOSED_CONNECTION_AWS_ELB = 460] = "CLIENT_CLOSED_CONNECTION_AWS_ELB", t[t.X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB = 463] = "X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB", t[t.INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB = 464] = "INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB", t[t.REQUEST_HEADER_TOO_LARGE = 494] = "REQUEST_HEADER_TOO_LARGE", t[t.SSL_CERTIFICATE_ERROR = 495] = "SSL_CERTIFICATE_ERROR", t[t.SSL_CERTIFICATE_REQUIRED = 496] = "SSL_CERTIFICATE_REQUIRED", t[t.HTTP_REQUEST_SENT_TO_HTTPS_PORT = 497] = "HTTP_REQUEST_SENT_TO_HTTPS_PORT", t[t.INVALID_TOKEN = 498] = "INVALID_TOKEN", t[t.CLIENT_CLOSED_REQUEST = 499] = "CLIENT_CLOSED_REQUEST", t[t.TOKEN_REQUIRED = 499] = "TOKEN_REQUIRED", t[t.BANDWIDTH_LIMIT_EXCEEDED = 509] = "BANDWIDTH_LIMIT_EXCEEDED", t[t.RESOURCE_LIMIT_IS_REACHED = 508] = "RESOURCE_LIMIT_IS_REACHED", t[t.WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR = 520] = "WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR", t[t.WEB_SERVER_IS_DOWN = 521] = "WEB_SERVER_IS_DOWN", t[t.CONNECTION_TIMED_OUT = 522] = "CONNECTION_TIMED_OUT", t[t.ORIGIN_IS_UNREACHABLE = 523] = "ORIGIN_IS_UNREACHABLE", t[t.A_TIMEOUT_OCCURRED = 524] = "A_TIMEOUT_OCCURRED", t[t.SSL_HANDSHAKE_FAILED = 525] = "SSL_HANDSHAKE_FAILED", t[t.INVALID_SSL_CERTIFICATE = 526] = "INVALID_SSL_CERTIFICATE", t[t.RAILGUN_ERROR = 527] = "RAILGUN_ERROR", t[t.SITE_IS_OVERLOADED = 529] = "SITE_IS_OVERLOADED", t[t.ORIGIN_UNAVAILABLE = 530] = "ORIGIN_UNAVAILABLE", t[t.ORIGIN_DNS_ERROR = 530] = "ORIGIN_DNS_ERROR", t[t.SITE_IS_FROZEN = 530] = "SITE_IS_FROZEN", t[t.TEMPORARILY_DISABLED = 540] = "TEMPORARILY_DISABLED", t[t.UNAUTHORIZED_AWS_ELB = 561] = "UNAUTHORIZED_AWS_ELB", t[t.NETWORK_READ_TIMEOUT_ERROR = 598] = "NETWORK_READ_TIMEOUT_ERROR", t[t.NETWORK_CONNECT_TIMEOUT_ERROR = 599] = "NETWORK_CONNECT_TIMEOUT_ERROR", t[t.UNEXPECTED_TOKEN = 783] = "UNEXPECTED_TOKEN", t[t.REQUEST_DENIED = 999] = "REQUEST_DENIED", t))(c || {});
-const ub = {
+const lb = {
     griefing: Il(),
     "multi-accounting": gm(),
     "hate-speech": Xl(),
@@ -3891,7 +3895,7 @@ const ub = {
     "inappropriate-content": Od(),
     other: Jo()
   },
-  lb = {
+  db = {
     doxxing: Gc(),
     "hate-speech": dd(),
     griefing: Fl(),
@@ -3900,7 +3904,7 @@ const ub = {
     "inappropriate-content": Cd(),
     other: ls()
   },
-  db = {
+  _b = {
     doxxing: "text-red-600",
     "hate-speech": "text-red-400",
     "inappropriate-content": "text-amber-500",
@@ -3918,7 +3922,7 @@ const ub = {
     other: 5,
     griefing: 6
   },
-  _b = {
+  fb = {
     griefing: "1-1-art-integrity-and-griefing",
     "inappropriate-content": "1-2-inappropriate-content",
     bot: "1-4-automation",
@@ -3927,7 +3931,7 @@ const ub = {
     doxxing: "1-5-doxxing",
     other: ""
   },
-  bv = 365 * 24 * 60 * 60 * 1e3;
+  Ev = 365 * 24 * 60 * 60 * 1e3;
 
 function Cn(t) {
   if (!t) return null;
@@ -3935,12 +3939,12 @@ function Cn(t) {
   return Number.isFinite(e) ? e : null
 }
 
-function fb(t, n = Date.now()) {
+function mb(t, n = Date.now()) {
   const e = Cn(t);
-  return e === null ? !1 : e - n >= bv
+  return e === null ? !1 : e - n >= Ev
 }
 
-function mb(t, n = Date.now()) {
+function pb(t, n = Date.now()) {
   const e = Cn(t);
   if (e === null || e <= n) return {
     days: 0,
@@ -3957,13 +3961,13 @@ function mb(t, n = Date.now()) {
     minutes: o
   }
 }
-const Ev = [{
+const Tv = [{
     tileSize: 1e3,
     zoom: 11
   }],
-  Tv = 4,
-  Ov = 6e3,
-  Sv = [{
+  Ov = 4,
+  Sv = 6e3,
+  Iv = [{
     name: "Transparent",
     rgb: [0, 0, 0]
   }, {
@@ -4156,10 +4160,10 @@ const Ev = [{
     name: "Light Stone",
     rgb: [205, 197, 158]
   }],
-  Iv = {
+  Av = {
     needsPhoneVerification: "needs_phone_verification"
   },
-  Av = {
+  kv = {
     Droplet: {},
     "Max. Charge": {},
     "Paint Charge": {},
@@ -4170,7 +4174,7 @@ const Ev = [{
     "Custom Name Font": {},
     "Custom Name Style": {}
   },
-  kv = {
+  Rv = {
     10: {
       name: "25,000 Droplets",
       price: 500,
@@ -4301,8 +4305,8 @@ const Ev = [{
       }]
     }
   },
-  Rv = JSON.parse(`[{"id":1,"name":"Afghanistan","code":"AF","flag":"🇦🇫"},{"id":2,"name":"Albania","code":"AL","flag":"🇦🇱"},{"id":3,"name":"Algeria","code":"DZ","flag":"🇩🇿"},{"id":4,"name":"American Samoa","code":"AS","flag":"🇦🇸"},{"id":5,"name":"Andorra","code":"AD","flag":"🇦🇩"},{"id":6,"name":"Angola","code":"AO","flag":"🇦🇴"},{"id":7,"name":"Anguilla","code":"AI","flag":"🇦🇮"},{"id":8,"name":"Antarctica","code":"AQ","flag":"🇦🇶"},{"id":9,"name":"Antigua and Barbuda","code":"AG","flag":"🇦🇬"},{"id":10,"name":"Argentina","code":"AR","flag":"🇦🇷"},{"id":11,"name":"Armenia","code":"AM","flag":"🇦🇲"},{"id":12,"name":"Aruba","code":"AW","flag":"🇦🇼"},{"id":13,"name":"Australia","code":"AU","flag":"🇦🇺"},{"id":14,"name":"Austria","code":"AT","flag":"🇦🇹"},{"id":15,"name":"Azerbaijan","code":"AZ","flag":"🇦🇿"},{"id":16,"name":"Bahamas","code":"BS","flag":"🇧🇸"},{"id":17,"name":"Bahrain","code":"BH","flag":"🇧🇭"},{"id":18,"name":"Bangladesh","code":"BD","flag":"🇧🇩"},{"id":19,"name":"Barbados","code":"BB","flag":"🇧🇧"},{"id":20,"name":"Belarus","code":"BY","flag":"🇧🇾"},{"id":21,"name":"Belgium","code":"BE","flag":"🇧🇪"},{"id":22,"name":"Belize","code":"BZ","flag":"🇧🇿"},{"id":23,"name":"Benin","code":"BJ","flag":"🇧🇯"},{"id":24,"name":"Bermuda","code":"BM","flag":"🇧🇲"},{"id":25,"name":"Bhutan","code":"BT","flag":"🇧🇹"},{"id":26,"name":"Bolivia","code":"BO","flag":"🇧🇴"},{"id":27,"name":"Bonaire","code":"BQ","flag":"🇧🇶"},{"id":28,"name":"Bosnia and Herzegovina","code":"BA","flag":"🇧🇦"},{"id":29,"name":"Botswana","code":"BW","flag":"🇧🇼"},{"id":30,"name":"Bouvet Island","code":"BV","flag":"🇧🇻"},{"id":31,"name":"Brazil","code":"BR","flag":"🇧🇷"},{"id":32,"name":"British Indian Ocean Territory","code":"IO","flag":"🇮🇴"},{"id":33,"name":"Brunei Darussalam","code":"BN","flag":"🇧🇳"},{"id":34,"name":"Bulgaria","code":"BG","flag":"🇧🇬"},{"id":35,"name":"Burkina Faso","code":"BF","flag":"🇧🇫"},{"id":36,"name":"Burundi","code":"BI","flag":"🇧🇮"},{"id":37,"name":"Cabo Verde","code":"CV","flag":"🇨🇻"},{"id":38,"name":"Cambodia","code":"KH","flag":"🇰🇭"},{"id":39,"name":"Cameroon","code":"CM","flag":"🇨🇲"},{"id":40,"name":"Canada","code":"CA","flag":"🇨🇦"},{"id":41,"name":"Cayman Islands","code":"KY","flag":"🇰🇾"},{"id":42,"name":"Central African Republic","code":"CF","flag":"🇨🇫"},{"id":43,"name":"Chad","code":"TD","flag":"🇹🇩"},{"id":44,"name":"Chile","code":"CL","flag":"🇨🇱"},{"id":45,"name":"China","code":"CN","flag":"🇨🇳"},{"id":46,"name":"Christmas Island","code":"CX","flag":"🇨🇽"},{"id":47,"name":"Cocos (Keeling) Islands","code":"CC","flag":"🇨🇨"},{"id":48,"name":"Colombia","code":"CO","flag":"🇨🇴"},{"id":49,"name":"Comoros","code":"KM","flag":"🇰🇲"},{"id":50,"name":"Congo","code":"CG","flag":"🇨🇬"},{"id":51,"name":"Cook Islands","code":"CK","flag":"🇨🇰"},{"id":52,"name":"Costa Rica","code":"CR","flag":"🇨🇷"},{"id":53,"name":"Croatia","code":"HR","flag":"🇭🇷"},{"id":54,"name":"Cuba","code":"CU","flag":"🇨🇺"},{"id":55,"name":"Curaçao","code":"CW","flag":"🇨🇼"},{"id":56,"name":"Cyprus","code":"CY","flag":"🇨🇾"},{"id":57,"name":"Czechia","code":"CZ","flag":"🇨🇿"},{"id":58,"name":"Côte d'Ivoire","code":"CI","flag":"🇨🇮"},{"id":59,"name":"Denmark","code":"DK","flag":"🇩🇰"},{"id":60,"name":"Djibouti","code":"DJ","flag":"🇩🇯"},{"id":61,"name":"Dominica","code":"DM","flag":"🇩🇲"},{"id":62,"name":"Dominican Republic","code":"DO","flag":"🇩🇴"},{"id":63,"name":"Ecuador","code":"EC","flag":"🇪🇨"},{"id":64,"name":"Egypt","code":"EG","flag":"🇪🇬"},{"id":65,"name":"El Salvador","code":"SV","flag":"🇸🇻"},{"id":66,"name":"Equatorial Guinea","code":"GQ","flag":"🇬🇶"},{"id":67,"name":"Eritrea","code":"ER","flag":"🇪🇷"},{"id":68,"name":"Estonia","code":"EE","flag":"🇪🇪"},{"id":69,"name":"Eswatini","code":"SZ","flag":"🇸🇿"},{"id":70,"name":"Ethiopia","code":"ET","flag":"🇪🇹"},{"id":71,"name":"Falkland Islands (Malvinas)","code":"FK","flag":"🇫🇰"},{"id":72,"name":"Faroe Islands","code":"FO","flag":"🇫🇴"},{"id":73,"name":"Fiji","code":"FJ","flag":"🇫🇯"},{"id":74,"name":"Finland","code":"FI","flag":"🇫🇮"},{"id":75,"name":"France","code":"FR","flag":"🇫🇷"},{"id":76,"name":"French Guiana","code":"GF","flag":"🇬🇫"},{"id":77,"name":"French Polynesia","code":"PF","flag":"🇵🇫"},{"id":78,"name":"French Southern Territories","code":"TF","flag":"🇹🇫"},{"id":79,"name":"Gabon","code":"GA","flag":"🇬🇦"},{"id":80,"name":"Gambia","code":"GM","flag":"🇬🇲"},{"id":81,"name":"Georgia","code":"GE","flag":"🇬🇪"},{"id":82,"name":"Germany","code":"DE","flag":"🇩🇪"},{"id":83,"name":"Ghana","code":"GH","flag":"🇬🇭"},{"id":84,"name":"Gibraltar","code":"GI","flag":"🇬🇮"},{"id":85,"name":"Greece","code":"GR","flag":"🇬🇷"},{"id":86,"name":"Greenland","code":"GL","flag":"🇬🇱"},{"id":87,"name":"Grenada","code":"GD","flag":"🇬🇩"},{"id":88,"name":"Guadeloupe","code":"GP","flag":"🇬🇵"},{"id":89,"name":"Guam","code":"GU","flag":"🇬🇺"},{"id":90,"name":"Guatemala","code":"GT","flag":"🇬🇹"},{"id":91,"name":"Guernsey","code":"GG","flag":"🇬🇬"},{"id":92,"name":"Guinea","code":"GN","flag":"🇬🇳"},{"id":93,"name":"Guinea-Bissau","code":"GW","flag":"🇬🇼"},{"id":94,"name":"Guyana","code":"GY","flag":"🇬🇾"},{"id":95,"name":"Haiti","code":"HT","flag":"🇭🇹"},{"id":96,"name":"Heard Island and McDonald Islands","code":"HM","flag":"🇭🇲"},{"id":97,"name":"Honduras","code":"HN","flag":"🇭🇳"},{"id":98,"name":"Hong Kong","code":"HK","flag":"🇭🇰"},{"id":99,"name":"Hungary","code":"HU","flag":"🇭🇺"},{"id":100,"name":"Iceland","code":"IS","flag":"🇮🇸"},{"id":101,"name":"India","code":"IN","flag":"🇮🇳"},{"id":102,"name":"Indonesia","code":"ID","flag":"🇮🇩"},{"id":103,"name":"Iran","code":"IR","flag":"🇮🇷"},{"id":104,"name":"Iraq","code":"IQ","flag":"🇮🇶"},{"id":105,"name":"Ireland","code":"IE","flag":"🇮🇪"},{"id":106,"name":"Isle of Man","code":"IM","flag":"🇮🇲"},{"id":107,"name":"Israel","code":"IL","flag":"🇮🇱"},{"id":108,"name":"Italy","code":"IT","flag":"🇮🇹"},{"id":109,"name":"Jamaica","code":"JM","flag":"🇯🇲"},{"id":110,"name":"Japan","code":"JP","flag":"🇯🇵"},{"id":111,"name":"Jersey","code":"JE","flag":"🇯🇪"},{"id":112,"name":"Jordan","code":"JO","flag":"🇯🇴"},{"id":113,"name":"Kazakhstan","code":"KZ","flag":"🇰🇿"},{"id":114,"name":"Kenya","code":"KE","flag":"🇰🇪"},{"id":115,"name":"Kiribati","code":"KI","flag":"🇰🇮"},{"id":116,"name":"Kosovo","code":"XK","flag":"🇽🇰"},{"id":117,"name":"Kuwait","code":"KW","flag":"🇰🇼"},{"id":118,"name":"Kyrgyzstan","code":"KG","flag":"🇰🇬"},{"id":119,"name":"Laos","code":"LA","flag":"🇱🇦"},{"id":120,"name":"Latvia","code":"LV","flag":"🇱🇻"},{"id":121,"name":"Lebanon","code":"LB","flag":"🇱🇧"},{"id":122,"name":"Lesotho","code":"LS","flag":"🇱🇸"},{"id":123,"name":"Liberia","code":"LR","flag":"🇱🇷"},{"id":124,"name":"Libya","code":"LY","flag":"🇱🇾"},{"id":125,"name":"Liechtenstein","code":"LI","flag":"🇱🇮"},{"id":126,"name":"Lithuania","code":"LT","flag":"🇱🇹"},{"id":127,"name":"Luxembourg","code":"LU","flag":"🇱🇺"},{"id":128,"name":"Macao","code":"MO","flag":"🇲🇴"},{"id":129,"name":"Madagascar","code":"MG","flag":"🇲🇬"},{"id":130,"name":"Malawi","code":"MW","flag":"🇲🇼"},{"id":131,"name":"Malaysia","code":"MY","flag":"🇲🇾"},{"id":132,"name":"Maldives","code":"MV","flag":"🇲🇻"},{"id":133,"name":"Mali","code":"ML","flag":"🇲🇱"},{"id":134,"name":"Malta","code":"MT","flag":"🇲🇹"},{"id":135,"name":"Marshall Islands","code":"MH","flag":"🇲🇭"},{"id":136,"name":"Martinique","code":"MQ","flag":"🇲🇶"},{"id":137,"name":"Mauritania","code":"MR","flag":"🇲🇷"},{"id":138,"name":"Mauritius","code":"MU","flag":"🇲🇺"},{"id":139,"name":"Mayotte","code":"YT","flag":"🇾🇹"},{"id":140,"name":"Mexico","code":"MX","flag":"🇲🇽"},{"id":141,"name":"Micronesia","code":"FM","flag":"🇫🇲"},{"id":142,"name":"Moldova","code":"MD","flag":"🇲🇩"},{"id":143,"name":"Monaco","code":"MC","flag":"🇲🇨"},{"id":144,"name":"Mongolia","code":"MN","flag":"🇲🇳"},{"id":145,"name":"Montenegro","code":"ME","flag":"🇲🇪"},{"id":146,"name":"Montserrat","code":"MS","flag":"🇲🇸"},{"id":147,"name":"Morocco","code":"MA","flag":"🇲🇦"},{"id":148,"name":"Mozambique","code":"MZ","flag":"🇲🇿"},{"id":149,"name":"Myanmar","code":"MM","flag":"🇲🇲"},{"id":150,"name":"Namibia","code":"NA","flag":"🇳🇦"},{"id":151,"name":"Nauru","code":"NR","flag":"🇳🇷"},{"id":152,"name":"Nepal","code":"NP","flag":"🇳🇵"},{"id":153,"name":"Netherlands","code":"NL","flag":"🇳🇱"},{"id":154,"name":"New Caledonia","code":"NC","flag":"🇳🇨"},{"id":155,"name":"New Zealand","code":"NZ","flag":"🇳🇿"},{"id":156,"name":"Nicaragua","code":"NI","flag":"🇳🇮"},{"id":157,"name":"Niger","code":"NE","flag":"🇳🇪"},{"id":158,"name":"Nigeria","code":"NG","flag":"🇳🇬"},{"id":159,"name":"Niue","code":"NU","flag":"🇳🇺"},{"id":160,"name":"Norfolk Island","code":"NF","flag":"🇳🇫"},{"id":161,"name":"North Korea","code":"KP","flag":"🇰🇵"},{"id":162,"name":"North Macedonia","code":"MK","flag":"🇲🇰"},{"id":163,"name":"Northern Mariana Islands","code":"MP","flag":"🇲🇵"},{"id":164,"name":"Norway","code":"NO","flag":"🇳🇴"},{"id":165,"name":"Oman","code":"OM","flag":"🇴🇲"},{"id":166,"name":"Pakistan","code":"PK","flag":"🇵🇰"},{"id":167,"name":"Palau","code":"PW","flag":"🇵🇼"},{"id":168,"name":"Palestine","code":"PS","flag":"🇵🇸"},{"id":169,"name":"Panama","code":"PA","flag":"🇵🇦"},{"id":170,"name":"Papua New Guinea","code":"PG","flag":"🇵🇬"},{"id":171,"name":"Paraguay","code":"PY","flag":"🇵🇾"},{"id":172,"name":"Peru","code":"PE","flag":"🇵🇪"},{"id":173,"name":"Philippines","code":"PH","flag":"🇵🇭"},{"id":174,"name":"Pitcairn","code":"PN","flag":"🇵🇳"},{"id":175,"name":"Poland","code":"PL","flag":"🇵🇱"},{"id":176,"name":"Portugal","code":"PT","flag":"🇵🇹"},{"id":177,"name":"Puerto Rico","code":"PR","flag":"🇵🇷"},{"id":178,"name":"Qatar","code":"QA","flag":"🇶🇦"},{"id":179,"name":"Republic of the Congo","code":"CD","flag":"🇨🇩"},{"id":180,"name":"Romania","code":"RO","flag":"🇷🇴"},{"id":181,"name":"Russia","code":"RU","flag":"🇷🇺"},{"id":182,"name":"Rwanda","code":"RW","flag":"🇷🇼"},{"id":183,"name":"Réunion","code":"RE","flag":"🇷🇪"},{"id":184,"name":"Saint Barthélemy","code":"BL","flag":"🇧🇱"},{"id":185,"name":"Saint Helena","code":"SH","flag":"🇸🇭"},{"id":186,"name":"Saint Kitts and Nevis","code":"KN","flag":"🇰🇳"},{"id":187,"name":"Saint Lucia","code":"LC","flag":"🇱🇨"},{"id":188,"name":"Saint Martin (French part)","code":"MF","flag":"🇲🇫"},{"id":189,"name":"Saint Pierre and Miquelon","code":"PM","flag":"🇵🇲"},{"id":190,"name":"Saint Vincent and the Grenadines","code":"VC","flag":"🇻🇨"},{"id":191,"name":"Samoa","code":"WS","flag":"🇼🇸"},{"id":192,"name":"San Marino","code":"SM","flag":"🇸🇲"},{"id":193,"name":"Sao Tome and Principe","code":"ST","flag":"🇸🇹"},{"id":194,"name":"Saudi Arabia","code":"SA","flag":"🇸🇦"},{"id":195,"name":"Senegal","code":"SN","flag":"🇸🇳"},{"id":196,"name":"Serbia","code":"RS","flag":"🇷🇸"},{"id":197,"name":"Seychelles","code":"SC","flag":"🇸🇨"},{"id":198,"name":"Sierra Leone","code":"SL","flag":"🇸🇱"},{"id":199,"name":"Singapore","code":"SG","flag":"🇸🇬"},{"id":200,"name":"Sint Maarten (Dutch part)","code":"SX","flag":"🇸🇽"},{"id":201,"name":"Slovakia","code":"SK","flag":"🇸🇰"},{"id":202,"name":"Slovenia","code":"SI","flag":"🇸🇮"},{"id":203,"name":"Solomon Islands","code":"SB","flag":"🇸🇧"},{"id":204,"name":"Somalia","code":"SO","flag":"🇸🇴"},{"id":205,"name":"South Africa","code":"ZA","flag":"🇿🇦"},{"id":206,"name":"South Georgia and the South Sandwich Islands","code":"GS","flag":"🇬🇸"},{"id":207,"name":"South Korea","code":"KR","flag":"🇰🇷"},{"id":208,"name":"South Sudan","code":"SS","flag":"🇸🇸"},{"id":209,"name":"Spain","code":"ES","flag":"🇪🇸"},{"id":210,"name":"Sri Lanka","code":"LK","flag":"🇱🇰"},{"id":211,"name":"Sudan","code":"SD","flag":"🇸🇩"},{"id":212,"name":"Suriname","code":"SR","flag":"🇸🇷"},{"id":213,"name":"Svalbard and Jan Mayen","code":"SJ","flag":"🇸🇯"},{"id":214,"name":"Sweden","code":"SE","flag":"🇸🇪"},{"id":215,"name":"Switzerland","code":"CH","flag":"🇨🇭"},{"id":216,"name":"Syrian Arab Republic","code":"SY","flag":"🇸🇾"},{"id":217,"name":"Taiwan","code":"TW","flag":"🇹🇼"},{"id":218,"name":"Tajikistan","code":"TJ","flag":"🇹🇯"},{"id":219,"name":"Tanzania","code":"TZ","flag":"🇹🇿"},{"id":220,"name":"Thailand","code":"TH","flag":"🇹🇭"},{"id":221,"name":"Timor-Leste","code":"TL","flag":"🇹🇱"},{"id":222,"name":"Togo","code":"TG","flag":"🇹🇬"},{"id":223,"name":"Tokelau","code":"TK","flag":"🇹🇰"},{"id":224,"name":"Tonga","code":"TO","flag":"🇹🇴"},{"id":225,"name":"Trinidad and Tobago","code":"TT","flag":"🇹🇹"},{"id":226,"name":"Tunisia","code":"TN","flag":"🇹🇳"},{"id":227,"name":"Turkmenistan","code":"TM","flag":"🇹🇲"},{"id":228,"name":"Turks and Caicos Islands","code":"TC","flag":"🇹🇨"},{"id":229,"name":"Tuvalu","code":"TV","flag":"🇹🇻"},{"id":230,"name":"Türkiye","code":"TR","flag":"🇹🇷"},{"id":231,"name":"Uganda","code":"UG","flag":"🇺🇬"},{"id":232,"name":"Ukraine","code":"UA","flag":"🇺🇦"},{"id":233,"name":"United Arab Emirates","code":"AE","flag":"🇦🇪"},{"id":234,"name":"United Kingdom","code":"GB","flag":"🇬🇧"},{"id":235,"name":"United States","code":"US","flag":"🇺🇸"},{"id":236,"name":"United States Minor Outlying Islands","code":"UM","flag":"🇺🇲"},{"id":237,"name":"Uruguay","code":"UY","flag":"🇺🇾"},{"id":238,"name":"Uzbekistan","code":"UZ","flag":"🇺🇿"},{"id":239,"name":"Vanuatu","code":"VU","flag":"🇻🇺"},{"id":240,"name":"Vatican City","code":"VA","flag":"🇻🇦"},{"id":241,"name":"Venezuela","code":"VE","flag":"🇻🇪"},{"id":242,"name":"Viet Nam","code":"VN","flag":"🇻🇳"},{"id":243,"name":"Virgin Islands","code":"VG","flag":"🇻🇬"},{"id":244,"name":"Virgin Islands","code":"VI","flag":"🇻🇮"},{"id":245,"name":"Wallis and Futuna","code":"WF","flag":"🇼🇫"},{"id":246,"name":"Western Sahara","code":"EH","flag":"🇪🇭"},{"id":247,"name":"Yemen","code":"YE","flag":"🇾🇪"},{"id":248,"name":"Zambia","code":"ZM","flag":"🇿🇲"},{"id":249,"name":"Zimbabwe","code":"ZW","flag":"🇿🇼"},{"id":250,"name":"Åland Islands","code":"AX","flag":"🇦🇽"},{"id":251,"name":"Canary Islands","code":"IC","flag":"🇮🇨"}]`),
-  Nv = {
+  Nv = JSON.parse(`[{"id":1,"name":"Afghanistan","code":"AF","flag":"🇦🇫"},{"id":2,"name":"Albania","code":"AL","flag":"🇦🇱"},{"id":3,"name":"Algeria","code":"DZ","flag":"🇩🇿"},{"id":4,"name":"American Samoa","code":"AS","flag":"🇦🇸"},{"id":5,"name":"Andorra","code":"AD","flag":"🇦🇩"},{"id":6,"name":"Angola","code":"AO","flag":"🇦🇴"},{"id":7,"name":"Anguilla","code":"AI","flag":"🇦🇮"},{"id":8,"name":"Antarctica","code":"AQ","flag":"🇦🇶"},{"id":9,"name":"Antigua and Barbuda","code":"AG","flag":"🇦🇬"},{"id":10,"name":"Argentina","code":"AR","flag":"🇦🇷"},{"id":11,"name":"Armenia","code":"AM","flag":"🇦🇲"},{"id":12,"name":"Aruba","code":"AW","flag":"🇦🇼"},{"id":13,"name":"Australia","code":"AU","flag":"🇦🇺"},{"id":14,"name":"Austria","code":"AT","flag":"🇦🇹"},{"id":15,"name":"Azerbaijan","code":"AZ","flag":"🇦🇿"},{"id":16,"name":"Bahamas","code":"BS","flag":"🇧🇸"},{"id":17,"name":"Bahrain","code":"BH","flag":"🇧🇭"},{"id":18,"name":"Bangladesh","code":"BD","flag":"🇧🇩"},{"id":19,"name":"Barbados","code":"BB","flag":"🇧🇧"},{"id":20,"name":"Belarus","code":"BY","flag":"🇧🇾"},{"id":21,"name":"Belgium","code":"BE","flag":"🇧🇪"},{"id":22,"name":"Belize","code":"BZ","flag":"🇧🇿"},{"id":23,"name":"Benin","code":"BJ","flag":"🇧🇯"},{"id":24,"name":"Bermuda","code":"BM","flag":"🇧🇲"},{"id":25,"name":"Bhutan","code":"BT","flag":"🇧🇹"},{"id":26,"name":"Bolivia","code":"BO","flag":"🇧🇴"},{"id":27,"name":"Bonaire","code":"BQ","flag":"🇧🇶"},{"id":28,"name":"Bosnia and Herzegovina","code":"BA","flag":"🇧🇦"},{"id":29,"name":"Botswana","code":"BW","flag":"🇧🇼"},{"id":30,"name":"Bouvet Island","code":"BV","flag":"🇧🇻"},{"id":31,"name":"Brazil","code":"BR","flag":"🇧🇷"},{"id":32,"name":"British Indian Ocean Territory","code":"IO","flag":"🇮🇴"},{"id":33,"name":"Brunei Darussalam","code":"BN","flag":"🇧🇳"},{"id":34,"name":"Bulgaria","code":"BG","flag":"🇧🇬"},{"id":35,"name":"Burkina Faso","code":"BF","flag":"🇧🇫"},{"id":36,"name":"Burundi","code":"BI","flag":"🇧🇮"},{"id":37,"name":"Cabo Verde","code":"CV","flag":"🇨🇻"},{"id":38,"name":"Cambodia","code":"KH","flag":"🇰🇭"},{"id":39,"name":"Cameroon","code":"CM","flag":"🇨🇲"},{"id":40,"name":"Canada","code":"CA","flag":"🇨🇦"},{"id":41,"name":"Cayman Islands","code":"KY","flag":"🇰🇾"},{"id":42,"name":"Central African Republic","code":"CF","flag":"🇨🇫"},{"id":43,"name":"Chad","code":"TD","flag":"🇹🇩"},{"id":44,"name":"Chile","code":"CL","flag":"🇨🇱"},{"id":45,"name":"China","code":"CN","flag":"🇨🇳"},{"id":46,"name":"Christmas Island","code":"CX","flag":"🇨🇽"},{"id":47,"name":"Cocos (Keeling) Islands","code":"CC","flag":"🇨🇨"},{"id":48,"name":"Colombia","code":"CO","flag":"🇨🇴"},{"id":49,"name":"Comoros","code":"KM","flag":"🇰🇲"},{"id":50,"name":"Congo","code":"CG","flag":"🇨🇬"},{"id":51,"name":"Cook Islands","code":"CK","flag":"🇨🇰"},{"id":52,"name":"Costa Rica","code":"CR","flag":"🇨🇷"},{"id":53,"name":"Croatia","code":"HR","flag":"🇭🇷"},{"id":54,"name":"Cuba","code":"CU","flag":"🇨🇺"},{"id":55,"name":"Curaçao","code":"CW","flag":"🇨🇼"},{"id":56,"name":"Cyprus","code":"CY","flag":"🇨🇾"},{"id":57,"name":"Czechia","code":"CZ","flag":"🇨🇿"},{"id":58,"name":"Côte d'Ivoire","code":"CI","flag":"🇨🇮"},{"id":59,"name":"Denmark","code":"DK","flag":"🇩🇰"},{"id":60,"name":"Djibouti","code":"DJ","flag":"🇩🇯"},{"id":61,"name":"Dominica","code":"DM","flag":"🇩🇲"},{"id":62,"name":"Dominican Republic","code":"DO","flag":"🇩🇴"},{"id":63,"name":"Ecuador","code":"EC","flag":"🇪🇨"},{"id":64,"name":"Egypt","code":"EG","flag":"🇪🇬"},{"id":65,"name":"El Salvador","code":"SV","flag":"🇸🇻"},{"id":66,"name":"Equatorial Guinea","code":"GQ","flag":"🇬🇶"},{"id":67,"name":"Eritrea","code":"ER","flag":"🇪🇷"},{"id":68,"name":"Estonia","code":"EE","flag":"🇪🇪"},{"id":69,"name":"Eswatini","code":"SZ","flag":"🇸🇿"},{"id":70,"name":"Ethiopia","code":"ET","flag":"🇪🇹"},{"id":71,"name":"Falkland Islands (Malvinas)","code":"FK","flag":"🇫🇰"},{"id":72,"name":"Faroe Islands","code":"FO","flag":"🇫🇴"},{"id":73,"name":"Fiji","code":"FJ","flag":"🇫🇯"},{"id":74,"name":"Finland","code":"FI","flag":"🇫🇮"},{"id":75,"name":"France","code":"FR","flag":"🇫🇷"},{"id":76,"name":"French Guiana","code":"GF","flag":"🇬🇫"},{"id":77,"name":"French Polynesia","code":"PF","flag":"🇵🇫"},{"id":78,"name":"French Southern Territories","code":"TF","flag":"🇹🇫"},{"id":79,"name":"Gabon","code":"GA","flag":"🇬🇦"},{"id":80,"name":"Gambia","code":"GM","flag":"🇬🇲"},{"id":81,"name":"Georgia","code":"GE","flag":"🇬🇪"},{"id":82,"name":"Germany","code":"DE","flag":"🇩🇪"},{"id":83,"name":"Ghana","code":"GH","flag":"🇬🇭"},{"id":84,"name":"Gibraltar","code":"GI","flag":"🇬🇮"},{"id":85,"name":"Greece","code":"GR","flag":"🇬🇷"},{"id":86,"name":"Greenland","code":"GL","flag":"🇬🇱"},{"id":87,"name":"Grenada","code":"GD","flag":"🇬🇩"},{"id":88,"name":"Guadeloupe","code":"GP","flag":"🇬🇵"},{"id":89,"name":"Guam","code":"GU","flag":"🇬🇺"},{"id":90,"name":"Guatemala","code":"GT","flag":"🇬🇹"},{"id":91,"name":"Guernsey","code":"GG","flag":"🇬🇬"},{"id":92,"name":"Guinea","code":"GN","flag":"🇬🇳"},{"id":93,"name":"Guinea-Bissau","code":"GW","flag":"🇬🇼"},{"id":94,"name":"Guyana","code":"GY","flag":"🇬🇾"},{"id":95,"name":"Haiti","code":"HT","flag":"🇭🇹"},{"id":96,"name":"Heard Island and McDonald Islands","code":"HM","flag":"🇭🇲"},{"id":97,"name":"Honduras","code":"HN","flag":"🇭🇳"},{"id":98,"name":"Hong Kong","code":"HK","flag":"🇭🇰"},{"id":99,"name":"Hungary","code":"HU","flag":"🇭🇺"},{"id":100,"name":"Iceland","code":"IS","flag":"🇮🇸"},{"id":101,"name":"India","code":"IN","flag":"🇮🇳"},{"id":102,"name":"Indonesia","code":"ID","flag":"🇮🇩"},{"id":103,"name":"Iran","code":"IR","flag":"🇮🇷"},{"id":104,"name":"Iraq","code":"IQ","flag":"🇮🇶"},{"id":105,"name":"Ireland","code":"IE","flag":"🇮🇪"},{"id":106,"name":"Isle of Man","code":"IM","flag":"🇮🇲"},{"id":107,"name":"Israel","code":"IL","flag":"🇮🇱"},{"id":108,"name":"Italy","code":"IT","flag":"🇮🇹"},{"id":109,"name":"Jamaica","code":"JM","flag":"🇯🇲"},{"id":110,"name":"Japan","code":"JP","flag":"🇯🇵"},{"id":111,"name":"Jersey","code":"JE","flag":"🇯🇪"},{"id":112,"name":"Jordan","code":"JO","flag":"🇯🇴"},{"id":113,"name":"Kazakhstan","code":"KZ","flag":"🇰🇿"},{"id":114,"name":"Kenya","code":"KE","flag":"🇰🇪"},{"id":115,"name":"Kiribati","code":"KI","flag":"🇰🇮"},{"id":116,"name":"Kosovo","code":"XK","flag":"🇽🇰"},{"id":117,"name":"Kuwait","code":"KW","flag":"🇰🇼"},{"id":118,"name":"Kyrgyzstan","code":"KG","flag":"🇰🇬"},{"id":119,"name":"Laos","code":"LA","flag":"🇱🇦"},{"id":120,"name":"Latvia","code":"LV","flag":"🇱🇻"},{"id":121,"name":"Lebanon","code":"LB","flag":"🇱🇧"},{"id":122,"name":"Lesotho","code":"LS","flag":"🇱🇸"},{"id":123,"name":"Liberia","code":"LR","flag":"🇱🇷"},{"id":124,"name":"Libya","code":"LY","flag":"🇱🇾"},{"id":125,"name":"Liechtenstein","code":"LI","flag":"🇱🇮"},{"id":126,"name":"Lithuania","code":"LT","flag":"🇱🇹"},{"id":127,"name":"Luxembourg","code":"LU","flag":"🇱🇺"},{"id":128,"name":"Macao","code":"MO","flag":"🇲🇴"},{"id":129,"name":"Madagascar","code":"MG","flag":"🇲🇬"},{"id":130,"name":"Malawi","code":"MW","flag":"🇲🇼"},{"id":131,"name":"Malaysia","code":"MY","flag":"🇲🇾"},{"id":132,"name":"Maldives","code":"MV","flag":"🇲🇻"},{"id":133,"name":"Mali","code":"ML","flag":"🇲🇱"},{"id":134,"name":"Malta","code":"MT","flag":"🇲🇹"},{"id":135,"name":"Marshall Islands","code":"MH","flag":"🇲🇭"},{"id":136,"name":"Martinique","code":"MQ","flag":"🇲🇶"},{"id":137,"name":"Mauritania","code":"MR","flag":"🇲🇷"},{"id":138,"name":"Mauritius","code":"MU","flag":"🇲🇺"},{"id":139,"name":"Mayotte","code":"YT","flag":"🇾🇹"},{"id":140,"name":"Mexico","code":"MX","flag":"🇲🇽"},{"id":141,"name":"Micronesia","code":"FM","flag":"🇫🇲"},{"id":142,"name":"Moldova","code":"MD","flag":"🇲🇩"},{"id":143,"name":"Monaco","code":"MC","flag":"🇲🇨"},{"id":144,"name":"Mongolia","code":"MN","flag":"🇲🇳"},{"id":145,"name":"Montenegro","code":"ME","flag":"🇲🇪"},{"id":146,"name":"Montserrat","code":"MS","flag":"🇲🇸"},{"id":147,"name":"Morocco","code":"MA","flag":"🇲🇦"},{"id":148,"name":"Mozambique","code":"MZ","flag":"🇲🇿"},{"id":149,"name":"Myanmar","code":"MM","flag":"🇲🇲"},{"id":150,"name":"Namibia","code":"NA","flag":"🇳🇦"},{"id":151,"name":"Nauru","code":"NR","flag":"🇳🇷"},{"id":152,"name":"Nepal","code":"NP","flag":"🇳🇵"},{"id":153,"name":"Netherlands","code":"NL","flag":"🇳🇱"},{"id":154,"name":"New Caledonia","code":"NC","flag":"🇳🇨"},{"id":155,"name":"New Zealand","code":"NZ","flag":"🇳🇿"},{"id":156,"name":"Nicaragua","code":"NI","flag":"🇳🇮"},{"id":157,"name":"Niger","code":"NE","flag":"🇳🇪"},{"id":158,"name":"Nigeria","code":"NG","flag":"🇳🇬"},{"id":159,"name":"Niue","code":"NU","flag":"🇳🇺"},{"id":160,"name":"Norfolk Island","code":"NF","flag":"🇳🇫"},{"id":161,"name":"North Korea","code":"KP","flag":"🇰🇵"},{"id":162,"name":"North Macedonia","code":"MK","flag":"🇲🇰"},{"id":163,"name":"Northern Mariana Islands","code":"MP","flag":"🇲🇵"},{"id":164,"name":"Norway","code":"NO","flag":"🇳🇴"},{"id":165,"name":"Oman","code":"OM","flag":"🇴🇲"},{"id":166,"name":"Pakistan","code":"PK","flag":"🇵🇰"},{"id":167,"name":"Palau","code":"PW","flag":"🇵🇼"},{"id":168,"name":"Palestine","code":"PS","flag":"🇵🇸"},{"id":169,"name":"Panama","code":"PA","flag":"🇵🇦"},{"id":170,"name":"Papua New Guinea","code":"PG","flag":"🇵🇬"},{"id":171,"name":"Paraguay","code":"PY","flag":"🇵🇾"},{"id":172,"name":"Peru","code":"PE","flag":"🇵🇪"},{"id":173,"name":"Philippines","code":"PH","flag":"🇵🇭"},{"id":174,"name":"Pitcairn","code":"PN","flag":"🇵🇳"},{"id":175,"name":"Poland","code":"PL","flag":"🇵🇱"},{"id":176,"name":"Portugal","code":"PT","flag":"🇵🇹"},{"id":177,"name":"Puerto Rico","code":"PR","flag":"🇵🇷"},{"id":178,"name":"Qatar","code":"QA","flag":"🇶🇦"},{"id":179,"name":"Republic of the Congo","code":"CD","flag":"🇨🇩"},{"id":180,"name":"Romania","code":"RO","flag":"🇷🇴"},{"id":181,"name":"Russia","code":"RU","flag":"🇷🇺"},{"id":182,"name":"Rwanda","code":"RW","flag":"🇷🇼"},{"id":183,"name":"Réunion","code":"RE","flag":"🇷🇪"},{"id":184,"name":"Saint Barthélemy","code":"BL","flag":"🇧🇱"},{"id":185,"name":"Saint Helena","code":"SH","flag":"🇸🇭"},{"id":186,"name":"Saint Kitts and Nevis","code":"KN","flag":"🇰🇳"},{"id":187,"name":"Saint Lucia","code":"LC","flag":"🇱🇨"},{"id":188,"name":"Saint Martin (French part)","code":"MF","flag":"🇲🇫"},{"id":189,"name":"Saint Pierre and Miquelon","code":"PM","flag":"🇵🇲"},{"id":190,"name":"Saint Vincent and the Grenadines","code":"VC","flag":"🇻🇨"},{"id":191,"name":"Samoa","code":"WS","flag":"🇼🇸"},{"id":192,"name":"San Marino","code":"SM","flag":"🇸🇲"},{"id":193,"name":"Sao Tome and Principe","code":"ST","flag":"🇸🇹"},{"id":194,"name":"Saudi Arabia","code":"SA","flag":"🇸🇦"},{"id":195,"name":"Senegal","code":"SN","flag":"🇸🇳"},{"id":196,"name":"Serbia","code":"RS","flag":"🇷🇸"},{"id":197,"name":"Seychelles","code":"SC","flag":"🇸🇨"},{"id":198,"name":"Sierra Leone","code":"SL","flag":"🇸🇱"},{"id":199,"name":"Singapore","code":"SG","flag":"🇸🇬"},{"id":200,"name":"Sint Maarten (Dutch part)","code":"SX","flag":"🇸🇽"},{"id":201,"name":"Slovakia","code":"SK","flag":"🇸🇰"},{"id":202,"name":"Slovenia","code":"SI","flag":"🇸🇮"},{"id":203,"name":"Solomon Islands","code":"SB","flag":"🇸🇧"},{"id":204,"name":"Somalia","code":"SO","flag":"🇸🇴"},{"id":205,"name":"South Africa","code":"ZA","flag":"🇿🇦"},{"id":206,"name":"South Georgia and the South Sandwich Islands","code":"GS","flag":"🇬🇸"},{"id":207,"name":"South Korea","code":"KR","flag":"🇰🇷"},{"id":208,"name":"South Sudan","code":"SS","flag":"🇸🇸"},{"id":209,"name":"Spain","code":"ES","flag":"🇪🇸"},{"id":210,"name":"Sri Lanka","code":"LK","flag":"🇱🇰"},{"id":211,"name":"Sudan","code":"SD","flag":"🇸🇩"},{"id":212,"name":"Suriname","code":"SR","flag":"🇸🇷"},{"id":213,"name":"Svalbard and Jan Mayen","code":"SJ","flag":"🇸🇯"},{"id":214,"name":"Sweden","code":"SE","flag":"🇸🇪"},{"id":215,"name":"Switzerland","code":"CH","flag":"🇨🇭"},{"id":216,"name":"Syrian Arab Republic","code":"SY","flag":"🇸🇾"},{"id":217,"name":"Taiwan","code":"TW","flag":"🇹🇼"},{"id":218,"name":"Tajikistan","code":"TJ","flag":"🇹🇯"},{"id":219,"name":"Tanzania","code":"TZ","flag":"🇹🇿"},{"id":220,"name":"Thailand","code":"TH","flag":"🇹🇭"},{"id":221,"name":"Timor-Leste","code":"TL","flag":"🇹🇱"},{"id":222,"name":"Togo","code":"TG","flag":"🇹🇬"},{"id":223,"name":"Tokelau","code":"TK","flag":"🇹🇰"},{"id":224,"name":"Tonga","code":"TO","flag":"🇹🇴"},{"id":225,"name":"Trinidad and Tobago","code":"TT","flag":"🇹🇹"},{"id":226,"name":"Tunisia","code":"TN","flag":"🇹🇳"},{"id":227,"name":"Turkmenistan","code":"TM","flag":"🇹🇲"},{"id":228,"name":"Turks and Caicos Islands","code":"TC","flag":"🇹🇨"},{"id":229,"name":"Tuvalu","code":"TV","flag":"🇹🇻"},{"id":230,"name":"Türkiye","code":"TR","flag":"🇹🇷"},{"id":231,"name":"Uganda","code":"UG","flag":"🇺🇬"},{"id":232,"name":"Ukraine","code":"UA","flag":"🇺🇦"},{"id":233,"name":"United Arab Emirates","code":"AE","flag":"🇦🇪"},{"id":234,"name":"United Kingdom","code":"GB","flag":"🇬🇧"},{"id":235,"name":"United States","code":"US","flag":"🇺🇸"},{"id":236,"name":"United States Minor Outlying Islands","code":"UM","flag":"🇺🇲"},{"id":237,"name":"Uruguay","code":"UY","flag":"🇺🇾"},{"id":238,"name":"Uzbekistan","code":"UZ","flag":"🇺🇿"},{"id":239,"name":"Vanuatu","code":"VU","flag":"🇻🇺"},{"id":240,"name":"Vatican City","code":"VA","flag":"🇻🇦"},{"id":241,"name":"Venezuela","code":"VE","flag":"🇻🇪"},{"id":242,"name":"Viet Nam","code":"VN","flag":"🇻🇳"},{"id":243,"name":"Virgin Islands","code":"VG","flag":"🇻🇬"},{"id":244,"name":"Virgin Islands","code":"VI","flag":"🇻🇮"},{"id":245,"name":"Wallis and Futuna","code":"WF","flag":"🇼🇫"},{"id":246,"name":"Western Sahara","code":"EH","flag":"🇪🇭"},{"id":247,"name":"Yemen","code":"YE","flag":"🇾🇪"},{"id":248,"name":"Zambia","code":"ZM","flag":"🇿🇲"},{"id":249,"name":"Zimbabwe","code":"ZW","flag":"🇿🇼"},{"id":250,"name":"Åland Islands","code":"AX","flag":"🇦🇽"},{"id":251,"name":"Canary Islands","code":"IC","flag":"🇮🇨"}]`),
+  xv = {
     dashboard: {
       summary: {
         counters: {
@@ -4422,7 +4426,7 @@ const Ev = [{
       assignCosmetics: "staff.cosmetics.assign_cosmetics"
     }
   },
-  xv = {
+  Dv = {
     tools: {
       wayback: {
         limit: 500
@@ -4430,26 +4434,26 @@ const Ev = [{
     }
   },
   _e = {
-    seasons: Ev,
-    regionSize: Tv,
-    refreshIntervalMs: Ov,
-    colors: Sv,
-    errors: Iv,
-    items: Av,
-    products: kv,
-    countries: Rv,
-    permissions: Nv,
-    settings: xv
+    seasons: Tv,
+    regionSize: Ov,
+    refreshIntervalMs: Sv,
+    colors: Iv,
+    errors: Av,
+    items: kv,
+    products: Rv,
+    countries: Nv,
+    permissions: xv,
+    settings: Dv
   },
   vt = _e,
-  Dv = _e.seasons,
+  Lv = _e.seasons,
   jn = _e.seasons.length - 1,
-  pb = _e.seasons[jn].zoom,
-  hb = _e.seasons[jn].tileSize,
-  gb = _e.permissions,
-  Lv = _e.settings;
+  hb = _e.seasons[jn].zoom,
+  gb = _e.seasons[jn].tileSize,
+  wb = _e.permissions,
+  Mv = _e.settings;
 
-function wb(t) {
+function yb(t) {
   return vt.countries[t - 1]
 }
 class m extends Error {
@@ -4468,7 +4472,7 @@ function _n(t, n) {
   return e
 }
 
-function yb(t, n) {
+function vb(t, n) {
   const e = {};
   for (const r of t) {
     const a = n(r);
@@ -4477,7 +4481,7 @@ function yb(t, n) {
   return e
 }
 var je, Fe;
-class Mv {
+class Pv {
   constructor(n) {
     D(this, je, B(!0));
     D(this, Fe, B(null));
@@ -4530,7 +4534,7 @@ class Mv {
         }))
       },
       a = JSON.stringify(r),
-      i = await pt(a),
+      i = await ht(a),
       o = await this.request("/paint", {
         method: "POST",
         body: a,
@@ -4645,7 +4649,7 @@ class Mv {
           colors: u.map(T => T.colorIdx),
           coords: u.flatMap(T => T.pixel),
           csid: r
-        }, y = JSON.stringify(p), E = e(d, l, _), g = await pt(y);
+        }, y = JSON.stringify(p), E = e(d, l, _), g = await ht(y);
         return this.request(E, {
           method: "POST",
           body: y,
@@ -4673,8 +4677,8 @@ class Mv {
     }
   }
   async adminAutoPainterPaint(n, e, r) {
-    const a = Pv(n),
-      i = await Uv(a),
+    const a = Uv(n),
+      i = await Cv(a),
       o = new FormData;
     o.append("fingerprint", e), o.append("season", a.season.toString()), o.append("px0", a.offsetX.toString()), o.append("py0", a.offsetY.toString()), o.append("width", a.width.toString()), o.append("height", a.height.toString()), o.append("pixels", n.length.toString()), o.append("bitmap", i, "auto-painter.png"), o.append("userId", r.toString());
     const s = await this.request("/staff/tools/auto-painter/paint", {
@@ -5768,7 +5772,7 @@ class Mv {
     const e = JSON.stringify({
         message: n
       }),
-      r = await pt(e),
+      r = await ht(e),
       a = await this.request("/report/appeal", {
         method: "POST",
         credentials: "include",
@@ -5954,8 +5958,8 @@ class Mv {
   }
   validWaybackInput(n) {
     const e = Number.isFinite(n.timestamp) && Number.isInteger(n.timestamp) && n.timestamp >= 0 && n.timestamp <= this.getEstimatedServerNowMs(),
-      r = Number.isFinite(n.season) && Number.isInteger(n.season) && n.season >= 0 && n.season < Dv.length,
-      a = Number.isFinite(n.limit) && Number.isInteger(n.limit) && n.limit > 0 && n.limit <= Lv.tools.wayback.limit,
+      r = Number.isFinite(n.season) && Number.isInteger(n.season) && n.season >= 0 && n.season < Lv.length,
+      a = Number.isFinite(n.limit) && Number.isInteger(n.limit) && n.limit > 0 && n.limit <= Mv.tools.wayback.limit,
       i = Number.isFinite(n.tileX) && Number.isFinite(n.tileY) && Number.isInteger(n.tileX) && Number.isInteger(n.tileY) && n.tileX >= 0 && n.tileY >= 0,
       o = n.cursorTs !== void 0,
       s = n.cursorUserId !== void 0,
@@ -6102,7 +6106,7 @@ class Mv {
 }
 je = new WeakMap, Fe = new WeakMap;
 
-function Pv(t) {
+function Uv(t) {
   var p, y;
   if (!t.length) throw new Error("Auto painter request does not contain any pixels.");
   const n = t[0].season;
@@ -6150,8 +6154,8 @@ function Pv(t) {
     season: n
   }
 }
-async function Uv(t) {
-  const n = Cv(t.width, t.height),
+async function Cv(t) {
+  const n = jv(t.width, t.height),
     e = n.getContext("2d");
   if (!e) throw new Error("Canvas API is not available to encode auto painter bitmap.");
   const r = e.createImageData(t.width, t.height);
@@ -6168,7 +6172,7 @@ async function Uv(t) {
   })
 }
 
-function Cv(t, n) {
+function jv(t, n) {
   if (typeof OffscreenCanvas < "u") return new OffscreenCanvas(t, n);
   if (typeof document < "u") {
     const e = document.createElement("canvas");
@@ -6176,16 +6180,18 @@ function Cv(t, n) {
   }
   throw new Error("Canvas API is not available in the current environment.")
 }
-let ge = new Mv(bt);
-async function pt(t) {
+let ge = new Pv(bt);
+async function ht(t) {
   const n = await st();
+  Un();
+  const e = iv();
   return {
-    "x-pawtect-token": await Zv(t),
-    "x-t": Un(),
+    "x-pawtect-token": await $v(t, e),
+    "x-t": e,
     "x-fp": n
   }
 }
-const vb = t => new URL(t, bt).toString();
+const bb = t => new URL(t, bt).toString();
 
 function Fn(t, n) {
   if (!(t != null && t.length)) return !1;
@@ -6194,7 +6200,7 @@ function Fn(t, n) {
   return !1
 }
 
-function jv(t, n) {
+function Fv(t, n) {
   for (const e of n)
     if (Fn(t, e)) return !0;
   return !1
@@ -6207,13 +6213,13 @@ function Bn(t) {
   return e
 }
 
-function Fv(t) {
+function Bv(t) {
   if (typeof Buffer < "u") return Buffer.from(t).toString("base64");
   let n = "";
   for (let e = 0; e < t.length; e++) n += String.fromCharCode(t[e]);
   return btoa(n)
 }
-class Bv {
+class zv {
   constructor(n) {
     F(this, "bytes");
     this.bytes = n ?? new Uint8Array
@@ -6238,7 +6244,7 @@ class Bv {
   }
 }
 
-function bb(t) {
+function Eb(t) {
   return new Promise((n, e) => {
     const r = new FileReader;
     r.onload = () => {
@@ -6252,10 +6258,10 @@ function bb(t) {
   })
 }
 
-function Eb(t) {
+function Tb(t) {
   if (typeof FileReader > "u") {
     const n = t.type || "application/octet-stream";
-    return t.arrayBuffer().then(e => `data:${n};base64,${Fv(new Uint8Array(e))}`)
+    return t.arrayBuffer().then(e => `data:${n};base64,${Bv(new Uint8Array(e))}`)
   }
   return new Promise((n, e) => {
     const r = new FileReader;
@@ -6270,7 +6276,7 @@ function Eb(t) {
   })
 }
 
-function Tb(t) {
+function Ob(t) {
   if (!t.startsWith("data:")) throw new Error("Could not parse data URL");
   const n = t.indexOf(",");
   if (n === -1) throw new Error("Could not parse data URL");
@@ -6290,13 +6296,13 @@ function Tb(t) {
   })
 }
 
-function Ob(...t) {
+function Sb(...t) {
   return t.filter(Boolean).join(" ")
 }
-const zv = typeof document < "u";
+const Vv = typeof document < "u";
 let fn = 0;
 var Be, ze, Ve;
-class Vv {
+class Gv {
   constructor() {
     D(this, Be, B(at([])));
     D(this, ze, B(at([])));
@@ -6305,7 +6311,7 @@ class Vv {
       return e === -1 ? null : e
     });
     F(this, "addToast", n => {
-      zv && this.toasts.unshift(n)
+      Vv && this.toasts.unshift(n)
     });
     F(this, "updateToast", ({
       id: n,
@@ -6412,7 +6418,7 @@ class Vv {
       return a.then(o => {
         if (typeof o == "object" && o && "ok" in o && typeof o.ok == "boolean" && !o.ok) {
           i = !1;
-          const s = Gv(o);
+          const s = Wv(o);
           this.create({
             id: r,
             type: "error",
@@ -6480,29 +6486,29 @@ class Vv {
 }
 Be = new WeakMap, ze = new WeakMap, Ve = new WeakMap;
 
-function Gv(t) {
+function Wv(t) {
   return t && typeof t == "object" && "status" in t ? `HTTP error! Status: ${t.status}` : `Error! ${t}`
 }
-const Z = new Vv;
+const Z = new Gv;
 
-function Wv(t, n) {
+function qv(t, n) {
   return Z.create({
     message: t,
     ...n
   })
 }
-var ut;
-class Sb {
+var lt;
+class Ib {
   constructor() {
-    D(this, ut, we(() => Z.toasts.filter(n => !n.dismiss)))
+    D(this, lt, we(() => Z.toasts.filter(n => !n.dismiss)))
   }
   get toasts() {
-    return M(b(this, ut))
+    return M(b(this, lt))
   }
 }
-ut = new WeakMap;
-const qv = Wv,
-  Kv = Object.assign(qv, {
+lt = new WeakMap;
+const Kv = qv,
+  Hv = Object.assign(Kv, {
     success: Z.success,
     info: Z.info,
     warning: Z.warning,
@@ -6515,7 +6521,7 @@ const qv = Wv,
     getActiveToasts: () => Z.toasts.filter(t => !t.dismiss)
   });
 var Ge, We, qe, Ke, He, Ye, Ze, $e;
-class Hv {
+class Yv {
   constructor() {
     F(this, "channel", new BroadcastChannel("user-channel"));
     D(this, Ge, B());
@@ -6532,7 +6538,7 @@ class Hv {
     D(this, Ye, we(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
     D(this, Ze, we(() => {
       var n;
-      return new Bv(Bn(((n = this.data) == null ? void 0 : n.flagsBitmap) ?? "AA=="))
+      return new zv(Bn(((n = this.data) == null ? void 0 : n.flagsBitmap) ?? "AA=="))
     }));
     D(this, $e, we(() => {
       var e;
@@ -6603,9 +6609,9 @@ class Hv {
         this.notificationCount = r
       }), (e = this.data) != null && e.id && (Yn("userId", {
         id: this.data.id
-      }), Yv(this.data.id)), !!this.data
+      }), Zv(this.data.id)), !!this.data
     } catch (r) {
-      return console.error(r), Kv.warning(np(), {
+      return console.error(r), Hv.warning(np(), {
         duration: 1e4
       }), !1
     } finally {
@@ -6628,17 +6634,17 @@ class Hv {
   }
   hasAnyPermission(n) {
     var e;
-    return jv((e = this.data) == null ? void 0 : e.permissions, n)
+    return Fv((e = this.data) == null ? void 0 : e.permissions, n)
   }
 }
 Ge = new WeakMap, We = new WeakMap, qe = new WeakMap, Ke = new WeakMap, He = new WeakMap, Ye = new WeakMap, Ze = new WeakMap, $e = new WeakMap;
-const Ie = new Hv;
+const Ie = new Yv;
 let zn, be;
 async function Vn() {
   return be || (be = (async () => {
     var t;
     try {
-      await xn(tr), (t = Ie.data) != null && t.id && It(Ie.data.id), Yy();
+      await xn(tr), (t = Ie.data) != null && t.id && It(Ie.data.id), Yy(), Un();
       const n = fetch;
       return Object.assign(window, {
         fetch: Gn((e, r) => {
@@ -6651,24 +6657,23 @@ async function Vn() {
     }
   })()), be
 }
-async function Yv(t) {
+async function Zv(t) {
   await Vn(), It(t)
 }
 
-function Ib() {
+function Ab() {
   return be ?? Promise.resolve(!1)
 }
 
-function Ab() {
+function kb() {
   return zn
 }
-async function Zv(t) {
+async function $v(t, n) {
   if (!await Vn()) throw new Error(iw());
-  const e = navigator.webdriver,
-    r = await st();
-  It(Ie.data.id), zy(r), Wy(e), Hy(At);
-  const a = Un(),
-    i = Uint8Array.from(atob(a), o => o.charCodeAt(0));
+  const r = navigator.webdriver,
+    a = await st();
+  It(Ie.data.id), zy(a), Wy(r), Hy(At);
+  const i = Uint8Array.from(atob(n), o => o.charCodeAt(0));
   return Gy(i), qy(t)
 }
 
@@ -6676,7 +6681,7 @@ function Gn(t) {
   return t.bind().bind()
 }
 
-function kb(t, n, e) {
+function Rb(t, n, e) {
   const r = {
     [t.name](...a) {
       return e(...a), n(...a)
@@ -6685,5 +6690,5 @@ function kb(t, n, e) {
   return Gn(r)
 }
 export {
-  bg as $, er as A, Gc as B, jn as C, jo as D, Nm as E, Fl as F, Z as G, Ob as H, Sb as I, cb as J, z as K, ob as L, ib as M, sb as N, tb as O, bt as P, ab as Q, Vn as R, gb as S, kb as T, Eb as U, Tb as V, wb as W, Ib as X, iw as Y, Ab as Z, fb as _, ge as a, vb as a0, an as a1, lb as a2, mb as a3, _b as a4, yb as a5, pb as a6, eb as a7, Ii as a8, Fi as a9, Xt as aA, Qp as aB, _h as aC, Qt as aD, Ch as aE, $h as aF, en as aG, Kg as aH, tn as aI, Nw as aJ, ce as aK, nn as aL, rn as aM, Sy as aN, Xi as aa, _o as ab, Jo as ac, ls as ad, Ht as ae, Ps as af, Zt as ag, $t as ah, nu as ai, pu as aj, zu as ak, el as al, fl as am, u_ as an, E_ as ao, P_ as ap, Jt as aq, sf as ar, vf as as, Lf as at, se as au, am as av, Gm as aw, np as ax, pp as ay, kp as az, ub as b, So as c, Nc as d, f as e, vt as f, Il as g, Xl as h, Od as i, Xn as j, hb as k, rb as l, gm as m, ku as n, st as o, $d as p, nb as q, pt as r, db as s, Kv as t, Ie as u, ln as v, Yt as w, bb as x, Cd as y, dd as z
+  bg as $, er as A, Gc as B, jn as C, jo as D, Nm as E, Fl as F, Z as G, Sb as H, Ib as I, ub as J, z as K, sb as L, ob as M, cb as N, nb as O, bt as P, ib as Q, Vn as R, wb as S, Rb as T, Tb as U, Ob as V, yb as W, Ab as X, iw as Y, kb as Z, mb as _, ge as a, bb as a0, an as a1, db as a2, pb as a3, fb as a4, vb as a5, hb as a6, tb as a7, Ii as a8, Fi as a9, Xt as aA, Qp as aB, _h as aC, Qt as aD, Ch as aE, $h as aF, en as aG, Kg as aH, tn as aI, Nw as aJ, ce as aK, nn as aL, rn as aM, Sy as aN, Xi as aa, _o as ab, Jo as ac, ls as ad, Ht as ae, Ps as af, Zt as ag, $t as ah, nu as ai, pu as aj, zu as ak, el as al, fl as am, u_ as an, E_ as ao, P_ as ap, Jt as aq, sf as ar, vf as as, Lf as at, se as au, am as av, Gm as aw, np as ax, pp as ay, kp as az, lb as b, So as c, Nc as d, f as e, vt as f, Il as g, Xl as h, Od as i, Xn as j, gb as k, ab as l, gm as m, ku as n, st as o, $d as p, rb as q, ht as r, _b as s, Hv as t, Ie as u, ln as v, Yt as w, Eb as x, Cd as y, dd as z
 };

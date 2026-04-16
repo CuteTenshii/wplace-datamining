@@ -1,77 +1,77 @@
-import "./gt6MPWUX.js";
+import "./DjfBUik4.js";
 import {
   k as Pe,
   p as ee,
   t as c,
   i as e,
-  m as J,
+  m as Z,
   a,
   b as te,
   e as he,
-  u as W,
-  h as be,
+  u as F,
+  h as me,
   d as i,
   s,
   c as R,
   r,
-  l as H,
-  f as A,
-  o as E,
-  n as I
-} from "./CaCjFaGC.js";
+  l as S,
+  f as E,
+  o as A,
+  n as D
+} from "./DjeFwfzX.js";
 import {
   s as g
-} from "./pbToTqiO.js";
+} from "./CBJ3TN4F.js";
 import {
-  i as Q
-} from "./DnklOTye.js";
+  i as H
+} from "./B1IPNd2v.js";
 import {
   e as ce,
   i as ve
-} from "./cP_Funj0.js";
+} from "./P8sdbvxX.js";
 import {
   c as Le
-} from "./Go1kQlru.js";
+} from "./BRHiUs7a.js";
 import {
   s as O,
-  a as j,
+  a as T,
   c as ue
-} from "./DXYJApGa.js";
+} from "./BDH1aCfv.js";
 import {
-  p as X
-} from "./DVNIykfY.js";
+  p as Q
+} from "./DHK4CK26.js";
 import {
   h as re
-} from "./C31U6A4Z.js";
-import "./CpNXwF3K.js";
+} from "./DVgZpHk_.js";
+import "./kxb4d0Jk.js";
 import {
   c as ze,
   a as Re,
-  b as Ue,
-  d as Ce,
-  e as Ge,
-  f as Be,
-  g as De,
-  h as je,
-  i as Ee,
-  j as Ie,
-  k as Me,
-  l as Ae,
-  m as Ne,
-  n as Te,
-  o as Se,
-  p as Qe,
-  q as Xe,
-  s as He,
-  t as Ke,
+  b as Ce,
+  d as Ue,
+  e as je,
+  f as Ge,
+  g as Me,
+  h as Te,
+  i as Ae,
+  j as De,
+  k as Ne,
+  l as Ee,
+  m as Ie,
+  n as Be,
+  o as Xe,
+  p as He,
+  q as Qe,
+  s as Se,
+  t as Ve,
   u as Oe,
-  v as Ve,
+  v as We,
   w as qe,
-  x as Fe,
-  y as Je,
-  z as We,
-  A as Ye,
-  B as Ze,
+  x as Ye,
+  y as Ze,
+  z as Fe,
+  A as Je,
+  B as Ke,
   C as et,
   D as tt,
   E as at,
@@ -90,8 +90,8 @@ import {
   R as _t,
   S as gt,
   T as pt,
-  U as mt,
-  V as bt,
+  U as bt,
+  V as mt,
   W as ft,
   X as xt,
   Y as ht,
@@ -105,195 +105,167 @@ import {
   a4 as zt,
   a5 as Rt,
   a6 as $e,
-  a7 as Ut,
-  a8 as Ct,
-  a9 as Gt,
-  aa as Bt,
-  ab as Dt
-} from "./BYqI6mvM.js";
+  a7 as Ct,
+  a8 as Ut,
+  a9 as jt,
+  aa as Gt,
+  ab as Mt
+} from "./BNbPpPMa.js";
 import {
-  s as Z
-} from "./B7W4_13c.js";
+  s as K
+} from "./CIYLhEaY.js";
 (function() {
   try {
     var L = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     L.SENTRY_RELEASE = {
-      id: "cfa0387f7130e8b16c3d20b0694a74c32ca6dc49"
+      id: "209576268ed2d55d78b1f313fb4db5f4a92290b5"
     };
     var l = new L.Error().stack;
-    l && (L._sentryDebugIds = L._sentryDebugIds || {}, L._sentryDebugIds[l] = "47965820-12a8-442e-b889-2f2a95bd258e", L._sentryDebugIdIdentifier = "sentry-dbid-47965820-12a8-442e-b889-2f2a95bd258e")
+    l && (L._sentryDebugIds = L._sentryDebugIds || {}, L._sentryDebugIds[l] = "ea5b9131-b534-47ad-9257-7467b2726a95", L._sentryDebugIdIdentifier = "sentry-dbid-ea5b9131-b534-47ad-9257-7467b2726a95")
   } catch {}
 })();
-var jt = R('<div class="absolute inset-0 z-20 flex items-center justify-center"><div class="flex flex-col items-center gap-2.5"><div class="text-base-content/60 flex h-14 w-14 items-center justify-center rounded-full bg-white/75"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"></path><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"></path><path d="M14.12 14.12a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg></div> <span class="text-base-content/85 text-sm font-semibold"> </span> <button class="bg-neutral/75 hover:bg-neutral/90 mt-0.5 flex items-center gap-1.5 rounded-full border-none px-4 py-2 text-xs font-medium text-white backdrop-blur-sm transition-all active:scale-[0.96]"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg> </button></div></div>'),
-  Et = R("<button>&#8249;</button>"),
-  It = R('<button class="bg-neutral/55 hover:bg-neutral/80 absolute right-2 bottom-3 z-10 flex items-center gap-1.5 rounded-full border-none px-4 py-2 text-[0.82rem] font-medium text-white backdrop-blur-sm transition-all active:scale-[0.96]"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"></path><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"></path><path d="M14.12 14.12a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg> </button>'),
-  Mt = R('<div><img class="block h-full w-full object-cover"/></div>'),
-  At = R("<button>&#8250;</button>"),
-  Nt = R("<button></button>"),
-  Tt = R('<div class="relative mb-6 flex flex-wrap items-center" role="region" aria-roledescription="carousel" tabindex="0"><div class="relative w-full touch-pan-y overflow-hidden rounded-lg" role="group"><!> <!> <!> <div></div> <!></div> <p aria-live="polite"> </p> <div></div></div>');
+var Tt = R('<div class="absolute inset-0 z-20 flex items-center justify-center"><div class="flex flex-col items-center gap-2.5"><div class="text-base-content/60 flex h-14 w-14 items-center justify-center rounded-full bg-white/75"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"></path><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"></path><path d="M14.12 14.12a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg></div> <span class="text-base-content/85 text-sm font-semibold"> </span> <button class="bg-neutral/75 hover:bg-neutral/90 mt-0.5 flex items-center gap-1.5 rounded-full border-none px-4 py-2 text-xs font-medium text-white backdrop-blur-sm transition-all active:scale-[0.96]"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg> </button></div></div>'),
+  At = R("<button>&#8249;</button>"),
+  Dt = R('<button class="bg-neutral/55 hover:bg-neutral/80 absolute right-2 bottom-3 z-10 flex items-center gap-1.5 rounded-full border-none px-4 py-2 text-[0.82rem] font-medium text-white backdrop-blur-sm transition-all active:scale-[0.96]"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"></path><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"></path><path d="M14.12 14.12a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg> </button>'),
+  Nt = R('<div><img class="block h-full w-full object-cover"/></div>'),
+  Et = R("<button>&#8250;</button>"),
+  It = R("<button></button>"),
+  Bt = R('<div class="relative mb-6 flex flex-wrap items-center" role="region" aria-roledescription="carousel" tabindex="0"><div class="relative w-full touch-pan-y overflow-hidden rounded-lg" role="group"><!> <!> <!> <div></div> <!></div> <p aria-live="polite"> </p> <div></div></div>');
 
 function de(L, l) {
   ee(l, !0);
-  let _ = X(l, "sensitive", 3, !1),
+  let _ = Q(l, "sensitive", 3, !1),
     v = he(0),
-    m = he(!1),
-    U = 0,
-    k = W(() => _() && !e(m));
+    b = he(!1),
+    C = 0,
+    k = F(() => _() && !e(b));
 
-  function b(o) {
-    o === e(v) || o < 0 || o >= l.cards.length || be(v, o, !0)
+  function m(o) {
+    o === e(v) || o < 0 || o >= l.cards.length || me(v, o, !0)
   }
-  var D = Tt(),
-    $ = i(D),
+  var M = Bt(),
+    $ = i(M),
     f = i($);
   {
     var h = o => {
-      var u = jt(),
-        C = i(u),
-        x = s(i(C), 2),
-        B = i(x, !0);
+      var u = Tt(),
+        U = i(u),
+        x = s(i(U), 2),
+        G = i(x, !0);
       r(x);
-      var G = s(x, 2),
-        M = s(i(G));
-      r(G), r(C), r(u), c((Y, F) => {
-        g(B, Y), g(M, ` ${F??""}`)
-      }, [() => Re(), () => Ue()]), J("click", G, () => {
-        be(m, !0)
+      var j = s(x, 2),
+        N = s(i(j));
+      r(j), r(U), r(u), c((J, Y) => {
+        g(G, J), g(N, ` ${Y??""}`)
+      }, [() => Re(), () => Ce()]), Z("click", j, () => {
+        me(b, !0)
       }), a(o, u)
     };
-    Q(f, o => {
+    H(f, o => {
       e(k) && o(h)
     })
   }
   var p = s(f, 2);
   {
     var z = o => {
-      var u = Et();
-      j(u, 1, "absolute top-1/2 -translate-y-1/2 z-10 flex h-10 w-10 items-center justify-center rounded-full border-none bg-black/45 text-lg leading-none text-white backdrop-blur-sm transition-colors select-none hover:bg-black/70 active:scale-[0.92] disabled:pointer-events-none disabled:opacity-30 md:h-14 md:w-14 md:text-[1.6rem] left-2"), c(C => {
-        O(u, "aria-label", C), u.disabled = e(v) === 0
-      }, [() => Ce()]), J("click", u, () => b(e(v) - 1)), a(o, u)
+      var u = At();
+      T(u, 1, "absolute top-1/2 -translate-y-1/2 z-10 flex h-10 w-10 items-center justify-center rounded-full border-none bg-black/45 text-lg leading-none text-white backdrop-blur-sm transition-colors select-none hover:bg-black/70 active:scale-[0.92] disabled:pointer-events-none disabled:opacity-30 md:h-14 md:w-14 md:text-[1.6rem] left-2"), c(U => {
+        O(u, "aria-label", U), u.disabled = e(v) === 0
+      }, [() => Ue()]), Z("click", u, () => m(e(v) - 1)), a(o, u)
     };
-    Q(p, o => {
+    H(p, o => {
       e(k) || o(z)
     })
   }
   var w = s(p, 2);
   {
     var P = o => {
-      var u = It(),
-        C = s(i(u));
-      r(u), c((x, B) => {
-        O(u, "aria-label", x), g(C, ` ${B??""}`)
-      }, [() => Ge(), () => Be()]), J("click", u, () => {
-        be(m, !1)
+      var u = Dt(),
+        U = s(i(u));
+      r(u), c((x, G) => {
+        O(u, "aria-label", x), g(U, ` ${G??""}`)
+      }, [() => je(), () => Ge()]), Z("click", u, () => {
+        me(b, !1)
       }), a(o, u)
     };
-    Q(w, o => {
+    H(w, o => {
       _() && !e(k) && o(P)
     })
   }
   var y = s(w, 2);
   let t;
-  ce(y, 21, () => l.cards, ve, (o, u, C) => {
-    var x = Mt(),
-      B = i(x);
+  ce(y, 21, () => l.cards, ve, (o, u, U) => {
+    var x = Nt(),
+      G = i(x);
     r(x), c(() => {
-      j(x, 1, `border-base-300 bg-base-100 w-full overflow-hidden rounded-lg border transition-opacity duration-300 [grid-area:1/1] ${C===e(v)?"pointer-events-auto opacity-100":"pointer-events-none opacity-0"}`), O(x, "aria-hidden", C !== e(v)), O(B, "src", e(u).src), O(B, "alt", e(u).alt)
+      T(x, 1, `border-base-300 bg-base-100 w-full overflow-hidden rounded-lg border transition-opacity duration-300 [grid-area:1/1] ${U===e(v)?"pointer-events-auto opacity-100":"pointer-events-none opacity-0"}`), O(x, "aria-hidden", U !== e(v)), O(G, "src", e(u).src), O(G, "alt", e(u).alt)
     }), a(o, x)
   }), r(y);
   var n = s(y, 2);
   {
     var d = o => {
-      var u = At();
-      j(u, 1, "absolute top-1/2 -translate-y-1/2 z-10 flex h-10 w-10 items-center justify-center rounded-full border-none bg-black/45 text-lg leading-none text-white backdrop-blur-sm transition-colors select-none hover:bg-black/70 active:scale-[0.92] disabled:pointer-events-none disabled:opacity-30 md:h-14 md:w-14 md:text-[1.6rem] right-2"), c(C => {
-        O(u, "aria-label", C), u.disabled = e(v) === l.cards.length - 1
-      }, [() => De()]), J("click", u, () => b(e(v) + 1)), a(o, u)
+      var u = Et();
+      T(u, 1, "absolute top-1/2 -translate-y-1/2 z-10 flex h-10 w-10 items-center justify-center rounded-full border-none bg-black/45 text-lg leading-none text-white backdrop-blur-sm transition-colors select-none hover:bg-black/70 active:scale-[0.92] disabled:pointer-events-none disabled:opacity-30 md:h-14 md:w-14 md:text-[1.6rem] right-2"), c(U => {
+        O(u, "aria-label", U), u.disabled = e(v) === l.cards.length - 1
+      }, [() => Me()]), Z("click", u, () => m(e(v) + 1)), a(o, u)
     };
-    Q(n, o => {
+    H(n, o => {
       e(k) || o(d)
     })
   }
   r($);
-  var N = s($, 2);
+  var I = s($, 2);
   let q;
-  var ie = i(N, !0);
-  r(N);
-  var S = s(N, 2);
-  let T;
-  ce(S, 21, () => l.cards, ve, (o, u, C) => {
-    var x = Nt();
-    c(B => {
-      j(x, 1, `h-2 w-2 rounded-full border-none p-0 transition-all ${C===e(v)?"bg-base-content/60 scale-125":"bg-base-300 hover:bg-base-content/40"}`), O(x, "aria-label", B)
-    }, [() => je({
-      current: C + 1,
+  var ie = i(I, !0);
+  r(I);
+  var X = s(I, 2);
+  let B;
+  ce(X, 21, () => l.cards, ve, (o, u, U) => {
+    var x = It();
+    c(G => {
+      T(x, 1, `h-2 w-2 rounded-full border-none p-0 transition-all ${U===e(v)?"bg-base-content/60 scale-125":"bg-base-300 hover:bg-base-content/40"}`), O(x, "aria-label", G)
+    }, [() => Te({
+      current: U + 1,
       total: l.cards.length
-    })]), J("click", x, () => b(C)), a(o, x)
-  }), r(S), r(D), c(o => {
-    O(D, "aria-label", o), t = j(y, 1, "grid w-full overflow-hidden py-1", null, t, {
+    })]), Z("click", x, () => m(U)), a(o, x)
+  }), r(X), r(M), c(o => {
+    O(M, "aria-label", o), t = T(y, 1, "grid w-full overflow-hidden py-1", null, t, {
       "blur-[75px]": e(k),
       "saturate-[1.1]": e(k),
       "scale-[1.08]": e(k),
       "pointer-events-none": e(k),
       "select-none": e(k)
-    }), q = j(N, 1, "text-base-content/80 mt-2.5 min-h-6 w-full text-center text-sm leading-normal font-bold", null, q, {
+    }), q = T(I, 1, "text-base-content/80 mt-2.5 min-h-6 w-full text-center text-sm leading-normal font-bold", null, q, {
       "opacity-0": e(k)
-    }), g(ie, l.cards[e(v)].caption), T = j(S, 1, "mt-3 flex w-full justify-center gap-2 pb-1", null, T, {
+    }), g(ie, l.cards[e(v)].caption), B = T(X, 1, "mt-3 flex w-full justify-center gap-2 pb-1", null, B, {
       "opacity-0": e(k)
     })
-  }, [() => ze()]), J("keydown", D, o => {
-    e(k) || (o.key === "ArrowLeft" ? (o.preventDefault(), b(e(v) - 1)) : o.key === "ArrowRight" && (o.preventDefault(), b(e(v) + 1)))
-  }), J("pointerdown", $, o => {
-    e(k) || o.pointerType === "touch" && (U = o.clientX)
-  }), J("pointerup", $, o => {
+  }, [() => ze()]), Z("keydown", M, o => {
+    e(k) || (o.key === "ArrowLeft" ? (o.preventDefault(), m(e(v) - 1)) : o.key === "ArrowRight" && (o.preventDefault(), m(e(v) + 1)))
+  }), Z("pointerdown", $, o => {
+    e(k) || o.pointerType === "touch" && (C = o.clientX)
+  }), Z("pointerup", $, o => {
     if (!e(k) && o.pointerType === "touch") {
-      const u = o.clientX - U;
-      u > 50 ? b(e(v) - 1) : u < -50 && b(e(v) + 1)
+      const u = o.clientX - C;
+      u > 50 ? m(e(v) - 1) : u < -50 && m(e(v) + 1)
     }
-  }), a(L, D), te()
+  }), a(L, M), te()
 }
 Pe(["keydown", "pointerdown", "pointerup", "click"]);
-var St = R("<span> </span>"),
-  Qt = R("<h3><!> <!> <!></h3>"),
-  Xt = R("<span> </span>"),
-  Ht = R("<h4><!> <!> <!></h4>");
+var Xt = R("<span> </span>"),
+  Ht = R("<h3><!> <!> <!></h3>"),
+  Qt = R("<span> </span>"),
+  St = R("<h4><!> <!> <!></h4>");
 
 function ne(L, l) {
-  let _ = X(l, "level", 3, 3),
-    v = X(l, "compact", 3, !1),
-    m = X(l, "class", 3, "");
-  const U = W(() => l.showNumber ?? !v());
-  var k = H(),
-    b = A(k);
+  let _ = Q(l, "level", 3, 3),
+    v = Q(l, "compact", 3, !1),
+    b = Q(l, "class", 3, "");
+  const C = F(() => l.showNumber ?? !v());
+  var k = S(),
+    m = E(k);
   {
-    var D = f => {
-        var h = Qt(),
-          p = i(h);
-        {
-          var z = t => {
-            var n = St(),
-              d = i(n, !0);
-            r(n), c(() => g(d, l.number)), a(t, n)
-          };
-          Q(p, t => {
-            e(U) && t(z)
-          })
-        }
-        var w = s(p, 2);
-        Z(w, () => l.children);
-        var P = s(w, 2);
-        {
-          var y = t => {
-            var n = H(),
-              d = A(n);
-            Z(d, () => l.badges), a(t, n)
-          };
-          Q(P, t => {
-            l.badges && t(y)
-          })
-        }
-        r(h), c(() => j(h, 1, `text-base-content/90 mb-2 flex items-baseline gap-2 leading-snug font-semibold ${v()?"text-lg":"text-2xl"} ${m()??""}`)), a(f, h)
-      },
-      $ = f => {
+    var M = f => {
         var h = Ht(),
           p = i(h);
         {
@@ -302,104 +274,132 @@ function ne(L, l) {
               d = i(n, !0);
             r(n), c(() => g(d, l.number)), a(t, n)
           };
-          Q(p, t => {
-            e(U) && t(z)
+          H(p, t => {
+            e(C) && t(z)
           })
         }
         var w = s(p, 2);
-        Z(w, () => l.children);
+        K(w, () => l.children);
         var P = s(w, 2);
         {
           var y = t => {
-            var n = H(),
-              d = A(n);
-            Z(d, () => l.badges), a(t, n)
+            var n = S(),
+              d = E(n);
+            K(d, () => l.badges), a(t, n)
           };
-          Q(P, t => {
+          H(P, t => {
             l.badges && t(y)
           })
         }
-        r(h), c(() => j(h, 1, `text-base-content/85 mt-7 mb-2 flex items-baseline gap-2 leading-snug font-semibold ${v()?"text-base":"text-lg"} ${m()??""}`)), a(f, h)
+        r(h), c(() => T(h, 1, `text-base-content/90 mb-2 flex items-baseline gap-2 leading-snug font-semibold ${v()?"text-lg":"text-2xl"} ${b()??""}`)), a(f, h)
+      },
+      $ = f => {
+        var h = St(),
+          p = i(h);
+        {
+          var z = t => {
+            var n = Qt(),
+              d = i(n, !0);
+            r(n), c(() => g(d, l.number)), a(t, n)
+          };
+          H(p, t => {
+            e(C) && t(z)
+          })
+        }
+        var w = s(p, 2);
+        K(w, () => l.children);
+        var P = s(w, 2);
+        {
+          var y = t => {
+            var n = S(),
+              d = E(n);
+            K(d, () => l.badges), a(t, n)
+          };
+          H(P, t => {
+            l.badges && t(y)
+          })
+        }
+        r(h), c(() => T(h, 1, `text-base-content/85 mt-7 mb-2 flex items-baseline gap-2 leading-snug font-semibold ${v()?"text-base":"text-lg"} ${b()??""}`)), a(f, h)
       };
-    Q(b, f => {
-      _() === 3 ? f(D) : f($, !1)
+    H(m, f => {
+      _() === 3 ? f(M) : f($, !1)
     })
   }
   a(L, k)
 }
-var Kt = R('<p class="text-base-content/90 mb-5 text-sm leading-relaxed"><!></p>');
+var Vt = R('<p class="text-base-content/90 mb-5 text-sm leading-relaxed"><!></p>');
 
-function V(L, l) {
-  var _ = Kt(),
+function W(L, l) {
+  var _ = Vt(),
     v = i(_);
-  Z(v, () => l.children), r(_), a(L, _)
+  K(v, () => l.children), r(_), a(L, _)
 }
 var Ot = R("<section><!></section>");
 
 function se(L, l) {
-  let _ = X(l, "compact", 3, !1),
-    v = X(l, "class", 3, "mb-7 pt-2 md:mb-9 md:pt-3");
-  var m = Ot(),
-    U = i(m);
-  Z(U, () => l.children), r(m), c(() => j(m, 1, ue(_() ? "" : v()))), a(L, m)
+  let _ = Q(l, "compact", 3, !1),
+    v = Q(l, "class", 3, "mb-7 pt-2 md:mb-9 md:pt-3");
+  var b = Ot(),
+    C = i(b);
+  K(C, () => l.children), r(b), c(() => T(b, 1, ue(_() ? "" : v()))), a(L, b)
 }
-const Vt = "" + new URL("../assets/griefing1.DtIzFIRa.png", import.meta.url).href,
-  qt = "" + new URL("../assets/griefing2.-osHNE2Q.png", import.meta.url).href,
-  Ft = "" + new URL("../assets/pgriefing1.DalDGcOz.png", import.meta.url).href,
-  Jt = "" + new URL("../assets/pgriefing2.C0-ny-oz.png", import.meta.url).href;
-var Wt = R("<span><!></span>");
+const Wt = "" + new URL("../assets/griefing1.mrf_QTk2.png", import.meta.url).href,
+  qt = "" + new URL("../assets/griefing2.HP5n4LVA.png", import.meta.url).href,
+  Yt = "" + new URL("../assets/pgriefing1.Cxw7Oxbm.png", import.meta.url).href,
+  Zt = "" + new URL("../assets/pgriefing2.cEou4X11.png", import.meta.url).href;
+var Ft = R("<span><!></span>");
 
-function K(L, l) {
+function V(L, l) {
   const _ = {
     error: "badge-error bg-error/20",
     warn: "badge-warning bg-warning/20",
     warning: "badge-warning bg-warning/20",
     success: "badge-success bg-success/20"
   };
-  var v = Wt(),
-    m = i(v);
-  Z(m, () => l.children), r(v), c(() => j(v, 1, `badge badge-soft ${_[l.level]??""} badge-sm text-[10px] font-extrabold tracking-wide uppercase`)), a(L, v)
+  var v = Ft(),
+    b = i(v);
+  K(b, () => l.children), r(v), c(() => T(v, 1, `badge badge-soft ${_[l.level]??""} badge-sm text-[10px] font-extrabold tracking-wide uppercase`)), a(L, v)
 }
-var Yt = R('<!> <!> <!> <div class="mb-2 flex gap-1"><!></div> <!>', 1),
-  Zt = R('<!> <!> <div class="mb-2 flex gap-1"><!></div> <!>', 1),
+var Jt = R('<!> <!> <!> <div class="mb-2 flex gap-1"><!></div> <!>', 1),
+  Kt = R('<!> <!> <div class="mb-2 flex gap-1"><!></div> <!>', 1),
   ea = R("<div><!> <!></div>");
 
 function ta(L, l) {
   ee(l, !0);
-  let _ = X(l, "compact", 3, !1),
-    v = W(() => [{
-      src: Vt,
+  let _ = Q(l, "compact", 3, !1),
+    v = F(() => [{
+      src: Wt,
       alt: "griefing1",
-      caption: Me()
+      caption: Ne()
     }, {
       src: qt,
       alt: "griefing2",
-      caption: Ae()
+      caption: Ee()
     }]),
-    m = W(() => [{
-      src: Ft,
+    b = F(() => [{
+      src: Yt,
       alt: "pgriefing1",
-      caption: Ne()
+      caption: Ie()
     }, {
-      src: Jt,
+      src: Zt,
       alt: "pgriefing2",
-      caption: Te()
+      caption: Be()
     }]);
-  var U = ea(),
-    k = i(U);
+  var C = ea(),
+    k = i(C);
   se(k, {
     get compact() {
       return _()
     },
     class: "mb-4 md:mb-5",
-    children: (D, $) => {
-      var f = Yt(),
-        h = A(f);
-      V(h, {
+    children: (M, $) => {
+      var f = Jt(),
+        h = E(f);
+      W(h, {
         children: (t, n) => {
-          var d = H(),
-            N = A(d);
-          re(N, () => Se()), a(t, d)
+          var d = S(),
+            I = E(d);
+          re(I, () => Xe()), a(t, d)
         }
       });
       var p = s(h, 2);
@@ -412,30 +412,30 @@ function ta(L, l) {
         showNumber: !0,
         class: "mt-9",
         children: (t, n) => {
-          I();
-          var d = E();
-          c(N => g(d, N), [() => Ee()]), a(t, d)
+          D();
+          var d = A();
+          c(I => g(d, I), [() => Ae()]), a(t, d)
         },
         $$slots: {
           default: !0
         }
       });
       var z = s(p, 2);
-      V(z, {
+      W(z, {
         children: (t, n) => {
-          var d = H(),
-            N = A(d);
-          re(N, () => Qe()), a(t, d)
+          var d = S(),
+            I = E(d);
+          re(I, () => He()), a(t, d)
         }
       });
       var w = s(z, 2),
         P = i(w);
-      K(P, {
+      V(P, {
         level: "error",
         children: (t, n) => {
-          I();
-          var d = E();
-          c(N => g(d, N), [() => Xe()]), a(t, d)
+          D();
+          var d = A();
+          c(I => g(d, I), [() => Qe()]), a(t, d)
         }
       }), r(w);
       var y = s(w, 2);
@@ -443,20 +443,20 @@ function ta(L, l) {
         get cards() {
           return e(v)
         }
-      }), a(D, f)
+      }), a(M, f)
     },
     $$slots: {
       default: !0
     }
   });
-  var b = s(k, 2);
-  se(b, {
+  var m = s(k, 2);
+  se(m, {
     get compact() {
       return _()
     },
-    children: (D, $) => {
-      var f = Zt(),
-        h = A(f);
+    children: (M, $) => {
+      var f = Kt(),
+        h = E(f);
       ne(h, {
         level: 3,
         number: "2.2",
@@ -465,58 +465,58 @@ function ta(L, l) {
         },
         showNumber: !0,
         children: (y, t) => {
-          I();
-          var n = E();
-          c(d => g(n, d), [() => Ie()]), a(y, n)
+          D();
+          var n = A();
+          c(d => g(n, d), [() => De()]), a(y, n)
         },
         $$slots: {
           default: !0
         }
       });
       var p = s(h, 2);
-      V(p, {
+      W(p, {
         children: (y, t) => {
-          var n = H(),
-            d = A(n);
-          re(d, () => He()), a(y, n)
+          var n = S(),
+            d = E(n);
+          re(d, () => Se()), a(y, n)
         }
       });
       var z = s(p, 2),
         w = i(z);
-      K(w, {
+      V(w, {
         level: "warning",
         children: (y, t) => {
-          I();
-          var n = E();
-          c(d => g(n, d), [() => Ke()]), a(y, n)
+          D();
+          var n = A();
+          c(d => g(n, d), [() => Ve()]), a(y, n)
         }
       }), r(z);
       var P = s(z, 2);
       de(P, {
         get cards() {
-          return e(m)
+          return e(b)
         }
-      }), a(D, f)
+      }), a(M, f)
     },
     $$slots: {
       default: !0
     }
-  }), r(U), c(() => j(U, 1, ue(_() ? "space-y-4" : ""))), a(L, U), te()
+  }), r(C), c(() => T(C, 1, ue(_() ? "space-y-4" : ""))), a(L, C), te()
 }
-const aa = "" + new URL("../assets/borde1.B6zoT7on.png", import.meta.url).href,
-  ra = "" + new URL("../assets/borde2.Di6Egdts.png", import.meta.url).href,
-  na = "" + new URL("../assets/borde3.BxBGUEB-.png", import.meta.url).href,
+const aa = "" + new URL("../assets/borde1.2HTtxzDt.png", import.meta.url).href,
+  ra = "" + new URL("../assets/borde2.CN89IOz0.png", import.meta.url).href,
+  na = "" + new URL("../assets/borde3.CofgMW68.png", import.meta.url).href,
   sa = "" + new URL("../assets/borde4.D9VfQfkE.png", import.meta.url).href,
-  ia = "" + new URL("../assets/borde5.B5sq2BAK.png", import.meta.url).href,
-  la = "" + new URL("../assets/borde6.CGbyU6ol.png", import.meta.url).href;
+  ia = "" + new URL("../assets/borde5.DkmTTj5N.png", import.meta.url).href,
+  la = "" + new URL("../assets/borde6.CtRHeorl.png", import.meta.url).href;
 var oa = R('<!> <!> <ul class="marker:text-error mb-5 list-disc pl-5"><li class="text-base-content/90 py-1 text-sm leading-relaxed"> </li> <li class="text-base-content/90 py-1 text-sm leading-relaxed"> </li> <li class="text-base-content/90 py-1 text-sm leading-relaxed"> </li> <li class="text-base-content/90 py-1 text-sm leading-relaxed"> </li> <li class="text-base-content/90 py-1 text-sm leading-relaxed"> </li> <li class="text-base-content/90 py-1 text-sm leading-relaxed"> </li></ul> <div class="mb-2 flex gap-1"><!> <!></div>', 1),
   da = R('<!> <!> <div class="mb-2 flex gap-1"><!> <!></div> <!>', 1),
   ca = R("<div><!> <!></div>");
 
 function va(L, l) {
   ee(l, !0);
-  let _ = X(l, "compact", 3, !1),
-    v = W(() => [{
+  let _ = Q(l, "compact", 3, !1),
+    v = F(() => [{
       src: aa,
       alt: "borde1",
       caption: st()
@@ -541,16 +541,16 @@ function va(L, l) {
       alt: "borde6",
       caption: we()
     }]);
-  var m = ca(),
-    U = i(m);
-  se(U, {
+  var b = ca(),
+    C = i(b);
+  se(C, {
     get compact() {
       return _()
     },
     class: "mb-4 pt-2 md:mb-5 md:pt-3",
-    children: (b, D) => {
+    children: (m, M) => {
       var $ = oa(),
-        f = A($);
+        f = E($);
       ne(f, {
         level: 3,
         number: "1.1",
@@ -558,21 +558,21 @@ function va(L, l) {
           return _()
         },
         showNumber: !0,
-        children: (x, B) => {
-          I();
-          var G = E();
-          c(M => g(G, M), [() => Oe()]), a(x, G)
+        children: (x, G) => {
+          D();
+          var j = A();
+          c(N => g(j, N), [() => Oe()]), a(x, j)
         },
         $$slots: {
           default: !0
         }
       });
       var h = s(f, 2);
-      V(h, {
-        children: (x, B) => {
-          var G = H(),
-            M = A(G);
-          re(M, () => Ve()), a(x, G)
+      W(h, {
+        children: (x, G) => {
+          var j = S(),
+            N = E(j);
+          re(N, () => We()), a(x, j)
         }
       });
       var p = s(h, 2),
@@ -586,48 +586,48 @@ function va(L, l) {
         n = i(t, !0);
       r(t);
       var d = s(t, 2),
-        N = i(d, !0);
+        I = i(d, !0);
       r(d);
       var q = s(d, 2),
         ie = i(q, !0);
       r(q);
-      var S = s(q, 2),
-        T = i(S, !0);
-      r(S), r(p);
+      var X = s(q, 2),
+        B = i(X, !0);
+      r(X), r(p);
       var o = s(p, 2),
         u = i(o);
-      K(u, {
+      V(u, {
         level: "error",
-        children: (x, B) => {
-          I();
-          var G = E();
-          c(M => g(G, M), [() => qe()]), a(x, G)
+        children: (x, G) => {
+          D();
+          var j = A();
+          c(N => g(j, N), [() => qe()]), a(x, j)
         }
       });
-      var C = s(u, 2);
-      K(C, {
+      var U = s(u, 2);
+      V(U, {
         level: "warning",
-        children: (x, B) => {
-          I();
-          var G = E();
-          c(M => g(G, M), [() => Fe()]), a(x, G)
+        children: (x, G) => {
+          D();
+          var j = A();
+          c(N => g(j, N), [() => Ye()]), a(x, j)
         }
-      }), r(o), c((x, B, G, M, Y, F) => {
-        g(w, x), g(y, B), g(n, G), g(N, M), g(ie, Y), g(T, F)
-      }, [() => Je(), () => We(), () => Ye(), () => Ze(), () => et(), () => tt()]), a(b, $)
+      }), r(o), c((x, G, j, N, J, Y) => {
+        g(w, x), g(y, G), g(n, j), g(I, N), g(ie, J), g(B, Y)
+      }, [() => Ze(), () => Fe(), () => Je(), () => Ke(), () => et(), () => tt()]), a(m, $)
     },
     $$slots: {
       default: !0
     }
   });
-  var k = s(U, 2);
+  var k = s(C, 2);
   se(k, {
     get compact() {
       return _()
     },
-    children: (b, D) => {
+    children: (m, M) => {
       var $ = da(),
-        f = A($);
+        f = E($);
       ne(f, {
         level: 3,
         number: "1.2",
@@ -636,8 +636,8 @@ function va(L, l) {
         },
         showNumber: !0,
         children: (y, t) => {
-          I();
-          var n = E();
+          D();
+          var n = A();
           c(d => g(n, d), [() => at()]), a(y, n)
         },
         $$slots: {
@@ -645,29 +645,29 @@ function va(L, l) {
         }
       });
       var h = s(f, 2);
-      V(h, {
+      W(h, {
         children: (y, t) => {
-          var n = H(),
-            d = A(n);
+          var n = S(),
+            d = E(n);
           re(d, () => rt()), a(y, n)
         }
       });
       var p = s(h, 2),
         z = i(p);
-      K(z, {
+      V(z, {
         level: "success",
         children: (y, t) => {
-          I();
-          var n = E();
+          D();
+          var n = A();
           c(d => g(n, d), [() => fe()]), a(y, n)
         }
       });
       var w = s(z, 2);
-      K(w, {
+      V(w, {
         level: "warning",
         children: (y, t) => {
-          I();
-          var n = E();
+          D();
+          var n = A();
           c(d => g(n, d), [() => nt()]), a(y, n)
         }
       }), r(p);
@@ -676,22 +676,22 @@ function va(L, l) {
         get cards() {
           return e(v)
         }
-      }), a(b, $)
+      }), a(m, $)
     },
     $$slots: {
       default: !0
     }
-  }), r(m), c(() => j(m, 1, ue(_() ? "space-y-4" : ""))), a(L, m), te()
+  }), r(b), c(() => T(b, 1, ue(_() ? "space-y-4" : ""))), a(L, b), te()
 }
-const ua = "" + new URL("../assets/mapclean1.DeyN2kSG.png", import.meta.url).href,
-  _a = "" + new URL("../assets/mapclean2.Bv4JIOUe.png", import.meta.url).href,
-  ga = "" + new URL("../assets/mapclean3.DQAr6tL0.png", import.meta.url).href;
+const ua = "" + new URL("../assets/mapclean1.CXzD9GTn.png", import.meta.url).href,
+  _a = "" + new URL("../assets/mapclean2.B1--Lv8s.png", import.meta.url).href,
+  ga = "" + new URL("../assets/mapclean3.zxc4kxhZ.png", import.meta.url).href;
 var pa = R('<!> <!> <div class="mb-2 flex gap-1"><!></div> <!>', 1);
 
-function ma(L, l) {
+function ba(L, l) {
   ee(l, !0);
-  let _ = X(l, "compact", 3, !1),
-    v = W(() => [{
+  let _ = Q(l, "compact", 3, !1),
+    v = F(() => [{
       src: ua,
       alt: "mapclean1",
       caption: ct()
@@ -708,39 +708,39 @@ function ma(L, l) {
     get compact() {
       return _()
     },
-    children: (m, U) => {
+    children: (b, C) => {
       var k = pa(),
-        b = A(k);
-      ne(b, {
+        m = E(k);
+      ne(m, {
         level: 4,
         number: "2.3.2.",
         get compact() {
           return _()
         },
         children: (p, z) => {
-          I();
-          var w = E();
+          D();
+          var w = A();
           c(P => g(w, P), [() => dt()]), a(p, w)
         },
         $$slots: {
           default: !0
         }
       });
-      var D = s(b, 2);
-      V(D, {
+      var M = s(m, 2);
+      W(M, {
         children: (p, z) => {
-          I();
-          var w = E();
+          D();
+          var w = A();
           c(P => g(w, P), [() => _t()]), a(p, w)
         }
       });
-      var $ = s(D, 2),
+      var $ = s(M, 2),
         f = i($);
-      K(f, {
+      V(f, {
         level: "success",
         children: (p, z) => {
-          I();
-          var w = E();
+          D();
+          var w = A();
           c(P => g(w, P), [() => fe()]), a(p, w)
         }
       }), r($);
@@ -749,7 +749,7 @@ function ma(L, l) {
         get cards() {
           return e(v)
         }
-      }), a(m, k)
+      }), a(b, k)
     },
     $$slots: {
       default: !0
@@ -757,54 +757,54 @@ function ma(L, l) {
   }), te()
 }
 
-function ba(L, l) {
-  ee(l, !0), X(l, "compact", 3, !1), V(L, {
+function ma(L, l) {
+  ee(l, !0), Q(l, "compact", 3, !1), W(L, {
     children: (_, v) => {
-      var m = H(),
-        U = A(m);
-      re(U, () => gt()), a(_, m)
+      var b = S(),
+        C = E(b);
+      re(C, () => gt()), a(_, b)
     }
   }), te()
 }
-const fa = "" + new URL("../assets/ngriefing1.B7EKell9.png", import.meta.url).href,
-  xa = "" + new URL("../assets/ngriefing2.oL0higon.png", import.meta.url).href,
-  ha = "" + new URL("../assets/ngriefing3.gzZsLUQW.png", import.meta.url).href;
+const fa = "" + new URL("../assets/ngriefing1.CQEoQ-5k.png", import.meta.url).href,
+  xa = "" + new URL("../assets/ngriefing2.CA1282Nq.png", import.meta.url).href,
+  ha = "" + new URL("../assets/ngriefing3.l-WuAkT6.png", import.meta.url).href;
 var wa = R('<!> <!> <div class="mb-2 flex gap-1"><!></div> <!>', 1),
   ya = R("<div><!> <!></div>");
 
 function $a(L, l) {
   ee(l, !0);
-  let _ = X(l, "compact", 3, !1),
-    v = W(() => [{
+  let _ = Q(l, "compact", 3, !1),
+    v = F(() => [{
       src: ha,
       alt: "ngriefing3",
-      caption: mt()
+      caption: bt()
     }, {
       src: fa,
       alt: "ngriefing1",
-      caption: bt()
+      caption: mt()
     }, {
       src: xa,
       alt: "ngriefing2",
       caption: ft()
     }]);
-  var m = ya(),
-    U = i(m);
-  V(U, {
-    children: (b, D) => {
-      I();
-      var $ = E();
-      c(f => g($, f), [() => xt()]), a(b, $)
+  var b = ya(),
+    C = i(b);
+  W(C, {
+    children: (m, M) => {
+      D();
+      var $ = A();
+      c(f => g($, f), [() => xt()]), a(m, $)
     }
   });
-  var k = s(U, 2);
+  var k = s(C, 2);
   se(k, {
     get compact() {
       return _()
     },
-    children: (b, D) => {
+    children: (m, M) => {
       var $ = wa(),
-        f = A($);
+        f = E($);
       ne(f, {
         level: 4,
         number: "2.3.1.",
@@ -812,8 +812,8 @@ function $a(L, l) {
           return _()
         },
         children: (P, y) => {
-          I();
-          var t = E();
+          D();
+          var t = A();
           c(n => g(t, n), [() => pt()]), a(P, t)
         },
         $$slots: {
@@ -821,20 +821,20 @@ function $a(L, l) {
         }
       });
       var h = s(f, 2);
-      V(h, {
+      W(h, {
         children: (P, y) => {
-          I();
-          var t = E();
+          D();
+          var t = A();
           c(n => g(t, n), [() => ht()]), a(P, t)
         }
       });
       var p = s(h, 2),
         z = i(p);
-      K(z, {
+      V(z, {
         level: "success",
         children: (P, y) => {
-          I();
-          var t = E();
+          D();
+          var t = A();
           c(n => g(t, n), [() => fe()]), a(P, t)
         }
       }), r(p);
@@ -843,21 +843,21 @@ function $a(L, l) {
         get cards() {
           return e(v)
         }
-      }), a(b, $)
+      }), a(m, $)
     },
     $$slots: {
       default: !0
     }
-  }), r(m), c(() => j(m, 1, ue(_() ? "space-y-4" : ""))), a(L, m), te()
+  }), r(b), c(() => T(b, 1, ue(_() ? "space-y-4" : ""))), a(L, b), te()
 }
 var ka = R('<div><input type="checkbox"/> <div class="collapse-title flex min-h-0! gap-3.5 py-3.5! ps-4! sm:gap-4 sm:ps-5!"><div></div> <div class="min-w-0 flex-1"><div class="flex flex-col gap-0.5 sm:flex-row sm:items-start sm:justify-between sm:gap-4"><div class="min-w-0"><div class="flex flex-wrap items-center gap-2.5"><span class="text-base-content text-base leading-snug font-bold"> </span> <!></div> <p class="text-base-content/90 mt-1 text-sm leading-relaxed"> </p></div></div></div></div> <div class="collapse-content p-0!"><div class="border-base-content/5 border-t px-4 py-5 sm:px-5"><!></div></div></div>'),
   Pa = R('<div><div></div> <div class="min-w-0 flex-1"><div class="min-w-0"><div class="flex flex-wrap items-center gap-2.5"><span class="text-base-content text-base leading-snug font-bold"> </span> <!></div> <p class="text-base-content/90 mt-1 text-sm leading-relaxed"> </p></div></div></div>'),
   La = R('<div><div><svg class="size-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd"></path></svg> <span> </span></div> <!></div>');
 
-function Ta(L, l) {
+function Ba(L, l) {
   ee(l, !0);
-  let _ = X(l, "showExtraInfo", 3, !0),
-    v = W(() => [{
+  let _ = Q(l, "showExtraInfo", 3, !0),
+    v = F(() => [{
       label: Rt(),
       icon: "M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z",
       badgeLevel: "error",
@@ -884,7 +884,7 @@ function Ta(L, l) {
         }
       }, {
         title: zt(),
-        content: ba,
+        content: ma,
         description: Lt(),
         badge: {
           label: ye(),
@@ -892,7 +892,7 @@ function Ta(L, l) {
         }
       }]
     }, {
-      label: Dt(),
+      label: Mt(),
       icon: "M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z",
       badgeLevel: "success",
       classes: {
@@ -901,18 +901,18 @@ function Ta(L, l) {
         index: "bg-success/12 text-success"
       },
       rules: [{
-        title: Ct(),
+        title: Ut(),
         content: $a,
-        description: Ut(),
+        description: Ct(),
         badge: {
           label: $e(),
           type: "allowed"
         },
         allowed: !0
       }, {
-        title: Bt(),
-        content: ma,
-        description: Gt(),
+        title: Gt(),
+        content: ba,
+        description: jt(),
         badge: {
           label: $e(),
           type: "allowed"
@@ -920,12 +920,12 @@ function Ta(L, l) {
         allowed: !0
       }]
     }]);
-  var m = H(),
-    U = A(m);
-  ce(U, 17, () => e(v), ve, (k, b, D) => {
+  var b = S(),
+    C = E(b);
+  ce(C, 17, () => e(v), ve, (k, m, M) => {
     var $ = La();
-    j($, 1, "overflow-hidden rounded-xl", null, {}, {
-      "mt-3": D > 0
+    T($, 1, "overflow-hidden rounded-xl", null, {}, {
+      "mt-3": M > 0
     });
     var f = i($),
       h = i(f),
@@ -935,100 +935,100 @@ function Ta(L, l) {
       w = i(z, !0);
     r(z), r(f);
     var P = s(f, 2);
-    ce(P, 17, () => e(b).rules, ve, (y, t, n) => {
-      var d = H(),
-        N = A(d);
+    ce(P, 17, () => e(m).rules, ve, (y, t, n) => {
+      var d = S(),
+        I = E(d);
       {
-        var q = S => {
-            var T = ka(),
-              o = s(i(T), 2),
+        var q = X => {
+            var B = ka(),
+              o = s(i(B), 2),
               u = i(o);
             u.textContent = n + 1;
-            var C = s(u, 2),
-              x = i(C),
-              B = i(x),
-              G = i(B),
-              M = i(G),
-              Y = i(M, !0);
-            r(M);
-            var F = s(M, 2);
+            var U = s(u, 2),
+              x = i(U),
+              G = i(x),
+              j = i(G),
+              N = i(j),
+              J = i(N, !0);
+            r(N);
+            var Y = s(N, 2);
             {
               var _e = oe => {
-                K(oe, {
+                V(oe, {
                   get level() {
-                    return e(b).badgeLevel
+                    return e(m).badgeLevel
                   },
-                  children: (me, za) => {
-                    I();
-                    var xe = E();
-                    c(() => g(xe, e(t).badge.label)), a(me, xe)
+                  children: (be, za) => {
+                    D();
+                    var xe = A();
+                    c(() => g(xe, e(t).badge.label)), a(be, xe)
                   }
                 })
               };
-              Q(F, oe => {
+              H(Y, oe => {
                 e(t).badge && oe(_e)
               })
             }
-            r(G);
-            var ae = s(G, 2),
+            r(j);
+            var ae = s(j, 2),
               ge = i(ae, !0);
-            r(ae), r(B), r(x), r(C), r(o);
+            r(ae), r(G), r(x), r(U), r(o);
             var pe = s(o, 2),
               le = i(pe),
               ke = i(le);
-            Le(ke, () => e(t).content, (oe, me) => {
-              me(oe, {
+            Le(ke, () => e(t).content, (oe, be) => {
+              be(oe, {
                 compact: !0
               })
-            }), r(le), r(pe), r(T), c(() => {
-              j(T, 1, `collapse-arrow collapse rounded-none border-l-[3px] ${e(b).classes.button??""} ${n>0?"border-base-content/5 border-t":""}`), j(u, 1, `${e(b).classes.index??""} flex size-7 shrink-0 items-center justify-center rounded-lg text-sm font-extrabold`), g(Y, e(t).title), g(ge, e(t).description)
-            }), a(S, T)
+            }), r(le), r(pe), r(B), c(() => {
+              T(B, 1, `collapse-arrow collapse rounded-none border-l-[3px] ${e(m).classes.button??""} ${n>0?"border-base-content/5 border-t":""}`), T(u, 1, `${e(m).classes.index??""} flex size-7 shrink-0 items-center justify-center rounded-lg text-sm font-extrabold`), g(J, e(t).title), g(ge, e(t).description)
+            }), a(X, B)
           },
-          ie = S => {
-            var T = Pa(),
-              o = i(T);
+          ie = X => {
+            var B = Pa(),
+              o = i(B);
             o.textContent = n + 1;
             var u = s(o, 2),
-              C = i(u),
-              x = i(C),
-              B = i(x),
-              G = i(B, !0);
-            r(B);
-            var M = s(B, 2);
+              U = i(u),
+              x = i(U),
+              G = i(x),
+              j = i(G, !0);
+            r(G);
+            var N = s(G, 2);
             {
-              var Y = ae => {
-                K(ae, {
+              var J = ae => {
+                V(ae, {
                   get level() {
-                    return e(b).badgeLevel
+                    return e(m).badgeLevel
                   },
                   children: (ge, pe) => {
-                    I();
-                    var le = E();
+                    D();
+                    var le = A();
                     c(() => g(le, e(t).badge.label)), a(ge, le)
                   }
                 })
               };
-              Q(M, ae => {
-                e(t).badge && ae(Y)
+              H(N, ae => {
+                e(t).badge && ae(J)
               })
             }
             r(x);
-            var F = s(x, 2),
-              _e = i(F, !0);
-            r(F), r(C), r(u), r(T), c(() => {
-              j(T, 1, `${e(b).classes.button??""} flex w-full cursor-auto gap-3.5 border-l-[3px] px-4 py-3.5 text-left sm:gap-4 sm:px-5 ${n>0?"border-base-content/5 border-t":""}`), j(o, 1, `${e(b).classes.index??""} flex size-7 shrink-0 items-center justify-center rounded-lg text-sm font-extrabold`), g(G, e(t).title), g(_e, e(t).description)
-            }), a(S, T)
+            var Y = s(x, 2),
+              _e = i(Y, !0);
+            r(Y), r(U), r(u), r(B), c(() => {
+              T(B, 1, `${e(m).classes.button??""} flex w-full cursor-auto gap-3.5 border-l-[3px] px-4 py-3.5 text-left sm:gap-4 sm:px-5 ${n>0?"border-base-content/5 border-t":""}`), T(o, 1, `${e(m).classes.index??""} flex size-7 shrink-0 items-center justify-center rounded-lg text-sm font-extrabold`), g(j, e(t).title), g(_e, e(t).description)
+            }), a(X, B)
           };
-        Q(N, S => {
-          _() ? S(q) : S(ie, !1)
+        H(I, X => {
+          _() ? X(q) : X(ie, !1)
         })
       }
       a(y, d)
     }), r($), c(() => {
-      j(f, 1, `${e(b).classes.header??""} flex items-center gap-2 px-4 py-2.5 text-xs font-bold tracking-widest uppercase`), O(p, "d", e(b).icon), g(w, e(b).label)
+      T(f, 1, `${e(m).classes.header??""} flex items-center gap-2 px-4 py-2.5 text-xs font-bold tracking-widest uppercase`), O(p, "d", e(m).icon), g(w, e(m).label)
     }), a(k, $)
-  }), a(L, m), te()
+  }), a(L, b), te()
 }
 export {
-  va as G, Ta as R, ta as a, $a as b, ma as c, ba as d
+  va as G, Ba as R, ta as a, $a as b, ba as c, ma as d
 };
