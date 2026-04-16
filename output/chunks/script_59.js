@@ -1,48 +1,96 @@
 import {
-  g as s
-} from "./obv90mRu.js";
+  g as n
+} from "./CMbhZE-K.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "1e0e8686272f8ab69a6b4937a8dffbb2f245b796"
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    t.SENTRY_RELEASE = {
+      id: "6f22cff8187de3395cfbf72b619a597cbd559223"
     };
-    var n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "64bdeb03-6475-42ba-8f82-6d42b2713838", r._sentryDebugIdIdentifier = "sentry-dbid-64bdeb03-6475-42ba-8f82-6d42b2713838")
+    var r = new t.Error().stack;
+    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "98aaa04a-ddcb-4a51-ae9b-9ba4f25d9d95", t._sentryDebugIdIdentifier = "sentry-dbid-98aaa04a-ddcb-4a51-ae9b-9ba4f25d9d95")
   } catch {}
 })();
-const t = () => "Users banned successfully",
-  u = () => "Usuários banidos com sucesso",
-  o = () => "用户已成功封禁",
-  i = () => "Benutzer erfolgreich gebannt",
-  c = () => "Usuarios baneados correctamente",
-  d = () => "Utilisateurs bannis avec succès",
-  a = () => "Utenti bannati con successo",
-  _ = () => "ユーザーをBANしました。",
-  f = () => "Użytkownicy zostali pomyślnie zbanowani",
-  b = () => "Пользователи успешно забанены",
-  l = () => "Користувачів успішно заблоковано",
-  m = () => "Đã cấm người dùng thành công",
-  T = (r = {}, n = {}) => {
-    const e = n.locale ?? s();
-    return e === "en" ? t() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? d() : e === "it" ? a() : e === "jp" ? _() : e === "pl" ? f() : e === "ru" ? b() : e === "uk" ? l() : m()
+const s = () => "All Frames",
+  u = () => "Todas as Molduras",
+  a = () => "所有相框",
+  o = () => "Alle Rahmen",
+  c = () => "Todos los Marcos",
+  i = () => "Tous les cadres",
+  _ = () => "Tutte le cornici",
+  l = () => "すべてのフレーム",
+  f = () => "Wszystkie ramki",
+  d = () => "Все рамки",
+  m = () => "Усі Рамки",
+  p = () => "Tất cả các khung",
+  le = (t = {}, r = {}) => {
+    const e = r.locale ?? n();
+    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? a() : e === "de" ? o() : e === "es" ? c() : e === "fr" ? i() : e === "it" ? _() : e === "jp" ? l() : e === "pl" ? f() : e === "ru" ? d() : e === "uk" ? m() : p()
   },
-  p = () => "Users timeouted successfully",
-  g = () => "Usuários suspensos com sucesso",
-  y = () => "用户已成功禁言",
-  h = () => "Benutzer erfolgreich mit Timeout belegt",
-  U = () => "Usuarios suspendidos correctamente",
-  w = () => "Utilisateurs suspendus avec succès",
-  k = () => "Utenti sospesi con successo",
-  z = () => "ユーザーをタイムアウトしました。",
-  v = () => "Użytkownicy zostali pomyślnie zawieszeni",
-  E = () => "Пользователям успешно выдан тайм-аут",
-  I = () => "Користувачам успішно призначено тайм-аут",
-  j = () => "Đã tạm khóa người dùng thành công",
-  B = (r = {}, n = {}) => {
-    const e = n.locale ?? s();
-    return e === "en" ? p() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? h() : e === "es" ? U() : e === "fr" ? w() : e === "it" ? k() : e === "jp" ? z() : e === "pl" ? v() : e === "ru" ? E() : e === "uk" ? I() : j()
+  b = () => "Back to list",
+  k = () => "Voltar para a lista",
+  h = () => "返回列表",
+  y = () => "Zurück zur Liste",
+  g = () => "Volver a la lista",
+  j = () => "Retour à la liste",
+  z = () => "Torna alla lista",
+  N = () => "一覧に戻る",
+  v = () => "Wróć do listy",
+  T = () => "Вернуться к списку",
+  w = () => "Повернутися до списку",
+  E = () => "Quay lại danh sách",
+  fe = (t = {}, r = {}) => {
+    const e = r.locale ?? n();
+    return e === "en" ? b() : e === "pt" ? k() : e === "ch" ? h() : e === "de" ? y() : e === "es" ? g() : e === "fr" ? j() : e === "it" ? z() : e === "jp" ? N() : e === "pl" ? v() : e === "ru" ? T() : e === "uk" ? w() : E()
+  },
+  D = () => "Delete",
+  A = () => "Deletar",
+  I = () => "删除",
+  R = () => "Löschen",
+  L = () => "Eliminar",
+  W = () => "Supprimer",
+  S = () => "Eliminare",
+  M = () => "削除",
+  U = () => "Usuń",
+  V = () => "Удалить",
+  q = () => "Видалити",
+  x = () => "Xóa",
+  de = (t = {}, r = {}) => {
+    const e = r.locale ?? n();
+    return e === "en" ? D() : e === "pt" ? A() : e === "ch" ? I() : e === "de" ? R() : e === "es" ? L() : e === "fr" ? W() : e === "it" ? S() : e === "jp" ? M() : e === "pl" ? U() : e === "ru" ? V() : e === "uk" ? q() : x()
+  },
+  B = () => "Name",
+  C = () => "Nome",
+  F = () => "名称",
+  K = () => "Name",
+  Q = () => "Nombre",
+  X = () => "Nom",
+  Y = () => "Nome",
+  Z = () => "名前",
+  G = () => "Nazwa",
+  H = () => "Имя",
+  J = () => "Імʼя",
+  O = () => "Tên",
+  me = (t = {}, r = {}) => {
+    const e = r.locale ?? n();
+    return e === "en" ? B() : e === "pt" ? C() : e === "ch" ? F() : e === "de" ? K() : e === "es" ? Q() : e === "fr" ? X() : e === "it" ? Y() : e === "jp" ? Z() : e === "pl" ? G() : e === "ru" ? H() : e === "uk" ? J() : O()
+  },
+  P = () => "We don't have frames to buy yet, wait for future updates ;)",
+  $ = () => "Ainda não temos molduras, crie sua primeira!",
+  ee = () => "我们还没有相框可供购买，敬请期待未来的更新 :)",
+  re = () => "Wir haben noch keine Rahmen zum Kauf, bleibt dran für zukünftige Updates ;)",
+  te = () => "Aún no tenemos marcos para comprar, espera futuras actualizaciones ;)",
+  ne = () => "Nous n'avons pas encore de cadres à acheter, attendez les futures mises à jour ;)",
+  se = () => "Non abbiamo ancora cornici da acquistare, attendete futuri aggiornamenti ;)",
+  ue = () => "まだ購入できるフレームはありません。今後のアップデートをお待ちくださいね ;)",
+  ae = () => "Nie mamy jeszcze ramek do kupienia, poczekaj na przyszłe aktualizacje ;)",
+  oe = () => "У нас пока нет рам для покупки, ждите будущих обновлений ;)",
+  ce = () => "У нас ще немає рам для покупки, чекайте майбутніх оновлень ;)",
+  ie = () => "Chúng tôi chưa có khung ảnh để bán đâu, hãy chờ các bản cập nhật sắp tới nhé ;)",
+  pe = (t = {}, r = {}) => {
+    const e = r.locale ?? n();
+    return e === "en" ? P() : e === "pt" ? $() : e === "ch" ? ee() : e === "de" ? re() : e === "es" ? te() : e === "fr" ? ne() : e === "it" ? se() : e === "jp" ? ue() : e === "pl" ? ae() : e === "ru" ? oe() : e === "uk" ? ce() : ie()
   };
 export {
-  B as a, T as u
+  de as _, le as a, fe as b, pe as c, me as n
 };

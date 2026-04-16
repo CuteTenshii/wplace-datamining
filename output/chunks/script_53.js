@@ -1,32 +1,48 @@
 import {
-  g as t
-} from "./obv90mRu.js";
+  g as n
+} from "./CMbhZE-K.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "1e0e8686272f8ab69a6b4937a8dffbb2f245b796"
+      id: "6f22cff8187de3395cfbf72b619a597cbd559223"
     };
-    var s = new e.Error().stack;
-    s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "50940088-af83-42e8-aba1-1a0496c32d43", e._sentryDebugIdIdentifier = "sentry-dbid-50940088-af83-42e8-aba1-1a0496c32d43")
+    var t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "f3916074-7b40-4047-be6a-c4edffb7c113", e._sentryDebugIdIdentifier = "sentry-dbid-f3916074-7b40-4047-be6a-c4edffb7c113")
   } catch {}
 })();
-const n = () => "Users",
-  u = () => "Usuários",
-  i = () => "用户",
-  o = () => "Benutzer",
-  f = () => "Usuarios",
-  a = () => "Utilisateurs",
-  c = () => "Utenti",
-  d = () => "ユーザー",
-  l = () => "Użytkownicy",
-  _ = () => "Пользователи",
-  b = () => "Користувачі",
-  p = () => "Người dùng",
-  y = (e = {}, s = {}) => {
-    const r = s.locale ?? t();
-    return r === "en" ? n() : r === "pt" ? u() : r === "ch" ? i() : r === "de" ? o() : r === "es" ? f() : r === "fr" ? a() : r === "it" ? c() : r === "jp" ? d() : r === "pl" ? l() : r === "ru" ? _() : r === "uk" ? b() : p()
+const u = () => "Members",
+  s = () => "Membros",
+  o = () => "成员",
+  i = () => "Mitglieder",
+  c = () => "Miembros",
+  f = () => "Membres",
+  l = () => "Membri",
+  a = () => "メンバー",
+  b = () => "Członkowie",
+  p = () => "Участники",
+  m = () => "Учасники",
+  d = () => "Thành viên",
+  J = (e = {}, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? u() : r === "pt" ? s() : r === "ch" ? o() : r === "de" ? i() : r === "es" ? c() : r === "fr" ? f() : r === "it" ? l() : r === "jp" ? a() : r === "pl" ? b() : r === "ru" ? p() : r === "uk" ? m() : d()
+  },
+  _ = () => "Player",
+  y = () => "Jogador",
+  g = () => "玩家",
+  h = () => "Spieler",
+  k = () => "Jugador",
+  w = () => "Joueur",
+  M = () => "Giocatore",
+  v = () => "プレイヤー",
+  E = () => "Gracz",
+  I = () => "Игрок",
+  j = () => "Гравець",
+  D = () => "Người chơi",
+  S = (e = {}, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? _() : r === "pt" ? y() : r === "ch" ? g() : r === "de" ? h() : r === "es" ? k() : r === "fr" ? w() : r === "it" ? M() : r === "jp" ? v() : r === "pl" ? E() : r === "ru" ? I() : r === "uk" ? j() : D()
   };
 export {
-  y as u
+  J as m, S as p
 };

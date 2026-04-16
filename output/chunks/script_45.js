@@ -1,36 +1,48 @@
-import "./Clyco9s5.js";
 import {
-  a as d,
-  J as s
-} from "./Bg2fLyAp.js";
-import {
-  d as a
-} from "./DjFDLfe-.js";
-import {
-  r as f
-} from "./CijDOWPX.js";
+  g as n
+} from "./CMbhZE-K.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "1e0e8686272f8ab69a6b4937a8dffbb2f245b796"
+    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    t.SENTRY_RELEASE = {
+      id: "6f22cff8187de3395cfbf72b619a597cbd559223"
     };
-    var t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "30a9277d-629f-42bd-9ece-b82935d3dacf", e._sentryDebugIdIdentifier = "sentry-dbid-30a9277d-629f-42bd-9ece-b82935d3dacf")
+    var r = new t.Error().stack;
+    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "3f8a47d5-3d9c-4954-89bf-c99c5fab64ef", t._sentryDebugIdIdentifier = "sentry-dbid-3f8a47d5-3d9c-4954-89bf-c99c5fab64ef")
   } catch {}
 })();
-var n = s('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
-
-function g(e, t) {
-  let o = f(t, ["$$slots", "$$events", "$$legacy"]);
-  var r = n();
-  a(r, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...o
-  })), d(e, r)
-}
+const i = () => "Description",
+  s = () => "Descrição",
+  c = () => "描述",
+  p = () => "Beschreibung",
+  o = () => "Descripción",
+  u = () => "Description",
+  d = () => "Descrizione",
+  f = () => "説明",
+  l = () => "Opis",
+  _ = () => "Описание",
+  a = () => "Опис",
+  x = () => "Mô tả",
+  T = (t = {}, r = {}) => {
+    const e = r.locale ?? n();
+    return e === "en" ? i() : e === "pt" ? s() : e === "ch" ? c() : e === "de" ? p() : e === "es" ? o() : e === "fr" ? u() : e === "it" ? d() : e === "jp" ? f() : e === "pl" ? l() : e === "ru" ? _() : e === "uk" ? a() : x()
+  },
+  b = () => "Pixels painted",
+  g = () => "Pixels pintados",
+  y = () => "已绘制像素数",
+  D = () => "Gemalte Pixel",
+  h = () => "Píxeles pintados",
+  P = () => "Pixels peints",
+  k = () => "Pixel dipinti",
+  w = () => "塗られたピクセル数",
+  E = () => "Pomalowane piksele",
+  I = () => "Нарисованные пиксели",
+  j = () => "Намальовані пікселі",
+  m = () => "Pixel đã tô",
+  L = (t = {}, r = {}) => {
+    const e = r.locale ?? n();
+    return e === "en" ? b() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? D() : e === "es" ? h() : e === "fr" ? P() : e === "it" ? k() : e === "jp" ? w() : e === "pl" ? E() : e === "ru" ? I() : e === "uk" ? j() : m()
+  };
 export {
-  g as L
+  T as d, L as p
 };

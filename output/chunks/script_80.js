@@ -1,35 +1,32 @@
-import "./obv90mRu.js";
 import {
-  a as r,
-  g as d,
-  m as t,
-  d as s,
-  u as a
-} from "./BvjcJEuf.js";
+  g as o
+} from "./CMbhZE-K.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "1e0e8686272f8ab69a6b4937a8dffbb2f245b796"
+      id: "6f22cff8187de3395cfbf72b619a597cbd559223"
     };
-    var o = new e.Error().stack;
-    o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "e8fab307-0c19-489f-9189-255b4f099f28", e._sentryDebugIdIdentifier = "sentry-dbid-e8fab307-0c19-489f-9189-255b4f099f28")
+    var n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "0ea7cc9d-2ea5-4af5-a99a-39bddccfd536", e._sentryDebugIdIdentifier = "sentry-dbid-0ea7cc9d-2ea5-4af5-a99a-39bddccfd536")
   } catch {}
 })();
-const b = {
-    user: a(),
-    community_leader: "Disc. Mod",
-    moderator: "MOD",
-    global_moderator: "GM",
-    admin: "Admin"
-  },
-  m = {
-    user: a(),
-    community_leader: s(),
-    moderator: t(),
-    global_moderator: d(),
-    admin: r()
+const t = () => "Error loading",
+  a = () => "Erro ao carregar",
+  d = () => "加载出错",
+  i = () => "Fehler beim Laden",
+  u = () => "Error al cargar",
+  c = () => "Erreur lors du chargement",
+  l = () => "Errore nel caricamento",
+  f = () => "読み込みエラー",
+  s = () => "Błąd ładowania",
+  _ = () => "Ошибка загрузки",
+  g = () => "Помилка завантаження",
+  b = () => "Lỗi tải dữ liệu",
+  y = (e = {}, n = {}) => {
+    const r = n.locale ?? o();
+    return r === "en" ? t() : r === "pt" ? a() : r === "ch" ? d() : r === "de" ? i() : r === "es" ? u() : r === "fr" ? c() : r === "it" ? l() : r === "jp" ? f() : r === "pl" ? s() : r === "ru" ? _() : r === "uk" ? g() : b()
   };
 export {
-  m as R, b as a
+  y as e
 };

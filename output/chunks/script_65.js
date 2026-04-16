@@ -1,74 +1,59 @@
-import "./Clyco9s5.js";
-import {
-  p as m,
-  t as d,
-  a as f,
-  b as u,
-  c,
-  d as v,
-  s as _,
-  r as w
-} from "./Bg2fLyAp.js";
-import {
-  i as h
-} from "./BmOHRZxT.js";
-import {
-  d as x,
-  a as n,
-  s as E
-} from "./DjFDLfe-.js";
-import {
-  p as y,
-  r as S
-} from "./CijDOWPX.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "1e0e8686272f8ab69a6b4937a8dffbb2f245b796"
+      id: "6f22cff8187de3395cfbf72b619a597cbd559223"
     };
     var a = new e.Error().stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "1d6fac1b-3f1c-4474-9401-ba26ea77b733", e._sentryDebugIdIdentifier = "sentry-dbid-1d6fac1b-3f1c-4474-9401-ba26ea77b733")
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "318a9da5-f9ae-41c4-a6ad-1557223c6f66", e._sentryDebugIdIdentifier = "sentry-dbid-318a9da5-f9ae-41c4-a6ad-1557223c6f66")
   } catch {}
 })();
-const B = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
-var L = c("<span>wplace</span>"),
-  R = c('<div><img alt="Wplace logo"/> <!></div>');
+const b = e => e;
 
-function D(e, a) {
-  m(a, !0);
-  let t = y(a, "size", 3, "default"),
-    b = S(a, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
-  var s = R();
-  x(s, () => ({
-    ...b,
-    class: `flex items-center gap-1.5 ${a.class??""}`
-  }));
-  var l = v(s);
-  let o;
-  var p = _(l, 2);
-  {
-    var g = A => {
-      var r = L();
-      let i;
-      d(() => i = n(r, 1, "text-base-content font-pixel", null, i, {
-        "text-4xl": t() === "default",
-        "text-5xl": t() === "lg" || t() === "medium"
-      })), f(A, r)
-    };
-    h(p, A => {
-      a.hasText && A(g)
-    })
+function h(e) {
+  const a = e - 1;
+  return a * a * a + 1
+}
+
+function m(e, {
+  delay: a = 0,
+  duration: d = 400,
+  easing: s = b
+} = {}) {
+  const i = +getComputedStyle(e).opacity;
+  return {
+    delay: a,
+    duration: d,
+    easing: s,
+    css: o => `opacity: ${o*i}`
   }
-  w(s), d(() => {
-    o = n(l, 1, "pixelated h-auto shrink-0", null, o, {
-      "w-4": t() === "small",
-      "w-10": t() === "default",
-      "w-16": t() === "medium",
-      "w-20": t() === "lg"
-    }), E(l, "src", B)
-  }), f(e, s), u()
+}
+
+function w(e, {
+  delay: a = 0,
+  duration: d = 400,
+  easing: s = h,
+  axis: i = "y"
+} = {}) {
+  const o = getComputedStyle(e),
+    c = +o.opacity,
+    p = i === "y" ? "height" : "width",
+    l = parseFloat(o[p]),
+    r = i === "y" ? ["top", "bottom"] : ["left", "right"],
+    n = r.map(t => `${t[0].toUpperCase()}${t.slice(1)}`),
+    f = parseFloat(o[`padding${n[0]}`]),
+    y = parseFloat(o[`padding${n[1]}`]),
+    u = parseFloat(o[`margin${n[0]}`]),
+    _ = parseFloat(o[`margin${n[1]}`]),
+    $ = parseFloat(o[`border${n[0]}Width`]),
+    g = parseFloat(o[`border${n[1]}Width`]);
+  return {
+    delay: a,
+    duration: d,
+    easing: s,
+    css: t => `overflow: hidden;opacity: ${Math.min(t*20,1)*c};${p}: ${t*l}px;padding-${r[0]}: ${t*f}px;padding-${r[1]}: ${t*y}px;margin-${r[0]}: ${t*u}px;margin-${r[1]}: ${t*_}px;border-${r[0]}-width: ${t*$}px;border-${r[1]}-width: ${t*g}px;min-${p}: 0`
+  }
 }
 export {
-  D as L, B as l
+  m as f, w as s
 };

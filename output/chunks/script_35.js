@@ -1,112 +1,137 @@
+var q = Object.defineProperty;
+var C = t => {
+  throw TypeError(t)
+};
+var F = (t, e, s) => e in t ? q(t, e, {
+  enumerable: !0,
+  configurable: !0,
+  writable: !0,
+  value: s
+}) : t[e] = s;
+var U = (t, e, s) => F(t, typeof e != "symbol" ? e + "" : e, s),
+  _ = (t, e, s) => e.has(t) || C("Cannot " + s);
+var p = (t, e, s) => (_(t, e, "read from private field"), s ? s.call(t) : e.get(t)),
+  v = (t, e, s) => e.has(t) ? C("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, s),
+  x = (t, e, s, a) => (_(t, e, "write to private field"), a ? a.call(t, s) : e.set(t, s), s),
+  w = (t, e, s) => (_(t, e, "access private method"), s);
+import "./D4N6Bqe8.js";
 import {
-  g as n
-} from "./obv90mRu.js";
+  p as H,
+  d as E,
+  r as y,
+  t as b,
+  a as g,
+  b as B,
+  c as h,
+  s as G
+} from "./CP18E9YK.js";
+import {
+  i as S
+} from "./CxIiFEs0.js";
+import {
+  a as A,
+  f as L,
+  c as D,
+  s as M
+} from "./B3FQJoHo.js";
+import {
+  h as j
+} from "./DRgFqe2Q.js";
+import {
+  t as N
+} from "./Dq70n7Zk.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "1e0e8686272f8ab69a6b4937a8dffbb2f245b796"
+      id: "6f22cff8187de3395cfbf72b619a597cbd559223"
     };
-    var r = new t.Error().stack;
-    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "67f79cc8-22ab-47de-af8c-13ae3a039fcf", t._sentryDebugIdIdentifier = "sentry-dbid-67f79cc8-22ab-47de-af8c-13ae3a039fcf")
+    var e = new t.Error().stack;
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "d44a0c63-8243-44cb-839a-f220e8b3cca7", t._sentryDebugIdIdentifier = "sentry-dbid-d44a0c63-8243-44cb-839a-f220e8b3cca7")
   } catch {}
 })();
-const o = () => "Add profile picture",
-  u = () => "Adicionar imagem de perfil",
-  i = () => "添加头像",
-  _ = () => "Profilbild hinzufügen",
-  s = () => "Añadir imagen de perfil",
-  p = () => "Ajouter une image de profil",
-  l = () => "Aggiungi immagine del profilo",
-  c = () => "プロフィール画像を追加",
-  d = () => "Dodaj zdjęcie profilowe",
-  f = () => "Добавить изображение профиля",
-  a = () => "Додати зображення профілю",
-  g = () => "Thêm ảnh đại diện",
-  ve = (t = {}, r = {}) => {
-    const e = r.locale ?? n();
-    return e === "en" ? o() : e === "pt" ? u() : e === "ch" ? i() : e === "de" ? _() : e === "es" ? s() : e === "fr" ? p() : e === "it" ? l() : e === "jp" ? c() : e === "pl" ? d() : e === "ru" ? f() : e === "uk" ? a() : g()
-  },
-  h = () => "Eraser",
-  y = () => "Borracha",
-  m = () => "橡皮擦",
-  b = () => "Radierer",
-  k = () => "Borrador",
-  x = () => "Gomme",
-  j = () => "Gomma",
-  v = () => "消しゴム",
-  z = () => "Gumka",
-  q = () => "Ластик",
-  D = () => "Гумка",
-  P = () => "Cục tẩy",
-  ze = (t = {}, r = {}) => {
-    const e = r.locale ?? n();
-    return e === "en" ? h() : e === "pt" ? y() : e === "ch" ? m() : e === "de" ? b() : e === "es" ? k() : e === "fr" ? x() : e === "it" ? j() : e === "jp" ? v() : e === "pl" ? z() : e === "ru" ? q() : e === "uk" ? D() : P()
-  },
-  w = () => "Not enough Droplets",
-  A = () => "Droplets insuficientes",
-  R = () => "水滴数量不足",
-  E = () => "Nicht genug Droplets",
-  G = () => "No tienes suficientes gotas",
-  I = () => "Pas assez de droplets",
-  N = () => "Gocce insufficienti",
-  T = () => "ドロップレットが足りません。",
-  B = () => "Za mało kropli",
-  L = () => "Недостаточно droplets",
-  C = () => "Недостатньо дроплетів",
-  F = () => "Không đủ droplets",
-  qe = (t = {}, r = {}) => {
-    const e = r.locale ?? n();
-    return e === "en" ? w() : e === "pt" ? A() : e === "ch" ? R() : e === "de" ? E() : e === "es" ? G() : e === "fr" ? I() : e === "it" ? N() : e === "jp" ? T() : e === "pl" ? B() : e === "ru" ? L() : e === "uk" ? C() : F()
-  },
-  S = () => "Refund Policy",
-  V = () => "Política de Reembolso",
-  Y = () => "退款政策",
-  K = () => "Rückerstattungsrichtlinie",
-  O = () => "Política de reembolso",
-  Z = () => "Politique de remboursement",
-  H = () => "Politica di rimborso",
-  J = () => "返金ポリシー",
-  M = () => "Polityka zwrotów",
-  Q = () => "Политика возврата средств",
-  U = () => "Політика повернення коштів",
-  W = () => "Chính sách hoàn tiền",
-  De = (t = {}, r = {}) => {
-    const e = r.locale ?? n();
-    return e === "en" ? S() : e === "pt" ? V() : e === "ch" ? Y() : e === "de" ? K() : e === "es" ? O() : e === "fr" ? Z() : e === "it" ? H() : e === "jp" ? J() : e === "pl" ? M() : e === "ru" ? Q() : e === "uk" ? U() : W()
-  },
-  X = () => "For refund requests and processing details, please see our",
-  $ = () => "Para pedidos de reembolso, consulte nossa",
-  ee = () => "有关退款请求和处理详情，请参阅我们的",
-  re = () => "Für Rückerstattungen und Details siehe unsere",
-  te = () => "Para solicitudes de reembolso y más detalles, consulta nuestra",
-  ne = () => "Pour les demandes de remboursement et les détails de traitement, consultez notre",
-  oe = () => "Per richieste di rimborso, consulta la nostra",
-  ue = () => "返金の申請方法と詳細については、こちらをご覧ください:",
-  ie = () => "Aby uzyskać informacje o zwrotach, zobacz naszą",
-  _e = () => "Для запросов на возврат средств и деталей обработки см. нашу",
-  se = () => "Для запитів на повернення та деталей обробки дивіться нашу",
-  pe = () => "Để yêu cầu hoàn tiền và chi tiết xử lý, hãy xem",
-  Pe = (t = {}, r = {}) => {
-    const e = r.locale ?? n();
-    return e === "en" ? X() : e === "pt" ? $() : e === "ch" ? ee() : e === "de" ? re() : e === "es" ? te() : e === "fr" ? ne() : e === "it" ? oe() : e === "jp" ? ue() : e === "pl" ? ie() : e === "ru" ? _e() : e === "uk" ? se() : pe()
-  },
-  le = () => "You gain 1 droplet per pixel painted and 500 Droplets per level",
-  ce = () => "Você ganha 1 droplet por pixel pintado e 500 droplets por level",
-  de = () => "你每绘制 1 个像素可获得 1 个水滴，每升 1 级可获得 500 个水滴",
-  fe = () => "Du erhältst 1 Droplet pro gemaltem Pixel und 500 Droplets pro Level",
-  ae = () => "Ganas 1 gota por píxel pintado y 500 gotas por nivel",
-  ge = () => "Vous gagnez 1 droplet par pixel peint et 500 droplets par niveau",
-  he = () => "Guadagni 1 goccia per ogni pixel dipinto e 500 gocce per livello",
-  ye = () => "ピクセルを1つ塗るごとにドロップレットを1つ、レベルごとに500ドロップレットを獲得します。",
-  me = () => "Otrzymujesz 1 kroplę za każdy pomalowany piksel i 500 kropli za każdy poziom",
-  be = () => "Вы получаете 1 droplet за каждый нарисованный пиксель и 500 droplets за уровень",
-  ke = () => "Ви отримуєте 1 дроплет за кожен намальований піксель і 500 дроплетів за рівень",
-  xe = () => "Bạn nhận 1 droplet cho mỗi pixel tô và 500 droplets mỗi cấp độ",
-  we = (t = {}, r = {}) => {
-    const e = r.locale ?? n();
-    return e === "en" ? le() : e === "pt" ? ce() : e === "ch" ? de() : e === "de" ? fe() : e === "es" ? ae() : e === "fr" ? ge() : e === "it" ? he() : e === "jp" ? ye() : e === "pl" ? me() : e === "ru" ? be() : e === "uk" ? ke() : xe()
-  };
+const P = 9,
+  Y = 95,
+  J = 45,
+  R = 5;
+
+function Q(t) {
+  return t.split("").reduce((e, s) => (e ^ s.charCodeAt(0)) * -R, R) >>> 2
+}
+
+function O(t = "", e = Y, s = J, a = Q) {
+  const o = a(t),
+    d = o % P * (360 / P);
+  return [...Array(t ? 25 : 0)].reduce((u, I, l) => o & 1 << l % 15 ? u + `<rect x="${l>14?7-~~(l/5):~~(l/5)}" y="${l%5}" width="1" height="1"/>` : u, `<svg viewBox="-1.5 -1.5 8 8" xmlns="http://www.w3.org/2000/svg" fill="hsl(${d} ${e}% ${s}%)" shape-rendering="crispEdges">`) + "</svg>"
+}
+var k, r, m, c, f, T, z;
+(k = globalThis.customElements) != null && k.get("minidenticon-svg") || (z = globalThis.customElements) == null || z.define("minidenticon-svg", (r = class extends HTMLElement {
+  constructor() {
+    super(...arguments);
+    v(this, f);
+    v(this, c, !1)
+  }
+  connectedCallback() {
+    w(this, f, T).call(this), x(this, c, !0)
+  }
+  attributeChangedCallback() {
+    p(this, c) && w(this, f, T).call(this)
+  }
+}, m = new WeakMap, c = new WeakMap, f = new WeakSet, T = function() {
+  var o;
+  const s = r.observedAttributes.map(d => this.getAttribute(d) || void 0),
+    a = s.join(",");
+  this.innerHTML = (o = p(r, m))[a] ?? (o[a] = O(...s))
+}, U(r, "observedAttributes", ["username", "saturation", "lightness"]), v(r, m, {}), r));
+var V = h("<div><!></div>");
+
+function W(t, e) {
+  H(e, !0);
+  var s = V(),
+    a = E(s);
+  j(a, () => O(e.userId.toString(), 95, 45)), y(s), b(() => A(s, 1, `bg-base-200 minidenticon ${e.class??""??""}`)), g(t, s), B()
+}
+var X = h('<img class="pixelated bg-base-200 size-full" alt="User profile"/>'),
+  Z = h('<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square w-full"/>'),
+  K = h("<div><div><!></div> <!></div>");
+
+function ne(t, e) {
+  H(e, !0);
+  var s = K(),
+    a = E(s);
+  L(a, "width: 67.76785714285714%");
+  var o = E(a);
+  {
+    var d = i => {
+        W(i, {
+          get userId() {
+            return e.userId
+          }
+        })
+      },
+      u = i => {
+        var n = X();
+        b(() => M(n, "src", e.pictureUrl)), g(i, n)
+      };
+    S(o, i => {
+      e.pictureUrl ? i(u, !1) : i(d)
+    })
+  }
+  y(a);
+  var I = G(a, 2);
+  {
+    var l = i => {
+      var n = Z();
+      L(n, "scale: 114.99999999999999%;"), b(() => M(n, "src", e.frameUrl)), g(i, n)
+    };
+    S(I, i => {
+      e.frameUrl && i(l)
+    })
+  }
+  y(s), b((i, n) => {
+    A(s, 1, i), A(a, 1, n)
+  }, [() => D(N("relative inline-grid size-10 place-items-center", e.class)), () => D(N("avatar border-base-300 aspect-square overflow-hidden rounded-full border", e.avatarClass))]), g(t, s), B()
+}
 export {
-  ve as a, De as b, ze as e, qe as n, Pe as r, we as y
+  ne as P, W as a
 };

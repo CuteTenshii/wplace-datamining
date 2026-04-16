@@ -1,32 +1,32 @@
 import {
-  g as n
-} from "./obv90mRu.js";
+  g as t
+} from "./CMbhZE-K.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "1e0e8686272f8ab69a6b4937a8dffbb2f245b796"
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "6f22cff8187de3395cfbf72b619a597cbd559223"
     };
-    var t = new r.Error().stack;
-    t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "34b20000-aaf6-474f-a087-a222515fb8cf", r._sentryDebugIdIdentifier = "sentry-dbid-34b20000-aaf6-474f-a087-a222515fb8cf")
+    var e = new n.Error().stack;
+    e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "09e8c7b4-b47a-42dd-9a91-ebaa6a75318f", n._sentryDebugIdIdentifier = "sentry-dbid-09e8c7b4-b47a-42dd-9a91-ebaa6a75318f")
   } catch {}
 })();
-const i = () => "Preview",
-  u = () => "Prévia",
-  f = () => "预览",
-  o = () => "Vorschau",
-  s = () => "Vista previa",
-  p = () => "Aperçu",
-  a = () => "Anteprima",
-  c = () => "プレビュー",
-  d = () => "Podgląd",
-  v = () => "Предпросмотр",
-  w = () => "Попередній перегляд",
-  b = () => "Xem trước",
-  _ = (r = {}, t = {}) => {
-    const e = t.locale ?? n();
-    return e === "en" ? i() : e === "pt" ? u() : e === "ch" ? f() : e === "de" ? o() : e === "es" ? s() : e === "fr" ? p() : e === "it" ? a() : e === "jp" ? c() : e === "pl" ? d() : e === "ru" ? v() : e === "uk" ? w() : b()
+const f = () => "Confirm",
+  o = () => "Confirmar",
+  i = () => "确认",
+  c = () => "Bestätigen",
+  u = () => "Confirmar",
+  s = () => "Confirmer",
+  a = () => "Conferma",
+  d = () => "確認",
+  m = () => "Potwierdź",
+  b = () => "Подтвердить",
+  l = () => "Підтвердити",
+  _ = () => "Xác nhận",
+  g = (n = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? f() : r === "pt" ? o() : r === "ch" ? i() : r === "de" ? c() : r === "es" ? u() : r === "fr" ? s() : r === "it" ? a() : r === "jp" ? d() : r === "pl" ? m() : r === "ru" ? b() : r === "uk" ? l() : _()
   };
 export {
-  _ as p
+  g as c
 };

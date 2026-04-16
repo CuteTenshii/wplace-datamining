@@ -1,60 +1,32 @@
-import "./Clyco9s5.js";
-import "./C6lW98hZ.js";
 import {
-  p as n,
-  a as b,
-  b as p,
-  c as l,
-  r as c,
-  i as r,
-  K as m
-} from "./Bg2fLyAp.js";
-import {
-  e as u
-} from "./eP41Jsvk.js";
-import {
-  i as g
-} from "./BdhuZWzF.js";
-import {
-  p as h,
-  V as v,
-  P as y
-} from "./e2Or03tI.js";
+  g as e
+} from "./CMbhZE-K.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "1e0e8686272f8ab69a6b4937a8dffbb2f245b796"
+    var f = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    f.SENTRY_RELEASE = {
+      id: "6f22cff8187de3395cfbf72b619a597cbd559223"
     };
-    var a = new e.Error().stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "d7cf74b9-ecdb-4a29-b58d-3b8e4de02c2d", e._sentryDebugIdIdentifier = "sentry-dbid-d7cf74b9-ecdb-4a29-b58d-3b8e4de02c2d")
+    var r = new f.Error().stack;
+    r && (f._sentryDebugIds = f._sentryDebugIds || {}, f._sentryDebugIds[r] = "b9b33e77-4f93-4cbd-a901-f05ce83847b9", f._sentryDebugIdIdentifier = "sentry-dbid-b9b33e77-4f93-4cbd-a901-f05ce83847b9")
   } catch {}
 })();
-var _ = l('<div class="flex flex-col gap-6"></div>');
-
-function x(e, a) {
-  n(a, !1);
-  const o = [...h].reverse().map(t => ({
-    version: t.version,
-    title: t.title,
-    html: v(t.markdown)
-  }));
-  g();
-  var s = _();
-  u(s, 7, () => o, t => t.version, (t, d, i) => {
-    {
-      let f = m(() => r(i) === 0);
-      y(t, {
-        get patchNote() {
-          return r(d)
-        },
-        get latest() {
-          return r(f)
-        }
-      })
-    }
-  }), c(s), b(e, s), p()
-}
+const n = () => "Staff",
+  s = () => "Equipe",
+  u = () => "工作人员",
+  a = () => "Staff",
+  o = () => "Staff",
+  c = () => "Staff",
+  i = () => "Staff",
+  d = () => "スタッフ",
+  b = () => "Staff",
+  l = () => "Персонал",
+  _ = () => "Персонал",
+  p = () => "Staff",
+  y = (f = {}, r = {}) => {
+    const t = r.locale ?? e();
+    return t === "en" ? n() : t === "pt" ? s() : t === "ch" ? u() : t === "de" ? a() : t === "es" ? o() : t === "fr" ? c() : t === "it" ? i() : t === "jp" ? d() : t === "pl" ? b() : t === "ru" ? l() : t === "uk" ? _() : p()
+  };
 export {
-  x as P
+  y as s
 };

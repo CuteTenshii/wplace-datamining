@@ -1,96 +1,59 @@
-import {
-  g as n
-} from "./obv90mRu.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "1e0e8686272f8ab69a6b4937a8dffbb2f245b796"
+      id: "6f22cff8187de3395cfbf72b619a597cbd559223"
     };
     var r = new t.Error().stack;
-    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "ef8b3040-6b93-4d0f-be51-bb5dbad08aed", t._sentryDebugIdIdentifier = "sentry-dbid-ef8b3040-6b93-4d0f-be51-bb5dbad08aed")
+    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "3165cf74-2c30-440d-8753-7217d3d69437", t._sentryDebugIdIdentifier = "sentry-dbid-3165cf74-2c30-440d-8753-7217d3d69437")
   } catch {}
 })();
-const s = () => "Name",
-  u = () => "Nome",
-  a = () => "名称",
-  o = () => "Name",
-  i = () => "Nombre",
-  _ = () => "Nom",
-  c = () => "Nome",
-  l = () => "名前",
-  f = () => "Nazwa",
-  d = () => "Имя",
-  m = () => "Імʼя",
-  p = () => "Tên",
-  le = (t = {}, r = {}) => {
-    const e = r.locale ?? n();
-    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? a() : e === "de" ? o() : e === "es" ? i() : e === "fr" ? _() : e === "it" ? c() : e === "jp" ? l() : e === "pl" ? f() : e === "ru" ? d() : e === "uk" ? m() : p()
-  },
-  b = () => "We don't have frames to buy yet, wait for future updates ;)",
-  k = () => "Ainda não temos molduras, crie sua primeira!",
-  h = () => "我们还没有相框可供购买，敬请期待未来的更新 :)",
-  y = () => "Wir haben noch keine Rahmen zum Kauf, bleibt dran für zukünftige Updates ;)",
-  g = () => "Aún no tenemos marcos para comprar, espera futuras actualizaciones ;)",
-  j = () => "Nous n'avons pas encore de cadres à acheter, attendez les futures mises à jour ;)",
-  z = () => "Non abbiamo ancora cornici da acquistare, attendete futuri aggiornamenti ;)",
-  N = () => "まだ購入できるフレームはありません。今後のアップデートをお待ちくださいね ;)",
-  v = () => "Nie mamy jeszcze ramek do kupienia, poczekaj na przyszłe aktualizacje ;)",
-  T = () => "У нас пока нет рам для покупки, ждите будущих обновлений ;)",
-  w = () => "У нас ще немає рам для покупки, чекайте майбутніх оновлень ;)",
-  E = () => "Chúng tôi chưa có khung ảnh để bán đâu, hãy chờ các bản cập nhật sắp tới nhé ;)",
-  fe = (t = {}, r = {}) => {
-    const e = r.locale ?? n();
-    return e === "en" ? b() : e === "pt" ? k() : e === "ch" ? h() : e === "de" ? y() : e === "es" ? g() : e === "fr" ? j() : e === "it" ? z() : e === "jp" ? N() : e === "pl" ? v() : e === "ru" ? T() : e === "uk" ? w() : E()
-  },
-  D = () => "All Frames",
-  A = () => "Todas as Molduras",
-  I = () => "所有相框",
-  R = () => "Alle Rahmen",
-  L = () => "Todos los Marcos",
-  W = () => "Tous les cadres",
-  S = () => "Tutte le cornici",
-  M = () => "すべてのフレーム",
-  U = () => "Wszystkie ramki",
-  V = () => "Все рамки",
-  q = () => "Усі Рамки",
-  x = () => "Tất cả các khung",
-  de = (t = {}, r = {}) => {
-    const e = r.locale ?? n();
-    return e === "en" ? D() : e === "pt" ? A() : e === "ch" ? I() : e === "de" ? R() : e === "es" ? L() : e === "fr" ? W() : e === "it" ? S() : e === "jp" ? M() : e === "pl" ? U() : e === "ru" ? V() : e === "uk" ? q() : x()
-  },
-  B = () => "Back to list",
-  C = () => "Voltar para a lista",
-  F = () => "返回列表",
-  K = () => "Zurück zur Liste",
-  Q = () => "Volver a la lista",
-  X = () => "Retour à la liste",
-  Y = () => "Torna alla lista",
-  Z = () => "一覧に戻る",
-  G = () => "Wróć do listy",
-  H = () => "Вернуться к списку",
-  J = () => "Повернутися до списку",
-  O = () => "Quay lại danh sách",
-  me = (t = {}, r = {}) => {
-    const e = r.locale ?? n();
-    return e === "en" ? B() : e === "pt" ? C() : e === "ch" ? F() : e === "de" ? K() : e === "es" ? Q() : e === "fr" ? X() : e === "it" ? Y() : e === "jp" ? Z() : e === "pl" ? G() : e === "ru" ? H() : e === "uk" ? J() : O()
-  },
-  P = () => "Delete",
-  $ = () => "Deletar",
-  ee = () => "删除",
-  re = () => "Löschen",
-  te = () => "Eliminar",
-  ne = () => "Supprimer",
-  se = () => "Eliminare",
-  ue = () => "削除",
-  ae = () => "Usuń",
-  oe = () => "Удалить",
-  ie = () => "Видалити",
-  _e = () => "Xóa",
-  pe = (t = {}, r = {}) => {
-    const e = r.locale ?? n();
-    return e === "en" ? P() : e === "pt" ? $() : e === "ch" ? ee() : e === "de" ? re() : e === "es" ? te() : e === "fr" ? ne() : e === "it" ? se() : e === "jp" ? ue() : e === "pl" ? ae() : e === "ru" ? oe() : e === "uk" ? ie() : _e()
-  };
+
+function C(t) {
+  const r = t - 1;
+  return r * r * r + 1
+}
+
+function T(t, {
+  from: r,
+  to: e
+}, h = {}) {
+  var {
+    delay: u = 0,
+    duration: i = a => Math.sqrt(a) * 120,
+    easing: v = C
+  } = h, d = getComputedStyle(t), y = d.transform === "none" ? "" : d.transform, [s, f] = d.transformOrigin.split(" ").map(parseFloat);
+  s /= t.clientWidth, f /= t.clientHeight;
+  var l = D(t),
+    g = t.clientWidth / e.width / l,
+    p = t.clientHeight / e.height / l,
+    b = r.left + r.width * s,
+    w = r.top + r.height * f,
+    x = e.left + e.width * s,
+    m = e.top + e.height * f,
+    o = (b - x) * g,
+    c = (w - m) * p,
+    S = r.width / e.width,
+    E = r.height / e.height;
+  return {
+    delay: u,
+    duration: typeof i == "function" ? i(Math.sqrt(o * o + c * c)) : i,
+    easing: v,
+    css: (a, n) => {
+      var _ = n * o,
+        I = n * c,
+        $ = a + n * S,
+        z = a + n * E;
+      return `transform: ${y} translate(${_}px, ${I}px) scale(${$}, ${z});`
+    }
+  }
+}
+
+function D(t) {
+  if ("currentCSSZoom" in t) return t.currentCSSZoom;
+  for (var r = t, e = 1; r !== null;) e *= +getComputedStyle(r).zoom, r = r.parentElement;
+  return e
+}
 export {
-  pe as _, de as a, me as b, fe as c, le as n
+  T as f
 };

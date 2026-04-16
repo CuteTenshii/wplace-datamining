@@ -1,32 +1,36 @@
+import "./D4N6Bqe8.js";
 import {
-  g as t
-} from "./obv90mRu.js";
+  a as s,
+  z as f
+} from "./CP18E9YK.js";
+import {
+  d as a
+} from "./B3FQJoHo.js";
+import {
+  r as n
+} from "./DI9r8veb.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "1e0e8686272f8ab69a6b4937a8dffbb2f245b796"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "6f22cff8187de3395cfbf72b619a597cbd559223"
     };
-    var n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "996525c0-034f-472b-9f89-f66661d27508", r._sentryDebugIdIdentifier = "sentry-dbid-996525c0-034f-472b-9f89-f66661d27508")
+    var t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "efbae725-54e0-4a1b-94cc-533907473248", e._sentryDebugIdIdentifier = "sentry-dbid-efbae725-54e0-4a1b-94cc-533907473248")
   } catch {}
 })();
-const s = () => "Appeals",
-  a = () => "Apelos",
-  p = () => "申诉",
-  u = () => "Einsprüche",
-  o = () => "Apelaciones",
-  f = () => "Recours",
-  i = () => "Ricorsi",
-  l = () => "異議申立て",
-  c = () => "Odwołania",
-  d = () => "Апелляции",
-  _ = () => "Апеляції",
-  b = () => "Các kháng cáo",
-  y = (r = {}, n = {}) => {
-    const e = n.locale ?? t();
-    return e === "en" ? s() : e === "pt" ? a() : e === "ch" ? p() : e === "de" ? u() : e === "es" ? o() : e === "fr" ? f() : e === "it" ? i() : e === "jp" ? l() : e === "pl" ? c() : e === "ru" ? d() : e === "uk" ? _() : b()
-  };
+var d = f('<svg><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"></path></svg>');
+
+function c(e, t) {
+  let r = n(t, ["$$slots", "$$events", "$$legacy"]);
+  var o = d();
+  a(o, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...r
+  })), s(e, o)
+}
 export {
-  y as a
+  c as R
 };

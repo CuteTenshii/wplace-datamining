@@ -1,33 +1,48 @@
 import {
-  aw as s,
-  m as t,
-  k as d,
-  l as o
-} from "./Bg2fLyAp.js";
-import {
-  B as i
-} from "./D0I7CApi.js";
+  g as n
+} from "./CMbhZE-K.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "1e0e8686272f8ab69a6b4937a8dffbb2f245b796"
+      id: "6f22cff8187de3395cfbf72b619a597cbd559223"
     };
-    var n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "1430ef2b-7bfa-4093-bdca-029b20ece08e", e._sentryDebugIdIdentifier = "sentry-dbid-1430ef2b-7bfa-4093-bdca-029b20ece08e")
+    var r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "5e55f805-801d-468d-93e7-0a6fcf9fa52d", e._sentryDebugIdIdentifier = "sentry-dbid-5e55f805-801d-468d-93e7-0a6fcf9fa52d")
   } catch {}
 })();
-const y = Symbol("NaN");
-
-function u(e, n, f) {
-  d && o();
-  var r = new i(e),
-    b = !s();
-  t(() => {
-    var a = n();
-    a !== a && (a = y), b && a !== null && typeof a == "object" && (a = {}), r.ensure(a, f)
-  })
-}
+const s = () => "Latest",
+  o = () => "Mais recente",
+  u = () => "最新",
+  c = () => "Neueste",
+  a = () => "Último",
+  i = () => "Derniers",
+  f = () => "Ultimi",
+  l = () => "最新",
+  _ = () => "Najnowsze",
+  p = () => "Последние",
+  d = () => "Останні",
+  h = () => "Mới nhất",
+  L = (e = {}, r = {}) => {
+    const t = r.locale ?? n();
+    return t === "en" ? s() : t === "pt" ? o() : t === "ch" ? u() : t === "de" ? c() : t === "es" ? a() : t === "fr" ? i() : t === "it" ? f() : t === "jp" ? l() : t === "pl" ? _() : t === "ru" ? p() : t === "uk" ? d() : h()
+  },
+  b = () => "Patch notes",
+  g = () => "Notas de atualização",
+  y = () => "更新日志",
+  j = () => "Versionshinweise",
+  m = () => "Notas de actualización",
+  w = () => "Notes de mise à jour",
+  N = () => "Note di aggiornamento",
+  k = () => "リリースノート",
+  I = () => "Informacje o aktualizacji",
+  D = () => "Примечания к обновлению",
+  E = () => "Нотатки про оновлення",
+  v = () => "Ghi chú cập nhật",
+  T = (e = {}, r = {}) => {
+    const t = r.locale ?? n();
+    return t === "en" ? b() : t === "pt" ? g() : t === "ch" ? y() : t === "de" ? j() : t === "es" ? m() : t === "fr" ? w() : t === "it" ? N() : t === "jp" ? k() : t === "pl" ? I() : t === "ru" ? D() : t === "uk" ? E() : v()
+  };
 export {
-  u as k
+  L as l, T as p
 };

@@ -1,48 +1,48 @@
 import {
-  g as n
-} from "./obv90mRu.js";
+  g as s
+} from "./CMbhZE-K.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "1e0e8686272f8ab69a6b4937a8dffbb2f245b796"
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "6f22cff8187de3395cfbf72b619a597cbd559223"
     };
-    var r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "e8766c05-867d-4e65-ae94-0e09d1aad9d4", e._sentryDebugIdIdentifier = "sentry-dbid-e8766c05-867d-4e65-ae94-0e09d1aad9d4")
+    var n = new r.Error().stack;
+    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "ef164a17-cff1-4d3e-8a31-7d29d77617fa", r._sentryDebugIdIdentifier = "sentry-dbid-ef164a17-cff1-4d3e-8a31-7d29d77617fa")
   } catch {}
 })();
-const s = () => "Patch notes",
-  o = () => "Notas de atualização",
-  u = () => "更新日志",
-  a = () => "Versionshinweise",
-  c = () => "Notas de actualización",
-  i = () => "Notes de mise à jour",
-  f = () => "Note di aggiornamento",
-  l = () => "リリースノート",
-  _ = () => "Informacje o aktualizacji",
-  d = () => "Примечания к обновлению",
-  p = () => "Нотатки про оновлення",
-  h = () => "Ghi chú cập nhật",
-  L = (e = {}, r = {}) => {
-    const t = r.locale ?? n();
-    return t === "en" ? s() : t === "pt" ? o() : t === "ch" ? u() : t === "de" ? a() : t === "es" ? c() : t === "fr" ? i() : t === "it" ? f() : t === "jp" ? l() : t === "pl" ? _() : t === "ru" ? d() : t === "uk" ? p() : h()
+const t = () => "Users banned successfully",
+  u = () => "Usuários banidos com sucesso",
+  o = () => "用户已成功封禁",
+  i = () => "Benutzer erfolgreich gebannt",
+  c = () => "Usuarios baneados correctamente",
+  d = () => "Utilisateurs bannis avec succès",
+  a = () => "Utenti bannati con successo",
+  f = () => "ユーザーをBANしました。",
+  _ = () => "Użytkownicy zostali pomyślnie zbanowani",
+  l = () => "Пользователи успешно забанены",
+  b = () => "Користувачів успішно заблоковано",
+  m = () => "Đã cấm người dùng thành công",
+  T = (r = {}, n = {}) => {
+    const e = n.locale ?? s();
+    return e === "en" ? t() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? d() : e === "it" ? a() : e === "jp" ? f() : e === "pl" ? _() : e === "ru" ? l() : e === "uk" ? b() : m()
   },
-  b = () => "Latest",
-  g = () => "Mais recente",
-  y = () => "最新",
-  j = () => "Neueste",
-  m = () => "Último",
-  w = () => "Derniers",
-  N = () => "Ultimi",
-  k = () => "最新",
-  I = () => "Najnowsze",
-  D = () => "Последние",
-  E = () => "Останні",
-  v = () => "Mới nhất",
-  T = (e = {}, r = {}) => {
-    const t = r.locale ?? n();
-    return t === "en" ? b() : t === "pt" ? g() : t === "ch" ? y() : t === "de" ? j() : t === "es" ? m() : t === "fr" ? w() : t === "it" ? N() : t === "jp" ? k() : t === "pl" ? I() : t === "ru" ? D() : t === "uk" ? E() : v()
+  p = () => "Users timeouted successfully",
+  g = () => "Usuários suspensos com sucesso",
+  y = () => "用户已成功禁言",
+  h = () => "Benutzer erfolgreich mit Timeout belegt",
+  U = () => "Usuarios suspendidos correctamente",
+  w = () => "Utilisateurs suspendus avec succès",
+  k = () => "Utenti sospesi con successo",
+  z = () => "ユーザーをタイムアウトしました。",
+  v = () => "Użytkownicy zostali pomyślnie zawieszeni",
+  E = () => "Пользователям успешно выдан тайм-аут",
+  I = () => "Користувачам успішно призначено тайм-аут",
+  j = () => "Đã tạm khóa người dùng thành công",
+  B = (r = {}, n = {}) => {
+    const e = n.locale ?? s();
+    return e === "en" ? p() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? h() : e === "es" ? U() : e === "fr" ? w() : e === "it" ? k() : e === "jp" ? z() : e === "pl" ? v() : e === "ru" ? E() : e === "uk" ? I() : j()
   };
 export {
-  T as l, L as p
+  B as a, T as u
 };
