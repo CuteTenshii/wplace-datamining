@@ -1,17 +1,17 @@
 import {
-  g as t
-} from "./CMbhZE-K.js";
+  g as c
+} from "./DwxruM8H.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "6f22cff8187de3395cfbf72b619a597cbd559223"
+      id: "c68723346dc53cede4c33166e0b3070fd4fa2ccb"
     };
     var r = new n.Error().stack;
     r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "e0ff4e4a-9644-4fb0-8d54-8257f281c4f6", n._sentryDebugIdIdentifier = "sentry-dbid-e0ff4e4a-9644-4fb0-8d54-8257f281c4f6")
   } catch {}
 })();
-const c = () => "Cancel",
+const t = () => "Cancel",
   u = () => "Cancelar",
   f = () => "取消",
   l = () => "Abbrechen",
@@ -24,8 +24,8 @@ const c = () => "Cancel",
   b = () => "Скасувати",
   p = () => "Hủy",
   g = (n = {}, r = {}) => {
-    const e = r.locale ?? t();
-    return e === "en" ? c() : e === "pt" ? u() : e === "ch" ? f() : e === "de" ? l() : e === "es" ? a() : e === "fr" ? o() : e === "it" ? s() : e === "jp" ? i() : e === "pl" ? d() : e === "ru" ? _() : e === "uk" ? b() : p()
+    const e = r.locale ?? c();
+    return e === "en" ? t() : e === "pt" ? u() : e === "ch" ? f() : e === "de" ? l() : e === "es" ? a() : e === "fr" ? o() : e === "it" ? s() : e === "jp" ? i() : e === "pl" ? d() : e === "ru" ? _() : e === "uk" ? b() : p()
   };
 export {
   g as c

@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./CMbhZE-K.js";
+} from "./DwxruM8H.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "6f22cff8187de3395cfbf72b619a597cbd559223"
+      id: "c68723346dc53cede4c33166e0b3070fd4fa2ccb"
     };
     var t = new e.Error().stack;
     t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "c5ac45ef-619c-46ac-8852-e70242b675e6", e._sentryDebugIdIdentifier = "sentry-dbid-c5ac45ef-619c-46ac-8852-e70242b675e6")
@@ -14,8 +14,8 @@ import {
 const s = () => "Refresh",
   f = () => "Atualizar",
   u = () => "刷新",
-  i = () => "Aktualisieren",
-  c = () => "Actualizar",
+  c = () => "Aktualisieren",
+  i = () => "Actualizar",
   o = () => "Actualiser",
   a = () => "Aggiorna",
   d = () => "更新",
@@ -25,7 +25,7 @@ const s = () => "Refresh",
   b = () => "Làm mới",
   g = (e = {}, t = {}) => {
     const r = t.locale ?? n();
-    return r === "en" ? s() : r === "pt" ? f() : r === "ch" ? u() : r === "de" ? i() : r === "es" ? c() : r === "fr" ? o() : r === "it" ? a() : r === "jp" ? d() : r === "pl" ? l() : r === "ru" ? h() : r === "uk" ? _() : b()
+    return r === "en" ? s() : r === "pt" ? f() : r === "ch" ? u() : r === "de" ? c() : r === "es" ? i() : r === "fr" ? o() : r === "it" ? a() : r === "jp" ? d() : r === "pl" ? l() : r === "ru" ? h() : r === "uk" ? _() : b()
   };
 export {
   g as r

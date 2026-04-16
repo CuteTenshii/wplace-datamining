@@ -1,4 +1,4 @@
-import "./D4N6Bqe8.js";
+import "./CZ-bKVcZ.js";
 import {
   a as o,
   z as ee,
@@ -7,7 +7,7 @@ import {
   v as De,
   b as ze,
   i as x,
-  c as u,
+  c as f,
   u as be,
   d as t,
   s as l,
@@ -22,7 +22,7 @@ import {
   h as P,
   e as xe,
   o as ke
-} from "./CP18E9YK.js";
+} from "./CsHGdBfZ.js";
 import {
   d as $,
   e as it,
@@ -32,57 +32,57 @@ import {
   r as Ie,
   g as Me,
   f as dt
-} from "./B3FQJoHo.js";
+} from "./DaR8bW5G.js";
 import {
   r as oe,
   p as R
-} from "./DI9r8veb.js";
+} from "./Duq0Uf8l.js";
 import {
   s as H
-} from "./CXbWnFpE.js";
+} from "./BBkbu7qU.js";
 import {
   i as D
-} from "./CxIiFEs0.js";
+} from "./Dnj5io5y.js";
 import {
   g as je
-} from "./C8SP12QT.js";
+} from "./BqH6kIiA.js";
 import {
   j as vt,
-  u as fe,
-  t as ue,
+  u as ue,
+  t as fe,
   a as Xe,
   f as ct,
   P as Fe
-} from "./0P0glXsw.js";
+} from "./63a9cj_g.js";
 import {
   r as Oe
-} from "./DV8NKa2Q.js";
-import "./CMbhZE-K.js";
+} from "./ChcijjjJ.js";
+import "./DwxruM8H.js";
 import {
   y as Ne,
   r as Ke,
   a as Je
-} from "./Bc0-Vkkz.js";
+} from "./BonRJZrw.js";
 import {
   s as Be
-} from "./Co9Bkdyn.js";
+} from "./DOVhY0Nk.js";
 import {
   b as pt
-} from "./DwISbYoH.js";
+} from "./e1xMGa0l.js";
 import {
-  c as ft
-} from "./cF50pvQp.js";
+  c as ut
+} from "./CaHeiyQZ.js";
 import {
   t as Qe
-} from "./Dq70n7Zk.js";
+} from "./CpUHJJul.js";
 import {
-  a as ut
-} from "./CMRE-GSB.js";
+  a as ft
+} from "./Dgx67Uie.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "6f22cff8187de3395cfbf72b619a597cbd559223"
+      id: "c68723346dc53cede4c33166e0b3070fd4fa2ccb"
     };
     var e = new r.Error().stack;
     e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "0655b37f-793d-41ad-a861-551fcc3f30ae", r._sentryDebugIdIdentifier = "sentry-dbid-0655b37f-793d-41ad-a861-551fcc3f30ae")
@@ -113,13 +113,13 @@ function gt(r, e) {
     ...n
   })), o(r, s)
 }
-var ht = u('<form method="dialog"><button class="btn btn-sm btn-circle">✕</button></form>'),
-  xt = u('<div class="flex items-center"></div> <div class="flex items-center justify-center overflow-hidden text-center"><!></div> <div class="flex items-start justify-end pt-1"><!></div>', 1),
-  _t = u('<form method="dialog" class="ml-2 self-start pt-1 sm:translate-x-2"><button class="btn btn-sm btn-circle">✕</button></form>'),
-  wt = u('<div class="flex flex-1 items-center gap-3 overflow-hidden"><!></div> <!>', 1),
-  yt = u("<header><!></header>"),
-  Ct = u('<form method="dialog" class="modal-backdrop"><button> </button></form>'),
-  At = u('<dialog closedby="any"><div><!> <div><!></div></div> <!></dialog>');
+var ht = f('<form method="dialog"><button class="btn btn-sm btn-circle">✕</button></form>'),
+  xt = f('<div class="flex items-center"></div> <div class="flex items-center justify-center overflow-hidden text-center"><!></div> <div class="flex items-start justify-end pt-1"><!></div>', 1),
+  _t = f('<form method="dialog" class="ml-2 self-start pt-1 sm:translate-x-2"><button class="btn btn-sm btn-circle">✕</button></form>'),
+  wt = f('<div class="flex flex-1 items-center gap-3 overflow-hidden"><!></div> <!>', 1),
+  yt = f("<header><!></header>"),
+  Ct = f('<form method="dialog" class="modal-backdrop"><button> </button></form>'),
+  At = f('<dialog closedby="any"><div><!> <div><!></div></div> <!></dialog>');
 
 function We(r, e) {
   qe(e, !0);
@@ -197,7 +197,7 @@ function We(r, e) {
       var B = Ct(),
         E = t(B),
         N = t(E, !0);
-      a(E), a(B), I(V => H(N, V), [() => ft()]), o(d, B)
+      a(E), a(B), I(V => H(N, V), [() => ut()]), o(d, B)
     };
     D(S, d => {
       s() && d(te)
@@ -226,10 +226,10 @@ function Le(r, e) {
     ...n
   })), o(r, s)
 }
-var It = u('<span class="btn btn-xs btn-circle btn-primary ml-0.5 size-5"><!></span>'),
-  Mt = u('<span class="flex items-center gap-1"><!> <span class="text-primary text-base font-semibold"> <span class="text-xs max-lg:hidden">Droplets</span></span> <!></span>'),
-  Bt = u('<button class="badge badge-lg border-base-content/10 right-tooltip cursor-pointer border-2 pl-1 pr-1"><!></button>'),
-  Dt = u('<span class="badge badge-lg border-base-content/10 right-tooltip border-2 pl-1 pr-2"><!></span>');
+var It = f('<span class="btn btn-xs btn-circle btn-primary ml-0.5 size-5"><!></span>'),
+  Mt = f('<span class="flex items-center gap-1"><!> <span class="text-primary text-base font-semibold"> <span class="text-xs max-lg:hidden">Droplets</span></span> <!></span>'),
+  Bt = f('<button class="badge badge-lg border-base-content/10 right-tooltip cursor-pointer border-2 pl-1 pr-1"><!></button>'),
+  Dt = f('<span class="badge badge-lg border-base-content/10 right-tooltip border-2 pl-1 pr-2"><!></span>');
 
 function Lt(r, e) {
   qe(e, !0);
@@ -309,28 +309,28 @@ function Ge(r, e) {
     ...n
   })), o(r, s)
 }
-var Tt = u('<div class="flex w-full items-center gap-1"><!> <h3 class="text-xl font-bold">Droplets</h3> <div class="mr-4 ml-auto"><!></div></div>'),
-  Zt = u('<div><div tabindex="0" class="btn btn-lg btn-primary h-10"> </div> <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box border-base-content/20 z-1 m-1 w-max rounded-xl border p-2 shadow"><li><form method="POST"><input type="hidden" name="lookup_key"/> <button class="flex items-center gap-1.5"><!> <span>Cartão ou Boleto</span></button></form></li> <li><button class="flex items-center gap-1.5"><!> <span>Pix</span></button></li></ul></div>'),
-  Pt = u('<form method="POST"><input type="hidden" name="lookup_key"/> <button class="btn btn-lg btn-primary mt-3 h-10" type="submit"><!></button></form>'),
-  Et = u('<div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-4"><p class="text-primary text-3xl font-bold"><!> <span> <span class="text-lg font-normal">Droplets</span></span></p> <p class="text-base-content/80 mt-0.5 text-center text-xs"><!> <span class="text-primary/80 font-medium"> </span></p> <!></div>'),
-  Ut = u('<div class="flex flex-col gap-4"><p class="text-base-content/80 text-sm"> </p> <section><div class="grid gap-3 sm:grid-cols-2"><!> <!> <!> <!> <!> <!></div> <p class="text-base-content/60 mt-4 text-center text-sm"> <a class="font-medium" target="_blank"> </a></p></section></div>'),
-  Rt = u('<div class="flex items-center gap-2"><!> <h3 class="text-2xl font-bold">PIX</h3></div>'),
-  St = u('<p class="text-base-content/80">Efetue o pagamento do PIX no valor de <span class="font-semibold"> </span></p> <section><div class="relative"><img class="pixelated aspect-square w-70" alt="QR code PIX"/> <div class="center-absolute absolute size-[95%] border-6 border-black"></div></div></section> <section class="w-full"><span class="text-base-content/80 ml-4 text-sm font-semibold">Código</span> <div class="border-base-content/20 rounded-field flex w-full items-center gap-1 border-2 py-1.5 pr-2.5 pl-4"><input class="text-base-content/80 w-full min-w-10 grow text-sm font-medium" readonly=""/> <div class="h-10"><button class="btn btn-primary">Copiar</button></div></div></section> <section class="mt-2"><button class="btn btn-primary btn-lg">Fiz o pagamento</button></section>', 1),
-  jt = u('<div class="flex h-96 items-center justify-center"><span class="loading loading-spinner loading-xl"></span></div>'),
-  Xt = u('<div class="flex h-full flex-col items-center gap-4"><!></div>'),
-  Ft = u("<!> <!>", 1);
+var Tt = f('<div class="flex w-full items-center gap-1"><!> <h3 class="text-xl font-bold">Droplets</h3> <div class="mr-4 ml-auto"><!></div></div>'),
+  Zt = f('<div><div tabindex="0" class="btn btn-lg btn-primary h-10"> </div> <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box border-base-content/20 z-1 m-1 w-max rounded-xl border p-2 shadow"><li><form method="POST"><input type="hidden" name="lookup_key"/> <button class="flex items-center gap-1.5"><!> <span>Cartão ou Boleto</span></button></form></li> <li><button class="flex items-center gap-1.5"><!> <span>Pix</span></button></li></ul></div>'),
+  Pt = f('<form method="POST"><input type="hidden" name="lookup_key"/> <button class="btn btn-lg btn-primary mt-3 h-10" type="submit"><!></button></form>'),
+  Et = f('<div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-4"><p class="text-primary text-3xl font-bold"><!> <span> <span class="text-lg font-normal">Droplets</span></span></p> <p class="text-base-content/80 mt-0.5 text-center text-xs"><!> <span class="text-primary/80 font-medium"> </span></p> <!></div>'),
+  Ut = f('<div class="flex flex-col gap-4"><p class="text-base-content/80 text-sm"> </p> <section><div class="grid gap-3 sm:grid-cols-2"><!> <!> <!> <!> <!> <!></div> <p class="text-base-content/60 mt-4 text-center text-sm"> <a class="font-medium" target="_blank"> </a></p></section></div>'),
+  Rt = f('<div class="flex items-center gap-2"><!> <h3 class="text-2xl font-bold">PIX</h3></div>'),
+  St = f('<p class="text-base-content/80">Efetue o pagamento do PIX no valor de <span class="font-semibold"> </span></p> <section><div class="relative"><img class="pixelated aspect-square w-70" alt="QR code PIX"/> <div class="center-absolute absolute size-[95%] border-6 border-black"></div></div></section> <section class="w-full"><span class="text-base-content/80 ml-4 text-sm font-semibold">Código</span> <div class="border-base-content/20 rounded-field flex w-full items-center gap-1 border-2 py-1.5 pr-2.5 pl-4"><input class="text-base-content/80 w-full min-w-10 grow text-sm font-medium" readonly=""/> <div class="h-10"><button class="btn btn-primary">Copiar</button></div></div></section> <section class="mt-2"><button class="btn btn-primary btn-lg">Fiz o pagamento</button></section>', 1),
+  jt = f('<div class="flex h-96 items-center justify-center"><span class="loading loading-spinner loading-xl"></span></div>'),
+  Xt = f('<div class="flex h-full flex-col items-center gap-4"><!></div>'),
+  Ft = f("<!> <!>", 1);
 
-function fa(r, e) {
+function ua(r, e) {
   qe(e, !0);
   let n = R(e, "open", 15),
     s = xe(!1);
   const w = be(() => {
       var y, i;
-      return ((i = (y = fe.data) == null ? void 0 : y.country) == null ? void 0 : i.toUpperCase()) === "BR"
+      return ((i = (y = ue.data) == null ? void 0 : y.country) == null ? void 0 : i.toUpperCase()) === "BR"
     }),
     C = be(() => {
       var y, i;
-      return ((i = (y = fe.data) == null ? void 0 : y.country) == null ? void 0 : i.toUpperCase()) === "MX"
+      return ((i = (y = ue.data) == null ? void 0 : y.country) == null ? void 0 : i.toUpperCase()) === "MX"
     });
   let _ = xe(!1),
     v = xe(void 0),
@@ -356,7 +356,7 @@ function fa(r, e) {
       {
         let T = be(() => {
           var A;
-          return ((A = fe.data) == null ? void 0 : A.droplets) ?? 0
+          return ((A = ue.data) == null ? void 0 : A.droplets) ?? 0
         });
         Lt(O, {
           get value() {
@@ -378,13 +378,13 @@ function fa(r, e) {
           a(S);
           var d = l(S, 2);
           {
-            const b = (Y, f) => {
-              let Q = () => f == null ? void 0 : f().droplets,
-                ae = () => f == null ? void 0 : f().bonus,
-                re = () => f == null ? void 0 : f().price,
-                Te = () => f == null ? void 0 : f().stripeLookupkey,
-                Ye = () => f == null ? void 0 : f().productId,
-                $e = () => f == null ? void 0 : f().dropdownClass;
+            const b = (Y, u) => {
+              let Q = () => u == null ? void 0 : u().droplets,
+                ae = () => u == null ? void 0 : u().bonus,
+                re = () => u == null ? void 0 : u().price,
+                Te = () => u == null ? void 0 : u().stripeLookupkey,
+                Ye = () => u == null ? void 0 : u().productId,
+                $e = () => u == null ? void 0 : u().dropdownClass;
               var we = Et(),
                 ye = t(we),
                 Ze = t(ye);
@@ -438,7 +438,7 @@ function fa(r, e) {
                       P(_, !0), P(s, !0), Xe.generatePixQrCode(Ye()).then(pe => {
                         P(v, pe, !0)
                       }).catch(pe => {
-                        ue.error(pe.message)
+                        fe.error(pe.message)
                       }).finally(() => {
                         P(s, !1)
                       })
@@ -536,14 +536,14 @@ function fa(r, e) {
               J = t(K),
               j = l(J),
               X = t(j, !0);
-            a(j), a(K), a(d), I((Y, f, Q, ae) => {
-              H(J, `${f??""} `), me(j, "href", Q), H(X, ae)
+            a(j), a(K), a(d), I((Y, u, Q, ae) => {
+              H(J, `${u??""} `), me(j, "href", Q), H(X, ae)
             }, [() => Ne(), () => Ke(), Oe, () => Je()])
           }
-          a(A), I((b, Y, f, Q) => H(te, b), [() => Ne(), () => Ke(), Oe, () => Je()]), o(T, A)
+          a(A), I((b, Y, u, Q) => H(te, b), [() => Ne(), () => Ke(), Oe, () => Je()]), o(T, A)
         };
         D(L, T => {
-          fe.data && T(O)
+          ue.data && T(O)
         })
       }
       o(i, m)
@@ -602,11 +602,11 @@ function fa(r, e) {
               H(B, `R$${b??""}`), me(V, "src", x(v).qrCode), Me(z, x(v).pixCode), X.disabled = x(c)
             }, [() => (x(v).price / 100).toFixed(2).replace(".", ",")]), _e("click", J, () => {
               var b;
-              navigator.clipboard.writeText(((b = x(v)) == null ? void 0 : b.pixCode) ?? ""), ue.success("Código PIX copiado")
+              navigator.clipboard.writeText(((b = x(v)) == null ? void 0 : b.pixCode) ?? ""), fe.success("Código PIX copiado")
             }), _e("click", X, async () => {
-              var b, Y, f;
+              var b, Y, u;
               if (!x(v)) {
-                ue.info("Espere 1 minuto e recarrege a pagina");
+                fe.info("Espere 1 minuto e recarrege a pagina");
                 return
               }
               try {
@@ -616,13 +616,13 @@ function fa(r, e) {
                 } = await Xe.getPixStatus(x(v).pixId);
                 if (Q) {
                   const ae = x(v).productId.toString(),
-                    re = (f = (Y = (b = ct.products[ae]) == null ? void 0 : b.items) == null ? void 0 : Y[0]) == null ? void 0 : f.amount;
-                  await fe.refresh(), re ? je(`payment/success?droplets=${re}`) : je("payment/success")
-                } else ue.info("Pagamento ainda não recebido. Desculpe a demora, tente novamente em instantes.", {
+                    re = (u = (Y = (b = ct.products[ae]) == null ? void 0 : b.items) == null ? void 0 : Y[0]) == null ? void 0 : u.amount;
+                  await ue.refresh(), re ? je(`payment/success?droplets=${re}`) : je("payment/success")
+                } else fe.info("Pagamento ainda não recebido. Desculpe a demora, tente novamente em instantes.", {
                   duration: 1e5
                 })
               } catch (Q) {
-                console.error(Q), ue.error("Error ao atualizar o status do pix. Tente recarregar a página.")
+                console.error(Q), fe.error("Error ao atualizar o status do pix. Tente recarregar a página.")
               } finally {
                 P(c, !1)
               }
@@ -647,7 +647,7 @@ function fa(r, e) {
 Ve(["click"]);
 var Ot = ee('<svg><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"></path></svg>');
 
-function ua(r, e) {
+function fa(r, e) {
   let n = oe(e, ["$$slots", "$$events", "$$legacy"]);
   var s = Ot();
   $(s, () => ({
@@ -706,8 +706,8 @@ function ba([r, e], [n, s]) {
   }
   return w
 }
-var Jt = u('<img class="pixelated bg-base-200" alt="User profile"/>'),
-  Qt = u('<div class="relative w-max"><div class="bg-base-content/20 size-12 rounded-full"></div> <div class="level-fill center-absolute absolute size-12 rotate-[215deg] rounded-full svelte-12f880g"></div> <div class="avatar center-absolute absolute"><div class="size-10 rounded-full"><!></div></div> <div> </div></div>');
+var Jt = f('<img class="pixelated bg-base-200" alt="User profile"/>'),
+  Qt = f('<div class="relative w-max"><div class="bg-base-content/20 size-12 rounded-full"></div> <div class="level-fill center-absolute absolute size-12 rotate-[215deg] rounded-full svelte-12f880g"></div> <div class="avatar center-absolute absolute"><div class="size-10 rounded-full"><!></div></div> <div> </div></div>');
 
 function ga(r, e) {
   const n = be(() => e.level % 1 * 360);
@@ -718,7 +718,7 @@ function ga(r, e) {
     v = t(_);
   {
     var c = i => {
-        ut(i, {
+        ft(i, {
           get userId() {
             return e.userId
           }
@@ -744,5 +744,5 @@ function ga(r, e) {
   }, [() => Math.floor(e.level)]), o(r, s)
 }
 export {
-  gt as A, Lt as D, ma as I, ga as P, pa as U, ua as a, Le as b, fa as c, ca as d, We as e, ba as r
+  gt as A, Lt as D, ma as I, ga as P, pa as U, fa as a, Le as b, ua as c, ca as d, We as e, ba as r
 };

@@ -1,7 +1,7 @@
-import "./D4N6Bqe8.js";
+import "./CZ-bKVcZ.js";
 import {
   o as S
-} from "./CA8HqG-3.js";
+} from "./DRqcChMW.js";
 import {
   L as N,
   x as R,
@@ -19,24 +19,24 @@ import {
   t as g,
   c as _,
   u as G
-} from "./CP18E9YK.js";
+} from "./CsHGdBfZ.js";
 import {
   i as H
-} from "./CxIiFEs0.js";
+} from "./Dnj5io5y.js";
 import {
   a as x
-} from "./B3FQJoHo.js";
+} from "./DaR8bW5G.js";
 import {
   p as r
-} from "./DI9r8veb.js";
+} from "./Duq0Uf8l.js";
 import {
   j as v
-} from "./0P0glXsw.js";
+} from "./63a9cj_g.js";
 (function() {
   try {
     var l = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     l.SENTRY_RELEASE = {
-      id: "6f22cff8187de3395cfbf72b619a597cbd559223"
+      id: "c68723346dc53cede4c33166e0b3070fd4fa2ccb"
     };
     var e = new l.Error().stack;
     e && (l._sentryDebugIds = l._sentryDebugIds || {}, l._sentryDebugIds[e] = "3dc8b9e7-4850-4022-b3de-34014628ffd2", l._sentryDebugIdIdentifier = "sentry-dbid-3dc8b9e7-4850-4022-b3de-34014628ffd2")
@@ -47,12 +47,12 @@ function J(l, e, n) {
   N(() => {
     var d = R(() => e(l, n == null ? void 0 : n()) || {});
     if (n && (d != null && d.update)) {
-      var f = !1,
-        s = {};
+      var s = !1,
+        f = {};
       q(() => {
         var c = n();
-        K(c), f && M(s, c) && (s = c, d.update(c))
-      }), f = !0
+        K(c), s && M(f, c) && (f = c, d.update(c))
+      }), s = !0
     }
     if (d != null && d.destroy) return () => d.destroy()
   })
@@ -64,8 +64,8 @@ function ae(l, e) {
   P(e, !0);
   let n = r(e, "widgetId", 15),
     d = r(e, "appearance", 3, "always"),
-    f = r(e, "language", 3, "auto"),
-    s = r(e, "execution", 3, "render"),
+    s = r(e, "language", 3, "auto"),
+    f = r(e, "execution", 3, "render"),
     c = r(e, "retryInterval", 3, 8e3),
     I = r(e, "retry", 3, "auto"),
     E = r(e, "refreshExpired", 3, "auto"),
@@ -112,8 +112,8 @@ function ae(l, e) {
       "retry-interval": c(),
       tabindex: D(),
       appearance: d(),
-      execution: s(),
-      language: f(),
+      execution: f(),
+      language: s(),
       action: e.action,
       retry: I(),
       theme: C(),

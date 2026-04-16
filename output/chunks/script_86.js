@@ -1,30 +1,30 @@
-import "./D4N6Bqe8.js";
-import "./v5Il9go0.js";
+import "./CZ-bKVcZ.js";
+import "./4lNQOYMf.js";
 import {
-  p as n,
-  a as p,
-  b as c,
+  p as f,
+  a as c,
+  b as p,
   c as l,
-  r as b,
+  r as m,
   i as r,
-  A as m
-} from "./CP18E9YK.js";
+  A as b
+} from "./CsHGdBfZ.js";
 import {
   e as u
-} from "./ByP2y1mT.js";
+} from "./-JY6oEeV.js";
 import {
   i as g
-} from "./BIL8uTvF.js";
+} from "./CDcnFeFF.js";
 import {
   p as h,
   V as v,
   P as y
-} from "./DimsLzRB.js";
+} from "./AB-IXKqP.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "6f22cff8187de3395cfbf72b619a597cbd559223"
+      id: "c68723346dc53cede4c33166e0b3070fd4fa2ccb"
     };
     var a = new e.Error().stack;
     a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "846e8cfa-3714-4e65-871c-6d17b7ed2975", e._sentryDebugIdIdentifier = "sentry-dbid-846e8cfa-3714-4e65-871c-6d17b7ed2975")
@@ -33,7 +33,7 @@ import {
 var _ = l('<div class="flex flex-col gap-6"></div>');
 
 function x(e, a) {
-  n(a, !1);
+  f(a, !1);
   const o = [...h].reverse().map(t => ({
     version: t.version,
     title: t.title,
@@ -43,17 +43,17 @@ function x(e, a) {
   var s = _();
   u(s, 7, () => o, t => t.version, (t, i, d) => {
     {
-      let f = m(() => r(d) === 0);
+      let n = b(() => r(d) === 0);
       y(t, {
         get patchNote() {
           return r(i)
         },
         get latest() {
-          return r(f)
+          return r(n)
         }
       })
     }
-  }), b(s), p(e, s), c()
+  }), m(s), c(e, s), p()
 }
 export {
   x as P
