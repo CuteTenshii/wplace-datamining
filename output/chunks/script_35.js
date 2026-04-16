@@ -11,40 +11,40 @@ var F = (t, e, s) => e in t ? q(t, e, {
 var U = (t, e, s) => F(t, typeof e != "symbol" ? e + "" : e, s),
   _ = (t, e, s) => e.has(t) || C("Cannot " + s);
 var p = (t, e, s) => (_(t, e, "read from private field"), s ? s.call(t) : e.get(t)),
-  v = (t, e, s) => e.has(t) ? C("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, s),
+  b = (t, e, s) => e.has(t) ? C("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, s),
   x = (t, e, s, a) => (_(t, e, "write to private field"), a ? a.call(t, s) : e.set(t, s), s),
   w = (t, e, s) => (_(t, e, "access private method"), s);
-import "./C7uUiZnA.js";
+import "./CZEV_Nk5.js";
 import {
   p as H,
   d as E,
   r as y,
-  t as b,
+  t as v,
   a as g,
   b as B,
   c as h,
   s as G
-} from "./B8NcJmf7.js";
+} from "./aONqeBJ4.js";
 import {
   i as S
-} from "./Dg6iFpqE.js";
+} from "./JvdSK6CF.js";
 import {
   a as A,
   f as L,
   c as D,
   s as M
-} from "./Bm9px6P2.js";
+} from "./C1PbnoAX.js";
 import {
   h as j
-} from "./DtJyXBqE.js";
+} from "./B5obZRXw.js";
 import {
   t as N
-} from "./CYfwNM45.js";
+} from "./Bm9gBqMc.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "1f8643ac63030331424d23f5f462150829277f89"
+      id: "c82b8b5d8deacdc21b4154b9417a43b8fc75f478"
     };
     var e = new t.Error().stack;
     e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "d44a0c63-8243-44cb-839a-f220e8b3cca7", t._sentryDebugIdIdentifier = "sentry-dbid-d44a0c63-8243-44cb-839a-f220e8b3cca7")
@@ -68,8 +68,8 @@ var k, r, m, c, f, T, z;
 (k = globalThis.customElements) != null && k.get("minidenticon-svg") || (z = globalThis.customElements) == null || z.define("minidenticon-svg", (r = class extends HTMLElement {
   constructor() {
     super(...arguments);
-    v(this, f);
-    v(this, c, !1)
+    b(this, f);
+    b(this, c, !1)
   }
   connectedCallback() {
     w(this, f, T).call(this), x(this, c, !0)
@@ -82,14 +82,14 @@ var k, r, m, c, f, T, z;
   const s = r.observedAttributes.map(d => this.getAttribute(d) || void 0),
     a = s.join(",");
   this.innerHTML = (o = p(r, m))[a] ?? (o[a] = O(...s))
-}, U(r, "observedAttributes", ["username", "saturation", "lightness"]), v(r, m, {}), r));
+}, U(r, "observedAttributes", ["username", "saturation", "lightness"]), b(r, m, {}), r));
 var V = h("<div><!></div>");
 
 function W(t, e) {
   H(e, !0);
   var s = V(),
     a = E(s);
-  j(a, () => O(e.userId.toString(), 95, 45)), y(s), b(() => A(s, 1, `bg-base-200 minidenticon ${e.class??""??""}`)), g(t, s), B()
+  j(a, () => O(e.userId.toString(), 95, 45)), y(s), v(() => A(s, 1, `bg-base-200 minidenticon ${e.class??""??""}`)), g(t, s), B()
 }
 var X = h('<img class="pixelated bg-base-200 size-full" alt="User profile"/>'),
   Z = h('<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square w-full"/>'),
@@ -111,7 +111,7 @@ function ne(t, e) {
       },
       u = i => {
         var n = X();
-        b(() => M(n, "src", e.pictureUrl)), g(i, n)
+        v(() => M(n, "src", e.pictureUrl)), g(i, n)
       };
     S(o, i => {
       e.pictureUrl ? i(u, !1) : i(d)
@@ -122,13 +122,13 @@ function ne(t, e) {
   {
     var l = i => {
       var n = Z();
-      L(n, "scale: 114.99999999999999%;"), b(() => M(n, "src", e.frameUrl)), g(i, n)
+      L(n, "scale: 114.99999999999999%;"), v(() => M(n, "src", e.frameUrl)), g(i, n)
     };
     S(I, i => {
       e.frameUrl && i(l)
     })
   }
-  y(s), b((i, n) => {
+  y(s), v((i, n) => {
     A(s, 1, i), A(a, 1, n)
   }, [() => D(N("relative inline-grid size-10 place-items-center", e.class)), () => D(N("avatar border-base-300 aspect-square overflow-hidden rounded-full border", e.avatarClass))]), g(t, s), B()
 }

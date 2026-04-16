@@ -1,39 +1,39 @@
-import "./C7uUiZnA.js";
-import "./YjzQDSAK.js";
+import "./CZEV_Nk5.js";
+import "./kCmYhX2d.js";
 import {
-  p as n,
-  a as p,
-  b as l,
-  c,
-  r as m,
+  p as f,
+  a as c,
+  b as p,
+  c as l,
+  r as b,
   i as r,
-  A as u
-} from "./B8NcJmf7.js";
+  A as m
+} from "./aONqeBJ4.js";
 import {
-  e as b
-} from "./CKb39HVu.js";
+  e as u
+} from "./1qcYieU1.js";
 import {
   i as g
-} from "./3hv2Zjq_.js";
+} from "./DIgUjA4K.js";
 import {
   p as h,
   V as v,
   P as y
-} from "./rM-SHNqe.js";
+} from "./CuAuf-Wy.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "1f8643ac63030331424d23f5f462150829277f89"
+      id: "c82b8b5d8deacdc21b4154b9417a43b8fc75f478"
     };
     var a = new e.Error().stack;
     a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "846e8cfa-3714-4e65-871c-6d17b7ed2975", e._sentryDebugIdIdentifier = "sentry-dbid-846e8cfa-3714-4e65-871c-6d17b7ed2975")
   } catch {}
 })();
-var _ = c('<div class="flex flex-col gap-6"></div>');
+var _ = l('<div class="flex flex-col gap-6"></div>');
 
 function x(e, a) {
-  n(a, !1);
+  f(a, !1);
   const o = [...h].reverse().map(t => ({
     version: t.version,
     title: t.title,
@@ -41,19 +41,19 @@ function x(e, a) {
   }));
   g();
   var s = _();
-  b(s, 7, () => o, t => t.version, (t, i, d) => {
+  u(s, 7, () => o, t => t.version, (t, i, d) => {
     {
-      let f = u(() => r(d) === 0);
+      let n = m(() => r(d) === 0);
       y(t, {
         get patchNote() {
           return r(i)
         },
         get latest() {
-          return r(f)
+          return r(n)
         }
       })
     }
-  }), m(s), p(e, s), l()
+  }), b(s), c(e, s), p()
 }
 export {
   x as P
