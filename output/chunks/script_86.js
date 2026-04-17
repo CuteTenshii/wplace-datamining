@@ -1,5 +1,5 @@
-import "./DEy4XHdA.js";
-import "./FFwLJku7.js";
+import "./D3fhmPXl.js";
+import "./C0Cd_Rj_.js";
 import {
   p as E,
   a as i,
@@ -11,32 +11,32 @@ import {
   s as h,
   t as z,
   af as D
-} from "./BBqfZ3Cy.js";
+} from "./C0_5AQd4.js";
 import {
   i as u
-} from "./DtMKSaSA.js";
+} from "./D9P51XMA.js";
 import {
   e as P
-} from "./BvTA7fSG.js";
+} from "./Ci3WCp18.js";
 import {
   f as S
-} from "./D8Ccz4Os.js";
+} from "./uAxzKjqj.js";
 import {
   i as T
-} from "./BaENzKbL.js";
+} from "./D-frerv0.js";
 import {
   p as R,
   V,
   P as q
-} from "./r-lW09hL.js";
+} from "./PdEZepMo.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "d953af0a076c6a8d855924dd3acfc556014e27c6"
+    var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    a.SENTRY_RELEASE = {
+      id: "dc0186d26e0c2d626ef1b4331d86a985eea98c24"
     };
-    var d = new e.Error().stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "a54711f9-a3ea-48c3-9bb2-d82d0c44b996", e._sentryDebugIdIdentifier = "sentry-dbid-a54711f9-a3ea-48c3-9bb2-d82d0c44b996")
+    var d = new a.Error().stack;
+    d && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[d] = "a54711f9-a3ea-48c3-9bb2-d82d0c44b996", a._sentryDebugIdIdentifier = "sentry-dbid-a54711f9-a3ea-48c3-9bb2-d82d0c44b996")
   } catch {}
 })();
 var A = o('<div class="z-10 size-2.5 rounded-full bg-primary shadow-[0_0_0_3px] shadow-primary/15"></div>'),
@@ -45,7 +45,7 @@ var A = o('<div class="z-10 size-2.5 rounded-full bg-primary shadow-[0_0_0_3px] 
   Y = o('<div class="relative flex gap-3.5"><div class="flex shrink-0 flex-col items-center pt-2.25"><!> <!></div> <div class="min-w-0 flex-1 pb-9"><!></div></div>'),
   $ = o('<div class="flex flex-col"></div>');
 
-function O(e, d) {
+function O(a, d) {
   E(d, !1);
   const n = [...R].reverse().map(s => ({
     version: s.version,
@@ -59,44 +59,44 @@ function O(e, d) {
       p = b(v),
       m = b(p);
     {
-      var y = a => {
+      var y = e => {
           var t = A();
-          i(a, t)
+          i(e, t)
         },
-        w = a => {
+        w = e => {
           var t = H();
-          i(a, t)
+          i(e, t)
         };
-      u(m, a => {
-        r(l) === 0 ? a(y) : a(w, !1)
+      u(m, e => {
+        r(l) === 0 ? e(y) : e(w, !1)
       })
     }
     var x = h(m, 2);
     {
-      var I = a => {
+      var I = e => {
         var t = L();
-        i(a, t)
+        i(e, t)
       };
-      u(x, a => {
-        r(l) < n.length - 1 && a(I)
+      u(x, e => {
+        r(l) < n.length - 1 && e(I)
       })
     }
     f(p);
     var _ = h(p, 2),
       N = b(_);
     {
-      let a = D(() => r(l) === 0);
+      let e = D(() => r(l) === 0);
       q(N, {
         get patchNote() {
           return r(g)
         },
         get latest() {
-          return r(a)
+          return r(e)
         }
       })
     }
     f(_), f(v), z(() => S(v, `animation: patchSlideIn 0.3s ease-out ${r(l)*50}ms both`)), i(s, v)
-  }), f(c), i(e, c), k()
+  }), f(c), i(a, c), k()
 }
 export {
   O as P

@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./Cl_dwRWp.js";
+} from "./BQlqcz55.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "d953af0a076c6a8d855924dd3acfc556014e27c6"
+      id: "dc0186d26e0c2d626ef1b4331d86a985eea98c24"
     };
     var r = new t.Error().stack;
     r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "3ec605d5-5f91-4ad8-84e0-31115df5feed", t._sentryDebugIdIdentifier = "sentry-dbid-3ec605d5-5f91-4ad8-84e0-31115df5feed")
@@ -23,10 +23,10 @@ const u = () => "Timeout",
   l = () => "Тайм-аут",
   p = () => "Тайм-аут",
   _ = () => "Tạm khóa",
-  y = (t = {}, r = {}) => {
+  g = (t = {}, r = {}) => {
     const e = r.locale ?? n();
     return e === "en" ? u() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? s() : e === "es" ? d() : e === "fr" ? f() : e === "it" ? c() : e === "jp" ? a() : e === "pl" ? m() : e === "ru" ? l() : e === "uk" ? p() : _()
   };
 export {
-  y as t
+  g as t
 };

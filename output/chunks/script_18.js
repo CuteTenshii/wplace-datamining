@@ -2,7 +2,7 @@
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "d953af0a076c6a8d855924dd3acfc556014e27c6"
+      id: "dc0186d26e0c2d626ef1b4331d86a985eea98c24"
     };
     var o = new e.Error().stack;
     o && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[o] = "f48e8017-3f7e-40b0-9f34-cb514ffed3f1", e._sentryDebugIdIdentifier = "sentry-dbid-f48e8017-3f7e-40b0-9f34-cb514ffed3f1")
@@ -13,7 +13,7 @@ const L = "en",
   d = "PARAGLIDE_LOCALE",
   g = ["localStorage", "preferredLanguage", "baseLocale"];
 globalThis.__paraglide = {};
-let i = !1,
+let f = !1,
   p = () => {
     let e;
     for (const o of g) {
@@ -30,7 +30,7 @@ let i = !1,
       }
       if (e !== void 0) {
         const t = h(e);
-        return i || (i = !0, y(t, {
+        return f || (f = !0, y(t, {
           reload: !1
         })), t
       }
@@ -52,8 +52,8 @@ let i = !1,
         else if (u(r) && l.has(r)) {
           const s = l.get(r);
           if (s) {
-            const f = s.setLocale(e);
-            f instanceof Promise && f.catch(b => {
+            const i = s.setLocale(e);
+            i instanceof Promise && i.catch(b => {
               console.warn(`Custom strategy "${r}" setLocale failed:`, b)
             })
           }

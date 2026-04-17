@@ -14,7 +14,7 @@ var b = (t, n, e) => (Kn(t, n, "read from private field"), e ? e.call(t) : n.get
   D = (t, n, e) => n.has(t) ? Nt("Cannot add the same private member more than once") : n instanceof WeakSet ? n.add(t) : n.set(t, e);
 import {
   g as h
-} from "./Cl_dwRWp.js";
+} from "./BQlqcz55.js";
 import {
   e as B,
   i as M,
@@ -22,19 +22,19 @@ import {
   g as rt,
   x as xt,
   u as we
-} from "./BBqfZ3Cy.js";
+} from "./C0_5AQd4.js";
 import {
   s as Hn,
   c as Yn
-} from "./BIxzzFcP.js";
+} from "./PblrFJCO.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "d953af0a076c6a8d855924dd3acfc556014e27c6"
+      id: "dc0186d26e0c2d626ef1b4331d86a985eea98c24"
     };
     var n = new t.Error().stack;
-    n && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[n] = "a1c99add-299a-4eb9-8240-f761b1807975", t._sentryDebugIdIdentifier = "sentry-dbid-a1c99add-299a-4eb9-8240-f761b1807975")
+    n && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[n] = "0eb63c9c-09bb-42ec-950b-4ef33d25fcd4", t._sentryDebugIdIdentifier = "sentry-dbid-0eb63c9c-09bb-42ec-950b-4ef33d25fcd4")
   } catch {}
 })();
 const Qv = "https://maps.wplace.live",
@@ -1879,9 +1879,11 @@ async function _i() {
     } = n.components,
     s = navigator.userAgent,
     u = navigator.deviceMemory || 0,
-    l = navigator.userAgent.toLowerCase().includes("chrome");
+    l = navigator.userAgent.toLowerCase(),
+    _ = l.includes("chrome"),
+    d = l.includes("safari") && !_;
   return it = Rn.hashComponents({
-    ...l ? {
+    ..._ || d ? {
       canvas: i
     } : {},
     languages: {

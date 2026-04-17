@@ -1,19 +1,19 @@
 import {
   g as n
-} from "./Cl_dwRWp.js";
+} from "./BQlqcz55.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "d953af0a076c6a8d855924dd3acfc556014e27c6"
+      id: "dc0186d26e0c2d626ef1b4331d86a985eea98c24"
     };
     var r = new t.Error().stack;
     r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "98aaa04a-ddcb-4a51-ae9b-9ba4f25d9d95", t._sentryDebugIdIdentifier = "sentry-dbid-98aaa04a-ddcb-4a51-ae9b-9ba4f25d9d95")
   } catch {}
 })();
 const s = () => "All Frames",
-  a = () => "Todas as Molduras",
-  u = () => "所有相框",
+  u = () => "Todas as Molduras",
+  a = () => "所有相框",
   o = () => "Alle Rahmen",
   c = () => "Todos los Marcos",
   i = () => "Tous les cadres",
@@ -25,7 +25,7 @@ const s = () => "All Frames",
   p = () => "Tất cả các khung",
   le = (t = {}, r = {}) => {
     const e = r.locale ?? n();
-    return e === "en" ? s() : e === "pt" ? a() : e === "ch" ? u() : e === "de" ? o() : e === "es" ? c() : e === "fr" ? i() : e === "it" ? _() : e === "jp" ? l() : e === "pl" ? f() : e === "ru" ? d() : e === "uk" ? m() : p()
+    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? a() : e === "de" ? o() : e === "es" ? c() : e === "fr" ? i() : e === "it" ? _() : e === "jp" ? l() : e === "pl" ? f() : e === "ru" ? d() : e === "uk" ? m() : p()
   },
   b = () => "Back to list",
   k = () => "Voltar para a lista",
@@ -82,14 +82,14 @@ const s = () => "All Frames",
   te = () => "Aún no tenemos marcos para comprar, espera futuras actualizaciones ;)",
   ne = () => "Nous n'avons pas encore de cadres à acheter, attendez les futures mises à jour ;)",
   se = () => "Non abbiamo ancora cornici da acquistare, attendete futuri aggiornamenti ;)",
-  ae = () => "まだ購入できるフレームはありません。今後のアップデートをお待ちくださいね ;)",
-  ue = () => "Nie mamy jeszcze ramek do kupienia, poczekaj na przyszłe aktualizacje ;)",
+  ue = () => "まだ購入できるフレームはありません。今後のアップデートをお待ちくださいね ;)",
+  ae = () => "Nie mamy jeszcze ramek do kupienia, poczekaj na przyszłe aktualizacje ;)",
   oe = () => "У нас пока нет рам для покупки, ждите будущих обновлений ;)",
   ce = () => "У нас ще немає рам для покупки, чекайте майбутніх оновлень ;)",
   ie = () => "Chúng tôi chưa có khung ảnh để bán đâu, hãy chờ các bản cập nhật sắp tới nhé ;)",
   pe = (t = {}, r = {}) => {
     const e = r.locale ?? n();
-    return e === "en" ? P() : e === "pt" ? $() : e === "ch" ? ee() : e === "de" ? re() : e === "es" ? te() : e === "fr" ? ne() : e === "it" ? se() : e === "jp" ? ae() : e === "pl" ? ue() : e === "ru" ? oe() : e === "uk" ? ce() : ie()
+    return e === "en" ? P() : e === "pt" ? $() : e === "ch" ? ee() : e === "de" ? re() : e === "es" ? te() : e === "fr" ? ne() : e === "it" ? se() : e === "jp" ? ue() : e === "pl" ? ae() : e === "ru" ? oe() : e === "uk" ? ce() : ie()
   };
 export {
   de as _, le as a, fe as b, pe as c, me as n
