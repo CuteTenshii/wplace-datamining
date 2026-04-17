@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./8FlXsgLB.js";
+} from "./DhZUX4Dk.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "d92995df349756f69cfad78cc6651ba9aa7c7814"
+      id: "cdbcf7fbe78b739ecf1b47eab1739b136749bbb3"
     };
     var t = new e.Error().stack;
     t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "f3916074-7b40-4047-be6a-c4edffb7c113", e._sentryDebugIdIdentifier = "sentry-dbid-f3916074-7b40-4047-be6a-c4edffb7c113")
@@ -17,17 +17,17 @@ const u = () => "Members",
   i = () => "Mitglieder",
   c = () => "Miembros",
   f = () => "Membres",
-  a = () => "Membri",
+  b = () => "Membri",
   l = () => "メンバー",
-  p = () => "Członkowie",
-  b = () => "Участники",
+  a = () => "Członkowie",
+  p = () => "Участники",
   m = () => "Учасники",
-  d = () => "Thành viên",
+  _ = () => "Thành viên",
   J = (e = {}, t = {}) => {
     const r = t.locale ?? n();
-    return r === "en" ? u() : r === "pt" ? s() : r === "ch" ? o() : r === "de" ? i() : r === "es" ? c() : r === "fr" ? f() : r === "it" ? a() : r === "jp" ? l() : r === "pl" ? p() : r === "ru" ? b() : r === "uk" ? m() : d()
+    return r === "en" ? u() : r === "pt" ? s() : r === "ch" ? o() : r === "de" ? i() : r === "es" ? c() : r === "fr" ? f() : r === "it" ? b() : r === "jp" ? l() : r === "pl" ? a() : r === "ru" ? p() : r === "uk" ? m() : _()
   },
-  _ = () => "Player",
+  d = () => "Player",
   y = () => "Jogador",
   g = () => "玩家",
   h = () => "Spieler",
@@ -41,7 +41,7 @@ const u = () => "Members",
   D = () => "Người chơi",
   S = (e = {}, t = {}) => {
     const r = t.locale ?? n();
-    return r === "en" ? _() : r === "pt" ? y() : r === "ch" ? g() : r === "de" ? h() : r === "es" ? k() : r === "fr" ? w() : r === "it" ? M() : r === "jp" ? v() : r === "pl" ? E() : r === "ru" ? I() : r === "uk" ? j() : D()
+    return r === "en" ? d() : r === "pt" ? y() : r === "ch" ? g() : r === "de" ? h() : r === "es" ? k() : r === "fr" ? w() : r === "it" ? M() : r === "jp" ? v() : r === "pl" ? E() : r === "ru" ? I() : r === "uk" ? j() : D()
   };
 export {
   J as m, S as p

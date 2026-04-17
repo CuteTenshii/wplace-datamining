@@ -1,31 +1,31 @@
 import {
-  g as c
-} from "./8FlXsgLB.js";
+  g as t
+} from "./DhZUX4Dk.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "d92995df349756f69cfad78cc6651ba9aa7c7814"
+    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    n.SENTRY_RELEASE = {
+      id: "cdbcf7fbe78b739ecf1b47eab1739b136749bbb3"
     };
-    var r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "e0ff4e4a-9644-4fb0-8d54-8257f281c4f6", e._sentryDebugIdIdentifier = "sentry-dbid-e0ff4e4a-9644-4fb0-8d54-8257f281c4f6")
+    var r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "e0ff4e4a-9644-4fb0-8d54-8257f281c4f6", n._sentryDebugIdIdentifier = "sentry-dbid-e0ff4e4a-9644-4fb0-8d54-8257f281c4f6")
   } catch {}
 })();
-const t = () => "Cancel",
+const c = () => "Cancel",
   u = () => "Cancelar",
   f = () => "取消",
-  a = () => "Abbrechen",
-  l = () => "Cancelar",
+  l = () => "Abbrechen",
+  a = () => "Cancelar",
   o = () => "Annuler",
   s = () => "Annulla",
   i = () => "キャンセル",
   d = () => "Anuluj",
-  _ = () => "Отмена",
-  b = () => "Скасувати",
+  b = () => "Отмена",
+  _ = () => "Скасувати",
   p = () => "Hủy",
-  g = (e = {}, r = {}) => {
-    const n = r.locale ?? c();
-    return n === "en" ? t() : n === "pt" ? u() : n === "ch" ? f() : n === "de" ? a() : n === "es" ? l() : n === "fr" ? o() : n === "it" ? s() : n === "jp" ? i() : n === "pl" ? d() : n === "ru" ? _() : n === "uk" ? b() : p()
+  g = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? c() : e === "pt" ? u() : e === "ch" ? f() : e === "de" ? l() : e === "es" ? a() : e === "fr" ? o() : e === "it" ? s() : e === "jp" ? i() : e === "pl" ? d() : e === "ru" ? b() : e === "uk" ? _() : p()
   };
 export {
   g as c

@@ -1,14 +1,14 @@
 import {
   g as a
-} from "./8FlXsgLB.js";
+} from "./DhZUX4Dk.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "d92995df349756f69cfad78cc6651ba9aa7c7814"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "cdbcf7fbe78b739ecf1b47eab1739b136749bbb3"
     };
-    var e = new n.Error().stack;
-    e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "148ff59f-9fda-447c-a2a3-99accec6281a", n._sentryDebugIdIdentifier = "sentry-dbid-148ff59f-9fda-447c-a2a3-99accec6281a")
+    var n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "148ff59f-9fda-447c-a2a3-99accec6281a", e._sentryDebugIdIdentifier = "sentry-dbid-148ff59f-9fda-447c-a2a3-99accec6281a")
   } catch {}
 })();
 const t = () => "Dashboard",
@@ -17,15 +17,15 @@ const t = () => "Dashboard",
   s = () => "Dashboard",
   u = () => "Panel",
   f = () => "Tableau de bord",
-  c = () => "Pannello",
-  i = () => "ダッシュボード",
-  b = () => "Panel",
+  b = () => "Pannello",
+  c = () => "ダッシュボード",
+  i = () => "Panel",
   l = () => "Панель",
   h = () => "Панель",
   _ = () => "Bảng điều khiển",
-  g = (n = {}, e = {}) => {
-    const r = e.locale ?? a();
-    return r === "en" ? t() : r === "pt" ? d() : r === "ch" ? o() : r === "de" ? s() : r === "es" ? u() : r === "fr" ? f() : r === "it" ? c() : r === "jp" ? i() : r === "pl" ? b() : r === "ru" ? l() : r === "uk" ? h() : _()
+  g = (e = {}, n = {}) => {
+    const r = n.locale ?? a();
+    return r === "en" ? t() : r === "pt" ? d() : r === "ch" ? o() : r === "de" ? s() : r === "es" ? u() : r === "fr" ? f() : r === "it" ? b() : r === "jp" ? c() : r === "pl" ? i() : r === "ru" ? l() : r === "uk" ? h() : _()
   };
 export {
   g as d
