@@ -14,7 +14,7 @@ var b = (t, n, e) => (Kn(t, n, "read from private field"), e ? e.call(t) : n.get
   D = (t, n, e) => n.has(t) ? Nt("Cannot add the same private member more than once") : n instanceof WeakSet ? n.add(t) : n.set(t, e);
 import {
   g as h
-} from "./BYsICFKS.js";
+} from "./CLdytBYG.js";
 import {
   e as B,
   i as M,
@@ -22,19 +22,19 @@ import {
   g as rt,
   x as xt,
   u as we
-} from "./BnI0KJSr.js";
+} from "./CRmpufpB.js";
 import {
   s as Hn,
   c as Yn
-} from "./Dw3sekzs.js";
+} from "./BlpEvlCP.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "fcddd0f6e36106ba60797dbbda80e38f1cbe4c75"
+      id: "454dd064a649ff0efc297a38e6aed3cfb6597516"
     };
     var n = new t.Error().stack;
-    n && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[n] = "3b3b104b-5133-4231-aef7-e69600404bcf", t._sentryDebugIdIdentifier = "sentry-dbid-3b3b104b-5133-4231-aef7-e69600404bcf")
+    n && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[n] = "8a97800e-2ae4-4759-805d-521d9a759b9d", t._sentryDebugIdIdentifier = "sentry-dbid-8a97800e-2ae4-4759-805d-521d9a759b9d")
   } catch {}
 })();
 const Qv = "https://maps.wplace.live",
@@ -5484,17 +5484,19 @@ class Lv {
       const o = i.is_dollar ?? i.isDollar ?? i.currency ?? i.Currency ?? 0;
       let s;
       if (typeof o == "string") {
-        const u = o.toLowerCase();
-        s = u === "usd" || u === "dollar" || u === "true"
+        const d = o.toLowerCase();
+        s = d === "usd" || d === "dollar" || d === "true"
       } else typeof o == "number" ? s = o !== 0 : s = !!o;
-      const l = typeof i.createdAt == "string" ? i.createdAt : i.CreatedAt ? new Date(i.CreatedAt).toISOString() : "";
+      const l = typeof i.createdAt == "string" ? i.createdAt : i.CreatedAt ? new Date(i.CreatedAt).toISOString() : "",
+        u = i.product_variant ?? i.productVariant,
+        _ = u == null || u === "" ? null : Number(u);
       return {
         product_name: String(i.productName ?? i.product_name ?? ""),
         amount: Number(i.amount ?? 0),
         price: Number(i.price ?? 0),
         is_dollar: s,
         created_at: l,
-        product_variant: Number(i.product_variant ?? i.productVariant ?? 0)
+        product_variant: Number.isInteger(_) ? _ : null
       }
     })
   }

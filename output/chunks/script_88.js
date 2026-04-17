@@ -1,36 +1,32 @@
-import "./CRMRbUFN.js";
 import {
-  a as d,
-  z as s
-} from "./BnI0KJSr.js";
-import {
-  d as f
-} from "./CukdjIum.js";
-import {
-  r as n
-} from "./BIwlCVsu.js";
+  g as t
+} from "./CLdytBYG.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "fcddd0f6e36106ba60797dbbda80e38f1cbe4c75"
+      id: "454dd064a649ff0efc297a38e6aed3cfb6597516"
     };
-    var t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "1b4fb409-dc45-450c-8192-69ed77392b06", e._sentryDebugIdIdentifier = "sentry-dbid-1b4fb409-dc45-450c-8192-69ed77392b06")
+    var n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "69d9428a-ccc2-4782-9b8d-56e43e6f6563", e._sentryDebugIdIdentifier = "sentry-dbid-69d9428a-ccc2-4782-9b8d-56e43e6f6563")
   } catch {}
 })();
-var a = s('<svg><path d="M790-56 414-434q-47 11-87.5 33T254-346l-84-86q32-32 69-56t79-42l-90-90q-41 21-76.5 46.5T84-516L0-602q32-32 66.5-57.5T140-708l-84-84 56-56 736 736-58 56Zm-310-64q-42 0-71-29.5T380-220q0-42 29-71t71-29q42 0 71 29t29 71q0 41-29 70.5T480-120Zm236-238-29-29-29-29-144-144q81 8 151.5 41T790-432l-74 74Zm160-158q-77-77-178.5-120.5T480-680q-21 0-40.5 1.5T400-674L298-776q44-12 89.5-18t92.5-6q142 0 265 53t215 145l-84 86Z"></path></svg>');
-
-function c(e, t) {
-  let r = n(t, ["$$slots", "$$events", "$$legacy"]);
-  var o = a();
-  f(o, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...r
-  })), d(e, o)
-}
+const o = () => "Reason",
+  s = () => "Motivo",
+  u = () => "原因",
+  a = () => "Grund",
+  i = () => "Motivo",
+  f = () => "Raison",
+  c = () => "Motivo",
+  d = () => "理由",
+  l = () => "Powód",
+  _ = () => "Причина",
+  p = () => "Причина",
+  b = () => "Lý do",
+  y = (e = {}, n = {}) => {
+    const r = n.locale ?? t();
+    return r === "en" ? o() : r === "pt" ? s() : r === "ch" ? u() : r === "de" ? a() : r === "es" ? i() : r === "fr" ? f() : r === "it" ? c() : r === "jp" ? d() : r === "pl" ? l() : r === "ru" ? _() : r === "uk" ? p() : b()
+  };
 export {
-  c as W
+  y as r
 };

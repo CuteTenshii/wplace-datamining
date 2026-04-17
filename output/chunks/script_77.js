@@ -1,32 +1,36 @@
+import "./DMfdvS07.js";
 import {
-  g as t
-} from "./BYsICFKS.js";
+  a as o,
+  z as s
+} from "./CRmpufpB.js";
+import {
+  d as a
+} from "./Dl1zJT-B.js";
+import {
+  r as d
+} from "./5XOqL6BZ.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "fcddd0f6e36106ba60797dbbda80e38f1cbe4c75"
+      id: "454dd064a649ff0efc297a38e6aed3cfb6597516"
     };
-    var r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "4ee35f3a-97bf-4fcd-ac48-cea911cd0a9e", e._sentryDebugIdIdentifier = "sentry-dbid-4ee35f3a-97bf-4fcd-ac48-cea911cd0a9e")
+    var t = new e.Error().stack;
+    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "e8c6f4a9-d953-412e-9fda-7f40f148172f", e._sentryDebugIdIdentifier = "sentry-dbid-e8c6f4a9-d953-412e-9fda-7f40f148172f")
   } catch {}
 })();
-const o = () => "Loading...",
-  a = () => "Carregando...",
-  d = () => "加载中...",
-  i = () => "Laden...",
-  u = () => "Cargando...",
-  c = () => "Chargement...",
-  f = () => "Caricamento...",
-  s = () => "読み込み中...",
-  l = () => "Ładowanie...",
-  g = () => "Загрузка...",
-  _ = () => "Завантаження...",
-  b = () => "Đang tải...",
-  y = (e = {}, r = {}) => {
-    const n = r.locale ?? t();
-    return n === "en" ? o() : n === "pt" ? a() : n === "ch" ? d() : n === "de" ? i() : n === "es" ? u() : n === "fr" ? c() : n === "it" ? f() : n === "jp" ? s() : n === "pl" ? l() : n === "ru" ? g() : n === "uk" ? _() : b()
-  };
+var n = s('<svg><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"></path></svg>');
+
+function v(e, t) {
+  let f = d(t, ["$$slots", "$$events", "$$legacy"]);
+  var r = n();
+  a(r, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...f
+  })), o(e, r)
+}
 export {
-  y as l
+  v as R
 };

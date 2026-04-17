@@ -1,32 +1,59 @@
-import {
-  g as t
-} from "./BYsICFKS.js";
 (function() {
   try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "fcddd0f6e36106ba60797dbbda80e38f1cbe4c75"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "454dd064a649ff0efc297a38e6aed3cfb6597516"
     };
-    var n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "6f73ead8-0cc2-4bd8-a02a-414b83a59993", r._sentryDebugIdIdentifier = "sentry-dbid-6f73ead8-0cc2-4bd8-a02a-414b83a59993")
+    var a = new e.Error().stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "318a9da5-f9ae-41c4-a6ad-1557223c6f66", e._sentryDebugIdIdentifier = "sentry-dbid-318a9da5-f9ae-41c4-a6ad-1557223c6f66")
   } catch {}
 })();
-const a = () => "Leaderboard",
-  d = () => "Ranking",
-  o = () => "排行榜",
-  s = () => "Bestenliste",
-  u = () => "Clasificación",
-  i = () => "Classement",
-  l = () => "Classifica",
-  c = () => "ランキング",
-  f = () => "Ranking",
-  b = () => "Таблица лидеров",
-  _ = () => "Таблиця лідерів",
-  g = () => "Bảng xếp hạng",
-  y = (r = {}, n = {}) => {
-    const e = n.locale ?? t();
-    return e === "en" ? a() : e === "pt" ? d() : e === "ch" ? o() : e === "de" ? s() : e === "es" ? u() : e === "fr" ? i() : e === "it" ? l() : e === "jp" ? c() : e === "pl" ? f() : e === "ru" ? b() : e === "uk" ? _() : g()
-  };
+const b = e => e;
+
+function h(e) {
+  const a = e - 1;
+  return a * a * a + 1
+}
+
+function m(e, {
+  delay: a = 0,
+  duration: d = 400,
+  easing: s = b
+} = {}) {
+  const i = +getComputedStyle(e).opacity;
+  return {
+    delay: a,
+    duration: d,
+    easing: s,
+    css: o => `opacity: ${o*i}`
+  }
+}
+
+function w(e, {
+  delay: a = 0,
+  duration: d = 400,
+  easing: s = h,
+  axis: i = "y"
+} = {}) {
+  const o = getComputedStyle(e),
+    c = +o.opacity,
+    p = i === "y" ? "height" : "width",
+    l = parseFloat(o[p]),
+    r = i === "y" ? ["top", "bottom"] : ["left", "right"],
+    n = r.map(t => `${t[0].toUpperCase()}${t.slice(1)}`),
+    f = parseFloat(o[`padding${n[0]}`]),
+    y = parseFloat(o[`padding${n[1]}`]),
+    u = parseFloat(o[`margin${n[0]}`]),
+    _ = parseFloat(o[`margin${n[1]}`]),
+    $ = parseFloat(o[`border${n[0]}Width`]),
+    g = parseFloat(o[`border${n[1]}Width`]);
+  return {
+    delay: a,
+    duration: d,
+    easing: s,
+    css: t => `overflow: hidden;opacity: ${Math.min(t*20,1)*c};${p}: ${t*l}px;padding-${r[0]}: ${t*f}px;padding-${r[1]}: ${t*y}px;margin-${r[0]}: ${t*u}px;margin-${r[1]}: ${t*_}px;border-${r[0]}-width: ${t*$}px;border-${r[1]}-width: ${t*g}px;min-${p}: 0`
+  }
+}
 export {
-  y as l
+  m as f, w as s
 };

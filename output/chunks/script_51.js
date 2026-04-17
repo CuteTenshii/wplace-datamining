@@ -1,36 +1,123 @@
-import "./CRMRbUFN.js";
+import "./DMfdvS07.js";
 import {
-  a,
-  z as d
-} from "./BnI0KJSr.js";
+  k as W,
+  p as Y,
+  l as P,
+  f as S,
+  i as D,
+  a as s,
+  b as j,
+  u as x,
+  d as m,
+  aW as _,
+  r as h,
+  t as v,
+  c as k,
+  m as i
+} from "./CRmpufpB.js";
 import {
-  d as s
-} from "./CukdjIum.js";
+  s as b
+} from "./CLTlRpIU.js";
 import {
-  r as f
-} from "./BIwlCVsu.js";
+  i as C
+} from "./DSicYYXP.js";
+import {
+  a as g,
+  c as q,
+  s as d
+} from "./Dl1zJT-B.js";
+import {
+  p as l
+} from "./5XOqL6BZ.js";
+import {
+  P as z
+} from "./CoNu8M-B.js";
+import {
+  u as B
+} from "./BEEeZvRp.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "fcddd0f6e36106ba60797dbbda80e38f1cbe4c75"
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "454dd064a649ff0efc297a38e6aed3cfb6597516"
     };
-    var t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "8af269e9-7313-4311-a4ec-ada10f1df5bc", e._sentryDebugIdIdentifier = "sentry-dbid-8af269e9-7313-4311-a4ec-ada10f1df5bc")
+    var e = new r.Error().stack;
+    e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "864094e2-44a5-42f3-8e46-9093fcefdd09", r._sentryDebugIdIdentifier = "sentry-dbid-864094e2-44a5-42f3-8e46-9093fcefdd09")
   } catch {}
 })();
-var n = d('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
 
-function b(e, t) {
-  let o = f(t, ["$$slots", "$$events", "$$legacy"]);
-  var r = n();
-  s(r, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...o
-  })), a(e, r)
+function R(r) {
+  return `/dashboard/users?id=${encodeURIComponent(String(r))}`
 }
+
+function F(r) {
+  typeof window > "u" || window.open(R(r), "_blank", "noopener,noreferrer")
+}
+var G = k('<span role="link" tabindex="0"><!></span>'),
+  H = k('<a target="_blank" rel="noopener noreferrer"><!></a>'),
+  J = k("<span><!></span>");
+
+function te(r, e) {
+  Y(e, !0);
+  let p = l(e, "mode", 3, "anchor"),
+    y = l(e, "class", 3, ""),
+    I = l(e, "linkClass", 19, y),
+    U = l(e, "textClass", 19, y);
+  const L = x(() => e.userId != null && e.userId > 0 && B.hasAnyPermission(z.dashboard.users)),
+    N = x(() => e.userId == null ? "" : R(e.userId));
+
+  function f(a) {
+    a.stopPropagation()
+  }
+
+  function w(a) {
+    e.userId == null || e.userId <= 0 || (a.preventDefault(), a.stopPropagation(), F(e.userId))
+  }
+
+  function T(a) {
+    a.key !== "Enter" && a.key !== " " || w(a)
+  }
+  var E = P(),
+    A = S(E);
+  {
+    var K = a => {
+        var t = P(),
+          u = S(t);
+        {
+          var O = o => {
+              var n = G(),
+                c = m(n);
+              b(c, () => e.children ?? _), h(n), v(() => {
+                g(n, 1, `cursor-pointer hover:underline ${I()}`), d(n, "title", e.title)
+              }), i("pointerdown", n, f), i("click", n, w), i("keydown", n, T), s(o, n)
+            },
+            V = o => {
+              var n = H(),
+                c = m(n);
+              b(c, () => e.children ?? _), h(n), v(() => {
+                g(n, 1, `cursor-pointer hover:underline ${I()}`), d(n, "href", D(N)), d(n, "title", e.title)
+              }), i("pointerdown", n, f), i("click", n, f), s(o, n)
+            };
+          C(u, o => {
+            p() === "inline" ? o(O) : o(V, !1)
+          })
+        }
+        s(a, t)
+      },
+      M = a => {
+        var t = J(),
+          u = m(t);
+        b(u, () => e.children ?? _), h(t), v(() => {
+          g(t, 1, q(U())), d(t, "title", e.title)
+        }), s(a, t)
+      };
+    C(A, a => {
+      D(L) ? a(K) : a(M, !1)
+    })
+  }
+  s(r, E), j()
+}
+W(["pointerdown", "click", "keydown"]);
 export {
-  b as L
+  te as S
 };

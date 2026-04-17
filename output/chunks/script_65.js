@@ -1,59 +1,48 @@
+import {
+  g as s
+} from "./CLdytBYG.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "fcddd0f6e36106ba60797dbbda80e38f1cbe4c75"
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "454dd064a649ff0efc297a38e6aed3cfb6597516"
     };
-    var a = new e.Error().stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "318a9da5-f9ae-41c4-a6ad-1557223c6f66", e._sentryDebugIdIdentifier = "sentry-dbid-318a9da5-f9ae-41c4-a6ad-1557223c6f66")
+    var n = new r.Error().stack;
+    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "ef164a17-cff1-4d3e-8a31-7d29d77617fa", r._sentryDebugIdIdentifier = "sentry-dbid-ef164a17-cff1-4d3e-8a31-7d29d77617fa")
   } catch {}
 })();
-const b = e => e;
-
-function h(e) {
-  const a = e - 1;
-  return a * a * a + 1
-}
-
-function m(e, {
-  delay: a = 0,
-  duration: n = 400,
-  easing: s = b
-} = {}) {
-  const i = +getComputedStyle(e).opacity;
-  return {
-    delay: a,
-    duration: n,
-    easing: s,
-    css: o => `opacity: ${o*i}`
-  }
-}
-
-function w(e, {
-  delay: a = 0,
-  duration: n = 400,
-  easing: s = h,
-  axis: i = "y"
-} = {}) {
-  const o = getComputedStyle(e),
-    c = +o.opacity,
-    p = i === "y" ? "height" : "width",
-    l = parseFloat(o[p]),
-    r = i === "y" ? ["top", "bottom"] : ["left", "right"],
-    d = r.map(t => `${t[0].toUpperCase()}${t.slice(1)}`),
-    f = parseFloat(o[`padding${d[0]}`]),
-    y = parseFloat(o[`padding${d[1]}`]),
-    u = parseFloat(o[`margin${d[0]}`]),
-    _ = parseFloat(o[`margin${d[1]}`]),
-    $ = parseFloat(o[`border${d[0]}Width`]),
-    g = parseFloat(o[`border${d[1]}Width`]);
-  return {
-    delay: a,
-    duration: n,
-    easing: s,
-    css: t => `overflow: hidden;opacity: ${Math.min(t*20,1)*c};${p}: ${t*l}px;padding-${r[0]}: ${t*f}px;padding-${r[1]}: ${t*y}px;margin-${r[0]}: ${t*u}px;margin-${r[1]}: ${t*_}px;border-${r[0]}-width: ${t*$}px;border-${r[1]}-width: ${t*g}px;min-${p}: 0`
-  }
-}
+const t = () => "Users banned successfully",
+  u = () => "Usuários banidos com sucesso",
+  o = () => "用户已成功封禁",
+  i = () => "Benutzer erfolgreich gebannt",
+  c = () => "Usuarios baneados correctamente",
+  d = () => "Utilisateurs bannis avec succès",
+  a = () => "Utenti bannati con successo",
+  f = () => "ユーザーをBANしました。",
+  _ = () => "Użytkownicy zostali pomyślnie zbanowani",
+  l = () => "Пользователи успешно забанены",
+  b = () => "Користувачів успішно заблоковано",
+  m = () => "Đã cấm người dùng thành công",
+  T = (r = {}, n = {}) => {
+    const e = n.locale ?? s();
+    return e === "en" ? t() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? d() : e === "it" ? a() : e === "jp" ? f() : e === "pl" ? _() : e === "ru" ? l() : e === "uk" ? b() : m()
+  },
+  p = () => "Users timeouted successfully",
+  g = () => "Usuários suspensos com sucesso",
+  y = () => "用户已成功禁言",
+  h = () => "Benutzer erfolgreich mit Timeout belegt",
+  U = () => "Usuarios suspendidos correctamente",
+  w = () => "Utilisateurs suspendus avec succès",
+  k = () => "Utenti sospesi con successo",
+  z = () => "ユーザーをタイムアウトしました。",
+  v = () => "Użytkownicy zostali pomyślnie zawieszeni",
+  E = () => "Пользователям успешно выдан тайм-аут",
+  I = () => "Користувачам успішно призначено тайм-аут",
+  j = () => "Đã tạm khóa người dùng thành công",
+  B = (r = {}, n = {}) => {
+    const e = n.locale ?? s();
+    return e === "en" ? p() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? h() : e === "es" ? U() : e === "fr" ? w() : e === "it" ? k() : e === "jp" ? z() : e === "pl" ? v() : e === "ru" ? E() : e === "uk" ? I() : j()
+  };
 export {
-  m as f, w as s
+  B as a, T as u
 };

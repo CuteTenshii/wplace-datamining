@@ -1,32 +1,36 @@
+import "./DMfdvS07.js";
 import {
-  g as t
-} from "./BYsICFKS.js";
+  a as o,
+  z as s
+} from "./CRmpufpB.js";
+import {
+  d
+} from "./Dl1zJT-B.js";
+import {
+  r as f
+} from "./5XOqL6BZ.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "fcddd0f6e36106ba60797dbbda80e38f1cbe4c75"
+      id: "454dd064a649ff0efc297a38e6aed3cfb6597516"
     };
     var r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "eb801445-f1e6-4990-b03b-4177cb39b0e4", e._sentryDebugIdIdentifier = "sentry-dbid-eb801445-f1e6-4990-b03b-4177cb39b0e4")
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "939e7355-c62f-4c3d-94b2-34aaea47bcda", e._sentryDebugIdIdentifier = "sentry-dbid-939e7355-c62f-4c3d-94b2-34aaea47bcda")
   } catch {}
 })();
-const d = () => "Banned",
-  b = () => "Banido",
-  a = () => "已封禁",
-  u = () => "Gebannt",
-  o = () => "Baneado",
-  s = () => "Banni",
-  f = () => "Bannato",
-  i = () => "BAN済み",
-  c = () => "Zbanowany",
-  l = () => "Забанен",
-  _ = () => "Заблоковано",
-  p = () => "Đã bị cấm",
-  g = (e = {}, r = {}) => {
-    const n = r.locale ?? t();
-    return n === "en" ? d() : n === "pt" ? b() : n === "ch" ? a() : n === "de" ? u() : n === "es" ? o() : n === "fr" ? s() : n === "it" ? f() : n === "jp" ? i() : n === "pl" ? c() : n === "ru" ? l() : n === "uk" ? _() : p()
-  };
+var n = s('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
+
+function b(e, r) {
+  let t = f(r, ["$$slots", "$$events", "$$legacy"]);
+  var a = n();
+  d(a, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...t
+  })), o(e, a)
+}
 export {
-  g as b
+  b as A
 };

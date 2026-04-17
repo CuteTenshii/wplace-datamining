@@ -1,32 +1,32 @@
 import {
-  g as e
-} from "./BYsICFKS.js";
+  g as t
+} from "./CLdytBYG.js";
 (function() {
   try {
-    var f = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    f.SENTRY_RELEASE = {
-      id: "fcddd0f6e36106ba60797dbbda80e38f1cbe4c75"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "454dd064a649ff0efc297a38e6aed3cfb6597516"
     };
-    var r = new f.Error().stack;
-    r && (f._sentryDebugIds = f._sentryDebugIds || {}, f._sentryDebugIds[r] = "b9b33e77-4f93-4cbd-a901-f05ce83847b9", f._sentryDebugIdIdentifier = "sentry-dbid-b9b33e77-4f93-4cbd-a901-f05ce83847b9")
+    var r = new e.Error().stack;
+    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "4ee35f3a-97bf-4fcd-ac48-cea911cd0a9e", e._sentryDebugIdIdentifier = "sentry-dbid-4ee35f3a-97bf-4fcd-ac48-cea911cd0a9e")
   } catch {}
 })();
-const n = () => "Staff",
-  s = () => "Equipe",
-  u = () => "工作人员",
-  a = () => "Staff",
-  o = () => "Staff",
-  c = () => "Staff",
-  i = () => "Staff",
-  d = () => "スタッフ",
-  b = () => "Staff",
-  l = () => "Персонал",
-  _ = () => "Персонал",
-  p = () => "Staff",
-  y = (f = {}, r = {}) => {
-    const t = r.locale ?? e();
-    return t === "en" ? n() : t === "pt" ? s() : t === "ch" ? u() : t === "de" ? a() : t === "es" ? o() : t === "fr" ? c() : t === "it" ? i() : t === "jp" ? d() : t === "pl" ? b() : t === "ru" ? l() : t === "uk" ? _() : p()
+const o = () => "Loading...",
+  a = () => "Carregando...",
+  i = () => "加载中...",
+  d = () => "Laden...",
+  u = () => "Cargando...",
+  f = () => "Chargement...",
+  c = () => "Caricamento...",
+  s = () => "読み込み中...",
+  l = () => "Ładowanie...",
+  g = () => "Загрузка...",
+  _ = () => "Завантаження...",
+  p = () => "Đang tải...",
+  y = (e = {}, r = {}) => {
+    const n = r.locale ?? t();
+    return n === "en" ? o() : n === "pt" ? a() : n === "ch" ? i() : n === "de" ? d() : n === "es" ? u() : n === "fr" ? f() : n === "it" ? c() : n === "jp" ? s() : n === "pl" ? l() : n === "ru" ? g() : n === "uk" ? _() : p()
   };
 export {
-  y as s
+  y as l
 };

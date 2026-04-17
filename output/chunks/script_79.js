@@ -1,32 +1,32 @@
 import {
-  g as r
-} from "./BYsICFKS.js";
+  g as e
+} from "./CLdytBYG.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "fcddd0f6e36106ba60797dbbda80e38f1cbe4c75"
+    var f = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    f.SENTRY_RELEASE = {
+      id: "454dd064a649ff0efc297a38e6aed3cfb6597516"
     };
-    var a = new e.Error().stack;
-    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "fe83abd1-5077-4cc1-8f46-ccf36b0aea9c", e._sentryDebugIdIdentifier = "sentry-dbid-fe83abd1-5077-4cc1-8f46-ccf36b0aea9c")
+    var r = new f.Error().stack;
+    r && (f._sentryDebugIds = f._sentryDebugIds || {}, f._sentryDebugIds[r] = "b9b33e77-4f93-4cbd-a901-f05ce83847b9", f._sentryDebugIdIdentifier = "sentry-dbid-b9b33e77-4f93-4cbd-a901-f05ce83847b9")
   } catch {}
 })();
-const t = () => "Ban appeal",
-  c = () => "Revisão de banimento",
-  p = () => "封禁申诉",
-  o = () => "Bann-Einspruch",
-  u = () => "Apelación de ban",
-  s = () => "Recours de bannissement",
-  i = () => "Ricorso contro il ban",
-  b = () => "BANの異議申立て",
-  f = () => "Odwołanie od bana",
-  l = () => "Апелляция на бан",
-  d = () => "Апеляція на бан",
-  _ = () => "Kháng cáo lệnh cấm",
-  y = (e = {}, a = {}) => {
-    const n = a.locale ?? r();
-    return n === "en" ? t() : n === "pt" ? c() : n === "ch" ? p() : n === "de" ? o() : n === "es" ? u() : n === "fr" ? s() : n === "it" ? i() : n === "jp" ? b() : n === "pl" ? f() : n === "ru" ? l() : n === "uk" ? d() : _()
+const n = () => "Staff",
+  s = () => "Equipe",
+  u = () => "工作人员",
+  a = () => "Staff",
+  o = () => "Staff",
+  i = () => "Staff",
+  c = () => "Staff",
+  d = () => "スタッフ",
+  b = () => "Staff",
+  l = () => "Персонал",
+  _ = () => "Персонал",
+  p = () => "Staff",
+  y = (f = {}, r = {}) => {
+    const t = r.locale ?? e();
+    return t === "en" ? n() : t === "pt" ? s() : t === "ch" ? u() : t === "de" ? a() : t === "es" ? o() : t === "fr" ? i() : t === "it" ? c() : t === "jp" ? d() : t === "pl" ? b() : t === "ru" ? l() : t === "uk" ? _() : p()
   };
 export {
-  y as b
+  y as s
 };

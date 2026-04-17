@@ -1,112 +1,138 @@
+import "./DMfdvS07.js";
 import {
-  g as n
-} from "./BYsICFKS.js";
+  a as i,
+  z as B,
+  k as K,
+  p as Q,
+  l as E,
+  f as P,
+  i as S,
+  b as U,
+  u as q,
+  d as g,
+  aW as _,
+  r as b,
+  t as h,
+  c as y,
+  m as s
+} from "./CRmpufpB.js";
+import {
+  d as V,
+  a as p,
+  c as W,
+  s as f
+} from "./Dl1zJT-B.js";
+import {
+  r as Y,
+  p as c
+} from "./5XOqL6BZ.js";
+import {
+  s as w
+} from "./CLTlRpIU.js";
+import {
+  i as x
+} from "./DSicYYXP.js";
+import {
+  P as j
+} from "./CoNu8M-B.js";
+import {
+  u as F
+} from "./BEEeZvRp.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "fcddd0f6e36106ba60797dbbda80e38f1cbe4c75"
+      id: "454dd064a649ff0efc297a38e6aed3cfb6597516"
     };
     var e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "beeb1bd0-45b2-44b3-9576-d71f2a2dc0fd", t._sentryDebugIdIdentifier = "sentry-dbid-beeb1bd0-45b2-44b3-9576-d71f2a2dc0fd")
+    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "a323a2bf-37de-4015-add6-f637b5f60e82", t._sentryDebugIdIdentifier = "sentry-dbid-a323a2bf-37de-4015-add6-f637b5f60e82")
   } catch {}
 })();
-const s = () => "Last pixel",
-  u = () => "Último pixel",
-  i = () => "最后一个像素",
-  o = () => "Letzter Pixel",
-  c = () => "Último píxel",
-  a = () => "Dernier pixel",
-  l = () => "Ultimo pixel",
-  _ = () => "最後のピクセル",
-  f = () => "Ostatni piksel",
-  p = () => "Последний пиксель",
-  d = () => "Останній піксель",
-  h = () => "Pixel cuối cùng",
-  Sr = (t = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? s() : r === "pt" ? u() : r === "ch" ? i() : r === "de" ? o() : r === "es" ? c() : r === "fr" ? a() : r === "it" ? l() : r === "jp" ? _() : r === "pl" ? f() : r === "ru" ? p() : r === "uk" ? d() : h()
-  },
-  v = () => "Load more",
-  m = () => "Carregar mais",
-  b = () => "加载更多",
-  x = () => "Mehr laden",
-  g = () => "Cargar más",
-  k = () => "Charger plus",
-  j = () => "Carica altro",
-  S = () => "さらに読み込む",
-  y = () => "Wczytaj więcej",
-  z = () => "Загрузить ещё",
-  w = () => "Завантажити ще",
-  C = () => "Tải thêm",
-  yr = (t = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? v() : r === "pt" ? m() : r === "ch" ? b() : r === "de" ? x() : r === "es" ? g() : r === "fr" ? k() : r === "it" ? j() : r === "jp" ? S() : r === "pl" ? y() : r === "ru" ? z() : r === "uk" ? w() : C()
-  },
-  E = () => "Save",
-  L = () => "Salvar",
-  T = () => "保存",
-  D = () => "Speichern",
-  I = () => "Guardar",
-  V = () => "Enregistrer",
-  B = () => "Salva",
-  R = () => "保存",
-  G = () => "Zapisz",
-  M = () => "Сохранить",
-  O = () => "Зберегти",
-  P = () => "Lưu",
-  zr = (t = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? E() : r === "pt" ? L() : r === "ch" ? T() : r === "de" ? D() : r === "es" ? I() : r === "fr" ? V() : r === "it" ? B() : r === "jp" ? R() : r === "pl" ? G() : r === "ru" ? M() : r === "uk" ? O() : P()
-  },
-  W = () => "Search",
-  A = () => "Buscar",
-  N = () => "搜索",
-  U = () => "Suchen",
-  Y = () => "Buscar",
-  Z = () => "Rechercher",
-  q = () => "Cerca",
-  F = () => "検索",
-  H = () => "Szukaj",
-  J = () => "Поиск",
-  K = () => "Пошук",
-  Q = () => "Tìm kiếm",
-  wr = (t = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? W() : r === "pt" ? A() : r === "ch" ? N() : r === "de" ? U() : r === "es" ? Y() : r === "fr" ? Z() : r === "it" ? q() : r === "jp" ? F() : r === "pl" ? H() : r === "ru" ? J() : r === "uk" ? K() : Q()
-  },
-  X = () => "Select the report reason",
-  $ = () => "Selecione o motivo da denúncia",
-  rr = () => "选择举报原因",
-  er = () => "Grund für die Meldung auswählen",
-  tr = () => "Selecciona el motivo del reporte",
-  nr = () => "Sélectionnez la raison du signalement",
-  sr = () => "Seleziona il motivo della segnalazione",
-  ur = () => "通報理由を選択",
-  ir = () => "Wybierz powód zgłoszenia",
-  or = () => "Выберите причину жалобы",
-  cr = () => "Виберіть причину скарги",
-  ar = () => "Chọn lý do báo cáo",
-  Cr = (t = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? X() : r === "pt" ? $() : r === "ch" ? rr() : r === "de" ? er() : r === "es" ? tr() : r === "fr" ? nr() : r === "it" ? sr() : r === "jp" ? ur() : r === "pl" ? ir() : r === "ru" ? or() : r === "uk" ? cr() : ar()
-  },
-  lr = () => "Visit",
-  _r = () => "Visitar",
-  fr = () => "访问",
-  pr = () => "Besuchen",
-  dr = () => "Visitar",
-  hr = () => "Visiter",
-  vr = () => "Visita",
-  mr = () => "訪問",
-  br = () => "Odwiedź",
-  xr = () => "Перейти",
-  gr = () => "Перейти",
-  kr = () => "Thăm",
-  Er = (t = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? lr() : r === "pt" ? _r() : r === "ch" ? fr() : r === "de" ? pr() : r === "es" ? dr() : r === "fr" ? hr() : r === "it" ? vr() : r === "jp" ? mr() : r === "pl" ? br() : r === "ru" ? xr() : r === "uk" ? gr() : kr()
-  };
+var G = B('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
+
+function se(t, e) {
+  let d = Y(e, ["$$slots", "$$events", "$$legacy"]);
+  var l = G();
+  V(l, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...d
+  })), i(t, l)
+}
+
+function D(t) {
+  return `/dashboard/alliances?id=${encodeURIComponent(String(t))}`
+}
+
+function H(t) {
+  typeof window > "u" || window.open(D(t), "_blank", "noopener,noreferrer")
+}
+var J = y('<span role="link" tabindex="0"><!></span>'),
+  X = y('<a target="_blank" rel="noopener noreferrer"><!></a>'),
+  $ = y("<span><!></span>");
+
+function de(t, e) {
+  Q(e, !0);
+  let d = c(e, "mode", 3, "anchor"),
+    l = c(e, "class", 3, ""),
+    I = c(e, "linkClass", 19, l),
+    C = c(e, "textClass", 19, l);
+  const A = q(() => e.allianceId != null && e.allianceId > 0 && F.hasAnyPermission(j.dashboard.alliances)),
+    L = q(() => e.allianceId == null ? "" : D(e.allianceId));
+
+  function u(n) {
+    n.stopPropagation()
+  }
+
+  function k(n) {
+    e.allianceId == null || e.allianceId <= 0 || (n.preventDefault(), n.stopPropagation(), H(e.allianceId))
+  }
+
+  function R(n) {
+    n.key !== "Enter" && n.key !== " " || k(n)
+  }
+  var T = E(),
+    N = P(T);
+  {
+    var M = n => {
+        var r = E(),
+          m = P(r);
+        {
+          var Z = o => {
+              var a = J(),
+                v = g(a);
+              w(v, () => e.children ?? _), b(a), h(() => {
+                p(a, 1, `cursor-pointer hover:underline ${I()}`), f(a, "title", e.title)
+              }), s("pointerdown", a, u), s("click", a, k), s("keydown", a, R), i(o, a)
+            },
+            z = o => {
+              var a = X(),
+                v = g(a);
+              w(v, () => e.children ?? _), b(a), h(() => {
+                p(a, 1, `cursor-pointer hover:underline ${I()}`), f(a, "href", S(L)), f(a, "title", e.title)
+              }), s("pointerdown", a, u), s("click", a, u), i(o, a)
+            };
+          x(m, o => {
+            d() === "inline" ? o(Z) : o(z, !1)
+          })
+        }
+        i(n, r)
+      },
+      O = n => {
+        var r = $(),
+          m = g(r);
+        w(m, () => e.children ?? _), b(r), h(() => {
+          p(r, 1, W(C())), f(r, "title", e.title)
+        }), i(n, r)
+      };
+    x(N, n => {
+      S(A) ? n(M) : n(O, !1)
+    })
+  }
+  i(t, T), U()
+}
+K(["pointerdown", "click", "keydown"]);
 export {
-  zr as a, Cr as b, yr as c, Sr as l, wr as s, Er as v
+  se as L, de as S
 };

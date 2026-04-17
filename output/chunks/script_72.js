@@ -1,285 +1,208 @@
-import "./CRMRbUFN.js";
 import {
-  o as xt
-} from "./e1gkcv1d.js";
-import {
-  a as m,
-  z as yt,
-  k as kt,
-  p as Et,
-  h,
-  d as e,
-  r as a,
-  s as o,
-  n as q,
-  t as x,
-  b as It,
-  e as y,
-  f as J,
-  i as t,
-  m as G,
-  c as E,
-  u as Q,
-  l as At
-} from "./BnI0KJSr.js";
-import {
-  s as v
-} from "./BgZi3t1R.js";
-import {
-  i as k
-} from "./Cn5mRW5A.js";
-import {
-  k as Tt
-} from "./IFaVLBGa.js";
-import {
-  d as Bt,
-  s as N,
-  a as X,
-  c as Z
-} from "./CukdjIum.js";
-import {
-  r as Ct,
-  p as Lt
-} from "./BIwlCVsu.js";
-import {
-  o as Mt,
-  A as tt,
-  P as St,
-  a as $t,
-  p as Ft,
-  q as Nt
-} from "./ap-Ru7Jw.js";
-import {
-  t as Rt
-} from "./CV5Q-oi_.js";
-import {
-  T as Dt
-} from "./S1qp7OlX.js";
-import "./BYsICFKS.js";
-import {
-  b as Ut,
-  t as Pt,
-  p as Vt,
-  a as Wt,
-  c as zt,
-  l as Ot,
-  d as Gt,
-  e as Kt,
-  m as jt,
-  w as Ht,
-  f as Yt,
-  o as qt
-} from "./DKs2sCF9.js";
-import {
-  L as Jt
-} from "./CA5XIqIk.js";
+  g as t
+} from "./CLdytBYG.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "fcddd0f6e36106ba60797dbbda80e38f1cbe4c75"
+      id: "454dd064a649ff0efc297a38e6aed3cfb6597516"
     };
-    var l = new r.Error().stack;
-    l && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[l] = "1fe9d281-769a-41b7-a074-a023628b8219", r._sentryDebugIdIdentifier = "sentry-dbid-1fe9d281-769a-41b7-a074-a023628b8219")
+    var e = new r.Error().stack;
+    e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "5733d867-f29b-47aa-9528-17b6c5bf14d1", r._sentryDebugIdIdentifier = "sentry-dbid-5733d867-f29b-47aa-9528-17b6c5bf14d1")
   } catch {}
 })();
-const Qt = /; wv\)|FBAN|FBAV|Instagram|BytedanceWebview|musical_ly|Line\/|Snapchat|Twitter|MicroMessenger/i;
-
-function Xt() {
-  return et() ? !1 : Qt.test(navigator.userAgent)
-}
-
-function et() {
-  return !!(window != null && window.ReactNativeWebView)
-}
-
-function be() {
-  const r = navigator.userAgent,
-    l = navigator.vendor;
-  return /Chrome/.test(r) && /Google Inc/.test(l) ? "Chrome" : /Safari/.test(r) && /Apple Computer/.test(l) ? "Safari" : /Firefox/.test(r) ? "Firefox" : /Edge/.test(r) ? "Edge" : /Opera|OPR/.test(r) ? "Opera" : "Unknown"
-}
-var Zt = yt('<svg><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" fill="#4285F4"></path><path d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" fill="#34A853"></path><path d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" fill="#FBBC05"></path><path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" fill="#EB4335"></path></svg>');
-
-function te(r, l) {
-  let I = Ct(l, ["$$slots", "$$events", "$$legacy"]);
-  var g = Zt();
-  Bt(g, () => ({
-    viewBox: "0 0 256 262",
-    xmlns: "http://www.w3.org/2000/svg",
-    ...I
-  })), m(r, g)
-}
-var ee = E('<div role="alert" class="border-warning bg-warning/10 flex w-full flex-col gap-3 rounded-lg border p-4"><div class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="text-warning mt-0.5 size-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg> <div><h3 class="text-sm font-bold"> </h3> <p class="text-xs opacity-70"> </p></div></div> <button class="btn btn-sm btn-warning w-full"> </button></div>'),
-  ae = E('<div class="text-error text-sm"> </div>'),
-  re = E('<!> <a><!> </a> <div class="mt-2 flex flex-col items-center gap-1"><!> <!></div>', 1),
-  se = E('<p class="text-base-content/60 mt-8 text-center text-xs"> <a> </a>.</p>'),
-  ie = E('<div><div class="flex justify-center py-4"><!></div> <div class="flex flex-col items-center gap-2 pt-6"><!></div> <p class="text-base-content/60 mt-2 text-center text-xs"> <a class="font-medium" target="_blank"> </a>, <a class="font-medium" href="/terms/privacy" target="_blank"> </a> <a class="font-medium" href="/terms/community-guidelines" target="_blank"> </a>.</p> <!></div>');
-
-function xe(r, l) {
-  Et(l, !0);
-  let I = Lt(l, "showTwitchMigration", 3, !0),
-    g = y(""),
-    A = y(0),
-    T = y(void 0),
-    B = y(void 0),
-    C = y(!1);
-  const w = Q(() => !tt || t(T) && t(B)),
-    at = Xt(),
-    rt = et();
-  xt(() => {
-    Mt().then(s => {
-      h(B, s, !0)
-    })
-  });
-
-  function K(s, c, f) {
-    const i = new URLSearchParams;
-    return i.set("sid", c), i.set("fp", f), l.redirect && i.set("r", l.redirect), rt && i.set("mobile", "1"), `${St}/auth/${s}?${i}`
-  }
-
-  function st() {
-    const s = window.location.origin,
-      c = navigator.userAgent;
-    if (/Android/i.test(c)) {
-      const f = s.replace(/^https?:\/\//, "");
-      window.location.href = "intent://" + f + "#Intent;scheme=https;action=android.intent.action.VIEW;end"
-    } else window.open(s, "_system")
-  }
-  var R = ie(),
-    D = e(R),
-    it = e(D);
-  Jt(it, {
-    hasText: !0
-  }), a(D);
-  var U = o(D, 2),
-    ot = e(U);
-  {
-    var nt = s => {
-      var c = re(),
-        f = J(c);
-      {
-        var i = n => {
-          var d = ee(),
-            _ = e(d),
-            $ = o(e(_), 2),
-            b = e($),
-            z = e(b, !0);
-          a(b);
-          var F = o(b, 2),
-            mt = e(F, !0);
-          a(F), a($), a(_);
-          var O = o(_, 2),
-            gt = e(O, !0);
-          a(O), a(d), x((ht, wt, bt) => {
-            v(z, ht), v(mt, wt), v(gt, bt)
-          }, [() => Ht(), () => Yt(), () => qt()]), G("click", O, st), m(n, d)
-        };
-        k(f, n => {
-          at && n(i)
-        })
-      }
-      var p = o(f, 2),
-        u = e(p);
-      te(u, {
-        class: "mr-1 size-5"
-      });
-      var W = o(u);
-      a(p);
-      var M = o(p, 2),
-        S = e(M);
-      {
-        var pt = n => {
-          var d = At(),
-            _ = J(d);
-          Tt(_, () => t(A), $ => {
-            {
-              let b = Q(() => Nt.trim());
-              Dt($, {
-                get siteKey() {
-                  return t(b)
-                },
-                callback: z => {
-                  $t.postCaptchaSession({
-                    provider: "turnstile",
-                    token: z
-                  }).then(F => {
-                    h(T, F.sessionId, !0)
-                  }).catch(() => {
-                    h(g, Ft(), !0), h(A, t(A) + 1)
-                  })
-                }
-              })
-            }
-          }), m(n, d)
-        };
-        k(S, n => {
-          tt && t(A) <= 3 && n(pt)
-        })
-      }
-      var ut = o(S, 2);
-      {
-        var _t = n => {
-          var d = ae(),
-            _ = e(d, !0);
-          a(d), x(() => v(_, t(g))), m(n, d)
-        };
-        k(ut, n => {
-          t(g) && n(_t)
-        })
-      }
-      a(M), x((n, d) => {
-        X(p, 1, Z({
-          "btn btn-lg bg-base-100 w-full text-base": !0,
-          "bg-base-content/10 pointer-events-none": !t(w) || t(C)
-        })), N(p, "href", n), v(W, ` ${d??""}`)
-      }, [() => t(w) ? K("google", t(T), t(B)) : "#", () => Ot({
-        name: "Google"
-      })]), G("click", p, async () => {
-        h(C, !0)
-      }), m(s, c)
-    };
-    k(ot, s => {
-      s(nt, !1)
-    })
-  }
-  a(U);
-  var P = o(U, 2),
-    j = e(P),
-    L = o(j),
-    lt = e(L, !0);
-  a(L);
-  var V = o(L, 2),
-    ct = e(V, !0);
-  a(V);
-  var H = o(V),
-    Y = o(H),
-    dt = e(Y, !0);
-  a(Y), q(), a(P);
-  var vt = o(P, 2);
-  {
-    var ft = s => {
-      var c = se(),
-        f = e(c),
-        i = o(f),
-        p = e(i, !0);
-      a(i), q(), a(c), x((u, W, M, S) => {
-        v(f, `${u??""} `), X(i, 1, Z({
-          "font-medium": !0,
-          "tooltip cursor-not-allowed opacity-60": !t(w) || t(C)
-        })), N(i, "data-tip", W), N(i, "href", M), v(p, S)
-      }, [() => Gt(), () => Kt(), () => t(w) ? K("twitch", t(T), t(B)) : "#", () => jt()]), G("click", i, async u => {
-        t(w) ? h(C, !0) : u.preventDefault()
-      }), m(s, c)
-    };
-    k(vt, s => {
-      I() && s(ft)
-    })
-  }
-  a(R), x((s, c, f, i, p, u) => {
-    v(j, `${s??""} `), N(L, "href", c), v(lt, f), v(ct, i), v(H, ` ${p??""} `), v(dt, u)
-  }, [() => Ut(), Rt, () => Pt(), () => Vt(), () => Wt(), () => zt()]), m(r, R), It()
-}
-kt(["click"]);
+const i = () => "and",
+  o = () => "e",
+  u = () => "和",
+  c = () => "und",
+  _ = () => "y",
+  a = () => "et",
+  s = () => "e",
+  l = () => "と",
+  f = () => "i",
+  p = () => "и",
+  w = () => "та",
+  d = () => "và",
+  Or = (r = {}, e = {}) => {
+    const n = e.locale ?? t();
+    return n === "en" ? i() : n === "pt" ? o() : n === "ch" ? u() : n === "de" ? c() : n === "es" ? _() : n === "fr" ? a() : n === "it" ? s() : n === "jp" ? l() : n === "pl" ? f() : n === "ru" ? p() : n === "uk" ? w() : d()
+  },
+  g = () => "By continuing, you agree to our",
+  h = () => "Ao continuar, você concorda com nossos",
+  v = () => "继续即表示你同意我们的",
+  m = () => "Wenn du fortfährst, stimmst du unseren",
+  y = () => "Al continuar, aceptas nuestra",
+  b = () => "En continuant, vous acceptez nos",
+  k = () => "Continuando, accetti i nostri",
+  z = () => "続行すると、以下に同意したものとみなされます:",
+  j = () => "Kontynuując, akceptujesz nasze",
+  C = () => "Продолжая, вы соглашаетесь с нашими",
+  T = () => "Продовжуючи, ви погоджуєтеся з нашими",
+  W = () => "Khi tiếp tục, bạn đồng ý với",
+  Vr = (r = {}, e = {}) => {
+    const n = e.locale ?? t();
+    return n === "en" ? g() : n === "pt" ? h() : n === "ch" ? v() : n === "de" ? m() : n === "es" ? y() : n === "fr" ? b() : n === "it" ? k() : n === "jp" ? z() : n === "pl" ? j() : n === "ru" ? C() : n === "uk" ? T() : W()
+  },
+  A = () => "Captcha not solved",
+  $ = () => "Captcha não resolvido",
+  S = () => "验证码未通过",
+  E = () => "Captcha nicht gelöst",
+  P = () => "Captcha no resuelto",
+  D = () => "Captcha non résolu",
+  I = () => "Captcha non risolto",
+  M = () => "CAPTCHAが解決されていません",
+  N = () => "CAPTCHA nierozwiązana",
+  R = () => "Капча не решена",
+  B = () => "Капча не розв'язана",
+  H = () => "Captcha chưa được giải",
+  qr = (r = {}, e = {}) => {
+    const n = e.locale ?? t();
+    return n === "en" ? A() : n === "pt" ? $() : n === "ch" ? S() : n === "de" ? E() : n === "es" ? P() : n === "fr" ? D() : n === "it" ? I() : n === "jp" ? M() : n === "pl" ? N() : n === "ru" ? R() : n === "uk" ? B() : H()
+  },
+  K = () => "Community Guidelines",
+  L = () => "Diretrizes da Comunidade",
+  O = () => "社区准则",
+  V = () => "Community-Richtlinien",
+  q = () => "Normas de la Comunidad",
+  Y = () => "Règles de la communauté",
+  Z = () => "Linee guida della community",
+  x = () => "コミュニティガイドライン",
+  F = () => "Wytyczne Społeczności",
+  G = () => "Правила сообщества",
+  J = () => "Правила спільноти",
+  Q = () => "Nguyên tắc Cộng đồng",
+  Yr = (r = {}, e = {}) => {
+    const n = e.locale ?? t();
+    return n === "en" ? K() : n === "pt" ? L() : n === "ch" ? O() : n === "de" ? V() : n === "es" ? q() : n === "fr" ? Y() : n === "it" ? Z() : n === "jp" ? x() : n === "pl" ? F() : n === "ru" ? G() : n === "uk" ? J() : Q()
+  },
+  U = () => "Do you have a Wplace Twitch account?",
+  X = () => "Você tem uma conta Wplace associada à Twitch?",
+  nn = () => "你有 Wplace Twitch 账号吗？",
+  rn = () => "Hast du ein Wplace-Konto über Twitch?",
+  en = () => "¿Tienes una cuenta de Wplace asociada a Twitch?",
+  tn = () => "Avez-vous un compte Wplace associé à Twitch ?",
+  on = () => "Hai un account Wplace associato a Twitch?",
+  un = () => "WplaceのTwitch連携アカウントをお持ちですか？",
+  cn = () => "Czy masz konto Wplace połączone z Twitchem?",
+  _n = () => "У вас есть аккаунт Wplace, связанный с Twitch?",
+  an = () => "У вас є акаунт Wplace, повʼязаний із Twitch?",
+  sn = () => "Bạn có tài khoản Wplace liên kết với Twitch không?",
+  Zr = (r = {}, e = {}) => {
+    const n = e.locale ?? t();
+    return n === "en" ? U() : n === "pt" ? X() : n === "ch" ? nn() : n === "de" ? rn() : n === "es" ? en() : n === "fr" ? tn() : n === "it" ? on() : n === "jp" ? un() : n === "pl" ? cn() : n === "ru" ? _n() : n === "uk" ? an() : sn()
+  },
+  ln = r => `Login with ${r.name}`,
+  fn = r => `Entrar com ${r.name}`,
+  pn = r => `使用 ${r.name} 登录`,
+  wn = r => `Einloggen mit ${r.name}`,
+  dn = r => `Iniciar sesión con ${r.name}`,
+  gn = r => `Se connecter avec ${r.name}`,
+  hn = r => `Accedi con ${r.name}`,
+  vn = r => `${r.name}でログイン`,
+  mn = r => `Zaloguj przez ${r.name}`,
+  yn = r => `Войти через ${r.name}`,
+  bn = r => `Увійти через ${r.name}`,
+  kn = r => `Đăng nhập bằng ${r.name}`,
+  xr = (r, e = {}) => {
+    const n = e.locale ?? t();
+    return n === "en" ? ln(r) : n === "pt" ? fn(r) : n === "ch" ? pn(r) : n === "de" ? wn(r) : n === "es" ? dn(r) : n === "fr" ? gn(r) : n === "it" ? hn(r) : n === "jp" ? vn(r) : n === "pl" ? mn(r) : n === "ru" ? yn(r) : n === "uk" ? bn(r) : kn(r)
+  },
+  zn = () => "Migrate your account",
+  jn = () => "Migre sua conta",
+  Cn = () => "迁移你的账号",
+  Tn = () => "Konto migrieren",
+  Wn = () => "Migra tu cuenta",
+  An = () => "Migrer votre compte",
+  $n = () => "Migra il tuo account",
+  Sn = () => "アカウントを移行",
+  En = () => "Przenieś swoje konto",
+  Pn = () => "Мигрировать аккаунт",
+  Dn = () => "Перенести акаунт",
+  In = () => "Di chuyển tài khoản",
+  Fr = (r = {}, e = {}) => {
+    const n = e.locale ?? t();
+    return n === "en" ? zn() : n === "pt" ? jn() : n === "ch" ? Cn() : n === "de" ? Tn() : n === "es" ? Wn() : n === "fr" ? An() : n === "it" ? $n() : n === "jp" ? Sn() : n === "pl" ? En() : n === "ru" ? Pn() : n === "uk" ? Dn() : In()
+  },
+  Mn = () => "Open in browser",
+  Nn = () => "Abrir no navegador",
+  Rn = () => "在浏览器中打开",
+  Bn = () => "Im Browser öffnen",
+  Hn = () => "Abrir en el navegador",
+  Kn = () => "Ouvrir dans le navigateur",
+  Ln = () => "Apri nel browser",
+  On = () => "ブラウザで開く",
+  Vn = () => "Otwórz w przeglądarce",
+  qn = () => "Открыть в браузере",
+  Yn = () => "Відкрити у браузері",
+  Zn = () => "Mở trong trình duyệt",
+  Gr = (r = {}, e = {}) => {
+    const n = e.locale ?? t();
+    return n === "en" ? Mn() : n === "pt" ? Nn() : n === "ch" ? Rn() : n === "de" ? Bn() : n === "es" ? Hn() : n === "fr" ? Kn() : n === "it" ? Ln() : n === "jp" ? On() : n === "pl" ? Vn() : n === "ru" ? qn() : n === "uk" ? Yn() : Zn()
+  },
+  xn = () => "Privacy Policy",
+  Fn = () => "Política de privacidade",
+  Gn = () => "隐私政策",
+  Jn = () => "Datenschutzerklärung",
+  Qn = () => "Política de privacidad",
+  Un = () => "Politique de confidentialité",
+  Xn = () => "Informativa sulla privacy",
+  nr = () => "プライバシーポリシー",
+  rr = () => "Polityka prywatności",
+  er = () => "Политика конфиденциальности",
+  tr = () => "Політика конфіденційності",
+  ir = () => "Chính sách quyền riêng tư",
+  Jr = (r = {}, e = {}) => {
+    const n = e.locale ?? t();
+    return n === "en" ? xn() : n === "pt" ? Fn() : n === "ch" ? Gn() : n === "de" ? Jn() : n === "es" ? Qn() : n === "fr" ? Un() : n === "it" ? Xn() : n === "jp" ? nr() : n === "pl" ? rr() : n === "ru" ? er() : n === "uk" ? tr() : ir()
+  },
+  or = () => "Terms of Service",
+  ur = () => "Termos de Serviço",
+  cr = () => "服务条款",
+  _r = () => "Nutzungsbedingungen",
+  ar = () => "Términos de servicio",
+  sr = () => "Conditions d’utilisation",
+  lr = () => "Termini di servizio",
+  fr = () => "利用規約",
+  pr = () => "Warunki korzystania z usługi",
+  wr = () => "Условия обслуживания",
+  dr = () => "Умови обслуговування",
+  gr = () => "Điều khoản dịch vụ",
+  Qr = (r = {}, e = {}) => {
+    const n = e.locale ?? t();
+    return n === "en" ? or() : n === "pt" ? ur() : n === "ch" ? cr() : n === "de" ? _r() : n === "es" ? ar() : n === "fr" ? sr() : n === "it" ? lr() : n === "jp" ? fr() : n === "pl" ? pr() : n === "ru" ? wr() : n === "uk" ? dr() : gr()
+  },
+  hr = () => "Some features may not work correctly. We recommend using a regular browser.",
+  vr = () => "Algumas funcionalidades podem não funcionar corretamente. Recomendamos acessar por um navegador comum.",
+  mr = () => "部分功能可能无法正常工作。建议使用常用浏览器访问。",
+  yr = () => "Einige Funktionen funktionieren möglicherweise nicht richtig. Wir empfehlen, die Seite über einen gängigen Browser aufzurufen.",
+  br = () => "Algunas funcionalidades podrían no funcionar correctamente. Recomendamos acceder mediante un navegador común.",
+  kr = () => "Certaines fonctionnalités pourraient ne pas fonctionner correctement. Nous vous recommandons d'accéder via un navigateur standard.",
+  zr = () => "Alcune funzionalità potrebbero non funzionare correttamente. Si consiglia di accedere tramite un browser comune.",
+  jr = () => "いくつかの機能が正常に動作しない場合があります。通常のブラウザからアクセスすることをお勧めします。",
+  Cr = () => "Niektóre funkcje mogą nie działać poprawnie. Zalecamy korzystanie ze zwykłej przeglądarki.",
+  Tr = () => "Некоторые функции могут работать неправильно. Мы рекомендуем использовать обычный браузер.",
+  Wr = () => "Деякі функції можуть працювати некоректно. Рекомендуємо використовувати звичайний браузер.",
+  Ar = () => "Một số tính năng có thể không hoạt động đúng cách. Chúng tôi khuyên bạn nên truy cập bằng trình duyệt thông thường.",
+  Ur = (r = {}, e = {}) => {
+    const n = e.locale ?? t();
+    return n === "en" ? hr() : n === "pt" ? vr() : n === "ch" ? mr() : n === "de" ? yr() : n === "es" ? br() : n === "fr" ? kr() : n === "it" ? zr() : n === "jp" ? jr() : n === "pl" ? Cr() : n === "ru" ? Tr() : n === "uk" ? Wr() : Ar()
+  },
+  $r = () => "You are in a webview",
+  Sr = () => "Você está em uma webview",
+  Er = () => "您正在使用网页视图",
+  Pr = () => "Sie befinden sich in einer Webansicht",
+  Dr = () => "Estás en una webview",
+  Ir = () => "Vous êtes dans une webview",
+  Mr = () => "Sei in una webview",
+  Nr = () => "あなたはウェブビュー内にいます",
+  Rr = () => "Jesteś w widoku internetowym",
+  Br = () => "Вы находитесь в веб-просмотре",
+  Hr = () => "Ви перебуваєте у веб-перегляді",
+  Kr = () => "Bạn đang ở trong một webview",
+  Xr = (r = {}, e = {}) => {
+    const n = e.locale ?? t();
+    return n === "en" ? $r() : n === "pt" ? Sr() : n === "ch" ? Er() : n === "de" ? Pr() : n === "es" ? Dr() : n === "fr" ? Ir() : n === "it" ? Mr() : n === "jp" ? Nr() : n === "pl" ? Rr() : n === "ru" ? Br() : n === "uk" ? Hr() : Kr()
+  };
 export {
-  xe as L, be as d
+  Or as a, Vr as b, Yr as c, Zr as d, qr as e, Ur as f, xr as l, Fr as m, Gr as o, Jr as p, Qr as t, Xr as w
 };

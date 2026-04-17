@@ -1,32 +1,32 @@
 import {
   g as t
-} from "./BYsICFKS.js";
+} from "./CLdytBYG.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "fcddd0f6e36106ba60797dbbda80e38f1cbe4c75"
+      id: "454dd064a649ff0efc297a38e6aed3cfb6597516"
     };
-    var e = new n.Error().stack;
-    e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "09e8c7b4-b47a-42dd-9a91-ebaa6a75318f", n._sentryDebugIdIdentifier = "sentry-dbid-09e8c7b4-b47a-42dd-9a91-ebaa6a75318f")
+    var r = new n.Error().stack;
+    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "d7259a40-c1c5-461e-be64-30d5de91a088", n._sentryDebugIdIdentifier = "sentry-dbid-d7259a40-c1c5-461e-be64-30d5de91a088")
   } catch {}
 })();
-const o = () => "Confirm",
-  f = () => "Confirmar",
-  i = () => "确认",
-  c = () => "Bestätigen",
-  u = () => "Confirmar",
-  s = () => "Confirmer",
-  d = () => "Conferma",
-  a = () => "確認",
-  m = () => "Potwierdź",
-  b = () => "Подтвердить",
-  l = () => "Підтвердити",
-  _ = () => "Xác nhận",
-  g = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? o() : r === "pt" ? f() : r === "ch" ? i() : r === "de" ? c() : r === "es" ? u() : r === "fr" ? s() : r === "it" ? d() : r === "jp" ? a() : r === "pl" ? m() : r === "ru" ? b() : r === "uk" ? l() : _()
+const a = () => "Alliances",
+  l = () => "Alianças",
+  s = () => "联盟",
+  i = () => "Allianzen",
+  c = () => "Alianzas",
+  u = () => "Alliances",
+  o = () => "Alleanze",
+  f = () => "アライアンス",
+  d = () => "Sojusze",
+  _ = () => "Альянсы",
+  p = () => "Альянси",
+  b = () => "Các liên minh",
+  y = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? a() : e === "pt" ? l() : e === "ch" ? s() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? u() : e === "it" ? o() : e === "jp" ? f() : e === "pl" ? d() : e === "ru" ? _() : e === "uk" ? p() : b()
   };
 export {
-  g as c
+  y as a
 };

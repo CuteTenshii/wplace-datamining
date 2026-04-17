@@ -1,31 +1,31 @@
 import {
   g as t
-} from "./BYsICFKS.js";
+} from "./CLdytBYG.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "fcddd0f6e36106ba60797dbbda80e38f1cbe4c75"
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "454dd064a649ff0efc297a38e6aed3cfb6597516"
     };
-    var s = new e.Error().stack;
-    s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "5d9c477c-a16f-4bdf-a858-e65edb32d2cc", e._sentryDebugIdIdentifier = "sentry-dbid-5d9c477c-a16f-4bdf-a858-e65edb32d2cc")
+    var e = new r.Error().stack;
+    e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "e3adb9f0-cb18-41f3-8576-b659a72798fa", r._sentryDebugIdIdentifier = "sentry-dbid-e3adb9f0-cb18-41f3-8576-b659a72798fa")
   } catch {}
 })();
-const n = () => "Users",
-  u = () => "Usuários",
-  i = () => "用户",
-  c = () => "Benutzer",
-  o = () => "Usuarios",
-  d = () => "Utilisateurs",
-  f = () => "Utenti",
-  a = () => "ユーザー",
-  l = () => "Użytkownicy",
-  b = () => "Пользователи",
-  _ = () => "Користувачі",
-  p = () => "Người dùng",
-  y = (e = {}, s = {}) => {
-    const r = s.locale ?? t();
-    return r === "en" ? n() : r === "pt" ? u() : r === "ch" ? i() : r === "de" ? c() : r === "es" ? o() : r === "fr" ? d() : r === "it" ? f() : r === "jp" ? a() : r === "pl" ? l() : r === "ru" ? b() : r === "uk" ? _() : p()
+const u = () => "Unban",
+  a = () => "Desbanir",
+  b = () => "解封",
+  f = () => "Entbannen",
+  s = () => "Desbanear",
+  o = () => "Débannir",
+  i = () => "Unban",
+  c = () => "BANを解除",
+  d = () => "Odbanuj",
+  l = () => "Разбанить",
+  _ = () => "Розбанити",
+  p = () => "Gỡ cấm",
+  y = (r = {}, e = {}) => {
+    const n = e.locale ?? t();
+    return n === "en" ? u() : n === "pt" ? a() : n === "ch" ? b() : n === "de" ? f() : n === "es" ? s() : n === "fr" ? o() : n === "it" ? i() : n === "jp" ? c() : n === "pl" ? d() : n === "ru" ? l() : n === "uk" ? _() : p()
   };
 export {
   y as u

@@ -1,90 +1,32 @@
-import "./CRMRbUFN.js";
-import "./Dykfyry-.js";
 import {
-  p as I,
-  d as l,
-  r as f,
-  t as m,
-  a as p,
-  b as D,
-  s as _,
-  w as n,
-  x as g,
-  c
-} from "./BnI0KJSr.js";
-import {
-  s as v
-} from "./BgZi3t1R.js";
-import {
-  i as T
-} from "./Cn5mRW5A.js";
-import {
-  a as k
-} from "./CukdjIum.js";
-import {
-  i as A
-} from "./IYiNgDqe.js";
-import {
-  p as u
-} from "./BIwlCVsu.js";
-import {
-  R as y,
-  a as w
-} from "./UX0fWlJm.js";
-import {
-  L as x
-} from "./CA5XIqIk.js";
+  g as o
+} from "./CLdytBYG.js";
 (function() {
   try {
-    var a = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    a.SENTRY_RELEASE = {
-      id: "fcddd0f6e36106ba60797dbbda80e38f1cbe4c75"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "454dd064a649ff0efc297a38e6aed3cfb6597516"
     };
-    var s = new a.Error().stack;
-    s && (a._sentryDebugIds = a._sentryDebugIds || {}, a._sentryDebugIds[s] = "716cbc3d-bf71-497f-9ae9-148aeaac7035", a._sentryDebugIdIdentifier = "sentry-dbid-716cbc3d-bf71-497f-9ae9-148aeaac7035")
+    var n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "0ea7cc9d-2ea5-4af5-a99a-39bddccfd536", e._sentryDebugIdIdentifier = "sentry-dbid-0ea7cc9d-2ea5-4af5-a99a-39bddccfd536")
   } catch {}
 })();
-var N = c('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
-  O = c('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
-  S = c("<span><!></span>");
-
-function G(a, s) {
-  I(s, !1);
-  let e = u(s, "role", 8),
-    E = u(s, "big", 8, !1);
-  A();
-  var i = S();
-  let b;
-  var h = l(i);
-  {
-    var R = r => {
-        var t = N(),
-          o = l(t);
-        x(o, {
-          size: "none"
-        });
-        var d = _(o, 1, !0);
-        f(t), m(() => v(d, (n(y), n(e()), g(() => y[e()])))), p(r, t)
-      },
-      L = r => {
-        var t = O(),
-          o = l(t);
-        x(o, {
-          size: "small"
-        });
-        var d = _(o, 1, !0);
-        f(t), m(() => v(d, (n(w), n(e()), g(() => w[e()])))), p(r, t)
-      };
-    T(h, r => {
-      E() ? r(R) : r(L, !1)
-    })
-  }
-  f(i), m(() => b = k(i, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center whitespace-nowrap pt-0.5 font-semibold leading-none shadow", null, b, {
-    "badge-info": e() === "admin",
-    "badge-secondary": e() === "moderator" || e() == "global_moderator",
-    "badge-warning": e() === "community_leader"
-  })), p(a, i), D()
-}
+const t = () => "Error loading",
+  a = () => "Erro ao carregar",
+  d = () => "加载出错",
+  i = () => "Fehler beim Laden",
+  u = () => "Error al cargar",
+  c = () => "Erreur lors du chargement",
+  l = () => "Errore nel caricamento",
+  f = () => "読み込みエラー",
+  s = () => "Błąd ładowania",
+  _ = () => "Ошибка загрузки",
+  g = () => "Помилка завантаження",
+  b = () => "Lỗi tải dữ liệu",
+  y = (e = {}, n = {}) => {
+    const r = n.locale ?? o();
+    return r === "en" ? t() : r === "pt" ? a() : r === "ch" ? d() : r === "de" ? i() : r === "es" ? u() : r === "fr" ? c() : r === "it" ? l() : r === "jp" ? f() : r === "pl" ? s() : r === "ru" ? _() : r === "uk" ? g() : b()
+  };
 export {
-  G as R
+  y as e
 };

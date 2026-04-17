@@ -1,32 +1,48 @@
 import {
-  g as t
-} from "./BYsICFKS.js";
+  g as i
+} from "./CLdytBYG.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "fcddd0f6e36106ba60797dbbda80e38f1cbe4c75"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "454dd064a649ff0efc297a38e6aed3cfb6597516"
     };
-    var r = new n.Error().stack;
-    r && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[r] = "d7259a40-c1c5-461e-be64-30d5de91a088", n._sentryDebugIdIdentifier = "sentry-dbid-d7259a40-c1c5-461e-be64-30d5de91a088")
+    var n = new e.Error().stack;
+    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "2cb492c4-da32-40ef-bd46-c760af43f1f8", e._sentryDebugIdIdentifier = "sentry-dbid-2cb492c4-da32-40ef-bd46-c760af43f1f8")
   } catch {}
 })();
-const a = () => "Alliances",
-  l = () => "Alianças",
-  s = () => "联盟",
-  i = () => "Allianzen",
-  c = () => "Alianzas",
-  u = () => "Alliances",
-  o = () => "Alleanze",
-  d = () => "アライアンス",
-  f = () => "Sojusze",
-  _ = () => "Альянсы",
-  b = () => "Альянси",
-  p = () => "Các liên minh",
-  y = (n = {}, r = {}) => {
-    const e = r.locale ?? t();
-    return e === "en" ? a() : e === "pt" ? l() : e === "ch" ? s() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? u() : e === "it" ? o() : e === "jp" ? d() : e === "pl" ? f() : e === "ru" ? _() : e === "uk" ? b() : p()
+const t = () => "Enter a valid user ID",
+  d = () => "Informe um ID válido",
+  s = () => "请输入有效的用户 ID",
+  u = () => "Gib eine gültige Benutzer-ID ein",
+  o = () => "Introduce un ID de usuario válido",
+  _ = () => "Entrez un ID d’utilisateur valide",
+  f = () => "Inserisci un ID valido",
+  c = () => "有効なユーザーIDを入力してください。",
+  a = () => "Wprowadź prawidłowe ID użytkownika",
+  l = () => "Введите корректный ID пользователя",
+  p = () => "Введіть коректний ID користувача",
+  v = () => "Nhập một ID người dùng hợp lệ",
+  z = (e = {}, n = {}) => {
+    const r = n.locale ?? i();
+    return r === "en" ? t() : r === "pt" ? d() : r === "ch" ? s() : r === "de" ? u() : r === "es" ? o() : r === "fr" ? _() : r === "it" ? f() : r === "jp" ? c() : r === "pl" ? a() : r === "ru" ? l() : r === "uk" ? p() : v()
+  },
+  I = () => "Reddit",
+  m = () => "Reddit",
+  D = () => "Reddit",
+  b = () => "Reddit",
+  g = () => "Reddit",
+  R = () => "Reddit",
+  y = () => "Reddit",
+  h = () => "Reddit",
+  w = () => "Reddit",
+  k = () => "Reddit",
+  E = () => "Reddit",
+  j = () => "Reddit",
+  L = (e = {}, n = {}) => {
+    const r = n.locale ?? i();
+    return r === "en" ? I() : r === "pt" ? m() : r === "ch" ? D() : r === "de" ? b() : r === "es" ? g() : r === "fr" ? R() : r === "it" ? y() : r === "jp" ? h() : r === "pl" ? w() : r === "ru" ? k() : r === "uk" ? E() : j()
   };
 export {
-  y as a
+  z as p, L as r
 };
