@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./DADvmwwi.js";
+} from "./BZGVaLJf.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "906017252e1c5d4ea3d1148202cf14a58456747a"
+      id: "e0127cf3e7a9cd170d72434c8831b6836f9b0e1e"
     };
     var s = new e.Error().stack;
     s && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[s] = "5d9c477c-a16f-4bdf-a858-e65edb32d2cc", e._sentryDebugIdIdentifier = "sentry-dbid-5d9c477c-a16f-4bdf-a858-e65edb32d2cc")
@@ -14,10 +14,10 @@ import {
 const n = () => "Users",
   u = () => "Usuários",
   i = () => "用户",
-  o = () => "Benutzer",
-  c = () => "Usuarios",
-  d = () => "Utilisateurs",
-  f = () => "Utenti",
+  c = () => "Benutzer",
+  o = () => "Usuarios",
+  f = () => "Utilisateurs",
+  d = () => "Utenti",
   a = () => "ユーザー",
   l = () => "Użytkownicy",
   _ = () => "Пользователи",
@@ -25,7 +25,7 @@ const n = () => "Users",
   p = () => "Người dùng",
   y = (e = {}, s = {}) => {
     const r = s.locale ?? t();
-    return r === "en" ? n() : r === "pt" ? u() : r === "ch" ? i() : r === "de" ? o() : r === "es" ? c() : r === "fr" ? d() : r === "it" ? f() : r === "jp" ? a() : r === "pl" ? l() : r === "ru" ? _() : r === "uk" ? b() : p()
+    return r === "en" ? n() : r === "pt" ? u() : r === "ch" ? i() : r === "de" ? c() : r === "es" ? o() : r === "fr" ? f() : r === "it" ? d() : r === "jp" ? a() : r === "pl" ? l() : r === "ru" ? _() : r === "uk" ? b() : p()
   };
 export {
   y as u
