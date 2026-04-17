@@ -1,14 +1,14 @@
 import {
   g as r
-} from "./BQlqcz55.js";
+} from "./D_SMuPJE.js";
 (function() {
   try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "dc0186d26e0c2d626ef1b4331d86a985eea98c24"
+    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    e.SENTRY_RELEASE = {
+      id: "cfc28652dbc454b56a914780051d7c5b69184636"
     };
-    var a = new n.Error().stack;
-    a && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[a] = "fe83abd1-5077-4cc1-8f46-ccf36b0aea9c", n._sentryDebugIdIdentifier = "sentry-dbid-fe83abd1-5077-4cc1-8f46-ccf36b0aea9c")
+    var a = new e.Error().stack;
+    a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "fe83abd1-5077-4cc1-8f46-ccf36b0aea9c", e._sentryDebugIdIdentifier = "sentry-dbid-fe83abd1-5077-4cc1-8f46-ccf36b0aea9c")
   } catch {}
 })();
 const t = () => "Ban appeal",
@@ -18,14 +18,14 @@ const t = () => "Ban appeal",
   u = () => "Apelación de ban",
   s = () => "Recours de bannissement",
   i = () => "Ricorso contro il ban",
-  l = () => "BANの異議申立て",
-  b = () => "Odwołanie od bana",
+  b = () => "BANの異議申立て",
+  l = () => "Odwołanie od bana",
   f = () => "Апелляция на бан",
-  d = () => "Апеляція на бан",
-  _ = () => "Kháng cáo lệnh cấm",
-  y = (n = {}, a = {}) => {
-    const e = a.locale ?? r();
-    return e === "en" ? t() : e === "pt" ? c() : e === "ch" ? p() : e === "de" ? o() : e === "es" ? u() : e === "fr" ? s() : e === "it" ? i() : e === "jp" ? l() : e === "pl" ? b() : e === "ru" ? f() : e === "uk" ? d() : _()
+  _ = () => "Апеляція на бан",
+  d = () => "Kháng cáo lệnh cấm",
+  y = (e = {}, a = {}) => {
+    const n = a.locale ?? r();
+    return n === "en" ? t() : n === "pt" ? c() : n === "ch" ? p() : n === "de" ? o() : n === "es" ? u() : n === "fr" ? s() : n === "it" ? i() : n === "jp" ? b() : n === "pl" ? l() : n === "ru" ? f() : n === "uk" ? _() : d()
   };
 export {
   y as b
