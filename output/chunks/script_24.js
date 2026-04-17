@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./MjchAmJs.js";
+} from "./Cl_dwRWp.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "e00cf9360a6b375b0d5f70104e81f621ce41927c"
+      id: "d953af0a076c6a8d855924dd3acfc556014e27c6"
     };
     var n = new r.Error().stack;
     n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "50477add-904f-43c4-90bf-18e8935268e0", r._sentryDebugIdIdentifier = "sentry-dbid-50477add-904f-43c4-90bf-18e8935268e0")
@@ -30,8 +30,8 @@ const o = () => "Input the code",
   v = () => "Not a valid phone number",
   m = () => "Não é um número válido",
   y = () => "不是有效的电话号码",
-  b = () => "Keine gültige Telefonnummer",
-  g = () => "No es un número de teléfono válido",
+  g = () => "Keine gültige Telefonnummer",
+  b = () => "No es un número de teléfono válido",
   k = () => "Numéro non valide",
   j = () => "Numero non valido",
   w = () => "有効な電話番号ではありません。",
@@ -41,7 +41,7 @@ const o = () => "Input the code",
   E = () => "Không phải số điện thoại hợp lệ",
   Vn = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? v() : e === "pt" ? m() : e === "ch" ? y() : e === "de" ? b() : e === "es" ? g() : e === "fr" ? k() : e === "it" ? j() : e === "jp" ? w() : e === "pl" ? S() : e === "ru" ? z() : e === "uk" ? T() : E()
+    return e === "en" ? v() : e === "pt" ? m() : e === "ch" ? y() : e === "de" ? g() : e === "es" ? b() : e === "fr" ? k() : e === "it" ? j() : e === "jp" ? w() : e === "pl" ? S() : e === "ru" ? z() : e === "uk" ? T() : E()
   },
   I = () => "Your phone number is not stored. We only keep a secure, irreversible hash to prevent duplicate accounts.",
   M = () => "Seu número de telefone nunca é armazenado. Mantemos apenas um hash seguro e irreversível para evitar contas duplicadas.",
@@ -100,12 +100,12 @@ const o = () => "Input the code",
   ve = () => "Telefono verificato con successo",
   me = () => "電話番号を確認しました。",
   ye = () => "Telefon został pomyślnie zweryfikowany",
-  be = () => "Телефон успешно подтверждён",
-  ge = () => "Телефон успішно підтверджено",
+  ge = () => "Телефон успешно подтверждён",
+  be = () => "Телефон успішно підтверджено",
   ke = () => "Đã xác minh số điện thoại thành công",
   Rn = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? ae() : e === "pt" ? fe() : e === "ch" ? pe() : e === "de" ? de() : e === "es" ? he() : e === "fr" ? le() : e === "it" ? ve() : e === "jp" ? me() : e === "pl" ? ye() : e === "ru" ? be() : e === "uk" ? ge() : ke()
+    return e === "en" ? ae() : e === "pt" ? fe() : e === "ch" ? pe() : e === "de" ? de() : e === "es" ? he() : e === "fr" ? le() : e === "it" ? ve() : e === "jp" ? me() : e === "pl" ? ye() : e === "ru" ? ge() : e === "uk" ? be() : ke()
   },
   je = () => "Resend Code",
   we = () => "Reenviar Código",
@@ -173,8 +173,8 @@ const o = () => "Input the code",
   },
   mn = () => "Try another number",
   yn = () => "Tentar outro número",
-  bn = () => "请尝试使用其他号码",
-  gn = () => "Andere Nummer versuchen",
+  gn = () => "请尝试使用其他号码",
+  bn = () => "Andere Nummer versuchen",
   kn = () => "Prueba con otro número",
   jn = () => "Essayez un autre numéro",
   wn = () => "Prova un altro numero",
@@ -185,7 +185,7 @@ const o = () => "Input the code",
   In = () => "Thử số khác",
   Kn = (r = {}, n = {}) => {
     const e = n.locale ?? t();
-    return e === "en" ? mn() : e === "pt" ? yn() : e === "ch" ? bn() : e === "de" ? gn() : e === "es" ? kn() : e === "fr" ? jn() : e === "it" ? wn() : e === "jp" ? Sn() : e === "pl" ? zn() : e === "ru" ? Tn() : e === "uk" ? En() : In()
+    return e === "en" ? mn() : e === "pt" ? yn() : e === "ch" ? gn() : e === "de" ? bn() : e === "es" ? kn() : e === "fr" ? jn() : e === "it" ? wn() : e === "jp" ? Sn() : e === "pl" ? zn() : e === "ru" ? Tn() : e === "uk" ? En() : In()
   };
 export {
   xn as a, Pn as b, Cn as c, Gn as d, qn as e, Nn as i, Vn as n, Rn as p, Wn as r, Dn as s, Kn as t

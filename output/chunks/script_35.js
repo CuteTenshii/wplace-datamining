@@ -14,37 +14,37 @@ var p = (t, e, s) => (_(t, e, "read from private field"), s ? s.call(t) : e.get(
   v = (t, e, s) => e.has(t) ? C("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, s),
   x = (t, e, s, a) => (_(t, e, "write to private field"), a ? a.call(t, s) : e.set(t, s), s),
   w = (t, e, s) => (_(t, e, "access private method"), s);
-import "./D1F5TLLk.js";
+import "./DEy4XHdA.js";
 import {
   p as H,
   d as E,
   r as y,
-  t as b,
-  a as g,
+  t as g,
+  a as m,
   b as B,
   c as h,
   s as G
-} from "./ButFgnm2.js";
+} from "./BBqfZ3Cy.js";
 import {
   i as S
-} from "./95p05gav.js";
+} from "./DtMKSaSA.js";
 import {
   a as A,
   f as L,
   c as D,
   s as M
-} from "./BkefoxDz.js";
+} from "./D8Ccz4Os.js";
 import {
   h as j
-} from "./Ckjs6Ayv.js";
+} from "./Zax3ztGw.js";
 import {
   t as N
-} from "./BJIaqakB.js";
+} from "./y9Wyj-np.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "e00cf9360a6b375b0d5f70104e81f621ce41927c"
+      id: "d953af0a076c6a8d855924dd3acfc556014e27c6"
     };
     var e = new t.Error().stack;
     e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "4c91c1f0-a2a3-464a-b207-e2a062e1e4e1", t._sentryDebugIdIdentifier = "sentry-dbid-4c91c1f0-a2a3-464a-b207-e2a062e1e4e1")
@@ -64,7 +64,7 @@ function O(t = "", e = Y, s = J, a = Q) {
     d = o % P * (360 / P);
   return [...Array(t ? 25 : 0)].reduce((u, I, l) => o & 1 << l % 15 ? u + `<rect x="${l>14?7-~~(l/5):~~(l/5)}" y="${l%5}" width="1" height="1"/>` : u, `<svg viewBox="-1.5 -1.5 8 8" xmlns="http://www.w3.org/2000/svg" fill="hsl(${d} ${e}% ${s}%)" shape-rendering="crispEdges">`) + "</svg>"
 }
-var k, r, m, c, f, T, z;
+var k, r, b, c, f, T, z;
 (k = globalThis.customElements) != null && k.get("minidenticon-svg") || (z = globalThis.customElements) == null || z.define("minidenticon-svg", (r = class extends HTMLElement {
   constructor() {
     super(...arguments);
@@ -77,19 +77,19 @@ var k, r, m, c, f, T, z;
   attributeChangedCallback() {
     p(this, c) && w(this, f, T).call(this)
   }
-}, m = new WeakMap, c = new WeakMap, f = new WeakSet, T = function() {
+}, b = new WeakMap, c = new WeakMap, f = new WeakSet, T = function() {
   var o;
   const s = r.observedAttributes.map(d => this.getAttribute(d) || void 0),
     a = s.join(",");
-  this.innerHTML = (o = p(r, m))[a] ?? (o[a] = O(...s))
-}, U(r, "observedAttributes", ["username", "saturation", "lightness"]), v(r, m, {}), r));
+  this.innerHTML = (o = p(r, b))[a] ?? (o[a] = O(...s))
+}, U(r, "observedAttributes", ["username", "saturation", "lightness"]), v(r, b, {}), r));
 var V = h("<div><!></div>");
 
 function W(t, e) {
   H(e, !0);
   var s = V(),
     a = E(s);
-  j(a, () => O(e.userId.toString(), 95, 45)), y(s), b(() => A(s, 1, `bg-base-200 minidenticon ${e.class??""??""}`)), g(t, s), B()
+  j(a, () => O(e.userId.toString(), 95, 45)), y(s), g(() => A(s, 1, `bg-base-200 minidenticon ${e.class??""??""}`)), m(t, s), B()
 }
 var X = h('<img class="pixelated bg-base-200 size-full" alt="User profile"/>'),
   Z = h('<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square w-full"/>'),
@@ -111,7 +111,7 @@ function ne(t, e) {
       },
       u = i => {
         var n = X();
-        b(() => M(n, "src", e.pictureUrl)), g(i, n)
+        g(() => M(n, "src", e.pictureUrl)), m(i, n)
       };
     S(o, i => {
       e.pictureUrl ? i(u, !1) : i(d)
@@ -122,15 +122,15 @@ function ne(t, e) {
   {
     var l = i => {
       var n = Z();
-      L(n, "scale: 114.99999999999999%;"), b(() => M(n, "src", e.frameUrl)), g(i, n)
+      L(n, "scale: 114.99999999999999%;"), g(() => M(n, "src", e.frameUrl)), m(i, n)
     };
     S(I, i => {
       e.frameUrl && i(l)
     })
   }
-  y(s), b((i, n) => {
+  y(s), g((i, n) => {
     A(s, 1, i), A(a, 1, n)
-  }, [() => D(N("relative inline-grid size-10 place-items-center", e.class)), () => D(N("avatar border-base-300 aspect-square overflow-hidden rounded-full border", e.avatarClass))]), g(t, s), B()
+  }, [() => D(N("relative inline-grid size-10 place-items-center", e.class)), () => D(N("avatar border-base-300 aspect-square overflow-hidden rounded-full border", e.avatarClass))]), m(t, s), B()
 }
 export {
   ne as P, W as a

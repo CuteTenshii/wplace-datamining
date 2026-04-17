@@ -2,7 +2,7 @@
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "e00cf9360a6b375b0d5f70104e81f621ce41927c"
+      id: "d953af0a076c6a8d855924dd3acfc556014e27c6"
     };
     var r = new t.Error().stack;
     r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "3165cf74-2c30-440d-8753-7217d3d69437", t._sentryDebugIdIdentifier = "sentry-dbid-3165cf74-2c30-440d-8753-7217d3d69437")
@@ -27,12 +27,12 @@ function T(t, {
   var l = D(t),
     g = t.clientWidth / e.width / l,
     p = t.clientHeight / e.height / l,
-    b = r.left + r.width * s,
-    w = r.top + r.height * f,
-    x = e.left + e.width * s,
+    w = r.left + r.width * s,
+    x = r.top + r.height * f,
+    b = e.left + e.width * s,
     m = e.top + e.height * f,
-    o = (b - x) * g,
-    c = (w - m) * p,
+    o = (w - b) * g,
+    c = (x - m) * p,
     S = r.width / e.width,
     E = r.height / e.height;
   return {

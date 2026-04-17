@@ -14,7 +14,7 @@ var b = (t, n, e) => (Kn(t, n, "read from private field"), e ? e.call(t) : n.get
   D = (t, n, e) => n.has(t) ? Nt("Cannot add the same private member more than once") : n instanceof WeakSet ? n.add(t) : n.set(t, e);
 import {
   g as h
-} from "./MjchAmJs.js";
+} from "./Cl_dwRWp.js";
 import {
   e as B,
   i as M,
@@ -22,19 +22,19 @@ import {
   g as rt,
   x as xt,
   u as we
-} from "./ButFgnm2.js";
+} from "./BBqfZ3Cy.js";
 import {
   s as Hn,
   c as Yn
-} from "./Dlp6HdNc.js";
+} from "./BIxzzFcP.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "e00cf9360a6b375b0d5f70104e81f621ce41927c"
+      id: "d953af0a076c6a8d855924dd3acfc556014e27c6"
     };
     var n = new t.Error().stack;
-    n && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[n] = "1bc8b00c-2ab6-496f-9f76-7bf29069e088", t._sentryDebugIdIdentifier = "sentry-dbid-1bc8b00c-2ab6-496f-9f76-7bf29069e088")
+    n && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[n] = "a1c99add-299a-4eb9-8240-f761b1807975", t._sentryDebugIdIdentifier = "sentry-dbid-a1c99add-299a-4eb9-8240-f761b1807975")
   } catch {}
 })();
 const Qv = "https://maps.wplace.live",
@@ -2246,18 +2246,18 @@ const fi = () => "Your account has been suspended for breaking the rules",
     const e = n.locale ?? h();
     return e === "en" ? fl() : e === "pt" ? ml() : e === "ch" ? pl() : e === "de" ? hl() : e === "es" ? gl() : e === "fr" ? wl() : e === "it" ? yl() : e === "jp" ? vl() : e === "pl" ? bl() : e === "ru" ? El() : e === "uk" ? Tl() : Ol()
   },
-  Il = () => "Messed up artworks for no reason",
-  Al = () => "Estragar desenho dos outros sem motivo",
-  kl = () => "无缘无故毁坏他人的作品",
-  Rl = () => "Kunstwerke ohne Grund zerstört",
-  Nl = () => "Arruinó obras de arte sin motivo",
-  xl = () => "Gâcher les dessins des autres sans raison",
-  Dl = () => "Rovinare il disegno degli altri senza motivo",
-  Ll = () => "理由もなく他人の作品を荒らした。",
-  Ml = () => "Niszczenie cudzych prac bez powodu",
-  Pl = () => "Преднамеренная порча чужих рисунков без причины",
-  Ul = () => "Псування чужих робіт без причини",
-  jl = () => "Phá hỏng tranh của người khác mà không có lý do",
+  Il = () => "Messed up with other's artworks",
+  Al = () => "Estragou os desenhos dos outros",
+  kl = () => "破坏了他人的作品",
+  Rl = () => "Kunstwerke anderer beschädigt",
+  Nl = () => "Arruinó las obras de arte de otros",
+  xl = () => "A abîmé les œuvres des autres",
+  Dl = () => "Ha rovinato i disegni degli altri",
+  Ll = () => "他人の作品を荒らした",
+  Ml = () => "Zniszczył prace innych",
+  Pl = () => "Испортил чужие рисунки",
+  Ul = () => "Зіпсував роботи інших",
+  jl = () => "Phá hỏng tranh của người khác",
   Cl = (t = {}, n = {}) => {
     const e = n.locale ?? h();
     return e === "en" ? Il() : e === "pt" ? Al() : e === "ch" ? kl() : e === "de" ? Rl() : e === "es" ? Nl() : e === "fr" ? xl() : e === "it" ? Dl() : e === "jp" ? Ll() : e === "pl" ? Ml() : e === "ru" ? Pl() : e === "uk" ? Ul() : jl()
@@ -3918,12 +3918,12 @@ const cb = {
     griefing: 6
   },
   db = {
-    griefing: "1-1-art-integrity-and-griefing",
-    "inappropriate-content": "1-2-inappropriate-content",
-    bot: "1-4-automation",
-    "multi-accounting": "1-3-multiple-accounts",
-    "hate-speech": "1-2-2-hate-speech",
-    doxxing: "1-5-doxxing",
+    griefing: "topic-2",
+    "inappropriate-content": "topic-1",
+    bot: "topic-3",
+    "multi-accounting": "topic-3",
+    "hate-speech": "topic-1",
+    doxxing: "topic-1",
     other: ""
   },
   vv = 365 * 24 * 60 * 60 * 1e3;
@@ -6684,5 +6684,5 @@ function Ab(t, n, e) {
   return Vn(r)
 }
 export {
-  vg as $, Qn as A, Vc as B, jn as C, jo as D, Rm as E, Cl as F, Z as G, Tb as H, Ob as I, sb as J, z as K, ib as L, ab as M, ob as N, eb as O, vt as P, rb as Q, zn as R, hb as S, Ab as T, bb as U, Eb as V, gb as W, Sb as X, aw as Y, Ib as Z, _b as _, ge as a, yb as a0, rn as a1, ub as a2, fb as a3, db as a4, wb as a5, mb as a6, Qv as a7, Si as a8, Ci as a9, Jt as aA, Xp as aB, dh as aC, Xt as aD, Uh as aE, Zh as aF, Qt as aG, qg as aH, en as aI, Rw as aJ, ce as aK, tn as aL, nn as aM, Oy as aN, Ji as aa, lo as ab, $o as ac, us as ad, Kt as ae, Ms as af, Yt as ag, Zt as ah, tu as ai, mu as aj, Bu as ak, Qu as al, _l as am, c_ as an, b_ as ao, M_ as ap, $t as aq, of as ar, yf as as, Df as at, se as au, rm as av, Vm as aw, tp as ax, mp as ay, Ap as az, cb as b, Oo as c, Rc as d, f as e, yt as f, Sl as g, Jl as h, Td as i, Jn as j, pb as k, nb as l, hm as m, Au as n, ot as o, Zd as p, tb as q, pt as r, lb as s, qv as t, Se as u, ln as v, Ht as w, vb as x, Ud as y, ld as z
+  vg as $, Qn as A, Vc as B, jn as C, jo as D, Rm as E, Cl as F, Z as G, Tb as H, Ob as I, sb as J, z as K, ib as L, ab as M, ob as N, eb as O, vt as P, rb as Q, zn as R, hb as S, Ab as T, bb as U, Eb as V, gb as W, Sb as X, aw as Y, Ib as Z, _b as _, ge as a, yb as a0, ub as a1, fb as a2, db as a3, wb as a4, mb as a5, Qv as a6, Si as a7, Ci as a8, Ji as a9, Xp as aA, dh as aB, Xt as aC, Uh as aD, Zh as aE, Qt as aF, qg as aG, en as aH, Rw as aI, ce as aJ, tn as aK, nn as aL, Oy as aM, rn as aN, lo as aa, $o as ab, us as ac, Kt as ad, Ms as ae, Yt as af, Zt as ag, tu as ah, mu as ai, Bu as aj, Qu as ak, _l as al, c_ as am, b_ as an, M_ as ao, $t as ap, of as aq, yf as ar, Df as as, se as at, rm as au, Vm as av, tp as aw, mp as ax, Ap as ay, Jt as az, cb as b, Oo as c, Rc as d, f as e, yt as f, Sl as g, Jl as h, Td as i, Jn as j, pb as k, nb as l, hm as m, Au as n, ot as o, Zd as p, tb as q, pt as r, lb as s, qv as t, Se as u, ln as v, Ht as w, vb as x, Ud as y, ld as z
 };

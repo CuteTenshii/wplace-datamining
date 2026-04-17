@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./MjchAmJs.js";
+} from "./Cl_dwRWp.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "e00cf9360a6b375b0d5f70104e81f621ce41927c"
+      id: "d953af0a076c6a8d855924dd3acfc556014e27c6"
     };
     var r = new t.Error().stack;
     r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "993d5df6-6e47-4522-a281-4a70aec8b474", t._sentryDebugIdIdentifier = "sentry-dbid-993d5df6-6e47-4522-a281-4a70aec8b474")
@@ -30,9 +30,9 @@ const o = () => "Eraser",
   y = () => "Not enough Droplets",
   h = () => "Droplets insuficientes",
   m = () => "水滴数量不足",
-  b = () => "Nicht genug Droplets",
-  x = () => "No tienes suficientes gotas",
-  k = () => "Pas assez de droplets",
+  x = () => "Nicht genug Droplets",
+  k = () => "No tienes suficientes gotas",
+  b = () => "Pas assez de droplets",
   q = () => "Gocce insufficienti",
   v = () => "ドロップレットが足りません。",
   z = () => "Za mało kropli",
@@ -41,7 +41,7 @@ const o = () => "Eraser",
   P = () => "Không đủ droplets",
   de = (t = {}, r = {}) => {
     const e = r.locale ?? n();
-    return e === "en" ? y() : e === "pt" ? h() : e === "ch" ? m() : e === "de" ? b() : e === "es" ? x() : e === "fr" ? k() : e === "it" ? q() : e === "jp" ? v() : e === "pl" ? z() : e === "ru" ? j() : e === "uk" ? D() : P()
+    return e === "en" ? y() : e === "pt" ? h() : e === "ch" ? m() : e === "de" ? x() : e === "es" ? k() : e === "fr" ? b() : e === "it" ? q() : e === "jp" ? v() : e === "pl" ? z() : e === "ru" ? j() : e === "uk" ? D() : P()
   },
   w = () => "Refund Policy",
   R = () => "Política de Reembolso",
