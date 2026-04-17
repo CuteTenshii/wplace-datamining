@@ -1,11 +1,11 @@
 import {
   g as t
-} from "./DhZUX4Dk.js";
+} from "./MjchAmJs.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "cdbcf7fbe78b739ecf1b47eab1739b136749bbb3"
+      id: "e00cf9360a6b375b0d5f70104e81f621ce41927c"
     };
     var r = new e.Error().stack;
     r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "4ee35f3a-97bf-4fcd-ac48-cea911cd0a9e", e._sentryDebugIdIdentifier = "sentry-dbid-4ee35f3a-97bf-4fcd-ac48-cea911cd0a9e")
@@ -21,11 +21,11 @@ const o = () => "Loading...",
   s = () => "読み込み中...",
   l = () => "Ładowanie...",
   g = () => "Загрузка...",
-  b = () => "Завантаження...",
-  _ = () => "Đang tải...",
+  _ = () => "Завантаження...",
+  b = () => "Đang tải...",
   y = (e = {}, r = {}) => {
     const n = r.locale ?? t();
-    return n === "en" ? o() : n === "pt" ? a() : n === "ch" ? i() : n === "de" ? d() : n === "es" ? u() : n === "fr" ? c() : n === "it" ? f() : n === "jp" ? s() : n === "pl" ? l() : n === "ru" ? g() : n === "uk" ? b() : _()
+    return n === "en" ? o() : n === "pt" ? a() : n === "ch" ? i() : n === "de" ? d() : n === "es" ? u() : n === "fr" ? c() : n === "it" ? f() : n === "jp" ? s() : n === "pl" ? l() : n === "ru" ? g() : n === "uk" ? _() : b()
   };
 export {
   y as l

@@ -1,11 +1,11 @@
 import {
   g as i
-} from "./DhZUX4Dk.js";
+} from "./MjchAmJs.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "cdbcf7fbe78b739ecf1b47eab1739b136749bbb3"
+      id: "e00cf9360a6b375b0d5f70104e81f621ce41927c"
     };
     var n = new e.Error().stack;
     n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "2cb492c4-da32-40ef-bd46-c760af43f1f8", e._sentryDebugIdIdentifier = "sentry-dbid-2cb492c4-da32-40ef-bd46-c760af43f1f8")
@@ -22,14 +22,14 @@ const t = () => "Enter a valid user ID",
   l = () => "Wprowadź prawidłowe ID użytkownika",
   a = () => "Введите корректный ID пользователя",
   p = () => "Введіть коректний ID користувача",
-  b = () => "Nhập một ID người dùng hợp lệ",
+  v = () => "Nhập một ID người dùng hợp lệ",
   z = (e = {}, n = {}) => {
     const r = n.locale ?? i();
-    return r === "en" ? t() : r === "pt" ? d() : r === "ch" ? s() : r === "de" ? u() : r === "es" ? o() : r === "fr" ? _() : r === "it" ? c() : r === "jp" ? f() : r === "pl" ? l() : r === "ru" ? a() : r === "uk" ? p() : b()
+    return r === "en" ? t() : r === "pt" ? d() : r === "ch" ? s() : r === "de" ? u() : r === "es" ? o() : r === "fr" ? _() : r === "it" ? c() : r === "jp" ? f() : r === "pl" ? l() : r === "ru" ? a() : r === "uk" ? p() : v()
   },
-  v = () => "Reddit",
   I = () => "Reddit",
   m = () => "Reddit",
+  b = () => "Reddit",
   D = () => "Reddit",
   g = () => "Reddit",
   R = () => "Reddit",
@@ -41,7 +41,7 @@ const t = () => "Enter a valid user ID",
   j = () => "Reddit",
   L = (e = {}, n = {}) => {
     const r = n.locale ?? i();
-    return r === "en" ? v() : r === "pt" ? I() : r === "ch" ? m() : r === "de" ? D() : r === "es" ? g() : r === "fr" ? R() : r === "it" ? y() : r === "jp" ? h() : r === "pl" ? w() : r === "ru" ? k() : r === "uk" ? E() : j()
+    return r === "en" ? I() : r === "pt" ? m() : r === "ch" ? b() : r === "de" ? D() : r === "es" ? g() : r === "fr" ? R() : r === "it" ? y() : r === "jp" ? h() : r === "pl" ? w() : r === "ru" ? k() : r === "uk" ? E() : j()
   };
 export {
   z as p, L as r

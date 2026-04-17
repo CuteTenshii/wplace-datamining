@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./DhZUX4Dk.js";
+} from "./MjchAmJs.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "cdbcf7fbe78b739ecf1b47eab1739b136749bbb3"
+      id: "e00cf9360a6b375b0d5f70104e81f621ce41927c"
     };
     var r = new e.Error().stack;
     r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "5e55f805-801d-468d-93e7-0a6fcf9fa52d", e._sentryDebugIdIdentifier = "sentry-dbid-5e55f805-801d-468d-93e7-0a6fcf9fa52d")
@@ -27,8 +27,8 @@ const s = () => "Latest",
     const t = r.locale ?? n();
     return t === "en" ? s() : t === "pt" ? o() : t === "ch" ? u() : t === "de" ? c() : t === "es" ? a() : t === "fr" ? i() : t === "it" ? f() : t === "jp" ? l() : t === "pl" ? _() : t === "ru" ? p() : t === "uk" ? d() : h()
   },
-  b = () => "Patch notes",
-  g = () => "Notas de atualização",
+  g = () => "Patch notes",
+  b = () => "Notas de atualização",
   y = () => "更新日志",
   j = () => "Versionshinweise",
   m = () => "Notas de actualización",
@@ -41,7 +41,7 @@ const s = () => "Latest",
   v = () => "Ghi chú cập nhật",
   T = (e = {}, r = {}) => {
     const t = r.locale ?? n();
-    return t === "en" ? b() : t === "pt" ? g() : t === "ch" ? y() : t === "de" ? j() : t === "es" ? m() : t === "fr" ? w() : t === "it" ? N() : t === "jp" ? k() : t === "pl" ? I() : t === "ru" ? D() : t === "uk" ? E() : v()
+    return t === "en" ? g() : t === "pt" ? b() : t === "ch" ? y() : t === "de" ? j() : t === "es" ? m() : t === "fr" ? w() : t === "it" ? N() : t === "jp" ? k() : t === "pl" ? I() : t === "ru" ? D() : t === "uk" ? E() : v()
   };
 export {
   L as l, T as p

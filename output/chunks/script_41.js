@@ -1,11 +1,11 @@
 import {
   f
-} from "./thmxJVVe.js";
+} from "./2vYTaM6k.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "cdbcf7fbe78b739ecf1b47eab1739b136749bbb3"
+      id: "e00cf9360a6b375b0d5f70104e81f621ce41927c"
     };
     var e = new t.Error().stack;
     e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "d06199bb-6311-42e7-baae-d5c10a674ce0", t._sentryDebugIdIdentifier = "sentry-dbid-d06199bb-6311-42e7-baae-d5c10a674ce0")
@@ -79,16 +79,16 @@ function u(t) {
   for (let r = 0; r < 40; r++) e = (2 * e + t / (e * e)) / 3;
   return e
 }
-const g = new Float64Array(256);
+const b = new Float64Array(256);
 for (let t = 0; t < 256; t++) {
   const e = t / 255;
-  g[t] = e > .04045 ? M((e + .055) / 1.055) : e / 12.92
+  b[t] = e > .04045 ? M((e + .055) / 1.055) : e / 12.92
 }
 
 function _(t) {
-  const e = g[t.r],
-    r = g[t.g],
-    n = g[t.b];
+  const e = b[t.r],
+    r = b[t.g],
+    n = b[t.b];
   let o = (e * .4124 + r * .3576 + n * .1805) / .95047,
     s = (e * .2126 + r * .7152 + n * .0722) / 1,
     c = (e * .0193 + r * .1192 + n * .9505) / 1.08883;
@@ -128,8 +128,8 @@ function q(t, e = "lab", r) {
       for (let a = 0; a < r.length; a++) {
         const l = D[r[a]];
         if (!l) continue;
-        const b = R(t, l.rgb);
-        b < i && (c = l.idx, i = b)
+        const g = R(t, l.rgb);
+        g < i && (c = l.idx, i = g)
       } else
         for (const a of y) {
           const l = R(t, a.rgb);
@@ -164,10 +164,10 @@ function E(t, e) {
     a = n * n + o * o - i * i;
   a = a < 0 ? 0 : Math.sqrt(a);
   var l = 1 + .045 * s,
-    b = 1 + .015 * s,
+    g = 1 + .015 * s,
     p = r / 1,
     h = i / l,
-    m = a / b,
+    m = a / g,
     v = p * p + h * h + m * m;
   return v < 0 ? 0 : Math.sqrt(v)
 }

@@ -1,31 +1,31 @@
-import "./BHORAsI-.js";
+import "./D1F5TLLk.js";
 import {
-  p as m,
+  p as u,
   t as f,
   a as n,
-  b as u,
+  b,
   c,
   d as v,
   s as _,
   r as w
-} from "./Dcbzw1se.js";
+} from "./ButFgnm2.js";
 import {
   i as h
-} from "./EkgfBfpq.js";
+} from "./95p05gav.js";
 import {
   d as x,
   a as d,
   s as E
-} from "./DeKgkIEE.js";
+} from "./BkefoxDz.js";
 import {
   p as y,
   r as S
-} from "./B5GV16O5.js";
+} from "./BOfR6roB.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "cdbcf7fbe78b739ecf1b47eab1739b136749bbb3"
+      id: "e00cf9360a6b375b0d5f70104e81f621ce41927c"
     };
     var t = new e.Error().stack;
     t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "03f1e844-e13e-4676-9f5e-0f58ece1e206", e._sentryDebugIdIdentifier = "sentry-dbid-03f1e844-e13e-4676-9f5e-0f58ece1e206")
@@ -36,19 +36,19 @@ var L = c("<span>wplace</span>"),
   R = c('<div><img alt="Wplace logo"/> <!></div>');
 
 function D(e, t) {
-  m(t, !0);
+  u(t, !0);
   let a = y(t, "size", 3, "default"),
-    b = S(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+    p = S(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
   var s = R();
   x(s, () => ({
-    ...b,
+    ...p,
     class: `flex items-center gap-1.5 ${t.class??""}`
   }));
   var l = v(s);
   let o;
-  var p = _(l, 2);
+  var g = _(l, 2);
   {
-    var g = A => {
+    var m = A => {
       var r = L();
       let i;
       f(() => i = d(r, 1, "text-base-content font-pixel", null, i, {
@@ -56,8 +56,8 @@ function D(e, t) {
         "text-5xl": a() === "lg" || a() === "medium"
       })), n(A, r)
     };
-    h(p, A => {
-      t.hasText && A(g)
+    h(g, A => {
+      t.hasText && A(m)
     })
   }
   w(s), f(() => {
@@ -67,7 +67,7 @@ function D(e, t) {
       "w-16": a() === "medium",
       "w-20": a() === "lg"
     }), E(l, "src", B)
-  }), n(e, s), u()
+  }), n(e, s), b()
 }
 export {
   D as L, B as l

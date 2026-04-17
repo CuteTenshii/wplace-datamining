@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./DhZUX4Dk.js";
+} from "./MjchAmJs.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "cdbcf7fbe78b739ecf1b47eab1739b136749bbb3"
+      id: "e00cf9360a6b375b0d5f70104e81f621ce41927c"
     };
     var r = new t.Error().stack;
     r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "3f8a47d5-3d9c-4954-89bf-c99c5fab64ef", t._sentryDebugIdIdentifier = "sentry-dbid-3f8a47d5-3d9c-4954-89bf-c99c5fab64ef")
@@ -22,12 +22,12 @@ const i = () => "Description",
   l = () => "Opis",
   _ = () => "Описание",
   a = () => "Опис",
-  b = () => "Mô tả",
+  x = () => "Mô tả",
   T = (t = {}, r = {}) => {
     const e = r.locale ?? n();
-    return e === "en" ? i() : e === "pt" ? s() : e === "ch" ? c() : e === "de" ? p() : e === "es" ? o() : e === "fr" ? u() : e === "it" ? d() : e === "jp" ? f() : e === "pl" ? l() : e === "ru" ? _() : e === "uk" ? a() : b()
+    return e === "en" ? i() : e === "pt" ? s() : e === "ch" ? c() : e === "de" ? p() : e === "es" ? o() : e === "fr" ? u() : e === "it" ? d() : e === "jp" ? f() : e === "pl" ? l() : e === "ru" ? _() : e === "uk" ? a() : x()
   },
-  x = () => "Pixels painted",
+  b = () => "Pixels painted",
   g = () => "Pixels pintados",
   y = () => "已绘制像素数",
   D = () => "Gemalte Pixel",
@@ -41,7 +41,7 @@ const i = () => "Description",
   m = () => "Pixel đã tô",
   L = (t = {}, r = {}) => {
     const e = r.locale ?? n();
-    return e === "en" ? x() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? D() : e === "es" ? h() : e === "fr" ? P() : e === "it" ? k() : e === "jp" ? w() : e === "pl" ? E() : e === "ru" ? I() : e === "uk" ? j() : m()
+    return e === "en" ? b() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? D() : e === "es" ? h() : e === "fr" ? P() : e === "it" ? k() : e === "jp" ? w() : e === "pl" ? E() : e === "ru" ? I() : e === "uk" ? j() : m()
   };
 export {
   T as d, L as p

@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./DhZUX4Dk.js";
+} from "./MjchAmJs.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "cdbcf7fbe78b739ecf1b47eab1739b136749bbb3"
+      id: "e00cf9360a6b375b0d5f70104e81f621ce41927c"
     };
     var t = new e.Error().stack;
     t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "a555abbb-acd0-48ad-9a29-01d10546e727", e._sentryDebugIdIdentifier = "sentry-dbid-a555abbb-acd0-48ad-9a29-01d10546e727")
@@ -16,13 +16,13 @@ function r() {
   return n()
 }
 
-function b() {
+function f() {
   return `/terms/return${r()==="pt"?"/pt":""}`
 }
 
-function f() {
+function s() {
   return `/terms/terms-of-service${r()==="pt"?"/pt":""}`
 }
 export {
-  r as g, b as r, f as t
+  r as g, f as r, s as t
 };
