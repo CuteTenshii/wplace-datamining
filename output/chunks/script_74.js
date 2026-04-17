@@ -1,11 +1,11 @@
 import {
   g as i
-} from "./CLdytBYG.js";
+} from "./DADvmwwi.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "454dd064a649ff0efc297a38e6aed3cfb6597516"
+      id: "906017252e1c5d4ea3d1148202cf14a58456747a"
     };
     var n = new e.Error().stack;
     n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "2cb492c4-da32-40ef-bd46-c760af43f1f8", e._sentryDebugIdIdentifier = "sentry-dbid-2cb492c4-da32-40ef-bd46-c760af43f1f8")
@@ -17,15 +17,15 @@ const t = () => "Enter a valid user ID",
   u = () => "Gib eine gültige Benutzer-ID ein",
   o = () => "Introduce un ID de usuario válido",
   _ = () => "Entrez un ID d’utilisateur valide",
-  f = () => "Inserisci un ID valido",
-  c = () => "有効なユーザーIDを入力してください。",
+  c = () => "Inserisci un ID valido",
+  f = () => "有効なユーザーIDを入力してください。",
   a = () => "Wprowadź prawidłowe ID użytkownika",
   l = () => "Введите корректный ID пользователя",
   p = () => "Введіть коректний ID користувача",
   v = () => "Nhập một ID người dùng hợp lệ",
   z = (e = {}, n = {}) => {
     const r = n.locale ?? i();
-    return r === "en" ? t() : r === "pt" ? d() : r === "ch" ? s() : r === "de" ? u() : r === "es" ? o() : r === "fr" ? _() : r === "it" ? f() : r === "jp" ? c() : r === "pl" ? a() : r === "ru" ? l() : r === "uk" ? p() : v()
+    return r === "en" ? t() : r === "pt" ? d() : r === "ch" ? s() : r === "de" ? u() : r === "es" ? o() : r === "fr" ? _() : r === "it" ? c() : r === "jp" ? f() : r === "pl" ? a() : r === "ru" ? l() : r === "uk" ? p() : v()
   },
   I = () => "Reddit",
   m = () => "Reddit",

@@ -1,14 +1,14 @@
 import {
-  g as t
-} from "./CLdytBYG.js";
+  g as e
+} from "./DADvmwwi.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "454dd064a649ff0efc297a38e6aed3cfb6597516"
+      id: "906017252e1c5d4ea3d1148202cf14a58456747a"
     };
-    var e = new r.Error().stack;
-    e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "5733d867-f29b-47aa-9528-17b6c5bf14d1", r._sentryDebugIdIdentifier = "sentry-dbid-5733d867-f29b-47aa-9528-17b6c5bf14d1")
+    var t = new r.Error().stack;
+    t && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[t] = "5733d867-f29b-47aa-9528-17b6c5bf14d1", r._sentryDebugIdIdentifier = "sentry-dbid-5733d867-f29b-47aa-9528-17b6c5bf14d1")
   } catch {}
 })();
 const i = () => "and",
@@ -23,8 +23,8 @@ const i = () => "and",
   p = () => "и",
   w = () => "та",
   d = () => "và",
-  Or = (r = {}, e = {}) => {
-    const n = e.locale ?? t();
+  Or = (r = {}, t = {}) => {
+    const n = t.locale ?? e();
     return n === "en" ? i() : n === "pt" ? o() : n === "ch" ? u() : n === "de" ? c() : n === "es" ? _() : n === "fr" ? a() : n === "it" ? s() : n === "jp" ? l() : n === "pl" ? f() : n === "ru" ? p() : n === "uk" ? w() : d()
   },
   g = () => "By continuing, you agree to our",
@@ -39,8 +39,8 @@ const i = () => "and",
   C = () => "Продолжая, вы соглашаетесь с нашими",
   T = () => "Продовжуючи, ви погоджуєтеся з нашими",
   W = () => "Khi tiếp tục, bạn đồng ý với",
-  Vr = (r = {}, e = {}) => {
-    const n = e.locale ?? t();
+  Vr = (r = {}, t = {}) => {
+    const n = t.locale ?? e();
     return n === "en" ? g() : n === "pt" ? h() : n === "ch" ? v() : n === "de" ? m() : n === "es" ? y() : n === "fr" ? b() : n === "it" ? k() : n === "jp" ? z() : n === "pl" ? j() : n === "ru" ? C() : n === "uk" ? T() : W()
   },
   A = () => "Captcha not solved",
@@ -55,8 +55,8 @@ const i = () => "and",
   R = () => "Капча не решена",
   B = () => "Капча не розв'язана",
   H = () => "Captcha chưa được giải",
-  qr = (r = {}, e = {}) => {
-    const n = e.locale ?? t();
+  qr = (r = {}, t = {}) => {
+    const n = t.locale ?? e();
     return n === "en" ? A() : n === "pt" ? $() : n === "ch" ? S() : n === "de" ? E() : n === "es" ? P() : n === "fr" ? D() : n === "it" ? I() : n === "jp" ? M() : n === "pl" ? N() : n === "ru" ? R() : n === "uk" ? B() : H()
   },
   K = () => "Community Guidelines",
@@ -71,25 +71,25 @@ const i = () => "and",
   G = () => "Правила сообщества",
   J = () => "Правила спільноти",
   Q = () => "Nguyên tắc Cộng đồng",
-  Yr = (r = {}, e = {}) => {
-    const n = e.locale ?? t();
+  Yr = (r = {}, t = {}) => {
+    const n = t.locale ?? e();
     return n === "en" ? K() : n === "pt" ? L() : n === "ch" ? O() : n === "de" ? V() : n === "es" ? q() : n === "fr" ? Y() : n === "it" ? Z() : n === "jp" ? x() : n === "pl" ? F() : n === "ru" ? G() : n === "uk" ? J() : Q()
   },
   U = () => "Do you have a Wplace Twitch account?",
   X = () => "Você tem uma conta Wplace associada à Twitch?",
   nn = () => "你有 Wplace Twitch 账号吗？",
   rn = () => "Hast du ein Wplace-Konto über Twitch?",
-  en = () => "¿Tienes una cuenta de Wplace asociada a Twitch?",
-  tn = () => "Avez-vous un compte Wplace associé à Twitch ?",
+  tn = () => "¿Tienes una cuenta de Wplace asociada a Twitch?",
+  en = () => "Avez-vous un compte Wplace associé à Twitch ?",
   on = () => "Hai un account Wplace associato a Twitch?",
   un = () => "WplaceのTwitch連携アカウントをお持ちですか？",
   cn = () => "Czy masz konto Wplace połączone z Twitchem?",
   _n = () => "У вас есть аккаунт Wplace, связанный с Twitch?",
   an = () => "У вас є акаунт Wplace, повʼязаний із Twitch?",
   sn = () => "Bạn có tài khoản Wplace liên kết với Twitch không?",
-  Zr = (r = {}, e = {}) => {
-    const n = e.locale ?? t();
-    return n === "en" ? U() : n === "pt" ? X() : n === "ch" ? nn() : n === "de" ? rn() : n === "es" ? en() : n === "fr" ? tn() : n === "it" ? on() : n === "jp" ? un() : n === "pl" ? cn() : n === "ru" ? _n() : n === "uk" ? an() : sn()
+  Zr = (r = {}, t = {}) => {
+    const n = t.locale ?? e();
+    return n === "en" ? U() : n === "pt" ? X() : n === "ch" ? nn() : n === "de" ? rn() : n === "es" ? tn() : n === "fr" ? en() : n === "it" ? on() : n === "jp" ? un() : n === "pl" ? cn() : n === "ru" ? _n() : n === "uk" ? an() : sn()
   },
   ln = r => `Login with ${r.name}`,
   fn = r => `Entrar com ${r.name}`,
@@ -103,8 +103,8 @@ const i = () => "and",
   yn = r => `Войти через ${r.name}`,
   bn = r => `Увійти через ${r.name}`,
   kn = r => `Đăng nhập bằng ${r.name}`,
-  xr = (r, e = {}) => {
-    const n = e.locale ?? t();
+  xr = (r, t = {}) => {
+    const n = t.locale ?? e();
     return n === "en" ? ln(r) : n === "pt" ? fn(r) : n === "ch" ? pn(r) : n === "de" ? wn(r) : n === "es" ? dn(r) : n === "fr" ? gn(r) : n === "it" ? hn(r) : n === "jp" ? vn(r) : n === "pl" ? mn(r) : n === "ru" ? yn(r) : n === "uk" ? bn(r) : kn(r)
   },
   zn = () => "Migrate your account",
@@ -119,8 +119,8 @@ const i = () => "and",
   Pn = () => "Мигрировать аккаунт",
   Dn = () => "Перенести акаунт",
   In = () => "Di chuyển tài khoản",
-  Fr = (r = {}, e = {}) => {
-    const n = e.locale ?? t();
+  Fr = (r = {}, t = {}) => {
+    const n = t.locale ?? e();
     return n === "en" ? zn() : n === "pt" ? jn() : n === "ch" ? Cn() : n === "de" ? Tn() : n === "es" ? Wn() : n === "fr" ? An() : n === "it" ? $n() : n === "jp" ? Sn() : n === "pl" ? En() : n === "ru" ? Pn() : n === "uk" ? Dn() : In()
   },
   Mn = () => "Open in browser",
@@ -135,8 +135,8 @@ const i = () => "and",
   qn = () => "Открыть в браузере",
   Yn = () => "Відкрити у браузері",
   Zn = () => "Mở trong trình duyệt",
-  Gr = (r = {}, e = {}) => {
-    const n = e.locale ?? t();
+  Gr = (r = {}, t = {}) => {
+    const n = t.locale ?? e();
     return n === "en" ? Mn() : n === "pt" ? Nn() : n === "ch" ? Rn() : n === "de" ? Bn() : n === "es" ? Hn() : n === "fr" ? Kn() : n === "it" ? Ln() : n === "jp" ? On() : n === "pl" ? Vn() : n === "ru" ? qn() : n === "uk" ? Yn() : Zn()
   },
   xn = () => "Privacy Policy",
@@ -148,12 +148,12 @@ const i = () => "and",
   Xn = () => "Informativa sulla privacy",
   nr = () => "プライバシーポリシー",
   rr = () => "Polityka prywatności",
-  er = () => "Политика конфиденциальности",
-  tr = () => "Політика конфіденційності",
+  tr = () => "Политика конфиденциальности",
+  er = () => "Політика конфіденційності",
   ir = () => "Chính sách quyền riêng tư",
-  Jr = (r = {}, e = {}) => {
-    const n = e.locale ?? t();
-    return n === "en" ? xn() : n === "pt" ? Fn() : n === "ch" ? Gn() : n === "de" ? Jn() : n === "es" ? Qn() : n === "fr" ? Un() : n === "it" ? Xn() : n === "jp" ? nr() : n === "pl" ? rr() : n === "ru" ? er() : n === "uk" ? tr() : ir()
+  Jr = (r = {}, t = {}) => {
+    const n = t.locale ?? e();
+    return n === "en" ? xn() : n === "pt" ? Fn() : n === "ch" ? Gn() : n === "de" ? Jn() : n === "es" ? Qn() : n === "fr" ? Un() : n === "it" ? Xn() : n === "jp" ? nr() : n === "pl" ? rr() : n === "ru" ? tr() : n === "uk" ? er() : ir()
   },
   or = () => "Terms of Service",
   ur = () => "Termos de Serviço",
@@ -167,8 +167,8 @@ const i = () => "and",
   wr = () => "Условия обслуживания",
   dr = () => "Умови обслуговування",
   gr = () => "Điều khoản dịch vụ",
-  Qr = (r = {}, e = {}) => {
-    const n = e.locale ?? t();
+  Qr = (r = {}, t = {}) => {
+    const n = t.locale ?? e();
     return n === "en" ? or() : n === "pt" ? ur() : n === "ch" ? cr() : n === "de" ? _r() : n === "es" ? ar() : n === "fr" ? sr() : n === "it" ? lr() : n === "jp" ? fr() : n === "pl" ? pr() : n === "ru" ? wr() : n === "uk" ? dr() : gr()
   },
   hr = () => "Some features may not work correctly. We recommend using a regular browser.",
@@ -183,8 +183,8 @@ const i = () => "and",
   Tr = () => "Некоторые функции могут работать неправильно. Мы рекомендуем использовать обычный браузер.",
   Wr = () => "Деякі функції можуть працювати некоректно. Рекомендуємо використовувати звичайний браузер.",
   Ar = () => "Một số tính năng có thể không hoạt động đúng cách. Chúng tôi khuyên bạn nên truy cập bằng trình duyệt thông thường.",
-  Ur = (r = {}, e = {}) => {
-    const n = e.locale ?? t();
+  Ur = (r = {}, t = {}) => {
+    const n = t.locale ?? e();
     return n === "en" ? hr() : n === "pt" ? vr() : n === "ch" ? mr() : n === "de" ? yr() : n === "es" ? br() : n === "fr" ? kr() : n === "it" ? zr() : n === "jp" ? jr() : n === "pl" ? Cr() : n === "ru" ? Tr() : n === "uk" ? Wr() : Ar()
   },
   $r = () => "You are in a webview",
@@ -199,8 +199,8 @@ const i = () => "and",
   Br = () => "Вы находитесь в веб-просмотре",
   Hr = () => "Ви перебуваєте у веб-перегляді",
   Kr = () => "Bạn đang ở trong một webview",
-  Xr = (r = {}, e = {}) => {
-    const n = e.locale ?? t();
+  Xr = (r = {}, t = {}) => {
+    const n = t.locale ?? e();
     return n === "en" ? $r() : n === "pt" ? Sr() : n === "ch" ? Er() : n === "de" ? Pr() : n === "es" ? Dr() : n === "fr" ? Ir() : n === "it" ? Mr() : n === "jp" ? Nr() : n === "pl" ? Rr() : n === "ru" ? Br() : n === "uk" ? Hr() : Kr()
   };
 export {

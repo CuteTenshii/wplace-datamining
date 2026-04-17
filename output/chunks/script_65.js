@@ -1,11 +1,11 @@
 import {
   g as s
-} from "./CLdytBYG.js";
+} from "./DADvmwwi.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "454dd064a649ff0efc297a38e6aed3cfb6597516"
+      id: "906017252e1c5d4ea3d1148202cf14a58456747a"
     };
     var n = new r.Error().stack;
     n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "ef164a17-cff1-4d3e-8a31-7d29d77617fa", r._sentryDebugIdIdentifier = "sentry-dbid-ef164a17-cff1-4d3e-8a31-7d29d77617fa")
@@ -18,14 +18,14 @@ const t = () => "Users banned successfully",
   c = () => "Usuarios baneados correctamente",
   d = () => "Utilisateurs bannis avec succès",
   a = () => "Utenti bannati con successo",
-  f = () => "ユーザーをBANしました。",
-  _ = () => "Użytkownicy zostali pomyślnie zbanowani",
+  _ = () => "ユーザーをBANしました。",
+  f = () => "Użytkownicy zostali pomyślnie zbanowani",
   l = () => "Пользователи успешно забанены",
   b = () => "Користувачів успішно заблоковано",
   m = () => "Đã cấm người dùng thành công",
   T = (r = {}, n = {}) => {
     const e = n.locale ?? s();
-    return e === "en" ? t() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? d() : e === "it" ? a() : e === "jp" ? f() : e === "pl" ? _() : e === "ru" ? l() : e === "uk" ? b() : m()
+    return e === "en" ? t() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? d() : e === "it" ? a() : e === "jp" ? _() : e === "pl" ? f() : e === "ru" ? l() : e === "uk" ? b() : m()
   },
   p = () => "Users timeouted successfully",
   g = () => "Usuários suspensos com sucesso",
