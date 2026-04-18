@@ -1,4 +1,4 @@
-import "./BKKpqwch.js";
+import "./C33D4ipC.js";
 import {
   a as r,
   g as o,
@@ -6,18 +6,18 @@ import {
   d as t,
   b as i,
   u as a
-} from "./Rb-9YSUQ.js";
+} from "./Zu8OGT69.js";
 (function() {
   try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "e6c43a335491af110c902083fb644fb71e659308"
+    var d = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    d.SENTRY_RELEASE = {
+      id: "f2a47ca0cf31d67c069828387c1df370b5604651"
     };
-    var d = new e.Error().stack;
-    d && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[d] = "be9e3ceb-4b3c-408f-8861-23dda3204cca", e._sentryDebugIdIdentifier = "sentry-dbid-be9e3ceb-4b3c-408f-8861-23dda3204cca")
+    var e = new d.Error().stack;
+    e && (d._sentryDebugIds = d._sentryDebugIds || {}, d._sentryDebugIds[e] = "be9e3ceb-4b3c-408f-8861-23dda3204cca", d._sentryDebugIdIdentifier = "sentry-dbid-be9e3ceb-4b3c-408f-8861-23dda3204cca")
   } catch {}
 })();
-const l = {
+const b = {
     user: a(),
     community_leader: "Disc. Mod",
     discord_leader: "Disc. Lead",
@@ -34,5 +34,5 @@ const l = {
     admin: r()
   };
 export {
-  m as R, l as a
+  m as R, b as a
 };

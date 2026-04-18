@@ -18,7 +18,7 @@ var p = (e, t, n) => (tt(e, t, "read from private field"), n ? n.call(e) : t.get
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "e6c43a335491af110c902083fb644fb71e659308"
+      id: "f2a47ca0cf31d67c069828387c1df370b5604651"
     };
     var t = new e.Error().stack;
     t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "99e64949-473f-460f-bc34-9ff1a16c7bdd", e._sentryDebugIdIdentifier = "sentry-dbid-99e64949-473f-460f-bc34-9ff1a16c7bdd")

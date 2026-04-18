@@ -1,11 +1,11 @@
 import {
   g as o
-} from "./BKKpqwch.js";
+} from "./C33D4ipC.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "e6c43a335491af110c902083fb644fb71e659308"
+      id: "f2a47ca0cf31d67c069828387c1df370b5604651"
     };
     var n = new e.Error().stack;
     n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "0ea7cc9d-2ea5-4af5-a99a-39bddccfd536", e._sentryDebugIdIdentifier = "sentry-dbid-0ea7cc9d-2ea5-4af5-a99a-39bddccfd536")
@@ -13,8 +13,8 @@ import {
 })();
 const t = () => "Error loading",
   a = () => "Erro ao carregar",
-  i = () => "加载出错",
-  d = () => "Fehler beim Laden",
+  d = () => "加载出错",
+  i = () => "Fehler beim Laden",
   u = () => "Error al cargar",
   c = () => "Erreur lors du chargement",
   l = () => "Errore nel caricamento",
@@ -25,7 +25,7 @@ const t = () => "Error loading",
   b = () => "Lỗi tải dữ liệu",
   y = (e = {}, n = {}) => {
     const r = n.locale ?? o();
-    return r === "en" ? t() : r === "pt" ? a() : r === "ch" ? i() : r === "de" ? d() : r === "es" ? u() : r === "fr" ? c() : r === "it" ? l() : r === "jp" ? f() : r === "pl" ? s() : r === "ru" ? _() : r === "uk" ? g() : b()
+    return r === "en" ? t() : r === "pt" ? a() : r === "ch" ? d() : r === "de" ? i() : r === "es" ? u() : r === "fr" ? c() : r === "it" ? l() : r === "jp" ? f() : r === "pl" ? s() : r === "ru" ? _() : r === "uk" ? g() : b()
   };
 export {
   y as e

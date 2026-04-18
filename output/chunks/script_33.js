@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./BKKpqwch.js";
+} from "./C33D4ipC.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "e6c43a335491af110c902083fb644fb71e659308"
+      id: "f2a47ca0cf31d67c069828387c1df370b5604651"
     };
     var r = new t.Error().stack;
     r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "993d5df6-6e47-4522-a281-4a70aec8b474", t._sentryDebugIdIdentifier = "sentry-dbid-993d5df6-6e47-4522-a281-4a70aec8b474")
@@ -30,8 +30,8 @@ const o = () => "Eraser",
   y = () => "Not enough Droplets",
   h = () => "Droplets insuficientes",
   m = () => "水滴数量不足",
-  b = () => "Nicht genug Droplets",
-  x = () => "No tienes suficientes gotas",
+  x = () => "Nicht genug Droplets",
+  b = () => "No tienes suficientes gotas",
   k = () => "Pas assez de droplets",
   q = () => "Gocce insufficienti",
   v = () => "ドロップレットが足りません。",
@@ -41,7 +41,7 @@ const o = () => "Eraser",
   P = () => "Không đủ droplets",
   de = (t = {}, r = {}) => {
     const e = r.locale ?? n();
-    return e === "en" ? y() : e === "pt" ? h() : e === "ch" ? m() : e === "de" ? b() : e === "es" ? x() : e === "fr" ? k() : e === "it" ? q() : e === "jp" ? v() : e === "pl" ? z() : e === "ru" ? j() : e === "uk" ? D() : P()
+    return e === "en" ? y() : e === "pt" ? h() : e === "ch" ? m() : e === "de" ? x() : e === "es" ? b() : e === "fr" ? k() : e === "it" ? q() : e === "jp" ? v() : e === "pl" ? z() : e === "ru" ? j() : e === "uk" ? D() : P()
   },
   w = () => "Refund Policy",
   R = () => "Política de Reembolso",
