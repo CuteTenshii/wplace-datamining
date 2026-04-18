@@ -1,19 +1,19 @@
 import {
   g as t
-} from "./BrFrnQhU.js";
+} from "./YjF1d-DF.js";
 (function() {
   try {
     var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     n.SENTRY_RELEASE = {
-      id: "adbd784807892a96485bba09dcce4d69b0904804"
+      id: "8cde383e539e83c9bf370a8bc3de0b358fbc04c8"
     };
     var e = new n.Error().stack;
     e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "09e8c7b4-b47a-42dd-9a91-ebaa6a75318f", n._sentryDebugIdIdentifier = "sentry-dbid-09e8c7b4-b47a-42dd-9a91-ebaa6a75318f")
   } catch {}
 })();
 const o = () => "Confirm",
-  i = () => "Confirmar",
-  f = () => "确认",
+  f = () => "Confirmar",
+  i = () => "确认",
   c = () => "Bestätigen",
   u = () => "Confirmar",
   s = () => "Confirmer",
@@ -25,7 +25,7 @@ const o = () => "Confirm",
   _ = () => "Xác nhận",
   g = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? o() : r === "pt" ? i() : r === "ch" ? f() : r === "de" ? c() : r === "es" ? u() : r === "fr" ? s() : r === "it" ? a() : r === "jp" ? d() : r === "pl" ? m() : r === "ru" ? b() : r === "uk" ? l() : _()
+    return r === "en" ? o() : r === "pt" ? f() : r === "ch" ? i() : r === "de" ? c() : r === "es" ? u() : r === "fr" ? s() : r === "it" ? a() : r === "jp" ? d() : r === "pl" ? m() : r === "ru" ? b() : r === "uk" ? l() : _()
   };
 export {
   g as c

@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./BrFrnQhU.js";
+} from "./YjF1d-DF.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "adbd784807892a96485bba09dcce4d69b0904804"
+      id: "8cde383e539e83c9bf370a8bc3de0b358fbc04c8"
     };
     var r = new e.Error().stack;
     r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "5e55f805-801d-468d-93e7-0a6fcf9fa52d", e._sentryDebugIdIdentifier = "sentry-dbid-5e55f805-801d-468d-93e7-0a6fcf9fa52d")
@@ -14,18 +14,18 @@ import {
 const s = () => "Latest",
   o = () => "Mais recente",
   u = () => "最新",
-  a = () => "Neueste",
-  c = () => "Último",
+  c = () => "Neueste",
+  a = () => "Último",
   i = () => "Derniers",
   f = () => "Ultimi",
   l = () => "最新",
   _ = () => "Najnowsze",
-  d = () => "Последние",
-  p = () => "Останні",
+  p = () => "Последние",
+  d = () => "Останні",
   h = () => "Mới nhất",
   L = (e = {}, r = {}) => {
     const t = r.locale ?? n();
-    return t === "en" ? s() : t === "pt" ? o() : t === "ch" ? u() : t === "de" ? a() : t === "es" ? c() : t === "fr" ? i() : t === "it" ? f() : t === "jp" ? l() : t === "pl" ? _() : t === "ru" ? d() : t === "uk" ? p() : h()
+    return t === "en" ? s() : t === "pt" ? o() : t === "ch" ? u() : t === "de" ? c() : t === "es" ? a() : t === "fr" ? i() : t === "it" ? f() : t === "jp" ? l() : t === "pl" ? _() : t === "ru" ? p() : t === "uk" ? d() : h()
   },
   b = () => "Patch notes",
   g = () => "Notas de atualização",
