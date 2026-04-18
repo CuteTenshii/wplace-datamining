@@ -1,168 +1,197 @@
-import "./0aBKUdfq.js";
+import "./BPn1sVO4.js";
 import {
-  o as S
-} from "./B7xIFnYh.js";
+  o as q,
+  a as K
+} from "./DqDO4Xn-.js";
 import {
-  K,
-  x as N,
-  W as R,
-  w as q,
-  bl as M,
-  p as P,
-  h as w,
-  l as W,
-  f as Y,
-  i as g,
-  a as o,
-  b as A,
-  e as B,
-  t as k,
-  c as _,
-  u as G
-} from "./DK4l5t5k.js";
+  K as O,
+  x as G,
+  W as P,
+  w as Y,
+  bl as B,
+  p as J,
+  h as b,
+  i as o,
+  l as Q,
+  f as U,
+  a as g,
+  b as V,
+  e as k,
+  t as I,
+  c as C,
+  u as X
+} from "./BldsY2Le.js";
 import {
-  i as H
-} from "./PP1qTMI4.js";
+  i as Z
+} from "./BMBxSkEr.js";
 import {
-  a as x
-} from "./D6rJUPqv.js";
+  a as D
+} from "./BkJfUC8t.js";
 import {
-  p as r
-} from "./MJZQA7cB.js";
-import {
-  j as v
-} from "./DBMBCB6k.js";
+  p as i
+} from "./DU6s87IP.js";
 (function() {
   try {
-    var l = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    l.SENTRY_RELEASE = {
-      id: "e0127cf3e7a9cd170d72434c8831b6836f9b0e1e"
+    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
+    r.SENTRY_RELEASE = {
+      id: "adbd784807892a96485bba09dcce4d69b0904804"
     };
-    var e = new l.Error().stack;
-    e && (l._sentryDebugIds = l._sentryDebugIds || {}, l._sentryDebugIds[e] = "1ccd701e-3fab-4b0b-91df-fbb6fcd52aff", l._sentryDebugIdIdentifier = "sentry-dbid-1ccd701e-3fab-4b0b-91df-fbb6fcd52aff")
+    var e = new r.Error().stack;
+    e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "4c4e9506-f0ee-45f5-a159-7765fb77b844", r._sentryDebugIdIdentifier = "sentry-dbid-4c4e9506-f0ee-45f5-a159-7765fb77b844")
   } catch {}
 })();
 
-function J(l, e, n) {
-  K(() => {
-    var d = N(() => e(l, n == null ? void 0 : n()) || {});
-    if (n && (d != null && d.update)) {
+function p(r, e, d) {
+  O(() => {
+    var l = G(() => e(r, d == null ? void 0 : d()) || {});
+    if (d && (l != null && l.update)) {
       var f = !1,
-        s = {};
-      R(() => {
-        var c = n();
-        q(c), f && M(s, c) && (s = c, d.update(c))
+        w = {};
+      P(() => {
+        var u = d();
+        Y(u), f && B(w, u) && (w = u, l.update(u))
       }), f = !0
     }
-    if (d != null && d.destroy) return () => d.destroy()
+    if (l != null && l.destroy) return () => l.destroy()
   })
 }
-var O = _("<div></div>"),
-  Q = _('<div><span class="loading loading-spinner loading-lg"></span></div>');
+let v = k(!1),
+  T = k(0);
+var $ = C("<div></div>"),
+  ee = C('<div><span class="loading loading-spinner loading-lg"></span></div>');
 
-function te(l, e) {
-  P(e, !0);
-  let n = r(e, "widgetId", 15),
-    d = r(e, "appearance", 3, "always"),
-    f = r(e, "language", 3, "auto"),
-    s = r(e, "execution", 3, "render"),
-    c = r(e, "retryInterval", 3, 8e3),
-    I = r(e, "retry", 3, "auto"),
-    E = r(e, "refreshExpired", 3, "auto"),
-    C = r(e, "theme", 3, "auto"),
-    y = r(e, "size", 3, "normal"),
-    D = r(e, "tabIndex", 3, 0);
-  r(e, "reset", 15)(() => {
-    var a;
-    n() && ((a = window == null ? void 0 : window.turnstile) == null || a.reset(n()))
+function de(r, e) {
+  J(e, !0);
+  const d = 1800 * 1e3,
+    l = 10 * 1e3;
+  let f = i(e, "widgetId", 15),
+    w = i(e, "appearance", 3, "always"),
+    u = i(e, "language", 3, "auto"),
+    S = i(e, "execution", 3, "render"),
+    L = i(e, "retryInterval", 3, 8e3),
+    R = i(e, "retry", 3, "auto"),
+    j = i(e, "refreshExpired", 3, "auto"),
+    W = i(e, "theme", 3, "auto"),
+    x = i(e, "size", 3, "normal"),
+    z = i(e, "tabIndex", 3, 0);
+  i(e, "reset", 15)(() => {
+    var t;
+    f() && ((t = window == null ? void 0 : window.turnstile) == null || t.reset(f()))
   });
-  const L = G(() => ({
+  let m;
+
+  function s() {
+    m && (clearTimeout(m), m = void 0)
+  }
+
+  function _() {
+    s(), m = setTimeout(() => {
+      var t;
+      m = void 0, (t = e.errorCallback) == null || t.call(e, "render-timeout")
+    }, l)
+  }
+  const A = X(() => ({
       sitekey: e.siteKey,
-      callback: (a, t) => {
-        var i;
-        (i = e.callback) == null || i.call(e, a, t)
+      callback: (t, a) => {
+        var n;
+        s(), (n = e.callback) == null || n.call(e, t, a)
       },
-      "error-callback": a => {
-        var t;
-        (t = e.errorCallback) == null || t.call(e, a)
+      "error-callback": t => {
+        var a;
+        s(), (a = e.errorCallback) == null || a.call(e, t)
       },
       "timeout-callback": () => {
-        var a;
-        (a = e.timeoutCallback) == null || a.call(e)
+        var t;
+        (t = e.timeoutCallback) == null || t.call(e)
       },
       "expired-callback": () => {
-        var a;
-        (a = e.expiredCallback) == null || a.call(e)
+        var t;
+        (t = e.expiredCallback) == null || t.call(e)
       },
       "before-interactive-callback": () => {
-        var a;
-        (a = e.beforeInteractiveCallback) == null || a.call(e)
+        var t;
+        s(), (t = e.beforeInteractiveCallback) == null || t.call(e)
       },
       "after-interactive-callback": () => {
-        var a;
-        (a = e.afterInteractiveCallback) == null || a.call(e)
+        var t;
+        s(), (t = e.afterInteractiveCallback) == null || t.call(e)
       },
       "unsupported-callback": () => {
-        var a;
-        return (a = e.unsupportedCallback) == null ? void 0 : a.call(e)
+        var t;
+        return (t = e.unsupportedCallback) == null ? void 0 : t.call(e)
       },
       "response-field-name": e.responseFieldName ?? e.formsField ?? "cf-turnstile-response",
       "response-field": e.responseField ?? e.forms ?? !0,
-      "refresh-expired": E(),
-      "retry-interval": c(),
-      tabindex: D(),
-      appearance: d(),
-      execution: s(),
-      language: f(),
+      "refresh-expired": j(),
+      "retry-interval": L(),
+      tabindex: z(),
+      appearance: w(),
+      execution: S(),
+      language: u(),
       action: e.action,
-      retry: I(),
-      theme: C(),
+      retry: R(),
+      theme: W(),
       cData: e.cData,
-      size: y()
+      size: x()
     })),
-    u = (a, t) => {
-      let i = window.turnstile.render(a, t);
-      return n(i), {
+    y = (t, a) => {
+      let n = window.turnstile.render(t, a);
+      return f(n), _(), {
         destroy() {
-          window.turnstile.remove(i)
+          s(), window.turnstile.remove(n)
         },
-        update(m) {
-          window.turnstile.remove(i), i = window.turnstile.render(a, m), n(i)
+        update(c) {
+          s(), window.turnstile.remove(n), n = window.turnstile.render(t, c), f(n), _()
         }
       }
     };
-  let b = B(!1);
-  S(() => {
-    if (w(b, !0), !v.turnstatileLoaded) {
-      const a = document.createElement("script");
-      a.type = "text/javascript", a.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit", a.async = !0, a.addEventListener("load", () => v.turnstatileLoaded = !0, {
+  let h = k(!1);
+  q(() => {
+    var n;
+    b(h, !0);
+    const t = Date.now();
+    if (o(v) && t - o(T) > d) {
+      b(v, !1), (n = document.querySelector('script[src*="turnstile/v0/api.js"]')) == null || n.remove();
+      try {
+        delete window.turnstile
+      } catch {
+        window.turnstile = void 0
+      }
+    }
+    if (!o(v)) {
+      const c = document.createElement("script");
+      c.type = "text/javascript", c.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit", c.async = !0, c.addEventListener("load", () => {
+        b(v, !0), b(T, Date.now(), !0)
+      }, {
         once: !0
-      }), document.head.appendChild(a)
+      }), document.head.appendChild(c)
     }
     return () => {
-      w(b, !1)
+      b(h, !1)
     }
+  }), K(() => {
+    s()
   });
-  var h = W(),
-    T = Y(h);
+  var E = Q(),
+    F = U(E);
   {
-    var j = a => {
-        var t = O();
-        let i;
-        J(t, (m, F) => u == null ? void 0 : u(m, F), () => g(L)), k(() => i = x(t, 1, `h-16 ${e.class??""}`, "svelte-1lm836y", i, {
-          flexible: y() == "flexible"
-        })), o(a, t)
+    var H = t => {
+        var a = $();
+        let n;
+        p(a, (c, N) => y == null ? void 0 : y(c, N), () => o(A)), I(() => n = D(a, 1, `h-16 ${e.class??""}`, "svelte-1lm836y", n, {
+          flexible: x() == "flexible"
+        })), g(t, a)
       },
-      z = a => {
-        var t = Q();
-        k(() => x(t, 1, `flex h-16 items-center justify-center ${e.class??""}`, "svelte-1lm836y")), o(a, t)
+      M = t => {
+        var a = ee();
+        I(() => D(a, 1, `flex h-16 items-center justify-center ${e.class??""}`, "svelte-1lm836y")), g(t, a)
       };
-    H(T, a => {
-      v.turnstatileLoaded && g(b) ? a(j) : a(z, !1)
+    Z(F, t => {
+      o(v) && o(h) ? t(H) : t(M, !1)
     })
   }
-  o(l, h), A()
+  g(r, E), V()
 }
 export {
-  te as T, J as a
+  de as T, p as a
 };

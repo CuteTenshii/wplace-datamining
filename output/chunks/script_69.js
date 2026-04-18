@@ -1,31 +1,31 @@
-import "./0aBKUdfq.js";
+import "./BPn1sVO4.js";
 import {
-  p as u,
-  t as c,
-  a as d,
-  b,
+  p as m,
+  t as d,
+  a as c,
+  b as u,
   c as f,
   d as v,
   s as _,
   r as w
-} from "./DK4l5t5k.js";
+} from "./BldsY2Le.js";
 import {
   i as h
-} from "./PP1qTMI4.js";
+} from "./BMBxSkEr.js";
 import {
   d as x,
   a as n,
   s as E
-} from "./D6rJUPqv.js";
+} from "./BkJfUC8t.js";
 import {
   p as y,
   r as S
-} from "./MJZQA7cB.js";
+} from "./DU6s87IP.js";
 (function() {
   try {
     var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     e.SENTRY_RELEASE = {
-      id: "e0127cf3e7a9cd170d72434c8831b6836f9b0e1e"
+      id: "adbd784807892a96485bba09dcce4d69b0904804"
     };
     var a = new e.Error().stack;
     a && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[a] = "b40d2afc-7115-4cc4-800c-ca2be506e323", e._sentryDebugIdIdentifier = "sentry-dbid-b40d2afc-7115-4cc4-800c-ca2be506e323")
@@ -36,38 +36,38 @@ var L = f("<span>wplace</span>"),
   R = f('<div><img alt="Wplace logo"/> <!></div>');
 
 function D(e, a) {
-  u(a, !0);
+  m(a, !0);
   let t = y(a, "size", 3, "default"),
-    p = S(a, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+    b = S(a, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
   var s = R();
   x(s, () => ({
-    ...p,
+    ...b,
     class: `flex items-center gap-1.5 ${a.class??""}`
   }));
   var l = v(s);
   let o;
-  var g = _(l, 2);
+  var p = _(l, 2);
   {
-    var m = A => {
+    var g = A => {
       var r = L();
       let i;
-      c(() => i = n(r, 1, "text-base-content font-pixel", null, i, {
+      d(() => i = n(r, 1, "text-base-content font-pixel", null, i, {
         "text-4xl": t() === "default",
         "text-5xl": t() === "lg" || t() === "medium"
-      })), d(A, r)
+      })), c(A, r)
     };
-    h(g, A => {
-      a.hasText && A(m)
+    h(p, A => {
+      a.hasText && A(g)
     })
   }
-  w(s), c(() => {
+  w(s), d(() => {
     o = n(l, 1, "pixelated h-auto shrink-0", null, o, {
       "w-4": t() === "small",
       "w-10": t() === "default",
       "w-16": t() === "medium",
       "w-20": t() === "lg"
     }), E(l, "src", B)
-  }), d(e, s), b()
+  }), c(e, s), u()
 }
 export {
   D as L, B as l
