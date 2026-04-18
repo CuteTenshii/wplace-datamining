@@ -1,11 +1,11 @@
 import {
   g as e
-} from "./YjF1d-DF.js";
+} from "./BKKpqwch.js";
 (function() {
   try {
     var f = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     f.SENTRY_RELEASE = {
-      id: "8cde383e539e83c9bf370a8bc3de0b358fbc04c8"
+      id: "e6c43a335491af110c902083fb644fb71e659308"
     };
     var r = new f.Error().stack;
     r && (f._sentryDebugIds = f._sentryDebugIds || {}, f._sentryDebugIds[r] = "b9b33e77-4f93-4cbd-a901-f05ce83847b9", f._sentryDebugIdIdentifier = "sentry-dbid-b9b33e77-4f93-4cbd-a901-f05ce83847b9")
@@ -15,9 +15,9 @@ const n = () => "Staff",
   s = () => "Equipe",
   u = () => "工作人员",
   a = () => "Staff",
-  c = () => "Staff",
   o = () => "Staff",
   i = () => "Staff",
+  c = () => "Staff",
   d = () => "スタッフ",
   b = () => "Staff",
   l = () => "Персонал",
@@ -25,7 +25,7 @@ const n = () => "Staff",
   p = () => "Staff",
   y = (f = {}, r = {}) => {
     const t = r.locale ?? e();
-    return t === "en" ? n() : t === "pt" ? s() : t === "ch" ? u() : t === "de" ? a() : t === "es" ? c() : t === "fr" ? o() : t === "it" ? i() : t === "jp" ? d() : t === "pl" ? b() : t === "ru" ? l() : t === "uk" ? _() : p()
+    return t === "en" ? n() : t === "pt" ? s() : t === "ch" ? u() : t === "de" ? a() : t === "es" ? o() : t === "fr" ? i() : t === "it" ? c() : t === "jp" ? d() : t === "pl" ? b() : t === "ru" ? l() : t === "uk" ? _() : p()
   };
 export {
   y as s

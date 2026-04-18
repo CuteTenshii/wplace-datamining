@@ -1,8 +1,8 @@
-import "./3onovZFu.js";
+import "./D5Mk_1eX.js";
 import {
   o as q,
   a as K
-} from "./BaOB-WSk.js";
+} from "./DiNWWPR3.js";
 import {
   K as O,
   x as G,
@@ -20,24 +20,24 @@ import {
   t as I,
   c as C,
   u as X
-} from "./Bpkf4F49.js";
+} from "./BYTf-X4W.js";
 import {
   i as Z
-} from "./h1NDdBVH.js";
+} from "./BQVJ6ha0.js";
 import {
   a as D
-} from "./CR0laCpx.js";
+} from "./BvWEorH0.js";
 import {
   p as i
-} from "./BIcASWQ9.js";
+} from "./DxS_2ZxM.js";
 (function() {
   try {
     var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     r.SENTRY_RELEASE = {
-      id: "8cde383e539e83c9bf370a8bc3de0b358fbc04c8"
+      id: "e6c43a335491af110c902083fb644fb71e659308"
     };
     var e = new r.Error().stack;
-    e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "4c4e9506-f0ee-45f5-a159-7765fb77b844", r._sentryDebugIdIdentifier = "sentry-dbid-4c4e9506-f0ee-45f5-a159-7765fb77b844")
+    e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "a364ba61-544c-4253-9eff-03f22528ceb7", r._sentryDebugIdIdentifier = "sentry-dbid-a364ba61-544c-4253-9eff-03f22528ceb7")
   } catch {}
 })();
 
@@ -63,7 +63,7 @@ var $ = C("<div></div>"),
 function de(r, e) {
   J(e, !0);
   const d = 1800 * 1e3,
-    l = 10 * 1e3;
+    l = 20 * 1e3;
   let f = i(e, "widgetId", 15),
     w = i(e, "appearance", 3, "always"),
     u = i(e, "language", 3, "auto"),

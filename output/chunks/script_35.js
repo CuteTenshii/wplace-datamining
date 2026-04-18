@@ -14,7 +14,7 @@ var p = (t, e, s) => (_(t, e, "read from private field"), s ? s.call(t) : e.get(
   v = (t, e, s) => e.has(t) ? C("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, s),
   x = (t, e, s, a) => (_(t, e, "write to private field"), a ? a.call(t, s) : e.set(t, s), s),
   w = (t, e, s) => (_(t, e, "access private method"), s);
-import "./3onovZFu.js";
+import "./D5Mk_1eX.js";
 import {
   p as H,
   d as E,
@@ -24,27 +24,27 @@ import {
   b as B,
   c as h,
   s as G
-} from "./Bpkf4F49.js";
+} from "./BYTf-X4W.js";
 import {
   i as S
-} from "./h1NDdBVH.js";
+} from "./BQVJ6ha0.js";
 import {
   a as A,
   f as L,
   c as D,
   s as M
-} from "./CR0laCpx.js";
+} from "./BvWEorH0.js";
 import {
   h as j
-} from "./CTHkiCbR.js";
+} from "./D8FJeSWw.js";
 import {
   t as N
-} from "./BMdCM6jU.js";
+} from "./CB4gRi1J.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "8cde383e539e83c9bf370a8bc3de0b358fbc04c8"
+      id: "e6c43a335491af110c902083fb644fb71e659308"
     };
     var e = new t.Error().stack;
     e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "d44a0c63-8243-44cb-839a-f220e8b3cca7", t._sentryDebugIdIdentifier = "sentry-dbid-d44a0c63-8243-44cb-839a-f220e8b3cca7")
@@ -61,25 +61,25 @@ function Q(t) {
 
 function O(t = "", e = Y, s = J, a = Q) {
   const o = a(t),
-    c = o % P * (360 / P);
-  return [...Array(t ? 25 : 0)].reduce((u, I, l) => o & 1 << l % 15 ? u + `<rect x="${l>14?7-~~(l/5):~~(l/5)}" y="${l%5}" width="1" height="1"/>` : u, `<svg viewBox="-1.5 -1.5 8 8" xmlns="http://www.w3.org/2000/svg" fill="hsl(${c} ${e}% ${s}%)" shape-rendering="crispEdges">`) + "</svg>"
+    d = o % P * (360 / P);
+  return [...Array(t ? 25 : 0)].reduce((u, I, l) => o & 1 << l % 15 ? u + `<rect x="${l>14?7-~~(l/5):~~(l/5)}" y="${l%5}" width="1" height="1"/>` : u, `<svg viewBox="-1.5 -1.5 8 8" xmlns="http://www.w3.org/2000/svg" fill="hsl(${d} ${e}% ${s}%)" shape-rendering="crispEdges">`) + "</svg>"
 }
-var k, r, m, d, f, T, z;
+var k, r, m, c, f, T, z;
 (k = globalThis.customElements) != null && k.get("minidenticon-svg") || (z = globalThis.customElements) == null || z.define("minidenticon-svg", (r = class extends HTMLElement {
   constructor() {
     super(...arguments);
     v(this, f);
-    v(this, d, !1)
+    v(this, c, !1)
   }
   connectedCallback() {
-    w(this, f, T).call(this), x(this, d, !0)
+    w(this, f, T).call(this), x(this, c, !0)
   }
   attributeChangedCallback() {
-    p(this, d) && w(this, f, T).call(this)
+    p(this, c) && w(this, f, T).call(this)
   }
-}, m = new WeakMap, d = new WeakMap, f = new WeakSet, T = function() {
+}, m = new WeakMap, c = new WeakMap, f = new WeakSet, T = function() {
   var o;
-  const s = r.observedAttributes.map(c => this.getAttribute(c) || void 0),
+  const s = r.observedAttributes.map(d => this.getAttribute(d) || void 0),
     a = s.join(",");
   this.innerHTML = (o = p(r, m))[a] ?? (o[a] = O(...s))
 }, U(r, "observedAttributes", ["username", "saturation", "lightness"]), v(r, m, {}), r));
@@ -102,7 +102,7 @@ function ne(t, e) {
   L(a, "width: 67.76785714285714%");
   var o = E(a);
   {
-    var c = i => {
+    var d = i => {
         W(i, {
           get userId() {
             return e.userId
@@ -114,7 +114,7 @@ function ne(t, e) {
         b(() => M(n, "src", e.pictureUrl)), g(i, n)
       };
     S(o, i => {
-      e.pictureUrl ? i(u, !1) : i(c)
+      e.pictureUrl ? i(u, !1) : i(d)
     })
   }
   y(a);

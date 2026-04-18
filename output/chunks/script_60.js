@@ -1,11 +1,11 @@
 import {
   g as n
-} from "./YjF1d-DF.js";
+} from "./BKKpqwch.js";
 (function() {
   try {
     var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
     t.SENTRY_RELEASE = {
-      id: "8cde383e539e83c9bf370a8bc3de0b358fbc04c8"
+      id: "e6c43a335491af110c902083fb644fb71e659308"
     };
     var r = new t.Error().stack;
     r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "98aaa04a-ddcb-4a51-ae9b-9ba4f25d9d95", t._sentryDebugIdIdentifier = "sentry-dbid-98aaa04a-ddcb-4a51-ae9b-9ba4f25d9d95")
@@ -20,12 +20,12 @@ const s = () => "All Frames",
   _ = () => "Tutte le cornici",
   l = () => "すべてのフレーム",
   f = () => "Wszystkie ramki",
-  d = () => "Все рамки",
-  m = () => "Усі Рамки",
+  m = () => "Все рамки",
+  d = () => "Усі Рамки",
   p = () => "Tất cả các khung",
   le = (t = {}, r = {}) => {
     const e = r.locale ?? n();
-    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? a() : e === "de" ? o() : e === "es" ? c() : e === "fr" ? i() : e === "it" ? _() : e === "jp" ? l() : e === "pl" ? f() : e === "ru" ? d() : e === "uk" ? m() : p()
+    return e === "en" ? s() : e === "pt" ? u() : e === "ch" ? a() : e === "de" ? o() : e === "es" ? c() : e === "fr" ? i() : e === "it" ? _() : e === "jp" ? l() : e === "pl" ? f() : e === "ru" ? m() : e === "uk" ? d() : p()
   },
   b = () => "Back to list",
   k = () => "Voltar para a lista",
@@ -55,7 +55,7 @@ const s = () => "All Frames",
   V = () => "Удалить",
   q = () => "Видалити",
   x = () => "Xóa",
-  de = (t = {}, r = {}) => {
+  me = (t = {}, r = {}) => {
     const e = r.locale ?? n();
     return e === "en" ? D() : e === "pt" ? A() : e === "ch" ? I() : e === "de" ? R() : e === "es" ? L() : e === "fr" ? W() : e === "it" ? S() : e === "jp" ? M() : e === "pl" ? U() : e === "ru" ? V() : e === "uk" ? q() : x()
   },
@@ -71,7 +71,7 @@ const s = () => "All Frames",
   H = () => "Имя",
   J = () => "Імʼя",
   O = () => "Tên",
-  me = (t = {}, r = {}) => {
+  de = (t = {}, r = {}) => {
     const e = r.locale ?? n();
     return e === "en" ? B() : e === "pt" ? C() : e === "ch" ? F() : e === "de" ? K() : e === "es" ? Q() : e === "fr" ? X() : e === "it" ? Y() : e === "jp" ? Z() : e === "pl" ? G() : e === "ru" ? H() : e === "uk" ? J() : O()
   },
@@ -92,5 +92,5 @@ const s = () => "All Frames",
     return e === "en" ? P() : e === "pt" ? $() : e === "ch" ? ee() : e === "de" ? re() : e === "es" ? te() : e === "fr" ? ne() : e === "it" ? se() : e === "jp" ? ue() : e === "pl" ? ae() : e === "ru" ? oe() : e === "uk" ? ce() : ie()
   };
 export {
-  de as _, le as a, fe as b, pe as c, me as n
+  me as _, le as a, fe as b, pe as c, de as n
 };
