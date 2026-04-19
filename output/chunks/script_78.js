@@ -1,32 +1,22 @@
 import {
-  g as t
-} from "./C33D4ipC.js";
-(function() {
-  try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "f2a47ca0cf31d67c069828387c1df370b5604651"
-    };
-    var e = new r.Error().stack;
-    e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "4ee35f3a-97bf-4fcd-ac48-cea911cd0a9e", r._sentryDebugIdIdentifier = "sentry-dbid-4ee35f3a-97bf-4fcd-ac48-cea911cd0a9e")
-  } catch {}
-})();
-const o = () => "Loading...",
-  a = () => "Carregando...",
-  i = () => "加载中...",
-  d = () => "Laden...",
-  u = () => "Cargando...",
-  c = () => "Chargement...",
-  f = () => "Caricamento...",
-  s = () => "読み込み中...",
-  l = () => "Ładowanie...",
-  g = () => "Загрузка...",
-  _ = () => "Завантаження...",
-  p = () => "Đang tải...",
-  y = (r = {}, e = {}) => {
-    const n = e.locale ?? t();
-    return n === "en" ? o() : n === "pt" ? a() : n === "ch" ? i() : n === "de" ? d() : n === "es" ? u() : n === "fr" ? c() : n === "it" ? f() : n === "jp" ? s() : n === "pl" ? l() : n === "ru" ? g() : n === "uk" ? _() : p()
+  g as f
+} from "./BhCkpOlh.js";
+const n = () => "Staff",
+  e = () => "Equipe",
+  s = () => "工作人员",
+  u = () => "Staff",
+  a = () => "Staff",
+  o = () => "Staff",
+  c = () => "Staff",
+  i = () => "スタッフ",
+  _ = () => "Staff",
+  p = () => "Персонал",
+  l = () => "Персонал",
+  S = () => "Staff",
+  h = (d = {}, r = {}) => {
+    const t = r.locale ?? f();
+    return t === "en" ? n() : t === "pt" ? e() : t === "ch" ? s() : t === "de" ? u() : t === "es" ? a() : t === "fr" ? o() : t === "it" ? c() : t === "jp" ? i() : t === "pl" ? _() : t === "ru" ? p() : t === "uk" ? l() : S()
   };
 export {
-  y as l
+  h as s
 };

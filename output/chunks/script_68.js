@@ -1,61 +1,64 @@
-import "./BU-NCdSO.js";
+import "./Bzak7iHL.js";
 import {
-  l as c,
-  f as g,
-  a,
-  z as i
-} from "./Cp19uF2I.js";
-import {
-  i as p
-} from "./BcjibeS2.js";
-import {
-  d as v
-} from "./DWqOdrIT.js";
-import {
+  p as u,
+  t as i,
+  a as m,
+  b as v,
+  c as p,
+  d as x,
+  s as B,
   r as h
-} from "./f9FzqMmi.js";
-(function() {
-  try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
-      id: "f2a47ca0cf31d67c069828387c1df370b5604651"
-    };
-    var o = new t.Error().stack;
-    o && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[o] = "0b604767-a614-474c-971d-6769c020229f", t._sentryDebugIdIdentifier = "sentry-dbid-0b604767-a614-474c-971d-6769c020229f")
-  } catch {}
-})();
-var m = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
-  w = i('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
+} from "./B66BVdRM.js";
+import {
+  i as L
+} from "./BLRpBUXo.js";
+import {
+  d as Q,
+  a as c,
+  s as S
+} from "./D6WlI9xC.js";
+import {
+  p as _,
+  r as b
+} from "./DFHlj6pU.js";
+const w = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
+var R = p("<span>wplace</span>"),
+  k = p('<div><img alt="Wplace logo"/> <!></div>');
 
-function q(t, o) {
-  let s = h(o, ["$$slots", "$$events", "$$legacy", "filled"]);
-  var f = c(),
-    n = g(f);
+function Y(n, t) {
+  u(t, !0);
+  let a = _(t, "size", 3, "default"),
+    f = b(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
+  var s = k();
+  Q(s, () => ({
+    ...f,
+    class: `flex items-center gap-1.5 ${t.class??""}`
+  }));
+  var e = x(s);
+  let l;
+  var d = B(e, 2);
   {
-    var l = r => {
-        var e = m();
-        v(e, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...s
-        })), a(r, e)
-      },
-      d = r => {
-        var e = w();
-        v(e, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...s
-        })), a(r, e)
-      };
-    p(n, r => {
-      o.filled ? r(l) : r(d, !1)
+    var g = A => {
+      var o = R();
+      let r;
+      i(() => r = c(o, 1, "text-base-content font-pixel", null, r, {
+        "text-4xl": a() === "default",
+        "text-5xl": a() === "lg" || a() === "medium"
+      })), m(A, o)
+    };
+    L(d, A => {
+      t.hasText && A(g)
     })
   }
-  a(t, f)
+  h(s), i(() => {
+    l = c(e, 1, "pixelated h-auto shrink-0", null, l, {
+      "w-4": a() === "small",
+      "w-10": a() === "default",
+      "w-16": a() === "medium",
+      "w-20": a() === "lg"
+    }), S(e, "src", w)
+  }), m(n, s), v()
 }
 export {
-  q as C
+  Y as L, w as l
 };

@@ -1,48 +1,50 @@
-import {
-  g as s
-} from "./C33D4ipC.js";
-(function() {
-  try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "f2a47ca0cf31d67c069828387c1df370b5604651"
-    };
-    var n = new r.Error().stack;
-    n && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[n] = "ef164a17-cff1-4d3e-8a31-7d29d77617fa", r._sentryDebugIdIdentifier = "sentry-dbid-ef164a17-cff1-4d3e-8a31-7d29d77617fa")
-  } catch {}
-})();
-const t = () => "Users banned successfully",
-  u = () => "Usuários banidos com sucesso",
-  o = () => "用户已成功封禁",
-  i = () => "Benutzer erfolgreich gebannt",
-  c = () => "Usuarios baneados correctamente",
-  d = () => "Utilisateurs bannis avec succès",
-  a = () => "Utenti bannati con successo",
-  _ = () => "ユーザーをBANしました。",
-  f = () => "Użytkownicy zostali pomyślnie zbanowani",
-  l = () => "Пользователи успешно забанены",
-  b = () => "Користувачів успішно заблоковано",
-  m = () => "Đã cấm người dùng thành công",
-  T = (r = {}, n = {}) => {
-    const e = n.locale ?? s();
-    return e === "en" ? t() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? d() : e === "it" ? a() : e === "jp" ? _() : e === "pl" ? f() : e === "ru" ? l() : e === "uk" ? b() : m()
-  },
-  p = () => "Users timeouted successfully",
-  g = () => "Usuários suspensos com sucesso",
-  y = () => "用户已成功禁言",
-  h = () => "Benutzer erfolgreich mit Timeout belegt",
-  U = () => "Usuarios suspendidos correctamente",
-  w = () => "Utilisateurs suspendus avec succès",
-  k = () => "Utenti sospesi con successo",
-  z = () => "ユーザーをタイムアウトしました。",
-  v = () => "Użytkownicy zostali pomyślnie zawieszeni",
-  E = () => "Пользователям успешно выдан тайм-аут",
-  I = () => "Користувачам успішно призначено тайм-аут",
-  j = () => "Đã tạm khóa người dùng thành công",
-  B = (r = {}, n = {}) => {
-    const e = n.locale ?? s();
-    return e === "en" ? p() : e === "pt" ? g() : e === "ch" ? y() : e === "de" ? h() : e === "es" ? U() : e === "fr" ? w() : e === "it" ? k() : e === "jp" ? z() : e === "pl" ? v() : e === "ru" ? E() : e === "uk" ? I() : j()
-  };
+const h = o => o;
+
+function b(o) {
+  const r = o - 1;
+  return r * r * r + 1
+}
+
+function f(o, {
+  delay: r = 0,
+  duration: i = 400,
+  easing: s = h
+} = {}) {
+  const p = +getComputedStyle(o).opacity;
+  return {
+    delay: r,
+    duration: i,
+    easing: s,
+    css: a => `opacity: ${a*p}`
+  }
+}
+
+function v(o, {
+  delay: r = 0,
+  duration: i = 400,
+  easing: s = b,
+  axis: p = "y"
+} = {}) {
+  const a = getComputedStyle(o),
+    c = +a.opacity,
+    d = p === "y" ? "height" : "width",
+    $ = parseFloat(a[d]),
+    e = p === "y" ? ["top", "bottom"] : ["left", "right"],
+    n = e.map(t => `${t[0].toUpperCase()}${t.slice(1)}`),
+    l = parseFloat(a[`padding${n[0]}`]),
+    _ = parseFloat(a[`padding${n[1]}`]),
+    u = parseFloat(a[`margin${n[0]}`]),
+    y = parseFloat(a[`margin${n[1]}`]),
+    g = parseFloat(a[`border${n[0]}Width`]),
+    m = parseFloat(a[`border${n[1]}Width`]);
+  return {
+    delay: r,
+    duration: i,
+    easing: s,
+    css: t => `overflow: hidden;opacity: ${Math.min(t*20,1)*c};${d}: ${t*$}px;padding-${e[0]}: ${t*l}px;padding-${e[1]}: ${t*_}px;margin-${e[0]}: ${t*u}px;margin-${e[1]}: ${t*y}px;border-${e[0]}-width: ${t*g}px;border-${e[1]}-width: ${t*m}px;min-${d}: 0`
+  }
+}
 export {
-  B as a, T as u
+  f,
+  v as s
 };

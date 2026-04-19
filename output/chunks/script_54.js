@@ -1,48 +1,48 @@
-import {
-  g as n
-} from "./C33D4ipC.js";
-(function() {
-  try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "f2a47ca0cf31d67c069828387c1df370b5604651"
-    };
-    var t = new e.Error().stack;
-    t && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[t] = "f3916074-7b40-4047-be6a-c4edffb7c113", e._sentryDebugIdIdentifier = "sentry-dbid-f3916074-7b40-4047-be6a-c4edffb7c113")
-  } catch {}
-})();
-const u = () => "Members",
-  s = () => "Membros",
-  o = () => "成员",
-  i = () => "Mitglieder",
-  c = () => "Miembros",
-  f = () => "Membres",
-  l = () => "Membri",
-  a = () => "メンバー",
-  p = () => "Członkowie",
-  b = () => "Участники",
-  m = () => "Учасники",
-  d = () => "Thành viên",
-  J = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? u() : r === "pt" ? s() : r === "ch" ? o() : r === "de" ? i() : r === "es" ? c() : r === "fr" ? f() : r === "it" ? l() : r === "jp" ? a() : r === "pl" ? p() : r === "ru" ? b() : r === "uk" ? m() : d()
-  },
-  _ = () => "Player",
-  y = () => "Jogador",
-  g = () => "玩家",
-  h = () => "Spieler",
-  k = () => "Jugador",
-  w = () => "Joueur",
-  M = () => "Giocatore",
-  v = () => "プレイヤー",
-  E = () => "Gracz",
-  I = () => "Игрок",
-  j = () => "Гравець",
-  D = () => "Người chơi",
-  S = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _() : r === "pt" ? y() : r === "ch" ? g() : r === "de" ? h() : r === "es" ? k() : r === "fr" ? w() : r === "it" ? M() : r === "jp" ? v() : r === "pl" ? E() : r === "ru" ? I() : r === "uk" ? j() : D()
-  };
+function O(r) {
+  const t = r - 1;
+  return t * t * t + 1
+}
+
+function Z(r, {
+  from: t,
+  to: a
+}, u = {}) {
+  var {
+    delay: f = 0,
+    duration: n = i => Math.sqrt(i) * 120,
+    easing: p = O
+  } = u, s = getComputedStyle(r), y = s.transform === "none" ? "" : s.transform, [h, v] = s.transformOrigin.split(" ").map(parseFloat);
+  h /= r.clientWidth, v /= r.clientHeight;
+  var c = W(r),
+    g = r.clientWidth / a.width / c,
+    d = r.clientHeight / a.height / c,
+    x = t.left + t.width * h,
+    m = t.top + t.height * v,
+    w = a.left + a.width * h,
+    S = a.top + a.height * v,
+    l = (x - w) * g,
+    o = (m - S) * d,
+    $ = t.width / a.width,
+    z = t.height / a.height;
+  return {
+    delay: f,
+    duration: typeof n == "function" ? n(Math.sqrt(l * l + o * o)) : n,
+    easing: p,
+    css: (i, e) => {
+      var C = e * l,
+        q = e * o,
+        H = i + e * $,
+        M = i + e * z;
+      return `transform: ${y} translate(${C}px, ${q}px) scale(${H}, ${M});`
+    }
+  }
+}
+
+function W(r) {
+  if ("currentCSSZoom" in r) return r.currentCSSZoom;
+  for (var t = r, a = 1; t !== null;) a *= +getComputedStyle(t).zoom, t = t.parentElement;
+  return a
+}
 export {
-  J as m, S as p
+  Z as f
 };

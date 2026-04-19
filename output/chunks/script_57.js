@@ -1,32 +1,22 @@
 import {
   g as t
-} from "./C33D4ipC.js";
-(function() {
-  try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "f2a47ca0cf31d67c069828387c1df370b5604651"
-    };
-    var r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "eb801445-f1e6-4990-b03b-4177cb39b0e4", e._sentryDebugIdIdentifier = "sentry-dbid-eb801445-f1e6-4990-b03b-4177cb39b0e4")
-  } catch {}
-})();
-const a = () => "Banned",
-  d = () => "Banido",
-  u = () => "已封禁",
-  b = () => "Gebannt",
-  o = () => "Baneado",
-  s = () => "Banni",
-  f = () => "Bannato",
-  i = () => "BAN済み",
-  c = () => "Zbanowany",
-  l = () => "Забанен",
-  _ = () => "Заблоковано",
-  p = () => "Đã bị cấm",
-  g = (e = {}, r = {}) => {
+} from "./BhCkpOlh.js";
+const u = () => "Unban",
+  e = () => "Desbanir",
+  a = () => "解封",
+  s = () => "Entbannen",
+  b = () => "Desbanear",
+  c = () => "Débannir",
+  o = () => "Unban",
+  i = () => "BANを解除",
+  f = () => "Odbanuj",
+  _ = () => "Разбанить",
+  p = () => "Розбанити",
+  l = () => "Gỡ cấm",
+  m = (d = {}, r = {}) => {
     const n = r.locale ?? t();
-    return n === "en" ? a() : n === "pt" ? d() : n === "ch" ? u() : n === "de" ? b() : n === "es" ? o() : n === "fr" ? s() : n === "it" ? f() : n === "jp" ? i() : n === "pl" ? c() : n === "ru" ? l() : n === "uk" ? _() : p()
+    return n === "en" ? u() : n === "pt" ? e() : n === "ch" ? a() : n === "de" ? s() : n === "es" ? b() : n === "fr" ? c() : n === "it" ? o() : n === "jp" ? i() : n === "pl" ? f() : n === "ru" ? _() : n === "uk" ? p() : l()
   };
 export {
-  g as b
+  m as u
 };

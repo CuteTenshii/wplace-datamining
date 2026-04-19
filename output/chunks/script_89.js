@@ -1,36 +1,22 @@
-import "./BU-NCdSO.js";
 import {
-  a as o,
-  z as s
-} from "./Cp19uF2I.js";
-import {
-  d
-} from "./DWqOdrIT.js";
-import {
-  r as a
-} from "./f9FzqMmi.js";
-(function() {
-  try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
-      id: "f2a47ca0cf31d67c069828387c1df370b5604651"
-    };
-    var e = new t.Error().stack;
-    e && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[e] = "7d0ba6fe-4792-4935-92fd-f0421b4bf240", t._sentryDebugIdIdentifier = "sentry-dbid-7d0ba6fe-4792-4935-92fd-f0421b4bf240")
-  } catch {}
-})();
-var n = s('<svg><path d="M790-56 414-434q-47 11-87.5 33T254-346l-84-86q32-32 69-56t79-42l-90-90q-41 21-76.5 46.5T84-516L0-602q32-32 66.5-57.5T140-708l-84-84 56-56 736 736-58 56Zm-310-64q-42 0-71-29.5T380-220q0-42 29-71t71-29q42 0 71 29t29 71q0 41-29 70.5T480-120Zm236-238-29-29-29-29-144-144q81 8 151.5 41T790-432l-74 74Zm160-158q-77-77-178.5-120.5T480-680q-21 0-40.5 1.5T400-674L298-776q44-12 89.5-18t92.5-6q142 0 265 53t215 145l-84 86Z"></path></svg>');
-
-function g(t, e) {
-  let f = a(e, ["$$slots", "$$events", "$$legacy"]);
-  var r = n();
-  d(r, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...f
-  })), o(t, r)
-}
+  g as t
+} from "./BhCkpOlh.js";
+const n = () => "Refresh",
+  s = () => "Atualizar",
+  u = () => "刷新",
+  f = () => "Aktualisieren",
+  i = () => "Actualizar",
+  c = () => "Actualiser",
+  o = () => "Aggiorna",
+  h = () => "更新",
+  a = () => "Odśwież",
+  _ = () => "Обновить",
+  l = () => "Оновити",
+  p = () => "Làm mới",
+  m = (A = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? n() : r === "pt" ? s() : r === "ch" ? u() : r === "de" ? f() : r === "es" ? i() : r === "fr" ? c() : r === "it" ? o() : r === "jp" ? h() : r === "pl" ? a() : r === "ru" ? _() : r === "uk" ? l() : p()
+  };
 export {
-  g as W
+  m as r
 };

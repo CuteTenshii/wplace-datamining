@@ -1,123 +1,128 @@
-import "./BU-NCdSO.js";
+import "./Bzak7iHL.js";
 import {
-  k as W,
-  p as Y,
-  l as P,
-  f as S,
-  i as D,
-  a as s,
-  b as j,
-  u as x,
-  d as m,
+  a as i,
+  z as B,
+  k as K,
+  p as Q,
+  l as T,
+  f as q,
+  i as x,
+  b as U,
+  u as C,
+  d as h,
   aW as _,
-  r as h,
-  t as v,
-  c as k,
-  m as i
-} from "./Cp19uF2I.js";
+  r as p,
+  t as g,
+  c as I,
+  m as s
+} from "./B66BVdRM.js";
 import {
-  s as b
-} from "./CcaSv4Du.js";
+  d as V,
+  a as k,
+  c as W,
+  s as c
+} from "./D6WlI9xC.js";
 import {
-  i as C
-} from "./BcjibeS2.js";
+  r as j,
+  p as d
+} from "./DFHlj6pU.js";
 import {
-  a as g,
-  c as q,
-  s as d
-} from "./DWqOdrIT.js";
+  s as w
+} from "./Dd8KoMQq.js";
 import {
-  p as l
-} from "./f9FzqMmi.js";
+  i as S
+} from "./BLRpBUXo.js";
 import {
-  P as z
-} from "./C2XFeMtb.js";
+  P as F
+} from "./BumgAKCG.js";
 import {
-  u as B
-} from "./CeWdbyfN.js";
-(function() {
-  try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "f2a47ca0cf31d67c069828387c1df370b5604651"
-    };
-    var e = new r.Error().stack;
-    e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "864094e2-44a5-42f3-8e46-9093fcefdd09", r._sentryDebugIdIdentifier = "sentry-dbid-864094e2-44a5-42f3-8e46-9093fcefdd09")
-  } catch {}
-})();
+  u as G
+} from "./D2lcZBT_.js";
+var H = B('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
 
-function R(r) {
-  return `/dashboard/users?id=${encodeURIComponent(String(r))}`
+function sa(r, a) {
+  let f = j(a, ["$$slots", "$$events", "$$legacy"]);
+  var l = H();
+  V(l, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...f
+  })), i(r, l)
 }
 
-function F(r) {
-  typeof window > "u" || window.open(R(r), "_blank", "noopener,noreferrer")
+function A(r) {
+  return `/dashboard/alliances?id=${encodeURIComponent(String(r))}`
 }
-var G = k('<span role="link" tabindex="0"><!></span>'),
-  H = k('<a target="_blank" rel="noopener noreferrer"><!></a>'),
-  J = k("<span><!></span>");
 
-function te(r, e) {
-  Y(e, !0);
-  let p = l(e, "mode", 3, "anchor"),
-    y = l(e, "class", 3, ""),
-    I = l(e, "linkClass", 19, y),
-    U = l(e, "textClass", 19, y);
-  const L = x(() => e.userId != null && e.userId > 0 && B.hasAnyPermission(z.dashboard.users)),
-    N = x(() => e.userId == null ? "" : R(e.userId));
+function J(r) {
+  typeof window > "u" || window.open(A(r), "_blank", "noopener,noreferrer")
+}
+var X = I('<span role="link" tabindex="0"><!></span>'),
+  Y = I('<a target="_blank" rel="noopener noreferrer"><!></a>'),
+  $ = I("<span><!></span>");
 
-  function f(a) {
-    a.stopPropagation()
+function ca(r, a) {
+  Q(a, !0);
+  let f = d(a, "mode", 3, "anchor"),
+    l = d(a, "class", 3, ""),
+    b = d(a, "linkClass", 19, l),
+    L = d(a, "textClass", 19, l);
+  const D = C(() => a.allianceId != null && a.allianceId > 0 && G.hasAnyPermission(F.dashboard.alliances)),
+    E = C(() => a.allianceId == null ? "" : A(a.allianceId));
+
+  function m(n) {
+    n.stopPropagation()
   }
 
-  function w(a) {
-    e.userId == null || e.userId <= 0 || (a.preventDefault(), a.stopPropagation(), F(e.userId))
+  function y(n) {
+    a.allianceId == null || a.allianceId <= 0 || (n.preventDefault(), n.stopPropagation(), J(a.allianceId))
   }
 
-  function T(a) {
-    a.key !== "Enter" && a.key !== " " || w(a)
+  function M(n) {
+    n.key !== "Enter" && n.key !== " " || y(n)
   }
-  var E = P(),
-    A = S(E);
+  var P = T(),
+    N = q(P);
   {
-    var K = a => {
-        var t = P(),
-          u = S(t);
+    var O = n => {
+        var t = T(),
+          u = q(t);
         {
-          var O = o => {
-              var n = G(),
-                c = m(n);
-              b(c, () => e.children ?? _), h(n), v(() => {
-                g(n, 1, `cursor-pointer hover:underline ${I()}`), d(n, "title", e.title)
-              }), i("pointerdown", n, f), i("click", n, w), i("keydown", n, T), s(o, n)
+          var Z = o => {
+              var e = X(),
+                v = h(e);
+              w(v, () => a.children ?? _), p(e), g(() => {
+                k(e, 1, `cursor-pointer hover:underline ${b()}`), c(e, "title", a.title)
+              }), s("pointerdown", e, m), s("click", e, y), s("keydown", e, M), i(o, e)
             },
-            V = o => {
-              var n = H(),
-                c = m(n);
-              b(c, () => e.children ?? _), h(n), v(() => {
-                g(n, 1, `cursor-pointer hover:underline ${I()}`), d(n, "href", D(N)), d(n, "title", e.title)
-              }), i("pointerdown", n, f), i("click", n, f), s(o, n)
+            z = o => {
+              var e = Y(),
+                v = h(e);
+              w(v, () => a.children ?? _), p(e), g(() => {
+                k(e, 1, `cursor-pointer hover:underline ${b()}`), c(e, "href", x(E)), c(e, "title", a.title)
+              }), s("pointerdown", e, m), s("click", e, m), i(o, e)
             };
-          C(u, o => {
-            p() === "inline" ? o(O) : o(V, !1)
+          S(u, o => {
+            f() === "inline" ? o(Z) : o(z, !1)
           })
         }
-        s(a, t)
+        i(n, t)
       },
-      M = a => {
-        var t = J(),
-          u = m(t);
-        b(u, () => e.children ?? _), h(t), v(() => {
-          g(t, 1, q(U())), d(t, "title", e.title)
-        }), s(a, t)
+      R = n => {
+        var t = $(),
+          u = h(t);
+        w(u, () => a.children ?? _), p(t), g(() => {
+          k(t, 1, W(L())), c(t, "title", a.title)
+        }), i(n, t)
       };
-    C(A, a => {
-      D(L) ? a(K) : a(M, !1)
+    S(N, n => {
+      x(D) ? n(O) : n(R, !1)
     })
   }
-  s(r, E), j()
+  i(r, P), U()
 }
-W(["pointerdown", "click", "keydown"]);
+K(["pointerdown", "click", "keydown"]);
 export {
-  te as S
+  sa as L, ca as S
 };

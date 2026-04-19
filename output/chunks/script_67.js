@@ -1,32 +1,51 @@
+import "./Bzak7iHL.js";
 import {
-  g as t
-} from "./C33D4ipC.js";
-(function() {
-  try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "f2a47ca0cf31d67c069828387c1df370b5604651"
-    };
-    var n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "6f73ead8-0cc2-4bd8-a02a-414b83a59993", e._sentryDebugIdIdentifier = "sentry-dbid-6f73ead8-0cc2-4bd8-a02a-414b83a59993")
-  } catch {}
-})();
-const a = () => "Leaderboard",
-  d = () => "Ranking",
-  o = () => "排行榜",
-  s = () => "Bestenliste",
-  u = () => "Clasificación",
-  i = () => "Classement",
-  l = () => "Classifica",
-  c = () => "ランキング",
-  f = () => "Ranking",
-  b = () => "Таблица лидеров",
-  _ = () => "Таблиця лідерів",
-  g = () => "Bảng xếp hạng",
-  y = (e = {}, n = {}) => {
-    const r = n.locale ?? t();
-    return r === "en" ? a() : r === "pt" ? d() : r === "ch" ? o() : r === "de" ? s() : r === "es" ? u() : r === "fr" ? i() : r === "it" ? l() : r === "jp" ? c() : r === "pl" ? f() : r === "ru" ? b() : r === "uk" ? _() : g()
-  };
+  l as h,
+  f as g,
+  a as o,
+  z as l
+} from "./B66BVdRM.js";
+import {
+  i as n
+} from "./BLRpBUXo.js";
+import {
+  d as e
+} from "./D6WlI9xC.js";
+import {
+  r as q
+} from "./DFHlj6pU.js";
+var w = l('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
+  T = l('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
+
+function C(f, t) {
+  let s = q(t, ["$$slots", "$$events", "$$legacy", "filled"]);
+  var a = h(),
+    i = g(a);
+  {
+    var m = r => {
+        var v = w();
+        e(v, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...s
+        })), o(r, v)
+      },
+      p = r => {
+        var v = T();
+        e(v, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...s
+        })), o(r, v)
+      };
+    n(i, r => {
+      t.filled ? r(m) : r(p, !1)
+    })
+  }
+  o(f, a)
+}
 export {
-  y as l
+  C
 };

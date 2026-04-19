@@ -1,32 +1,26 @@
+import "./Bzak7iHL.js";
 import {
-  g as t
-} from "./C33D4ipC.js";
-(function() {
-  try {
-    var n = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    n.SENTRY_RELEASE = {
-      id: "f2a47ca0cf31d67c069828387c1df370b5604651"
-    };
-    var e = new n.Error().stack;
-    e && (n._sentryDebugIds = n._sentryDebugIds || {}, n._sentryDebugIds[e] = "09e8c7b4-b47a-42dd-9a91-ebaa6a75318f", n._sentryDebugIdIdentifier = "sentry-dbid-09e8c7b4-b47a-42dd-9a91-ebaa6a75318f")
-  } catch {}
-})();
-const o = () => "Confirm",
-  f = () => "Confirmar",
-  i = () => "确认",
-  c = () => "Bestätigen",
-  u = () => "Confirmar",
-  s = () => "Confirmer",
-  a = () => "Conferma",
-  d = () => "確認",
-  m = () => "Potwierdź",
-  l = () => "Подтвердить",
-  _ = () => "Підтвердити",
-  b = () => "Xác nhận",
-  g = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? o() : r === "pt" ? f() : r === "ch" ? i() : r === "de" ? c() : r === "es" ? u() : r === "fr" ? s() : r === "it" ? a() : r === "jp" ? d() : r === "pl" ? m() : r === "ru" ? l() : r === "uk" ? _() : b()
-  };
+  a as e,
+  z as p
+} from "./B66BVdRM.js";
+import {
+  d as a
+} from "./D6WlI9xC.js";
+import {
+  r as v
+} from "./DFHlj6pU.js";
+var f = p('<svg><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"></path></svg>');
+
+function h(r, o) {
+  let s = v(o, ["$$slots", "$$events", "$$legacy"]);
+  var t = f();
+  a(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...s
+  })), e(r, t)
+}
 export {
-  g as c
+  h as R
 };

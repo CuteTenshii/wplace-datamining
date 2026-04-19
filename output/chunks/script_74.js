@@ -1,48 +1,22 @@
 import {
-  g as i
-} from "./C33D4ipC.js";
-(function() {
-  try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "f2a47ca0cf31d67c069828387c1df370b5604651"
-    };
-    var n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "2cb492c4-da32-40ef-bd46-c760af43f1f8", e._sentryDebugIdIdentifier = "sentry-dbid-2cb492c4-da32-40ef-bd46-c760af43f1f8")
-  } catch {}
-})();
-const t = () => "Enter a valid user ID",
-  d = () => "Informe um ID válido",
-  s = () => "请输入有效的用户 ID",
-  u = () => "Gib eine gültige Benutzer-ID ein",
-  o = () => "Introduce un ID de usuario válido",
-  _ = () => "Entrez un ID d’utilisateur valide",
-  c = () => "Inserisci un ID valido",
-  f = () => "有効なユーザーIDを入力してください。",
-  a = () => "Wprowadź prawidłowe ID użytkownika",
-  l = () => "Введите корректный ID пользователя",
-  p = () => "Введіть коректний ID користувача",
-  v = () => "Nhập một ID người dùng hợp lệ",
-  z = (e = {}, n = {}) => {
-    const r = n.locale ?? i();
-    return r === "en" ? t() : r === "pt" ? d() : r === "ch" ? s() : r === "de" ? u() : r === "es" ? o() : r === "fr" ? _() : r === "it" ? c() : r === "jp" ? f() : r === "pl" ? a() : r === "ru" ? l() : r === "uk" ? p() : v()
-  },
-  I = () => "Reddit",
-  m = () => "Reddit",
-  D = () => "Reddit",
-  b = () => "Reddit",
-  g = () => "Reddit",
-  R = () => "Reddit",
-  y = () => "Reddit",
-  h = () => "Reddit",
-  w = () => "Reddit",
-  k = () => "Reddit",
-  E = () => "Reddit",
-  j = () => "Reddit",
-  L = (e = {}, n = {}) => {
-    const r = n.locale ?? i();
-    return r === "en" ? I() : r === "pt" ? m() : r === "ch" ? D() : r === "de" ? b() : r === "es" ? g() : r === "fr" ? R() : r === "it" ? y() : r === "jp" ? h() : r === "pl" ? w() : r === "ru" ? k() : r === "uk" ? E() : j()
+  g as e
+} from "./BhCkpOlh.js";
+const t = () => "Alliances",
+  l = () => "Alianças",
+  a = () => "联盟",
+  s = () => "Allianzen",
+  i = () => "Alianzas",
+  c = () => "Alliances",
+  u = () => "Alleanze",
+  o = () => "アライアンス",
+  f = () => "Sojusze",
+  _ = () => "Альянсы",
+  p = () => "Альянси",
+  A = () => "Các liên minh",
+  j = (z = {}, r = {}) => {
+    const n = r.locale ?? e();
+    return n === "en" ? t() : n === "pt" ? l() : n === "ch" ? a() : n === "de" ? s() : n === "es" ? i() : n === "fr" ? c() : n === "it" ? u() : n === "jp" ? o() : n === "pl" ? f() : n === "ru" ? _() : n === "uk" ? p() : A()
   };
 export {
-  z as p, L as r
+  j as a
 };

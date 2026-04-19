@@ -1,55 +1,97 @@
+var D = Object.defineProperty;
+var g = i => {
+  throw TypeError(i)
+};
+var F = (i, e, s) => e in i ? D(i, e, {
+  enumerable: !0,
+  configurable: !0,
+  writable: !0,
+  value: s
+}) : i[e] = s;
+var w = (i, e, s) => F(i, typeof e != "symbol" ? e + "" : e, s),
+  y = (i, e, s) => e.has(i) || g("Cannot " + s);
+var t = (i, e, s) => (y(i, e, "read from private field"), s ? s.call(i) : e.get(i)),
+  l = (i, e, s) => e.has(i) ? g("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(i) : e.set(i, s),
+  M = (i, e, s, a) => (y(i, e, "write to private field"), a ? a.call(i, s) : e.set(i, s), s);
 import {
-  C as _,
-  A as b,
-  B as g,
-  E as T,
-  D as h,
-  I as E,
-  V as p,
-  F as v,
-  G as I,
-  H as u,
-  J as y
-} from "./Cp19uF2I.js";
-import {
-  B as A
-} from "./DdpicFUL.js";
-(function() {
-  try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "f2a47ca0cf31d67c069828387c1df370b5604651"
-    };
-    var r = new e.Error().stack;
-    r && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[r] = "9cbd0829-94e9-4402-941f-e6dab5197448", e._sentryDebugIdIdentifier = "sentry-dbid-9cbd0829-94e9-4402-941f-e6dab5197448")
-  } catch {}
-})();
-
-function w(e, r, t = !1) {
-  var d;
-  b && (d = y, g());
-  var i = new A(e),
-    c = t ? T : 0;
-
-  function o(a, n) {
-    if (b) {
-      var s = h(d),
-        f;
-      if (s === E ? f = 0 : s === p ? f = !1 : f = parseInt(s.substring(1)), a !== f) {
-        var l = v();
-        I(l), i.anchor = l, u(!1), i.ensure(a, n), u(!0);
-        return
+  Z as A,
+  _ as C,
+  a0 as k,
+  a1 as J,
+  a2 as x,
+  a3 as B,
+  A as S,
+  J as Z,
+  a4 as j,
+  a5 as q
+} from "./B66BVdRM.js";
+var r, n, h, u, p, _, v;
+class G {
+  constructor(e, s = !0) {
+    w(this, "anchor");
+    l(this, r, new Map);
+    l(this, n, new Map);
+    l(this, h, new Map);
+    l(this, u, new Set);
+    l(this, p, !0);
+    l(this, _, () => {
+      var e = A;
+      if (t(this, r).has(e)) {
+        var s = t(this, r).get(e),
+          a = t(this, n).get(s);
+        if (a) C(a), t(this, u).delete(s);
+        else {
+          var c = t(this, h).get(s);
+          c && (t(this, n).set(s, c.effect), t(this, h).delete(s), c.fragment.lastChild.remove(), this.anchor.before(c.fragment), a = c.effect)
+        }
+        for (const [f, o] of t(this, r)) {
+          if (t(this, r).delete(f), f === e) break;
+          const d = t(this, h).get(o);
+          d && (k(d.effect), t(this, h).delete(o))
+        }
+        for (const [f, o] of t(this, n)) {
+          if (f === s || t(this, u).has(f)) continue;
+          const d = () => {
+            if (Array.from(t(this, r).values()).includes(f)) {
+              var b = document.createDocumentFragment();
+              j(o, b), b.append(x()), t(this, h).set(f, {
+                effect: o,
+                fragment: b
+              })
+            } else k(o);
+            t(this, u).delete(f), t(this, n).delete(f)
+          };
+          t(this, p) || !a ? (t(this, u).add(f), J(o, d, !1)) : d()
+        }
       }
-    }
-    i.ensure(a, n)
+    });
+    l(this, v, e => {
+      t(this, r).delete(e);
+      const s = Array.from(t(this, r).values());
+      for (const [a, c] of t(this, h)) s.includes(a) || (k(c.effect), t(this, h).delete(a))
+    });
+    this.anchor = e, M(this, p, s)
   }
-  _(() => {
-    var a = !1;
-    r((n, s = 0) => {
-      a = !0, o(s, n)
-    }), a || o(!1, null)
-  }, c)
+  ensure(e, s) {
+    var a = A,
+      c = q();
+    if (s && !t(this, n).has(e) && !t(this, h).has(e))
+      if (c) {
+        var f = document.createDocumentFragment(),
+          o = x();
+        f.append(o), t(this, h).set(e, {
+          effect: B(() => s(o)),
+          fragment: f
+        })
+      } else t(this, n).set(e, B(() => s(this.anchor)));
+    if (t(this, r).set(a, e), c) {
+      for (const [d, m] of t(this, n)) d === e ? a.unskip_effect(m) : a.skip_effect(m);
+      for (const [d, m] of t(this, h)) d === e ? a.unskip_effect(m.effect) : a.skip_effect(m.effect);
+      a.oncommit(t(this, _)), a.ondiscard(t(this, v))
+    } else S && (this.anchor = Z), t(this, _).call(this)
+  }
 }
+r = new WeakMap, n = new WeakMap, h = new WeakMap, u = new WeakMap, p = new WeakMap, _ = new WeakMap, v = new WeakMap;
 export {
-  w as i
+  G as B
 };

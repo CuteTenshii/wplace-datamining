@@ -1,32 +1,22 @@
 import {
-  g as e
-} from "./C33D4ipC.js";
-(function() {
-  try {
-    var f = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    f.SENTRY_RELEASE = {
-      id: "f2a47ca0cf31d67c069828387c1df370b5604651"
-    };
-    var r = new f.Error().stack;
-    r && (f._sentryDebugIds = f._sentryDebugIds || {}, f._sentryDebugIds[r] = "b9b33e77-4f93-4cbd-a901-f05ce83847b9", f._sentryDebugIdIdentifier = "sentry-dbid-b9b33e77-4f93-4cbd-a901-f05ce83847b9")
-  } catch {}
-})();
-const n = () => "Staff",
-  s = () => "Equipe",
-  u = () => "工作人员",
-  a = () => "Staff",
-  o = () => "Staff",
-  c = () => "Staff",
-  i = () => "Staff",
-  d = () => "スタッフ",
-  b = () => "Staff",
-  l = () => "Персонал",
-  _ = () => "Персонал",
-  p = () => "Staff",
-  y = (f = {}, r = {}) => {
-    const t = r.locale ?? e();
-    return t === "en" ? n() : t === "pt" ? s() : t === "ch" ? u() : t === "de" ? a() : t === "es" ? o() : t === "fr" ? c() : t === "it" ? i() : t === "jp" ? d() : t === "pl" ? b() : t === "ru" ? l() : t === "uk" ? _() : p()
+  g as n
+} from "./BhCkpOlh.js";
+const o = () => "Error loading",
+  t = () => "Erro ao carregar",
+  i = () => "加载出错",
+  a = () => "Fehler beim Laden",
+  u = () => "Error al cargar",
+  l = () => "Erreur lors du chargement",
+  _ = () => "Errore nel caricamento",
+  c = () => "読み込みエラー",
+  d = () => "Błąd ładowania",
+  s = () => "Ошибка загрузки",
+  g = () => "Помилка завантаження",
+  f = () => "Lỗi tải dữ liệu",
+  E = (p = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? o() : r === "pt" ? t() : r === "ch" ? i() : r === "de" ? a() : r === "es" ? u() : r === "fr" ? l() : r === "it" ? _() : r === "jp" ? c() : r === "pl" ? d() : r === "ru" ? s() : r === "uk" ? g() : f()
   };
 export {
-  y as s
+  E as e
 };

@@ -1,32 +1,38 @@
 import {
-  g as n
-} from "./C33D4ipC.js";
-(function() {
-  try {
-    var t = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    t.SENTRY_RELEASE = {
-      id: "f2a47ca0cf31d67c069828387c1df370b5604651"
-    };
-    var r = new t.Error().stack;
-    r && (t._sentryDebugIds = t._sentryDebugIds || {}, t._sentryDebugIds[r] = "3ec605d5-5f91-4ad8-84e0-31115df5feed", t._sentryDebugIdIdentifier = "sentry-dbid-3ec605d5-5f91-4ad8-84e0-31115df5feed")
-  } catch {}
-})();
-const u = () => "Timeout",
-  o = () => "Suspender",
-  i = () => "禁言",
-  s = () => "Timeout",
-  f = () => "Suspender",
-  d = () => "Suspendre",
-  c = () => "Sospendi",
-  a = () => "タイムアウト",
-  m = () => "Zawieszenie",
-  l = () => "Тайм-аут",
-  p = () => "Тайм-аут",
-  _ = () => "Tạm khóa",
-  g = (t = {}, r = {}) => {
-    const e = r.locale ?? n();
-    return e === "en" ? u() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? s() : e === "es" ? f() : e === "fr" ? d() : e === "it" ? c() : e === "jp" ? a() : e === "pl" ? m() : e === "ru" ? l() : e === "uk" ? p() : _()
+  g as s
+} from "./BhCkpOlh.js";
+const t = () => "Users banned successfully",
+  u = () => "Usuários banidos com sucesso",
+  o = () => "用户已成功封禁",
+  i = () => "Benutzer erfolgreich gebannt",
+  c = () => "Usuarios baneados correctamente",
+  _ = () => "Utilisateurs bannis avec succès",
+  a = () => "Utenti bannati con successo",
+  d = () => "ユーザーをBANしました。",
+  f = () => "Użytkownicy zostali pomyślnie zbanowani",
+  l = () => "Пользователи успешно забанены",
+  m = () => "Користувачів успішно заблоковано",
+  p = () => "Đã cấm người dùng thành công",
+  L = (n = {}, r = {}) => {
+    const e = r.locale ?? s();
+    return e === "en" ? t() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? _() : e === "it" ? a() : e === "jp" ? d() : e === "pl" ? f() : e === "ru" ? l() : e === "uk" ? m() : p()
+  },
+  b = () => "Users timeouted successfully",
+  g = () => "Usuários suspensos com sucesso",
+  U = () => "用户已成功禁言",
+  h = () => "Benutzer erfolgreich mit Timeout belegt",
+  y = () => "Usuarios suspendidos correctamente",
+  k = () => "Utilisateurs suspendus avec succès",
+  z = () => "Utenti sospesi con successo",
+  j = () => "ユーザーをタイムアウトしました。",
+  v = () => "Użytkownicy zostali pomyślnie zawieszeni",
+  w = () => "Пользователям успешно выдан тайм-аут",
+  B = () => "Користувачам успішно призначено тайм-аут",
+  x = () => "Đã tạm khóa người dùng thành công",
+  N = (n = {}, r = {}) => {
+    const e = r.locale ?? s();
+    return e === "en" ? b() : e === "pt" ? g() : e === "ch" ? U() : e === "de" ? h() : e === "es" ? y() : e === "fr" ? k() : e === "it" ? z() : e === "jp" ? j() : e === "pl" ? v() : e === "ru" ? w() : e === "uk" ? B() : x()
   };
 export {
-  g as t
+  N as a, L as u
 };

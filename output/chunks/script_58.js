@@ -1,32 +1,22 @@
 import {
-  g as t
-} from "./C33D4ipC.js";
-(function() {
-  try {
-    var r = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    r.SENTRY_RELEASE = {
-      id: "f2a47ca0cf31d67c069828387c1df370b5604651"
-    };
-    var e = new r.Error().stack;
-    e && (r._sentryDebugIds = r._sentryDebugIds || {}, r._sentryDebugIds[e] = "e3adb9f0-cb18-41f3-8576-b659a72798fa", r._sentryDebugIdIdentifier = "sentry-dbid-e3adb9f0-cb18-41f3-8576-b659a72798fa")
-  } catch {}
-})();
-const u = () => "Unban",
-  a = () => "Desbanir",
-  b = () => "解封",
-  f = () => "Entbannen",
-  s = () => "Desbanear",
-  o = () => "Débannir",
-  i = () => "Unban",
-  c = () => "BANを解除",
-  d = () => "Odbanuj",
-  l = () => "Разбанить",
-  _ = () => "Розбанити",
-  p = () => "Gỡ cấm",
-  y = (r = {}, e = {}) => {
-    const n = e.locale ?? t();
-    return n === "en" ? u() : n === "pt" ? a() : n === "ch" ? b() : n === "de" ? f() : n === "es" ? s() : n === "fr" ? o() : n === "it" ? i() : n === "jp" ? c() : n === "pl" ? d() : n === "ru" ? l() : n === "uk" ? _() : p()
+  g as s
+} from "./BhCkpOlh.js";
+const t = () => "Users",
+  u = () => "Usuários",
+  n = () => "用户",
+  i = () => "Benutzer",
+  o = () => "Usuarios",
+  c = () => "Utilisateurs",
+  f = () => "Utenti",
+  _ = () => "ユーザー",
+  p = () => "Użytkownicy",
+  l = () => "Пользователи",
+  a = () => "Користувачі",
+  U = () => "Người dùng",
+  k = (g = {}, e = {}) => {
+    const r = e.locale ?? s();
+    return r === "en" ? t() : r === "pt" ? u() : r === "ch" ? n() : r === "de" ? i() : r === "es" ? o() : r === "fr" ? c() : r === "it" ? f() : r === "jp" ? _() : r === "pl" ? p() : r === "ru" ? l() : r === "uk" ? a() : U()
   };
 export {
-  y as u
+  k as u
 };

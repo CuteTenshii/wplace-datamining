@@ -1,32 +1,80 @@
+import "./Bzak7iHL.js";
+import "./CMfXY_iA.js";
 import {
-  g as o
-} from "./C33D4ipC.js";
-(function() {
-  try {
-    var e = typeof window < "u" ? window : typeof global < "u" ? global : typeof globalThis < "u" ? globalThis : typeof self < "u" ? self : {};
-    e.SENTRY_RELEASE = {
-      id: "f2a47ca0cf31d67c069828387c1df370b5604651"
-    };
-    var n = new e.Error().stack;
-    n && (e._sentryDebugIds = e._sentryDebugIds || {}, e._sentryDebugIds[n] = "0ea7cc9d-2ea5-4af5-a99a-39bddccfd536", e._sentryDebugIdIdentifier = "sentry-dbid-0ea7cc9d-2ea5-4af5-a99a-39bddccfd536")
-  } catch {}
-})();
-const t = () => "Error loading",
-  a = () => "Erro ao carregar",
-  d = () => "加载出错",
-  i = () => "Fehler beim Laden",
-  u = () => "Error al cargar",
-  c = () => "Erreur lors du chargement",
-  l = () => "Errore nel caricamento",
-  f = () => "読み込みエラー",
-  s = () => "Błąd ładowania",
-  _ = () => "Ошибка загрузки",
-  g = () => "Помилка завантаження",
-  b = () => "Lỗi tải dữ liệu",
-  y = (e = {}, n = {}) => {
-    const r = n.locale ?? o();
-    return r === "en" ? t() : r === "pt" ? a() : r === "ch" ? d() : r === "de" ? i() : r === "es" ? u() : r === "fr" ? c() : r === "it" ? l() : r === "jp" ? f() : r === "pl" ? s() : r === "ru" ? _() : r === "uk" ? g() : b()
-  };
+  p as O,
+  d as n,
+  r as m,
+  t as d,
+  a as p,
+  b as k,
+  s as v,
+  w as o,
+  x as c,
+  c as f
+} from "./B66BVdRM.js";
+import {
+  s as g
+} from "./D1f3t9ko.js";
+import {
+  i as z
+} from "./BLRpBUXo.js";
+import {
+  a as A
+} from "./D6WlI9xC.js";
+import {
+  i as M
+} from "./Bfby74As.js";
+import {
+  p as b
+} from "./DFHlj6pU.js";
+import {
+  R as x,
+  a as u
+} from "./BXcryQ_k.js";
+import {
+  L
+} from "./BvaPD6eg.js";
+var N = f('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
+  j = f('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
+  B = f("<span><!></span>");
+
+function J(R, i) {
+  O(i, !1);
+  let a = b(i, "role", 8),
+    h = b(i, "big", 8, !1);
+  M();
+  var t = B();
+  let _;
+  var w = n(t);
+  {
+    var y = r => {
+        var e = N(),
+          s = n(e);
+        L(s, {
+          size: "none"
+        });
+        var l = v(s, 1, !0);
+        m(e), d(() => g(l, (o(x), o(a()), c(() => x[a()])))), p(r, e)
+      },
+      E = r => {
+        var e = j(),
+          s = n(e);
+        L(s, {
+          size: "small"
+        });
+        var l = v(s, 1, !0);
+        m(e), d(() => g(l, (o(u), o(a()), c(() => u[a()])))), p(r, e)
+      };
+    z(w, r => {
+      h() ? r(y) : r(E, !1)
+    })
+  }
+  m(t), d(() => _ = A(t, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center whitespace-nowrap pt-0.5 font-semibold leading-none shadow", null, _, {
+    "badge-info": a() === "admin",
+    "badge-secondary": a() === "moderator" || a() == "global_moderator",
+    "badge-warning": a() === "community_leader" || a() === "discord_leader"
+  })), p(R, t), k()
+}
 export {
-  y as e
+  J as R
 };
