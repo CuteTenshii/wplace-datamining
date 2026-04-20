@@ -45,7 +45,7 @@ import {
 } from "./BLRpBUXo.js";
 import {
   g as je
-} from "./CuFj1ven.js";
+} from "./M3RhwQMz.js";
 import {
   j as vt,
   u as ue,
@@ -53,7 +53,7 @@ import {
   a as Xe,
   f as ct,
   P as Fe
-} from "./D2lcZBT_.js";
+} from "./D5RsJ75U.js";
 import {
   r as Oe
 } from "./CFl7M2B7.js";
@@ -218,8 +218,8 @@ function De(i, e) {
 }
 var It = f('<span class="btn btn-xs btn-circle btn-primary ml-0.5 size-5"><!></span>'),
   Mt = f('<span class="flex items-center gap-1"><!> <span class="text-primary text-base font-semibold"> <span class="text-xs max-lg:hidden">Droplets</span></span> <!></span>'),
-  Bt = f('<button class="badge badge-lg border-base-content/10 right-tooltip cursor-pointer border-2 pl-1 pr-1"><!></button>'),
-  Lt = f('<span class="badge badge-lg border-base-content/10 right-tooltip border-2 pl-1 pr-2"><!></span>');
+  Bt = f('<button class="badge badge-lg border-base-content/10 right-tooltip cursor-pointer border-2 pr-1 pl-1"><!></button>'),
+  Lt = f('<span class="badge badge-lg border-base-content/10 right-tooltip border-2 pr-2 pl-1"><!></span>');
 
 function Dt(i, e) {
   qe(e, !0);
