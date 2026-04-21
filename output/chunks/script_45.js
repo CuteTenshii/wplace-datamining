@@ -5205,18 +5205,18 @@ Nếu tăng thêm, bản xem trước có thể lỗi, chế độ xây dựng c
     const r = t.locale ?? n();
     return r === "en" ? Rir() : r === "pt" ? Iir() : r === "ch" ? $ir() : r === "de" ? Lir() : r === "es" ? Wir() : r === "fr" ? Vir() : r === "it" ? Kir() : r === "jp" ? Gir() : r === "pl" ? Uir() : r === "ru" ? Hir() : r === "uk" ? Fir() : Zir()
   },
-  Jir = () => "You are no longer able to paint on this account.",
-  Yir = () => "Você não pode mais pintar nesta conta.",
-  Qir = () => "您已无法在此帐户上作画。",
-  Xir = () => "Sie können auf diesem Konto nicht mehr malen.",
-  rsr = () => "Ya no puedes pintar en esta cuenta.",
-  esr = () => "Vous ne pouvez plus peindre sur ce compte.",
-  tsr = () => "Non puoi più dipingere su questo account.",
-  nsr = () => "このアカウントではもう描けません。",
-  osr = () => "Nie możesz już malować na tym koncie.",
-  usr = () => "Вы больше не можете рисовать на этой учетной записи.",
-  isr = () => "Ви більше не можете малювати в цьому обліковому записі.",
-  ssr = () => "Bạn không thể vẽ trên tài khoản này nữa.",
+  Jir = () => "You are no longer able to paint.",
+  Yir = () => "Você não pode mais pintar.",
+  Qir = () => "您已无法作画。",
+  Xir = () => "Sie können nicht mehr malen.",
+  rsr = () => "Ya no puedes pintar.",
+  esr = () => "Vous ne pouvez plus peindre.",
+  tsr = () => "Non puoi più dipingere.",
+  nsr = () => "もう描画できません。",
+  osr = () => "Nie możesz już malować.",
+  usr = () => "Вы больше не можете рисовать.",
+  isr = () => "Ви більше не можете малювати.",
+  ssr = () => "Bạn không thể vẽ nữa.",
   Thr = (e = {}, t = {}) => {
     const r = t.locale ?? n();
     return r === "en" ? Jir() : r === "pt" ? Yir() : r === "ch" ? Qir() : r === "de" ? Xir() : r === "es" ? rsr() : r === "fr" ? esr() : r === "it" ? tsr() : r === "jp" ? nsr() : r === "pl" ? osr() : r === "ru" ? usr() : r === "uk" ? isr() : ssr()
