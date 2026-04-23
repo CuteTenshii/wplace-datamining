@@ -24,11 +24,11 @@ import {
   g as p
 } from "./BhCkpOlh.js";
 const ve = typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__,
-  ae = globalThis,
+  ie = globalThis,
   Ae = "10.40.0";
 
 function Dt() {
-  return Lt(ae), ae
+  return Lt(ie), ie
 }
 
 function Lt(n) {
@@ -36,28 +36,28 @@ function Lt(n) {
   return t.version = t.version || Ae, t[Ae] = t[Ae] || {}
 }
 
-function Mt(n, t, e = ae) {
+function Mt(n, t, e = ie) {
   const r = e.__SENTRY__ = e.__SENTRY__ || {},
-    i = r[Ae] = r[Ae] || {};
-  return i[n] || (i[n] = t())
+    a = r[Ae] = r[Ae] || {};
+  return a[n] || (a[n] = t())
 }
 const br = "Sentry Logger ",
   Zt = {};
 
 function Er(n) {
-  if (!("console" in ae)) return n();
-  const t = ae.console,
+  if (!("console" in ie)) return n();
+  const t = ie.console,
     e = {},
     r = Object.keys(Zt);
-  r.forEach(i => {
-    const a = Zt[i];
-    e[i] = t[i], t[i] = a
+  r.forEach(a => {
+    const i = Zt[a];
+    e[a] = t[a], t[a] = i
   });
   try {
     return n()
   } finally {
-    r.forEach(i => {
-      t[i] = e[i]
+    r.forEach(a => {
+      t[a] = e[a]
     })
   }
 }
@@ -88,7 +88,7 @@ function Ar(...n) {
 
 function Pt(n, ...t) {
   ve && Cn() && Er(() => {
-    ae.console[n](`${br}[${n}]:`, ...t)
+    ie.console[n](`${br}[${n}]:`, ...t)
   })
 }
 
@@ -137,7 +137,7 @@ let pe;
 function wt(n) {
   if (pe !== void 0) return pe ? pe(n) : n();
   const t = Symbol.for("__SENTRY_SAFE_RANDOM_ID_WRAPPER__"),
-    e = ae;
+    e = ie;
   return t in e && typeof e[t] == "function" ? (pe = e[t], pe(n)) : (pe = null, n())
 }
 
@@ -154,7 +154,7 @@ function Mr(n, t = 0) {
 }
 
 function Pr() {
-  const n = ae;
+  const n = ie;
   return n.crypto || n.msCrypto
 }
 let vt;
@@ -178,7 +178,7 @@ function Fn() {
 function Cr() {
   const {
     performance: n
-  } = ae;
+  } = ie;
   if (!(n != null && n.now) || !n.timeOrigin) return Fn;
   const t = n.timeOrigin;
   return () => (t + wt(() => n.now())) / jn
@@ -205,7 +205,7 @@ function Bn(n, t, e = 2) {
   const r = {
     ...n
   };
-  for (const i in t) Object.prototype.hasOwnProperty.call(t, i) && (r[i] = Bn(r[i], t[i], e - 1));
+  for (const a in t) Object.prototype.hasOwnProperty.call(t, a) && (r[a] = Bn(r[a], t[a], e - 1));
   return r
 }
 
@@ -341,8 +341,8 @@ class _e {
     const e = typeof t == "function" ? t(this) : t,
       r = e instanceof _e ? e.getScopeData() : Nr(e) ? t : void 0,
       {
-        tags: i,
-        attributes: a,
+        tags: a,
+        attributes: i,
         extra: o,
         user: s,
         contexts: l,
@@ -353,10 +353,10 @@ class _e {
       } = r || {};
     return this._tags = {
       ...this._tags,
-      ...i
+      ...a
     }, this._attributes = {
       ...this._attributes,
-      ...a
+      ...i
     }, this._extra = {
       ...this._extra,
       ...o
@@ -372,15 +372,15 @@ class _e {
     }), this._notifyScopeListeners(), this
   }
   addBreadcrumb(t, e) {
-    var a;
+    var i;
     const r = typeof e == "number" ? e : Br;
     if (r <= 0) return this;
-    const i = {
+    const a = {
       timestamp: Fn(),
       ...t,
       message: t.message ? Mr(t.message, 2048) : t.message
     };
-    return this._breadcrumbs.push(i), this._breadcrumbs.length > r && (this._breadcrumbs = this._breadcrumbs.slice(-r), (a = this._client) == null || a.recordDroppedEvent("buffer_overflow", "log_item")), this._notifyScopeListeners(), this
+    return this._breadcrumbs.push(a), this._breadcrumbs.length > r && (this._breadcrumbs = this._breadcrumbs.slice(-r), (i = this._client) == null || i.recordDroppedEvent("buffer_overflow", "log_item")), this._notifyScopeListeners(), this
   }
   getLastBreadcrumb() {
     return this._breadcrumbs[this._breadcrumbs.length - 1]
@@ -425,24 +425,24 @@ class _e {
   captureException(t, e) {
     const r = (e == null ? void 0 : e.event_id) || ke();
     if (!this._client) return ve && ct.warn("No client configured on scope - will not capture exception!"), r;
-    const i = new Error("Sentry syntheticException");
+    const a = new Error("Sentry syntheticException");
     return this._client.captureException(t, {
       originalException: t,
-      syntheticException: i,
+      syntheticException: a,
       ...e,
       event_id: r
     }, this), r
   }
   captureMessage(t, e, r) {
-    const i = (r == null ? void 0 : r.event_id) || ke();
-    if (!this._client) return ve && ct.warn("No client configured on scope - will not capture message!"), i;
-    const a = (r == null ? void 0 : r.syntheticException) ?? new Error(t);
+    const a = (r == null ? void 0 : r.event_id) || ke();
+    if (!this._client) return ve && ct.warn("No client configured on scope - will not capture message!"), a;
+    const i = (r == null ? void 0 : r.syntheticException) ?? new Error(t);
     return this._client.captureMessage(t, e, {
       originalException: t,
-      syntheticException: a,
+      syntheticException: i,
       ...r,
-      event_id: i
-    }, this), i
+      event_id: a
+    }, this), a
   }
   captureEvent(t, e) {
     const r = t.event_id || (e == null ? void 0 : e.event_id) || ke();
@@ -469,21 +469,21 @@ class Gr {
   constructor(t, e) {
     let r;
     t ? r = t : r = new _e;
-    let i;
-    e ? i = e : i = new _e, this._stack = [{
+    let a;
+    e ? a = e : a = new _e, this._stack = [{
       scope: r
-    }], this._isolationScope = i
+    }], this._isolationScope = a
   }
   withScope(t) {
     const e = this._pushScope();
     let r;
     try {
       r = t(e)
-    } catch (i) {
-      throw this._popScope(), i
+    } catch (a) {
+      throw this._popScope(), a
     }
-    return xr(r) ? r.then(i => (this._popScope(), i), i => {
-      throw this._popScope(), i
+    return xr(r) ? r.then(a => (this._popScope(), a), a => {
+      throw this._popScope(), a
     }) : (this._popScope(), r)
   }
   getClient() {
@@ -562,11 +562,11 @@ function Zr(n, t) {
 function $r(n, t) {
   Yr().setContext(n, t)
 }
-const Qb = "https://maps.wplace.live",
-  e0 = "8d582454-e5ec-4314-b1c2-89e460ac1d28",
+const _0 = "https://maps.wplace.live",
+  f0 = "8d582454-e5ec-4314-b1c2-89e460ac1d28",
   Jr = "true",
-  t0 = "0x4AAAAAABpHqZ-6i7uL0nmG",
-  n0 = "https://backend.wplace.live/files",
+  h0 = "0x4AAAAAABpHqZ-6i7uL0nmG",
+  m0 = "https://backend.wplace.live/files",
   Ct = "https://backend.wplace.live",
   tn = "theme";
 var Le, Me, Pe, Ue, Ce, je, Fe, Be, ze;
@@ -631,7 +631,7 @@ class Xr {
     return M(b(this, Be))
   }
   get captcha() {
-    return ei ? M(b(this, ze)) : {
+    return ea ? M(b(this, ze)) : {
       token: "turnstile-disabled",
       time: Date.now()
     }
@@ -650,25 +650,25 @@ function Qr() {
   }
   return (navigator.language || navigator.userLanguage || navigator.browserLanguage || "en").substring(0, 2)
 }
-const ei = Jr.toLowerCase() !== "false",
-  ti = "" + new URL("../assets/pawtect_wasm_bg.9gmZk8aU.wasm", import.meta.url).href;
+const ea = Jr.toLowerCase() !== "false",
+  ta = "" + new URL("../assets/pawtect_wasm_bg.9gmZk8aU.wasm", import.meta.url).href;
 var kt = function() {
   return kt = Object.assign || function(t) {
-    for (var e, r = 1, i = arguments.length; r < i; r++) {
+    for (var e, r = 1, a = arguments.length; r < a; r++) {
       e = arguments[r];
-      for (var a in e) Object.prototype.hasOwnProperty.call(e, a) && (t[a] = e[a])
+      for (var i in e) Object.prototype.hasOwnProperty.call(e, i) && (t[i] = e[i])
     }
     return t
   }, kt.apply(this, arguments)
 };
 
 function Q(n, t, e, r) {
-  function i(a) {
-    return a instanceof e ? a : new e(function(o) {
-      o(a)
+  function a(i) {
+    return i instanceof e ? i : new e(function(o) {
+      o(i)
     })
   }
-  return new(e || (e = Promise))(function(a, o) {
+  return new(e || (e = Promise))(function(i, o) {
     function s(_) {
       try {
         u(r.next(_))
@@ -686,7 +686,7 @@ function Q(n, t, e, r) {
     }
 
     function u(_) {
-      _.done ? a(_.value) : i(_.value).then(s, l)
+      _.done ? i(_.value) : a(_.value).then(s, l)
     }
     u((r = r.apply(n, t || [])).next())
   })
@@ -696,13 +696,13 @@ function ee(n, t) {
   var e = {
       label: 0,
       sent: function() {
-        if (a[0] & 1) throw a[1];
-        return a[1]
+        if (i[0] & 1) throw i[1];
+        return i[1]
       },
       trys: [],
       ops: []
     },
-    r, i, a, o = Object.create((typeof Iterator == "function" ? Iterator : Object).prototype);
+    r, a, i, o = Object.create((typeof Iterator == "function" ? Iterator : Object).prototype);
   return o.next = s(0), o.throw = s(1), o.return = s(2), typeof Symbol == "function" && (o[Symbol.iterator] = function() {
     return this
   }), o;
@@ -716,11 +716,11 @@ function ee(n, t) {
   function l(u) {
     if (r) throw new TypeError("Generator is already executing.");
     for (; o && (o = 0, u[0] && (e = 0)), e;) try {
-      if (r = 1, i && (a = u[0] & 2 ? i.return : u[0] ? i.throw || ((a = i.return) && a.call(i), 0) : i.next) && !(a = a.call(i, u[1])).done) return a;
-      switch (i = 0, a && (u = [u[0] & 2, a.value]), u[0]) {
+      if (r = 1, a && (i = u[0] & 2 ? a.return : u[0] ? a.throw || ((i = a.return) && i.call(a), 0) : a.next) && !(i = i.call(a, u[1])).done) return i;
+      switch (a = 0, i && (u = [u[0] & 2, i.value]), u[0]) {
         case 0:
         case 1:
-          a = u;
+          i = u;
           break;
         case 4:
           return e.label++, {
@@ -728,36 +728,36 @@ function ee(n, t) {
             done: !1
           };
         case 5:
-          e.label++, i = u[1], u = [0];
+          e.label++, a = u[1], u = [0];
           continue;
         case 7:
           u = e.ops.pop(), e.trys.pop();
           continue;
         default:
-          if (a = e.trys, !(a = a.length > 0 && a[a.length - 1]) && (u[0] === 6 || u[0] === 2)) {
+          if (i = e.trys, !(i = i.length > 0 && i[i.length - 1]) && (u[0] === 6 || u[0] === 2)) {
             e = 0;
             continue
           }
-          if (u[0] === 3 && (!a || u[1] > a[0] && u[1] < a[3])) {
+          if (u[0] === 3 && (!i || u[1] > i[0] && u[1] < i[3])) {
             e.label = u[1];
             break
           }
-          if (u[0] === 6 && e.label < a[1]) {
-            e.label = a[1], a = u;
+          if (u[0] === 6 && e.label < i[1]) {
+            e.label = i[1], i = u;
             break
           }
-          if (a && e.label < a[2]) {
-            e.label = a[2], e.ops.push(u);
+          if (i && e.label < i[2]) {
+            e.label = i[2], e.ops.push(u);
             break
           }
-          a[2] && e.ops.pop(), e.trys.pop();
+          i[2] && e.ops.pop(), e.trys.pop();
           continue
       }
       u = t.call(n, e)
     } catch (_) {
-      u = [6, _], i = 0
+      u = [6, _], a = 0
     } finally {
-      r = a = 0
+      r = i = 0
     }
     if (u[0] & 5) throw u[1];
     return {
@@ -769,8 +769,8 @@ function ee(n, t) {
 
 function Vn(n, t, e) {
   if (e || arguments.length === 2)
-    for (var r = 0, i = t.length, a; r < i; r++)(a || !(r in t)) && (a || (a = Array.prototype.slice.call(t, 0, r)), a[r] = t[r]);
-  return n.concat(a || Array.prototype.slice.call(t))
+    for (var r = 0, a = t.length, i; r < a; r++)(i || !(r in t)) && (i || (i = Array.prototype.slice.call(t, 0, r)), i[r] = t[r]);
+  return n.concat(i || Array.prototype.slice.call(t))
 }
 var Gn = "4.6.2";
 
@@ -780,7 +780,7 @@ function _t(n, t) {
   })
 }
 
-function ni() {
+function na() {
   return new Promise(function(n) {
     var t = new MessageChannel;
     t.port1.onmessage = function() {
@@ -789,7 +789,7 @@ function ni() {
   })
 }
 
-function ri(n, t) {
+function ra(n, t) {
   t === void 0 && (t = 1 / 0);
   var e = window.requestIdleCallback;
   return e ? new Promise(function(r) {
@@ -820,17 +820,17 @@ function nn(n, t) {
 
 function rn(n, t, e) {
   return e === void 0 && (e = 16), Q(this, void 0, void 0, function() {
-    var r, i, a, o;
+    var r, a, i, o;
     return ee(this, function(s) {
       switch (s.label) {
         case 0:
-          r = Array(n.length), i = Date.now(), a = 0, s.label = 1;
+          r = Array(n.length), a = Date.now(), i = 0, s.label = 1;
         case 1:
-          return a < n.length ? (r[a] = t(n[a], a), o = Date.now(), o >= i + e ? (i = o, [4, ni()]) : [3, 3]) : [3, 4];
+          return i < n.length ? (r[i] = t(n[i], i), o = Date.now(), o >= a + e ? (a = o, [4, na()]) : [3, 3]) : [3, 4];
         case 2:
           s.sent(), s.label = 3;
         case 3:
-          return ++a, [3, 1];
+          return ++i, [3, 1];
         case 4:
           return [2, r]
       }
@@ -842,14 +842,14 @@ function xe(n) {
   return n.then(void 0, function() {}), n
 }
 
-function ii(n, t) {
+function aa(n, t) {
   for (var e = 0, r = n.length; e < r; ++e)
     if (n[e] === t) return !0;
   return !1
 }
 
-function ai(n, t) {
-  return !ii(n, t)
+function ia(n, t) {
+  return !aa(n, t)
 }
 
 function Ft(n) {
@@ -876,11 +876,11 @@ function qn(n, t) {
   return Math.round(n * e) / e
 }
 
-function oi(n) {
-  for (var t, e, r = "Unexpected syntax '".concat(n, "'"), i = /^\s*([a-z-]*)(.*)$/i.exec(n), a = i[1] || void 0, o = {}, s = /([.:#][\w-]+|\[.+?\])/gi, l = function(m, g) {
+function oa(n) {
+  for (var t, e, r = "Unexpected syntax '".concat(n, "'"), a = /^\s*([a-z-]*)(.*)$/i.exec(n), i = a[1] || void 0, o = {}, s = /([.:#][\w-]+|\[.+?\])/gi, l = function(m, g) {
       o[m] = o[m] || [], o[m].push(g)
     };;) {
-    var u = s.exec(i[2]);
+    var u = s.exec(a[2]);
     if (!u) break;
     var _ = u[0];
     switch (_[0]) {
@@ -900,10 +900,10 @@ function oi(n) {
         throw new Error(r)
     }
   }
-  return [a, o]
+  return [i, o]
 }
 
-function si(n) {
+function sa(n) {
   for (var t = new Uint8Array(n.length), e = 0; e < n.length; e++) {
     var r = n.charCodeAt(e);
     if (r > 127) return new TextEncoder().encode(n);
@@ -915,8 +915,8 @@ function si(n) {
 function oe(n, t) {
   var e = n[0] >>> 16,
     r = n[0] & 65535,
-    i = n[1] >>> 16,
-    a = n[1] & 65535,
+    a = n[1] >>> 16,
+    i = n[1] & 65535,
     o = t[0] >>> 16,
     s = t[0] & 65535,
     l = t[1] >>> 16,
@@ -925,14 +925,14 @@ function oe(n, t) {
     d = 0,
     m = 0,
     g = 0;
-  g += a + u, m += g >>> 16, g &= 65535, m += i + l, d += m >>> 16, m &= 65535, d += r + s, _ += d >>> 16, d &= 65535, _ += e + o, _ &= 65535, n[0] = _ << 16 | d, n[1] = m << 16 | g
+  g += i + u, m += g >>> 16, g &= 65535, m += a + l, d += m >>> 16, m &= 65535, d += r + s, _ += d >>> 16, d &= 65535, _ += e + o, _ &= 65535, n[0] = _ << 16 | d, n[1] = m << 16 | g
 }
 
 function Y(n, t) {
   var e = n[0] >>> 16,
     r = n[0] & 65535,
-    i = n[1] >>> 16,
-    a = n[1] & 65535,
+    a = n[1] >>> 16,
+    i = n[1] & 65535,
     o = t[0] >>> 16,
     s = t[0] & 65535,
     l = t[1] >>> 16,
@@ -941,7 +941,7 @@ function Y(n, t) {
     d = 0,
     m = 0,
     g = 0;
-  g += a * u, m += g >>> 16, g &= 65535, m += i * u, d += m >>> 16, m &= 65535, m += a * l, d += m >>> 16, m &= 65535, d += r * u, _ += d >>> 16, d &= 65535, d += i * l, _ += d >>> 16, d &= 65535, d += a * s, _ += d >>> 16, d &= 65535, _ += e * u + r * l + i * s + a * o, _ &= 65535, n[0] = _ << 16 | d, n[1] = m << 16 | g
+  g += i * u, m += g >>> 16, g &= 65535, m += a * u, d += m >>> 16, m &= 65535, m += i * l, d += m >>> 16, m &= 65535, d += r * u, _ += d >>> 16, d &= 65535, d += a * l, _ += d >>> 16, d &= 65535, d += i * s, _ += d >>> 16, d &= 65535, _ += e * u + r * l + a * s + i * o, _ &= 65535, n[0] = _ << 16 | d, n[1] = m << 16 | g
 }
 
 function ge(n, t) {
@@ -956,34 +956,34 @@ function K(n, t) {
 function L(n, t) {
   n[0] ^= t[0], n[1] ^= t[1]
 }
-var ci = [4283543511, 3981806797],
-  ui = [3301882366, 444984403];
+var ca = [4283543511, 3981806797],
+  ua = [3301882366, 444984403];
 
 function an(n) {
   var t = [0, n[0] >>> 1];
-  L(n, t), Y(n, ci), t[1] = n[0] >>> 1, L(n, t), Y(n, ui), t[1] = n[0] >>> 1, L(n, t)
+  L(n, t), Y(n, ca), t[1] = n[0] >>> 1, L(n, t), Y(n, ua), t[1] = n[0] >>> 1, L(n, t)
 }
 var ot = [2277735313, 289559509],
   st = [1291169091, 658871167],
   on = [0, 5],
-  li = [0, 1390208809],
-  di = [0, 944331445];
+  la = [0, 1390208809],
+  da = [0, 944331445];
 
-function _i(n, t) {
-  var e = si(n);
+function _a(n, t) {
+  var e = sa(n);
   t = t || 0;
   var r = [0, e.length],
-    i = r[1] % 16,
-    a = r[1] - i,
+    a = r[1] % 16,
+    i = r[1] - a,
     o = [0, t],
     s = [0, t],
     l = [0, 0],
     u = [0, 0],
     _;
-  for (_ = 0; _ < a; _ = _ + 16) l[0] = e[_ + 4] | e[_ + 5] << 8 | e[_ + 6] << 16 | e[_ + 7] << 24, l[1] = e[_] | e[_ + 1] << 8 | e[_ + 2] << 16 | e[_ + 3] << 24, u[0] = e[_ + 12] | e[_ + 13] << 8 | e[_ + 14] << 16 | e[_ + 15] << 24, u[1] = e[_ + 8] | e[_ + 9] << 8 | e[_ + 10] << 16 | e[_ + 11] << 24, Y(l, ot), ge(l, 31), Y(l, st), L(o, l), ge(o, 27), oe(o, s), Y(o, on), oe(o, li), Y(u, st), ge(u, 33), Y(u, ot), L(s, u), ge(s, 31), oe(s, o), Y(s, on), oe(s, di);
+  for (_ = 0; _ < i; _ = _ + 16) l[0] = e[_ + 4] | e[_ + 5] << 8 | e[_ + 6] << 16 | e[_ + 7] << 24, l[1] = e[_] | e[_ + 1] << 8 | e[_ + 2] << 16 | e[_ + 3] << 24, u[0] = e[_ + 12] | e[_ + 13] << 8 | e[_ + 14] << 16 | e[_ + 15] << 24, u[1] = e[_ + 8] | e[_ + 9] << 8 | e[_ + 10] << 16 | e[_ + 11] << 24, Y(l, ot), ge(l, 31), Y(l, st), L(o, l), ge(o, 27), oe(o, s), Y(o, on), oe(o, la), Y(u, st), ge(u, 33), Y(u, ot), L(s, u), ge(s, 31), oe(s, o), Y(s, on), oe(s, da);
   l[0] = 0, l[1] = 0, u[0] = 0, u[1] = 0;
   var d = [0, 0];
-  switch (i) {
+  switch (a) {
     case 15:
       d[1] = e[_ + 14], K(d, 48), L(u, d);
     case 14:
@@ -1018,7 +1018,7 @@ function _i(n, t) {
   return L(o, r), L(s, r), oe(o, s), oe(s, o), an(o), an(s), oe(o, s), oe(s, o), ("00000000" + (o[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (o[1] >>> 0).toString(16)).slice(-8) + ("00000000" + (s[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (s[1] >>> 0).toString(16)).slice(-8)
 }
 
-function fi(n) {
+function fa(n) {
   var t;
   return kt({
     name: n.name,
@@ -1028,28 +1028,28 @@ function fi(n) {
   }, n)
 }
 
-function hi(n) {
+function ha(n) {
   return /^function\s.*?\{\s*\[native code]\s*}$/.test(String(n))
 }
 
-function mi(n) {
+function ma(n) {
   return typeof n != "function"
 }
 
-function pi(n, t) {
+function pa(n, t) {
   var e = xe(new Promise(function(r) {
-    var i = Date.now();
+    var a = Date.now();
     nn(n.bind(null, t), function() {
-      for (var a = [], o = 0; o < arguments.length; o++) a[o] = arguments[o];
-      var s = Date.now() - i;
-      if (!a[0]) return r(function() {
+      for (var i = [], o = 0; o < arguments.length; o++) i[o] = arguments[o];
+      var s = Date.now() - a;
+      if (!i[0]) return r(function() {
         return {
-          error: a[1],
+          error: i[1],
           duration: s
         }
       });
-      var l = a[1];
-      if (mi(l)) return r(function() {
+      var l = i[1];
+      if (ma(l)) return r(function() {
         return {
           value: l,
           duration: s
@@ -1075,18 +1075,18 @@ function pi(n, t) {
     })
   }));
   return function() {
-    return e.then(function(i) {
-      return i()
+    return e.then(function(a) {
+      return a()
     })
   }
 }
 
-function gi(n, t, e, r) {
-  var i = Object.keys(n).filter(function(o) {
-      return ai(e, o)
+function ga(n, t, e, r) {
+  var a = Object.keys(n).filter(function(o) {
+      return ia(e, o)
     }),
-    a = xe(rn(i, function(o) {
-      return pi(n[o], t)
+    i = xe(rn(a, function(o) {
+      return pa(n[o], t)
     }, r));
   return function() {
     return Q(this, void 0, void 0, function() {
@@ -1094,7 +1094,7 @@ function gi(n, t, e, r) {
       return ee(this, function(m) {
         switch (m.label) {
           case 0:
-            return [4, a];
+            return [4, i];
           case 1:
             return s = m.sent(), [4, rn(s, function(g) {
               return xe(g())
@@ -1102,7 +1102,7 @@ function gi(n, t, e, r) {
           case 2:
             return l = m.sent(), [4, Promise.all(l)];
           case 3:
-            for (u = m.sent(), _ = {}, d = 0; d < i.length; ++d) _[i[d]] = u[d];
+            for (u = m.sent(), _ = {}, d = 0; d < a.length; ++d) _[a[d]] = u[d];
             return [2, _]
         }
       })
@@ -1116,7 +1116,7 @@ function Kn() {
   return q(["MSCSSMatrix" in n, "msSetImmediate" in n, "msIndexedDB" in n, "msMaxTouchPoints" in t, "msPointerEnabled" in t]) >= 4
 }
 
-function wi() {
+function wa() {
   var n = window,
     t = navigator;
   return q(["msWriteProfilerMark" in n, "MSStream" in n, "msLaunchUri" in t, "msSaveBlob" in t]) >= 3 && !Kn()
@@ -1141,9 +1141,9 @@ function Bt() {
   return q(["safari" in n, !("ongestureend" in n), !("TouchEvent" in n), !("orientation" in n), t && !("autocapitalize" in t.prototype), e && "pointerLockElement" in e.prototype]) >= 4
 }
 
-function it() {
+function at() {
   var n = window;
-  return hi(n.print) && String(n.browser) === "[object WebPageNamespace]"
+  return ha(n.print) && String(n.browser) === "[object WebPageNamespace]"
 }
 
 function Hn() {
@@ -1151,23 +1151,23 @@ function Hn() {
   return q(["buildID" in navigator, "MozAppearance" in ((t = (n = document.documentElement) === null || n === void 0 ? void 0 : n.style) !== null && t !== void 0 ? t : {}), "onmozfullscreenchange" in e, "mozInnerScreenX" in e, "CSSMozDocumentRule" in e, "CanvasCaptureMediaStream" in e]) >= 4
 }
 
-function yi() {
+function ya() {
   var n = window;
   return q([!("MediaSettingsRange" in n), "RTCEncodedAudioFrame" in n, "" + n.Intl == "[object Intl]", "" + n.Reflect == "[object Reflect]"]) >= 3
 }
 
-function vi() {
+function va() {
   var n = window,
     t = n.URLPattern;
   return q(["union" in Set.prototype, "Iterator" in n, t && "hasRegExpGroups" in t.prototype, "RGB8" in WebGLRenderingContext.prototype]) >= 3
 }
 
-function bi() {
+function ba() {
   var n = window;
   return q(["DOMRectList" in n, "RTCPeerConnectionIceEvent" in n, "SVGGeometryElement" in n, "ontransitioncancel" in n]) >= 3
 }
 
-function at() {
+function it() {
   var n = window,
     t = navigator,
     e = n.CSS,
@@ -1175,19 +1175,19 @@ function at() {
   return q([!("getStorageUpdates" in t), r && "popover" in r.prototype, "CSSCounterStyleRule" in n, e.supports("font-size-adjust: ex-height 0.5"), e.supports("text-transform: full-width")]) >= 4
 }
 
-function Ei() {
+function Ea() {
   if (navigator.platform === "iPad") return !0;
   var n = screen,
     t = n.width / n.height;
   return q(["MediaSource" in window, !!Element.prototype.webkitRequestFullscreen, t > .65 && t < 1.53]) >= 2
 }
 
-function Ti() {
+function Ta() {
   var n = document;
   return n.fullscreenElement || n.msFullscreenElement || n.mozFullScreenElement || n.webkitFullscreenElement || null
 }
 
-function Si() {
+function Sa() {
   var n = document;
   return (n.exitFullscreen || n.msExitFullscreen || n.mozCancelFullScreen || n.webkitExitFullscreen).call(n)
 }
@@ -1197,11 +1197,11 @@ function zt() {
     t = Hn(),
     e = window,
     r = navigator,
-    i = "connection";
-  return n ? q([!("SharedWorker" in e), r[i] && "ontypechange" in r[i], !("sinkId" in new Audio)]) >= 2 : t ? q(["onorientationchange" in e, "orientation" in e, /android/i.test(r.appVersion)]) >= 2 : !1
+    a = "connection";
+  return n ? q([!("SharedWorker" in e), r[a] && "ontypechange" in r[a], !("sinkId" in new Audio)]) >= 2 : t ? q(["onorientationchange" in e, "orientation" in e, /android/i.test(r.appVersion)]) >= 2 : !1
 }
 
-function Oi() {
+function Oa() {
   var n = navigator,
     t = window,
     e = Audio.prototype,
@@ -1209,27 +1209,27 @@ function Oi() {
   return q(["srLatency" in e, "srChannelCount" in e, "devicePosture" in n, r && "segments" in r, "getTextInformation" in Image.prototype]) >= 3
 }
 
-function Ii() {
-  return Ri() ? -4 : Ai()
+function Ia() {
+  return Ra() ? -4 : Aa()
 }
 
-function Ai() {
+function Aa() {
   var n = window,
     t = n.OfflineAudioContext || n.webkitOfflineAudioContext;
   if (!t) return -2;
-  if (ki()) return -1;
+  if (ka()) return -1;
   var e = 4500,
     r = 5e3,
-    i = new t(1, r, 44100),
-    a = i.createOscillator();
-  a.type = "triangle", a.frequency.value = 1e4;
-  var o = i.createDynamicsCompressor();
-  o.threshold.value = -50, o.knee.value = 40, o.ratio.value = 12, o.attack.value = 0, o.release.value = .25, a.connect(o), o.connect(i.destination), a.start(0);
-  var s = Ni(i),
+    a = new t(1, r, 44100),
+    i = a.createOscillator();
+  i.type = "triangle", i.frequency.value = 1e4;
+  var o = a.createDynamicsCompressor();
+  o.threshold.value = -50, o.knee.value = 40, o.ratio.value = 12, o.attack.value = 0, o.release.value = .25, i.connect(o), o.connect(a.destination), i.start(0);
+  var s = Na(a),
     l = s[0],
     u = s[1],
     _ = xe(l.then(function(d) {
-      return xi(d.getChannelData(0).subarray(e))
+      return xa(d.getChannelData(0).subarray(e))
     }, function(d) {
       if (d.name === "timeout" || d.name === "suspended") return -3;
       throw d
@@ -1239,20 +1239,20 @@ function Ai() {
   }
 }
 
-function ki() {
-  return X() && !Bt() && !bi()
+function ka() {
+  return X() && !Bt() && !ba()
 }
 
-function Ri() {
-  return X() && at() && it() || rt() && Oi() && vi()
+function Ra() {
+  return X() && it() && at() || rt() && Oa() && va()
 }
 
-function Ni(n) {
+function Na(n) {
   var t = 3,
     e = 500,
     r = 500,
-    i = 5e3,
-    a = function() {},
+    a = 5e3,
+    i = function() {},
     o = new Promise(function(s, l) {
       var u = !1,
         _ = 0,
@@ -1263,7 +1263,7 @@ function Ni(n) {
       var m = function() {
           setTimeout(function() {
             return l(sn("timeout"))
-          }, Math.min(r, d + i - Date.now()))
+          }, Math.min(r, d + a - Date.now()))
         },
         g = function() {
           try {
@@ -1280,14 +1280,14 @@ function Ni(n) {
             l(w)
           }
         };
-      g(), a = function() {
+      g(), i = function() {
         u || (u = !0, d > 0 && m())
       }
     });
-  return [o, a]
+  return [o, i]
 }
 
-function xi(n) {
+function xa(n) {
   for (var t = 0, e = 0; e < n.length; ++e) t += Math.abs(n[e]);
   return t
 }
@@ -1298,7 +1298,7 @@ function sn(n) {
 }
 
 function Yn(n, t, e) {
-  var r, i, a;
+  var r, a, i;
   return e === void 0 && (e = 50), Q(this, void 0, void 0, function() {
     var o, s;
     return ee(this, function(l) {
@@ -1332,7 +1332,7 @@ function Yn(n, t, e) {
         case 5:
           l.sent(), l.label = 6;
         case 6:
-          return !((i = (r = s.contentWindow) === null || r === void 0 ? void 0 : r.document) === null || i === void 0) && i.body ? [3, 8] : [4, _t(e)];
+          return !((a = (r = s.contentWindow) === null || r === void 0 ? void 0 : r.document) === null || a === void 0) && a.body ? [3, 8] : [4, _t(e)];
         case 7:
           return l.sent(), [3, 6];
         case 8:
@@ -1340,7 +1340,7 @@ function Yn(n, t, e) {
         case 9:
           return [2, l.sent()];
         case 10:
-          return (a = s.parentNode) === null || a === void 0 || a.removeChild(s), [7];
+          return (i = s.parentNode) === null || i === void 0 || i.removeChild(s), [7];
         case 11:
           return [2]
       }
@@ -1348,29 +1348,29 @@ function Yn(n, t, e) {
   })
 }
 
-function Di(n) {
-  for (var t = oi(n), e = t[0], r = t[1], i = document.createElement(e ?? "div"), a = 0, o = Object.keys(r); a < o.length; a++) {
-    var s = o[a],
+function Da(n) {
+  for (var t = oa(n), e = t[0], r = t[1], a = document.createElement(e ?? "div"), i = 0, o = Object.keys(r); i < o.length; i++) {
+    var s = o[i],
       l = r[s].join(" ");
-    s === "style" ? Li(i.style, l) : i.setAttribute(s, l)
+    s === "style" ? La(a.style, l) : a.setAttribute(s, l)
   }
-  return i
+  return a
 }
 
-function Li(n, t) {
+function La(n, t) {
   for (var e = 0, r = t.split(";"); e < r.length; e++) {
-    var i = r[e],
-      a = /^\s*([\w-]+)\s*:\s*(.+?)(\s*!([\w-]+))?\s*$/.exec(i);
-    if (a) {
-      var o = a[1],
-        s = a[2],
-        l = a[4];
+    var a = r[e],
+      i = /^\s*([\w-]+)\s*:\s*(.+?)(\s*!([\w-]+))?\s*$/.exec(a);
+    if (i) {
+      var o = i[1],
+        s = i[2],
+        l = i[4];
       n.setProperty(o, s, l || "")
     }
   }
 }
 
-function Mi() {
+function Ma() {
   for (var n = window;;) {
     var t = n.parent;
     if (!t || t === n) return !1;
@@ -1383,22 +1383,22 @@ function Mi() {
     n = t
   }
 }
-var Pi = "mmMwWLliI0O&1",
-  Ui = "48px",
+var Pa = "mmMwWLliI0O&1",
+  Ua = "48px",
   we = ["monospace", "sans-serif", "serif"],
   cn = ["sans-serif-thin", "ARNO PRO", "Agency FB", "Arabic Typesetting", "Arial Unicode MS", "AvantGarde Bk BT", "BankGothic Md BT", "Batang", "Bitstream Vera Sans Mono", "Calibri", "Century", "Century Gothic", "Clarendon", "EUROSTILE", "Franklin Gothic", "Futura Bk BT", "Futura Md BT", "GOTHAM", "Gill Sans", "HELV", "Haettenschweiler", "Helvetica Neue", "Humanst521 BT", "Leelawadee", "Letter Gothic", "Levenim MT", "Lucida Bright", "Lucida Sans", "Menlo", "MS Mincho", "MS Outlook", "MS Reference Specialty", "MS UI Gothic", "MT Extra", "MYRIAD PRO", "Marlett", "Meiryo UI", "Microsoft Uighur", "Minion Pro", "Monotype Corsiva", "PMingLiU", "Pristina", "SCRIPTINA", "Segoe UI Light", "Serifa", "SimHei", "Small Fonts", "Staccato222 BT", "TRAJAN PRO", "Univers CE 55 Medium", "Vrinda", "ZWAdobeF"];
 
-function Ci() {
+function Ca() {
   var n = this;
   return Yn(function(t, e) {
     var r = e.document;
     return Q(n, void 0, void 0, function() {
-      var i, a, o, s, l, u, _, d, m, g, E, w;
+      var a, i, o, s, l, u, _, d, m, g, E, w;
       return ee(this, function(T) {
-        for (i = r.body, i.style.fontSize = Ui, a = r.createElement("div"), a.style.setProperty("visibility", "hidden", "important"), o = {}, s = {}, l = function(O) {
+        for (a = r.body, a.style.fontSize = Ua, i = r.createElement("div"), i.style.setProperty("visibility", "hidden", "important"), o = {}, s = {}, l = function(O) {
             var N = r.createElement("span"),
               C = N.style;
-            return C.position = "absolute", C.top = "0", C.left = "0", C.fontFamily = O, N.textContent = Pi, a.appendChild(N), N
+            return C.position = "absolute", C.top = "0", C.left = "0", C.fontFamily = O, N.textContent = Pa, i.appendChild(N), N
           }, u = function(O, N) {
             return l("'".concat(O, "',").concat(N))
           }, _ = function() {
@@ -1417,7 +1417,7 @@ function Ci() {
             return we.some(function(N, C) {
               return O[C].offsetWidth !== o[N] || O[C].offsetHeight !== s[N]
             })
-          }, g = _(), E = d(), i.appendChild(a), w = 0; w < we.length; w++) o[we[w]] = g[w].offsetWidth, s[we[w]] = g[w].offsetHeight;
+          }, g = _(), E = d(), a.appendChild(i), w = 0; w < we.length; w++) o[we[w]] = g[w].offsetWidth, s[we[w]] = g[w].offsetHeight;
         return [2, cn.filter(function(O) {
           return m(E[O])
         })]
@@ -1426,15 +1426,15 @@ function Ci() {
   })
 }
 
-function ji() {
+function ja() {
   var n = navigator.plugins;
   if (n) {
     for (var t = [], e = 0; e < n.length; ++e) {
       var r = n[e];
       if (r) {
-        for (var i = [], a = 0; a < r.length; ++a) {
-          var o = r[a];
-          i.push({
+        for (var a = [], i = 0; i < r.length; ++i) {
+          var o = r[i];
+          a.push({
             type: o.type,
             suffixes: o.suffixes
           })
@@ -1442,7 +1442,7 @@ function ji() {
         t.push({
           name: r.name,
           description: r.description,
-          mimeTypes: i
+          mimeTypes: a
         })
       }
     }
@@ -1450,63 +1450,63 @@ function ji() {
   }
 }
 
-function Fi() {
-  return Bi(Hi())
+function Fa() {
+  return Ba(Ha())
 }
 
-function Bi(n) {
+function Ba(n) {
   var t, e = !1,
-    r, i, a = zi(),
-    o = a[0],
-    s = a[1];
-  return Vi(o, s) ? (e = Gi(s), n ? r = i = "skipped" : (t = Wi(o, s), r = t[0], i = t[1])) : r = i = "unsupported", {
+    r, a, i = za(),
+    o = i[0],
+    s = i[1];
+  return Va(o, s) ? (e = Ga(s), n ? r = a = "skipped" : (t = Wa(o, s), r = t[0], a = t[1])) : r = a = "unsupported", {
     winding: e,
     geometry: r,
-    text: i
+    text: a
   }
 }
 
-function zi() {
+function za() {
   var n = document.createElement("canvas");
   return n.width = 1, n.height = 1, [n, n.getContext("2d")]
 }
 
-function Vi(n, t) {
+function Va(n, t) {
   return !!(t && n.toDataURL)
 }
 
-function Gi(n) {
+function Ga(n) {
   return n.rect(0, 0, 10, 10), n.rect(2, 2, 6, 6), !n.isPointInPath(5, 5, "evenodd")
 }
 
-function Wi(n, t) {
-  qi(n, t);
+function Wa(n, t) {
+  qa(n, t);
   var e = bt(n),
     r = bt(n);
   if (e !== r) return ["unstable", "unstable"];
-  Ki(n, t);
-  var i = bt(n);
-  return [i, e]
+  Ka(n, t);
+  var a = bt(n);
+  return [a, e]
 }
 
-function qi(n, t) {
+function qa(n, t) {
   n.width = 240, n.height = 60, t.textBaseline = "alphabetic", t.fillStyle = "#f60", t.fillRect(100, 1, 62, 20), t.fillStyle = "#069", t.font = '11pt "Times New Roman"';
   var e = "Cwm fjordbank gly ".concat("😃");
   t.fillText(e, 2, 15), t.fillStyle = "rgba(102, 204, 0, 0.2)", t.font = "18pt Arial", t.fillText(e, 4, 45)
 }
 
-function Ki(n, t) {
+function Ka(n, t) {
   n.width = 122, n.height = 110, t.globalCompositeOperation = "multiply";
   for (var e = 0, r = [
       ["#f2f", 40, 40],
       ["#2ff", 80, 40],
       ["#ff2", 60, 80]
     ]; e < r.length; e++) {
-    var i = r[e],
-      a = i[0],
-      o = i[1],
-      s = i[2];
-    t.fillStyle = a, t.beginPath(), t.arc(o, s, 40, 0, Math.PI * 2, !0), t.closePath(), t.fill()
+    var a = r[e],
+      i = a[0],
+      o = a[1],
+      s = a[2];
+    t.fillStyle = i, t.beginPath(), t.arc(o, s, 40, 0, Math.PI * 2, !0), t.closePath(), t.fill()
   }
   t.fillStyle = "#f9c", t.arc(60, 60, 60, 0, Math.PI * 2, !0), t.arc(60, 60, 20, 0, Math.PI * 2, !0), t.fill("evenodd")
 }
@@ -1515,11 +1515,11 @@ function bt(n) {
   return n.toDataURL()
 }
 
-function Hi() {
-  return X() && at() && it()
+function Ha() {
+  return X() && it() && at()
 }
 
-function Yi() {
+function Ya() {
   var n = navigator,
     t = 0,
     e;
@@ -1537,15 +1537,15 @@ function Yi() {
   }
 }
 
-function Zi() {
+function Za() {
   return navigator.oscpu
 }
 
-function $i() {
+function $a() {
   var n = navigator,
     t = [],
     e = n.language || n.userLanguage || n.browserLanguage || n.systemLanguage;
-  if (e !== void 0 && t.push([e]), Array.isArray(n.languages)) rt() && yi() || t.push(n.languages);
+  if (e !== void 0 && t.push([e]), Array.isArray(n.languages)) rt() && ya() || t.push(n.languages);
   else if (typeof n.languages == "string") {
     var r = n.languages;
     r && t.push(r.split(","))
@@ -1553,19 +1553,19 @@ function $i() {
   return t
 }
 
-function Ji() {
+function Ja() {
   return window.screen.colorDepth
 }
 
-function Xi() {
+function Xa() {
   return re(J(navigator.deviceMemory), void 0)
 }
 
-function Qi() {
-  if (!(X() && at() && it())) return ea()
+function Qa() {
+  if (!(X() && it() && at())) return ei()
 }
 
-function ea() {
+function ei() {
   var n = screen,
     t = function(r) {
       return re(Ft(r), null)
@@ -1573,30 +1573,30 @@ function ea() {
     e = [t(n.width), t(n.height)];
   return e.sort().reverse(), e
 }
-var ta = 2500,
-  na = 10,
+var ti = 2500,
+  ni = 10,
   ut, Et;
 
-function ra() {
+function ri() {
   if (Et === void 0) {
     var n = function() {
       var t = Rt();
-      Nt(t) ? Et = setTimeout(n, ta) : (ut = t, Et = void 0)
+      Nt(t) ? Et = setTimeout(n, ti) : (ut = t, Et = void 0)
     };
     n()
   }
 }
 
-function ia() {
+function ai() {
   var n = this;
-  return ra(),
+  return ri(),
     function() {
       return Q(n, void 0, void 0, function() {
         var t;
         return ee(this, function(e) {
           switch (e.label) {
             case 0:
-              return t = Rt(), Nt(t) ? ut ? [2, Vn([], ut, !0)] : Ti() ? [4, Si()] : [3, 2] : [3, 2];
+              return t = Rt(), Nt(t) ? ut ? [2, Vn([], ut, !0)] : Ta() ? [4, Sa()] : [3, 2] : [3, 2];
             case 1:
               e.sent(), t = Rt(), e.label = 2;
             case 2:
@@ -1607,22 +1607,22 @@ function ia() {
     }
 }
 
-function aa() {
+function ii() {
   var n = this;
-  if (X() && at() && it()) return function() {
+  if (X() && it() && at()) return function() {
     return Promise.resolve(void 0)
   };
-  var t = ia();
+  var t = ai();
   return function() {
     return Q(n, void 0, void 0, function() {
       var e, r;
-      return ee(this, function(i) {
-        switch (i.label) {
+      return ee(this, function(a) {
+        switch (a.label) {
           case 0:
             return [4, t()];
           case 1:
-            return e = i.sent(), r = function(a) {
-              return a === null ? null : qn(a, na)
+            return e = a.sent(), r = function(i) {
+              return i === null ? null : qn(i, ni)
             }, [2, [r(e[0]), r(e[1]), r(e[2]), r(e[3])]]
         }
       })
@@ -1641,26 +1641,26 @@ function Nt(n) {
   return !0
 }
 
-function oa() {
+function oi() {
   return re(Ft(navigator.hardwareConcurrency), void 0)
 }
 
-function sa() {
+function si() {
   var n, t = (n = window.Intl) === null || n === void 0 ? void 0 : n.DateTimeFormat;
   if (t) {
     var e = new t().resolvedOptions().timeZone;
     if (e) return e
   }
-  var r = -ca();
+  var r = -ci();
   return "UTC".concat(r >= 0 ? "+" : "").concat(r)
 }
 
-function ca() {
+function ci() {
   var n = new Date().getFullYear();
   return Math.max(J(new Date(n, 0, 1).getTimezoneOffset()), J(new Date(n, 6, 1).getTimezoneOffset()))
 }
 
-function ua() {
+function ui() {
   try {
     return !!window.sessionStorage
   } catch {
@@ -1668,7 +1668,7 @@ function ua() {
   }
 }
 
-function la() {
+function li() {
   try {
     return !!window.localStorage
   } catch {
@@ -1676,41 +1676,41 @@ function la() {
   }
 }
 
-function da() {
-  if (!(Kn() || wi())) try {
+function di() {
+  if (!(Kn() || wa())) try {
     return !!window.indexedDB
   } catch {
     return !0
   }
 }
 
-function _a() {
+function _i() {
   return !!window.openDatabase
 }
 
-function fa() {
+function fi() {
   return navigator.cpuClass
 }
 
-function ha() {
+function hi() {
   var n = navigator.platform;
-  return n === "MacIntel" && X() && !Bt() ? Ei() ? "iPad" : "iPhone" : n
+  return n === "MacIntel" && X() && !Bt() ? Ea() ? "iPad" : "iPhone" : n
 }
 
-function ma() {
+function mi() {
   return navigator.vendor || ""
 }
 
-function pa() {
+function pi() {
   for (var n = [], t = 0, e = ["chrome", "safari", "__crWeb", "__gCrWeb", "yandex", "__yb", "__ybro", "__firefox__", "__edgeTrackingPreventionStatistics", "webkit", "oprt", "samsungAr", "ucweb", "UCShellJava", "puffinDevice"]; t < e.length; t++) {
     var r = e[t],
-      i = window[r];
-    i && typeof i == "object" && n.push(r)
+      a = window[r];
+    a && typeof a == "object" && n.push(r)
   }
   return n.sort()
 }
 
-function ga() {
+function gi() {
   var n = document;
   try {
     n.cookie = "cookietest=1; SameSite=Strict;";
@@ -1721,7 +1721,7 @@ function ga() {
   }
 }
 
-function wa() {
+function wi() {
   var n = atob;
   return {
     abpIndo: ["#Iklan-Melayang", "#Kolom-Iklan-728", "#SidebarIklan-wrapper", '[title="ALIENBOLA" i]', n("I0JveC1CYW5uZXItYWRz")],
@@ -1772,19 +1772,19 @@ function wa() {
   }
 }
 
-function ya(n) {
+function yi(n) {
   var t = n === void 0 ? {} : n,
     e = t.debug;
   return Q(this, void 0, void 0, function() {
-    var r, i, a, o, s, l;
+    var r, a, i, o, s, l;
     return ee(this, function(u) {
       switch (u.label) {
         case 0:
-          return va() ? (r = wa(), i = Object.keys(r), a = (l = []).concat.apply(l, i.map(function(_) {
+          return vi() ? (r = wi(), a = Object.keys(r), i = (l = []).concat.apply(l, a.map(function(_) {
             return r[_]
-          })), [4, ba(a)]) : [2, void 0];
+          })), [4, bi(i)]) : [2, void 0];
         case 1:
-          return o = u.sent(), e && Ea(r, o), s = i.filter(function(_) {
+          return o = u.sent(), e && Ei(r, o), s = a.filter(function(_) {
             var d = r[_],
               m = q(d.map(function(g) {
                 return o[g]
@@ -1796,18 +1796,18 @@ function ya(n) {
   })
 }
 
-function va() {
+function vi() {
   return X() || zt()
 }
 
-function ba(n) {
+function bi(n) {
   var t;
   return Q(this, void 0, void 0, function() {
-    var e, r, i, a, l, o, s, l;
+    var e, r, a, i, l, o, s, l;
     return ee(this, function(u) {
       switch (u.label) {
         case 0:
-          for (e = document, r = e.createElement("div"), i = new Array(n.length), a = {}, un(r), l = 0; l < n.length; ++l) o = Di(n[l]), o.tagName === "DIALOG" && o.show(), s = e.createElement("div"), un(s), s.appendChild(o), r.appendChild(s), i[l] = o;
+          for (e = document, r = e.createElement("div"), a = new Array(n.length), i = {}, un(r), l = 0; l < n.length; ++l) o = Da(n[l]), o.tagName === "DIALOG" && o.show(), s = e.createElement("div"), un(s), s.appendChild(o), r.appendChild(s), a[l] = o;
           u.label = 1;
         case 1:
           return e.body ? [3, 3] : [4, _t(50)];
@@ -1816,11 +1816,11 @@ function ba(n) {
         case 3:
           e.body.appendChild(r);
           try {
-            for (l = 0; l < n.length; ++l) i[l].offsetParent || (a[n[l]] = !0)
+            for (l = 0; l < n.length; ++l) a[l].offsetParent || (i[n[l]] = !0)
           } finally {
             (t = r.parentNode) === null || t === void 0 || t.removeChild(r)
           }
-          return [2, a]
+          return [2, i]
       }
     })
   })
@@ -1830,12 +1830,12 @@ function un(n) {
   n.style.setProperty("visibility", "hidden", "important"), n.style.setProperty("display", "block", "important")
 }
 
-function Ea(n, t) {
-  for (var e = "DOM blockers debug:\n```", r = 0, i = Object.keys(n); r < i.length; r++) {
-    var a = i[r];
+function Ei(n, t) {
+  for (var e = "DOM blockers debug:\n```", r = 0, a = Object.keys(n); r < a.length; r++) {
+    var i = a[r];
     e += `
-`.concat(a, ":");
-    for (var o = 0, s = n[a]; o < s.length; o++) {
+`.concat(i, ":");
+    for (var o = 0, s = n[i]; o < s.length; o++) {
       var l = s[o];
       e += `
   `.concat(t[l] ? "🚫" : "➡️", " ").concat(l)
@@ -1844,14 +1844,14 @@ function Ea(n, t) {
   console.log("".concat(e, "\n```"))
 }
 
-function Ta() {
+function Ti() {
   for (var n = 0, t = ["rec2020", "p3", "srgb"]; n < t.length; n++) {
     var e = t[n];
     if (matchMedia("(color-gamut: ".concat(e, ")")).matches) return e
   }
 }
 
-function Sa() {
+function Si() {
   if (ln("inverted")) return !0;
   if (ln("none")) return !1
 }
@@ -1860,7 +1860,7 @@ function ln(n) {
   return matchMedia("(inverted-colors: ".concat(n, ")")).matches
 }
 
-function Oa() {
+function Oi() {
   if (dn("active")) return !0;
   if (dn("none")) return !1
 }
@@ -1868,17 +1868,17 @@ function Oa() {
 function dn(n) {
   return matchMedia("(forced-colors: ".concat(n, ")")).matches
 }
-var Ia = 100;
+var Ii = 100;
 
-function Aa() {
+function Ai() {
   if (matchMedia("(min-monochrome: 0)").matches) {
-    for (var n = 0; n <= Ia; ++n)
+    for (var n = 0; n <= Ii; ++n)
       if (matchMedia("(max-monochrome: ".concat(n, ")")).matches) return n;
     throw new Error("Too high value")
   }
 }
 
-function ka() {
+function ki() {
   if (ye("no-preference")) return 0;
   if (ye("high") || ye("more")) return 1;
   if (ye("low") || ye("less")) return -1;
@@ -1889,7 +1889,7 @@ function ye(n) {
   return matchMedia("(prefers-contrast: ".concat(n, ")")).matches
 }
 
-function Ra() {
+function Ri() {
   if (_n("reduce")) return !0;
   if (_n("no-preference")) return !1
 }
@@ -1898,7 +1898,7 @@ function _n(n) {
   return matchMedia("(prefers-reduced-motion: ".concat(n, ")")).matches
 }
 
-function Na() {
+function Ni() {
   if (fn("reduce")) return !0;
   if (fn("no-preference")) return !1
 }
@@ -1907,7 +1907,7 @@ function fn(n) {
   return matchMedia("(prefers-reduced-transparency: ".concat(n, ")")).matches
 }
 
-function xa() {
+function xi() {
   if (hn("high")) return !0;
   if (hn("standard")) return !1
 }
@@ -1920,13 +1920,13 @@ var A = Math,
     return 0
   };
 
-function Da() {
+function Di() {
   var n = A.acos || W,
     t = A.acosh || W,
     e = A.asin || W,
     r = A.asinh || W,
-    i = A.atanh || W,
-    a = A.atan || W,
+    a = A.atanh || W,
+    i = A.atan || W,
     o = A.sin || W,
     s = A.sinh || W,
     l = A.cos || W,
@@ -1970,9 +1970,9 @@ function Da() {
     asin: e(.12312423423423424),
     asinh: r(1),
     asinhPf: O(1),
-    atanh: i(.5),
+    atanh: a(.5),
     atanhPf: N(.5),
-    atan: a(.5),
+    atan: i(.5),
     sin: o(-1e300),
     sinh: s(1),
     sinhPf: C(1),
@@ -1990,7 +1990,7 @@ function Da() {
     powPI: w(-100)
   }
 }
-var La = "mmMwWLliI0fiflO&1",
+var Li = "mmMwWLliI0fiflO&1",
   Tt = {
     default: [],
     apple: [{
@@ -2013,15 +2013,15 @@ var La = "mmMwWLliI0fiflO&1",
     }]
   };
 
-function Ma() {
-  return Pa(function(n, t) {
-    for (var e = {}, r = {}, i = 0, a = Object.keys(Tt); i < a.length; i++) {
-      var o = a[i],
+function Mi() {
+  return Pi(function(n, t) {
+    for (var e = {}, r = {}, a = 0, i = Object.keys(Tt); a < i.length; a++) {
+      var o = i[a],
         s = Tt[o],
         l = s[0],
         u = l === void 0 ? {} : l,
         _ = s[1],
-        d = _ === void 0 ? La : _,
+        d = _ === void 0 ? Li : _,
         m = n.createElement("span");
       m.textContent = d, m.style.whiteSpace = "nowrap";
       for (var g = 0, E = Object.keys(u); g < E.length; g++) {
@@ -2039,62 +2039,62 @@ function Ma() {
   })
 }
 
-function Pa(n, t) {
+function Pi(n, t) {
   return t === void 0 && (t = 4e3), Yn(function(e, r) {
-    var i = r.document,
-      a = i.body,
-      o = a.style;
-    o.width = "".concat(t, "px"), o.webkitTextSizeAdjust = o.textSizeAdjust = "none", rt() ? a.style.zoom = "".concat(1 / r.devicePixelRatio) : X() && (a.style.zoom = "reset");
-    var s = i.createElement("div");
+    var a = r.document,
+      i = a.body,
+      o = i.style;
+    o.width = "".concat(t, "px"), o.webkitTextSizeAdjust = o.textSizeAdjust = "none", rt() ? i.style.zoom = "".concat(1 / r.devicePixelRatio) : X() && (i.style.zoom = "reset");
+    var s = a.createElement("div");
     return s.textContent = Vn([], Array(t / 20 << 0), !0).map(function() {
       return "word"
-    }).join(" "), a.appendChild(s), n(i, a)
+    }).join(" "), i.appendChild(s), n(a, i)
   }, '<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1">')
 }
 
-function Ua() {
+function Ui() {
   return navigator.pdfViewerEnabled
 }
 
-function Ca() {
+function Ci() {
   var n = new Float32Array(1),
     t = new Uint8Array(n.buffer);
   return n[0] = 1 / 0, n[0] = n[0] - n[0], t[3]
 }
 
-function ja() {
+function ji() {
   var n = window.ApplePaySession;
   if (typeof(n == null ? void 0 : n.canMakePayments) != "function") return -1;
-  if (Fa()) return -3;
+  if (Fi()) return -3;
   try {
     return n.canMakePayments() ? 1 : 0
   } catch (t) {
-    return Ba(t)
+    return Bi(t)
   }
 }
-var Fa = Mi;
+var Fi = Ma;
 
-function Ba(n) {
+function Bi(n) {
   if (n instanceof Error && n.name === "InvalidAccessError" && /\bfrom\b.*\binsecure\b/i.test(n.message)) return -2;
   throw n
 }
 
-function za() {
+function zi() {
   var n, t = document.createElement("a"),
     e = (n = t.attributionSourceId) !== null && n !== void 0 ? n : t.attributionsourceid;
   return e === void 0 ? void 0 : String(e)
 }
 var Zn = -1,
   $n = -2,
-  Va = new Set([10752, 2849, 2884, 2885, 2886, 2928, 2929, 2930, 2931, 2932, 2960, 2961, 2962, 2963, 2964, 2965, 2966, 2967, 2968, 2978, 3024, 3042, 3088, 3089, 3106, 3107, 32773, 32777, 32777, 32823, 32824, 32936, 32937, 32938, 32939, 32968, 32969, 32970, 32971, 3317, 33170, 3333, 3379, 3386, 33901, 33902, 34016, 34024, 34076, 3408, 3410, 3411, 3412, 3413, 3414, 3415, 34467, 34816, 34817, 34818, 34819, 34877, 34921, 34930, 35660, 35661, 35724, 35738, 35739, 36003, 36004, 36005, 36347, 36348, 36349, 37440, 37441, 37443, 7936, 7937, 7938]),
-  Ga = new Set([34047, 35723, 36063, 34852, 34853, 34854, 34229, 36392, 36795, 38449]),
-  Wa = ["FRAGMENT_SHADER", "VERTEX_SHADER"],
-  qa = ["LOW_FLOAT", "MEDIUM_FLOAT", "HIGH_FLOAT", "LOW_INT", "MEDIUM_INT", "HIGH_INT"],
+  Vi = new Set([10752, 2849, 2884, 2885, 2886, 2928, 2929, 2930, 2931, 2932, 2960, 2961, 2962, 2963, 2964, 2965, 2966, 2967, 2968, 2978, 3024, 3042, 3088, 3089, 3106, 3107, 32773, 32777, 32777, 32823, 32824, 32936, 32937, 32938, 32939, 32968, 32969, 32970, 32971, 3317, 33170, 3333, 3379, 3386, 33901, 33902, 34016, 34024, 34076, 3408, 3410, 3411, 3412, 3413, 3414, 3415, 34467, 34816, 34817, 34818, 34819, 34877, 34921, 34930, 35660, 35661, 35724, 35738, 35739, 36003, 36004, 36005, 36347, 36348, 36349, 37440, 37441, 37443, 7936, 7937, 7938]),
+  Gi = new Set([34047, 35723, 36063, 34852, 34853, 34854, 34229, 36392, 36795, 38449]),
+  Wi = ["FRAGMENT_SHADER", "VERTEX_SHADER"],
+  qi = ["LOW_FLOAT", "MEDIUM_FLOAT", "HIGH_FLOAT", "LOW_INT", "MEDIUM_INT", "HIGH_INT"],
   Jn = "WEBGL_debug_renderer_info",
-  Ka = "WEBGL_polygon_mode";
+  Ki = "WEBGL_polygon_mode";
 
-function Ha(n) {
-  var t, e, r, i, a, o, s = n.cache,
+function Hi(n) {
+  var t, e, r, a, i, o, s = n.cache,
     l = Xn(s);
   if (!l) return Zn;
   if (!er(l)) return $n;
@@ -2103,54 +2103,54 @@ function Ha(n) {
     version: ((t = l.getParameter(l.VERSION)) === null || t === void 0 ? void 0 : t.toString()) || "",
     vendor: ((e = l.getParameter(l.VENDOR)) === null || e === void 0 ? void 0 : e.toString()) || "",
     vendorUnmasked: u ? (r = l.getParameter(u.UNMASKED_VENDOR_WEBGL)) === null || r === void 0 ? void 0 : r.toString() : "",
-    renderer: ((i = l.getParameter(l.RENDERER)) === null || i === void 0 ? void 0 : i.toString()) || "",
-    rendererUnmasked: u ? (a = l.getParameter(u.UNMASKED_RENDERER_WEBGL)) === null || a === void 0 ? void 0 : a.toString() : "",
+    renderer: ((a = l.getParameter(l.RENDERER)) === null || a === void 0 ? void 0 : a.toString()) || "",
+    rendererUnmasked: u ? (i = l.getParameter(u.UNMASKED_RENDERER_WEBGL)) === null || i === void 0 ? void 0 : i.toString() : "",
     shadingLanguageVersion: ((o = l.getParameter(l.SHADING_LANGUAGE_VERSION)) === null || o === void 0 ? void 0 : o.toString()) || ""
   }
 }
 
-function Ya(n) {
+function Yi(n) {
   var t = n.cache,
     e = Xn(t);
   if (!e) return Zn;
   if (!er(e)) return $n;
   var r = e.getSupportedExtensions(),
-    i = e.getContextAttributes(),
-    a = [],
+    a = e.getContextAttributes(),
+    i = [],
     o = [],
     s = [],
     l = [],
     u = [];
-  if (i)
-    for (var _ = 0, d = Object.keys(i); _ < d.length; _++) {
+  if (a)
+    for (var _ = 0, d = Object.keys(a); _ < d.length; _++) {
       var m = d[_];
-      o.push("".concat(m, "=").concat(i[m]))
+      o.push("".concat(m, "=").concat(a[m]))
     }
   for (var g = mn(e), E = 0, w = g; E < w.length; E++) {
     var T = w[E],
       O = e[T];
-    s.push("".concat(T, "=").concat(O).concat(Va.has(O) ? "=".concat(e.getParameter(O)) : ""))
+    s.push("".concat(T, "=").concat(O).concat(Vi.has(O) ? "=".concat(e.getParameter(O)) : ""))
   }
   if (r)
     for (var N = 0, C = r; N < C.length; N++) {
       var j = C[N];
-      if (!(j === Jn && Qn() || j === Ka && Ja())) {
+      if (!(j === Jn && Qn() || j === Ki && Ji())) {
         var H = e.getExtension(j);
         if (!H) {
-          a.push(j);
+          i.push(j);
           continue
         }
         for (var y = 0, S = mn(H); y < S.length; y++) {
           var T = S[y],
             O = H[T];
-          l.push("".concat(T, "=").concat(O).concat(Ga.has(O) ? "=".concat(e.getParameter(O)) : ""))
+          l.push("".concat(T, "=").concat(O).concat(Gi.has(O) ? "=".concat(e.getParameter(O)) : ""))
         }
       }
     }
-  for (var v = 0, $ = Wa; v < $.length; v++)
-    for (var G = $[v], V = 0, te = qa; V < te.length; V++) {
+  for (var v = 0, $ = Wi; v < $.length; v++)
+    for (var G = $[v], V = 0, te = qi; V < te.length; V++) {
       var me = te[V],
-        yt = Za(e, G, me);
+        yt = Zi(e, G, me);
       u.push("".concat(G, ".").concat(me, "=").concat(yt.join(",")))
     }
   return l.sort(), s.sort(), {
@@ -2159,7 +2159,7 @@ function Ya(n) {
     shaderPrecisions: u,
     extensions: r,
     extensionParameters: l,
-    unsupportedExtensions: a
+    unsupportedExtensions: i
   }
 }
 
@@ -2170,10 +2170,10 @@ function Xn(n) {
   t.addEventListener("webglCreateContextError", function() {
     return e = void 0
   });
-  for (var r = 0, i = ["webgl", "experimental-webgl"]; r < i.length; r++) {
-    var a = i[r];
+  for (var r = 0, a = ["webgl", "experimental-webgl"]; r < a.length; r++) {
+    var i = a[r];
     try {
-      e = t.getContext(a)
+      e = t.getContext(i)
     } catch {}
     if (e) break
   }
@@ -2182,17 +2182,17 @@ function Xn(n) {
   }, e
 }
 
-function Za(n, t, e) {
+function Zi(n, t, e) {
   var r = n.getShaderPrecisionFormat(n[t], n[e]);
   return r ? [r.rangeMin, r.rangeMax, r.precision] : []
 }
 
 function mn(n) {
   var t = Object.keys(n.__proto__);
-  return t.filter($a)
+  return t.filter($i)
 }
 
-function $a(n) {
+function $i(n) {
   return typeof n == "string" && !n.match(/[^A-Z0-9_x]/)
 }
 
@@ -2200,7 +2200,7 @@ function Qn() {
   return Hn()
 }
 
-function Ja() {
+function Ji() {
   return rt() || X()
 }
 
@@ -2208,7 +2208,7 @@ function er(n) {
   return typeof n.getParameter == "function"
 }
 
-function Xa() {
+function Xi() {
   var n = zt() || X();
   if (!n) return -2;
   if (!window.AudioContext) return -1;
@@ -2216,7 +2216,7 @@ function Xa() {
   return t == null ? -1 : isFinite(t) ? t : -3
 }
 
-function Qa() {
+function Qi() {
   if (!window.Intl) return -1;
   var n = window.Intl.DateTimeFormat;
   if (!n) return -2;
@@ -2224,92 +2224,92 @@ function Qa() {
   return !t && t !== "" ? -3 : t
 }
 var eo = {
-  fonts: Ci,
-  domBlockers: ya,
-  fontPreferences: Ma,
-  audio: Ii,
-  screenFrame: aa,
-  canvas: Fi,
-  osCpu: Zi,
-  languages: $i,
-  colorDepth: Ji,
-  deviceMemory: Xi,
-  screenResolution: Qi,
-  hardwareConcurrency: oa,
-  timezone: sa,
-  sessionStorage: ua,
-  localStorage: la,
-  indexedDB: da,
-  openDatabase: _a,
-  cpuClass: fa,
-  platform: ha,
-  plugins: ji,
-  touchSupport: Yi,
-  vendor: ma,
-  vendorFlavors: pa,
-  cookiesEnabled: ga,
-  colorGamut: Ta,
-  invertedColors: Sa,
-  forcedColors: Oa,
-  monochrome: Aa,
-  contrast: ka,
-  reducedMotion: Ra,
-  reducedTransparency: Na,
-  hdr: xa,
-  math: Da,
-  pdfViewerEnabled: Ua,
-  architecture: Ca,
-  applePay: ja,
-  privateClickMeasurement: za,
-  audioBaseLatency: Xa,
-  dateTimeLocale: Qa,
-  webGlBasics: Ha,
-  webGlExtensions: Ya
+  fonts: Ca,
+  domBlockers: yi,
+  fontPreferences: Mi,
+  audio: Ia,
+  screenFrame: ii,
+  canvas: Fa,
+  osCpu: Za,
+  languages: $a,
+  colorDepth: Ja,
+  deviceMemory: Xa,
+  screenResolution: Qa,
+  hardwareConcurrency: oi,
+  timezone: si,
+  sessionStorage: ui,
+  localStorage: li,
+  indexedDB: di,
+  openDatabase: _i,
+  cpuClass: fi,
+  platform: hi,
+  plugins: ja,
+  touchSupport: Ya,
+  vendor: mi,
+  vendorFlavors: pi,
+  cookiesEnabled: gi,
+  colorGamut: Ti,
+  invertedColors: Si,
+  forcedColors: Oi,
+  monochrome: Ai,
+  contrast: ki,
+  reducedMotion: Ri,
+  reducedTransparency: Ni,
+  hdr: xi,
+  math: Di,
+  pdfViewerEnabled: Ui,
+  architecture: Ci,
+  applePay: ji,
+  privateClickMeasurement: zi,
+  audioBaseLatency: Xi,
+  dateTimeLocale: Qi,
+  webGlBasics: Hi,
+  webGlExtensions: Yi
 };
 
 function to(n) {
-  return gi(eo, n, [])
+  return ga(eo, n, [])
 }
 var no = "$ if upgrade to Pro: https://fpjs.dev/pro";
 
 function ro(n) {
-  var t = io(n),
-    e = ao(t);
+  var t = ao(n),
+    e = io(t);
   return {
     score: t,
     comment: no.replace(/\$/g, "".concat(e))
   }
 }
 
-function io(n) {
+function ao(n) {
   if (zt()) return .4;
-  if (X()) return Bt() && !(at() && it()) ? .5 : .3;
+  if (X()) return Bt() && !(it() && at()) ? .5 : .3;
   var t = "value" in n.platform ? n.platform.value : "";
   return /^Win/.test(t) ? .6 : /^Mac/.test(t) ? .5 : .7
 }
 
-function ao(n) {
+function io(n) {
   return qn(.99 + .01 * n, 1e-4)
 }
 
 function oo(n) {
   for (var t = "", e = 0, r = Object.keys(n).sort(); e < r.length; e++) {
-    var i = r[e],
-      a = n[i],
-      o = "error" in a ? "error" : JSON.stringify(a.value);
-    t += "".concat(t ? "|" : "").concat(i.replace(/([:|\\])/g, "\\$1"), ":").concat(o)
+    var a = r[e],
+      i = n[a],
+      o = "error" in i ? "error" : JSON.stringify(i.value);
+    t += "".concat(t ? "|" : "").concat(a.replace(/([:|\\])/g, "\\$1"), ":").concat(o)
   }
   return t
 }
 
 function tr(n) {
   return JSON.stringify(n, function(t, e) {
-    return e instanceof Error ? fi(e) : e
+    return e instanceof Error ? fa(e) : e
   }, 2)
 }
 
 function nr(n) {
-  return _i(oo(n))
+  return _a(oo(n))
 }
 
 function so(n) {
@@ -2328,7 +2328,7 @@ function so(n) {
 }
 
 function co(n) {
-  return n === void 0 && (n = 50), ri(n, n * 2)
+  return n === void 0 && (n = 50), ra(n, n * 2)
 }
 
 function uo(n, t) {
@@ -2336,17 +2336,17 @@ function uo(n, t) {
   return {
     get: function(r) {
       return Q(this, void 0, void 0, function() {
-        var i, a, o;
+        var a, i, o;
         return ee(this, function(s) {
           switch (s.label) {
             case 0:
-              return i = Date.now(), [4, n()];
+              return a = Date.now(), [4, n()];
             case 1:
-              return a = s.sent(), o = so(a), (t || r != null && r.debug) && console.log("Copy the text below to get the debug data:\n\n```\nversion: ".concat(o.version, `
+              return i = s.sent(), o = so(i), (t || r != null && r.debug) && console.log("Copy the text below to get the debug data:\n\n```\nversion: ".concat(o.version, `
 userAgent: `).concat(navigator.userAgent, `
-timeBetweenLoadAndGet: `).concat(i - e, `
+timeBetweenLoadAndGet: `).concat(a - e, `
 visitorId: `).concat(o.visitorId, `
-components: `).concat(tr(a), "\n```")), [2, o]
+components: `).concat(tr(i), "\n```")), [2, o]
           }
         })
       })
@@ -2366,16 +2366,16 @@ function lo() {
 function _o(n) {
   var t;
   return n === void 0 && (n = {}), Q(this, void 0, void 0, function() {
-    var e, r, i;
-    return ee(this, function(a) {
-      switch (a.label) {
+    var e, r, a;
+    return ee(this, function(i) {
+      switch (i.label) {
         case 0:
           return (!((t = n.monitoring) !== null && t !== void 0) || t) && lo(), e = n.delayFallback, r = n.debug, [4, co(e)];
         case 1:
-          return a.sent(), i = to({
+          return i.sent(), a = to({
             cache: {},
             debug: r
-          }), [2, uo(i, r)]
+          }), [2, uo(a, r)]
       }
     })
   })
@@ -2398,8 +2398,8 @@ async function ho() {
     {
       languages: e,
       fontPreferences: r,
-      dateTimeLocale: i,
-      canvas: a,
+      dateTimeLocale: a,
+      canvas: i,
       ...o
     } = t.components,
     s = navigator.userAgent,
@@ -2411,15 +2411,15 @@ async function ho() {
     g = d || m;
   return ft = rr.hashComponents({
     ..._ ? {
-      canvas: a,
-      dateTimeLocale: i,
+      canvas: i,
+      dateTimeLocale: a,
       languages: e
     } : {},
     ...g ? {
-      canvas: a,
+      canvas: i,
       languages: e,
       fontPreferences: r,
-      dateTimeLocale: i
+      dateTimeLocale: a
     } : {},
     languages: {
       value: [s, l],
@@ -2483,8 +2483,8 @@ const mo = () => "Your account has been suspended for breaking the rules",
   ts = () => "Aliança com nome vazio",
   ns = () => "名称为空的联盟",
   rs = () => "Allianz mit leerem Namen",
-  is = () => "Alianza con nombre vacío",
-  as = () => "Alliance avec nom vide",
+  as = () => "Alianza con nombre vacío",
+  is = () => "Alliance avec nom vide",
   os = () => "Alleanza con nome vuoto",
   ss = () => "名前が空のアライアンスです。",
   cs = () => "Sojusz z pustą nazwą",
@@ -2493,7 +2493,7 @@ const mo = () => "Your account has been suspended for breaking the rules",
   ds = () => "Liên minh không có tên",
   _s = (n = {}, t = {}) => {
     const e = t.locale ?? p();
-    return e === "en" ? es() : e === "pt" ? ts() : e === "ch" ? ns() : e === "de" ? rs() : e === "es" ? is() : e === "fr" ? as() : e === "it" ? os() : e === "jp" ? ss() : e === "pl" ? cs() : e === "ru" ? us() : e === "uk" ? ls() : ds()
+    return e === "en" ? es() : e === "pt" ? ts() : e === "ch" ? ns() : e === "de" ? rs() : e === "es" ? as() : e === "fr" ? is() : e === "it" ? os() : e === "jp" ? ss() : e === "pl" ? cs() : e === "ru" ? us() : e === "uk" ? ls() : ds()
   },
   fs = () => "Botting",
   hs = () => "Uso de bots",
@@ -2549,15 +2549,15 @@ const mo = () => "Your account has been suspended for breaking the rules",
   tc = () => "Du hast gegen eine der Wplace-Regeln verstoßen",
   nc = () => "Has infringido una de las reglas de Wplace",
   rc = () => "Vous avez enfreint l’une des règles de Wplace",
-  ic = () => "Hai infranto una delle regole di Wplace",
-  ac = () => "Wplaceのルールのいずれかに違反しました。",
+  ac = () => "Hai infranto una delle regole di Wplace",
+  ic = () => "Wplaceのルールのいずれかに違反しました。",
   oc = () => "Złamałeś jedną z zasad Wplace",
   sc = () => "Вы нарушили одно из правил Wplace",
   cc = () => "Ви порушили одне з правил Wplace",
   uc = () => "Bạn đã vi phạm một trong các luật của Wplace",
   lc = (n = {}, t = {}) => {
     const e = t.locale ?? p();
-    return e === "en" ? Xs() : e === "pt" ? Qs() : e === "ch" ? ec() : e === "de" ? tc() : e === "es" ? nc() : e === "fr" ? rc() : e === "it" ? ic() : e === "jp" ? ac() : e === "pl" ? oc() : e === "ru" ? sc() : e === "uk" ? cc() : uc()
+    return e === "en" ? Xs() : e === "pt" ? Qs() : e === "ch" ? ec() : e === "de" ? tc() : e === "es" ? nc() : e === "fr" ? rc() : e === "it" ? ac() : e === "jp" ? ic() : e === "pl" ? oc() : e === "ru" ? sc() : e === "uk" ? cc() : uc()
   },
   dc = () => "You cannot paint over event pixels",
   _c = () => "Você não pode pintar sobre pixels de eventos",
@@ -2617,11 +2617,11 @@ const mo = () => "Your account has been suspended for breaking the rules",
   tu = () => "購入を完了できませんでした。このアイテムは存在しません。",
   nu = () => "Nie udało się dokończyć zakupu. Ten przedmiot nie istnieje.",
   ru = () => "Не удалось завершить покупку. Этот предмет не существует.",
-  iu = () => "Не вдалося завершити покупку. Цей предмет не існує.",
-  au = () => "Không thể hoàn tất giao dịch. Vật phẩm này không tồn tại.",
+  au = () => "Не вдалося завершити покупку. Цей предмет не існує.",
+  iu = () => "Không thể hoàn tất giao dịch. Vật phẩm này không tồn tại.",
   wn = (n = {}, t = {}) => {
     const e = t.locale ?? p();
-    return e === "en" ? Yc() : e === "pt" ? Zc() : e === "ch" ? $c() : e === "de" ? Jc() : e === "es" ? Xc() : e === "fr" ? Qc() : e === "it" ? eu() : e === "jp" ? tu() : e === "pl" ? nu() : e === "ru" ? ru() : e === "uk" ? iu() : au()
+    return e === "en" ? Yc() : e === "pt" ? Zc() : e === "ch" ? $c() : e === "de" ? Jc() : e === "es" ? Xc() : e === "fr" ? Qc() : e === "it" ? eu() : e === "jp" ? tu() : e === "pl" ? nu() : e === "ru" ? ru() : e === "uk" ? au() : iu()
   },
   ou = () => "We’re currently experiencing high traffic. Some requests may not be processed at this time—please try again later. Thank you for your patience.",
   su = () => "Estamos enfrentando um volume alto de acessos no momento. Algumas solicitações podem não ser processadas agora — por favor, tente novamente mais tarde. Agradecemos a sua compreensão.",
@@ -2688,8 +2688,8 @@ const mo = () => "Your account has been suspended for breaking the rules",
     return e === "en" ? Wu() : e === "pt" ? qu() : e === "ch" ? Ku() : e === "de" ? Hu() : e === "es" ? Yu() : e === "fr" ? Zu() : e === "it" ? $u() : e === "jp" ? Ju() : e === "pl" ? Xu() : e === "ru" ? Qu() : e === "uk" ? el() : tl()
   },
   rl = n => `This email is already in use by user #${n.userId}.`,
-  il = n => `Este e-mail já está em uso pelo usuário #${n.userId}.`,
-  al = n => `This email is already in use by user #${n.userId}.`,
+  al = n => `Este e-mail já está em uso pelo usuário #${n.userId}.`,
+  il = n => `This email is already in use by user #${n.userId}.`,
   ol = n => `This email is already in use by user #${n.userId}.`,
   sl = n => `Este correo electrónico ya está en uso por el usuario #${n.userId}.`,
   cl = n => `This email is already in use by user #${n.userId}.`,
@@ -2701,7 +2701,7 @@ const mo = () => "Your account has been suspended for breaking the rules",
   hl = n => `This email is already in use by user #${n.userId}.`,
   ml = (n, t = {}) => {
     const e = t.locale ?? p();
-    return e === "en" ? rl(n) : e === "pt" ? il(n) : e === "ch" ? al(n) : e === "de" ? ol(n) : e === "es" ? sl(n) : e === "fr" ? cl(n) : e === "it" ? ul(n) : e === "jp" ? ll(n) : e === "pl" ? dl(n) : e === "ru" ? _l(n) : e === "uk" ? fl(n) : hl(n)
+    return e === "en" ? rl(n) : e === "pt" ? al(n) : e === "ch" ? il(n) : e === "de" ? ol(n) : e === "es" ? sl(n) : e === "fr" ? cl(n) : e === "it" ? ul(n) : e === "jp" ? ll(n) : e === "pl" ? dl(n) : e === "ru" ? _l(n) : e === "uk" ? fl(n) : hl(n)
   },
   pl = () => "Enter a valid email address.",
   gl = () => "Informe um endereço de e-mail válido.",
@@ -2754,8 +2754,8 @@ const mo = () => "Your account has been suspended for breaking the rules",
   td = () => "Verification code expired. Please request a new one.",
   nd = () => "Código de verificação expirado. Por favor, solicite um novo.",
   rd = () => "验证码已过期，请重新获取。",
-  id = () => "Bestätigungscode abgelaufen. Bitte fordern Sie einen neuen an.",
-  ad = () => "Código de verificación expirado. Por favor, solicita uno nuevo.",
+  ad = () => "Bestätigungscode abgelaufen. Bitte fordern Sie einen neuen an.",
+  id = () => "Código de verificación expirado. Por favor, solicita uno nuevo.",
   od = () => "Code de vérification expiré. Veuillez en demander un nouveau.",
   sd = () => "Codice di verifica scaduto. Per favore, richiedine uno nuovo.",
   cd = () => "確認コードの有効期限が切れました。新しいコードをリクエストしてください。",
@@ -2765,7 +2765,7 @@ const mo = () => "Your account has been suspended for breaking the rules",
   _d = () => "Mã xác minh đã hết hạn. Vui lòng yêu cầu mã mới.",
   fd = (n = {}, t = {}) => {
     const e = t.locale ?? p();
-    return e === "en" ? td() : e === "pt" ? nd() : e === "ch" ? rd() : e === "de" ? id() : e === "es" ? ad() : e === "fr" ? od() : e === "it" ? sd() : e === "jp" ? cd() : e === "pl" ? ud() : e === "ru" ? ld() : e === "uk" ? dd() : _d()
+    return e === "en" ? td() : e === "pt" ? nd() : e === "ch" ? rd() : e === "de" ? ad() : e === "es" ? id() : e === "fr" ? od() : e === "it" ? sd() : e === "jp" ? cd() : e === "pl" ? ud() : e === "ru" ? ld() : e === "uk" ? dd() : _d()
   },
   hd = () => "Griefing",
   md = () => "Griefing",
@@ -2820,8 +2820,8 @@ const mo = () => "Your account has been suspended for breaking the rules",
   t_ = () => "种族主义、恐同、仇恨团体等",
   n_ = () => "Rassismus, Homophobie, Hassgruppen, ...",
   r_ = () => "Racismo, homofobia, grupos de odio, ...",
-  i_ = () => "Racisme, homophobie, groupes haineux, ...",
-  a_ = () => "Razzismo, omofobia, gruppi d'odio, ...",
+  a_ = () => "Racisme, homophobie, groupes haineux, ...",
+  i_ = () => "Razzismo, omofobia, gruppi d'odio, ...",
   o_ = () => "人種差別、同性愛差別、ヘイト団体など。",
   s_ = () => "Rasizm, homofobia, grupy nienawiści, ...",
   c_ = () => "Расизм, гомофобия, группы ненависти и т.п.",
@@ -2829,7 +2829,7 @@ const mo = () => "Your account has been suspended for breaking the rules",
   l_ = () => "Phân biệt chủng tộc, kỳ thị LGBT, nhóm thù hận, ...",
   d_ = (n = {}, t = {}) => {
     const e = t.locale ?? p();
-    return e === "en" ? Qd() : e === "pt" ? e_() : e === "ch" ? t_() : e === "de" ? n_() : e === "es" ? r_() : e === "fr" ? i_() : e === "it" ? a_() : e === "jp" ? o_() : e === "pl" ? s_() : e === "ru" ? c_() : e === "uk" ? u_() : l_()
+    return e === "en" ? Qd() : e === "pt" ? e_() : e === "ch" ? t_() : e === "de" ? n_() : e === "es" ? r_() : e === "fr" ? a_() : e === "it" ? i_() : e === "jp" ? o_() : e === "pl" ? s_() : e === "ru" ? c_() : e === "uk" ? u_() : l_()
   },
   __ = () => "Inappropriate content",
   f_ = () => "Conteúdo inapropriado",
@@ -2952,12 +2952,12 @@ const mo = () => "Your account has been suspended for breaking the rules",
   th = () => "Numero di telefono non valido",
   nh = () => "無効な電話番号です。",
   rh = () => "Nieprawidłowy numer telefonu",
-  ih = () => "Неверный номер телефона",
-  ah = () => "Некоректний номер телефону",
+  ah = () => "Неверный номер телефона",
+  ih = () => "Некоректний номер телефону",
   oh = () => "Số điện thoại không hợp lệ",
   sh = (n = {}, t = {}) => {
     const e = t.locale ?? p();
-    return e === "en" ? Zf() : e === "pt" ? $f() : e === "ch" ? Jf() : e === "de" ? Xf() : e === "es" ? Qf() : e === "fr" ? eh() : e === "it" ? th() : e === "jp" ? nh() : e === "pl" ? rh() : e === "ru" ? ih() : e === "uk" ? ah() : oh()
+    return e === "en" ? Zf() : e === "pt" ? $f() : e === "ch" ? Jf() : e === "de" ? Xf() : e === "es" ? Qf() : e === "fr" ? eh() : e === "it" ? th() : e === "jp" ? nh() : e === "pl" ? rh() : e === "ru" ? ah() : e === "uk" ? ih() : oh()
   },
   ch = () => "This phone number appears to be a landline. Please use a mobile number that can receive SMS.",
   uh = () => "Este número de telefone parece ser fixo. Por favor, use um número de celular que possa receber SMS.",
@@ -3019,11 +3019,11 @@ const mo = () => "Your account has been suspended for breaking the rules",
   tm = () => "Название локации слишком длинное (макс. 128 символов)",
   nm = () => "Назва локації надто довга (макс. 128 символів)",
   rm = () => "Tên vị trí quá dài (tối đa 128 ký tự)",
-  im = (n = {}, t = {}) => {
+  am = (n = {}, t = {}) => {
     const e = t.locale ?? p();
     return e === "en" ? Kh() : e === "pt" ? Hh() : e === "ch" ? Yh() : e === "de" ? Zh() : e === "es" ? $h() : e === "fr" ? Jh() : e === "it" ? Xh() : e === "jp" ? Qh() : e === "pl" ? em() : e === "ru" ? tm() : e === "uk" ? nm() : rm()
   },
-  am = () => "Multi-accounting",
+  im = () => "Multi-accounting",
   om = () => "Múltiplas contas",
   sm = () => "多账号",
   cm = () => "Multi-Accounting",
@@ -3037,7 +3037,7 @@ const mo = () => "Your account has been suspended for breaking the rules",
   pm = () => "Nhiều tài khoản",
   gm = (n = {}, t = {}) => {
     const e = t.locale ?? p();
-    return e === "en" ? am() : e === "pt" ? om() : e === "ch" ? sm() : e === "de" ? cm() : e === "es" ? um() : e === "fr" ? lm() : e === "it" ? dm() : e === "jp" ? _m() : e === "pl" ? fm() : e === "ru" ? hm() : e === "uk" ? mm() : pm()
+    return e === "en" ? im() : e === "pt" ? om() : e === "ch" ? sm() : e === "de" ? cm() : e === "es" ? um() : e === "fr" ? lm() : e === "it" ? dm() : e === "jp" ? _m() : e === "pl" ? fm() : e === "ru" ? hm() : e === "uk" ? mm() : pm()
   },
   wm = () => "Use more than one account to paint pixels",
   ym = () => "Usar mais de uma conta para pintar",
@@ -3088,8 +3088,8 @@ const mo = () => "Your account has been suspended for breaking the rules",
     return e === "en" ? Wm() : e === "pt" ? qm() : e === "ch" ? Km() : e === "de" ? Hm() : e === "es" ? Ym() : e === "fr" ? Zm() : e === "it" ? $m() : e === "jp" ? Jm() : e === "pl" ? Xm() : e === "ru" ? Qm() : e === "uk" ? ep() : tp()
   },
   rp = () => "You are not allowed to verify a phone number. Try refreshing the page",
-  ip = () => "Você não está autorizado a verificar um número de telefone. Tente atualizar a página.",
-  ap = () => "您无权验证电话号码。请尝试刷新页面。",
+  ap = () => "Você não está autorizado a verificar um número de telefone. Tente atualizar a página.",
+  ip = () => "您无权验证电话号码。请尝试刷新页面。",
   op = () => "Sie dürfen keine Telefonnummer verifizieren. Versuchen Sie, die Seite zu aktualisieren.",
   sp = () => "No tienes permiso para verificar un número de teléfono. Prueba a recargar la página.",
   cp = () => "Vous n'êtes pas autorisé à vérifier un numéro de téléphone. Essayez d'actualiser la page.",
@@ -3101,7 +3101,7 @@ const mo = () => "Your account has been suspended for breaking the rules",
   hp = () => "Bạn không được phép xác minh số điện thoại. Vui lòng thử tải lại trang.",
   mp = (n = {}, t = {}) => {
     const e = t.locale ?? p();
-    return e === "en" ? rp() : e === "pt" ? ip() : e === "ch" ? ap() : e === "de" ? op() : e === "es" ? sp() : e === "fr" ? cp() : e === "it" ? up() : e === "jp" ? lp() : e === "pl" ? dp() : e === "ru" ? _p() : e === "uk" ? fp() : hp()
+    return e === "en" ? rp() : e === "pt" ? ap() : e === "ch" ? ip() : e === "de" ? op() : e === "es" ? sp() : e === "fr" ? cp() : e === "it" ? up() : e === "jp" ? lp() : e === "pl" ? dp() : e === "ru" ? _p() : e === "uk" ? fp() : hp()
   },
   pp = () => "Operation not allowed. Maybe you have too many favorite locations.",
   gp = () => "Operação não permitida. Talvez você tenha muitos locais favoritos.",
@@ -3155,8 +3155,8 @@ const mo = () => "Your account has been suspended for breaking the rules",
   tg = () => "A região deste número de telefone não é suportada",
   ng = () => "此电话号码的地区不受支持",
   rg = () => "Die Region dieser Telefonnummer wird nicht unterstützt",
-  ig = () => "La región de este número de teléfono no es compatible",
-  ag = () => "La région de ce numéro de téléphone n'est pas prise en charge",
+  ag = () => "La región de este número de teléfono no es compatible",
+  ig = () => "La région de ce numéro de téléphone n'est pas prise en charge",
   og = () => "La regione di questo numero di telefono non è supportata",
   sg = () => "この電話番号の地域はサポートされていません",
   cg = () => "Region tego numeru telefonu nie jest obsługiwany",
@@ -3165,7 +3165,7 @@ const mo = () => "Your account has been suspended for breaking the rules",
   dg = () => "Vùng của số điện thoại này không được hỗ trợ",
   _g = (n = {}, t = {}) => {
     const e = t.locale ?? p();
-    return e === "en" ? eg() : e === "pt" ? tg() : e === "ch" ? ng() : e === "de" ? rg() : e === "es" ? ig() : e === "fr" ? ag() : e === "it" ? og() : e === "jp" ? sg() : e === "pl" ? cg() : e === "ru" ? ug() : e === "uk" ? lg() : dg()
+    return e === "en" ? eg() : e === "pt" ? tg() : e === "ch" ? ng() : e === "de" ? rg() : e === "es" ? ag() : e === "fr" ? ig() : e === "it" ? og() : e === "jp" ? sg() : e === "pl" ? cg() : e === "ru" ? ug() : e === "uk" ? lg() : dg()
   },
   fg = () => "Refresh your page to get the latest update",
   hg = () => "Recarregue sua página para obter as últimas atualizações",
@@ -3199,222 +3199,238 @@ const mo = () => "Your account has been suspended for breaking the rules",
     const e = t.locale ?? p();
     return e === "en" ? Og() : e === "pt" ? Ig() : e === "ch" ? Ag() : e === "de" ? kg() : e === "es" ? Rg() : e === "fr" ? Ng() : e === "it" ? xg() : e === "jp" ? Dg() : e === "pl" ? Lg() : e === "ru" ? Mg() : e === "uk" ? Pg() : Ug()
   },
-  jg = () => "The service is currently unavailable. Please try again later.",
-  Fg = () => "O serviço está indisponível no momento. Por favor, tente novamente mais tarde.",
-  Bg = () => "服务当前不可用。请稍后再试。",
-  zg = () => "Der Dienst ist derzeit nicht verfügbar. Bitte versuchen Sie es später erneut.",
-  Vg = () => "El servicio no está disponible actualmente. Por favor, inténtelo de nuevo más tarde.",
-  Gg = () => "Le service est actuellement indisponible. Veuillez réessayer plus tard.",
-  Wg = () => "Il servizio non è attualmente disponibile. Riprova più tardi.",
-  qg = () => "現在、サービスはご利用いただけません。後でもう一度お試しください。",
-  Kg = () => "Usługa jest obecnie niedostępna. Proszę spróbować ponownie później.",
-  Hg = () => "Сервис в настоящее время недоступен. Пожалуйста, попробуйте позже.",
-  Yg = () => "Сервіс наразі недоступний. Будь ласка, спробуйте пізніше.",
-  Zg = () => "Dịch vụ hiện không khả dụng. Vui lòng thử lại sau.",
+  jg = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Fg = () => "A área selecionada tem histórico demais para exportar um timelapse. Tente uma área menor.",
+  Bg = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  zg = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Vg = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Gg = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Wg = () => "L'area selezionata ha troppa cronologia per esportare un timelapse. Prova con un'area più piccola.",
+  qg = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Kg = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Hg = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Yg = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Zg = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
   $g = (n = {}, t = {}) => {
     const e = t.locale ?? p();
     return e === "en" ? jg() : e === "pt" ? Fg() : e === "ch" ? Bg() : e === "de" ? zg() : e === "es" ? Vg() : e === "fr" ? Gg() : e === "it" ? Wg() : e === "jp" ? qg() : e === "pl" ? Kg() : e === "ru" ? Hg() : e === "uk" ? Yg() : Zg()
   },
-  Jg = () => "Too many attempts. Please try again later",
-  Xg = () => "Muitas tentativas. Por favor, tente novamente mais tarde.",
-  Qg = () => "尝试次数过多，请稍后再试",
-  ew = () => "Zu viele Versuche. Bitte versuchen Sie es später erneut",
-  tw = () => "Demasiados intentos. Por favor, inténtalo de nuevo más tarde",
-  nw = () => "Trop de tentatives. Veuillez réessayer plus tard",
-  rw = () => "Troppi tentativi. Riprova più tardi.",
-  iw = () => "試行回数が多すぎます。後で再度お試しください。",
-  aw = () => "Zbyt wiele prób. Proszę spróbować ponownie później",
-  ow = () => "Слишком много попыток. Пожалуйста, попробуйте позже",
-  sw = () => "Забагато спроб. Будь ласка, спробуйте пізніше",
-  cw = () => "Quá nhiều lần thử. Vui lòng thử lại sau.",
+  Jg = () => "The service is currently unavailable. Please try again later.",
+  Xg = () => "O serviço está indisponível no momento. Por favor, tente novamente mais tarde.",
+  Qg = () => "服务当前不可用。请稍后再试。",
+  ew = () => "Der Dienst ist derzeit nicht verfügbar. Bitte versuchen Sie es später erneut.",
+  tw = () => "El servicio no está disponible actualmente. Por favor, inténtelo de nuevo más tarde.",
+  nw = () => "Le service est actuellement indisponible. Veuillez réessayer plus tard.",
+  rw = () => "Il servizio non è attualmente disponibile. Riprova più tardi.",
+  aw = () => "現在、サービスはご利用いただけません。後でもう一度お試しください。",
+  iw = () => "Usługa jest obecnie niedostępna. Proszę spróbować ponownie później.",
+  ow = () => "Сервис в настоящее время недоступен. Пожалуйста, попробуйте позже.",
+  sw = () => "Сервіс наразі недоступний. Будь ласка, спробуйте пізніше.",
+  cw = () => "Dịch vụ hiện không khả dụng. Vui lòng thử lại sau.",
+  uw = (n = {}, t = {}) => {
+    const e = t.locale ?? p();
+    return e === "en" ? Jg() : e === "pt" ? Xg() : e === "ch" ? Qg() : e === "de" ? ew() : e === "es" ? tw() : e === "fr" ? nw() : e === "it" ? rw() : e === "jp" ? aw() : e === "pl" ? iw() : e === "ru" ? ow() : e === "uk" ? sw() : cw()
+  },
+  lw = () => "Too many attempts. Please try again later",
+  dw = () => "Muitas tentativas. Por favor, tente novamente mais tarde.",
+  _w = () => "尝试次数过多，请稍后再试",
+  fw = () => "Zu viele Versuche. Bitte versuchen Sie es später erneut",
+  hw = () => "Demasiados intentos. Por favor, inténtalo de nuevo más tarde",
+  mw = () => "Trop de tentatives. Veuillez réessayer plus tard",
+  pw = () => "Troppi tentativi. Riprova più tardi.",
+  gw = () => "試行回数が多すぎます。後で再度お試しください。",
+  ww = () => "Zbyt wiele prób. Proszę spróbować ponownie później",
+  yw = () => "Слишком много попыток. Пожалуйста, попробуйте позже",
+  vw = () => "Забагато спроб. Будь ласка, спробуйте пізніше",
+  bw = () => "Quá nhiều lần thử. Vui lòng thử lại sau.",
   Tn = (n = {}, t = {}) => {
     const e = t.locale ?? p();
-    return e === "en" ? Jg() : e === "pt" ? Xg() : e === "ch" ? Qg() : e === "de" ? ew() : e === "es" ? tw() : e === "fr" ? nw() : e === "it" ? rw() : e === "jp" ? iw() : e === "pl" ? aw() : e === "ru" ? ow() : e === "uk" ? sw() : cw()
+    return e === "en" ? lw() : e === "pt" ? dw() : e === "ch" ? _w() : e === "de" ? fw() : e === "es" ? hw() : e === "fr" ? mw() : e === "it" ? pw() : e === "jp" ? gw() : e === "pl" ? ww() : e === "ru" ? yw() : e === "uk" ? vw() : bw()
   },
-  uw = () => "The typed username does not match your current username.",
-  lw = () => "O nome de usuário digitado não corresponde ao seu nome de usuário atual.",
-  dw = () => "输入的用户名与当前用户名不匹配。",
-  _w = () => "Der eingegebene Benutzername stimmt nicht mit deinem aktuellen Benutzernamen überein.",
-  fw = () => "El nombre de usuario ingresado no coincide con tu nombre de usuario actual.",
-  hw = () => "Le nom d’utilisateur saisi ne correspond pas à votre nom d’utilisateur actuel.",
-  mw = () => "Il nome utente inserito non corrisponde al tuo nome utente attuale.",
-  pw = () => "入力されたユーザー名が、現在のユーザー名と一致しません。",
-  gw = () => "Wpisana nazwa użytkownika nie zgadza się z obecną nazwą.",
-  ww = () => "Введённое имя пользователя не совпадает с текущим.",
-  yw = () => "Введене імʼя користувача не збігається з поточним.",
-  vw = () => "Tên người dùng nhập vào không trùng với tên hiện tại.",
-  bw = (n = {}, t = {}) => {
-    const e = t.locale ?? p();
-    return e === "en" ? uw() : e === "pt" ? lw() : e === "ch" ? dw() : e === "de" ? _w() : e === "es" ? fw() : e === "fr" ? hw() : e === "it" ? mw() : e === "jp" ? pw() : e === "pl" ? gw() : e === "ru" ? ww() : e === "uk" ? yw() : vw()
-  },
-  Ew = () => "Unexpected server error. Try again later.",
-  Tw = () => "Erro inesperado do servidor. Tente novamente mais tarde.",
-  Sw = () => "服务器出现意外错误。请稍后再试。",
-  Ow = () => "Unerwarteter Serverfehler. Versuche es später erneut.",
-  Iw = () => "Error inesperado del servidor. Inténtalo de nuevo más tarde.",
-  Aw = () => "Erreur serveur inattendue. Réessayez plus tard.",
-  kw = () => "Errore imprevisto del server. Riprova più tardi.",
-  Rw = () => "予期しないサーバーエラーが発生しました。時間をおいて再度お試しください。",
-  Nw = () => "Nieoczekiwany błąd serwera. Spróbuj ponownie później.",
-  xw = () => "Непредвиденная ошибка сервера. Попробуйте позже.",
-  Dw = () => "Неочікувана помилка сервера. Спробуйте пізніше.",
-  Lw = () => "Lỗi máy chủ không mong muốn. Hãy thử lại sau.",
-  f = (n = {}, t = {}) => {
+  Ew = () => "The typed username does not match your current username.",
+  Tw = () => "O nome de usuário digitado não corresponde ao seu nome de usuário atual.",
+  Sw = () => "输入的用户名与当前用户名不匹配。",
+  Ow = () => "Der eingegebene Benutzername stimmt nicht mit deinem aktuellen Benutzernamen überein.",
+  Iw = () => "El nombre de usuario ingresado no coincide con tu nombre de usuario actual.",
+  Aw = () => "Le nom d’utilisateur saisi ne correspond pas à votre nom d’utilisateur actuel.",
+  kw = () => "Il nome utente inserito non corrisponde al tuo nome utente attuale.",
+  Rw = () => "入力されたユーザー名が、現在のユーザー名と一致しません。",
+  Nw = () => "Wpisana nazwa użytkownika nie zgadza się z obecną nazwą.",
+  xw = () => "Введённое имя пользователя не совпадает с текущим.",
+  Dw = () => "Введене імʼя користувача не збігається з поточним.",
+  Lw = () => "Tên người dùng nhập vào không trùng với tên hiện tại.",
+  Mw = (n = {}, t = {}) => {
     const e = t.locale ?? p();
     return e === "en" ? Ew() : e === "pt" ? Tw() : e === "ch" ? Sw() : e === "de" ? Ow() : e === "es" ? Iw() : e === "fr" ? Aw() : e === "it" ? kw() : e === "jp" ? Rw() : e === "pl" ? Nw() : e === "ru" ? xw() : e === "uk" ? Dw() : Lw()
   },
-  Mw = () => "The phone number is unsubscribed from SMS notifications. Check the link for more info: https://www.twilio.com/docs/api/errors/21610",
-  Pw = () => "O número de telefone foi desinscrito das notificações por SMS. Verifique o link para mais informações: https://www.twilio.com/docs/api/errors/21610",
-  Uw = () => "电话号码已退订短信通知。请查看链接获取更多信息：https://www.twilio.com/docs/api/errors/21610",
-  Cw = () => "Die Telefonnummer wurde von SMS-Benachrichtigungen abgemeldet. Weitere Informationen finden Sie unter: https://www.twilio.com/docs/api/errors/21610",
-  jw = () => "El número de teléfono ha sido dado de baja de las notificaciones por SMS. Consulta el enlace para más información: https://www.twilio.com/docs/api/errors/21610",
-  Fw = () => "Le numéro de téléphone est désabonné des notifications par SMS. Consultez le lien pour plus d'informations : https://www.twilio.com/docs/api/errors/21610",
-  Bw = () => "Il numero di telefono è stato disiscritto dalle notifiche SMS. Per maggiori informazioni, consulta il link: https://www.twilio.com/docs/api/errors/21610",
-  zw = () => "この電話番号はSMS通知から登録解除されました。詳細については、以下のリンクをご確認ください: https://www.twilio.com/docs/api/errors/21610",
-  Vw = () => "Numer telefonu został wypisany z powiadomień SMS. Sprawdź link, aby uzyskać więcej informacji: https://www.twilio.com/docs/api/errors/21610",
-  Gw = () => "Номер телефона отписан от SMS-уведомлений. Дополнительную информацию смотрите по ссылке: https://www.twilio.com/docs/api/errors/21610",
-  Ww = () => "Номер телефону відключено від SMS-сповіщень. Перегляньте посилання для отримання додаткової інформації: https://www.twilio.com/docs/api/errors/21610",
-  qw = () => "Số điện thoại này đã hủy đăng ký nhận thông báo SMS. Kiểm tra liên kết để biết thêm thông tin: https://www.twilio.com/docs/api/errors/21610",
-  Kw = (n = {}, t = {}) => {
+  Pw = () => "Unexpected server error. Try again later.",
+  Uw = () => "Erro inesperado do servidor. Tente novamente mais tarde.",
+  Cw = () => "服务器出现意外错误。请稍后再试。",
+  jw = () => "Unerwarteter Serverfehler. Versuche es später erneut.",
+  Fw = () => "Error inesperado del servidor. Inténtalo de nuevo más tarde.",
+  Bw = () => "Erreur serveur inattendue. Réessayez plus tard.",
+  zw = () => "Errore imprevisto del server. Riprova più tardi.",
+  Vw = () => "予期しないサーバーエラーが発生しました。時間をおいて再度お試しください。",
+  Gw = () => "Nieoczekiwany błąd serwera. Spróbuj ponownie później.",
+  Ww = () => "Непредвиденная ошибка сервера. Попробуйте позже.",
+  qw = () => "Неочікувана помилка сервера. Спробуйте пізніше.",
+  Kw = () => "Lỗi máy chủ không mong muốn. Hãy thử lại sau.",
+  f = (n = {}, t = {}) => {
     const e = t.locale ?? p();
-    return e === "en" ? Mw() : e === "pt" ? Pw() : e === "ch" ? Uw() : e === "de" ? Cw() : e === "es" ? jw() : e === "fr" ? Fw() : e === "it" ? Bw() : e === "jp" ? zw() : e === "pl" ? Vw() : e === "ru" ? Gw() : e === "uk" ? Ww() : qw()
+    return e === "en" ? Pw() : e === "pt" ? Uw() : e === "ch" ? Cw() : e === "de" ? jw() : e === "es" ? Fw() : e === "fr" ? Bw() : e === "it" ? zw() : e === "jp" ? Vw() : e === "pl" ? Gw() : e === "ru" ? Ww() : e === "uk" ? qw() : Kw()
   },
-  Hw = () => "Failed to load WebAssembly module. Try to use another browser.",
-  Yw = () => "Erro ao carregar módulo WebAssembly. Tente usar outro navegador.",
-  Zw = () => "WebAssembly 模块加载失败。请尝试使用其他浏览器。",
-  $w = () => "Fehler beim Laden des WebAssembly-Moduls. Versuche, einen anderen Browser zu verwenden.",
-  Jw = () => "Error al cargar el módulo WebAssembly. Intenta usar otro navegador.",
-  Xw = () => "Erreur lors du chargement du module WebAssembly. Essayez d’utiliser un autre navigateur.",
-  Qw = () => "Errore nel caricamento del modulo WebAssembly. Prova a usare un altro browser.",
-  ey = () => "WebAssembly モジュールの読み込みに失敗しました。別のブラウザをお試しください。",
-  ty = () => "Nie udało się załadować modułu WebAssembly. Spróbuj użyć innej przeglądarki.",
-  ny = () => "Ошибка при загрузке модуля WebAssembly. Попробуйте использовать другой браузер.",
-  ry = () => "Не вдалося завантажити модуль WebAssembly. Спробуйте інший браузер.",
-  iy = () => "Lỗi tải mô-đun WebAssembly. Hãy thử dùng trình duyệt khác.",
-  ay = (n = {}, t = {}) => {
+  Hw = () => "The phone number is unsubscribed from SMS notifications. Check the link for more info: https://www.twilio.com/docs/api/errors/21610",
+  Yw = () => "O número de telefone foi desinscrito das notificações por SMS. Verifique o link para mais informações: https://www.twilio.com/docs/api/errors/21610",
+  Zw = () => "电话号码已退订短信通知。请查看链接获取更多信息：https://www.twilio.com/docs/api/errors/21610",
+  $w = () => "Die Telefonnummer wurde von SMS-Benachrichtigungen abgemeldet. Weitere Informationen finden Sie unter: https://www.twilio.com/docs/api/errors/21610",
+  Jw = () => "El número de teléfono ha sido dado de baja de las notificaciones por SMS. Consulta el enlace para más información: https://www.twilio.com/docs/api/errors/21610",
+  Xw = () => "Le numéro de téléphone est désabonné des notifications par SMS. Consultez le lien pour plus d'informations : https://www.twilio.com/docs/api/errors/21610",
+  Qw = () => "Il numero di telefono è stato disiscritto dalle notifiche SMS. Per maggiori informazioni, consulta il link: https://www.twilio.com/docs/api/errors/21610",
+  ey = () => "この電話番号はSMS通知から登録解除されました。詳細については、以下のリンクをご確認ください: https://www.twilio.com/docs/api/errors/21610",
+  ty = () => "Numer telefonu został wypisany z powiadomień SMS. Sprawdź link, aby uzyskać więcej informacji: https://www.twilio.com/docs/api/errors/21610",
+  ny = () => "Номер телефона отписан от SMS-уведомлений. Дополнительную информацию смотрите по ссылке: https://www.twilio.com/docs/api/errors/21610",
+  ry = () => "Номер телефону відключено від SMS-сповіщень. Перегляньте посилання для отримання додаткової інформації: https://www.twilio.com/docs/api/errors/21610",
+  ay = () => "Số điện thoại này đã hủy đăng ký nhận thông báo SMS. Kiểm tra liên kết để biết thêm thông tin: https://www.twilio.com/docs/api/errors/21610",
+  iy = (n = {}, t = {}) => {
     const e = t.locale ?? p();
-    return e === "en" ? Hw() : e === "pt" ? Yw() : e === "ch" ? Zw() : e === "de" ? $w() : e === "es" ? Jw() : e === "fr" ? Xw() : e === "it" ? Qw() : e === "jp" ? ey() : e === "pl" ? ty() : e === "ru" ? ny() : e === "uk" ? ry() : iy()
+    return e === "en" ? Hw() : e === "pt" ? Yw() : e === "ch" ? Zw() : e === "de" ? $w() : e === "es" ? Jw() : e === "fr" ? Xw() : e === "it" ? Qw() : e === "jp" ? ey() : e === "pl" ? ty() : e === "ru" ? ny() : e === "uk" ? ry() : ay()
   },
-  oy = () => "You already have this item. Please refresh the page.",
-  sy = () => "Você já possui este item. Atualize a página.",
-  cy = () => "你已经拥有此物品。请刷新页面。",
-  uy = () => "Du besitzt dieses Item bereits. Bitte aktualisiere die Seite.",
-  ly = () => "Ya tienes este ítem. Actualiza la página.",
-  dy = () => "Vous possédez déjà cet objet. Actualisez la page.",
-  _y = () => "Possiedi già questo oggetto. Aggiorna la pagina.",
-  fy = () => "このアイテムはすでに所持しています。ページを更新してください。",
-  hy = () => "Masz już ten przedmiot. Odśwież stronę.",
-  my = () => "У вас уже есть этот предмет. Обновите страницу.",
-  py = () => "У вас уже є цей предмет. Оновіть сторінку.",
-  gy = () => "Bạn đã sở hữu vật phẩm này. Hãy tải lại trang.",
-  Sn = (n = {}, t = {}) => {
+  oy = () => "Failed to load WebAssembly module. Try to use another browser.",
+  sy = () => "Erro ao carregar módulo WebAssembly. Tente usar outro navegador.",
+  cy = () => "WebAssembly 模块加载失败。请尝试使用其他浏览器。",
+  uy = () => "Fehler beim Laden des WebAssembly-Moduls. Versuche, einen anderen Browser zu verwenden.",
+  ly = () => "Error al cargar el módulo WebAssembly. Intenta usar otro navegador.",
+  dy = () => "Erreur lors du chargement du module WebAssembly. Essayez d’utiliser un autre navigateur.",
+  _y = () => "Errore nel caricamento del modulo WebAssembly. Prova a usare un altro browser.",
+  fy = () => "WebAssembly モジュールの読み込みに失敗しました。別のブラウザをお試しください。",
+  hy = () => "Nie udało się załadować modułu WebAssembly. Spróbuj użyć innej przeglądarki.",
+  my = () => "Ошибка при загрузке модуля WebAssembly. Попробуйте использовать другой браузер.",
+  py = () => "Не вдалося завантажити модуль WebAssembly. Спробуйте інший браузер.",
+  gy = () => "Lỗi tải mô-đun WebAssembly. Hãy thử dùng trình duyệt khác.",
+  wy = (n = {}, t = {}) => {
     const e = t.locale ?? p();
     return e === "en" ? oy() : e === "pt" ? sy() : e === "ch" ? cy() : e === "de" ? uy() : e === "es" ? ly() : e === "fr" ? dy() : e === "it" ? _y() : e === "jp" ? fy() : e === "pl" ? hy() : e === "ru" ? my() : e === "uk" ? py() : gy()
   },
-  wy = () => "You are already in an alliance",
-  yy = () => "Você já está em uma aliança",
-  vy = () => "你已经在一个联盟中",
-  by = () => "Du bist bereits in einer Allianz",
-  Ey = () => "Ya estás en una alianza",
-  Ty = () => "Vous êtes déjà dans une alliance",
-  Sy = () => "Sei già in un'alleanza",
-  Oy = () => "すでにアライアンスに所属しています。",
-  Iy = () => "Jesteś już w sojuszu",
-  Ay = () => "Вы уже состоите в альянсе",
-  ky = () => "Ви вже перебуваєте в альянсі",
-  Ry = () => "Bạn đã ở trong một liên minh",
-  Ny = (n = {}, t = {}) => {
+  yy = () => "You already have this item. Please refresh the page.",
+  vy = () => "Você já possui este item. Atualize a página.",
+  by = () => "你已经拥有此物品。请刷新页面。",
+  Ey = () => "Du besitzt dieses Item bereits. Bitte aktualisiere die Seite.",
+  Ty = () => "Ya tienes este ítem. Actualiza la página.",
+  Sy = () => "Vous possédez déjà cet objet. Actualisez la page.",
+  Oy = () => "Possiedi già questo oggetto. Aggiorna la pagina.",
+  Iy = () => "このアイテムはすでに所持しています。ページを更新してください。",
+  Ay = () => "Masz już ten przedmiot. Odśwież stronę.",
+  ky = () => "У вас уже есть этот предмет. Обновите страницу.",
+  Ry = () => "У вас уже є цей предмет. Оновіть сторінку.",
+  Ny = () => "Bạn đã sở hữu vật phẩm này. Hãy tải lại trang.",
+  Sn = (n = {}, t = {}) => {
     const e = t.locale ?? p();
-    return e === "en" ? wy() : e === "pt" ? yy() : e === "ch" ? vy() : e === "de" ? by() : e === "es" ? Ey() : e === "fr" ? Ty() : e === "it" ? Sy() : e === "jp" ? Oy() : e === "pl" ? Iy() : e === "ru" ? Ay() : e === "uk" ? ky() : Ry()
+    return e === "en" ? yy() : e === "pt" ? vy() : e === "ch" ? by() : e === "de" ? Ey() : e === "es" ? Ty() : e === "fr" ? Sy() : e === "it" ? Oy() : e === "jp" ? Iy() : e === "pl" ? Ay() : e === "ru" ? ky() : e === "uk" ? Ry() : Ny()
   },
-  xy = () => "You are not allowed to do this",
-  Dy = () => "Você não tem permissão para fazer isso",
-  Ly = () => "你无权执行此操作",
-  My = () => "Du bist dazu nicht berechtigt",
-  Py = () => "No tienes permiso para hacer esto",
-  Uy = () => "Vous n’êtes pas autorisé à faire cela",
-  Cy = () => "Non hai il permesso di farlo",
-  jy = () => "この操作を行う権限がありません。",
-  Fy = () => "Nie masz uprawnień, aby to zrobić",
-  By = () => "У вас нет прав для этого действия",
-  zy = () => "Ви не маєте права це робити",
-  Vy = () => "Bạn không có quyền làm việc này",
-  ue = (n = {}, t = {}) => {
+  xy = () => "You are already in an alliance",
+  Dy = () => "Você já está em uma aliança",
+  Ly = () => "你已经在一个联盟中",
+  My = () => "Du bist bereits in einer Allianz",
+  Py = () => "Ya estás en una alianza",
+  Uy = () => "Vous êtes déjà dans une alliance",
+  Cy = () => "Sei già in un'alleanza",
+  jy = () => "すでにアライアンスに所属しています。",
+  Fy = () => "Jesteś już w sojuszu",
+  By = () => "Вы уже состоите в альянсе",
+  zy = () => "Ви вже перебуваєте в альянсі",
+  Vy = () => "Bạn đã ở trong một liên minh",
+  Gy = (n = {}, t = {}) => {
     const e = t.locale ?? p();
     return e === "en" ? xy() : e === "pt" ? Dy() : e === "ch" ? Ly() : e === "de" ? My() : e === "es" ? Py() : e === "fr" ? Uy() : e === "it" ? Cy() : e === "jp" ? jy() : e === "pl" ? Fy() : e === "ru" ? By() : e === "uk" ? zy() : Vy()
   },
-  Gy = () => "You do not have enough Droplets to buy this item.",
-  Wy = () => "Você não tem gotas suficientes para comprar este item.",
-  qy = () => "你的水滴不足，无法购买此物品。",
-  Ky = () => "Du hast nicht genug Droplets, um dieses Item zu kaufen.",
-  Hy = () => "No tienes suficientes gotas para comprar este ítem.",
-  Yy = () => "Vous n’avez pas assez de droplets pour acheter cet objet.",
-  Zy = () => "Non hai abbastanza gocce per acquistare questo oggetto.",
-  $y = () => "このアイテムを購入するのに十分なドロップレットがありません。",
-  Jy = () => "Nie masz wystarczającej liczby kropli, aby kupić ten przedmiot.",
-  Xy = () => "У вас недостаточно droplets для покупки этого предмета.",
-  Qy = () => "У вас недостатньо дроплетів, щоб купити цей предмет.",
-  ev = () => "Bạn không có đủ droplets để mua vật phẩm này.",
+  Wy = () => "You are not allowed to do this",
+  qy = () => "Você não tem permissão para fazer isso",
+  Ky = () => "你无权执行此操作",
+  Hy = () => "Du bist dazu nicht berechtigt",
+  Yy = () => "No tienes permiso para hacer esto",
+  Zy = () => "Vous n’êtes pas autorisé à faire cela",
+  $y = () => "Non hai il permesso di farlo",
+  Jy = () => "この操作を行う権限がありません。",
+  Xy = () => "Nie masz uprawnień, aby to zrobić",
+  Qy = () => "У вас нет прав для этого действия",
+  ev = () => "Ви не маєте права це робити",
+  tv = () => "Bạn không có quyền làm việc này",
+  ue = (n = {}, t = {}) => {
+    const e = t.locale ?? p();
+    return e === "en" ? Wy() : e === "pt" ? qy() : e === "ch" ? Ky() : e === "de" ? Hy() : e === "es" ? Yy() : e === "fr" ? Zy() : e === "it" ? $y() : e === "jp" ? Jy() : e === "pl" ? Xy() : e === "ru" ? Qy() : e === "uk" ? ev() : tv()
+  },
+  nv = () => "You do not have enough Droplets to buy this item.",
+  rv = () => "Você não tem gotas suficientes para comprar este item.",
+  av = () => "你的水滴不足，无法购买此物品。",
+  iv = () => "Du hast nicht genug Droplets, um dieses Item zu kaufen.",
+  ov = () => "No tienes suficientes gotas para comprar este ítem.",
+  sv = () => "Vous n’avez pas assez de droplets pour acheter cet objet.",
+  cv = () => "Non hai abbastanza gocce per acquistare questo oggetto.",
+  uv = () => "このアイテムを購入するのに十分なドロップレットがありません。",
+  lv = () => "Nie masz wystarczającej liczby kropli, aby kupić ten przedmiot.",
+  dv = () => "У вас недостаточно droplets для покупки этого предмета.",
+  _v = () => "У вас недостатньо дроплетів, щоб купити цей предмет.",
+  fv = () => "Bạn không có đủ droplets để mua vật phẩm này.",
   On = (n = {}, t = {}) => {
     const e = t.locale ?? p();
-    return e === "en" ? Gy() : e === "pt" ? Wy() : e === "ch" ? qy() : e === "de" ? Ky() : e === "es" ? Hy() : e === "fr" ? Yy() : e === "it" ? Zy() : e === "jp" ? $y() : e === "pl" ? Jy() : e === "ru" ? Xy() : e === "uk" ? Qy() : ev()
+    return e === "en" ? nv() : e === "pt" ? rv() : e === "ch" ? av() : e === "de" ? iv() : e === "es" ? ov() : e === "fr" ? sv() : e === "it" ? cv() : e === "jp" ? uv() : e === "pl" ? lv() : e === "ru" ? dv() : e === "uk" ? _v() : fv()
   },
-  tv = () => "You need to be logged in to paint",
-  nv = () => "Você precisa estar conectado para pintar",
-  rv = () => "你需要登录才能进行绘制",
-  iv = () => "Du musst eingeloggt sein, um zu malen",
-  av = () => "Debes iniciar sesión para pintar",
-  ov = () => "Vous devez être connecté pour peindre",
-  sv = () => "Devi avere effettuato l'accesso per dipingere",
-  cv = () => "ペイントするにはログインが必要です。",
-  uv = () => "Musisz być zalogowany, aby malować",
-  lv = () => "Чтобы рисовать, нужно войти в аккаунт",
-  dv = () => "Щоб малювати, необхідно увійти в акаунт",
-  _v = () => "Bạn cần đăng nhập để tô",
+  hv = () => "You need to be logged in to paint",
+  mv = () => "Você precisa estar conectado para pintar",
+  pv = () => "你需要登录才能进行绘制",
+  gv = () => "Du musst eingeloggt sein, um zu malen",
+  wv = () => "Debes iniciar sesión para pintar",
+  yv = () => "Vous devez être connecté pour peindre",
+  vv = () => "Devi avere effettuato l'accesso per dipingere",
+  bv = () => "ペイントするにはログインが必要です。",
+  Ev = () => "Musisz być zalogowany, aby malować",
+  Tv = () => "Чтобы рисовать, нужно войти в аккаунт",
+  Sv = () => "Щоб малювати, необхідно увійти в акаунт",
+  Ov = () => "Bạn cần đăng nhập để tô",
   In = (n = {}, t = {}) => {
     const e = t.locale ?? p();
-    return e === "en" ? tv() : e === "pt" ? nv() : e === "ch" ? rv() : e === "de" ? iv() : e === "es" ? av() : e === "fr" ? ov() : e === "it" ? sv() : e === "jp" ? cv() : e === "pl" ? uv() : e === "ru" ? lv() : e === "uk" ? dv() : _v()
+    return e === "en" ? hv() : e === "pt" ? mv() : e === "ch" ? pv() : e === "de" ? gv() : e === "es" ? wv() : e === "fr" ? yv() : e === "it" ? vv() : e === "jp" ? bv() : e === "pl" ? Ev() : e === "ru" ? Tv() : e === "uk" ? Sv() : Ov()
   },
-  fv = () => "You or someone in your network is making a lot of requests to the server. Try again later.",
-  hv = () => "Você ou alguém na sua rede está fazendo muitas solicitações ao servidor. Tente novamente mais tarde.",
-  mv = () => "你或与你同一网络中的某人向服务器发出了大量请求。请稍后再试。",
-  pv = () => "Du oder jemand in deinem Netzwerk sendet sehr viele Anfragen an den Server. Versuche es später erneut.",
-  gv = () => "Tú o alguien en tu red está realizando demasiadas solicitudes al servidor. Inténtalo de nuevo más tarde.",
-  wv = () => "Vous ou quelqu’un sur votre réseau envoie beaucoup de requêtes au serveur. Réessayez plus tard.",
-  yv = () => "Tu o qualcuno nella tua rete state facendo troppe richieste al server. Riprova più tardi.",
-  vv = () => "あなた、または同じネットワーク上の誰かがサーバーへ大量のリクエストを送信しています。しばらくしてから再度お試しください。",
-  bv = () => "Ty lub ktoś w Twojej sieci wysyła zbyt wiele żądań do serwera. Spróbuj ponownie później.",
-  Ev = () => "Вы или кто-то в вашей сети делает слишком много запросов к серверу. Попробуйте позже.",
-  Tv = () => "Ви або хтось у вашій мережі надсилає надто багато запитів до сервера. Спробуйте пізніше.",
-  Sv = () => "Bạn hoặc ai đó trong mạng của bạn đang gửi quá nhiều yêu cầu đến máy chủ. Hãy thử lại sau.",
-  Ov = (n = {}, t = {}) => {
+  Iv = () => "You or someone in your network is making a lot of requests to the server. Try again later.",
+  Av = () => "Você ou alguém na sua rede está fazendo muitas solicitações ao servidor. Tente novamente mais tarde.",
+  kv = () => "你或与你同一网络中的某人向服务器发出了大量请求。请稍后再试。",
+  Rv = () => "Du oder jemand in deinem Netzwerk sendet sehr viele Anfragen an den Server. Versuche es später erneut.",
+  Nv = () => "Tú o alguien en tu red está realizando demasiadas solicitudes al servidor. Inténtalo de nuevo más tarde.",
+  xv = () => "Vous ou quelqu’un sur votre réseau envoie beaucoup de requêtes au serveur. Réessayez plus tard.",
+  Dv = () => "Tu o qualcuno nella tua rete state facendo troppe richieste al server. Riprova più tardi.",
+  Lv = () => "あなた、または同じネットワーク上の誰かがサーバーへ大量のリクエストを送信しています。しばらくしてから再度お試しください。",
+  Mv = () => "Ty lub ktoś w Twojej sieci wysyła zbyt wiele żądań do serwera. Spróbuj ponownie później.",
+  Pv = () => "Вы или кто-то в вашей сети делает слишком много запросов к серверу. Попробуйте позже.",
+  Uv = () => "Ви або хтось у вашій мережі надсилає надто багато запитів до сервера. Спробуйте пізніше.",
+  Cv = () => "Bạn hoặc ai đó trong mạng của bạn đang gửi quá nhiều yêu cầu đến máy chủ. Hãy thử lại sau.",
+  jv = (n = {}, t = {}) => {
     const e = t.locale ?? p();
-    return e === "en" ? fv() : e === "pt" ? hv() : e === "ch" ? mv() : e === "de" ? pv() : e === "es" ? gv() : e === "fr" ? wv() : e === "it" ? yv() : e === "jp" ? vv() : e === "pl" ? bv() : e === "ru" ? Ev() : e === "uk" ? Tv() : Sv()
+    return e === "en" ? Iv() : e === "pt" ? Av() : e === "ch" ? kv() : e === "de" ? Rv() : e === "es" ? Nv() : e === "fr" ? xv() : e === "it" ? Dv() : e === "jp" ? Lv() : e === "pl" ? Mv() : e === "ru" ? Pv() : e === "uk" ? Uv() : Cv()
   },
-  Iv = n => `Your account has been suspended out until ${n.until}`,
-  Av = n => `A sua conta está suspensa até ${n.until}`,
-  kv = n => `你的账号已被暂停至 ${n.until}`,
-  Rv = n => `Dein Konto ist gesperrt bis ${n.until}`,
-  Nv = n => `Tu cuenta ha sido suspendida hasta ${n.until}`,
-  xv = n => `Votre compte est suspendu jusqu’au ${n.until}`,
-  Dv = n => `Il tuo account è sospeso fino al ${n.until}`,
-  Lv = n => `あなたのアカウントは${n.until}まで一時停止されています。`,
-  Mv = n => `Twoje konto zostało zawieszone do ${n.until}`,
-  Pv = n => `Ваш аккаунт заблокирован до ${n.until}`,
-  Uv = n => `Ваш акаунт призупинено до ${n.until}`,
-  Cv = n => `Tài khoản của bạn đã bị đình chỉ đến ${n.until}`,
+  Fv = n => `Your account has been suspended out until ${n.until}`,
+  Bv = n => `A sua conta está suspensa até ${n.until}`,
+  zv = n => `你的账号已被暂停至 ${n.until}`,
+  Vv = n => `Dein Konto ist gesperrt bis ${n.until}`,
+  Gv = n => `Tu cuenta ha sido suspendida hasta ${n.until}`,
+  Wv = n => `Votre compte est suspendu jusqu’au ${n.until}`,
+  qv = n => `Il tuo account è sospeso fino al ${n.until}`,
+  Kv = n => `あなたのアカウントは${n.until}まで一時停止されています。`,
+  Hv = n => `Twoje konto zostało zawieszone do ${n.until}`,
+  Yv = n => `Ваш аккаунт заблокирован до ${n.until}`,
+  Zv = n => `Ваш акаунт призупинено до ${n.until}`,
+  $v = n => `Tài khoản của bạn đã bị đình chỉ đến ${n.until}`,
   An = (n, t = {}) => {
     const e = t.locale ?? p();
-    return e === "en" ? Iv(n) : e === "pt" ? Av(n) : e === "ch" ? kv(n) : e === "de" ? Rv(n) : e === "es" ? Nv(n) : e === "fr" ? xv(n) : e === "it" ? Dv(n) : e === "jp" ? Lv(n) : e === "pl" ? Mv(n) : e === "ru" ? Pv(n) : e === "uk" ? Uv(n) : Cv(n)
+    return e === "en" ? Fv(n) : e === "pt" ? Bv(n) : e === "ch" ? zv(n) : e === "de" ? Vv(n) : e === "es" ? Gv(n) : e === "fr" ? Wv(n) : e === "it" ? qv(n) : e === "jp" ? Kv(n) : e === "pl" ? Hv(n) : e === "ru" ? Yv(n) : e === "uk" ? Zv(n) : $v(n)
   };
 let R;
-const ie = new Array(128).fill(void 0);
-ie.push(void 0, null, !0, !1);
+const ae = new Array(128).fill(void 0);
+ae.push(void 0, null, !0, !1);
 
 function I(n) {
-  return ie[n]
+  return ae[n]
 }
-const ir = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
+const ar = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
   ignoreBOM: !0,
   fatal: !0
 }) : {
@@ -3422,7 +3438,7 @@ const ir = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
     throw Error("TextDecoder not available")
   }
 };
-typeof TextDecoder < "u" && ir.decode();
+typeof TextDecoder < "u" && ar.decode();
 let Se = null;
 
 function Re() {
@@ -3430,14 +3446,14 @@ function Re() {
 }
 
 function Oe(n, t) {
-  return n = n >>> 0, ir.decode(Re().subarray(n, n + t))
+  return n = n >>> 0, ar.decode(Re().subarray(n, n + t))
 }
-let Ne = ie.length;
+let Ne = ae.length;
 
 function x(n) {
-  Ne === ie.length && ie.push(ie.length + 1);
+  Ne === ae.length && ae.push(ae.length + 1);
   const t = Ne;
-  return Ne = ie[t], ie[t] = n, t
+  return Ne = ae[t], ae[t] = n, t
 }
 
 function ne(n, t) {
@@ -3452,13 +3468,13 @@ function le(n) {
   return n == null
 }
 
-function jv(n) {
-  n < 132 || (ie[n] = Ne, Ne = n)
+function Jv(n) {
+  n < 132 || (ae[n] = Ne, Ne = n)
 }
 
 function kn(n) {
   const t = I(n);
-  return jv(n), t
+  return Jv(n), t
 }
 const Rn = typeof FinalizationRegistry > "u" ? {
   register: () => {},
@@ -3467,24 +3483,24 @@ const Rn = typeof FinalizationRegistry > "u" ? {
   R.__wbindgen_export_1.get(n.dtor)(n.a, n.b)
 });
 
-function Fv(n, t, e, r) {
-  const i = {
+function Xv(n, t, e, r) {
+  const a = {
       a: n,
       b: t,
       cnt: 1,
       dtor: e
     },
-    a = (...o) => {
-      i.cnt++;
-      const s = i.a;
-      i.a = 0;
+    i = (...o) => {
+      a.cnt++;
+      const s = a.a;
+      a.a = 0;
       try {
-        return r(s, i.b, ...o)
+        return r(s, a.b, ...o)
       } finally {
-        --i.cnt === 0 ? (R.__wbindgen_export_1.get(i.dtor)(s, i.b), Rn.unregister(i)) : i.a = s
+        --a.cnt === 0 ? (R.__wbindgen_export_1.get(a.dtor)(s, a.b), Rn.unregister(a)) : a.a = s
       }
     };
-  return a.original = i, Rn.register(a, i, i), a
+  return i.original = a, Rn.register(i, a, a), i
 }
 let de = null;
 
@@ -3497,7 +3513,7 @@ const lt = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
       throw Error("TextEncoder not available")
     }
   },
-  Bv = typeof lt.encodeInto == "function" ? function(n, t) {
+  Qv = typeof lt.encodeInto == "function" ? function(n, t) {
     return lt.encodeInto(n, t)
   } : function(n, t) {
     const e = lt.encode(n);
@@ -3514,36 +3530,36 @@ function Vt(n, t, e) {
     return Re().subarray(l, l + s.length).set(s), fe = s.length, l
   }
   let r = n.length,
-    i = t(r, 1) >>> 0;
-  const a = Re();
+    a = t(r, 1) >>> 0;
+  const i = Re();
   let o = 0;
   for (; o < r; o++) {
     const s = n.charCodeAt(o);
     if (s > 127) break;
-    a[i + o] = s
+    i[a + o] = s
   }
   if (o !== r) {
-    o !== 0 && (n = n.slice(o)), i = e(i, r, r = o + n.length * 3, 1) >>> 0;
-    const s = Re().subarray(i + o, i + r),
-      l = Bv(n, s);
-    o += l.written, i = e(i, r, o, 1) >>> 0
+    o !== 0 && (n = n.slice(o)), a = e(a, r, r = o + n.length * 3, 1) >>> 0;
+    const s = Re().subarray(a + o, a + r),
+      l = Qv(n, s);
+    o += l.written, a = e(a, r, o, 1) >>> 0
   }
-  return fe = o, i
+  return fe = o, a
 }
 
-function zv(n) {
+function eb(n) {
   const t = Vt(n, R.__wbindgen_export_2, R.__wbindgen_export_3),
     e = fe;
   R.set_fingerprint(t, e)
 }
 
-function Vv(n, t) {
+function tb(n, t) {
   const e = t(n.length * 1, 1) >>> 0;
   return Re().set(n, e / 1), fe = n.length, e
 }
 
-function Gv(n) {
-  const t = Vv(n, R.__wbindgen_export_2),
+function nb(n) {
+  const t = tb(n, R.__wbindgen_export_2),
     e = fe;
   R.set_telemetry(t, e)
 }
@@ -3552,43 +3568,43 @@ function Gt(n) {
   R.set_user_id(n)
 }
 
-function Wv(n) {
+function rb(n) {
   R.set_automated_browser(n)
 }
 
-function qv(n) {
+function ab(n) {
   let t, e;
   try {
-    const a = R.__wbindgen_add_to_stack_pointer(-16),
+    const i = R.__wbindgen_add_to_stack_pointer(-16),
       o = Vt(n, R.__wbindgen_export_2, R.__wbindgen_export_3),
       s = fe;
-    R.get_pawtected_endpoint_payload(a, o, s);
-    var r = mt().getInt32(a + 0, !0),
-      i = mt().getInt32(a + 4, !0);
-    return t = r, e = i, Oe(r, i)
+    R.get_pawtected_endpoint_payload(i, o, s);
+    var r = mt().getInt32(i + 0, !0),
+      a = mt().getInt32(i + 4, !0);
+    return t = r, e = a, Oe(r, a)
   } finally {
     R.__wbindgen_add_to_stack_pointer(16), R.__wbindgen_export_4(t, e, 1)
   }
 }
 
-function Kv(n) {
+function ib(n) {
   const t = Vt(n, R.__wbindgen_export_2, R.__wbindgen_export_3),
     e = fe;
   R.request_url(t, e)
 }
 
-function Hv(n) {
+function ob(n) {
   R.set_automated_clicks(n)
 }
 
-function Yv() {
+function sb() {
   R.init_listeners()
 }
 
-function Zv(n, t, e) {
+function cb(n, t, e) {
   R.__wbindgen_export_5(n, t, x(e))
 }
-async function $v(n, t) {
+async function ub(n, t) {
   if (typeof Response == "function" && n instanceof Response) {
     if (typeof WebAssembly.instantiateStreaming == "function") try {
       return await WebAssembly.instantiateStreaming(n, t)
@@ -3607,11 +3623,11 @@ async function $v(n, t) {
   }
 }
 
-function Jv() {
+function lb() {
   const n = {};
   return n.wbg = {}, n.wbg.__wbg_addEventListener_90e553fdce254421 = function() {
-    return ne(function(t, e, r, i) {
-      I(t).addEventListener(Oe(e, r), I(i))
+    return ne(function(t, e, r, a) {
+      I(t).addEventListener(Oe(e, r), I(a))
     }, arguments)
   }, n.wbg.__wbg_buffer_609cc3eee51ed158 = function(t) {
     const e = I(t).buffer;
@@ -3623,8 +3639,8 @@ function Jv() {
     }, arguments)
   }, n.wbg.__wbg_call_7cccdd69e0791ae2 = function() {
     return ne(function(t, e, r) {
-      const i = I(t).call(I(e), I(r));
-      return x(i)
+      const a = I(t).call(I(e), I(r));
+      return x(a)
     }, arguments)
   }, n.wbg.__wbg_clientX_5eb380a5f1fec6fd = function(t) {
     return I(t).clientX
@@ -3675,8 +3691,8 @@ function Jv() {
     const r = new Function(Oe(t, e));
     return x(r)
   }, n.wbg.__wbg_newwithbyteoffsetandlength_d97e637ebe145a9a = function(t, e, r) {
-    const i = new Uint8Array(I(t), e >>> 0, r >>> 0);
-    return x(i)
+    const a = new Uint8Array(I(t), e >>> 0, r >>> 0);
+    return x(a)
   }, n.wbg.__wbg_newwithlength_a381634e90c276d4 = function(t) {
     const e = new Uint8Array(t >>> 0);
     return x(e)
@@ -3712,8 +3728,8 @@ function Jv() {
     const t = typeof window > "u" ? null : window;
     return le(t) ? 0 : x(t)
   }, n.wbg.__wbg_subarray_aa9065fa9dc5df96 = function(t, e, r) {
-    const i = I(t).subarray(e >>> 0, r >>> 0);
-    return x(i)
+    const a = I(t).subarray(e >>> 0, r >>> 0);
+    return x(a)
   }, n.wbg.__wbg_versions_c01dfd4722a88165 = function(t) {
     const e = I(t).versions;
     return x(e)
@@ -3721,8 +3737,8 @@ function Jv() {
     const e = I(t);
     return typeof e == "boolean" ? e ? 1 : 0 : 2
   }, n.wbg.__wbindgen_closure_wrapper58 = function(t, e, r) {
-    const i = Fv(t, e, 3, Zv);
-    return x(i)
+    const a = Xv(t, e, 3, cb);
+    return x(a)
   }, n.wbg.__wbindgen_is_function = function(t) {
     return typeof I(t) == "function"
   }, n.wbg.__wbindgen_is_object = function(t) {
@@ -3737,8 +3753,8 @@ function Jv() {
     return x(t)
   }, n.wbg.__wbindgen_number_get = function(t, e) {
     const r = I(e),
-      i = typeof r == "number" ? r : void 0;
-    mt().setFloat64(t + 8, le(i) ? 0 : i, !0), mt().setInt32(t + 0, !le(i), !0)
+      a = typeof r == "number" ? r : void 0;
+    mt().setFloat64(t + 8, le(a) ? 0 : a, !0), mt().setInt32(t + 0, !le(a), !0)
   }, n.wbg.__wbindgen_object_clone_ref = function(t) {
     const e = I(t);
     return x(e)
@@ -3752,23 +3768,23 @@ function Jv() {
   }, n
 }
 
-function Xv(n, t) {
-  return R = n.exports, ar.__wbindgen_wasm_module = t, de = null, Se = null, R
+function db(n, t) {
+  return R = n.exports, ir.__wbindgen_wasm_module = t, de = null, Se = null, R
 }
-async function ar(n) {
+async function ir(n) {
   if (R !== void 0) return R;
   typeof n < "u" && (Object.getPrototypeOf(n) === Object.prototype ? {
     module_or_path: n
   } = n : console.warn("using deprecated parameters for the initialization function; pass a single object instead")), typeof n > "u" && (n = new URL("pawtect_wasm_bg.wasm", import.meta.url));
-  const t = Jv();
+  const t = lb();
   (typeof n == "string" || typeof Request == "function" && n instanceof Request || typeof URL == "function" && n instanceof URL) && (n = fetch(n));
   const {
     instance: e,
     module: r
-  } = await $v(await n, t);
-  return Xv(e, r)
+  } = await ub(await n, t);
+  return db(e, r)
 }
-const Qv = `
+const _b = `
 self.onmessage = function(e) {
   const { prefix, difficulty } = e.data;
 
@@ -3809,14 +3825,14 @@ self.onmessage = function(e) {
   solve().catch(err => self.postMessage({ error: err.message }));
 };
 `;
-async function eb() {
+async function fb() {
   try {
     const n = await fetch(`${Ct}/anticheat/pow/challenge`, {
       credentials: "include"
     });
     if (!n.ok) return null;
     const t = await n.json(),
-      e = await tb(t.prefix, t.difficulty);
+      e = await hb(t.prefix, t.difficulty);
     return e ? {
       ...t,
       nonce: e
@@ -3825,21 +3841,21 @@ async function eb() {
     return null
   }
 }
-async function tb(n, t) {
+async function hb(n, t) {
   return new Promise(e => {
-    const r = new Blob([Qv], {
+    const r = new Blob([_b], {
         type: "application/javascript"
       }),
-      i = URL.createObjectURL(r),
-      a = new Worker(i),
+      a = URL.createObjectURL(r),
+      i = new Worker(a),
       o = setTimeout(() => {
-        a.terminate(), URL.revokeObjectURL(i), e(null)
+        i.terminate(), URL.revokeObjectURL(a), e(null)
       }, 12e4);
-    a.onmessage = s => {
-      clearTimeout(o), a.terminate(), URL.revokeObjectURL(i), s.data.error ? e(null) : e(s.data.nonce)
-    }, a.onerror = () => {
-      clearTimeout(o), a.terminate(), URL.revokeObjectURL(i), e(null)
-    }, a.postMessage({
+    i.onmessage = s => {
+      clearTimeout(o), i.terminate(), URL.revokeObjectURL(a), s.data.error ? e(null) : e(s.data.nonce)
+    }, i.onerror = () => {
+      clearTimeout(o), i.terminate(), URL.revokeObjectURL(a), e(null)
+    }, i.postMessage({
       prefix: n,
       difficulty: t
     })
@@ -3847,7 +3863,7 @@ async function tb(n, t) {
 }
 const Wt = 3;
 var Ve, Ge;
-class nb {
+class mb {
   constructor() {
     D(this, Ve, B(null));
     D(this, Ge, B(0))
@@ -3866,13 +3882,13 @@ class nb {
   }
 }
 Ve = new WeakMap, Ge = new WeakMap;
-const z = new nb;
+const z = new mb;
 async function Nn(n) {
-  return n === 1 ? rb() : n === 2 || n === 3 ? ab(n) : n === 4 ? ib() : !1
+  return n === 1 ? pb() : n === 2 || n === 3 ? wb(n) : n === 4 ? gb() : !1
 }
-async function rb() {
+async function pb() {
   for (let n = 0; n < Wt; n++) try {
-    const t = await eb();
+    const t = await fb();
     if (!t) continue;
     return await be.verifyChallenge({
       type: "pow",
@@ -3883,7 +3899,7 @@ async function rb() {
   return !1
 }
 
-function ib() {
+function gb() {
   return new Promise(n => {
     z.errorCount = 0, z.current = {
       tier: 4,
@@ -3892,7 +3908,7 @@ function ib() {
   })
 }
 
-function ab(n) {
+function wb(n) {
   return new Promise(t => {
     z.errorCount = 0, z.current = {
       tier: n,
@@ -3901,7 +3917,7 @@ function ab(n) {
   })
 }
 
-function r0(n) {
+function p0(n) {
   const t = z.current;
   if (!t) return;
   const e = t.tier === 2 ? "turnstile" : "hcaptcha";
@@ -3918,21 +3934,21 @@ function r0(n) {
   })
 }
 
-function i0() {
+function g0() {
   const n = z.current;
   n && (z.errorCount += 1, z.errorCount >= Wt && (n.resolve(!1), z.current = null))
 }
 
-function a0() {
+function w0() {
   const n = z.current;
   !n || n.tier !== 4 || (n.resolve(!0), z.current = null)
 }
 
-function o0() {
+function y0() {
   z.current && (z.current.resolve(!1), z.current = null)
 }
 var c = (n => (n[n.CONTINUE = 100] = "CONTINUE", n[n.SWITCHING_PROTOCOLS = 101] = "SWITCHING_PROTOCOLS", n[n.PROCESSING = 102] = "PROCESSING", n[n.EARLY_HINTS = 103] = "EARLY_HINTS", n[n.OK = 200] = "OK", n[n.CREATED = 201] = "CREATED", n[n.ACCEPTED = 202] = "ACCEPTED", n[n.NON_AUTHORITATIVE_INFORMATION = 203] = "NON_AUTHORITATIVE_INFORMATION", n[n.NO_CONTENT = 204] = "NO_CONTENT", n[n.RESET_CONTENT = 205] = "RESET_CONTENT", n[n.PARTIAL_CONTENT = 206] = "PARTIAL_CONTENT", n[n.MULTI_STATUS = 207] = "MULTI_STATUS", n[n.ALREADY_REPORTED = 208] = "ALREADY_REPORTED", n[n.IM_USED = 226] = "IM_USED", n[n.MULTIPLE_CHOICES = 300] = "MULTIPLE_CHOICES", n[n.MOVED_PERMANENTLY = 301] = "MOVED_PERMANENTLY", n[n.MOVED_TEMPORARILY = 302] = "MOVED_TEMPORARILY", n[n.FOUND = 302] = "FOUND", n[n.SEE_OTHER = 303] = "SEE_OTHER", n[n.NOT_MODIFIED = 304] = "NOT_MODIFIED", n[n.USE_PROXY = 305] = "USE_PROXY", n[n.SWITCH_PROXY = 306] = "SWITCH_PROXY", n[n.TEMPORARY_REDIRECT = 307] = "TEMPORARY_REDIRECT", n[n.PERMANENT_REDIRECT = 308] = "PERMANENT_REDIRECT", n[n.BAD_REQUEST = 400] = "BAD_REQUEST", n[n.UNAUTHORIZED = 401] = "UNAUTHORIZED", n[n.PAYMENT_REQUIRED = 402] = "PAYMENT_REQUIRED", n[n.FORBIDDEN = 403] = "FORBIDDEN", n[n.NOT_FOUND = 404] = "NOT_FOUND", n[n.METHOD_NOT_ALLOWED = 405] = "METHOD_NOT_ALLOWED", n[n.NOT_ACCEPTABLE = 406] = "NOT_ACCEPTABLE", n[n.PROXY_AUTHENTICATION_REQUIRED = 407] = "PROXY_AUTHENTICATION_REQUIRED", n[n.REQUEST_TIMEOUT = 408] = "REQUEST_TIMEOUT", n[n.CONFLICT = 409] = "CONFLICT", n[n.GONE = 410] = "GONE", n[n.LENGTH_REQUIRED = 411] = "LENGTH_REQUIRED", n[n.PRECONDITION_FAILED = 412] = "PRECONDITION_FAILED", n[n.REQUEST_TOO_LONG = 413] = "REQUEST_TOO_LONG", n[n.CONTENT_TOO_LARGE = 413] = "CONTENT_TOO_LARGE", n[n.REQUEST_URI_TOO_LONG = 414] = "REQUEST_URI_TOO_LONG", n[n.URI_TOO_LONG = 414] = "URI_TOO_LONG", n[n.UNSUPPORTED_MEDIA_TYPE = 415] = "UNSUPPORTED_MEDIA_TYPE", n[n.REQUESTED_RANGE_NOT_SATISFIABLE = 416] = "REQUESTED_RANGE_NOT_SATISFIABLE", n[n.RANGE_NOT_SATISFIABLE = 416] = "RANGE_NOT_SATISFIABLE", n[n.EXPECTATION_FAILED = 417] = "EXPECTATION_FAILED", n[n.IM_A_TEAPOT = 418] = "IM_A_TEAPOT", n[n.INSUFFICIENT_SPACE_ON_RESOURCE = 419] = "INSUFFICIENT_SPACE_ON_RESOURCE", n[n.MISDIRECTED_REQUEST = 421] = "MISDIRECTED_REQUEST", n[n.UNPROCESSABLE_ENTITY = 422] = "UNPROCESSABLE_ENTITY", n[n.UNPROCESSABLE_CONTENT = 422] = "UNPROCESSABLE_CONTENT", n[n.LOCKED = 423] = "LOCKED", n[n.FAILED_DEPENDENCY = 424] = "FAILED_DEPENDENCY", n[n.TOO_EARLY = 425] = "TOO_EARLY", n[n.UPGRADE_REQUIRED = 426] = "UPGRADE_REQUIRED", n[n.PRECONDITION_REQUIRED = 428] = "PRECONDITION_REQUIRED", n[n.TOO_MANY_REQUESTS = 429] = "TOO_MANY_REQUESTS", n[n.REQUEST_HEADER_FIELDS_TOO_LARGE = 431] = "REQUEST_HEADER_FIELDS_TOO_LARGE", n[n.UNAVAILABLE_FOR_LEGAL_REASONS = 451] = "UNAVAILABLE_FOR_LEGAL_REASONS", n[n.INTERNAL_SERVER_ERROR = 500] = "INTERNAL_SERVER_ERROR", n[n.NOT_IMPLEMENTED = 501] = "NOT_IMPLEMENTED", n[n.BAD_GATEWAY = 502] = "BAD_GATEWAY", n[n.SERVICE_UNAVAILABLE = 503] = "SERVICE_UNAVAILABLE", n[n.GATEWAY_TIMEOUT = 504] = "GATEWAY_TIMEOUT", n[n.HTTP_VERSION_NOT_SUPPORTED = 505] = "HTTP_VERSION_NOT_SUPPORTED", n[n.VARIANT_ALSO_NEGOTIATES = 506] = "VARIANT_ALSO_NEGOTIATES", n[n.INSUFFICIENT_STORAGE = 507] = "INSUFFICIENT_STORAGE", n[n.LOOP_DETECTED = 508] = "LOOP_DETECTED", n[n.NOT_EXTENDED = 510] = "NOT_EXTENDED", n[n.NETWORK_AUTHENTICATION_REQUIRED = 511] = "NETWORK_AUTHENTICATION_REQUIRED", n[n.AWS_ELB_000 = 0] = "AWS_ELB_000", n[n.THIS_IS_FINE = 218] = "THIS_IS_FINE", n[n.PAGE_EXPIRED = 419] = "PAGE_EXPIRED", n[n.METHOD_FAILURE = 420] = "METHOD_FAILURE", n[n.ENHANCE_YOUR_CALM = 420] = "ENHANCE_YOUR_CALM", n[n.REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY = 430] = "REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY", n[n.SHOPIFY_SECURITY_REJECTION = 430] = "SHOPIFY_SECURITY_REJECTION", n[n.LOGIN_TIME_OUT = 440] = "LOGIN_TIME_OUT", n[n.NO_RESPONSE = 444] = "NO_RESPONSE", n[n.RETRY_WITH = 449] = "RETRY_WITH", n[n.BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS = 450] = "BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS", n[n.REDIRECT_IIS = 451] = "REDIRECT_IIS", n[n.CLIENT_CLOSED_CONNECTION_AWS_ELB = 460] = "CLIENT_CLOSED_CONNECTION_AWS_ELB", n[n.X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB = 463] = "X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB", n[n.INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB = 464] = "INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB", n[n.REQUEST_HEADER_TOO_LARGE = 494] = "REQUEST_HEADER_TOO_LARGE", n[n.SSL_CERTIFICATE_ERROR = 495] = "SSL_CERTIFICATE_ERROR", n[n.SSL_CERTIFICATE_REQUIRED = 496] = "SSL_CERTIFICATE_REQUIRED", n[n.HTTP_REQUEST_SENT_TO_HTTPS_PORT = 497] = "HTTP_REQUEST_SENT_TO_HTTPS_PORT", n[n.INVALID_TOKEN = 498] = "INVALID_TOKEN", n[n.CLIENT_CLOSED_REQUEST = 499] = "CLIENT_CLOSED_REQUEST", n[n.TOKEN_REQUIRED = 499] = "TOKEN_REQUIRED", n[n.BANDWIDTH_LIMIT_EXCEEDED = 509] = "BANDWIDTH_LIMIT_EXCEEDED", n[n.RESOURCE_LIMIT_IS_REACHED = 508] = "RESOURCE_LIMIT_IS_REACHED", n[n.WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR = 520] = "WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR", n[n.WEB_SERVER_IS_DOWN = 521] = "WEB_SERVER_IS_DOWN", n[n.CONNECTION_TIMED_OUT = 522] = "CONNECTION_TIMED_OUT", n[n.ORIGIN_IS_UNREACHABLE = 523] = "ORIGIN_IS_UNREACHABLE", n[n.A_TIMEOUT_OCCURRED = 524] = "A_TIMEOUT_OCCURRED", n[n.SSL_HANDSHAKE_FAILED = 525] = "SSL_HANDSHAKE_FAILED", n[n.INVALID_SSL_CERTIFICATE = 526] = "INVALID_SSL_CERTIFICATE", n[n.RAILGUN_ERROR = 527] = "RAILGUN_ERROR", n[n.SITE_IS_OVERLOADED = 529] = "SITE_IS_OVERLOADED", n[n.ORIGIN_UNAVAILABLE = 530] = "ORIGIN_UNAVAILABLE", n[n.ORIGIN_DNS_ERROR = 530] = "ORIGIN_DNS_ERROR", n[n.SITE_IS_FROZEN = 530] = "SITE_IS_FROZEN", n[n.TEMPORARILY_DISABLED = 540] = "TEMPORARILY_DISABLED", n[n.UNAUTHORIZED_AWS_ELB = 561] = "UNAUTHORIZED_AWS_ELB", n[n.NETWORK_READ_TIMEOUT_ERROR = 598] = "NETWORK_READ_TIMEOUT_ERROR", n[n.NETWORK_CONNECT_TIMEOUT_ERROR = 599] = "NETWORK_CONNECT_TIMEOUT_ERROR", n[n.UNEXPECTED_TOKEN = 783] = "UNEXPECTED_TOKEN", n[n.REQUEST_DENIED = 999] = "REQUEST_DENIED", n))(c || {});
-const s0 = {
+const v0 = {
     griefing: Id(),
     "multi-accounting": gm(),
     "hate-speech": Xd(),
@@ -3941,7 +3957,7 @@ const s0 = {
     "inappropriate-content": S_(),
     other: Js()
   },
-  c0 = {
+  b0 = {
     doxxing: Gu(),
     "hate-speech": d_(),
     griefing: Fd(),
@@ -3950,7 +3966,7 @@ const s0 = {
     "inappropriate-content": C_(),
     other: lc()
   },
-  u0 = {
+  E0 = {
     doxxing: "text-red-600",
     "hate-speech": "text-red-400",
     "inappropriate-content": "text-amber-500",
@@ -3968,7 +3984,7 @@ const s0 = {
     other: 5,
     griefing: 6
   },
-  l0 = {
+  T0 = {
     griefing: "topic-2",
     "inappropriate-content": "topic-1",
     bot: "topic-3",
@@ -3977,7 +3993,7 @@ const s0 = {
     doxxing: "topic-1",
     other: ""
   },
-  ob = 365 * 24 * 60 * 60 * 1e3;
+  yb = 365 * 24 * 60 * 60 * 1e3;
 
 function or(n) {
   if (!n) return null;
@@ -3985,12 +4001,12 @@ function or(n) {
   return Number.isFinite(e) ? e : null
 }
 
-function d0(n, t = Date.now()) {
+function S0(n, t = Date.now()) {
   const e = or(n);
-  return e === null ? !1 : e - t >= ob
+  return e === null ? !1 : e - t >= yb
 }
 
-function _0(n, t = Date.now()) {
+function O0(n, t = Date.now()) {
   const e = or(n);
   if (e === null || e <= t) return {
     days: 0,
@@ -3998,19 +4014,19 @@ function _0(n, t = Date.now()) {
     minutes: 0
   };
   const r = Math.max(0, Math.ceil((e - t) / 6e4)),
-    i = Math.floor(r / 1440),
-    a = Math.floor(r % 1440 / 60),
+    a = Math.floor(r / 1440),
+    i = Math.floor(r % 1440 / 60),
     o = r % 60;
   return {
-    days: i,
-    hours: a,
+    days: a,
+    hours: i,
     minutes: o
   }
 }
-const sb = 60,
-  cb = 100,
-  ub = 50,
-  lb = 2e3;
+const vb = 60,
+  bb = 100,
+  Eb = 50,
+  Tb = 2e3;
 class sr {
   constructor(t) {
     F(this, "items", []);
@@ -4026,7 +4042,7 @@ class sr {
   }
 }
 
-function db() {
+function Sb() {
   return {
     idleStartMs: 0,
     totalIdleMs: 0,
@@ -4038,22 +4054,22 @@ function db() {
     windowStartMs: 0
   }
 }
-const cr = new sr(cb),
-  ur = new sr(ub);
-let U = db(),
+const cr = new sr(bb),
+  ur = new sr(Eb);
+let U = Sb(),
   pt = null,
   Dn = !1,
   k = null,
   lr = 0;
 
-function f0() {
+function I0() {
   Dn || typeof window > "u" || (Dn = !0, U.focusStartMs = performance.now(), U.windowStartMs = Date.now(), document.readyState === "complete" ? k = Mn() : window.addEventListener("load", () => {
     k = Mn()
   }, {
     once: !0
   }), window.addEventListener("pointermove", n => {
     const t = performance.now();
-    t - U.lastMouseSampleMs < sb || (U.lastMouseSampleMs = t, cr.push({
+    t - U.lastMouseSampleMs < vb || (U.lastMouseSampleMs = t, cr.push({
       x: n.clientX,
       y: n.clientY,
       t
@@ -4072,11 +4088,11 @@ function f0() {
     U.idleStartMs > 0 && (U.totalIdleMs += performance.now() - U.idleStartMs, U.idleStartMs = 0), U.focusStartMs = performance.now()
   }, {
     passive: !0
-  }), bb())
+  }), Mb())
 }
 
-function _b() {
-  pt = fb();
+function Ob() {
+  pt = Ib();
   try {
     const n = pt,
       t = new Uint8Array(40),
@@ -4084,27 +4100,27 @@ function _b() {
     e.setUint8(0, 1);
     let r = 0;
     n.isLinearMovement && (r |= 1), n.isConstantInterval && (r |= 2), n.hasZeroJitter && (r |= 4), k != null && k.hts && (r |= 8), navigator.webdriver && (r |= 16), jt.automatedClicks && (r |= 32), k != null && k.cdp && (r |= 64), k != null && k.odz && (r |= 128), e.setUint8(1, r), e.setUint8(2, Math.min(255, n.clickCount)), e.setUint16(3, Math.min(65535, Math.round(n.mouseSpeedAvg * 100))), e.setUint8(5, Math.min(255, n.microMovementCount)), e.setUint8(6, Math.min(255, Math.round(n.mouseSpeedStddev * 100))), e.setUint8(7, Math.min(255, n.movementSegments)), e.setUint8(8, Math.min(255, Math.round(n.avgSegmentCurvature * 255))), e.setUint16(9, Math.min(65535, Math.max(0, U.lastClickX))), e.setUint16(11, Math.min(65535, Math.max(0, U.lastClickY))), e.setUint8(13, Math.min(255, k ? k.lc : 0)), e.setUint8(14, Math.min(255, k ? k.pc : 0)), e.setUint8(15, Math.min(255, k ? k.mtp : 0)), e.setUint16(16, Math.min(65535, Math.round(n.idleMs))), e.setUint16(18, Math.min(65535, Math.round(n.focusMs))), e.setUint16(20, Math.min(65535, Math.round(n.mouseAccelAvg * 100))), e.setUint16(22, Math.min(65535, Math.round(n.mouseAccelStddev * 100))), e.setUint16(24, Math.min(65535, Math.round(n.angularVelocityStddev * 1e4))), e.setInt16(26, Math.max(-32768, Math.min(32767, Math.round(n.velocityProfileSkew * 1e3)))), e.setUint16(28, Math.min(65535, Math.round(n.preClickPauseAvg))), e.setUint16(30, Math.min(65535, k ? k.sw : 0)), e.setUint16(32, Math.min(65535, k ? k.sh : 0)), e.setUint8(34, k ? k.fb & 255 : 0), e.setUint8(35, Math.min(255, k ? k.ptc : 0)), e.setUint8(36, k ? k.adf & 255 : 0);
-    let i = 0;
-    return k != null && k.cdr && (i |= 1), e.setUint8(37, i), e.setUint16(38, Math.min(65535, Math.round(lr * 100))), btoa(String.fromCharCode(...t))
+    let a = 0;
+    return k != null && k.cdr && (a |= 1), e.setUint8(37, a), e.setUint16(38, Math.min(65535, Math.round(lr * 100))), btoa(String.fromCharCode(...t))
   } catch {
     return ""
   }
 }
 
-function fb() {
+function Ib() {
   const n = Date.now(),
     t = U.windowStartMs,
     e = performance.now(),
     r = cr.drain(),
-    i = ur.drain(),
-    a = yb(U, e);
+    a = ur.drain(),
+    i = Db(U, e);
   U.totalIdleMs = 0, U.totalFocusMs = 0, U.focusStartMs = e, U.windowStartMs = n;
-  const o = mb(r),
-    s = pb(i),
-    l = wb(i, r),
+  const o = kb(r),
+    s = Rb(a),
+    l = xb(a, r),
     u = o.straightnessAvg > .95 && r.length > 10,
     _ = o.jitterAvg < .01 && r.length > 10,
-    d = s.stddev / Math.max(1, s.avg) < .05 && i.length >= 5;
+    d = s.stddev / Math.max(1, s.avg) < .05 && a.length >= 5;
   return pt = {
     windowStart: t,
     windowEnd: n,
@@ -4117,16 +4133,16 @@ function fb() {
     avgSegmentCurvature: se(o.avgSegmentCurvature),
     velocityProfileSkew: se(o.velocityProfileSkew),
     angularVelocityStddev: se(o.angularVelocityStddev),
-    clickCount: i.length,
+    clickCount: a.length,
     preClickPauseAvg: se(l),
-    idleMs: a.idleMs,
-    focusMs: a.focusMs,
+    idleMs: i.idleMs,
+    focusMs: i.focusMs,
     isLinearMovement: u,
     isConstantInterval: d,
     hasZeroJitter: _
   }, pt
 }
-const hb = {
+const Ab = {
   speedAvg: 0,
   speedStddev: 0,
   jitterAvg: 0,
@@ -4141,13 +4157,13 @@ const hb = {
   speeds: []
 };
 
-function mb(n) {
-  if (n.length < 3) return hb;
+function kb(n) {
+  if (n.length < 3) return Ab;
   const t = [],
     e = [],
     r = [];
-  let i = 0,
-    a = 0,
+  let a = 0,
+    i = 0,
     o = 0;
   const s = [];
   for (let y = 1; y < n.length; y++) {
@@ -4156,13 +4172,13 @@ function mb(n) {
       $ = Math.max(1, n[y].t - n[y - 1].t),
       G = Math.sqrt(S * S + v * v),
       V = G / $;
-    if (t.push(V), G < 3 && G > 0 && i++, $ > lb) {
-      if (y - a > 2) {
+    if (t.push(V), G < 3 && G > 0 && a++, $ > Tb) {
+      if (y - i > 2) {
         o++;
-        const te = Ln(n.slice(a, y));
+        const te = Ln(n.slice(i, y));
         te >= 0 && s.push(te)
       }
-      a = y
+      i = y
     }
     if (y >= 2) {
       const te = n[y - 1].x - n[y - 2].x,
@@ -4175,9 +4191,9 @@ function mb(n) {
       r.push(Math.abs(V - gr))
     }
   }
-  if (n.length - a > 2) {
+  if (n.length - i > 2) {
     o++;
-    const y = Ln(n.slice(a));
+    const y = Ln(n.slice(i));
     y >= 0 && s.push(y)
   }
   const l = t.reduce((y, S) => y + S, 0) / t.length,
@@ -4232,7 +4248,7 @@ function mb(n) {
     straightnessAvg: N,
     accelAvg: m,
     accelStddev: g,
-    microMovementCount: i,
+    microMovementCount: a,
     movementSegments: o,
     avgSegmentCurvature: C,
     velocityProfileSkew: j,
@@ -4241,44 +4257,44 @@ function mb(n) {
   }
 }
 
-function pb(n) {
+function Rb(n) {
   if (n.length < 2) return {
     avg: 0,
     stddev: 0
   };
   const t = [];
-  for (let i = 1; i < n.length; i++) t.push(n[i] - n[i - 1]);
-  const e = t.reduce((i, a) => i + a, 0) / t.length,
-    r = t.reduce((i, a) => i + Math.pow(a - e, 2), 0) / t.length;
+  for (let a = 1; a < n.length; a++) t.push(n[a] - n[a - 1]);
+  const e = t.reduce((a, i) => a + i, 0) / t.length,
+    r = t.reduce((a, i) => a + Math.pow(i - e, 2), 0) / t.length;
   return {
     avg: e,
     stddev: Math.sqrt(r)
   }
 }
 
-function gb(n, t) {
+function Nb(n, t) {
   let e = 0,
     r = n.length - 1,
-    i = -1;
+    a = -1;
   for (; e <= r;) {
-    const a = e + r >>> 1;
-    n[a].t <= t ? (i = a, e = a + 1) : r = a - 1
+    const i = e + r >>> 1;
+    n[i].t <= t ? (a = i, e = i + 1) : r = i - 1
   }
-  return i
+  return a
 }
 
-function wb(n, t) {
+function xb(n, t) {
   if (n.length === 0 || t.length < 2) return 0;
   let e = 0,
     r = 0;
-  for (const i of n) {
-    const a = gb(t, i);
-    a >= 0 && (e += i - t[a].t, r++)
+  for (const a of n) {
+    const i = Nb(t, a);
+    i >= 0 && (e += a - t[i].t, r++)
   }
   return r > 0 ? e / r : 0
 }
 
-function yb(n, t) {
+function Db(n, t) {
   const e = Math.round(n.totalIdleMs + (n.idleStartMs > 0 ? t - n.idleStartMs : 0)),
     r = Math.round(n.totalFocusMs + (n.idleStartMs === 0 ? t - n.focusStartMs : 0));
   return {
@@ -4292,40 +4308,40 @@ function Ln(n) {
   const t = n[0],
     e = n[n.length - 1];
   if (Math.sqrt(Math.pow(e.x - t.x, 2) + Math.pow(e.y - t.y, 2)) < 5) return -1;
-  let i = 0,
-    a = 0;
+  let a = 0,
+    i = 0;
   for (let o = 1; o < n.length; o++) {
     const s = n[o].x - n[o - 1].x,
       l = n[o].y - n[o - 1].y;
-    if (i += Math.sqrt(s * s + l * l), o >= 2) {
+    if (a += Math.sqrt(s * s + l * l), o >= 2) {
       const u = n[o - 1].x - n[o - 2].x,
         _ = n[o - 1].y - n[o - 2].y,
         d = u * l - _ * s,
         m = u * s + _ * l;
-      a += Math.abs(Math.atan2(d, m))
+      i += Math.abs(Math.atan2(d, m))
     }
   }
-  return i > 0 ? a / i : 0
+  return a > 0 ? i / a : 0
 }
 
-function vb() {
+function Lb() {
   var r;
   let n = 0;
   const t = navigator,
     e = ["hardwareConcurrency", "deviceMemory", "platform", "vendor", "maxTouchPoints", "languages", "plugins", "userAgent"];
   try {
-    for (const i of e)
-      if (Object.getOwnPropertyDescriptor(navigator, i) !== void 0) {
+    for (const a of e)
+      if (Object.getOwnPropertyDescriptor(navigator, a) !== void 0) {
         n |= 1;
         break
       }
   } catch {}
   try {
-    const i = document.createElement("iframe");
-    i.style.display = "none", document.body.appendChild(i);
-    const a = i.contentWindow;
-    if (a) {
-      const o = a.Function.prototype.toString,
+    const a = document.createElement("iframe");
+    a.style.display = "none", document.body.appendChild(a);
+    const i = a.contentWindow;
+    if (i) {
+      const o = i.Function.prototype.toString,
         s = ["hardwareConcurrency", "platform", "languages"];
       for (const l of s) {
         const u = Object.getOwnPropertyDescriptor(Navigator.prototype, l);
@@ -4343,21 +4359,21 @@ function vb() {
         }
       }
     }
-    i.remove()
+    a.remove()
   } catch {}
   try {
-    const i = navigator.userAgent,
-      a = navigator.platform;
-    if (i && a) {
-      const o = /Windows/.test(i),
-        s = /Macintosh|Mac OS X/.test(i),
-        l = /Linux/.test(i) && !/Android/.test(i),
-        u = /Android/.test(i),
-        _ = /iPhone|iPad|iPod/.test(i),
-        d = /^Win/.test(a),
-        m = /^Mac/.test(a),
-        g = /^Linux/.test(a),
-        E = /^(iPhone|iPad|iPod)/.test(a);
+    const a = navigator.userAgent,
+      i = navigator.platform;
+    if (a && i) {
+      const o = /Windows/.test(a),
+        s = /Macintosh|Mac OS X/.test(a),
+        l = /Linux/.test(a) && !/Android/.test(a),
+        u = /Android/.test(a),
+        _ = /iPhone|iPad|iPod/.test(a),
+        d = /^Win/.test(i),
+        m = /^Mac/.test(i),
+        g = /^Linux/.test(i),
+        E = /^(iPhone|iPad|iPod)/.test(i);
       if ((o && !d || s && !m || l && !g || u && !g || _ && !E) && (n |= 4), t.userAgentData && t.userAgentData.platform) {
         const w = t.userAgentData.platform;
         (o && w !== "Windows" || s && w !== "macOS" || l && w !== "Linux" || u && w !== "Android") && (n |= 4)
@@ -4365,33 +4381,33 @@ function vb() {
     }
   } catch {}
   try {
-    const a = document.createElement("canvas").getContext("webgl");
-    if (a) {
-      const o = a.getExtension("WEBGL_debug_renderer_info");
+    const i = document.createElement("canvas").getContext("webgl");
+    if (i) {
+      const o = i.getExtension("WEBGL_debug_renderer_info");
       if (o) {
-        const s = (a.getParameter(o.UNMASKED_RENDERER_WEBGL) || "").toLowerCase(),
-          l = (a.getParameter(o.UNMASKED_VENDOR_WEBGL) || "").toLowerCase(),
+        const s = (i.getParameter(o.UNMASKED_RENDERER_WEBGL) || "").toLowerCase(),
+          l = (i.getParameter(o.UNMASKED_VENDOR_WEBGL) || "").toLowerCase(),
           u = navigator.userAgent,
           _ = /Windows/.test(u),
           d = /Macintosh|Mac OS X/.test(u);
         (s.includes("apple") || l.includes("apple")) && _ && (n |= 8), s.includes("angle") && d && !s.includes("metal") && (n |= 8), (s.includes("d3d11") || s.includes("direct3d")) && d && (n |= 8)
-      }(r = a.getExtension("WEBGL_lose_context")) == null || r.loseContext()
+      }(r = i.getExtension("WEBGL_lose_context")) == null || r.loseContext()
     }
   } catch {}
   try {
     (screen.availWidth > screen.width || screen.availHeight > screen.height) && (n |= 16), screen.pixelDepth !== screen.colorDepth && (n |= 16)
   } catch {}
   try {
-    const i = navigator.userAgent;
-    if (/Chrome\//.test(i) && !/Edg\//.test(i)) {
-      const a = window.chrome;
-      a && typeof a.csi != "function" && (n |= 64)
+    const a = navigator.userAgent;
+    if (/Chrome\//.test(a) && !/Edg\//.test(a)) {
+      const i = window.chrome;
+      i && typeof i.csi != "function" && (n |= 64)
     }
   } catch {}
   try {
-    const i = ["hardwareConcurrency", "platform", "maxTouchPoints", "deviceMemory"];
-    for (const a of i) {
-      const o = Object.getOwnPropertyDescriptor(navigator, a);
+    const a = ["hardwareConcurrency", "platform", "maxTouchPoints", "deviceMemory"];
+    for (const i of a) {
+      const o = Object.getOwnPropertyDescriptor(navigator, i);
       if (o && "value" in o) {
         n |= 128;
         break
@@ -4406,19 +4422,19 @@ function Mn() {
     t = n.plugins ? n.plugins.length : 0,
     e = "ontouchstart" in window || n.maxTouchPoints > 0,
     r = n.maxTouchPoints || 0;
-  let i = 0;
-  typeof SharedArrayBuffer < "u" && (i |= 1), typeof Intl.Segmenter < "u" && (i |= 2), typeof CSS.highlights < "u" && (i |= 4), n.userAgentData && (i |= 8), window.chrome && (i |= 16), typeof window.InstallTrigger < "u" && (i |= 32), typeof window.WebKitMutationObserver < "u" && (i |= 64), typeof window.MSStream < "u" && (i |= 128);
   let a = 0;
+  typeof SharedArrayBuffer < "u" && (a |= 1), typeof Intl.Segmenter < "u" && (a |= 2), typeof CSS.highlights < "u" && (a |= 4), n.userAgentData && (a |= 8), window.chrome && (a |= 16), typeof window.InstallTrigger < "u" && (a |= 32), typeof window.WebKitMutationObserver < "u" && (a |= 64), typeof window.MSStream < "u" && (a |= 128);
+  let i = 0;
   const o = ["webdriver", "languages", "plugins", "hardwareConcurrency", "platform", "userAgent", "vendor", "maxTouchPoints", "deviceMemory", "cookieEnabled", "pdfViewerEnabled", "connection"],
     s = ["width", "height", "colorDepth", "pixelDepth", "availWidth", "availHeight"],
     l = Function.prototype.toString;
   for (const w of o) try {
     const T = Object.getOwnPropertyDescriptor(Navigator.prototype, w);
-    T && typeof T.get == "function" && l.call(T.get).includes("native code") === !1 && a++
+    T && typeof T.get == "function" && l.call(T.get).includes("native code") === !1 && i++
   } catch {}
   for (const w of s) try {
     const T = Object.getOwnPropertyDescriptor(Screen.prototype, w);
-    T && typeof T.get == "function" && l.call(T.get).includes("native code") === !1 && a++
+    T && typeof T.get == "function" && l.call(T.get).includes("native code") === !1 && i++
   } catch {}
   let u = "",
     _ = !0;
@@ -4447,15 +4463,15 @@ function Mn() {
   } catch {}
   const m = n.languages ? n.languages.length : 0,
     g = window.outerWidth === 0 || window.outerHeight === 0,
-    E = vb();
+    E = Lb();
   return {
     pc: t,
     sw: screen.width,
     sh: screen.height,
     hts: e,
     mtp: r,
-    fb: i,
-    ptc: a,
+    fb: a,
+    ptc: i,
     ch: u,
     cdp: d,
     lc: m,
@@ -4465,21 +4481,21 @@ function Mn() {
   }
 }
 
-function bb() {
+function Mb() {
   const n = [];
 
   function e(r) {
     if (n.push(r), n.length < 30) requestAnimationFrame(e);
     else {
-      const i = [];
+      const a = [];
       for (let o = 1; o < n.length; o++) {
         const s = n[o] - n[o - 1];
-        s < 100 && i.push(s)
+        s < 100 && a.push(s)
       }
-      if (i.length < 5) return;
-      i.sort((o, s) => o - s);
-      const a = i[Math.floor(i.length / 2)];
-      lr = i.reduce((o, s) => o + Math.abs(s - a), 0) / i.length
+      if (a.length < 5) return;
+      a.sort((o, s) => o - s);
+      const i = a[Math.floor(a.length / 2)];
+      lr = a.reduce((o, s) => o + Math.abs(s - i), 0) / a.length
     }
   }
   requestAnimationFrame(e)
@@ -4488,13 +4504,13 @@ function bb() {
 function se(n) {
   return Math.round(n * 1e3) / 1e3
 }
-const Eb = [{
+const Pb = [{
     tileSize: 1e3,
     zoom: 11
   }],
-  Tb = 4,
-  Sb = 6e3,
-  Ob = [{
+  Ub = 4,
+  Cb = 6e3,
+  jb = [{
     name: "Transparent",
     rgb: [0, 0, 0]
   }, {
@@ -4687,10 +4703,10 @@ const Eb = [{
     name: "Light Stone",
     rgb: [205, 197, 158]
   }],
-  Ib = {
+  Fb = {
     needsPhoneVerification: "needs_phone_verification"
   },
-  Ab = {
+  Bb = {
     Droplet: {},
     "Max. Charge": {},
     "Paint Charge": {},
@@ -4701,7 +4717,7 @@ const Eb = [{
     "Custom Name Font": {},
     "Custom Name Style": {}
   },
-  kb = {
+  zb = {
     10: {
       name: "25,000 Droplets",
       price: 500,
@@ -4832,8 +4848,8 @@ const Eb = [{
       }]
     }
   },
-  Rb = JSON.parse(`[{"id":1,"name":"Afghanistan","code":"AF","flag":"🇦🇫"},{"id":2,"name":"Albania","code":"AL","flag":"🇦🇱"},{"id":3,"name":"Algeria","code":"DZ","flag":"🇩🇿"},{"id":4,"name":"American Samoa","code":"AS","flag":"🇦🇸"},{"id":5,"name":"Andorra","code":"AD","flag":"🇦🇩"},{"id":6,"name":"Angola","code":"AO","flag":"🇦🇴"},{"id":7,"name":"Anguilla","code":"AI","flag":"🇦🇮"},{"id":8,"name":"Antarctica","code":"AQ","flag":"🇦🇶"},{"id":9,"name":"Antigua and Barbuda","code":"AG","flag":"🇦🇬"},{"id":10,"name":"Argentina","code":"AR","flag":"🇦🇷"},{"id":11,"name":"Armenia","code":"AM","flag":"🇦🇲"},{"id":12,"name":"Aruba","code":"AW","flag":"🇦🇼"},{"id":13,"name":"Australia","code":"AU","flag":"🇦🇺"},{"id":14,"name":"Austria","code":"AT","flag":"🇦🇹"},{"id":15,"name":"Azerbaijan","code":"AZ","flag":"🇦🇿"},{"id":16,"name":"Bahamas","code":"BS","flag":"🇧🇸"},{"id":17,"name":"Bahrain","code":"BH","flag":"🇧🇭"},{"id":18,"name":"Bangladesh","code":"BD","flag":"🇧🇩"},{"id":19,"name":"Barbados","code":"BB","flag":"🇧🇧"},{"id":20,"name":"Belarus","code":"BY","flag":"🇧🇾"},{"id":21,"name":"Belgium","code":"BE","flag":"🇧🇪"},{"id":22,"name":"Belize","code":"BZ","flag":"🇧🇿"},{"id":23,"name":"Benin","code":"BJ","flag":"🇧🇯"},{"id":24,"name":"Bermuda","code":"BM","flag":"🇧🇲"},{"id":25,"name":"Bhutan","code":"BT","flag":"🇧🇹"},{"id":26,"name":"Bolivia","code":"BO","flag":"🇧🇴"},{"id":27,"name":"Bonaire","code":"BQ","flag":"🇧🇶"},{"id":28,"name":"Bosnia and Herzegovina","code":"BA","flag":"🇧🇦"},{"id":29,"name":"Botswana","code":"BW","flag":"🇧🇼"},{"id":30,"name":"Bouvet Island","code":"BV","flag":"🇧🇻"},{"id":31,"name":"Brazil","code":"BR","flag":"🇧🇷"},{"id":32,"name":"British Indian Ocean Territory","code":"IO","flag":"🇮🇴"},{"id":33,"name":"Brunei Darussalam","code":"BN","flag":"🇧🇳"},{"id":34,"name":"Bulgaria","code":"BG","flag":"🇧🇬"},{"id":35,"name":"Burkina Faso","code":"BF","flag":"🇧🇫"},{"id":36,"name":"Burundi","code":"BI","flag":"🇧🇮"},{"id":37,"name":"Cabo Verde","code":"CV","flag":"🇨🇻"},{"id":38,"name":"Cambodia","code":"KH","flag":"🇰🇭"},{"id":39,"name":"Cameroon","code":"CM","flag":"🇨🇲"},{"id":40,"name":"Canada","code":"CA","flag":"🇨🇦"},{"id":41,"name":"Cayman Islands","code":"KY","flag":"🇰🇾"},{"id":42,"name":"Central African Republic","code":"CF","flag":"🇨🇫"},{"id":43,"name":"Chad","code":"TD","flag":"🇹🇩"},{"id":44,"name":"Chile","code":"CL","flag":"🇨🇱"},{"id":45,"name":"China","code":"CN","flag":"🇨🇳"},{"id":46,"name":"Christmas Island","code":"CX","flag":"🇨🇽"},{"id":47,"name":"Cocos (Keeling) Islands","code":"CC","flag":"🇨🇨"},{"id":48,"name":"Colombia","code":"CO","flag":"🇨🇴"},{"id":49,"name":"Comoros","code":"KM","flag":"🇰🇲"},{"id":50,"name":"Congo","code":"CG","flag":"🇨🇬"},{"id":51,"name":"Cook Islands","code":"CK","flag":"🇨🇰"},{"id":52,"name":"Costa Rica","code":"CR","flag":"🇨🇷"},{"id":53,"name":"Croatia","code":"HR","flag":"🇭🇷"},{"id":54,"name":"Cuba","code":"CU","flag":"🇨🇺"},{"id":55,"name":"Curaçao","code":"CW","flag":"🇨🇼"},{"id":56,"name":"Cyprus","code":"CY","flag":"🇨🇾"},{"id":57,"name":"Czechia","code":"CZ","flag":"🇨🇿"},{"id":58,"name":"Côte d'Ivoire","code":"CI","flag":"🇨🇮"},{"id":59,"name":"Denmark","code":"DK","flag":"🇩🇰"},{"id":60,"name":"Djibouti","code":"DJ","flag":"🇩🇯"},{"id":61,"name":"Dominica","code":"DM","flag":"🇩🇲"},{"id":62,"name":"Dominican Republic","code":"DO","flag":"🇩🇴"},{"id":63,"name":"Ecuador","code":"EC","flag":"🇪🇨"},{"id":64,"name":"Egypt","code":"EG","flag":"🇪🇬"},{"id":65,"name":"El Salvador","code":"SV","flag":"🇸🇻"},{"id":66,"name":"Equatorial Guinea","code":"GQ","flag":"🇬🇶"},{"id":67,"name":"Eritrea","code":"ER","flag":"🇪🇷"},{"id":68,"name":"Estonia","code":"EE","flag":"🇪🇪"},{"id":69,"name":"Eswatini","code":"SZ","flag":"🇸🇿"},{"id":70,"name":"Ethiopia","code":"ET","flag":"🇪🇹"},{"id":71,"name":"Falkland Islands (Malvinas)","code":"FK","flag":"🇫🇰"},{"id":72,"name":"Faroe Islands","code":"FO","flag":"🇫🇴"},{"id":73,"name":"Fiji","code":"FJ","flag":"🇫🇯"},{"id":74,"name":"Finland","code":"FI","flag":"🇫🇮"},{"id":75,"name":"France","code":"FR","flag":"🇫🇷"},{"id":76,"name":"French Guiana","code":"GF","flag":"🇬🇫"},{"id":77,"name":"French Polynesia","code":"PF","flag":"🇵🇫"},{"id":78,"name":"French Southern Territories","code":"TF","flag":"🇹🇫"},{"id":79,"name":"Gabon","code":"GA","flag":"🇬🇦"},{"id":80,"name":"Gambia","code":"GM","flag":"🇬🇲"},{"id":81,"name":"Georgia","code":"GE","flag":"🇬🇪"},{"id":82,"name":"Germany","code":"DE","flag":"🇩🇪"},{"id":83,"name":"Ghana","code":"GH","flag":"🇬🇭"},{"id":84,"name":"Gibraltar","code":"GI","flag":"🇬🇮"},{"id":85,"name":"Greece","code":"GR","flag":"🇬🇷"},{"id":86,"name":"Greenland","code":"GL","flag":"🇬🇱"},{"id":87,"name":"Grenada","code":"GD","flag":"🇬🇩"},{"id":88,"name":"Guadeloupe","code":"GP","flag":"🇬🇵"},{"id":89,"name":"Guam","code":"GU","flag":"🇬🇺"},{"id":90,"name":"Guatemala","code":"GT","flag":"🇬🇹"},{"id":91,"name":"Guernsey","code":"GG","flag":"🇬🇬"},{"id":92,"name":"Guinea","code":"GN","flag":"🇬🇳"},{"id":93,"name":"Guinea-Bissau","code":"GW","flag":"🇬🇼"},{"id":94,"name":"Guyana","code":"GY","flag":"🇬🇾"},{"id":95,"name":"Haiti","code":"HT","flag":"🇭🇹"},{"id":96,"name":"Heard Island and McDonald Islands","code":"HM","flag":"🇭🇲"},{"id":97,"name":"Honduras","code":"HN","flag":"🇭🇳"},{"id":98,"name":"Hong Kong","code":"HK","flag":"🇭🇰"},{"id":99,"name":"Hungary","code":"HU","flag":"🇭🇺"},{"id":100,"name":"Iceland","code":"IS","flag":"🇮🇸"},{"id":101,"name":"India","code":"IN","flag":"🇮🇳"},{"id":102,"name":"Indonesia","code":"ID","flag":"🇮🇩"},{"id":103,"name":"Iran","code":"IR","flag":"🇮🇷"},{"id":104,"name":"Iraq","code":"IQ","flag":"🇮🇶"},{"id":105,"name":"Ireland","code":"IE","flag":"🇮🇪"},{"id":106,"name":"Isle of Man","code":"IM","flag":"🇮🇲"},{"id":107,"name":"Israel","code":"IL","flag":"🇮🇱"},{"id":108,"name":"Italy","code":"IT","flag":"🇮🇹"},{"id":109,"name":"Jamaica","code":"JM","flag":"🇯🇲"},{"id":110,"name":"Japan","code":"JP","flag":"🇯🇵"},{"id":111,"name":"Jersey","code":"JE","flag":"🇯🇪"},{"id":112,"name":"Jordan","code":"JO","flag":"🇯🇴"},{"id":113,"name":"Kazakhstan","code":"KZ","flag":"🇰🇿"},{"id":114,"name":"Kenya","code":"KE","flag":"🇰🇪"},{"id":115,"name":"Kiribati","code":"KI","flag":"🇰🇮"},{"id":116,"name":"Kosovo","code":"XK","flag":"🇽🇰"},{"id":117,"name":"Kuwait","code":"KW","flag":"🇰🇼"},{"id":118,"name":"Kyrgyzstan","code":"KG","flag":"🇰🇬"},{"id":119,"name":"Laos","code":"LA","flag":"🇱🇦"},{"id":120,"name":"Latvia","code":"LV","flag":"🇱🇻"},{"id":121,"name":"Lebanon","code":"LB","flag":"🇱🇧"},{"id":122,"name":"Lesotho","code":"LS","flag":"🇱🇸"},{"id":123,"name":"Liberia","code":"LR","flag":"🇱🇷"},{"id":124,"name":"Libya","code":"LY","flag":"🇱🇾"},{"id":125,"name":"Liechtenstein","code":"LI","flag":"🇱🇮"},{"id":126,"name":"Lithuania","code":"LT","flag":"🇱🇹"},{"id":127,"name":"Luxembourg","code":"LU","flag":"🇱🇺"},{"id":128,"name":"Macao","code":"MO","flag":"🇲🇴"},{"id":129,"name":"Madagascar","code":"MG","flag":"🇲🇬"},{"id":130,"name":"Malawi","code":"MW","flag":"🇲🇼"},{"id":131,"name":"Malaysia","code":"MY","flag":"🇲🇾"},{"id":132,"name":"Maldives","code":"MV","flag":"🇲🇻"},{"id":133,"name":"Mali","code":"ML","flag":"🇲🇱"},{"id":134,"name":"Malta","code":"MT","flag":"🇲🇹"},{"id":135,"name":"Marshall Islands","code":"MH","flag":"🇲🇭"},{"id":136,"name":"Martinique","code":"MQ","flag":"🇲🇶"},{"id":137,"name":"Mauritania","code":"MR","flag":"🇲🇷"},{"id":138,"name":"Mauritius","code":"MU","flag":"🇲🇺"},{"id":139,"name":"Mayotte","code":"YT","flag":"🇾🇹"},{"id":140,"name":"Mexico","code":"MX","flag":"🇲🇽"},{"id":141,"name":"Micronesia","code":"FM","flag":"🇫🇲"},{"id":142,"name":"Moldova","code":"MD","flag":"🇲🇩"},{"id":143,"name":"Monaco","code":"MC","flag":"🇲🇨"},{"id":144,"name":"Mongolia","code":"MN","flag":"🇲🇳"},{"id":145,"name":"Montenegro","code":"ME","flag":"🇲🇪"},{"id":146,"name":"Montserrat","code":"MS","flag":"🇲🇸"},{"id":147,"name":"Morocco","code":"MA","flag":"🇲🇦"},{"id":148,"name":"Mozambique","code":"MZ","flag":"🇲🇿"},{"id":149,"name":"Myanmar","code":"MM","flag":"🇲🇲"},{"id":150,"name":"Namibia","code":"NA","flag":"🇳🇦"},{"id":151,"name":"Nauru","code":"NR","flag":"🇳🇷"},{"id":152,"name":"Nepal","code":"NP","flag":"🇳🇵"},{"id":153,"name":"Netherlands","code":"NL","flag":"🇳🇱"},{"id":154,"name":"New Caledonia","code":"NC","flag":"🇳🇨"},{"id":155,"name":"New Zealand","code":"NZ","flag":"🇳🇿"},{"id":156,"name":"Nicaragua","code":"NI","flag":"🇳🇮"},{"id":157,"name":"Niger","code":"NE","flag":"🇳🇪"},{"id":158,"name":"Nigeria","code":"NG","flag":"🇳🇬"},{"id":159,"name":"Niue","code":"NU","flag":"🇳🇺"},{"id":160,"name":"Norfolk Island","code":"NF","flag":"🇳🇫"},{"id":161,"name":"North Korea","code":"KP","flag":"🇰🇵"},{"id":162,"name":"North Macedonia","code":"MK","flag":"🇲🇰"},{"id":163,"name":"Northern Mariana Islands","code":"MP","flag":"🇲🇵"},{"id":164,"name":"Norway","code":"NO","flag":"🇳🇴"},{"id":165,"name":"Oman","code":"OM","flag":"🇴🇲"},{"id":166,"name":"Pakistan","code":"PK","flag":"🇵🇰"},{"id":167,"name":"Palau","code":"PW","flag":"🇵🇼"},{"id":168,"name":"Palestine","code":"PS","flag":"🇵🇸"},{"id":169,"name":"Panama","code":"PA","flag":"🇵🇦"},{"id":170,"name":"Papua New Guinea","code":"PG","flag":"🇵🇬"},{"id":171,"name":"Paraguay","code":"PY","flag":"🇵🇾"},{"id":172,"name":"Peru","code":"PE","flag":"🇵🇪"},{"id":173,"name":"Philippines","code":"PH","flag":"🇵🇭"},{"id":174,"name":"Pitcairn","code":"PN","flag":"🇵🇳"},{"id":175,"name":"Poland","code":"PL","flag":"🇵🇱"},{"id":176,"name":"Portugal","code":"PT","flag":"🇵🇹"},{"id":177,"name":"Puerto Rico","code":"PR","flag":"🇵🇷"},{"id":178,"name":"Qatar","code":"QA","flag":"🇶🇦"},{"id":179,"name":"Republic of the Congo","code":"CD","flag":"🇨🇩"},{"id":180,"name":"Romania","code":"RO","flag":"🇷🇴"},{"id":181,"name":"Russia","code":"RU","flag":"🇷🇺"},{"id":182,"name":"Rwanda","code":"RW","flag":"🇷🇼"},{"id":183,"name":"Réunion","code":"RE","flag":"🇷🇪"},{"id":184,"name":"Saint Barthélemy","code":"BL","flag":"🇧🇱"},{"id":185,"name":"Saint Helena","code":"SH","flag":"🇸🇭"},{"id":186,"name":"Saint Kitts and Nevis","code":"KN","flag":"🇰🇳"},{"id":187,"name":"Saint Lucia","code":"LC","flag":"🇱🇨"},{"id":188,"name":"Saint Martin (French part)","code":"MF","flag":"🇲🇫"},{"id":189,"name":"Saint Pierre and Miquelon","code":"PM","flag":"🇵🇲"},{"id":190,"name":"Saint Vincent and the Grenadines","code":"VC","flag":"🇻🇨"},{"id":191,"name":"Samoa","code":"WS","flag":"🇼🇸"},{"id":192,"name":"San Marino","code":"SM","flag":"🇸🇲"},{"id":193,"name":"Sao Tome and Principe","code":"ST","flag":"🇸🇹"},{"id":194,"name":"Saudi Arabia","code":"SA","flag":"🇸🇦"},{"id":195,"name":"Senegal","code":"SN","flag":"🇸🇳"},{"id":196,"name":"Serbia","code":"RS","flag":"🇷🇸"},{"id":197,"name":"Seychelles","code":"SC","flag":"🇸🇨"},{"id":198,"name":"Sierra Leone","code":"SL","flag":"🇸🇱"},{"id":199,"name":"Singapore","code":"SG","flag":"🇸🇬"},{"id":200,"name":"Sint Maarten (Dutch part)","code":"SX","flag":"🇸🇽"},{"id":201,"name":"Slovakia","code":"SK","flag":"🇸🇰"},{"id":202,"name":"Slovenia","code":"SI","flag":"🇸🇮"},{"id":203,"name":"Solomon Islands","code":"SB","flag":"🇸🇧"},{"id":204,"name":"Somalia","code":"SO","flag":"🇸🇴"},{"id":205,"name":"South Africa","code":"ZA","flag":"🇿🇦"},{"id":206,"name":"South Georgia and the South Sandwich Islands","code":"GS","flag":"🇬🇸"},{"id":207,"name":"South Korea","code":"KR","flag":"🇰🇷"},{"id":208,"name":"South Sudan","code":"SS","flag":"🇸🇸"},{"id":209,"name":"Spain","code":"ES","flag":"🇪🇸"},{"id":210,"name":"Sri Lanka","code":"LK","flag":"🇱🇰"},{"id":211,"name":"Sudan","code":"SD","flag":"🇸🇩"},{"id":212,"name":"Suriname","code":"SR","flag":"🇸🇷"},{"id":213,"name":"Svalbard and Jan Mayen","code":"SJ","flag":"🇸🇯"},{"id":214,"name":"Sweden","code":"SE","flag":"🇸🇪"},{"id":215,"name":"Switzerland","code":"CH","flag":"🇨🇭"},{"id":216,"name":"Syrian Arab Republic","code":"SY","flag":"🇸🇾"},{"id":217,"name":"Taiwan","code":"TW","flag":"🇹🇼"},{"id":218,"name":"Tajikistan","code":"TJ","flag":"🇹🇯"},{"id":219,"name":"Tanzania","code":"TZ","flag":"🇹🇿"},{"id":220,"name":"Thailand","code":"TH","flag":"🇹🇭"},{"id":221,"name":"Timor-Leste","code":"TL","flag":"🇹🇱"},{"id":222,"name":"Togo","code":"TG","flag":"🇹🇬"},{"id":223,"name":"Tokelau","code":"TK","flag":"🇹🇰"},{"id":224,"name":"Tonga","code":"TO","flag":"🇹🇴"},{"id":225,"name":"Trinidad and Tobago","code":"TT","flag":"🇹🇹"},{"id":226,"name":"Tunisia","code":"TN","flag":"🇹🇳"},{"id":227,"name":"Turkmenistan","code":"TM","flag":"🇹🇲"},{"id":228,"name":"Turks and Caicos Islands","code":"TC","flag":"🇹🇨"},{"id":229,"name":"Tuvalu","code":"TV","flag":"🇹🇻"},{"id":230,"name":"Türkiye","code":"TR","flag":"🇹🇷"},{"id":231,"name":"Uganda","code":"UG","flag":"🇺🇬"},{"id":232,"name":"Ukraine","code":"UA","flag":"🇺🇦"},{"id":233,"name":"United Arab Emirates","code":"AE","flag":"🇦🇪"},{"id":234,"name":"United Kingdom","code":"GB","flag":"🇬🇧"},{"id":235,"name":"United States","code":"US","flag":"🇺🇸"},{"id":236,"name":"United States Minor Outlying Islands","code":"UM","flag":"🇺🇲"},{"id":237,"name":"Uruguay","code":"UY","flag":"🇺🇾"},{"id":238,"name":"Uzbekistan","code":"UZ","flag":"🇺🇿"},{"id":239,"name":"Vanuatu","code":"VU","flag":"🇻🇺"},{"id":240,"name":"Vatican City","code":"VA","flag":"🇻🇦"},{"id":241,"name":"Venezuela","code":"VE","flag":"🇻🇪"},{"id":242,"name":"Viet Nam","code":"VN","flag":"🇻🇳"},{"id":243,"name":"Virgin Islands","code":"VG","flag":"🇻🇬"},{"id":244,"name":"Virgin Islands","code":"VI","flag":"🇻🇮"},{"id":245,"name":"Wallis and Futuna","code":"WF","flag":"🇼🇫"},{"id":246,"name":"Western Sahara","code":"EH","flag":"🇪🇭"},{"id":247,"name":"Yemen","code":"YE","flag":"🇾🇪"},{"id":248,"name":"Zambia","code":"ZM","flag":"🇿🇲"},{"id":249,"name":"Zimbabwe","code":"ZW","flag":"🇿🇼"},{"id":250,"name":"Åland Islands","code":"AX","flag":"🇦🇽"},{"id":251,"name":"Canary Islands","code":"IC","flag":"🇮🇨"}]`),
-  Nb = {
+  Vb = JSON.parse(`[{"id":1,"name":"Afghanistan","code":"AF","flag":"🇦🇫"},{"id":2,"name":"Albania","code":"AL","flag":"🇦🇱"},{"id":3,"name":"Algeria","code":"DZ","flag":"🇩🇿"},{"id":4,"name":"American Samoa","code":"AS","flag":"🇦🇸"},{"id":5,"name":"Andorra","code":"AD","flag":"🇦🇩"},{"id":6,"name":"Angola","code":"AO","flag":"🇦🇴"},{"id":7,"name":"Anguilla","code":"AI","flag":"🇦🇮"},{"id":8,"name":"Antarctica","code":"AQ","flag":"🇦🇶"},{"id":9,"name":"Antigua and Barbuda","code":"AG","flag":"🇦🇬"},{"id":10,"name":"Argentina","code":"AR","flag":"🇦🇷"},{"id":11,"name":"Armenia","code":"AM","flag":"🇦🇲"},{"id":12,"name":"Aruba","code":"AW","flag":"🇦🇼"},{"id":13,"name":"Australia","code":"AU","flag":"🇦🇺"},{"id":14,"name":"Austria","code":"AT","flag":"🇦🇹"},{"id":15,"name":"Azerbaijan","code":"AZ","flag":"🇦🇿"},{"id":16,"name":"Bahamas","code":"BS","flag":"🇧🇸"},{"id":17,"name":"Bahrain","code":"BH","flag":"🇧🇭"},{"id":18,"name":"Bangladesh","code":"BD","flag":"🇧🇩"},{"id":19,"name":"Barbados","code":"BB","flag":"🇧🇧"},{"id":20,"name":"Belarus","code":"BY","flag":"🇧🇾"},{"id":21,"name":"Belgium","code":"BE","flag":"🇧🇪"},{"id":22,"name":"Belize","code":"BZ","flag":"🇧🇿"},{"id":23,"name":"Benin","code":"BJ","flag":"🇧🇯"},{"id":24,"name":"Bermuda","code":"BM","flag":"🇧🇲"},{"id":25,"name":"Bhutan","code":"BT","flag":"🇧🇹"},{"id":26,"name":"Bolivia","code":"BO","flag":"🇧🇴"},{"id":27,"name":"Bonaire","code":"BQ","flag":"🇧🇶"},{"id":28,"name":"Bosnia and Herzegovina","code":"BA","flag":"🇧🇦"},{"id":29,"name":"Botswana","code":"BW","flag":"🇧🇼"},{"id":30,"name":"Bouvet Island","code":"BV","flag":"🇧🇻"},{"id":31,"name":"Brazil","code":"BR","flag":"🇧🇷"},{"id":32,"name":"British Indian Ocean Territory","code":"IO","flag":"🇮🇴"},{"id":33,"name":"Brunei Darussalam","code":"BN","flag":"🇧🇳"},{"id":34,"name":"Bulgaria","code":"BG","flag":"🇧🇬"},{"id":35,"name":"Burkina Faso","code":"BF","flag":"🇧🇫"},{"id":36,"name":"Burundi","code":"BI","flag":"🇧🇮"},{"id":37,"name":"Cabo Verde","code":"CV","flag":"🇨🇻"},{"id":38,"name":"Cambodia","code":"KH","flag":"🇰🇭"},{"id":39,"name":"Cameroon","code":"CM","flag":"🇨🇲"},{"id":40,"name":"Canada","code":"CA","flag":"🇨🇦"},{"id":41,"name":"Cayman Islands","code":"KY","flag":"🇰🇾"},{"id":42,"name":"Central African Republic","code":"CF","flag":"🇨🇫"},{"id":43,"name":"Chad","code":"TD","flag":"🇹🇩"},{"id":44,"name":"Chile","code":"CL","flag":"🇨🇱"},{"id":45,"name":"China","code":"CN","flag":"🇨🇳"},{"id":46,"name":"Christmas Island","code":"CX","flag":"🇨🇽"},{"id":47,"name":"Cocos (Keeling) Islands","code":"CC","flag":"🇨🇨"},{"id":48,"name":"Colombia","code":"CO","flag":"🇨🇴"},{"id":49,"name":"Comoros","code":"KM","flag":"🇰🇲"},{"id":50,"name":"Congo","code":"CG","flag":"🇨🇬"},{"id":51,"name":"Cook Islands","code":"CK","flag":"🇨🇰"},{"id":52,"name":"Costa Rica","code":"CR","flag":"🇨🇷"},{"id":53,"name":"Croatia","code":"HR","flag":"🇭🇷"},{"id":54,"name":"Cuba","code":"CU","flag":"🇨🇺"},{"id":55,"name":"Curaçao","code":"CW","flag":"🇨🇼"},{"id":56,"name":"Cyprus","code":"CY","flag":"🇨🇾"},{"id":57,"name":"Czechia","code":"CZ","flag":"🇨🇿"},{"id":58,"name":"Côte d'Ivoire","code":"CI","flag":"🇨🇮"},{"id":59,"name":"Denmark","code":"DK","flag":"🇩🇰"},{"id":60,"name":"Djibouti","code":"DJ","flag":"🇩🇯"},{"id":61,"name":"Dominica","code":"DM","flag":"🇩🇲"},{"id":62,"name":"Dominican Republic","code":"DO","flag":"🇩🇴"},{"id":63,"name":"Ecuador","code":"EC","flag":"🇪🇨"},{"id":64,"name":"Egypt","code":"EG","flag":"🇪🇬"},{"id":65,"name":"El Salvador","code":"SV","flag":"🇸🇻"},{"id":66,"name":"Equatorial Guinea","code":"GQ","flag":"🇬🇶"},{"id":67,"name":"Eritrea","code":"ER","flag":"🇪🇷"},{"id":68,"name":"Estonia","code":"EE","flag":"🇪🇪"},{"id":69,"name":"Eswatini","code":"SZ","flag":"🇸🇿"},{"id":70,"name":"Ethiopia","code":"ET","flag":"🇪🇹"},{"id":71,"name":"Falkland Islands (Malvinas)","code":"FK","flag":"🇫🇰"},{"id":72,"name":"Faroe Islands","code":"FO","flag":"🇫🇴"},{"id":73,"name":"Fiji","code":"FJ","flag":"🇫🇯"},{"id":74,"name":"Finland","code":"FI","flag":"🇫🇮"},{"id":75,"name":"France","code":"FR","flag":"🇫🇷"},{"id":76,"name":"French Guiana","code":"GF","flag":"🇬🇫"},{"id":77,"name":"French Polynesia","code":"PF","flag":"🇵🇫"},{"id":78,"name":"French Southern Territories","code":"TF","flag":"🇹🇫"},{"id":79,"name":"Gabon","code":"GA","flag":"🇬🇦"},{"id":80,"name":"Gambia","code":"GM","flag":"🇬🇲"},{"id":81,"name":"Georgia","code":"GE","flag":"🇬🇪"},{"id":82,"name":"Germany","code":"DE","flag":"🇩🇪"},{"id":83,"name":"Ghana","code":"GH","flag":"🇬🇭"},{"id":84,"name":"Gibraltar","code":"GI","flag":"🇬🇮"},{"id":85,"name":"Greece","code":"GR","flag":"🇬🇷"},{"id":86,"name":"Greenland","code":"GL","flag":"🇬🇱"},{"id":87,"name":"Grenada","code":"GD","flag":"🇬🇩"},{"id":88,"name":"Guadeloupe","code":"GP","flag":"🇬🇵"},{"id":89,"name":"Guam","code":"GU","flag":"🇬🇺"},{"id":90,"name":"Guatemala","code":"GT","flag":"🇬🇹"},{"id":91,"name":"Guernsey","code":"GG","flag":"🇬🇬"},{"id":92,"name":"Guinea","code":"GN","flag":"🇬🇳"},{"id":93,"name":"Guinea-Bissau","code":"GW","flag":"🇬🇼"},{"id":94,"name":"Guyana","code":"GY","flag":"🇬🇾"},{"id":95,"name":"Haiti","code":"HT","flag":"🇭🇹"},{"id":96,"name":"Heard Island and McDonald Islands","code":"HM","flag":"🇭🇲"},{"id":97,"name":"Honduras","code":"HN","flag":"🇭🇳"},{"id":98,"name":"Hong Kong","code":"HK","flag":"🇭🇰"},{"id":99,"name":"Hungary","code":"HU","flag":"🇭🇺"},{"id":100,"name":"Iceland","code":"IS","flag":"🇮🇸"},{"id":101,"name":"India","code":"IN","flag":"🇮🇳"},{"id":102,"name":"Indonesia","code":"ID","flag":"🇮🇩"},{"id":103,"name":"Iran","code":"IR","flag":"🇮🇷"},{"id":104,"name":"Iraq","code":"IQ","flag":"🇮🇶"},{"id":105,"name":"Ireland","code":"IE","flag":"🇮🇪"},{"id":106,"name":"Isle of Man","code":"IM","flag":"🇮🇲"},{"id":107,"name":"Israel","code":"IL","flag":"🇮🇱"},{"id":108,"name":"Italy","code":"IT","flag":"🇮🇹"},{"id":109,"name":"Jamaica","code":"JM","flag":"🇯🇲"},{"id":110,"name":"Japan","code":"JP","flag":"🇯🇵"},{"id":111,"name":"Jersey","code":"JE","flag":"🇯🇪"},{"id":112,"name":"Jordan","code":"JO","flag":"🇯🇴"},{"id":113,"name":"Kazakhstan","code":"KZ","flag":"🇰🇿"},{"id":114,"name":"Kenya","code":"KE","flag":"🇰🇪"},{"id":115,"name":"Kiribati","code":"KI","flag":"🇰🇮"},{"id":116,"name":"Kosovo","code":"XK","flag":"🇽🇰"},{"id":117,"name":"Kuwait","code":"KW","flag":"🇰🇼"},{"id":118,"name":"Kyrgyzstan","code":"KG","flag":"🇰🇬"},{"id":119,"name":"Laos","code":"LA","flag":"🇱🇦"},{"id":120,"name":"Latvia","code":"LV","flag":"🇱🇻"},{"id":121,"name":"Lebanon","code":"LB","flag":"🇱🇧"},{"id":122,"name":"Lesotho","code":"LS","flag":"🇱🇸"},{"id":123,"name":"Liberia","code":"LR","flag":"🇱🇷"},{"id":124,"name":"Libya","code":"LY","flag":"🇱🇾"},{"id":125,"name":"Liechtenstein","code":"LI","flag":"🇱🇮"},{"id":126,"name":"Lithuania","code":"LT","flag":"🇱🇹"},{"id":127,"name":"Luxembourg","code":"LU","flag":"🇱🇺"},{"id":128,"name":"Macao","code":"MO","flag":"🇲🇴"},{"id":129,"name":"Madagascar","code":"MG","flag":"🇲🇬"},{"id":130,"name":"Malawi","code":"MW","flag":"🇲🇼"},{"id":131,"name":"Malaysia","code":"MY","flag":"🇲🇾"},{"id":132,"name":"Maldives","code":"MV","flag":"🇲🇻"},{"id":133,"name":"Mali","code":"ML","flag":"🇲🇱"},{"id":134,"name":"Malta","code":"MT","flag":"🇲🇹"},{"id":135,"name":"Marshall Islands","code":"MH","flag":"🇲🇭"},{"id":136,"name":"Martinique","code":"MQ","flag":"🇲🇶"},{"id":137,"name":"Mauritania","code":"MR","flag":"🇲🇷"},{"id":138,"name":"Mauritius","code":"MU","flag":"🇲🇺"},{"id":139,"name":"Mayotte","code":"YT","flag":"🇾🇹"},{"id":140,"name":"Mexico","code":"MX","flag":"🇲🇽"},{"id":141,"name":"Micronesia","code":"FM","flag":"🇫🇲"},{"id":142,"name":"Moldova","code":"MD","flag":"🇲🇩"},{"id":143,"name":"Monaco","code":"MC","flag":"🇲🇨"},{"id":144,"name":"Mongolia","code":"MN","flag":"🇲🇳"},{"id":145,"name":"Montenegro","code":"ME","flag":"🇲🇪"},{"id":146,"name":"Montserrat","code":"MS","flag":"🇲🇸"},{"id":147,"name":"Morocco","code":"MA","flag":"🇲🇦"},{"id":148,"name":"Mozambique","code":"MZ","flag":"🇲🇿"},{"id":149,"name":"Myanmar","code":"MM","flag":"🇲🇲"},{"id":150,"name":"Namibia","code":"NA","flag":"🇳🇦"},{"id":151,"name":"Nauru","code":"NR","flag":"🇳🇷"},{"id":152,"name":"Nepal","code":"NP","flag":"🇳🇵"},{"id":153,"name":"Netherlands","code":"NL","flag":"🇳🇱"},{"id":154,"name":"New Caledonia","code":"NC","flag":"🇳🇨"},{"id":155,"name":"New Zealand","code":"NZ","flag":"🇳🇿"},{"id":156,"name":"Nicaragua","code":"NI","flag":"🇳🇮"},{"id":157,"name":"Niger","code":"NE","flag":"🇳🇪"},{"id":158,"name":"Nigeria","code":"NG","flag":"🇳🇬"},{"id":159,"name":"Niue","code":"NU","flag":"🇳🇺"},{"id":160,"name":"Norfolk Island","code":"NF","flag":"🇳🇫"},{"id":161,"name":"North Korea","code":"KP","flag":"🇰🇵"},{"id":162,"name":"North Macedonia","code":"MK","flag":"🇲🇰"},{"id":163,"name":"Northern Mariana Islands","code":"MP","flag":"🇲🇵"},{"id":164,"name":"Norway","code":"NO","flag":"🇳🇴"},{"id":165,"name":"Oman","code":"OM","flag":"🇴🇲"},{"id":166,"name":"Pakistan","code":"PK","flag":"🇵🇰"},{"id":167,"name":"Palau","code":"PW","flag":"🇵🇼"},{"id":168,"name":"Palestine","code":"PS","flag":"🇵🇸"},{"id":169,"name":"Panama","code":"PA","flag":"🇵🇦"},{"id":170,"name":"Papua New Guinea","code":"PG","flag":"🇵🇬"},{"id":171,"name":"Paraguay","code":"PY","flag":"🇵🇾"},{"id":172,"name":"Peru","code":"PE","flag":"🇵🇪"},{"id":173,"name":"Philippines","code":"PH","flag":"🇵🇭"},{"id":174,"name":"Pitcairn","code":"PN","flag":"🇵🇳"},{"id":175,"name":"Poland","code":"PL","flag":"🇵🇱"},{"id":176,"name":"Portugal","code":"PT","flag":"🇵🇹"},{"id":177,"name":"Puerto Rico","code":"PR","flag":"🇵🇷"},{"id":178,"name":"Qatar","code":"QA","flag":"🇶🇦"},{"id":179,"name":"Republic of the Congo","code":"CD","flag":"🇨🇩"},{"id":180,"name":"Romania","code":"RO","flag":"🇷🇴"},{"id":181,"name":"Russia","code":"RU","flag":"🇷🇺"},{"id":182,"name":"Rwanda","code":"RW","flag":"🇷🇼"},{"id":183,"name":"Réunion","code":"RE","flag":"🇷🇪"},{"id":184,"name":"Saint Barthélemy","code":"BL","flag":"🇧🇱"},{"id":185,"name":"Saint Helena","code":"SH","flag":"🇸🇭"},{"id":186,"name":"Saint Kitts and Nevis","code":"KN","flag":"🇰🇳"},{"id":187,"name":"Saint Lucia","code":"LC","flag":"🇱🇨"},{"id":188,"name":"Saint Martin (French part)","code":"MF","flag":"🇲🇫"},{"id":189,"name":"Saint Pierre and Miquelon","code":"PM","flag":"🇵🇲"},{"id":190,"name":"Saint Vincent and the Grenadines","code":"VC","flag":"🇻🇨"},{"id":191,"name":"Samoa","code":"WS","flag":"🇼🇸"},{"id":192,"name":"San Marino","code":"SM","flag":"🇸🇲"},{"id":193,"name":"Sao Tome and Principe","code":"ST","flag":"🇸🇹"},{"id":194,"name":"Saudi Arabia","code":"SA","flag":"🇸🇦"},{"id":195,"name":"Senegal","code":"SN","flag":"🇸🇳"},{"id":196,"name":"Serbia","code":"RS","flag":"🇷🇸"},{"id":197,"name":"Seychelles","code":"SC","flag":"🇸🇨"},{"id":198,"name":"Sierra Leone","code":"SL","flag":"🇸🇱"},{"id":199,"name":"Singapore","code":"SG","flag":"🇸🇬"},{"id":200,"name":"Sint Maarten (Dutch part)","code":"SX","flag":"🇸🇽"},{"id":201,"name":"Slovakia","code":"SK","flag":"🇸🇰"},{"id":202,"name":"Slovenia","code":"SI","flag":"🇸🇮"},{"id":203,"name":"Solomon Islands","code":"SB","flag":"🇸🇧"},{"id":204,"name":"Somalia","code":"SO","flag":"🇸🇴"},{"id":205,"name":"South Africa","code":"ZA","flag":"🇿🇦"},{"id":206,"name":"South Georgia and the South Sandwich Islands","code":"GS","flag":"🇬🇸"},{"id":207,"name":"South Korea","code":"KR","flag":"🇰🇷"},{"id":208,"name":"South Sudan","code":"SS","flag":"🇸🇸"},{"id":209,"name":"Spain","code":"ES","flag":"🇪🇸"},{"id":210,"name":"Sri Lanka","code":"LK","flag":"🇱🇰"},{"id":211,"name":"Sudan","code":"SD","flag":"🇸🇩"},{"id":212,"name":"Suriname","code":"SR","flag":"🇸🇷"},{"id":213,"name":"Svalbard and Jan Mayen","code":"SJ","flag":"🇸🇯"},{"id":214,"name":"Sweden","code":"SE","flag":"🇸🇪"},{"id":215,"name":"Switzerland","code":"CH","flag":"🇨🇭"},{"id":216,"name":"Syrian Arab Republic","code":"SY","flag":"🇸🇾"},{"id":217,"name":"Taiwan","code":"TW","flag":"🇹🇼"},{"id":218,"name":"Tajikistan","code":"TJ","flag":"🇹🇯"},{"id":219,"name":"Tanzania","code":"TZ","flag":"🇹🇿"},{"id":220,"name":"Thailand","code":"TH","flag":"🇹🇭"},{"id":221,"name":"Timor-Leste","code":"TL","flag":"🇹🇱"},{"id":222,"name":"Togo","code":"TG","flag":"🇹🇬"},{"id":223,"name":"Tokelau","code":"TK","flag":"🇹🇰"},{"id":224,"name":"Tonga","code":"TO","flag":"🇹🇴"},{"id":225,"name":"Trinidad and Tobago","code":"TT","flag":"🇹🇹"},{"id":226,"name":"Tunisia","code":"TN","flag":"🇹🇳"},{"id":227,"name":"Turkmenistan","code":"TM","flag":"🇹🇲"},{"id":228,"name":"Turks and Caicos Islands","code":"TC","flag":"🇹🇨"},{"id":229,"name":"Tuvalu","code":"TV","flag":"🇹🇻"},{"id":230,"name":"Türkiye","code":"TR","flag":"🇹🇷"},{"id":231,"name":"Uganda","code":"UG","flag":"🇺🇬"},{"id":232,"name":"Ukraine","code":"UA","flag":"🇺🇦"},{"id":233,"name":"United Arab Emirates","code":"AE","flag":"🇦🇪"},{"id":234,"name":"United Kingdom","code":"GB","flag":"🇬🇧"},{"id":235,"name":"United States","code":"US","flag":"🇺🇸"},{"id":236,"name":"United States Minor Outlying Islands","code":"UM","flag":"🇺🇲"},{"id":237,"name":"Uruguay","code":"UY","flag":"🇺🇾"},{"id":238,"name":"Uzbekistan","code":"UZ","flag":"🇺🇿"},{"id":239,"name":"Vanuatu","code":"VU","flag":"🇻🇺"},{"id":240,"name":"Vatican City","code":"VA","flag":"🇻🇦"},{"id":241,"name":"Venezuela","code":"VE","flag":"🇻🇪"},{"id":242,"name":"Viet Nam","code":"VN","flag":"🇻🇳"},{"id":243,"name":"Virgin Islands","code":"VG","flag":"🇻🇬"},{"id":244,"name":"Virgin Islands","code":"VI","flag":"🇻🇮"},{"id":245,"name":"Wallis and Futuna","code":"WF","flag":"🇼🇫"},{"id":246,"name":"Western Sahara","code":"EH","flag":"🇪🇭"},{"id":247,"name":"Yemen","code":"YE","flag":"🇾🇪"},{"id":248,"name":"Zambia","code":"ZM","flag":"🇿🇲"},{"id":249,"name":"Zimbabwe","code":"ZW","flag":"🇿🇼"},{"id":250,"name":"Åland Islands","code":"AX","flag":"🇦🇽"},{"id":251,"name":"Canary Islands","code":"IC","flag":"🇮🇨"}]`),
+  Gb = {
     dashboard: {
       summary: {
         counters: {
@@ -4928,7 +4944,8 @@ const Eb = [{
         ban: "staff.tools.select_area.ban",
         clear: "staff.tools.select_area.clear",
         info: "staff.tools.select_area.info",
-        reverse: "staff.tools.select_area.reverse"
+        reverse: "staff.tools.select_area.reverse",
+        timelapse: "staff.tools.select_area.timelapse"
       },
       selectPixel: {
         timeout: "staff.tools.select_pixel.timeout",
@@ -4949,7 +4966,7 @@ const Eb = [{
       assignCosmetics: "staff.cosmetics.assign_cosmetics"
     }
   },
-  xb = {
+  Wb = {
     tools: {
       wayback: {
         limit: 500
@@ -4957,26 +4974,26 @@ const Eb = [{
     }
   },
   he = {
-    seasons: Eb,
-    regionSize: Tb,
-    refreshIntervalMs: Sb,
-    colors: Ob,
-    errors: Ib,
-    items: Ab,
-    products: kb,
-    countries: Rb,
-    permissions: Nb,
-    settings: xb
+    seasons: Pb,
+    regionSize: Ub,
+    refreshIntervalMs: Cb,
+    colors: jb,
+    errors: Fb,
+    items: Bb,
+    products: zb,
+    countries: Vb,
+    permissions: Gb,
+    settings: Wb
   },
   xt = he,
-  Db = he.seasons,
+  qb = he.seasons,
   dr = he.seasons.length - 1,
-  h0 = he.seasons[dr].zoom,
-  m0 = he.seasons[dr].tileSize,
-  p0 = he.permissions,
-  Lb = he.settings;
+  A0 = he.seasons[dr].zoom,
+  k0 = he.seasons[dr].tileSize,
+  R0 = he.permissions,
+  Kb = he.settings;
 
-function g0(n) {
+function N0(n) {
   return xt.countries[n - 1]
 }
 class h extends Error {
@@ -4988,23 +5005,23 @@ class h extends Error {
 function Pn(n, t) {
   const e = {};
   for (const r of n) {
-    const i = t(r);
-    let a = e[i];
-    a ? a.push(r) : e[i] = [r]
+    const a = t(r);
+    let i = e[a];
+    i ? i.push(r) : e[a] = [r]
   }
   return e
 }
 
-function w0(n, t) {
+function x0(n, t) {
   const e = {};
   for (const r of n) {
-    const i = t(r);
-    e[i] = r
+    const a = t(r);
+    e[a] = r
   }
   return e
 }
 var We, qe;
-class Mb {
+class Hb {
   constructor(t) {
     D(this, We, B(!0));
     D(this, qe, B(null));
@@ -5056,12 +5073,12 @@ class Mb {
           }
         }))
       },
-      i = JSON.stringify(r),
-      a = await Ot(i),
+      a = JSON.stringify(r),
+      i = await Ot(a),
       o = await this.request("/paint", {
         method: "POST",
-        body: i,
-        headers: a,
+        body: a,
+        headers: i,
         credentials: "include"
       });
     if (o.status !== c.OK) {
@@ -5088,7 +5105,7 @@ class Mb {
     }
   }
   async selectAreaClear(t, e) {
-    return this.sendPaintRequests(t, (r, i, a) => `/staff/tools/select-area/clear/s${r}/pixel/${i}/${a}`, e)
+    return this.sendPaintRequests(t, (r, a, i) => `/staff/tools/select-area/clear/s${r}/pixel/${a}/${i}`, e)
   }
   async createReverseSession(t) {
     const e = await this.request("/staff/tools/select-area/reverse/session", {
@@ -5105,15 +5122,15 @@ class Mb {
   async getReverseTimestamps(t, e = {}) {
     const {
       mode: r = "depth",
-      beforeDepth: i,
-      beforeTimestamp: a
+      beforeDepth: a,
+      beforeTimestamp: i
     } = e, o = await this.request("/staff/tools/select-area/reverse/timestamps", {
       method: "POST",
       body: JSON.stringify({
         sessionId: t,
         mode: r,
-        beforeDepth: i,
-        beforeTimestamp: a
+        beforeDepth: a,
+        beforeTimestamp: i
       }),
       headers: {
         "Content-Type": "application/json"
@@ -5126,15 +5143,15 @@ class Mb {
   async getReversePreview(t, e) {
     const {
       mode: r = "depth",
-      snapshotDepth: i,
-      timestamp: a
+      snapshotDepth: a,
+      timestamp: i
     } = e, o = await this.request("/staff/tools/select-area/reverse/preview", {
       method: "POST",
       body: JSON.stringify({
         sessionId: t,
         mode: r,
-        snapshotDepth: i,
-        timestamp: a
+        snapshotDepth: a,
+        timestamp: i
       }),
       headers: {
         "Content-Type": "application/json"
@@ -5144,18 +5161,42 @@ class Mb {
     if (o.status !== c.OK) throw new h(f(), o.status);
     return o.json()
   }
+  async getReverseTimelapse(t, e) {
+    const r = await this.request("/staff/tools/select-area/reverse/timelapse", {
+      method: "POST",
+      body: JSON.stringify({
+        sessionId: t,
+        paceMode: e.paceMode,
+        fps: e.fps,
+        durationSeconds: e.durationSeconds,
+        maxFrameCount: e.maxFrameCount,
+        beforeTimestamp: e.beforeTimestamp ?? 0
+      }),
+      headers: {
+        "Content-Type": "application/json"
+      },
+      credentials: "include"
+    });
+    if (r.status === c.BAD_REQUEST) {
+      const a = await r.json(),
+        i = (a == null ? void 0 : a.error) ?? "";
+      throw i === "timelapse_too_many_events" ? new h($g(), c.BAD_REQUEST) : new h(typeof i == "string" && i ? i : f(), c.BAD_REQUEST)
+    }
+    if (r.status !== c.OK) throw new h(f(), r.status);
+    return r.arrayBuffer()
+  }
   async applyReverse(t, e) {
     const {
       mode: r = "depth",
-      snapshotDepth: i,
-      timestamp: a
+      snapshotDepth: a,
+      timestamp: i
     } = e, o = await this.request("/staff/tools/select-area/reverse/apply", {
       method: "POST",
       body: JSON.stringify({
         sessionId: t,
         mode: r,
-        snapshotDepth: i,
-        timestamp: a
+        snapshotDepth: a,
+        timestamp: i
       }),
       headers: {
         "Content-Type": "application/json"
@@ -5165,9 +5206,9 @@ class Mb {
     if (o.status !== c.OK) throw new h(f(), o.status);
     return o.json()
   }
-  async sendPaintRequests(t, e, r, i) {
-    const a = Pn(t, l => `t=(${l.tile[0]},${l.tile[1]}),s=${l.season}`),
-      s = (await Promise.all(Object.values(a).map(async l => {
+  async sendPaintRequests(t, e, r, a) {
+    const i = Pn(t, l => `t=(${l.tile[0]},${l.tile[1]}),s=${l.season}`),
+      s = (await Promise.all(Object.values(i).map(async l => {
         const [u, _] = l[0].tile, d = l[0].season, m = {
           colors: l.map(T => T.colorIdx),
           coords: l.flatMap(T => T.pixel),
@@ -5200,10 +5241,10 @@ class Mb {
     }
   }
   async adminAutoPainterPaint(t, e, r) {
-    const i = Pb(t),
-      a = await Ub(i),
+    const a = Yb(t),
+      i = await Zb(a),
       o = new FormData;
-    o.append("fingerprint", e), o.append("season", i.season.toString()), o.append("px0", i.offsetX.toString()), o.append("py0", i.offsetY.toString()), o.append("width", i.width.toString()), o.append("height", i.height.toString()), o.append("pixels", t.length.toString()), o.append("bitmap", a, "auto-painter.png"), o.append("userId", r.toString());
+    o.append("fingerprint", e), o.append("season", a.season.toString()), o.append("px0", a.offsetX.toString()), o.append("py0", a.offsetY.toString()), o.append("width", a.width.toString()), o.append("height", a.height.toString()), o.append("pixels", t.length.toString()), o.append("bitmap", i, "auto-painter.png"), o.append("userId", r.toString());
     const s = await this.request("/staff/tools/auto-painter/paint", {
       method: "POST",
       body: o,
@@ -5216,10 +5257,10 @@ class Mb {
   async getPixelInfo({
     season: t,
     tile: [e, r],
-    pixel: [i, a]
+    pixel: [a, i]
   }) {
     const o = new URLSearchParams;
-    o.set("x", String(i)), o.set("y", String(a));
+    o.set("x", String(a)), o.set("y", String(i));
     const s = await this.request(`/s${t}/pixel/${e}/${r}?${o.toString()}`, {
       credentials: "include"
     });
@@ -5234,10 +5275,10 @@ class Mb {
   async getPixelAreaInfo({
     season: t,
     tile: [e, r],
-    p0: [i, a],
+    p0: [a, i],
     p1: [o, s]
   }) {
-    const l = await this.request(`/staff/tools/select-area/s${t}/${e}/${r}?x0=${i}&y0=${a}&x1=${o}&y1=${s}`, {
+    const l = await this.request(`/staff/tools/select-area/s${t}/${e}/${r}?x0=${a}&y0=${i}&x1=${o}&y1=${s}`, {
       credentials: "include"
     });
     if (l.status !== c.OK) {
@@ -5299,7 +5340,7 @@ class Mb {
     if (e.status === c.FORBIDDEN) throw new Error(mp());
     if (e.status === c.TOO_MANY_REQUESTS) throw new Error(Tn());
     if (e.status === c.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(_g());
-    if (e.status === c.LOCKED) throw new Error(Kw());
+    if (e.status === c.LOCKED) throw new Error(iy());
     if (e.status === c.UNPROCESSABLE_ENTITY) throw new Error(vh());
     if (e.status !== c.OK) throw new Error(f());
     return await e.json()
@@ -5349,13 +5390,13 @@ class Mb {
     });
     if (e.status === c.BAD_REQUEST) {
       const r = await e.json(),
-        i = (r == null ? void 0 : r.error) ?? "";
-      if (i === "invalid_name") throw new Error(vn());
-      if (i === "invalid_discord") throw new Error(Uf());
-      if (typeof i == "string" && i.startsWith("name_change_cooldown:")) {
-        const a = parseInt(i.split(":")[1] ?? "0", 10);
+        a = (r == null ? void 0 : r.error) ?? "";
+      if (a === "invalid_name") throw new Error(vn());
+      if (a === "invalid_discord") throw new Error(Uf());
+      if (typeof a == "string" && a.startsWith("name_change_cooldown:")) {
+        const i = parseInt(a.split(":")[1] ?? "0", 10);
         throw new Error(Gm({
-          days: a
+          days: i
         }))
       }
       throw new Error(r == null ? void 0 : r.error)
@@ -5369,7 +5410,7 @@ class Mb {
         confirmText: t
       })
     });
-    if (e.status === c.BAD_REQUEST) throw new Error(bw());
+    if (e.status === c.BAD_REQUEST) throw new Error(Mw());
     if (e.status !== c.OK) throw new Error(f())
   }
   async favoriteLocation(t) {
@@ -5402,7 +5443,7 @@ class Mb {
       }),
       credentials: "include"
     });
-    if (r.status === c.BAD_REQUEST) throw new Error(im());
+    if (r.status === c.BAD_REQUEST) throw new Error(am());
     if (r.status !== c.OK) throw new Error(f())
   }
   async leaderboardPlayers(t) {
@@ -5478,7 +5519,7 @@ class Mb {
     if (e.status === c.BAD_REQUEST) {
       const r = await e.json();
       throw r.error === "max_characters" ? new Error(Qo()) : r.error === "name_taken" ? new Error(Bo()) : r.error == "empty_name" ? new Error(_s()) : new Error(f())
-    } else throw e.status === c.FORBIDDEN ? new Error(Ny()) : new Error(f())
+    } else throw e.status === c.FORBIDDEN ? new Error(Gy()) : new Error(f())
   }
   async leaveAlliance() {
     if ((await this.request("/alliance/leave", {
@@ -5577,11 +5618,11 @@ class Mb {
         credentials: "include"
       });
     if (r.status !== c.OK) throw new h(f(), r.status);
-    const i = await r.json();
-    return (Array.isArray(i) ? i : []).map(a => ({
-      id: Number(a.id),
-      name: String(a.name ?? ""),
-      pixelsPainted: Number((a == null ? void 0 : a.pixels_painted) ?? 0)
+    const a = await r.json();
+    return (Array.isArray(a) ? a : []).map(i => ({
+      id: Number(i.id),
+      name: String(i.name ?? ""),
+      pixelsPainted: Number((i == null ? void 0 : i.pixels_painted) ?? 0)
     }))
   }
   async searchAlliances(t) {
@@ -5595,7 +5636,7 @@ class Mb {
     if (e.status === c.NOT_FOUND) return null;
     if (e.status !== c.OK) throw new h(f(), e.status);
     const r = await e.json(),
-      i = Array.isArray(r == null ? void 0 : r.members) ? r.members : [];
+      a = Array.isArray(r == null ? void 0 : r.members) ? r.members : [];
     return {
       id: Number(r == null ? void 0 : r.id),
       name: String((r == null ? void 0 : r.name) ?? ""),
@@ -5606,15 +5647,15 @@ class Mb {
       hqLatitude: (r == null ? void 0 : r.hqLatitude) ?? (r == null ? void 0 : r.hq_latitude) ?? null,
       hqLongitude: (r == null ? void 0 : r.hqLongitude) ?? (r == null ? void 0 : r.hq_longitude) ?? null,
       pixelsPainted: Number((r == null ? void 0 : r.pixelsPainted) ?? (r == null ? void 0 : r.pixels_painted) ?? 0),
-      membersCount: Number((r == null ? void 0 : r.membersCount) ?? i.length),
-      members: i.map(a => ({
-        id: Number(a == null ? void 0 : a.id),
-        name: String((a == null ? void 0 : a.name) ?? `#${a==null?void 0:a.id}`),
-        picture: (a == null ? void 0 : a.picture) ?? null,
-        pixelsPainted: Number((a == null ? void 0 : a.pixelsPainted) ?? (a == null ? void 0 : a.pixels_painted) ?? 0),
-        lastPixelLatitude: (a == null ? void 0 : a.lastPixelLatitude) ?? null,
-        lastPixelLongitude: (a == null ? void 0 : a.lastPixelLongitude) ?? null,
-        role: (a == null ? void 0 : a.alliance_role) === "admin" || (a == null ? void 0 : a.role) === "admin" ? "admin" : "member"
+      membersCount: Number((r == null ? void 0 : r.membersCount) ?? a.length),
+      members: a.map(i => ({
+        id: Number(i == null ? void 0 : i.id),
+        name: String((i == null ? void 0 : i.name) ?? `#${i==null?void 0:i.id}`),
+        picture: (i == null ? void 0 : i.picture) ?? null,
+        pixelsPainted: Number((i == null ? void 0 : i.pixelsPainted) ?? (i == null ? void 0 : i.pixels_painted) ?? 0),
+        lastPixelLatitude: (i == null ? void 0 : i.lastPixelLatitude) ?? null,
+        lastPixelLongitude: (i == null ? void 0 : i.lastPixelLongitude) ?? null,
+        role: (i == null ? void 0 : i.alliance_role) === "admin" || (i == null ? void 0 : i.role) === "admin" ? "admin" : "member"
       }))
     }
   }
@@ -5623,17 +5664,17 @@ class Mb {
         page: String(e.page),
         pageSize: String(e.pageSize)
       }),
-      i = await this.request(`/staff/dashboard/alliances/${t}/members?${r.toString()}`, {
+      a = await this.request(`/staff/dashboard/alliances/${t}/members?${r.toString()}`, {
         method: "GET",
         credentials: "include"
       });
-    if (i.status === c.NOT_FOUND) return {
+    if (a.status === c.NOT_FOUND) return {
       members: [],
       total: 0
     };
-    if (i.status !== c.OK) throw new h(f(), i.status);
-    const a = await i.json(),
-      o = Array.isArray(a == null ? void 0 : a.members) ? a.members : [];
+    if (a.status !== c.OK) throw new h(f(), a.status);
+    const i = await a.json(),
+      o = Array.isArray(i == null ? void 0 : i.members) ? i.members : [];
     return {
       members: o.map(s => ({
         id: Number(s == null ? void 0 : s.id),
@@ -5644,7 +5685,7 @@ class Mb {
         lastPixelLongitude: (s == null ? void 0 : s.lastPixelLongitude) ?? null,
         role: (s == null ? void 0 : s.alliance_role) === "admin" || (s == null ? void 0 : s.role) === "admin" ? "admin" : "member"
       })),
-      total: Number((a == null ? void 0 : a.total) ?? o.length)
+      total: Number((i == null ? void 0 : i.total) ?? o.length)
     }
   }
   async renameAlliance(t, e) {
@@ -5656,8 +5697,8 @@ class Mb {
       })
     });
     if (r.status === c.BAD_REQUEST) {
-      const i = await r.json().catch(() => ({}));
-      throw new Error((i == null ? void 0 : i.error) ?? f())
+      const a = await r.json().catch(() => ({}));
+      throw new Error((a == null ? void 0 : a.error) ?? f())
     } else if (r.status !== c.OK) throw new h(f(), r.status)
   }
   async changeAllianceLeader(t, e) {
@@ -5669,12 +5710,12 @@ class Mb {
       })
     });
     if (r.status === c.BAD_REQUEST) {
-      const i = await r.json();
-      throw (i == null ? void 0 : i.error) === "user_not_in_alliance" ? new Error(Lh()) : new Error(f())
+      const a = await r.json();
+      throw (a == null ? void 0 : a.error) === "user_not_in_alliance" ? new Error(Lh()) : new Error(f())
     } else if (r.status !== c.OK) throw new h(f(), r.status)
   }
   async banAllAllianceMembers(t, e, r) {
-    const i = await this.request(`/staff/dashboard/alliances/${t}/ban-all`, {
+    const a = await this.request(`/staff/dashboard/alliances/${t}/ban-all`, {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
@@ -5682,17 +5723,17 @@ class Mb {
         notes: r
       })
     });
-    if (i.status !== c.OK) throw new h(f(), i.status)
+    if (a.status !== c.OK) throw new h(f(), a.status)
   }
   async setAllianceMemberRole(t, e, r) {
-    const i = await this.request(`/staff/dashboard/alliances/${t}/members/${e}/role`, {
+    const a = await this.request(`/staff/dashboard/alliances/${t}/members/${e}/role`, {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
         role: r
       })
     });
-    if (i.status !== c.OK) throw new h(f(), i.status)
+    if (a.status !== c.OK) throw new h(f(), a.status)
   }
   async removeAllianceMember(t, e) {
     const r = await this.request(`/staff/dashboard/alliances/${t}/members/${e}/remove`, {
@@ -5762,8 +5803,8 @@ class Mb {
       credentials: "include"
     });
     if (e.status === c.BAD_REQUEST) {
-      const i = await e.json();
-      throw new Error(i == null ? void 0 : i.error)
+      const a = await e.json();
+      throw new Error(a == null ? void 0 : a.error)
     } else {
       if (e.status === c.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(Ao());
       if (e.status !== c.OK) throw new Error(f())
@@ -5796,7 +5837,7 @@ class Mb {
     });
     if (t.status !== c.OK) throw new h(f(), t.status);
     const e = await t.json();
-    for (const r of e.tickets) r.reports.sort((i, a) => xn[i.reason] - xn[a.reason]);
+    for (const r of e.tickets) r.reports.sort((a, i) => xn[a.reason] - xn[i.reason]);
     return e
   }
   async countMyTicketsClosedToday() {
@@ -5826,32 +5867,32 @@ class Mb {
     if (t.status !== c.OK) throw new h(f(), t.status);
     return t.json()
   }
-  async setTicketStatus(t, e, r, i) {
-    const a = await this.request("/staff/tickets/set-status", {
+  async setTicketStatus(t, e, r, a) {
+    const i = await this.request("/staff/tickets/set-status", {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
         ticketId: t,
         status: e,
         selectedReportId: r,
-        assignedReason: i
+        assignedReason: a
       })
     });
-    if (a.status !== c.OK && a.status !== c.BAD_REQUEST) throw new h(f(), a.status)
+    if (i.status !== c.OK && i.status !== c.BAD_REQUEST) throw new h(f(), i.status)
   }
   async request(t, e) {
     let r;
     try {
       r = await fetch(`${this.url}${t}`, e), this.online = !0, this.updateServerTimeEstimate(r)
-    } catch (a) {
-      throw console.error("Fetch error:", a), this.online = !1, new Error(Pc(), {
-        cause: a
+    } catch (i) {
+      throw console.error("Fetch error:", i), this.online = !1, new Error(Pc(), {
+        cause: i
       })
     }
     if ((e == null ? void 0 : e.throwOnStatus) ?? !0) {
-      if (r.status === c.TOO_MANY_REQUESTS) throw new Error(Ov());
+      if (r.status === c.TOO_MANY_REQUESTS) throw new Error(jv());
       if (r.status === c.REQUEST_TIMEOUT) throw new Error(Cg());
-      if (r.status === c.SERVICE_UNAVAILABLE) throw new Error($g())
+      if (r.status === c.SERVICE_UNAVAILABLE) throw new Error(uw())
     }
     return r
   }
@@ -5877,10 +5918,10 @@ class Mb {
       credentials: "include"
     });
     if (r.status !== c.OK) throw new h(f(), r.status);
-    const i = await r.json();
+    const a = await r.json();
     return {
-      items: i.items ?? [],
-      globals: i.globals
+      items: a.items ?? [],
+      globals: a.globals
     }
   }
   async getClosedTicketsByMod(t, e) {
@@ -5889,9 +5930,9 @@ class Mb {
       credentials: "include"
     });
     if (r.status !== c.OK) throw new h(f(), r.status);
-    return (await r.json()).items.map(a => ({
-      ...a,
-      suspensionRate: (a.ban + a.timeout) / a.total
+    return (await r.json()).items.map(i => ({
+      ...i,
+      suspensionRate: (i.ban + i.timeout) / i.total
     }))
   }
   async getClosedReportsByMod(t, e) {
@@ -5900,9 +5941,9 @@ class Mb {
       credentials: "include"
     });
     if (r.status !== c.OK) throw new h(f(), r.status);
-    return (await r.json()).items.map(a => ({
-      ...a,
-      suspensionRate: (a.ban + a.timeout) / a.total
+    return (await r.json()).items.map(i => ({
+      ...i,
+      suspensionRate: (i.ban + i.timeout) / i.total
     }))
   }
   async getMultipleUsersInfoById(t) {
@@ -5938,27 +5979,27 @@ class Mb {
   }
   async removePunishment(t, e) {
     const r = e ? "/staff/dashboard/users/remove-ban" : "/staff/dashboard/users/remove-timeout",
-      i = await this.request(r, {
+      a = await this.request(r, {
         method: "POST",
         credentials: "include",
         body: JSON.stringify({
           userId: t
         })
       });
-    if (i.status !== c.OK) throw new h(f(), i.status)
+    if (a.status !== c.OK) throw new h(f(), a.status)
   }
   async getUserNotes(t, e) {
     const r = e == "dashboard" ? `/staff/dashboard/users/notes?userId=${encodeURIComponent(t)}` : `/staff/appeals/notes?userId=${encodeURIComponent(t)}`,
-      i = await this.request(r, {
+      a = await this.request(r, {
         method: "GET",
         credentials: "include"
       });
-    if (i.status !== c.OK) throw new h(f(), i.status);
-    return i.json()
+    if (a.status !== c.OK) throw new h(f(), a.status);
+    return a.json()
   }
   async addUserNote(t, e, r) {
-    const i = r == "dashboard" ? `/staff/dashboard/users/notes?userId=${encodeURIComponent(t)}` : `/staff/appeals/notes?userId=${encodeURIComponent(t)}`,
-      a = await this.request(i, {
+    const a = r == "dashboard" ? `/staff/dashboard/users/notes?userId=${encodeURIComponent(t)}` : `/staff/appeals/notes?userId=${encodeURIComponent(t)}`,
+      i = await this.request(a, {
         method: "POST",
         credentials: "include",
         body: JSON.stringify({
@@ -5966,7 +6007,7 @@ class Mb {
           note: e
         })
       });
-    if (a.status !== c.OK) throw new h(f(), a.status)
+    if (i.status !== c.OK) throw new h(f(), i.status)
   }
   async getUserPermissions(t) {
     const e = await this.request(`/staff/dashboard/permissions/get?userId=${encodeURIComponent(t)}`, {
@@ -5986,8 +6027,8 @@ class Mb {
       })
     });
     if (r.status !== c.OK) throw new h(f(), r.status);
-    const i = await r.json();
-    return Array.isArray(i == null ? void 0 : i.permissions) ? i.permissions : []
+    const a = await r.json();
+    return Array.isArray(a == null ? void 0 : a.permissions) ? a.permissions : []
   }
   async getUserPurchases(t) {
     const e = await this.request(`/staff/dashboard/users/purchases?userId=${encodeURIComponent(t)}`, {
@@ -5996,20 +6037,20 @@ class Mb {
     });
     if (e.status !== c.OK) throw new h(f(), e.status);
     const r = await e.json();
-    return (Array.isArray(r == null ? void 0 : r.purchases) ? r.purchases : []).map(a => {
-      const o = a.is_dollar ?? a.isDollar ?? a.currency ?? a.Currency ?? 0;
+    return (Array.isArray(r == null ? void 0 : r.purchases) ? r.purchases : []).map(i => {
+      const o = i.is_dollar ?? i.isDollar ?? i.currency ?? i.Currency ?? 0;
       let s;
       if (typeof o == "string") {
         const d = o.toLowerCase();
         s = d === "usd" || d === "dollar" || d === "true"
       } else typeof o == "number" ? s = o !== 0 : s = !!o;
-      const l = typeof a.createdAt == "string" ? a.createdAt : a.CreatedAt ? new Date(a.CreatedAt).toISOString() : "",
-        u = a.product_variant ?? a.productVariant,
+      const l = typeof i.createdAt == "string" ? i.createdAt : i.CreatedAt ? new Date(i.CreatedAt).toISOString() : "",
+        u = i.product_variant ?? i.productVariant,
         _ = u == null || u === "" ? null : Number(u);
       return {
-        product_name: String(a.productName ?? a.product_name ?? ""),
-        amount: Number(a.amount ?? 0),
-        price: Number(a.price ?? 0),
+        product_name: String(i.productName ?? i.product_name ?? ""),
+        amount: Number(i.amount ?? 0),
+        price: Number(i.price ?? 0),
         is_dollar: s,
         created_at: l,
         product_variant: Number.isInteger(_) ? _ : null
@@ -6028,7 +6069,7 @@ class Mb {
     if (r.status !== c.OK) throw new h(f(), r.status)
   }
   async postAdminRenameUser(t, e, r) {
-    const i = await this.request("/staff/dashboard/users/rename", {
+    const a = await this.request("/staff/dashboard/users/rename", {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
@@ -6037,12 +6078,12 @@ class Mb {
         oldName: r
       })
     });
-    if (i.status === c.BAD_REQUEST) {
-      const a = await i.json(),
-        o = (a == null ? void 0 : a.error) ?? "";
+    if (a.status === c.BAD_REQUEST) {
+      const i = await a.json(),
+        o = (i == null ? void 0 : i.error) ?? "";
       throw o === "invalid_name" ? new h(vn(), c.BAD_REQUEST) : new h(typeof o == "string" && o ? o : f(), c.BAD_REQUEST)
     }
-    if (i.status !== c.OK) throw new h(f(), i.status)
+    if (a.status !== c.OK) throw new h(f(), a.status)
   }
   async postAdminChangeUserEmail(t, e) {
     const r = await this.request("/staff/dashboard/users/email", {
@@ -6054,17 +6095,17 @@ class Mb {
       })
     });
     if (r.status === c.BAD_REQUEST) {
-      const i = await r.json(),
-        a = (i == null ? void 0 : i.error) ?? "";
-      throw a === "email_required" || a === "invalid_email" ? new h(kl(), c.BAD_REQUEST) : new h(typeof a == "string" && a ? a : f(), c.BAD_REQUEST)
+      const a = await r.json(),
+        i = (a == null ? void 0 : a.error) ?? "";
+      throw i === "email_required" || i === "invalid_email" ? new h(kl(), c.BAD_REQUEST) : new h(typeof i == "string" && i ? i : f(), c.BAD_REQUEST)
     }
     if (r.status === c.CONFLICT) {
-      const i = await r.json();
-      if (((i == null ? void 0 : i.error) ?? "") === "email_already_in_use") {
-        const o = new h(typeof(i == null ? void 0 : i.userId) == "number" ? ml({
-          userId: i.userId
+      const a = await r.json();
+      if (((a == null ? void 0 : a.error) ?? "") === "email_already_in_use") {
+        const o = new h(typeof(a == null ? void 0 : a.userId) == "number" ? ml({
+          userId: a.userId
         }) : nl(), c.CONFLICT);
-        throw typeof(i == null ? void 0 : i.userId) == "number" && (o.userId = i.userId), o
+        throw typeof(a == null ? void 0 : a.userId) == "number" && (o.userId = a.userId), o
       }
       throw new h(f(), c.CONFLICT)
     }
@@ -6075,13 +6116,13 @@ class Mb {
     if (e === "appeals" && (t.appealId ?? 0) <= 0) throw new Error("Appeal id is required.");
     const r = new URLSearchParams;
     r.set("userId", String(t.userId)), r.set("kind", String(t.kind)), r.set("page", String(t.page ?? 0)), r.set("pageSize", String(t.pageSize ?? 20)), e === "appeals" && r.set("appealId", String(t.appealId));
-    const i = e === "appeals" ? `/staff/appeals/tickets?${r.toString()}` : `/staff/dashboard/users/tickets?${r.toString()}`,
-      a = await this.request(i, {
+    const a = e === "appeals" ? `/staff/appeals/tickets?${r.toString()}` : `/staff/dashboard/users/tickets?${r.toString()}`,
+      i = await this.request(a, {
         method: "GET",
         credentials: "include"
       });
-    if (a.status !== c.OK) throw new h(f(), a.status);
-    const o = await a.json(),
+    if (i.status !== c.OK) throw new h(f(), i.status);
+    const o = await i.json(),
       s = Array.isArray(o == null ? void 0 : o.tickets) ? o.tickets : [];
     return s.sort((l, u) => new Date(u.createdAt).getTime() - new Date(l.createdAt).getTime()), s
   }
@@ -6093,24 +6134,24 @@ class Mb {
       credentials: "include"
     });
     if (r.status !== c.OK) throw new h(f(), r.status);
-    const i = await r.json();
-    return Array.isArray(i == null ? void 0 : i.appeals) ? i.appeals : []
+    const a = await r.json();
+    return Array.isArray(a == null ? void 0 : a.appeals) ? a.appeals : []
   }
   async getModerationTranslate(t, e) {
     const r = e == "tickets" ? "/staff/tickets/translate" : "/staff/appeals/translate",
-      i = await this.request(r, {
+      a = await this.request(r, {
         method: "POST",
         credentials: "include",
         body: JSON.stringify({
           text: t
         })
       });
-    if (i.status !== c.OK) throw new h(f(), i.status);
-    const a = await i.json();
-    return a == null ? void 0 : a.translation
+    if (a.status !== c.OK) throw new h(f(), a.status);
+    const i = await a.json();
+    return i == null ? void 0 : i.translation
   }
   mapTicketsToReportRows(t, e) {
-    var i, a, o, s, l;
+    var a, i, o, s, l;
     const r = [];
     for (const u of t) {
       const _ = u.status ?? "open";
@@ -6149,8 +6190,8 @@ class Mb {
         ticketId: String(u.id),
         createdAt: u.createdAt,
         handledBy: u.status && u.status !== "open" ? {
-          id: ((i = u.handledBy) == null ? void 0 : i.id) ?? 0,
-          name: ((a = u.handledBy) == null ? void 0 : a.name) ?? "Moderator",
+          id: ((a = u.handledBy) == null ? void 0 : a.id) ?? 0,
+          name: ((i = u.handledBy) == null ? void 0 : i.name) ?? "Moderator",
           picture: ((o = u.handledBy) == null ? void 0 : o.picture) ?? null
         } : {
           id: 0,
@@ -6196,7 +6237,7 @@ class Mb {
     if (e.status !== c.OK) throw new h(f(), e.status)
   }
   async banUsers(t, e, r) {
-    const i = await this.request("/staff/dashboard/summary/users/ban", {
+    const a = await this.request("/staff/dashboard/summary/users/ban", {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
@@ -6205,10 +6246,10 @@ class Mb {
         notes: r
       })
     });
-    if (i.status !== c.OK) throw new h(f(), i.status)
+    if (a.status !== c.OK) throw new h(f(), a.status)
   }
   async timeoutUsers(t, e, r) {
-    const i = await this.request("/staff/dashboard/summary/users/timeout", {
+    const a = await this.request("/staff/dashboard/summary/users/timeout", {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
@@ -6217,10 +6258,10 @@ class Mb {
         notes: r
       })
     });
-    if (i.status !== c.OK) throw new h(f(), i.status)
+    if (a.status !== c.OK) throw new h(f(), a.status)
   }
   async incrementUsersDroplets(t, e, r) {
-    const i = await this.request("/staff/dashboard/summary/users/increment-droplet", {
+    const a = await this.request("/staff/dashboard/summary/users/increment-droplet", {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
@@ -6229,7 +6270,7 @@ class Mb {
         notes: r
       })
     });
-    if (i.status !== c.OK) throw new h(f(), i.status)
+    if (a.status !== c.OK) throw new h(f(), a.status)
   }
   async postUnbanUsers(t, e) {
     const r = await this.request("/staff/dashboard/summary/users/unban", {
@@ -6253,20 +6294,20 @@ class Mb {
     return r.json()
   }
   async postUsersSuspend(t, e, r) {
-    let i;
+    let a;
     switch (e) {
       case "dashboard":
-        i = `/staff/dashboard/users/${r}`;
+        a = `/staff/dashboard/users/${r}`;
         break;
       case "select-area":
-        i = `/staff/tools/select-area/${r}`;
+        a = `/staff/tools/select-area/${r}`;
         break;
       case "select-pixel":
       default:
-        i = `/staff/tools/select-pixel/${r}`;
+        a = `/staff/tools/select-pixel/${r}`;
         break
     }
-    if ((await this.request(i, {
+    if ((await this.request(a, {
         method: "POST",
         credentials: "include",
         body: JSON.stringify(t)
@@ -6298,21 +6339,21 @@ class Mb {
         message: t
       }),
       r = await Ot(e),
-      i = await this.request("/report/appeal", {
+      a = await this.request("/report/appeal", {
         method: "POST",
         credentials: "include",
         body: e,
         headers: r
       });
-    if (i.status === c.FORBIDDEN) {
-      const a = await i.json();
-      if ((a == null ? void 0 : a.error) === "challenge-required" && a.tier) {
-        if (await Nn(a.tier)) return this.submitBanAppeal(t);
-        throw new h(gn(), i.status)
+    if (a.status === c.FORBIDDEN) {
+      const i = await a.json();
+      if ((i == null ? void 0 : i.error) === "challenge-required" && i.tier) {
+        if (await Nn(i.tier)) return this.submitBanAppeal(t);
+        throw new h(gn(), a.status)
       }
     }
-    if (i.status !== c.OK && i.status !== c.ALREADY_REPORTED) throw new h(f(), i.status);
-    return i.status
+    if (a.status !== c.OK && a.status !== c.ALREADY_REPORTED) throw new h(f(), a.status);
+    return a.status
   }
   async getOpenAppeals() {
     const t = await this.request("/staff/appeals/get", {
@@ -6378,11 +6419,11 @@ class Mb {
   }
   async getNotificationPage(t) {
     const r = `/notification/page${t!==void 0?`?cursor=${encodeURIComponent(t)}`:""}`,
-      i = await this.request(r, {
+      a = await this.request(r, {
         credentials: "include"
       });
-    if (i.status !== c.OK) throw new h(f(), i.status);
-    return i.json()
+    if (a.status !== c.OK) throw new h(f(), a.status);
+    return a.json()
   }
   async postNotificationMarkRead(t) {
     const e = await this.request("/notification/mark-read", {
@@ -6467,9 +6508,9 @@ class Mb {
   }
   validWaybackInput(t) {
     const e = Number.isFinite(t.timestamp) && Number.isInteger(t.timestamp) && t.timestamp >= 0 && t.timestamp <= this.getEstimatedServerNowMs(),
-      r = Number.isFinite(t.season) && Number.isInteger(t.season) && t.season >= 0 && t.season < Db.length,
-      i = Number.isFinite(t.limit) && Number.isInteger(t.limit) && t.limit > 0 && t.limit <= Lb.tools.wayback.limit,
-      a = Number.isFinite(t.tileX) && Number.isFinite(t.tileY) && Number.isInteger(t.tileX) && Number.isInteger(t.tileY) && t.tileX >= 0 && t.tileY >= 0,
+      r = Number.isFinite(t.season) && Number.isInteger(t.season) && t.season >= 0 && t.season < qb.length,
+      a = Number.isFinite(t.limit) && Number.isInteger(t.limit) && t.limit > 0 && t.limit <= Kb.tools.wayback.limit,
+      i = Number.isFinite(t.tileX) && Number.isFinite(t.tileY) && Number.isInteger(t.tileX) && Number.isInteger(t.tileY) && t.tileX >= 0 && t.tileY >= 0,
       o = t.cursorTs !== void 0,
       s = t.cursorUserId !== void 0,
       l = t.cursorAllianceId !== void 0,
@@ -6477,7 +6518,7 @@ class Mb {
       _ = o || s || l || u,
       d = o && s && l && u;
     let m = !0;
-    return _ && (m = d && Number.isFinite(t.cursorTs) && Number.isInteger(t.cursorTs) && t.cursorTs >= 0 && t.cursorTs <= t.timestamp && Number.isFinite(t.cursorUserId) && Number.isInteger(t.cursorUserId) && t.cursorUserId >= 0 && Number.isFinite(t.cursorAllianceId) && Number.isInteger(t.cursorAllianceId) && t.cursorAllianceId >= 0 && Number.isFinite(t.cursorPixelsCount) && Number.isInteger(t.cursorPixelsCount) && t.cursorPixelsCount >= 0), !(!r || !i || !a || !e || !m)
+    return _ && (m = d && Number.isFinite(t.cursorTs) && Number.isInteger(t.cursorTs) && t.cursorTs >= 0 && t.cursorTs <= t.timestamp && Number.isFinite(t.cursorUserId) && Number.isInteger(t.cursorUserId) && t.cursorUserId >= 0 && Number.isFinite(t.cursorAllianceId) && Number.isInteger(t.cursorAllianceId) && t.cursorAllianceId >= 0 && Number.isFinite(t.cursorPixelsCount) && Number.isInteger(t.cursorPixelsCount) && t.cursorPixelsCount >= 0), !(!r || !a || !i || !e || !m)
   }
   getSafeWaybackInput(t) {
     return t.season = Math.trunc(t.season), t.limit = Math.trunc(t.limit), t.timestamp = Math.trunc(t.timestamp), t.tileX = Math.trunc(t.tileX), t.tileY = Math.trunc(t.tileY), t.cursorTs !== void 0 && (t.cursorTs = Math.trunc(t.cursorTs)), t.cursorUserId !== void 0 && (t.cursorUserId = Math.trunc(t.cursorUserId)), t.cursorAllianceId !== void 0 && (t.cursorAllianceId = Math.trunc(t.cursorAllianceId)), t.cursorPixelsCount !== void 0 && (t.cursorPixelsCount = Math.trunc(t.cursorPixelsCount)), t
@@ -6488,14 +6529,14 @@ class Mb {
     const e = new URLSearchParams;
     t.cursorTs !== void 0 && e.set("cursorTs", String(t.cursorTs)), t.cursorUserId !== void 0 && e.set("cursorUserId", String(t.cursorUserId)), t.cursorAllianceId !== void 0 && e.set("cursorAllianceId", String(t.cursorAllianceId)), t.cursorPixelsCount !== void 0 && e.set("cursorPixelsCount", String(t.cursorPixelsCount));
     const r = `/staff/tools/wayback/s${t.season}/l${t.limit}/x${t.tileX}/y${t.tileY}/t${t.timestamp}`,
-      i = e.toString(),
-      a = await this.request(i.length > 0 ? `${r}?${i}` : r, {
+      a = e.toString(),
+      i = await this.request(a.length > 0 ? `${r}?${a}` : r, {
         method: "GET",
         credentials: "include"
       });
-    if (a.status === c.FORBIDDEN) throw new Error("Access denied");
-    if (a.status !== c.OK) throw new Error("Failed to fetch wayback events");
-    return a.json()
+    if (i.status === c.FORBIDDEN) throw new Error("Access denied");
+    if (i.status !== c.OK) throw new Error("Failed to fetch wayback events");
+    return i.json()
   }
   async getStoreFrames() {
     const t = await this.request("/store/frames", {
@@ -6621,7 +6662,7 @@ class Mb {
 }
 We = new WeakMap, qe = new WeakMap;
 
-function Pb(n) {
+function Yb(n) {
   var m, g;
   if (!n.length) throw new Error("Auto painter request does not contain any pixels.");
   const t = n[0].season;
@@ -6630,21 +6671,21 @@ function Pb(n) {
   const e = (m = xt.seasons) == null ? void 0 : m[t];
   if (!e) throw new Error("Invalid season selected for auto painter request.");
   const r = e.tileSize;
-  let i = Number.POSITIVE_INFINITY,
-    a = Number.POSITIVE_INFINITY,
+  let a = Number.POSITIVE_INFINITY,
+    i = Number.POSITIVE_INFINITY,
     o = Number.NEGATIVE_INFINITY,
     s = Number.NEGATIVE_INFINITY;
   const l = n.map(E => {
       const w = Math.round(E.tile[0] * r + E.pixel[0]),
         T = Math.round(E.tile[1] * r + E.pixel[1]);
-      return w < i && (i = w), T < a && (a = T), w > o && (o = w), T > s && (s = T), {
+      return w < a && (a = w), T < i && (i = T), w > o && (o = w), T > s && (s = T), {
         x: w,
         y: T,
         colorIdx: E.colorIdx
       }
     }),
-    u = o - i + 1,
-    _ = s - a + 1;
+    u = o - a + 1,
+    _ = s - i + 1;
   if (!Number.isFinite(u) || !Number.isFinite(_) || u <= 0 || _ <= 0) throw new Error("Failed to compute image bounds for auto painter payload.");
   const d = new Uint8ClampedArray(u * _ * 4);
   for (const {
@@ -6655,8 +6696,8 @@ function Pb(n) {
     of l) {
     const O = (g = xt.colors) == null ? void 0 : g[T];
     if (!O) throw new Error(`Unknown palette color index: ${T}`);
-    const N = E - i,
-      j = ((w - a) * u + N) * 4,
+    const N = E - a,
+      j = ((w - i) * u + N) * 4,
       [H, y, S] = O.rgb;
     d[j] = H, d[j + 1] = y, d[j + 2] = S, d[j + 3] = T === 0 ? 1 : 255
   }
@@ -6664,30 +6705,30 @@ function Pb(n) {
     data: d,
     width: u,
     height: _,
-    offsetX: i,
-    offsetY: a,
+    offsetX: a,
+    offsetY: i,
     season: t
   }
 }
-async function Ub(n) {
-  const t = Cb(n.width, n.height),
+async function Zb(n) {
+  const t = $b(n.width, n.height),
     e = t.getContext("2d");
   if (!e) throw new Error("Canvas API is not available to encode auto painter bitmap.");
   const r = e.createImageData(n.width, n.height);
   return r.data.set(n.data), e.putImageData(r, 0, 0), "convertToBlob" in t ? t.convertToBlob({
     type: "image/png"
-  }) : new Promise((i, a) => {
+  }) : new Promise((a, i) => {
     t.toBlob(o => {
       if (!o) {
-        a(new Error("Failed to encode auto painter bitmap."));
+        i(new Error("Failed to encode auto painter bitmap."));
         return
       }
-      i(o)
+      a(o)
     }, "image/png")
   })
 }
 
-function Cb(n, t) {
+function $b(n, t) {
   if (typeof OffscreenCanvas < "u") return new OffscreenCanvas(n, t);
   if (typeof document < "u") {
     const e = document.createElement("canvas");
@@ -6695,17 +6736,17 @@ function Cb(n, t) {
   }
   throw new Error("Canvas API is not available in the current environment.")
 }
-let be = new Mb(Ct);
+let be = new Hb(Ct);
 async function Ot(n) {
   const t = await ht(),
-    e = _b();
+    e = Ob();
   return {
-    "x-pawtect-token": await Zb(n, e),
+    "x-pawtect-token": await c0(n, e),
     "x-t": e,
     "x-fp": t
   }
 }
-const y0 = n => new URL(n, Ct).toString();
+const D0 = n => new URL(n, Ct).toString();
 
 function _r(n, t) {
   if (!(n != null && n.length)) return !1;
@@ -6714,7 +6755,7 @@ function _r(n, t) {
   return !1
 }
 
-function jb(n, t) {
+function Jb(n, t) {
   for (const e of t)
     if (_r(n, e)) return !0;
   return !1
@@ -6727,96 +6768,96 @@ function fr(n) {
   return e
 }
 
-function Fb(n) {
+function Xb(n) {
   if (typeof Buffer < "u") return Buffer.from(n).toString("base64");
   let t = "";
   for (let e = 0; e < n.length; e++) t += String.fromCharCode(n[e]);
   return btoa(t)
 }
-class Bb {
+class Qb {
   constructor(t) {
     F(this, "bytes");
     this.bytes = t ?? new Uint8Array
   }
   set(t, e) {
     const r = Math.floor(t / 8),
-      i = t % 8;
+      a = t % 8;
     if (r >= this.bytes.length) {
       const o = new Uint8Array(r + 1),
         s = o.length - this.bytes.length;
       for (let l = 0; l < this.bytes.length; l++) o[l + s] = this.bytes[l];
       this.bytes = o
     }
-    const a = this.bytes.length - 1 - r;
-    e ? this.bytes[a] = this.bytes[a] | 1 << i : this.bytes[a] = this.bytes[a] & ~(1 << i)
+    const i = this.bytes.length - 1 - r;
+    e ? this.bytes[i] = this.bytes[i] | 1 << a : this.bytes[i] = this.bytes[i] & ~(1 << a)
   }
   get(t) {
     const e = Math.floor(t / 8),
       r = t % 8,
-      i = this.bytes.length;
-    return e > i ? !1 : (this.bytes[i - 1 - e] & 1 << r) !== 0
+      a = this.bytes.length;
+    return e > a ? !1 : (this.bytes[a - 1 - e] & 1 << r) !== 0
   }
 }
 
-function v0(n) {
+function L0(n) {
   return new Promise((t, e) => {
     const r = new FileReader;
     r.onload = () => {
-      const i = r.result;
-      if (!i || typeof i != "string") {
+      const a = r.result;
+      if (!a || typeof a != "string") {
         e(new Error("Could not read blob as data URL"));
         return
       }
-      t(i.substring(i.indexOf(",") + 1))
+      t(a.substring(a.indexOf(",") + 1))
     }, r.readAsDataURL(n)
   })
 }
 
-function b0(n) {
+function M0(n) {
   if (typeof FileReader > "u") {
     const t = n.type || "application/octet-stream";
-    return n.arrayBuffer().then(e => `data:${t};base64,${Fb(new Uint8Array(e))}`)
+    return n.arrayBuffer().then(e => `data:${t};base64,${Xb(new Uint8Array(e))}`)
   }
   return new Promise((t, e) => {
     const r = new FileReader;
     r.onloadend = () => {
-      const i = r.result;
-      if (typeof i != "string") {
+      const a = r.result;
+      if (typeof a != "string") {
         e(new Error("Could not read blob as data URL"));
         return
       }
-      t(i)
+      t(a)
     }, r.onerror = e, r.readAsDataURL(n)
   })
 }
 
-function E0(n) {
+function P0(n) {
   if (!n.startsWith("data:")) throw new Error("Could not parse data URL");
   const t = n.indexOf(",");
   if (t === -1) throw new Error("Could not parse data URL");
   const e = n.slice(5, t),
     r = n.slice(t + 1),
-    i = e.indexOf(";base64"),
-    a = (i === -1 ? e : e.slice(0, i)) || "text/plain";
-  if (i !== -1) {
+    a = e.indexOf(";base64"),
+    i = (a === -1 ? e : e.slice(0, a)) || "text/plain";
+  if (a !== -1) {
     const o = fr(r),
       s = new Uint8Array(o.byteLength);
     return s.set(o), new Blob([s], {
-      type: a
+      type: i
     })
   }
   return new Blob([decodeURIComponent(r)], {
-    type: a
+    type: i
   })
 }
 
-function T0(...n) {
+function U0(...n) {
   return n.filter(Boolean).join(" ")
 }
-const zb = typeof document < "u";
+const e0 = typeof document < "u";
 let Un = 0;
 var Ke, He, Ye;
-class Vb {
+class t0 {
   constructor() {
     D(this, Ke, B(dt([])));
     D(this, He, B(dt([])));
@@ -6825,21 +6866,21 @@ class Vb {
       return e === -1 ? null : e
     });
     F(this, "addToast", t => {
-      zb && this.toasts.unshift(t)
+      e0 && this.toasts.unshift(t)
     });
     F(this, "updateToast", ({
       id: t,
       data: e,
       type: r,
-      message: i
+      message: a
     }) => {
-      const a = this.toasts.findIndex(s => s.id === t),
-        o = this.toasts[a];
-      this.toasts[a] = {
+      const i = this.toasts.findIndex(s => s.id === t),
+        o = this.toasts[i];
+      this.toasts[i] = {
         ...o,
         ...e,
         id: t,
-        title: i,
+        title: a,
         type: r,
         updated: !0
       }
@@ -6849,22 +6890,22 @@ class Vb {
       const {
         message: e,
         ...r
-      } = t, i = typeof(t == null ? void 0 : t.id) == "number" || t.id && ((s = t.id) == null ? void 0 : s.length) > 0 ? t.id : Un++, a = t.dismissable === void 0 ? !0 : t.dismissable, o = t.type === void 0 ? "default" : t.type;
+      } = t, a = typeof(t == null ? void 0 : t.id) == "number" || t.id && ((s = t.id) == null ? void 0 : s.length) > 0 ? t.id : Un++, i = t.dismissable === void 0 ? !0 : t.dismissable, o = t.type === void 0 ? "default" : t.type;
       return Yt(() => {
-        this.toasts.find(u => u.id === i) ? this.updateToast({
-          id: i,
+        this.toasts.find(u => u.id === a) ? this.updateToast({
+          id: a,
           data: t,
           type: o,
           message: e,
-          dismissable: a
+          dismissable: i
         }) : this.addToast({
           ...r,
-          id: i,
+          id: a,
           title: e,
-          dismissable: a,
+          dismissable: i,
           type: o
         })
-      }), i
+      }), a
     });
     F(this, "dismiss", t => (Yt(() => {
       if (t === void 0) {
@@ -6927,19 +6968,19 @@ class Vb {
         type: "loading",
         message: typeof e.loading == "string" ? e.loading : e.loading()
       }));
-      const i = t instanceof Promise ? t : t();
-      let a = r !== void 0;
-      return i.then(o => {
+      const a = t instanceof Promise ? t : t();
+      let i = r !== void 0;
+      return a.then(o => {
         if (typeof o == "object" && o && "ok" in o && typeof o.ok == "boolean" && !o.ok) {
-          a = !1;
-          const s = Gb(o);
+          i = !1;
+          const s = n0(o);
           this.create({
             id: r,
             type: "error",
             message: s
           })
         } else if (e.success !== void 0) {
-          a = !1;
+          i = !1;
           const s = typeof e.success == "function" ? e.success(o) : e.success;
           this.create({
             id: r,
@@ -6949,7 +6990,7 @@ class Vb {
         }
       }).catch(o => {
         if (e.error !== void 0) {
-          a = !1;
+          i = !1;
           const s = typeof e.error == "function" ? e.error(o) : e.error;
           this.create({
             id: r,
@@ -6959,7 +7000,7 @@ class Vb {
         }
       }).finally(() => {
         var o;
-        a && (this.dismiss(r), r = void 0), (o = e.finally) == null || o.call(e)
+        i && (this.dismiss(r), r = void 0), (o = e.finally) == null || o.call(e)
       }), r
     });
     F(this, "custom", (t, e) => {
@@ -7000,19 +7041,19 @@ class Vb {
 }
 Ke = new WeakMap, He = new WeakMap, Ye = new WeakMap;
 
-function Gb(n) {
+function n0(n) {
   return n && typeof n == "object" && "status" in n ? `HTTP error! Status: ${n.status}` : `Error! ${n}`
 }
-const Z = new Vb;
+const Z = new t0;
 
-function Wb(n, t) {
+function r0(n, t) {
   return Z.create({
     message: n,
     ...t
   })
 }
 var gt;
-class S0 {
+class C0 {
   constructor() {
     D(this, gt, Te(() => Z.toasts.filter(t => !t.dismiss)))
   }
@@ -7021,8 +7062,8 @@ class S0 {
   }
 }
 gt = new WeakMap;
-const qb = Wb,
-  Kb = Object.assign(qb, {
+const a0 = r0,
+  i0 = Object.assign(a0, {
     success: Z.success,
     info: Z.info,
     warning: Z.warning,
@@ -7035,7 +7076,7 @@ const qb = Wb,
     getActiveToasts: () => Z.toasts.filter(n => !n.dismiss)
   });
 var Ze, $e, Je, Xe, Qe, et, tt, nt;
-class Hb {
+class o0 {
   constructor() {
     F(this, "channel", new BroadcastChannel("user-channel"));
     D(this, Ze, B());
@@ -7052,7 +7093,7 @@ class Hb {
     D(this, et, Te(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
     D(this, tt, Te(() => {
       var t;
-      return new Bb(fr(((t = this.data) == null ? void 0 : t.flagsBitmap) ?? "AA=="))
+      return new Qb(fr(((t = this.data) == null ? void 0 : t.flagsBitmap) ?? "AA=="))
     }));
     D(this, nt, Te(() => {
       var e;
@@ -7123,9 +7164,9 @@ class Hb {
         this.notificationCount = r
       }), (e = this.data) != null && e.id && ($r("userId", {
         id: this.data.id
-      }), Yb(this.data.id)), !!this.data
+      }), s0(this.data.id)), !!this.data
     } catch (r) {
-      return console.error(r), Kb.warning(np(), {
+      return console.error(r), i0.warning(np(), {
         duration: 1e4
       }), !1
     } finally {
@@ -7148,22 +7189,22 @@ class Hb {
   }
   hasAnyPermission(t) {
     var e;
-    return jb((e = this.data) == null ? void 0 : e.permissions, t)
+    return Jb((e = this.data) == null ? void 0 : e.permissions, t)
   }
 }
 Ze = new WeakMap, $e = new WeakMap, Je = new WeakMap, Xe = new WeakMap, Qe = new WeakMap, et = new WeakMap, tt = new WeakMap, nt = new WeakMap;
-const De = new Hb;
+const De = new o0;
 let hr, Ie;
 async function mr() {
   return Ie || (Ie = (async () => {
     var n;
     try {
-      await ar(ti), (n = De.data) != null && n.id && Gt(De.data.id), Yv();
+      await ir(ta), (n = De.data) != null && n.id && Gt(De.data.id), sb();
       const t = fetch;
       return Object.assign(window, {
         fetch: pr((e, r) => {
-          let i = null;
-          return e instanceof Request ? i = e.url : i = e, i.startsWith("/") || Kv(i), t.call(window, e, r)
+          let a = null;
+          return e instanceof Request ? a = e.url : a = e, a.startsWith("/") || ib(a), t.call(window, e, r)
         })
       }), !0
     } catch (t) {
@@ -7171,38 +7212,38 @@ async function mr() {
     }
   })()), Ie
 }
-async function Yb(n) {
+async function s0(n) {
   await mr(), Gt(n)
 }
 
-function O0() {
+function j0() {
   return Ie ?? Promise.resolve(!1)
 }
 
-function I0() {
+function F0() {
   return hr
 }
-async function Zb(n, t) {
-  if (!await mr()) throw new Error(ay());
+async function c0(n, t) {
+  if (!await mr()) throw new Error(wy());
   const r = navigator.webdriver,
-    i = await ht();
-  Gt(De.data.id), zv(i), Wv(r), Hv(jt.automatedClicks);
-  const a = Uint8Array.from(atob(t), o => o.charCodeAt(0));
-  return Gv(a), qv(n)
+    a = await ht();
+  Gt(De.data.id), eb(a), rb(r), ob(jt.automatedClicks);
+  const i = Uint8Array.from(atob(t), o => o.charCodeAt(0));
+  return nb(i), ab(n)
 }
 
 function pr(n) {
   return n.bind().bind()
 }
 
-function A0(n, t, e) {
+function B0(n, t, e) {
   const r = {
-    [n.name](...i) {
-      return e(...i), t(...i)
+    [n.name](...a) {
+      return e(...a), t(...a)
     }
   } [n.name];
   return pr(r)
 }
 export {
-  y0 as $, ei as A, Gu as B, dr as C, js as D, Nm as E, Fd as F, Z as G, T0 as H, S0 as I, o0 as J, z as K, i0 as L, r0 as M, a0 as N, e0 as O, Ct as P, f0 as Q, mr as R, p0 as S, A0 as T, b0 as U, E0 as V, g0 as W, O0 as X, ay as Y, I0 as Z, bw as _, be as a, d0 as a0, c0 as a1, _0 as a2, l0 as a3, w0 as a4, h0 as a5, Qb as a6, Ao as a7, Bo as a8, Qo as a9, Qp as aA, _g as aB, En as aC, Cg as aD, $g as aE, Tn as aF, Kw as aG, Sn as aH, Ny as aI, ue as aJ, On as aK, In as aL, Ov as aM, An as aN, _s as aa, Js as ab, lc as ac, pn as ad, Pc as ae, wn as af, yn as ag, nl as ah, ml as ai, zl as aj, ed as ak, fd as al, lf as am, Tf as an, Uf as ao, vn as ap, sh as aq, vh as ar, Lh as as, ce as at, im as au, Gm as av, np as aw, mp as ax, kp as ay, bn as az, s0 as b, Os as c, Nu as d, f as e, xt as f, Id as g, Xd as h, S_ as i, jt as j, m0 as k, n0 as l, gm as m, kl as n, ht as o, $_ as p, t0 as q, Ot as r, u0 as s, Kb as t, De as u, Nn as v, gn as w, v0 as x, C_ as y, d_ as z
+  D0 as $, ea as A, Gu as B, dr as C, js as D, Nm as E, Fd as F, Z as G, U0 as H, C0 as I, y0 as J, z as K, g0 as L, p0 as M, w0 as N, f0 as O, Ct as P, I0 as Q, mr as R, R0 as S, B0 as T, M0 as U, P0 as V, N0 as W, j0 as X, wy as Y, F0 as Z, Mw as _, be as a, S0 as a0, b0 as a1, O0 as a2, T0 as a3, x0 as a4, A0 as a5, _0 as a6, Ao as a7, Bo as a8, Qo as a9, Qp as aA, _g as aB, En as aC, Cg as aD, $g as aE, uw as aF, Tn as aG, iy as aH, Sn as aI, Gy as aJ, ue as aK, On as aL, In as aM, jv as aN, An as aO, _s as aa, Js as ab, lc as ac, pn as ad, Pc as ae, wn as af, yn as ag, nl as ah, ml as ai, zl as aj, ed as ak, fd as al, lf as am, Tf as an, Uf as ao, vn as ap, sh as aq, vh as ar, Lh as as, ce as at, am as au, Gm as av, np as aw, mp as ax, kp as ay, bn as az, v0 as b, Os as c, Nu as d, f as e, xt as f, Id as g, Xd as h, S_ as i, jt as j, k0 as k, m0 as l, gm as m, kl as n, ht as o, $_ as p, h0 as q, Ot as r, E0 as s, i0 as t, De as u, Nn as v, gn as w, L0 as x, C_ as y, d_ as z
 };
