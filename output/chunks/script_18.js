@@ -11,7 +11,7 @@ var _ = (q, V, t) => V in q ? H(q, V, {
 var W = (q, V, t) => _(q, typeof V != "symbol" ? V + "" : V, t),
   z = (q, V, t) => V.has(q) || U("Cannot " + t);
 var f = (q, V, t) => (z(q, V, "read from private field"), t ? t.call(q) : V.get(q)),
-  g = (q, V, t) => V.has(q) ? U("Cannot add the same private member more than once") : V instanceof WeakSet ? V.add(q) : V.set(q, t),
+  p = (q, V, t) => V.has(q) ? U("Cannot add the same private member more than once") : V instanceof WeakSet ? V.add(q) : V.set(q, t),
   y = (q, V, t, e) => (z(q, V, "write to private field"), e ? e.call(q, t) : V.set(q, t), t);
 import {
   T as $,
@@ -118,17 +118,17 @@ const gq = {
       lng: 151.2083447239608
     }
   },
-  j = "location";
+  R = "location";
 
 function mq(q, V) {
-  localStorage.setItem(j, JSON.stringify({
+  localStorage.setItem(R, JSON.stringify({
     ...q,
     zoom: V
   }))
 }
 
 function wq() {
-  const q = localStorage.getItem(j);
+  const q = localStorage.getItem(R);
   if (!q) return;
   const V = JSON.parse(q);
   return V.zoom ?? (V.zoom = k), V
@@ -140,8 +140,8 @@ function lV(q) {
 var v, B;
 class Eq {
   constructor() {
-    g(this, v, Y(-1));
-    g(this, B, Y([]))
+    p(this, v, Y(-1));
+    p(this, B, Y([]))
   }
   get idx() {
     return I(f(this, v))
@@ -268,15 +268,15 @@ function T(q) {
     try {
       const A = navigator.serviceWorker;
       A || n(new Error("Service Workers are not supported/enabled in your browser. Some features might not work properly."));
-      const o = c => {
-        var i;
-        ((i = c.data) == null ? void 0 : i.id) === V && (e(void 0), A.removeEventListener("message", o))
+      const o = a => {
+        var c;
+        ((c = a.data) == null ? void 0 : c.id) === V && (e(void 0), A.removeEventListener("message", o))
       };
       A.addEventListener("message", o);
-      const a = navigator.serviceWorker.controller;
-      a ? a.postMessage(t) : navigator.serviceWorker.ready.then(c => {
-        const i = c.active;
-        i ? i == null || i.postMessage(t) : n(new Error("Service worker registration not active"))
+      const i = navigator.serviceWorker.controller;
+      i ? i.postMessage(t) : navigator.serviceWorker.ready.then(a => {
+        const c = a.active;
+        c ? c == null || c.postMessage(t) : n(new Error("Service worker registration not active"))
       })
     } catch (A) {
       n(A)
@@ -362,7 +362,7 @@ var J = /\/\*[^*]*\*+([^/*][^*]*\*+)*\//g,
 `,
   Q = "/",
   F = "*",
-  m = "",
+  g = "",
   Gq = "comment",
   kq = "declaration";
 
@@ -386,7 +386,7 @@ function Cq(q, V) {
       column: e
     };
     return function(r) {
-      return r.position = new o(s), i(), r
+      return r.position = new o(s), c(), r
     }
   }
 
@@ -398,12 +398,12 @@ function Cq(q, V) {
   }
   o.prototype.content = q;
 
-  function a(s) {
+  function i(s) {
     var r = new Error(V.source + ":" + t + ":" + e + ": " + s);
     if (r.reason = s, r.filename = V.source, r.line = t, r.column = e, r.source = q, !V.silent) throw r
   }
 
-  function c(s) {
+  function a(s) {
     var r = s.exec(q);
     if (r) {
       var l = r[0];
@@ -411,21 +411,21 @@ function Cq(q, V) {
     }
   }
 
-  function i() {
-    c(Tq)
+  function c() {
+    a(Tq)
   }
 
   function u(s) {
     var r;
-    for (s = s || []; r = d();) r !== !1 && s.push(r);
+    for (s = s || []; r = m();) r !== !1 && s.push(r);
     return s
   }
 
-  function d() {
+  function m() {
     var s = A();
     if (!(Q != q.charAt(0) || F != q.charAt(1))) {
-      for (var r = 2; m != q.charAt(r) && (F != q.charAt(r) || Q != q.charAt(r + 1));) ++r;
-      if (r += 2, m === q.charAt(r - 1)) return a("End of comment missing");
+      for (var r = 2; g != q.charAt(r) && (F != q.charAt(r) || Q != q.charAt(r + 1));) ++r;
+      if (r += 2, g === q.charAt(r - 1)) return i("End of comment missing");
       var l = q.slice(2, r - 2);
       return e += 2, n(l), q = q.slice(r), e += 2, s({
         type: Gq,
@@ -436,30 +436,30 @@ function Cq(q, V) {
 
   function h() {
     var s = A(),
-      r = c(Dq);
+      r = a(Dq);
     if (r) {
-      if (d(), !c(Iq)) return a("property missing ':'");
-      var l = c(xq),
+      if (m(), !a(Iq)) return i("property missing ':'");
+      var l = a(xq),
         O = s({
           type: kq,
-          property: R(r[0].replace(J, m)),
-          value: l ? R(l[0].replace(J, m)) : m
+          property: j(r[0].replace(J, g)),
+          value: l ? j(l[0].replace(J, g)) : g
         });
-      return c(Sq), O
+      return a(Sq), O
     }
   }
 
-  function p() {
+  function d() {
     var s = [];
     u(s);
     for (var r; r = h();) r !== !1 && (s.push(r), u(s));
     return s
   }
-  return i(), p()
+  return c(), d()
 }
 
-function R(q) {
-  return q ? q.replace(Yq, m) : m
+function j(q) {
+  return q ? q.replace(Yq, g) : g
 }
 
 function Pq(q, V) {
@@ -471,9 +471,9 @@ function Pq(q, V) {
     if (A.type !== "declaration") return;
     const {
       property: o,
-      value: a
+      value: i
     } = A;
-    n ? V(o, a, A) : a && (t = t || {}, t[o] = a)
+    n ? V(o, i, A) : i && (t = t || {}, t[o] = i)
   }), t
 }
 const Uq = /\d/,
@@ -493,19 +493,19 @@ function Nq(q) {
       V.push(t), t = "", e = void 0;
       continue
     }
-    const a = zq(A);
+    const i = zq(A);
     if (n === !1) {
-      if (e === !1 && a === !0) {
-        V.push(t), t = A, e = a;
+      if (e === !1 && i === !0) {
+        V.push(t), t = A, e = i;
         continue
       }
-      if (e === !0 && a === !1 && t.length > 1) {
-        const c = t.at(-1);
-        V.push(t.slice(0, Math.max(0, t.length - 1))), t = c + A, e = a;
+      if (e === !0 && i === !1 && t.length > 1) {
+        const a = t.at(-1);
+        V.push(t.slice(0, Math.max(0, t.length - 1))), t = a + A, e = i;
         continue
       }
     }
-    t += A, e = a, n = o
+    t += A, e = i, n = o
   }
   return V.push(t), V
 }
@@ -544,20 +544,20 @@ function D(q) {
   return Pq(q, t), V
 }
 
-function Rq(...q) {
+function jq(...q) {
   return (...V) => {
     for (const t of q) typeof t == "function" && t(...V)
   }
 }
 
-function jq(q, V) {
+function Rq(q, V) {
   const t = RegExp(q, "g");
   return e => {
     if (typeof e != "string") throw new TypeError(`expected an argument of type string, but got ${typeof e}`);
     return e.match(t) ? e.replace(t, V) : e
   }
 }
-const Zq = jq(/[A-Z]/, q => `-${q.toLowerCase()}`);
+const Zq = Rq(/[A-Z]/, q => `-${q.toLowerCase()}`);
 
 function Kq(q) {
   if (!q || typeof q != "object" || Array.isArray(q)) throw new TypeError(`expected an argument of type object, but got ${typeof q}`);
@@ -586,46 +586,46 @@ function BV(...q) {
       for (const n of Object.keys(e)) {
         const A = V[n],
           o = e[n],
-          a = typeof A == "function",
-          c = typeof o == "function";
-        if (a && _q(n)) {
-          const i = A,
+          i = typeof A == "function",
+          a = typeof o == "function";
+        if (i && _q(n)) {
+          const c = A,
             u = o;
-          V[n] = bq(i, u)
-        } else if (a && c) V[n] = Rq(A, o);
+          V[n] = bq(c, u)
+        } else if (i && a) V[n] = jq(A, o);
         else if (n === "class") {
-          const i = C(A),
+          const c = C(A),
             u = C(o);
-          i && u ? V[n] = S(A, o) : i ? V[n] = S(A) : u && (V[n] = S(o))
+          c && u ? V[n] = S(A, o) : c ? V[n] = S(A) : u && (V[n] = S(o))
         } else if (n === "style") {
-          const i = typeof A == "object",
+          const c = typeof A == "object",
             u = typeof o == "object",
-            d = typeof A == "string",
+            m = typeof A == "string",
             h = typeof o == "string";
-          if (i && u) V[n] = {
+          if (c && u) V[n] = {
             ...A,
             ...o
           };
-          else if (i && h) {
-            const p = D(o);
+          else if (c && h) {
+            const d = D(o);
             V[n] = {
               ...A,
-              ...p
+              ...d
             }
-          } else if (d && u) {
-            const p = D(A);
+          } else if (m && u) {
+            const d = D(A);
             V[n] = {
-              ...p,
+              ...d,
               ...o
             }
-          } else if (d && h) {
-            const p = D(A),
+          } else if (m && h) {
+            const d = D(A),
               s = D(o);
             V[n] = {
-              ...p,
+              ...d,
               ...s
             }
-          } else i ? V[n] = A : u ? V[n] = o : d ? V[n] = A : h && (V[n] = o)
+          } else c ? V[n] = A : u ? V[n] = o : m ? V[n] = A : h && (V[n] = o)
         } else V[n] = o !== void 0 ? o : A
       }
       for (const n of Object.getOwnPropertySymbols(e)) {
@@ -652,8 +652,8 @@ function qV(q) {
 var w, b;
 class VV {
   constructor(V = {}) {
-    g(this, w);
-    g(this, b);
+    p(this, w);
+    p(this, b);
     const {
       window: t = $q,
       document: e = t == null ? void 0 : t.document
@@ -692,13 +692,13 @@ function X(q, V, t, e = {}) {
   let A = !n,
     o = Array.isArray(q) ? [] : void 0;
   tV(V, () => {
-    const a = Array.isArray(q) ? q.map(i => i()) : q();
+    const i = Array.isArray(q) ? q.map(c => c()) : q();
     if (!A) {
-      A = !0, o = a;
+      A = !0, o = i;
       return
     }
-    const c = G(() => t(a, o));
-    return o = a, c
+    const a = G(() => t(i, o));
+    return o = i, a
   })
 }
 
@@ -735,8 +735,8 @@ function DV(q) {
 var E, M;
 class AV {
   constructor(V) {
-    g(this, E);
-    g(this, M);
+    p(this, E);
+    p(this, M);
     W(this, "attrs");
     y(this, E, V.getVariant ? V.getVariant() : null), y(this, M, f(this, E) ? `data-${f(this,E)}-` : `data-${V.component}-`), this.getAttr = this.getAttr.bind(this), this.selector = this.selector.bind(this), this.attrs = Object.fromEntries(V.parts.map(t => [t, this.getAttr(t)]))
   }
@@ -775,38 +775,35 @@ function LV(q, {
   let e = t ? -1 / 0 : Date.now();
   const n = () => typeof document > "u" || document.visibilityState === "visible";
   async function A() {
-    n() && await o()
-  }
-  async function o() {
-    const u = e;
+    const c = e;
     try {
       e = Date.now(), await q()
-    } catch (d) {
-      console.error(d), e = u
+    } catch (u) {
+      console.error(u), e = c
     }
   }
-  const a = setInterval(() => {
-    A()
+  const o = setInterval(() => {
+    n() && A()
   }, V);
-  t && o();
-  async function c() {
+  t && A();
+  async function i() {
     Date.now() - e >= V && await A()
   }
-  const i = new AbortController;
-  return typeof document < "u" && (document.addEventListener("visibilitychange", () => c(), {
-    signal: i.signal
-  }), document.addEventListener("resume", () => c(), {
-    signal: i.signal
-  })), typeof window < "u" && (window.addEventListener("pageshow", () => c(), {
-    signal: i.signal
-  }), window.addEventListener("focus", () => c(), {
-    signal: i.signal
-  }), window.addEventListener("online", () => c(), {
-    signal: i.signal
-  }), window.addEventListener("wplace:online", () => c(), {
-    signal: i.signal
+  const a = new AbortController;
+  return typeof document < "u" && (document.addEventListener("visibilitychange", () => i(), {
+    signal: a.signal
+  }), document.addEventListener("resume", () => i(), {
+    signal: a.signal
+  })), typeof window < "u" && (window.addEventListener("pageshow", () => i(), {
+    signal: a.signal
+  }), window.addEventListener("focus", () => i(), {
+    signal: a.signal
+  }), window.addEventListener("online", () => i(), {
+    signal: a.signal
+  }), window.addEventListener("wplace:online", () => i(), {
+    signal: a.signal
   })), () => {
-    clearInterval(a), i.abort()
+    clearInterval(o), a.abort()
   }
 }
 export {
