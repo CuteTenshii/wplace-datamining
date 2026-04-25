@@ -1,10 +1,10 @@
 import "./Bzak7iHL.js";
 import {
   o as bt
-} from "./DHNZVpiV.js";
+} from "./CaNDuWcU.js";
 import {
   a as u,
-  z as yt,
+  y as yt,
   k as kt,
   p as At,
   h,
@@ -17,62 +17,62 @@ import {
   e as y,
   f as J,
   i as t,
-  m as G,
+  m as K,
   c as A,
   u as Q,
   l as Ct
-} from "./C21-Odj5.js";
+} from "./C_-299ry.js";
 import {
   s as c
-} from "./CQn0K5Yj.js";
+} from "./BAuwir40.js";
 import {
   i as k
-} from "./CHICDTuh.js";
+} from "./Q9M8yxQ-.js";
 import {
   k as Et
-} from "./CluA35A4.js";
+} from "./C439q6Ou.js";
 import {
-  d as It,
-  s as F,
+  e as Lt,
+  s as $,
   a as X,
   c as Z
-} from "./BO7gtcmY.js";
+} from "./DF9eugxG.js";
 import {
-  r as Lt,
+  r as It,
   p as Tt
-} from "./C7i991D2.js";
+} from "./4hr4SWtj.js";
 import {
   o as Mt,
   A as tt,
-  P as St,
-  a as $t,
-  p as Ft,
+  l as St,
+  a as Ft,
+  p as $t,
   q as Nt
-} from "./2z4l9eIu.js";
+} from "./CG6Zoo1D.js";
 import {
-  t as Ut
+  t as Ot
 } from "./CFl7M2B7.js";
 import {
-  T as Pt
-} from "./D7xzTFxn.js";
+  T as Ut
+} from "./BCTWsYlZ.js";
 import "./BhCkpOlh.js";
 import {
   b as Rt,
   t as Vt,
   p as Wt,
-  a as zt,
-  c as Ot,
+  a as Pt,
+  c as zt,
   l as Dt,
-  d as Gt,
-  e as Kt,
-  m as jt,
+  d as Kt,
+  e as jt,
+  m as Gt,
   w as Ht,
   f as qt,
   o as Yt
 } from "./inINCb3R.js";
 import {
   L as Jt
-} from "./CizqxetH.js";
+} from "./I3DyDcvb.js";
 const Qt = /; wv\)|FBAN|FBAV|Instagram|BytedanceWebview|musical_ly|Line\/|Snapchat|Twitter|MicroMessenger/i;
 
 function Xt() {
@@ -85,15 +85,15 @@ function et() {
 
 function xe() {
   const p = navigator.userAgent,
-    f = navigator.vendor;
-  return /Chrome/.test(p) && /Google Inc/.test(f) ? "Chrome" : /Safari/.test(p) && /Apple Computer/.test(f) ? "Safari" : /Firefox/.test(p) ? "Firefox" : /Edge/.test(p) ? "Edge" : /Opera|OPR/.test(p) ? "Opera" : "Unknown"
+    f = navigator.vendor ?? "";
+  return "brave" in navigator ? "Brave" : /\bEdg(?:e|A|iOS)?\//.test(p) ? "Edge" : /\bOPR\/|\bOpera\//.test(p) ? "Opera" : /Firefox\/|FxiOS\//.test(p) ? "Firefox" : /Chrome\/|CriOS\//.test(p) && /google/i.test(f) ? "Chrome" : /Safari\//.test(p) && /apple/i.test(f) ? "Safari" : "Unknown"
 }
 var Zt = yt('<svg><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" fill="#4285F4"></path><path d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" fill="#34A853"></path><path d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" fill="#FBBC05"></path><path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" fill="#EB4335"></path></svg>');
 
 function te(p, f) {
-  let N = Lt(f, ["$$slots", "$$events", "$$legacy"]);
+  let N = It(f, ["$$slots", "$$events", "$$legacy"]);
   var g = Zt();
-  It(g, () => ({
+  Lt(g, () => ({
     viewBox: "0 0 256 262",
     xmlns: "http://www.w3.org/2000/svg",
     ...N
@@ -112,7 +112,7 @@ function be(p, f) {
     B = y(0),
     C = y(void 0),
     E = y(void 0),
-    I = y(!1);
+    L = y(!1);
   const w = Q(() => !tt || t(C) && t(E)),
     at = Xt(),
     rt = et();
@@ -122,7 +122,7 @@ function be(p, f) {
     })
   });
 
-  function K(r, n, v) {
+  function j(r, n, v) {
     const s = new URLSearchParams;
     return s.set("sid", n), s.set("fp", v), f.redirect && s.set("r", f.redirect), rt && s.set("mobile", "1"), `${St}/auth/${r}?${s}`
   }
@@ -135,13 +135,13 @@ function be(p, f) {
       window.location.href = "intent://" + v + "#Intent;scheme=https;action=android.intent.action.VIEW;end"
     } else window.open(r, "_system")
   }
-  var U = ie(),
-    P = e(U),
-    it = e(P);
+  var O = ie(),
+    U = e(O),
+    it = e(U);
   Jt(it, {
     hasText: !0
-  }), a(P);
-  var R = i(P, 2),
+  }), a(U);
+  var R = i(U, 2),
     ot = e(R);
   {
     var nt = r => {
@@ -153,16 +153,16 @@ function be(p, f) {
             m = e(l),
             S = i(e(m), 2),
             x = e(S),
-            O = e(x, !0);
+            z = e(x, !0);
           a(x);
-          var $ = i(x, 2),
-            ut = e($, !0);
-          a($), a(S), a(m);
+          var F = i(x, 2),
+            ut = e(F, !0);
+          a(F), a(S), a(m);
           var D = i(m, 2),
             gt = e(D, !0);
           a(D), a(l), b((ht, wt, xt) => {
-            c(O, ht), c(ut, wt), c(gt, xt)
-          }, [() => Ht(), () => qt(), () => Yt()]), G("click", D, st), u(o, l)
+            c(z, ht), c(ut, wt), c(gt, xt)
+          }, [() => Ht(), () => qt(), () => Yt()]), K("click", D, st), u(o, l)
         };
         k(v, o => {
           at && o(s)
@@ -173,7 +173,7 @@ function be(p, f) {
       te(_, {
         class: "mr-1 size-5"
       });
-      var z = i(_);
+      var P = i(_);
       a(d);
       var T = i(d, 2),
         M = e(T);
@@ -184,18 +184,18 @@ function be(p, f) {
           Et(m, () => t(B), S => {
             {
               let x = Q(() => Nt.trim());
-              Pt(S, {
+              Ut(S, {
                 get siteKey() {
                   return t(x)
                 },
-                callback: O => {
-                  $t.postCaptchaSession({
+                callback: z => {
+                  Ft.postCaptchaSession({
                     provider: "turnstile",
-                    token: O
-                  }).then($ => {
-                    h(C, $.sessionId, !0)
+                    token: z
+                  }).then(F => {
+                    h(C, F.sessionId, !0)
                   }).catch(() => {
-                    h(g, Ft(), !0), h(B, t(B) + 1)
+                    h(g, $t(), !0), h(B, t(B) + 1)
                   })
                 }
               })
@@ -220,12 +220,12 @@ function be(p, f) {
       a(T), b((o, l) => {
         X(d, 1, Z({
           "btn btn-lg bg-base-100 w-full text-base": !0,
-          "bg-base-content/10 pointer-events-none": !t(w) || t(I)
-        })), F(d, "href", o), c(z, ` ${l??""}`)
-      }, [() => t(w) ? K("google", t(C), t(E)) : "#", () => Dt({
+          "bg-base-content/10 pointer-events-none": !t(w) || t(L)
+        })), $(d, "href", o), c(P, ` ${l??""}`)
+      }, [() => t(w) ? j("google", t(C), t(E)) : "#", () => Dt({
         name: "Google"
-      })]), G("click", d, async () => {
-        h(I, !0)
+      })]), K("click", d, async () => {
+        h(L, !0)
       }), u(r, n)
     };
     k(ot, r => {
@@ -234,11 +234,11 @@ function be(p, f) {
   }
   a(R);
   var V = i(R, 2),
-    j = e(V),
-    L = i(j),
-    lt = e(L, !0);
-  a(L);
-  var W = i(L, 2),
+    G = e(V),
+    I = i(G),
+    lt = e(I, !0);
+  a(I);
+  var W = i(I, 2),
     ct = e(W, !0);
   a(W);
   var H = i(W),
@@ -252,22 +252,22 @@ function be(p, f) {
         v = e(n),
         s = i(v),
         d = e(s, !0);
-      a(s), Y(), a(n), b((_, z, T, M) => {
+      a(s), Y(), a(n), b((_, P, T, M) => {
         c(v, `${_??""} `), X(s, 1, Z({
           "font-medium": !0,
-          "tooltip cursor-not-allowed opacity-60": !t(w) || t(I)
-        })), F(s, "data-tip", z), F(s, "href", T), c(d, M)
-      }, [() => Gt(), () => Kt(), () => t(w) ? K("twitch", t(C), t(E)) : "#", () => jt()]), G("click", s, async _ => {
-        t(w) ? h(I, !0) : _.preventDefault()
+          "tooltip cursor-not-allowed opacity-60": !t(w) || t(L)
+        })), $(s, "data-tip", P), $(s, "href", T), c(d, M)
+      }, [() => Kt(), () => jt(), () => t(w) ? j("twitch", t(C), t(E)) : "#", () => Gt()]), K("click", s, async _ => {
+        t(w) ? h(L, !0) : _.preventDefault()
       }), u(r, n)
     };
     k(dt, r => {
       N() && r(pt)
     })
   }
-  a(U), b((r, n, v, s, d, _) => {
-    c(j, `${r??""} `), F(L, "href", n), c(lt, v), c(ct, s), c(H, ` ${d??""} `), c(vt, _)
-  }, [() => Rt(), Ut, () => Vt(), () => Wt(), () => zt(), () => Ot()]), u(p, U), Bt()
+  a(O), b((r, n, v, s, d, _) => {
+    c(G, `${r??""} `), $(I, "href", n), c(lt, v), c(ct, s), c(H, ` ${d??""} `), c(vt, _)
+  }, [() => Rt(), Ot, () => Vt(), () => Wt(), () => Pt(), () => zt()]), u(p, O), Bt()
 }
 kt(["click"]);
 export {

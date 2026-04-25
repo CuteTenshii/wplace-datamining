@@ -1,26 +1,22 @@
-import "./Bzak7iHL.js";
 import {
-  a as e,
-  z as p
-} from "./C21-Odj5.js";
-import {
-  d as a
-} from "./BO7gtcmY.js";
-import {
-  r as v
-} from "./C7i991D2.js";
-var f = p('<svg><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"></path></svg>');
-
-function h(r, o) {
-  let s = v(o, ["$$slots", "$$events", "$$legacy"]);
-  var t = f();
-  a(t, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...s
-  })), e(r, t)
-}
+  g as t
+} from "./BhCkpOlh.js";
+const e = () => "Confirm",
+  o = () => "Confirmar",
+  i = () => "确认",
+  c = () => "Bestätigen",
+  f = () => "Confirmar",
+  u = () => "Confirmer",
+  m = () => "Conferma",
+  s = () => "確認",
+  _ = () => "Potwierdź",
+  p = () => "Подтвердить",
+  a = () => "Підтвердити",
+  l = () => "Xác nhận",
+  g = (C = {}, n = {}) => {
+    const r = n.locale ?? t();
+    return r === "en" ? e() : r === "pt" ? o() : r === "ch" ? i() : r === "de" ? c() : r === "es" ? f() : r === "fr" ? u() : r === "it" ? m() : r === "jp" ? s() : r === "pl" ? _() : r === "ru" ? p() : r === "uk" ? a() : l()
+  };
 export {
-  h as R
+  g as c
 };

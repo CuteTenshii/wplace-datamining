@@ -1,53 +1,53 @@
 import "./Bzak7iHL.js";
-import "./DiqOUxNS.js";
+import "./87SnJS92.js";
 import {
-  p as O,
+  p as z,
   d as n,
   r as m,
   t as d,
   a as p,
-  b as k,
+  b as A,
   s as v,
-  w as o,
-  x as c,
+  z as o,
+  A as c,
   c as f
-} from "./C21-Odj5.js";
+} from "./C_-299ry.js";
 import {
   s as g
-} from "./CQn0K5Yj.js";
+} from "./BAuwir40.js";
 import {
-  i as z
-} from "./CHICDTuh.js";
+  i as O
+} from "./Q9M8yxQ-.js";
 import {
-  a as A
-} from "./BO7gtcmY.js";
+  a as k
+} from "./DF9eugxG.js";
 import {
   i as M
-} from "./Bm8jcTcI.js";
+} from "./vWQiNDz3.js";
 import {
   p as b
-} from "./C7i991D2.js";
+} from "./4hr4SWtj.js";
 import {
   R as x,
   a as u
 } from "./BXcryQ_k.js";
 import {
   L
-} from "./CizqxetH.js";
+} from "./I3DyDcvb.js";
 var N = f('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
   j = f('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
   B = f("<span><!></span>");
 
 function J(R, i) {
-  O(i, !1);
+  z(i, !1);
   let a = b(i, "role", 8),
     h = b(i, "big", 8, !1);
   M();
   var t = B();
   let _;
-  var w = n(t);
+  var y = n(t);
   {
-    var y = r => {
+    var w = r => {
         var e = N(),
           s = n(e);
         L(s, {
@@ -65,15 +65,15 @@ function J(R, i) {
         var l = v(s, 1, !0);
         m(e), d(() => g(l, (o(u), o(a()), c(() => u[a()])))), p(r, e)
       };
-    z(w, r => {
-      h() ? r(y) : r(E, !1)
+    O(y, r => {
+      h() ? r(w) : r(E, !1)
     })
   }
-  m(t), d(() => _ = A(t, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center whitespace-nowrap pt-0.5 font-semibold leading-none shadow", null, _, {
+  m(t), d(() => _ = k(t, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center whitespace-nowrap pt-0.5 font-semibold leading-none shadow", null, _, {
     "badge-info": a() === "admin",
     "badge-secondary": a() === "moderator" || a() == "global_moderator",
     "badge-warning": a() === "community_leader" || a() === "discord_leader"
-  })), p(R, t), k()
+  })), p(R, t), A()
 }
 export {
   J as R

@@ -1,38 +1,38 @@
 import "./Bzak7iHL.js";
 import {
   o as B
-} from "./DHNZVpiV.js";
+} from "./CaNDuWcU.js";
 import {
-  K as G,
-  x as H,
-  W as J,
-  w as O,
-  bl as Q,
+  w as G,
+  A as H,
+  X as J,
+  z as O,
+  bm as Q,
   k as U,
   p as V,
   h as u,
   i as c,
-  l as X,
+  l as W,
   f as Y,
   a as o,
   b as Z,
   e as I,
-  t as z,
+  t as j,
   d as p,
   r as $,
   c as x,
   m as ee,
   u as te
-} from "./C21-Odj5.js";
+} from "./C_-299ry.js";
 import {
   i as F
-} from "./CHICDTuh.js";
+} from "./Q9M8yxQ-.js";
 import {
   a as q
-} from "./BO7gtcmY.js";
+} from "./DF9eugxG.js";
 import {
-  p as r
-} from "./C7i991D2.js";
+  p as l
+} from "./4hr4SWtj.js";
 
 function ae(w, e, i) {
   G(() => {
@@ -49,32 +49,32 @@ function ae(w, e, i) {
   })
 }
 let v = I(!1);
-var le = x("<div></div>"),
-  re = x('<button type="button" class="btn">Retry</button>'),
+var re = x("<div></div>"),
+  le = x('<button type="button" class="btn">Retry</button>'),
   ie = x('<span class="loading loading-spinner loading-lg"></span>'),
   ne = x("<div><!></div>");
 
 function ve(w, e) {
   V(e, !0);
-  let i = r(e, "widgetId", 15),
-    n = r(e, "appearance", 3, "always"),
-    b = r(e, "language", 3, "auto"),
-    h = r(e, "execution", 3, "render"),
-    s = r(e, "retryInterval", 3, 8e3),
-    D = r(e, "retry", 3, "auto"),
-    K = r(e, "refreshExpired", 3, "auto"),
-    S = r(e, "theme", 3, "auto"),
-    T = r(e, "size", 3, "normal"),
-    L = r(e, "tabIndex", 3, 0);
-  r(e, "reset", 15)(() => {
+  let i = l(e, "widgetId", 15),
+    n = l(e, "appearance", 3, "always"),
+    b = l(e, "language", 3, "auto"),
+    h = l(e, "execution", 3, "render"),
+    s = l(e, "retryInterval", 3, 8e3),
+    D = l(e, "retry", 3, "auto"),
+    S = l(e, "refreshExpired", 3, "auto"),
+    A = l(e, "theme", 3, "auto"),
+    T = l(e, "size", 3, "normal"),
+    K = l(e, "tabIndex", 3, 0);
+  l(e, "reset", 15)(() => {
     var t;
     i() && ((t = window == null ? void 0 : window.turnstile) == null || t.reset(i()))
   });
-  const M = te(() => ({
+  const L = te(() => ({
       sitekey: e.siteKey,
       callback: (t, a) => {
-        var l;
-        (l = e.callback) == null || l.call(e, t, a)
+        var r;
+        (r = e.callback) == null || r.call(e, t, a)
       },
       "error-callback": t => {
         var a;
@@ -102,26 +102,26 @@ function ve(w, e) {
       },
       "response-field-name": e.responseFieldName ?? e.formsField ?? "cf-turnstile-response",
       "response-field": e.responseField ?? e.forms ?? !0,
-      "refresh-expired": K(),
+      "refresh-expired": S(),
       "retry-interval": s(),
-      tabindex: L(),
+      tabindex: K(),
       appearance: n(),
       execution: h(),
       language: b(),
       action: e.action,
       retry: D(),
-      theme: S(),
+      theme: A(),
       cData: e.cData,
       size: T()
     })),
     g = (t, a) => {
-      let l = window.turnstile.render(t, a);
-      return i(l), {
+      let r = window.turnstile.render(t, a);
+      return i(r), {
         destroy() {
-          window.turnstile.remove(l)
+          window.turnstile.remove(r)
         },
         update(m) {
-          window.turnstile.remove(l), l = window.turnstile.render(t, m), i(l)
+          window.turnstile.remove(r), r = window.turnstile.render(t, m), i(r)
         }
       }
     };
@@ -136,51 +136,51 @@ function ve(w, e) {
     }), document.head.appendChild(t)
   }
 
-  function R() {
+  function z() {
     u(_, !1), f && clearTimeout(f), f = setTimeout(() => {
       (!c(v) || !c(y)) && u(_, !0)
     }, 5e3)
   }
 
-  function N() {
-    document.querySelectorAll('script[src*="challenges.cloudflare.com/turnstile"]').forEach(t => t.remove()), u(v, !1), E(), R()
+  function M() {
+    document.querySelectorAll('script[src*="challenges.cloudflare.com/turnstile"]').forEach(t => t.remove()), u(v, !1), E(), z()
   }
-  B(() => (u(y, !0), c(v) || E(), R(), () => {
+  B(() => (u(y, !0), c(v) || E(), z(), () => {
     u(y, !1), f && clearTimeout(f)
   }));
-  var j = X(),
-    P = Y(j);
+  var R = W(),
+    N = Y(R);
   {
-    var W = t => {
-        var a = le();
-        let l;
-        ae(a, (m, C) => g == null ? void 0 : g(m, C), () => c(M)), z(() => l = q(a, 1, `h-16 ${e.class??""}`, "svelte-1lm836y", l, {
+    var P = t => {
+        var a = re();
+        let r;
+        ae(a, (m, C) => g == null ? void 0 : g(m, C), () => c(L)), j(() => r = q(a, 1, `h-16 ${e.class??""}`, "svelte-1lm836y", r, {
           flexible: T() == "flexible"
         })), o(t, a)
       },
-      A = t => {
+      X = t => {
         var a = ne(),
-          l = p(a);
+          r = p(a);
         {
           var m = d => {
-              var k = re();
-              ee("click", k, N), o(d, k)
+              var k = le();
+              ee("click", k, M), o(d, k)
             },
             C = d => {
               var k = ie();
               o(d, k)
             };
-          F(l, d => {
+          F(r, d => {
             c(_) ? d(m) : d(C, !1)
           })
         }
-        $(a), z(() => q(a, 1, `flex h-16 items-center justify-center ${e.class??""}`, "svelte-1lm836y")), o(t, a)
+        $(a), j(() => q(a, 1, `flex h-16 items-center justify-center ${e.class??""}`, "svelte-1lm836y")), o(t, a)
       };
-    F(P, t => {
-      c(v) && c(y) ? t(W) : t(A, !1)
+    F(N, t => {
+      c(v) && c(y) ? t(P) : t(X, !1)
     })
   }
-  o(w, j), Z()
+  o(w, R), Z()
 }
 U(["click"]);
 export {
