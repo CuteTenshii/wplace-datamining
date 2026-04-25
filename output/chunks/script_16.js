@@ -653,7 +653,7 @@ function ta() {
   return (navigator.language || navigator.userLanguage || navigator.browserLanguage || "en").substring(0, 2)
 }
 const na = Qr.toLowerCase() !== "false",
-  ra = "" + new URL("../assets/pawtect_wasm_bg.9gmZk8aU.wasm", import.meta.url).href;
+  ra = "" + new URL("../assets/pawtect_wasm_bg.CjFSOEZJ.wasm", import.meta.url).href;
 var kt = function() {
   return kt = Object.assign || function(t) {
     for (var e, r = 1, a = arguments.length; r < a; r++) {
@@ -7213,7 +7213,7 @@ async function mr() {
       return Object.assign(window, {
         fetch: pr((e, r) => {
           let a = null;
-          return e instanceof Request ? a = e.url : a = e, a.startsWith("/") || sb(a), t.call(window, e, r)
+          return e instanceof Request ? a = e.url : e instanceof URL ? a = e.href : typeof e == "string" && (a = e), a !== null && !a.startsWith("/") && sb(a), t.call(window, e, r)
         })
       }), !0
     } catch (t) {
