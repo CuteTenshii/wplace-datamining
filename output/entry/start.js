@@ -1,7 +1,7 @@
 import {
   l as o,
   d as r
-} from "../chunks/-lTj3P-Q.js";
+} from "../chunks/Bc0GXi2d.js";
 export {
   o as load_css, r as start
 };
