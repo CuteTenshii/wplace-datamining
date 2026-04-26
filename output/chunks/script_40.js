@@ -1,29 +1,29 @@
 import {
-  f as g
+  f as b
 } from "./CG6Zoo1D.js";
-const x = ["text-red-500", "text-orange-500", "text-yellow-500", "text-lime-500", "text-emerald-500", "text-teal-500", "text-cyan-500", "text-sky-500", "text-indigo-500", "text-violet-500", "text-purple-500", "text-fuchsia-500", "text-pink-500", "text-rose-500"],
-  A = ["bg-red-500/10", "bg-orange-500/10", "bg-yellow-500/10", "bg-lime-500/10", "bg-emerald-500/10", "bg-teal-500/10", "bg-cyan-500/10", "bg-sky-500/10", "bg-indigo-500/10", "bg-violet-500/10", "bg-purple-500/10", "bg-fuchsia-500/10", "bg-pink-500/10", "bg-rose-500/10"];
+const L = ["text-red-500", "text-orange-500", "text-yellow-500", "text-lime-500", "text-emerald-500", "text-teal-500", "text-cyan-500", "text-sky-500", "text-indigo-500", "text-violet-500", "text-purple-500", "text-fuchsia-500", "text-pink-500", "text-rose-500"],
+  R = ["bg-red-500/10", "bg-orange-500/10", "bg-yellow-500/10", "bg-lime-500/10", "bg-emerald-500/10", "bg-teal-500/10", "bg-cyan-500/10", "bg-sky-500/10", "bg-indigo-500/10", "bg-violet-500/10", "bg-purple-500/10", "bg-fuchsia-500/10", "bg-pink-500/10", "bg-rose-500/10"];
 
-function T(t) {
-  return x[t % x.length]
+function rt(t) {
+  return L[t % L.length]
 }
 
-function _(t) {
-  return A[t % A.length]
+function it(t) {
+  return R[t % R.length]
 }
 
-function q({
+function at({
   r: t,
-  g: r,
-  b: e
+  g: n,
+  b: o
 }) {
-  function o(n) {
-    return n.toString(16).padStart(2, "0")
+  function e(s) {
+    return s.toString(16).padStart(2, "0")
   }
-  return `#${o(t)}${o(r)}${o(e)}`
+  return `#${e(t)}${e(n)}${e(o)}`
 }
 
-function H(t) {
+function lt(t) {
   return t = t.trim().replace("#", ""), t.length === 3 && (t = t[0] + t[0] + t[1] + t[1] + t[2] + t[2]), t.length !== 6 ? {
     r: 0,
     g: 0,
@@ -35,142 +35,173 @@ function H(t) {
   }
 }
 
-function S(t) {
-  t = Math.min(t, g.colors.length - 1);
-  const [r, e, o] = g.colors[t].rgb;
+function gt(t) {
+  t = Math.min(t, b.colors.length - 1);
+  const [n, o, e] = b.colors[t].rgb;
   return {
-    r,
-    g: e,
-    b: o,
+    r: n,
+    g: o,
+    b: e,
     a: t === 0 ? 0 : 255
   }
 }
+const d = 2 * Math.PI,
+  B = 6103515625,
+  G = .5235987755982988,
+  K = .10471975511965977,
+  Q = 1.0995574287564276,
+  Y = 4.799655442984406,
+  Z = .4363323129985824;
 
-function N(t) {
-  if (t <= 0) return 0;
-  let r = 1;
-  for (let e = 0; e < 40; e++) {
-    const o = r * r,
-      n = o * o;
-    r = (4 * r + t / n) / 5
-  }
-  return r
+function S(t) {
+  const n = t * t;
+  return n * n * n * t
 }
 
-function D(t) {
-  if (t <= 0) return 0;
-  const r = t * t;
-  return r * N(r)
+function H(t, n) {
+  const o = Math.atan2(t, n);
+  return o < 0 ? o + d : o
 }
-
-function b(t) {
-  if (t <= 0) return 0;
-  let r = 1;
-  for (let e = 0; e < 40; e++) r = (2 * r + t / (r * r)) / 3;
-  return r
-}
-const u = new Float64Array(256);
+const P = new Float64Array(256);
 for (let t = 0; t < 256; t++) {
-  const r = t / 255;
-  u[t] = r > .04045 ? D((r + .055) / 1.055) : r / 12.92
+  const n = t / 255;
+  P[t] = n > .04045 ? Math.pow((n + .055) / 1.055, 2.4) : n / 12.92
 }
 
-function B(t) {
-  const r = u[t.r],
-    e = u[t.g],
-    o = u[t.b];
-  let n = (r * .4124 + e * .3576 + o * .1805) / .95047,
-    s = (r * .2126 + e * .7152 + o * .0722) / 1,
-    c = (r * .0193 + e * .1192 + o * .9505) / 1.08883;
-  return n = n > .008856 ? b(n) : 7.787 * n + 16 / 116, s = s > .008856 ? b(s) : 7.787 * s + 16 / 116, c = c > .008856 ? b(c) : 7.787 * c + 16 / 116, {
-    l: 116 * s - 16,
-    a: 500 * (n - s),
-    b: 200 * (s - c)
+function k(t) {
+  const n = P[t.r],
+    o = P[t.g],
+    e = P[t.b];
+  let s = (n * .4124 + o * .3576 + e * .1805) / .95047,
+    c = n * .2126 + o * .7152 + e * .0722,
+    r = (n * .0193 + o * .1192 + e * .9505) / 1.08883;
+  return s = s > .008856 ? Math.cbrt(s) : 7.787 * s + 16 / 116, c = c > .008856 ? Math.cbrt(c) : 7.787 * c + 16 / 116, r = r > .008856 ? Math.cbrt(r) : 7.787 * r + 16 / 116, {
+    l: 116 * c - 16,
+    a: 500 * (s - c),
+    b: 200 * (c - r)
   }
 }
-const d = g.colors.map((t, r) => ({
-    ...t,
-    idx: r,
-    lab: B({
+const E = b.colors.map((t, n) => ({
+    idx: n,
+    lab: k({
       r: t.rgb[0],
       g: t.rgb[1],
       b: t.rgb[2]
     })
   })).filter(t => t.idx !== 0),
-  m = g.colors.map((t, r) => ({
-    idx: r,
+  p = b.colors.map((t, n) => ({
+    idx: n,
     rgb: {
       r: t.rgb[0],
       g: t.rgb[1],
       b: t.rgb[2]
     }
   })).filter(t => t.idx !== 0),
-  E = new Array(g.colors.length);
-for (const t of d) E[t.idx] = t;
-const M = new Array(g.colors.length);
-for (const t of m) M[t.idx] = t;
+  w = new Array(b.colors.length);
+for (const t of E) w[t.idx] = t;
+const N = new Array(b.colors.length);
+for (const t of p) N[t.idx] = t;
 
-function G(t, r = "lab", e) {
-  if (r === "compuphase") {
-    let c = m[0].idx,
-      l = Number.MAX_VALUE;
-    if (e && e.length > 0)
-      for (let i = 0; i < e.length; i++) {
-        const a = M[e[i]];
-        if (!a) continue;
-        const f = k(t, a.rgb);
-        f < l && (c = a.idx, l = f)
-      } else
-        for (const i of m) {
-          const a = k(t, i.rgb);
-          a < l && (c = i.idx, l = a)
-        }
-    return c
+function tt(t, n, o) {
+  let e = E[0].idx,
+    s = Number.MAX_VALUE;
+  const c = o && o.length > 0,
+    r = c ? o.length : E.length;
+  for (let i = 0; i < r; i++) {
+    const a = c ? w[o[i]] : E[i];
+    if (!a) continue;
+    const l = n(t, a.lab);
+    (l < s || l === s && a.idx < e) && (e = a.idx, s = l)
   }
-  let o = d[0].idx,
-    n = Number.MAX_VALUE;
-  const s = B(t);
-  if (e && e.length > 0)
-    for (let c = 0; c < e.length; c++) {
-      const l = E[e[c]];
-      if (!l) continue;
-      const i = R(s, l.lab);
-      i < n && (o = l.idx, n = i)
-    } else
-      for (const c of d) {
-        const l = R(s, c.lab);
-        l < n && (o = c.idx, n = l)
-      }
+  return e
+}
+
+function nt(t, n) {
+  let o = p[0].idx,
+    e = Number.MAX_VALUE;
+  const s = n && n.length > 0,
+    c = s ? n.length : p.length;
+  for (let r = 0; r < c; r++) {
+    const i = s ? N[n[r]] : p[r];
+    if (!i) continue;
+    const a = st(t, i.rgb);
+    (a < e || a === e && i.idx < o) && (o = i.idx, e = a)
+  }
   return o
 }
 
-function R(t, r) {
-  var e = t.l - r.l,
-    o = t.a - r.a,
-    n = t.b - r.b,
-    s = Math.sqrt(t.a * t.a + t.b * t.b),
-    c = Math.sqrt(r.a * r.a + r.b * r.b),
-    l = s - c,
-    i = o * o + n * n - l * l;
-  i = i < 0 ? 0 : Math.sqrt(i);
-  var a = 1 + .045 * s,
-    f = 1 + .015 * s,
-    p = e / 1,
-    y = l / a,
-    h = i / f,
-    v = p * p + y * y + h * h;
-  return v < 0 ? 0 : Math.sqrt(v)
+function ut(t, n = "lab", o) {
+  if (n === "compuphase") return nt(t, o);
+  const e = k(t);
+  return tt(e, n === "ciede2000" ? et : ot, o)
 }
 
-function k(t, r) {
-  const e = (t.r + r.r) / 2,
-    o = t.r - r.r,
-    n = t.g - r.g,
-    s = t.b - r.b,
-    c = 2 + e / 256,
-    l = 2 + (255 - e) / 256;
-  return c * o * o + 4 * n * n + l * s * s
+function ot(t, n) {
+  const o = t.l - n.l,
+    e = t.a - n.a,
+    s = t.b - n.b,
+    c = Math.sqrt(t.a * t.a + t.b * t.b),
+    r = Math.sqrt(n.a * n.a + n.b * n.b),
+    i = c - r;
+  let a = e * e + s * s - i * i;
+  a = a < 0 ? 0 : Math.sqrt(a);
+  const l = 1 + .045 * c,
+    h = 1 + .015 * c,
+    u = i / l,
+    f = a / h,
+    M = o * o + u * u + f * f;
+  return M < 0 ? 0 : Math.sqrt(M)
+}
+
+function et(t, n) {
+  const o = Math.sqrt(t.a * t.a + t.b * t.b),
+    e = Math.sqrt(n.a * n.a + n.b * n.b),
+    s = (o + e) * .5,
+    c = S(s),
+    r = .5 * (1 - Math.sqrt(c / (c + B))),
+    i = (1 + r) * t.a,
+    a = (1 + r) * n.a,
+    l = Math.sqrt(i * i + t.b * t.b),
+    h = Math.sqrt(a * a + n.b * n.b),
+    u = l * h,
+    f = l === 0 ? 0 : H(t.b, i),
+    M = h === 0 ? 0 : H(n.b, a),
+    v = n.l - t.l,
+    F = h - l;
+  let m = 0;
+  u !== 0 && (m = M - f, m > Math.PI ? m -= d : m < -Math.PI && (m += d));
+  const O = u === 0 ? 0 : 2 * Math.sqrt(u) * Math.sin(m * .5),
+    U = (t.l + n.l) * .5,
+    x = (l + h) * .5;
+  let g = f + M;
+  u !== 0 && (Math.abs(f - M) > Math.PI ? g = g < d ? (g + d) * .5 : (g - d) * .5 : g *= .5);
+  const $ = 1 - .17 * Math.cos(g - G) + .24 * Math.cos(2 * g) + .32 * Math.cos(3 * g + K) - .2 * Math.cos(4 * g - Q),
+    q = (g - Y) / Z,
+    z = G * Math.exp(-(q * q)),
+    A = S(x),
+    V = 2 * Math.sqrt(A / (A + B)),
+    y = U - 50,
+    C = y * y,
+    X = 1 + .015 * C / Math.sqrt(20 + C),
+    W = 1 + .045 * x,
+    j = 1 + .015 * x * $,
+    J = -Math.sin(2 * z) * V,
+    T = v / X,
+    _ = F / W,
+    D = O / j,
+    I = T * T + _ * _ + D * D + J * _ * D;
+  return I > 0 ? I : 0
+}
+
+function st(t, n) {
+  const o = (t.r + n.r) / 2,
+    e = t.r - n.r,
+    s = t.g - n.g,
+    c = t.b - n.b,
+    r = 2 + o / 256,
+    i = 2 + (255 - o) / 256;
+  return r * e * e + 4 * s * s + i * c * c
 }
 export {
-  _ as a, G as b, S as c, T as g, H as h, q as r
+  it as a, ut as b, gt as c, rt as g, lt as h, at as r
 };
