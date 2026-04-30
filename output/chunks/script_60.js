@@ -21,10 +21,10 @@ import {
   c as I,
   u as w,
   o as Q
-} from "./C_-299ry.js";
+} from "./BC180BoF.js";
 import {
   i as G
-} from "./Q9M8yxQ-.js";
+} from "./CYlrjl7C.js";
 import {
   e as na,
   f as Kn,
@@ -32,26 +32,26 @@ import {
   s as X,
   g as Hn,
   a as On
-} from "./DF9eugxG.js";
+} from "./Bbytcfj7.js";
 import {
   r as ba,
   p as Fn
-} from "./4hr4SWtj.js";
+} from "./BQ15Turv.js";
 import {
   s as m
-} from "./BAuwir40.js";
+} from "./CpsyGtAr.js";
 import {
   e as Ba
-} from "./Cxuxanlo.js";
+} from "./C9pZMtBm.js";
 import {
   t as Vn
-} from "./BInK8r_Z.js";
+} from "./DIy05fXV.js";
 import {
   c as Wn
-} from "./BOdmFqHU.js";
+} from "./CHkwcO23.js";
 import {
   b as jn
-} from "./D7N9I28j.js";
+} from "./CxzHUe37.js";
 import {
   t as f,
   r as Yn,
@@ -72,23 +72,23 @@ import {
   m as _o,
   F as io,
   g as uo
-} from "./Be9NLYYO.js";
+} from "./kJ5XpKZO.js";
 import {
   L as yo
-} from "./BU_Q3UQ8.js";
+} from "./D3BCsV5F.js";
 import {
   P as La
-} from "./DQV6__F9.js";
+} from "./b8ow9ahU.js";
 import {
   S as Aa
-} from "./CkI_Smp7.js";
+} from "./O6w4z65B.js";
 import {
   S as Ga
-} from "./bkOL93Fh.js";
+} from "./Pf9mdyIq.js";
 import {
   G as Na,
   T as Ea
-} from "./BF_bviFt.js";
+} from "./CDU858ha.js";
 import "./BhCkpOlh.js";
 import {
   r as vo,
@@ -446,7 +446,7 @@ import {
 import {
   g as H,
   a as ra
-} from "./6ulmhFyM.js";
+} from "./DVP6f1Jd.js";
 import {
   f as Hc
 } from "./BI5KFv7B.js";
@@ -948,7 +948,7 @@ function Rl(D, t) {
             e.append("image", d, `report-${Date.now()}.jpeg`), e.append("reportedUserId", String(o[0])), e.append("latitude", t.latLon[0].toString()), e.append("longitude", t.latLon[1].toString()), o.length > 1 && e.append("userIds", JSON.stringify(o));
             const T = async () => {
               var R;
-              const N = await Yn(""),
+              const N = await Yn.getHeaders(""),
                 B = await fetch(`${Jn}/report-user`, {
                   method: "POST",
                   body: e,
