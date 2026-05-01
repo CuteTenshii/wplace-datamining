@@ -107,10 +107,10 @@ import {
   a as k3,
   g as fu,
   c as D3
-} from "../chunks/K3EgsNr9.js";
+} from "../chunks/BiJHYhhf.js";
 import {
   p as Hs
-} from "../chunks/D6LqSdL9.js";
+} from "../chunks/BDkKlK8b.js";
 import {
   f as _s,
   U as z3,
@@ -155,7 +155,7 @@ import {
   P as Y3,
   c as K3,
   d as Q3
-} from "../chunks/Bh1tmKdc.js";
+} from "../chunks/DR11kR2l.js";
 import {
   l as $3,
   a as vu,
@@ -602,7 +602,7 @@ import {
   eR as CM,
   eS as EM,
   eT as AM
-} from "../chunks/B594gwDf.js";
+} from "../chunks/Dm2BicW7.js";
 import {
   p as vb
 } from "../chunks/B-TDV2C3.js";
@@ -50390,7 +50390,7 @@ function PL(A, u) {
     s(fe) > 1 && (L(pr, !1), localStorage.setItem(wt, "false"))
   }), ao(async () => {
     gt.data && ud.isMultiAccounting(gt.data.id) && (tr.error(Y1(), {
-      duration: 7e3
+      duration: 1e4
     }), Et())
   });
   class ar {
@@ -50794,7 +50794,7 @@ function PL(A, u) {
         }
         if (gt.data && ud.isMultiAccounting(gt.data.id)) {
           tr.error(Y1(), {
-            duration: 7e3
+            duration: 1e4
           });
           return
         }
