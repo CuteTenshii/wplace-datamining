@@ -1,51 +1,50 @@
-import "./Bzak7iHL.js";
-import {
-  l as h,
-  f as g,
-  a as o,
-  y as l
-} from "./BC180BoF.js";
-import {
-  i as n
-} from "./CYlrjl7C.js";
-import {
-  e
-} from "./Bbytcfj7.js";
-import {
-  r as q
-} from "./BQ15Turv.js";
-var w = l('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
-  T = l('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
+const h = o => o;
 
-function C(f, t) {
-  let s = q(t, ["$$slots", "$$events", "$$legacy", "filled"]);
-  var a = h(),
-    i = g(a);
-  {
-    var m = r => {
-        var v = w();
-        e(v, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...s
-        })), o(r, v)
-      },
-      p = r => {
-        var v = T();
-        e(v, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...s
-        })), o(r, v)
-      };
-    n(i, r => {
-      t.filled ? r(m) : r(p, !1)
-    })
+function b(o) {
+  const r = o - 1;
+  return r * r * r + 1
+}
+
+function f(o, {
+  delay: r = 0,
+  duration: i = 400,
+  easing: s = h
+} = {}) {
+  const p = +getComputedStyle(o).opacity;
+  return {
+    delay: r,
+    duration: i,
+    easing: s,
+    css: a => `opacity: ${a*p}`
   }
-  o(f, a)
+}
+
+function v(o, {
+  delay: r = 0,
+  duration: i = 400,
+  easing: s = b,
+  axis: p = "y"
+} = {}) {
+  const a = getComputedStyle(o),
+    c = +a.opacity,
+    d = p === "y" ? "height" : "width",
+    $ = parseFloat(a[d]),
+    e = p === "y" ? ["top", "bottom"] : ["left", "right"],
+    n = e.map(t => `${t[0].toUpperCase()}${t.slice(1)}`),
+    l = parseFloat(a[`padding${n[0]}`]),
+    _ = parseFloat(a[`padding${n[1]}`]),
+    u = parseFloat(a[`margin${n[0]}`]),
+    y = parseFloat(a[`margin${n[1]}`]),
+    g = parseFloat(a[`border${n[0]}Width`]),
+    m = parseFloat(a[`border${n[1]}Width`]);
+  return {
+    delay: r,
+    duration: i,
+    easing: s,
+    css: t => `overflow: hidden;opacity: ${Math.min(t*20,1)*c};${d}: ${t*$}px;padding-${e[0]}: ${t*l}px;padding-${e[1]}: ${t*_}px;margin-${e[0]}: ${t*u}px;margin-${e[1]}: ${t*y}px;border-${e[0]}-width: ${t*g}px;border-${e[1]}-width: ${t*m}px;min-${d}: 0`
+  }
 }
 export {
-  C
+  f,
+  v as s
 };

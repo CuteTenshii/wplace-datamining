@@ -1,28 +1,22 @@
-import "./BhCkpOlh.js";
 import {
-  a as o,
-  g as a,
-  m as d,
-  d as e,
-  b as s,
-  u as r
-} from "./BtwC4xeq.js";
-const i = {
-    user: r(),
-    community_leader: "Disc. Mod",
-    discord_leader: "Disc. Lead",
-    moderator: "MOD",
-    global_moderator: "GM",
-    admin: "Admin"
-  },
-  _ = {
-    user: r(),
-    community_leader: s(),
-    discord_leader: e(),
-    moderator: d(),
-    global_moderator: a(),
-    admin: o()
+  g as f
+} from "./BhCkpOlh.js";
+const n = () => "Staff",
+  e = () => "Equipe",
+  s = () => "工作人员",
+  u = () => "Staff",
+  a = () => "Staff",
+  o = () => "Staff",
+  c = () => "Staff",
+  i = () => "スタッフ",
+  _ = () => "Staff",
+  p = () => "Персонал",
+  l = () => "Персонал",
+  S = () => "Staff",
+  h = (d = {}, r = {}) => {
+    const t = r.locale ?? f();
+    return t === "en" ? n() : t === "pt" ? e() : t === "ch" ? s() : t === "de" ? u() : t === "es" ? a() : t === "fr" ? o() : t === "it" ? c() : t === "jp" ? i() : t === "pl" ? _() : t === "ru" ? p() : t === "uk" ? l() : S()
   };
 export {
-  _ as R, i as a
+  h as s
 };

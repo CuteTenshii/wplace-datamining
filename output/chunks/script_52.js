@@ -1,102 +1,128 @@
+import "./Bzak7iHL.js";
 import {
-  g as t
-} from "./BhCkpOlh.js";
-const s = () => "Last pixel",
-  u = () => "Último pixel",
-  i = () => "最后一个像素",
-  o = () => "Letzter Pixel",
-  c = () => "Último píxel",
-  a = () => "Dernier pixel",
-  _ = () => "Ultimo pixel",
-  l = () => "最後のピクセル",
-  f = () => "Ostatni piksel",
-  p = () => "Последний пиксель",
-  d = () => "Останній піксель",
-  v = () => "Pixel cuối cùng",
-  zr = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? s() : r === "pt" ? u() : r === "ch" ? i() : r === "de" ? o() : r === "es" ? c() : r === "fr" ? a() : r === "it" ? _() : r === "jp" ? l() : r === "pl" ? f() : r === "ru" ? p() : r === "uk" ? d() : v()
-  },
-  h = () => "Load more",
-  m = () => "Carregar mais",
-  x = () => "加载更多",
-  j = () => "Mehr laden",
-  k = () => "Cargar más",
-  S = () => "Charger plus",
-  g = () => "Carica altro",
-  z = () => "さらに読み込む",
-  C = () => "Wczytaj więcej",
-  L = () => "Загрузить ещё",
-  V = () => "Завантажити ще",
-  w = () => "Tải thêm",
-  Cr = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? h() : r === "pt" ? m() : r === "ch" ? x() : r === "de" ? j() : r === "es" ? k() : r === "fr" ? S() : r === "it" ? g() : r === "jp" ? z() : r === "pl" ? C() : r === "ru" ? L() : r === "uk" ? V() : w()
-  },
-  b = () => "Save",
-  B = () => "Salvar",
-  T = () => "保存",
-  y = () => "Speichern",
-  G = () => "Guardar",
-  M = () => "Enregistrer",
-  O = () => "Salva",
-  P = () => "保存",
-  W = () => "Zapisz",
-  D = () => "Сохранить",
-  E = () => "Зберегти",
-  R = () => "Lưu",
-  Lr = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? b() : r === "pt" ? B() : r === "ch" ? T() : r === "de" ? y() : r === "es" ? G() : r === "fr" ? M() : r === "it" ? O() : r === "jp" ? P() : r === "pl" ? W() : r === "ru" ? D() : r === "uk" ? E() : R()
-  },
-  U = () => "Search",
-  Z = () => "Buscar",
-  q = () => "搜索",
-  A = () => "Suchen",
-  F = () => "Buscar",
-  H = () => "Rechercher",
-  I = () => "Cerca",
-  J = () => "検索",
-  K = () => "Szukaj",
-  N = () => "Поиск",
-  Q = () => "Пошук",
-  X = () => "Tìm kiếm",
-  Vr = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? U() : r === "pt" ? Z() : r === "ch" ? q() : r === "de" ? A() : r === "es" ? F() : r === "fr" ? H() : r === "it" ? I() : r === "jp" ? J() : r === "pl" ? K() : r === "ru" ? N() : r === "uk" ? Q() : X()
-  },
-  Y = () => "Select the report reason",
-  $ = () => "Selecione o motivo da denúncia",
-  rr = () => "选择举报原因",
-  er = () => "Grund für die Meldung auswählen",
-  tr = () => "Selecciona el motivo del reporte",
-  nr = () => "Sélectionnez la raison du signalement",
-  sr = () => "Seleziona il motivo della segnalazione",
-  ur = () => "通報理由を選択",
-  ir = () => "Wybierz powód zgłoszenia",
-  or = () => "Выберите причину жалобы",
-  cr = () => "Виберіть причину скарги",
-  ar = () => "Chọn lý do báo cáo",
-  wr = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? Y() : r === "pt" ? $() : r === "ch" ? rr() : r === "de" ? er() : r === "es" ? tr() : r === "fr" ? nr() : r === "it" ? sr() : r === "jp" ? ur() : r === "pl" ? ir() : r === "ru" ? or() : r === "uk" ? cr() : ar()
-  },
-  _r = () => "Visit",
-  lr = () => "Visitar",
-  fr = () => "访问",
-  pr = () => "Besuchen",
-  dr = () => "Visitar",
-  vr = () => "Visiter",
-  hr = () => "Visita",
-  mr = () => "訪問",
-  xr = () => "Odwiedź",
-  jr = () => "Перейти",
-  kr = () => "Перейти",
-  Sr = () => "Thăm",
-  br = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? _r() : r === "pt" ? lr() : r === "ch" ? fr() : r === "de" ? pr() : r === "es" ? dr() : r === "fr" ? vr() : r === "it" ? hr() : r === "jp" ? mr() : r === "pl" ? xr() : r === "ru" ? jr() : r === "uk" ? kr() : Sr()
-  };
+  a as i,
+  y as K,
+  k as Q,
+  p as U,
+  l as T,
+  f as q,
+  i as x,
+  b as V,
+  u as C,
+  d as h,
+  aX as _,
+  r as p,
+  t as g,
+  c as I,
+  m as s
+} from "./BC180BoF.js";
+import {
+  e as X,
+  a as k,
+  c as j,
+  s as c
+} from "./Bbytcfj7.js";
+import {
+  r as z,
+  p as d
+} from "./BQ15Turv.js";
+import {
+  s as w
+} from "./CetJgb3j.js";
+import {
+  i as S
+} from "./CYlrjl7C.js";
+import {
+  P as F
+} from "./sxg_5rgi.js";
+import {
+  u as G
+} from "./BNML0NQl.js";
+var H = K('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
+
+function sa(r, a) {
+  let f = z(a, ["$$slots", "$$events", "$$legacy"]);
+  var l = H();
+  X(l, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...f
+  })), i(r, l)
+}
+
+function A(r) {
+  return `/dashboard/alliances?id=${encodeURIComponent(String(r))}`
+}
+
+function J(r) {
+  typeof window > "u" || window.open(A(r), "_blank", "noopener,noreferrer")
+}
+var W = I('<span role="link" tabindex="0"><!></span>'),
+  Y = I('<a target="_blank" rel="noopener noreferrer"><!></a>'),
+  $ = I("<span><!></span>");
+
+function ca(r, a) {
+  U(a, !0);
+  let f = d(a, "mode", 3, "anchor"),
+    l = d(a, "class", 3, ""),
+    b = d(a, "linkClass", 19, l),
+    L = d(a, "textClass", 19, l);
+  const D = C(() => a.allianceId != null && a.allianceId > 0 && G.hasAnyPermission(F.dashboard.alliances)),
+    E = C(() => a.allianceId == null ? "" : A(a.allianceId));
+
+  function m(n) {
+    n.stopPropagation()
+  }
+
+  function y(n) {
+    a.allianceId == null || a.allianceId <= 0 || (n.preventDefault(), n.stopPropagation(), J(a.allianceId))
+  }
+
+  function M(n) {
+    n.key !== "Enter" && n.key !== " " || y(n)
+  }
+  var P = T(),
+    N = q(P);
+  {
+    var O = n => {
+        var t = T(),
+          u = q(t);
+        {
+          var Z = o => {
+              var e = W(),
+                v = h(e);
+              w(v, () => a.children ?? _), p(e), g(() => {
+                k(e, 1, `cursor-pointer hover:underline ${b()}`), c(e, "title", a.title)
+              }), s("pointerdown", e, m), s("click", e, y), s("keydown", e, M), i(o, e)
+            },
+            B = o => {
+              var e = Y(),
+                v = h(e);
+              w(v, () => a.children ?? _), p(e), g(() => {
+                k(e, 1, `cursor-pointer hover:underline ${b()}`), c(e, "href", x(E)), c(e, "title", a.title)
+              }), s("pointerdown", e, m), s("click", e, m), i(o, e)
+            };
+          S(u, o => {
+            f() === "inline" ? o(Z) : o(B, !1)
+          })
+        }
+        i(n, t)
+      },
+      R = n => {
+        var t = $(),
+          u = h(t);
+        w(u, () => a.children ?? _), p(t), g(() => {
+          k(t, 1, j(L())), c(t, "title", a.title)
+        }), i(n, t)
+      };
+    S(N, n => {
+      x(D) ? n(O) : n(R, !1)
+    })
+  }
+  i(r, P), V()
+}
+Q(["pointerdown", "click", "keydown"]);
 export {
-  Lr as a, wr as b, Cr as c, zr as l, Vr as s, br as v
+  sa as L, ca as S
 };

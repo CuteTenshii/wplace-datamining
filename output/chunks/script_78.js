@@ -1,22 +1,26 @@
+import "./Bzak7iHL.js";
 import {
-  g as f
-} from "./BhCkpOlh.js";
-const n = () => "Staff",
-  e = () => "Equipe",
-  s = () => "工作人员",
-  u = () => "Staff",
-  a = () => "Staff",
-  o = () => "Staff",
-  c = () => "Staff",
-  i = () => "スタッフ",
-  _ = () => "Staff",
-  p = () => "Персонал",
-  l = () => "Персонал",
-  S = () => "Staff",
-  h = (d = {}, r = {}) => {
-    const t = r.locale ?? f();
-    return t === "en" ? n() : t === "pt" ? e() : t === "ch" ? s() : t === "de" ? u() : t === "es" ? a() : t === "fr" ? o() : t === "it" ? c() : t === "jp" ? i() : t === "pl" ? _() : t === "ru" ? p() : t === "uk" ? l() : S()
-  };
+  a as e,
+  y as p
+} from "./BC180BoF.js";
+import {
+  e as a
+} from "./Bbytcfj7.js";
+import {
+  r as v
+} from "./BQ15Turv.js";
+var f = p('<svg><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"></path></svg>');
+
+function h(r, o) {
+  let s = v(o, ["$$slots", "$$events", "$$legacy"]);
+  var t = f();
+  a(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...s
+  })), e(r, t)
+}
 export {
-  h as s
+  h as R
 };

@@ -1,19 +1,19 @@
-var Ir = Object.defineProperty;
+var Or = Object.defineProperty;
 var tn = n => {
   throw TypeError(n)
 };
-var Or = (n, t, e) => t in n ? Ir(n, t, {
+var Ir = (n, t, e) => t in n ? Or(n, t, {
   enumerable: !0,
   configurable: !0,
   writable: !0,
   value: e
 }) : n[t] = e;
-var k = (n, t, e) => Or(n, typeof t != "symbol" ? t + "" : t, e),
+var k = (n, t, e) => Ir(n, typeof t != "symbol" ? t + "" : t, e),
   kr = (n, t, e) => t.has(n) || tn("Cannot " + e);
 var v = (n, t, e) => (kr(n, t, "read from private field"), e ? e.call(n) : t.get(n)),
   P = (n, t, e) => t.has(n) ? tn("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(n) : t.set(n, e);
 import {
-  e as B,
+  e as F,
   i as L,
   h as U,
   g as gt,
@@ -25,7 +25,7 @@ import {
 import {
   g as m
 } from "./BhCkpOlh.js";
-const Oe = typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__,
+const Ie = typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__,
   ie = globalThis,
   Pe = "10.40.0";
 
@@ -89,13 +89,13 @@ function Ur(...n) {
 }
 
 function qt(n, ...t) {
-  Oe && Wn() && xr(() => {
+  Ie && Wn() && xr(() => {
     ie.console[n](`${Rr}[${n}]:`, ...t)
   })
 }
 
 function Kt() {
-  return Oe ? Wt("loggerSettings", () => ({
+  return Ie ? Wt("loggerSettings", () => ({
     enabled: !1
   })) : {
     enabled: !1
@@ -115,11 +115,11 @@ function jr(n, t) {
   return Cr.call(n) === `[object ${t}]`
 }
 
-function Fr(n) {
+function Br(n) {
   return jr(n, "Object")
 }
 
-function Br(n) {
+function Fr(n) {
   return !!(n != null && n.then && typeof n.then == "function")
 }
 
@@ -131,12 +131,12 @@ function zr(n, t, e) {
       configurable: !0
     })
   } catch {
-    Oe && ht.log(`Failed to add non-enumerable property "${t}" to object`, n)
+    Ie && ht.log(`Failed to add non-enumerable property "${t}" to object`, n)
   }
 }
 let be;
 
-function It(n) {
+function Ot(n) {
   if (be !== void 0) return be ? be(n) : n();
   const t = Symbol.for("__SENTRY_SAFE_RANDOM_ID_WRAPPER__"),
     e = ie;
@@ -144,11 +144,11 @@ function It(n) {
 }
 
 function Lt() {
-  return It(() => Math.random())
+  return Ot(() => Math.random())
 }
 
 function Vr() {
-  return It(() => Date.now())
+  return Ot(() => Date.now())
 }
 
 function Gr(n, t = 0) {
@@ -167,7 +167,7 @@ function qr() {
 
 function Le(n = Wr()) {
   try {
-    if (n != null && n.randomUUID) return It(() => n.randomUUID()).replace(/-/g, "")
+    if (n != null && n.randomUUID) return Ot(() => n.randomUUID()).replace(/-/g, "")
   } catch {}
   return kt || (kt = "10000000100040008000" + 1e11), kt.replace(/[018]/g, t => (t ^ (qr() & 15) >> t / 4).toString(16))
 }
@@ -183,7 +183,7 @@ function Kr() {
   } = ie;
   if (!(n != null && n.now) || !n.timeOrigin) return Kn;
   const t = n.timeOrigin;
-  return () => (t + It(() => n.now())) / qn
+  return () => (t + Ot(() => n.now())) / qn
 }
 let an;
 
@@ -341,14 +341,14 @@ class ge {
   update(t) {
     if (!t) return this;
     const e = typeof t == "function" ? t(this) : t,
-      r = e instanceof ge ? e.getScopeData() : Fr(e) ? t : void 0,
+      r = e instanceof ge ? e.getScopeData() : Br(e) ? t : void 0,
       {
         tags: a,
         attributes: i,
         extra: o,
         user: s,
-        contexts: l,
-        level: u,
+        contexts: u,
+        level: l,
         fingerprint: _ = [],
         propagationContext: d,
         conversationId: p
@@ -364,8 +364,8 @@ class ge {
       ...o
     }, this._contexts = {
       ...this._contexts,
-      ...l
-    }, s && Object.keys(s).length && (this._user = s), u && (this._level = u), _.length && (this._fingerprint = _), d && (this._propagationContext = d), p && (this._conversationId = p), this
+      ...u
+    }, s && Object.keys(s).length && (this._user = s), l && (this._level = l), _.length && (this._fingerprint = _), d && (this._propagationContext = d), p && (this._conversationId = p), this
   }
   clear() {
     return this._breadcrumbs = [], this._tags = {}, this._attributes = {}, this._extra = {}, this._user = {}, this._contexts = {}, this._level = void 0, this._transactionName = void 0, this._fingerprint = void 0, this._session = void 0, this._conversationId = void 0, sn(this, void 0), this._attachments = [], this.setPropagationContext({
@@ -426,7 +426,7 @@ class ge {
   }
   captureException(t, e) {
     const r = (e == null ? void 0 : e.event_id) || Le();
-    if (!this._client) return Oe && ht.warn("No client configured on scope - will not capture exception!"), r;
+    if (!this._client) return Ie && ht.warn("No client configured on scope - will not capture exception!"), r;
     const a = new Error("Sentry syntheticException");
     return this._client.captureException(t, {
       originalException: t,
@@ -437,7 +437,7 @@ class ge {
   }
   captureMessage(t, e, r) {
     const a = (r == null ? void 0 : r.event_id) || Le();
-    if (!this._client) return Oe && ht.warn("No client configured on scope - will not capture message!"), a;
+    if (!this._client) return Ie && ht.warn("No client configured on scope - will not capture message!"), a;
     const i = (r == null ? void 0 : r.syntheticException) ?? new Error(t);
     return this._client.captureMessage(t, e, {
       originalException: t,
@@ -451,7 +451,7 @@ class ge {
     return this._client ? (this._client.captureEvent(t, {
       ...e,
       event_id: r
-    }, this), r) : (Oe && ht.warn("No client configured on scope - will not capture event!"), r)
+    }, this), r) : (Ie && ht.warn("No client configured on scope - will not capture event!"), r)
   }
   _notifyScopeListeners() {
     this._notifyingListeners || (this._notifyingListeners = !0, this._scopeListeners.forEach(t => {
@@ -484,7 +484,7 @@ class Xr {
     } catch (a) {
       throw this._popScope(), a
     }
-    return Br(r) ? r.then(a => (this._popScope(), a), a => {
+    return Fr(r) ? r.then(a => (this._popScope(), a), a => {
       throw this._popScope(), a
     }) : (this._popScope(), r)
   }
@@ -564,27 +564,27 @@ function aa(n, t) {
 function ia(n, t) {
   ra().setContext(n, t)
 }
-const uE = "https://maps.wplace.live",
-  lE = "8d582454-e5ec-4314-b1c2-89e460ac1d28",
+const _E = "https://maps.wplace.live",
+  fE = "8d582454-e5ec-4314-b1c2-89e460ac1d28",
   oa = "true",
-  dE = "0x4AAAAAABpHqZ-6i7uL0nmG",
-  _E = "https://backend.wplace.live/files",
+  hE = "0x4AAAAAABpHqZ-6i7uL0nmG",
+  pE = "https://backend.wplace.live/files",
   Yt = "https://backend.wplace.live",
   sa = "" + new URL("../assets/pawtect_wasm_bg.YFplO3ET.wasm", import.meta.url).href,
   ln = "theme";
-var je, Fe, Be, ze, Ve, Ge, We, qe, Ke, Ye;
+var je, Be, Fe, ze, Ve, Ge, We, qe, Ke, Ye;
 class ca {
   constructor() {
-    P(this, je, B(!1));
-    P(this, Fe, B(!1));
-    P(this, Be, B(0));
-    P(this, ze, B(!1));
-    P(this, Ve, B(gt(ua())));
-    P(this, Ge, B(null));
-    P(this, We, B(!1));
-    P(this, qe, B("custom-winter"));
-    P(this, Ke, B(gt(Date.now())));
-    P(this, Ye, B(void 0));
+    P(this, je, F(!1));
+    P(this, Be, F(!1));
+    P(this, Fe, F(0));
+    P(this, ze, F(!1));
+    P(this, Ve, F(gt(ua())));
+    P(this, Ge, F(null));
+    P(this, We, F(!1));
+    P(this, qe, F("custom-winter"));
+    P(this, Ke, F(gt(Date.now())));
+    P(this, Ye, F(void 0));
     setInterval(() => {
       U(v(this, Ke), Date.now(), !0)
     }, 500), this.theme = localStorage.getItem(ln), this.theme !== "dark" && this.theme !== "custom-winter" && (this.theme = "custom-winter")
@@ -596,16 +596,16 @@ class ca {
     U(v(this, je), t, !0)
   }
   get storeDialogOpen() {
-    return L(v(this, Fe))
-  }
-  set storeDialogOpen(t) {
-    U(v(this, Fe), t, !0)
-  }
-  get storeTabIndex() {
     return L(v(this, Be))
   }
-  set storeTabIndex(t) {
+  set storeDialogOpen(t) {
     U(v(this, Be), t, !0)
+  }
+  get storeTabIndex() {
+    return L(v(this, Fe))
+  }
+  set storeTabIndex(t) {
+    U(v(this, Fe), t, !0)
   }
   get muted() {
     return L(v(this, ze))
@@ -650,7 +650,7 @@ class ca {
     U(v(this, Ye), t, !0)
   }
 }
-je = new WeakMap, Fe = new WeakMap, Be = new WeakMap, ze = new WeakMap, Ve = new WeakMap, Ge = new WeakMap, We = new WeakMap, qe = new WeakMap, Ke = new WeakMap, Ye = new WeakMap;
+je = new WeakMap, Be = new WeakMap, Fe = new WeakMap, ze = new WeakMap, Ve = new WeakMap, Ge = new WeakMap, We = new WeakMap, qe = new WeakMap, Ke = new WeakMap, Ye = new WeakMap;
 const Ht = new ca;
 
 function ua() {
@@ -700,7 +700,7 @@ let C = pa(),
   x = null,
   Xn = 0;
 
-function fE() {
+function mE() {
   dn || typeof window > "u" || (dn = !0, C.focusStartMs = performance.now(), C.windowStartMs = Date.now(), window.addEventListener("pointermove", n => {
     const t = performance.now();
     t - C.lastMouseSampleMs < da || (C.lastMouseSampleMs = t, Zn.push({
@@ -722,7 +722,7 @@ function fE() {
     C.idleStartMs > 0 && (C.totalIdleMs += performance.now() - C.idleStartMs, C.idleStartMs = 0), C.focusStartMs = performance.now()
   }, {
     passive: !0
-  }), Oa())
+  }), Ia())
 }
 
 function ma() {
@@ -742,7 +742,7 @@ function ma() {
 }
 
 function ga() {
-  x = Ia();
+  x = Oa();
   const n = Date.now(),
     t = C.windowStartMs,
     e = performance.now(),
@@ -752,8 +752,8 @@ function ga() {
   C.totalIdleMs = 0, C.totalFocusMs = 0, C.focusStartMs = e, C.windowStartMs = n;
   const o = ya(r),
     s = va(a),
-    l = Ea(a, r),
-    u = o.straightnessAvg > .95 && r.length > 10,
+    u = Ea(a, r),
+    l = o.straightnessAvg > .95 && r.length > 10,
     _ = o.jitterAvg < .01 && r.length > 10,
     d = s.stddev / Math.max(1, s.avg) < .05 && a.length >= 5;
   return wt = {
@@ -769,10 +769,10 @@ function ga() {
     velocityProfileSkew: oe(o.velocityProfileSkew),
     angularVelocityStddev: oe(o.angularVelocityStddev),
     clickCount: a.length,
-    preClickPauseAvg: oe(l),
+    preClickPauseAvg: oe(u),
     idleMs: i.idleMs,
     focusMs: i.focusMs,
-    isLinearMovement: u,
+    isLinearMovement: l,
     isConstantInterval: d,
     hasZeroJitter: _
   }, wt
@@ -801,92 +801,92 @@ function ya(n) {
     i = 0,
     o = 0;
   const s = [];
-  for (let y = 1; y < n.length; y++) {
-    const S = n[y].x - n[y - 1].x,
-      b = n[y].y - n[y - 1].y,
-      Z = Math.max(1, n[y].t - n[y - 1].t),
-      V = Math.sqrt(S * S + b * b),
+  for (let w = 1; w < n.length; w++) {
+    const S = n[w].x - n[w - 1].x,
+      E = n[w].y - n[w - 1].y,
+      Z = Math.max(1, n[w].t - n[w - 1].t),
+      V = Math.sqrt(S * S + E * E),
       z = V / Z;
     if (t.push(z), V < 3 && V > 0 && a++, Z > ha) {
-      if (y - i > 2) {
+      if (w - i > 2) {
         o++;
-        const te = _n(n.slice(i, y));
+        const te = _n(n.slice(i, w));
         te >= 0 && s.push(te)
       }
-      i = y
+      i = w
     }
-    if (y >= 2) {
-      const te = n[y - 1].x - n[y - 2].x,
-        ve = n[y - 1].y - n[y - 2].y,
-        Ot = S * te + b * ve,
-        Qt = Math.sqrt(S * S + b * b),
+    if (w >= 2) {
+      const te = n[w - 1].x - n[w - 2].x,
+        ve = n[w - 1].y - n[w - 2].y,
+        It = S * te + E * ve,
+        Qt = Math.sqrt(S * S + E * E),
         en = Math.sqrt(te * te + ve * ve);
-      Qt > 0 && en > 0 && e.push(1 - Math.abs(Ot / (Qt * en)));
+      Qt > 0 && en > 0 && e.push(1 - Math.abs(It / (Qt * en)));
       const Sr = t[t.length - 2] || 0;
       r.push(Math.abs(z - Sr))
     }
   }
   if (n.length - i > 2) {
     o++;
-    const y = _n(n.slice(i));
-    y >= 0 && s.push(y)
+    const w = _n(n.slice(i));
+    w >= 0 && s.push(w)
   }
-  const l = t.reduce((y, S) => y + S, 0) / t.length,
-    u = e.length > 0 ? e.reduce((y, S) => y + S, 0) / e.length : 0,
-    _ = t.reduce((y, S) => y + Math.pow(S - l, 2), 0) / t.length,
+  const u = t.reduce((w, S) => w + S, 0) / t.length,
+    l = e.length > 0 ? e.reduce((w, S) => w + S, 0) / e.length : 0,
+    _ = t.reduce((w, S) => w + Math.pow(S - u, 2), 0) / t.length,
     d = Math.sqrt(_);
   let p = 0,
-    g = 0;
+    y = 0;
   if (r.length > 0) {
-    p = r.reduce((S, b) => S + b, 0) / r.length;
-    const y = r.reduce((S, b) => S + Math.pow(b - p, 2), 0) / r.length;
-    g = Math.sqrt(y)
+    p = r.reduce((S, E) => S + E, 0) / r.length;
+    const w = r.reduce((S, E) => S + Math.pow(E - p, 2), 0) / r.length;
+    y = Math.sqrt(w)
   }
-  const E = n[0],
-    w = n[n.length - 1],
-    T = Math.sqrt(Math.pow(w.x - E.x, 2) + Math.pow(w.y - E.y, 2));
-  let I = 0;
-  for (let y = 1; y < n.length; y++) {
-    const S = n[y].x - n[y - 1].x,
-      b = n[y].y - n[y - 1].y;
-    I += Math.sqrt(S * S + b * b)
+  const b = n[0],
+    g = n[n.length - 1],
+    T = Math.sqrt(Math.pow(g.x - b.x, 2) + Math.pow(g.y - b.y, 2));
+  let O = 0;
+  for (let w = 1; w < n.length; w++) {
+    const S = n[w].x - n[w - 1].x,
+      E = n[w].y - n[w - 1].y;
+    O += Math.sqrt(S * S + E * E)
   }
-  const R = I > 0 ? T / I : 0,
-    j = s.length > 0 ? s.reduce((y, S) => y + S, 0) / s.length : 0;
-  let F = 0;
-  t.length >= 5 && d > .001 && (F = t.reduce((S, b) => S + Math.pow(b - l, 3), 0) / t.length / Math.pow(d, 3));
+  const R = O > 0 ? T / O : 0,
+    j = s.length > 0 ? s.reduce((w, S) => w + S, 0) / s.length : 0;
+  let B = 0;
+  t.length >= 5 && d > .001 && (B = t.reduce((S, E) => S + Math.pow(E - u, 3), 0) / t.length / Math.pow(d, 3));
   let Y = 0;
   if (n.length >= 4) {
-    const y = [];
+    const w = [];
     for (let S = 1; S < n.length; S++) {
-      const b = n[S].x - n[S - 1].x,
+      const E = n[S].x - n[S - 1].x,
         Z = n[S].y - n[S - 1].y;
-      Math.sqrt(b * b + Z * Z) > .5 && y.push(Math.atan2(Z, b))
+      Math.sqrt(E * E + Z * Z) > .5 && w.push(Math.atan2(Z, E))
     }
-    if (y.length >= 3) {
+    if (w.length >= 3) {
       const S = [];
-      for (let V = 1; V < y.length; V++) {
-        let z = y[V] - y[V - 1];
+      for (let V = 1; V < w.length; V++) {
+        let z = w[V] - w[V - 1];
         for (; z > Math.PI;) z -= 2 * Math.PI;
         for (; z < -Math.PI;) z += 2 * Math.PI;
         S.push(z)
       }
-      const b = S.reduce((V, z) => V + z, 0) / S.length,
-        Z = S.reduce((V, z) => V + Math.pow(z - b, 2), 0) / S.length;
+      const E = S.reduce((V, z) => V + z, 0) / S.length,
+        Z = S.reduce((V, z) => V + Math.pow(z - E, 2), 0) / S.length;
       Y = Math.sqrt(Z)
     }
   }
   return {
-    speedAvg: l,
+    speedAvg: u,
     speedStddev: d,
-    jitterAvg: u,
+    jitterAvg: l,
     straightnessAvg: R,
     accelAvg: p,
-    accelStddev: g,
+    accelStddev: y,
     microMovementCount: a,
     movementSegments: o,
     avgSegmentCurvature: j,
-    velocityProfileSkew: F,
+    velocityProfileSkew: B,
     angularVelocityStddev: Y,
     speeds: t
   }
@@ -947,12 +947,12 @@ function _n(n) {
     i = 0;
   for (let o = 1; o < n.length; o++) {
     const s = n[o].x - n[o - 1].x,
-      l = n[o].y - n[o - 1].y;
-    if (a += Math.sqrt(s * s + l * l), o >= 2) {
-      const u = n[o - 1].x - n[o - 2].x,
+      u = n[o].y - n[o - 1].y;
+    if (a += Math.sqrt(s * s + u * u), o >= 2) {
+      const l = n[o - 1].x - n[o - 2].x,
         _ = n[o - 1].y - n[o - 2].y,
-        d = u * l - _ * s,
-        p = u * s + _ * l;
+        d = l * u - _ * s,
+        p = l * s + _ * u;
       i += Math.abs(Math.atan2(d, p))
     }
   }
@@ -978,11 +978,11 @@ function Sa() {
     if (i) {
       const o = i.Function.prototype.toString,
         s = ["hardwareConcurrency", "platform", "languages"];
-      for (const l of s) {
-        const u = Object.getOwnPropertyDescriptor(Navigator.prototype, l);
-        if (u && typeof u.get == "function") {
-          const _ = Function.prototype.toString.call(u.get),
-            d = o.call(u.get);
+      for (const u of s) {
+        const l = Object.getOwnPropertyDescriptor(Navigator.prototype, u);
+        if (l && typeof l.get == "function") {
+          const _ = Function.prototype.toString.call(l.get),
+            d = o.call(l.get);
           if (_ !== d) {
             n |= 2;
             break
@@ -1002,16 +1002,16 @@ function Sa() {
     if (a && i) {
       const o = /Windows/.test(a),
         s = /Macintosh|Mac OS X/.test(a),
-        l = /Linux/.test(a) && !/Android/.test(a),
-        u = /Android/.test(a),
+        u = /Linux/.test(a) && !/Android/.test(a),
+        l = /Android/.test(a),
         _ = /iPhone|iPad|iPod/.test(a),
         d = /^Win/.test(i),
         p = /^Mac/.test(i),
-        g = /^Linux/.test(i),
-        E = /^(iPhone|iPad|iPod)/.test(i);
-      if ((o && !d || s && !p || l && !g || u && !g || _ && !E) && (n |= 4), t.userAgentData && t.userAgentData.platform) {
-        const w = t.userAgentData.platform;
-        (o && w !== "Windows" || s && w !== "macOS" || l && w !== "Linux" || u && w !== "Android") && (n |= 4)
+        y = /^Linux/.test(i),
+        b = /^(iPhone|iPad|iPod)/.test(i);
+      if ((o && !d || s && !p || u && !y || l && !y || _ && !b) && (n |= 4), t.userAgentData && t.userAgentData.platform) {
+        const g = t.userAgentData.platform;
+        (o && g !== "Windows" || s && g !== "macOS" || u && g !== "Linux" || l && g !== "Android") && (n |= 4)
       }
     }
   } catch {}
@@ -1021,11 +1021,11 @@ function Sa() {
       const o = i.getExtension("WEBGL_debug_renderer_info");
       if (o) {
         const s = (i.getParameter(o.UNMASKED_RENDERER_WEBGL) || "").toLowerCase(),
-          l = (i.getParameter(o.UNMASKED_VENDOR_WEBGL) || "").toLowerCase(),
-          u = navigator.userAgent,
-          _ = /Windows/.test(u),
-          d = /Macintosh|Mac OS X/.test(u);
-        (s.includes("apple") || l.includes("apple")) && _ && (n |= 8), s.includes("angle") && d && !s.includes("metal") && (n |= 8), (s.includes("d3d11") || s.includes("direct3d")) && d && (n |= 8)
+          u = (i.getParameter(o.UNMASKED_VENDOR_WEBGL) || "").toLowerCase(),
+          l = navigator.userAgent,
+          _ = /Windows/.test(l),
+          d = /Macintosh|Mac OS X/.test(l);
+        (s.includes("apple") || u.includes("apple")) && _ && (n |= 8), s.includes("angle") && d && !s.includes("metal") && (n |= 8), (s.includes("d3d11") || s.includes("direct3d")) && d && (n |= 8)
       }(r = i.getExtension("WEBGL_lose_context")) == null || r.loseContext()
     }
   } catch {}
@@ -1052,7 +1052,7 @@ function Sa() {
   return n
 }
 
-function Ia() {
+function Oa() {
   const n = navigator,
     t = n.plugins ? n.plugins.length : 0,
     e = "ontouchstart" in window || n.maxTouchPoints > 0,
@@ -1062,43 +1062,43 @@ function Ia() {
   let i = 0;
   const o = ["webdriver", "languages", "plugins", "hardwareConcurrency", "platform", "userAgent", "vendor", "maxTouchPoints", "deviceMemory", "cookieEnabled", "pdfViewerEnabled", "connection"],
     s = ["width", "height", "colorDepth", "pixelDepth", "availWidth", "availHeight"],
-    l = Function.prototype.toString;
-  for (const w of o) try {
-    const T = Object.getOwnPropertyDescriptor(Navigator.prototype, w);
-    T && typeof T.get == "function" && l.call(T.get).includes("native code") === !1 && i++
+    u = Function.prototype.toString;
+  for (const g of o) try {
+    const T = Object.getOwnPropertyDescriptor(Navigator.prototype, g);
+    T && typeof T.get == "function" && u.call(T.get).includes("native code") === !1 && i++
   } catch {}
-  for (const w of s) try {
-    const T = Object.getOwnPropertyDescriptor(Screen.prototype, w);
-    T && typeof T.get == "function" && l.call(T.get).includes("native code") === !1 && i++
+  for (const g of s) try {
+    const T = Object.getOwnPropertyDescriptor(Screen.prototype, g);
+    T && typeof T.get == "function" && u.call(T.get).includes("native code") === !1 && i++
   } catch {}
-  let u = "",
+  let l = "",
     _ = !0;
   try {
-    const w = document.createElement("canvas");
-    w.width = 64, w.height = 16;
-    const T = w.getContext("2d");
+    const g = document.createElement("canvas");
+    g.width = 64, g.height = 16;
+    const T = g.getContext("2d");
     if (T) {
       T.textBaseline = "top", T.font = "14px Arial", T.fillText("wplace🐾", 2, 2);
-      const I = w.toDataURL();
+      const O = g.toDataURL();
       let R = 0;
-      for (let F = 0; F < I.length; F++) R = (R << 5) - R + I.charCodeAt(F) | 0;
-      u = (R >>> 0).toString(16).padStart(8, "0"), T.clearRect(0, 0, 64, 16), T.fillText("wplace🐾", 2, 2);
-      const j = w.toDataURL();
-      _ = I === j
+      for (let B = 0; B < O.length; B++) R = (R << 5) - R + O.charCodeAt(B) | 0;
+      l = (R >>> 0).toString(16).padStart(8, "0"), T.clearRect(0, 0, 64, 16), T.fillText("wplace🐾", 2, 2);
+      const j = g.toDataURL();
+      _ = O === j
     }
   } catch {}
   let d = !1;
   try {
-    const w = new Error;
-    Object.defineProperty(w, "stack", {
+    const g = new Error;
+    Object.defineProperty(g, "stack", {
       get() {
         return d = !0, ""
       }
-    }), console.debug(w)
+    }), console.debug(g)
   } catch {}
   const p = n.languages ? n.languages.length : 0,
-    g = (window.outerWidth === 0 || window.outerHeight === 0) && (window.innerWidth === 0 || window.innerHeight === 0),
-    E = Sa();
+    y = (window.outerWidth === 0 || window.outerHeight === 0) && (window.innerWidth === 0 || window.innerHeight === 0),
+    b = Sa();
   return {
     pc: t,
     sw: screen.width,
@@ -1107,16 +1107,16 @@ function Ia() {
     mtp: r,
     fb: a,
     ptc: i,
-    ch: u,
+    ch: l,
     cdp: d,
     lc: p,
-    odz: g,
+    odz: y,
     cdr: _,
-    adf: E
+    adf: b
   }
 }
 
-function Oa() {
+function Ia() {
   const n = [];
 
   function e(r) {
@@ -1220,8 +1220,8 @@ const Qn = 3;
 var He, $e;
 class Ra {
   constructor() {
-    P(this, He, B(null));
-    P(this, $e, B(0))
+    P(this, He, F(null));
+    P(this, $e, F(0))
   }
   get current() {
     return L(v(this, He))
@@ -1314,22 +1314,22 @@ function Pa() {
   return ke[4] = t, t
 }
 
-function hE(n) {
+function gE(n) {
   const t = q.current;
   !t || t.tier === 4 || (t.resolve(n), q.current = null)
 }
 
-function pE() {
+function wE() {
   const n = q.current;
   !n || n.tier === 4 || (q.errorCount += 1, q.errorCount >= Qn && (n.resolve(void 0), q.current = null))
 }
 
-function mE() {
+function yE() {
   const n = q.current;
   !n || n.tier !== 4 || (n.resolve(!0), q.current = null)
 }
 
-function gE() {
+function vE() {
   const n = q.current;
   n && (n.tier === 4 ? n.resolve(!1) : n.resolve(void 0), q.current = null)
 }
@@ -1339,8 +1339,8 @@ const La = () => "Your account has been suspended for breaking the rules",
   Ua = () => "您的账号因违反规则已被暂停",
   Ca = () => "Dein Konto wurde wegen Regelverstößen gesperrt",
   ja = () => "Tu cuenta ha sido suspendida por infringir las regras",
-  Fa = () => "Votre compte a été suspendu pour avoir enfreint les règles",
-  Ba = () => "Il tuo account è stato sospeso per aver infranto le regole",
+  Ba = () => "Votre compte a été suspendu pour avoir enfreint les règles",
+  Fa = () => "Il tuo account è stato sospeso per aver infranto le regole",
   za = () => "ルール違反により、あなたのアカウントは一時停止されています。",
   Va = () => "Twoje konto zostało zawieszone za łamanie zasad",
   Ga = () => "Ваш аккаунт был временно заблокирован за нарушение правил",
@@ -1348,7 +1348,7 @@ const La = () => "Your account has been suspended for breaking the rules",
   qa = () => "Tài khoản của bạn đã bị tạm đình chỉ vì vi phạm luật",
   Ka = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? La() : e === "pt" ? Ma() : e === "ch" ? Ua() : e === "de" ? Ca() : e === "es" ? ja() : e === "fr" ? Fa() : e === "it" ? Ba() : e === "jp" ? za() : e === "pl" ? Va() : e === "ru" ? Ga() : e === "uk" ? Wa() : qa()
+    return e === "en" ? La() : e === "pt" ? Ma() : e === "ch" ? Ua() : e === "de" ? Ca() : e === "es" ? ja() : e === "fr" ? Ba() : e === "it" ? Fa() : e === "jp" ? za() : e === "pl" ? Va() : e === "ru" ? Ga() : e === "uk" ? Wa() : qa()
   },
   Ya = () => "Alliance name already taken",
   Ha = () => "Já possui uma aliança com esse nome",
@@ -1388,15 +1388,15 @@ const La = () => "Your account has been suspended for breaking the rules",
   Ei = () => "Allianz mit leerem Namen",
   Ti = () => "Alianza con nombre vacío",
   Si = () => "Alliance avec nom vide",
-  Ii = () => "Alleanza con nome vuoto",
-  Oi = () => "名前が空のアライアンスです。",
+  Oi = () => "Alleanza con nome vuoto",
+  Ii = () => "名前が空のアライアンスです。",
   ki = () => "Sojusz z pustą nazwą",
   Ai = () => "Альянс с пустым названием",
   Ni = () => "Альянс із порожньою назвою",
   Ri = () => "Liên minh không có tên",
   xi = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? yi() : e === "pt" ? vi() : e === "ch" ? bi() : e === "de" ? Ei() : e === "es" ? Ti() : e === "fr" ? Si() : e === "it" ? Ii() : e === "jp" ? Oi() : e === "pl" ? ki() : e === "ru" ? Ai() : e === "uk" ? Ni() : Ri()
+    return e === "en" ? yi() : e === "pt" ? vi() : e === "ch" ? bi() : e === "de" ? Ei() : e === "es" ? Ti() : e === "fr" ? Si() : e === "it" ? Oi() : e === "jp" ? Ii() : e === "pl" ? ki() : e === "ru" ? Ai() : e === "uk" ? Ni() : Ri()
   },
   Di = () => "Botting",
   Pi = () => "Uso de bots",
@@ -1405,14 +1405,14 @@ const La = () => "Your account has been suspended for breaking the rules",
   Ui = () => "Botting",
   Ci = () => "Bots",
   ji = () => "Uso di bot",
-  Fi = () => "ボット使用",
-  Bi = () => "Botting",
+  Bi = () => "ボット使用",
+  Fi = () => "Botting",
   zi = () => "Боттинг",
   Vi = () => "Боти",
   Gi = () => "Botting",
   Wi = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? Di() : e === "pt" ? Pi() : e === "ch" ? Li() : e === "de" ? Mi() : e === "es" ? Ui() : e === "fr" ? Ci() : e === "it" ? ji() : e === "jp" ? Fi() : e === "pl" ? Bi() : e === "ru" ? zi() : e === "uk" ? Vi() : Gi()
+    return e === "en" ? Di() : e === "pt" ? Pi() : e === "ch" ? Li() : e === "de" ? Mi() : e === "es" ? Ui() : e === "fr" ? Ci() : e === "it" ? ji() : e === "jp" ? Bi() : e === "pl" ? Fi() : e === "ru" ? zi() : e === "uk" ? Vi() : Gi()
   },
   qi = () => "Use of software to completely automate painting",
   Ki = () => "Uso de software para pintar de forma completamente automatizada ",
@@ -1453,14 +1453,14 @@ const La = () => "Your account has been suspended for breaking the rules",
   Eo = () => "Has infringido una de las reglas de Wplace",
   To = () => "Vous avez enfreint l’une des règles de Wplace",
   So = () => "Hai infranto una delle regole di Wplace",
-  Io = () => "Wplaceのルールのいずれかに違反しました。",
-  Oo = () => "Złamałeś jedną z zasad Wplace",
+  Oo = () => "Wplaceのルールのいずれかに違反しました。",
+  Io = () => "Złamałeś jedną z zasad Wplace",
   ko = () => "Вы нарушили одно из правил Wplace",
   Ao = () => "Ви порушили одне з правил Wplace",
   No = () => "Bạn đã vi phạm một trong các luật của Wplace",
   Ro = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? wo() : e === "pt" ? yo() : e === "ch" ? vo() : e === "de" ? bo() : e === "es" ? Eo() : e === "fr" ? To() : e === "it" ? So() : e === "jp" ? Io() : e === "pl" ? Oo() : e === "ru" ? ko() : e === "uk" ? Ao() : No()
+    return e === "en" ? wo() : e === "pt" ? yo() : e === "ch" ? vo() : e === "de" ? bo() : e === "es" ? Eo() : e === "fr" ? To() : e === "it" ? So() : e === "jp" ? Oo() : e === "pl" ? Io() : e === "ru" ? ko() : e === "uk" ? Ao() : No()
   },
   xo = () => "You cannot paint over event pixels",
   Do = () => "Você não pode pintar sobre pixels de eventos",
@@ -1470,13 +1470,13 @@ const La = () => "Your account has been suspended for breaking the rules",
   Uo = () => "Vous ne pouvez pas peindre sur des pixels d’événement",
   Co = () => "Non puoi dipingere sopra i pixel dell'evento",
   jo = () => "イベント用のピクセルの上には塗れません。",
-  Fo = () => "Nie możesz malować po pikselach wydarzenia",
-  Bo = () => "Вы не можете рисовать по пикселям события",
+  Bo = () => "Nie możesz malować po pikselach wydarzenia",
+  Fo = () => "Вы не можете рисовать по пикселям события",
   zo = () => "Ви не можете малювати поверх пікселів події",
   Vo = () => "Bạn không thể tô lên pixel sự kiện",
   pn = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? xo() : e === "pt" ? Do() : e === "ch" ? Po() : e === "de" ? Lo() : e === "es" ? Mo() : e === "fr" ? Uo() : e === "it" ? Co() : e === "jp" ? jo() : e === "pl" ? Fo() : e === "ru" ? Bo() : e === "uk" ? zo() : Vo()
+    return e === "en" ? xo() : e === "pt" ? Do() : e === "ch" ? Po() : e === "de" ? Lo() : e === "es" ? Mo() : e === "fr" ? Uo() : e === "it" ? Co() : e === "jp" ? jo() : e === "pl" ? Bo() : e === "ru" ? Fo() : e === "uk" ? zo() : Vo()
   },
   Go = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
   Wo = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
@@ -1521,12 +1521,12 @@ const La = () => "Your account has been suspended for breaking the rules",
   Es = () => "Nie udało się dokończyć zakupu. Ten przedmiot nie istnieje.",
   Ts = () => "Не удалось завершить покупку. Этот предмет не существует.",
   Ss = () => "Не вдалося завершити покупку. Цей предмет не існує.",
-  Is = () => "Không thể hoàn tất giao dịch. Vật phẩm này không tồn tại.",
+  Os = () => "Không thể hoàn tất giao dịch. Vật phẩm này không tồn tại.",
   mn = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? hs() : e === "pt" ? ps() : e === "ch" ? ms() : e === "de" ? gs() : e === "es" ? ws() : e === "fr" ? ys() : e === "it" ? vs() : e === "jp" ? bs() : e === "pl" ? Es() : e === "ru" ? Ts() : e === "uk" ? Ss() : Is()
+    return e === "en" ? hs() : e === "pt" ? ps() : e === "ch" ? ms() : e === "de" ? gs() : e === "es" ? ws() : e === "fr" ? ys() : e === "it" ? vs() : e === "jp" ? bs() : e === "pl" ? Es() : e === "ru" ? Ts() : e === "uk" ? Ss() : Os()
   },
-  Os = () => "Your phone number's country doesn't match your current location. Please use a local number.",
+  Is = () => "Your phone number's country doesn't match your current location. Please use a local number.",
   ks = () => "O país do seu número de telefone não corresponde à sua localização atual. Por favor, use um número local.",
   As = () => "您的电话号码所属国家与您当前位置不匹配。请使用本地号码。",
   Ns = () => "Das Land deiner Telefonnummer stimmt nicht mit deinem aktuellen Standort überein. Bitte verwende eine lokale Nummer.",
@@ -1540,10 +1540,10 @@ const La = () => "Your account has been suspended for breaking the rules",
   Cs = () => "Quốc gia của số điện thoại không khớp với vị trí hiện tại của bạn. Vui lòng sử dụng số địa phương.",
   js = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? Os() : e === "pt" ? ks() : e === "ch" ? As() : e === "de" ? Ns() : e === "es" ? Rs() : e === "fr" ? xs() : e === "it" ? Ds() : e === "jp" ? Ps() : e === "pl" ? Ls() : e === "ru" ? Ms() : e === "uk" ? Us() : Cs()
+    return e === "en" ? Is() : e === "pt" ? ks() : e === "ch" ? As() : e === "de" ? Ns() : e === "es" ? Rs() : e === "fr" ? xs() : e === "it" ? Ds() : e === "jp" ? Ps() : e === "pl" ? Ls() : e === "ru" ? Ms() : e === "uk" ? Us() : Cs()
   },
-  Fs = () => "We’re currently experiencing high traffic. Some requests may not be processed at this time—please try again later. Thank you for your patience.",
-  Bs = () => "Estamos enfrentando um volume alto de acessos no momento. Algumas solicitações podem não ser processadas agora — por favor, tente novamente mais tarde. Agradecemos a sua compreensão.",
+  Bs = () => "We’re currently experiencing high traffic. Some requests may not be processed at this time—please try again later. Thank you for your patience.",
+  Fs = () => "Estamos enfrentando um volume alto de acessos no momento. Algumas solicitações podem não ser processadas agora — por favor, tente novamente mais tarde. Agradecemos a sua compreensão.",
   zs = () => "我们当前正遭遇高流量。一些请求可能无法立即处理——请稍后再试。感谢你的耐心。",
   Vs = () => "Wir haben gerade sehr viel Traffic. Einige Anfragen können momentan nicht verarbeitet werden – bitte versuche es später erneut. Danke für deine Geduld.",
   Gs = () => "Actualmente estamos recibiendo mucho tráfico. Es posible que algunas solicitudes no se procesen en este momento; inténtalo de nuevo más tarde. Gracias por tu paciencia.",
@@ -1556,7 +1556,7 @@ const La = () => "Your account has been suspended for breaking the rules",
   Zs = () => "Hiện chúng tôi đang chịu lượng truy cập rất cao. Một số yêu cầu có thể không được xử lý ngay bây giờ — hãy thử lại sau. Cảm ơn bạn đã thông cảm.",
   gn = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? Fs() : e === "pt" ? Bs() : e === "ch" ? zs() : e === "de" ? Vs() : e === "es" ? Gs() : e === "fr" ? Ws() : e === "it" ? qs() : e === "jp" ? Ks() : e === "pl" ? Ys() : e === "ru" ? Hs() : e === "uk" ? $s() : Zs()
+    return e === "en" ? Bs() : e === "pt" ? Fs() : e === "ch" ? zs() : e === "de" ? Vs() : e === "es" ? Gs() : e === "fr" ? Ws() : e === "it" ? qs() : e === "jp" ? Ks() : e === "pl" ? Ys() : e === "ru" ? Hs() : e === "uk" ? $s() : Zs()
   },
   Js = () => "Doxxing",
   Xs = () => "Doxxing",
@@ -1592,8 +1592,8 @@ const La = () => "Your account has been suspended for breaking the rules",
   },
   Tc = () => "This email is already in use.",
   Sc = () => "Este e-mail já está em uso.",
-  Ic = () => "This email is already in use.",
   Oc = () => "This email is already in use.",
+  Ic = () => "This email is already in use.",
   kc = () => "Este correo electrónico ya está en uso.",
   Ac = () => "This email is already in use.",
   Nc = () => "Questa email è già in uso.",
@@ -1604,13 +1604,13 @@ const La = () => "Your account has been suspended for breaking the rules",
   Lc = () => "This email is already in use.",
   Mc = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? Tc() : e === "pt" ? Sc() : e === "ch" ? Ic() : e === "de" ? Oc() : e === "es" ? kc() : e === "fr" ? Ac() : e === "it" ? Nc() : e === "jp" ? Rc() : e === "pl" ? xc() : e === "ru" ? Dc() : e === "uk" ? Pc() : Lc()
+    return e === "en" ? Tc() : e === "pt" ? Sc() : e === "ch" ? Oc() : e === "de" ? Ic() : e === "es" ? kc() : e === "fr" ? Ac() : e === "it" ? Nc() : e === "jp" ? Rc() : e === "pl" ? xc() : e === "ru" ? Dc() : e === "uk" ? Pc() : Lc()
   },
   Uc = n => `This email is already in use by user #${n.userId}.`,
   Cc = n => `Este e-mail já está em uso pelo usuário #${n.userId}.`,
   jc = n => `This email is already in use by user #${n.userId}.`,
-  Fc = n => `This email is already in use by user #${n.userId}.`,
-  Bc = n => `Este correo electrónico ya está en uso por el usuario #${n.userId}.`,
+  Bc = n => `This email is already in use by user #${n.userId}.`,
+  Fc = n => `Este correo electrónico ya está en uso por el usuario #${n.userId}.`,
   zc = n => `This email is already in use by user #${n.userId}.`,
   Vc = n => `Questa email è già in uso dall'utente #${n.userId}.`,
   Gc = n => `This email is already in use by user #${n.userId}.`,
@@ -1620,7 +1620,7 @@ const La = () => "Your account has been suspended for breaking the rules",
   Yc = n => `This email is already in use by user #${n.userId}.`,
   Hc = (n, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? Uc(n) : e === "pt" ? Cc(n) : e === "ch" ? jc(n) : e === "de" ? Fc(n) : e === "es" ? Bc(n) : e === "fr" ? zc(n) : e === "it" ? Vc(n) : e === "jp" ? Gc(n) : e === "pl" ? Wc(n) : e === "ru" ? qc(n) : e === "uk" ? Kc(n) : Yc(n)
+    return e === "en" ? Uc(n) : e === "pt" ? Cc(n) : e === "ch" ? jc(n) : e === "de" ? Bc(n) : e === "es" ? Fc(n) : e === "fr" ? zc(n) : e === "it" ? Vc(n) : e === "jp" ? Gc(n) : e === "pl" ? Wc(n) : e === "ru" ? qc(n) : e === "uk" ? Kc(n) : Yc(n)
   },
   $c = () => "Enter a valid email address.",
   Zc = () => "Informe um endereço de e-mail válido.",
@@ -1658,8 +1658,8 @@ const La = () => "Your account has been suspended for breaking the rules",
   Eu = () => "Excedeu o número máximo de caracteres permitidos",
   Tu = () => "超出最大字符数",
   Su = () => "Maximale Zeichenanzahl überschritten",
-  Iu = () => "Se excedió el número máximo de caracteres",
-  Ou = () => "Nombre maximal de caractères dépassé",
+  Ou = () => "Se excedió el número máximo de caracteres",
+  Iu = () => "Nombre maximal de caractères dépassé",
   ku = () => "Numero massimo di caratteri superato",
   Au = () => "最大文字数を超過しました",
   Nu = () => "Przekroczono maksymalną liczbę znaków",
@@ -1668,15 +1668,15 @@ const La = () => "Your account has been suspended for breaking the rules",
   Du = () => "Đã vượt quá số ký tự tối đa",
   Pu = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? bu() : e === "pt" ? Eu() : e === "ch" ? Tu() : e === "de" ? Su() : e === "es" ? Iu() : e === "fr" ? Ou() : e === "it" ? ku() : e === "jp" ? Au() : e === "pl" ? Nu() : e === "ru" ? Ru() : e === "uk" ? xu() : Du()
+    return e === "en" ? bu() : e === "pt" ? Eu() : e === "ch" ? Tu() : e === "de" ? Su() : e === "es" ? Ou() : e === "fr" ? Iu() : e === "it" ? ku() : e === "jp" ? Au() : e === "pl" ? Nu() : e === "ru" ? Ru() : e === "uk" ? xu() : Du()
   },
   Lu = () => "Verification code expired. Please request a new one.",
   Mu = () => "Código de verificação expirado. Por favor, solicite um novo.",
   Uu = () => "验证码已过期，请重新获取。",
   Cu = () => "Bestätigungscode abgelaufen. Bitte fordern Sie einen neuen an.",
   ju = () => "Código de verificación expirado. Por favor, solicita uno nuevo.",
-  Fu = () => "Code de vérification expiré. Veuillez en demander un nouveau.",
-  Bu = () => "Codice di verifica scaduto. Per favore, richiedine uno nuovo.",
+  Bu = () => "Code de vérification expiré. Veuillez en demander un nouveau.",
+  Fu = () => "Codice di verifica scaduto. Per favore, richiedine uno nuovo.",
   zu = () => "確認コードの有効期限が切れました。新しいコードをリクエストしてください。",
   Vu = () => "Kod weryfikacyjny wygasł. Poproś o nowy.",
   Gu = () => "Код подтверждения истёк. Пожалуйста, запросите новый.",
@@ -1684,7 +1684,7 @@ const La = () => "Your account has been suspended for breaking the rules",
   qu = () => "Mã xác minh đã hết hạn. Vui lòng yêu cầu mã mới.",
   Ku = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? Lu() : e === "pt" ? Mu() : e === "ch" ? Uu() : e === "de" ? Cu() : e === "es" ? ju() : e === "fr" ? Fu() : e === "it" ? Bu() : e === "jp" ? zu() : e === "pl" ? Vu() : e === "ru" ? Gu() : e === "uk" ? Wu() : qu()
+    return e === "en" ? Lu() : e === "pt" ? Mu() : e === "ch" ? Uu() : e === "de" ? Cu() : e === "es" ? ju() : e === "fr" ? Bu() : e === "it" ? Fu() : e === "jp" ? zu() : e === "pl" ? Vu() : e === "ru" ? Gu() : e === "uk" ? Wu() : qu()
   },
   Yu = () => "Griefing",
   Hu = () => "Griefing",
@@ -1724,15 +1724,15 @@ const La = () => "Your account has been suspended for breaking the rules",
   El = () => "Hassrede",
   Tl = () => "Discurso de odio",
   Sl = () => "Discours haineux",
-  Il = () => "Discorso d'odio",
-  Ol = () => "ヘイトスピーチ",
+  Ol = () => "Discorso d'odio",
+  Il = () => "ヘイトスピーチ",
   kl = () => "Mowa nienawiści",
   Al = () => "Речь ненависти",
   Nl = () => "Мова ворожнечі",
   Rl = () => "Ngôn từ thù hằn",
   xl = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? yl() : e === "pt" ? vl() : e === "ch" ? bl() : e === "de" ? El() : e === "es" ? Tl() : e === "fr" ? Sl() : e === "it" ? Il() : e === "jp" ? Ol() : e === "pl" ? kl() : e === "ru" ? Al() : e === "uk" ? Nl() : Rl()
+    return e === "en" ? yl() : e === "pt" ? vl() : e === "ch" ? bl() : e === "de" ? El() : e === "es" ? Tl() : e === "fr" ? Sl() : e === "it" ? Ol() : e === "jp" ? Il() : e === "pl" ? kl() : e === "ru" ? Al() : e === "uk" ? Nl() : Rl()
   },
   Dl = () => "Racism, homophobia, hate groups, ...",
   Pl = () => "Racismo, homofobia, grupos de ódio, ...",
@@ -1741,14 +1741,14 @@ const La = () => "Your account has been suspended for breaking the rules",
   Ul = () => "Racismo, homofobia, grupos de odio, ...",
   Cl = () => "Racisme, homophobie, groupes haineux, ...",
   jl = () => "Razzismo, omofobia, gruppi d'odio, ...",
-  Fl = () => "人種差別、同性愛差別、ヘイト団体など。",
-  Bl = () => "Rasizm, homofobia, grupy nienawiści, ...",
+  Bl = () => "人種差別、同性愛差別、ヘイト団体など。",
+  Fl = () => "Rasizm, homofobia, grupy nienawiści, ...",
   zl = () => "Расизм, гомофобия, группы ненависти и т.п.",
   Vl = () => "Расизм, гомофобія, групи ненависті, ...",
   Gl = () => "Phân biệt chủng tộc, kỳ thị LGBT, nhóm thù hận, ...",
   Wl = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? Dl() : e === "pt" ? Pl() : e === "ch" ? Ll() : e === "de" ? Ml() : e === "es" ? Ul() : e === "fr" ? Cl() : e === "it" ? jl() : e === "jp" ? Fl() : e === "pl" ? Bl() : e === "ru" ? zl() : e === "uk" ? Vl() : Gl()
+    return e === "en" ? Dl() : e === "pt" ? Pl() : e === "ch" ? Ll() : e === "de" ? Ml() : e === "es" ? Ul() : e === "fr" ? Cl() : e === "it" ? jl() : e === "jp" ? Bl() : e === "pl" ? Fl() : e === "ru" ? zl() : e === "uk" ? Vl() : Gl()
   },
   ql = () => "Inappropriate content",
   Kl = () => "Conteúdo inapropriado",
@@ -1790,13 +1790,13 @@ const La = () => "Your account has been suspended for breaking the rules",
   Ed = () => "Captcha invalide. Veuillez réessayer.",
   Td = () => "Captcha non valido. Riprova.",
   Sd = () => "キャプチャが無効です。もう一度お試しください。",
-  Id = () => "Nieprawidłowa captcha. Spróbuj ponownie.",
-  Od = () => "Неверная капча. Пожалуйста, попробуйте снова.",
+  Od = () => "Nieprawidłowa captcha. Spróbuj ponownie.",
+  Id = () => "Неверная капча. Пожалуйста, попробуйте снова.",
   kd = () => "Неправильна капча. Будь ласка, спробуйте ще раз.",
   Ad = () => "Captcha không hợp lệ. Vui lòng thử lại.",
   Nd = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? gd() : e === "pt" ? wd() : e === "ch" ? yd() : e === "de" ? vd() : e === "es" ? bd() : e === "fr" ? Ed() : e === "it" ? Td() : e === "jp" ? Sd() : e === "pl" ? Id() : e === "ru" ? Od() : e === "uk" ? kd() : Ad()
+    return e === "en" ? gd() : e === "pt" ? wd() : e === "ch" ? yd() : e === "de" ? vd() : e === "es" ? bd() : e === "fr" ? Ed() : e === "it" ? Td() : e === "jp" ? Sd() : e === "pl" ? Od() : e === "ru" ? Id() : e === "uk" ? kd() : Ad()
   },
   Rd = () => "Invalid challenge response",
   xd = () => "Resposta de desafio inválida",
@@ -1807,12 +1807,12 @@ const La = () => "Your account has been suspended for breaking the rules",
   Ud = () => "Risposta alla sfida non valida",
   Cd = () => "無効なチャレンジ応答",
   jd = () => "Nieprawidłowa odpowiedź na wyzwanie",
-  Fd = () => "Неверный ответ на вызов",
-  Bd = () => "Недійсна відповідь на виклик",
+  Bd = () => "Неверный ответ на вызов",
+  Fd = () => "Недійсна відповідь на виклик",
   zd = () => "Phản hồi thử thách không hợp lệ",
   Vd = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? Rd() : e === "pt" ? xd() : e === "ch" ? Dd() : e === "de" ? Pd() : e === "es" ? Ld() : e === "fr" ? Md() : e === "it" ? Ud() : e === "jp" ? Cd() : e === "pl" ? jd() : e === "ru" ? Fd() : e === "uk" ? Bd() : zd()
+    return e === "en" ? Rd() : e === "pt" ? xd() : e === "ch" ? Dd() : e === "de" ? Pd() : e === "es" ? Ld() : e === "fr" ? Md() : e === "it" ? Ud() : e === "jp" ? Cd() : e === "pl" ? jd() : e === "ru" ? Bd() : e === "uk" ? Fd() : zd()
   },
   Gd = () => "The verification code is incorrect. Please check it and try again.",
   Wd = () => "Código inválido",
@@ -1856,11 +1856,11 @@ const La = () => "Your account has been suspended for breaking the rules",
   E_ = () => "この名前には使用できない文字または単語が含まれています。別の名前を選んでください。",
   T_ = () => "Nazwa zawiera niedozwolone znaki lub słowa. Wybierz inną nazwę.",
   S_ = () => "Имя содержит запрещённые символы или слова. Пожалуйста, выберите другое имя.",
-  I_ = () => "Імʼя містить заборонені символи або слова. Оберіть інше імʼя.",
-  O_ = () => "Tên chứa ký tự hoặc từ không được phép. Hãy chọn tên khác.",
+  O_ = () => "Імʼя містить заборонені символи або слова. Оберіть інше імʼя.",
+  I_ = () => "Tên chứa ký tự hoặc từ không được phép. Hãy chọn tên khác.",
   wn = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? p_() : e === "pt" ? m_() : e === "ch" ? g_() : e === "de" ? w_() : e === "es" ? y_() : e === "fr" ? v_() : e === "it" ? b_() : e === "jp" ? E_() : e === "pl" ? T_() : e === "ru" ? S_() : e === "uk" ? I_() : O_()
+    return e === "en" ? p_() : e === "pt" ? m_() : e === "ch" ? g_() : e === "de" ? w_() : e === "es" ? y_() : e === "fr" ? v_() : e === "it" ? b_() : e === "jp" ? E_() : e === "pl" ? T_() : e === "ru" ? S_() : e === "uk" ? O_() : I_()
   },
   k_ = () => "Please enter a valid phone number with country code.",
   A_ = () => "Insira um número de telefone válido com código do país.",
@@ -1874,11 +1874,11 @@ const La = () => "Your account has been suspended for breaking the rules",
   U_ = () => "Введите действительный номер телефона с кодом страны.",
   C_ = () => "Будь ласка, введіть дійсний номер телефону з кодом країни.",
   j_ = () => "Vui lòng nhập số điện thoại hợp lệ kèm mã quốc gia.",
-  F_ = (n = {}, t = {}) => {
+  B_ = (n = {}, t = {}) => {
     const e = t.locale ?? m();
     return e === "en" ? k_() : e === "pt" ? A_() : e === "ch" ? N_() : e === "de" ? R_() : e === "es" ? x_() : e === "fr" ? D_() : e === "it" ? P_() : e === "jp" ? L_() : e === "pl" ? M_() : e === "ru" ? U_() : e === "uk" ? C_() : j_()
   },
-  B_ = () => "This phone number is not supported. Please use a mobile number that can receive SMS.",
+  F_ = () => "This phone number is not supported. Please use a mobile number that can receive SMS.",
   z_ = () => "Este número de telefone parece ser fixo. Por favor, use um número de celular que possa receber SMS.",
   V_ = () => "不支持此电话号码。请使用可以接收短信的手机号码。",
   G_ = () => "Diese Telefonnummer wird nicht unterstützt. Bitte verwende eine Mobilnummer, die SMS empfangen kann.",
@@ -1892,7 +1892,7 @@ const La = () => "Your account has been suspended for breaking the rules",
   J_ = () => "Số điện thoại này không được hỗ trợ. Vui lòng sử dụng số di động có thể nhận SMS.",
   X_ = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? B_() : e === "pt" ? z_() : e === "ch" ? V_() : e === "de" ? G_() : e === "es" ? W_() : e === "fr" ? q_() : e === "it" ? K_() : e === "jp" ? Y_() : e === "pl" ? H_() : e === "ru" ? $_() : e === "uk" ? Z_() : J_()
+    return e === "en" ? F_() : e === "pt" ? z_() : e === "ch" ? V_() : e === "de" ? G_() : e === "es" ? W_() : e === "fr" ? q_() : e === "it" ? K_() : e === "jp" ? Y_() : e === "pl" ? H_() : e === "ru" ? $_() : e === "uk" ? Z_() : J_()
   },
   Q_ = () => "The new leader must be a member of the alliance",
   ef = () => "O novo líder deve ser um membro da aliança",
@@ -1926,8 +1926,8 @@ const La = () => "Your account has been suspended for breaking the rules",
     const e = t.locale ?? m();
     return e === "en" ? ff() : e === "pt" ? hf() : e === "ch" ? pf() : e === "de" ? mf() : e === "es" ? gf() : e === "fr" ? wf() : e === "it" ? yf() : e === "jp" ? vf() : e === "pl" ? bf() : e === "ru" ? Ef() : e === "uk" ? Tf() : Sf()
   },
-  If = () => "Location name is too big (max. 128 characters)",
-  Of = () => "Nome da localização é grande demais (max. 128 caracteres)",
+  Of = () => "Location name is too big (max. 128 characters)",
+  If = () => "Nome da localização é grande demais (max. 128 caracteres)",
   kf = () => "位置名称过长（最大 128 个字符）",
   Af = () => "Ortsname ist zu lang (max. 128 Zeichen)",
   Nf = () => "El nombre de la ubicación es demasiado largo (máx. 128 caracteres)",
@@ -1940,11 +1940,11 @@ const La = () => "Your account has been suspended for breaking the rules",
   Uf = () => "Tên vị trí quá dài (tối đa 128 ký tự)",
   Cf = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? If() : e === "pt" ? Of() : e === "ch" ? kf() : e === "de" ? Af() : e === "es" ? Nf() : e === "fr" ? Rf() : e === "it" ? xf() : e === "jp" ? Df() : e === "pl" ? Pf() : e === "ru" ? Lf() : e === "uk" ? Mf() : Uf()
+    return e === "en" ? Of() : e === "pt" ? If() : e === "ch" ? kf() : e === "de" ? Af() : e === "es" ? Nf() : e === "fr" ? Rf() : e === "it" ? xf() : e === "jp" ? Df() : e === "pl" ? Pf() : e === "ru" ? Lf() : e === "uk" ? Mf() : Uf()
   },
   jf = () => "Multi-accounting",
-  Ff = () => "Múltiplas contas",
-  Bf = () => "多账号",
+  Bf = () => "Múltiplas contas",
+  Ff = () => "多账号",
   zf = () => "Multi-Accounting",
   Vf = () => "Multi-cuentas",
   Gf = () => "Multi-comptes",
@@ -1956,7 +1956,7 @@ const La = () => "Your account has been suspended for breaking the rules",
   $f = () => "Nhiều tài khoản",
   Zf = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? jf() : e === "pt" ? Ff() : e === "ch" ? Bf() : e === "de" ? zf() : e === "es" ? Vf() : e === "fr" ? Gf() : e === "it" ? Wf() : e === "jp" ? qf() : e === "pl" ? Kf() : e === "ru" ? Yf() : e === "uk" ? Hf() : $f()
+    return e === "en" ? jf() : e === "pt" ? Bf() : e === "ch" ? Ff() : e === "de" ? zf() : e === "es" ? Vf() : e === "fr" ? Gf() : e === "it" ? Wf() : e === "jp" ? qf() : e === "pl" ? Kf() : e === "ru" ? Yf() : e === "uk" ? Hf() : $f()
   },
   Jf = () => "Use more than one account to paint pixels",
   Xf = () => "Usar mais de uma conta para pintar",
@@ -1992,8 +1992,8 @@ const La = () => "Your account has been suspended for breaking the rules",
   },
   Th = () => "No internet access or the servers are offline. Try again later.",
   Sh = () => "Sem acesso à internet ou os servidores estão fora do ar. Tente novamente mais tarde.",
-  Ih = () => "没有网络连接或服务器已离线。请稍后重试。",
-  Oh = () => "Keine Internetverbindung oder Server offline. Versuche es später erneut.",
+  Oh = () => "没有网络连接或服务器已离线。请稍后重试。",
+  Ih = () => "Keine Internetverbindung oder Server offline. Versuche es später erneut.",
   kh = () => "Sin acceso a internet o los servidores están fuera de línea. Inténtalo de nuevo más tarde.",
   Ah = () => "Pas d’accès à Internet ou serveurs hors ligne. Réessayez plus tard.",
   Nh = () => "Nessun accesso a internet o server offline. Riprova più tardi.",
@@ -2004,13 +2004,13 @@ const La = () => "Your account has been suspended for breaking the rules",
   Lh = () => "Không có kết nối internet hoặc máy chủ đang ngoại tuyến. Hãy thử lại sau.",
   Mh = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? Th() : e === "pt" ? Sh() : e === "ch" ? Ih() : e === "de" ? Oh() : e === "es" ? kh() : e === "fr" ? Ah() : e === "it" ? Nh() : e === "jp" ? Rh() : e === "pl" ? xh() : e === "ru" ? Dh() : e === "uk" ? Ph() : Lh()
+    return e === "en" ? Th() : e === "pt" ? Sh() : e === "ch" ? Oh() : e === "de" ? Ih() : e === "es" ? kh() : e === "fr" ? Ah() : e === "it" ? Nh() : e === "jp" ? Rh() : e === "pl" ? xh() : e === "ru" ? Dh() : e === "uk" ? Ph() : Lh()
   },
   Uh = () => "You are not allowed to verify a phone number. Try refreshing the page",
   Ch = () => "Você não está autorizado a verificar um número de telefone. Tente atualizar a página.",
   jh = () => "您无权验证电话号码。请尝试刷新页面。",
-  Fh = () => "Sie dürfen keine Telefonnummer verifizieren. Versuchen Sie, die Seite zu aktualisieren.",
-  Bh = () => "No tienes permiso para verificar un número de teléfono. Prueba a recargar la página.",
+  Bh = () => "Sie dürfen keine Telefonnummer verifizieren. Versuchen Sie, die Seite zu aktualisieren.",
+  Fh = () => "No tienes permiso para verificar un número de teléfono. Prueba a recargar la página.",
   zh = () => "Vous n'êtes pas autorisé à vérifier un numéro de téléphone. Essayez d'actualiser la page.",
   Vh = () => "Non ti è consentito verificare un numero di telefono. Prova ad aggiornare la pagina.",
   Gh = () => "電話番号の認証は許可されていません。ページを更新してみてください。",
@@ -2020,7 +2020,7 @@ const La = () => "Your account has been suspended for breaking the rules",
   Yh = () => "Bạn không được phép xác minh số điện thoại. Vui lòng thử tải lại trang.",
   Hh = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? Uh() : e === "pt" ? Ch() : e === "ch" ? jh() : e === "de" ? Fh() : e === "es" ? Bh() : e === "fr" ? zh() : e === "it" ? Vh() : e === "jp" ? Gh() : e === "pl" ? Wh() : e === "ru" ? qh() : e === "uk" ? Kh() : Yh()
+    return e === "en" ? Uh() : e === "pt" ? Ch() : e === "ch" ? jh() : e === "de" ? Bh() : e === "es" ? Fh() : e === "fr" ? zh() : e === "it" ? Vh() : e === "jp" ? Gh() : e === "pl" ? Wh() : e === "ru" ? qh() : e === "uk" ? Kh() : Yh()
   },
   $h = () => "Operation not allowed. Maybe you have too many favorite locations.",
   Zh = () => "Operação não permitida. Talvez você tenha muitos locais favoritos.",
@@ -2059,8 +2059,8 @@ const La = () => "Your account has been suspended for breaking the rules",
   Ep = () => "电话号码已被使用",
   Tp = () => "Telefonnummer bereits verwendet",
   Sp = () => "Teléfono ya utilizado",
-  Ip = () => "Téléphone déjà utilisé",
-  Op = () => "Telefono già utilizzato",
+  Op = () => "Téléphone déjà utilisé",
+  Ip = () => "Telefono già utilizzato",
   kp = () => "この電話番号は既に使用されています。",
   Ap = () => "Numer telefonu jest już używany",
   Np = () => "Телефон уже используется",
@@ -2068,7 +2068,7 @@ const La = () => "Your account has been suspended for breaking the rules",
   xp = () => "Số điện thoại đã được sử dụng",
   Dp = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? vp() : e === "pt" ? bp() : e === "ch" ? Ep() : e === "de" ? Tp() : e === "es" ? Sp() : e === "fr" ? Ip() : e === "it" ? Op() : e === "jp" ? kp() : e === "pl" ? Ap() : e === "ru" ? Np() : e === "uk" ? Rp() : xp()
+    return e === "en" ? vp() : e === "pt" ? bp() : e === "ch" ? Ep() : e === "de" ? Tp() : e === "es" ? Sp() : e === "fr" ? Op() : e === "it" ? Ip() : e === "jp" ? kp() : e === "pl" ? Ap() : e === "ru" ? Np() : e === "uk" ? Rp() : xp()
   },
   Pp = () => "This phone number's region is not supported",
   Lp = () => "A região deste número de telefone não é suportada",
@@ -2076,15 +2076,15 @@ const La = () => "Your account has been suspended for breaking the rules",
   Up = () => "Die Region dieser Telefonnummer wird nicht unterstützt",
   Cp = () => "La región de este número de teléfono no es compatible",
   jp = () => "La région de ce numéro de téléphone n'est pas prise en charge",
-  Fp = () => "La regione di questo numero di telefono non è supportata",
-  Bp = () => "この電話番号の地域はサポートされていません",
+  Bp = () => "La regione di questo numero di telefono non è supportata",
+  Fp = () => "この電話番号の地域はサポートされていません",
   zp = () => "Region tego numeru telefonu nie jest obsługiwany",
   Vp = () => "Регион этого номера телефона не поддерживается",
   Gp = () => "Регіон цього номера телефону не підтримується",
   Wp = () => "Vùng của số điện thoại này không được hỗ trợ",
   qp = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? Pp() : e === "pt" ? Lp() : e === "ch" ? Mp() : e === "de" ? Up() : e === "es" ? Cp() : e === "fr" ? jp() : e === "it" ? Fp() : e === "jp" ? Bp() : e === "pl" ? zp() : e === "ru" ? Vp() : e === "uk" ? Gp() : Wp()
+    return e === "en" ? Pp() : e === "pt" ? Lp() : e === "ch" ? Mp() : e === "de" ? Up() : e === "es" ? Cp() : e === "fr" ? jp() : e === "it" ? Bp() : e === "jp" ? Fp() : e === "pl" ? zp() : e === "ru" ? Vp() : e === "uk" ? Gp() : Wp()
   },
   Kp = () => "Refresh your page to get the latest update",
   Yp = () => "Recarregue sua página para obter as últimas atualizações",
@@ -2126,13 +2126,13 @@ const La = () => "Your account has been suspended for breaking the rules",
   Em = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
   Tm = () => "L'area selezionata ha troppa cronologia per esportare un timelapse. Prova con un'area più piccola.",
   Sm = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  Im = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
   Om = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Im = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
   km = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
   Am = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
   Nm = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? gm() : e === "pt" ? wm() : e === "ch" ? ym() : e === "de" ? vm() : e === "es" ? bm() : e === "fr" ? Em() : e === "it" ? Tm() : e === "jp" ? Sm() : e === "pl" ? Im() : e === "ru" ? Om() : e === "uk" ? km() : Am()
+    return e === "en" ? gm() : e === "pt" ? wm() : e === "ch" ? ym() : e === "de" ? vm() : e === "es" ? bm() : e === "fr" ? Em() : e === "it" ? Tm() : e === "jp" ? Sm() : e === "pl" ? Om() : e === "ru" ? Im() : e === "uk" ? km() : Am()
   },
   Rm = () => "The service is currently unavailable. Please try again later.",
   xm = () => "O serviço está indisponível no momento. Por favor, tente novamente mais tarde.",
@@ -2143,12 +2143,12 @@ const La = () => "Your account has been suspended for breaking the rules",
   Um = () => "Il servizio non è attualmente disponibile. Riprova più tardi.",
   Cm = () => "現在、サービスはご利用いただけません。後でもう一度お試しください。",
   jm = () => "Usługa jest obecnie niedostępna. Proszę spróbować ponownie później.",
-  Fm = () => "Сервис в настоящее время недоступен. Пожалуйста, попробуйте позже.",
-  Bm = () => "Сервіс наразі недоступний. Будь ласка, спробуйте пізніше.",
+  Bm = () => "Сервис в настоящее время недоступен. Пожалуйста, попробуйте позже.",
+  Fm = () => "Сервіс наразі недоступний. Будь ласка, спробуйте пізніше.",
   zm = () => "Dịch vụ hiện không khả dụng. Vui lòng thử lại sau.",
   Vm = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? Rm() : e === "pt" ? xm() : e === "ch" ? Dm() : e === "de" ? Pm() : e === "es" ? Lm() : e === "fr" ? Mm() : e === "it" ? Um() : e === "jp" ? Cm() : e === "pl" ? jm() : e === "ru" ? Fm() : e === "uk" ? Bm() : zm()
+    return e === "en" ? Rm() : e === "pt" ? xm() : e === "ch" ? Dm() : e === "de" ? Pm() : e === "es" ? Lm() : e === "fr" ? Mm() : e === "it" ? Um() : e === "jp" ? Cm() : e === "pl" ? jm() : e === "ru" ? Bm() : e === "uk" ? Fm() : zm()
   },
   Gm = () => "Too many attempts. Please try again later",
   Wm = () => "Muitas tentativas. Por favor, tente novamente mais tarde.",
@@ -2193,10 +2193,10 @@ const La = () => "Your account has been suspended for breaking the rules",
   Eg = () => "Wpisana nazwa użytkownika nie zgadza się z obecną nazwą.",
   Tg = () => "Введённое имя пользователя не совпадает с текущим.",
   Sg = () => "Введене імʼя користувача не збігається з поточним.",
-  Ig = () => "Tên người dùng nhập vào không trùng với tên hiện tại.",
-  Og = (n = {}, t = {}) => {
+  Og = () => "Tên người dùng nhập vào không trùng với tên hiện tại.",
+  Ig = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? hg() : e === "pt" ? pg() : e === "ch" ? mg() : e === "de" ? gg() : e === "es" ? wg() : e === "fr" ? yg() : e === "it" ? vg() : e === "jp" ? bg() : e === "pl" ? Eg() : e === "ru" ? Tg() : e === "uk" ? Sg() : Ig()
+    return e === "en" ? hg() : e === "pt" ? pg() : e === "ch" ? mg() : e === "de" ? gg() : e === "es" ? wg() : e === "fr" ? yg() : e === "it" ? vg() : e === "jp" ? bg() : e === "pl" ? Eg() : e === "ru" ? Tg() : e === "uk" ? Sg() : Og()
   },
   kg = () => "Unexpected server error. Try again later.",
   Ag = () => "Erro inesperado do servidor. Tente novamente mais tarde.",
@@ -2214,8 +2214,8 @@ const La = () => "Your account has been suspended for breaking the rules",
     const e = t.locale ?? m();
     return e === "en" ? kg() : e === "pt" ? Ag() : e === "ch" ? Ng() : e === "de" ? Rg() : e === "es" ? xg() : e === "fr" ? Dg() : e === "it" ? Pg() : e === "jp" ? Lg() : e === "pl" ? Mg() : e === "ru" ? Ug() : e === "uk" ? Cg() : jg()
   },
-  Fg = () => "The phone number is unsubscribed from SMS notifications. Check the link for more info: https://www.twilio.com/docs/api/errors/21610",
-  Bg = () => "O número de telefone foi desinscrito das notificações por SMS. Verifique o link para mais informações: https://www.twilio.com/docs/api/errors/21610",
+  Bg = () => "The phone number is unsubscribed from SMS notifications. Check the link for more info: https://www.twilio.com/docs/api/errors/21610",
+  Fg = () => "O número de telefone foi desinscrito das notificações por SMS. Verifique o link para mais informações: https://www.twilio.com/docs/api/errors/21610",
   zg = () => "电话号码已退订短信通知。请查看链接获取更多信息：https://www.twilio.com/docs/api/errors/21610",
   Vg = () => "Die Telefonnummer wurde von SMS-Benachrichtigungen abgemeldet. Weitere Informationen finden Sie unter: https://www.twilio.com/docs/api/errors/21610",
   Gg = () => "El número de teléfono ha sido dado de baja de las notificaciones por SMS. Consulta el enlace para más información: https://www.twilio.com/docs/api/errors/21610",
@@ -2228,7 +2228,7 @@ const La = () => "Your account has been suspended for breaking the rules",
   Zg = () => "Số điện thoại này đã hủy đăng ký nhận thông báo SMS. Kiểm tra liên kết để biết thêm thông tin: https://www.twilio.com/docs/api/errors/21610",
   Jg = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? Fg() : e === "pt" ? Bg() : e === "ch" ? zg() : e === "de" ? Vg() : e === "es" ? Gg() : e === "fr" ? Wg() : e === "it" ? qg() : e === "jp" ? Kg() : e === "pl" ? Yg() : e === "ru" ? Hg() : e === "uk" ? $g() : Zg()
+    return e === "en" ? Bg() : e === "pt" ? Fg() : e === "ch" ? zg() : e === "de" ? Vg() : e === "es" ? Gg() : e === "fr" ? Wg() : e === "it" ? qg() : e === "jp" ? Kg() : e === "pl" ? Yg() : e === "ru" ? Hg() : e === "uk" ? $g() : Zg()
   },
   Xg = () => "VPN or proxy detected. Please disable your VPN and try again.",
   Qg = () => "VPN ou proxy detectado. Por favor, desative sua VPN e tente novamente.",
@@ -2263,8 +2263,8 @@ const La = () => "Your account has been suspended for breaking the rules",
     return e === "en" ? dw() : e === "pt" ? _w() : e === "ch" ? fw() : e === "de" ? hw() : e === "es" ? pw() : e === "fr" ? mw() : e === "it" ? gw() : e === "jp" ? ww() : e === "pl" ? yw() : e === "ru" ? vw() : e === "uk" ? bw() : Ew()
   },
   Sw = () => "You already have this item. Please refresh the page.",
-  Iw = () => "Você já possui este item. Atualize a página.",
-  Ow = () => "你已经拥有此物品。请刷新页面。",
+  Ow = () => "Você já possui este item. Atualize a página.",
+  Iw = () => "你已经拥有此物品。请刷新页面。",
   kw = () => "Du besitzt dieses Item bereits. Bitte aktualisiere die Seite.",
   Aw = () => "Ya tienes este ítem. Actualiza la página.",
   Nw = () => "Vous possédez déjà cet objet. Actualisez la page.",
@@ -2276,13 +2276,13 @@ const La = () => "Your account has been suspended for breaking the rules",
   Mw = () => "Bạn đã sở hữu vật phẩm này. Hãy tải lại trang.",
   En = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? Sw() : e === "pt" ? Iw() : e === "ch" ? Ow() : e === "de" ? kw() : e === "es" ? Aw() : e === "fr" ? Nw() : e === "it" ? Rw() : e === "jp" ? xw() : e === "pl" ? Dw() : e === "ru" ? Pw() : e === "uk" ? Lw() : Mw()
+    return e === "en" ? Sw() : e === "pt" ? Ow() : e === "ch" ? Iw() : e === "de" ? kw() : e === "es" ? Aw() : e === "fr" ? Nw() : e === "it" ? Rw() : e === "jp" ? xw() : e === "pl" ? Dw() : e === "ru" ? Pw() : e === "uk" ? Lw() : Mw()
   },
   Uw = () => "You are already in an alliance",
   Cw = () => "Você já está em uma aliança",
   jw = () => "你已经在一个联盟中",
-  Fw = () => "Du bist bereits in einer Allianz",
-  Bw = () => "Ya estás en una alianza",
+  Bw = () => "Du bist bereits in einer Allianz",
+  Fw = () => "Ya estás en una alianza",
   zw = () => "Vous êtes déjà dans une alliance",
   Vw = () => "Sei già in un'alleanza",
   Gw = () => "すでにアライアンスに所属しています。",
@@ -2292,7 +2292,7 @@ const La = () => "Your account has been suspended for breaking the rules",
   Yw = () => "Bạn đã ở trong một liên minh",
   Hw = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? Uw() : e === "pt" ? Cw() : e === "ch" ? jw() : e === "de" ? Fw() : e === "es" ? Bw() : e === "fr" ? zw() : e === "it" ? Vw() : e === "jp" ? Gw() : e === "pl" ? Ww() : e === "ru" ? qw() : e === "uk" ? Kw() : Yw()
+    return e === "en" ? Uw() : e === "pt" ? Cw() : e === "ch" ? jw() : e === "de" ? Bw() : e === "es" ? Fw() : e === "fr" ? zw() : e === "it" ? Vw() : e === "jp" ? Gw() : e === "pl" ? Ww() : e === "ru" ? qw() : e === "uk" ? Kw() : Yw()
   },
   $w = () => "You are not allowed to do this",
   Zw = () => "Você não tem permissão para fazer isso",
@@ -2332,15 +2332,15 @@ const La = () => "Your account has been suspended for breaking the rules",
   Ey = () => "Du musst eingeloggt sein, um zu malen",
   Ty = () => "Debes iniciar sesión para pintar",
   Sy = () => "Vous devez être connecté pour peindre",
-  Iy = () => "Devi avere effettuato l'accesso per dipingere",
-  Oy = () => "ペイントするにはログインが必要です。",
+  Oy = () => "Devi avere effettuato l'accesso per dipingere",
+  Iy = () => "ペイントするにはログインが必要です。",
   ky = () => "Musisz być zalogowany, aby malować",
   Ay = () => "Чтобы рисовать, нужно войти в аккаунт",
   Ny = () => "Щоб малювати, необхідно увійти в акаунт",
   Ry = () => "Bạn cần đăng nhập để tô",
   Sn = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? yy() : e === "pt" ? vy() : e === "ch" ? by() : e === "de" ? Ey() : e === "es" ? Ty() : e === "fr" ? Sy() : e === "it" ? Iy() : e === "jp" ? Oy() : e === "pl" ? ky() : e === "ru" ? Ay() : e === "uk" ? Ny() : Ry()
+    return e === "en" ? yy() : e === "pt" ? vy() : e === "ch" ? by() : e === "de" ? Ey() : e === "es" ? Ty() : e === "fr" ? Sy() : e === "it" ? Oy() : e === "jp" ? Iy() : e === "pl" ? ky() : e === "ru" ? Ay() : e === "uk" ? Ny() : Ry()
   },
   xy = () => "You or someone in your network is making a lot of requests to the server. Try again later.",
   Dy = () => "Você ou alguém na sua rede está fazendo muitas solicitações ao servidor. Tente novamente mais tarde.",
@@ -2350,13 +2350,13 @@ const La = () => "Your account has been suspended for breaking the rules",
   Uy = () => "Vous ou quelqu’un sur votre réseau envoie beaucoup de requêtes au serveur. Réessayez plus tard.",
   Cy = () => "Tu o qualcuno nella tua rete state facendo troppe richieste al server. Riprova più tardi.",
   jy = () => "あなた、または同じネットワーク上の誰かがサーバーへ大量のリクエストを送信しています。しばらくしてから再度お試しください。",
-  Fy = () => "Ty lub ktoś w Twojej sieci wysyła zbyt wiele żądań do serwera. Spróbuj ponownie później.",
-  By = () => "Вы или кто-то в вашей сети делает слишком много запросов к серверу. Попробуйте позже.",
+  By = () => "Ty lub ktoś w Twojej sieci wysyła zbyt wiele żądań do serwera. Spróbuj ponownie później.",
+  Fy = () => "Вы или кто-то в вашей сети делает слишком много запросов к серверу. Попробуйте позже.",
   zy = () => "Ви або хтось у вашій мережі надсилає надто багато запитів до сервера. Спробуйте пізніше.",
   Vy = () => "Bạn hoặc ai đó trong mạng của bạn đang gửi quá nhiều yêu cầu đến máy chủ. Hãy thử lại sau.",
   Gy = (n = {}, t = {}) => {
     const e = t.locale ?? m();
-    return e === "en" ? xy() : e === "pt" ? Dy() : e === "ch" ? Py() : e === "de" ? Ly() : e === "es" ? My() : e === "fr" ? Uy() : e === "it" ? Cy() : e === "jp" ? jy() : e === "pl" ? Fy() : e === "ru" ? By() : e === "uk" ? zy() : Vy()
+    return e === "en" ? xy() : e === "pt" ? Dy() : e === "ch" ? Py() : e === "de" ? Ly() : e === "es" ? My() : e === "fr" ? Uy() : e === "it" ? Cy() : e === "jp" ? jy() : e === "pl" ? By() : e === "ru" ? Fy() : e === "uk" ? zy() : Vy()
   },
   Wy = n => `Your account has been suspended out until ${n.until}`,
   qy = n => `A sua conta está suspensa até ${n.until}`,
@@ -2370,7 +2370,7 @@ const La = () => "Your account has been suspended for breaking the rules",
   Qy = n => `Ваш аккаунт заблокирован до ${n.until}`,
   ev = n => `Ваш акаунт призупинено до ${n.until}`,
   tv = n => `Tài khoản của bạn đã bị đình chỉ đến ${n.until}`,
-  In = (n, t = {}) => {
+  On = (n, t = {}) => {
     const e = t.locale ?? m();
     return e === "en" ? Wy(n) : e === "pt" ? qy(n) : e === "ch" ? Ky(n) : e === "de" ? Yy(n) : e === "es" ? Hy(n) : e === "fr" ? $y(n) : e === "it" ? Zy(n) : e === "jp" ? Jy(n) : e === "pl" ? Xy(n) : e === "ru" ? Qy(n) : e === "uk" ? ev(n) : tv(n)
   },
@@ -2381,7 +2381,7 @@ const La = () => "Your account has been suspended for breaking the rules",
     second: 1e3
   };
 
-function wE(n) {
+function bE(n) {
   const t = Math.floor(n / pe.hour);
   n -= t * pe.hour;
   const e = Math.floor(n / pe.minute);
@@ -2390,7 +2390,7 @@ function wE(n) {
   return t > 0 ? `${t}:${e.toString().padStart(2,"0")}:${a}` : `${e}:${a}`
 }
 
-function yE(n) {
+function EE(n) {
   const t = n.getFullYear(),
     e = String(n.getMonth() + 1).padStart(2, "0"),
     r = String(n.getDate()).padStart(2, "0"),
@@ -2399,7 +2399,7 @@ function yE(n) {
     o = String(n.getSeconds()).padStart(2, "0");
   return `${t}-${e}-${r} ${a}:${i}:${o}`
 }
-const vE = {
+const TE = {
     griefing: il(),
     "multi-accounting": Zf(),
     "hate-speech": xl(),
@@ -2408,7 +2408,7 @@ const vE = {
     "inappropriate-content": rd(),
     other: go()
   },
-  bE = {
+  SE = {
     doxxing: Ec(),
     "hate-speech": Wl(),
     griefing: wl(),
@@ -2417,7 +2417,7 @@ const vE = {
     "inappropriate-content": md(),
     other: Ro()
   },
-  EE = {
+  OE = {
     doxxing: "text-red-600",
     "hate-speech": "text-red-400",
     "inappropriate-content": "text-amber-500",
@@ -2426,7 +2426,7 @@ const vE = {
     griefing: "text-amber-200",
     other: "text-cyan-600"
   },
-  On = {
+  In = {
     doxxing: 0,
     "hate-speech": 1,
     "inappropriate-content": 2,
@@ -2435,7 +2435,7 @@ const vE = {
     other: 5,
     griefing: 6
   },
-  TE = {
+  IE = {
     griefing: "topic-2",
     "inappropriate-content": "topic-1",
     bot: "topic-3",
@@ -2452,12 +2452,12 @@ function nr(n) {
   return Number.isFinite(e) ? e : null
 }
 
-function SE(n, t = Date.now()) {
+function kE(n, t = Date.now()) {
   const e = nr(n);
   return e === null ? !1 : e - t >= nv
 }
 
-function IE(n, t = Date.now()) {
+function AE(n, t = Date.now()) {
   const e = nr(n);
   if (e === null || e <= t) return {
     days: 0,
@@ -2473,6 +2473,21 @@ function IE(n, t = Date.now()) {
     hours: i,
     minutes: o
   }
+}
+const rv = /; wv\)|FBAN|FBAV|Instagram|BytedanceWebview|musical_ly|Line\/|Snapchat|Twitter|MicroMessenger/i;
+
+function NE() {
+  return av() ? !1 : rv.test(navigator.userAgent)
+}
+
+function av() {
+  return !!(window != null && window.ReactNativeWebView)
+}
+
+function iv() {
+  const n = navigator.userAgent,
+    t = navigator.vendor ?? "";
+  return "brave" in navigator ? "Brave" : /\bEdg(?:e|A|iOS)?\//.test(n) ? "Edge" : /\bOPR\/|\bOpera\//.test(n) ? "Opera" : /\bVivaldi\//.test(n) ? "Vivaldi" : /\bYaBrowser\//.test(n) ? "Yandex" : /\bSamsungBrowser\//.test(n) ? "Samsung Internet" : /\bUCBrowser\/|\bUCWEB\//.test(n) ? "UC Browser" : /\bDuckDuckGo\//.test(n) ? "DuckDuckGo" : getComputedStyle(document.documentElement).getPropertyValue("--arc-palette-title") ? "Arc" : /Firefox\/|FxiOS\//.test(n) ? "Firefox" : /Chrome\/|CriOS\//.test(n) && /google/i.test(t) ? "Chrome" : /Safari\//.test(n) && /apple/i.test(t) ? "Safari" : "Unknown"
 }
 var Ut = function() {
   return Ut = Object.assign || function(t) {
@@ -2493,24 +2508,24 @@ function Q(n, t, e, r) {
   return new(e || (e = Promise))(function(i, o) {
     function s(_) {
       try {
-        u(r.next(_))
-      } catch (d) {
-        o(d)
-      }
-    }
-
-    function l(_) {
-      try {
-        u(r.throw(_))
+        l(r.next(_))
       } catch (d) {
         o(d)
       }
     }
 
     function u(_) {
-      _.done ? i(_.value) : a(_.value).then(s, l)
+      try {
+        l(r.throw(_))
+      } catch (d) {
+        o(d)
+      }
     }
-    u((r = r.apply(n, t || [])).next())
+
+    function l(_) {
+      _.done ? i(_.value) : a(_.value).then(s, u)
+    }
+    l((r = r.apply(n, t || [])).next())
   })
 }
 
@@ -2529,61 +2544,61 @@ function ee(n, t) {
     return this
   }), o;
 
-  function s(u) {
+  function s(l) {
     return function(_) {
-      return l([u, _])
+      return u([l, _])
     }
   }
 
-  function l(u) {
+  function u(l) {
     if (r) throw new TypeError("Generator is already executing.");
-    for (; o && (o = 0, u[0] && (e = 0)), e;) try {
-      if (r = 1, a && (i = u[0] & 2 ? a.return : u[0] ? a.throw || ((i = a.return) && i.call(a), 0) : a.next) && !(i = i.call(a, u[1])).done) return i;
-      switch (a = 0, i && (u = [u[0] & 2, i.value]), u[0]) {
+    for (; o && (o = 0, l[0] && (e = 0)), e;) try {
+      if (r = 1, a && (i = l[0] & 2 ? a.return : l[0] ? a.throw || ((i = a.return) && i.call(a), 0) : a.next) && !(i = i.call(a, l[1])).done) return i;
+      switch (a = 0, i && (l = [l[0] & 2, i.value]), l[0]) {
         case 0:
         case 1:
-          i = u;
+          i = l;
           break;
         case 4:
           return e.label++, {
-            value: u[1],
+            value: l[1],
             done: !1
           };
         case 5:
-          e.label++, a = u[1], u = [0];
+          e.label++, a = l[1], l = [0];
           continue;
         case 7:
-          u = e.ops.pop(), e.trys.pop();
+          l = e.ops.pop(), e.trys.pop();
           continue;
         default:
-          if (i = e.trys, !(i = i.length > 0 && i[i.length - 1]) && (u[0] === 6 || u[0] === 2)) {
+          if (i = e.trys, !(i = i.length > 0 && i[i.length - 1]) && (l[0] === 6 || l[0] === 2)) {
             e = 0;
             continue
           }
-          if (u[0] === 3 && (!i || u[1] > i[0] && u[1] < i[3])) {
-            e.label = u[1];
+          if (l[0] === 3 && (!i || l[1] > i[0] && l[1] < i[3])) {
+            e.label = l[1];
             break
           }
-          if (u[0] === 6 && e.label < i[1]) {
-            e.label = i[1], i = u;
+          if (l[0] === 6 && e.label < i[1]) {
+            e.label = i[1], i = l;
             break
           }
           if (i && e.label < i[2]) {
-            e.label = i[2], e.ops.push(u);
+            e.label = i[2], e.ops.push(l);
             break
           }
           i[2] && e.ops.pop(), e.trys.pop();
           continue
       }
-      u = t.call(n, e)
+      l = t.call(n, e)
     } catch (_) {
-      u = [6, _], a = 0
+      l = [6, _], a = 0
     } finally {
       r = i = 0
     }
-    if (u[0] & 5) throw u[1];
+    if (l[0] & 5) throw l[1];
     return {
-      value: u[0] ? u[1] : void 0,
+      value: l[0] ? l[1] : void 0,
       done: !0
     }
   }
@@ -2602,7 +2617,7 @@ function yt(n, t) {
   })
 }
 
-function rv() {
+function ov() {
   return new Promise(function(n) {
     var t = new MessageChannel;
     t.port1.onmessage = function() {
@@ -2611,7 +2626,7 @@ function rv() {
   })
 }
 
-function av(n, t) {
+function sv(n, t) {
   t === void 0 && (t = 1 / 0);
   var e = window.requestIdleCallback;
   return e ? new Promise(function(r) {
@@ -2648,7 +2663,7 @@ function An(n, t, e) {
         case 0:
           r = Array(n.length), a = Date.now(), i = 0, s.label = 1;
         case 1:
-          return i < n.length ? (r[i] = t(n[i], i), o = Date.now(), o >= a + e ? (a = o, [4, rv()]) : [3, 3]) : [3, 4];
+          return i < n.length ? (r[i] = t(n[i], i), o = Date.now(), o >= a + e ? (a = o, [4, ov()]) : [3, 3]) : [3, 4];
         case 2:
           s.sent(), s.label = 3;
         case 3:
@@ -2664,14 +2679,14 @@ function Ce(n) {
   return n.then(void 0, function() {}), n
 }
 
-function iv(n, t) {
+function cv(n, t) {
   for (var e = 0, r = n.length; e < r; ++e)
     if (n[e] === t) return !0;
   return !1
 }
 
-function ov(n, t) {
-  return !iv(n, t)
+function uv(n, t) {
+  return !cv(n, t)
 }
 
 function $t(n) {
@@ -2698,23 +2713,23 @@ function or(n, t) {
   return Math.round(n * e) / e
 }
 
-function sv(n) {
-  for (var t, e, r = "Unexpected syntax '".concat(n, "'"), a = /^\s*([a-z-]*)(.*)$/i.exec(n), i = a[1] || void 0, o = {}, s = /([.:#][\w-]+|\[.+?\])/gi, l = function(p, g) {
-      o[p] = o[p] || [], o[p].push(g)
+function lv(n) {
+  for (var t, e, r = "Unexpected syntax '".concat(n, "'"), a = /^\s*([a-z-]*)(.*)$/i.exec(n), i = a[1] || void 0, o = {}, s = /([.:#][\w-]+|\[.+?\])/gi, u = function(p, y) {
+      o[p] = o[p] || [], o[p].push(y)
     };;) {
-    var u = s.exec(a[2]);
-    if (!u) break;
-    var _ = u[0];
+    var l = s.exec(a[2]);
+    if (!l) break;
+    var _ = l[0];
     switch (_[0]) {
       case ".":
-        l("class", _.slice(1));
+        u("class", _.slice(1));
         break;
       case "#":
-        l("id", _.slice(1));
+        u("id", _.slice(1));
         break;
       case "[": {
         var d = /^\[([\w-]+)([~|^$*]?=("(.*?)"|([\w-]+)))?(\s+[is])?\]$/.exec(_);
-        if (d) l(d[1], (e = (t = d[4]) !== null && t !== void 0 ? t : d[5]) !== null && e !== void 0 ? e : "");
+        if (d) u(d[1], (e = (t = d[4]) !== null && t !== void 0 ? t : d[5]) !== null && e !== void 0 ? e : "");
         else throw new Error(r);
         break
       }
@@ -2725,7 +2740,7 @@ function sv(n) {
   return [i, o]
 }
 
-function cv(n) {
+function dv(n) {
   for (var t = new Uint8Array(n.length), e = 0; e < n.length; e++) {
     var r = n.charCodeAt(e);
     if (r > 127) return new TextEncoder().encode(n);
@@ -2741,13 +2756,13 @@ function se(n, t) {
     i = n[1] & 65535,
     o = t[0] >>> 16,
     s = t[0] & 65535,
-    l = t[1] >>> 16,
-    u = t[1] & 65535,
+    u = t[1] >>> 16,
+    l = t[1] & 65535,
     _ = 0,
     d = 0,
     p = 0,
-    g = 0;
-  g += i + u, p += g >>> 16, g &= 65535, p += a + l, d += p >>> 16, p &= 65535, d += r + s, _ += d >>> 16, d &= 65535, _ += e + o, _ &= 65535, n[0] = _ << 16 | d, n[1] = p << 16 | g
+    y = 0;
+  y += i + l, p += y >>> 16, y &= 65535, p += a + u, d += p >>> 16, p &= 65535, d += r + s, _ += d >>> 16, d &= 65535, _ += e + o, _ &= 65535, n[0] = _ << 16 | d, n[1] = p << 16 | y
 }
 
 function H(n, t) {
@@ -2757,13 +2772,13 @@ function H(n, t) {
     i = n[1] & 65535,
     o = t[0] >>> 16,
     s = t[0] & 65535,
-    l = t[1] >>> 16,
-    u = t[1] & 65535,
+    u = t[1] >>> 16,
+    l = t[1] & 65535,
     _ = 0,
     d = 0,
     p = 0,
-    g = 0;
-  g += i * u, p += g >>> 16, g &= 65535, p += a * u, d += p >>> 16, p &= 65535, p += i * l, d += p >>> 16, p &= 65535, d += r * u, _ += d >>> 16, d &= 65535, d += a * l, _ += d >>> 16, d &= 65535, d += i * s, _ += d >>> 16, d &= 65535, _ += e * u + r * l + a * s + i * o, _ &= 65535, n[0] = _ << 16 | d, n[1] = p << 16 | g
+    y = 0;
+  y += i * l, p += y >>> 16, y &= 65535, p += a * l, d += p >>> 16, p &= 65535, p += i * u, d += p >>> 16, p &= 65535, d += r * l, _ += d >>> 16, d &= 65535, d += a * u, _ += d >>> 16, d &= 65535, d += i * s, _ += d >>> 16, d &= 65535, _ += e * l + r * u + a * s + i * o, _ &= 65535, n[0] = _ << 16 | d, n[1] = p << 16 | y
 }
 
 function Ee(n, t) {
@@ -2778,69 +2793,69 @@ function K(n, t) {
 function M(n, t) {
   n[0] ^= t[0], n[1] ^= t[1]
 }
-var uv = [4283543511, 3981806797],
-  lv = [3301882366, 444984403];
+var _v = [4283543511, 3981806797],
+  fv = [3301882366, 444984403];
 
 function Nn(n) {
   var t = [0, n[0] >>> 1];
-  M(n, t), H(n, uv), t[1] = n[0] >>> 1, M(n, t), H(n, lv), t[1] = n[0] >>> 1, M(n, t)
+  M(n, t), H(n, _v), t[1] = n[0] >>> 1, M(n, t), H(n, fv), t[1] = n[0] >>> 1, M(n, t)
 }
 var _t = [2277735313, 289559509],
   ft = [1291169091, 658871167],
   Rn = [0, 5],
-  dv = [0, 1390208809],
-  _v = [0, 944331445];
+  hv = [0, 1390208809],
+  pv = [0, 944331445];
 
-function fv(n, t) {
-  var e = cv(n);
+function mv(n, t) {
+  var e = dv(n);
   t = t || 0;
   var r = [0, e.length],
     a = r[1] % 16,
     i = r[1] - a,
     o = [0, t],
     s = [0, t],
-    l = [0, 0],
     u = [0, 0],
+    l = [0, 0],
     _;
-  for (_ = 0; _ < i; _ = _ + 16) l[0] = e[_ + 4] | e[_ + 5] << 8 | e[_ + 6] << 16 | e[_ + 7] << 24, l[1] = e[_] | e[_ + 1] << 8 | e[_ + 2] << 16 | e[_ + 3] << 24, u[0] = e[_ + 12] | e[_ + 13] << 8 | e[_ + 14] << 16 | e[_ + 15] << 24, u[1] = e[_ + 8] | e[_ + 9] << 8 | e[_ + 10] << 16 | e[_ + 11] << 24, H(l, _t), Ee(l, 31), H(l, ft), M(o, l), Ee(o, 27), se(o, s), H(o, Rn), se(o, dv), H(u, ft), Ee(u, 33), H(u, _t), M(s, u), Ee(s, 31), se(s, o), H(s, Rn), se(s, _v);
-  l[0] = 0, l[1] = 0, u[0] = 0, u[1] = 0;
+  for (_ = 0; _ < i; _ = _ + 16) u[0] = e[_ + 4] | e[_ + 5] << 8 | e[_ + 6] << 16 | e[_ + 7] << 24, u[1] = e[_] | e[_ + 1] << 8 | e[_ + 2] << 16 | e[_ + 3] << 24, l[0] = e[_ + 12] | e[_ + 13] << 8 | e[_ + 14] << 16 | e[_ + 15] << 24, l[1] = e[_ + 8] | e[_ + 9] << 8 | e[_ + 10] << 16 | e[_ + 11] << 24, H(u, _t), Ee(u, 31), H(u, ft), M(o, u), Ee(o, 27), se(o, s), H(o, Rn), se(o, hv), H(l, ft), Ee(l, 33), H(l, _t), M(s, l), Ee(s, 31), se(s, o), H(s, Rn), se(s, pv);
+  u[0] = 0, u[1] = 0, l[0] = 0, l[1] = 0;
   var d = [0, 0];
   switch (a) {
     case 15:
-      d[1] = e[_ + 14], K(d, 48), M(u, d);
+      d[1] = e[_ + 14], K(d, 48), M(l, d);
     case 14:
-      d[1] = e[_ + 13], K(d, 40), M(u, d);
+      d[1] = e[_ + 13], K(d, 40), M(l, d);
     case 13:
-      d[1] = e[_ + 12], K(d, 32), M(u, d);
+      d[1] = e[_ + 12], K(d, 32), M(l, d);
     case 12:
-      d[1] = e[_ + 11], K(d, 24), M(u, d);
+      d[1] = e[_ + 11], K(d, 24), M(l, d);
     case 11:
-      d[1] = e[_ + 10], K(d, 16), M(u, d);
+      d[1] = e[_ + 10], K(d, 16), M(l, d);
     case 10:
-      d[1] = e[_ + 9], K(d, 8), M(u, d);
+      d[1] = e[_ + 9], K(d, 8), M(l, d);
     case 9:
-      d[1] = e[_ + 8], M(u, d), H(u, ft), Ee(u, 33), H(u, _t), M(s, u);
+      d[1] = e[_ + 8], M(l, d), H(l, ft), Ee(l, 33), H(l, _t), M(s, l);
     case 8:
-      d[1] = e[_ + 7], K(d, 56), M(l, d);
+      d[1] = e[_ + 7], K(d, 56), M(u, d);
     case 7:
-      d[1] = e[_ + 6], K(d, 48), M(l, d);
+      d[1] = e[_ + 6], K(d, 48), M(u, d);
     case 6:
-      d[1] = e[_ + 5], K(d, 40), M(l, d);
+      d[1] = e[_ + 5], K(d, 40), M(u, d);
     case 5:
-      d[1] = e[_ + 4], K(d, 32), M(l, d);
+      d[1] = e[_ + 4], K(d, 32), M(u, d);
     case 4:
-      d[1] = e[_ + 3], K(d, 24), M(l, d);
+      d[1] = e[_ + 3], K(d, 24), M(u, d);
     case 3:
-      d[1] = e[_ + 2], K(d, 16), M(l, d);
+      d[1] = e[_ + 2], K(d, 16), M(u, d);
     case 2:
-      d[1] = e[_ + 1], K(d, 8), M(l, d);
+      d[1] = e[_ + 1], K(d, 8), M(u, d);
     case 1:
-      d[1] = e[_], M(l, d), H(l, _t), Ee(l, 31), H(l, ft), M(o, l)
+      d[1] = e[_], M(u, d), H(u, _t), Ee(u, 31), H(u, ft), M(o, u)
   }
   return M(o, r), M(s, r), se(o, s), se(s, o), Nn(o), Nn(s), se(o, s), se(s, o), ("00000000" + (o[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (o[1] >>> 0).toString(16)).slice(-8) + ("00000000" + (s[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (s[1] >>> 0).toString(16)).slice(-8)
 }
 
-function hv(n) {
+function gv(n) {
   var t;
   return Ut({
     name: n.name,
@@ -2850,15 +2865,15 @@ function hv(n) {
   }, n)
 }
 
-function pv(n) {
+function wv(n) {
   return /^function\s.*?\{\s*\[native code]\s*}$/.test(String(n))
 }
 
-function mv(n) {
+function yv(n) {
   return typeof n != "function"
 }
 
-function gv(n, t) {
+function vv(n, t) {
   var e = Ce(new Promise(function(r) {
     var a = Date.now();
     kn(n.bind(null, t), function() {
@@ -2870,26 +2885,26 @@ function gv(n, t) {
           duration: s
         }
       });
-      var l = i[1];
-      if (mv(l)) return r(function() {
+      var u = i[1];
+      if (yv(u)) return r(function() {
         return {
-          value: l,
+          value: u,
           duration: s
         }
       });
       r(function() {
-        return new Promise(function(u) {
+        return new Promise(function(l) {
           var _ = Date.now();
-          kn(l, function() {
+          kn(u, function() {
             for (var d = [], p = 0; p < arguments.length; p++) d[p] = arguments[p];
-            var g = s + Date.now() - _;
-            if (!d[0]) return u({
+            var y = s + Date.now() - _;
+            if (!d[0]) return l({
               error: d[1],
-              duration: g
+              duration: y
             });
-            u({
+            l({
               value: d[1],
-              duration: g
+              duration: y
             })
           })
         })
@@ -2903,28 +2918,28 @@ function gv(n, t) {
   }
 }
 
-function wv(n, t, e, r) {
+function bv(n, t, e, r) {
   var a = Object.keys(n).filter(function(o) {
-      return ov(e, o)
+      return uv(e, o)
     }),
     i = Ce(An(a, function(o) {
-      return gv(n[o], t)
+      return vv(n[o], t)
     }, r));
   return function() {
     return Q(this, void 0, void 0, function() {
-      var s, l, u, _, d;
+      var s, u, l, _, d;
       return ee(this, function(p) {
         switch (p.label) {
           case 0:
             return [4, i];
           case 1:
-            return s = p.sent(), [4, An(s, function(g) {
-              return Ce(g())
+            return s = p.sent(), [4, An(s, function(y) {
+              return Ce(y())
             }, r)];
           case 2:
-            return l = p.sent(), [4, Promise.all(l)];
+            return u = p.sent(), [4, Promise.all(u)];
           case 3:
-            for (u = p.sent(), _ = {}, d = 0; d < a.length; ++d) _[a[d]] = u[d];
+            for (l = p.sent(), _ = {}, d = 0; d < a.length; ++d) _[a[d]] = l[d];
             return [2, _]
         }
       })
@@ -2938,7 +2953,7 @@ function sr() {
   return W(["MSCSSMatrix" in n, "msSetImmediate" in n, "msIndexedDB" in n, "msMaxTouchPoints" in t, "msPointerEnabled" in t]) >= 4
 }
 
-function yv() {
+function Ev() {
   var n = window,
     t = navigator;
   return W(["msWriteProfilerMark" in n, "MSStream" in n, "msLaunchUri" in t, "msSaveBlob" in t]) >= 3 && !sr()
@@ -2965,7 +2980,7 @@ function Zt() {
 
 function lt() {
   var n = window;
-  return pv(n.print) && String(n.browser) === "[object WebPageNamespace]"
+  return wv(n.print) && String(n.browser) === "[object WebPageNamespace]"
 }
 
 function cr() {
@@ -2973,18 +2988,18 @@ function cr() {
   return W(["buildID" in navigator, "MozAppearance" in ((t = (n = document.documentElement) === null || n === void 0 ? void 0 : n.style) !== null && t !== void 0 ? t : {}), "onmozfullscreenchange" in e, "mozInnerScreenX" in e, "CSSMozDocumentRule" in e, "CanvasCaptureMediaStream" in e]) >= 4
 }
 
-function vv() {
+function Tv() {
   var n = window;
   return W([!("MediaSettingsRange" in n), "RTCEncodedAudioFrame" in n, "" + n.Intl == "[object Intl]", "" + n.Reflect == "[object Reflect]"]) >= 3
 }
 
-function bv() {
+function Sv() {
   var n = window,
     t = n.URLPattern;
   return W(["union" in Set.prototype, "Iterator" in n, t && "hasRegExpGroups" in t.prototype, "RGB8" in WebGLRenderingContext.prototype]) >= 3
 }
 
-function Ev() {
+function Ov() {
   var n = window;
   return W(["DOMRectList" in n, "RTCPeerConnectionIceEvent" in n, "SVGGeometryElement" in n, "ontransitioncancel" in n]) >= 3
 }
@@ -2997,19 +3012,19 @@ function dt() {
   return W([!("getStorageUpdates" in t), r && "popover" in r.prototype, "CSSCounterStyleRule" in n, e.supports("font-size-adjust: ex-height 0.5"), e.supports("text-transform: full-width")]) >= 4
 }
 
-function Tv() {
+function Iv() {
   if (navigator.platform === "iPad") return !0;
   var n = screen,
     t = n.width / n.height;
   return W(["MediaSource" in window, !!Element.prototype.webkitRequestFullscreen, t > .65 && t < 1.53]) >= 2
 }
 
-function Sv() {
+function kv() {
   var n = document;
   return n.fullscreenElement || n.msFullscreenElement || n.mozFullScreenElement || n.webkitFullscreenElement || null
 }
 
-function Iv() {
+function Av() {
   var n = document;
   return (n.exitFullscreen || n.msExitFullscreen || n.mozCancelFullScreen || n.webkitExitFullscreen).call(n)
 }
@@ -3023,7 +3038,7 @@ function Jt() {
   return n ? W([!("SharedWorker" in e), r[a] && "ontypechange" in r[a], !("sinkId" in new Audio)]) >= 2 : t ? W(["onorientationchange" in e, "orientation" in e, /android/i.test(r.appVersion)]) >= 2 : !1
 }
 
-function Ov() {
+function Nv() {
   var n = navigator,
     t = window,
     e = Audio.prototype,
@@ -3031,15 +3046,15 @@ function Ov() {
   return W(["srLatency" in e, "srChannelCount" in e, "devicePosture" in n, r && "segments" in r, "getTextInformation" in Image.prototype]) >= 3
 }
 
-function kv() {
-  return Rv() ? -4 : Av()
+function Rv() {
+  return Pv() ? -4 : xv()
 }
 
-function Av() {
+function xv() {
   var n = window,
     t = n.OfflineAudioContext || n.webkitOfflineAudioContext;
   if (!t) return -2;
-  if (Nv()) return -1;
+  if (Dv()) return -1;
   var e = 4500,
     r = 5e3,
     a = new t(1, r, 44100),
@@ -3047,69 +3062,69 @@ function Av() {
   i.type = "triangle", i.frequency.value = 1e4;
   var o = a.createDynamicsCompressor();
   o.threshold.value = -50, o.knee.value = 40, o.ratio.value = 12, o.attack.value = 0, o.release.value = .25, i.connect(o), o.connect(a.destination), i.start(0);
-  var s = xv(a),
-    l = s[0],
-    u = s[1],
-    _ = Ce(l.then(function(d) {
-      return Dv(d.getChannelData(0).subarray(e))
+  var s = Lv(a),
+    u = s[0],
+    l = s[1],
+    _ = Ce(u.then(function(d) {
+      return Mv(d.getChannelData(0).subarray(e))
     }, function(d) {
       if (d.name === "timeout" || d.name === "suspended") return -3;
       throw d
     }));
   return function() {
-    return u(), _
+    return l(), _
   }
 }
 
-function Nv() {
-  return X() && !Zt() && !Ev()
+function Dv() {
+  return X() && !Zt() && !Ov()
 }
 
-function Rv() {
-  return X() && dt() && lt() || ut() && Ov() && bv()
+function Pv() {
+  return X() && dt() && lt() || ut() && Nv() && Sv()
 }
 
-function xv(n) {
+function Lv(n) {
   var t = 3,
     e = 500,
     r = 500,
     a = 5e3,
     i = function() {},
-    o = new Promise(function(s, l) {
-      var u = !1,
+    o = new Promise(function(s, u) {
+      var l = !1,
         _ = 0,
         d = 0;
-      n.oncomplete = function(E) {
-        return s(E.renderedBuffer)
+      n.oncomplete = function(b) {
+        return s(b.renderedBuffer)
       };
       var p = function() {
           setTimeout(function() {
-            return l(xn("timeout"))
+            return u(xn("timeout"))
           }, Math.min(r, d + a - Date.now()))
         },
-        g = function() {
+        y = function() {
           try {
-            var E = n.startRendering();
-            switch (ir(E) && Ce(E), n.state) {
+            var b = n.startRendering();
+            switch (ir(b) && Ce(b), n.state) {
               case "running":
-                d = Date.now(), u && p();
+                d = Date.now(), l && p();
                 break;
               case "suspended":
-                document.hidden || _++, u && _ >= t ? l(xn("suspended")) : setTimeout(g, e);
+                document.hidden || _++, l && _ >= t ? u(xn("suspended")) : setTimeout(y, e);
                 break
             }
-          } catch (w) {
-            l(w)
+          } catch (g) {
+            u(g)
           }
         };
-      g(), i = function() {
-        u || (u = !0, d > 0 && p())
+      y(), i = function() {
+        l || (l = !0, d > 0 && p())
       }
     });
   return [o, i]
 }
 
-function Dv(n) {
+function Mv(n) {
   for (var t = 0, e = 0; e < n.length; ++e) t += Math.abs(n[e]);
   return t
 }
@@ -3123,44 +3138,44 @@ function ur(n, t, e) {
   var r, a, i;
   return e === void 0 && (e = 50), Q(this, void 0, void 0, function() {
     var o, s;
-    return ee(this, function(l) {
-      switch (l.label) {
+    return ee(this, function(u) {
+      switch (u.label) {
         case 0:
-          o = document, l.label = 1;
+          o = document, u.label = 1;
         case 1:
           return o.body ? [3, 3] : [4, yt(e)];
         case 2:
-          return l.sent(), [3, 1];
+          return u.sent(), [3, 1];
         case 3:
-          s = o.createElement("iframe"), l.label = 4;
+          s = o.createElement("iframe"), u.label = 4;
         case 4:
-          return l.trys.push([4, , 10, 11]), [4, new Promise(function(u, _) {
+          return u.trys.push([4, , 10, 11]), [4, new Promise(function(l, _) {
             var d = !1,
               p = function() {
-                d = !0, u()
+                d = !0, l()
               },
-              g = function(T) {
+              y = function(T) {
                 d = !0, _(T)
               };
-            s.onload = p, s.onerror = g;
-            var E = s.style;
-            E.setProperty("display", "block", "important"), E.position = "absolute", E.top = "0", E.left = "0", E.visibility = "hidden", t && "srcdoc" in s ? s.srcdoc = t : s.src = "about:blank", o.body.appendChild(s);
-            var w = function() {
-              var T, I;
-              d || (((I = (T = s.contentWindow) === null || T === void 0 ? void 0 : T.document) === null || I === void 0 ? void 0 : I.readyState) === "complete" ? p() : setTimeout(w, 10))
+            s.onload = p, s.onerror = y;
+            var b = s.style;
+            b.setProperty("display", "block", "important"), b.position = "absolute", b.top = "0", b.left = "0", b.visibility = "hidden", t && "srcdoc" in s ? s.srcdoc = t : s.src = "about:blank", o.body.appendChild(s);
+            var g = function() {
+              var T, O;
+              d || (((O = (T = s.contentWindow) === null || T === void 0 ? void 0 : T.document) === null || O === void 0 ? void 0 : O.readyState) === "complete" ? p() : setTimeout(g, 10))
             };
-            w()
+            g()
           })];
         case 5:
-          l.sent(), l.label = 6;
+          u.sent(), u.label = 6;
         case 6:
           return !((a = (r = s.contentWindow) === null || r === void 0 ? void 0 : r.document) === null || a === void 0) && a.body ? [3, 8] : [4, yt(e)];
         case 7:
-          return l.sent(), [3, 6];
+          return u.sent(), [3, 6];
         case 8:
           return [4, n(s, s.contentWindow)];
         case 9:
-          return [2, l.sent()];
+          return [2, u.sent()];
         case 10:
           return (i = s.parentNode) === null || i === void 0 || i.removeChild(s), [7];
         case 11:
@@ -3170,29 +3185,29 @@ function ur(n, t, e) {
   })
 }
 
-function Pv(n) {
-  for (var t = sv(n), e = t[0], r = t[1], a = document.createElement(e ?? "div"), i = 0, o = Object.keys(r); i < o.length; i++) {
+function Uv(n) {
+  for (var t = lv(n), e = t[0], r = t[1], a = document.createElement(e ?? "div"), i = 0, o = Object.keys(r); i < o.length; i++) {
     var s = o[i],
-      l = r[s].join(" ");
-    s === "style" ? Lv(a.style, l) : a.setAttribute(s, l)
+      u = r[s].join(" ");
+    s === "style" ? Cv(a.style, u) : a.setAttribute(s, u)
   }
   return a
 }
 
-function Lv(n, t) {
+function Cv(n, t) {
   for (var e = 0, r = t.split(";"); e < r.length; e++) {
     var a = r[e],
       i = /^\s*([\w-]+)\s*:\s*(.+?)(\s*!([\w-]+))?\s*$/.exec(a);
     if (i) {
       var o = i[1],
         s = i[2],
-        l = i[4];
-      n.setProperty(o, s, l || "")
+        u = i[4];
+      n.setProperty(o, s, u || "")
     }
   }
 }
 
-function Mv() {
+function jv() {
   for (var n = window;;) {
     var t = n.parent;
     if (!t || t === n) return !1;
@@ -3205,50 +3220,50 @@ function Mv() {
     n = t
   }
 }
-var Uv = "mmMwWLliI0O&1",
-  Cv = "48px",
+var Bv = "mmMwWLliI0O&1",
+  Fv = "48px",
   Te = ["monospace", "sans-serif", "serif"],
   Dn = ["sans-serif-thin", "ARNO PRO", "Agency FB", "Arabic Typesetting", "Arial Unicode MS", "AvantGarde Bk BT", "BankGothic Md BT", "Batang", "Bitstream Vera Sans Mono", "Calibri", "Century", "Century Gothic", "Clarendon", "EUROSTILE", "Franklin Gothic", "Futura Bk BT", "Futura Md BT", "GOTHAM", "Gill Sans", "HELV", "Haettenschweiler", "Helvetica Neue", "Humanst521 BT", "Leelawadee", "Letter Gothic", "Levenim MT", "Lucida Bright", "Lucida Sans", "Menlo", "MS Mincho", "MS Outlook", "MS Reference Specialty", "MS UI Gothic", "MT Extra", "MYRIAD PRO", "Marlett", "Meiryo UI", "Microsoft Uighur", "Minion Pro", "Monotype Corsiva", "PMingLiU", "Pristina", "SCRIPTINA", "Segoe UI Light", "Serifa", "SimHei", "Small Fonts", "Staccato222 BT", "TRAJAN PRO", "Univers CE 55 Medium", "Vrinda", "ZWAdobeF"];
 
-function jv() {
+function zv() {
   var n = this;
   return ur(function(t, e) {
     var r = e.document;
     return Q(n, void 0, void 0, function() {
-      var a, i, o, s, l, u, _, d, p, g, E, w;
+      var a, i, o, s, u, l, _, d, p, y, b, g;
       return ee(this, function(T) {
-        for (a = r.body, a.style.fontSize = Cv, i = r.createElement("div"), i.style.setProperty("visibility", "hidden", "important"), o = {}, s = {}, l = function(I) {
+        for (a = r.body, a.style.fontSize = Fv, i = r.createElement("div"), i.style.setProperty("visibility", "hidden", "important"), o = {}, s = {}, u = function(O) {
             var R = r.createElement("span"),
               j = R.style;
-            return j.position = "absolute", j.top = "0", j.left = "0", j.fontFamily = I, R.textContent = Uv, i.appendChild(R), R
-          }, u = function(I, R) {
-            return l("'".concat(I, "',").concat(R))
+            return j.position = "absolute", j.top = "0", j.left = "0", j.fontFamily = O, R.textContent = Bv, i.appendChild(R), R
+          }, l = function(O, R) {
+            return u("'".concat(O, "',").concat(R))
           }, _ = function() {
-            return Te.map(l)
+            return Te.map(u)
           }, d = function() {
-            for (var I = {}, R = function(y) {
-                I[y] = Te.map(function(S) {
-                  return u(y, S)
+            for (var O = {}, R = function(w) {
+                O[w] = Te.map(function(S) {
+                  return l(w, S)
                 })
-              }, j = 0, F = Dn; j < F.length; j++) {
-              var Y = F[j];
+              }, j = 0, B = Dn; j < B.length; j++) {
+              var Y = B[j];
               R(Y)
             }
-            return I
-          }, p = function(I) {
+            return O
+          }, p = function(O) {
             return Te.some(function(R, j) {
-              return I[j].offsetWidth !== o[R] || I[j].offsetHeight !== s[R]
+              return O[j].offsetWidth !== o[R] || O[j].offsetHeight !== s[R]
             })
-          }, g = _(), E = d(), a.appendChild(i), w = 0; w < Te.length; w++) o[Te[w]] = g[w].offsetWidth, s[Te[w]] = g[w].offsetHeight;
-        return [2, Dn.filter(function(I) {
-          return p(E[I])
+          }, y = _(), b = d(), a.appendChild(i), g = 0; g < Te.length; g++) o[Te[g]] = y[g].offsetWidth, s[Te[g]] = y[g].offsetHeight;
+        return [2, Dn.filter(function(O) {
+          return p(b[O])
         })]
       })
     })
   })
 }
 
-function Fv() {
+function Vv() {
   var n = navigator.plugins;
   if (n) {
     for (var t = [], e = 0; e < n.length; ++e) {
@@ -3272,52 +3287,52 @@ function Fv() {
   }
 }
 
-function Bv() {
-  return zv(Hv())
+function Gv() {
+  return Wv(Jv())
 }
 
-function zv(n) {
+function Wv(n) {
   var t, e = !1,
-    r, a, i = Vv(),
+    r, a, i = qv(),
     o = i[0],
     s = i[1];
-  return Gv(o, s) ? (e = Wv(s), n ? r = a = "skipped" : (t = qv(o, s), r = t[0], a = t[1])) : r = a = "unsupported", {
+  return Kv(o, s) ? (e = Yv(s), n ? r = a = "skipped" : (t = Hv(o, s), r = t[0], a = t[1])) : r = a = "unsupported", {
     winding: e,
     geometry: r,
     text: a
   }
 }
 
-function Vv() {
+function qv() {
   var n = document.createElement("canvas");
   return n.width = 1, n.height = 1, [n, n.getContext("2d")]
 }
 
-function Gv(n, t) {
+function Kv(n, t) {
   return !!(t && n.toDataURL)
 }
 
-function Wv(n) {
+function Yv(n) {
   return n.rect(0, 0, 10, 10), n.rect(2, 2, 6, 6), !n.isPointInPath(5, 5, "evenodd")
 }
 
-function qv(n, t) {
-  Kv(n, t);
+function Hv(n, t) {
+  $v(n, t);
   var e = Nt(n),
     r = Nt(n);
   if (e !== r) return ["unstable", "unstable"];
-  Yv(n, t);
+  Zv(n, t);
   var a = Nt(n);
   return [a, e]
 }
 
-function Kv(n, t) {
+function $v(n, t) {
   n.width = 240, n.height = 60, t.textBaseline = "alphabetic", t.fillStyle = "#f60", t.fillRect(100, 1, 62, 20), t.fillStyle = "#069", t.font = '11pt "Times New Roman"';
   var e = "Cwm fjordbank gly ".concat("😃");
   t.fillText(e, 2, 15), t.fillStyle = "rgba(102, 204, 0, 0.2)", t.font = "18pt Arial", t.fillText(e, 4, 45)
 }
 
-function Yv(n, t) {
+function Zv(n, t) {
   n.width = 122, n.height = 110, t.globalCompositeOperation = "multiply";
   for (var e = 0, r = [
       ["#f2f", 40, 40],
@@ -3337,11 +3352,11 @@ function Nt(n) {
   return n.toDataURL()
 }
 
-function Hv() {
+function Jv() {
   return X() && dt() && lt()
 }
 
-function $v() {
+function Xv() {
   var n = navigator,
     t = 0,
     e;
@@ -3359,15 +3374,15 @@ function $v() {
   }
 }
 
-function Zv() {
+function Qv() {
   return navigator.oscpu
 }
 
-function Jv() {
+function eb() {
   var n = navigator,
     t = [],
     e = n.language || n.userLanguage || n.browserLanguage || n.systemLanguage;
-  if (e !== void 0 && t.push([e]), Array.isArray(n.languages)) ut() && vv() || t.push(n.languages);
+  if (e !== void 0 && t.push([e]), Array.isArray(n.languages)) ut() && Tv() || t.push(n.languages);
   else if (typeof n.languages == "string") {
     var r = n.languages;
     r && t.push(r.split(","))
@@ -3375,19 +3390,19 @@ function Jv() {
   return t
 }
 
-function Xv() {
+function tb() {
   return window.screen.colorDepth
 }
 
-function Qv() {
+function nb() {
   return re(J(navigator.deviceMemory), void 0)
 }
 
-function eb() {
-  if (!(X() && dt() && lt())) return tb()
+function rb() {
+  if (!(X() && dt() && lt())) return ab()
 }
 
-function tb() {
+function ab() {
   var n = screen,
     t = function(r) {
       return re($t(r), null)
@@ -3395,30 +3410,30 @@ function tb() {
     e = [t(n.width), t(n.height)];
   return e.sort().reverse(), e
 }
-var nb = 2500,
-  rb = 10,
+var ib = 2500,
+  ob = 10,
   pt, Rt;
 
-function ab() {
+function sb() {
   if (Rt === void 0) {
     var n = function() {
       var t = Ct();
-      jt(t) ? Rt = setTimeout(n, nb) : (pt = t, Rt = void 0)
+      jt(t) ? Rt = setTimeout(n, ib) : (pt = t, Rt = void 0)
     };
     n()
   }
 }
 
-function ib() {
+function cb() {
   var n = this;
-  return ab(),
+  return sb(),
     function() {
       return Q(n, void 0, void 0, function() {
         var t;
         return ee(this, function(e) {
           switch (e.label) {
             case 0:
-              return t = Ct(), jt(t) ? pt ? [2, rr([], pt, !0)] : Sv() ? [4, Iv()] : [3, 2] : [3, 2];
+              return t = Ct(), jt(t) ? pt ? [2, rr([], pt, !0)] : kv() ? [4, Av()] : [3, 2] : [3, 2];
             case 1:
               e.sent(), t = Ct(), e.label = 2;
             case 2:
@@ -3429,12 +3444,12 @@ function ib() {
     }
 }
 
-function ob() {
+function ub() {
   var n = this;
   if (X() && dt() && lt()) return function() {
     return Promise.resolve(void 0)
   };
-  var t = ib();
+  var t = cb();
   return function() {
     return Q(n, void 0, void 0, function() {
       var e, r;
@@ -3444,7 +3459,7 @@ function ob() {
             return [4, t()];
           case 1:
             return e = a.sent(), r = function(i) {
-              return i === null ? null : or(i, rb)
+              return i === null ? null : or(i, ob)
             }, [2, [r(e[0]), r(e[1]), r(e[2]), r(e[3])]]
         }
       })
@@ -3463,26 +3478,26 @@ function jt(n) {
   return !0
 }
 
-function sb() {
+function lb() {
   return re($t(navigator.hardwareConcurrency), void 0)
 }
 
-function cb() {
+function db() {
   var n, t = (n = window.Intl) === null || n === void 0 ? void 0 : n.DateTimeFormat;
   if (t) {
     var e = new t().resolvedOptions().timeZone;
     if (e) return e
   }
-  var r = -ub();
+  var r = -_b();
   return "UTC".concat(r >= 0 ? "+" : "").concat(r)
 }
 
-function ub() {
+function _b() {
   var n = new Date().getFullYear();
   return Math.max(J(new Date(n, 0, 1).getTimezoneOffset()), J(new Date(n, 6, 1).getTimezoneOffset()))
 }
 
-function lb() {
+function fb() {
   try {
     return !!window.sessionStorage
   } catch {
@@ -3490,7 +3505,7 @@ function lb() {
   }
 }
 
-function db() {
+function hb() {
   try {
     return !!window.localStorage
   } catch {
@@ -3498,32 +3513,32 @@ function db() {
   }
 }
 
-function _b() {
-  if (!(sr() || yv())) try {
+function pb() {
+  if (!(sr() || Ev())) try {
     return !!window.indexedDB
   } catch {
     return !0
   }
 }
 
-function fb() {
+function mb() {
   return !!window.openDatabase
 }
 
-function hb() {
+function gb() {
   return navigator.cpuClass
 }
 
-function pb() {
+function wb() {
   var n = navigator.platform;
-  return n === "MacIntel" && X() && !Zt() ? Tv() ? "iPad" : "iPhone" : n
+  return n === "MacIntel" && X() && !Zt() ? Iv() ? "iPad" : "iPhone" : n
 }
 
-function mb() {
+function yb() {
   return navigator.vendor || ""
 }
 
-function gb() {
+function vb() {
   for (var n = [], t = 0, e = ["chrome", "safari", "__crWeb", "__gCrWeb", "yandex", "__yb", "__ybro", "__firefox__", "__edgeTrackingPreventionStatistics", "webkit", "oprt", "samsungAr", "ucweb", "UCShellJava", "puffinDevice"]; t < e.length; t++) {
     var r = e[t],
       a = window[r];
@@ -3532,7 +3547,7 @@ function gb() {
   return n.sort()
 }
 
-function wb() {
+function bb() {
   var n = document;
   try {
     n.cookie = "cookietest=1; SameSite=Strict;";
@@ -3543,7 +3558,7 @@ function wb() {
   }
 }
 
-function yb() {
+function Eb() {
   var n = atob;
   return {
     abpIndo: ["#Iklan-Melayang", "#Kolom-Iklan-728", "#SidebarIklan-wrapper", '[title="ALIENBOLA" i]', n("I0JveC1CYW5uZXItYWRz")],
@@ -3594,22 +3609,22 @@ function yb() {
   }
 }
 
-function vb(n) {
+function Tb(n) {
   var t = n === void 0 ? {} : n,
     e = t.debug;
   return Q(this, void 0, void 0, function() {
-    var r, a, i, o, s, l;
-    return ee(this, function(u) {
-      switch (u.label) {
+    var r, a, i, o, s, u;
+    return ee(this, function(l) {
+      switch (l.label) {
         case 0:
-          return bb() ? (r = yb(), a = Object.keys(r), i = (l = []).concat.apply(l, a.map(function(_) {
+          return Sb() ? (r = Eb(), a = Object.keys(r), i = (u = []).concat.apply(u, a.map(function(_) {
             return r[_]
-          })), [4, Eb(i)]) : [2, void 0];
+          })), [4, Ob(i)]) : [2, void 0];
         case 1:
-          return o = u.sent(), e && Tb(r, o), s = a.filter(function(_) {
+          return o = l.sent(), e && Ib(r, o), s = a.filter(function(_) {
             var d = r[_],
-              p = W(d.map(function(g) {
-                return o[g]
+              p = W(d.map(function(y) {
+                return o[y]
               }));
             return p > d.length * .6
           }), s.sort(), [2, s]
@@ -3618,27 +3633,27 @@ function vb(n) {
   })
 }
 
-function bb() {
+function Sb() {
   return X() || Jt()
 }
 
-function Eb(n) {
+function Ob(n) {
   var t;
   return Q(this, void 0, void 0, function() {
-    var e, r, a, i, l, o, s, l;
-    return ee(this, function(u) {
-      switch (u.label) {
+    var e, r, a, i, u, o, s, u;
+    return ee(this, function(l) {
+      switch (l.label) {
         case 0:
-          for (e = document, r = e.createElement("div"), a = new Array(n.length), i = {}, Pn(r), l = 0; l < n.length; ++l) o = Pv(n[l]), o.tagName === "DIALOG" && o.show(), s = e.createElement("div"), Pn(s), s.appendChild(o), r.appendChild(s), a[l] = o;
-          u.label = 1;
+          for (e = document, r = e.createElement("div"), a = new Array(n.length), i = {}, Pn(r), u = 0; u < n.length; ++u) o = Uv(n[u]), o.tagName === "DIALOG" && o.show(), s = e.createElement("div"), Pn(s), s.appendChild(o), r.appendChild(s), a[u] = o;
+          l.label = 1;
         case 1:
           return e.body ? [3, 3] : [4, yt(50)];
         case 2:
-          return u.sent(), [3, 1];
+          return l.sent(), [3, 1];
         case 3:
           e.body.appendChild(r);
           try {
-            for (l = 0; l < n.length; ++l) a[l].offsetParent || (i[n[l]] = !0)
+            for (u = 0; u < n.length; ++u) a[u].offsetParent || (i[n[u]] = !0)
           } finally {
             (t = r.parentNode) === null || t === void 0 || t.removeChild(r)
           }
@@ -3652,28 +3667,28 @@ function Pn(n) {
   n.style.setProperty("visibility", "hidden", "important"), n.style.setProperty("display", "block", "important")
 }
 
-function Tb(n, t) {
+function Ib(n, t) {
   for (var e = "DOM blockers debug:\n```", r = 0, a = Object.keys(n); r < a.length; r++) {
     var i = a[r];
     e += `
 `.concat(i, ":");
     for (var o = 0, s = n[i]; o < s.length; o++) {
-      var l = s[o];
+      var u = s[o];
       e += `
-  `.concat(t[l] ? "🚫" : "➡️", " ").concat(l)
+  `.concat(t[u] ? "🚫" : "➡️", " ").concat(u)
     }
   }
   console.log("".concat(e, "\n```"))
 }
 
-function Sb() {
+function kb() {
   for (var n = 0, t = ["rec2020", "p3", "srgb"]; n < t.length; n++) {
     var e = t[n];
     if (matchMedia("(color-gamut: ".concat(e, ")")).matches) return e
   }
 }
 
-function Ib() {
+function Ab() {
   if (Ln("inverted")) return !0;
   if (Ln("none")) return !1
 }
@@ -3682,7 +3697,7 @@ function Ln(n) {
   return matchMedia("(inverted-colors: ".concat(n, ")")).matches
 }
 
-function Ob() {
+function Nb() {
   if (Mn("active")) return !0;
   if (Mn("none")) return !1
 }
@@ -3690,17 +3705,17 @@ function Ob() {
 function Mn(n) {
   return matchMedia("(forced-colors: ".concat(n, ")")).matches
 }
-var kb = 100;
+var Rb = 100;
 
-function Ab() {
+function xb() {
   if (matchMedia("(min-monochrome: 0)").matches) {
-    for (var n = 0; n <= kb; ++n)
+    for (var n = 0; n <= Rb; ++n)
       if (matchMedia("(max-monochrome: ".concat(n, ")")).matches) return n;
     throw new Error("Too high value")
   }
 }
 
-function Nb() {
+function Db() {
   if (Se("no-preference")) return 0;
   if (Se("high") || Se("more")) return 1;
   if (Se("low") || Se("less")) return -1;
@@ -3711,7 +3726,7 @@ function Se(n) {
   return matchMedia("(prefers-contrast: ".concat(n, ")")).matches
 }
 
-function Rb() {
+function Pb() {
   if (Un("reduce")) return !0;
   if (Un("no-preference")) return !1
 }
@@ -3720,7 +3735,7 @@ function Un(n) {
   return matchMedia("(prefers-reduced-motion: ".concat(n, ")")).matches
 }
 
-function xb() {
+function Lb() {
   if (Cn("reduce")) return !0;
   if (Cn("no-preference")) return !1
 }
@@ -3729,7 +3744,7 @@ function Cn(n) {
   return matchMedia("(prefers-reduced-transparency: ".concat(n, ")")).matches
 }
 
-function Db() {
+function Mb() {
   if (jn("high")) return !0;
   if (jn("standard")) return !1
 }
@@ -3742,7 +3757,7 @@ var N = Math,
     return 0
   };
 
-function Pb() {
+function Ub() {
   var n = N.acos || G,
     t = N.acosh || G,
     e = N.asin || G,
@@ -3751,39 +3766,39 @@ function Pb() {
     i = N.atan || G,
     o = N.sin || G,
     s = N.sinh || G,
-    l = N.cos || G,
-    u = N.cosh || G,
+    u = N.cos || G,
+    l = N.cosh || G,
     _ = N.tan || G,
     d = N.tanh || G,
     p = N.exp || G,
-    g = N.expm1 || G,
-    E = N.log1p || G,
-    w = function(b) {
-      return N.pow(N.PI, b)
+    y = N.expm1 || G,
+    b = N.log1p || G,
+    g = function(E) {
+      return N.pow(N.PI, E)
     },
-    T = function(b) {
-      return N.log(b + N.sqrt(b * b - 1))
+    T = function(E) {
+      return N.log(E + N.sqrt(E * E - 1))
     },
-    I = function(b) {
-      return N.log(b + N.sqrt(b * b + 1))
+    O = function(E) {
+      return N.log(E + N.sqrt(E * E + 1))
     },
-    R = function(b) {
-      return N.log((1 + b) / (1 - b)) / 2
+    R = function(E) {
+      return N.log((1 + E) / (1 - E)) / 2
     },
-    j = function(b) {
-      return N.exp(b) - 1 / N.exp(b) / 2
+    j = function(E) {
+      return N.exp(E) - 1 / N.exp(E) / 2
     },
-    F = function(b) {
-      return (N.exp(b) + 1 / N.exp(b)) / 2
+    B = function(E) {
+      return (N.exp(E) + 1 / N.exp(E)) / 2
     },
-    Y = function(b) {
-      return N.exp(b) - 1
+    Y = function(E) {
+      return N.exp(E) - 1
     },
-    y = function(b) {
-      return (N.exp(2 * b) - 1) / (N.exp(2 * b) + 1)
+    w = function(E) {
+      return (N.exp(2 * E) - 1) / (N.exp(2 * E) + 1)
     },
-    S = function(b) {
-      return N.log(1 + b)
+    S = function(E) {
+      return N.log(1 + E)
     };
   return {
     acos: n(.12312423423423424),
@@ -3791,28 +3806,28 @@ function Pb() {
     acoshPf: T(1e154),
     asin: e(.12312423423423424),
     asinh: r(1),
-    asinhPf: I(1),
+    asinhPf: O(1),
     atanh: a(.5),
     atanhPf: R(.5),
     atan: i(.5),
     sin: o(-1e300),
     sinh: s(1),
     sinhPf: j(1),
-    cos: l(10.000000000123),
-    cosh: u(1),
-    coshPf: F(1),
+    cos: u(10.000000000123),
+    cosh: l(1),
+    coshPf: B(1),
     tan: _(-1e300),
     tanh: d(1),
-    tanhPf: y(1),
+    tanhPf: w(1),
     exp: p(1),
-    expm1: g(1),
+    expm1: y(1),
     expm1Pf: Y(1),
-    log1p: E(10),
+    log1p: b(10),
     log1pPf: S(10),
-    powPI: w(-100)
+    powPI: g(-100)
   }
 }
-var Lb = "mmMwWLliI0fiflO&1",
+var Cb = "mmMwWLliI0fiflO&1",
   xt = {
     default: [],
     apple: [{
@@ -3835,33 +3850,33 @@ var Lb = "mmMwWLliI0fiflO&1",
     }]
   };
 
-function Mb() {
-  return Ub(function(n, t) {
+function jb() {
+  return Bb(function(n, t) {
     for (var e = {}, r = {}, a = 0, i = Object.keys(xt); a < i.length; a++) {
       var o = i[a],
         s = xt[o],
-        l = s[0],
-        u = l === void 0 ? {} : l,
+        u = s[0],
+        l = u === void 0 ? {} : u,
         _ = s[1],
-        d = _ === void 0 ? Lb : _,
+        d = _ === void 0 ? Cb : _,
         p = n.createElement("span");
       p.textContent = d, p.style.whiteSpace = "nowrap";
-      for (var g = 0, E = Object.keys(u); g < E.length; g++) {
-        var w = E[g],
-          T = u[w];
-        T !== void 0 && (p.style[w] = T)
+      for (var y = 0, b = Object.keys(l); y < b.length; y++) {
+        var g = b[y],
+          T = l[g];
+        T !== void 0 && (p.style[g] = T)
       }
       e[o] = p, t.append(n.createElement("br"), p)
     }
-    for (var I = 0, R = Object.keys(xt); I < R.length; I++) {
-      var o = R[I];
+    for (var O = 0, R = Object.keys(xt); O < R.length; O++) {
+      var o = R[O];
       r[o] = e[o].getBoundingClientRect().width
     }
     return r
   })
 }
 
-function Ub(n, t) {
+function Bb(n, t) {
   return t === void 0 && (t = 4e3), ur(function(e, r) {
     var a = r.document,
       i = a.body,
@@ -3874,64 +3889,64 @@ function Ub(n, t) {
   }, '<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1">')
 }
 
-function Cb() {
+function Fb() {
   return navigator.pdfViewerEnabled
 }
 
-function jb() {
+function zb() {
   var n = new Float32Array(1),
     t = new Uint8Array(n.buffer);
   return n[0] = 1 / 0, n[0] = n[0] - n[0], t[3]
 }
 
-function Fb() {
+function Vb() {
   var n = window.ApplePaySession;
   if (typeof(n == null ? void 0 : n.canMakePayments) != "function") return -1;
-  if (Bb()) return -3;
+  if (Gb()) return -3;
   try {
     return n.canMakePayments() ? 1 : 0
   } catch (t) {
-    return zb(t)
+    return Wb(t)
   }
 }
-var Bb = Mv;
+var Gb = jv;
 
-function zb(n) {
+function Wb(n) {
   if (n instanceof Error && n.name === "InvalidAccessError" && /\bfrom\b.*\binsecure\b/i.test(n.message)) return -2;
   throw n
 }
 
-function Vb() {
+function qb() {
   var n, t = document.createElement("a"),
     e = (n = t.attributionSourceId) !== null && n !== void 0 ? n : t.attributionsourceid;
   return e === void 0 ? void 0 : String(e)
 }
 var lr = -1,
   dr = -2,
-  Gb = new Set([10752, 2849, 2884, 2885, 2886, 2928, 2929, 2930, 2931, 2932, 2960, 2961, 2962, 2963, 2964, 2965, 2966, 2967, 2968, 2978, 3024, 3042, 3088, 3089, 3106, 3107, 32773, 32777, 32777, 32823, 32824, 32936, 32937, 32938, 32939, 32968, 32969, 32970, 32971, 3317, 33170, 3333, 3379, 3386, 33901, 33902, 34016, 34024, 34076, 3408, 3410, 3411, 3412, 3413, 3414, 3415, 34467, 34816, 34817, 34818, 34819, 34877, 34921, 34930, 35660, 35661, 35724, 35738, 35739, 36003, 36004, 36005, 36347, 36348, 36349, 37440, 37441, 37443, 7936, 7937, 7938]),
-  Wb = new Set([34047, 35723, 36063, 34852, 34853, 34854, 34229, 36392, 36795, 38449]),
-  qb = ["FRAGMENT_SHADER", "VERTEX_SHADER"],
-  Kb = ["LOW_FLOAT", "MEDIUM_FLOAT", "HIGH_FLOAT", "LOW_INT", "MEDIUM_INT", "HIGH_INT"],
+  Kb = new Set([10752, 2849, 2884, 2885, 2886, 2928, 2929, 2930, 2931, 2932, 2960, 2961, 2962, 2963, 2964, 2965, 2966, 2967, 2968, 2978, 3024, 3042, 3088, 3089, 3106, 3107, 32773, 32777, 32777, 32823, 32824, 32936, 32937, 32938, 32939, 32968, 32969, 32970, 32971, 3317, 33170, 3333, 3379, 3386, 33901, 33902, 34016, 34024, 34076, 3408, 3410, 3411, 3412, 3413, 3414, 3415, 34467, 34816, 34817, 34818, 34819, 34877, 34921, 34930, 35660, 35661, 35724, 35738, 35739, 36003, 36004, 36005, 36347, 36348, 36349, 37440, 37441, 37443, 7936, 7937, 7938]),
+  Yb = new Set([34047, 35723, 36063, 34852, 34853, 34854, 34229, 36392, 36795, 38449]),
+  Hb = ["FRAGMENT_SHADER", "VERTEX_SHADER"],
+  $b = ["LOW_FLOAT", "MEDIUM_FLOAT", "HIGH_FLOAT", "LOW_INT", "MEDIUM_INT", "HIGH_INT"],
   _r = "WEBGL_debug_renderer_info",
-  Yb = "WEBGL_polygon_mode";
+  Zb = "WEBGL_polygon_mode";
 
-function Hb(n) {
+function Jb(n) {
   var t, e, r, a, i, o, s = n.cache,
-    l = fr(s);
-  if (!l) return lr;
-  if (!pr(l)) return dr;
-  var u = hr() ? null : l.getExtension(_r);
+    u = fr(s);
+  if (!u) return lr;
+  if (!pr(u)) return dr;
+  var l = hr() ? null : u.getExtension(_r);
   return {
-    version: ((t = l.getParameter(l.VERSION)) === null || t === void 0 ? void 0 : t.toString()) || "",
-    vendor: ((e = l.getParameter(l.VENDOR)) === null || e === void 0 ? void 0 : e.toString()) || "",
-    vendorUnmasked: u ? (r = l.getParameter(u.UNMASKED_VENDOR_WEBGL)) === null || r === void 0 ? void 0 : r.toString() : "",
-    renderer: ((a = l.getParameter(l.RENDERER)) === null || a === void 0 ? void 0 : a.toString()) || "",
-    rendererUnmasked: u ? (i = l.getParameter(u.UNMASKED_RENDERER_WEBGL)) === null || i === void 0 ? void 0 : i.toString() : "",
-    shadingLanguageVersion: ((o = l.getParameter(l.SHADING_LANGUAGE_VERSION)) === null || o === void 0 ? void 0 : o.toString()) || ""
+    version: ((t = u.getParameter(u.VERSION)) === null || t === void 0 ? void 0 : t.toString()) || "",
+    vendor: ((e = u.getParameter(u.VENDOR)) === null || e === void 0 ? void 0 : e.toString()) || "",
+    vendorUnmasked: l ? (r = u.getParameter(l.UNMASKED_VENDOR_WEBGL)) === null || r === void 0 ? void 0 : r.toString() : "",
+    renderer: ((a = u.getParameter(u.RENDERER)) === null || a === void 0 ? void 0 : a.toString()) || "",
+    rendererUnmasked: l ? (i = u.getParameter(l.UNMASKED_RENDERER_WEBGL)) === null || i === void 0 ? void 0 : i.toString() : "",
+    shadingLanguageVersion: ((o = u.getParameter(u.SHADING_LANGUAGE_VERSION)) === null || o === void 0 ? void 0 : o.toString()) || ""
   }
 }
 
-function $b(n) {
+function Xb(n) {
   var t = n.cache,
     e = fr(t);
   if (!e) return lr;
@@ -3941,46 +3956,46 @@ function $b(n) {
     i = [],
     o = [],
     s = [],
-    l = [],
-    u = [];
+    u = [],
+    l = [];
   if (a)
     for (var _ = 0, d = Object.keys(a); _ < d.length; _++) {
       var p = d[_];
       o.push("".concat(p, "=").concat(a[p]))
     }
-  for (var g = Fn(e), E = 0, w = g; E < w.length; E++) {
-    var T = w[E],
-      I = e[T];
-    s.push("".concat(T, "=").concat(I).concat(Gb.has(I) ? "=".concat(e.getParameter(I)) : ""))
+  for (var y = Bn(e), b = 0, g = y; b < g.length; b++) {
+    var T = g[b],
+      O = e[T];
+    s.push("".concat(T, "=").concat(O).concat(Kb.has(O) ? "=".concat(e.getParameter(O)) : ""))
   }
   if (r)
     for (var R = 0, j = r; R < j.length; R++) {
-      var F = j[R];
-      if (!(F === _r && hr() || F === Yb && Xb())) {
-        var Y = e.getExtension(F);
+      var B = j[R];
+      if (!(B === _r && hr() || B === Zb && t0())) {
+        var Y = e.getExtension(B);
         if (!Y) {
-          i.push(F);
+          i.push(B);
           continue
         }
-        for (var y = 0, S = Fn(Y); y < S.length; y++) {
-          var T = S[y],
-            I = Y[T];
-          l.push("".concat(T, "=").concat(I).concat(Wb.has(I) ? "=".concat(e.getParameter(I)) : ""))
+        for (var w = 0, S = Bn(Y); w < S.length; w++) {
+          var T = S[w],
+            O = Y[T];
+          u.push("".concat(T, "=").concat(O).concat(Yb.has(O) ? "=".concat(e.getParameter(O)) : ""))
         }
       }
     }
-  for (var b = 0, Z = qb; b < Z.length; b++)
-    for (var V = Z[b], z = 0, te = Kb; z < te.length; z++) {
+  for (var E = 0, Z = Hb; E < Z.length; E++)
+    for (var V = Z[E], z = 0, te = $b; z < te.length; z++) {
       var ve = te[z],
-        Ot = Zb(e, V, ve);
-      u.push("".concat(V, ".").concat(ve, "=").concat(Ot.join(",")))
+        It = Qb(e, V, ve);
+      l.push("".concat(V, ".").concat(ve, "=").concat(It.join(",")))
     }
-  return l.sort(), s.sort(), {
+  return u.sort(), s.sort(), {
     contextAttributes: o,
     parameters: s,
-    shaderPrecisions: u,
+    shaderPrecisions: l,
     extensions: r,
-    extensionParameters: l,
+    extensionParameters: u,
     unsupportedExtensions: i
   }
 }
@@ -4004,17 +4019,17 @@ function fr(n) {
   }, e
 }
 
-function Zb(n, t, e) {
+function Qb(n, t, e) {
   var r = n.getShaderPrecisionFormat(n[t], n[e]);
   return r ? [r.rangeMin, r.rangeMax, r.precision] : []
 }
 
-function Fn(n) {
+function Bn(n) {
   var t = Object.keys(n.__proto__);
-  return t.filter(Jb)
+  return t.filter(e0)
 }
 
-function Jb(n) {
+function e0(n) {
   return typeof n == "string" && !n.match(/[^A-Z0-9_x]/)
 }
 
@@ -4022,7 +4037,7 @@ function hr() {
   return cr()
 }
 
-function Xb() {
+function t0() {
   return ut() || X()
 }
 
@@ -4030,7 +4045,7 @@ function pr(n) {
   return typeof n.getParameter == "function"
 }
 
-function Qb() {
+function n0() {
   var n = Jt() || X();
   if (!n) return -2;
   if (!window.AudioContext) return -1;
@@ -4038,83 +4053,83 @@ function Qb() {
   return t == null ? -1 : isFinite(t) ? t : -3
 }
 
-function e0() {
+function r0() {
   if (!window.Intl) return -1;
   var n = window.Intl.DateTimeFormat;
   if (!n) return -2;
   var t = n().resolvedOptions().locale;
   return !t && t !== "" ? -3 : t
 }
-var t0 = {
-  fonts: jv,
-  domBlockers: vb,
-  fontPreferences: Mb,
-  audio: kv,
-  screenFrame: ob,
-  canvas: Bv,
-  osCpu: Zv,
-  languages: Jv,
-  colorDepth: Xv,
-  deviceMemory: Qv,
-  screenResolution: eb,
-  hardwareConcurrency: sb,
-  timezone: cb,
-  sessionStorage: lb,
-  localStorage: db,
-  indexedDB: _b,
-  openDatabase: fb,
-  cpuClass: hb,
-  platform: pb,
-  plugins: Fv,
-  touchSupport: $v,
-  vendor: mb,
-  vendorFlavors: gb,
-  cookiesEnabled: wb,
-  colorGamut: Sb,
-  invertedColors: Ib,
-  forcedColors: Ob,
-  monochrome: Ab,
-  contrast: Nb,
-  reducedMotion: Rb,
-  reducedTransparency: xb,
-  hdr: Db,
-  math: Pb,
-  pdfViewerEnabled: Cb,
-  architecture: jb,
-  applePay: Fb,
-  privateClickMeasurement: Vb,
-  audioBaseLatency: Qb,
-  dateTimeLocale: e0,
-  webGlBasics: Hb,
-  webGlExtensions: $b
+var a0 = {
+  fonts: zv,
+  domBlockers: Tb,
+  fontPreferences: jb,
+  audio: Rv,
+  screenFrame: ub,
+  canvas: Gv,
+  osCpu: Qv,
+  languages: eb,
+  colorDepth: tb,
+  deviceMemory: nb,
+  screenResolution: rb,
+  hardwareConcurrency: lb,
+  timezone: db,
+  sessionStorage: fb,
+  localStorage: hb,
+  indexedDB: pb,
+  openDatabase: mb,
+  cpuClass: gb,
+  platform: wb,
+  plugins: Vv,
+  touchSupport: Xv,
+  vendor: yb,
+  vendorFlavors: vb,
+  cookiesEnabled: bb,
+  colorGamut: kb,
+  invertedColors: Ab,
+  forcedColors: Nb,
+  monochrome: xb,
+  contrast: Db,
+  reducedMotion: Pb,
+  reducedTransparency: Lb,
+  hdr: Mb,
+  math: Ub,
+  pdfViewerEnabled: Fb,
+  architecture: zb,
+  applePay: Vb,
+  privateClickMeasurement: qb,
+  audioBaseLatency: n0,
+  dateTimeLocale: r0,
+  webGlBasics: Jb,
+  webGlExtensions: Xb
 };
 
-function n0(n) {
-  return wv(t0, n, [])
+function i0(n) {
+  return bv(a0, n, [])
 }
-var r0 = "$ if upgrade to Pro: https://fpjs.dev/pro";
+var o0 = "$ if upgrade to Pro: https://fpjs.dev/pro";
 
-function a0(n) {
-  var t = i0(n),
-    e = o0(t);
+function s0(n) {
+  var t = c0(n),
+    e = u0(t);
   return {
     score: t,
-    comment: r0.replace(/\$/g, "".concat(e))
+    comment: o0.replace(/\$/g, "".concat(e))
   }
 }
 
-function i0(n) {
+function c0(n) {
   if (Jt()) return .4;
   if (X()) return Zt() && !(dt() && lt()) ? .5 : .3;
   var t = "value" in n.platform ? n.platform.value : "";
   return /^Win/.test(t) ? .6 : /^Mac/.test(t) ? .5 : .7
 }
 
-function o0(n) {
+function u0(n) {
   return or(.99 + .01 * n, 1e-4)
 }
 
-function s0(n) {
+function l0(n) {
   for (var t = "", e = 0, r = Object.keys(n).sort(); e < r.length; e++) {
     var a = r[e],
       i = n[a],
@@ -4126,16 +4141,16 @@ function s0(n) {
 
 function mr(n) {
   return JSON.stringify(n, function(t, e) {
-    return e instanceof Error ? hv(e) : e
+    return e instanceof Error ? gv(e) : e
   }, 2)
 }
 
 function gr(n) {
-  return fv(s0(n))
+  return mv(l0(n))
 }
 
-function c0(n) {
-  var t, e = a0(n);
+function d0(n) {
+  var t, e = s0(n);
   return {
     get visitorId() {
       return t === void 0 && (t = gr(this.components)), t
@@ -4149,11 +4164,11 @@ function c0(n) {
   }
 }
 
-function u0(n) {
-  return n === void 0 && (n = 50), av(n, n * 2)
+function _0(n) {
+  return n === void 0 && (n = 50), sv(n, n * 2)
 }
 
-function l0(n, t) {
+function f0(n, t) {
   var e = Date.now();
   return {
     get: function(r) {
@@ -4164,7 +4179,7 @@ function l0(n, t) {
             case 0:
               return a = Date.now(), [4, n()];
             case 1:
-              return i = s.sent(), o = c0(i), (t || r != null && r.debug) && console.log("Copy the text below to get the debug data:\n\n```\nversion: ".concat(o.version, `
+              return i = s.sent(), o = d0(i), (t || r != null && r.debug) && console.log("Copy the text below to get the debug data:\n\n```\nversion: ".concat(o.version, `
 userAgent: `).concat(navigator.userAgent, `
 timeBetweenLoadAndGet: `).concat(a - e, `
 visitorId: `).concat(o.visitorId, `
@@ -4176,7 +4191,7 @@ components: `).concat(mr(i), "\n```")), [2, o]
   }
 }
 
-function d0() {
+function h0() {
   if (!(window.__fpjs_d_m || Math.random() >= .001)) try {
     var n = new XMLHttpRequest;
     n.open("get", "https://m1.openfpcdn.io/fingerprintjs/v".concat(ar, "/npm-monitoring"), !0), n.send()
@@ -4185,81 +4200,90 @@ function d0() {
   }
 }
 
-function _0(n) {
+function p0(n) {
   var t;
   return n === void 0 && (n = {}), Q(this, void 0, void 0, function() {
     var e, r, a;
     return ee(this, function(i) {
       switch (i.label) {
         case 0:
-          return (!((t = n.monitoring) !== null && t !== void 0) || t) && d0(), e = n.delayFallback, r = n.debug, [4, u0(e)];
+          return (!((t = n.monitoring) !== null && t !== void 0) || t) && h0(), e = n.delayFallback, r = n.debug, [4, _0(e)];
         case 1:
-          return i.sent(), a = n0({
+          return i.sent(), a = i0({
             cache: {},
             debug: r
-          }), [2, l0(a, r)]
+          }), [2, f0(a, r)]
       }
     })
   })
 }
 var wr = {
-  load: _0,
+  load: p0,
   hashComponents: gr,
   componentsToDebugString: mr
 };
 let Dt = null,
   vt;
-async function f0() {
+async function m0() {
   return Dt || (Dt = wr.load()), Dt
 }
 async function bt() {
-  return vt || h0().then(n => n.visitorId)
+  return vt || g0().then(n => n.visitorId)
 }
-async function h0() {
-  const t = await (await f0()).get(),
-    {
-      languages: e,
-      fontPreferences: r,
-      dateTimeLocale: a,
-      canvas: i,
-      ...o
-    } = t.components,
-    s = navigator.userAgent,
-    l = navigator.deviceMemory || 0,
-    u = navigator.userAgent.toLowerCase(),
-    _ = u.includes("chrome"),
-    d = u.includes("iphone"),
-    p = u.includes("macintosh"),
-    g = d || p;
-  return vt = wr.hashComponents({
-    ..._ ? {
-      canvas: i,
-      dateTimeLocale: a,
-      languages: e
-    } : {},
-    ...g ? {
-      canvas: i,
-      languages: e,
-      fontPreferences: r,
-      dateTimeLocale: a
-    } : {},
-    languages: {
-      value: [s, l],
-      duration: 0
-    },
-    ...o
-  }), {
+async function g0() {
+  const t = await (await m0()).get();
+  let e = t.components;
+  const r = iv(),
+    a = navigator.userAgent.toLowerCase(),
+    i = a.includes("iphone"),
+    o = a.includes("macintosh");
+  if (i || o) e = t.components;
+  else if (r === "Chrome") {
+    const {
+      languages: u,
+      fontPreferences: l,
+      ..._
+    } = t.components;
+    e = _
+  } else if (r === "Firefox") {
+    const {
+      fonts: u,
+      languages: l,
+      dateTimeLocale: _,
+      ...d
+    } = t.components;
+    e = d
+  } else if (r === "Brave") {
+    const {
+      fonts: u,
+      audio: l,
+      canvas: _,
+      hardwareConcurrency: d,
+      plugins: p,
+      deviceMemory: y,
+      ...b
+    } = t.components;
+    e = b
+  } else {
+    const {
+      languages: u,
+      fontPreferences: l,
+      ..._
+    } = t.components;
+    e = _
+  }
+  return vt = wr.hashComponents(e), {
     visitorId: vt,
-    components: o
+    components: e
   }
 }
-const p0 = [{
+const w0 = [{
     tileSize: 1e3,
     zoom: 11
   }],
-  m0 = 4,
-  g0 = 6e3,
-  w0 = [{
+  y0 = 4,
+  v0 = 6e3,
+  b0 = [{
     name: "Transparent",
     rgb: [0, 0, 0]
   }, {
@@ -4452,10 +4476,10 @@ const p0 = [{
     name: "Light Stone",
     rgb: [205, 197, 158]
   }],
-  y0 = {
+  E0 = {
     needsPhoneVerification: "needs_phone_verification"
   },
-  v0 = {
+  T0 = {
     Droplet: {},
     "Max. Charge": {},
     "Paint Charge": {},
@@ -4466,7 +4490,7 @@ const p0 = [{
     "Custom Name Font": {},
     "Custom Name Style": {}
   },
-  b0 = {
+  S0 = {
     10: {
       name: "25,000 Droplets",
       price: 500,
@@ -4597,8 +4621,8 @@ const p0 = [{
       }]
     }
   },
-  E0 = JSON.parse(`[{"id":1,"name":"Afghanistan","code":"AF","flag":"🇦🇫"},{"id":2,"name":"Albania","code":"AL","flag":"🇦🇱"},{"id":3,"name":"Algeria","code":"DZ","flag":"🇩🇿"},{"id":4,"name":"American Samoa","code":"AS","flag":"🇦🇸"},{"id":5,"name":"Andorra","code":"AD","flag":"🇦🇩"},{"id":6,"name":"Angola","code":"AO","flag":"🇦🇴"},{"id":7,"name":"Anguilla","code":"AI","flag":"🇦🇮"},{"id":8,"name":"Antarctica","code":"AQ","flag":"🇦🇶"},{"id":9,"name":"Antigua and Barbuda","code":"AG","flag":"🇦🇬"},{"id":10,"name":"Argentina","code":"AR","flag":"🇦🇷"},{"id":11,"name":"Armenia","code":"AM","flag":"🇦🇲"},{"id":12,"name":"Aruba","code":"AW","flag":"🇦🇼"},{"id":13,"name":"Australia","code":"AU","flag":"🇦🇺"},{"id":14,"name":"Austria","code":"AT","flag":"🇦🇹"},{"id":15,"name":"Azerbaijan","code":"AZ","flag":"🇦🇿"},{"id":16,"name":"Bahamas","code":"BS","flag":"🇧🇸"},{"id":17,"name":"Bahrain","code":"BH","flag":"🇧🇭"},{"id":18,"name":"Bangladesh","code":"BD","flag":"🇧🇩"},{"id":19,"name":"Barbados","code":"BB","flag":"🇧🇧"},{"id":20,"name":"Belarus","code":"BY","flag":"🇧🇾"},{"id":21,"name":"Belgium","code":"BE","flag":"🇧🇪"},{"id":22,"name":"Belize","code":"BZ","flag":"🇧🇿"},{"id":23,"name":"Benin","code":"BJ","flag":"🇧🇯"},{"id":24,"name":"Bermuda","code":"BM","flag":"🇧🇲"},{"id":25,"name":"Bhutan","code":"BT","flag":"🇧🇹"},{"id":26,"name":"Bolivia","code":"BO","flag":"🇧🇴"},{"id":27,"name":"Bonaire","code":"BQ","flag":"🇧🇶"},{"id":28,"name":"Bosnia and Herzegovina","code":"BA","flag":"🇧🇦"},{"id":29,"name":"Botswana","code":"BW","flag":"🇧🇼"},{"id":30,"name":"Bouvet Island","code":"BV","flag":"🇧🇻"},{"id":31,"name":"Brazil","code":"BR","flag":"🇧🇷"},{"id":32,"name":"British Indian Ocean Territory","code":"IO","flag":"🇮🇴"},{"id":33,"name":"Brunei Darussalam","code":"BN","flag":"🇧🇳"},{"id":34,"name":"Bulgaria","code":"BG","flag":"🇧🇬"},{"id":35,"name":"Burkina Faso","code":"BF","flag":"🇧🇫"},{"id":36,"name":"Burundi","code":"BI","flag":"🇧🇮"},{"id":37,"name":"Cabo Verde","code":"CV","flag":"🇨🇻"},{"id":38,"name":"Cambodia","code":"KH","flag":"🇰🇭"},{"id":39,"name":"Cameroon","code":"CM","flag":"🇨🇲"},{"id":40,"name":"Canada","code":"CA","flag":"🇨🇦"},{"id":41,"name":"Cayman Islands","code":"KY","flag":"🇰🇾"},{"id":42,"name":"Central African Republic","code":"CF","flag":"🇨🇫"},{"id":43,"name":"Chad","code":"TD","flag":"🇹🇩"},{"id":44,"name":"Chile","code":"CL","flag":"🇨🇱"},{"id":45,"name":"China","code":"CN","flag":"🇨🇳"},{"id":46,"name":"Christmas Island","code":"CX","flag":"🇨🇽"},{"id":47,"name":"Cocos (Keeling) Islands","code":"CC","flag":"🇨🇨"},{"id":48,"name":"Colombia","code":"CO","flag":"🇨🇴"},{"id":49,"name":"Comoros","code":"KM","flag":"🇰🇲"},{"id":50,"name":"Congo","code":"CG","flag":"🇨🇬"},{"id":51,"name":"Cook Islands","code":"CK","flag":"🇨🇰"},{"id":52,"name":"Costa Rica","code":"CR","flag":"🇨🇷"},{"id":53,"name":"Croatia","code":"HR","flag":"🇭🇷"},{"id":54,"name":"Cuba","code":"CU","flag":"🇨🇺"},{"id":55,"name":"Curaçao","code":"CW","flag":"🇨🇼"},{"id":56,"name":"Cyprus","code":"CY","flag":"🇨🇾"},{"id":57,"name":"Czechia","code":"CZ","flag":"🇨🇿"},{"id":58,"name":"Côte d'Ivoire","code":"CI","flag":"🇨🇮"},{"id":59,"name":"Denmark","code":"DK","flag":"🇩🇰"},{"id":60,"name":"Djibouti","code":"DJ","flag":"🇩🇯"},{"id":61,"name":"Dominica","code":"DM","flag":"🇩🇲"},{"id":62,"name":"Dominican Republic","code":"DO","flag":"🇩🇴"},{"id":63,"name":"Ecuador","code":"EC","flag":"🇪🇨"},{"id":64,"name":"Egypt","code":"EG","flag":"🇪🇬"},{"id":65,"name":"El Salvador","code":"SV","flag":"🇸🇻"},{"id":66,"name":"Equatorial Guinea","code":"GQ","flag":"🇬🇶"},{"id":67,"name":"Eritrea","code":"ER","flag":"🇪🇷"},{"id":68,"name":"Estonia","code":"EE","flag":"🇪🇪"},{"id":69,"name":"Eswatini","code":"SZ","flag":"🇸🇿"},{"id":70,"name":"Ethiopia","code":"ET","flag":"🇪🇹"},{"id":71,"name":"Falkland Islands (Malvinas)","code":"FK","flag":"🇫🇰"},{"id":72,"name":"Faroe Islands","code":"FO","flag":"🇫🇴"},{"id":73,"name":"Fiji","code":"FJ","flag":"🇫🇯"},{"id":74,"name":"Finland","code":"FI","flag":"🇫🇮"},{"id":75,"name":"France","code":"FR","flag":"🇫🇷"},{"id":76,"name":"French Guiana","code":"GF","flag":"🇬🇫"},{"id":77,"name":"French Polynesia","code":"PF","flag":"🇵🇫"},{"id":78,"name":"French Southern Territories","code":"TF","flag":"🇹🇫"},{"id":79,"name":"Gabon","code":"GA","flag":"🇬🇦"},{"id":80,"name":"Gambia","code":"GM","flag":"🇬🇲"},{"id":81,"name":"Georgia","code":"GE","flag":"🇬🇪"},{"id":82,"name":"Germany","code":"DE","flag":"🇩🇪"},{"id":83,"name":"Ghana","code":"GH","flag":"🇬🇭"},{"id":84,"name":"Gibraltar","code":"GI","flag":"🇬🇮"},{"id":85,"name":"Greece","code":"GR","flag":"🇬🇷"},{"id":86,"name":"Greenland","code":"GL","flag":"🇬🇱"},{"id":87,"name":"Grenada","code":"GD","flag":"🇬🇩"},{"id":88,"name":"Guadeloupe","code":"GP","flag":"🇬🇵"},{"id":89,"name":"Guam","code":"GU","flag":"🇬🇺"},{"id":90,"name":"Guatemala","code":"GT","flag":"🇬🇹"},{"id":91,"name":"Guernsey","code":"GG","flag":"🇬🇬"},{"id":92,"name":"Guinea","code":"GN","flag":"🇬🇳"},{"id":93,"name":"Guinea-Bissau","code":"GW","flag":"🇬🇼"},{"id":94,"name":"Guyana","code":"GY","flag":"🇬🇾"},{"id":95,"name":"Haiti","code":"HT","flag":"🇭🇹"},{"id":96,"name":"Heard Island and McDonald Islands","code":"HM","flag":"🇭🇲"},{"id":97,"name":"Honduras","code":"HN","flag":"🇭🇳"},{"id":98,"name":"Hong Kong","code":"HK","flag":"🇭🇰"},{"id":99,"name":"Hungary","code":"HU","flag":"🇭🇺"},{"id":100,"name":"Iceland","code":"IS","flag":"🇮🇸"},{"id":101,"name":"India","code":"IN","flag":"🇮🇳"},{"id":102,"name":"Indonesia","code":"ID","flag":"🇮🇩"},{"id":103,"name":"Iran","code":"IR","flag":"🇮🇷"},{"id":104,"name":"Iraq","code":"IQ","flag":"🇮🇶"},{"id":105,"name":"Ireland","code":"IE","flag":"🇮🇪"},{"id":106,"name":"Isle of Man","code":"IM","flag":"🇮🇲"},{"id":107,"name":"Israel","code":"IL","flag":"🇮🇱"},{"id":108,"name":"Italy","code":"IT","flag":"🇮🇹"},{"id":109,"name":"Jamaica","code":"JM","flag":"🇯🇲"},{"id":110,"name":"Japan","code":"JP","flag":"🇯🇵"},{"id":111,"name":"Jersey","code":"JE","flag":"🇯🇪"},{"id":112,"name":"Jordan","code":"JO","flag":"🇯🇴"},{"id":113,"name":"Kazakhstan","code":"KZ","flag":"🇰🇿"},{"id":114,"name":"Kenya","code":"KE","flag":"🇰🇪"},{"id":115,"name":"Kiribati","code":"KI","flag":"🇰🇮"},{"id":116,"name":"Kosovo","code":"XK","flag":"🇽🇰"},{"id":117,"name":"Kuwait","code":"KW","flag":"🇰🇼"},{"id":118,"name":"Kyrgyzstan","code":"KG","flag":"🇰🇬"},{"id":119,"name":"Laos","code":"LA","flag":"🇱🇦"},{"id":120,"name":"Latvia","code":"LV","flag":"🇱🇻"},{"id":121,"name":"Lebanon","code":"LB","flag":"🇱🇧"},{"id":122,"name":"Lesotho","code":"LS","flag":"🇱🇸"},{"id":123,"name":"Liberia","code":"LR","flag":"🇱🇷"},{"id":124,"name":"Libya","code":"LY","flag":"🇱🇾"},{"id":125,"name":"Liechtenstein","code":"LI","flag":"🇱🇮"},{"id":126,"name":"Lithuania","code":"LT","flag":"🇱🇹"},{"id":127,"name":"Luxembourg","code":"LU","flag":"🇱🇺"},{"id":128,"name":"Macao","code":"MO","flag":"🇲🇴"},{"id":129,"name":"Madagascar","code":"MG","flag":"🇲🇬"},{"id":130,"name":"Malawi","code":"MW","flag":"🇲🇼"},{"id":131,"name":"Malaysia","code":"MY","flag":"🇲🇾"},{"id":132,"name":"Maldives","code":"MV","flag":"🇲🇻"},{"id":133,"name":"Mali","code":"ML","flag":"🇲🇱"},{"id":134,"name":"Malta","code":"MT","flag":"🇲🇹"},{"id":135,"name":"Marshall Islands","code":"MH","flag":"🇲🇭"},{"id":136,"name":"Martinique","code":"MQ","flag":"🇲🇶"},{"id":137,"name":"Mauritania","code":"MR","flag":"🇲🇷"},{"id":138,"name":"Mauritius","code":"MU","flag":"🇲🇺"},{"id":139,"name":"Mayotte","code":"YT","flag":"🇾🇹"},{"id":140,"name":"Mexico","code":"MX","flag":"🇲🇽"},{"id":141,"name":"Micronesia","code":"FM","flag":"🇫🇲"},{"id":142,"name":"Moldova","code":"MD","flag":"🇲🇩"},{"id":143,"name":"Monaco","code":"MC","flag":"🇲🇨"},{"id":144,"name":"Mongolia","code":"MN","flag":"🇲🇳"},{"id":145,"name":"Montenegro","code":"ME","flag":"🇲🇪"},{"id":146,"name":"Montserrat","code":"MS","flag":"🇲🇸"},{"id":147,"name":"Morocco","code":"MA","flag":"🇲🇦"},{"id":148,"name":"Mozambique","code":"MZ","flag":"🇲🇿"},{"id":149,"name":"Myanmar","code":"MM","flag":"🇲🇲"},{"id":150,"name":"Namibia","code":"NA","flag":"🇳🇦"},{"id":151,"name":"Nauru","code":"NR","flag":"🇳🇷"},{"id":152,"name":"Nepal","code":"NP","flag":"🇳🇵"},{"id":153,"name":"Netherlands","code":"NL","flag":"🇳🇱"},{"id":154,"name":"New Caledonia","code":"NC","flag":"🇳🇨"},{"id":155,"name":"New Zealand","code":"NZ","flag":"🇳🇿"},{"id":156,"name":"Nicaragua","code":"NI","flag":"🇳🇮"},{"id":157,"name":"Niger","code":"NE","flag":"🇳🇪"},{"id":158,"name":"Nigeria","code":"NG","flag":"🇳🇬"},{"id":159,"name":"Niue","code":"NU","flag":"🇳🇺"},{"id":160,"name":"Norfolk Island","code":"NF","flag":"🇳🇫"},{"id":161,"name":"North Korea","code":"KP","flag":"🇰🇵"},{"id":162,"name":"North Macedonia","code":"MK","flag":"🇲🇰"},{"id":163,"name":"Northern Mariana Islands","code":"MP","flag":"🇲🇵"},{"id":164,"name":"Norway","code":"NO","flag":"🇳🇴"},{"id":165,"name":"Oman","code":"OM","flag":"🇴🇲"},{"id":166,"name":"Pakistan","code":"PK","flag":"🇵🇰"},{"id":167,"name":"Palau","code":"PW","flag":"🇵🇼"},{"id":168,"name":"Palestine","code":"PS","flag":"🇵🇸"},{"id":169,"name":"Panama","code":"PA","flag":"🇵🇦"},{"id":170,"name":"Papua New Guinea","code":"PG","flag":"🇵🇬"},{"id":171,"name":"Paraguay","code":"PY","flag":"🇵🇾"},{"id":172,"name":"Peru","code":"PE","flag":"🇵🇪"},{"id":173,"name":"Philippines","code":"PH","flag":"🇵🇭"},{"id":174,"name":"Pitcairn","code":"PN","flag":"🇵🇳"},{"id":175,"name":"Poland","code":"PL","flag":"🇵🇱"},{"id":176,"name":"Portugal","code":"PT","flag":"🇵🇹"},{"id":177,"name":"Puerto Rico","code":"PR","flag":"🇵🇷"},{"id":178,"name":"Qatar","code":"QA","flag":"🇶🇦"},{"id":179,"name":"Republic of the Congo","code":"CD","flag":"🇨🇩"},{"id":180,"name":"Romania","code":"RO","flag":"🇷🇴"},{"id":181,"name":"Russia","code":"RU","flag":"🇷🇺"},{"id":182,"name":"Rwanda","code":"RW","flag":"🇷🇼"},{"id":183,"name":"Réunion","code":"RE","flag":"🇷🇪"},{"id":184,"name":"Saint Barthélemy","code":"BL","flag":"🇧🇱"},{"id":185,"name":"Saint Helena","code":"SH","flag":"🇸🇭"},{"id":186,"name":"Saint Kitts and Nevis","code":"KN","flag":"🇰🇳"},{"id":187,"name":"Saint Lucia","code":"LC","flag":"🇱🇨"},{"id":188,"name":"Saint Martin (French part)","code":"MF","flag":"🇲🇫"},{"id":189,"name":"Saint Pierre and Miquelon","code":"PM","flag":"🇵🇲"},{"id":190,"name":"Saint Vincent and the Grenadines","code":"VC","flag":"🇻🇨"},{"id":191,"name":"Samoa","code":"WS","flag":"🇼🇸"},{"id":192,"name":"San Marino","code":"SM","flag":"🇸🇲"},{"id":193,"name":"Sao Tome and Principe","code":"ST","flag":"🇸🇹"},{"id":194,"name":"Saudi Arabia","code":"SA","flag":"🇸🇦"},{"id":195,"name":"Senegal","code":"SN","flag":"🇸🇳"},{"id":196,"name":"Serbia","code":"RS","flag":"🇷🇸"},{"id":197,"name":"Seychelles","code":"SC","flag":"🇸🇨"},{"id":198,"name":"Sierra Leone","code":"SL","flag":"🇸🇱"},{"id":199,"name":"Singapore","code":"SG","flag":"🇸🇬"},{"id":200,"name":"Sint Maarten (Dutch part)","code":"SX","flag":"🇸🇽"},{"id":201,"name":"Slovakia","code":"SK","flag":"🇸🇰"},{"id":202,"name":"Slovenia","code":"SI","flag":"🇸🇮"},{"id":203,"name":"Solomon Islands","code":"SB","flag":"🇸🇧"},{"id":204,"name":"Somalia","code":"SO","flag":"🇸🇴"},{"id":205,"name":"South Africa","code":"ZA","flag":"🇿🇦"},{"id":206,"name":"South Georgia and the South Sandwich Islands","code":"GS","flag":"🇬🇸"},{"id":207,"name":"South Korea","code":"KR","flag":"🇰🇷"},{"id":208,"name":"South Sudan","code":"SS","flag":"🇸🇸"},{"id":209,"name":"Spain","code":"ES","flag":"🇪🇸"},{"id":210,"name":"Sri Lanka","code":"LK","flag":"🇱🇰"},{"id":211,"name":"Sudan","code":"SD","flag":"🇸🇩"},{"id":212,"name":"Suriname","code":"SR","flag":"🇸🇷"},{"id":213,"name":"Svalbard and Jan Mayen","code":"SJ","flag":"🇸🇯"},{"id":214,"name":"Sweden","code":"SE","flag":"🇸🇪"},{"id":215,"name":"Switzerland","code":"CH","flag":"🇨🇭"},{"id":216,"name":"Syrian Arab Republic","code":"SY","flag":"🇸🇾"},{"id":217,"name":"Taiwan","code":"TW","flag":"🇹🇼"},{"id":218,"name":"Tajikistan","code":"TJ","flag":"🇹🇯"},{"id":219,"name":"Tanzania","code":"TZ","flag":"🇹🇿"},{"id":220,"name":"Thailand","code":"TH","flag":"🇹🇭"},{"id":221,"name":"Timor-Leste","code":"TL","flag":"🇹🇱"},{"id":222,"name":"Togo","code":"TG","flag":"🇹🇬"},{"id":223,"name":"Tokelau","code":"TK","flag":"🇹🇰"},{"id":224,"name":"Tonga","code":"TO","flag":"🇹🇴"},{"id":225,"name":"Trinidad and Tobago","code":"TT","flag":"🇹🇹"},{"id":226,"name":"Tunisia","code":"TN","flag":"🇹🇳"},{"id":227,"name":"Turkmenistan","code":"TM","flag":"🇹🇲"},{"id":228,"name":"Turks and Caicos Islands","code":"TC","flag":"🇹🇨"},{"id":229,"name":"Tuvalu","code":"TV","flag":"🇹🇻"},{"id":230,"name":"Türkiye","code":"TR","flag":"🇹🇷"},{"id":231,"name":"Uganda","code":"UG","flag":"🇺🇬"},{"id":232,"name":"Ukraine","code":"UA","flag":"🇺🇦"},{"id":233,"name":"United Arab Emirates","code":"AE","flag":"🇦🇪"},{"id":234,"name":"United Kingdom","code":"GB","flag":"🇬🇧"},{"id":235,"name":"United States","code":"US","flag":"🇺🇸"},{"id":236,"name":"United States Minor Outlying Islands","code":"UM","flag":"🇺🇲"},{"id":237,"name":"Uruguay","code":"UY","flag":"🇺🇾"},{"id":238,"name":"Uzbekistan","code":"UZ","flag":"🇺🇿"},{"id":239,"name":"Vanuatu","code":"VU","flag":"🇻🇺"},{"id":240,"name":"Vatican City","code":"VA","flag":"🇻🇦"},{"id":241,"name":"Venezuela","code":"VE","flag":"🇻🇪"},{"id":242,"name":"Viet Nam","code":"VN","flag":"🇻🇳"},{"id":243,"name":"Virgin Islands","code":"VG","flag":"🇻🇬"},{"id":244,"name":"Virgin Islands","code":"VI","flag":"🇻🇮"},{"id":245,"name":"Wallis and Futuna","code":"WF","flag":"🇼🇫"},{"id":246,"name":"Western Sahara","code":"EH","flag":"🇪🇭"},{"id":247,"name":"Yemen","code":"YE","flag":"🇾🇪"},{"id":248,"name":"Zambia","code":"ZM","flag":"🇿🇲"},{"id":249,"name":"Zimbabwe","code":"ZW","flag":"🇿🇼"},{"id":250,"name":"Åland Islands","code":"AX","flag":"🇦🇽"},{"id":251,"name":"Canary Islands","code":"IC","flag":"🇮🇨"}]`),
-  T0 = {
+  O0 = JSON.parse(`[{"id":1,"name":"Afghanistan","code":"AF","flag":"🇦🇫"},{"id":2,"name":"Albania","code":"AL","flag":"🇦🇱"},{"id":3,"name":"Algeria","code":"DZ","flag":"🇩🇿"},{"id":4,"name":"American Samoa","code":"AS","flag":"🇦🇸"},{"id":5,"name":"Andorra","code":"AD","flag":"🇦🇩"},{"id":6,"name":"Angola","code":"AO","flag":"🇦🇴"},{"id":7,"name":"Anguilla","code":"AI","flag":"🇦🇮"},{"id":8,"name":"Antarctica","code":"AQ","flag":"🇦🇶"},{"id":9,"name":"Antigua and Barbuda","code":"AG","flag":"🇦🇬"},{"id":10,"name":"Argentina","code":"AR","flag":"🇦🇷"},{"id":11,"name":"Armenia","code":"AM","flag":"🇦🇲"},{"id":12,"name":"Aruba","code":"AW","flag":"🇦🇼"},{"id":13,"name":"Australia","code":"AU","flag":"🇦🇺"},{"id":14,"name":"Austria","code":"AT","flag":"🇦🇹"},{"id":15,"name":"Azerbaijan","code":"AZ","flag":"🇦🇿"},{"id":16,"name":"Bahamas","code":"BS","flag":"🇧🇸"},{"id":17,"name":"Bahrain","code":"BH","flag":"🇧🇭"},{"id":18,"name":"Bangladesh","code":"BD","flag":"🇧🇩"},{"id":19,"name":"Barbados","code":"BB","flag":"🇧🇧"},{"id":20,"name":"Belarus","code":"BY","flag":"🇧🇾"},{"id":21,"name":"Belgium","code":"BE","flag":"🇧🇪"},{"id":22,"name":"Belize","code":"BZ","flag":"🇧🇿"},{"id":23,"name":"Benin","code":"BJ","flag":"🇧🇯"},{"id":24,"name":"Bermuda","code":"BM","flag":"🇧🇲"},{"id":25,"name":"Bhutan","code":"BT","flag":"🇧🇹"},{"id":26,"name":"Bolivia","code":"BO","flag":"🇧🇴"},{"id":27,"name":"Bonaire","code":"BQ","flag":"🇧🇶"},{"id":28,"name":"Bosnia and Herzegovina","code":"BA","flag":"🇧🇦"},{"id":29,"name":"Botswana","code":"BW","flag":"🇧🇼"},{"id":30,"name":"Bouvet Island","code":"BV","flag":"🇧🇻"},{"id":31,"name":"Brazil","code":"BR","flag":"🇧🇷"},{"id":32,"name":"British Indian Ocean Territory","code":"IO","flag":"🇮🇴"},{"id":33,"name":"Brunei Darussalam","code":"BN","flag":"🇧🇳"},{"id":34,"name":"Bulgaria","code":"BG","flag":"🇧🇬"},{"id":35,"name":"Burkina Faso","code":"BF","flag":"🇧🇫"},{"id":36,"name":"Burundi","code":"BI","flag":"🇧🇮"},{"id":37,"name":"Cabo Verde","code":"CV","flag":"🇨🇻"},{"id":38,"name":"Cambodia","code":"KH","flag":"🇰🇭"},{"id":39,"name":"Cameroon","code":"CM","flag":"🇨🇲"},{"id":40,"name":"Canada","code":"CA","flag":"🇨🇦"},{"id":41,"name":"Cayman Islands","code":"KY","flag":"🇰🇾"},{"id":42,"name":"Central African Republic","code":"CF","flag":"🇨🇫"},{"id":43,"name":"Chad","code":"TD","flag":"🇹🇩"},{"id":44,"name":"Chile","code":"CL","flag":"🇨🇱"},{"id":45,"name":"China","code":"CN","flag":"🇨🇳"},{"id":46,"name":"Christmas Island","code":"CX","flag":"🇨🇽"},{"id":47,"name":"Cocos (Keeling) Islands","code":"CC","flag":"🇨🇨"},{"id":48,"name":"Colombia","code":"CO","flag":"🇨🇴"},{"id":49,"name":"Comoros","code":"KM","flag":"🇰🇲"},{"id":50,"name":"Congo","code":"CG","flag":"🇨🇬"},{"id":51,"name":"Cook Islands","code":"CK","flag":"🇨🇰"},{"id":52,"name":"Costa Rica","code":"CR","flag":"🇨🇷"},{"id":53,"name":"Croatia","code":"HR","flag":"🇭🇷"},{"id":54,"name":"Cuba","code":"CU","flag":"🇨🇺"},{"id":55,"name":"Curaçao","code":"CW","flag":"🇨🇼"},{"id":56,"name":"Cyprus","code":"CY","flag":"🇨🇾"},{"id":57,"name":"Czechia","code":"CZ","flag":"🇨🇿"},{"id":58,"name":"Côte d'Ivoire","code":"CI","flag":"🇨🇮"},{"id":59,"name":"Denmark","code":"DK","flag":"🇩🇰"},{"id":60,"name":"Djibouti","code":"DJ","flag":"🇩🇯"},{"id":61,"name":"Dominica","code":"DM","flag":"🇩🇲"},{"id":62,"name":"Dominican Republic","code":"DO","flag":"🇩🇴"},{"id":63,"name":"Ecuador","code":"EC","flag":"🇪🇨"},{"id":64,"name":"Egypt","code":"EG","flag":"🇪🇬"},{"id":65,"name":"El Salvador","code":"SV","flag":"🇸🇻"},{"id":66,"name":"Equatorial Guinea","code":"GQ","flag":"🇬🇶"},{"id":67,"name":"Eritrea","code":"ER","flag":"🇪🇷"},{"id":68,"name":"Estonia","code":"EE","flag":"🇪🇪"},{"id":69,"name":"Eswatini","code":"SZ","flag":"🇸🇿"},{"id":70,"name":"Ethiopia","code":"ET","flag":"🇪🇹"},{"id":71,"name":"Falkland Islands (Malvinas)","code":"FK","flag":"🇫🇰"},{"id":72,"name":"Faroe Islands","code":"FO","flag":"🇫🇴"},{"id":73,"name":"Fiji","code":"FJ","flag":"🇫🇯"},{"id":74,"name":"Finland","code":"FI","flag":"🇫🇮"},{"id":75,"name":"France","code":"FR","flag":"🇫🇷"},{"id":76,"name":"French Guiana","code":"GF","flag":"🇬🇫"},{"id":77,"name":"French Polynesia","code":"PF","flag":"🇵🇫"},{"id":78,"name":"French Southern Territories","code":"TF","flag":"🇹🇫"},{"id":79,"name":"Gabon","code":"GA","flag":"🇬🇦"},{"id":80,"name":"Gambia","code":"GM","flag":"🇬🇲"},{"id":81,"name":"Georgia","code":"GE","flag":"🇬🇪"},{"id":82,"name":"Germany","code":"DE","flag":"🇩🇪"},{"id":83,"name":"Ghana","code":"GH","flag":"🇬🇭"},{"id":84,"name":"Gibraltar","code":"GI","flag":"🇬🇮"},{"id":85,"name":"Greece","code":"GR","flag":"🇬🇷"},{"id":86,"name":"Greenland","code":"GL","flag":"🇬🇱"},{"id":87,"name":"Grenada","code":"GD","flag":"🇬🇩"},{"id":88,"name":"Guadeloupe","code":"GP","flag":"🇬🇵"},{"id":89,"name":"Guam","code":"GU","flag":"🇬🇺"},{"id":90,"name":"Guatemala","code":"GT","flag":"🇬🇹"},{"id":91,"name":"Guernsey","code":"GG","flag":"🇬🇬"},{"id":92,"name":"Guinea","code":"GN","flag":"🇬🇳"},{"id":93,"name":"Guinea-Bissau","code":"GW","flag":"🇬🇼"},{"id":94,"name":"Guyana","code":"GY","flag":"🇬🇾"},{"id":95,"name":"Haiti","code":"HT","flag":"🇭🇹"},{"id":96,"name":"Heard Island and McDonald Islands","code":"HM","flag":"🇭🇲"},{"id":97,"name":"Honduras","code":"HN","flag":"🇭🇳"},{"id":98,"name":"Hong Kong","code":"HK","flag":"🇭🇰"},{"id":99,"name":"Hungary","code":"HU","flag":"🇭🇺"},{"id":100,"name":"Iceland","code":"IS","flag":"🇮🇸"},{"id":101,"name":"India","code":"IN","flag":"🇮🇳"},{"id":102,"name":"Indonesia","code":"ID","flag":"🇮🇩"},{"id":103,"name":"Iran","code":"IR","flag":"🇮🇷"},{"id":104,"name":"Iraq","code":"IQ","flag":"🇮🇶"},{"id":105,"name":"Ireland","code":"IE","flag":"🇮🇪"},{"id":106,"name":"Isle of Man","code":"IM","flag":"🇮🇲"},{"id":107,"name":"Israel","code":"IL","flag":"🇮🇱"},{"id":108,"name":"Italy","code":"IT","flag":"🇮🇹"},{"id":109,"name":"Jamaica","code":"JM","flag":"🇯🇲"},{"id":110,"name":"Japan","code":"JP","flag":"🇯🇵"},{"id":111,"name":"Jersey","code":"JE","flag":"🇯🇪"},{"id":112,"name":"Jordan","code":"JO","flag":"🇯🇴"},{"id":113,"name":"Kazakhstan","code":"KZ","flag":"🇰🇿"},{"id":114,"name":"Kenya","code":"KE","flag":"🇰🇪"},{"id":115,"name":"Kiribati","code":"KI","flag":"🇰🇮"},{"id":116,"name":"Kosovo","code":"XK","flag":"🇽🇰"},{"id":117,"name":"Kuwait","code":"KW","flag":"🇰🇼"},{"id":118,"name":"Kyrgyzstan","code":"KG","flag":"🇰🇬"},{"id":119,"name":"Laos","code":"LA","flag":"🇱🇦"},{"id":120,"name":"Latvia","code":"LV","flag":"🇱🇻"},{"id":121,"name":"Lebanon","code":"LB","flag":"🇱🇧"},{"id":122,"name":"Lesotho","code":"LS","flag":"🇱🇸"},{"id":123,"name":"Liberia","code":"LR","flag":"🇱🇷"},{"id":124,"name":"Libya","code":"LY","flag":"🇱🇾"},{"id":125,"name":"Liechtenstein","code":"LI","flag":"🇱🇮"},{"id":126,"name":"Lithuania","code":"LT","flag":"🇱🇹"},{"id":127,"name":"Luxembourg","code":"LU","flag":"🇱🇺"},{"id":128,"name":"Macao","code":"MO","flag":"🇲🇴"},{"id":129,"name":"Madagascar","code":"MG","flag":"🇲🇬"},{"id":130,"name":"Malawi","code":"MW","flag":"🇲🇼"},{"id":131,"name":"Malaysia","code":"MY","flag":"🇲🇾"},{"id":132,"name":"Maldives","code":"MV","flag":"🇲🇻"},{"id":133,"name":"Mali","code":"ML","flag":"🇲🇱"},{"id":134,"name":"Malta","code":"MT","flag":"🇲🇹"},{"id":135,"name":"Marshall Islands","code":"MH","flag":"🇲🇭"},{"id":136,"name":"Martinique","code":"MQ","flag":"🇲🇶"},{"id":137,"name":"Mauritania","code":"MR","flag":"🇲🇷"},{"id":138,"name":"Mauritius","code":"MU","flag":"🇲🇺"},{"id":139,"name":"Mayotte","code":"YT","flag":"🇾🇹"},{"id":140,"name":"Mexico","code":"MX","flag":"🇲🇽"},{"id":141,"name":"Micronesia","code":"FM","flag":"🇫🇲"},{"id":142,"name":"Moldova","code":"MD","flag":"🇲🇩"},{"id":143,"name":"Monaco","code":"MC","flag":"🇲🇨"},{"id":144,"name":"Mongolia","code":"MN","flag":"🇲🇳"},{"id":145,"name":"Montenegro","code":"ME","flag":"🇲🇪"},{"id":146,"name":"Montserrat","code":"MS","flag":"🇲🇸"},{"id":147,"name":"Morocco","code":"MA","flag":"🇲🇦"},{"id":148,"name":"Mozambique","code":"MZ","flag":"🇲🇿"},{"id":149,"name":"Myanmar","code":"MM","flag":"🇲🇲"},{"id":150,"name":"Namibia","code":"NA","flag":"🇳🇦"},{"id":151,"name":"Nauru","code":"NR","flag":"🇳🇷"},{"id":152,"name":"Nepal","code":"NP","flag":"🇳🇵"},{"id":153,"name":"Netherlands","code":"NL","flag":"🇳🇱"},{"id":154,"name":"New Caledonia","code":"NC","flag":"🇳🇨"},{"id":155,"name":"New Zealand","code":"NZ","flag":"🇳🇿"},{"id":156,"name":"Nicaragua","code":"NI","flag":"🇳🇮"},{"id":157,"name":"Niger","code":"NE","flag":"🇳🇪"},{"id":158,"name":"Nigeria","code":"NG","flag":"🇳🇬"},{"id":159,"name":"Niue","code":"NU","flag":"🇳🇺"},{"id":160,"name":"Norfolk Island","code":"NF","flag":"🇳🇫"},{"id":161,"name":"North Korea","code":"KP","flag":"🇰🇵"},{"id":162,"name":"North Macedonia","code":"MK","flag":"🇲🇰"},{"id":163,"name":"Northern Mariana Islands","code":"MP","flag":"🇲🇵"},{"id":164,"name":"Norway","code":"NO","flag":"🇳🇴"},{"id":165,"name":"Oman","code":"OM","flag":"🇴🇲"},{"id":166,"name":"Pakistan","code":"PK","flag":"🇵🇰"},{"id":167,"name":"Palau","code":"PW","flag":"🇵🇼"},{"id":168,"name":"Palestine","code":"PS","flag":"🇵🇸"},{"id":169,"name":"Panama","code":"PA","flag":"🇵🇦"},{"id":170,"name":"Papua New Guinea","code":"PG","flag":"🇵🇬"},{"id":171,"name":"Paraguay","code":"PY","flag":"🇵🇾"},{"id":172,"name":"Peru","code":"PE","flag":"🇵🇪"},{"id":173,"name":"Philippines","code":"PH","flag":"🇵🇭"},{"id":174,"name":"Pitcairn","code":"PN","flag":"🇵🇳"},{"id":175,"name":"Poland","code":"PL","flag":"🇵🇱"},{"id":176,"name":"Portugal","code":"PT","flag":"🇵🇹"},{"id":177,"name":"Puerto Rico","code":"PR","flag":"🇵🇷"},{"id":178,"name":"Qatar","code":"QA","flag":"🇶🇦"},{"id":179,"name":"Republic of the Congo","code":"CD","flag":"🇨🇩"},{"id":180,"name":"Romania","code":"RO","flag":"🇷🇴"},{"id":181,"name":"Russia","code":"RU","flag":"🇷🇺"},{"id":182,"name":"Rwanda","code":"RW","flag":"🇷🇼"},{"id":183,"name":"Réunion","code":"RE","flag":"🇷🇪"},{"id":184,"name":"Saint Barthélemy","code":"BL","flag":"🇧🇱"},{"id":185,"name":"Saint Helena","code":"SH","flag":"🇸🇭"},{"id":186,"name":"Saint Kitts and Nevis","code":"KN","flag":"🇰🇳"},{"id":187,"name":"Saint Lucia","code":"LC","flag":"🇱🇨"},{"id":188,"name":"Saint Martin (French part)","code":"MF","flag":"🇲🇫"},{"id":189,"name":"Saint Pierre and Miquelon","code":"PM","flag":"🇵🇲"},{"id":190,"name":"Saint Vincent and the Grenadines","code":"VC","flag":"🇻🇨"},{"id":191,"name":"Samoa","code":"WS","flag":"🇼🇸"},{"id":192,"name":"San Marino","code":"SM","flag":"🇸🇲"},{"id":193,"name":"Sao Tome and Principe","code":"ST","flag":"🇸🇹"},{"id":194,"name":"Saudi Arabia","code":"SA","flag":"🇸🇦"},{"id":195,"name":"Senegal","code":"SN","flag":"🇸🇳"},{"id":196,"name":"Serbia","code":"RS","flag":"🇷🇸"},{"id":197,"name":"Seychelles","code":"SC","flag":"🇸🇨"},{"id":198,"name":"Sierra Leone","code":"SL","flag":"🇸🇱"},{"id":199,"name":"Singapore","code":"SG","flag":"🇸🇬"},{"id":200,"name":"Sint Maarten (Dutch part)","code":"SX","flag":"🇸🇽"},{"id":201,"name":"Slovakia","code":"SK","flag":"🇸🇰"},{"id":202,"name":"Slovenia","code":"SI","flag":"🇸🇮"},{"id":203,"name":"Solomon Islands","code":"SB","flag":"🇸🇧"},{"id":204,"name":"Somalia","code":"SO","flag":"🇸🇴"},{"id":205,"name":"South Africa","code":"ZA","flag":"🇿🇦"},{"id":206,"name":"South Georgia and the South Sandwich Islands","code":"GS","flag":"🇬🇸"},{"id":207,"name":"South Korea","code":"KR","flag":"🇰🇷"},{"id":208,"name":"South Sudan","code":"SS","flag":"🇸🇸"},{"id":209,"name":"Spain","code":"ES","flag":"🇪🇸"},{"id":210,"name":"Sri Lanka","code":"LK","flag":"🇱🇰"},{"id":211,"name":"Sudan","code":"SD","flag":"🇸🇩"},{"id":212,"name":"Suriname","code":"SR","flag":"🇸🇷"},{"id":213,"name":"Svalbard and Jan Mayen","code":"SJ","flag":"🇸🇯"},{"id":214,"name":"Sweden","code":"SE","flag":"🇸🇪"},{"id":215,"name":"Switzerland","code":"CH","flag":"🇨🇭"},{"id":216,"name":"Syrian Arab Republic","code":"SY","flag":"🇸🇾"},{"id":217,"name":"Taiwan","code":"TW","flag":"🇹🇼"},{"id":218,"name":"Tajikistan","code":"TJ","flag":"🇹🇯"},{"id":219,"name":"Tanzania","code":"TZ","flag":"🇹🇿"},{"id":220,"name":"Thailand","code":"TH","flag":"🇹🇭"},{"id":221,"name":"Timor-Leste","code":"TL","flag":"🇹🇱"},{"id":222,"name":"Togo","code":"TG","flag":"🇹🇬"},{"id":223,"name":"Tokelau","code":"TK","flag":"🇹🇰"},{"id":224,"name":"Tonga","code":"TO","flag":"🇹🇴"},{"id":225,"name":"Trinidad and Tobago","code":"TT","flag":"🇹🇹"},{"id":226,"name":"Tunisia","code":"TN","flag":"🇹🇳"},{"id":227,"name":"Turkmenistan","code":"TM","flag":"🇹🇲"},{"id":228,"name":"Turks and Caicos Islands","code":"TC","flag":"🇹🇨"},{"id":229,"name":"Tuvalu","code":"TV","flag":"🇹🇻"},{"id":230,"name":"Türkiye","code":"TR","flag":"🇹🇷"},{"id":231,"name":"Uganda","code":"UG","flag":"🇺🇬"},{"id":232,"name":"Ukraine","code":"UA","flag":"🇺🇦"},{"id":233,"name":"United Arab Emirates","code":"AE","flag":"🇦🇪"},{"id":234,"name":"United Kingdom","code":"GB","flag":"🇬🇧"},{"id":235,"name":"United States","code":"US","flag":"🇺🇸"},{"id":236,"name":"United States Minor Outlying Islands","code":"UM","flag":"🇺🇲"},{"id":237,"name":"Uruguay","code":"UY","flag":"🇺🇾"},{"id":238,"name":"Uzbekistan","code":"UZ","flag":"🇺🇿"},{"id":239,"name":"Vanuatu","code":"VU","flag":"🇻🇺"},{"id":240,"name":"Vatican City","code":"VA","flag":"🇻🇦"},{"id":241,"name":"Venezuela","code":"VE","flag":"🇻🇪"},{"id":242,"name":"Viet Nam","code":"VN","flag":"🇻🇳"},{"id":243,"name":"Virgin Islands","code":"VG","flag":"🇻🇬"},{"id":244,"name":"Virgin Islands","code":"VI","flag":"🇻🇮"},{"id":245,"name":"Wallis and Futuna","code":"WF","flag":"🇼🇫"},{"id":246,"name":"Western Sahara","code":"EH","flag":"🇪🇭"},{"id":247,"name":"Yemen","code":"YE","flag":"🇾🇪"},{"id":248,"name":"Zambia","code":"ZM","flag":"🇿🇲"},{"id":249,"name":"Zimbabwe","code":"ZW","flag":"🇿🇼"},{"id":250,"name":"Åland Islands","code":"AX","flag":"🇦🇽"},{"id":251,"name":"Canary Islands","code":"IC","flag":"🇮🇨"}]`),
+  I0 = {
     dashboard: {
       summary: {
         counters: {
@@ -4718,7 +4742,7 @@ const p0 = [{
       assignCosmetics: "staff.cosmetics.assign_cosmetics"
     }
   },
-  S0 = {
+  k0 = {
     tools: {
       wayback: {
         limit: 500
@@ -4726,27 +4750,27 @@ const p0 = [{
     }
   },
   ye = {
-    seasons: p0,
-    regionSize: m0,
-    refreshIntervalMs: g0,
-    colors: w0,
-    errors: y0,
-    items: v0,
-    products: b0,
-    countries: E0,
-    permissions: T0,
-    settings: S0
+    seasons: w0,
+    regionSize: y0,
+    refreshIntervalMs: v0,
+    colors: b0,
+    errors: E0,
+    items: T0,
+    products: S0,
+    countries: O0,
+    permissions: I0,
+    settings: k0
   },
-  Ft = ye,
-  I0 = ye.seasons,
+  Bt = ye,
+  A0 = ye.seasons,
   yr = ye.seasons.length - 1,
-  OE = ye.seasons[yr].zoom,
-  kE = ye.seasons[yr].tileSize,
-  AE = ye.permissions,
-  O0 = ye.settings;
+  RE = ye.seasons[yr].zoom,
+  xE = ye.seasons[yr].tileSize,
+  DE = ye.permissions,
+  N0 = ye.settings;
 
-function NE(n) {
-  return Ft.countries[n - 1]
+function PE(n) {
+  return Bt.countries[n - 1]
 }
 class h extends Error {
   constructor(t, e) {
@@ -4754,7 +4778,7 @@ class h extends Error {
   }
 }
 
-function Bn(n, t) {
+function Fn(n, t) {
   const e = {};
   for (const r of n) {
     const a = t(r);
@@ -4764,7 +4788,7 @@ function Bn(n, t) {
   return e
 }
 
-function RE(n, t) {
+function LE(n, t) {
   const e = {};
   for (const r of n) {
     const a = t(r);
@@ -4773,10 +4797,10 @@ function RE(n, t) {
   return e
 }
 var Ze, Je;
-class k0 {
+class R0 {
   constructor(t) {
-    P(this, Ze, B(!0));
-    P(this, Je, B(null));
+    P(this, Ze, F(!0));
+    P(this, Je, F(null));
     this.url = t
   }
   get online() {
@@ -4812,16 +4836,16 @@ class k0 {
     Number.isFinite(r) && (this.serverTimeOffsetMs = r - Date.now())
   }
   async paint(t) {
-    const e = Bn(t, s => `t=(${s.tile[0]},${s.tile[1]}),s=${s.season}`),
+    const e = Fn(t, s => `t=(${s.tile[0]},${s.tile[1]}),s=${s.season}`),
       r = {
         season: t[0].season,
         tiles: Object.values(e).map(s => ({
           x: s[0].tile[0],
           y: s[0].tile[1],
           pixels: {
-            x: s.map(l => l.pixel[0]),
-            y: s.map(l => l.pixel[1]),
-            colors: s.map(l => l.colorIdx)
+            x: s.map(u => u.pixel[0]),
+            y: s.map(u => u.pixel[1]),
+            colors: s.map(u => u.colorIdx)
           }
         }))
       },
@@ -4839,9 +4863,9 @@ class k0 {
         if (o.headers.get("cf-mitigated") === "challenge") throw new Error(gn());
         const s = await o.json();
         if ((s == null ? void 0 : s.error) === "timeout") {
-          const l = new Date(Date.now() + ((s == null ? void 0 : s.durationMs) ?? 0));
-          throw new Error(In({
-            until: l.toLocaleString()
+          const u = new Date(Date.now() + ((s == null ? void 0 : s.durationMs) ?? 0));
+          throw new Error(On({
+            until: u.toLocaleString()
           }))
         }
         if ((s == null ? void 0 : s.error) === "refresh") throw new Error(vn());
@@ -4852,7 +4876,7 @@ class k0 {
             if (await fn(s.tier)) return this.paint(t);
             throw new Error(At())
           } else console.error("Challenge required but no tier provided", s);
-        Ie.refresh()
+        Oe.refresh()
       } else throw new Error(f())
     }
   }
@@ -4959,42 +4983,42 @@ class k0 {
     return o.json()
   }
   async sendPaintRequests(t, e, r, a) {
-    const i = Bn(t, l => `t=(${l.tile[0]},${l.tile[1]}),s=${l.season}`),
-      s = (await Promise.all(Object.values(i).map(async l => {
-        const [u, _] = l[0].tile, d = l[0].season, p = {
-          colors: l.map(T => T.colorIdx),
-          coords: l.flatMap(T => T.pixel),
+    const i = Fn(t, u => `t=(${u.tile[0]},${u.tile[1]}),s=${u.season}`),
+      s = (await Promise.all(Object.values(i).map(async u => {
+        const [l, _] = u[0].tile, d = u[0].season, p = {
+          colors: u.map(T => T.colorIdx),
+          coords: u.flatMap(T => T.pixel),
           csid: r
-        }, g = JSON.stringify(p), E = e(d, u, _), w = await De.getHeaders(g);
-        return this.request(E, {
+        }, y = JSON.stringify(p), b = e(d, l, _), g = await De.getHeaders(y);
+        return this.request(b, {
           method: "POST",
-          body: g,
-          headers: w,
+          body: y,
+          headers: g,
           credentials: "include"
         })
-      }))).filter(l => l.status !== c.OK);
+      }))).filter(u => u.status !== c.OK);
     if (s.length) {
-      const l = s[0];
-      if (l.status === c.UNAUTHORIZED) throw new Error(Sn());
-      if (l.status === c.FORBIDDEN) {
-        if (l.headers.get("cf-mitigated") === "challenge") throw new Error(gn());
-        const u = await l.json();
-        if ((u == null ? void 0 : u.error) === "timeout") {
-          const _ = new Date(Date.now() + ((u == null ? void 0 : u.durationMs) ?? 0));
-          throw new Error(In({
+      const u = s[0];
+      if (u.status === c.UNAUTHORIZED) throw new Error(Sn());
+      if (u.status === c.FORBIDDEN) {
+        if (u.headers.get("cf-mitigated") === "challenge") throw new Error(gn());
+        const l = await u.json();
+        if ((l == null ? void 0 : l.error) === "timeout") {
+          const _ = new Date(Date.now() + ((l == null ? void 0 : l.durationMs) ?? 0));
+          throw new Error(On({
             until: _.toLocaleString()
           }))
         }
-        if ((u == null ? void 0 : u.error) === "refresh") throw new Error(vn());
-        if ((u == null ? void 0 : u.error) === "color-not-owned") throw new Error(yn());
-        if ((u == null ? void 0 : u.error) === "event-pixel-present") throw new Error(pn());
-        Ie.refresh()
+        if ((l == null ? void 0 : l.error) === "refresh") throw new Error(vn());
+        if ((l == null ? void 0 : l.error) === "color-not-owned") throw new Error(yn());
+        if ((l == null ? void 0 : l.error) === "event-pixel-present") throw new Error(pn());
+        Oe.refresh()
       } else throw new Error(f())
     }
   }
   async adminAutoPainterPaint(t, e, r) {
-    const a = A0(t),
-      i = await N0(a),
+    const a = x0(t),
+      i = await D0(a),
       o = new FormData;
     o.append("fingerprint", e), o.append("season", a.season.toString()), o.append("px0", a.offsetX.toString()), o.append("py0", a.offsetY.toString()), o.append("width", a.width.toString()), o.append("height", a.height.toString()), o.append("pixels", t.length.toString()), o.append("bitmap", i, "auto-painter.png"), o.append("userId", r.toString());
     const s = await this.request("/staff/tools/auto-painter/paint", {
@@ -5017,9 +5041,9 @@ class k0 {
       credentials: "include"
     });
     if (s.status !== c.OK) {
-      const l = await s.text();
+      const u = await s.text();
       throw new Error(vu({
-        err: l
+        err: u
       }))
     }
     return s.json()
@@ -5030,25 +5054,25 @@ class k0 {
     p0: [a, i],
     p1: [o, s]
   }) {
-    const l = await this.request(`/staff/tools/select-area/s${t}/${e}/${r}?x0=${a}&y0=${i}&x1=${o}&y1=${s}`, {
+    const u = await this.request(`/staff/tools/select-area/s${t}/${e}/${r}?x0=${a}&y0=${i}&x1=${o}&y1=${s}`, {
       credentials: "include"
     });
-    if (l.status !== c.OK) {
-      const E = await l.text();
-      throw console.error("Error while fetching pixel area info", E), new Error(f())
+    if (u.status !== c.OK) {
+      const b = await u.text();
+      throw console.error("Error while fetching pixel area info", b), new Error(f())
     }
-    const u = await l.arrayBuffer(),
-      _ = new DataView(u),
-      d = Math.floor(u.byteLength / 5),
+    const l = await u.arrayBuffer(),
+      _ = new DataView(l),
+      d = Math.floor(l.byteLength / 5),
       p = new Uint32Array(d),
-      g = new Uint8Array(d);
-    for (let E = 0; E < d; E++) {
-      const w = E * 5;
-      p[E] = _.getUint32(w, !0), g[E] = _.getUint8(w + 4)
+      y = new Uint8Array(d);
+    for (let b = 0; b < d; b++) {
+      const g = b * 5;
+      p[b] = _.getUint32(g, !0), y[b] = _.getUint8(g + 4)
     }
     return {
       paintedBy: p,
-      colors: g
+      colors: y
     }
   }
   async me() {
@@ -5087,7 +5111,7 @@ class k0 {
       }),
       throwOnStatus: !1
     });
-    if (e.status === c.BAD_REQUEST) throw new Error(F_());
+    if (e.status === c.BAD_REQUEST) throw new Error(B_());
     if (e.status === c.CONFLICT) throw new Error(Dp());
     if (e.status === c.FORBIDDEN) throw new Error(Hh());
     if (e.status === c.TOO_MANY_REQUESTS) throw new Error(bn());
@@ -5164,7 +5188,7 @@ class k0 {
         confirmText: t
       })
     });
-    if (e.status === c.BAD_REQUEST) throw new Error(Og());
+    if (e.status === c.BAD_REQUEST) throw new Error(Ig());
     if (e.status !== c.OK) throw new Error(f())
   }
   async favoriteLocation(t) {
@@ -5591,7 +5615,7 @@ class k0 {
     });
     if (t.status !== c.OK) throw new h(f(), t.status);
     const e = await t.json();
-    for (const r of e.tickets) r.reports.sort((a, i) => On[a.reason] - On[i.reason]);
+    for (const r of e.tickets) r.reports.sort((a, i) => In[a.reason] - In[i.reason]);
     return e
   }
   async countMyTicketsClosedToday() {
@@ -5805,15 +5829,15 @@ class k0 {
         const d = o.toLowerCase();
         s = d === "usd" || d === "dollar" || d === "true"
       } else typeof o == "number" ? s = o !== 0 : s = !!o;
-      const l = typeof i.createdAt == "string" ? i.createdAt : i.CreatedAt ? new Date(i.CreatedAt).toISOString() : "",
-        u = i.product_variant ?? i.productVariant,
-        _ = u == null || u === "" ? null : Number(u);
+      const u = typeof i.createdAt == "string" ? i.createdAt : i.CreatedAt ? new Date(i.CreatedAt).toISOString() : "",
+        l = i.product_variant ?? i.productVariant,
+        _ = l == null || l === "" ? null : Number(l);
       return {
         product_name: String(i.productName ?? i.product_name ?? ""),
         amount: Number(i.amount ?? 0),
         price: Number(i.price ?? 0),
         is_dollar: s,
-        created_at: l,
+        created_at: u,
         product_variant: Number.isInteger(_) ? _ : null
       }
     })
@@ -5885,7 +5909,7 @@ class k0 {
     if (i.status !== c.OK) throw new h(f(), i.status);
     const o = await i.json(),
       s = Array.isArray(o == null ? void 0 : o.tickets) ? o.tickets : [];
-    return s.sort((l, u) => new Date(u.createdAt).getTime() - new Date(l.createdAt).getTime()), s
+    return s.sort((u, l) => new Date(l.createdAt).getTime() - new Date(u.createdAt).getTime()), s
   }
   async getUserAppeals(t) {
     const e = new URLSearchParams;
@@ -5912,15 +5936,15 @@ class k0 {
     return i == null ? void 0 : i.translation
   }
   mapTicketsToReportRows(t, e) {
-    var a, i, o, s, l;
+    var a, i, o, s, u;
     const r = [];
-    for (const u of t) {
-      const _ = u.status ?? "open";
+    for (const l of t) {
+      const _ = l.status ?? "open";
       if (e === "received") {
-        for (const d of u.reports) r.push({
+        for (const d of l.reports) r.push({
           id: String(d.id),
-          ticketId: String(u.id),
-          createdAt: d.createdAt ?? u.createdAt,
+          ticketId: String(l.id),
+          createdAt: d.createdAt ?? l.createdAt,
           byUser: {
             id: Number(d.reportedBy),
             name: String(d.reportedByName ?? d.reportedBy),
@@ -5932,14 +5956,14 @@ class k0 {
         continue
       }
       if (e === "sent") {
-        for (const d of u.reports) r.push({
+        for (const d of l.reports) r.push({
           id: String(d.id),
-          ticketId: String(u.id),
-          createdAt: d.createdAt ?? u.createdAt,
+          ticketId: String(l.id),
+          createdAt: d.createdAt ?? l.createdAt,
           toUser: {
-            id: Number(u.reportedUser.id),
-            name: String(u.reportedUser.name),
-            picture: u.reportedUser.picture ?? null
+            id: Number(l.reportedUser.id),
+            name: String(l.reportedUser.name),
+            picture: l.reportedUser.picture ?? null
           },
           reason: String(d.reason),
           status: _
@@ -5947,23 +5971,23 @@ class k0 {
         continue
       }
       r.push({
-        id: String(u.id),
-        ticketId: String(u.id),
-        createdAt: u.createdAt,
-        handledBy: u.status && u.status !== "open" ? {
-          id: ((a = u.handledBy) == null ? void 0 : a.id) ?? 0,
-          name: ((i = u.handledBy) == null ? void 0 : i.name) ?? "Moderator",
-          picture: ((o = u.handledBy) == null ? void 0 : o.picture) ?? null
+        id: String(l.id),
+        ticketId: String(l.id),
+        createdAt: l.createdAt,
+        handledBy: l.status && l.status !== "open" ? {
+          id: ((a = l.handledBy) == null ? void 0 : a.id) ?? 0,
+          name: ((i = l.handledBy) == null ? void 0 : i.name) ?? "Moderator",
+          picture: ((o = l.handledBy) == null ? void 0 : o.picture) ?? null
         } : {
           id: 0,
           name: "—",
           picture: null
         },
-        reason: String(((l = (s = u.reports) == null ? void 0 : s[0]) == null ? void 0 : l.reason) ?? "other"),
+        reason: String(((u = (s = l.reports) == null ? void 0 : s[0]) == null ? void 0 : u.reason) ?? "other"),
         status: _
       })
     }
-    return r.sort((u, _) => new Date(_.createdAt).getTime() - new Date(u.createdAt).getTime()), r
+    return r.sort((l, _) => new Date(_.createdAt).getTime() - new Date(l.createdAt).getTime()), r
   }
   async getModeratorClosedTicketStats(t) {
     const e = new URLSearchParams({
@@ -6293,15 +6317,15 @@ class k0 {
   }
   validWaybackInput(t) {
     const e = Number.isFinite(t.timestamp) && Number.isInteger(t.timestamp) && t.timestamp >= 0 && t.timestamp <= this.getEstimatedServerNowMs(),
-      r = Number.isFinite(t.season) && Number.isInteger(t.season) && t.season >= 0 && t.season < I0.length,
-      a = Number.isFinite(t.limit) && Number.isInteger(t.limit) && t.limit > 0 && t.limit <= O0.tools.wayback.limit,
+      r = Number.isFinite(t.season) && Number.isInteger(t.season) && t.season >= 0 && t.season < A0.length,
+      a = Number.isFinite(t.limit) && Number.isInteger(t.limit) && t.limit > 0 && t.limit <= N0.tools.wayback.limit,
       i = Number.isFinite(t.tileX) && Number.isFinite(t.tileY) && Number.isInteger(t.tileX) && Number.isInteger(t.tileY) && t.tileX >= 0 && t.tileY >= 0,
       o = t.cursorTs !== void 0,
       s = t.cursorUserId !== void 0,
-      l = t.cursorAllianceId !== void 0,
-      u = t.cursorPixelsCount !== void 0,
-      _ = o || s || l || u,
-      d = o && s && l && u;
+      u = t.cursorAllianceId !== void 0,
+      l = t.cursorPixelsCount !== void 0,
+      _ = o || s || u || l,
+      d = o && s && u && l;
     let p = !0;
     return _ && (p = d && Number.isFinite(t.cursorTs) && Number.isInteger(t.cursorTs) && t.cursorTs >= 0 && t.cursorTs <= t.timestamp && Number.isFinite(t.cursorUserId) && Number.isInteger(t.cursorUserId) && t.cursorUserId >= 0 && Number.isFinite(t.cursorAllianceId) && Number.isInteger(t.cursorAllianceId) && t.cursorAllianceId >= 0 && Number.isFinite(t.cursorPixelsCount) && Number.isInteger(t.cursorPixelsCount) && t.cursorPixelsCount >= 0), !(!r || !a || !i || !e || !p)
   }
@@ -6447,56 +6471,56 @@ class k0 {
 }
 Ze = new WeakMap, Je = new WeakMap;
 
-function A0(n) {
-  var p, g;
+function x0(n) {
+  var p, y;
   if (!n.length) throw new Error("Auto painter request does not contain any pixels.");
   const t = n[0].season;
-  for (const E of n)
-    if (E.season !== t) throw new Error("Auto painter requests cannot mix seasons.");
-  const e = (p = Ft.seasons) == null ? void 0 : p[t];
+  for (const b of n)
+    if (b.season !== t) throw new Error("Auto painter requests cannot mix seasons.");
+  const e = (p = Bt.seasons) == null ? void 0 : p[t];
   if (!e) throw new Error("Invalid season selected for auto painter request.");
   const r = e.tileSize;
   let a = Number.POSITIVE_INFINITY,
     i = Number.POSITIVE_INFINITY,
     o = Number.NEGATIVE_INFINITY,
     s = Number.NEGATIVE_INFINITY;
-  const l = n.map(E => {
-      const w = Math.round(E.tile[0] * r + E.pixel[0]),
-        T = Math.round(E.tile[1] * r + E.pixel[1]);
-      return w < a && (a = w), T < i && (i = T), w > o && (o = w), T > s && (s = T), {
-        x: w,
+  const u = n.map(b => {
+      const g = Math.round(b.tile[0] * r + b.pixel[0]),
+        T = Math.round(b.tile[1] * r + b.pixel[1]);
+      return g < a && (a = g), T < i && (i = T), g > o && (o = g), T > s && (s = T), {
+        x: g,
         y: T,
-        colorIdx: E.colorIdx
+        colorIdx: b.colorIdx
       }
     }),
-    u = o - a + 1,
+    l = o - a + 1,
     _ = s - i + 1;
-  if (!Number.isFinite(u) || !Number.isFinite(_) || u <= 0 || _ <= 0) throw new Error("Failed to compute image bounds for auto painter payload.");
-  const d = new Uint8ClampedArray(u * _ * 4);
+  if (!Number.isFinite(l) || !Number.isFinite(_) || l <= 0 || _ <= 0) throw new Error("Failed to compute image bounds for auto painter payload.");
+  const d = new Uint8ClampedArray(l * _ * 4);
   for (const {
-      x: E,
-      y: w,
+      x: b,
+      y: g,
       colorIdx: T
     }
-    of l) {
-    const I = (g = Ft.colors) == null ? void 0 : g[T];
-    if (!I) throw new Error(`Unknown palette color index: ${T}`);
-    const R = E - a,
-      F = ((w - i) * u + R) * 4,
-      [Y, y, S] = I.rgb;
-    d[F] = Y, d[F + 1] = y, d[F + 2] = S, d[F + 3] = T === 0 ? 1 : 255
+    of u) {
+    const O = (y = Bt.colors) == null ? void 0 : y[T];
+    if (!O) throw new Error(`Unknown palette color index: ${T}`);
+    const R = b - a,
+      B = ((g - i) * l + R) * 4,
+      [Y, w, S] = O.rgb;
+    d[B] = Y, d[B + 1] = w, d[B + 2] = S, d[B + 3] = T === 0 ? 1 : 255
   }
   return {
     data: d,
-    width: u,
+    width: l,
     height: _,
     offsetX: a,
     offsetY: i,
     season: t
   }
 }
-async function N0(n) {
-  const t = R0(n.width, n.height),
+async function D0(n) {
+  const t = P0(n.width, n.height),
     e = t.getContext("2d");
   if (!e) throw new Error("Canvas API is not available to encode auto painter bitmap.");
   const r = e.createImageData(n.width, n.height);
@@ -6513,7 +6537,7 @@ async function N0(n) {
   })
 }
 
-function R0(n, t) {
+function P0(n, t) {
   if (typeof OffscreenCanvas < "u") return new OffscreenCanvas(n, t);
   if (typeof document < "u") {
     const e = document.createElement("canvas");
@@ -6521,7 +6545,7 @@ function R0(n, t) {
   }
   throw new Error("Canvas API is not available in the current environment.")
 }
-let le = new k0(Yt);
+let le = new R0(Yt);
 typeof window < "u" && Ar(() => {
   let n = le.online;
   Nr(() => {
@@ -6529,7 +6553,7 @@ typeof window < "u" && Ar(() => {
     t && !n && window.dispatchEvent(new CustomEvent("wplace:online")), n = t
   })
 });
-const xE = n => new URL(n, Yt).toString();
+const ME = n => new URL(n, Yt).toString();
 
 function vr(n, t) {
   if (!(n != null && n.length)) return !1;
@@ -6538,7 +6562,7 @@ function vr(n, t) {
   return !1
 }
 
-function x0(n, t) {
+function L0(n, t) {
   for (const e of t)
     if (vr(n, e)) return !0;
   return !1
@@ -6551,13 +6575,13 @@ function br(n) {
   return e
 }
 
-function D0(n) {
+function M0(n) {
   if (typeof Buffer < "u") return Buffer.from(n).toString("base64");
   let t = "";
   for (let e = 0; e < n.length; e++) t += String.fromCharCode(n[e]);
   return btoa(t)
 }
-class P0 {
+class U0 {
   constructor(t) {
     k(this, "bytes");
     this.bytes = t ?? new Uint8Array
@@ -6568,7 +6592,7 @@ class P0 {
     if (r >= this.bytes.length) {
       const o = new Uint8Array(r + 1),
         s = o.length - this.bytes.length;
-      for (let l = 0; l < this.bytes.length; l++) o[l + s] = this.bytes[l];
+      for (let u = 0; u < this.bytes.length; u++) o[u + s] = this.bytes[u];
       this.bytes = o
     }
     const i = this.bytes.length - 1 - r;
@@ -6582,7 +6606,7 @@ class P0 {
   }
 }
 
-function DE(n) {
+function UE(n) {
   return new Promise((t, e) => {
     const r = new FileReader;
     r.onload = () => {
@@ -6596,10 +6620,10 @@ function DE(n) {
   })
 }
 
-function PE(n) {
+function CE(n) {
   if (typeof FileReader > "u") {
     const t = n.type || "application/octet-stream";
-    return n.arrayBuffer().then(e => `data:${t};base64,${D0(new Uint8Array(e))}`)
+    return n.arrayBuffer().then(e => `data:${t};base64,${M0(new Uint8Array(e))}`)
   }
   return new Promise((t, e) => {
     const r = new FileReader;
@@ -6614,7 +6638,7 @@ function PE(n) {
   })
 }
 
-function LE(n) {
+function jE(n) {
   if (!n.startsWith("data:")) throw new Error("Could not parse data URL");
   const t = n.indexOf(",");
   if (t === -1) throw new Error("Could not parse data URL");
@@ -6634,22 +6658,22 @@ function LE(n) {
   })
 }
 
-function ME(...n) {
+function BE(...n) {
   return n.filter(Boolean).join(" ")
 }
-const L0 = typeof document < "u";
+const C0 = typeof document < "u";
 let zn = 0;
 var Xe, Qe, et;
-class M0 {
+class j0 {
   constructor() {
-    P(this, Xe, B(gt([])));
-    P(this, Qe, B(gt([])));
+    P(this, Xe, F(gt([])));
+    P(this, Qe, F(gt([])));
     P(this, et, t => {
       const e = this.toasts.findIndex(r => r.id === t);
       return e === -1 ? null : e
     });
     k(this, "addToast", t => {
-      L0 && this.toasts.unshift(t)
+      C0 && this.toasts.unshift(t)
     });
     k(this, "updateToast", ({
       id: t,
@@ -6675,7 +6699,7 @@ class M0 {
         ...r
       } = t, a = typeof(t == null ? void 0 : t.id) == "number" || t.id && ((s = t.id) == null ? void 0 : s.length) > 0 ? t.id : zn++, i = t.dismissable === void 0 ? !0 : t.dismissable, o = t.type === void 0 ? "default" : t.type;
       return nn(() => {
-        this.toasts.find(u => u.id === a) ? this.updateToast({
+        this.toasts.find(l => l.id === a) ? this.updateToast({
           id: a,
           data: t,
           type: o,
@@ -6756,7 +6780,7 @@ class M0 {
       return a.then(o => {
         if (typeof o == "object" && o && "ok" in o && typeof o.ok == "boolean" && !o.ok) {
           i = !1;
-          const s = U0(o);
+          const s = B0(o);
           this.create({
             id: r,
             type: "error",
@@ -6824,19 +6848,19 @@ class M0 {
 }
 Xe = new WeakMap, Qe = new WeakMap, et = new WeakMap;
 
-function U0(n) {
+function B0(n) {
   return n && typeof n == "object" && "status" in n ? `HTTP error! Status: ${n.status}` : `Error! ${n}`
 }
-const $ = new M0;
+const $ = new j0;
 
-function C0(n, t) {
+function F0(n, t) {
   return $.create({
     message: n,
     ...t
   })
 }
 var St;
-class UE {
+class FE {
   constructor() {
     P(this, St, Ne(() => $.toasts.filter(t => !t.dismiss)))
   }
@@ -6845,8 +6869,8 @@ class UE {
   }
 }
 St = new WeakMap;
-const j0 = C0,
-  F0 = Object.assign(j0, {
+const z0 = F0,
+  V0 = Object.assign(z0, {
     success: $.success,
     info: $.info,
     warning: $.warning,
@@ -6859,13 +6883,13 @@ const j0 = C0,
     getActiveToasts: () => $.toasts.filter(n => !n.dismiss)
   });
 var tt, nt, rt, at, it, ot, st, ct;
-class B0 {
+class G0 {
   constructor() {
     k(this, "channel", new BroadcastChannel("user-channel"));
-    P(this, tt, B());
-    P(this, nt, B(!0));
-    P(this, rt, B());
-    P(this, at, B(Date.now()));
+    P(this, tt, F());
+    P(this, nt, F(!0));
+    P(this, rt, F());
+    P(this, at, F(Date.now()));
     P(this, it, Ne(() => {
       if (!this.data) return;
       const t = this.data.charges;
@@ -6876,7 +6900,7 @@ class B0 {
     P(this, ot, Ne(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
     P(this, st, Ne(() => {
       var t;
-      return new P0(br(((t = this.data) == null ? void 0 : t.flagsBitmap) ?? "AA=="))
+      return new U0(br(((t = this.data) == null ? void 0 : t.flagsBitmap) ?? "AA=="))
     }));
     P(this, ct, Ne(() => {
       var e;
@@ -6949,7 +6973,7 @@ class B0 {
         id: this.data.id
       }), De.setUserId(this.data.id)), !!this.data
     } catch (r) {
-      return console.error(r), F0.warning(Mh(), {
+      return console.error(r), V0.warning(Mh(), {
         duration: 1e4
       }), !1
     } finally {
@@ -6972,16 +6996,16 @@ class B0 {
   }
   hasAnyPermission(t) {
     var e;
-    return x0((e = this.data) == null ? void 0 : e.permissions, t)
+    return L0((e = this.data) == null ? void 0 : e.permissions, t)
   }
 }
 tt = new WeakMap, nt = new WeakMap, rt = new WeakMap, at = new WeakMap, it = new WeakMap, ot = new WeakMap, st = new WeakMap, ct = new WeakMap;
-const Ie = new B0;
+const Oe = new G0;
 let A;
 const ae = new Array(128).fill(void 0);
 ae.push(void 0, null, !0, !1);
 
-function O(n) {
+function I(n) {
   return ae[n]
 }
 const Er = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
@@ -7022,13 +7046,13 @@ function fe(n) {
   return n == null
 }
 
-function z0(n) {
+function W0(n) {
   n < 132 || (ae[n] = Ue, Ue = n)
 }
 
 function Vn(n) {
-  const t = O(n);
-  return z0(n), t
+  const t = I(n);
+  return W0(n), t
 }
 const Gn = typeof FinalizationRegistry > "u" ? {
   register: () => {},
@@ -7037,7 +7061,7 @@ const Gn = typeof FinalizationRegistry > "u" ? {
   A.__wbindgen_export_1.get(n.dtor)(n.a, n.b)
 });
 
-function V0(n, t, e, r) {
+function q0(n, t, e, r) {
   const a = {
       a: n,
       b: t,
@@ -7067,7 +7091,7 @@ const mt = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
       throw Error("TextEncoder not available")
     }
   },
-  G0 = typeof mt.encodeInto == "function" ? function(n, t) {
+  K0 = typeof mt.encodeInto == "function" ? function(n, t) {
     return mt.encodeInto(n, t)
   } : function(n, t) {
     const e = mt.encode(n);
@@ -7080,8 +7104,8 @@ const mt = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
 function Xt(n, t, e) {
   if (e === void 0) {
     const s = mt.encode(n),
-      l = t(s.length, 1) >>> 0;
-    return Me().subarray(l, l + s.length).set(s), we = s.length, l
+      u = t(s.length, 1) >>> 0;
+    return Me().subarray(u, u + s.length).set(s), we = s.length, u
   }
   let r = n.length,
     a = t(r, 1) >>> 0;
@@ -7095,19 +7119,19 @@ function Xt(n, t, e) {
   if (o !== r) {
     o !== 0 && (n = n.slice(o)), a = e(a, r, r = o + n.length * 3, 1) >>> 0;
     const s = Me().subarray(a + o, a + r),
-      l = G0(n, s);
-    o += l.written, a = e(a, r, o, 1) >>> 0
+      u = K0(n, s);
+    o += u.written, a = e(a, r, o, 1) >>> 0
   }
   return we = o, a
 }
 
-function W0(n) {
+function Y0(n) {
   const t = Xt(n, A.__wbindgen_export_2, A.__wbindgen_export_3),
     e = we;
   A.set_fingerprint(t, e)
 }
 
-function q0(n) {
+function H0(n) {
   let t, e;
   try {
     const i = A.__wbindgen_add_to_stack_pointer(-16),
@@ -7122,13 +7146,13 @@ function q0(n) {
   }
 }
 
-function K0(n, t) {
+function $0(n, t) {
   const e = t(n.length * 1, 1) >>> 0;
   return Me().set(n, e / 1), we = n.length, e
 }
 
-function Y0(n) {
-  const t = K0(n, A.__wbindgen_export_2),
+function Z0(n) {
+  const t = $0(n, A.__wbindgen_export_2),
     e = we;
   A.set_telemetry(t, e)
 }
@@ -7137,32 +7161,32 @@ function Pt(n) {
   A.set_user_id(n)
 }
 
-function H0(n) {
+function J0(n) {
   A.set_automated_browser(n)
 }
 
-function $0(n) {
+function X0(n) {
   A.set_cf_likely_automated(n)
 }
 
-function Z0(n) {
+function Q0(n) {
   const t = Xt(n, A.__wbindgen_export_2, A.__wbindgen_export_3),
     e = we;
   A.request_url(t, e)
 }
 
-function J0(n) {
+function eE(n) {
   A.set_automated_clicks(n)
 }
 
-function X0() {
+function tE() {
   A.init_listeners()
 }
 
-function Q0(n, t, e) {
+function nE(n, t, e) {
   A.__wbindgen_export_5(n, t, D(e))
 }
-async function eE(n, t) {
+async function rE(n, t) {
   if (typeof Response == "function" && n instanceof Response) {
     if (typeof WebAssembly.instantiateStreaming == "function") try {
       return await WebAssembly.instantiateStreaming(n, t)
@@ -7181,90 +7205,90 @@ async function eE(n, t) {
   }
 }
 
-function tE() {
+function aE() {
   const n = {};
   return n.wbg = {}, n.wbg.__wbg_addEventListener_90e553fdce254421 = function() {
     return ne(function(t, e, r, a) {
-      O(t).addEventListener(xe(e, r), O(a))
+      I(t).addEventListener(xe(e, r), I(a))
     }, arguments)
   }, n.wbg.__wbg_buffer_609cc3eee51ed158 = function(t) {
-    const e = O(t).buffer;
+    const e = I(t).buffer;
     return D(e)
   }, n.wbg.__wbg_call_672a4d21634d4a24 = function() {
     return ne(function(t, e) {
-      const r = O(t).call(O(e));
+      const r = I(t).call(I(e));
       return D(r)
     }, arguments)
   }, n.wbg.__wbg_call_7cccdd69e0791ae2 = function() {
     return ne(function(t, e, r) {
-      const a = O(t).call(O(e), O(r));
+      const a = I(t).call(I(e), I(r));
       return D(a)
     }, arguments)
   }, n.wbg.__wbg_clientX_5eb380a5f1fec6fd = function(t) {
-    return O(t).clientX
+    return I(t).clientX
   }, n.wbg.__wbg_clientY_d8b9c7f0c4e2e677 = function(t) {
-    return O(t).clientY
+    return I(t).clientY
   }, n.wbg.__wbg_crypto_574e78ad8b13b65f = function(t) {
-    const e = O(t).crypto;
+    const e = I(t).crypto;
     return D(e)
   }, n.wbg.__wbg_document_d249400bd7bd996d = function(t) {
-    const e = O(t).document;
+    const e = I(t).document;
     return fe(e) ? 0 : D(e)
   }, n.wbg.__wbg_getRandomValues_b8f5dbd5f3995a9e = function() {
     return ne(function(t, e) {
-      O(t).getRandomValues(O(e))
+      I(t).getRandomValues(I(e))
     }, arguments)
   }, n.wbg.__wbg_get_67b2ba62fc30de12 = function() {
     return ne(function(t, e) {
-      const r = Reflect.get(O(t), O(e));
+      const r = Reflect.get(I(t), I(e));
       return D(r)
     }, arguments)
   }, n.wbg.__wbg_hasFocus_21add8cd20546ed0 = function() {
     return ne(function(t) {
-      return O(t).hasFocus()
+      return I(t).hasFocus()
     }, arguments)
   }, n.wbg.__wbg_innerWidth_7e0498dbd876d498 = function() {
     return ne(function(t) {
-      const e = O(t).innerWidth;
+      const e = I(t).innerWidth;
       return D(e)
     }, arguments)
   }, n.wbg.__wbg_instanceof_Window_def73ea0955fc569 = function(t) {
     let e;
     try {
-      e = O(t) instanceof Window
+      e = I(t) instanceof Window
     } catch {
       e = !1
     }
     return e
   }, n.wbg.__wbg_msCrypto_a61aeb35a24c1329 = function(t) {
-    const e = O(t).msCrypto;
+    const e = I(t).msCrypto;
     return D(e)
   }, n.wbg.__wbg_navigator_1577371c070c8947 = function(t) {
-    const e = O(t).navigator;
+    const e = I(t).navigator;
     return D(e)
   }, n.wbg.__wbg_new_a12002a7f91c75be = function(t) {
-    const e = new Uint8Array(O(t));
+    const e = new Uint8Array(I(t));
     return D(e)
   }, n.wbg.__wbg_newnoargs_105ed471475aaf50 = function(t, e) {
     const r = new Function(xe(t, e));
     return D(r)
   }, n.wbg.__wbg_newwithbyteoffsetandlength_d97e637ebe145a9a = function(t, e, r) {
-    const a = new Uint8Array(O(t), e >>> 0, r >>> 0);
+    const a = new Uint8Array(I(t), e >>> 0, r >>> 0);
     return D(a)
   }, n.wbg.__wbg_newwithlength_a381634e90c276d4 = function(t) {
     const e = new Uint8Array(t >>> 0);
     return D(e)
   }, n.wbg.__wbg_node_905d3e251edff8a2 = function(t) {
-    const e = O(t).node;
+    const e = I(t).node;
     return D(e)
   }, n.wbg.__wbg_now_807e54c39636c349 = function() {
     return Date.now()
   }, n.wbg.__wbg_process_dc0fbacc7c1c06f7 = function(t) {
-    const e = O(t).process;
+    const e = I(t).process;
     return D(e)
   }, n.wbg.__wbg_randomFillSync_ac0988aba3254290 = function() {
     return ne(function(t, e) {
-      O(t).randomFillSync(Vn(e))
+      I(t).randomFillSync(Vn(e))
     }, arguments)
   }, n.wbg.__wbg_require_60cc747a6bc5215a = function() {
     return ne(function() {
@@ -7272,7 +7296,7 @@ function tE() {
       return D(t)
     }, arguments)
   }, n.wbg.__wbg_set_65595bdd868b3009 = function(t, e, r) {
-    O(t).set(O(e), r >>> 0)
+    I(t).set(I(e), r >>> 0)
   }, n.wbg.__wbg_static_accessor_GLOBAL_88a902d13a557d07 = function() {
     const t = typeof global > "u" ? null : global;
     return fe(t) ? 0 : D(t)
@@ -7286,35 +7310,35 @@ function tE() {
     const t = typeof window > "u" ? null : window;
     return fe(t) ? 0 : D(t)
   }, n.wbg.__wbg_subarray_aa9065fa9dc5df96 = function(t, e, r) {
-    const a = O(t).subarray(e >>> 0, r >>> 0);
+    const a = I(t).subarray(e >>> 0, r >>> 0);
     return D(a)
   }, n.wbg.__wbg_versions_c01dfd4722a88165 = function(t) {
-    const e = O(t).versions;
+    const e = I(t).versions;
     return D(e)
   }, n.wbg.__wbindgen_boolean_get = function(t) {
-    const e = O(t);
+    const e = I(t);
     return typeof e == "boolean" ? e ? 1 : 0 : 2
   }, n.wbg.__wbindgen_closure_wrapper58 = function(t, e, r) {
-    const a = V0(t, e, 3, Q0);
+    const a = q0(t, e, 3, nE);
     return D(a)
   }, n.wbg.__wbindgen_is_function = function(t) {
-    return typeof O(t) == "function"
+    return typeof I(t) == "function"
   }, n.wbg.__wbindgen_is_object = function(t) {
-    const e = O(t);
+    const e = I(t);
     return typeof e == "object" && e !== null
   }, n.wbg.__wbindgen_is_string = function(t) {
-    return typeof O(t) == "string"
+    return typeof I(t) == "string"
   }, n.wbg.__wbindgen_is_undefined = function(t) {
-    return O(t) === void 0
+    return I(t) === void 0
   }, n.wbg.__wbindgen_memory = function() {
     const t = A.memory;
     return D(t)
   }, n.wbg.__wbindgen_number_get = function(t, e) {
-    const r = O(e),
+    const r = I(e),
       a = typeof r == "number" ? r : void 0;
     Et().setFloat64(t + 8, fe(a) ? 0 : a, !0), Et().setInt32(t + 0, !fe(a), !0)
   }, n.wbg.__wbindgen_object_clone_ref = function(t) {
-    const e = O(t);
+    const e = I(t);
     return D(e)
   }, n.wbg.__wbindgen_object_drop_ref = function(t) {
     Vn(t)
@@ -7326,7 +7350,7 @@ function tE() {
   }, n
 }
 
-function nE(n, t) {
+function iE(n, t) {
   return A = n.exports, Tr.__wbindgen_wasm_module = t, he = null, Re = null, A
 }
 async function Tr(n) {
@@ -7334,25 +7358,25 @@ async function Tr(n) {
   typeof n < "u" && (Object.getPrototypeOf(n) === Object.prototype ? {
     module_or_path: n
   } = n : console.warn("using deprecated parameters for the initialization function; pass a single object instead")), typeof n > "u" && (n = new URL("pawtect_wasm_bg.wasm", import.meta.url));
-  const t = tE();
+  const t = aE();
   (typeof n == "string" || typeof Request == "function" && n instanceof Request || typeof URL == "function" && n instanceof URL) && (n = fetch(n));
   const {
     instance: e,
     module: r
-  } = await eE(await n, t);
-  return nE(e, r)
+  } = await rE(await n, t);
+  return iE(e, r)
 }
-class rE {
+class oE {
   constructor() {
     k(this, "interval");
     k(this, "storagesEmpty", !1);
-    k(this, "storages", [new Tt, new Bt, new zt, new iE]);
+    k(this, "storages", [new Tt, new Ft, new zt, new cE]);
     k(this, "pawtectLoaded");
     k(this, "pawtectError")
   }
   init() {
     this.interval === void 0 && (this.loadPawtect(), this.interval = setInterval(() => {
-      if (!(!Ie.data || this.storagesEmpty || localStorage.getItem(Tt.KEY))) {
+      if (!(!Oe.data || this.storagesEmpty || localStorage.getItem(Tt.KEY))) {
         for (const e of this.storages) {
           const r = e.get();
           if (r) {
@@ -7384,12 +7408,12 @@ class rE {
     return this.pawtectLoaded || (this.pawtectLoaded = (async () => {
       var t;
       try {
-        await Tr(sa), (t = Ie.data) != null && t.id && Pt(Ie.data.id), X0();
+        await Tr(sa), (t = Oe.data) != null && t.id && Pt(Oe.data.id), tE();
         const e = fetch;
         return Object.assign(window, {
-          fetch: aE((r, a) => {
+          fetch: sE((r, a) => {
             let i = null;
-            return r instanceof Request ? i = r.url : r instanceof URL ? i = r.href : typeof r == "string" && (i = r), i !== null && !i.startsWith("/") && Z0(i), e.call(window, r, a)
+            return r instanceof Request ? i = r.url : r instanceof URL ? i = r.href : typeof r == "string" && (i = r), i !== null && !i.startsWith("/") && Q0(i), e.call(window, r, a)
           })
         }), !0
       } catch (e) {
@@ -7401,7 +7425,7 @@ class rE {
     await this.loadPawtect(), Pt(t)
   }
   async setCfLikelyAutomated(t) {
-    await this.loadPawtect(), $0(t)
+    await this.loadPawtect(), X0(t)
   }
   isPawtectReady() {
     return this.pawtectLoaded ?? Promise.resolve(!1)
@@ -7422,13 +7446,13 @@ class rE {
     if (!await this.loadPawtect()) throw new Error(Tw());
     const a = navigator.webdriver,
       i = await bt();
-    Pt(Ie.data.id), W0(i), H0(a), J0(Ht.automatedClicks);
+    Pt(Oe.data.id), Y0(i), J0(a), eE(Ht.automatedClicks);
     const o = Uint8Array.from(atob(e), s => s.charCodeAt(0));
-    return Y0(o), q0(t)
+    return Z0(o), H0(t)
   }
 }
 
-function aE(n) {
+function sE(n) {
   return n.bind().bind()
 }
 const ce = class ce {
@@ -7483,7 +7507,7 @@ const ue = class ue {
   }
 };
 k(ue, "KEY", "nav.cursor"), k(ue, "SHIFT", 13);
-let Bt = ue;
+let Ft = ue;
 const me = class me {
   get() {
     const t = document.cookie.match(new RegExp("(?:^|; )" + me.KEY + "=([^;]*)"));
@@ -7504,7 +7528,7 @@ const me = class me {
 };
 k(me, "KEY", "_pf_uid"), k(me, "MAX_AGE", 3600 * 24 * 365);
 let zt = me;
-class iE {
+class cE {
   constructor() {
     k(this, "packed")
   }
@@ -7521,7 +7545,7 @@ class iE {
     this.packed = BigInt(t.timestamp) << 32n | BigInt(t.userId) & 0xffffffffn
   }
 }
-const De = new rE;
+const De = new oE;
 export {
-  SE as $, la as A, Ec as B, yr as C, ro as D, uh as E, wl as F, $ as G, ME as H, UE as I, wE as J, gE as K, q as L, pE as M, hE as N, mE as O, kE as P, lE as Q, fE as R, AE as S, pe as T, PE as U, LE as V, NE as W, yE as X, Tw as Y, Og as Z, xE as _, le as a, bE as a0, IE as a1, TE as a2, RE as a3, OE as a4, uE as a5, Ka as a6, ii as a7, wi as a8, xi as a9, Dp as aA, qp as aB, vn as aC, mm as aD, Nm as aE, Vm as aF, bn as aG, fg as aH, Jg as aI, lw as aJ, En as aK, Hw as aL, _e as aM, Tn as aN, Sn as aO, Gy as aP, In as aQ, go as aa, Ro as ab, pn as ac, ts as ad, mn as ae, js as af, gn as ag, Mc as ah, Hc as ai, vu as aj, Pu as ak, Ku as al, Vd as am, t_ as an, h_ as ao, wn as ap, F_ as aq, X_ as ar, _f as as, de as at, Cf as au, Eh as av, Mh as aw, Hh as ax, sp as ay, yn as az, vE as b, Wi as c, uc as d, f as e, Ft as f, il as g, xl as h, rd as i, _E as j, Ht as k, Yt as l, Zf as m, su as n, bt as o, Nd as p, dE as q, De as r, EE as s, F0 as t, Ie as u, fn as v, At as w, DE as x, md as y, Wl as z
+  kE as $, la as A, Ec as B, ro as C, uh as D, wl as E, $ as F, BE as G, FE as H, bE as I, vE as J, q as K, wE as L, gE as M, yE as N, fE as O, Yt as P, mE as Q, CE as R, DE as S, pe as T, jE as U, PE as V, EE as W, iv as X, Tw as Y, Ig as Z, ME as _, le as a, SE as a0, AE as a1, IE as a2, pE as a3, LE as a4, yr as a5, RE as a6, xE as a7, _E as a8, Ka as a9, Hh as aA, sp as aB, yn as aC, Dp as aD, qp as aE, vn as aF, mm as aG, Nm as aH, Vm as aI, bn as aJ, fg as aK, Jg as aL, lw as aM, En as aN, Hw as aO, _e as aP, Tn as aQ, Sn as aR, Gy as aS, On as aT, ii as aa, wi as ab, xi as ac, go as ad, Ro as ae, pn as af, ts as ag, mn as ah, js as ai, gn as aj, Mc as ak, Hc as al, vu as am, Pu as an, Ku as ao, Vd as ap, t_ as aq, h_ as ar, wn as as, B_ as at, X_ as au, _f as av, de as aw, Cf as ax, Eh as ay, Mh as az, TE as b, Wi as c, uc as d, f as e, Bt as f, il as g, xl as h, rd as i, Ht as j, bt as k, av as l, Zf as m, NE as n, Nd as o, hE as p, su as q, De as r, OE as s, V0 as t, Oe as u, fn as v, At as w, UE as x, md as y, Wl as z
 };

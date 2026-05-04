@@ -1,48 +1,38 @@
-function O(r) {
-  const t = r - 1;
-  return t * t * t + 1
-}
-
-function Z(r, {
-  from: t,
-  to: a
-}, u = {}) {
-  var {
-    delay: f = 0,
-    duration: n = i => Math.sqrt(i) * 120,
-    easing: p = O
-  } = u, s = getComputedStyle(r), y = s.transform === "none" ? "" : s.transform, [h, v] = s.transformOrigin.split(" ").map(parseFloat);
-  h /= r.clientWidth, v /= r.clientHeight;
-  var c = W(r),
-    g = r.clientWidth / a.width / c,
-    d = r.clientHeight / a.height / c,
-    x = t.left + t.width * h,
-    m = t.top + t.height * v,
-    w = a.left + a.width * h,
-    S = a.top + a.height * v,
-    l = (x - w) * g,
-    o = (m - S) * d,
-    $ = t.width / a.width,
-    z = t.height / a.height;
-  return {
-    delay: f,
-    duration: typeof n == "function" ? n(Math.sqrt(l * l + o * o)) : n,
-    easing: p,
-    css: (i, e) => {
-      var C = e * l,
-        q = e * o,
-        H = i + e * $,
-        M = i + e * z;
-      return `transform: ${y} translate(${C}px, ${q}px) scale(${H}, ${M});`
-    }
-  }
-}
-
-function W(r) {
-  if ("currentCSSZoom" in r) return r.currentCSSZoom;
-  for (var t = r, a = 1; t !== null;) a *= +getComputedStyle(t).zoom, t = t.parentElement;
-  return a
-}
+import {
+  g as t
+} from "./BhCkpOlh.js";
+const u = () => "Members",
+  s = () => "Membros",
+  o = () => "成员",
+  i = () => "Mitglieder",
+  c = () => "Miembros",
+  m = () => "Membres",
+  p = () => "Membri",
+  l = () => "メンバー",
+  f = () => "Członkowie",
+  a = () => "Участники",
+  _ = () => "Учасники",
+  b = () => "Thành viên",
+  C = (n = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? u() : r === "pt" ? s() : r === "ch" ? o() : r === "de" ? i() : r === "es" ? c() : r === "fr" ? m() : r === "it" ? p() : r === "jp" ? l() : r === "pl" ? f() : r === "ru" ? a() : r === "uk" ? _() : b()
+  },
+  y = () => "Player",
+  d = () => "Jogador",
+  h = () => "玩家",
+  g = () => "Spieler",
+  M = () => "Jugador",
+  k = () => "Joueur",
+  j = () => "Giocatore",
+  v = () => "プレイヤー",
+  J = () => "Gracz",
+  z = () => "Игрок",
+  G = () => "Гравець",
+  w = () => "Người chơi",
+  L = (n = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? y() : r === "pt" ? d() : r === "ch" ? h() : r === "de" ? g() : r === "es" ? M() : r === "fr" ? k() : r === "it" ? j() : r === "jp" ? v() : r === "pl" ? J() : r === "ru" ? z() : r === "uk" ? G() : w()
+  };
 export {
-  Z as f
+  C as m, L as p
 };

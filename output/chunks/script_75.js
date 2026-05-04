@@ -1,26 +1,38 @@
-import "./Bzak7iHL.js";
 import {
-  a as e,
-  y as p
-} from "./BC180BoF.js";
-import {
-  e as a
-} from "./Bbytcfj7.js";
-import {
-  r as v
-} from "./BQ15Turv.js";
-var f = p('<svg><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"></path></svg>');
-
-function h(r, o) {
-  let s = v(o, ["$$slots", "$$events", "$$legacy"]);
-  var t = f();
-  a(t, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...s
-  })), e(r, t)
-}
+  g as i
+} from "./BhCkpOlh.js";
+const n = () => "Enter a valid user ID",
+  u = () => "Informe um ID válido",
+  s = () => "请输入有效的用户 ID",
+  d = () => "Gib eine gültige Benutzer-ID ein",
+  o = () => "Introduce un ID de usuario válido",
+  _ = () => "Entrez un ID d’utilisateur valide",
+  c = () => "Inserisci un ID valido",
+  l = () => "有効なユーザーIDを入力してください。",
+  p = () => "Wprowadź prawidłowe ID użytkownika",
+  a = () => "Введите корректный ID пользователя",
+  f = () => "Введіть коректний ID користувача",
+  v = () => "Nhập một ID người dùng hợp lệ",
+  y = (t = {}, e = {}) => {
+    const r = e.locale ?? i();
+    return r === "en" ? n() : r === "pt" ? u() : r === "ch" ? s() : r === "de" ? d() : r === "es" ? o() : r === "fr" ? _() : r === "it" ? c() : r === "jp" ? l() : r === "pl" ? p() : r === "ru" ? a() : r === "uk" ? f() : v()
+  },
+  m = () => "Reddit",
+  I = () => "Reddit",
+  D = () => "Reddit",
+  R = () => "Reddit",
+  g = () => "Reddit",
+  h = () => "Reddit",
+  k = () => "Reddit",
+  j = () => "Reddit",
+  w = () => "Reddit",
+  z = () => "Reddit",
+  E = () => "Reddit",
+  b = () => "Reddit",
+  B = (t = {}, e = {}) => {
+    const r = e.locale ?? i();
+    return r === "en" ? m() : r === "pt" ? I() : r === "ch" ? D() : r === "de" ? R() : r === "es" ? g() : r === "fr" ? h() : r === "it" ? k() : r === "jp" ? j() : r === "pl" ? w() : r === "ru" ? z() : r === "uk" ? E() : b()
+  };
 export {
-  h as R
+  y as p, B as r
 };

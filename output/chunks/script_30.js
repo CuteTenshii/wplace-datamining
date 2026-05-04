@@ -44,16 +44,16 @@ import {
   i as L
 } from "./CYlrjl7C.js";
 import {
-  g as Xe
-} from "./DYcDOmw0.js";
+  g as je
+} from "./DJlrKya2.js";
 import {
-  k as vt,
+  j as vt,
   u as ue,
   t as fe,
-  a as je,
+  a as Xe,
   f as ct,
-  l as Fe
-} from "./CrPq4ZAu.js";
+  P as Fe
+} from "./BNML0NQl.js";
 import {
   r as Oe
 } from "./CFl7M2B7.js";
@@ -139,14 +139,14 @@ function We(i, e) {
               N = t(H);
             Be(N, () => e.header ?? Ae), a(H);
             var J = r(H, 2),
-              X = t(J);
+              j = t(J);
             {
-              var j = b => {
+              var X = b => {
                 var Y = gt();
                 o(b, Y)
               };
-              L(X, b => {
-                w() && b(j)
+              L(j, b => {
+                w() && b(X)
               })
             }
             a(J), o(q, E)
@@ -158,12 +158,12 @@ function We(i, e) {
             Be(N, () => e.header ?? Ae), a(H);
             var J = r(H, 2);
             {
-              var X = j => {
+              var j = X => {
                 var b = _t();
-                o(j, b)
+                o(X, b)
               };
-              L(J, j => {
-                w() && j(X)
+              L(J, X => {
+                w() && X(j)
               })
             }
             o(q, E)
@@ -306,8 +306,8 @@ var Zt = f('<div class="flex w-full items-center gap-1"><!> <h3 class="text-xl f
   Et = f('<div class="flex flex-col gap-4"><p class="text-base-content/80 text-sm"> </p> <section><div class="grid gap-3 sm:grid-cols-2"><!> <!> <!> <!> <!> <!></div> <p class="text-base-content/60 mt-4 text-center text-sm"> <a class="font-medium" target="_blank"> </a></p></section></div>'),
   Rt = f('<div class="flex items-center gap-2"><!> <h3 class="text-2xl font-bold">PIX</h3></div>'),
   St = f('<p class="text-base-content/80">Efetue o pagamento do PIX no valor de <span class="font-semibold"> </span></p> <section><div class="relative"><img class="pixelated aspect-square w-70" alt="QR code PIX"/> <div class="center-absolute absolute size-[95%] border-6 border-black"></div></div></section> <section class="w-full"><span class="text-base-content/80 ml-4 text-sm font-semibold">Código</span> <div class="border-base-content/20 rounded-field flex w-full items-center gap-1 border-2 py-1.5 pr-2.5 pl-4"><input class="text-base-content/80 w-full min-w-10 grow text-sm font-medium" readonly=""/> <div class="h-10"><button class="btn btn-primary">Copiar</button></div></div></section> <section class="mt-2"><button class="btn btn-primary btn-lg">Fiz o pagamento</button></section>', 1),
-  Xt = f('<div class="flex h-96 items-center justify-center"><span class="loading loading-spinner loading-xl"></span></div>'),
-  jt = f('<div class="flex h-full flex-col items-center gap-4"><!></div>'),
+  jt = f('<div class="flex h-96 items-center justify-center"><span class="loading loading-spinner loading-xl"></span></div>'),
+  Xt = f('<div class="flex h-full flex-col items-center gap-4"><!></div>'),
   Ft = f("<!> <!>", 1);
 
 function ua(i, e) {
@@ -425,7 +425,7 @@ function ua(i, e) {
                     }, [() => (re() * 4).toFixed(2).replace(".", ",")]), Le("submit", le, () => {
                       T(s, !0), setTimeout(() => T(s, !1), 3e3)
                     }), _e("click", ge, () => {
-                      T(_, !0), T(s, !0), je.generatePixQrCode(Ye()).then(pe => {
+                      T(_, !0), T(s, !0), Xe.generatePixQrCode(Ye()).then(pe => {
                         T(v, pe, !0)
                       }).catch(pe => {
                         fe.error(pe.message)
@@ -524,10 +524,10 @@ function ua(i, e) {
             })), a(B);
             var N = r(B, 2),
               J = t(N),
-              X = r(J),
-              j = t(X, !0);
-            a(X), a(N), a(d), I((Y, u, Q, ae) => {
-              z(J, `${u??""} `), me(X, "href", Q), z(j, ae)
+              j = r(J),
+              X = t(j, !0);
+            a(j), a(N), a(d), I((Y, u, Q, ae) => {
+              z(J, `${u??""} `), me(j, "href", Q), z(X, ae)
             }, [() => Ke(), () => Ne(), Oe, () => Je()])
           }
           a(A), I((b, Y, u, Q) => z(te, b), [() => Ke(), () => Ne(), Oe, () => Je()]), o(Z, A)
@@ -566,7 +566,7 @@ function ua(i, e) {
       }), ne(2), a(x), o(n, x)
     },
     children: (n, x) => {
-      var m = jt(),
+      var m = Xt(),
         D = t(m);
       {
         var O = A => {
@@ -586,14 +586,14 @@ function ua(i, e) {
             var N = r(H, 2),
               J = t(N);
             a(N), a(E), a(q);
-            var X = r(q, 2),
-              j = t(X);
-            a(X), I(b => {
-              z(B, `R$${b??""}`), me(V, "src", h(v).qrCode), Me(H, h(v).pixCode), j.disabled = h(c)
+            var j = r(q, 2),
+              X = t(j);
+            a(j), I(b => {
+              z(B, `R$${b??""}`), me(V, "src", h(v).qrCode), Me(H, h(v).pixCode), X.disabled = h(c)
             }, [() => (h(v).price / 100).toFixed(2).replace(".", ",")]), _e("click", J, () => {
               var b;
               navigator.clipboard.writeText(((b = h(v)) == null ? void 0 : b.pixCode) ?? ""), fe.success("Código PIX copiado")
-            }), _e("click", j, async () => {
+            }), _e("click", X, async () => {
               var b, Y, u;
               if (!h(v)) {
                 fe.info("Espere 1 minuto e recarrege a pagina");
@@ -603,11 +603,11 @@ function ua(i, e) {
                 T(c, !0);
                 const {
                   paid: Q
-                } = await je.getPixStatus(h(v).pixId);
+                } = await Xe.getPixStatus(h(v).pixId);
                 if (Q) {
                   const ae = h(v).productId.toString(),
                     re = (u = (Y = (b = ct.products[ae]) == null ? void 0 : b.items) == null ? void 0 : Y[0]) == null ? void 0 : u.amount;
-                  await ue.refresh(), re ? Xe(`payment/success?droplets=${re}`) : Xe("payment/success")
+                  await ue.refresh(), re ? je(`payment/success?droplets=${re}`) : je("payment/success")
                 } else fe.info("Pagamento ainda não recebido. Desculpe a demora, tente novamente em instantes.", {
                   duration: 1e5
                 })
@@ -619,7 +619,7 @@ function ua(i, e) {
             }), o(A, S)
           },
           Z = A => {
-            var S = Xt();
+            var S = jt();
             o(A, S)
           };
         L(D, A => {
