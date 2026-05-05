@@ -1,26 +1,38 @@
-import "./Bzak7iHL.js";
 import {
-  a,
-  y as p
-} from "./BC180BoF.js";
-import {
-  e
-} from "./Bbytcfj7.js";
-import {
-  r as m
-} from "./BQ15Turv.js";
-var v = p('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
-
-function n(o, t) {
-  let s = m(t, ["$$slots", "$$events", "$$legacy"]);
-  var r = v();
-  e(r, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...s
-  })), a(o, r)
-}
+  g as t
+} from "./BhCkpOlh.js";
+const u = () => "Members",
+  s = () => "Membros",
+  o = () => "成员",
+  i = () => "Mitglieder",
+  c = () => "Miembros",
+  m = () => "Membres",
+  p = () => "Membri",
+  l = () => "メンバー",
+  f = () => "Członkowie",
+  a = () => "Участники",
+  _ = () => "Учасники",
+  b = () => "Thành viên",
+  C = (n = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? u() : r === "pt" ? s() : r === "ch" ? o() : r === "de" ? i() : r === "es" ? c() : r === "fr" ? m() : r === "it" ? p() : r === "jp" ? l() : r === "pl" ? f() : r === "ru" ? a() : r === "uk" ? _() : b()
+  },
+  y = () => "Player",
+  d = () => "Jogador",
+  h = () => "玩家",
+  g = () => "Spieler",
+  M = () => "Jugador",
+  k = () => "Joueur",
+  j = () => "Giocatore",
+  v = () => "プレイヤー",
+  J = () => "Gracz",
+  z = () => "Игрок",
+  G = () => "Гравець",
+  w = () => "Người chơi",
+  L = (n = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? y() : r === "pt" ? d() : r === "ch" ? h() : r === "de" ? g() : r === "es" ? M() : r === "fr" ? k() : r === "it" ? j() : r === "jp" ? v() : r === "pl" ? J() : r === "ru" ? z() : r === "uk" ? G() : w()
+  };
 export {
-  n as A
+  C as m, L as p
 };

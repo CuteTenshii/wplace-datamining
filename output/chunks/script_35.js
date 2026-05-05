@@ -1,49 +1,22 @@
 import {
-  t as E,
-  C as _,
-  D as l,
-  aD as M,
-  aE as y,
-  L as h,
-  ab as A,
-  as as m,
-  aF as w,
-  aG as C,
-  aH as c,
-  I as N,
-  aI as T,
-  aJ as b,
-  aK as g,
-  aa as d
-} from "./BC180BoF.js";
-
-function O(u, v, r = !1, s = !1, D = !1) {
-  var i = u,
-    n = "";
-  E(() => {
-    var t = M;
-    if (n === (n = v() ?? "")) {
-      _ && l();
-      return
-    }
-    if (t.nodes !== null && (y(t.nodes.start, t.nodes.end), t.nodes = null), n !== "") {
-      if (_) {
-        h.data;
-        for (var a = l(), o = a; a !== null && (a.nodeType !== A || a.data !== "");) o = a, a = m(a);
-        if (a === null) throw w(), C;
-        c(h, o), i = N(a);
-        return
-      }
-      var p = r ? b : s ? g : void 0,
-        f = T(r ? "svg" : s ? "math" : "template", p);
-      f.innerHTML = n;
-      var e = r || s ? f : f.content;
-      if (c(d(e), e.lastChild), r || s)
-        for (; d(e);) i.before(d(e));
-      else i.before(e)
-    }
-  })
-}
+  g as t
+} from "./BhCkpOlh.js";
+const n = () => "Close",
+  c = () => "Fechar",
+  o = () => "关闭",
+  s = () => "Schließen",
+  u = () => "Cerrar",
+  l = () => "Fermer",
+  i = () => "Chiudi",
+  f = () => "閉じる",
+  _ = () => "Zamknij",
+  p = () => "Закрыть",
+  a = () => "Закрити",
+  h = () => "Đóng",
+  g = (m = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? n() : r === "pt" ? c() : r === "ch" ? o() : r === "de" ? s() : r === "es" ? u() : r === "fr" ? l() : r === "it" ? i() : r === "jp" ? f() : r === "pl" ? _() : r === "ru" ? p() : r === "uk" ? a() : h()
+  };
 export {
-  O as h
+  g as c
 };

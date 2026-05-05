@@ -1,22 +1,48 @@
-import {
-  g as e
-} from "./BhCkpOlh.js";
-const t = () => "Banned",
-  u = () => "Banido",
-  a = () => "已封禁",
-  o = () => "Gebannt",
-  c = () => "Baneado",
-  s = () => "Banni",
-  d = () => "Bannato",
-  i = () => "BAN済み",
-  b = () => "Zbanowany",
-  f = () => "Забанен",
-  _ = () => "Заблоковано",
-  p = () => "Đã bị cấm",
-  m = (l = {}, r = {}) => {
-    const n = r.locale ?? e();
-    return n === "en" ? t() : n === "pt" ? u() : n === "ch" ? a() : n === "de" ? o() : n === "es" ? c() : n === "fr" ? s() : n === "it" ? d() : n === "jp" ? i() : n === "pl" ? b() : n === "ru" ? f() : n === "uk" ? _() : p()
-  };
+function O(r) {
+  const t = r - 1;
+  return t * t * t + 1
+}
+
+function Z(r, {
+  from: t,
+  to: a
+}, u = {}) {
+  var {
+    delay: f = 0,
+    duration: n = i => Math.sqrt(i) * 120,
+    easing: p = O
+  } = u, s = getComputedStyle(r), y = s.transform === "none" ? "" : s.transform, [h, v] = s.transformOrigin.split(" ").map(parseFloat);
+  h /= r.clientWidth, v /= r.clientHeight;
+  var c = W(r),
+    g = r.clientWidth / a.width / c,
+    d = r.clientHeight / a.height / c,
+    x = t.left + t.width * h,
+    m = t.top + t.height * v,
+    w = a.left + a.width * h,
+    S = a.top + a.height * v,
+    l = (x - w) * g,
+    o = (m - S) * d,
+    $ = t.width / a.width,
+    z = t.height / a.height;
+  return {
+    delay: f,
+    duration: typeof n == "function" ? n(Math.sqrt(l * l + o * o)) : n,
+    easing: p,
+    css: (i, e) => {
+      var C = e * l,
+        q = e * o,
+        H = i + e * $,
+        M = i + e * z;
+      return `transform: ${y} translate(${C}px, ${q}px) scale(${H}, ${M});`
+    }
+  }
+}
+
+function W(r) {
+  if ("currentCSSZoom" in r) return r.currentCSSZoom;
+  for (var t = r, a = 1; t !== null;) a *= +getComputedStyle(t).zoom, t = t.parentElement;
+  return a
+}
 export {
-  m as b
+  Z as f
 };

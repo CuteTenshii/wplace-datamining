@@ -1,127 +1,86 @@
-var D = Object.defineProperty;
-var E = s => {
-  throw TypeError(s)
-};
-var F = (s, e, t) => e in s ? D(s, e, {
-  enumerable: !0,
-  configurable: !0,
-  writable: !0,
-  value: t
-}) : s[e] = t;
-var I = (s, e, t) => F(s, typeof e != "symbol" ? e + "" : e, t),
-  _ = (s, e, t) => e.has(s) || E("Cannot " + t);
-var p = (s, e, t) => (_(s, e, "read from private field"), t ? t.call(s) : e.get(s)),
-  m = (s, e, t) => e.has(s) ? E("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(s) : e.set(s, t),
-  L = (s, e, t, a) => (_(s, e, "write to private field"), a ? a.call(s, t) : e.set(s, t), t),
-  A = (s, e, t) => (_(s, e, "access private method"), t);
-import "./Bzak7iHL.js";
 import {
-  p as R,
-  d as w,
-  r as C,
-  t as f,
-  a as g,
-  b as q,
-  c as b,
-  s as G
-} from "./BC180BoF.js";
-import {
-  i as M
-} from "./CYlrjl7C.js";
-import {
-  a as T,
-  d as S,
-  c as P,
-  s as z
-} from "./Bbytcfj7.js";
-import {
-  h as j
-} from "./D1v6iri7.js";
-import {
-  t as H
-} from "./CPcsbTWB.js";
-const N = 9,
-  J = 95,
-  Q = 45,
-  k = 5;
-
-function V(s) {
-  return s.split("").reduce((e, t) => (e ^ t.charCodeAt(0)) * -k, k) >>> 2
-}
-
-function y(s = "", e = J, t = Q, a = V) {
-  const l = a(s),
-    c = l % N * (360 / N);
-  return [...Array(s ? 25 : 0)].reduce((v, x, o) => l & 1 << o % 15 ? v + `<rect x="${o>14?7-~~(o/5):~~(o/5)}" y="${o%5}" width="1" height="1"/>` : v, `<svg viewBox="-1.5 -1.5 8 8" xmlns="http://www.w3.org/2000/svg" fill="hsl(${c} ${e}% ${t}%)" shape-rendering="crispEdges">`) + "</svg>"
-}
-var B, r, h, d, u, U, O;
-(B = globalThis.customElements) != null && B.get("minidenticon-svg") || (O = globalThis.customElements) == null || O.define("minidenticon-svg", (r = class extends HTMLElement {
-  constructor() {
-    super(...arguments);
-    m(this, u);
-    m(this, d, !1)
-  }
-  connectedCallback() {
-    A(this, u, U).call(this), L(this, d, !0)
-  }
-  attributeChangedCallback() {
-    p(this, d) && A(this, u, U).call(this)
-  }
-}, h = new WeakMap, d = new WeakMap, u = new WeakSet, U = function() {
-  var l;
-  const t = r.observedAttributes.map(c => this.getAttribute(c) || void 0),
-    a = t.join(",");
-  this.innerHTML = (l = p(r, h))[a] ?? (l[a] = y(...t))
-}, I(r, "observedAttributes", ["username", "saturation", "lightness"]), m(r, h, {}), r));
-var W = b("<div><!></div>");
-
-function X(s, e) {
-  R(e, !0);
-  var t = W(),
-    a = w(t);
-  j(a, () => y(e.userId.toString(), 95, 45)), C(t), f(() => T(t, 1, `bg-base-200 minidenticon ${e.class??""??""}`)), g(s, t), q()
-}
-var Y = b('<img class="pixelated bg-base-200 size-full" alt="User profile"/>'),
-  Z = b('<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square w-full"/>'),
-  K = b("<div><div><!></div> <!></div>");
-
-function ne(s, e) {
-  R(e, !0);
-  var t = K(),
-    a = w(t);
-  S(a, "width: 67.76785714285714%");
-  var l = w(a);
-  {
-    var c = i => {
-        X(i, {
-          get userId() {
-            return e.userId
-          }
-        })
-      },
-      v = i => {
-        var n = Y();
-        f(() => z(n, "src", e.pictureUrl)), g(i, n)
-      };
-    M(l, i => {
-      e.pictureUrl ? i(v, !1) : i(c)
-    })
-  }
-  C(a);
-  var x = G(a, 2);
-  {
-    var o = i => {
-      var n = Z();
-      S(n, "scale: 114.99999999999999%;"), f(() => z(n, "src", e.frameUrl)), g(i, n)
-    };
-    M(x, i => {
-      e.frameUrl && i(o)
-    })
-  }
-  C(t), f((i, n) => {
-    T(t, 1, i), T(a, 1, n)
-  }, [() => P(H("relative inline-grid size-10 place-items-center", e.class)), () => P(H("avatar border-base-300 aspect-square overflow-hidden rounded-full border", e.avatarClass))]), g(s, t), q()
-}
+  g as t
+} from "./BhCkpOlh.js";
+const o = () => "Eraser",
+  u = () => "Borracha",
+  s = () => "橡皮擦",
+  i = () => "Radierer",
+  _ = () => "Borrador",
+  p = () => "Gomme",
+  l = () => "Gomma",
+  c = () => "消しゴム",
+  a = () => "Gumka",
+  d = () => "Ластик",
+  f = () => "Гумка",
+  g = () => "Cục tẩy",
+  ce = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? o() : e === "pt" ? u() : e === "ch" ? s() : e === "de" ? i() : e === "es" ? _() : e === "fr" ? p() : e === "it" ? l() : e === "jp" ? c() : e === "pl" ? a() : e === "ru" ? d() : e === "uk" ? f() : g()
+  },
+  h = () => "Not enough Droplets",
+  y = () => "Droplets insuficientes",
+  m = () => "水滴数量不足",
+  x = () => "Nicht genug Droplets",
+  k = () => "No tienes suficientes gotas",
+  q = () => "Pas assez de droplets",
+  z = () => "Gocce insufficienti",
+  v = () => "ドロップレットが足りません。",
+  j = () => "Za mało kropli",
+  P = () => "Недостаточно droplets",
+  b = () => "Недостатньо дроплетів",
+  D = () => "Không đủ droplets",
+  ae = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? h() : e === "pt" ? y() : e === "ch" ? m() : e === "de" ? x() : e === "es" ? k() : e === "fr" ? q() : e === "it" ? z() : e === "jp" ? v() : e === "pl" ? j() : e === "ru" ? P() : e === "uk" ? b() : D()
+  },
+  G = () => "Refund Policy",
+  R = () => "Política de Reembolso",
+  w = () => "退款政策",
+  B = () => "Rückerstattungsrichtlinie",
+  N = () => "Política de reembolso",
+  C = () => "Politique de remboursement",
+  F = () => "Politica di rimborso",
+  L = () => "返金ポリシー",
+  V = () => "Polityka zwrotów",
+  A = () => "Политика возврата средств",
+  E = () => "Політика повернення коштів",
+  K = () => "Chính sách hoàn tiền",
+  de = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? G() : e === "pt" ? R() : e === "ch" ? w() : e === "de" ? B() : e === "es" ? N() : e === "fr" ? C() : e === "it" ? F() : e === "jp" ? L() : e === "pl" ? V() : e === "ru" ? A() : e === "uk" ? E() : K()
+  },
+  O = () => "For refund requests and processing details, please see our",
+  Y = () => "Para pedidos de reembolso, consulte nossa",
+  Z = () => "有关退款请求和处理详情，请参阅我们的",
+  H = () => "Für Rückerstattungen und Details siehe unsere",
+  I = () => "Para solicitudes de reembolso y más detalles, consulta nuestra",
+  J = () => "Pour les demandes de remboursement et les détails de traitement, consultez notre",
+  M = () => "Per richieste di rimborso, consulta la nostra",
+  Q = () => "返金の申請方法と詳細については、こちらをご覧ください:",
+  S = () => "Aby uzyskać informacje o zwrotach, zobacz naszą",
+  T = () => "Для запросов на возврат средств и деталей обработки см. нашу",
+  U = () => "Для запитів на повернення та деталей обробки дивіться нашу",
+  W = () => "Để yêu cầu hoàn tiền và chi tiết xử lý, hãy xem",
+  fe = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? O() : e === "pt" ? Y() : e === "ch" ? Z() : e === "de" ? H() : e === "es" ? I() : e === "fr" ? J() : e === "it" ? M() : e === "jp" ? Q() : e === "pl" ? S() : e === "ru" ? T() : e === "uk" ? U() : W()
+  },
+  X = () => "You gain 1 droplet per pixel painted and 500 Droplets per level",
+  $ = () => "Você ganha 1 droplet por pixel pintado e 500 droplets por level",
+  ee = () => "你每绘制 1 个像素可获得 1 个水滴，每升 1 级可获得 500 个水滴",
+  re = () => "Du erhältst 1 Droplet pro gemaltem Pixel und 500 Droplets pro Level",
+  te = () => "Ganas 1 gota por píxel pintado y 500 gotas por nivel",
+  ne = () => "Vous gagnez 1 droplet par pixel peint et 500 droplets par niveau",
+  oe = () => "Guadagni 1 goccia per ogni pixel dipinto e 500 gocce per livello",
+  ue = () => "ピクセルを1つ塗るごとにドロップレットを1つ、レベルごとに500ドロップレットを獲得します。",
+  se = () => "Otrzymujesz 1 kroplę za każdy pomalowany piksel i 500 kropli za każdy poziom",
+  ie = () => "Вы получаете 1 droplet за каждый нарисованный пиксель и 500 droplets за уровень",
+  _e = () => "Ви отримуєте 1 дроплет за кожен намальований піксель і 500 дроплетів за рівень",
+  pe = () => "Bạn nhận 1 droplet cho mỗi pixel tô và 500 droplets mỗi cấp độ",
+  ge = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? X() : e === "pt" ? $() : e === "ch" ? ee() : e === "de" ? re() : e === "es" ? te() : e === "fr" ? ne() : e === "it" ? oe() : e === "jp" ? ue() : e === "pl" ? se() : e === "ru" ? ie() : e === "uk" ? _e() : pe()
+  };
 export {
-  ne as P, X as a
+  de as a, ce as e, ae as n, fe as r, ge as y
 };

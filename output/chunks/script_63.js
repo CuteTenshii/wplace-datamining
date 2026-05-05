@@ -1,5462 +1,1618 @@
+import "./Bzak7iHL.js";
 import {
-  g as n
-} from "./BhCkpOlh.js";
-const u = () => "Alliance name reported successfully",
-  o = () => "Nome da aliança denunciado com sucesso",
-  c = () => "联盟名称举报成功",
-  _ = () => "Allianzname erfolgreich gemeldet",
-  s = () => "Nombre de la alianza reportado correctamente",
-  i = () => "Nom d’alliance signalé avec succès",
-  a = () => "Nome dell'alleanza segnalato con successo",
-  l = () => "アライアンス名を通報しました。",
-  f = () => "Nazwa sojuszu została pomyślnie zgłoszona",
-  p = () => "Название альянса успешно пожаловано",
-  y = () => "Назву альянсу успішно поскаржено",
-  d = () => "Đã báo cáo tên liên minh thành công",
-  Yar = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? u() : r === "pt" ? o() : r === "ch" ? c() : r === "de" ? _() : r === "es" ? s() : r === "fr" ? i() : r === "it" ? a() : r === "jp" ? l() : r === "pl" ? f() : r === "ru" ? p() : r === "uk" ? y() : d()
-  },
-  h = () => "Ban User",
-  k = () => "Banir usuário",
-  g = () => "封禁用户",
-  m = () => "Benutzer bannen",
-  b = () => "Banear usuario",
-  j = () => "Bannir l’utilisateur",
-  v = () => "Banna utente",
-  w = () => "ユーザーをBAN",
-  z = () => "Zbanuj użytkownika",
-  S = () => "Забанить пользователя",
-  M = () => "Забанити користувача",
-  C = () => "Cấm người dùng",
-  $ar = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? h() : r === "pt" ? k() : r === "ch" ? g() : r === "de" ? m() : r === "es" ? b() : r === "fr" ? j() : r === "it" ? v() : r === "jp" ? w() : r === "pl" ? z() : r === "ru" ? S() : r === "uk" ? M() : C()
-  },
-  B = () => "Andorra",
-  G = () => "Andorra",
-  A = () => "安道尔",
-  T = () => "Andorra",
-  P = () => "Andorra",
-  I = () => "Andorre",
-  N = () => "Andorra",
-  L = () => "アンドラ",
-  q = () => "Andora",
-  x = () => "Андорра",
-  R = () => "Андорра",
-  D = () => "Andorra",
-  rlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? B() : r === "pt" ? G() : r === "ch" ? A() : r === "de" ? T() : r === "es" ? P() : r === "fr" ? I() : r === "it" ? N() : r === "jp" ? L() : r === "pl" ? q() : r === "ru" ? x() : r === "uk" ? R() : D()
-  },
-  K = () => "United Arab Emirates",
-  V = () => "Emirados Árabes Unidos",
-  E = () => "阿拉伯联合酋长国",
-  H = () => "Vereinigte Arabische Emirate",
-  F = () => "Emiratos Árabes Unidos",
-  O = () => "Émirats arabes unis",
-  J = () => "Emirati Arabi Uniti",
-  U = () => "アラブ首長国連邦",
-  Z = () => "Zjednoczone Emiraty Arabskie",
-  W = () => "Объединенные Арабские Эмираты",
-  X = () => "Об'єднані Арабські Емірати",
-  Q = () => "Các Tiểu vương quốc Ả Rập Thống nhất",
-  tlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? K() : r === "pt" ? V() : r === "ch" ? E() : r === "de" ? H() : r === "es" ? F() : r === "fr" ? O() : r === "it" ? J() : r === "jp" ? U() : r === "pl" ? Z() : r === "ru" ? W() : r === "uk" ? X() : Q()
-  },
-  Y = () => "Afghanistan",
-  $ = () => "Afeganistão",
-  rr = () => "阿富汗",
-  tr = () => "Afghanistan",
-  nr = () => "Afganistán",
-  er = () => "Afghanistan",
-  ur = () => "Afghanistan",
-  or = () => "アフガニスタン",
-  cr = () => "Afganistan",
-  _r = () => "Афганистан",
-  sr = () => "Афганістан",
-  ir = () => "Afghanistan",
-  nlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Y() : r === "pt" ? $() : r === "ch" ? rr() : r === "de" ? tr() : r === "es" ? nr() : r === "fr" ? er() : r === "it" ? ur() : r === "jp" ? or() : r === "pl" ? cr() : r === "ru" ? _r() : r === "uk" ? sr() : ir()
-  },
-  ar = () => "Antigua and Barbuda",
-  lr = () => "Antígua e Barbuda",
-  fr = () => "安提瓜和巴布达",
-  pr = () => "Antigua und Barbuda",
-  yr = () => "Antigua y Barbuda",
-  dr = () => "Antigua-et-Barbuda",
-  hr = () => "Antigua e Barbuda",
-  kr = () => "アンティグア・バーブーダ",
-  gr = () => "Antigua i Barbuda",
-  mr = () => "Антигуа и Барбуда",
-  br = () => "Антигуа і Барбуда",
-  jr = () => "Antigua và Barbuda",
-  elr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? ar() : r === "pt" ? lr() : r === "ch" ? fr() : r === "de" ? pr() : r === "es" ? yr() : r === "fr" ? dr() : r === "it" ? hr() : r === "jp" ? kr() : r === "pl" ? gr() : r === "ru" ? mr() : r === "uk" ? br() : jr()
-  },
-  vr = () => "Anguilla",
-  wr = () => "Anguilla",
-  zr = () => "安圭拉",
-  Sr = () => "Anguilla",
-  Mr = () => "Anguila",
-  Cr = () => "Anguilla",
-  Br = () => "Anguilla",
-  Gr = () => "アンギラ",
-  Ar = () => "Anguilla",
-  Tr = () => "Ангилья",
-  Pr = () => "Ангілья",
-  Ir = () => "Anguilla",
-  ulr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? vr() : r === "pt" ? wr() : r === "ch" ? zr() : r === "de" ? Sr() : r === "es" ? Mr() : r === "fr" ? Cr() : r === "it" ? Br() : r === "jp" ? Gr() : r === "pl" ? Ar() : r === "ru" ? Tr() : r === "uk" ? Pr() : Ir()
-  },
-  Nr = () => "Albania",
-  Lr = () => "Albânia",
-  qr = () => "阿尔巴尼亚",
-  xr = () => "Albanien",
-  Rr = () => "Albania",
-  Dr = () => "Albanie",
-  Kr = () => "Albania",
-  Vr = () => "アルバニア",
-  Er = () => "Albania",
-  Hr = () => "Албания",
-  Fr = () => "Албанія",
-  Or = () => "Albania",
-  olr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Nr() : r === "pt" ? Lr() : r === "ch" ? qr() : r === "de" ? xr() : r === "es" ? Rr() : r === "fr" ? Dr() : r === "it" ? Kr() : r === "jp" ? Vr() : r === "pl" ? Er() : r === "ru" ? Hr() : r === "uk" ? Fr() : Or()
-  },
-  Jr = () => "Armenia",
-  Ur = () => "Armênia",
-  Zr = () => "亚美尼亚",
-  Wr = () => "Armenien",
-  Xr = () => "Armenia",
-  Qr = () => "Arménie",
-  Yr = () => "Armenia",
-  $r = () => "アルメニア",
-  rt = () => "Armenia",
-  tt = () => "Армения",
-  nt = () => "Вірменія",
-  et = () => "Armenia",
-  clr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Jr() : r === "pt" ? Ur() : r === "ch" ? Zr() : r === "de" ? Wr() : r === "es" ? Xr() : r === "fr" ? Qr() : r === "it" ? Yr() : r === "jp" ? $r() : r === "pl" ? rt() : r === "ru" ? tt() : r === "uk" ? nt() : et()
-  },
-  ut = () => "Angola",
-  ot = () => "Angola",
-  ct = () => "安哥拉",
-  _t = () => "Angola",
-  st = () => "Angola",
-  it = () => "Angola",
-  at = () => "Angola",
-  lt = () => "アンゴラ",
-  ft = () => "Angola",
-  pt = () => "Ангола",
-  yt = () => "Ангола",
-  dt = () => "Angola",
-  _lr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? ut() : r === "pt" ? ot() : r === "ch" ? ct() : r === "de" ? _t() : r === "es" ? st() : r === "fr" ? it() : r === "it" ? at() : r === "jp" ? lt() : r === "pl" ? ft() : r === "ru" ? pt() : r === "uk" ? yt() : dt()
-  },
-  ht = () => "Antarctica",
-  kt = () => "Antártica",
-  gt = () => "南极洲",
-  mt = () => "Antarktis",
-  bt = () => "Antártida",
-  jt = () => "Antarctique",
-  vt = () => "Antartide",
-  wt = () => "南極大陸",
-  zt = () => "Antarktyda",
-  St = () => "Антарктида",
-  Mt = () => "Антарктида",
-  Ct = () => "Nam Cực",
-  slr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? ht() : r === "pt" ? kt() : r === "ch" ? gt() : r === "de" ? mt() : r === "es" ? bt() : r === "fr" ? jt() : r === "it" ? vt() : r === "jp" ? wt() : r === "pl" ? zt() : r === "ru" ? St() : r === "uk" ? Mt() : Ct()
-  },
-  Bt = () => "Argentina",
-  Gt = () => "Argentina",
-  At = () => "阿根廷",
-  Tt = () => "Argentinien",
-  Pt = () => "Argentina",
-  It = () => "Argentine",
-  Nt = () => "Argentina",
-  Lt = () => "アルゼンチン",
-  qt = () => "Argentyna",
-  xt = () => "Аргентина",
-  Rt = () => "Аргентина",
-  Dt = () => "Argentina",
-  ilr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Bt() : r === "pt" ? Gt() : r === "ch" ? At() : r === "de" ? Tt() : r === "es" ? Pt() : r === "fr" ? It() : r === "it" ? Nt() : r === "jp" ? Lt() : r === "pl" ? qt() : r === "ru" ? xt() : r === "uk" ? Rt() : Dt()
-  },
-  Kt = () => "American Samoa",
-  Vt = () => "Samoa Americana",
-  Et = () => "美属萨摩亚",
-  Ht = () => "Amerikanisch-Samoa",
-  Ft = () => "Samoa Americana",
-  Ot = () => "Samoa américaines",
-  Jt = () => "Samoa Americane",
-  Ut = () => "アメリカ領サモア",
-  Zt = () => "Samoa Amerykańskie",
-  Wt = () => "Американское Самоа",
-  Xt = () => "Американське Самоа",
-  Qt = () => "Samoa thuộc Mỹ",
-  alr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Kt() : r === "pt" ? Vt() : r === "ch" ? Et() : r === "de" ? Ht() : r === "es" ? Ft() : r === "fr" ? Ot() : r === "it" ? Jt() : r === "jp" ? Ut() : r === "pl" ? Zt() : r === "ru" ? Wt() : r === "uk" ? Xt() : Qt()
-  },
-  Yt = () => "Austria",
-  $t = () => "Áustria",
-  rn = () => "奥地利",
-  tn = () => "Österreich",
-  nn = () => "Austria",
-  en = () => "Autriche",
-  un = () => "Austria",
-  on = () => "オーストリア",
-  cn = () => "Austria",
-  _n = () => "Австрия",
-  sn = () => "Австрія",
-  an = () => "Áo",
-  llr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Yt() : r === "pt" ? $t() : r === "ch" ? rn() : r === "de" ? tn() : r === "es" ? nn() : r === "fr" ? en() : r === "it" ? un() : r === "jp" ? on() : r === "pl" ? cn() : r === "ru" ? _n() : r === "uk" ? sn() : an()
-  },
-  ln = () => "Australia",
-  fn = () => "Austrália",
-  pn = () => "澳大利亚",
-  yn = () => "Australien",
-  dn = () => "Australia",
-  hn = () => "Australie",
-  kn = () => "Australia",
-  gn = () => "オーストラリア",
-  mn = () => "Australia",
-  bn = () => "Австралия",
-  jn = () => "Австралія",
-  vn = () => "Úc",
-  flr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? ln() : r === "pt" ? fn() : r === "ch" ? pn() : r === "de" ? yn() : r === "es" ? dn() : r === "fr" ? hn() : r === "it" ? kn() : r === "jp" ? gn() : r === "pl" ? mn() : r === "ru" ? bn() : r === "uk" ? jn() : vn()
-  },
-  wn = () => "Aruba",
-  zn = () => "Aruba",
-  Sn = () => "阿鲁巴",
-  Mn = () => "Aruba",
-  Cn = () => "Aruba",
-  Bn = () => "Aruba",
-  Gn = () => "Aruba",
-  An = () => "アルバ",
-  Tn = () => "Aruba",
-  Pn = () => "Аруба",
-  In = () => "Аруба",
-  Nn = () => "Aruba",
-  plr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? wn() : r === "pt" ? zn() : r === "ch" ? Sn() : r === "de" ? Mn() : r === "es" ? Cn() : r === "fr" ? Bn() : r === "it" ? Gn() : r === "jp" ? An() : r === "pl" ? Tn() : r === "ru" ? Pn() : r === "uk" ? In() : Nn()
-  },
-  Ln = () => "Åland Islands",
-  qn = () => "Ilhas Åland",
-  xn = () => "奥兰群岛",
-  Rn = () => "Ålandinseln",
-  Dn = () => "Islas Åland",
-  Kn = () => "Îles Åland",
-  Vn = () => "Isole Åland",
-  En = () => "オーランド諸島",
-  Hn = () => "Wyspy Alandzkie",
-  Fn = () => "Аландские острова",
-  On = () => "Аландські острови",
-  Jn = () => "Quần đảo Åland",
-  ylr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Ln() : r === "pt" ? qn() : r === "ch" ? xn() : r === "de" ? Rn() : r === "es" ? Dn() : r === "fr" ? Kn() : r === "it" ? Vn() : r === "jp" ? En() : r === "pl" ? Hn() : r === "ru" ? Fn() : r === "uk" ? On() : Jn()
-  },
-  Un = () => "Azerbaijan",
-  Zn = () => "Azerbaijão",
-  Wn = () => "阿塞拜疆",
-  Xn = () => "Aserbaidschan",
-  Qn = () => "Azerbaiyán",
-  Yn = () => "Azerbaïdjan",
-  $n = () => "Azerbaigian",
-  re = () => "アゼルバイジャン",
-  te = () => "Azerbejdżan",
-  ne = () => "Азербайджан",
-  ee = () => "Азербайджан",
-  ue = () => "Azerbaijan",
-  dlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Un() : r === "pt" ? Zn() : r === "ch" ? Wn() : r === "de" ? Xn() : r === "es" ? Qn() : r === "fr" ? Yn() : r === "it" ? $n() : r === "jp" ? re() : r === "pl" ? te() : r === "ru" ? ne() : r === "uk" ? ee() : ue()
-  },
-  oe = () => "Bosnia and Herzegovina",
-  ce = () => "Bósnia e Herzegovina",
-  _e = () => "波斯尼亚和黑塞哥维那",
-  se = () => "Bosnien und Herzegowina",
-  ie = () => "Bosnia y Herzegovina",
-  ae = () => "Bosnie-Herzégovine",
-  le = () => "Bosnia ed Erzegovina",
-  fe = () => "ボスニア・ヘルツェゴビナ",
-  pe = () => "Bośnia i Hercegowina",
-  ye = () => "Босния и Герцеговина",
-  de = () => "Боснія і Герцеговина",
-  he = () => "Bosna và Hercegovina",
-  hlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? oe() : r === "pt" ? ce() : r === "ch" ? _e() : r === "de" ? se() : r === "es" ? ie() : r === "fr" ? ae() : r === "it" ? le() : r === "jp" ? fe() : r === "pl" ? pe() : r === "ru" ? ye() : r === "uk" ? de() : he()
-  },
-  ke = () => "Barbados",
-  ge = () => "Barbados",
-  me = () => "巴巴多斯",
-  be = () => "Barbados",
-  je = () => "Barbados",
-  ve = () => "La Barbade",
-  we = () => "Barbados",
-  ze = () => "バルバドス",
-  Se = () => "Barbados",
-  Me = () => "Барбадос",
-  Ce = () => "Барбадос",
-  Be = () => "Barbados",
-  klr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? ke() : r === "pt" ? ge() : r === "ch" ? me() : r === "de" ? be() : r === "es" ? je() : r === "fr" ? ve() : r === "it" ? we() : r === "jp" ? ze() : r === "pl" ? Se() : r === "ru" ? Me() : r === "uk" ? Ce() : Be()
-  },
-  Ge = () => "Bangladesh",
-  Ae = () => "Bangladesh",
-  Te = () => "孟加拉国",
-  Pe = () => "Bangladesch",
-  Ie = () => "Bangladés",
-  Ne = () => "Bangladesh",
-  Le = () => "Bangladesh",
-  qe = () => "バングラデシュ",
-  xe = () => "Bangladesz",
-  Re = () => "Бангладеш",
-  De = () => "Бангладеш",
-  Ke = () => "Bangladesh",
-  glr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Ge() : r === "pt" ? Ae() : r === "ch" ? Te() : r === "de" ? Pe() : r === "es" ? Ie() : r === "fr" ? Ne() : r === "it" ? Le() : r === "jp" ? qe() : r === "pl" ? xe() : r === "ru" ? Re() : r === "uk" ? De() : Ke()
-  },
-  Ve = () => "Belgium",
-  Ee = () => "Bélgica",
-  He = () => "比利时",
-  Fe = () => "Belgien",
-  Oe = () => "Bélgica",
-  Je = () => "Belgique",
-  Ue = () => "Belgio",
-  Ze = () => "ベルギー",
-  We = () => "Belgia",
-  Xe = () => "Бельгия",
-  Qe = () => "Бельгія",
-  Ye = () => "Bỉ",
-  mlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Ve() : r === "pt" ? Ee() : r === "ch" ? He() : r === "de" ? Fe() : r === "es" ? Oe() : r === "fr" ? Je() : r === "it" ? Ue() : r === "jp" ? Ze() : r === "pl" ? We() : r === "ru" ? Xe() : r === "uk" ? Qe() : Ye()
-  },
-  $e = () => "Burkina Faso",
-  ru = () => "Burkina Faso",
-  tu = () => "布基纳法索",
-  nu = () => "Burkina Faso",
-  eu = () => "Burkina Faso",
-  uu = () => "Burkina Faso",
-  ou = () => "Burkina Faso",
-  cu = () => "ブルキナファソ",
-  _u = () => "Burkina Faso",
-  su = () => "Буркина-Фасо",
-  iu = () => "Буркіна-Фасо",
-  au = () => "Burkina Faso",
-  blr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? $e() : r === "pt" ? ru() : r === "ch" ? tu() : r === "de" ? nu() : r === "es" ? eu() : r === "fr" ? uu() : r === "it" ? ou() : r === "jp" ? cu() : r === "pl" ? _u() : r === "ru" ? su() : r === "uk" ? iu() : au()
-  },
-  lu = () => "Bulgaria",
-  fu = () => "Bulgária",
-  pu = () => "保加利亚",
-  yu = () => "Bulgarien",
-  du = () => "Bulgaria",
-  hu = () => "Bulgarie",
-  ku = () => "Bulgaria",
-  gu = () => "ブルガリア",
-  mu = () => "Bułgaria",
-  bu = () => "Болгария",
-  ju = () => "Болгарія",
-  vu = () => "Bulgaria",
-  jlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? lu() : r === "pt" ? fu() : r === "ch" ? pu() : r === "de" ? yu() : r === "es" ? du() : r === "fr" ? hu() : r === "it" ? ku() : r === "jp" ? gu() : r === "pl" ? mu() : r === "ru" ? bu() : r === "uk" ? ju() : vu()
-  },
-  wu = () => "Bahrain",
-  zu = () => "Bahrein",
-  Su = () => "巴林",
-  Mu = () => "Bahrain",
-  Cu = () => "Baréin",
-  Bu = () => "Bahreïn",
-  Gu = () => "Bahrain",
-  Au = () => "バーレーン",
-  Tu = () => "Bahrajn",
-  Pu = () => "Бахрейн",
-  Iu = () => "Бахрейн",
-  Nu = () => "Bahrain",
-  vlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? wu() : r === "pt" ? zu() : r === "ch" ? Su() : r === "de" ? Mu() : r === "es" ? Cu() : r === "fr" ? Bu() : r === "it" ? Gu() : r === "jp" ? Au() : r === "pl" ? Tu() : r === "ru" ? Pu() : r === "uk" ? Iu() : Nu()
-  },
-  Lu = () => "Burundi",
-  qu = () => "Burundi",
-  xu = () => "布隆迪",
-  Ru = () => "Burundi",
-  Du = () => "Burundi",
-  Ku = () => "Burundi",
-  Vu = () => "Burundi",
-  Eu = () => "ブルンジ",
-  Hu = () => "Burundi",
-  Fu = () => "Бурунди",
-  Ou = () => "Бурунді",
-  Ju = () => "Burundi",
-  wlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Lu() : r === "pt" ? qu() : r === "ch" ? xu() : r === "de" ? Ru() : r === "es" ? Du() : r === "fr" ? Ku() : r === "it" ? Vu() : r === "jp" ? Eu() : r === "pl" ? Hu() : r === "ru" ? Fu() : r === "uk" ? Ou() : Ju()
-  },
-  Uu = () => "Benin",
-  Zu = () => "Benin",
-  Wu = () => "贝宁",
-  Xu = () => "Benin",
-  Qu = () => "Benín",
-  Yu = () => "Bénin",
-  $u = () => "Benin",
-  ro = () => "ベナン",
-  to = () => "Benin",
-  no = () => "Бенин",
-  eo = () => "Бенін",
-  uo = () => "Bê-nanh",
-  zlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Uu() : r === "pt" ? Zu() : r === "ch" ? Wu() : r === "de" ? Xu() : r === "es" ? Qu() : r === "fr" ? Yu() : r === "it" ? $u() : r === "jp" ? ro() : r === "pl" ? to() : r === "ru" ? no() : r === "uk" ? eo() : uo()
-  },
-  oo = () => "Saint Barthélemy",
-  co = () => "São Bartolomeu",
-  _o = () => "圣巴泰勒米",
-  so = () => "Saint Barthélemy",
-  io = () => "San Bartolomé",
-  ao = () => "Saint Barthélemy",
-  lo = () => "Saint Barthélemy",
-  fo = () => "サン・バルテルミー",
-  po = () => "Saint Barthélemy",
-  yo = () => "Сен-Бартелеми",
-  ho = () => "Сен-Бартелемі",
-  ko = () => "Saint Barthélemy",
-  Slr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? oo() : r === "pt" ? co() : r === "ch" ? _o() : r === "de" ? so() : r === "es" ? io() : r === "fr" ? ao() : r === "it" ? lo() : r === "jp" ? fo() : r === "pl" ? po() : r === "ru" ? yo() : r === "uk" ? ho() : ko()
-  },
-  go = () => "Bermuda",
-  mo = () => "Bermuda",
-  bo = () => "百慕大",
-  jo = () => "Bermuda",
-  vo = () => "Bermudas",
-  wo = () => "Bermudes",
-  zo = () => "Bermuda",
-  So = () => "バミューダ",
-  Mo = () => "Bermudy",
-  Co = () => "Бермуды",
-  Bo = () => "Бермуди",
-  Go = () => "Bermuda",
-  Mlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? go() : r === "pt" ? mo() : r === "ch" ? bo() : r === "de" ? jo() : r === "es" ? vo() : r === "fr" ? wo() : r === "it" ? zo() : r === "jp" ? So() : r === "pl" ? Mo() : r === "ru" ? Co() : r === "uk" ? Bo() : Go()
-  },
-  Ao = () => "Brunei Darussalam",
-  To = () => "Brunei Darussalam",
-  Po = () => "文莱达鲁萨兰国",
-  Io = () => "Brunei Darussalam",
-  No = () => "Brunéi Darussalam",
-  Lo = () => "Brunéi Darussalam",
-  qo = () => "Brunei Darussalam",
-  xo = () => "ブルネイ・ダルサラーム",
-  Ro = () => "Brunei Darussalam",
-  Do = () => "Бруней-Даруссалам",
-  Ko = () => "Бруней-Даруссалам",
-  Vo = () => "Brunei Darussalam",
-  Clr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Ao() : r === "pt" ? To() : r === "ch" ? Po() : r === "de" ? Io() : r === "es" ? No() : r === "fr" ? Lo() : r === "it" ? qo() : r === "jp" ? xo() : r === "pl" ? Ro() : r === "ru" ? Do() : r === "uk" ? Ko() : Vo()
-  },
-  Eo = () => "Bolivia",
-  Ho = () => "Bolívia",
-  Fo = () => "玻利维亚",
-  Oo = () => "Bolivien",
-  Jo = () => "Bolivia",
-  Uo = () => "Bolivie",
-  Zo = () => "Bolivia",
-  Wo = () => "ボリビア",
-  Xo = () => "Boliwia",
-  Qo = () => "Боливия",
-  Yo = () => "Болівія",
-  $o = () => "Bolivia",
-  Blr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Eo() : r === "pt" ? Ho() : r === "ch" ? Fo() : r === "de" ? Oo() : r === "es" ? Jo() : r === "fr" ? Uo() : r === "it" ? Zo() : r === "jp" ? Wo() : r === "pl" ? Xo() : r === "ru" ? Qo() : r === "uk" ? Yo() : $o()
-  },
-  rc = () => "Bonaire",
-  tc = () => "Bonaire",
-  nc = () => "博奈尔",
-  ec = () => "Bonaire",
-  uc = () => "Bonaire",
-  oc = () => "Bonaire",
-  cc = () => "Bonaire",
-  _c = () => "ボネール",
-  sc = () => "Bonaire",
-  ic = () => "Бонэйр",
-  ac = () => "Бонэйр",
-  lc = () => "Bonaire",
-  Glr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? rc() : r === "pt" ? tc() : r === "ch" ? nc() : r === "de" ? ec() : r === "es" ? uc() : r === "fr" ? oc() : r === "it" ? cc() : r === "jp" ? _c() : r === "pl" ? sc() : r === "ru" ? ic() : r === "uk" ? ac() : lc()
-  },
-  fc = () => "Brazil",
-  pc = () => "Brasil",
-  yc = () => "巴西",
-  dc = () => "Brasilien",
-  hc = () => "Brasil",
-  kc = () => "Brésil",
-  gc = () => "Brasile",
-  mc = () => "ブラジル",
-  bc = () => "Brazylia",
-  jc = () => "Бразилия",
-  vc = () => "Бразилія",
-  wc = () => "Bra-xin",
-  Alr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? fc() : r === "pt" ? pc() : r === "ch" ? yc() : r === "de" ? dc() : r === "es" ? hc() : r === "fr" ? kc() : r === "it" ? gc() : r === "jp" ? mc() : r === "pl" ? bc() : r === "ru" ? jc() : r === "uk" ? vc() : wc()
-  },
-  zc = () => "Bahamas",
-  Sc = () => "Bahamas",
-  Mc = () => "巴哈马",
-  Cc = () => "Bahamas",
-  Bc = () => "Bahamas",
-  Gc = () => "Bahamas",
-  Ac = () => "Bahamas",
-  Tc = () => "バハマ",
-  Pc = () => "Bahamy",
-  Ic = () => "Багамы",
-  Nc = () => "Багами",
-  Lc = () => "Bahamas",
-  Tlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? zc() : r === "pt" ? Sc() : r === "ch" ? Mc() : r === "de" ? Cc() : r === "es" ? Bc() : r === "fr" ? Gc() : r === "it" ? Ac() : r === "jp" ? Tc() : r === "pl" ? Pc() : r === "ru" ? Ic() : r === "uk" ? Nc() : Lc()
-  },
-  qc = () => "Bhutan",
-  xc = () => "Butão",
-  Rc = () => "不丹",
-  Dc = () => "Bhutan",
-  Kc = () => "Bután",
-  Vc = () => "Bhoutan",
-  Ec = () => "Bhutan",
-  Hc = () => "ブータン",
-  Fc = () => "Bhutan",
-  Oc = () => "Бутан",
-  Jc = () => "Бутан",
-  Uc = () => "Bhutan",
-  Plr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? qc() : r === "pt" ? xc() : r === "ch" ? Rc() : r === "de" ? Dc() : r === "es" ? Kc() : r === "fr" ? Vc() : r === "it" ? Ec() : r === "jp" ? Hc() : r === "pl" ? Fc() : r === "ru" ? Oc() : r === "uk" ? Jc() : Uc()
-  },
-  Zc = () => "Bouvet Island",
-  Wc = () => "Ilha Bouvet",
-  Xc = () => "布韦岛",
-  Qc = () => "Bouvetinsel",
-  Yc = () => "Isla Bouvet",
-  $c = () => "Île Bouvet",
-  r_ = () => "Isola Bouvet",
-  t_ = () => "ブーベ島",
-  n_ = () => "Wyspa Bouveta",
-  e_ = () => "Остров Буве",
-  u_ = () => "Острів Буве",
-  o_ = () => "Đảo Bouvet",
-  Ilr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Zc() : r === "pt" ? Wc() : r === "ch" ? Xc() : r === "de" ? Qc() : r === "es" ? Yc() : r === "fr" ? $c() : r === "it" ? r_() : r === "jp" ? t_() : r === "pl" ? n_() : r === "ru" ? e_() : r === "uk" ? u_() : o_()
-  },
-  c_ = () => "Botswana",
-  __ = () => "Botsuana",
-  s_ = () => "博茨瓦纳",
-  i_ = () => "Botswana",
-  a_ = () => "Botsuana",
-  l_ = () => "Botswana",
-  f_ = () => "Botswana",
-  p_ = () => "ボツワナ",
-  y_ = () => "Botswana",
-  d_ = () => "Ботсвана",
-  h_ = () => "Ботсвана",
-  k_ = () => "Botswana",
-  Nlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? c_() : r === "pt" ? __() : r === "ch" ? s_() : r === "de" ? i_() : r === "es" ? a_() : r === "fr" ? l_() : r === "it" ? f_() : r === "jp" ? p_() : r === "pl" ? y_() : r === "ru" ? d_() : r === "uk" ? h_() : k_()
-  },
-  g_ = () => "Belarus",
-  m_ = () => "Belarus",
-  b_ = () => "白俄罗斯",
-  j_ = () => "Belarus",
-  v_ = () => "Bielorrusia",
-  w_ = () => "Biélorussie",
-  z_ = () => "Bielorussia",
-  S_ = () => "ベラルーシ",
-  M_ = () => "Białoruś",
-  C_ = () => "Беларусь",
-  B_ = () => "Білорусь",
-  G_ = () => "Belarus",
-  Llr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? g_() : r === "pt" ? m_() : r === "ch" ? b_() : r === "de" ? j_() : r === "es" ? v_() : r === "fr" ? w_() : r === "it" ? z_() : r === "jp" ? S_() : r === "pl" ? M_() : r === "ru" ? C_() : r === "uk" ? B_() : G_()
-  },
-  A_ = () => "Belize",
-  T_ = () => "Belize",
-  P_ = () => "伯利兹",
-  I_ = () => "Belize",
-  N_ = () => "Belice",
-  L_ = () => "Belize",
-  q_ = () => "Belize",
-  x_ = () => "ベリーズ",
-  R_ = () => "Belize",
-  D_ = () => "Белиз",
-  K_ = () => "Беліз",
-  V_ = () => "Belize",
-  qlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? A_() : r === "pt" ? T_() : r === "ch" ? P_() : r === "de" ? I_() : r === "es" ? N_() : r === "fr" ? L_() : r === "it" ? q_() : r === "jp" ? x_() : r === "pl" ? R_() : r === "ru" ? D_() : r === "uk" ? K_() : V_()
-  },
-  E_ = () => "Canada",
-  H_ = () => "Canadá",
-  F_ = () => "加拿大",
-  O_ = () => "Kanada",
-  J_ = () => "Canadá",
-  U_ = () => "Canada",
-  Z_ = () => "Canada",
-  W_ = () => "カナダ",
-  X_ = () => "Kanada",
-  Q_ = () => "Канада",
-  Y_ = () => "Канада",
-  $_ = () => "Canada",
-  xlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? E_() : r === "pt" ? H_() : r === "ch" ? F_() : r === "de" ? O_() : r === "es" ? J_() : r === "fr" ? U_() : r === "it" ? Z_() : r === "jp" ? W_() : r === "pl" ? X_() : r === "ru" ? Q_() : r === "uk" ? Y_() : $_()
-  },
-  rs = () => "Cocos (Keeling) Islands",
-  ts = () => "Ilhas Cocos (Keeling)",
-  ns = () => "科科斯（基林）群岛",
-  es = () => "Kokosinseln (Keelinginseln)",
-  us = () => "Islas Cocos (Keeling)",
-  os = () => "Îles Cocos (Keeling)",
-  cs = () => "Isole Cocos (Keeling)",
-  _s = () => "ココス諸島 (キーリング諸島)",
-  ss = () => "Wyspy Kokosowe (Keelinga)",
-  is = () => "Кокосовые острова (Килинг)",
-  as = () => "Кокосові острови (Кілінґ)",
-  ls = () => "Quần đảo Cocos (Keeling)",
-  Rlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? rs() : r === "pt" ? ts() : r === "ch" ? ns() : r === "de" ? es() : r === "es" ? us() : r === "fr" ? os() : r === "it" ? cs() : r === "jp" ? _s() : r === "pl" ? ss() : r === "ru" ? is() : r === "uk" ? as() : ls()
-  },
-  fs = () => "Republic of the Congo",
-  ps = () => "República do Congo",
-  ys = () => "刚果共和国",
-  ds = () => "Republik Kongo",
-  hs = () => "República del Congo",
-  ks = () => "République du Congo",
-  gs = () => "Repubblica del Congo",
-  ms = () => "コンゴ共和国",
-  bs = () => "Republika Konga",
-  js = () => "Республика Конго",
-  vs = () => "Республіка Конго",
-  ws = () => "Cộng hòa Congo",
-  Dlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? fs() : r === "pt" ? ps() : r === "ch" ? ys() : r === "de" ? ds() : r === "es" ? hs() : r === "fr" ? ks() : r === "it" ? gs() : r === "jp" ? ms() : r === "pl" ? bs() : r === "ru" ? js() : r === "uk" ? vs() : ws()
-  },
-  zs = () => "Central African Republic",
-  Ss = () => "República Centro-Africana",
-  Ms = () => "中非共和国",
-  Cs = () => "Zentralafrikanische Republik",
-  Bs = () => "República Centroafricana",
-  Gs = () => "République centrafricaine",
-  As = () => "Repubblica Centrafricana",
-  Ts = () => "中央アフリカ共和国",
-  Ps = () => "Republika Środkowoafrykańska",
-  Is = () => "Центральноафриканская Республика",
-  Ns = () => "Центральноафриканська Республіка",
-  Ls = () => "Cộng hòa Trung Phi",
-  Klr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? zs() : r === "pt" ? Ss() : r === "ch" ? Ms() : r === "de" ? Cs() : r === "es" ? Bs() : r === "fr" ? Gs() : r === "it" ? As() : r === "jp" ? Ts() : r === "pl" ? Ps() : r === "ru" ? Is() : r === "uk" ? Ns() : Ls()
-  },
-  qs = () => "Congo",
-  xs = () => "Congo",
-  Rs = () => "刚果",
-  Ds = () => "Kongo",
-  Ks = () => "Congo",
-  Vs = () => "Congo",
-  Es = () => "Congo",
-  Hs = () => "コンゴ",
-  Fs = () => "Kongo",
-  Os = () => "Конго",
-  Js = () => "Конго",
-  Us = () => "Congo",
-  Vlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? qs() : r === "pt" ? xs() : r === "ch" ? Rs() : r === "de" ? Ds() : r === "es" ? Ks() : r === "fr" ? Vs() : r === "it" ? Es() : r === "jp" ? Hs() : r === "pl" ? Fs() : r === "ru" ? Os() : r === "uk" ? Js() : Us()
-  },
-  Zs = () => "Switzerland",
-  Ws = () => "Suíça",
-  Xs = () => "瑞士",
-  Qs = () => "Schweiz",
-  Ys = () => "Suiza",
-  $s = () => "Suisse",
-  ri = () => "Svizzera",
-  ti = () => "スイス",
-  ni = () => "Szwajcaria",
-  ei = () => "Швейцария",
-  ui = () => "Швейцарія",
-  oi = () => "Thụy Sĩ",
-  Elr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Zs() : r === "pt" ? Ws() : r === "ch" ? Xs() : r === "de" ? Qs() : r === "es" ? Ys() : r === "fr" ? $s() : r === "it" ? ri() : r === "jp" ? ti() : r === "pl" ? ni() : r === "ru" ? ei() : r === "uk" ? ui() : oi()
-  },
-  ci = () => "Côte d'Ivoire",
-  _i = () => "Costa do Marfim",
-  si = () => "科特迪瓦",
-  ii = () => "Elfenbeinküste",
-  ai = () => "Costa de Marfil",
-  li = () => "Côte d'Ivoire",
-  fi = () => "Costa d'Avorio",
-  pi = () => "コートジボワール",
-  yi = () => "Wybrzeże Kości Słoniowej",
-  di = () => "Кот-д'Ивуар",
-  hi = () => "Кот-д'Івуар",
-  ki = () => "Bờ Biển Ngà",
-  Hlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? ci() : r === "pt" ? _i() : r === "ch" ? si() : r === "de" ? ii() : r === "es" ? ai() : r === "fr" ? li() : r === "it" ? fi() : r === "jp" ? pi() : r === "pl" ? yi() : r === "ru" ? di() : r === "uk" ? hi() : ki()
-  },
-  gi = () => "Cook Islands",
-  mi = () => "Ilhas Cook",
-  bi = () => "库克群岛",
-  ji = () => "Cookinseln",
-  vi = () => "Islas Cook",
-  wi = () => "Îles Cook",
-  zi = () => "Isole Cook",
-  Si = () => "クック諸島",
-  Mi = () => "Wyspy Cooka",
-  Ci = () => "Острова Кука",
-  Bi = () => "Острови Кука",
-  Gi = () => "Quần đảo Cook",
-  Flr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? gi() : r === "pt" ? mi() : r === "ch" ? bi() : r === "de" ? ji() : r === "es" ? vi() : r === "fr" ? wi() : r === "it" ? zi() : r === "jp" ? Si() : r === "pl" ? Mi() : r === "ru" ? Ci() : r === "uk" ? Bi() : Gi()
-  },
-  Ai = () => "Chile",
-  Ti = () => "Chile",
-  Pi = () => "智利",
-  Ii = () => "Chile",
-  Ni = () => "Chile",
-  Li = () => "Chili",
-  qi = () => "Cile",
-  xi = () => "チリ",
-  Ri = () => "Chile",
-  Di = () => "Чили",
-  Ki = () => "Чилі",
-  Vi = () => "Chile",
-  Olr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Ai() : r === "pt" ? Ti() : r === "ch" ? Pi() : r === "de" ? Ii() : r === "es" ? Ni() : r === "fr" ? Li() : r === "it" ? qi() : r === "jp" ? xi() : r === "pl" ? Ri() : r === "ru" ? Di() : r === "uk" ? Ki() : Vi()
-  },
-  Ei = () => "Cameroon",
-  Hi = () => "Camarões",
-  Fi = () => "喀麦隆",
-  Oi = () => "Kamerun",
-  Ji = () => "Camerún",
-  Ui = () => "Cameroun",
-  Zi = () => "Camerun",
-  Wi = () => "カメルーン",
-  Xi = () => "Kamerun",
-  Qi = () => "Камерун",
-  Yi = () => "Камерун",
-  $i = () => "Cameroon",
-  Jlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Ei() : r === "pt" ? Hi() : r === "ch" ? Fi() : r === "de" ? Oi() : r === "es" ? Ji() : r === "fr" ? Ui() : r === "it" ? Zi() : r === "jp" ? Wi() : r === "pl" ? Xi() : r === "ru" ? Qi() : r === "uk" ? Yi() : $i()
-  },
-  ra = () => "China",
-  ta = () => "China",
-  na = () => "中国",
-  ea = () => "China",
-  ua = () => "China",
-  oa = () => "Chine",
-  ca = () => "Cina",
-  _a = () => "中国",
-  sa = () => "Chiny",
-  ia = () => "Китай",
-  aa = () => "Китай",
-  la = () => "Trung Quốc",
-  Ulr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? ra() : r === "pt" ? ta() : r === "ch" ? na() : r === "de" ? ea() : r === "es" ? ua() : r === "fr" ? oa() : r === "it" ? ca() : r === "jp" ? _a() : r === "pl" ? sa() : r === "ru" ? ia() : r === "uk" ? aa() : la()
-  },
-  fa = () => "Colombia",
-  pa = () => "Colômbia",
-  ya = () => "哥伦比亚",
-  da = () => "Kolumbien",
-  ha = () => "Colombia",
-  ka = () => "Colombie",
-  ga = () => "Colombia",
-  ma = () => "コロンビア",
-  ba = () => "Kolumbia",
-  ja = () => "Колумбия",
-  va = () => "Колумбія",
-  wa = () => "Colombia",
-  Zlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? fa() : r === "pt" ? pa() : r === "ch" ? ya() : r === "de" ? da() : r === "es" ? ha() : r === "fr" ? ka() : r === "it" ? ga() : r === "jp" ? ma() : r === "pl" ? ba() : r === "ru" ? ja() : r === "uk" ? va() : wa()
-  },
-  za = () => "Costa Rica",
-  Sa = () => "Costa Rica",
-  Ma = () => "哥斯达黎加",
-  Ca = () => "Costa Rica",
-  Ba = () => "Costa Rica",
-  Ga = () => "Costa Rica",
-  Aa = () => "Costa Rica",
-  Ta = () => "コスタリカ",
-  Pa = () => "Kostaryka",
-  Ia = () => "Коста-Рика",
-  Na = () => "Коста-Рика",
-  La = () => "Costa Rica",
-  Wlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? za() : r === "pt" ? Sa() : r === "ch" ? Ma() : r === "de" ? Ca() : r === "es" ? Ba() : r === "fr" ? Ga() : r === "it" ? Aa() : r === "jp" ? Ta() : r === "pl" ? Pa() : r === "ru" ? Ia() : r === "uk" ? Na() : La()
-  },
-  qa = () => "Cuba",
-  xa = () => "Cuba",
-  Ra = () => "古巴",
-  Da = () => "Kuba",
-  Ka = () => "Cuba",
-  Va = () => "Cuba",
-  Ea = () => "Cuba",
-  Ha = () => "キューバ",
-  Fa = () => "Kuba",
-  Oa = () => "Куба",
-  Ja = () => "Куба",
-  Ua = () => "Cuba",
-  Xlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? qa() : r === "pt" ? xa() : r === "ch" ? Ra() : r === "de" ? Da() : r === "es" ? Ka() : r === "fr" ? Va() : r === "it" ? Ea() : r === "jp" ? Ha() : r === "pl" ? Fa() : r === "ru" ? Oa() : r === "uk" ? Ja() : Ua()
-  },
-  Za = () => "Cabo Verde",
-  Wa = () => "Cabo Verde",
-  Xa = () => "佛得角",
-  Qa = () => "Cabo Verde",
-  Ya = () => "Cabo Verde",
-  $a = () => "Cabo Verde",
-  rl = () => "Capo Verde",
-  tl = () => "カーボベルデ",
-  nl = () => "Zielony Przylądek",
-  el = () => "Кабо-Верде",
-  ul = () => "Кабо-Верде",
-  ol = () => "Cabo Verde",
-  Qlr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Za() : r === "pt" ? Wa() : r === "ch" ? Xa() : r === "de" ? Qa() : r === "es" ? Ya() : r === "fr" ? $a() : r === "it" ? rl() : r === "jp" ? tl() : r === "pl" ? nl() : r === "ru" ? el() : r === "uk" ? ul() : ol()
-  },
-  cl = () => "Curaçao",
-  _l = () => "Curaçao",
-  sl = () => "库拉索",
-  il = () => "Curaçao",
-  al = () => "Curaçao",
-  ll = () => "Curaçao",
-  fl = () => "Curaçao",
-  pl = () => "キュラソー",
-  yl = () => "Curaçao",
-  dl = () => "Кюрасао",
-  hl = () => "Кюрасао",
-  kl = () => "Curaçao",
-  Ylr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? cl() : r === "pt" ? _l() : r === "ch" ? sl() : r === "de" ? il() : r === "es" ? al() : r === "fr" ? ll() : r === "it" ? fl() : r === "jp" ? pl() : r === "pl" ? yl() : r === "ru" ? dl() : r === "uk" ? hl() : kl()
-  },
-  gl = () => "Christmas Island",
-  ml = () => "Ilha do Natal",
-  bl = () => "圣诞岛",
-  jl = () => "Weihnachtsinsel",
-  vl = () => "Isla de Navidad",
-  wl = () => "Île Christmas",
-  zl = () => "Isola di Natale",
-  Sl = () => "クリスマス島",
-  Ml = () => "Wyspa Bożego Narodzenia",
-  Cl = () => "Остров Рождества",
-  Bl = () => "Острів Різдва",
-  Gl = () => "Đảo Giáng Sinh",
-  $lr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? gl() : r === "pt" ? ml() : r === "ch" ? bl() : r === "de" ? jl() : r === "es" ? vl() : r === "fr" ? wl() : r === "it" ? zl() : r === "jp" ? Sl() : r === "pl" ? Ml() : r === "ru" ? Cl() : r === "uk" ? Bl() : Gl()
-  },
-  Al = () => "Cyprus",
-  Tl = () => "Chipre",
-  Pl = () => "塞浦路斯",
-  Il = () => "Zypern",
-  Nl = () => "Chipre",
-  Ll = () => "Chypre",
-  ql = () => "Cipro",
-  xl = () => "キプロス",
-  Rl = () => "Cypr",
-  Dl = () => "Кипр",
-  Kl = () => "Кіпр",
-  Vl = () => "Síp",
-  rfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Al() : r === "pt" ? Tl() : r === "ch" ? Pl() : r === "de" ? Il() : r === "es" ? Nl() : r === "fr" ? Ll() : r === "it" ? ql() : r === "jp" ? xl() : r === "pl" ? Rl() : r === "ru" ? Dl() : r === "uk" ? Kl() : Vl()
-  },
-  El = () => "Czechia",
-  Hl = () => "Chéquia",
-  Fl = () => "捷克",
-  Ol = () => "Tschechien",
-  Jl = () => "Chequia",
-  Ul = () => "Tchéquie",
-  Zl = () => "Cechia",
-  Wl = () => "チェコ",
-  Xl = () => "Czechy",
-  Ql = () => "Чехия",
-  Yl = () => "Чехія",
-  $l = () => "Séc",
-  tfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? El() : r === "pt" ? Hl() : r === "ch" ? Fl() : r === "de" ? Ol() : r === "es" ? Jl() : r === "fr" ? Ul() : r === "it" ? Zl() : r === "jp" ? Wl() : r === "pl" ? Xl() : r === "ru" ? Ql() : r === "uk" ? Yl() : $l()
-  },
-  rf = () => "Germany",
-  tf = () => "Alemanha",
-  nf = () => "德国",
-  ef = () => "Deutschland",
-  uf = () => "Alemania",
-  of = () => "Allemagne",
-  cf = () => "Germania",
-  _f = () => "ドイツ",
-  sf = () => "Niemcy",
-  af = () => "Германия",
-  lf = () => "Німеччина",
-  ff = () => "Đức",
-  nfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? rf() : r === "pt" ? tf() : r === "ch" ? nf() : r === "de" ? ef() : r === "es" ? uf() : r === "fr" ? of() : r === "it" ? cf() : r === "jp" ? _f() : r === "pl" ? sf() : r === "ru" ? af() : r === "uk" ? lf() : ff()
-  },
-  pf = () => "Djibouti",
-  yf = () => "Djibouti",
-  df = () => "吉布提",
-  hf = () => "Dschibuti",
-  kf = () => "Yibuti",
-  gf = () => "Djibouti",
-  mf = () => "Gibuti",
-  bf = () => "ジブチ",
-  jf = () => "Dżibuti",
-  vf = () => "Джибути",
-  wf = () => "Джибуті",
-  zf = () => "Djibouti",
-  efr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pf() : r === "pt" ? yf() : r === "ch" ? df() : r === "de" ? hf() : r === "es" ? kf() : r === "fr" ? gf() : r === "it" ? mf() : r === "jp" ? bf() : r === "pl" ? jf() : r === "ru" ? vf() : r === "uk" ? wf() : zf()
-  },
-  Sf = () => "Denmark",
-  Mf = () => "Dinamarca",
-  Cf = () => "丹麦",
-  Bf = () => "Dänemark",
-  Gf = () => "Dinamarca",
-  Af = () => "Danemark",
-  Tf = () => "Danimarca",
-  Pf = () => "デンマーク",
-  If = () => "Dania",
-  Nf = () => "Дания",
-  Lf = () => "Данія",
-  qf = () => "Đan Mạch",
-  ufr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Sf() : r === "pt" ? Mf() : r === "ch" ? Cf() : r === "de" ? Bf() : r === "es" ? Gf() : r === "fr" ? Af() : r === "it" ? Tf() : r === "jp" ? Pf() : r === "pl" ? If() : r === "ru" ? Nf() : r === "uk" ? Lf() : qf()
-  },
-  xf = () => "Dominica",
-  Rf = () => "Dominica",
-  Df = () => "多米尼克",
-  Kf = () => "Dominica",
-  Vf = () => "Dominica",
-  Ef = () => "La Dominique",
-  Hf = () => "Dominica",
-  Ff = () => "ドミニカ",
-  Of = () => "Dominika",
-  Jf = () => "Доминика",
-  Uf = () => "Домініка",
-  Zf = () => "Dominica",
-  ofr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xf() : r === "pt" ? Rf() : r === "ch" ? Df() : r === "de" ? Kf() : r === "es" ? Vf() : r === "fr" ? Ef() : r === "it" ? Hf() : r === "jp" ? Ff() : r === "pl" ? Of() : r === "ru" ? Jf() : r === "uk" ? Uf() : Zf()
-  },
-  Wf = () => "Dominican Republic",
-  Xf = () => "República Dominicana",
-  Qf = () => "多米尼加共和国",
-  Yf = () => "Dominikanische Republik",
-  $f = () => "República Dominicana",
-  rp = () => "République dominicaine",
-  tp = () => "Repubblica Dominicana",
-  np = () => "ドミニカ共和国",
-  ep = () => "Republika Dominikańska",
-  up = () => "Доминиканская Республика",
-  op = () => "Домініканська Республіка",
-  cp = () => "Cộng hòa Đô-mi-ni-ca",
-  cfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Wf() : r === "pt" ? Xf() : r === "ch" ? Qf() : r === "de" ? Yf() : r === "es" ? $f() : r === "fr" ? rp() : r === "it" ? tp() : r === "jp" ? np() : r === "pl" ? ep() : r === "ru" ? up() : r === "uk" ? op() : cp()
-  },
-  _p = () => "Algeria",
-  sp = () => "Argélia",
-  ip = () => "阿尔及利亚",
-  ap = () => "Algerien",
-  lp = () => "Argelia",
-  fp = () => "Algérie",
-  pp = () => "Algeria",
-  yp = () => "アルジェリア",
-  dp = () => "Algieria",
-  hp = () => "Алжир",
-  kp = () => "Алжир",
-  gp = () => "Algeria",
-  _fr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _p() : r === "pt" ? sp() : r === "ch" ? ip() : r === "de" ? ap() : r === "es" ? lp() : r === "fr" ? fp() : r === "it" ? pp() : r === "jp" ? yp() : r === "pl" ? dp() : r === "ru" ? hp() : r === "uk" ? kp() : gp()
-  },
-  mp = () => "Ecuador",
-  bp = () => "Equador",
-  jp = () => "厄瓜多尔",
-  vp = () => "Ecuador",
-  wp = () => "Ecuador",
-  zp = () => "Équateur",
-  Sp = () => "Ecuador",
-  Mp = () => "エクアドル",
-  Cp = () => "Ekwador",
-  Bp = () => "Эквадор",
-  Gp = () => "Еквадор",
-  Ap = () => "Ecuador",
-  sfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mp() : r === "pt" ? bp() : r === "ch" ? jp() : r === "de" ? vp() : r === "es" ? wp() : r === "fr" ? zp() : r === "it" ? Sp() : r === "jp" ? Mp() : r === "pl" ? Cp() : r === "ru" ? Bp() : r === "uk" ? Gp() : Ap()
-  },
-  Tp = () => "Estonia",
-  Pp = () => "Estônia",
-  Ip = () => "爱沙尼亚",
-  Np = () => "Estland",
-  Lp = () => "Estonia",
-  qp = () => "Estonie",
-  xp = () => "Estonia",
-  Rp = () => "エストニア",
-  Dp = () => "Estonia",
-  Kp = () => "Эстония",
-  Vp = () => "Естонія",
-  Ep = () => "Estonia",
-  ifr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Tp() : r === "pt" ? Pp() : r === "ch" ? Ip() : r === "de" ? Np() : r === "es" ? Lp() : r === "fr" ? qp() : r === "it" ? xp() : r === "jp" ? Rp() : r === "pl" ? Dp() : r === "ru" ? Kp() : r === "uk" ? Vp() : Ep()
-  },
-  Hp = () => "Egypt",
-  Fp = () => "Egito",
-  Op = () => "埃及",
-  Jp = () => "Ägypten",
-  Up = () => "Egipto",
-  Zp = () => "Égypte",
-  Wp = () => "Egitto",
-  Xp = () => "エジプト",
-  Qp = () => "Egipt",
-  Yp = () => "Египет",
-  $p = () => "Єгипет",
-  ry = () => "Ai Cập",
-  afr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Hp() : r === "pt" ? Fp() : r === "ch" ? Op() : r === "de" ? Jp() : r === "es" ? Up() : r === "fr" ? Zp() : r === "it" ? Wp() : r === "jp" ? Xp() : r === "pl" ? Qp() : r === "ru" ? Yp() : r === "uk" ? $p() : ry()
-  },
-  ty = () => "Western Sahara",
-  ny = () => "Saara Ocidental",
-  ey = () => "西撒哈拉",
-  uy = () => "Westsahara",
-  oy = () => "Sahara Occidental",
-  cy = () => "Sahara occidental",
-  _y = () => "Sahara Occidentale",
-  sy = () => "西サハラ",
-  iy = () => "Sahara Zachodnia",
-  ay = () => "Западная Сахара",
-  ly = () => "Західна Сахара",
-  fy = () => "Tây Sahara",
-  lfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? ty() : r === "pt" ? ny() : r === "ch" ? ey() : r === "de" ? uy() : r === "es" ? oy() : r === "fr" ? cy() : r === "it" ? _y() : r === "jp" ? sy() : r === "pl" ? iy() : r === "ru" ? ay() : r === "uk" ? ly() : fy()
-  },
-  py = () => "Eritrea",
-  yy = () => "Eritreia",
-  dy = () => "厄立特里亚",
-  hy = () => "Eritrea",
-  ky = () => "Eritrea",
-  gy = () => "Érythrée",
-  my = () => "Eritrea",
-  by = () => "エリトリア",
-  jy = () => "Erytrea",
-  vy = () => "Эритрея",
-  wy = () => "Еритрея",
-  zy = () => "Eritrea",
-  ffr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? py() : r === "pt" ? yy() : r === "ch" ? dy() : r === "de" ? hy() : r === "es" ? ky() : r === "fr" ? gy() : r === "it" ? my() : r === "jp" ? by() : r === "pl" ? jy() : r === "ru" ? vy() : r === "uk" ? wy() : zy()
-  },
-  Sy = () => "Spain",
-  My = () => "Espanha",
-  Cy = () => "西班牙",
-  By = () => "Spanien",
-  Gy = () => "España",
-  Ay = () => "Espagne",
-  Ty = () => "Spagna",
-  Py = () => "スペイン",
-  Iy = () => "Hiszpania",
-  Ny = () => "Испания",
-  Ly = () => "Іспанія",
-  qy = () => "Tây Ban Nha",
-  pfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Sy() : r === "pt" ? My() : r === "ch" ? Cy() : r === "de" ? By() : r === "es" ? Gy() : r === "fr" ? Ay() : r === "it" ? Ty() : r === "jp" ? Py() : r === "pl" ? Iy() : r === "ru" ? Ny() : r === "uk" ? Ly() : qy()
-  },
-  xy = () => "Ethiopia",
-  Ry = () => "Etiópia",
-  Dy = () => "埃塞俄比亚",
-  Ky = () => "Äthiopien",
-  Vy = () => "Etiopía",
-  Ey = () => "Éthiopie",
-  Hy = () => "Etiopia",
-  Fy = () => "エチオピア",
-  Oy = () => "Etiopia",
-  Jy = () => "Эфиопия",
-  Uy = () => "Ефіопія",
-  Zy = () => "Ethiopia",
-  yfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xy() : r === "pt" ? Ry() : r === "ch" ? Dy() : r === "de" ? Ky() : r === "es" ? Vy() : r === "fr" ? Ey() : r === "it" ? Hy() : r === "jp" ? Fy() : r === "pl" ? Oy() : r === "ru" ? Jy() : r === "uk" ? Uy() : Zy()
-  },
-  Wy = () => "Finland",
-  Xy = () => "Finlândia",
-  Qy = () => "芬兰",
-  Yy = () => "Finnland",
-  $y = () => "Finlandia",
-  rd = () => "Finlande",
-  td = () => "Finlandia",
-  nd = () => "フィンランド",
-  ed = () => "Finlandia",
-  ud = () => "Финляндия",
-  od = () => "Фінляндія",
-  cd = () => "Phần Lan",
-  dfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Wy() : r === "pt" ? Xy() : r === "ch" ? Qy() : r === "de" ? Yy() : r === "es" ? $y() : r === "fr" ? rd() : r === "it" ? td() : r === "jp" ? nd() : r === "pl" ? ed() : r === "ru" ? ud() : r === "uk" ? od() : cd()
-  },
-  _d = () => "Fiji",
-  sd = () => "Fiji",
-  id = () => "斐济",
-  ad = () => "Fidschi",
-  ld = () => "Fiyi",
-  fd = () => "Fidji",
-  pd = () => "Figi",
-  yd = () => "フィジー",
-  dd = () => "Fidżi",
-  hd = () => "Фиджи",
-  kd = () => "Фіджі",
-  gd = () => "Fiji",
-  hfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _d() : r === "pt" ? sd() : r === "ch" ? id() : r === "de" ? ad() : r === "es" ? ld() : r === "fr" ? fd() : r === "it" ? pd() : r === "jp" ? yd() : r === "pl" ? dd() : r === "ru" ? hd() : r === "uk" ? kd() : gd()
-  },
-  md = () => "Falkland Islands (Malvinas)",
-  bd = () => "Ilhas Falkland (Malvinas)",
-  jd = () => "福克兰群岛 (马尔维纳斯群岛)",
-  vd = () => "Falklandinseln (Malwinen)",
-  wd = () => "Islas Malvinas",
-  zd = () => "Îles Falkland (Malouines)",
-  Sd = () => "Isole Falkland (Malvine)",
-  Md = () => "フォークランド諸島 (マルビナス諸島)",
-  Cd = () => "Falklandy (Malwiny)",
-  Bd = () => "Фолклендские (Мальвинские) острова",
-  Gd = () => "Фолклендські острови (Мальвінські острови)",
-  Ad = () => "Quần đảo Falkland (Malvinas)",
-  kfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? md() : r === "pt" ? bd() : r === "ch" ? jd() : r === "de" ? vd() : r === "es" ? wd() : r === "fr" ? zd() : r === "it" ? Sd() : r === "jp" ? Md() : r === "pl" ? Cd() : r === "ru" ? Bd() : r === "uk" ? Gd() : Ad()
-  },
-  Td = () => "Micronesia",
-  Pd = () => "Micronésia",
-  Id = () => "密克罗尼西亚",
-  Nd = () => "Mikronesien",
-  Ld = () => "Micronesia",
-  qd = () => "Micronésie",
-  xd = () => "Micronesia",
-  Rd = () => "ミクロネシア",
-  Dd = () => "Mikronezja",
-  Kd = () => "Микронезия",
-  Vd = () => "Мікронезія",
-  Ed = () => "Liên bang Micronesia",
-  gfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Td() : r === "pt" ? Pd() : r === "ch" ? Id() : r === "de" ? Nd() : r === "es" ? Ld() : r === "fr" ? qd() : r === "it" ? xd() : r === "jp" ? Rd() : r === "pl" ? Dd() : r === "ru" ? Kd() : r === "uk" ? Vd() : Ed()
-  },
-  Hd = () => "Faroe Islands",
-  Fd = () => "Ilhas Faroé",
-  Od = () => "法罗群岛",
-  Jd = () => "Färöer",
-  Ud = () => "Islas Feroe",
-  Zd = () => "Îles Féroé",
-  Wd = () => "Isole Fær Øer",
-  Xd = () => "フェロー諸島",
-  Qd = () => "Wyspy Owcze",
-  Yd = () => "Фарерские острова",
-  $d = () => "Фарерські острови",
-  rh = () => "Quần đảo Faroe",
-  mfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Hd() : r === "pt" ? Fd() : r === "ch" ? Od() : r === "de" ? Jd() : r === "es" ? Ud() : r === "fr" ? Zd() : r === "it" ? Wd() : r === "jp" ? Xd() : r === "pl" ? Qd() : r === "ru" ? Yd() : r === "uk" ? $d() : rh()
-  },
-  th = () => "France",
-  nh = () => "França",
-  eh = () => "法国",
-  uh = () => "Frankreich",
-  oh = () => "Francia",
-  ch = () => "France",
-  _h = () => "Francia",
-  sh = () => "フランス",
-  ih = () => "Francja",
-  ah = () => "Франция",
-  lh = () => "Франція",
-  fh = () => "Pháp",
-  bfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? th() : r === "pt" ? nh() : r === "ch" ? eh() : r === "de" ? uh() : r === "es" ? oh() : r === "fr" ? ch() : r === "it" ? _h() : r === "jp" ? sh() : r === "pl" ? ih() : r === "ru" ? ah() : r === "uk" ? lh() : fh()
-  },
-  ph = () => "Gabon",
-  yh = () => "Gabão",
-  dh = () => "加蓬",
-  hh = () => "Gabun",
-  kh = () => "Gabón",
-  gh = () => "Gabon",
-  mh = () => "Gabon",
-  bh = () => "ガボン",
-  jh = () => "Gabon",
-  vh = () => "Габон",
-  wh = () => "Габон",
-  zh = () => "Gabon",
-  jfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? ph() : r === "pt" ? yh() : r === "ch" ? dh() : r === "de" ? hh() : r === "es" ? kh() : r === "fr" ? gh() : r === "it" ? mh() : r === "jp" ? bh() : r === "pl" ? jh() : r === "ru" ? vh() : r === "uk" ? wh() : zh()
-  },
-  Sh = () => "United Kingdom",
-  Mh = () => "Reino Unido",
-  Ch = () => "英国",
-  Bh = () => "Vereinigtes Königreich",
-  Gh = () => "Reino Unido",
-  Ah = () => "Royaume-Uni",
-  Th = () => "Regno Unito",
-  Ph = () => "イギリス",
-  Ih = () => "Zjednoczone Królestwo",
-  Nh = () => "Великобритания",
-  Lh = () => "Об'єднане Королівство",
-  qh = () => "Vương quốc Anh",
-  vfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Sh() : r === "pt" ? Mh() : r === "ch" ? Ch() : r === "de" ? Bh() : r === "es" ? Gh() : r === "fr" ? Ah() : r === "it" ? Th() : r === "jp" ? Ph() : r === "pl" ? Ih() : r === "ru" ? Nh() : r === "uk" ? Lh() : qh()
-  },
-  xh = () => "Grenada",
-  Rh = () => "Granada",
-  Dh = () => "格林纳达",
-  Kh = () => "Grenada",
-  Vh = () => "Granada",
-  Eh = () => "Grenade",
-  Hh = () => "Grenada",
-  Fh = () => "グレナダ",
-  Oh = () => "Grenada",
-  Jh = () => "Гренада",
-  Uh = () => "Гренада",
-  Zh = () => "Grenada",
-  wfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xh() : r === "pt" ? Rh() : r === "ch" ? Dh() : r === "de" ? Kh() : r === "es" ? Vh() : r === "fr" ? Eh() : r === "it" ? Hh() : r === "jp" ? Fh() : r === "pl" ? Oh() : r === "ru" ? Jh() : r === "uk" ? Uh() : Zh()
-  },
-  Wh = () => "Georgia",
-  Xh = () => "Geórgia",
-  Qh = () => "格鲁吉亚",
-  Yh = () => "Georgien",
-  $h = () => "Georgia",
-  rk = () => "Géorgie",
-  tk = () => "Georgia",
-  nk = () => "ジョージア",
-  ek = () => "Gruzja",
-  uk = () => "Грузия",
-  ok = () => "Грузія",
-  ck = () => "Gruzia",
-  zfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Wh() : r === "pt" ? Xh() : r === "ch" ? Qh() : r === "de" ? Yh() : r === "es" ? $h() : r === "fr" ? rk() : r === "it" ? tk() : r === "jp" ? nk() : r === "pl" ? ek() : r === "ru" ? uk() : r === "uk" ? ok() : ck()
-  },
-  _k = () => "French Guiana",
-  sk = () => "Guiana Francesa",
-  ik = () => "法属圭亚那",
-  ak = () => "Französisch-Guayana",
-  lk = () => "Guayana Francesa",
-  fk = () => "Guyane française",
-  pk = () => "Guyana francese",
-  yk = () => "フランス領ギアナ",
-  dk = () => "Gujana Francuska",
-  hk = () => "Французская Гвиана",
-  kk = () => "Французька Гвіана",
-  gk = () => "Guyane thuộc Pháp",
-  Sfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _k() : r === "pt" ? sk() : r === "ch" ? ik() : r === "de" ? ak() : r === "es" ? lk() : r === "fr" ? fk() : r === "it" ? pk() : r === "jp" ? yk() : r === "pl" ? dk() : r === "ru" ? hk() : r === "uk" ? kk() : gk()
-  },
-  mk = () => "Guernsey",
-  bk = () => "Guernsey",
-  jk = () => "根西岛",
-  vk = () => "Guernsey",
-  wk = () => "Guernsey",
-  zk = () => "Guernesey",
-  Sk = () => "Guernsey",
-  Mk = () => "ガーンジー",
-  Ck = () => "Guernsey",
-  Bk = () => "Гернси",
-  Gk = () => "Гернсі",
-  Ak = () => "Guernsey",
-  Mfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mk() : r === "pt" ? bk() : r === "ch" ? jk() : r === "de" ? vk() : r === "es" ? wk() : r === "fr" ? zk() : r === "it" ? Sk() : r === "jp" ? Mk() : r === "pl" ? Ck() : r === "ru" ? Bk() : r === "uk" ? Gk() : Ak()
-  },
-  Tk = () => "Ghana",
-  Pk = () => "Gana",
-  Ik = () => "加纳",
-  Nk = () => "Ghana",
-  Lk = () => "Ghana",
-  qk = () => "Ghana",
-  xk = () => "Ghana",
-  Rk = () => "ガーナ",
-  Dk = () => "Ghana",
-  Kk = () => "Гана",
-  Vk = () => "Гана",
-  Ek = () => "Ghana",
-  Cfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Tk() : r === "pt" ? Pk() : r === "ch" ? Ik() : r === "de" ? Nk() : r === "es" ? Lk() : r === "fr" ? qk() : r === "it" ? xk() : r === "jp" ? Rk() : r === "pl" ? Dk() : r === "ru" ? Kk() : r === "uk" ? Vk() : Ek()
-  },
-  Hk = () => "Gibraltar",
-  Fk = () => "Gibraltar",
-  Ok = () => "直布罗陀",
-  Jk = () => "Gibraltar",
-  Uk = () => "Gibraltar",
-  Zk = () => "Gibraltar",
-  Wk = () => "Gibilterra",
-  Xk = () => "ジブラルタル",
-  Qk = () => "Gibraltar",
-  Yk = () => "Гибралтар",
-  $k = () => "Гібралтар",
-  rg = () => "Gibraltar",
-  Bfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Hk() : r === "pt" ? Fk() : r === "ch" ? Ok() : r === "de" ? Jk() : r === "es" ? Uk() : r === "fr" ? Zk() : r === "it" ? Wk() : r === "jp" ? Xk() : r === "pl" ? Qk() : r === "ru" ? Yk() : r === "uk" ? $k() : rg()
-  },
-  tg = () => "Greenland",
-  ng = () => "Groenlândia",
-  eg = () => "格陵兰",
-  ug = () => "Grönland",
-  og = () => "Groenlandia",
-  cg = () => "Groenland",
-  _g = () => "Groenlandia",
-  sg = () => "グリーンランド",
-  ig = () => "Grenlandia",
-  ag = () => "Гренландия",
-  lg = () => "Гренландія",
-  fg = () => "Greenland",
-  Gfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? tg() : r === "pt" ? ng() : r === "ch" ? eg() : r === "de" ? ug() : r === "es" ? og() : r === "fr" ? cg() : r === "it" ? _g() : r === "jp" ? sg() : r === "pl" ? ig() : r === "ru" ? ag() : r === "uk" ? lg() : fg()
-  },
-  pg = () => "Gambia",
-  yg = () => "Gâmbia",
-  dg = () => "冈比亚",
-  hg = () => "Gambia",
-  kg = () => "Gambia",
-  gg = () => "Gambie",
-  mg = () => "Gambia",
-  bg = () => "ガンビア",
-  jg = () => "Gambia",
-  vg = () => "Гамбия",
-  wg = () => "Гамбія",
-  zg = () => "Gambia",
-  Afr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pg() : r === "pt" ? yg() : r === "ch" ? dg() : r === "de" ? hg() : r === "es" ? kg() : r === "fr" ? gg() : r === "it" ? mg() : r === "jp" ? bg() : r === "pl" ? jg() : r === "ru" ? vg() : r === "uk" ? wg() : zg()
-  },
-  Sg = () => "Guinea",
-  Mg = () => "Guiné",
-  Cg = () => "几内亚",
-  Bg = () => "Guinea",
-  Gg = () => "Guinea",
-  Ag = () => "Guinée",
-  Tg = () => "Guinea",
-  Pg = () => "ギニア",
-  Ig = () => "Gwinea",
-  Ng = () => "Гвинея",
-  Lg = () => "Гвінея",
-  qg = () => "Ghi-nê",
-  Tfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Sg() : r === "pt" ? Mg() : r === "ch" ? Cg() : r === "de" ? Bg() : r === "es" ? Gg() : r === "fr" ? Ag() : r === "it" ? Tg() : r === "jp" ? Pg() : r === "pl" ? Ig() : r === "ru" ? Ng() : r === "uk" ? Lg() : qg()
-  },
-  xg = () => "Guadeloupe",
-  Rg = () => "Guadalupe",
-  Dg = () => "瓜德罗普",
-  Kg = () => "Guadeloupe",
-  Vg = () => "Guadalupe",
-  Eg = () => "Guadeloupe",
-  Hg = () => "Guadeloupe",
-  Fg = () => "グアドループ",
-  Og = () => "Gwadelupa",
-  Jg = () => "Гваделупа",
-  Ug = () => "Гваделупа",
-  Zg = () => "Guadeloupe",
-  Pfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xg() : r === "pt" ? Rg() : r === "ch" ? Dg() : r === "de" ? Kg() : r === "es" ? Vg() : r === "fr" ? Eg() : r === "it" ? Hg() : r === "jp" ? Fg() : r === "pl" ? Og() : r === "ru" ? Jg() : r === "uk" ? Ug() : Zg()
-  },
-  Wg = () => "Equatorial Guinea",
-  Xg = () => "Guiné Equatorial",
-  Qg = () => "赤道几内亚",
-  Yg = () => "Äquatorialguinea",
-  $g = () => "Guinea Ecuatorial",
-  rm = () => "Guinée équatoriale",
-  tm = () => "Guinea Equatoriale",
-  nm = () => "赤道ギニア",
-  em = () => "Gwinea Równikowa",
-  um = () => "Экваториальная Гвинея",
-  om = () => "Екваторіальна Гвінея",
-  cm = () => "Ghi-nê Xích Đạo",
-  Ifr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Wg() : r === "pt" ? Xg() : r === "ch" ? Qg() : r === "de" ? Yg() : r === "es" ? $g() : r === "fr" ? rm() : r === "it" ? tm() : r === "jp" ? nm() : r === "pl" ? em() : r === "ru" ? um() : r === "uk" ? om() : cm()
-  },
-  _m = () => "Greece",
-  sm = () => "Grécia",
-  im = () => "希腊",
-  am = () => "Griechenland",
-  lm = () => "Grecia",
-  fm = () => "Grèce",
-  pm = () => "Grecia",
-  ym = () => "ギリシャ",
-  dm = () => "Grecja",
-  hm = () => "Греция",
-  km = () => "Греція",
-  gm = () => "Hy Lạp",
-  Nfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _m() : r === "pt" ? sm() : r === "ch" ? im() : r === "de" ? am() : r === "es" ? lm() : r === "fr" ? fm() : r === "it" ? pm() : r === "jp" ? ym() : r === "pl" ? dm() : r === "ru" ? hm() : r === "uk" ? km() : gm()
-  },
-  mm = () => "South Georgia and the South Sandwich Islands",
-  bm = () => "Ilhas Geórgia do Sul e Sandwich do Sul",
-  jm = () => "南乔治亚和南桑威奇群岛",
-  vm = () => "Südgeorgien und die Südlichen Sandwichinseln",
-  wm = () => "Islas Georgias del Sur y Sandwich del Sur",
-  zm = () => "Géorgie du Sud et îles Sandwich du Sud",
-  Sm = () => "Georgia del Sud e Isole Sandwich del Sud",
-  Mm = () => "サウスジョージア・サウスサンドウィッチ諸島",
-  Cm = () => "Georgia Południowa i Sandwich Południowy",
-  Bm = () => "Южная Георгия и Южные Сандвичевы Острова",
-  Gm = () => "Південна Джорджія та Південні Сандвічеві острови",
-  Am = () => "Nam Georgia và Quần đảo Nam Sandwich",
-  Lfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mm() : r === "pt" ? bm() : r === "ch" ? jm() : r === "de" ? vm() : r === "es" ? wm() : r === "fr" ? zm() : r === "it" ? Sm() : r === "jp" ? Mm() : r === "pl" ? Cm() : r === "ru" ? Bm() : r === "uk" ? Gm() : Am()
-  },
-  Tm = () => "Guatemala",
-  Pm = () => "Guatemala",
-  Im = () => "危地马拉",
-  Nm = () => "Guatemala",
-  Lm = () => "Guatemala",
-  qm = () => "Guatemala",
-  xm = () => "Guatemala",
-  Rm = () => "グアテマラ",
-  Dm = () => "Gwatemala",
-  Km = () => "Гватемала",
-  Vm = () => "Гватемала",
-  Em = () => "Guatemala",
-  qfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Tm() : r === "pt" ? Pm() : r === "ch" ? Im() : r === "de" ? Nm() : r === "es" ? Lm() : r === "fr" ? qm() : r === "it" ? xm() : r === "jp" ? Rm() : r === "pl" ? Dm() : r === "ru" ? Km() : r === "uk" ? Vm() : Em()
-  },
-  Hm = () => "Guam",
-  Fm = () => "Guam",
-  Om = () => "关岛",
-  Jm = () => "Guam",
-  Um = () => "Guam",
-  Zm = () => "Guam",
-  Wm = () => "Guam",
-  Xm = () => "グアム",
-  Qm = () => "Guam",
-  Ym = () => "Гуам",
-  $m = () => "Гуам",
-  rb = () => "Guam",
-  xfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Hm() : r === "pt" ? Fm() : r === "ch" ? Om() : r === "de" ? Jm() : r === "es" ? Um() : r === "fr" ? Zm() : r === "it" ? Wm() : r === "jp" ? Xm() : r === "pl" ? Qm() : r === "ru" ? Ym() : r === "uk" ? $m() : rb()
-  },
-  tb = () => "Guinea-Bissau",
-  nb = () => "Guiné-Bissau",
-  eb = () => "几内亚比绍",
-  ub = () => "Guinea-Bissau",
-  ob = () => "Guinea-Bissau",
-  cb = () => "Guinée-Bissau",
-  _b = () => "Guinea-Bissau",
-  sb = () => "ギニアビサウ",
-  ib = () => "Gwinea Bissau",
-  ab = () => "Гвинея-Бисау",
-  lb = () => "Гвінея-Бісау",
-  fb = () => "Guinea-Bissau",
-  Rfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? tb() : r === "pt" ? nb() : r === "ch" ? eb() : r === "de" ? ub() : r === "es" ? ob() : r === "fr" ? cb() : r === "it" ? _b() : r === "jp" ? sb() : r === "pl" ? ib() : r === "ru" ? ab() : r === "uk" ? lb() : fb()
-  },
-  pb = () => "Guyana",
-  yb = () => "Guiana",
-  db = () => "圭亚那",
-  hb = () => "Guyana",
-  kb = () => "Guyana",
-  gb = () => "Guyana",
-  mb = () => "Guyana",
-  bb = () => "ガイアナ",
-  jb = () => "Gujana",
-  vb = () => "Гайана",
-  wb = () => "Гаяна",
-  zb = () => "Guyana",
-  Dfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pb() : r === "pt" ? yb() : r === "ch" ? db() : r === "de" ? hb() : r === "es" ? kb() : r === "fr" ? gb() : r === "it" ? mb() : r === "jp" ? bb() : r === "pl" ? jb() : r === "ru" ? vb() : r === "uk" ? wb() : zb()
-  },
-  Sb = () => "Hong Kong",
-  Mb = () => "Hong Kong",
-  Cb = () => "香港",
-  Bb = () => "Hongkong",
-  Gb = () => "Hong Kong",
-  Ab = () => "Hong Kong",
-  Tb = () => "Hong Kong",
-  Pb = () => "香港",
-  Ib = () => "Hongkong",
-  Nb = () => "Гонконг",
-  Lb = () => "Гонконг",
-  qb = () => "Hồng Kông",
-  Kfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Sb() : r === "pt" ? Mb() : r === "ch" ? Cb() : r === "de" ? Bb() : r === "es" ? Gb() : r === "fr" ? Ab() : r === "it" ? Tb() : r === "jp" ? Pb() : r === "pl" ? Ib() : r === "ru" ? Nb() : r === "uk" ? Lb() : qb()
-  },
-  xb = () => "Heard Island and McDonald Islands",
-  Rb = () => "Ilha Heard e Ilhas McDonald",
-  Db = () => "赫德岛和麦克唐纳群岛",
-  Kb = () => "Heard- und McDonald-Inseln",
-  Vb = () => "Islas Heard y McDonald",
-  Eb = () => "Île Heard et îles McDonald",
-  Hb = () => "Isole Heard e McDonald",
-  Fb = () => "ハード島およびマクドナルド諸島",
-  Ob = () => "Wyspy Heard i McDonalda",
-  Jb = () => "Остров Херд и острова Макдональд",
-  Ub = () => "Острів Херд та острови Макдональд",
-  Zb = () => "Đảo Heard và Quần đảo McDonald",
-  Vfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xb() : r === "pt" ? Rb() : r === "ch" ? Db() : r === "de" ? Kb() : r === "es" ? Vb() : r === "fr" ? Eb() : r === "it" ? Hb() : r === "jp" ? Fb() : r === "pl" ? Ob() : r === "ru" ? Jb() : r === "uk" ? Ub() : Zb()
-  },
-  Wb = () => "Honduras",
-  Xb = () => "Honduras",
-  Qb = () => "洪都拉斯",
-  Yb = () => "Honduras",
-  $b = () => "Honduras",
-  rj = () => "Honduras",
-  tj = () => "Honduras",
-  nj = () => "ホンジュラス",
-  ej = () => "Honduras",
-  uj = () => "Гондурас",
-  oj = () => "Гондурас",
-  cj = () => "Honduras",
-  Efr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Wb() : r === "pt" ? Xb() : r === "ch" ? Qb() : r === "de" ? Yb() : r === "es" ? $b() : r === "fr" ? rj() : r === "it" ? tj() : r === "jp" ? nj() : r === "pl" ? ej() : r === "ru" ? uj() : r === "uk" ? oj() : cj()
-  },
-  _j = () => "Croatia",
-  sj = () => "Croácia",
-  ij = () => "克罗地亚",
-  aj = () => "Kroatien",
-  lj = () => "Croacia",
-  fj = () => "Croatie",
-  pj = () => "Croazia",
-  yj = () => "クロアチア",
-  dj = () => "Chorwacja",
-  hj = () => "Хорватия",
-  kj = () => "Хорватія",
-  gj = () => "Croatia",
-  Hfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _j() : r === "pt" ? sj() : r === "ch" ? ij() : r === "de" ? aj() : r === "es" ? lj() : r === "fr" ? fj() : r === "it" ? pj() : r === "jp" ? yj() : r === "pl" ? dj() : r === "ru" ? hj() : r === "uk" ? kj() : gj()
-  },
-  mj = () => "Haiti",
-  bj = () => "Haiti",
-  jj = () => "海地",
-  vj = () => "Haiti",
-  wj = () => "Haití",
-  zj = () => "Haïti",
-  Sj = () => "Haiti",
-  Mj = () => "ハイチ",
-  Cj = () => "Haiti",
-  Bj = () => "Гаити",
-  Gj = () => "Гаїті",
-  Aj = () => "Haiti",
-  Ffr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mj() : r === "pt" ? bj() : r === "ch" ? jj() : r === "de" ? vj() : r === "es" ? wj() : r === "fr" ? zj() : r === "it" ? Sj() : r === "jp" ? Mj() : r === "pl" ? Cj() : r === "ru" ? Bj() : r === "uk" ? Gj() : Aj()
-  },
-  Tj = () => "Hungary",
-  Pj = () => "Hungria",
-  Ij = () => "匈牙利",
-  Nj = () => "Ungarn",
-  Lj = () => "Hungría",
-  qj = () => "Hongrie",
-  xj = () => "Ungheria",
-  Rj = () => "ハンガリー",
-  Dj = () => "Węgry",
-  Kj = () => "Венгрия",
-  Vj = () => "Угорщина",
-  Ej = () => "Hungary",
-  Ofr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Tj() : r === "pt" ? Pj() : r === "ch" ? Ij() : r === "de" ? Nj() : r === "es" ? Lj() : r === "fr" ? qj() : r === "it" ? xj() : r === "jp" ? Rj() : r === "pl" ? Dj() : r === "ru" ? Kj() : r === "uk" ? Vj() : Ej()
-  },
-  Hj = () => "Canary Islands",
-  Fj = () => "Ilhas Canárias",
-  Oj = () => "加那利群岛",
-  Jj = () => "Kanarische Inseln",
-  Uj = () => "Islas Canarias",
-  Zj = () => "Îles Canaries",
-  Wj = () => "Isole Canarie",
-  Xj = () => "カナリア諸島",
-  Qj = () => "Wyspy Kanaryjskie",
-  Yj = () => "Канарские острова",
-  $j = () => "Канарські острови",
-  rv = () => "Quần đảo Canary",
-  Jfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Hj() : r === "pt" ? Fj() : r === "ch" ? Oj() : r === "de" ? Jj() : r === "es" ? Uj() : r === "fr" ? Zj() : r === "it" ? Wj() : r === "jp" ? Xj() : r === "pl" ? Qj() : r === "ru" ? Yj() : r === "uk" ? $j() : rv()
-  },
-  tv = () => "Indonesia",
-  nv = () => "Indonésia",
-  ev = () => "印度尼西亚",
-  uv = () => "Indonesien",
-  ov = () => "Indonesia",
-  cv = () => "Indonésie",
-  _v = () => "Indonesia",
-  sv = () => "インドネシア",
-  iv = () => "Indonezja",
-  av = () => "Индонезия",
-  lv = () => "Індонезія",
-  fv = () => "Indonesia",
-  Ufr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? tv() : r === "pt" ? nv() : r === "ch" ? ev() : r === "de" ? uv() : r === "es" ? ov() : r === "fr" ? cv() : r === "it" ? _v() : r === "jp" ? sv() : r === "pl" ? iv() : r === "ru" ? av() : r === "uk" ? lv() : fv()
-  },
-  pv = () => "Ireland",
-  yv = () => "Irlanda",
-  dv = () => "爱尔兰",
-  hv = () => "Irland",
-  kv = () => "Irlanda",
-  gv = () => "Irlande",
-  mv = () => "Irlanda",
-  bv = () => "アイルランド",
-  jv = () => "Irlandia",
-  vv = () => "Ирландия",
-  wv = () => "Ірландія",
-  zv = () => "Ireland",
-  Zfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pv() : r === "pt" ? yv() : r === "ch" ? dv() : r === "de" ? hv() : r === "es" ? kv() : r === "fr" ? gv() : r === "it" ? mv() : r === "jp" ? bv() : r === "pl" ? jv() : r === "ru" ? vv() : r === "uk" ? wv() : zv()
-  },
-  Sv = () => "Israel",
-  Mv = () => "Israel",
-  Cv = () => "以色列",
-  Bv = () => "Israel",
-  Gv = () => "Israel",
-  Av = () => "Israël",
-  Tv = () => "Israele",
-  Pv = () => "イスラエル",
-  Iv = () => "Izrael",
-  Nv = () => "Израиль",
-  Lv = () => "Ізраїль",
-  qv = () => "Israel",
-  Wfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Sv() : r === "pt" ? Mv() : r === "ch" ? Cv() : r === "de" ? Bv() : r === "es" ? Gv() : r === "fr" ? Av() : r === "it" ? Tv() : r === "jp" ? Pv() : r === "pl" ? Iv() : r === "ru" ? Nv() : r === "uk" ? Lv() : qv()
-  },
-  xv = () => "Isle of Man",
-  Rv = () => "Ilha de Man",
-  Dv = () => "马恩岛",
-  Kv = () => "Isle of Man",
-  Vv = () => "Isla de Man",
-  Ev = () => "Île de Man",
-  Hv = () => "Isola di Man",
-  Fv = () => "マン島",
-  Ov = () => "Wyspa Man",
-  Jv = () => "Остров Мэн",
-  Uv = () => "Острів Мен",
-  Zv = () => "Đảo Man",
-  Xfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xv() : r === "pt" ? Rv() : r === "ch" ? Dv() : r === "de" ? Kv() : r === "es" ? Vv() : r === "fr" ? Ev() : r === "it" ? Hv() : r === "jp" ? Fv() : r === "pl" ? Ov() : r === "ru" ? Jv() : r === "uk" ? Uv() : Zv()
-  },
-  Wv = () => "India",
-  Xv = () => "Índia",
-  Qv = () => "印度",
-  Yv = () => "Indien",
-  $v = () => "India",
-  rw = () => "Inde",
-  tw = () => "India",
-  nw = () => "インド",
-  ew = () => "Indie",
-  uw = () => "Индия",
-  ow = () => "Індія",
-  cw = () => "Ấn Độ",
-  Qfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Wv() : r === "pt" ? Xv() : r === "ch" ? Qv() : r === "de" ? Yv() : r === "es" ? $v() : r === "fr" ? rw() : r === "it" ? tw() : r === "jp" ? nw() : r === "pl" ? ew() : r === "ru" ? uw() : r === "uk" ? ow() : cw()
-  },
-  _w = () => "British Indian Ocean Territory",
-  sw = () => "Território Britânico do Oceano Índico",
-  iw = () => "英属印度洋领地",
-  aw = () => "Britisches Territorium im Indischen Ozean",
-  lw = () => "Territorio Británico del Océano Índico",
-  fw = () => "Territoire britannique de l'océan Indien",
-  pw = () => "Territorio britannico dell'Oceano Indiano",
-  yw = () => "イギリス領インド洋地域",
-  dw = () => "Brytyjskie Terytorium Oceanu Indyjskiego",
-  hw = () => "Британская территория в Индийском океане",
-  kw = () => "Британська територія в Індійському океані",
-  gw = () => "Lãnh thổ Ấn Độ Dương thuộc Anh",
-  Yfr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _w() : r === "pt" ? sw() : r === "ch" ? iw() : r === "de" ? aw() : r === "es" ? lw() : r === "fr" ? fw() : r === "it" ? pw() : r === "jp" ? yw() : r === "pl" ? dw() : r === "ru" ? hw() : r === "uk" ? kw() : gw()
-  },
-  mw = () => "Iraq",
-  bw = () => "Iraque",
-  jw = () => "伊拉克",
-  vw = () => "Irak",
-  ww = () => "Irak",
-  zw = () => "Irak",
-  Sw = () => "Iraq",
-  Mw = () => "イラク",
-  Cw = () => "Irak",
-  Bw = () => "Ирак",
-  Gw = () => "Ірак",
-  Aw = () => "Iraq",
-  $fr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mw() : r === "pt" ? bw() : r === "ch" ? jw() : r === "de" ? vw() : r === "es" ? ww() : r === "fr" ? zw() : r === "it" ? Sw() : r === "jp" ? Mw() : r === "pl" ? Cw() : r === "ru" ? Bw() : r === "uk" ? Gw() : Aw()
-  },
-  Tw = () => "Iran",
-  Pw = () => "Irã",
-  Iw = () => "伊朗",
-  Nw = () => "Iran",
-  Lw = () => "Irán",
-  qw = () => "Iran",
-  xw = () => "Iran",
-  Rw = () => "イラン",
-  Dw = () => "Iran",
-  Kw = () => "Иран",
-  Vw = () => "Іран",
-  Ew = () => "Iran",
-  rpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Tw() : r === "pt" ? Pw() : r === "ch" ? Iw() : r === "de" ? Nw() : r === "es" ? Lw() : r === "fr" ? qw() : r === "it" ? xw() : r === "jp" ? Rw() : r === "pl" ? Dw() : r === "ru" ? Kw() : r === "uk" ? Vw() : Ew()
-  },
-  Hw = () => "Iceland",
-  Fw = () => "Islândia",
-  Ow = () => "冰岛",
-  Jw = () => "Island",
-  Uw = () => "Islandia",
-  Zw = () => "Islande",
-  Ww = () => "Islanda",
-  Xw = () => "アイスランド",
-  Qw = () => "Islandia",
-  Yw = () => "Исландия",
-  $w = () => "Ісландія",
-  rz = () => "Iceland",
-  tpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Hw() : r === "pt" ? Fw() : r === "ch" ? Ow() : r === "de" ? Jw() : r === "es" ? Uw() : r === "fr" ? Zw() : r === "it" ? Ww() : r === "jp" ? Xw() : r === "pl" ? Qw() : r === "ru" ? Yw() : r === "uk" ? $w() : rz()
-  },
-  tz = () => "Italy",
-  nz = () => "Itália",
-  ez = () => "意大利",
-  uz = () => "Italien",
-  oz = () => "Italia",
-  cz = () => "Italie",
-  _z = () => "Italia",
-  sz = () => "イタリア",
-  iz = () => "Włochy",
-  az = () => "Италия",
-  lz = () => "Італія",
-  fz = () => "Ý",
-  npr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? tz() : r === "pt" ? nz() : r === "ch" ? ez() : r === "de" ? uz() : r === "es" ? oz() : r === "fr" ? cz() : r === "it" ? _z() : r === "jp" ? sz() : r === "pl" ? iz() : r === "ru" ? az() : r === "uk" ? lz() : fz()
-  },
-  pz = () => "Jersey",
-  yz = () => "Camisa",
-  dz = () => "泽西",
-  hz = () => "Jersey",
-  kz = () => "Jersey",
-  gz = () => "Jersey",
-  mz = () => "Maglia",
-  bz = () => "ジャージ",
-  jz = () => "dżersej",
-  vz = () => "Джерси",
-  wz = () => "Джерсі",
-  zz = () => "Áo jersey",
-  epr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pz() : r === "pt" ? yz() : r === "ch" ? dz() : r === "de" ? hz() : r === "es" ? kz() : r === "fr" ? gz() : r === "it" ? mz() : r === "jp" ? bz() : r === "pl" ? jz() : r === "ru" ? vz() : r === "uk" ? wz() : zz()
-  },
-  Sz = () => "Jamaica",
-  Mz = () => "Jamaica",
-  Cz = () => "牙买加",
-  Bz = () => "Jamaika",
-  Gz = () => "Jamaica",
-  Az = () => "Jamaïque",
-  Tz = () => "Giamaica",
-  Pz = () => "ジャマイカ",
-  Iz = () => "Jamajka",
-  Nz = () => "Ямайка",
-  Lz = () => "Ямайка",
-  qz = () => "Jamaica",
-  upr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Sz() : r === "pt" ? Mz() : r === "ch" ? Cz() : r === "de" ? Bz() : r === "es" ? Gz() : r === "fr" ? Az() : r === "it" ? Tz() : r === "jp" ? Pz() : r === "pl" ? Iz() : r === "ru" ? Nz() : r === "uk" ? Lz() : qz()
-  },
-  xz = () => "Jordan",
-  Rz = () => "Jordânia",
-  Dz = () => "约旦",
-  Kz = () => "Jordanien",
-  Vz = () => "Jordania",
-  Ez = () => "Jordanie",
-  Hz = () => "Giordania",
-  Fz = () => "ヨルダン",
-  Oz = () => "Jordania",
-  Jz = () => "Иордания",
-  Uz = () => "Йорданія",
-  Zz = () => "Jordan",
-  opr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xz() : r === "pt" ? Rz() : r === "ch" ? Dz() : r === "de" ? Kz() : r === "es" ? Vz() : r === "fr" ? Ez() : r === "it" ? Hz() : r === "jp" ? Fz() : r === "pl" ? Oz() : r === "ru" ? Jz() : r === "uk" ? Uz() : Zz()
-  },
-  Wz = () => "Japan",
-  Xz = () => "Japão",
-  Qz = () => "日本",
-  Yz = () => "Japan",
-  $z = () => "Japón",
-  rS = () => "Japon",
-  tS = () => "Giappone",
-  nS = () => "日本",
-  eS = () => "Japonia",
-  uS = () => "Япония",
-  oS = () => "Японія",
-  cS = () => "Nhật Bản",
-  cpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Wz() : r === "pt" ? Xz() : r === "ch" ? Qz() : r === "de" ? Yz() : r === "es" ? $z() : r === "fr" ? rS() : r === "it" ? tS() : r === "jp" ? nS() : r === "pl" ? eS() : r === "ru" ? uS() : r === "uk" ? oS() : cS()
-  },
-  _S = () => "Kenya",
-  sS = () => "Quênia",
-  iS = () => "肯尼亚",
-  aS = () => "Kenia",
-  lS = () => "Kenia",
-  fS = () => "Kenya",
-  pS = () => "Kenya",
-  yS = () => "ケニア",
-  dS = () => "Kenia",
-  hS = () => "Кения",
-  kS = () => "Кенія",
-  gS = () => "Kenya",
-  _pr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _S() : r === "pt" ? sS() : r === "ch" ? iS() : r === "de" ? aS() : r === "es" ? lS() : r === "fr" ? fS() : r === "it" ? pS() : r === "jp" ? yS() : r === "pl" ? dS() : r === "ru" ? hS() : r === "uk" ? kS() : gS()
-  },
-  mS = () => "Kyrgyzstan",
-  bS = () => "Quirguistão",
-  jS = () => "吉尔吉斯斯坦",
-  vS = () => "Kirgisistan",
-  wS = () => "Kirguistán",
-  zS = () => "Kirghizistan",
-  SS = () => "Kirghizistan",
-  MS = () => "キルギス",
-  CS = () => "Kirgistan",
-  BS = () => "Кыргызстан",
-  GS = () => "Киргизстан",
-  AS = () => "Kyrgyzstan",
-  spr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mS() : r === "pt" ? bS() : r === "ch" ? jS() : r === "de" ? vS() : r === "es" ? wS() : r === "fr" ? zS() : r === "it" ? SS() : r === "jp" ? MS() : r === "pl" ? CS() : r === "ru" ? BS() : r === "uk" ? GS() : AS()
-  },
-  TS = () => "Cambodia",
-  PS = () => "Camboja",
-  IS = () => "柬埔寨",
-  NS = () => "Kambodscha",
-  LS = () => "Camboya",
-  qS = () => "Cambodge",
-  xS = () => "Cambogia",
-  RS = () => "カンボジア",
-  DS = () => "Kambodża",
-  KS = () => "Камбоджа",
-  VS = () => "Камбоджа",
-  ES = () => "Campuchia",
-  ipr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? TS() : r === "pt" ? PS() : r === "ch" ? IS() : r === "de" ? NS() : r === "es" ? LS() : r === "fr" ? qS() : r === "it" ? xS() : r === "jp" ? RS() : r === "pl" ? DS() : r === "ru" ? KS() : r === "uk" ? VS() : ES()
-  },
-  HS = () => "Kiribati",
-  FS = () => "Kiribati",
-  OS = () => "基里巴斯",
-  JS = () => "Kiribati",
-  US = () => "Kiribati",
-  ZS = () => "Kiribati",
-  WS = () => "Kiribati",
-  XS = () => "キリバス",
-  QS = () => "Kiribati",
-  YS = () => "Кирибати",
-  $S = () => "Кірибаті",
-  rM = () => "Kiribati",
-  apr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? HS() : r === "pt" ? FS() : r === "ch" ? OS() : r === "de" ? JS() : r === "es" ? US() : r === "fr" ? ZS() : r === "it" ? WS() : r === "jp" ? XS() : r === "pl" ? QS() : r === "ru" ? YS() : r === "uk" ? $S() : rM()
-  },
-  tM = () => "Comoros",
-  nM = () => "Comores",
-  eM = () => "科摩罗",
-  uM = () => "Komoren",
-  oM = () => "Comoras",
-  cM = () => "Comores",
-  _M = () => "Comore",
-  sM = () => "コモロ",
-  iM = () => "Komory",
-  aM = () => "Коморы",
-  lM = () => "Коморські Острови",
-  fM = () => "Comoros",
-  lpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? tM() : r === "pt" ? nM() : r === "ch" ? eM() : r === "de" ? uM() : r === "es" ? oM() : r === "fr" ? cM() : r === "it" ? _M() : r === "jp" ? sM() : r === "pl" ? iM() : r === "ru" ? aM() : r === "uk" ? lM() : fM()
-  },
-  pM = () => "Saint Kitts and Nevis",
-  yM = () => "São Cristóvão e Neves",
-  dM = () => "圣基茨和尼维斯",
-  hM = () => "St. Kitts und Nevis",
-  kM = () => "San Cristóbal y Nieves",
-  gM = () => "Saint-Christophe-et-Niévès",
-  mM = () => "Saint Kitts e Nevis",
-  bM = () => "セントクリストファー・ネイビス",
-  jM = () => "Saint Kitts i Nevis",
-  vM = () => "Сент-Китс и Невис",
-  wM = () => "Сент-Кітс і Невіс",
-  zM = () => "Saint Kitts và Nevis",
-  fpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pM() : r === "pt" ? yM() : r === "ch" ? dM() : r === "de" ? hM() : r === "es" ? kM() : r === "fr" ? gM() : r === "it" ? mM() : r === "jp" ? bM() : r === "pl" ? jM() : r === "ru" ? vM() : r === "uk" ? wM() : zM()
-  },
-  SM = () => "North Korea",
-  MM = () => "Coreia do Norte",
-  CM = () => "朝鲜",
-  BM = () => "Nordkorea",
-  GM = () => "Corea del Norte",
-  AM = () => "Corée du Nord",
-  TM = () => "Corea del Nord",
-  PM = () => "北朝鮮",
-  IM = () => "Korea Północna",
-  NM = () => "Северная Корея",
-  LM = () => "Північна Корея",
-  qM = () => "Triều Tiên",
-  ppr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? SM() : r === "pt" ? MM() : r === "ch" ? CM() : r === "de" ? BM() : r === "es" ? GM() : r === "fr" ? AM() : r === "it" ? TM() : r === "jp" ? PM() : r === "pl" ? IM() : r === "ru" ? NM() : r === "uk" ? LM() : qM()
-  },
-  xM = () => "South Korea",
-  RM = () => "Coreia do Sul",
-  DM = () => "韩国",
-  KM = () => "Südkorea",
-  VM = () => "Corea del Sur",
-  EM = () => "Corée du Sud",
-  HM = () => "Corea del Sud",
-  FM = () => "韓国",
-  OM = () => "Korea Południowa",
-  JM = () => "Южная Корея",
-  UM = () => "Південна Корея",
-  ZM = () => "Hàn Quốc",
-  ypr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xM() : r === "pt" ? RM() : r === "ch" ? DM() : r === "de" ? KM() : r === "es" ? VM() : r === "fr" ? EM() : r === "it" ? HM() : r === "jp" ? FM() : r === "pl" ? OM() : r === "ru" ? JM() : r === "uk" ? UM() : ZM()
-  },
-  WM = () => "Kuwait",
-  XM = () => "Kuwait",
-  QM = () => "科威特",
-  YM = () => "Kuwait",
-  $M = () => "Kuwait",
-  rC = () => "Koweït",
-  tC = () => "Kuwait",
-  nC = () => "クウェート",
-  eC = () => "Kuwejt",
-  uC = () => "Кувейт",
-  oC = () => "Кувейт",
-  cC = () => "Cô-oét",
-  dpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? WM() : r === "pt" ? XM() : r === "ch" ? QM() : r === "de" ? YM() : r === "es" ? $M() : r === "fr" ? rC() : r === "it" ? tC() : r === "jp" ? nC() : r === "pl" ? eC() : r === "ru" ? uC() : r === "uk" ? oC() : cC()
-  },
-  _C = () => "Cayman Islands",
-  sC = () => "Ilhas Cayman",
-  iC = () => "开曼群岛",
-  aC = () => "Kaimaninseln",
-  lC = () => "Islas Caimán",
-  fC = () => "Îles Caïmans",
-  pC = () => "Isole Cayman",
-  yC = () => "ケイマン諸島",
-  dC = () => "Kajmany",
-  hC = () => "Каймановы острова",
-  kC = () => "Кайманові острови",
-  gC = () => "Quần đảo Cayman",
-  hpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _C() : r === "pt" ? sC() : r === "ch" ? iC() : r === "de" ? aC() : r === "es" ? lC() : r === "fr" ? fC() : r === "it" ? pC() : r === "jp" ? yC() : r === "pl" ? dC() : r === "ru" ? hC() : r === "uk" ? kC() : gC()
-  },
-  mC = () => "Kazakhstan",
-  bC = () => "Cazaquistão",
-  jC = () => "哈萨克斯坦",
-  vC = () => "Kasachstan",
-  wC = () => "Kazajistán",
-  zC = () => "Kazakhstan",
-  SC = () => "Kazakistan",
-  MC = () => "カザフスタン",
-  CC = () => "Kazachstan",
-  BC = () => "Казахстан",
-  GC = () => "Казахстан",
-  AC = () => "Kazakhstan",
-  kpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mC() : r === "pt" ? bC() : r === "ch" ? jC() : r === "de" ? vC() : r === "es" ? wC() : r === "fr" ? zC() : r === "it" ? SC() : r === "jp" ? MC() : r === "pl" ? CC() : r === "ru" ? BC() : r === "uk" ? GC() : AC()
-  },
-  TC = () => "Laos",
-  PC = () => "Laos",
-  IC = () => "老挝",
-  NC = () => "Laos",
-  LC = () => "Laos",
-  qC = () => "Laos",
-  xC = () => "Laos",
-  RC = () => "ラオス",
-  DC = () => "Laos",
-  KC = () => "Лаос",
-  VC = () => "Лаос",
-  EC = () => "Lào",
-  gpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? TC() : r === "pt" ? PC() : r === "ch" ? IC() : r === "de" ? NC() : r === "es" ? LC() : r === "fr" ? qC() : r === "it" ? xC() : r === "jp" ? RC() : r === "pl" ? DC() : r === "ru" ? KC() : r === "uk" ? VC() : EC()
-  },
-  HC = () => "Lebanon",
-  FC = () => "Líbano",
-  OC = () => "黎巴嫩",
-  JC = () => "Libanon",
-  UC = () => "Líbano",
-  ZC = () => "Liban",
-  WC = () => "Libano",
-  XC = () => "レバノン",
-  QC = () => "Liban",
-  YC = () => "Ливан",
-  $C = () => "Ліван",
-  rB = () => "Li Băng",
-  mpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? HC() : r === "pt" ? FC() : r === "ch" ? OC() : r === "de" ? JC() : r === "es" ? UC() : r === "fr" ? ZC() : r === "it" ? WC() : r === "jp" ? XC() : r === "pl" ? QC() : r === "ru" ? YC() : r === "uk" ? $C() : rB()
-  },
-  tB = () => "Saint Lucia",
-  nB = () => "Santa Lúcia",
-  eB = () => "圣卢西亚",
-  uB = () => "St. Lucia",
-  oB = () => "Santa Lucía",
-  cB = () => "Sainte-Lucie",
-  _B = () => "Santa Lucia",
-  sB = () => "セントルシア",
-  iB = () => "Saint Lucia",
-  aB = () => "Сент-Люсия",
-  lB = () => "Сент-Люсія",
-  fB = () => "Saint Lucia",
-  bpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? tB() : r === "pt" ? nB() : r === "ch" ? eB() : r === "de" ? uB() : r === "es" ? oB() : r === "fr" ? cB() : r === "it" ? _B() : r === "jp" ? sB() : r === "pl" ? iB() : r === "ru" ? aB() : r === "uk" ? lB() : fB()
-  },
-  pB = () => "Liechtenstein",
-  yB = () => "Liechtenstein",
-  dB = () => "列支敦士登",
-  hB = () => "Liechtenstein",
-  kB = () => "Liechtenstein",
-  gB = () => "Liechtenstein",
-  mB = () => "Liechtenstein",
-  bB = () => "リヒテンシュタイン",
-  jB = () => "Liechtenstein",
-  vB = () => "Лихтенштейн",
-  wB = () => "Ліхтенштейн",
-  zB = () => "Liechtenstein",
-  jpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pB() : r === "pt" ? yB() : r === "ch" ? dB() : r === "de" ? hB() : r === "es" ? kB() : r === "fr" ? gB() : r === "it" ? mB() : r === "jp" ? bB() : r === "pl" ? jB() : r === "ru" ? vB() : r === "uk" ? wB() : zB()
-  },
-  SB = () => "Sri Lanka",
-  MB = () => "Sri Lanka",
-  CB = () => "斯里兰卡",
-  BB = () => "Sri Lanka",
-  GB = () => "Sri Lanka",
-  AB = () => "Sri Lanka",
-  TB = () => "Sri Lanka",
-  PB = () => "スリランカ",
-  IB = () => "Sri Lanka",
-  NB = () => "Шри-Ланка",
-  LB = () => "Шрі-Ланка",
-  qB = () => "Sri Lanka",
-  vpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? SB() : r === "pt" ? MB() : r === "ch" ? CB() : r === "de" ? BB() : r === "es" ? GB() : r === "fr" ? AB() : r === "it" ? TB() : r === "jp" ? PB() : r === "pl" ? IB() : r === "ru" ? NB() : r === "uk" ? LB() : qB()
-  },
-  xB = () => "Liberia",
-  RB = () => "Libéria",
-  DB = () => "利比里亚",
-  KB = () => "Liberia",
-  VB = () => "Liberia",
-  EB = () => "Libéria",
-  HB = () => "Liberia",
-  FB = () => "リベリア",
-  OB = () => "Liberia",
-  JB = () => "Либерия",
-  UB = () => "Ліберія",
-  ZB = () => "Liberia",
-  wpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xB() : r === "pt" ? RB() : r === "ch" ? DB() : r === "de" ? KB() : r === "es" ? VB() : r === "fr" ? EB() : r === "it" ? HB() : r === "jp" ? FB() : r === "pl" ? OB() : r === "ru" ? JB() : r === "uk" ? UB() : ZB()
-  },
-  WB = () => "Lesotho",
-  XB = () => "Lesotho",
-  QB = () => "莱索托",
-  YB = () => "Lesotho",
-  $B = () => "Lesoto",
-  rG = () => "Lesotho",
-  tG = () => "Lesotho",
-  nG = () => "レソト",
-  eG = () => "Lesotho",
-  uG = () => "Лесото",
-  oG = () => "Лесото",
-  cG = () => "Lesotho",
-  zpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? WB() : r === "pt" ? XB() : r === "ch" ? QB() : r === "de" ? YB() : r === "es" ? $B() : r === "fr" ? rG() : r === "it" ? tG() : r === "jp" ? nG() : r === "pl" ? eG() : r === "ru" ? uG() : r === "uk" ? oG() : cG()
-  },
-  _G = () => "Lithuania",
-  sG = () => "Lituânia",
-  iG = () => "立陶宛",
-  aG = () => "Litauen",
-  lG = () => "Lituania",
-  fG = () => "Lituanie",
-  pG = () => "Lituania",
-  yG = () => "リトアニア",
-  dG = () => "Litwa",
-  hG = () => "Литва",
-  kG = () => "Литва",
-  gG = () => "Litva",
-  Spr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _G() : r === "pt" ? sG() : r === "ch" ? iG() : r === "de" ? aG() : r === "es" ? lG() : r === "fr" ? fG() : r === "it" ? pG() : r === "jp" ? yG() : r === "pl" ? dG() : r === "ru" ? hG() : r === "uk" ? kG() : gG()
-  },
-  mG = () => "Luxembourg",
-  bG = () => "Luxemburgo",
-  jG = () => "卢森堡",
-  vG = () => "Luxemburg",
-  wG = () => "Luxemburgo",
-  zG = () => "Luxembourg",
-  SG = () => "Lussemburgo",
-  MG = () => "ルクセンブルク",
-  CG = () => "Luksemburg",
-  BG = () => "Люксембург",
-  GG = () => "Люксембург",
-  AG = () => "Luxembourg",
-  Mpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mG() : r === "pt" ? bG() : r === "ch" ? jG() : r === "de" ? vG() : r === "es" ? wG() : r === "fr" ? zG() : r === "it" ? SG() : r === "jp" ? MG() : r === "pl" ? CG() : r === "ru" ? BG() : r === "uk" ? GG() : AG()
-  },
-  TG = () => "Latvia",
-  PG = () => "Letônia",
-  IG = () => "拉脱维亚",
-  NG = () => "Lettland",
-  LG = () => "Letonia",
-  qG = () => "Lettonie",
-  xG = () => "Lettonia",
-  RG = () => "ラトビア",
-  DG = () => "Łotwa",
-  KG = () => "Латвия",
-  VG = () => "Латвія",
-  EG = () => "Latvia",
-  Cpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? TG() : r === "pt" ? PG() : r === "ch" ? IG() : r === "de" ? NG() : r === "es" ? LG() : r === "fr" ? qG() : r === "it" ? xG() : r === "jp" ? RG() : r === "pl" ? DG() : r === "ru" ? KG() : r === "uk" ? VG() : EG()
-  },
-  HG = () => "Libya",
-  FG = () => "Líbia",
-  OG = () => "利比亚",
-  JG = () => "Libyen",
-  UG = () => "Libia",
-  ZG = () => "Libye",
-  WG = () => "Libia",
-  XG = () => "リビア",
-  QG = () => "Libia",
-  YG = () => "Ливия",
-  $G = () => "Лівія",
-  rA = () => "Libya",
-  Bpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? HG() : r === "pt" ? FG() : r === "ch" ? OG() : r === "de" ? JG() : r === "es" ? UG() : r === "fr" ? ZG() : r === "it" ? WG() : r === "jp" ? XG() : r === "pl" ? QG() : r === "ru" ? YG() : r === "uk" ? $G() : rA()
-  },
-  tA = () => "Morocco",
-  nA = () => "Marrocos",
-  eA = () => "摩洛哥",
-  uA = () => "Marokko",
-  oA = () => "Marruecos",
-  cA = () => "Maroc",
-  _A = () => "Marocco",
-  sA = () => "モロッコ",
-  iA = () => "Maroko",
-  aA = () => "Марокко",
-  lA = () => "Марокко",
-  fA = () => "Maroc",
-  Gpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? tA() : r === "pt" ? nA() : r === "ch" ? eA() : r === "de" ? uA() : r === "es" ? oA() : r === "fr" ? cA() : r === "it" ? _A() : r === "jp" ? sA() : r === "pl" ? iA() : r === "ru" ? aA() : r === "uk" ? lA() : fA()
-  },
-  pA = () => "Monaco",
-  yA = () => "Mônaco",
-  dA = () => "摩纳哥",
-  hA = () => "Monaco",
-  kA = () => "Mónaco",
-  gA = () => "Monaco",
-  mA = () => "Monaco",
-  bA = () => "モナコ",
-  jA = () => "Monako",
-  vA = () => "Монако",
-  wA = () => "Монако",
-  zA = () => "Monaco",
-  Apr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pA() : r === "pt" ? yA() : r === "ch" ? dA() : r === "de" ? hA() : r === "es" ? kA() : r === "fr" ? gA() : r === "it" ? mA() : r === "jp" ? bA() : r === "pl" ? jA() : r === "ru" ? vA() : r === "uk" ? wA() : zA()
-  },
-  SA = () => "Moldova",
-  MA = () => "Moldávia",
-  CA = () => "摩尔多瓦",
-  BA = () => "Moldau",
-  GA = () => "Moldavia",
-  AA = () => "Moldavie",
-  TA = () => "Moldavia",
-  PA = () => "モルドバ",
-  IA = () => "Mołdawia",
-  NA = () => "Молдова",
-  LA = () => "Молдова",
-  qA = () => "Moldova",
-  Tpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? SA() : r === "pt" ? MA() : r === "ch" ? CA() : r === "de" ? BA() : r === "es" ? GA() : r === "fr" ? AA() : r === "it" ? TA() : r === "jp" ? PA() : r === "pl" ? IA() : r === "ru" ? NA() : r === "uk" ? LA() : qA()
-  },
-  xA = () => "Montenegro",
-  RA = () => "Montenegro",
-  DA = () => "黑山",
-  KA = () => "Montenegro",
-  VA = () => "Montenegro",
-  EA = () => "Monténégro",
-  HA = () => "Montenegro",
-  FA = () => "モンテネグロ",
-  OA = () => "Czarnogóra",
-  JA = () => "Черногория",
-  UA = () => "Чорногорія",
-  ZA = () => "Montenegro",
-  Ppr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xA() : r === "pt" ? RA() : r === "ch" ? DA() : r === "de" ? KA() : r === "es" ? VA() : r === "fr" ? EA() : r === "it" ? HA() : r === "jp" ? FA() : r === "pl" ? OA() : r === "ru" ? JA() : r === "uk" ? UA() : ZA()
-  },
-  WA = () => "Saint Martin (French part)",
-  XA = () => "São Martinho (parte francesa)",
-  QA = () => "圣马丁 (法属部分)",
-  YA = () => "Sankt Martin (französischer Teil)",
-  $A = () => "San Martín (parte francesa)",
-  rT = () => "Saint-Martin (partie française)",
-  tT = () => "Saint Martin (parte francese)",
-  nT = () => "サン・マルタン (フランス領部分)",
-  eT = () => "Saint-Martin (część francuska)",
-  uT = () => "Сен-Мартен (французская часть)",
-  oT = () => "Сен-Мартен (французька частина)",
-  cT = () => "Saint Martin (phần thuộc Pháp)",
-  Ipr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? WA() : r === "pt" ? XA() : r === "ch" ? QA() : r === "de" ? YA() : r === "es" ? $A() : r === "fr" ? rT() : r === "it" ? tT() : r === "jp" ? nT() : r === "pl" ? eT() : r === "ru" ? uT() : r === "uk" ? oT() : cT()
-  },
-  _T = () => "Madagascar",
-  sT = () => "Madagascar",
-  iT = () => "马达加斯加",
-  aT = () => "Madagaskar",
-  lT = () => "Madagascar",
-  fT = () => "Madagascar",
-  pT = () => "Madagascar",
-  yT = () => "マダガスカル",
-  dT = () => "Madagaskar",
-  hT = () => "Мадагаскар",
-  kT = () => "Мадагаскар",
-  gT = () => "Madagascar",
-  Npr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _T() : r === "pt" ? sT() : r === "ch" ? iT() : r === "de" ? aT() : r === "es" ? lT() : r === "fr" ? fT() : r === "it" ? pT() : r === "jp" ? yT() : r === "pl" ? dT() : r === "ru" ? hT() : r === "uk" ? kT() : gT()
-  },
-  mT = () => "Marshall Islands",
-  bT = () => "Ilhas Marshall",
-  jT = () => "马绍尔群岛",
-  vT = () => "Marshallinseln",
-  wT = () => "Islas Marshall",
-  zT = () => "Îles Marshall",
-  ST = () => "Isole Marshall",
-  MT = () => "マーシャル諸島",
-  CT = () => "Wyspy Marshalla",
-  BT = () => "Маршалловы Острова",
-  GT = () => "Маршаллові Острови",
-  AT = () => "Quần đảo Marshall",
-  Lpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mT() : r === "pt" ? bT() : r === "ch" ? jT() : r === "de" ? vT() : r === "es" ? wT() : r === "fr" ? zT() : r === "it" ? ST() : r === "jp" ? MT() : r === "pl" ? CT() : r === "ru" ? BT() : r === "uk" ? GT() : AT()
-  },
-  TT = () => "North Macedonia",
-  PT = () => "Macedônia do Norte",
-  IT = () => "北马其顿",
-  NT = () => "Nordmazedonien",
-  LT = () => "Macedonia del Norte",
-  qT = () => "Macédoine du Nord",
-  xT = () => "Macedonia del Nord",
-  RT = () => "北マケドニア",
-  DT = () => "Macedonia Północna",
-  KT = () => "Северная Македония",
-  VT = () => "Північна Македонія",
-  ET = () => "Bắc Macedonia",
-  qpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? TT() : r === "pt" ? PT() : r === "ch" ? IT() : r === "de" ? NT() : r === "es" ? LT() : r === "fr" ? qT() : r === "it" ? xT() : r === "jp" ? RT() : r === "pl" ? DT() : r === "ru" ? KT() : r === "uk" ? VT() : ET()
-  },
-  HT = () => "Mali",
-  FT = () => "Mali",
-  OT = () => "马里",
-  JT = () => "Mali",
-  UT = () => "Malí",
-  ZT = () => "Mali",
-  WT = () => "Mali",
-  XT = () => "マリ",
-  QT = () => "Mali",
-  YT = () => "Мали",
-  $T = () => "Малі",
-  rP = () => "Mali",
-  xpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? HT() : r === "pt" ? FT() : r === "ch" ? OT() : r === "de" ? JT() : r === "es" ? UT() : r === "fr" ? ZT() : r === "it" ? WT() : r === "jp" ? XT() : r === "pl" ? QT() : r === "ru" ? YT() : r === "uk" ? $T() : rP()
-  },
-  tP = () => "Myanmar",
-  nP = () => "Mianmar",
-  eP = () => "缅甸",
-  uP = () => "Myanmar",
-  oP = () => "Myanmar",
-  cP = () => "Myanmar",
-  _P = () => "Myanmar",
-  sP = () => "ミャンマー",
-  iP = () => "Mjanma",
-  aP = () => "Мьянма",
-  lP = () => "М'янма",
-  fP = () => "Myanmar",
-  Rpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? tP() : r === "pt" ? nP() : r === "ch" ? eP() : r === "de" ? uP() : r === "es" ? oP() : r === "fr" ? cP() : r === "it" ? _P() : r === "jp" ? sP() : r === "pl" ? iP() : r === "ru" ? aP() : r === "uk" ? lP() : fP()
-  },
-  pP = () => "Mongolia",
-  yP = () => "Mongólia",
-  dP = () => "蒙古",
-  hP = () => "Mongolei",
-  kP = () => "Mongolia",
-  gP = () => "Mongolie",
-  mP = () => "Mongolia",
-  bP = () => "モンゴル",
-  jP = () => "Mongolia",
-  vP = () => "Монголия",
-  wP = () => "Монголія",
-  zP = () => "Mông Cổ",
-  Dpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pP() : r === "pt" ? yP() : r === "ch" ? dP() : r === "de" ? hP() : r === "es" ? kP() : r === "fr" ? gP() : r === "it" ? mP() : r === "jp" ? bP() : r === "pl" ? jP() : r === "ru" ? vP() : r === "uk" ? wP() : zP()
-  },
-  SP = () => "Macao",
-  MP = () => "Macau",
-  CP = () => "澳门",
-  BP = () => "Macau",
-  GP = () => "Macao",
-  AP = () => "Macao",
-  TP = () => "Macao",
-  PP = () => "マカオ",
-  IP = () => "Makau",
-  NP = () => "Макао",
-  LP = () => "Макао",
-  qP = () => "Ma Cao",
-  Kpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? SP() : r === "pt" ? MP() : r === "ch" ? CP() : r === "de" ? BP() : r === "es" ? GP() : r === "fr" ? AP() : r === "it" ? TP() : r === "jp" ? PP() : r === "pl" ? IP() : r === "ru" ? NP() : r === "uk" ? LP() : qP()
-  },
-  xP = () => "Northern Mariana Islands",
-  RP = () => "Ilhas Marianas Setentrionais",
-  DP = () => "北马里亚纳群岛",
-  KP = () => "Nördliche Marianen",
-  VP = () => "Islas Marianas del Norte",
-  EP = () => "Îles Mariannes du Nord",
-  HP = () => "Isole Marianne Settentrionali",
-  FP = () => "北マリアナ諸島",
-  OP = () => "Mariany Północne",
-  JP = () => "Северные Марианские Острова",
-  UP = () => "Північні Маріанські острови",
-  ZP = () => "Quần đảo Bắc Mariana",
-  Vpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xP() : r === "pt" ? RP() : r === "ch" ? DP() : r === "de" ? KP() : r === "es" ? VP() : r === "fr" ? EP() : r === "it" ? HP() : r === "jp" ? FP() : r === "pl" ? OP() : r === "ru" ? JP() : r === "uk" ? UP() : ZP()
-  },
-  WP = () => "Martinique",
-  XP = () => "Martinica",
-  QP = () => "马提尼克",
-  YP = () => "Martinique",
-  $P = () => "Martinica",
-  rI = () => "Martinique",
-  tI = () => "Martinica",
-  nI = () => "マルティニーク",
-  eI = () => "Martynika",
-  uI = () => "Мартиника",
-  oI = () => "Мартиніка",
-  cI = () => "Martinique",
-  Epr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? WP() : r === "pt" ? XP() : r === "ch" ? QP() : r === "de" ? YP() : r === "es" ? $P() : r === "fr" ? rI() : r === "it" ? tI() : r === "jp" ? nI() : r === "pl" ? eI() : r === "ru" ? uI() : r === "uk" ? oI() : cI()
-  },
-  _I = () => "Mauritania",
-  sI = () => "Mauritânia",
-  iI = () => "毛里塔尼亚",
-  aI = () => "Mauretanien",
-  lI = () => "Mauritania",
-  fI = () => "Mauritanie",
-  pI = () => "Mauritania",
-  yI = () => "モーリタニア",
-  dI = () => "Mauretania",
-  hI = () => "Мавритания",
-  kI = () => "Мавританія",
-  gI = () => "Mauritania",
-  Hpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _I() : r === "pt" ? sI() : r === "ch" ? iI() : r === "de" ? aI() : r === "es" ? lI() : r === "fr" ? fI() : r === "it" ? pI() : r === "jp" ? yI() : r === "pl" ? dI() : r === "ru" ? hI() : r === "uk" ? kI() : gI()
-  },
-  mI = () => "Montserrat",
-  bI = () => "Montserrat",
-  jI = () => "蒙特塞拉特",
-  vI = () => "Montserrat",
-  wI = () => "Montserrat",
-  zI = () => "Montserrat",
-  SI = () => "Montserrat",
-  MI = () => "モントセラト",
-  CI = () => "Montserrat",
-  BI = () => "Монтсеррат",
-  GI = () => "Монтсеррат",
-  AI = () => "Montserrat",
-  Fpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mI() : r === "pt" ? bI() : r === "ch" ? jI() : r === "de" ? vI() : r === "es" ? wI() : r === "fr" ? zI() : r === "it" ? SI() : r === "jp" ? MI() : r === "pl" ? CI() : r === "ru" ? BI() : r === "uk" ? GI() : AI()
-  },
-  TI = () => "Malta",
-  PI = () => "Malta",
-  II = () => "马耳他",
-  NI = () => "Malta",
-  LI = () => "Malta",
-  qI = () => "Malte",
-  xI = () => "Malta",
-  RI = () => "マルタ",
-  DI = () => "Malta",
-  KI = () => "Мальта",
-  VI = () => "Мальта",
-  EI = () => "Malta",
-  Opr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? TI() : r === "pt" ? PI() : r === "ch" ? II() : r === "de" ? NI() : r === "es" ? LI() : r === "fr" ? qI() : r === "it" ? xI() : r === "jp" ? RI() : r === "pl" ? DI() : r === "ru" ? KI() : r === "uk" ? VI() : EI()
-  },
-  HI = () => "Mauritius",
-  FI = () => "Maurício",
-  OI = () => "毛里求斯",
-  JI = () => "Mauritius",
-  UI = () => "Mauricio",
-  ZI = () => "Maurice",
-  WI = () => "Mauritius",
-  XI = () => "モーリシャス",
-  QI = () => "Mauritius",
-  YI = () => "Маврикий",
-  $I = () => "Маврикій",
-  rN = () => "Mauritius",
-  Jpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? HI() : r === "pt" ? FI() : r === "ch" ? OI() : r === "de" ? JI() : r === "es" ? UI() : r === "fr" ? ZI() : r === "it" ? WI() : r === "jp" ? XI() : r === "pl" ? QI() : r === "ru" ? YI() : r === "uk" ? $I() : rN()
-  },
-  tN = () => "Maldives",
-  nN = () => "Maldivas",
-  eN = () => "马尔代夫",
-  uN = () => "Malediven",
-  oN = () => "Maldivas",
-  cN = () => "Maldives",
-  _N = () => "Maldive",
-  sN = () => "モルディブ",
-  iN = () => "Malediwy",
-  aN = () => "Мальдивы",
-  lN = () => "Мальдіви",
-  fN = () => "Maldives",
-  Upr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? tN() : r === "pt" ? nN() : r === "ch" ? eN() : r === "de" ? uN() : r === "es" ? oN() : r === "fr" ? cN() : r === "it" ? _N() : r === "jp" ? sN() : r === "pl" ? iN() : r === "ru" ? aN() : r === "uk" ? lN() : fN()
-  },
-  pN = () => "Malawi",
-  yN = () => "Malawi",
-  dN = () => "马拉维",
-  hN = () => "Malawi",
-  kN = () => "Malawi",
-  gN = () => "Malawi",
-  mN = () => "Malawi",
-  bN = () => "マラウイ",
-  jN = () => "Malawi",
-  vN = () => "Малави",
-  wN = () => "Малаві",
-  zN = () => "Malawi",
-  Zpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pN() : r === "pt" ? yN() : r === "ch" ? dN() : r === "de" ? hN() : r === "es" ? kN() : r === "fr" ? gN() : r === "it" ? mN() : r === "jp" ? bN() : r === "pl" ? jN() : r === "ru" ? vN() : r === "uk" ? wN() : zN()
-  },
-  SN = () => "Mexico",
-  MN = () => "México",
-  CN = () => "墨西哥",
-  BN = () => "Mexiko",
-  GN = () => "México",
-  AN = () => "Mexique",
-  TN = () => "Messico",
-  PN = () => "メキシコ",
-  IN = () => "Meksyk",
-  NN = () => "Мексика",
-  LN = () => "Мексика",
-  qN = () => "Mexico",
-  Wpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? SN() : r === "pt" ? MN() : r === "ch" ? CN() : r === "de" ? BN() : r === "es" ? GN() : r === "fr" ? AN() : r === "it" ? TN() : r === "jp" ? PN() : r === "pl" ? IN() : r === "ru" ? NN() : r === "uk" ? LN() : qN()
-  },
-  xN = () => "Malaysia",
-  RN = () => "Malásia",
-  DN = () => "马来西亚",
-  KN = () => "Malaysia",
-  VN = () => "Malasia",
-  EN = () => "Malaisie",
-  HN = () => "Malesia",
-  FN = () => "マレーシア",
-  ON = () => "Malezja",
-  JN = () => "Малайзия",
-  UN = () => "Малайзія",
-  ZN = () => "Malaysia",
-  Xpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xN() : r === "pt" ? RN() : r === "ch" ? DN() : r === "de" ? KN() : r === "es" ? VN() : r === "fr" ? EN() : r === "it" ? HN() : r === "jp" ? FN() : r === "pl" ? ON() : r === "ru" ? JN() : r === "uk" ? UN() : ZN()
-  },
-  WN = () => "Mozambique",
-  XN = () => "Moçambique",
-  QN = () => "莫桑比克",
-  YN = () => "Mosambik",
-  $N = () => "Mozambique",
-  rL = () => "Mozambique",
-  tL = () => "Mozambico",
-  nL = () => "モザンビーク",
-  eL = () => "Mozambik",
-  uL = () => "Мозамбик",
-  oL = () => "Мозамбік",
-  cL = () => "Mô-dăm-bích",
-  Qpr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? WN() : r === "pt" ? XN() : r === "ch" ? QN() : r === "de" ? YN() : r === "es" ? $N() : r === "fr" ? rL() : r === "it" ? tL() : r === "jp" ? nL() : r === "pl" ? eL() : r === "ru" ? uL() : r === "uk" ? oL() : cL()
-  },
-  _L = () => "Namibia",
-  sL = () => "Namíbia",
-  iL = () => "纳米比亚",
-  aL = () => "Namibia",
-  lL = () => "Namibia",
-  fL = () => "Namibie",
-  pL = () => "Namibia",
-  yL = () => "ナミビア",
-  dL = () => "Namibia",
-  hL = () => "Намибия",
-  kL = () => "Намібія",
-  gL = () => "Namibia",
-  Ypr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _L() : r === "pt" ? sL() : r === "ch" ? iL() : r === "de" ? aL() : r === "es" ? lL() : r === "fr" ? fL() : r === "it" ? pL() : r === "jp" ? yL() : r === "pl" ? dL() : r === "ru" ? hL() : r === "uk" ? kL() : gL()
-  },
-  mL = () => "New Caledonia",
-  bL = () => "Nova Caledônia",
-  jL = () => "新喀里多尼亚",
-  vL = () => "Neukaledonien",
-  wL = () => "Nueva Caledonia",
-  zL = () => "Nouvelle-Calédonie",
-  SL = () => "Nuova Caledonia",
-  ML = () => "ニューカレドニア",
-  CL = () => "Nowa Kaledonia",
-  BL = () => "Новая Каледония",
-  GL = () => "Нова Каледонія",
-  AL = () => "Nouvelle-Calédonie",
-  $pr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mL() : r === "pt" ? bL() : r === "ch" ? jL() : r === "de" ? vL() : r === "es" ? wL() : r === "fr" ? zL() : r === "it" ? SL() : r === "jp" ? ML() : r === "pl" ? CL() : r === "ru" ? BL() : r === "uk" ? GL() : AL()
-  },
-  TL = () => "Niger",
-  PL = () => "Níger",
-  IL = () => "尼日尔",
-  NL = () => "Niger",
-  LL = () => "Níger",
-  qL = () => "Niger",
-  xL = () => "Niger",
-  RL = () => "ニジェール",
-  DL = () => "Niger",
-  KL = () => "Нигер",
-  VL = () => "Нігер",
-  EL = () => "Ni-giê",
-  ryr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? TL() : r === "pt" ? PL() : r === "ch" ? IL() : r === "de" ? NL() : r === "es" ? LL() : r === "fr" ? qL() : r === "it" ? xL() : r === "jp" ? RL() : r === "pl" ? DL() : r === "ru" ? KL() : r === "uk" ? VL() : EL()
-  },
-  HL = () => "Norfolk Island",
-  FL = () => "Ilha Norfolk",
-  OL = () => "诺福克岛",
-  JL = () => "Norfolkinsel",
-  UL = () => "Isla Norfolk",
-  ZL = () => "Île Norfolk",
-  WL = () => "Isola Norfolk",
-  XL = () => "ノーフォーク島",
-  QL = () => "Wyspa Norfolk",
-  YL = () => "Остров Норфолк",
-  $L = () => "Острів Норфолк",
-  rq = () => "Đảo Norfolk",
-  tyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? HL() : r === "pt" ? FL() : r === "ch" ? OL() : r === "de" ? JL() : r === "es" ? UL() : r === "fr" ? ZL() : r === "it" ? WL() : r === "jp" ? XL() : r === "pl" ? QL() : r === "ru" ? YL() : r === "uk" ? $L() : rq()
-  },
-  tq = () => "Nigeria",
-  nq = () => "Nigéria",
-  eq = () => "尼日利亚",
-  uq = () => "Nigeria",
-  oq = () => "Nigeria",
-  cq = () => "Nigeria",
-  _q = () => "Nigeria",
-  sq = () => "ナイジェリア",
-  iq = () => "Nigeria",
-  aq = () => "Нигерия",
-  lq = () => "Нігерія",
-  fq = () => "Nigeria",
-  nyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? tq() : r === "pt" ? nq() : r === "ch" ? eq() : r === "de" ? uq() : r === "es" ? oq() : r === "fr" ? cq() : r === "it" ? _q() : r === "jp" ? sq() : r === "pl" ? iq() : r === "ru" ? aq() : r === "uk" ? lq() : fq()
-  },
-  pq = () => "Nicaragua",
-  yq = () => "Nicarágua",
-  dq = () => "尼加拉瓜",
-  hq = () => "Nicaragua",
-  kq = () => "Nicaragua",
-  gq = () => "Nicaragua",
-  mq = () => "Nicaragua",
-  bq = () => "ニカラグア",
-  jq = () => "Nikaragua",
-  vq = () => "Никарагуа",
-  wq = () => "Нікарагуа",
-  zq = () => "Nicaragua",
-  eyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pq() : r === "pt" ? yq() : r === "ch" ? dq() : r === "de" ? hq() : r === "es" ? kq() : r === "fr" ? gq() : r === "it" ? mq() : r === "jp" ? bq() : r === "pl" ? jq() : r === "ru" ? vq() : r === "uk" ? wq() : zq()
-  },
-  Sq = () => "Netherlands",
-  Mq = () => "Holanda",
-  Cq = () => "荷兰",
-  Bq = () => "Niederlande",
-  Gq = () => "Países Bajos",
-  Aq = () => "Pays-Bas",
-  Tq = () => "Paesi Bassi",
-  Pq = () => "オランダ",
-  Iq = () => "Niderlandy",
-  Nq = () => "Нидерланды",
-  Lq = () => "Нідерланди",
-  qq = () => "Hà Lan",
-  uyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Sq() : r === "pt" ? Mq() : r === "ch" ? Cq() : r === "de" ? Bq() : r === "es" ? Gq() : r === "fr" ? Aq() : r === "it" ? Tq() : r === "jp" ? Pq() : r === "pl" ? Iq() : r === "ru" ? Nq() : r === "uk" ? Lq() : qq()
-  },
-  xq = () => "Norway",
-  Rq = () => "Noruega",
-  Dq = () => "挪威",
-  Kq = () => "Norwegen",
-  Vq = () => "Noruega",
-  Eq = () => "Norvège",
-  Hq = () => "Norvegia",
-  Fq = () => "ノルウェー",
-  Oq = () => "Norwegia",
-  Jq = () => "Норвегия",
-  Uq = () => "Норвегія",
-  Zq = () => "Na Uy",
-  oyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xq() : r === "pt" ? Rq() : r === "ch" ? Dq() : r === "de" ? Kq() : r === "es" ? Vq() : r === "fr" ? Eq() : r === "it" ? Hq() : r === "jp" ? Fq() : r === "pl" ? Oq() : r === "ru" ? Jq() : r === "uk" ? Uq() : Zq()
-  },
-  Wq = () => "Nepal",
-  Xq = () => "Nepal",
-  Qq = () => "尼泊尔",
-  Yq = () => "Nepal",
-  $q = () => "Nepal",
-  rx = () => "Népal",
-  tx = () => "Nepal",
-  nx = () => "ネパール",
-  ex = () => "Nepal",
-  ux = () => "Непал",
-  ox = () => "Непал",
-  cx = () => "Nepal",
-  cyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Wq() : r === "pt" ? Xq() : r === "ch" ? Qq() : r === "de" ? Yq() : r === "es" ? $q() : r === "fr" ? rx() : r === "it" ? tx() : r === "jp" ? nx() : r === "pl" ? ex() : r === "ru" ? ux() : r === "uk" ? ox() : cx()
-  },
-  _x = () => "Nauru",
-  sx = () => "Nauru",
-  ix = () => "瑙鲁",
-  ax = () => "Nauru",
-  lx = () => "Nauru",
-  fx = () => "Nauru",
-  px = () => "Nauru",
-  yx = () => "ナウル",
-  dx = () => "Nauru",
-  hx = () => "Науру",
-  kx = () => "Науру",
-  gx = () => "Nauru",
-  _yr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _x() : r === "pt" ? sx() : r === "ch" ? ix() : r === "de" ? ax() : r === "es" ? lx() : r === "fr" ? fx() : r === "it" ? px() : r === "jp" ? yx() : r === "pl" ? dx() : r === "ru" ? hx() : r === "uk" ? kx() : gx()
-  },
-  mx = () => "Niue",
-  bx = () => "Niue",
-  jx = () => "纽埃",
-  vx = () => "Niue",
-  wx = () => "Niue",
-  zx = () => "Niue",
-  Sx = () => "Niue",
-  Mx = () => "ニウエ",
-  Cx = () => "Niue",
-  Bx = () => "Ниуэ",
-  Gx = () => "Ніуе",
-  Ax = () => "Niue",
-  syr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mx() : r === "pt" ? bx() : r === "ch" ? jx() : r === "de" ? vx() : r === "es" ? wx() : r === "fr" ? zx() : r === "it" ? Sx() : r === "jp" ? Mx() : r === "pl" ? Cx() : r === "ru" ? Bx() : r === "uk" ? Gx() : Ax()
-  },
-  Tx = () => "New Zealand",
-  Px = () => "Nova Zelândia",
-  Ix = () => "新西兰",
-  Nx = () => "Neuseeland",
-  Lx = () => "Nueva Zelanda",
-  qx = () => "Nouvelle-Zélande",
-  xx = () => "Nuova Zelanda",
-  Rx = () => "ニュージーランド",
-  Dx = () => "Nowa Zelandia",
-  Kx = () => "Новая Зеландия",
-  Vx = () => "Нова Зеландія",
-  Ex = () => "New Zealand",
-  iyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Tx() : r === "pt" ? Px() : r === "ch" ? Ix() : r === "de" ? Nx() : r === "es" ? Lx() : r === "fr" ? qx() : r === "it" ? xx() : r === "jp" ? Rx() : r === "pl" ? Dx() : r === "ru" ? Kx() : r === "uk" ? Vx() : Ex()
-  },
-  Hx = () => "Oman",
-  Fx = () => "Omã",
-  Ox = () => "阿曼",
-  Jx = () => "Oman",
-  Ux = () => "Omán",
-  Zx = () => "Oman",
-  Wx = () => "Oman",
-  Xx = () => "オマーン",
-  Qx = () => "Oman",
-  Yx = () => "Оман",
-  $x = () => "Оман",
-  rR = () => "Oman",
-  ayr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Hx() : r === "pt" ? Fx() : r === "ch" ? Ox() : r === "de" ? Jx() : r === "es" ? Ux() : r === "fr" ? Zx() : r === "it" ? Wx() : r === "jp" ? Xx() : r === "pl" ? Qx() : r === "ru" ? Yx() : r === "uk" ? $x() : rR()
-  },
-  tR = () => "Panama",
-  nR = () => "Panamá",
-  eR = () => "巴拿马",
-  uR = () => "Panama",
-  oR = () => "Panamá",
-  cR = () => "Panama",
-  _R = () => "Panama",
-  sR = () => "パナマ",
-  iR = () => "Panama",
-  aR = () => "Панама",
-  lR = () => "Панама",
-  fR = () => "Panama",
-  lyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? tR() : r === "pt" ? nR() : r === "ch" ? eR() : r === "de" ? uR() : r === "es" ? oR() : r === "fr" ? cR() : r === "it" ? _R() : r === "jp" ? sR() : r === "pl" ? iR() : r === "ru" ? aR() : r === "uk" ? lR() : fR()
-  },
-  pR = () => "Peru",
-  yR = () => "Peru",
-  dR = () => "秘鲁",
-  hR = () => "Peru",
-  kR = () => "Perú",
-  gR = () => "Pérou",
-  mR = () => "Perù",
-  bR = () => "ペルー",
-  jR = () => "Peru",
-  vR = () => "Перу",
-  wR = () => "Перу",
-  zR = () => "Peru",
-  fyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pR() : r === "pt" ? yR() : r === "ch" ? dR() : r === "de" ? hR() : r === "es" ? kR() : r === "fr" ? gR() : r === "it" ? mR() : r === "jp" ? bR() : r === "pl" ? jR() : r === "ru" ? vR() : r === "uk" ? wR() : zR()
-  },
-  SR = () => "French Polynesia",
-  MR = () => "Polinésia Francesa",
-  CR = () => "法属波利尼西亚",
-  BR = () => "Französisch-Polynesien",
-  GR = () => "Polinesia Francesa",
-  AR = () => "Polynésie française",
-  TR = () => "Polinesia Francese",
-  PR = () => "フランス領ポリネシア",
-  IR = () => "Polinezja Francuska",
-  NR = () => "Французская Полинезия",
-  LR = () => "Французька Полінезія",
-  qR = () => "Polynesia thuộc Pháp",
-  pyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? SR() : r === "pt" ? MR() : r === "ch" ? CR() : r === "de" ? BR() : r === "es" ? GR() : r === "fr" ? AR() : r === "it" ? TR() : r === "jp" ? PR() : r === "pl" ? IR() : r === "ru" ? NR() : r === "uk" ? LR() : qR()
-  },
-  xR = () => "Papua New Guinea",
-  RR = () => "Papua-Nova Guiné",
-  DR = () => "巴布亚新几内亚",
-  KR = () => "Papua-Neuguinea",
-  VR = () => "Papúa Nueva Guinea",
-  ER = () => "Papouasie-Nouvelle-Guinée",
-  HR = () => "Papua Nuova Guinea",
-  FR = () => "パプアニューギニア",
-  OR = () => "Papua-Nowa Gwinea",
-  JR = () => "Папуа — Новая Гвинея",
-  UR = () => "Папуа Нова Гвінея",
-  ZR = () => "Papua New Guinea",
-  yyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xR() : r === "pt" ? RR() : r === "ch" ? DR() : r === "de" ? KR() : r === "es" ? VR() : r === "fr" ? ER() : r === "it" ? HR() : r === "jp" ? FR() : r === "pl" ? OR() : r === "ru" ? JR() : r === "uk" ? UR() : ZR()
-  },
-  WR = () => "Philippines",
-  XR = () => "Filipinas",
-  QR = () => "菲律宾",
-  YR = () => "Philippinen",
-  $R = () => "Filipinas",
-  rD = () => "Philippines",
-  tD = () => "Filippine",
-  nD = () => "フィリピン",
-  eD = () => "Filipiny",
-  uD = () => "Филиппины",
-  oD = () => "Філіппіни",
-  cD = () => "Philippines",
-  dyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? WR() : r === "pt" ? XR() : r === "ch" ? QR() : r === "de" ? YR() : r === "es" ? $R() : r === "fr" ? rD() : r === "it" ? tD() : r === "jp" ? nD() : r === "pl" ? eD() : r === "ru" ? uD() : r === "uk" ? oD() : cD()
-  },
-  _D = () => "Pakistan",
-  sD = () => "Paquistão",
-  iD = () => "巴基斯坦",
-  aD = () => "Pakistan",
-  lD = () => "Pakistán",
-  fD = () => "Pakistan",
-  pD = () => "Pakistan",
-  yD = () => "パキスタン",
-  dD = () => "Pakistan",
-  hD = () => "Пакистан",
-  kD = () => "Пакистан",
-  gD = () => "Pakistan",
-  hyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _D() : r === "pt" ? sD() : r === "ch" ? iD() : r === "de" ? aD() : r === "es" ? lD() : r === "fr" ? fD() : r === "it" ? pD() : r === "jp" ? yD() : r === "pl" ? dD() : r === "ru" ? hD() : r === "uk" ? kD() : gD()
-  },
-  mD = () => "Poland",
-  bD = () => "Polônia",
-  jD = () => "波兰",
-  vD = () => "Polen",
-  wD = () => "Polonia",
-  zD = () => "Pologne",
-  SD = () => "Polonia",
-  MD = () => "ポーランド",
-  CD = () => "Polska",
-  BD = () => "Польша",
-  GD = () => "Польща",
-  AD = () => "Ba Lan",
-  kyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mD() : r === "pt" ? bD() : r === "ch" ? jD() : r === "de" ? vD() : r === "es" ? wD() : r === "fr" ? zD() : r === "it" ? SD() : r === "jp" ? MD() : r === "pl" ? CD() : r === "ru" ? BD() : r === "uk" ? GD() : AD()
-  },
-  TD = () => "Saint Pierre and Miquelon",
-  PD = () => "Saint-Pierre e Miquelon",
-  ID = () => "圣皮埃尔和密克隆",
-  ND = () => "Saint-Pierre und Miquelon",
-  LD = () => "San Pedro y Miquelón",
-  qD = () => "Saint-Pierre-et-Miquelon",
-  xD = () => "Saint-Pierre e Miquelon",
-  RD = () => "サンピエール島・ミクロン島",
-  DD = () => "Saint-Pierre i Miquelon",
-  KD = () => "Сен-Пьер и Микелон",
-  VD = () => "Сен-П'єр і Мікелон",
-  ED = () => "Saint Pierre và Miquelon",
-  gyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? TD() : r === "pt" ? PD() : r === "ch" ? ID() : r === "de" ? ND() : r === "es" ? LD() : r === "fr" ? qD() : r === "it" ? xD() : r === "jp" ? RD() : r === "pl" ? DD() : r === "ru" ? KD() : r === "uk" ? VD() : ED()
-  },
-  HD = () => "Pitcairn",
-  FD = () => "Pitcairn",
-  OD = () => "皮特凯恩",
-  JD = () => "Pitcairn",
-  UD = () => "Pitcairn",
-  ZD = () => "Pitcairn",
-  WD = () => "Pitcairn",
-  XD = () => "ピトケアン",
-  QD = () => "Pitcairn",
-  YD = () => "Питкэрн",
-  $D = () => "Піткерн",
-  rK = () => "Pitcairn",
-  myr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? HD() : r === "pt" ? FD() : r === "ch" ? OD() : r === "de" ? JD() : r === "es" ? UD() : r === "fr" ? ZD() : r === "it" ? WD() : r === "jp" ? XD() : r === "pl" ? QD() : r === "ru" ? YD() : r === "uk" ? $D() : rK()
-  },
-  tK = () => "Puerto Rico",
-  nK = () => "Porto Rico",
-  eK = () => "波多黎各",
-  uK = () => "Puerto Rico",
-  oK = () => "Puerto Rico",
-  cK = () => "Porto Rico",
-  _K = () => "Porto Rico",
-  sK = () => "プエルトリコ",
-  iK = () => "Portoryko",
-  aK = () => "Пуэрто-Рико",
-  lK = () => "Пуерто-Рико",
-  fK = () => "Puerto Rico",
-  byr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? tK() : r === "pt" ? nK() : r === "ch" ? eK() : r === "de" ? uK() : r === "es" ? oK() : r === "fr" ? cK() : r === "it" ? _K() : r === "jp" ? sK() : r === "pl" ? iK() : r === "ru" ? aK() : r === "uk" ? lK() : fK()
-  },
-  pK = () => "Palestine",
-  yK = () => "Palestina",
-  dK = () => "巴勒斯坦",
-  hK = () => "Palästina",
-  kK = () => "Palestina",
-  gK = () => "Palestine",
-  mK = () => "Palestina",
-  bK = () => "パレスチナ",
-  jK = () => "Palestyna",
-  vK = () => "Палестина",
-  wK = () => "Палестина",
-  zK = () => "Palestine",
-  jyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pK() : r === "pt" ? yK() : r === "ch" ? dK() : r === "de" ? hK() : r === "es" ? kK() : r === "fr" ? gK() : r === "it" ? mK() : r === "jp" ? bK() : r === "pl" ? jK() : r === "ru" ? vK() : r === "uk" ? wK() : zK()
-  },
-  SK = () => "Portugal",
-  MK = () => "Portugal",
-  CK = () => "葡萄牙",
-  BK = () => "Portugal",
-  GK = () => "Portugal",
-  AK = () => "Portugal",
-  TK = () => "Portogallo",
-  PK = () => "ポルトガル",
-  IK = () => "Portugalia",
-  NK = () => "Португалия",
-  LK = () => "Португалія",
-  qK = () => "Bồ Đào Nha",
-  vyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? SK() : r === "pt" ? MK() : r === "ch" ? CK() : r === "de" ? BK() : r === "es" ? GK() : r === "fr" ? AK() : r === "it" ? TK() : r === "jp" ? PK() : r === "pl" ? IK() : r === "ru" ? NK() : r === "uk" ? LK() : qK()
-  },
-  xK = () => "Palau",
-  RK = () => "Palau",
-  DK = () => "帕劳",
-  KK = () => "Palau",
-  VK = () => "Palau",
-  EK = () => "Palaos",
-  HK = () => "Palau",
-  FK = () => "パラオ",
-  OK = () => "Palau",
-  JK = () => "Палау",
-  UK = () => "Палау",
-  ZK = () => "Palau",
-  wyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xK() : r === "pt" ? RK() : r === "ch" ? DK() : r === "de" ? KK() : r === "es" ? VK() : r === "fr" ? EK() : r === "it" ? HK() : r === "jp" ? FK() : r === "pl" ? OK() : r === "ru" ? JK() : r === "uk" ? UK() : ZK()
-  },
-  WK = () => "Paraguay",
-  XK = () => "Paraguai",
-  QK = () => "巴拉圭",
-  YK = () => "Paraguay",
-  $K = () => "Paraguay",
-  rV = () => "Paraguay",
-  tV = () => "Paraguay",
-  nV = () => "パラグアイ",
-  eV = () => "Paragwaj",
-  uV = () => "Парагвай",
-  oV = () => "Парагвай",
-  cV = () => "Paragoay",
-  zyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? WK() : r === "pt" ? XK() : r === "ch" ? QK() : r === "de" ? YK() : r === "es" ? $K() : r === "fr" ? rV() : r === "it" ? tV() : r === "jp" ? nV() : r === "pl" ? eV() : r === "ru" ? uV() : r === "uk" ? oV() : cV()
-  },
-  _V = () => "Qatar",
-  sV = () => "Catar",
-  iV = () => "卡塔尔",
-  aV = () => "Katar",
-  lV = () => "Catar",
-  fV = () => "Qatar",
-  pV = () => "Qatar",
-  yV = () => "カタール",
-  dV = () => "Katar",
-  hV = () => "Катар",
-  kV = () => "Катар",
-  gV = () => "Qatar",
-  Syr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _V() : r === "pt" ? sV() : r === "ch" ? iV() : r === "de" ? aV() : r === "es" ? lV() : r === "fr" ? fV() : r === "it" ? pV() : r === "jp" ? yV() : r === "pl" ? dV() : r === "ru" ? hV() : r === "uk" ? kV() : gV()
-  },
-  mV = () => "Réunion",
-  bV = () => "Reunião",
-  jV = () => "留尼汪",
-  vV = () => "Réunion",
-  wV = () => "Reunión",
-  zV = () => "Réunion",
-  SV = () => "Réunion",
-  MV = () => "レユニオン",
-  CV = () => "Reunion",
-  BV = () => "Реюньон",
-  GV = () => "Реюньйон",
-  AV = () => "Réunion",
-  Myr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mV() : r === "pt" ? bV() : r === "ch" ? jV() : r === "de" ? vV() : r === "es" ? wV() : r === "fr" ? zV() : r === "it" ? SV() : r === "jp" ? MV() : r === "pl" ? CV() : r === "ru" ? BV() : r === "uk" ? GV() : AV()
-  },
-  TV = () => "Romania",
-  PV = () => "Romênia",
-  IV = () => "罗马尼亚",
-  NV = () => "Rumänien",
-  LV = () => "Rumanía",
-  qV = () => "Roumanie",
-  xV = () => "Romania",
-  RV = () => "ルーマニア",
-  DV = () => "Rumunia",
-  KV = () => "Румыния",
-  VV = () => "Румунія",
-  EV = () => "Rumani",
-  Cyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? TV() : r === "pt" ? PV() : r === "ch" ? IV() : r === "de" ? NV() : r === "es" ? LV() : r === "fr" ? qV() : r === "it" ? xV() : r === "jp" ? RV() : r === "pl" ? DV() : r === "ru" ? KV() : r === "uk" ? VV() : EV()
-  },
-  HV = () => "Serbia",
-  FV = () => "Sérvia",
-  OV = () => "塞尔维亚",
-  JV = () => "Serbien",
-  UV = () => "Serbia",
-  ZV = () => "Serbie",
-  WV = () => "Serbia",
-  XV = () => "セルビア",
-  QV = () => "Serbia",
-  YV = () => "Сербия",
-  $V = () => "Сербія",
-  rE = () => "Serbia",
-  Byr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? HV() : r === "pt" ? FV() : r === "ch" ? OV() : r === "de" ? JV() : r === "es" ? UV() : r === "fr" ? ZV() : r === "it" ? WV() : r === "jp" ? XV() : r === "pl" ? QV() : r === "ru" ? YV() : r === "uk" ? $V() : rE()
-  },
-  tE = () => "Russia",
-  nE = () => "Rússia",
-  eE = () => "俄罗斯",
-  uE = () => "Russland",
-  oE = () => "Rusia",
-  cE = () => "Russie",
-  _E = () => "Russia",
-  sE = () => "ロシア",
-  iE = () => "Rosja",
-  aE = () => "Россия",
-  lE = () => "Росія",
-  fE = () => "Nga",
-  Gyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? tE() : r === "pt" ? nE() : r === "ch" ? eE() : r === "de" ? uE() : r === "es" ? oE() : r === "fr" ? cE() : r === "it" ? _E() : r === "jp" ? sE() : r === "pl" ? iE() : r === "ru" ? aE() : r === "uk" ? lE() : fE()
-  },
-  pE = () => "Rwanda",
-  yE = () => "Ruanda",
-  dE = () => "卢旺达",
-  hE = () => "Ruanda",
-  kE = () => "Ruanda",
-  gE = () => "Rwanda",
-  mE = () => "Ruanda",
-  bE = () => "ルワンダ",
-  jE = () => "Rwanda",
-  vE = () => "Руанда",
-  wE = () => "Руанда",
-  zE = () => "Rwanda",
-  Ayr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pE() : r === "pt" ? yE() : r === "ch" ? dE() : r === "de" ? hE() : r === "es" ? kE() : r === "fr" ? gE() : r === "it" ? mE() : r === "jp" ? bE() : r === "pl" ? jE() : r === "ru" ? vE() : r === "uk" ? wE() : zE()
-  },
-  SE = () => "Saudi Arabia",
-  ME = () => "Arábia Saudita",
-  CE = () => "沙特阿拉伯",
-  BE = () => "Saudi-Arabien",
-  GE = () => "Arabia Saudita",
-  AE = () => "Arabie Saoudite",
-  TE = () => "Arabia Saudita",
-  PE = () => "サウジアラビア",
-  IE = () => "Arabia Saudyjska",
-  NE = () => "Саудовская Аравия",
-  LE = () => "Саудівська Аравія",
-  qE = () => "Ả Rập Xê Út",
-  Tyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? SE() : r === "pt" ? ME() : r === "ch" ? CE() : r === "de" ? BE() : r === "es" ? GE() : r === "fr" ? AE() : r === "it" ? TE() : r === "jp" ? PE() : r === "pl" ? IE() : r === "ru" ? NE() : r === "uk" ? LE() : qE()
-  },
-  xE = () => "Solomon Islands",
-  RE = () => "Ilhas Salomão",
-  DE = () => "所罗门群岛",
-  KE = () => "Salomonen",
-  VE = () => "Islas Salomón",
-  EE = () => "Îles Salomon",
-  HE = () => "Isole Salomone",
-  FE = () => "ソロモン諸島",
-  OE = () => "Wyspy Salomona",
-  JE = () => "Соломоновы Острова",
-  UE = () => "Соломонові Острови",
-  ZE = () => "Quần đảo Solomon",
-  Pyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xE() : r === "pt" ? RE() : r === "ch" ? DE() : r === "de" ? KE() : r === "es" ? VE() : r === "fr" ? EE() : r === "it" ? HE() : r === "jp" ? FE() : r === "pl" ? OE() : r === "ru" ? JE() : r === "uk" ? UE() : ZE()
-  },
-  WE = () => "Seychelles",
-  XE = () => "Seicheles",
-  QE = () => "塞舌尔",
-  YE = () => "Seychellen",
-  $E = () => "Seychelles",
-  rH = () => "Seychelles",
-  tH = () => "Seychelles",
-  nH = () => "セーシェル",
-  eH = () => "Seszele",
-  uH = () => "Сейшельские Острова",
-  oH = () => "Сейшельські Острови",
-  cH = () => "Seychelles",
-  Iyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? WE() : r === "pt" ? XE() : r === "ch" ? QE() : r === "de" ? YE() : r === "es" ? $E() : r === "fr" ? rH() : r === "it" ? tH() : r === "jp" ? nH() : r === "pl" ? eH() : r === "ru" ? uH() : r === "uk" ? oH() : cH()
-  },
-  _H = () => "Sudan",
-  sH = () => "Sudão",
-  iH = () => "苏丹",
-  aH = () => "Sudan",
-  lH = () => "Sudán",
-  fH = () => "Soudan",
-  pH = () => "Sudan",
-  yH = () => "スーダン",
-  dH = () => "Sudan",
-  hH = () => "Судан",
-  kH = () => "Судан",
-  gH = () => "Sudan",
-  Nyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _H() : r === "pt" ? sH() : r === "ch" ? iH() : r === "de" ? aH() : r === "es" ? lH() : r === "fr" ? fH() : r === "it" ? pH() : r === "jp" ? yH() : r === "pl" ? dH() : r === "ru" ? hH() : r === "uk" ? kH() : gH()
-  },
-  mH = () => "Sweden",
-  bH = () => "Suécia",
-  jH = () => "瑞典",
-  vH = () => "Schweden",
-  wH = () => "Suecia",
-  zH = () => "Suède",
-  SH = () => "Svezia",
-  MH = () => "スウェーデン",
-  CH = () => "Szwecja",
-  BH = () => "Швеция",
-  GH = () => "Швеція",
-  AH = () => "Thụy Điển",
-  Lyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mH() : r === "pt" ? bH() : r === "ch" ? jH() : r === "de" ? vH() : r === "es" ? wH() : r === "fr" ? zH() : r === "it" ? SH() : r === "jp" ? MH() : r === "pl" ? CH() : r === "ru" ? BH() : r === "uk" ? GH() : AH()
-  },
-  TH = () => "Singapore",
-  PH = () => "Singapura",
-  IH = () => "新加坡",
-  NH = () => "Singapur",
-  LH = () => "Singapur",
-  qH = () => "Singapour",
-  xH = () => "Singapore",
-  RH = () => "シンガポール",
-  DH = () => "Singapur",
-  KH = () => "Сингапур",
-  VH = () => "Сінгапур",
-  EH = () => "Singapore",
-  qyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? TH() : r === "pt" ? PH() : r === "ch" ? IH() : r === "de" ? NH() : r === "es" ? LH() : r === "fr" ? qH() : r === "it" ? xH() : r === "jp" ? RH() : r === "pl" ? DH() : r === "ru" ? KH() : r === "uk" ? VH() : EH()
-  },
-  HH = () => "Saint Helena",
-  FH = () => "Santa Helena",
-  OH = () => "圣赫勒拿",
-  JH = () => "Sankt Helena",
-  UH = () => "Santa Elena",
-  ZH = () => "Sainte-Hélène",
-  WH = () => "Sant'Elena",
-  XH = () => "セントヘレナ",
-  QH = () => "Święta Helena",
-  YH = () => "Остров Святой Елены",
-  $H = () => "Свята Єлена",
-  rF = () => "Saint Helena",
-  xyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? HH() : r === "pt" ? FH() : r === "ch" ? OH() : r === "de" ? JH() : r === "es" ? UH() : r === "fr" ? ZH() : r === "it" ? WH() : r === "jp" ? XH() : r === "pl" ? QH() : r === "ru" ? YH() : r === "uk" ? $H() : rF()
-  },
-  tF = () => "Slovenia",
-  nF = () => "Eslovênia",
-  eF = () => "斯洛文尼亚",
-  uF = () => "Slowenien",
-  oF = () => "Eslovenia",
-  cF = () => "Slovénie",
-  _F = () => "Slovenia",
-  sF = () => "スロベニア",
-  iF = () => "Słowenia",
-  aF = () => "Словения",
-  lF = () => "Словенія",
-  fF = () => "Slovenia",
-  Ryr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? tF() : r === "pt" ? nF() : r === "ch" ? eF() : r === "de" ? uF() : r === "es" ? oF() : r === "fr" ? cF() : r === "it" ? _F() : r === "jp" ? sF() : r === "pl" ? iF() : r === "ru" ? aF() : r === "uk" ? lF() : fF()
-  },
-  pF = () => "Svalbard and Jan Mayen",
-  yF = () => "Svalbard e Jan Mayen",
-  dF = () => "斯瓦尔巴和扬马延",
-  hF = () => "Spitzbergen und Jan Mayen",
-  kF = () => "Svalbard y Jan Mayen",
-  gF = () => "Svalbard et Jan Mayen",
-  mF = () => "Svalbard e Jan Mayen",
-  bF = () => "スヴァールバル諸島およびヤンマイエン",
-  jF = () => "Svalbard i Jan Mayen",
-  vF = () => "Шпицберген и Ян-Майен",
-  wF = () => "Шпіцберген та Ян-Маєн",
-  zF = () => "Svalbard và Jan Mayen",
-  Dyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pF() : r === "pt" ? yF() : r === "ch" ? dF() : r === "de" ? hF() : r === "es" ? kF() : r === "fr" ? gF() : r === "it" ? mF() : r === "jp" ? bF() : r === "pl" ? jF() : r === "ru" ? vF() : r === "uk" ? wF() : zF()
-  },
-  SF = () => "Slovakia",
-  MF = () => "Eslováquia",
-  CF = () => "斯洛伐克",
-  BF = () => "Slowakei",
-  GF = () => "Eslovaquia",
-  AF = () => "Slovaquie",
-  TF = () => "Slovacchia",
-  PF = () => "スロバキア",
-  IF = () => "Słowacja",
-  NF = () => "Словакия",
-  LF = () => "Словаччина",
-  qF = () => "Slovakia",
-  Kyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? SF() : r === "pt" ? MF() : r === "ch" ? CF() : r === "de" ? BF() : r === "es" ? GF() : r === "fr" ? AF() : r === "it" ? TF() : r === "jp" ? PF() : r === "pl" ? IF() : r === "ru" ? NF() : r === "uk" ? LF() : qF()
-  },
-  xF = () => "Sierra Leone",
-  RF = () => "Serra Leoa",
-  DF = () => "塞拉利昂",
-  KF = () => "Sierra Leone",
-  VF = () => "Sierra Leona",
-  EF = () => "Sierra Leone",
-  HF = () => "Sierra Leone",
-  FF = () => "シエラレオネ",
-  OF = () => "Sierra Leone",
-  JF = () => "Сьерра-Леоне",
-  UF = () => "Сьєрра-Леоне",
-  ZF = () => "Sierra Leone",
-  Vyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xF() : r === "pt" ? RF() : r === "ch" ? DF() : r === "de" ? KF() : r === "es" ? VF() : r === "fr" ? EF() : r === "it" ? HF() : r === "jp" ? FF() : r === "pl" ? OF() : r === "ru" ? JF() : r === "uk" ? UF() : ZF()
-  },
-  WF = () => "San Marino",
-  XF = () => "San Marino",
-  QF = () => "圣马力诺",
-  YF = () => "San Marino",
-  $F = () => "San Marino",
-  rO = () => "San Marino",
-  tO = () => "San Marino",
-  nO = () => "サンマリノ",
-  eO = () => "San Marino",
-  uO = () => "Сан-Марино",
-  oO = () => "Сан-Марино",
-  cO = () => "San Marino",
-  Eyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? WF() : r === "pt" ? XF() : r === "ch" ? QF() : r === "de" ? YF() : r === "es" ? $F() : r === "fr" ? rO() : r === "it" ? tO() : r === "jp" ? nO() : r === "pl" ? eO() : r === "ru" ? uO() : r === "uk" ? oO() : cO()
-  },
-  _O = () => "Senegal",
-  sO = () => "Senegal",
-  iO = () => "塞内加尔",
-  aO = () => "Senegal",
-  lO = () => "Senegal",
-  fO = () => "Sénégal",
-  pO = () => "Senegal",
-  yO = () => "セネガル",
-  dO = () => "Senegal",
-  hO = () => "Сенегал",
-  kO = () => "Сенегал",
-  gO = () => "Sê-nê-gan",
-  Hyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _O() : r === "pt" ? sO() : r === "ch" ? iO() : r === "de" ? aO() : r === "es" ? lO() : r === "fr" ? fO() : r === "it" ? pO() : r === "jp" ? yO() : r === "pl" ? dO() : r === "ru" ? hO() : r === "uk" ? kO() : gO()
-  },
-  mO = () => "Somalia",
-  bO = () => "Somália",
-  jO = () => "索马里",
-  vO = () => "Somalia",
-  wO = () => "Somalia",
-  zO = () => "Somalie",
-  SO = () => "Somalia",
-  MO = () => "ソマリア",
-  CO = () => "Somalia",
-  BO = () => "Сомали",
-  GO = () => "Сомалі",
-  AO = () => "Somalia",
-  Fyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mO() : r === "pt" ? bO() : r === "ch" ? jO() : r === "de" ? vO() : r === "es" ? wO() : r === "fr" ? zO() : r === "it" ? SO() : r === "jp" ? MO() : r === "pl" ? CO() : r === "ru" ? BO() : r === "uk" ? GO() : AO()
-  },
-  TO = () => "Suriname",
-  PO = () => "Suriname",
-  IO = () => "苏里南",
-  NO = () => "Suriname",
-  LO = () => "Surinam",
-  qO = () => "Suriname",
-  xO = () => "Suriname",
-  RO = () => "スリナム",
-  DO = () => "Surinam",
-  KO = () => "Суринам",
-  VO = () => "Суринам",
-  EO = () => "Suriname",
-  Oyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? TO() : r === "pt" ? PO() : r === "ch" ? IO() : r === "de" ? NO() : r === "es" ? LO() : r === "fr" ? qO() : r === "it" ? xO() : r === "jp" ? RO() : r === "pl" ? DO() : r === "ru" ? KO() : r === "uk" ? VO() : EO()
-  },
-  HO = () => "South Sudan",
-  FO = () => "Sudão do Sul",
-  OO = () => "南苏丹",
-  JO = () => "Südsudan",
-  UO = () => "Sudán del Sur",
-  ZO = () => "Soudan du Sud",
-  WO = () => "Sud Sudan",
-  XO = () => "南スーダン",
-  QO = () => "Sudan Południowy",
-  YO = () => "Южный Судан",
-  $O = () => "Південний Судан",
-  rJ = () => "Nam Sudan",
-  Jyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? HO() : r === "pt" ? FO() : r === "ch" ? OO() : r === "de" ? JO() : r === "es" ? UO() : r === "fr" ? ZO() : r === "it" ? WO() : r === "jp" ? XO() : r === "pl" ? QO() : r === "ru" ? YO() : r === "uk" ? $O() : rJ()
-  },
-  tJ = () => "Sao Tome and Principe",
-  nJ = () => "São Tomé e Príncipe",
-  eJ = () => "圣多美和普林西比",
-  uJ = () => "São Tomé und Príncipe",
-  oJ = () => "Santo Tomé y Príncipe",
-  cJ = () => "Sao Tomé-et-Principe",
-  _J = () => "São Tomé e Príncipe",
-  sJ = () => "サントメ・プリンシペ",
-  iJ = () => "Wyspy Świętego Tomasza i Książęca",
-  aJ = () => "Сан-Томе и Принсипи",
-  lJ = () => "Сан-Томе і Принсіпі",
-  fJ = () => "São Tomé và Príncipe",
-  Uyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? tJ() : r === "pt" ? nJ() : r === "ch" ? eJ() : r === "de" ? uJ() : r === "es" ? oJ() : r === "fr" ? cJ() : r === "it" ? _J() : r === "jp" ? sJ() : r === "pl" ? iJ() : r === "ru" ? aJ() : r === "uk" ? lJ() : fJ()
-  },
-  pJ = () => "El Salvador",
-  yJ = () => "El Salvador",
-  dJ = () => "萨尔瓦多",
-  hJ = () => "El Salvador",
-  kJ = () => "El Salvador",
-  gJ = () => "Le Salvador",
-  mJ = () => "El Salvador",
-  bJ = () => "エルサルバドル",
-  jJ = () => "Salwador",
-  vJ = () => "Сальвадор",
-  wJ = () => "Сальвадор",
-  zJ = () => "El Salvador",
-  Zyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pJ() : r === "pt" ? yJ() : r === "ch" ? dJ() : r === "de" ? hJ() : r === "es" ? kJ() : r === "fr" ? gJ() : r === "it" ? mJ() : r === "jp" ? bJ() : r === "pl" ? jJ() : r === "ru" ? vJ() : r === "uk" ? wJ() : zJ()
-  },
-  SJ = () => "Sint Maarten (Dutch part)",
-  MJ = () => "Sint Maarten (parte holandesa)",
-  CJ = () => "荷属圣马丁",
-  BJ = () => "Sint Maarten (niederländischer Teil)",
-  GJ = () => "Sint Maarten (parte neerlandesa)",
-  AJ = () => "Sint Maarten (partie néerlandaise)",
-  TJ = () => "Sint Maarten (parte olandese)",
-  PJ = () => "シント・マールテン (オランダ領)",
-  IJ = () => "Sint Maarten (część holenderska)",
-  NJ = () => "Синт-Мартен (нидерландская часть)",
-  LJ = () => "Сінт-Мартен (нідерландська частина)",
-  qJ = () => "Sint Maarten (phần Hà Lan)",
-  Wyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? SJ() : r === "pt" ? MJ() : r === "ch" ? CJ() : r === "de" ? BJ() : r === "es" ? GJ() : r === "fr" ? AJ() : r === "it" ? TJ() : r === "jp" ? PJ() : r === "pl" ? IJ() : r === "ru" ? NJ() : r === "uk" ? LJ() : qJ()
-  },
-  xJ = () => "Syrian Arab Republic",
-  RJ = () => "República Árabe Síria",
-  DJ = () => "阿拉伯叙利亚共和国",
-  KJ = () => "Syrische Arabische Republik",
-  VJ = () => "República Árabe Siria",
-  EJ = () => "République arabe syrienne",
-  HJ = () => "Repubblica Araba Siriana",
-  FJ = () => "シリア・アラブ共和国",
-  OJ = () => "Syryjska Republika Arabska",
-  JJ = () => "Сирийская Арабская Республика",
-  UJ = () => "Сирійська Арабська Республіка",
-  ZJ = () => "Cộng hòa Ả Rập Syria",
-  Xyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xJ() : r === "pt" ? RJ() : r === "ch" ? DJ() : r === "de" ? KJ() : r === "es" ? VJ() : r === "fr" ? EJ() : r === "it" ? HJ() : r === "jp" ? FJ() : r === "pl" ? OJ() : r === "ru" ? JJ() : r === "uk" ? UJ() : ZJ()
-  },
-  WJ = () => "Eswatini",
-  XJ = () => "Essuatíni",
-  QJ = () => "斯威士兰",
-  YJ = () => "Eswatini",
-  $J = () => "Eswatini",
-  rU = () => "Eswatini",
-  tU = () => "Eswatini",
-  nU = () => "エスワティニ",
-  eU = () => "Eswatini",
-  uU = () => "Эсватини",
-  oU = () => "Есватіні",
-  cU = () => "Eswatini",
-  Qyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? WJ() : r === "pt" ? XJ() : r === "ch" ? QJ() : r === "de" ? YJ() : r === "es" ? $J() : r === "fr" ? rU() : r === "it" ? tU() : r === "jp" ? nU() : r === "pl" ? eU() : r === "ru" ? uU() : r === "uk" ? oU() : cU()
-  },
-  _U = () => "Turks and Caicos Islands",
-  sU = () => "Ilhas Turcas e Caicos",
-  iU = () => "特克斯和凯科斯群岛",
-  aU = () => "Turks- und Caicosinseln",
-  lU = () => "Islas Turcas y Caicos",
-  fU = () => "Îles Turques-et-Caïques",
-  pU = () => "Isole Turks e Caicos",
-  yU = () => "タークス・カイコス諸島",
-  dU = () => "Wyspy Turks i Caicos",
-  hU = () => "Острова Теркс и Кайкос",
-  kU = () => "Острови Теркс і Кайкос",
-  gU = () => "Quần đảo Turks và Caicos",
-  Yyr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _U() : r === "pt" ? sU() : r === "ch" ? iU() : r === "de" ? aU() : r === "es" ? lU() : r === "fr" ? fU() : r === "it" ? pU() : r === "jp" ? yU() : r === "pl" ? dU() : r === "ru" ? hU() : r === "uk" ? kU() : gU()
-  },
-  mU = () => "Chad",
-  bU = () => "Chade",
-  jU = () => "乍得",
-  vU = () => "Tschad",
-  wU = () => "Chad",
-  zU = () => "Tchad",
-  SU = () => "Ciad",
-  MU = () => "チャド",
-  CU = () => "Czad",
-  BU = () => "Чад",
-  GU = () => "Чад",
-  AU = () => "Sát",
-  $yr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mU() : r === "pt" ? bU() : r === "ch" ? jU() : r === "de" ? vU() : r === "es" ? wU() : r === "fr" ? zU() : r === "it" ? SU() : r === "jp" ? MU() : r === "pl" ? CU() : r === "ru" ? BU() : r === "uk" ? GU() : AU()
-  },
-  TU = () => "French Southern Territories",
-  PU = () => "Territórios Austrais Franceses",
-  IU = () => "法属南部领地",
-  NU = () => "Französische Süd- und Antarktisgebiete",
-  LU = () => "Territorios Australes Franceses",
-  qU = () => "Terres australes et antarctiques françaises",
-  xU = () => "Territori australi francesi",
-  RU = () => "フランス領南方地域",
-  DU = () => "Francuskie Terytoria Południowe",
-  KU = () => "Французские Южные территории",
-  VU = () => "Французькі Південні Території",
-  EU = () => "Lãnh thổ phía Nam nước Pháp",
-  rdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? TU() : r === "pt" ? PU() : r === "ch" ? IU() : r === "de" ? NU() : r === "es" ? LU() : r === "fr" ? qU() : r === "it" ? xU() : r === "jp" ? RU() : r === "pl" ? DU() : r === "ru" ? KU() : r === "uk" ? VU() : EU()
-  },
-  HU = () => "Togo",
-  FU = () => "Togo",
-  OU = () => "多哥",
-  JU = () => "Togo",
-  UU = () => "Togo",
-  ZU = () => "Togo",
-  WU = () => "Togo",
-  XU = () => "トーゴ",
-  QU = () => "Togo",
-  YU = () => "Того",
-  $U = () => "Того",
-  rZ = () => "Tô-gô",
-  tdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? HU() : r === "pt" ? FU() : r === "ch" ? OU() : r === "de" ? JU() : r === "es" ? UU() : r === "fr" ? ZU() : r === "it" ? WU() : r === "jp" ? XU() : r === "pl" ? QU() : r === "ru" ? YU() : r === "uk" ? $U() : rZ()
-  },
-  tZ = () => "Thailand",
-  nZ = () => "Tailândia",
-  eZ = () => "泰国",
-  uZ = () => "Thailand",
-  oZ = () => "Tailandia",
-  cZ = () => "Thaïlande",
-  _Z = () => "Thailandia",
-  sZ = () => "タイ",
-  iZ = () => "Tajlandia",
-  aZ = () => "Таиланд",
-  lZ = () => "Таїланд",
-  fZ = () => "Thái Lan",
-  ndr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? tZ() : r === "pt" ? nZ() : r === "ch" ? eZ() : r === "de" ? uZ() : r === "es" ? oZ() : r === "fr" ? cZ() : r === "it" ? _Z() : r === "jp" ? sZ() : r === "pl" ? iZ() : r === "ru" ? aZ() : r === "uk" ? lZ() : fZ()
-  },
-  pZ = () => "Tajikistan",
-  yZ = () => "Tajiquistão",
-  dZ = () => "塔吉克斯坦",
-  hZ = () => "Tadschikistan",
-  kZ = () => "Tayikistán",
-  gZ = () => "Tadjikistan",
-  mZ = () => "Tagikistan",
-  bZ = () => "タジキスタン",
-  jZ = () => "Tadżykistan",
-  vZ = () => "Таджикистан",
-  wZ = () => "Таджикистан",
-  zZ = () => "Tajikistan",
-  edr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pZ() : r === "pt" ? yZ() : r === "ch" ? dZ() : r === "de" ? hZ() : r === "es" ? kZ() : r === "fr" ? gZ() : r === "it" ? mZ() : r === "jp" ? bZ() : r === "pl" ? jZ() : r === "ru" ? vZ() : r === "uk" ? wZ() : zZ()
-  },
-  SZ = () => "Tokelau",
-  MZ = () => "Tokelau",
-  CZ = () => "托克劳",
-  BZ = () => "Tokelau",
-  GZ = () => "Tokelau",
-  AZ = () => "Tokelau",
-  TZ = () => "Tokelau",
-  PZ = () => "トケラウ",
-  IZ = () => "Tokelau",
-  NZ = () => "Токелау",
-  LZ = () => "Токелау",
-  qZ = () => "Tokelau",
-  udr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? SZ() : r === "pt" ? MZ() : r === "ch" ? CZ() : r === "de" ? BZ() : r === "es" ? GZ() : r === "fr" ? AZ() : r === "it" ? TZ() : r === "jp" ? PZ() : r === "pl" ? IZ() : r === "ru" ? NZ() : r === "uk" ? LZ() : qZ()
-  },
-  xZ = () => "Timor-Leste",
-  RZ = () => "Timor-Leste",
-  DZ = () => "东帝汶",
-  KZ = () => "Timor-Leste",
-  VZ = () => "Timor-Leste",
-  EZ = () => "Timor-Leste",
-  HZ = () => "Timor-Leste",
-  FZ = () => "東ティモール",
-  OZ = () => "Timor Wschodni",
-  JZ = () => "Тимор-Лешти",
-  UZ = () => "Тімор-Лешті",
-  ZZ = () => "Timor-Leste",
-  odr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xZ() : r === "pt" ? RZ() : r === "ch" ? DZ() : r === "de" ? KZ() : r === "es" ? VZ() : r === "fr" ? EZ() : r === "it" ? HZ() : r === "jp" ? FZ() : r === "pl" ? OZ() : r === "ru" ? JZ() : r === "uk" ? UZ() : ZZ()
-  },
-  WZ = () => "Turkmenistan",
-  XZ = () => "Turcomenistão",
-  QZ = () => "土库曼斯坦",
-  YZ = () => "Turkmenistan",
-  $Z = () => "Turkmenistán",
-  rW = () => "Turkménistan",
-  tW = () => "Turkmenistan",
-  nW = () => "トルクメニスタン",
-  eW = () => "Turkmenistan",
-  uW = () => "Туркменистан",
-  oW = () => "Туркменістан",
-  cW = () => "Turkmenistan",
-  cdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? WZ() : r === "pt" ? XZ() : r === "ch" ? QZ() : r === "de" ? YZ() : r === "es" ? $Z() : r === "fr" ? rW() : r === "it" ? tW() : r === "jp" ? nW() : r === "pl" ? eW() : r === "ru" ? uW() : r === "uk" ? oW() : cW()
-  },
-  _W = () => "Tunisia",
-  sW = () => "Tunísia",
-  iW = () => "突尼斯",
-  aW = () => "Tunesien",
-  lW = () => "Túnez",
-  fW = () => "Tunisie",
-  pW = () => "Tunisia",
-  yW = () => "チュニジア",
-  dW = () => "Tunezja",
-  hW = () => "Тунис",
-  kW = () => "Туніс",
-  gW = () => "Tunisia",
-  _dr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _W() : r === "pt" ? sW() : r === "ch" ? iW() : r === "de" ? aW() : r === "es" ? lW() : r === "fr" ? fW() : r === "it" ? pW() : r === "jp" ? yW() : r === "pl" ? dW() : r === "ru" ? hW() : r === "uk" ? kW() : gW()
-  },
-  mW = () => "Tonga",
-  bW = () => "Tonga",
-  jW = () => "汤加",
-  vW = () => "Tonga",
-  wW = () => "Tonga",
-  zW = () => "Tonga",
-  SW = () => "Tonga",
-  MW = () => "トンガ",
-  CW = () => "Tonga",
-  BW = () => "Тонга",
-  GW = () => "Тонга",
-  AW = () => "Tonga",
-  sdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mW() : r === "pt" ? bW() : r === "ch" ? jW() : r === "de" ? vW() : r === "es" ? wW() : r === "fr" ? zW() : r === "it" ? SW() : r === "jp" ? MW() : r === "pl" ? CW() : r === "ru" ? BW() : r === "uk" ? GW() : AW()
-  },
-  TW = () => "Türkiye",
-  PW = () => "Turquia",
-  IW = () => "土耳其",
-  NW = () => "Türkei",
-  LW = () => "Turquía",
-  qW = () => "Turquie",
-  xW = () => "Turchia",
-  RW = () => "トルコ",
-  DW = () => "Turcja",
-  KW = () => "Турция",
-  VW = () => "Туреччина",
-  EW = () => "Thổ Nhĩ Kỳ",
-  idr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? TW() : r === "pt" ? PW() : r === "ch" ? IW() : r === "de" ? NW() : r === "es" ? LW() : r === "fr" ? qW() : r === "it" ? xW() : r === "jp" ? RW() : r === "pl" ? DW() : r === "ru" ? KW() : r === "uk" ? VW() : EW()
-  },
-  HW = () => "Trinidad and Tobago",
-  FW = () => "Trinidade e Tobago",
-  OW = () => "特立尼达和多巴哥",
-  JW = () => "Trinidad und Tobago",
-  UW = () => "Trinidad y Tobago",
-  ZW = () => "Trinité-et-Tobago",
-  WW = () => "Trinidad e Tobago",
-  XW = () => "トリニダード・トバゴ",
-  QW = () => "Trynidad i Tobago",
-  YW = () => "Тринидад и Тобаго",
-  $W = () => "Тринідад і Тобаго",
-  rX = () => "Trinidad và Tobago",
-  adr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? HW() : r === "pt" ? FW() : r === "ch" ? OW() : r === "de" ? JW() : r === "es" ? UW() : r === "fr" ? ZW() : r === "it" ? WW() : r === "jp" ? XW() : r === "pl" ? QW() : r === "ru" ? YW() : r === "uk" ? $W() : rX()
-  },
-  tX = () => "Tuvalu",
-  nX = () => "Tuvalu",
-  eX = () => "图瓦卢",
-  uX = () => "Tuvalu",
-  oX = () => "Tuvalu",
-  cX = () => "Tuvalu",
-  _X = () => "Tuvalu",
-  sX = () => "ツバル",
-  iX = () => "Tuvalu",
-  aX = () => "Тувалу",
-  lX = () => "Тувалу",
-  fX = () => "Tuvalu",
-  ldr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? tX() : r === "pt" ? nX() : r === "ch" ? eX() : r === "de" ? uX() : r === "es" ? oX() : r === "fr" ? cX() : r === "it" ? _X() : r === "jp" ? sX() : r === "pl" ? iX() : r === "ru" ? aX() : r === "uk" ? lX() : fX()
-  },
-  pX = () => "Taiwan",
-  yX = () => "Taiwan",
-  dX = () => "台湾",
-  hX = () => "Taiwan",
-  kX = () => "Taiwán",
-  gX = () => "Taïwan",
-  mX = () => "Taiwan",
-  bX = () => "台湾",
-  jX = () => "Tajwan",
-  vX = () => "Тайвань",
-  wX = () => "Тайвань",
-  zX = () => "Đài Loan",
-  fdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pX() : r === "pt" ? yX() : r === "ch" ? dX() : r === "de" ? hX() : r === "es" ? kX() : r === "fr" ? gX() : r === "it" ? mX() : r === "jp" ? bX() : r === "pl" ? jX() : r === "ru" ? vX() : r === "uk" ? wX() : zX()
-  },
-  SX = () => "Tanzania",
-  MX = () => "Tanzânia",
-  CX = () => "坦桑尼亚",
-  BX = () => "Tansania",
-  GX = () => "Tanzania",
-  AX = () => "Tanzanie",
-  TX = () => "Tanzania",
-  PX = () => "タンザニア",
-  IX = () => "Tanzania",
-  NX = () => "Танзания",
-  LX = () => "Танзанія",
-  qX = () => "Tanzania",
-  pdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? SX() : r === "pt" ? MX() : r === "ch" ? CX() : r === "de" ? BX() : r === "es" ? GX() : r === "fr" ? AX() : r === "it" ? TX() : r === "jp" ? PX() : r === "pl" ? IX() : r === "ru" ? NX() : r === "uk" ? LX() : qX()
-  },
-  xX = () => "Ukraine",
-  RX = () => "Ucrânia",
-  DX = () => "乌克兰",
-  KX = () => "Ukraine",
-  VX = () => "Ucrania",
-  EX = () => "Ukraine",
-  HX = () => "Ucraina",
-  FX = () => "ウクライナ",
-  OX = () => "Ukraina",
-  JX = () => "Украина",
-  UX = () => "Україна",
-  ZX = () => "Ukraina",
-  ydr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xX() : r === "pt" ? RX() : r === "ch" ? DX() : r === "de" ? KX() : r === "es" ? VX() : r === "fr" ? EX() : r === "it" ? HX() : r === "jp" ? FX() : r === "pl" ? OX() : r === "ru" ? JX() : r === "uk" ? UX() : ZX()
-  },
-  WX = () => "Uganda",
-  XX = () => "Uganda",
-  QX = () => "乌干达",
-  YX = () => "Uganda",
-  $X = () => "Uganda",
-  rQ = () => "Ouganda",
-  tQ = () => "Uganda",
-  nQ = () => "ウガンダ",
-  eQ = () => "Uganda",
-  uQ = () => "Уганда",
-  oQ = () => "Уганда",
-  cQ = () => "Uganda",
-  ddr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? WX() : r === "pt" ? XX() : r === "ch" ? QX() : r === "de" ? YX() : r === "es" ? $X() : r === "fr" ? rQ() : r === "it" ? tQ() : r === "jp" ? nQ() : r === "pl" ? eQ() : r === "ru" ? uQ() : r === "uk" ? oQ() : cQ()
-  },
-  _Q = () => "United States Minor Outlying Islands",
-  sQ = () => "Ilhas Menores Distantes dos Estados Unidos",
-  iQ = () => "美国本土外小岛屿",
-  aQ = () => "Kleinere Outlying Islands der Vereinigten Staaten",
-  lQ = () => "Islas Ultramarinas Menores de Estados Unidos",
-  fQ = () => "Îles mineures éloignées des États-Unis",
-  pQ = () => "Isole minori esterne degli Stati Uniti",
-  yQ = () => "合衆国領有小離島",
-  dQ = () => "Dalekie Wyspy Mniejsze Stanów Zjednoczonych",
-  hQ = () => "Внешние малые острова США",
-  kQ = () => "Зовнішні малі острови США",
-  gQ = () => "Các tiểu đảo xa của Hoa Kỳ",
-  hdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _Q() : r === "pt" ? sQ() : r === "ch" ? iQ() : r === "de" ? aQ() : r === "es" ? lQ() : r === "fr" ? fQ() : r === "it" ? pQ() : r === "jp" ? yQ() : r === "pl" ? dQ() : r === "ru" ? hQ() : r === "uk" ? kQ() : gQ()
-  },
-  mQ = () => "United States",
-  bQ = () => "Estados Unidos",
-  jQ = () => "美国",
-  vQ = () => "Vereinigte Staaten",
-  wQ = () => "Estados Unidos",
-  zQ = () => "États-Unis",
-  SQ = () => "Stati Uniti",
-  MQ = () => "アメリカ合衆国",
-  CQ = () => "Stany Zjednoczone",
-  BQ = () => "Соединенные Штаты",
-  GQ = () => "Сполучені Штати",
-  AQ = () => "Hoa Kỳ",
-  kdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mQ() : r === "pt" ? bQ() : r === "ch" ? jQ() : r === "de" ? vQ() : r === "es" ? wQ() : r === "fr" ? zQ() : r === "it" ? SQ() : r === "jp" ? MQ() : r === "pl" ? CQ() : r === "ru" ? BQ() : r === "uk" ? GQ() : AQ()
-  },
-  TQ = () => "Uruguay",
-  PQ = () => "Uruguai",
-  IQ = () => "乌拉圭",
-  NQ = () => "Uruguay",
-  LQ = () => "Uruguay",
-  qQ = () => "Uruguay",
-  xQ = () => "Uruguay",
-  RQ = () => "ウルグアイ",
-  DQ = () => "Urugwaj",
-  KQ = () => "Уругвай",
-  VQ = () => "Уругвай",
-  EQ = () => "Uruguay",
-  gdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? TQ() : r === "pt" ? PQ() : r === "ch" ? IQ() : r === "de" ? NQ() : r === "es" ? LQ() : r === "fr" ? qQ() : r === "it" ? xQ() : r === "jp" ? RQ() : r === "pl" ? DQ() : r === "ru" ? KQ() : r === "uk" ? VQ() : EQ()
-  },
-  HQ = () => "Uzbekistan",
-  FQ = () => "Uzbequistão",
-  OQ = () => "乌兹别克斯坦",
-  JQ = () => "Usbekistan",
-  UQ = () => "Uzbekistán",
-  ZQ = () => "Ouzbékistan",
-  WQ = () => "Uzbekistan",
-  XQ = () => "ウズベキスタン",
-  QQ = () => "Uzbekistan",
-  YQ = () => "Узбекистан",
-  $Q = () => "Узбекистан",
-  rY = () => "Uzbekistan",
-  mdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? HQ() : r === "pt" ? FQ() : r === "ch" ? OQ() : r === "de" ? JQ() : r === "es" ? UQ() : r === "fr" ? ZQ() : r === "it" ? WQ() : r === "jp" ? XQ() : r === "pl" ? QQ() : r === "ru" ? YQ() : r === "uk" ? $Q() : rY()
-  },
-  tY = () => "Vatican City",
-  nY = () => "Cidade do Vaticano",
-  eY = () => "梵蒂冈城",
-  uY = () => "Vatikanstadt",
-  oY = () => "Ciudad del Vaticano",
-  cY = () => "Cité du Vatican",
-  _Y = () => "Città del Vaticano",
-  sY = () => "バチカン市国",
-  iY = () => "Watykan",
-  aY = () => "Ватикан",
-  lY = () => "Ватикан",
-  fY = () => "Thành phố Vatican",
-  bdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? tY() : r === "pt" ? nY() : r === "ch" ? eY() : r === "de" ? uY() : r === "es" ? oY() : r === "fr" ? cY() : r === "it" ? _Y() : r === "jp" ? sY() : r === "pl" ? iY() : r === "ru" ? aY() : r === "uk" ? lY() : fY()
-  },
-  pY = () => "Saint Vincent and the Grenadines",
-  yY = () => "São Vicente e Granadinas",
-  dY = () => "圣文森特和格林纳丁斯",
-  hY = () => "St. Vincent und die Grenadinen",
-  kY = () => "San Vicente y las Granadinas",
-  gY = () => "Saint-Vincent-et-les-Grenadines",
-  mY = () => "Saint Vincent e Grenadine",
-  bY = () => "セントビンセントおよびグレナディーン諸島",
-  jY = () => "Saint Vincent i Grenadyny",
-  vY = () => "Сент-Винсент и Гренадины",
-  wY = () => "Сент-Вінсент і Гренадини",
-  zY = () => "Saint Vincent và Grenadines",
-  jdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pY() : r === "pt" ? yY() : r === "ch" ? dY() : r === "de" ? hY() : r === "es" ? kY() : r === "fr" ? gY() : r === "it" ? mY() : r === "jp" ? bY() : r === "pl" ? jY() : r === "ru" ? vY() : r === "uk" ? wY() : zY()
-  },
-  SY = () => "Venezuela",
-  MY = () => "Venezuela",
-  CY = () => "委内瑞拉",
-  BY = () => "Venezuela",
-  GY = () => "Venezuela",
-  AY = () => "Venezuela",
-  TY = () => "Venezuela",
-  PY = () => "ベネズエラ",
-  IY = () => "Wenezuela",
-  NY = () => "Венесуэла",
-  LY = () => "Венесуела",
-  qY = () => "Venezuela",
-  vdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? SY() : r === "pt" ? MY() : r === "ch" ? CY() : r === "de" ? BY() : r === "es" ? GY() : r === "fr" ? AY() : r === "it" ? TY() : r === "jp" ? PY() : r === "pl" ? IY() : r === "ru" ? NY() : r === "uk" ? LY() : qY()
-  },
-  xY = () => "Virgin Islands",
-  RY = () => "Ilhas Virgens",
-  DY = () => "维尔京群岛",
-  KY = () => "Jungferninseln",
-  VY = () => "Islas Vírgenes",
-  EY = () => "Îles Vierges",
-  HY = () => "Isole Vergini",
-  FY = () => "バージン諸島",
-  OY = () => "Wyspy Dziewicze",
-  JY = () => "Виргинские острова",
-  UY = () => "Віргінські острови",
-  ZY = () => "Quần đảo Virgin",
-  wdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xY() : r === "pt" ? RY() : r === "ch" ? DY() : r === "de" ? KY() : r === "es" ? VY() : r === "fr" ? EY() : r === "it" ? HY() : r === "jp" ? FY() : r === "pl" ? OY() : r === "ru" ? JY() : r === "uk" ? UY() : ZY()
-  },
-  WY = () => "Virgin Islands",
-  XY = () => "Ilhas Virgens",
-  QY = () => "维尔京群岛",
-  YY = () => "Jungferninseln",
-  $Y = () => "Islas Vírgenes",
-  r1 = () => "Îles Vierges",
-  t1 = () => "Isole Vergini",
-  n1 = () => "バージン諸島",
-  e1 = () => "Wyspy Dziewicze",
-  u1 = () => "Виргинские острова",
-  o1 = () => "Віргінські острови",
-  c1 = () => "Quần đảo Virgin",
-  zdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? WY() : r === "pt" ? XY() : r === "ch" ? QY() : r === "de" ? YY() : r === "es" ? $Y() : r === "fr" ? r1() : r === "it" ? t1() : r === "jp" ? n1() : r === "pl" ? e1() : r === "ru" ? u1() : r === "uk" ? o1() : c1()
-  },
-  _1 = () => "Viet Nam",
-  s1 = () => "Vietnã",
-  i1 = () => "越南",
-  a1 = () => "Vietnam",
-  l1 = () => "Vietnam",
-  f1 = () => "Viêt Nam",
-  p1 = () => "Vietnam",
-  y1 = () => "ベトナム",
-  d1 = () => "Wietnam",
-  h1 = () => "Вьетнам",
-  k1 = () => "В'єтнам",
-  g1 = () => "Việt Nam",
-  Sdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _1() : r === "pt" ? s1() : r === "ch" ? i1() : r === "de" ? a1() : r === "es" ? l1() : r === "fr" ? f1() : r === "it" ? p1() : r === "jp" ? y1() : r === "pl" ? d1() : r === "ru" ? h1() : r === "uk" ? k1() : g1()
-  },
-  m1 = () => "Vanuatu",
-  b1 = () => "Vanuatu",
-  j1 = () => "瓦努阿图",
-  v1 = () => "Vanuatu",
-  w1 = () => "Vanuatu",
-  z1 = () => "Vanuatu",
-  S1 = () => "Vanuatu",
-  M1 = () => "バヌアツ",
-  C1 = () => "Vanuatu",
-  B1 = () => "Вануату",
-  G1 = () => "Вануату",
-  A1 = () => "Vanuatu",
-  Mdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? m1() : r === "pt" ? b1() : r === "ch" ? j1() : r === "de" ? v1() : r === "es" ? w1() : r === "fr" ? z1() : r === "it" ? S1() : r === "jp" ? M1() : r === "pl" ? C1() : r === "ru" ? B1() : r === "uk" ? G1() : A1()
-  },
-  T1 = () => "Wallis and Futuna",
-  P1 = () => "Wallis e Futuna",
-  I1 = () => "瓦利斯和富图纳",
-  N1 = () => "Wallis und Futuna",
-  L1 = () => "Wallis y Futuna",
-  q1 = () => "Wallis-et-Futuna",
-  x1 = () => "Wallis e Futuna",
-  R1 = () => "ウォリス・フツナ",
-  D1 = () => "Wallis i Futuna",
-  K1 = () => "Уоллис и Футуна",
-  V1 = () => "Уолліс і Футуна",
-  E1 = () => "Wallis và Futuna",
-  Cdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? T1() : r === "pt" ? P1() : r === "ch" ? I1() : r === "de" ? N1() : r === "es" ? L1() : r === "fr" ? q1() : r === "it" ? x1() : r === "jp" ? R1() : r === "pl" ? D1() : r === "ru" ? K1() : r === "uk" ? V1() : E1()
-  },
-  H1 = () => "Samoa",
-  F1 = () => "Samoa",
-  O1 = () => "萨摩亚",
-  J1 = () => "Samoa",
-  U1 = () => "Samoa",
-  Z1 = () => "Samoa",
-  W1 = () => "Samoa",
-  X1 = () => "サモア",
-  Q1 = () => "Samoa",
-  Y1 = () => "Самоа",
-  $1 = () => "Самоа",
-  r0 = () => "Samoa",
-  Bdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? H1() : r === "pt" ? F1() : r === "ch" ? O1() : r === "de" ? J1() : r === "es" ? U1() : r === "fr" ? Z1() : r === "it" ? W1() : r === "jp" ? X1() : r === "pl" ? Q1() : r === "ru" ? Y1() : r === "uk" ? $1() : r0()
-  },
-  t0 = () => "Kosovo",
-  n0 = () => "Kosovo",
-  e0 = () => "科索沃",
-  u0 = () => "Kosovo",
-  o0 = () => "Kosovo",
-  c0 = () => "Kosovo",
-  _0 = () => "Kosovo",
-  s0 = () => "コソボ",
-  i0 = () => "Kosowo",
-  a0 = () => "Косово",
-  l0 = () => "Косово",
-  f0 = () => "Kosovo",
-  Gdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? t0() : r === "pt" ? n0() : r === "ch" ? e0() : r === "de" ? u0() : r === "es" ? o0() : r === "fr" ? c0() : r === "it" ? _0() : r === "jp" ? s0() : r === "pl" ? i0() : r === "ru" ? a0() : r === "uk" ? l0() : f0()
-  },
-  p0 = () => "Yemen",
-  y0 = () => "Iêmen",
-  d0 = () => "也门",
-  h0 = () => "Jemen",
-  k0 = () => "Yemen",
-  g0 = () => "Yémen",
-  m0 = () => "Yemen",
-  b0 = () => "イエメン",
-  j0 = () => "Jemen",
-  v0 = () => "Йемен",
-  w0 = () => "Ємен",
-  z0 = () => "Yemen",
-  Adr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? p0() : r === "pt" ? y0() : r === "ch" ? d0() : r === "de" ? h0() : r === "es" ? k0() : r === "fr" ? g0() : r === "it" ? m0() : r === "jp" ? b0() : r === "pl" ? j0() : r === "ru" ? v0() : r === "uk" ? w0() : z0()
-  },
-  S0 = () => "Mayotte",
-  M0 = () => "Mayotte",
-  C0 = () => "马约特",
-  B0 = () => "Mayotte",
-  G0 = () => "Mayotte",
-  A0 = () => "Mayotte",
-  T0 = () => "Mayotte",
-  P0 = () => "マヨット",
-  I0 = () => "Majotta",
-  N0 = () => "Майотта",
-  L0 = () => "Майотта",
-  q0 = () => "Mayotte",
-  Tdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? S0() : r === "pt" ? M0() : r === "ch" ? C0() : r === "de" ? B0() : r === "es" ? G0() : r === "fr" ? A0() : r === "it" ? T0() : r === "jp" ? P0() : r === "pl" ? I0() : r === "ru" ? N0() : r === "uk" ? L0() : q0()
-  },
-  x0 = () => "South Africa",
-  R0 = () => "África do Sul",
-  D0 = () => "南非",
-  K0 = () => "Südafrika",
-  V0 = () => "Sudáfrica",
-  E0 = () => "Afrique du Sud",
-  H0 = () => "Sudafrica",
-  F0 = () => "南アフリカ",
-  O0 = () => "Afryka Południowa",
-  J0 = () => "Южная Африка",
-  U0 = () => "Південна Африка",
-  Z0 = () => "Nam Phi",
-  Pdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? x0() : r === "pt" ? R0() : r === "ch" ? D0() : r === "de" ? K0() : r === "es" ? V0() : r === "fr" ? E0() : r === "it" ? H0() : r === "jp" ? F0() : r === "pl" ? O0() : r === "ru" ? J0() : r === "uk" ? U0() : Z0()
-  },
-  W0 = () => "Zambia",
-  X0 = () => "Zâmbia",
-  Q0 = () => "赞比亚",
-  Y0 = () => "Sambia",
-  $0 = () => "Zambia",
-  r2 = () => "Zambie",
-  t2 = () => "Zambia",
-  n2 = () => "ザンビア",
-  e2 = () => "Zambia",
-  u2 = () => "Замбия",
-  o2 = () => "Замбія",
-  c2 = () => "Zambia",
-  Idr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? W0() : r === "pt" ? X0() : r === "ch" ? Q0() : r === "de" ? Y0() : r === "es" ? $0() : r === "fr" ? r2() : r === "it" ? t2() : r === "jp" ? n2() : r === "pl" ? e2() : r === "ru" ? u2() : r === "uk" ? o2() : c2()
-  },
-  _2 = () => "Zimbabwe",
-  s2 = () => "Zimbábue",
-  i2 = () => "津巴布韦",
-  a2 = () => "Simbabwe",
-  l2 = () => "Zimbabue",
-  f2 = () => "Zimbabwe",
-  p2 = () => "Zimbabwe",
-  y2 = () => "ジンバブエ",
-  d2 = () => "Zimbabwe",
-  h2 = () => "Зимбабве",
-  k2 = () => "Зімбабве",
-  g2 = () => "Zimbabwe",
-  Ndr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _2() : r === "pt" ? s2() : r === "ch" ? i2() : r === "de" ? a2() : r === "es" ? l2() : r === "fr" ? f2() : r === "it" ? p2() : r === "jp" ? y2() : r === "pl" ? d2() : r === "ru" ? h2() : r === "uk" ? k2() : g2()
-  },
-  m2 = () => "Error revoking sessions. Try again later.",
-  b2 = () => "Erro ao encerrar sessões. Tente novamente mais tarde.",
-  j2 = () => "撤销会话时出错。请稍后再试。",
-  v2 = () => "Fehler beim Beenden der Sitzungen. Versuche es später erneut.",
-  w2 = () => "Error al revocar las sesiones. Inténtalo de nuevo más tarde.",
-  z2 = () => "Erreur lors de la révocation des sessions. Réessayez plus tard.",
-  S2 = () => "Errore durante la chiusura delle sessioni. Riprova più tardi.",
-  M2 = () => "セッションの削除中にエラーが発生しました。時間をおいて再度お試しください。",
-  C2 = () => "Błąd podczas unieważniania sesji. Spróbuj ponownie później.",
-  B2 = () => "Ошибка при завершении сеансов. Попробуйте позже.",
-  G2 = () => "Помилка під час завершення сеансів. Спробуйте пізніше.",
-  A2 = () => "Lỗi thu hồi phiên đăng nhập. Hãy thử lại sau.",
-  Ldr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? m2() : r === "pt" ? b2() : r === "ch" ? j2() : r === "de" ? v2() : r === "es" ? w2() : r === "fr" ? z2() : r === "it" ? S2() : r === "jp" ? M2() : r === "pl" ? C2() : r === "ru" ? B2() : r === "uk" ? G2() : A2()
-  },
-  T2 = () => "Discord",
-  P2 = () => "Discord",
-  I2 = () => "Discord",
-  N2 = () => "Discord",
-  L2 = () => "Discord",
-  q2 = () => "Discord",
-  x2 = () => "Discord",
-  R2 = () => "Discord",
-  D2 = () => "Discord",
-  K2 = () => "Discord",
-  V2 = () => "Discord",
-  E2 = () => "Discord",
-  qdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? T2() : r === "pt" ? P2() : r === "ch" ? I2() : r === "de" ? N2() : r === "es" ? L2() : r === "fr" ? q2() : r === "it" ? x2() : r === "jp" ? R2() : r === "pl" ? D2() : r === "ru" ? K2() : r === "uk" ? V2() : E2()
-  },
-  H2 = () => "Droplets",
-  F2 = () => "Gotas",
-  O2 = () => "水滴",
-  J2 = () => "Droplets",
-  U2 = () => "Gotas",
-  Z2 = () => "Droplets",
-  W2 = () => "Gocce",
-  X2 = () => "ドロップレット",
-  Q2 = () => "Krople",
-  Y2 = () => "Droplets",
-  $2 = () => "Дроплети",
-  r3 = () => "Droplets",
-  xdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? H2() : r === "pt" ? F2() : r === "ch" ? O2() : r === "de" ? J2() : r === "es" ? U2() : r === "fr" ? Z2() : r === "it" ? W2() : r === "jp" ? X2() : r === "pl" ? Q2() : r === "ru" ? Y2() : r === "uk" ? $2() : r3()
-  },
-  t3 = () => "Logout",
-  n3 = () => "Desconectar",
-  e3 = () => "登出",
-  u3 = () => "Ausloggen",
-  o3 = () => "Cerrar sesión",
-  c3 = () => "Se déconnecter",
-  _3 = () => "Disconnetti",
-  s3 = () => "ログアウト",
-  i3 = () => "Wyloguj",
-  a3 = () => "Выйти",
-  l3 = () => "Вийти",
-  f3 = () => "Đăng xuất",
-  Rdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? t3() : r === "pt" ? n3() : r === "ch" ? e3() : r === "de" ? u3() : r === "es" ? o3() : r === "fr" ? c3() : r === "it" ? _3() : r === "jp" ? s3() : r === "pl" ? i3() : r === "ru" ? a3() : r === "uk" ? l3() : f3()
-  },
-  p3 = () => "Log out from all devices",
-  y3 = () => "Desconectar de todos os dispositivos",
-  d3 = () => "从所有设备登出",
-  h3 = () => "Von allen Geräten abmelden",
-  k3 = () => "Cerrar sesión en todos los dispositivos",
-  g3 = () => "Se déconnecter de tous les appareils",
-  m3 = () => "Disconnetti da tutti i dispositivi",
-  b3 = () => "すべての端末からログアウト",
-  j3 = () => "Wyloguj ze wszystkich urządzeń",
-  v3 = () => "Выйти на всех устройствах",
-  w3 = () => "Вийти з усіх пристроїв",
-  z3 = () => "Đăng xuất khỏi mọi thiết bị",
-  Ddr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? p3() : r === "pt" ? y3() : r === "ch" ? d3() : r === "de" ? h3() : r === "es" ? k3() : r === "fr" ? g3() : r === "it" ? m3() : r === "jp" ? b3() : r === "pl" ? j3() : r === "ru" ? v3() : r === "uk" ? w3() : z3()
-  },
-  S3 = () => "Max. Charges",
-  M3 = () => "Tinta máxima",
-  C3 = () => "最大充能",
-  B3 = () => "Max. Ladungen",
-  G3 = () => "Cargas máximas",
-  A3 = () => "Charges max",
-  T3 = () => "Cariche massime",
-  P3 = () => "最大チャージ数",
-  I3 = () => "Maks. ładunki",
-  N3 = () => "Макс. заряды",
-  L3 = () => "Макс. зарядів",
-  q3 = () => "Lượt tô tối đa",
-  Kdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? S3() : r === "pt" ? M3() : r === "ch" ? C3() : r === "de" ? B3() : r === "es" ? G3() : r === "fr" ? A3() : r === "it" ? T3() : r === "jp" ? P3() : r === "pl" ? I3() : r === "ru" ? N3() : r === "uk" ? L3() : q3()
-  },
-  x3 = () => "You have reached the report limit for the last hour",
-  R3 = () => "Você atingiu o limite de denúncias da última hora",
-  D3 = () => "您已达到过去一小时内的举报上限",
-  K3 = () => "Sie haben das Stundenlimit für Meldungen erreicht",
-  V3 = () => "Has alcanzado el límite de denuncias de la última hora",
-  E3 = () => "Vous avez atteint la limite de signalements de la dernière heure",
-  H3 = () => "Hai raggiunto il limite di segnalazioni nell'ultima ora",
-  F3 = () => "過去1時間の通報件数の上限に達しました",
-  O3 = () => "Osiągnąłeś limit zgłoszeń w ciągu ostatniej godziny",
-  J3 = () => "Вы достигли лимита жалоб за последний час",
-  U3 = () => "Ви досягли ліміту скарг за останню годину",
-  Z3 = () => "Bạn đã đạt đến giới hạn số lượt báo cáo trong giờ qua",
-  Vdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? x3() : r === "pt" ? R3() : r === "ch" ? D3() : r === "de" ? K3() : r === "es" ? V3() : r === "fr" ? E3() : r === "it" ? H3() : r === "jp" ? F3() : r === "pl" ? O3() : r === "ru" ? J3() : r === "uk" ? U3() : Z3()
-  },
-  W3 = () => "Your account is too new to report",
-  X3 = () => "Sua conta é muito nova para poder denunciar",
-  Q3 = () => "你的帐户太新了，无法举报。",
-  Y3 = () => "Ihr Konto ist zu neu, um etwas zu melden.",
-  $3 = () => "Tu cuenta es muy nueva para poder denunciar",
-  r4 = () => "Votre compte est trop récent pour signaler.",
-  t4 = () => "Il tuo account è troppo nuovo per poter segnalare",
-  n4 = () => "あなたのアカウントは新しすぎて、通報できません。",
-  e4 = () => "Twoje konto jest zbyt nowe, aby zgłaszać",
-  u4 = () => "Ваша учетная запись слишком новая, чтобы сообщать о нарушениях",
-  o4 = () => "Ваш обліковий запис занадто новий, щоб подавати скарги.",
-  c4 = () => "Tài khoản của bạn còn quá mới để báo cáo.",
-  Edr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? W3() : r === "pt" ? X3() : r === "ch" ? Q3() : r === "de" ? Y3() : r === "es" ? $3() : r === "fr" ? r4() : r === "it" ? t4() : r === "jp" ? n4() : r === "pl" ? e4() : r === "ru" ? u4() : r === "uk" ? o4() : c4()
-  },
-  _4 = () => "Name reported successfully",
-  s4 = () => "Nome denunciado com sucesso",
-  i4 = () => "名称举报成功",
-  a4 = () => "Name erfolgreich gemeldet",
-  l4 = () => "Nombre reportado correctamente",
-  f4 = () => "Nom signalé avec succès",
-  p4 = () => "Nome segnalato con successo",
-  y4 = () => "名前を通報しました。",
-  d4 = () => "Nazwa została pomyślnie zgłoszona",
-  h4 = () => "Имя успешно пожаловано",
-  k4 = () => "Імʼя успішно поскаржено",
-  g4 = () => "Đã báo cáo tên thành công",
-  Hdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _4() : r === "pt" ? s4() : r === "ch" ? i4() : r === "de" ? a4() : r === "es" ? l4() : r === "fr" ? f4() : r === "it" ? p4() : r === "jp" ? y4() : r === "pl" ? d4() : r === "ru" ? h4() : r === "uk" ? k4() : g4()
-  },
-  m4 = () => "Other reason not listed",
-  b4 = () => "Outro motivo não listado",
-  j4 = () => "未列出的其他原因",
-  v4 = () => "Anderer Grund, der nicht aufgelistet ist",
-  w4 = () => "Otro motivo no listado",
-  z4 = () => "Autre raison non listée",
-  S4 = () => "Altro motivo non elencato",
-  M4 = () => "上記以外の理由",
-  C4 = () => "Inny powód, którego nie ma na liście",
-  B4 = () => "Другая причина, не указанная в списке",
-  G4 = () => "Інша причина, не зазначена в списку",
-  A4 = () => "Lý do khác không có trong danh sách",
-  Fdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? m4() : r === "pt" ? b4() : r === "ch" ? j4() : r === "de" ? v4() : r === "es" ? w4() : r === "fr" ? z4() : r === "it" ? S4() : r === "jp" ? M4() : r === "pl" ? C4() : r === "ru" ? B4() : r === "uk" ? G4() : A4()
-  },
-  T4 = () => "Paint Charges",
-  P4 = () => "Tintas",
-  I4 = () => "绘制充能",
-  N4 = () => "Pixel-Ladungen",
-  L4 = () => "Cargas de pintura",
-  q4 = () => "Charges de peinture",
-  x4 = () => "Cariche di vernice",
-  R4 = () => "ペイントチャージ",
-  D4 = () => "Ładunki malowania",
-  K4 = () => "Заряды",
-  V4 = () => "Заряди фарби",
-  E4 = () => "Lượt tô",
-  Odr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? T4() : r === "pt" ? P4() : r === "ch" ? I4() : r === "de" ? N4() : r === "es" ? L4() : r === "fr" ? q4() : r === "it" ? x4() : r === "jp" ? R4() : r === "pl" ? D4() : r === "ru" ? K4() : r === "uk" ? V4() : E4()
-  },
-  H4 = () => "Beige",
-  F4 = () => "Bege",
-  O4 = () => "米色",
-  J4 = () => "Beige",
-  U4 = () => "Beige",
-  Z4 = () => "Beige",
-  W4 = () => "Beige",
-  X4 = () => "ベージュ",
-  Q4 = () => "Beżowy",
-  Y4 = () => "Бежевый",
-  $4 = () => "Бежевий",
-  r5 = () => "Màu be",
-  Jdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? H4() : r === "pt" ? F4() : r === "ch" ? O4() : r === "de" ? J4() : r === "es" ? U4() : r === "fr" ? Z4() : r === "it" ? W4() : r === "jp" ? X4() : r === "pl" ? Q4() : r === "ru" ? Y4() : r === "uk" ? $4() : r5()
-  },
-  t5 = () => "Black",
-  n5 = () => "Preto",
-  e5 = () => "黑色",
-  u5 = () => "Schwarz",
-  o5 = () => "Negro",
-  c5 = () => "Noir",
-  _5 = () => "Nero",
-  s5 = () => "黒",
-  i5 = () => "Czarny",
-  a5 = () => "Черный",
-  l5 = () => "Чорний",
-  f5 = () => "Đen",
-  Udr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? t5() : r === "pt" ? n5() : r === "ch" ? e5() : r === "de" ? u5() : r === "es" ? o5() : r === "fr" ? c5() : r === "it" ? _5() : r === "jp" ? s5() : r === "pl" ? i5() : r === "ru" ? a5() : r === "uk" ? l5() : f5()
-  },
-  p5 = () => "Blue",
-  y5 = () => "Azul",
-  d5 = () => "蓝色",
-  h5 = () => "Blau",
-  k5 = () => "Azul",
-  g5 = () => "Bleu",
-  m5 = () => "Blu",
-  b5 = () => "青",
-  j5 = () => "Niebieski",
-  v5 = () => "Синий",
-  w5 = () => "Синій",
-  z5 = () => "Xanh",
-  Zdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? p5() : r === "pt" ? y5() : r === "ch" ? d5() : r === "de" ? h5() : r === "es" ? k5() : r === "fr" ? g5() : r === "it" ? m5() : r === "jp" ? b5() : r === "pl" ? j5() : r === "ru" ? v5() : r === "uk" ? w5() : z5()
-  },
-  S5 = () => "Brown",
-  M5 = () => "Marrom",
-  C5 = () => "棕色",
-  B5 = () => "Braun",
-  G5 = () => "Marrón",
-  A5 = () => "Marron",
-  T5 = () => "Marrone",
-  P5 = () => "茶色",
-  I5 = () => "Brązowy",
-  N5 = () => "Коричневый",
-  L5 = () => "Коричневий",
-  q5 = () => "Nâu",
-  Wdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? S5() : r === "pt" ? M5() : r === "ch" ? C5() : r === "de" ? B5() : r === "es" ? G5() : r === "fr" ? A5() : r === "it" ? T5() : r === "jp" ? P5() : r === "pl" ? I5() : r === "ru" ? N5() : r === "uk" ? L5() : q5()
-  },
-  x5 = () => "Cyan",
-  R5 = () => "Ciano",
-  D5 = () => "青色",
-  K5 = () => "Cyan",
-  V5 = () => "Cian",
-  E5 = () => "Cyan",
-  H5 = () => "Ciano",
-  F5 = () => "シアン",
-  O5 = () => "Cyjan",
-  J5 = () => "Голубой",
-  U5 = () => "Ціановий",
-  Z5 = () => "Lục lam",
-  Xdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? x5() : r === "pt" ? R5() : r === "ch" ? D5() : r === "de" ? K5() : r === "es" ? V5() : r === "fr" ? E5() : r === "it" ? H5() : r === "jp" ? F5() : r === "pl" ? O5() : r === "ru" ? J5() : r === "uk" ? U5() : Z5()
-  },
-  W5 = () => "Dark Beige",
-  X5 = () => "Bege Escuro",
-  Q5 = () => "深米色",
-  Y5 = () => "Dunkelbeige",
-  $5 = () => "Beige Oscuro",
-  r6 = () => "Beige foncé",
-  t6 = () => "Beige Scuro",
-  n6 = () => "濃いベージュ",
-  e6 = () => "Ciemny Beżowy",
-  u6 = () => "Темный бежевый",
-  o6 = () => "Темний бежевий",
-  c6 = () => "Màu be đậm",
-  Qdr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? W5() : r === "pt" ? X5() : r === "ch" ? Q5() : r === "de" ? Y5() : r === "es" ? $5() : r === "fr" ? r6() : r === "it" ? t6() : r === "jp" ? n6() : r === "pl" ? e6() : r === "ru" ? u6() : r === "uk" ? o6() : c6()
-  },
-  _6 = () => "Dark Blue",
-  s6 = () => "Azul Escuro",
-  i6 = () => "深蓝色",
-  a6 = () => "Dunkelblau",
-  l6 = () => "Azul oscuro",
-  f6 = () => "Bleu foncé",
-  p6 = () => "Blu scuro",
-  y6 = () => "濃い青色",
-  d6 = () => "Ciemnoniebieski",
-  h6 = () => "Темно-синий",
-  k6 = () => "Темно-синій",
-  g6 = () => "Xanh đậm",
-  Ydr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _6() : r === "pt" ? s6() : r === "ch" ? i6() : r === "de" ? a6() : r === "es" ? l6() : r === "fr" ? f6() : r === "it" ? p6() : r === "jp" ? y6() : r === "pl" ? d6() : r === "ru" ? h6() : r === "uk" ? k6() : g6()
-  },
-  m6 = () => "Dark Brown",
-  b6 = () => "Marrom Escuro",
-  j6 = () => "深棕色",
-  v6 = () => "Dunkelbraun",
-  w6 = () => "Marrón Oscuro",
-  z6 = () => "Brun foncé",
-  S6 = () => "Marrone scuro",
-  M6 = () => "濃い茶色",
-  C6 = () => "Ciemnobrązowy",
-  B6 = () => "Тёмно-коричневый",
-  G6 = () => "Темно-коричневий",
-  A6 = () => "Nâu đậm",
-  $dr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? m6() : r === "pt" ? b6() : r === "ch" ? j6() : r === "de" ? v6() : r === "es" ? w6() : r === "fr" ? z6() : r === "it" ? S6() : r === "jp" ? M6() : r === "pl" ? C6() : r === "ru" ? B6() : r === "uk" ? G6() : A6()
-  },
-  T6 = () => "Dark Cyan",
-  P6 = () => "Ciano Escuro",
-  I6 = () => "深青色",
-  N6 = () => "Dunkelcyan",
-  L6 = () => "Cian Oscuro",
-  q6 = () => "Cyan foncé",
-  x6 = () => "Ciano Scuro",
-  R6 = () => "ダークシアン",
-  D6 = () => "Ciemny Cyjan",
-  K6 = () => "Темно-бирюзовый",
-  V6 = () => "Темно-бірюзовий",
-  E6 = () => "Xanh lam đậm",
-  rhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? T6() : r === "pt" ? P6() : r === "ch" ? I6() : r === "de" ? N6() : r === "es" ? L6() : r === "fr" ? q6() : r === "it" ? x6() : r === "jp" ? R6() : r === "pl" ? D6() : r === "ru" ? K6() : r === "uk" ? V6() : E6()
-  },
-  H6 = () => "Dark Goldenrod",
-  F6 = () => "Dourado Escuro",
-  O6 = () => "暗金菊色",
-  J6 = () => "Dunkelgoldrute",
-  U6 = () => "Dorado Oscuro",
-  Z6 = () => "Verge d'or foncée",
-  W6 = () => "Giallo verga d'oro scuro",
-  X6 = () => "ダークゴールデンロッド",
-  Q6 = () => "Ciemny złocisty",
-  Y6 = () => "Тёмный Золотарник",
-  $6 = () => "Темний золотарник",
-  r7 = () => "Vàng kim sa đậm",
-  thr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? H6() : r === "pt" ? F6() : r === "ch" ? O6() : r === "de" ? J6() : r === "es" ? U6() : r === "fr" ? Z6() : r === "it" ? W6() : r === "jp" ? X6() : r === "pl" ? Q6() : r === "ru" ? Y6() : r === "uk" ? $6() : r7()
-  },
-  t7 = () => "Dark Gray",
-  n7 = () => "Cinza Escuro",
-  e7 = () => "深灰色",
-  u7 = () => "Dunkelgrau",
-  o7 = () => "Gris oscuro",
-  c7 = () => "Gris foncé",
-  _7 = () => "Grigio scuro",
-  s7 = () => "濃い灰色",
-  i7 = () => "Ciemnoszary",
-  a7 = () => "Темно-серый",
-  l7 = () => "Темно-сірий",
-  f7 = () => "Xám đậm",
-  nhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? t7() : r === "pt" ? n7() : r === "ch" ? e7() : r === "de" ? u7() : r === "es" ? o7() : r === "fr" ? c7() : r === "it" ? _7() : r === "jp" ? s7() : r === "pl" ? i7() : r === "ru" ? a7() : r === "uk" ? l7() : f7()
-  },
-  p7 = () => "Dark Green",
-  y7 = () => "Verde Escuro",
-  d7 = () => "深绿色",
-  h7 = () => "Dunkelgrün",
-  k7 = () => "Verde Oscuro",
-  g7 = () => "Vert foncé",
-  m7 = () => "Verde scuro",
-  b7 = () => "濃い緑",
-  j7 = () => "Ciemnozielony",
-  v7 = () => "Темно-зеленый",
-  w7 = () => "Темно-зелений",
-  z7 = () => "Xanh lá đậm",
-  ehr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? p7() : r === "pt" ? y7() : r === "ch" ? d7() : r === "de" ? h7() : r === "es" ? k7() : r === "fr" ? g7() : r === "it" ? m7() : r === "jp" ? b7() : r === "pl" ? j7() : r === "ru" ? v7() : r === "uk" ? w7() : z7()
-  },
-  S7 = () => "Dark Indigo",
-  M7 = () => "Índigo Escuro",
-  C7 = () => "深靛色",
-  B7 = () => "Dunkelindigo",
-  G7 = () => "Índigo oscuro",
-  A7 = () => "Indigo foncé",
-  T7 = () => "Indaco Scuro",
-  P7 = () => "ダークインディゴ",
-  I7 = () => "Ciemne Indygo",
-  N7 = () => "Темный Индиго",
-  L7 = () => "Темний індиго",
-  q7 = () => "Chàm đậm",
-  uhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? S7() : r === "pt" ? M7() : r === "ch" ? C7() : r === "de" ? B7() : r === "es" ? G7() : r === "fr" ? A7() : r === "it" ? T7() : r === "jp" ? P7() : r === "pl" ? I7() : r === "ru" ? N7() : r === "uk" ? L7() : q7()
-  },
-  x7 = () => "Dark Olive",
-  R7 = () => "Verde Oliva Escuro",
-  D7 = () => "深橄榄",
-  K7 = () => "Dunkelolive",
-  V7 = () => "Verde oliva oscuro",
-  E7 = () => "Olive foncée",
-  H7 = () => "Verde oliva scuro",
-  F7 = () => "ダークオリーブ",
-  O7 = () => "Ciemna Oliwka",
-  J7 = () => "Темный оливковый",
-  U7 = () => "Темний оливковий",
-  Z7 = () => "Xanh ô liu đậm",
-  ohr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? x7() : r === "pt" ? R7() : r === "ch" ? D7() : r === "de" ? K7() : r === "es" ? V7() : r === "fr" ? E7() : r === "it" ? H7() : r === "jp" ? F7() : r === "pl" ? O7() : r === "ru" ? J7() : r === "uk" ? U7() : Z7()
-  },
-  W7 = () => "Dark Orange",
-  X7 = () => "Laranja Escuro",
-  Q7 = () => "深橙色",
-  Y7 = () => "Dunkelorange",
-  $7 = () => "Naranja Oscuro",
-  r8 = () => "Orange foncé",
-  t8 = () => "Arancione Scuro",
-  n8 = () => "濃いオレンジ",
-  e8 = () => "Ciemnopomarańczowy",
-  u8 = () => "Темно-оранжевый",
-  o8 = () => "Темно-помаранчевий",
-  c8 = () => "Cam đậm",
-  chr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? W7() : r === "pt" ? X7() : r === "ch" ? Q7() : r === "de" ? Y7() : r === "es" ? $7() : r === "fr" ? r8() : r === "it" ? t8() : r === "jp" ? n8() : r === "pl" ? e8() : r === "ru" ? u8() : r === "uk" ? o8() : c8()
-  },
-  _8 = () => "Dark Peach",
-  s8 = () => "Pêssego Escuro",
-  i8 = () => "深桃色",
-  a8 = () => "Dunkler Pfirsich",
-  l8 = () => "Melocotón oscuro",
-  f8 = () => "Pêche Foncé",
-  p8 = () => "Pesca Scura",
-  y8 = () => "ダークピーチ",
-  d8 = () => "Ciemna Brzoskwinia",
-  h8 = () => "Темный персик",
-  k8 = () => "Темний персик",
-  g8 = () => "Đào Đậm",
-  _hr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _8() : r === "pt" ? s8() : r === "ch" ? i8() : r === "de" ? a8() : r === "es" ? l8() : r === "fr" ? f8() : r === "it" ? p8() : r === "jp" ? y8() : r === "pl" ? d8() : r === "ru" ? h8() : r === "uk" ? k8() : g8()
-  },
-  m8 = () => "Dark Pink",
-  b8 = () => "Rosa Escuro",
-  j8 = () => "深粉色",
-  v8 = () => "Dunkelrosa",
-  w8 = () => "Rosa Oscuro",
-  z8 = () => "Rose foncé",
-  S8 = () => "Rosa scuro",
-  M8 = () => "濃いピンク",
-  C8 = () => "Ciemnoróżowy",
-  B8 = () => "Темно-розовый",
-  G8 = () => "Темно-рожевий",
-  A8 = () => "Hồng đậm",
-  shr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? m8() : r === "pt" ? b8() : r === "ch" ? j8() : r === "de" ? v8() : r === "es" ? w8() : r === "fr" ? z8() : r === "it" ? S8() : r === "jp" ? M8() : r === "pl" ? C8() : r === "ru" ? B8() : r === "uk" ? G8() : A8()
-  },
-  T8 = () => "Dark Purple",
-  P8 = () => "Roxo Escuro",
-  I8 = () => "深紫色",
-  N8 = () => "Dunkelviolett",
-  L8 = () => "Morado Oscuro",
-  q8 = () => "Violet foncé",
-  x8 = () => "Viola Scuro",
-  R8 = () => "濃い紫",
-  D8 = () => "Ciemny fiolet",
-  K8 = () => "Темно-фиолетовый",
-  V8 = () => "Темно-фіолетовий",
-  E8 = () => "Tím đậm",
-  ihr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? T8() : r === "pt" ? P8() : r === "ch" ? I8() : r === "de" ? N8() : r === "es" ? L8() : r === "fr" ? q8() : r === "it" ? x8() : r === "jp" ? R8() : r === "pl" ? D8() : r === "ru" ? K8() : r === "uk" ? V8() : E8()
-  },
-  H8 = () => "Dark Red",
-  F8 = () => "Vermelho Escuro",
-  O8 = () => "深红色",
-  J8 = () => "Dunkelrot",
-  U8 = () => "Rojo oscuro",
-  Z8 = () => "Rouge foncé",
-  W8 = () => "Rosso Scuro",
-  X8 = () => "濃い赤",
-  Q8 = () => "Ciemnoczerwony",
-  Y8 = () => "Темно-красный",
-  $8 = () => "Темно-червоний",
-  r9 = () => "Đỏ sẫm",
-  ahr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? H8() : r === "pt" ? F8() : r === "ch" ? O8() : r === "de" ? J8() : r === "es" ? U8() : r === "fr" ? Z8() : r === "it" ? W8() : r === "jp" ? X8() : r === "pl" ? Q8() : r === "ru" ? Y8() : r === "uk" ? $8() : r9()
-  },
-  t9 = () => "Dark Slate",
-  n9 = () => "Ardósia Escura",
-  e9 = () => "深板岩",
-  u9 = () => "Dunkelschiefer",
-  o9 = () => "Pizarra Oscura",
-  c9 = () => "Ardoise foncée",
-  _9 = () => "Ardesia scura",
-  s9 = () => "ダークスレート",
-  i9 = () => "Ciemny Łupek",
-  a9 = () => "Темный сланец",
-  l9 = () => "Темний шифер",
-  f9 = () => "Xám đá phiến đậm",
-  lhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? t9() : r === "pt" ? n9() : r === "ch" ? e9() : r === "de" ? u9() : r === "es" ? o9() : r === "fr" ? c9() : r === "it" ? _9() : r === "jp" ? s9() : r === "pl" ? i9() : r === "ru" ? a9() : r === "uk" ? l9() : f9()
-  },
-  p9 = () => "Dark Slate Blue",
-  y9 = () => "Azul Ardósia Escuro",
-  d9 = () => "深石板蓝",
-  h9 = () => "Dunkles Schieferblau",
-  k9 = () => "Azul Pizarra Oscuro",
-  g9 = () => "Bleu Ardoise Foncé",
-  m9 = () => "Blu Ardesia Scuro",
-  b9 = () => "ダークスレートブルー",
-  j9 = () => "Ciemny łupkowy błękit",
-  v9 = () => "Темно-сланцевый синий",
-  w9 = () => "Темний грифельно-синій",
-  z9 = () => "Xanh lam đá phiến đậm",
-  fhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? p9() : r === "pt" ? y9() : r === "ch" ? d9() : r === "de" ? h9() : r === "es" ? k9() : r === "fr" ? g9() : r === "it" ? m9() : r === "jp" ? b9() : r === "pl" ? j9() : r === "ru" ? v9() : r === "uk" ? w9() : z9()
-  },
-  S9 = () => "Dark Stone",
-  M9 = () => "Pedra Escura",
-  C9 = () => "黑石",
-  B9 = () => "Dunkler Stein",
-  G9 = () => "Piedra Oscura",
-  A9 = () => "Pierre sombre",
-  T9 = () => "Pietra Scura",
-  P9 = () => "暗黒石",
-  I9 = () => "Ciemny Kamień",
-  N9 = () => "Тёмный камень",
-  L9 = () => "Темний Камінь",
-  q9 = () => "Đá tối",
-  phr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? S9() : r === "pt" ? M9() : r === "ch" ? C9() : r === "de" ? B9() : r === "es" ? G9() : r === "fr" ? A9() : r === "it" ? T9() : r === "jp" ? P9() : r === "pl" ? I9() : r === "ru" ? N9() : r === "uk" ? L9() : q9()
-  },
-  x9 = () => "Dark Tan",
-  R9 = () => "Bronzeado Escuro",
-  D9 = () => "深棕褐色",
-  K9 = () => "Dunkelbraun",
-  V9 = () => "Bronceado Oscuro",
-  E9 = () => "Bronzage Foncé",
-  H9 = () => "Abbronzatura scura",
-  F9 = () => "濃い日焼け色",
-  O9 = () => "Ciemny beż",
-  J9 = () => "Темный загар",
-  U9 = () => "Темна засмага",
-  Z9 = () => "Rám nắng đậm",
-  yhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? x9() : r === "pt" ? R9() : r === "ch" ? D9() : r === "de" ? K9() : r === "es" ? V9() : r === "fr" ? E9() : r === "it" ? H9() : r === "jp" ? F9() : r === "pl" ? O9() : r === "ru" ? J9() : r === "uk" ? U9() : Z9()
-  },
-  W9 = () => "Dark Teal",
-  X9 = () => "Azul-petróleo escuro",
-  Q9 = () => "深青色",
-  Y9 = () => "Dunkles Türkis",
-  $9 = () => "Verde azulado oscuro",
-  r$ = () => "Sarcelle foncée",
-  t$ = () => "Ottanio scuro",
-  n$ = () => "ダークティール",
-  e$ = () => "Ciemny Turkusowy",
-  u$ = () => "Темно-бирюзовый",
-  o$ = () => "Темно-бірюзовий",
-  c$ = () => "Xanh mòng két đậm",
-  dhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? W9() : r === "pt" ? X9() : r === "ch" ? Q9() : r === "de" ? Y9() : r === "es" ? $9() : r === "fr" ? r$() : r === "it" ? t$() : r === "jp" ? n$() : r === "pl" ? e$() : r === "ru" ? u$() : r === "uk" ? o$() : c$()
-  },
-  _$ = () => "Deep Red",
-  s$ = () => "Vermelho Intenso",
-  i$ = () => "深红色",
-  a$ = () => "Dunkelrot",
-  l$ = () => "Rojo Oscuro",
-  f$ = () => "Rouge profond",
-  p$ = () => "Rosso Profondo",
-  y$ = () => "深紅",
-  d$ = () => "Głęboka Czerwień",
-  h$ = () => "Глубокий красный",
-  k$ = () => "Глибокий червоний",
-  g$ = () => "Đỏ đậm",
-  hhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _$() : r === "pt" ? s$() : r === "ch" ? i$() : r === "de" ? a$() : r === "es" ? l$() : r === "fr" ? f$() : r === "it" ? p$() : r === "jp" ? y$() : r === "pl" ? d$() : r === "ru" ? h$() : r === "uk" ? k$() : g$()
-  },
-  m$ = () => "Gold",
-  b$ = () => "Ouro",
-  j$ = () => "黄金",
-  v$ = () => "Gold",
-  w$ = () => "Oro",
-  z$ = () => "Or",
-  S$ = () => "Oro",
-  M$ = () => "ゴールド",
-  C$ = () => "Złoto",
-  B$ = () => "Золото",
-  G$ = () => "Золото",
-  A$ = () => "Vàng",
-  khr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? m$() : r === "pt" ? b$() : r === "ch" ? j$() : r === "de" ? v$() : r === "es" ? w$() : r === "fr" ? z$() : r === "it" ? S$() : r === "jp" ? M$() : r === "pl" ? C$() : r === "ru" ? B$() : r === "uk" ? G$() : A$()
-  },
-  T$ = () => "Goldenrod",
-  P$ = () => "Vara-de-ouro",
-  I$ = () => "秋麒麟草",
-  N$ = () => "Goldrute",
-  L$ = () => "vara de oro",
-  q$ = () => "Verge d'or",
-  x$ = () => "Verga d'oro",
-  R$ = () => "ゴールデンロッド",
-  D$ = () => "Nawłoć",
-  K$ = () => "Золотарник",
-  V$ = () => "Золотарник",
-  E$ = () => "Hoa Hoàng Anh",
-  ghr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? T$() : r === "pt" ? P$() : r === "ch" ? I$() : r === "de" ? N$() : r === "es" ? L$() : r === "fr" ? q$() : r === "it" ? x$() : r === "jp" ? R$() : r === "pl" ? D$() : r === "ru" ? K$() : r === "uk" ? V$() : E$()
-  },
-  H$ = () => "Gray",
-  F$ = () => "Cinza",
-  O$ = () => "灰色",
-  J$ = () => "Grau",
-  U$ = () => "Gris",
-  Z$ = () => "Gris",
-  W$ = () => "Grigio",
-  X$ = () => "グレー",
-  Q$ = () => "Szary",
-  Y$ = () => "Серый",
-  $$ = () => "Сірий",
-  rrr = () => "Xám",
-  mhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? H$() : r === "pt" ? F$() : r === "ch" ? O$() : r === "de" ? J$() : r === "es" ? U$() : r === "fr" ? Z$() : r === "it" ? W$() : r === "jp" ? X$() : r === "pl" ? Q$() : r === "ru" ? Y$() : r === "uk" ? $$() : rrr()
-  },
-  trr = () => "Green",
-  nrr = () => "Verde",
-  err = () => "绿色",
-  urr = () => "Grün",
-  orr = () => "Verde",
-  crr = () => "Vert",
-  _rr = () => "Verde",
-  srr = () => "緑",
-  irr = () => "Zielony",
-  arr = () => "Зелёный",
-  lrr = () => "Зелений",
-  frr = () => "Xanh lá",
-  bhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? trr() : r === "pt" ? nrr() : r === "ch" ? err() : r === "de" ? urr() : r === "es" ? orr() : r === "fr" ? crr() : r === "it" ? _rr() : r === "jp" ? srr() : r === "pl" ? irr() : r === "ru" ? arr() : r === "uk" ? lrr() : frr()
-  },
-  prr = () => "Indigo",
-  yrr = () => "Índigo",
-  drr = () => "靛蓝色",
-  hrr = () => "Indigo",
-  krr = () => "Índigo",
-  grr = () => "Indigo",
-  mrr = () => "Indaco",
-  brr = () => "インディゴ",
-  jrr = () => "Indygo",
-  vrr = () => "Индиго",
-  wrr = () => "Iндиго",
-  zrr = () => "Chàm",
-  jhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? prr() : r === "pt" ? yrr() : r === "ch" ? drr() : r === "de" ? hrr() : r === "es" ? krr() : r === "fr" ? grr() : r === "it" ? mrr() : r === "jp" ? brr() : r === "pl" ? jrr() : r === "ru" ? vrr() : r === "uk" ? wrr() : zrr()
-  },
-  Srr = () => "Light Beige",
-  Mrr = () => "Bege Claro",
-  Crr = () => "浅米色",
-  Brr = () => "Hellbeige",
-  Grr = () => "Beige claro",
-  Arr = () => "Beige clair",
-  Trr = () => "Beige chiaro",
-  Prr = () => "ライトベージュ",
-  Irr = () => "Jasny Beż",
-  Nrr = () => "Светло-бежевый",
-  Lrr = () => "Світло-бежевий",
-  qrr = () => "Be nhạt",
-  vhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Srr() : r === "pt" ? Mrr() : r === "ch" ? Crr() : r === "de" ? Brr() : r === "es" ? Grr() : r === "fr" ? Arr() : r === "it" ? Trr() : r === "jp" ? Prr() : r === "pl" ? Irr() : r === "ru" ? Nrr() : r === "uk" ? Lrr() : qrr()
-  },
-  xrr = () => "Light Blue",
-  Rrr = () => "Azul Claro",
-  Drr = () => "浅蓝色",
-  Krr = () => "Hellblau",
-  Vrr = () => "Azul Claro",
-  Err = () => "Bleu clair",
-  Hrr = () => "Azzurro",
-  Frr = () => "水色",
-  Orr = () => "Jasnoniebieski",
-  Jrr = () => "Светло-голубой",
-  Urr = () => "Світло-блакитний",
-  Zrr = () => "Xanh nhạt",
-  whr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xrr() : r === "pt" ? Rrr() : r === "ch" ? Drr() : r === "de" ? Krr() : r === "es" ? Vrr() : r === "fr" ? Err() : r === "it" ? Hrr() : r === "jp" ? Frr() : r === "pl" ? Orr() : r === "ru" ? Jrr() : r === "uk" ? Urr() : Zrr()
-  },
-  Wrr = () => "Light Brown",
-  Xrr = () => "Castanho Claro",
-  Qrr = () => "浅棕色",
-  Yrr = () => "Hellbraun",
-  $rr = () => "Marrón claro",
-  rtr = () => "Marron clair",
-  ttr = () => "Marrone Chiaro",
-  ntr = () => "薄茶色",
-  etr = () => "Jasnobrązowy",
-  utr = () => "Светло-коричневый",
-  otr = () => "Світло-коричневий",
-  ctr = () => "Nâu nhạt",
-  zhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Wrr() : r === "pt" ? Xrr() : r === "ch" ? Qrr() : r === "de" ? Yrr() : r === "es" ? $rr() : r === "fr" ? rtr() : r === "it" ? ttr() : r === "jp" ? ntr() : r === "pl" ? etr() : r === "ru" ? utr() : r === "uk" ? otr() : ctr()
-  },
-  _tr = () => "Light Cyan",
-  str = () => "Ciano Claro",
-  itr = () => "浅青色",
-  atr = () => "Hellcyan",
-  ltr = () => "Cian claro",
-  ftr = () => "Cyan clair",
-  ptr = () => "Ciano chiaro",
-  ytr = () => "ライトシアン",
-  dtr = () => "Jasny Cyjan",
-  htr = () => "Светло-голубой",
-  ktr = () => "Світло-блакитний",
-  gtr = () => "Xanh lơ nhạt",
-  Shr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _tr() : r === "pt" ? str() : r === "ch" ? itr() : r === "de" ? atr() : r === "es" ? ltr() : r === "fr" ? ftr() : r === "it" ? ptr() : r === "jp" ? ytr() : r === "pl" ? dtr() : r === "ru" ? htr() : r === "uk" ? ktr() : gtr()
-  },
-  mtr = () => "Light Goldenrod",
-  btr = () => "Dourado Claro",
-  jtr = () => "浅金菊色",
-  vtr = () => "Helles Goldrutengelb",
-  wtr = () => "Amarillo mimosa claro",
-  ztr = () => "Jaune verge d'or clair",
-  Str = () => "Giallo verga d'oro chiaro",
-  Mtr = () => "ライトゴールデンロッド",
-  Ctr = () => "Jasny Złocisty",
-  Btr = () => "Светло-золотистый",
-  Gtr = () => "Світло-золотистий",
-  Atr = () => "Vàng kim nhạt",
-  Mhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mtr() : r === "pt" ? btr() : r === "ch" ? jtr() : r === "de" ? vtr() : r === "es" ? wtr() : r === "fr" ? ztr() : r === "it" ? Str() : r === "jp" ? Mtr() : r === "pl" ? Ctr() : r === "ru" ? Btr() : r === "uk" ? Gtr() : Atr()
-  },
-  Ttr = () => "Light Gray",
-  Ptr = () => "Cinza Claro",
-  Itr = () => "浅灰色",
-  Ntr = () => "Hellgrau",
-  Ltr = () => "Gris Claro",
-  qtr = () => "Gris clair",
-  xtr = () => "Grigio chiaro",
-  Rtr = () => "ライトグレー",
-  Dtr = () => "Jasnoszary",
-  Ktr = () => "Светло-серый",
-  Vtr = () => "Світло-сірий",
-  Etr = () => "Xám nhạt",
-  Chr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Ttr() : r === "pt" ? Ptr() : r === "ch" ? Itr() : r === "de" ? Ntr() : r === "es" ? Ltr() : r === "fr" ? qtr() : r === "it" ? xtr() : r === "jp" ? Rtr() : r === "pl" ? Dtr() : r === "ru" ? Ktr() : r === "uk" ? Vtr() : Etr()
-  },
-  Htr = () => "Light Green",
-  Ftr = () => "Verde Claro",
-  Otr = () => "浅绿色",
-  Jtr = () => "Hellgrün",
-  Utr = () => "Verde claro",
-  Ztr = () => "Vert clair",
-  Wtr = () => "Verde chiaro",
-  Xtr = () => "薄緑",
-  Qtr = () => "Jasnozielony",
-  Ytr = () => "Светло-зеленый",
-  $tr = () => "Світло-зелений",
-  rnr = () => "Xanh lá cây nhạt",
-  Bhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Htr() : r === "pt" ? Ftr() : r === "ch" ? Otr() : r === "de" ? Jtr() : r === "es" ? Utr() : r === "fr" ? Ztr() : r === "it" ? Wtr() : r === "jp" ? Xtr() : r === "pl" ? Qtr() : r === "ru" ? Ytr() : r === "uk" ? $tr() : rnr()
-  },
-  tnr = () => "Light Indigo",
-  nnr = () => "Índigo Claro",
-  enr = () => "浅靛蓝色",
-  unr = () => "Hellindigo",
-  onr = () => "Índigo Claro",
-  cnr = () => "Indigo clair",
-  _nr = () => "Indaco Chiaro",
-  snr = () => "ライトインディゴ",
-  inr = () => "Jasne Indygo",
-  anr = () => "Светлое индиго",
-  lnr = () => "Світле індиго",
-  fnr = () => "Xanh chàm nhạt",
-  Ghr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? tnr() : r === "pt" ? nnr() : r === "ch" ? enr() : r === "de" ? unr() : r === "es" ? onr() : r === "fr" ? cnr() : r === "it" ? _nr() : r === "jp" ? snr() : r === "pl" ? inr() : r === "ru" ? anr() : r === "uk" ? lnr() : fnr()
-  },
-  pnr = () => "Light Olive",
-  ynr = () => "Oliva Clara",
-  dnr = () => "浅橄榄色",
-  hnr = () => "Helle Olive",
-  knr = () => "Oliva claro",
-  gnr = () => "Olive claire",
-  mnr = () => "Oliva chiara",
-  bnr = () => "ライトオリーブ",
-  jnr = () => "Jasny oliwkowy",
-  vnr = () => "Светло-оливковый",
-  wnr = () => "Світлий оливковий",
-  znr = () => "Ô liu nhạt",
-  Ahr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pnr() : r === "pt" ? ynr() : r === "ch" ? dnr() : r === "de" ? hnr() : r === "es" ? knr() : r === "fr" ? gnr() : r === "it" ? mnr() : r === "jp" ? bnr() : r === "pl" ? jnr() : r === "ru" ? vnr() : r === "uk" ? wnr() : znr()
-  },
-  Snr = () => "Light Peach",
-  Mnr = () => "Pêssego Claro",
-  Cnr = () => "浅桃色",
-  Bnr = () => "Heller Pfirsich",
-  Gnr = () => "Melocotón claro",
-  Anr = () => "Pêche Claire",
-  Tnr = () => "Pesca Chiara",
-  Pnr = () => "ライトピーチ",
-  Inr = () => "Jasna Brzoskwinia",
-  Nnr = () => "Светлый персик",
-  Lnr = () => "Світлий персик",
-  qnr = () => "Đào nhạt",
-  Thr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Snr() : r === "pt" ? Mnr() : r === "ch" ? Cnr() : r === "de" ? Bnr() : r === "es" ? Gnr() : r === "fr" ? Anr() : r === "it" ? Tnr() : r === "jp" ? Pnr() : r === "pl" ? Inr() : r === "ru" ? Nnr() : r === "uk" ? Lnr() : qnr()
-  },
-  xnr = () => "Light Pink",
-  Rnr = () => "Rosa Claro",
-  Dnr = () => "浅粉红色",
-  Knr = () => "Hellrosa",
-  Vnr = () => "Rosa claro",
-  Enr = () => "Rose clair",
-  Hnr = () => "Rosa chiaro",
-  Fnr = () => "薄ピンク",
-  Onr = () => "Jasnoróżowy",
-  Jnr = () => "Светло-розовый",
-  Unr = () => "Світло-рожевий",
-  Znr = () => "Hồng nhạt",
-  Phr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xnr() : r === "pt" ? Rnr() : r === "ch" ? Dnr() : r === "de" ? Knr() : r === "es" ? Vnr() : r === "fr" ? Enr() : r === "it" ? Hnr() : r === "jp" ? Fnr() : r === "pl" ? Onr() : r === "ru" ? Jnr() : r === "uk" ? Unr() : Znr()
-  },
-  Wnr = () => "Light Purple",
-  Xnr = () => "Roxo Claro",
-  Qnr = () => "浅紫色",
-  Ynr = () => "Helllila",
-  $nr = () => "Morado Claro",
-  rer = () => "Violet clair",
-  ter = () => "Viola Chiaro",
-  ner = () => "薄紫",
-  eer = () => "Jasny fioletowy",
-  uer = () => "Светло-фиолетовый",
-  oer = () => "Світло-фіолетовий",
-  cer = () => "Tím nhạt",
-  Ihr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Wnr() : r === "pt" ? Xnr() : r === "ch" ? Qnr() : r === "de" ? Ynr() : r === "es" ? $nr() : r === "fr" ? rer() : r === "it" ? ter() : r === "jp" ? ner() : r === "pl" ? eer() : r === "ru" ? uer() : r === "uk" ? oer() : cer()
-  },
-  _er = () => "Light Red",
-  ser = () => "Vermelho Claro",
-  ier = () => "浅红色",
-  aer = () => "Hellrot",
-  ler = () => "Rojo claro",
-  fer = () => "Rouge clair",
-  per = () => "Rosso chiaro",
-  yer = () => "薄い赤",
-  der = () => "Jasnoczerwony",
-  her = () => "Светло-красный",
-  ker = () => "Світло-червоний",
-  ger = () => "Đỏ nhạt",
-  Nhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _er() : r === "pt" ? ser() : r === "ch" ? ier() : r === "de" ? aer() : r === "es" ? ler() : r === "fr" ? fer() : r === "it" ? per() : r === "jp" ? yer() : r === "pl" ? der() : r === "ru" ? her() : r === "uk" ? ker() : ger()
-  },
-  mer = () => "Light Slate",
-  ber = () => "Ardósia Clara",
-  jer = () => "浅青灰",
-  ver = () => "Helles Schiefergrau",
-  wer = () => "Pizarra Clara",
-  zer = () => "Ardoise claire",
-  Ser = () => "Ardesia Chiara",
-  Mer = () => "ライトスレート",
-  Cer = () => "Jasny Łupek",
-  Ber = () => "Светлый грифельный",
-  Ger = () => "Світлий грифельний",
-  Aer = () => "Xám đá nhạt",
-  Lhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? mer() : r === "pt" ? ber() : r === "ch" ? jer() : r === "de" ? ver() : r === "es" ? wer() : r === "fr" ? zer() : r === "it" ? Ser() : r === "jp" ? Mer() : r === "pl" ? Cer() : r === "ru" ? Ber() : r === "uk" ? Ger() : Aer()
-  },
-  Ter = () => "Light Slate Blue",
-  Per = () => "Azul Ardósia Claro",
-  Ier = () => "浅板岩蓝",
-  Ner = () => "Hellschieferblau",
-  Ler = () => "Azul Pizarra Claro",
-  qer = () => "Bleu ardoise clair",
-  xer = () => "Blu Ardesia Chiaro",
-  Rer = () => "ライトスレートブルー",
-  Der = () => "Jasny błękit łupkowy",
-  Ker = () => "Светлый шиферно-синий",
-  Ver = () => "Світлий грифельно-синій",
-  Eer = () => "Xanh đá phiến nhạt",
-  qhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Ter() : r === "pt" ? Per() : r === "ch" ? Ier() : r === "de" ? Ner() : r === "es" ? Ler() : r === "fr" ? qer() : r === "it" ? xer() : r === "jp" ? Rer() : r === "pl" ? Der() : r === "ru" ? Ker() : r === "uk" ? Ver() : Eer()
-  },
-  Her = () => "Light Stone",
-  Fer = () => "Pedra Leve",
-  Oer = () => "轻石",
-  Jer = () => "Heller Stein",
-  Uer = () => "Piedra Clara",
-  Zer = () => "Pierre légère",
-  Wer = () => "Pietra Chiara",
-  Xer = () => "光石",
-  Qer = () => "Jasny Kamień",
-  Yer = () => "Светлый камень",
-  $er = () => "Світлий камінь",
-  rur = () => "Đá sáng",
-  xhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Her() : r === "pt" ? Fer() : r === "ch" ? Oer() : r === "de" ? Jer() : r === "es" ? Uer() : r === "fr" ? Zer() : r === "it" ? Wer() : r === "jp" ? Xer() : r === "pl" ? Qer() : r === "ru" ? Yer() : r === "uk" ? $er() : rur()
-  },
-  tur = () => "Light Tan",
-  nur = () => "Bege Claro",
-  eur = () => "浅棕色",
-  uur = () => "Hellbraun",
-  our = () => "Beige claro",
-  cur = () => "Beige clair",
-  _ur = () => "Beige chiaro",
-  sur = () => "ライトタン",
-  iur = () => "Jasny beż",
-  aur = () => "Светло-бежевый",
-  lur = () => "Світло-бежевий",
-  fur = () => "Nâu nhạt",
-  Rhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? tur() : r === "pt" ? nur() : r === "ch" ? eur() : r === "de" ? uur() : r === "es" ? our() : r === "fr" ? cur() : r === "it" ? _ur() : r === "jp" ? sur() : r === "pl" ? iur() : r === "ru" ? aur() : r === "uk" ? lur() : fur()
-  },
-  pur = () => "Light Teal",
-  yur = () => "Verde-azulado claro",
-  dur = () => "浅水鸭色",
-  hur = () => "Helltürkis",
-  kur = () => "Verde azulado claro",
-  gur = () => "Bleu-vert clair",
-  mur = () => "Verde acqua chiaro",
-  bur = () => "ライトティール",
-  jur = () => "Jasny turkusowy",
-  vur = () => "Светло-бирюзовый",
-  wur = () => "Світло-бірюзовий",
-  zur = () => "Xanh mòng két nhạt",
-  Dhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? pur() : r === "pt" ? yur() : r === "ch" ? dur() : r === "de" ? hur() : r === "es" ? kur() : r === "fr" ? gur() : r === "it" ? mur() : r === "jp" ? bur() : r === "pl" ? jur() : r === "ru" ? vur() : r === "uk" ? wur() : zur()
-  },
-  Sur = () => "Light Yellow",
-  Mur = () => "Amarelo Claro",
-  Cur = () => "浅黄色",
-  Bur = () => "Hellgelb",
-  Gur = () => "Amarillo Claro",
-  Aur = () => "Jaune clair",
-  Tur = () => "Giallo chiaro",
-  Pur = () => "薄黄色",
-  Iur = () => "Jasnożółty",
-  Nur = () => "Светло-желтый",
-  Lur = () => "Світло-жовтий",
-  qur = () => "Vàng nhạt",
-  Khr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Sur() : r === "pt" ? Mur() : r === "ch" ? Cur() : r === "de" ? Bur() : r === "es" ? Gur() : r === "fr" ? Aur() : r === "it" ? Tur() : r === "jp" ? Pur() : r === "pl" ? Iur() : r === "ru" ? Nur() : r === "uk" ? Lur() : qur()
-  },
-  xur = () => "Medium Gray",
-  Rur = () => "Cinza Médio",
-  Dur = () => "中灰色",
-  Kur = () => "Mittelgrau",
-  Vur = () => "Gris medio",
-  Eur = () => "Gris moyen",
-  Hur = () => "Grigio medio",
-  Fur = () => "ミディアムグレー",
-  Our = () => "Średni szary",
-  Jur = () => "Средний серый",
-  Uur = () => "Середній сірий",
-  Zur = () => "Xám trung bình",
-  Vhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? xur() : r === "pt" ? Rur() : r === "ch" ? Dur() : r === "de" ? Kur() : r === "es" ? Vur() : r === "fr" ? Eur() : r === "it" ? Hur() : r === "jp" ? Fur() : r === "pl" ? Our() : r === "ru" ? Jur() : r === "uk" ? Uur() : Zur()
-  },
-  Wur = () => "Olive",
-  Xur = () => "Azeitona",
-  Qur = () => "橄榄",
-  Yur = () => "Olive",
-  $ur = () => "Aceituna",
-  ror = () => "Olive",
-  tor = () => "Oliva",
-  nor = () => "オリーブ",
-  eor = () => "Oliwka",
-  uor = () => "Олива",
-  oor = () => "Оливка",
-  cor = () => "Ô liu",
-  Ehr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Wur() : r === "pt" ? Xur() : r === "ch" ? Qur() : r === "de" ? Yur() : r === "es" ? $ur() : r === "fr" ? ror() : r === "it" ? tor() : r === "jp" ? nor() : r === "pl" ? eor() : r === "ru" ? uor() : r === "uk" ? oor() : cor()
-  },
-  _or = () => "Orange",
-  sor = () => "Laranja",
-  ior = () => "橙色",
-  aor = () => "Orange",
-  lor = () => "Naranja",
-  por = () => "Orange",
-  yor = () => "Arancia",
-  dor = () => "オレンジ",
-  hor = () => "Pomarańcza",
-  kor = () => "Оранжевый",
-  gor = () => "Помаранчевий",
-  mor = () => "Cam",
-  Hhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? _or() : r === "pt" ? sor() : r === "ch" ? ior() : r === "de" ? aor() : r === "es" ? lor() : r === "fr" ? por() : r === "it" ? yor() : r === "jp" ? dor() : r === "pl" ? hor() : r === "ru" ? kor() : r === "uk" ? gor() : mor()
-  },
-  bor = () => "Peach",
-  jor = () => "Pêssego",
-  vor = () => "桃子",
-  wor = () => "Pfirsich",
-  zor = () => "Melocotón",
-  Sor = () => "Pêche",
-  Mor = () => "Pesca",
-  Cor = () => "桃",
-  Bor = () => "Brzoskwinia",
-  Gor = () => "Персик",
-  Aor = () => "Персик",
-  Tor = () => "Đào",
-  Fhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? bor() : r === "pt" ? jor() : r === "ch" ? vor() : r === "de" ? wor() : r === "es" ? zor() : r === "fr" ? Sor() : r === "it" ? Mor() : r === "jp" ? Cor() : r === "pl" ? Bor() : r === "ru" ? Gor() : r === "uk" ? Aor() : Tor()
-  },
-  Por = () => "Pink",
-  Ior = () => "Rosa",
-  Nor = () => "粉色",
-  Lor = () => "Rosa",
-  qor = () => "Rosa",
-  xor = () => "Rose",
-  Ror = () => "Rosa",
-  Dor = () => "ピンク",
-  Kor = () => "Różowy",
-  Vor = () => "Розовый",
-  Eor = () => "Рожевий",
-  Hor = () => "Hồng",
-  Ohr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Por() : r === "pt" ? Ior() : r === "ch" ? Nor() : r === "de" ? Lor() : r === "es" ? qor() : r === "fr" ? xor() : r === "it" ? Ror() : r === "jp" ? Dor() : r === "pl" ? Kor() : r === "ru" ? Vor() : r === "uk" ? Eor() : Hor()
-  },
-  For = () => "Purple",
-  Oor = () => "Roxo",
-  Jor = () => "紫色",
-  Uor = () => "Lila",
-  Zor = () => "Morado",
-  Wor = () => "Violet",
-  Xor = () => "Viola",
-  Qor = () => "紫",
-  Yor = () => "Fioletowy",
-  $or = () => "Фиолетовый",
-  rcr = () => "Фіолетовий",
-  tcr = () => "Tím",
-  Jhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? For() : r === "pt" ? Oor() : r === "ch" ? Jor() : r === "de" ? Uor() : r === "es" ? Zor() : r === "fr" ? Wor() : r === "it" ? Xor() : r === "jp" ? Qor() : r === "pl" ? Yor() : r === "ru" ? $or() : r === "uk" ? rcr() : tcr()
-  },
-  ncr = () => "Red",
-  ecr = () => "Vermelho",
-  ucr = () => "红色",
-  ocr = () => "Rot",
-  ccr = () => "Rojo",
-  _cr = () => "Rouge",
-  scr = () => "Rosso",
-  icr = () => "赤",
-  acr = () => "Czerwony",
-  lcr = () => "Красный",
-  fcr = () => "Червоний",
-  pcr = () => "Đỏ",
-  Uhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? ncr() : r === "pt" ? ecr() : r === "ch" ? ucr() : r === "de" ? ocr() : r === "es" ? ccr() : r === "fr" ? _cr() : r === "it" ? scr() : r === "jp" ? icr() : r === "pl" ? acr() : r === "ru" ? lcr() : r === "uk" ? fcr() : pcr()
-  },
-  ycr = () => "Slate",
-  dcr = () => "Ardósia",
-  hcr = () => "石板",
-  kcr = () => "Schiefer",
-  gcr = () => "Pizarra",
-  mcr = () => "Ardoise",
-  bcr = () => "Ardesia",
-  jcr = () => "スレート",
-  vcr = () => "Łupek",
-  wcr = () => "Сланец",
-  zcr = () => "Сланець",
-  Scr = () => "Đá phiến",
-  Zhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? ycr() : r === "pt" ? dcr() : r === "ch" ? hcr() : r === "de" ? kcr() : r === "es" ? gcr() : r === "fr" ? mcr() : r === "it" ? bcr() : r === "jp" ? jcr() : r === "pl" ? vcr() : r === "ru" ? wcr() : r === "uk" ? zcr() : Scr()
-  },
-  Mcr = () => "Slate Blue",
-  Ccr = () => "Azul Ardósia",
-  Bcr = () => "石板蓝",
-  Gcr = () => "Schieferblau",
-  Acr = () => "Azul pizarra",
-  Tcr = () => "Bleu ardoise",
-  Pcr = () => "Blu ardesia",
-  Icr = () => "スレートブルー",
-  Ncr = () => "Niebiesko-szary",
-  Lcr = () => "Сланцево-синий",
-  qcr = () => "Грифельно-синій",
-  xcr = () => "Xanh lam đá phiến",
-  Whr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Mcr() : r === "pt" ? Ccr() : r === "ch" ? Bcr() : r === "de" ? Gcr() : r === "es" ? Acr() : r === "fr" ? Tcr() : r === "it" ? Pcr() : r === "jp" ? Icr() : r === "pl" ? Ncr() : r === "ru" ? Lcr() : r === "uk" ? qcr() : xcr()
-  },
-  Rcr = () => "Stone",
-  Dcr = () => "Pedra",
-  Kcr = () => "石头",
-  Vcr = () => "Stein",
-  Ecr = () => "Piedra",
-  Hcr = () => "Pierre",
-  Fcr = () => "Pietra",
-  Ocr = () => "石",
-  Jcr = () => "Kamień",
-  Ucr = () => "Камень",
-  Zcr = () => "Камінь",
-  Wcr = () => "Đá",
-  Xhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Rcr() : r === "pt" ? Dcr() : r === "ch" ? Kcr() : r === "de" ? Vcr() : r === "es" ? Ecr() : r === "fr" ? Hcr() : r === "it" ? Fcr() : r === "jp" ? Ocr() : r === "pl" ? Jcr() : r === "ru" ? Ucr() : r === "uk" ? Zcr() : Wcr()
-  },
-  Xcr = () => "Tan",
-  Qcr = () => "Bronzeado",
-  Ycr = () => "谭",
-  $cr = () => "Hellbraun",
-  r_r = () => "Tan",
-  t_r = () => "Bronzé",
-  n_r = () => "abbronzatura",
-  e_r = () => "黄褐色",
-  u_r = () => "Opalenizna",
-  o_r = () => "Загар",
-  c_r = () => "Бежевий",
-  __r = () => "Tân",
-  Qhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Xcr() : r === "pt" ? Qcr() : r === "ch" ? Ycr() : r === "de" ? $cr() : r === "es" ? r_r() : r === "fr" ? t_r() : r === "it" ? n_r() : r === "jp" ? e_r() : r === "pl" ? u_r() : r === "ru" ? o_r() : r === "uk" ? c_r() : __r()
-  },
-  s_r = () => "Teal",
-  i_r = () => "Azul-petróleo",
-  a_r = () => "鸭绿色",
-  l_r = () => "Petrol",
-  f_r = () => "Verde azulado",
-  p_r = () => "Sarcelle",
-  y_r = () => "Verde acqua",
-  d_r = () => "ティー",
-  h_r = () => "Turkusowy",
-  k_r = () => "Бирюзовый",
-  g_r = () => "Бірюзовий",
-  m_r = () => "Xanh mòng két",
-  Yhr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? s_r() : r === "pt" ? i_r() : r === "ch" ? a_r() : r === "de" ? l_r() : r === "es" ? f_r() : r === "fr" ? p_r() : r === "it" ? y_r() : r === "jp" ? d_r() : r === "pl" ? h_r() : r === "ru" ? k_r() : r === "uk" ? g_r() : m_r()
-  },
-  b_r = () => "Transparent",
-  j_r = () => "Transparente",
-  v_r = () => "透明",
-  w_r = () => "Transparent",
-  z_r = () => "Transparente",
-  S_r = () => "Transparent",
-  M_r = () => "Trasparente",
-  C_r = () => "透明",
-  B_r = () => "Przejrzysty",
-  G_r = () => "Прозрачный",
-  A_r = () => "Прозорий",
-  T_r = () => "Trong suốt",
-  $hr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? b_r() : r === "pt" ? j_r() : r === "ch" ? v_r() : r === "de" ? w_r() : r === "es" ? z_r() : r === "fr" ? S_r() : r === "it" ? M_r() : r === "jp" ? C_r() : r === "pl" ? B_r() : r === "ru" ? G_r() : r === "uk" ? A_r() : T_r()
-  },
-  P_r = () => "White",
-  I_r = () => "Branco",
-  N_r = () => "白色",
-  L_r = () => "Weiß",
-  q_r = () => "Blanco",
-  x_r = () => "Blanc",
-  R_r = () => "Bianco",
-  D_r = () => "白",
-  K_r = () => "Biały",
-  V_r = () => "Белый",
-  E_r = () => "Білий",
-  H_r = () => "Trắng",
-  rkr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? P_r() : r === "pt" ? I_r() : r === "ch" ? N_r() : r === "de" ? L_r() : r === "es" ? q_r() : r === "fr" ? x_r() : r === "it" ? R_r() : r === "jp" ? D_r() : r === "pl" ? K_r() : r === "ru" ? V_r() : r === "uk" ? E_r() : H_r()
-  },
-  F_r = () => "Yellow",
-  O_r = () => "Amarelo",
-  J_r = () => "黄色",
-  U_r = () => "Gelb",
-  Z_r = () => "Amarillo",
-  W_r = () => "Jaune",
-  X_r = () => "Giallo",
-  Q_r = () => "黄色",
-  Y_r = () => "Żółty",
-  $_r = () => "Желтый",
-  rsr = () => "Жовтий",
-  tsr = () => "Vàng",
-  tkr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? F_r() : r === "pt" ? O_r() : r === "ch" ? J_r() : r === "de" ? U_r() : r === "es" ? Z_r() : r === "fr" ? W_r() : r === "it" ? X_r() : r === "jp" ? Q_r() : r === "pl" ? Y_r() : r === "ru" ? $_r() : r === "uk" ? rsr() : tsr()
-  },
-  nsr = () => "Profile picture",
-  esr = () => "Imagem de perfil",
-  usr = () => "头像",
-  osr = () => "Profilbild",
-  csr = () => "Imagen de perfil",
-  _sr = () => "Image de profil",
-  ssr = () => "Immagine del profilo",
-  isr = () => "プロフィール画像",
-  asr = () => "Zdjęcie profilowe",
-  lsr = () => "Изображение профиля",
-  fsr = () => "Зображення профілю",
-  psr = () => "Ảnh đại diện",
-  nkr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? nsr() : r === "pt" ? esr() : r === "ch" ? usr() : r === "de" ? osr() : r === "es" ? csr() : r === "fr" ? _sr() : r === "it" ? ssr() : r === "jp" ? isr() : r === "pl" ? asr() : r === "ru" ? lsr() : r === "uk" ? fsr() : psr()
-  },
-  ysr = () => "Purchases",
-  dsr = () => "Compras",
-  hsr = () => "购买记录",
-  ksr = () => "Käufe",
-  gsr = () => "Compras",
-  msr = () => "Achats",
-  bsr = () => "Acquisti",
-  jsr = () => "購入履歴",
-  vsr = () => "Zakupy",
-  wsr = () => "Покупки",
-  zsr = () => "Покупки",
-  Ssr = () => "Mua hàng",
-  ekr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? ysr() : r === "pt" ? dsr() : r === "ch" ? hsr() : r === "de" ? ksr() : r === "es" ? gsr() : r === "fr" ? msr() : r === "it" ? bsr() : r === "jp" ? jsr() : r === "pl" ? vsr() : r === "ru" ? wsr() : r === "uk" ? zsr() : Ssr()
-  },
-  Msr = () => "Report",
-  Csr = () => "Denunciar",
-  Bsr = () => "举报",
-  Gsr = () => "Melden",
-  Asr = () => "Reportar",
-  Tsr = () => "Signaler",
-  Psr = () => "Segnala",
-  Isr = () => "通報",
-  Nsr = () => "Zgłoś",
-  Lsr = () => "Пожаловаться",
-  qsr = () => "Поскаржитися",
-  xsr = () => "Báo cáo",
-  ukr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Msr() : r === "pt" ? Csr() : r === "ch" ? Bsr() : r === "de" ? Gsr() : r === "es" ? Asr() : r === "fr" ? Tsr() : r === "it" ? Psr() : r === "jp" ? Isr() : r === "pl" ? Nsr() : r === "ru" ? Lsr() : r === "uk" ? qsr() : xsr()
-  },
-  Rsr = () => "Report alliance name",
-  Dsr = () => "Denunciar nome da aliança",
-  Ksr = () => "举报联盟名称",
-  Vsr = () => "Allianzname melden",
-  Esr = () => "Reportar nombre de la alianza",
-  Hsr = () => "Signaler le nom de l’alliance",
-  Fsr = () => "Segnala nome dell'alleanza",
-  Osr = () => "アライアンス名を通報",
-  Jsr = () => "Zgłoś nazwę sojuszu",
-  Usr = () => "Пожаловаться на название альянса",
-  Zsr = () => "Поскаржитися на назву альянсу",
-  Wsr = () => "Báo cáo tên liên minh",
-  okr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Rsr() : r === "pt" ? Dsr() : r === "ch" ? Ksr() : r === "de" ? Vsr() : r === "es" ? Esr() : r === "fr" ? Hsr() : r === "it" ? Fsr() : r === "jp" ? Osr() : r === "pl" ? Jsr() : r === "ru" ? Usr() : r === "uk" ? Zsr() : Wsr()
-  },
-  Xsr = () => "Report failed. Please try again later",
-  Qsr = () => "Denúncia falhou. Por favor, tente novamente mais tarde",
-  Ysr = () => "举报失败，请稍后再试",
-  $sr = () => "Meldung fehlgeschlagen. Bitte versuche es später erneut",
-  rir = () => "Error al enviar el reporte. Inténtalo de nuevo más tarde",
-  tir = () => "Échec du signalement. Veuillez réessayer plus tard",
-  nir = () => "Segnalazione fallita. Riprova più tardi",
-  eir = () => "通報に失敗しました。時間をおいて再度お試しください",
-  uir = () => "Zgłoszenie nie powiodło się. Spróbuj ponownie później",
-  oir = () => "Не удалось отправить жалобу. Попробуйте позже.",
-  cir = () => "Не вдалося відправити скаргу. Спробуйте пізніше.",
-  _ir = () => "Báo cáo thất bại. Vui lòng thử lại sau",
-  ckr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Xsr() : r === "pt" ? Qsr() : r === "ch" ? Ysr() : r === "de" ? $sr() : r === "es" ? rir() : r === "fr" ? tir() : r === "it" ? nir() : r === "jp" ? eir() : r === "pl" ? uir() : r === "ru" ? oir() : r === "uk" ? cir() : _ir()
-  },
-  sir = () => "Report name",
-  iir = () => "Denunciar nome",
-  air = () => "举报名称",
-  lir = () => "Namen melden",
-  fir = () => "Reportar nombre",
-  pir = () => "Signaler un nom",
-  yir = () => "Segnala nome",
-  dir = () => "名前を通報",
-  hir = () => "Zgłoś nazwę",
-  kir = () => "Пожаловаться на имя",
-  gir = () => "Поскаржитися на імʼя",
-  mir = () => "Báo cáo tên",
-  _kr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? sir() : r === "pt" ? iir() : r === "ch" ? air() : r === "de" ? lir() : r === "es" ? fir() : r === "fr" ? pir() : r === "it" ? yir() : r === "jp" ? dir() : r === "pl" ? hir() : r === "ru" ? kir() : r === "uk" ? gir() : mir()
-  },
-  bir = () => "Report sent successfully",
-  jir = () => "Denúncia enviada com sucesso",
-  vir = () => "举报已成功发送",
-  wir = () => "Meldung erfolgreich gesendet",
-  zir = () => "Reporte enviado correctamente",
-  Sir = () => "Signalement envoyé avec succès",
-  Mir = () => "Segnalazione inviata con successo",
-  Cir = () => "通報を送信しました。",
-  Bir = () => "Zgłoszenie zostało pomyślnie wysłane",
-  Gir = () => "Жалоба успешно отправлена",
-  Air = () => "Скаргу успішно надіслано",
-  Tir = () => "Đã gửi báo cáo thành công",
-  skr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? bir() : r === "pt" ? jir() : r === "ch" ? vir() : r === "de" ? wir() : r === "es" ? zir() : r === "fr" ? Sir() : r === "it" ? Mir() : r === "jp" ? Cir() : r === "pl" ? Bir() : r === "ru" ? Gir() : r === "uk" ? Air() : Tir()
-  },
-  Pir = () => "Report User",
-  Iir = () => "Denunciar usuário",
-  Nir = () => "举报用户",
-  Lir = () => "Benutzer melden",
-  qir = () => "Reportar usuario",
-  xir = () => "Signaler un utilisateur",
-  Rir = () => "Segnala utente",
-  Dir = () => "ユーザーを通報",
-  Kir = () => "Zgłoś użytkownika",
-  Vir = () => "Пожаловаться на пользователя",
-  Eir = () => "Поскаржитися на користувача",
-  Hir = () => "Báo cáo người chơi",
-  ikr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Pir() : r === "pt" ? Iir() : r === "ch" ? Nir() : r === "de" ? Lir() : r === "es" ? qir() : r === "fr" ? xir() : r === "it" ? Rir() : r === "jp" ? Dir() : r === "pl" ? Kir() : r === "ru" ? Vir() : r === "uk" ? Eir() : Hir()
-  },
-  Fir = () => "The reported user is already suspended",
-  Oir = () => "O usuário denunciado já está suspenso",
-  Jir = () => "被举报的用户已被暂停",
-  Uir = () => "Der gemeldete Benutzer ist bereits gesperrt",
-  Zir = () => "El usuario reportado ya está suspendido",
-  Wir = () => "L'utilisateur signalé est déjà suspendu",
-  Xir = () => "L'utente segnalato è già sospeso",
-  Qir = () => "報告されたユーザーはすでに停止されています",
-  Yir = () => "Zgłoszony użytkownik jest już zawieszony",
-  $ir = () => "Заблокированный пользователь уже отстранен",
-  rar = () => "На користувача, про якого повідомили, вже накладено блокування",
-  tar = () => "Người dùng bị báo cáo đã bị đình chỉ",
-  akr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Fir() : r === "pt" ? Oir() : r === "ch" ? Jir() : r === "de" ? Uir() : r === "es" ? Zir() : r === "fr" ? Wir() : r === "it" ? Xir() : r === "jp" ? Qir() : r === "pl" ? Yir() : r === "ru" ? $ir() : r === "uk" ? rar() : tar()
-  },
-  nar = () => "Cannot report while banned",
-  ear = () => "Não é possível denunciar enquanto banido",
-  uar = () => "被封禁时无法举报",
-  oar = () => "Es ist nicht möglich zu melden, während man gesperrt ist",
-  car = () => "No es posible denunciar mientras baneado",
-  _ar = () => "Vous ne pouvez pas signaler tant que vous êtes banni.",
-  sar = () => "Non è possibile segnalare mentre si è bannati",
-  iar = () => "バンされている間は通報できません。",
-  aar = () => "Nie można zgłosić, będąc zbanowanym.",
-  lar = () => "Нельзя пожаловаться, находясь в бане",
-  far = () => "Неможливо повідомити, поки ви заблоковані",
-  par = () => "Không thể tố cáo khi bị cấm.",
-  lkr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? nar() : r === "pt" ? ear() : r === "ch" ? uar() : r === "de" ? oar() : r === "es" ? car() : r === "fr" ? _ar() : r === "it" ? sar() : r === "jp" ? iar() : r === "pl" ? aar() : r === "ru" ? lar() : r === "uk" ? far() : par()
-  },
-  yar = () => "Sessions successfully revoked",
-  dar = () => "Sessões encerradas com sucesso",
-  har = () => "会话已成功撤销",
-  kar = () => "Sitzungen erfolgreich beendet",
-  gar = () => "Sesiones revocadas correctamente",
-  mar = () => "Sessions révoquées avec succès",
-  bar = () => "Sessioni terminate con successo",
-  jar = () => "セッションを正常に解除しました。",
-  war = () => "Sesje zostały pomyślnie unieważnione",
-  zar = () => "Сеансы успешно завершены",
-  Sar = () => "Сеанси успішно завершено",
-  Mar = () => "Đã thu hồi phiên đăng nhập thành công",
-  fkr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? yar() : r === "pt" ? dar() : r === "ch" ? har() : r === "de" ? kar() : r === "es" ? gar() : r === "fr" ? mar() : r === "it" ? bar() : r === "jp" ? jar() : r === "pl" ? war() : r === "ru" ? zar() : r === "uk" ? Sar() : Mar()
-  },
-  Car = () => "Timeout User",
-  Bar = () => "Suspender usuário",
-  Gar = () => "禁言用户",
-  Aar = () => "Benutzer timeouten",
-  Tar = () => "Suspender usuario",
-  Par = () => "Suspendre l’utilisateur",
-  Iar = () => "Sospendi utente",
-  Nar = () => "ユーザーをタイムアウト",
-  Lar = () => "Zawieś użytkownika",
-  qar = () => "Дать тайм-аут пользователю",
-  xar = () => "Дати тайм-аут користувачу",
-  Rar = () => "Tạm khóa người dùng",
-  pkr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Car() : r === "pt" ? Bar() : r === "ch" ? Gar() : r === "de" ? Aar() : r === "es" ? Tar() : r === "fr" ? Par() : r === "it" ? Iar() : r === "jp" ? Nar() : r === "pl" ? Lar() : r === "ru" ? qar() : r === "uk" ? xar() : Rar()
-  },
-  Dar = () => "Unlock",
-  Kar = () => "Destravar",
-  Var = () => "解锁",
-  Ear = () => "Entsperren",
-  Har = () => "Desbloquear",
-  Far = () => "Déverrouiller",
-  Oar = () => "Sblocca",
-  Jar = () => "ロック解除",
-  Uar = () => "Odblokuj",
-  Zar = () => "Разблокировать",
-  War = () => "Розблокувати",
-  Xar = () => "Mở khóa",
-  ykr = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Dar() : r === "pt" ? Kar() : r === "ch" ? Var() : r === "de" ? Ear() : r === "es" ? Har() : r === "fr" ? Far() : r === "it" ? Oar() : r === "jp" ? Jar() : r === "pl" ? Uar() : r === "ru" ? Zar() : r === "uk" ? War() : Xar()
+  k as Zn,
+  f as pa,
+  a as i,
+  v as oa,
+  p as Un,
+  m as Sa,
+  h as A,
+  d as r,
+  s as u,
+  r as s,
+  n as ya,
+  b as qn,
+  e as J,
+  i as a,
+  t as g,
+  c as I,
+  u as w,
+  l as Q
+} from "./wFsvFKKp.js";
+import {
+  i as G
+} from "./BVciu6sd.js";
+import {
+  e as na,
+  f as Dn,
+  r as Ma,
+  s as X,
+  g as Kn,
+  a as Hn
+} from "./BGMKwhhq.js";
+import {
+  r as ba,
+  p as On
+} from "./C4jQIU3W.js";
+import {
+  s as m
+} from "./B_EGJrw5.js";
+import {
+  e as Ta
+} from "./DSz1_7V5.js";
+import {
+  t as Fn
+} from "./1KCZkbvm.js";
+import {
+  d as Vn,
+  e as Ba,
+  a as va
+} from "./D2UtoGHN.js";
+import {
+  c as Wn
+} from "./rR7wqgw4.js";
+import {
+  b as jn
+} from "./BlUCsbYQ.js";
+import {
+  t as f,
+  o as Yn,
+  P as Jn,
+  v as Qn,
+  p as Xn,
+  q as $n,
+  a as ma,
+  r as ao,
+  i as to,
+  w as eo,
+  h as so,
+  x as ro,
+  d as no,
+  y as oo,
+  c as co,
+  z as lo,
+  m as _o,
+  B as io,
+  g as uo
+} from "./ClF9qu09.js";
+import {
+  L as yo
+} from "./DGoRKOMt.js";
+import {
+  P as La
+} from "./Ojqua900.js";
+import {
+  S as Aa
+} from "./BCtkhd_w.js";
+import {
+  S as Ga
+} from "./GI-SDEh7.js";
+import {
+  G as Na,
+  T as Pa
+} from "./BjuEPdwJ.js";
+import "./BhCkpOlh.js";
+import {
+  r as vo,
+  g as K,
+  h as mo,
+  i as po,
+  j as bo,
+  k as go,
+  n as fo,
+  o as Ea,
+  t as Ra,
+  q as ho,
+  v as xo,
+  w as wo,
+  x as ko,
+  y as Io,
+  z as Co,
+  A as So,
+  B as Mo,
+  C as To,
+  D as Bo,
+  E as Lo,
+  F as Ao,
+  G as Go,
+  H as No,
+  I as Po,
+  J as Eo,
+  K as Ro,
+  L as zo,
+  M as Zo,
+  N as Uo,
+  O as qo,
+  P as Do,
+  Q as Ko,
+  R as Ho,
+  S as Oo,
+  T as Fo,
+  U as Vo,
+  V as Wo,
+  W as jo,
+  X as Yo,
+  Y as Jo,
+  Z as Qo,
+  _ as Xo,
+  $ as $o,
+  a0 as ac,
+  a1 as tc,
+  a2 as ec,
+  a3 as sc,
+  a4 as rc,
+  a5 as nc,
+  a6 as oc,
+  a7 as cc,
+  a8 as lc,
+  a9 as _c,
+  aa as ic,
+  ab as uc,
+  ac as dc,
+  ad as yc,
+  ae as vc,
+  af as mc,
+  ag as pc,
+  ah as bc,
+  ai as gc,
+  aj as fc,
+  ak as hc,
+  al as xc,
+  am as wc,
+  an as kc,
+  ao as Ic,
+  ap as Cc,
+  aq as Sc,
+  ar as Mc,
+  as as Tc,
+  at as Bc,
+  au as Lc,
+  av as Ac,
+  aw as Gc,
+  ax as Nc,
+  ay as Pc,
+  az as Ec,
+  aA as Ua,
+  aB as qa,
+  aC as Da,
+  aD as Ka,
+  aE as Ha,
+  aF as Oa,
+  aG as Fa,
+  aH as Va,
+  aI as Wa,
+  aJ as ja,
+  aK as Ya,
+  aL as Ja,
+  aM as Qa,
+  aN as Xa,
+  aO as $a,
+  aP as at,
+  aQ as tt,
+  aR as et,
+  aS as st,
+  aT as rt,
+  aU as nt,
+  aV as ot,
+  aW as ct,
+  aX as lt,
+  aY as _t,
+  aZ as it,
+  a_ as ut,
+  a$ as dt,
+  b0 as yt,
+  b1 as vt,
+  b2 as mt,
+  b3 as pt,
+  b4 as bt,
+  b5 as gt,
+  b6 as ft,
+  b7 as ht,
+  b8 as xt,
+  b9 as wt,
+  ba as kt,
+  bb as It,
+  bc as Ct,
+  bd as St,
+  be as Mt,
+  bf as Tt,
+  bg as Bt,
+  bh as Lt,
+  bi as At,
+  bj as Gt,
+  bk as Nt,
+  bl as Pt,
+  bm as Et,
+  bn as Rt,
+  bo as zt,
+  bp as Zt,
+  bq as Ut,
+  br as qt,
+  bs as Dt,
+  bt as Kt,
+  bu as Ht,
+  bv as Ot,
+  bw as Ft,
+  bx as Vt,
+  by as Wt,
+  bz as jt,
+  bA as Yt,
+  bB as Jt,
+  bC as Qt,
+  bD as Xt,
+  bE as $t,
+  bF as ae,
+  bG as te,
+  bH as ee,
+  bI as se,
+  bJ as re,
+  bK as ne,
+  bL as oe,
+  bM as ce,
+  bN as le,
+  bO as _e,
+  bP as ie,
+  bQ as ue,
+  bR as de,
+  bS as ye,
+  bT as ve,
+  bU as me,
+  bV as pe,
+  bW as be,
+  bX as ge,
+  bY as fe,
+  bZ as he,
+  b_ as xe,
+  b$ as we,
+  c0 as ke,
+  c1 as Ie,
+  c2 as Ce,
+  c3 as Se,
+  c4 as Me,
+  c5 as Te,
+  c6 as Be,
+  c7 as Le,
+  c8 as Ae,
+  c9 as Ge,
+  ca as Ne,
+  cb as Pe,
+  cc as Ee,
+  cd as Re,
+  ce as ze,
+  cf as Ze,
+  cg as Ue,
+  ch as qe,
+  ci as De,
+  cj as Ke,
+  ck as He,
+  cl as Oe,
+  cm as Fe,
+  cn as Ve,
+  co as We,
+  cp as je,
+  cq as Ye,
+  cr as Je,
+  cs as Qe,
+  ct as Xe,
+  cu as $e,
+  cv as as,
+  cw as ts,
+  cx as es,
+  cy as ss,
+  cz as rs,
+  cA as ns,
+  cB as os,
+  cC as cs,
+  cD as ls,
+  cE as _s,
+  cF as is,
+  cG as us,
+  cH as ds,
+  cI as ys,
+  cJ as vs,
+  cK as ms,
+  cL as ps,
+  cM as bs,
+  cN as gs,
+  cO as fs,
+  cP as hs,
+  cQ as xs,
+  cR as ws,
+  cS as ks,
+  cT as Is,
+  cU as Cs,
+  cV as Ss,
+  cW as Ms,
+  cX as Ts,
+  cY as Bs,
+  cZ as Ls,
+  c_ as As,
+  c$ as Gs,
+  d0 as Ns,
+  d1 as Ps,
+  d2 as Es,
+  d3 as Rs,
+  d4 as zs,
+  d5 as Zs,
+  d6 as Us,
+  d7 as qs,
+  d8 as Ds,
+  d9 as Ks,
+  da as Hs,
+  db as Os,
+  dc as Fs,
+  dd as Vs,
+  de as Ws,
+  df as js,
+  dg as Ys,
+  dh as Js,
+  di as Qs,
+  dj as Xs,
+  dk as $s,
+  dl as ar,
+  dm as tr,
+  dn as er,
+  dp as sr,
+  dq as rr,
+  dr as nr,
+  ds as or,
+  dt as cr,
+  du as lr,
+  dv as _r,
+  dw as ir,
+  dx as ur,
+  dy as dr,
+  dz as yr,
+  dA as vr,
+  dB as mr,
+  dC as pr,
+  dD as br,
+  dE as gr,
+  dF as fr,
+  dG as hr,
+  dH as xr,
+  dI as wr,
+  dJ as kr,
+  dK as Ir,
+  dL as Cr,
+  dM as Sr,
+  dN as Mr,
+  dO as Tr,
+  dP as Br,
+  dQ as Lr,
+  dR as Ar,
+  dS as Gr,
+  dT as Nr,
+  dU as Pr,
+  dV as Er,
+  dW as Rr,
+  dX as zr,
+  dY as Zr,
+  dZ as Ur,
+  d_ as qr,
+  d$ as Dr,
+  e0 as Kr,
+  e1 as Hr,
+  e2 as Or,
+  e3 as Fr,
+  e4 as Vr,
+  e5 as Wr,
+  e6 as jr,
+  e7 as Yr,
+  e8 as Jr,
+  e9 as Qr,
+  ea as Xr,
+  eb as $r,
+  ec as an,
+  ed as tn,
+  ee as en,
+  ef as sn,
+  eg as rn,
+  eh as nn,
+  ei as on,
+  ej as cn,
+  ek as ln,
+  el as _n,
+  em as un,
+  en as dn,
+  eo as yn,
+  ep as vn,
+  eq as mn,
+  er as pn,
+  es as bn,
+  et as gn,
+  eu as fn,
+  ev as hn
+} from "./sWl_twxk.js";
+import {
+  b as za
+} from "./DaX0l6qk.js";
+import {
+  c as Rc
+} from "./D6_ahSxh.js";
+import {
+  s as zc,
+  g as Zc
+} from "./BLjWTpzi.js";
+import {
+  o as Uc
+} from "./L80GiOtt.js";
+import {
+  a as qc
+} from "./Db1xt4Ft.js";
+import {
+  t as Za
+} from "./BJMWNMzA.js";
+import {
+  u as Dc,
+  a as Kc
+} from "./NZukRHw1.js";
+import {
+  g as H,
+  a as ra
+} from "./CFOWqOVw.js";
+import {
+  f as Hc
+} from "./BI5KFv7B.js";
+var Oc = oa('<svg><path d="M160-160v-100.77l527.23-527.77q6.15-5.48 13.57-8.47 7.43-2.99 15.49-2.99t15.62 2.54q7.55 2.54 13.94 9.15l42.69 42.93q6.61 6.38 9.04 14 2.42 7.63 2.42 15.25 0 8.13-2.74 15.56-2.74 7.42-8.72 13.57L260.77-160H160Zm540.15-496.46L760-715.54 715.54-760l-59.08 59.85 43.69 43.69Z"></path></svg>'),
+  Fc = oa('<svg><path d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"></path></svg>');
+
+function zl(D, t) {
+  let U = ba(t, ["$$slots", "$$events", "$$legacy", "filled"]);
+  var p = Zn(),
+    P = pa(p);
+  {
+    var O = E => {
+        var z = Oc();
+        na(z, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...U
+        })), i(E, z)
+      },
+      V = E => {
+        var z = Fc();
+        na(z, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...U
+        })), i(E, z)
+      };
+    G(P, E => {
+      t.filled ? E(O) : E(V, !1)
+    })
+  }
+  i(D, p)
+}
+var Vc = oa('<svg><path d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"></path></svg>');
+
+function Wc(D, t) {
+  let U = ba(t, ["$$slots", "$$events", "$$legacy"]);
+  var p = Vc();
+  na(p, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...U
+  })), i(D, p)
+}
+var jc = I("<span> </span> <span> </span>", 1),
+  Yc = I('<span class="badge badge-sm border-0"> </span>'),
+  Jc = I('<span class="tooltip"><!></span>'),
+  Qc = I('<span class="tooltip"><!></span>'),
+  Xc = I('<li><button class="text-error py-2 font-medium"> </button></li>'),
+  $c = I('<div><!> <!> <!> <!> <div class="dropdown dropdown-bottom max-sm:dropdown-bottom max-sm:dropdown-left"><button tabindex="0" class="btn btn-xs btn-circle btn-ghost"><!></button> <ul class="dropdown-content menu bg-base-100 z-1 mb-1 w-max gap-0.5 rounded-xl p-2.5 shadow-sm"><li><button class="text-error py-2 font-medium"> </button></li> <!></ul></div></div>'),
+  al = I("<span> </span> <span> </span>", 1),
+  tl = I('<span class="tooltip"><!></span>'),
+  el = I('<span class="tooltip"><!></span>'),
+  sl = I('<li class="flex items-center gap-2 px-3 py-2"><!> <div class="min-w-0"><div class="flex flex-wrap items-center gap-1"><!> <!> <!></div></div></li>'),
+  rl = I('<div class="border-base-300 mt-4 max-h-40 overflow-y-auto rounded-lg border"><ul class="divide-base-200 divide-y"></ul></div>'),
+  nl = I('<label class="flex gap-3"><input name="reason" class="radio radio-sm mt-1" type="radio"/> <div><div class="font-semibold"> </div> <div class="text-base-content/80 text-sm"> </div></div></label>'),
+  ol = I('<form method="POST"><input name="zoom" hidden=""/> <section class="flex gap-3"><!> <div class="min-w-0"><h2 class="text-xl font-semibold"><!></h2> <!></div></section> <!> <section class="mt-6"><h3 class="text-base-content/80 text-base"> </h3> <div class="mt-2 flex flex-col gap-3"></div></section> <section class="mt-6"><!></section> <section class="mt-3 flex justify-end gap-2"><button type="button" class="btn"> </button> <button class="btn btn-error"> </button></section></form>'),
+  cl = I('<dialog class="modal" closedby="any"><div class="modal-box max-h-[97%] max-w-xl"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute top-2 right-2">✕</button></form> <!></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
+
+function Zl(D, t) {
+  Un(t, !0);
+  const U = [];
+  let p = On(t, "open", 15),
+    P = J(!1),
+    O = J(""),
+    V = J(""),
+    E = J(null),
+    z = J(null);
+  const xn = [{
+    value: "inappropriate-content",
+    label: to(),
+    description: ao()
+  }, {
+    value: "hate-speech",
+    label: so(),
+    description: eo()
+  }, {
+    value: "doxxing",
+    label: no(),
+    description: ro()
+  }, {
+    value: "bot",
+    label: co(),
+    description: oo()
+  }, {
+    value: "multi-accounting",
+    label: _o(),
+    description: lo()
+  }, {
+    value: "griefing",
+    label: uo(),
+    description: io()
+  }, {
+    value: "other",
+    label: Uc(),
+    description: ho()
+  }];
+  let v = w(() => {
+    var C;
+    return (C = t.targets) == null ? void 0 : C[0]
+  });
+  Sa(() => {
+    p() || (A(O, ""), A(V, ""))
+  });
+  async function wn(C) {
+    try {
+      A(P, !0);
+      for (const k of C)
+        if (k.id !== 0) try {
+          await ma.postReportUserName(k.id), f.success(ko())
+        } catch {
+          f.error(K())
+        }
+    } catch {
+      f.error(K())
+    } finally {
+      A(P, !1)
+    }
+  }
+  async function kn(C) {
+    try {
+      A(P, !0);
+      for (const k of C)
+        if (k.allianceId) try {
+          await ma.postReportAllianceName(k.allianceId), f.success(Co())
+        } catch {
+          f.error(K())
+        }
+    } catch {
+      f.error(K())
+    } finally {
+      A(P, !1)
+    }
+  }
+  var W = cl(),
+    ga = r(W),
+    In = u(r(ga), 2);
+  {
+    var Cn = C => {
+      var k = ol(),
+        $ = r(k);
+      Ma($);
+      var ca = u($, 2),
+        fa = r(ca);
+      {
+        var Sn = n => {
+          {
+            let e = w(() => a(v).id ?? 0);
+            La(n, {
+              get userId() {
+                return a(e)
+              },
+              get pictureUrl() {
+                return a(v).picture
+              },
+              class: "size-14"
+            })
+          }
+        };
+        G(fa, n => {
+          a(v) && t.targets.length === 1 && n(Sn)
+        })
+      }
+      var ha = u(fa, 2),
+        la = r(ha),
+        Mn = r(la);
+      {
+        var Tn = n => {
+            var e = Q();
+            g(_ => m(e, _), [() => xo()]), i(n, e)
+          },
+          Bn = n => {
+            var e = Q();
+            g(_ => m(e, _), [() => Ra()]), i(n, e)
+          },
+          Ln = n => {
+            var e = Q();
+            g(_ => m(e, _), [() => Ea()]), i(n, e)
+          };
+        G(Mn, n => {
+          t.action === "report-user" ? n(Tn) : t.action === "timeout" ? n(Bn, 1) : t.action === "ban" && n(Ln, 2)
+        })
+      }
+      s(la);
+      var An = u(la, 2);
+      {
+        var Gn = n => {
+          var e = $c(),
+            _ = r(e);
+          Ga(_, {
+            get userId() {
+              return a(v).id
+            },
+            linkClass: "flex gap-1.5",
+            textClass: "flex gap-1.5",
+            children: (c, l) => {
+              var y = jc(),
+                S = pa(y),
+                Y = r(S, !0);
+              s(S);
+              var sa = u(S, 2),
+                Ia = r(sa);
+              s(sa), g(() => {
+                m(Y, a(v).name), m(Ia, `#${a(v).id??""}`)
+              }), i(c, y)
+            },
+            $$slots: {
+              default: !0
+            }
+          });
+          var h = u(_, 2);
+          {
+            var o = c => {
+              var l = Yc(),
+                y = r(l);
+              s(l), g(() => m(y, `+${t.targets.length-1} more`)), i(c, l)
+            };
+            G(h, c => {
+              t.targets.length > 1 && c(o)
+            })
+          }
+          var M = u(h, 2);
+          {
+            var d = c => {
+              {
+                let l = w(() => ra(a(v).allianceId)),
+                  y = w(() => H(a(v).allianceId)),
+                  S = w(() => ra(a(v).allianceId)),
+                  Y = w(() => H(a(v).allianceId));
+                Aa(c, {
+                  get allianceId() {
+                    return a(v).allianceId
+                  },
+                  get linkClass() {
+                    return `badge badge-sm ml-0.5 border-0 ${a(l)??""} ${a(y)??""}`
+                  },
+                  get textClass() {
+                    return `badge badge-sm ml-0.5 border-0 ${a(S)??""} ${a(Y)??""}`
+                  },
+                  children: (sa, Ia) => {
+                    ya();
+                    var Ca = Q();
+                    g(() => m(Ca, a(v).allianceName)), i(sa, Ca)
+                  },
+                  $$slots: {
+                    default: !0
+                  }
+                })
+              }
+            };
+            G(M, c => {
+              a(v).allianceId && a(v).allianceName && c(d)
+            })
+          }
+          var T = u(M, 2);
+          {
+            var N = c => {
+                var l = Jc(),
+                  y = r(l);
+                Na(y, {
+                  class: "text-error inline size-4"
+                }), s(l), g(S => X(l, "data-tip", S), [() => za()]), i(c, l)
+              },
+              B = c => {
+                var l = Qc(),
+                  y = r(l);
+                Pa(y, {
+                  class: "text-warning inline size-4"
+                }), s(l), g(S => X(l, "data-tip", S), [() => Za()]), i(c, l)
+              };
+            G(T, c => {
+              a(v).banned ? c(N) : a(v).timedOut && c(B, 1)
+            })
+          }
+          var R = u(T, 2),
+            L = r(R),
+            ta = r(L);
+          Wc(ta, {
+            class: "text-error inline size-4"
+          }), s(L);
+          var ea = u(L, 2),
+            j = r(ea),
+            b = r(j),
+            x = r(b, !0);
+          s(b), s(j);
+          var Z = u(j, 2);
+          {
+            var q = c => {
+                var l = Xc(),
+                  y = r(l),
+                  S = r(y, !0);
+                s(y), s(l), g(Y => m(S, Y), [() => Io()]), va("click", y, async () => {
+                  await kn(t.targets), document.activeElement.blur()
+                }), i(c, l)
+              },
+              F = w(() => t.targets.some(c => c.allianceId));
+            G(Z, c => {
+              a(F) && c(q)
+            })
+          }
+          s(ea), s(R), s(e), g((c, l) => {
+            Hn(e, 1, `font-medium ${c??""} flex flex-wrap items-center gap-1.5`), m(x, l)
+          }, [() => H(a(v).id), () => wo()]), va("click", b, async () => {
+            await wn(t.targets), document.activeElement.blur()
+          }), i(n, e)
+        };
+        G(An, n => {
+          a(v) && t.targets.length === 1 && n(Gn)
+        })
+      }
+      s(ha), s(ca);
+      var xa = u(ca, 2);
+      {
+        var Nn = n => {
+          var e = rl(),
+            _ = r(e);
+          Ta(_, 21, () => t.targets, h => h.id, (h, o) => {
+            var M = sl(),
+              d = r(M);
+            La(d, {
+              class: "size-8",
+              get userId() {
+                return a(o).id
+              },
+              get pictureUrl() {
+                return a(o).picture
+              }
+            });
+            var T = u(d, 2),
+              N = r(T),
+              B = r(N);
+            {
+              let b = w(() => H(a(o).id)),
+                x = w(() => H(a(o).id));
+              Ga(B, {
+                get userId() {
+                  return a(o).id
+                },
+                get linkClass() {
+                  return `font-medium ${a(b)??""} flex gap-1.5`
+                },
+                get textClass() {
+                  return `font-medium ${a(x)??""} flex gap-1.5`
+                },
+                children: (Z, q) => {
+                  var F = al(),
+                    c = pa(F),
+                    l = r(c, !0);
+                  s(c);
+                  var y = u(c, 2),
+                    S = r(y);
+                  s(y), g(() => {
+                    m(l, a(o).name), m(S, `#${a(o).id??""}`)
+                  }), i(Z, F)
+                },
+                $$slots: {
+                  default: !0
+                }
+              })
+            }
+            var R = u(B, 2);
+            {
+              var L = b => {
+                {
+                  let x = w(() => ra(a(o).allianceId)),
+                    Z = w(() => H(a(o).allianceId)),
+                    q = w(() => ra(a(o).allianceId)),
+                    F = w(() => H(a(o).allianceId));
+                  Aa(b, {
+                    get allianceId() {
+                      return a(o).allianceId
+                    },
+                    get linkClass() {
+                      return `badge badge-xs border-0 ${a(x)??""} ${a(Z)??""}`
+                    },
+                    get textClass() {
+                      return `badge badge-xs border-0 ${a(q)??""} ${a(F)??""}`
+                    },
+                    children: (c, l) => {
+                      ya();
+                      var y = Q();
+                      g(() => m(y, a(o).allianceName)), i(c, y)
+                    },
+                    $$slots: {
+                      default: !0
+                    }
+                  })
+                }
+              };
+              G(R, b => {
+                a(o).allianceId && a(o).allianceName && b(L)
+              })
+            }
+            var ta = u(R, 2);
+            {
+              var ea = b => {
+                  var x = tl(),
+                    Z = r(x);
+                  Na(Z, {
+                    class: "text-error inline size-3.5"
+                  }), s(x), g(q => X(x, "data-tip", q), [() => za()]), i(b, x)
+                },
+                j = b => {
+                  var x = el(),
+                    Z = r(x);
+                  Pa(Z, {
+                    class: "text-warning inline size-3.5"
+                  }), s(x), g(q => X(x, "data-tip", q), [() => Za()]), i(b, x)
+                };
+              G(ta, b => {
+                a(o).banned ? b(ea) : a(o).timedOut && b(j, 1)
+              })
+            }
+            s(N), s(T), s(M), i(h, M)
+          }), s(_), s(e), i(n, e)
+        };
+        G(xa, n => {
+          t.targets.length > 1 && n(Nn)
+        })
+      }
+      var _a = u(xa, 2),
+        ia = r(_a),
+        Pn = r(ia);
+      s(ia);
+      var wa = u(ia, 2);
+      Ta(wa, 21, () => xn, n => n.value, (n, e) => {
+        var _ = nl(),
+          h = r(_);
+        Ma(h);
+        var o, M = u(h, 2),
+          d = r(M),
+          T = r(d, !0);
+        s(d);
+        var N = u(d, 2),
+          B = r(N, !0);
+        s(N), s(M), s(_), g(() => {
+          X(h, "aria-label", a(e).label), o !== (o = a(e).value) && (h.value = (h.__value = a(e).value) ?? ""), m(T, a(e).label), m(B, a(e).description)
+        }), Wn(U, [], h, () => (a(e).value, a(O)), R => A(O, R)), i(n, _)
+      }), s(wa), s(_a);
+      var ua = u(_a, 2),
+        En = r(ua);
+      {
+        let n = w(() => Zc()),
+          e = w(() => a(O) === "doxxing" ? 20 : 5);
+        yo(En, {
+          class: "h-20 rounded-lg",
+          name: "notes",
+          get placeholder() {
+            return a(n)
+          },
+          max: 2056,
+          get min() {
+            return a(e)
+          },
+          get value() {
+            return a(V)
+          },
+          set value(_) {
+            A(V, _, !0)
+          },
+          get validate() {
+            return a(z)
+          },
+          set validate(_) {
+            A(z, _, !0)
+          }
+        })
+      }
+      s(ua);
+      var ka = u(ua, 2),
+        aa = r(ka),
+        Rn = r(aa, !0);
+      s(aa);
+      var da = u(aa, 2),
+        zn = r(da, !0);
+      s(da), s(ka), s(k), jn(k, n => A(E, n), () => a(E)), g((n, e, _) => {
+        Kn($, t.zoom), m(Pn, `${n??""}:`), m(Rn, e), da.disabled = a(P), m(zn, _)
+      }, [() => zc(), () => Rc(), () => vo()]), Ba("submit", k, async n => {
+        var M;
+        if (n.preventDefault(), a(P) || !a(z)()) return;
+        const e = new FormData(a(E)),
+          _ = String(e.get("reason") ?? "");
+        if (!_) {
+          f.error(qc());
+          return
+        }
+        const h = String(e.get("notes") ?? ""),
+          o = t.targets.map(d => d.id).filter(d => d !== 0);
+        if (o.length === 0) {
+          f.error(K());
+          return
+        }
+        try {
+          if (A(P, !0), t.action === "report-user") {
+            const d = await t.image;
+            e.append("image", d, `report-${Date.now()}.jpeg`), e.append("reportedUserId", String(o[0])), e.append("latitude", t.latLon[0].toString()), e.append("longitude", t.latLon[1].toString()), o.length > 1 && e.append("userIds", JSON.stringify(o));
+            const T = async () => {
+              var R;
+              const N = await Yn.getHeaders(""),
+                B = await fetch(`${Jn}/report-user`, {
+                  method: "POST",
+                  body: e,
+                  credentials: "include",
+                  headers: N
+                });
+              if (B.status === 403) {
+                const L = await B.json();
+                if ((L == null ? void 0 : L.error) === "challenge-required" && L.tier) {
+                  if (!await Qn(L.tier)) throw new Error(Xn());
+                  await T();
+                  return
+                }
+              }
+              if (B.status === 200 || B.status === 409) {
+                switch ((await B.json()).reason) {
+                  case "reported_user_banned_timeout":
+                    f.warning(fo());
+                    break;
+                  case "reporter_banned":
+                    f.warning(go());
+                    break;
+                  case "min_pixels_painted":
+                    f.warning(bo());
+                    break;
+                  case "max_report_per_hour":
+                    f.warning(po());
+                    break;
+                  default:
+                    f.success(mo());
+                    break
+                }(R = t.onsuccess) == null || R.call(t, {
+                  action: t.action,
+                  userIds: [o[0]]
+                }), p(!1)
+              } else f.error(K())
+            };
+            await T()
+          } else {
+            const d = await t.image,
+              T = await $n(d);
+            await ma.postUsersSuspend({
+              userIds: o,
+              imageBase64: T,
+              latitude: t.latLon[0],
+              longitude: t.latLon[1],
+              zoom: t.zoom,
+              reason: _,
+              notes: h
+            }, t.origin, t.action);
+            const N = t.action === "ban" ? o.length > 1 ? Dc() : Ea() : o.length > 1 ? Kc() : Ra();
+            f.success(N), (M = t.onsuccess) == null || M.call(t, {
+              action: t.action,
+              userIds: [o[0]]
+            }), p(!1)
+          }
+        } catch (d) {
+          f.error((d == null ? void 0 : d.message) ?? K())
+        } finally {
+          A(P, !1)
+        }
+      }), va("click", aa, () => {
+        p(!1)
+      }), Fn(2, k, () => Hc), i(C, k)
+    };
+    G(In, C => {
+      p() && C(Cn)
+    })
+  }
+  s(ga), ya(2), s(W), Dn(W, () => C => {
+    Sa(() => {
+      p() ? C.show() : C.close()
+    })
+  }), Ba("close", W, () => p(!1)), i(D, W), qn()
+}
+Vn(["click"]);
+var ll = oa('<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
+
+function Ul(D, t) {
+  let U = ba(t, ["$$slots", "$$events", "$$legacy"]);
+  var p = ll();
+  na(p, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...U
+  })), i(D, p)
+}
+const ql = {
+    0: Ec,
+    1: Pc,
+    2: Nc,
+    3: Gc,
+    4: Ac,
+    5: Lc,
+    6: Bc,
+    7: Tc,
+    8: Mc,
+    9: Sc,
+    10: Cc,
+    11: Ic,
+    12: kc,
+    13: wc,
+    14: xc,
+    15: hc,
+    16: fc,
+    17: gc,
+    18: bc,
+    19: pc,
+    20: mc,
+    21: vc,
+    22: yc,
+    23: dc,
+    24: uc,
+    25: ic,
+    26: _c,
+    27: lc,
+    28: cc,
+    29: oc,
+    30: nc,
+    31: rc,
+    32: sc,
+    33: ec,
+    34: tc,
+    35: ac,
+    36: $o,
+    37: Xo,
+    38: Qo,
+    39: Jo,
+    40: Yo,
+    41: jo,
+    42: Wo,
+    43: Vo,
+    44: Fo,
+    45: Oo,
+    46: Ho,
+    47: Ko,
+    48: Do,
+    49: qo,
+    50: Uo,
+    51: Zo,
+    52: zo,
+    53: Ro,
+    54: Eo,
+    55: Po,
+    56: No,
+    57: Go,
+    58: Ao,
+    59: Lo,
+    60: Bo,
+    61: To,
+    62: Mo,
+    63: So
+  },
+  Dl = {
+    AF: hn,
+    AL: fn,
+    DZ: gn,
+    AS: bn,
+    AD: pn,
+    AO: mn,
+    AI: vn,
+    AQ: yn,
+    AG: dn,
+    AR: un,
+    AM: _n,
+    AW: ln,
+    AU: cn,
+    AT: on,
+    AZ: nn,
+    BS: rn,
+    BH: sn,
+    BD: en,
+    BB: tn,
+    BY: an,
+    BE: $r,
+    BZ: Xr,
+    BJ: Qr,
+    BM: Jr,
+    BT: Yr,
+    BO: jr,
+    BQ: Wr,
+    BA: Vr,
+    BW: Fr,
+    BV: Or,
+    BR: Hr,
+    IO: Kr,
+    BN: Dr,
+    BG: qr,
+    BF: Ur,
+    BI: Zr,
+    CV: zr,
+    KH: Rr,
+    CM: Er,
+    CA: Pr,
+    KY: Nr,
+    CF: Gr,
+    TD: Ar,
+    CL: Lr,
+    CN: Br,
+    CX: Tr,
+    CC: Mr,
+    CO: Sr,
+    KM: Cr,
+    CG: Ir,
+    CK: kr,
+    CR: wr,
+    HR: xr,
+    CU: hr,
+    CW: fr,
+    CY: gr,
+    CZ: br,
+    CI: pr,
+    DK: mr,
+    DJ: vr,
+    DM: yr,
+    DO: dr,
+    EC: ur,
+    EG: ir,
+    SV: _r,
+    GQ: lr,
+    ER: cr,
+    EE: or,
+    SZ: nr,
+    ET: rr,
+    FK: sr,
+    FO: er,
+    FJ: tr,
+    FI: ar,
+    FR: $s,
+    GF: Xs,
+    PF: Qs,
+    TF: Js,
+    GA: Ys,
+    GM: js,
+    GE: Ws,
+    DE: Vs,
+    GH: Fs,
+    GI: Os,
+    GR: Hs,
+    GL: Ks,
+    GD: Ds,
+    GP: qs,
+    GU: Us,
+    GT: Zs,
+    GG: zs,
+    GN: Rs,
+    GW: Es,
+    GY: Ps,
+    HT: Ns,
+    HM: Gs,
+    HN: As,
+    HK: Ls,
+    HU: Bs,
+    IS: Ts,
+    IN: Ms,
+    ID: Ss,
+    IR: Cs,
+    IQ: Is,
+    IE: ks,
+    IM: ws,
+    IL: xs,
+    IT: hs,
+    JM: fs,
+    JP: gs,
+    JE: bs,
+    JO: ps,
+    KZ: ms,
+    KE: vs,
+    KI: ys,
+    XK: ds,
+    KW: us,
+    KG: is,
+    LA: _s,
+    LV: ls,
+    LB: cs,
+    LS: os,
+    LR: ns,
+    LY: rs,
+    LI: ss,
+    LT: es,
+    LU: ts,
+    MO: as,
+    MG: $e,
+    MW: Xe,
+    MY: Qe,
+    MV: Je,
+    ML: Ye,
+    MT: je,
+    MH: We,
+    MQ: Ve,
+    MR: Fe,
+    MU: Oe,
+    YT: He,
+    MX: Ke,
+    FM: De,
+    MD: qe,
+    MC: Ue,
+    MN: Ze,
+    ME: ze,
+    MS: Re,
+    MA: Ee,
+    MZ: Pe,
+    MM: Ne,
+    NA: Ge,
+    NR: Ae,
+    NP: Le,
+    NL: Be,
+    NC: Te,
+    NZ: Me,
+    NI: Se,
+    NE: Ce,
+    NG: Ie,
+    NU: ke,
+    NF: we,
+    KP: xe,
+    MK: he,
+    MP: fe,
+    NO: ge,
+    OM: be,
+    PK: pe,
+    PW: me,
+    PS: ve,
+    PA: ye,
+    PG: de,
+    PY: ue,
+    PE: ie,
+    PH: _e,
+    PN: le,
+    PL: ce,
+    PT: oe,
+    PR: ne,
+    QA: re,
+    CD: se,
+    RO: ee,
+    RU: te,
+    RW: ae,
+    RE: $t,
+    BL: Xt,
+    SH: Qt,
+    KN: Jt,
+    LC: Yt,
+    MF: jt,
+    PM: Wt,
+    VC: Vt,
+    WS: Ft,
+    SM: Ot,
+    ST: Ht,
+    SA: Kt,
+    SN: Dt,
+    RS: qt,
+    SC: Ut,
+    SL: Zt,
+    SG: zt,
+    SX: Rt,
+    SK: Et,
+    SI: Pt,
+    SB: Nt,
+    SO: Gt,
+    ZA: At,
+    GS: Lt,
+    KR: Bt,
+    SS: Tt,
+    ES: Mt,
+    LK: St,
+    SD: Ct,
+    SR: It,
+    SJ: kt,
+    SE: wt,
+    CH: xt,
+    SY: ht,
+    TW: ft,
+    TJ: gt,
+    TZ: bt,
+    TH: pt,
+    TL: mt,
+    TG: vt,
+    TK: yt,
+    TO: dt,
+    TT: ut,
+    TN: it,
+    TM: _t,
+    TC: lt,
+    TV: ct,
+    TR: ot,
+    UG: nt,
+    UA: rt,
+    AE: st,
+    GB: et,
+    US: tt,
+    UM: at,
+    UY: $a,
+    UZ: Xa,
+    VU: Qa,
+    VA: Ja,
+    VE: Ya,
+    VN: ja,
+    VG: Wa,
+    VI: Va,
+    WF: Fa,
+    EH: Oa,
+    YE: Ha,
+    ZM: Ka,
+    ZW: Da,
+    AX: qa,
+    IC: Ua
+  },
+  Kl = {
+    1: hn,
+    2: fn,
+    3: gn,
+    4: bn,
+    5: pn,
+    6: mn,
+    7: vn,
+    8: yn,
+    9: dn,
+    10: un,
+    11: _n,
+    12: ln,
+    13: cn,
+    14: on,
+    15: nn,
+    16: rn,
+    17: sn,
+    18: en,
+    19: tn,
+    20: an,
+    21: $r,
+    22: Xr,
+    23: Qr,
+    24: Jr,
+    25: Yr,
+    26: jr,
+    27: Wr,
+    28: Vr,
+    29: Fr,
+    30: Or,
+    31: Hr,
+    32: Kr,
+    33: Dr,
+    34: qr,
+    35: Ur,
+    36: Zr,
+    37: zr,
+    38: Rr,
+    39: Er,
+    40: Pr,
+    41: Nr,
+    42: Gr,
+    43: Ar,
+    44: Lr,
+    45: Br,
+    46: Tr,
+    47: Mr,
+    48: Sr,
+    49: Cr,
+    50: Ir,
+    51: kr,
+    52: wr,
+    53: xr,
+    54: hr,
+    55: fr,
+    56: gr,
+    57: br,
+    58: pr,
+    59: mr,
+    60: vr,
+    61: yr,
+    62: dr,
+    63: ur,
+    64: ir,
+    65: _r,
+    66: lr,
+    67: cr,
+    68: or,
+    69: nr,
+    70: rr,
+    71: sr,
+    72: er,
+    73: tr,
+    74: ar,
+    75: $s,
+    76: Xs,
+    77: Qs,
+    78: Js,
+    79: Ys,
+    80: js,
+    81: Ws,
+    82: Vs,
+    83: Fs,
+    84: Os,
+    85: Hs,
+    86: Ks,
+    87: Ds,
+    88: qs,
+    89: Us,
+    90: Zs,
+    91: zs,
+    92: Rs,
+    93: Es,
+    94: Ps,
+    95: Ns,
+    96: Gs,
+    97: As,
+    98: Ls,
+    99: Bs,
+    100: Ts,
+    101: Ms,
+    102: Ss,
+    103: Cs,
+    104: Is,
+    105: ks,
+    106: ws,
+    107: xs,
+    108: hs,
+    109: fs,
+    110: gs,
+    111: bs,
+    112: ps,
+    113: ms,
+    114: vs,
+    115: ys,
+    116: ds,
+    117: us,
+    118: is,
+    119: _s,
+    120: ls,
+    121: cs,
+    122: os,
+    123: ns,
+    124: rs,
+    125: ss,
+    126: es,
+    127: ts,
+    128: as,
+    129: $e,
+    130: Xe,
+    131: Qe,
+    132: Je,
+    133: Ye,
+    134: je,
+    135: We,
+    136: Ve,
+    137: Fe,
+    138: Oe,
+    139: He,
+    140: Ke,
+    141: De,
+    142: qe,
+    143: Ue,
+    144: Ze,
+    145: ze,
+    146: Re,
+    147: Ee,
+    148: Pe,
+    149: Ne,
+    150: Ge,
+    151: Ae,
+    152: Le,
+    153: Be,
+    154: Te,
+    155: Me,
+    156: Se,
+    157: Ce,
+    158: Ie,
+    159: ke,
+    160: we,
+    161: xe,
+    162: he,
+    163: fe,
+    164: ge,
+    165: be,
+    166: pe,
+    167: me,
+    168: ve,
+    169: ye,
+    170: de,
+    171: ue,
+    172: ie,
+    173: _e,
+    174: le,
+    175: ce,
+    176: oe,
+    177: ne,
+    178: re,
+    179: se,
+    180: ee,
+    181: te,
+    182: ae,
+    183: $t,
+    184: Xt,
+    185: Qt,
+    186: Jt,
+    187: Yt,
+    188: jt,
+    189: Wt,
+    190: Vt,
+    191: Ft,
+    192: Ot,
+    193: Ht,
+    194: Kt,
+    195: Dt,
+    196: qt,
+    197: Ut,
+    198: Zt,
+    199: zt,
+    200: Rt,
+    201: Et,
+    202: Pt,
+    203: Nt,
+    204: Gt,
+    205: At,
+    206: Lt,
+    207: Bt,
+    208: Tt,
+    209: Mt,
+    210: St,
+    211: Ct,
+    212: It,
+    213: kt,
+    214: wt,
+    215: xt,
+    216: ht,
+    217: ft,
+    218: gt,
+    219: bt,
+    220: pt,
+    221: mt,
+    222: vt,
+    223: yt,
+    224: dt,
+    225: ut,
+    226: it,
+    227: _t,
+    228: lt,
+    229: ct,
+    230: ot,
+    231: nt,
+    232: rt,
+    233: st,
+    234: et,
+    235: tt,
+    236: at,
+    237: $a,
+    238: Xa,
+    239: Qa,
+    240: Ja,
+    241: Ya,
+    242: ja,
+    243: Wa,
+    244: Va,
+    245: Fa,
+    246: Oa,
+    247: Ha,
+    248: Ka,
+    249: Da,
+    250: qa,
+    251: Ua
   };
 export {
-  Rhr as $, xhr as A, Xhr as B, phr as C, Lhr as D, Zhr as E, lhr as F, Qhr as G, yhr as H, Thr as I, Fhr as J, _hr as K, vhr as L, Qdr as M, zhr as N, qhr as O, Whr as P, fhr as Q, uhr as R, whr as S, Shr as T, rhr as U, Ahr as V, Ehr as W, ohr as X, Mhr as Y, ghr as Z, thr as _, Odr as a, sdr as a$, chr as a0, Nhr as a1, ahr as a2, Vhr as a3, Jdr as a4, Wdr as a5, $dr as a6, Phr as a7, Ohr as a8, shr as a9, Jfr as aA, ylr as aB, Ndr as aC, Idr as aD, Adr as aE, lfr as aF, Cdr as aG, zdr as aH, wdr as aI, Sdr as aJ, vdr as aK, bdr as aL, Mdr as aM, mdr as aN, gdr as aO, hdr as aP, kdr as aQ, vfr as aR, tlr as aS, ydr as aT, ddr as aU, idr as aV, ldr as aW, Yyr as aX, cdr as aY, _dr as aZ, adr as a_, Ihr as aa, Jhr as ab, ihr as ac, Ghr as ad, jhr as ae, Xdr as af, Zdr as ag, Ydr as ah, Dhr as ai, Yhr as aj, dhr as ak, Bhr as al, bhr as am, ehr as an, Khr as ao, tkr as ap, khr as aq, Hhr as ar, Uhr as as, hhr as at, rkr as au, Chr as av, mhr as aw, nhr as ax, Udr as ay, $hr as az, qdr as b, tyr as b$, udr as b0, tdr as b1, odr as b2, ndr as b3, pdr as b4, edr as b5, fdr as b6, Xyr as b7, Elr as b8, Lyr as b9, bpr as bA, fpr as bB, xyr as bC, Slr as bD, Myr as bE, Ayr as bF, Gyr as bG, Cyr as bH, Dlr as bI, Syr as bJ, byr as bK, vyr as bL, kyr as bM, myr as bN, dyr as bO, fyr as bP, zyr as bQ, yyr as bR, lyr as bS, jyr as bT, wyr as bU, hyr as bV, ayr as bW, oyr as bX, Vpr as bY, qpr as bZ, ppr as b_, Dyr as ba, Oyr as bb, Nyr as bc, vpr as bd, pfr as be, Jyr as bf, ypr as bg, Lfr as bh, Pdr as bi, Fyr as bj, Pyr as bk, Ryr as bl, Kyr as bm, Wyr as bn, qyr as bo, Vyr as bp, Iyr as bq, Byr as br, Hyr as bs, Tyr as bt, Uyr as bu, Eyr as bv, Bdr as bw, jdr as bx, gyr as by, Ipr as bz, Rdr as c, Vfr as c$, syr as c0, nyr as c1, ryr as c2, eyr as c3, iyr as c4, $pr as c5, uyr as c6, cyr as c7, _yr as c8, Ypr as c9, wpr as cA, zpr as cB, mpr as cC, Cpr as cD, gpr as cE, spr as cF, dpr as cG, Gdr as cH, apr as cI, _pr as cJ, kpr as cK, opr as cL, epr as cM, cpr as cN, upr as cO, npr as cP, Wfr as cQ, Xfr as cR, Zfr as cS, $fr as cT, rpr as cU, Ufr as cV, Qfr as cW, tpr as cX, Ofr as cY, Kfr as cZ, Efr as c_, Rpr as ca, Qpr as cb, Gpr as cc, Fpr as cd, Ppr as ce, Dpr as cf, Apr as cg, Tpr as ch, gfr as ci, Wpr as cj, Tdr as ck, Jpr as cl, Hpr as cm, Epr as cn, Lpr as co, Opr as cp, xpr as cq, Upr as cr, Xpr as cs, Zpr as ct, Npr as cu, Kpr as cv, Mpr as cw, Spr as cx, jpr as cy, Bpr as cz, xdr as d, Clr as d$, Ffr as d0, Dfr as d1, Rfr as d2, Tfr as d3, Mfr as d4, qfr as d5, xfr as d6, Pfr as d7, wfr as d8, Gfr as d9, efr as dA, ufr as dB, Hlr as dC, tfr as dD, rfr as dE, Ylr as dF, Xlr as dG, Hfr as dH, Wlr as dI, Flr as dJ, Vlr as dK, lpr as dL, Zlr as dM, Rlr as dN, $lr as dO, Ulr as dP, Olr as dQ, $yr as dR, Klr as dS, hpr as dT, xlr as dU, Jlr as dV, ipr as dW, Qlr as dX, wlr as dY, blr as dZ, jlr as d_, Nfr as da, Bfr as db, Cfr as dc, nfr as dd, zfr as de, Afr as df, jfr as dg, rdr as dh, pyr as di, Sfr as dj, bfr as dk, dfr as dl, hfr as dm, mfr as dn, kfr as dp, yfr as dq, Qyr as dr, ifr as ds, ffr as dt, Ifr as du, Zyr as dv, afr as dw, sfr as dx, cfr as dy, ofr as dz, ekr as e, Yfr as e0, Alr as e1, Ilr as e2, Nlr as e3, hlr as e4, Glr as e5, Blr as e6, Plr as e7, Mlr as e8, zlr as e9, qlr as ea, mlr as eb, Llr as ec, klr as ed, glr as ee, vlr as ef, Tlr as eg, dlr as eh, llr as ei, flr as ej, plr as ek, clr as el, ilr as em, elr as en, slr as eo, ulr as ep, _lr as eq, rlr as er, alr as es, _fr as et, olr as eu, nlr as ev, Ldr as f, ckr as g, skr as h, Vdr as i, Edr as j, lkr as k, Ddr as l, Kdr as m, akr as n, $ar as o, nkr as p, Fdr as q, ukr as r, fkr as s, pkr as t, ykr as u, ikr as v, _kr as w, Hdr as x, okr as y, Yar as z
+  Ul as D, zl as E, Zl as R, Wc as W, ql as a, Dl as b, Kl as c
 };

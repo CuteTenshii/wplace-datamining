@@ -21,72 +21,67 @@ import "../chunks/Bzak7iHL.js";
 import {
   o as ao,
   a as Hx
-} from "../chunks/Cqtrw3J3.js";
+} from "../chunks/4FZmClro.js";
 import {
-  ah as f3,
-  bz as m3,
-  bN as g3,
-  bO as v3,
-  bs as _3,
+  ae as f3,
+  bs as m3,
+  bB as g3,
+  bC as v3,
+  aJ as _3,
   e as Ie,
-  bP as w1,
-  am as y3,
+  bD as w1,
+  aj as y3,
   i as s,
   h as L,
-  a_ as $h,
-  S as x3,
-  R as T1,
-  T as b3,
-  V as Hc,
+  b0 as $h,
+  P as x3,
+  O as T1,
+  Q as b3,
+  S as Hc,
   u as le,
-  at as Wx,
-  q as Ai,
+  aq as Wx,
+  m as Ai,
   g as Ra,
-  bL as gu,
+  bz as gu,
   p as Di,
   d as w,
-  aX as oc,
+  aZ as oc,
   r as x,
   a as B,
   b as zi,
   c as J,
-  l as ia,
+  k as ia,
   f as hr,
   s as k,
   n as $a,
-  o as cs,
+  l as cs,
   t as ue,
-  y as ni,
-  k as cn,
-  al as Wo,
-  bQ as Kg,
-  bR as w3,
-  v as kn,
-  aL as sc,
-  m as ze,
-  A as Ml,
-  bS as S1,
-  z as T3,
-  bK as P1,
-  x as d_,
-  bT as S3,
-  w as P3,
-  $ as I3
-} from "../chunks/BC180BoF.js";
+  v as ni,
+  ai as Wo,
+  bE as Kg,
+  bF as w3,
+  aI as sc,
+  x as Ml,
+  bG as S1,
+  w as T3,
+  q as d_,
+  o as S3,
+  $ as P3
+} from "../chunks/wFsvFKKp.js";
 import {
   s as X,
-  c as M3
-} from "../chunks/CpsyGtAr.js";
+  c as I3
+} from "../chunks/B_EGJrw5.js";
 import {
   i as _e
-} from "../chunks/CYlrjl7C.js";
+} from "../chunks/BVciu6sd.js";
 import {
   a as hd,
   t as pl
-} from "../chunks/DIy05fXV.js";
+} from "../chunks/1KCZkbvm.js";
 import {
-  h as C3
-} from "../chunks/C99u37o-.js";
+  h as M3
+} from "../chunks/kVqQJTkl.js";
 import {
   e as ti,
   s as It,
@@ -97,66 +92,71 @@ import {
   b as np,
   f as Xl,
   c as nc,
-  i as E3,
-  j as I1,
-  k as M1,
+  i as C3,
+  j as P1,
+  k as I1,
   h as lm
-} from "../chunks/Bbytcfj7.js";
+} from "../chunks/BGMKwhhq.js";
+import {
+  d as cn,
+  e as kn,
+  a as ze,
+  o as M1,
+  j as E3
+} from "../chunks/D2UtoGHN.js";
 import {
   b as A3,
   r as k3,
   g as fu,
   a as D3
-} from "../chunks/DJlrKya2.js";
+} from "../chunks/BxFTcgyS.js";
 import {
   p as Xs
-} from "../chunks/CYIGPTkM.js";
+} from "../chunks/hQshrAff.js";
 import {
   f as gs,
-  R as z3,
-  U as L3,
+  N as z3,
+  O as L3,
   u as gt,
   t as tr,
-  k as p_,
   a as bi,
-  V as Ac,
-  W as R3,
+  Q as Ac,
+  R as R3,
   T as dh,
-  X as Xx,
   j as ks,
-  I as Yx,
+  F as Xx,
   e as Yf,
-  r as ud,
-  Y as C1,
-  Z as F3,
-  _ as B3,
+  o as ud,
+  U as C1,
+  V as F3,
+  W as B3,
   P as O3,
-  $ as Kx,
+  X as Yx,
   b as q3,
-  a0 as N3,
-  a1 as U3,
-  a2 as j3,
-  a3 as f_,
-  a4 as V3,
-  a5 as E1,
-  a6 as Qg,
-  a7 as Z3,
-  a8 as G3,
-  o as H3
-} from "../chunks/BNML0NQl.js";
+  Y as N3,
+  Z as U3,
+  _ as j3,
+  $ as p_,
+  a0 as V3,
+  a1 as E1,
+  a2 as Qg,
+  a3 as Z3,
+  a4 as G3,
+  k as H3
+} from "../chunks/ClF9qu09.js";
 import {
   U as bv,
   A as cm,
   e as gl,
   a as W3,
-  D as Qx,
+  D as Kx,
   b as Fu,
   I as wv,
   r as X3,
   P as Y3,
   c as K3,
   d as Q3
-} from "../chunks/LVj9iHbI.js";
+} from "../chunks/SvubK5ta.js";
 import {
   l as $3,
   a as vu,
@@ -182,50 +182,54 @@ import {
   B as nT,
   C as sT,
   h as oT
-} from "../chunks/Bq3f7dv4.js";
+} from "../chunks/BvvZT4uR.js";
 import {
   P as io
-} from "../chunks/sxg_5rgi.js";
-import "../chunks/C2Qoc9tV.js";
+} from "../chunks/BPTGThQS.js";
+import "../chunks/DTeDASMt.js";
 import {
   e as Ca,
   i as ml
-} from "../chunks/C9pZMtBm.js";
+} from "../chunks/DSz1_7V5.js";
 import {
   b as Cl,
   a as Bu,
-  c as m_
-} from "../chunks/CHkwcO23.js";
+  c as f_
+} from "../chunks/rR7wqgw4.js";
 import {
   b as Yo
-} from "../chunks/CxzHUe37.js";
+} from "../chunks/BlUCsbYQ.js";
 import {
-  i as g_
-} from "../chunks/B7p6ZGdy.js";
+  i as m_
+} from "../chunks/T5YzyBoQ.js";
 import {
   p as sr,
   r as ri,
   s as fh,
   u as k1
-} from "../chunks/BQ15Turv.js";
+} from "../chunks/C4jQIU3W.js";
+import {
+  a as g_,
+  d as Qx
+} from "../chunks/BFtxp9dm.js";
 import {
   C as kl,
   S as $x,
   a as Jx,
   U as eb
-} from "../chunks/Bln_dFmW.js";
+} from "../chunks/CCOA_rje.js";
 import {
   c as Ou,
   b as yp,
   g as no,
   a as Xc
-} from "../chunks/BgBmGko8.js";
+} from "../chunks/CFOWqOVw.js";
 import {
   h as rf
-} from "../chunks/D1v6iri7.js";
+} from "../chunks/BV_MBIzz.js";
 import {
   L as tb
-} from "../chunks/BzUN5PG2.js";
+} from "../chunks/DGoRKOMt.js";
 import {
   g as um,
   l as lT
@@ -608,7 +612,7 @@ import {
   V as AM,
   B as kM,
   p as Dv
-} from "../chunks/knzQaC8g.js";
+} from "../chunks/HQHwHXsf.js";
 import {
   c as zv
 } from "../chunks/DXMrnaZG.js";
@@ -620,15 +624,15 @@ import {
 } from "../chunks/NTgY2kck.js";
 import {
   S as hm
-} from "../chunks/DhZfgmlt.js";
+} from "../chunks/GI-SDEh7.js";
 import {
   P as Al,
   a as zM
-} from "../chunks/b8ow9ahU.js";
+} from "../chunks/Ojqua900.js";
 import {
   L as Mm,
   S as gd
-} from "../chunks/B25iSHa6.js";
+} from "../chunks/BCtkhd_w.js";
 import {
   l as LM,
   v as RM,
@@ -644,10 +648,10 @@ import {
 } from "../chunks/BviiYr3T.js";
 import {
   k as hh
-} from "../chunks/Dl9J1-kK.js";
+} from "../chunks/CV-KsQkX.js";
 import {
   A as vd
-} from "../chunks/yz2E24Gv.js";
+} from "../chunks/BaW7cnUW.js";
 import {
   b as T_
 } from "../chunks/DaX0l6qk.js";
@@ -671,7 +675,7 @@ import {
   a as Fv,
   b as Tb,
   R as NM
-} from "../chunks/BUZMcR_p.js";
+} from "../chunks/DKJqoRrx.js";
 import {
   l as S_
 } from "../chunks/BRekz1nD.js";
@@ -684,17 +688,17 @@ import {
 } from "../chunks/BI5KFv7B.js";
 import {
   C as P_
-} from "../chunks/49DFJ8ki.js";
+} from "../chunks/CgRdlxrR.js";
 import {
   l as UM,
   L as I_
-} from "../chunks/BtcknTPV.js";
+} from "../chunks/B5hRXNyz.js";
 import {
   t as Sb
 } from "../chunks/CPcsbTWB.js";
 import {
   R as jM
-} from "../chunks/DrjhfS49.js";
+} from "../chunks/IDzq8ZaL.js";
 import {
   c as VM
 } from "../chunks/inINCb3R.js";
@@ -729,19 +733,19 @@ import {
 } from "../chunks/Bc8wa1fo.js";
 import {
   c as bl
-} from "../chunks/IrI31YEL.js";
+} from "../chunks/BviN1nhV.js";
 import {
   s as mo
-} from "../chunks/CetJgb3j.js";
+} from "../chunks/GOMVJoUS.js";
 import {
   a as Mb
 } from "../chunks/BdCqcZGB.js";
 import {
   L as n6
-} from "../chunks/DujItzi_.js";
+} from "../chunks/DcV7MWId.js";
 import {
   R as gp
-} from "../chunks/C1NhYxdW.js";
+} from "../chunks/BHWEDWXT.js";
 import {
   c as Cb
 } from "../chunks/BZcJYfQJ.js";
@@ -763,13 +767,13 @@ import {
 } from "../chunks/WCizg6Ng.js";
 import {
   a as nv
-} from "../chunks/pScZbjX5.js";
+} from "../chunks/CbKb8-BX.js";
 import {
   c as gh
 } from "../chunks/BKBS1EOp.js";
 import {
   R as Em
-} from "../chunks/CPwU4i3X.js";
+} from "../chunks/DN9y6pYd.js";
 import {
   a as c6
 } from "../chunks/og9Js_3x.js";
@@ -781,7 +785,7 @@ import {
 } from "../chunks/Cw0Vc6Un.js";
 import {
   P as d6
-} from "../chunks/CrlIHDX3.js";
+} from "../chunks/Cq6bwDuh.js";
 import {
   b as h6
 } from "../chunks/CwftxlTm.js";
@@ -794,13 +798,13 @@ import {
 import {
   T as ph,
   G as mm
-} from "../chunks/CDU858ha.js";
+} from "../chunks/BjuEPdwJ.js";
 import {
   t as Eb
 } from "../chunks/BJMWNMzA.js";
 import {
   W as m6
-} from "../chunks/6RkL9GIr.js";
+} from "../chunks/CQ5oJYC1.js";
 import {
   r as g6
 } from "../chunks/DBS6HGbD.js";
@@ -41018,7 +41022,7 @@ function UC(A, u) {
       L(Pe, !0);
       try {
         An.droppletAndPlop.play();
-        const tt = await p_(),
+        const tt = await g_(),
           Rt = j.map(({
             color: yt,
             ...Ft
@@ -41057,7 +41061,7 @@ function UC(A, u) {
     s(oe) && s(de) && s(he) && !s(K) && s(De) === "place" && vr()
   }), Kg(() => (s(oe), s(de), s(Y), s(K)), () => {
     s(oe) && s(de) && s(Y) && s(K) && ht()
-  }), w3(), g_();
+  }), w3(), m_();
   var Jt = NC();
   kn("keydown", sc, tt => {
     tt.key === "Escape" && St()
@@ -42188,7 +42192,7 @@ function A_(A, u) {
     var ae;
     ue(() => {
       It(U, "aria-label", s(l).label), ae !== (ae = s(l).value) && (U.value = (U.__value = s(l).value) ?? "")
-    }), m_(T, [], U, () => (s(l).value, M()), M), B(C, U)
+    }), f_(T, [], U, () => (s(l).value, M()), M), B(C, U)
   }), x(V), B(A, V), zi()
 }
 var IE = J("<span> </span>"),
@@ -42257,9 +42261,9 @@ class AE {
       window: T = CE,
       document: M = T == null ? void 0 : T.document
     } = u;
-    T !== void 0 && (ic(this, uh, M), ic(this, $p, M3(O => {
-      const V = P1(T, "focusin", O),
-        C = P1(T, "focusout", O);
+    T !== void 0 && (ic(this, uh, M), ic(this, $p, I3(O => {
+      const V = M1(T, "focusin", O),
+        C = M1(T, "focusout", O);
       return () => {
         V(), C()
       }
@@ -44212,7 +44216,7 @@ var y8 = J('<div class="rules-section"><div class="mb-6"><div class="flex items-
 function i2(A, u) {
   Di(u, !1);
   const T = "/terms/community-guidelines";
-  g_();
+  m_();
   var M = y8(),
     O = w(M),
     V = w(O),
@@ -44394,7 +44398,7 @@ function U8(A, u) {
   Di(u, !0);
   const T = Dv[Dv.length - 1].version;
   let M = sr(u, "open", 15);
-  const O = Xx();
+  const O = Qx();
   gl(A, {
     modalBoxClass: "max-w-5xl",
     hasHeaderBorder: !1,
@@ -44590,7 +44594,7 @@ function U8(A, u) {
 }
 
 function yh(...A) {
-  return Sb(E3(A))
+  return Sb(C3(A))
 }
 
 function j8(A, u) {
@@ -45146,7 +45150,7 @@ function wk(A, u) {
     var We = k(Ee);
     x(ke), ue(() => {
       It(we, "aria-label", Be()), Le !== (Le = oe()) && (we.value = (we.__value = oe()) ?? ""), X(We, ` ${Be()??""}`)
-    }), m_(T, [], we, () => (oe(), s(l)), vt => L(l, vt)), B(Z, ke)
+    }), f_(T, [], we, () => (oe(), s(l)), vt => L(l, vt)), B(Z, ke)
   }), x(Me);
   var Re = k(Me, 2),
     De = w(Re);
@@ -45662,7 +45666,7 @@ function zk(A, u) {
       Arc: "arc://settings/system",
       Yandex: "browser://settings/system"
     },
-    M = Xx(),
+    M = Qx(),
     O = le(() => T[M]);
 
   function V() {
@@ -45754,10 +45758,10 @@ cn(["click"]);
 var Lk = J("<p>You don't have charges to paint. <br/> </p>");
 
 function Rk(A, u) {
-  Di(u, !1), g_();
+  Di(u, !1), m_();
   var T = Lk(),
     M = k(w(T), 2);
-  x(T), ue(O => X(M, ` Next charge in ${O??""}`), [() => Yx(gt.cooldown ?? 0)]), B(A, T), zi()
+  x(T), ue(O => X(M, ` Next charge in ${O??""}`), [() => Xx(gt.cooldown ?? 0)]), B(A, T), zi()
 }
 var Fk = J("<span> </span>");
 
@@ -48310,7 +48314,7 @@ function Fz(A, u) {
         return
       }
       An.droppletAndPlop.play();
-      const Vr = await p_(),
+      const Vr = await g_(),
         ui = Tr.map(({
           color: Hr,
           ...Pi
@@ -49267,7 +49271,7 @@ function Fz(A, u) {
                   }, [() => s(jn).label()]), B(Yr, fn)
                 }), x(Ta);
                 var _n;
-                I1(Ta), x(Fn);
+                P1(Ta), x(Fn);
                 var Cn = k(Fn, 2),
                   bs = w(Cn),
                   Rs = w(bs, !0);
@@ -49283,7 +49287,7 @@ function Fz(A, u) {
                   }, [() => s(jn).label()]), B(Yr, fn)
                 }), x(Un);
                 var qs;
-                I1(Un), x(Cn);
+                P1(Un), x(Cn);
                 var Ns = k(Cn, 2),
                   Ua = w(Ns);
                 rs(Ua);
@@ -49319,7 +49323,7 @@ function Fz(A, u) {
                 var js = k(Es, 2),
                   bn = w(js, !0);
                 x(js), x(Mo), x(ws), x(nn), ue((Yr, jn, fn, Qn, ln, Co, Zo, Ll, jl, Kl) => {
-                  X(uo, Yr), It(Ta, "id", `metric-${s(Si).id}`), _n !== (_n = s(Si).colorMetric) && (Ta.value = (Ta.__value = s(Si).colorMetric) ?? "", M1(Ta, s(Si).colorMetric)), X(Rs, jn), It(Un, "id", `palette-${s(Si).id}`), qs !== (qs = s(gi)) && (Un.value = (Un.__value = s(gi)) ?? "", M1(Un, s(gi))), lm(Ua, s(Si).dithering), X(ss, fn), X(Io, Qn), It(Ts, "title", ln), It(Ka, "title", Co), X(_l, ` ${Zo??""}`), br(Mo, 1, `btn btn-ghost btn-xs hover:text-base-content gap-1 ${s(Da)?"text-base-content/30":"text-base-content/70"}`), It(Mo, "title", Ll), It(Mo, "aria-label", jl), Mo.disabled = s(Da), X(bn, Kl)
+                  X(uo, Yr), It(Ta, "id", `metric-${s(Si).id}`), _n !== (_n = s(Si).colorMetric) && (Ta.value = (Ta.__value = s(Si).colorMetric) ?? "", I1(Ta, s(Si).colorMetric)), X(Rs, jn), It(Un, "id", `palette-${s(Si).id}`), qs !== (qs = s(gi)) && (Un.value = (Un.__value = s(gi)) ?? "", I1(Un, s(gi))), lm(Ua, s(Si).dithering), X(ss, fn), X(Io, Qn), It(Ts, "title", ln), It(Ka, "title", Co), X(_l, ` ${Zo??""}`), br(Mo, 1, `btn btn-ghost btn-xs hover:text-base-content gap-1 ${s(Da)?"text-base-content/30":"text-base-content/70"}`), It(Mo, "title", Ll), It(Mo, "aria-label", jl), Mo.disabled = s(Da), X(bn, Kl)
                 }, [() => dS(), () => hS(), () => pS(), () => fS(), () => mS(), () => gS(), () => vS(), () => V1(), () => V1(), () => _S()]), ze("pointerdown", nn, Yr => Yr.stopPropagation()), ze("change", Ta, Yr => La(s(Si).id, Yr.currentTarget.value)), ze("change", Un, Yr => {
                   const jn = is(Yr.currentTarget.value);
                   Ao.setColorPaletteMode(jn), li.update(s(Si).id, {
@@ -49573,7 +49577,7 @@ function d2(A, u) {
         var Ue = de => {
           var Z = Oz(),
             j = w(Z);
-          x(Z), ue(Y => X(j, `(${Y??""})`), [() => Yx(gt.cooldown)]), B(de, Z)
+          x(Z), ue(Y => X(j, `(${Y??""})`), [() => Xx(gt.cooldown)]), B(de, Z)
         };
         _e(Ae, de => {
           u.charges < gt.data.charges.max && gt.cooldown !== void 0 && de(Ue)
@@ -49842,7 +49846,7 @@ function sL(A, u) {
       });
       var Pe = k(pe, 4),
         he = w(Pe);
-      Qx(he, {
+      Kx(he, {
         get value() {
           return s(O)
         }
@@ -53528,7 +53532,7 @@ function E7(A, u) {
   let T = sr(u, "open", 15),
     M = Ie(!1),
     O = Ie("");
-  const V = le(() => Kx(u.userData.timeoutUntil));
+  const V = le(() => Yx(u.userData.timeoutUntil));
   gl(A, {
     modalBoxClass: "max-h-[90svh] max-w-2xl overflow-hidden p-0 h-max",
     contentAreaClass: "!p-0",
@@ -53650,7 +53654,7 @@ function F7(A, u) {
     V = Ie("");
   const C = le(() => {
       var we;
-      return ((we = s(O)) == null ? void 0 : we.kind) === "ban" || Kx(u.userData.timeoutUntil, ks.now)
+      return ((we = s(O)) == null ? void 0 : we.kind) === "ban" || Yx(u.userData.timeoutUntil, ks.now)
     }),
     l = le(() => U3(u.userData.timeoutUntil, ks.now)),
     U = le(() => {
@@ -53973,7 +53977,7 @@ function H7(A, u) {
     var oe = k(Y);
     x(de), ue(() => {
       It(Z, "aria-label", be()), j !== (j = he()) && (Z.value = (Z.__value = he()) ?? ""), X(oe, ` ${be()??""}`)
-    }), m_(T, [], Z, () => (he(), s(V)), Be => L(V, Be)), B(K, de)
+    }), f_(T, [], Z, () => (he(), s(V)), Be => L(V, Be)), B(K, de)
   }), x(ae);
   var fe = k(ae, 2),
     xe = w(fe);
@@ -55052,7 +55056,7 @@ function CF(A, u) {
             it = Math.min(Jt, gr + Pt),
             Ci = Math.min(mr, Rr + Pt);
           if (it <= kr || Ci <= ei) continue;
-          const hi = await fetch(`${f_}/s${u.season}/tiles/${Yt}/${Ge}.png`, {
+          const hi = await fetch(`${p_}/s${u.season}/tiles/${Yt}/${Ge}.png`, {
             signal: Vt.signal
           });
           if (!hi.ok) continue;
@@ -56853,7 +56857,7 @@ function TB(A, u) {
                   ds = Qo - Rn,
                   N = co - Wn;
                 if (ds <= 0 || N <= 0) continue;
-                const ie = await fetch(`${f_}/s${u.season}/tiles/${Ba}/${yi}.png`);
+                const ie = await fetch(`${p_}/s${u.season}/tiles/${Ba}/${yi}.png`);
                 if (!ie.ok) throw new Error("Failed to load tile image.");
                 const me = await ie.blob();
                 if ("createImageBitmap" in window) {
@@ -57041,7 +57045,7 @@ function TB(A, u) {
     L(C, !0);
     try {
       An.droppletAndPlop.play();
-      const re = await p_(),
+      const re = await g_(),
         ge = [];
       for (const Ye of W.values()) ge.push({
         ...Ye,
@@ -61063,7 +61067,7 @@ function F9(A, u) {
                   Ht = le(() => U(s(Ee))),
                   Wt = Qt => {
                     var wt = y9();
-                    ue(() => It(wt, "src", s(Ee).url)), kn("error", wt, () => V(s(Ee).id)), kn("load", wt, () => C(s(Ee).id)), S3(wt), B(Qt, wt)
+                    ue(() => It(wt, "src", s(Ee).url)), kn("error", wt, () => V(s(Ee).id)), kn("load", wt, () => C(s(Ee).id)), E3(wt), B(Qt, wt)
                   },
                   wr = Qt => {
                     var wt = x9(),
@@ -62301,7 +62305,7 @@ function Eq(A, u) {
           var ht;
           return ((ht = gt.data) == null ? void 0 : ht.droplets) ?? 0
         });
-        Qx(mt, {
+        Kx(mt, {
           get value() {
             return s(Pt)
           }
@@ -62801,7 +62805,7 @@ var Gq = J('<meta property="og:title" content="Wplace - A massive real-time pixe
   mN = J("<!> <!>", 1),
   gN = J('<div class="disable-pinch-zoom relative h-full overflow-hidden"><div id="map" class="h-screen w-screen cursor-default"></div> <!> <div><div><!> <!></div></div> <div><!> <div class="flex flex-col gap-1 max-sm:hidden"><button class="btn btn-sm btn-circle">+</button> <button class="btn btn-sm btn-circle">-</button></div> <!> <!> <!> <!></div> <div><!> <!> <!></div> <div><!></div> <div><!></div> <div><!></div>  <!> <!></div> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!>', 1);
 
-function WU(A, u) {
+function YU(A, u) {
   Di(u, !0);
   let T = Ie(!1),
     M = Ie(!1),
@@ -63052,7 +63056,7 @@ function WU(A, u) {
 
   function wt(kt) {
     const _r = window.innerWidth,
-      Ti = `${f_}/s${E1}/tiles/{x}/{y}.png`;
+      Ti = `${p_}/s${E1}/tiles/{x}/{y}.png`;
     if (De.clear(), !kt.style) return;
     kt.getSource(Qt) ? kt.refreshTiles(Qt) : kt.addSource(Qt, {
       type: "raster",
@@ -63353,10 +63357,10 @@ function WU(A, u) {
         }, !0);
         break
     }
-  }), C3("1uha8ag", kt => {
+  }), M3("1uha8ag", kt => {
     var _r = Gq();
-    $a(6), P3(() => {
-      I3.title = "Wplace - Paint the world"
+    $a(6), S3(() => {
+      P3.title = "Wplace - Paint the world"
     }), B(kt, _r)
   });
   var ai = hr(vi);
@@ -64480,5 +64484,5 @@ function WU(A, u) {
 }
 cn(["click"]);
 export {
-  WU as component
+  YU as component
 };

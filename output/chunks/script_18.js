@@ -1,811 +1,1813 @@
-var H = Object.defineProperty;
-var U = q => {
-  throw TypeError(q)
+const je = /; wv\)|FBAN|FBAV|Instagram|BytedanceWebview|musical_ly|Line\/|Snapchat|Twitter|MicroMessenger/i;
+
+function tr() {
+  return Xe() ? !1 : je.test(navigator.userAgent)
+}
+
+function Xe() {
+  return !!(window != null && window.ReactNativeWebView)
+}
+
+function De() {
+  const e = navigator.userAgent,
+    n = navigator.vendor ?? "";
+  return "brave" in navigator ? "Brave" : /\bEdg(?:e|A|iOS)?\//.test(e) ? "Edge" : /\bOPR\/|\bOpera\//.test(e) ? "Opera" : /\bVivaldi\//.test(e) ? "Vivaldi" : /\bYaBrowser\//.test(e) ? "Yandex" : /\bSamsungBrowser\//.test(e) ? "Samsung Internet" : /\bUCBrowser\/|\bUCWEB\//.test(e) ? "UC Browser" : /\bDuckDuckGo\//.test(e) ? "DuckDuckGo" : getComputedStyle(document.documentElement).getPropertyValue("--arc-palette-title") ? "Arc" : /Firefox\/|FxiOS\//.test(e) ? "Firefox" : /Chrome\/|CriOS\//.test(e) && /google/i.test(n) ? "Chrome" : /Safari\//.test(e) && /apple/i.test(n) ? "Safari" : "Unknown"
+}
+var ee = function() {
+  return ee = Object.assign || function(n) {
+    for (var t, r = 1, i = arguments.length; r < i; r++) {
+      t = arguments[r];
+      for (var a in t) Object.prototype.hasOwnProperty.call(t, a) && (n[a] = t[a])
+    }
+    return n
+  }, ee.apply(this, arguments)
 };
-var _ = (q, V, t) => V in q ? H(q, V, {
-  enumerable: !0,
-  configurable: !0,
-  writable: !0,
-  value: t
-}) : q[V] = t;
-var W = (q, V, t) => _(q, typeof V != "symbol" ? V + "" : V, t),
-  z = (q, V, t) => V.has(q) || U("Cannot " + t);
-var f = (q, V, t) => (z(q, V, "read from private field"), t ? t.call(q) : V.get(q)),
-  p = (q, V, t) => V.has(q) ? U("Cannot add the same private member more than once") : V instanceof WeakSet ? V.add(q) : V.set(q, t),
-  y = (q, V, t, e) => (z(q, V, "write to private field"), e ? e.call(q, t) : V.set(q, t), t);
-import {
-  T as $,
-  j as qq
-} from "./BNML0NQl.js";
-import {
-  bA as Vq,
-  e as Y,
-  i as I,
-  h as L,
-  g as tq,
-  u as eq,
-  bK as N,
-  at as nq,
-  q as Aq,
-  A as G
-} from "./BC180BoF.js";
-import {
-  i as S
-} from "./Bbytcfj7.js";
-import {
-  c as oq
-} from "./CpsyGtAr.js";
 
-function rq() {
-  return Symbol(Vq)
-}
-const iq = "data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAAEAAAHPAB+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn6pqampqampqampqampqampqampqampqamp29vb29vb29vb29vb29vb29vb29vb29vb2/////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJANgAAAAAAAABzxmm4psAAAAAAD/+8DEAAAF7A1FtDAAIzil6D87kgAAAktuqNu7gOcCAAgEATB8HzcHwfB8+DgIROD4ABAEAQOeCH/iAMXLB9//BB3Lg+AAIgJwBCSoyQ0QES1dNwAYhicYDAiarL8aXE4ZXwYe9BkCgLS/Dg4MKQDMkgCjAiAxujyCQPmFYGBApKtkawq2qi9GqTYgLTpFiGdI9O1D5NmvVykb4Q0iC3QOU5rUBLCQ9IoJWFutwdm2v5UmUWmoy2K9QxuXw5RxuOwA2j2ytp2dZrWp2A2/kMupbmC5HKc2et0mbjSyeld35/luxXs97SW4/JJiln38v54TdWITN+nq3a1Pq93WW/3/vNLLf/////K6sDGP////6PvWxQBFoFJABHMZRCBoQGHo/GW6NG17vGW1Zm25xgoZkkHEXiCgHb9v4bi8evlnFw5BStnezI76WTtDaVvOnLL8s9+1t95y7trVqdf0zfXXtpb2dzNrj94XquvZ0M/NLX6l+vktgwC4jICYwfNAuho0IiQuj////9r102AEMKOmGkMYagJIsBaYDIChgOgJiENow+wojIdUMMSQEYSBUTMZQb0o8Sk0SAjR1t5HOrfQNex7cq0ENSD4pyGX7X0xZTZxIYcKtF3mZptVyMvMJudNbJV6UKXY/pfr32nNn0c5rcEZq6nJYnCORDbENctTk5KWZdS63RUTWFzZVbMV3mt6vHJyziusGx5zczaCWWIN////qcOYSSNcFwyUIAAjtY6tsg5hoaQgzCTEAExUCDBozfYO8qSY3T3MLBgMXFAyoIjSiUtF/0DIhCIBgG52VxKVSh3n1s08dh16HvYXJ8JdlBMxTY839i3jR8vtSlsKfeK0NnC/nM0tLW7FK8/Tyq3KYLswxTDQEYZQZBHdQsioRGajdWcNkfpNOahWTpUJEDyc9LCQ0gcfR2T8/////////2zGWVnTPOpjElOJxIKDcdxGcttHMdDk5//7cMTkAA8Uz0Nd1gAigaJm6eyxPIZMDGR0PEgIGrR49MVAZAmYoKJjqJJImBhKP02+o9Jznif5eVT2eHC0ysbdDWHcRBDdQtNsGHz5fw8l282p0U6XSlewoyfTz751qsNZZnm32XJ+unFUNjmoX7ZOpHcZdMd7QbwNu3WpMQZplTGVCmaoMR34247bm1mKtcK2aK+iQ4ivzjUezP///5geOSUMiJ4hUgCgC0K1WiCQN8vbLG0AQADBIlTNsRCYEzAEsjEodxELxqxP5Q/JrC1wBDIwZKExnLAxQW8x7DEIOswwBYw/DkUH4DcJwDDAHaJgbsOBr7QGlBha6NwBiCDcgQQAxYAIUQGBKBYuBJEAcWJEnQDE4pIly4MoYoqAEDCUAPQRAxqkAJ5GoBgyB4RikbLIcbhtIX7/+4DE6YAUZaM7rZheonoiZ3a28ASIsGAgt7D+AWIjkDSGWD0hfqSddyAgLAQ5QaQn8QDHWOoB4AMjh6g6BZYagtVSTqMjpBSeF6RccsrkVJwiZEC0VjA1cjv+xgbI/0TEwQN0GdBn///9q1N/9v//0/VsitLemubODxzX2KfBVKuK49NlTEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqv/7YMT0gCAhwyP52gAIAAA/w4AABKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqg==",
-  sq = "data:audio/mpeg;base64,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VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/7QMTxA9NhPR3sPM5AAAA0gAAABFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV",
-  aq = "" + new URL("../assets/notification.CPyrWqU1.mp3", import.meta.url).href,
-  cq = "data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAADAAAHVgCKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioru7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7///////////////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJAUQAAAAAAAAB1ZvGw9zAAAAAAD/+9DEAAAGgANNtBAAJL5DKPc9kEkIAKVy6ZvTvjNiAEAQA4fwcOKBAED85LicHw/BAEHfg+D4f/B8Hwf/Ococ/lz//4P//lwfAAAQCzgEApUAchBICAMDwGwwpg3jDHA2MWkaAxCQqDAjBQMMoFYwVgLDCrX1NfwPQxajfTO/VkEYD4sAuYOwYBgPgBGmQOAYIgDoKER8AN4KNYgISnpehHt0X2WsksoO27zM1duB3IgimTpnXNwTefFr9ly4HYK1lgtE8a3uVY23SCpDEpz4xL3DZVTV8ZygdeB4X+GuX6sTh9sVNAzuwVTIUztBdnLL60VnPsrt8f+fw/LCUy2caLDNmzuzGatmcu97UsVIYilyxqUcpaSPSW63KzZucjnakuzw+zlc5nD7yfL5zPv59z7/dQ9EolEu9pf5V1Y1+7Eayl1qkt8rXLGdi5nz//////////////////9/r9dw1l39/+P73/7////rWr1PdwxvJCIEbNPJ1QmAABaCxKJEmLpurTGDFSAYMB0FQxfggyqAeYtYSphnAwmFmBIYTATyaZhFiAGFIEqY0hJ5wAIxmFKCgaFaihh9A1GSlMSJYunOGWWB6pdsMvN5kqIig49MYApkLhJxyjmgkA1gIGDp1/CEIOLNkht0Ag8+NWKWQOW+aivhGVsj00TCW4CiJWJKkYRECshrDX0vHCHosi1cqERxakomvtDHA2TIAyjt52yUsMz8EMpZDLYdbq3V0XSRtfmhWkyaFM+YpBSrxQBAx03pQHPND6exc0OKEQq3lvKqM9hSCVHlv0yVdJhNZf+1Nx2GYZbqxt2qLJ9GC00ETr2vY+tmMTrOqWWTEkkUeh27PYQFIWX0rcGmtAswPXlLzWp6IVZe/ssk8FZ02r16Xdz3hTwPHJu3DEos63dr2927GPfz3+sM+93/63n3u//D///3nv9/rX71v97/PHuGWv7z/1Uo+X7tNTZ91XyoaWnob1bs9Yp86oQUCZIAAwEB7VQIuyrSQANCQ2GhZMQQ4MOCHMFxAMRwkMAxlMHzDM9QQMAxabsYLC+aWdScYCCZCoabxBOZSGWZcE2FB0xAuPp4zhWswUOJAsxAQMFDR4qN//vAxOUALmI5MbnsgE1xwGT3O7ABhADArk1MFMSD0qUALTCIVTNZ6aumhCoZWXmZixYEi2Kiy35BH02oFLPGCg7rCgQDQYw4ZYE5yE1rTPX1YekYKAYsD1hgHKA0ZBWZkQVFFhX2gNE3fFvt411kDPlAE5BAAMrWnKUzkdUQ4GcKFNJrQ1beZZDA2TyBhzsLNlCcxIeBUAMBCRkBamhsy15MFpJFZV1ovs/V/u78Uh+bo5dMT3L0lpqC3Wi9mVXpPlvn5TNa1Vyq409e/b1XvY/9bHmF3O1dwt2u5ZY444Y8q2a2Ou5Zd/GzvHV7tu/cx5fzv587Xua5ewz1n3+91X/LPesO2M9Zb7c5n3eOHcb+5KDXnf0F87HySsMMMAEIAAAwaBkBfgCqAAS3goeAwxXwM3QBieI+IEf/E3Ckh6ID/mLENJk99YSErPrb/4uVDX/7Vo/+KKI1///VTEFNRTMuMTAwVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVX/+yDE4AAIHGcJGUmAAAAANIOAAARVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV",
-  uq = "data:audio/mpeg;base64,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qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/+xDE1gPAAAGkHAAAIAAANIAAAASqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqg==",
-  lq = "data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAAE/gDLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//////////////////////////////////////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJAOoAAAAAAAABP6u4u+sAAAAAAD/+9DEAAAGhC1UdGMAJM1C6nc34FFSaWP+7vYBAAEOAAiHPJp6YAwtNgQl3qDHKBgo4Th/wf/Lh/8H35R3/4IAg7//gh/+UOcPgABgAAAB0YnM2TIZDUkAGYOFBdqBQkadAmEAgiDTKD1BYUFTGA4LixoJUcUsGkDJrfwYKEmBDRg+gZmBSBeYUQyJj2B9mAOAkYXINwOA3cdvzIrBtMDwFYOAEMZhFcyRwWTDiAGWo/LzSFp7vtDTSQ3bHKocXbPR6kg2U07Vs4KcJaDIIGTHZxDsSjEMyhPing6w8PSYAlwHfdtbFq3lAc1qmqzPxFFV1cbUkrP9GG/cbKIyivlRWq1mzvHDWNad73eE7q3JYPnIerXqKJTtzV3DmUzLZZFM7sv1z9U8czh5wVG4G3nru8cfyy+rhT5TtHTb7jzd3eWO6Wmy3R3e6/DW9b5l/b9e5///87///eY////9///////Df7/8vx/Xf///9f///52O6s3rZINILq82aqo6x1TAYDoYGInIIhASA++E8wYSIkIBd0NdJXDHQL2vFAR4YOsgwGFK6QQiPQDhcITBl4MWgDBEAosgZUgoDGkAwGFAMCCEDEQVAwaOgMChwEQXAwUBg5MTgJcAwARZxBj4Ng0LAigBGYdKKwKBIeIQDHCyhWxMlUmTx0xUCgJFBjnkGFkpk0ZF4gSLLRZJKGARbBQAsZDCCFAhxianDEuspVXRkOUWCGGCYsxZiXa0Ukl/8XOS4vxxjrDJR7RLyeiisxJn//y+11pJqNycOJkgiapIoo0UdS0dL//sUjzHxMgBgMUtVdLRYGrKTEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq//tgxOMAHVGjN7magIAAADSDgAAEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
-  cV = fq();
-
-function fq() {
-  const q = {
-    plop: new Audio(cq),
-    smallPlop: new Audio(lq),
-    bigPlop: new Audio(iq),
-    smallDropplet: new Audio(uq),
-    droppletAndPlop: new Audio(sq),
-    notification1: new Audio(aq)
-  };
-  for (const V of Object.values(q)) V.preload = "auto", V.volume = .3;
-  return q
-}
-
-function dq(q) {
-  return Math.floor(Math.random() * q)
-}
-const C = 14.5;
-async function uV() {
-  const q = wq();
-  if (q) return q;
-  try {
-    if ((await navigator.permissions.query({
-        name: "geolocation"
-      })).state === "granted") {
-      const t = await new Promise((e, n) => navigator.geolocation.getCurrentPosition(A => e(A), A => n(A)));
-      return {
-        lat: t.coords.latitude,
-        lng: t.coords.longitude,
-        zoom: C
+function M(e, n, t, r) {
+  function i(a) {
+    return a instanceof t ? a : new t(function(o) {
+      o(a)
+    })
+  }
+  return new(t || (t = Promise))(function(a, o) {
+    function s(f) {
+      try {
+        l(r.next(f))
+      } catch (c) {
+        o(c)
       }
     }
-  } catch (V) {
-    console.error(V)
-  }
-  return {
-    ...pq().pos,
-    zoom: C
-  }
-}
 
-function pq() {
-  const q = Object.entries(gq),
-    V = dq(q.length),
-    [t, e] = q[V];
-  return {
-    city: t,
-    pos: e
-  }
-}
-const gq = {
-    tokyo: {
-      lat: 35.677545560719665,
-      lng: 139.76394445809638
-    },
-    paris: {
-      lat: 48.8537151734952,
-      lng: 2.3484026030630787
-    },
-    newYork: {
-      lat: 40.71283173786517,
-      lng: -74.00599771376795
-    },
-    saoPaulo: {
-      lat: -23.550584064565356,
-      lng: -46.63339720713918
-    },
-    sydney: {
-      lat: -33.86943325619071,
-      lng: 151.2083447239608
+    function u(f) {
+      try {
+        l(r.throw(f))
+      } catch (c) {
+        o(c)
+      }
     }
-  },
-  R = "location";
 
-function mq(q, V) {
-  localStorage.setItem(R, JSON.stringify({
-    ...q,
-    zoom: V
-  }))
+    function l(f) {
+      f.done ? a(f.value) : i(f.value).then(s, u)
+    }
+    l((r = r.apply(e, n || [])).next())
+  })
 }
 
-function wq() {
-  const q = localStorage.getItem(R);
-  if (!q) return;
-  const V = JSON.parse(q);
-  return V.zoom ?? (V.zoom = C), V
-}
-
-function lV(q) {
-  return q.lat >= -90 && q.lat <= 90 && q.lng >= -180 && q.lng <= 180
-}
-var v, B;
-class Eq {
-  constructor() {
-    p(this, v, Y(-1));
-    p(this, B, Y([]))
-  }
-  get idx() {
-    return I(f(this, v))
-  }
-  set idx(V) {
-    L(f(this, v), V, !0)
-  }
-  get entries() {
-    return I(f(this, B))
-  }
-  set entries(V) {
-    L(f(this, B), V)
-  }
-  hasNext() {
-    return this.idx < this.entries.length - 1
-  }
-  goToNext(V) {
-    const t = this.idx + 1,
-      e = this.entries[t];
-    e && (this.idx = t, V.flyTo({
-      center: e.pos,
-      zoom: e.zoom
-    }))
-  }
-  hasPrev() {
-    return this.idx > 0
-  }
-  goToPrev(V) {
-    const t = this.idx - 1,
-      e = this.entries[t];
-    e && (this.idx = t, V.flyTo({
-      center: e.pos,
-      zoom: e.zoom
-    }))
-  }
-  isEmpty() {
-    return this.entries.length === 0
-  }
-  push(V) {
-    this.idx = this.idx + 1, this.entries = [...this.entries.slice(0, this.idx), V]
-  }
-}
-v = new WeakMap, B = new WeakMap;
-const fV = new Eq;
-
-function hq() {
-  return window.matchMedia("(display-mode: standalone)").matches || "standalone" in window.navigator && window.navigator.standalone === !0
-}
-
-function dV() {
-  const q = "last-unfocus",
-    V = new AbortController;
-  if (hq()) {
-    const t = () => {
-        const n = localStorage.getItem(q);
-        if (n) {
-          const A = parseInt(n, 10);
-          Date.now() - A > 5 * $.minute && window.location.reload()
-        }
+function I(e, n) {
+  var t = {
+      label: 0,
+      sent: function() {
+        if (a[0] & 1) throw a[1];
+        return a[1]
       },
-      e = () => {
-        localStorage.setItem(q, Date.now().toString());
-        const n = qq.map;
-        if (n) {
-          const A = n.getCenter(),
-            o = n.getZoom();
-          mq(A, o)
-        }
-      };
-    document.addEventListener("visibilitychange", () => {
-      document.visibilityState === "visible" ? t() : e()
-    }, {
-      signal: V.signal
-    }), window.addEventListener("pageshow", t, {
-      signal: V.signal
-    }), window.addEventListener("pagehide", e, {
-      signal: V.signal
-    })
-  }
-  return () => {
-    V.abort()
-  }
-}
-let k;
-
-function pV(q) {
-  return k = q, T({
-    type: "previewPixels",
-    data: q
-  })
-}
-
-function gV() {
-  return k = void 0, T({
-    type: "clearPixelPreview"
-  })
-}
-
-function mV(q) {
-  return T({
-    type: "paintPixels",
-    data: q
-  })
-}
-
-function wV() {
-  return T({
-    type: "refreshPixelArt"
-  })
-}
-async function EV() {
-  k || await T({
-    type: "clearPixelPreview"
-  })
-}
-
-function T(q) {
-  const V = Math.random(),
-    t = {
-      ...q,
-      id: V
-    };
-  return new Promise((e, n) => {
-    try {
-      const A = navigator.serviceWorker;
-      A || n(new Error("Service Workers are not supported/enabled in your browser. Some features might not work properly."));
-      const o = a => {
-        var c;
-        ((c = a.data) == null ? void 0 : c.id) === V && (e(void 0), A.removeEventListener("message", o))
-      };
-      A.addEventListener("message", o);
-      const i = navigator.serviceWorker.controller;
-      i ? i.postMessage(t) : navigator.serviceWorker.ready.then(a => {
-        const c = a.active;
-        c ? c == null || c.postMessage(t) : n(new Error("Service worker registration not active"))
-      })
-    } catch (A) {
-      n(A)
-    }
-  })
-}
-
-function hV({
-  pixel: q,
-  season: V,
-  tile: t
-}) {
-  return `t=(${t[0]},${t[1]});p=(${q[0]},${q[1]});s=${V}`
-}
-
-function yq(q) {
-  return q !== null && typeof q == "object"
-}
-const vq = ["string", "number", "bigint", "boolean"];
-
-function P(q) {
-  return q == null || vq.includes(typeof q) ? !0 : Array.isArray(q) ? q.every(V => P(V)) : typeof q == "object" ? Object.getPrototypeOf(q) === Object.prototype : !1
-}
-const x = Symbol("box"),
-  Z = Symbol("is-writable");
-
-function yV(q, V) {
-  const t = eq(q);
-  return V ? {
-    [x]: !0,
-    [Z]: !0,
-    get current() {
-      return I(t)
+      trys: [],
+      ops: []
     },
-    set current(e) {
-      V(e)
-    }
-  } : {
-    [x]: !0,
-    get current() {
-      return q()
-    }
-  }
-}
+    r, i, a, o = Object.create((typeof Iterator == "function" ? Iterator : Object).prototype);
+  return o.next = s(0), o.throw = s(1), o.return = s(2), typeof Symbol == "function" && (o[Symbol.iterator] = function() {
+    return this
+  }), o;
 
-function Bq(q) {
-  return yq(q) && x in q
-}
-
-function vV(q) {
-  let V = Y(tq(q));
-  return {
-    [x]: !0,
-    [Z]: !0,
-    get current() {
-      return I(V)
-    },
-    set current(t) {
-      L(V, t, !0)
-    }
-  }
-}
-
-function bq(...q) {
-  return function(V) {
-    var t;
-    for (const e of q)
-      if (e) {
-        if (V.defaultPrevented) return;
-        typeof e == "function" ? e.call(this, V) : (t = e.current) == null || t.call(this, V)
-      }
-  }
-}
-var J = /\/\*[^*]*\*+([^/*][^*]*\*+)*\//g,
-  Mq = /\n/g,
-  Tq = /^\s*/,
-  Dq = /^(\*?[-#/*\\\w]+(\[[0-9a-z_-]+\])?)\s*/,
-  Iq = /^:\s*/,
-  xq = /^((?:'(?:\\'|.)*?'|"(?:\\"|.)*?"|\([^)]*?\)|[^};])+)/,
-  Sq = /^[;\s]*/,
-  Yq = /^\s+|\s+$/g,
-  Lq = `
-`,
-  Q = "/",
-  j = "*",
-  g = "",
-  Gq = "comment",
-  Cq = "declaration";
-
-function Pq(q, V) {
-  if (typeof q != "string") throw new TypeError("First argument must be a string");
-  if (!q) return [];
-  V = V || {};
-  var t = 1,
-    e = 1;
-
-  function n(s) {
-    var r = s.match(Mq);
-    r && (t += r.length);
-    var l = s.lastIndexOf(Lq);
-    e = ~l ? s.length - l : e + s.length
-  }
-
-  function A() {
-    var s = {
-      line: t,
-      column: e
-    };
-    return function(r) {
-      return r.position = new o(s), c(), r
+  function s(l) {
+    return function(f) {
+      return u([l, f])
     }
   }
 
-  function o(s) {
-    this.start = s, this.end = {
-      line: t,
-      column: e
-    }, this.source = V.source
-  }
-  o.prototype.content = q;
-
-  function i(s) {
-    var r = new Error(V.source + ":" + t + ":" + e + ": " + s);
-    if (r.reason = s, r.filename = V.source, r.line = t, r.column = e, r.source = q, !V.silent) throw r
-  }
-
-  function a(s) {
-    var r = s.exec(q);
-    if (r) {
-      var l = r[0];
-      return n(l), q = q.slice(l.length), r
-    }
-  }
-
-  function c() {
-    a(Tq)
-  }
-
-  function u(s) {
-    var r;
-    for (s = s || []; r = m();) r !== !1 && s.push(r);
-    return s
-  }
-
-  function m() {
-    var s = A();
-    if (!(Q != q.charAt(0) || j != q.charAt(1))) {
-      for (var r = 2; g != q.charAt(r) && (j != q.charAt(r) || Q != q.charAt(r + 1));) ++r;
-      if (r += 2, g === q.charAt(r - 1)) return i("End of comment missing");
-      var l = q.slice(2, r - 2);
-      return e += 2, n(l), q = q.slice(r), e += 2, s({
-        type: Gq,
-        comment: l
-      })
-    }
-  }
-
-  function h() {
-    var s = A(),
-      r = a(Dq);
-    if (r) {
-      if (m(), !a(Iq)) return i("property missing ':'");
-      var l = a(xq),
-        O = s({
-          type: Cq,
-          property: F(r[0].replace(J, g)),
-          value: l ? F(l[0].replace(J, g)) : g
-        });
-      return a(Sq), O
-    }
-  }
-
-  function d() {
-    var s = [];
-    u(s);
-    for (var r; r = h();) r !== !1 && (s.push(r), u(s));
-    return s
-  }
-  return c(), d()
-}
-
-function F(q) {
-  return q ? q.replace(Yq, g) : g
-}
-
-function kq(q, V) {
-  let t = null;
-  if (!q || typeof q != "string") return t;
-  const e = Pq(q),
-    n = typeof V == "function";
-  return e.forEach(A => {
-    if (A.type !== "declaration") return;
-    const {
-      property: o,
-      value: i
-    } = A;
-    n ? V(o, i, A) : i && (t = t || {}, t[o] = i)
-  }), t
-}
-const Uq = /\d/,
-  Wq = ["-", "_", "/", "."];
-
-function zq(q = "") {
-  if (!Uq.test(q)) return q !== q.toLowerCase()
-}
-
-function Nq(q) {
-  const V = [];
-  let t = "",
-    e, n;
-  for (const A of q) {
-    const o = Wq.includes(A);
-    if (o === !0) {
-      V.push(t), t = "", e = void 0;
-      continue
-    }
-    const i = zq(A);
-    if (n === !1) {
-      if (e === !1 && i === !0) {
-        V.push(t), t = A, e = i;
-        continue
-      }
-      if (e === !0 && i === !1 && t.length > 1) {
-        const a = t.at(-1);
-        V.push(t.slice(0, Math.max(0, t.length - 1))), t = a + A, e = i;
-        continue
-      }
-    }
-    t += A, e = i, n = o
-  }
-  return V.push(t), V
-}
-
-function K(q) {
-  return q ? Nq(q).map(V => Qq(V)).join("") : ""
-}
-
-function Jq(q) {
-  return jq(K(q || ""))
-}
-
-function Qq(q) {
-  return q ? q[0].toUpperCase() + q.slice(1) : ""
-}
-
-function jq(q) {
-  return q ? q[0].toLowerCase() + q.slice(1) : ""
-}
-
-function D(q) {
-  if (!q) return {};
-  const V = {};
-
-  function t(e, n) {
-    if (e.startsWith("-moz-") || e.startsWith("-webkit-") || e.startsWith("-ms-") || e.startsWith("-o-")) {
-      V[K(e)] = n;
-      return
-    }
-    if (e.startsWith("--")) {
-      V[e] = n;
-      return
-    }
-    V[Jq(e)] = n
-  }
-  return kq(q, t), V
-}
-
-function Fq(...q) {
-  return (...V) => {
-    for (const t of q) typeof t == "function" && t(...V)
-  }
-}
-
-function Rq(q, V) {
-  const t = RegExp(q, "g");
-  return e => {
-    if (typeof e != "string") throw new TypeError(`expected an argument of type string, but got ${typeof e}`);
-    return e.match(t) ? e.replace(t, V) : e
-  }
-}
-const Zq = Rq(/[A-Z]/, q => `-${q.toLowerCase()}`);
-
-function Kq(q) {
-  if (!q || typeof q != "object" || Array.isArray(q)) throw new TypeError(`expected an argument of type object, but got ${typeof q}`);
-  return Object.keys(q).map(V => `${Zq(V)}: ${q[V]};`).join(`
-`)
-}
-
-function Xq(q = {}) {
-  return Kq(q).replace(`
-`, " ")
-}
-const Oq = ["onabort", "onanimationcancel", "onanimationend", "onanimationiteration", "onanimationstart", "onauxclick", "onbeforeinput", "onbeforetoggle", "onblur", "oncancel", "oncanplay", "oncanplaythrough", "onchange", "onclick", "onclose", "oncompositionend", "oncompositionstart", "oncompositionupdate", "oncontextlost", "oncontextmenu", "oncontextrestored", "oncopy", "oncuechange", "oncut", "ondblclick", "ondrag", "ondragend", "ondragenter", "ondragleave", "ondragover", "ondragstart", "ondrop", "ondurationchange", "onemptied", "onended", "onerror", "onfocus", "onfocusin", "onfocusout", "onformdata", "ongotpointercapture", "oninput", "oninvalid", "onkeydown", "onkeypress", "onkeyup", "onload", "onloadeddata", "onloadedmetadata", "onloadstart", "onlostpointercapture", "onmousedown", "onmouseenter", "onmouseleave", "onmousemove", "onmouseout", "onmouseover", "onmouseup", "onpaste", "onpause", "onplay", "onplaying", "onpointercancel", "onpointerdown", "onpointerenter", "onpointerleave", "onpointermove", "onpointerout", "onpointerover", "onpointerup", "onprogress", "onratechange", "onreset", "onresize", "onscroll", "onscrollend", "onsecuritypolicyviolation", "onseeked", "onseeking", "onselect", "onselectionchange", "onselectstart", "onslotchange", "onstalled", "onsubmit", "onsuspend", "ontimeupdate", "ontoggle", "ontouchcancel", "ontouchend", "ontouchmove", "ontouchstart", "ontransitioncancel", "ontransitionend", "ontransitionrun", "ontransitionstart", "onvolumechange", "onwaiting", "onwebkitanimationend", "onwebkitanimationiteration", "onwebkitanimationstart", "onwebkittransitionend", "onwheel"],
-  Hq = new Set(Oq);
-
-function _q(q) {
-  return Hq.has(q)
-}
-
-function BV(...q) {
-  const V = {
-    ...q[0]
-  };
-  for (let t = 1; t < q.length; t++) {
-    const e = q[t];
-    if (e) {
-      for (const n of Object.keys(e)) {
-        const A = V[n],
-          o = e[n],
-          i = typeof A == "function",
-          a = typeof o == "function";
-        if (i && _q(n)) {
-          const c = A,
-            u = o;
-          V[n] = bq(c, u)
-        } else if (i && a) V[n] = Fq(A, o);
-        else if (n === "class") {
-          const c = P(A),
-            u = P(o);
-          c && u ? V[n] = S(A, o) : c ? V[n] = S(A) : u && (V[n] = S(o))
-        } else if (n === "style") {
-          const c = typeof A == "object",
-            u = typeof o == "object",
-            m = typeof A == "string",
-            h = typeof o == "string";
-          if (c && u) V[n] = {
-            ...A,
-            ...o
+  function u(l) {
+    if (r) throw new TypeError("Generator is already executing.");
+    for (; o && (o = 0, l[0] && (t = 0)), t;) try {
+      if (r = 1, i && (a = l[0] & 2 ? i.return : l[0] ? i.throw || ((a = i.return) && a.call(i), 0) : i.next) && !(a = a.call(i, l[1])).done) return a;
+      switch (i = 0, a && (l = [l[0] & 2, a.value]), l[0]) {
+        case 0:
+        case 1:
+          a = l;
+          break;
+        case 4:
+          return t.label++, {
+            value: l[1],
+            done: !1
           };
-          else if (c && h) {
-            const d = D(o);
-            V[n] = {
-              ...A,
-              ...d
-            }
-          } else if (m && u) {
-            const d = D(A);
-            V[n] = {
-              ...d,
-              ...o
-            }
-          } else if (m && h) {
-            const d = D(A),
-              s = D(o);
-            V[n] = {
-              ...d,
-              ...s
-            }
-          } else c ? V[n] = A : u ? V[n] = o : m ? V[n] = A : h && (V[n] = o)
-        } else V[n] = o !== void 0 ? o : A
+        case 5:
+          t.label++, i = l[1], l = [0];
+          continue;
+        case 7:
+          l = t.ops.pop(), t.trys.pop();
+          continue;
+        default:
+          if (a = t.trys, !(a = a.length > 0 && a[a.length - 1]) && (l[0] === 6 || l[0] === 2)) {
+            t = 0;
+            continue
+          }
+          if (l[0] === 3 && (!a || l[1] > a[0] && l[1] < a[3])) {
+            t.label = l[1];
+            break
+          }
+          if (l[0] === 6 && t.label < a[1]) {
+            t.label = a[1], a = l;
+            break
+          }
+          if (a && t.label < a[2]) {
+            t.label = a[2], t.ops.push(l);
+            break
+          }
+          a[2] && t.ops.pop(), t.trys.pop();
+          continue
       }
-      for (const n of Object.getOwnPropertySymbols(e)) {
-        const A = V[n],
-          o = e[n];
-        V[n] = o !== void 0 ? o : A
-      }
+      l = n.call(e, t)
+    } catch (f) {
+      l = [6, f], i = 0
+    } finally {
+      r = a = 0
+    }
+    if (l[0] & 5) throw l[1];
+    return {
+      value: l[0] ? l[1] : void 0,
+      done: !0
     }
   }
-  return typeof V.style == "object" && (V.style = Xq(V.style).replaceAll(`
-`, " ")), V.hidden === !1 && (V.hidden = void 0, delete V.hidden), V.disabled === !1 && (V.disabled = void 0, delete V.disabled), V
-}
-const $q = typeof window < "u" ? window : void 0;
-
-function qV(q) {
-  let V = q.activeElement;
-  for (; V != null && V.shadowRoot;) {
-    const t = V.shadowRoot.activeElement;
-    if (t === V) break;
-    V = t
-  }
-  return V
-}
-var w, b;
-class VV {
-  constructor(V = {}) {
-    p(this, w);
-    p(this, b);
-    const {
-      window: t = $q,
-      document: e = t == null ? void 0 : t.document
-    } = V;
-    t !== void 0 && (y(this, w, e), y(this, b, oq(n => {
-      const A = N(t, "focusin", n),
-        o = N(t, "focusout", n);
-      return () => {
-        A(), o()
-      }
-    })))
-  }
-  get current() {
-    var V;
-    return (V = f(this, b)) == null || V.call(this), f(this, w) ? qV(f(this, w)) : null
-  }
-}
-w = new WeakMap, b = new WeakMap;
-new VV;
-
-function tV(q, V) {
-  switch (q) {
-    case "post":
-      Aq(V);
-      break;
-    case "pre":
-      nq(V);
-      break
-  }
 }
 
-function X(q, V, t, e = {}) {
-  const {
-    lazy: n = !1
-  } = e;
-  let A = !n,
-    o = Array.isArray(q) ? [] : void 0;
-  tV(V, () => {
-    const i = Array.isArray(q) ? q.map(c => c()) : q();
-    if (!A) {
-      A = !0, o = i;
-      return
-    }
-    const a = G(() => t(i, o));
-    return o = i, a
+function ke(e, n, t) {
+  if (t || arguments.length === 2)
+    for (var r = 0, i = n.length, a; r < i; r++)(a || !(r in n)) && (a || (a = Array.prototype.slice.call(n, 0, r)), a[r] = n[r]);
+  return e.concat(a || Array.prototype.slice.call(n))
+}
+var xe = "4.6.2";
+
+function J(e, n) {
+  return new Promise(function(t) {
+    return setTimeout(t, e, n)
   })
 }
 
-function eV(q, V, t) {
-  X(q, "post", V, t)
+function He() {
+  return new Promise(function(e) {
+    var n = new MessageChannel;
+    n.port1.onmessage = function() {
+      return e()
+    }, n.port2.postMessage(null)
+  })
 }
 
-function nV(q, V, t) {
-  X(q, "pre", V, t)
+function Be(e, n) {
+  n === void 0 && (n = 1 / 0);
+  var t = window.requestIdleCallback;
+  return t ? new Promise(function(r) {
+    return t.call(window, function() {
+      return r()
+    }, {
+      timeout: n
+    })
+  }) : J(Math.min(e, n))
 }
-eV.pre = nV;
 
-function bV(q, V) {
-  return {
-    [rq()]: t => Bq(q) ? (q.current = t, G(() => V == null ? void 0 : V(t)), () => {
-      "isConnected" in t && t.isConnected || (q.current = null, V == null || V(null))
-    }) : (q(t), G(() => V == null ? void 0 : V(t)), () => {
-      "isConnected" in t && t.isConnected || (q(null), V == null || V(null))
+function Ce(e) {
+  return !!e && typeof e.then == "function"
+}
+
+function le(e, n) {
+  try {
+    var t = e();
+    Ce(t) ? t.then(function(r) {
+      return n(!0, r)
+    }, function(r) {
+      return n(!1, r)
+    }) : n(!0, t)
+  } catch (r) {
+    n(!1, r)
+  }
+}
+
+function fe(e, n, t) {
+  return t === void 0 && (t = 16), M(this, void 0, void 0, function() {
+    var r, i, a, o;
+    return I(this, function(s) {
+      switch (s.label) {
+        case 0:
+          r = Array(e.length), i = Date.now(), a = 0, s.label = 1;
+        case 1:
+          return a < e.length ? (r[a] = n(e[a], a), o = Date.now(), o >= i + t ? (i = o, [4, He()]) : [3, 3]) : [3, 4];
+        case 2:
+          s.sent(), s.label = 3;
+        case 3:
+          return ++a, [3, 1];
+        case 4:
+          return [2, r]
+      }
+    })
+  })
+}
+
+function j(e) {
+  return e.then(void 0, function() {}), e
+}
+
+function Oe(e, n) {
+  for (var t = 0, r = e.length; t < r; ++t)
+    if (e[t] === n) return !0;
+  return !1
+}
+
+function ze(e, n) {
+  return !Oe(e, n)
+}
+
+function re(e) {
+  return parseInt(e)
+}
+
+function F(e) {
+  return parseFloat(e)
+}
+
+function P(e, n) {
+  return typeof e == "number" && isNaN(e) ? n : e
+}
+
+function x(e) {
+  return e.reduce(function(n, t) {
+    return n + (t ? 1 : 0)
+  }, 0)
+}
+
+function Ve(e, n) {
+  if (n === void 0 && (n = 1), Math.abs(n) >= 1) return Math.round(e / n) * n;
+  var t = 1 / n;
+  return Math.round(e * t) / t
+}
+
+function Je(e) {
+  for (var n, t, r = "Unexpected syntax '".concat(e, "'"), i = /^\s*([a-z-]*)(.*)$/i.exec(e), a = i[1] || void 0, o = {}, s = /([.:#][\w-]+|\[.+?\])/gi, u = function(d, v) {
+      o[d] = o[d] || [], o[d].push(v)
+    };;) {
+    var l = s.exec(i[2]);
+    if (!l) break;
+    var f = l[0];
+    switch (f[0]) {
+      case ".":
+        u("class", f.slice(1));
+        break;
+      case "#":
+        u("id", f.slice(1));
+        break;
+      case "[": {
+        var c = /^\[([\w-]+)([~|^$*]?=("(.*?)"|([\w-]+)))?(\s+[is])?\]$/.exec(f);
+        if (c) u(c[1], (t = (n = c[4]) !== null && n !== void 0 ? n : c[5]) !== null && t !== void 0 ? t : "");
+        else throw new Error(r);
+        break
+      }
+      default:
+        throw new Error(r)
+    }
+  }
+  return [a, o]
+}
+
+function Ue(e) {
+  for (var n = new Uint8Array(e.length), t = 0; t < e.length; t++) {
+    var r = e.charCodeAt(t);
+    if (r > 127) return new TextEncoder().encode(e);
+    n[t] = r
+  }
+  return n
+}
+
+function Z(e, n) {
+  var t = e[0] >>> 16,
+    r = e[0] & 65535,
+    i = e[1] >>> 16,
+    a = e[1] & 65535,
+    o = n[0] >>> 16,
+    s = n[0] & 65535,
+    u = n[1] >>> 16,
+    l = n[1] & 65535,
+    f = 0,
+    c = 0,
+    d = 0,
+    v = 0;
+  v += a + l, d += v >>> 16, v &= 65535, d += i + u, c += d >>> 16, d &= 65535, c += r + s, f += c >>> 16, c &= 65535, f += t + o, f &= 65535, e[0] = f << 16 | c, e[1] = d << 16 | v
+}
+
+function V(e, n) {
+  var t = e[0] >>> 16,
+    r = e[0] & 65535,
+    i = e[1] >>> 16,
+    a = e[1] & 65535,
+    o = n[0] >>> 16,
+    s = n[0] & 65535,
+    u = n[1] >>> 16,
+    l = n[1] & 65535,
+    f = 0,
+    c = 0,
+    d = 0,
+    v = 0;
+  v += a * l, d += v >>> 16, v &= 65535, d += i * l, c += d >>> 16, d &= 65535, d += a * u, c += d >>> 16, d &= 65535, c += r * l, f += c >>> 16, c &= 65535, c += i * u, f += c >>> 16, c &= 65535, c += a * s, f += c >>> 16, c &= 65535, f += t * l + r * u + i * s + a * o, f &= 65535, e[0] = f << 16 | c, e[1] = d << 16 | v
+}
+
+function T(e, n) {
+  var t = e[0];
+  n %= 64, n === 32 ? (e[0] = e[1], e[1] = t) : n < 32 ? (e[0] = t << n | e[1] >>> 32 - n, e[1] = e[1] << n | t >>> 32 - n) : (n -= 32, e[0] = e[1] << n | t >>> 32 - n, e[1] = t << n | e[1] >>> 32 - n)
+}
+
+function C(e, n) {
+  n %= 64, n !== 0 && (n < 32 ? (e[0] = e[1] >>> 32 - n, e[1] = e[1] << n) : (e[0] = e[1] << n - 32, e[1] = 0))
+}
+
+function g(e, n) {
+  e[0] ^= n[0], e[1] ^= n[1]
+}
+var Qe = [4283543511, 3981806797],
+  _e = [3301882366, 444984403];
+
+function de(e) {
+  var n = [0, e[0] >>> 1];
+  g(e, n), V(e, Qe), n[1] = e[0] >>> 1, g(e, n), V(e, _e), n[1] = e[0] >>> 1, g(e, n)
+}
+var B = [2277735313, 289559509],
+  O = [1291169091, 658871167],
+  ve = [0, 5],
+  Ke = [0, 1390208809],
+  $e = [0, 944331445];
+
+function qe(e, n) {
+  var t = Ue(e);
+  n = n || 0;
+  var r = [0, t.length],
+    i = r[1] % 16,
+    a = r[1] - i,
+    o = [0, n],
+    s = [0, n],
+    u = [0, 0],
+    l = [0, 0],
+    f;
+  for (f = 0; f < a; f = f + 16) u[0] = t[f + 4] | t[f + 5] << 8 | t[f + 6] << 16 | t[f + 7] << 24, u[1] = t[f] | t[f + 1] << 8 | t[f + 2] << 16 | t[f + 3] << 24, l[0] = t[f + 12] | t[f + 13] << 8 | t[f + 14] << 16 | t[f + 15] << 24, l[1] = t[f + 8] | t[f + 9] << 8 | t[f + 10] << 16 | t[f + 11] << 24, V(u, B), T(u, 31), V(u, O), g(o, u), T(o, 27), Z(o, s), V(o, ve), Z(o, Ke), V(l, O), T(l, 33), V(l, B), g(s, l), T(s, 31), Z(s, o), V(s, ve), Z(s, $e);
+  u[0] = 0, u[1] = 0, l[0] = 0, l[1] = 0;
+  var c = [0, 0];
+  switch (i) {
+    case 15:
+      c[1] = t[f + 14], C(c, 48), g(l, c);
+    case 14:
+      c[1] = t[f + 13], C(c, 40), g(l, c);
+    case 13:
+      c[1] = t[f + 12], C(c, 32), g(l, c);
+    case 12:
+      c[1] = t[f + 11], C(c, 24), g(l, c);
+    case 11:
+      c[1] = t[f + 10], C(c, 16), g(l, c);
+    case 10:
+      c[1] = t[f + 9], C(c, 8), g(l, c);
+    case 9:
+      c[1] = t[f + 8], g(l, c), V(l, O), T(l, 33), V(l, B), g(s, l);
+    case 8:
+      c[1] = t[f + 7], C(c, 56), g(u, c);
+    case 7:
+      c[1] = t[f + 6], C(c, 48), g(u, c);
+    case 6:
+      c[1] = t[f + 5], C(c, 40), g(u, c);
+    case 5:
+      c[1] = t[f + 4], C(c, 32), g(u, c);
+    case 4:
+      c[1] = t[f + 3], C(c, 24), g(u, c);
+    case 3:
+      c[1] = t[f + 2], C(c, 16), g(u, c);
+    case 2:
+      c[1] = t[f + 1], C(c, 8), g(u, c);
+    case 1:
+      c[1] = t[f], g(u, c), V(u, B), T(u, 31), V(u, O), g(o, u)
+  }
+  return g(o, r), g(s, r), Z(o, s), Z(s, o), de(o), de(s), Z(o, s), Z(s, o), ("00000000" + (o[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (o[1] >>> 0).toString(16)).slice(-8) + ("00000000" + (s[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (s[1] >>> 0).toString(16)).slice(-8)
+}
+
+function en(e) {
+  var n;
+  return ee({
+    name: e.name,
+    message: e.message,
+    stack: (n = e.stack) === null || n === void 0 ? void 0 : n.split(`
+`)
+  }, e)
+}
+
+function nn(e) {
+  return /^function\s.*?\{\s*\[native code]\s*}$/.test(String(e))
+}
+
+function tn(e) {
+  return typeof e != "function"
+}
+
+function rn(e, n) {
+  var t = j(new Promise(function(r) {
+    var i = Date.now();
+    le(e.bind(null, n), function() {
+      for (var a = [], o = 0; o < arguments.length; o++) a[o] = arguments[o];
+      var s = Date.now() - i;
+      if (!a[0]) return r(function() {
+        return {
+          error: a[1],
+          duration: s
+        }
+      });
+      var u = a[1];
+      if (tn(u)) return r(function() {
+        return {
+          value: u,
+          duration: s
+        }
+      });
+      r(function() {
+        return new Promise(function(l) {
+          var f = Date.now();
+          le(u, function() {
+            for (var c = [], d = 0; d < arguments.length; d++) c[d] = arguments[d];
+            var v = s + Date.now() - f;
+            if (!c[0]) return l({
+              error: c[1],
+              duration: v
+            });
+            l({
+              value: c[1],
+              duration: v
+            })
+          })
+        })
+      })
+    })
+  }));
+  return function() {
+    return t.then(function(i) {
+      return i()
     })
   }
 }
 
-function MV(q) {
-  return q ? "true" : "false"
-}
-
-function TV(q) {
-  return q ? "" : void 0
-}
-
-function DV(q) {
-  return q ? !0 : void 0
-}
-var E, M;
-class AV {
-  constructor(V) {
-    p(this, E);
-    p(this, M);
-    W(this, "attrs");
-    y(this, E, V.getVariant ? V.getVariant() : null), y(this, M, f(this, E) ? `data-${f(this,E)}-` : `data-${V.component}-`), this.getAttr = this.getAttr.bind(this), this.selector = this.selector.bind(this), this.attrs = Object.fromEntries(V.parts.map(t => [t, this.getAttr(t)]))
-  }
-  getAttr(V, t) {
-    return t ? `data-${t}-${V}` : `${f(this,M)}${V}`
-  }
-  selector(V, t) {
-    return `[${this.getAttr(V,t)}]`
-  }
-}
-E = new WeakMap, M = new WeakMap;
-
-function IV(q) {
-  const V = new AV(q);
-  return {
-    ...V.attrs,
-    selector: V.selector,
-    getAttr: V.getAttr
+function an(e, n, t, r) {
+  var i = Object.keys(e).filter(function(o) {
+      return ze(t, o)
+    }),
+    a = j(fe(i, function(o) {
+      return rn(e[o], n)
+    }, r));
+  return function() {
+    return M(this, void 0, void 0, function() {
+      var s, u, l, f, c;
+      return I(this, function(d) {
+        switch (d.label) {
+          case 0:
+            return [4, a];
+          case 1:
+            return s = d.sent(), [4, fe(s, function(v) {
+              return j(v())
+            }, r)];
+          case 2:
+            return u = d.sent(), [4, Promise.all(u)];
+          case 3:
+            for (l = d.sent(), f = {}, c = 0; c < i.length; ++c) f[i[c]] = l[c];
+            return [2, f]
+        }
+      })
+    })
   }
 }
 
-function xV() {}
-
-function SV(q, V) {
-  return `bits-${q}`
+function Fe() {
+  var e = window,
+    n = navigator;
+  return x(["MSCSSMatrix" in e, "msSetImmediate" in e, "msIndexedDB" in e, "msMaxTouchPoints" in n, "msPointerEnabled" in n]) >= 4
 }
 
-function YV(q) {
-  return q && q.__esModule && Object.prototype.hasOwnProperty.call(q, "default") ? q.default : q
+function on() {
+  var e = window,
+    n = navigator;
+  return x(["msWriteProfilerMark" in e, "MSStream" in e, "msLaunchUri" in n, "msSaveBlob" in n]) >= 3 && !Fe()
 }
 
-function LV(q, {
-  interval: V,
-  immediate: t = !1
-}) {
-  let e = t ? -1 / 0 : Date.now();
-  const n = () => typeof document > "u" || document.visibilityState === "visible";
-  async function A() {
-    const c = e;
-    try {
-      e = Date.now(), await q()
-    } catch (u) {
-      console.error(u), e = c
+function X() {
+  var e = window,
+    n = navigator;
+  return x(["webkitPersistentStorage" in n, "webkitTemporaryStorage" in n, (n.vendor || "").indexOf("Google") === 0, "webkitResolveLocalFileSystemURL" in e, "BatteryManager" in e, "webkitMediaStream" in e, "webkitSpeechGrammar" in e]) >= 5
+}
+
+function W() {
+  var e = window,
+    n = navigator;
+  return x(["ApplePayError" in e, "CSSPrimitiveValue" in e, "Counter" in e, n.vendor.indexOf("Apple") === 0, "RGBColor" in e, "WebKitMediaKeys" in e]) >= 4
+}
+
+function ae() {
+  var e = window,
+    n = e.HTMLElement,
+    t = e.Document;
+  return x(["safari" in e, !("ongestureend" in e), !("TouchEvent" in e), !("orientation" in e), n && !("autocapitalize" in n.prototype), t && "pointerLockElement" in t.prototype]) >= 4
+}
+
+function D() {
+  var e = window;
+  return nn(e.print) && String(e.browser) === "[object WebPageNamespace]"
+}
+
+function We() {
+  var e, n, t = window;
+  return x(["buildID" in navigator, "MozAppearance" in ((n = (e = document.documentElement) === null || e === void 0 ? void 0 : e.style) !== null && n !== void 0 ? n : {}), "onmozfullscreenchange" in t, "mozInnerScreenX" in t, "CSSMozDocumentRule" in t, "CanvasCaptureMediaStream" in t]) >= 4
+}
+
+function cn() {
+  var e = window;
+  return x([!("MediaSettingsRange" in e), "RTCEncodedAudioFrame" in e, "" + e.Intl == "[object Intl]", "" + e.Reflect == "[object Reflect]"]) >= 3
+}
+
+function un() {
+  var e = window,
+    n = e.URLPattern;
+  return x(["union" in Set.prototype, "Iterator" in e, n && "hasRegExpGroups" in n.prototype, "RGB8" in WebGLRenderingContext.prototype]) >= 3
+}
+
+function sn() {
+  var e = window;
+  return x(["DOMRectList" in e, "RTCPeerConnectionIceEvent" in e, "SVGGeometryElement" in e, "ontransitioncancel" in e]) >= 3
+}
+
+function H() {
+  var e = window,
+    n = navigator,
+    t = e.CSS,
+    r = e.HTMLButtonElement;
+  return x([!("getStorageUpdates" in n), r && "popover" in r.prototype, "CSSCounterStyleRule" in e, t.supports("font-size-adjust: ex-height 0.5"), t.supports("text-transform: full-width")]) >= 4
+}
+
+function ln() {
+  if (navigator.platform === "iPad") return !0;
+  var e = screen,
+    n = e.width / e.height;
+  return x(["MediaSource" in window, !!Element.prototype.webkitRequestFullscreen, n > .65 && n < 1.53]) >= 2
+}
+
+function fn() {
+  var e = document;
+  return e.fullscreenElement || e.msFullscreenElement || e.mozFullScreenElement || e.webkitFullscreenElement || null
+}
+
+function dn() {
+  var e = document;
+  return (e.exitFullscreen || e.msExitFullscreen || e.mozCancelFullScreen || e.webkitExitFullscreen).call(e)
+}
+
+function ie() {
+  var e = X(),
+    n = We(),
+    t = window,
+    r = navigator,
+    i = "connection";
+  return e ? x([!("SharedWorker" in t), r[i] && "ontypechange" in r[i], !("sinkId" in new Audio)]) >= 2 : n ? x(["onorientationchange" in t, "orientation" in t, /android/i.test(r.appVersion)]) >= 2 : !1
+}
+
+function vn() {
+  var e = navigator,
+    n = window,
+    t = Audio.prototype,
+    r = n.visualViewport;
+  return x(["srLatency" in t, "srChannelCount" in t, "devicePosture" in e, r && "segments" in r, "getTextInformation" in Image.prototype]) >= 3
+}
+
+function mn() {
+  return gn() ? -4 : hn()
+}
+
+function hn() {
+  var e = window,
+    n = e.OfflineAudioContext || e.webkitOfflineAudioContext;
+  if (!n) return -2;
+  if (pn()) return -1;
+  var t = 4500,
+    r = 5e3,
+    i = new n(1, r, 44100),
+    a = i.createOscillator();
+  a.type = "triangle", a.frequency.value = 1e4;
+  var o = i.createDynamicsCompressor();
+  o.threshold.value = -50, o.knee.value = 40, o.ratio.value = 12, o.attack.value = 0, o.release.value = .25, a.connect(o), o.connect(i.destination), a.start(0);
+  var s = bn(i),
+    u = s[0],
+    l = s[1],
+    f = j(u.then(function(c) {
+      return yn(c.getChannelData(0).subarray(t))
+    }, function(c) {
+      if (c.name === "timeout" || c.name === "suspended") return -3;
+      throw c
+    }));
+  return function() {
+    return l(), f
+  }
+}
+
+function pn() {
+  return W() && !ae() && !sn()
+}
+
+function gn() {
+  return W() && H() && D() || X() && vn() && un()
+}
+
+function bn(e) {
+  var n = 3,
+    t = 500,
+    r = 500,
+    i = 5e3,
+    a = function() {},
+    o = new Promise(function(s, u) {
+      var l = !1,
+        f = 0,
+        c = 0;
+      e.oncomplete = function(b) {
+        return s(b.renderedBuffer)
+      };
+      var d = function() {
+          setTimeout(function() {
+            return u(me("timeout"))
+          }, Math.min(r, c + i - Date.now()))
+        },
+        v = function() {
+          try {
+            var b = e.startRendering();
+            switch (Ce(b) && j(b), e.state) {
+              case "running":
+                c = Date.now(), l && d();
+                break;
+              case "suspended":
+                document.hidden || f++, l && f >= n ? u(me("suspended")) : setTimeout(v, t);
+                break
+            }
+          } catch (w) {
+            u(w)
+          }
+        };
+      v(), a = function() {
+        l || (l = !0, c > 0 && d())
+      }
+    });
+  return [o, a]
+}
+
+function yn(e) {
+  for (var n = 0, t = 0; t < e.length; ++t) n += Math.abs(e[t]);
+  return n
+}
+
+function me(e) {
+  var n = new Error(e);
+  return n.name = e, n
+}
+
+function Me(e, n, t) {
+  var r, i, a;
+  return t === void 0 && (t = 50), M(this, void 0, void 0, function() {
+    var o, s;
+    return I(this, function(u) {
+      switch (u.label) {
+        case 0:
+          o = document, u.label = 1;
+        case 1:
+          return o.body ? [3, 3] : [4, J(t)];
+        case 2:
+          return u.sent(), [3, 1];
+        case 3:
+          s = o.createElement("iframe"), u.label = 4;
+        case 4:
+          return u.trys.push([4, , 10, 11]), [4, new Promise(function(l, f) {
+            var c = !1,
+              d = function() {
+                c = !0, l()
+              },
+              v = function(S) {
+                c = !0, f(S)
+              };
+            s.onload = d, s.onerror = v;
+            var b = s.style;
+            b.setProperty("display", "block", "important"), b.position = "absolute", b.top = "0", b.left = "0", b.visibility = "hidden", n && "srcdoc" in s ? s.srcdoc = n : s.src = "about:blank", o.body.appendChild(s);
+            var w = function() {
+              var S, m;
+              c || (((m = (S = s.contentWindow) === null || S === void 0 ? void 0 : S.document) === null || m === void 0 ? void 0 : m.readyState) === "complete" ? d() : setTimeout(w, 10))
+            };
+            w()
+          })];
+        case 5:
+          u.sent(), u.label = 6;
+        case 6:
+          return !((i = (r = s.contentWindow) === null || r === void 0 ? void 0 : r.document) === null || i === void 0) && i.body ? [3, 8] : [4, J(t)];
+        case 7:
+          return u.sent(), [3, 6];
+        case 8:
+          return [4, e(s, s.contentWindow)];
+        case 9:
+          return [2, u.sent()];
+        case 10:
+          return (a = s.parentNode) === null || a === void 0 || a.removeChild(s), [7];
+        case 11:
+          return [2]
+      }
+    })
+  })
+}
+
+function wn(e) {
+  for (var n = Je(e), t = n[0], r = n[1], i = document.createElement(t ?? "div"), a = 0, o = Object.keys(r); a < o.length; a++) {
+    var s = o[a],
+      u = r[s].join(" ");
+    s === "style" ? Sn(i.style, u) : i.setAttribute(s, u)
+  }
+  return i
+}
+
+function Sn(e, n) {
+  for (var t = 0, r = n.split(";"); t < r.length; t++) {
+    var i = r[t],
+      a = /^\s*([\w-]+)\s*:\s*(.+?)(\s*!([\w-]+))?\s*$/.exec(i);
+    if (a) {
+      var o = a[1],
+        s = a[2],
+        u = a[4];
+      e.setProperty(o, s, u || "")
     }
   }
-  const o = setInterval(() => {
-    n() && A()
-  }, V);
-  t && A();
-  async function i() {
-    Date.now() - e >= V && await A()
+}
+
+function Ln() {
+  for (var e = window;;) {
+    var n = e.parent;
+    if (!n || n === e) return !1;
+    try {
+      if (n.location.origin !== e.location.origin) return !0
+    } catch (t) {
+      if (t instanceof Error && t.name === "SecurityError") return !0;
+      throw t
+    }
+    e = n
   }
-  const a = new AbortController;
-  return typeof document < "u" && (document.addEventListener("visibilitychange", () => i(), {
-    signal: a.signal
-  }), document.addEventListener("resume", () => i(), {
-    signal: a.signal
-  })), typeof window < "u" && (window.addEventListener("pageshow", () => i(), {
-    signal: a.signal
-  }), window.addEventListener("focus", () => i(), {
-    signal: a.signal
-  }), window.addEventListener("online", () => i(), {
-    signal: a.signal
-  }), window.addEventListener("wplace:online", () => i(), {
-    signal: a.signal
-  })), () => {
-    clearInterval(o), a.abort()
+}
+var kn = "mmMwWLliI0O&1",
+  xn = "48px",
+  Y = ["monospace", "sans-serif", "serif"],
+  he = ["sans-serif-thin", "ARNO PRO", "Agency FB", "Arabic Typesetting", "Arial Unicode MS", "AvantGarde Bk BT", "BankGothic Md BT", "Batang", "Bitstream Vera Sans Mono", "Calibri", "Century", "Century Gothic", "Clarendon", "EUROSTILE", "Franklin Gothic", "Futura Bk BT", "Futura Md BT", "GOTHAM", "Gill Sans", "HELV", "Haettenschweiler", "Helvetica Neue", "Humanst521 BT", "Leelawadee", "Letter Gothic", "Levenim MT", "Lucida Bright", "Lucida Sans", "Menlo", "MS Mincho", "MS Outlook", "MS Reference Specialty", "MS UI Gothic", "MT Extra", "MYRIAD PRO", "Marlett", "Meiryo UI", "Microsoft Uighur", "Minion Pro", "Monotype Corsiva", "PMingLiU", "Pristina", "SCRIPTINA", "Segoe UI Light", "Serifa", "SimHei", "Small Fonts", "Staccato222 BT", "TRAJAN PRO", "Univers CE 55 Medium", "Vrinda", "ZWAdobeF"];
+
+function Cn() {
+  var e = this;
+  return Me(function(n, t) {
+    var r = t.document;
+    return M(e, void 0, void 0, function() {
+      var i, a, o, s, u, l, f, c, d, v, b, w;
+      return I(this, function(S) {
+        for (i = r.body, i.style.fontSize = xn, a = r.createElement("div"), a.style.setProperty("visibility", "hidden", "important"), o = {}, s = {}, u = function(m) {
+            var y = r.createElement("span"),
+              L = y.style;
+            return L.position = "absolute", L.top = "0", L.left = "0", L.fontFamily = m, y.textContent = kn, a.appendChild(y), y
+          }, l = function(m, y) {
+            return u("'".concat(m, "',").concat(y))
+          }, f = function() {
+            return Y.map(u)
+          }, c = function() {
+            for (var m = {}, y = function(A) {
+                m[A] = Y.map(function(E) {
+                  return l(A, E)
+                })
+              }, L = 0, R = he; L < R.length; L++) {
+              var G = R[L];
+              y(G)
+            }
+            return m
+          }, d = function(m) {
+            return Y.some(function(y, L) {
+              return m[L].offsetWidth !== o[y] || m[L].offsetHeight !== s[y]
+            })
+          }, v = f(), b = c(), i.appendChild(a), w = 0; w < Y.length; w++) o[Y[w]] = v[w].offsetWidth, s[Y[w]] = v[w].offsetHeight;
+        return [2, he.filter(function(m) {
+          return d(b[m])
+        })]
+      })
+    })
+  })
+}
+
+function Vn() {
+  var e = navigator.plugins;
+  if (e) {
+    for (var n = [], t = 0; t < e.length; ++t) {
+      var r = e[t];
+      if (r) {
+        for (var i = [], a = 0; a < r.length; ++a) {
+          var o = r[a];
+          i.push({
+            type: o.type,
+            suffixes: o.suffixes
+          })
+        }
+        n.push({
+          name: r.name,
+          description: r.description,
+          mimeTypes: i
+        })
+      }
+    }
+    return n
+  }
+}
+
+function Fn() {
+  return Wn(Gn())
+}
+
+function Wn(e) {
+  var n, t = !1,
+    r, i, a = Mn(),
+    o = a[0],
+    s = a[1];
+  return In(o, s) ? (t = Rn(s), e ? r = i = "skipped" : (n = Pn(o, s), r = n[0], i = n[1])) : r = i = "unsupported", {
+    winding: t,
+    geometry: r,
+    text: i
+  }
+}
+
+function Mn() {
+  var e = document.createElement("canvas");
+  return e.width = 1, e.height = 1, [e, e.getContext("2d")]
+}
+
+function In(e, n) {
+  return !!(n && e.toDataURL)
+}
+
+function Rn(e) {
+  return e.rect(0, 0, 10, 10), e.rect(2, 2, 6, 6), !e.isPointInPath(5, 5, "evenodd")
+}
+
+function Pn(e, n) {
+  An(e, n);
+  var t = _(e),
+    r = _(e);
+  if (t !== r) return ["unstable", "unstable"];
+  Zn(e, n);
+  var i = _(e);
+  return [i, t]
+}
+
+function An(e, n) {
+  e.width = 240, e.height = 60, n.textBaseline = "alphabetic", n.fillStyle = "#f60", n.fillRect(100, 1, 62, 20), n.fillStyle = "#069", n.font = '11pt "Times New Roman"';
+  var t = "Cwm fjordbank gly ".concat("😃");
+  n.fillText(t, 2, 15), n.fillStyle = "rgba(102, 204, 0, 0.2)", n.font = "18pt Arial", n.fillText(t, 4, 45)
+}
+
+function Zn(e, n) {
+  e.width = 122, e.height = 110, n.globalCompositeOperation = "multiply";
+  for (var t = 0, r = [
+      ["#f2f", 40, 40],
+      ["#2ff", 80, 40],
+      ["#ff2", 60, 80]
+    ]; t < r.length; t++) {
+    var i = r[t],
+      a = i[0],
+      o = i[1],
+      s = i[2];
+    n.fillStyle = a, n.beginPath(), n.arc(o, s, 40, 0, Math.PI * 2, !0), n.closePath(), n.fill()
+  }
+  n.fillStyle = "#f9c", n.arc(60, 60, 60, 0, Math.PI * 2, !0), n.arc(60, 60, 20, 0, Math.PI * 2, !0), n.fill("evenodd")
+}
+
+function _(e) {
+  return e.toDataURL()
+}
+
+function Gn() {
+  return W() && H() && D()
+}
+
+function En() {
+  var e = navigator,
+    n = 0,
+    t;
+  e.maxTouchPoints !== void 0 ? n = re(e.maxTouchPoints) : e.msMaxTouchPoints !== void 0 && (n = e.msMaxTouchPoints);
+  try {
+    document.createEvent("TouchEvent"), t = !0
+  } catch {
+    t = !1
+  }
+  var r = "ontouchstart" in window;
+  return {
+    maxTouchPoints: n,
+    touchEvent: t,
+    touchStart: r
+  }
+}
+
+function Tn() {
+  return navigator.oscpu
+}
+
+function Yn() {
+  var e = navigator,
+    n = [],
+    t = e.language || e.userLanguage || e.browserLanguage || e.systemLanguage;
+  if (t !== void 0 && n.push([t]), Array.isArray(e.languages)) X() && cn() || n.push(e.languages);
+  else if (typeof e.languages == "string") {
+    var r = e.languages;
+    r && n.push(r.split(","))
+  }
+  return n
+}
+
+function Nn() {
+  return window.screen.colorDepth
+}
+
+function jn() {
+  return P(F(navigator.deviceMemory), void 0)
+}
+
+function Xn() {
+  if (!(W() && H() && D())) return Dn()
+}
+
+function Dn() {
+  var e = screen,
+    n = function(r) {
+      return P(re(r), null)
+    },
+    t = [n(e.width), n(e.height)];
+  return t.sort().reverse(), t
+}
+var Hn = 2500,
+  Bn = 10,
+  z, K;
+
+function On() {
+  if (K === void 0) {
+    var e = function() {
+      var n = ne();
+      te(n) ? K = setTimeout(e, Hn) : (z = n, K = void 0)
+    };
+    e()
+  }
+}
+
+function zn() {
+  var e = this;
+  return On(),
+    function() {
+      return M(e, void 0, void 0, function() {
+        var n;
+        return I(this, function(t) {
+          switch (t.label) {
+            case 0:
+              return n = ne(), te(n) ? z ? [2, ke([], z, !0)] : fn() ? [4, dn()] : [3, 2] : [3, 2];
+            case 1:
+              t.sent(), n = ne(), t.label = 2;
+            case 2:
+              return te(n) || (z = n), [2, n]
+          }
+        })
+      })
+    }
+}
+
+function Jn() {
+  var e = this;
+  if (W() && H() && D()) return function() {
+    return Promise.resolve(void 0)
+  };
+  var n = zn();
+  return function() {
+    return M(e, void 0, void 0, function() {
+      var t, r;
+      return I(this, function(i) {
+        switch (i.label) {
+          case 0:
+            return [4, n()];
+          case 1:
+            return t = i.sent(), r = function(a) {
+              return a === null ? null : Ve(a, Bn)
+            }, [2, [r(t[0]), r(t[1]), r(t[2]), r(t[3])]]
+        }
+      })
+    })
+  }
+}
+
+function ne() {
+  var e = screen;
+  return [P(F(e.availTop), null), P(F(e.width) - F(e.availWidth) - P(F(e.availLeft), 0), null), P(F(e.height) - F(e.availHeight) - P(F(e.availTop), 0), null), P(F(e.availLeft), null)]
+}
+
+function te(e) {
+  for (var n = 0; n < 4; ++n)
+    if (e[n]) return !1;
+  return !0
+}
+
+function Un() {
+  return P(re(navigator.hardwareConcurrency), void 0)
+}
+
+function Qn() {
+  var e, n = (e = window.Intl) === null || e === void 0 ? void 0 : e.DateTimeFormat;
+  if (n) {
+    var t = new n().resolvedOptions().timeZone;
+    if (t) return t
+  }
+  var r = -_n();
+  return "UTC".concat(r >= 0 ? "+" : "").concat(r)
+}
+
+function _n() {
+  var e = new Date().getFullYear();
+  return Math.max(F(new Date(e, 0, 1).getTimezoneOffset()), F(new Date(e, 6, 1).getTimezoneOffset()))
+}
+
+function Kn() {
+  try {
+    return !!window.sessionStorage
+  } catch {
+    return !0
+  }
+}
+
+function $n() {
+  try {
+    return !!window.localStorage
+  } catch {
+    return !0
+  }
+}
+
+function qn() {
+  if (!(Fe() || on())) try {
+    return !!window.indexedDB
+  } catch {
+    return !0
+  }
+}
+
+function et() {
+  return !!window.openDatabase
+}
+
+function nt() {
+  return navigator.cpuClass
+}
+
+function tt() {
+  var e = navigator.platform;
+  return e === "MacIntel" && W() && !ae() ? ln() ? "iPad" : "iPhone" : e
+}
+
+function rt() {
+  return navigator.vendor || ""
+}
+
+function at() {
+  for (var e = [], n = 0, t = ["chrome", "safari", "__crWeb", "__gCrWeb", "yandex", "__yb", "__ybro", "__firefox__", "__edgeTrackingPreventionStatistics", "webkit", "oprt", "samsungAr", "ucweb", "UCShellJava", "puffinDevice"]; n < t.length; n++) {
+    var r = t[n],
+      i = window[r];
+    i && typeof i == "object" && e.push(r)
+  }
+  return e.sort()
+}
+
+function it() {
+  var e = document;
+  try {
+    e.cookie = "cookietest=1; SameSite=Strict;";
+    var n = e.cookie.indexOf("cookietest=") !== -1;
+    return e.cookie = "cookietest=1; SameSite=Strict; expires=Thu, 01-Jan-1970 00:00:01 GMT", n
+  } catch {
+    return !1
+  }
+}
+
+function ot() {
+  var e = atob;
+  return {
+    abpIndo: ["#Iklan-Melayang", "#Kolom-Iklan-728", "#SidebarIklan-wrapper", '[title="ALIENBOLA" i]', e("I0JveC1CYW5uZXItYWRz")],
+    abpvn: [".quangcao", "#mobileCatfish", e("LmNsb3NlLWFkcw=="), '[id^="bn_bottom_fixed_"]', "#pmadv"],
+    adBlockFinland: [".mainostila", e("LnNwb25zb3JpdA=="), ".ylamainos", e("YVtocmVmKj0iL2NsaWNrdGhyZ2guYXNwPyJd"), e("YVtocmVmXj0iaHR0cHM6Ly9hcHAucmVhZHBlYWsuY29tL2FkcyJd")],
+    adBlockPersian: ["#navbar_notice_50", ".kadr", 'TABLE[width="140px"]', "#divAgahi", e("YVtocmVmXj0iaHR0cDovL2cxLnYuZndtcm0ubmV0L2FkLyJd")],
+    adBlockWarningRemoval: ["#adblock-honeypot", ".adblocker-root", ".wp_adblock_detect", e("LmhlYWRlci1ibG9ja2VkLWFk"), e("I2FkX2Jsb2NrZXI=")],
+    adGuardAnnoyances: [".hs-sosyal", "#cookieconsentdiv", 'div[class^="app_gdpr"]', ".as-oil", '[data-cypress="soft-push-notification-modal"]'],
+    adGuardBase: [".BetterJsPopOverlay", e("I2FkXzMwMFgyNTA="), e("I2Jhbm5lcmZsb2F0MjI="), e("I2NhbXBhaWduLWJhbm5lcg=="), e("I0FkLUNvbnRlbnQ=")],
+    adGuardChinese: [e("LlppX2FkX2FfSA=="), e("YVtocmVmKj0iLmh0aGJldDM0LmNvbSJd"), "#widget-quan", e("YVtocmVmKj0iLzg0OTkyMDIwLnh5eiJd"), e("YVtocmVmKj0iLjE5NTZobC5jb20vIl0=")],
+    adGuardFrench: ["#pavePub", e("LmFkLWRlc2t0b3AtcmVjdGFuZ2xl"), ".mobile_adhesion", ".widgetadv", e("LmFkc19iYW4=")],
+    adGuardGerman: ['aside[data-portal-id="leaderboard"]'],
+    adGuardJapanese: ["#kauli_yad_1", e("YVtocmVmXj0iaHR0cDovL2FkMi50cmFmZmljZ2F0ZS5uZXQvIl0="), e("Ll9wb3BJbl9pbmZpbml0ZV9hZA=="), e("LmFkZ29vZ2xl"), e("Ll9faXNib29zdFJldHVybkFk")],
+    adGuardMobile: [e("YW1wLWF1dG8tYWRz"), e("LmFtcF9hZA=="), 'amp-embed[type="24smi"]', "#mgid_iframe1", e("I2FkX2ludmlld19hcmVh")],
+    adGuardRussian: [e("YVtocmVmXj0iaHR0cHM6Ly9hZC5sZXRtZWFkcy5jb20vIl0="), e("LnJlY2xhbWE="), 'div[id^="smi2adblock"]', e("ZGl2W2lkXj0iQWRGb3hfYmFubmVyXyJd"), "#psyduckpockeball"],
+    adGuardSocial: [e("YVtocmVmXj0iLy93d3cuc3R1bWJsZXVwb24uY29tL3N1Ym1pdD91cmw9Il0="), e("YVtocmVmXj0iLy90ZWxlZ3JhbS5tZS9zaGFyZS91cmw/Il0="), ".etsy-tweet", "#inlineShare", ".popup-social"],
+    adGuardSpanishPortuguese: ["#barraPublicidade", "#Publicidade", "#publiEspecial", "#queTooltip", ".cnt-publi"],
+    adGuardTrackingProtection: ["#qoo-counter", e("YVtocmVmXj0iaHR0cDovL2NsaWNrLmhvdGxvZy5ydS8iXQ=="), e("YVtocmVmXj0iaHR0cDovL2hpdGNvdW50ZXIucnUvdG9wL3N0YXQucGhwIl0="), e("YVtocmVmXj0iaHR0cDovL3RvcC5tYWlsLnJ1L2p1bXAiXQ=="), "#top100counter"],
+    adGuardTurkish: ["#backkapat", e("I3Jla2xhbWk="), e("YVtocmVmXj0iaHR0cDovL2Fkc2Vydi5vbnRlay5jb20udHIvIl0="), e("YVtocmVmXj0iaHR0cDovL2l6bGVuemkuY29tL2NhbXBhaWduLyJd"), e("YVtocmVmXj0iaHR0cDovL3d3dy5pbnN0YWxsYWRzLm5ldC8iXQ==")],
+    bulgarian: [e("dGQjZnJlZW5ldF90YWJsZV9hZHM="), "#ea_intext_div", ".lapni-pop-over", "#xenium_hot_offers"],
+    easyList: [".yb-floorad", e("LndpZGdldF9wb19hZHNfd2lkZ2V0"), e("LnRyYWZmaWNqdW5reS1hZA=="), ".textad_headline", e("LnNwb25zb3JlZC10ZXh0LWxpbmtz")],
+    easyListChina: [e("LmFwcGd1aWRlLXdyYXBbb25jbGljayo9ImJjZWJvcy5jb20iXQ=="), e("LmZyb250cGFnZUFkdk0="), "#taotaole", "#aafoot.top_box", ".cfa_popup"],
+    easyListCookie: [".ezmob-footer", ".cc-CookieWarning", "[data-cookie-number]", e("LmF3LWNvb2tpZS1iYW5uZXI="), ".sygnal24-gdpr-modal-wrap"],
+    easyListCzechSlovak: ["#onlajny-stickers", e("I3Jla2xhbW5pLWJveA=="), e("LnJla2xhbWEtbWVnYWJvYXJk"), ".sklik", e("W2lkXj0ic2tsaWtSZWtsYW1hIl0=")],
+    easyListDutch: [e("I2FkdmVydGVudGll"), e("I3ZpcEFkbWFya3RCYW5uZXJCbG9jaw=="), ".adstekst", e("YVtocmVmXj0iaHR0cHM6Ly94bHR1YmUubmwvY2xpY2svIl0="), "#semilo-lrectangle"],
+    easyListGermany: ["#SSpotIMPopSlider", e("LnNwb25zb3JsaW5rZ3J1ZW4="), e("I3dlcmJ1bmdza3k="), e("I3Jla2xhbWUtcmVjaHRzLW1pdHRl"), e("YVtocmVmXj0iaHR0cHM6Ly9iZDc0Mi5jb20vIl0=")],
+    easyListItaly: [e("LmJveF9hZHZfYW5udW5jaQ=="), ".sb-box-pubbliredazionale", e("YVtocmVmXj0iaHR0cDovL2FmZmlsaWF6aW9uaWFkcy5zbmFpLml0LyJd"), e("YVtocmVmXj0iaHR0cHM6Ly9hZHNlcnZlci5odG1sLml0LyJd"), e("YVtocmVmXj0iaHR0cHM6Ly9hZmZpbGlhemlvbmlhZHMuc25haS5pdC8iXQ==")],
+    easyListLithuania: [e("LnJla2xhbW9zX3RhcnBhcw=="), e("LnJla2xhbW9zX251b3JvZG9z"), e("aW1nW2FsdD0iUmVrbGFtaW5pcyBza3lkZWxpcyJd"), e("aW1nW2FsdD0iRGVkaWt1b3RpLmx0IHNlcnZlcmlhaSJd"), e("aW1nW2FsdD0iSG9zdGluZ2FzIFNlcnZlcmlhaS5sdCJd")],
+    estonian: [e("QVtocmVmKj0iaHR0cDovL3BheTRyZXN1bHRzMjQuZXUiXQ==")],
+    fanboyAnnoyances: ["#ac-lre-player", ".navigate-to-top", "#subscribe_popup", ".newsletter_holder", "#back-top"],
+    fanboyAntiFacebook: [".util-bar-module-firefly-visible"],
+    fanboyEnhancedTrackers: [".open.pushModal", "#issuem-leaky-paywall-articles-zero-remaining-nag", "#sovrn_container", 'div[class$="-hide"][zoompage-fontsize][style="display: block;"]', ".BlockNag__Card"],
+    fanboySocial: ["#FollowUs", "#meteored_share", "#social_follow", ".article-sharer", ".community__social-desc"],
+    frellwitSwedish: [e("YVtocmVmKj0iY2FzaW5vcHJvLnNlIl1bdGFyZ2V0PSJfYmxhbmsiXQ=="), e("YVtocmVmKj0iZG9rdG9yLXNlLm9uZWxpbmsubWUiXQ=="), "article.category-samarbete", e("ZGl2LmhvbGlkQWRz"), "ul.adsmodern"],
+    greekAdBlock: [e("QVtocmVmKj0iYWRtYW4ub3RlbmV0LmdyL2NsaWNrPyJd"), e("QVtocmVmKj0iaHR0cDovL2F4aWFiYW5uZXJzLmV4b2R1cy5nci8iXQ=="), e("QVtocmVmKj0iaHR0cDovL2ludGVyYWN0aXZlLmZvcnRobmV0LmdyL2NsaWNrPyJd"), "DIV.agores300", "TABLE.advright"],
+    hungarian: ["#cemp_doboz", ".optimonk-iframe-container", e("LmFkX19tYWlu"), e("W2NsYXNzKj0iR29vZ2xlQWRzIl0="), "#hirdetesek_box"],
+    iDontCareAboutCookies: ['.alert-info[data-block-track*="CookieNotice"]', ".ModuleTemplateCookieIndicator", ".o--cookies--container", "#cookies-policy-sticky", "#stickyCookieBar"],
+    icelandicAbp: [e("QVtocmVmXj0iL2ZyYW1ld29yay9yZXNvdXJjZXMvZm9ybXMvYWRzLmFzcHgiXQ==")],
+    latvian: [e("YVtocmVmPSJodHRwOi8vd3d3LnNhbGlkemluaS5sdi8iXVtzdHlsZT0iZGlzcGxheTogYmxvY2s7IHdpZHRoOiAxMjBweDsgaGVpZ2h0OiA0MHB4OyBvdmVyZmxvdzogaGlkZGVuOyBwb3NpdGlvbjogcmVsYXRpdmU7Il0="), e("YVtocmVmPSJodHRwOi8vd3d3LnNhbGlkemluaS5sdi8iXVtzdHlsZT0iZGlzcGxheTogYmxvY2s7IHdpZHRoOiA4OHB4OyBoZWlnaHQ6IDMxcHg7IG92ZXJmbG93OiBoaWRkZW47IHBvc2l0aW9uOiByZWxhdGl2ZTsiXQ==")],
+    listKr: [e("YVtocmVmKj0iLy9hZC5wbGFuYnBsdXMuY28ua3IvIl0="), e("I2xpdmVyZUFkV3JhcHBlcg=="), e("YVtocmVmKj0iLy9hZHYuaW1hZHJlcC5jby5rci8iXQ=="), e("aW5zLmZhc3R2aWV3LWFk"), ".revenue_unit_item.dable"],
+    listeAr: [e("LmdlbWluaUxCMUFk"), ".right-and-left-sponsers", e("YVtocmVmKj0iLmFmbGFtLmluZm8iXQ=="), e("YVtocmVmKj0iYm9vcmFxLm9yZyJd"), e("YVtocmVmKj0iZHViaXp6bGUuY29tL2FyLz91dG1fc291cmNlPSJd")],
+    listeFr: [e("YVtocmVmXj0iaHR0cDovL3Byb21vLnZhZG9yLmNvbS8iXQ=="), e("I2FkY29udGFpbmVyX3JlY2hlcmNoZQ=="), e("YVtocmVmKj0id2Vib3JhbWEuZnIvZmNnaS1iaW4vIl0="), ".site-pub-interstitiel", 'div[id^="crt-"][data-criteo-id]'],
+    officialPolish: ["#ceneo-placeholder-ceneo-12", e("W2hyZWZePSJodHRwczovL2FmZi5zZW5kaHViLnBsLyJd"), e("YVtocmVmXj0iaHR0cDovL2Fkdm1hbmFnZXIudGVjaGZ1bi5wbC9yZWRpcmVjdC8iXQ=="), e("YVtocmVmXj0iaHR0cDovL3d3dy50cml6ZXIucGwvP3V0bV9zb3VyY2UiXQ=="), e("ZGl2I3NrYXBpZWNfYWQ=")],
+    ro: [e("YVtocmVmXj0iLy9hZmZ0cmsuYWx0ZXgucm8vQ291bnRlci9DbGljayJd"), e("YVtocmVmXj0iaHR0cHM6Ly9ibGFja2ZyaWRheXNhbGVzLnJvL3Ryay9zaG9wLyJd"), e("YVtocmVmXj0iaHR0cHM6Ly9ldmVudC4ycGVyZm9ybWFudC5jb20vZXZlbnRzL2NsaWNrIl0="), e("YVtocmVmXj0iaHR0cHM6Ly9sLnByb2ZpdHNoYXJlLnJvLyJd"), 'a[href^="/url/"]'],
+    ruAd: [e("YVtocmVmKj0iLy9mZWJyYXJlLnJ1LyJd"), e("YVtocmVmKj0iLy91dGltZy5ydS8iXQ=="), e("YVtocmVmKj0iOi8vY2hpa2lkaWtpLnJ1Il0="), "#pgeldiz", ".yandex-rtb-block"],
+    thaiAds: ["a[href*=macau-uta-popup]", e("I2Fkcy1nb29nbGUtbWlkZGxlX3JlY3RhbmdsZS1ncm91cA=="), e("LmFkczMwMHM="), ".bumq", ".img-kosana"],
+    webAnnoyancesUltralist: ["#mod-social-share-2", "#social-tools", e("LmN0cGwtZnVsbGJhbm5lcg=="), ".zergnet-recommend", ".yt.btn-link.btn-md.btn"]
+  }
+}
+
+function ct(e) {
+  var n = e === void 0 ? {} : e,
+    t = n.debug;
+  return M(this, void 0, void 0, function() {
+    var r, i, a, o, s, u;
+    return I(this, function(l) {
+      switch (l.label) {
+        case 0:
+          return ut() ? (r = ot(), i = Object.keys(r), a = (u = []).concat.apply(u, i.map(function(f) {
+            return r[f]
+          })), [4, st(a)]) : [2, void 0];
+        case 1:
+          return o = l.sent(), t && lt(r, o), s = i.filter(function(f) {
+            var c = r[f],
+              d = x(c.map(function(v) {
+                return o[v]
+              }));
+            return d > c.length * .6
+          }), s.sort(), [2, s]
+      }
+    })
+  })
+}
+
+function ut() {
+  return W() || ie()
+}
+
+function st(e) {
+  var n;
+  return M(this, void 0, void 0, function() {
+    var t, r, i, a, u, o, s, u;
+    return I(this, function(l) {
+      switch (l.label) {
+        case 0:
+          for (t = document, r = t.createElement("div"), i = new Array(e.length), a = {}, pe(r), u = 0; u < e.length; ++u) o = wn(e[u]), o.tagName === "DIALOG" && o.show(), s = t.createElement("div"), pe(s), s.appendChild(o), r.appendChild(s), i[u] = o;
+          l.label = 1;
+        case 1:
+          return t.body ? [3, 3] : [4, J(50)];
+        case 2:
+          return l.sent(), [3, 1];
+        case 3:
+          t.body.appendChild(r);
+          try {
+            for (u = 0; u < e.length; ++u) i[u].offsetParent || (a[e[u]] = !0)
+          } finally {
+            (n = r.parentNode) === null || n === void 0 || n.removeChild(r)
+          }
+          return [2, a]
+      }
+    })
+  })
+}
+
+function pe(e) {
+  e.style.setProperty("visibility", "hidden", "important"), e.style.setProperty("display", "block", "important")
+}
+
+function lt(e, n) {
+  for (var t = "DOM blockers debug:\n```", r = 0, i = Object.keys(e); r < i.length; r++) {
+    var a = i[r];
+    t += `
+`.concat(a, ":");
+    for (var o = 0, s = e[a]; o < s.length; o++) {
+      var u = s[o];
+      t += `
+  `.concat(n[u] ? "🚫" : "➡️", " ").concat(u)
+    }
+  }
+  console.log("".concat(t, "\n```"))
+}
+
+function ft() {
+  for (var e = 0, n = ["rec2020", "p3", "srgb"]; e < n.length; e++) {
+    var t = n[e];
+    if (matchMedia("(color-gamut: ".concat(t, ")")).matches) return t
+  }
+}
+
+function dt() {
+  if (ge("inverted")) return !0;
+  if (ge("none")) return !1
+}
+
+function ge(e) {
+  return matchMedia("(inverted-colors: ".concat(e, ")")).matches
+}
+
+function vt() {
+  if (be("active")) return !0;
+  if (be("none")) return !1
+}
+
+function be(e) {
+  return matchMedia("(forced-colors: ".concat(e, ")")).matches
+}
+var mt = 100;
+
+function ht() {
+  if (matchMedia("(min-monochrome: 0)").matches) {
+    for (var e = 0; e <= mt; ++e)
+      if (matchMedia("(max-monochrome: ".concat(e, ")")).matches) return e;
+    throw new Error("Too high value")
+  }
+}
+
+function pt() {
+  if (N("no-preference")) return 0;
+  if (N("high") || N("more")) return 1;
+  if (N("low") || N("less")) return -1;
+  if (N("forced")) return 10
+}
+
+function N(e) {
+  return matchMedia("(prefers-contrast: ".concat(e, ")")).matches
+}
+
+function gt() {
+  if (ye("reduce")) return !0;
+  if (ye("no-preference")) return !1
+}
+
+function ye(e) {
+  return matchMedia("(prefers-reduced-motion: ".concat(e, ")")).matches
+}
+
+function bt() {
+  if (we("reduce")) return !0;
+  if (we("no-preference")) return !1
+}
+
+function we(e) {
+  return matchMedia("(prefers-reduced-transparency: ".concat(e, ")")).matches
+}
+
+function yt() {
+  if (Se("high")) return !0;
+  if (Se("standard")) return !1
+}
+
+function Se(e) {
+  return matchMedia("(dynamic-range: ".concat(e, ")")).matches
+}
+var h = Math,
+  k = function() {
+    return 0
+  };
+
+function wt() {
+  var e = h.acos || k,
+    n = h.acosh || k,
+    t = h.asin || k,
+    r = h.asinh || k,
+    i = h.atanh || k,
+    a = h.atan || k,
+    o = h.sin || k,
+    s = h.sinh || k,
+    u = h.cos || k,
+    l = h.cosh || k,
+    f = h.tan || k,
+    c = h.tanh || k,
+    d = h.exp || k,
+    v = h.expm1 || k,
+    b = h.log1p || k,
+    w = function(p) {
+      return h.pow(h.PI, p)
+    },
+    S = function(p) {
+      return h.log(p + h.sqrt(p * p - 1))
+    },
+    m = function(p) {
+      return h.log(p + h.sqrt(p * p + 1))
+    },
+    y = function(p) {
+      return h.log((1 + p) / (1 - p)) / 2
+    },
+    L = function(p) {
+      return h.exp(p) - 1 / h.exp(p) / 2
+    },
+    R = function(p) {
+      return (h.exp(p) + 1 / h.exp(p)) / 2
+    },
+    G = function(p) {
+      return h.exp(p) - 1
+    },
+    A = function(p) {
+      return (h.exp(2 * p) - 1) / (h.exp(2 * p) + 1)
+    },
+    E = function(p) {
+      return h.log(1 + p)
+    };
+  return {
+    acos: e(.12312423423423424),
+    acosh: n(1e308),
+    acoshPf: S(1e154),
+    asin: t(.12312423423423424),
+    asinh: r(1),
+    asinhPf: m(1),
+    atanh: i(.5),
+    atanhPf: y(.5),
+    atan: a(.5),
+    sin: o(-1e300),
+    sinh: s(1),
+    sinhPf: L(1),
+    cos: u(10.000000000123),
+    cosh: l(1),
+    coshPf: R(1),
+    tan: f(-1e300),
+    tanh: c(1),
+    tanhPf: A(1),
+    exp: d(1),
+    expm1: v(1),
+    expm1Pf: G(1),
+    log1p: b(10),
+    log1pPf: E(10),
+    powPI: w(-100)
+  }
+}
+var St = "mmMwWLliI0fiflO&1",
+  $ = {
+    default: [],
+    apple: [{
+      font: "-apple-system-body"
+    }],
+    serif: [{
+      fontFamily: "serif"
+    }],
+    sans: [{
+      fontFamily: "sans-serif"
+    }],
+    mono: [{
+      fontFamily: "monospace"
+    }],
+    min: [{
+      fontSize: "1px"
+    }],
+    system: [{
+      fontFamily: "system-ui"
+    }]
+  };
+
+function Lt() {
+  return kt(function(e, n) {
+    for (var t = {}, r = {}, i = 0, a = Object.keys($); i < a.length; i++) {
+      var o = a[i],
+        s = $[o],
+        u = s[0],
+        l = u === void 0 ? {} : u,
+        f = s[1],
+        c = f === void 0 ? St : f,
+        d = e.createElement("span");
+      d.textContent = c, d.style.whiteSpace = "nowrap";
+      for (var v = 0, b = Object.keys(l); v < b.length; v++) {
+        var w = b[v],
+          S = l[w];
+        S !== void 0 && (d.style[w] = S)
+      }
+      t[o] = d, n.append(e.createElement("br"), d)
+    }
+    for (var m = 0, y = Object.keys($); m < y.length; m++) {
+      var o = y[m];
+      r[o] = t[o].getBoundingClientRect().width
+    }
+    return r
+  })
+}
+
+function kt(e, n) {
+  return n === void 0 && (n = 4e3), Me(function(t, r) {
+    var i = r.document,
+      a = i.body,
+      o = a.style;
+    o.width = "".concat(n, "px"), o.webkitTextSizeAdjust = o.textSizeAdjust = "none", X() ? a.style.zoom = "".concat(1 / r.devicePixelRatio) : W() && (a.style.zoom = "reset");
+    var s = i.createElement("div");
+    return s.textContent = ke([], Array(n / 20 << 0), !0).map(function() {
+      return "word"
+    }).join(" "), a.appendChild(s), e(i, a)
+  }, '<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1">')
+}
+
+function xt() {
+  return navigator.pdfViewerEnabled
+}
+
+function Ct() {
+  var e = new Float32Array(1),
+    n = new Uint8Array(e.buffer);
+  return e[0] = 1 / 0, e[0] = e[0] - e[0], n[3]
+}
+
+function Vt() {
+  var e = window.ApplePaySession;
+  if (typeof(e == null ? void 0 : e.canMakePayments) != "function") return -1;
+  if (Ft()) return -3;
+  try {
+    return e.canMakePayments() ? 1 : 0
+  } catch (n) {
+    return Wt(n)
+  }
+}
+var Ft = Ln;
+
+function Wt(e) {
+  if (e instanceof Error && e.name === "InvalidAccessError" && /\bfrom\b.*\binsecure\b/i.test(e.message)) return -2;
+  throw e
+}
+
+function Mt() {
+  var e, n = document.createElement("a"),
+    t = (e = n.attributionSourceId) !== null && e !== void 0 ? e : n.attributionsourceid;
+  return t === void 0 ? void 0 : String(t)
+}
+var Ie = -1,
+  Re = -2,
+  It = new Set([10752, 2849, 2884, 2885, 2886, 2928, 2929, 2930, 2931, 2932, 2960, 2961, 2962, 2963, 2964, 2965, 2966, 2967, 2968, 2978, 3024, 3042, 3088, 3089, 3106, 3107, 32773, 32777, 32777, 32823, 32824, 32936, 32937, 32938, 32939, 32968, 32969, 32970, 32971, 3317, 33170, 3333, 3379, 3386, 33901, 33902, 34016, 34024, 34076, 3408, 3410, 3411, 3412, 3413, 3414, 3415, 34467, 34816, 34817, 34818, 34819, 34877, 34921, 34930, 35660, 35661, 35724, 35738, 35739, 36003, 36004, 36005, 36347, 36348, 36349, 37440, 37441, 37443, 7936, 7937, 7938]),
+  Rt = new Set([34047, 35723, 36063, 34852, 34853, 34854, 34229, 36392, 36795, 38449]),
+  Pt = ["FRAGMENT_SHADER", "VERTEX_SHADER"],
+  At = ["LOW_FLOAT", "MEDIUM_FLOAT", "HIGH_FLOAT", "LOW_INT", "MEDIUM_INT", "HIGH_INT"],
+  Pe = "WEBGL_debug_renderer_info",
+  Zt = "WEBGL_polygon_mode";
+
+function Gt(e) {
+  var n, t, r, i, a, o, s = e.cache,
+    u = Ae(s);
+  if (!u) return Ie;
+  if (!Ge(u)) return Re;
+  var l = Ze() ? null : u.getExtension(Pe);
+  return {
+    version: ((n = u.getParameter(u.VERSION)) === null || n === void 0 ? void 0 : n.toString()) || "",
+    vendor: ((t = u.getParameter(u.VENDOR)) === null || t === void 0 ? void 0 : t.toString()) || "",
+    vendorUnmasked: l ? (r = u.getParameter(l.UNMASKED_VENDOR_WEBGL)) === null || r === void 0 ? void 0 : r.toString() : "",
+    renderer: ((i = u.getParameter(u.RENDERER)) === null || i === void 0 ? void 0 : i.toString()) || "",
+    rendererUnmasked: l ? (a = u.getParameter(l.UNMASKED_RENDERER_WEBGL)) === null || a === void 0 ? void 0 : a.toString() : "",
+    shadingLanguageVersion: ((o = u.getParameter(u.SHADING_LANGUAGE_VERSION)) === null || o === void 0 ? void 0 : o.toString()) || ""
+  }
+}
+
+function Et(e) {
+  var n = e.cache,
+    t = Ae(n);
+  if (!t) return Ie;
+  if (!Ge(t)) return Re;
+  var r = t.getSupportedExtensions(),
+    i = t.getContextAttributes(),
+    a = [],
+    o = [],
+    s = [],
+    u = [],
+    l = [];
+  if (i)
+    for (var f = 0, c = Object.keys(i); f < c.length; f++) {
+      var d = c[f];
+      o.push("".concat(d, "=").concat(i[d]))
+    }
+  for (var v = Le(t), b = 0, w = v; b < w.length; b++) {
+    var S = w[b],
+      m = t[S];
+    s.push("".concat(S, "=").concat(m).concat(It.has(m) ? "=".concat(t.getParameter(m)) : ""))
+  }
+  if (r)
+    for (var y = 0, L = r; y < L.length; y++) {
+      var R = L[y];
+      if (!(R === Pe && Ze() || R === Zt && Nt())) {
+        var G = t.getExtension(R);
+        if (!G) {
+          a.push(R);
+          continue
+        }
+        for (var A = 0, E = Le(G); A < E.length; A++) {
+          var S = E[A],
+            m = G[S];
+          u.push("".concat(S, "=").concat(m).concat(Rt.has(m) ? "=".concat(t.getParameter(m)) : ""))
+        }
+      }
+    }
+  for (var p = 0, oe = Pt; p < oe.length; p++)
+    for (var ce = oe[p], Q = 0, ue = At; Q < ue.length; Q++) {
+      var se = ue[Q],
+        Ne = Tt(t, ce, se);
+      l.push("".concat(ce, ".").concat(se, "=").concat(Ne.join(",")))
+    }
+  return u.sort(), s.sort(), {
+    contextAttributes: o,
+    parameters: s,
+    shaderPrecisions: l,
+    extensions: r,
+    extensionParameters: u,
+    unsupportedExtensions: a
+  }
+}
+
+function Ae(e) {
+  if (e.webgl) return e.webgl.context;
+  var n = document.createElement("canvas"),
+    t;
+  n.addEventListener("webglCreateContextError", function() {
+    return t = void 0
+  });
+  for (var r = 0, i = ["webgl", "experimental-webgl"]; r < i.length; r++) {
+    var a = i[r];
+    try {
+      t = n.getContext(a)
+    } catch {}
+    if (t) break
+  }
+  return e.webgl = {
+    context: t
+  }, t
+}
+
+function Tt(e, n, t) {
+  var r = e.getShaderPrecisionFormat(e[n], e[t]);
+  return r ? [r.rangeMin, r.rangeMax, r.precision] : []
+}
+
+function Le(e) {
+  var n = Object.keys(e.__proto__);
+  return n.filter(Yt)
+}
+
+function Yt(e) {
+  return typeof e == "string" && !e.match(/[^A-Z0-9_x]/)
+}
+
+function Ze() {
+  return We()
+}
+
+function Nt() {
+  return X() || W()
+}
+
+function Ge(e) {
+  return typeof e.getParameter == "function"
+}
+
+function jt() {
+  var e = ie() || W();
+  if (!e) return -2;
+  if (!window.AudioContext) return -1;
+  var n = new AudioContext().baseLatency;
+  return n == null ? -1 : isFinite(n) ? n : -3
+}
+
+function Xt() {
+  if (!window.Intl) return -1;
+  var e = window.Intl.DateTimeFormat;
+  if (!e) return -2;
+  var n = e().resolvedOptions().locale;
+  return !n && n !== "" ? -3 : n
+}
+var Dt = {
+  fonts: Cn,
+  domBlockers: ct,
+  fontPreferences: Lt,
+  audio: mn,
+  screenFrame: Jn,
+  canvas: Fn,
+  osCpu: Tn,
+  languages: Yn,
+  colorDepth: Nn,
+  deviceMemory: jn,
+  screenResolution: Xn,
+  hardwareConcurrency: Un,
+  timezone: Qn,
+  sessionStorage: Kn,
+  localStorage: $n,
+  indexedDB: qn,
+  openDatabase: et,
+  cpuClass: nt,
+  platform: tt,
+  plugins: Vn,
+  touchSupport: En,
+  vendor: rt,
+  vendorFlavors: at,
+  cookiesEnabled: it,
+  colorGamut: ft,
+  invertedColors: dt,
+  forcedColors: vt,
+  monochrome: ht,
+  contrast: pt,
+  reducedMotion: gt,
+  reducedTransparency: bt,
+  hdr: yt,
+  math: wt,
+  pdfViewerEnabled: xt,
+  architecture: Ct,
+  applePay: Vt,
+  privateClickMeasurement: Mt,
+  audioBaseLatency: jt,
+  dateTimeLocale: Xt,
+  webGlBasics: Gt,
+  webGlExtensions: Et
+};
+
+function Ht(e) {
+  return an(Dt, e, [])
+}
+var Bt = "$ if upgrade to Pro: https://fpjs.dev/pro";
+
+function Ot(e) {
+  var n = zt(e),
+    t = Jt(n);
+  return {
+    score: n,
+    comment: Bt.replace(/\$/g, "".concat(t))
+  }
+}
+
+function zt(e) {
+  if (ie()) return .4;
+  if (W()) return ae() && !(H() && D()) ? .5 : .3;
+  var n = "value" in e.platform ? e.platform.value : "";
+  return /^Win/.test(n) ? .6 : /^Mac/.test(n) ? .5 : .7
+}
+
+function Jt(e) {
+  return Ve(.99 + .01 * e, 1e-4)
+}
+
+function Ut(e) {
+  for (var n = "", t = 0, r = Object.keys(e).sort(); t < r.length; t++) {
+    var i = r[t],
+      a = e[i],
+      o = "error" in a ? "error" : JSON.stringify(a.value);
+    n += "".concat(n ? "|" : "").concat(i.replace(/([:|\\])/g, "\\$1"), ":").concat(o)
+  }
+  return n
+}
+
+function Ee(e) {
+  return JSON.stringify(e, function(n, t) {
+    return t instanceof Error ? en(t) : t
+  }, 2)
+}
+
+function Te(e) {
+  return qe(Ut(e))
+}
+
+function Qt(e) {
+  var n, t = Ot(e);
+  return {
+    get visitorId() {
+      return n === void 0 && (n = Te(this.components)), n
+    },
+    set visitorId(r) {
+      n = r
+    },
+    confidence: t,
+    components: e,
+    version: xe
+  }
+}
+
+function _t(e) {
+  return e === void 0 && (e = 50), Be(e, e * 2)
+}
+
+function Kt(e, n) {
+  var t = Date.now();
+  return {
+    get: function(r) {
+      return M(this, void 0, void 0, function() {
+        var i, a, o;
+        return I(this, function(s) {
+          switch (s.label) {
+            case 0:
+              return i = Date.now(), [4, e()];
+            case 1:
+              return a = s.sent(), o = Qt(a), (n || r != null && r.debug) && console.log("Copy the text below to get the debug data:\n\n```\nversion: ".concat(o.version, `
+userAgent: `).concat(navigator.userAgent, `
+timeBetweenLoadAndGet: `).concat(i - t, `
+visitorId: `).concat(o.visitorId, `
+components: `).concat(Ee(a), "\n```")), [2, o]
+          }
+        })
+      })
+    }
+  }
+}
+
+function $t() {
+  if (!(window.__fpjs_d_m || Math.random() >= .001)) try {
+    var e = new XMLHttpRequest;
+    e.open("get", "https://m1.openfpcdn.io/fingerprintjs/v".concat(xe, "/npm-monitoring"), !0), e.send()
+  } catch (n) {
+    console.error(n)
+  }
+}
+
+function qt(e) {
+  var n;
+  return e === void 0 && (e = {}), M(this, void 0, void 0, function() {
+    var t, r, i;
+    return I(this, function(a) {
+      switch (a.label) {
+        case 0:
+          return (!((n = e.monitoring) !== null && n !== void 0) || n) && $t(), t = e.delayFallback, r = e.debug, [4, _t(t)];
+        case 1:
+          return a.sent(), i = Ht({
+            cache: {},
+            debug: r
+          }), [2, Kt(i, r)]
+      }
+    })
+  })
+}
+var Ye = {
+  load: qt,
+  hashComponents: Te,
+  componentsToDebugString: Ee
+};
+let q = null,
+  U;
+async function er() {
+  return q || (q = Ye.load()), q
+}
+async function rr() {
+  return U || nr().then(e => e.visitorId)
+}
+async function nr() {
+  var u;
+  const n = await (await er()).get();
+  let t = n.components;
+  const r = De(),
+    i = navigator.userAgent.toLowerCase(),
+    a = i.includes("iphone"),
+    o = i.includes("macintosh");
+  if (a || o) t = n.components;
+  else if (r === "Chrome") {
+    const {
+      languages: l,
+      fontPreferences: f,
+      ...c
+    } = n.components;
+    t = c
+  } else if (r === "Firefox") {
+    const {
+      fonts: l,
+      languages: f,
+      dateTimeLocale: c,
+      ...d
+    } = n.components;
+    t = d
+  } else if (r === "Brave") {
+    const {
+      fonts: l,
+      audio: f,
+      canvas: c,
+      hardwareConcurrency: d,
+      plugins: v,
+      deviceMemory: b,
+      languages: w,
+      dateTimeLocale: S,
+      fontPreferences: m,
+      ...y
+    } = n.components;
+    t = {
+      ...y,
+      plugins: ((u = v == null ? void 0 : v.value) == null ? void 0 : u.filter(L => L.description.includes(" "))) ?? []
+    }
+  } else {
+    const {
+      languages: l,
+      fontPreferences: f,
+      ...c
+    } = n.components;
+    t = c
+  }
+  return U = Ye.hashComponents(t), {
+    visitorId: U,
+    components: t
   }
 }
 export {
-  cV as A, gq as B, hq as C, bV as a, yV as b, DV as c, IV as d, SV as e, dV as f, YV as g, LV as h, yq as i, EV as j, gV as k, Xq as l, BV as m, xV as n, MV as o, TV as p, mV as q, mq as r, vV as s, hV as t, pV as u, fV as v, eV as w, wV as x, uV as y, lV as z
+  rr as a, tr as b, De as d, nr as g, Xe as i
 };

@@ -1,22 +1,22 @@
 import {
-  g as s
+  g as e
 } from "./BhCkpOlh.js";
-const t = () => "Users",
-  u = () => "Usuários",
-  n = () => "用户",
-  i = () => "Benutzer",
-  o = () => "Usuarios",
-  c = () => "Utilisateurs",
-  f = () => "Utenti",
-  _ = () => "ユーザー",
-  p = () => "Użytkownicy",
-  l = () => "Пользователи",
-  a = () => "Користувачі",
-  U = () => "Người dùng",
-  k = (g = {}, e = {}) => {
-    const r = e.locale ?? s();
-    return r === "en" ? t() : r === "pt" ? u() : r === "ch" ? n() : r === "de" ? i() : r === "es" ? o() : r === "fr" ? c() : r === "it" ? f() : r === "jp" ? _() : r === "pl" ? p() : r === "ru" ? l() : r === "uk" ? a() : U()
+const t = () => "Banned",
+  u = () => "Banido",
+  a = () => "已封禁",
+  o = () => "Gebannt",
+  c = () => "Baneado",
+  s = () => "Banni",
+  d = () => "Bannato",
+  i = () => "BAN済み",
+  b = () => "Zbanowany",
+  f = () => "Забанен",
+  _ = () => "Заблоковано",
+  p = () => "Đã bị cấm",
+  m = (l = {}, r = {}) => {
+    const n = r.locale ?? e();
+    return n === "en" ? t() : n === "pt" ? u() : n === "ch" ? a() : n === "de" ? o() : n === "es" ? c() : n === "fr" ? s() : n === "it" ? d() : n === "jp" ? i() : n === "pl" ? b() : n === "ru" ? f() : n === "uk" ? _() : p()
   };
 export {
-  k as u
+  m as b
 };

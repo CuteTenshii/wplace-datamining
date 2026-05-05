@@ -1,22 +1,26 @@
+import "./Bzak7iHL.js";
 import {
-  g as t
-} from "./BhCkpOlh.js";
-const u = () => "Unban",
-  e = () => "Desbanir",
-  a = () => "解封",
-  s = () => "Entbannen",
-  b = () => "Desbanear",
-  c = () => "Débannir",
-  o = () => "Unban",
-  i = () => "BANを解除",
-  f = () => "Odbanuj",
-  _ = () => "Разбанить",
-  p = () => "Розбанити",
-  l = () => "Gỡ cấm",
-  m = (d = {}, r = {}) => {
-    const n = r.locale ?? t();
-    return n === "en" ? u() : n === "pt" ? e() : n === "ch" ? a() : n === "de" ? s() : n === "es" ? b() : n === "fr" ? c() : n === "it" ? o() : n === "jp" ? i() : n === "pl" ? f() : n === "ru" ? _() : n === "uk" ? p() : l()
-  };
+  a,
+  v as p
+} from "./wFsvFKKp.js";
+import {
+  e
+} from "./BGMKwhhq.js";
+import {
+  r as v
+} from "./C4jQIU3W.js";
+var m = p('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
+
+function n(o, t) {
+  let s = v(t, ["$$slots", "$$events", "$$legacy"]);
+  var r = m();
+  e(r, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...s
+  })), a(o, r)
+}
 export {
-  m as u
+  n as A
 };

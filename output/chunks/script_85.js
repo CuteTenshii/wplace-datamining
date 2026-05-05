@@ -1,30 +1,22 @@
-import "./BhCkpOlh.js";
 import {
-  a as o,
-  g as a,
-  m as d,
-  d as e,
-  b as m
-} from "./Zy-MxZ9n.js";
-import {
-  u as r
-} from "./DKkygPh8.js";
-const _ = {
-    user: r(),
-    community_leader: "Disc. Mod",
-    discord_leader: "Disc. Lead",
-    moderator: "MOD",
-    global_moderator: "GM",
-    admin: "Admin"
-  },
-  l = {
-    user: r(),
-    community_leader: m(),
-    discord_leader: e(),
-    moderator: d(),
-    global_moderator: a(),
-    admin: o()
+  g as t
+} from "./BhCkpOlh.js";
+const n = () => "Save",
+  s = () => "Salvar",
+  u = () => "保存",
+  a = () => "Speichern",
+  c = () => "Guardar",
+  o = () => "Enregistrer",
+  i = () => "Salva",
+  v = () => "保存",
+  f = () => "Zapisz",
+  _ = () => "Сохранить",
+  p = () => "Зберегти",
+  l = () => "Lưu",
+  g = (S = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? n() : r === "pt" ? s() : r === "ch" ? u() : r === "de" ? a() : r === "es" ? c() : r === "fr" ? o() : r === "it" ? i() : r === "jp" ? v() : r === "pl" ? f() : r === "ru" ? _() : r === "uk" ? p() : l()
   };
 export {
-  l as R, _ as a
+  g as s
 };

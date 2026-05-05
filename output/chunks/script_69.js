@@ -1,22 +1,50 @@
-import {
-  g as e
-} from "./BhCkpOlh.js";
-const t = () => "Alliance",
-  l = () => "Aliança",
-  a = () => "联盟",
-  i = () => "Allianz",
-  c = () => "Alianza",
-  u = () => "Alliance",
-  o = () => "Alleanza",
-  s = () => "アライアンス",
-  f = () => "Sojusz",
-  _ = () => "Альянс",
-  p = () => "Альянс",
-  A = () => "Liên minh",
-  j = (z = {}, r = {}) => {
-    const n = r.locale ?? e();
-    return n === "en" ? t() : n === "pt" ? l() : n === "ch" ? a() : n === "de" ? i() : n === "es" ? c() : n === "fr" ? u() : n === "it" ? o() : n === "jp" ? s() : n === "pl" ? f() : n === "ru" ? _() : n === "uk" ? p() : A()
-  };
+const h = o => o;
+
+function b(o) {
+  const r = o - 1;
+  return r * r * r + 1
+}
+
+function f(o, {
+  delay: r = 0,
+  duration: i = 400,
+  easing: s = h
+} = {}) {
+  const p = +getComputedStyle(o).opacity;
+  return {
+    delay: r,
+    duration: i,
+    easing: s,
+    css: a => `opacity: ${a*p}`
+  }
+}
+
+function v(o, {
+  delay: r = 0,
+  duration: i = 400,
+  easing: s = b,
+  axis: p = "y"
+} = {}) {
+  const a = getComputedStyle(o),
+    c = +a.opacity,
+    d = p === "y" ? "height" : "width",
+    $ = parseFloat(a[d]),
+    e = p === "y" ? ["top", "bottom"] : ["left", "right"],
+    n = e.map(t => `${t[0].toUpperCase()}${t.slice(1)}`),
+    l = parseFloat(a[`padding${n[0]}`]),
+    _ = parseFloat(a[`padding${n[1]}`]),
+    u = parseFloat(a[`margin${n[0]}`]),
+    y = parseFloat(a[`margin${n[1]}`]),
+    g = parseFloat(a[`border${n[0]}Width`]),
+    m = parseFloat(a[`border${n[1]}Width`]);
+  return {
+    delay: r,
+    duration: i,
+    easing: s,
+    css: t => `overflow: hidden;opacity: ${Math.min(t*20,1)*c};${d}: ${t*$}px;padding-${e[0]}: ${t*l}px;padding-${e[1]}: ${t*_}px;margin-${e[0]}: ${t*u}px;margin-${e[1]}: ${t*y}px;border-${e[0]}-width: ${t*g}px;border-${e[1]}-width: ${t*m}px;min-${d}: 0`
+  }
+}
 export {
-  j as a
+  f,
+  v as s
 };

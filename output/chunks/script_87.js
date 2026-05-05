@@ -1,22 +1,30 @@
+import "./BhCkpOlh.js";
 import {
-  g as t
-} from "./BhCkpOlh.js";
-const u = () => "User",
-  n = () => "Usuário",
-  s = () => "用户",
-  o = () => "Benutzer",
-  i = () => "Usuario",
-  c = () => "Utilisateur",
-  f = () => "Utente",
-  _ = () => "ユーザー",
-  p = () => "Użytkownik",
-  l = () => "Пользователь",
-  a = () => "Користувач",
-  U = () => "Người dùng",
-  d = (g = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? u() : r === "pt" ? n() : r === "ch" ? s() : r === "de" ? o() : r === "es" ? i() : r === "fr" ? c() : r === "it" ? f() : r === "jp" ? _() : r === "pl" ? p() : r === "ru" ? l() : r === "uk" ? a() : U()
+  a as o,
+  g as a,
+  m as d,
+  d as e,
+  b as m
+} from "./Zy-MxZ9n.js";
+import {
+  u as r
+} from "./DKkygPh8.js";
+const _ = {
+    user: r(),
+    community_leader: "Disc. Mod",
+    discord_leader: "Disc. Lead",
+    moderator: "MOD",
+    global_moderator: "GM",
+    admin: "Admin"
+  },
+  l = {
+    user: r(),
+    community_leader: m(),
+    discord_leader: e(),
+    moderator: d(),
+    global_moderator: a(),
+    admin: o()
   };
 export {
-  d as u
+  l as R, _ as a
 };

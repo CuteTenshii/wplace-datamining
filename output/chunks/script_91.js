@@ -1,22 +1,22 @@
 import {
-  g as r
+  g as t
 } from "./BhCkpOlh.js";
-const a = () => "Ban appeal",
-  t = () => "Revisão de banimento",
-  p = () => "封禁申诉",
-  u = () => "Bann-Einspruch",
-  o = () => "Apelación de ban",
-  c = () => "Recours de bannissement",
-  s = () => "Ricorso contro il ban",
-  _ = () => "BANの異議申立て",
-  i = () => "Odwołanie od bana",
-  l = () => "Апелляция на бан",
-  b = () => "Апеляція на бан",
-  f = () => "Kháng cáo lệnh cấm",
-  m = (d = {}, e = {}) => {
-    const n = e.locale ?? r();
-    return n === "en" ? a() : n === "pt" ? t() : n === "ch" ? p() : n === "de" ? u() : n === "es" ? o() : n === "fr" ? c() : n === "it" ? s() : n === "jp" ? _() : n === "pl" ? i() : n === "ru" ? l() : n === "uk" ? b() : f()
+const a = () => "Dashboard",
+  e = () => "Painel",
+  o = () => "控制台",
+  s = () => "Dashboard",
+  d = () => "Panel",
+  u = () => "Tableau de bord",
+  c = () => "Pannello",
+  i = () => "ダッシュボード",
+  h = () => "Panel",
+  b = () => "Панель",
+  f = () => "Панель",
+  l = () => "Bảng điều khiển",
+  P = (_ = {}, n = {}) => {
+    const r = n.locale ?? t();
+    return r === "en" ? a() : r === "pt" ? e() : r === "ch" ? o() : r === "de" ? s() : r === "es" ? d() : r === "fr" ? u() : r === "it" ? c() : r === "jp" ? i() : r === "pl" ? h() : r === "ru" ? b() : r === "uk" ? f() : l()
   };
 export {
-  m as b
+  P as d
 };

@@ -1,64 +1,22 @@
-import "./Bzak7iHL.js";
 import {
-  p as u,
-  t as i,
-  a as m,
-  b as v,
-  c as p,
-  d as x,
-  s as B,
-  r as h
-} from "./BC180BoF.js";
-import {
-  i as L
-} from "./CYlrjl7C.js";
-import {
-  e as Q,
-  a as c,
-  s as S
-} from "./Bbytcfj7.js";
-import {
-  p as _,
-  r as b
-} from "./BQ15Turv.js";
-const w = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
-var R = p("<span>wplace</span>"),
-  k = p('<div><img alt="Wplace logo"/> <!></div>');
-
-function Y(n, t) {
-  u(t, !0);
-  let a = _(t, "size", 3, "default"),
-    f = b(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
-  var s = k();
-  Q(s, () => ({
-    ...f,
-    class: `flex items-center gap-1.5 ${t.class??""}`
-  }));
-  var e = x(s);
-  let l;
-  var d = B(e, 2);
-  {
-    var g = A => {
-      var o = R();
-      let r;
-      i(() => r = c(o, 1, "text-base-content font-pixel", null, r, {
-        "text-4xl": a() === "default",
-        "text-5xl": a() === "lg" || a() === "medium"
-      })), m(A, o)
-    };
-    L(d, A => {
-      t.hasText && A(g)
-    })
-  }
-  h(s), i(() => {
-    l = c(e, 1, "pixelated h-auto shrink-0", null, l, {
-      "w-4": a() === "small",
-      "w-10": a() === "default",
-      "w-16": a() === "medium",
-      "w-20": a() === "lg"
-    }), S(e, "src", w)
-  }), m(n, s), v()
-}
+  g as e
+} from "./BhCkpOlh.js";
+const t = () => "Alliance",
+  l = () => "Aliança",
+  a = () => "联盟",
+  i = () => "Allianz",
+  c = () => "Alianza",
+  u = () => "Alliance",
+  o = () => "Alleanza",
+  s = () => "アライアンス",
+  f = () => "Sojusz",
+  _ = () => "Альянс",
+  p = () => "Альянс",
+  A = () => "Liên minh",
+  j = (z = {}, r = {}) => {
+    const n = r.locale ?? e();
+    return n === "en" ? t() : n === "pt" ? l() : n === "ch" ? a() : n === "de" ? i() : n === "es" ? c() : n === "fr" ? u() : n === "it" ? o() : n === "jp" ? s() : n === "pl" ? f() : n === "ru" ? _() : n === "uk" ? p() : A()
+  };
 export {
-  Y as L, w as l
+  j as a
 };
