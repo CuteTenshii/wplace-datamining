@@ -1,115 +1,70 @@
-import "./Bzak7iHL.js";
 import {
-  p as j,
-  k as y,
-  f as S,
-  i as x,
-  a as i,
-  b as q,
-  u as C,
-  d as m,
-  aZ as h,
-  r as v,
-  t as _,
-  c as g
-} from "./wFsvFKKp.js";
-import {
-  d as z,
-  a as s
-} from "./D2UtoGHN.js";
-import {
-  s as k
-} from "./GOMVJoUS.js";
-import {
-  i as U
-} from "./BVciu6sd.js";
-import {
-  a as p,
-  c as B,
-  s as l
-} from "./BGMKwhhq.js";
-import {
-  p as d
-} from "./C4jQIU3W.js";
-import {
-  P as F
-} from "./BPTGThQS.js";
-import {
-  u as G
-} from "./ClF9qu09.js";
-
-function D(o) {
-  return `/dashboard/users?id=${encodeURIComponent(String(o))}`
-}
-
-function H(o) {
-  typeof window > "u" || window.open(D(o), "_blank", "noopener,noreferrer")
-}
-var J = g('<span role="link" tabindex="0"><!></span>'),
-  Q = g('<a target="_blank" rel="noopener noreferrer"><!></a>'),
-  T = g("<span><!></span>");
-
-function oe(o, e) {
-  j(e, !0);
-  let E = d(e, "mode", 3, "anchor"),
-    I = d(e, "class", 3, ""),
-    w = d(e, "linkClass", 19, I),
-    L = d(e, "textClass", 19, I);
-  const N = C(() => e.userId != null && e.userId > 0 && G.hasAnyPermission(F.dashboard.users)),
-    R = C(() => e.userId == null ? "" : D(e.userId));
-
-  function f(n) {
-    n.stopPropagation()
-  }
-
-  function b(n) {
-    e.userId == null || e.userId <= 0 || (n.preventDefault(), n.stopPropagation(), H(e.userId))
-  }
-
-  function A(n) {
-    n.key !== "Enter" && n.key !== " " || b(n)
-  }
-  var P = y(),
-    K = S(P);
-  {
-    var M = n => {
-        var r = y(),
-          u = S(r);
-        {
-          var V = t => {
-              var a = J(),
-                c = m(a);
-              k(c, () => e.children ?? h), v(a), _(() => {
-                p(a, 1, `cursor-pointer hover:underline ${w()}`), l(a, "title", e.title)
-              }), s("pointerdown", a, f), s("click", a, b), s("keydown", a, A), i(t, a)
-            },
-            Z = t => {
-              var a = Q(),
-                c = m(a);
-              k(c, () => e.children ?? h), v(a), _(() => {
-                p(a, 1, `cursor-pointer hover:underline ${w()}`), l(a, "href", x(R)), l(a, "title", e.title)
-              }), s("pointerdown", a, f), s("click", a, f), i(t, a)
-            };
-          U(u, t => {
-            E() === "inline" ? t(V) : t(Z, !1)
-          })
-        }
-        i(n, r)
-      },
-      O = n => {
-        var r = T(),
-          u = m(r);
-        k(u, () => e.children ?? h), v(r), _(() => {
-          p(r, 1, B(L())), l(r, "title", e.title)
-        }), i(n, r)
-      };
-    U(K, n => {
-      x(N) ? n(M) : n(O, !1)
-    })
-  }
-  i(o, P), q()
-}
-z(["pointerdown", "click", "keydown"]);
+  g as t
+} from "./BhCkpOlh.js";
+const s = () => "Last pixel",
+  i = () => "Último pixel",
+  u = () => "最后一个像素",
+  c = () => "Letzter Pixel",
+  o = () => "Último píxel",
+  l = () => "Dernier pixel",
+  a = () => "Ultimo pixel",
+  _ = () => "最後のピクセル",
+  f = () => "Ostatni piksel",
+  p = () => "Последний пиксель",
+  h = () => "Останній піксель",
+  v = () => "Pixel cuối cùng",
+  $ = (n = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? s() : r === "pt" ? i() : r === "ch" ? u() : r === "de" ? c() : r === "es" ? o() : r === "fr" ? l() : r === "it" ? a() : r === "jp" ? _() : r === "pl" ? f() : r === "ru" ? p() : r === "uk" ? h() : v()
+  },
+  x = () => "Search",
+  d = () => "Buscar",
+  m = () => "搜索",
+  k = () => "Suchen",
+  j = () => "Buscar",
+  z = () => "Rechercher",
+  S = () => "Cerca",
+  g = () => "検索",
+  V = () => "Szukaj",
+  w = () => "Поиск",
+  B = () => "Пошук",
+  L = () => "Tìm kiếm",
+  rr = (n = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? x() : r === "pt" ? d() : r === "ch" ? m() : r === "de" ? k() : r === "es" ? j() : r === "fr" ? z() : r === "it" ? S() : r === "jp" ? g() : r === "pl" ? V() : r === "ru" ? w() : r === "uk" ? B() : L()
+  },
+  b = () => "Select the report reason",
+  C = () => "Selecione o motivo da denúncia",
+  O = () => "选择举报原因",
+  P = () => "Grund für die Meldung auswählen",
+  T = () => "Selecciona el motivo del reporte",
+  y = () => "Sélectionnez la raison du signalement",
+  D = () => "Seleziona il motivo della segnalazione",
+  G = () => "通報理由を選択",
+  M = () => "Wybierz powód zgłoszenia",
+  R = () => "Выберите причину жалобы",
+  U = () => "Виберіть причину скарги",
+  W = () => "Chọn lý do báo cáo",
+  er = (n = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? b() : r === "pt" ? C() : r === "ch" ? O() : r === "de" ? P() : r === "es" ? T() : r === "fr" ? y() : r === "it" ? D() : r === "jp" ? G() : r === "pl" ? M() : r === "ru" ? R() : r === "uk" ? U() : W()
+  },
+  q = () => "Visit",
+  A = () => "Visitar",
+  E = () => "访问",
+  F = () => "Besuchen",
+  H = () => "Visitar",
+  I = () => "Visiter",
+  J = () => "Visita",
+  K = () => "訪問",
+  N = () => "Odwiedź",
+  Q = () => "Перейти",
+  X = () => "Перейти",
+  Y = () => "Thăm",
+  tr = (n = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? q() : r === "pt" ? A() : r === "ch" ? E() : r === "de" ? F() : r === "es" ? H() : r === "fr" ? I() : r === "it" ? J() : r === "jp" ? K() : r === "pl" ? N() : r === "ru" ? Q() : r === "uk" ? X() : Y()
+  };
 export {
-  oe as S
+  er as a, $ as l, rr as s, tr as v
 };

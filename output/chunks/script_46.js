@@ -1,38 +1,22 @@
 import {
-  g as t
+  g as e
 } from "./BhCkpOlh.js";
-const i = () => "Description",
-  s = () => "Descrição",
-  p = () => "描述",
-  u = () => "Beschreibung",
-  c = () => "Descripción",
-  o = () => "Description",
-  _ = () => "Descrizione",
-  l = () => "説明",
-  d = () => "Opis",
-  a = () => "Описание",
-  f = () => "Опис",
-  x = () => "Mô tả",
-  L = (n = {}, r = {}) => {
-    const e = r.locale ?? t();
-    return e === "en" ? i() : e === "pt" ? s() : e === "ch" ? p() : e === "de" ? u() : e === "es" ? c() : e === "fr" ? o() : e === "it" ? _() : e === "jp" ? l() : e === "pl" ? d() : e === "ru" ? a() : e === "uk" ? f() : x()
-  },
-  P = () => "Pixels painted",
-  h = () => "Pixels pintados",
-  k = () => "已绘制像素数",
-  D = () => "Gemalte Pixel",
-  j = () => "Píxeles pintados",
-  m = () => "Pixels peints",
-  g = () => "Pixel dipinti",
-  v = () => "塗られたピクセル数",
-  b = () => "Pomalowane piksele",
-  w = () => "Нарисованные пиксели",
-  z = () => "Намальовані пікселі",
-  B = () => "Pixel đã tô",
-  M = (n = {}, r = {}) => {
-    const e = r.locale ?? t();
-    return e === "en" ? P() : e === "pt" ? h() : e === "ch" ? k() : e === "de" ? D() : e === "es" ? j() : e === "fr" ? m() : e === "it" ? g() : e === "jp" ? v() : e === "pl" ? b() : e === "ru" ? w() : e === "uk" ? z() : B()
+const c = () => "Cancel",
+  t = () => "Cancelar",
+  u = () => "取消",
+  l = () => "Abbrechen",
+  a = () => "Cancelar",
+  o = () => "Annuler",
+  s = () => "Annulla",
+  i = () => "キャンセル",
+  f = () => "Anuluj",
+  _ = () => "Отмена",
+  p = () => "Скасувати",
+  A = () => "Hủy",
+  C = (h = {}, r = {}) => {
+    const n = r.locale ?? e();
+    return n === "en" ? c() : n === "pt" ? t() : n === "ch" ? u() : n === "de" ? l() : n === "es" ? a() : n === "fr" ? o() : n === "it" ? s() : n === "jp" ? i() : n === "pl" ? f() : n === "ru" ? _() : n === "uk" ? p() : A()
   };
 export {
-  L as d, M as p
+  C as c
 };

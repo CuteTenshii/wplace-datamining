@@ -1,49 +1,26 @@
+import "./Bzak7iHL.js";
 import {
-  t as A,
-  z as _,
-  A as l,
-  aA as E,
-  aB as M,
-  I as h,
-  a8 as y,
-  ap as m,
-  aC as w,
-  aD as C,
-  aE as c,
-  F as N,
-  aF as T,
-  aG as g,
-  aH as H,
-  a7 as d
-} from "./wFsvFKKp.js";
+  a,
+  o as p
+} from "./Cky4CUzE.js";
+import {
+  d as e
+} from "./BYB6eTwl.js";
+import {
+  r as m
+} from "./D5qy60-S.js";
+var v = p('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
 
-function b(u, p, r = !1, s = !1, O = !1) {
-  var i = u,
-    n = "";
-  A(() => {
-    var t = E;
-    if (n === (n = p() ?? "")) {
-      _ && l();
-      return
-    }
-    if (t.nodes !== null && (M(t.nodes.start, t.nodes.end), t.nodes = null), n !== "") {
-      if (_) {
-        h.data;
-        for (var a = l(), o = a; a !== null && (a.nodeType !== y || a.data !== "");) o = a, a = m(a);
-        if (a === null) throw w(), C;
-        c(h, o), i = N(a);
-        return
-      }
-      var v = r ? g : s ? H : void 0,
-        f = T(r ? "svg" : s ? "math" : "template", v);
-      f.innerHTML = n;
-      var e = r || s ? f : f.content;
-      if (c(d(e), e.lastChild), r || s)
-        for (; d(e);) i.before(d(e));
-      else i.before(e)
-    }
-  })
+function n(o, t) {
+  let s = m(t, ["$$slots", "$$events", "$$legacy"]);
+  var r = v();
+  e(r, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...s
+  })), a(o, r)
 }
 export {
-  b as h
+  n as A
 };

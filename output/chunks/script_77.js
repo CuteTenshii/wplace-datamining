@@ -1,38 +1,107 @@
+import "./Bzak7iHL.js";
 import {
-  g as i
-} from "./BhCkpOlh.js";
-const n = () => "Enter a valid user ID",
-  u = () => "Informe um ID válido",
-  s = () => "请输入有效的用户 ID",
-  d = () => "Gib eine gültige Benutzer-ID ein",
-  o = () => "Introduce un ID de usuario válido",
-  _ = () => "Entrez un ID d’utilisateur valide",
-  c = () => "Inserisci un ID valido",
-  l = () => "有効なユーザーIDを入力してください。",
-  p = () => "Wprowadź prawidłowe ID użytkownika",
-  a = () => "Введите корректный ID пользователя",
-  f = () => "Введіть коректний ID користувача",
-  v = () => "Nhập một ID người dùng hợp lệ",
-  y = (t = {}, e = {}) => {
-    const r = e.locale ?? i();
-    return r === "en" ? n() : r === "pt" ? u() : r === "ch" ? s() : r === "de" ? d() : r === "es" ? o() : r === "fr" ? _() : r === "it" ? c() : r === "jp" ? l() : r === "pl" ? p() : r === "ru" ? a() : r === "uk" ? f() : v()
-  },
-  m = () => "Reddit",
-  I = () => "Reddit",
-  D = () => "Reddit",
-  R = () => "Reddit",
-  g = () => "Reddit",
-  h = () => "Reddit",
-  k = () => "Reddit",
-  j = () => "Reddit",
-  w = () => "Reddit",
-  z = () => "Reddit",
-  E = () => "Reddit",
-  b = () => "Reddit",
-  B = (t = {}, e = {}) => {
-    const r = e.locale ?? i();
-    return r === "en" ? m() : r === "pt" ? I() : r === "ch" ? D() : r === "de" ? R() : r === "es" ? g() : r === "fr" ? h() : r === "it" ? k() : r === "jp" ? j() : r === "pl" ? w() : r === "ru" ? z() : r === "uk" ? E() : b()
-  };
+  o as U
+} from "./BahYQMKR.js";
+import {
+  p as V,
+  h as W,
+  m as X,
+  f as Y,
+  i as Z,
+  a as m,
+  b as p,
+  e as $,
+  r as ee,
+  t as x,
+  c as C
+} from "./Cky4CUzE.js";
+import {
+  i as te
+} from "./7HE79MnC.js";
+import {
+  e as ae,
+  i as ne
+} from "./DB71EAuY.js";
+import {
+  a as oe,
+  b as _
+} from "./BYB6eTwl.js";
+import {
+  p as t
+} from "./D5qy60-S.js";
+var ie = C('<div class="confetti svelte-dhhrmy"></div>'),
+  re = C("<div></div>");
+
+function he(M, e) {
+  V(e, !0);
+  const b = t(e, "size", 3, 10),
+    c = t(e, "x", 19, () => [-.5, .5]),
+    f = t(e, "y", 19, () => [.25, 1]),
+    i = t(e, "duration", 3, 2e3),
+    r = t(e, "infinite", 3, !1),
+    l = t(e, "delay", 19, () => [0, 50]),
+    u = t(e, "colorRange", 19, () => [0, 360]),
+    s = t(e, "colorArray", 19, () => []),
+    z = t(e, "amount", 3, 50),
+    d = t(e, "iterationCount", 3, 1),
+    R = t(e, "fallDistance", 3, "100px"),
+    k = t(e, "rounded", 3, !1),
+    w = t(e, "cone", 3, !1),
+    A = t(e, "noGravity", 3, !1),
+    D = t(e, "xSpread", 3, .15),
+    F = t(e, "destroyOnComplete", 3, !0),
+    G = t(e, "disableForReducedMotion", 3, !1);
+  let v = $(!1);
+  U(() => {
+    !F() || r() || typeof d() == "string" || setTimeout(() => W(v, !0), (i() + l()[1]) * d())
+  });
+
+  function a(o, n) {
+    return Math.random() * (n - o) + o
+  }
+
+  function O() {
+    return s().length ? s()[Math.round(Math.random() * (s().length - 1))] : `hsl(${Math.round(a(u()[0],u()[1]))}, 75%, 50%)`
+  }
+  var h = X(),
+    S = Y(h);
+  {
+    var B = o => {
+      var n = re();
+      let y;
+      ae(n, 21, () => ({
+        length: z()
+      }), ne, (T, le) => {
+        var g = ie();
+        x((j, q, E, H, I, J, K, L, N, P, Q) => _(g, `
+        --color: ${j??""};
+        --skew: ${q??""}deg,${E??""}deg;
+        --rotation-xyz: ${H??""}, ${I??""}, ${J??""};
+        --rotation-deg: ${K??""}deg;
+        --translate-y-multiplier: ${L??""};
+        --translate-x-multiplier: ${N??""};
+        --scale: ${P??""};
+        --transition-delay: ${Q??""}ms;
+        --transition-duration: ${r()?`calc(${i()}ms * var(--scale))`:`${i()}ms`};`), [O, () => a(-45, 45), () => a(-45, 45), () => a(-10, 10), () => a(-10, 10), () => a(-10, 10), () => a(0, 360), () => a(f()[0], f()[1]), () => a(c()[0], c()[1]), () => .1 * a(2, 10), () => a(l()[0], l()[1])]), m(T, g)
+      }), ee(n), x(() => {
+        y = oe(n, 1, "confetti-holder svelte-dhhrmy", null, y, {
+          rounded: k(),
+          cone: w(),
+          "no-gravity": A(),
+          "reduced-motion": G()
+        }), _(n, `
+    --fall-distance: ${R()??""};
+    --size: ${b()??""}px;
+    --x-spread: ${1-D()};
+    --transition-iteration-count: ${(r()?"infinite":d())??""};`)
+      }), m(o, n)
+    };
+    te(S, o => {
+      Z(v) || o(B)
+    })
+  }
+  m(M, h), p()
+}
 export {
-  y as p, B as r
+  he as C
 };

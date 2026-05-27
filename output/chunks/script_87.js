@@ -1,30 +1,22 @@
-import "./BhCkpOlh.js";
 import {
-  a as o,
-  g as a,
-  m as d,
-  d as e,
-  b as m
-} from "./Zy-MxZ9n.js";
-import {
-  u as r
-} from "./DKkygPh8.js";
-const _ = {
-    user: r(),
-    community_leader: "Disc. Mod",
-    discord_leader: "Disc. Lead",
-    moderator: "MOD",
-    global_moderator: "GM",
-    admin: "Admin"
-  },
-  l = {
-    user: r(),
-    community_leader: m(),
-    discord_leader: e(),
-    moderator: d(),
-    global_moderator: a(),
-    admin: o()
+  g as r
+} from "./BhCkpOlh.js";
+const a = () => "Ban appeal",
+  t = () => "Revisão de banimento",
+  p = () => "封禁申诉",
+  u = () => "Bann-Einspruch",
+  o = () => "Apelación de ban",
+  c = () => "Recours de bannissement",
+  s = () => "Ricorso contro il ban",
+  _ = () => "BANの異議申立て",
+  i = () => "Odwołanie od bana",
+  l = () => "Апелляция на бан",
+  b = () => "Апеляція на бан",
+  f = () => "Kháng cáo lệnh cấm",
+  m = (d = {}, e = {}) => {
+    const n = e.locale ?? r();
+    return n === "en" ? a() : n === "pt" ? t() : n === "ch" ? p() : n === "de" ? u() : n === "es" ? o() : n === "fr" ? c() : n === "it" ? s() : n === "jp" ? _() : n === "pl" ? i() : n === "ru" ? l() : n === "uk" ? b() : f()
   };
 export {
-  l as R, _ as a
+  m as b
 };

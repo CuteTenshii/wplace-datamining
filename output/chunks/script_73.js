@@ -1,64 +1,26 @@
 import "./Bzak7iHL.js";
 import {
-  p as u,
-  t as i,
-  a as m,
-  b as v,
-  c as p,
-  d as x,
-  s as B,
-  r as h
-} from "./wFsvFKKp.js";
+  a as e,
+  o as p
+} from "./Cky4CUzE.js";
 import {
-  i as L
-} from "./BVciu6sd.js";
+  d as a
+} from "./BYB6eTwl.js";
 import {
-  e as Q,
-  a as c,
-  s as S
-} from "./BGMKwhhq.js";
-import {
-  p as _,
-  r as b
-} from "./C4jQIU3W.js";
-const w = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC";
-var R = p("<span>wplace</span>"),
-  k = p('<div><img alt="Wplace logo"/> <!></div>');
+  r as v
+} from "./D5qy60-S.js";
+var f = p('<svg><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"></path></svg>');
 
-function Y(n, t) {
-  u(t, !0);
-  let a = _(t, "size", 3, "default"),
-    f = b(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
-  var s = k();
-  Q(s, () => ({
-    ...f,
-    class: `flex items-center gap-1.5 ${t.class??""}`
-  }));
-  var e = x(s);
-  let l;
-  var d = B(e, 2);
-  {
-    var g = A => {
-      var o = R();
-      let r;
-      i(() => r = c(o, 1, "text-base-content font-pixel", null, r, {
-        "text-4xl": a() === "default",
-        "text-5xl": a() === "lg" || a() === "medium"
-      })), m(A, o)
-    };
-    L(d, A => {
-      t.hasText && A(g)
-    })
-  }
-  h(s), i(() => {
-    l = c(e, 1, "pixelated h-auto shrink-0", null, l, {
-      "w-4": a() === "small",
-      "w-10": a() === "default",
-      "w-16": a() === "medium",
-      "w-20": a() === "lg"
-    }), S(e, "src", w)
-  }), m(n, s), v()
+function h(r, o) {
+  let s = v(o, ["$$slots", "$$events", "$$legacy"]);
+  var t = f();
+  a(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...s
+  })), e(r, t)
 }
 export {
-  Y as L, w as l
+  h as R
 };

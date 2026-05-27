@@ -1,48 +1,75 @@
 import {
-  K as d,
-  aq as m,
-  m as c,
-  x as g,
-  ar as b,
-  as as l,
-  i as p,
-  w as v,
-  at as h
-} from "./wFsvFKKp.js";
+  S as p
+} from "./DRP4OkCv.js";
+const h = p;
 
-function x(n = !1) {
-  const s = d,
-    e = s.l.u;
-  if (!e) return;
-  let r = () => v(s.s);
-  if (n) {
-    let a = 0,
-      t = {};
-    const _ = h(() => {
-      let i = !1;
-      const f = s.s;
-      for (const o in f) f[o] !== t[o] && (t[o] = f[o], i = !0);
-      return i && a++, a
-    });
-    r = () => p(_)
-  }
-  e.b.length && m(() => {
-    u(s, r), l(e.b)
-  }), c(() => {
-    const a = g(() => e.m.map(b));
-    return () => {
-      for (const t of a) typeof t == "function" && t()
+function b(f) {
+  const s = [],
+    a = s,
+    d = Object.keys(f);
+  for (const o of d) {
+    const t = f[o];
+    if (typeof t == "string") {
+      a.push(t), Object.defineProperty(s, o, {
+        value: t,
+        enumerable: !0,
+        configurable: !1,
+        writable: !1
+      });
+      continue
     }
-  }), e.a.length && c(() => {
-    u(s, r), l(e.a)
-  })
+    const n = b(t);
+    Object.defineProperty(s, o, {
+      value: n,
+      enumerable: !0,
+      configurable: !1,
+      writable: !1
+    });
+    const r = n;
+    for (let e = 0; e < r.length; e += 1) a.push(r[e])
+  }
+  return Object.defineProperty(s, "only", {
+    value: (...o) => {
+      const t = [];
+      for (let n = 0; n < o.length; n += 1) {
+        const r = o[n],
+          e = s[r];
+        if (typeof e == "string") {
+          t.push(e);
+          continue
+        }
+        const l = e;
+        for (let i = 0; i < l.length; i += 1) t.push(l[i])
+      }
+      return t
+    },
+    enumerable: !1,
+    configurable: !1,
+    writable: !1
+  }), Object.defineProperty(s, "but", {
+    value: (...o) => {
+      const t = new Set(o),
+        n = [],
+        r = Object.keys(s);
+      for (let e = 0; e < r.length; e += 1) {
+        const l = r[e];
+        if (t.has(l)) continue;
+        const i = s[l];
+        if (typeof i == "string") {
+          n.push(i);
+          continue
+        }
+        const u = i;
+        for (let c = 0; c < u.length; c += 1) n.push(u[c])
+      }
+      return n
+    },
+    enumerable: !1,
+    configurable: !1,
+    writable: !1
+  }), Object.freeze(s)
 }
-
-function u(n, s) {
-  if (n.l.s)
-    for (const e of n.l.s) p(e);
-  s()
-}
+const m = b(h);
 export {
-  x as i
+  m as P
 };

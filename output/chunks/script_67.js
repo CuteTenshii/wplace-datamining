@@ -1,22 +1,22 @@
 import {
-  g as r
+  g as e
 } from "./BhCkpOlh.js";
-const u = () => "Timeout",
-  n = () => "Suspender",
-  o = () => "禁言",
-  i = () => "Timeout",
-  s = () => "Suspender",
-  c = () => "Suspendre",
-  m = () => "Sospendi",
-  f = () => "タイムアウト",
-  p = () => "Zawieszenie",
-  _ = () => "Тайм-аут",
-  a = () => "Тайм-аут",
-  l = () => "Tạm khóa",
-  h = (d = {}, e = {}) => {
-    const t = e.locale ?? r();
-    return t === "en" ? u() : t === "pt" ? n() : t === "ch" ? o() : t === "de" ? i() : t === "es" ? s() : t === "fr" ? c() : t === "it" ? m() : t === "jp" ? f() : t === "pl" ? p() : t === "ru" ? _() : t === "uk" ? a() : l()
+const t = () => "Alliance",
+  l = () => "Aliança",
+  a = () => "联盟",
+  i = () => "Allianz",
+  c = () => "Alianza",
+  u = () => "Alliance",
+  o = () => "Alleanza",
+  s = () => "アライアンス",
+  f = () => "Sojusz",
+  _ = () => "Альянс",
+  p = () => "Альянс",
+  A = () => "Liên minh",
+  j = (z = {}, r = {}) => {
+    const n = r.locale ?? e();
+    return n === "en" ? t() : n === "pt" ? l() : n === "ch" ? a() : n === "de" ? i() : n === "es" ? c() : n === "fr" ? u() : n === "it" ? o() : n === "jp" ? s() : n === "pl" ? f() : n === "ru" ? _() : n === "uk" ? p() : A()
   };
 export {
-  h as t
+  j as a
 };

@@ -1,26 +1,22 @@
-import "./Bzak7iHL.js";
 import {
-  a,
-  v as p
-} from "./wFsvFKKp.js";
-import {
-  e
-} from "./BGMKwhhq.js";
-import {
-  r as v
-} from "./C4jQIU3W.js";
-var m = p('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
-
-function n(o, t) {
-  let s = v(t, ["$$slots", "$$events", "$$legacy"]);
-  var r = m();
-  e(r, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...s
-  })), a(o, r)
-}
+  g as s
+} from "./BhCkpOlh.js";
+const t = () => "Users",
+  u = () => "Usuários",
+  n = () => "用户",
+  i = () => "Benutzer",
+  o = () => "Usuarios",
+  c = () => "Utilisateurs",
+  f = () => "Utenti",
+  _ = () => "ユーザー",
+  p = () => "Użytkownicy",
+  l = () => "Пользователи",
+  a = () => "Користувачі",
+  U = () => "Người dùng",
+  k = (g = {}, e = {}) => {
+    const r = e.locale ?? s();
+    return r === "en" ? t() : r === "pt" ? u() : r === "ch" ? n() : r === "de" ? i() : r === "es" ? o() : r === "fr" ? c() : r === "it" ? f() : r === "jp" ? _() : r === "pl" ? p() : r === "ru" ? l() : r === "uk" ? a() : U()
+  };
 export {
-  n as A
+  k as u
 };
