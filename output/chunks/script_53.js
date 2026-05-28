@@ -1,70 +1,48 @@
-import {
-  g as t
-} from "./BhCkpOlh.js";
-const s = () => "Last pixel",
-  i = () => "Último pixel",
-  u = () => "最后一个像素",
-  c = () => "Letzter Pixel",
-  o = () => "Último píxel",
-  l = () => "Dernier pixel",
-  a = () => "Ultimo pixel",
-  _ = () => "最後のピクセル",
-  f = () => "Ostatni piksel",
-  p = () => "Последний пиксель",
-  h = () => "Останній піксель",
-  v = () => "Pixel cuối cùng",
-  $ = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? s() : r === "pt" ? i() : r === "ch" ? u() : r === "de" ? c() : r === "es" ? o() : r === "fr" ? l() : r === "it" ? a() : r === "jp" ? _() : r === "pl" ? f() : r === "ru" ? p() : r === "uk" ? h() : v()
-  },
-  x = () => "Search",
-  d = () => "Buscar",
-  m = () => "搜索",
-  k = () => "Suchen",
-  j = () => "Buscar",
-  z = () => "Rechercher",
-  S = () => "Cerca",
-  g = () => "検索",
-  V = () => "Szukaj",
-  w = () => "Поиск",
-  B = () => "Пошук",
-  L = () => "Tìm kiếm",
-  rr = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? x() : r === "pt" ? d() : r === "ch" ? m() : r === "de" ? k() : r === "es" ? j() : r === "fr" ? z() : r === "it" ? S() : r === "jp" ? g() : r === "pl" ? V() : r === "ru" ? w() : r === "uk" ? B() : L()
-  },
-  b = () => "Select the report reason",
-  C = () => "Selecione o motivo da denúncia",
-  O = () => "选择举报原因",
-  P = () => "Grund für die Meldung auswählen",
-  T = () => "Selecciona el motivo del reporte",
-  y = () => "Sélectionnez la raison du signalement",
-  D = () => "Seleziona il motivo della segnalazione",
-  G = () => "通報理由を選択",
-  M = () => "Wybierz powód zgłoszenia",
-  R = () => "Выберите причину жалобы",
-  U = () => "Виберіть причину скарги",
-  W = () => "Chọn lý do báo cáo",
-  er = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? b() : r === "pt" ? C() : r === "ch" ? O() : r === "de" ? P() : r === "es" ? T() : r === "fr" ? y() : r === "it" ? D() : r === "jp" ? G() : r === "pl" ? M() : r === "ru" ? R() : r === "uk" ? U() : W()
-  },
-  q = () => "Visit",
-  A = () => "Visitar",
-  E = () => "访问",
-  F = () => "Besuchen",
-  H = () => "Visitar",
-  I = () => "Visiter",
-  J = () => "Visita",
-  K = () => "訪問",
-  N = () => "Odwiedź",
-  Q = () => "Перейти",
-  X = () => "Перейти",
-  Y = () => "Thăm",
-  tr = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? q() : r === "pt" ? A() : r === "ch" ? E() : r === "de" ? F() : r === "es" ? H() : r === "fr" ? I() : r === "it" ? J() : r === "jp" ? K() : r === "pl" ? N() : r === "ru" ? Q() : r === "uk" ? X() : Y()
-  };
+function O(r) {
+  const t = r - 1;
+  return t * t * t + 1
+}
+
+function Z(r, {
+  from: t,
+  to: a
+}, u = {}) {
+  var {
+    delay: f = 0,
+    duration: n = i => Math.sqrt(i) * 120,
+    easing: p = O
+  } = u, s = getComputedStyle(r), y = s.transform === "none" ? "" : s.transform, [h, v] = s.transformOrigin.split(" ").map(parseFloat);
+  h /= r.clientWidth, v /= r.clientHeight;
+  var c = W(r),
+    g = r.clientWidth / a.width / c,
+    d = r.clientHeight / a.height / c,
+    x = t.left + t.width * h,
+    m = t.top + t.height * v,
+    w = a.left + a.width * h,
+    S = a.top + a.height * v,
+    l = (x - w) * g,
+    o = (m - S) * d,
+    $ = t.width / a.width,
+    z = t.height / a.height;
+  return {
+    delay: f,
+    duration: typeof n == "function" ? n(Math.sqrt(l * l + o * o)) : n,
+    easing: p,
+    css: (i, e) => {
+      var C = e * l,
+        q = e * o,
+        H = i + e * $,
+        M = i + e * z;
+      return `transform: ${y} translate(${C}px, ${q}px) scale(${H}, ${M});`
+    }
+  }
+}
+
+function W(r) {
+  if ("currentCSSZoom" in r) return r.currentCSSZoom;
+  for (var t = r, a = 1; t !== null;) a *= +getComputedStyle(t).zoom, t = t.parentElement;
+  return a
+}
 export {
-  er as a, $ as l, rr as s, tr as v
+  Z as f
 };

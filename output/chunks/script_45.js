@@ -1,191 +1,22 @@
 import {
-  g as _
+  g as t
 } from "./BhCkpOlh.js";
-import "./Bzak7iHL.js";
-import {
-  p as D,
-  i as c,
-  h,
-  D as E,
-  d as o,
-  s as v,
-  bk as I,
-  r as u,
-  t as g,
-  a as b,
-  b as N,
-  e as T,
-  u as W,
-  c as q
-} from "./Cky4CUzE.js";
-import {
-  s as k
-} from "./CNvJ8k3a.js";
-import {
-  i as w
-} from "./7HE79MnC.js";
-import {
-  d as B,
-  C as G
-} from "./BYB6eTwl.js";
-import {
-  b as R
-} from "./B3FeiWlK.js";
-import {
-  b as V
-} from "./CshCxurl.js";
-import {
-  p as f,
-  r as F
-} from "./D5qy60-S.js";
-const H = () => "Extra context on what happened (required)",
-  J = () => "Mais informações sobre o que aconteceu (obrigatório)",
-  K = () => "请提供发生情况的额外背景（必填）",
-  P = () => "Zusätzliche Informationen zum Vorfall (erforderlich)",
-  Q = () => "Más contexto sobre lo que ocurrió (obligatorio)",
-  U = () => "Contexte supplémentaire sur ce qui s’est passé (obligatoire)",
-  X = () => "Maggiori informazioni su ciò che è successo (obbligatorio)",
-  Y = () => "何が起きたかの詳細な説明（必須）",
-  $ = () => "Dodatkowy kontekst tego, co się stało (wymagane)",
-  ee = () => "Дополнительный контекст о произошедшем (обязательно)",
-  re = () => "Додаткова інформація про те, що сталося (обовʼязково)",
-  te = () => "Thêm ngữ cảnh về chuyện đã xảy ra (bắt buộc)",
-  fr = (e = {}, t = {}) => {
-    const r = t.locale ?? _();
-    return r === "en" ? H() : r === "pt" ? J() : r === "ch" ? K() : r === "de" ? P() : r === "es" ? Q() : r === "fr" ? U() : r === "it" ? X() : r === "jp" ? Y() : r === "pl" ? $() : r === "ru" ? ee() : r === "uk" ? re() : te()
-  },
-  ne = e => `Max. characters: ${e.max}`,
-  ae = e => `Máximo de caracteres: ${e.max}`,
-  ce = e => `最大字符数：${e.max}`,
-  ie = e => `Max. Zeichen: ${e.max}`,
-  se = e => `Máx. de caracteres: ${e.max}`,
-  oe = e => `Max. de caractères : ${e.max}`,
-  ue = e => `Numero massimo di caratteri: ${e.max}`,
-  _e = e => `最大文字数: ${e.max}`,
-  le = e => `Maks. znaków: ${e.max}`,
-  fe = e => `Макс. символов: ${e.max}`,
-  me = e => `Макс. символів: ${e.max}`,
-  xe = e => `Số ký tự tối đa: ${e.max}`,
-  de = (e, t = {}) => {
-    const r = t.locale ?? _();
-    return r === "en" ? ne(e) : r === "pt" ? ae(e) : r === "ch" ? ce(e) : r === "de" ? ie(e) : r === "es" ? se(e) : r === "fr" ? oe(e) : r === "it" ? ue(e) : r === "jp" ? _e(e) : r === "pl" ? le(e) : r === "ru" ? fe(e) : r === "uk" ? me(e) : xe(e)
-  },
-  he = e => `Min. characters: ${e.min}`,
-  ve = e => `Mínimo de caracteres: ${e.min}`,
-  ge = e => `最少字符数：${e.min}`,
-  be = e => `Min. Zeichen: ${e.min}`,
-  ke = e => `Mín. de caracteres: ${e.min}`,
-  qe = e => `Min. de caractères : ${e.min}`,
-  Me = e => `Numero minimo di caratteri: ${e.min}`,
-  je = e => `最小文字数: ${e.min}`,
-  pe = e => `Min. znaków: ${e.min}`,
-  we = e => `Мин. символов: ${e.min}`,
-  Se = e => `Мін. символів: ${e.min}`,
-  ye = e => `Số ký tự tối thiểu: ${e.min}`,
-  ze = (e, t = {}) => {
-    const r = t.locale ?? _();
-    return r === "en" ? he(e) : r === "pt" ? ve(e) : r === "ch" ? ge(e) : r === "de" ? be(e) : r === "es" ? ke(e) : r === "fr" ? qe(e) : r === "it" ? Me(e) : r === "jp" ? je(e) : r === "pl" ? pe(e) : r === "ru" ? we(e) : r === "uk" ? Se(e) : ye(e)
-  },
-  Ce = () => "Required",
-  Le = () => "Obrigatório",
-  Oe = () => "必填",
-  Ze = () => "Erforderlich",
-  Ae = () => "Obligatorio",
-  De = () => "Obligatoire",
-  Ee = () => "Obbligatorio",
-  Ie = () => "必須",
-  Ne = () => "Wymagane",
-  Te = () => "Обязательно",
-  We = () => "Обовʼязково",
-  Be = () => "Bắt buộc",
-  Ge = (e = {}, t = {}) => {
-    const r = t.locale ?? _();
-    return r === "en" ? Ce() : r === "pt" ? Le() : r === "ch" ? Oe() : r === "de" ? Ze() : r === "es" ? Ae() : r === "fr" ? De() : r === "it" ? Ee() : r === "jp" ? Ie() : r === "pl" ? Ne() : r === "ru" ? Te() : r === "uk" ? We() : Be()
-  },
-  Re = () => "Select the reason",
-  Ve = () => "Selecione o motivo",
-  Fe = () => "选择原因",
-  He = () => "Grund auswählen",
-  Je = () => "Selecciona el motivo",
-  Ke = () => "Sélectionnez la raison",
-  Pe = () => "Seleziona il motivo",
-  Qe = () => "理由を選択",
-  Ue = () => "Wybierz powód",
-  Xe = () => "Выберите причину",
-  Ye = () => "Виберіть причину",
-  $e = () => "Chọn lý do",
-  mr = (e = {}, t = {}) => {
-    const r = t.locale ?? _();
-    return r === "en" ? Re() : r === "pt" ? Ve() : r === "ch" ? Fe() : r === "de" ? He() : r === "es" ? Je() : r === "fr" ? Ke() : r === "it" ? Pe() : r === "jp" ? Qe() : r === "pl" ? Ue() : r === "ru" ? Xe() : r === "uk" ? Ye() : $e()
+const n = () => "Preview",
+  i = () => "Prévia",
+  u = () => "预览",
+  p = () => "Vorschau",
+  o = () => "Vista previa",
+  c = () => "Aperçu",
+  s = () => "Anteprima",
+  v = () => "プレビュー",
+  f = () => "Podgląd",
+  w = () => "Предпросмотр",
+  _ = () => "Попередній перегляд",
+  a = () => "Xem trước",
+  m = (l = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? n() : r === "pt" ? i() : r === "ch" ? u() : r === "de" ? p() : r === "es" ? o() : r === "fr" ? c() : r === "it" ? s() : r === "jp" ? v() : r === "pl" ? f() : r === "ru" ? w() : r === "uk" ? _() : a()
   };
-var er = q('<legend class="fieldset-legend"> </legend>'),
-  rr = q('<span class="text-base-content/80"> </span>'),
-  tr = q('<fieldset class="fieldset"><!> <textarea></textarea> <div class="flex items-center justify-between text-xs"><span class="text-error"> </span> <!></div></fieldset>');
-
-function xr(e, t) {
-  D(t, !0);
-  let r = f(t, "value", 15),
-    S = f(t, "validate", 15),
-    y = f(t, "disabled", 3, !1),
-    M = f(t, "ref", 15),
-    z = F(t, ["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate", "disabled", "ref"]),
-    i = T("");
-  const l = W(() => {
-    var n;
-    return ((n = r()) == null ? void 0 : n.length) ?? 0
-  });
-  S(C);
-
-  function C() {
-    return t.min !== void 0 && c(l) < t.min ? (h(i, t.min === 1 ? Ge() : ze({
-      min: t.min
-    }), !0), !1) : t.max !== void 0 && c(l) > t.max ? (h(i, de({
-      max: t.max
-    }), !0), !1) : (h(i, ""), !0)
-  }
-  E(() => {
-    var n;
-    t.max !== void 0 && c(l) > t.max && r((n = r()) == null ? void 0 : n.substring(0, t.max))
-  });
-  var m = tr(),
-    j = o(m);
-  {
-    var L = n => {
-      var a = er(),
-        d = o(a, !0);
-      u(a), g(() => k(d, t.label)), b(n, a)
-    };
-    w(j, n => {
-      t.label && n(L)
-    })
-  }
-  var s = v(j, 2);
-  I(s), B(s, () => ({
-    ...z,
-    class: `textarea w-full ${t.class??""}`,
-    placeholder: t.placeholder,
-    disabled: y(),
-    [G]: {
-      "textarea-error": !!c(i)
-    }
-  })), V(s, n => M(n), () => M());
-  var p = v(s, 2),
-    x = o(p),
-    O = o(x, !0);
-  u(x);
-  var Z = v(x, 2);
-  {
-    var A = n => {
-      var a = rr(),
-        d = o(a, !0);
-      u(a), g(() => k(d, t.max - c(l))), b(n, a)
-    };
-    w(Z, n => {
-      t.max !== void 0 && n(A)
-    })
-  }
-  u(p), u(m), g(() => k(O, c(i))), R(s, r), b(e, m), N()
-}
 export {
-  xr as L, fr as g, mr as s
+  m as p
 };

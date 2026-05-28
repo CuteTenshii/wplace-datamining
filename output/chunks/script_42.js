@@ -1,48 +1,97 @@
 import {
-  F as d,
-  an as g,
-  D as c,
-  I as m,
-  ao as b,
-  ap as l,
-  i as u,
-  aq as v,
-  ar as h
-} from "./Cky4CUzE.js";
+  au as t,
+  U as k,
+  P as w,
+  I as y,
+  R as b,
+  av as C,
+  q as n,
+  aw as q,
+  ax as A,
+  S
+} from "./5zj5-rPA.js";
 
-function x(n = !1) {
-  const s = d,
-    e = s.l.u;
-  if (!e) return;
-  let r = () => v(s.s);
-  if (n) {
-    let a = 0,
-      t = {};
-    const _ = h(() => {
-      let i = !1;
-      const f = s.s;
-      for (const o in f) f[o] !== t[o] && (t[o] = f[o], i = !0);
-      return i && a++, a
-    });
-    r = () => u(_)
-  }
-  e.b.length && g(() => {
-    p(s, r), l(e.b)
-  }), c(() => {
-    const a = m(() => e.m.map(b));
-    return () => {
-      for (const t of a) typeof t == "function" && t()
+function V(e, v, c = v) {
+  var f = new WeakSet;
+  t(e, "input", async l => {
+    var d = l ? e.defaultValue : e.value;
+    if (d = u(e) ? m(d) : d, c(d), k !== null && f.add(k), await w(), d !== (d = v())) {
+      var r = e.selectionStart,
+        s = e.selectionEnd,
+        o = e.value.length;
+      if (e.value = d ?? "", s !== null) {
+        var a = e.value.length;
+        r === s && s === o && a > o ? (e.selectionStart = a, e.selectionEnd = a) : (e.selectionStart = r, e.selectionEnd = Math.min(s, a))
+      }
     }
-  }), e.a.length && c(() => {
-    p(s, r), l(e.a)
+  }), (n && e.defaultValue !== e.value || y(v) == null && e.value) && (c(u(e) ? m(e.value) : e.value), k !== null && f.add(k)), b(() => {
+    var l = v();
+    if (e === document.activeElement) {
+      var d = C ?? k;
+      if (f.has(d)) return
+    }
+    u(e) && l === m(e.value) || e.type === "date" && !l && !e.value || l !== e.value && (e.value = l ?? "")
+  })
+}
+const _ = new Set;
+
+function x(e, v, c, f, l = f) {
+  var d = c.getAttribute("type") === "checkbox",
+    r = e;
+  let s = !1;
+  if (v !== null)
+    for (var o of v) r = r[o] ?? (r[o] = []);
+  r.push(c), t(c, "change", () => {
+    var a = c.__value;
+    d && (a = i(r, a, c.checked)), l(a)
+  }, () => l(d ? [] : null)), b(() => {
+    var a = f();
+    if (n && c.defaultChecked !== c.checked) {
+      s = !0;
+      return
+    }
+    d ? (a = a || [], c.checked = a.includes(c.__value)) : c.checked = q(c.__value, a)
+  }), A(() => {
+    var a = r.indexOf(c);
+    a !== -1 && r.splice(a, 1)
+  }), _.has(r) || (_.add(r), S(() => {
+    r.sort((a, h) => a.compareDocumentPosition(h) === 4 ? -1 : 1), _.delete(r)
+  })), S(() => {
+    if (s) {
+      var a;
+      if (d) a = i(r, a, c.checked);
+      else {
+        var h = r.find(E => E.checked);
+        a = h == null ? void 0 : h.__value
+      }
+      l(a)
+    }
   })
 }
 
-function p(n, s) {
-  if (n.l.s)
-    for (const e of n.l.s) u(e);
-  s()
+function B(e, v, c = v) {
+  t(e, "change", f => {
+    var l = f ? e.defaultChecked : e.checked;
+    c(l)
+  }), (n && e.defaultChecked !== e.checked || y(v) == null) && c(e.checked), b(() => {
+    var f = v();
+    e.checked = !!f
+  })
+}
+
+function i(e, v, c) {
+  for (var f = new Set, l = 0; l < e.length; l += 1) e[l].checked && f.add(e[l].__value);
+  return c || f.delete(v), Array.from(f)
+}
+
+function u(e) {
+  var v = e.type;
+  return v === "number" || v === "range"
+}
+
+function m(e) {
+  return e === "" ? null : +e
 }
 export {
-  x as i
+  B as a, V as b, x as c
 };

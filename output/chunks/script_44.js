@@ -1,207 +1,165 @@
 import {
-  b
-} from "./DRP4OkCv.js";
-const L = ["text-red-500", "text-orange-500", "text-yellow-500", "text-lime-500", "text-emerald-500", "text-teal-500", "text-cyan-500", "text-sky-500", "text-indigo-500", "text-violet-500", "text-purple-500", "text-fuchsia-500", "text-pink-500", "text-rose-500"],
-  R = ["bg-red-500/10", "bg-orange-500/10", "bg-yellow-500/10", "bg-lime-500/10", "bg-emerald-500/10", "bg-teal-500/10", "bg-cyan-500/10", "bg-sky-500/10", "bg-indigo-500/10", "bg-violet-500/10", "bg-purple-500/10", "bg-fuchsia-500/10", "bg-pink-500/10", "bg-rose-500/10"];
+  g as S
+} from "./BhCkpOlh.js";
+import "./Bzak7iHL.js";
+import {
+  a as o,
+  o as z,
+  p as G,
+  m as y,
+  f as D,
+  i as T,
+  b as K,
+  u as q,
+  d as m,
+  aW as v,
+  r as h,
+  t as x,
+  c as w
+} from "./5zj5-rPA.js";
+import {
+  d as Q,
+  a as g,
+  c as U,
+  s as u
+} from "./B13kG5TI.js";
+import {
+  r as V,
+  p
+} from "./C4sT4bjp.js";
+import {
+  d as W,
+  a as c
+} from "./CRfpTDDG.js";
+import {
+  s as k
+} from "./C2ATkZL9.js";
+import {
+  i as C
+} from "./D-uzaoLl.js";
+import {
+  P as F
+} from "./CRmwVMpf.js";
+import {
+  u as H
+} from "./C3ICfNT7.js";
+const J = () => "Description",
+  X = () => "Descrição",
+  Y = () => "描述",
+  $ = () => "Beschreibung",
+  ee = () => "Descripción",
+  ne = () => "Description",
+  te = () => "Descrizione",
+  re = () => "説明",
+  ie = () => "Opis",
+  ae = () => "Описание",
+  se = () => "Опис",
+  oe = () => "Mô tả",
+  Me = (i = {}, n = {}) => {
+    const e = n.locale ?? S();
+    return e === "en" ? J() : e === "pt" ? X() : e === "ch" ? Y() : e === "de" ? $() : e === "es" ? ee() : e === "fr" ? ne() : e === "it" ? te() : e === "jp" ? re() : e === "pl" ? ie() : e === "ru" ? ae() : e === "uk" ? se() : oe()
+  },
+  le = () => "Pixels painted",
+  ce = () => "Pixels pintados",
+  ue = () => "已绘制像素数",
+  pe = () => "Gemalte Pixel",
+  de = () => "Píxeles pintados",
+  fe = () => "Pixels peints",
+  _e = () => "Pixel dipinti",
+  me = () => "塗られたピクセル数",
+  ve = () => "Pomalowane piksele",
+  he = () => "Нарисованные пиксели",
+  xe = () => "Намальовані пікселі",
+  ge = () => "Pixel đã tô",
+  Oe = (i = {}, n = {}) => {
+    const e = n.locale ?? S();
+    return e === "en" ? le() : e === "pt" ? ce() : e === "ch" ? ue() : e === "de" ? pe() : e === "es" ? de() : e === "fr" ? fe() : e === "it" ? _e() : e === "jp" ? me() : e === "pl" ? ve() : e === "ru" ? he() : e === "uk" ? xe() : ge()
+  };
+var ke = z('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
 
-function rt(t) {
-  return L[t % L.length]
+function Be(i, n) {
+  let e = V(n, ["$$slots", "$$events", "$$legacy"]);
+  var l = ke();
+  Q(l, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...e
+  })), o(i, l)
 }
 
-function it(t) {
-  return R[t % R.length]
+function L(i) {
+  return `/dashboard/alliances?id=${encodeURIComponent(String(i))}`
 }
 
-function at({
-  r: t,
-  g: n,
-  b: o
-}) {
-  function e(s) {
-    return s.toString(16).padStart(2, "0")
+function we(i) {
+  typeof window > "u" || window.open(L(i), "_blank", "noopener,noreferrer")
+}
+var Pe = w('<span role="link" tabindex="0"><!></span>'),
+  Ie = w('<a target="_blank" rel="noopener noreferrer"><!></a>'),
+  be = w("<span><!></span>");
+
+function Ne(i, n) {
+  G(n, !0);
+  let e = p(n, "mode", 3, "anchor"),
+    l = p(n, "class", 3, ""),
+    P = p(n, "linkClass", 19, l),
+    j = p(n, "textClass", 19, l);
+  const A = q(() => n.allianceId != null && n.allianceId > 0 && H.hasAnyPermission(F.dashboard.alliances)),
+    E = q(() => n.allianceId == null ? "" : L(n.allianceId));
+
+  function d(r) {
+    r.stopPropagation()
   }
-  return `#${e(t)}${e(n)}${e(o)}`
-}
 
-function lt(t) {
-  return t = t.trim().replace("#", ""), t.length === 3 && (t = t[0] + t[0] + t[1] + t[1] + t[2] + t[2]), t.length !== 6 ? {
-    r: 0,
-    g: 0,
-    b: 0
-  } : {
-    r: +("0x" + t.slice(0, 2)),
-    g: +("0x" + t.slice(2, 4)),
-    b: +("0x" + t.slice(4, 6))
+  function I(r) {
+    n.allianceId == null || n.allianceId <= 0 || (r.preventDefault(), r.stopPropagation(), we(n.allianceId))
   }
-}
 
-function gt(t) {
-  t = Math.min(t, b.colors.length - 1);
-  const [n, o, e] = b.colors[t].rgb;
-  return {
-    r: n,
-    g: o,
-    b: e,
-    a: t === 0 ? 0 : 255
+  function M(r) {
+    r.key !== "Enter" && r.key !== " " || I(r)
   }
-}
-const d = 2 * Math.PI,
-  B = 6103515625,
-  G = .5235987755982988,
-  K = .10471975511965977,
-  Q = 1.0995574287564276,
-  Y = 4.799655442984406,
-  Z = .4363323129985824;
-
-function S(t) {
-  const n = t * t;
-  return n * n * n * t
-}
-
-function H(t, n) {
-  const o = Math.atan2(t, n);
-  return o < 0 ? o + d : o
-}
-const P = new Float64Array(256);
-for (let t = 0; t < 256; t++) {
-  const n = t / 255;
-  P[t] = n > .04045 ? Math.pow((n + .055) / 1.055, 2.4) : n / 12.92
-}
-
-function k(t) {
-  const n = P[t.r],
-    o = P[t.g],
-    e = P[t.b];
-  let s = (n * .4124 + o * .3576 + e * .1805) / .95047,
-    c = n * .2126 + o * .7152 + e * .0722,
-    r = (n * .0193 + o * .1192 + e * .9505) / 1.08883;
-  return s = s > .008856 ? Math.cbrt(s) : 7.787 * s + 16 / 116, c = c > .008856 ? Math.cbrt(c) : 7.787 * c + 16 / 116, r = r > .008856 ? Math.cbrt(r) : 7.787 * r + 16 / 116, {
-    l: 116 * c - 16,
-    a: 500 * (s - c),
-    b: 200 * (c - r)
-  }
-}
-const E = b.colors.map((t, n) => ({
-    idx: n,
-    lab: k({
-      r: t.rgb[0],
-      g: t.rgb[1],
-      b: t.rgb[2]
+  var b = y(),
+    O = D(b);
+  {
+    var B = r => {
+        var a = y(),
+          f = D(a);
+        {
+          var R = s => {
+              var t = Pe(),
+                _ = m(t);
+              k(_, () => n.children ?? v), h(t), x(() => {
+                g(t, 1, `cursor-pointer hover:underline ${P()}`), u(t, "title", n.title)
+              }), c("pointerdown", t, d), c("click", t, I), c("keydown", t, M), o(s, t)
+            },
+            Z = s => {
+              var t = Ie(),
+                _ = m(t);
+              k(_, () => n.children ?? v), h(t), x(() => {
+                g(t, 1, `cursor-pointer hover:underline ${P()}`), u(t, "href", T(E)), u(t, "title", n.title)
+              }), c("pointerdown", t, d), c("click", t, d), o(s, t)
+            };
+          C(f, s => {
+            e() === "inline" ? s(R) : s(Z, !1)
+          })
+        }
+        o(r, a)
+      },
+      N = r => {
+        var a = be(),
+          f = m(a);
+        k(f, () => n.children ?? v), h(a), x(() => {
+          g(a, 1, U(j())), u(a, "title", n.title)
+        }), o(r, a)
+      };
+    C(O, r => {
+      T(A) ? r(B) : r(N, !1)
     })
-  })).filter(t => t.idx !== 0),
-  p = b.colors.map((t, n) => ({
-    idx: n,
-    rgb: {
-      r: t.rgb[0],
-      g: t.rgb[1],
-      b: t.rgb[2]
-    }
-  })).filter(t => t.idx !== 0),
-  w = new Array(b.colors.length);
-for (const t of E) w[t.idx] = t;
-const N = new Array(b.colors.length);
-for (const t of p) N[t.idx] = t;
-
-function tt(t, n, o) {
-  let e = E[0].idx,
-    s = Number.MAX_VALUE;
-  const c = o && o.length > 0,
-    r = c ? o.length : E.length;
-  for (let i = 0; i < r; i++) {
-    const a = c ? w[o[i]] : E[i];
-    if (!a) continue;
-    const l = n(t, a.lab);
-    (l < s || l === s && a.idx < e) && (e = a.idx, s = l)
   }
-  return e
+  o(i, b), K()
 }
-
-function nt(t, n) {
-  let o = p[0].idx,
-    e = Number.MAX_VALUE;
-  const s = n && n.length > 0,
-    c = s ? n.length : p.length;
-  for (let r = 0; r < c; r++) {
-    const i = s ? N[n[r]] : p[r];
-    if (!i) continue;
-    const a = st(t, i.rgb);
-    (a < e || a === e && i.idx < o) && (o = i.idx, e = a)
-  }
-  return o
-}
-
-function ut(t, n = "lab", o) {
-  if (n === "compuphase") return nt(t, o);
-  const e = k(t);
-  return tt(e, n === "ciede2000" ? et : ot, o)
-}
-
-function ot(t, n) {
-  const o = t.l - n.l,
-    e = t.a - n.a,
-    s = t.b - n.b,
-    c = Math.sqrt(t.a * t.a + t.b * t.b),
-    r = Math.sqrt(n.a * n.a + n.b * n.b),
-    i = c - r;
-  let a = e * e + s * s - i * i;
-  a = a < 0 ? 0 : Math.sqrt(a);
-  const l = 1 + .045 * c,
-    h = 1 + .015 * c,
-    u = i / l,
-    f = a / h,
-    M = o * o + u * u + f * f;
-  return M < 0 ? 0 : Math.sqrt(M)
-}
-
-function et(t, n) {
-  const o = Math.sqrt(t.a * t.a + t.b * t.b),
-    e = Math.sqrt(n.a * n.a + n.b * n.b),
-    s = (o + e) * .5,
-    c = S(s),
-    r = .5 * (1 - Math.sqrt(c / (c + B))),
-    i = (1 + r) * t.a,
-    a = (1 + r) * n.a,
-    l = Math.sqrt(i * i + t.b * t.b),
-    h = Math.sqrt(a * a + n.b * n.b),
-    u = l * h,
-    f = l === 0 ? 0 : H(t.b, i),
-    M = h === 0 ? 0 : H(n.b, a),
-    v = n.l - t.l,
-    F = h - l;
-  let m = 0;
-  u !== 0 && (m = M - f, m > Math.PI ? m -= d : m < -Math.PI && (m += d));
-  const O = u === 0 ? 0 : 2 * Math.sqrt(u) * Math.sin(m * .5),
-    U = (t.l + n.l) * .5,
-    x = (l + h) * .5;
-  let g = f + M;
-  u !== 0 && (Math.abs(f - M) > Math.PI ? g = g < d ? (g + d) * .5 : (g - d) * .5 : g *= .5);
-  const $ = 1 - .17 * Math.cos(g - G) + .24 * Math.cos(2 * g) + .32 * Math.cos(3 * g + K) - .2 * Math.cos(4 * g - Q),
-    q = (g - Y) / Z,
-    z = G * Math.exp(-(q * q)),
-    A = S(x),
-    V = 2 * Math.sqrt(A / (A + B)),
-    y = U - 50,
-    C = y * y,
-    X = 1 + .015 * C / Math.sqrt(20 + C),
-    W = 1 + .045 * x,
-    j = 1 + .015 * x * $,
-    J = -Math.sin(2 * z) * V,
-    T = v / X,
-    _ = F / W,
-    D = O / j,
-    I = T * T + _ * _ + D * D + J * _ * D;
-  return I > 0 ? I : 0
-}
-
-function st(t, n) {
-  const o = (t.r + n.r) / 2,
-    e = t.r - n.r,
-    s = t.g - n.g,
-    c = t.b - n.b,
-    r = 2 + o / 256,
-    i = 2 + (255 - o) / 256;
-  return r * e * e + 4 * s * s + i * c * c
-}
+W(["pointerdown", "click", "keydown"]);
 export {
-  it as a, ut as b, gt as c, rt as g, lt as h, at as r
+  Be as L, Ne as S, Me as d, Oe as p
 };

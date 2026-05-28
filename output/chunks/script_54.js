@@ -1,38 +1,22 @@
 import {
-  g as t
+  g as e
 } from "./BhCkpOlh.js";
-const u = () => "Members",
-  s = () => "Membros",
-  o = () => "成员",
-  i = () => "Mitglieder",
-  c = () => "Miembros",
-  m = () => "Membres",
-  p = () => "Membri",
-  l = () => "メンバー",
-  f = () => "Członkowie",
-  a = () => "Участники",
-  _ = () => "Учасники",
-  b = () => "Thành viên",
-  C = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? u() : r === "pt" ? s() : r === "ch" ? o() : r === "de" ? i() : r === "es" ? c() : r === "fr" ? m() : r === "it" ? p() : r === "jp" ? l() : r === "pl" ? f() : r === "ru" ? a() : r === "uk" ? _() : b()
-  },
-  y = () => "Player",
-  d = () => "Jogador",
-  h = () => "玩家",
-  g = () => "Spieler",
-  M = () => "Jugador",
-  k = () => "Joueur",
-  j = () => "Giocatore",
-  v = () => "プレイヤー",
-  J = () => "Gracz",
-  z = () => "Игрок",
-  G = () => "Гравець",
-  w = () => "Người chơi",
-  L = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? y() : r === "pt" ? d() : r === "ch" ? h() : r === "de" ? g() : r === "es" ? M() : r === "fr" ? k() : r === "it" ? j() : r === "jp" ? v() : r === "pl" ? J() : r === "ru" ? z() : r === "uk" ? G() : w()
+const t = () => "Banned",
+  u = () => "Banido",
+  a = () => "已封禁",
+  o = () => "Gebannt",
+  c = () => "Baneado",
+  s = () => "Banni",
+  d = () => "Bannato",
+  i = () => "BAN済み",
+  b = () => "Zbanowany",
+  f = () => "Забанен",
+  _ = () => "Заблоковано",
+  p = () => "Đã bị cấm",
+  m = (l = {}, r = {}) => {
+    const n = r.locale ?? e();
+    return n === "en" ? t() : n === "pt" ? u() : n === "ch" ? a() : n === "de" ? o() : n === "es" ? c() : n === "fr" ? s() : n === "it" ? d() : n === "jp" ? i() : n === "pl" ? b() : n === "ru" ? f() : n === "uk" ? _() : p()
   };
 export {
-  C as m, L as p
+  m as b
 };
