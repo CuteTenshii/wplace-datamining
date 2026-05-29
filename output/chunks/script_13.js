@@ -1,29 +1,159 @@
 import {
-  k as t,
-  R as S,
-  I as T,
-  S as h,
-  T as c
-} from "./5zj5-rPA.js";
+  aK as g,
+  aL as m,
+  aM as A,
+  i as S,
+  g as D,
+  h as T,
+  aN as B,
+  aB as K,
+  aO as M,
+  aP as N,
+  L as U,
+  K as Y,
+  aQ as j,
+  aR as $,
+  au as q,
+  ad as z,
+  aS as C,
+  W as I,
+  aT as R,
+  aU as c
+} from "./Dbe4PVAU.js";
+let _ = !1;
 
-function k(r, i) {
-  return r === i || (r == null ? void 0 : r[c]) === i
+function G(e) {
+  var r = _;
+  try {
+    return _ = !1, [e(), _]
+  } finally {
+    _ = r
+  }
 }
 
-function A(r = {}, i, a, q) {
-  return t(() => {
-    var f, s;
-    return S(() => {
-      f = s, s = [], T(() => {
-        r !== a(...s) && (i(r, ...s), f && k(a(...f), r) && i(null, ...f))
-      })
-    }), () => {
-      h(() => {
-        s && k(a(...s), r) && i(null, ...s)
-      })
+function F(e, r = 1) {
+  const n = e();
+  return e(n + r), n
+}
+const Q = {
+  get(e, r) {
+    if (!e.exclude.includes(r)) return e.props[r]
+  },
+  set(e, r) {
+    return !1
+  },
+  getOwnPropertyDescriptor(e, r) {
+    if (!e.exclude.includes(r) && r in e.props) return {
+      enumerable: !0,
+      configurable: !0,
+      value: e.props[r]
     }
-  }), r
+  },
+  has(e, r) {
+    return e.exclude.includes(r) ? !1 : r in e.props
+  },
+  ownKeys(e) {
+    return Reflect.ownKeys(e.props).filter(r => !e.exclude.includes(r))
+  }
+};
+
+function H(e, r, n) {
+  return new Proxy({
+    props: e,
+    exclude: r
+  }, Q)
+}
+const W = {
+  get(e, r) {
+    let n = e.props.length;
+    for (; n--;) {
+      let t = e.props[n];
+      if (c(t) && (t = t()), typeof t == "object" && t !== null && r in t) return t[r]
+    }
+  },
+  set(e, r, n) {
+    let t = e.props.length;
+    for (; t--;) {
+      let i = e.props[t];
+      c(i) && (i = i());
+      const u = g(i, r);
+      if (u && u.set) return u.set(n), !0
+    }
+    return !1
+  },
+  getOwnPropertyDescriptor(e, r) {
+    let n = e.props.length;
+    for (; n--;) {
+      let t = e.props[n];
+      if (c(t) && (t = t()), typeof t == "object" && t !== null && r in t) {
+        const i = g(t, r);
+        return i && !i.configurable && (i.configurable = !0), i
+      }
+    }
+  },
+  has(e, r) {
+    if (r === I || r === R) return !1;
+    for (let n of e.props)
+      if (c(n) && (n = n()), n != null && r in n) return !0;
+    return !1
+  },
+  ownKeys(e) {
+    const r = [];
+    for (let n of e.props)
+      if (c(n) && (n = n()), !!n) {
+        for (const t in n) r.includes(t) || r.push(t);
+        for (const t of Object.getOwnPropertySymbols(n)) r.includes(t) || r.push(t)
+      } return r
+  }
+};
+
+function J(...e) {
+  return new Proxy({
+    props: e
+  }, W)
+}
+
+function V(e, r, n, t) {
+  var O;
+  var i = !Y || (n & j) !== 0,
+    u = (n & N) !== 0,
+    y = (n & C) !== 0,
+    a = t,
+    v = !0,
+    h = () => (v && (v = !1, a = y ? U(t) : t), a),
+    o;
+  if (u) {
+    var x = I in e || R in e;
+    o = ((O = g(e, r)) == null ? void 0 : O.set) ?? (x && r in e ? s => e[r] = s : void 0)
+  }
+  var l, b = !1;
+  u ? [l, b] = G(() => e[r]) : l = e[r], l === void 0 && t !== void 0 && (l = h(), o && (i && m(), o(l)));
+  var f;
+  if (i ? f = () => {
+      var s = e[r];
+      return s === void 0 ? h() : (v = !0, s)
+    } : f = () => {
+      var s = e[r];
+      return s !== void 0 && (a = void 0), s === void 0 ? a : s
+    }, i && (n & A) === 0) return f;
+  if (o) {
+    var E = e.$$legacy;
+    return (function(s, p) {
+      return arguments.length > 0 ? ((!i || !p || E || b) && o(p ? f() : s), s) : f()
+    })
+  }
+  var P = !1,
+    d = ((n & $) !== 0 ? q : z)(() => (P = !1, f()));
+  u && S(d);
+  var L = K;
+  return (function(s, p) {
+    if (arguments.length > 0) {
+      const w = p ? S(d) : i && u ? D(s) : s;
+      return T(d, w), P = !0, a !== void 0 && (a = w), s
+    }
+    return B && P || (L.f & M) !== 0 ? d.v : S(d)
+  })
 }
 export {
-  A as b
+  V as p, H as r, J as s, F as u
 };

@@ -1,41 +1,41 @@
 import {
   t as E,
-  q as _,
-  v as l,
-  ay as y,
-  az as A,
-  B as h,
-  a5 as M,
-  am as m,
-  aA as w,
-  aB as C,
-  aC as c,
-  z as N,
-  aD as T,
-  aE as g,
-  aF as O,
-  a4 as d
-} from "./5zj5-rPA.js";
+  x as _,
+  y as l,
+  aB as y,
+  aC as M,
+  F as h,
+  a8 as A,
+  ap as C,
+  aD as m,
+  aE as w,
+  aF as c,
+  C as N,
+  aG as T,
+  aH as g,
+  aI as H,
+  a7 as d
+} from "./Dbe4PVAU.js";
 
-function D(u, v, r = !1, s = !1, R = !1) {
+function b(u, p, r = !1, s = !1, O = !1) {
   var i = u,
     n = "";
   E(() => {
     var t = y;
-    if (n === (n = v() ?? "")) {
+    if (n === (n = p() ?? "")) {
       _ && l();
       return
     }
-    if (t.nodes !== null && (A(t.nodes.start, t.nodes.end), t.nodes = null), n !== "") {
+    if (t.nodes !== null && (M(t.nodes.start, t.nodes.end), t.nodes = null), n !== "") {
       if (_) {
         h.data;
-        for (var a = l(), o = a; a !== null && (a.nodeType !== M || a.data !== "");) o = a, a = m(a);
-        if (a === null) throw w(), C;
+        for (var a = l(), o = a; a !== null && (a.nodeType !== A || a.data !== "");) o = a, a = C(a);
+        if (a === null) throw m(), w;
         c(h, o), i = N(a);
         return
       }
-      var p = r ? g : s ? O : void 0,
-        f = T(r ? "svg" : s ? "math" : "template", p);
+      var v = r ? g : s ? H : void 0,
+        f = T(r ? "svg" : s ? "math" : "template", v);
       f.innerHTML = n;
       var e = r || s ? f : f.content;
       if (c(d(e), e.lastChild), r || s)
@@ -45,5 +45,5 @@ function D(u, v, r = !1, s = !1, R = !1) {
   })
 }
 export {
-  D as h
+  b as h
 };

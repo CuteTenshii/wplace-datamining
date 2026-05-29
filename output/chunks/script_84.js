@@ -1,22 +1,22 @@
 import {
-  g as t
+  g as r
 } from "./BhCkpOlh.js";
-const n = () => "Appeals",
-  p = () => "Apelos",
-  s = () => "申诉",
-  a = () => "Einsprüche",
-  u = () => "Apelaciones",
-  o = () => "Recours",
-  c = () => "Ricorsi",
-  l = () => "異議申立て",
-  i = () => "Odwołania",
-  f = () => "Апелляции",
-  _ = () => "Апеляції",
-  h = () => "Các kháng cáo",
-  k = (d = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? n() : r === "pt" ? p() : r === "ch" ? s() : r === "de" ? a() : r === "es" ? u() : r === "fr" ? o() : r === "it" ? c() : r === "jp" ? l() : r === "pl" ? i() : r === "ru" ? f() : r === "uk" ? _() : h()
+const a = () => "No alliance",
+  t = () => "Sem aliança",
+  l = () => "无联盟",
+  i = () => "Ohne Allianz",
+  o = () => "Sin alianza",
+  c = () => "Sans alliance",
+  u = () => "Senza alleanza",
+  _ = () => "同盟なし",
+  s = () => "Bez sojuszu",
+  f = () => "Без альянса",
+  p = () => "Без альянсу",
+  z = () => "Không liên minh",
+  S = (h = {}, e = {}) => {
+    const n = e.locale ?? r();
+    return n === "en" ? a() : n === "pt" ? t() : n === "ch" ? l() : n === "de" ? i() : n === "es" ? o() : n === "fr" ? c() : n === "it" ? u() : n === "jp" ? _() : n === "pl" ? s() : n === "ru" ? f() : n === "uk" ? p() : z()
   };
 export {
-  k as a
+  S as n
 };

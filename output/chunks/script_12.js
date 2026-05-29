@@ -1,38 +1,29 @@
 import {
-  q as o,
-  v,
-  w as y,
-  E as f,
-  x as l,
-  y as m,
-  z as p,
-  A as i,
-  H as T,
-  B as A
-} from "./5zj5-rPA.js";
-import {
-  B as E
-} from "./B1t6g3m9.js";
+  m as h,
+  U as k,
+  L,
+  V as S,
+  W as T
+} from "./Dbe4PVAU.js";
 
-function x(d, _, e) {
-  var s;
-  o && (s = A, v());
-  var r = new E(d);
-  y(() => {
-    var a = _() ?? null;
-    if (o) {
-      var h = l(s),
-        c = h === T,
-        u = a !== null;
-      if (c !== u) {
-        var t = m();
-        p(t), r.anchor = t, i(!1), r.ensure(a, a && (n => e(n, a))), i(!0);
-        return
-      }
+function t(r, i) {
+  return r === i || (r == null ? void 0 : r[T]) === i
+}
+
+function x(r = {}, i, a, c) {
+  return h(() => {
+    var f, s;
+    return k(() => {
+      f = s, s = [], L(() => {
+        r !== a(...s) && (i(r, ...s), f && t(a(...f), r) && i(null, ...f))
+      })
+    }), () => {
+      S(() => {
+        s && t(a(...s), r) && i(null, ...s)
+      })
     }
-    r.ensure(a, a && (n => e(n, a)))
-  }, f)
+  }), r
 }
 export {
-  x as c
+  x as b
 };

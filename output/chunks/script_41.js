@@ -3,41 +3,41 @@ import {
 } from "./BhCkpOlh.js";
 import "./Bzak7iHL.js";
 import {
-  p as D,
+  p as A,
   i as c,
   h,
-  D as E,
+  I as E,
   d as o,
   s as v,
-  bk as I,
+  bq as N,
   r as u,
   t as g,
   a as b,
-  b as N,
-  e as T,
-  u as W,
+  b as T,
+  e as W,
+  u as B,
   c as q
-} from "./5zj5-rPA.js";
+} from "./Dbe4PVAU.js";
 import {
   s as k
-} from "./DDRNvPA5.js";
+} from "./C_mo-lyU.js";
 import {
   i as w
-} from "./D-uzaoLl.js";
+} from "./Icl9dwnj.js";
 import {
-  d as B,
+  d as D,
   C as G
-} from "./B13kG5TI.js";
+} from "./B7_gUtXa.js";
 import {
   b as R
-} from "./zQZId1s7.js";
+} from "./C1Rrr0ww.js";
 import {
   b as V
-} from "./W8HBKPHS.js";
+} from "./BVz9wMiQ.js";
 import {
   p as f,
   r as F
-} from "./C4sT4bjp.js";
+} from "./K9AHFDoV.js";
 const H = () => "Extra context on what happened (required)",
   J = () => "Mais informações sobre o que aconteceu (obrigatório)",
   K = () => "请提供发生情况的额外背景（必填）",
@@ -89,18 +89,18 @@ const H = () => "Extra context on what happened (required)",
   Ce = () => "Required",
   Le = () => "Obrigatório",
   Oe = () => "必填",
-  Ze = () => "Erforderlich",
-  Ae = () => "Obligatorio",
-  De = () => "Obligatoire",
+  Ie = () => "Erforderlich",
+  Ze = () => "Obligatorio",
+  Ae = () => "Obligatoire",
   Ee = () => "Obbligatorio",
-  Ie = () => "必須",
-  Ne = () => "Wymagane",
-  Te = () => "Обязательно",
-  We = () => "Обовʼязково",
-  Be = () => "Bắt buộc",
+  Ne = () => "必須",
+  Te = () => "Wymagane",
+  We = () => "Обязательно",
+  Be = () => "Обовʼязково",
+  De = () => "Bắt buộc",
   Ge = (e = {}, t = {}) => {
     const r = t.locale ?? _();
-    return r === "en" ? Ce() : r === "pt" ? Le() : r === "ch" ? Oe() : r === "de" ? Ze() : r === "es" ? Ae() : r === "fr" ? De() : r === "it" ? Ee() : r === "jp" ? Ie() : r === "pl" ? Ne() : r === "ru" ? Te() : r === "uk" ? We() : Be()
+    return r === "en" ? Ce() : r === "pt" ? Le() : r === "ch" ? Oe() : r === "de" ? Ie() : r === "es" ? Ze() : r === "fr" ? Ae() : r === "it" ? Ee() : r === "jp" ? Ne() : r === "pl" ? Te() : r === "ru" ? We() : r === "uk" ? Be() : De()
   },
   Re = () => "Select the reason",
   Ve = () => "Selecione o motivo",
@@ -123,14 +123,14 @@ var er = q('<legend class="fieldset-legend"> </legend>'),
   tr = q('<fieldset class="fieldset"><!> <textarea></textarea> <div class="flex items-center justify-between text-xs"><span class="text-error"> </span> <!></div></fieldset>');
 
 function xr(e, t) {
-  D(t, !0);
+  A(t, !0);
   let r = f(t, "value", 15),
     S = f(t, "validate", 15),
     y = f(t, "disabled", 3, !1),
     M = f(t, "ref", 15),
     z = F(t, ["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate", "disabled", "ref"]),
-    i = T("");
-  const l = W(() => {
+    i = W("");
+  const l = B(() => {
     var n;
     return ((n = r()) == null ? void 0 : n.length) ?? 0
   });
@@ -160,7 +160,7 @@ function xr(e, t) {
     })
   }
   var s = v(j, 2);
-  I(s), B(s, () => ({
+  N(s), D(s, () => ({
     ...z,
     class: `textarea w-full ${t.class??""}`,
     placeholder: t.placeholder,
@@ -173,18 +173,18 @@ function xr(e, t) {
     x = o(p),
     O = o(x, !0);
   u(x);
-  var Z = v(x, 2);
+  var I = v(x, 2);
   {
-    var A = n => {
+    var Z = n => {
       var a = rr(),
         d = o(a, !0);
       u(a), g(() => k(d, t.max - c(l))), b(n, a)
     };
-    w(Z, n => {
-      t.max !== void 0 && n(A)
+    w(I, n => {
+      t.max !== void 0 && n(Z)
     })
   }
-  u(p), u(m), g(() => k(O, c(i))), R(s, r), b(e, m), N()
+  u(p), u(m), g(() => k(O, c(i))), R(s, r), b(e, m), T()
 }
 export {
   xr as L, fr as g, mr as s

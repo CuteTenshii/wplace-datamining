@@ -4,46 +4,44 @@ import {
 import "./Bzak7iHL.js";
 import {
   a as o,
-  o as z,
-  p as G,
-  m as y,
-  f as D,
-  i as T,
+  w as z,
+  k as G,
+  p as J,
+  q,
+  f as y,
+  i as D,
   b as K,
-  u as q,
+  u as T,
   d as m,
-  aW as v,
+  aJ as v,
   r as h,
   t as x,
-  c as w
-} from "./5zj5-rPA.js";
+  c as w,
+  l as c
+} from "./Dbe4PVAU.js";
 import {
   d as Q,
   a as g,
   c as U,
   s as u
-} from "./B13kG5TI.js";
+} from "./B7_gUtXa.js";
 import {
   r as V,
   p
-} from "./C4sT4bjp.js";
-import {
-  d as W,
-  a as c
-} from "./CRfpTDDG.js";
+} from "./K9AHFDoV.js";
 import {
   s as k
-} from "./C2ATkZL9.js";
+} from "./2Od2egA-.js";
 import {
   i as C
-} from "./D-uzaoLl.js";
+} from "./Icl9dwnj.js";
 import {
   P as F
-} from "./CRmwVMpf.js";
+} from "./CcvdIzpI.js";
 import {
   u as H
-} from "./C3ICfNT7.js";
-const J = () => "Description",
+} from "./QUpYfTET.js";
+const W = () => "Description",
   X = () => "Descrição",
   Y = () => "描述",
   $ = () => "Beschreibung",
@@ -55,9 +53,9 @@ const J = () => "Description",
   ae = () => "Описание",
   se = () => "Опис",
   oe = () => "Mô tả",
-  Me = (i = {}, n = {}) => {
+  Ee = (i = {}, n = {}) => {
     const e = n.locale ?? S();
-    return e === "en" ? J() : e === "pt" ? X() : e === "ch" ? Y() : e === "de" ? $() : e === "es" ? ee() : e === "fr" ? ne() : e === "it" ? te() : e === "jp" ? re() : e === "pl" ? ie() : e === "ru" ? ae() : e === "uk" ? se() : oe()
+    return e === "en" ? W() : e === "pt" ? X() : e === "ch" ? Y() : e === "de" ? $() : e === "es" ? ee() : e === "fr" ? ne() : e === "it" ? te() : e === "jp" ? re() : e === "pl" ? ie() : e === "ru" ? ae() : e === "uk" ? se() : oe()
   },
   le = () => "Pixels painted",
   ce = () => "Pixels pintados",
@@ -71,13 +69,13 @@ const J = () => "Description",
   he = () => "Нарисованные пиксели",
   xe = () => "Намальовані пікселі",
   ge = () => "Pixel đã tô",
-  Oe = (i = {}, n = {}) => {
+  Me = (i = {}, n = {}) => {
     const e = n.locale ?? S();
     return e === "en" ? le() : e === "pt" ? ce() : e === "ch" ? ue() : e === "de" ? pe() : e === "es" ? de() : e === "fr" ? fe() : e === "it" ? _e() : e === "jp" ? me() : e === "pl" ? ve() : e === "ru" ? he() : e === "uk" ? xe() : ge()
   };
 var ke = z('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
 
-function Be(i, n) {
+function Oe(i, n) {
   let e = V(n, ["$$slots", "$$events", "$$legacy"]);
   var l = ke();
   Q(l, () => ({
@@ -99,14 +97,14 @@ var Pe = w('<span role="link" tabindex="0"><!></span>'),
   Ie = w('<a target="_blank" rel="noopener noreferrer"><!></a>'),
   be = w("<span><!></span>");
 
-function Ne(i, n) {
-  G(n, !0);
+function Be(i, n) {
+  J(n, !0);
   let e = p(n, "mode", 3, "anchor"),
     l = p(n, "class", 3, ""),
     P = p(n, "linkClass", 19, l),
     j = p(n, "textClass", 19, l);
-  const A = q(() => n.allianceId != null && n.allianceId > 0 && H.hasAnyPermission(F.dashboard.alliances)),
-    E = q(() => n.allianceId == null ? "" : L(n.allianceId));
+  const A = T(() => n.allianceId != null && n.allianceId > 0 && H.hasAnyPermission(F.dashboard.alliances)),
+    E = T(() => n.allianceId == null ? "" : L(n.allianceId));
 
   function d(r) {
     r.stopPropagation()
@@ -119,12 +117,12 @@ function Ne(i, n) {
   function M(r) {
     r.key !== "Enter" && r.key !== " " || I(r)
   }
-  var b = y(),
-    O = D(b);
+  var b = q(),
+    O = y(b);
   {
     var B = r => {
-        var a = y(),
-          f = D(a);
+        var a = q(),
+          f = y(a);
         {
           var R = s => {
               var t = Pe(),
@@ -137,7 +135,7 @@ function Ne(i, n) {
               var t = Ie(),
                 _ = m(t);
               k(_, () => n.children ?? v), h(t), x(() => {
-                g(t, 1, `cursor-pointer hover:underline ${P()}`), u(t, "href", T(E)), u(t, "title", n.title)
+                g(t, 1, `cursor-pointer hover:underline ${P()}`), u(t, "href", D(E)), u(t, "title", n.title)
               }), c("pointerdown", t, d), c("click", t, d), o(s, t)
             };
           C(f, s => {
@@ -154,12 +152,12 @@ function Ne(i, n) {
         }), o(r, a)
       };
     C(O, r => {
-      T(A) ? r(B) : r(N, !1)
+      D(A) ? r(B) : r(N, !1)
     })
   }
   o(i, b), K()
 }
-W(["pointerdown", "click", "keydown"]);
+G(["pointerdown", "click", "keydown"]);
 export {
-  Be as L, Ne as S, Me as d, Oe as p
+  Oe as L, Be as S, Ee as d, Me as p
 };

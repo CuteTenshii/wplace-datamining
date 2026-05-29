@@ -3,9 +3,11 @@ import {
 } from "./BhCkpOlh.js";
 import "./Bzak7iHL.js";
 import {
+  k as Ce,
   p as re,
   t as g,
   i,
+  l as X,
   a as s,
   b as ne,
   e as ke,
@@ -15,42 +17,38 @@ import {
   s as l,
   c as P,
   r as u,
-  m as Z,
+  q as Z,
   f as T,
-  bj as A,
+  bp as A,
   n as I
-} from "./5zj5-rPA.js";
+} from "./Dbe4PVAU.js";
 import {
   s as m
-} from "./DDRNvPA5.js";
+} from "./C_mo-lyU.js";
 import {
   i as K
-} from "./D-uzaoLl.js";
+} from "./Icl9dwnj.js";
 import {
   e as ce,
   i as de
-} from "./DtTXMYQV.js";
+} from "./sR4NyGSS.js";
 import {
-  c as Ce
-} from "./yb-uQbOV.js";
+  c as $e
+} from "./BKLQopM3.js";
 import {
   s as O,
   a as N,
   c as ge
-} from "./B13kG5TI.js";
+} from "./B7_gUtXa.js";
 import {
   p as H
-} from "./C4sT4bjp.js";
+} from "./K9AHFDoV.js";
 import {
   h as ie
-} from "./Cp1SQHyC.js";
-import {
-  d as $e,
-  a as X
-} from "./CRfpTDDG.js";
+} from "./RamoUxFG.js";
 import {
   s as ee
-} from "./C2ATkZL9.js";
+} from "./2Od2egA-.js";
 const De = () => "Click to reveal",
   Pe = () => "Clique para revelar",
   Se = () => "点击查看",
@@ -847,7 +845,7 @@ const De = () => "Click to reveal",
   Cd = () => "Правила",
   $d = () => "Правила",
   Dd = () => "Luật",
-  dv = (n = {}, r = {}) => {
+  cv = (n = {}, r = {}) => {
     const e = r.locale ?? t();
     return e === "en" ? vd() : e === "pt" ? hd() : e === "ch" ? bd() : e === "de" ? xd() : e === "es" ? kd() : e === "fr" ? wd() : e === "it" ? zd() : e === "jp" ? yd() : e === "pl" ? jd() : e === "ru" ? Cd() : e === "uk" ? $d() : Dd()
   },
@@ -1218,7 +1216,7 @@ function le(n, r) {
     }
   }), s(n, L), ne()
 }
-$e(["keydown", "pointerdown", "pointerup", "click"]);
+Ce(["keydown", "pointerdown", "pointerup", "click"]);
 var pm = P("<span> </span>"),
   fm = P("<h3><!> <!> <!></h3>"),
   mm = P("<span> </span>"),
@@ -1816,7 +1814,7 @@ var Wm = P('<details><summary class="collapse-title flex min-h-0! gap-3.5 py-3.5
   Xm = P('<div><div></div> <div class="min-w-0 flex-1"><div class="min-w-0"><div class="flex flex-wrap items-center gap-2.5"><span class="text-base-content text-base leading-snug font-bold"> </span> <!></div> <p class="text-base-content/90 mt-1 text-sm leading-relaxed"> </p></div></div></div>'),
   Qm = P('<div><div><svg class="size-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd"></path></svg> <span> </span></div> <!></div>');
 
-function gv(n, r) {
+function dv(n, r) {
   re(r, !0);
   let e = H(r, "showExtraInfo", 3, !0),
     p = Q(() => [{
@@ -1938,7 +1936,7 @@ function gv(n, r) {
             var me = l(c, 2),
               ae = _(me),
               je = _(ae);
-            Ce(je, () => i(o).content, (_e, ve) => {
+            $e(je, () => i(o).content, (_e, ve) => {
               ve(_e, {
                 compact: !0
               })
@@ -1992,5 +1990,5 @@ function gv(n, r) {
   }), s(n, h), ne()
 }
 export {
-  Im as G, gv as R, Dm as a, Jm as b, Em as c, Km as d, dv as r
+  Im as G, dv as R, Dm as a, Jm as b, Em as c, Km as d, cv as r
 };

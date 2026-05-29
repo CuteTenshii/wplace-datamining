@@ -1,26 +1,18 @@
 import {
-  s as t,
-  p as r
-} from "./Doe1jKzC.js";
-const e = {
-  get error() {
-    return r.error
-  },
-  get params() {
-    return r.params
-  },
-  get state() {
-    return r.state
-  },
-  get status() {
-    return r.status
-  },
-  get url() {
-    return r.url
-  }
-};
-t.updated.check;
-const a = e;
+  g as t
+} from "./BhCkpOlh.js";
+
+function r() {
+  return t()
+}
+
+function n() {
+  return `/terms/return${r()==="pt"?"/pt":""}`
+}
+
+function s() {
+  return `/terms/terms-of-service${r()==="pt"?"/pt":""}`
+}
 export {
-  a as p
+  r as g, n as r, s as t
 };
