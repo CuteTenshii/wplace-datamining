@@ -7429,29 +7429,30 @@ class fE {
     if (n.status !== f.OK) throw new Error(h());
     return await n.json()
   }
-  async sendOtp(n) {
-    const e = await this.request("/anticheat/otp/send", {
+  async sendOtp(n, e = !1) {
+    const r = await this.request("/anticheat/otp/send", {
       method: "POST",
       credentials: "include",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        phone: n
+        phone: n,
+        ignoreWhatsapp: e
       }),
       throwOnStatus: !1
     });
-    if (e.status === f.BAD_REQUEST) throw new Error(jh());
-    if (e.status === f.CONFLICT) throw new Error($1());
-    if (e.status === f.FORBIDDEN) throw new Error(Xg());
-    if (e.status === f.TOO_MANY_REQUESTS) throw new Error(br());
-    if (e.status === f.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(o0());
-    if (e.status === f.LOCKED) throw new Error(dw());
-    if (e.status === f.UNPROCESSABLE_ENTITY) throw new Error(ep());
-    if (e.status === f.NOT_ACCEPTABLE) throw new Error(Nw());
-    if (e.status === f.PRECONDITION_FAILED) throw new Error(Fl());
-    if (e.status !== f.OK) throw new Error(h());
-    return await e.json()
+    if (r.status === f.BAD_REQUEST) throw new Error(jh());
+    if (r.status === f.CONFLICT) throw new Error($1());
+    if (r.status === f.FORBIDDEN) throw new Error(Xg());
+    if (r.status === f.TOO_MANY_REQUESTS) throw new Error(br());
+    if (r.status === f.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(o0());
+    if (r.status === f.LOCKED) throw new Error(dw());
+    if (r.status === f.UNPROCESSABLE_ENTITY) throw new Error(ep());
+    if (r.status === f.NOT_ACCEPTABLE) throw new Error(Nw());
+    if (r.status === f.PRECONDITION_FAILED) throw new Error(Fl());
+    if (r.status !== f.OK) throw new Error(h());
+    return await r.json()
   }
   async verifyChallenge(n) {
     let e;

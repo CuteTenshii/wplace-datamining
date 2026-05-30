@@ -100,10 +100,10 @@ import {
 import {
   g as uu,
   c as P3
-} from "../chunks/HnQ5QWNR.js";
+} from "../chunks/1JOSltxL.js";
 import {
   p as ts
-} from "../chunks/DlCSRbw3.js";
+} from "../chunks/RJ_57rP4.js";
 import {
   f as Gx,
   g as Wx,
@@ -124,7 +124,7 @@ import {
   P as A3,
   c as D3,
   d as L3
-} from "../chunks/6WgX_UZo.js";
+} from "../chunks/CdAgXveI.js";
 import {
   b as ba,
   N as R3,
@@ -153,7 +153,7 @@ import {
   a1 as Hm,
   P as W3,
   a2 as H3
-} from "../chunks/QUpYfTET.js";
+} from "../chunks/k-nPw50I.js";
 import {
   o as X3,
   c as pu,
@@ -180,10 +180,10 @@ import {
   C as tT,
   D as rT,
   j as nT
-} from "../chunks/Cfg0FnGE.js";
+} from "../chunks/Ctzmp_47.js";
 import {
   P as ya
-} from "../chunks/CcvdIzpI.js";
+} from "../chunks/B39bLOJd.js";
 import {
   p as Er,
   r as Jr,
@@ -211,7 +211,7 @@ import {
   L as T_,
   p as hv,
   S as Td
-} from "../chunks/Dc-fjGTu.js";
+} from "../chunks/CgDDMy9p.js";
 import {
   p as $x
 } from "../chunks/B-TDV2C3.js";
@@ -242,13 +242,13 @@ import {
 } from "../chunks/NTgY2kck.js";
 import {
   S as u_
-} from "../chunks/CRsh-Hlp.js";
+} from "../chunks/dNpT02Pf.js";
 import {
   g as fs,
   a as Nc,
   c as uh,
   b as d_
-} from "../chunks/DTspsLch.js";
+} from "../chunks/CHNZv_hX.js";
 import {
   P as zl,
   a as cT
@@ -309,7 +309,7 @@ import {
   u as ST,
   R as PT,
   j as Ab
-} from "../chunks/BuxjLDG5.js";
+} from "../chunks/C2Eto44a.js";
 import {
   l as gv
 } from "../chunks/BRekz1nD.js";
@@ -432,7 +432,7 @@ import {
 } from "../chunks/lSLusnBY.js";
 import {
   r as Km
-} from "../chunks/7Sw0KS0n.js";
+} from "../chunks/Cz-4lqrC.js";
 import {
   c as GT
 } from "../chunks/BZcJYfQJ.js";
@@ -660,16 +660,16 @@ const YT = () => "OR",
   },
   MP = () => "You may submit <b>one appeal per punishment</b>. Our team will review your case, but this <b>does not guarantee</b> your suspension will be lifted. You'll be <b>notified of the result</b>.",
   CP = () => "Você pode enviar <b>um apelo por punição</b>. Nossa equipe revisará seu caso, mas isso <b>não garante</b> que sua suspensão será removida. Você será <b>notificado do resultado</b>.",
-  EP = () => "如果您认为您的禁令有误，您可以提交申诉以重新审核您的处罚。<br><br>每个处罚仅允许提交<b>1次申诉</b>。如果您已针对此处罚提交过申诉，则无法再次为同一案件提交申诉。<br><br>提交申诉<b>不能保证您的禁令会被移除</b>；但是，我们的团队将重新审查您的情况。<br><br>审核后，<b>您将收到通知</b>。",
-  zP = () => "Wenn Sie glauben, dass Ihre Sperre ein Fehler war, können Sie Berufung einlegen, damit Ihre Strafe überprüft wird.<br><br>Jede Strafe erlaubt nur <b>1 Berufung</b>. Wenn Sie bereits Berufung für diese Strafe eingelegt haben, ist es nicht möglich, eine weitere für denselben Fall einzureichen.<br><br>Das Einreichen einer Berufung <b>garantiert nicht, dass Ihre Sperre aufgehoben wird</b>; unser Team wird Ihre Situation jedoch erneut prüfen.<br><br>Nach der Überprüfung <b>erhalten Sie eine Benachrichtigung</b>.",
-  AP = () => "Si crees que tu suspensión fue un error, puedes enviar una apelación para que tu sanción sea revisada.<br><br>Cada sanción permite solo <b>1 apelación</b>. Si ya enviaste una apelación para esta sanción, no será posible enviar otra para el mismo caso.<br><br>Enviar una apelación <b>no garantiza que tu suspensión será eliminada</b>; sin embargo, nuestro equipo revisará tu situación nuevamente.<br><br>Después de la revisión, <b>recibirás una notificación</b>.",
-  DP = () => "Si vous estimez que votre suspension était une erreur, vous pouvez soumettre un appel pour que votre sanction soit révisée.<br><br>Chaque sanction n'autorise qu'<b>un seul appel</b>. Si vous avez déjà soumis un appel pour cette sanction, il ne sera pas possible d'en soumettre un autre pour le même cas.<br><br>Soumettre un appel <b>ne garantit pas que votre suspension sera levée</b> ; cependant, notre équipe examinera à nouveau votre situation.<br><br>Après examen, <b>vous recevrez une notification</b>.",
-  LP = () => "Se ritieni che la tua sospensione sia stata un errore, puoi inviare un ricorso affinché la tua punizione venga riesaminata.<br><br>Ogni punizione consente solo <b>1 ricorso</b>. Se hai già inviato un ricorso per questa punizione, non sarà possibile inviarne un altro per lo stesso caso.<br><br>L'invio di un ricorso <b>non garantisce che la tua sospensione verrà rimossa</b>; tuttavia, il nostro team esaminerà nuovamente la tua situazione.<br><br>Dopo la revisione, <b>riceverai una notifica</b>.",
-  RP = () => "もしご自身の停止が誤りであるとお考えでしたら、異議申し立てを送信して、処罰の再審査を依頼できます。<br><br>各処罰につき、異議申し立ては<b>1回のみ</b>可能です。既にこの処罰に対して異議申し立てを送信されている場合、同じ案件で再度送信することはできません。<br><br>異議申し立てを送信しても、<b>停止が解除されることを保証するものではありません</b>。ただし、弊社のチームがお客様の状況を再審査いたします。<br><br>審査後、<b>お客様に通知が届きます</b>。",
-  FP = () => "Jeśli uważasz, że Twoje zawieszenie było błędem, możesz wysłać odwołanie w celu ponownego rozpatrzenia kary.<br><br>Każda kara pozwala tylko na <b>1 odwołanie</b>. Jeśli już wysłałeś odwołanie dotyczące tej kary, nie będzie możliwe wysłanie kolejnego w tej samej sprawie.<br><br>Wysłanie odwołania <b>nie gwarantuje usunięcia Twojego zawieszenia</b>; jednakże nasz zespół ponownie przeanalizuje Twoją sytuację.<br><br>Po rozpatrzeniu, <b>otrzymasz powiadomienie</b>.",
-  BP = () => "Если вы считаете, что ваше отстранение было ошибкой, вы можете подать апелляцию для пересмотра вашего наказания.<br><br>За каждое наказание допускается только <b>1 апелляция</b>. Если вы уже подавали апелляцию по этому наказанию, вы не сможете подать другую по тому же делу.<br><br>Подача апелляции <b>не гарантирует отмену вашего отстранения</b>; однако наша команда снова рассмотрит вашу ситуацию.<br><br>После рассмотрения <b>вы получите уведомление</b>.",
-  jP = () => "Якщо ви вважаєте, що ваше блокування було помилковим, ви можете подати апеляцію для перегляду вашого покарання.<br><br>За кожне покарання дозволяється лише <b>1 апеляція</b>. Якщо ви вже подавали апеляцію щодо цього покарання, ви не зможете подати іншу для того ж випадку.<br><br>Подання апеляції <b>не гарантує скасування вашого блокування</b>; однак, наша команда знову розгляне вашу ситуацію.<br><br>Після перегляду <b>ви отримаєте сповіщення</b>.",
-  OP = () => "Nếu bạn tin rằng việc đình chỉ của mình là một sai lầm, bạn có thể gửi một kháng nghị để hình phạt của bạn được xem xét lại.<br><br>Mỗi hình phạt chỉ cho phép <b>1 lần kháng nghị</b>. Nếu bạn đã gửi kháng nghị cho hình phạt này, bạn sẽ không thể gửi thêm một kháng nghị nào khác cho cùng trường hợp.<br><br>Việc gửi kháng nghị <b>không đảm bảo rằng lệnh đình chỉ của bạn sẽ bị xóa bỏ</b>; tuy nhiên, đội ngũ của chúng tôi sẽ xem xét lại tình hình của bạn.<br><br>Sau khi xem xét, <b>bạn sẽ nhận được một thông báo</b>.",
+  EP = () => "每个处罚仅允许提交<b>一次申诉</b>。我们的团队将重新审查您的案件，但这<b>不保证</b>您的封禁会被解除。您将<b>收到结果通知</b>。",
+  zP = () => "Sie können <b>einen Einspruch pro Strafe</b> einlegen. Unser Team wird Ihren Fall prüfen, aber dies <b>garantiert nicht</b>, dass Ihre Sperre aufgehoben wird. Sie werden <b>über das Ergebnis benachrichtigt</b>.",
+  AP = () => "Puedes enviar <b>una apelación por sanción</b>. Nuestro equipo revisará tu caso, pero esto <b>no garantiza</b> que tu suspensión sea levantada. Serás <b>notificado del resultado</b>.",
+  DP = () => "Vous pouvez soumettre <b>un seul appel par sanction</b>. Notre équipe réexaminera votre cas, mais cela <b>ne garantit pas</b> la levée de votre suspension. Vous serez <b>notifié du résultat</b>.",
+  LP = () => "Puoi inviare <b>un solo ricorso per punizione</b>. Il nostro team riesaminerà il tuo caso, ma questo <b>non garantisce</b> la rimozione della sospensione. Sarai <b>notificato dell'esito</b>.",
+  RP = () => "各処罰につき<b>異議申し立ては1回のみ</b>可能です。チームが再審査しますが、停止の<b>解除を保証するものではありません</b>。結果は<b>通知でお知らせします</b>。",
+  FP = () => "Możesz złożyć <b>jedno odwołanie na karę</b>. Nasz zespół ponownie rozpatrzy Twoją sprawę, ale to <b>nie gwarantuje</b> zniesienia zawieszenia. Zostaniesz <b>powiadomiony o wyniku</b>.",
+  BP = () => "Вы можете подать <b>одну апелляцию на наказание</b>. Наша команда пересмотрит ваше дело, но это <b>не гарантирует</b> снятие блокировки. Вы будете <b>уведомлены о результате</b>.",
+  jP = () => "Ви можете подати <b>одну апеляцію на покарання</b>. Наша команда перегляне вашу справу, але це <b>не гарантує</b> зняття блокування. Ви будете <b>сповіщені про результат</b>.",
+  OP = () => "Bạn có thể gửi <b>một kháng nghị cho mỗi hình phạt</b>. Đội ngũ của chúng tôi sẽ xem xét lại trường hợp của bạn, nhưng điều này <b>không đảm bảo</b> lệnh đình chỉ sẽ được gỡ bỏ. Bạn sẽ được <b>thông báo về kết quả</b>.",
   qP = (m = {}, s = {}) => {
     const e = s.locale ?? de();
     return e === "en" ? MP() : e === "pt" ? CP() : e === "ch" ? EP() : e === "de" ? zP() : e === "es" ? AP() : e === "fr" ? DP() : e === "it" ? LP() : e === "jp" ? RP() : e === "pl" ? FP() : e === "ru" ? BP() : e === "uk" ? jP() : OP()
