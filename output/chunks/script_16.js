@@ -10,7 +10,7 @@ var la = (t, n, e) => n in t ? ua(t, n, {
 }) : t[n] = e;
 var $ = (t, n, e) => la(t, typeof n != "symbol" ? n + "" : n, e),
   da = (t, n, e) => n.has(t) || Vn("Cannot " + e);
-var P = (t, n, e) => (da(t, n, "read from private field"), e ? e.call(t) : n.get(t)),
+var x = (t, n, e) => (da(t, n, "read from private field"), e ? e.call(t) : n.get(t)),
   J = (t, n, e) => n.has(t) ? Vn("Cannot add the same private member more than once") : n instanceof WeakSet ? n.add(t) : n.set(t, e);
 import {
   f as _a,
@@ -19,9 +19,9 @@ import {
   g as Tn
 } from "./DqVoli-1.js";
 import {
-  e as le,
+  e as _e,
   i as Q,
-  h as ee,
+  h as te,
   g as rn,
   bM as ma,
   I as ha,
@@ -574,7 +574,7 @@ function qa(t, n) {
 }
 const Ka = "" + new URL("../assets/pawtect_wasm_bg.Ckfht_86.wasm", import.meta.url).href;
 var Xa = "2.0.0";
-const G = {
+const V = {
   Awesomium: "awesomium",
   Cef: "cef",
   CefSharp: "cefsharp",
@@ -616,7 +616,7 @@ function Ya(t, n) {
       botKind: s
     } : s && (i = {
       bot: !0,
-      botKind: G.Unknown
+      botKind: V.Unknown
     }), e[a] = i, i.bot && (r = i)
   }
   return [e, r]
@@ -647,9 +647,9 @@ function Za({
   appVersion: t
 }) {
   if (t.state !== 0) return !1;
-  if (/headless/i.test(t.value)) return G.HeadlessChrome;
-  if (/electron/i.test(t.value)) return G.Electron;
-  if (/slimerjs/i.test(t.value)) return G.SlimerJS
+  if (/headless/i.test(t.value)) return V.HeadlessChrome;
+  if (/electron/i.test(t.value)) return V.Electron;
+  if (/slimerjs/i.test(t.value)) return V.SlimerJS
 }
 
 function Zt(t, n) {
@@ -686,14 +686,14 @@ function eo({
   documentElementKeys: t
 }) {
   if (t.state !== 0) return !1;
-  if (Rn(t.value, "selenium", "webdriver", "driver")) return G.Selenium
+  if (Rn(t.value, "selenium", "webdriver", "driver")) return V.Selenium
 }
 
 function to({
   errorTrace: t
 }) {
   if (t.state !== 0) return !1;
-  if (/PhantomJS/i.test(t.value)) return G.PhantomJS
+  if (/PhantomJS/i.test(t.value)) return V.PhantomJS
 }
 
 function no({
@@ -709,19 +709,19 @@ function no({
 function ro({
   functionBind: t
 }) {
-  if (t.state === -2) return G.PhantomJS
+  if (t.state === -2) return V.PhantomJS
 }
 
 function ao({
   languages: t
 }) {
-  if (t.state === 0 && t.value.length === 0) return G.HeadlessChrome
+  if (t.state === 0 && t.value.length === 0) return V.HeadlessChrome
 }
 
 function oo({
   mimeTypesConsistent: t
 }) {
-  if (t.state === 0 && !t.value) return G.Unknown
+  if (t.state === 0 && !t.value) return V.Unknown
 }
 
 function io({
@@ -729,13 +729,13 @@ function io({
   browserKind: n
 }) {
   if (n.state !== 0 || n.value !== "chrome") return !1;
-  if (t.state === 0 && t.value) return G.HeadlessChrome
+  if (t.state === 0 && t.value) return V.HeadlessChrome
 }
 
 function so({
   pluginsArray: t
 }) {
-  if (t.state === 0 && !t.value) return G.HeadlessChrome
+  if (t.state === 0 && !t.value) return V.HeadlessChrome
 }
 
 function co({
@@ -744,7 +744,7 @@ function co({
   browserKind: e,
   browserEngineKind: r
 }) {
-  if (!(t.state !== 0 || n.state !== 0 || e.state !== 0 || r.state !== 0) && !(e.value !== "chrome" || n.value || r.value !== "chromium") && t.value === 0) return G.HeadlessChrome
+  if (!(t.state !== 0 || n.state !== 0 || e.state !== 0 || r.state !== 0) && !(e.value !== "chrome" || n.value || r.value !== "chromium") && t.value === 0) return V.HeadlessChrome
 }
 
 function uo({
@@ -752,7 +752,7 @@ function uo({
 }) {
   var n;
   if (t.state !== 0) return !1;
-  if (t.value.type === "renderer" || ((n = t.value.versions) === null || n === void 0 ? void 0 : n.electron) != null) return G.Electron
+  if (t.value.type === "renderer" || ((n = t.value.versions) === null || n === void 0 ? void 0 : n.electron) != null) return V.Electron
 }
 
 function lo({
@@ -760,23 +760,23 @@ function lo({
   browserKind: n
 }) {
   if (t.state !== 0 || n.state !== 0) return !1;
-  if ((n.value === "chrome" || n.value === "safari" || n.value === "opera" || n.value === "wechat") && t.value !== "20030107") return G.Unknown
+  if ((n.value === "chrome" || n.value === "safari" || n.value === "opera" || n.value === "wechat") && t.value !== "20030107") return V.Unknown
 }
 
 function _o({
   userAgent: t
 }) {
   if (t.state !== 0) return !1;
-  if (/PhantomJS/i.test(t.value)) return G.PhantomJS;
-  if (/Headless/i.test(t.value)) return G.HeadlessChrome;
-  if (/Electron/i.test(t.value)) return G.Electron;
-  if (/slimerjs/i.test(t.value)) return G.SlimerJS
+  if (/PhantomJS/i.test(t.value)) return V.PhantomJS;
+  if (/Headless/i.test(t.value)) return V.HeadlessChrome;
+  if (/Electron/i.test(t.value)) return V.Electron;
+  if (/slimerjs/i.test(t.value)) return V.SlimerJS
 }
 
 function fo({
   webDriver: t
 }) {
-  if (t.state === 0 && t.value) return G.HeadlessChrome
+  if (t.state === 0 && t.value) return V.HeadlessChrome
 }
 
 function mo({
@@ -787,7 +787,7 @@ function mo({
       vendor: n,
       renderer: e
     } = t.value;
-    if (n == "Brian Paul" && e == "Mesa OffScreen") return G.HeadlessChrome
+    if (n == "Brian Paul" && e == "Mesa OffScreen") return V.HeadlessChrome
   }
 }
 
@@ -795,7 +795,7 @@ function ho({
   windowExternal: t
 }) {
   if (t.state !== 0) return !1;
-  if (/Sequentum/i.test(t.value)) return G.Sequentum
+  if (/Sequentum/i.test(t.value)) return V.Sequentum
 }
 
 function po({
@@ -807,7 +807,7 @@ function po({
     outerWidth: e,
     outerHeight: r
   } = t.value;
-  if (n.value && e === 0 && r === 0) return G.HeadlessChrome
+  if (n.value && e === 0 && r === 0) return V.HeadlessChrome
 }
 
 function go({
@@ -1021,48 +1021,48 @@ function Uo() {
 
 function jo() {
   const t = {
-    [G.Awesomium]: {
+    [V.Awesomium]: {
       window: ["awesomium"]
     },
-    [G.Cef]: {
+    [V.Cef]: {
       window: ["RunPerfTest"]
     },
-    [G.CefSharp]: {
+    [V.CefSharp]: {
       window: ["CefSharp"]
     },
-    [G.CoachJS]: {
+    [V.CoachJS]: {
       window: ["emit"]
     },
-    [G.FMiner]: {
+    [V.FMiner]: {
       window: ["fmget_targets"]
     },
-    [G.Geb]: {
+    [V.Geb]: {
       window: ["geb"]
     },
-    [G.NightmareJS]: {
+    [V.NightmareJS]: {
       window: ["__nightmare", "nightmare"]
     },
-    [G.Phantomas]: {
+    [V.Phantomas]: {
       window: ["__phantomas"]
     },
-    [G.PhantomJS]: {
+    [V.PhantomJS]: {
       window: ["callPhantom", "_phantom"]
     },
-    [G.Rhino]: {
+    [V.Rhino]: {
       window: ["spawn"]
     },
-    [G.Selenium]: {
+    [V.Selenium]: {
       window: ["_Selenium_IDE_Recorder", "_selenium", "calledSelenium", /^([a-z]){3}_.*_(Array|Promise|Symbol)$/],
       document: ["__selenium_evaluate", "selenium-evaluate", "__selenium_unwrapped"]
     },
-    [G.WebDriverIO]: {
+    [V.WebDriverIO]: {
       window: ["wdioElectron"]
     },
-    [G.WebDriver]: {
+    [V.WebDriver]: {
       window: ["webdriver", "__webdriverFunc", "__lastWatirAlert", "__lastWatirConfirm", "__lastWatirPrompt", "_WEBDRIVER_ELEM_CACHE", "ChromeDriverw"],
       document: ["__webdriver_script_fn", "__driver_evaluate", "__webdriver_evaluate", "__fxdriver_evaluate", "__driver_unwrapped", "__webdriver_unwrapped", "__fxdriver_unwrapped", "__webdriver_script_fn", "__webdriver_script_func", "__webdriver_script_function", "$cdc_asdjflasutopfhvcZLmcf", "$cdc_asdjflasutopfhvcZLmcfl_", "$chrome_asyncScriptInfo", "__$webdriverAsyncExecutor"]
     },
-    [G.HeadlessChrome]: {
+    [V.HeadlessChrome]: {
       window: ["domAutomation", "domAutomationController"]
     }
   };
@@ -1246,7 +1246,7 @@ async function Zn(t, n = "SHA-256") {
     r = await crypto.subtle.digest(n, e);
   return Array.from(new Uint8Array(r)).map(o => o.toString(16).padStart(2, "0")).join("")
 }
-async function x(t, n = "SHA-256") {
+async function P(t, n = "SHA-256") {
   const e = new TextEncoder().encode(JSON.stringify(t)),
     r = await crypto.subtle.digest(n, e);
   return Pr(new Uint8Array(r))
@@ -1314,7 +1314,7 @@ function Jo() {
   }
 }
 const _n = Jo(),
-  ce = _n == 80,
+  le = _n == 80,
   Et = _n == 58,
   Ze = _n == 77,
   Qn = {
@@ -1322,7 +1322,7 @@ const _n = Jo(),
     58: "SpiderMonkey",
     77: "JavaScriptCore"
   } [_n] || null,
-  Hr = ce && "flat" in Array.prototype && !("ReportingObserver" in globalThis);
+  Hr = le && "flat" in Array.prototype && !("ReportingObserver" in globalThis);
 
 function Fr() {
   return "brave" in navigator && Object.getPrototypeOf(navigator.brave).constructor.name == "Brave" && navigator.brave.isBrave.toString() == "function isBrave() { [native code] }"
@@ -1461,8 +1461,8 @@ const {
   } else return "unknown"
 }, Vr = t => {
   const e = (/Mozilla\/5\.0 \((Macintosh; Intel Mac OS X 10_15_7|Windows NT 10\.0; Win64; x64|(X11; (CrOS|Linux) x86_64)|(Linux; Android 10(; K|)))\) AppleWebKit\/537\.36 \(KHTML, like Gecko\) Chrome\/\d+\.0\.0\.0( Mobile|) Safari\/537\.36/.exec(t) || [])[1];
-  return ce && !!e
-}, re = (t = 0) => new Promise(n => setTimeout(n, t)), Wr = [
+  return le && !!e
+}, oe = (t = 0) => new Promise(n => setTimeout(n, t)), Wr = [
   [128512],
   [9786],
   [129333, 8205, 9794, 65039],
@@ -1638,7 +1638,7 @@ function ni() {
 }
 const zr = ni(),
   {
-    documentLie: te
+    documentLie: ne
   } = zr,
   $r = `
 	height: 100vh;
@@ -1654,7 +1654,7 @@ function fn() {
 
 function ri(t) {
   try {
-    if (!ce) return t;
+    if (!le) return t;
     const n = t.document.createElement("div");
     n.setAttribute("id", fn()), n.setAttribute("style", $r), n.innerHTML = "<div><iframe></iframe></div>", t.document.body.appendChild(n);
     const e = [...[...n.childNodes][0].childNodes][0];
@@ -1785,12 +1785,12 @@ function ar({
       spawnErr: () => {
         Object.create(n).toString()
       },
-      withStack: f => ce && !at(f, ii)
+      withStack: f => le && !at(f, ii)
     }) || he({
       spawnErr: () => {
         Object.create(new Proxy(n, {})).toString()
       },
-      withStack: f => ce && !at(f, si)
+      withStack: f => le && !at(f, si)
     }),
     "failed at incompatible proxy error": he({
       spawnErr: () => {
@@ -1859,7 +1859,7 @@ function ar({
           Object.setPrototypeOf(p, i)
         }
       }),
-      "failed at instanceof check error": ce && (he({
+      "failed at instanceof check error": le && (he({
         spawnErr: () => {
           n instanceof n
         },
@@ -1871,7 +1871,7 @@ function ar({
         },
         withStack: g => !at(g, ui)
       })),
-      "failed at define properties": ce && ft && oi(() => {
+      "failed at define properties": le && ft && oi(() => {
         Object.defineProperty(n, "", {
           configurable: !0
         }).toString(), Reflect.deleteProperty(n, "")
@@ -1922,14 +1922,14 @@ function li(t) {
                   obj: null,
                   lieProps: e
                 }), y.lied) {
-                te(d, y.lieTypes), e[d] = y.lieTypes;
+                ne(d, y.lieTypes), e[d] = y.lieTypes;
                 return
               }
               return
             }
             if (u != "name" && u != "length" && u[0] !== u[0].toUpperCase()) {
               const A = ["failed descriptor.value undefined"];
-              te(d, A), e[d] = A;
+              ne(d, A), e[d] = A;
               return
             }
           } catch {}
@@ -1941,13 +1941,13 @@ function li(t) {
               obj: c,
               lieProps: e
             }), y.lied) {
-            te(d, y.lieTypes), e[d] = y.lieTypes;
+            ne(d, y.lieTypes), e[d] = y.lieTypes;
             return
           }
           return
         } catch {
           const y = "failed prototype test execution";
-          te(d, y), e[d] = [y];
+          ne(d, y), e[d] = [y];
           return
         }
       })
@@ -2187,7 +2187,7 @@ const wi = t => {
   },
   Zr = bi(),
   {
-    sendToTrash: se
+    sendToTrash: ue
   } = Zr,
   vi = () => ({
     trashBin: Zr.getBin()
@@ -2206,7 +2206,7 @@ function Ai(t) {
 }
 async function Ni() {
   try {
-    await re();
+    await oe();
     const t = H => {
         try {
           return H()
@@ -2223,8 +2223,8 @@ async function Ni() {
         }, 3e3);
         C.onerror = () => {
           clearTimeout(O), C.terminate(), H(null)
-        }, C.onmessage = ne => {
-          clearTimeout(O), C.terminate(), H(ne.data)
+        }, C.onmessage = re => {
+          clearTimeout(O), C.terminate(), H(re.data)
         }
       }),
       r = () => new Promise(H => {
@@ -2233,8 +2233,8 @@ async function Ni() {
         const O = setTimeout(() => {
           C.port.close(), H(null)
         }, 3e3);
-        C.port.start(), C.port.onmessage = ne => {
-          clearTimeout(O), C.port.close(), H(ne.data)
+        C.port.start(), C.port.onmessage = re => {
+          clearTimeout(O), C.port.close(), H(re.data)
         }
       }),
       a = H => (X(H), null),
@@ -2252,38 +2252,38 @@ async function Ni() {
       deviceMemory: f,
       hardwareConcurrency: d
     } = i, p = "does not match worker scope";
-    if (m != navigator.platform && te("Navigator.platform", p), l != navigator.userAgent && te("Navigator.userAgent", p), d && d != navigator.hardwareConcurrency && te("Navigator.hardwareConcurrency", p), f && f != navigator.deviceMemory && te("Navigator.deviceMemory", p), i.lies.proto) {
+    if (m != navigator.platform && ne("Navigator.platform", p), l != navigator.userAgent && ne("Navigator.userAgent", p), d && d != navigator.hardwareConcurrency && ne("Navigator.hardwareConcurrency", p), f && f != navigator.deviceMemory && ne("Navigator.deviceMemory", p), i.lies.proto) {
       const {
         proto: H
       } = i.lies;
       Object.keys(H).forEach(O => {
-        const ne = `WorkerGlobalScope.${O}`;
+        const re = `WorkerGlobalScope.${O}`;
         H[O].forEach(pe => {
-          te(ne, pe)
+          ne(re, pe)
         })
       })
     }
     const [g, y] = Ur(l, m);
-    g != y && (i.lied = !0, i.lies.os = `${y} platform and ${g} user agent do not match`, te("WorkerGlobalScope", i.lies.os));
+    g != y && (i.lied = !0, i.lies.os = `${y} platform and ${g} user agent do not match`, ne("WorkerGlobalScope", i.lies.os));
     const M = jr({
         ua: l,
         os: c,
         isBrave: !1
       }),
       v = /safari/i.test(M) || /iphone|ipad/i.test(l) ? "JavaScriptCore" : /firefox/i.test(l) ? "SpiderMonkey" : /chrome/i.test(l) ? "V8" : void 0;
-    v != Qn && (i.lied = !0, i.lies.engine = `${Qn} JS runtime and ${v} user agent do not match`, te("WorkerGlobalScope", i.lies.engine));
+    v != Qn && (i.lied = !0, i.lies.engine = `${Qn} JS runtime and ${v} user agent do not match`, ne("WorkerGlobalScope", i.lies.engine));
     const N = H => (/\d+/.exec(H) || [])[0],
       A = N(M),
       I = N(u ? u.uaFullVersion ?? "" : ""),
       T = I && A,
       w = I == A;
-    T && !w && (i.lied = !0, i.lies.version = `userAgentData version ${I} and user agent version ${A} do not match`, te("WorkerGlobalScope", i.lies.version));
-    const S = ce && CSS.supports("accent-color: initial");
+    T && !w && (i.lied = !0, i.lies.version = `userAgentData version ${I} and user agent version ${A} do not match`, ne("WorkerGlobalScope", i.lies.version));
+    const S = le && CSS.supports("accent-color: initial");
     ((H, C) => {
       if (!/windows|mac/i.test(H) || !(C != null && C.platformVersion)) return !1;
       if (C.platform == "macOS") return S ? /_/.test(C.platformVersion) : !1;
       const O = (/windows ([\d|\.]+)/i.exec(H) || [])[1],
-        ne = +O == 10,
+        re = +O == 10,
         {
           platformVersion: Ae
         } = C,
@@ -2297,8 +2297,8 @@ async function Ni() {
       const ve = Ae.split(".");
       if (ve.length != 3) return !0;
       const ge = +ve[0] > 0;
-      return ge && !ne || !ge && ne
-    })(i.device, u) && (i.lied = !0, i.lies.platformVersion = "platform version is fake", te("WorkerGlobalScope", i.lies.platformVersion)), i.userAgentVersion = A, i.userAgentDataVersion = I, i.userAgentEngine = v;
+      return ge && !re || !ge && re
+    })(i.device, u) && (i.lied = !0, i.lies.platformVersion = "platform version is fake", ne("WorkerGlobalScope", i.lies.platformVersion)), i.userAgentVersion = A, i.userAgentDataVersion = I, i.userAgentEngine = v;
     const B = {
       ...Jr(i.webglRenderer) || {},
       compressedGPU: Yr(i.webglRenderer)
@@ -2343,7 +2343,7 @@ async function Si() {
       } catch {}
     };
   try {
-    await re();
+    await oe();
     try {
       window.OfflineAudioContext = OfflineAudioContext || webkitOfflineAudioContext
     } catch {}
@@ -2365,7 +2365,7 @@ async function Si() {
     if (y > 1) {
       c = !0;
       const U = `expected -Infinity (silence) and got ${y} frequencies`;
-      te("AnalyserNode.getFloatFrequencyData", U)
+      ne("AnalyserNode.getFloatFrequencyData", U)
     }
     const M = {
         "AnalyserNode.channelCount": k(() => m.channelCount),
@@ -2400,15 +2400,15 @@ async function Si() {
       },
       v = U => new Promise(j => {
         const K = U.createAnalyser(),
-          oe = U.createOscillator(),
+          se = U.createOscillator(),
           ye = U.createDynamicsCompressor();
         try {
-          oe.type = "triangle", oe.frequency.value = 1e4, ye.threshold.value = -50, ye.knee.value = 40, ye.attack.value = 0
+          se.type = "triangle", se.frequency.value = 1e4, ye.threshold.value = -50, ye.knee.value = 40, ye.attack.value = 0
         } catch {}
-        return oe.connect(ye), ye.connect(K), ye.connect(U.destination), oe.start(0), U.startRendering(), U.addEventListener("complete", we => {
+        return se.connect(ye), ye.connect(K), ye.connect(U.destination), se.start(0), U.startRendering(), U.addEventListener("complete", we => {
           var _t;
           try {
-            ye.disconnect(), oe.disconnect();
+            ye.disconnect(), se.disconnect();
             const nt = new Float32Array(K.frequencyBinCount);
             (_t = K.getFloatFrequencyData) == null || _t.call(K, nt);
             const Xt = new Float32Array(K.fftSize);
@@ -2423,18 +2423,18 @@ async function Si() {
           }
         })
       });
-    await re();
+    await oe();
     const [N, A] = await Promise.all([v(u), Ti().catch(() => !1)]), {
       floatFrequencyData: I,
       floatTimeDomainData: T,
       buffer: w,
       compressorGainReduction: S
     } = N || {};
-    await re();
+    await oe();
     const E = (U, j, K) => {
-        const oe = Math.min(K, U.length),
+        const se = Math.min(K, U.length),
           ye = [];
-        for (let we = j; we < oe; we++) ye.push(U[we]);
+        for (let we = j; we < se; we++) ye.push(U[we]);
         return ye
       },
       D = U => {
@@ -2448,33 +2448,33 @@ async function Si() {
       C = new Float32Array(l);
     let O = new Float32Array;
     w && ((r = w.copyFromChannel) == null || r.call(w, C, 0), O = ((a = w.getChannelData) == null ? void 0 : a.call(w, 0)) || []);
-    const ne = E(C, 4500, 4600),
+    const re = E(C, 4500, 4600),
       Ae = E(O, 4500, 4600),
       pe = D(E(O, 4500, l));
-    A && (c = !0, te("AudioBuffer", "audio is fake"));
-    const Ne = "" + Ae == "" + ne,
+    A && (c = !0, ne("AudioBuffer", "audio is fake"));
+    const Ne = "" + Ae == "" + re,
       ve = "copyFromChannel" in AudioBuffer.prototype;
-    ve && !Ne && (c = !0, te("AudioBuffer", "getChannelData and copyFromChannel samples mismatch"));
+    ve && !Ne && (c = !0, ne("AudioBuffer", "getChannelData and copyFromChannel samples mismatch"));
     const ge = new Set(O).size;
     if (ge == l) {
       const U = `${ge} unique samples of ${l} is too high`;
-      se("AudioBuffer", U)
+      ue("AudioBuffer", U)
     }
     const ke = (U, j) => Math.floor(Math.random() * (j - U + 1)) + U,
       Se = (U, j, K) => {
         const {
-          length: oe
-        } = j, ye = 20, we = ke(275, oe - (ye + 1)), _t = we + ye / 2, nt = we + ye;
+          length: se
+        } = j, ye = 20, we = ke(275, se - (ye + 1)), _t = we + ye / 2, nt = we + ye;
         j.getChannelData(0)[we] = U, j.getChannelData(0)[_t] = U, j.getChannelData(0)[nt] = U, j.copyFromChannel(K, 0);
         const Xt = [j.getChannelData(0)[we] === 0 ? Math.random() : 0, j.getChannelData(0)[_t] === 0 ? Math.random() : 0, j.getChannelData(0)[nt] === 0 ? Math.random() : 0];
         return [...new Set([...j.getChannelData(0), ...K, ...Xt])].filter(ca => ca !== 0)
       },
       tt = (U, j, K) => {
         j.copyToChannel(K.map(() => U), 0);
-        const oe = j.getChannelData(0)[0];
-        return [...j.getChannelData(0)].map(we => we !== oe || !we ? Math.random() : we).filter(we => we !== oe)
+        const se = j.getChannelData(0)[0];
+        return [...j.getChannelData(0)].map(we => we !== se || !we ? Math.random() : we).filter(we => we !== se)
       };
-    let W = (() => {
+    let G = (() => {
       try {
         const j = [...new Set([...Se(ir, new AudioBuffer({
           length: 2e3,
@@ -2483,20 +2483,20 @@ async function Si() {
           length: 2e3,
           sampleRate: 44100
         }), new Float32Array(2e3))])];
-        return +(j.length !== 1 && j.reduce((K, oe) => K += +oe, 0))
+        return +(j.length !== 1 && j.reduce((K, se) => K += +se, 0))
       } catch {
         return 0
       }
     })();
-    if (!W) {
+    if (!G) {
       const U = Math.min(100, O.length),
         j = new Set;
       for (let K = 0; K < U; K++) {
-        const oe = O[K];
-        j.has(oe) || (j.add(oe), W += oe)
+        const se = O[K];
+        j.has(se) || (j.add(se), G += se)
       }
     }
-    const me = {
+    const ie = {
       "-20.538286209106445,164537.64796829224,502.5999283068122": [124.04347527516074],
       "-20.538288116455078,164537.64796829224,502.5999283068122": [124.04347527516074],
       "-20.538288116455078,164537.64795303345,502.5999283068122": [124.04347527516074, 124.04347518575378, 124.04347519320436, 124.04347523045726],
@@ -2545,19 +2545,19 @@ async function Si() {
       "-29.83786964416504,163209.17245483398,0": [35.10893232002854],
       "-29.83786964416504,163202.77336883545,0": [35.10893253237009]
     };
-    W && (c = !0, te("AudioBuffer", "sample noise detected"));
-    const ae = "" + [S, B, H],
-      de = me[ae];
-    return de && !de.includes(pe) && (De.AUDIO = !0, se("AudioBuffer", "suspicious frequency data")), {
+    G && (c = !0, ne("AudioBuffer", "sample noise detected"));
+    const ee = "" + [S, B, H],
+      ae = ie[ee];
+    return ae && !ae.includes(pe) && (De.AUDIO = !0, ue("AudioBuffer", "suspicious frequency data")), {
       totalUniqueSamples: ge,
       compressorGainReduction: S,
       floatFrequencyDataSum: B,
       floatTimeDomainDataSum: H,
       sampleSum: pe,
       binsSample: Ae,
-      copySample: ve ? ne : [void 0],
+      copySample: ve ? re : [void 0],
       values: M,
-      noise: W,
+      noise: G,
       baseLatency: Oi(),
       lied: c
     }
@@ -2744,7 +2744,7 @@ const Ri = () => {
 async function Ii() {
   let t, n;
   try {
-    await re();
+    await oe();
     const e = Le(),
       r = hn(),
       a = e["HTMLCanvasElement.toDataURL"],
@@ -2766,7 +2766,7 @@ async function Ii() {
       willReadFrequently: !0
     });
     if (!f) throw new Error("canvas context blocked");
-    await re();
+    await oe();
     const p = Ze ? 50 : 75;
     yn({
       canvas: t,
@@ -2780,27 +2780,27 @@ async function Ii() {
       rounds: 10
     });
     const g = t.toDataURL();
-    await re();
+    await oe();
     const y = Ri();
-    await re();
+    await oe();
     const M = Dn.replace(/!important/gm, "");
     f.font = `10px ${M}`;
     const v = new Set,
       N = Wr.reduce((C, O) => {
         const {
-          actualBoundingBoxAscent: ne,
+          actualBoundingBoxAscent: re,
           actualBoundingBoxDescent: Ae,
           actualBoundingBoxLeft: pe,
           actualBoundingBoxRight: Ne,
           fontBoundingBoxAscent: ve,
           fontBoundingBoxDescent: ge,
           width: ke
-        } = f.measureText(O) || {}, Se = [ne, Ae, pe, Ne, ve, ge, ke].join(",");
+        } = f.measureText(O) || {}, Se = [re, Ae, pe, Ne, ve, ge, ke].join(",");
         return v.has(Se) || (v.add(Se), C.add(O)), C
       }, new Set),
-      A = 1e-5 * [...v].map(C => C.split(",").reduce((O, ne) => O += +ne || 0, 0)).reduce((C, O) => C += O, 0),
+      A = 1e-5 * [...v].map(C => C.split(",").reduce((O, re) => O += +re || 0, 0)).reduce((C, O) => C += O, 0),
       I = 75;
-    await re(), yn({
+    await oe(), yn({
       canvas: t,
       context: f,
       area: {
@@ -2809,7 +2809,7 @@ async function Ii() {
       }
     });
     const T = t.toDataURL();
-    await re(), yn({
+    await oe(), yn({
       canvas: n,
       context: d,
       area: {
@@ -2822,27 +2822,27 @@ async function Ii() {
     const S = t.toDataURL();
     f.restore(), f.clearRect(0, 0, t.width, t.height), t.width = 50, t.height = 50, f.font = `35px ${M}`, f.fillText("👾", 0, 37);
     const E = t.toDataURL();
-    f.clearRect(0, 0, t.width, t.height), (y && y.pixels || Math.max(...f.getImageData(0, 0, 8, 8).data)) && (l = !0, te("CanvasRenderingContext2D.getImageData", "pixel data modified")), t.width = 2, t.height = 2, f.fillStyle = "#000", f.fillRect(0, 0, t.width, t.height), f.fillStyle = "#fff", f.fillRect(2, 2, 1, 1), f.beginPath(), f.arc(0, 0, 2, 0, 1, !0), f.closePath(), f.fill();
+    f.clearRect(0, 0, t.width, t.height), (y && y.pixels || Math.max(...f.getImageData(0, 0, 8, 8).data)) && (l = !0, ne("CanvasRenderingContext2D.getImageData", "pixel data modified")), t.width = 2, t.height = 2, f.fillStyle = "#000", f.fillRect(0, 0, t.width, t.height), f.fillStyle = "#fff", f.fillRect(2, 2, 1, 1), f.beginPath(), f.arc(0, 0, 2, 0, 1, !0), f.closePath(), f.fill();
     const D = f.getImageData(0, 0, 2, 2).data.join(""),
       B = {
         BLINK: ["255255255255178178178255246246246255555555255", "255255255255192192192255240240240255484848255", "255255255255177177177255246246246255535353255", "255255255255128128128255191191191255646464255", "255255255255178178178255247247247255565656255", "255255255255174174174255242242242255474747255", "255255255255229229229255127127127255686868255", "255255255255192192192255244244244255535353255"],
         GECKO: ["255255255255191191191255207207207255646464255", "255255255255192192192255240240240255484848255", "255255255255191191191255239239239255646464255", "255255255255191191191255223223223255606060255", "255255255255171171171255223223223255606060255", "255255255255188188188255245245245255525252255"],
         WEBKIT: ["255255255255185185185255233233233255474747255", "255255255255185185185255229229229255474747255", "255255255255185185185255218218218255474747255", "255255255255192192192255240240240255484848255", "255255255255178178178255247247247255565656255", "255255255255178178178255247247247255565656255", "255255255255192192192255240240240255484848255", "255255255255186186186255218218218255464646255"]
       };
-    Be.imageDataLowEntropy = D, (ce && !B.BLINK.includes(D) || Et && !B.GECKO.includes(D) || Ze && !B.WEBKIT.includes(D)) && (De.CANVAS = !0), De.CANVAS && se("CanvasRenderingContext2D.getImageData", "suspicious pixel data");
+    Be.imageDataLowEntropy = D, (le && !B.BLINK.includes(D) || Et && !B.GECKO.includes(D) || Ze && !B.WEBKIT.includes(D)) && (De.CANVAS = !0), De.CANVAS && ue("CanvasRenderingContext2D.getImageData", "suspicious pixel data");
     const H = C => {
       const O = Se => Se % 1 !== 0,
         {
-          actualBoundingBoxAscent: ne,
+          actualBoundingBoxAscent: re,
           actualBoundingBoxDescent: Ae,
           actualBoundingBoxLeft: pe,
           actualBoundingBoxRight: Ne,
           fontBoundingBoxAscent: ve,
           fontBoundingBoxDescent: ge
         } = C.measureText("") || {};
-      return [ne, Ae, pe, Ne, ve, ge].find(Se => O(Se || 0))
+      return [re, Ae, pe, Ne, ve, ge].find(Se => O(Se || 0))
     };
-    return await re(), H(f) && (c = !0, l = !0, te("CanvasRenderingContext2D.measureText", "metric noise detected")), {
+    return await oe(), H(f) && (c = !0, l = !0, ne("CanvasRenderingContext2D.measureText", "metric noise detected")), {
       dataURI: g,
       paintURI: T,
       paintCpuURI: w,
@@ -3472,7 +3472,7 @@ async function Ji() {
       return c.filter(u => a.includes(u)).length == c.length ? [...s, i] : s
     }, []);
   try {
-    await re();
+    await oe();
     const a = hn(),
       o = Le(),
       s = a && a.document && a.document.body ? a.document : document,
@@ -3487,7 +3487,7 @@ async function Ji() {
       id: i,
       emojis: Wr
     }) || {}, f = await n(Yi), d = e(f), p = r(f), g = o["FontFace.load"] || o["FontFace.family"] || o["FontFace.status"] || o["String.fromCodePoint"] || o["CSSStyleDeclaration.setProperty"] || o["CSS2Properties.setProperty"] || !1;
-    return Gi(an, f) && (De.FONTS = !0, Be.FontOsIsBad = !0, se("platform", `${an} system and fonts are uncommon`)), {
+    return Gi(an, f) && (De.FONTS = !0, Be.FontOsIsBad = !0, ue("platform", `${an} system and fonts are uncommon`)), {
       fontFaceLoadFonts: f,
       platformVersion: d,
       apps: p,
@@ -3505,12 +3505,12 @@ const z = t => {
     return ("0000000" + (n.split("").reduce((r, a, o) => Math.imul(31, r) + n.charCodeAt(o) | 0, 2166136261) >>> 0).toString(16)).substr(-8)
   },
   Zi = String.fromCharCode(Math.random() * 26 + 97) + Math.random().toString(36).slice(-7);
-var fe = (t => (t.WINDOWS = "Windows", t.MAC = "Mac", t.LINUX = "Linux", t.ANDROID = "Android", t.CHROME_OS = "Chrome OS", t))(fe || {});
+var me = (t => (t.WINDOWS = "Windows", t.MAC = "Mac", t.LINUX = "Linux", t.ANDROID = "Android", t.CHROME_OS = "Chrome OS", t))(me || {});
 const Qi = ["caption", "icon", "menu", "message-box", "small-caption", "status-bar"];
 
 function es() {
   var S;
-  if (!ce) return [];
+  if (!le) return [];
   const t = "getVideoPlaybackQuality" in HTMLVideoElement.prototype,
     n = CSS.supports("color-scheme: initial"),
     e = CSS.supports("appearance: initial"),
@@ -3531,11 +3531,11 @@ function es() {
     M = "setAppBadge" in Navigator.prototype,
     v = (E, D) => E ? [D] : [],
     N = {
-      [fe.ANDROID]: [...v(a, i), ...v(e, l), ...v(t, u), c, ...v(s, !m), ...v(r, !f), ...v(o, !d), ...v(o, !p), !g, y, ...v(n, !M)],
-      [fe.CHROME_OS]: [...v(a, i), ...v(e, !l), ...v(t, !u), c, ...v(s, m), ...v(r, f), ...v(o, d), ...v(o, p), g, y || !y, ...v(n, !M)],
-      [fe.WINDOWS]: [...v(a, !i), ...v(e, !l), ...v(t, !u), !c, ...v(s, m), ...v(r, f), ...v(o, d), ...v(o, p), g, y || !y, ...v(n, M)],
-      [fe.MAC]: [...v(a, i), ...v(e, !l), ...v(t, !u), !c, ...v(s, m), ...v(r, f), ...v(o, d), ...v(o, p), g, !y, ...v(n, M)],
-      [fe.LINUX]: [...v(a, !i), ...v(e, !l), ...v(t, !u), !c, ...v(s, m), ...v(r, f), ...v(o, d), ...v(o, p), g, !y || !y, ...v(n, !M)]
+      [me.ANDROID]: [...v(a, i), ...v(e, l), ...v(t, u), c, ...v(s, !m), ...v(r, !f), ...v(o, !d), ...v(o, !p), !g, y, ...v(n, !M)],
+      [me.CHROME_OS]: [...v(a, i), ...v(e, !l), ...v(t, !u), c, ...v(s, m), ...v(r, f), ...v(o, d), ...v(o, p), g, y || !y, ...v(n, !M)],
+      [me.WINDOWS]: [...v(a, !i), ...v(e, !l), ...v(t, !u), !c, ...v(s, m), ...v(r, f), ...v(o, d), ...v(o, p), g, y || !y, ...v(n, M)],
+      [me.MAC]: [...v(a, i), ...v(e, !l), ...v(t, !u), !c, ...v(s, m), ...v(r, f), ...v(o, d), ...v(o, p), g, !y, ...v(n, M)],
+      [me.LINUX]: [...v(a, !i), ...v(e, !l), ...v(t, !u), !c, ...v(s, m), ...v(r, f), ...v(o, d), ...v(o, p), g, !y || !y, ...v(n, !M)]
     },
     A = {
       noContentIndex: e && !l,
@@ -3552,19 +3552,19 @@ function es() {
   return [I, w, A]
 }
 const cr = {
-  "-apple-system": fe.MAC,
-  "Segoe UI": fe.WINDOWS,
-  Tahoma: fe.WINDOWS,
-  "Yu Gothic UI": fe.WINDOWS,
-  "Microsoft JhengHei UI": fe.WINDOWS,
-  "Microsoft YaHei UI": fe.WINDOWS,
-  "Meiryo UI": fe.WINDOWS,
-  Cantarell: fe.LINUX,
-  Ubuntu: fe.LINUX,
-  Sans: fe.LINUX,
-  "sans-serif": fe.LINUX,
-  "Fira Sans": fe.LINUX,
-  Roboto: fe.ANDROID
+  "-apple-system": me.MAC,
+  "Segoe UI": me.WINDOWS,
+  Tahoma: me.WINDOWS,
+  "Yu Gothic UI": me.WINDOWS,
+  "Microsoft JhengHei UI": me.WINDOWS,
+  "Microsoft YaHei UI": me.WINDOWS,
+  "Meiryo UI": me.WINDOWS,
+  Cantarell: me.LINUX,
+  Ubuntu: me.LINUX,
+  Sans: me.LINUX,
+  "sans-serif": me.LINUX,
+  "Fira Sans": me.LINUX,
+  Roboto: me.ANDROID
 };
 
 function ts() {
@@ -3587,7 +3587,7 @@ async function ns({
 }) {
   var n, e;
   try {
-    await re();
+    await oe();
     const r = Le(),
       a = Xr(),
       o = Object.keys({
@@ -3596,16 +3596,16 @@ async function ns({
       s = ts(),
       [i, c, l] = es(),
       u = {
-        chromium: ce,
+        chromium: le,
         likeHeadless: {
-          noChrome: ce && !("chrome" in window),
-          hasPermissionsBug: ce && "permissions" in navigator && await (async () => (await navigator.permissions.query({
+          noChrome: le && !("chrome" in window),
+          hasPermissionsBug: le && "permissions" in navigator && await (async () => (await navigator.permissions.query({
             name: "notifications"
           })).state == "prompt" && "Notification" in window && Notification.permission === "denied")(),
-          noPlugins: ce && navigator.plugins.length === 0,
-          noMimeTypes: ce && o.length === 0,
-          notificationIsDenied: ce && "Notification" in window && Notification.permission == "denied",
-          hasKnownBgColor: ce && (() => {
+          noPlugins: le && navigator.plugins.length === 0,
+          noMimeTypes: le && o.length === 0,
+          notificationIsDenied: le && "Notification" in window && Notification.permission == "denied",
+          hasKnownBgColor: le && (() => {
             let A = a;
             if (a || (A = document.createElement("div"), document.body.appendChild(A)), !A) return !1;
             A.setAttribute("style", "background-color: ActiveText");
@@ -3620,7 +3620,7 @@ async function ns({
           noTaskbar: screen.height === screen.availHeight && screen.width === screen.availWidth,
           hasVvpScreenRes: innerWidth === screen.width && outerHeight === screen.height || "visualViewport" in window && visualViewport !== null && visualViewport.width === screen.width && visualViewport.height === screen.height,
           hasSwiftShader: /SwiftShader/.test(""),
-          noWebShare: ce && CSS.supports("accent-color: initial") && (!("share" in navigator) || !("canShare" in navigator)),
+          noWebShare: le && CSS.supports("accent-color: initial") && (!("share" in navigator) || !("canShare" in navigator)),
           noContentIndex: !!(l != null && l.noContentIndex),
           noContactsManager: !!(l != null && l.noContactsManager),
           noDownlinkMax: !!(l != null && l.noDownlinkMax)
@@ -3697,7 +3697,7 @@ async function rs() {
     return [...new Set(r)]
   };
   try {
-    await re();
+    await oe();
     const n = Le(),
       e = n["Intl.Collator.resolvedOptions"] || n["Intl.DateTimeFormat.resolvedOptions"] || n["Intl.DisplayNames.resolvedOptions"] || n["Intl.ListFormat.resolvedOptions"] || n["Intl.NumberFormat.resolvedOptions"] || n["Intl.PluralRules.resolvedOptions"] || n["Intl.RelativeTimeFormat.resolvedOptions"] || !1,
       r = be(() => new Intl.DateTimeFormat(void 0, {
@@ -3749,7 +3749,7 @@ function as() {
         l = Math[i],
         u = l(...c),
         m = l(...c);
-      (isNaN(u) && isNaN(m) ? !0 : u == m) || (e = !0, te(`Math.${i}`, "expected x and got y"))
+      (isNaN(u) && isNaN(m) ? !0 : u == m) || (e = !0, ne(`Math.${i}`, "expected x and got y"))
     });
     const r = .123,
       a = 5860847362277284e23,
@@ -3917,7 +3917,7 @@ async function is() {
 }
 async function ss(t) {
   try {
-    await re();
+    await oe();
     const n = Le();
     let e = n["Navigator.appVersion"] || n["Navigator.deviceMemory"] || n["Navigator.doNotTrack"] || n["Navigator.hardwareConcurrency"] || n["Navigator.language"] || n["Navigator.languages"] || n["Navigator.maxTouchPoints"] || n["Navigator.oscpu"] || n["Navigator.platform"] || n["Navigator.userAgent"] || n["Navigator.vendor"] || n["Navigator.plugins"] || n["Navigator.mimeTypes"] || !1;
     const r = "chrome" in window ? navigator.userAgent.includes(navigator.appVersion) : !0,
@@ -3936,7 +3936,7 @@ async function ss(t) {
           const {
             platform: u
           } = navigator, m = ["win", "linux", "mac", "arm", "pike", "linux", "iphone", "ipad", "ipod", "android", "x11"], f = typeof u == "string" ? u.toLowerCase() : "";
-          return !!f && m.some(p => f.includes(p)) || se("platform", `${u} is unusual`), an !== er && (e = !0, te("Navigator.platform", `${er} platform and ${an} user agent do not match`)), t && u != t.platform && (e = !0), u
+          return !!f && m.some(p => f.includes(p)) || ue("platform", `${u} is unusual`), an !== er && (e = !0, ne("Navigator.platform", `${er} platform and ${an} user agent do not match`)), t && u != t.platform && (e = !0), u
         }),
         system: k(() => In(navigator.userAgent), "userAgent system failed"),
         device: k(() => Gr({
@@ -3946,14 +3946,14 @@ async function ss(t) {
           const {
             userAgent: u
           } = navigator;
-          return r || se("userAgent", `${u} does not match appVersion`), /\s{2,}|^\s|\s$/g.test(u) && se("userAgent", "extra spaces detected"), Qt(u).length && se("userAgent is gibberish", u), t && u != t.userAgent && (e = !0), u.trim().replace(/\s{2,}/, " ")
+          return r || ue("userAgent", `${u} does not match appVersion`), /\s{2,}|^\s|\s$/g.test(u) && ue("userAgent", "extra spaces detected"), Qt(u).length && ue("userAgent is gibberish", u), t && u != t.userAgent && (e = !0), u.trim().replace(/\s{2,}/, " ")
         }, "userAgent failed"),
         uaPostReduction: Vr((navigator || {}).userAgent),
         appVersion: k(() => {
           const {
             appVersion: u
           } = navigator;
-          return r || se("appVersion", `${u} does not match userAgent`), "appVersion" in navigator && !u && se("appVersion", "Living Standard property returned falsy value"), /\s{2,}|^\s|\s$/g.test(u) && se("appVersion", "extra spaces detected"), u.trim().replace(/\s{2,}/, " ")
+          return r || ue("appVersion", `${u} does not match userAgent`), "appVersion" in navigator && !u && ue("appVersion", "Living Standard property returned falsy value"), /\s{2,}|^\s|\s$/g.test(u) && ue("appVersion", "extra spaces detected"), u.trim().replace(/\s{2,}/, " ")
         }, "appVersion failed"),
         deviceMemory: k(() => {
           var p;
@@ -3970,10 +3970,10 @@ async function ss(t) {
             8: !0,
             16: !0,
             32: !0
-          })[String(u)] || se("deviceMemory", `${u} is not a valid value [0.25, 0.5, 1, 2, 4, 8, 16, 32]`);
+          })[String(u)] || ue("deviceMemory", `${u} is not a valid value [0.25, 0.5, 1, 2, 4, 8, 16, 32]`);
           const f = ((p = performance == null ? void 0 : performance.memory) == null ? void 0 : p.jsHeapSizeLimit) || null,
             d = f ? +(f / 1073741824).toFixed(1) : 0;
-          return d > u && se("deviceMemory", `available memory ${d}GB is greater than device memory ${u}GB`), t && u !== t.deviceMemory && (e = !0), u
+          return d > u && ue("deviceMemory", `available memory ${d}GB is greater than device memory ${u}GB`), t && u !== t.deviceMemory && (e = !0), u
         }, "deviceMemory failed"),
         doNotTrack: k(() => {
           const {
@@ -3989,7 +3989,7 @@ async function ss(t) {
             unspecified: !0,
             null: !0,
             undefined: !0
-          } [String(u)] || se("doNotTrack - unusual result", u), u
+          } [String(u)] || ue("doNotTrack - unusual result", u), u
         }, "doNotTrack failed"),
         globalPrivacyControl: k(() => {
           if (!("globalPrivacyControl" in navigator)) return;
@@ -4006,7 +4006,7 @@ async function ss(t) {
             unspecified: !0,
             null: !0,
             undefined: !0
-          } [String(u)] || se("globalPrivacyControl - unusual result", u), u
+          } [String(u)] || ue("globalPrivacyControl - unusual result", u), u
         }, "globalPrivacyControl failed"),
         hardwareConcurrency: k(() => {
           if (!("hardwareConcurrency" in navigator)) return;
@@ -4022,10 +4022,10 @@ async function ss(t) {
           } = navigator;
           if (u && m) {
             const f = (/^.{0,2}/g.exec(u) ?? [""])[0];
-            if ((/^.{0,2}/g.exec(m[0]) ?? [""])[0] != f && se("language/languages", `${[u,m].join(" ")} mismatch`), t) {
-              u != t.language && (e = !0, te("Navigator.language", `${u} does not match worker scope`));
+            if ((/^.{0,2}/g.exec(m[0]) ?? [""])[0] != f && ue("language/languages", `${[u,m].join(" ")} mismatch`), t) {
+              u != t.language && (e = !0, ne("Navigator.language", `${u} does not match worker scope`));
               const p = m.join(",");
-              p !== t.languages.join(",") && (e = !0, te("Navigator.languages", `${p} does not match worker scope`))
+              p !== t.languages.join(",") && (e = !0, ne("Navigator.languages", `${p} does not match worker scope`))
             }
             return `${m.join(", ")} (${u})`
           }
@@ -4056,7 +4056,7 @@ async function ss(t) {
               name: d,
               description: p
             } = f, g = Qt(d), y = Qt(p);
-            g.length && se("plugin name is gibberish", d), y.length && se("plugin description is gibberish", p)
+            g.length && ue("plugin name is gibberish", d), y.length && ue("plugin description is gibberish", p)
           }), m
         }, "plugins failed"),
         properties: k(() => Object.keys(Object.getPrototypeOf(navigator)), "navigator keys failed"),
@@ -4124,7 +4124,7 @@ async function ss(t) {
           return g ? p(g) : m.requestAdapterInfo ? m.requestAdapterInfo().then(p) : void 0
         })
       }, "webgpu failed");
-    return await re(), Promise.all([a, s(), i(), c(), l()]).then(([u, m, f, d, p]) => ({
+    return await oe(), Promise.all([a, s(), i(), c(), l()]).then(([u, m, f, d, p]) => ({
       ...o,
       userAgentParsed: u,
       userAgentData: m,
@@ -4180,12 +4180,12 @@ function ls() {
     return
   }
 }
-const ue = "c767712b",
+const de = "c767712b",
   ds = {
     noscript: {
       contentDocumentHash: ["0b637a33", "37e2f32e", "318390d1"],
       contentWindowHash: ["0b637a33", "37e2f32e", "318390d1"],
-      getContextHash: ["0b637a33", "081d6d1b", ue]
+      getContextHash: ["0b637a33", "081d6d1b", de]
     },
     trace: {
       contentDocumentHash: ["ca9d9c2f"],
@@ -4193,8 +4193,8 @@ const ue = "c767712b",
       createElementHash: ["77dea834"],
       getElementByIdHash: ["77dea834"],
       getImageDataHash: ["77dea834"],
-      toBlobHash: ["77dea834", ue],
-      toDataURLHash: ["77dea834", ue]
+      toBlobHash: ["77dea834", de],
+      toDataURLHash: ["77dea834", de]
     },
     cydec: {
       contentDocumentHash: ["945b0c78", "15771efa", "403a1a21", "55e9b959"],
@@ -4209,9 +4209,9 @@ const ue = "c767712b",
       contentDocumentHash: ["98ec858e", "dbbaf31f"],
       contentWindowHash: ["98ec858e", "dbbaf31f"],
       appendHash: ["98ec858e", "dbbaf31f"],
-      getImageDataHash: ["98ec858e", "a2971888", "dbbaf31f", ue],
-      toBlobHash: ["9f1c3dfe", "a2971888", "dbbaf31f", ue],
-      toDataURLHash: ["98ec858e", "a2971888", "dbbaf31f", ue]
+      getImageDataHash: ["98ec858e", "a2971888", "dbbaf31f", de],
+      toBlobHash: ["9f1c3dfe", "a2971888", "dbbaf31f", de],
+      toDataURLHash: ["98ec858e", "a2971888", "dbbaf31f", de]
     },
     chameleon: {
       appendHash: ["77dea834"],
@@ -4225,15 +4225,15 @@ const ue = "c767712b",
       replaceChildHash: ["77dea834"]
     },
     duckduckgo: {
-      toDataURLHash: ["fd00bf5d", "8ee7df22", ue],
-      toBlobHash: ["fd00bf5d", "8ee7df22", ue],
-      getImageDataHash: ["fd00bf5d", "8ee7df22", ue],
-      getByteFrequencyDataHash: ["fd00bf5d", "8ee7df22", ue],
-      getByteTimeDomainDataHash: ["fd00bf5d", "8ee7df22", ue],
-      getFloatFrequencyDataHash: ["fd00bf5d", "8ee7df22", ue],
-      getFloatTimeDomainDataHash: ["fd00bf5d", "8ee7df22", ue],
-      copyFromChannelHash: ["fd00bf5d", "8ee7df22", ue],
-      getChannelDataHash: ["fd00bf5d", "8ee7df22", ue],
+      toDataURLHash: ["fd00bf5d", "8ee7df22", de],
+      toBlobHash: ["fd00bf5d", "8ee7df22", de],
+      getImageDataHash: ["fd00bf5d", "8ee7df22", de],
+      getByteFrequencyDataHash: ["fd00bf5d", "8ee7df22", de],
+      getByteTimeDomainDataHash: ["fd00bf5d", "8ee7df22", de],
+      getFloatFrequencyDataHash: ["fd00bf5d", "8ee7df22", de],
+      getFloatTimeDomainDataHash: ["fd00bf5d", "8ee7df22", de],
+      copyFromChannelHash: ["fd00bf5d", "8ee7df22", de],
+      getChannelDataHash: ["fd00bf5d", "8ee7df22", de],
       hardwareConcurrencyHash: ["dfd41ab4"],
       availHeightHash: ["dfd41ab4"],
       availLeftHash: ["dfd41ab4"],
@@ -4278,9 +4278,9 @@ const ue = "c767712b",
       appendChildHash: ["55e9b959"],
       insertBeforeHash: ["55e9b959"],
       replaceChildHash: ["55e9b959"],
-      getContextHash: ["55e9b959", ue],
-      toDataURLHash: ["55e9b959", ue],
-      toBlobHash: ["55e9b959", ue],
+      getContextHash: ["55e9b959", de],
+      toDataURLHash: ["55e9b959", de],
+      toBlobHash: ["55e9b959", de],
       getImageDataHash: ["55e9b959"],
       hardwareConcurrencyHash: ["efbd4cf9", "a63491fb", "b011fd1c", "194ecf17", "55e9b959"]
     },
@@ -4309,7 +4309,7 @@ const ue = "c767712b",
     privacybadger: ur,
     privacypossum: bn,
     jshelter: Me,
-    puppeteerExtra: _e,
+    puppeteerExtra: fe,
     fakeBrowser: Oe
   } = ds;
 
@@ -4322,9 +4322,9 @@ function _s(t, n) {
     if (n >= 7 && Ee.toDataURLHash.includes(t.toDataURLHash) && Ee.toBlobHash.includes(t.toBlobHash) && Ee.getImageDataHash.includes(t.getImageDataHash) && Ee.getByteFrequencyDataHash.includes(t.getByteFrequencyDataHash) && Ee.getByteTimeDomainDataHash.includes(t.getByteTimeDomainDataHash) && Ee.getFloatFrequencyDataHash.includes(t.getFloatFrequencyDataHash) && Ee.getFloatTimeDomainDataHash.includes(t.getFloatTimeDomainDataHash) && Ee.copyFromChannelHash.includes(t.copyFromChannelHash) && Ee.getChannelDataHash.includes(t.getChannelDataHash) && Ee.hardwareConcurrencyHash.includes(t.hardwareConcurrencyHash) && Ee.availHeightHash.includes(t.availHeightHash) && Ee.availLeftHash.includes(t.availLeftHash) && Ee.availTopHash.includes(t.availTopHash) && Ee.availWidthHash.includes(t.availWidthHash) && Ee.colorDepthHash.includes(t.colorDepthHash) && Ee.pixelDepthHash.includes(t.pixelDepthHash)) return "DuckDuckGo";
     if (n >= 2 && ur.getImageDataHash.includes(t.getImageDataHash) && ur.toDataURLHash.includes(t.toDataURLHash)) return "Privacy Badger";
     if (n >= 3 && bn.hardwareConcurrencyHash.includes(t.hardwareConcurrencyHash) && bn.availWidthHash.includes(t.availWidthHash) && bn.colorDepthHash.includes(t.colorDepthHash)) return "Privacy Possum";
-    if (n >= 2 && wn.contentDocumentHash.includes(t.contentDocumentHash) && wn.contentWindowHash.includes(t.contentDocumentHash) && wn.getContextHash.includes(t.getContextHash) && t.hardwareConcurrencyHash == ue) return "NoScript";
+    if (n >= 2 && wn.contentDocumentHash.includes(t.contentDocumentHash) && wn.contentWindowHash.includes(t.contentDocumentHash) && wn.getContextHash.includes(t.getContextHash) && t.hardwareConcurrencyHash == de) return "NoScript";
     if (n >= 14 && Me.contentDocumentHash.includes(t.contentDocumentHash) && Me.contentWindowHash.includes(t.contentDocumentHash) && Me.appendHash.includes(t.appendHash) && Me.insertAdjacentElementHash.includes(t.insertAdjacentElementHash) && Me.insertAdjacentHTMLHash.includes(t.insertAdjacentHTMLHash) && Me.prependHash.includes(t.prependHash) && Me.replaceWithHash.includes(t.replaceWithHash) && Me.appendChildHash.includes(t.appendChildHash) && Me.insertBeforeHash.includes(t.insertBeforeHash) && Me.replaceChildHash.includes(t.replaceChildHash) && Me.hardwareConcurrencyHash.includes(t.hardwareConcurrencyHash)) return "JShelter";
-    if (n >= 13 && _e.contentDocumentHash.includes(t.contentDocumentHash) && _e.contentWindowHash.includes(t.contentWindowHash) && _e.createElementHash.includes(t.createElementHash) && _e.getElementByIdHash.includes(t.getElementByIdHash) && _e.appendHash.includes(t.appendHash) && _e.insertAdjacentElementHash.includes(t.insertAdjacentElementHash) && _e.insertAdjacentHTMLHash.includes(t.insertAdjacentHTMLHash) && _e.insertAdjacentTextHash.includes(t.insertAdjacentTextHash) && _e.prependHash.includes(t.prependHash) && _e.replaceWithHash.includes(t.replaceWithHash) && _e.appendChildHash.includes(t.appendChildHash) && _e.insertBeforeHash.includes(t.insertBeforeHash) && _e.contentDocumentHash.includes(t.contentDocumentHash) && _e.replaceChildHash.includes(t.replaceChildHash) && _e.getContextHash.includes(t.getContextHash) && _e.toDataURLHash.includes(t.toDataURLHash) && _e.toBlobHash.includes(t.toBlobHash) && _e.getImageDataHash.includes(t.getImageDataHash) && _e.hardwareConcurrencyHash.includes(t.hardwareConcurrencyHash)) return "puppeteer-extra";
+    if (n >= 13 && fe.contentDocumentHash.includes(t.contentDocumentHash) && fe.contentWindowHash.includes(t.contentWindowHash) && fe.createElementHash.includes(t.createElementHash) && fe.getElementByIdHash.includes(t.getElementByIdHash) && fe.appendHash.includes(t.appendHash) && fe.insertAdjacentElementHash.includes(t.insertAdjacentElementHash) && fe.insertAdjacentHTMLHash.includes(t.insertAdjacentHTMLHash) && fe.insertAdjacentTextHash.includes(t.insertAdjacentTextHash) && fe.prependHash.includes(t.prependHash) && fe.replaceWithHash.includes(t.replaceWithHash) && fe.appendChildHash.includes(t.appendChildHash) && fe.insertBeforeHash.includes(t.insertBeforeHash) && fe.contentDocumentHash.includes(t.contentDocumentHash) && fe.replaceChildHash.includes(t.replaceChildHash) && fe.getContextHash.includes(t.getContextHash) && fe.toDataURLHash.includes(t.toDataURLHash) && fe.toBlobHash.includes(t.toBlobHash) && fe.getImageDataHash.includes(t.getImageDataHash) && fe.hardwareConcurrencyHash.includes(t.hardwareConcurrencyHash)) return "puppeteer-extra";
     if (n >= 12 && Oe.appendChildHash.includes(t.appendChildHash) && Oe.getContextHash.includes(t.getContextHash) && Oe.toDataURLHash.includes(t.toDataURLHash) && Oe.toBlobHash.includes(t.toBlobHash) && Oe.getImageDataHash.includes(t.getImageDataHash) && Oe.hardwareConcurrencyHash.includes(t.hardwareConcurrencyHash) && Oe.availHeightHash.includes(t.availHeightHash) && Oe.availLeftHash.includes(t.availLeftHash) && Oe.availTopHash.includes(t.availTopHash) && Oe.availWidthHash.includes(t.availWidthHash) && Oe.colorDepthHash.includes(t.colorDepthHash) && Oe.pixelDepthHash.includes(t.pixelDepthHash)) return "FakeBrowser"
   }
 }
@@ -4351,16 +4351,16 @@ async function fs() {
 }
 async function ms() {
   try {
-    await re();
+    await oe();
     const t = hi(),
       n = {
         privacy: void 0,
         security: void 0,
         mode: void 0,
         extension: void 0,
-        engine: ce ? "Blink" : Et ? "Gecko" : ""
+        engine: le ? "Blink" : Et ? "Gecko" : ""
       },
-      [e, r] = await Promise.all([Fr(), ce ? void 0 : fs()]);
+      [e, r] = await Promise.all([Fr(), le ? void 0 : fs()]);
     if (e) {
       const c = Zo();
       n.privacy = "Brave", n.security = {
@@ -4392,7 +4392,7 @@ async function ms() {
       }, n.mode = m ? f ? "safer" : "standard" : "resistFingerprinting"
     }
     const o = Object.keys(t).length;
-    await re();
+    await oe();
     const s = {
         contentDocumentHash: z(t["HTMLIFrameElement.contentDocument"]),
         contentWindowHash: z(t["HTMLIFrameElement.contentWindow"]),
@@ -4426,7 +4426,7 @@ async function ms() {
         pixelDepthHash: z(t["Screen.pixelDepth"])
       },
       i = {};
-    for (const [c, l] of Object.entries(s)) l !== ue && (i[c.slice(0, -4)] = l);
+    for (const [c, l] of Object.entries(s)) l !== de && (i[c.slice(0, -4)] = l);
     return n.extensionHashPattern = i, n.extension = _s(s, o), n
   } catch (t) {
     X(t);
@@ -4460,7 +4460,7 @@ async function ps() {
       },
       u = window.devicePixelRatio || 0,
       m = !l(`(resolution: ${u}dppx)`);
-    !Ze && m && (n = !0, te("Window.devicePixelRatio", "lied dpr"));
+    !Ze && m && (n = !0, ne("Window.devicePixelRatio", "lied dpr"));
     const f = !(r - o || a - s);
     return r > 800 && f && (De.SCREEN = !0), {
       width: r,
@@ -4480,7 +4480,7 @@ async function ps() {
 async function gs() {
   return await new Promise(t => setTimeout(() => t(void 0), 50)), new Promise(async t => {
     try {
-      await re();
+      await oe();
       const n = "speechSynthesis" in window;
       if (n && speechSynthesis.getVoices(), !n) return t(null);
       const e = !!Le()["SpeechSynthesis.getVoices"],
@@ -4514,7 +4514,7 @@ async function gs() {
             } = N;
             m.has(I) || (m.add(I), u.push(I)), N.default && N.localService && (d = N, p++)
           }
-          if (ce && !f) return;
+          if (le && !f) return;
           r();
           let g = "",
             y = "";
@@ -4692,7 +4692,7 @@ async function As() {
   var a;
   let t, n, e, r;
   try {
-    await re();
+    await oe();
     const o = Le(),
       s = hn(),
       i = o["HTMLCanvasElement.toDataURL"],
@@ -4708,58 +4708,58 @@ async function As() {
     if (e = d, r = p, !d) return;
     const g = (L, F) => {
         if (!L) return;
-        const W = k(() => L.getShaderPrecisionFormat(L[F], L.LOW_FLOAT)),
-          me = k(() => L.getShaderPrecisionFormat(L[F], L.MEDIUM_FLOAT)),
-          ae = k(() => L.getShaderPrecisionFormat(L[F], L.HIGH_FLOAT)),
-          de = k(() => L.getShaderPrecisionFormat(L[F], L.HIGH_INT));
+        const G = k(() => L.getShaderPrecisionFormat(L[F], L.LOW_FLOAT)),
+          ie = k(() => L.getShaderPrecisionFormat(L[F], L.MEDIUM_FLOAT)),
+          ee = k(() => L.getShaderPrecisionFormat(L[F], L.HIGH_FLOAT)),
+          ae = k(() => L.getShaderPrecisionFormat(L[F], L.HIGH_INT));
         return {
-          LOW_FLOAT: W,
-          MEDIUM_FLOAT: me,
-          HIGH_FLOAT: ae,
-          HIGH_INT: de
+          LOW_FLOAT: G,
+          MEDIUM_FLOAT: ie,
+          HIGH_FLOAT: ee,
+          HIGH_INT: ae
         }
       },
       y = (L, F) => {
-        const W = {};
-        if (!F) return W;
-        for (const me in F) {
-          const ae = F[me];
-          W[L + "." + me + ".precision"] = ae ? k(() => ae.precision) : void 0, W[L + "." + me + ".rangeMax"] = ae ? k(() => ae.rangeMax) : void 0, W[L + "." + me + ".rangeMin"] = ae ? k(() => ae.rangeMin) : void 0
+        const G = {};
+        if (!F) return G;
+        for (const ie in F) {
+          const ee = F[ie];
+          G[L + "." + ie + ".precision"] = ee ? k(() => ee.precision) : void 0, G[L + "." + ie + ".rangeMax"] = ee ? k(() => ee.rangeMax) : void 0, G[L + "." + ie + ".rangeMin"] = ee ? k(() => ee.rangeMin) : void 0
         }
-        return W
+        return G
       },
       M = L => {
         const F = {};
         if (!L) return F;
-        const W = L;
-        for (const me of ws) {
-          const ae = W[me];
-          if (ae === void 0) continue;
-          const de = L.getParameter(ae);
-          de && ArrayBuffer.isView(de) ? F[me] = Array.from(de) : F[me] = de
+        const G = L;
+        for (const ie of ws) {
+          const ee = G[ie];
+          if (ee === void 0) continue;
+          const ae = L.getParameter(ee);
+          ae && ArrayBuffer.isView(ae) ? F[ie] = Array.from(ae) : F[ie] = ae
         }
         return F
       },
       v = L => {
         if (!L) return [];
         const F = k(() => L.getContextAttributes());
-        return F ? Object.keys(F).sort().map(W => `${W}=${F[W]}`) : []
+        return F ? Object.keys(F).sort().map(G => `${G}=${F[G]}`) : []
       },
       N = L => {
         if (!L) return [];
         const F = [];
-        for (const [W, me] of Object.entries(bs)) {
-          const ae = k(() => L.getExtension(W));
-          if (ae)
-            for (const de of me) {
-              const U = ae[de];
+        for (const [G, ie] of Object.entries(bs)) {
+          const ee = k(() => L.getExtension(G));
+          if (ee)
+            for (const ae of ie) {
+              const U = ee[ae];
               if (typeof U != "number") continue;
-              if (!vs.has(de)) {
-                F.push(`${de}=${U}`);
+              if (!vs.has(ae)) {
+                F.push(`${ae}=${U}`);
                 continue
               }
               const j = k(() => L.getParameter(U));
-              j == null ? F.push(`${de}=${U}`) : typeof j == "object" && "length" in j ? F.push(`${de}=${U}=${Array.from(j).join(",")}`) : F.push(`${de}=${U}=${j}`)
+              j == null ? F.push(`${ae}=${U}`) : typeof j == "object" && "length" in j ? F.push(`${ae}=${U}=${Array.from(j).join(",")}`) : F.push(`${ae}=${U}=${j}`)
             }
         }
         return F.sort()
@@ -4784,40 +4784,40 @@ async function As() {
         try {
           lr(L);
           const {
-            drawingBufferWidth: W,
-            drawingBufferHeight: me
+            drawingBufferWidth: G,
+            drawingBufferHeight: ie
           } = L;
-          let ae = "";
+          let ee = "";
           if (L.canvas.constructor.name === "OffscreenCanvas") {
             const K = document.createElement("canvas"),
-              oe = En(K, F);
+              se = En(K, F);
             try {
-              lr(oe), ae = K.toDataURL()
+              lr(se), ee = K.toDataURL()
             } finally {
-              vn(K, oe)
+              vn(K, se)
             }
-          } else ae = L.canvas.toDataURL();
-          const de = W / 15,
-            U = me / 6,
-            j = new Uint8Array(de * U * 4);
+          } else ee = L.canvas.toDataURL();
+          const ae = G / 15,
+            U = ie / 6,
+            j = new Uint8Array(ae * U * 4);
           try {
-            L.readPixels(0, 0, de, U, L.RGBA, L.UNSIGNED_BYTE, j)
+            L.readPixels(0, 0, ae, U, L.RGBA, L.UNSIGNED_BYTE, j)
           } catch {
             return {
-              dataURI: ae,
+              dataURI: ee,
               pixels: void 0
             }
           }
           return {
-            dataURI: ae,
+            dataURI: ee,
             pixels: Array.from(j)
           }
-        } catch (W) {
-          X(W);
+        } catch (G) {
+          X(G);
           return
         }
       };
-    await re();
+    await oe();
     const w = {
         ...M(d),
         ...A(d)
@@ -4831,7 +4831,7 @@ async function As() {
       const F = w[L];
       !F || Es.has(L) || "" + F != "" + S[L] && E.push(L)
     }
-    E.length && se("webgl/webgl2 mirrored params mismatch", E.toString()), await re();
+    E.length && ue("webgl/webgl2 mirrored params mismatch", E.toString()), await oe();
     const {
       dataURI: D,
       pixels: B
@@ -4856,27 +4856,27 @@ async function As() {
       },
       parameterOrExtensionLie: l,
       lied: u
-    }, ne = ["00b72507", "00c1b42d", "00fe1ec9", "02b3eea3", "0461d3de", "0463627d", "057857ac", "0586e20b", "0639a81a", "087d5759", "08847ba5", "0b2d4333", "0cdb985d", "0e058699", "0eb2fc19", "0f39d057", "0f840379", "0fc123c7", "101e0582", "12e92e62", "12f8ac14", "1453d59a", "149a1efa", "166dc7c8", "16c481a6", "171831c5", "177cc258", "18579e83", "19594666", "1b251fd7", "1bfd326c", "1e8a9a79", "1ff7c7e7", "2048bc5a", "2259b706", "22d0f2cf", "230d6a0d", "23d1ce20", "2402c3d2", "24306836", "258789d0", "25a760b8", "25f9385d", "27938830", "27db292c", "2b80fd96", "2bb488da", "2c04c2eb", "2d15287f", "2f014c41", "2f582ed9", "300ee927", "33bc5492", "34270469", "3660b71f", "3740c4c7", "3999a5e1", "39ead506", "3a91d0d6", "3b724916", "3bf321b8", "3c546144", "3f9ef44c", "3fea1100", "3ff82303", "4027d193", "402e1064", "4065cd69", "43038e3d", "4503e771", "461f97e1", "464d51ac", "467b99a5", "482c81b2", "48af038f", "4962ada1", "49bf7358", "4c9e8f5d", "502c402c", "508d1625", "52e348ba", "534002ab", "5582debe", "55d3aa56", "55e821f7", "581f3282", "5831d5fd", "58871380", "58fdc720", "5a5658f1", "5a90a5f8", "5aea1af1", "5b6a17aa", "5bef9a39", "5ca55292", "5d786cef", "5ddb9237", "5ee41456", "61178f2a", "61ca8e23", "61d9464e", "61eecaae", "623c3bfd", "6248d9e3", "6294d84e", "62bf7ef1", "6346cf49", "6357365c", "66628310", "668f0f93", "66d992e8", "67995996", "6843ebbf", "6864dcb0", "6951838b", "696e1548", "698c5c2e", "6a75ae3b", "6aa1ff7e", "6b07d4f8", "6b290cd4", "6c168801", "6dfae3cb", "6e806ffc", "6edf1720", "6f81cbe7", "70859bdb", "70a095b1", "7238c5dd", "7360ebd1", "741688e4", "74daf866", "78640859", "79284c47", "794f8929", "795e5c95", "79a57aa9", "7aa13573", "7b2e5242", "7b811cdd", "7ec0ea6b", "801d73af", "802e2547", "81b9cd29", "8219e1a4", "82a9a2f1", "8428fc8e", "849ccb64", "8541aa4c", "85479b99", "8bd0b91b", "8d371161", "903c8847", "917871e7", "98aeaba9", "99b1a1c6", "99ef2c3b", "9b67b7dc", "9c6df98c", "9c814c1b", "9e2b5e94", "9fd76352", "a1c808d5", "a22788f8", "a2383001", "a26e9aa9", "a397a568", "a3f9ee34", "a4b988da", "a4d34176", "a581f55e", "a5a477ae", "a9640880", "a97d3858", "aa73f3a4", "ab40bece", "ac4d4ba8", "ad01a422", "ade75c4f", "ae2c4777", "afa583bc", "b10c2a85", "b224cc7c", "b2d6fc98", "b362c2f5", "b467620a", "b4d40dcc", "b504662d", "b50edd99", "b5494027", "b62321c3", "b8961d15", "b8ea6e7f", "bb77a469", "bc0f9686", "bcf7315f", "be2dfaea", "beffda26", "bf06317e", "bf610cdb", "bfe1c212", "c00582e9", "c026469d", "c04889b1", "c04b0635", "c04e374a", "c05f7596", "c07307c6", "c092fdf8", "c25dd065", "c2bce496", "c5e9a883", "c79634c2", "c7e37ca0", "c93b5366", "c9bc4ffd", "cba1878b", "cbeade8c", "ce2e3d16", "cefb72ca", "cf9643e6", "cfd20274", "d05a66eb", "d09c1c07", "d1e76c89", "d2172943", "d2dc2474", "d498797d", "d6bf35ad", "d734ea08", "d860ff42", "d8bd9e5a", "d913dafa", "d970d345", "dbdbe7a4", "dc271c35", "dcd9a29e", "dd67b076", "de793ead", "ded74044", "df9daeb6", "e10339b3", "e142d1f9", "e155c47e", "e15afab0", "e16bb1bb", "e316e4c0", "e3eff92a", "e4569a5b", "e574bef6", "e5962ba3", "e6464c9f", "e68b5c4e", "e796b84e", "e8694547", "e965d180", "e965d541", "e9bdc904", "e9dbb8d5", "ea54d525", "ea59b343", "ea7f90ea", "ea8f5ad0", "eaa13804", "eb799d34", "ec050bb6", "ec928655", "eed2e5e1", "ef8f5db1", "f0d5a3c7", "f1077334", "f221fef5", "f2293447", "f33d918e", "f3c6ea11", "f51056a1", "f51cab9a", "f573bb34", "f5d19934", "f7451c92", "f8e65486", "f9714b3d", "fa994f33", "fafa14c0", "fc37fe1f", "fca66520", "fe0997b6"], Ae = [-1056897629, -1056946782, -1073719331, -1147160399, -1147160553, -1147168724, -1147419751, -1147419753, -1147419775, -1147427826, -1147451883, -1147451901, -1147464169, -1147464177, -1147488144, -1147602934, -1147643759, -1147643872, -1147765274, -1148326739, -1148335070, -1148572354, -1148678631, -1148680509, -1148713259, -1164279890, -1164800191, -1164800478, -1332029332, -133757475, -1342154787, -134823971, -16746546, -1878102921, -1878111124, -1962893370, -1962919974, -1962928178, -2130164162, -2130164382, -2130164388, -2130164546, -2130172573, -2130659912, -2145933648, -2145941977, -2145958228, -2145966414, -2145966441, -2145966529, -2145966535, -2145966545, -2145970658, -2145974343, -2145974380, -2145974489, -2145974596, -2145974598, -2145974612, -2145974637, -2145974657, -2145974729, -2146187766, -2146232338, -2146232480, -2146232503, -2146232590, -2146232723, -2146232724, -2146236588, -2146236703, -2146237020, -2146251619, -2146251641, -2146251681, -2146253671, -2146253693, -2146277218, -2146286438, -2146286463, -2146286583, -2146319268, -2146376065, -2146379955, -2146384003, -2146384011, -2146384027, -2146384034, -2146384120, -2146384281, -2146398568, -2146400384, -2146400556, -2146400620, -2146401928, -2146417027, -2146526795, -2146526934, -2147125544, -2147128275, -2147133747, -2147133749, -2147133760, -2147134974, -2147136328, -2147142429, -2147287810, -2147287811, -2147287820, -2147287834, -2147287835, -2147287854, -2147291718, -2147291820, -2147293058, -2147295768, -2147295822, -2147295823, -2147295849, -2147295857, -2147300019, -2147304193, -2147304219, -2147306321, -2147316382, -2147316383, -2147333118, -2147336998, -2147337003, -2147337012, -2147337022, -2147344686, -2147346747, -2147361652, -2147361731, -2147361769, -2147361774, -2147361775, -2147361778, -2147361792, -2147362760, -2147365698, -2147365730, -2147365759, -2147365760, -2147365827, -2147365863, -2147373914, -2147373984, -2147374032, -2147374080, -2147378041, -2147378146, -2147382130, -2147382221, -2147382251, -2147382270, -2147382272, -2147383246, -2147385825, -2147385849, -2147386292, -2147386326, -2147387335, -2147387364, -2147389930, -2147389937, -2147389951, -2147390461, -2147394188, -2147394251, -2147394484, -2147400057, -2147406798, -2147407643, -2147407821, -2147410938, -2147410941, -2147414733, -2147414956, -2147414987, -2147415037, -2147429201, -2147429223, -2147439020, -2147440422, -2147447111, -2147447122, -2147447126, -2147447137, -2147447149, -2147447157, -2147447161, -2147447163, -2147447873, -2147447892, -2147447896, -2147447928, -2147448592, -2147453701, -2147453767, -2147453768, -2147459031, -2147461169, -2147466956, -2147466972, -2147467172, -2147470173, -2147475351, -2147475352, -638494755, -671082546, -677558160, -999987216, 1099536, 1099644, 1147714426, 1197075, 1229835, 1508998, 1509050, 1610618841, 184555483, 2146590728, 2147305224, 2147361749, 2147440438, 2147475085, 2147479181, 21667, 349912, 351513, 83625, 998804992, 998911268, 999148597, 999156922];
+    }, re = ["00b72507", "00c1b42d", "00fe1ec9", "02b3eea3", "0461d3de", "0463627d", "057857ac", "0586e20b", "0639a81a", "087d5759", "08847ba5", "0b2d4333", "0cdb985d", "0e058699", "0eb2fc19", "0f39d057", "0f840379", "0fc123c7", "101e0582", "12e92e62", "12f8ac14", "1453d59a", "149a1efa", "166dc7c8", "16c481a6", "171831c5", "177cc258", "18579e83", "19594666", "1b251fd7", "1bfd326c", "1e8a9a79", "1ff7c7e7", "2048bc5a", "2259b706", "22d0f2cf", "230d6a0d", "23d1ce20", "2402c3d2", "24306836", "258789d0", "25a760b8", "25f9385d", "27938830", "27db292c", "2b80fd96", "2bb488da", "2c04c2eb", "2d15287f", "2f014c41", "2f582ed9", "300ee927", "33bc5492", "34270469", "3660b71f", "3740c4c7", "3999a5e1", "39ead506", "3a91d0d6", "3b724916", "3bf321b8", "3c546144", "3f9ef44c", "3fea1100", "3ff82303", "4027d193", "402e1064", "4065cd69", "43038e3d", "4503e771", "461f97e1", "464d51ac", "467b99a5", "482c81b2", "48af038f", "4962ada1", "49bf7358", "4c9e8f5d", "502c402c", "508d1625", "52e348ba", "534002ab", "5582debe", "55d3aa56", "55e821f7", "581f3282", "5831d5fd", "58871380", "58fdc720", "5a5658f1", "5a90a5f8", "5aea1af1", "5b6a17aa", "5bef9a39", "5ca55292", "5d786cef", "5ddb9237", "5ee41456", "61178f2a", "61ca8e23", "61d9464e", "61eecaae", "623c3bfd", "6248d9e3", "6294d84e", "62bf7ef1", "6346cf49", "6357365c", "66628310", "668f0f93", "66d992e8", "67995996", "6843ebbf", "6864dcb0", "6951838b", "696e1548", "698c5c2e", "6a75ae3b", "6aa1ff7e", "6b07d4f8", "6b290cd4", "6c168801", "6dfae3cb", "6e806ffc", "6edf1720", "6f81cbe7", "70859bdb", "70a095b1", "7238c5dd", "7360ebd1", "741688e4", "74daf866", "78640859", "79284c47", "794f8929", "795e5c95", "79a57aa9", "7aa13573", "7b2e5242", "7b811cdd", "7ec0ea6b", "801d73af", "802e2547", "81b9cd29", "8219e1a4", "82a9a2f1", "8428fc8e", "849ccb64", "8541aa4c", "85479b99", "8bd0b91b", "8d371161", "903c8847", "917871e7", "98aeaba9", "99b1a1c6", "99ef2c3b", "9b67b7dc", "9c6df98c", "9c814c1b", "9e2b5e94", "9fd76352", "a1c808d5", "a22788f8", "a2383001", "a26e9aa9", "a397a568", "a3f9ee34", "a4b988da", "a4d34176", "a581f55e", "a5a477ae", "a9640880", "a97d3858", "aa73f3a4", "ab40bece", "ac4d4ba8", "ad01a422", "ade75c4f", "ae2c4777", "afa583bc", "b10c2a85", "b224cc7c", "b2d6fc98", "b362c2f5", "b467620a", "b4d40dcc", "b504662d", "b50edd99", "b5494027", "b62321c3", "b8961d15", "b8ea6e7f", "bb77a469", "bc0f9686", "bcf7315f", "be2dfaea", "beffda26", "bf06317e", "bf610cdb", "bfe1c212", "c00582e9", "c026469d", "c04889b1", "c04b0635", "c04e374a", "c05f7596", "c07307c6", "c092fdf8", "c25dd065", "c2bce496", "c5e9a883", "c79634c2", "c7e37ca0", "c93b5366", "c9bc4ffd", "cba1878b", "cbeade8c", "ce2e3d16", "cefb72ca", "cf9643e6", "cfd20274", "d05a66eb", "d09c1c07", "d1e76c89", "d2172943", "d2dc2474", "d498797d", "d6bf35ad", "d734ea08", "d860ff42", "d8bd9e5a", "d913dafa", "d970d345", "dbdbe7a4", "dc271c35", "dcd9a29e", "dd67b076", "de793ead", "ded74044", "df9daeb6", "e10339b3", "e142d1f9", "e155c47e", "e15afab0", "e16bb1bb", "e316e4c0", "e3eff92a", "e4569a5b", "e574bef6", "e5962ba3", "e6464c9f", "e68b5c4e", "e796b84e", "e8694547", "e965d180", "e965d541", "e9bdc904", "e9dbb8d5", "ea54d525", "ea59b343", "ea7f90ea", "ea8f5ad0", "eaa13804", "eb799d34", "ec050bb6", "ec928655", "eed2e5e1", "ef8f5db1", "f0d5a3c7", "f1077334", "f221fef5", "f2293447", "f33d918e", "f3c6ea11", "f51056a1", "f51cab9a", "f573bb34", "f5d19934", "f7451c92", "f8e65486", "f9714b3d", "fa994f33", "fafa14c0", "fc37fe1f", "fca66520", "fe0997b6"], Ae = [-1056897629, -1056946782, -1073719331, -1147160399, -1147160553, -1147168724, -1147419751, -1147419753, -1147419775, -1147427826, -1147451883, -1147451901, -1147464169, -1147464177, -1147488144, -1147602934, -1147643759, -1147643872, -1147765274, -1148326739, -1148335070, -1148572354, -1148678631, -1148680509, -1148713259, -1164279890, -1164800191, -1164800478, -1332029332, -133757475, -1342154787, -134823971, -16746546, -1878102921, -1878111124, -1962893370, -1962919974, -1962928178, -2130164162, -2130164382, -2130164388, -2130164546, -2130172573, -2130659912, -2145933648, -2145941977, -2145958228, -2145966414, -2145966441, -2145966529, -2145966535, -2145966545, -2145970658, -2145974343, -2145974380, -2145974489, -2145974596, -2145974598, -2145974612, -2145974637, -2145974657, -2145974729, -2146187766, -2146232338, -2146232480, -2146232503, -2146232590, -2146232723, -2146232724, -2146236588, -2146236703, -2146237020, -2146251619, -2146251641, -2146251681, -2146253671, -2146253693, -2146277218, -2146286438, -2146286463, -2146286583, -2146319268, -2146376065, -2146379955, -2146384003, -2146384011, -2146384027, -2146384034, -2146384120, -2146384281, -2146398568, -2146400384, -2146400556, -2146400620, -2146401928, -2146417027, -2146526795, -2146526934, -2147125544, -2147128275, -2147133747, -2147133749, -2147133760, -2147134974, -2147136328, -2147142429, -2147287810, -2147287811, -2147287820, -2147287834, -2147287835, -2147287854, -2147291718, -2147291820, -2147293058, -2147295768, -2147295822, -2147295823, -2147295849, -2147295857, -2147300019, -2147304193, -2147304219, -2147306321, -2147316382, -2147316383, -2147333118, -2147336998, -2147337003, -2147337012, -2147337022, -2147344686, -2147346747, -2147361652, -2147361731, -2147361769, -2147361774, -2147361775, -2147361778, -2147361792, -2147362760, -2147365698, -2147365730, -2147365759, -2147365760, -2147365827, -2147365863, -2147373914, -2147373984, -2147374032, -2147374080, -2147378041, -2147378146, -2147382130, -2147382221, -2147382251, -2147382270, -2147382272, -2147383246, -2147385825, -2147385849, -2147386292, -2147386326, -2147387335, -2147387364, -2147389930, -2147389937, -2147389951, -2147390461, -2147394188, -2147394251, -2147394484, -2147400057, -2147406798, -2147407643, -2147407821, -2147410938, -2147410941, -2147414733, -2147414956, -2147414987, -2147415037, -2147429201, -2147429223, -2147439020, -2147440422, -2147447111, -2147447122, -2147447126, -2147447137, -2147447149, -2147447157, -2147447161, -2147447163, -2147447873, -2147447892, -2147447896, -2147447928, -2147448592, -2147453701, -2147453767, -2147453768, -2147459031, -2147461169, -2147466956, -2147466972, -2147467172, -2147470173, -2147475351, -2147475352, -638494755, -671082546, -677558160, -999987216, 1099536, 1099644, 1147714426, 1197075, 1229835, 1508998, 1509050, 1610618841, 184555483, 2146590728, 2147305224, 2147361749, 2147440438, 2147475085, 2147479181, 21667, 349912, 351513, 83625, 998804992, 998911268, 999148597, 999156922];
     let pe;
     if (O.parameters) {
       const L = new Set;
       for (const F in O.parameters) {
-        const W = O.parameters[F];
-        if (!(!W || typeof W == "string"))
-          if (Array.isArray(W))
-            for (const me of W) L.add(Number(me));
-          else L.add(Number(W))
+        const G = O.parameters[F];
+        if (!(!G || typeof G == "string"))
+          if (Array.isArray(G))
+            for (const ie of G) L.add(Number(ie));
+          else L.add(Number(G))
       }
-      pe = [...L].sort((F, W) => F - W)
+      pe = [...L].sort((F, G) => F - G)
     }
     const Ne = ti((a = O.parameters) == null ? void 0 : a.UNMASKED_RENDERER_WEBGL),
       ve = "" + pe,
       ge = !Ne || !ve ? void 0 : z([Ne, ve]),
-      ke = pe ? pe.reduce((L, F, W) => L ^ +F + W, 0) : void 0;
+      ke = pe ? pe.reduce((L, F, G) => L ^ +F + G, 0) : void 0;
     Be.webglParams = ve, Be.webglBrandCapabilities = ge, Be.webglCapabilities = ke;
-    const Se = ge && !ne.includes(ge),
+    const Se = ge && !re.includes(ge),
       tt = ke && !Ae.includes(ke);
-    return Se && (De.WEBGL = !0, se("WebGLRenderingContext.getParameter", "suspicious gpu")), tt && (De.WEBGL = !0, se("WebGLRenderingContext.getParameter", "suspicious capabilities")), {
+    return Se && (De.WEBGL = !0, ue("WebGLRenderingContext.getParameter", "suspicious gpu")), tt && (De.WEBGL = !0, ue("WebGLRenderingContext.getParameter", "suspicious capabilities")), {
       ...O,
       gpu: {
         ...Jr((O.parameters || {}).UNMASKED_RENDERER_WEBGL) || {},
@@ -5034,9 +5034,9 @@ async function Ns() {
 }
 async function Ts() {
   try {
-    const [t, n, e, r, a, o, s, i, c, l, u, m, f, d, p, g] = await Promise.all([ie("voices", gs()), ie("offlineAudioContext", Si()), ie("canvasWebgl", As()), ie("canvas2d", Ii()), ie("css", Promise.resolve(Di())), ie("cssMedia", Promise.resolve(ki())), ie("screen", ps()), ie("maths", Promise.resolve(as())), ie("consoleErrors", Promise.resolve(ji())), ie("timezone", Promise.resolve(ys())), ie("fonts", Ji()), ie("media", is()), ie("resistance", ms()), ie("intl", rs()), ie("workerScope", Ni()), ie("domBlockers", Li())]), [y, M, v, N, A] = await Promise.all([ie("navigator", ss(p)), ie("headless", ns({
+    const [t, n, e, r, a, o, s, i, c, l, u, m, f, d, p, g] = await Promise.all([ce("voices", gs()), ce("offlineAudioContext", Si()), ce("canvasWebgl", As()), ce("canvas2d", Ii()), ce("css", Promise.resolve(Di())), ce("cssMedia", Promise.resolve(ki())), ce("screen", ps()), ce("maths", Promise.resolve(as())), ce("consoleErrors", Promise.resolve(ji())), ce("timezone", Promise.resolve(ys())), ce("fonts", Ji()), ce("media", is()), ce("resistance", ms()), ce("intl", rs()), ce("workerScope", Ni()), ce("domBlockers", Li())]), [y, M, v, N, A] = await Promise.all([ce("navigator", ss(p)), ce("headless", ns({
       webgl: e
-    })), ie("lies", Promise.resolve(pi())), ie("trash", Promise.resolve(vi())), ie("capturedErrors", Promise.resolve(Yo()))]), [I, T] = await Promise.all([Zn((e == null ? void 0 : e.pixels) ?? []), Zn((e == null ? void 0 : e.pixels2) ?? [])]);
+    })), ce("lies", Promise.resolve(pi())), ce("trash", Promise.resolve(vi())), ce("capturedErrors", Promise.resolve(Yo()))]), [I, T] = await Promise.all([Zn((e == null ? void 0 : e.pixels) ?? []), Zn((e == null ? void 0 : e.pixels2) ?? [])]);
     return {
       navigator: y,
       headless: M,
@@ -5069,7 +5069,7 @@ async function Ts() {
   }
 }
 
-function ie(t, n) {
+function ce(t, n) {
   return n.catch(() => {})
 }
 let Yt;
@@ -5078,7 +5078,7 @@ async function Ss() {
     return await Yt
   } catch {}
   return Yt = (async () => {
-    var a, o, s, i, c, l, u, m, f, d, p, g, y, M, v, N, A, I, T, w, S, E, D, B, H, C, O, ne, Ae, pe, Ne, ve, ge, ke, Se, tt, L;
+    var a, o, s, i, c, l, u, m, f, d, p, g, y, M, v, N, A, I, T, w, S, E, D, B, H, C, O, re, Ae, pe, Ne, ve, ge, ke, Se, tt, L, F, G, ie, ee, ae, U;
     const t = await Ns();
     switch ((a = t.navigator) != null && a.lied && t.screen && (t.screen.width = 0, t.screen.height = 0), _a({
         userAgent: (o = t.workerScope) == null ? void 0 : o.userAgent
@@ -5092,91 +5092,91 @@ async function Ss() {
         t.canvas2d && delete t.canvas2d.mods, t.offlineAudioContext && (delete t.offlineAudioContext.baseLatency, delete t.offlineAudioContext.binsSample, delete t.offlineAudioContext.copySample, delete t.offlineAudioContext.floatFrequencyDataSum, delete t.offlineAudioContext.totalUniqueSamples, delete t.offlineAudioContext.noise)
     }
     t.navigator && delete t.navigator.lied;
-    const e = await Promise.all([x(t.navigator), x(t.workerScope), x(t.screen), x(t.media), "a0", x(t.canvas2d), x(t.canvasWebgl), x(t.cssMedia), x(t.css), x(t.voices), x(t.timezone), x(t.offlineAudioContext), x(t.fonts), x({
+    const e = await Promise.all([P(t.navigator), P(t.workerScope), P(t.screen), P(t.media), "a0", P(t.canvas2d), P(t.canvasWebgl), P(t.cssMedia), P(t.css), P(t.voices), P(t.timezone), P(t.offlineAudioContext), P(t.fonts), P({
         ...t.intl,
         ...t.domBlockers
-      }), x(t.maths), x(t.headless)]),
-      r = await Promise.all([x((s = t.canvas2d) == null ? void 0 : s.dataURI), x((i = t.canvas2d) == null ? void 0 : i.emojiSet), x((c = t.canvas2d) == null ? void 0 : c.emojiURI), x((l = t.canvas2d) == null ? void 0 : l.lied), x((u = t.canvas2d) == null ? void 0 : u.liedTextMetrics), x((m = t.canvas2d) == null ? void 0 : m.mods), x((f = t.canvas2d) == null ? void 0 : f.paintCpuURI), x((d = t.canvas2d) == null ? void 0 : d.paintURI), x((p = t.canvas2d) == null ? void 0 : p.textMetricsSystemSum), x((g = t.canvas2d) == null ? void 0 : g.textURI), "|", x((y = t.offlineAudioContext) == null ? void 0 : y.baseLatency), x((M = t.offlineAudioContext) == null ? void 0 : M.binsSample), x((v = t.offlineAudioContext) == null ? void 0 : v.compressorGainReduction), x((N = t.offlineAudioContext) == null ? void 0 : N.copySample), x((A = t.offlineAudioContext) == null ? void 0 : A.floatFrequencyDataSum), x((I = t.offlineAudioContext) == null ? void 0 : I.floatTimeDomainDataSum), x((T = t.offlineAudioContext) == null ? void 0 : T.lied), x((w = t.offlineAudioContext) == null ? void 0 : w.noise), x((S = t.offlineAudioContext) == null ? void 0 : S.totalUniqueSamples), x((E = t.offlineAudioContext) == null ? void 0 : E.values), "|", x(t.intl), x(t.domBlockers), "|", x((D = t.headless) == null ? void 0 : D.chromium), x((B = t.headless) == null ? void 0 : B.headless), x((H = t.headless) == null ? void 0 : H.headlessRating), x((C = t.headless) == null ? void 0 : C.platformEstimate), x((O = t.headless) == null ? void 0 : O.stealth), x((ne = t.headless) == null ? void 0 : ne.stealthRating), x((Ae = t.headless) == null ? void 0 : Ae.systemFonts), "|", x((pe = t.intl) == null ? void 0 : pe.dateTimeFormat), x((Ne = t.intl) == null ? void 0 : Ne.displayNames), x((ve = t.intl) == null ? void 0 : ve.lied), x((ge = t.intl) == null ? void 0 : ge.listFormat), x((ke = t.intl) == null ? void 0 : ke.locale), x((Se = t.intl) == null ? void 0 : Se.numberFormat), x((tt = t.intl) == null ? void 0 : tt.pluralRules), x((L = t.intl) == null ? void 0 : L.relativeTimeFormat)]);
-    return e.map(F => F.slice(0, 2)).join("").padEnd(32, "0").slice(0, 32) + "|" + r.map(F => F[0]).join("")
+      }), P(t.maths), P(t.headless)]),
+      r = await Promise.all([P((s = t.canvas2d) == null ? void 0 : s.dataURI), P((i = t.canvas2d) == null ? void 0 : i.emojiSet), P((c = t.canvas2d) == null ? void 0 : c.emojiURI), P((l = t.canvas2d) == null ? void 0 : l.lied), P((u = t.canvas2d) == null ? void 0 : u.liedTextMetrics), P((m = t.canvas2d) == null ? void 0 : m.mods), P((f = t.canvas2d) == null ? void 0 : f.paintCpuURI), P((d = t.canvas2d) == null ? void 0 : d.paintURI), P((p = t.canvas2d) == null ? void 0 : p.textMetricsSystemSum), P((g = t.canvas2d) == null ? void 0 : g.textURI), "|", P((y = t.offlineAudioContext) == null ? void 0 : y.baseLatency), P((M = t.offlineAudioContext) == null ? void 0 : M.binsSample), P((v = t.offlineAudioContext) == null ? void 0 : v.compressorGainReduction), P((N = t.offlineAudioContext) == null ? void 0 : N.copySample), P((A = t.offlineAudioContext) == null ? void 0 : A.floatFrequencyDataSum), P((I = t.offlineAudioContext) == null ? void 0 : I.floatTimeDomainDataSum), P((T = t.offlineAudioContext) == null ? void 0 : T.lied), P((w = t.offlineAudioContext) == null ? void 0 : w.noise), P((S = t.offlineAudioContext) == null ? void 0 : S.totalUniqueSamples), P((E = t.offlineAudioContext) == null ? void 0 : E.values), "|", P(t.intl), P(t.domBlockers), "|", P((D = t.headless) == null ? void 0 : D.chromium), P((B = t.headless) == null ? void 0 : B.headless), P((H = t.headless) == null ? void 0 : H.headlessRating), P((C = t.headless) == null ? void 0 : C.platformEstimate), P((O = t.headless) == null ? void 0 : O.stealth), P((re = t.headless) == null ? void 0 : re.stealthRating), P((Ae = t.headless) == null ? void 0 : Ae.systemFonts), "|", P((pe = t.intl) == null ? void 0 : pe.dateTimeFormat), P((Ne = t.intl) == null ? void 0 : Ne.displayNames), P((ve = t.intl) == null ? void 0 : ve.lied), P((ge = t.intl) == null ? void 0 : ge.listFormat), P((ke = t.intl) == null ? void 0 : ke.locale), P((Se = t.intl) == null ? void 0 : Se.numberFormat), P((tt = t.intl) == null ? void 0 : tt.pluralRules), P((L = t.intl) == null ? void 0 : L.relativeTimeFormat), "|", P((F = t.voices) == null ? void 0 : F.defaultVoiceLang), P((G = t.voices) == null ? void 0 : G.defaultVoiceName), P((ie = t.voices) == null ? void 0 : ie.languages), P((ee = t.voices) == null ? void 0 : ee.lied), P((ae = t.voices) == null ? void 0 : ae.local), P((U = t.voices) == null ? void 0 : U.remote)]);
+    return e.map(j => j.slice(0, 2)).join("").padEnd(32, "0").slice(0, 32) + "|" + r.map(j => j[0]).join("")
   })(), Yt
 }
 const dr = "theme";
 var At, Nt, Tt, St, Ot, Rt, It, Dt, kt, Mt;
 class Os {
   constructor() {
-    J(this, At, le(!1));
-    J(this, Nt, le(!1));
-    J(this, Tt, le(0));
-    J(this, St, le(!1));
-    J(this, Ot, le(rn(Rs())));
-    J(this, Rt, le(null));
-    J(this, It, le(!1));
-    J(this, Dt, le("custom-winter"));
-    J(this, kt, le(rn(Date.now())));
-    J(this, Mt, le(void 0));
+    J(this, At, _e(!1));
+    J(this, Nt, _e(!1));
+    J(this, Tt, _e(0));
+    J(this, St, _e(!1));
+    J(this, Ot, _e(rn(Rs())));
+    J(this, Rt, _e(null));
+    J(this, It, _e(!1));
+    J(this, Dt, _e("custom-winter"));
+    J(this, kt, _e(rn(Date.now())));
+    J(this, Mt, _e(void 0));
     setInterval(() => {
-      ee(P(this, kt), Date.now(), !0)
+      te(x(this, kt), Date.now(), !0)
     }, 500), this.theme = localStorage.getItem(dr), this.theme !== "dark" && this.theme !== "custom-winter" && (this.theme = "custom-winter")
   }
   get dropletsDialogOpen() {
-    return Q(P(this, At))
+    return Q(x(this, At))
   }
   set dropletsDialogOpen(n) {
-    ee(P(this, At), n, !0)
+    te(x(this, At), n, !0)
   }
   get storeDialogOpen() {
-    return Q(P(this, Nt))
+    return Q(x(this, Nt))
   }
   set storeDialogOpen(n) {
-    ee(P(this, Nt), n, !0)
+    te(x(this, Nt), n, !0)
   }
   get storeTabIndex() {
-    return Q(P(this, Tt))
+    return Q(x(this, Tt))
   }
   set storeTabIndex(n) {
-    ee(P(this, Tt), n, !0)
+    te(x(this, Tt), n, !0)
   }
   get muted() {
-    return Q(P(this, St))
+    return Q(x(this, St))
   }
   set muted(n) {
-    ee(P(this, St), n, !0)
+    te(x(this, St), n, !0)
   }
   get language() {
-    return Q(P(this, Ot))
+    return Q(x(this, Ot))
   }
   set language(n) {
-    ee(P(this, Ot), n, !0)
+    te(x(this, Ot), n, !0)
   }
   get map() {
-    return Q(P(this, Rt))
+    return Q(x(this, Rt))
   }
   set map(n) {
-    ee(P(this, Rt), n)
+    te(x(this, Rt), n)
   }
   get automatedClicks() {
-    return Q(P(this, It))
+    return Q(x(this, It))
   }
   set automatedClicks(n) {
-    ee(P(this, It), n, !0)
+    te(x(this, It), n, !0)
   }
   get theme() {
-    return Q(P(this, Dt))
+    return Q(x(this, Dt))
   }
   set theme(n) {
-    ee(P(this, Dt), n, !0), localStorage.setItem(dr, n), document.documentElement.setAttribute("data-theme", n)
+    te(x(this, Dt), n, !0), localStorage.setItem(dr, n), document.documentElement.setAttribute("data-theme", n)
   }
   get now() {
-    return Q(P(this, kt))
+    return Q(x(this, kt))
   }
   get captcha() {
-    return Is ? Q(P(this, Mt)) : {
+    return Is ? Q(x(this, Mt)) : {
       token: "turnstile-disabled",
       time: Date.now()
     }
   }
   set captcha(n) {
-    ee(P(this, Mt), n, !0)
+    te(x(this, Mt), n, !0)
   }
 }
 At = new WeakMap, Nt = new WeakMap, Tt = new WeakMap, St = new WeakMap, Ot = new WeakMap, Rt = new WeakMap, It = new WeakMap, Dt = new WeakMap, kt = new WeakMap, Mt = new WeakMap;
@@ -5271,20 +5271,20 @@ const ea = 3;
 var Lt, Ct;
 class Ls {
   constructor() {
-    J(this, Lt, le(null));
-    J(this, Ct, le(0))
+    J(this, Lt, _e(null));
+    J(this, Ct, _e(0))
   }
   get current() {
-    return Q(P(this, Lt))
+    return Q(x(this, Lt))
   }
   set current(n) {
-    ee(P(this, Lt), n, !0)
+    te(x(this, Lt), n, !0)
   }
   get errorCount() {
-    return Q(P(this, Ct))
+    return Q(x(this, Ct))
   }
   set errorCount(n) {
-    ee(P(this, Ct), n, !0)
+    te(x(this, Ct), n, !0)
   }
 }
 Lt = new WeakMap, Ct = new WeakMap;
@@ -7105,22 +7105,22 @@ const fE = 30 * Ge.minute;
 var Pt, xt;
 class mE {
   constructor(n) {
-    J(this, Pt, le(!0));
-    J(this, xt, le(null));
+    J(this, Pt, _e(!0));
+    J(this, xt, _e(null));
     $(this, "lastHotspotRequestAt", 0);
     this.url = n
   }
   get online() {
-    return Q(P(this, Pt))
+    return Q(x(this, Pt))
   }
   set online(n) {
-    ee(P(this, Pt), n, !0)
+    te(x(this, Pt), n, !0)
   }
   get serverTimeOffsetMs() {
-    return Q(P(this, xt))
+    return Q(x(this, xt))
   }
   set serverTimeOffsetMs(n) {
-    ee(P(this, xt), n, !0)
+    te(x(this, xt), n, !0)
   }
   hasServerTimeEstimate() {
     return this.serverTimeOffsetMs !== null
@@ -8988,8 +8988,8 @@ let Or = 0;
 var Bt, Ht, Ft;
 class bE {
   constructor() {
-    J(this, Bt, le(rn([])));
-    J(this, Ht, le(rn([])));
+    J(this, Bt, _e(rn([])));
+    J(this, Ht, _e(rn([])));
     J(this, Ft, n => {
       const e = this.toasts.findIndex(r => r.id === n);
       return e === -1 ? null : e
@@ -9055,7 +9055,7 @@ class bE {
         this.toasts = [];
         return
       }
-      const e = P(this, Ft).call(this, n);
+      const e = x(this, Ft).call(this, n);
       if (e !== null) return this.toasts.splice(e, 1), n
     });
     $(this, "message", (n, e) => this.create({
@@ -9144,7 +9144,7 @@ class bE {
       this.heights = this.heights.filter(e => e.toastId !== n)
     });
     $(this, "setHeight", n => {
-      const e = P(this, Ft).call(this, n.toastId);
+      const e = x(this, Ft).call(this, n.toastId);
       if (e === null) {
         this.heights.push(n);
         return
@@ -9156,16 +9156,16 @@ class bE {
     })
   }
   get toasts() {
-    return Q(P(this, Bt))
+    return Q(x(this, Bt))
   }
   set toasts(n) {
-    ee(P(this, Bt), n, !0)
+    te(x(this, Bt), n, !0)
   }
   get heights() {
-    return Q(P(this, Ht))
+    return Q(x(this, Ht))
   }
   set heights(n) {
-    ee(P(this, Ht), n, !0)
+    te(x(this, Ht), n, !0)
   }
 }
 Bt = new WeakMap, Ht = new WeakMap, Ft = new WeakMap;
@@ -9187,7 +9187,7 @@ class m2 {
     J(this, ln, mt(() => Re.toasts.filter(n => !n.dismiss)))
   }
   get toasts() {
-    return Q(P(this, ln))
+    return Q(x(this, ln))
   }
 }
 ln = new WeakMap;
@@ -9208,10 +9208,10 @@ var Ut, jt, Gt, Vt, Wt, zt, $t, qt;
 class TE {
   constructor() {
     $(this, "channel", new BroadcastChannel("user-channel"));
-    J(this, Ut, le());
-    J(this, jt, le(!0));
-    J(this, Gt, le());
-    J(this, Vt, le(Date.now()));
+    J(this, Ut, _e());
+    J(this, jt, _e(!0));
+    J(this, Gt, _e());
+    J(this, Vt, _e(Date.now()));
     J(this, Wt, mt(() => {
       if (!this.data) return;
       const n = this.data.charges;
@@ -9236,52 +9236,52 @@ class TE {
     })
   }
   get data() {
-    return Q(P(this, Ut))
+    return Q(x(this, Ut))
   }
   set data(n) {
-    ee(P(this, Ut), n, !0)
+    te(x(this, Ut), n, !0)
   }
   get loading() {
-    return Q(P(this, jt))
+    return Q(x(this, jt))
   }
   set loading(n) {
-    ee(P(this, jt), n, !0)
+    te(x(this, jt), n, !0)
   }
   get notificationCount() {
-    return Q(P(this, Gt))
+    return Q(x(this, Gt))
   }
   set notificationCount(n) {
-    ee(P(this, Gt), n, !0)
+    te(x(this, Gt), n, !0)
   }
   get lastFetch() {
-    return Q(P(this, Vt))
+    return Q(x(this, Vt))
   }
   set lastFetch(n) {
-    ee(P(this, Vt), n)
+    te(x(this, Vt), n)
   }
   get charges() {
-    return Q(P(this, Wt))
+    return Q(x(this, Wt))
   }
   set charges(n) {
-    ee(P(this, Wt), n)
+    te(x(this, Wt), n)
   }
   get cooldown() {
-    return Q(P(this, zt))
+    return Q(x(this, zt))
   }
   set cooldown(n) {
-    ee(P(this, zt), n)
+    te(x(this, zt), n)
   }
   get flagsBitmap() {
-    return Q(P(this, $t))
+    return Q(x(this, $t))
   }
   set flagsBitmap(n) {
-    ee(P(this, $t), n)
+    te(x(this, $t), n)
   }
   get timeoutUntil() {
-    return Q(P(this, qt))
+    return Q(x(this, qt))
   }
   set timeoutUntil(n) {
-    ee(P(this, qt), n)
+    te(x(this, qt), n)
   }
   async refresh() {
     var n, e;
@@ -9327,7 +9327,7 @@ let q;
 const xe = new Array(128).fill(void 0);
 xe.push(void 0, null, !0, !1);
 
-function V(t) {
+function W(t) {
   return xe[t]
 }
 let vt = xe.length;
@@ -9373,7 +9373,7 @@ function SE(t) {
 }
 
 function Rr(t) {
-  const n = V(t);
+  const n = W(t);
   return SE(t), n
 }
 let Xe = null;
@@ -9497,79 +9497,79 @@ async function xE(t, n) {
 function BE() {
   const t = {};
   return t.wbg = {}, t.wbg.__wbg_buffer_609cc3eee51ed158 = function(n) {
-    const e = V(n).buffer;
+    const e = W(n).buffer;
     return Z(e)
   }, t.wbg.__wbg_call_672a4d21634d4a24 = function() {
     return Fe(function(n, e) {
-      const r = V(n).call(V(e));
+      const r = W(n).call(W(e));
       return Z(r)
     }, arguments)
   }, t.wbg.__wbg_call_7cccdd69e0791ae2 = function() {
     return Fe(function(n, e, r) {
-      const a = V(n).call(V(e), V(r));
+      const a = W(n).call(W(e), W(r));
       return Z(a)
     }, arguments)
   }, t.wbg.__wbg_crypto_574e78ad8b13b65f = function(n) {
-    const e = V(n).crypto;
+    const e = W(n).crypto;
     return Z(e)
   }, t.wbg.__wbg_document_d249400bd7bd996d = function(n) {
-    const e = V(n).document;
+    const e = W(n).document;
     return Ke(e) ? 0 : Z(e)
   }, t.wbg.__wbg_getRandomValues_b8f5dbd5f3995a9e = function() {
     return Fe(function(n, e) {
-      V(n).getRandomValues(V(e))
+      W(n).getRandomValues(W(e))
     }, arguments)
   }, t.wbg.__wbg_get_67b2ba62fc30de12 = function() {
     return Fe(function(n, e) {
-      const r = Reflect.get(V(n), V(e));
+      const r = Reflect.get(W(n), W(e));
       return Z(r)
     }, arguments)
   }, t.wbg.__wbg_hasFocus_21add8cd20546ed0 = function() {
     return Fe(function(n) {
-      return V(n).hasFocus()
+      return W(n).hasFocus()
     }, arguments)
   }, t.wbg.__wbg_innerWidth_7e0498dbd876d498 = function() {
     return Fe(function(n) {
-      const e = V(n).innerWidth;
+      const e = W(n).innerWidth;
       return Z(e)
     }, arguments)
   }, t.wbg.__wbg_instanceof_Window_def73ea0955fc569 = function(n) {
     let e;
     try {
-      e = V(n) instanceof Window
+      e = W(n) instanceof Window
     } catch {
       e = !1
     }
     return e
   }, t.wbg.__wbg_msCrypto_a61aeb35a24c1329 = function(n) {
-    const e = V(n).msCrypto;
+    const e = W(n).msCrypto;
     return Z(e)
   }, t.wbg.__wbg_navigator_1577371c070c8947 = function(n) {
-    const e = V(n).navigator;
+    const e = W(n).navigator;
     return Z(e)
   }, t.wbg.__wbg_new_a12002a7f91c75be = function(n) {
-    const e = new Uint8Array(V(n));
+    const e = new Uint8Array(W(n));
     return Z(e)
   }, t.wbg.__wbg_newnoargs_105ed471475aaf50 = function(n, e) {
     const r = new Function(tn(n, e));
     return Z(r)
   }, t.wbg.__wbg_newwithbyteoffsetandlength_d97e637ebe145a9a = function(n, e, r) {
-    const a = new Uint8Array(V(n), e >>> 0, r >>> 0);
+    const a = new Uint8Array(W(n), e >>> 0, r >>> 0);
     return Z(a)
   }, t.wbg.__wbg_newwithlength_a381634e90c276d4 = function(n) {
     const e = new Uint8Array(n >>> 0);
     return Z(e)
   }, t.wbg.__wbg_node_905d3e251edff8a2 = function(n) {
-    const e = V(n).node;
+    const e = W(n).node;
     return Z(e)
   }, t.wbg.__wbg_now_807e54c39636c349 = function() {
     return Date.now()
   }, t.wbg.__wbg_process_dc0fbacc7c1c06f7 = function(n) {
-    const e = V(n).process;
+    const e = W(n).process;
     return Z(e)
   }, t.wbg.__wbg_randomFillSync_ac0988aba3254290 = function() {
     return Fe(function(n, e) {
-      V(n).randomFillSync(Rr(e))
+      W(n).randomFillSync(Rr(e))
     }, arguments)
   }, t.wbg.__wbg_require_60cc747a6bc5215a = function() {
     return Fe(function() {
@@ -9577,7 +9577,7 @@ function BE() {
       return Z(n)
     }, arguments)
   }, t.wbg.__wbg_set_65595bdd868b3009 = function(n, e, r) {
-    V(n).set(V(e), r >>> 0)
+    W(n).set(W(e), r >>> 0)
   }, t.wbg.__wbg_static_accessor_GLOBAL_88a902d13a557d07 = function() {
     const n = typeof global > "u" ? null : global;
     return Ke(n) ? 0 : Z(n)
@@ -9591,34 +9591,34 @@ function BE() {
     const n = typeof window > "u" ? null : window;
     return Ke(n) ? 0 : Z(n)
   }, t.wbg.__wbg_subarray_aa9065fa9dc5df96 = function(n, e, r) {
-    const a = V(n).subarray(e >>> 0, r >>> 0);
+    const a = W(n).subarray(e >>> 0, r >>> 0);
     return Z(a)
   }, t.wbg.__wbg_versions_c01dfd4722a88165 = function(n) {
-    const e = V(n).versions;
+    const e = W(n).versions;
     return Z(e)
   }, t.wbg.__wbindgen_boolean_get = function(n) {
-    const e = V(n);
+    const e = W(n);
     return typeof e == "boolean" ? e ? 1 : 0 : 2
   }, t.wbg.__wbindgen_is_function = function(n) {
-    return typeof V(n) == "function"
+    return typeof W(n) == "function"
   }, t.wbg.__wbindgen_is_null = function(n) {
-    return V(n) === null
+    return W(n) === null
   }, t.wbg.__wbindgen_is_object = function(n) {
-    const e = V(n);
+    const e = W(n);
     return typeof e == "object" && e !== null
   }, t.wbg.__wbindgen_is_string = function(n) {
-    return typeof V(n) == "string"
+    return typeof W(n) == "string"
   }, t.wbg.__wbindgen_is_undefined = function(n) {
-    return V(n) === void 0
+    return W(n) === void 0
   }, t.wbg.__wbindgen_memory = function() {
     const n = q.memory;
     return Z(n)
   }, t.wbg.__wbindgen_number_get = function(n, e) {
-    const r = V(e),
+    const r = W(e),
       a = typeof r == "number" ? r : void 0;
     cn().setFloat64(n + 8, Ke(a) ? 0 : a, !0), cn().setInt32(n + 0, !Ke(a), !0)
   }, t.wbg.__wbindgen_object_clone_ref = function(n) {
-    const e = V(n);
+    const e = W(n);
     return Z(e)
   }, t.wbg.__wbindgen_object_drop_ref = function(n) {
     Rr(n)
