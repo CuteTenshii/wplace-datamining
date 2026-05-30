@@ -37,10 +37,10 @@ import {
 } from "./Icl9dwnj.js";
 import {
   P as F
-} from "./BBGBRmvS.js";
+} from "./BAHoaDaY.js";
 import {
   u as H
-} from "./C5wOeR6e.js";
+} from "./GvDPwcVo.js";
 const W = () => "Description",
   X = () => "Descrição",
   Y = () => "描述",
