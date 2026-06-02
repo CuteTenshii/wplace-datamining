@@ -1,50 +1,38 @@
-const h = o => o;
-
-function b(o) {
-  const r = o - 1;
-  return r * r * r + 1
-}
-
-function f(o, {
-  delay: r = 0,
-  duration: i = 400,
-  easing: s = h
-} = {}) {
-  const p = +getComputedStyle(o).opacity;
-  return {
-    delay: r,
-    duration: i,
-    easing: s,
-    css: a => `opacity: ${a*p}`
-  }
-}
-
-function v(o, {
-  delay: r = 0,
-  duration: i = 400,
-  easing: s = b,
-  axis: p = "y"
-} = {}) {
-  const a = getComputedStyle(o),
-    c = +a.opacity,
-    d = p === "y" ? "height" : "width",
-    $ = parseFloat(a[d]),
-    e = p === "y" ? ["top", "bottom"] : ["left", "right"],
-    n = e.map(t => `${t[0].toUpperCase()}${t.slice(1)}`),
-    l = parseFloat(a[`padding${n[0]}`]),
-    _ = parseFloat(a[`padding${n[1]}`]),
-    u = parseFloat(a[`margin${n[0]}`]),
-    y = parseFloat(a[`margin${n[1]}`]),
-    g = parseFloat(a[`border${n[0]}Width`]),
-    m = parseFloat(a[`border${n[1]}Width`]);
-  return {
-    delay: r,
-    duration: i,
-    easing: s,
-    css: t => `overflow: hidden;opacity: ${Math.min(t*20,1)*c};${d}: ${t*$}px;padding-${e[0]}: ${t*l}px;padding-${e[1]}: ${t*_}px;margin-${e[0]}: ${t*u}px;margin-${e[1]}: ${t*y}px;border-${e[0]}-width: ${t*g}px;border-${e[1]}-width: ${t*m}px;min-${d}: 0`
-  }
-}
+import {
+  g as s
+} from "./BhCkpOlh.js";
+const t = () => "Users banned successfully",
+  u = () => "Usuários banidos com sucesso",
+  o = () => "用户已成功封禁",
+  i = () => "Benutzer erfolgreich gebannt",
+  c = () => "Usuarios baneados correctamente",
+  _ = () => "Utilisateurs bannis avec succès",
+  a = () => "Utenti bannati con successo",
+  d = () => "ユーザーをBANしました。",
+  f = () => "Użytkownicy zostali pomyślnie zbanowani",
+  l = () => "Пользователи успешно забанены",
+  m = () => "Користувачів успішно заблоковано",
+  p = () => "Đã cấm người dùng thành công",
+  L = (n = {}, r = {}) => {
+    const e = r.locale ?? s();
+    return e === "en" ? t() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? _() : e === "it" ? a() : e === "jp" ? d() : e === "pl" ? f() : e === "ru" ? l() : e === "uk" ? m() : p()
+  },
+  b = () => "Users timeouted successfully",
+  g = () => "Usuários suspensos com sucesso",
+  U = () => "用户已成功禁言",
+  h = () => "Benutzer erfolgreich mit Timeout belegt",
+  y = () => "Usuarios suspendidos correctamente",
+  k = () => "Utilisateurs suspendus avec succès",
+  z = () => "Utenti sospesi con successo",
+  j = () => "ユーザーをタイムアウトしました。",
+  v = () => "Użytkownicy zostali pomyślnie zawieszeni",
+  w = () => "Пользователям успешно выдан тайм-аут",
+  B = () => "Користувачам успішно призначено тайм-аут",
+  x = () => "Đã tạm khóa người dùng thành công",
+  N = (n = {}, r = {}) => {
+    const e = r.locale ?? s();
+    return e === "en" ? b() : e === "pt" ? g() : e === "ch" ? U() : e === "de" ? h() : e === "es" ? y() : e === "fr" ? k() : e === "it" ? z() : e === "jp" ? j() : e === "pl" ? v() : e === "ru" ? w() : e === "uk" ? B() : x()
+  };
 export {
-  f,
-  v as s
+  N as a, L as u
 };

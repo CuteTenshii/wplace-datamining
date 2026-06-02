@@ -1,22 +1,50 @@
-import {
-  g as n
-} from "./BhCkpOlh.js";
-const t = () => "Leaderboard",
-  a = () => "Ranking",
-  o = () => "排行榜",
-  d = () => "Bestenliste",
-  u = () => "Clasificación",
-  s = () => "Classement",
-  l = () => "Classifica",
-  i = () => "ランキング",
-  c = () => "Ranking",
-  f = () => "Таблица лидеров",
-  b = () => "Таблиця лідерів",
-  _ = () => "Bảng xếp hạng",
-  k = (p = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? t() : r === "pt" ? a() : r === "ch" ? o() : r === "de" ? d() : r === "es" ? u() : r === "fr" ? s() : r === "it" ? l() : r === "jp" ? i() : r === "pl" ? c() : r === "ru" ? f() : r === "uk" ? b() : _()
-  };
+const h = o => o;
+
+function b(o) {
+  const r = o - 1;
+  return r * r * r + 1
+}
+
+function f(o, {
+  delay: r = 0,
+  duration: i = 400,
+  easing: s = h
+} = {}) {
+  const p = +getComputedStyle(o).opacity;
+  return {
+    delay: r,
+    duration: i,
+    easing: s,
+    css: a => `opacity: ${a*p}`
+  }
+}
+
+function v(o, {
+  delay: r = 0,
+  duration: i = 400,
+  easing: s = b,
+  axis: p = "y"
+} = {}) {
+  const a = getComputedStyle(o),
+    c = +a.opacity,
+    d = p === "y" ? "height" : "width",
+    $ = parseFloat(a[d]),
+    e = p === "y" ? ["top", "bottom"] : ["left", "right"],
+    n = e.map(t => `${t[0].toUpperCase()}${t.slice(1)}`),
+    l = parseFloat(a[`padding${n[0]}`]),
+    _ = parseFloat(a[`padding${n[1]}`]),
+    u = parseFloat(a[`margin${n[0]}`]),
+    y = parseFloat(a[`margin${n[1]}`]),
+    g = parseFloat(a[`border${n[0]}Width`]),
+    m = parseFloat(a[`border${n[1]}Width`]);
+  return {
+    delay: r,
+    duration: i,
+    easing: s,
+    css: t => `overflow: hidden;opacity: ${Math.min(t*20,1)*c};${d}: ${t*$}px;padding-${e[0]}: ${t*l}px;padding-${e[1]}: ${t*_}px;margin-${e[0]}: ${t*u}px;margin-${e[1]}: ${t*y}px;border-${e[0]}-width: ${t*g}px;border-${e[1]}-width: ${t*m}px;min-${d}: 0`
+  }
+}
 export {
-  k as l
+  f,
+  v as s
 };

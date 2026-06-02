@@ -37,7 +37,7 @@ import {
   i as r,
   L as ke,
   s as Et,
-  l as ae,
+  l as se,
   v as rn,
   u as E,
   aJ as qt,
@@ -62,7 +62,7 @@ import {
 } from "../chunks/2Od2egA-.js";
 import {
   v as ni
-} from "../chunks/CmzPWV-X.js";
+} from "../chunks/Dak6LgAj.js";
 import {
   l as Rt,
   n as le,
@@ -81,7 +81,7 @@ import {
   z as si,
   A as ai,
   T as li
-} from "../chunks/BpWOc0wQ.js";
+} from "../chunks/BGOSbLOV.js";
 import {
   a as Hn,
   i as sn,
@@ -100,7 +100,7 @@ import {
   j as pi,
   k as _i,
   l as gi
-} from "../chunks/DZ_hBzDM.js";
+} from "../chunks/G2Mih-Qd.js";
 import {
   k as vi
 } from "../chunks/ryCN0oNh.js";
@@ -139,210 +139,197 @@ import {
   t as Ei
 } from "../chunks/CPcsbTWB.js";
 import {
-  g as ne
+  g as ae
 } from "../chunks/BhCkpOlh.js";
+import {
+  p as Ti
+} from "../chunks/BTQgEZ2f.js";
 import "../chunks/B7vrJrEX.js";
-const Ti = !0,
-  _l = Object.freeze(Object.defineProperty({
+const Di = !0,
+  ol = Object.freeze(Object.defineProperty({
     __proto__: null,
-    prerender: Ti
+    prerender: Di
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  Di = () => "Input the code",
-  xi = () => "Insira o código",
-  Si = () => "输入验证码",
-  Ni = () => "Code eingeben",
-  Li = () => "Introduce el código",
-  Ai = () => "Entrez le code",
-  Pi = () => "Inserisci il codice",
-  ki = () => "コードを入力してください。",
-  Oi = () => "Wpisz kod",
-  Ri = () => "Введите код",
-  Mi = () => "Введіть код",
-  Bi = () => "Nhập mã",
-  Hi = (o = {}, t = {}) => {
-    const n = t.locale ?? ne();
-    return n === "en" ? Di() : n === "pt" ? xi() : n === "ch" ? Si() : n === "de" ? Ni() : n === "es" ? Li() : n === "fr" ? Ai() : n === "it" ? Pi() : n === "jp" ? ki() : n === "pl" ? Oi() : n === "ru" ? Ri() : n === "uk" ? Mi() : Bi()
+  xi = () => "Input the code",
+  Si = () => "Insira o código",
+  Ni = () => "输入验证码",
+  Li = () => "Code eingeben",
+  Ai = () => "Introduce el código",
+  Pi = () => "Entrez le code",
+  ki = () => "Inserisci il codice",
+  Oi = () => "コードを入力してください。",
+  Ri = () => "Wpisz kod",
+  Mi = () => "Введите код",
+  Bi = () => "Введіть код",
+  Hi = () => "Nhập mã",
+  Ui = (o = {}, t = {}) => {
+    const n = t.locale ?? ae();
+    return n === "en" ? xi() : n === "pt" ? Si() : n === "ch" ? Ni() : n === "de" ? Li() : n === "es" ? Ai() : n === "fr" ? Pi() : n === "it" ? ki() : n === "jp" ? Oi() : n === "pl" ? Ri() : n === "ru" ? Mi() : n === "uk" ? Bi() : Hi()
   },
-  Ui = () => "Not a valid phone number",
-  Wi = () => "Não é um número válido",
-  Vi = () => "不是有效的电话号码",
-  ji = () => "Keine gültige Telefonnummer",
+  Wi = () => "Not a valid phone number",
+  Vi = () => "Não é um número válido",
+  ji = () => "不是有效的电话号码",
+  Fi = () => "Keine gültige Telefonnummer",
   zi = () => "No es un número de teléfono válido",
-  Fi = () => "Numéro non valide",
-  Gi = () => "Numero non valido",
-  Ki = () => "有効な電話番号ではありません。",
-  qi = () => "To nie jest prawidłowy numer telefonu",
-  Yi = () => "Неверный номер телефона",
-  Xi = () => "Некоректний номер телефону",
-  Qi = () => "Không phải số điện thoại hợp lệ",
-  Zi = (o = {}, t = {}) => {
-    const n = t.locale ?? ne();
-    return n === "en" ? Ui() : n === "pt" ? Wi() : n === "ch" ? Vi() : n === "de" ? ji() : n === "es" ? zi() : n === "fr" ? Fi() : n === "it" ? Gi() : n === "jp" ? Ki() : n === "pl" ? qi() : n === "ru" ? Yi() : n === "uk" ? Xi() : Qi()
+  Gi = () => "Numéro non valide",
+  Ki = () => "Numero non valido",
+  qi = () => "有効な電話番号ではありません。",
+  Yi = () => "To nie jest prawidłowy numer telefonu",
+  Xi = () => "Неверный номер телефона",
+  Qi = () => "Некоректний номер телефону",
+  Zi = () => "Không phải số điện thoại hợp lệ",
+  Ji = (o = {}, t = {}) => {
+    const n = t.locale ?? ae();
+    return n === "en" ? Wi() : n === "pt" ? Vi() : n === "ch" ? ji() : n === "de" ? Fi() : n === "es" ? zi() : n === "fr" ? Gi() : n === "it" ? Ki() : n === "jp" ? qi() : n === "pl" ? Yi() : n === "ru" ? Xi() : n === "uk" ? Qi() : Zi()
   },
-  Ji = () => "Your phone number is not stored. We only keep a secure, irreversible hash to prevent duplicate accounts.",
-  $i = () => "Seu número de telefone nunca é armazenado. Mantemos apenas um hash seguro e irreversível para evitar contas duplicadas.",
-  tr = () => "您的电话号码不会被存储。我们仅保留安全且不可逆的哈希值，以防止重复账户。",
-  er = () => "Deine Telefonnummer wird niemals gespeichert. Wir speichern nur einen sicheren, unumkehrbaren Hash, um doppelte Konten zu verhindern.",
-  nr = () => "Tu número de teléfono nunca se almacena. Solo guardamos un hash seguro e irreversible para evitar cuentas duplicadas.",
-  ir = () => "Votre numéro de téléphone n'est jamais stocké. Nous conservons uniquement un hash sécurisé et irréversible pour empêcher les comptes en double.",
-  rr = () => "Il tuo numero di telefono non viene mai memorizzato. Conserviamo solo un hash sicuro e irreversibile per prevenire account duplicati.",
-  or = () => "電話番号が保存されることはありません。重複アカウントを防止するため、安全で不可逆なハッシュのみを保持します。",
-  sr = () => "Twój numer telefonu nigdy nie jest przechowywany. Zachowujemy jedynie bezpieczny, nieodwracalny hash, aby zapobiec tworzeniu duplikatów kont.",
-  ar = () => "Ваш номер телефона никогда не сохраняется. Мы храним только безопасный необратимый хеш для предотвращения дублирования аккаунтов.",
-  lr = () => "Ваш номер телефону ніколи не зберігається. Ми зберігаємо лише безпечний незворотний хеш для запобігання дублюванню акаунтів.",
-  ur = () => "Số điện thoại của bạn không bao giờ được lưu trữ. Chúng tôi chỉ giữ một mã hash an toàn, không thể đảo ngược để ngăn chặn tài khoản trùng lặp.",
-  cr = (o = {}, t = {}) => {
-    const n = t.locale ?? ne();
-    return n === "en" ? Ji() : n === "pt" ? $i() : n === "ch" ? tr() : n === "de" ? er() : n === "es" ? nr() : n === "fr" ? ir() : n === "it" ? rr() : n === "jp" ? or() : n === "pl" ? sr() : n === "ru" ? ar() : n === "uk" ? lr() : ur()
+  $i = () => "Your phone number is not stored. We only keep a secure, irreversible hash to prevent duplicate accounts.",
+  tr = () => "Seu número de telefone nunca é armazenado. Mantemos apenas um hash seguro e irreversível para evitar contas duplicadas.",
+  er = () => "您的电话号码不会被存储。我们仅保留安全且不可逆的哈希值，以防止重复账户。",
+  nr = () => "Deine Telefonnummer wird niemals gespeichert. Wir speichern nur einen sicheren, unumkehrbaren Hash, um doppelte Konten zu verhindern.",
+  ir = () => "Tu número de teléfono nunca se almacena. Solo guardamos un hash seguro e irreversible para evitar cuentas duplicadas.",
+  rr = () => "Votre numéro de téléphone n'est jamais stocké. Nous conservons uniquement un hash sécurisé et irréversible pour empêcher les comptes en double.",
+  or = () => "Il tuo numero di telefono non viene mai memorizzato. Conserviamo solo un hash sicuro e irreversibile per prevenire account duplicati.",
+  sr = () => "電話番号が保存されることはありません。重複アカウントを防止するため、安全で不可逆なハッシュのみを保持します。",
+  ar = () => "Twój numer telefonu nigdy nie jest przechowywany. Zachowujemy jedynie bezpieczny, nieodwracalny hash, aby zapobiec tworzeniu duplikatów kont.",
+  lr = () => "Ваш номер телефона никогда не сохраняется. Мы храним только безопасный необратимый хеш для предотвращения дублирования аккаунтов.",
+  ur = () => "Ваш номер телефону ніколи не зберігається. Ми зберігаємо лише безпечний незворотний хеш для запобігання дублюванню акаунтів.",
+  cr = () => "Số điện thoại của bạn không bao giờ được lưu trữ. Chúng tôi chỉ giữ một mã hash an toàn, không thể đảo ngược để ngăn chặn tài khoản trùng lặp.",
+  dr = (o = {}, t = {}) => {
+    const n = t.locale ?? ae();
+    return n === "en" ? $i() : n === "pt" ? tr() : n === "ch" ? er() : n === "de" ? nr() : n === "es" ? ir() : n === "fr" ? rr() : n === "it" ? or() : n === "jp" ? sr() : n === "pl" ? ar() : n === "ru" ? lr() : n === "uk" ? ur() : cr()
   },
-  dr = () => "Phone verification",
-  hr = () => "Verificação de telefone",
-  fr = () => "电话验证",
-  mr = () => "Telefon-Verifizierung",
-  pr = () => "Verificación de teléfono",
-  _r = () => "Vérification du téléphone",
-  gr = () => "Verifica del telefono",
-  vr = () => "電話番号の確認",
-  yr = () => "Weryfikacja telefonu",
-  Cr = () => "Подтверждение телефона",
-  br = () => "Підтвердження телефону",
-  wr = () => "Xác minh số điện thoại",
-  Ir = (o = {}, t = {}) => {
-    const n = t.locale ?? ne();
-    return n === "en" ? dr() : n === "pt" ? hr() : n === "ch" ? fr() : n === "de" ? mr() : n === "es" ? pr() : n === "fr" ? _r() : n === "it" ? gr() : n === "jp" ? vr() : n === "pl" ? yr() : n === "ru" ? Cr() : n === "uk" ? br() : wr()
+  hr = () => "Verify your phone number to keep painting. This helps us block bots and multi-accounting to keep a fair experience for everyone.",
+  fr = () => "Verifique seu número de telefone para continuar pintando. Isso nos ajuda a bloquear bots e o uso de várias contas para garantir uma experiência justa para todos.",
+  mr = () => "请验证你的电话号码以继续绘画。这有助于我们阻止机器人和多账号行为，为所有人提供公平的体验。",
+  pr = () => "Bitte verifiziere deine Telefonnummer, um weitermalen zu können. Das hilft uns, Bots und Multi-Accounting zu blockieren, damit alle ein faires Erlebnis haben.",
+  _r = () => "Verifica tu número de teléfono para seguir pintando. Esto nos ayuda a bloquear bots y el uso de varias cuentas para garantizar una experiencia justa para todos.",
+  gr = () => "Vérifiez votre numéro de téléphone pour continuer à peindre. Cela nous aide à bloquer les bots et les comptes multiples afin de garantir une expérience équitable pour tous.",
+  vr = () => "Verifica il tuo numero di telefono per continuare a dipingere. Questo ci aiuta a bloccare bot e account multipli per garantire un'esperienza equa a tutti.",
+  yr = () => "描き続けるには電話番号の確認が必要です。これはボットや複数アカウントの利用を防ぎ、すべてのプレイヤーに公平な体験を提供するための手順です。",
+  Cr = () => "Zweryfikuj swój numer telefonu, aby kontynuować malowanie. Pomaga nam to blokować boty i zakładanie wielu kont, aby zapewnić wszystkim uczciwą rozgrywkę.",
+  br = () => "Подтвердите свой номер телефона, чтобы продолжить рисование. Это помогает нам блокировать ботов и мультиаккаунты, обеспечивая честные условия для всех.",
+  wr = () => "Підтвердьте свій номер телефону, щоб продовжити малювання. Це допомагає нам блокувати ботів і мультиакаунти, щоб забезпечити чесні умови для всіх.",
+  Ir = () => "Vui lòng xác minh số điện thoại của bạn để tiếp tục vẽ. Điều này giúp chúng tôi chặn bot và việc dùng nhiều tài khoản để mang lại trải nghiệm công bằng cho mọi người.",
+  Er = (o = {}, t = {}) => {
+    const n = t.locale ?? ae();
+    return n === "en" ? hr() : n === "pt" ? fr() : n === "ch" ? mr() : n === "de" ? pr() : n === "es" ? _r() : n === "fr" ? gr() : n === "it" ? vr() : n === "jp" ? yr() : n === "pl" ? Cr() : n === "ru" ? br() : n === "uk" ? wr() : Ir()
   },
-  Er = () => "Verify your phone number to keep painting. This helps us block bots and multi-accounting to keep a fair experience for everyone.",
-  Tr = () => "Verifique seu número de telefone para continuar pintando. Isso nos ajuda a bloquear bots e o uso de várias contas para garantir uma experiência justa para todos.",
-  Dr = () => "请验证你的电话号码以继续绘画。这有助于我们阻止机器人和多账号行为，为所有人提供公平的体验。",
-  xr = () => "Bitte verifiziere deine Telefonnummer, um weitermalen zu können. Das hilft uns, Bots und Multi-Accounting zu blockieren, damit alle ein faires Erlebnis haben.",
-  Sr = () => "Verifica tu número de teléfono para seguir pintando. Esto nos ayuda a bloquear bots y el uso de varias cuentas para garantizar una experiencia justa para todos.",
-  Nr = () => "Vérifiez votre numéro de téléphone pour continuer à peindre. Cela nous aide à bloquer les bots et les comptes multiples afin de garantir une expérience équitable pour tous.",
-  Lr = () => "Verifica il tuo numero di telefono per continuare a dipingere. Questo ci aiuta a bloccare bot e account multipli per garantire un'esperienza equa a tutti.",
-  Ar = () => "描き続けるには電話番号の確認が必要です。これはボットや複数アカウントの利用を防ぎ、すべてのプレイヤーに公平な体験を提供するための手順です。",
-  Pr = () => "Zweryfikuj swój numer telefonu, aby kontynuować malowanie. Pomaga nam to blokować boty i zakładanie wielu kont, aby zapewnić wszystkim uczciwą rozgrywkę.",
-  kr = () => "Подтвердите свой номер телефона, чтобы продолжить рисование. Это помогает нам блокировать ботов и мультиаккаунты, обеспечивая честные условия для всех.",
-  Or = () => "Підтвердьте свій номер телефону, щоб продовжити малювання. Це допомагає нам блокувати ботів і мультиакаунти, щоб забезпечити чесні умови для всіх.",
-  Rr = () => "Vui lòng xác minh số điện thoại của bạn để tiếp tục vẽ. Điều này giúp chúng tôi chặn bot và việc dùng nhiều tài khoản để mang lại trải nghiệm công bằng cho mọi người.",
-  Mr = (o = {}, t = {}) => {
-    const n = t.locale ?? ne();
-    return n === "en" ? Er() : n === "pt" ? Tr() : n === "ch" ? Dr() : n === "de" ? xr() : n === "es" ? Sr() : n === "fr" ? Nr() : n === "it" ? Lr() : n === "jp" ? Ar() : n === "pl" ? Pr() : n === "ru" ? kr() : n === "uk" ? Or() : Rr()
+  Tr = () => "Phone successfully verified",
+  Dr = () => "Telefone verificado com sucesso",
+  xr = () => "电话验证成功",
+  Sr = () => "Telefon erfolgreich verifiziert",
+  Nr = () => "Teléfono verificado correctamente",
+  Lr = () => "Téléphone vérifié avec succès",
+  Ar = () => "Telefono verificato con successo",
+  Pr = () => "電話番号を確認しました。",
+  kr = () => "Telefon został pomyślnie zweryfikowany",
+  Or = () => "Телефон успешно подтверждён",
+  Rr = () => "Телефон успішно підтверджено",
+  Mr = () => "Đã xác minh số điện thoại thành công",
+  Br = (o = {}, t = {}) => {
+    const n = t.locale ?? ae();
+    return n === "en" ? Tr() : n === "pt" ? Dr() : n === "ch" ? xr() : n === "de" ? Sr() : n === "es" ? Nr() : n === "fr" ? Lr() : n === "it" ? Ar() : n === "jp" ? Pr() : n === "pl" ? kr() : n === "ru" ? Or() : n === "uk" ? Rr() : Mr()
   },
-  Br = () => "Phone successfully verified",
-  Hr = () => "Telefone verificado com sucesso",
-  Ur = () => "电话验证成功",
-  Wr = () => "Telefon erfolgreich verifiziert",
-  Vr = () => "Teléfono verificado correctamente",
-  jr = () => "Téléphone vérifié avec succès",
-  zr = () => "Telefono verificato con successo",
-  Fr = () => "電話番号を確認しました。",
-  Gr = () => "Telefon został pomyślnie zweryfikowany",
-  Kr = () => "Телефон успешно подтверждён",
-  qr = () => "Телефон успішно підтверджено",
-  Yr = () => "Đã xác minh số điện thoại thành công",
-  Xr = (o = {}, t = {}) => {
-    const n = t.locale ?? ne();
-    return n === "en" ? Br() : n === "pt" ? Hr() : n === "ch" ? Ur() : n === "de" ? Wr() : n === "es" ? Vr() : n === "fr" ? jr() : n === "it" ? zr() : n === "jp" ? Fr() : n === "pl" ? Gr() : n === "ru" ? Kr() : n === "uk" ? qr() : Yr()
+  Hr = () => "Resend Code",
+  Ur = () => "Reenviar Código",
+  Wr = () => "重新发送验证码",
+  Vr = () => "Code erneut senden",
+  jr = () => "Reenviar código",
+  Fr = () => "Renvoyer le code",
+  zr = () => "Reinvia codice",
+  Gr = () => "コードを再送信",
+  Kr = () => "Wyślij kod ponownie",
+  qr = () => "Отправить код ещё раз",
+  Yr = () => "Надіслати код ще раз",
+  Xr = () => "Gửi lại mã",
+  Qr = (o = {}, t = {}) => {
+    const n = t.locale ?? ae();
+    return n === "en" ? Hr() : n === "pt" ? Ur() : n === "ch" ? Wr() : n === "de" ? Vr() : n === "es" ? jr() : n === "fr" ? Fr() : n === "it" ? zr() : n === "jp" ? Gr() : n === "pl" ? Kr() : n === "ru" ? qr() : n === "uk" ? Yr() : Xr()
   },
-  Qr = () => "Resend Code",
-  Zr = () => "Reenviar Código",
-  Jr = () => "重新发送验证码",
-  $r = () => "Code erneut senden",
-  to = () => "Reenviar código",
-  eo = () => "Renvoyer le code",
-  no = () => "Reinvia codice",
-  io = () => "コードを再送信",
-  ro = () => "Wyślij kod ponownie",
-  oo = () => "Отправить код ещё раз",
-  so = () => "Надіслати код ще раз",
-  ao = () => "Gửi lại mã",
-  lo = (o = {}, t = {}) => {
-    const n = t.locale ?? ne();
-    return n === "en" ? Qr() : n === "pt" ? Zr() : n === "ch" ? Jr() : n === "de" ? $r() : n === "es" ? to() : n === "fr" ? eo() : n === "it" ? no() : n === "jp" ? io() : n === "pl" ? ro() : n === "ru" ? oo() : n === "uk" ? so() : ao()
+  Zr = () => "Send Code",
+  Jr = () => "Enviar o código",
+  $r = () => "发送验证码",
+  to = () => "Code senden",
+  eo = () => "Enviar código",
+  no = () => "Envoyer le code",
+  io = () => "Invia codice",
+  ro = () => "コードを送信",
+  oo = () => "Wyślij kod",
+  so = () => "Отправить код",
+  ao = () => "Надіслати код",
+  lo = () => "Gửi mã",
+  uo = (o = {}, t = {}) => {
+    const n = t.locale ?? ae();
+    return n === "en" ? Zr() : n === "pt" ? Jr() : n === "ch" ? $r() : n === "de" ? to() : n === "es" ? eo() : n === "fr" ? no() : n === "it" ? io() : n === "jp" ? ro() : n === "pl" ? oo() : n === "ru" ? so() : n === "uk" ? ao() : lo()
   },
-  uo = () => "Send Code",
-  co = () => "Enviar o código",
-  ho = () => "发送验证码",
-  fo = () => "Code senden",
-  mo = () => "Enviar código",
-  po = () => "Envoyer le code",
-  _o = () => "Invia codice",
-  go = () => "コードを送信",
-  vo = () => "Wyślij kod",
-  yo = () => "Отправить код",
-  Co = () => "Надіслати код",
-  bo = () => "Gửi mã",
-  wo = (o = {}, t = {}) => {
-    const n = t.locale ?? ne();
-    return n === "en" ? uo() : n === "pt" ? co() : n === "ch" ? ho() : n === "de" ? fo() : n === "es" ? mo() : n === "fr" ? po() : n === "it" ? _o() : n === "jp" ? go() : n === "pl" ? vo() : n === "ru" ? yo() : n === "uk" ? Co() : bo()
+  co = o => `Sent to ${o.phone}`,
+  ho = o => `Enviado para ${o.phone}`,
+  fo = o => `已发送至 ${o.phone}`,
+  mo = o => `An ${o.phone} gesendet`,
+  po = o => `Enviado a ${o.phone}`,
+  _o = o => `Envoyé à ${o.phone}`,
+  go = o => `Inviato a ${o.phone}`,
+  vo = o => `${o.phone} に送信しました`,
+  yo = o => `Wysłano na ${o.phone}`,
+  Co = o => `Отправлено на ${o.phone}`,
+  bo = o => `Надіслано на ${o.phone}`,
+  wo = o => `Đã gửi tới ${o.phone}`,
+  Io = (o, t = {}) => {
+    const n = t.locale ?? ae();
+    return n === "en" ? co(o) : n === "pt" ? ho(o) : n === "ch" ? fo(o) : n === "de" ? mo(o) : n === "es" ? po(o) : n === "fr" ? _o(o) : n === "it" ? go(o) : n === "jp" ? vo(o) : n === "pl" ? yo(o) : n === "ru" ? Co(o) : n === "uk" ? bo(o) : wo(o)
   },
-  Io = o => `Sent to ${o.phone}`,
-  Eo = o => `Enviado para ${o.phone}`,
-  To = o => `已发送至 ${o.phone}`,
-  Do = o => `An ${o.phone} gesendet`,
-  xo = o => `Enviado a ${o.phone}`,
-  So = o => `Envoyé à ${o.phone}`,
-  No = o => `Inviato a ${o.phone}`,
-  Lo = o => `${o.phone} に送信しました`,
-  Ao = o => `Wysłano na ${o.phone}`,
-  Po = o => `Отправлено на ${o.phone}`,
-  ko = o => `Надіслано на ${o.phone}`,
-  Oo = o => `Đã gửi tới ${o.phone}`,
-  Ro = (o, t = {}) => {
-    const n = t.locale ?? ne();
-    return n === "en" ? Io(o) : n === "pt" ? Eo(o) : n === "ch" ? To(o) : n === "de" ? Do(o) : n === "es" ? xo(o) : n === "fr" ? So(o) : n === "it" ? No(o) : n === "jp" ? Lo(o) : n === "pl" ? Ao(o) : n === "ru" ? Po(o) : n === "uk" ? ko(o) : Oo(o)
+  Eo = o => `Code sent to ${o.phone} via ${o.channel}`,
+  To = o => `Código enviado para ${o.phone} via ${o.channel}`,
+  Do = o => `验证码已通过${o.channel}发送至${o.phone}`,
+  xo = o => `Code an ${o.phone} per ${o.channel} gesendet`,
+  So = o => `Código enviado a ${o.phone} por ${o.channel}`,
+  No = o => `Code envoyé à ${o.phone} par ${o.channel}`,
+  Lo = o => `Codice inviato a ${o.phone} tramite ${o.channel}`,
+  Ao = o => `コードを${o.channel}で${o.phone}に送信しました`,
+  Po = o => `Kod wysłany do ${o.phone} przez ${o.channel}`,
+  ko = o => `Код отправлен на ${o.phone} через ${o.channel}`,
+  Oo = o => `Код надіслано на ${o.phone} через ${o.channel}`,
+  Ro = o => `Mã đã được gửi tới ${o.phone} qua ${o.channel}`,
+  Mo = (o, t = {}) => {
+    const n = t.locale ?? ae();
+    return n === "en" ? Eo(o) : n === "pt" ? To(o) : n === "ch" ? Do(o) : n === "de" ? xo(o) : n === "es" ? So(o) : n === "fr" ? No(o) : n === "it" ? Lo(o) : n === "jp" ? Ao(o) : n === "pl" ? Po(o) : n === "ru" ? ko(o) : n === "uk" ? Oo(o) : Ro(o)
   },
-  Mo = o => `Code sent to ${o.phone} via ${o.channel}`,
-  Bo = o => `Código enviado para ${o.phone} via ${o.channel}`,
-  Ho = o => `验证码已通过${o.channel}发送至${o.phone}`,
-  Uo = o => `Code an ${o.phone} per ${o.channel} gesendet`,
-  Wo = o => `Código enviado a ${o.phone} por ${o.channel}`,
-  Vo = o => `Code envoyé à ${o.phone} par ${o.channel}`,
-  jo = o => `Codice inviato a ${o.phone} tramite ${o.channel}`,
-  zo = o => `コードを${o.channel}で${o.phone}に送信しました`,
-  Fo = o => `Kod wysłany do ${o.phone} przez ${o.channel}`,
-  Go = o => `Код отправлен на ${o.phone} через ${o.channel}`,
-  Ko = o => `Код надіслано на ${o.phone} через ${o.channel}`,
-  qo = o => `Mã đã được gửi tới ${o.phone} qua ${o.channel}`,
-  Yo = (o, t = {}) => {
-    const n = t.locale ?? ne();
-    return n === "en" ? Mo(o) : n === "pt" ? Bo(o) : n === "ch" ? Ho(o) : n === "de" ? Uo(o) : n === "es" ? Wo(o) : n === "fr" ? Vo(o) : n === "it" ? jo(o) : n === "jp" ? zo(o) : n === "pl" ? Fo(o) : n === "ru" ? Go(o) : n === "uk" ? Ko(o) : qo(o)
+  Bo = () => "Try another number",
+  Ho = () => "Tentar outro número",
+  Uo = () => "请尝试使用其他号码",
+  Wo = () => "Andere Nummer versuchen",
+  Vo = () => "Prueba con otro número",
+  jo = () => "Essayez un autre numéro",
+  Fo = () => "Prova un altro numero",
+  zo = () => "別の番号をお試しください。",
+  Go = () => "Spróbuj innego numeru",
+  Ko = () => "Попробуйте другой номер",
+  qo = () => "Спробувати інший номер",
+  Yo = () => "Thử số khác",
+  Xo = (o = {}, t = {}) => {
+    const n = t.locale ?? ae();
+    return n === "en" ? Bo() : n === "pt" ? Ho() : n === "ch" ? Uo() : n === "de" ? Wo() : n === "es" ? Vo() : n === "fr" ? jo() : n === "it" ? Fo() : n === "jp" ? zo() : n === "pl" ? Go() : n === "ru" ? Ko() : n === "uk" ? qo() : Yo()
   },
-  Xo = () => "Try another number",
-  Qo = () => "Tentar outro número",
-  Zo = () => "请尝试使用其他号码",
-  Jo = () => "Andere Nummer versuchen",
-  $o = () => "Prueba con otro número",
-  ts = () => "Essayez un autre numéro",
-  es = () => "Prova un altro numero",
-  ns = () => "別の番号をお試しください。",
-  is = () => "Spróbuj innego numeru",
-  rs = () => "Попробуйте другой номер",
-  os = () => "Спробувати інший номер",
-  ss = () => "Thử số khác",
-  as = (o = {}, t = {}) => {
-    const n = t.locale ?? ne();
-    return n === "en" ? Xo() : n === "pt" ? Qo() : n === "ch" ? Zo() : n === "de" ? Jo() : n === "es" ? $o() : n === "fr" ? ts() : n === "it" ? es() : n === "jp" ? ns() : n === "pl" ? is() : n === "ru" ? rs() : n === "uk" ? os() : ss()
-  },
-  ls = Array(12).fill(0);
-var us = dt('<div class="sonner-loading-bar"></div>'),
-  cs = dt('<div><div class="sonner-spinner"></div></div>');
+  Qo = Array(12).fill(0);
+var Zo = dt('<div class="sonner-loading-bar"></div>'),
+  Jo = dt('<div><div class="sonner-spinner"></div></div>');
 
-function ds(o, t) {
+function $o(o, t) {
   Yt(t, !0);
-  var n = cs(),
+  var n = Jo(),
     f = et(n);
-  Ze(f, 23, () => ls, (g, w) => `spinner-bar-${w}`, (g, w) => {
-    var x = us();
+  Ze(f, 23, () => Qo, (g, w) => `spinner-bar-${w}`, (g, w) => {
+    var x = Zo();
     v(g, x)
   }), Q(f), Q(n), Tt(g => {
     Jt(n, 1, g), bt(n, "data-visible", t.visible)
   }, [() => ue(["sonner-loading-wrapper", t.class].filter(Boolean).join(" "))]), v(o, n), Xt()
 }
-const hs = typeof window < "u" ? window : void 0;
+const ts = typeof window < "u" ? window : void 0;
 
-function fs(o) {
+function es(o) {
   let t = o.activeElement;
   for (; t != null && t.shadowRoot;) {
     const n = t.shadowRoot.activeElement;
@@ -352,12 +339,12 @@ function fs(o) {
   return t
 }
 var be, Me;
-class ms {
+class ns {
   constructor(t = {}) {
     gt(this, be);
     gt(this, Me);
     const {
-      window: n = hs,
+      window: n = ts,
       document: f = n == null ? void 0 : n.document
     } = t;
     n !== void 0 && (pe(this, be, f), pe(this, Me, ei(g => {
@@ -370,13 +357,13 @@ class ms {
   }
   get current() {
     var t;
-    return (t = p(this, Me)) == null || t.call(this), p(this, be) ? fs(p(this, be)) : null
+    return (t = p(this, Me)) == null || t.call(this), p(this, be) ? es(p(this, be)) : null
   }
 }
 be = new WeakMap, Me = new WeakMap;
-new ms;
+new ns;
 var Be, ce;
-class ps {
+class is {
   constructor(t) {
     gt(this, Be);
     gt(this, ce);
@@ -402,13 +389,13 @@ class ps {
   }
 }
 Be = new WeakMap, ce = new WeakMap;
-const _s = new ps("<Toaster/>");
+const rs = new is("<Toaster/>");
 
 function qe(o) {
   return o.label !== void 0
 }
 
-function gs() {
+function os() {
   let o = $(vn(typeof document < "u" ? document.hidden : !1));
   return Ut(() => Re(document, "visibilitychange", () => {
     _(o, document.hidden, !0)
@@ -419,11 +406,11 @@ function gs() {
   }
 }
 const kn = 4e3,
-  vs = 14,
-  ys = 45,
-  Cs = 200,
-  bs = .05,
-  ws = {
+  ss = 14,
+  as = 45,
+  ls = 200,
+  us = .05,
+  cs = {
     toast: "",
     title: "",
     description: "",
@@ -440,7 +427,7 @@ const kn = 4e3,
     loading: ""
   };
 
-function Is(o) {
+function ds(o) {
   const [t, n] = o.split("-"), f = [];
   return t && f.push(t), n && f.push(n), f
 }
@@ -448,23 +435,23 @@ function Is(o) {
 function On(o) {
   return 1 / (1.5 + Math.abs(o) / 20)
 }
-var Es = dt("<div><!></div>"),
-  Ts = dt('<button data-close-button=""><!></button>'),
-  Ds = dt('<div data-icon=""><!> <!></div>'),
-  xs = dt('<div data-description=""><!></div>'),
-  Ss = dt('<button data-button="" data-cancel=""> </button>'),
-  Ns = dt('<button data-button=""> </button>'),
-  Ls = dt('<!> <div data-content=""><div data-title=""><!></div> <!></div> <!> <!>', 1),
-  As = dt('<li data-sonner-toast=""><!> <!></li>');
+var hs = dt("<div><!></div>"),
+  fs = dt('<button data-close-button=""><!></button>'),
+  ms = dt('<div data-icon=""><!> <!></div>'),
+  ps = dt('<div data-description=""><!></div>'),
+  _s = dt('<button data-button="" data-cancel=""> </button>'),
+  gs = dt('<button data-button=""> </button>'),
+  vs = dt('<!> <div data-content=""><div data-title=""><!></div> <!></div> <!> <!>', 1),
+  ys = dt('<li data-sonner-toast=""><!> <!></li>');
 
-function Ps(o, t) {
+function Cs(o, t) {
   Yt(t, !0);
   const n = P => {
     var U = Z(),
       rt = G(U);
     {
       var ut = m => {
-          var At = Es(),
+          var At = hs(),
             l = et(At);
           Ht(l, () => t.loadingIcon), Q(At), Tt(e => {
             Jt(At, 1, e), bt(At, "data-visible", r(H) === "loading")
@@ -480,7 +467,7 @@ function Ps(o, t) {
                 return le((e = r(Y)) == null ? void 0 : e.loader, (i = t.toast.classes) == null ? void 0 : i.loader)
               }),
               l = E(() => r(H) === "loading");
-            ds(m, {
+            $o(m, {
               get class() {
                 return r(At)
               },
@@ -502,7 +489,7 @@ function Ps(o, t) {
     x = k(t, "unstyled", 3, !1),
     B = k(t, "defaultRichColors", 3, !1);
   const W = {
-    ...ws
+    ...cs
   };
   let L = $(!1),
     y = $(!1),
@@ -527,9 +514,9 @@ function Ps(o, t) {
   let xt = null;
   const Lt = E(() => t.position.split("-")),
     Mt = E(() => Rt.heights.reduce((P, U, rt) => rt >= r(it) ? P : P + U.height, 0)),
-    ie = gs(),
+    ne = os(),
     at = E(() => t.toast.invert || t.invert),
-    Ft = E(() => r(H) === "loading"),
+    zt = E(() => r(H) === "loading"),
     Y = E(() => ({
       ...W,
       ...t.classes
@@ -537,12 +524,12 @@ function Ps(o, t) {
     mt = E(() => t.toast.title),
     yt = E(() => t.toast.description);
   let Ct = $(0),
-    re = $(0);
-  const A = E(() => Math.round(r(it) * vs + r(Mt)));
+    ie = $(0);
+  const A = E(() => Math.round(r(it) * ss + r(Mt)));
   Ut(() => {
     r(mt), r(yt);
     let P;
-    t.expanded || t.expandByDefault ? P = 1 : P = 1 - t.index * bs;
+    t.expanded || t.expandByDefault ? P = 1 : P = 1 - t.index * us;
     const U = ke(() => r(b));
     if (U === void 0) return;
     U.style.setProperty("height", "auto");
@@ -559,10 +546,10 @@ function Ps(o, t) {
     })
   });
 
-  function F() {
+  function z() {
     _(y, !0), _(R, r(A), !0), Rt.removeHeight(t.toast.id), setTimeout(() => {
       Rt.remove(t.toast.id)
-    }, Cs)
+    }, ls)
   }
   let wt;
   const lt = E(() => t.toast.promise && r(H) === "loading" || t.toast.duration === Number.POSITIVE_INFINITY);
@@ -570,20 +557,20 @@ function Ps(o, t) {
   function Wt() {
     _(Ct, new Date().getTime(), !0), wt = setTimeout(() => {
       var P, U;
-      (U = (P = t.toast).onAutoClose) == null || U.call(P, t.toast), F()
+      (U = (P = t.toast).onAutoClose) == null || U.call(P, t.toast), z()
     }, O)
   }
 
   function te() {
-    if (r(re) < r(Ct)) {
+    if (r(ie) < r(Ct)) {
       const P = new Date().getTime() - r(Ct);
       O = O - P
     }
-    _(re, new Date().getTime(), !0)
+    _(ie, new Date().getTime(), !0)
   }
   Ut(() => {
     t.toast.updated && (clearTimeout(wt), O = r(Nt), Wt())
-  }), Ut(() => (r(lt) || (t.expanded || t.interacting || ie.current ? te() : Wt()), () => clearTimeout(wt))), fe(() => {
+  }), Ut(() => (r(lt) || (t.expanded || t.interacting || ne.current ? te() : Wt()), () => clearTimeout(wt))), fe(() => {
     var U;
     _(L, !0);
     const P = (U = r(b)) == null ? void 0 : U.getBoundingClientRect().height;
@@ -596,11 +583,11 @@ function Ps(o, t) {
   }), Ut(() => {
     t.toast.delete && ke(() => {
       var P, U;
-      F(), (U = (P = t.toast).onDismiss) == null || U.call(P, t.toast)
+      z(), (U = (P = t.toast).onDismiss) == null || U.call(P, t.toast)
     })
   });
   const ge = P => {
-      if (r(Ft)) return;
+      if (r(zt)) return;
       _(R, r(A), !0);
       const U = P.target;
       U.setPointerCapture(P.pointerId), U.tagName !== "BUTTON" && (_(D, !0), xt = {
@@ -608,7 +595,7 @@ function Ps(o, t) {
         y: P.clientY
       })
     },
-    oe = () => {
+    re = () => {
       var m, At, l, e, i, s;
       if (r(N) || !r(pt)) return;
       xt = null;
@@ -617,8 +604,8 @@ function Ps(o, t) {
         rt = new Date().getTime() - 0,
         ut = r(S) === "x" ? P : U,
         tt = Math.abs(ut) / rt;
-      if (Math.abs(ut) >= ys || tt > .11) {
-        _(R, r(A), !0), (e = (l = t.toast).onDismiss) == null || e.call(l, t.toast), r(S) === "x" ? _(K, P > 0 ? "right" : "left", !0) : _(K, U > 0 ? "down" : "up", !0), F(), _(N, !0);
+      if (Math.abs(ut) >= as || tt > .11) {
+        _(R, r(A), !0), (e = (l = t.toast).onDismiss) == null || e.call(l, t.toast), r(S) === "x" ? _(K, P > 0 ? "right" : "left", !0) : _(K, U > 0 ? "down" : "up", !0), z(), _(N, !0);
         return
       } else(i = r(b)) == null || i.style.setProperty("--swipe-amount-x", "0px"), (s = r(b)) == null || s.style.setProperty("--swipe-amount-y", "0px");
       _(q, !1), _(D, !1), _(S, null)
@@ -628,7 +615,7 @@ function Ps(o, t) {
       if (!xt || !r(pt) || (((At = window.getSelection()) == null ? void 0 : At.toString().length) ?? -1) > 0) return;
       const rt = P.clientY - xt.y,
         ut = P.clientX - xt.x,
-        tt = t.swipeDirections ?? Is(t.position);
+        tt = t.swipeDirections ?? ds(t.position);
       !r(S) && (Math.abs(ut) > 1 || Math.abs(rt) > 1) && _(S, Math.abs(ut) > Math.abs(rt) ? "x" : "y", !0);
       let m = {
         x: 0,
@@ -652,22 +639,22 @@ function Ps(o, t) {
       _(D, !1), _(S, null), xt = null
     },
     Pt = E(() => t.toast.icon ? t.toast.icon : r(H) === "success" ? t.successIcon : r(H) === "error" ? t.errorIcon : r(H) === "warning" ? t.warningIcon : r(H) === "info" ? t.infoIcon : r(H) === "loading" ? t.loadingIcon : null);
-  var X = As();
+  var X = ys();
   bt(X, "tabindex", 0);
   let me;
   var De = et(X);
   {
     var xe = P => {
-      var U = Ts(),
+      var U = fs(),
         rt = et(U);
       Ht(rt, () => t.closeIcon ?? qt), Q(U), Tt(ut => {
-        bt(U, "aria-label", t.closeButtonAriaLabel), bt(U, "data-disabled", r(Ft)), Jt(U, 1, ut)
+        bt(U, "aria-label", t.closeButtonAriaLabel), bt(U, "data-disabled", r(zt)), Jt(U, 1, ut)
       }, [() => {
         var ut, tt, m;
         return ue(le((ut = r(Y)) == null ? void 0 : ut.closeButton, (m = (tt = t.toast) == null ? void 0 : tt.classes) == null ? void 0 : m.closeButton))
-      }]), ae("click", U, () => {
+      }]), se("click", U, () => {
         var ut, tt;
-        r(Ft) || !r(pt) || (F(), (tt = (ut = t.toast).onDismiss) == null || tt.call(ut, t.toast))
+        r(zt) || !r(pt) || (z(), (tt = (ut = t.toast).onDismiss) == null || tt.call(ut, t.toast))
       }), v(P, U)
     };
     st(De, P => {
@@ -682,26 +669,26 @@ function Ps(o, t) {
           ut = G(rt);
         $t(ut, () => r(U), (tt, m) => {
           m(tt, Oe(() => t.toast.componentProps, {
-            closeToast: F
+            closeToast: z
           }))
         }), v(P, rt)
       },
       Ne = P => {
-        var U = Ls(),
+        var U = vs(),
           rt = G(U);
         {
           var ut = h => {
-            var d = Ds(),
+            var d = ms(),
               C = et(d);
             {
               var M = j => {
-                var z = Z(),
-                  vt = G(z);
+                var F = Z(),
+                  vt = G(F);
                 {
                   var nt = ot => {
                       var Gt = Z(),
-                        zt = G(Gt);
-                      $t(zt, () => t.toast.icon, (Dt, kt) => {
+                        Ft = G(Gt);
+                      $t(Ft, () => t.toast.icon, (Dt, kt) => {
                         kt(Dt, {})
                       }), v(ot, Gt)
                     },
@@ -712,7 +699,7 @@ function Ps(o, t) {
                     t.toast.icon ? ot(nt) : ot(ft, !1)
                   })
                 }
-                v(j, z)
+                v(j, F)
               };
               st(C, j => {
                 (t.toast.promise || r(H) === "loading") && j(M)
@@ -721,8 +708,8 @@ function Ps(o, t) {
             var _t = Et(C, 2);
             {
               var ct = j => {
-                var z = Z(),
-                  vt = G(z);
+                var F = Z(),
+                  vt = G(F);
                 {
                   var nt = Dt => {
                       var kt = Z(),
@@ -746,24 +733,24 @@ function Ps(o, t) {
                         ee = G(kt);
                       Ht(ee, () => t.warningIcon ?? qt), v(Dt, kt)
                     },
-                    zt = Dt => {
+                    Ft = Dt => {
                       var kt = Z(),
                         ee = G(kt);
                       Ht(ee, () => t.infoIcon ?? qt), v(Dt, kt)
                     };
                   st(vt, Dt => {
-                    t.toast.icon ? Dt(nt) : r(H) === "success" ? Dt(ft, 1) : r(H) === "error" ? Dt(ot, 2) : r(H) === "warning" ? Dt(Gt, 3) : r(H) === "info" && Dt(zt, 4)
+                    t.toast.icon ? Dt(nt) : r(H) === "success" ? Dt(ft, 1) : r(H) === "error" ? Dt(ot, 2) : r(H) === "warning" ? Dt(Gt, 3) : r(H) === "info" && Dt(Ft, 4)
                   })
                 }
-                v(j, z)
+                v(j, F)
               };
               st(_t, j => {
                 t.toast.type !== "loading" && j(ct)
               })
             }
             Q(d), Tt(j => Jt(d, 1, j), [() => {
-              var j, z, vt;
-              return ue(le((j = r(Y)) == null ? void 0 : j.icon, (vt = (z = t.toast) == null ? void 0 : z.classes) == null ? void 0 : vt.icon))
+              var j, F, vt;
+              return ue(le((j = r(Y)) == null ? void 0 : j.icon, (vt = (F = t.toast) == null ? void 0 : F.classes) == null ? void 0 : vt.icon))
             }]), v(h, d)
           };
           st(rt, h => {
@@ -780,11 +767,11 @@ function Ps(o, t) {
             {
               var M = ct => {
                   const j = E(() => t.toast.title);
-                  var z = Z(),
-                    vt = G(z);
+                  var F = Z(),
+                    vt = G(F);
                   $t(vt, () => r(j), (nt, ft) => {
                     ft(nt, Oe(() => t.toast.componentProps))
-                  }), v(ct, z)
+                  }), v(ct, F)
                 },
                 _t = ct => {
                   var j = Dn();
@@ -804,16 +791,16 @@ function Ps(o, t) {
         var e = Et(m, 2);
         {
           var i = h => {
-            var d = xs(),
+            var d = ps(),
               C = et(d);
             {
               var M = ct => {
                   const j = E(() => t.toast.description);
-                  var z = Z(),
-                    vt = G(z);
+                  var F = Z(),
+                    vt = G(F);
                   $t(vt, () => r(j), (nt, ft) => {
                     ft(nt, Oe(() => t.toast.componentProps))
-                  }), v(ct, z)
+                  }), v(ct, F)
                 },
                 _t = ct => {
                   var j = Dn();
@@ -840,24 +827,24 @@ function Ps(o, t) {
               C = G(d);
             {
               var M = j => {
-                  var z = Z(),
-                    vt = G(z);
+                  var F = Z(),
+                    vt = G(F);
                   $t(vt, () => t.toast.cancel, (nt, ft) => {
                     ft(nt, {})
-                  }), v(j, z)
+                  }), v(j, F)
                 },
                 _t = j => {
-                  var z = Ss(),
-                    vt = et(z, !0);
-                  Q(z), Tt(nt => {
-                    cn(z, t.toast.cancelButtonStyle ?? f()), Jt(z, 1, nt), Bt(vt, t.toast.cancel.label)
+                  var F = _s(),
+                    vt = et(F, !0);
+                  Q(F), Tt(nt => {
+                    cn(F, t.toast.cancelButtonStyle ?? f()), Jt(F, 1, nt), Bt(vt, t.toast.cancel.label)
                   }, [() => {
                     var nt, ft, ot;
                     return ue(le((nt = r(Y)) == null ? void 0 : nt.cancelButton, (ot = (ft = t.toast) == null ? void 0 : ft.classes) == null ? void 0 : ot.cancelButton))
-                  }]), ae("click", z, nt => {
+                  }]), se("click", F, nt => {
                     var ft, ot;
-                    qe(t.toast.cancel) && r(pt) && ((ot = (ft = t.toast.cancel) == null ? void 0 : ft.onClick) == null || ot.call(ft, nt), F())
-                  }), v(j, z)
+                    qe(t.toast.cancel) && r(pt) && ((ot = (ft = t.toast.cancel) == null ? void 0 : ft.onClick) == null || ot.call(ft, nt), z())
+                  }), v(j, F)
                 },
                 ct = E(() => qe(t.toast.cancel));
               st(C, j => {
@@ -877,24 +864,24 @@ function Ps(o, t) {
               C = G(d);
             {
               var M = j => {
-                  var z = Z(),
-                    vt = G(z);
+                  var F = Z(),
+                    vt = G(F);
                   $t(vt, () => t.toast.action, (nt, ft) => {
                     ft(nt, {})
-                  }), v(j, z)
+                  }), v(j, F)
                 },
                 _t = j => {
-                  var z = Ns(),
-                    vt = et(z, !0);
-                  Q(z), Tt(nt => {
-                    cn(z, t.toast.actionButtonStyle ?? g()), Jt(z, 1, nt), Bt(vt, t.toast.action.label)
+                  var F = gs(),
+                    vt = et(F, !0);
+                  Q(F), Tt(nt => {
+                    cn(F, t.toast.actionButtonStyle ?? g()), Jt(F, 1, nt), Bt(vt, t.toast.action.label)
                   }, [() => {
                     var nt, ft, ot;
                     return ue(le((nt = r(Y)) == null ? void 0 : nt.actionButton, (ot = (ft = t.toast) == null ? void 0 : ft.classes) == null ? void 0 : ot.actionButton))
-                  }]), ae("click", z, nt => {
+                  }]), se("click", F, nt => {
                     var ft;
-                    qe(t.toast.action) && ((ft = t.toast.action) == null || ft.onClick(nt), !nt.defaultPrevented && F())
-                  }), v(j, z)
+                    qe(t.toast.action) && ((ft = t.toast.action) == null || ft.onClick(nt), !nt.defaultPrevented && z())
+                  }), v(j, F)
                 },
                 ct = E(() => qe(t.toast.action));
               st(C, j => {
@@ -927,49 +914,49 @@ function Ps(o, t) {
   }, [() => {
     var P, U, rt, ut, tt, m;
     return ue(le(t.class, r(St), (P = r(Y)) == null ? void 0 : P.toast, (rt = (U = t.toast) == null ? void 0 : U.classes) == null ? void 0 : rt.toast, (ut = r(Y)) == null ? void 0 : ut[r(H)], (m = (tt = t.toast) == null ? void 0 : tt.classes) == null ? void 0 : m[r(H)]))
-  }, () => !!t.toast.promise, () => !!(t.expanded || t.expandByDefault && r(L))]), ae("pointermove", X, Vt), ae("pointerup", X, oe), ae("pointerdown", X, ge), rn("dragend", X, jt), v(o, X), Xt()
+  }, () => !!t.toast.promise, () => !!(t.expanded || t.expandByDefault && r(L))]), se("pointermove", X, Vt), se("pointerup", X, re), se("pointerdown", X, ge), rn("dragend", X, jt), v(o, X), Xt()
 }
 on(["pointermove", "pointerup", "pointerdown", "click"]);
-var ks = Ke('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" height="20" width="20" data-sonner-success-icon=""><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"></path></svg>');
+var bs = Ke('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" height="20" width="20" data-sonner-success-icon=""><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"></path></svg>');
 
-function Os(o) {
-  var t = ks();
+function ws(o) {
+  var t = bs();
   v(o, t)
 }
-var Rs = Ke('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" height="20" width="20" data-sonner-error-icon=""><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0v-4.5A.75.75 0 0110 5zm0 10a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>');
+var Is = Ke('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" height="20" width="20" data-sonner-error-icon=""><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0v-4.5A.75.75 0 0110 5zm0 10a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>');
 
-function Ms(o) {
-  var t = Rs();
+function Es(o) {
+  var t = Is();
   v(o, t)
 }
-var Bs = Ke('<svg viewBox="0 0 64 64" fill="currentColor" height="20" width="20" data-sonner-warning-icon="" xmlns="http://www.w3.org/2000/svg"><path d="M32.427,7.987c2.183,0.124 4,1.165 5.096,3.281l17.936,36.208c1.739,3.66 -0.954,8.585 -5.373,8.656l-36.119,0c-4.022,-0.064 -7.322,-4.631 -5.352,-8.696l18.271,-36.207c0.342,-0.65 0.498,-0.838 0.793,-1.179c1.186,-1.375 2.483,-2.111 4.748,-2.063Zm-0.295,3.997c-0.687,0.034 -1.316,0.419 -1.659,1.017c-6.312,11.979 -12.397,24.081 -18.301,36.267c-0.546,1.225 0.391,2.797 1.762,2.863c12.06,0.195 24.125,0.195 36.185,0c1.325,-0.064 2.321,-1.584 1.769,-2.85c-5.793,-12.184 -11.765,-24.286 -17.966,-36.267c-0.366,-0.651 -0.903,-1.042 -1.79,-1.03Z"></path><path d="M33.631,40.581l-3.348,0l-0.368,-16.449l4.1,0l-0.384,16.449Zm-3.828,5.03c0,-0.609 0.197,-1.113 0.592,-1.514c0.396,-0.4 0.935,-0.601 1.618,-0.601c0.684,0 1.223,0.201 1.618,0.601c0.395,0.401 0.593,0.905 0.593,1.514c0,0.587 -0.193,1.078 -0.577,1.473c-0.385,0.395 -0.929,0.593 -1.634,0.593c-0.705,0 -1.249,-0.198 -1.634,-0.593c-0.384,-0.395 -0.576,-0.886 -0.576,-1.473Z"></path></svg>');
+var Ts = Ke('<svg viewBox="0 0 64 64" fill="currentColor" height="20" width="20" data-sonner-warning-icon="" xmlns="http://www.w3.org/2000/svg"><path d="M32.427,7.987c2.183,0.124 4,1.165 5.096,3.281l17.936,36.208c1.739,3.66 -0.954,8.585 -5.373,8.656l-36.119,0c-4.022,-0.064 -7.322,-4.631 -5.352,-8.696l18.271,-36.207c0.342,-0.65 0.498,-0.838 0.793,-1.179c1.186,-1.375 2.483,-2.111 4.748,-2.063Zm-0.295,3.997c-0.687,0.034 -1.316,0.419 -1.659,1.017c-6.312,11.979 -12.397,24.081 -18.301,36.267c-0.546,1.225 0.391,2.797 1.762,2.863c12.06,0.195 24.125,0.195 36.185,0c1.325,-0.064 2.321,-1.584 1.769,-2.85c-5.793,-12.184 -11.765,-24.286 -17.966,-36.267c-0.366,-0.651 -0.903,-1.042 -1.79,-1.03Z"></path><path d="M33.631,40.581l-3.348,0l-0.368,-16.449l4.1,0l-0.384,16.449Zm-3.828,5.03c0,-0.609 0.197,-1.113 0.592,-1.514c0.396,-0.4 0.935,-0.601 1.618,-0.601c0.684,0 1.223,0.201 1.618,0.601c0.395,0.401 0.593,0.905 0.593,1.514c0,0.587 -0.193,1.078 -0.577,1.473c-0.385,0.395 -0.929,0.593 -1.634,0.593c-0.705,0 -1.249,-0.198 -1.634,-0.593c-0.384,-0.395 -0.576,-0.886 -0.576,-1.473Z"></path></svg>');
 
-function Hs(o) {
-  var t = Bs();
+function Ds(o) {
+  var t = Ts();
   v(o, t)
 }
-var Us = Ke('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" height="20" width="20" data-sonner-info-icon=""><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd"></path></svg>');
+var xs = Ke('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" height="20" width="20" data-sonner-info-icon=""><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd"></path></svg>');
 
-function Ws(o) {
-  var t = Us();
+function Ss(o) {
+  var t = xs();
   v(o, t)
 }
-var Vs = Ke('<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-sonner-close-icon=""><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>');
+var Ns = Ke('<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-sonner-close-icon=""><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>');
 
-function js(o) {
-  var t = Vs();
+function Ls(o) {
+  var t = Ns();
   v(o, t)
 }
-const zs = 3,
+const As = 3,
   Wn = "24px",
   Vn = "16px",
-  Fs = 4e3,
-  Gs = 356,
-  Ks = 14,
+  Ps = 4e3,
+  ks = 356,
+  Os = 14,
   dn = "dark",
   Ye = "light";
 
-function qs(o, t) {
+function Rs(o, t) {
   const n = {};
   return [o, t].forEach((f, g) => {
     const w = g === 1,
@@ -987,10 +974,10 @@ function qs(o, t) {
     }) : W(B)
   }), n
 }
-var Ys = dt("<ol></ol>"),
-  Xs = dt('<section aria-live="polite" aria-relevant="additions text" aria-atomic="false" class="svelte-smjlix"><!></section>');
+var Ms = dt("<ol></ol>"),
+  Bs = dt('<section aria-live="polite" aria-relevant="additions text" aria-atomic="false" class="svelte-smjlix"><!></section>');
 
-function Qs(o, t) {
+function Hs(o, t) {
   Yt(t, !0);
 
   function n(A) {
@@ -1005,11 +992,11 @@ function Qs(o, t) {
     L = k(t, "mobileOffset", 3, Vn),
     y = k(t, "theme", 3, "light"),
     D = k(t, "richColors", 3, !1),
-    N = k(t, "duration", 3, Fs),
-    q = k(t, "visibleToasts", 3, zs),
+    N = k(t, "duration", 3, Ps),
+    q = k(t, "visibleToasts", 3, As),
     R = k(t, "toastOptions", 19, () => ({})),
     J = k(t, "dir", 7, "auto"),
-    O = k(t, "gap", 3, Ks),
+    O = k(t, "gap", 3, Os),
     b = k(t, "containerAriaLabel", 3, "Notifications"),
     S = k(t, "closeButtonAriaLabel", 3, "Close toast"),
     K = Te(t, ["$$slots", "$$events", "$$legacy", "invert", "position", "hotkey", "expand", "closeButton", "offset", "mobileOffset", "theme", "richColors", "duration", "visibleToasts", "toastOptions", "dir", "gap", "loadingIcon", "successIcon", "errorIcon", "warningIcon", "closeIcon", "infoIcon", "containerAriaLabel", "class", "closeButtonAriaLabel", "onblur", "onfocus", "onmouseenter", "onmousemove", "onmouseleave", "ondragend", "onpointerdown", "onpointerup"]);
@@ -1031,36 +1018,36 @@ function Qs(o, t) {
   Ut(() => {
     Rt.toasts.length <= 1 && _(H, !1)
   }), Ut(() => {
-    const A = Rt.toasts.filter(F => F.dismiss && !F.delete);
+    const A = Rt.toasts.filter(z => z.dismiss && !z.delete);
     if (A.length > 0) {
-      const F = Rt.toasts.map(wt => A.find(Wt => Wt.id === wt.id) ? {
+      const z = Rt.toasts.map(wt => A.find(Wt => Wt.id === wt.id) ? {
         ...wt,
         delete: !0
       } : wt);
-      Rt.toasts = F
+      Rt.toasts = z
     }
   }), Ut(() => () => {
     r(T) && r(it) && (r(it).focus({
       preventScroll: !0
     }), _(it, null), _(ht, !1))
-  }), fe(() => (Rt.reset(), Re(document, "keydown", F => {
+  }), fe(() => (Rt.reset(), Re(document, "keydown", z => {
     var lt, Wt;
-    w().every(te => F[te] || F.code === te) && (_(H, !0), (lt = r(T)) == null || lt.focus()), F.code === "Escape" && (document.activeElement === r(T) || (Wt = r(T)) != null && Wt.contains(document.activeElement)) && _(H, !1)
+    w().every(te => z[te] || z.code === te) && (_(H, !0), (lt = r(T)) == null || lt.focus()), z.code === "Escape" && (document.activeElement === r(T) || (Wt = r(T)) != null && Wt.contains(document.activeElement)) && _(H, !1)
   }))), Ut(() => {
     if (y() !== "system" && _(St, y()), typeof window < "u") {
       y() === "system" && (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? _(St, dn) : _(St, Ye));
       const A = window.matchMedia("(prefers-color-scheme: dark)"),
-        F = ({
+        z = ({
           matches: wt
         }) => {
           _(St, wt ? dn : Ye, !0)
         };
-      "addEventListener" in A ? A.addEventListener("change", F) : A.addListener(F)
+      "addEventListener" in A ? A.addEventListener("change", z) : A.addListener(z)
     }
   });
   const xt = A => {
-      var F;
-      (F = t.onblur) == null || F.call(t, A), r(ht) && !A.currentTarget.contains(A.relatedTarget) && (_(ht, !1), r(it) && (r(it).focus({
+      var z;
+      (z = t.onblur) == null || z.call(t, A), r(ht) && !A.currentTarget.contains(A.relatedTarget) && (_(ht, !1), r(it) && (r(it).focus({
         preventScroll: !0
       }), _(it, null)))
     },
@@ -1072,44 +1059,44 @@ function Qs(o, t) {
       var wt;
       (wt = t.onpointerdown) == null || wt.call(t, A), !(A.target instanceof HTMLElement && A.target.dataset.dismissable === "false") && _(pt, !0)
     },
-    ie = A => {
-      var F;
-      (F = t.onmouseenter) == null || F.call(t, A), _(H, !0)
+    ne = A => {
+      var z;
+      (z = t.onmouseenter) == null || z.call(t, A), _(H, !0)
     },
     at = A => {
-      var F;
-      (F = t.onmouseleave) == null || F.call(t, A), r(pt) || _(H, !1)
+      var z;
+      (z = t.onmouseleave) == null || z.call(t, A), r(pt) || _(H, !1)
     },
-    Ft = A => {
-      var F;
-      (F = t.onmousemove) == null || F.call(t, A), _(H, !0)
+    zt = A => {
+      var z;
+      (z = t.onmousemove) == null || z.call(t, A), _(H, !0)
     },
     Y = A => {
-      var F;
-      (F = t.ondragend) == null || F.call(t, A), _(H, !1)
+      var z;
+      (z = t.ondragend) == null || z.call(t, A), _(H, !1)
     },
     mt = A => {
-      var F;
-      (F = t.onpointerup) == null || F.call(t, A), _(pt, !1)
+      var z;
+      (z = t.onpointerup) == null || z.call(t, A), _(pt, !1)
     };
-  _s.set(new ii);
-  var yt = Xs();
+  rs.set(new ii);
+  var yt = Bs();
   bt(yt, "tabindex", -1);
   var Ct = et(yt);
   {
-    var re = A => {
-      var F = Z(),
-        wt = G(F);
+    var ie = A => {
+      var z = Z(),
+        wt = G(z);
       Ze(wt, 18, () => r(V), lt => lt, (lt, Wt, te, ge) => {
-        const oe = E(() => {
+        const re = E(() => {
             const [Pt, X] = Wt.split("-");
             return {
               y: Pt,
               x: X
             }
           }),
-          Vt = E(() => qs(W(), L()));
-        var jt = Ys();
+          Vt = E(() => Rs(W(), L()));
+        var jt = Ms();
         Ce(jt, Pt => {
           var X;
           return {
@@ -1118,13 +1105,13 @@ function Qs(o, t) {
             class: t.class,
             "data-sonner-toaster": !0,
             "data-sonner-theme": r(St),
-            "data-y-position": r(oe).y,
-            "data-x-position": r(oe).x,
+            "data-y-position": r(re).y,
+            "data-x-position": r(re).x,
             style: t.style,
             onblur: xt,
             onfocus: Lt,
-            onmouseenter: ie,
-            onmousemove: Ft,
+            onmouseenter: ne,
+            onmousemove: zt,
             onmouseleave: at,
             ondragend: Y,
             onpointerdown: Mt,
@@ -1132,7 +1119,7 @@ function Qs(o, t) {
             ...K,
             [yi]: {
               "--front-toast-height": `${(X=Rt.heights[0])==null?void 0:X.height}px`,
-              "--width": `${Gs}px`,
+              "--width": `${ks}px`,
               "--gap": `${O()}px`,
               "--offset-top": r(Vt)["--offset-top"],
               "--offset-right": r(Vt)["--offset-right"],
@@ -1156,7 +1143,7 @@ function Qs(o, t) {
                       Ht(M, () => t.successIcon ?? qt), v(d, C)
                     },
                     h = d => {
-                      Os(d)
+                      ws(d)
                     };
                   st(c, d => {
                     t.successIcon ? d(u) : t.successIcon !== null && d(h, 1)
@@ -1174,7 +1161,7 @@ function Qs(o, t) {
                       Ht(M, () => t.errorIcon ?? qt), v(d, C)
                     },
                     h = d => {
-                      Ms(d)
+                      Es(d)
                     };
                   st(c, d => {
                     t.errorIcon ? d(u) : t.errorIcon !== null && d(h, 1)
@@ -1192,7 +1179,7 @@ function Qs(o, t) {
                       Ht(M, () => t.warningIcon ?? qt), v(d, C)
                     },
                     h = d => {
-                      Hs(d)
+                      Ds(d)
                     };
                   st(c, d => {
                     t.warningIcon ? d(u) : t.warningIcon !== null && d(h, 1)
@@ -1210,7 +1197,7 @@ function Qs(o, t) {
                       Ht(M, () => t.infoIcon ?? qt), v(d, C)
                     },
                     h = d => {
-                      Ws(d)
+                      Ss(d)
                     };
                   st(c, d => {
                     t.infoIcon ? d(u) : t.infoIcon !== null && d(h, 1)
@@ -1228,7 +1215,7 @@ function Qs(o, t) {
                       Ht(M, () => t.closeIcon ?? qt), v(d, C)
                     },
                     h = d => {
-                      js(d)
+                      Ls(d)
                     };
                   st(c, d => {
                     t.closeIcon ? d(u) : t.closeIcon !== null && d(h, 1)
@@ -1266,7 +1253,7 @@ function Qs(o, t) {
                 var s;
                 return ((s = R()) == null ? void 0 : s.closeButtonAriaLabel) ?? S()
               });
-            Ps(Pt, {
+            Cs(Pt, {
               get index() {
                 return r(me)
               },
@@ -1342,21 +1329,21 @@ function Qs(o, t) {
             })
           }
         }), Q(jt), yn(jt, Pt => _(T, Pt), () => r(T)), Tt(() => jt.dir = jt.dir), v(lt, jt)
-      }), v(A, F)
+      }), v(A, z)
     };
     st(Ct, A => {
-      Rt.toasts.length > 0 && A(re)
+      Rt.toasts.length > 0 && A(ie)
     })
   }
   Q(yt), Tt(() => bt(yt, "aria-label", `${b()??""} ${r(Nt)??""}`)), v(o, yt), Xt()
 }
 let Le = $(!1);
-var Zs = dt("<div></div>"),
-  Js = dt('<button type="button" class="btn">Retry</button>'),
-  $s = dt('<span class="loading loading-spinner loading-lg"></span>'),
-  ta = dt('<div class="flex h-16 items-center justify-center"><!></div>');
+var Us = dt("<div></div>"),
+  Ws = dt('<button type="button" class="btn">Retry</button>'),
+  Vs = dt('<span class="loading loading-spinner loading-lg"></span>'),
+  js = dt('<div class="flex h-16 items-center justify-center"><!></div>');
 
-function ea(o, t) {
+function Fs(o, t) {
   Yt(t, !0);
   let n = k(t, "theme", 19, () => fn.theme === "dark" ? "dark" : "light"),
     f = k(t, "size", 3, "normal");
@@ -1418,19 +1405,19 @@ function ea(o, t) {
     q = G(N);
   {
     var R = O => {
-        var b = Zs();
+        var b = Us();
         Hn(b, (S, K) => w == null ? void 0 : w(S, K), () => r(g)), v(O, b)
       },
       J = O => {
-        var b = ta(),
+        var b = js(),
           S = et(b);
         {
           var K = V => {
-              var H = Js();
-              ae("click", H, D), v(V, H)
+              var H = Ws();
+              se("click", H, D), v(V, H)
             },
             I = V => {
-              var H = $s();
+              var H = Vs();
               v(V, H)
             };
           st(S, V => {
@@ -1450,13 +1437,13 @@ on(["click"]);
 function Cn(...o) {
   return Ei(Ci(o))
 }
-var na = dt("<div><!></div>");
+var zs = dt("<div><!></div>");
 
-function ia(o, t) {
+function Gs(o, t) {
   Yt(t, !0);
   let n = k(t, "ref", 15, null),
     f = Te(t, ["$$slots", "$$events", "$$legacy", "ref", "class", "children"]);
-  var g = na();
+  var g = zs();
   Ce(g, x => ({
     class: x,
     ...f
@@ -1465,7 +1452,7 @@ function ia(o, t) {
   Ht(w, () => t.children ?? qt), Q(g), yn(g, x => n(x), () => n()), v(o, g), Xt()
 }
 var He, Je;
-class ra {
+class Ks {
   constructor(t, n) {
     gt(this, He, () => {});
     gt(this, Je, E(() => p(this, He).call(this)));
@@ -1483,41 +1470,41 @@ class ra {
   }
 }
 He = new WeakMap, Je = new WeakMap;
-const oa = 1,
-  sa = 9,
-  aa = 11;
+const qs = 1,
+  Ys = 9,
+  Xs = 11;
 
-function la(o) {
-  return sn(o) && o.nodeType === oa && typeof o.nodeName == "string"
+function Qs(o) {
+  return sn(o) && o.nodeType === qs && typeof o.nodeName == "string"
 }
 
 function jn(o) {
-  return sn(o) && o.nodeType === sa
+  return sn(o) && o.nodeType === Ys
 }
 
-function ua(o) {
+function Zs(o) {
   var t;
   return sn(o) && ((t = o.constructor) == null ? void 0 : t.name) === "VisualViewport"
 }
 
-function ca(o) {
+function Js(o) {
   return sn(o) && o.nodeType !== void 0
 }
 
-function da(o) {
-  return ca(o) && o.nodeType === aa && "host" in o
+function $s(o) {
+  return Js(o) && o.nodeType === Xs && "host" in o
 }
 
-function ha(o) {
-  return jn(o) ? o : ua(o) ? o.document : (o == null ? void 0 : o.ownerDocument) ?? document
+function ta(o) {
+  return jn(o) ? o : Zs(o) ? o.document : (o == null ? void 0 : o.ownerDocument) ?? document
 }
 
-function zn(o) {
+function Fn(o) {
   var t;
-  return da(o) ? zn(o.host) : jn(o) ? o.defaultView ?? window : la(o) ? ((t = o.ownerDocument) == null ? void 0 : t.defaultView) ?? window : window
+  return $s(o) ? Fn(o.host) : jn(o) ? o.defaultView ?? window : Qs(o) ? ((t = o.ownerDocument) == null ? void 0 : t.defaultView) ?? window : window
 }
 
-function fa(o) {
+function ea(o) {
   let t = o.activeElement;
   for (; t != null && t.shadowRoot;) {
     const n = t.shadowRoot.activeElement;
@@ -1527,13 +1514,13 @@ function fa(o) {
   return t
 }
 var Ue;
-class ma {
+class na {
   constructor(t) {
     It(this, "element");
     gt(this, Ue, E(() => this.element.current ? this.element.current.getRootNode() ?? document : document));
-    It(this, "getDocument", () => ha(this.root));
+    It(this, "getDocument", () => ta(this.root));
     It(this, "getWindow", () => this.getDocument().defaultView ?? window);
-    It(this, "getActiveElement", () => fa(this.root));
+    It(this, "getActiveElement", () => ea(this.root));
     It(this, "isActiveElement", t => t === this.getActiveElement());
     It(this, "querySelector", t => this.root ? this.root.querySelector(t) : null);
     It(this, "querySelectorAll", t => this.root ? this.root.querySelectorAll(t) : []);
@@ -1552,12 +1539,12 @@ class ma {
   }
 }
 Ue = new WeakMap;
-const pa = 18,
-  Fn = 40,
-  _a = `${Fn}px`,
-  ga = ["[data-lastpass-icon-root]", "com-1password-button", "[data-dashlanecreated]", '[style$="2147483647 !important;"]'].join(",");
+const ia = 18,
+  zn = 40,
+  ra = `${zn}px`,
+  oa = ["[data-lastpass-icon-root]", "com-1password-button", "[data-dashlanecreated]", '[style$="2147483647 !important;"]'].join(",");
 
-function va({
+function sa({
   containerRef: o,
   inputRef: t,
   pushPasswordManagerStrategy: n,
@@ -1580,17 +1567,17 @@ function va({
     const N = y,
       q = N.getBoundingClientRect().left + N.offsetWidth,
       R = N.getBoundingClientRect().top + N.offsetHeight / 2,
-      J = q - pa,
+      J = q - ia,
       O = R;
-    g.querySelectorAll(ga).length === 0 && g.getDocument().elementFromPoint(J, O) === y || (_(w, !0), _(B, !0))
+    g.querySelectorAll(oa).length === 0 && g.getDocument().elementFromPoint(J, O) === y || (_(w, !0), _(B, !0))
   }
   return Ut(() => {
     const y = o.current;
     if (!y || n.current === "none") return;
 
     function D() {
-      const R = zn(y).innerWidth - y.getBoundingClientRect().right;
-      _(x, R >= Fn)
+      const R = Fn(y).innerWidth - y.getBoundingClientRect().right;
+      _(x, R >= zn)
     }
     D();
     const N = setInterval(D, 1e3);
@@ -1616,15 +1603,15 @@ function va({
     get willPushPwmBadge() {
       return W()
     },
-    PWM_BADGE_SPACE_WIDTH: _a
+    PWM_BADGE_SPACE_WIDTH: ra
   }
 }
 const Gn = di({
     component: "pin-input",
     parts: ["root", "cell"]
   }),
-  ya = ["Backspace", "Delete", "ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End", "Escape", "Enter", "Tab", "Shift", "Control", "Meta"];
-var Qt, we, de, Kt, Zt, Ie, se, he, _e, Ee, $e, We, Ve, tn, en, Kn, je, ze, nn, Fe;
+  aa = ["Backspace", "Delete", "ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End", "Escape", "Enter", "Tab", "Shift", "Control", "Meta"];
+var Qt, we, de, Kt, Zt, Ie, oe, he, _e, Ee, $e, We, Ve, tn, en, Kn, je, Fe, nn, ze;
 const bn = class bn {
   constructor(t) {
     gt(this, en);
@@ -1636,8 +1623,8 @@ const bn = class bn {
     gt(this, de, An(!1));
     gt(this, Kt, $(null));
     gt(this, Zt, $(null));
-    gt(this, Ie, new ra(() => this.opts.value.current ?? ""));
-    gt(this, se, E(() => typeof this.opts.pattern.current == "string" ? new RegExp(this.opts.pattern.current) : this.opts.pattern.current));
+    gt(this, Ie, new Ks(() => this.opts.value.current ?? ""));
+    gt(this, oe, E(() => typeof this.opts.pattern.current == "string" ? new RegExp(this.opts.pattern.current) : this.opts.pattern.current));
     gt(this, he, $(vn({
       prev: [null, null, "none"],
       willSyntheticBlur: !1
@@ -1647,7 +1634,7 @@ const bn = class bn {
     It(this, "domContext");
     It(this, "onkeydown", t => {
       const n = t.key;
-      ya.includes(n) || t.ctrlKey || t.metaKey || n && r(p(this, se)) && !r(p(this, se)).test(n) && t.preventDefault()
+      aa.includes(n) || t.ctrlKey || t.metaKey || n && r(p(this, oe)) && !r(p(this, oe)).test(n) && t.preventDefault()
     });
     gt(this, $e, E(() => ({
       position: "relative",
@@ -1735,7 +1722,7 @@ const bn = class bn {
     });
     It(this, "oninput", t => {
       const n = t.currentTarget.value.slice(0, this.opts.maxLength.current);
-      if (n.length > 0 && r(p(this, se)) && !r(p(this, se)).test(n)) {
+      if (n.length > 0 && r(p(this, oe)) && !r(p(this, oe)).test(n)) {
         t.preventDefault();
         return
       }
@@ -1761,7 +1748,7 @@ const bn = class bn {
             S = this.opts.value.current;
           return (b ? S.slice(0, J) + R + S.slice(O) : S.slice(0, J) + R + S.slice(J)).slice(0, this.opts.maxLength.current)
         },
-        g = R => R.length > 0 && r(p(this, se)) && !r(p(this, se)).test(R);
+        g = R => R.length > 0 && r(p(this, oe)) && !r(p(this, oe)).test(R);
       if (!((y = this.opts.pasteTransformer) != null && y.current) && (!p(this, Ee).isIOS || !t.clipboardData || !n)) {
         const R = f((D = t.clipboardData) == null ? void 0 : D.getData("text/plain"));
         g(R) && t.preventDefault();
@@ -1790,7 +1777,7 @@ const bn = class bn {
       }
       p(this, de).current = !1
     });
-    gt(this, ze, E(() => {
+    gt(this, Fe, E(() => {
       var t;
       return {
         id: this.opts.inputId.current,
@@ -1800,7 +1787,7 @@ const bn = class bn {
         "data-pin-input-input-mss": r(p(this, Kt)),
         "data-pin-input-input-mse": r(p(this, Zt)),
         inputmode: this.opts.inputmode.current,
-        pattern: (t = r(p(this, se))) == null ? void 0 : t.source,
+        pattern: (t = r(p(this, oe))) == null ? void 0 : t.source,
         maxlength: this.opts.maxLength.current,
         value: this.opts.value.current,
         disabled: ci(this.opts.disabled.current),
@@ -1825,16 +1812,16 @@ const bn = class bn {
         hasFakeCaret: f && g === null
       }
     })));
-    gt(this, Fe, E(() => ({
+    gt(this, ze, E(() => ({
       cells: r(p(this, nn)),
       isFocused: p(this, de).current,
       isHovering: r(p(this, we))
     })));
     var n;
-    this.opts = t, this.attachment = mn(this.opts.ref), this.domContext = new ma(t.ref), pe(this, Ee, {
+    this.opts = t, this.attachment = mn(this.opts.ref), this.domContext = new na(t.ref), pe(this, Ee, {
       value: this.opts.value,
       isIOS: typeof window < "u" && ((n = window == null ? void 0 : window.CSS) == null ? void 0 : n.supports("-webkit-touch-callout", "none"))
-    }), pe(this, _e, va({
+    }), pe(this, _e, sa({
       containerRef: this.opts.ref,
       inputRef: p(this, Qt),
       isFocused: p(this, de),
@@ -1858,7 +1845,7 @@ const bn = class bn {
         w(), B.disconnect()
       }
     }), ui([() => this.opts.value.current, () => p(this, Qt).current], () => {
-      Ca(() => {
+      la(() => {
         const f = p(this, Qt).current;
         if (!f) return;
         f.dispatchEvent(new Event("input"));
@@ -1891,26 +1878,26 @@ const bn = class bn {
     _(p(this, Ve), t)
   }
   get inputProps() {
-    return r(p(this, ze))
-  }
-  set inputProps(t) {
-    _(p(this, ze), t)
-  }
-  get snippetProps() {
     return r(p(this, Fe))
   }
-  set snippetProps(t) {
+  set inputProps(t) {
     _(p(this, Fe), t)
   }
+  get snippetProps() {
+    return r(p(this, ze))
+  }
+  set snippetProps(t) {
+    _(p(this, ze), t)
+  }
 };
-Qt = new WeakMap, we = new WeakMap, de = new WeakMap, Kt = new WeakMap, Zt = new WeakMap, Ie = new WeakMap, se = new WeakMap, he = new WeakMap, _e = new WeakMap, Ee = new WeakMap, $e = new WeakMap, We = new WeakMap, Ve = new WeakMap, tn = new WeakMap, en = new WeakSet, Kn = function() {
+Qt = new WeakMap, we = new WeakMap, de = new WeakMap, Kt = new WeakMap, Zt = new WeakMap, Ie = new WeakMap, oe = new WeakMap, he = new WeakMap, _e = new WeakMap, Ee = new WeakMap, $e = new WeakMap, We = new WeakMap, Ve = new WeakMap, tn = new WeakMap, en = new WeakSet, Kn = function() {
   const t = this.domContext.getDocument(),
     n = t.createElement("style");
   if (n.id = "pin-input-style", t.head.appendChild(n), n.sheet) {
     const f = "background: transparent !important; color: transparent !important; border-color: transparent !important; opacity: 0 !important; box-shadow: none !important; -webkit-box-shadow: none !important; -webkit-text-fill-color: transparent !important;";
     Ae(n.sheet, "[data-pin-input-input]::selection { background: transparent !important; color: transparent !important; }"), Ae(n.sheet, `[data-pin-input-input]:autofill { ${f} }`), Ae(n.sheet, `[data-pin-input-input]:-webkit-autofill { ${f} }`), Ae(n.sheet, "@supports (-webkit-touch-callout: none) { [data-pin-input-input] { letter-spacing: -.6em !important; font-weight: 100 !important; font-stretch: ultra-condensed; font-optical-sizing: none !important; left: -1px !important; right: 1px !important; } }"), Ae(n.sheet, "[data-pin-input-input] + * { pointer-events: all !important; }")
   }
-}, je = new WeakMap, ze = new WeakMap, nn = new WeakMap, Fe = new WeakMap;
+}, je = new WeakMap, Fe = new WeakMap, nn = new WeakMap, ze = new WeakMap;
 let _n = bn;
 var Ge;
 const wn = class wn {
@@ -1939,7 +1926,7 @@ const wn = class wn {
 Ge = new WeakMap;
 let gn = wn;
 
-function Ca(o, t) {
+function la(o, t) {
   const n = t.setTimeout(o, 0),
     f = t.setTimeout(o, 10),
     g = t.setTimeout(o, 50);
@@ -1953,9 +1940,9 @@ function Ae(o, t) {
     console.error("pin input could not insert CSS rule:", t)
   }
 }
-var ba = dt("<div><!> <div><input/></div></div>");
+var ua = dt("<div><!> <div><input/></div></div>");
 
-function wa(o, t) {
+function ca(o, t) {
   const n = Mn();
   Yt(t, !0);
   let f = k(t, "id", 19, () => pn(n)),
@@ -1994,7 +1981,7 @@ function wa(o, t) {
       class: D()
     })),
     I = E(() => Xe(b.inputWrapperProps, {}));
-  var V = ba();
+  var V = ua();
   Ce(V, () => ({
     ...r(K)
   }));
@@ -2009,9 +1996,9 @@ function wa(o, t) {
     ...r(S)
   }), void 0, void 0, void 0, void 0, !0), Q(pt), Q(V), v(o, V), Xt()
 }
-var Ia = dt("<div><!></div>");
+var da = dt("<div><!></div>");
 
-function Ea(o, t) {
+function ha(o, t) {
   const n = Mn();
   Yt(t, !0);
   let f = k(t, "id", 19, () => pn(n)),
@@ -2034,7 +2021,7 @@ function Ea(o, t) {
         })), v(N, q)
       },
       D = N => {
-        var q = Ia();
+        var q = da();
         Ce(q, () => ({
           ...r(B)
         }));
@@ -2047,10 +2034,10 @@ function Ea(o, t) {
   }
   v(o, W), Xt()
 }
-var Ta = dt('<div class="pointer-events-none absolute inset-0 flex items-center justify-center"><div class="animate-caret-blink bg-base-content/80 h-4 w-px duration-1000"></div></div>'),
-  Da = dt(" <!>", 1);
+var fa = dt('<div class="pointer-events-none absolute inset-0 flex items-center justify-center"><div class="animate-caret-blink bg-base-content/80 h-4 w-px duration-1000"></div></div>'),
+  ma = dt(" <!>", 1);
 
-function xa(o, t) {
+function pa(o, t) {
   Yt(t, !0);
   let n = k(t, "ref", 15, null),
     f = Te(t, ["$$slots", "$$events", "$$legacy", "ref", "cell", "class"]);
@@ -2058,7 +2045,7 @@ function xa(o, t) {
     w = G(g);
   {
     let x = E(() => Cn("border-input relative flex size-12 items-center justify-center border-y border-r text-xl transition-all first:rounded-l-md first:border-l last:rounded-r-md", t.cell.isActive && "ring-base-content/40 z-10 ring-2", t.class));
-    $t(w, () => Ea, (B, W) => {
+    $t(w, () => ha, (B, W) => {
       W(B, Oe({
         get cell() {
           return t.cell
@@ -2075,12 +2062,12 @@ function xa(o, t) {
         },
         children: (L, y) => {
           Bn();
-          var D = Da(),
+          var D = ma(),
             N = G(D),
             q = Et(N);
           {
             var R = J => {
-              var O = Ta();
+              var O = fa();
               v(J, O)
             };
             st(q, J => {
@@ -2098,7 +2085,7 @@ function xa(o, t) {
   v(o, g), Xt()
 }
 
-function Sa(o, t) {
+function _a(o, t) {
   Yt(t, !0);
   let n = k(t, "ref", 15, null),
     f = k(t, "value", 15, ""),
@@ -2107,7 +2094,7 @@ function Sa(o, t) {
     x = G(w);
   {
     let B = E(() => Cn("flex items-center gap-2 has-disabled:opacity-50 [&_input]:disabled:cursor-not-allowed", t.class));
-    $t(x, () => wa, (W, L) => {
+    $t(x, () => ca, (W, L) => {
       L(W, Oe({
         get class() {
           return r(B)
@@ -2135,7 +2122,7 @@ var hn = {
   },
   Rn;
 
-function Na() {
+function ga() {
   return Rn || (Rn = 1, (function(o) {
     (function(t) {
       o.exports ? o.exports = t() : window.intlTelInput = t()
@@ -2753,7 +2740,7 @@ function Na() {
           Mt = {
             AUTO: "auto"
           },
-          ie = {
+          ne = {
             COUNTRY_CODE: "countryCode",
             DIAL_CODE: "dialCode"
           },
@@ -2768,13 +2755,13 @@ function Na() {
             AUTOCOMPLETE: "aria-autocomplete",
             MODAL: "aria-modal"
           },
-          Ft = l => typeof window < "u" && typeof window.matchMedia == "function" && window.matchMedia(l).matches,
+          zt = l => typeof window < "u" && typeof window.matchMedia == "function" && window.matchMedia(l).matches,
           Y = () => {
             if (typeof navigator < "u" && typeof window < "u") {
               const l = /Android.+Mobile|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
-                e = Ft("(max-width: 500px)"),
-                i = Ft("(max-height: 600px)"),
-                s = Ft("(pointer: coarse)");
+                e = zt("(max-width: 500px)"),
+                i = zt("(max-height: 600px)"),
+                s = zt("(pointer: coarse)");
               return l || e || s && i
             }
             return !1
@@ -2813,9 +2800,9 @@ function Na() {
             }
           },
           Ct = l => l.replace(/\D/g, ""),
-          re = (l = "") => l.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(),
+          ie = (l = "") => l.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(),
           A = (l, e) => {
-            const i = re(e),
+            const i = ie(e),
               s = [],
               a = [],
               c = [],
@@ -2826,7 +2813,7 @@ function Na() {
             const C = (M, _t) => M.priority - _t.priority;
             return [...s.sort(C), ...a.sort(C), ...c.sort(C), ...u.sort(C), ...h.sort(C), ...d.sort(C)]
           },
-          F = (l, e) => {
+          z = (l, e) => {
             const i = e.toLowerCase();
             for (const s of l)
               if (s.name.toLowerCase().startsWith(i)) return s;
@@ -3114,7 +3101,7 @@ function Na() {
               this.countries = null
             }
           },
-          oe = l => {
+          re = l => {
             const {
               onlyCountries: e,
               excludeCountries: i
@@ -3185,7 +3172,7 @@ function Na() {
             })
           },
           X = l => {
-            for (const e of l) e.normalisedName = re(e.name), e.initials = e.normalisedName.split(/[^a-z]/).map(i => i[0]).join(""), e.dialCodePlus = `+${e.dialCode}`
+            for (const e of l) e.normalisedName = ie(e.name), e.initials = e.normalisedName.split(/[^a-z]/).map(i => i[0]).join(""), e.dialCodePlus = `+${e.dialCode}`
           },
           me = (l, e, i, s) => {
             let a = l;
@@ -3230,7 +3217,7 @@ function Na() {
               this.id = Ne++, this.options = {
                 ...mt,
                 ...i
-              }, yt(this.options, S), this.ui = new ge(e, this.options, this.id), this.isAndroid = qn._getIsAndroid(), this.promise = this._createInitPromises(), this.countries = oe(this.options);
+              }, yt(this.options, S), this.ui = new ge(e, this.options, this.id), this.isAndroid = qn._getIsAndroid(), this.promise = this._createInitPromises(), this.countries = re(this.options);
               const {
                 dialCodes: s,
                 dialCodeMaxLen: a,
@@ -3381,9 +3368,9 @@ function Na() {
               const h = d => {
                 const C = this._getTelInputValue();
                 if (this.isAndroid && (d == null ? void 0 : d.data) === "+" && s && a && c) {
-                  const z = this.ui.telInput.selectionStart || 0,
-                    vt = C.substring(0, z - 1),
-                    nt = C.substring(z);
+                  const F = this.ui.telInput.selectionStart || 0,
+                    vt = C.substring(0, F - 1),
+                    nt = C.substring(F);
                   this._setTelInputValue(vt + nt), this._openDropdownWithPlus();
                   return
                 }
@@ -3394,13 +3381,13 @@ function Na() {
                 const ct = (d == null ? void 0 : d.detail) && d.detail.isSetNumber,
                   j = this.userNumeralSet === "ascii";
                 if (i && !u && !ct && j) {
-                  const z = this.ui.telInput.selectionStart || 0,
-                    nt = C.substring(0, z).replace(pt.NON_PLUS_NUMERIC_GLOBAL, "").length,
+                  const F = this.ui.telInput.selectionStart || 0,
+                    nt = C.substring(0, F).replace(pt.NON_PLUS_NUMERIC_GLOBAL, "").length,
                     ft = (d == null ? void 0 : d.inputType) === H.DELETE_FWD,
                     ot = this._getFullNumber(),
                     Gt = De(ot, C, m.utils, this.selectedCountryData, this.options.separateDialCode),
-                    zt = xe(nt, Gt, z, ft);
-                  this._setTelInputValue(Gt), this.ui.telInput.setSelectionRange(zt, zt)
+                    Ft = xe(nt, Gt, F, ft);
+                  this._setTelInputValue(Gt), this.ui.telInput.setSelectionRange(Ft, Ft)
                 }
               };
               this.ui.telInput.addEventListener("input", h, {
@@ -3428,14 +3415,14 @@ function Na() {
                         _t = /^[0-9]$/.test(M),
                         ct = i ? _t : C || _t,
                         j = this.ui.telInput,
-                        z = j.selectionStart,
+                        F = j.selectionStart,
                         vt = j.selectionEnd,
-                        nt = h.slice(0, z),
+                        nt = h.slice(0, F),
                         ft = h.slice(vt),
                         ot = nt + u.key + ft,
                         Gt = this._getFullNumber(ot),
-                        zt = m.utils.getCoreNumber(Gt, this.selectedCountryData.iso2),
-                        Dt = this.maxCoreNumberLength && zt.length > this.maxCoreNumberLength,
+                        Ft = m.utils.getCoreNumber(Gt, this.selectedCountryData.iso2),
+                        Dt = this.maxCoreNumberLength && Ft.length > this.maxCoreNumberLength,
                         ee = this._getNewCountryFromNumber(Gt) !== null;
                       (!ct || Dt && !ee && !C) && u.preventDefault()
                     }
@@ -3461,18 +3448,18 @@ function Na() {
                     _t = this._normaliseNumerals(M),
                     ct = a === 0 && c > 0,
                     j = !u.startsWith("+") || ct,
-                    z = _t.replace(pt.NON_PLUS_NUMERIC_GLOBAL, ""),
-                    vt = z.startsWith("+"),
-                    nt = z.replace(/\+/g, ""),
+                    F = _t.replace(pt.NON_PLUS_NUMERIC_GLOBAL, ""),
+                    vt = F.startsWith("+"),
+                    nt = F.replace(/\+/g, ""),
                     ft = vt && j ? `+${nt}` : nt;
                   let ot = h + ft + d;
                   if (ot.length > 5) {
-                    let zt = m.utils.getCoreNumber(ot, C);
-                    for (; zt.length === 0 && ot.length > 0;) ot = ot.slice(0, -1), zt = m.utils.getCoreNumber(ot, C);
-                    if (!zt) return;
-                    if (this.maxCoreNumberLength && zt.length > this.maxCoreNumberLength)
+                    let Ft = m.utils.getCoreNumber(ot, C);
+                    for (; Ft.length === 0 && ot.length > 0;) ot = ot.slice(0, -1), Ft = m.utils.getCoreNumber(ot, C);
+                    if (!Ft) return;
+                    if (this.maxCoreNumberLength && Ft.length > this.maxCoreNumberLength)
                       if (s.selectionEnd === u.length) {
-                        const Dt = zt.length - this.maxCoreNumberLength;
+                        const Dt = Ft.length - this.maxCoreNumberLength;
                         ot = ot.slice(0, ot.length - Dt)
                       } else return
                   }
@@ -3591,7 +3578,7 @@ function Na() {
               })
             }
             _searchForCountry(e) {
-              const i = F(this.countries, e);
+              const i = z(this.countries, e);
               if (i) {
                 const s = i.nodeById[this.id];
                 this.ui.highlightListItem(s, !1), this.ui.scrollTo(s)
@@ -3658,8 +3645,8 @@ function Na() {
                   for (const ot of ft)
                     if (h.startsWith(ot)) return null
                 }
-                const z = _t && !(ct === 0) && h.length > d.length,
-                  vt = a && C.includes(a) && !z,
+                const F = _t && !(ct === 0) && h.length > d.length,
+                  vt = a && C.includes(a) && !F,
                   nt = a === C[0];
                 if (!vt && !nt) return C[0]
               } else if (s.startsWith("+") && h.length) {
@@ -3725,10 +3712,10 @@ function Na() {
               }
             }
             _selectListItem(e) {
-              const i = e.dataset[ie.COUNTRY_CODE],
+              const i = e.dataset[ne.COUNTRY_CODE],
                 s = this._setCountry(i);
               this._closeDropdown();
-              const a = e.dataset[ie.DIAL_CODE];
+              const a = e.dataset[ne.DIAL_CODE];
               if (this._updateDialCode(a), this.options.formatOnDisplay) {
                 const c = this._getTelInputValue();
                 this._updateValFromNumber(c)
@@ -3931,18 +3918,18 @@ function Na() {
     })
   })(hn)), hn.exports
 }
-var La = Na();
-const Aa = hi(La);
-var Pa = dt('<div class="my-auto"><span class="loading loading-spinner loading-xl"></span></div>'),
-  ka = dt('<span class="w-8"> </span>'),
-  Oa = dt('<span class="loading loading-spinner center-absolute absolute"></span>'),
-  Ra = dt('<div class="my-auto flex w-full flex-col items-center"><div class="text-center"><h2 class="text-2xl font-bold"> </h2> <p class="text-base-content/80 mt-0.5 text-sm"> </p></div> <form class="mt-8 flex w-full flex-col gap-3"><input class="input w-full pl-12!" type="tel" id="phone"/> <button class="btn btn-primary relative w-full"> <!> <!></button></form></div> <p class="text-base-content/60 pt-3 pb-2 text-center text-xs"> </p>', 1),
-  Ma = dt('<span class="w-8"> </span>'),
-  Ba = dt('<span class="loading loading-spinner center-absolute absolute"></span>'),
-  Ha = dt('<div class="text-center"><h2 class="text-2xl font-bold"> </h2> <p class="mt-0.5 text-sm"> </p></div> <div class="mt-4"><!></div> <div class="mt-4 flex flex-col items-center gap-1"><button class="btn btn-ghost relative mb-1 w-max"> <!> <!></button> <button class="text-primary/80 cursor-pointer text-xs"> </button></div>', 1),
-  Ua = dt('<div class="flex h-full w-full flex-col items-center"><!></div>');
+var va = ga();
+const ya = hi(va);
+var Ca = dt('<div class="my-auto"><span class="loading loading-spinner loading-xl"></span></div>'),
+  ba = dt('<span class="w-8"> </span>'),
+  wa = dt('<span class="loading loading-spinner center-absolute absolute"></span>'),
+  Ia = dt('<div class="my-auto flex w-full flex-col items-center"><div class="text-center"><h2 class="text-2xl font-bold"> </h2> <p class="text-base-content/80 mt-0.5 text-sm"> </p></div> <form class="mt-8 flex w-full flex-col gap-3"><input class="input w-full pl-12!" type="tel" id="phone"/> <button class="btn btn-primary relative w-full"> <!> <!></button></form></div> <p class="text-base-content/60 pt-3 pb-2 text-center text-xs"> </p>', 1),
+  Ea = dt('<span class="w-8"> </span>'),
+  Ta = dt('<span class="loading loading-spinner center-absolute absolute"></span>'),
+  Da = dt('<div class="text-center"><h2 class="text-2xl font-bold"> </h2> <p class="mt-0.5 text-sm"> </p></div> <div class="mt-4"><!></div> <div class="mt-4 flex flex-col items-center gap-1"><button class="btn btn-ghost relative mb-1 w-max"> <!> <!></button> <button class="text-primary/80 cursor-pointer text-xs"> </button></div>', 1),
+  xa = dt('<div class="flex h-full w-full flex-col items-center"><!></div>');
 
-function Wa(o, t) {
+function Sa(o, t) {
   Yt(t, !0);
   let n = k(t, "verifyingPhone", 15, ""),
     f = $(!0),
@@ -3984,7 +3971,7 @@ function Wa(o, t) {
           telegram: "Telegram",
           whatsapp: "WhatsApp"
         };
-      ye.info(Yo({
+      ye.info(Mo({
         channel: K[S.channel],
         phone: S.phone
       }), {
@@ -4002,7 +3989,7 @@ function Wa(o, t) {
         await ln.verifyChallenge({
           type: "otp",
           code: r(W)
-        }), ye.success(Xr()), localStorage.removeItem(r(y)), t.onsuccess(n())
+        }), ye.success(Br()), localStorage.removeItem(r(y)), t.onsuccess(n())
       } catch (b) {
         ye.error(b.message)
       } finally {
@@ -4010,15 +3997,15 @@ function Wa(o, t) {
       }
     })())
   });
-  var N = Ua(),
+  var N = xa(),
     q = et(N);
   {
     var R = b => {
-        var S = Pa();
+        var S = Ca();
         v(b, S)
       },
       J = b => {
-        var S = Ra(),
+        var S = Ia(),
           K = G(S),
           I = et(K),
           V = et(I),
@@ -4031,7 +4018,7 @@ function Wa(o, t) {
           it = et(T);
         Un(it, () => Y => {
           var mt, yt;
-          return _(L, Aa(Y, {
+          return _(L, ya(Y, {
             strictMode: !0,
             initialCountry: ((yt = (mt = Qe.data) == null ? void 0 : mt.country) == null ? void 0 : yt.toLocaleLowerCase()) ?? "br",
             loadUtils: () => Ii(() => import("../chunks/3P6Si2Fo.js"), [], import.meta.url),
@@ -4047,7 +4034,7 @@ function Wa(o, t) {
           xt = Et(Nt);
         {
           var Lt = Y => {
-            var mt = ka(),
+            var mt = ba(),
               yt = et(mt);
             Q(mt), Tt(Ct => Bt(yt, `(${Ct??""})`), [() => xn(r(g))]), v(Y, mt)
           };
@@ -4057,24 +4044,24 @@ function Wa(o, t) {
         }
         var Mt = Et(xt, 2);
         {
-          var ie = Y => {
-            var mt = Oa();
+          var ne = Y => {
+            var mt = wa();
             v(Y, mt)
           };
           st(Mt, Y => {
-            r(w) && Y(ie)
+            r(w) && Y(ne)
           })
         }
         Q(ht), Q(T), Q(K);
         var at = Et(K, 2),
-          Ft = et(at, !0);
+          zt = et(at, !0);
         Q(at), Tt((Y, mt, yt, Ct) => {
-          Bt(H, Y), Bt(St, mt), ht.disabled = r(x), Bt(Nt, `${yt??""} `), Bt(Ft, Ct)
-        }, [() => Ir(), () => Mr(), () => wo(), () => cr()]), rn("submit", T, async () => {
+          Bt(H, Y), Bt(St, mt), ht.disabled = r(x), Bt(Nt, `${yt??""} `), Bt(zt, Ct)
+        }, [() => Ti(), () => Er(), () => uo(), () => dr()]), rn("submit", T, async () => {
           var mt;
           if (r(x)) return;
           if (!((mt = r(L)) != null && mt.isValidNumber())) {
-            ye.error(Zi());
+            ye.error(Ji());
             return
           }
           const Y = r(L).getNumber();
@@ -4082,7 +4069,7 @@ function Wa(o, t) {
         }), v(b, S)
       },
       O = b => {
-        var S = Ha(),
+        var S = Da(),
           K = G(S),
           I = et(K),
           V = et(I, !0);
@@ -4095,34 +4082,34 @@ function Wa(o, t) {
         {
           const Y = (mt, yt) => {
             let Ct = () => yt == null ? void 0 : yt().cells;
-            var re = Z(),
-              A = G(re);
-            $t(A, () => ia, (F, wt) => {
-              wt(F, {
+            var ie = Z(),
+              A = G(ie);
+            $t(A, () => Gs, (z, wt) => {
+              wt(z, {
                 class: "border-primary",
                 children: (lt, Wt) => {
                   var te = Z(),
                     ge = G(te);
-                  Ze(ge, 16, Ct, oe => oe, (oe, Vt) => {
+                  Ze(ge, 16, Ct, re => re, (re, Vt) => {
                     var jt = Z(),
                       Pt = G(jt);
-                    $t(Pt, () => xa, (X, me) => {
+                    $t(Pt, () => pa, (X, me) => {
                       me(X, {
                         get cell() {
                           return Vt
                         },
                         class: "border-base-content/20 size-11 sm:size-12"
                       })
-                    }), v(oe, jt)
+                    }), v(re, jt)
                   }), v(lt, te)
                 },
                 $$slots: {
                   default: !0
                 }
               })
-            }), v(mt, re)
+            }), v(mt, ie)
           };
-          $t(T, () => Sa, (mt, yt) => {
+          $t(T, () => _a, (mt, yt) => {
             yt(mt, {
               maxlength: 6,
               class: "mx-auto w-max",
@@ -4149,7 +4136,7 @@ function Wa(o, t) {
           xt = Et(Nt);
         {
           var Lt = Y => {
-            var mt = Ma(),
+            var mt = Ea(),
               yt = et(mt);
             Q(mt), Tt(Ct => Bt(yt, `(${Ct??""})`), [() => xn(r(g))]), v(Y, mt)
           };
@@ -4159,24 +4146,24 @@ function Wa(o, t) {
         }
         var Mt = Et(xt, 2);
         {
-          var ie = Y => {
-            var mt = Ba();
+          var ne = Y => {
+            var mt = Ta();
             v(Y, mt)
           };
           st(Mt, Y => {
-            r(w) && Y(ie)
+            r(w) && Y(ne)
           })
         }
         Q(ht);
         var at = Et(ht, 2),
-          Ft = et(at, !0);
+          zt = et(at, !0);
         Q(at), Q(it), Tt((Y, mt, yt, Ct) => {
-          Bt(V, Y), Bt(pt, mt), ht.disabled = r(x), Bt(Nt, `${yt??""} `), Bt(Ft, Ct)
-        }, [() => Hi(), () => Ro({
+          Bt(V, Y), Bt(pt, mt), ht.disabled = r(x), Bt(Nt, `${yt??""} `), Bt(zt, Ct)
+        }, [() => Ui(), () => Io({
           phone: n()
-        }), () => lo(), () => as()]), ae("click", ht, async () => {
+        }), () => Qr(), () => Xo()]), se("click", ht, async () => {
           await D(n())
-        }), ae("click", at, () => {
+        }), se("click", at, () => {
           n("")
         }), v(b, S)
       };
@@ -4188,12 +4175,12 @@ function Wa(o, t) {
 }
 on(["click"]);
 let Pe = $(!1);
-var Va = dt("<div></div>"),
-  ja = dt('<button type="button" class="btn">Retry</button>'),
-  za = dt('<span class="loading loading-spinner loading-lg"></span>'),
-  Fa = dt("<div><!></div>");
+var Na = dt("<div></div>"),
+  La = dt('<button type="button" class="btn">Retry</button>'),
+  Aa = dt('<span class="loading loading-spinner loading-lg"></span>'),
+  Pa = dt("<div><!></div>");
 
-function Ga(o, t) {
+function ka(o, t) {
   Yt(t, !0);
   let n = k(t, "widgetId", 15),
     f = k(t, "appearance", 3, "always"),
@@ -4291,22 +4278,22 @@ function Ga(o, t) {
     H = G(V);
   {
     var pt = T => {
-        var it = Va();
+        var it = Na();
         let ht;
         Hn(it, (Nt, xt) => R == null ? void 0 : R(Nt, xt), () => r(q)), Tt(() => ht = Jt(it, 1, `h-16 ${t.class??""}`, "svelte-1lm836y", ht, {
           flexible: y() == "flexible"
         })), v(T, it)
       },
       St = T => {
-        var it = Fa(),
+        var it = Pa(),
           ht = et(it);
         {
           var Nt = Lt => {
-              var Mt = ja();
-              ae("click", Mt, I), v(Lt, Mt)
+              var Mt = La();
+              se("click", Mt, I), v(Lt, Mt)
             },
             xt = Lt => {
-              var Mt = za();
+              var Mt = Aa();
               v(Lt, Mt)
             };
           st(ht, Lt => {
@@ -4322,9 +4309,9 @@ function Ga(o, t) {
   v(o, V), Xt()
 }
 on(["click"]);
-var Ka = dt('<dialog class="modal"><div><div class="min-h-16"><!></div></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
+var Oa = dt('<dialog class="modal"><div><div class="min-h-16"><!></div></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
 
-function qa(o, t) {
+function Ra(o, t) {
   Yt(t, !0);
   const n = E(() => un.current !== null),
     f = E(() => {
@@ -4332,7 +4319,7 @@ function qa(o, t) {
       return (D = un.current) == null ? void 0 : D.tier
     });
   let g = $("");
-  var w = Ka(),
+  var w = Oa(),
     x = et(w);
   let B;
   var W = et(x),
@@ -4348,7 +4335,7 @@ function qa(o, t) {
           var b = I => {
               {
                 let V = E(() => bi.trim());
-                Ga(I, {
+                ka(I, {
                   get siteKey() {
                     return r(V)
                   },
@@ -4360,7 +4347,7 @@ function qa(o, t) {
             S = I => {
               {
                 let V = E(() => wi.trim());
-                ea(I, {
+                Fs(I, {
                   get siteKey() {
                     return r(V)
                   },
@@ -4370,7 +4357,7 @@ function qa(o, t) {
               }
             },
             K = I => {
-              Wa(I, {
+              Sa(I, {
                 onsuccess: () => oi(),
                 get verifyingPhone() {
                   return r(g)
@@ -4399,9 +4386,9 @@ function qa(o, t) {
     "h-84": r(f) === 4 && !r(g)
   })), rn("close", w, () => ri()), v(o, w), Xt()
 }
-var Ya = dt('<span class="hidden"> </span> <!> <!> <!>', 1);
+var Ma = dt('<span class="hidden"> </span> <!> <!> <!>', 1);
 
-function gl(o, t) {
+function sl(o, t) {
   Yt(t, !0), fe(() => {
     const y = mi();
     Ln.init(), si();
@@ -4434,7 +4421,7 @@ function gl(o, t) {
       localStorage.setItem(n, Number(y).toString())
     }
   }), fe(() => {});
-  var f = Ya();
+  var f = Ma();
   rn("beforeunload", ti, () => {
     gi()
   });
@@ -4453,9 +4440,9 @@ function gl(o, t) {
     })
   }
   var W = Et(x, 2);
-  qa(W, {});
+  Ra(W, {});
   var L = Et(W, 2);
-  Qs(L, {
+  Hs(L, {
     closeButton: !0,
     richColors: !0,
     position: "top-right",
@@ -4464,5 +4451,5 @@ function gl(o, t) {
   }), Tt(() => Bt(w, `Version: ${ni}`)), v(o, f), Xt()
 }
 export {
-  gl as component, _l as universal
+  sl as component, ol as universal
 };

@@ -1,51 +1,22 @@
-import "./Bzak7iHL.js";
 import {
-  q as h,
-  f as g,
-  a as o,
-  w as l
-} from "./Dbe4PVAU.js";
-import {
-  i as n
-} from "./Icl9dwnj.js";
-import {
-  d as e
-} from "./B7_gUtXa.js";
-import {
-  r as q
-} from "./K9AHFDoV.js";
-var w = l('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
-  T = l('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
-
-function C(f, t) {
-  let s = q(t, ["$$slots", "$$events", "$$legacy", "filled"]);
-  var a = h(),
-    i = g(a);
-  {
-    var m = r => {
-        var v = w();
-        e(v, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...s
-        })), o(r, v)
-      },
-      p = r => {
-        var v = T();
-        e(v, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...s
-        })), o(r, v)
-      };
-    n(i, r => {
-      t.filled ? r(m) : r(p, !1)
-    })
-  }
-  o(f, a)
-}
+  g as e
+} from "./BhCkpOlh.js";
+const t = () => "Alliance",
+  l = () => "Aliança",
+  a = () => "联盟",
+  i = () => "Allianz",
+  c = () => "Alianza",
+  u = () => "Alliance",
+  o = () => "Alleanza",
+  s = () => "アライアンス",
+  f = () => "Sojusz",
+  _ = () => "Альянс",
+  p = () => "Альянс",
+  A = () => "Liên minh",
+  j = (z = {}, r = {}) => {
+    const n = r.locale ?? e();
+    return n === "en" ? t() : n === "pt" ? l() : n === "ch" ? a() : n === "de" ? i() : n === "es" ? c() : n === "fr" ? u() : n === "it" ? o() : n === "jp" ? s() : n === "pl" ? f() : n === "ru" ? _() : n === "uk" ? p() : A()
+  };
 export {
-  C
+  j as a
 };
