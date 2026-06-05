@@ -24,7 +24,7 @@ import {
   i as n,
   u as Z,
   bp as ze,
-  h as m,
+  h as g,
   e as ne,
   I as Ht
 } from "./Dbe4PVAU.js";
@@ -36,10 +36,10 @@ import {
 } from "./Icl9dwnj.js";
 import {
   d as Re,
-  s as me,
+  s as ge,
   a as ve,
   b as Le,
-  c as mt
+  c as gt
 } from "./B7_gUtXa.js";
 import {
   r as Oe,
@@ -59,7 +59,7 @@ import {
 } from "./MHTwTb88.js";
 import {
   r as yt
-} from "./DqZmP5EV.js";
+} from "./oK8RKm5S.js";
 import {
   l as Gt
 } from "./B_Oz03f8.js";
@@ -111,15 +111,15 @@ const Yt = () => "Balance",
   vr = () => "Gekauft",
   hr = () => "Comprado",
   _r = () => "Acheté",
-  gr = () => "Acquistato",
-  mr = () => "購入済み",
+  mr = () => "Acquistato",
+  gr = () => "購入済み",
   br = () => "Zakupiono",
   yr = () => "Куплено",
   wr = () => "Придбано",
   xr = () => "Đã mua",
   kr = (o = {}, t = {}) => {
     const e = t.locale ?? N();
-    return e === "en" ? dr() : e === "pt" ? pr() : e === "ch" ? fr() : e === "de" ? vr() : e === "es" ? hr() : e === "fr" ? _r() : e === "it" ? gr() : e === "jp" ? mr() : e === "pl" ? br() : e === "ru" ? yr() : e === "uk" ? wr() : xr()
+    return e === "en" ? dr() : e === "pt" ? pr() : e === "ch" ? fr() : e === "de" ? vr() : e === "es" ? hr() : e === "fr" ? _r() : e === "it" ? mr() : e === "jp" ? gr() : e === "pl" ? br() : e === "ru" ? yr() : e === "uk" ? wr() : xr()
   },
   qr = () => "Eraser",
   Cr = () => "Borracha",
@@ -179,11 +179,11 @@ const Yt = () => "Balance",
   vn = () => "支払い未完了",
   hn = () => "Płatność niekompletna",
   _n = () => "Платёж не завершён",
-  gn = () => "Платіж не завершено",
-  mn = () => "Thanh toán chưa hoàn thành",
+  mn = () => "Платіж не завершено",
+  gn = () => "Thanh toán chưa hoàn thành",
   bn = (o = {}, t = {}) => {
     const e = t.locale ?? N();
-    return e === "en" ? sn() : e === "pt" ? ln() : e === "ch" ? cn() : e === "de" ? un() : e === "es" ? dn() : e === "fr" ? pn() : e === "it" ? fn() : e === "jp" ? vn() : e === "pl" ? hn() : e === "ru" ? _n() : e === "uk" ? gn() : mn()
+    return e === "en" ? sn() : e === "pt" ? ln() : e === "ch" ? cn() : e === "de" ? un() : e === "es" ? dn() : e === "fr" ? pn() : e === "it" ? fn() : e === "jp" ? vn() : e === "pl" ? hn() : e === "ru" ? _n() : e === "uk" ? mn() : gn()
   },
   yn = () => "Your payment was not completed. Return to the store to try again.",
   wn = () => "Seu pagamento não foi concluído. Volte à loja para tentar novamente.",
@@ -244,10 +244,10 @@ const Yt = () => "Balance",
   vo = () => "Polityka zwrotów",
   ho = () => "Политика возврата средств",
   _o = () => "Політика повернення коштів",
-  go = () => "Chính sách hoàn tiền",
-  mo = (o = {}, t = {}) => {
+  mo = () => "Chính sách hoàn tiền",
+  go = (o = {}, t = {}) => {
     const e = t.locale ?? N();
-    return e === "en" ? ao() : e === "pt" ? so() : e === "ch" ? io() : e === "de" ? lo() : e === "es" ? co() : e === "fr" ? uo() : e === "it" ? po() : e === "jp" ? fo() : e === "pl" ? vo() : e === "ru" ? ho() : e === "uk" ? _o() : go()
+    return e === "en" ? ao() : e === "pt" ? so() : e === "ch" ? io() : e === "de" ? lo() : e === "es" ? co() : e === "fr" ? uo() : e === "it" ? po() : e === "jp" ? fo() : e === "pl" ? vo() : e === "ru" ? ho() : e === "uk" ? _o() : mo()
   },
   bo = () => "For refund requests and processing details, please see our",
   yo = () => "Para pedidos de reembolso, consulte nossa",
@@ -313,8 +313,8 @@ const Yt = () => "Balance",
     const e = t.locale ?? N();
     return e === "en" ? oa() : e === "pt" ? aa() : e === "ch" ? sa() : e === "de" ? ia() : e === "es" ? la() : e === "fr" ? ca() : e === "it" ? ua() : e === "jp" ? da() : e === "pl" ? pa() : e === "ru" ? fa() : e === "uk" ? va() : ha()
   },
-  ga = () => "Other methods",
-  ma = () => "Outros métodos",
+  ma = () => "Other methods",
+  ga = () => "Outros métodos",
   ba = () => "其他方式",
   ya = () => "Andere Methoden",
   wa = () => "Otros métodos",
@@ -327,7 +327,7 @@ const Yt = () => "Balance",
   Aa = () => "Phương thức khác",
   La = (o = {}, t = {}) => {
     const e = t.locale ?? N();
-    return e === "en" ? ga() : e === "pt" ? ma() : e === "ch" ? ba() : e === "de" ? ya() : e === "es" ? wa() : e === "fr" ? xa() : e === "it" ? ka() : e === "jp" ? qa() : e === "pl" ? Ca() : e === "ru" ? Sa() : e === "uk" ? Da() : Aa()
+    return e === "en" ? ma() : e === "pt" ? ga() : e === "ch" ? ba() : e === "de" ? ya() : e === "es" ? wa() : e === "fr" ? xa() : e === "it" ? ka() : e === "jp" ? qa() : e === "pl" ? Ca() : e === "ru" ? Sa() : e === "uk" ? Da() : Aa()
   },
   ja = () => "Payment",
   Pa = () => "Pagamento",
@@ -524,8 +524,8 @@ for (let o = 0; o < Dt; o++)
 var vs = _('<span class="wp-dots svelte-ifq4hh" aria-hidden="true"><span class="svelte-ifq4hh"></span><span class="svelte-ifq4hh"></span><span class="svelte-ifq4hh"></span></span>'),
   hs = _('<div class="wp-amount-label svelte-ifq4hh"> </div>'),
   _s = _('<div class="svelte-ifq4hh"><div class="wp-amount tabular-nums svelte-ifq4hh"> </div> <!></div>'),
-  gs = _('<p class="wp-body svelte-ifq4hh"><!></p>'),
-  ms = _('<li class="svelte-ifq4hh"><span class="wp-bullet-row svelte-ifq4hh"><span class="wp-bullet-label svelte-ifq4hh"> </span> <span class="wp-bullet-value tabular-nums svelte-ifq4hh"><!> </span></span></li>'),
+  ms = _('<p class="wp-body svelte-ifq4hh"><!></p>'),
+  gs = _('<li class="svelte-ifq4hh"><span class="wp-bullet-row svelte-ifq4hh"><span class="wp-bullet-label svelte-ifq4hh"> </span> <span class="wp-bullet-value tabular-nums svelte-ifq4hh"><!> </span></span></li>'),
   bs = _('<ul class="wp-bullets svelte-ifq4hh"></ul>'),
   ys = _('<div class="wp-receipt-row svelte-ifq4hh"><span class="svelte-ifq4hh"> </span> <strong class="svelte-ifq4hh"> </strong></div>'),
   ws = _('<div class="wp-receipt-divider svelte-ifq4hh"></div> <div class="wp-receipt-row wp-receipt-total svelte-ifq4hh"><span class="svelte-ifq4hh"> </span> <span class="v svelte-ifq4hh"> </span></div>', 1),
@@ -586,9 +586,9 @@ function lt(o, t) {
           var I = u(q, 2);
           {
             var R = y => {
-              var g = hs(),
-                C = s(g, !0);
-              a(g), M(() => j(C, t.amountLabel)), i(y, g)
+              var m = hs(),
+                C = s(m, !0);
+              a(m), M(() => j(C, t.amountLabel)), i(y, m)
             };
             L(I, y => {
               t.amountLabel && y(R)
@@ -603,18 +603,18 @@ function lt(o, t) {
       var A = u(k, 2);
       {
         var U = p => {
-          var d = gs(),
+          var d = ms(),
             q = s(d);
           {
             var E = y => {
-                var g = be(),
-                  C = K(g);
-                wt(C, () => t.body), i(y, g)
+                var m = be(),
+                  C = K(m);
+                wt(C, () => t.body), i(y, m)
               },
               I = Z(() => v(t.body)),
               R = y => {
-                var g = ze();
-                M(() => j(g, t.body)), i(y, g)
+                var m = ze();
+                M(() => j(m, t.body)), i(y, m)
               };
             L(q, y => {
               n(I) ? y(E) : y(R, !1)
@@ -631,10 +631,10 @@ function lt(o, t) {
         var oe = p => {
           var d = bs();
           ot(d, 21, () => t.bullets, xt, (q, E) => {
-            var I = ms(),
+            var I = gs(),
               R = s(I),
               y = s(R),
-              g = s(y, !0);
+              m = s(y, !0);
             a(y);
             var C = u(y, 2);
             let ue;
@@ -649,7 +649,7 @@ function lt(o, t) {
             }
             var ke = u(X);
             a(C), a(R), a(I), M(() => {
-              j(g, n(E).label), ue = Le(C, "", ue, {
+              j(m, n(E).label), ue = Le(C, "", ue, {
                 color: n(E).valueColor ?? n(w).accent
               }), j(ke, ` ${n(E).value??""??""}`)
             }), i(q, I)
@@ -665,30 +665,30 @@ function lt(o, t) {
           var d = xs(),
             q = s(d);
           ot(q, 17, () => t.receipt.rows, xt, (R, y) => {
-            var g = ys(),
-              C = s(g),
+            var m = ys(),
+              C = s(m),
               ue = s(C, !0);
             a(C);
             var X = u(C, 2);
             let re;
             var ke = s(X, !0);
-            a(X), a(g), M(() => {
+            a(X), a(m), M(() => {
               j(ue, n(y).label), re = Le(X, "", re, {
                 color: n(y).color
               }), j(ke, n(y).value)
-            }), i(R, g)
+            }), i(R, m)
           });
           var E = u(q, 2);
           {
             var I = R => {
               var y = ws(),
-                g = u(K(y), 2),
-                C = s(g),
+                m = u(K(y), 2),
+                C = s(m),
                 ue = s(C, !0);
               a(C);
               var X = u(C, 2),
                 re = s(X, !0);
-              a(X), a(g), M(() => {
+              a(X), a(m), M(() => {
                 j(ue, t.receipt.total.label), j(re, t.receipt.total.value)
               }), i(R, y)
             };
@@ -719,14 +719,14 @@ function lt(o, t) {
             q = s(d);
           {
             var E = y => {
-                var g = be(),
-                  C = K(g);
-                wt(C, () => t.meta), i(y, g)
+                var m = be(),
+                  C = K(m);
+                wt(C, () => t.meta), i(y, m)
               },
               I = Z(() => v(t.meta)),
               R = y => {
-                var g = ze();
-                M(() => j(g, t.meta)), i(y, g)
+                var m = ze();
+                M(() => j(m, t.meta)), i(y, m)
               };
             L(q, y => {
               n(I) ? y(E) : y(R, !1)
@@ -753,12 +753,12 @@ function lt(o, t) {
                 "--cta-bg": t.buttonRow.primary.color,
                 "--cta-dark": t.buttonRow.primary.colorDark
               }), j(y, t.buttonRow.primary.label)
-            }), he("click", q, function(...g) {
+            }), he("click", q, function(...m) {
               var C;
-              (C = t.buttonRow.secondary.onClick) == null || C.apply(this, g)
-            }), he("click", I, function(...g) {
+              (C = t.buttonRow.secondary.onClick) == null || C.apply(this, m)
+            }), he("click", I, function(...m) {
               var C;
-              (C = t.buttonRow.primary.onClick) == null || C.apply(this, g)
+              (C = t.buttonRow.primary.onClick) == null || C.apply(this, m)
             }), i(p, d)
           },
           se = p => {
@@ -769,11 +769,11 @@ function lt(o, t) {
             a(E);
             var R = u(E, 2);
             {
-              var y = g => {
-                ds(g)
+              var y = m => {
+                ds(m)
               };
-              L(R, g => {
-                t.primary.arrow !== !1 && g(y)
+              L(R, m => {
+                t.primary.arrow !== !1 && m(y)
               })
             }
             a(d), M(() => {
@@ -781,9 +781,9 @@ function lt(o, t) {
                 "--cta-bg": t.primary.color,
                 "--cta-dark": t.primary.colorDark
               }), j(I, t.primary.label)
-            }), he("click", d, function(...g) {
+            }), he("click", d, function(...m) {
               var C;
-              (C = t.primary.onClick) == null || C.apply(this, g)
+              (C = t.primary.onClick) == null || C.apply(this, m)
             }), i(p, d)
           };
         L(Ie, p => {
@@ -810,7 +810,7 @@ function lt(o, t) {
           var d = As(),
             q = s(d, !0);
           a(d), M(E => {
-            me(d, "href", E), j(q, t.ghost)
+            ge(d, "href", E), j(q, t.ghost)
           }, [() => yt("/")]), i(p, d)
         };
         L(_e, p => {
@@ -891,10 +891,10 @@ function lt(o, t) {
       W = D => {
         var x = Vs(),
           S = s(x);
-        me(S, "viewBox", `0 0 ${St} ${Dt}`), ot(S, 21, () => At, ae => ae.x + "-" + ae.y, (ae, pe) => {
+        ge(S, "viewBox", `0 0 ${St} ${Dt}`), ot(S, 21, () => At, ae => ae.x + "-" + ae.y, (ae, pe) => {
           var ie = Os();
           M(() => {
-            me(ie, "x", n(pe).x), me(ie, "y", n(pe).y)
+            ge(ie, "x", n(pe).x), ge(ie, "y", n(pe).y)
           }), i(ae, ie)
         }), a(S);
         var F = u(S, 2),
@@ -920,7 +920,7 @@ function lt(o, t) {
         var oe = u(T, 2),
           Pe = s(oe);
         e(Pe), a(oe), a(k), a(x), M(ae => {
-          me(A, "href", ae), me(U, "src", Gt)
+          ge(A, "href", ae), ge(U, "src", Gt)
         }, [() => yt("/")]), he("click", de, function(...ae) {
           var pe;
           (pe = t.onclose) == null || pe.apply(this, ae)
@@ -1130,7 +1130,7 @@ function $s(o, t) {
       W;
     const D = () => {
       var B;
-      n(l) || (m(l, !0), (B = t.oncomplete) == null || B.call(t, W ?? localStorage.getItem(r) ?? void 0))
+      n(l) || (g(l, !0), (B = t.oncomplete) == null || B.call(t, W ?? localStorage.getItem(r) ?? void 0))
     };
     localStorage.removeItem(r), h.FSCEventCallback = B => {
       B === "FSC-purchaseComplete" && D()
@@ -1317,7 +1317,7 @@ function vi(o, t) {
       fetchClientSecret: async () => t.clientSecret,
       onComplete: async () => {
         var h;
-        r == null || r.destroy(), r = void 0, m(l, !0), (h = t.onComplete) == null || h.call(t)
+        r == null || r.destroy(), r = void 0, g(l, !0), (h = t.onComplete) == null || h.call(t)
       }
     }), r.mount(e))
   }), Ft(() => {
@@ -1339,8 +1339,8 @@ function vi(o, t) {
 }
 var hi = _('<!> <h3 class="text-xl font-bold"> </h3> <div class="mr-2 ml-auto"><!></div>', 1),
   _i = _('<button class="btn btn-ghost btn-sm btn-circle"><!></button> <h3 class="text-xl font-bold"> </h3>', 1),
-  gi = _('<span class="loading loading-spinner loading-sm absolute"></span>'),
-  mi = _('<div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-6"><p class="text-primary text-3xl font-bold"><!> <span> <span class="text-lg font-normal"> </span></span></p> <p class="text-base-content/80 mt-0.5 text-center text-xs"><!> <span class="text-primary/80 font-medium"> </span></p> <button class="btn btn-lg btn-primary relative mt-3 h-10"><!> <span><!></span></button></div>'),
+  mi = _('<span class="loading loading-spinner loading-sm absolute"></span>'),
+  gi = _('<div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-6"><p class="text-primary text-3xl font-bold"><!> <span> <span class="text-lg font-normal"> </span></span></p> <p class="text-base-content/80 mt-0.5 text-center text-xs"><!> <span class="text-primary/80 font-medium"> </span></p> <button class="btn btn-lg btn-primary relative mt-3 h-10"><!> <span><!></span></button></div>'),
   bi = _('<p class="text-base-content/80 mb-4 text-sm"> </p> <div class="grid gap-3 sm:grid-cols-2"><!> <!> <!> <!> <!> <!></div> <p class="text-base-content/60 mt-4 text-center text-sm"> <a class="font-medium" target="_blank"> </a></p>', 1),
   yi = _('<div class="flex h-40 items-center justify-center"><span class="loading loading-spinner loading-lg"></span></div>'),
   wi = _("<div><!></div>"),
@@ -1370,12 +1370,12 @@ function el(o, t) {
   let x = ne("stripe"),
     S = ne(!1);
   Ht(() => {
-    n(x) === "other" && m(S, !0)
+    n(x) === "other" && g(S, !0)
   }), st(() => {
     if (!!localStorage.getItem("fscBackFromCheckout")) {
       localStorage.removeItem("fscBackFromCheckout");
       const U = Number(localStorage.getItem("wplace_fs_droplets")) || 0;
-      history.replaceState({}, "", window.location.pathname), m(v, !0), B(U)
+      history.replaceState({}, "", window.location.pathname), g(v, !0), B(U)
     }
   });
   let F = null;
@@ -1383,10 +1383,10 @@ function el(o, t) {
     const U = {
       cancelled: !1
     };
-    F = U, m(v, !0);
+    F = U, g(v, !0);
     for (let de = 0; de < 2; de++) {
       if (de !== 0 && await new Promise(oe => setTimeout(oe, 2e3)), U.cancelled) {
-        m(v, !1);
+        g(v, !1);
         return
       }
       try {
@@ -1394,36 +1394,36 @@ function el(o, t) {
         if (!oe) continue;
         if (!oe.read) {
           if (U.cancelled) {
-            m(v, !1);
+            g(v, !1);
             return
           }
-          m(v, !1), m(w, !1), m(f, A, !0), m(b, !0), await fe.refresh(), await je.markFastspringOrderAsRead(oe.id);
+          g(v, !1), g(w, !1), g(f, A, !0), g(b, !0), await fe.refresh(), await je.markFastspringOrderAsRead(oe.id);
           return
         }
       } catch {}
     }
-    m(v, !1), U.cancelled || m(w, !0)
+    g(v, !1), U.cancelled || g(w, !0)
   }
   async function H(A) {
-    F && (F.cancelled = !0), m(c, A, !0), m(x, "stripe"), m(l, !0), localStorage.setItem("wplace_fs_droplets", String(A.droplets + A.bonus));
+    F && (F.cancelled = !0), g(c, A, !0), g(x, "stripe"), g(l, !0), localStorage.setItem("wplace_fs_droplets", String(A.droplets + A.bonus));
     try {
       await (async U => {
-        m(h, U.clientSecret, !0), m(z, U.sessionId, !0)
-      })(await je.createEmbeddedCheckout(A.stripeLookupkey)), m(r, "checkout")
+        g(h, U.clientSecret, !0), g(z, U.sessionId, !0)
+      })(await je.createEmbeddedCheckout(A.stripeLookupkey)), g(r, "checkout")
     } catch (U) {
       bt.error(U.message ?? "Unexpected error")
     } finally {
-      m(l, !1)
+      g(l, !1)
     }
   }
 
   function J() {
-    m(r, "products"), m(c, null), m(h, null), m(z, null), localStorage.removeItem("wplace_fs_droplets")
+    g(r, "products"), g(c, null), g(h, null), g(z, null), localStorage.removeItem("wplace_fs_droplets")
   }
   async function ee() {
-    m(f, n(c).droplets + n(c).bonus);
+    g(f, n(c).droplets + n(c).bonus);
     const A = n(z);
-    A && (await je.refreshDropletSession(A).catch(() => {}), await fe.refresh()), J(), e(!1), m(b, !0)
+    A && (await je.refreshDropletSession(A).catch(() => {}), await fe.refresh()), J(), e(!1), g(b, !0)
   }
   var Q = ki(),
     Y = K(Q),
@@ -1472,7 +1472,7 @@ function el(o, t) {
       }
       i(ie, Be)
     };
-    let U = Z(() => n(r) === "products" ? "max-w-2xl" : "max-w-5xl"),
+    let U = Z(() => n(r) === "products" ? "max-w-2xl" : "max-w-5xl max-h-[min(91.6vh,57rem)]"),
       de = Z(() => n(r) === "checkout" ? "px-0 sm:px-0 pt-0 pb-4" : ""),
       oe = Z(() => n(r) === "products"),
       Pe = Z(() => n(r) !== "checkout"),
@@ -1501,7 +1501,7 @@ function el(o, t) {
       },
       onclose: () => {
         setTimeout(() => {
-          m(r, "products"), m(c, null), m(h, null), m(z, null), m(x, "stripe"), m(S, !1)
+          g(r, "products"), g(c, null), g(h, null), g(z, null), g(x, "stripe"), g(S, !1)
         }, 100)
       },
       get open() {
@@ -1526,7 +1526,7 @@ function el(o, t) {
                       Ae = () => P == null ? void 0 : P().price,
                       Me = () => P == null ? void 0 : P().stripeLookupkey,
                       Ve = () => P == null ? void 0 : P().productId;
-                    var $e = mi(),
+                    var $e = gi(),
                       et = s($e),
                       ct = s(et);
                     at(ct, {
@@ -1542,7 +1542,7 @@ function el(o, t) {
                     {
                       var It = O => {
                         var G = ze();
-                        M((ge, nt) => j(G, `${ge??""} ${nt??""}`), [() => $().toLocaleString(navigator.language), () => Je()]), i(O, G)
+                        M((me, nt) => j(G, `${me??""} ${nt??""}`), [() => $().toLocaleString(navigator.language), () => Je()]), i(O, G)
                       };
                       L(ft, O => {
                         Ce() && O(It)
@@ -1555,7 +1555,7 @@ function el(o, t) {
                       ht = s(Ge);
                     {
                       var zt = O => {
-                        var G = gi();
+                        var G = mi();
                         i(O, G)
                       };
                       L(ht, O => {
@@ -1569,25 +1569,25 @@ function el(o, t) {
                     {
                       var Tt = O => {
                           var G = ze();
-                          M(ge => j(G, `MX$${ge??""}`), [() => (Ae() * 18).toFixed(2)]), i(O, G)
+                          M(me => j(G, `MX$${me??""}`), [() => (Ae() * 18).toFixed(2)]), i(O, G)
                         },
                         Zt = O => {
                           var G = ze();
-                          M(ge => j(G, `R$${ge??""}`), [() => (Ae() * 4).toFixed(2).replace(".", ",")]), i(O, G)
+                          M(me => j(G, `R$${me??""}`), [() => (Ae() * 4).toFixed(2).replace(".", ",")]), i(O, G)
                         },
                         Ut = O => {
                           var G = ze();
-                          M(ge => j(G, `$${ge??""}`), [() => Ae().toFixed(2)]), i(O, G)
+                          M(me => j(G, `$${me??""}`), [() => Ae().toFixed(2)]), i(O, G)
                         };
                       L(Rt, O => {
                         n(W) ? O(Tt) : n(D) ? O(Zt, 1) : O(Ut, !1)
                       })
                     }
-                    a(rt), a(Ge), a($e), M((O, G, ge, nt) => {
-                      var gt;
-                      j(dt, `${O??""} `), j(Et, G), j(Mt, `+${ge??""}
+                    a(rt), a(Ge), a($e), M((O, G, me, nt) => {
+                      var mt;
+                      j(dt, `${O??""} `), j(Et, G), j(Mt, `+${me??""}
 								${nt??""}`), Ge.disabled = n(l), _t = ve(rt, 1, "", null, _t, {
-                        "opacity-0": n(l) && ((gt = n(c)) == null ? void 0 : gt.stripeLookupkey) === Me()
+                        "opacity-0": n(l) && ((mt = n(c)) == null ? void 0 : mt.stripeLookupkey) === Me()
                       })
                     }, [() => ($() + Ce()).toLocaleString(navigator.language), () => Je(), () => Ce().toLocaleString(navigator.language), () => na()]), he("click", Ge, () => H({
                       price: Ae(),
@@ -1611,8 +1611,8 @@ function el(o, t) {
                     productId: 10,
                     dropdownClass: "dropdown-center"
                   }));
-                  var g = u(y, 2);
-                  d(g, () => ({
+                  var m = u(y, 2);
+                  d(m, () => ({
                     price: 15,
                     droplets: 75e3,
                     bonus: 3750,
@@ -1620,7 +1620,7 @@ function el(o, t) {
                     productId: 20,
                     dropdownClass: "dropdown-center"
                   }));
-                  var C = u(g, 2);
+                  var C = u(m, 2);
                   d(C, () => ({
                     price: 30,
                     droplets: 15e4,
@@ -1661,8 +1661,8 @@ function el(o, t) {
                     Ze = u(qe),
                     Ye = s(Ze, !0);
                   a(Ze), a(ke), M((Ue, P, $, Ce) => {
-                    j(I, Ue), j(qe, `${P??""} `), me(Ze, "href", $), j(Ye, Ce)
-                  }, [() => Vo(), () => Po(), Vt, () => mo()]), i(p, q)
+                    j(I, Ue), j(qe, `${P??""} `), ge(Ze, "href", $), j(Ye, Ce)
+                  }, [() => Vo(), () => Po(), Vt, () => go()]), i(p, q)
                 },
                 xe = p => {
                   var d = xi(),
@@ -1671,7 +1671,7 @@ function el(o, t) {
                     I = s(E),
                     R = s(I),
                     y = u(R, 2),
-                    g = u(y);
+                    m = u(y);
                   a(I);
                   var C = u(I, 2),
                     ue = s(C, !0);
@@ -1718,20 +1718,20 @@ function el(o, t) {
                               } = await je.refreshFastspringSession(Ae);
                               await fe.refresh(), Ve && await je.markFastspringOrderAsRead(Ve), localStorage.removeItem("fscBackFromCheckout")
                             }
-                            J(), e(!1), m(f, Me), m(b, !0)
+                            J(), e(!1), g(f, Me), g(b, !0)
                           } catch {
                             bt.warning(ts())
                           }
                         }
-                      }), a($), M(() => ve($, 1, mt(n(x) !== "other" ? "h-0 overflow-hidden" : ""))), i(P, $)
+                      }), a($), M(() => ve($, 1, gt(n(x) !== "other" ? "h-0 overflow-hidden" : ""))), i(P, $)
                     };
                     L(Ye, P => {
                       n(S) && P(Ue)
                     })
                   }
                   a(X), M((P, $) => {
-                    ve(I, 1, `group flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all ${n(x)==="stripe"?"dark:bg-base-100 bg-white text-[#635bff] shadow-sm":"text-base-content/50 hover:text-base-content/80"}`), ve(R, 0, `hidden w-auto transition-all sm:block sm:h-4 ${n(x)==="stripe"?"":"grayscale group-hover:grayscale-0"}`), ve(y, 0, `hidden w-auto transition-all sm:block sm:h-4 ${n(x)==="stripe"?"":"grayscale group-hover:grayscale-0"}`), j(g, ` ${P??""}`), ve(C, 1, `flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all ${n(x)==="other"?"dark:bg-base-100 bg-white text-[#30313d] shadow-sm":"text-base-content/50 hover:text-base-content/80"}`), j(ue, $), ve(re, 1, mt(n(x) !== "stripe" ? "h-0 overflow-hidden" : ""))
-                  }, [() => _a(), () => La()]), he("click", I, () => m(x, "stripe")), he("click", C, () => m(x, "other")), i(p, d)
+                    ve(I, 1, `group flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all ${n(x)==="stripe"?"dark:bg-base-100 bg-white text-[#635bff] shadow-sm":"text-base-content/50 hover:text-base-content/80"}`), ve(R, 0, `hidden w-auto transition-all sm:block sm:h-4 ${n(x)==="stripe"?"":"grayscale group-hover:grayscale-0"}`), ve(y, 0, `hidden w-auto transition-all sm:block sm:h-4 ${n(x)==="stripe"?"":"grayscale group-hover:grayscale-0"}`), j(m, ` ${P??""}`), ve(C, 1, `flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all ${n(x)==="other"?"dark:bg-base-100 bg-white text-[#30313d] shadow-sm":"text-base-content/50 hover:text-base-content/80"}`), j(ue, $), ve(re, 1, gt(n(x) !== "stripe" ? "h-0 overflow-hidden" : ""))
+                  }, [() => _a(), () => La()]), he("click", I, () => g(x, "stripe")), he("click", C, () => g(x, "other")), i(p, d)
                 };
               L(ce, p => {
                 n(r) === "products" ? p(_e) : n(r) === "checkout" && n(c) && p(xe, 1)
@@ -1762,7 +1762,7 @@ function el(o, t) {
       return n(b)
     },
     set open(A) {
-      m(b, A, !0)
+      g(b, A, !0)
     }
   });
   var k = u(we, 2);
@@ -1772,7 +1772,7 @@ function el(o, t) {
       return n(w)
     },
     set open(A) {
-      m(w, A, !0)
+      g(w, A, !0)
     }
   });
   var T = u(k, 2);
@@ -1781,9 +1781,9 @@ function el(o, t) {
       return n(v)
     },
     set open(A) {
-      m(v, A, !0)
+      g(v, A, !0)
     }
-  }), M(() => me(Y, "data-theme", n(r) === "checkout" ? "custom-winter" : void 0)), i(o, Q), De()
+  }), M(() => ge(Y, "data-theme", n(r) === "checkout" ? "custom-winter" : void 0)), i(o, Q), De()
 }
 it(["click"]);
 var qi = V('<svg><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"></path></svg>');
@@ -1879,7 +1879,7 @@ function al(o, t) {
       },
       c = D => {
         var x = Ai();
-        M(() => me(x, "src", t.pictureUrl)), i(D, x)
+        M(() => ge(x, "src", t.pictureUrl)), i(D, x)
       };
     L(w, D => {
       t.pictureUrl ? D(c, !1) : D(v)
