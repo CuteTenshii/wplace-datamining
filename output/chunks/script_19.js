@@ -32,7 +32,7 @@ import {
 import {
   T as iq,
   j as sq
-} from "./Buqg908p.js";
+} from "./BJET2IsZ.js";
 import {
   k as L
 } from "./B7_gUtXa.js";
