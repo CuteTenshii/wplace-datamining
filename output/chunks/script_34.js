@@ -1,7 +1,7 @@
 import {
   b as r,
   r as o
-} from "./DZ7_TV2R.js";
+} from "./C4Ige1aI.js";
 const t = "";
 
 function a(...e) {
