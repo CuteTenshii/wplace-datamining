@@ -20,7 +20,7 @@ function Re(e = void 0) {
     n = (e == null ? void 0 : e.vendor) ?? navigator.vendor;
   return "brave" in navigator ? "Brave" : /\bEdg(?:e|A|iOS)?\//.test(t) ? "Edge" : /\bOPR\/|\bOpera\//.test(t) ? "Opera" : /\bVivaldi\//.test(t) ? "Vivaldi" : /\bYaBrowser\//.test(t) ? "Yandex" : /\bSamsungBrowser\//.test(t) ? "Samsung Internet" : /\bUCBrowser\/|\bUCWEB\//.test(t) ? "UC Browser" : /\bDuckDuckGo\/|\bDdg\//.test(t) ? "DuckDuckGo" : getComputedStyle(document.documentElement).getPropertyValue("--arc-palette-title") ? "Arc" : /Firefox\/|FxiOS\//.test(t) ? "Firefox" : /Chrome\/|CriOS\//.test(t) && /google/i.test(n) ? "Chrome" : /Safari\//.test(t) && /apple/i.test(n) ? "Safari" : "Unknown"
 }
-var ue = "5.2.0";
+var le = "5.2.0";
 
 function N(e, t) {
   return new Promise(n => setTimeout(n, e, t))
@@ -42,25 +42,25 @@ function Ee(e, t = 1 / 0) {
   })) : N(Math.min(e, t))
 }
 
-function le(e) {
+function de(e) {
   return !!e && typeof e.then == "function"
 }
 
-function $(e, t) {
+function K(e, t) {
   try {
     const n = e();
-    le(n) ? n.then(o => t(!0, o), o => t(!1, o)) : t(!0, n)
+    de(n) ? n.then(o => t(!0, o), o => t(!1, o)) : t(!0, n)
   } catch (n) {
     t(!1, n)
   }
 }
-async function K(e, t, n = 16) {
+async function Q(e, t, n = 16) {
   const o = Array(e.length);
   let r = Date.now();
   for (let u = 0; u < e.length; ++u) {
     o[u] = t(e[u], u);
-    const a = Date.now();
-    a >= r + n && (r = a, await Te())
+    const s = Date.now();
+    s >= r + n && (r = s, await Te())
   }
   return o
 }
@@ -79,7 +79,7 @@ function Ze(e, t) {
   return !Ge(e, t)
 }
 
-function J(e) {
+function U(e) {
   return parseInt(e)
 }
 
@@ -95,7 +95,7 @@ function w(e) {
   return e.reduce((t, n) => t + (n ? 1 : 0), 0)
 }
 
-function de(e, t = 1) {
+function fe(e, t = 1) {
   if (Math.abs(t) >= 1) return Math.round(e / t) * t;
   {
     const n = 1 / t;
@@ -108,24 +108,24 @@ function _e(e) {
   const o = `Unexpected syntax '${e}'`,
     r = /^\s*([a-z-]*)(.*)$/i.exec(e),
     u = r[1] || void 0,
-    a = {},
+    s = {},
     c = /([.:#][\w-]+|\[.+?\])/gi,
-    l = (d, s) => {
-      a[d] = a[d] || [], a[d].push(s)
+    l = (d, a) => {
+      s[d] = s[d] || [], s[d].push(a)
     };
   for (;;) {
     const d = c.exec(r[2]);
     if (!d) break;
-    const s = d[0];
-    switch (s[0]) {
+    const a = d[0];
+    switch (a[0]) {
       case ".":
-        l("class", s.slice(1));
+        l("class", a.slice(1));
         break;
       case "#":
-        l("id", s.slice(1));
+        l("id", a.slice(1));
         break;
       case "[": {
-        const i = /^\[([\w-]+)([~|^$*]?=("(.*?)"|([\w-]+)))?(\s+[is])?\]$/.exec(s);
+        const i = /^\[([\w-]+)([~|^$*]?=("(.*?)"|([\w-]+)))?(\s+[is])?\]$/.exec(a);
         if (i) l(i[1], (n = (t = i[4]) !== null && t !== void 0 ? t : i[5]) !== null && n !== void 0 ? n : "");
         else throw new Error(o);
         break
@@ -134,7 +134,7 @@ function _e(e) {
         throw new Error(o)
     }
   }
-  return [u, a]
+  return [u, s]
 }
 
 function Ne(e) {
@@ -152,15 +152,15 @@ function V(e, t) {
     o = e[0] & 65535,
     r = e[1] >>> 16,
     u = e[1] & 65535,
-    a = t[0] >>> 16,
+    s = t[0] >>> 16,
     c = t[0] & 65535,
     l = t[1] >>> 16,
     d = t[1] & 65535;
-  let s = 0,
+  let a = 0,
     i = 0,
     p = 0,
     f = 0;
-  f += u + d, p += f >>> 16, f &= 65535, p += r + l, i += p >>> 16, p &= 65535, i += o + c, s += i >>> 16, i &= 65535, s += n + a, s &= 65535, e[0] = s << 16 | i, e[1] = p << 16 | f
+  f += u + d, p += f >>> 16, f &= 65535, p += r + l, i += p >>> 16, p &= 65535, i += o + c, a += i >>> 16, i &= 65535, a += n + s, a &= 65535, e[0] = a << 16 | i, e[1] = p << 16 | f
 }
 
 function L(e, t) {
@@ -168,15 +168,15 @@ function L(e, t) {
     o = e[0] & 65535,
     r = e[1] >>> 16,
     u = e[1] & 65535,
-    a = t[0] >>> 16,
+    s = t[0] >>> 16,
     c = t[0] & 65535,
     l = t[1] >>> 16,
     d = t[1] & 65535;
-  let s = 0,
+  let a = 0,
     i = 0,
     p = 0,
     f = 0;
-  f += u * d, p += f >>> 16, f &= 65535, p += r * d, i += p >>> 16, p &= 65535, p += u * l, i += p >>> 16, p &= 65535, i += o * d, s += i >>> 16, i &= 65535, i += r * l, s += i >>> 16, i &= 65535, i += u * c, s += i >>> 16, i &= 65535, s += n * d + o * l + r * c + u * a, s &= 65535, e[0] = s << 16 | i, e[1] = p << 16 | f
+  f += u * d, p += f >>> 16, f &= 65535, p += r * d, i += p >>> 16, p &= 65535, p += u * l, i += p >>> 16, p &= 65535, i += o * d, a += i >>> 16, i &= 65535, i += r * l, a += i >>> 16, i &= 65535, i += u * c, a += i >>> 16, i &= 65535, a += n * d + o * l + r * c + u * s, a &= 65535, e[0] = a << 16 | i, e[1] = p << 16 | f
 }
 
 function P(e, t) {
@@ -194,13 +194,13 @@ function y(e, t) {
 const Ye = [4283543511, 3981806797],
   Be = [3301882366, 444984403];
 
-function Q(e) {
+function q(e) {
   const t = [0, e[0] >>> 1];
   y(e, t), L(e, Ye), t[1] = e[0] >>> 1, y(e, t), L(e, Be), t[1] = e[0] >>> 1, y(e, t)
 }
 const G = [2277735313, 289559509],
   Z = [1291169091, 658871167],
-  q = [0, 5],
+  ee = [0, 5],
   De = [0, 1390208809],
   He = [0, 944331445];
 
@@ -210,47 +210,47 @@ function je(e, t) {
   const o = [0, n.length],
     r = o[1] % 16,
     u = o[1] - r,
-    a = [0, t],
+    s = [0, t],
     c = [0, t],
     l = [0, 0],
     d = [0, 0];
-  let s;
-  for (s = 0; s < u; s = s + 16) l[0] = n[s + 4] | n[s + 5] << 8 | n[s + 6] << 16 | n[s + 7] << 24, l[1] = n[s] | n[s + 1] << 8 | n[s + 2] << 16 | n[s + 3] << 24, d[0] = n[s + 12] | n[s + 13] << 8 | n[s + 14] << 16 | n[s + 15] << 24, d[1] = n[s + 8] | n[s + 9] << 8 | n[s + 10] << 16 | n[s + 11] << 24, L(l, G), P(l, 31), L(l, Z), y(a, l), P(a, 27), V(a, c), L(a, q), V(a, De), L(d, Z), P(d, 33), L(d, G), y(c, d), P(c, 31), V(c, a), L(c, q), V(c, He);
+  let a;
+  for (a = 0; a < u; a = a + 16) l[0] = n[a + 4] | n[a + 5] << 8 | n[a + 6] << 16 | n[a + 7] << 24, l[1] = n[a] | n[a + 1] << 8 | n[a + 2] << 16 | n[a + 3] << 24, d[0] = n[a + 12] | n[a + 13] << 8 | n[a + 14] << 16 | n[a + 15] << 24, d[1] = n[a + 8] | n[a + 9] << 8 | n[a + 10] << 16 | n[a + 11] << 24, L(l, G), P(l, 31), L(l, Z), y(s, l), P(s, 27), V(s, c), L(s, ee), V(s, De), L(d, Z), P(d, 33), L(d, G), y(c, d), P(c, 31), V(c, s), L(c, ee), V(c, He);
   l[0] = 0, l[1] = 0, d[0] = 0, d[1] = 0;
   const i = [0, 0];
   switch (r) {
     case 15:
-      i[1] = n[s + 14], S(i, 48), y(d, i);
+      i[1] = n[a + 14], S(i, 48), y(d, i);
     case 14:
-      i[1] = n[s + 13], S(i, 40), y(d, i);
+      i[1] = n[a + 13], S(i, 40), y(d, i);
     case 13:
-      i[1] = n[s + 12], S(i, 32), y(d, i);
+      i[1] = n[a + 12], S(i, 32), y(d, i);
     case 12:
-      i[1] = n[s + 11], S(i, 24), y(d, i);
+      i[1] = n[a + 11], S(i, 24), y(d, i);
     case 11:
-      i[1] = n[s + 10], S(i, 16), y(d, i);
+      i[1] = n[a + 10], S(i, 16), y(d, i);
     case 10:
-      i[1] = n[s + 9], S(i, 8), y(d, i);
+      i[1] = n[a + 9], S(i, 8), y(d, i);
     case 9:
-      i[1] = n[s + 8], y(d, i), L(d, Z), P(d, 33), L(d, G), y(c, d);
+      i[1] = n[a + 8], y(d, i), L(d, Z), P(d, 33), L(d, G), y(c, d);
     case 8:
-      i[1] = n[s + 7], S(i, 56), y(l, i);
+      i[1] = n[a + 7], S(i, 56), y(l, i);
     case 7:
-      i[1] = n[s + 6], S(i, 48), y(l, i);
+      i[1] = n[a + 6], S(i, 48), y(l, i);
     case 6:
-      i[1] = n[s + 5], S(i, 40), y(l, i);
+      i[1] = n[a + 5], S(i, 40), y(l, i);
     case 5:
-      i[1] = n[s + 4], S(i, 32), y(l, i);
+      i[1] = n[a + 4], S(i, 32), y(l, i);
     case 4:
-      i[1] = n[s + 3], S(i, 24), y(l, i);
+      i[1] = n[a + 3], S(i, 24), y(l, i);
     case 3:
-      i[1] = n[s + 2], S(i, 16), y(l, i);
+      i[1] = n[a + 2], S(i, 16), y(l, i);
     case 2:
-      i[1] = n[s + 1], S(i, 8), y(l, i);
+      i[1] = n[a + 1], S(i, 8), y(l, i);
     case 1:
-      i[1] = n[s], y(l, i), L(l, G), P(l, 31), L(l, Z), y(a, l)
+      i[1] = n[a], y(l, i), L(l, G), P(l, 31), L(l, Z), y(s, l)
   }
-  return y(a, o), y(c, o), V(a, c), V(c, a), Q(a), Q(c), V(a, c), V(c, a), ("00000000" + (a[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (a[1] >>> 0).toString(16)).slice(-8) + ("00000000" + (c[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (c[1] >>> 0).toString(16)).slice(-8)
+  return y(s, o), y(c, o), V(s, c), V(c, s), q(s), q(c), V(s, c), V(c, s), ("00000000" + (s[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (s[1] >>> 0).toString(16)).slice(-8) + ("00000000" + (c[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (c[1] >>> 0).toString(16)).slice(-8)
 }
 
 function Xe(e) {
@@ -275,27 +275,27 @@ function ze(e) {
 function Je(e, t) {
   const n = A(new Promise(o => {
     const r = Date.now();
-    $(e.bind(null, t), (...u) => {
-      const a = Date.now() - r;
+    K(e.bind(null, t), (...u) => {
+      const s = Date.now() - r;
       if (!u[0]) return o(() => ({
         error: u[1],
-        duration: a
+        duration: s
       }));
       const c = u[1];
       if (ze(c)) return o(() => ({
         value: c,
-        duration: a
+        duration: s
       }));
       o(() => new Promise(l => {
         const d = Date.now();
-        $(c, (...s) => {
-          const i = a + Date.now() - d;
-          if (!s[0]) return l({
-            error: s[1],
+        K(c, (...a) => {
+          const i = s + Date.now() - d;
+          if (!a[0]) return l({
+            error: a[1],
             duration: i
           });
           l({
-            value: s[1],
+            value: a[1],
             duration: i
           })
         })
@@ -308,19 +308,19 @@ function Je(e, t) {
 }
 
 function Ue(e, t, n, o) {
-  const r = Object.keys(e).filter(a => Ze(n, a)),
-    u = A(K(r, a => Je(e[a], t), o));
+  const r = Object.keys(e).filter(s => Ze(n, s)),
+    u = A(Q(r, s => Je(e[s], t), o));
   return async function() {
     const c = await u,
-      l = await K(c, i => A(i()), o),
+      l = await Q(c, i => A(i()), o),
       d = await Promise.all(l),
-      s = {};
-    for (let i = 0; i < r.length; ++i) s[r[i]] = d[i];
-    return s
+      a = {};
+    for (let i = 0; i < r.length; ++i) a[r[i]] = d[i];
+    return a
   }
 }
 
-function fe() {
+function me() {
   const e = window,
     t = navigator;
   return w(["MSCSSMatrix" in e, "msSetImmediate" in e, "msIndexedDB" in e, "msMaxTouchPoints" in t, "msPointerEnabled" in t]) >= 4
@@ -329,7 +329,7 @@ function fe() {
 function $e() {
   const e = window,
     t = navigator;
-  return w(["msWriteProfilerMark" in e, "MSStream" in e, "msLaunchUri" in t, "msSaveBlob" in t]) >= 3 && !fe()
+  return w(["msWriteProfilerMark" in e, "MSStream" in e, "msLaunchUri" in t, "msSaveBlob" in t]) >= 3 && !me()
 }
 
 function W() {
@@ -344,7 +344,7 @@ function x() {
   return w(["ApplePayError" in e, "CSSPrimitiveValue" in e, "Counter" in e, t.vendor.indexOf("Apple") === 0, "RGBColor" in e, "WebKitMediaKeys" in e]) >= 4
 }
 
-function U() {
+function $() {
   const e = window,
     {
       HTMLElement: t,
@@ -373,7 +373,7 @@ function Ke() {
   return w(["userActivation" in t, n.supports("color", "light-dark(#000, #fff)"), n.supports("height", "1lh"), "globalPrivacyControl" in t]) >= 3
 }
 
-function me() {
+function pe() {
   const {
     CSS: e
   } = window;
@@ -469,17 +469,17 @@ function st() {
     r = new t(1, o, 44100),
     u = r.createOscillator();
   u.type = "triangle", u.frequency.value = 1e4;
-  const a = r.createDynamicsCompressor();
-  a.threshold.value = -50, a.knee.value = 40, a.ratio.value = 12, a.attack.value = 0, a.release.value = .25, u.connect(a), a.connect(r.destination), u.start(0);
-  const [c, l] = lt(r), d = A(c.then(s => dt(s.getChannelData(0).subarray(n)), s => {
-    if (s.name === "timeout" || s.name === "suspended") return -3;
-    throw s
+  const s = r.createDynamicsCompressor();
+  s.threshold.value = -50, s.knee.value = 40, s.ratio.value = 12, s.attack.value = 0, s.release.value = .25, u.connect(s), s.connect(r.destination), u.start(0);
+  const [c, l] = lt(r), d = A(c.then(a => dt(a.getChannelData(0).subarray(n)), a => {
+    if (a.name === "timeout" || a.name === "suspended") return -3;
+    throw a
   }));
   return () => (l(), d)
 }
 
 function ct() {
-  return x() && !U() && !tt()
+  return x() && !$() && !tt()
 }
 
 function ut() {
@@ -490,21 +490,21 @@ function lt(e) {
   let u = () => {};
   return [new Promise((c, l) => {
     let d = !1,
-      s = 0,
+      a = 0,
       i = 0;
     e.oncomplete = h => c(h.renderedBuffer);
     const p = () => {
-        setTimeout(() => l(ee("timeout")), Math.min(500, i + 5e3 - Date.now()))
+        setTimeout(() => l(te("timeout")), Math.min(500, i + 5e3 - Date.now()))
       },
       f = () => {
         try {
           const h = e.startRendering();
-          switch (le(h) && A(h), e.state) {
+          switch (de(h) && A(h), e.state) {
             case "running":
               i = Date.now(), d && p();
               break;
             case "suspended":
-              document.hidden || s++, d && s >= 3 ? l(ee("suspended")) : setTimeout(f, 500);
+              document.hidden || a++, d && a >= 3 ? l(te("suspended")) : setTimeout(f, 500);
               break
           }
         } catch (h) {
@@ -523,32 +523,32 @@ function dt(e) {
   return t
 }
 
-function ee(e) {
+function te(e) {
   const t = new Error(e);
   return t.name = e, t
 }
-async function pe(e, t, n = 50) {
+async function he(e, t, n = 50) {
   var o, r, u;
-  const a = document;
-  for (; !a.body;) await N(n);
-  const c = a.createElement("iframe");
+  const s = document;
+  for (; !s.body;) await N(n);
+  const c = s.createElement("iframe");
   try {
     for (await new Promise((l, d) => {
-        let s = !1;
+        let a = !1;
         const i = () => {
-            s = !0, l()
+            a = !0, l()
           },
           p = b => {
-            s = !0, d(b)
+            a = !0, d(b)
           };
         c.onload = i, c.onerror = p;
         const {
           style: f
         } = c;
-        f.setProperty("display", "block", "important"), f.position = "absolute", f.top = "0", f.left = "0", f.visibility = "hidden", t && "srcdoc" in c ? c.srcdoc = t : c.src = "about:blank", a.body.appendChild(c);
+        f.setProperty("display", "block", "important"), f.position = "absolute", f.top = "0", f.left = "0", f.visibility = "hidden", t && "srcdoc" in c ? c.srcdoc = t : c.src = "about:blank", s.body.appendChild(c);
         const h = () => {
           var b, F;
-          s || (((F = (b = c.contentWindow) === null || b === void 0 ? void 0 : b.document) === null || F === void 0 ? void 0 : F.readyState) === "complete" ? i() : setTimeout(h, 10))
+          a || (((F = (b = c.contentWindow) === null || b === void 0 ? void 0 : b.document) === null || F === void 0 ? void 0 : F.readyState) === "complete" ? i() : setTimeout(h, 10))
         };
         h()
       }); !(!((r = (o = c.contentWindow) === null || o === void 0 ? void 0 : o.document) === null || r === void 0) && r.body);) await N(n);
@@ -571,8 +571,8 @@ function mt(e, t) {
   for (const n of t.split(";")) {
     const o = /^\s*([\w-]+)\s*:\s*(.+?)(\s*!([\w-]+))?\s*$/.exec(n);
     if (o) {
-      const [, r, u, , a] = o;
-      e.setProperty(r, u, a || "")
+      const [, r, u, , s] = o;
+      e.setProperty(r, u, s || "")
     }
   }
 }
@@ -594,10 +594,10 @@ function pt() {
 const ht = "mmMwWLliI0O&1",
   gt = "48px",
   I = ["monospace", "sans-serif", "serif"],
-  te = ["sans-serif-thin", "ARNO PRO", "Agency FB", "Arabic Typesetting", "Arial Unicode MS", "AvantGarde Bk BT", "BankGothic Md BT", "Batang", "Bitstream Vera Sans Mono", "Calibri", "Century", "Century Gothic", "Clarendon", "EUROSTILE", "Franklin Gothic", "Futura Bk BT", "Futura Md BT", "GOTHAM", "Gill Sans", "HELV", "Haettenschweiler", "Helvetica Neue", "Humanst521 BT", "Leelawadee", "Letter Gothic", "Levenim MT", "Lucida Bright", "Lucida Sans", "Menlo", "MS Mincho", "MS Outlook", "MS Reference Specialty", "MS UI Gothic", "MT Extra", "MYRIAD PRO", "Marlett", "Meiryo UI", "Microsoft Uighur", "Minion Pro", "Monotype Corsiva", "PMingLiU", "Pristina", "SCRIPTINA", "Segoe UI Light", "Serifa", "SimHei", "Small Fonts", "Staccato222 BT", "TRAJAN PRO", "Univers CE 55 Medium", "Vrinda", "ZWAdobeF"];
+  ne = ["sans-serif-thin", "ARNO PRO", "Agency FB", "Arabic Typesetting", "Arial Unicode MS", "AvantGarde Bk BT", "BankGothic Md BT", "Batang", "Bitstream Vera Sans Mono", "Calibri", "Century", "Century Gothic", "Clarendon", "EUROSTILE", "Franklin Gothic", "Futura Bk BT", "Futura Md BT", "GOTHAM", "Gill Sans", "HELV", "Haettenschweiler", "Helvetica Neue", "Humanst521 BT", "Leelawadee", "Letter Gothic", "Levenim MT", "Lucida Bright", "Lucida Sans", "Menlo", "MS Mincho", "MS Outlook", "MS Reference Specialty", "MS UI Gothic", "MT Extra", "MYRIAD PRO", "Marlett", "Meiryo UI", "Microsoft Uighur", "Minion Pro", "Monotype Corsiva", "PMingLiU", "Pristina", "SCRIPTINA", "Segoe UI Light", "Serifa", "SimHei", "Small Fonts", "Staccato222 BT", "TRAJAN PRO", "Univers CE 55 Medium", "Vrinda", "ZWAdobeF"];
 
 function yt() {
-  return pe(async (e, {
+  return he(async (e, {
     document: t
   }) => {
     const n = t.body;
@@ -606,26 +606,26 @@ function yt() {
     o.style.setProperty("visibility", "hidden", "important");
     const r = {},
       u = {},
-      a = f => {
+      s = f => {
         const h = t.createElement("span"),
           {
             style: b
           } = h;
         return b.position = "absolute", b.top = "0", b.left = "0", b.fontFamily = f, h.textContent = ht, o.appendChild(h), h
       },
-      c = (f, h) => a(`'${f}',${h}`),
-      l = () => I.map(a),
+      c = (f, h) => s(`'${f}',${h}`),
+      l = () => I.map(s),
       d = () => {
         const f = {};
-        for (const h of te) f[h] = I.map(b => c(h, b));
+        for (const h of ne) f[h] = I.map(b => c(h, b));
         return f
       },
-      s = f => I.some((h, b) => f[b].offsetWidth !== r[h] || f[b].offsetHeight !== u[h]),
+      a = f => I.some((h, b) => f[b].offsetWidth !== r[h] || f[b].offsetHeight !== u[h]),
       i = l(),
       p = d();
     n.appendChild(o);
     for (let f = 0; f < I.length; f++) r[I[f]] = i[f].offsetWidth, u[I[f]] = i[f].offsetHeight;
-    return te.filter(f => s(p[f]))
+    return ne.filter(f => a(p[f]))
   })
 }
 
@@ -638,10 +638,10 @@ function bt() {
     if (!o) continue;
     const r = [];
     for (let u = 0; u < o.length; ++u) {
-      const a = o[u];
+      const s = o[u];
       r.push({
-        type: a.type,
-        suffixes: a.suffixes
+        type: s.type,
+        suffixes: s.suffixes
       })
     }
     t.push({
@@ -683,9 +683,9 @@ function kt(e) {
 
 function xt(e, t) {
   Ct(e, t);
-  const n = D(e),
-    o = D(e);
-  return n !== o ? ["unstable", "unstable"] : (Vt(e, t), [D(e), n])
+  const n = H(e),
+    o = H(e);
+  return n !== o ? ["unstable", "unstable"] : (Vt(e, t), [H(e), n])
 }
 
 function Ct(e, t) {
@@ -704,7 +704,7 @@ function Vt(e, t) {
   t.fillStyle = "#f9c", t.arc(60, 60, 60, 0, Math.PI * 2, !0), t.arc(60, 60, 20, 0, Math.PI * 2, !0), t.fill("evenodd")
 }
 
-function D(e) {
+function H(e) {
   return e.toDataURL()
 }
 
@@ -718,7 +718,7 @@ function Pt() {
   const e = navigator;
   let t = 0,
     n;
-  e.maxTouchPoints !== void 0 ? t = J(e.maxTouchPoints) : e.msMaxTouchPoints !== void 0 && (t = e.msMaxTouchPoints);
+  e.maxTouchPoints !== void 0 ? t = U(e.maxTouchPoints) : e.msMaxTouchPoints !== void 0 && (t = e.msMaxTouchPoints);
   try {
     document.createEvent("TouchEvent"), n = !0
   } catch {
@@ -762,52 +762,52 @@ function Rt() {
 
 function Tt() {
   const e = screen,
-    t = o => C(J(o), null),
+    t = o => C(U(o), null),
     n = [t(e.width), t(e.height)];
   return n.sort().reverse(), n
 }
 const Et = 2500,
   Gt = 10;
-let _, H;
+let _, j;
 
 function Zt() {
-  if (H !== void 0) return;
+  if (j !== void 0) return;
   const e = () => {
-    const t = O();
-    z(t) ? H = setTimeout(e, Et) : (_ = t, H = void 0)
+    const t = z();
+    J(t) ? j = setTimeout(e, Et) : (_ = t, j = void 0)
   };
   e()
 }
 
 function _t() {
   return Zt(), async () => {
-    let e = O();
-    if (z(e)) {
+    let e = z();
+    if (J(e)) {
       if (_) return [..._];
-      ot() && (await rt(), e = O())
+      ot() && (await rt(), e = z())
     }
-    return z(e) || (_ = e), e
+    return J(e) || (_ = e), e
   }
 }
 
 function Nt() {
   const e = x() && E() && R(),
-    t = T() && me();
+    t = T() && pe();
   if (e || t) return () => Promise.resolve(void 0);
   const n = _t();
   return async () => {
     const o = await n(),
-      r = u => u === null ? null : de(u, Gt);
+      r = u => u === null ? null : fe(u, Gt);
     return [r(o[0]), r(o[1]), r(o[2]), r(o[3])]
   }
 }
 
-function O() {
+function z() {
   const e = screen;
   return [C(k(e.availTop), null), C(k(e.width) - k(e.availWidth) - C(k(e.availLeft), 0), null), C(k(e.height) - k(e.availHeight) - C(k(e.availTop), 0), null), C(k(e.availLeft), null)]
 }
 
-function z(e) {
+function J(e) {
   for (let t = 0; t < 4; ++t)
     if (e[t]) return !1;
   return !0
@@ -815,11 +815,11 @@ function z(e) {
 
 function Yt() {
   const e = Bt();
-  return e !== void 0 && T() && me() ? e >= 8 ? 8 : 4 : e
+  return e !== void 0 && T() && pe() ? e >= 8 ? 8 : 4 : e
 }
 
 function Bt() {
-  return C(J(navigator.hardwareConcurrency), void 0)
+  return C(U(navigator.hardwareConcurrency), void 0)
 }
 
 function Dt() {
@@ -855,7 +855,7 @@ function Xt() {
 }
 
 function Ot() {
-  if (!(fe() || $e())) try {
+  if (!(me() || $e())) try {
     return !!window.indexedDB
   } catch {
     return !0
@@ -874,7 +874,7 @@ function Ut() {
   const {
     platform: e
   } = navigator;
-  return e === "MacIntel" && x() && !U() ? nt() ? "iPad" : "iPhone" : e
+  return e === "MacIntel" && x() && !$() ? nt() ? "iPad" : "iPhone" : e
 }
 
 function $t() {
@@ -957,11 +957,11 @@ async function en({
   if (!tn()) return;
   const t = qt(),
     n = Object.keys(t),
-    o = [].concat(...n.map(a => t[a])),
+    o = [].concat(...n.map(s => t[s])),
     r = await nn(o);
   e && on(t, r);
-  const u = n.filter(a => {
-    const c = t[a];
+  const u = n.filter(s => {
+    const c = t[s];
     return w(c.map(d => r[d])) > c.length * .6
   });
   return u.sort(), u
@@ -976,24 +976,24 @@ async function nn(e) {
     o = n.createElement("div"),
     r = new Array(e.length),
     u = {};
-  ne(o);
-  for (let a = 0; a < e.length; ++a) {
-    const c = ft(e[a]);
+  oe(o);
+  for (let s = 0; s < e.length; ++s) {
+    const c = ft(e[s]);
     c.tagName === "DIALOG" && c.show();
     const l = n.createElement("div");
-    ne(l), l.appendChild(c), o.appendChild(l), r[a] = c
+    oe(l), l.appendChild(c), o.appendChild(l), r[s] = c
   }
   for (; !n.body;) await N(50);
   n.body.appendChild(o);
   try {
-    for (let a = 0; a < e.length; ++a) r[a].offsetParent || (u[e[a]] = !0)
+    for (let s = 0; s < e.length; ++s) r[s].offsetParent || (u[e[s]] = !0)
   } finally {
     (t = o.parentNode) === null || t === void 0 || t.removeChild(o)
   }
   return u
 }
 
-function ne(e) {
+function oe(e) {
   e.style.setProperty("visibility", "hidden", "important"), e.style.setProperty("display", "block", "important")
 }
 
@@ -1015,20 +1015,20 @@ function rn() {
 }
 
 function an() {
-  if (oe("inverted")) return !0;
-  if (oe("none")) return !1
-}
-
-function oe(e) {
-  return matchMedia(`(inverted-colors: ${e})`).matches
-}
-
-function sn() {
-  if (re("active")) return !0;
+  if (re("inverted")) return !0;
   if (re("none")) return !1
 }
 
 function re(e) {
+  return matchMedia(`(inverted-colors: ${e})`).matches
+}
+
+function sn() {
+  if (ie("active")) return !0;
+  if (ie("none")) return !1
+}
+
+function ie(e) {
   return matchMedia(`(forced-colors: ${e})`).matches
 }
 const cn = 100;
@@ -1053,29 +1053,29 @@ function M(e) {
 }
 
 function dn() {
-  if (ie("reduce")) return !0;
-  if (ie("no-preference")) return !1
-}
-
-function ie(e) {
-  return matchMedia(`(prefers-reduced-motion: ${e})`).matches
-}
-
-function fn() {
   if (ae("reduce")) return !0;
   if (ae("no-preference")) return !1
 }
 
 function ae(e) {
+  return matchMedia(`(prefers-reduced-motion: ${e})`).matches
+}
+
+function fn() {
+  if (se("reduce")) return !0;
+  if (se("no-preference")) return !1
+}
+
+function se(e) {
   return matchMedia(`(prefers-reduced-transparency: ${e})`).matches
 }
 
 function mn() {
-  if (se("high")) return !0;
-  if (se("standard")) return !1
+  if (ce("high")) return !0;
+  if (ce("standard")) return !1
 }
 
-function se(e) {
+function ce(e) {
   return matchMedia(`(dynamic-range: ${e})`).matches
 }
 const m = Math,
@@ -1088,18 +1088,18 @@ function pn() {
     o = m.asinh || v,
     r = m.atanh || v,
     u = m.atan || v,
-    a = m.sin || v,
+    s = m.sin || v,
     c = m.sinh || v,
     l = m.cos || v,
     d = m.cosh || v,
-    s = m.tan || v,
+    a = m.tan || v,
     i = m.tanh || v,
     p = m.exp || v,
     f = m.expm1 || v,
     h = m.log1p || v,
     b = g => m.pow(m.PI, g),
     F = g => m.log(g + m.sqrt(g * g - 1)),
-    xe = g => m.log(g + m.sqrt(g * g + 1)),
+    D = g => m.log(g + m.sqrt(g * g + 1)),
     Ce = g => m.log((1 + g) / (1 - g)) / 2,
     Ve = g => m.exp(g) - 1 / m.exp(g) / 2,
     Fe = g => (m.exp(g) + 1 / m.exp(g)) / 2,
@@ -1112,17 +1112,17 @@ function pn() {
     acoshPf: F(1e154),
     asin: n(.12312423423423424),
     asinh: o(1),
-    asinhPf: xe(1),
+    asinhPf: D(1),
     atanh: r(.5),
     atanhPf: Ce(.5),
     atan: u(.5),
-    sin: a(-1e300),
+    sin: s(-1e300),
     sinh: c(1),
     sinhPf: Ve(1),
     cos: l(10.000000000123),
     cosh: d(1),
     coshPf: Fe(1),
-    tan: s(-1e300),
+    tan: a(-1e300),
     tanh: i(1),
     tanhPf: Ie(1),
     exp: p(1),
@@ -1134,7 +1134,7 @@ function pn() {
   }
 }
 const hn = "mmMwWLliI0fiflO&1",
-  j = {
+  X = {
     default: [],
     apple: [{
       font: "-apple-system-body"
@@ -1160,19 +1160,19 @@ function gn() {
   return bn((e, t, n) => {
     const o = {},
       r = {};
-    for (const a of Object.keys(j)) {
-      const [c = {}, l = hn] = j[a], d = e.createElement("span");
+    for (const s of Object.keys(X)) {
+      const [c = {}, l = hn] = X[s], d = e.createElement("span");
       d.textContent = l, d.style.whiteSpace = "nowrap";
-      for (const s of Object.keys(c)) {
-        const i = c[s];
-        i !== void 0 && (d.style[s] = i)
+      for (const a of Object.keys(c)) {
+        const i = c[a];
+        i !== void 0 && (d.style[a] = i)
       }
-      o[a] = d, t.append(e.createElement("br"), d)
+      o[s] = d, t.append(e.createElement("br"), d)
     }
     const u = W() && et();
-    for (const a of Object.keys(j)) {
-      const c = o[a].getBoundingClientRect().width;
-      r[a] = u ? yn(c * n.devicePixelRatio) : c
+    for (const s of Object.keys(X)) {
+      const c = o[s].getBoundingClientRect().width;
+      r[s] = u ? yn(c * n.devicePixelRatio) : c
     }
     return r
   })
@@ -1185,11 +1185,11 @@ function yn(e) {
 }
 
 function bn(e, t = 4e3) {
-  return pe((n, o) => {
+  return he((n, o) => {
     const r = o.document,
       u = r.body,
-      a = u.style;
-    a.width = `${t}px`, a.webkitTextSizeAdjust = a.textSizeAdjust = "none", W() ? u.style.zoom = `${1/o.devicePixelRatio}` : x() && (u.style.zoom = "reset");
+      s = u.style;
+    s.width = `${t}px`, s.webkitTextSizeAdjust = s.textSizeAdjust = "none", W() ? u.style.zoom = `${1/o.devicePixelRatio}` : x() && (u.style.zoom = "reset");
     const c = r.createElement("div");
     return c.textContent = [...Array(t / 20 << 0)].map(() => "word").join(" "), u.appendChild(c), e(r, u, o)
   }, '<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1">')
@@ -1230,74 +1230,74 @@ function xn() {
     n = (e = t.attributionSourceId) !== null && e !== void 0 ? e : t.attributionsourceid;
   return n === void 0 ? void 0 : String(n)
 }
-const he = -1,
-  ge = -2,
+const ge = -1,
+  ye = -2,
   Cn = new Set([10752, 2849, 2884, 2885, 2886, 2928, 2929, 2930, 2931, 2932, 2960, 2961, 2962, 2963, 2964, 2965, 2966, 2967, 2968, 2978, 3024, 3042, 3088, 3089, 3106, 3107, 32773, 32777, 32777, 32823, 32824, 32936, 32937, 32938, 32939, 32968, 32969, 32970, 32971, 3317, 33170, 3333, 3379, 3386, 33901, 33902, 34016, 34024, 34076, 3408, 3410, 3411, 3412, 3413, 3414, 3415, 34467, 34816, 34817, 34818, 34819, 34877, 34921, 34930, 35660, 35661, 35724, 35738, 35739, 36003, 36004, 36005, 36347, 36348, 36349, 37440, 37441, 37443, 7936, 7937, 7938]),
   Vn = new Set([34047, 35723, 36063, 34852, 34853, 34854, 34229, 36392, 36795, 38449]),
   Fn = ["FRAGMENT_SHADER", "VERTEX_SHADER"],
   Pn = ["LOW_FLOAT", "MEDIUM_FLOAT", "HIGH_FLOAT", "LOW_INT", "MEDIUM_INT", "HIGH_INT"],
-  ye = "WEBGL_debug_renderer_info",
+  be = "WEBGL_debug_renderer_info",
   In = "WEBGL_polygon_mode";
 
 function Mn({
   cache: e
 }) {
-  var t, n, o, r, u, a;
-  const c = be(e);
-  if (!c) return he;
-  if (!ve(c)) return ge;
-  const l = we() ? null : c.getExtension(ye);
+  var t, n, o, r, u, s;
+  const c = we(e);
+  if (!c) return ge;
+  if (!Se(c)) return ye;
+  const l = ve() ? null : c.getExtension(be);
   return {
     version: ((t = c.getParameter(c.VERSION)) === null || t === void 0 ? void 0 : t.toString()) || "",
     vendor: ((n = c.getParameter(c.VENDOR)) === null || n === void 0 ? void 0 : n.toString()) || "",
     vendorUnmasked: l ? (o = c.getParameter(l.UNMASKED_VENDOR_WEBGL)) === null || o === void 0 ? void 0 : o.toString() : "",
     renderer: ((r = c.getParameter(c.RENDERER)) === null || r === void 0 ? void 0 : r.toString()) || "",
     rendererUnmasked: l ? (u = c.getParameter(l.UNMASKED_RENDERER_WEBGL)) === null || u === void 0 ? void 0 : u.toString() : "",
-    shadingLanguageVersion: ((a = c.getParameter(c.SHADING_LANGUAGE_VERSION)) === null || a === void 0 ? void 0 : a.toString()) || ""
+    shadingLanguageVersion: ((s = c.getParameter(c.SHADING_LANGUAGE_VERSION)) === null || s === void 0 ? void 0 : s.toString()) || ""
   }
 }
 
 function Wn({
   cache: e
 }) {
-  const t = be(e);
-  if (!t) return he;
-  if (!ve(t)) return ge;
+  const t = we(e);
+  if (!t) return ge;
+  if (!Se(t)) return ye;
   const n = t.getSupportedExtensions(),
     o = t.getContextAttributes(),
     r = [],
     u = [],
-    a = [],
+    s = [],
     c = [],
     l = [];
   if (o)
-    for (const s of Object.keys(o)) u.push(`${s}=${o[s]}`);
-  const d = ce(t);
-  for (const s of d) {
-    const i = t[s];
-    a.push(`${s}=${i}${Cn.has(i)?`=${t.getParameter(i)}`:""}`)
+    for (const a of Object.keys(o)) u.push(`${a}=${o[a]}`);
+  const d = ue(t);
+  for (const a of d) {
+    const i = t[a];
+    s.push(`${a}=${i}${Cn.has(i)?`=${t.getParameter(i)}`:""}`)
   }
   if (n)
-    for (const s of n) {
-      if (s === ye && we() || s === In && Tn()) continue;
-      const i = t.getExtension(s);
+    for (const a of n) {
+      if (a === be && ve() || a === In && Tn()) continue;
+      const i = t.getExtension(a);
       if (!i) {
-        r.push(s);
+        r.push(a);
         continue
       }
-      for (const p of ce(i)) {
+      for (const p of ue(i)) {
         const f = i[p];
         c.push(`${p}=${f}${Vn.has(f)?`=${t.getParameter(f)}`:""}`)
       }
     }
-  for (const s of Fn)
+  for (const a of Fn)
     for (const i of Pn) {
-      const p = An(t, s, i);
-      l.push(`${s}.${i}=${p.join(",")}`)
+      const p = An(t, a, i);
+      l.push(`${a}.${i}=${p.join(",")}`)
     }
-  return c.sort(), a.sort(), {
+  return c.sort(), s.sort(), {
     contextAttributes: u,
-    parameters: a,
+    parameters: s,
     shaderPrecisions: l,
     extensions: n,
     extensionParameters: c,
@@ -1305,7 +1305,7 @@ function Wn({
   }
 }
 
-function be(e) {
+function we(e) {
   if (e.webgl) return e.webgl.context;
   const t = document.createElement("canvas");
   let n;
@@ -1326,7 +1326,7 @@ function An(e, t, n) {
   return o ? [o.rangeMin, o.rangeMax, o.precision] : []
 }
 
-function ce(e) {
+function ue(e) {
   return Object.keys(e.__proto__).filter(Rn)
 }
 
@@ -1334,7 +1334,7 @@ function Rn(e) {
   return typeof e == "string" && !e.match(/[^A-Z0-9_x]/)
 }
 
-function we() {
+function ve() {
   return T()
 }
 
@@ -1342,7 +1342,7 @@ function Tn() {
   return W() || x()
 }
 
-function ve(e) {
+function Se(e) {
   return typeof e.getParameter == "function"
 }
 
@@ -1447,13 +1447,13 @@ function Dn(e) {
 
 function Hn(e) {
   if (B()) return .4;
-  if (x()) return U() && !(E() && R()) ? .5 : .3;
+  if (x()) return $() && !(E() && R()) ? .5 : .3;
   const t = "value" in e.platform ? e.platform.value : "";
   return /^Win/.test(t) ? .6 : /^Mac/.test(t) ? .5 : .7
 }
 
 function jn(e) {
-  return de(.99 + .01 * e, 1e-4)
+  return fe(.99 + .01 * e, 1e-4)
 }
 
 function Xn(e) {
@@ -1466,11 +1466,11 @@ function Xn(e) {
   return t
 }
 
-function Se(e) {
+function Le(e) {
   return JSON.stringify(e, (t, n) => n instanceof Error ? Xe(n) : n, 2)
 }
 
-function Le(e) {
+function ke(e) {
   return je(Xn(e))
 }
 
@@ -1479,14 +1479,14 @@ function On(e) {
   const n = Dn(e);
   return {
     get visitorId() {
-      return t === void 0 && (t = Le(this.components)), t
+      return t === void 0 && (t = ke(this.components)), t
     },
     set visitorId(o) {
       t = o
     },
     confidence: n,
     components: e,
-    version: ue
+    version: le
   }
 }
 
@@ -1500,16 +1500,16 @@ function Jn(e, t) {
     async get(o) {
       const r = Date.now(),
         u = await e(),
-        a = On(u);
+        s = On(u);
       return (t || o != null && o.debug) && console.log(`Copy the text below to get the debug data:
 
 \`\`\`
-version: ${a.version}
+version: ${s.version}
 userAgent: ${navigator.userAgent}
 timeBetweenLoadAndGet: ${r-n}
-visitorId: ${a.visitorId}
-components: ${Se(u)}
-\`\`\``), a
+visitorId: ${s.visitorId}
+components: ${Le(u)}
+\`\`\``), s
     }
   }
 }
@@ -1517,7 +1517,7 @@ components: ${Se(u)}
 function Un() {
   if (!(window.__fpjs_d_m || Math.random() >= .001)) try {
     const e = new XMLHttpRequest;
-    e.open("get", `https://m1.openfpcdn.io/fingerprintjs/v${ue}/npm-monitoring`, !0), e.send()
+    e.open("get", `https://m1.openfpcdn.io/fingerprintjs/v${le}/npm-monitoring`, !0), e.send()
   } catch (e) {
     console.error(e)
   }
@@ -1535,15 +1535,15 @@ async function $n(e = {}) {
   });
   return Jn(r, n)
 }
-var ke = {
+var xe = {
   load: $n,
-  hashComponents: Le,
-  componentsToDebugString: Se
+  hashComponents: ke,
+  componentsToDebugString: Le
 };
-let X = null,
+let O = null,
   Y;
 async function Kn() {
-  return X || (X = ke.load()), X
+  return O || (O = xe.load()), O
 }
 async function so() {
   return Y || Qn().then(e => e.visitorId)
@@ -1554,49 +1554,50 @@ async function Qn() {
   const o = Re(),
     r = navigator.userAgent.toLowerCase(),
     u = r.includes("iphone"),
-    a = r.includes("macintosh");
-  if (u || a) n = t.components, o === "Safari" && (n = {
-    userAgent: {
-      value: navigator.userAgent,
-      duration: 0
-    },
-    ...t.components
-  });
+    s = r.includes("macintosh"),
+    c = u || s,
+    l = r.includes("android");
+  if (c) n = t.components;
   else if (o === "Chrome") {
     const {
-      languages: l,
-      ...d
+      languages: d,
+      ...a
     } = t.components;
-    n = d
+    n = a
   } else if (o === "Firefox") {
     const {
-      fonts: l,
       languages: d,
-      dateTimeLocale: s,
+      dateTimeLocale: a,
       ...i
     } = t.components;
     n = i
   } else if (o === "Brave") {
     const {
-      fonts: l,
-      audio: d,
-      canvas: s,
-      hardwareConcurrency: i,
-      plugins: p,
-      deviceMemory: f,
-      languages: h,
-      dateTimeLocale: b,
-      ...F
+      fonts: d,
+      audio: a,
+      canvas: i,
+      hardwareConcurrency: p,
+      plugins: f,
+      deviceMemory: h,
+      languages: b,
+      dateTimeLocale: F,
+      ...D
     } = t.components;
-    n = F
+    n = D
   } else {
     const {
-      languages: l,
-      ...d
+      languages: d,
+      ...a
     } = t.components;
-    n = d
+    n = a
   }
-  return Y = ke.hashComponents(n), {
+  return (o === "Safari" || l) && (n = {
+    userAgent: {
+      value: navigator.userAgent,
+      duration: 0
+    },
+    ...t.components
+  }), Y = xe.hashComponents(n), {
     visitorId: Y,
     components: n
   }
