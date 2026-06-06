@@ -70,11 +70,11 @@ function go(n) {
   }
 }
 
-function yo() {
+function wo() {
   Hn().enabled = !0
 }
 
-function wo() {
+function yo() {
   Hn().enabled = !1
 }
 
@@ -108,8 +108,8 @@ function Hn() {
   }
 }
 const Xt = {
-    enable: yo,
-    disable: wo,
+    enable: wo,
+    disable: yo,
     isEnabled: Or,
     log: bo,
     warn: vo,
@@ -853,7 +853,7 @@ function ga() {
   return n.getAttributeNames()
 }
 
-function ya() {
+function wa() {
   try {
     null[0]()
   } catch (n) {
@@ -862,7 +862,7 @@ function ya() {
   throw new X(-3, "errorTrace signal unexpected behaviour")
 }
 
-function wa() {
+function ya() {
   return eval.toString().length
 }
 
@@ -1090,11 +1090,11 @@ const Ua = {
   windowSize: Ba,
   pluginsLength: Ia,
   pluginsArray: Da,
-  errorTrace: ya,
+  errorTrace: wa,
   productSub: Ca,
   windowExternal: Ma,
   mimeTypesConsistent: Oa,
-  evalLength: wa,
+  evalLength: ya,
   webGL: La,
   webDriver: xa,
   languages: Aa,
@@ -1264,18 +1264,18 @@ function $a() {
     d = q.expm1 || ve,
     g = q.log1p || ve,
     h = v => q.pow(q.PI, v),
-    y = v => q.log(v + q.sqrt(v * v - 1)),
+    w = v => q.log(v + q.sqrt(v * v - 1)),
     C = v => q.log(v + q.sqrt(v * v + 1)),
     T = v => q.log((1 + v) / (1 - v)) / 2,
     R = v => q.exp(v) - 1 / q.exp(v) / 2,
     S = v => (q.exp(v) + 1 / q.exp(v)) / 2,
     N = v => q.exp(v) - 1,
     A = v => (q.exp(2 * v) - 1) / (q.exp(2 * v) + 1),
-    w = v => q.log(1 + v);
+    y = v => q.log(1 + v);
   return {
     acos: n(.12312423423423424),
     acosh: t(1e308),
-    acoshPf: y(1e154),
+    acoshPf: w(1e154),
     asin: e(.12312423423423424),
     asinh: r(1),
     asinhPf: C(1),
@@ -1295,7 +1295,7 @@ function $a() {
     expm1: d(1),
     expm1Pf: N(1),
     log1p: g(10),
-    log1pPf: w(10),
+    log1pPf: y(10),
     powPI: h(-100)
   }
 }
@@ -1363,7 +1363,7 @@ function Xa() {
 }
 const ln = Xa(),
   ue = ln == 80,
-  wt = ln == 58,
+  yt = ln == 58,
   bt = ln == 77,
   Yn = {
     80: "V8",
@@ -1430,20 +1430,20 @@ const {
     g = /AppleWebKit/g.test(n) && /Safari/g.test(n) && !f && !p && !_ && n.match(/(version)\/(\d+)\.(\d|\.)+\s(mobile|safari)/i);
   if (p) {
     const h = p[1],
-      y = p[2];
-    return `${h} ${y}${o?" Opera":a?" Vivaldi":i?" DuckDuckGo":s?" Yandex":_?" Edge":e?" Brave":""}`
+      w = p[2];
+    return `${h} ${w}${o?" Opera":a?" Vivaldi":i?" DuckDuckGo":s?" Yandex":_?" Edge":e?" Brave":""}`
   } else if (u && _) {
     const h = _[1],
-      y = _[2];
-    return `${h} ${y}`
+      w = _[2];
+    return `${h} ${w}`
   } else if (f) {
     const h = c ? c[1] : f[1],
-      y = c ? c[2] : f[2];
-    return `${h} ${y}`
+      w = c ? c[2] : f[2];
+    return `${h} ${w}`
   } else if (r && g) {
     const h = "Safari",
-      y = g[2];
-    return `${h} ${y}`
+      w = g[2];
+    return `${h} ${w}`
   }
   return "unknown"
 }, Ur = ({
@@ -1465,20 +1465,20 @@ const {
     d = /\d+\.\d+\.\d+/i,
     g = /linux|x11|ubuntu|debian/i,
     h = /^([a-z]|x11|unknown|compatible|[a-z]{2}(-|_)[a-z]{2}|[a-z]{2})$|(rv:|java|oracle|\+http|http|unknown|mozilla|konqueror|valve).+/i,
-    y = /(cpu iphone|cpu os|iphone os|mac os|macos|intel os|ppc mac).+/i,
+    w = /(cpu iphone|cpu os|iphone os|mac os|macos|intel os|ppc mac).+/i,
     C = /^([a-z]|macintosh|compatible|mimic|[a-z]{2}(-|_)[a-z]{2}|[a-z]{2}|rv|\d+\.\d+)$|(rv:|silk|valve).+/i,
     T = /(ppc |intel |)(mac|mac |)os (x |x|)(\d{2}(_|\.)\d{1,2}|\d{2,})/i,
     R = /((symbianos|nokia|blackberry|morphos|mac).+)|\/linux|freebsd|symbos|series \d+|win\d+|unix|hp-ux|bsdi|bsd|x86_64/i,
-    S = (N, A) => N.filter(w => A.test(w)).length;
+    S = (N, A) => N.filter(y => A.test(y)).length;
   if (n = n.trim().replace(/\s{2,}/, " ").replace(e, ""), r.test(n)) {
     const N = n.match(r);
     if (!N) return "unknown";
-    const w = N[0].slice(1, -1).replace(/,/g, ";").split(";").map(v => v.trim());
-    if (S(w, o)) return w.map(v => s.test(v) ? s.exec(v)[0].replace("-", " ") : v).filter(v => !a.test(v)).join(" ").replace(t ? i : "", "").trim().replace(/\s{2,}/, " ");
-    if (S(w, c)) return w.filter(v => !_.test(v)).join(" ").replace(/\sNT (\d+\.\d+)/, (v, E) => E == "10.0" ? " 10" : E == "6.3" ? " 8.1" : E == "6.2" ? " 8" : E == "6.1" ? " 7" : E == "6.0" ? " Vista" : E == "5.2" ? " XP Pro" : E == "5.1" ? " XP" : E == "5.0" ? " 2000" : E == "4.0" ? v : " " + E).replace(u, "(64-bit)").trim().replace(/\s{2,}/, " ");
-    if (S(w, p)) return w.filter(v => !f.test(v)).join(" ").replace(t ? d : "", "").trim().replace(/\s{2,}/, " ");
-    if (S(w, g)) return w.filter(v => !h.test(v)).join(" ").trim().replace(/\s{2,}/, " ");
-    if (S(w, y)) return w.map(v => {
+    const y = N[0].slice(1, -1).replace(/,/g, ";").split(";").map(v => v.trim());
+    if (S(y, o)) return y.map(v => s.test(v) ? s.exec(v)[0].replace("-", " ") : v).filter(v => !a.test(v)).join(" ").replace(t ? i : "", "").trim().replace(/\s{2,}/, " ");
+    if (S(y, c)) return y.filter(v => !_.test(v)).join(" ").replace(/\sNT (\d+\.\d+)/, (v, E) => E == "10.0" ? " 10" : E == "6.3" ? " 8.1" : E == "6.2" ? " 8" : E == "6.1" ? " 7" : E == "6.0" ? " Vista" : E == "5.2" ? " XP Pro" : E == "5.1" ? " XP" : E == "5.0" ? " 2000" : E == "4.0" ? v : " " + E).replace(u, "(64-bit)").trim().replace(/\s{2,}/, " ");
+    if (S(y, p)) return y.filter(v => !f.test(v)).join(" ").replace(t ? d : "", "").trim().replace(/\s{2,}/, " ");
+    if (S(y, g)) return y.filter(v => !h.test(v)).join(" ").trim().replace(/\s{2,}/, " ");
+    if (S(y, w)) return y.map(v => {
       if (T.test(v)) {
         const E = T.exec(v)[0],
           D = {
@@ -1503,8 +1503,8 @@ const {
       return v
     }).filter(v => !C.test(v)).join(" ").replace(/\slike mac.+/ig, "").trim().replace(/\s{2,}/, " ");
     {
-      const v = w.filter(E => R.test(E));
-      return v.length ? v.join(" ").trim().replace(/\s{2,}/, " ") : w.join(" ")
+      const v = y.filter(E => R.test(E));
+      return v.length ? v.join(" ").trim().replace(/\s{2,}/, " ") : y.join(" ")
     }
   } else return "unknown"
 }, Fr = n => {
@@ -1841,13 +1841,13 @@ function tr({
       spawnErr: () => {
         t.arguments, t.caller
       },
-      withStack: f => wt && !nt(f, er, 0)
+      withStack: f => yt && !nt(f, er, 0)
     }),
     "failed at toString incompatible proxy error": pe({
       spawnErr: () => {
         t.toString.arguments, t.toString.caller
       },
-      withStack: f => wt && !nt(f, er, 0)
+      withStack: f => yt && !nt(f, er, 0)
     }),
     "failed at too much recursion error": pe({
       spawnErr: () => {
@@ -1957,17 +1957,17 @@ function ci(n) {
         r.push(d);
         try {
           const h = c.prototype ? c.prototype : c;
-          let y;
+          let w;
           try {
             if (typeof h[u] == "function") {
-              if (y = tr({
+              if (w = tr({
                   scope: n,
                   apiFunction: h[u],
                   proto: h,
                   obj: null,
                   lieProps: e
-                }), y.lied) {
-                Z(d, y.lieTypes), e[d] = y.lieTypes;
+                }), w.lied) {
+                Z(d, w.lieTypes), e[d] = w.lieTypes;
                 return
               }
               return
@@ -1979,20 +1979,20 @@ function ci(n) {
             }
           } catch {}
           const T = Object.getOwnPropertyDescriptor(h, u).get;
-          if (y = tr({
+          if (w = tr({
               scope: n,
               apiFunction: T,
               proto: h,
               obj: c,
               lieProps: e
-            }), y.lied) {
-            Z(d, y.lieTypes), e[d] = y.lieTypes;
+            }), w.lied) {
+            Z(d, w.lieTypes), e[d] = w.lieTypes;
             return
           }
           return
         } catch {
-          const y = "failed prototype test execution";
-          Z(d, y), e[d] = [y];
+          const w = "failed prototype test execution";
+          Z(d, w), e[d] = [w];
           return
         }
       })
@@ -2212,7 +2212,7 @@ const gi = n => {
       grade: c
     }
   },
-  yi = () => {
+  wi = () => {
     const n = [];
     return {
       getBin: () => n,
@@ -2225,11 +2225,11 @@ const gi = n => {
       }
     }
   },
-  Xr = yi(),
+  Xr = wi(),
   {
     sendToTrash: ae
   } = Xr,
-  wi = () => ({
+  yi = () => ({
     trashBin: Xr.getBin()
   });
 async function bi() {
@@ -2417,8 +2417,8 @@ async function Di() {
         })
       })
     }
-    const [h, y] = Br(_, p);
-    h != y && (i.lied = !0, i.lies.os = `${y} platform and ${h} user agent do not match`, Z("WorkerGlobalScope", i.lies.os));
+    const [h, w] = Br(_, p);
+    h != w && (i.lied = !0, i.lies.os = `${w} platform and ${h} user agent do not match`, Z("WorkerGlobalScope", i.lies.os));
     const C = Hr({
         ua: _,
         os: c,
@@ -2430,8 +2430,8 @@ async function Di() {
       S = R(C),
       N = R(u ? u.uaFullVersion ?? "" : ""),
       A = N && S,
-      w = N == S;
-    A && !w && (i.lied = !0, i.lies.version = `userAgentData version ${N} and user agent version ${S} do not match`, Z("WorkerGlobalScope", i.lies.version));
+      y = N == S;
+    A && !y && (i.lied = !0, i.lies.version = `userAgentData version ${N} and user agent version ${S} do not match`, Z("WorkerGlobalScope", i.lies.version));
     const v = ue && CSS.supports("accent-color: initial");
     ((P, L) => {
       if (!/windows|mac/i.test(P) || !(L != null && L.platformVersion)) return !1;
@@ -2515,10 +2515,10 @@ async function Ni() {
       g = u.createBiquadFilter(),
       h = new Float32Array(p.frequencyBinCount);
     (e = p.getFloatFrequencyData) == null || e.call(p, h);
-    const y = new Set(h).size;
-    if (y > 1) {
+    const w = new Set(h).size;
+    if (w > 1) {
       c = !0;
-      const V = `expected -Infinity (silence) and got ${y} frequencies`;
+      const V = `expected -Infinity (silence) and got ${w} frequencies`;
       Z("AnalyserNode.getFloatFrequencyData", V)
     }
     const C = {
@@ -2581,7 +2581,7 @@ async function Ni() {
     const [R, S] = await Promise.all([T(u), Ii().catch(() => !1)]), {
       floatFrequencyData: N,
       floatTimeDomainData: A,
-      buffer: w,
+      buffer: y,
       compressorGainReduction: v
     } = R || {};
     await ie();
@@ -2601,7 +2601,7 @@ async function Ni() {
       P = D(A),
       L = new Float32Array(_);
     let H = new Float32Array;
-    w && ((r = w.copyFromChannel) == null || r.call(w, L, 0), H = ((o = w.getChannelData) == null ? void 0 : o.call(w, 0)) || []);
+    y && ((r = y.copyFromChannel) == null || r.call(y, L, 0), H = ((o = y.getChannelData) == null ? void 0 : o.call(y, 0)) || []);
     const te = E(L, 4500, 4600),
       me = E(H, 4500, 4600),
       F = D(E(H, 4500, _));
@@ -2623,7 +2623,7 @@ async function Ni() {
         const qt = [$.getChannelData(0)[ge] === 0 ? Math.random() : 0, $.getChannelData(0)[lt] === 0 ? Math.random() : 0, $.getChannelData(0)[et] === 0 ? Math.random() : 0];
         return [...new Set([...$.getChannelData(0), ...Q, ...qt])].filter(so => so !== 0)
       },
-      ye = (V, $, Q) => {
+      we = (V, $, Q) => {
         $.copyToChannel(Q.map(() => V), 0);
         const fe = $.getChannelData(0)[0];
         return [...$.getChannelData(0)].map(ge => ge !== fe || !ge ? Math.random() : ge).filter(ge => ge !== fe)
@@ -2633,7 +2633,7 @@ async function Ni() {
         const $ = [...new Set([...oe(rr, new AudioBuffer({
           length: 2e3,
           sampleRate: 44100
-        }), new Float32Array(2e3)), ...ye(rr, new AudioBuffer({
+        }), new Float32Array(2e3)), ...we(rr, new AudioBuffer({
           length: 2e3,
           sampleRate: 44100
         }), new Float32Array(2e3))])];
@@ -2760,24 +2760,24 @@ const ki = () => {
         for (let S = 0; S < 8; S++) {
           const N = ~~(Math.random() * 256),
             A = ~~(Math.random() * 256),
-            w = ~~(Math.random() * 256);
-          p[d] = N, p[d + 1] = A, p[d + 2] = w, p[d + 3] = 255, d += 4, _.fillStyle = `rgba(${N}, ${A}, ${w}, 255)`, _.fillRect(R, S, 1, 1)
+            y = ~~(Math.random() * 256);
+          p[d] = N, p[d + 1] = A, p[d + 2] = y, p[d + 3] = 255, d += 4, _.fillStyle = `rgba(${N}, ${A}, ${y}, 255)`, _.fillRect(R, S, 1, 1)
         }
       d = 0;
       for (let R = 0; R < 8; R++)
         for (let S = 0; S < 8; S++) {
           const N = _.getImageData(R, S, 1, 1).data,
             A = N[0],
-            w = N[1],
+            y = N[1],
             v = N[2],
             E = N[3];
-          u.fillStyle = `rgba(${A}, ${w}, ${v}, ${E})`, u.fillRect(R, S, 1, 1);
+          u.fillStyle = `rgba(${A}, ${y}, ${v}, ${E})`, u.fillRect(R, S, 1, 1);
           const D = u.getImageData(R, S, 1, 1).data,
             B = D[0],
             P = D[1],
             L = D[2],
             H = D[3];
-          f[d] = A, f[d + 1] = w, f[d + 2] = v, f[d + 3] = E, d += 4, c.fillStyle = `rgba(${A!==B?B:255}, ${w!==P?P:255}, ${v!==L?L:255}, ${E!==H?H:1})`, c.fillRect(R * 5, S * 5, 5, 5)
+          f[d] = A, f[d + 1] = y, f[d + 2] = v, f[d + 3] = E, d += 4, c.fillStyle = `rgba(${A!==B?B:255}, ${y!==P?P:255}, ${v!==L?L:255}, ${E!==H?H:1})`, c.fillRect(R * 5, S * 5, 5, 5)
         }
       const g = [],
         h = new Set;
@@ -2785,20 +2785,20 @@ const ki = () => {
         const S = R * 4,
           N = p[S] !== f[S],
           A = p[S + 1] !== f[S + 1],
-          w = p[S + 2] !== f[S + 2],
+          y = p[S + 2] !== f[S + 2],
           v = p[S + 3] !== f[S + 3];
-        if (N || A || w || v) {
-          const E = (N ? "r" : "") + (A ? "g" : "") + (w ? "b" : "") + (v ? "a" : "");
+        if (N || A || y || v) {
+          const E = (N ? "r" : "") + (A ? "g" : "") + (y ? "b" : "") + (v ? "a" : "");
           h.add(E), g.push([R, E])
         }
       }
-      const y = a.toDataURL(),
+      const w = a.toDataURL(),
         C = h.size ? [...h].sort().join(", ") : void 0,
         T = g.length || void 0;
       return {
         rgba: C,
         pixels: T,
-        pixelImage: y
+        pixelImage: w
       }
     } catch {
       return
@@ -2825,12 +2825,12 @@ const ki = () => {
     t.clearRect(0, 0, n.width, n.height), n.width = o.width, n.height = o.height, n.style && (n.style.display = "none");
     const p = (({
         seed: A,
-        offset: w,
+        offset: y,
         multiplier: v
       }) => {
-        let E = Number(A) % Number(w);
+        let E = Number(A) % Number(y);
         return {
-          getNextSeed: () => (E = Number(v) * E % Number(w), E)
+          getNextSeed: () => (E = Number(v) * E % Number(y), E)
         }
       })({
         seed: s,
@@ -2840,59 +2840,59 @@ const ki = () => {
       {
         getNextSeed: f
       } = p,
-      d = (A, w, v, E) => {
-        const D = (A - 1) / w * (v || 1) || 0;
+      d = (A, y, v, E) => {
+        const D = (A - 1) / y * (v || 1) || 0;
         return E ? D : Math.floor(D)
       },
-      g = (A, w, v, E, D) => {
+      g = (A, y, v, E, D) => {
         const {
           width: B,
           height: P
-        } = v, L = A.createRadialGradient(d(D(), w, B), d(D(), w, P), d(D(), w, B), d(D(), w, B), d(D(), w, P), d(D(), w, B));
-        L.addColorStop(0, E[d(D(), w, E.length)]), L.addColorStop(1, E[d(D(), w, E.length)]), A.fillStyle = L
+        } = v, L = A.createRadialGradient(d(D(), y, B), d(D(), y, P), d(D(), y, B), d(D(), y, B), d(D(), y, P), d(D(), y, B));
+        L.addColorStop(0, E[d(D(), y, E.length)]), L.addColorStop(1, E[d(D(), y, E.length)]), A.fillStyle = L
       },
       h = ["#FF6633", "#FFB399", "#FF33FF", "#FFFF99", "#00B3E6", "#E6B333", "#3366E6", "#999966", "#99FF99", "#B34D4D", "#80B300", "#809900", "#E6B3B3", "#6680B3", "#66991A", "#FF99E6", "#CCFF1A", "#FF1A66", "#E6331A", "#33FFCC", "#66994D", "#B366CC", "#4D8000", "#B33300", "#CC80CC", "#66664D", "#991AFF", "#E666FF", "#4DB3FF", "#1AB399", "#E666B3", "#33991A", "#CC9999", "#B3B31A", "#00E680", "#4D8066", "#809980", "#E6FF80", "#1AFF33", "#999933", "#FF3380", "#CCCC00", "#66E64D", "#4D80CC", "#9900B3", "#E64D66", "#4DB380", "#FF4D4D", "#99E6E6", "#6666FF"],
-      y = (A, w, v, E) => {
+      w = (A, y, v, E) => {
         const {
           width: D,
           height: B
         } = v, P = 2.99;
-        A.font = `${B/P}px ${r.replace(/!important/gm,"")}`, A.strokeText("👾A", d(E(), w, D), d(E(), w, B), d(E(), w, D))
+        A.font = `${B/P}px ${r.replace(/!important/gm,"")}`, A.strokeText("👾A", d(E(), y, D), d(E(), y, B), d(E(), y, D))
       },
-      C = (A, w, v, E) => {
+      C = (A, y, v, E) => {
         const {
           width: D,
           height: B
         } = v;
-        A.beginPath(), A.arc(d(E(), w, D), d(E(), w, B), d(E(), w, Math.min(D, B)), d(E(), w, 2 * Math.PI, !0), d(E(), w, 2 * Math.PI, !0)), A.stroke()
+        A.beginPath(), A.arc(d(E(), y, D), d(E(), y, B), d(E(), y, Math.min(D, B)), d(E(), y, 2 * Math.PI, !0), d(E(), y, 2 * Math.PI, !0)), A.stroke()
       },
-      T = (A, w, v, E) => {
+      T = (A, y, v, E) => {
         const {
           width: D,
           height: B
         } = v;
-        A.beginPath(), A.moveTo(d(E(), w, D), d(E(), w, B)), A.bezierCurveTo(d(E(), w, D), d(E(), w, B), d(E(), w, D), d(E(), w, B), d(E(), w, D), d(E(), w, B)), A.stroke()
+        A.beginPath(), A.moveTo(d(E(), y, D), d(E(), y, B)), A.bezierCurveTo(d(E(), y, D), d(E(), y, B), d(E(), y, D), d(E(), y, B), d(E(), y, D), d(E(), y, B)), A.stroke()
       },
-      R = (A, w, v, E) => {
+      R = (A, y, v, E) => {
         const {
           width: D,
           height: B
         } = v;
-        A.beginPath(), A.moveTo(d(E(), w, D), d(E(), w, B)), A.quadraticCurveTo(d(E(), w, D), d(E(), w, B), d(E(), w, D), d(E(), w, B)), A.stroke()
+        A.beginPath(), A.moveTo(d(E(), y, D), d(E(), y, B)), A.quadraticCurveTo(d(E(), y, D), d(E(), y, B), d(E(), y, D), d(E(), y, B)), A.stroke()
       },
-      S = (A, w, v, E) => {
+      S = (A, y, v, E) => {
         if (!("ellipse" in A)) return;
         const {
           width: D,
           height: B
         } = v;
-        A.beginPath(), A.ellipse(d(E(), w, D), d(E(), w, B), d(E(), w, Math.floor(D / 2)), d(E(), w, Math.floor(B / 2)), d(E(), w, 2 * Math.PI, !0), d(E(), w, 2 * Math.PI, !0), d(E(), w, 2 * Math.PI, !0)), A.stroke()
+        A.beginPath(), A.ellipse(d(E(), y, D), d(E(), y, B), d(E(), y, Math.floor(D / 2)), d(E(), y, Math.floor(B / 2)), d(E(), y, 2 * Math.PI, !0), d(E(), y, 2 * Math.PI, !0), d(E(), y, 2 * Math.PI, !0)), A.stroke()
       },
       N = [C, T, R];
-    bt || N.push(S), e && N.push(y), [...Array(a)].forEach(A => {
+    bt || N.push(S), e && N.push(w), [...Array(a)].forEach(A => {
       g(t, c, o, h, f), t.shadowBlur = d(f(), c, i, !0), t.shadowColor = h[d(f(), c, h.length)];
-      const w = N[d(f(), c, N.length)];
-      w(t, c, o, f), t.fill()
+      const y = N[d(f(), c, N.length)];
+      y(t, c, o, f), t.fill()
     })
   };
 async function Pi() {
@@ -2935,7 +2935,7 @@ async function Pi() {
     });
     const h = n.toDataURL();
     await ie();
-    const y = ki();
+    const w = ki();
     await ie();
     const C = Rn.replace(/!important/gm, "");
     f.font = `10px ${C}`;
@@ -2971,19 +2971,19 @@ async function Pi() {
         height: N
       }
     });
-    const w = t.toDataURL();
+    const y = t.toDataURL();
     f.restore(), f.clearRect(0, 0, n.width, n.height), n.width = 50, n.height = 50, f.font = `50px ${C}`, f.fillText("A", 7, 37);
     const v = n.toDataURL();
     f.restore(), f.clearRect(0, 0, n.width, n.height), n.width = 50, n.height = 50, f.font = `35px ${C}`, f.fillText("👾", 0, 37);
     const E = n.toDataURL();
-    f.clearRect(0, 0, n.width, n.height), (y && y.pixels || Math.max(...f.getImageData(0, 0, 8, 8).data)) && (_ = !0, Z("CanvasRenderingContext2D.getImageData", "pixel data modified")), n.width = 2, n.height = 2, f.fillStyle = "#000", f.fillRect(0, 0, n.width, n.height), f.fillStyle = "#fff", f.fillRect(2, 2, 1, 1), f.beginPath(), f.arc(0, 0, 2, 0, 1, !0), f.closePath(), f.fill();
+    f.clearRect(0, 0, n.width, n.height), (w && w.pixels || Math.max(...f.getImageData(0, 0, 8, 8).data)) && (_ = !0, Z("CanvasRenderingContext2D.getImageData", "pixel data modified")), n.width = 2, n.height = 2, f.fillStyle = "#000", f.fillRect(0, 0, n.width, n.height), f.fillStyle = "#fff", f.fillRect(2, 2, 1, 1), f.beginPath(), f.arc(0, 0, 2, 0, 1, !0), f.closePath(), f.fill();
     const D = f.getImageData(0, 0, 2, 2).data.join(""),
       B = {
         BLINK: ["255255255255178178178255246246246255555555255", "255255255255192192192255240240240255484848255", "255255255255177177177255246246246255535353255", "255255255255128128128255191191191255646464255", "255255255255178178178255247247247255565656255", "255255255255174174174255242242242255474747255", "255255255255229229229255127127127255686868255", "255255255255192192192255244244244255535353255"],
         GECKO: ["255255255255191191191255207207207255646464255", "255255255255192192192255240240240255484848255", "255255255255191191191255239239239255646464255", "255255255255191191191255223223223255606060255", "255255255255171171171255223223223255606060255", "255255255255188188188255245245245255525252255"],
         WEBKIT: ["255255255255185185185255233233233255474747255", "255255255255185185185255229229229255474747255", "255255255255185185185255218218218255474747255", "255255255255192192192255240240240255484848255", "255255255255178178178255247247247255565656255", "255255255255178178178255247247247255565656255", "255255255255192192192255240240240255484848255", "255255255255186186186255218218218255464646255"]
       };
-    Fe.imageDataLowEntropy = D, (ue && !B.BLINK.includes(D) || wt && !B.GECKO.includes(D) || bt && !B.WEBKIT.includes(D)) && (Ce.CANVAS = !0), Ce.CANVAS && ae("CanvasRenderingContext2D.getImageData", "suspicious pixel data");
+    Fe.imageDataLowEntropy = D, (ue && !B.BLINK.includes(D) || yt && !B.GECKO.includes(D) || bt && !B.WEBKIT.includes(D)) && (Ce.CANVAS = !0), Ce.CANVAS && ae("CanvasRenderingContext2D.getImageData", "suspicious pixel data");
     const P = L => {
       const H = oe => oe % 1 !== 0,
         {
@@ -2999,10 +2999,10 @@ async function Pi() {
     return await ie(), P(f) && (c = !0, _ = !0, Z("CanvasRenderingContext2D.measureText", "metric noise detected")), {
       dataURI: h,
       paintURI: A,
-      paintCpuURI: w,
+      paintCpuURI: y,
       textURI: v,
       emojiURI: E,
-      mods: y,
+      mods: w,
       textMetricsSystemSum: S,
       liedTextMetrics: c,
       emojiSet: [...R],
@@ -3027,31 +3027,31 @@ function xi() {
           i = Object.getOwnPropertyNames(a),
           s = [],
           c = /^--.*$/;
-        Object.keys(o).forEach(y => {
-          const C = !isNaN(+y),
-            T = o[y],
-            R = c.test(y),
+        Object.keys(o).forEach(w => {
+          const C = !isNaN(+w),
+            T = o[w],
+            R = c.test(w),
             S = c.test(T);
           if (C && !S) return s.push(T);
-          if (!C && !R) return s.push(y)
+          if (!C && !R) return s.push(w)
         });
         const _ = {},
-          u = y => y.charAt(0).toUpperCase() + y.slice(1),
-          p = y => y.charAt(0).toLowerCase() + y.slice(1),
-          f = y => y.slice(1),
+          u = w => w.charAt(0).toUpperCase() + w.slice(1),
+          p = w => w.charAt(0).toLowerCase() + w.slice(1),
+          f = w => w.slice(1),
           d = /[A-Z]/g;
-        s.forEach(y => {
-          if (_[y]) return;
-          const C = y.indexOf("-") > -1,
-            T = d.test(y),
-            R = y.charAt(0),
+        s.forEach(w => {
+          if (_[w]) return;
+          const C = w.indexOf("-") > -1,
+            T = d.test(w),
+            R = w.charAt(0),
             S = C && R == "-",
             N = T && R == R.toUpperCase();
-          if (y = S ? f(y) : N ? p(y) : y, C) {
-            const A = y.split("-").map((w, v) => v == 0 ? w : u(w)).join("");
+          if (w = S ? f(w) : N ? p(w) : w, C) {
+            const A = w.split("-").map((y, v) => v == 0 ? y : u(y)).join("");
             A in o ? _[A] = !0 : u(A) in o && (_[u(A)] = !0)
           } else if (T) {
-            const A = y.replace(d, w => "-" + w.toLowerCase());
+            const A = w.replace(d, y => "-" + y.toLowerCase());
             A in o ? _[A] = !0 : `-${A}` in o && (_[`-${A}`] = !0)
           }
         });
@@ -3246,7 +3246,7 @@ function Li() {
 		</style>
 		`;
     const h = getComputedStyle(a),
-      y = {
+      w = {
         "prefers-reduced-motion": h.getPropertyValue("--prefers-reduced-motion").trim() || void 0,
         "prefers-color-scheme": h.getPropertyValue("--prefers-color-scheme").trim() || void 0,
         monochrome: h.getPropertyValue("--monochrome").trim() || void 0,
@@ -3271,7 +3271,7 @@ function Li() {
         height: c
       });
     return {
-      mediaCSS: y,
+      mediaCSS: w,
       matchMediaCSS: g,
       screenQuery: C
     }
@@ -3377,12 +3377,12 @@ async function qi() {
           }),
           c = new Set,
           u = [...o.getElementsByClassName("pixel-emoji")].reduce((d, g, h) => {
-            const y = getComputedStyle(g),
+            const w = getComputedStyle(g),
               C = i[h],
               {
                 height: T,
                 width: R
-              } = s(y),
+              } = s(w),
               S = `${R},${T}`;
             return c.has(S) || (c.add(S), d.add(C)), d
           }, new Set),
@@ -3531,15 +3531,15 @@ function Yi() {
     d = "HID" in window && "HIDDevice" in window,
     g = "SerialPort" in window && "Serial" in window,
     h = "SharedWorker" in window,
-    y = "ontouchstart" in Window && "TouchEvent" in window,
+    w = "ontouchstart" in Window && "TouchEvent" in window,
     C = "setAppBadge" in Navigator.prototype,
     T = (E, D) => E ? [D] : [],
     R = {
-      [_e.ANDROID]: [...T(o, s), ...T(e, _), ...T(n, u), c, ...T(i, !p), ...T(r, !f), ...T(a, !d), ...T(a, !g), !h, y, ...T(t, !C)],
-      [_e.CHROME_OS]: [...T(o, s), ...T(e, !_), ...T(n, !u), c, ...T(i, p), ...T(r, f), ...T(a, d), ...T(a, g), h, y || !y, ...T(t, !C)],
-      [_e.WINDOWS]: [...T(o, !s), ...T(e, !_), ...T(n, !u), !c, ...T(i, p), ...T(r, f), ...T(a, d), ...T(a, g), h, y || !y, ...T(t, C)],
-      [_e.MAC]: [...T(o, s), ...T(e, !_), ...T(n, !u), !c, ...T(i, p), ...T(r, f), ...T(a, d), ...T(a, g), h, !y, ...T(t, C)],
-      [_e.LINUX]: [...T(o, !s), ...T(e, !_), ...T(n, !u), !c, ...T(i, p), ...T(r, f), ...T(a, d), ...T(a, g), h, !y || !y, ...T(t, !C)]
+      [_e.ANDROID]: [...T(o, s), ...T(e, _), ...T(n, u), c, ...T(i, !p), ...T(r, !f), ...T(a, !d), ...T(a, !g), !h, w, ...T(t, !C)],
+      [_e.CHROME_OS]: [...T(o, s), ...T(e, !_), ...T(n, !u), c, ...T(i, p), ...T(r, f), ...T(a, d), ...T(a, g), h, w || !w, ...T(t, !C)],
+      [_e.WINDOWS]: [...T(o, !s), ...T(e, !_), ...T(n, !u), !c, ...T(i, p), ...T(r, f), ...T(a, d), ...T(a, g), h, w || !w, ...T(t, C)],
+      [_e.MAC]: [...T(o, s), ...T(e, !_), ...T(n, !u), !c, ...T(i, p), ...T(r, f), ...T(a, d), ...T(a, g), h, !w, ...T(t, C)],
+      [_e.LINUX]: [...T(o, !s), ...T(e, !_), ...T(n, !u), !c, ...T(i, p), ...T(r, f), ...T(a, d), ...T(a, g), h, !w || !w, ...T(t, !C)]
     },
     S = {
       noContentIndex: e && !_,
@@ -3552,8 +3552,8 @@ function Yi() {
       return E[D] = P, E
     }, {}),
     A = Object.keys(N).reduce((E, D) => N[E] > N[D] ? E : D),
-    w = N[A];
-  return [N, w, S]
+    y = N[A];
+  return [N, y, S]
 }
 const or = {
   "-apple-system": _e.MAC,
@@ -3667,10 +3667,10 @@ async function Qi({
       } = u,
       g = Object.keys(p),
       h = Object.keys(f),
-      y = Object.keys(d),
+      w = Object.keys(d),
       C = +(g.filter(S => p[S]).length / g.length * 100).toFixed(0),
       T = +(h.filter(S => f[S]).length / h.length * 100).toFixed(0),
-      R = +(y.filter(S => d[S]).length / y.length * 100).toFixed(0);
+      R = +(w.filter(S => d[S]).length / w.length * 100).toFixed(0);
     return {
       ...u,
       likeHeadlessRating: C,
@@ -3912,8 +3912,8 @@ async function ns(n) {
             const {
               name: d,
               description: g
-            } = f, h = Jt(d), y = Jt(g);
-            h.length && ae("plugin name is gibberish", d), y.length && ae("plugin description is gibberish", g)
+            } = f, h = Jt(d), w = Jt(g);
+            h.length && ae("plugin name is gibberish", d), w.length && ae("plugin description is gibberish", g)
           }), p
         }, "plugins failed"),
         properties: I(() => Object.keys(Object.getPrototypeOf(navigator)), "navigator keys failed"),
@@ -3948,9 +3948,9 @@ async function ns(n) {
         return "permissions" in navigator ? Promise.all([u("accelerometer"), u("ambient-light-sensor"), u("background-fetch"), u("background-sync"), u("bluetooth"), u("camera"), u("clipboard"), u("device-info"), u("display-capture"), u("gamepad"), u("geolocation"), u("gyroscope"), u("magnetometer"), u("microphone"), u("midi"), u("nfc"), u("notifications"), u("persistent-storage"), u("push"), u("screen-wake-lock"), u("speaker"), u("speaker-selection")]).then(f => f.reduce((d, g) => {
           const {
             state: h,
-            name: y
+            name: w
           } = g || {};
-          return d[h] ? (d[h].push(y), d) : (d[h] = [y], d)
+          return d[h] ? (d[h].push(w), d) : (d[h] = [w], d)
         }, {})).catch(() => {}) : void 0
       }, "permissions failed"),
       _ = () => I(() => {
@@ -3960,20 +3960,20 @@ async function ns(n) {
           const {
             limits: f,
             features: d
-          } = p, g = y => {
+          } = p, g = w => {
             const {
               architecture: C,
               description: T,
               device: R,
               vendor: S
-            } = y, N = [S, C, T, R], A = [...(d == null ? void 0 : d.values()) ?? []], w = (v => {
+            } = w, N = [S, C, T, R], A = [...(d == null ? void 0 : d.values()) ?? []], y = (v => {
               const E = {};
               for (const D in v) E[D] = v[D];
               return E
             })(f);
-            return Fe.webGpuAdapter = N, Fe.webGpuFeatures = A, Fe.webGpuLimits = W(w), {
+            return Fe.webGpuAdapter = N, Fe.webGpuFeatures = A, Fe.webGpuLimits = W(y), {
               adapterInfo: N,
-              limits: w
+              limits: y
             }
           }, {
             info: h
@@ -4162,9 +4162,9 @@ const se = "c767712b",
     cydec: ze,
     canvasblocker: rt,
     chameleon: Pe,
-    duckduckgo: we,
+    duckduckgo: ye,
     privacybadger: ar,
-    privacypossum: yn,
+    privacypossum: wn,
     jshelter: Ie,
     puppeteerExtra: le,
     fakeBrowser: Se
@@ -4176,9 +4176,9 @@ function ss(n, t) {
     if (t >= 7 && ze.contentDocumentHash.includes(n.contentDocumentHash) && ze.contentWindowHash.includes(n.contentWindowHash) && ze.createElementHash.includes(n.createElementHash) && ze.getElementByIdHash.includes(n.getElementByIdHash) && ze.toDataURLHash.includes(n.toDataURLHash) && ze.toBlobHash.includes(n.toBlobHash) && ze.getImageDataHash.includes(n.getImageDataHash)) return "CyDec";
     if (t >= 6 && rt.contentDocumentHash.includes(n.contentDocumentHash) && rt.contentWindowHash.includes(n.contentWindowHash) && rt.appendHash.includes(n.appendHash) && rt.toDataURLHash.includes(n.toDataURLHash) && rt.toBlobHash.includes(n.toBlobHash) && rt.getImageDataHash.includes(n.getImageDataHash)) return "CanvasBlocker";
     if (t >= 9 && Pe.appendHash.includes(n.appendHash) && Pe.insertAdjacentElementHash.includes(n.insertAdjacentElementHash) && Pe.insertAdjacentHTMLHash.includes(n.insertAdjacentHTMLHash) && Pe.insertAdjacentTextHash.includes(n.insertAdjacentTextHash) && Pe.prependHash.includes(n.prependHash) && Pe.replaceWithHash.includes(n.replaceWithHash) && Pe.appendChildHash.includes(n.appendChildHash) && Pe.insertBeforeHash.includes(n.insertBeforeHash) && Pe.replaceChildHash.includes(n.replaceChildHash)) return "Chameleon";
-    if (t >= 7 && we.toDataURLHash.includes(n.toDataURLHash) && we.toBlobHash.includes(n.toBlobHash) && we.getImageDataHash.includes(n.getImageDataHash) && we.getByteFrequencyDataHash.includes(n.getByteFrequencyDataHash) && we.getByteTimeDomainDataHash.includes(n.getByteTimeDomainDataHash) && we.getFloatFrequencyDataHash.includes(n.getFloatFrequencyDataHash) && we.getFloatTimeDomainDataHash.includes(n.getFloatTimeDomainDataHash) && we.copyFromChannelHash.includes(n.copyFromChannelHash) && we.getChannelDataHash.includes(n.getChannelDataHash) && we.hardwareConcurrencyHash.includes(n.hardwareConcurrencyHash) && we.availHeightHash.includes(n.availHeightHash) && we.availLeftHash.includes(n.availLeftHash) && we.availTopHash.includes(n.availTopHash) && we.availWidthHash.includes(n.availWidthHash) && we.colorDepthHash.includes(n.colorDepthHash) && we.pixelDepthHash.includes(n.pixelDepthHash)) return "DuckDuckGo";
+    if (t >= 7 && ye.toDataURLHash.includes(n.toDataURLHash) && ye.toBlobHash.includes(n.toBlobHash) && ye.getImageDataHash.includes(n.getImageDataHash) && ye.getByteFrequencyDataHash.includes(n.getByteFrequencyDataHash) && ye.getByteTimeDomainDataHash.includes(n.getByteTimeDomainDataHash) && ye.getFloatFrequencyDataHash.includes(n.getFloatFrequencyDataHash) && ye.getFloatTimeDomainDataHash.includes(n.getFloatTimeDomainDataHash) && ye.copyFromChannelHash.includes(n.copyFromChannelHash) && ye.getChannelDataHash.includes(n.getChannelDataHash) && ye.hardwareConcurrencyHash.includes(n.hardwareConcurrencyHash) && ye.availHeightHash.includes(n.availHeightHash) && ye.availLeftHash.includes(n.availLeftHash) && ye.availTopHash.includes(n.availTopHash) && ye.availWidthHash.includes(n.availWidthHash) && ye.colorDepthHash.includes(n.colorDepthHash) && ye.pixelDepthHash.includes(n.pixelDepthHash)) return "DuckDuckGo";
     if (t >= 2 && ar.getImageDataHash.includes(n.getImageDataHash) && ar.toDataURLHash.includes(n.toDataURLHash)) return "Privacy Badger";
-    if (t >= 3 && yn.hardwareConcurrencyHash.includes(n.hardwareConcurrencyHash) && yn.availWidthHash.includes(n.availWidthHash) && yn.colorDepthHash.includes(n.colorDepthHash)) return "Privacy Possum";
+    if (t >= 3 && wn.hardwareConcurrencyHash.includes(n.hardwareConcurrencyHash) && wn.availWidthHash.includes(n.availWidthHash) && wn.colorDepthHash.includes(n.colorDepthHash)) return "Privacy Possum";
     if (t >= 2 && gn.contentDocumentHash.includes(n.contentDocumentHash) && gn.contentWindowHash.includes(n.contentDocumentHash) && gn.getContextHash.includes(n.getContextHash) && n.hardwareConcurrencyHash == se) return "NoScript";
     if (t >= 14 && Ie.contentDocumentHash.includes(n.contentDocumentHash) && Ie.contentWindowHash.includes(n.contentDocumentHash) && Ie.appendHash.includes(n.appendHash) && Ie.insertAdjacentElementHash.includes(n.insertAdjacentElementHash) && Ie.insertAdjacentHTMLHash.includes(n.insertAdjacentHTMLHash) && Ie.prependHash.includes(n.prependHash) && Ie.replaceWithHash.includes(n.replaceWithHash) && Ie.appendChildHash.includes(n.appendChildHash) && Ie.insertBeforeHash.includes(n.insertBeforeHash) && Ie.replaceChildHash.includes(n.replaceChildHash) && Ie.hardwareConcurrencyHash.includes(n.hardwareConcurrencyHash)) return "JShelter";
     if (t >= 13 && le.contentDocumentHash.includes(n.contentDocumentHash) && le.contentWindowHash.includes(n.contentWindowHash) && le.createElementHash.includes(n.createElementHash) && le.getElementByIdHash.includes(n.getElementByIdHash) && le.appendHash.includes(n.appendHash) && le.insertAdjacentElementHash.includes(n.insertAdjacentElementHash) && le.insertAdjacentHTMLHash.includes(n.insertAdjacentHTMLHash) && le.insertAdjacentTextHash.includes(n.insertAdjacentTextHash) && le.prependHash.includes(n.prependHash) && le.replaceWithHash.includes(n.replaceWithHash) && le.appendChildHash.includes(n.appendChildHash) && le.insertBeforeHash.includes(n.insertBeforeHash) && le.contentDocumentHash.includes(n.contentDocumentHash) && le.replaceChildHash.includes(n.replaceChildHash) && le.getContextHash.includes(n.getContextHash) && le.toDataURLHash.includes(n.toDataURLHash) && le.toBlobHash.includes(n.toBlobHash) && le.getImageDataHash.includes(n.getImageDataHash) && le.hardwareConcurrencyHash.includes(n.hardwareConcurrencyHash)) return "puppeteer-extra";
@@ -4215,7 +4215,7 @@ async function us() {
         security: void 0,
         mode: void 0,
         extension: void 0,
-        engine: ue ? "Blink" : wt ? "Gecko" : ""
+        engine: ue ? "Blink" : yt ? "Gecko" : ""
       },
       [e, r] = await Promise.all([Mr(), ue ? void 0 : cs()]);
     if (e) {
@@ -4229,7 +4229,7 @@ async function us() {
     const {
       protection: o
     } = r || {};
-    if (wt && o) {
+    if (yt && o) {
       const c = {
           OfflineAudioContext: "OfflineAudioContext" in window,
           WebGL2RenderingContext: "WebGL2RenderingContext" in window,
@@ -4298,7 +4298,7 @@ function ls() {
     return !1
   }
 }
-let wn;
+let yn;
 async function ds() {
   try {
     const n = Ge();
@@ -4312,12 +4312,12 @@ async function ds() {
       colorDepth: s,
       pixelDepth: c
     } = e;
-    r = Number(r), o = Number(o), a = Number(a), i = Number(i), s = Number(s), c = Number(c), wn ? {
+    r = Number(r), o = Number(o), a = Number(a), i = Number(i), s = Number(s), c = Number(c), yn ? {
       width: r,
       height: o,
       availWidth: a,
       availHeight: i
-    } = wn : wn = {
+    } = yn : yn = {
       width: r,
       height: o,
       availWidth: a,
@@ -4390,7 +4390,7 @@ const ps = ["ALIASED_POINT_SIZE_RANGE", "ALIASED_LINE_WIDTH_RANGE", "STENCIL_VAL
   },
   hs = new Set(["CLIP_DEPTH_MODE_EXT", "CLIP_ORIGIN_EXT", "DEPTH_CLAMP_EXT", "GPU_DISJOINT_EXT", "POLYGON_OFFSET_CLAMP_EXT", "MAX_TEXTURE_MAX_ANISOTROPY_EXT", "FRAGMENT_SHADER_DERIVATIVE_HINT_OES", "VERTEX_ARRAY_BINDING_OES", "MAX_DUAL_SOURCE_DRAW_BUFFERS_WEBGL", "UNMASKED_RENDERER_WEBGL", "UNMASKED_VENDOR_WEBGL", "MAX_COLOR_ATTACHMENTS_WEBGL", "MAX_DRAW_BUFFERS_WEBGL"]),
   gs = new Set(["ALIASED_LINE_WIDTH_RANGE", "SHADING_LANGUAGE_VERSION", "VERSION"]);
-async function ys() {
+async function ws() {
   var o;
   let n, t, e, r;
   try {
@@ -4412,21 +4412,21 @@ async function ys() {
         if (!k) return;
         const K = I(() => k.getShaderPrecisionFormat(k[M], k.LOW_FLOAT)),
           oe = I(() => k.getShaderPrecisionFormat(k[M], k.MEDIUM_FLOAT)),
-          ye = I(() => k.getShaderPrecisionFormat(k[M], k.HIGH_FLOAT)),
+          we = I(() => k.getShaderPrecisionFormat(k[M], k.HIGH_FLOAT)),
           Ee = I(() => k.getShaderPrecisionFormat(k[M], k.HIGH_INT));
         return {
           LOW_FLOAT: K,
           MEDIUM_FLOAT: oe,
-          HIGH_FLOAT: ye,
+          HIGH_FLOAT: we,
           HIGH_INT: Ee
         }
       },
-      y = (k, M) => {
+      w = (k, M) => {
         const K = {};
         if (!M) return K;
         for (const oe in M) {
-          const ye = M[oe];
-          K[k + "." + oe + ".precision"] = ye ? I(() => ye.precision) : void 0, K[k + "." + oe + ".rangeMax"] = ye ? I(() => ye.rangeMax) : void 0, K[k + "." + oe + ".rangeMin"] = ye ? I(() => ye.rangeMin) : void 0
+          const we = M[oe];
+          K[k + "." + oe + ".precision"] = we ? I(() => we.precision) : void 0, K[k + "." + oe + ".rangeMax"] = we ? I(() => we.rangeMax) : void 0, K[k + "." + oe + ".rangeMin"] = we ? I(() => we.rangeMin) : void 0
         }
         return K
       },
@@ -4435,9 +4435,9 @@ async function ys() {
         if (!k) return M;
         const K = k;
         for (const oe of ps) {
-          const ye = K[oe];
-          if (ye === void 0) continue;
-          const Ee = k.getParameter(ye);
+          const we = K[oe];
+          if (we === void 0) continue;
+          const Ee = k.getParameter(we);
           Ee && ArrayBuffer.isView(Ee) ? M[oe] = Array.from(Ee) : M[oe] = Ee
         }
         return M
@@ -4451,10 +4451,10 @@ async function ys() {
         if (!k) return [];
         const M = [];
         for (const [K, oe] of Object.entries(ms)) {
-          const ye = I(() => k.getExtension(K));
-          if (ye)
+          const we = I(() => k.getExtension(K));
+          if (we)
             for (const Ee of oe) {
-              const We = ye[Ee];
+              const We = we[Ee];
               if (typeof We != "number") continue;
               if (!hs.has(Ee)) {
                 M.push(`${Ee}=${We}`);
@@ -4483,14 +4483,14 @@ async function ys() {
         ...C(d),
         ...S(d)
       },
-      w = {
+      y = {
         ...C(g),
         ...S(g)
       },
       v = [];
-    for (const k in w) {
+    for (const k in y) {
       const M = A[k];
-      !M || gs.has(k) || "" + M != "" + w[k] && v.push(k)
+      !M || gs.has(k) || "" + M != "" + y[k] && v.push(k)
     }
     v.length && ae("webgl/webgl2 mirrored params mismatch", v.toString()), await ie();
     const E = {
@@ -4501,9 +4501,9 @@ async function ys() {
         extensionParameters2: R(g),
         parameters: {
           ...A,
-          ...w,
-          ...y("VERTEX_SHADER", h(d, "VERTEX_SHADER")),
-          ...y("FRAGMENT_SHADER", h(d, "FRAGMENT_SHADER"))
+          ...y,
+          ...w("VERTEX_SHADER", h(d, "VERTEX_SHADER")),
+          ...w("FRAGMENT_SHADER", h(d, "FRAGMENT_SHADER"))
         },
         parameterOrExtensionLie: _,
         lied: u
@@ -4567,8 +4567,8 @@ function sr(n, t) {
     return
   }
 }
-async function ws() {
-  var t, e, r, o, a, i, s, c, _, u, p, f, d, g, h, y, C, T, R, S, N, A, w, v, E, D, B, P, L, H, te, me;
+async function ys() {
+  var t, e, r, o, a, i, s, c, _, u, p, f, d, g, h, w, C, T, R, S, N, A, y, v, E, D, B, P, L, H, te, me;
   const n = await bs();
   if (!n) throw new Error("Fingerprint failed!");
   return {
@@ -4653,7 +4653,7 @@ async function ws() {
         return (F = n.cssMedia) == null ? void 0 : F.mediaCSS["prefers-reduced-transparency"]
       })
     } : void 0,
-    css: n.css ? (y = (h = n.css) == null ? void 0 : h.system) == null ? void 0 : y.fonts : void 0,
+    css: n.css ? (w = (h = n.css) == null ? void 0 : h.system) == null ? void 0 : w.fonts : void 0,
     timezone: n.timezone,
     offlineAudioContext: (C = n.offlineAudioContext) != null && C.lied ? void 0 : {
       binsSample: (T = n.offlineAudioContext) == null ? void 0 : T.binsSample,
@@ -4661,7 +4661,7 @@ async function ws() {
       copySample: (S = n.offlineAudioContext) == null ? void 0 : S.copySample,
       floatFrequencyDataSum: (N = n.offlineAudioContext) == null ? void 0 : N.floatFrequencyDataSum,
       floatTimeDomainDataSum: (A = n.offlineAudioContext) == null ? void 0 : A.floatTimeDomainDataSum,
-      lied: (w = n.offlineAudioContext) == null ? void 0 : w.lied,
+      lied: (y = n.offlineAudioContext) == null ? void 0 : y.lied,
       noise: (v = n.offlineAudioContext) == null ? void 0 : v.noise,
       totalUniqueSamples: (E = n.offlineAudioContext) == null ? void 0 : E.totalUniqueSamples,
       values: (D = n.offlineAudioContext) == null ? void 0 : D.values
@@ -4681,9 +4681,9 @@ async function ws() {
 }
 async function bs() {
   try {
-    const [n, t, e, r, o, a, i, s, c, _, u, p, f, d] = await Promise.all([de("offlineAudioContext", Ni()), de("canvasWebgl", ys()), de("canvas2d", Pi()), de("css", Promise.resolve(xi())), de("cssMedia", Promise.resolve(Li())), de("screen", ds()), de("consoleErrors", Promise.resolve(Bi())), de("timezone", Promise.resolve(_s())), de("fonts", qi()), de("media", ts()), de("resistance", us()), de("intl", Zi()), de("workerScope", Di()), de("maths", Promise.resolve($a()))]), [g, h, y, C, T] = await Promise.all([de("navigator", ns(f)), de("headless", Qi({
+    const [n, t, e, r, o, a, i, s, c, _, u, p, f, d] = await Promise.all([de("offlineAudioContext", Ni()), de("canvasWebgl", ws()), de("canvas2d", Pi()), de("css", Promise.resolve(xi())), de("cssMedia", Promise.resolve(Li())), de("screen", ds()), de("consoleErrors", Promise.resolve(Bi())), de("timezone", Promise.resolve(_s())), de("fonts", qi()), de("media", ts()), de("resistance", us()), de("intl", Zi()), de("workerScope", Di()), de("maths", Promise.resolve($a()))]), [g, h, w, C, T] = await Promise.all([de("navigator", ns(f)), de("headless", Qi({
       webgl: t
-    })), de("lies", Promise.resolve(pi())), de("trash", Promise.resolve(wi())), de("capturedErrors", Promise.resolve(Ka()))]);
+    })), de("lies", Promise.resolve(pi())), de("trash", Promise.resolve(yi())), de("capturedErrors", Promise.resolve(Ka()))]);
     return {
       navigator: g,
       headless: h,
@@ -4699,7 +4699,7 @@ async function bs() {
       timezone: s,
       offlineAudioContext: n,
       fonts: c,
-      lies: y,
+      lies: w,
       trash: C,
       capturedErrors: T,
       resistance: u,
@@ -4722,7 +4722,7 @@ async function vs() {
   } catch {}
   return Kt = (async () => {
     var _, u, p;
-    const n = await ws();
+    const n = await ys();
     (_ = n.navigator) != null && _.lied && n.screen && (n.screen.minDim = 0, n.screen.maxDim = 0);
     const t = _o({
       userAgent: (u = n.workerScope) == null ? void 0 : u.userAgent
@@ -4735,10 +4735,10 @@ async function vs() {
         n.navigator && (delete n.navigator.deviceMemory, delete n.navigator.hardwareConcurrency), n.workerScope && (delete n.workerScope.deviceMemory, delete n.workerScope.hardwareConcurrency), n.canvas2d && (delete n.canvas2d.dataURI, delete n.canvas2d.paintURI, delete n.canvas2d.emojiURI, delete n.canvas2d.textURI), n.canvasWebgl && delete n.canvasWebgl.parameters, n.offlineAudioContext && (delete n.offlineAudioContext.floatFrequencyDataSum, delete n.offlineAudioContext.floatTimeDomainDataSum, delete n.offlineAudioContext.sampleSum, delete n.offlineAudioContext.binsSample, delete n.offlineAudioContext.copySample, delete n.offlineAudioContext.noise), n.fonts && delete n.fonts;
         break;
       case "Safari":
-        n.canvas2d && delete n.canvas2d.dataURI, n.offlineAudioContext && (delete n.offlineAudioContext.baseLatency, delete n.offlineAudioContext.binsSample, delete n.offlineAudioContext.copySample, delete n.offlineAudioContext.floatFrequencyDataSum, delete n.offlineAudioContext.totalUniqueSamples, delete n.offlineAudioContext.noise), n.screen && (delete n.screen.minDim, delete n.screen.maxDim);
+        n.canvas2d && delete n.canvas2d.dataURI, n.offlineAudioContext && (delete n.offlineAudioContext.binsSample, delete n.offlineAudioContext.copySample, delete n.offlineAudioContext.floatFrequencyDataSum, delete n.offlineAudioContext.totalUniqueSamples, delete n.offlineAudioContext.noise), n.screen && (delete n.screen.minDim, delete n.screen.maxDim);
         break
     }
-    n.navigator && delete n.navigator.lied, n.workerScope && delete n.workerScope.userAgent, n.screen && (!n.offlineAudioContext || !n.intl) && (delete n.screen.minDim, delete n.screen.maxDim);
+    n.navigator && delete n.navigator.lied, n.workerScope && t !== "Safari" && delete n.workerScope.userAgent, n.screen && (!n.offlineAudioContext || !n.intl) && (delete n.screen.minDim, delete n.screen.maxDim);
     const r = await Promise.all([De(n.workerScope), De(n.canvas2d), De(n.canvasWebgl), De(n.fonts), De(n.screen), De(n.navigator), "a0", De(n.timezone), De(n.intl), De(n.css), De({
         ...n.cssMedia,
         ...n.offlineAudioContext
@@ -5088,8 +5088,8 @@ const ks = () => "Your account has been suspended for breaking the rules",
     return e === "en" ? oc() : e === "pt" ? ac() : e === "ch" ? ic() : e === "de" ? sc() : e === "es" ? cc() : e === "fr" ? uc() : e === "it" ? lc() : e === "jp" ? dc() : e === "pl" ? _c() : e === "ru" ? fc() : e === "uk" ? pc() : mc()
   },
   gc = () => "Alliance with empty name",
-  yc = () => "Aliança com nome vazio",
-  wc = () => "名称为空的联盟",
+  wc = () => "Aliança com nome vazio",
+  yc = () => "名称为空的联盟",
   bc = () => "Allianz mit leerem Namen",
   vc = () => "Alianza con nombre vacío",
   Ec = () => "Alliance avec nom vide",
@@ -5101,7 +5101,7 @@ const ks = () => "Your account has been suspended for breaking the rules",
   Dc = () => "Liên minh không có tên",
   Ic = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? gc() : e === "pt" ? yc() : e === "ch" ? wc() : e === "de" ? bc() : e === "es" ? vc() : e === "fr" ? Ec() : e === "it" ? Tc() : e === "jp" ? Sc() : e === "pl" ? Ac() : e === "ru" ? Oc() : e === "uk" ? Rc() : Dc()
+    return e === "en" ? gc() : e === "pt" ? wc() : e === "ch" ? yc() : e === "de" ? bc() : e === "es" ? vc() : e === "fr" ? Ec() : e === "it" ? Tc() : e === "jp" ? Sc() : e === "pl" ? Ac() : e === "ru" ? Oc() : e === "uk" ? Rc() : Dc()
   },
   Nc = () => "Botting",
   Cc = () => "Uso de bots",
@@ -5154,8 +5154,8 @@ const ks = () => "Your account has been suspended for breaking the rules",
   mu = () => "You have broken one of Wplace's rules",
   hu = () => "Você quebrou uma das regras do Wplace",
   gu = () => "你违反了 Wplace 的一项规则",
-  yu = () => "Du hast gegen eine der Wplace-Regeln verstoßen",
-  wu = () => "Has infringido una de las reglas de Wplace",
+  wu = () => "Du hast gegen eine der Wplace-Regeln verstoßen",
+  yu = () => "Has infringido una de las reglas de Wplace",
   bu = () => "Vous avez enfreint l’une des règles de Wplace",
   vu = () => "Hai infranto una delle regole di Wplace",
   Eu = () => "Wplaceのルールのいずれかに違反しました。",
@@ -5165,7 +5165,7 @@ const ks = () => "Your account has been suspended for breaking the rules",
   Ou = () => "Bạn đã vi phạm một trong các luật của Wplace",
   Ru = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? mu() : e === "pt" ? hu() : e === "ch" ? gu() : e === "de" ? yu() : e === "es" ? wu() : e === "fr" ? bu() : e === "it" ? vu() : e === "jp" ? Eu() : e === "pl" ? Tu() : e === "ru" ? Su() : e === "uk" ? Au() : Ou()
+    return e === "en" ? mu() : e === "pt" ? hu() : e === "ch" ? gu() : e === "de" ? wu() : e === "es" ? yu() : e === "fr" ? bu() : e === "it" ? vu() : e === "jp" ? Eu() : e === "pl" ? Tu() : e === "ru" ? Su() : e === "uk" ? Au() : Ou()
   },
   Du = () => "You cannot paint over event pixels",
   Iu = () => "Você não pode pintar sobre pixels de eventos",
@@ -5222,14 +5222,14 @@ const ks = () => "Your account has been suspended for breaking the rules",
   ml = () => "No se pudo completar la compra. Este ítem no existe.",
   hl = () => "Achat impossible. Cet objet n’existe pas.",
   gl = () => "Impossibile completare l'acquisto. Questo oggetto non esiste.",
-  yl = () => "購入を完了できませんでした。このアイテムは存在しません。",
-  wl = () => "Nie udało się dokończyć zakupu. Ten przedmiot nie istnieje.",
+  wl = () => "購入を完了できませんでした。このアイテムは存在しません。",
+  yl = () => "Nie udało się dokończyć zakupu. Ten przedmiot nie istnieje.",
   bl = () => "Не удалось завершить покупку. Этот предмет не существует.",
   vl = () => "Не вдалося завершити покупку. Цей предмет не існує.",
   El = () => "Không thể hoàn tất giao dịch. Vật phẩm này không tồn tại.",
   _r = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? dl() : e === "pt" ? _l() : e === "ch" ? fl() : e === "de" ? pl() : e === "es" ? ml() : e === "fr" ? hl() : e === "it" ? gl() : e === "jp" ? yl() : e === "pl" ? wl() : e === "ru" ? bl() : e === "uk" ? vl() : El()
+    return e === "en" ? dl() : e === "pt" ? _l() : e === "ch" ? fl() : e === "de" ? pl() : e === "es" ? ml() : e === "fr" ? hl() : e === "it" ? gl() : e === "jp" ? wl() : e === "pl" ? yl() : e === "ru" ? bl() : e === "uk" ? vl() : El()
   },
   Tl = () => "Your phone number's country doesn't match your current location. Please use a local number.",
   Sl = () => "O país do seu número de telefone não corresponde à sua localização atual. Por favor, use um número local.",
@@ -5290,10 +5290,10 @@ const ks = () => "Your account has been suspended for breaking the rules",
   md = () => "Udostępnianie cudzych danych osobowych bez ich zgody",
   hd = () => "Публикация личной информации других людей без их согласия",
   gd = () => "Розповсюдження особистої інформації інших людей без їхньої згоди",
-  yd = () => "Công khai thông tin cá nhân của người khác mà không có sự cho phép",
-  wd = (n = {}, t = {}) => {
+  wd = () => "Công khai thông tin cá nhân của người khác mà không có sự cho phép",
+  yd = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? sd() : e === "pt" ? cd() : e === "ch" ? ud() : e === "de" ? ld() : e === "es" ? dd() : e === "fr" ? _d() : e === "it" ? fd() : e === "jp" ? pd() : e === "pl" ? md() : e === "ru" ? hd() : e === "uk" ? gd() : yd()
+    return e === "en" ? sd() : e === "pt" ? cd() : e === "ch" ? ud() : e === "de" ? ld() : e === "es" ? dd() : e === "fr" ? _d() : e === "it" ? fd() : e === "jp" ? pd() : e === "pl" ? md() : e === "ru" ? hd() : e === "uk" ? gd() : wd()
   },
   bd = () => "This email is already in use.",
   vd = () => "Este e-mail já está em uso.",
@@ -5359,8 +5359,8 @@ const ks = () => "Your account has been suspended for breaking the rules",
     const e = t.locale ?? O();
     return e === "en" ? a_(n) : e === "pt" ? i_(n) : e === "ch" ? s_(n) : e === "de" ? c_(n) : e === "es" ? u_(n) : e === "fr" ? l_(n) : e === "it" ? d_(n) : e === "jp" ? __(n) : e === "pl" ? f_(n) : e === "ru" ? p_(n) : e === "uk" ? m_(n) : h_(n)
   },
-  y_ = () => "Exceeded maximum number of characters",
-  w_ = () => "Excedeu o número máximo de caracteres permitidos",
+  w_ = () => "Exceeded maximum number of characters",
+  y_ = () => "Excedeu o número máximo de caracteres permitidos",
   b_ = () => "超出最大字符数",
   v_ = () => "Maximale Zeichenanzahl überschritten",
   E_ = () => "Se excedió el número máximo de caracteres",
@@ -5373,7 +5373,7 @@ const ks = () => "Your account has been suspended for breaking the rules",
   I_ = () => "Đã vượt quá số ký tự tối đa",
   N_ = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? y_() : e === "pt" ? w_() : e === "ch" ? b_() : e === "de" ? v_() : e === "es" ? E_() : e === "fr" ? T_() : e === "it" ? S_() : e === "jp" ? A_() : e === "pl" ? O_() : e === "ru" ? R_() : e === "uk" ? D_() : I_()
+    return e === "en" ? w_() : e === "pt" ? y_() : e === "ch" ? b_() : e === "de" ? v_() : e === "es" ? E_() : e === "fr" ? T_() : e === "it" ? S_() : e === "jp" ? A_() : e === "pl" ? O_() : e === "ru" ? R_() : e === "uk" ? D_() : I_()
   },
   C_ = () => "Verification code expired. Please request a new one.",
   k_ = () => "Código de verificação expirado. Por favor, solicite um novo.",
@@ -5424,8 +5424,8 @@ const ks = () => "Your account has been suspended for breaking the rules",
     return e === "en" ? rf() : e === "pt" ? of() : e === "ch" ? af() : e === "de" ? sf() : e === "es" ? cf() : e === "fr" ? uf() : e === "it" ? lf() : e === "jp" ? df() : e === "pl" ? _f() : e === "ru" ? ff() : e === "uk" ? pf() : mf()
   },
   gf = () => "Hate speech",
-  yf = () => "Discurso de Ódio",
-  wf = () => "仇恨言论",
+  wf = () => "Discurso de Ódio",
+  yf = () => "仇恨言论",
   bf = () => "Hassrede",
   vf = () => "Discurso de odio",
   Ef = () => "Discours haineux",
@@ -5437,7 +5437,7 @@ const ks = () => "Your account has been suspended for breaking the rules",
   Df = () => "Ngôn từ thù hằn",
   If = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? gf() : e === "pt" ? yf() : e === "ch" ? wf() : e === "de" ? bf() : e === "es" ? vf() : e === "fr" ? Ef() : e === "it" ? Tf() : e === "jp" ? Sf() : e === "pl" ? Af() : e === "ru" ? Of() : e === "uk" ? Rf() : Df()
+    return e === "en" ? gf() : e === "pt" ? wf() : e === "ch" ? yf() : e === "de" ? bf() : e === "es" ? vf() : e === "fr" ? Ef() : e === "it" ? Tf() : e === "jp" ? Sf() : e === "pl" ? Af() : e === "ru" ? Of() : e === "uk" ? Rf() : Df()
   },
   Nf = () => "Racism, homophobia, hate groups, ...",
   Cf = () => "Racismo, homofobia, grupos de ódio, ...",
@@ -5490,8 +5490,8 @@ const ks = () => "Your account has been suspended for breaking the rules",
   mp = () => "Invalid captcha. Please try again.",
   hp = () => "Captcha inválido. Por favor, tente novamente.",
   gp = () => "验证码无效，请重试。",
-  yp = () => "Ungültiges Captcha. Bitte versuche es erneut.",
-  wp = () => "Captcha inválido. Por favor, inténtelo de nuevo.",
+  wp = () => "Ungültiges Captcha. Bitte versuche es erneut.",
+  yp = () => "Captcha inválido. Por favor, inténtelo de nuevo.",
   bp = () => "Captcha invalide. Veuillez réessayer.",
   vp = () => "Captcha non valido. Riprova.",
   Ep = () => "キャプチャが無効です。もう一度お試しください。",
@@ -5501,7 +5501,7 @@ const ks = () => "Your account has been suspended for breaking the rules",
   Op = () => "Captcha không hợp lệ. Vui lòng thử lại.",
   Rp = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? mp() : e === "pt" ? hp() : e === "ch" ? gp() : e === "de" ? yp() : e === "es" ? wp() : e === "fr" ? bp() : e === "it" ? vp() : e === "jp" ? Ep() : e === "pl" ? Tp() : e === "ru" ? Sp() : e === "uk" ? Ap() : Op()
+    return e === "en" ? mp() : e === "pt" ? hp() : e === "ch" ? gp() : e === "de" ? wp() : e === "es" ? yp() : e === "fr" ? bp() : e === "it" ? vp() : e === "jp" ? Ep() : e === "pl" ? Tp() : e === "ru" ? Sp() : e === "uk" ? Ap() : Op()
   },
   Dp = () => "Invalid challenge response",
   Ip = () => "Resposta de desafio inválida",
@@ -5556,8 +5556,8 @@ const ks = () => "Your account has been suspended for breaking the rules",
   mm = () => "名称包含禁止的字符或词语，请选择其他名称。",
   hm = () => "Der Name enthält nicht erlaubte Zeichen oder Wörter. Bitte wähle einen anderen Namen.",
   gm = () => "El nombre contiene caracteres o palabras no permitidas. Elige otro nombre.",
-  ym = () => "Le nom contient des caractères ou des mots non autorisés. Veuillez choisir un autre nom.",
-  wm = () => "Il nome contiene caratteri o parole non consentiti. Scegli un altro nome.",
+  wm = () => "Le nom contient des caractères ou des mots non autorisés. Veuillez choisir un autre nom.",
+  ym = () => "Il nome contiene caratteri o parole non consentiti. Scegli un altro nome.",
   bm = () => "この名前には使用できない文字または単語が含まれています。別の名前を選んでください。",
   vm = () => "Nazwa zawiera niedozwolone znaki lub słowa. Wybierz inną nazwę.",
   Em = () => "Имя содержит запрещённые символы или слова. Пожалуйста, выберите другое имя.",
@@ -5565,7 +5565,7 @@ const ks = () => "Your account has been suspended for breaking the rules",
   Sm = () => "Tên chứa ký tự hoặc từ không được phép. Hãy chọn tên khác.",
   pr = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? fm() : e === "pt" ? pm() : e === "ch" ? mm() : e === "de" ? hm() : e === "es" ? gm() : e === "fr" ? ym() : e === "it" ? wm() : e === "jp" ? bm() : e === "pl" ? vm() : e === "ru" ? Em() : e === "uk" ? Tm() : Sm()
+    return e === "en" ? fm() : e === "pt" ? pm() : e === "ch" ? mm() : e === "de" ? hm() : e === "es" ? gm() : e === "fr" ? wm() : e === "it" ? ym() : e === "jp" ? bm() : e === "pl" ? vm() : e === "ru" ? Em() : e === "uk" ? Tm() : Sm()
   },
   Am = () => "Please enter a valid phone number with country code.",
   Om = () => "Insira um número de telefone válido com código do país.",
@@ -5623,13 +5623,13 @@ const ks = () => "Your account has been suspended for breaking the rules",
   mh = () => "Le classement est temporairement désactivé",
   hh = () => "La classifica è temporaneamente disattivata",
   gh = () => "ランキングは一時的に無効になっています。",
-  yh = () => "Ranking jest tymczasowo wyłączony",
-  wh = () => "Таблица лидеров временно отключена",
+  wh = () => "Ranking jest tymczasowo wyłączony",
+  yh = () => "Таблица лидеров временно отключена",
   bh = () => "Таблиця лідерів тимчасово вимкнена",
   vh = () => "Bảng xếp hạng tạm thời bị vô hiệu hóa",
   $e = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? lh() : e === "pt" ? dh() : e === "ch" ? _h() : e === "de" ? fh() : e === "es" ? ph() : e === "fr" ? mh() : e === "it" ? hh() : e === "jp" ? gh() : e === "pl" ? yh() : e === "ru" ? wh() : e === "uk" ? bh() : vh()
+    return e === "en" ? lh() : e === "pt" ? dh() : e === "ch" ? _h() : e === "de" ? fh() : e === "es" ? ph() : e === "fr" ? mh() : e === "it" ? hh() : e === "jp" ? gh() : e === "pl" ? wh() : e === "ru" ? yh() : e === "uk" ? bh() : vh()
   },
   Eh = () => "Location name is too big (max. 128 characters)",
   Th = () => "Nome da localização é grande demais (max. 128 caracteres)",
@@ -5690,10 +5690,10 @@ const ks = () => "Your account has been suspended for breaking the rules",
   mg = n => `Następną zmianę nazwy możesz wykonać za ${n.days} dni`,
   hg = n => `Вы сможете изменить имя снова через ${n.days} дн.`,
   gg = n => `Ви зможете змінити імʼя знову через ${n.days} днів`,
-  yg = n => `Bạn có thể đổi tên lại sau ${n.days} ngày`,
-  wg = (n, t = {}) => {
+  wg = n => `Bạn có thể đổi tên lại sau ${n.days} ngày`,
+  yg = (n, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? sg(n) : e === "pt" ? cg(n) : e === "ch" ? ug(n) : e === "de" ? lg(n) : e === "es" ? dg(n) : e === "fr" ? _g(n) : e === "it" ? fg(n) : e === "jp" ? pg(n) : e === "pl" ? mg(n) : e === "ru" ? hg(n) : e === "uk" ? gg(n) : yg(n)
+    return e === "en" ? sg(n) : e === "pt" ? cg(n) : e === "ch" ? ug(n) : e === "de" ? lg(n) : e === "es" ? dg(n) : e === "fr" ? _g(n) : e === "it" ? fg(n) : e === "jp" ? pg(n) : e === "pl" ? mg(n) : e === "ru" ? hg(n) : e === "uk" ? gg(n) : wg(n)
   },
   bg = () => "No internet access or the servers are offline. Try again later.",
   vg = () => "Sem acesso à internet ou os servidores estão fora do ar. Tente novamente mais tarde.",
@@ -5735,143 +5735,143 @@ const ks = () => "Your account has been suspended for breaking the rules",
   Jg = () => "Opération non autorisée. Vous avez peut-être trop d’emplacements favoris.",
   Qg = () => "Operazione non consentita. Forse hai troppi luoghi preferiti.",
   Zg = () => "この操作は許可されていません。お気に入りの場所が多すぎる可能性があります。",
-  ey = () => "Operacja niedozwolona. Możliwe, że masz zbyt wiele ulubionych lokalizacji.",
-  ty = () => "Операция запрещена. Возможно, у вас слишком много избранных локаций.",
-  ny = () => "Операцію заборонено. Можливо, у вас забагато вибраних локацій.",
-  ry = () => "Thao tác không được phép. Có thể bạn đã có quá nhiều vị trí yêu thích.",
-  oy = (n = {}, t = {}) => {
+  ew = () => "Operacja niedozwolona. Możliwe, że masz zbyt wiele ulubionych lokalizacji.",
+  tw = () => "Операция запрещена. Возможно, у вас слишком много избранных локаций.",
+  nw = () => "Операцію заборонено. Можливо, у вас забагато вибраних локацій.",
+  rw = () => "Thao tác không được phép. Có thể bạn đã có quá nhiều vị trí yêu thích.",
+  ow = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? $g() : e === "pt" ? qg() : e === "ch" ? Kg() : e === "de" ? Xg() : e === "es" ? Yg() : e === "fr" ? Jg() : e === "it" ? Qg() : e === "jp" ? Zg() : e === "pl" ? ey() : e === "ru" ? ty() : e === "uk" ? ny() : ry()
+    return e === "en" ? $g() : e === "pt" ? qg() : e === "ch" ? Kg() : e === "de" ? Xg() : e === "es" ? Yg() : e === "fr" ? Jg() : e === "it" ? Qg() : e === "jp" ? Zg() : e === "pl" ? ew() : e === "ru" ? tw() : e === "uk" ? nw() : rw()
   },
-  ay = n => `Not enough charges: you have ${n.charges} but this overlay needs ${n.pixels}.`,
-  iy = n => `Cargas insuficientes: você tem ${n.charges}, mas esta sobreposição precisa de ${n.pixels}.`,
-  sy = n => `充能不足：你有 ${n.charges}，但此叠加层需要 ${n.pixels}。`,
-  cy = n => `Nicht genügend Ladungen: Du hast ${n.charges}, aber dieses Overlay benötigt ${n.pixels}.`,
-  uy = n => `Cargas insuficientes: tienes ${n.charges} pero esta superposición necesita ${n.pixels}.`,
-  ly = n => `Charges insuffisantes : vous avez ${n.charges} mais ce calque nécessite ${n.pixels}.`,
-  dy = n => `Cariche insufficienti: ne hai ${n.charges} ma questo overlay ne richiede ${n.pixels}.`,
-  _y = n => `チャージが足りません：現在 ${n.charges} ですが、このオーバーレイには ${n.pixels} 必要です。`,
-  fy = n => `Za mało ładunków: masz ${n.charges}, ale ta nakładka wymaga ${n.pixels}.`,
-  py = n => `Недостаточно зарядов: у вас ${n.charges}, но для этого слоя нужно ${n.pixels}.`,
-  my = n => `Недостатньо зарядів: у вас ${n.charges}, але для цього шару потрібно ${n.pixels}.`,
-  hy = n => `Không đủ lượt sơn: bạn có ${n.charges} nhưng lớp phủ này cần ${n.pixels}.`,
-  gy = (n, t = {}) => {
+  aw = n => `Not enough charges: you have ${n.charges} but this overlay needs ${n.pixels}.`,
+  iw = n => `Cargas insuficientes: você tem ${n.charges}, mas esta sobreposição precisa de ${n.pixels}.`,
+  sw = n => `充能不足：你有 ${n.charges}，但此叠加层需要 ${n.pixels}。`,
+  cw = n => `Nicht genügend Ladungen: Du hast ${n.charges}, aber dieses Overlay benötigt ${n.pixels}.`,
+  uw = n => `Cargas insuficientes: tienes ${n.charges} pero esta superposición necesita ${n.pixels}.`,
+  lw = n => `Charges insuffisantes : vous avez ${n.charges} mais ce calque nécessite ${n.pixels}.`,
+  dw = n => `Cariche insufficienti: ne hai ${n.charges} ma questo overlay ne richiede ${n.pixels}.`,
+  _w = n => `チャージが足りません：現在 ${n.charges} ですが、このオーバーレイには ${n.pixels} 必要です。`,
+  fw = n => `Za mało ładunków: masz ${n.charges}, ale ta nakładka wymaga ${n.pixels}.`,
+  pw = n => `Недостаточно зарядов: у вас ${n.charges}, но для этого слоя нужно ${n.pixels}.`,
+  mw = n => `Недостатньо зарядів: у вас ${n.charges}, але для цього шару потрібно ${n.pixels}.`,
+  hw = n => `Không đủ lượt sơn: bạn có ${n.charges} nhưng lớp phủ này cần ${n.pixels}.`,
+  gw = (n, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? ay(n) : e === "pt" ? iy(n) : e === "ch" ? sy(n) : e === "de" ? cy(n) : e === "es" ? uy(n) : e === "fr" ? ly(n) : e === "it" ? dy(n) : e === "jp" ? _y(n) : e === "pl" ? fy(n) : e === "ru" ? py(n) : e === "uk" ? my(n) : hy(n)
+    return e === "en" ? aw(n) : e === "pt" ? iw(n) : e === "ch" ? sw(n) : e === "de" ? cw(n) : e === "es" ? uw(n) : e === "fr" ? lw(n) : e === "it" ? dw(n) : e === "jp" ? _w(n) : e === "pl" ? fw(n) : e === "ru" ? pw(n) : e === "uk" ? mw(n) : hw(n)
   },
-  yy = () => "You are trying to paint with a color you do not own",
-  wy = () => "Você está tentando pintar com uma cor que não possui",
-  by = () => "你正在尝试使用尚未拥有的颜色进行绘制",
-  vy = () => "Du versuchst mit einer Farbe zu malen, die du nicht besitzt",
-  Ey = () => "Estás intentando pintar con un color que no posees",
-  Ty = () => "Vous essayez de peindre avec une couleur que vous ne possédez pas",
-  Sy = () => "Stai cercando di dipingere con un colore che non possiedi",
-  Ay = () => "所持していない色で塗ろうとしています。",
-  Oy = () => "Próbujesz malować kolorem, którego nie posiadasz",
-  Ry = () => "Вы пытаетесь рисовать цветом, которого у вас нет",
-  Dy = () => "Ви намагаєтеся малювати кольором, якого не маєте",
-  Iy = () => "Bạn đang cố tô bằng một màu bạn không sở hữu",
+  ww = () => "You are trying to paint with a color you do not own",
+  yw = () => "Você está tentando pintar com uma cor que não possui",
+  bw = () => "你正在尝试使用尚未拥有的颜色进行绘制",
+  vw = () => "Du versuchst mit einer Farbe zu malen, die du nicht besitzt",
+  Ew = () => "Estás intentando pintar con un color que no posees",
+  Tw = () => "Vous essayez de peindre avec une couleur que vous ne possédez pas",
+  Sw = () => "Stai cercando di dipingere con un colore che non possiedi",
+  Aw = () => "所持していない色で塗ろうとしています。",
+  Ow = () => "Próbujesz malować kolorem, którego nie posiadasz",
+  Rw = () => "Вы пытаетесь рисовать цветом, которого у вас нет",
+  Dw = () => "Ви намагаєтеся малювати кольором, якого не маєте",
+  Iw = () => "Bạn đang cố tô bằng một màu bạn không sở hữu",
   mr = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? yy() : e === "pt" ? wy() : e === "ch" ? by() : e === "de" ? vy() : e === "es" ? Ey() : e === "fr" ? Ty() : e === "it" ? Sy() : e === "jp" ? Ay() : e === "pl" ? Oy() : e === "ru" ? Ry() : e === "uk" ? Dy() : Iy()
+    return e === "en" ? ww() : e === "pt" ? yw() : e === "ch" ? bw() : e === "de" ? vw() : e === "es" ? Ew() : e === "fr" ? Tw() : e === "it" ? Sw() : e === "jp" ? Aw() : e === "pl" ? Ow() : e === "ru" ? Rw() : e === "uk" ? Dw() : Iw()
   },
-  Ny = () => "Phone already used",
-  Cy = () => "Telefone já usado",
-  ky = () => "电话号码已被使用",
-  Py = () => "Telefonnummer bereits verwendet",
-  xy = () => "Teléfono ya utilizado",
-  Ly = () => "Téléphone déjà utilisé",
-  My = () => "Telefono già utilizzato",
-  By = () => "この電話番号は既に使用されています。",
-  Hy = () => "Numer telefonu jest już używany",
-  Uy = () => "Телефон уже используется",
-  Fy = () => "Номер телефону вже використовується",
-  jy = () => "Số điện thoại đã được sử dụng",
-  Gy = (n = {}, t = {}) => {
+  Nw = () => "Phone already used",
+  Cw = () => "Telefone já usado",
+  kw = () => "电话号码已被使用",
+  Pw = () => "Telefonnummer bereits verwendet",
+  xw = () => "Teléfono ya utilizado",
+  Lw = () => "Téléphone déjà utilisé",
+  Mw = () => "Telefono già utilizzato",
+  Bw = () => "この電話番号は既に使用されています。",
+  Hw = () => "Numer telefonu jest już używany",
+  Uw = () => "Телефон уже используется",
+  Fw = () => "Номер телефону вже використовується",
+  jw = () => "Số điện thoại đã được sử dụng",
+  Gw = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? Ny() : e === "pt" ? Cy() : e === "ch" ? ky() : e === "de" ? Py() : e === "es" ? xy() : e === "fr" ? Ly() : e === "it" ? My() : e === "jp" ? By() : e === "pl" ? Hy() : e === "ru" ? Uy() : e === "uk" ? Fy() : jy()
+    return e === "en" ? Nw() : e === "pt" ? Cw() : e === "ch" ? kw() : e === "de" ? Pw() : e === "es" ? xw() : e === "fr" ? Lw() : e === "it" ? Mw() : e === "jp" ? Bw() : e === "pl" ? Hw() : e === "ru" ? Uw() : e === "uk" ? Fw() : jw()
   },
-  Wy = () => "This phone number's region is not supported",
-  Vy = () => "A região deste número de telefone não é suportada",
-  zy = () => "此电话号码的地区不受支持",
-  $y = () => "Die Region dieser Telefonnummer wird nicht unterstützt",
-  qy = () => "La región de este número de teléfono no es compatible",
-  Ky = () => "La région de ce numéro de téléphone n'est pas prise en charge",
-  Xy = () => "La regione di questo numero di telefono non è supportata",
-  Yy = () => "この電話番号の地域はサポートされていません",
-  Jy = () => "Region tego numeru telefonu nie jest obsługiwany",
-  Qy = () => "Регион этого номера телефона не поддерживается",
-  Zy = () => "Регіон цього номера телефону не підтримується",
-  ew = () => "Vùng của số điện thoại này không được hỗ trợ",
-  tw = (n = {}, t = {}) => {
+  Ww = () => "This phone number's region is not supported",
+  Vw = () => "A região deste número de telefone não é suportada",
+  zw = () => "此电话号码的地区不受支持",
+  $w = () => "Die Region dieser Telefonnummer wird nicht unterstützt",
+  qw = () => "La región de este número de teléfono no es compatible",
+  Kw = () => "La région de ce numéro de téléphone n'est pas prise en charge",
+  Xw = () => "La regione di questo numero di telefono non è supportata",
+  Yw = () => "この電話番号の地域はサポートされていません",
+  Jw = () => "Region tego numeru telefonu nie jest obsługiwany",
+  Qw = () => "Регион этого номера телефона не поддерживается",
+  Zw = () => "Регіон цього номера телефону не підтримується",
+  ey = () => "Vùng của số điện thoại này không được hỗ trợ",
+  ty = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? Wy() : e === "pt" ? Vy() : e === "ch" ? zy() : e === "de" ? $y() : e === "es" ? qy() : e === "fr" ? Ky() : e === "it" ? Xy() : e === "jp" ? Yy() : e === "pl" ? Jy() : e === "ru" ? Qy() : e === "uk" ? Zy() : ew()
+    return e === "en" ? Ww() : e === "pt" ? Vw() : e === "ch" ? zw() : e === "de" ? $w() : e === "es" ? qw() : e === "fr" ? Kw() : e === "it" ? Xw() : e === "jp" ? Yw() : e === "pl" ? Jw() : e === "ru" ? Qw() : e === "uk" ? Zw() : ey()
   },
-  nw = () => "Refresh your page to get the latest update",
-  rw = () => "Recarregue sua página para obter as últimas atualizações",
-  ow = () => "刷新页面以获取最新更新",
-  aw = () => "Aktualisiere die Seite, um die neuesten Updates zu erhalten",
-  iw = () => "Actualiza la página para obtener la última versión",
-  sw = () => "Actualisez la page pour obtenir les dernières mises à jour",
-  cw = () => "Ricarica la pagina per ottenere gli ultimi aggiornamenti",
-  uw = () => "最新の状態にするにはページを再読み込みしてください。",
-  lw = () => "Odśwież stronę, aby zobaczyć najnowszą aktualizację",
-  dw = () => "Обновите страницу, чтобы получить последние изменения",
-  _w = () => "Оновіть сторінку, щоб отримати останні оновлення",
-  fw = () => "Hãy làm mới trang để nhận được cập nhật mới nhất",
+  ny = () => "Refresh your page to get the latest update",
+  ry = () => "Recarregue sua página para obter as últimas atualizações",
+  oy = () => "刷新页面以获取最新更新",
+  ay = () => "Aktualisiere die Seite, um die neuesten Updates zu erhalten",
+  iy = () => "Actualiza la página para obtener la última versión",
+  sy = () => "Actualisez la page pour obtenir les dernières mises à jour",
+  cy = () => "Ricarica la pagina per ottenere gli ultimi aggiornamenti",
+  uy = () => "最新の状態にするにはページを再読み込みしてください。",
+  ly = () => "Odśwież stronę, aby zobaczyć najnowszą aktualizację",
+  dy = () => "Обновите страницу, чтобы получить последние изменения",
+  _y = () => "Оновіть сторінку, щоб отримати останні оновлення",
+  fy = () => "Hãy làm mới trang để nhận được cập nhật mới nhất",
   hr = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? nw() : e === "pt" ? rw() : e === "ch" ? ow() : e === "de" ? aw() : e === "es" ? iw() : e === "fr" ? sw() : e === "it" ? cw() : e === "jp" ? uw() : e === "pl" ? lw() : e === "ru" ? dw() : e === "uk" ? _w() : fw()
+    return e === "en" ? ny() : e === "pt" ? ry() : e === "ch" ? oy() : e === "de" ? ay() : e === "es" ? iy() : e === "fr" ? sy() : e === "it" ? cy() : e === "jp" ? uy() : e === "pl" ? ly() : e === "ru" ? dy() : e === "uk" ? _y() : fy()
   },
-  pw = () => "The request timed out. Please try again.",
-  mw = () => "A solicitação expirou. Por favor, tente novamente.",
-  hw = () => "请求超时。请重试。",
-  gw = () => "Die Anfrage hat ein Zeitlimit überschritten. Bitte versuchen Sie es erneut.",
-  yw = () => "La solicitud agotó el tiempo de espera. Por favor, inténtelo de nuevo.",
-  ww = () => "La requête a expiré. Veuillez réessayer.",
-  bw = () => "La richiesta è scaduta. Riprova.",
-  vw = () => "リクエストがタイムアウトしました。もう一度お試しください。",
-  Ew = () => "Żądanie przekroczyło limit czasu. Proszę spróbować ponownie.",
-  Tw = () => "Время ожидания запроса истекло. Пожалуйста, попробуйте снова.",
-  Sw = () => "Час очікування запиту вичерпано. Будь ласка, спробуйте ще раз.",
-  Aw = () => "Yêu cầu đã hết thời gian. Vui lòng thử lại.",
-  Ow = (n = {}, t = {}) => {
+  py = () => "The request timed out. Please try again.",
+  my = () => "A solicitação expirou. Por favor, tente novamente.",
+  hy = () => "请求超时。请重试。",
+  gy = () => "Die Anfrage hat ein Zeitlimit überschritten. Bitte versuchen Sie es erneut.",
+  wy = () => "La solicitud agotó el tiempo de espera. Por favor, inténtelo de nuevo.",
+  yy = () => "La requête a expiré. Veuillez réessayer.",
+  by = () => "La richiesta è scaduta. Riprova.",
+  vy = () => "リクエストがタイムアウトしました。もう一度お試しください。",
+  Ey = () => "Żądanie przekroczyło limit czasu. Proszę spróbować ponownie.",
+  Ty = () => "Время ожидания запроса истекло. Пожалуйста, попробуйте снова.",
+  Sy = () => "Час очікування запиту вичерпано. Будь ласка, спробуйте ще раз.",
+  Ay = () => "Yêu cầu đã hết thời gian. Vui lòng thử lại.",
+  Oy = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? pw() : e === "pt" ? mw() : e === "ch" ? hw() : e === "de" ? gw() : e === "es" ? yw() : e === "fr" ? ww() : e === "it" ? bw() : e === "jp" ? vw() : e === "pl" ? Ew() : e === "ru" ? Tw() : e === "uk" ? Sw() : Aw()
+    return e === "en" ? py() : e === "pt" ? my() : e === "ch" ? hy() : e === "de" ? gy() : e === "es" ? wy() : e === "fr" ? yy() : e === "it" ? by() : e === "jp" ? vy() : e === "pl" ? Ey() : e === "ru" ? Ty() : e === "uk" ? Sy() : Ay()
   },
-  Rw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  Dw = () => "A área selecionada tem histórico demais para exportar um timelapse. Tente uma área menor.",
-  Iw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  Nw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  Cw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  kw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  Pw = () => "L'area selezionata ha troppa cronologia per esportare un timelapse. Prova con un'area più piccola.",
-  xw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  Lw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  Mw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  Bw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  Hw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  Uw = (n = {}, t = {}) => {
+  Ry = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Dy = () => "A área selecionada tem histórico demais para exportar um timelapse. Tente uma área menor.",
+  Iy = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Ny = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Cy = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  ky = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Py = () => "L'area selezionata ha troppa cronologia per esportare un timelapse. Prova con un'area più piccola.",
+  xy = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Ly = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  My = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  By = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Hy = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Uy = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? Rw() : e === "pt" ? Dw() : e === "ch" ? Iw() : e === "de" ? Nw() : e === "es" ? Cw() : e === "fr" ? kw() : e === "it" ? Pw() : e === "jp" ? xw() : e === "pl" ? Lw() : e === "ru" ? Mw() : e === "uk" ? Bw() : Hw()
+    return e === "en" ? Ry() : e === "pt" ? Dy() : e === "ch" ? Iy() : e === "de" ? Ny() : e === "es" ? Cy() : e === "fr" ? ky() : e === "it" ? Py() : e === "jp" ? xy() : e === "pl" ? Ly() : e === "ru" ? My() : e === "uk" ? By() : Hy()
   },
-  Fw = () => "The service is currently unavailable. Please try again later.",
-  jw = () => "O serviço está indisponível no momento. Por favor, tente novamente mais tarde.",
-  Gw = () => "服务当前不可用。请稍后再试。",
-  Ww = () => "Der Dienst ist derzeit nicht verfügbar. Bitte versuchen Sie es später erneut.",
-  Vw = () => "El servicio no está disponible actualmente. Por favor, inténtelo de nuevo más tarde.",
-  zw = () => "Le service est actuellement indisponible. Veuillez réessayer plus tard.",
-  $w = () => "Il servizio non è attualmente disponibile. Riprova più tardi.",
-  qw = () => "現在、サービスはご利用いただけません。後でもう一度お試しください。",
-  Kw = () => "Usługa jest obecnie niedostępna. Proszę spróbować ponownie później.",
-  Xw = () => "Сервис в настоящее время недоступен. Пожалуйста, попробуйте позже.",
-  Yw = () => "Сервіс наразі недоступний. Будь ласка, спробуйте пізніше.",
-  Jw = () => "Dịch vụ hiện không khả dụng. Vui lòng thử lại sau.",
-  Qw = (n = {}, t = {}) => {
+  Fy = () => "The service is currently unavailable. Please try again later.",
+  jy = () => "O serviço está indisponível no momento. Por favor, tente novamente mais tarde.",
+  Gy = () => "服务当前不可用。请稍后再试。",
+  Wy = () => "Der Dienst ist derzeit nicht verfügbar. Bitte versuchen Sie es später erneut.",
+  Vy = () => "El servicio no está disponible actualmente. Por favor, inténtelo de nuevo más tarde.",
+  zy = () => "Le service est actuellement indisponible. Veuillez réessayer plus tard.",
+  $y = () => "Il servizio non è attualmente disponibile. Riprova più tardi.",
+  qy = () => "現在、サービスはご利用いただけません。後でもう一度お試しください。",
+  Ky = () => "Usługa jest obecnie niedostępna. Proszę spróbować ponownie później.",
+  Xy = () => "Сервис в настоящее время недоступен. Пожалуйста, попробуйте позже.",
+  Yy = () => "Сервіс наразі недоступний. Будь ласка, спробуйте пізніше.",
+  Jy = () => "Dịch vụ hiện không khả dụng. Vui lòng thử lại sau.",
+  Qy = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? Fw() : e === "pt" ? jw() : e === "ch" ? Gw() : e === "de" ? Ww() : e === "es" ? Vw() : e === "fr" ? zw() : e === "it" ? $w() : e === "jp" ? qw() : e === "pl" ? Kw() : e === "ru" ? Xw() : e === "uk" ? Yw() : Jw()
+    return e === "en" ? Fy() : e === "pt" ? jy() : e === "ch" ? Gy() : e === "de" ? Wy() : e === "es" ? Vy() : e === "fr" ? zy() : e === "it" ? $y() : e === "jp" ? qy() : e === "pl" ? Ky() : e === "ru" ? Xy() : e === "uk" ? Yy() : Jy()
   },
-  Zw = () => "Too many attempts. Please try again later",
+  Zy = () => "Too many attempts. Please try again later",
   eb = () => "Muitas tentativas. Por favor, tente novamente mais tarde.",
   tb = () => "尝试次数过多，请稍后再试",
   nb = () => "Zu viele Versuche. Bitte versuchen Sie es später erneut",
@@ -5885,7 +5885,7 @@ const ks = () => "Your account has been suspended for breaking the rules",
   lb = () => "Quá nhiều lần thử. Vui lòng thử lại sau.",
   gr = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? Zw() : e === "pt" ? eb() : e === "ch" ? tb() : e === "de" ? nb() : e === "es" ? rb() : e === "fr" ? ob() : e === "it" ? ab() : e === "jp" ? ib() : e === "pl" ? sb() : e === "ru" ? cb() : e === "uk" ? ub() : lb()
+    return e === "en" ? Zy() : e === "pt" ? eb() : e === "ch" ? tb() : e === "de" ? nb() : e === "es" ? rb() : e === "fr" ? ob() : e === "it" ? ab() : e === "jp" ? ib() : e === "pl" ? sb() : e === "ru" ? cb() : e === "uk" ? ub() : lb()
   },
   db = () => "Access through Tor or anonymous networks is not allowed. Please connect from a regular network to continue.",
   _b = () => "O acesso através do Tor ou redes anônimas não é permitido. Por favor, conecte-se a partir de uma rede comum para continuar.",
@@ -5894,14 +5894,14 @@ const ks = () => "Your account has been suspended for breaking the rules",
   mb = () => "No se permite el acceso a través de Tor o redes anónimas. Por favor, conéctate desde una red normal para continuar.",
   hb = () => "L'accès via Tor ou des réseaux anonymes n'est pas autorisé. Veuillez vous connecter depuis un réseau normal pour continuer.",
   gb = () => "L'accesso tramite Tor o reti anonime non è consentito. Connettiti da una rete normale per continuare.",
-  yb = () => "Torまたは匿名ネットワーク経由でのアクセスは許可されていません。続行するには通常のネットワークから接続してください。",
-  wb = () => "Dostęp przez Tor lub sieci anonimowe jest niedozwolony. Aby kontynuować, połącz się ze zwykłej sieci.",
+  wb = () => "Torまたは匿名ネットワーク経由でのアクセスは許可されていません。続行するには通常のネットワークから接続してください。",
+  yb = () => "Dostęp przez Tor lub sieci anonimowe jest niedozwolony. Aby kontynuować, połącz się ze zwykłej sieci.",
   bb = () => "Доступ через Tor или анонимные сети не разрешён. Пожалуйста, подключитесь из обычной сети, чтобы продолжить.",
   vb = () => "Доступ через Tor або анонімні мережі заборонено. Будь ласка, підключіться зі звичайної мережі, щоб продовжити.",
   Eb = () => "Không cho phép truy cập qua Tor hoặc các mạng ẩn danh. Vui lòng kết nối từ mạng thông thường để tiếp tục.",
   Tb = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? db() : e === "pt" ? _b() : e === "ch" ? fb() : e === "de" ? pb() : e === "es" ? mb() : e === "fr" ? hb() : e === "it" ? gb() : e === "jp" ? yb() : e === "pl" ? wb() : e === "ru" ? bb() : e === "uk" ? vb() : Eb()
+    return e === "en" ? db() : e === "pt" ? _b() : e === "ch" ? fb() : e === "de" ? pb() : e === "es" ? mb() : e === "fr" ? hb() : e === "it" ? gb() : e === "jp" ? wb() : e === "pl" ? yb() : e === "ru" ? bb() : e === "uk" ? vb() : Eb()
   },
   Sb = () => "The typed username does not match your current username.",
   Ab = () => "O nome de usuário digitado não corresponde ao seu nome de usuário atual.",
@@ -5961,11 +5961,11 @@ const ks = () => "Your account has been suspended for breaking the rules",
   m1 = () => "VPNまたはプロキシが検出されました。VPNを無効にしてもう一度お試しください。",
   h1 = () => "Wykryto VPN lub proxy. Wyłącz VPN i spróbuj ponownie.",
   g1 = () => "Обнаружен VPN или прокси. Пожалуйста, отключите VPN и попробуйте снова.",
-  y1 = () => "Виявлено VPN або проксі. Будь ласка, вимкніть VPN і спробуйте знову.",
-  w1 = () => "Phát hiện VPN hoặc proxy. Vui lòng tắt VPN và thử lại.",
+  w1 = () => "Виявлено VPN або проксі. Будь ласка, вимкніть VPN і спробуйте знову.",
+  y1 = () => "Phát hiện VPN hoặc proxy. Vui lòng tắt VPN và thử lại.",
   b1 = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? c1() : e === "pt" ? u1() : e === "ch" ? l1() : e === "de" ? d1() : e === "es" ? _1() : e === "fr" ? f1() : e === "it" ? p1() : e === "jp" ? m1() : e === "pl" ? h1() : e === "ru" ? g1() : e === "uk" ? y1() : w1()
+    return e === "en" ? c1() : e === "pt" ? u1() : e === "ch" ? l1() : e === "de" ? d1() : e === "es" ? _1() : e === "fr" ? f1() : e === "it" ? p1() : e === "jp" ? m1() : e === "pl" ? h1() : e === "ru" ? g1() : e === "uk" ? w1() : y1()
   },
   v1 = () => "Failed to load WebAssembly module. Try to use another browser.",
   E1 = () => "Erro ao carregar módulo WebAssembly. Tente usar outro navegador.",
@@ -5995,7 +5995,7 @@ const ks = () => "Your account has been suspended for breaking the rules",
   W1 = () => "У вас уже есть этот предмет. Обновите страницу.",
   V1 = () => "У вас уже є цей предмет. Оновіть сторінку.",
   z1 = () => "Bạn đã sở hữu vật phẩm này. Hãy tải lại trang.",
-  yr = (n = {}, t = {}) => {
+  wr = (n = {}, t = {}) => {
     const e = t.locale ?? O();
     return e === "en" ? x1() : e === "pt" ? L1() : e === "ch" ? M1() : e === "de" ? B1() : e === "es" ? H1() : e === "fr" ? U1() : e === "it" ? F1() : e === "jp" ? j1() : e === "pl" ? G1() : e === "ru" ? W1() : e === "uk" ? V1() : z1()
   },
@@ -6032,8 +6032,8 @@ const ks = () => "Your account has been suspended for breaking the rules",
     return e === "en" ? a0() : e === "pt" ? i0() : e === "ch" ? s0() : e === "de" ? c0() : e === "es" ? u0() : e === "fr" ? l0() : e === "it" ? d0() : e === "jp" ? _0() : e === "pl" ? f0() : e === "ru" ? p0() : e === "uk" ? m0() : h0()
   },
   g0 = () => "You do not have enough Droplets to buy this item.",
-  y0 = () => "Você não tem Droplets suficientes para comprar este item.",
-  w0 = () => "你的 Droplets 不足，无法购买此物品。",
+  w0 = () => "Você não tem Droplets suficientes para comprar este item.",
+  y0 = () => "你的 Droplets 不足，无法购买此物品。",
   b0 = () => "Du hast nicht genug Droplets, um dieses Item zu kaufen.",
   v0 = () => "No tienes suficientes Droplets para comprar este ítem.",
   E0 = () => "Vous n’avez pas assez de Droplets pour acheter cet objet.",
@@ -6043,9 +6043,9 @@ const ks = () => "Your account has been suspended for breaking the rules",
   O0 = () => "У вас недостаточно Droplets для покупки этого предмета.",
   R0 = () => "У вас недостатньо Droplets, щоб купити цей предмет.",
   D0 = () => "Bạn không có đủ Droplets để mua vật phẩm này.",
-  wr = (n = {}, t = {}) => {
+  yr = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? g0() : e === "pt" ? y0() : e === "ch" ? w0() : e === "de" ? b0() : e === "es" ? v0() : e === "fr" ? E0() : e === "it" ? T0() : e === "jp" ? S0() : e === "pl" ? A0() : e === "ru" ? O0() : e === "uk" ? R0() : D0()
+    return e === "en" ? g0() : e === "pt" ? w0() : e === "ch" ? y0() : e === "de" ? b0() : e === "es" ? v0() : e === "fr" ? E0() : e === "it" ? T0() : e === "jp" ? S0() : e === "pl" ? A0() : e === "ru" ? O0() : e === "uk" ? R0() : D0()
   },
   I0 = () => "You need to be logged in to paint",
   N0 = () => "Você precisa estar conectado para pintar",
@@ -6101,15 +6101,15 @@ const ks = () => "Your account has been suspended for breaking the rules",
   mv = () => "Für dieses Ticket ist bereits eine Korrektur in Arbeit.",
   hv = () => "Ya hay una corrección pendiente para este ticket.",
   gv = () => "Une correction est déjà en attente pour ce ticket.",
-  yv = () => "Una correzione è già in sospeso per questo ticket.",
-  wv = () => "このチケットには未処理の修正があります。",
+  wv = () => "Una correzione è già in sospeso per questo ticket.",
+  yv = () => "このチケットには未処理の修正があります。",
   bv = () => "Dla tego zgłoszenia istnieje już oczekująca prośba o poprawkę.",
   vv = () => "Для этого тикета уже есть запрос на исправление.",
   Ev = () => "Для цього тікета вже є запит на перевірці.",
   Tv = () => "Đã có yêu cầu sửa đang chờ cho ticket này.",
   Sv = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? _v() : e === "pt" ? fv() : e === "ch" ? pv() : e === "de" ? mv() : e === "es" ? hv() : e === "fr" ? gv() : e === "it" ? yv() : e === "jp" ? wv() : e === "pl" ? bv() : e === "ru" ? vv() : e === "uk" ? Ev() : Tv()
+    return e === "en" ? _v() : e === "pt" ? fv() : e === "ch" ? pv() : e === "de" ? mv() : e === "es" ? hv() : e === "fr" ? gv() : e === "it" ? wv() : e === "jp" ? yv() : e === "pl" ? bv() : e === "ru" ? vv() : e === "uk" ? Ev() : Tv()
   },
   Av = () => "You cannot review your own correction request.",
   Ov = () => "Você não pode revisar sua própria solicitação de correção.",
@@ -6178,7 +6178,7 @@ const YE = {
     other: pu()
   },
   JE = {
-    doxxing: wd(),
+    doxxing: yd(),
     "hate-speech": Gf(),
     griefing: hf(),
     "multi-accounting": ig(),
@@ -6919,7 +6919,7 @@ class uE {
     if (r.status === l.BAD_REQUEST) {
       const o = await r.json(),
         a = (o == null ? void 0 : o.error) ?? "";
-      throw a === "timelapse_too_many_events" ? new b(Uw(), l.BAD_REQUEST) : new b(typeof a == "string" && a ? a : m(), l.BAD_REQUEST)
+      throw a === "timelapse_too_many_events" ? new b(Uy(), l.BAD_REQUEST) : new b(typeof a == "string" && a ? a : m(), l.BAD_REQUEST)
     }
     if (r.status !== l.OK) throw new b(m(), r.status);
     return r.arrayBuffer()
@@ -6949,8 +6949,8 @@ class uE {
     const a = Tr(t, c => `t=(${c.tile[0]},${c.tile[1]}),s=${c.season}`),
       s = (await Promise.all(Object.values(a).map(async c => {
         const [_, u] = c[0].tile, p = c[0].season, f = {
-          colors: c.map(y => y.colorIdx),
-          coords: c.flatMap(y => y.pixel),
+          colors: c.map(w => w.colorIdx),
+          coords: c.flatMap(w => w.pixel),
           csid: r
         }, d = JSON.stringify(f), g = e(p, _, u), h = await pt.getHeaders(d);
         return this.request(g, {
@@ -6991,7 +6991,7 @@ class uE {
     });
     if (s.status === l.FORBIDDEN) {
       const c = await s.json().catch(() => null);
-      if (typeof(c == null ? void 0 : c.charges) == "number") throw new Error(gy({
+      if (typeof(c == null ? void 0 : c.charges) == "number") throw new Error(gw({
         charges: Math.floor(c.charges),
         pixels: t.length
       }));
@@ -7127,10 +7127,10 @@ class uE {
       throwOnStatus: !1
     });
     if (e.status === l.BAD_REQUEST) throw new Error(Bm());
-    if (e.status === l.CONFLICT) throw new Error(Gy());
+    if (e.status === l.CONFLICT) throw new Error(Gw());
     if (e.status === l.FORBIDDEN) throw new Error(zg());
     if (e.status === l.TOO_MANY_REQUESTS) throw new Error(gr());
-    if (e.status === l.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(tw());
+    if (e.status === l.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(ty());
     if (e.status === l.LOCKED) throw new Error(s1());
     if (e.status === l.UNPROCESSABLE_ENTITY) throw new Error(Ym());
     if (e.status === l.NOT_ACCEPTABLE) throw new Error(b1());
@@ -7188,7 +7188,7 @@ class uE {
       if (o === "invalid_discord") throw new Error(_m());
       if (typeof o == "string" && o.startsWith("name_change_cooldown:")) {
         const a = parseInt(o.split(":")[1] ?? "0", 10);
-        throw new Error(wg({
+        throw new Error(yg({
           days: a
         }))
       }
@@ -7215,7 +7215,7 @@ class uE {
       }),
       credentials: "include"
     });
-    if (e.status === l.FORBIDDEN) throw new Error(oy());
+    if (e.status === l.FORBIDDEN) throw new Error(ow());
     if (e.status !== l.OK) throw new Error(m())
   }
   async deleteFavoriteLocation(t) {
@@ -7299,7 +7299,7 @@ class uE {
         product: t
       })
     });
-    if (e.status !== l.OK) throw e.status === l.NOT_FOUND ? new Error(_r()) : e.status === l.FORBIDDEN ? new Error(wr()) : e.status === l.CONFLICT ? new Error(yr()) : new Error(m())
+    if (e.status !== l.OK) throw e.status === l.NOT_FOUND ? new Error(_r()) : e.status === l.FORBIDDEN ? new Error(yr()) : e.status === l.CONFLICT ? new Error(wr()) : new Error(m())
   }
   async getAlliance() {
     const t = await this.request("/alliance", {
@@ -7732,8 +7732,8 @@ class uE {
     }
     if ((e == null ? void 0 : e.throwOnStatus) ?? !0) {
       if (r.status === l.TOO_MANY_REQUESTS) throw new Error(Z0());
-      if (r.status === l.REQUEST_TIMEOUT) throw new Error(Ow());
-      if (r.status === l.SERVICE_UNAVAILABLE) throw new Error(Qw())
+      if (r.status === l.REQUEST_TIMEOUT) throw new Error(Oy());
+      if (r.status === l.SERVICE_UNAVAILABLE) throw new Error(Qy())
     }
     return r
   }
@@ -8456,8 +8456,8 @@ class uE {
       credentials: "include"
     });
     if (e.status === l.NOT_FOUND) throw new Error(_r());
-    if (e.status === l.FORBIDDEN) throw new Error(wr());
-    if (e.status === l.CONFLICT) throw new Error(yr());
+    if (e.status === l.FORBIDDEN) throw new Error(yr());
+    if (e.status === l.CONFLICT) throw new Error(wr());
     if (e.status !== l.OK) throw new Error(m())
   }
   async postEquipCosmetics(t) {
@@ -8581,10 +8581,10 @@ function lE(n) {
     s = Number.NEGATIVE_INFINITY;
   const c = n.map(g => {
       const h = Math.round(g.tile[0] * r + g.pixel[0]),
-        y = Math.round(g.tile[1] * r + g.pixel[1]);
-      return h < o && (o = h), y < a && (a = y), h > i && (i = h), y > s && (s = y), {
+        w = Math.round(g.tile[1] * r + g.pixel[1]);
+      return h < o && (o = h), w < a && (a = w), h > i && (i = h), w > s && (s = w), {
         x: h,
-        y,
+        y: w,
         colorIdx: g.colorIdx
       }
     }),
@@ -8595,15 +8595,15 @@ function lE(n) {
   for (const {
       x: g,
       y: h,
-      colorIdx: y
+      colorIdx: w
     }
     of c) {
-    const C = (d = Nn.colors) == null ? void 0 : d[y];
-    if (!C) throw new Error(`Unknown palette color index: ${y}`);
+    const C = (d = Nn.colors) == null ? void 0 : d[w];
+    if (!C) throw new Error(`Unknown palette color index: ${w}`);
     const T = g - o,
       S = ((h - a) * _ + T) * 4,
-      [N, A, w] = C.rgb;
-    p[S] = N, p[S + 1] = A, p[S + 2] = w, p[S + 3] = y === 0 ? 1 : 255
+      [N, A, y] = C.rgb;
+    p[S] = N, p[S + 1] = A, p[S + 2] = y, p[S + 3] = w === 0 ? 1 : 255
   }
   return {
     data: p,
@@ -8874,8 +8874,8 @@ class uT {
   }
 }
 cn = new WeakMap;
-const yE = gE,
-  wE = Object.assign(yE, {
+const wE = gE,
+  yE = Object.assign(wE, {
     success: Ae.success,
     info: Ae.info,
     warning: Ae.warning,
@@ -8978,7 +8978,7 @@ class bE {
         id: this.data.id
       }), pt.setUserId(this.data.id)), !!this.data
     } catch (r) {
-      return console.error(r), wE.warning(kg(), {
+      return console.error(r), yE.warning(kg(), {
         duration: 1e4
       }), !1
     } finally {
@@ -9013,12 +9013,12 @@ xe.push(void 0, null, !0, !1);
 function j(n) {
   return xe[n]
 }
-let yt = xe.length;
+let wt = xe.length;
 
 function J(n) {
-  yt === xe.length && xe.push(xe.length + 1);
-  const t = yt;
-  return yt = xe[t], xe[t] = n, t
+  wt === xe.length && xe.push(xe.length + 1);
+  const t = wt;
+  return wt = xe[t], xe[t] = n, t
 }
 
 function Me(n, t) {
@@ -9052,7 +9052,7 @@ function Zt(n, t) {
 }
 
 function vE(n) {
-  n < 132 || (xe[n] = yt, yt = n)
+  n < 132 || (xe[n] = wt, wt = n)
 }
 
 function Ar(n) {
@@ -9506,5 +9506,5 @@ class ME {
 }
 const pt = new xE;
 export {
-  iT as $, vs as A, sE as B, to as C, o_ as D, ur as E, bn as F, jE as G, pp as H, Gf as I, wd as J, tu as K, ig as L, hf as M, GE as N, WE as O, rT as P, aT as Q, XE as R, oT as S, Ue as T, P1 as U, Mb as V, sT as W, eT as X, JE as Y, tT as Z, ZE as _, je as a, nT as a0, Rp as a1, Nn as b, m as c, YE as d, id as e, Gc as f, nf as g, If as h, tp as i, Yr as j, Bv as k, Ae as l, qh as m, cT as n, uT as o, KE as p, qE as q, Te as r, QE as s, wE as t, at as u, zE as v, VE as w, $E as x, pt as y, Va as z
+  iT as $, vs as A, sE as B, to as C, o_ as D, ur as E, bn as F, jE as G, pp as H, Gf as I, yd as J, tu as K, ig as L, hf as M, GE as N, WE as O, rT as P, aT as Q, XE as R, oT as S, Ue as T, P1 as U, Mb as V, sT as W, eT as X, JE as Y, tT as Z, ZE as _, je as a, nT as a0, Rp as a1, Nn as b, m as c, YE as d, id as e, Gc as f, nf as g, If as h, tp as i, Yr as j, Bv as k, Ae as l, qh as m, cT as n, uT as o, KE as p, qE as q, Te as r, QE as s, yE as t, at as u, zE as v, VE as w, $E as x, pt as y, Va as z
 };
