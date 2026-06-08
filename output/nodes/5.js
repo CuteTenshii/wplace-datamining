@@ -100,10 +100,10 @@ import {
 import {
   g as uu,
   c as P3
-} from "../chunks/fZuoBnSO.js";
+} from "../chunks/D85_AJ_u.js";
 import {
   p as es
-} from "../chunks/BWh-rUxI.js";
+} from "../chunks/Bocbqlcy.js";
 import {
   f as Gx,
   g as Wx,
@@ -124,7 +124,7 @@ import {
   P as A3,
   c as D3,
   d as L3
-} from "../chunks/CgQzEIQf.js";
+} from "../chunks/poj9wpKh.js";
 import {
   b as ba,
   N as R3,
@@ -433,7 +433,7 @@ import {
 } from "../chunks/lSLusnBY.js";
 import {
   r as Km
-} from "../chunks/stXigQ6P.js";
+} from "../chunks/d-eReu2t.js";
 import {
   c as GT
 } from "../chunks/BZcJYfQJ.js";
@@ -64093,8 +64093,8 @@ function oJe(m, s) {
           })
         }
         ue((Lr, pr) => {
-          mr(jr, 1, `btn btn-xs flex min-w-0 gap-0.5 text-xs ${Lr??""}`), It(Ar, "data-tip", l(Zt).name), X(nn, l(Zt).flag), mr(tt, 1, `max-w-20 truncate ${pr??""}`), X(yn, l(Fe).name), X(Dt, `#${l(Fe).number??""}`)
-        }, [() => ps(l(Fe).cityId), () => ht.hasPermission(ya.tools.wayback) ? "sm:max-w-22" : "sm:max-w-28"]), Ve("click", jr, () => s.onclickregion(l(Fe))), B(nt, vr)
+          mr(jr, 1, `btn btn-xs flex min-w-0 gap-0.5 text-xs ${Lr??""}`), It(Ar, "data-tip", l(Zt).name), X(nn, l(Zt).flag), mr(tt, 1, `max-w-18 truncate ${pr??""}`), X(yn, l(Fe).name), X(Dt, `#${l(Fe).number??""}`)
+        }, [() => ps(l(Fe).cityId), () => ht.hasPermission(ya.tools.wayback) ? "sm:max-w-16" : "sm:max-w-26"]), Ve("click", jr, () => s.onclickregion(l(Fe))), B(nt, vr)
       },
       Gt = nt => {
         var Fe = tJe();
