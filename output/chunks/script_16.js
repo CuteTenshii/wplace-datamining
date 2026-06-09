@@ -570,7 +570,7 @@ function Vo(n, t) {
 function zo(n, t) {
   Wo().setContext(n, t)
 }
-const $o = "" + new URL("../assets/pawtect_wasm_bg.Ckfht_86.wasm", import.meta.url).href;
+const $o = "" + new URL("../assets/pawtect_wasm_bg.CWpZRce-.wasm", import.meta.url).href;
 var qo = "2.0.0";
 const U = {
   Awesomium: "awesomium",
@@ -4751,7 +4751,7 @@ async function vs() {
       i = r.map(f => f.slice(0, a)).join(""),
       s = o % r.length,
       c = r.slice(0, s).map(f => f[a] ?? "0").join("");
-    return i + c + "00"
+    return i + c
   })(), Kt
 }
 const cr = "theme";
