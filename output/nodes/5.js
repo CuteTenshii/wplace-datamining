@@ -100,10 +100,10 @@ import {
 import {
   g as vu,
   c as p3
-} from "../chunks/B722qvvy.js";
+} from "../chunks/CpPh6IiI.js";
 import {
   p as ls
-} from "../chunks/CxlUm8hf.js";
+} from "../chunks/DCUED91M.js";
 import {
   f as g1,
   g as v1,
@@ -124,7 +124,7 @@ import {
   P as y3,
   c as b3,
   d as x3
-} from "../chunks/BAeqWyjP.js";
+} from "../chunks/D_ce3w2X.js";
 import {
   b as Ca,
   N as w3,
@@ -433,7 +433,7 @@ import {
 } from "../chunks/lSLusnBY.js";
 import {
   r as hg
-} from "../chunks/BUFF0XNl.js";
+} from "../chunks/CQWHo64Q.js";
 import {
   c as AT
 } from "../chunks/BZcJYfQJ.js";
@@ -49110,7 +49110,7 @@ function mXe(p, a) {
         "circle-stroke-color": "#f97316",
         "circle-stroke-opacity": l(qe),
         "circle-stroke-width": 1.5,
-        "circle-radius": ["step", ["get", "point_count"], 24, 3, 40, 6, 58, 9, 80]
+        "circle-radius": ["step", ["get", "point_count"], 0, 3, 25, 6, 30, 9, 40]
       }
     }), a.map.getLayer(I) || a.map.addLayer({
       id: I,
@@ -49120,7 +49120,7 @@ function mXe(p, a) {
         "icon-image": ["case", ["has", "point_count"],
           ["concat", "hotspot-badge-", ["to-string", ["min", ["get", "point_count"], U]]], M(1)
         ],
-        "icon-size": ["step", ["coalesce", ["get", "point_count"], 1], .65, 3, 1.1, 6, 1.7, 9, 2.5],
+        "icon-size": ["step", ["coalesce", ["get", "point_count"], 1], .65, 3, .8, 6, .95, 9, 1.05],
         "icon-allow-overlap": !0
       },
       paint: {
@@ -51377,7 +51377,7 @@ async function y$e(p, a) {
   }
   return z_.fromJson(Rw(e), a)
 }
-const b$e = globalThis.__sveltekit_49ntu9.env,
+const b$e = globalThis.__sveltekit_dueol8.env,
   Ag = b$e.PUBLIC_GOOGLE_DRIVE_CLIENT_ID ?? "",
   o1 = "https://accounts.google.com/gsi/client",
   x$e = "https://www.googleapis.com/auth/drive.appdata",
