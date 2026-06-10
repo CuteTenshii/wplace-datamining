@@ -3,32 +3,32 @@ import {
   k as G,
   p as I,
   b as J,
-  t as g,
-  i as w,
+  t as x,
+  i as k,
   l as K,
-  h as T,
-  a as f,
+  h as B,
+  a as d,
   d as e,
-  s as d,
-  c as p,
+  s as f,
+  c as u,
   e as L,
-  r
+  r as o
 } from "./Dbe4PVAU.js";
 import {
   s as l
 } from "./C_mo-lyU.js";
 import {
-  i as j
+  i as T
 } from "./Icl9dwnj.js";
 import {
   a as M
 } from "./B7_gUtXa.js";
 import {
-  p as _
+  p as g
 } from "./K9AHFDoV.js";
 import {
   D as N
-} from "./MHTwTb88.js";
+} from "./C1Jr-MXI.js";
 import "./BhCkpOlh.js";
 import {
   c as O
@@ -36,78 +36,79 @@ import {
 import {
   c as Q
 } from "./BZcJYfQJ.js";
-var R = p('<h3 class="text-xl font-bold"> </h3>'),
-  S = p('<p class="text-base-content/80 mt-1 text-sm"> </p>'),
-  U = p('<span class="loading loading-spinner center-absolute absolute"></span>'),
-  V = p('<div><p class="text-lg"> </p> <!> <div class="mt-6 flex justify-end gap-3 pb-2"><form method="dialog"><button class="btn btn-ghost hover:bg-base-content/10"> </button></form> <button> <!></button></div></div>');
+var R = u('<h3 class="text-xl font-bold"> </h3>'),
+  S = u('<p class="text-base-content/80 mt-1 text-sm"> </p>'),
+  U = u('<span class="loading loading-spinner center-absolute absolute"></span>'),
+  V = u('<div><p class="text-lg"> </p> <!> <div class="mt-6 flex justify-end gap-3 pb-2"><form method="dialog"><button class="btn btn-ghost hover:bg-base-content/10"> </button></form> <button> <!></button></div></div>');
 
-function nt(B, t) {
+function nt(j, t) {
   I(t, !0);
-  let v = _(t, "open", 15),
-    h = _(t, "type", 3, "confirmation"),
-    H = _(t, "buttonText", 19, () => Q()),
+  let v = g(t, "open", 15),
+    h = g(t, "type", 3, "confirmation"),
+    H = g(t, "buttonText", 19, () => Q()),
     m = L(!1);
-  N(B, {
+  N(j, {
     dialogClass: "!bg-black/80",
+    modalBoxClass: "max-w-md max-sm:!w-11/12 max-sm:!h-auto max-sm:!max-w-md max-sm:!max-h-[85vh] max-sm:!rounded-xl",
     hasCloseButton: !1,
     isDynamicHeight: !0,
     get open() {
       return v()
     },
-    set open(o) {
-      v(o)
+    set open(r) {
+      v(r)
     },
-    header: o => {
+    header: r => {
       var c = R(),
         s = e(c, !0);
-      r(c), g(() => l(s, t.title)), f(o, c)
+      o(c), x(() => l(s, t.title)), d(r, c)
     },
-    children: (o, c) => {
+    children: (r, c) => {
       var s = V(),
-        b = e(s),
-        P = e(b, !0);
-      r(b);
-      var x = d(b, 2);
+        p = e(s),
+        P = e(p, !0);
+      o(p);
+      var _ = f(p, 2);
       {
         var q = a => {
           var i = S(),
             F = e(i, !0);
-          r(i), g(() => l(F, t.subDescription)), f(a, i)
+          o(i), x(() => l(F, t.subDescription)), d(a, i)
         };
-        j(x, a => {
+        T(_, a => {
           t.subDescription && a(q)
         })
       }
-      var y = d(x, 2),
-        u = e(y),
-        D = e(u),
-        z = e(D, !0);
-      r(D), r(u);
-      var n = d(u, 2);
-      let k;
-      var C = e(n),
-        A = d(C);
+      var y = f(_, 2),
+        b = e(y),
+        w = e(b),
+        z = e(w, !0);
+      o(w), o(b);
+      var n = f(b, 2);
+      let C;
+      var D = e(n),
+        A = f(D);
       {
         var E = a => {
           var i = U();
-          f(a, i)
+          d(a, i)
         };
-        j(A, a => {
-          w(m) && a(E)
+        T(A, a => {
+          k(m) && a(E)
         })
       }
-      r(n), r(y), r(s), g(a => {
-        l(P, t.description), l(z, a), k = M(n, 1, "btn min-w-32 px-6", null, k, {
+      o(n), o(y), o(s), x(a => {
+        l(P, t.description), l(z, a), C = M(n, 1, "btn min-w-32 px-6", null, C, {
           "btn-error": h() === "warning",
           "btn-primary": h() === "confirmation"
-        }), n.disabled = w(m), l(C, `${H()??""} `)
+        }), n.disabled = k(m), l(D, `${H()??""} `)
       }, [() => O()]), K("click", n, async () => {
         try {
-          T(m, !0), v(await t.onConfirm())
+          B(m, !0), v(await t.onConfirm())
         } finally {
-          T(m, !1)
+          B(m, !1)
         }
-      }), f(o, s)
+      }), d(r, s)
     },
     $$slots: {
       header: !0,

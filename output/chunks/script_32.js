@@ -1,161 +1,173 @@
 import "./Bzak7iHL.js";
 import {
-  p as Z,
-  t as M,
-  v as $,
-  a as l,
-  b as ee,
-  i as ae,
-  c as i,
-  u as te,
-  d as o,
-  s as v,
-  aJ as j,
-  r,
-  I as oe,
-  f as z
+  p as re,
+  t as E,
+  v as te,
+  a as s,
+  b as oe,
+  i as se,
+  c as l,
+  u as ie,
+  d as t,
+  s as m,
+  aJ as k,
+  r as o,
+  I as le,
+  f as q
 } from "./Dbe4PVAU.js";
 import {
-  s as re
+  s as ne
 } from "./C_mo-lyU.js";
 import {
-  s as y
+  s as u
 } from "./2Od2egA-.js";
 import {
-  i as c
+  i as f
 } from "./Icl9dwnj.js";
 import {
-  e as se,
-  c as I,
-  a as w
+  e as de,
+  c as F,
+  a as B
 } from "./B7_gUtXa.js";
 import {
-  b as le
+  b as me
 } from "./BVz9wMiQ.js";
 import {
-  p as s
+  p as i
 } from "./K9AHFDoV.js";
 import "./BhCkpOlh.js";
 import {
-  c as ie
+  c as fe
 } from "./BKBS1EOp.js";
 import {
-  t as J
+  t as G
 } from "./CPcsbTWB.js";
-var ne = i('<form method="dialog"><button class="btn btn-sm btn-circle">✕</button></form>'),
-  de = i('<div class="flex items-center"></div> <div class="flex items-center justify-center overflow-hidden text-center"><!></div> <div class="flex items-start justify-end pt-1"><!></div>', 1),
-  me = i('<form method="dialog" class="ml-2 self-start pt-1 sm:translate-x-2"><button class="btn btn-sm btn-circle">✕</button></form>'),
-  fe = i('<div class="flex flex-1 items-center gap-3 overflow-hidden"><!></div> <!>', 1),
-  ve = i("<header><!></header>"),
-  ce = i('<footer class="shrink-0 px-4 py-4 sm:px-6"><!></footer>'),
-  _e = i('<form method="dialog" class="modal-backdrop"><button> </button></form>'),
-  xe = i('<dialog closedby="any"><div><!> <div><!></div> <!></div> <!></dialog>');
+var ve = l('<form method="dialog"><button class="btn btn-sm btn-circle">✕</button></form>'),
+  ce = l('<div class="flex items-center"></div> <div class="flex items-center justify-center overflow-hidden text-center"><!></div> <div class="flex items-start justify-end pt-1"><!></div>', 1),
+  _e = l('<form method="dialog"><button class="btn btn-sm btn-circle">✕</button></form>'),
+  xe = l('<div class="ml-2 flex flex-col items-end gap-2 self-start pt-1 sm:translate-x-2"><!> <!></div>'),
+  he = l('<div class="flex flex-1 items-center gap-3 overflow-hidden"><!></div> <!>', 1),
+  be = l("<header><!></header>"),
+  ue = l('<footer class="shrink-0 px-4 py-4 sm:px-6"><!></footer>'),
+  ge = l('<form method="dialog" class="modal-backdrop"><button> </button></form>'),
+  ye = l('<dialog closedby="any"><div><!> <div><!></div> <!></div> <!></dialog>');
 
-function Me(q, a) {
-  Z(a, !0);
-  let A = s(a, "open", 15),
-    F = s(a, "hasBackdrop", 3, !0),
-    C = s(a, "hasCloseButton", 3, !0),
-    G = s(a, "hasHeaderBorder", 3, !0),
-    p = s(a, "centerHeader", 3, !1),
-    K = s(a, "isDynamicHeight", 3, !1),
-    N = s(a, "useModalLayer", 3, !0),
-    E = s(a, "contentEl", 15),
-    O = s(a, "disableCloseAnimation", 3, !1);
-  const P = "modal-box p-0 flex flex-col w-11/12 max-h-11/12 rounded-xl",
-    Q = "max-sm:!w-full max-sm:!h-full max-sm:!max-w-none max-sm:!max-h-none max-sm:!rounded-none",
-    R = te(() => J(P, !K() && "h-11/12", Q, a.modalBoxClass));
-  var d = xe(),
-    u = o(d),
-    L = o(u);
+function ze(K, e) {
+  re(e, !0);
+  let L = i(e, "open", 15),
+    N = i(e, "hasBackdrop", 3, !0),
+    g = i(e, "hasCloseButton", 3, !0),
+    O = i(e, "hasHeaderBorder", 3, !0),
+    z = i(e, "centerHeader", 3, !1),
+    P = i(e, "isDynamicHeight", 3, !1),
+    Q = i(e, "useModalLayer", 3, !0),
+    I = i(e, "contentEl", 15),
+    R = i(e, "disableCloseAnimation", 3, !1);
+  const S = "modal-box p-0 flex flex-col w-11/12 max-h-11/12 rounded-xl",
+    T = "max-sm:!w-full max-sm:!h-full max-sm:!max-w-none max-sm:!max-h-none max-sm:!rounded-none",
+    U = ie(() => G(S, !P() && "h-11/12", T, e.modalBoxClass));
+  var v = ye(),
+    y = t(v),
+    J = t(y);
   {
-    var S = e => {
-      var t = ve(),
-        m = o(t);
+    var V = a => {
+      var r = be(),
+        c = t(r);
       {
-        var k = f => {
-            var x = de(),
-              n = v(z(x), 2),
-              H = o(n);
-            y(H, () => a.header ?? j), r(n);
-            var g = v(n, 2),
-              D = o(g);
+        var H = _ => {
+            var h = ce(),
+              n = m(q(h), 2),
+              D = t(n);
+            u(D, () => e.header ?? k), o(n);
+            var w = m(n, 2),
+              M = t(w);
             {
-              var b = h => {
-                var Y = ne();
-                l(h, Y)
+              var b = d => {
+                var C = ve();
+                s(d, C)
               };
-              c(D, h => {
-                C() && h(b)
+              f(M, d => {
+                g() && d(b)
               })
             }
-            r(g), l(f, x)
+            o(w), s(_, h)
           },
-          B = f => {
-            var x = fe(),
-              n = z(x),
-              H = o(n);
-            y(H, () => a.header ?? j), r(n);
-            var g = v(n, 2);
+          A = _ => {
+            var h = he(),
+              n = q(h),
+              D = t(n);
+            u(D, () => e.header ?? k), o(n);
+            var w = m(n, 2);
             {
-              var D = b => {
-                var h = me();
-                l(b, h)
+              var M = b => {
+                var d = xe(),
+                  C = t(d);
+                {
+                  var $ = j => {
+                    var ae = _e();
+                    s(j, ae)
+                  };
+                  f(C, j => {
+                    g() && j($)
+                  })
+                }
+                var ee = m(C, 2);
+                u(ee, () => e.headerAction ?? k), o(d), s(b, d)
               };
-              c(g, b => {
-                C() && b(D)
+              f(w, b => {
+                (g() || e.headerAction) && b(M)
               })
             }
-            l(f, x)
+            s(_, h)
           };
-        c(m, f => {
-          p() ? f(k) : f(B, !1)
+        f(c, _ => {
+          z() ? _(H) : _(A, !1)
         })
       }
-      r(t), M(() => w(t, 1, `bg-base-100/70 sticky top-0 z-40 flex shrink-0 items-center justify-between px-4 py-4 backdrop-blur sm:px-6 ${G()?"border-base-content/10 border-b":""} ${p()?"grid grid-cols-[2.5rem_1fr_2.5rem] px-4":""}`)), l(e, t)
+      o(r), E(() => B(r, 1, `bg-base-100/70 sticky top-0 z-40 flex shrink-0 items-center justify-between px-4 py-4 backdrop-blur sm:px-6 ${O()?"border-base-content/10 border-b":""} ${z()?"grid grid-cols-[2.5rem_1fr_2.5rem] px-4":""}`)), s(a, r)
     };
-    c(L, e => {
-      (a.header || C()) && e(S)
+    f(J, a => {
+      (e.header || g()) && a(V)
     })
   }
-  var _ = v(L, 2),
-    T = o(_);
-  y(T, () => a.children ?? j), r(_), le(_, e => E(e), () => E());
-  var U = v(_, 2);
+  var x = m(J, 2),
+    W = t(x);
+  u(W, () => e.children ?? k), o(x), me(x, a => I(a), () => I());
+  var X = m(x, 2);
   {
-    var V = e => {
-      var t = ce(),
-        m = o(t);
-      y(m, () => a.footer), r(t), l(e, t)
+    var Y = a => {
+      var r = ue(),
+        c = t(r);
+      u(c, () => e.footer), o(r), s(a, r)
     };
-    c(U, e => {
-      a.footer && e(V)
+    f(X, a => {
+      e.footer && a(Y)
     })
   }
-  r(u);
-  var W = v(u, 2);
+  o(y);
+  var Z = m(y, 2);
   {
-    var X = e => {
-      var t = _e(),
-        m = o(t),
-        k = o(m, !0);
-      r(m), r(t), M(B => re(k, B), [() => ie()]), l(e, t)
+    var p = a => {
+      var r = ge(),
+        c = t(r),
+        H = t(c, !0);
+      o(c), o(r), E(A => ne(H, A), [() => fe()]), s(a, r)
     };
-    c(W, e => {
-      F() && e(X)
+    f(Z, a => {
+      N() && a(p)
     })
   }
-  r(d), se(d, () => e => {
-    oe(() => {
-      A() && !e.open ? N() ? e.showModal() : e.show() : e.open && e.close()
+  o(v), de(v, () => a => {
+    le(() => {
+      L() && !a.open ? Q() ? a.showModal() : a.show() : a.open && a.close()
     })
-  }), M(e => {
-    w(d, 1, `modal ${O()?"no-close-animation":""} ${a.dialogClass??""}`, "svelte-r6rf84"), w(u, 1, I(ae(R))), w(_, 1, e)
-  }, [() => I(J("flex flex-1 flex-col overflow-y-auto px-4 py-4 sm:px-6", a.contentAreaClass))]), $("close", d, () => {
-    var e;
-    A(!1), (e = a.onclose) == null || e.call(a)
-  }), l(q, d), ee()
+  }), E(a => {
+    B(v, 1, `modal ${R()?"no-close-animation":""} ${e.dialogClass??""}`, "svelte-r6rf84"), B(y, 1, F(se(U))), B(x, 1, a)
+  }, [() => F(G("flex flex-1 flex-col overflow-y-auto px-4 py-4 sm:px-6", e.contentAreaClass))]), te("close", v, () => {
+    var a;
+    L(!1), (a = e.onclose) == null || a.call(e)
+  }), s(K, v), oe()
 }
 export {
-  Me as D
+  ze as D
 };

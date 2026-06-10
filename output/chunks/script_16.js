@@ -70,11 +70,11 @@ function go(n) {
   }
 }
 
-function yo() {
+function wo() {
   Hn().enabled = !0
 }
 
-function wo() {
+function yo() {
   Hn().enabled = !1
 }
 
@@ -108,8 +108,8 @@ function Hn() {
   }
 }
 const Xt = {
-    enable: yo,
-    disable: wo,
+    enable: wo,
+    disable: yo,
     isEnabled: Or,
     log: bo,
     warn: vo,
@@ -353,9 +353,9 @@ class Je {
         attributes: a,
         extra: i,
         user: s,
-        contexts: c,
+        contexts: u,
         level: _,
-        fingerprint: u = [],
+        fingerprint: l = [],
         propagationContext: p,
         conversationId: f
       } = r || {};
@@ -370,8 +370,8 @@ class Je {
       ...i
     }, this._contexts = {
       ...this._contexts,
-      ...c
-    }, s && Object.keys(s).length && (this._user = s), _ && (this._level = _), u.length && (this._fingerprint = u), p && (this._propagationContext = p), f && (this._conversationId = f), this
+      ...u
+    }, s && Object.keys(s).length && (this._user = s), _ && (this._level = _), l.length && (this._fingerprint = l), p && (this._propagationContext = p), f && (this._conversationId = f), this
   }
   clear() {
     return this._breadcrumbs = [], this._tags = {}, this._attributes = {}, this._extra = {}, this._user = {}, this._contexts = {}, this._level = void 0, this._transactionName = void 0, this._fingerprint = void 0, this._session = void 0, this._conversationId = void 0, $n(this, void 0), this._attachments = [], this.setPropagationContext({
@@ -853,7 +853,7 @@ function ga() {
   return n.getAttributeNames()
 }
 
-function ya() {
+function wa() {
   try {
     null[0]()
   } catch (n) {
@@ -862,7 +862,7 @@ function ya() {
   throw new X(-3, "errorTrace signal unexpected behaviour")
 }
 
-function wa() {
+function ya() {
   return eval.toString().length
 }
 
@@ -1090,11 +1090,11 @@ const Ua = {
   windowSize: Ba,
   pluginsLength: Ia,
   pluginsArray: Da,
-  errorTrace: ya,
+  errorTrace: wa,
   productSub: Ca,
   windowExternal: Ma,
   mimeTypesConsistent: Oa,
-  evalLength: wa,
+  evalLength: ya,
   webGL: La,
   webDriver: xa,
   languages: Aa,
@@ -1186,7 +1186,7 @@ class $a {
     if (r >= this.bytes.length) {
       const i = new Uint8Array(r + 1),
         s = i.length - this.bytes.length;
-      for (let c = 0; c < this.bytes.length; c++) i[c + s] = this.bytes[c];
+      for (let u = 0; u < this.bytes.length; u++) i[u + s] = this.bytes[u];
       this.bytes = i
     }
     const a = this.bytes.length - 1 - r;
@@ -1268,26 +1268,26 @@ function qa() {
     a = q.atan || ve,
     i = q.sin || ve,
     s = q.sinh || ve,
-    c = q.cos || ve,
+    u = q.cos || ve,
     _ = q.cosh || ve,
-    u = q.tan || ve,
+    l = q.tan || ve,
     p = q.tanh || ve,
     f = q.exp || ve,
     d = q.expm1 || ve,
     g = q.log1p || ve,
     h = v => q.pow(q.PI, v),
-    y = v => q.log(v + q.sqrt(v * v - 1)),
+    w = v => q.log(v + q.sqrt(v * v - 1)),
     C = v => q.log(v + q.sqrt(v * v + 1)),
     T = v => q.log((1 + v) / (1 - v)) / 2,
     R = v => q.exp(v) - 1 / q.exp(v) / 2,
     S = v => (q.exp(v) + 1 / q.exp(v)) / 2,
     N = v => q.exp(v) - 1,
     A = v => (q.exp(2 * v) - 1) / (q.exp(2 * v) + 1),
-    w = v => q.log(1 + v);
+    y = v => q.log(1 + v);
   return {
     acos: n(.12312423423423424),
     acosh: t(1e308),
-    acoshPf: y(1e154),
+    acoshPf: w(1e154),
     asin: e(.12312423423423424),
     asinh: r(1),
     asinhPf: C(1),
@@ -1297,17 +1297,17 @@ function qa() {
     sin: i(-1e300),
     sinh: s(1),
     sinhPf: R(1),
-    cos: c(10.000000000123),
+    cos: u(10.000000000123),
     cosh: _(1),
     coshPf: S(1),
-    tan: u(-1e300),
+    tan: l(-1e300),
     tanh: p(1),
     tanhPf: A(1),
     exp: f(1),
     expm1: d(1),
     expm1Pf: N(1),
     log1p: g(10),
-    log1pPf: w(10),
+    log1pPf: y(10),
     powPI: h(-100)
   }
 }
@@ -1328,15 +1328,15 @@ const Ka = () => {
             InvalidStateError: !0,
             SecurityError: !0
           },
-          o = u => /.+(\s).+/g.test(u),
+          o = l => /.+(\s).+/g.test(l),
           a = t ?? {},
           i = typeof a.name == "string" ? a.name : "",
           s = typeof a.message == "string" ? a.message : "",
-          c = o(s) ? e ? `${s} [${e}]` : s : void 0,
+          u = o(s) ? e ? `${s} [${e}]` : s : void 0,
           _ = r[i] ? i : void 0;
         n.push({
           trustedName: _,
-          trustedMessage: c
+          trustedMessage: u
         })
       }
     }
@@ -1375,7 +1375,7 @@ function Ya() {
 }
 const ln = Ya(),
   ue = ln == 80,
-  wt = ln == 58,
+  yt = ln == 58,
   bt = ln == 77,
   Yn = {
     80: "V8",
@@ -1434,28 +1434,28 @@ const {
     a = /Vivaldi/g.test(n),
     i = /DuckDuckGo/g.test(n),
     s = /YaBrowser/g.test(n),
-    c = n.match(/(palemoon)\/(\d+)./i),
+    u = n.match(/(palemoon)\/(\d+)./i),
     _ = n.match(/(edgios|edg|edge|edga)\/(\d+)./i),
-    u = _ && /edgios/i.test(_[1]),
+    l = _ && /edgios/i.test(_[1]),
     p = n.match(/(crios|chrome)\/(\d+)./i),
     f = n.match(/(fxios|firefox)\/(\d+)./i),
     g = /AppleWebKit/g.test(n) && /Safari/g.test(n) && !f && !p && !_ && n.match(/(version)\/(\d+)\.(\d|\.)+\s(mobile|safari)/i);
   if (p) {
     const h = p[1],
-      y = p[2];
-    return `${h} ${y}${o?" Opera":a?" Vivaldi":i?" DuckDuckGo":s?" Yandex":_?" Edge":e?" Brave":""}`
-  } else if (u && _) {
+      w = p[2];
+    return `${h} ${w}${o?" Opera":a?" Vivaldi":i?" DuckDuckGo":s?" Yandex":_?" Edge":e?" Brave":""}`
+  } else if (l && _) {
     const h = _[1],
-      y = _[2];
-    return `${h} ${y}`
+      w = _[2];
+    return `${h} ${w}`
   } else if (f) {
-    const h = c ? c[1] : f[1],
-      y = c ? c[2] : f[2];
-    return `${h} ${y}`
+    const h = u ? u[1] : f[1],
+      w = u ? u[2] : f[2];
+    return `${h} ${w}`
   } else if (r && g) {
     const h = "Safari",
-      y = g[2];
-    return `${h} ${y}`
+      w = g[2];
+    return `${h} ${w}`
   }
   return "unknown"
 }, Ur = ({
@@ -1469,28 +1469,28 @@ const {
     a = /^(linux|[a-z]|wv|mobile|[a-z]{2}(-|_)[a-z]{2}|[a-z]{2})$|windows|(rv:|trident|webview|iemobile).+/i,
     i = /build\/.+\s|\sbuild\/.+/i,
     s = /android( |-)\d+/i,
-    c = /((windows).+)/i,
+    u = /((windows).+)/i,
     _ = /^(windows|ms(-|)office|microsoft|compatible|[a-z]|x64|[a-z]{2}(-|_)[a-z]{2}|[a-z]{2})$|(rv:|outlook|ms(-|)office|microsoft|trident|\.net|msie|httrack|media center|infopath|aol|opera|iemobile|webbrowser).+/i,
-    u = /w(ow|in)64/i,
+    l = /w(ow|in)64/i,
     p = /cros/i,
     f = /^([a-z]|x11|[a-z]{2}(-|_)[a-z]{2}|[a-z]{2})$|(rv:|trident).+/i,
     d = /\d+\.\d+\.\d+/i,
     g = /linux|x11|ubuntu|debian/i,
     h = /^([a-z]|x11|unknown|compatible|[a-z]{2}(-|_)[a-z]{2}|[a-z]{2})$|(rv:|java|oracle|\+http|http|unknown|mozilla|konqueror|valve).+/i,
-    y = /(cpu iphone|cpu os|iphone os|mac os|macos|intel os|ppc mac).+/i,
+    w = /(cpu iphone|cpu os|iphone os|mac os|macos|intel os|ppc mac).+/i,
     C = /^([a-z]|macintosh|compatible|mimic|[a-z]{2}(-|_)[a-z]{2}|[a-z]{2}|rv|\d+\.\d+)$|(rv:|silk|valve).+/i,
     T = /(ppc |intel |)(mac|mac |)os (x |x|)(\d{2}(_|\.)\d{1,2}|\d{2,})/i,
     R = /((symbianos|nokia|blackberry|morphos|mac).+)|\/linux|freebsd|symbos|series \d+|win\d+|unix|hp-ux|bsdi|bsd|x86_64/i,
-    S = (N, A) => N.filter(w => A.test(w)).length;
+    S = (N, A) => N.filter(y => A.test(y)).length;
   if (n = n.trim().replace(/\s{2,}/, " ").replace(e, ""), r.test(n)) {
     const N = n.match(r);
     if (!N) return "unknown";
-    const w = N[0].slice(1, -1).replace(/,/g, ";").split(";").map(v => v.trim());
-    if (S(w, o)) return w.map(v => s.test(v) ? s.exec(v)[0].replace("-", " ") : v).filter(v => !a.test(v)).join(" ").replace(t ? i : "", "").trim().replace(/\s{2,}/, " ");
-    if (S(w, c)) return w.filter(v => !_.test(v)).join(" ").replace(/\sNT (\d+\.\d+)/, (v, E) => E == "10.0" ? " 10" : E == "6.3" ? " 8.1" : E == "6.2" ? " 8" : E == "6.1" ? " 7" : E == "6.0" ? " Vista" : E == "5.2" ? " XP Pro" : E == "5.1" ? " XP" : E == "5.0" ? " 2000" : E == "4.0" ? v : " " + E).replace(u, "(64-bit)").trim().replace(/\s{2,}/, " ");
-    if (S(w, p)) return w.filter(v => !f.test(v)).join(" ").replace(t ? d : "", "").trim().replace(/\s{2,}/, " ");
-    if (S(w, g)) return w.filter(v => !h.test(v)).join(" ").trim().replace(/\s{2,}/, " ");
-    if (S(w, y)) return w.map(v => {
+    const y = N[0].slice(1, -1).replace(/,/g, ";").split(";").map(v => v.trim());
+    if (S(y, o)) return y.map(v => s.test(v) ? s.exec(v)[0].replace("-", " ") : v).filter(v => !a.test(v)).join(" ").replace(t ? i : "", "").trim().replace(/\s{2,}/, " ");
+    if (S(y, u)) return y.filter(v => !_.test(v)).join(" ").replace(/\sNT (\d+\.\d+)/, (v, E) => E == "10.0" ? " 10" : E == "6.3" ? " 8.1" : E == "6.2" ? " 8" : E == "6.1" ? " 7" : E == "6.0" ? " Vista" : E == "5.2" ? " XP Pro" : E == "5.1" ? " XP" : E == "5.0" ? " 2000" : E == "4.0" ? v : " " + E).replace(l, "(64-bit)").trim().replace(/\s{2,}/, " ");
+    if (S(y, p)) return y.filter(v => !f.test(v)).join(" ").replace(t ? d : "", "").trim().replace(/\s{2,}/, " ");
+    if (S(y, g)) return y.filter(v => !h.test(v)).join(" ").trim().replace(/\s{2,}/, " ");
+    if (S(y, w)) return y.map(v => {
       if (T.test(v)) {
         const E = T.exec(v)[0],
           D = {
@@ -1515,8 +1515,8 @@ const {
       return v
     }).filter(v => !C.test(v)).join(" ").replace(/\slike mac.+/ig, "").trim().replace(/\s{2,}/, " ");
     {
-      const v = w.filter(E => R.test(E));
-      return v.length ? v.join(" ").trim().replace(/\s{2,}/, " ") : w.join(" ")
+      const v = y.filter(E => R.test(E));
+      return v.length ? v.join(" ").trim().replace(/\s{2,}/, " ") : y.join(" ")
     }
   } else return "unknown"
 }, Fr = n => {
@@ -1795,14 +1795,14 @@ function tr({
   const a = t.name.replace(/get\s/, ""),
     i = r == null ? void 0 : r.name,
     s = Object.getPrototypeOf(t),
-    c = self;
+    u = self;
   let _ = {
     "failed illegal error": !!r && pe({
       spawnErr: () => {
         r.prototype[a]
       }
     }),
-    "failed undefined properties": !!r && !!i && /^(screen|navigator)$/i.test(i) && !!(Object.getOwnPropertyDescriptor(c[i.toLowerCase()], a) || dt && Reflect.getOwnPropertyDescriptor(c[i.toLowerCase()], a)),
+    "failed undefined properties": !!r && !!i && /^(screen|navigator)$/i.test(i) && !!(Object.getOwnPropertyDescriptor(u[i.toLowerCase()], a) || dt && Reflect.getOwnPropertyDescriptor(u[i.toLowerCase()], a)),
     "failed call interface error": pe({
       spawnErr: () => {
         new t, t.call(e)
@@ -1853,13 +1853,13 @@ function tr({
       spawnErr: () => {
         t.arguments, t.caller
       },
-      withStack: f => wt && !nt(f, er, 0)
+      withStack: f => yt && !nt(f, er, 0)
     }),
     "failed at toString incompatible proxy error": pe({
       spawnErr: () => {
         t.toString.arguments, t.toString.caller
       },
-      withStack: f => wt && !nt(f, er, 0)
+      withStack: f => yt && !nt(f, er, 0)
     }),
     "failed at too much recursion error": pe({
       spawnErr: () => {
@@ -1954,57 +1954,57 @@ function ui(n) {
         target: i,
         ignore: s
       } = a || {};
-      let c;
+      let u;
       try {
-        if (c = o(), !t(c)) return
+        if (u = o(), !t(u)) return
       } catch {
         return
       }
-      const _ = c.prototype ? c.prototype : c;
-      [...new Set([...Object.getOwnPropertyNames(_), ...Object.keys(_)])].sort().forEach(u => {
+      const _ = u.prototype ? u.prototype : u;
+      [...new Set([...Object.getOwnPropertyNames(_), ...Object.keys(_)])].sort().forEach(l => {
         var g;
-        if (u == "constructor" || !!i && !new Set(i).has(u) || !!s && new Set(s).has(u)) return;
+        if (l == "constructor" || !!i && !new Set(i).has(l) || !!s && new Set(s).has(l)) return;
         const f = /\s(.+)\]/,
-          d = `${c.name?c.name:f.test(c)?(g=f.exec(c))==null?void 0:g[1]:void 0}.${u}`;
+          d = `${u.name?u.name:f.test(u)?(g=f.exec(u))==null?void 0:g[1]:void 0}.${l}`;
         r.push(d);
         try {
-          const h = c.prototype ? c.prototype : c;
-          let y;
+          const h = u.prototype ? u.prototype : u;
+          let w;
           try {
-            if (typeof h[u] == "function") {
-              if (y = tr({
+            if (typeof h[l] == "function") {
+              if (w = tr({
                   scope: n,
-                  apiFunction: h[u],
+                  apiFunction: h[l],
                   proto: h,
                   obj: null,
                   lieProps: e
-                }), y.lied) {
-                Z(d, y.lieTypes), e[d] = y.lieTypes;
+                }), w.lied) {
+                Z(d, w.lieTypes), e[d] = w.lieTypes;
                 return
               }
               return
             }
-            if (u != "name" && u != "length" && u[0] !== u[0].toUpperCase()) {
+            if (l != "name" && l != "length" && l[0] !== l[0].toUpperCase()) {
               const S = ["failed descriptor.value undefined"];
               Z(d, S), e[d] = S;
               return
             }
           } catch {}
-          const T = Object.getOwnPropertyDescriptor(h, u).get;
-          if (y = tr({
+          const T = Object.getOwnPropertyDescriptor(h, l).get;
+          if (w = tr({
               scope: n,
               apiFunction: T,
               proto: h,
-              obj: c,
+              obj: u,
               lieProps: e
-            }), y.lied) {
-            Z(d, y.lieTypes), e[d] = y.lieTypes;
+            }), w.lied) {
+            Z(d, w.lieTypes), e[d] = w.lieTypes;
             return
           }
           return
         } catch {
-          const y = "failed prototype test execution";
-          Z(d, y), e[d] = [y];
+          const w = "failed prototype test execution";
+          Z(d, w), e[d] = [w];
           return
         }
       })
@@ -2175,37 +2175,37 @@ const mi = () => {
   } = {}) => {
     if (!n) return [];
     const e = [];
-    [/([A-Z]{3,}[a-z])/g, /([a-z][A-Z]{3,})/g, /([a-z][A-Z]{2,}[a-z])/g, /([a-z][\d]{2,}[a-z])/g, /([A-Z][\d]{2,}[a-z])/g, /([a-z][\d]{2,}[A-Z])/g].forEach(u => {
-      const p = n.match(u);
+    [/([A-Z]{3,}[a-z])/g, /([a-z][A-Z]{3,})/g, /([a-z][A-Z]{2,}[a-z])/g, /([a-z][\d]{2,}[a-z])/g, /([A-Z][\d]{2,}[a-z])/g, /([a-z][\d]{2,}[A-Z])/g].forEach(l => {
+      const p = n.match(l);
       if (p) return e.push(p.join(", "))
     });
     const o = [],
       a = n.replace(/\d|\W|_/g, " ").replace(/\s+/g, " ").trim().split(" ").join("_"),
       i = a.length,
       s = [...a];
-    s.forEach((u, p) => {
+    s.forEach((l, p) => {
       const f = p + 1,
         d = s[f];
-      if (d !== "_" && u !== "_" && f !== i) {
-        const h = u + d;
+      if (d !== "_" && l !== "_" && f !== i) {
+        const h = l + d;
         gi.test(h) && o.push(h)
       }
     });
-    const c = [...!t && o.length < 3 ? [] : o, ...!t && e.length < 4 ? [] : e],
+    const u = [...!t && o.length < 3 ? [] : o, ...!t && e.length < 4 ? [] : e],
       _ = ["bz", "cf", "fx", "mx", "vb", "xd", "gx", "PCIe", "vm", "NVIDIAGa"];
-    return c.filter(u => !_.includes(u))
+    return u.filter(l => !_.includes(l))
   };
 
 function qr(n) {
   if (n) return ("" + n).replace(/ANGLE \(|\sDirect3D.+|\sD3D.+|\svs_.+\)|\((DRM|POLARIS|LLVM).+|Mesa.+|(ATI|INTEL)-.+|Metal\s-\s.+|NVIDIA\s[\d|\.]+/ig, "").replace(/(\s(ti|\d{1,2}GB|super)$)/ig, "").replace(/\s{2,}/g, " ").trim().replace(/((r|g)(t|)(x|s|\d) |Graphics |GeForce |Radeon (HD |Pro |))(\d+)/i, (...t) => `${t[1]}${t[6][0]}${t[6].slice(1).replace(/\d/g,"0")}s`)
 }
-const yi = n => {
+const wi = n => {
     const e = [...["AMD", "ANGLE", "ASUS", "ATI", "ATI Radeon", "ATI Technologies Inc", "Adreno", "Android Emulator", "Apple", "Apple GPU", "Apple M1", "Chipset", "D3D11", "Direct3D", "Express Chipset", "GeForce", "Generation", "Generic Renderer", "Google", "Google SwiftShader", "Graphics", "Graphics Media Accelerator", "HD Graphics Family", "Intel", "Intel(R) HD Graphics", "Intel(R) UHD Graphics", "Iris", "KBL Graphics", "Mali", "Mesa", "Mesa DRI", "Metal", "Microsoft", "Microsoft Basic Render Driver", "Microsoft Corporation", "NVIDIA", "NVIDIA Corporation", "NVIDIAGameReadyD3D", "OpenGL", "OpenGL Engine", "Open Source Technology Center", "Parallels", "Parallels Display Adapter", "PCIe", "Plus Graphics", "PowerVR", "Pro Graphics", "Quadro", "Radeon", "Radeon Pro", "Radeon Pro Vega", "Samsung", "SSE2", "VMware", "VMware SVGA 3D", "Vega", "VirtualBox", "VirtualBox Graphics Adapter", "Vulkan", "Xe Graphics", "llvmpipe"]].filter(r => ("" + n).includes(r));
     return [...new Set(e)].sort().join(", ")
   },
   Kr = n => {
     if (!n) return;
-    const t = yi(n),
+    const t = wi(n),
       e = t.length,
       r = /\s{2,}|^\s|\s$/.test(n),
       o = /^ANGLE/.test(n) && !(/^ANGLE \((.+)\)/.exec(n) || [])[1],
@@ -2214,17 +2214,17 @@ const yi = n => {
       }).join(", "),
       i = e && !r && !o,
       s = i && !a.length ? "high" : i && a.length ? "moderate" : "low",
-      c = s == "high" ? "A" : s == "moderate" ? "C" : "F",
+      u = s == "high" ? "A" : s == "moderate" ? "C" : "F",
       _ = new Set([r ? "found extra spaces" : void 0, o ? "broken angle structure" : void 0]);
     return _.delete(void 0), {
       parts: t,
       warnings: [..._],
       gibbers: a,
       confidence: s,
-      grade: c
+      grade: u
     }
   },
-  wi = () => {
+  yi = () => {
     const n = [];
     return {
       getBin: () => n,
@@ -2237,7 +2237,7 @@ const yi = n => {
       }
     }
   },
-  Xr = wi(),
+  Xr = yi(),
   {
     sendToTrash: ae
   } = Xr,
@@ -2411,9 +2411,9 @@ async function Ii() {
       userAgent: i.userAgent
     });
     const {
-      system: c,
+      system: u,
       userAgent: _,
-      userAgentData: u,
+      userAgentData: l,
       platform: p,
       deviceMemory: f,
       hardwareConcurrency: d
@@ -2429,21 +2429,21 @@ async function Ii() {
         })
       })
     }
-    const [h, y] = Br(_, p);
-    h != y && (i.lied = !0, i.lies.os = `${y} platform and ${h} user agent do not match`, Z("WorkerGlobalScope", i.lies.os));
+    const [h, w] = Br(_, p);
+    h != w && (i.lied = !0, i.lies.os = `${w} platform and ${h} user agent do not match`, Z("WorkerGlobalScope", i.lies.os));
     const C = Hr({
         ua: _,
-        os: c,
+        os: u,
         isBrave: !1
       }),
       T = /safari/i.test(C) || /iphone|ipad/i.test(_) ? "JavaScriptCore" : /firefox/i.test(_) ? "SpiderMonkey" : /chrome/i.test(_) ? "V8" : void 0;
     T != Yn && (i.lied = !0, i.lies.engine = `${Yn} JS runtime and ${T} user agent do not match`, Z("WorkerGlobalScope", i.lies.engine));
     const R = P => (/\d+/.exec(P) || [])[0],
       S = R(C),
-      N = R(u ? u.uaFullVersion ?? "" : ""),
+      N = R(l ? l.uaFullVersion ?? "" : ""),
       A = N && S,
-      w = N == S;
-    A && !w && (i.lied = !0, i.lies.version = `userAgentData version ${N} and user agent version ${S} do not match`, Z("WorkerGlobalScope", i.lies.version));
+      y = N == S;
+    A && !y && (i.lied = !0, i.lies.version = `userAgentData version ${N} and user agent version ${S} do not match`, Z("WorkerGlobalScope", i.lies.version));
     const v = ue && CSS.supports("accent-color: initial");
     ((P, L) => {
       if (!/windows|mac/i.test(P) || !(L != null && L.platformVersion)) return !1;
@@ -2464,7 +2464,7 @@ async function Ii() {
       if (k.length != 3) return !0;
       const M = +k[0] > 0;
       return M && !te || !M && te
-    })(i.device, u) && (i.lied = !0, i.lies.platformVersion = "platform version is fake", Z("WorkerGlobalScope", i.lies.platformVersion)), i.userAgentVersion = S, i.userAgentDataVersion = N, i.userAgentEngine = T;
+    })(i.device, l) && (i.lied = !0, i.lies.platformVersion = "platform version is fake", Z("WorkerGlobalScope", i.lies.platformVersion)), i.userAgentVersion = S, i.userAgentDataVersion = N, i.userAgentEngine = T;
     const B = {
       ...Kr(i.webglRenderer) || {},
       compressedGPU: qr(i.webglRenderer)
@@ -2517,20 +2517,20 @@ async function Ci() {
     const a = Ge(),
       i = a["AudioBuffer.getChannelData"],
       s = a["AudioBuffer.copyFromChannel"];
-    let c = i || s || !1;
+    let u = i || s || !1;
     const _ = 5e3,
-      u = new OfflineAudioContext(1, _, 44100);
-    n.push(u);
-    const p = u.createAnalyser(),
-      f = u.createOscillator(),
-      d = u.createDynamicsCompressor(),
-      g = u.createBiquadFilter(),
+      l = new OfflineAudioContext(1, _, 44100);
+    n.push(l);
+    const p = l.createAnalyser(),
+      f = l.createOscillator(),
+      d = l.createDynamicsCompressor(),
+      g = l.createBiquadFilter(),
       h = new Float32Array(p.frequencyBinCount);
     (e = p.getFloatFrequencyData) == null || e.call(p, h);
-    const y = new Set(h).size;
-    if (y > 1) {
-      c = !0;
-      const V = `expected -Infinity (silence) and got ${y} frequencies`;
+    const w = new Set(h).size;
+    if (w > 1) {
+      u = !0;
+      const V = `expected -Infinity (silence) and got ${w} frequencies`;
       Z("AnalyserNode.getFloatFrequencyData", V)
     }
     const C = {
@@ -2590,10 +2590,10 @@ async function Ci() {
         })
       });
     await ie();
-    const [R, S] = await Promise.all([T(u), Ni().catch(() => !1)]), {
+    const [R, S] = await Promise.all([T(l), Ni().catch(() => !1)]), {
       floatFrequencyData: N,
       floatTimeDomainData: A,
-      buffer: w,
+      buffer: y,
       compressorGainReduction: v
     } = R || {};
     await ie();
@@ -2613,14 +2613,14 @@ async function Ci() {
       P = D(A),
       L = new Float32Array(_);
     let H = new Float32Array;
-    w && ((r = w.copyFromChannel) == null || r.call(w, L, 0), H = ((o = w.getChannelData) == null ? void 0 : o.call(w, 0)) || []);
+    y && ((r = y.copyFromChannel) == null || r.call(y, L, 0), H = ((o = y.getChannelData) == null ? void 0 : o.call(y, 0)) || []);
     const te = E(L, 4500, 4600),
       me = E(H, 4500, 4600),
       F = D(E(H, 4500, _));
-    S && (c = !0, Z("AudioBuffer", "audio is fake"));
+    S && (u = !0, Z("AudioBuffer", "audio is fake"));
     const Ne = "" + me == "" + te,
       k = "copyFromChannel" in AudioBuffer.prototype;
-    k && !Ne && (c = !0, Z("AudioBuffer", "getChannelData and copyFromChannel samples mismatch"));
+    k && !Ne && (u = !0, Z("AudioBuffer", "getChannelData and copyFromChannel samples mismatch"));
     const M = new Set(H).size;
     if (M == _) {
       const V = `${M} unique samples of ${_} is too high`;
@@ -2635,7 +2635,7 @@ async function Ci() {
         const qt = [$.getChannelData(0)[ge] === 0 ? Math.random() : 0, $.getChannelData(0)[lt] === 0 ? Math.random() : 0, $.getChannelData(0)[et] === 0 ? Math.random() : 0];
         return [...new Set([...$.getChannelData(0), ...Q, ...qt])].filter(so => so !== 0)
       },
-      ye = (V, $, Q) => {
+      we = (V, $, Q) => {
         $.copyToChannel(Q.map(() => V), 0);
         const fe = $.getChannelData(0)[0];
         return [...$.getChannelData(0)].map(ge => ge !== fe || !ge ? Math.random() : ge).filter(ge => ge !== fe)
@@ -2645,7 +2645,7 @@ async function Ci() {
         const $ = [...new Set([...oe(rr, new AudioBuffer({
           length: 2e3,
           sampleRate: 44100
-        }), new Float32Array(2e3)), ...ye(rr, new AudioBuffer({
+        }), new Float32Array(2e3)), ...we(rr, new AudioBuffer({
           length: 2e3,
           sampleRate: 44100
         }), new Float32Array(2e3))])];
@@ -2711,7 +2711,7 @@ async function Ci() {
       "-29.83786964416504,163209.17245483398,0": [35.10893232002854],
       "-29.83786964416504,163202.77336883545,0": [35.10893253237009]
     };
-    Re && (c = !0, Z("AudioBuffer", "sample noise detected"));
+    Re && (u = !0, Z("AudioBuffer", "sample noise detected"));
     const io = "" + [v, B, P],
       Fn = ao[io];
     return Fn && !Fn.includes(F) && (Ce.AUDIO = !0, ae("AudioBuffer", "suspicious frequency data")), {
@@ -2725,7 +2725,7 @@ async function Ci() {
       values: C,
       noise: Re,
       baseLatency: ki(),
-      lied: c
+      lied: u
     }
   } catch (a) {
     re(a, "OfflineAudioContext failed or blocked by client");
@@ -2760,10 +2760,10 @@ const Pi = () => {
       i = document.createElement("canvas"),
       s = document.createElement("canvas");
     try {
-      const c = a.getContext("2d", o),
+      const u = a.getContext("2d", o),
         _ = i.getContext("2d", o),
-        u = s.getContext("2d", o);
-      if (!c || !_ || !u) throw new Error("canvas context blocked");
+        l = s.getContext("2d", o);
+      if (!u || !_ || !l) throw new Error("canvas context blocked");
       a.width = 40, a.height = 40, i.width = 8, i.height = 8, s.width = 8, s.height = 8;
       const p = new Uint8Array(256),
         f = new Uint8Array(256);
@@ -2772,24 +2772,24 @@ const Pi = () => {
         for (let S = 0; S < 8; S++) {
           const N = ~~(Math.random() * 256),
             A = ~~(Math.random() * 256),
-            w = ~~(Math.random() * 256);
-          p[d] = N, p[d + 1] = A, p[d + 2] = w, p[d + 3] = 255, d += 4, _.fillStyle = `rgba(${N}, ${A}, ${w}, 255)`, _.fillRect(R, S, 1, 1)
+            y = ~~(Math.random() * 256);
+          p[d] = N, p[d + 1] = A, p[d + 2] = y, p[d + 3] = 255, d += 4, _.fillStyle = `rgba(${N}, ${A}, ${y}, 255)`, _.fillRect(R, S, 1, 1)
         }
       d = 0;
       for (let R = 0; R < 8; R++)
         for (let S = 0; S < 8; S++) {
           const N = _.getImageData(R, S, 1, 1).data,
             A = N[0],
-            w = N[1],
+            y = N[1],
             v = N[2],
             E = N[3];
-          u.fillStyle = `rgba(${A}, ${w}, ${v}, ${E})`, u.fillRect(R, S, 1, 1);
-          const D = u.getImageData(R, S, 1, 1).data,
+          l.fillStyle = `rgba(${A}, ${y}, ${v}, ${E})`, l.fillRect(R, S, 1, 1);
+          const D = l.getImageData(R, S, 1, 1).data,
             B = D[0],
             P = D[1],
             L = D[2],
             H = D[3];
-          f[d] = A, f[d + 1] = w, f[d + 2] = v, f[d + 3] = E, d += 4, c.fillStyle = `rgba(${A!==B?B:255}, ${w!==P?P:255}, ${v!==L?L:255}, ${E!==H?H:1})`, c.fillRect(R * 5, S * 5, 5, 5)
+          f[d] = A, f[d + 1] = y, f[d + 2] = v, f[d + 3] = E, d += 4, u.fillStyle = `rgba(${A!==B?B:255}, ${y!==P?P:255}, ${v!==L?L:255}, ${E!==H?H:1})`, u.fillRect(R * 5, S * 5, 5, 5)
         }
       const g = [],
         h = new Set;
@@ -2797,20 +2797,20 @@ const Pi = () => {
         const S = R * 4,
           N = p[S] !== f[S],
           A = p[S + 1] !== f[S + 1],
-          w = p[S + 2] !== f[S + 2],
+          y = p[S + 2] !== f[S + 2],
           v = p[S + 3] !== f[S + 3];
-        if (N || A || w || v) {
-          const E = (N ? "r" : "") + (A ? "g" : "") + (w ? "b" : "") + (v ? "a" : "");
+        if (N || A || y || v) {
+          const E = (N ? "r" : "") + (A ? "g" : "") + (y ? "b" : "") + (v ? "a" : "");
           h.add(E), g.push([R, E])
         }
       }
-      const y = a.toDataURL(),
+      const w = a.toDataURL(),
         C = h.size ? [...h].sort().join(", ") : void 0,
         T = g.length || void 0;
       return {
         rgba: C,
         pixels: T,
-        pixelImage: y
+        pixelImage: w
       }
     } catch {
       return
@@ -2830,81 +2830,81 @@ const Pi = () => {
     rounds: a = 10,
     maxShadowBlur: i = 50,
     seed: s = 500,
-    offset: c = 2001000001,
+    offset: u = 2001000001,
     multiplier: _ = 15e3
   }) => {
     if (!t) return;
     t.clearRect(0, 0, n.width, n.height), n.width = o.width, n.height = o.height, n.style && (n.style.display = "none");
     const p = (({
         seed: A,
-        offset: w,
+        offset: y,
         multiplier: v
       }) => {
-        let E = Number(A) % Number(w);
+        let E = Number(A) % Number(y);
         return {
-          getNextSeed: () => (E = Number(v) * E % Number(w), E)
+          getNextSeed: () => (E = Number(v) * E % Number(y), E)
         }
       })({
         seed: s,
-        offset: c,
+        offset: u,
         multiplier: _
       }),
       {
         getNextSeed: f
       } = p,
-      d = (A, w, v, E) => {
-        const D = (A - 1) / w * (v || 1) || 0;
+      d = (A, y, v, E) => {
+        const D = (A - 1) / y * (v || 1) || 0;
         return E ? D : Math.floor(D)
       },
-      g = (A, w, v, E, D) => {
+      g = (A, y, v, E, D) => {
         const {
           width: B,
           height: P
-        } = v, L = A.createRadialGradient(d(D(), w, B), d(D(), w, P), d(D(), w, B), d(D(), w, B), d(D(), w, P), d(D(), w, B));
-        L.addColorStop(0, E[d(D(), w, E.length)]), L.addColorStop(1, E[d(D(), w, E.length)]), A.fillStyle = L
+        } = v, L = A.createRadialGradient(d(D(), y, B), d(D(), y, P), d(D(), y, B), d(D(), y, B), d(D(), y, P), d(D(), y, B));
+        L.addColorStop(0, E[d(D(), y, E.length)]), L.addColorStop(1, E[d(D(), y, E.length)]), A.fillStyle = L
       },
       h = ["#FF6633", "#FFB399", "#FF33FF", "#FFFF99", "#00B3E6", "#E6B333", "#3366E6", "#999966", "#99FF99", "#B34D4D", "#80B300", "#809900", "#E6B3B3", "#6680B3", "#66991A", "#FF99E6", "#CCFF1A", "#FF1A66", "#E6331A", "#33FFCC", "#66994D", "#B366CC", "#4D8000", "#B33300", "#CC80CC", "#66664D", "#991AFF", "#E666FF", "#4DB3FF", "#1AB399", "#E666B3", "#33991A", "#CC9999", "#B3B31A", "#00E680", "#4D8066", "#809980", "#E6FF80", "#1AFF33", "#999933", "#FF3380", "#CCCC00", "#66E64D", "#4D80CC", "#9900B3", "#E64D66", "#4DB380", "#FF4D4D", "#99E6E6", "#6666FF"],
-      y = (A, w, v, E) => {
+      w = (A, y, v, E) => {
         const {
           width: D,
           height: B
         } = v, P = 2.99;
-        A.font = `${B/P}px ${r.replace(/!important/gm,"")}`, A.strokeText("👾A", d(E(), w, D), d(E(), w, B), d(E(), w, D))
+        A.font = `${B/P}px ${r.replace(/!important/gm,"")}`, A.strokeText("👾A", d(E(), y, D), d(E(), y, B), d(E(), y, D))
       },
-      C = (A, w, v, E) => {
+      C = (A, y, v, E) => {
         const {
           width: D,
           height: B
         } = v;
-        A.beginPath(), A.arc(d(E(), w, D), d(E(), w, B), d(E(), w, Math.min(D, B)), d(E(), w, 2 * Math.PI, !0), d(E(), w, 2 * Math.PI, !0)), A.stroke()
+        A.beginPath(), A.arc(d(E(), y, D), d(E(), y, B), d(E(), y, Math.min(D, B)), d(E(), y, 2 * Math.PI, !0), d(E(), y, 2 * Math.PI, !0)), A.stroke()
       },
-      T = (A, w, v, E) => {
+      T = (A, y, v, E) => {
         const {
           width: D,
           height: B
         } = v;
-        A.beginPath(), A.moveTo(d(E(), w, D), d(E(), w, B)), A.bezierCurveTo(d(E(), w, D), d(E(), w, B), d(E(), w, D), d(E(), w, B), d(E(), w, D), d(E(), w, B)), A.stroke()
+        A.beginPath(), A.moveTo(d(E(), y, D), d(E(), y, B)), A.bezierCurveTo(d(E(), y, D), d(E(), y, B), d(E(), y, D), d(E(), y, B), d(E(), y, D), d(E(), y, B)), A.stroke()
       },
-      R = (A, w, v, E) => {
+      R = (A, y, v, E) => {
         const {
           width: D,
           height: B
         } = v;
-        A.beginPath(), A.moveTo(d(E(), w, D), d(E(), w, B)), A.quadraticCurveTo(d(E(), w, D), d(E(), w, B), d(E(), w, D), d(E(), w, B)), A.stroke()
+        A.beginPath(), A.moveTo(d(E(), y, D), d(E(), y, B)), A.quadraticCurveTo(d(E(), y, D), d(E(), y, B), d(E(), y, D), d(E(), y, B)), A.stroke()
       },
-      S = (A, w, v, E) => {
+      S = (A, y, v, E) => {
         if (!("ellipse" in A)) return;
         const {
           width: D,
           height: B
         } = v;
-        A.beginPath(), A.ellipse(d(E(), w, D), d(E(), w, B), d(E(), w, Math.floor(D / 2)), d(E(), w, Math.floor(B / 2)), d(E(), w, 2 * Math.PI, !0), d(E(), w, 2 * Math.PI, !0), d(E(), w, 2 * Math.PI, !0)), A.stroke()
+        A.beginPath(), A.ellipse(d(E(), y, D), d(E(), y, B), d(E(), y, Math.floor(D / 2)), d(E(), y, Math.floor(B / 2)), d(E(), y, 2 * Math.PI, !0), d(E(), y, 2 * Math.PI, !0), d(E(), y, 2 * Math.PI, !0)), A.stroke()
       },
       N = [C, T, R];
-    bt || N.push(S), e && N.push(y), [...Array(a)].forEach(A => {
-      g(t, c, o, h, f), t.shadowBlur = d(f(), c, i, !0), t.shadowColor = h[d(f(), c, h.length)];
-      const w = N[d(f(), c, N.length)];
-      w(t, c, o, f), t.fill()
+    bt || N.push(S), e && N.push(w), [...Array(a)].forEach(A => {
+      g(t, u, o, h, f), t.shadowBlur = d(f(), u, i, !0), t.shadowColor = h[d(f(), u, h.length)];
+      const y = N[d(f(), u, N.length)];
+      y(t, u, o, f), t.fill()
     })
   };
 async function xi() {
@@ -2917,11 +2917,11 @@ async function xi() {
       a = e["HTMLCanvasElement.getContext"],
       i = e["CanvasRenderingContext2D.fillText"] || e["CanvasRenderingContext2D.font"] || e["CanvasRenderingContext2D.getImageData"] || e["CanvasRenderingContext2D.strokeText"],
       s = e["String.fromCodePoint"];
-    let c = e["CanvasRenderingContext2D.measureText"] || e["TextMetrics.actualBoundingBoxAscent"] || e["TextMetrics.actualBoundingBoxDescent"] || e["TextMetrics.actualBoundingBoxLeft"] || e["TextMetrics.actualBoundingBoxRight"] || e["TextMetrics.fontBoundingBoxAscent"] || e["TextMetrics.fontBoundingBoxDescent"] || e["TextMetrics.width"],
-      _ = o || a || i || c || s || !1,
-      u = window;
-    !Lr && r && (u = r);
-    const p = u.document;
+    let u = e["CanvasRenderingContext2D.measureText"] || e["TextMetrics.actualBoundingBoxAscent"] || e["TextMetrics.actualBoundingBoxDescent"] || e["TextMetrics.actualBoundingBoxLeft"] || e["TextMetrics.actualBoundingBoxRight"] || e["TextMetrics.fontBoundingBoxAscent"] || e["TextMetrics.fontBoundingBoxDescent"] || e["TextMetrics.width"],
+      _ = o || a || i || u || s || !1,
+      l = window;
+    !Lr && r && (l = r);
+    const p = l.document;
     n = p.createElement("canvas");
     const f = n.getContext("2d", {
       willReadFrequently: !1
@@ -2947,7 +2947,7 @@ async function xi() {
     });
     const h = n.toDataURL();
     await ie();
-    const y = Pi();
+    const w = Pi();
     await ie();
     const C = Rn.replace(/!important/gm, "");
     f.font = `10px ${C}`;
@@ -2983,19 +2983,19 @@ async function xi() {
         height: N
       }
     });
-    const w = t.toDataURL();
+    const y = t.toDataURL();
     f.restore(), f.clearRect(0, 0, n.width, n.height), n.width = 50, n.height = 50, f.font = `50px ${C}`, f.fillText("A", 7, 37);
     const v = n.toDataURL();
     f.restore(), f.clearRect(0, 0, n.width, n.height), n.width = 50, n.height = 50, f.font = `35px ${C}`, f.fillText("👾", 0, 37);
     const E = n.toDataURL();
-    f.clearRect(0, 0, n.width, n.height), (y && y.pixels || Math.max(...f.getImageData(0, 0, 8, 8).data)) && (_ = !0, Z("CanvasRenderingContext2D.getImageData", "pixel data modified")), n.width = 2, n.height = 2, f.fillStyle = "#000", f.fillRect(0, 0, n.width, n.height), f.fillStyle = "#fff", f.fillRect(2, 2, 1, 1), f.beginPath(), f.arc(0, 0, 2, 0, 1, !0), f.closePath(), f.fill();
+    f.clearRect(0, 0, n.width, n.height), (w && w.pixels || Math.max(...f.getImageData(0, 0, 8, 8).data)) && (_ = !0, Z("CanvasRenderingContext2D.getImageData", "pixel data modified")), n.width = 2, n.height = 2, f.fillStyle = "#000", f.fillRect(0, 0, n.width, n.height), f.fillStyle = "#fff", f.fillRect(2, 2, 1, 1), f.beginPath(), f.arc(0, 0, 2, 0, 1, !0), f.closePath(), f.fill();
     const D = f.getImageData(0, 0, 2, 2).data.join(""),
       B = {
         BLINK: ["255255255255178178178255246246246255555555255", "255255255255192192192255240240240255484848255", "255255255255177177177255246246246255535353255", "255255255255128128128255191191191255646464255", "255255255255178178178255247247247255565656255", "255255255255174174174255242242242255474747255", "255255255255229229229255127127127255686868255", "255255255255192192192255244244244255535353255"],
         GECKO: ["255255255255191191191255207207207255646464255", "255255255255192192192255240240240255484848255", "255255255255191191191255239239239255646464255", "255255255255191191191255223223223255606060255", "255255255255171171171255223223223255606060255", "255255255255188188188255245245245255525252255"],
         WEBKIT: ["255255255255185185185255233233233255474747255", "255255255255185185185255229229229255474747255", "255255255255185185185255218218218255474747255", "255255255255192192192255240240240255484848255", "255255255255178178178255247247247255565656255", "255255255255178178178255247247247255565656255", "255255255255192192192255240240240255484848255", "255255255255186186186255218218218255464646255"]
       };
-    Fe.imageDataLowEntropy = D, (ue && !B.BLINK.includes(D) || wt && !B.GECKO.includes(D) || bt && !B.WEBKIT.includes(D)) && (Ce.CANVAS = !0), Ce.CANVAS && ae("CanvasRenderingContext2D.getImageData", "suspicious pixel data");
+    Fe.imageDataLowEntropy = D, (ue && !B.BLINK.includes(D) || yt && !B.GECKO.includes(D) || bt && !B.WEBKIT.includes(D)) && (Ce.CANVAS = !0), Ce.CANVAS && ae("CanvasRenderingContext2D.getImageData", "suspicious pixel data");
     const P = L => {
       const H = oe => oe % 1 !== 0,
         {
@@ -3008,15 +3008,15 @@ async function xi() {
         } = L.measureText("") || {};
       return [te, me, F, Ne, k, M].find(oe => H(oe || 0))
     };
-    return await ie(), P(f) && (c = !0, _ = !0, Z("CanvasRenderingContext2D.measureText", "metric noise detected")), {
+    return await ie(), P(f) && (u = !0, _ = !0, Z("CanvasRenderingContext2D.measureText", "metric noise detected")), {
       dataURI: h,
       paintURI: A,
-      paintCpuURI: w,
+      paintCpuURI: y,
       textURI: v,
       emojiURI: E,
-      mods: y,
+      mods: w,
       textMetricsSystemSum: S,
-      liedTextMetrics: c,
+      liedTextMetrics: u,
       emojiSet: [...R],
       lied: _
     }
@@ -3038,32 +3038,32 @@ function Li() {
         const a = Object.getPrototypeOf(o),
           i = Object.getOwnPropertyNames(a),
           s = [],
-          c = /^--.*$/;
-        Object.keys(o).forEach(y => {
-          const C = !isNaN(+y),
-            T = o[y],
-            R = c.test(y),
-            S = c.test(T);
+          u = /^--.*$/;
+        Object.keys(o).forEach(w => {
+          const C = !isNaN(+w),
+            T = o[w],
+            R = u.test(w),
+            S = u.test(T);
           if (C && !S) return s.push(T);
-          if (!C && !R) return s.push(y)
+          if (!C && !R) return s.push(w)
         });
         const _ = {},
-          u = y => y.charAt(0).toUpperCase() + y.slice(1),
-          p = y => y.charAt(0).toLowerCase() + y.slice(1),
-          f = y => y.slice(1),
+          l = w => w.charAt(0).toUpperCase() + w.slice(1),
+          p = w => w.charAt(0).toLowerCase() + w.slice(1),
+          f = w => w.slice(1),
           d = /[A-Z]/g;
-        s.forEach(y => {
-          if (_[y]) return;
-          const C = y.indexOf("-") > -1,
-            T = d.test(y),
-            R = y.charAt(0),
+        s.forEach(w => {
+          if (_[w]) return;
+          const C = w.indexOf("-") > -1,
+            T = d.test(w),
+            R = w.charAt(0),
             S = C && R == "-",
             N = T && R == R.toUpperCase();
-          if (y = S ? f(y) : N ? p(y) : y, C) {
-            const A = y.split("-").map((w, v) => v == 0 ? w : u(w)).join("");
-            A in o ? _[A] = !0 : u(A) in o && (_[u(A)] = !0)
+          if (w = S ? f(w) : N ? p(w) : w, C) {
+            const A = w.split("-").map((y, v) => v == 0 ? y : l(y)).join("");
+            A in o ? _[A] = !0 : l(A) in o && (_[l(A)] = !0)
           } else if (T) {
-            const A = y.replace(d, w => "-" + w.toLowerCase());
+            const A = w.replace(d, y => "-" + y.toLowerCase());
             A in o ? _[A] = !0 : `-${A}` in o && (_[`-${A}`] = !0)
           }
         });
@@ -3084,14 +3084,14 @@ function Li() {
         const o = ["ActiveBorder", "ActiveCaption", "ActiveText", "AppWorkspace", "Background", "ButtonBorder", "ButtonFace", "ButtonHighlight", "ButtonShadow", "ButtonText", "Canvas", "CanvasText", "CaptionText", "Field", "FieldText", "GrayText", "Highlight", "HighlightText", "InactiveBorder", "InactiveCaption", "InactiveCaptionText", "InfoBackground", "InfoText", "LinkText", "Mark", "MarkText", "Menu", "MenuText", "Scrollbar", "ThreeDDarkShadow", "ThreeDFace", "ThreeDHighlight", "ThreeDLightShadow", "ThreeDShadow", "VisitedText", "Window", "WindowFrame", "WindowText"],
           a = ["caption", "icon", "menu", "message-box", "small-caption", "status-bar"],
           i = s => ({
-            colors: o.map(c => (s.setAttribute("style", `background-color: ${c} !important`), {
-              [c]: getComputedStyle(s).backgroundColor
+            colors: o.map(u => (s.setAttribute("style", `background-color: ${u} !important`), {
+              [u]: getComputedStyle(s).backgroundColor
             })),
-            fonts: a.map(c => {
-              s.setAttribute("style", `font: ${c} !important`);
+            fonts: a.map(u => {
+              s.setAttribute("style", `font: ${u} !important`);
               const _ = getComputedStyle(s);
               return {
-                [c]: `${_.fontSize} ${_.fontFamily}`
+                [u]: `${_.fontSize} ${_.fontFamily}`
               }
             })
           });
@@ -3133,8 +3133,8 @@ function Mi() {
       rangeStart: i,
       rangeLen: s
     }) => {
-      const c = [...Array(s)].map((u, p) => (p += i, `@media(device-${a}:${p}px){body{--device-${a}:${p};}}`)).join("");
-      return o.innerHTML = `<style>${c}</style>`, getComputedStyle(o).getPropertyValue(`--device-${a}`).trim()
+      const u = [...Array(s)].map((l, p) => (p += i, `@media(device-${a}:${p}px){body{--device-${a}:${p};}}`)).join("");
+      return o.innerHTML = `<style>${u}</style>`, getComputedStyle(o).getPropertyValue(`--device-${a}`).trim()
     },
     r = ({
       body: o,
@@ -3147,30 +3147,30 @@ function Mi() {
           rangeStart: a,
           rangeLen: 1
         }),
-        c = e({
+        u = e({
           body: o,
           type: "height",
           rangeStart: i,
           rangeLen: 1
         });
-      if (s && c) return {
+      if (s && u) return {
         width: a,
         height: i
       };
       const _ = 1e3;
-      return [...Array(10)].find((u, p) => (s || (s = e({
+      return [...Array(10)].find((l, p) => (s || (s = e({
         body: o,
         type: "width",
         rangeStart: p * _,
         rangeLen: _
-      })), c || (c = e({
+      })), u || (u = e({
         body: o,
         type: "height",
         rangeStart: p * _,
         rangeLen: _
-      })), !!(s && c))), {
+      })), !!(s && u))), {
         width: +s,
-        height: +c
+        height: +u
       }
     };
   try {
@@ -3181,12 +3181,12 @@ function Mi() {
       {
         width: i,
         availWidth: s,
-        height: c,
+        height: u,
         availHeight: _
       } = o.screen,
-      u = !(i - s || c - _);
-    (screen.width !== i || i > 800 && u) && (Ce.IFRAME_SCREEN = !0);
-    const p = t(i, c),
+      l = !(i - s || u - _);
+    (screen.width !== i || i > 800 && l) && (Ce.IFRAME_SCREEN = !0);
+    const p = t(i, u),
       f = T => {
         var R;
         return !!((R = o.matchMedia(T)) != null && R.matches)
@@ -3206,7 +3206,7 @@ function Mi() {
         "any-pointer": f("(any-pointer: fine)") ? "fine" : f("(any-pointer: coarse)") ? "coarse" : f("(any-pointer: none)") ? "none" : void 0,
         pointer: f("(pointer: fine)") ? "fine" : f("(pointer: coarse)") ? "coarse" : f("(pointer: none)") ? "none" : void 0,
         "device-aspect-ratio": f(`(device-aspect-ratio: ${p})`) ? p : void 0,
-        "device-screen": f(`(device-width: ${i}px) and (device-height: ${c}px)`) ? `${i} x ${c}` : void 0,
+        "device-screen": f(`(device-width: ${i}px) and (device-height: ${u}px)`) ? `${i} x ${u}` : void 0,
         "display-mode": f("(display-mode: fullscreen)") ? "fullscreen" : f("(display-mode: standalone)") ? "standalone" : f("(display-mode: minimal-ui)") ? "minimal-ui" : f("(display-mode: browser)") ? "browser" : void 0,
         "color-gamut": f("(color-gamut: rec2020)") ? "rec2020" : f("(color-gamut: p3)") ? "p3" : f("(color-gamut: srgb)") ? "srgb" : void 0,
         orientation: d("(orientation: landscape)") ? "landscape" : d("(orientation: portrait)") ? "portrait" : void 0,
@@ -3237,7 +3237,7 @@ function Mi() {
 		@media (pointer: coarse) {body {--pointer: coarse}}
 		@media (pointer: none) {body {--pointer: none}}
 		@media (device-aspect-ratio: ${p}) {body {--device-aspect-ratio: ${p}}}
-		@media (device-width: ${i}px) and (device-height: ${c}px) {body {--device-screen: ${i} x ${c}}}
+		@media (device-width: ${i}px) and (device-height: ${u}px) {body {--device-screen: ${i} x ${u}}}
 		@media (display-mode: fullscreen) {body {--display-mode: fullscreen}}
 		@media (display-mode: standalone) {body {--display-mode: standalone}}
 		@media (display-mode: minimal-ui) {body {--display-mode: minimal-ui}}
@@ -3258,7 +3258,7 @@ function Mi() {
 		</style>
 		`;
     const h = getComputedStyle(a),
-      y = {
+      w = {
         "prefers-reduced-motion": h.getPropertyValue("--prefers-reduced-motion").trim() || void 0,
         "prefers-color-scheme": h.getPropertyValue("--prefers-color-scheme").trim() || void 0,
         monochrome: h.getPropertyValue("--monochrome").trim() || void 0,
@@ -3280,10 +3280,10 @@ function Mi() {
       C = r({
         body: a,
         width: i,
-        height: c
+        height: u
       });
     return {
-      mediaCSS: y,
+      mediaCSS: w,
       matchMediaCSS: g,
       screenQuery: C
     }
@@ -3387,21 +3387,21 @@ async function Ki() {
             width: d.inlineSize,
             height: d.blockSize
           }),
-          c = new Set,
-          u = [...o.getElementsByClassName("pixel-emoji")].reduce((d, g, h) => {
-            const y = getComputedStyle(g),
+          u = new Set,
+          l = [...o.getElementsByClassName("pixel-emoji")].reduce((d, g, h) => {
+            const w = getComputedStyle(g),
               C = i[h],
               {
                 height: T,
                 width: R
-              } = s(y),
+              } = s(w),
               S = `${R},${T}`;
-            return c.has(S) || (c.add(S), d.add(C)), d
+            return u.has(S) || (u.add(S), d.add(C)), d
           }, new Set),
           p = d => +d.replace("px", ""),
-          f = 1e-5 * [...c].map(d => d.split(",").map(g => p(g)).reduce((g, h) => g += +h || 0, 0)).reduce((d, g) => d += g, 0);
+          f = 1e-5 * [...u].map(d => d.split(",").map(g => p(g)).reduce((g, h) => g += +h || 0, 0)).reduce((d, g) => d += g, 0);
         return o.body.removeChild(o.getElementById("pixel-emoji-container")), {
-          emojiSet: [...u],
+          emojiSet: [...l],
           pixelSizeSystemSum: f
         }
       } catch {
@@ -3414,26 +3414,26 @@ async function Ki() {
     t = async o => {
       try {
         let a = [];
-        document.fonts.check(`0px "${dn()}"`) || (a = o.reduce((_, u) => (document.fonts.check(`0px "${u}"`) && _.push(u), _), []));
+        document.fonts.check(`0px "${dn()}"`) || (a = o.reduce((_, l) => (document.fonts.check(`0px "${l}"`) && _.push(l), _), []));
         const i = o.map(_ => new FontFace(_, `local("${_}")`)),
-          c = (await Promise.allSettled(i.map(_ => _.load()))).reduce((_, u) => (u.status == "fulfilled" && _.push(u.value.family), _), []);
-        return [...new Set([...a, ...c])].sort()
+          u = (await Promise.allSettled(i.map(_ => _.load()))).reduce((_, l) => (l.status == "fulfilled" && _.push(l.value.family), _), []);
+        return [...new Set([...a, ...u])].sort()
       } catch {
         return []
       }
     }, e = o => {
       const a = ({
           fonts: s,
-          fontMap: c
+          fontMap: u
         }) => {
           const _ = {
-              11: c[11].find(d => s.includes(d)),
-              10: c[10].find(d => s.includes(d)),
-              "8.1": c["8.1"].find(d => s.includes(d)),
-              8: c[8].find(d => s.includes(d)),
-              7: c[7].filter(d => s.includes(d)).length == c[7].length
+              11: u[11].find(d => s.includes(d)),
+              10: u[10].find(d => s.includes(d)),
+              "8.1": u["8.1"].find(d => s.includes(d)),
+              8: u[8].find(d => s.includes(d)),
+              7: u[7].filter(d => s.includes(d)).length == u[7].length
             },
-            u = "" + Object.keys(_).sort().filter(d => !!_[d]),
+            l = "" + Object.keys(_).sort().filter(d => !!_[d]),
             f = {
               "10,11,7,8,8.1": "11",
               "10,7,8,8.1": "10",
@@ -3446,24 +3446,24 @@ async function Ki() {
               "7,8.1": "7",
               "10,7,8.1": "7",
               "10,11,7,8.1": "7"
-            } [u];
+            } [l];
           return f ? `Windows ${f}` : void 0
         },
         i = ({
           fonts: s,
-          fontMap: c
+          fontMap: u
         }) => {
           const _ = {
-              13: c[13].find(d => s.includes(d)),
-              12: c[12].find(d => s.includes(d)),
-              "10.15-11": c["10.15-11"].find(d => s.includes(d)),
-              "10.13-10.14": c["10.13-10.14"].find(d => s.includes(d)),
-              "10.12": c["10.12"].find(d => s.includes(d)),
-              "10.11": c["10.11"].find(d => s.includes(d)),
-              "10.10": c["10.10"].find(d => s.includes(d)),
-              "10.9": c["10.9"].filter(d => s.includes(d)).length == c["10.9"].length
+              13: u[13].find(d => s.includes(d)),
+              12: u[12].find(d => s.includes(d)),
+              "10.15-11": u["10.15-11"].find(d => s.includes(d)),
+              "10.13-10.14": u["10.13-10.14"].find(d => s.includes(d)),
+              "10.12": u["10.12"].find(d => s.includes(d)),
+              "10.11": u["10.11"].find(d => s.includes(d)),
+              "10.10": u["10.10"].find(d => s.includes(d)),
+              "10.9": u["10.9"].filter(d => s.includes(d)).length == u["10.9"].length
             },
-            u = "" + Object.keys(_).sort().filter(d => !!_[d]),
+            l = "" + Object.keys(_).sort().filter(d => !!_[d]),
             f = {
               "10.10,10.11,10.12,10.13-10.14,10.15-11,10.9,12,13": "Ventura",
               "10.10,10.11,10.12,10.13-10.14,10.15-11,10.9,12": "Monterey",
@@ -3473,7 +3473,7 @@ async function Ki() {
               "10.10,10.11,10.9": "El Capitan",
               "10.10,10.9": "Yosemite",
               "10.9": "Mavericks"
-            } [u];
+            } [l];
           return f ? `macOS ${f}` : void 0
         };
       return a({
@@ -3484,8 +3484,8 @@ async function Ki() {
         fontMap: In
       })
     }, r = o => Object.keys(on).reduce((i, s) => {
-      const c = on[s];
-      return c.filter(u => o.includes(u)).length == c.length ? [...i, s] : i
+      const u = on[s];
+      return u.filter(l => o.includes(l)).length == u.length ? [...i, s] : i
     }, []);
   try {
     await ie();
@@ -3493,11 +3493,11 @@ async function Ki() {
       a = Ge(),
       i = o && o.document && o.document.body ? o.document : document,
       s = "font-fingerprint",
-      c = i.createElement("div");
-    c.setAttribute("id", s), i.body.appendChild(c);
+      u = i.createElement("div");
+    u.setAttribute("id", s), i.body.appendChild(u);
     const {
       emojiSet: _,
-      pixelSizeSystemSum: u
+      pixelSizeSystemSum: l
     } = n({
       doc: i,
       id: s,
@@ -3508,7 +3508,7 @@ async function Ki() {
       platformVersion: d,
       apps: g,
       emojiSet: _,
-      pixelSizeSystemSum: u,
+      pixelSizeSystemSum: l,
       lied: h
     }
   } catch (o) {
@@ -3535,28 +3535,28 @@ function Ji() {
     a = CSS.supports("border-end-end-radius: initial"),
     i = "randomUUID" in Crypto.prototype,
     s = "BarcodeDetector" in window,
-    c = "downlinkMax" in (((v = window.NetworkInformation) == null ? void 0 : v.prototype) || {}),
+    u = "downlinkMax" in (((v = window.NetworkInformation) == null ? void 0 : v.prototype) || {}),
     _ = "ContentIndex" in window,
-    u = "ContactsManager" in window,
+    l = "ContactsManager" in window,
     p = "EyeDropper" in window,
     f = "FileSystemWritableFileStream" in window,
     d = "HID" in window && "HIDDevice" in window,
     g = "SerialPort" in window && "Serial" in window,
     h = "SharedWorker" in window,
-    y = "ontouchstart" in Window && "TouchEvent" in window,
+    w = "ontouchstart" in Window && "TouchEvent" in window,
     C = "setAppBadge" in Navigator.prototype,
     T = (E, D) => E ? [D] : [],
     R = {
-      [_e.ANDROID]: [...T(o, s), ...T(e, _), ...T(n, u), c, ...T(i, !p), ...T(r, !f), ...T(a, !d), ...T(a, !g), !h, y, ...T(t, !C)],
-      [_e.CHROME_OS]: [...T(o, s), ...T(e, !_), ...T(n, !u), c, ...T(i, p), ...T(r, f), ...T(a, d), ...T(a, g), h, y || !y, ...T(t, !C)],
-      [_e.WINDOWS]: [...T(o, !s), ...T(e, !_), ...T(n, !u), !c, ...T(i, p), ...T(r, f), ...T(a, d), ...T(a, g), h, y || !y, ...T(t, C)],
-      [_e.MAC]: [...T(o, s), ...T(e, !_), ...T(n, !u), !c, ...T(i, p), ...T(r, f), ...T(a, d), ...T(a, g), h, !y, ...T(t, C)],
-      [_e.LINUX]: [...T(o, !s), ...T(e, !_), ...T(n, !u), !c, ...T(i, p), ...T(r, f), ...T(a, d), ...T(a, g), h, !y || !y, ...T(t, !C)]
+      [_e.ANDROID]: [...T(o, s), ...T(e, _), ...T(n, l), u, ...T(i, !p), ...T(r, !f), ...T(a, !d), ...T(a, !g), !h, w, ...T(t, !C)],
+      [_e.CHROME_OS]: [...T(o, s), ...T(e, !_), ...T(n, !l), u, ...T(i, p), ...T(r, f), ...T(a, d), ...T(a, g), h, w || !w, ...T(t, !C)],
+      [_e.WINDOWS]: [...T(o, !s), ...T(e, !_), ...T(n, !l), !u, ...T(i, p), ...T(r, f), ...T(a, d), ...T(a, g), h, w || !w, ...T(t, C)],
+      [_e.MAC]: [...T(o, s), ...T(e, !_), ...T(n, !l), !u, ...T(i, p), ...T(r, f), ...T(a, d), ...T(a, g), h, !w, ...T(t, C)],
+      [_e.LINUX]: [...T(o, !s), ...T(e, !_), ...T(n, !l), !u, ...T(i, p), ...T(r, f), ...T(a, d), ...T(a, g), h, !w || !w, ...T(t, !C)]
     },
     S = {
       noContentIndex: e && !_,
-      noContactsManager: n && !u,
-      noDownlinkMax: !c
+      noContactsManager: n && !l,
+      noDownlinkMax: !u
     },
     N = Object.keys(R).reduce((E, D) => {
       const B = R[D],
@@ -3564,8 +3564,8 @@ function Ji() {
       return E[D] = P, E
     }, {}),
     A = Object.keys(N).reduce((E, D) => N[E] > N[D] ? E : D),
-    w = N[A];
-  return [N, w, S]
+    y = N[A];
+  return [N, y, S]
 }
 const or = {
   "-apple-system": _e.MAC,
@@ -3610,8 +3610,8 @@ async function Zi({
         ...navigator.mimeTypes
       }),
       i = Qi(),
-      [s, c, _] = Ji(),
-      u = {
+      [s, u, _] = Ji(),
+      l = {
         chromium: ue,
         likeHeadless: {
           noChrome: ue && !("chrome" in window),
@@ -3676,20 +3676,20 @@ async function Zi({
         likeHeadless: p,
         headless: f,
         stealth: d
-      } = u,
+      } = l,
       g = Object.keys(p),
       h = Object.keys(f),
-      y = Object.keys(d),
+      w = Object.keys(d),
       C = +(g.filter(S => p[S]).length / g.length * 100).toFixed(0),
       T = +(h.filter(S => f[S]).length / h.length * 100).toFixed(0),
-      R = +(y.filter(S => d[S]).length / y.length * 100).toFixed(0);
+      R = +(w.filter(S => d[S]).length / w.length * 100).toFixed(0);
     return {
-      ...u,
+      ...l,
       likeHeadlessRating: C,
       headlessRating: T,
       stealthRating: R,
       systemFonts: i,
-      platformEstimate: [s, c]
+      platformEstimate: [s, u]
     }
   } catch (r) {
     re(r);
@@ -3732,7 +3732,7 @@ async function es() {
         compactDisplay: "long"
       }).format(21e6)),
       s = be(() => new Intl.PluralRules().select(1)),
-      c = be(() => new Intl.RelativeTimeFormat(void 0, {
+      u = be(() => new Intl.RelativeTimeFormat(void 0, {
         localeMatcher: "best fit",
         numeric: "auto",
         style: "long"
@@ -3744,7 +3744,7 @@ async function es() {
       listFormat: a,
       numberFormat: i,
       pluralRules: s,
-      relativeTimeFormat: c,
+      relativeTimeFormat: u,
       locale: "" + _,
       lied: e
     }
@@ -3762,14 +3762,14 @@ async function ns() {
         r = new Audio,
         o = "MediaRecorder" in window;
       return t.reduce((i, s) => {
-        const c = {
+        const u = {
           mimeType: s,
           audioPlayType: r.canPlayType(s),
           videoPlayType: e.canPlayType(s),
           mediaSource: MediaSource.isTypeSupported(s),
           mediaRecorder: o ? MediaRecorder.isTypeSupported(s) : !1
         };
-        return !c.audioPlayType && !c.videoPlayType && !c.mediaSource && !c.mediaRecorder || i.push(c), i
+        return !u.audioPlayType && !u.videoPlayType && !u.mediaSource && !u.mediaRecorder || i.push(u), i
       }, [])
     } catch {
       return
@@ -3791,11 +3791,11 @@ async function rs(n) {
     let e = t["Navigator.appVersion"] || t["Navigator.deviceMemory"] || t["Navigator.doNotTrack"] || t["Navigator.hardwareConcurrency"] || t["Navigator.language"] || t["Navigator.languages"] || t["Navigator.maxTouchPoints"] || t["Navigator.oscpu"] || t["Navigator.platform"] || t["Navigator.userAgent"] || t["Navigator.vendor"] || t["Navigator.plugins"] || t["Navigator.mimeTypes"] || !1;
     const r = "chrome" in window ? navigator.userAgent.includes(navigator.appVersion) : !0,
       o = I(async () => {
-        const u = be(() => navigator.userAgent),
-          p = On(u),
+        const l = be(() => navigator.userAgent),
+          p = On(l),
           f = await Mr();
         return Hr({
-          ua: u,
+          ua: l,
           os: p,
           isBrave: f
         })
@@ -3803,9 +3803,9 @@ async function rs(n) {
       a = {
         platform: I(() => {
           const {
-            platform: u
-          } = navigator, p = ["win", "linux", "mac", "arm", "pike", "linux", "iphone", "ipad", "ipod", "android", "x11"], f = typeof u == "string" ? u.toLowerCase() : "";
-          return !!f && p.some(g => f.includes(g)) || ae("platform", `${u} is unusual`), nn !== Jn && (e = !0, Z("Navigator.platform", `${Jn} platform and ${nn} user agent do not match`)), n && u != n.platform && (e = !0), u
+            platform: l
+          } = navigator, p = ["win", "linux", "mac", "arm", "pike", "linux", "iphone", "ipad", "ipod", "android", "x11"], f = typeof l == "string" ? l.toLowerCase() : "";
+          return !!f && p.some(g => f.includes(g)) || ae("platform", `${l} is unusual`), nn !== Jn && (e = !0, Z("Navigator.platform", `${Jn} platform and ${nn} user agent do not match`)), n && l != n.platform && (e = !0), l
         }),
         system: I(() => On(navigator.userAgent), "userAgent system failed"),
         device: I(() => Ur({
@@ -3813,22 +3813,22 @@ async function rs(n) {
         }), "userAgent device failed"),
         userAgent: I(() => {
           const {
-            userAgent: u
+            userAgent: l
           } = navigator;
-          return r || ae("userAgent", `${u} does not match appVersion`), /\s{2,}|^\s|\s$/g.test(u) && ae("userAgent", "extra spaces detected"), Jt(u).length && ae("userAgent is gibberish", u), n && u != n.userAgent && (e = !0), u.trim().replace(/\s{2,}/, " ")
+          return r || ae("userAgent", `${l} does not match appVersion`), /\s{2,}|^\s|\s$/g.test(l) && ae("userAgent", "extra spaces detected"), Jt(l).length && ae("userAgent is gibberish", l), n && l != n.userAgent && (e = !0), l.trim().replace(/\s{2,}/, " ")
         }, "userAgent failed"),
         uaPostReduction: Fr((navigator || {}).userAgent),
         appVersion: I(() => {
           const {
-            appVersion: u
+            appVersion: l
           } = navigator;
-          return r || ae("appVersion", `${u} does not match userAgent`), "appVersion" in navigator && !u && ae("appVersion", "Living Standard property returned falsy value"), /\s{2,}|^\s|\s$/g.test(u) && ae("appVersion", "extra spaces detected"), u.trim().replace(/\s{2,}/, " ")
+          return r || ae("appVersion", `${l} does not match userAgent`), "appVersion" in navigator && !l && ae("appVersion", "Living Standard property returned falsy value"), /\s{2,}|^\s|\s$/g.test(l) && ae("appVersion", "extra spaces detected"), l.trim().replace(/\s{2,}/, " ")
         }, "appVersion failed"),
         deviceMemory: I(() => {
           var g;
           if (!("deviceMemory" in navigator)) return;
           const {
-            deviceMemory: u
+            deviceMemory: l
           } = navigator;
           ({
             "0.25": !0,
@@ -3839,14 +3839,14 @@ async function rs(n) {
             8: !0,
             16: !0,
             32: !0
-          })[String(u)] || ae("deviceMemory", `${u} is not a valid value [0.25, 0.5, 1, 2, 4, 8, 16, 32]`);
+          })[String(l)] || ae("deviceMemory", `${l} is not a valid value [0.25, 0.5, 1, 2, 4, 8, 16, 32]`);
           const f = ((g = performance == null ? void 0 : performance.memory) == null ? void 0 : g.jsHeapSizeLimit) || null,
             d = f ? +(f / 1073741824).toFixed(1) : 0;
-          return d > u && ae("deviceMemory", `available memory ${d}GB is greater than device memory ${u}GB`), n && u !== n.deviceMemory && (e = !0), u
+          return d > l && ae("deviceMemory", `available memory ${d}GB is greater than device memory ${l}GB`), n && l !== n.deviceMemory && (e = !0), l
         }, "deviceMemory failed"),
         doNotTrack: I(() => {
           const {
-            doNotTrack: u
+            doNotTrack: l
           } = navigator;
           return {
             1: !0,
@@ -3858,12 +3858,12 @@ async function rs(n) {
             unspecified: !0,
             null: !0,
             undefined: !0
-          } [String(u)] || ae("doNotTrack - unusual result", u), u
+          } [String(l)] || ae("doNotTrack - unusual result", l), l
         }, "doNotTrack failed"),
         globalPrivacyControl: I(() => {
           if (!("globalPrivacyControl" in navigator)) return;
           const {
-            globalPrivacyControl: u
+            globalPrivacyControl: l
           } = navigator;
           return {
             1: !0,
@@ -3875,46 +3875,46 @@ async function rs(n) {
             unspecified: !0,
             null: !0,
             undefined: !0
-          } [String(u)] || ae("globalPrivacyControl - unusual result", u), u
+          } [String(l)] || ae("globalPrivacyControl - unusual result", l), l
         }, "globalPrivacyControl failed"),
         hardwareConcurrency: I(() => {
           if (!("hardwareConcurrency" in navigator)) return;
           const {
-            hardwareConcurrency: u
+            hardwareConcurrency: l
           } = navigator;
-          return n && u !== n.hardwareConcurrency && (e = !0), u
+          return n && l !== n.hardwareConcurrency && (e = !0), l
         }, "hardwareConcurrency failed"),
         language: I(() => {
           const {
-            language: u,
+            language: l,
             languages: p
           } = navigator;
-          if (u && p) {
-            const f = (/^.{0,2}/g.exec(u) ?? [""])[0];
-            if ((/^.{0,2}/g.exec(p[0]) ?? [""])[0] != f && ae("language/languages", `${[u,p].join(" ")} mismatch`), n) {
-              u != n.language && (e = !0, Z("Navigator.language", `${u} does not match worker scope`));
+          if (l && p) {
+            const f = (/^.{0,2}/g.exec(l) ?? [""])[0];
+            if ((/^.{0,2}/g.exec(p[0]) ?? [""])[0] != f && ae("language/languages", `${[l,p].join(" ")} mismatch`), n) {
+              l != n.language && (e = !0, Z("Navigator.language", `${l} does not match worker scope`));
               const g = p.join(",");
               g !== n.languages.join(",") && (e = !0, Z("Navigator.languages", `${g} does not match worker scope`))
             }
-            return `${p.join(", ")} (${u})`
+            return `${p.join(", ")} (${l})`
           }
-          return `${u} ${p}`
+          return `${l} ${p}`
         }, "language(s) failed"),
         maxTouchPoints: I(() => "maxTouchPoints" in navigator ? navigator.maxTouchPoints : null, "maxTouchPoints failed"),
         vendor: I(() => navigator.vendor, "vendor failed"),
         mimeTypes: I(() => {
           const {
-            mimeTypes: u
+            mimeTypes: l
           } = navigator;
-          return u ? [...u].map(p => p.type) : []
+          return l ? [...l].map(p => p.type) : []
         }, "mimeTypes failed"),
         oscpu: I(() => navigator.oscpu, "oscpu failed"),
         plugins: I(() => {
           const {
-            plugins: u
+            plugins: l
           } = navigator;
-          if (!(u instanceof PluginArray)) return;
-          const p = u ? [...u].map(f => ({
+          if (!(l instanceof PluginArray)) return;
+          const p = l ? [...l].map(f => ({
             name: f.name,
             description: f.description,
             filename: f.filename,
@@ -3924,8 +3924,8 @@ async function rs(n) {
             const {
               name: d,
               description: g
-            } = f, h = Jt(d), y = Jt(g);
-            h.length && ae("plugin name is gibberish", d), y.length && ae("plugin description is gibberish", g)
+            } = f, h = Jt(d), w = Jt(g);
+            h.length && ae("plugin name is gibberish", d), w.length && ae("plugin description is gibberish", g)
           }), p
         }, "plugins failed"),
         properties: I(() => Object.keys(Object.getPrototypeOf(navigator)), "navigator keys failed"),
@@ -3934,21 +3934,21 @@ async function rs(n) {
         pdfViewerEnabled: is()
       },
       i = () => I(() => {
-        const u = navigator;
-        if (!(!u.userAgentData || !u.userAgentData.getHighEntropyValues)) return u.userAgentData.getHighEntropyValues(["platform", "platformVersion", "architecture", "bitness", "model", "uaFullVersion"]).then(p => {
+        const l = navigator;
+        if (!(!l.userAgentData || !l.userAgentData.getHighEntropyValues)) return l.userAgentData.getHighEntropyValues(["platform", "platformVersion", "architecture", "bitness", "model", "uaFullVersion"]).then(p => {
           const {
             brands: f,
             mobile: d
-          } = u.userAgentData || {}, g = (C, T = !1) => C.filter(R => !/Not/.test(R.brand)).map(R => `${R.brand}${T?` ${R.version}`:""}`), h = C => C.length > 1 ? C.filter(T => !/Chromium/.test(T)) : C;
+          } = l.userAgentData || {}, g = (C, T = !1) => C.filter(R => !/Not/.test(R.brand)).map(R => `${R.brand}${T?` ${R.version}`:""}`), h = C => C.length > 1 ? C.filter(T => !/Chromium/.test(T)) : C;
           return p.brands || (p.brands = f), p.brandsVersion = g(p.brands ?? [], !0), p.brands = g(p.brands ?? []), p.brandsVersion = h(p.brandsVersion ?? []), p.brands = h(p.brands ?? []), p.mobile || (p.mobile = d), Object.keys(p).sort().reduce((C, T) => (C[T] = p[T], C), {})
         })
       }, "userAgentData failed"),
       s = () => I(() => {
-        const u = navigator;
-        if (!(!("bluetooth" in navigator) || !u.bluetooth || !u.bluetooth.getAvailability)) return u.bluetooth.getAvailability()
+        const l = navigator;
+        if (!(!("bluetooth" in navigator) || !l.bluetooth || !l.bluetooth.getAvailability)) return l.bluetooth.getAvailability()
       }, "bluetoothAvailability failed"),
-      c = () => I(() => {
-        const u = f => navigator.permissions.query({
+      u = () => I(() => {
+        const l = f => navigator.permissions.query({
           name: f
         }).then(d => ({
           name: f,
@@ -3957,35 +3957,35 @@ async function rs(n) {
           name: f,
           state: "unknown"
         }));
-        return "permissions" in navigator ? Promise.all([u("accelerometer"), u("ambient-light-sensor"), u("background-fetch"), u("background-sync"), u("bluetooth"), u("camera"), u("clipboard"), u("device-info"), u("display-capture"), u("gamepad"), u("geolocation"), u("gyroscope"), u("magnetometer"), u("microphone"), u("midi"), u("nfc"), u("notifications"), u("persistent-storage"), u("push"), u("screen-wake-lock"), u("speaker"), u("speaker-selection")]).then(f => f.reduce((d, g) => {
+        return "permissions" in navigator ? Promise.all([l("accelerometer"), l("ambient-light-sensor"), l("background-fetch"), l("background-sync"), l("bluetooth"), l("camera"), l("clipboard"), l("device-info"), l("display-capture"), l("gamepad"), l("geolocation"), l("gyroscope"), l("magnetometer"), l("microphone"), l("midi"), l("nfc"), l("notifications"), l("persistent-storage"), l("push"), l("screen-wake-lock"), l("speaker"), l("speaker-selection")]).then(f => f.reduce((d, g) => {
           const {
             state: h,
-            name: y
+            name: w
           } = g || {};
-          return d[h] ? (d[h].push(y), d) : (d[h] = [y], d)
+          return d[h] ? (d[h].push(w), d) : (d[h] = [w], d)
         }, {})).catch(() => {}) : void 0
       }, "permissions failed"),
       _ = () => I(() => {
-        const u = navigator.gpu;
-        if (u) return u.requestAdapter().then(p => {
+        const l = navigator.gpu;
+        if (l) return l.requestAdapter().then(p => {
           if (!p) return;
           const {
             limits: f,
             features: d
-          } = p, g = y => {
+          } = p, g = w => {
             const {
               architecture: C,
               description: T,
               device: R,
               vendor: S
-            } = y, N = [S, C, T, R], A = [...(d == null ? void 0 : d.values()) ?? []], w = (v => {
+            } = w, N = [S, C, T, R], A = [...(d == null ? void 0 : d.values()) ?? []], y = (v => {
               const E = {};
               for (const D in v) E[D] = v[D];
               return E
             })(f);
-            return Fe.webGpuAdapter = N, Fe.webGpuFeatures = A, Fe.webGpuLimits = W(w), {
+            return Fe.webGpuAdapter = N, Fe.webGpuFeatures = A, Fe.webGpuLimits = W(y), {
               adapterInfo: N,
-              limits: w
+              limits: y
             }
           }, {
             info: h
@@ -3993,9 +3993,9 @@ async function rs(n) {
           return h ? g(h) : p.requestAdapterInfo ? p.requestAdapterInfo().then(g) : void 0
         })
       }, "webgpu failed");
-    return await ie(), Promise.all([o, i(), s(), c(), _()]).then(([u, p, f, d, g]) => ({
+    return await ie(), Promise.all([o, i(), s(), u(), _()]).then(([l, p, f, d, g]) => ({
       ...a,
-      userAgentParsed: u,
+      userAgentParsed: l,
       userAgentData: p,
       bluetoothAvailability: f,
       permissions: d,
@@ -4174,9 +4174,9 @@ const se = "c767712b",
     cydec: ze,
     canvasblocker: rt,
     chameleon: Pe,
-    duckduckgo: we,
+    duckduckgo: ye,
     privacybadger: ar,
-    privacypossum: yn,
+    privacypossum: wn,
     jshelter: Ie,
     puppeteerExtra: le,
     fakeBrowser: Se
@@ -4188,9 +4188,9 @@ function cs(n, t) {
     if (t >= 7 && ze.contentDocumentHash.includes(n.contentDocumentHash) && ze.contentWindowHash.includes(n.contentWindowHash) && ze.createElementHash.includes(n.createElementHash) && ze.getElementByIdHash.includes(n.getElementByIdHash) && ze.toDataURLHash.includes(n.toDataURLHash) && ze.toBlobHash.includes(n.toBlobHash) && ze.getImageDataHash.includes(n.getImageDataHash)) return "CyDec";
     if (t >= 6 && rt.contentDocumentHash.includes(n.contentDocumentHash) && rt.contentWindowHash.includes(n.contentWindowHash) && rt.appendHash.includes(n.appendHash) && rt.toDataURLHash.includes(n.toDataURLHash) && rt.toBlobHash.includes(n.toBlobHash) && rt.getImageDataHash.includes(n.getImageDataHash)) return "CanvasBlocker";
     if (t >= 9 && Pe.appendHash.includes(n.appendHash) && Pe.insertAdjacentElementHash.includes(n.insertAdjacentElementHash) && Pe.insertAdjacentHTMLHash.includes(n.insertAdjacentHTMLHash) && Pe.insertAdjacentTextHash.includes(n.insertAdjacentTextHash) && Pe.prependHash.includes(n.prependHash) && Pe.replaceWithHash.includes(n.replaceWithHash) && Pe.appendChildHash.includes(n.appendChildHash) && Pe.insertBeforeHash.includes(n.insertBeforeHash) && Pe.replaceChildHash.includes(n.replaceChildHash)) return "Chameleon";
-    if (t >= 7 && we.toDataURLHash.includes(n.toDataURLHash) && we.toBlobHash.includes(n.toBlobHash) && we.getImageDataHash.includes(n.getImageDataHash) && we.getByteFrequencyDataHash.includes(n.getByteFrequencyDataHash) && we.getByteTimeDomainDataHash.includes(n.getByteTimeDomainDataHash) && we.getFloatFrequencyDataHash.includes(n.getFloatFrequencyDataHash) && we.getFloatTimeDomainDataHash.includes(n.getFloatTimeDomainDataHash) && we.copyFromChannelHash.includes(n.copyFromChannelHash) && we.getChannelDataHash.includes(n.getChannelDataHash) && we.hardwareConcurrencyHash.includes(n.hardwareConcurrencyHash) && we.availHeightHash.includes(n.availHeightHash) && we.availLeftHash.includes(n.availLeftHash) && we.availTopHash.includes(n.availTopHash) && we.availWidthHash.includes(n.availWidthHash) && we.colorDepthHash.includes(n.colorDepthHash) && we.pixelDepthHash.includes(n.pixelDepthHash)) return "DuckDuckGo";
+    if (t >= 7 && ye.toDataURLHash.includes(n.toDataURLHash) && ye.toBlobHash.includes(n.toBlobHash) && ye.getImageDataHash.includes(n.getImageDataHash) && ye.getByteFrequencyDataHash.includes(n.getByteFrequencyDataHash) && ye.getByteTimeDomainDataHash.includes(n.getByteTimeDomainDataHash) && ye.getFloatFrequencyDataHash.includes(n.getFloatFrequencyDataHash) && ye.getFloatTimeDomainDataHash.includes(n.getFloatTimeDomainDataHash) && ye.copyFromChannelHash.includes(n.copyFromChannelHash) && ye.getChannelDataHash.includes(n.getChannelDataHash) && ye.hardwareConcurrencyHash.includes(n.hardwareConcurrencyHash) && ye.availHeightHash.includes(n.availHeightHash) && ye.availLeftHash.includes(n.availLeftHash) && ye.availTopHash.includes(n.availTopHash) && ye.availWidthHash.includes(n.availWidthHash) && ye.colorDepthHash.includes(n.colorDepthHash) && ye.pixelDepthHash.includes(n.pixelDepthHash)) return "DuckDuckGo";
     if (t >= 2 && ar.getImageDataHash.includes(n.getImageDataHash) && ar.toDataURLHash.includes(n.toDataURLHash)) return "Privacy Badger";
-    if (t >= 3 && yn.hardwareConcurrencyHash.includes(n.hardwareConcurrencyHash) && yn.availWidthHash.includes(n.availWidthHash) && yn.colorDepthHash.includes(n.colorDepthHash)) return "Privacy Possum";
+    if (t >= 3 && wn.hardwareConcurrencyHash.includes(n.hardwareConcurrencyHash) && wn.availWidthHash.includes(n.availWidthHash) && wn.colorDepthHash.includes(n.colorDepthHash)) return "Privacy Possum";
     if (t >= 2 && gn.contentDocumentHash.includes(n.contentDocumentHash) && gn.contentWindowHash.includes(n.contentDocumentHash) && gn.getContextHash.includes(n.getContextHash) && n.hardwareConcurrencyHash == se) return "NoScript";
     if (t >= 14 && Ie.contentDocumentHash.includes(n.contentDocumentHash) && Ie.contentWindowHash.includes(n.contentDocumentHash) && Ie.appendHash.includes(n.appendHash) && Ie.insertAdjacentElementHash.includes(n.insertAdjacentElementHash) && Ie.insertAdjacentHTMLHash.includes(n.insertAdjacentHTMLHash) && Ie.prependHash.includes(n.prependHash) && Ie.replaceWithHash.includes(n.replaceWithHash) && Ie.appendChildHash.includes(n.appendChildHash) && Ie.insertBeforeHash.includes(n.insertBeforeHash) && Ie.replaceChildHash.includes(n.replaceChildHash) && Ie.hardwareConcurrencyHash.includes(n.hardwareConcurrencyHash)) return "JShelter";
     if (t >= 13 && le.contentDocumentHash.includes(n.contentDocumentHash) && le.contentWindowHash.includes(n.contentWindowHash) && le.createElementHash.includes(n.createElementHash) && le.getElementByIdHash.includes(n.getElementByIdHash) && le.appendHash.includes(n.appendHash) && le.insertAdjacentElementHash.includes(n.insertAdjacentElementHash) && le.insertAdjacentHTMLHash.includes(n.insertAdjacentHTMLHash) && le.insertAdjacentTextHash.includes(n.insertAdjacentTextHash) && le.prependHash.includes(n.prependHash) && le.replaceWithHash.includes(n.replaceWithHash) && le.appendChildHash.includes(n.appendChildHash) && le.insertBeforeHash.includes(n.insertBeforeHash) && le.contentDocumentHash.includes(n.contentDocumentHash) && le.replaceChildHash.includes(n.replaceChildHash) && le.getContextHash.includes(n.getContextHash) && le.toDataURLHash.includes(n.toDataURLHash) && le.toBlobHash.includes(n.toBlobHash) && le.getImageDataHash.includes(n.getImageDataHash) && le.hardwareConcurrencyHash.includes(n.hardwareConcurrencyHash)) return "puppeteer-extra";
@@ -4201,8 +4201,8 @@ async function us() {
   const n = +new Date,
     t = +("" + n).slice(-1),
     e = new RegExp(`${t}+$`),
-    r = (_, u) => new Promise(p => setTimeout(() => {
-      const f = u ? n : +new Date,
+    r = (_, l) => new Promise(p => setTimeout(() => {
+      const f = l ? n : +new Date,
         d = e.exec("" + f);
       p(d ? d[0] : f)
     }, _)),
@@ -4210,10 +4210,10 @@ async function us() {
     a = o.map(_ => "" + _),
     i = a[0].slice(-1),
     s = a.every(_ => _.slice(-1) === i),
-    c = a[0].length;
+    u = a[0].length;
   return {
     protection: s,
-    delays: o.map((_, u) => a[u].length > c ? a[u].slice(-c) : _),
+    delays: o.map((_, l) => a[l].length > u ? a[l].slice(-u) : _),
     precision: s ? Math.min(...a.map(_ => _.length)) : void 0,
     precisionValue: s ? i : void 0
   }
@@ -4227,22 +4227,22 @@ async function ls() {
         security: void 0,
         mode: void 0,
         extension: void 0,
-        engine: ue ? "Blink" : wt ? "Gecko" : ""
+        engine: ue ? "Blink" : yt ? "Gecko" : ""
       },
       [e, r] = await Promise.all([Mr(), ue ? void 0 : us()]);
     if (e) {
-      const c = Ja();
+      const u = Ja();
       t.privacy = "Brave", t.security = {
         FileSystemWritableFileStream: "FileSystemWritableFileStream" in window,
         Serial: "Serial" in window,
         ReportingObserver: "ReportingObserver" in window
-      }, t.mode = c.allow ? "allow" : c.standard ? "standard" : c.strict ? "strict" : ""
+      }, t.mode = u.allow ? "allow" : u.standard ? "standard" : u.strict ? "strict" : ""
     }
     const {
       protection: o
     } = r || {};
-    if (wt && o) {
-      const c = {
+    if (yt && o) {
+      const u = {
           OfflineAudioContext: "OfflineAudioContext" in window,
           WebGL2RenderingContext: "WebGL2RenderingContext" in window,
           WebAssembly: "WebAssembly" in window,
@@ -4251,13 +4251,13 @@ async function ls() {
           MediaDevices: "MediaDevices" in window,
           Credential: "Credential" in window
         },
-        _ = Object.keys(c),
-        u = new Set(["RTCRtpTransceiver", "MediaDevices", "Credential"]),
-        p = _.filter(d => u.has(d) && !c[d]).length == u.size,
-        f = !c.WebAssembly;
+        _ = Object.keys(u),
+        l = new Set(["RTCRtpTransceiver", "MediaDevices", "Credential"]),
+        p = _.filter(d => l.has(d) && !u[d]).length == l.size,
+        f = !u.WebAssembly;
       t.privacy = p ? "Tor Browser" : "Firefox", t.security = {
         reduceTimerPrecision: !0,
-        ...c
+        ...u
       }, t.mode = p ? f ? "safer" : "standard" : "resistFingerprinting"
     }
     const a = Object.keys(n).length;
@@ -4295,7 +4295,7 @@ async function ls() {
         pixelDepthHash: W(n["Screen.pixelDepth"])
       },
       s = {};
-    for (const [c, _] of Object.entries(i)) _ !== se && (s[c.slice(0, -4)] = _);
+    for (const [u, _] of Object.entries(i)) _ !== se && (s[u.slice(0, -4)] = _);
     return t.extensionHashPattern = s, t.extension = cs(i, a), t
   } catch (n) {
     re(n);
@@ -4310,7 +4310,7 @@ function ds() {
     return !1
   }
 }
-let wn;
+let yn;
 async function _s() {
   try {
     const n = Ge();
@@ -4322,14 +4322,14 @@ async function _s() {
       availWidth: a,
       availHeight: i,
       colorDepth: s,
-      pixelDepth: c
+      pixelDepth: u
     } = e;
-    r = Number(r), o = Number(o), a = Number(a), i = Number(i), s = Number(s), c = Number(c), wn ? {
+    r = Number(r), o = Number(o), a = Number(a), i = Number(i), s = Number(s), u = Number(u), yn ? {
       width: r,
       height: o,
       availWidth: a,
       availHeight: i
-    } = wn : wn = {
+    } = yn : yn = {
       width: r,
       height: o,
       availWidth: a,
@@ -4339,8 +4339,8 @@ async function _s() {
         var h;
         return !!((h = matchMedia(g)) != null && h.matches)
       },
-      u = window.devicePixelRatio || 0,
-      p = !_(`(resolution: ${u}dppx)`);
+      l = window.devicePixelRatio || 0,
+      p = !_(`(resolution: ${l}dppx)`);
     !bt && p && (t = !0, Z("Window.devicePixelRatio", "lied dpr"));
     const f = !(r - a || o - i);
     return r > 800 && f && (Ce.SCREEN = !0), {
@@ -4349,7 +4349,7 @@ async function _s() {
       availWidth: a,
       availHeight: i,
       colorDepth: s,
-      pixelDepth: c,
+      pixelDepth: u,
       touch: ds(),
       lied: t
     }
@@ -4401,8 +4401,8 @@ const ms = ["ALIASED_POINT_SIZE_RANGE", "ALIASED_LINE_WIDTH_RANGE", "STENCIL_VAL
     EXT_blend_minmax: ["MIN_EXT", "MAX_EXT"]
   },
   gs = new Set(["CLIP_DEPTH_MODE_EXT", "CLIP_ORIGIN_EXT", "DEPTH_CLAMP_EXT", "GPU_DISJOINT_EXT", "POLYGON_OFFSET_CLAMP_EXT", "MAX_TEXTURE_MAX_ANISOTROPY_EXT", "FRAGMENT_SHADER_DERIVATIVE_HINT_OES", "VERTEX_ARRAY_BINDING_OES", "MAX_DUAL_SOURCE_DRAW_BUFFERS_WEBGL", "UNMASKED_RENDERER_WEBGL", "UNMASKED_VENDOR_WEBGL", "MAX_COLOR_ATTACHMENTS_WEBGL", "MAX_DRAW_BUFFERS_WEBGL"]),
-  ys = new Set(["ALIASED_LINE_WIDTH_RANGE", "SHADING_LANGUAGE_VERSION", "VERSION"]);
-async function ws() {
+  ws = new Set(["ALIASED_LINE_WIDTH_RANGE", "SHADING_LANGUAGE_VERSION", "VERSION"]);
+async function ys() {
   var o;
   let n, t, e, r;
   try {
@@ -4410,9 +4410,9 @@ async function ws() {
     const a = Ge(),
       i = fn(),
       s = a["HTMLCanvasElement.toDataURL"],
-      c = a["HTMLCanvasElement.getContext"],
+      u = a["HTMLCanvasElement.getContext"],
       _ = a["WebGLRenderingContext.getParameter"] || a["WebGL2RenderingContext.getParameter"] || a["WebGLRenderingContext.getExtension"] || a["WebGL2RenderingContext.getExtension"],
-      u = s || c || _ || a["WebGLRenderingContext.getSupportedExtensions"] || a["WebGL2RenderingContext.getSupportedExtensions"] || !1;
+      l = s || u || _ || a["WebGLRenderingContext.getSupportedExtensions"] || a["WebGL2RenderingContext.getSupportedExtensions"] || !1;
     let p = window;
     !Lr && i && (p = i);
     const f = p.document;
@@ -4424,21 +4424,21 @@ async function ws() {
         if (!k) return;
         const K = I(() => k.getShaderPrecisionFormat(k[M], k.LOW_FLOAT)),
           oe = I(() => k.getShaderPrecisionFormat(k[M], k.MEDIUM_FLOAT)),
-          ye = I(() => k.getShaderPrecisionFormat(k[M], k.HIGH_FLOAT)),
+          we = I(() => k.getShaderPrecisionFormat(k[M], k.HIGH_FLOAT)),
           Ee = I(() => k.getShaderPrecisionFormat(k[M], k.HIGH_INT));
         return {
           LOW_FLOAT: K,
           MEDIUM_FLOAT: oe,
-          HIGH_FLOAT: ye,
+          HIGH_FLOAT: we,
           HIGH_INT: Ee
         }
       },
-      y = (k, M) => {
+      w = (k, M) => {
         const K = {};
         if (!M) return K;
         for (const oe in M) {
-          const ye = M[oe];
-          K[k + "." + oe + ".precision"] = ye ? I(() => ye.precision) : void 0, K[k + "." + oe + ".rangeMax"] = ye ? I(() => ye.rangeMax) : void 0, K[k + "." + oe + ".rangeMin"] = ye ? I(() => ye.rangeMin) : void 0
+          const we = M[oe];
+          K[k + "." + oe + ".precision"] = we ? I(() => we.precision) : void 0, K[k + "." + oe + ".rangeMax"] = we ? I(() => we.rangeMax) : void 0, K[k + "." + oe + ".rangeMin"] = we ? I(() => we.rangeMin) : void 0
         }
         return K
       },
@@ -4447,9 +4447,9 @@ async function ws() {
         if (!k) return M;
         const K = k;
         for (const oe of ms) {
-          const ye = K[oe];
-          if (ye === void 0) continue;
-          const Ee = k.getParameter(ye);
+          const we = K[oe];
+          if (we === void 0) continue;
+          const Ee = k.getParameter(we);
           Ee && ArrayBuffer.isView(Ee) ? M[oe] = Array.from(Ee) : M[oe] = Ee
         }
         return M
@@ -4463,10 +4463,10 @@ async function ws() {
         if (!k) return [];
         const M = [];
         for (const [K, oe] of Object.entries(hs)) {
-          const ye = I(() => k.getExtension(K));
-          if (ye)
+          const we = I(() => k.getExtension(K));
+          if (we)
             for (const Ee of oe) {
-              const We = ye[Ee];
+              const We = we[Ee];
               if (typeof We != "number") continue;
               if (!gs.has(Ee)) {
                 M.push(`${Ee}=${We}`);
@@ -4495,14 +4495,14 @@ async function ws() {
         ...C(d),
         ...S(d)
       },
-      w = {
+      y = {
         ...C(g),
         ...S(g)
       },
       v = [];
-    for (const k in w) {
+    for (const k in y) {
       const M = A[k];
-      !M || ys.has(k) || "" + M != "" + w[k] && v.push(k)
+      !M || ws.has(k) || "" + M != "" + y[k] && v.push(k)
     }
     v.length && ae("webgl/webgl2 mirrored params mismatch", v.toString()), await ie();
     const E = {
@@ -4513,12 +4513,12 @@ async function ws() {
         extensionParameters2: R(g),
         parameters: {
           ...A,
-          ...w,
-          ...y("VERTEX_SHADER", h(d, "VERTEX_SHADER")),
-          ...y("FRAGMENT_SHADER", h(d, "FRAGMENT_SHADER"))
+          ...y,
+          ...w("VERTEX_SHADER", h(d, "VERTEX_SHADER")),
+          ...w("FRAGMENT_SHADER", h(d, "FRAGMENT_SHADER"))
         },
         parameterOrExtensionLie: _,
-        lied: u
+        lied: l
       },
       D = ["00b72507", "00c1b42d", "00fe1ec9", "02b3eea3", "0461d3de", "0463627d", "057857ac", "0586e20b", "0639a81a", "087d5759", "08847ba5", "0b2d4333", "0cdb985d", "0e058699", "0eb2fc19", "0f39d057", "0f840379", "0fc123c7", "101e0582", "12e92e62", "12f8ac14", "1453d59a", "149a1efa", "166dc7c8", "16c481a6", "171831c5", "177cc258", "18579e83", "19594666", "1b251fd7", "1bfd326c", "1e8a9a79", "1ff7c7e7", "2048bc5a", "2259b706", "22d0f2cf", "230d6a0d", "23d1ce20", "2402c3d2", "24306836", "258789d0", "25a760b8", "25f9385d", "27938830", "27db292c", "2b80fd96", "2bb488da", "2c04c2eb", "2d15287f", "2f014c41", "2f582ed9", "300ee927", "33bc5492", "34270469", "3660b71f", "3740c4c7", "3999a5e1", "39ead506", "3a91d0d6", "3b724916", "3bf321b8", "3c546144", "3f9ef44c", "3fea1100", "3ff82303", "4027d193", "402e1064", "4065cd69", "43038e3d", "4503e771", "461f97e1", "464d51ac", "467b99a5", "482c81b2", "48af038f", "4962ada1", "49bf7358", "4c9e8f5d", "502c402c", "508d1625", "52e348ba", "534002ab", "5582debe", "55d3aa56", "55e821f7", "581f3282", "5831d5fd", "58871380", "58fdc720", "5a5658f1", "5a90a5f8", "5aea1af1", "5b6a17aa", "5bef9a39", "5ca55292", "5d786cef", "5ddb9237", "5ee41456", "61178f2a", "61ca8e23", "61d9464e", "61eecaae", "623c3bfd", "6248d9e3", "6294d84e", "62bf7ef1", "6346cf49", "6357365c", "66628310", "668f0f93", "66d992e8", "67995996", "6843ebbf", "6864dcb0", "6951838b", "696e1548", "698c5c2e", "6a75ae3b", "6aa1ff7e", "6b07d4f8", "6b290cd4", "6c168801", "6dfae3cb", "6e806ffc", "6edf1720", "6f81cbe7", "70859bdb", "70a095b1", "7238c5dd", "7360ebd1", "741688e4", "74daf866", "78640859", "79284c47", "794f8929", "795e5c95", "79a57aa9", "7aa13573", "7b2e5242", "7b811cdd", "7ec0ea6b", "801d73af", "802e2547", "81b9cd29", "8219e1a4", "82a9a2f1", "8428fc8e", "849ccb64", "8541aa4c", "85479b99", "8bd0b91b", "8d371161", "903c8847", "917871e7", "98aeaba9", "99b1a1c6", "99ef2c3b", "9b67b7dc", "9c6df98c", "9c814c1b", "9e2b5e94", "9fd76352", "a1c808d5", "a22788f8", "a2383001", "a26e9aa9", "a397a568", "a3f9ee34", "a4b988da", "a4d34176", "a581f55e", "a5a477ae", "a9640880", "a97d3858", "aa73f3a4", "ab40bece", "ac4d4ba8", "ad01a422", "ade75c4f", "ae2c4777", "afa583bc", "b10c2a85", "b224cc7c", "b2d6fc98", "b362c2f5", "b467620a", "b4d40dcc", "b504662d", "b50edd99", "b5494027", "b62321c3", "b8961d15", "b8ea6e7f", "bb77a469", "bc0f9686", "bcf7315f", "be2dfaea", "beffda26", "bf06317e", "bf610cdb", "bfe1c212", "c00582e9", "c026469d", "c04889b1", "c04b0635", "c04e374a", "c05f7596", "c07307c6", "c092fdf8", "c25dd065", "c2bce496", "c5e9a883", "c79634c2", "c7e37ca0", "c93b5366", "c9bc4ffd", "cba1878b", "cbeade8c", "ce2e3d16", "cefb72ca", "cf9643e6", "cfd20274", "d05a66eb", "d09c1c07", "d1e76c89", "d2172943", "d2dc2474", "d498797d", "d6bf35ad", "d734ea08", "d860ff42", "d8bd9e5a", "d913dafa", "d970d345", "dbdbe7a4", "dc271c35", "dcd9a29e", "dd67b076", "de793ead", "ded74044", "df9daeb6", "e10339b3", "e142d1f9", "e155c47e", "e15afab0", "e16bb1bb", "e316e4c0", "e3eff92a", "e4569a5b", "e574bef6", "e5962ba3", "e6464c9f", "e68b5c4e", "e796b84e", "e8694547", "e965d180", "e965d541", "e9bdc904", "e9dbb8d5", "ea54d525", "ea59b343", "ea7f90ea", "ea8f5ad0", "eaa13804", "eb799d34", "ec050bb6", "ec928655", "eed2e5e1", "ef8f5db1", "f0d5a3c7", "f1077334", "f221fef5", "f2293447", "f33d918e", "f3c6ea11", "f51056a1", "f51cab9a", "f573bb34", "f5d19934", "f7451c92", "f8e65486", "f9714b3d", "fa994f33", "fafa14c0", "fc37fe1f", "fca66520", "fe0997b6"],
       B = [-1056897629, -1056946782, -1073719331, -1147160399, -1147160553, -1147168724, -1147419751, -1147419753, -1147419775, -1147427826, -1147451883, -1147451901, -1147464169, -1147464177, -1147488144, -1147602934, -1147643759, -1147643872, -1147765274, -1148326739, -1148335070, -1148572354, -1148678631, -1148680509, -1148713259, -1164279890, -1164800191, -1164800478, -1332029332, -133757475, -1342154787, -134823971, -16746546, -1878102921, -1878111124, -1962893370, -1962919974, -1962928178, -2130164162, -2130164382, -2130164388, -2130164546, -2130172573, -2130659912, -2145933648, -2145941977, -2145958228, -2145966414, -2145966441, -2145966529, -2145966535, -2145966545, -2145970658, -2145974343, -2145974380, -2145974489, -2145974596, -2145974598, -2145974612, -2145974637, -2145974657, -2145974729, -2146187766, -2146232338, -2146232480, -2146232503, -2146232590, -2146232723, -2146232724, -2146236588, -2146236703, -2146237020, -2146251619, -2146251641, -2146251681, -2146253671, -2146253693, -2146277218, -2146286438, -2146286463, -2146286583, -2146319268, -2146376065, -2146379955, -2146384003, -2146384011, -2146384027, -2146384034, -2146384120, -2146384281, -2146398568, -2146400384, -2146400556, -2146400620, -2146401928, -2146417027, -2146526795, -2146526934, -2147125544, -2147128275, -2147133747, -2147133749, -2147133760, -2147134974, -2147136328, -2147142429, -2147287810, -2147287811, -2147287820, -2147287834, -2147287835, -2147287854, -2147291718, -2147291820, -2147293058, -2147295768, -2147295822, -2147295823, -2147295849, -2147295857, -2147300019, -2147304193, -2147304219, -2147306321, -2147316382, -2147316383, -2147333118, -2147336998, -2147337003, -2147337012, -2147337022, -2147344686, -2147346747, -2147361652, -2147361731, -2147361769, -2147361774, -2147361775, -2147361778, -2147361792, -2147362760, -2147365698, -2147365730, -2147365759, -2147365760, -2147365827, -2147365863, -2147373914, -2147373984, -2147374032, -2147374080, -2147378041, -2147378146, -2147382130, -2147382221, -2147382251, -2147382270, -2147382272, -2147383246, -2147385825, -2147385849, -2147386292, -2147386326, -2147387335, -2147387364, -2147389930, -2147389937, -2147389951, -2147390461, -2147394188, -2147394251, -2147394484, -2147400057, -2147406798, -2147407643, -2147407821, -2147410938, -2147410941, -2147414733, -2147414956, -2147414987, -2147415037, -2147429201, -2147429223, -2147439020, -2147440422, -2147447111, -2147447122, -2147447126, -2147447137, -2147447149, -2147447157, -2147447161, -2147447163, -2147447873, -2147447892, -2147447896, -2147447928, -2147448592, -2147453701, -2147453767, -2147453768, -2147459031, -2147461169, -2147466956, -2147466972, -2147467172, -2147470173, -2147475351, -2147475352, -638494755, -671082546, -677558160, -999987216, 1099536, 1099644, 1147714426, 1197075, 1229835, 1508998, 1509050, 1610618841, 184555483, 2146590728, 2147305224, 2147361749, 2147440438, 2147475085, 2147479181, 21667, 349912, 351513, 83625, 998804992, 998911268, 999148597, 999156922];
@@ -4580,7 +4580,7 @@ function sr(n, t) {
   }
 }
 async function bs() {
-  var t, e, r, o, a, i, s, c, _, u, p, f, d, g, h, y, C, T, R, S, N, A, w, v, E, D, B, P, L, H, te, me;
+  var t, e, r, o, a, i, s, u, _, l, p, f, d, g, h, w, C, T, R, S, N, A, y, v, E, D, B, P, L, H, te, me;
   const n = await vs();
   if (!n) throw new Error("Fingerprint failed!");
   return {
@@ -4620,9 +4620,9 @@ async function bs() {
     media: n.media,
     canvas2d: {
       ...(s = n.canvas2d) != null && s.lied ? {} : {
-        dataURI: (c = n.canvas2d) == null ? void 0 : c.dataURI,
+        dataURI: (u = n.canvas2d) == null ? void 0 : u.dataURI,
         paintURI: (_ = n.canvas2d) == null ? void 0 : _.paintURI,
-        textURI: (u = n.canvas2d) == null ? void 0 : u.textURI,
+        textURI: (l = n.canvas2d) == null ? void 0 : l.textURI,
         emojiURI: (p = n.canvas2d) == null ? void 0 : p.emojiURI
       },
       ...(f = n.canvas2d) != null && f.liedTextMetrics ? {} : {
@@ -4665,7 +4665,7 @@ async function bs() {
         return (F = n.cssMedia) == null ? void 0 : F.mediaCSS["prefers-reduced-transparency"]
       })
     } : void 0,
-    css: n.css ? (y = (h = n.css) == null ? void 0 : h.system) == null ? void 0 : y.fonts : void 0,
+    css: n.css ? (w = (h = n.css) == null ? void 0 : h.system) == null ? void 0 : w.fonts : void 0,
     timezone: n.timezone,
     offlineAudioContext: (C = n.offlineAudioContext) != null && C.lied ? void 0 : {
       binsSample: (T = n.offlineAudioContext) == null ? void 0 : T.binsSample,
@@ -4673,7 +4673,7 @@ async function bs() {
       copySample: (S = n.offlineAudioContext) == null ? void 0 : S.copySample,
       floatFrequencyDataSum: (N = n.offlineAudioContext) == null ? void 0 : N.floatFrequencyDataSum,
       floatTimeDomainDataSum: (A = n.offlineAudioContext) == null ? void 0 : A.floatTimeDomainDataSum,
-      lied: (w = n.offlineAudioContext) == null ? void 0 : w.lied,
+      lied: (y = n.offlineAudioContext) == null ? void 0 : y.lied,
       noise: (v = n.offlineAudioContext) == null ? void 0 : v.noise,
       totalUniqueSamples: (E = n.offlineAudioContext) == null ? void 0 : E.totalUniqueSamples,
       values: (D = n.offlineAudioContext) == null ? void 0 : D.values
@@ -4693,7 +4693,7 @@ async function bs() {
 }
 async function vs() {
   try {
-    const [n, t, e, r, o, a, i, s, c, _, u, p, f, d] = await Promise.all([de("offlineAudioContext", Ci()), de("canvasWebgl", ws()), de("canvas2d", xi()), de("css", Promise.resolve(Li())), de("cssMedia", Promise.resolve(Mi())), de("screen", _s()), de("consoleErrors", Promise.resolve(Hi())), de("timezone", Promise.resolve(fs())), de("fonts", Ki()), de("media", ns()), de("resistance", ls()), de("intl", es()), de("workerScope", Ii()), de("maths", Promise.resolve(qa()))]), [g, h, y, C, T] = await Promise.all([de("navigator", rs(f)), de("headless", Zi({
+    const [n, t, e, r, o, a, i, s, u, _, l, p, f, d] = await Promise.all([de("offlineAudioContext", Ci()), de("canvasWebgl", ys()), de("canvas2d", xi()), de("css", Promise.resolve(Li())), de("cssMedia", Promise.resolve(Mi())), de("screen", _s()), de("consoleErrors", Promise.resolve(Hi())), de("timezone", Promise.resolve(fs())), de("fonts", Ki()), de("media", ns()), de("resistance", ls()), de("intl", es()), de("workerScope", Ii()), de("maths", Promise.resolve(qa()))]), [g, h, w, C, T] = await Promise.all([de("navigator", rs(f)), de("headless", Zi({
       webgl: t
     })), de("lies", Promise.resolve(mi())), de("trash", Promise.resolve(bi())), de("capturedErrors", Promise.resolve(Xa()))]);
     return {
@@ -4710,11 +4710,11 @@ async function vs() {
       consoleErrors: i,
       timezone: s,
       offlineAudioContext: n,
-      fonts: c,
-      lies: y,
+      fonts: u,
+      lies: w,
       trash: C,
       capturedErrors: T,
-      resistance: u,
+      resistance: l,
       intl: p,
       workerScope: f,
       math: d
@@ -4733,11 +4733,11 @@ async function Es() {
     return await Kt
   } catch {}
   return Kt = (async () => {
-    var _, u, p;
+    var _, l, p;
     const n = await bs();
     (_ = n.navigator) != null && _.lied && n.screen && (n.screen.minDim = 0, n.screen.maxDim = 0);
     const t = _o({
-      userAgent: (u = n.workerScope) == null ? void 0 : u.userAgent
+      userAgent: (l = n.workerScope) == null ? void 0 : l.userAgent
     });
     switch (/\bCrOS x86_64\b/.test(((p = n.workerScope) == null ? void 0 : p.userAgent) ?? "") && n.canvas2d && (delete n.canvas2d.dataURI, delete n.canvas2d.emojiSet, delete n.canvas2d.textMetricsSystemSum, delete n.canvas2d.textURI), t) {
       case "Firefox":
@@ -4762,8 +4762,8 @@ async function Es() {
       a = Math.floor(o / r.length),
       i = r.map(f => f.slice(0, a)).join(""),
       s = o % r.length,
-      c = r.slice(0, s).map(f => f[a] ?? "0").join("");
-    return i + c
+      u = r.slice(0, s).map(f => f[a] ?? "0").join("");
+    return i + u
   })(), Kt
 }
 const cr = "theme";
@@ -5050,7 +5050,7 @@ function KE() {
   const n = Te.current;
   n && (n.tier === 4 ? n.resolve(!1) : n.resolve(void 0), Te.current = null)
 }
-var l = (n => (n[n.CONTINUE = 100] = "CONTINUE", n[n.SWITCHING_PROTOCOLS = 101] = "SWITCHING_PROTOCOLS", n[n.PROCESSING = 102] = "PROCESSING", n[n.EARLY_HINTS = 103] = "EARLY_HINTS", n[n.OK = 200] = "OK", n[n.CREATED = 201] = "CREATED", n[n.ACCEPTED = 202] = "ACCEPTED", n[n.NON_AUTHORITATIVE_INFORMATION = 203] = "NON_AUTHORITATIVE_INFORMATION", n[n.NO_CONTENT = 204] = "NO_CONTENT", n[n.RESET_CONTENT = 205] = "RESET_CONTENT", n[n.PARTIAL_CONTENT = 206] = "PARTIAL_CONTENT", n[n.MULTI_STATUS = 207] = "MULTI_STATUS", n[n.ALREADY_REPORTED = 208] = "ALREADY_REPORTED", n[n.IM_USED = 226] = "IM_USED", n[n.MULTIPLE_CHOICES = 300] = "MULTIPLE_CHOICES", n[n.MOVED_PERMANENTLY = 301] = "MOVED_PERMANENTLY", n[n.MOVED_TEMPORARILY = 302] = "MOVED_TEMPORARILY", n[n.FOUND = 302] = "FOUND", n[n.SEE_OTHER = 303] = "SEE_OTHER", n[n.NOT_MODIFIED = 304] = "NOT_MODIFIED", n[n.USE_PROXY = 305] = "USE_PROXY", n[n.SWITCH_PROXY = 306] = "SWITCH_PROXY", n[n.TEMPORARY_REDIRECT = 307] = "TEMPORARY_REDIRECT", n[n.PERMANENT_REDIRECT = 308] = "PERMANENT_REDIRECT", n[n.BAD_REQUEST = 400] = "BAD_REQUEST", n[n.UNAUTHORIZED = 401] = "UNAUTHORIZED", n[n.PAYMENT_REQUIRED = 402] = "PAYMENT_REQUIRED", n[n.FORBIDDEN = 403] = "FORBIDDEN", n[n.NOT_FOUND = 404] = "NOT_FOUND", n[n.METHOD_NOT_ALLOWED = 405] = "METHOD_NOT_ALLOWED", n[n.NOT_ACCEPTABLE = 406] = "NOT_ACCEPTABLE", n[n.PROXY_AUTHENTICATION_REQUIRED = 407] = "PROXY_AUTHENTICATION_REQUIRED", n[n.REQUEST_TIMEOUT = 408] = "REQUEST_TIMEOUT", n[n.CONFLICT = 409] = "CONFLICT", n[n.GONE = 410] = "GONE", n[n.LENGTH_REQUIRED = 411] = "LENGTH_REQUIRED", n[n.PRECONDITION_FAILED = 412] = "PRECONDITION_FAILED", n[n.REQUEST_TOO_LONG = 413] = "REQUEST_TOO_LONG", n[n.CONTENT_TOO_LARGE = 413] = "CONTENT_TOO_LARGE", n[n.REQUEST_URI_TOO_LONG = 414] = "REQUEST_URI_TOO_LONG", n[n.URI_TOO_LONG = 414] = "URI_TOO_LONG", n[n.UNSUPPORTED_MEDIA_TYPE = 415] = "UNSUPPORTED_MEDIA_TYPE", n[n.REQUESTED_RANGE_NOT_SATISFIABLE = 416] = "REQUESTED_RANGE_NOT_SATISFIABLE", n[n.RANGE_NOT_SATISFIABLE = 416] = "RANGE_NOT_SATISFIABLE", n[n.EXPECTATION_FAILED = 417] = "EXPECTATION_FAILED", n[n.IM_A_TEAPOT = 418] = "IM_A_TEAPOT", n[n.INSUFFICIENT_SPACE_ON_RESOURCE = 419] = "INSUFFICIENT_SPACE_ON_RESOURCE", n[n.MISDIRECTED_REQUEST = 421] = "MISDIRECTED_REQUEST", n[n.UNPROCESSABLE_ENTITY = 422] = "UNPROCESSABLE_ENTITY", n[n.UNPROCESSABLE_CONTENT = 422] = "UNPROCESSABLE_CONTENT", n[n.LOCKED = 423] = "LOCKED", n[n.FAILED_DEPENDENCY = 424] = "FAILED_DEPENDENCY", n[n.TOO_EARLY = 425] = "TOO_EARLY", n[n.UPGRADE_REQUIRED = 426] = "UPGRADE_REQUIRED", n[n.PRECONDITION_REQUIRED = 428] = "PRECONDITION_REQUIRED", n[n.TOO_MANY_REQUESTS = 429] = "TOO_MANY_REQUESTS", n[n.REQUEST_HEADER_FIELDS_TOO_LARGE = 431] = "REQUEST_HEADER_FIELDS_TOO_LARGE", n[n.UNAVAILABLE_FOR_LEGAL_REASONS = 451] = "UNAVAILABLE_FOR_LEGAL_REASONS", n[n.INTERNAL_SERVER_ERROR = 500] = "INTERNAL_SERVER_ERROR", n[n.NOT_IMPLEMENTED = 501] = "NOT_IMPLEMENTED", n[n.BAD_GATEWAY = 502] = "BAD_GATEWAY", n[n.SERVICE_UNAVAILABLE = 503] = "SERVICE_UNAVAILABLE", n[n.GATEWAY_TIMEOUT = 504] = "GATEWAY_TIMEOUT", n[n.HTTP_VERSION_NOT_SUPPORTED = 505] = "HTTP_VERSION_NOT_SUPPORTED", n[n.VARIANT_ALSO_NEGOTIATES = 506] = "VARIANT_ALSO_NEGOTIATES", n[n.INSUFFICIENT_STORAGE = 507] = "INSUFFICIENT_STORAGE", n[n.LOOP_DETECTED = 508] = "LOOP_DETECTED", n[n.NOT_EXTENDED = 510] = "NOT_EXTENDED", n[n.NETWORK_AUTHENTICATION_REQUIRED = 511] = "NETWORK_AUTHENTICATION_REQUIRED", n[n.AWS_ELB_000 = 0] = "AWS_ELB_000", n[n.THIS_IS_FINE = 218] = "THIS_IS_FINE", n[n.PAGE_EXPIRED = 419] = "PAGE_EXPIRED", n[n.METHOD_FAILURE = 420] = "METHOD_FAILURE", n[n.ENHANCE_YOUR_CALM = 420] = "ENHANCE_YOUR_CALM", n[n.REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY = 430] = "REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY", n[n.SHOPIFY_SECURITY_REJECTION = 430] = "SHOPIFY_SECURITY_REJECTION", n[n.LOGIN_TIME_OUT = 440] = "LOGIN_TIME_OUT", n[n.NO_RESPONSE = 444] = "NO_RESPONSE", n[n.RETRY_WITH = 449] = "RETRY_WITH", n[n.BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS = 450] = "BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS", n[n.REDIRECT_IIS = 451] = "REDIRECT_IIS", n[n.CLIENT_CLOSED_CONNECTION_AWS_ELB = 460] = "CLIENT_CLOSED_CONNECTION_AWS_ELB", n[n.X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB = 463] = "X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB", n[n.INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB = 464] = "INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB", n[n.REQUEST_HEADER_TOO_LARGE = 494] = "REQUEST_HEADER_TOO_LARGE", n[n.SSL_CERTIFICATE_ERROR = 495] = "SSL_CERTIFICATE_ERROR", n[n.SSL_CERTIFICATE_REQUIRED = 496] = "SSL_CERTIFICATE_REQUIRED", n[n.HTTP_REQUEST_SENT_TO_HTTPS_PORT = 497] = "HTTP_REQUEST_SENT_TO_HTTPS_PORT", n[n.INVALID_TOKEN = 498] = "INVALID_TOKEN", n[n.CLIENT_CLOSED_REQUEST = 499] = "CLIENT_CLOSED_REQUEST", n[n.TOKEN_REQUIRED = 499] = "TOKEN_REQUIRED", n[n.BANDWIDTH_LIMIT_EXCEEDED = 509] = "BANDWIDTH_LIMIT_EXCEEDED", n[n.RESOURCE_LIMIT_IS_REACHED = 508] = "RESOURCE_LIMIT_IS_REACHED", n[n.WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR = 520] = "WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR", n[n.WEB_SERVER_IS_DOWN = 521] = "WEB_SERVER_IS_DOWN", n[n.CONNECTION_TIMED_OUT = 522] = "CONNECTION_TIMED_OUT", n[n.ORIGIN_IS_UNREACHABLE = 523] = "ORIGIN_IS_UNREACHABLE", n[n.A_TIMEOUT_OCCURRED = 524] = "A_TIMEOUT_OCCURRED", n[n.SSL_HANDSHAKE_FAILED = 525] = "SSL_HANDSHAKE_FAILED", n[n.INVALID_SSL_CERTIFICATE = 526] = "INVALID_SSL_CERTIFICATE", n[n.RAILGUN_ERROR = 527] = "RAILGUN_ERROR", n[n.SITE_IS_OVERLOADED = 529] = "SITE_IS_OVERLOADED", n[n.ORIGIN_UNAVAILABLE = 530] = "ORIGIN_UNAVAILABLE", n[n.ORIGIN_DNS_ERROR = 530] = "ORIGIN_DNS_ERROR", n[n.SITE_IS_FROZEN = 530] = "SITE_IS_FROZEN", n[n.TEMPORARILY_DISABLED = 540] = "TEMPORARILY_DISABLED", n[n.UNAUTHORIZED_AWS_ELB = 561] = "UNAUTHORIZED_AWS_ELB", n[n.NETWORK_READ_TIMEOUT_ERROR = 598] = "NETWORK_READ_TIMEOUT_ERROR", n[n.NETWORK_CONNECT_TIMEOUT_ERROR = 599] = "NETWORK_CONNECT_TIMEOUT_ERROR", n[n.UNEXPECTED_TOKEN = 783] = "UNEXPECTED_TOKEN", n[n.REQUEST_DENIED = 999] = "REQUEST_DENIED", n))(l || {});
+var c = (n => (n[n.CONTINUE = 100] = "CONTINUE", n[n.SWITCHING_PROTOCOLS = 101] = "SWITCHING_PROTOCOLS", n[n.PROCESSING = 102] = "PROCESSING", n[n.EARLY_HINTS = 103] = "EARLY_HINTS", n[n.OK = 200] = "OK", n[n.CREATED = 201] = "CREATED", n[n.ACCEPTED = 202] = "ACCEPTED", n[n.NON_AUTHORITATIVE_INFORMATION = 203] = "NON_AUTHORITATIVE_INFORMATION", n[n.NO_CONTENT = 204] = "NO_CONTENT", n[n.RESET_CONTENT = 205] = "RESET_CONTENT", n[n.PARTIAL_CONTENT = 206] = "PARTIAL_CONTENT", n[n.MULTI_STATUS = 207] = "MULTI_STATUS", n[n.ALREADY_REPORTED = 208] = "ALREADY_REPORTED", n[n.IM_USED = 226] = "IM_USED", n[n.MULTIPLE_CHOICES = 300] = "MULTIPLE_CHOICES", n[n.MOVED_PERMANENTLY = 301] = "MOVED_PERMANENTLY", n[n.MOVED_TEMPORARILY = 302] = "MOVED_TEMPORARILY", n[n.FOUND = 302] = "FOUND", n[n.SEE_OTHER = 303] = "SEE_OTHER", n[n.NOT_MODIFIED = 304] = "NOT_MODIFIED", n[n.USE_PROXY = 305] = "USE_PROXY", n[n.SWITCH_PROXY = 306] = "SWITCH_PROXY", n[n.TEMPORARY_REDIRECT = 307] = "TEMPORARY_REDIRECT", n[n.PERMANENT_REDIRECT = 308] = "PERMANENT_REDIRECT", n[n.BAD_REQUEST = 400] = "BAD_REQUEST", n[n.UNAUTHORIZED = 401] = "UNAUTHORIZED", n[n.PAYMENT_REQUIRED = 402] = "PAYMENT_REQUIRED", n[n.FORBIDDEN = 403] = "FORBIDDEN", n[n.NOT_FOUND = 404] = "NOT_FOUND", n[n.METHOD_NOT_ALLOWED = 405] = "METHOD_NOT_ALLOWED", n[n.NOT_ACCEPTABLE = 406] = "NOT_ACCEPTABLE", n[n.PROXY_AUTHENTICATION_REQUIRED = 407] = "PROXY_AUTHENTICATION_REQUIRED", n[n.REQUEST_TIMEOUT = 408] = "REQUEST_TIMEOUT", n[n.CONFLICT = 409] = "CONFLICT", n[n.GONE = 410] = "GONE", n[n.LENGTH_REQUIRED = 411] = "LENGTH_REQUIRED", n[n.PRECONDITION_FAILED = 412] = "PRECONDITION_FAILED", n[n.REQUEST_TOO_LONG = 413] = "REQUEST_TOO_LONG", n[n.CONTENT_TOO_LARGE = 413] = "CONTENT_TOO_LARGE", n[n.REQUEST_URI_TOO_LONG = 414] = "REQUEST_URI_TOO_LONG", n[n.URI_TOO_LONG = 414] = "URI_TOO_LONG", n[n.UNSUPPORTED_MEDIA_TYPE = 415] = "UNSUPPORTED_MEDIA_TYPE", n[n.REQUESTED_RANGE_NOT_SATISFIABLE = 416] = "REQUESTED_RANGE_NOT_SATISFIABLE", n[n.RANGE_NOT_SATISFIABLE = 416] = "RANGE_NOT_SATISFIABLE", n[n.EXPECTATION_FAILED = 417] = "EXPECTATION_FAILED", n[n.IM_A_TEAPOT = 418] = "IM_A_TEAPOT", n[n.INSUFFICIENT_SPACE_ON_RESOURCE = 419] = "INSUFFICIENT_SPACE_ON_RESOURCE", n[n.MISDIRECTED_REQUEST = 421] = "MISDIRECTED_REQUEST", n[n.UNPROCESSABLE_ENTITY = 422] = "UNPROCESSABLE_ENTITY", n[n.UNPROCESSABLE_CONTENT = 422] = "UNPROCESSABLE_CONTENT", n[n.LOCKED = 423] = "LOCKED", n[n.FAILED_DEPENDENCY = 424] = "FAILED_DEPENDENCY", n[n.TOO_EARLY = 425] = "TOO_EARLY", n[n.UPGRADE_REQUIRED = 426] = "UPGRADE_REQUIRED", n[n.PRECONDITION_REQUIRED = 428] = "PRECONDITION_REQUIRED", n[n.TOO_MANY_REQUESTS = 429] = "TOO_MANY_REQUESTS", n[n.REQUEST_HEADER_FIELDS_TOO_LARGE = 431] = "REQUEST_HEADER_FIELDS_TOO_LARGE", n[n.UNAVAILABLE_FOR_LEGAL_REASONS = 451] = "UNAVAILABLE_FOR_LEGAL_REASONS", n[n.INTERNAL_SERVER_ERROR = 500] = "INTERNAL_SERVER_ERROR", n[n.NOT_IMPLEMENTED = 501] = "NOT_IMPLEMENTED", n[n.BAD_GATEWAY = 502] = "BAD_GATEWAY", n[n.SERVICE_UNAVAILABLE = 503] = "SERVICE_UNAVAILABLE", n[n.GATEWAY_TIMEOUT = 504] = "GATEWAY_TIMEOUT", n[n.HTTP_VERSION_NOT_SUPPORTED = 505] = "HTTP_VERSION_NOT_SUPPORTED", n[n.VARIANT_ALSO_NEGOTIATES = 506] = "VARIANT_ALSO_NEGOTIATES", n[n.INSUFFICIENT_STORAGE = 507] = "INSUFFICIENT_STORAGE", n[n.LOOP_DETECTED = 508] = "LOOP_DETECTED", n[n.NOT_EXTENDED = 510] = "NOT_EXTENDED", n[n.NETWORK_AUTHENTICATION_REQUIRED = 511] = "NETWORK_AUTHENTICATION_REQUIRED", n[n.AWS_ELB_000 = 0] = "AWS_ELB_000", n[n.THIS_IS_FINE = 218] = "THIS_IS_FINE", n[n.PAGE_EXPIRED = 419] = "PAGE_EXPIRED", n[n.METHOD_FAILURE = 420] = "METHOD_FAILURE", n[n.ENHANCE_YOUR_CALM = 420] = "ENHANCE_YOUR_CALM", n[n.REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY = 430] = "REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY", n[n.SHOPIFY_SECURITY_REJECTION = 430] = "SHOPIFY_SECURITY_REJECTION", n[n.LOGIN_TIME_OUT = 440] = "LOGIN_TIME_OUT", n[n.NO_RESPONSE = 444] = "NO_RESPONSE", n[n.RETRY_WITH = 449] = "RETRY_WITH", n[n.BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS = 450] = "BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS", n[n.REDIRECT_IIS = 451] = "REDIRECT_IIS", n[n.CLIENT_CLOSED_CONNECTION_AWS_ELB = 460] = "CLIENT_CLOSED_CONNECTION_AWS_ELB", n[n.X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB = 463] = "X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB", n[n.INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB = 464] = "INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB", n[n.REQUEST_HEADER_TOO_LARGE = 494] = "REQUEST_HEADER_TOO_LARGE", n[n.SSL_CERTIFICATE_ERROR = 495] = "SSL_CERTIFICATE_ERROR", n[n.SSL_CERTIFICATE_REQUIRED = 496] = "SSL_CERTIFICATE_REQUIRED", n[n.HTTP_REQUEST_SENT_TO_HTTPS_PORT = 497] = "HTTP_REQUEST_SENT_TO_HTTPS_PORT", n[n.INVALID_TOKEN = 498] = "INVALID_TOKEN", n[n.CLIENT_CLOSED_REQUEST = 499] = "CLIENT_CLOSED_REQUEST", n[n.TOKEN_REQUIRED = 499] = "TOKEN_REQUIRED", n[n.BANDWIDTH_LIMIT_EXCEEDED = 509] = "BANDWIDTH_LIMIT_EXCEEDED", n[n.RESOURCE_LIMIT_IS_REACHED = 508] = "RESOURCE_LIMIT_IS_REACHED", n[n.WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR = 520] = "WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR", n[n.WEB_SERVER_IS_DOWN = 521] = "WEB_SERVER_IS_DOWN", n[n.CONNECTION_TIMED_OUT = 522] = "CONNECTION_TIMED_OUT", n[n.ORIGIN_IS_UNREACHABLE = 523] = "ORIGIN_IS_UNREACHABLE", n[n.A_TIMEOUT_OCCURRED = 524] = "A_TIMEOUT_OCCURRED", n[n.SSL_HANDSHAKE_FAILED = 525] = "SSL_HANDSHAKE_FAILED", n[n.INVALID_SSL_CERTIFICATE = 526] = "INVALID_SSL_CERTIFICATE", n[n.RAILGUN_ERROR = 527] = "RAILGUN_ERROR", n[n.SITE_IS_OVERLOADED = 529] = "SITE_IS_OVERLOADED", n[n.ORIGIN_UNAVAILABLE = 530] = "ORIGIN_UNAVAILABLE", n[n.ORIGIN_DNS_ERROR = 530] = "ORIGIN_DNS_ERROR", n[n.SITE_IS_FROZEN = 530] = "SITE_IS_FROZEN", n[n.TEMPORARILY_DISABLED = 540] = "TEMPORARILY_DISABLED", n[n.UNAUTHORIZED_AWS_ELB = 561] = "UNAUTHORIZED_AWS_ELB", n[n.NETWORK_READ_TIMEOUT_ERROR = 598] = "NETWORK_READ_TIMEOUT_ERROR", n[n.NETWORK_CONNECT_TIMEOUT_ERROR = 599] = "NETWORK_CONNECT_TIMEOUT_ERROR", n[n.UNEXPECTED_TOKEN = 783] = "UNEXPECTED_TOKEN", n[n.REQUEST_DENIED = 999] = "REQUEST_DENIED", n))(c || {});
 const Ps = () => "Your account has been suspended for breaking the rules",
   xs = () => "Sua conta foi suspensa por quebrar as regras",
   Ls = () => "您的账号因违反规则已被暂停",
@@ -5099,8 +5099,8 @@ const Ps = () => "Your account has been suspended for breaking the rules",
     const e = t.locale ?? O();
     return e === "en" ? ac() : e === "pt" ? ic() : e === "ch" ? sc() : e === "de" ? cc() : e === "es" ? uc() : e === "fr" ? lc() : e === "it" ? dc() : e === "jp" ? _c() : e === "pl" ? fc() : e === "ru" ? pc() : e === "uk" ? mc() : hc()
   },
-  yc = () => "Alliance with empty name",
-  wc = () => "Aliança com nome vazio",
+  wc = () => "Alliance with empty name",
+  yc = () => "Aliança com nome vazio",
   bc = () => "名称为空的联盟",
   vc = () => "Allianz mit leerem Namen",
   Ec = () => "Alianza con nombre vacío",
@@ -5113,7 +5113,7 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   Ic = () => "Liên minh không có tên",
   Nc = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? yc() : e === "pt" ? wc() : e === "ch" ? bc() : e === "de" ? vc() : e === "es" ? Ec() : e === "fr" ? Tc() : e === "it" ? Sc() : e === "jp" ? Ac() : e === "pl" ? Oc() : e === "ru" ? Rc() : e === "uk" ? Dc() : Ic()
+    return e === "en" ? wc() : e === "pt" ? yc() : e === "ch" ? bc() : e === "de" ? vc() : e === "es" ? Ec() : e === "fr" ? Tc() : e === "it" ? Sc() : e === "jp" ? Ac() : e === "pl" ? Oc() : e === "ru" ? Rc() : e === "uk" ? Dc() : Ic()
   },
   Cc = () => "Botting",
   kc = () => "Uso de bots",
@@ -5165,8 +5165,8 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   },
   hu = () => "You have broken one of Wplace's rules",
   gu = () => "Você quebrou uma das regras do Wplace",
-  yu = () => "你违反了 Wplace 的一项规则",
-  wu = () => "Du hast gegen eine der Wplace-Regeln verstoßen",
+  wu = () => "你违反了 Wplace 的一项规则",
+  yu = () => "Du hast gegen eine der Wplace-Regeln verstoßen",
   bu = () => "Has infringido una de las reglas de Wplace",
   vu = () => "Vous avez enfreint l’une des règles de Wplace",
   Eu = () => "Hai infranto una delle regole di Wplace",
@@ -5177,7 +5177,7 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   Ru = () => "Bạn đã vi phạm một trong các luật của Wplace",
   Du = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? hu() : e === "pt" ? gu() : e === "ch" ? yu() : e === "de" ? wu() : e === "es" ? bu() : e === "fr" ? vu() : e === "it" ? Eu() : e === "jp" ? Tu() : e === "pl" ? Su() : e === "ru" ? Au() : e === "uk" ? Ou() : Ru()
+    return e === "en" ? hu() : e === "pt" ? gu() : e === "ch" ? wu() : e === "de" ? yu() : e === "es" ? bu() : e === "fr" ? vu() : e === "it" ? Eu() : e === "jp" ? Tu() : e === "pl" ? Su() : e === "ru" ? Au() : e === "uk" ? Ou() : Ru()
   },
   Iu = () => "You cannot paint over event pixels",
   Nu = () => "Você não pode pintar sobre pixels de eventos",
@@ -5233,15 +5233,15 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   ml = () => "Kauf konnte nicht abgeschlossen werden. Dieses Item existiert nicht.",
   hl = () => "No se pudo completar la compra. Este ítem no existe.",
   gl = () => "Achat impossible. Cet objet n’existe pas.",
-  yl = () => "Impossibile completare l'acquisto. Questo oggetto non esiste.",
-  wl = () => "購入を完了できませんでした。このアイテムは存在しません。",
+  wl = () => "Impossibile completare l'acquisto. Questo oggetto non esiste.",
+  yl = () => "購入を完了できませんでした。このアイテムは存在しません。",
   bl = () => "Nie udało się dokończyć zakupu. Ten przedmiot nie istnieje.",
   vl = () => "Не удалось завершить покупку. Этот предмет не существует.",
   El = () => "Не вдалося завершити покупку. Цей предмет не існує.",
   Tl = () => "Không thể hoàn tất giao dịch. Vật phẩm này không tồn tại.",
   _r = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? _l() : e === "pt" ? fl() : e === "ch" ? pl() : e === "de" ? ml() : e === "es" ? hl() : e === "fr" ? gl() : e === "it" ? yl() : e === "jp" ? wl() : e === "pl" ? bl() : e === "ru" ? vl() : e === "uk" ? El() : Tl()
+    return e === "en" ? _l() : e === "pt" ? fl() : e === "ch" ? pl() : e === "de" ? ml() : e === "es" ? hl() : e === "fr" ? gl() : e === "it" ? wl() : e === "jp" ? yl() : e === "pl" ? bl() : e === "ru" ? vl() : e === "uk" ? El() : Tl()
   },
   Sl = () => "Your phone number's country doesn't match your current location. Please use a local number.",
   Al = () => "O país do seu número de telefone não corresponde à sua localização atual. Por favor, use um número local.",
@@ -5301,11 +5301,11 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   md = () => "他人の個人情報を同意なく公開した。",
   hd = () => "Udostępnianie cudzych danych osobowych bez ich zgody",
   gd = () => "Публикация личной информации других людей без их согласия",
-  yd = () => "Розповсюдження особистої інформації інших людей без їхньої згоди",
-  wd = () => "Công khai thông tin cá nhân của người khác mà không có sự cho phép",
+  wd = () => "Розповсюдження особистої інформації інших людей без їхньої згоди",
+  yd = () => "Công khai thông tin cá nhân của người khác mà không có sự cho phép",
   bd = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? cd() : e === "pt" ? ud() : e === "ch" ? ld() : e === "de" ? dd() : e === "es" ? _d() : e === "fr" ? fd() : e === "it" ? pd() : e === "jp" ? md() : e === "pl" ? hd() : e === "ru" ? gd() : e === "uk" ? yd() : wd()
+    return e === "en" ? cd() : e === "pt" ? ud() : e === "ch" ? ld() : e === "de" ? dd() : e === "es" ? _d() : e === "fr" ? fd() : e === "it" ? pd() : e === "jp" ? md() : e === "pl" ? hd() : e === "ru" ? gd() : e === "uk" ? wd() : yd()
   },
   vd = () => "This email is already in use.",
   Ed = () => "Este e-mail já está em uso.",
@@ -5367,11 +5367,11 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   m_ = n => `Ошибка при рисовании: ${n.err}`,
   h_ = n => `Помилка під час малювання: ${n.err}`,
   g_ = n => `Lỗi khi tô: ${n.err}`,
-  y_ = (n, t = {}) => {
+  w_ = (n, t = {}) => {
     const e = t.locale ?? O();
     return e === "en" ? i_(n) : e === "pt" ? s_(n) : e === "ch" ? c_(n) : e === "de" ? u_(n) : e === "es" ? l_(n) : e === "fr" ? d_(n) : e === "it" ? __(n) : e === "jp" ? f_(n) : e === "pl" ? p_(n) : e === "ru" ? m_(n) : e === "uk" ? h_(n) : g_(n)
   },
-  w_ = () => "Exceeded maximum number of characters",
+  y_ = () => "Exceeded maximum number of characters",
   b_ = () => "Excedeu o número máximo de caracteres permitidos",
   v_ = () => "超出最大字符数",
   E_ = () => "Maximale Zeichenanzahl überschritten",
@@ -5385,7 +5385,7 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   N_ = () => "Đã vượt quá số ký tự tối đa",
   C_ = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? w_() : e === "pt" ? b_() : e === "ch" ? v_() : e === "de" ? E_() : e === "es" ? T_() : e === "fr" ? S_() : e === "it" ? A_() : e === "jp" ? O_() : e === "pl" ? R_() : e === "ru" ? D_() : e === "uk" ? I_() : N_()
+    return e === "en" ? y_() : e === "pt" ? b_() : e === "ch" ? v_() : e === "de" ? E_() : e === "es" ? T_() : e === "fr" ? S_() : e === "it" ? A_() : e === "jp" ? O_() : e === "pl" ? R_() : e === "ru" ? D_() : e === "uk" ? I_() : N_()
   },
   k_ = () => "Verification code expired. Please request a new one.",
   P_ = () => "Código de verificação expirado. Por favor, solicite um novo.",
@@ -5435,8 +5435,8 @@ const Ps = () => "Your account has been suspended for breaking the rules",
     const e = t.locale ?? O();
     return e === "en" ? of() : e === "pt" ? af() : e === "ch" ? sf() : e === "de" ? cf() : e === "es" ? uf() : e === "fr" ? lf() : e === "it" ? df() : e === "jp" ? _f() : e === "pl" ? ff() : e === "ru" ? pf() : e === "uk" ? mf() : hf()
   },
-  yf = () => "Hate speech",
-  wf = () => "Discurso de Ódio",
+  wf = () => "Hate speech",
+  yf = () => "Discurso de Ódio",
   bf = () => "仇恨言论",
   vf = () => "Hassrede",
   Ef = () => "Discurso de odio",
@@ -5449,7 +5449,7 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   If = () => "Ngôn từ thù hằn",
   Nf = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? yf() : e === "pt" ? wf() : e === "ch" ? bf() : e === "de" ? vf() : e === "es" ? Ef() : e === "fr" ? Tf() : e === "it" ? Sf() : e === "jp" ? Af() : e === "pl" ? Of() : e === "ru" ? Rf() : e === "uk" ? Df() : If()
+    return e === "en" ? wf() : e === "pt" ? yf() : e === "ch" ? bf() : e === "de" ? vf() : e === "es" ? Ef() : e === "fr" ? Tf() : e === "it" ? Sf() : e === "jp" ? Af() : e === "pl" ? Of() : e === "ru" ? Rf() : e === "uk" ? Df() : If()
   },
   Cf = () => "Racism, homophobia, hate groups, ...",
   kf = () => "Racismo, homofobia, grupos de ódio, ...",
@@ -5501,8 +5501,8 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   },
   hp = () => "Invalid captcha. Please try again.",
   gp = () => "Captcha inválido. Por favor, tente novamente.",
-  yp = () => "验证码无效，请重试。",
-  wp = () => "Ungültiges Captcha. Bitte versuche es erneut.",
+  wp = () => "验证码无效，请重试。",
+  yp = () => "Ungültiges Captcha. Bitte versuche es erneut.",
   bp = () => "Captcha inválido. Por favor, inténtelo de nuevo.",
   vp = () => "Captcha invalide. Veuillez réessayer.",
   Ep = () => "Captcha non valido. Riprova.",
@@ -5513,7 +5513,7 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   Rp = () => "Captcha không hợp lệ. Vui lòng thử lại.",
   Dp = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? hp() : e === "pt" ? gp() : e === "ch" ? yp() : e === "de" ? wp() : e === "es" ? bp() : e === "fr" ? vp() : e === "it" ? Ep() : e === "jp" ? Tp() : e === "pl" ? Sp() : e === "ru" ? Ap() : e === "uk" ? Op() : Rp()
+    return e === "en" ? hp() : e === "pt" ? gp() : e === "ch" ? wp() : e === "de" ? yp() : e === "es" ? bp() : e === "fr" ? vp() : e === "it" ? Ep() : e === "jp" ? Tp() : e === "pl" ? Sp() : e === "ru" ? Ap() : e === "uk" ? Op() : Rp()
   },
   Ip = () => "Invalid challenge response",
   Np = () => "Resposta de desafio inválida",
@@ -5567,8 +5567,8 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   mm = () => "O nome contém caracteres ou palavras não permitidas. Por favor, escolha outro nome.",
   hm = () => "名称包含禁止的字符或词语，请选择其他名称。",
   gm = () => "Der Name enthält nicht erlaubte Zeichen oder Wörter. Bitte wähle einen anderen Namen.",
-  ym = () => "El nombre contiene caracteres o palabras no permitidas. Elige otro nombre.",
-  wm = () => "Le nom contient des caractères ou des mots non autorisés. Veuillez choisir un autre nom.",
+  wm = () => "El nombre contiene caracteres o palabras no permitidas. Elige otro nombre.",
+  ym = () => "Le nom contient des caractères ou des mots non autorisés. Veuillez choisir un autre nom.",
   bm = () => "Il nome contiene caratteri o parole non consentiti. Scegli un altro nome.",
   vm = () => "この名前には使用できない文字または単語が含まれています。別の名前を選んでください。",
   Em = () => "Nazwa zawiera niedozwolone znaki lub słowa. Wybierz inną nazwę.",
@@ -5577,7 +5577,7 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   Am = () => "Tên chứa ký tự hoặc từ không được phép. Hãy chọn tên khác.",
   pr = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? pm() : e === "pt" ? mm() : e === "ch" ? hm() : e === "de" ? gm() : e === "es" ? ym() : e === "fr" ? wm() : e === "it" ? bm() : e === "jp" ? vm() : e === "pl" ? Em() : e === "ru" ? Tm() : e === "uk" ? Sm() : Am()
+    return e === "en" ? pm() : e === "pt" ? mm() : e === "ch" ? hm() : e === "de" ? gm() : e === "es" ? wm() : e === "fr" ? ym() : e === "it" ? bm() : e === "jp" ? vm() : e === "pl" ? Em() : e === "ru" ? Tm() : e === "uk" ? Sm() : Am()
   },
   Om = () => "Please enter a valid phone number with country code.",
   Rm = () => "Insira um número de telefone válido com código do país.",
@@ -5634,14 +5634,14 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   mh = () => "La clasificación está deshabilitada temporalmente",
   hh = () => "Le classement est temporairement désactivé",
   gh = () => "La classifica è temporaneamente disattivata",
-  yh = () => "ランキングは一時的に無効になっています。",
-  wh = () => "Ranking jest tymczasowo wyłączony",
+  wh = () => "ランキングは一時的に無効になっています。",
+  yh = () => "Ranking jest tymczasowo wyłączony",
   bh = () => "Таблица лидеров временно отключена",
   vh = () => "Таблиця лідерів тимчасово вимкнена",
   Eh = () => "Bảng xếp hạng tạm thời bị vô hiệu hóa",
   $e = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? dh() : e === "pt" ? _h() : e === "ch" ? fh() : e === "de" ? ph() : e === "es" ? mh() : e === "fr" ? hh() : e === "it" ? gh() : e === "jp" ? yh() : e === "pl" ? wh() : e === "ru" ? bh() : e === "uk" ? vh() : Eh()
+    return e === "en" ? dh() : e === "pt" ? _h() : e === "ch" ? fh() : e === "de" ? ph() : e === "es" ? mh() : e === "fr" ? hh() : e === "it" ? gh() : e === "jp" ? wh() : e === "pl" ? yh() : e === "ru" ? bh() : e === "uk" ? vh() : Eh()
   },
   Th = () => "Location name is too big (max. 128 characters)",
   Sh = () => "Nome da localização é grande demais (max. 128 caracteres)",
@@ -5701,11 +5701,11 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   mg = n => `${n.days}日後に再び名前を変更できます。`,
   hg = n => `Następną zmianę nazwy możesz wykonać za ${n.days} dni`,
   gg = n => `Вы сможете изменить имя снова через ${n.days} дн.`,
-  yg = n => `Ви зможете змінити імʼя знову через ${n.days} днів`,
-  wg = n => `Bạn có thể đổi tên lại sau ${n.days} ngày`,
+  wg = n => `Ви зможете змінити імʼя знову через ${n.days} днів`,
+  yg = n => `Bạn có thể đổi tên lại sau ${n.days} ngày`,
   bg = (n, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? cg(n) : e === "pt" ? ug(n) : e === "ch" ? lg(n) : e === "de" ? dg(n) : e === "es" ? _g(n) : e === "fr" ? fg(n) : e === "it" ? pg(n) : e === "jp" ? mg(n) : e === "pl" ? hg(n) : e === "ru" ? gg(n) : e === "uk" ? yg(n) : wg(n)
+    return e === "en" ? cg(n) : e === "pt" ? ug(n) : e === "ch" ? lg(n) : e === "de" ? dg(n) : e === "es" ? _g(n) : e === "fr" ? fg(n) : e === "it" ? pg(n) : e === "jp" ? mg(n) : e === "pl" ? hg(n) : e === "ru" ? gg(n) : e === "uk" ? wg(n) : yg(n)
   },
   vg = () => "No internet access or the servers are offline. Try again later.",
   Eg = () => "Sem acesso à internet ou os servidores estão fora do ar. Tente novamente mais tarde.",
@@ -5746,142 +5746,142 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   Jg = () => "Operación no permitida. Puede que tengas demasiadas ubicaciones favoritas.",
   Qg = () => "Opération non autorisée. Vous avez peut-être trop d’emplacements favoris.",
   Zg = () => "Operazione non consentita. Forse hai troppi luoghi preferiti.",
-  ey = () => "この操作は許可されていません。お気に入りの場所が多すぎる可能性があります。",
-  ty = () => "Operacja niedozwolona. Możliwe, że masz zbyt wiele ulubionych lokalizacji.",
-  ny = () => "Операция запрещена. Возможно, у вас слишком много избранных локаций.",
-  ry = () => "Операцію заборонено. Можливо, у вас забагато вибраних локацій.",
-  oy = () => "Thao tác không được phép. Có thể bạn đã có quá nhiều vị trí yêu thích.",
-  ay = (n = {}, t = {}) => {
+  ew = () => "この操作は許可されていません。お気に入りの場所が多すぎる可能性があります。",
+  tw = () => "Operacja niedozwolona. Możliwe, że masz zbyt wiele ulubionych lokalizacji.",
+  nw = () => "Операция запрещена. Возможно, у вас слишком много избранных локаций.",
+  rw = () => "Операцію заборонено. Можливо, у вас забагато вибраних локацій.",
+  ow = () => "Thao tác không được phép. Có thể bạn đã có quá nhiều vị trí yêu thích.",
+  aw = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? qg() : e === "pt" ? Kg() : e === "ch" ? Xg() : e === "de" ? Yg() : e === "es" ? Jg() : e === "fr" ? Qg() : e === "it" ? Zg() : e === "jp" ? ey() : e === "pl" ? ty() : e === "ru" ? ny() : e === "uk" ? ry() : oy()
+    return e === "en" ? qg() : e === "pt" ? Kg() : e === "ch" ? Xg() : e === "de" ? Yg() : e === "es" ? Jg() : e === "fr" ? Qg() : e === "it" ? Zg() : e === "jp" ? ew() : e === "pl" ? tw() : e === "ru" ? nw() : e === "uk" ? rw() : ow()
   },
-  iy = n => `Not enough charges: you have ${n.charges} but this overlay needs ${n.pixels}.`,
-  sy = n => `Cargas insuficientes: você tem ${n.charges}, mas esta sobreposição precisa de ${n.pixels}.`,
-  cy = n => `充能不足：你有 ${n.charges}，但此叠加层需要 ${n.pixels}。`,
-  uy = n => `Nicht genügend Ladungen: Du hast ${n.charges}, aber dieses Overlay benötigt ${n.pixels}.`,
-  ly = n => `Cargas insuficientes: tienes ${n.charges} pero esta superposición necesita ${n.pixels}.`,
-  dy = n => `Charges insuffisantes : vous avez ${n.charges} mais ce calque nécessite ${n.pixels}.`,
-  _y = n => `Cariche insufficienti: ne hai ${n.charges} ma questo overlay ne richiede ${n.pixels}.`,
-  fy = n => `チャージが足りません：現在 ${n.charges} ですが、このオーバーレイには ${n.pixels} 必要です。`,
-  py = n => `Za mało ładunków: masz ${n.charges}, ale ta nakładka wymaga ${n.pixels}.`,
-  my = n => `Недостаточно зарядов: у вас ${n.charges}, но для этого слоя нужно ${n.pixels}.`,
-  hy = n => `Недостатньо зарядів: у вас ${n.charges}, але для цього шару потрібно ${n.pixels}.`,
-  gy = n => `Không đủ lượt sơn: bạn có ${n.charges} nhưng lớp phủ này cần ${n.pixels}.`,
-  yy = (n, t = {}) => {
+  iw = n => `Not enough charges: you have ${n.charges} but this overlay needs ${n.pixels}.`,
+  sw = n => `Cargas insuficientes: você tem ${n.charges}, mas esta sobreposição precisa de ${n.pixels}.`,
+  cw = n => `充能不足：你有 ${n.charges}，但此叠加层需要 ${n.pixels}。`,
+  uw = n => `Nicht genügend Ladungen: Du hast ${n.charges}, aber dieses Overlay benötigt ${n.pixels}.`,
+  lw = n => `Cargas insuficientes: tienes ${n.charges} pero esta superposición necesita ${n.pixels}.`,
+  dw = n => `Charges insuffisantes : vous avez ${n.charges} mais ce calque nécessite ${n.pixels}.`,
+  _w = n => `Cariche insufficienti: ne hai ${n.charges} ma questo overlay ne richiede ${n.pixels}.`,
+  fw = n => `チャージが足りません：現在 ${n.charges} ですが、このオーバーレイには ${n.pixels} 必要です。`,
+  pw = n => `Za mało ładunków: masz ${n.charges}, ale ta nakładka wymaga ${n.pixels}.`,
+  mw = n => `Недостаточно зарядов: у вас ${n.charges}, но для этого слоя нужно ${n.pixels}.`,
+  hw = n => `Недостатньо зарядів: у вас ${n.charges}, але для цього шару потрібно ${n.pixels}.`,
+  gw = n => `Không đủ lượt sơn: bạn có ${n.charges} nhưng lớp phủ này cần ${n.pixels}.`,
+  ww = (n, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? iy(n) : e === "pt" ? sy(n) : e === "ch" ? cy(n) : e === "de" ? uy(n) : e === "es" ? ly(n) : e === "fr" ? dy(n) : e === "it" ? _y(n) : e === "jp" ? fy(n) : e === "pl" ? py(n) : e === "ru" ? my(n) : e === "uk" ? hy(n) : gy(n)
+    return e === "en" ? iw(n) : e === "pt" ? sw(n) : e === "ch" ? cw(n) : e === "de" ? uw(n) : e === "es" ? lw(n) : e === "fr" ? dw(n) : e === "it" ? _w(n) : e === "jp" ? fw(n) : e === "pl" ? pw(n) : e === "ru" ? mw(n) : e === "uk" ? hw(n) : gw(n)
   },
-  wy = () => "You are trying to paint with a color you do not own",
-  by = () => "Você está tentando pintar com uma cor que não possui",
-  vy = () => "你正在尝试使用尚未拥有的颜色进行绘制",
-  Ey = () => "Du versuchst mit einer Farbe zu malen, die du nicht besitzt",
-  Ty = () => "Estás intentando pintar con un color que no posees",
-  Sy = () => "Vous essayez de peindre avec une couleur que vous ne possédez pas",
-  Ay = () => "Stai cercando di dipingere con un colore che non possiedi",
-  Oy = () => "所持していない色で塗ろうとしています。",
-  Ry = () => "Próbujesz malować kolorem, którego nie posiadasz",
-  Dy = () => "Вы пытаетесь рисовать цветом, которого у вас нет",
-  Iy = () => "Ви намагаєтеся малювати кольором, якого не маєте",
-  Ny = () => "Bạn đang cố tô bằng một màu bạn không sở hữu",
+  yw = () => "You are trying to paint with a color you do not own",
+  bw = () => "Você está tentando pintar com uma cor que não possui",
+  vw = () => "你正在尝试使用尚未拥有的颜色进行绘制",
+  Ew = () => "Du versuchst mit einer Farbe zu malen, die du nicht besitzt",
+  Tw = () => "Estás intentando pintar con un color que no posees",
+  Sw = () => "Vous essayez de peindre avec une couleur que vous ne possédez pas",
+  Aw = () => "Stai cercando di dipingere con un colore che non possiedi",
+  Ow = () => "所持していない色で塗ろうとしています。",
+  Rw = () => "Próbujesz malować kolorem, którego nie posiadasz",
+  Dw = () => "Вы пытаетесь рисовать цветом, которого у вас нет",
+  Iw = () => "Ви намагаєтеся малювати кольором, якого не маєте",
+  Nw = () => "Bạn đang cố tô bằng một màu bạn không sở hữu",
   mr = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? wy() : e === "pt" ? by() : e === "ch" ? vy() : e === "de" ? Ey() : e === "es" ? Ty() : e === "fr" ? Sy() : e === "it" ? Ay() : e === "jp" ? Oy() : e === "pl" ? Ry() : e === "ru" ? Dy() : e === "uk" ? Iy() : Ny()
+    return e === "en" ? yw() : e === "pt" ? bw() : e === "ch" ? vw() : e === "de" ? Ew() : e === "es" ? Tw() : e === "fr" ? Sw() : e === "it" ? Aw() : e === "jp" ? Ow() : e === "pl" ? Rw() : e === "ru" ? Dw() : e === "uk" ? Iw() : Nw()
   },
-  Cy = () => "Phone already used",
-  ky = () => "Telefone já usado",
-  Py = () => "电话号码已被使用",
-  xy = () => "Telefonnummer bereits verwendet",
-  Ly = () => "Teléfono ya utilizado",
-  My = () => "Téléphone déjà utilisé",
-  By = () => "Telefono già utilizzato",
-  Hy = () => "この電話番号は既に使用されています。",
-  Uy = () => "Numer telefonu jest już używany",
-  Fy = () => "Телефон уже используется",
-  jy = () => "Номер телефону вже використовується",
-  Gy = () => "Số điện thoại đã được sử dụng",
-  Wy = (n = {}, t = {}) => {
+  Cw = () => "Phone already used",
+  kw = () => "Telefone já usado",
+  Pw = () => "电话号码已被使用",
+  xw = () => "Telefonnummer bereits verwendet",
+  Lw = () => "Teléfono ya utilizado",
+  Mw = () => "Téléphone déjà utilisé",
+  Bw = () => "Telefono già utilizzato",
+  Hw = () => "この電話番号は既に使用されています。",
+  Uw = () => "Numer telefonu jest już używany",
+  Fw = () => "Телефон уже используется",
+  jw = () => "Номер телефону вже використовується",
+  Gw = () => "Số điện thoại đã được sử dụng",
+  Ww = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? Cy() : e === "pt" ? ky() : e === "ch" ? Py() : e === "de" ? xy() : e === "es" ? Ly() : e === "fr" ? My() : e === "it" ? By() : e === "jp" ? Hy() : e === "pl" ? Uy() : e === "ru" ? Fy() : e === "uk" ? jy() : Gy()
+    return e === "en" ? Cw() : e === "pt" ? kw() : e === "ch" ? Pw() : e === "de" ? xw() : e === "es" ? Lw() : e === "fr" ? Mw() : e === "it" ? Bw() : e === "jp" ? Hw() : e === "pl" ? Uw() : e === "ru" ? Fw() : e === "uk" ? jw() : Gw()
   },
-  Vy = () => "This phone number's region is not supported",
-  zy = () => "A região deste número de telefone não é suportada",
-  $y = () => "此电话号码的地区不受支持",
-  qy = () => "Die Region dieser Telefonnummer wird nicht unterstützt",
-  Ky = () => "La región de este número de teléfono no es compatible",
-  Xy = () => "La région de ce numéro de téléphone n'est pas prise en charge",
-  Yy = () => "La regione di questo numero di telefono non è supportata",
-  Jy = () => "この電話番号の地域はサポートされていません",
-  Qy = () => "Region tego numeru telefonu nie jest obsługiwany",
-  Zy = () => "Регион этого номера телефона не поддерживается",
-  ew = () => "Регіон цього номера телефону не підтримується",
-  tw = () => "Vùng của số điện thoại này không được hỗ trợ",
-  nw = (n = {}, t = {}) => {
+  Vw = () => "This phone number's region is not supported",
+  zw = () => "A região deste número de telefone não é suportada",
+  $w = () => "此电话号码的地区不受支持",
+  qw = () => "Die Region dieser Telefonnummer wird nicht unterstützt",
+  Kw = () => "La región de este número de teléfono no es compatible",
+  Xw = () => "La région de ce numéro de téléphone n'est pas prise en charge",
+  Yw = () => "La regione di questo numero di telefono non è supportata",
+  Jw = () => "この電話番号の地域はサポートされていません",
+  Qw = () => "Region tego numeru telefonu nie jest obsługiwany",
+  Zw = () => "Регион этого номера телефона не поддерживается",
+  ey = () => "Регіон цього номера телефону не підтримується",
+  ty = () => "Vùng của số điện thoại này không được hỗ trợ",
+  ny = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? Vy() : e === "pt" ? zy() : e === "ch" ? $y() : e === "de" ? qy() : e === "es" ? Ky() : e === "fr" ? Xy() : e === "it" ? Yy() : e === "jp" ? Jy() : e === "pl" ? Qy() : e === "ru" ? Zy() : e === "uk" ? ew() : tw()
+    return e === "en" ? Vw() : e === "pt" ? zw() : e === "ch" ? $w() : e === "de" ? qw() : e === "es" ? Kw() : e === "fr" ? Xw() : e === "it" ? Yw() : e === "jp" ? Jw() : e === "pl" ? Qw() : e === "ru" ? Zw() : e === "uk" ? ey() : ty()
   },
-  rw = () => "Refresh your page to get the latest update",
-  ow = () => "Recarregue sua página para obter as últimas atualizações",
-  aw = () => "刷新页面以获取最新更新",
-  iw = () => "Aktualisiere die Seite, um die neuesten Updates zu erhalten",
-  sw = () => "Actualiza la página para obtener la última versión",
-  cw = () => "Actualisez la page pour obtenir les dernières mises à jour",
-  uw = () => "Ricarica la pagina per ottenere gli ultimi aggiornamenti",
-  lw = () => "最新の状態にするにはページを再読み込みしてください。",
-  dw = () => "Odśwież stronę, aby zobaczyć najnowszą aktualizację",
-  _w = () => "Обновите страницу, чтобы получить последние изменения",
-  fw = () => "Оновіть сторінку, щоб отримати останні оновлення",
-  pw = () => "Hãy làm mới trang để nhận được cập nhật mới nhất",
+  ry = () => "Refresh your page to get the latest update",
+  oy = () => "Recarregue sua página para obter as últimas atualizações",
+  ay = () => "刷新页面以获取最新更新",
+  iy = () => "Aktualisiere die Seite, um die neuesten Updates zu erhalten",
+  sy = () => "Actualiza la página para obtener la última versión",
+  cy = () => "Actualisez la page pour obtenir les dernières mises à jour",
+  uy = () => "Ricarica la pagina per ottenere gli ultimi aggiornamenti",
+  ly = () => "最新の状態にするにはページを再読み込みしてください。",
+  dy = () => "Odśwież stronę, aby zobaczyć najnowszą aktualizację",
+  _y = () => "Обновите страницу, чтобы получить последние изменения",
+  fy = () => "Оновіть сторінку, щоб отримати останні оновлення",
+  py = () => "Hãy làm mới trang để nhận được cập nhật mới nhất",
   hr = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? rw() : e === "pt" ? ow() : e === "ch" ? aw() : e === "de" ? iw() : e === "es" ? sw() : e === "fr" ? cw() : e === "it" ? uw() : e === "jp" ? lw() : e === "pl" ? dw() : e === "ru" ? _w() : e === "uk" ? fw() : pw()
+    return e === "en" ? ry() : e === "pt" ? oy() : e === "ch" ? ay() : e === "de" ? iy() : e === "es" ? sy() : e === "fr" ? cy() : e === "it" ? uy() : e === "jp" ? ly() : e === "pl" ? dy() : e === "ru" ? _y() : e === "uk" ? fy() : py()
   },
-  mw = () => "The request timed out. Please try again.",
-  hw = () => "A solicitação expirou. Por favor, tente novamente.",
-  gw = () => "请求超时。请重试。",
-  yw = () => "Die Anfrage hat ein Zeitlimit überschritten. Bitte versuchen Sie es erneut.",
-  ww = () => "La solicitud agotó el tiempo de espera. Por favor, inténtelo de nuevo.",
-  bw = () => "La requête a expiré. Veuillez réessayer.",
-  vw = () => "La richiesta è scaduta. Riprova.",
-  Ew = () => "リクエストがタイムアウトしました。もう一度お試しください。",
-  Tw = () => "Żądanie przekroczyło limit czasu. Proszę spróbować ponownie.",
-  Sw = () => "Время ожидания запроса истекло. Пожалуйста, попробуйте снова.",
-  Aw = () => "Час очікування запиту вичерпано. Будь ласка, спробуйте ще раз.",
-  Ow = () => "Yêu cầu đã hết thời gian. Vui lòng thử lại.",
-  Rw = (n = {}, t = {}) => {
+  my = () => "The request timed out. Please try again.",
+  hy = () => "A solicitação expirou. Por favor, tente novamente.",
+  gy = () => "请求超时。请重试。",
+  wy = () => "Die Anfrage hat ein Zeitlimit überschritten. Bitte versuchen Sie es erneut.",
+  yy = () => "La solicitud agotó el tiempo de espera. Por favor, inténtelo de nuevo.",
+  by = () => "La requête a expiré. Veuillez réessayer.",
+  vy = () => "La richiesta è scaduta. Riprova.",
+  Ey = () => "リクエストがタイムアウトしました。もう一度お試しください。",
+  Ty = () => "Żądanie przekroczyło limit czasu. Proszę spróbować ponownie.",
+  Sy = () => "Время ожидания запроса истекло. Пожалуйста, попробуйте снова.",
+  Ay = () => "Час очікування запиту вичерпано. Будь ласка, спробуйте ще раз.",
+  Oy = () => "Yêu cầu đã hết thời gian. Vui lòng thử lại.",
+  Ry = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? mw() : e === "pt" ? hw() : e === "ch" ? gw() : e === "de" ? yw() : e === "es" ? ww() : e === "fr" ? bw() : e === "it" ? vw() : e === "jp" ? Ew() : e === "pl" ? Tw() : e === "ru" ? Sw() : e === "uk" ? Aw() : Ow()
+    return e === "en" ? my() : e === "pt" ? hy() : e === "ch" ? gy() : e === "de" ? wy() : e === "es" ? yy() : e === "fr" ? by() : e === "it" ? vy() : e === "jp" ? Ey() : e === "pl" ? Ty() : e === "ru" ? Sy() : e === "uk" ? Ay() : Oy()
   },
-  Dw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  Iw = () => "A área selecionada tem histórico demais para exportar um timelapse. Tente uma área menor.",
-  Nw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  Cw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  kw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  Pw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  xw = () => "L'area selezionata ha troppa cronologia per esportare un timelapse. Prova con un'area più piccola.",
-  Lw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  Mw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  Bw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  Hw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  Uw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  Fw = (n = {}, t = {}) => {
+  Dy = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Iy = () => "A área selecionada tem histórico demais para exportar um timelapse. Tente uma área menor.",
+  Ny = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Cy = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  ky = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Py = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  xy = () => "L'area selezionata ha troppa cronologia per esportare un timelapse. Prova con un'area più piccola.",
+  Ly = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  My = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  By = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Hy = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Uy = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Fy = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? Dw() : e === "pt" ? Iw() : e === "ch" ? Nw() : e === "de" ? Cw() : e === "es" ? kw() : e === "fr" ? Pw() : e === "it" ? xw() : e === "jp" ? Lw() : e === "pl" ? Mw() : e === "ru" ? Bw() : e === "uk" ? Hw() : Uw()
+    return e === "en" ? Dy() : e === "pt" ? Iy() : e === "ch" ? Ny() : e === "de" ? Cy() : e === "es" ? ky() : e === "fr" ? Py() : e === "it" ? xy() : e === "jp" ? Ly() : e === "pl" ? My() : e === "ru" ? By() : e === "uk" ? Hy() : Uy()
   },
-  jw = () => "The service is currently unavailable. Please try again later.",
-  Gw = () => "O serviço está indisponível no momento. Por favor, tente novamente mais tarde.",
-  Ww = () => "服务当前不可用。请稍后再试。",
-  Vw = () => "Der Dienst ist derzeit nicht verfügbar. Bitte versuchen Sie es später erneut.",
-  zw = () => "El servicio no está disponible actualmente. Por favor, inténtelo de nuevo más tarde.",
-  $w = () => "Le service est actuellement indisponible. Veuillez réessayer plus tard.",
-  qw = () => "Il servizio non è attualmente disponibile. Riprova più tardi.",
-  Kw = () => "現在、サービスはご利用いただけません。後でもう一度お試しください。",
-  Xw = () => "Usługa jest obecnie niedostępna. Proszę spróbować ponownie później.",
-  Yw = () => "Сервис в настоящее время недоступен. Пожалуйста, попробуйте позже.",
-  Jw = () => "Сервіс наразі недоступний. Будь ласка, спробуйте пізніше.",
-  Qw = () => "Dịch vụ hiện không khả dụng. Vui lòng thử lại sau.",
-  Zw = (n = {}, t = {}) => {
+  jy = () => "The service is currently unavailable. Please try again later.",
+  Gy = () => "O serviço está indisponível no momento. Por favor, tente novamente mais tarde.",
+  Wy = () => "服务当前不可用。请稍后再试。",
+  Vy = () => "Der Dienst ist derzeit nicht verfügbar. Bitte versuchen Sie es später erneut.",
+  zy = () => "El servicio no está disponible actualmente. Por favor, inténtelo de nuevo más tarde.",
+  $y = () => "Le service est actuellement indisponible. Veuillez réessayer plus tard.",
+  qy = () => "Il servizio non è attualmente disponibile. Riprova più tardi.",
+  Ky = () => "現在、サービスはご利用いただけません。後でもう一度お試しください。",
+  Xy = () => "Usługa jest obecnie niedostępna. Proszę spróbować ponownie później.",
+  Yy = () => "Сервис в настоящее время недоступен. Пожалуйста, попробуйте позже.",
+  Jy = () => "Сервіс наразі недоступний. Будь ласка, спробуйте пізніше.",
+  Qy = () => "Dịch vụ hiện không khả dụng. Vui lòng thử lại sau.",
+  Zy = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? jw() : e === "pt" ? Gw() : e === "ch" ? Ww() : e === "de" ? Vw() : e === "es" ? zw() : e === "fr" ? $w() : e === "it" ? qw() : e === "jp" ? Kw() : e === "pl" ? Xw() : e === "ru" ? Yw() : e === "uk" ? Jw() : Qw()
+    return e === "en" ? jy() : e === "pt" ? Gy() : e === "ch" ? Wy() : e === "de" ? Vy() : e === "es" ? zy() : e === "fr" ? $y() : e === "it" ? qy() : e === "jp" ? Ky() : e === "pl" ? Xy() : e === "ru" ? Yy() : e === "uk" ? Jy() : Qy()
   },
   eb = () => "Too many attempts. Please try again later",
   tb = () => "Muitas tentativas. Por favor, tente novamente mais tarde.",
@@ -5905,15 +5905,15 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   mb = () => "Der Zugriff über Tor oder anonyme Netzwerke ist nicht erlaubt. Bitte verbinden Sie sich über ein normales Netzwerk, um fortzufahren.",
   hb = () => "No se permite el acceso a través de Tor o redes anónimas. Por favor, conéctate desde una red normal para continuar.",
   gb = () => "L'accès via Tor ou des réseaux anonymes n'est pas autorisé. Veuillez vous connecter depuis un réseau normal pour continuer.",
-  yb = () => "L'accesso tramite Tor o reti anonime non è consentito. Connettiti da una rete normale per continuare.",
-  wb = () => "Torまたは匿名ネットワーク経由でのアクセスは許可されていません。続行するには通常のネットワークから接続してください。",
+  wb = () => "L'accesso tramite Tor o reti anonime non è consentito. Connettiti da una rete normale per continuare.",
+  yb = () => "Torまたは匿名ネットワーク経由でのアクセスは許可されていません。続行するには通常のネットワークから接続してください。",
   bb = () => "Dostęp przez Tor lub sieci anonimowe jest niedozwolony. Aby kontynuować, połącz się ze zwykłej sieci.",
   vb = () => "Доступ через Tor или анонимные сети не разрешён. Пожалуйста, подключитесь из обычной сети, чтобы продолжить.",
   Eb = () => "Доступ через Tor або анонімні мережі заборонено. Будь ласка, підключіться зі звичайної мережі, щоб продовжити.",
   Tb = () => "Không cho phép truy cập qua Tor hoặc các mạng ẩn danh. Vui lòng kết nối từ mạng thông thường để tiếp tục.",
   Sb = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? _b() : e === "pt" ? fb() : e === "ch" ? pb() : e === "de" ? mb() : e === "es" ? hb() : e === "fr" ? gb() : e === "it" ? yb() : e === "jp" ? wb() : e === "pl" ? bb() : e === "ru" ? vb() : e === "uk" ? Eb() : Tb()
+    return e === "en" ? _b() : e === "pt" ? fb() : e === "ch" ? pb() : e === "de" ? mb() : e === "es" ? hb() : e === "fr" ? gb() : e === "it" ? wb() : e === "jp" ? yb() : e === "pl" ? bb() : e === "ru" ? vb() : e === "uk" ? Eb() : Tb()
   },
   Ab = () => "The typed username does not match your current username.",
   Ob = () => "O nome de usuário digitado não corresponde ao seu nome de usuário atual.",
@@ -5972,12 +5972,12 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   m1 = () => "VPN o proxy rilevato. Disattiva la tua VPN e riprova.",
   h1 = () => "VPNまたはプロキシが検出されました。VPNを無効にしてもう一度お試しください。",
   g1 = () => "Wykryto VPN lub proxy. Wyłącz VPN i spróbuj ponownie.",
-  y1 = () => "Обнаружен VPN или прокси. Пожалуйста, отключите VPN и попробуйте снова.",
-  w1 = () => "Виявлено VPN або проксі. Будь ласка, вимкніть VPN і спробуйте знову.",
+  w1 = () => "Обнаружен VPN или прокси. Пожалуйста, отключите VPN и попробуйте снова.",
+  y1 = () => "Виявлено VPN або проксі. Будь ласка, вимкніть VPN і спробуйте знову.",
   b1 = () => "Phát hiện VPN hoặc proxy. Vui lòng tắt VPN và thử lại.",
   v1 = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? u1() : e === "pt" ? l1() : e === "ch" ? d1() : e === "de" ? _1() : e === "es" ? f1() : e === "fr" ? p1() : e === "it" ? m1() : e === "jp" ? h1() : e === "pl" ? g1() : e === "ru" ? y1() : e === "uk" ? w1() : b1()
+    return e === "en" ? u1() : e === "pt" ? l1() : e === "ch" ? d1() : e === "de" ? _1() : e === "es" ? f1() : e === "fr" ? p1() : e === "it" ? m1() : e === "jp" ? h1() : e === "pl" ? g1() : e === "ru" ? w1() : e === "uk" ? y1() : b1()
   },
   E1 = () => "Failed to load WebAssembly module. Try to use another browser.",
   T1 = () => "Erro ao carregar módulo WebAssembly. Tente usar outro navegador.",
@@ -6007,7 +6007,7 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   V1 = () => "У вас уже есть этот предмет. Обновите страницу.",
   z1 = () => "У вас уже є цей предмет. Оновіть сторінку.",
   $1 = () => "Bạn đã sở hữu vật phẩm này. Hãy tải lại trang.",
-  yr = (n = {}, t = {}) => {
+  wr = (n = {}, t = {}) => {
     const e = t.locale ?? O();
     return e === "en" ? L1() : e === "pt" ? M1() : e === "ch" ? B1() : e === "de" ? H1() : e === "es" ? U1() : e === "fr" ? F1() : e === "it" ? j1() : e === "jp" ? G1() : e === "pl" ? W1() : e === "ru" ? V1() : e === "uk" ? z1() : $1()
   },
@@ -6043,8 +6043,8 @@ const Ps = () => "Your account has been suspended for breaking the rules",
     const e = t.locale ?? O();
     return e === "en" ? i0() : e === "pt" ? s0() : e === "ch" ? c0() : e === "de" ? u0() : e === "es" ? l0() : e === "fr" ? d0() : e === "it" ? _0() : e === "jp" ? f0() : e === "pl" ? p0() : e === "ru" ? m0() : e === "uk" ? h0() : g0()
   },
-  y0 = () => "You do not have enough Droplets to buy this item.",
-  w0 = () => "Você não tem Droplets suficientes para comprar este item.",
+  w0 = () => "You do not have enough Droplets to buy this item.",
+  y0 = () => "Você não tem Droplets suficientes para comprar este item.",
   b0 = () => "你的 Droplets 不足，无法购买此物品。",
   v0 = () => "Du hast nicht genug Droplets, um dieses Item zu kaufen.",
   E0 = () => "No tienes suficientes Droplets para comprar este ítem.",
@@ -6055,9 +6055,9 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   R0 = () => "У вас недостаточно Droplets для покупки этого предмета.",
   D0 = () => "У вас недостатньо Droplets, щоб купити цей предмет.",
   I0 = () => "Bạn không có đủ Droplets để mua vật phẩm này.",
-  wr = (n = {}, t = {}) => {
+  yr = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? y0() : e === "pt" ? w0() : e === "ch" ? b0() : e === "de" ? v0() : e === "es" ? E0() : e === "fr" ? T0() : e === "it" ? S0() : e === "jp" ? A0() : e === "pl" ? O0() : e === "ru" ? R0() : e === "uk" ? D0() : I0()
+    return e === "en" ? w0() : e === "pt" ? y0() : e === "ch" ? b0() : e === "de" ? v0() : e === "es" ? E0() : e === "fr" ? T0() : e === "it" ? S0() : e === "jp" ? A0() : e === "pl" ? O0() : e === "ru" ? R0() : e === "uk" ? D0() : I0()
   },
   N0 = () => "You need to be logged in to paint",
   C0 = () => "Você precisa estar conectado para pintar",
@@ -6112,8 +6112,8 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   mv = () => "此工单已存在待审核的更正请求。",
   hv = () => "Für dieses Ticket ist bereits eine Korrektur in Arbeit.",
   gv = () => "Ya hay una corrección pendiente para este ticket.",
-  yv = () => "Une correction est déjà en attente pour ce ticket.",
-  wv = () => "Una correzione è già in sospeso per questo ticket.",
+  wv = () => "Une correction est déjà en attente pour ce ticket.",
+  yv = () => "Una correzione è già in sospeso per questo ticket.",
   bv = () => "このチケットには未処理の修正があります。",
   vv = () => "Dla tego zgłoszenia istnieje już oczekująca prośba o poprawkę.",
   Ev = () => "Для этого тикета уже есть запрос на исправление.",
@@ -6121,7 +6121,7 @@ const Ps = () => "Your account has been suspended for breaking the rules",
   Sv = () => "Đã có yêu cầu sửa đang chờ cho ticket này.",
   Av = (n = {}, t = {}) => {
     const e = t.locale ?? O();
-    return e === "en" ? fv() : e === "pt" ? pv() : e === "ch" ? mv() : e === "de" ? hv() : e === "es" ? gv() : e === "fr" ? yv() : e === "it" ? wv() : e === "jp" ? bv() : e === "pl" ? vv() : e === "ru" ? Ev() : e === "uk" ? Tv() : Sv()
+    return e === "en" ? fv() : e === "pt" ? pv() : e === "ch" ? mv() : e === "de" ? hv() : e === "es" ? gv() : e === "fr" ? wv() : e === "it" ? yv() : e === "jp" ? bv() : e === "pl" ? vv() : e === "ru" ? Ev() : e === "uk" ? Tv() : Sv()
   },
   Ov = () => "You cannot review your own correction request.",
   Rv = () => "Você não pode revisar sua própria solicitação de correção.",
@@ -6818,9 +6818,9 @@ class lE {
           x: s[0].tile[0],
           y: s[0].tile[1],
           pixels: {
-            x: s.map(c => c.pixel[0]),
-            y: s.map(c => c.pixel[1]),
-            colors: s.map(c => c.colorIdx)
+            x: s.map(u => u.pixel[0]),
+            y: s.map(u => u.pixel[1]),
+            colors: s.map(u => u.colorIdx)
           }
         }))
       },
@@ -6832,15 +6832,15 @@ class lE {
         headers: a,
         credentials: "include"
       });
-    if (i.status !== l.OK) {
-      if (i.status === l.UNAUTHORIZED) throw new Error(br());
-      if (i.status === l.FORBIDDEN) {
+    if (i.status !== c.OK) {
+      if (i.status === c.UNAUTHORIZED) throw new Error(br());
+      if (i.status === c.FORBIDDEN) {
         if (i.headers.get("cf-mitigated") === "challenge") throw new Error(fr());
         const s = await i.json();
         if ((s == null ? void 0 : s.error) === "timeout") {
-          const c = new Date(Date.now() + ((s == null ? void 0 : s.durationMs) ?? 0));
+          const u = new Date(Date.now() + ((s == null ? void 0 : s.durationMs) ?? 0));
           throw new Error(vr({
-            until: c.toLocaleString()
+            until: u.toLocaleString()
           }))
         }
         if ((s == null ? void 0 : s.error) === "refresh") throw new Error(hr());
@@ -6867,7 +6867,7 @@ class lE {
       },
       credentials: "include"
     });
-    if (e.status !== l.OK) throw new b(m(), e.status);
+    if (e.status !== c.OK) throw new b(m(), e.status);
     return e.json()
   }
   async getReverseTimestamps(t, e = {}) {
@@ -6888,7 +6888,7 @@ class lE {
       },
       credentials: "include"
     });
-    if (i.status !== l.OK) throw new b(m(), i.status);
+    if (i.status !== c.OK) throw new b(m(), i.status);
     return i.json()
   }
   async getReversePreview(t, e) {
@@ -6909,7 +6909,7 @@ class lE {
       },
       credentials: "include"
     });
-    if (i.status !== l.OK) throw new b(m(), i.status);
+    if (i.status !== c.OK) throw new b(m(), i.status);
     return i.json()
   }
   async getReverseTimelapse(t, e) {
@@ -6928,12 +6928,12 @@ class lE {
       },
       credentials: "include"
     });
-    if (r.status === l.BAD_REQUEST) {
+    if (r.status === c.BAD_REQUEST) {
       const o = await r.json(),
         a = (o == null ? void 0 : o.error) ?? "";
-      throw a === "timelapse_too_many_events" ? new b(Fw(), l.BAD_REQUEST) : new b(typeof a == "string" && a ? a : m(), l.BAD_REQUEST)
+      throw a === "timelapse_too_many_events" ? new b(Fy(), c.BAD_REQUEST) : new b(typeof a == "string" && a ? a : m(), c.BAD_REQUEST)
     }
-    if (r.status !== l.OK) throw new b(m(), r.status);
+    if (r.status !== c.OK) throw new b(m(), r.status);
     return r.arrayBuffer()
   }
   async applyReverse(t, e) {
@@ -6954,34 +6954,34 @@ class lE {
       },
       credentials: "include"
     });
-    if (i.status !== l.OK) throw new b(m(), i.status);
+    if (i.status !== c.OK) throw new b(m(), i.status);
     return i.json()
   }
   async sendPaintRequests(t, e, r, o) {
-    const a = Tr(t, c => `t=(${c.tile[0]},${c.tile[1]}),s=${c.season}`),
-      s = (await Promise.all(Object.values(a).map(async c => {
-        const [_, u] = c[0].tile, p = c[0].season, f = {
-          colors: c.map(y => y.colorIdx),
-          coords: c.flatMap(y => y.pixel),
+    const a = Tr(t, u => `t=(${u.tile[0]},${u.tile[1]}),s=${u.season}`),
+      s = (await Promise.all(Object.values(a).map(async u => {
+        const [_, l] = u[0].tile, p = u[0].season, f = {
+          colors: u.map(w => w.colorIdx),
+          coords: u.flatMap(w => w.pixel),
           csid: r
-        }, d = JSON.stringify(f), g = e(p, _, u), h = await pt.getHeaders(d);
+        }, d = JSON.stringify(f), g = e(p, _, l), h = await pt.getHeaders(d);
         return this.request(g, {
           method: "POST",
           body: d,
           headers: h,
           credentials: "include"
         })
-      }))).filter(c => c.status !== l.OK);
+      }))).filter(u => u.status !== c.OK);
     if (s.length) {
-      const c = s[0];
-      if (c.status === l.UNAUTHORIZED) throw new Error(br());
-      if (c.status === l.FORBIDDEN) {
-        if (c.headers.get("cf-mitigated") === "challenge") throw new Error(fr());
-        const _ = await c.json();
+      const u = s[0];
+      if (u.status === c.UNAUTHORIZED) throw new Error(br());
+      if (u.status === c.FORBIDDEN) {
+        if (u.headers.get("cf-mitigated") === "challenge") throw new Error(fr());
+        const _ = await u.json();
         if ((_ == null ? void 0 : _.error) === "timeout") {
-          const u = new Date(Date.now() + ((_ == null ? void 0 : _.durationMs) ?? 0));
+          const l = new Date(Date.now() + ((_ == null ? void 0 : _.durationMs) ?? 0));
           throw new Error(vr({
-            until: u.toLocaleString()
+            until: l.toLocaleString()
           }))
         }
         if ((_ == null ? void 0 : _.error) === "refresh") throw new Error(hr());
@@ -7001,16 +7001,16 @@ class lE {
       body: i,
       credentials: "include"
     });
-    if (s.status === l.FORBIDDEN) {
-      const c = await s.json().catch(() => null);
-      if (typeof(c == null ? void 0 : c.charges) == "number") throw new Error(yy({
-        charges: Math.floor(c.charges),
+    if (s.status === c.FORBIDDEN) {
+      const u = await s.json().catch(() => null);
+      if (typeof(u == null ? void 0 : u.charges) == "number") throw new Error(ww({
+        charges: Math.floor(u.charges),
         pixels: t.length
       }));
-      const _ = typeof(c == null ? void 0 : c.error) == "string" ? c.error.trim() : "";
+      const _ = typeof(u == null ? void 0 : u.error) == "string" ? u.error.trim() : "";
       throw _ && _ !== "Forbidden" ? new Error(_) : new Error("Auto painter is restricted to administrators.")
     }
-    if (s.status !== l.OK) throw new Error(m());
+    if (s.status !== c.OK) throw new Error(m());
     return s.json()
   }
   async getPixelInfo({
@@ -7023,10 +7023,10 @@ class lE {
     const s = await this.request(`/s${t}/pixel/${e}/${r}?${i.toString()}`, {
       credentials: "include"
     });
-    if (s.status !== l.OK) {
-      const c = await s.text();
-      throw new Error(y_({
-        err: c
+    if (s.status !== c.OK) {
+      const u = await s.text();
+      throw new Error(w_({
+        err: u
       }))
     }
     return s.json()
@@ -7037,21 +7037,21 @@ class lE {
     p0: [o, a],
     p1: [i, s]
   }) {
-    const c = await this.request(`/staff/tools/select-area/s${t}/${e}/${r}?x0=${o}&y0=${a}&x1=${i}&y1=${s}`, {
+    const u = await this.request(`/staff/tools/select-area/s${t}/${e}/${r}?x0=${o}&y0=${a}&x1=${i}&y1=${s}`, {
       credentials: "include"
     });
-    if (c.status !== l.OK) {
-      const g = await c.text();
+    if (u.status !== c.OK) {
+      const g = await u.text();
       throw console.error("Error while fetching pixel area info", g), new Error(m())
     }
-    const _ = await c.arrayBuffer(),
-      u = new DataView(_),
+    const _ = await u.arrayBuffer(),
+      l = new DataView(_),
       p = Math.floor(_.byteLength / 5),
       f = new Uint32Array(p),
       d = new Uint8Array(p);
     for (let g = 0; g < p; g++) {
       const h = g * 5;
-      f[g] = u.getUint32(h, !0), d[g] = u.getUint8(h + 4)
+      f[g] = l.getUint32(h, !0), d[g] = l.getUint8(h + 4)
     }
     return {
       paintedBy: f,
@@ -7062,21 +7062,54 @@ class lE {
     const t = await this.request("/me", {
       credentials: "include"
     });
-    if (t.status === l.OK) return await t.json()
+    if (t.status === c.OK) return await t.json()
   }
   async meEmail() {
     const t = await this.request("/me/email", {
       credentials: "include"
     });
-    if (t.status === l.OK) return (await t.json()).email
+    if (t.status === c.OK) return (await t.json()).email
   }
   async logout() {
     const t = await this.request("/auth/logout", {
       method: "POST",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new Error(await t.text());
+    if (t.status !== c.OK) throw new Error(await t.text());
     return await t.json()
+  }
+  async driveStatus() {
+    const t = await this.request("/drive/status", {
+      credentials: "include"
+    });
+    return t.status !== c.OK ? !1 : !!(await t.json()).connected
+  }
+  async driveConnect(t) {
+    const e = await this.request("/drive/connect", {
+      method: "POST",
+      credentials: "include",
+      body: JSON.stringify({
+        code: t
+      })
+    });
+    if (e.status !== c.OK) throw new Error(`drive connect failed: ${e.status}`);
+    return e.json()
+  }
+  async driveToken() {
+    const t = await this.request("/drive/token", {
+      credentials: "include",
+      throwOnStatus: !1
+    });
+    if (t.status === c.CONFLICT) return null;
+    if (t.status !== c.OK) throw new Error(`drive token failed: ${t.status}`);
+    return t.json()
+  }
+  async driveDisconnect() {
+    await this.request("/drive/disconnect", {
+      method: "POST",
+      credentials: "include",
+      throwOnStatus: !1
+    })
   }
   async createEmbeddedCheckout(t) {
     const e = await this.request("/payment/create-checkout-session", {
@@ -7086,8 +7119,8 @@ class lE {
         lookup_key: t
       })
     });
-    if (e.status === l.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(zs());
-    if (e.status !== l.OK) throw new Error(await e.text());
+    if (e.status === c.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(zs());
+    if (e.status !== c.OK) throw new Error(await e.text());
     return e.json()
   }
   async refreshDropletSession(t) {
@@ -7108,7 +7141,7 @@ class lE {
     const t = await this.request("/payment/fastspring/orders/last", {
       credentials: "include"
     });
-    if (t.status === l.NOT_FOUND) return null;
+    if (t.status === c.NOT_FOUND) return null;
     if (!t.ok) throw new Error(`Failed to get last FastSpring order: ${t.status} ${t.statusText}`);
     return await t.json()
   }
@@ -7123,7 +7156,7 @@ class lE {
     const t = await this.request("/anticheat/otp/cooldown", {
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new Error(m());
+    if (t.status !== c.OK) throw new Error(m());
     return await t.json()
   }
   async sendOtp(t) {
@@ -7138,16 +7171,16 @@ class lE {
       }),
       throwOnStatus: !1
     });
-    if (e.status === l.BAD_REQUEST) throw new Error(Hm());
-    if (e.status === l.CONFLICT) throw new Error(Wy());
-    if (e.status === l.FORBIDDEN) throw new Error($g());
-    if (e.status === l.TOO_MANY_REQUESTS) throw new Error(gr());
-    if (e.status === l.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(nw());
-    if (e.status === l.LOCKED) throw new Error(c1());
-    if (e.status === l.UNPROCESSABLE_ENTITY) throw new Error(Jm());
-    if (e.status === l.NOT_ACCEPTABLE) throw new Error(v1());
-    if (e.status === l.PRECONDITION_FAILED) throw new Error(Ml());
-    if (e.status !== l.OK) throw new Error(m());
+    if (e.status === c.BAD_REQUEST) throw new Error(Hm());
+    if (e.status === c.CONFLICT) throw new Error(Ww());
+    if (e.status === c.FORBIDDEN) throw new Error($g());
+    if (e.status === c.TOO_MANY_REQUESTS) throw new Error(gr());
+    if (e.status === c.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(ny());
+    if (e.status === c.LOCKED) throw new Error(c1());
+    if (e.status === c.UNPROCESSABLE_ENTITY) throw new Error(Jm());
+    if (e.status === c.NOT_ACCEPTABLE) throw new Error(v1());
+    if (e.status === c.PRECONDITION_FAILED) throw new Error(Ml());
+    if (e.status !== c.OK) throw new Error(m());
     return await e.json()
   }
   async verifyChallenge(t) {
@@ -7178,13 +7211,13 @@ class lE {
       }
     });
     if (t.type === "otp") {
-      if (r.status === l.GONE) throw new Error(V_());
-      if (r.status === l.BAD_REQUEST) throw new Error(em());
-      if (r.status === l.TOO_MANY_REQUESTS) throw new Error(gr());
-      if (r.status !== l.OK) throw new Error(m())
+      if (r.status === c.GONE) throw new Error(V_());
+      if (r.status === c.BAD_REQUEST) throw new Error(em());
+      if (r.status === c.TOO_MANY_REQUESTS) throw new Error(gr());
+      if (r.status !== c.OK) throw new Error(m())
     } else {
-      if (r.status === l.BAD_REQUEST) throw new Error(jp());
-      if (r.status !== l.OK) throw new Error(m())
+      if (r.status === c.BAD_REQUEST) throw new Error(jp());
+      if (r.status !== c.OK) throw new Error(m())
     }
   }
   async updateMe(t) {
@@ -7193,7 +7226,7 @@ class lE {
       credentials: "include",
       body: JSON.stringify(t)
     });
-    if (e.status === l.BAD_REQUEST) {
+    if (e.status === c.BAD_REQUEST) {
       const r = await e.json(),
         o = (r == null ? void 0 : r.error) ?? "";
       if (o === "invalid_name") throw new Error(pr());
@@ -7205,7 +7238,7 @@ class lE {
         }))
       }
       throw new Error(r == null ? void 0 : r.error)
-    } else if (e.status !== l.OK) throw new Error(m())
+    } else if (e.status !== c.OK) throw new Error(m())
   }
   async deleteMe(t) {
     const e = await this.request("/me", {
@@ -7215,8 +7248,8 @@ class lE {
         confirmText: t
       })
     });
-    if (e.status === l.BAD_REQUEST) throw new Error(Bb());
-    if (e.status !== l.OK) throw new Error(m())
+    if (e.status === c.BAD_REQUEST) throw new Error(Bb());
+    if (e.status !== c.OK) throw new Error(m())
   }
   async favoriteLocation(t) {
     const e = await this.request("/favorite-location", {
@@ -7227,8 +7260,8 @@ class lE {
       }),
       credentials: "include"
     });
-    if (e.status === l.FORBIDDEN) throw new Error(ay());
-    if (e.status !== l.OK) throw new Error(m())
+    if (e.status === c.FORBIDDEN) throw new Error(aw());
+    if (e.status !== c.OK) throw new Error(m())
   }
   async deleteFavoriteLocation(t) {
     if ((await this.request("/favorite-location/delete", {
@@ -7237,7 +7270,7 @@ class lE {
           id: t
         }),
         credentials: "include"
-      })).status !== l.OK) throw new Error(m())
+      })).status !== c.OK) throw new Error(m())
   }
   async updateFavoriteLocation(t, e) {
     const r = await this.request("/favorite-location/update", {
@@ -7248,39 +7281,39 @@ class lE {
       }),
       credentials: "include"
     });
-    if (r.status === l.BAD_REQUEST) throw new Error(Lh());
-    if (r.status !== l.OK) throw new Error(m())
+    if (r.status === c.BAD_REQUEST) throw new Error(Lh());
+    if (r.status !== c.OK) throw new Error(m())
   }
   async leaderboardPlayers(t) {
     const e = await this.request(`/leaderboard/player/${t}`);
-    if (e.status !== l.OK) throw new Error($e());
+    if (e.status !== c.OK) throw new Error($e());
     return e.json()
   }
   async leaderboardAlliances(t) {
     const e = await this.request(`/leaderboard/alliance/${t}`);
-    if (e.status !== l.OK) throw new Error($e());
+    if (e.status !== c.OK) throw new Error($e());
     return e.json()
   }
   async leaderboardRegions(t, e = 0) {
     const r = await this.request(`/leaderboard/region/${t}/${e}`);
-    if (r.status === l.OK) return r.json();
+    if (r.status === c.OK) return r.json();
     throw new Error($e())
   }
   async leaderboardRegionPlayers(t, e) {
     const r = await this.request(`/leaderboard/region/players/${t}/${e}`);
-    if (r.status === l.OK) return r.json();
+    if (r.status === c.OK) return r.json();
     throw new Error($e())
   }
   async leaderboardRegionAlliances(t, e) {
     const r = await this.request(`/leaderboard/region/alliances/${t}/${e}`);
-    if (r.status === l.OK) return r.json();
+    if (r.status === c.OK) return r.json();
     throw new Error($e())
   }
   async leaderboardCountries(t) {
     const e = await this.request(`/leaderboard/country/${t}`, {
       credentials: "include"
     });
-    if (e.status === l.OK) return e.json();
+    if (e.status === c.OK) return e.json();
     throw new Error($e())
   }
   refreshHotspotsIfStale() {
@@ -7300,7 +7333,7 @@ class lE {
   }
   async getRandomTile(t) {
     const e = await this.request(`/s${t}/tile/random`);
-    if (e.status !== l.OK) throw new Error(m());
+    if (e.status !== c.OK) throw new Error(m());
     return e.json()
   }
   async purchase(t) {
@@ -7311,14 +7344,14 @@ class lE {
         product: t
       })
     });
-    if (e.status !== l.OK) throw e.status === l.NOT_FOUND ? new Error(_r()) : e.status === l.FORBIDDEN ? new Error(wr()) : e.status === l.CONFLICT ? new Error(yr()) : new Error(m())
+    if (e.status !== c.OK) throw e.status === c.NOT_FOUND ? new Error(_r()) : e.status === c.FORBIDDEN ? new Error(yr()) : e.status === c.CONFLICT ? new Error(wr()) : new Error(m())
   }
   async getAlliance() {
     const t = await this.request("/alliance", {
       credentials: "include"
     });
-    if (t.status === l.OK) return t.json();
-    if (t.status === l.NOT_FOUND) return;
+    if (t.status === c.OK) return t.json();
+    if (t.status === c.NOT_FOUND) return;
     throw new Error(m())
   }
   async createAlliance(t) {
@@ -7329,17 +7362,17 @@ class lE {
         name: t
       })
     });
-    if (e.status === l.OK) return e.json();
-    if (e.status === l.BAD_REQUEST) {
+    if (e.status === c.OK) return e.json();
+    if (e.status === c.BAD_REQUEST) {
       const r = await e.json();
       throw r.error === "max_characters" ? new Error(gc()) : r.error === "name_taken" ? new Error(oc()) : r.error == "empty_name" ? new Error(Nc()) : new Error(m())
-    } else throw e.status === l.FORBIDDEN ? new Error(a0()) : new Error(m())
+    } else throw e.status === c.FORBIDDEN ? new Error(a0()) : new Error(m())
   }
   async leaveAlliance() {
     if ((await this.request("/alliance/leave", {
         method: "POST",
         credentials: "include"
-      })).status !== l.OK) throw new Error(m())
+      })).status !== c.OK) throw new Error(m())
   }
   async updateAllianceDescription(t) {
     const e = await this.request("/alliance/update-description", {
@@ -7349,7 +7382,7 @@ class lE {
         description: t
       })
     });
-    if (e.status !== l.OK) throw e.status === l.FORBIDDEN ? new Error(qe()) : e.status === l.BAD_REQUEST ? new Error(C_()) : new Error(m())
+    if (e.status !== c.OK) throw e.status === c.FORBIDDEN ? new Error(qe()) : e.status === c.BAD_REQUEST ? new Error(C_()) : new Error(m())
   }
   async updateAllianceHeadquarters(t, e) {
     const r = await this.request("/alliance/update-headquarters", {
@@ -7360,36 +7393,36 @@ class lE {
         longitude: e
       })
     });
-    if (r.status !== l.OK) throw r.status === l.FORBIDDEN ? new Error(qe()) : new Error(m())
+    if (r.status !== c.OK) throw r.status === c.FORBIDDEN ? new Error(qe()) : new Error(m())
   }
   async allianceLeaderboard(t) {
     const e = await this.request(`/alliance/leaderboard/${t}`, {
       credentials: "include"
     });
-    if (e.status === l.OK) return e.json();
-    throw e.status === l.FORBIDDEN ? new Error(qe()) : new Error($e())
+    if (e.status === c.OK) return e.json();
+    throw e.status === c.FORBIDDEN ? new Error(qe()) : new Error($e())
   }
   async getAllianceInvites() {
     const t = await this.request("/alliance/invites", {
       credentials: "include"
     });
-    if (t.status === l.OK) return t.json();
-    throw t.status === l.FORBIDDEN ? new Error(qe()) : new Error(m())
+    if (t.status === c.OK) return t.json();
+    throw t.status === c.FORBIDDEN ? new Error(qe()) : new Error(m())
   }
   async joinAlliance(t) {
     switch ((await this.request(`/alliance/join/${t}`, {
         credentials: "include"
       })).status) {
-      case l.OK:
+      case c.OK:
         return "success";
-      case l.ALREADY_REPORTED:
+      case c.ALREADY_REPORTED:
         return "in-another-alliance";
-      case l.UNAUTHORIZED:
+      case c.UNAUTHORIZED:
         return "not-logged-in";
-      case l.FORBIDDEN:
+      case c.FORBIDDEN:
         return "banned";
-      case l.BAD_REQUEST:
-      case l.NOT_FOUND:
+      case c.BAD_REQUEST:
+      case c.NOT_FOUND:
         return "invalid-invite";
       default:
         return "error"
@@ -7399,14 +7432,14 @@ class lE {
     const e = await this.request(`/alliance/members/${t}`, {
       credentials: "include"
     });
-    if (e.status === l.OK) return e.json();
+    if (e.status === c.OK) return e.json();
     throw new Error(m())
   }
   async getAllianceBannedMembers(t) {
     const e = await this.request(`/alliance/members/banned/${t}`, {
       credentials: "include"
     });
-    if (e.status === l.OK) return e.json();
+    if (e.status === c.OK) return e.json();
     throw new Error(m())
   }
   async getAllianceById(t) {
@@ -7414,8 +7447,8 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (e.status === l.NOT_FOUND) return;
-    if (e.status !== l.OK) throw new b(m(), e.status);
+    if (e.status === c.NOT_FOUND) return;
+    if (e.status !== c.OK) throw new b(m(), e.status);
     const r = await e.json();
     return {
       id: Number(r.id),
@@ -7431,7 +7464,7 @@ class lE {
         method: "GET",
         credentials: "include"
       });
-    if (r.status !== l.OK) throw new b(m(), r.status);
+    if (r.status !== c.OK) throw new b(m(), r.status);
     const o = await r.json();
     return (Array.isArray(o) ? o : []).map(a => ({
       id: Number(a.id),
@@ -7447,8 +7480,8 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (e.status === l.NOT_FOUND) return null;
-    if (e.status !== l.OK) throw new b(m(), e.status);
+    if (e.status === c.NOT_FOUND) return null;
+    if (e.status !== c.OK) throw new b(m(), e.status);
     const r = await e.json(),
       o = Array.isArray(r == null ? void 0 : r.members) ? r.members : [];
     return {
@@ -7482,11 +7515,11 @@ class lE {
         method: "GET",
         credentials: "include"
       });
-    if (o.status === l.NOT_FOUND) return {
+    if (o.status === c.NOT_FOUND) return {
       members: [],
       total: 0
     };
-    if (o.status !== l.OK) throw new b(m(), o.status);
+    if (o.status !== c.OK) throw new b(m(), o.status);
     const a = await o.json(),
       i = Array.isArray(a == null ? void 0 : a.members) ? a.members : [];
     return {
@@ -7510,10 +7543,10 @@ class lE {
         name: e
       })
     });
-    if (r.status === l.BAD_REQUEST) {
+    if (r.status === c.BAD_REQUEST) {
       const o = await r.json().catch(() => ({}));
       throw new Error((o == null ? void 0 : o.error) ?? m())
-    } else if (r.status !== l.OK) throw new b(m(), r.status)
+    } else if (r.status !== c.OK) throw new b(m(), r.status)
   }
   async changeAllianceLeader(t, e) {
     const r = await this.request(`/staff/dashboard/alliances/${t}/leader`, {
@@ -7523,10 +7556,10 @@ class lE {
         newLeaderUserId: e
       })
     });
-    if (r.status === l.BAD_REQUEST) {
+    if (r.status === c.BAD_REQUEST) {
       const o = await r.json();
       throw (o == null ? void 0 : o.error) === "user_not_in_alliance" ? new Error(lh()) : new Error(m())
-    } else if (r.status !== l.OK) throw new b(m(), r.status)
+    } else if (r.status !== c.OK) throw new b(m(), r.status)
   }
   async banAllAllianceMembers(t, e, r) {
     const o = await this.request(`/staff/dashboard/alliances/${t}/ban-all`, {
@@ -7537,7 +7570,7 @@ class lE {
         notes: r
       })
     });
-    if (o.status !== l.OK) throw new b(m(), o.status)
+    if (o.status !== c.OK) throw new b(m(), o.status)
   }
   async setAllianceMemberRole(t, e, r) {
     const o = await this.request(`/staff/dashboard/alliances/${t}/members/${e}/role`, {
@@ -7547,14 +7580,14 @@ class lE {
         role: r
       })
     });
-    if (o.status !== l.OK) throw new b(m(), o.status)
+    if (o.status !== c.OK) throw new b(m(), o.status)
   }
   async removeAllianceMember(t, e) {
     const r = await this.request(`/staff/dashboard/alliances/${t}/members/${e}/remove`, {
       method: "POST",
       credentials: "include"
     });
-    if (r.status !== l.OK) throw new b(m(), r.status)
+    if (r.status !== c.OK) throw new b(m(), r.status)
   }
   async giveAllianceAdmin(t) {
     const e = await this.request("/alliance/give-admin", {
@@ -7564,7 +7597,7 @@ class lE {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== l.OK) throw e.status === l.FORBIDDEN ? new Error(qe()) : new Error(m())
+    if (e.status !== c.OK) throw e.status === c.FORBIDDEN ? new Error(qe()) : new Error(m())
   }
   async banAllianceUser(t) {
     const e = await this.request("/alliance/ban", {
@@ -7574,19 +7607,19 @@ class lE {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== l.OK) throw e.status === l.FORBIDDEN ? new Error(qe()) : new Error(m())
+    if (e.status !== c.OK) throw e.status === c.FORBIDDEN ? new Error(qe()) : new Error(m())
   }
   async equipFlag(t) {
     if ((await this.request(`/flag/equip/${t}`, {
         method: "POST",
         credentials: "include"
-      })).status !== l.OK) throw new Error(m())
+      })).status !== c.OK) throw new Error(m())
   }
   async getMyProfilePictures() {
     const t = await this.request("/me/profile-pictures", {
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new Error(m());
+    if (t.status !== c.OK) throw new Error(m());
     return t.json()
   }
   async changeProfilePicture(t) {
@@ -7596,7 +7629,7 @@ class lE {
         body: JSON.stringify({
           pictureId: t
         })
-      })).status !== l.OK) throw new Error(m())
+      })).status !== c.OK) throw new Error(m())
   }
   async unbanAllianceUser(t) {
     const e = await this.request("/alliance/unban", {
@@ -7606,7 +7639,7 @@ class lE {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== l.OK) throw e.status === l.FORBIDDEN ? new Error(qe()) : new Error(m())
+    if (e.status !== c.OK) throw e.status === c.FORBIDDEN ? new Error(qe()) : new Error(m())
   }
   async health() {
     return (await this.request("/health")).json()
@@ -7616,7 +7649,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status);
+    if (t.status !== c.OK) throw new b(m(), t.status);
     const e = await t.json();
     for (const r of e.tickets) r.reports.sort((o, a) => Er[o.reason] - Er[a.reason]);
     return e
@@ -7626,7 +7659,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status);
+    if (t.status !== c.OK) throw new b(m(), t.status);
     return t.json()
   }
   async getNonPaidUserOpenTicketsCount() {
@@ -7634,7 +7667,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status);
+    if (t.status !== c.OK) throw new b(m(), t.status);
     const {
       tickets: e
     } = await t.json();
@@ -7645,7 +7678,7 @@ class lE {
       method: "POST",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status);
+    if (t.status !== c.OK) throw new b(m(), t.status);
     return t.json()
   }
   async setTicketStatus(t, e, r, o) {
@@ -7659,14 +7692,14 @@ class lE {
         assignedReason: o
       })
     });
-    if (a.status !== l.OK && a.status !== l.BAD_REQUEST) throw new b(m(), a.status)
+    if (a.status !== c.OK && a.status !== c.BAD_REQUEST) throw new b(m(), a.status)
   }
   async getLastResolvedTicket() {
     const t = await this.request("/staff/tickets/reversals/last-resolved", {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status);
+    if (t.status !== c.OK) throw new b(m(), t.status);
     return (await t.json()).ticket
   }
   async getTicketReversalTicketInfo(t) {
@@ -7674,7 +7707,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== l.OK) throw new b(m(), e.status);
+    if (e.status !== c.OK) throw new b(m(), e.status);
     return (await e.json()).ticket
   }
   async createTicketReversal(t) {
@@ -7683,11 +7716,11 @@ class lE {
       credentials: "include",
       body: JSON.stringify(t)
     });
-    if (e.status === l.CONFLICT) {
+    if (e.status === c.CONFLICT) {
       const r = await e.json().catch(() => ({}));
-      throw (r == null ? void 0 : r.error) === "reversal_already_pending" ? new b(Av(), l.CONFLICT) : new b(m(), l.CONFLICT)
+      throw (r == null ? void 0 : r.error) === "reversal_already_pending" ? new b(Av(), c.CONFLICT) : new b(m(), c.CONFLICT)
     }
-    if (e.status !== l.OK) throw new b(m(), e.status);
+    if (e.status !== c.OK) throw new b(m(), e.status);
     return e.json()
   }
   async listTicketReversals(t = {}) {
@@ -7698,7 +7731,7 @@ class lE {
         method: "GET",
         credentials: "include"
       });
-    if (o.status !== l.OK) throw new b(m(), o.status);
+    if (o.status !== c.OK) throw new b(m(), o.status);
     return (await o.json()).reversals ?? []
   }
   async getTicketReversal(t) {
@@ -7706,7 +7739,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== l.OK) throw new b(m(), e.status);
+    if (e.status !== c.OK) throw new b(m(), e.status);
     return (await e.json()).reversal
   }
   async reviewTicketReversal(t, e, r) {
@@ -7718,9 +7751,9 @@ class lE {
         notes: r
       })
     });
-    if (o.status === l.FORBIDDEN) throw new b(Hv(), l.FORBIDDEN);
-    if (o.status === l.CONFLICT) throw new b(Jv(), l.CONFLICT);
-    if (o.status !== l.OK) throw new b(m(), o.status)
+    if (o.status === c.FORBIDDEN) throw new b(Hv(), c.FORBIDDEN);
+    if (o.status === c.CONFLICT) throw new b(Jv(), c.CONFLICT);
+    if (o.status !== c.OK) throw new b(m(), o.status)
   }
   async request(t, e) {
     var i;
@@ -7736,16 +7769,16 @@ class lE {
         cause: s
       })
     }
-    if (r.status === l.FORBIDDEN && r.headers.get("x-block-reason") === "tor") throw new Error(Sb());
+    if (r.status === c.FORBIDDEN && r.headers.get("x-block-reason") === "tor") throw new Error(Sb());
     const o = ((i = r.headers.get("cf-mitigated")) == null ? void 0 : i.toLowerCase()) === "challenge";
     if (r.status === 403 && o) {
       if (pt.setCfLikelyAutomated(!0), !await Qr()) throw new Error(bn());
       r = await fetch(`${this.url}${t}`, e), this.online = !0, this.updateServerTimeEstimate(r)
     }
     if ((e == null ? void 0 : e.throwOnStatus) ?? !0) {
-      if (r.status === l.TOO_MANY_REQUESTS) throw new Error(ev());
-      if (r.status === l.REQUEST_TIMEOUT) throw new Error(Rw());
-      if (r.status === l.SERVICE_UNAVAILABLE) throw new Error(Zw())
+      if (r.status === c.TOO_MANY_REQUESTS) throw new Error(ev());
+      if (r.status === c.REQUEST_TIMEOUT) throw new Error(Ry());
+      if (r.status === c.SERVICE_UNAVAILABLE) throw new Error(Zy())
     }
     return r
   }
@@ -7754,7 +7787,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status);
+    if (t.status !== c.OK) throw new b(m(), t.status);
     return t.json()
   }
   async getOpenReportsSummary() {
@@ -7762,7 +7795,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status);
+    if (t.status !== c.OK) throw new b(m(), t.status);
     return t.json()
   }
   async getBanAppealStats(t, e) {
@@ -7770,7 +7803,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== l.OK) throw new b(m(), r.status);
+    if (r.status !== c.OK) throw new b(m(), r.status);
     const o = await r.json();
     return {
       items: o.items ?? [],
@@ -7782,7 +7815,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== l.OK) throw new b(m(), r.status);
+    if (r.status !== c.OK) throw new b(m(), r.status);
     return (await r.json()).items.map(a => ({
       ...a,
       suspensionRate: (a.ban + a.timeout) / a.total
@@ -7793,7 +7826,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== l.OK) throw new b(m(), r.status);
+    if (r.status !== c.OK) throw new b(m(), r.status);
     return (await r.json()).items.map(a => ({
       ...a,
       suspensionRate: (a.ban + a.timeout) / a.total
@@ -7807,7 +7840,7 @@ class lE {
         userIds: t
       })
     });
-    if (e.status !== l.OK) throw new b(m(), e.status);
+    if (e.status !== c.OK) throw new b(m(), e.status);
     return e.json()
   }
   async getUserInfoFull(t) {
@@ -7815,8 +7848,8 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== l.NOT_FOUND) {
-      if (e.status !== l.OK) throw new b(m(), e.status);
+    if (e.status !== c.NOT_FOUND) {
+      if (e.status !== c.OK) throw new b(m(), e.status);
       return e.json()
     }
   }
@@ -7825,8 +7858,8 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== l.NOT_FOUND) {
-      if (e.status !== l.OK) throw new b(m(), e.status);
+    if (e.status !== c.NOT_FOUND) {
+      if (e.status !== c.OK) throw new b(m(), e.status);
       return e.json()
     }
   }
@@ -7839,7 +7872,7 @@ class lE {
           userId: t
         })
       });
-    if (o.status !== l.OK) throw new b(m(), o.status)
+    if (o.status !== c.OK) throw new b(m(), o.status)
   }
   async getUserNotes(t, e) {
     const r = e == "dashboard" ? `/staff/dashboard/users/notes?userId=${encodeURIComponent(t)}` : `/staff/appeals/notes?userId=${encodeURIComponent(t)}`,
@@ -7847,7 +7880,7 @@ class lE {
         method: "GET",
         credentials: "include"
       });
-    if (o.status !== l.OK) throw new b(m(), o.status);
+    if (o.status !== c.OK) throw new b(m(), o.status);
     return o.json()
   }
   async addUserNote(t, e, r) {
@@ -7860,14 +7893,14 @@ class lE {
           note: e
         })
       });
-    if (a.status !== l.OK) throw new b(m(), a.status)
+    if (a.status !== c.OK) throw new b(m(), a.status)
   }
   async getUserPermissions(t) {
     const e = await this.request(`/staff/dashboard/permissions/get?userId=${encodeURIComponent(t)}`, {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== l.OK) throw new b(m(), e.status);
+    if (e.status !== c.OK) throw new b(m(), e.status);
     return e.json()
   }
   async setUserPermissions(t, e) {
@@ -7879,7 +7912,7 @@ class lE {
         permissions: Array.from(e)
       })
     });
-    if (r.status !== l.OK) throw new b(m(), r.status);
+    if (r.status !== c.OK) throw new b(m(), r.status);
     const o = await r.json();
     return Array.isArray(o == null ? void 0 : o.permissions) ? o.permissions : []
   }
@@ -7888,7 +7921,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== l.OK) throw new b(m(), e.status);
+    if (e.status !== c.OK) throw new b(m(), e.status);
     const r = await e.json();
     return (Array.isArray(r == null ? void 0 : r.purchases) ? r.purchases : []).map(a => {
       const i = a.is_dollar ?? a.isDollar ?? a.currency ?? a.Currency ?? 0;
@@ -7897,16 +7930,16 @@ class lE {
         const p = i.toLowerCase();
         s = p === "usd" || p === "dollar" || p === "true"
       } else typeof i == "number" ? s = i !== 0 : s = !!i;
-      const c = typeof a.createdAt == "string" ? a.createdAt : a.CreatedAt ? new Date(a.CreatedAt).toISOString() : "",
+      const u = typeof a.createdAt == "string" ? a.createdAt : a.CreatedAt ? new Date(a.CreatedAt).toISOString() : "",
         _ = a.product_variant ?? a.productVariant,
-        u = _ == null || _ === "" ? null : Number(_);
+        l = _ == null || _ === "" ? null : Number(_);
       return {
         product_name: String(a.productName ?? a.product_name ?? ""),
         amount: Number(a.amount ?? 0),
         price: Number(a.price ?? 0),
         is_dollar: s,
-        created_at: c,
-        product_variant: Number.isInteger(u) ? u : null
+        created_at: u,
+        product_variant: Number.isInteger(l) ? l : null
       }
     })
   }
@@ -7919,7 +7952,7 @@ class lE {
         droplets: e
       })
     });
-    if (r.status !== l.OK) throw new b(m(), r.status)
+    if (r.status !== c.OK) throw new b(m(), r.status)
   }
   async postAdminRenameUser(t, e, r) {
     const o = await this.request("/staff/dashboard/users/rename", {
@@ -7931,12 +7964,12 @@ class lE {
         oldName: r
       })
     });
-    if (o.status === l.BAD_REQUEST) {
+    if (o.status === c.BAD_REQUEST) {
       const a = await o.json(),
         i = (a == null ? void 0 : a.error) ?? "";
-      throw i === "invalid_name" ? new b(pr(), l.BAD_REQUEST) : new b(typeof i == "string" && i ? i : m(), l.BAD_REQUEST)
+      throw i === "invalid_name" ? new b(pr(), c.BAD_REQUEST) : new b(typeof i == "string" && i ? i : m(), c.BAD_REQUEST)
     }
-    if (o.status !== l.OK) throw new b(m(), o.status)
+    if (o.status !== c.OK) throw new b(m(), o.status)
   }
   async postAdminChangeUserEmail(t, e) {
     const r = await this.request("/staff/dashboard/users/email", {
@@ -7947,29 +7980,29 @@ class lE {
         email: e
       })
     });
-    if (r.status === l.BAD_REQUEST) {
+    if (r.status === c.BAD_REQUEST) {
       const o = await r.json(),
         a = (o == null ? void 0 : o.error) ?? "";
-      throw a === "email_required" || a === "invalid_email" ? new b(a_(), l.BAD_REQUEST) : new b(typeof a == "string" && a ? a : m(), l.BAD_REQUEST)
+      throw a === "email_required" || a === "invalid_email" ? new b(a_(), c.BAD_REQUEST) : new b(typeof a == "string" && a ? a : m(), c.BAD_REQUEST)
     }
-    if (r.status === l.CONFLICT) {
+    if (r.status === c.CONFLICT) {
       const o = await r.json();
       if (((o == null ? void 0 : o.error) ?? "") === "email_already_in_use") {
         const i = new b(typeof(o == null ? void 0 : o.userId) == "number" ? $d({
           userId: o.userId
-        }) : Pd(), l.CONFLICT);
+        }) : Pd(), c.CONFLICT);
         throw typeof(o == null ? void 0 : o.userId) == "number" && (i.userId = o.userId), i
       }
-      throw new b(m(), l.CONFLICT)
+      throw new b(m(), c.CONFLICT)
     }
-    if (r.status === l.NOT_FOUND) throw new b("User not found.", l.NOT_FOUND);
-    if (r.status !== l.OK) throw new b(m(), r.status)
+    if (r.status === c.NOT_FOUND) throw new b("User not found.", c.NOT_FOUND);
+    if (r.status !== c.OK) throw new b(m(), r.status)
   }
   async getAdminUserProfilePictures(t) {
     const e = await this.request(`/staff/dashboard/users/profile-pictures?userId=${t}`, {
       credentials: "include"
     });
-    if (e.status !== l.OK) throw new b(m(), e.status);
+    if (e.status !== c.OK) throw new b(m(), e.status);
     return e.json()
   }
   async postAdminRemoveUserPicture(t) {
@@ -7980,7 +8013,7 @@ class lE {
         pictureId: t
       })
     });
-    if (e.status !== l.OK) throw new b(m(), e.status)
+    if (e.status !== c.OK) throw new b(m(), e.status)
   }
   async getUserTickets(t, e) {
     if (e === "appeals" && (t.appealId ?? 0) <= 0) throw new Error("Appeal id is required.");
@@ -7991,7 +8024,7 @@ class lE {
         method: "GET",
         credentials: "include"
       });
-    if (a.status !== l.OK) throw new b(m(), a.status);
+    if (a.status !== c.OK) throw new b(m(), a.status);
     const i = await a.json();
     return Array.isArray(i == null ? void 0 : i.tickets) ? i.tickets : []
   }
@@ -8002,7 +8035,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== l.OK) throw new b(m(), r.status);
+    if (r.status !== c.OK) throw new b(m(), r.status);
     const o = await r.json();
     return Array.isArray(o == null ? void 0 : o.appeals) ? o.appeals : []
   }
@@ -8015,15 +8048,15 @@ class lE {
           text: t
         })
       });
-    if (o.status !== l.OK) throw new b(m(), o.status);
+    if (o.status !== c.OK) throw new b(m(), o.status);
     const a = await o.json();
     return a == null ? void 0 : a.translation
   }
   mapTicketsToReportRows(t, e) {
-    var o, a, i, s, c;
+    var o, a, i, s, u;
     const r = [];
     for (const _ of t) {
-      const u = _.status ?? "open";
+      const l = _.status ?? "open";
       if (e === "received") {
         for (const p of _.reports) r.push({
           id: String(p.id),
@@ -8035,7 +8068,7 @@ class lE {
             picture: p.reportedByPicture ?? null
           },
           reason: String(p.reason),
-          status: u
+          status: l
         });
         continue
       }
@@ -8050,7 +8083,7 @@ class lE {
             picture: _.reportedUser.picture ?? null
           },
           reason: String(p.reason),
-          status: u
+          status: l
         });
         continue
       }
@@ -8067,11 +8100,11 @@ class lE {
           name: "—",
           picture: null
         },
-        reason: String(((c = (s = _.reports) == null ? void 0 : s[0]) == null ? void 0 : c.reason) ?? "other"),
-        status: u
+        reason: String(((u = (s = _.reports) == null ? void 0 : s[0]) == null ? void 0 : u.reason) ?? "other"),
+        status: l
       })
     }
-    return r.sort((_, u) => new Date(u.createdAt).getTime() - new Date(_.createdAt).getTime()), r
+    return r.sort((_, l) => new Date(l.createdAt).getTime() - new Date(_.createdAt).getTime()), r
   }
   async getModeratorClosedTicketStats(t) {
     const e = new URLSearchParams({
@@ -8081,7 +8114,7 @@ class lE {
         method: "GET",
         credentials: "include"
       });
-    if (r.status !== l.OK) throw new b(m(), r.status);
+    if (r.status !== c.OK) throw new b(m(), r.status);
     return r.json()
   }
   async unlinkDiscord() {
@@ -8089,21 +8122,21 @@ class lE {
       method: "POST",
       credentials: "include"
     });
-    if (t.status !== l.NO_CONTENT) throw new b(m(), t.status)
+    if (t.status !== c.NO_CONTENT) throw new b(m(), t.status)
   }
   async deleteSessions() {
     const t = await this.request("/me/sessions", {
       method: "DELETE",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status)
+    if (t.status !== c.OK) throw new b(m(), t.status)
   }
   async deleteAllUserSessions(t) {
     const e = await this.request(`/staff/dashboard/users/${t}/sessions`, {
       method: "DELETE",
       credentials: "include"
     });
-    if (e.status !== l.OK) throw new b(m(), e.status)
+    if (e.status !== c.OK) throw new b(m(), e.status)
   }
   async banUsers(t, e, r) {
     const o = await this.request("/staff/dashboard/summary/users/ban", {
@@ -8115,7 +8148,7 @@ class lE {
         notes: r
       })
     });
-    if (o.status !== l.OK) throw new b(m(), o.status)
+    if (o.status !== c.OK) throw new b(m(), o.status)
   }
   async timeoutUsers(t, e, r) {
     const o = await this.request("/staff/dashboard/summary/users/timeout", {
@@ -8127,7 +8160,7 @@ class lE {
         notes: r
       })
     });
-    if (o.status !== l.OK) throw new b(m(), o.status)
+    if (o.status !== c.OK) throw new b(m(), o.status)
   }
   async incrementUsersDroplets(t, e, r) {
     const o = await this.request("/staff/dashboard/summary/users/increment-droplet", {
@@ -8139,7 +8172,7 @@ class lE {
         notes: r
       })
     });
-    if (o.status !== l.OK) throw new b(m(), o.status)
+    if (o.status !== c.OK) throw new b(m(), o.status)
   }
   async postUnbanUsers(t, e) {
     const r = await this.request("/staff/dashboard/summary/users/unban", {
@@ -8150,7 +8183,7 @@ class lE {
         notes: e
       })
     });
-    if (r.status !== l.OK) throw new b(m(), r.status)
+    if (r.status !== c.OK) throw new b(m(), r.status)
   }
   async getAuditLogs(t) {
     const e = new URLSearchParams;
@@ -8159,7 +8192,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== l.OK) throw new b(m(), r.status);
+    if (r.status !== c.OK) throw new b(m(), r.status);
     return r.json()
   }
   async postUsersSuspend(t, e, r) {
@@ -8180,7 +8213,7 @@ class lE {
         method: "POST",
         credentials: "include",
         body: JSON.stringify(t)
-      })).status !== l.OK) throw new Error(m())
+      })).status !== c.OK) throw new Error(m())
   }
   async postSelectAreaPhoneVerification(t, e = "") {
     const r = await this.request("/staff/tools/select-area/phone-verification", {
@@ -8191,7 +8224,7 @@ class lE {
         notes: e
       })
     });
-    if (r.status !== l.OK) throw new b(m(), r.status);
+    if (r.status !== c.OK) throw new b(m(), r.status);
     return await r.json()
   }
   async postDashboardUserPhoneVerification(t, e = "") {
@@ -8203,7 +8236,7 @@ class lE {
         notes: e
       })
     });
-    if (r.status !== l.OK) throw new b(m(), r.status);
+    if (r.status !== c.OK) throw new b(m(), r.status);
     return await r.json()
   }
   async postReportUserName(t) {
@@ -8214,7 +8247,7 @@ class lE {
         userId: t
       })
     });
-    if (e.status !== l.OK) throw new b(m(), e.status)
+    if (e.status !== c.OK) throw new b(m(), e.status)
   }
   async postReportAllianceName(t) {
     const e = await this.request("/report/alliance/name", {
@@ -8224,7 +8257,7 @@ class lE {
         allianceId: t
       })
     });
-    if (e.status !== l.OK) throw new b(m(), e.status);
+    if (e.status !== c.OK) throw new b(m(), e.status);
     return e.json()
   }
   async submitBanAppeal(t) {
@@ -8238,14 +8271,14 @@ class lE {
         body: e,
         headers: r
       });
-    if (o.status === l.FORBIDDEN) {
+    if (o.status === c.FORBIDDEN) {
       const a = await o.json();
       if ((a == null ? void 0 : a.error) === "challenge-required" && a.tier) {
         if (await ur(a.tier)) return this.submitBanAppeal(t);
         throw new b(bn(), o.status)
       }
     }
-    if (o.status !== l.OK && o.status !== l.ALREADY_REPORTED) throw new b(m(), o.status);
+    if (o.status !== c.OK && o.status !== c.ALREADY_REPORTED) throw new b(m(), o.status);
     return o.status
   }
   async getOpenAppeals() {
@@ -8253,7 +8286,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status);
+    if (t.status !== c.OK) throw new b(m(), t.status);
     return t.json()
   }
   async postSolveAppeal(t, e) {
@@ -8264,7 +8297,7 @@ class lE {
         approved: e
       })
     });
-    if (r.status !== l.OK) throw new b(m(), r.status);
+    if (r.status !== c.OK) throw new b(m(), r.status);
     return await r.json()
   }
   async getUserLastAppeal() {
@@ -8272,7 +8305,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status);
+    if (t.status !== c.OK) throw new b(m(), t.status);
     const e = await t.json();
     return (e == null ? void 0 : e.appealDate) ?? null
   }
@@ -8281,7 +8314,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status);
+    if (t.status !== c.OK) throw new b(m(), t.status);
     const e = await t.json();
     return e != null && e.active ? {
       kind: (e == null ? void 0 : e.kind) === "ban" ? "ban" : "timeout",
@@ -8297,14 +8330,14 @@ class lE {
       method: "POST",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status);
+    if (t.status !== c.OK) throw new b(m(), t.status);
     return await t.json()
   }
   async getNotificationCount() {
     const t = await this.request("/notification/count", {
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status);
+    if (t.status !== c.OK) throw new b(m(), t.status);
     const {
       count: e
     } = await t.json();
@@ -8315,7 +8348,7 @@ class lE {
       o = await this.request(r, {
         credentials: "include"
       });
-    if (o.status !== l.OK) throw new b(m(), o.status);
+    if (o.status !== c.OK) throw new b(m(), o.status);
     return o.json()
   }
   async postNotificationMarkRead(t) {
@@ -8326,7 +8359,7 @@ class lE {
         notificationIds: t
       })
     });
-    if (e.status !== l.OK) throw new b(m(), e.status);
+    if (e.status !== c.OK) throw new b(m(), e.status);
     return e.json()
   }
   async postNotificationMarkReadAll() {
@@ -8334,7 +8367,7 @@ class lE {
       method: "POST",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status);
+    if (t.status !== c.OK) throw new b(m(), t.status);
     return t.json()
   }
   async getAnticheatStats(t, e) {
@@ -8342,7 +8375,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== l.OK) throw new b(m(), r.status);
+    if (r.status !== c.OK) throw new b(m(), r.status);
     return r.json()
   }
   async getAnticheatSignals(t, e) {
@@ -8350,7 +8383,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== l.OK) throw new b(m(), r.status);
+    if (r.status !== c.OK) throw new b(m(), r.status);
     return r.json()
   }
   async getAnticheatUserJourney(t, e, r) {
@@ -8358,7 +8391,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (o.status !== l.OK) throw new b(m(), o.status);
+    if (o.status !== c.OK) throw new b(m(), o.status);
     return o.json()
   }
   async getPendingAppealsCount() {
@@ -8366,7 +8399,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status);
+    if (t.status !== c.OK) throw new b(m(), t.status);
     const e = await t.json();
     return (e == null ? void 0 : e.appeals) ?? 0
   }
@@ -8375,7 +8408,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status);
+    if (t.status !== c.OK) throw new b(m(), t.status);
     const e = await t.json();
     return (e == null ? void 0 : e.paintedToday) ?? 0
   }
@@ -8384,7 +8417,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status);
+    if (t.status !== c.OK) throw new b(m(), t.status);
     return t.json()
   }
   async postEquipUserFrame(t) {
@@ -8392,14 +8425,14 @@ class lE {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== l.OK) throw new b(m(), e.status)
+    if (e.status !== c.OK) throw new b(m(), e.status)
   }
   async getUserBadges() {
     const t = await this.request("/me/badges", {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status);
+    if (t.status !== c.OK) throw new b(m(), t.status);
     return t.json()
   }
   async postEquipUserBadge(t) {
@@ -8408,7 +8441,7 @@ class lE {
       credentials: "include",
       body: JSON.stringify(t)
     });
-    if (e.status !== l.OK) throw new b(m(), e.status)
+    if (e.status !== c.OK) throw new b(m(), e.status)
   }
   async postCaptchaSession(t, e = "include") {
     const r = await this.request("/anticheat/captcha/session", {
@@ -8429,12 +8462,12 @@ class lE {
       a = Number.isFinite(t.tileX) && Number.isFinite(t.tileY) && Number.isInteger(t.tileX) && Number.isInteger(t.tileY) && t.tileX >= 0 && t.tileY >= 0,
       i = t.cursorTs !== void 0,
       s = t.cursorUserId !== void 0,
-      c = t.cursorAllianceId !== void 0,
+      u = t.cursorAllianceId !== void 0,
       _ = t.cursorPixelsCount !== void 0,
-      u = i || s || c || _,
-      p = i && s && c && _;
+      l = i || s || u || _,
+      p = i && s && u && _;
     let f = !0;
-    return u && (f = p && Number.isFinite(t.cursorTs) && Number.isInteger(t.cursorTs) && t.cursorTs >= 0 && t.cursorTs <= t.timestamp && Number.isFinite(t.cursorUserId) && Number.isInteger(t.cursorUserId) && t.cursorUserId >= 0 && Number.isFinite(t.cursorAllianceId) && Number.isInteger(t.cursorAllianceId) && t.cursorAllianceId >= 0 && Number.isFinite(t.cursorPixelsCount) && Number.isInteger(t.cursorPixelsCount) && t.cursorPixelsCount >= 0), !(!r || !o || !a || !e || !f)
+    return l && (f = p && Number.isFinite(t.cursorTs) && Number.isInteger(t.cursorTs) && t.cursorTs >= 0 && t.cursorTs <= t.timestamp && Number.isFinite(t.cursorUserId) && Number.isInteger(t.cursorUserId) && t.cursorUserId >= 0 && Number.isFinite(t.cursorAllianceId) && Number.isInteger(t.cursorAllianceId) && t.cursorAllianceId >= 0 && Number.isFinite(t.cursorPixelsCount) && Number.isInteger(t.cursorPixelsCount) && t.cursorPixelsCount >= 0), !(!r || !o || !a || !e || !f)
   }
   getSafeWaybackInput(t) {
     return t.season = Math.trunc(t.season), t.limit = Math.trunc(t.limit), t.timestamp = Math.trunc(t.timestamp), t.tileX = Math.trunc(t.tileX), t.tileY = Math.trunc(t.tileY), t.cursorTs !== void 0 && (t.cursorTs = Math.trunc(t.cursorTs)), t.cursorUserId !== void 0 && (t.cursorUserId = Math.trunc(t.cursorUserId)), t.cursorAllianceId !== void 0 && (t.cursorAllianceId = Math.trunc(t.cursorAllianceId)), t.cursorPixelsCount !== void 0 && (t.cursorPixelsCount = Math.trunc(t.cursorPixelsCount)), t
@@ -8450,8 +8483,8 @@ class lE {
         method: "GET",
         credentials: "include"
       });
-    if (a.status === l.FORBIDDEN) throw new Error("Access denied");
-    if (a.status !== l.OK) throw new Error("Failed to fetch wayback events");
+    if (a.status === c.FORBIDDEN) throw new Error("Access denied");
+    if (a.status !== c.OK) throw new Error("Failed to fetch wayback events");
     return a.json()
   }
   async getStoreFrames() {
@@ -8459,7 +8492,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status);
+    if (t.status !== c.OK) throw new b(m(), t.status);
     return t.json()
   }
   async postBuyUserFrame(t) {
@@ -8467,10 +8500,10 @@ class lE {
       method: "POST",
       credentials: "include"
     });
-    if (e.status === l.NOT_FOUND) throw new Error(_r());
-    if (e.status === l.FORBIDDEN) throw new Error(wr());
-    if (e.status === l.CONFLICT) throw new Error(yr());
-    if (e.status !== l.OK) throw new Error(m())
+    if (e.status === c.NOT_FOUND) throw new Error(_r());
+    if (e.status === c.FORBIDDEN) throw new Error(yr());
+    if (e.status === c.CONFLICT) throw new Error(wr());
+    if (e.status !== c.OK) throw new Error(m())
   }
   async postEquipCosmetics(t) {
     const e = await this.request("/me/cosmetic/equip", {
@@ -8478,14 +8511,14 @@ class lE {
       credentials: "include",
       body: JSON.stringify(t)
     });
-    if (e.status !== l.OK) throw new b(m(), e.status)
+    if (e.status !== c.OK) throw new b(m(), e.status)
   }
   async getStoreNameCosmetics() {
     const t = await this.request("/store/name", {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status);
+    if (t.status !== c.OK) throw new b(m(), t.status);
     return await t.json()
   }
   async postBuyCosmetic(t) {
@@ -8493,14 +8526,14 @@ class lE {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== l.OK) throw new b(m(), e.status)
+    if (e.status !== c.OK) throw new b(m(), e.status)
   }
   async getMyNameCosmetics() {
     const t = await this.request("/me/cosmetics/name", {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== l.OK) throw new b(m(), t.status);
+    if (t.status !== c.OK) throw new b(m(), t.status);
     return await t.json()
   }
   async getTicketsKpi(t) {
@@ -8510,7 +8543,7 @@ class lE {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== l.OK) throw new b(m(), r.status);
+    if (r.status !== c.OK) throw new b(m(), r.status);
     return r.json()
   }
   async postCreateFrame(t) {
@@ -8521,7 +8554,7 @@ class lE {
       credentials: "include",
       body: e
     });
-    if (r.status !== l.OK) throw new b(m(), r.status)
+    if (r.status !== c.OK) throw new b(m(), r.status)
   }
   async postCreateFont(t) {
     const e = await this.request("/staff/store-manager/fonts", {
@@ -8529,7 +8562,7 @@ class lE {
       credentials: "include",
       body: JSON.stringify(t)
     });
-    if (e.status !== l.OK) throw new b(m(), e.status)
+    if (e.status !== c.OK) throw new b(m(), e.status)
   }
   async postCreateStyle(t) {
     const e = await this.request("/staff/store-manager/styles", {
@@ -8537,7 +8570,7 @@ class lE {
       credentials: "include",
       body: JSON.stringify(t)
     });
-    if (e.status !== l.OK) throw new b(m(), e.status)
+    if (e.status !== c.OK) throw new b(m(), e.status)
   }
   async getR2Images(t) {
     const e = new URLSearchParams({
@@ -8548,7 +8581,7 @@ class lE {
         method: "GET",
         credentials: "include"
       });
-    if (r.status !== l.OK) throw new b(m(), r.status);
+    if (r.status !== c.OK) throw new b(m(), r.status);
     return r.json()
   }
   async postUploadR2Image(t) {
@@ -8559,7 +8592,7 @@ class lE {
       credentials: "include",
       body: e
     });
-    if (r.status !== l.OK) throw new b(m(), r.status);
+    if (r.status !== c.OK) throw new b(m(), r.status);
     return r.json()
   }
   async deleteR2Image(t) {
@@ -8567,13 +8600,13 @@ class lE {
       method: "DELETE",
       credentials: "include"
     });
-    if (e.status !== l.OK) throw new b(m(), e.status)
+    if (e.status !== c.OK) throw new b(m(), e.status)
   }
   async markRulesAsRead() {
     return (await this.request("/me/rules/read", {
       method: "POST",
       credentials: "include"
-    })).status === l.OK
+    })).status === c.OK
   }
 }
 Pt = new WeakMap, xt = new WeakMap;
@@ -8591,36 +8624,36 @@ function dE(n) {
     a = Number.POSITIVE_INFINITY,
     i = Number.NEGATIVE_INFINITY,
     s = Number.NEGATIVE_INFINITY;
-  const c = n.map(g => {
+  const u = n.map(g => {
       const h = Math.round(g.tile[0] * r + g.pixel[0]),
-        y = Math.round(g.tile[1] * r + g.pixel[1]);
-      return h < o && (o = h), y < a && (a = y), h > i && (i = h), y > s && (s = y), {
+        w = Math.round(g.tile[1] * r + g.pixel[1]);
+      return h < o && (o = h), w < a && (a = w), h > i && (i = h), w > s && (s = w), {
         x: h,
-        y,
+        y: w,
         colorIdx: g.colorIdx
       }
     }),
     _ = i - o + 1,
-    u = s - a + 1;
-  if (!Number.isFinite(_) || !Number.isFinite(u) || _ <= 0 || u <= 0) throw new Error("Failed to compute image bounds for auto painter payload.");
-  const p = new Uint8ClampedArray(_ * u * 4);
+    l = s - a + 1;
+  if (!Number.isFinite(_) || !Number.isFinite(l) || _ <= 0 || l <= 0) throw new Error("Failed to compute image bounds for auto painter payload.");
+  const p = new Uint8ClampedArray(_ * l * 4);
   for (const {
       x: g,
       y: h,
-      colorIdx: y
+      colorIdx: w
     }
-    of c) {
-    const C = (d = Nn.colors) == null ? void 0 : d[y];
-    if (!C) throw new Error(`Unknown palette color index: ${y}`);
+    of u) {
+    const C = (d = Nn.colors) == null ? void 0 : d[w];
+    if (!C) throw new Error(`Unknown palette color index: ${w}`);
     const T = g - o,
       S = ((h - a) * _ + T) * 4,
-      [N, A, w] = C.rgb;
-    p[S] = N, p[S + 1] = A, p[S + 2] = w, p[S + 3] = y === 0 ? 1 : 255
+      [N, A, y] = C.rgb;
+    p[S] = N, p[S + 1] = A, p[S + 2] = y, p[S + 3] = w === 0 ? 1 : 255
   }
   return {
     data: p,
     width: _,
-    height: u,
+    height: l,
     offsetX: o,
     offsetY: a,
     season: t
@@ -8870,7 +8903,7 @@ function gE(n) {
 }
 const Ae = new hE;
 
-function yE(n, t) {
+function wE(n, t) {
   return Ae.create({
     message: n,
     ...t
@@ -8886,8 +8919,8 @@ class lT {
   }
 }
 cn = new WeakMap;
-const wE = yE,
-  bE = Object.assign(wE, {
+const yE = wE,
+  bE = Object.assign(yE, {
     success: Ae.success,
     info: Ae.info,
     warning: Ae.warning,
@@ -9025,12 +9058,12 @@ xe.push(void 0, null, !0, !1);
 function j(n) {
   return xe[n]
 }
-let yt = xe.length;
+let wt = xe.length;
 
 function J(n) {
-  yt === xe.length && xe.push(xe.length + 1);
-  const t = yt;
-  return yt = xe[t], xe[t] = n, t
+  wt === xe.length && xe.push(xe.length + 1);
+  const t = wt;
+  return wt = xe[t], xe[t] = n, t
 }
 
 function Me(n, t) {
@@ -9064,7 +9097,7 @@ function Zt(n, t) {
 }
 
 function EE(n) {
-  n < 132 || (xe[n] = yt, yt = n)
+  n < 132 || (xe[n] = wt, wt = n)
 }
 
 function Ar(n) {
@@ -9095,8 +9128,8 @@ const en = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
 function $t(n, t, e) {
   if (e === void 0) {
     const s = en.encode(n),
-      c = t(s.length, 1) >>> 0;
-    return Qt().subarray(c, c + s.length).set(s), Qe = s.length, c
+      u = t(s.length, 1) >>> 0;
+    return Qt().subarray(u, u + s.length).set(s), Qe = s.length, u
   }
   let r = n.length,
     o = t(r, 1) >>> 0;
@@ -9110,8 +9143,8 @@ function $t(n, t, e) {
   if (i !== r) {
     i !== 0 && (n = n.slice(i)), o = e(o, r, r = i + n.length * 3, 1) >>> 0;
     const s = Qt().subarray(o + i, o + r),
-      c = TE(n, s);
-    i += c.written, o = e(o, r, i, 1) >>> 0
+      u = TE(n, s);
+    i += u.written, o = e(o, r, i, 1) >>> 0
   }
   return Qe = i, o
 }
