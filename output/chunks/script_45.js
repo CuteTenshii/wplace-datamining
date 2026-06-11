@@ -1,46 +1,46 @@
 import {
-  g as S
+  g as C
 } from "./BhCkpOlh.js";
 import "./Bzak7iHL.js";
 import {
   a as o,
   w as z,
   k as G,
-  p as J,
+  p as K,
   q,
   f as y,
   i as D,
-  b as K,
+  b as Q,
   u as T,
   d as m,
-  aJ as v,
-  r as h,
-  t as x,
+  aI as v,
+  r as x,
+  t as h,
   c as w,
   l as c
-} from "./Dbe4PVAU.js";
+} from "./CV6xI6o5.js";
 import {
-  d as Q,
+  d as U,
   a as g,
-  c as U,
+  c as V,
   s as u
-} from "./B7_gUtXa.js";
+} from "./g3dAVNmx.js";
 import {
-  r as V,
+  r as F,
   p
-} from "./K9AHFDoV.js";
+} from "./BQ880tYw.js";
 import {
   s as k
-} from "./2Od2egA-.js";
+} from "./DWZhoQU0.js";
 import {
-  i as C
-} from "./Icl9dwnj.js";
+  i as S
+} from "./iywslKou.js";
 import {
-  P as F
-} from "./FrnblC6C.js";
+  P as H
+} from "./DoBGsSLe.js";
 import {
-  u as H
-} from "./DG0uUQ8a.js";
+  u as J
+} from "./Ffax2mQh.js";
 const W = () => "Description",
   X = () => "Descrição",
   Y = () => "描述",
@@ -53,8 +53,8 @@ const W = () => "Description",
   ae = () => "Описание",
   se = () => "Опис",
   oe = () => "Mô tả",
-  Ee = (i = {}, n = {}) => {
-    const e = n.locale ?? S();
+  Me = (i = {}, n = {}) => {
+    const e = n.locale ?? C();
     return e === "en" ? W() : e === "pt" ? X() : e === "ch" ? Y() : e === "de" ? $() : e === "es" ? ee() : e === "fr" ? ne() : e === "it" ? te() : e === "jp" ? re() : e === "pl" ? ie() : e === "ru" ? ae() : e === "uk" ? se() : oe()
   },
   le = () => "Pixels painted",
@@ -66,19 +66,20 @@ const W = () => "Description",
   _e = () => "Pixel dipinti",
   me = () => "塗られたピクセル数",
   ve = () => "Pomalowane piksele",
-  he = () => "Нарисованные пиксели",
-  xe = () => "Намальовані пікселі",
+  xe = () => "Нарисованные пиксели",
+  he = () => "Намальовані пікселі",
   ge = () => "Pixel đã tô",
-  Me = (i = {}, n = {}) => {
-    const e = n.locale ?? S();
-    return e === "en" ? le() : e === "pt" ? ce() : e === "ch" ? ue() : e === "de" ? pe() : e === "es" ? de() : e === "fr" ? fe() : e === "it" ? _e() : e === "jp" ? me() : e === "pl" ? ve() : e === "ru" ? he() : e === "uk" ? xe() : ge()
+  Oe = (i = {}, n = {}) => {
+    const e = n.locale ?? C();
+    return e === "en" ? le() : e === "pt" ? ce() : e === "ch" ? ue() : e === "de" ? pe() : e === "es" ? de() : e === "fr" ? fe() : e === "it" ? _e() : e === "jp" ? me() : e === "pl" ? ve() : e === "ru" ? xe() : e === "uk" ? he() : ge()
   };
-var ke = z('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
+var ke = new Set(["$$slots", "$$events", "$$legacy"]),
+  we = z('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
 
-function Oe(i, n) {
-  let e = V(n, ["$$slots", "$$events", "$$legacy"]);
-  var l = ke();
-  Q(l, () => ({
+function Be(i, n) {
+  let e = F(n, ke);
+  var l = we();
+  U(l, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
@@ -90,20 +91,20 @@ function L(i) {
   return `/dashboard/alliances?id=${encodeURIComponent(String(i))}`
 }
 
-function we(i) {
+function Pe(i) {
   typeof window > "u" || window.open(L(i), "_blank", "noopener,noreferrer")
 }
-var Pe = w('<span role="link" tabindex="0"><!></span>'),
-  Ie = w('<a target="_blank" rel="noopener noreferrer"><!></a>'),
-  be = w("<span><!></span>");
+var Ie = w('<span role="link" tabindex="0"><!></span>'),
+  be = w('<a target="_blank" rel="noopener noreferrer"><!></a>'),
+  qe = w("<span><!></span>");
 
-function Be(i, n) {
-  J(n, !0);
+function Ne(i, n) {
+  K(n, !0);
   let e = p(n, "mode", 3, "anchor"),
     l = p(n, "class", 3, ""),
     P = p(n, "linkClass", 19, l),
     j = p(n, "textClass", 19, l);
-  const A = T(() => n.allianceId != null && n.allianceId > 0 && H.hasAnyPermission(F.dashboard.alliances)),
+  const A = T(() => n.allianceId != null && n.allianceId > 0 && J.hasAnyPermission(H.dashboard.alliances)),
     E = T(() => n.allianceId == null ? "" : L(n.allianceId));
 
   function d(r) {
@@ -111,7 +112,7 @@ function Be(i, n) {
   }
 
   function I(r) {
-    n.allianceId == null || n.allianceId <= 0 || (r.preventDefault(), r.stopPropagation(), we(n.allianceId))
+    n.allianceId == null || n.allianceId <= 0 || (r.preventDefault(), r.stopPropagation(), Pe(n.allianceId))
   }
 
   function M(r) {
@@ -125,39 +126,39 @@ function Be(i, n) {
           f = y(a);
         {
           var R = s => {
-              var t = Pe(),
+              var t = Ie(),
                 _ = m(t);
-              k(_, () => n.children ?? v), h(t), x(() => {
+              k(_, () => n.children ?? v), x(t), h(() => {
                 g(t, 1, `cursor-pointer hover:underline ${P()}`), u(t, "title", n.title)
               }), c("pointerdown", t, d), c("click", t, I), c("keydown", t, M), o(s, t)
             },
             Z = s => {
-              var t = Ie(),
+              var t = be(),
                 _ = m(t);
-              k(_, () => n.children ?? v), h(t), x(() => {
+              k(_, () => n.children ?? v), x(t), h(() => {
                 g(t, 1, `cursor-pointer hover:underline ${P()}`), u(t, "href", D(E)), u(t, "title", n.title)
               }), c("pointerdown", t, d), c("click", t, d), o(s, t)
             };
-          C(f, s => {
-            e() === "inline" ? s(R) : s(Z, !1)
+          S(f, s => {
+            e() === "inline" ? s(R) : s(Z, -1)
           })
         }
         o(r, a)
       },
       N = r => {
-        var a = be(),
+        var a = qe(),
           f = m(a);
-        k(f, () => n.children ?? v), h(a), x(() => {
-          g(a, 1, U(j())), u(a, "title", n.title)
+        k(f, () => n.children ?? v), x(a), h(() => {
+          g(a, 1, V(j())), u(a, "title", n.title)
         }), o(r, a)
       };
-    C(O, r => {
-      D(A) ? r(B) : r(N, !1)
+    S(O, r => {
+      D(A) ? r(B) : r(N, -1)
     })
   }
-  o(i, b), K()
+  o(i, b), Q()
 }
 G(["pointerdown", "click", "keydown"]);
 export {
-  Oe as L, Be as S, Ee as d, Me as p
+  Be as L, Ne as S, Me as d, Oe as p
 };

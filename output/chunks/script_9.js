@@ -1,45 +1,42 @@
 import {
-  z as h,
+  z as c,
   x as o,
-  y as v,
-  E as A,
-  A as b,
-  H as p,
-  T as E,
-  B as R,
+  y as l,
+  E as b,
+  A as p,
+  B as v,
   C as g,
-  D as l,
+  D as f,
   F as m
-} from "./Dbe4PVAU.js";
+} from "./CV6xI6o5.js";
 import {
-  B as N
-} from "./D4oMlC_L.js";
+  B as y
+} from "./Cj3y7IFy.js";
 
-function x(_, u, T = !1) {
-  var i;
-  o && (i = m, v());
-  var n = new N(_),
-    c = T ? A : 0;
+function A(_, d, h = !1) {
+  var n;
+  o && (n = m, l());
+  var s = new y(_),
+    u = h ? b : 0;
 
   function t(a, r) {
     if (o) {
-      var s = b(i),
-        e;
-      if (s === p ? e = 0 : s === E ? e = !1 : e = parseInt(s.substring(1)), a !== e) {
-        var f = R();
-        g(f), n.anchor = f, l(!1), n.ensure(a, r), l(!0);
+      var e = p(n);
+      if (a !== parseInt(e.substring(1))) {
+        var i = v();
+        g(i), s.anchor = i, f(!1), s.ensure(a, r), f(!0);
         return
       }
     }
-    n.ensure(a, r)
+    s.ensure(a, r)
   }
-  h(() => {
+  c(() => {
     var a = !1;
-    u((r, s = 0) => {
-      a = !0, t(s, r)
-    }), a || t(!1, null)
-  }, c)
+    d((r, e = 0) => {
+      a = !0, t(e, r)
+    }), a || t(-1, null)
+  }, u)
 }
 export {
-  x as i
+  A as i
 };

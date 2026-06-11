@@ -4,62 +4,63 @@ import {
   t as m,
   a as p,
   b as g,
-  c,
+  c as f,
   d as _,
   s as h,
   r as b
-} from "./Dbe4PVAU.js";
+} from "./CV6xI6o5.js";
 import {
   i as w
-} from "./Icl9dwnj.js";
+} from "./iywslKou.js";
 import {
   d as z,
-  a as f,
+  a as c,
   s as k
-} from "./B7_gUtXa.js";
+} from "./g3dAVNmx.js";
 import {
   p as L,
   r as T
-} from "./K9AHFDoV.js";
+} from "./BQ880tYw.js";
 import {
   l as y
 } from "./B_Oz03f8.js";
-var U = c("<span>wplace</span>"),
-  W = c('<div><img alt="Wplace logo"/> <!></div>');
+var S = new Set(["$$slots", "$$events", "$$legacy", "hasText", "size"]),
+  U = f("<span>wplace</span>"),
+  W = f('<div><img alt="Wplace logo"/> <!></div>');
 
 function E(n, t) {
   x(t, !0);
-  let a = L(t, "size", 3, "default"),
-    d = T(t, ["$$slots", "$$events", "$$legacy", "hasText", "size"]);
-  var s = W();
-  z(s, () => ({
+  let e = L(t, "size", 3, "default"),
+    d = T(t, S);
+  var a = W();
+  z(a, () => ({
     ...d,
     class: `flex items-center gap-1.5 ${t.class??""}`
   }));
-  var e = _(s);
+  var s = _(a);
   let r;
-  var u = h(e, 2);
+  var u = h(s, 2);
   {
     var v = l => {
       var o = U();
       let i;
-      m(() => i = f(o, 1, "text-base-content font-pixel", null, i, {
-        "text-4xl": a() === "default",
-        "text-5xl": a() === "lg" || a() === "medium"
+      m(() => i = c(o, 1, "text-base-content font-pixel", null, i, {
+        "text-4xl": e() === "default",
+        "text-5xl": e() === "lg" || e() === "medium"
       })), p(l, o)
     };
     w(u, l => {
       t.hasText && l(v)
     })
   }
-  b(s), m(() => {
-    r = f(e, 1, "pixelated h-auto shrink-0", null, r, {
-      "w-4": a() === "small",
-      "w-10": a() === "default",
-      "w-16": a() === "medium",
-      "w-20": a() === "lg"
-    }), k(e, "src", y)
-  }), p(n, s), g()
+  b(a), m(() => {
+    r = c(s, 1, "pixelated h-auto shrink-0", null, r, {
+      "w-4": e() === "small",
+      "w-10": e() === "default",
+      "w-16": e() === "medium",
+      "w-20": e() === "lg"
+    }), k(s, "src", y)
+  }), p(n, a), g()
 }
 export {
   E as L

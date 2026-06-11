@@ -1,80 +1,79 @@
 import "./Bzak7iHL.js";
-import "./B7vrJrEX.js";
+import "./CE_13Z4f.js";
 import {
-  p as O,
+  p as k,
   d as n,
   r as m,
   t as d,
   a as p,
-  b as k,
-  s as v,
+  b as z,
+  s as _,
   at as o,
   L as c,
-  c as f
-} from "./Dbe4PVAU.js";
+  c as R
+} from "./CV6xI6o5.js";
 import {
-  s as g
-} from "./C_mo-lyU.js";
+  s as v
+} from "./hBdZmm-r.js";
 import {
-  i as z
-} from "./Icl9dwnj.js";
+  i as A
+} from "./iywslKou.js";
 import {
-  a as A
-} from "./B7_gUtXa.js";
+  a as M
+} from "./g3dAVNmx.js";
 import {
-  i as M
-} from "./BVnIq1Qc.js";
+  i as N
+} from "./BMPMTaQp.js";
 import {
-  p as b
-} from "./K9AHFDoV.js";
+  p as g
+} from "./BQ880tYw.js";
 import {
-  R as x,
+  R as b,
   a as u
 } from "./DX1r3K5G.js";
 import {
-  L
-} from "./Cskb-8mx.js";
-var N = f('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
-  j = f('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
-  B = f("<span><!></span>");
+  L as x
+} from "./DxYjsNvA.js";
+var L = R('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
+  j = R("<span><!></span>");
 
-function J(R, i) {
-  O(i, !1);
-  let a = b(i, "role", 8),
-    h = b(i, "big", 8, !1);
-  M();
-  var s = B();
-  let _;
+function I(h, i) {
+  k(i, !1);
+  let a = g(i, "role", 8),
+    w = g(i, "big", 8, !1);
+  N();
+  var s = j();
+  let f;
   var y = n(s);
   {
-    var w = r => {
-        var e = N(),
+    var E = r => {
+        var e = L(),
           t = n(e);
-        L(t, {
+        x(t, {
           size: "none"
         });
-        var l = v(t, 1, !0);
-        m(e), d(() => g(l, (o(x), o(a()), c(() => x[a()])))), p(r, e)
+        var l = _(t, 1, !0);
+        m(e), d(() => v(l, (o(b), o(a()), c(() => b[a()])))), p(r, e)
       },
-      E = r => {
-        var e = j(),
+      O = r => {
+        var e = L(),
           t = n(e);
-        L(t, {
+        x(t, {
           size: "small"
         });
-        var l = v(t, 1, !0);
-        m(e), d(() => g(l, (o(u), o(a()), c(() => u[a()])))), p(r, e)
+        var l = _(t, 1, !0);
+        m(e), d(() => v(l, (o(u), o(a()), c(() => u[a()])))), p(r, e)
       };
-    z(y, r => {
-      h() ? r(w) : r(E, !1)
+    A(y, r => {
+      w() ? r(E) : r(O, -1)
     })
   }
-  m(s), d(() => _ = A(s, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center whitespace-nowrap pt-0.5 font-semibold leading-none shadow", null, _, {
+  m(s), d(() => f = M(s, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center whitespace-nowrap pt-0.5 font-semibold leading-none shadow", null, f, {
     "badge-info": a() === "admin",
     "badge-secondary": a() === "moderator" || a() == "global_moderator",
     "badge-warning": a() === "community_leader" || a() === "discord_leader"
-  })), p(R, s), k()
+  })), p(h, s), z()
 }
 export {
-  J as R
+  I as R
 };

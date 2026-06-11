@@ -1,7 +1,7 @@
 import "./Bzak7iHL.js";
 import {
   o as yt
-} from "./DMoMXVXI.js";
+} from "./CqGGwggA.js";
 import {
   a as f,
   w as xt,
@@ -18,26 +18,26 @@ import {
   b as Tt,
   e as E,
   f as Wt,
-  l as V,
+  l as R,
   c as v,
-  S as Mt
-} from "./Dbe4PVAU.js";
+  R as Mt
+} from "./CV6xI6o5.js";
 import {
   s as l
-} from "./C_mo-lyU.js";
+} from "./hBdZmm-r.js";
 import {
   i as m
-} from "./Icl9dwnj.js";
+} from "./iywslKou.js";
 import {
   d as $t,
-  s as F,
+  s as V,
   r as X,
   g as tt
-} from "./B7_gUtXa.js";
+} from "./g3dAVNmx.js";
 import {
   r as At,
   p as Bt
-} from "./K9AHFDoV.js";
+} from "./BQ880tYw.js";
 import {
   g as Lt,
   i as Pt,
@@ -51,12 +51,12 @@ import {
   g as p
 } from "./BhCkpOlh.js";
 import {
-  L as Vt
-} from "./Cskb-8mx.js";
-const Ft = () => "and",
-  Kt = () => "e",
-  Nt = () => "和",
-  Rt = () => "und",
+  L as Rt
+} from "./DxYjsNvA.js";
+const Vt = () => "and",
+  Ft = () => "e",
+  Kt = () => "和",
+  Nt = () => "und",
   Dt = () => "y",
   Ot = () => "et",
   Ht = () => "e",
@@ -67,7 +67,7 @@ const Ft = () => "and",
   Jt = () => "và",
   Yt = (e = {}, r = {}) => {
     const t = r.locale ?? p();
-    return t === "en" ? Ft() : t === "pt" ? Kt() : t === "ch" ? Nt() : t === "de" ? Rt() : t === "es" ? Dt() : t === "fr" ? Ot() : t === "it" ? Ht() : t === "jp" ? qt() : t === "pl" ? Gt() : t === "ru" ? Ut() : t === "uk" ? Zt() : Jt()
+    return t === "en" ? Vt() : t === "pt" ? Ft() : t === "ch" ? Kt() : t === "de" ? Nt() : t === "es" ? Dt() : t === "fr" ? Ot() : t === "it" ? Ht() : t === "jp" ? qt() : t === "pl" ? Gt() : t === "ru" ? Ut() : t === "uk" ? Zt() : Jt()
   },
   Qt = () => "By continuing, you agree to our",
   Xt = () => "Ao continuar, você concorda com nossos",
@@ -118,11 +118,11 @@ const Ft = () => "and",
     return t === "en" ? ze() : t === "pt" ? je() : t === "ch" ? Ce() : t === "de" ? Te() : t === "es" ? We() : t === "fr" ? Me() : t === "it" ? $e() : t === "jp" ? Ae() : t === "pl" ? Be() : t === "ru" ? Le() : t === "uk" ? Pe() : Se()
   },
   Ee = e => `Continue with ${e.name}`,
-  Ve = e => `Continuar com ${e.name}`,
-  Fe = e => `使用 ${e.name} 继续`,
-  Ke = e => `Weiter mit ${e.name}`,
-  Ne = e => `Continuar con ${e.name}`,
-  Re = e => `Continuer avec ${e.name}`,
+  Re = e => `Continuar com ${e.name}`,
+  Ve = e => `使用 ${e.name} 继续`,
+  Fe = e => `Weiter mit ${e.name}`,
+  Ke = e => `Continuar con ${e.name}`,
+  Ne = e => `Continuer avec ${e.name}`,
   De = e => `Continua con ${e.name}`,
   Oe = e => `${e.name}で続行`,
   He = e => `Kontynuuj przez ${e.name}`,
@@ -131,7 +131,7 @@ const Ft = () => "and",
   Ue = e => `Tiếp tục với ${e.name}`,
   Ze = (e, r = {}) => {
     const t = r.locale ?? p();
-    return t === "en" ? Ee(e) : t === "pt" ? Ve(e) : t === "ch" ? Fe(e) : t === "de" ? Ke(e) : t === "es" ? Ne(e) : t === "fr" ? Re(e) : t === "it" ? De(e) : t === "jp" ? Oe(e) : t === "pl" ? He(e) : t === "ru" ? qe(e) : t === "uk" ? Ge(e) : Ue(e)
+    return t === "en" ? Ee(e) : t === "pt" ? Re(e) : t === "ch" ? Ve(e) : t === "de" ? Fe(e) : t === "es" ? Ke(e) : t === "fr" ? Ne(e) : t === "it" ? De(e) : t === "jp" ? Oe(e) : t === "pl" ? He(e) : t === "ru" ? qe(e) : t === "uk" ? Ge(e) : Ue(e)
   },
   Je = () => "Log in to place pixels on the shared world map.",
   Ye = () => "Entre para colocar pixels no mapa do mundo compartilhado.",
@@ -183,11 +183,11 @@ const Ft = () => "and",
   },
   In = () => "Privacy Policy",
   En = () => "Política de privacidade",
-  Vn = () => "隐私政策",
-  Fn = () => "Datenschutzerklärung",
-  Kn = () => "Política de privacidad",
-  Nn = () => "Politique de confidentialité",
-  Rn = () => "Informativa sulla privacy",
+  Rn = () => "隐私政策",
+  Vn = () => "Datenschutzerklärung",
+  Fn = () => "Política de privacidad",
+  Kn = () => "Politique de confidentialité",
+  Nn = () => "Informativa sulla privacy",
   Dn = () => "プライバシーポリシー",
   On = () => "Polityka prywatności",
   Hn = () => "Политика конфиденциальности",
@@ -195,7 +195,7 @@ const Ft = () => "and",
   Gn = () => "Chính sách quyền riêng tư",
   Un = (e = {}, r = {}) => {
     const t = r.locale ?? p();
-    return t === "en" ? In() : t === "pt" ? En() : t === "ch" ? Vn() : t === "de" ? Fn() : t === "es" ? Kn() : t === "fr" ? Nn() : t === "it" ? Rn() : t === "jp" ? Dn() : t === "pl" ? On() : t === "ru" ? Hn() : t === "uk" ? qn() : Gn()
+    return t === "en" ? In() : t === "pt" ? En() : t === "ch" ? Rn() : t === "de" ? Vn() : t === "es" ? Fn() : t === "fr" ? Kn() : t === "it" ? Nn() : t === "jp" ? Dn() : t === "pl" ? On() : t === "ru" ? Hn() : t === "uk" ? qn() : Gn()
   },
   Zn = () => "Terms of Service",
   Jn = () => "Termos de Serviço",
@@ -245,27 +245,28 @@ const Ft = () => "and",
     const t = r.locale ?? p();
     return t === "en" ? yr() : t === "pt" ? xr() : t === "ch" ? kr() : t === "de" ? zr() : t === "es" ? jr() : t === "fr" ? Cr() : t === "it" ? Tr() : t === "jp" ? Wr() : t === "pl" ? Mr() : t === "ru" ? $r() : t === "uk" ? Ar() : Br()
   };
-var Pr = xt('<svg><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" fill="#4285F4"></path><path d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" fill="#34A853"></path><path d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" fill="#FBBC05"></path><path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" fill="#EB4335"></path></svg>');
+var Pr = new Set(["$$slots", "$$events", "$$legacy"]),
+  Sr = xt('<svg><path d="M255.878 133.451c0-10.734-.871-18.567-2.756-26.69H130.55v48.448h71.947c-1.45 12.04-9.283 30.172-26.69 42.356l-.244 1.622 38.755 30.023 2.685.268c24.659-22.774 38.875-56.282 38.875-96.027" fill="#4285F4"></path><path d="M130.55 261.1c35.248 0 64.839-11.605 86.453-31.622l-41.196-31.913c-11.024 7.688-25.82 13.055-45.257 13.055-34.523 0-63.824-22.773-74.269-54.25l-1.531.13-40.298 31.187-.527 1.465C35.393 231.798 79.49 261.1 130.55 261.1" fill="#34A853"></path><path d="M56.281 156.37c-2.756-8.123-4.351-16.827-4.351-25.82 0-8.994 1.595-17.697 4.206-25.82l-.073-1.73L15.26 71.312l-1.335.635C5.077 89.644 0 109.517 0 130.55s5.077 40.905 13.925 58.602l42.356-32.782" fill="#FBBC05"></path><path d="M130.55 50.479c24.514 0 41.05 10.589 50.479 19.438l36.844-35.974C195.245 12.91 165.798 0 130.55 0 79.49 0 35.393 29.301 13.925 71.947l42.211 32.783c10.59-31.477 39.891-54.251 74.414-54.251" fill="#EB4335"></path></svg>');
 
-function Sr(e, r) {
-  let t = At(r, ["$$slots", "$$events", "$$legacy"]);
-  var w = Pr();
+function Ir(e, r) {
+  let t = At(r, Pr);
+  var w = Sr();
   $t(w, () => ({
     viewBox: "0 0 256 262",
     xmlns: "http://www.w3.org/2000/svg",
     ...t
   })), f(e, w)
 }
-var Ir = v('<input type="hidden" name="fp"/>'),
-  Er = v('<input type="hidden" name="r"/>'),
+var Er = v('<input type="hidden" name="fp"/>'),
+  Rr = v('<input type="hidden" name="r"/>'),
   Vr = v('<input type="hidden" name="mobile" value="1"/>'),
   Fr = v('<div role="alert" class="border-warning/50 bg-warning/10 flex w-full flex-col gap-3 rounded-2xl border p-4"><div class="flex items-start gap-2"><svg xmlns="http://www.w3.org/2000/svg" class="text-warning mt-0.5 size-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg> <div><h3 class="text-sm font-bold"> </h3> <p class="text-xs opacity-70"> </p></div></div> <button type="button" class="btn btn-sm btn-warning w-full"> </button></div>'),
   Kr = v('<span class="loading loading-spinner loading-sm"></span>'),
   Nr = v('<!> <button type="submit" class="btn btn-xl text-base"><!> </button>', 1),
-  Rr = v('<div class="border-base-200 bg-base-200/60 border-t px-8 py-4"><p class="text-base-content/70 text-center text-xs"> <button type="submit" class="text-primary/90 cursor-pointer bg-transparent p-0 font-semibold underline-offset-2 hover:underline disabled:cursor-not-allowed disabled:opacity-60"> </button></p></div>'),
-  Dr = v('<form method="POST" class="bg-base-100 mx-auto w-full max-w-md overflow-hidden rounded-2xl shadow-xl"><!> <!> <!> <div class="flex h-1 w-full" aria-hidden="true"><div class="h-full grow bg-rose-500 brightness-95"></div> <div class="h-full grow bg-orange-500 brightness-95"></div> <div class="h-full grow bg-lime-500 brightness-95"></div> <div class="h-full grow bg-emerald-500 brightness-95"></div> <div class="h-full grow bg-blue-500 brightness-95"></div> <div class="h-full grow bg-purple-500 brightness-95"></div> <div class="h-full grow bg-pink-500 brightness-95"></div></div> <div class="px-8 pt-8 pb-8"><div class="flex flex-col items-center"><!> <p class="text-base-content/80 mt-6 px-2 text-center text-sm leading-snug"> </p></div> <div class="mt-8 flex flex-col gap-3"><!></div> <p class="text-base-content/60 mx-auto mt-8 px-2 text-center text-xs leading-relaxed"> <a class="text-base-content/75 font-medium underline-offset-2 hover:underline" target="_blank"> </a>, <a class="text-base-content/75 font-medium underline-offset-2 hover:underline" href="/terms/privacy" target="_blank"> </a> <a class="text-base-content/75 font-medium underline-offset-2 hover:underline" href="/terms/community-guidelines" target="_blank"> </a>.</p></div> <!></form>');
+  Dr = v('<div class="border-base-200 bg-base-200/60 border-t px-8 py-4"><p class="text-base-content/70 text-center text-xs"> <button type="submit" class="text-primary/90 cursor-pointer bg-transparent p-0 font-semibold underline-offset-2 hover:underline disabled:cursor-not-allowed disabled:opacity-60"> </button></p></div>'),
+  Or = v('<form method="POST" class="bg-base-100 mx-auto w-full max-w-md overflow-hidden rounded-2xl shadow-xl"><!> <!> <!> <div class="flex h-1 w-full" aria-hidden="true"><div class="h-full grow bg-rose-500 brightness-95"></div> <div class="h-full grow bg-orange-500 brightness-95"></div> <div class="h-full grow bg-lime-500 brightness-95"></div> <div class="h-full grow bg-emerald-500 brightness-95"></div> <div class="h-full grow bg-blue-500 brightness-95"></div> <div class="h-full grow bg-purple-500 brightness-95"></div> <div class="h-full grow bg-pink-500 brightness-95"></div></div> <div class="px-8 pt-8 pb-8"><div class="flex flex-col items-center"><!> <p class="text-base-content/80 mt-6 px-2 text-center text-sm leading-snug"> </p></div> <div class="mt-8 flex flex-col gap-3"><!></div> <p class="text-base-content/60 mx-auto mt-8 px-2 text-center text-xs leading-relaxed"> <a class="text-base-content/75 font-medium underline-offset-2 hover:underline" target="_blank"> </a>, <a class="text-base-content/75 font-medium underline-offset-2 hover:underline" href="/terms/privacy" target="_blank"> </a> <a class="text-base-content/75 font-medium underline-offset-2 hover:underline" href="/terms/community-guidelines" target="_blank"> </a>.</p></div> <!></form>');
 
-function ei(e, r) {
+function ni(e, r) {
   zt(r, !0);
   let t = Bt(r, "showTwitchMigration", 3, !0),
     w = E(void 0),
@@ -278,7 +279,7 @@ function ei(e, r) {
       I(w, n, !0)
     })
   });
-  const K = n => `${It}/auth/${n}`;
+  const F = n => `${It}/auth/${n}`;
 
   function rt() {
     const n = window.location.origin,
@@ -288,28 +289,28 @@ function ei(e, r) {
       window.location.href = "intent://" + s + "#Intent;scheme=https;action=android.intent.action.VIEW;end"
     } else window.open(n, "_system")
   }
-  async function N(n) {
+  async function K(n) {
     var s;
     if (d(w)) return;
     n.preventDefault();
     const i = n.currentTarget;
     await d(C), await Mt(), (s = i.form) == null || s.requestSubmit(i)
   }
-  var z = Dr(),
-    R = o(z);
+  var z = Or(),
+    N = o(z);
   {
     var it = n => {
-      var i = Ir();
+      var i = Er();
       X(i), y(() => tt(i, d(w))), f(n, i)
     };
-    m(R, n => {
+    m(N, n => {
       d(w) && n(it)
     })
   }
-  var D = c(R, 2);
+  var D = c(N, 2);
   {
     var ot = n => {
-      var i = Er();
+      var i = Rr();
       X(i), y(() => tt(i, r.redirect)), f(n, i)
     };
     m(D, n => {
@@ -329,7 +330,7 @@ function ei(e, r) {
   var T = c(O, 4),
     W = o(T),
     H = o(W);
-  Vt(H, {
+  Rt(H, {
     hasText: !0
   });
   var q = c(H, 2),
@@ -356,7 +357,7 @@ function ei(e, r) {
             gt = o(S, !0);
           u(S), u(g), y((mt, ht, bt) => {
             l(vt, mt), l(wt, ht), l(gt, bt)
-          }, [() => Lr(), () => br(), () => Sn()]), V("click", S, rt), f(_, g)
+          }, [() => Lr(), () => br(), () => Sn()]), R("click", S, rt), f(_, g)
         };
         m(s, _ => {
           et && _(h)
@@ -370,23 +371,23 @@ function ei(e, r) {
             f(_, g)
           },
           A = _ => {
-            Sr(_, {
+            Ir(_, {
               class: "size-5 shrink-0"
             })
           };
         m(b, _ => {
-          d(k) ? _(x) : _(A, !1)
+          d(k) ? _(x) : _(A, -1)
         })
       }
       var B = c(b);
       u(a), y((_, g) => {
-        F(a, "formaction", _), a.disabled = d(k), l(B, ` ${g??""}`)
-      }, [() => K("google"), () => Ze({
+        V(a, "formaction", _), a.disabled = d(k), l(B, ` ${g??""}`)
+      }, [() => F("google"), () => Ze({
         name: "Google"
-      })]), V("click", a, N), f(n, i)
+      })]), R("click", a, K), f(n, i)
     };
     m(at, n => {
-      n(st, !1)
+      n(st, -1)
     })
   }
   u(M);
@@ -405,26 +406,26 @@ function ei(e, r) {
   var ft = c(T, 2);
   {
     var dt = n => {
-      var i = Rr(),
+      var i = Dr(),
         s = o(i),
         h = o(s),
         a = c(h),
         b = o(a, !0);
       u(a), u(s), u(i), y((x, A, B) => {
-        l(h, `${x??""} `), F(a, "formaction", A), a.disabled = d(k), l(b, B)
-      }, [() => Ie(), () => K("twitch"), () => xn()]), V("click", a, N), f(n, i)
+        l(h, `${x??""} `), V(a, "formaction", A), a.disabled = d(k), l(b, B)
+      }, [() => Ie(), () => F("twitch"), () => xn()]), R("click", a, K), f(n, i)
     };
     m(ft, n => {
       t() && n(dt)
     })
   }
   u(z), y((n, i, s, h, a, b, x) => {
-    l(ct, n), l(U, `${i??""} `), F(j, "href", s), l(_t, h), l(lt, a), l(Z, ` ${b??""} `), l(pt, x)
-  }, [() => sn(), () => _e(), Et, () => cr(), () => Un(), () => Yt(), () => ke()]), Ct("submit", z, () => {
+    l(ct, n), l(U, `${i??""} `), V(j, "href", s), l(_t, h), l(lt, a), l(Z, ` ${b??""} `), l(pt, x)
+  }, [() => sn(), () => _e(), () => Et(), () => cr(), () => Un(), () => Yt(), () => ke()]), Ct("submit", z, () => {
     I(k, !0)
   }), f(e, z), Tt()
 }
 kt(["click"]);
 export {
-  ei as L, ke as c
+  ni as L, ke as c
 };

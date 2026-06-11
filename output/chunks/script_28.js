@@ -1,35 +1,38 @@
 import {
-  a0 as y,
-  z as u,
-  av as _,
-  aw as o,
+  Z as _,
+  z as o,
+  _ as g,
+  as as p,
   x as t,
-  a8 as p,
-  ap as i,
+  a8 as v,
+  ar as i,
   D as l,
-  C as d,
-  F as g,
-  a7 as v
-} from "./Dbe4PVAU.js";
+  C as r,
+  F as m,
+  a6 as E
+} from "./CV6xI6o5.js";
 
-function C(n, r) {
+function C(n, d) {
   let a = null,
-    E = t;
+    f = t;
   var s;
   if (t) {
-    a = g;
-    for (var e = v(document.head); e !== null && (e.nodeType !== p || e.data !== n);) e = i(e);
+    a = m;
+    for (var e = E(document.head); e !== null && (e.nodeType !== v || e.data !== n);) e = i(e);
     if (e === null) l(!1);
     else {
-      var f = i(e);
-      e.remove(), d(f)
+      var y = i(e);
+      e.remove(), r(y)
     }
   }
-  t || (s = document.head.appendChild(y()));
+  t || (s = document.head.appendChild(_()));
   try {
-    u(() => r(s), _ | o)
+    o(() => {
+      var u = g(() => d(s));
+      u.f |= p
+    })
   } finally {
-    E && (l(!0), d(a))
+    f && (l(!0), r(a))
   }
 }
 export {

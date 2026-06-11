@@ -1,49 +1,57 @@
 import {
   t as E,
-  x as _,
-  y as l,
-  aB as y,
-  aC as M,
-  F as h,
-  a8 as A,
-  ap as C,
-  aD as m,
-  aE as w,
-  aF as c,
-  C as N,
-  aG as T,
-  aH as g,
-  aI as H,
-  a7 as d
-} from "./Dbe4PVAU.js";
+  x as d,
+  C as v,
+  a6 as i,
+  y,
+  T,
+  ax as _,
+  ay as m,
+  F as M,
+  a8 as p,
+  ar as w,
+  az as N,
+  aA as g,
+  aB as H,
+  aC as O,
+  aD as R
+} from "./CV6xI6o5.js";
 
-function b(u, p, r = !1, s = !1, O = !1) {
-  var i = u,
-    n = "";
+function L(h, A, u = !1, f = !1, t = !1, b = !1) {
+  var n = h,
+    e = "";
+  if (u) {
+    var l = h;
+    d && (n = v(i(l)))
+  }
   E(() => {
-    var t = y;
-    if (n === (n = p() ?? "")) {
-      _ && l();
+    var r = T;
+    if (e === (e = A() ?? "")) {
+      d && y();
       return
     }
-    if (t.nodes !== null && (M(t.nodes.start, t.nodes.end), t.nodes = null), n !== "") {
-      if (_) {
-        h.data;
-        for (var a = l(), o = a; a !== null && (a.nodeType !== A || a.data !== "");) o = a, a = C(a);
-        if (a === null) throw m(), w;
-        c(h, o), i = N(a);
+    if (u && !d) {
+      r.nodes = null, l.innerHTML = e, e !== "" && _(i(l), l.lastChild);
+      return
+    }
+    if (r.nodes !== null && (m(r.nodes.start, r.nodes.end), r.nodes = null), e !== "") {
+      if (d) {
+        M.data;
+        for (var a = y(), c = a; a !== null && (a.nodeType !== p || a.data !== "");) c = a, a = w(a);
+        if (a === null) throw N(), g;
+        _(M, c), n = v(a);
         return
       }
-      var v = r ? g : s ? H : void 0,
-        f = T(r ? "svg" : s ? "math" : "template", v);
-      f.innerHTML = n;
-      var e = r || s ? f : f.content;
-      if (c(d(e), e.lastChild), r || s)
-        for (; d(e);) i.before(d(e));
-      else i.before(e)
+      var C = f ? O : t ? R : void 0,
+        o = H(f ? "svg" : t ? "math" : "template", C);
+      o.innerHTML = e;
+      var s = f || t ? o : o.content;
+      if (_(i(s), s.lastChild), f || t)
+        for (; i(s);) n.before(i(s));
+      else n.before(s)
     }
   })
 }
 export {
-  b as h
+  L as h
 };

@@ -1,29 +1,39 @@
 import {
-  m as h,
-  U as k,
-  L,
-  V as S,
-  W as T
-} from "./Dbe4PVAU.js";
+  J as h,
+  m as w,
+  S as x,
+  L as E,
+  T as L,
+  U as O,
+  V as Y
+} from "./CV6xI6o5.js";
 
-function t(r, i) {
-  return r === i || (r == null ? void 0 : r[T]) === i
+function n(r, f) {
+  return r === f || (r == null ? void 0 : r[Y]) === f
 }
 
-function x(r = {}, i, a, c) {
-  return h(() => {
-    var f, s;
-    return k(() => {
-      f = s, s = [], L(() => {
-        r !== a(...s) && (i(r, ...s), f && t(a(...f), r) && i(null, ...f))
+function B(r = {}, f, i, k) {
+  var p = h.r,
+    S = L;
+  return w(() => {
+    var a, t;
+    return x(() => {
+      a = t, t = [], E(() => {
+        n(i(...t), r) || (f(r, ...t), a && n(i(...a), r) && f(null, ...a))
       })
     }), () => {
-      S(() => {
-        s && t(a(...s), r) && i(null, ...s)
-      })
+      let s = S;
+      for (; s !== p && s.parent !== null && s.parent.f & O;) s = s.parent;
+      const T = () => {
+          t && n(i(...t), r) && f(null, ...t)
+        },
+        c = s.teardown;
+      s.teardown = () => {
+        T(), c == null || c()
+      }
     }
   }), r
 }
 export {
-  x as b
+  B as b
 };

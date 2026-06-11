@@ -14,84 +14,83 @@ var t = (i, e, s) => (y(i, e, "read from private field"), s ? s.call(i) : e.get(
   l = (i, e, s) => e.has(i) ? g("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(i) : e.set(i, s),
   M = (i, e, s, a) => (y(i, e, "write to private field"), a ? a.call(i, s) : e.set(i, s), s);
 import {
-  X as x,
+  W as x,
+  X as b,
   Y as C,
-  Z as k,
-  _ as S,
-  a0 as F,
-  a1 as A,
-  x as X,
-  F as Y,
-  a2 as Z,
-  a3 as j
-} from "./Dbe4PVAU.js";
-var r, n, h, u, p, _, v;
-class E {
+  Z as F,
+  _ as A,
+  a0 as S,
+  x as W,
+  F as X,
+  a1 as Y,
+  a2 as Z
+} from "./CV6xI6o5.js";
+var c, n, r, u, p, _, v;
+class z {
   constructor(e, s = !0) {
     w(this, "anchor");
-    l(this, r, new Map);
+    l(this, c, new Map);
     l(this, n, new Map);
-    l(this, h, new Map);
+    l(this, r, new Map);
     l(this, u, new Set);
     l(this, p, !0);
-    l(this, _, () => {
-      var e = x;
-      if (t(this, r).has(e)) {
-        var s = t(this, r).get(e),
+    l(this, _, e => {
+      if (t(this, c).has(e)) {
+        var s = t(this, c).get(e),
           a = t(this, n).get(s);
-        if (a) C(a), t(this, u).delete(s);
+        if (a) x(a), t(this, u).delete(s);
         else {
-          var c = t(this, h).get(s);
-          c && (t(this, n).set(s, c.effect), t(this, h).delete(s), c.fragment.lastChild.remove(), this.anchor.before(c.fragment), a = c.effect)
+          var h = t(this, r).get(s);
+          h && (x(h.effect), t(this, n).set(s, h.effect), t(this, r).delete(s), h.fragment.lastChild.remove(), this.anchor.before(h.fragment), a = h.effect)
         }
-        for (const [f, o] of t(this, r)) {
-          if (t(this, r).delete(f), f === e) break;
-          const d = t(this, h).get(o);
-          d && (k(d.effect), t(this, h).delete(o))
+        for (const [f, o] of t(this, c)) {
+          if (t(this, c).delete(f), f === e) break;
+          const d = t(this, r).get(o);
+          d && (b(d.effect), t(this, r).delete(o))
         }
         for (const [f, o] of t(this, n)) {
           if (f === s || t(this, u).has(f)) continue;
           const d = () => {
-            if (Array.from(t(this, r).values()).includes(f)) {
-              var b = document.createDocumentFragment();
-              Z(o, b), b.append(F()), t(this, h).set(f, {
+            if (Array.from(t(this, c).values()).includes(f)) {
+              var k = document.createDocumentFragment();
+              Y(o, k), k.append(F()), t(this, r).set(f, {
                 effect: o,
-                fragment: b
+                fragment: k
               })
-            } else k(o);
+            } else b(o);
             t(this, u).delete(f), t(this, n).delete(f)
           };
-          t(this, p) || !a ? (t(this, u).add(f), S(o, d, !1)) : d()
+          t(this, p) || !a ? (t(this, u).add(f), C(o, d, !1)) : d()
         }
       }
     });
     l(this, v, e => {
-      t(this, r).delete(e);
-      const s = Array.from(t(this, r).values());
-      for (const [a, c] of t(this, h)) s.includes(a) || (k(c.effect), t(this, h).delete(a))
+      t(this, c).delete(e);
+      const s = Array.from(t(this, c).values());
+      for (const [a, h] of t(this, r)) s.includes(a) || (b(h.effect), t(this, r).delete(a))
     });
     this.anchor = e, M(this, p, s)
   }
   ensure(e, s) {
-    var a = x,
-      c = j();
-    if (s && !t(this, n).has(e) && !t(this, h).has(e))
-      if (c) {
+    var a = S,
+      h = Z();
+    if (s && !t(this, n).has(e) && !t(this, r).has(e))
+      if (h) {
         var f = document.createDocumentFragment(),
           o = F();
-        f.append(o), t(this, h).set(e, {
+        f.append(o), t(this, r).set(e, {
           effect: A(() => s(o)),
           fragment: f
         })
       } else t(this, n).set(e, A(() => s(this.anchor)));
-    if (t(this, r).set(a, e), c) {
+    if (t(this, c).set(a, e), h) {
       for (const [d, m] of t(this, n)) d === e ? a.unskip_effect(m) : a.skip_effect(m);
-      for (const [d, m] of t(this, h)) d === e ? a.unskip_effect(m.effect) : a.skip_effect(m.effect);
+      for (const [d, m] of t(this, r)) d === e ? a.unskip_effect(m.effect) : a.skip_effect(m.effect);
       a.oncommit(t(this, _)), a.ondiscard(t(this, v))
-    } else X && (this.anchor = Y), t(this, _).call(this)
+    } else W && (this.anchor = X), t(this, _).call(this, a)
   }
 }
-r = new WeakMap, n = new WeakMap, h = new WeakMap, u = new WeakMap, p = new WeakMap, _ = new WeakMap, v = new WeakMap;
+c = new WeakMap, n = new WeakMap, r = new WeakMap, u = new WeakMap, p = new WeakMap, _ = new WeakMap, v = new WeakMap;
 export {
-  E as B
+  z as B
 };
