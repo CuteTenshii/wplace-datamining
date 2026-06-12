@@ -1,27 +1,67 @@
 import "./Bzak7iHL.js";
 import {
-  a as e,
-  w as a
+  p as x,
+  t as m,
+  a as p,
+  b as g,
+  c as f,
+  d as _,
+  s as h,
+  r as b
 } from "./CV6xI6o5.js";
 import {
-  d as p
-} from "./g3dAVNmx.js";
+  i as w
+} from "./iywslKou.js";
 import {
-  r as v
+  d as z,
+  a as c,
+  s as k
+} from "./rONmwD0j.js";
+import {
+  p as L,
+  r as T
 } from "./BQ880tYw.js";
-var f = new Set(["$$slots", "$$events", "$$legacy"]),
-  m = a('<svg><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"></path></svg>');
+import {
+  l as y
+} from "./B_Oz03f8.js";
+var S = new Set(["$$slots", "$$events", "$$legacy", "hasText", "size"]),
+  U = f("<span>wplace</span>"),
+  W = f('<div><img alt="Wplace logo"/> <!></div>');
 
-function g(r, o) {
-  let s = v(o, f);
-  var t = m();
-  p(t, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...s
-  })), e(r, t)
+function E(n, t) {
+  x(t, !0);
+  let e = L(t, "size", 3, "default"),
+    d = T(t, S);
+  var a = W();
+  z(a, () => ({
+    ...d,
+    class: `flex items-center gap-1.5 ${t.class??""}`
+  }));
+  var s = _(a);
+  let r;
+  var u = h(s, 2);
+  {
+    var v = l => {
+      var o = U();
+      let i;
+      m(() => i = c(o, 1, "text-base-content font-pixel", null, i, {
+        "text-4xl": e() === "default",
+        "text-5xl": e() === "lg" || e() === "medium"
+      })), p(l, o)
+    };
+    w(u, l => {
+      t.hasText && l(v)
+    })
+  }
+  b(a), m(() => {
+    r = c(s, 1, "pixelated h-auto shrink-0", null, r, {
+      "w-4": e() === "small",
+      "w-10": e() === "default",
+      "w-16": e() === "medium",
+      "w-20": e() === "lg"
+    }), k(s, "src", y)
+  }), p(n, a), g()
 }
 export {
-  g as R
+  E as L
 };

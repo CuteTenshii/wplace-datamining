@@ -1,38 +1,39 @@
 import {
-  x as o,
-  y,
-  z as v,
-  E as f,
-  A as l,
-  B as m,
-  C as p,
-  D as i,
-  H as T,
-  F as A
+  J as h,
+  m as w,
+  S as x,
+  L as E,
+  T as L,
+  U as O,
+  V as Y
 } from "./CV6xI6o5.js";
-import {
-  B as E
-} from "./Cj3y7IFy.js";
 
-function x(d, _, e) {
-  var s;
-  o && (s = A, y());
-  var r = new E(d);
-  v(() => {
-    var a = _() ?? null;
-    if (o) {
-      var h = l(s),
-        c = h === T,
-        u = a !== null;
-      if (c !== u) {
-        var t = m();
-        p(t), r.anchor = t, i(!1), r.ensure(a, a && (n => e(n, a))), i(!0);
-        return
+function n(r, f) {
+  return r === f || (r == null ? void 0 : r[Y]) === f
+}
+
+function B(r = {}, f, i, k) {
+  var p = h.r,
+    S = L;
+  return w(() => {
+    var a, t;
+    return x(() => {
+      a = t, t = [], E(() => {
+        n(i(...t), r) || (f(r, ...t), a && n(i(...a), r) && f(null, ...a))
+      })
+    }), () => {
+      let s = S;
+      for (; s !== p && s.parent !== null && s.parent.f & O;) s = s.parent;
+      const T = () => {
+          t && n(i(...t), r) && f(null, ...t)
+        },
+        c = s.teardown;
+      s.teardown = () => {
+        T(), c == null || c()
       }
     }
-    r.ensure(a, a && (n => e(n, a)))
-  }, f)
+  }), r
 }
 export {
-  x as c
+  B as b
 };

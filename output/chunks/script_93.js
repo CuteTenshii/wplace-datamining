@@ -1,22 +1,22 @@
 import {
-  g as t
+  g as o
 } from "./BhCkpOlh.js";
-const n = () => "Refresh",
-  s = () => "Atualizar",
-  u = () => "刷新",
-  f = () => "Aktualisieren",
-  i = () => "Actualizar",
-  c = () => "Actualiser",
-  o = () => "Aggiorna",
-  h = () => "更新",
-  a = () => "Odśwież",
-  _ = () => "Обновить",
-  l = () => "Оновити",
-  p = () => "Làm mới",
-  m = (A = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? n() : r === "pt" ? s() : r === "ch" ? u() : r === "de" ? f() : r === "es" ? i() : r === "fr" ? c() : r === "it" ? o() : r === "jp" ? h() : r === "pl" ? a() : r === "ru" ? _() : r === "uk" ? l() : p()
+const t = () => "Load more",
+  n = () => "Carregar mais",
+  a = () => "加载更多",
+  u = () => "Mehr laden",
+  _ = () => "Cargar más",
+  l = () => "Charger plus",
+  c = () => "Carica altro",
+  s = () => "さらに読み込む",
+  i = () => "Wczytaj więcej",
+  m = () => "Загрузить ещё",
+  d = () => "Завантажити ще",
+  f = () => "Tải thêm",
+  h = (p = {}, e = {}) => {
+    const r = e.locale ?? o();
+    return r === "en" ? t() : r === "pt" ? n() : r === "ch" ? a() : r === "de" ? u() : r === "es" ? _() : r === "fr" ? l() : r === "it" ? c() : r === "jp" ? s() : r === "pl" ? i() : r === "ru" ? m() : r === "uk" ? d() : f()
   };
 export {
-  m as r
+  h as l
 };

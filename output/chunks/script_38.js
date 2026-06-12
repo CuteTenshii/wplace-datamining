@@ -1,27 +1,22 @@
-import "./Bzak7iHL.js";
 import {
-  a as e,
-  w as a
-} from "./CV6xI6o5.js";
-import {
-  d as p
-} from "./g3dAVNmx.js";
-import {
-  r as v
-} from "./BQ880tYw.js";
-var m = new Set(["$$slots", "$$events", "$$legacy"]),
-  f = a('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
-
-function c(t, o) {
-  let s = v(o, m);
-  var r = f();
-  p(r, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...s
-  })), e(t, r)
-}
+  g as e
+} from "./BhCkpOlh.js";
+const o = () => "Droplets",
+  s = () => "Droplets",
+  n = () => "Droplets",
+  p = () => "Droplets",
+  l = () => "Droplets",
+  u = () => "Droplets",
+  c = () => "Droplets",
+  d = () => "Droplets",
+  i = () => "Droplets",
+  f = () => "Droplets",
+  D = () => "Droplets",
+  _ = () => "Droplets",
+  h = (a = {}, t = {}) => {
+    const r = t.locale ?? e();
+    return r === "en" ? o() : r === "pt" ? s() : r === "ch" ? n() : r === "de" ? p() : r === "es" ? l() : r === "fr" ? u() : r === "it" ? c() : r === "jp" ? d() : r === "pl" ? i() : r === "ru" ? f() : r === "uk" ? D() : _()
+  };
 export {
-  c as A
+  h as d
 };

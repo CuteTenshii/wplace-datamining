@@ -1,96 +1,57 @@
 import {
-  au as t,
-  a0 as k,
-  R as w,
-  L as E,
-  S as b,
-  x as n,
-  av as C,
-  aw as A,
-  an as S
+  t as E,
+  x as d,
+  C as v,
+  a6 as i,
+  y,
+  T,
+  ax as _,
+  ay as m,
+  F as M,
+  a8 as p,
+  ar as w,
+  az as N,
+  aA as g,
+  aB as H,
+  aC as O,
+  aD as R
 } from "./CV6xI6o5.js";
 
-function q(e, v, l = v) {
-  var f = new WeakSet;
-  t(e, "input", async c => {
-    var d = c ? e.defaultValue : e.value;
-    if (d = u(e) ? m(d) : d, l(d), k !== null && f.add(k), await w(), d !== (d = v())) {
-      var r = e.selectionStart,
-        s = e.selectionEnd,
-        o = e.value.length;
-      if (e.value = d ?? "", s !== null) {
-        var a = e.value.length;
-        r === s && s === o && a > o ? (e.selectionStart = a, e.selectionEnd = a) : (e.selectionStart = r, e.selectionEnd = Math.min(s, a))
-      }
-    }
-  }), (n && e.defaultValue !== e.value || E(v) == null && e.value) && (l(u(e) ? m(e.value) : e.value), k !== null && f.add(k)), b(() => {
-    var c = v();
-    if (e === document.activeElement) {
-      var d = k;
-      if (f.has(d)) return
-    }
-    u(e) && c === m(e.value) || e.type === "date" && !c && !e.value || c !== e.value && (e.value = c ?? "")
-  })
-}
-const _ = new Set;
-
-function x(e, v, l, f, c = f) {
-  var d = l.getAttribute("type") === "checkbox",
-    r = e;
-  let s = !1;
-  if (v !== null)
-    for (var o of v) r = r[o] ?? (r[o] = []);
-  r.push(l), t(l, "change", () => {
-    var a = l.__value;
-    d && (a = y(r, a, l.checked)), c(a)
-  }, () => c(d ? [] : null)), b(() => {
-    var a = f();
-    if (n && l.defaultChecked !== l.checked) {
-      s = !0;
+function L(h, A, u = !1, f = !1, t = !1, b = !1) {
+  var n = h,
+    e = "";
+  if (u) {
+    var l = h;
+    d && (n = v(i(l)))
+  }
+  E(() => {
+    var r = T;
+    if (e === (e = A() ?? "")) {
+      d && y();
       return
     }
-    d ? (a = a || [], l.checked = a.includes(l.__value)) : l.checked = C(l.__value, a)
-  }), A(() => {
-    var a = r.indexOf(l);
-    a !== -1 && r.splice(a, 1)
-  }), _.has(r) || (_.add(r), S(() => {
-    r.sort((a, h) => a.compareDocumentPosition(h) === 4 ? -1 : 1), _.delete(r)
-  })), S(() => {
-    if (s) {
-      var a;
-      if (d) a = y(r, a, l.checked);
-      else {
-        var h = r.find(i => i.checked);
-        a = h == null ? void 0 : h.__value
+    if (u && !d) {
+      r.nodes = null, l.innerHTML = e, e !== "" && _(i(l), l.lastChild);
+      return
+    }
+    if (r.nodes !== null && (m(r.nodes.start, r.nodes.end), r.nodes = null), e !== "") {
+      if (d) {
+        M.data;
+        for (var a = y(), c = a; a !== null && (a.nodeType !== p || a.data !== "");) c = a, a = w(a);
+        if (a === null) throw N(), g;
+        _(M, c), n = v(a);
+        return
       }
-      c(a)
+      var C = f ? O : t ? R : void 0,
+        o = H(f ? "svg" : t ? "math" : "template", C);
+      o.innerHTML = e;
+      var s = f || t ? o : o.content;
+      if (_(i(s), s.lastChild), f || t)
+        for (; i(s);) n.before(i(s));
+      else n.before(s)
     }
   })
 }
-
-function B(e, v, l = v) {
-  t(e, "change", f => {
-    var c = f ? e.defaultChecked : e.checked;
-    l(c)
-  }), (n && e.defaultChecked !== e.checked || E(v) == null) && l(e.checked), b(() => {
-    var f = v();
-    e.checked = !!f
-  })
-}
-
-function y(e, v, l) {
-  for (var f = new Set, c = 0; c < e.length; c += 1) e[c].checked && f.add(e[c].__value);
-  return l || f.delete(v), Array.from(f)
-}
-
-function u(e) {
-  var v = e.type;
-  return v === "number" || v === "range"
-}
-
-function m(e) {
-  return e === "" ? null : +e
-}
 export {
-  B as a, q as b, x as c
+  L as h
 };

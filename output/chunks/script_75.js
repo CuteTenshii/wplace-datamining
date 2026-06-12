@@ -1,122 +1,62 @@
+import {
+  g as n
+} from "./BhCkpOlh.js";
 import "./Bzak7iHL.js";
 import {
-  k as G,
-  p as I,
-  b as J,
-  t as x,
-  i as k,
-  l as K,
-  h as B,
-  a as d,
-  d as e,
-  s as f,
-  c as u,
-  e as L,
-  r as o
+  a as s,
+  w as u
 } from "./CV6xI6o5.js";
 import {
-  s as l
-} from "./hBdZmm-r.js";
+  d
+} from "./rONmwD0j.js";
 import {
-  i as T
-} from "./iywslKou.js";
-import {
-  a as M
-} from "./g3dAVNmx.js";
-import {
-  p as g
+  r as o
 } from "./BQ880tYw.js";
-import {
-  D as N
-} from "./BqFbPr6O.js";
-import "./BhCkpOlh.js";
-import {
-  c as O
-} from "./D6_ahSxh.js";
-import {
-  c as Q
-} from "./BZcJYfQJ.js";
-var R = u('<h3 class="text-xl font-bold"> </h3>'),
-  S = u('<p class="text-base-content/80 mt-1 text-sm"> </p>'),
-  U = u('<span class="loading loading-spinner center-absolute absolute"></span>'),
-  V = u('<div><p class="text-lg"> </p> <!> <div class="mt-6 flex justify-end gap-3 pb-2"><form method="dialog"><button class="btn btn-ghost hover:bg-base-content/10"> </button></form> <button> <!></button></div></div>');
+const _ = () => "Enter a valid user ID",
+  p = () => "Informe um ID válido",
+  c = () => "请输入有效的用户 ID",
+  a = () => "Gib eine gültige Benutzer-ID ein",
+  l = () => "Introduce un ID de usuario válido",
+  f = () => "Entrez un ID d’utilisateur valide",
+  v = () => "Inserisci un ID valido",
+  m = () => "有効なユーザーIDを入力してください。",
+  I = () => "Wprowadź prawidłowe ID użytkownika",
+  g = () => "Введите корректный ID пользователя",
+  D = () => "Введіть коректний ID користувача",
+  R = () => "Nhập một ID người dùng hợp lệ",
+  N = (t = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? _() : r === "pt" ? p() : r === "ch" ? c() : r === "de" ? a() : r === "es" ? l() : r === "fr" ? f() : r === "it" ? v() : r === "jp" ? m() : r === "pl" ? I() : r === "ru" ? g() : r === "uk" ? D() : R()
+  },
+  w = () => "Reddit",
+  h = () => "Reddit",
+  q = () => "Reddit",
+  T = () => "Reddit",
+  k = () => "Reddit",
+  $ = () => "Reddit",
+  j = () => "Reddit",
+  x = () => "Reddit",
+  S = () => "Reddit",
+  b = () => "Reddit",
+  y = () => "Reddit",
+  z = () => "Reddit",
+  W = (t = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? w() : r === "pt" ? h() : r === "ch" ? q() : r === "de" ? T() : r === "es" ? k() : r === "fr" ? $() : r === "it" ? j() : r === "jp" ? x() : r === "pl" ? S() : r === "ru" ? b() : r === "uk" ? y() : z()
+  };
+var B = new Set(["$$slots", "$$events", "$$legacy"]),
+  E = u('<svg><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"></path></svg>');
 
-function nt(j, t) {
-  I(t, !0);
-  let v = g(t, "open", 15),
-    h = g(t, "type", 3, "confirmation"),
-    H = g(t, "buttonText", 19, () => Q()),
-    m = L(!1);
-  N(j, {
-    dialogClass: "!bg-black/80",
-    modalBoxClass: "max-w-md max-sm:!w-11/12 max-sm:!h-auto max-sm:!max-w-md max-sm:!max-h-[85vh] max-sm:!rounded-xl",
-    hasCloseButton: !1,
-    isDynamicHeight: !0,
-    get open() {
-      return v()
-    },
-    set open(r) {
-      v(r)
-    },
-    header: r => {
-      var c = R(),
-        s = e(c, !0);
-      o(c), x(() => l(s, t.title)), d(r, c)
-    },
-    children: (r, c) => {
-      var s = V(),
-        p = e(s),
-        P = e(p, !0);
-      o(p);
-      var _ = f(p, 2);
-      {
-        var q = a => {
-          var i = S(),
-            F = e(i, !0);
-          o(i), x(() => l(F, t.subDescription)), d(a, i)
-        };
-        T(_, a => {
-          t.subDescription && a(q)
-        })
-      }
-      var y = f(_, 2),
-        b = e(y),
-        w = e(b),
-        z = e(w, !0);
-      o(w), o(b);
-      var n = f(b, 2);
-      let C;
-      var D = e(n),
-        A = f(D);
-      {
-        var E = a => {
-          var i = U();
-          d(a, i)
-        };
-        T(A, a => {
-          k(m) && a(E)
-        })
-      }
-      o(n), o(y), o(s), x(a => {
-        l(P, t.description), l(z, a), C = M(n, 1, "btn min-w-32 px-6", null, C, {
-          "btn-error": h() === "warning",
-          "btn-primary": h() === "confirmation"
-        }), n.disabled = k(m), l(D, `${H()??""} `)
-      }, [() => O()]), K("click", n, async () => {
-        try {
-          B(m, !0), v(await t.onConfirm())
-        } finally {
-          B(m, !1)
-        }
-      }), d(r, s)
-    },
-    $$slots: {
-      header: !0,
-      default: !0
-    }
-  }), J()
+function A(t, e) {
+  let r = o(e, B);
+  var i = E();
+  d(i, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...r
+  })), s(t, i)
 }
-G(["click"]);
 export {
-  nt as C
+  A as S, N as p, W as r
 };

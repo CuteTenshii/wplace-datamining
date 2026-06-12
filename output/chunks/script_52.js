@@ -1,70 +1,70 @@
 import {
-  g as t
+  g as n
 } from "./BhCkpOlh.js";
-const s = () => "Last pixel",
-  i = () => "Último pixel",
-  u = () => "最后一个像素",
-  c = () => "Letzter Pixel",
-  o = () => "Último píxel",
-  l = () => "Dernier pixel",
-  a = () => "Ultimo pixel",
-  _ = () => "最後のピクセル",
-  f = () => "Ostatni piksel",
-  p = () => "Последний пиксель",
-  h = () => "Останній піксель",
-  v = () => "Pixel cuối cùng",
-  $ = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? s() : r === "pt" ? i() : r === "ch" ? u() : r === "de" ? c() : r === "es" ? o() : r === "fr" ? l() : r === "it" ? a() : r === "jp" ? _() : r === "pl" ? f() : r === "ru" ? p() : r === "uk" ? h() : v()
+const u = () => "Month",
+  o = () => "Mês",
+  s = () => "月",
+  i = () => "Monat",
+  c = () => "Mes",
+  _ = () => "Mois",
+  f = () => "Mese",
+  h = () => "月",
+  d = () => "Miesiąc",
+  m = () => "Месяц",
+  a = () => "Місяць",
+  p = () => "Tháng",
+  $ = (e = {}, r = {}) => {
+    const t = r.locale ?? n();
+    return t === "en" ? u() : t === "pt" ? o() : t === "ch" ? s() : t === "de" ? i() : t === "es" ? c() : t === "fr" ? _() : t === "it" ? f() : t === "jp" ? h() : t === "pl" ? d() : t === "ru" ? m() : t === "uk" ? a() : p()
   },
-  x = () => "Search",
-  d = () => "Buscar",
-  m = () => "搜索",
-  k = () => "Suchen",
-  j = () => "Buscar",
-  z = () => "Rechercher",
-  S = () => "Cerca",
-  g = () => "検索",
-  V = () => "Szukaj",
-  w = () => "Поиск",
-  B = () => "Пошук",
-  L = () => "Tìm kiếm",
-  rr = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? x() : r === "pt" ? d() : r === "ch" ? m() : r === "de" ? k() : r === "es" ? j() : r === "fr" ? z() : r === "it" ? S() : r === "jp" ? g() : r === "pl" ? V() : r === "ru" ? w() : r === "uk" ? B() : L()
+  l = () => "this month",
+  y = () => "neste mês",
+  D = () => "本月",
+  I = () => "diesen Monat",
+  j = () => "este mes",
+  k = () => "ce mois-ci",
+  g = () => "questo mese",
+  M = () => "今月",
+  v = () => "w tym miesiącu",
+  H = () => "в этом месяце",
+  w = () => "цього місяця",
+  z = () => "tháng này",
+  tt = (e = {}, r = {}) => {
+    const t = r.locale ?? n();
+    return t === "en" ? l() : t === "pt" ? y() : t === "ch" ? D() : t === "de" ? I() : t === "es" ? j() : t === "fr" ? k() : t === "it" ? g() : t === "jp" ? M() : t === "pl" ? v() : t === "ru" ? H() : t === "uk" ? w() : z()
   },
-  b = () => "Select the report reason",
-  C = () => "Selecione o motivo da denúncia",
-  O = () => "选择举报原因",
-  P = () => "Grund für die Meldung auswählen",
-  T = () => "Selecciona el motivo del reporte",
-  y = () => "Sélectionnez la raison du signalement",
-  D = () => "Seleziona il motivo della segnalazione",
-  G = () => "通報理由を選択",
-  M = () => "Wybierz powód zgłoszenia",
-  R = () => "Выберите причину жалобы",
-  U = () => "Виберіть причину скарги",
-  W = () => "Chọn lý do báo cáo",
-  er = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? b() : r === "pt" ? C() : r === "ch" ? O() : r === "de" ? P() : r === "es" ? T() : r === "fr" ? y() : r === "it" ? D() : r === "jp" ? G() : r === "pl" ? M() : r === "ru" ? R() : r === "uk" ? U() : W()
+  T = () => "Today",
+  q = () => "Hoje",
+  x = () => "今天",
+  A = () => "Heute",
+  B = () => "Hoy",
+  L = () => "Aujourd’hui",
+  O = () => "Oggi",
+  U = () => "今日",
+  b = () => "Dziś",
+  C = () => "Сегодня",
+  E = () => "Сьогодні",
+  F = () => "Hôm nay",
+  rt = (e = {}, r = {}) => {
+    const t = r.locale ?? n();
+    return t === "en" ? T() : t === "pt" ? q() : t === "ch" ? x() : t === "de" ? A() : t === "es" ? B() : t === "fr" ? L() : t === "it" ? O() : t === "jp" ? U() : t === "pl" ? b() : t === "ru" ? C() : t === "uk" ? E() : F()
   },
-  q = () => "Visit",
-  A = () => "Visitar",
-  E = () => "访问",
-  F = () => "Besuchen",
-  H = () => "Visitar",
-  I = () => "Visiter",
-  J = () => "Visita",
-  K = () => "訪問",
-  N = () => "Odwiedź",
-  Q = () => "Перейти",
-  X = () => "Перейти",
-  Y = () => "Thăm",
-  tr = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? q() : r === "pt" ? A() : r === "ch" ? E() : r === "de" ? F() : r === "es" ? H() : r === "fr" ? I() : r === "it" ? J() : r === "jp" ? K() : r === "pl" ? N() : r === "ru" ? Q() : r === "uk" ? X() : Y()
+  G = () => "User ID",
+  J = () => "ID do usuário",
+  K = () => "用户ID",
+  N = () => "Benutzer-ID",
+  P = () => "ID de usuario",
+  Q = () => "ID utilisateur",
+  R = () => "ID dell'utente",
+  S = () => "ユーザーID",
+  V = () => "ID użytkownika",
+  W = () => "Идентификатор пользователя",
+  X = () => "ID користувача",
+  Y = () => "ID người dùng",
+  nt = (e = {}, r = {}) => {
+    const t = r.locale ?? n();
+    return t === "en" ? G() : t === "pt" ? J() : t === "ch" ? K() : t === "de" ? N() : t === "es" ? P() : t === "fr" ? Q() : t === "it" ? R() : t === "jp" ? S() : t === "pl" ? V() : t === "ru" ? W() : t === "uk" ? X() : Y()
   };
 export {
-  er as a, $ as l, rr as s, tr as v
+  tt as a, $ as m, rt as t, nt as u
 };

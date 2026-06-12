@@ -1,75 +1,27 @@
+import "./Bzak7iHL.js";
 import {
-  S as p
-} from "./Ffax2mQh.js";
-const h = p;
+  a as e,
+  w as a
+} from "./CV6xI6o5.js";
+import {
+  d as p
+} from "./rONmwD0j.js";
+import {
+  r as v
+} from "./BQ880tYw.js";
+var m = new Set(["$$slots", "$$events", "$$legacy"]),
+  f = a('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
 
-function b(f) {
-  const s = [],
-    a = s,
-    d = Object.keys(f);
-  for (const o of d) {
-    const t = f[o];
-    if (typeof t == "string") {
-      a.push(t), Object.defineProperty(s, o, {
-        value: t,
-        enumerable: !0,
-        configurable: !1,
-        writable: !1
-      });
-      continue
-    }
-    const n = b(t);
-    Object.defineProperty(s, o, {
-      value: n,
-      enumerable: !0,
-      configurable: !1,
-      writable: !1
-    });
-    const r = n;
-    for (let e = 0; e < r.length; e += 1) a.push(r[e])
-  }
-  return Object.defineProperty(s, "only", {
-    value: (...o) => {
-      const t = [];
-      for (let n = 0; n < o.length; n += 1) {
-        const r = o[n],
-          e = s[r];
-        if (typeof e == "string") {
-          t.push(e);
-          continue
-        }
-        const l = e;
-        for (let i = 0; i < l.length; i += 1) t.push(l[i])
-      }
-      return t
-    },
-    enumerable: !1,
-    configurable: !1,
-    writable: !1
-  }), Object.defineProperty(s, "but", {
-    value: (...o) => {
-      const t = new Set(o),
-        n = [],
-        r = Object.keys(s);
-      for (let e = 0; e < r.length; e += 1) {
-        const l = r[e];
-        if (t.has(l)) continue;
-        const i = s[l];
-        if (typeof i == "string") {
-          n.push(i);
-          continue
-        }
-        const u = i;
-        for (let c = 0; c < u.length; c += 1) n.push(u[c])
-      }
-      return n
-    },
-    enumerable: !1,
-    configurable: !1,
-    writable: !1
-  }), Object.freeze(s)
+function c(t, o) {
+  let s = v(o, m);
+  var r = f();
+  p(r, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...s
+  })), e(t, r)
 }
-const m = b(h);
 export {
-  m as P
+  c as A
 };

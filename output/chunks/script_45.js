@@ -1,164 +1,192 @@
 import {
-  g as C
+  g as _
 } from "./BhCkpOlh.js";
 import "./Bzak7iHL.js";
 import {
-  a as o,
-  w as z,
-  k as G,
-  p as K,
-  q,
-  f as y,
-  i as D,
-  b as Q,
-  u as T,
-  d as m,
-  aI as v,
-  r as x,
-  t as h,
-  c as w,
-  l as c
+  p as A,
+  i as c,
+  h,
+  I as E,
+  d as o,
+  s as v,
+  bm as N,
+  r as u,
+  t as g,
+  a as b,
+  b as T,
+  e as W,
+  u as B,
+  c as q
 } from "./CV6xI6o5.js";
 import {
-  d as U,
-  a as g,
-  c as V,
-  s as u
-} from "./g3dAVNmx.js";
-import {
-  r as F,
-  p
-} from "./BQ880tYw.js";
-import {
   s as k
-} from "./DWZhoQU0.js";
+} from "./hBdZmm-r.js";
 import {
   i as S
 } from "./iywslKou.js";
 import {
-  P as H
-} from "./DoBGsSLe.js";
+  d as D,
+  C as G
+} from "./rONmwD0j.js";
 import {
-  u as J
-} from "./Ffax2mQh.js";
-const W = () => "Description",
-  X = () => "Descrição",
-  Y = () => "描述",
-  $ = () => "Beschreibung",
-  ee = () => "Descripción",
-  ne = () => "Description",
-  te = () => "Descrizione",
-  re = () => "説明",
-  ie = () => "Opis",
-  ae = () => "Описание",
-  se = () => "Опис",
-  oe = () => "Mô tả",
-  Me = (i = {}, n = {}) => {
-    const e = n.locale ?? C();
-    return e === "en" ? W() : e === "pt" ? X() : e === "ch" ? Y() : e === "de" ? $() : e === "es" ? ee() : e === "fr" ? ne() : e === "it" ? te() : e === "jp" ? re() : e === "pl" ? ie() : e === "ru" ? ae() : e === "uk" ? se() : oe()
+  b as R
+} from "./O_2bA_pp.js";
+import {
+  b as V
+} from "./BV5xAkCC.js";
+import {
+  p as f,
+  r as F
+} from "./BQ880tYw.js";
+const H = () => "Extra context on what happened (required)",
+  J = () => "Mais informações sobre o que aconteceu (obrigatório)",
+  K = () => "请提供发生情况的额外背景（必填）",
+  P = () => "Zusätzliche Informationen zum Vorfall (erforderlich)",
+  Q = () => "Más contexto sobre lo que ocurrió (obligatorio)",
+  U = () => "Contexte supplémentaire sur ce qui s’est passé (obligatoire)",
+  X = () => "Maggiori informazioni su ciò che è successo (obbligatorio)",
+  Y = () => "何が起きたかの詳細な説明（必須）",
+  $ = () => "Dodatkowy kontekst tego, co się stało (wymagane)",
+  ee = () => "Дополнительный контекст о произошедшем (обязательно)",
+  re = () => "Додаткова інформація про те, що сталося (обовʼязково)",
+  te = () => "Thêm ngữ cảnh về chuyện đã xảy ra (bắt buộc)",
+  mr = (e = {}, t = {}) => {
+    const r = t.locale ?? _();
+    return r === "en" ? H() : r === "pt" ? J() : r === "ch" ? K() : r === "de" ? P() : r === "es" ? Q() : r === "fr" ? U() : r === "it" ? X() : r === "jp" ? Y() : r === "pl" ? $() : r === "ru" ? ee() : r === "uk" ? re() : te()
   },
-  le = () => "Pixels painted",
-  ce = () => "Pixels pintados",
-  ue = () => "已绘制像素数",
-  pe = () => "Gemalte Pixel",
-  de = () => "Píxeles pintados",
-  fe = () => "Pixels peints",
-  _e = () => "Pixel dipinti",
-  me = () => "塗られたピクセル数",
-  ve = () => "Pomalowane piksele",
-  xe = () => "Нарисованные пиксели",
-  he = () => "Намальовані пікселі",
-  ge = () => "Pixel đã tô",
-  Oe = (i = {}, n = {}) => {
-    const e = n.locale ?? C();
-    return e === "en" ? le() : e === "pt" ? ce() : e === "ch" ? ue() : e === "de" ? pe() : e === "es" ? de() : e === "fr" ? fe() : e === "it" ? _e() : e === "jp" ? me() : e === "pl" ? ve() : e === "ru" ? xe() : e === "uk" ? he() : ge()
+  ne = e => `Max. characters: ${e.max}`,
+  ae = e => `Máximo de caracteres: ${e.max}`,
+  ce = e => `最大字符数：${e.max}`,
+  ie = e => `Max. Zeichen: ${e.max}`,
+  se = e => `Máx. de caracteres: ${e.max}`,
+  oe = e => `Max. de caractères : ${e.max}`,
+  ue = e => `Numero massimo di caratteri: ${e.max}`,
+  _e = e => `最大文字数: ${e.max}`,
+  le = e => `Maks. znaków: ${e.max}`,
+  fe = e => `Макс. символов: ${e.max}`,
+  me = e => `Макс. символів: ${e.max}`,
+  xe = e => `Số ký tự tối đa: ${e.max}`,
+  de = (e, t = {}) => {
+    const r = t.locale ?? _();
+    return r === "en" ? ne(e) : r === "pt" ? ae(e) : r === "ch" ? ce(e) : r === "de" ? ie(e) : r === "es" ? se(e) : r === "fr" ? oe(e) : r === "it" ? ue(e) : r === "jp" ? _e(e) : r === "pl" ? le(e) : r === "ru" ? fe(e) : r === "uk" ? me(e) : xe(e)
+  },
+  he = e => `Min. characters: ${e.min}`,
+  ve = e => `Mínimo de caracteres: ${e.min}`,
+  ge = e => `最少字符数：${e.min}`,
+  be = e => `Min. Zeichen: ${e.min}`,
+  ke = e => `Mín. de caracteres: ${e.min}`,
+  qe = e => `Min. de caractères : ${e.min}`,
+  Me = e => `Numero minimo di caratteri: ${e.min}`,
+  je = e => `最小文字数: ${e.min}`,
+  we = e => `Min. znaków: ${e.min}`,
+  Se = e => `Мин. символов: ${e.min}`,
+  pe = e => `Мін. символів: ${e.min}`,
+  ye = e => `Số ký tự tối thiểu: ${e.min}`,
+  ze = (e, t = {}) => {
+    const r = t.locale ?? _();
+    return r === "en" ? he(e) : r === "pt" ? ve(e) : r === "ch" ? ge(e) : r === "de" ? be(e) : r === "es" ? ke(e) : r === "fr" ? qe(e) : r === "it" ? Me(e) : r === "jp" ? je(e) : r === "pl" ? we(e) : r === "ru" ? Se(e) : r === "uk" ? pe(e) : ye(e)
+  },
+  Ce = () => "Required",
+  Le = () => "Obrigatório",
+  Oe = () => "必填",
+  Ie = () => "Erforderlich",
+  Ze = () => "Obligatorio",
+  Ae = () => "Obligatoire",
+  Ee = () => "Obbligatorio",
+  Ne = () => "必須",
+  Te = () => "Wymagane",
+  We = () => "Обязательно",
+  Be = () => "Обовʼязково",
+  De = () => "Bắt buộc",
+  Ge = (e = {}, t = {}) => {
+    const r = t.locale ?? _();
+    return r === "en" ? Ce() : r === "pt" ? Le() : r === "ch" ? Oe() : r === "de" ? Ie() : r === "es" ? Ze() : r === "fr" ? Ae() : r === "it" ? Ee() : r === "jp" ? Ne() : r === "pl" ? Te() : r === "ru" ? We() : r === "uk" ? Be() : De()
+  },
+  Re = () => "Select the reason",
+  Ve = () => "Selecione o motivo",
+  Fe = () => "选择原因",
+  He = () => "Grund auswählen",
+  Je = () => "Selecciona el motivo",
+  Ke = () => "Sélectionnez la raison",
+  Pe = () => "Seleziona il motivo",
+  Qe = () => "理由を選択",
+  Ue = () => "Wybierz powód",
+  Xe = () => "Выберите причину",
+  Ye = () => "Виберіть причину",
+  $e = () => "Chọn lý do",
+  xr = (e = {}, t = {}) => {
+    const r = t.locale ?? _();
+    return r === "en" ? Re() : r === "pt" ? Ve() : r === "ch" ? Fe() : r === "de" ? He() : r === "es" ? Je() : r === "fr" ? Ke() : r === "it" ? Pe() : r === "jp" ? Qe() : r === "pl" ? Ue() : r === "ru" ? Xe() : r === "uk" ? Ye() : $e()
   };
-var ke = new Set(["$$slots", "$$events", "$$legacy"]),
-  we = z('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
+var er = new Set(["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate", "disabled", "ref"]),
+  rr = q('<legend class="fieldset-legend"> </legend>'),
+  tr = q('<span class="text-base-content/80"> </span>'),
+  nr = q('<fieldset class="fieldset"><!> <textarea></textarea> <div class="flex items-center justify-between text-xs"><span class="text-error"> </span> <!></div></fieldset>');
 
-function Be(i, n) {
-  let e = F(n, ke);
-  var l = we();
-  U(l, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...e
-  })), o(i, l)
-}
+function dr(e, t) {
+  A(t, !0);
+  let r = f(t, "value", 15),
+    p = f(t, "validate", 15),
+    y = f(t, "disabled", 3, !1),
+    M = f(t, "ref", 15),
+    z = F(t, er),
+    i = W("");
+  const l = B(() => {
+    var n;
+    return ((n = r()) == null ? void 0 : n.length) ?? 0
+  });
+  p(C);
 
-function L(i) {
-  return `/dashboard/alliances?id=${encodeURIComponent(String(i))}`
-}
-
-function Pe(i) {
-  typeof window > "u" || window.open(L(i), "_blank", "noopener,noreferrer")
-}
-var Ie = w('<span role="link" tabindex="0"><!></span>'),
-  be = w('<a target="_blank" rel="noopener noreferrer"><!></a>'),
-  qe = w("<span><!></span>");
-
-function Ne(i, n) {
-  K(n, !0);
-  let e = p(n, "mode", 3, "anchor"),
-    l = p(n, "class", 3, ""),
-    P = p(n, "linkClass", 19, l),
-    j = p(n, "textClass", 19, l);
-  const A = T(() => n.allianceId != null && n.allianceId > 0 && J.hasAnyPermission(H.dashboard.alliances)),
-    E = T(() => n.allianceId == null ? "" : L(n.allianceId));
-
-  function d(r) {
-    r.stopPropagation()
+  function C() {
+    return t.min !== void 0 && c(l) < t.min ? (h(i, t.min === 1 ? Ge() : ze({
+      min: t.min
+    }), !0), !1) : t.max !== void 0 && c(l) > t.max ? (h(i, de({
+      max: t.max
+    }), !0), !1) : (h(i, ""), !0)
   }
-
-  function I(r) {
-    n.allianceId == null || n.allianceId <= 0 || (r.preventDefault(), r.stopPropagation(), Pe(n.allianceId))
-  }
-
-  function M(r) {
-    r.key !== "Enter" && r.key !== " " || I(r)
-  }
-  var b = q(),
-    O = y(b);
+  E(() => {
+    var n;
+    t.max !== void 0 && c(l) > t.max && r((n = r()) == null ? void 0 : n.substring(0, t.max))
+  });
+  var m = nr(),
+    j = o(m);
   {
-    var B = r => {
-        var a = q(),
-          f = y(a);
-        {
-          var R = s => {
-              var t = Ie(),
-                _ = m(t);
-              k(_, () => n.children ?? v), x(t), h(() => {
-                g(t, 1, `cursor-pointer hover:underline ${P()}`), u(t, "title", n.title)
-              }), c("pointerdown", t, d), c("click", t, I), c("keydown", t, M), o(s, t)
-            },
-            Z = s => {
-              var t = be(),
-                _ = m(t);
-              k(_, () => n.children ?? v), x(t), h(() => {
-                g(t, 1, `cursor-pointer hover:underline ${P()}`), u(t, "href", D(E)), u(t, "title", n.title)
-              }), c("pointerdown", t, d), c("click", t, d), o(s, t)
-            };
-          S(f, s => {
-            e() === "inline" ? s(R) : s(Z, -1)
-          })
-        }
-        o(r, a)
-      },
-      N = r => {
-        var a = qe(),
-          f = m(a);
-        k(f, () => n.children ?? v), x(a), h(() => {
-          g(a, 1, V(j())), u(a, "title", n.title)
-        }), o(r, a)
-      };
-    S(O, r => {
-      D(A) ? r(B) : r(N, -1)
+    var L = n => {
+      var a = rr(),
+        d = o(a, !0);
+      u(a), g(() => k(d, t.label)), b(n, a)
+    };
+    S(j, n => {
+      t.label && n(L)
     })
   }
-  o(i, b), Q()
+  var s = v(j, 2);
+  N(s), D(s, () => ({
+    ...z,
+    class: `textarea w-full ${t.class??""}`,
+    placeholder: t.placeholder,
+    disabled: y(),
+    [G]: {
+      "textarea-error": !!c(i)
+    }
+  })), V(s, n => M(n), () => M());
+  var w = v(s, 2),
+    x = o(w),
+    O = o(x, !0);
+  u(x);
+  var I = v(x, 2);
+  {
+    var Z = n => {
+      var a = tr(),
+        d = o(a, !0);
+      u(a), g(() => k(d, t.max - c(l))), b(n, a)
+    };
+    S(I, n => {
+      t.max !== void 0 && n(Z)
+    })
+  }
+  u(w), u(m), g(() => k(O, c(i))), R(s, r), b(e, m), T()
 }
-G(["pointerdown", "click", "keydown"]);
 export {
-  Be as L, Ne as S, Me as d, Oe as p
+  dr as L, mr as g, xr as s
 };

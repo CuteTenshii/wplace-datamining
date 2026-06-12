@@ -1,57 +1,38 @@
 import {
-  t as E,
-  x as d,
-  C as v,
-  a6 as i,
-  y,
-  T,
-  ax as _,
-  ay as m,
-  F as M,
-  a8 as p,
-  ar as w,
-  az as N,
-  aA as g,
-  aB as H,
-  aC as O,
-  aD as R
-} from "./CV6xI6o5.js";
-
-function L(h, A, u = !1, f = !1, t = !1, b = !1) {
-  var n = h,
-    e = "";
-  if (u) {
-    var l = h;
-    d && (n = v(i(l)))
-  }
-  E(() => {
-    var r = T;
-    if (e === (e = A() ?? "")) {
-      d && y();
-      return
-    }
-    if (u && !d) {
-      r.nodes = null, l.innerHTML = e, e !== "" && _(i(l), l.lastChild);
-      return
-    }
-    if (r.nodes !== null && (m(r.nodes.start, r.nodes.end), r.nodes = null), e !== "") {
-      if (d) {
-        M.data;
-        for (var a = y(), c = a; a !== null && (a.nodeType !== p || a.data !== "");) c = a, a = w(a);
-        if (a === null) throw N(), g;
-        _(M, c), n = v(a);
-        return
-      }
-      var C = f ? O : t ? R : void 0,
-        o = H(f ? "svg" : t ? "math" : "template", C);
-      o.innerHTML = e;
-      var s = f || t ? o : o.content;
-      if (_(i(s), s.lastChild), f || t)
-        for (; i(s);) n.before(i(s));
-      else n.before(s)
-    }
-  })
-}
+  g as e
+} from "./BhCkpOlh.js";
+const u = () => "Payment succeeded",
+  o = () => "Pagamento bem sucedido",
+  _ = () => "支付成功",
+  s = () => "Zahlung erfolgreich",
+  c = () => "Pago realizado correctamente",
+  p = () => "Paiement réussi",
+  a = () => "Pagamento riuscito",
+  i = () => "支払いが完了しました。",
+  y = () => "Płatność powiodła się",
+  f = () => "Платёж прошёл успешно",
+  d = () => "Платіж виконано успішно",
+  h = () => "Thanh toán thành công",
+  x = (n = {}, t = {}) => {
+    const r = t.locale ?? e();
+    return r === "en" ? u() : r === "pt" ? o() : r === "ch" ? _() : r === "de" ? s() : r === "es" ? c() : r === "fr" ? p() : r === "it" ? a() : r === "jp" ? i() : r === "pl" ? y() : r === "ru" ? f() : r === "uk" ? d() : h()
+  },
+  m = () => "Thank you for your support!",
+  k = () => "Obrigado pelo seu apoio!",
+  l = () => "感谢你的支持！",
+  g = () => "Danke für deine Unterstützung!",
+  P = () => "¡Gracias por tu apoyo!",
+  j = () => "Merci pour votre soutien !",
+  z = () => "Grazie per il tuo supporto!",
+  b = () => "ご支援ありがとうございます！",
+  v = () => "Dziękujemy za wsparcie!",
+  w = () => "Спасибо за вашу поддержку!",
+  D = () => "Дякуємо за вашу підтримку!",
+  G = () => "Cảm ơn bạn đã ủng hộ!",
+  C = (n = {}, t = {}) => {
+    const r = t.locale ?? e();
+    return r === "en" ? m() : r === "pt" ? k() : r === "ch" ? l() : r === "de" ? g() : r === "es" ? P() : r === "fr" ? j() : r === "it" ? z() : r === "jp" ? b() : r === "pl" ? v() : r === "ru" ? w() : r === "uk" ? D() : G()
+  };
 export {
-  L as h
+  x as p, C as t
 };
