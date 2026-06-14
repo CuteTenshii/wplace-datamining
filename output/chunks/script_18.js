@@ -35,10 +35,10 @@ import {
 } from "./CV6xI6o5.js";
 import {
   g as Cq
-} from "./BAJwSoRM.js";
+} from "./ubXBWFcH.js";
 import {
   r as Yq
-} from "./BSw8hwob.js";
+} from "./B6vtKhUx.js";
 import {
   c as hq
 } from "./hBdZmm-r.js";
@@ -960,16 +960,26 @@ const o = class o {
     }
   }
   static async recover() {
-    var r;
-    if (!d.shouldRecover()) return;
-    const q = await o.getPurchasesAfter(),
-      V = ((r = Object.groupBy(q, n => n.status).paid) == null ? void 0 : r.reduce((n, s) => n + s.droplets, 0)) ?? 0;
-    return V > 0 ? await d.openCheckoutDialog(V) : q.length && await d.openPendingDialog(), o.refresh()
+    var q;
+    if (d.shouldRecover()) try {
+      const t = await o.getPurchasesAfter(),
+        r = ((q = Object.groupBy(t, n => n.status).paid) == null ? void 0 : q.reduce((n, s) => n + s.droplets, 0)) ?? 0;
+      if (r > 0) {
+        await d.openCheckoutDialog(r);
+        return
+      }
+      if (t != null && t.length) {
+        await d.openPendingDialog();
+        return
+      }
+    } finally {
+      await o.refresh()
+    }
   }
   static async getPurchasesAfter() {
     var r, n;
     const q = ((r = d.checkout) == null ? void 0 : r.state.view) ?? ((n = d.checkout) == null ? void 0 : n.state.startedAt);
-    return q ? (await W.listPlayPurchaseHistory()).purchases.sort((s, A) => Date.parse(A.createdAt) - Date.parse(s.createdAt)).filter(s => Date.parse(s.createdAt) > q) : []
+    return q ? (await W.listPlayPurchaseHistory()).purchases.sort((s, A) => Date.parse(A.updatedAt) - Date.parse(s.updatedAt)).filter(s => Date.parse(s.updatedAt) > q) : []
   }
   static async loadTWA() {
     o.canLoadTWA() && await o.load()

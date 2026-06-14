@@ -4,7 +4,7 @@ import {
 import "./Bzak7iHL.js";
 import {
   o as jt,
-  a as vr
+  a as gr
 } from "./CqGGwggA.js";
 import {
   a as l,
@@ -26,9 +26,9 @@ import {
   bl as Qe,
   I as Bt,
   e as W,
-  g as gr,
+  g as br,
   h as _,
-  aI as br
+  aI as wr
 } from "./CV6xI6o5.js";
 import {
   s as x
@@ -58,12 +58,12 @@ import {
   c as Kt
 } from "./C9HU2D8h.js";
 import {
-  b as wr,
+  b as xr,
+  T as Xt,
   a as Ie,
-  c as xr,
-  u as kr,
-  T as jr
-} from "./Ddi7rLYe.js";
+  c as kr,
+  u as jr
+} from "./D97lOWPp.js";
 import {
   r as qr
 } from "./CFl7M2B7.js";
@@ -72,7 +72,7 @@ import {
 } from "./D8sFxDcV.js";
 import {
   r as Nt
-} from "./BSw8hwob.js";
+} from "./B6vtKhUx.js";
 import {
   l as Dr
 } from "./B_Oz03f8.js";
@@ -98,7 +98,7 @@ import {
   d as xt
 } from "./lSLusnBY.js";
 import {
-  g as Xt
+  g as $t
 } from "./VcJKu71K.js";
 import {
   p as zr,
@@ -576,7 +576,7 @@ const Er = () => "Balance",
   zu = () => "История покупок",
   Tu = () => "Історія покупок",
   Au = () => "Lịch sử mua hàng",
-  $t = (r = {}, t = {}) => {
+  er = (r = {}, t = {}) => {
     const e = t.locale ?? P();
     return e === "en" ? wu() : e === "pt" ? xu() : e === "ch" ? ku() : e === "de" ? ju() : e === "es" ? qu() : e === "fr" ? Du() : e === "it" ? Pu() : e === "jp" ? Cu() : e === "pl" ? Su() : e === "ru" ? zu() : e === "uk" ? Tu() : Au()
   },
@@ -985,16 +985,16 @@ const gt = r => {
       titleColor: "#334155"
     }
   },
-  er = 38,
-  tr = 32,
+  tr = 38,
+  rr = 32,
   Md = (r, t) => {
     const e = (Math.sin(r * 12.9898 + t * 78.233) * 43758.5453 % 1 + 1) % 1,
       a = (p, v, j) => Math.sqrt((r - p) ** 2 + (t - v) ** 2) < j + (e - .5) * 2;
     return a(6, 8, 5) || a(14, 14, 6) || a(26, 10, 7) || a(28, 22, 5) || a(18, 24, 3)
   },
-  rr = [];
-for (let r = 0; r < tr; r++)
-  for (let t = 0; t < er; t++) Md(t, r) && rr.push({
+  nr = [];
+for (let r = 0; r < rr; r++)
+  for (let t = 0; t < tr; t++) Md(t, r) && nr.push({
     x: t,
     y: r
   });
@@ -1368,7 +1368,7 @@ function at(r, t) {
       J = I => {
         var B = hf(),
           T = i(B);
-        Ge(T, "viewBox", `0 0 ${er} ${tr}`), ft(T, 21, () => rr, le => le.x + "-" + le.y, (le, me) => {
+        Ge(T, "viewBox", `0 0 ${tr} ${rr}`), ft(T, 21, () => nr, le => le.x + "-" + le.y, (le, me) => {
           var ue = yf();
           L(() => {
             Ge(ue, "x", n(me).x), Ge(ue, "y", n(me).y)
@@ -1415,7 +1415,7 @@ function mf(r, t) {
   Ce(t, !0);
   let e = xe(t, "open", 15);
   Bt(() => {
-    e() && wr()
+    e() && xr()
   }), Fe(r, {
     isDynamicHeight: !0,
     hasCloseButton: !1,
@@ -1504,7 +1504,7 @@ var xf = h('<li class="bg-base-100 border-base-content/10 grid items-center gap-
 
 function Mf(r, t) {
   Ce(t, !0);
-  const e = (A, m = br) => {
+  const e = (A, m = wr) => {
     var U = kf();
     ft(U, 21, m, Lt, (O, F) => {
       const C = z(() => n(F).status === "refunded" ? n(F).updatedAt : n(F).createdAt);
@@ -1529,7 +1529,7 @@ function Mf(r, t) {
   };
   let a = xe(t, "open", 15),
     p = W(!1),
-    v = W(gr([])),
+    v = W(br([])),
     j = W(!1),
     w = W("pending"),
     g = W(!0);
@@ -1551,7 +1551,7 @@ function Mf(r, t) {
     } catch {
       _(v, [], !0)
     } finally {
-      _(j, !1)
+      _(j, !1), Xt.markViewed()
     }
   }
   Bt(() => {
@@ -1889,7 +1889,7 @@ function Rf(r, t) {
         let v = z(() => mc()),
           j = z(() => Fu()),
           w = z(() => ({
-            label: $t(),
+            label: er(),
             arrow: !1,
             onClick: t.onViewHistory
           })),
@@ -2013,7 +2013,7 @@ function Of(r, t) {
           T = z(() => a() ? xt() : void 0),
           V = z(() => Tr()),
           Z = z(() => ({
-            label: Xt(),
+            label: $t(),
             color: "#3b6fe8",
             colorDark: "#1f4fc8",
             onClick: g
@@ -2073,7 +2073,7 @@ function Ff(r, t) {
         let w = z(() => yp()),
           g = z(() => Cp()),
           y = z(() => ({
-            label: Xt(),
+            label: $t(),
             color: "#3b6fe8",
             colorDark: "#1f4fc8",
             onClick: () => {
@@ -2105,7 +2105,7 @@ function Ff(r, t) {
 
 function Kf(r, t) {
   Ce(t, !0);
-  let e = xe(t, "message", 19, () => xr()),
+  let e = xe(t, "message", 19, () => kr()),
     a = xe(t, "open", 15);
   Fe(r, {
     isDynamicHeight: !0,
@@ -2232,19 +2232,19 @@ function kt(r) {
     return t && typeof Symbol == "function" && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
   }, kt(r)
 }
-var nr = "clover",
+var or = "clover",
   Qf = function(t) {
     return t === 3 ? "v3" : t
   },
-  or = "https://js.stripe.com",
-  Jf = "".concat(or, "/").concat(nr, "/stripe.js"),
+  ar = "https://js.stripe.com",
+  Jf = "".concat(ar, "/").concat(or, "/stripe.js"),
   Xf = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/,
   $f = /^https:\/\/js\.stripe\.com\/(v3|[a-z]+)\/stripe\.js(\?.*)?$/;
 var ey = function(t) {
     return Xf.test(t) || $f.test(t)
   },
   ty = function() {
-    for (var t = document.querySelectorAll('script[src^="'.concat(or, '"]')), e = 0; e < t.length; e++) {
+    for (var t = document.querySelectorAll('script[src^="'.concat(ar, '"]')), e = 0; e < t.length; e++) {
       var a = t[e];
       if (ey(a.src)) return a
     }
@@ -2314,27 +2314,27 @@ var ey = function(t) {
     if (typeof p != "string") throw new Error("Expected publishable key to be of type string, got type ".concat(kt(p), " instead."));
     var v = p.match(/^pk_test/),
       j = Qf(t.version),
-      w = nr;
+      w = or;
     v && j !== w && console.warn("Stripe.js@".concat(j, " was loaded on the page, but @stripe/stripe-js@").concat("8.11.0", " expected Stripe.js@").concat(w, ". This may result in unexpected behavior. For more information, see https://docs.stripe.com/sdks/stripejs-versioning"));
     var g = t.apply(void 0, e);
     return ry(g, a), g
   },
-  _t, ar = !1,
-  ir = function() {
+  _t, ir = !1,
+  sr = function() {
     return _t || (_t = ay(null).catch(function(t) {
       return _t = null, Promise.reject(t)
     }), _t)
   };
 Promise.resolve().then(function() {
-  return ir()
+  return sr()
 }).catch(function(r) {
-  ar || console.warn(r)
+  ir || console.warn(r)
 });
 var sy = function() {
     for (var t = arguments.length, e = new Array(t), a = 0; a < t; a++) e[a] = arguments[a];
-    ar = !0;
+    ir = !0;
     var p = Date.now();
-    return ir().then(function(v) {
+    return sr().then(function(v) {
       return iy(v, e, p)
     })
   },
@@ -2369,7 +2369,7 @@ function cy(r, t) {
     } catch {
       (I = t.onUnavailable) == null || I.call(t)
     }
-  }), vr(() => {
+  }), gr(() => {
     a == null || a.destroy(), a = void 0
   });
   var j = uy(),
@@ -2506,7 +2506,7 @@ function ih(r, t) {
   }
   async function je(c) {
     if (n(p)) return;
-    _(p, !0), kr();
+    _(p, !0), jr();
     let s = !1,
       f = "";
     try {
@@ -2521,7 +2521,7 @@ function ih(r, t) {
         }));
         switch (_(g, !1), q.status) {
           case "accepted": {
-            jr.openCheckoutDialog(q.amount);
+            Xt.openCheckoutDialog(q.amount);
             break
           }
           case "declined": {
@@ -2677,7 +2677,7 @@ function ih(r, t) {
                       Ve = () => Q == null ? void 0 : Q().bonus,
                       nt = () => Q == null ? void 0 : Q().price,
                       lt = () => Q == null ? void 0 : Q().stripeLookupkey,
-                      sr = () => Q == null ? void 0 : Q().productId;
+                      lr = () => Q == null ? void 0 : Q().productId;
                     var Ct = fy(),
                       St = i(Ct),
                       Et = i(St);
@@ -2687,65 +2687,65 @@ function ih(r, t) {
                     var Gt = u(Et, 2),
                       Mt = i(Gt),
                       Rt = u(Mt),
-                      lr = i(Rt, !0);
+                      ur = i(Rt, !0);
                     o(Rt), o(Gt), o(St);
                     var zt = u(St, 2),
                       Ht = i(zt);
                     {
-                      var ur = X => {
+                      var cr = X => {
                         var ee = Qe();
                         L((Le, ut) => x(ee, `${Le??""} ${ut??""}`), [() => Ze().toLocaleString(navigator.language), () => xt()]), l(X, ee)
                       };
                       S(Ht, X => {
-                        Ve() && X(ur)
+                        Ve() && X(cr)
                       })
                     }
                     var Zt = u(Ht, 2),
-                      cr = i(Zt);
+                      pr = i(Zt);
                     o(Zt), o(zt);
                     var mt = u(zt, 2),
                       Ut = i(mt);
                     {
-                      var pr = X => {
+                      var _r = X => {
                         var ee = dy();
                         l(X, ee)
                       };
                       S(Ut, X => {
                         var ee;
-                        n(p) && (n(B) || ((ee = n(y)) == null ? void 0 : ee.stripeLookupkey) === lt()) && X(pr)
+                        n(p) && (n(B) || ((ee = n(y)) == null ? void 0 : ee.stripeLookupkey) === lt()) && X(_r)
                       })
                     }
                     var Tt = u(Ut, 2);
                     let Ot;
-                    var _r = i(Tt);
+                    var dr = i(Tt);
                     {
-                      var dr = X => {
+                      var fr = X => {
                           var ee = Me(),
                             Le = re(ee);
                           Vt(Le, () => n(T), ut => {
                             var ct = Qe();
-                            L(mr => x(ct, mr), [() => Ie.printPriceBySKU(lt())]), l(ut, ct)
+                            L(vr => x(ct, vr), [() => Ie.printPriceBySKU(lt())]), l(ut, ct)
                           }), l(X, ee)
-                        },
-                        fr = X => {
-                          var ee = Qe();
-                          L(Le => x(ee, `MX$${Le??""}`), [() => (nt() * 18).toFixed(2)]), l(X, ee)
                         },
                         yr = X => {
                           var ee = Qe();
-                          L(Le => x(ee, `R$${Le??""}`), [() => (nt() * 4).toFixed(2).replace(".", ",")]), l(X, ee)
+                          L(Le => x(ee, `MX$${Le??""}`), [() => (nt() * 18).toFixed(2)]), l(X, ee)
                         },
                         hr = X => {
                           var ee = Qe();
+                          L(Le => x(ee, `R$${Le??""}`), [() => (nt() * 4).toFixed(2).replace(".", ",")]), l(X, ee)
+                        },
+                        mr = X => {
+                          var ee = Qe();
                           L(Le => x(ee, `$${Le??""}`), [() => nt().toFixed(2)]), l(X, ee)
                         };
-                      S(_r, X => {
-                        n(B) ? X(dr) : n(J) ? X(fr, 1) : n(I) ? X(yr, 2) : X(hr, -1)
+                      S(dr, X => {
+                        n(B) ? X(fr) : n(J) ? X(yr, 1) : n(I) ? X(hr, 2) : X(mr, -1)
                       })
                     }
                     o(Tt), o(mt), o(Ct), L((X, ee, Le, ut) => {
                       var ct;
-                      x(Mt, `${X??""} `), x(lr, ee), x(cr, `+${Le??""}
+                      x(Mt, `${X??""} `), x(ur, ee), x(pr, `+${Le??""}
 								${ut??""}`), mt.disabled = n(p) || n(V), Ot = Pe(Tt, 1, "", null, Ot, {
                         "opacity-0": n(p) && (n(B) || ((ct = n(y)) == null ? void 0 : ct.stripeLookupkey) === lt())
                       })
@@ -2755,7 +2755,7 @@ function ih(r, t) {
                         droplets: Ze(),
                         bonus: Ve(),
                         stripeLookupkey: lt(),
-                        productId: sr()
+                        productId: lr()
                       })
                     }), l(He, Ct)
                   };
@@ -2829,7 +2829,7 @@ function ih(r, t) {
                       var Q = yy(),
                         Ze = i(Q),
                         Ve = i(Ze, !0);
-                      o(Ze), o(Q), L(nt => x(Ve, nt), [() => $t()]), ve("click", Ze, () => dt.pendingHistoryDialogOpen = !0), l(He, Q)
+                      o(Ze), o(Q), L(nt => x(Ve, nt), [() => er()]), ve("click", Ze, () => dt.pendingHistoryDialogOpen = !0), l(He, Q)
                     };
                     S(rt, He => {
                       n(B) && He(Pt)
