@@ -4930,6 +4930,14 @@ class Mb {
     if (s.status !== o.OK) throw new l(c(), s.status);
     return s.json()
   }
+  async getAnticheatSignalAnalysis(t, e, n) {
+    const s = await this.request(`/staff/dashboard/anticheat/signal/${encodeURIComponent(t)}?from=${encodeURIComponent(e)}&to=${encodeURIComponent(n)}`, {
+      method: "GET",
+      credentials: "include"
+    });
+    if (s.status !== o.OK) throw new l(c(), s.status);
+    return s.json()
+  }
   async getPendingAppealsCount() {
     const t = await this.request("/staff/appeals/open_count", {
       method: "GET",
