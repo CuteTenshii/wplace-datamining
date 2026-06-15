@@ -2,23 +2,23 @@ var Pq = Object.defineProperty;
 var rq = e => {
   throw TypeError(e)
 };
-var Gq = (e, q, t) => q in e ? Pq(e, q, {
+var Tq = (e, q, t) => q in e ? Pq(e, q, {
   enumerable: !0,
   configurable: !0,
   writable: !0,
   value: t
 }) : e[q] = t;
-var f = (e, q, t) => Gq(e, typeof q != "symbol" ? q + "" : q, t),
-  R = (e, q, t) => q.has(e) || rq("Cannot " + t);
-var a = (e, q, t) => (R(e, q, "read from private field"), t ? t.call(e) : q.get(e)),
+var f = (e, q, t) => Tq(e, typeof q != "symbol" ? q + "" : q, t),
+  W = (e, q, t) => q.has(e) || rq("Cannot " + t);
+var a = (e, q, t) => (W(e, q, "read from private field"), t ? t.call(e) : q.get(e)),
   g = (e, q, t) => q.has(e) ? rq("Cannot add the same private member more than once") : q instanceof WeakSet ? q.add(e) : q.set(e, t),
-  l = (e, q, t, V) => (R(e, q, "write to private field"), V ? V.call(e, t) : q.set(e, t), t),
-  w = (e, q, t) => (R(e, q, "access private method"), t);
+  l = (e, q, t, V) => (W(e, q, "write to private field"), V ? V.call(e, t) : q.set(e, t), t),
+  w = (e, q, t) => (W(e, q, "access private method"), t);
 import {
   j as K,
   T as fq,
-  t as Tq,
-  a as W,
+  t as Gq,
+  a as R,
   l as Z,
   u as X,
   G as vq,
@@ -35,20 +35,20 @@ import {
 } from "./CV6xI6o5.js";
 import {
   g as Cq
-} from "./Cie7cPdc.js";
+} from "./DkZ-Ko2c.js";
 import {
-  r as Yq
-} from "./qKymY-el.js";
+  r as Nq
+} from "./CxXPNFJP.js";
 import {
   c as hq
 } from "./hBdZmm-r.js";
 import {
-  d as Nq
+  d as Yq
 } from "./BRnlEJuB.js";
 import {
-  g as Uq
+  g as Sq
 } from "./BhCkpOlh.js";
-const Sq = () => "Your browser can't process Google Play purchases. Set Google Chrome as your device's default browser, then reopen WPlace to buy Droplets.",
+const Uq = () => "Your browser can't process Google Play purchases. Set Google Chrome as your device's default browser, then reopen WPlace to buy Droplets.",
   zq = () => "Seu browser não processa compras pela Google Play. Defina o Google Chrome como navegador padrão do dispositivo e reabra o WPlace para comprar Droplets.",
   xq = () => "你的浏览器无法处理 Google Play 购买。请将 Google Chrome 设为设备默认浏览器，然后重新打开 WPlace 购买 Droplets。",
   Oq = () => "Dein Browser kann keine Google-Play-Käufe verarbeiten. Lege Google Chrome als Standardbrowser deines Geräts fest und öffne WPlace erneut, um Droplets zu kaufen.",
@@ -56,13 +56,13 @@ const Sq = () => "Your browser can't process Google Play purchases. Set Google C
   Fq = () => "Votre navigateur ne peut pas traiter les achats Google Play. Définissez Google Chrome comme navigateur par défaut de votre appareil, puis rouvrez WPlace pour acheter des Droplets.",
   Kq = () => "Il tuo browser non può elaborare gli acquisti di Google Play. Imposta Google Chrome come browser predefinito del dispositivo, poi riapri WPlace per acquistare Droplets.",
   Qq = () => "お使いのブラウザではGoogle Play購入を処理できません。Google Chromeを端末の既定のブラウザに設定し、WPlaceを開き直してDropletsを購入してください。",
-  Rq = () => "Twoja przeglądarka nie obsługuje zakupów w Google Play. Ustaw Google Chrome jako domyślną przeglądarkę urządzenia, a następnie otwórz WPlace ponownie, aby kupić Droplets.",
-  Wq = () => "Ваш браузер не может обрабатывать покупки Google Play. Установите Google Chrome браузером по умолчанию на устройстве и снова откройте WPlace, чтобы купить Droplets.",
+  Wq = () => "Twoja przeglądarka nie obsługuje zakupów w Google Play. Ustaw Google Chrome jako domyślną przeglądarkę urządzenia, a następnie otwórz WPlace ponownie, aby kupić Droplets.",
+  Rq = () => "Ваш браузер не может обрабатывать покупки Google Play. Установите Google Chrome браузером по умолчанию на устройстве и снова откройте WPlace, чтобы купить Droplets.",
   Zq = () => "Ваш браузер не може обробляти покупки Google Play. Установіть Google Chrome браузером за замовчуванням на пристрої та знову відкрийте WPlace, щоб купити Droplets.",
   Xq = () => "Trình duyệt của bạn không thể xử lý giao dịch mua qua Google Play. Hãy đặt Google Chrome làm trình duyệt mặc định của thiết bị, sau đó mở lại WPlace để mua Droplets.",
   Hq = (e = {}, q = {}) => {
-    const t = q.locale ?? Uq();
-    return t === "en" ? Sq() : t === "pt" ? zq() : t === "ch" ? xq() : t === "de" ? Oq() : t === "es" ? Jq() : t === "fr" ? Fq() : t === "it" ? Kq() : t === "jp" ? Qq() : t === "pl" ? Rq() : t === "ru" ? Wq() : t === "uk" ? Zq() : Xq()
+    const t = q.locale ?? Sq();
+    return t === "en" ? Uq() : t === "pt" ? zq() : t === "ch" ? xq() : t === "de" ? Oq() : t === "es" ? Jq() : t === "fr" ? Fq() : t === "it" ? Kq() : t === "jp" ? Qq() : t === "pl" ? Wq() : t === "ru" ? Rq() : t === "uk" ? Zq() : Xq()
   },
   $q = "data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAAEAAAHPAB+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn6pqampqampqampqampqampqampqampqamp29vb29vb29vb29vb29vb29vb29vb29vb2/////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJANgAAAAAAAABzxmm4psAAAAAAD/+8DEAAAF7A1FtDAAIzil6D87kgAAAktuqNu7gOcCAAgEATB8HzcHwfB8+DgIROD4ABAEAQOeCH/iAMXLB9//BB3Lg+AAIgJwBCSoyQ0QES1dNwAYhicYDAiarL8aXE4ZXwYe9BkCgLS/Dg4MKQDMkgCjAiAxujyCQPmFYGBApKtkawq2qi9GqTYgLTpFiGdI9O1D5NmvVykb4Q0iC3QOU5rUBLCQ9IoJWFutwdm2v5UmUWmoy2K9QxuXw5RxuOwA2j2ytp2dZrWp2A2/kMupbmC5HKc2et0mbjSyeld35/luxXs97SW4/JJiln38v54TdWITN+nq3a1Pq93WW/3/vNLLf/////K6sDGP////6PvWxQBFoFJABHMZRCBoQGHo/GW6NG17vGW1Zm25xgoZkkHEXiCgHb9v4bi8evlnFw5BStnezI76WTtDaVvOnLL8s9+1t95y7trVqdf0zfXXtpb2dzNrj94XquvZ0M/NLX6l+vktgwC4jICYwfNAuho0IiQuj////9r102AEMKOmGkMYagJIsBaYDIChgOgJiENow+wojIdUMMSQEYSBUTMZQb0o8Sk0SAjR1t5HOrfQNex7cq0ENSD4pyGX7X0xZTZxIYcKtF3mZptVyMvMJudNbJV6UKXY/pfr32nNn0c5rcEZq6nJYnCORDbENctTk5KWZdS63RUTWFzZVbMV3mt6vHJyziusGx5zczaCWWIN////qcOYSSNcFwyUIAAjtY6tsg5hoaQgzCTEAExUCDBozfYO8qSY3T3MLBgMXFAyoIjSiUtF/0DIhCIBgG52VxKVSh3n1s08dh16HvYXJ8JdlBMxTY839i3jR8vtSlsKfeK0NnC/nM0tLW7FK8/Tyq3KYLswxTDQEYZQZBHdQsioRGajdWcNkfpNOahWTpUJEDyc9LCQ0gcfR2T8/////////2zGWVnTPOpjElOJxIKDcdxGcttHMdDk5//7cMTkAA8Uz0Nd1gAigaJm6eyxPIZMDGR0PEgIGrR49MVAZAmYoKJjqJJImBhKP02+o9Jznif5eVT2eHC0ysbdDWHcRBDdQtNsGHz5fw8l282p0U6XSlewoyfTz751qsNZZnm32XJ+unFUNjmoX7ZOpHcZdMd7QbwNu3WpMQZplTGVCmaoMR34247bm1mKtcK2aK+iQ4ivzjUezP///5geOSUMiJ4hUgCgC0K1WiCQN8vbLG0AQADBIlTNsRCYEzAEsjEodxELxqxP5Q/JrC1wBDIwZKExnLAxQW8x7DEIOswwBYw/DkUH4DcJwDDAHaJgbsOBr7QGlBha6NwBiCDcgQQAxYAIUQGBKBYuBJEAcWJEnQDE4pIly4MoYoqAEDCUAPQRAxqkAJ5GoBgyB4RikbLIcbhtIX7/+4DE6YAUZaM7rZheonoiZ3a28ASIsGAgt7D+AWIjkDSGWD0hfqSddyAgLAQ5QaQn8QDHWOoB4AMjh6g6BZYagtVSTqMjpBSeF6RccsrkVJwiZEC0VjA1cjv+xgbI/0TEwQN0GdBn///9q1N/9v//0/VsitLemubODxzX2KfBVKuK49NlTEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqv/7YMT0gCAhwyP52gAIAAA/w4AABKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqg==",
   _q = "data:audio/mpeg;base64,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VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/7QMTxA9NhPR3sPM5AAAA0gAAABFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV",
@@ -209,23 +209,23 @@ function it() {
 function oe(e) {
   return e.lat >= -90 && e.lat <= 90 && e.lng >= -180 && e.lng <= 180
 }
-var U, S;
+var S, U;
 class At {
   constructor() {
-    g(this, U, nq(-1));
-    g(this, S, nq([]))
+    g(this, S, nq(-1));
+    g(this, U, nq([]))
   }
   get idx() {
-    return oq(a(this, U))
-  }
-  set idx(q) {
-    sq(a(this, U), q, !0)
-  }
-  get entries() {
     return oq(a(this, S))
   }
+  set idx(q) {
+    sq(a(this, S), q, !0)
+  }
+  get entries() {
+    return oq(a(this, U))
+  }
   set entries(q) {
-    sq(a(this, S), q)
+    sq(a(this, U), q)
   }
   hasNext() {
     return this.idx < this.entries.length - 1
@@ -256,7 +256,7 @@ class At {
     this.idx = this.idx + 1, this.entries = [...this.entries.slice(0, this.idx), q]
   }
 }
-U = new WeakMap, S = new WeakMap;
+S = new WeakMap, U = new WeakMap;
 const se = new At,
   iq = typeof globalThis == "object" && globalThis || typeof window == "object" && window || typeof self == "object" && self || typeof global == "object" && global || (function() {
     return this
@@ -297,19 +297,19 @@ const lt = "[object RegExp]",
   Bt = "[object Function]",
   Et = "[object ArrayBuffer]",
   H = "[object Object]",
-  bt = "[object Error]",
-  Dt = "[object DataView]",
+  Dt = "[object Error]",
+  bt = "[object DataView]",
   It = "[object Uint8Array]",
   Pt = "[object Uint8ClampedArray]",
-  Gt = "[object Uint16Array]",
-  Tt = "[object Uint32Array]",
+  Tt = "[object Uint16Array]",
+  Gt = "[object Uint32Array]",
   vt = "[object BigUint64Array]",
   Mt = "[object Int8Array]",
   jt = "[object Int16Array]",
   Lt = "[object Int32Array]",
   kt = "[object BigInt64Array]",
   Ct = "[object Float32Array]",
-  Yt = "[object Float64Array]";
+  Nt = "[object Float64Array]";
 
 function lq(e) {
   return typeof iq.Buffer < "u" && iq.Buffer.isBuffer(e)
@@ -321,11 +321,11 @@ function gq(e) {
   return q === null || q === Object.prototype || Object.getPrototypeOf(q) === null ? Object.prototype.toString.call(e) === "[object Object]" : !1
 }
 
-function Nt(e, q) {
+function Yt(e, q) {
   return e === q || Number.isNaN(e) && Number.isNaN(q)
 }
 
-function Ut(e, q, t) {
+function St(e, q, t) {
   return k(e, q, void 0, void 0, void 0, void 0, t)
 }
 
@@ -344,12 +344,12 @@ function k(e, q, t, V, r, n, s) {
     case "function":
       return e === q;
     case "object":
-      return N(e, q, n, s)
+      return Y(e, q, n, s)
   }
-  return N(e, q, n, s)
+  return Y(e, q, n, s)
 }
 
-function N(e, q, t, V) {
+function Y(e, q, t, V) {
   if (Object.is(e, q)) return !0;
   let r = cq(e),
     n = cq(q);
@@ -360,7 +360,7 @@ function N(e, q, t, V) {
     case dt: {
       const i = e.valueOf(),
         u = q.valueOf();
-      return Nt(i, u)
+      return Yt(i, u)
     }
     case pt:
     case ht:
@@ -390,46 +390,46 @@ function N(e, q, t, V) {
           u = Array.from(q.values());
         for (let y = 0; y < i.length; y++) {
           const p = i[y],
-            b = u.findIndex(Q => k(p, Q, void 0, e, q, t, V));
-          if (b === -1) return !1;
-          u.splice(b, 1)
+            D = u.findIndex(Q => k(p, Q, void 0, e, q, t, V));
+          if (D === -1) return !1;
+          u.splice(D, 1)
         }
         return !0
       }
       case wt:
       case It:
       case Pt:
-      case Gt:
       case Tt:
+      case Gt:
       case vt:
       case Mt:
       case jt:
       case Lt:
       case kt:
       case Ct:
-      case Yt: {
+      case Nt: {
         if (lq(e) !== lq(q) || e.length !== q.length) return !1;
         for (let i = 0; i < e.length; i++)
           if (!k(e[i], q[i], i, e, q, t, V)) return !1;
         return !0
       }
       case Et:
-        return e.byteLength !== q.byteLength ? !1 : N(new Uint8Array(e), new Uint8Array(q), t, V);
-      case Dt:
-        return e.byteLength !== q.byteLength || e.byteOffset !== q.byteOffset ? !1 : N(new Uint8Array(e), new Uint8Array(q), t, V);
+        return e.byteLength !== q.byteLength ? !1 : Y(new Uint8Array(e), new Uint8Array(q), t, V);
       case bt:
+        return e.byteLength !== q.byteLength || e.byteOffset !== q.byteOffset ? !1 : Y(new Uint8Array(e), new Uint8Array(q), t, V);
+      case Dt:
         return e.name === q.name && e.message === q.message;
       case H: {
-        if (!(N(e.constructor, q.constructor, t, V) || gq(e) && gq(q))) return !1;
+        if (!(Y(e.constructor, q.constructor, t, V) || gq(e) && gq(q))) return !1;
         const u = [...Object.keys(e), ...Aq(e)],
           y = [...Object.keys(q), ...Aq(q)];
         if (u.length !== y.length) return !1;
         for (let p = 0; p < u.length; p++) {
-          const b = u[p],
-            Q = e[b];
-          if (!Object.hasOwn(q, b)) return !1;
-          const Iq = q[b];
-          if (!k(Q, Iq, b, e, q, t, V)) return !1
+          const D = u[p],
+            Q = e[D];
+          if (!Object.hasOwn(q, D)) return !1;
+          const Iq = q[D];
+          if (!k(Q, Iq, D, e, q, t, V)) return !1
         }
         return !0
       }
@@ -441,8 +441,8 @@ function N(e, q, t, V) {
   }
 }
 
-function St(e, q) {
-  return Ut(e, q, ut)
+function Ut(e, q) {
+  return St(e, q, ut)
 }
 const wq = typeof window < "u" ? window : void 0;
 
@@ -536,25 +536,25 @@ function Eq(e, q, t, V, r, n) {
     set: (i, u, y) => (r == null || r(), Reflect.set(i, u, y), n(q), !0)
   }), t.set(e, A)), A
 }
-var B, E, j, D, v, G, J, m, T, L, x, O, F, h, C, Y, qq, bq;
+var B, E, j, b, v, T, J, m, G, L, x, O, F, h, C, N, qq, Dq;
 class Qt {
   constructor(q, t, V = {}) {
     g(this, h);
     g(this, B);
     g(this, E);
     g(this, j);
-    g(this, D);
+    g(this, b);
     g(this, v);
-    g(this, G);
+    g(this, T);
     g(this, J, new WeakMap);
     g(this, m);
-    g(this, T);
+    g(this, G);
     g(this, L);
     g(this, x);
     g(this, O);
     g(this, F, q => {
       var t;
-      q.key !== a(this, E) || q.newValue === null || (l(this, B, w(this, h, C).call(this, q.newValue)), (t = a(this, G)) == null || t.call(this))
+      q.key !== a(this, E) || q.newValue === null || (l(this, B, w(this, h, C).call(this, q.newValue)), (t = a(this, T)) == null || t.call(this))
     });
     const {
       storage: r = "local",
@@ -567,23 +567,23 @@ class Qt {
     } = V, i = "window" in V ? V.window : wq;
     if (l(this, B, t), l(this, E, q), l(this, j, n), l(this, m, A), l(this, L, i), l(this, x, s), l(this, O, r), i === void 0) return;
     const u = Kt(r, i);
-    l(this, D, u);
+    l(this, b, u);
     const y = u.getItem(q);
-    y !== null ? l(this, B, w(this, h, C).call(this, y)) : A && w(this, h, Y).call(this, t), w(this, h, qq).call(this)
+    y !== null ? l(this, B, w(this, h, C).call(this, y)) : A && w(this, h, N).call(this, t), w(this, h, qq).call(this)
   }
   get current() {
     var t, V, r, n;
     (t = a(this, v)) == null || t.call(this);
     let q;
     if (a(this, m)) {
-      const s = (V = a(this, D)) == null ? void 0 : V.getItem(a(this, E));
+      const s = (V = a(this, b)) == null ? void 0 : V.getItem(a(this, E));
       q = s ? w(this, h, C).call(this, s) : a(this, B)
     } else q = a(this, B);
-    return Eq(q, q, a(this, J), (r = a(this, v)) == null ? void 0 : r.bind(this), (n = a(this, G)) == null ? void 0 : n.bind(this), w(this, h, Y).bind(this))
+    return Eq(q, q, a(this, J), (r = a(this, v)) == null ? void 0 : r.bind(this), (n = a(this, T)) == null ? void 0 : n.bind(this), w(this, h, N).bind(this))
   }
   set current(q) {
     var t;
-    w(this, h, Y).call(this, q), (t = a(this, G)) == null || t.call(this)
+    w(this, h, N).call(this, q), (t = a(this, T)) == null || t.call(this)
   }
   get connected() {
     return a(this, m)
@@ -591,39 +591,39 @@ class Qt {
   disconnect() {
     var t, V;
     if (!a(this, m)) return;
-    const q = (t = a(this, D)) == null ? void 0 : t.getItem(a(this, E));
-    q && l(this, B, w(this, h, C).call(this, q)), l(this, m, !1), (V = a(this, D)) == null || V.removeItem(a(this, E)), w(this, h, bq).call(this)
+    const q = (t = a(this, b)) == null ? void 0 : t.getItem(a(this, E));
+    q && l(this, B, w(this, h, C).call(this, q)), l(this, m, !1), (V = a(this, b)) == null || V.removeItem(a(this, E)), w(this, h, Dq).call(this)
   }
   connect() {
-    a(this, m) || (l(this, m, !0), w(this, h, Y).call(this, a(this, B)), w(this, h, qq).call(this))
+    a(this, m) || (l(this, m, !0), w(this, h, N).call(this, a(this, B)), w(this, h, qq).call(this))
   }
 }
-B = new WeakMap, E = new WeakMap, j = new WeakMap, D = new WeakMap, v = new WeakMap, G = new WeakMap, J = new WeakMap, m = new WeakMap, T = new WeakMap, L = new WeakMap, x = new WeakMap, O = new WeakMap, F = new WeakMap, h = new WeakSet, C = function(q) {
+B = new WeakMap, E = new WeakMap, j = new WeakMap, b = new WeakMap, v = new WeakMap, T = new WeakMap, J = new WeakMap, m = new WeakMap, G = new WeakMap, L = new WeakMap, x = new WeakMap, O = new WeakMap, F = new WeakMap, h = new WeakSet, C = function(q) {
   try {
     return a(this, j).deserialize(q)
   } catch (t) {
     console.error(`Error when parsing "${q}" from persisted store "${a(this,E)}"`, t);
     return
   }
-}, Y = function(q) {
+}, N = function(q) {
   var t;
   if (!a(this, m)) {
     l(this, B, q);
     return
   }
   try {
-    q !== void 0 && ((t = a(this, D)) == null || t.setItem(a(this, E), a(this, j).serialize(q)))
+    q !== void 0 && ((t = a(this, b)) == null || t.setItem(a(this, E), a(this, j).serialize(q)))
   } catch (V) {
-    console.error(`Error when writing value from persisted store "${a(this,E)}" to ${a(this,D)}`, V)
+    console.error(`Error when writing value from persisted store "${a(this,E)}" to ${a(this,b)}`, V)
   }
 }, qq = function() {
-  !a(this, L) || !a(this, m) || l(this, v, hq(q => (l(this, G, q), l(this, T, a(this, m) && a(this, x) && a(this, O) === "local" ? $(a(this, L), "storage", a(this, F)) : void 0), () => {
+  !a(this, L) || !a(this, m) || l(this, v, hq(q => (l(this, T, q), l(this, G, a(this, m) && a(this, x) && a(this, O) === "local" ? $(a(this, L), "storage", a(this, F)) : void 0), () => {
     var t;
-    (t = a(this, T)) == null || t.call(this), l(this, T, void 0), l(this, G, void 0)
+    (t = a(this, G)) == null || t.call(this), l(this, G, void 0), l(this, T, void 0)
   })))
-}, bq = function() {
+}, Dq = function() {
   var q;
-  (q = a(this, T)) == null || q.call(this), l(this, T, void 0), l(this, v, void 0)
+  (q = a(this, G)) == null || q.call(this), l(this, G, void 0), l(this, v, void 0)
 };
 class Vq extends Promise {
   constructor(t) {
@@ -761,7 +761,9 @@ const c = class c {
     })
   }
   static openCheckoutDialog(q) {
-    return c.markViewed(), Cq(Yq("/payment/success-v3") + `?droplets=${q}`)
+    return c.markViewed(), Cq(Nq("/payment/success-v3") + `?droplets=${q}`, {
+      replaceState: !0
+    })
   }
   static openPendingDialog() {
     K.pendingHistoryDialogOpen = !0
@@ -790,7 +792,7 @@ const o = class o {
   static toastError(...q) {
     var V;
     const t = q.map(r => JSON.stringify(r));
-    throw (V = o.error) == null || V.call(o, ...q), t.forEach(r => Tq.error(r)), new Error(q.length === 1 ? t[0] : t.join(`
+    throw (V = o.error) == null || V.call(o, ...q), t.forEach(r => Gq.error(r)), new Error(q.length === 1 ? t[0] : t.join(`
 `))
   }
   static twaGuard() {}
@@ -813,7 +815,7 @@ const o = class o {
     })
   }
   static isPlayBillingBlockedError(q) {
-    const t = o.PLAY_BILLING_NOT_AVAILABLE.findIndex(r => St(pq(q), pq(r)));
+    const t = o.PLAY_BILLING_NOT_AVAILABLE.findIndex(r => Ut(pq(q), pq(r)));
     return o.PLAY_BILLING_NOT_AVAILABLE[t]
   }
   static setAsPlayBillingBlockedErrorIfNecessary(q) {
@@ -828,12 +830,15 @@ const o = class o {
     o.playBillingBlockedError = q
   }
   static async getObfuscatedAccountId() {
-    return await W.getPlayAccountId().then(({
+    const q = await R.getPlayAccountId().then(({
       accountId: t
-    }) => t).catch(t => {
-      var V;
-      return (V = o.warn) == null || V.call(o, "getPlayAccountId failed, purchasing without account id", t), void 0
-    })
+    }) => t);
+    if (!q) throw o.setAsPlayBillingBlocked({
+      message: "NO_ACCOUNT_ID",
+      name: "NO_ACCOUNT_ID",
+      printError: "Cannot find account id. Try again later."
+    }), new Error("No hash account id");
+    return q
   }
   static async createPaymentBySkuId(q) {
     const t = await o.getObfuscatedAccountId();
@@ -859,8 +864,8 @@ const o = class o {
       out: s,
       verify: u
     };
-    async function i(p, b) {
-      if (A = p, await (n == null ? void 0 : n.complete(p).catch(() => {})), b) throw b
+    async function i(p, D) {
+      if (A = p, await (n == null ? void 0 : n.complete(p).catch(() => {})), D) throw D
     }
     async function u() {
       try {
@@ -932,7 +937,7 @@ const o = class o {
   static verifyBySKU(q) {
     o.twaGuard();
     const t = Z(q.sku);
-    return W.verifyPlayPurchase({
+    return R.verifyPlayPurchase({
       productId: Number(t.productId),
       purchaseToken: q.token
     })
@@ -941,7 +946,7 @@ const o = class o {
     return window
   }
   static isTWA() {
-    return Dq() && !!this.getGlobal().getDigitalGoodsService
+    return bq() && !!this.getGlobal().getDigitalGoodsService
   }
   static canLoadTWA() {
     return this.isTWA()
@@ -979,13 +984,13 @@ const o = class o {
   static async getPurchasesAfter() {
     var r, n;
     const q = ((r = d.checkout) == null ? void 0 : r.state.view) ?? ((n = d.checkout) == null ? void 0 : n.state.startedAt);
-    return q ? (await W.listPlayPurchaseHistory()).purchases.sort((s, A) => Date.parse(A.updatedAt) - Date.parse(s.updatedAt)).filter(s => Date.parse(s.updatedAt) > q) : []
+    return q ? (await R.listPlayPurchaseHistory()).purchases.sort((s, A) => Date.parse(A.updatedAt) - Date.parse(s.updatedAt)).filter(s => Date.parse(s.updatedAt) > q) : []
   }
   static async loadTWA() {
     o.canLoadTWA() && await o.load()
   }
   static isSamsung() {
-    return Nq() === "Samsung Internet"
+    return Yq() === "Samsung Internet"
   }
   static nativeFormat(q) {
     return new Intl.NumberFormat(navigator.language, {
@@ -1026,14 +1031,14 @@ f(o, "POOLING_TIME", 10), f(o, "playBillingBlockedError"), f(o, "billing", !1), 
 });
 let P = o;
 
-function Dq() {
+function bq() {
   return window.matchMedia("(display-mode: standalone)").matches || "standalone" in window.navigator && window.navigator.standalone === !0
 }
 
 function ae() {
   const e = "last-unfocus",
     q = new AbortController;
-  if (Dq()) {
+  if (bq()) {
     queueMicrotask(async () => {
       await P.onInit(q)
     });
@@ -1068,5 +1073,5 @@ function ae() {
   }
 }
 export {
-  te as A, d as T, P as a, re as b, Hq as c, at as d, st as e, Dq as f, ne as g, oe as i, se as l, Ve as p, ae as s, ee as u, Jt as w
+  te as A, d as T, P as a, re as b, Hq as c, at as d, st as e, bq as f, ne as g, oe as i, se as l, Ve as p, ae as s, ee as u, Jt as w
 };
