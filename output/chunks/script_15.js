@@ -612,7 +612,7 @@ function Gr(r, t) {
 function Vr(r, t) {
   $r().setContext(r, t)
 }
-const Hr = "" + new URL("../assets/pawtect_wasm_bg.V5IOPfDN.wasm", import.meta.url).href;
+const Hr = "" + new URL("../assets/pawtect_wasm_bg.8VPqYlMZ.wasm", import.meta.url).href;
 var Wr = "2.0.0";
 const h = {
   Awesomium: "awesomium",
@@ -5786,10 +5786,22 @@ function Le(r, t, e) {
 function Zb(r) {
   const t = Le(r, y.__wbindgen_export_1, y.__wbindgen_export_2),
     e = J;
-  y.set_fingerprint(t, e)
+  y.set_discord_id(t, e)
 }
 
 function ev(r) {
+  const t = Le(r, y.__wbindgen_export_1, y.__wbindgen_export_2),
+    e = J;
+  y.set_fingerprint(t, e)
+}
+
+function tv(r) {
+  const t = Le(r, y.__wbindgen_export_1, y.__wbindgen_export_2),
+    e = J;
+  y.set_detected_bot(t, e)
+}
+
+function rv(r) {
   let t, e;
   try {
     const i = y.__wbindgen_add_to_stack_pointer(-16),
@@ -5804,38 +5816,26 @@ function ev(r) {
   }
 }
 
-function tv(r) {
-  y.set_automated_browser(r)
-}
-
 function Je(r) {
   y.set_user_id(r)
 }
 
-function rv(r) {
-  y.set_automated_clicks(r)
-}
-
 function nv(r) {
-  const t = Le(r, y.__wbindgen_export_1, y.__wbindgen_export_2),
-    e = J;
-  y.set_detected_bot(t, e)
-}
-
-function sv(r) {
-  const t = Le(r, y.__wbindgen_export_1, y.__wbindgen_export_2),
-    e = J;
-  y.set_discord_id(t, e)
-}
-
-function iv(r) {
   y.set_cf_likely_automated(r)
 }
 
-function ov(r) {
+function sv(r) {
+  y.set_automated_clicks(r)
+}
+
+function iv(r) {
   const t = Le(r, y.__wbindgen_export_1, y.__wbindgen_export_2),
     e = J;
   y.request_url(t, e)
+}
+
+function ov(r) {
+  y.set_automated_browser(r)
 }
 async function av(r, t) {
   if (typeof Response == "function" && r instanceof Response) {
@@ -6055,7 +6055,7 @@ class lv {
         return Object.assign(window, {
           fetch: _v((n, s) => {
             let i = null;
-            return n instanceof Request ? i = n.url : n instanceof URL ? i = n.href : typeof n == "string" && (i = n), i !== null && !i.startsWith("/") && ov(i), e.call(window, n, s)
+            return n instanceof Request ? i = n.url : n instanceof URL ? i = n.href : typeof n == "string" && (i = n), i !== null && !i.startsWith("/") && iv(i), e.call(window, n, s)
           })
         }), !0
       } catch (e) {
@@ -6067,7 +6067,7 @@ class lv {
     await this.loadPawtect(), Je(t)
   }
   async setCfLikelyAutomated(t) {
-    await this.loadPawtect(), iv(t)
+    await this.loadPawtect(), nv(t)
   }
   isPawtectReady() {
     return this.pawtectLoaded ?? Promise.resolve(!1)
@@ -6086,7 +6086,7 @@ class lv {
       [s, i] = await Promise.all([Qe(), Gn().catch(u => (console.error(u), {
         bot: !1
       }))]);
-    return Je(H.data.id), sv(H.data.discordId ?? ""), Zb(s), tv(n), rv(Ht.automatedClicks), i.bot && nv(i.botKind ?? "unknown"), ev(t)
+    return Je(H.data.id), Zb(H.data.discordId ?? ""), ev(s), ov(n), sv(Ht.automatedClicks), i.bot && tv(i.botKind ?? "unknown"), rv(t)
   }
 }
 
