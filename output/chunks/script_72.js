@@ -19,7 +19,7 @@ import {
   r as u,
   q as Z,
   f as T,
-  bl as A,
+  bl as N,
   n as I
 } from "./CV6xI6o5.js";
 import {
@@ -37,7 +37,7 @@ import {
 } from "./67fyKCyB.js";
 import {
   s as O,
-  a as N,
+  a as A,
   c as ge
 } from "./rONmwD0j.js";
 import {
@@ -52,18 +52,18 @@ import {
 const Pe = () => "Click to reveal",
   Se = () => "Clique para revelar",
   Ge = () => "点击查看",
-  Ue = () => "Klicken zum Anzeigen",
-  qe = () => "Haz clic para revelar",
+  qe = () => "Klicken zum Anzeigen",
+  Ue = () => "Haz clic para revelar",
   Le = () => "Cliquez pour révéler",
-  Ne = () => "Clicca per rivelare",
-  Ae = () => "クリックして表示",
+  Ae = () => "Clicca per rivelare",
+  Ne = () => "クリックして表示",
   Ie = () => "Kliknij, aby odsłonić",
   Re = () => "Нажмите, чтобы показать",
   Te = () => "Натисніть, щоб показати",
   Me = () => "Nhấn để hiện",
   Be = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Pe() : e === "pt" ? Se() : e === "ch" ? Ge() : e === "de" ? Ue() : e === "es" ? qe() : e === "fr" ? Le() : e === "it" ? Ne() : e === "jp" ? Ae() : e === "pl" ? Ie() : e === "ru" ? Re() : e === "uk" ? Te() : Me()
+    return e === "en" ? Pe() : e === "pt" ? Se() : e === "ch" ? Ge() : e === "de" ? qe() : e === "es" ? Ue() : e === "fr" ? Le() : e === "it" ? Ae() : e === "jp" ? Ne() : e === "pl" ? Ie() : e === "ru" ? Re() : e === "uk" ? Te() : Me()
   },
   Ee = () => "Hide",
   Ke = () => "Ocultar",
@@ -72,14 +72,14 @@ const Pe = () => "Click to reveal",
   Ve = () => "Ocultar",
   Oe = () => "Masquer",
   Fe = () => "Nascondi",
-  Je = () => "非表示",
-  We = () => "Ukryj",
+  We = () => "非表示",
+  Je = () => "Ukryj",
   Xe = () => "Скрыть",
   Qe = () => "Сховати",
   Ye = () => "Ẩn",
   er = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Ee() : e === "pt" ? Ke() : e === "ch" ? He() : e === "de" ? Ze() : e === "es" ? Ve() : e === "fr" ? Oe() : e === "it" ? Fe() : e === "jp" ? Je() : e === "pl" ? We() : e === "ru" ? Xe() : e === "uk" ? Qe() : Ye()
+    return e === "en" ? Ee() : e === "pt" ? Ke() : e === "ch" ? He() : e === "de" ? Ze() : e === "es" ? Ve() : e === "fr" ? Oe() : e === "it" ? Fe() : e === "jp" ? We() : e === "pl" ? Je() : e === "ru" ? Xe() : e === "uk" ? Qe() : Ye()
   },
   rr = () => "Hide sensitive content",
   nr = () => "Ocultar conteúdo sensível",
@@ -118,16 +118,16 @@ const Pe = () => "Click to reveal",
   Pr = n => `第 ${n.current} 张，共 ${n.total} 张`,
   Sr = n => `Bild ${n.current} von ${n.total}`,
   Gr = n => `Imagen ${n.current} de ${n.total}`,
-  Ur = n => `Image ${n.current} sur ${n.total}`,
-  qr = n => `Immagine ${n.current} di ${n.total}`,
+  qr = n => `Image ${n.current} sur ${n.total}`,
+  Ur = n => `Immagine ${n.current} di ${n.total}`,
   Lr = n => `画像 ${n.current} / ${n.total}`,
-  Nr = n => `Obraz ${n.current} z ${n.total}`,
-  Ar = n => `Изображение ${n.current} из ${n.total}`,
+  Ar = n => `Obraz ${n.current} z ${n.total}`,
+  Nr = n => `Изображение ${n.current} из ${n.total}`,
   Ir = n => `Зображення ${n.current} з ${n.total}`,
   Rr = n => `Hình ${n.current} trên ${n.total}`,
   Tr = (n, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? $r(n) : e === "pt" ? Dr(n) : e === "ch" ? Pr(n) : e === "de" ? Sr(n) : e === "es" ? Gr(n) : e === "fr" ? Ur(n) : e === "it" ? qr(n) : e === "jp" ? Lr(n) : e === "pl" ? Nr(n) : e === "ru" ? Ar(n) : e === "uk" ? Ir(n) : Rr(n)
+    return e === "en" ? $r(n) : e === "pt" ? Dr(n) : e === "ch" ? Pr(n) : e === "de" ? Sr(n) : e === "es" ? Gr(n) : e === "fr" ? qr(n) : e === "it" ? Ur(n) : e === "jp" ? Lr(n) : e === "pl" ? Ar(n) : e === "ru" ? Nr(n) : e === "uk" ? Ir(n) : Rr(n)
   },
   Mr = () => "Next",
   Br = () => "Próximo",
@@ -138,12 +138,12 @@ const Pe = () => "Click to reveal",
   Vr = () => "Successivo",
   Or = () => "次へ",
   Fr = () => "Następny",
-  Jr = () => "Далее",
-  Wr = () => "Далі",
+  Wr = () => "Далее",
+  Jr = () => "Далі",
   Xr = () => "Tiếp",
   Qr = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Mr() : e === "pt" ? Br() : e === "ch" ? Er() : e === "de" ? Kr() : e === "es" ? Hr() : e === "fr" ? Zr() : e === "it" ? Vr() : e === "jp" ? Or() : e === "pl" ? Fr() : e === "ru" ? Jr() : e === "uk" ? Wr() : Xr()
+    return e === "en" ? Mr() : e === "pt" ? Br() : e === "ch" ? Er() : e === "de" ? Kr() : e === "es" ? Hr() : e === "fr" ? Zr() : e === "it" ? Vr() : e === "jp" ? Or() : e === "pl" ? Fr() : e === "ru" ? Wr() : e === "uk" ? Jr() : Xr()
   },
   Yr = () => "Previous",
   en = () => "Anterior",
@@ -183,15 +183,15 @@ const Pe = () => "Click to reveal",
   Pn = () => "Erlaubt",
   Sn = () => "Permitido",
   Gn = () => "Autorisé",
-  Un = () => "Consentito",
-  qn = () => "許可",
+  qn = () => "Consentito",
+  Un = () => "許可",
   Ln = () => "Dozwolone",
-  Nn = () => "Разрешено",
-  An = () => "Дозволено",
+  An = () => "Разрешено",
+  Nn = () => "Дозволено",
   In = () => "Được phép",
   be = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Cn() : e === "pt" ? $n() : e === "ch" ? Dn() : e === "de" ? Pn() : e === "es" ? Sn() : e === "fr" ? Gn() : e === "it" ? Un() : e === "jp" ? qn() : e === "pl" ? Ln() : e === "ru" ? Nn() : e === "uk" ? An() : In()
+    return e === "en" ? Cn() : e === "pt" ? $n() : e === "ch" ? Dn() : e === "de" ? Pn() : e === "es" ? Sn() : e === "fr" ? Gn() : e === "it" ? qn() : e === "jp" ? Un() : e === "pl" ? Ln() : e === "ru" ? An() : e === "uk" ? Nn() : In()
   },
   Rn = () => "Artwork removal",
   Tn = () => "Remoção de arte",
@@ -204,10 +204,10 @@ const Pe = () => "Click to reveal",
   Vn = () => "Usunięcie grafiki",
   On = () => "Удаление рисунка",
   Fn = () => "Видалення малюнків",
-  Jn = () => "Gỡ bỏ tác phẩm",
-  Wn = (n = {}, r = {}) => {
+  Wn = () => "Gỡ bỏ tác phẩm",
+  Jn = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Rn() : e === "pt" ? Tn() : e === "ch" ? Mn() : e === "de" ? Bn() : e === "es" ? En() : e === "fr" ? Kn() : e === "it" ? Hn() : e === "jp" ? Zn() : e === "pl" ? Vn() : e === "ru" ? On() : e === "uk" ? Fn() : Jn()
+    return e === "en" ? Rn() : e === "pt" ? Tn() : e === "ch" ? Mn() : e === "de" ? Bn() : e === "es" ? En() : e === "fr" ? Kn() : e === "it" ? Hn() : e === "jp" ? Zn() : e === "pl" ? Vn() : e === "ru" ? On() : e === "uk" ? Fn() : Wn()
   },
   Xn = () => "Community cleanup",
   Qn = () => "Limpeza pela comunidade",
@@ -250,14 +250,14 @@ const Pe = () => "Click to reveal",
   Pt = () => "Sospensione",
   St = () => "一時停止",
   Gt = () => "Zawieszenie",
-  Ut = () => "Тайм-аут",
   qt = () => "Тайм-аут",
+  Ut = () => "Тайм-аут",
   Lt = () => "Tạm khóa",
-  Nt = (n = {}, r = {}) => {
+  At = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? zt() : e === "pt" ? yt() : e === "ch" ? jt() : e === "de" ? Ct() : e === "es" ? $t() : e === "fr" ? Dt() : e === "it" ? Pt() : e === "jp" ? St() : e === "pl" ? Gt() : e === "ru" ? Ut() : e === "uk" ? qt() : Lt()
+    return e === "en" ? zt() : e === "pt" ? yt() : e === "ch" ? jt() : e === "de" ? Ct() : e === "es" ? $t() : e === "fr" ? Dt() : e === "it" ? Pt() : e === "jp" ? St() : e === "pl" ? Gt() : e === "ru" ? qt() : e === "uk" ? Ut() : Lt()
   },
-  At = () => "Timeout risk",
+  Nt = () => "Timeout risk",
   It = () => "Risco de suspensão",
   Rt = () => "禁言风险",
   Tt = () => "Sperrrisiko",
@@ -271,10 +271,10 @@ const Pe = () => "Click to reveal",
   Ot = () => "Nguy cơ tạm khóa",
   Ft = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? At() : e === "pt" ? It() : e === "ch" ? Rt() : e === "de" ? Tt() : e === "es" ? Mt() : e === "fr" ? Bt() : e === "it" ? Et() : e === "jp" ? Kt() : e === "pl" ? Ht() : e === "ru" ? Zt() : e === "uk" ? Vt() : Ot()
+    return e === "en" ? Nt() : e === "pt" ? It() : e === "ch" ? Rt() : e === "de" ? Tt() : e === "es" ? Mt() : e === "fr" ? Bt() : e === "it" ? Et() : e === "jp" ? Kt() : e === "pl" ? Ht() : e === "ru" ? Zt() : e === "uk" ? Vt() : Ot()
   },
-  Jt = () => "Drawing a new artwork over a flag",
-  Wt = () => "Desenhar uma nova arte por cima de uma bandeira",
+  Wt = () => "Drawing a new artwork over a flag",
+  Jt = () => "Desenhar uma nova arte por cima de uma bandeira",
   Xt = () => "在旗帜上绘制新作品",
   Qt = () => "Ein neues Kunstwerk über eine Flagge zeichnen",
   Yt = () => "Dibujar una nueva obra sobre una bandera",
@@ -287,7 +287,7 @@ const Pe = () => "Click to reveal",
   si = () => "Vẽ tác phẩm mới đè lên cờ",
   ui = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Jt() : e === "pt" ? Wt() : e === "ch" ? Xt() : e === "de" ? Qt() : e === "es" ? Yt() : e === "fr" ? ei() : e === "it" ? ri() : e === "jp" ? ni() : e === "pl" ? ti() : e === "ru" ? ii() : e === "uk" ? oi() : si()
+    return e === "en" ? Wt() : e === "pt" ? Jt() : e === "ch" ? Xt() : e === "de" ? Qt() : e === "es" ? Yt() : e === "fr" ? ei() : e === "it" ? ri() : e === "jp" ? ni() : e === "pl" ? ti() : e === "ru" ? ii() : e === "uk" ? oi() : si()
   },
   ai = () => "Drawing over another drawing",
   _i = () => "Desenhar por cima de outro desenho",
@@ -316,14 +316,14 @@ const Pe = () => "Click to reveal",
   Pi = () => "Zamalowywanie istniejącej grafiki bez intencji twórczej",
   Si = () => "Рисование поверх существующего рисунка без творческого намерения",
   Gi = () => "Малювання поверх існуючого малюнка без творчого наміру",
-  Ui = () => "Tô đè lên tác phẩm hiện có mà không có ý sáng tạo",
-  qi = (n = {}, r = {}) => {
+  qi = () => "Tô đè lên tác phẩm hiện có mà không có ý sáng tạo",
+  Ui = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? ki() : e === "pt" ? wi() : e === "ch" ? zi() : e === "de" ? yi() : e === "es" ? ji() : e === "fr" ? Ci() : e === "it" ? $i() : e === "jp" ? Di() : e === "pl" ? Pi() : e === "ru" ? Si() : e === "uk" ? Gi() : Ui()
+    return e === "en" ? ki() : e === "pt" ? wi() : e === "ch" ? zi() : e === "de" ? yi() : e === "es" ? ji() : e === "fr" ? Ci() : e === "it" ? $i() : e === "jp" ? Di() : e === "pl" ? Pi() : e === "ru" ? Si() : e === "uk" ? Gi() : qi()
   },
   Li = () => "Drawing over a repeated pattern",
-  Ni = () => "Desenhar por cima de um padrão repetitivo",
-  Ai = () => "在重复图案上绘画",
+  Ai = () => "Desenhar por cima de um padrão repetitivo",
+  Ni = () => "在重复图案上绘画",
   Ii = () => "Über ein wiederholendes Muster zeichnen",
   Ri = () => "Dibujar sobre un patrón repetido",
   Ti = () => "Dessiner par-dessus un motif répétitif",
@@ -335,12 +335,12 @@ const Pe = () => "Click to reveal",
   Zi = () => "Vẽ đè lên mẫu lặp lại",
   Vi = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Li() : e === "pt" ? Ni() : e === "ch" ? Ai() : e === "de" ? Ii() : e === "es" ? Ri() : e === "fr" ? Ti() : e === "it" ? Mi() : e === "jp" ? Bi() : e === "pl" ? Ei() : e === "ru" ? Ki() : e === "uk" ? Hi() : Zi()
+    return e === "en" ? Li() : e === "pt" ? Ai() : e === "ch" ? Ni() : e === "de" ? Ii() : e === "es" ? Ri() : e === "fr" ? Ti() : e === "it" ? Mi() : e === "jp" ? Bi() : e === "pl" ? Ei() : e === "ru" ? Ki() : e === "uk" ? Hi() : Zi()
   },
   Oi = () => "Drawing a flag over other artworks",
   Fi = () => "Desenhar uma bandeira por cima de outras artes",
-  Ji = () => "在其他作品上绘制旗帜",
-  Wi = () => "Eine Flagge über andere Kunstwerke zeichnen",
+  Wi = () => "在其他作品上绘制旗帜",
+  Ji = () => "Eine Flagge über andere Kunstwerke zeichnen",
   Xi = () => "Dibujar una bandera sobre las obras de otros",
   Qi = () => "Dessiner un drapeau par-dessus d'autres œuvres",
   Yi = () => "Disegnare una bandiera sopra altre opere",
@@ -351,7 +351,7 @@ const Pe = () => "Click to reveal",
   io = () => "Vẽ cờ đè lên tác phẩm của người khác",
   oo = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Oi() : e === "pt" ? Fi() : e === "ch" ? Ji() : e === "de" ? Wi() : e === "es" ? Xi() : e === "fr" ? Qi() : e === "it" ? Yi() : e === "jp" ? eo() : e === "pl" ? ro() : e === "ru" ? no() : e === "uk" ? to() : io()
+    return e === "en" ? Oi() : e === "pt" ? Fi() : e === "ch" ? Wi() : e === "de" ? Ji() : e === "es" ? Xi() : e === "fr" ? Qi() : e === "it" ? Yi() : e === "jp" ? eo() : e === "pl" ? ro() : e === "ru" ? no() : e === "uk" ? to() : io()
   },
   so = () => "Highly Suggestive Content",
   uo = () => "Conteúdo Altamente Sugestivo",
@@ -381,14 +381,14 @@ const Pe = () => "Click to reveal",
   Po = () => "Умеренно жестокий контент",
   So = () => "Помірно жорстокий контент",
   Go = () => "Nội dung bạo lực nhẹ",
-  Uo = (n = {}, r = {}) => {
+  qo = (n = {}, r = {}) => {
     const e = r.locale ?? t();
     return e === "en" ? xo() : e === "pt" ? ko() : e === "ch" ? wo() : e === "de" ? zo() : e === "es" ? yo() : e === "fr" ? jo() : e === "it" ? Co() : e === "jp" ? $o() : e === "pl" ? Do() : e === "ru" ? Po() : e === "uk" ? So() : Go()
   },
-  qo = () => "Non-explicit suggestive content",
+  Uo = () => "Non-explicit suggestive content",
   Lo = () => "Conteúdo sugestivo não explícito",
-  No = () => "非露骨暗示性内容",
-  Ao = () => "Nicht-explizite anzügliche Inhalte",
+  Ao = () => "非露骨暗示性内容",
+  No = () => "Nicht-explizite anzügliche Inhalte",
   Io = () => "Contenido sugerente no explícito",
   Ro = () => "Contenu suggestif non explicite",
   To = () => "Contenuto allusivo non esplicito",
@@ -399,14 +399,14 @@ const Pe = () => "Click to reveal",
   Ho = () => "Nội dung khiêu gợi không rõ ràng",
   we = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? qo() : e === "pt" ? Lo() : e === "ch" ? No() : e === "de" ? Ao() : e === "es" ? Io() : e === "fr" ? Ro() : e === "it" ? To() : e === "jp" ? Mo() : e === "pl" ? Bo() : e === "ru" ? Eo() : e === "uk" ? Ko() : Ho()
+    return e === "en" ? Uo() : e === "pt" ? Lo() : e === "ch" ? Ao() : e === "de" ? No() : e === "es" ? Io() : e === "fr" ? Ro() : e === "it" ? To() : e === "jp" ? Mo() : e === "pl" ? Bo() : e === "ru" ? Eo() : e === "uk" ? Ko() : Ho()
   },
   Zo = () => "Drawing repeated pattern over other artworks",
   Vo = () => "Desenhar padrão repetitivo por cima de outras artes",
   Oo = () => "在其他作品上绘制重复图案",
   Fo = () => "Wiederholendes Muster über andere Kunstwerke zeichnen",
-  Jo = () => "Dibujar un patrón repetido sobre las obras de otros",
-  Wo = () => "Dessiner un motif répétitif par-dessus d'autres œuvres",
+  Wo = () => "Dibujar un patrón repetido sobre las obras de otros",
+  Jo = () => "Dessiner un motif répétitif par-dessus d'autres œuvres",
   Xo = () => "Disegnare un pattern ripetuto sopra altre opere",
   Qo = () => "他の作品の上に繰り返しパターンを描く",
   Yo = () => "Rysowanie powtarzalnego wzoru na cudzych grafikach",
@@ -415,7 +415,7 @@ const Pe = () => "Click to reveal",
   ns = () => "Vẽ mẫu lặp lại đè lên tác phẩm của người khác",
   ts = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Zo() : e === "pt" ? Vo() : e === "ch" ? Oo() : e === "de" ? Fo() : e === "es" ? Jo() : e === "fr" ? Wo() : e === "it" ? Xo() : e === "jp" ? Qo() : e === "pl" ? Yo() : e === "ru" ? es() : e === "uk" ? rs() : ns()
+    return e === "en" ? Zo() : e === "pt" ? Vo() : e === "ch" ? Oo() : e === "de" ? Fo() : e === "es" ? Wo() : e === "fr" ? Jo() : e === "it" ? Xo() : e === "jp" ? Qo() : e === "pl" ? Yo() : e === "ru" ? es() : e === "uk" ? rs() : ns()
   },
   is = () => "Using transparent pixels over repetitive flags",
   os = () => "Usar pixels transparentes sobre bandeiras repetitivas",
@@ -451,11 +451,11 @@ const Pe = () => "Click to reveal",
   },
   Ss = () => "Using transparent pixels to remove repetitive patterns",
   Gs = () => "Usar pixels transparentes para remover padrões repetitivos",
-  Us = () => "使用透明像素移除重复图案",
-  qs = () => "Transparente Pixel zum Entfernen sich wiederholender Muster verwenden",
+  qs = () => "使用透明像素移除重复图案",
+  Us = () => "Transparente Pixel zum Entfernen sich wiederholender Muster verwenden",
   Ls = () => "Usar píxeles transparentes para eliminar patrones repetitivos",
-  Ns = () => "Utilisation de pixels transparents pour supprimer les motifs répétitifs",
-  As = () => "Usare pixel trasparenti per rimuovere pattern ripetitivi",
+  As = () => "Utilisation de pixels transparents pour supprimer les motifs répétitifs",
+  Ns = () => "Usare pixel trasparenti per rimuovere pattern ripetitivi",
   Is = () => "透明ピクセルを使って繰り返しパターンを除去",
   Rs = () => "Używanie przezroczystych pikseli do usuwania powtarzalnych wzorów",
   Ts = () => "Использование прозрачных пикселей для удаления повторяющихся узоров",
@@ -463,7 +463,7 @@ const Pe = () => "Click to reveal",
   Bs = () => "Sử dụng pixel trong suốt để xóa mẫu lặp lại",
   Es = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Ss() : e === "pt" ? Gs() : e === "ch" ? Us() : e === "de" ? qs() : e === "es" ? Ls() : e === "fr" ? Ns() : e === "it" ? As() : e === "jp" ? Is() : e === "pl" ? Rs() : e === "ru" ? Ts() : e === "uk" ? Ms() : Bs()
+    return e === "en" ? Ss() : e === "pt" ? Gs() : e === "ch" ? qs() : e === "de" ? Us() : e === "es" ? Ls() : e === "fr" ? As() : e === "it" ? Ns() : e === "jp" ? Is() : e === "pl" ? Rs() : e === "ru" ? Ts() : e === "uk" ? Ms() : Bs()
   },
   Ks = () => "Scribbling over other people's artwork",
   Hs = () => "Rabiscar por cima da arte de outras pessoas",
@@ -471,15 +471,15 @@ const Pe = () => "Click to reveal",
   Vs = () => "Kritzeln über Kunstwerke anderer",
   Os = () => "Garabatear sobre las obras de otros",
   Fs = () => "Gribouiller sur les œuvres des autres",
-  Js = () => "Scarabocchiare sopra le opere degli altri",
-  Ws = () => "他人の作品への落書き",
+  Ws = () => "Scarabocchiare sopra le opere degli altri",
+  Js = () => "他人の作品への落書き",
   Xs = () => "Bazgranie po cudzych grafikach",
   Qs = () => "Черкание поверх чужих рисунков",
   Ys = () => "Замальовування чужих малюнків",
   eu = () => "Vẽ bậy lên tác phẩm của người khác",
   ru = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Ks() : e === "pt" ? Hs() : e === "ch" ? Zs() : e === "de" ? Vs() : e === "es" ? Os() : e === "fr" ? Fs() : e === "it" ? Js() : e === "jp" ? Ws() : e === "pl" ? Xs() : e === "ru" ? Qs() : e === "uk" ? Ys() : eu()
+    return e === "en" ? Ks() : e === "pt" ? Hs() : e === "ch" ? Zs() : e === "de" ? Vs() : e === "es" ? Os() : e === "fr" ? Fs() : e === "it" ? Ws() : e === "jp" ? Js() : e === "pl" ? Xs() : e === "ru" ? Qs() : e === "uk" ? Ys() : eu()
   },
   nu = () => "Suggestive fetishist Content",
   tu = () => "Conteúdo sugestivo fetichista",
@@ -517,17 +517,17 @@ const Pe = () => "Click to reveal",
   Pu = () => "Casos de griefing evidente (como rabiscar por cima da arte de alguém sem intenção criativa, ou interrompê-la deliberadamente colocando pixels aleatórios) estão <strong>sujeitos a intervenção da moderação</strong>.",
   Su = () => "明确的恶意破坏行为（例如毫无创意目的地在他人作品上乱涂，或故意放置随机像素进行破坏）将<strong>受到管理介入</strong>。",
   Gu = () => "Fälle von eindeutigem Griefing (wie z. B. Kritzeln über Kunstwerke anderer ohne kreative Absicht oder das absichtliche Stören durch Platzieren zufälliger Pixel) <strong>unterliegen moderativen Maßnahmen</strong>.",
-  Uu = () => "Los casos de griefing evidente (como garabatear sobre la obra de alguien sin intención creativa, o alterarla deliberadamente colocando píxeles aleatorios) están <strong>sujetos a intervención de moderación</strong>.",
-  qu = () => "Les cas de griefing manifeste (comme gribouiller sur l'œuvre de quelqu'un sans intention créative, ou la perturber délibérément en plaçant des pixels aléatoires) sont <strong>soumis à une intervention de la modération</strong>.",
+  qu = () => "Los casos de griefing evidente (como garabatear sobre la obra de alguien sin intención creativa, o alterarla deliberadamente colocando píxeles aleatorios) están <strong>sujetos a intervención de moderación</strong>.",
+  Uu = () => "Les cas de griefing manifeste (comme gribouiller sur l'œuvre de quelqu'un sans intention créative, ou la perturber délibérément en plaçant des pixels aléatoires) sont <strong>soumis à une intervention de la modération</strong>.",
   Lu = () => "I casi di griefing evidente (come scarabocchiare sopra l'opera di qualcuno senza intento creativo, o disturbarla deliberatamente piazzando pixel casuali) sono <strong>soggetti a intervento della moderazione</strong>.",
-  Nu = () => "明確なグリーフィング（他人の作品に創造的な意図なく落書きする、ランダムなピクセルを置いて意図的に妨害するなど）は、<strong>モデレーションの介入対象</strong>となります。",
-  Au = () => "Przypadki oczywistego griefingu (takie jak bazgranie po cudzej grafice bez intencji twórczej lub celowe zakłócanie jej losowymi pikselami) <strong>podlegają interwencji moderacji</strong>.",
+  Au = () => "明確なグリーフィング（他人の作品に創造的な意図なく落書きする、ランダムなピクセルを置いて意図的に妨害するなど）は、<strong>モデレーションの介入対象</strong>となります。",
+  Nu = () => "Przypadki oczywistego griefingu (takie jak bazgranie po cudzej grafice bez intencji twórczej lub celowe zakłócanie jej losowymi pikselami) <strong>podlegają interwencji moderacji</strong>.",
   Iu = () => "Случаи явного гриферства (например, черкание поверх чьего-то рисунка без творческого намерения или намеренное его разрушение случайными пикселями) <strong>подлежат модераторскому вмешательству</strong>.",
   Ru = () => "Випадки явного грифінгу (такі як замальовування чужого малюнка без творчого наміру або навмисне порушення за допомогою випадкових пікселів) <strong>підлягають модераторському втручанню</strong>.",
   Tu = () => "Các trường hợp griefing rõ ràng (như vẽ bậy lên tác phẩm của người khác mà không có ý sáng tạo, hoặc cố tình phá hoại bằng cách đặt pixel ngẫu nhiên) <strong>sẽ bị can thiệp kiểm duyệt</strong>.",
   Mu = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Du() : e === "pt" ? Pu() : e === "ch" ? Su() : e === "de" ? Gu() : e === "es" ? Uu() : e === "fr" ? qu() : e === "it" ? Lu() : e === "jp" ? Nu() : e === "pl" ? Au() : e === "ru" ? Iu() : e === "uk" ? Ru() : Tu()
+    return e === "en" ? Du() : e === "pt" ? Pu() : e === "ch" ? Su() : e === "de" ? Gu() : e === "es" ? qu() : e === "fr" ? Uu() : e === "it" ? Lu() : e === "jp" ? Au() : e === "pl" ? Nu() : e === "ru" ? Iu() : e === "uk" ? Ru() : Tu()
   },
   Bu = () => "Gray area",
   Eu = () => "Área cinzenta",
@@ -537,13 +537,13 @@ const Pe = () => "Click to reveal",
   Vu = () => "Zone grise",
   Ou = () => "Zona grigia",
   Fu = () => "グレーゾーン",
-  Ju = () => "Szara strefa",
-  Wu = () => "Серая зона",
+  Wu = () => "Szara strefa",
+  Ju = () => "Серая зона",
   Xu = () => "Сіра зона",
   Qu = () => "Vùng xám",
   Yu = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Bu() : e === "pt" ? Eu() : e === "ch" ? Ku() : e === "de" ? Hu() : e === "es" ? Zu() : e === "fr" ? Vu() : e === "it" ? Ou() : e === "jp" ? Fu() : e === "pl" ? Ju() : e === "ru" ? Wu() : e === "uk" ? Xu() : Qu()
+    return e === "en" ? Bu() : e === "pt" ? Eu() : e === "ch" ? Ku() : e === "de" ? Hu() : e === "es" ? Zu() : e === "fr" ? Vu() : e === "it" ? Ou() : e === "jp" ? Fu() : e === "pl" ? Wu() : e === "ru" ? Ju() : e === "uk" ? Xu() : Qu()
   },
   ea = () => "Actions that alter or disrupt artwork but may have <strong>multiple valid interpretations</strong>, such as territorial expansion, cleanup, or style changes. <strong>These are not automatically griefing</strong>. However, if the behavior becomes excessive, targeted, or clearly disruptive over time, moderators may intervene.",
   ra = () => "Ações que alteram ou perturbam artes, mas que podem ter <strong>múltiplas interpretações válidas</strong>, como expansão territorial, limpeza ou mudanças de estilo. <strong>Isso não é automaticamente griefing</strong>. No entanto, se o comportamento se tornar excessivo, direcionado ou claramente prejudicial ao longo do tempo, os moderadores poderão intervir.",
@@ -583,15 +583,15 @@ const Pe = () => "Click to reveal",
   Pa = () => "Die Verwendung von transparenten Pixeln zum Entfernen von Spam, sich wiederholenden Mustern, unangemessenen oder anzüglichen Inhalten ist erlaubt.",
   Sa = () => "Usar píxeles transparentes para eliminar spam, patrones repetitivos, contenido inapropiado o sugerente está permitido.",
   Ga = () => "L'utilisation de pixels transparents pour supprimer le spam, les motifs répétitifs, le contenu inapproprié ou suggestif est autorisée.",
-  Ua = () => "Utilizzare pixel trasparenti per rimuovere spam, pattern ripetitivi, contenuti inappropriati o allusivi è consentito.",
-  qa = () => "透明ピクセルを使って、スパム、繰り返しパターン、不適切または性的示唆の強いコンテンツを除去することは許可されています。",
+  qa = () => "Utilizzare pixel trasparenti per rimuovere spam, pattern ripetitivi, contenuti inappropriati o allusivi è consentito.",
+  Ua = () => "透明ピクセルを使って、スパム、繰り返しパターン、不適切または性的示唆の強いコンテンツを除去することは許可されています。",
   La = () => "Używanie przezroczystych pikseli do usuwania spamu, powtarzalnych wzorów, nieodpowiednich lub sugestywnych treści jest dozwolone.",
-  Na = () => "Использование прозрачных пикселей для удаления спама, повторяющихся узоров, неприемлемого или откровенного контента разрешено.",
-  Aa = () => "Використання прозорих пікселів для видалення спаму, повторюваних візерунків, неприйнятного або відвертого контенту дозволено.",
+  Aa = () => "Использование прозрачных пикселей для удаления спама, повторяющихся узоров, неприемлемого или откровенного контента разрешено.",
+  Na = () => "Використання прозорих пікселів для видалення спаму, повторюваних візерунків, неприйнятного або відвертого контенту дозволено.",
   Ia = () => "Sử dụng pixel trong suốt để xóa spam, mẫu lặp lại, nội dung không phù hợp hoặc khiêu gợi là được phép.",
   Ra = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Ca() : e === "pt" ? $a() : e === "ch" ? Da() : e === "de" ? Pa() : e === "es" ? Sa() : e === "fr" ? Ga() : e === "it" ? Ua() : e === "jp" ? qa() : e === "pl" ? La() : e === "ru" ? Na() : e === "uk" ? Aa() : Ia()
+    return e === "en" ? Ca() : e === "pt" ? $a() : e === "ch" ? Da() : e === "de" ? Pa() : e === "es" ? Sa() : e === "fr" ? Ga() : e === "it" ? qa() : e === "jp" ? Ua() : e === "pl" ? La() : e === "ru" ? Aa() : e === "uk" ? Na() : Ia()
   },
   Ta = () => "Map Cleanup",
   Ma = () => "Limpeza do Mapa",
@@ -603,24 +603,24 @@ const Pe = () => "Click to reveal",
   Va = () => "マップの清掃",
   Oa = () => "Sprzątanie mapy",
   Fa = () => "Очистка карты",
-  Ja = () => "Очищення карти",
-  Wa = () => "Dọn dẹp bản đồ",
+  Wa = () => "Очищення карти",
+  Ja = () => "Dọn dẹp bản đồ",
   Xa = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Ta() : e === "pt" ? Ma() : e === "ch" ? Ba() : e === "de" ? Ea() : e === "es" ? Ka() : e === "fr" ? Ha() : e === "it" ? Za() : e === "jp" ? Va() : e === "pl" ? Oa() : e === "ru" ? Fa() : e === "uk" ? Ja() : Wa()
+    return e === "en" ? Ta() : e === "pt" ? Ma() : e === "ch" ? Ba() : e === "de" ? Ea() : e === "es" ? Ka() : e === "fr" ? Ha() : e === "it" ? Za() : e === "jp" ? Va() : e === "pl" ? Oa() : e === "ru" ? Fa() : e === "uk" ? Wa() : Ja()
   },
-  Qa = () => "<strong>One account per person.</strong> Using bots, scripts, browser automation, or any exploit to gain an unfair advantage is strictly prohibited.",
-  Ya = () => "<strong>Uma conta por pessoa.</strong> Usar bots, scripts, automação de navegador ou qualquer exploit para obter vantagem injusta é estritamente proibido.",
-  e_ = () => "<strong>每人只能使用一个账号。</strong>使用机器人、脚本、浏览器自动化或任何漏洞获取不公平优势的行为严格禁止。",
-  r_ = () => "<strong>Ein Konto pro Person.</strong> Die Verwendung von Bots, Skripten, Browser-Automatisierung oder sonstigen Exploits, um einen unfairen Vorteil zu erlangen, ist strengstens verboten.",
-  n_ = () => "<strong>Una cuenta por persona.</strong> Usar bots, scripts, automatización de navegador o cualquier exploit para obtener una ventaja injusta está estrictamente prohibido.",
-  t_ = () => "<strong>Un seul compte par personne.</strong> L'utilisation de bots, de scripts, d'automatisation de navigateur ou de toute exploitation de faille pour obtenir un avantage déloyal est strictement interdite.",
-  i_ = () => "<strong>Un account per persona.</strong> L'uso di bot, script, automazione del browser o qualsiasi exploit per ottenere un vantaggio sleale è severamente vietato.",
-  o_ = () => "<strong>1人につき1アカウント。</strong>ボット、スクリプト、ブラウザ自動化、またはその他のエクスプロイトを使用して不当な優位を得ることは厳しく禁止されています。",
-  s_ = () => "<strong>Jedno konto na osobę.</strong> Używanie botów, skryptów, automatyzacji przeglądarki lub jakichkolwiek exploitów w celu uzyskania nieuczciwej przewagi jest surowo zabronione.",
-  u_ = () => "<strong>Один аккаунт на человека.</strong> Использование ботов, скриптов, автоматизации браузера или любых эксплойтов для получения нечестного преимущества строго запрещено.",
-  a_ = () => "<strong>Один акаунт на людину.</strong> Використання ботів, скриптів, автоматизації браузера або будь-яких експлойтів для отримання нечесної переваги суворо заборонено.",
-  __ = () => "<strong>Mỗi người một tài khoản.</strong> Sử dụng bot, script, tự động hóa trình duyệt hoặc bất kỳ lỗi khai thác nào để có lợi thế không công bằng đều bị nghiêm cấm.",
+  Qa = () => "<strong>One account per person.</strong> Using bots, scripts, browser automation, or any exploit to gain an unfair advantage is strictly prohibited.<br><strong>Warning:</strong> sharing a device with family or other people can cause accounts to be flagged as multi-accounting and result in suspension.",
+  Ya = () => "<strong>Uma conta por pessoa.</strong> Usar bots, scripts, automação de navegador ou qualquer exploit para obter vantagem injusta é estritamente proibido.<br><strong>Aviso:</strong> compartilhar um dispositivo com familiares ou outras pessoas pode fazer com que contas sejam sinalizadas como multi-contas e resultar em suspensão.",
+  e_ = () => "<strong>每人只能使用一个账号。</strong>使用机器人、脚本、浏览器自动化或任何漏洞获取不公平优势的行为严格禁止。<br><strong>警告：</strong>与家人或他人共用设备可能导致账号被标记为多账号并被封禁。",
+  r_ = () => "<strong>Ein Konto pro Person.</strong> Die Verwendung von Bots, Skripten, Browser-Automatisierung oder sonstigen Exploits, um einen unfairen Vorteil zu erlangen, ist strengstens verboten.<br><strong>Warnung:</strong> Wenn du ein Gerät mit Familienmitgliedern oder anderen Personen teilst, können Konten als Multi-Accounting markiert und gesperrt werden.",
+  n_ = () => "<strong>Una cuenta por persona.</strong> Usar bots, scripts, automatización de navegador o cualquier exploit para obtener una ventaja injusta está estrictamente prohibido.<br><strong>Advertencia:</strong> compartir un dispositivo con familiares u otras personas puede hacer que las cuentas sean marcadas como multicuenta y resulten en suspensión.",
+  t_ = () => "<strong>Un seul compte par personne.</strong> L'utilisation de bots, de scripts, d'automatisation de navigateur ou de toute exploitation de faille pour obtenir un avantage déloyal est strictement interdite.<br><strong>Avertissement :</strong> partager un appareil avec sa famille ou d'autres personnes peut entraîner le signalement des comptes comme multi-comptes et leur suspension.",
+  i_ = () => "<strong>Un account per persona.</strong> L'uso di bot, script, automazione del browser o qualsiasi exploit per ottenere un vantaggio sleale è severamente vietato.<br><strong>Attenzione:</strong> condividere un dispositivo con familiari o altre persone può far sì che gli account vengano segnalati come multi-account e portare a una sospensione.",
+  o_ = () => "<strong>1人につき1アカウント。</strong>ボット、スクリプト、ブラウザ自動化、またはその他のエクスプロイトを使用して不当な優位を得ることは厳しく禁止されています。<br><strong>警告：</strong>家族や他の人とデバイスを共有すると、アカウントがマルチアカウントとして検出され、利用停止になる可能性があります。",
+  s_ = () => "<strong>Jedno konto na osobę.</strong> Używanie botów, skryptów, automatyzacji przeglądarki lub jakichkolwiek exploitów w celu uzyskania nieuczciwej przewagi jest surowo zabronione.<br><strong>Ostrzeżenie:</strong> dzielenie urządzenia z rodziną lub innymi osobami może spowodować oznaczenie kont jako multi-konta i ich zawieszenie.",
+  u_ = () => "<strong>Один аккаунт на человека.</strong> Использование ботов, скриптов, автоматизации браузера или любых эксплойтов для получения нечестного преимущества строго запрещено.<br><strong>Предупреждение:</strong> совместное использование устройства с членами семьи или другими людьми может привести к тому, что аккаунты будут помечены как мультиаккаунты и заблокированы.",
+  a_ = () => "<strong>Один акаунт на людину.</strong> Використання ботів, скриптів, автоматизації браузера або будь-яких експлойтів для отримання нечесної переваги суворо заборонено.<br><strong>Попередження:</strong> спільне використання пристрою з родиною або іншими людьми може призвести до того, що акаунти будуть позначені як мультиакаунти та заблоковані.",
+  __ = () => "<strong>Mỗi người một tài khoản.</strong> Sử dụng bot, script, tự động hóa trình duyệt hoặc bất kỳ lỗi khai thác nào để có lợi thế không công bằng đều bị nghiêm cấm.<br><strong>Cảnh báo:</strong> chia sẻ thiết bị với gia đình hoặc người khác có thể khiến tài khoản bị gắn cờ là đa tài khoản và dẫn đến đình chỉ.",
   l_ = (n = {}, r = {}) => {
     const e = r.locale ?? t();
     return e === "en" ? Qa() : e === "pt" ? Ya() : e === "ch" ? e_() : e === "de" ? r_() : e === "es" ? n_() : e === "fr" ? t_() : e === "it" ? i_() : e === "jp" ? o_() : e === "pl" ? s_() : e === "ru" ? u_() : e === "uk" ? a_() : __()
@@ -649,13 +649,13 @@ const Pe = () => "Click to reveal",
   P_ = () => "Les dessins de cette catégorie <strong>ne devraient pas entraîner de suspension</strong>. Cependant, <strong>la communauté est libre de nettoyer ou de peindre par-dessus ces œuvres</strong>. Cela inclut les dessins à connotation sexuelle qui ne franchissent pas la limite du contenu explicite (pas d'organes génitaux, d'actes sexuels ni de fluides sexuels).",
   S_ = () => "I disegni in questa categoria <strong>non dovrebbero portare a sospensioni</strong>. Tuttavia, <strong>la community è libera di ripulire o dipingere sopra queste opere</strong>. Include disegni con sottotoni sessuali che non superano il limite dell'esplicito (nessun genitale, atto sessuale o fluido sessuale).",
   G_ = () => "このカテゴリの描画は<strong>停止処分の対象にはなりません</strong>。ただし、<strong>コミュニティはこれらの作品を自由に消去・上書きできます</strong>。露骨な表現（性器、性行為、体液）には至らないが、性的なニュアンスを含む描画が該当します。",
-  U_ = () => "Rysunki z tej kategorii <strong>nie powinny prowadzić do zawieszeń</strong>. Jednakże <strong>społeczność może swobodnie usuwać lub zamalowywać te grafiki</strong>. Obejmuje rysunki o podtekście seksualnym, które nie przekraczają granicy treści jednoznacznych (brak genitaliów, aktów seksualnych czy płynów seksualnych).",
-  q_ = () => "Рисунки в этой категории <strong>не должны приводить к блокировке</strong>. Однако <strong>сообщество вправе убирать или закрашивать такие рисунки</strong>. Включает рисунки с сексуальным подтекстом, не переходящие в откровенную территорию (без гениталий, половых актов или половых жидкостей).",
+  q_ = () => "Rysunki z tej kategorii <strong>nie powinny prowadzić do zawieszeń</strong>. Jednakże <strong>społeczność może swobodnie usuwać lub zamalowywać te grafiki</strong>. Obejmuje rysunki o podtekście seksualnym, które nie przekraczają granicy treści jednoznacznych (brak genitaliów, aktów seksualnych czy płynów seksualnych).",
+  U_ = () => "Рисунки в этой категории <strong>не должны приводить к блокировке</strong>. Однако <strong>сообщество вправе убирать или закрашивать такие рисунки</strong>. Включает рисунки с сексуальным подтекстом, не переходящие в откровенную территорию (без гениталий, половых актов или половых жидкостей).",
   L_ = () => "Малюнки з цієї категорії <strong>не повинні призводити до блокувань</strong>. Однак <strong>спільнота має повне право очистити чи замалювати такі роботи</strong>. Включає малюнки з сексуальним підтекстом, які не переходять у відверту територію (без геніталій, статевих актів чи статевих рідин).",
-  N_ = () => "Vẽ trong danh mục này <strong>không nên dẫn đến đình chỉ</strong>. Tuy nhiên, <strong>cộng đồng được tự do dọn dẹp hoặc tô đè lên các tác phẩm này</strong>. Bao gồm các bức vẽ có ẩn ý tình dục nhưng không vượt qua ranh giới khiêu dâm (không có bộ phận sinh dục, hành vi tình dục hay dịch thể tình dục).",
-  A_ = (n = {}, r = {}) => {
+  A_ = () => "Vẽ trong danh mục này <strong>không nên dẫn đến đình chỉ</strong>. Tuy nhiên, <strong>cộng đồng được tự do dọn dẹp hoặc tô đè lên các tác phẩm này</strong>. Bao gồm các bức vẽ có ẩn ý tình dục nhưng không vượt qua ranh giới khiêu dâm (không có bộ phận sinh dục, hành vi tình dục hay dịch thể tình dục).",
+  N_ = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? y_() : e === "pt" ? j_() : e === "ch" ? C_() : e === "de" ? $_() : e === "es" ? D_() : e === "fr" ? P_() : e === "it" ? S_() : e === "jp" ? G_() : e === "pl" ? U_() : e === "ru" ? q_() : e === "uk" ? L_() : N_()
+    return e === "en" ? y_() : e === "pt" ? j_() : e === "ch" ? C_() : e === "de" ? $_() : e === "es" ? D_() : e === "fr" ? P_() : e === "it" ? S_() : e === "jp" ? G_() : e === "pl" ? q_() : e === "ru" ? U_() : e === "uk" ? L_() : A_()
   },
   I_ = () => "Space is limited. Players and communities will compete for territory, and that's not just allowed, it's what keeps the map alive. Claiming, defending, and reclaiming space is core gameplay.",
   R_ = () => "O espaço é limitado. Jogadores e comunidades vão competir por território, e isso não é apenas permitido, é o que mantém o mapa vivo. Conquistar, defender e retomar espaço faz parte da jogabilidade principal.",
@@ -669,11 +669,11 @@ const Pe = () => "Click to reveal",
   V_ = () => "Пространство ограничено. Игроки и сообщества будут конкурировать за территорию, и это не просто разрешено — это то, что поддерживает карту живой. Захват, оборона и отвоевание территории — основная механика игры.",
   O_ = () => "Простір обмежений. Гравці та спільноти змагатимуться за територію, і це не лише дозволено — це те, що підтримує карту живою. Захоплення, оборона та відвоювання простору є основою геймплею.",
   F_ = () => "Không gian có hạn. Người chơi và cộng đồng sẽ cạnh tranh lãnh thổ, và điều đó không chỉ được phép — nó là thứ giữ cho bản đồ sống động. Chiếm, bảo vệ và giành lại không gian là cách chơi cốt lõi.",
-  J_ = (n = {}, r = {}) => {
+  W_ = (n = {}, r = {}) => {
     const e = r.locale ?? t();
     return e === "en" ? I_() : e === "pt" ? R_() : e === "ch" ? T_() : e === "de" ? M_() : e === "es" ? B_() : e === "fr" ? E_() : e === "it" ? K_() : e === "jp" ? H_() : e === "pl" ? Z_() : e === "ru" ? V_() : e === "uk" ? O_() : F_()
   },
-  W_ = () => "Territorial Disputes",
+  J_ = () => "Territorial Disputes",
   X_ = () => "Disputas Territoriais",
   Q_ = () => "领地争夺",
   Y_ = () => "Gebietskonflikte",
@@ -687,7 +687,7 @@ const Pe = () => "Click to reveal",
   ul = () => "Tranh chấp lãnh thổ",
   al = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? W_() : e === "pt" ? X_() : e === "ch" ? Q_() : e === "de" ? Y_() : e === "es" ? el() : e === "fr" ? rl() : e === "it" ? nl() : e === "jp" ? tl() : e === "pl" ? il() : e === "ru" ? ol() : e === "uk" ? sl() : ul()
+    return e === "en" ? J_() : e === "pt" ? X_() : e === "ch" ? Q_() : e === "de" ? Y_() : e === "es" ? el() : e === "fr" ? rl() : e === "it" ? nl() : e === "jp" ? tl() : e === "pl" ? il() : e === "ru" ? ol() : e === "uk" ? sl() : ul()
   },
   _l = () => "Painting over other players' work is a normal part of the game. If your intent isn't to only harass or deliberately frustrate someone, moderators won't intervene.",
   ll = () => "Pintar por cima do trabalho de outros jogadores é uma parte normal do jogo. Se sua intenção não for apenas assediar ou frustrar alguém deliberadamente, os moderadores não irão intervir.",
@@ -715,14 +715,14 @@ const Pe = () => "Click to reveal",
   Pl = () => "ゼロトレランスコンテンツ",
   Sl = () => "Treści objęte zerową tolerancją",
   Gl = () => "Контент с нулевой терпимостью",
-  Ul = () => "Контент з нульовою толерантністю",
-  ql = () => "Nội dung không khoan nhượng",
+  ql = () => "Контент з нульовою толерантністю",
+  Ul = () => "Nội dung không khoan nhượng",
   Ll = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? wl() : e === "pt" ? zl() : e === "ch" ? yl() : e === "de" ? jl() : e === "es" ? Cl() : e === "fr" ? $l() : e === "it" ? Dl() : e === "jp" ? Pl() : e === "pl" ? Sl() : e === "ru" ? Gl() : e === "uk" ? Ul() : ql()
+    return e === "en" ? wl() : e === "pt" ? zl() : e === "ch" ? yl() : e === "de" ? jl() : e === "es" ? Cl() : e === "fr" ? $l() : e === "it" ? Dl() : e === "jp" ? Pl() : e === "pl" ? Sl() : e === "ru" ? Gl() : e === "uk" ? ql() : Ul()
   },
-  Nl = () => "The following content is subject to moderation intervention and can result in a <strong>permanent ban</strong>:",
-  Al = () => "O seguinte conteúdo está sujeito a intervenção da moderação e pode resultar em <strong>banimento permanente</strong>:",
+  Al = () => "The following content is subject to moderation intervention and can result in a <strong>permanent ban</strong>:",
+  Nl = () => "O seguinte conteúdo está sujeito a intervenção da moderação e pode resultar em <strong>banimento permanente</strong>:",
   Il = () => "以下内容将受到管理介入，并可能导致<strong>永久封禁</strong>：",
   Rl = () => "Die folgenden Inhalte unterliegen moderativen Maßnahmen und können zu einem <strong>permanenten Bann</strong> führen:",
   Tl = () => "El siguiente contenido está sujeto a intervención de moderación y puede resultar en un <strong>ban permanente</strong>:",
@@ -735,11 +735,11 @@ const Pe = () => "Click to reveal",
   Vl = () => "Các nội dung sau đây sẽ bị can thiệp kiểm duyệt và có thể dẫn đến <strong>cấm vĩnh viễn</strong>:",
   Ol = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Nl() : e === "pt" ? Al() : e === "ch" ? Il() : e === "de" ? Rl() : e === "es" ? Tl() : e === "fr" ? Ml() : e === "it" ? Bl() : e === "jp" ? El() : e === "pl" ? Kl() : e === "ru" ? Hl() : e === "uk" ? Zl() : Vl()
+    return e === "en" ? Al() : e === "pt" ? Nl() : e === "ch" ? Il() : e === "de" ? Rl() : e === "es" ? Tl() : e === "fr" ? Ml() : e === "it" ? Bl() : e === "jp" ? El() : e === "pl" ? Kl() : e === "ru" ? Hl() : e === "uk" ? Zl() : Vl()
   },
   Fl = () => "Doxxing (sharing anyone's private personal information)",
-  Jl = () => "Doxxing (compartilhar informações pessoais privadas de qualquer pessoa)",
-  Wl = () => "人肉搜索（分享任何人的私人个人信息）",
+  Wl = () => "Doxxing (compartilhar informações pessoais privadas de qualquer pessoa)",
+  Jl = () => "人肉搜索（分享任何人的私人个人信息）",
   Xl = () => "Doxxing (Veröffentlichung persönlicher Informationen anderer)",
   Ql = () => "Doxxing (compartir información personal privada de cualquier persona)",
   Yl = () => "Doxxing (partage d'informations personnelles privées de quiconque)",
@@ -751,7 +751,7 @@ const Pe = () => "Click to reveal",
   oc = () => "Doxxing (chia sẻ thông tin cá nhân riêng tư của bất kỳ ai)",
   sc = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Fl() : e === "pt" ? Jl() : e === "ch" ? Wl() : e === "de" ? Xl() : e === "es" ? Ql() : e === "fr" ? Yl() : e === "it" ? ec() : e === "jp" ? rc() : e === "pl" ? nc() : e === "ru" ? tc() : e === "uk" ? ic() : oc()
+    return e === "en" ? Fl() : e === "pt" ? Wl() : e === "ch" ? Jl() : e === "de" ? Xl() : e === "es" ? Ql() : e === "fr" ? Yl() : e === "it" ? ec() : e === "jp" ? rc() : e === "pl" ? nc() : e === "ru" ? tc() : e === "uk" ? ic() : oc()
   },
   uc = () => "Explicit sexual content (genitalia, sexual acts, sexual fluids)",
   ac = () => "Conteúdo sexual explícito (genitália, atos sexuais, fluidos sexuais)",
@@ -781,14 +781,14 @@ const Pe = () => "Click to reveal",
   Pc = () => "Чрезмерная графическая жестокость или реалистичное насилие",
   Sc = () => "Екстремально жорстокі або реалістичні сцени насильства",
   Gc = () => "Bạo lực đẫm máu cực đoan hoặc bạo lực chân thực",
-  Uc = (n = {}, r = {}) => {
+  qc = (n = {}, r = {}) => {
     const e = r.locale ?? t();
     return e === "en" ? xc() : e === "pt" ? kc() : e === "ch" ? wc() : e === "de" ? zc() : e === "es" ? yc() : e === "fr" ? jc() : e === "it" ? Cc() : e === "jp" ? $c() : e === "pl" ? Dc() : e === "ru" ? Pc() : e === "uk" ? Sc() : Gc()
   },
-  qc = () => "Extreme hostility or targeted harassment toward others",
+  Uc = () => "Extreme hostility or targeted harassment toward others",
   Lc = () => "Hostilidade extrema ou assédio direcionado a outros",
-  Nc = () => "对他人的极端敌意或针对性骚扰",
-  Ac = () => "Extreme Feindseligkeit oder gezielte Belästigung anderer",
+  Ac = () => "对他人的极端敌意或针对性骚扰",
+  Nc = () => "Extreme Feindseligkeit oder gezielte Belästigung anderer",
   Ic = () => "Hostilidad extrema o acoso dirigido hacia otros",
   Rc = () => "Hostilité extrême ou harcèlement ciblé envers autrui",
   Tc = () => "Ostilità estrema o molestie mirate verso altri",
@@ -799,13 +799,13 @@ const Pe = () => "Click to reveal",
   Hc = () => "Thái độ thù địch cực đoan hoặc quấy rối nhắm vào người khác",
   Zc = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? qc() : e === "pt" ? Lc() : e === "ch" ? Nc() : e === "de" ? Ac() : e === "es" ? Ic() : e === "fr" ? Rc() : e === "it" ? Tc() : e === "jp" ? Mc() : e === "pl" ? Bc() : e === "ru" ? Ec() : e === "uk" ? Kc() : Hc()
+    return e === "en" ? Uc() : e === "pt" ? Lc() : e === "ch" ? Ac() : e === "de" ? Nc() : e === "es" ? Ic() : e === "fr" ? Rc() : e === "it" ? Tc() : e === "jp" ? Mc() : e === "pl" ? Bc() : e === "ru" ? Ec() : e === "uk" ? Kc() : Hc()
   },
   Vc = () => "Clear hate speech, extreme slurs, or symbols of hate (e.g. swastikas)",
   Oc = () => "Discurso de ódio evidente, ofensas extremas ou símbolos de ódio (ex.: suásticas)",
   Fc = () => "明确的仇恨言论、极端侮辱性用语或仇恨符号（如纳粹符号）",
-  Jc = () => "Eindeutige Hassrede, extreme Beleidigungen oder Hasssymbole (z. B. Hakenkreuze)",
-  Wc = () => "Discurso de odio claro, insultos extremos o símbolos de odio (ej. esvásticas)",
+  Wc = () => "Eindeutige Hassrede, extreme Beleidigungen oder Hasssymbole (z. B. Hakenkreuze)",
+  Jc = () => "Discurso de odio claro, insultos extremos o símbolos de odio (ej. esvásticas)",
   Xc = () => "Discours de haine manifeste, insultes extrêmes ou symboles haineux (ex. : croix gammées)",
   Qc = () => "Chiaro discorso d'odio, insulti estremi o simboli d'odio (es. svastiche)",
   Yc = () => "明確なヘイトスピーチ、極端な差別用語、またはヘイトシンボル（例: 鉤十字）",
@@ -815,7 +815,7 @@ const Pe = () => "Click to reveal",
   td = () => "Ngôn từ thù hằn rõ ràng, từ ngữ xúc phạm nặng hoặc biểu tượng thù hận (ví dụ: chữ vạn)",
   id = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Vc() : e === "pt" ? Oc() : e === "ch" ? Fc() : e === "de" ? Jc() : e === "es" ? Wc() : e === "fr" ? Xc() : e === "it" ? Qc() : e === "jp" ? Yc() : e === "pl" ? ed() : e === "ru" ? rd() : e === "uk" ? nd() : td()
+    return e === "en" ? Vc() : e === "pt" ? Oc() : e === "ch" ? Fc() : e === "de" ? Wc() : e === "es" ? Jc() : e === "fr" ? Xc() : e === "it" ? Qc() : e === "jp" ? Yc() : e === "pl" ? ed() : e === "ru" ? rd() : e === "uk" ? nd() : td()
   },
   od = () => "Sexualization of minors or fictitious characters with child-like visual traits, regardless of their fictional age or lore",
   sd = () => "Sexualização de menores ou personagens fictícios com traços visuais infantis, independentemente de sua idade ou história fictícia",
@@ -851,11 +851,11 @@ const Pe = () => "Click to reveal",
   },
   Sd = () => "allowed",
   Gd = () => "permitido",
-  Ud = () => "允许",
-  qd = () => "erlaubt",
+  qd = () => "允许",
+  Ud = () => "erlaubt",
   Ld = () => "permitido",
-  Nd = () => "autorisé",
-  Ad = () => "consentito",
+  Ad = () => "autorisé",
+  Nd = () => "consentito",
   Id = () => "許可",
   Rd = () => "dozwolone",
   Td = () => "разрешено",
@@ -863,7 +863,7 @@ const Pe = () => "Click to reveal",
   Bd = () => "được phép",
   ze = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Sd() : e === "pt" ? Gd() : e === "ch" ? Ud() : e === "de" ? qd() : e === "es" ? Ld() : e === "fr" ? Nd() : e === "it" ? Ad() : e === "jp" ? Id() : e === "pl" ? Rd() : e === "ru" ? Td() : e === "uk" ? Md() : Bd()
+    return e === "en" ? Sd() : e === "pt" ? Gd() : e === "ch" ? qd() : e === "de" ? Ud() : e === "es" ? Ld() : e === "fr" ? Ad() : e === "it" ? Nd() : e === "jp" ? Id() : e === "pl" ? Rd() : e === "ru" ? Td() : e === "uk" ? Md() : Bd()
   },
   Ed = () => "permanent ban",
   Kd = () => "banimento permanente",
@@ -872,14 +872,14 @@ const Pe = () => "Click to reveal",
   Vd = () => "ban permanente",
   Od = () => "bannissement permanent",
   Fd = () => "ban permanente",
-  Jd = () => "永久BAN",
-  Wd = () => "permanentny ban",
+  Wd = () => "永久BAN",
+  Jd = () => "permanentny ban",
   Xd = () => "перманентный бан",
   Qd = () => "перманентний бан",
   Yd = () => "cấm vĩnh viễn",
   ye = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Ed() : e === "pt" ? Kd() : e === "ch" ? Hd() : e === "de" ? Zd() : e === "es" ? Vd() : e === "fr" ? Od() : e === "it" ? Fd() : e === "jp" ? Jd() : e === "pl" ? Wd() : e === "ru" ? Xd() : e === "uk" ? Qd() : Yd()
+    return e === "en" ? Ed() : e === "pt" ? Kd() : e === "ch" ? Hd() : e === "de" ? Zd() : e === "es" ? Vd() : e === "fr" ? Od() : e === "it" ? Fd() : e === "jp" ? Wd() : e === "pl" ? Jd() : e === "ru" ? Xd() : e === "uk" ? Qd() : Yd()
   },
   eg = () => "timeout",
   rg = () => "suspensão",
@@ -919,15 +919,15 @@ const Pe = () => "Click to reveal",
   Pg = () => "Explizite, hasserfüllte oder illegale Inhalte werden nicht toleriert.",
   Sg = () => "El contenido explícito, de odio o ilegal no es tolerado.",
   Gg = () => "Le contenu explicite, haineux ou illégal n'est pas toléré.",
-  Ug = () => "Contenuti espliciti, di odio o illegali non sono tollerati.",
-  qg = () => "露骨、差別的、または違法なコンテンツは容認されません。",
+  qg = () => "Contenuti espliciti, di odio o illegali non sono tollerati.",
+  Ug = () => "露骨、差別的、または違法なコンテンツは容認されません。",
   Lg = () => "Treści jednoznacznie seksualne, nawołujące do nienawiści lub nielegalne nie są tolerowane.",
-  Ng = () => "Откровенный, ненавистнический или незаконный контент запрещён.",
-  Ag = () => "Відвертий, ненависницький або незаконний контент не допускається.",
+  Ag = () => "Откровенный, ненавистнический или незаконный контент запрещён.",
+  Ng = () => "Відвертий, ненависницький або незаконний контент не допускається.",
   Ig = () => "Nội dung khiêu dâm, thù hằn hoặc bất hợp pháp sẽ không được dung thứ.",
   Rg = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Cg() : e === "pt" ? $g() : e === "ch" ? Dg() : e === "de" ? Pg() : e === "es" ? Sg() : e === "fr" ? Gg() : e === "it" ? Ug() : e === "jp" ? qg() : e === "pl" ? Lg() : e === "ru" ? Ng() : e === "uk" ? Ag() : Ig()
+    return e === "en" ? Cg() : e === "pt" ? $g() : e === "ch" ? Dg() : e === "de" ? Pg() : e === "es" ? Sg() : e === "fr" ? Gg() : e === "it" ? qg() : e === "jp" ? Ug() : e === "pl" ? Lg() : e === "ru" ? Ag() : e === "uk" ? Ng() : Ig()
   },
   Tg = () => "Erasing spam, inappropriate or suggestive content with transparent pixels.",
   Mg = () => "Apagar spam, conteúdo inapropriado ou sugestivo com pixels transparentes.",
@@ -939,11 +939,11 @@ const Pe = () => "Click to reveal",
   Vg = () => "透明ピクセルを使って、スパム、不適切、または性的示唆の強いコンテンツを消去する行為。",
   Og = () => "Usuwanie spamu, nieodpowiednich lub sugestywnych treści za pomocą przezroczystych pikseli.",
   Fg = () => "Удаление спама, неприемлемого или откровенного контента прозрачными пикселями.",
-  Jg = () => "Видалення спаму, неприйнятного чи відвертого контенту прозорими пікселями.",
-  Wg = () => "Xóa spam, nội dung không phù hợp hoặc khiêu gợi bằng pixel trong suốt.",
+  Wg = () => "Видалення спаму, неприйнятного чи відвертого контенту прозорими пікселями.",
+  Jg = () => "Xóa spam, nội dung không phù hợp hoặc khiêu gợi bằng pixel trong suốt.",
   Xg = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Tg() : e === "pt" ? Mg() : e === "ch" ? Bg() : e === "de" ? Eg() : e === "es" ? Kg() : e === "fr" ? Hg() : e === "it" ? Zg() : e === "jp" ? Vg() : e === "pl" ? Og() : e === "ru" ? Fg() : e === "uk" ? Jg() : Wg()
+    return e === "en" ? Tg() : e === "pt" ? Mg() : e === "ch" ? Bg() : e === "de" ? Eg() : e === "es" ? Kg() : e === "fr" ? Hg() : e === "it" ? Zg() : e === "jp" ? Vg() : e === "pl" ? Og() : e === "ru" ? Fg() : e === "uk" ? Wg() : Jg()
   },
   Qg = () => "One account per person. No automation or exploits.",
   Yg = () => "Uma conta por pessoa. Sem automação ou exploits.",
@@ -985,13 +985,13 @@ const Pe = () => "Click to reveal",
   Pp = () => "Fair play",
   Sp = () => "Fair play",
   Gp = () => "フェアプレー",
-  Up = () => "Fair play",
-  qp = () => "Честная игра",
+  qp = () => "Fair play",
+  Up = () => "Честная игра",
   Lp = () => "Чесна гра",
-  Np = () => "Chơi công bằng",
-  Ap = (n = {}, r = {}) => {
+  Ap = () => "Chơi công bằng",
+  Np = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? yp() : e === "pt" ? jp() : e === "ch" ? Cp() : e === "de" ? $p() : e === "es" ? Dp() : e === "fr" ? Pp() : e === "it" ? Sp() : e === "jp" ? Gp() : e === "pl" ? Up() : e === "ru" ? qp() : e === "uk" ? Lp() : Np()
+    return e === "en" ? yp() : e === "pt" ? jp() : e === "ch" ? Cp() : e === "de" ? $p() : e === "es" ? Dp() : e === "fr" ? Pp() : e === "it" ? Sp() : e === "jp" ? Gp() : e === "pl" ? qp() : e === "ru" ? Up() : e === "uk" ? Lp() : Ap()
   },
   Ip = () => "Prohibited",
   Rp = () => "Proibido",
@@ -1005,11 +1005,11 @@ const Pe = () => "Click to reveal",
   Vp = () => "Запрещено",
   Op = () => "Заборонено",
   Fp = () => "Bị cấm",
-  Jp = (n = {}, r = {}) => {
+  Wp = (n = {}, r = {}) => {
     const e = r.locale ?? t();
     return e === "en" ? Ip() : e === "pt" ? Rp() : e === "ch" ? Tp() : e === "de" ? Mp() : e === "es" ? Bp() : e === "fr" ? Ep() : e === "it" ? Kp() : e === "jp" ? Hp() : e === "pl" ? Zp() : e === "ru" ? Vp() : e === "uk" ? Op() : Fp()
   },
-  Wp = () => "Griefing",
+  Jp = () => "Griefing",
   Xp = () => "Griefing",
   Qp = () => "恶意破坏",
   Yp = () => "Griefing",
@@ -1023,7 +1023,7 @@ const Pe = () => "Click to reveal",
   af = () => "Griefing",
   _f = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Wp() : e === "pt" ? Xp() : e === "ch" ? Qp() : e === "de" ? Yp() : e === "es" ? ef() : e === "fr" ? rf() : e === "it" ? nf() : e === "jp" ? tf() : e === "pl" ? of() : e === "ru" ? sf() : e === "uk" ? uf() : af()
+    return e === "en" ? Jp() : e === "pt" ? Xp() : e === "ch" ? Qp() : e === "de" ? Yp() : e === "es" ? ef() : e === "fr" ? rf() : e === "it" ? nf() : e === "jp" ? tf() : e === "pl" ? of() : e === "ru" ? sf() : e === "uk" ? uf() : af()
   },
   lf = () => "Inappropriate content",
   cf = () => "Conteúdo inapropriado",
@@ -1050,14 +1050,14 @@ const Pe = () => "Click to reveal",
   Pf = () => "Pulizia della mappa",
   Sf = () => "マップの清掃",
   Gf = () => "Sprzątanie mapy",
-  Uf = () => "Очистка карты",
-  qf = () => "Очищення карти",
+  qf = () => "Очистка карты",
+  Uf = () => "Очищення карти",
   Lf = () => "Dọn dẹp bản đồ",
-  Nf = (n = {}, r = {}) => {
+  Af = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? zf() : e === "pt" ? yf() : e === "ch" ? jf() : e === "de" ? Cf() : e === "es" ? $f() : e === "fr" ? Df() : e === "it" ? Pf() : e === "jp" ? Sf() : e === "pl" ? Gf() : e === "ru" ? Uf() : e === "uk" ? qf() : Lf()
+    return e === "en" ? zf() : e === "pt" ? yf() : e === "ch" ? jf() : e === "de" ? Cf() : e === "es" ? $f() : e === "fr" ? Df() : e === "it" ? Pf() : e === "jp" ? Sf() : e === "pl" ? Gf() : e === "ru" ? qf() : e === "uk" ? Uf() : Lf()
   },
-  Af = () => "Multi-accounts & bots",
+  Nf = () => "Multi-accounts & bots",
   If = () => "Múltiplas contas e bots",
   Rf = () => "多账号与机器人",
   Tf = () => "Multi-Accounts & Bots",
@@ -1071,10 +1071,10 @@ const Pe = () => "Click to reveal",
   Of = () => "Nhiều tài khoản & bot",
   Ff = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Af() : e === "pt" ? If() : e === "ch" ? Rf() : e === "de" ? Tf() : e === "es" ? Mf() : e === "fr" ? Bf() : e === "it" ? Ef() : e === "jp" ? Kf() : e === "pl" ? Hf() : e === "ru" ? Zf() : e === "uk" ? Vf() : Of()
+    return e === "en" ? Nf() : e === "pt" ? If() : e === "ch" ? Rf() : e === "de" ? Tf() : e === "es" ? Mf() : e === "fr" ? Bf() : e === "it" ? Ef() : e === "jp" ? Kf() : e === "pl" ? Hf() : e === "ru" ? Zf() : e === "uk" ? Vf() : Of()
   },
-  Jf = () => "Territorial disputes",
-  Wf = () => "Disputas territoriais",
+  Wf = () => "Territorial disputes",
+  Jf = () => "Disputas territoriais",
   Xf = () => "领地争夺",
   Qf = () => "Gebietskonflikte",
   Yf = () => "Disputas territoriales",
@@ -1087,7 +1087,7 @@ const Pe = () => "Click to reveal",
   sm = () => "Tranh chấp lãnh thổ",
   um = (n = {}, r = {}) => {
     const e = r.locale ?? t();
-    return e === "en" ? Jf() : e === "pt" ? Wf() : e === "ch" ? Xf() : e === "de" ? Qf() : e === "es" ? Yf() : e === "fr" ? em() : e === "it" ? rm() : e === "jp" ? nm() : e === "pl" ? tm() : e === "ru" ? im() : e === "uk" ? om() : sm()
+    return e === "en" ? Wf() : e === "pt" ? Jf() : e === "ch" ? Xf() : e === "de" ? Qf() : e === "es" ? Yf() : e === "fr" ? em() : e === "it" ? rm() : e === "jp" ? nm() : e === "pl" ? tm() : e === "ru" ? im() : e === "uk" ? om() : sm()
   };
 var am = P('<div class="absolute inset-0 z-20 flex items-center justify-center"><div class="flex flex-col items-center gap-2.5"><div class="text-base-content/60 flex h-14 w-14 items-center justify-center rounded-full bg-white/75"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"></path><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"></path><path d="M14.12 14.12a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg></div> <span class="text-base-content/85 text-sm font-semibold"> </span> <button class="bg-neutral/75 hover:bg-neutral/90 mt-0.5 flex items-center gap-1.5 rounded-full border-none px-4 py-2 text-xs font-medium text-white backdrop-blur-sm transition-all active:scale-[0.96]"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg> </button></div></div>'),
   _m = P("<button>&#8249;</button>"),
@@ -1116,13 +1116,13 @@ function le(n, r) {
       var f = am(),
         G = _(f),
         k = l(_(G), 2),
-        q = _(k, !0);
+        U = _(k, !0);
       u(k);
-      var U = l(k, 2),
-        R = l(_(U));
-      u(U), u(G), u(f), g((Y, W) => {
-        m(q, Y), m(R, ` ${W??""}`)
-      }, [() => jn(), () => Be()]), X("click", U, () => {
+      var q = l(k, 2),
+        R = l(_(q));
+      u(q), u(G), u(f), g((Y, J) => {
+        m(U, Y), m(R, ` ${J??""}`)
+      }, [() => jn(), () => Be()]), X("click", q, () => {
         he(h, !0)
       }), s(c, f)
     };
@@ -1134,7 +1134,7 @@ function le(n, r) {
   {
     var D = c => {
       var f = _m();
-      N(f, 1, "absolute top-1/2 -translate-y-1/2 z-10 flex h-10 w-10 items-center justify-center rounded-full border-none bg-black/45 text-lg leading-none text-white backdrop-blur-sm transition-colors select-none hover:bg-black/70 active:scale-[0.92] disabled:pointer-events-none disabled:opacity-30 md:h-14 md:w-14 md:text-[1.6rem] left-2"), g(G => {
+      A(f, 1, "absolute top-1/2 -translate-y-1/2 z-10 flex h-10 w-10 items-center justify-center rounded-full border-none bg-black/45 text-lg leading-none text-white backdrop-blur-sm transition-colors select-none hover:bg-black/70 active:scale-[0.92] disabled:pointer-events-none disabled:opacity-30 md:h-14 md:w-14 md:text-[1.6rem] left-2"), g(G => {
         O(f, "aria-label", G), f.disabled = i(p) === 0
       }, [() => dn()]), X("click", f, () => b(i(p) - 1)), s(c, f)
     };
@@ -1147,8 +1147,8 @@ function le(n, r) {
     var $ = c => {
       var f = lm(),
         G = l(_(f));
-      u(f), g((k, q) => {
-        O(f, "aria-label", k), m(G, ` ${q??""}`)
+      u(f), g((k, U) => {
+        O(f, "aria-label", k), m(G, ` ${U??""}`)
       }, [() => gr(), () => er()]), X("click", f, () => {
         he(h, !1)
       }), s(c, f)
@@ -1161,16 +1161,16 @@ function le(n, r) {
   let o;
   ce(y, 21, () => r.cards, de, (c, f, G) => {
     var k = cm(),
-      q = _(k);
+      U = _(k);
     u(k), g(() => {
-      N(k, 1, `border-base-300 bg-base-100 w-full overflow-hidden rounded-lg border transition-opacity duration-300 [grid-area:1/1] ${G===i(p)?"pointer-events-auto opacity-100":"pointer-events-none opacity-0"}`), O(k, "aria-hidden", G !== i(p)), O(q, "src", i(f).src), O(q, "alt", i(f).alt)
+      A(k, 1, `border-base-300 bg-base-100 w-full overflow-hidden rounded-lg border transition-opacity duration-300 [grid-area:1/1] ${G===i(p)?"pointer-events-auto opacity-100":"pointer-events-none opacity-0"}`), O(k, "aria-hidden", G !== i(p)), O(U, "src", i(f).src), O(U, "alt", i(f).alt)
     }), s(c, k)
   }), u(y);
   var a = l(y, 2);
   {
     var d = c => {
       var f = dm();
-      N(f, 1, "absolute top-1/2 -translate-y-1/2 z-10 flex h-10 w-10 items-center justify-center rounded-full border-none bg-black/45 text-lg leading-none text-white backdrop-blur-sm transition-colors select-none hover:bg-black/70 active:scale-[0.92] disabled:pointer-events-none disabled:opacity-30 md:h-14 md:w-14 md:text-[1.6rem] right-2"), g(G => {
+      A(f, 1, "absolute top-1/2 -translate-y-1/2 z-10 flex h-10 w-10 items-center justify-center rounded-full border-none bg-black/45 text-lg leading-none text-white backdrop-blur-sm transition-colors select-none hover:bg-black/70 active:scale-[0.92] disabled:pointer-events-none disabled:opacity-30 md:h-14 md:w-14 md:text-[1.6rem] right-2"), g(G => {
         O(f, "aria-label", G), f.disabled = i(p) === r.cards.length - 1
       }, [() => Qr()]), X("click", f, () => b(i(p) + 1)), s(c, f)
     };
@@ -1180,29 +1180,29 @@ function le(n, r) {
   }
   u(j);
   var M = l(j, 2);
-  let J;
+  let W;
   var ue = _(M, !0);
   u(M);
   var E = l(M, 2);
   let B;
   ce(E, 21, () => r.cards, de, (c, f, G) => {
     var k = gm();
-    g(q => {
-      N(k, 1, `h-2 w-2 rounded-full border-none p-0 transition-all ${G===i(p)?"bg-base-content/60 scale-125":"bg-base-300 hover:bg-base-content/40"}`), O(k, "aria-label", q)
+    g(U => {
+      A(k, 1, `h-2 w-2 rounded-full border-none p-0 transition-all ${G===i(p)?"bg-base-content/60 scale-125":"bg-base-300 hover:bg-base-content/40"}`), O(k, "aria-label", U)
     }, [() => Tr({
       current: G + 1,
       total: r.cards.length
     })]), X("click", k, () => b(G)), s(c, k)
   }), u(E), u(L), g(c => {
-    O(L, "aria-label", c), o = N(y, 1, "grid w-full overflow-hidden py-1", null, o, {
+    O(L, "aria-label", c), o = A(y, 1, "grid w-full overflow-hidden py-1", null, o, {
       "blur-[75px]": i(C),
       "saturate-[1.1]": i(C),
       "scale-[1.08]": i(C),
       "pointer-events-none": i(C),
       "select-none": i(C)
-    }), J = N(M, 1, "text-base-content/80 mt-2.5 min-h-6 w-full text-center text-sm leading-normal font-bold", null, J, {
+    }), W = A(M, 1, "text-base-content/80 mt-2.5 min-h-6 w-full text-center text-sm leading-normal font-bold", null, W, {
       "opacity-0": i(C)
-    }), m(ue, r.cards[i(p)].caption), B = N(E, 1, "mt-3 flex w-full justify-center gap-2 pb-1", null, B, {
+    }), m(ue, r.cards[i(p)].caption), B = A(E, 1, "mt-3 flex w-full justify-center gap-2 pb-1", null, B, {
       "opacity-0": i(C)
     })
   }, [() => Cr()]), X("keydown", L, c => {
@@ -1255,7 +1255,7 @@ function oe(n, r) {
             r.badges && o(y)
           })
         }
-        u(w), g(() => N(w, 1, `text-base-content/90 mb-2 flex items-baseline gap-2 leading-snug font-semibold ${p()?"text-lg":"text-2xl"} ${h()??""}`)), s(x, w)
+        u(w), g(() => A(w, 1, `text-base-content/90 mb-2 flex items-baseline gap-2 leading-snug font-semibold ${p()?"text-lg":"text-2xl"} ${h()??""}`)), s(x, w)
       },
       j = x => {
         var w = mm(),
@@ -1283,7 +1283,7 @@ function oe(n, r) {
             r.badges && o(y)
           })
         }
-        u(w), g(() => N(w, 1, `text-base-content/85 mt-7 mb-2 flex items-baseline gap-2 leading-snug font-semibold ${p()?"text-base":"text-lg"} ${h()??""}`)), s(x, w)
+        u(w), g(() => A(w, 1, `text-base-content/85 mt-7 mb-2 flex items-baseline gap-2 leading-snug font-semibold ${p()?"text-base":"text-lg"} ${h()??""}`)), s(x, w)
       };
     K(b, x => {
       e() === 3 ? x(L) : x(j, -1)
@@ -1305,7 +1305,7 @@ function se(n, r) {
     p = H(r, "class", 3, "mb-7 pt-2 md:mb-9 md:pt-3");
   var h = hm(),
     S = _(h);
-  ee(S, () => r.children), u(h), g(() => N(h, 1, ge(e() ? "" : p()))), s(n, h)
+  ee(S, () => r.children), u(h), g(() => A(h, 1, ge(e() ? "" : p()))), s(n, h)
 }
 const bm = "" + new URL("../assets/griefing1.mrf_QTk2.png", import.meta.url).href,
   xm = "" + new URL("../assets/griefing2.HP5n4LVA.png", import.meta.url).href,
@@ -1322,7 +1322,7 @@ function V(n, r) {
   };
   var p = zm(),
     h = _(p);
-  ee(h, () => r.children), u(p), g(() => N(p, 1, `badge badge-soft ${e[r.level]??""} badge-sm text-[10px] font-extrabold tracking-wide uppercase`)), s(n, p)
+  ee(h, () => r.children), u(p), g(() => A(p, 1, `badge badge-soft ${e[r.level]??""} badge-sm text-[10px] font-extrabold tracking-wide uppercase`)), s(n, p)
 }
 var ym = P('<!> <!> <!> <div class="mb-2 flex gap-1"><!></div> <!>', 1),
   jm = P('<!> <!> <div class="mb-2 flex gap-1"><!></div> <!>', 1),
@@ -1338,7 +1338,7 @@ function $m(n, r) {
     }, {
       src: xm,
       alt: "griefing2",
-      caption: qi()
+      caption: Ui()
     }]),
     h = Q(() => [{
       src: km,
@@ -1377,7 +1377,7 @@ function $m(n, r) {
         class: "mt-9",
         children: (o, a) => {
           I();
-          var d = A();
+          var d = N();
           g(M => m(d, M), [() => $u()]), s(o, d)
         },
         $$slots: {
@@ -1398,8 +1398,8 @@ function $m(n, r) {
         level: "error",
         children: (o, a) => {
           I();
-          var d = A();
-          g(M => m(d, M), [() => Nt()]), s(o, d)
+          var d = N();
+          g(M => m(d, M), [() => At()]), s(o, d)
         }
       }), u(z);
       var y = l(z, 2);
@@ -1430,7 +1430,7 @@ function $m(n, r) {
         showNumber: !0,
         children: (y, o) => {
           I();
-          var a = A();
+          var a = N();
           g(d => m(a, d), [() => Yu()]), s(y, a)
         },
         $$slots: {
@@ -1451,7 +1451,7 @@ function $m(n, r) {
         level: "warning",
         children: (y, o) => {
           I();
-          var a = A();
+          var a = N();
           g(d => m(a, d), [() => Ft()]), s(y, a)
         }
       }), u(D);
@@ -1465,18 +1465,18 @@ function $m(n, r) {
     $$slots: {
       default: !0
     }
-  }), u(S), g(() => N(S, 1, ge(e() ? "space-y-4" : ""))), s(n, S), ne()
+  }), u(S), g(() => A(S, 1, ge(e() ? "space-y-4" : ""))), s(n, S), ne()
 }
 const Dm = "" + new URL("../assets/borde1.2HTtxzDt.png", import.meta.url).href,
   Pm = "" + new URL("../assets/borde2.CN89IOz0.png", import.meta.url).href,
   Sm = "" + new URL("../assets/borde4.D9VfQfkE.png", import.meta.url).href,
   Gm = "" + new URL("../assets/borde5.DkmTTj5N.png", import.meta.url).href,
-  Um = "" + new URL("../assets/borde6.CtRHeorl.png", import.meta.url).href;
-var qm = P('<!> <!> <ul class="marker:text-error mb-5 list-disc pl-5"><li class="text-base-content/90 py-1 text-sm leading-relaxed"> </li> <li class="text-base-content/90 py-1 text-sm leading-relaxed"> </li> <li class="text-base-content/90 py-1 text-sm leading-relaxed"> </li> <li class="text-base-content/90 py-1 text-sm leading-relaxed"> </li> <li class="text-base-content/90 py-1 text-sm leading-relaxed"> </li> <li class="text-base-content/90 py-1 text-sm leading-relaxed"> </li></ul> <div class="mb-2 flex gap-1"><!> <!></div>', 1),
+  qm = "" + new URL("../assets/borde6.CtRHeorl.png", import.meta.url).href;
+var Um = P('<!> <!> <ul class="marker:text-error mb-5 list-disc pl-5"><li class="text-base-content/90 py-1 text-sm leading-relaxed"> </li> <li class="text-base-content/90 py-1 text-sm leading-relaxed"> </li> <li class="text-base-content/90 py-1 text-sm leading-relaxed"> </li> <li class="text-base-content/90 py-1 text-sm leading-relaxed"> </li> <li class="text-base-content/90 py-1 text-sm leading-relaxed"> </li> <li class="text-base-content/90 py-1 text-sm leading-relaxed"> </li></ul> <div class="mb-2 flex gap-1"><!> <!></div>', 1),
   Lm = P('<!> <!> <div class="mb-2 flex gap-1"><!> <!></div> <!>', 1),
-  Nm = P("<div><!> <!></div>");
+  Am = P("<div><!> <!></div>");
 
-function Am(n, r) {
+function Nm(n, r) {
   re(r, !0);
   let e = H(r, "compact", 3, !1),
     p = Q(() => [{
@@ -1490,17 +1490,17 @@ function Am(n, r) {
     }, {
       src: Sm,
       alt: "borde4",
-      caption: Uo()
+      caption: qo()
     }, {
       src: Gm,
       alt: "borde5",
       caption: we()
     }, {
-      src: Um,
+      src: qm,
       alt: "borde6",
       caption: we()
     }]);
-  var h = Nm(),
+  var h = Am(),
     S = _(h);
   se(S, {
     get compact() {
@@ -1508,7 +1508,7 @@ function Am(n, r) {
     },
     class: "mb-4 pt-2 md:mb-5 md:pt-3",
     children: (b, L) => {
-      var j = qm(),
+      var j = Um(),
         x = T(j);
       oe(x, {
         level: 3,
@@ -1517,10 +1517,10 @@ function Am(n, r) {
           return e()
         },
         showNumber: !0,
-        children: (k, q) => {
+        children: (k, U) => {
           I();
-          var U = A();
-          g(R => m(U, R), [() => Ll()]), s(k, U)
+          var q = N();
+          g(R => m(q, R), [() => Ll()]), s(k, q)
         },
         $$slots: {
           default: !0
@@ -1528,10 +1528,10 @@ function Am(n, r) {
       });
       var w = l(x, 2);
       F(w, {
-        children: (k, q) => {
-          var U = Z(),
-            R = T(U);
-          ie(R, () => Ol()), s(k, U)
+        children: (k, U) => {
+          var q = Z(),
+            R = T(q);
+          ie(R, () => Ol()), s(k, q)
         }
       });
       var v = l(w, 2),
@@ -1547,33 +1547,33 @@ function Am(n, r) {
       var d = l(o, 2),
         M = _(d, !0);
       u(d);
-      var J = l(d, 2),
-        ue = _(J, !0);
-      u(J);
-      var E = l(J, 2),
+      var W = l(d, 2),
+        ue = _(W, !0);
+      u(W);
+      var E = l(W, 2),
         B = _(E, !0);
       u(E), u(v);
       var c = l(v, 2),
         f = _(c);
       V(f, {
         level: "error",
-        children: (k, q) => {
+        children: (k, U) => {
           I();
-          var U = A();
-          g(R => m(U, R), [() => wt()]), s(k, U)
+          var q = N();
+          g(R => m(q, R), [() => wt()]), s(k, q)
         }
       });
       var G = l(f, 2);
       V(G, {
         level: "warning",
-        children: (k, q) => {
+        children: (k, U) => {
           I();
-          var U = A();
-          g(R => m(U, R), [() => Wn()]), s(k, U)
+          var q = N();
+          g(R => m(q, R), [() => Jn()]), s(k, q)
         }
-      }), u(c), g((k, q, U, R, Y, W) => {
-        m(z, k), m(y, q), m(a, U), m(M, R), m(ue, Y), m(B, W)
-      }, [() => bc(), () => vd(), () => Uc(), () => id(), () => sc(), () => Zc()]), s(b, j)
+      }), u(c), g((k, U, q, R, Y, J) => {
+        m(z, k), m(y, U), m(a, q), m(M, R), m(ue, Y), m(B, J)
+      }, [() => bc(), () => vd(), () => qc(), () => id(), () => sc(), () => Zc()]), s(b, j)
     },
     $$slots: {
       default: !0
@@ -1596,7 +1596,7 @@ function Am(n, r) {
         showNumber: !0,
         children: (y, o) => {
           I();
-          var a = A();
+          var a = N();
           g(d => m(a, d), [() => z_()]), s(y, a)
         },
         $$slots: {
@@ -1608,7 +1608,7 @@ function Am(n, r) {
         children: (y, o) => {
           var a = Z(),
             d = T(a);
-          ie(d, () => A_()), s(y, a)
+          ie(d, () => N_()), s(y, a)
         }
       });
       var v = l(w, 2),
@@ -1617,7 +1617,7 @@ function Am(n, r) {
         level: "success",
         children: (y, o) => {
           I();
-          var a = A();
+          var a = N();
           g(d => m(a, d), [() => be()]), s(y, a)
         }
       });
@@ -1626,7 +1626,7 @@ function Am(n, r) {
         level: "warning",
         children: (y, o) => {
           I();
-          var a = A();
+          var a = N();
           g(d => m(a, d), [() => _t()]), s(y, a)
         }
       }), u(v);
@@ -1640,7 +1640,7 @@ function Am(n, r) {
     $$slots: {
       default: !0
     }
-  }), u(h), g(() => N(h, 1, ge(e() ? "space-y-4" : ""))), s(n, h), ne()
+  }), u(h), g(() => A(h, 1, ge(e() ? "space-y-4" : ""))), s(n, h), ne()
 }
 const Im = "" + new URL("../assets/mapclean1.CXzD9GTn.png", import.meta.url).href,
   Rm = "" + new URL("../assets/mapclean2.B1--Lv8s.png", import.meta.url).href,
@@ -1678,7 +1678,7 @@ function Bm(n, r) {
         },
         children: (v, D) => {
           I();
-          var z = A();
+          var z = N();
           g($ => m(z, $), [() => Xa()]), s(v, z)
         },
         $$slots: {
@@ -1689,7 +1689,7 @@ function Bm(n, r) {
       F(L, {
         children: (v, D) => {
           I();
-          var z = A();
+          var z = N();
           g($ => m(z, $), [() => Ra()]), s(v, z)
         }
       });
@@ -1699,7 +1699,7 @@ function Bm(n, r) {
         level: "success",
         children: (v, D) => {
           I();
-          var z = A();
+          var z = N();
           g($ => m(z, $), [() => be()]), s(v, z)
         }
       }), u(j);
@@ -1752,7 +1752,7 @@ function Fm(n, r) {
   F(S, {
     children: (b, L) => {
       I();
-      var j = A();
+      var j = N();
       g(x => m(j, x), [() => kl()]), s(b, j)
     }
   });
@@ -1772,7 +1772,7 @@ function Fm(n, r) {
         },
         children: ($, y) => {
           I();
-          var o = A();
+          var o = N();
           g(a => m(o, a), [() => al()]), s($, o)
         },
         $$slots: {
@@ -1783,8 +1783,8 @@ function Fm(n, r) {
       F(w, {
         children: ($, y) => {
           I();
-          var o = A();
-          g(a => m(o, a), [() => J_()]), s($, o)
+          var o = N();
+          g(a => m(o, a), [() => W_()]), s($, o)
         }
       });
       var v = l(w, 2),
@@ -1793,7 +1793,7 @@ function Fm(n, r) {
         level: "success",
         children: ($, y) => {
           I();
-          var o = A();
+          var o = N();
           g(a => m(o, a), [() => be()]), s($, o)
         }
       }), u(v);
@@ -1807,17 +1807,17 @@ function Fm(n, r) {
     $$slots: {
       default: !0
     }
-  }), u(h), g(() => N(h, 1, ge(e() ? "space-y-4" : ""))), s(n, h), ne()
+  }), u(h), g(() => A(h, 1, ge(e() ? "space-y-4" : ""))), s(n, h), ne()
 }
-var Jm = P('<details><summary class="collapse-title flex min-h-0! gap-3.5 py-3.5! ps-4! sm:gap-4 sm:ps-5!"><div></div> <div class="min-w-0 flex-1"><div class="flex flex-col gap-0.5 sm:flex-row sm:items-start sm:justify-between sm:gap-4"><div class="min-w-0"><div class="flex flex-wrap items-center gap-2.5"><span class="text-base-content text-base leading-snug font-bold"> </span> <!></div> <p class="text-base-content/90 mt-1 text-sm leading-relaxed"> </p></div></div></div></summary> <div class="collapse-content p-0!"><div class="border-base-content/5 border-t px-4 py-5 sm:px-5"><!></div></div></details>'),
-  Wm = P('<div><div></div> <div class="min-w-0 flex-1"><div class="min-w-0"><div class="flex flex-wrap items-center gap-2.5"><span class="text-base-content text-base leading-snug font-bold"> </span> <!></div> <p class="text-base-content/90 mt-1 text-sm leading-relaxed"> </p></div></div></div>'),
+var Wm = P('<details><summary class="collapse-title flex min-h-0! gap-3.5 py-3.5! ps-4! sm:gap-4 sm:ps-5!"><div></div> <div class="min-w-0 flex-1"><div class="flex flex-col gap-0.5 sm:flex-row sm:items-start sm:justify-between sm:gap-4"><div class="min-w-0"><div class="flex flex-wrap items-center gap-2.5"><span class="text-base-content text-base leading-snug font-bold"> </span> <!></div> <p class="text-base-content/90 mt-1 text-sm leading-relaxed"> </p></div></div></div></summary> <div class="collapse-content p-0!"><div class="border-base-content/5 border-t px-4 py-5 sm:px-5"><!></div></div></details>'),
+  Jm = P('<div><div></div> <div class="min-w-0 flex-1"><div class="min-w-0"><div class="flex flex-wrap items-center gap-2.5"><span class="text-base-content text-base leading-snug font-bold"> </span> <!></div> <p class="text-base-content/90 mt-1 text-sm leading-relaxed"> </p></div></div></div>'),
   Xm = P('<div><div><svg class="size-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd"></path></svg> <span> </span></div> <!></div>');
 
 function cv(n, r) {
   re(r, !0);
   let e = H(r, "showExtraInfo", 3, !0),
     p = Q(() => [{
-      label: Jp(),
+      label: Wp(),
       icon: "M10 18a8 8 0 100-16 8 8 0 000 16zM8.28 7.22a.75.75 0 00-1.06 1.06L8.94 10l-1.72 1.72a.75.75 0 101.06 1.06L10 11.06l1.72 1.72a.75.75 0 101.06-1.06L11.06 10l1.72-1.72a.75.75 0 00-1.06-1.06L10 8.94 8.28 7.22z",
       badgeLevel: "error",
       classes: {
@@ -1827,7 +1827,7 @@ function cv(n, r) {
       },
       rules: [{
         title: wf(),
-        content: Am,
+        content: Nm,
         description: Rg(),
         badge: {
           label: ye(),
@@ -1851,7 +1851,7 @@ function cv(n, r) {
         }
       }]
     }, {
-      label: Ap(),
+      label: Np(),
       icon: "M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z",
       badgeLevel: "success",
       classes: {
@@ -1869,7 +1869,7 @@ function cv(n, r) {
         },
         allowed: !0
       }, {
-        title: Nf(),
+        title: Af(),
         content: Bm,
         description: Xg(),
         badge: {
@@ -1883,7 +1883,7 @@ function cv(n, r) {
     S = T(h);
   ce(S, 17, () => i(p), de, (C, b, L) => {
     var j = Xm();
-    N(j, 1, "overflow-hidden rounded-xl", null, {}, {
+    A(j, 1, "overflow-hidden rounded-xl", null, {}, {
       "mt-3": L > 0
     });
     var x = _(j),
@@ -1898,19 +1898,19 @@ function cv(n, r) {
       var d = Z(),
         M = T(d);
       {
-        var J = E => {
-            var B = Jm(),
+        var W = E => {
+            var B = Wm(),
               c = _(B),
               f = _(c);
             f.textContent = a + 1;
             var G = l(f, 2),
               k = _(G),
-              q = _(k),
-              U = _(q),
-              R = _(U),
+              U = _(k),
+              q = _(U),
+              R = _(q),
               Y = _(R, !0);
             u(R);
-            var W = l(R, 2);
+            var J = l(R, 2);
             {
               var pe = _e => {
                 V(_e, {
@@ -1919,19 +1919,19 @@ function cv(n, r) {
                   },
                   children: (ve, Qm) => {
                     I();
-                    var xe = A();
+                    var xe = N();
                     g(() => m(xe, i(o).badge.label)), s(ve, xe)
                   }
                 })
               };
-              K(W, _e => {
+              K(J, _e => {
                 i(o).badge && _e(pe)
               })
             }
-            u(U);
-            var te = l(U, 2),
+            u(q);
+            var te = l(q, 2),
               fe = _(te, !0);
-            u(te), u(q), u(k), u(G), u(c);
+            u(te), u(U), u(k), u(G), u(c);
             var me = l(c, 2),
               ae = _(me),
               Ce = _(ae);
@@ -1940,20 +1940,20 @@ function cv(n, r) {
                 compact: !0
               })
             }), u(ae), u(me), u(B), g(() => {
-              N(B, 1, `collapse-arrow collapse rounded-none border-l-[3px] ${i(b).classes.button??""} ${a>0?"border-base-content/5 border-t":""}`), N(f, 1, `${i(b).classes.index??""} flex size-7 shrink-0 items-center justify-center rounded-lg text-sm font-extrabold`), m(Y, i(o).title), m(fe, i(o).description)
+              A(B, 1, `collapse-arrow collapse rounded-none border-l-[3px] ${i(b).classes.button??""} ${a>0?"border-base-content/5 border-t":""}`), A(f, 1, `${i(b).classes.index??""} flex size-7 shrink-0 items-center justify-center rounded-lg text-sm font-extrabold`), m(Y, i(o).title), m(fe, i(o).description)
             }), s(E, B)
           },
           ue = E => {
-            var B = Wm(),
+            var B = Jm(),
               c = _(B);
             c.textContent = a + 1;
             var f = l(c, 2),
               G = _(f),
               k = _(G),
-              q = _(k),
-              U = _(q, !0);
-            u(q);
-            var R = l(q, 2);
+              U = _(k),
+              q = _(U, !0);
+            u(U);
+            var R = l(U, 2);
             {
               var Y = te => {
                 V(te, {
@@ -1962,7 +1962,7 @@ function cv(n, r) {
                   },
                   children: (fe, me) => {
                     I();
-                    var ae = A();
+                    var ae = N();
                     g(() => m(ae, i(o).badge.label)), s(fe, ae)
                   }
                 })
@@ -1972,22 +1972,22 @@ function cv(n, r) {
               })
             }
             u(k);
-            var W = l(k, 2),
-              pe = _(W, !0);
-            u(W), u(G), u(f), u(B), g(() => {
-              N(B, 1, `${i(b).classes.button??""} flex w-full cursor-auto gap-3.5 border-l-[3px] px-4 py-3.5 text-left sm:gap-4 sm:px-5 ${a>0?"border-base-content/5 border-t":""}`), N(c, 1, `${i(b).classes.index??""} flex size-7 shrink-0 items-center justify-center rounded-lg text-sm font-extrabold`), m(U, i(o).title), m(pe, i(o).description)
+            var J = l(k, 2),
+              pe = _(J, !0);
+            u(J), u(G), u(f), u(B), g(() => {
+              A(B, 1, `${i(b).classes.button??""} flex w-full cursor-auto gap-3.5 border-l-[3px] px-4 py-3.5 text-left sm:gap-4 sm:px-5 ${a>0?"border-base-content/5 border-t":""}`), A(c, 1, `${i(b).classes.index??""} flex size-7 shrink-0 items-center justify-center rounded-lg text-sm font-extrabold`), m(q, i(o).title), m(pe, i(o).description)
             }), s(E, B)
           };
         K(M, E => {
-          e() ? E(J) : E(ue, -1)
+          e() ? E(W) : E(ue, -1)
         })
       }
       s(y, d)
     }), u(j), g(() => {
-      N(x, 1, `${i(b).classes.header??""} flex items-center gap-2 px-4 py-2.5 text-xs font-bold tracking-widest uppercase`), O(v, "d", i(b).icon), m(z, i(b).label)
+      A(x, 1, `${i(b).classes.header??""} flex items-center gap-2 px-4 py-2.5 text-xs font-bold tracking-widest uppercase`), O(v, "d", i(b).icon), m(z, i(b).label)
     }), s(C, j)
   }), s(n, h), ne()
 }
 export {
-  Am as G, cv as R, $m as a, Fm as b, Bm as c, Em as d, lv as r
+  Nm as G, cv as R, $m as a, Fm as b, Bm as c, Em as d, lv as r
 };
