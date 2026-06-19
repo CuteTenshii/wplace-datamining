@@ -1,27 +1,93 @@
 import "./Bzak7iHL.js";
+import "./CE_13Z4f.js";
 import {
-  a as e,
-  w as a
+  p as P,
+  a as t,
+  b as k,
+  c as i,
+  d as m,
+  i as r,
+  s as _,
+  r as d,
+  t as W,
+  ad as q
 } from "./CV6xI6o5.js";
 import {
-  d as p
-} from "./rONmwD0j.js";
+  i as h
+} from "./iywslKou.js";
 import {
-  r as l
-} from "./BQ880tYw.js";
-var q = new Set(["$$slots", "$$events", "$$legacy"]),
-  m = a('<svg><path d="M790-56 414-434q-47 11-87.5 33T254-346l-84-86q32-32 69-56t79-42l-90-90q-41 21-76.5 46.5T84-516L0-602q32-32 66.5-57.5T140-708l-84-84 56-56 736 736-58 56Zm-310-64q-42 0-71-29.5T380-220q0-42 29-71t71-29q42 0 71 29t29 71q0 41-29 70.5T480-120Zm236-238-29-29-29-29-144-144q81 8 151.5 41T790-432l-74 74Zm160-158q-77-77-178.5-120.5T480-680q-21 0-40.5 1.5T400-674L298-776q44-12 89.5-18t92.5-6q142 0 265 53t215 145l-84 86Z"></path></svg>');
+  e as H
+} from "./C7N0act3.js";
+import {
+  b as I
+} from "./BJwrq-LT.js";
+import {
+  i as S
+} from "./BMPMTaQp.js";
+import {
+  a as $,
+  W as j,
+  P as A
+} from "./Oy6dVWj0.js";
+var B = i('<div class="z-10 size-2.5 rounded-full bg-primary shadow-[0_0_0_3px] shadow-primary/15"></div>'),
+  C = i('<div class="z-10 size-2 rounded-full border-2 border-base-300 bg-base-100"></div>'),
+  D = i('<div class="mt-1 w-px flex-1 bg-base-300/50"></div>'),
+  E = i('<div class="relative flex gap-3.5"><div class="flex shrink-0 flex-col items-center pt-2.25"><!> <!></div> <div class="min-w-0 flex-1 pb-9"><!></div></div>'),
+  F = i('<div class="flex flex-col"></div>');
 
-function T(r, o) {
-  let s = l(o, q);
-  var t = m();
-  p(t, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...s
-  })), e(r, t)
+function T(b, u) {
+  P(u, !1);
+  const f = [...$].reverse().map(e => ({
+    version: e.version,
+    title: e.title,
+    html: j(e.markdown)
+  }));
+  S();
+  var l = F();
+  H(l, 7, () => f, e => e.version, (e, x, o) => {
+    var v = E(),
+      p = m(v),
+      c = m(p);
+    {
+      var g = a => {
+          var s = B();
+          t(a, s)
+        },
+        w = a => {
+          var s = C();
+          t(a, s)
+        };
+      h(c, a => {
+        r(o) === 0 ? a(g) : a(w, -1)
+      })
+    }
+    var N = _(c, 2);
+    {
+      var y = a => {
+        var s = D();
+        t(a, s)
+      };
+      h(N, a => {
+        r(o) < f.length - 1 && a(y)
+      })
+    }
+    d(p);
+    var n = _(p, 2),
+      z = m(n);
+    {
+      let a = q(() => r(o) === 0);
+      A(z, {
+        get patchNote() {
+          return r(x)
+        },
+        get latest() {
+          return r(a)
+        }
+      })
+    }
+    d(n), d(v), W(() => I(v, `animation: patchSlideIn 0.3s ease-out ${r(o)*50}ms both`)), t(e, v)
+  }), d(l), t(b, l), k()
 }
 export {
-  T as W
+  T as P
 };

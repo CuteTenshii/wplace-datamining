@@ -1,22 +1,22 @@
 import {
-  g as r
+  g as t
 } from "./BhCkpOlh.js";
-const a = () => "No alliance",
-  t = () => "Sem aliança",
-  l = () => "无联盟",
-  i = () => "Ohne Allianz",
-  o = () => "Sin alianza",
-  c = () => "Sans alliance",
-  u = () => "Senza alleanza",
-  _ = () => "同盟なし",
-  s = () => "Bez sojuszu",
-  f = () => "Без альянса",
-  p = () => "Без альянсу",
-  z = () => "Không liên minh",
-  S = (h = {}, e = {}) => {
-    const n = e.locale ?? r();
-    return n === "en" ? a() : n === "pt" ? t() : n === "ch" ? l() : n === "de" ? i() : n === "es" ? o() : n === "fr" ? c() : n === "it" ? u() : n === "jp" ? _() : n === "pl" ? s() : n === "ru" ? f() : n === "uk" ? p() : z()
+const n = () => "Save",
+  s = () => "Salvar",
+  u = () => "保存",
+  a = () => "Speichern",
+  c = () => "Guardar",
+  o = () => "Enregistrer",
+  i = () => "Salva",
+  v = () => "保存",
+  f = () => "Zapisz",
+  _ = () => "Сохранить",
+  p = () => "Зберегти",
+  l = () => "Lưu",
+  g = (S = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? n() : r === "pt" ? s() : r === "ch" ? u() : r === "de" ? a() : r === "es" ? c() : r === "fr" ? o() : r === "it" ? i() : r === "jp" ? v() : r === "pl" ? f() : r === "ru" ? _() : r === "uk" ? p() : l()
   };
 export {
-  S as n
+  g as s
 };

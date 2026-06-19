@@ -1,73 +1,148 @@
+import {
+  g as B
+} from "./BhCkpOlh.js";
 import "./Bzak7iHL.js";
 import {
-  a as T,
-  w as M
+  a as s,
+  w as G,
+  k as K,
+  p as Q,
+  q,
+  f as y,
+  i as T,
+  b as U,
+  u as S,
+  d as m,
+  aI as v,
+  r as x,
+  t as h,
+  c as w,
+  l as c
 } from "./CV6xI6o5.js";
 import {
-  d as Z
-} from "./rONmwD0j.js";
+  d as V,
+  a as g,
+  c as z,
+  s as d
+} from "./BJwrq-LT.js";
 import {
-  r as b
+  r as F,
+  p
 } from "./BQ880tYw.js";
+import {
+  s as k
+} from "./DWZhoQU0.js";
+import {
+  i as C
+} from "./iywslKou.js";
+import {
+  P as H
+} from "./BsjmaKNh.js";
+import {
+  u as J
+} from "./B3yINfo4.js";
+const W = () => "Pixels painted",
+  X = () => "Pixels pintados",
+  Y = () => "已绘制像素数",
+  $ = () => "Gemalte Pixel",
+  ee = () => "Píxeles pintados",
+  ne = () => "Pixels peints",
+  te = () => "Pixel dipinti",
+  ae = () => "塗られたピクセル数",
+  re = () => "Pomalowane piksele",
+  ie = () => "Нарисованные пиксели",
+  le = () => "Намальовані пікселі",
+  se = () => "Pixel đã tô",
+  Ie = (r = {}, e = {}) => {
+    const t = e.locale ?? B();
+    return t === "en" ? W() : t === "pt" ? X() : t === "ch" ? Y() : t === "de" ? $() : t === "es" ? ee() : t === "fr" ? ne() : t === "it" ? te() : t === "jp" ? ae() : t === "pl" ? re() : t === "ru" ? ie() : t === "uk" ? le() : se()
+  };
+var oe = new Set(["$$slots", "$$events", "$$legacy"]),
+  ce = G('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
 
-function O(r) {
-  const t = r - 1;
-  return t * t * t + 1
-}
-
-function k(r, {
-  from: t,
-  to: a
-}, e = {}) {
-  var {
-    delay: f = 0,
-    duration: n = s => Math.sqrt(s) * 120,
-    easing: u = O
-  } = e, o = getComputedStyle(r), g = o.transform === "none" ? "" : o.transform, [v, h] = o.transformOrigin.split(" ").map(parseFloat);
-  v /= r.clientWidth, h /= r.clientHeight;
-  var c = U(r),
-    m = r.clientWidth / a.width / c,
-    d = r.clientHeight / a.height / c,
-    x = t.left + t.width * v,
-    y = t.top + t.height * h,
-    w = a.left + a.width * v,
-    $ = a.top + a.height * h,
-    l = (x - w) * m,
-    p = (y - $) * d,
-    S = t.width / a.width,
-    q = t.height / a.height;
-  return {
-    delay: f,
-    duration: typeof n == "function" ? n(Math.sqrt(l * l + p * p)) : n,
-    easing: u,
-    css: (s, i) => {
-      var C = i * l,
-        _ = i * p,
-        z = s + i * S,
-        H = s + i * q;
-      return `transform: ${g} translate(${C}px, ${_}px) scale(${z}, ${H});`
-    }
-  }
-}
-
-function U(r) {
-  if ("currentCSSZoom" in r) return r.currentCSSZoom;
-  for (var t = r, a = 1; t !== null;) a *= +getComputedStyle(t).zoom, t = t.parentElement;
-  return a
-}
-var W = new Set(["$$slots", "$$events", "$$legacy"]),
-  B = M('<svg><path d="M280-200v-80h284q63 0 109.5-40T720-420q0-60-46.5-100T564-560H312l104 104-56 56-200-200 200-200 56 56-104 104h252q97 0 166.5 63T800-420q0 94-69.5 157T564-200H280Z"></path></svg>');
-
-function A(r, t) {
-  let a = b(t, W);
-  var e = B();
-  Z(e, () => ({
+function be(r, e) {
+  let t = F(e, oe);
+  var o = ce();
+  V(o, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
-    ...a
-  })), T(r, e)
+    ...t
+  })), s(r, o)
 }
+
+function L(r) {
+  return `/dashboard/alliances?id=${encodeURIComponent(String(r))}`
+}
+
+function de(r) {
+  typeof window > "u" || window.open(L(r), "_blank", "noopener,noreferrer")
+}
+var pe = w('<span role="link" tabindex="0"><!></span>'),
+  ue = w('<a target="_blank" rel="noopener noreferrer"><!></a>'),
+  fe = w("<span><!></span>");
+
+function qe(r, e) {
+  Q(e, !0);
+  let t = p(e, "mode", 3, "anchor"),
+    o = p(e, "class", 3, ""),
+    P = p(e, "linkClass", 19, o),
+    A = p(e, "textClass", 19, o);
+  const D = S(() => e.allianceId != null && e.allianceId > 0 && J.hasAnyPermission(H.dashboard.alliances)),
+    E = S(() => e.allianceId == null ? "" : L(e.allianceId));
+
+  function u(a) {
+    a.stopPropagation()
+  }
+
+  function I(a) {
+    e.allianceId == null || e.allianceId <= 0 || (a.preventDefault(), a.stopPropagation(), de(e.allianceId))
+  }
+
+  function j(a) {
+    a.key !== "Enter" && a.key !== " " || I(a)
+  }
+  var b = q(),
+    M = y(b);
+  {
+    var N = a => {
+        var i = q(),
+          f = y(i);
+        {
+          var R = l => {
+              var n = pe(),
+                _ = m(n);
+              k(_, () => e.children ?? v), x(n), h(() => {
+                g(n, 1, `cursor-pointer hover:underline ${P()}`), d(n, "title", e.title)
+              }), c("pointerdown", n, u), c("click", n, I), c("keydown", n, j), s(l, n)
+            },
+            Z = l => {
+              var n = ue(),
+                _ = m(n);
+              k(_, () => e.children ?? v), x(n), h(() => {
+                g(n, 1, `cursor-pointer hover:underline ${P()}`), d(n, "href", T(E)), d(n, "title", e.title)
+              }), c("pointerdown", n, u), c("click", n, u), s(l, n)
+            };
+          C(f, l => {
+            t() === "inline" ? l(R) : l(Z, -1)
+          })
+        }
+        s(a, i)
+      },
+      O = a => {
+        var i = fe(),
+          f = m(i);
+        k(f, () => e.children ?? v), x(i), h(() => {
+          g(i, 1, z(A())), d(i, "title", e.title)
+        }), s(a, i)
+      };
+    C(M, a => {
+      T(D) ? a(N) : a(O, -1)
+    })
+  }
+  s(r, b), U()
+}
+K(["pointerdown", "click", "keydown"]);
 export {
-  A as U, k as f
+  be as L, qe as S, Ie as p
 };

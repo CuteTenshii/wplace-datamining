@@ -1,107 +1,122 @@
 import "./Bzak7iHL.js";
 import {
-  o as U
-} from "./CqGGwggA.js";
-import {
-  p as V,
-  h as W,
-  q as X,
-  f as Y,
-  i as Z,
-  a as c,
-  b as p,
-  e as $,
+  k as G,
+  p as I,
+  b as J,
   t as x,
-  r as ee,
-  c as C
+  i as k,
+  l as K,
+  h as B,
+  a as d,
+  d as e,
+  s as f,
+  c as u,
+  e as L,
+  r as o
 } from "./CV6xI6o5.js";
 import {
-  i as te
+  s as l
+} from "./hBdZmm-r.js";
+import {
+  i as T
 } from "./iywslKou.js";
 import {
-  e as ae,
-  i as ne
-} from "./C7N0act3.js";
+  a as M
+} from "./BJwrq-LT.js";
 import {
-  b as _,
-  a as oe
-} from "./rONmwD0j.js";
-import {
-  p as t
+  p as g
 } from "./BQ880tYw.js";
-var ie = C('<div class="confetti svelte-1jr4tp1"></div>'),
-  re = C("<div></div>");
+import {
+  D as N
+} from "./CDybpNZN.js";
+import "./BhCkpOlh.js";
+import {
+  c as O
+} from "./D6_ahSxh.js";
+import {
+  c as Q
+} from "./BZcJYfQJ.js";
+var R = u('<h3 class="text-xl font-bold"> </h3>'),
+  S = u('<p class="text-base-content/80 mt-1 text-sm"> </p>'),
+  U = u('<span class="loading loading-spinner center-absolute absolute"></span>'),
+  V = u('<div><p class="text-lg"> </p> <!> <div class="mt-6 flex justify-end gap-3 pb-2"><form method="dialog"><button class="btn btn-ghost hover:bg-base-content/10"> </button></form> <button> <!></button></div></div>');
 
-function ye(M, e) {
-  V(e, !0);
-  const b = t(e, "size", 3, 10),
-    f = t(e, "x", 19, () => [-.5, .5]),
-    m = t(e, "y", 19, () => [.25, 1]),
-    i = t(e, "duration", 3, 2e3),
-    r = t(e, "infinite", 3, !1),
-    l = t(e, "delay", 19, () => [0, 50]),
-    u = t(e, "colorRange", 19, () => [0, 360]),
-    s = t(e, "colorArray", 19, () => []),
-    z = t(e, "amount", 3, 50),
-    d = t(e, "iterationCount", 3, 1),
-    R = t(e, "fallDistance", 3, "100px"),
-    j = t(e, "rounded", 3, !1),
-    k = t(e, "cone", 3, !1),
-    w = t(e, "noGravity", 3, !1),
-    A = t(e, "xSpread", 3, .15),
-    D = t(e, "destroyOnComplete", 3, !0),
-    F = t(e, "disableForReducedMotion", 3, !1);
-  let v = $(!1);
-  U(() => {
-    !D() || r() || typeof d() == "string" || setTimeout(() => W(v, !0), (i() + l()[1]) * d())
-  });
-
-  function a(o, n) {
-    return Math.random() * (n - o) + o
-  }
-
-  function G() {
-    return s().length ? s()[Math.round(Math.random() * (s().length - 1))] : `hsl(${Math.round(a(u()[0],u()[1]))}, 75%, 50%)`
-  }
-  var y = X(),
-    O = Y(y);
-  {
-    var S = o => {
-      var n = re();
-      let g;
-      ae(n, 21, () => ({
-        length: z()
-      }), ne, (q, le) => {
-        var h = ie();
-        x((B, T, E, H, I, J, K, L, N, P, Q) => _(h, `
-        --color: ${B??""};
-        --skew: ${T??""}deg,${E??""}deg;
-        --rotation-xyz: ${H??""}, ${I??""}, ${J??""};
-        --rotation-deg: ${K??""}deg;
-        --translate-y-multiplier: ${L??""};
-        --translate-x-multiplier: ${N??""};
-        --scale: ${P??""};
-        --transition-delay: ${Q??""}ms;
-        --transition-duration: ${r()?`calc(${i()}ms * var(--scale))`:`${i()}ms`};`), [() => G(), () => a(-45, 45), () => a(-45, 45), () => a(-10, 10), () => a(-10, 10), () => a(-10, 10), () => a(0, 360), () => a(m()[0], m()[1]), () => a(f()[0], f()[1]), () => .1 * a(2, 10), () => a(l()[0], l()[1])]), c(q, h)
-      }), ee(n), x(() => {
-        g = oe(n, 1, "confetti-holder svelte-1jr4tp1", null, g, {
-          rounded: j(),
-          cone: k(),
-          "no-gravity": w(),
-          "reduced-motion": F()
-        }), _(n, `
-    --fall-distance: ${R()??""};
-    --size: ${b()??""}px;
-    --x-spread: ${1-A()};
-    --transition-iteration-count: ${(r()?"infinite":d())??""};`)
-      }), c(o, n)
-    };
-    te(O, o => {
-      Z(v) || o(S)
-    })
-  }
-  c(M, y), p()
+function nt(j, t) {
+  I(t, !0);
+  let v = g(t, "open", 15),
+    h = g(t, "type", 3, "confirmation"),
+    H = g(t, "buttonText", 19, () => Q()),
+    m = L(!1);
+  N(j, {
+    dialogClass: "!bg-black/80",
+    modalBoxClass: "max-w-md max-sm:!w-11/12 max-sm:!h-auto max-sm:!max-w-md max-sm:!max-h-[85vh] max-sm:!rounded-xl",
+    hasCloseButton: !1,
+    isDynamicHeight: !0,
+    get open() {
+      return v()
+    },
+    set open(r) {
+      v(r)
+    },
+    header: r => {
+      var c = R(),
+        s = e(c, !0);
+      o(c), x(() => l(s, t.title)), d(r, c)
+    },
+    children: (r, c) => {
+      var s = V(),
+        p = e(s),
+        P = e(p, !0);
+      o(p);
+      var _ = f(p, 2);
+      {
+        var q = a => {
+          var i = S(),
+            F = e(i, !0);
+          o(i), x(() => l(F, t.subDescription)), d(a, i)
+        };
+        T(_, a => {
+          t.subDescription && a(q)
+        })
+      }
+      var y = f(_, 2),
+        b = e(y),
+        w = e(b),
+        z = e(w, !0);
+      o(w), o(b);
+      var n = f(b, 2);
+      let C;
+      var D = e(n),
+        A = f(D);
+      {
+        var E = a => {
+          var i = U();
+          d(a, i)
+        };
+        T(A, a => {
+          k(m) && a(E)
+        })
+      }
+      o(n), o(y), o(s), x(a => {
+        l(P, t.description), l(z, a), C = M(n, 1, "btn min-w-32 px-6", null, C, {
+          "btn-error": h() === "warning",
+          "btn-primary": h() === "confirmation"
+        }), n.disabled = k(m), l(D, `${H()??""} `)
+      }, [() => O()]), K("click", n, async () => {
+        try {
+          B(m, !0), v(await t.onConfirm())
+        } finally {
+          B(m, !1)
+        }
+      }), d(r, s)
+    },
+    $$slots: {
+      header: !0,
+      default: !0
+    }
+  }), J()
 }
+G(["click"]);
 export {
-  ye as C
+  nt as C
 };

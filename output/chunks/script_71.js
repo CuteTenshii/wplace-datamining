@@ -1,48 +1,22 @@
 import {
-  J as d,
-  aE as g,
-  I as c,
-  aF as l,
-  L as m,
-  aG as b,
-  i as p,
-  at as v,
-  aH as h
-} from "./CV6xI6o5.js";
-
-function x(n = !1) {
-  const t = d,
-    e = t.l.u;
-  if (!e) return;
-  let f = () => v(t.s);
-  if (n) {
-    let a = 0,
-      s = {};
-    const _ = h(() => {
-      let i = !1;
-      const r = t.s;
-      for (const o in r) r[o] !== s[o] && (s[o] = r[o], i = !0);
-      return i && a++, a
-    });
-    f = () => p(_)
-  }
-  e.b.length && g(() => {
-    u(t, f), l(e.b)
-  }), c(() => {
-    const a = m(() => e.m.map(b));
-    return () => {
-      for (const s of a) typeof s == "function" && s()
-    }
-  }), e.a.length && c(() => {
-    u(t, f), l(e.a)
-  })
-}
-
-function u(n, t) {
-  if (n.l.s)
-    for (const e of n.l.s) p(e);
-  t()
-}
+  g as n
+} from "./BhCkpOlh.js";
+const t = () => "Leaderboard",
+  a = () => "Ranking",
+  o = () => "排行榜",
+  d = () => "Bestenliste",
+  u = () => "Clasificación",
+  s = () => "Classement",
+  l = () => "Classifica",
+  i = () => "ランキング",
+  c = () => "Ranking",
+  f = () => "Таблица лидеров",
+  b = () => "Таблиця лідерів",
+  _ = () => "Bảng xếp hạng",
+  k = (p = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? t() : r === "pt" ? a() : r === "ch" ? o() : r === "de" ? d() : r === "es" ? u() : r === "fr" ? s() : r === "it" ? l() : r === "jp" ? i() : r === "pl" ? c() : r === "ru" ? f() : r === "uk" ? b() : _()
+  };
 export {
-  x as i
+  k as l
 };

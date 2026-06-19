@@ -1,78 +1,22 @@
-const x = t => t;
-
-function h(t) {
-  const o = t - 1;
-  return o * o * o + 1
-}
-
-function f(t) {
-  const o = typeof t == "string" && t.match(/^\s*(-?[\d.]+)([^\s]*)\s*$/);
-  return o ? [parseFloat(o[1]), o[2] || "px"] : [t, "px"]
-}
-
-function b(t, {
-  delay: o = 0,
-  duration: i = 400,
-  easing: c = x
-} = {}) {
-  const p = +getComputedStyle(t).opacity;
-  return {
-    delay: o,
-    duration: i,
-    easing: c,
-    css: n => `opacity: ${n*p}`
-  }
-}
-
-function v(t, {
-  delay: o = 0,
-  duration: i = 400,
-  easing: c = h,
-  x: p = 0,
-  y: n = 0,
-  opacity: l = 0
-} = {}) {
-  const e = getComputedStyle(t),
-    d = +e.opacity,
-    a = e.transform === "none" ? "" : e.transform,
-    s = d * (1 - l),
-    [_, y] = f(p),
-    [u, m] = f(n);
-  return {
-    delay: o,
-    duration: i,
-    easing: c,
-    css: ($, g) => `
-			transform: ${a} translate(${(1-$)*_}${y}, ${(1-$)*u}${m});
-			opacity: ${d-s*g}`
-  }
-}
-
-function F(t, {
-  delay: o = 0,
-  duration: i = 400,
-  easing: c = h,
-  axis: p = "y"
-} = {}) {
-  const n = getComputedStyle(t),
-    l = +n.opacity,
-    e = p === "y" ? "height" : "width",
-    d = parseFloat(n[e]),
-    a = p === "y" ? ["top", "bottom"] : ["left", "right"],
-    s = a.map(r => `${r[0].toUpperCase()}${r.slice(1)}`),
-    _ = parseFloat(n[`padding${s[0]}`]),
-    y = parseFloat(n[`padding${s[1]}`]),
-    u = parseFloat(n[`margin${s[0]}`]),
-    m = parseFloat(n[`margin${s[1]}`]),
-    $ = parseFloat(n[`border${s[0]}Width`]),
-    g = parseFloat(n[`border${s[1]}Width`]);
-  return {
-    delay: o,
-    duration: i,
-    easing: c,
-    css: r => `overflow: hidden;opacity: ${Math.min(r*20,1)*l};${e}: ${r*d}px;padding-${a[0]}: ${r*_}px;padding-${a[1]}: ${r*y}px;margin-${a[0]}: ${r*u}px;margin-${a[1]}: ${r*m}px;border-${a[0]}-width: ${r*$}px;border-${a[1]}-width: ${r*g}px;min-${e}: 0`
-  }
-}
+import {
+  g as e
+} from "./BhCkpOlh.js";
+const n = () => "Other",
+  o = () => "Outro motivo",
+  u = () => "其他",
+  c = () => "Anderer Grund",
+  s = () => "Otro",
+  i = () => "Autre raison",
+  h = () => "Altro motivo",
+  f = () => "その他",
+  _ = () => "Inny powód",
+  p = () => "Другое",
+  l = () => "Інше",
+  a = () => "Khác",
+  v = (d = {}, t = {}) => {
+    const r = t.locale ?? e();
+    return r === "en" ? n() : r === "pt" ? o() : r === "ch" ? u() : r === "de" ? c() : r === "es" ? s() : r === "fr" ? i() : r === "it" ? h() : r === "jp" ? f() : r === "pl" ? _() : r === "ru" ? p() : r === "uk" ? l() : a()
+  };
 export {
-  v as a, b as f, F as s
+  v as o
 };

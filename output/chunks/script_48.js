@@ -1,164 +1,96 @@
 import {
-  g as C
-} from "./BhCkpOlh.js";
-import "./Bzak7iHL.js";
-import {
-  a as o,
-  w as z,
-  k as G,
-  p as K,
-  q,
-  f as y,
-  i as D,
-  b as Q,
-  u as T,
-  d as m,
-  aI as v,
-  r as x,
-  t as h,
-  c as w,
-  l as c
+  au as t,
+  a0 as k,
+  R as w,
+  L as E,
+  S as b,
+  x as n,
+  av as C,
+  aw as A,
+  an as S
 } from "./CV6xI6o5.js";
-import {
-  d as U,
-  a as g,
-  c as V,
-  s as u
-} from "./rONmwD0j.js";
-import {
-  r as F,
-  p
-} from "./BQ880tYw.js";
-import {
-  s as k
-} from "./DWZhoQU0.js";
-import {
-  i as S
-} from "./iywslKou.js";
-import {
-  P as H
-} from "./B8bcn1UK.js";
-import {
-  u as J
-} from "./DbY1VRJD.js";
-const W = () => "Description",
-  X = () => "Descrição",
-  Y = () => "描述",
-  $ = () => "Beschreibung",
-  ee = () => "Descripción",
-  ne = () => "Description",
-  te = () => "Descrizione",
-  re = () => "説明",
-  ie = () => "Opis",
-  ae = () => "Описание",
-  se = () => "Опис",
-  oe = () => "Mô tả",
-  Me = (i = {}, n = {}) => {
-    const e = n.locale ?? C();
-    return e === "en" ? W() : e === "pt" ? X() : e === "ch" ? Y() : e === "de" ? $() : e === "es" ? ee() : e === "fr" ? ne() : e === "it" ? te() : e === "jp" ? re() : e === "pl" ? ie() : e === "ru" ? ae() : e === "uk" ? se() : oe()
-  },
-  le = () => "Pixels painted",
-  ce = () => "Pixels pintados",
-  ue = () => "已绘制像素数",
-  pe = () => "Gemalte Pixel",
-  de = () => "Píxeles pintados",
-  fe = () => "Pixels peints",
-  _e = () => "Pixel dipinti",
-  me = () => "塗られたピクセル数",
-  ve = () => "Pomalowane piksele",
-  xe = () => "Нарисованные пиксели",
-  he = () => "Намальовані пікселі",
-  ge = () => "Pixel đã tô",
-  Oe = (i = {}, n = {}) => {
-    const e = n.locale ?? C();
-    return e === "en" ? le() : e === "pt" ? ce() : e === "ch" ? ue() : e === "de" ? pe() : e === "es" ? de() : e === "fr" ? fe() : e === "it" ? _e() : e === "jp" ? me() : e === "pl" ? ve() : e === "ru" ? xe() : e === "uk" ? he() : ge()
-  };
-var ke = new Set(["$$slots", "$$events", "$$legacy"]),
-  we = z('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
 
-function Be(i, n) {
-  let e = F(n, ke);
-  var l = we();
-  U(l, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...e
-  })), o(i, l)
+function q(e, v, l = v) {
+  var f = new WeakSet;
+  t(e, "input", async c => {
+    var d = c ? e.defaultValue : e.value;
+    if (d = u(e) ? m(d) : d, l(d), k !== null && f.add(k), await w(), d !== (d = v())) {
+      var r = e.selectionStart,
+        s = e.selectionEnd,
+        o = e.value.length;
+      if (e.value = d ?? "", s !== null) {
+        var a = e.value.length;
+        r === s && s === o && a > o ? (e.selectionStart = a, e.selectionEnd = a) : (e.selectionStart = r, e.selectionEnd = Math.min(s, a))
+      }
+    }
+  }), (n && e.defaultValue !== e.value || E(v) == null && e.value) && (l(u(e) ? m(e.value) : e.value), k !== null && f.add(k)), b(() => {
+    var c = v();
+    if (e === document.activeElement) {
+      var d = k;
+      if (f.has(d)) return
+    }
+    u(e) && c === m(e.value) || e.type === "date" && !c && !e.value || c !== e.value && (e.value = c ?? "")
+  })
+}
+const _ = new Set;
+
+function x(e, v, l, f, c = f) {
+  var d = l.getAttribute("type") === "checkbox",
+    r = e;
+  let s = !1;
+  if (v !== null)
+    for (var o of v) r = r[o] ?? (r[o] = []);
+  r.push(l), t(l, "change", () => {
+    var a = l.__value;
+    d && (a = y(r, a, l.checked)), c(a)
+  }, () => c(d ? [] : null)), b(() => {
+    var a = f();
+    if (n && l.defaultChecked !== l.checked) {
+      s = !0;
+      return
+    }
+    d ? (a = a || [], l.checked = a.includes(l.__value)) : l.checked = C(l.__value, a)
+  }), A(() => {
+    var a = r.indexOf(l);
+    a !== -1 && r.splice(a, 1)
+  }), _.has(r) || (_.add(r), S(() => {
+    r.sort((a, h) => a.compareDocumentPosition(h) === 4 ? -1 : 1), _.delete(r)
+  })), S(() => {
+    if (s) {
+      var a;
+      if (d) a = y(r, a, l.checked);
+      else {
+        var h = r.find(i => i.checked);
+        a = h == null ? void 0 : h.__value
+      }
+      c(a)
+    }
+  })
 }
 
-function L(i) {
-  return `/dashboard/alliances?id=${encodeURIComponent(String(i))}`
+function B(e, v, l = v) {
+  t(e, "change", f => {
+    var c = f ? e.defaultChecked : e.checked;
+    l(c)
+  }), (n && e.defaultChecked !== e.checked || E(v) == null) && l(e.checked), b(() => {
+    var f = v();
+    e.checked = !!f
+  })
 }
 
-function Pe(i) {
-  typeof window > "u" || window.open(L(i), "_blank", "noopener,noreferrer")
+function y(e, v, l) {
+  for (var f = new Set, c = 0; c < e.length; c += 1) e[c].checked && f.add(e[c].__value);
+  return l || f.delete(v), Array.from(f)
 }
-var Ie = w('<span role="link" tabindex="0"><!></span>'),
-  be = w('<a target="_blank" rel="noopener noreferrer"><!></a>'),
-  qe = w("<span><!></span>");
 
-function Ne(i, n) {
-  K(n, !0);
-  let e = p(n, "mode", 3, "anchor"),
-    l = p(n, "class", 3, ""),
-    P = p(n, "linkClass", 19, l),
-    j = p(n, "textClass", 19, l);
-  const A = T(() => n.allianceId != null && n.allianceId > 0 && J.hasAnyPermission(H.dashboard.alliances)),
-    E = T(() => n.allianceId == null ? "" : L(n.allianceId));
-
-  function d(r) {
-    r.stopPropagation()
-  }
-
-  function I(r) {
-    n.allianceId == null || n.allianceId <= 0 || (r.preventDefault(), r.stopPropagation(), Pe(n.allianceId))
-  }
-
-  function M(r) {
-    r.key !== "Enter" && r.key !== " " || I(r)
-  }
-  var b = q(),
-    O = y(b);
-  {
-    var B = r => {
-        var a = q(),
-          f = y(a);
-        {
-          var R = s => {
-              var t = Ie(),
-                _ = m(t);
-              k(_, () => n.children ?? v), x(t), h(() => {
-                g(t, 1, `cursor-pointer hover:underline ${P()}`), u(t, "title", n.title)
-              }), c("pointerdown", t, d), c("click", t, I), c("keydown", t, M), o(s, t)
-            },
-            Z = s => {
-              var t = be(),
-                _ = m(t);
-              k(_, () => n.children ?? v), x(t), h(() => {
-                g(t, 1, `cursor-pointer hover:underline ${P()}`), u(t, "href", D(E)), u(t, "title", n.title)
-              }), c("pointerdown", t, d), c("click", t, d), o(s, t)
-            };
-          S(f, s => {
-            e() === "inline" ? s(R) : s(Z, -1)
-          })
-        }
-        o(r, a)
-      },
-      N = r => {
-        var a = qe(),
-          f = m(a);
-        k(f, () => n.children ?? v), x(a), h(() => {
-          g(a, 1, V(j())), u(a, "title", n.title)
-        }), o(r, a)
-      };
-    S(O, r => {
-      D(A) ? r(B) : r(N, -1)
-    })
-  }
-  o(i, b), Q()
+function u(e) {
+  var v = e.type;
+  return v === "number" || v === "range"
 }
-G(["pointerdown", "click", "keydown"]);
+
+function m(e) {
+  return e === "" ? null : +e
+}
 export {
-  Be as L, Ne as S, Me as d, Oe as p
+  B as a, q as b, x as c
 };

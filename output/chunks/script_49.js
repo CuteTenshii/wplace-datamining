@@ -1,22 +1,22 @@
 import {
-  g as t
+  g as e
 } from "./BhCkpOlh.js";
-const n = () => "Preview",
-  i = () => "Prévia",
-  u = () => "预览",
-  p = () => "Vorschau",
-  o = () => "Vista previa",
-  c = () => "Aperçu",
-  s = () => "Anteprima",
-  v = () => "プレビュー",
-  f = () => "Podgląd",
-  w = () => "Предпросмотр",
-  _ = () => "Попередній перегляд",
-  a = () => "Xem trước",
-  m = (l = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? n() : r === "pt" ? i() : r === "ch" ? u() : r === "de" ? p() : r === "es" ? o() : r === "fr" ? c() : r === "it" ? s() : r === "jp" ? v() : r === "pl" ? f() : r === "ru" ? w() : r === "uk" ? _() : a()
+const c = () => "Cancel",
+  t = () => "Cancelar",
+  u = () => "取消",
+  l = () => "Abbrechen",
+  a = () => "Cancelar",
+  o = () => "Annuler",
+  s = () => "Annulla",
+  i = () => "キャンセル",
+  f = () => "Anuluj",
+  _ = () => "Отмена",
+  p = () => "Скасувати",
+  A = () => "Hủy",
+  C = (h = {}, r = {}) => {
+    const n = r.locale ?? e();
+    return n === "en" ? c() : n === "pt" ? t() : n === "ch" ? u() : n === "de" ? l() : n === "es" ? a() : n === "fr" ? o() : n === "it" ? s() : n === "jp" ? i() : n === "pl" ? f() : n === "ru" ? _() : n === "uk" ? p() : A()
   };
 export {
-  m as p
+  C as c
 };
