@@ -1,22 +1,22 @@
 import {
-  g as e
+  g as t
 } from "./BhCkpOlh.js";
-const t = () => "View on map",
-  _ = () => "Ver no mapa",
-  o = () => "在地图上查看",
-  a = () => "Auf der Karte anzeigen",
-  i = () => "Ver en el mapa",
-  u = () => "Voir sur la carte",
-  p = () => "Visualizza sulla mappa",
-  s = () => "地図で表示",
-  c = () => "Zobacz na mapie",
-  m = () => "Посмотреть на карте",
-  f = () => "Переглянути на карті",
-  v = () => "Xem trên bản đồ",
-  V = (w = {}, n = {}) => {
-    const r = n.locale ?? e();
-    return r === "en" ? t() : r === "pt" ? _() : r === "ch" ? o() : r === "de" ? a() : r === "es" ? i() : r === "fr" ? u() : r === "it" ? p() : r === "jp" ? s() : r === "pl" ? c() : r === "ru" ? m() : r === "uk" ? f() : v()
+const n = () => "Appeal",
+  p = () => "Apelo",
+  a = () => "申诉",
+  u = () => "Einspruch",
+  o = () => "Apelación",
+  c = () => "Recours",
+  l = () => "Ricorso",
+  s = () => "異議申立て",
+  i = () => "Odwołanie",
+  f = () => "Апелляция",
+  _ = () => "Апеляція",
+  h = () => "Kháng cáo",
+  A = (d = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? n() : r === "pt" ? p() : r === "ch" ? a() : r === "de" ? u() : r === "es" ? o() : r === "fr" ? c() : r === "it" ? l() : r === "jp" ? s() : r === "pl" ? i() : r === "ru" ? f() : r === "uk" ? _() : h()
   };
 export {
-  V as v
+  A as a
 };

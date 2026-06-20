@@ -1,174 +1,121 @@
-var Pq = Object.defineProperty;
-var rq = e => {
-  throw TypeError(e)
+var At = Object.defineProperty;
+var et = r => {
+  throw TypeError(r)
 };
-var Tq = (e, q, t) => q in e ? Pq(e, q, {
+var kt = (r, t, e) => t in r ? At(r, t, {
   enumerable: !0,
   configurable: !0,
   writable: !0,
-  value: t
-}) : e[q] = t;
-var f = (e, q, t) => Tq(e, typeof q != "symbol" ? q + "" : q, t),
-  W = (e, q, t) => q.has(e) || rq("Cannot " + t);
-var a = (e, q, t) => (W(e, q, "read from private field"), t ? t.call(e) : q.get(e)),
-  g = (e, q, t) => q.has(e) ? rq("Cannot add the same private member more than once") : q instanceof WeakSet ? q.add(e) : q.set(e, t),
-  l = (e, q, t, V) => (W(e, q, "write to private field"), V ? V.call(e, t) : q.set(e, t), t),
-  w = (e, q, t) => (W(e, q, "access private method"), t);
+  value: e
+}) : r[t] = e;
+var m = (r, t, e) => kt(r, typeof t != "symbol" ? t + "" : t, e),
+  V = (r, t, e) => t.has(r) || et("Cannot " + e);
+var c = (r, t, e) => (V(r, t, "read from private field"), e ? e.call(r) : t.get(r)),
+  g = (r, t, e) => t.has(r) ? et("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(r) : t.set(r, e),
+  f = (r, t, e, n) => (V(r, t, "write to private field"), n ? n.call(r, e) : t.set(r, e), e),
+  v = (r, t, e) => (V(r, t, "access private method"), e);
 import {
-  k as K,
-  T as fq,
-  t as Gq,
-  a as R,
-  p as Z,
-  u as X,
-  G as vq,
-  b as Mq
-} from "./B3yINfo4.js";
+  T as ft,
+  g as gt,
+  t as Bt,
+  a as H,
+  q as J,
+  u as Y,
+  r as Ot,
+  G as St,
+  b as Et
+} from "./D7KqenLe.js";
 import {
-  e as nq,
-  i as oq,
-  h as sq,
-  bJ as $,
-  aE as jq,
-  I as kq,
-  L as Lq
-} from "./CV6xI6o5.js";
+  e as rt,
+  i as nt,
+  h as st,
+  bI as Z,
+  aE as Lt,
+  y as Dt,
+  B as Nt
+} from "./CxLQz1V2.js";
 import {
-  g as Cq
-} from "./B7yxV2UO.js";
+  g as Tt
+} from "./DYQE8a57.js";
 import {
-  r as Nq
-} from "./BF2w9uGQ.js";
+  r as _t
+} from "./CtAUB48k.js";
 import {
-  c as hq
-} from "./hBdZmm-r.js";
+  c as ht
+} from "./CMG3kxXu.js";
 import {
-  d as Yq
-} from "./BRnlEJuB.js";
-import {
-  g as Sq
+  g as yt
 } from "./BhCkpOlh.js";
-const Uq = () => "Your browser can't process Google Play purchases. Set Google Chrome as your device's default browser, then reopen WPlace to buy Droplets.",
-  zq = () => "Seu browser não processa compras pela Google Play. Defina o Google Chrome como navegador padrão do dispositivo e reabra o WPlace para comprar Droplets.",
-  xq = () => "你的浏览器无法处理 Google Play 购买。请将 Google Chrome 设为设备默认浏览器，然后重新打开 WPlace 购买 Droplets。",
-  Oq = () => "Dein Browser kann keine Google-Play-Käufe verarbeiten. Lege Google Chrome als Standardbrowser deines Geräts fest und öffne WPlace erneut, um Droplets zu kaufen.",
-  Jq = () => "Tu navegador no puede procesar compras de Google Play. Establece Google Chrome como navegador predeterminado del dispositivo y vuelve a abrir WPlace para comprar Droplets.",
-  Fq = () => "Votre navigateur ne peut pas traiter les achats Google Play. Définissez Google Chrome comme navigateur par défaut de votre appareil, puis rouvrez WPlace pour acheter des Droplets.",
-  Kq = () => "Il tuo browser non può elaborare gli acquisti di Google Play. Imposta Google Chrome come browser predefinito del dispositivo, poi riapri WPlace per acquistare Droplets.",
-  Qq = () => "お使いのブラウザではGoogle Play購入を処理できません。Google Chromeを端末の既定のブラウザに設定し、WPlaceを開き直してDropletsを購入してください。",
-  Wq = () => "Twoja przeglądarka nie obsługuje zakupów w Google Play. Ustaw Google Chrome jako domyślną przeglądarkę urządzenia, a następnie otwórz WPlace ponownie, aby kupić Droplets.",
-  Rq = () => "Ваш браузер не может обрабатывать покупки Google Play. Установите Google Chrome браузером по умолчанию на устройстве и снова откройте WPlace, чтобы купить Droplets.",
-  Zq = () => "Ваш браузер не може обробляти покупки Google Play. Установіть Google Chrome браузером за замовчуванням на пристрої та знову відкрийте WPlace, щоб купити Droplets.",
-  Xq = () => "Trình duyệt của bạn không thể xử lý giao dịch mua qua Google Play. Hãy đặt Google Chrome làm trình duyệt mặc định của thiết bị, sau đó mở lại WPlace để mua Droplets.",
-  Hq = (e = {}, q = {}) => {
-    const t = q.locale ?? Sq();
-    return t === "en" ? Uq() : t === "pt" ? zq() : t === "ch" ? xq() : t === "de" ? Oq() : t === "es" ? Jq() : t === "fr" ? Fq() : t === "it" ? Kq() : t === "jp" ? Qq() : t === "pl" ? Wq() : t === "ru" ? Rq() : t === "uk" ? Zq() : Xq()
+const Ct = () => "Your browser can't process Google Play purchases. Set Google Chrome as your device's default browser, then reopen WPlace to buy Droplets.",
+  Gt = () => "Seu browser não processa compras pela Google Play. Defina o Google Chrome como navegador padrão do dispositivo e reabra o WPlace para comprar Droplets.",
+  zt = () => "你的浏览器无法处理 Google Play 购买。请将 Google Chrome 设为设备默认浏览器，然后重新打开 WPlace 购买 Droplets。",
+  Ut = () => "Dein Browser kann keine Google-Play-Käufe verarbeiten. Lege Google Chrome als Standardbrowser deines Geräts fest und öffne WPlace erneut, um Droplets zu kaufen.",
+  xt = () => "Tu navegador no puede procesar compras de Google Play. Establece Google Chrome como navegador predeterminado del dispositivo y vuelve a abrir WPlace para comprar Droplets.",
+  Rt = () => "Votre navigateur ne peut pas traiter les achats Google Play. Définissez Google Chrome comme navigateur par défaut de votre appareil, puis rouvrez WPlace pour acheter des Droplets.",
+  Kt = () => "Il tuo browser non può elaborare gli acquisti di Google Play. Imposta Google Chrome come browser predefinito del dispositivo, poi riapri WPlace per acquistare Droplets.",
+  Ft = () => "お使いのブラウザではGoogle Play購入を処理できません。Google Chromeを端末の既定のブラウザに設定し、WPlaceを開き直してDropletsを購入してください。",
+  Mt = () => "Twoja przeglądarka nie obsługuje zakupów w Google Play. Ustaw Google Chrome jako domyślną przeglądarkę urządzenia, a następnie otwórz WPlace ponownie, aby kupić Droplets.",
+  qt = () => "Ваш браузер не может обрабатывать покупки Google Play. Установите Google Chrome браузером по умолчанию на устройстве и снова откройте WPlace, чтобы купить Droplets.",
+  Vt = () => "Ваш браузер не може обробляти покупки Google Play. Установіть Google Chrome браузером за замовчуванням на пристрої та знову відкрийте WPlace, щоб купити Droplets.",
+  Ht = () => "Trình duyệt của bạn không thể xử lý giao dịch mua qua Google Play. Hãy đặt Google Chrome làm trình duyệt mặc định của thiết bị, sau đó mở lại WPlace để mua Droplets.",
+  Jt = (r = {}, t = {}) => {
+    const e = t.locale ?? yt();
+    return e === "en" ? Ct() : e === "pt" ? Gt() : e === "ch" ? zt() : e === "de" ? Ut() : e === "es" ? xt() : e === "fr" ? Rt() : e === "it" ? Kt() : e === "jp" ? Ft() : e === "pl" ? Mt() : e === "ru" ? qt() : e === "uk" ? Vt() : Ht()
   },
-  $q = "data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAAEAAAHPAB+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn6pqampqampqampqampqampqampqampqamp29vb29vb29vb29vb29vb29vb29vb29vb2/////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJANgAAAAAAAABzxmm4psAAAAAAD/+8DEAAAF7A1FtDAAIzil6D87kgAAAktuqNu7gOcCAAgEATB8HzcHwfB8+DgIROD4ABAEAQOeCH/iAMXLB9//BB3Lg+AAIgJwBCSoyQ0QES1dNwAYhicYDAiarL8aXE4ZXwYe9BkCgLS/Dg4MKQDMkgCjAiAxujyCQPmFYGBApKtkawq2qi9GqTYgLTpFiGdI9O1D5NmvVykb4Q0iC3QOU5rUBLCQ9IoJWFutwdm2v5UmUWmoy2K9QxuXw5RxuOwA2j2ytp2dZrWp2A2/kMupbmC5HKc2et0mbjSyeld35/luxXs97SW4/JJiln38v54TdWITN+nq3a1Pq93WW/3/vNLLf/////K6sDGP////6PvWxQBFoFJABHMZRCBoQGHo/GW6NG17vGW1Zm25xgoZkkHEXiCgHb9v4bi8evlnFw5BStnezI76WTtDaVvOnLL8s9+1t95y7trVqdf0zfXXtpb2dzNrj94XquvZ0M/NLX6l+vktgwC4jICYwfNAuho0IiQuj////9r102AEMKOmGkMYagJIsBaYDIChgOgJiENow+wojIdUMMSQEYSBUTMZQb0o8Sk0SAjR1t5HOrfQNex7cq0ENSD4pyGX7X0xZTZxIYcKtF3mZptVyMvMJudNbJV6UKXY/pfr32nNn0c5rcEZq6nJYnCORDbENctTk5KWZdS63RUTWFzZVbMV3mt6vHJyziusGx5zczaCWWIN////qcOYSSNcFwyUIAAjtY6tsg5hoaQgzCTEAExUCDBozfYO8qSY3T3MLBgMXFAyoIjSiUtF/0DIhCIBgG52VxKVSh3n1s08dh16HvYXJ8JdlBMxTY839i3jR8vtSlsKfeK0NnC/nM0tLW7FK8/Tyq3KYLswxTDQEYZQZBHdQsioRGajdWcNkfpNOahWTpUJEDyc9LCQ0gcfR2T8/////////2zGWVnTPOpjElOJxIKDcdxGcttHMdDk5//7cMTkAA8Uz0Nd1gAigaJm6eyxPIZMDGR0PEgIGrR49MVAZAmYoKJjqJJImBhKP02+o9Jznif5eVT2eHC0ysbdDWHcRBDdQtNsGHz5fw8l282p0U6XSlewoyfTz751qsNZZnm32XJ+unFUNjmoX7ZOpHcZdMd7QbwNu3WpMQZplTGVCmaoMR34247bm1mKtcK2aK+iQ4ivzjUezP///5geOSUMiJ4hUgCgC0K1WiCQN8vbLG0AQADBIlTNsRCYEzAEsjEodxELxqxP5Q/JrC1wBDIwZKExnLAxQW8x7DEIOswwBYw/DkUH4DcJwDDAHaJgbsOBr7QGlBha6NwBiCDcgQQAxYAIUQGBKBYuBJEAcWJEnQDE4pIly4MoYoqAEDCUAPQRAxqkAJ5GoBgyB4RikbLIcbhtIX7/+4DE6YAUZaM7rZheonoiZ3a28ASIsGAgt7D+AWIjkDSGWD0hfqSddyAgLAQ5QaQn8QDHWOoB4AMjh6g6BZYagtVSTqMjpBSeF6RccsrkVJwiZEC0VjA1cjv+xgbI/0TEwQN0GdBn///9q1N/9v//0/VsitLemubODxzX2KfBVKuK49NlTEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqv/7YMT0gCAhwyP52gAIAAA/w4AABKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqg==",
-  _q = "data:audio/mpeg;base64,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VVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/7QMTxA9NhPR3sPM5AAAA0gAAABFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV",
-  qt = "" + new URL("../assets/notification.CPyrWqU1.mp3", import.meta.url).href,
-  tt = "data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAADAAAHVgCKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioru7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7///////////////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJAUQAAAAAAAAB1ZvGw9zAAAAAAD/+9DEAAAGgANNtBAAJL5DKPc9kEkIAKVy6ZvTvjNiAEAQA4fwcOKBAED85LicHw/BAEHfg+D4f/B8Hwf/Ococ/lz//4P//lwfAAAQCzgEApUAchBICAMDwGwwpg3jDHA2MWkaAxCQqDAjBQMMoFYwVgLDCrX1NfwPQxajfTO/VkEYD4sAuYOwYBgPgBGmQOAYIgDoKER8AN4KNYgISnpehHt0X2WsksoO27zM1duB3IgimTpnXNwTefFr9ly4HYK1lgtE8a3uVY23SCpDEpz4xL3DZVTV8ZygdeB4X+GuX6sTh9sVNAzuwVTIUztBdnLL60VnPsrt8f+fw/LCUy2caLDNmzuzGatmcu97UsVIYilyxqUcpaSPSW63KzZucjnakuzw+zlc5nD7yfL5zPv59z7/dQ9EolEu9pf5V1Y1+7Eayl1qkt8rXLGdi5nz//////////////////9/r9dw1l39/+P73/7////rWr1PdwxvJCIEbNPJ1QmAABaCxKJEmLpurTGDFSAYMB0FQxfggyqAeYtYSphnAwmFmBIYTATyaZhFiAGFIEqY0hJ5wAIxmFKCgaFaihh9A1GSlMSJYunOGWWB6pdsMvN5kqIig49MYApkLhJxyjmgkA1gIGDp1/CEIOLNkht0Ag8+NWKWQOW+aivhGVsj00TCW4CiJWJKkYRECshrDX0vHCHosi1cqERxakomvtDHA2TIAyjt52yUsMz8EMpZDLYdbq3V0XSRtfmhWkyaFM+YpBSrxQBAx03pQHPND6exc0OKEQq3lvKqM9hSCVHlv0yVdJhNZf+1Nx2GYZbqxt2qLJ9GC00ETr2vY+tmMTrOqWWTEkkUeh27PYQFIWX0rcGmtAswPXlLzWp6IVZe/ssk8FZ02r16Xdz3hTwPHJu3DEos63dr2927GPfz3+sM+93/63n3u//D///3nv9/rX71v97/PHuGWv7z/1Uo+X7tNTZ91XyoaWnob1bs9Yp86oQUCZIAAwEB7VQIuyrSQANCQ2GhZMQQ4MOCHMFxAMRwkMAxlMHzDM9QQMAxabsYLC+aWdScYCCZCoabxBOZSGWZcE2FB0xAuPp4zhWswUOJAsxAQMFDR4qN//vAxOUALmI5MbnsgE1xwGT3O7ABhADArk1MFMSD0qUALTCIVTNZ6aumhCoZWXmZixYEi2Kiy35BH02oFLPGCg7rCgQDQYw4ZYE5yE1rTPX1YekYKAYsD1hgHKA0ZBWZkQVFFhX2gNE3fFvt411kDPlAE5BAAMrWnKUzkdUQ4GcKFNJrQ1beZZDA2TyBhzsLNlCcxIeBUAMBCRkBamhsy15MFpJFZV1ovs/V/u78Uh+bo5dMT3L0lpqC3Wi9mVXpPlvn5TNa1Vyq409e/b1XvY/9bHmF3O1dwt2u5ZY444Y8q2a2Ou5Zd/GzvHV7tu/cx5fzv587Xua5ewz1n3+91X/LPesO2M9Zb7c5n3eOHcb+5KDXnf0F87HySsMMMAEIAAAwaBkBfgCqAAS3goeAwxXwM3QBieI+IEf/E3Ckh6ID/mLENJk99YSErPrb/4uVDX/7Vo/+KKI1///VTEFNRTMuMTAwVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVX/+yDE4AAIHGcJGUmAAAAANIOAAARVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV",
-  et = "data:audio/mpeg;base64,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qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/+xDE1gPAAAGkHAAAIAAANIAAAASqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqg==",
-  Vt = "data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAAE/gDLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//////////////////////////////////////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJAOoAAAAAAAABP6u4u+sAAAAAAD/+9DEAAAGhC1UdGMAJM1C6nc34FFSaWP+7vYBAAEOAAiHPJp6YAwtNgQl3qDHKBgo4Th/wf/Lh/8H35R3/4IAg7//gh/+UOcPgABgAAAB0YnM2TIZDUkAGYOFBdqBQkadAmEAgiDTKD1BYUFTGA4LixoJUcUsGkDJrfwYKEmBDRg+gZmBSBeYUQyJj2B9mAOAkYXINwOA3cdvzIrBtMDwFYOAEMZhFcyRwWTDiAGWo/LzSFp7vtDTSQ3bHKocXbPR6kg2U07Vs4KcJaDIIGTHZxDsSjEMyhPing6w8PSYAlwHfdtbFq3lAc1qmqzPxFFV1cbUkrP9GG/cbKIyivlRWq1mzvHDWNad73eE7q3JYPnIerXqKJTtzV3DmUzLZZFM7sv1z9U8czh5wVG4G3nru8cfyy+rhT5TtHTb7jzd3eWO6Wmy3R3e6/DW9b5l/b9e5///87///eY////9///////Df7/8vx/Xf///9f///52O6s3rZINILq82aqo6x1TAYDoYGInIIhASA++E8wYSIkIBd0NdJXDHQL2vFAR4YOsgwGFK6QQiPQDhcITBl4MWgDBEAosgZUgoDGkAwGFAMCCEDEQVAwaOgMChwEQXAwUBg5MTgJcAwARZxBj4Ng0LAigBGYdKKwKBIeIQDHCyhWxMlUmTx0xUCgJFBjnkGFkpk0ZF4gSLLRZJKGARbBQAsZDCCFAhxianDEuspVXRkOUWCGGCYsxZiXa0Ukl/8XOS4vxxjrDJR7RLyeiisxJn//y+11pJqNycOJkgiapIoo0UdS0dL//sUjzHxMgBgMUtVdLRYGrKTEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq//tgxOMAHVGjN7magIAAADSDgAAEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
-  te = rt();
-let aq;
-async function eq() {
-  aq ?? (aq = new AudioContext);
-  const e = aq;
-  return e.state !== "running" && await Promise.race([e.resume().catch(() => {}), new Promise(q => setTimeout(q, 150))]), e.state === "running" ? e : void 0
-}
-
-function ee() {
-  eq()
-}
-
-function yq(e, q) {
-  const t = new GainNode(e, {
-      gain: q
-    }),
-    V = new BiquadFilterNode(e, {
-      type: "lowpass",
-      frequency: 5e3
-    });
-  return t.connect(V).connect(e.destination), t
-}
-
-function I(e, q, t, V, r, n, s) {
-  const A = new OscillatorNode(e, {
-    type: "triangle",
-    frequency: t
-  });
-  s && (A.frequency.setValueAtTime(t, V), A.frequency.exponentialRampToValueAtTime(s, V + r));
-  const i = new GainNode(e);
-  i.gain.setValueAtTime(0, V), i.gain.linearRampToValueAtTime(n, V + .008), i.gain.exponentialRampToValueAtTime(.001, V + r), A.connect(i).connect(q), A.start(V), A.stop(V + r + .05)
-}
-async function Ve() {
-  if (K.muted) return !0;
-  const e = await eq();
-  if (!e) return !1;
-  const q = yq(e, .25),
-    t = e.currentTime + .03;
-  return I(e, q, 523.25, t, .12, .5), I(e, q, 659.25, t + .085, .12, .55), I(e, q, 783.99, t + .17, .12, .6), I(e, q, 1046.5, t + .255, .55, .7), I(e, q, 1318.51, t + .255, .55, .25), I(e, q, 2093, t + .33, .4, .1), !0
-}
-async function re() {
-  if (K.muted) return !0;
-  const e = await eq();
-  if (!e) return !1;
-  const q = yq(e, .22),
-    t = e.currentTime + .03;
-  return I(e, q, 329.63, t, .16, .55), I(e, q, 261.63, t + .15, .5, .6, 233.08), !0
-}
-
-function rt() {
-  const e = {
-    plop: new Audio(tt),
-    smallPlop: new Audio(Vt),
-    bigPlop: new Audio($q),
-    smallDropplet: new Audio(et),
-    droppletAndPlop: new Audio(_q),
-    notification1: new Audio(qt)
+  Yt = () => "Play Billing not supported.",
+  $t = () => "Play Billing não suportado.",
+  Zt = () => "不支持 Play Billing。",
+  Wt = () => "Play Billing wird nicht unterstützt.",
+  Qt = () => "Play Billing no es compatible.",
+  Xt = () => "Play Billing non pris en charge.",
+  te = () => "Play Billing non supportato.",
+  ee = () => "Play Billing はサポートされていません。",
+  re = () => "Play Billing nie jest obsługiwane.",
+  ne = () => "Play Billing не поддерживается.",
+  se = () => "Play Billing не підтримується.",
+  oe = () => "Play Billing không được hỗ trợ.",
+  ie = (r = {}, t = {}) => {
+    const e = t.locale ?? yt();
+    return e === "en" ? Yt() : e === "pt" ? $t() : e === "ch" ? Zt() : e === "de" ? Wt() : e === "es" ? Qt() : e === "fr" ? Xt() : e === "it" ? te() : e === "jp" ? ee() : e === "pl" ? re() : e === "ru" ? ne() : e === "uk" ? se() : oe()
   };
-  for (const q of Object.values(e)) q.preload = "auto", q.volume = .3;
-  return e
-}
 
-function nt(e) {
-  return Math.floor(Math.random() * e)
+function ae(r) {
+  return Math.floor(Math.random() * r)
 }
-const _ = 14.5;
-async function ne() {
-  const e = it();
-  if (e) return e;
+const W = 14.5;
+async function rr() {
+  const r = de();
+  if (r) return r;
   try {
     if ((await navigator.permissions.query({
         name: "geolocation"
       })).state === "granted") {
-      const t = await new Promise((V, r) => navigator.geolocation.getCurrentPosition(n => V(n), n => r(n)));
+      const e = await new Promise((n, s) => navigator.geolocation.getCurrentPosition(o => n(o), o => s(o)));
       return {
-        lat: t.coords.latitude,
-        lng: t.coords.longitude,
-        zoom: _
+        lat: e.coords.latitude,
+        lng: e.coords.longitude,
+        zoom: W
       }
     }
-  } catch (q) {
-    console.error(q)
+  } catch (t) {
+    console.error(t)
   }
   return {
-    ...ot().pos,
-    zoom: _
+    ...ce().pos,
+    zoom: W
   }
 }
 
-function ot() {
-  const e = Object.entries(st),
-    q = nt(e.length),
-    [t, V] = e[q];
+function ce() {
+  const r = Object.entries(ue),
+    t = ae(r.length),
+    [e, n] = r[t];
   return {
-    city: t,
-    pos: V
+    city: e,
+    pos: n
   }
 }
-const st = {
+const ue = {
     tokyo: {
       lat: 35.677545560719665,
       lng: 139.76394445809638
@@ -190,246 +137,246 @@ const st = {
       lng: 151.2083447239608
     }
   },
-  mq = "location";
+  mt = "location";
 
-function at(e, q) {
-  localStorage.setItem(mq, JSON.stringify({
-    ...e,
-    zoom: q
+function le(r, t) {
+  localStorage.setItem(mt, JSON.stringify({
+    ...r,
+    zoom: t
   }))
 }
 
-function it() {
-  const e = localStorage.getItem(mq);
-  if (!e) return;
-  const q = JSON.parse(e);
-  return q.zoom ?? (q.zoom = _), q
+function de() {
+  const r = localStorage.getItem(mt);
+  if (!r) return;
+  const t = JSON.parse(r);
+  return t.zoom ?? (t.zoom = W), t
 }
 
-function oe(e) {
-  return e.lat >= -90 && e.lat <= 90 && e.lng >= -180 && e.lng <= 180
+function nr(r) {
+  return r.lat >= -90 && r.lat <= 90 && r.lng >= -180 && r.lng <= 180
 }
-var S, U;
-class At {
+var z, U;
+class pe {
   constructor() {
-    g(this, S, nq(-1));
-    g(this, U, nq([]))
+    g(this, z, rt(-1));
+    g(this, U, rt([]))
   }
   get idx() {
-    return oq(a(this, S))
+    return nt(c(this, z))
   }
-  set idx(q) {
-    sq(a(this, S), q, !0)
+  set idx(t) {
+    st(c(this, z), t, !0)
   }
   get entries() {
-    return oq(a(this, U))
+    return nt(c(this, U))
   }
-  set entries(q) {
-    sq(a(this, U), q)
+  set entries(t) {
+    st(c(this, U), t)
   }
   hasNext() {
     return this.idx < this.entries.length - 1
   }
-  goToNext(q) {
-    const t = this.idx + 1,
-      V = this.entries[t];
-    V && (this.idx = t, q.flyTo({
-      center: V.pos,
-      zoom: V.zoom
+  goToNext(t) {
+    const e = this.idx + 1,
+      n = this.entries[e];
+    n && (this.idx = e, t.flyTo({
+      center: n.pos,
+      zoom: n.zoom
     }))
   }
   hasPrev() {
     return this.idx > 0
   }
-  goToPrev(q) {
-    const t = this.idx - 1,
-      V = this.entries[t];
-    V && (this.idx = t, q.flyTo({
-      center: V.pos,
-      zoom: V.zoom
+  goToPrev(t) {
+    const e = this.idx - 1,
+      n = this.entries[e];
+    n && (this.idx = e, t.flyTo({
+      center: n.pos,
+      zoom: n.zoom
     }))
   }
   isEmpty() {
     return this.entries.length === 0
   }
-  push(q) {
-    this.idx = this.idx + 1, this.entries = [...this.entries.slice(0, this.idx), q]
+  push(t) {
+    this.idx = this.idx + 1, this.entries = [...this.entries.slice(0, this.idx), t]
   }
 }
-S = new WeakMap, U = new WeakMap;
-const se = new At,
-  iq = typeof globalThis == "object" && globalThis || typeof window == "object" && window || typeof self == "object" && self || typeof global == "object" && global || (function() {
+z = new WeakMap, U = new WeakMap;
+const sr = new pe,
+  ot = typeof globalThis == "object" && globalThis || typeof window == "object" && window || typeof self == "object" && self || typeof global == "object" && global || (function() {
     return this
   })() || Function("return this")();
 
-function ct(e, q = {}) {
+function fe(r, t = {}) {
   const {
-    cache: t = new Map,
-    getCacheKey: V
-  } = q, r = function(n) {
-    const s = V ? V(n) : n;
-    if (t.has(s)) return t.get(s);
-    const A = e.call(this, n);
-    return t.set(s, A), A
+    cache: e = new Map,
+    getCacheKey: n
+  } = t, s = function(o) {
+    const a = n ? n(o) : o;
+    if (e.has(a)) return e.get(a);
+    const l = r.call(this, o);
+    return e.set(a, l), l
   };
-  return r.cache = t, r
+  return s.cache = e, s
 }
 
-function ut() {}
+function ge() {}
 
-function Aq(e) {
-  return Object.getOwnPropertySymbols(e).filter(q => Object.prototype.propertyIsEnumerable.call(e, q))
+function it(r) {
+  return Object.getOwnPropertySymbols(r).filter(t => Object.prototype.propertyIsEnumerable.call(r, t))
 }
 
-function cq(e) {
-  return e == null ? e === void 0 ? "[object Undefined]" : "[object Null]" : Object.prototype.toString.call(e)
+function at(r) {
+  return r == null ? r === void 0 ? "[object Undefined]" : "[object Null]" : Object.prototype.toString.call(r)
 }
-const lt = "[object RegExp]",
-  gt = "[object String]",
-  dt = "[object Number]",
-  pt = "[object Boolean]",
-  uq = "[object Arguments]",
-  ft = "[object Symbol]",
-  ht = "[object Date]",
-  yt = "[object Map]",
-  mt = "[object Set]",
-  wt = "[object Array]",
-  Bt = "[object Function]",
-  Et = "[object ArrayBuffer]",
-  H = "[object Object]",
-  Dt = "[object Error]",
-  bt = "[object DataView]",
-  It = "[object Uint8Array]",
-  Pt = "[object Uint8ClampedArray]",
-  Tt = "[object Uint16Array]",
-  Gt = "[object Uint32Array]",
-  vt = "[object BigUint64Array]",
-  Mt = "[object Int8Array]",
-  jt = "[object Int16Array]",
-  kt = "[object Int32Array]",
-  Lt = "[object BigInt64Array]",
-  Ct = "[object Float32Array]",
-  Nt = "[object Float64Array]";
+const he = "[object RegExp]",
+  ye = "[object String]",
+  me = "[object Number]",
+  we = "[object Boolean]",
+  ct = "[object Arguments]",
+  be = "[object Symbol]",
+  Pe = "[object Date]",
+  ve = "[object Map]",
+  je = "[object Set]",
+  Ie = "[object Array]",
+  Ae = "[object Function]",
+  ke = "[object ArrayBuffer]",
+  $ = "[object Object]",
+  Be = "[object Error]",
+  Oe = "[object DataView]",
+  Se = "[object Uint8Array]",
+  Ee = "[object Uint8ClampedArray]",
+  Le = "[object Uint16Array]",
+  De = "[object Uint32Array]",
+  Ne = "[object BigUint64Array]",
+  Te = "[object Int8Array]",
+  _e = "[object Int16Array]",
+  Ce = "[object Int32Array]",
+  Ge = "[object BigInt64Array]",
+  ze = "[object Float32Array]",
+  Ue = "[object Float64Array]";
 
-function lq(e) {
-  return typeof iq.Buffer < "u" && iq.Buffer.isBuffer(e)
-}
-
-function gq(e) {
-  if (!e || typeof e != "object") return !1;
-  const q = Object.getPrototypeOf(e);
-  return q === null || q === Object.prototype || Object.getPrototypeOf(q) === null ? Object.prototype.toString.call(e) === "[object Object]" : !1
+function ut(r) {
+  return typeof ot.Buffer < "u" && ot.Buffer.isBuffer(r)
 }
 
-function Yt(e, q) {
-  return e === q || Number.isNaN(e) && Number.isNaN(q)
+function lt(r) {
+  if (!r || typeof r != "object") return !1;
+  const t = Object.getPrototypeOf(r);
+  return t === null || t === Object.prototype || Object.getPrototypeOf(t) === null ? Object.prototype.toString.call(r) === "[object Object]" : !1
 }
 
-function St(e, q, t) {
-  return L(e, q, void 0, void 0, void 0, void 0, t)
+function xe(r, t) {
+  return r === t || Number.isNaN(r) && Number.isNaN(t)
 }
 
-function L(e, q, t, V, r, n, s) {
-  const A = s(e, q, t, V, r, n);
-  if (A !== void 0) return A;
-  if (typeof e == typeof q) switch (typeof e) {
+function Re(r, t, e) {
+  return T(r, t, void 0, void 0, void 0, void 0, e)
+}
+
+function T(r, t, e, n, s, o, a) {
+  const l = a(r, t, e, n, s, o);
+  if (l !== void 0) return l;
+  if (typeof r == typeof t) switch (typeof r) {
     case "bigint":
     case "string":
     case "boolean":
     case "symbol":
     case "undefined":
-      return e === q;
+      return r === t;
     case "number":
-      return e === q || Object.is(e, q);
+      return r === t || Object.is(r, t);
     case "function":
-      return e === q;
+      return r === t;
     case "object":
-      return Y(e, q, n, s)
+      return G(r, t, o, a)
   }
-  return Y(e, q, n, s)
+  return G(r, t, o, a)
 }
 
-function Y(e, q, t, V) {
-  if (Object.is(e, q)) return !0;
-  let r = cq(e),
-    n = cq(q);
-  if (r === uq && (r = H), n === uq && (n = H), r !== n) return !1;
-  switch (r) {
-    case gt:
-      return e.toString() === q.toString();
-    case dt: {
-      const i = e.valueOf(),
-        u = q.valueOf();
-      return Yt(i, u)
+function G(r, t, e, n) {
+  if (Object.is(r, t)) return !0;
+  let s = at(r),
+    o = at(t);
+  if (s === ct && (s = $), o === ct && (o = $), s !== o) return !1;
+  switch (s) {
+    case ye:
+      return r.toString() === t.toString();
+    case me: {
+      const u = r.valueOf(),
+        p = t.valueOf();
+      return xe(u, p)
     }
-    case pt:
-    case ht:
-    case ft:
-      return Object.is(e.valueOf(), q.valueOf());
-    case lt:
-      return e.source === q.source && e.flags === q.flags;
-    case Bt:
-      return e === q
+    case we:
+    case Pe:
+    case be:
+      return Object.is(r.valueOf(), t.valueOf());
+    case he:
+      return r.source === t.source && r.flags === t.flags;
+    case Ae:
+      return r === t
   }
-  t = t ?? new Map;
-  const s = t.get(e),
-    A = t.get(q);
-  if (s != null && A != null) return s === q;
-  t.set(e, q), t.set(q, e);
+  e = e ?? new Map;
+  const a = e.get(r),
+    l = e.get(t);
+  if (a != null && l != null) return a === t;
+  e.set(r, t), e.set(t, r);
   try {
-    switch (r) {
-      case yt: {
-        if (e.size !== q.size) return !1;
-        for (const [i, u] of e.entries())
-          if (!q.has(i) || !L(u, q.get(i), i, e, q, t, V)) return !1;
+    switch (s) {
+      case ve: {
+        if (r.size !== t.size) return !1;
+        for (const [u, p] of r.entries())
+          if (!t.has(u) || !T(p, t.get(u), u, r, t, e, n)) return !1;
         return !0
       }
-      case mt: {
-        if (e.size !== q.size) return !1;
-        const i = Array.from(e.values()),
-          u = Array.from(q.values());
-        for (let y = 0; y < i.length; y++) {
-          const p = i[y],
-            D = u.findIndex(Q => L(p, Q, void 0, e, q, t, V));
-          if (D === -1) return !1;
-          u.splice(D, 1)
+      case je: {
+        if (r.size !== t.size) return !1;
+        const u = Array.from(r.values()),
+          p = Array.from(t.values());
+        for (let b = 0; b < u.length; b++) {
+          const y = u[b],
+            A = p.findIndex(q => T(y, q, void 0, r, t, e, n));
+          if (A === -1) return !1;
+          p.splice(A, 1)
         }
         return !0
       }
-      case wt:
-      case It:
-      case Pt:
-      case Tt:
-      case Gt:
-      case vt:
-      case Mt:
-      case jt:
-      case kt:
-      case Lt:
-      case Ct:
-      case Nt: {
-        if (lq(e) !== lq(q) || e.length !== q.length) return !1;
-        for (let i = 0; i < e.length; i++)
-          if (!L(e[i], q[i], i, e, q, t, V)) return !1;
+      case Ie:
+      case Se:
+      case Ee:
+      case Le:
+      case De:
+      case Ne:
+      case Te:
+      case _e:
+      case Ce:
+      case Ge:
+      case ze:
+      case Ue: {
+        if (ut(r) !== ut(t) || r.length !== t.length) return !1;
+        for (let u = 0; u < r.length; u++)
+          if (!T(r[u], t[u], u, r, t, e, n)) return !1;
         return !0
       }
-      case Et:
-        return e.byteLength !== q.byteLength ? !1 : Y(new Uint8Array(e), new Uint8Array(q), t, V);
-      case bt:
-        return e.byteLength !== q.byteLength || e.byteOffset !== q.byteOffset ? !1 : Y(new Uint8Array(e), new Uint8Array(q), t, V);
-      case Dt:
-        return e.name === q.name && e.message === q.message;
-      case H: {
-        if (!(Y(e.constructor, q.constructor, t, V) || gq(e) && gq(q))) return !1;
-        const u = [...Object.keys(e), ...Aq(e)],
-          y = [...Object.keys(q), ...Aq(q)];
-        if (u.length !== y.length) return !1;
-        for (let p = 0; p < u.length; p++) {
-          const D = u[p],
-            Q = e[D];
-          if (!Object.hasOwn(q, D)) return !1;
-          const Iq = q[D];
-          if (!L(Q, Iq, D, e, q, t, V)) return !1
+      case ke:
+        return r.byteLength !== t.byteLength ? !1 : G(new Uint8Array(r), new Uint8Array(t), e, n);
+      case Oe:
+        return r.byteLength !== t.byteLength || r.byteOffset !== t.byteOffset ? !1 : G(new Uint8Array(r), new Uint8Array(t), e, n);
+      case Be:
+        return r.name === t.name && r.message === t.message;
+      case $: {
+        if (!(G(r.constructor, t.constructor, e, n) || lt(r) && lt(t))) return !1;
+        const p = [...Object.keys(r), ...it(r)],
+          b = [...Object.keys(t), ...it(t)];
+        if (p.length !== b.length) return !1;
+        for (let y = 0; y < p.length; y++) {
+          const A = p[y],
+            q = r[A];
+          if (!Object.hasOwn(t, A)) return !1;
+          const It = t[A];
+          if (!T(q, It, A, r, t, e, n)) return !1
         }
         return !0
       }
@@ -437,213 +384,213 @@ function Y(e, q, t, V) {
         return !1
     }
   } finally {
-    t.delete(e), t.delete(q)
+    e.delete(r), e.delete(t)
   }
 }
 
-function Ut(e, q) {
-  return St(e, q, ut)
+function Ke(r, t) {
+  return Re(r, t, ge)
 }
-const wq = typeof window < "u" ? window : void 0;
+const wt = typeof window < "u" ? window : void 0;
 
-function zt(e) {
-  let q = e.activeElement;
-  for (; q != null && q.shadowRoot;) {
-    const t = q.shadowRoot.activeElement;
-    if (t === q) break;
-    q = t
+function Fe(r) {
+  let t = r.activeElement;
+  for (; t != null && t.shadowRoot;) {
+    const e = t.shadowRoot.activeElement;
+    if (e === t) break;
+    t = e
   }
-  return q
+  return t
 }
-var M, z;
-class xt {
-  constructor(q = {}) {
-    g(this, M);
-    g(this, z);
+var L, x;
+class Me {
+  constructor(t = {}) {
+    g(this, L);
+    g(this, x);
     const {
-      window: t = wq,
-      document: V = t == null ? void 0 : t.document
-    } = q;
-    t !== void 0 && (l(this, M, V), l(this, z, hq(r => {
-      const n = $(t, "focusin", r),
-        s = $(t, "focusout", r);
+      window: e = wt,
+      document: n = e == null ? void 0 : e.document
+    } = t;
+    e !== void 0 && (f(this, L, n), f(this, x, ht(s => {
+      const o = Z(e, "focusin", s),
+        a = Z(e, "focusout", s);
       return () => {
-        n(), s()
+        o(), a()
       }
     })))
   }
   get current() {
-    var q;
-    return (q = a(this, z)) == null || q.call(this), a(this, M) ? zt(a(this, M)) : null
+    var t;
+    return (t = c(this, x)) == null || t.call(this), c(this, L) ? Fe(c(this, L)) : null
   }
 }
-M = new WeakMap, z = new WeakMap;
-new xt;
+L = new WeakMap, x = new WeakMap;
+new Me;
 
-function Ot(e, q) {
-  switch (e) {
+function qe(r, t) {
+  switch (r) {
     case "post":
-      kq(q);
+      Dt(t);
       break;
     case "pre":
-      jq(q);
+      Lt(t);
       break
   }
 }
 
-function Bq(e, q, t, V = {}) {
+function bt(r, t, e, n = {}) {
   const {
-    lazy: r = !1
-  } = V;
-  let n = !r,
-    s = Array.isArray(e) ? [] : void 0;
-  Ot(q, () => {
-    const A = Array.isArray(e) ? e.map(u => u()) : e();
-    if (!n) {
-      n = !0, s = A;
+    lazy: s = !1
+  } = n;
+  let o = !s,
+    a = Array.isArray(r) ? [] : void 0;
+  qe(t, () => {
+    const l = Array.isArray(r) ? r.map(p => p()) : r();
+    if (!o) {
+      o = !0, a = l;
       return
     }
-    const i = Lq(() => t(A, s));
-    return s = A, i
+    const u = Nt(() => e(l, a));
+    return a = l, u
   })
 }
 
-function Jt(e, q, t) {
-  Bq(e, "post", q, t)
+function Ve(r, t, e) {
+  bt(r, "post", t, e)
 }
 
-function Ft(e, q, t) {
-  Bq(e, "pre", q, t)
+function He(r, t, e) {
+  bt(r, "pre", t, e)
 }
-Jt.pre = Ft;
+Ve.pre = He;
 
-function Kt(e, q) {
-  switch (e) {
+function Je(r, t) {
+  switch (r) {
     case "local":
-      return q.localStorage;
+      return t.localStorage;
     case "session":
-      return q.sessionStorage
+      return t.sessionStorage
   }
 }
 
-function Eq(e, q, t, V, r, n) {
-  if (e === null || typeof e != "object") return e;
-  const s = Object.getPrototypeOf(e);
-  if (s !== null && s !== Object.prototype && !Array.isArray(e)) return e;
-  let A = t.get(e);
-  return A || (A = new Proxy(e, {
-    get: (i, u) => (V == null || V(), Eq(Reflect.get(i, u), q, t, V, r, n)),
-    set: (i, u, y) => (r == null || r(), Reflect.set(i, u, y), n(q), !0)
-  }), t.set(e, A)), A
+function Pt(r, t, e, n, s, o) {
+  if (r === null || typeof r != "object") return r;
+  const a = Object.getPrototypeOf(r);
+  if (a !== null && a !== Object.prototype && !Array.isArray(r)) return r;
+  let l = e.get(r);
+  return l || (l = new Proxy(r, {
+    get: (u, p) => (n == null || n(), Pt(Reflect.get(u, p), t, e, n, s, o)),
+    set: (u, p, b) => (s == null || s(), Reflect.set(u, p, b), o(t), !0)
+  }), e.set(r, l)), l
 }
-var B, E, j, b, v, T, J, m, G, k, x, O, F, h, C, N, qq, Dq;
-class Qt {
-  constructor(q, t, V = {}) {
-    g(this, h);
-    g(this, B);
-    g(this, E);
+var j, I, D, k, E, O, F, P, S, N, R, K, M, w, _, C, Q, vt;
+class Ye {
+  constructor(t, e, n = {}) {
+    g(this, w);
     g(this, j);
-    g(this, b);
-    g(this, v);
-    g(this, T);
-    g(this, J, new WeakMap);
-    g(this, m);
-    g(this, G);
+    g(this, I);
+    g(this, D);
     g(this, k);
-    g(this, x);
+    g(this, E);
     g(this, O);
-    g(this, F, q => {
-      var t;
-      q.key !== a(this, E) || q.newValue === null || (l(this, B, w(this, h, C).call(this, q.newValue)), (t = a(this, T)) == null || t.call(this))
+    g(this, F, new WeakMap);
+    g(this, P);
+    g(this, S);
+    g(this, N);
+    g(this, R);
+    g(this, K);
+    g(this, M, t => {
+      var e;
+      t.key !== c(this, I) || t.newValue === null || (f(this, j, v(this, w, _).call(this, t.newValue)), (e = c(this, O)) == null || e.call(this))
     });
     const {
-      storage: r = "local",
-      serializer: n = {
+      storage: s = "local",
+      serializer: o = {
         serialize: JSON.stringify,
         deserialize: JSON.parse
       },
-      syncTabs: s = !0,
-      connected: A = !0
-    } = V, i = "window" in V ? V.window : wq;
-    if (l(this, B, t), l(this, E, q), l(this, j, n), l(this, m, A), l(this, k, i), l(this, x, s), l(this, O, r), i === void 0) return;
-    const u = Kt(r, i);
-    l(this, b, u);
-    const y = u.getItem(q);
-    y !== null ? l(this, B, w(this, h, C).call(this, y)) : A && w(this, h, N).call(this, t), w(this, h, qq).call(this)
+      syncTabs: a = !0,
+      connected: l = !0
+    } = n, u = "window" in n ? n.window : wt;
+    if (f(this, j, e), f(this, I, t), f(this, D, o), f(this, P, l), f(this, N, u), f(this, R, a), f(this, K, s), u === void 0) return;
+    const p = Je(s, u);
+    f(this, k, p);
+    const b = p.getItem(t);
+    b !== null ? f(this, j, v(this, w, _).call(this, b)) : l && v(this, w, C).call(this, e), v(this, w, Q).call(this)
   }
   get current() {
-    var t, V, r, n;
-    (t = a(this, v)) == null || t.call(this);
-    let q;
-    if (a(this, m)) {
-      const s = (V = a(this, b)) == null ? void 0 : V.getItem(a(this, E));
-      q = s ? w(this, h, C).call(this, s) : a(this, B)
-    } else q = a(this, B);
-    return Eq(q, q, a(this, J), (r = a(this, v)) == null ? void 0 : r.bind(this), (n = a(this, T)) == null ? void 0 : n.bind(this), w(this, h, N).bind(this))
+    var e, n, s, o;
+    (e = c(this, E)) == null || e.call(this);
+    let t;
+    if (c(this, P)) {
+      const a = (n = c(this, k)) == null ? void 0 : n.getItem(c(this, I));
+      t = a ? v(this, w, _).call(this, a) : c(this, j)
+    } else t = c(this, j);
+    return Pt(t, t, c(this, F), (s = c(this, E)) == null ? void 0 : s.bind(this), (o = c(this, O)) == null ? void 0 : o.bind(this), v(this, w, C).bind(this))
   }
-  set current(q) {
-    var t;
-    w(this, h, N).call(this, q), (t = a(this, T)) == null || t.call(this)
+  set current(t) {
+    var e;
+    v(this, w, C).call(this, t), (e = c(this, O)) == null || e.call(this)
   }
   get connected() {
-    return a(this, m)
+    return c(this, P)
   }
   disconnect() {
-    var t, V;
-    if (!a(this, m)) return;
-    const q = (t = a(this, b)) == null ? void 0 : t.getItem(a(this, E));
-    q && l(this, B, w(this, h, C).call(this, q)), l(this, m, !1), (V = a(this, b)) == null || V.removeItem(a(this, E)), w(this, h, Dq).call(this)
+    var e, n;
+    if (!c(this, P)) return;
+    const t = (e = c(this, k)) == null ? void 0 : e.getItem(c(this, I));
+    t && f(this, j, v(this, w, _).call(this, t)), f(this, P, !1), (n = c(this, k)) == null || n.removeItem(c(this, I)), v(this, w, vt).call(this)
   }
   connect() {
-    a(this, m) || (l(this, m, !0), w(this, h, N).call(this, a(this, B)), w(this, h, qq).call(this))
+    c(this, P) || (f(this, P, !0), v(this, w, C).call(this, c(this, j)), v(this, w, Q).call(this))
   }
 }
-B = new WeakMap, E = new WeakMap, j = new WeakMap, b = new WeakMap, v = new WeakMap, T = new WeakMap, J = new WeakMap, m = new WeakMap, G = new WeakMap, k = new WeakMap, x = new WeakMap, O = new WeakMap, F = new WeakMap, h = new WeakSet, C = function(q) {
+j = new WeakMap, I = new WeakMap, D = new WeakMap, k = new WeakMap, E = new WeakMap, O = new WeakMap, F = new WeakMap, P = new WeakMap, S = new WeakMap, N = new WeakMap, R = new WeakMap, K = new WeakMap, M = new WeakMap, w = new WeakSet, _ = function(t) {
   try {
-    return a(this, j).deserialize(q)
-  } catch (t) {
-    console.error(`Error when parsing "${q}" from persisted store "${a(this,E)}"`, t);
+    return c(this, D).deserialize(t)
+  } catch (e) {
+    console.error(`Error when parsing "${t}" from persisted store "${c(this,I)}"`, e);
     return
   }
-}, N = function(q) {
-  var t;
-  if (!a(this, m)) {
-    l(this, B, q);
+}, C = function(t) {
+  var e;
+  if (!c(this, P)) {
+    f(this, j, t);
     return
   }
   try {
-    q !== void 0 && ((t = a(this, b)) == null || t.setItem(a(this, E), a(this, j).serialize(q)))
-  } catch (V) {
-    console.error(`Error when writing value from persisted store "${a(this,E)}" to ${a(this,b)}`, V)
+    t !== void 0 && ((e = c(this, k)) == null || e.setItem(c(this, I), c(this, D).serialize(t)))
+  } catch (n) {
+    console.error(`Error when writing value from persisted store "${c(this,I)}" to ${c(this,k)}`, n)
   }
-}, qq = function() {
-  !a(this, k) || !a(this, m) || l(this, v, hq(q => (l(this, T, q), l(this, G, a(this, m) && a(this, x) && a(this, O) === "local" ? $(a(this, k), "storage", a(this, F)) : void 0), () => {
-    var t;
-    (t = a(this, G)) == null || t.call(this), l(this, G, void 0), l(this, T, void 0)
+}, Q = function() {
+  !c(this, N) || !c(this, P) || f(this, E, ht(t => (f(this, O, t), f(this, S, c(this, P) && c(this, R) && c(this, K) === "local" ? Z(c(this, N), "storage", c(this, M)) : void 0), () => {
+    var e;
+    (e = c(this, S)) == null || e.call(this), f(this, S, void 0), f(this, O, void 0)
   })))
-}, Dq = function() {
-  var q;
-  (q = a(this, G)) == null || q.call(this), l(this, G, void 0), l(this, v, void 0)
+}, vt = function() {
+  var t;
+  (t = c(this, S)) == null || t.call(this), f(this, S, void 0), f(this, E, void 0)
 };
-class Vq extends Promise {
-  constructor(t) {
-    let V;
-    super((s, A) => {
-      V = {
-        resolve: n("fulfilled", s),
-        reject: n("rejected", A)
-      }, t == null || t(V.resolve, V.reject)
+class tt extends Promise {
+  constructor(e) {
+    let n;
+    super((a, l) => {
+      n = {
+        resolve: o("fulfilled", a),
+        reject: o("rejected", l)
+      }, e == null || e(n.resolve, n.reject)
     });
-    f(this, "resolvers");
-    f(this, "state", {
+    m(this, "resolvers");
+    m(this, "state", {
       status: "pending"
     });
-    this.resolvers = V;
-    const r = this;
+    this.resolvers = n;
+    const s = this;
 
-    function n(s, A) {
-      return function(...u) {
-        return r.state.status === "pending" && (r.state = r.mountStateByStatus(s, u[0])), A(...u)
+    function o(a, l) {
+      return function(...p) {
+        return s.state.status === "pending" && (s.state = s.mountStateByStatus(a, p[0])), l(...p)
       }
     }
   }
@@ -656,35 +603,35 @@ class Vq extends Promise {
   get isFinished() {
     return this.state.status && this.state.status !== "pending"
   }
-  mountStateByStatus(t, V) {
-    switch (t) {
+  mountStateByStatus(e, n) {
+    switch (e) {
       case "fulfilled":
         return {
-          status: t, value: V
+          status: e, value: n
         };
       case "rejected":
         return {
-          status: t, reason: V
+          status: e, reason: n
         }
     }
     return this.state
   }
   create() {
-    return new Vq
+    return new tt
   }
 }
-var tq = (e => (e.Play = "https://play.google.com/billing", e))(tq || {});
+var X = (r => (r.Play = "https://play.google.com/billing", r))(X || {});
 
-function dq(e) {
-  return ct(e)
+function dt(r) {
+  return fe(r)
 }
-const c = class c {
-  constructor(q) {
-    this.state = q
+const d = class d {
+  constructor(t) {
+    this.state = t
   }
   static get checkout() {
-    var q, t;
-    return ((q = c.checkoutState) == null ? void 0 : q.current) && new c((t = c.checkoutState) == null ? void 0 : t.current)
+    var t, e;
+    return ((t = d.checkoutState) == null ? void 0 : t.current) && new d((e = d.checkoutState) == null ? void 0 : e.current)
   }
   get startedAt() {
     return this.state.startedAt
@@ -696,15 +643,15 @@ const c = class c {
     return this.state.type
   }
   static shouldRecover() {
-    var q, t;
-    return ((q = c.checkout) == null ? void 0 : q.startedAt) && Date.now() - ((t = c.checkout) == null ? void 0 : t.startedAt) <= 3 * fq.day
+    var t, e;
+    return ((t = d.checkout) == null ? void 0 : t.startedAt) && Date.now() - ((e = d.checkout) == null ? void 0 : e.startedAt) <= 3 * ft.day
   }
   static isRunning() {
-    var q;
-    return ((q = c.memoryCheckout) == null ? void 0 : q.type) === "running"
+    var t;
+    return ((t = d.memoryCheckout) == null ? void 0 : t.type) === "running"
   }
-  applyFinishIfNecessary(q) {
-    this.startedAt > q.startedAt || c.isRunning() && c.onChangeCheckout({
+  applyFinishIfNecessary(t) {
+    this.startedAt > t.startedAt || d.isRunning() && d.onChangeCheckout({
       ...this.state,
       finishedAt: Date.now(),
       type: "finished",
@@ -713,97 +660,97 @@ const c = class c {
     })
   }
   static start() {
-    return c.onChangeCheckout({
+    return d.onChangeCheckout({
       type: "running",
       startedAt: Date.now(),
       view: void 0,
       finishedAt: void 0
     })
   }
-  static finish(q) {
-    var t, V;
-    return (V = (t = c.checkout) == null ? void 0 : t.applyFinishIfNecessary) == null ? void 0 : V.call(t, q)
+  static finish(t) {
+    var e, n;
+    return (n = (e = d.checkout) == null ? void 0 : e.applyFinishIfNecessary) == null ? void 0 : n.call(e, t)
   }
   static markViewed() {
-    var t;
-    const q = (t = c.checkout) == null ? void 0 : t.state;
-    q && c.onChangeCheckout({
-      startedAt: q == null ? void 0 : q.startedAt,
+    var e;
+    const t = (e = d.checkout) == null ? void 0 : e.state;
+    t && d.onChangeCheckout({
+      startedAt: t == null ? void 0 : t.startedAt,
       finishedAt: Date.now(),
-      droplets: q.type === "running" ? 0 : q.droplets,
+      droplets: t.type === "running" ? 0 : t.droplets,
       type: "finished",
       view: Date.now()
     })
   }
   static clear() {
-    c.checkoutState.current = void 0
+    d.checkoutState.current = void 0
   }
-  static onChangeCheckout(q) {
-    return c.checkoutState.current = q, c.memoryCheckout = c.checkout, c.memoryCheckout
+  static onChangeCheckout(t) {
+    return d.checkoutState.current = t, d.memoryCheckout = d.checkout, d.memoryCheckout
   }
-  static preventNavigationInTWAIfInCheckout(q) {
-    P.isTWA() && (c.addFocusListener(q), c.addNavigationListener(q))
+  static preventNavigationInTWAIfInCheckout(t) {
+    B.isTWA() && (d.addFocusListener(t), d.addNavigationListener(t))
   }
-  static addFocusListener(q) {
+  static addFocusListener(t) {
     window.addEventListener("focus", () => {
-      P.recover()
+      B.recover()
     }, {
-      signal: q.signal
+      signal: t.signal
     })
   }
-  static addNavigationListener(q) {
-    const t = window.navigation;
-    t && t.addEventListener("navigate", V => {
-      var r;
-      (!document.hasFocus() && c.memoryCheckout || c.isRunning()) && (V.preventDefault(), (r = P.log) == null || r.call(P, "intercepted", new Error().stack))
+  static addNavigationListener(t) {
+    const e = window.navigation;
+    e && e.addEventListener("navigate", n => {
+      var s;
+      (!document.hasFocus() && d.memoryCheckout || d.isRunning()) && (n.preventDefault(), (s = B.log) == null || s.call(B, "intercepted", new Error().stack))
     }, {
-      signal: q.signal
+      signal: t.signal
     })
   }
-  static openCheckoutDialog(q) {
-    return c.markViewed(), Cq(Nq("/payment/success-v3") + `?droplets=${q}`, {
+  static openCheckoutDialog(t) {
+    return d.markViewed(), Tt(_t("/payment/success-v3") + `?droplets=${t}`, {
       replaceState: !0
     })
   }
   static openPendingDialog() {
-    K.pendingHistoryDialogOpen = !0
+    gt.pendingHistoryDialogOpen = !0
   }
 };
-f(c, "checkoutState", new Qt("twa:checkout", void 0, {
+m(d, "checkoutState", new Ye("twa:checkout", void 0, {
   syncTabs: !1,
   storage: "local"
-})), f(c, "memoryCheckout");
-let d = c;
+})), m(d, "memoryCheckout");
+let h = d;
 
-function pq(e) {
-  const q = e;
+function pt(r) {
+  const t = r;
   return {
-    name: q == null ? void 0 : q.name,
-    message: q == null ? void 0 : q.message
+    name: t == null ? void 0 : t.name,
+    message: t == null ? void 0 : t.message
   }
 }
-const o = class o {
+const i = class i {
   static get playBillingBlocked() {
     return !!this.playBillingBlockedError
   }
   static get log() {}
   static get error() {}
   static get warn() {}
-  static toastError(...q) {
-    var V;
-    const t = q.map(r => JSON.stringify(r));
-    throw (V = o.error) == null || V.call(o, ...q), t.forEach(r => Gq.error(r)), new Error(q.length === 1 ? t[0] : t.join(`
+  static toastError(...t) {
+    var n;
+    const e = t.map(s => JSON.stringify(s));
+    throw (n = i.error) == null || n.call(i, ...t), e.forEach(s => Bt.error(s)), new Error(t.length === 1 ? e[0] : e.join(`
 `))
   }
   static twaGuard() {}
-  static createPaymentRequest(q, t) {
-    const V = {
-      sku: q,
-      obfuscatedAccountId: t
+  static createPaymentRequest(t, e) {
+    const n = {
+      sku: t,
+      obfuscatedAccountId: e
     };
     return new PaymentRequest([{
-      supportedMethods: tq.Play,
-      data: V
+      supportedMethods: X.Play,
+      data: n
     }], {
       total: {
         label: "Total",
@@ -814,264 +761,264 @@ const o = class o {
       }
     })
   }
-  static isPlayBillingBlockedError(q) {
-    const t = o.PLAY_BILLING_NOT_AVAILABLE.findIndex(r => Ut(pq(q), pq(r)));
-    return o.PLAY_BILLING_NOT_AVAILABLE[t]
+  static isPlayBillingBlockedError(t) {
+    const e = i.PLAY_BILLING_NOT_AVAILABLE.findIndex(s => Ke(pt(t), pt(s)));
+    return i.PLAY_BILLING_NOT_AVAILABLE[e]
   }
-  static setAsPlayBillingBlockedErrorIfNecessary(q) {
+  static setAsPlayBillingBlockedErrorIfNecessary(t) {
     try {
-      if (!q) return;
-      o.setAsPlayBillingBlocked(o.isPlayBillingBlockedError(q))
+      if (!t) return;
+      i.setAsPlayBillingBlocked(i.isPlayBillingBlockedError(t))
     } finally {
-      return Promise.reject(q)
+      return Promise.reject(t)
     }
   }
-  static setAsPlayBillingBlocked(q) {
-    o.playBillingBlockedError = q
+  static setAsPlayBillingBlocked(t) {
+    i.playBillingBlockedError = t
   }
   static async getObfuscatedAccountId() {
-    const q = await R.getPlayAccountId().then(({
-      accountId: t
-    }) => t);
-    if (!q) throw o.setAsPlayBillingBlocked({
+    const t = await H.getPlayAccountId().then(({
+      accountId: e
+    }) => e);
+    if (!t) throw i.setAsPlayBillingBlocked({
       message: "NO_ACCOUNT_ID",
       name: "NO_ACCOUNT_ID",
       printError: "Cannot find account id. Try again later."
     }), new Error("No hash account id");
-    return q
+    return t
   }
-  static async createPaymentBySkuId(q) {
-    const t = await o.getObfuscatedAccountId();
-    return o.createPaymentRequest(q, t)
+  static async createPaymentBySkuId(t) {
+    const e = await i.getObfuscatedAccountId();
+    return i.createPaymentRequest(t, e)
   }
-  static async createPayment(q) {
-    var y;
-    o.twaGuard();
-    const t = Z(q);
-    if (!(t != null && t.productId)) throw new Error("No sku config or productId found");
-    if (!((y = X.data) != null && y.id)) throw new Error("No user id");
-    const V = await o.createPaymentBySkuId(q),
-      r = d.start(),
-      n = await V.show().catch(p => o.setAsPlayBillingBlockedErrorIfNecessary(p)).finally(() => {
-        var p;
-        return (p = d.finish) == null ? void 0 : p.call(d, r)
+  static async createPayment(t) {
+    var b;
+    i.twaGuard();
+    const e = J(t);
+    if (!(e != null && e.productId)) throw new Error("No sku config or productId found");
+    if (!((b = Y.data) != null && b.id)) throw new Error("No user id");
+    const n = await i.createPaymentBySkuId(t),
+      s = h.start(),
+      o = await n.show().catch(y => i.setAsPlayBillingBlockedErrorIfNecessary(y)).finally(() => {
+        var y;
+        return (y = h.finish) == null ? void 0 : y.call(h, s)
       }),
-      s = n == null ? void 0 : n.toJSON();
-    let A = "unknown";
-    return s.details.purchaseToken ? i(A) : i("fail", new Error("Play Billing returned no purchase token")), {
-      setStatus: i,
-      status: A,
-      out: s,
-      verify: u
+      a = o == null ? void 0 : o.toJSON();
+    let l = "unknown";
+    return a.details.purchaseToken ? u(l) : u("fail", new Error("Play Billing returned no purchase token")), {
+      setStatus: u,
+      status: l,
+      out: a,
+      verify: p
     };
-    async function i(p, D) {
-      if (A = p, await (n == null ? void 0 : n.complete(p).catch(() => {})), D) throw D
+    async function u(y, A) {
+      if (l = y, await (o == null ? void 0 : o.complete(y).catch(() => {})), A) throw A
     }
-    async function u() {
+    async function p() {
       try {
         const {
-          droplets: p
-        } = await o.verifyBySKU({
-          sku: q,
-          token: s.details.purchaseToken
+          droplets: y
+        } = await i.verifyBySKU({
+          sku: t,
+          token: a.details.purchaseToken
         });
-        return await i("success"), await o.refresh(), d.openCheckoutDialog(p)
-      } catch (p) {
-        await i("fail", p)
+        return await u("success"), await i.refresh(), h.openCheckoutDialog(y)
+      } catch (y) {
+        await u("fail", y)
       }
     }
   }
   static refresh() {
-    return o.twaGuard(), X.refresh()
+    return i.twaGuard(), Y.refresh()
   }
   static async dispatchPendingPurchases() {
-    o.twaGuard();
-    const q = {
+    i.twaGuard();
+    const t = {
       credited: 0,
       pending: 0
     };
     try {
-      if (!o.service) return q;
-      const t = await o.service.listPurchases().catch(() => []);
-      if (!t.length) return q;
-      const V = await Promise.allSettled(t.map(s => o.verifyBySKU({
-        sku: s.itemId,
-        token: s.purchaseToken
+      if (!i.service) return t;
+      const e = await i.service.listPurchases().catch(() => []);
+      if (!e.length) return t;
+      const n = await Promise.allSettled(e.map(a => i.verifyBySKU({
+        sku: a.itemId,
+        token: a.purchaseToken
       })));
-      let r = 0,
-        n = 0;
-      for (const s of V) s.status === "fulfilled" ? r += s.value.droplets : n++;
-      return r > 0 && await o.refresh(), {
-        credited: r,
-        pending: n
+      let s = 0,
+        o = 0;
+      for (const a of n) a.status === "fulfilled" ? s += a.value.droplets : o++;
+      return s > 0 && await i.refresh(), {
+        credited: s,
+        pending: o
       }
     } catch {
-      return q
+      return t
     }
   }
   static async autoRecoverPendingPurchases() {
-    var r;
-    if (o.twaGuard(), !d.shouldRecover() || (await o.wait, !o.isTWALoaded())) return;
+    var s;
+    if (i.twaGuard(), !h.shouldRecover() || (await i.wait, !i.isTWALoaded())) return;
     const {
-      credited: q,
-      pending: t
-    } = await o.dispatchPendingPurchases().catch(() => ({
+      credited: t,
+      pending: e
+    } = await i.dispatchPendingPurchases().catch(() => ({
       credited: 0,
       pending: 0
     }));
-    if (q > 0) {
-      d.openCheckoutDialog(q);
-      return
-    }
     if (t > 0) {
-      d.openPendingDialog();
+      h.openCheckoutDialog(t);
       return
     }
-    const V = (r = d.checkout) == null ? void 0 : r.state;
-    if ((V == null ? void 0 : V.type) === "finished" && !V.view) {
-      V.droplets && d.openCheckoutDialog(V.droplets);
+    if (e > 0) {
+      h.openPendingDialog();
       return
     }
-    d.clear()
+    const n = (s = h.checkout) == null ? void 0 : s.state;
+    if ((n == null ? void 0 : n.type) === "finished" && !n.view) {
+      n.droplets && h.openCheckoutDialog(n.droplets);
+      return
+    }
+    h.clear()
   }
-  static verifyBySKU(q) {
-    o.twaGuard();
-    const t = Z(q.sku);
-    return R.verifyPlayPurchase({
-      productId: Number(t.productId),
-      purchaseToken: q.token
+  static verifyBySKU(t) {
+    i.twaGuard();
+    const e = J(t.sku);
+    return H.verifyPlayPurchase({
+      productId: Number(e.productId),
+      purchaseToken: t.token
     })
   }
   static getGlobal() {
     return window
   }
   static isTWA() {
-    return bq() && !!this.getGlobal().getDigitalGoodsService
+    return jt() && !!this.getGlobal().getDigitalGoodsService
   }
   static canLoadTWA() {
     return this.isTWA()
   }
   static isTWALoaded() {
-    return !!(X.data && this.billing && this.service)
+    return !!(Y.data && this.billing && this.service)
   }
   static async load() {
-    var q;
+    var t;
     try {
-      this.service ?? (this.service = await this.getService()), (q = this.mapSKUs) != null && q.size || (this.mapSKUs = await this.getMapSKUs()), o.wait.resolve()
-    } catch (t) {
-      o.wait.reject(t)
+      this.service ?? (this.service = await this.getService()), (t = this.mapSKUs) != null && t.size || (this.mapSKUs = await this.getMapSKUs()), i.wait.resolve()
+    } catch (e) {
+      i.wait.reject(e)
     } finally {
-      o.service && await o.recover()
+      i.service && await i.recover()
     }
   }
   static async recover() {
-    var q;
-    if (d.shouldRecover()) try {
-      const t = await o.getPurchasesAfter(),
-        r = ((q = Object.groupBy(t, n => n.status).paid) == null ? void 0 : q.reduce((n, s) => n + s.droplets, 0)) ?? 0;
-      if (r > 0) {
-        await d.openCheckoutDialog(r);
+    var t;
+    if (h.shouldRecover()) try {
+      const e = await i.getPurchasesAfter(),
+        s = ((t = Object.groupBy(e, o => o.status).paid) == null ? void 0 : t.reduce((o, a) => o + a.droplets, 0)) ?? 0;
+      if (s > 0) {
+        await h.openCheckoutDialog(s);
         return
       }
-      if (t != null && t.length) {
-        await d.openPendingDialog();
+      if (e != null && e.length) {
+        await h.openPendingDialog();
         return
       }
     } finally {
-      await o.refresh()
+      await i.refresh()
     }
   }
   static async getPurchasesAfter() {
-    var r, n;
-    const q = ((r = d.checkout) == null ? void 0 : r.state.view) ?? ((n = d.checkout) == null ? void 0 : n.state.startedAt);
-    return q ? (await R.listPlayPurchaseHistory()).purchases.sort((s, A) => Date.parse(A.updatedAt) - Date.parse(s.updatedAt)).filter(s => Date.parse(s.updatedAt) > q) : []
+    var s, o;
+    const t = ((s = h.checkout) == null ? void 0 : s.state.view) ?? ((o = h.checkout) == null ? void 0 : o.state.startedAt);
+    return t ? (await H.listPlayPurchaseHistory()).purchases.sort((a, l) => Date.parse(l.updatedAt) - Date.parse(a.updatedAt)).filter(a => Date.parse(a.updatedAt) > t) : []
   }
   static async loadTWA() {
-    o.canLoadTWA() && await o.load()
+    i.canLoadTWA() && await i.load()
   }
   static isSamsung() {
-    return Yq() === "Samsung Internet"
+    return Ot() === "Samsung Internet"
   }
-  static nativeFormat(q) {
+  static nativeFormat(t) {
     return new Intl.NumberFormat(navigator.language, {
       style: "currency",
-      currency: q.price.currency
-    }).format(+q.price.value)
+      currency: t.price.currency
+    }).format(+t.price.value)
   }
-  static printPriceBySKU(q) {
-    var r;
-    const t = o.mapSKUs.get(q);
-    if ((t == null ? void 0 : t.price) != null) return this.nativeFormat(t);
-    const V = (t == null ? void 0 : t.price) ?? {
-      value: ((r = Z(q)) == null ? void 0 : r.price) * vq / 100,
+  static printPriceBySKU(t) {
+    var s;
+    const e = i.mapSKUs.get(t);
+    if ((e == null ? void 0 : e.price) != null) return this.nativeFormat(e);
+    const n = (e == null ? void 0 : e.price) ?? {
+      value: ((s = J(t)) == null ? void 0 : s.price) * St / 100,
       currency: "USD"
     };
-    return [V.currency, Number(V.value).toFixed(2)].join(" ")
+    return [n.currency, Number(n.value).toFixed(2)].join(" ")
   }
 };
-f(o, "POOLING_TIME", 10), f(o, "playBillingBlockedError"), f(o, "billing", !1), f(o, "service"), f(o, "mapSKUs", new Map), f(o, "referrer", []), f(o, "wait", new Vq), f(o, "USER_CANCELLED_ERROR", "Payment app returned RESULT_CANCELED code. This is how payment apps can close their activity programmatically."), f(o, "PLAY_BILLING_NOT_AVAILABLE", [{
-  printError: Hq(),
+m(i, "POOLING_TIME", 10), m(i, "playBillingBlockedError"), m(i, "billing", !1), m(i, "service"), m(i, "mapSKUs", new Map), m(i, "referrer", []), m(i, "wait", new tt), m(i, "USER_CANCELLED_ERROR", "Payment app returned RESULT_CANCELED code. This is how payment apps can close their activity programmatically."), m(i, "PLAY_BILLING_NOT_AVAILABLE", [{
+  printError: Jt(),
   name: "AbortError",
   message: "Invalid state."
 }, {
-  printError: "Play billing não suportado.",
+  printError: ie(),
   name: "NotSupportedError",
   message: 'The payment method "https://play.google.com/billing" is not supported.'
-}]), f(o, "getMapSKUs", dq(async () => {
-  var r;
-  o.twaGuard();
-  const q = Object.values(Mq.products).filter(n => "lookupKey" in n).map(n => n.lookupKey),
-    t = await ((r = o.service) == null ? void 0 : r.getDetails(q).catch(n => o.setAsPlayBillingBlockedErrorIfNecessary(n)));
-  return new Map(t == null ? void 0 : t.map(n => [n.itemId, n]))
-})), f(o, "getService", dq(() => {
-  var q, t;
-  return (t = (q = o.getGlobal()).getDigitalGoodsService) == null ? void 0 : t.call(q, tq.Play).then(V => (o.billing = !0, V))
-})), f(o, "onInit", async q => {
-  o.referrer.push(document.referrer), d.preventNavigationInTWAIfInCheckout(q)
+}]), m(i, "getMapSKUs", dt(async () => {
+  var s;
+  i.twaGuard();
+  const t = Object.values(Et.products).filter(o => "lookupKey" in o).map(o => o.lookupKey),
+    e = await ((s = i.service) == null ? void 0 : s.getDetails(t).catch(o => i.setAsPlayBillingBlockedErrorIfNecessary(o)));
+  return new Map(e == null ? void 0 : e.map(o => [o.itemId, o]))
+})), m(i, "getService", dt(() => {
+  var t, e;
+  return (e = (t = i.getGlobal()).getDigitalGoodsService) == null ? void 0 : e.call(t, X.Play).then(n => (i.billing = !0, n))
+})), m(i, "onInit", async t => {
+  i.referrer.push(document.referrer), h.preventNavigationInTWAIfInCheckout(t)
 });
-let P = o;
+let B = i;
 
-function bq() {
+function jt() {
   return window.matchMedia("(display-mode: standalone)").matches || "standalone" in window.navigator && window.navigator.standalone === !0
 }
 
-function ae() {
-  const e = "last-unfocus",
-    q = new AbortController;
-  if (bq()) {
+function or() {
+  const r = "last-unfocus",
+    t = new AbortController;
+  if (jt()) {
     queueMicrotask(async () => {
-      await P.onInit(q)
+      await B.onInit(t)
     });
-    const t = () => {
-        const r = localStorage.getItem(e);
-        if (r) {
-          const n = parseInt(r, 10);
-          Date.now() - n > 5 * fq.minute && window.location.reload()
+    const e = () => {
+        const s = localStorage.getItem(r);
+        if (s) {
+          const o = parseInt(s, 10);
+          Date.now() - o > 5 * ft.minute && window.location.reload()
         }
       },
-      V = () => {
-        localStorage.setItem(e, Date.now().toString());
-        const r = K.map;
-        if (r) {
-          const n = r.getCenter(),
-            s = r.getZoom();
-          at(n, s)
+      n = () => {
+        localStorage.setItem(r, Date.now().toString());
+        const s = gt.map;
+        if (s) {
+          const o = s.getCenter(),
+            a = s.getZoom();
+          le(o, a)
         }
       };
     document.addEventListener("visibilitychange", () => {
-      document.visibilityState === "visible" ? t() : V()
+      document.visibilityState === "visible" ? e() : n()
     }, {
-      signal: q.signal
-    }), window.addEventListener("pageshow", t, {
-      signal: q.signal
-    }), window.addEventListener("pagehide", V, {
-      signal: q.signal
+      signal: t.signal
+    }), window.addEventListener("pageshow", e, {
+      signal: t.signal
+    }), window.addEventListener("pagehide", n, {
+      signal: t.signal
     })
   }
   return () => {
-    q.abort()
+    t.abort()
   }
 }
 export {
-  te as A, d as T, P as a, re as b, Hq as c, at as d, st as e, bq as f, ne as g, oe as i, se as l, Ve as p, ae as s, ee as u, Jt as w
+  h as T, B as a, le as b, ue as c, jt as d, rr as g, nr as i, sr as l, Jt as p, or as s, Ve as w
 };

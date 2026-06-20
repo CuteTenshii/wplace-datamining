@@ -1,14 +1,14 @@
-var B = Object.defineProperty;
+var D = Object.defineProperty;
 var g = i => {
   throw TypeError(i)
 };
-var D = (i, e, s) => e in i ? B(i, e, {
+var F = (i, e, s) => e in i ? D(i, e, {
   enumerable: !0,
   configurable: !0,
   writable: !0,
   value: s
 }) : i[e] = s;
-var w = (i, e, s) => D(i, typeof e != "symbol" ? e + "" : e, s),
+var w = (i, e, s) => F(i, typeof e != "symbol" ? e + "" : e, s),
   y = (i, e, s) => e.has(i) || g("Cannot " + s);
 var t = (i, e, s) => (y(i, e, "read from private field"), s ? s.call(i) : e.get(i)),
   l = (i, e, s) => e.has(i) ? g("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(i) : e.set(i, s),
@@ -17,16 +17,16 @@ import {
   W as x,
   X as b,
   Y as C,
-  Z as F,
-  _ as A,
-  a0 as S,
-  x as W,
-  F as X,
-  a1 as Y,
-  a2 as Z
-} from "./CV6xI6o5.js";
+  Z as A,
+  _ as B,
+  a0 as J,
+  J as Q,
+  Q as S,
+  a1 as W,
+  a2 as X
+} from "./CxLQz1V2.js";
 var c, n, r, u, p, _, v;
-class z {
+class j {
   constructor(e, s = !0) {
     w(this, "anchor");
     l(this, c, new Map);
@@ -53,7 +53,7 @@ class z {
           const d = () => {
             if (Array.from(t(this, c).values()).includes(f)) {
               var k = document.createDocumentFragment();
-              Y(o, k), k.append(F()), t(this, r).set(f, {
+              W(o, k), k.append(A()), t(this, r).set(f, {
                 effect: o,
                 fragment: k
               })
@@ -72,25 +72,25 @@ class z {
     this.anchor = e, M(this, p, s)
   }
   ensure(e, s) {
-    var a = S,
-      h = Z();
+    var a = J,
+      h = X();
     if (s && !t(this, n).has(e) && !t(this, r).has(e))
       if (h) {
         var f = document.createDocumentFragment(),
-          o = F();
+          o = A();
         f.append(o), t(this, r).set(e, {
-          effect: A(() => s(o)),
+          effect: B(() => s(o)),
           fragment: f
         })
-      } else t(this, n).set(e, A(() => s(this.anchor)));
+      } else t(this, n).set(e, B(() => s(this.anchor)));
     if (t(this, c).set(a, e), h) {
       for (const [d, m] of t(this, n)) d === e ? a.unskip_effect(m) : a.skip_effect(m);
       for (const [d, m] of t(this, r)) d === e ? a.unskip_effect(m.effect) : a.skip_effect(m.effect);
       a.oncommit(t(this, _)), a.ondiscard(t(this, v))
-    } else W && (this.anchor = X), t(this, _).call(this, a)
+    } else Q && (this.anchor = S), t(this, _).call(this, a)
   }
 }
 c = new WeakMap, n = new WeakMap, r = new WeakMap, u = new WeakMap, p = new WeakMap, _ = new WeakMap, v = new WeakMap;
 export {
-  z as B
+  j as B
 };

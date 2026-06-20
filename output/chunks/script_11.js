@@ -1,24 +1,24 @@
 import {
-  J as h,
+  z as h,
   m as w,
   S as x,
-  L as E,
-  T as L,
+  B,
+  T as E,
   U as O,
   V as Y
-} from "./CV6xI6o5.js";
+} from "./CxLQz1V2.js";
 
 function n(r, f) {
   return r === f || (r == null ? void 0 : r[Y]) === f
 }
 
-function B(r = {}, f, i, k) {
+function A(r = {}, f, i, k) {
   var p = h.r,
-    S = L;
+    S = E;
   return w(() => {
     var a, t;
     return x(() => {
-      a = t, t = [], E(() => {
+      a = t, t = [], B(() => {
         n(i(...t), r) || (f(r, ...t), a && n(i(...a), r) && f(null, ...a))
       })
     }), () => {
@@ -35,5 +35,5 @@ function B(r = {}, f, i, k) {
   }), r
 }
 export {
-  B as b
+  A as b
 };

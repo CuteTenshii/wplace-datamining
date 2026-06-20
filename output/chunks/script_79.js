@@ -1,62 +1,31 @@
 import {
-  g as n
-} from "./BhCkpOlh.js";
-import "./Bzak7iHL.js";
-import {
-  a as s,
-  w as u
-} from "./CV6xI6o5.js";
-import {
-  d
-} from "./BJwrq-LT.js";
-import {
-  r as o
-} from "./BQ880tYw.js";
-const _ = () => "Enter a valid user ID",
-  p = () => "Informe um ID válido",
-  c = () => "请输入有效的用户 ID",
-  a = () => "Gib eine gültige Benutzer-ID ein",
-  l = () => "Introduce un ID de usuario válido",
-  f = () => "Entrez un ID d’utilisateur valide",
-  v = () => "Inserisci un ID valido",
-  m = () => "有効なユーザーIDを入力してください。",
-  I = () => "Wprowadź prawidłowe ID użytkownika",
-  g = () => "Введите корректный ID пользователя",
-  D = () => "Введіть коректний ID користувача",
-  R = () => "Nhập một ID người dùng hợp lệ",
-  N = (t = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? _() : r === "pt" ? p() : r === "ch" ? c() : r === "de" ? a() : r === "es" ? l() : r === "fr" ? f() : r === "it" ? v() : r === "jp" ? m() : r === "pl" ? I() : r === "ru" ? g() : r === "uk" ? D() : R()
-  },
-  w = () => "Reddit",
-  h = () => "Reddit",
-  q = () => "Reddit",
-  T = () => "Reddit",
-  k = () => "Reddit",
-  $ = () => "Reddit",
-  j = () => "Reddit",
-  x = () => "Reddit",
-  S = () => "Reddit",
-  b = () => "Reddit",
-  y = () => "Reddit",
-  z = () => "Reddit",
-  W = (t = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? w() : r === "pt" ? h() : r === "ch" ? q() : r === "de" ? T() : r === "es" ? k() : r === "fr" ? $() : r === "it" ? j() : r === "jp" ? x() : r === "pl" ? S() : r === "ru" ? b() : r === "uk" ? y() : z()
-  };
-var B = new Set(["$$slots", "$$events", "$$legacy"]),
-  E = u('<svg><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"></path></svg>');
+  P as c,
+  u as f
+} from "./D7KqenLe.js";
+const w = "wplace-auth";
 
-function A(t, e) {
-  let r = o(e, B);
-  var i = E();
-  d(i, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...r
-  })), s(t, i)
+function m() {
+  var o;
+  const e = window.open(`${c}/auth/google?popup=1`, "wplace-oauth", "width=480,height=720");
+  return e ? ((o = e.focus) == null || o.call(e), new Promise(u => {
+    let s = !1,
+      r, i;
+    const t = async () => {
+      s || (s = !0, window.removeEventListener("message", n), clearInterval(r), clearTimeout(i), u(await f.refresh()))
+    }, n = a => {
+      var l;
+      if (a.origin === location.origin && ((l = a.data) == null ? void 0 : l.type) === w) {
+        try {
+          e.close()
+        } catch {}
+        t()
+      }
+    };
+    window.addEventListener("message", n), r = setInterval(() => {
+      e.closed && t()
+    }, 500), i = setTimeout(() => t(), 300 * 1e3)
+  })) : Promise.resolve(!1)
 }
 export {
-  A as S, N as p, W as r
+  w as A, m as l
 };
