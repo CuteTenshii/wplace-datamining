@@ -3,7 +3,7 @@ import "./DS4V2ySU.js";
 import {
   p as k,
   d as n,
-  r as m,
+  r as l,
   t as d,
   a as p,
   b as z,
@@ -30,7 +30,7 @@ import {
 import {
   R as b,
   a as u
-} from "./DX1r3K5G.js";
+} from "./TTfhDrzz.js";
 import {
   L as x
 } from "./DjSdgjuw.js";
@@ -42,37 +42,37 @@ function I(h, i) {
   let a = g(i, "role", 8),
     w = g(i, "big", 8, !1);
   M();
-  var s = N();
+  var t = N();
   let f;
-  var y = n(s);
+  var E = n(t);
   {
-    var E = r => {
+    var y = s => {
         var e = L(),
-          t = n(e);
-        x(t, {
+          r = n(e);
+        x(r, {
           size: "none"
         });
-        var l = _(t, 1, !0);
-        m(e), d(() => v(l, (o(b), o(a()), c(() => b[a()])))), p(r, e)
+        var m = _(r, 1, !0);
+        l(e), d(() => v(m, (o(b), o(a()), c(() => b[a()])))), p(s, e)
       },
-      O = r => {
+      O = s => {
         var e = L(),
-          t = n(e);
-        x(t, {
+          r = n(e);
+        x(r, {
           size: "small"
         });
-        var l = _(t, 1, !0);
-        m(e), d(() => v(l, (o(u), o(a()), c(() => u[a()])))), p(r, e)
+        var m = _(r, 1, !0);
+        l(e), d(() => v(m, (o(u), o(a()), c(() => u[a()])))), p(s, e)
       };
-    A(y, r => {
-      w() ? r(E) : r(O, -1)
+    A(E, s => {
+      w() ? s(y) : s(O, -1)
     })
   }
-  m(s), d(() => f = B(s, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center whitespace-nowrap pt-0.5 font-semibold leading-none shadow", null, f, {
+  l(t), d(() => f = B(t, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center whitespace-nowrap pt-0.5 font-semibold leading-none shadow", null, f, {
     "badge-info": a() === "admin",
-    "badge-secondary": a() === "moderator" || a() == "global_moderator",
-    "badge-warning": a() === "community_leader" || a() === "discord_leader"
-  })), p(h, s), z()
+    "badge-secondary": a() === "sac" || a() === "game_master" || a() === "game_master_leader" || a() === "dev",
+    "badge-warning": a() === "discord_mod" || a() === "discord_leader"
+  })), p(h, t), z()
 }
 export {
   I as R
