@@ -29,10 +29,10 @@ import {
 import {
   p as t
 } from "./C_QAuGIk.js";
-var ie = C('<div class="confetti svelte-1jr4tp1"></div>'),
+var ie = C('<div class="confetti svelte-9l4h7e"></div>'),
   re = C("<div></div>");
 
-function ye(M, e) {
+function he(M, e) {
   V(e, !0);
   const b = t(e, "size", 3, 10),
     f = t(e, "x", 19, () => [-.5, .5]),
@@ -45,63 +45,63 @@ function ye(M, e) {
     z = t(e, "amount", 3, 50),
     d = t(e, "iterationCount", 3, 1),
     R = t(e, "fallDistance", 3, "100px"),
-    j = t(e, "rounded", 3, !1),
-    k = t(e, "cone", 3, !1),
-    w = t(e, "noGravity", 3, !1),
-    A = t(e, "xSpread", 3, .15),
-    D = t(e, "destroyOnComplete", 3, !0),
-    F = t(e, "disableForReducedMotion", 3, !1);
+    k = t(e, "rounded", 3, !1),
+    w = t(e, "cone", 3, !1),
+    A = t(e, "noGravity", 3, !1),
+    D = t(e, "xSpread", 3, .15),
+    F = t(e, "destroyOnComplete", 3, !0),
+    G = t(e, "disableForReducedMotion", 3, !1);
   let v = $(!1);
   U(() => {
-    !D() || r() || typeof d() == "string" || setTimeout(() => W(v, !0), (i() + l()[1]) * d())
+    !F() || r() || typeof d() == "string" || setTimeout(() => W(v, !0), (i() + l()[1]) * d())
   });
 
   function a(o, n) {
     return Math.random() * (n - o) + o
   }
 
-  function G() {
+  function O() {
     return s().length ? s()[Math.round(Math.random() * (s().length - 1))] : `hsl(${Math.round(a(u()[0],u()[1]))}, 75%, 50%)`
   }
-  var y = X(),
-    O = Y(y);
+  var h = X(),
+    S = Y(h);
   {
-    var S = o => {
+    var q = o => {
       var n = re();
-      let g;
+      let y;
       ae(n, 21, () => ({
         length: z()
-      }), ne, (q, le) => {
-        var h = ie();
-        x((B, T, E, H, I, J, K, L, N, P, Q) => _(h, `
-        --color: ${B??""};
-        --skew: ${T??""}deg,${E??""}deg;
+      }), ne, (B, le) => {
+        var g = ie();
+        x((T, j, E, H, I, J, K, L, N, P, Q) => _(g, `
+        --color: ${T??""};
+        --skew: ${j??""}deg,${E??""}deg;
         --rotation-xyz: ${H??""}, ${I??""}, ${J??""};
         --rotation-deg: ${K??""}deg;
         --translate-y-multiplier: ${L??""};
         --translate-x-multiplier: ${N??""};
         --scale: ${P??""};
         --transition-delay: ${Q??""}ms;
-        --transition-duration: ${r()?`calc(${i()}ms * var(--scale))`:`${i()}ms`};`), [() => G(), () => a(-45, 45), () => a(-45, 45), () => a(-10, 10), () => a(-10, 10), () => a(-10, 10), () => a(0, 360), () => a(m()[0], m()[1]), () => a(f()[0], f()[1]), () => .1 * a(2, 10), () => a(l()[0], l()[1])]), c(q, h)
+        --transition-duration: ${r()?`calc(${i()}ms * var(--scale))`:`${i()}ms`};`), [() => O(), () => a(-45, 45), () => a(-45, 45), () => a(-10, 10), () => a(-10, 10), () => a(-10, 10), () => a(0, 360), () => a(m()[0], m()[1]), () => a(f()[0], f()[1]), () => .1 * a(2, 10), () => a(l()[0], l()[1])]), c(B, g)
       }), ee(n), x(() => {
-        g = oe(n, 1, "confetti-holder svelte-1jr4tp1", null, g, {
-          rounded: j(),
-          cone: k(),
-          "no-gravity": w(),
-          "reduced-motion": F()
+        y = oe(n, 1, "confetti-holder svelte-9l4h7e", null, y, {
+          rounded: k(),
+          cone: w(),
+          "no-gravity": A(),
+          "reduced-motion": G()
         }), _(n, `
     --fall-distance: ${R()??""};
     --size: ${b()??""}px;
-    --x-spread: ${1-A()};
+    --x-spread: ${1-D()};
     --transition-iteration-count: ${(r()?"infinite":d())??""};`)
       }), c(o, n)
     };
-    te(O, o => {
-      Z(v) || o(S)
+    te(S, o => {
+      Z(v) || o(q)
     })
   }
-  c(M, y), p()
+  c(M, h), p()
 }
 export {
-  ye as C
+  he as C
 };

@@ -37,10 +37,10 @@ import {
 } from "./DeNk1SQn.js";
 import {
   P as H
-} from "./pow7a_yp.js";
+} from "./CVKx8ZJY.js";
 import {
   u as J
-} from "./D7KqenLe.js";
+} from "./CeGy5Yz4.js";
 const W = () => "Pixels painted",
   X = () => "Pixels pintados",
   Y = () => "已绘制像素数",
