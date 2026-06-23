@@ -1,7 +1,7 @@
 import {
   P as c,
   u as f
-} from "./CeGy5Yz4.js";
+} from "./zqgC2Q_d.js";
 const w = "wplace-auth";
 
 function m() {
