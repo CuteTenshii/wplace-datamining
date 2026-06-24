@@ -1,6 +1,6 @@
 import {
   S as p
-} from "./BJ9TJh0P.js";
+} from "./Bijea84s.js";
 const h = p;
 
 function b(f) {
