@@ -1,27 +1,22 @@
-import "./Bzak7iHL.js";
 import {
-  a as e,
-  w as a
-} from "./CxLQz1V2.js";
-import {
-  d as p
-} from "./0rgL9IxG.js";
-import {
-  r as v
-} from "./C_QAuGIk.js";
-var m = new Set(["$$slots", "$$events", "$$legacy"]),
-  f = a('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
-
-function c(t, o) {
-  let s = v(o, m);
-  var r = f();
-  p(r, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...s
-  })), e(t, r)
-}
+  g as o
+} from "./BhCkpOlh.js";
+const e = () => "Go to store",
+  n = () => "Ir para a loja",
+  _ = () => "前往商店",
+  s = () => "Zum Shop",
+  u = () => "Ir a la tienda",
+  c = () => "Aller à la boutique",
+  i = () => "Vai al negozio",
+  g = () => "ストアへ",
+  a = () => "Przejdź do sklepu",
+  f = () => "Перейти в магазин",
+  l = () => "Перейти до магазину",
+  p = () => "Đến cửa hàng",
+  j = (d = {}, r = {}) => {
+    const t = r.locale ?? o();
+    return t === "en" ? e() : t === "pt" ? n() : t === "ch" ? _() : t === "de" ? s() : t === "es" ? u() : t === "fr" ? c() : t === "it" ? i() : t === "jp" ? g() : t === "pl" ? a() : t === "ru" ? f() : t === "uk" ? l() : p()
+  };
 export {
-  c as A
+  j as g
 };

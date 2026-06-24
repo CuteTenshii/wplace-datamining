@@ -1,79 +1,22 @@
-import "./Bzak7iHL.js";
-import "./DS4V2ySU.js";
 import {
-  p as k,
-  d as n,
-  r as l,
-  t as d,
-  a as p,
-  b as z,
-  s as _,
-  at as o,
-  B as c,
-  c as R
-} from "./CxLQz1V2.js";
-import {
-  s as v
-} from "./CMG3kxXu.js";
-import {
-  i as A
-} from "./DeNk1SQn.js";
-import {
-  a as B
-} from "./0rgL9IxG.js";
-import {
-  i as M
-} from "./CVk23Wdo.js";
-import {
-  p as g
-} from "./C_QAuGIk.js";
-import {
-  R as b,
-  a as u
-} from "./TTfhDrzz.js";
-import {
-  L as x
-} from "./DjSdgjuw.js";
-var L = R('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
-  N = R("<span><!></span>");
-
-function I(h, i) {
-  k(i, !1);
-  let a = g(i, "role", 8),
-    w = g(i, "big", 8, !1);
-  M();
-  var t = N();
-  let f;
-  var E = n(t);
-  {
-    var y = s => {
-        var e = L(),
-          r = n(e);
-        x(r, {
-          size: "none"
-        });
-        var m = _(r, 1, !0);
-        l(e), d(() => v(m, (o(b), o(a()), c(() => b[a()])))), p(s, e)
-      },
-      O = s => {
-        var e = L(),
-          r = n(e);
-        x(r, {
-          size: "small"
-        });
-        var m = _(r, 1, !0);
-        l(e), d(() => v(m, (o(u), o(a()), c(() => u[a()])))), p(s, e)
-      };
-    A(E, s => {
-      w() ? s(y) : s(O, -1)
-    })
-  }
-  l(t), d(() => f = B(t, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center whitespace-nowrap pt-0.5 font-semibold leading-none shadow", null, f, {
-    "badge-info": a() === "admin",
-    "badge-secondary": a() === "sac" || a() === "game_master" || a() === "game_master_leader" || a() === "dev",
-    "badge-warning": a() === "discord_mod" || a() === "discord_leader"
-  })), p(h, t), z()
-}
+  g as n
+} from "./BhCkpOlh.js";
+const o = () => "Error loading",
+  t = () => "Erro ao carregar",
+  i = () => "加载出错",
+  a = () => "Fehler beim Laden",
+  u = () => "Error al cargar",
+  l = () => "Erreur lors du chargement",
+  _ = () => "Errore nel caricamento",
+  c = () => "読み込みエラー",
+  d = () => "Błąd ładowania",
+  s = () => "Ошибка загрузки",
+  g = () => "Помилка завантаження",
+  f = () => "Lỗi tải dữ liệu",
+  E = (p = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? o() : r === "pt" ? t() : r === "ch" ? i() : r === "de" ? a() : r === "es" ? u() : r === "fr" ? l() : r === "it" ? _() : r === "jp" ? c() : r === "pl" ? d() : r === "ru" ? s() : r === "uk" ? g() : f()
+  };
 export {
-  I as R
+  E as e
 };

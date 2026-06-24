@@ -1,22 +1,40 @@
+import "./Bzak7iHL.js";
 import {
-  g as o
-} from "./BhCkpOlh.js";
-const e = () => "Go to store",
-  n = () => "Ir para a loja",
-  _ = () => "前往商店",
-  s = () => "Zum Shop",
-  u = () => "Ir a la tienda",
-  c = () => "Aller à la boutique",
-  i = () => "Vai al negozio",
-  g = () => "ストアへ",
-  a = () => "Przejdź do sklepu",
-  f = () => "Перейти в магазин",
-  l = () => "Перейти до магазину",
-  p = () => "Đến cửa hàng",
-  j = (d = {}, r = {}) => {
-    const t = r.locale ?? o();
-    return t === "en" ? e() : t === "pt" ? n() : t === "ch" ? _() : t === "de" ? s() : t === "es" ? u() : t === "fr" ? c() : t === "it" ? i() : t === "jp" ? g() : t === "pl" ? a() : t === "ru" ? f() : t === "uk" ? l() : p()
-  };
+  a as e,
+  w as a
+} from "./CNUayq5u.js";
+import {
+  d as l
+} from "./U9FR6gvg.js";
+import {
+  r as p
+} from "./CxJ_bcWF.js";
+var v = new Set(["$$slots", "$$events", "$$legacy"]),
+  n = a('<svg><path d="m356-160-56-56 180-180 180 180-56 56-124-124-124 124Zm124-404L300-744l56-56 124 124 124-124 56 56-180 180Z"></path></svg>');
+
+function i(t, o) {
+  let s = p(o, v);
+  var r = n();
+  l(r, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...s
+  })), e(t, r)
+}
+var $ = new Set(["$$slots", "$$events", "$$legacy"]),
+  g = a('<svg><path d="M480-120 300-300l58-58 122 122 122-122 58 58-180 180ZM358-598l-58-58 180-180 180 180-58 58-122-122-122 122Z"></path></svg>');
+
+function d(t, o) {
+  let s = p(o, $);
+  var r = g();
+  l(r, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...s
+  })), e(t, r)
+}
 export {
-  j as g
+  i as U, d as a
 };
