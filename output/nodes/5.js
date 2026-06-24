@@ -104,10 +104,10 @@ import {
   g as nu,
   c as NS,
   d as US
-} from "../chunks/Dsm9tvtf.js";
+} from "../chunks/w2U8PlhT.js";
 import {
   p as Xa
-} from "../chunks/DHiUsLEj.js";
+} from "../chunks/BGyrsqk1.js";
 import {
   a4 as VS,
   a5 as z2,
@@ -159,7 +159,7 @@ import {
   P as lP,
   c as cP,
   f as uP
-} from "../chunks/BTkuHr8w.js";
+} from "../chunks/DaGHu7aj.js";
 import {
   A as Wo
 } from "../chunks/7dazOjnF.js";
@@ -171,7 +171,7 @@ import {
   i as pP,
   c as hP,
   d as _P
-} from "../chunks/B9i171eX.js";
+} from "../chunks/aaBvNyOB.js";
 import {
   P as Da
 } from "../chunks/D6_ZGt9t.js";
@@ -372,7 +372,7 @@ import {
 import {
   c as $P,
   L as QP
-} from "../chunks/BUxFGKMt.js";
+} from "../chunks/D0R_HwbK.js";
 import {
   L as Ry
 } from "../chunks/DjSdgjuw.js";
@@ -466,7 +466,7 @@ import {
 } from "../chunks/lSLusnBY.js";
 import {
   r as Kg
-} from "../chunks/CyVJ7s6c.js";
+} from "../chunks/DPNm9WWT.js";
 import {
   c as _4
 } from "../chunks/BZcJYfQJ.js";
@@ -52843,7 +52843,7 @@ async function Cvt(c, o) {
   }
   return mm.fromJson(J5(e), o)
 }
-const Ivt = globalThis.__sveltekit_rf9iid.env,
+const Ivt = globalThis.__sveltekit_huwg44.env,
   mv = Ivt.PUBLIC_GOOGLE_DRIVE_CLIENT_ID ?? "",
   Sw = "https://accounts.google.com/gsi/client",
   Mvt = "https://www.googleapis.com/auth/drive.appdata",
@@ -62060,7 +62060,7 @@ function P1t(c, o) {
             }, [() => c4()]), qe("click", xr, () => Ce(l(we))), D(Er, xr)
           };
           pe(Zr, Er => {
-            l(we).appealSubmitted || Er(Wr)
+            !l(we).appealSubmitted && l(we).reason !== "bot" && l(we).reason !== "multi-accounting" && Er(Wr)
           })
         }
         y(nt), y(Dt), te(Er => {
