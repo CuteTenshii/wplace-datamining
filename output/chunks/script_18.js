@@ -1,121 +1,121 @@
-var jt = Object.defineProperty;
-var et = r => {
+var It = Object.defineProperty;
+var rt = r => {
   throw TypeError(r)
 };
-var At = (r, t, e) => t in r ? jt(r, t, {
+var kt = (r, t, e) => t in r ? It(r, t, {
   enumerable: !0,
   configurable: !0,
   writable: !0,
   value: e
 }) : r[t] = e;
-var m = (r, t, e) => At(r, typeof t != "symbol" ? t + "" : t, e),
-  V = (r, t, e) => t.has(r) || et("Cannot " + e);
+var m = (r, t, e) => kt(r, typeof t != "symbol" ? t + "" : t, e),
+  V = (r, t, e) => t.has(r) || rt("Cannot " + e);
 var c = (r, t, e) => (V(r, t, "read from private field"), e ? e.call(r) : t.get(r)),
-  g = (r, t, e) => t.has(r) ? et("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(r) : t.set(r, e),
-  p = (r, t, e, n) => (V(r, t, "write to private field"), n ? n.call(r, e) : t.set(r, e), e),
+  f = (r, t, e) => t.has(r) ? rt("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(r) : t.set(r, e),
+  d = (r, t, e, n) => (V(r, t, "write to private field"), n ? n.call(r, e) : t.set(r, e), e),
   v = (r, t, e) => (V(r, t, "access private method"), e);
 import {
-  T as pt,
+  T as gt,
   g as ft,
-  t as It,
+  t as Bt,
   a as H,
   q as J,
   u as Y,
-  r as kt,
-  G as Bt,
-  b as Ot
-} from "./Bijea84s.js";
+  r as Tt,
+  G as Ot,
+  b as Et
+} from "./D6vLbxsX.js";
 import {
-  e as rt,
-  i as nt,
+  e as nt,
+  i as ot,
   h as st,
   bI as Z,
   aE as St,
-  y as Et,
+  y as Nt,
   B as Lt
 } from "./CxLQz1V2.js";
 import {
-  g as Dt
-} from "./DOeBKhaD.js";
+  g as Ct
+} from "./vVVt0_Cr.js";
 import {
-  r as Nt
-} from "./CKM1v4DI.js";
+  r as Dt
+} from "./sHXkJpUj.js";
 import {
-  c as gt
+  c as ht
 } from "./CMG3kxXu.js";
 import {
-  g as ht
+  g as yt
 } from "./BhCkpOlh.js";
 const _t = () => "Your browser can't process Google Play purchases. Set Google Chrome as your device's default browser, then reopen WPlace to buy Droplets.",
-  Ct = () => "Seu browser não processa compras pela Google Play. Defina o Google Chrome como navegador padrão do dispositivo e reabra o WPlace para comprar Droplets.",
-  Gt = () => "你的浏览器无法处理 Google Play 购买。请将 Google Chrome 设为设备默认浏览器，然后重新打开 WPlace 购买 Droplets。",
-  Tt = () => "Dein Browser kann keine Google-Play-Käufe verarbeiten. Lege Google Chrome als Standardbrowser deines Geräts fest und öffne WPlace erneut, um Droplets zu kaufen.",
-  zt = () => "Tu navegador no puede procesar compras de Google Play. Establece Google Chrome como navegador predeterminado del dispositivo y vuelve a abrir WPlace para comprar Droplets.",
-  Ut = () => "Votre navigateur ne peut pas traiter les achats Google Play. Définissez Google Chrome comme navigateur par défaut de votre appareil, puis rouvrez WPlace pour acheter des Droplets.",
-  xt = () => "Il tuo browser non può elaborare gli acquisti di Google Play. Imposta Google Chrome come browser predefinito del dispositivo, poi riapri WPlace per acquistare Droplets.",
-  Rt = () => "お使いのブラウザではGoogle Play購入を処理できません。Google Chromeを端末の既定のブラウザに設定し、WPlaceを開き直してDropletsを購入してください。",
-  Kt = () => "Twoja przeglądarka nie obsługuje zakupów w Google Play. Ustaw Google Chrome jako domyślną przeglądarkę urządzenia, a następnie otwórz WPlace ponownie, aby kupić Droplets.",
-  Ft = () => "Ваш браузер не может обрабатывать покупки Google Play. Установите Google Chrome браузером по умолчанию на устройстве и снова откройте WPlace, чтобы купить Droplets.",
-  Mt = () => "Ваш браузер не може обробляти покупки Google Play. Установіть Google Chrome браузером за замовчуванням на пристрої та знову відкрийте WPlace, щоб купити Droplets.",
-  qt = () => "Trình duyệt của bạn không thể xử lý giao dịch mua qua Google Play. Hãy đặt Google Chrome làm trình duyệt mặc định của thiết bị, sau đó mở lại WPlace để mua Droplets.",
-  Vt = (r = {}, t = {}) => {
-    const e = t.locale ?? ht();
-    return e === "en" ? _t() : e === "pt" ? Ct() : e === "ch" ? Gt() : e === "de" ? Tt() : e === "es" ? zt() : e === "fr" ? Ut() : e === "it" ? xt() : e === "jp" ? Rt() : e === "pl" ? Kt() : e === "ru" ? Ft() : e === "uk" ? Mt() : qt()
+  Gt = () => "Seu browser não processa compras pela Google Play. Defina o Google Chrome como navegador padrão do dispositivo e reabra o WPlace para comprar Droplets.",
+  zt = () => "你的浏览器无法处理 Google Play 购买。请将 Google Chrome 设为设备默认浏览器，然后重新打开 WPlace 购买 Droplets。",
+  Ut = () => "Dein Browser kann keine Google-Play-Käufe verarbeiten. Lege Google Chrome als Standardbrowser deines Geräts fest und öffne WPlace erneut, um Droplets zu kaufen.",
+  xt = () => "Tu navegador no puede procesar compras de Google Play. Establece Google Chrome como navegador predeterminado del dispositivo y vuelve a abrir WPlace para comprar Droplets.",
+  Rt = () => "Votre navigateur ne peut pas traiter les achats Google Play. Définissez Google Chrome comme navigateur par défaut de votre appareil, puis rouvrez WPlace pour acheter des Droplets.",
+  Kt = () => "Il tuo browser non può elaborare gli acquisti di Google Play. Imposta Google Chrome come browser predefinito del dispositivo, poi riapri WPlace per acquistare Droplets.",
+  Ft = () => "お使いのブラウザではGoogle Play購入を処理できません。Google Chromeを端末の既定のブラウザに設定し、WPlaceを開き直してDropletsを購入してください。",
+  Mt = () => "Twoja przeglądarka nie obsługuje zakupów w Google Play. Ustaw Google Chrome jako domyślną przeglądarkę urządzenia, a następnie otwórz WPlace ponownie, aby kupić Droplets.",
+  qt = () => "Ваш браузер не может обрабатывать покупки Google Play. Установите Google Chrome браузером по умолчанию на устройстве и снова откройте WPlace, чтобы купить Droplets.",
+  Vt = () => "Ваш браузер не може обробляти покупки Google Play. Установіть Google Chrome браузером за замовчуванням на пристрої та знову відкрийте WPlace, щоб купити Droplets.",
+  Ht = () => "Trình duyệt của bạn không thể xử lý giao dịch mua qua Google Play. Hãy đặt Google Chrome làm trình duyệt mặc định của thiết bị, sau đó mở lại WPlace để mua Droplets.",
+  Jt = (r = {}, t = {}) => {
+    const e = t.locale ?? yt();
+    return e === "en" ? _t() : e === "pt" ? Gt() : e === "ch" ? zt() : e === "de" ? Ut() : e === "es" ? xt() : e === "fr" ? Rt() : e === "it" ? Kt() : e === "jp" ? Ft() : e === "pl" ? Mt() : e === "ru" ? qt() : e === "uk" ? Vt() : Ht()
   },
-  Ht = () => "Play Billing not supported.",
-  Jt = () => "Play Billing não suportado.",
-  Yt = () => "不支持 Play Billing。",
-  $t = () => "Play Billing wird nicht unterstützt.",
-  Zt = () => "Play Billing no es compatible.",
-  Wt = () => "Play Billing non pris en charge.",
-  Qt = () => "Play Billing non supportato.",
-  Xt = () => "Play Billing はサポートされていません。",
-  te = () => "Play Billing nie jest obsługiwane.",
-  ee = () => "Play Billing не поддерживается.",
-  re = () => "Play Billing не підтримується.",
-  ne = () => "Play Billing không được hỗ trợ.",
-  se = (r = {}, t = {}) => {
-    const e = t.locale ?? ht();
-    return e === "en" ? Ht() : e === "pt" ? Jt() : e === "ch" ? Yt() : e === "de" ? $t() : e === "es" ? Zt() : e === "fr" ? Wt() : e === "it" ? Qt() : e === "jp" ? Xt() : e === "pl" ? te() : e === "ru" ? ee() : e === "uk" ? re() : ne()
+  Yt = () => "Play Billing not supported.",
+  $t = () => "Play Billing não suportado.",
+  Wt = () => "不支持 Play Billing。",
+  Zt = () => "Play Billing wird nicht unterstützt.",
+  Qt = () => "Play Billing no es compatible.",
+  Xt = () => "Play Billing non pris en charge.",
+  te = () => "Play Billing non supportato.",
+  ee = () => "Play Billing はサポートされていません。",
+  re = () => "Play Billing nie jest obsługiwane.",
+  ne = () => "Play Billing не поддерживается.",
+  oe = () => "Play Billing не підтримується.",
+  se = () => "Play Billing không được hỗ trợ.",
+  $ = (r = {}, t = {}) => {
+    const e = t.locale ?? yt();
+    return e === "en" ? Yt() : e === "pt" ? $t() : e === "ch" ? Wt() : e === "de" ? Zt() : e === "es" ? Qt() : e === "fr" ? Xt() : e === "it" ? te() : e === "jp" ? ee() : e === "pl" ? re() : e === "ru" ? ne() : e === "uk" ? oe() : se()
   };
 
-function oe(r) {
+function ie(r) {
   return Math.floor(Math.random() * r)
 }
-const W = 14.5;
+const Q = 14.5;
 async function tr() {
-  const r = le();
+  const r = ue();
   if (r) return r;
   try {
     if ((await navigator.permissions.query({
         name: "geolocation"
       })).state === "granted") {
-      const e = await new Promise((n, s) => navigator.geolocation.getCurrentPosition(o => n(o), o => s(o)));
+      const e = await new Promise((n, o) => navigator.geolocation.getCurrentPosition(s => n(s), s => o(s)));
       return {
         lat: e.coords.latitude,
         lng: e.coords.longitude,
-        zoom: W
+        zoom: Q
       }
     }
   } catch (t) {
     console.error(t)
   }
   return {
-    ...ie().pos,
-    zoom: W
+    ...ae().pos,
+    zoom: Q
   }
 }
 
-function ie() {
-  const r = Object.entries(ae),
-    t = oe(r.length),
+function ae() {
+  const r = Object.entries(ce),
+    t = ie(r.length),
     [e, n] = r[t];
   return {
     city: e,
     pos: n
   }
 }
-const ae = {
+const ce = {
     tokyo: {
       lat: 35.677545560719665,
       lng: 139.76394445809638
@@ -137,39 +137,39 @@ const ae = {
       lng: 151.2083447239608
     }
   },
-  yt = "location";
+  mt = "location";
 
-function ce(r, t) {
-  localStorage.setItem(yt, JSON.stringify({
+function le(r, t) {
+  localStorage.setItem(mt, JSON.stringify({
     ...r,
     zoom: t
   }))
 }
 
-function le() {
-  const r = localStorage.getItem(yt);
+function ue() {
+  const r = localStorage.getItem(mt);
   if (!r) return;
   const t = JSON.parse(r);
-  return t.zoom ?? (t.zoom = W), t
+  return t.zoom ?? (t.zoom = Q), t
 }
 
 function er(r) {
   return r.lat >= -90 && r.lat <= 90 && r.lng >= -180 && r.lng <= 180
 }
 var z, U;
-class ue {
+class pe {
   constructor() {
-    g(this, z, rt(-1));
-    g(this, U, rt([]))
+    f(this, z, nt(-1));
+    f(this, U, nt([]))
   }
   get idx() {
-    return nt(c(this, z))
+    return ot(c(this, z))
   }
   set idx(t) {
     st(c(this, z), t, !0)
   }
   get entries() {
-    return nt(c(this, U))
+    return ot(c(this, U))
   }
   set entries(t) {
     st(c(this, U), t)
@@ -204,8 +204,8 @@ class ue {
   }
 }
 z = new WeakMap, U = new WeakMap;
-const rr = new ue,
-  ot = typeof globalThis == "object" && globalThis || typeof window == "object" && window || typeof self == "object" && self || typeof global == "object" && global || (function() {
+const rr = new pe,
+  it = typeof globalThis == "object" && globalThis || typeof window == "object" && window || typeof self == "object" && self || typeof global == "object" && global || (function() {
     return this
   })();
 
@@ -213,70 +213,70 @@ function de(r, t = {}) {
   const {
     cache: e = new Map,
     getCacheKey: n
-  } = t, s = function(o) {
-    const a = n ? n(o) : o;
+  } = t, o = function(s) {
+    const a = n ? n(s) : s;
     if (e.has(a)) return e.get(a);
-    const u = r.call(this, o);
+    const u = r.call(this, s);
     return e.set(a, u), u
   };
-  return s.cache = e, s
+  return o.cache = e, o
 }
 
-function pe() {}
-
-function it(r) {
-  return typeof ot.Buffer < "u" && ot.Buffer.isBuffer(r)
-}
+function ge() {}
 
 function at(r) {
-  return Object.getOwnPropertySymbols(r).filter(t => Object.prototype.propertyIsEnumerable.call(r, t))
+  return typeof it.Buffer < "u" && it.Buffer.isBuffer(r)
 }
 
 function ct(r) {
+  return Object.getOwnPropertySymbols(r).filter(t => Object.prototype.propertyIsEnumerable.call(r, t))
+}
+
+function lt(r) {
   return r == null ? r === void 0 ? "[object Undefined]" : "[object Null]" : Object.prototype.toString.call(r)
 }
 const fe = "[object RegExp]",
-  ge = "[object String]",
-  he = "[object Number]",
-  ye = "[object Boolean]",
-  me = "[object Symbol]",
-  we = "[object Date]",
-  be = "[object Map]",
-  Pe = "[object Set]",
-  ve = "[object Array]",
+  he = "[object String]",
+  ye = "[object Number]",
+  me = "[object Boolean]",
+  we = "[object Symbol]",
+  be = "[object Date]",
+  Pe = "[object Map]",
+  ve = "[object Set]",
+  Ae = "[object Array]",
   je = "[object Function]",
-  Ae = "[object ArrayBuffer]",
-  $ = "[object Object]",
-  Ie = "[object Error]",
-  ke = "[object DataView]",
-  Be = "[object Uint8Array]",
+  Ie = "[object ArrayBuffer]",
+  W = "[object Object]",
+  ke = "[object Error]",
+  Be = "[object DataView]",
+  Te = "[object Uint8Array]",
   Oe = "[object Uint8ClampedArray]",
-  Se = "[object Uint16Array]",
-  Ee = "[object Uint32Array]",
-  Le = "[object BigUint64Array]",
-  De = "[object Int8Array]",
-  Ne = "[object Int16Array]",
-  _e = "[object Int32Array]",
-  Ce = "[object BigInt64Array]",
+  Ee = "[object Uint16Array]",
+  Se = "[object Uint32Array]",
+  Ne = "[object BigUint64Array]",
+  Le = "[object Int8Array]",
+  Ce = "[object Int16Array]",
+  De = "[object Int32Array]",
+  _e = "[object BigInt64Array]",
   Ge = "[object Float32Array]",
-  Te = "[object Float64Array]";
+  ze = "[object Float64Array]";
 
-function lt(r) {
+function ut(r) {
   if (!r || typeof r != "object") return !1;
   const t = Object.getPrototypeOf(r);
   return t === null || t === Object.prototype || Object.getPrototypeOf(t) === null ? Object.prototype.toString.call(r) === "[object Object]" : !1
 }
 
-function ze(r, t) {
+function Ue(r, t) {
   return r === t || Number.isNaN(r) && Number.isNaN(t)
 }
 
-function Ue(r, t, e) {
-  return _(r, t, void 0, void 0, void 0, void 0, e)
+function xe(r, t, e) {
+  return C(r, t, void 0, void 0, void 0, void 0, e)
 }
 
-function _(r, t, e, n, s, o, a) {
-  const u = a(r, t, e, n, s, o);
+function C(r, t, e, n, o, s, a) {
+  const u = a(r, t, e, n, o, s);
   if (u !== void 0) return u;
   if (typeof r == typeof t) switch (typeof r) {
     case "bigint":
@@ -290,24 +290,24 @@ function _(r, t, e, n, s, o, a) {
     case "function":
       return r === t;
     case "object":
-      return T(r, t, o, a)
+      return G(r, t, s, a)
   }
-  return T(r, t, o, a)
+  return G(r, t, s, a)
 }
 
-function T(r, t, e, n) {
+function G(r, t, e, n) {
   if (Object.is(r, t)) return !0;
-  let s = ct(r),
-    o = ct(t);
-  if (s === "[object Arguments]" && (s = $), o === "[object Arguments]" && (o = $), s !== o) return !1;
-  switch (s) {
-    case ge:
-      return r.toString() === t.toString();
+  let o = lt(r),
+    s = lt(t);
+  if (o === "[object Arguments]" && (o = W), s === "[object Arguments]" && (s = W), o !== s) return !1;
+  switch (o) {
     case he:
-      return ze(r.valueOf(), t.valueOf());
+      return r.toString() === t.toString();
     case ye:
-    case we:
+      return Ue(r.valueOf(), t.valueOf());
     case me:
+    case be:
+    case we:
       return Object.is(r.valueOf(), t.valueOf());
     case fe:
       return r.source === t.source && r.flags === t.flags;
@@ -320,57 +320,57 @@ function T(r, t, e, n) {
   if (a != null && u != null) return a === t;
   e.set(r, t), e.set(t, r);
   try {
-    switch (s) {
-      case be:
+    switch (o) {
+      case Pe:
         if (r.size !== t.size) return !1;
-        for (const [l, f] of r.entries())
-          if (!t.has(l) || !_(f, t.get(l), l, r, t, e, n)) return !1;
+        for (const [l, g] of r.entries())
+          if (!t.has(l) || !C(g, t.get(l), l, r, t, e, n)) return !1;
         return !0;
-      case Pe: {
+      case ve: {
         if (r.size !== t.size) return !1;
         const l = Array.from(r.values()),
-          f = Array.from(t.values());
+          g = Array.from(t.values());
         for (let b = 0; b < l.length; b++) {
           const y = l[b],
-            S = f.findIndex(q => _(y, q, void 0, r, t, e, n));
-          if (S === -1) return !1;
-          f.splice(S, 1)
+            O = g.findIndex(q => C(y, q, void 0, r, t, e, n));
+          if (O === -1) return !1;
+          g.splice(O, 1)
         }
         return !0
       }
-      case ve:
-      case Be:
-      case Oe:
-      case Se:
-      case Ee:
-      case Le:
-      case De:
-      case Ne:
-      case _e:
-      case Ce:
-      case Ge:
-      case Te:
-        if (it(r) !== it(t) || r.length !== t.length) return !1;
-        for (let l = 0; l < r.length; l++)
-          if (!_(r[l], t[l], l, r, t, e, n)) return !1;
-        return !0;
       case Ae:
-        return r.byteLength !== t.byteLength ? !1 : T(new Uint8Array(r), new Uint8Array(t), e, n);
-      case ke:
-        return r.byteLength !== t.byteLength || r.byteOffset !== t.byteOffset ? !1 : T(new Uint8Array(r), new Uint8Array(t), e, n);
+      case Te:
+      case Oe:
+      case Ee:
+      case Se:
+      case Ne:
+      case Le:
+      case Ce:
+      case De:
+      case _e:
+      case Ge:
+      case ze:
+        if (at(r) !== at(t) || r.length !== t.length) return !1;
+        for (let l = 0; l < r.length; l++)
+          if (!C(r[l], t[l], l, r, t, e, n)) return !1;
+        return !0;
       case Ie:
+        return r.byteLength !== t.byteLength ? !1 : G(new Uint8Array(r), new Uint8Array(t), e, n);
+      case Be:
+        return r.byteLength !== t.byteLength || r.byteOffset !== t.byteOffset ? !1 : G(new Uint8Array(r), new Uint8Array(t), e, n);
+      case ke:
         return r.name === t.name && r.message === t.message;
-      case $: {
-        if (!(T(r.constructor, t.constructor, e, n) || lt(r) && lt(t))) return !1;
-        const l = [...Object.keys(r), ...at(r)],
-          f = [...Object.keys(t), ...at(t)];
-        if (l.length !== f.length) return !1;
+      case W: {
+        if (!(G(r.constructor, t.constructor, e, n) || ut(r) && ut(t))) return !1;
+        const l = [...Object.keys(r), ...ct(r)],
+          g = [...Object.keys(t), ...ct(t)];
+        if (l.length !== g.length) return !1;
         for (let b = 0; b < l.length; b++) {
           const y = l[b],
-            S = r[y];
+            O = r[y];
           if (!Object.hasOwn(t, y)) return !1;
           const q = t[y];
-          if (!_(S, q, y, r, t, e, n)) return !1
+          if (!C(O, q, y, r, t, e, n)) return !1
         }
         return !0
       }
@@ -382,12 +382,12 @@ function T(r, t, e, n) {
   }
 }
 
-function xe(r, t) {
-  return Ue(r, t, pe)
+function Re(r, t) {
+  return xe(r, t, ge)
 }
-const mt = typeof window < "u" ? window : void 0;
+const wt = typeof window < "u" ? window : void 0;
 
-function Re(r) {
+function Ke(r) {
   let t = r.activeElement;
   for (; t != null && t.shadowRoot;) {
     const e = t.shadowRoot.activeElement;
@@ -396,35 +396,35 @@ function Re(r) {
   }
   return t
 }
-var L, x;
-class Ke {
+var S, x;
+class Fe {
   constructor(t = {}) {
-    g(this, L);
-    g(this, x);
+    f(this, S);
+    f(this, x);
     const {
-      window: e = mt,
+      window: e = wt,
       document: n = e == null ? void 0 : e.document
     } = t;
-    e !== void 0 && (p(this, L, n), p(this, x, gt(s => {
-      const o = Z(e, "focusin", s),
-        a = Z(e, "focusout", s);
+    e !== void 0 && (d(this, S, n), d(this, x, ht(o => {
+      const s = Z(e, "focusin", o),
+        a = Z(e, "focusout", o);
       return () => {
-        o(), a()
+        s(), a()
       }
     })))
   }
   get current() {
     var t;
-    return (t = c(this, x)) == null || t.call(this), c(this, L) ? Re(c(this, L)) : null
+    return (t = c(this, x)) == null || t.call(this), c(this, S) ? Ke(c(this, S)) : null
   }
 }
-L = new WeakMap, x = new WeakMap;
-new Ke;
+S = new WeakMap, x = new WeakMap;
+new Fe;
 
-function Fe(r, t) {
+function Me(r, t) {
   switch (r) {
     case "post":
-      Et(t);
+      Nt(t);
       break;
     case "pre":
       St(t);
@@ -432,16 +432,16 @@ function Fe(r, t) {
   }
 }
 
-function wt(r, t, e, n = {}) {
+function bt(r, t, e, n = {}) {
   const {
-    lazy: s = !1
+    lazy: o = !1
   } = n;
-  let o = !s,
+  let s = !o,
     a = Array.isArray(r) ? [] : void 0;
-  Fe(t, () => {
-    const u = Array.isArray(r) ? r.map(f => f()) : r();
-    if (!o) {
-      o = !0, a = u;
+  Me(t, () => {
+    const u = Array.isArray(r) ? r.map(g => g()) : r();
+    if (!s) {
+      s = !0, a = u;
       return
     }
     const l = Lt(() => e(u, a));
@@ -449,16 +449,16 @@ function wt(r, t, e, n = {}) {
   })
 }
 
-function Me(r, t, e) {
-  wt(r, "post", t, e)
-}
-
 function qe(r, t, e) {
-  wt(r, "pre", t, e)
+  bt(r, "post", t, e)
 }
-Me.pre = qe;
 
-function Ve(r, t) {
+function Ve(r, t, e) {
+  bt(r, "pre", t, e)
+}
+qe.pre = Ve;
+
+function He(r, t) {
   switch (r) {
     case "local":
       return t.localStorage;
@@ -467,64 +467,64 @@ function Ve(r, t) {
   }
 }
 
-function bt(r, t, e, n, s, o) {
+function Pt(r, t, e, n, o, s) {
   if (r === null || typeof r != "object") return r;
   const a = Object.getPrototypeOf(r);
   if (a !== null && a !== Object.prototype && !Array.isArray(r)) return r;
   let u = e.get(r);
   return u || (u = new Proxy(r, {
-    get: (l, f) => (n == null || n(), bt(Reflect.get(l, f), t, e, n, s, o)),
-    set: (l, f, b) => (s == null || s(), Reflect.set(l, f, b), o(t), !0)
+    get: (l, g) => (n == null || n(), Pt(Reflect.get(l, g), t, e, n, o, s)),
+    set: (l, g, b) => (o == null || o(), Reflect.set(l, g, b), s(t), !0)
   }), e.set(r, u)), u
 }
-var j, A, D, I, E, B, F, P, O, N, R, K, M, w, C, G, Q, Pt;
-class He {
+var A, j, N, I, E, B, F, P, T, L, R, K, M, w, D, _, X, At;
+class vt {
   constructor(t, e, n = {}) {
-    g(this, w);
-    g(this, j);
-    g(this, A);
-    g(this, D);
-    g(this, I);
-    g(this, E);
-    g(this, B);
-    g(this, F, new WeakMap);
-    g(this, P);
-    g(this, O);
-    g(this, N);
-    g(this, R);
-    g(this, K);
-    g(this, M, t => {
+    f(this, w);
+    f(this, A);
+    f(this, j);
+    f(this, N);
+    f(this, I);
+    f(this, E);
+    f(this, B);
+    f(this, F, new WeakMap);
+    f(this, P);
+    f(this, T);
+    f(this, L);
+    f(this, R);
+    f(this, K);
+    f(this, M, t => {
       var e;
-      t.key !== c(this, A) || t.newValue === null || (p(this, j, v(this, w, C).call(this, t.newValue)), (e = c(this, B)) == null || e.call(this))
+      t.key !== c(this, j) || t.newValue === null || (d(this, A, v(this, w, D).call(this, t.newValue)), (e = c(this, B)) == null || e.call(this))
     });
     const {
-      storage: s = "local",
-      serializer: o = {
+      storage: o = "local",
+      serializer: s = {
         serialize: JSON.stringify,
         deserialize: JSON.parse
       },
       syncTabs: a = !0,
       connected: u = !0
-    } = n, l = "window" in n ? n.window : mt;
-    if (p(this, j, e), p(this, A, t), p(this, D, o), p(this, P, u), p(this, N, l), p(this, R, a), p(this, K, s), l === void 0) return;
-    const f = Ve(s, l);
-    p(this, I, f);
-    const b = f.getItem(t);
-    b !== null ? p(this, j, v(this, w, C).call(this, b)) : u && v(this, w, G).call(this, e), v(this, w, Q).call(this)
+    } = n, l = "window" in n ? n.window : wt;
+    if (d(this, A, e), d(this, j, t), d(this, N, s), d(this, P, u), d(this, L, l), d(this, R, a), d(this, K, o), l === void 0) return;
+    const g = He(o, l);
+    d(this, I, g);
+    const b = g.getItem(t);
+    b !== null ? d(this, A, v(this, w, D).call(this, b)) : u && v(this, w, _).call(this, e), v(this, w, X).call(this)
   }
   get current() {
-    var e, n, s, o;
+    var e, n, o, s;
     (e = c(this, E)) == null || e.call(this);
     let t;
     if (c(this, P)) {
-      const a = (n = c(this, I)) == null ? void 0 : n.getItem(c(this, A));
-      t = a ? v(this, w, C).call(this, a) : c(this, j)
-    } else t = c(this, j);
-    return bt(t, t, c(this, F), (s = c(this, E)) == null ? void 0 : s.bind(this), (o = c(this, B)) == null ? void 0 : o.bind(this), v(this, w, G).bind(this))
+      const a = (n = c(this, I)) == null ? void 0 : n.getItem(c(this, j));
+      t = a ? v(this, w, D).call(this, a) : c(this, A)
+    } else t = c(this, A);
+    return Pt(t, t, c(this, F), (o = c(this, E)) == null ? void 0 : o.bind(this), (s = c(this, B)) == null ? void 0 : s.bind(this), v(this, w, _).bind(this))
   }
   set current(t) {
     var e;
-    v(this, w, G).call(this, t), (e = c(this, B)) == null || e.call(this)
+    v(this, w, _).call(this, t), (e = c(this, B)) == null || e.call(this)
   }
   get connected() {
     return c(this, P)
@@ -532,47 +532,47 @@ class He {
   disconnect() {
     var e, n;
     if (!c(this, P)) return;
-    const t = (e = c(this, I)) == null ? void 0 : e.getItem(c(this, A));
-    t && p(this, j, v(this, w, C).call(this, t)), p(this, P, !1), (n = c(this, I)) == null || n.removeItem(c(this, A)), v(this, w, Pt).call(this)
+    const t = (e = c(this, I)) == null ? void 0 : e.getItem(c(this, j));
+    t && d(this, A, v(this, w, D).call(this, t)), d(this, P, !1), (n = c(this, I)) == null || n.removeItem(c(this, j)), v(this, w, At).call(this)
   }
   connect() {
-    c(this, P) || (p(this, P, !0), v(this, w, G).call(this, c(this, j)), v(this, w, Q).call(this))
+    c(this, P) || (d(this, P, !0), v(this, w, _).call(this, c(this, A)), v(this, w, X).call(this))
   }
 }
-j = new WeakMap, A = new WeakMap, D = new WeakMap, I = new WeakMap, E = new WeakMap, B = new WeakMap, F = new WeakMap, P = new WeakMap, O = new WeakMap, N = new WeakMap, R = new WeakMap, K = new WeakMap, M = new WeakMap, w = new WeakSet, C = function(t) {
+A = new WeakMap, j = new WeakMap, N = new WeakMap, I = new WeakMap, E = new WeakMap, B = new WeakMap, F = new WeakMap, P = new WeakMap, T = new WeakMap, L = new WeakMap, R = new WeakMap, K = new WeakMap, M = new WeakMap, w = new WeakSet, D = function(t) {
   try {
-    return c(this, D).deserialize(t)
+    return c(this, N).deserialize(t)
   } catch (e) {
-    console.error(`Error when parsing "${t}" from persisted store "${c(this,A)}"`, e);
+    console.error(`Error when parsing "${t}" from persisted store "${c(this,j)}"`, e);
     return
   }
-}, G = function(t) {
+}, _ = function(t) {
   var e;
   if (!c(this, P)) {
-    p(this, j, t);
+    d(this, A, t);
     return
   }
   try {
-    t !== void 0 && ((e = c(this, I)) == null || e.setItem(c(this, A), c(this, D).serialize(t)))
+    t !== void 0 && ((e = c(this, I)) == null || e.setItem(c(this, j), c(this, N).serialize(t)))
   } catch (n) {
-    console.error(`Error when writing value from persisted store "${c(this,A)}" to ${c(this,I)}`, n)
+    console.error(`Error when writing value from persisted store "${c(this,j)}" to ${c(this,I)}`, n)
   }
-}, Q = function() {
-  !c(this, N) || !c(this, P) || p(this, E, gt(t => (p(this, B, t), p(this, O, c(this, P) && c(this, R) && c(this, K) === "local" ? Z(c(this, N), "storage", c(this, M)) : void 0), () => {
+}, X = function() {
+  !c(this, L) || !c(this, P) || d(this, E, ht(t => (d(this, B, t), d(this, T, c(this, P) && c(this, R) && c(this, K) === "local" ? Z(c(this, L), "storage", c(this, M)) : void 0), () => {
     var e;
-    (e = c(this, O)) == null || e.call(this), p(this, O, void 0), p(this, B, void 0)
+    (e = c(this, T)) == null || e.call(this), d(this, T, void 0), d(this, B, void 0)
   })))
-}, Pt = function() {
+}, At = function() {
   var t;
-  (t = c(this, O)) == null || t.call(this), p(this, O, void 0), p(this, E, void 0)
+  (t = c(this, T)) == null || t.call(this), d(this, T, void 0), d(this, E, void 0)
 };
-class tt extends Promise {
+class et extends Promise {
   constructor(e) {
     let n;
     super((a, u) => {
       n = {
-        resolve: o("fulfilled", a),
-        reject: o("rejected", u)
+        resolve: s("fulfilled", a),
+        reject: s("rejected", u)
       }, e == null || e(n.resolve, n.reject)
     });
     m(this, "resolvers");
@@ -580,11 +580,11 @@ class tt extends Promise {
       status: "pending"
     });
     this.resolvers = n;
-    const s = this;
+    const o = this;
 
-    function o(a, u) {
-      return function(...f) {
-        return s.state.status === "pending" && (s.state = s.mountStateByStatus(a, f[0])), u(...f)
+    function s(a, u) {
+      return function(...g) {
+        return o.state.status === "pending" && (o.state = o.mountStateByStatus(a, g[0])), u(...g)
       }
     }
   }
@@ -611,21 +611,21 @@ class tt extends Promise {
     return this.state
   }
   create() {
-    return new tt
+    return new et
   }
 }
-var X = (r => (r.Play = "https://play.google.com/billing", r))(X || {});
+var tt = (r => (r.Play = "https://play.google.com/billing", r))(tt || {});
 
-function ut(r) {
+function pt(r) {
   return de(r)
 }
-const d = class d {
+const p = class p {
   constructor(t) {
     this.state = t
   }
   static get checkout() {
     var t, e;
-    return ((t = d.checkoutState) == null ? void 0 : t.current) && new d((e = d.checkoutState) == null ? void 0 : e.current)
+    return ((t = p.checkoutState) == null ? void 0 : t.current) && new p((e = p.checkoutState) == null ? void 0 : e.current)
   }
   get startedAt() {
     return this.state.startedAt
@@ -638,14 +638,14 @@ const d = class d {
   }
   static shouldRecover() {
     var t, e;
-    return ((t = d.checkout) == null ? void 0 : t.startedAt) && Date.now() - ((e = d.checkout) == null ? void 0 : e.startedAt) <= 3 * pt.day
+    return ((t = p.checkout) == null ? void 0 : t.startedAt) && Date.now() - ((e = p.checkout) == null ? void 0 : e.startedAt) <= 3 * gt.day
   }
   static isRunning() {
     var t;
-    return ((t = d.memoryCheckout) == null ? void 0 : t.type) === "running"
+    return ((t = p.memoryCheckout) == null ? void 0 : t.type) === "running"
   }
   applyFinishIfNecessary(t) {
-    this.startedAt > t.startedAt || d.isRunning() && d.onChangeCheckout({
+    this.startedAt > t.startedAt || p.isRunning() && p.onChangeCheckout({
       ...this.state,
       finishedAt: Date.now(),
       type: "finished",
@@ -654,7 +654,7 @@ const d = class d {
     })
   }
   static start() {
-    return d.onChangeCheckout({
+    return p.onChangeCheckout({
       type: "running",
       startedAt: Date.now(),
       view: void 0,
@@ -663,12 +663,12 @@ const d = class d {
   }
   static finish(t) {
     var e, n;
-    return (n = (e = d.checkout) == null ? void 0 : e.applyFinishIfNecessary) == null ? void 0 : n.call(e, t)
+    return (n = (e = p.checkout) == null ? void 0 : e.applyFinishIfNecessary) == null ? void 0 : n.call(e, t)
   }
   static markViewed() {
     var e;
-    const t = (e = d.checkout) == null ? void 0 : e.state;
-    t && d.onChangeCheckout({
+    const t = (e = p.checkout) == null ? void 0 : e.state;
+    t && p.onChangeCheckout({
       startedAt: t == null ? void 0 : t.startedAt,
       finishedAt: Date.now(),
       droplets: t.type === "running" ? 0 : t.droplets,
@@ -677,13 +677,13 @@ const d = class d {
     })
   }
   static clear() {
-    d.checkoutState.current = void 0
+    p.checkoutState.current = void 0
   }
   static onChangeCheckout(t) {
-    return d.checkoutState.current = t, d.memoryCheckout = d.checkout, d.memoryCheckout
+    return p.checkoutState.current = t, p.memoryCheckout = p.checkout, p.memoryCheckout
   }
   static preventNavigationInTWAIfInCheckout(t) {
-    k.isTWA() && (d.addFocusListener(t), d.addNavigationListener(t))
+    k.isTWA() && (p.addFocusListener(t), p.addNavigationListener(t))
   }
   static addFocusListener(t) {
     window.addEventListener("focus", () => {
@@ -695,14 +695,14 @@ const d = class d {
   static addNavigationListener(t) {
     const e = window.navigation;
     e && e.addEventListener("navigate", n => {
-      var s;
-      (!document.hasFocus() && d.memoryCheckout || d.isRunning()) && (n.preventDefault(), (s = k.log) == null || s.call(k, "intercepted", new Error().stack))
+      var o;
+      (!document.hasFocus() && p.memoryCheckout || p.isRunning()) && (n.preventDefault(), (o = k.log) == null || o.call(k, "intercepted", new Error().stack))
     }, {
       signal: t.signal
     })
   }
   static openCheckoutDialog(t) {
-    return d.markViewed(), Dt(Nt("/payment/success-v3") + `?droplets=${t}`, {
+    return p.markViewed(), Ct(Dt("/payment/success-v3") + `?droplets=${t}`, {
       replaceState: !0
     })
   }
@@ -710,11 +710,11 @@ const d = class d {
     ft.pendingHistoryDialogOpen = !0
   }
 };
-m(d, "checkoutState", new He("twa:checkout", void 0, {
+m(p, "checkoutState", new vt("twa:checkout", void 0, {
   syncTabs: !1,
   storage: "local"
-})), m(d, "memoryCheckout");
-let h = d;
+})), m(p, "memoryCheckout");
+let h = p;
 
 function dt(r) {
   const t = r;
@@ -732,8 +732,8 @@ const i = class i {
   static get warn() {}
   static toastError(...t) {
     var n;
-    const e = t.map(s => JSON.stringify(s));
-    throw (n = i.error) == null || n.call(i, ...t), e.forEach(s => It.error(s)), new Error(t.length === 1 ? e[0] : e.join(`
+    const e = t.map(o => JSON.stringify(o));
+    throw (n = i.error) == null || n.call(i, ...t), e.forEach(o => Bt.error(o)), new Error(t.length === 1 ? e[0] : e.join(`
 `))
   }
   static twaGuard() {}
@@ -743,7 +743,7 @@ const i = class i {
       obfuscatedAccountId: e
     };
     return new PaymentRequest([{
-      supportedMethods: X.Play,
+      supportedMethods: tt.Play,
       data: n
     }], {
       total: {
@@ -756,13 +756,18 @@ const i = class i {
     })
   }
   static isPlayBillingBlockedError(t) {
-    const e = i.PLAY_BILLING_NOT_AVAILABLE.findIndex(s => xe(dt(t), dt(s)));
+    const e = i.PLAY_BILLING_NOT_AVAILABLE.findIndex(o => Re(dt(t), dt(o)));
     return i.PLAY_BILLING_NOT_AVAILABLE[e]
   }
   static setAsPlayBillingBlockedErrorIfNecessary(t) {
     try {
       if (!t) return;
-      i.setAsPlayBillingBlocked(i.isPlayBillingBlockedError(t))
+      const e = i.isPlayBillingBlockedError(t);
+      if (e != null && e.notTwaContext) {
+        i.forceNotTWA.current = !0;
+        return
+      }
+      i.setAsPlayBillingBlocked(e)
     } finally {
       return Promise.reject(t)
     }
@@ -792,23 +797,23 @@ const i = class i {
     if (!(e != null && e.productId)) throw new Error("No sku config or productId found");
     if (!((b = Y.data) != null && b.id)) throw new Error("No user id");
     const n = await i.createPaymentBySkuId(t),
-      s = h.start(),
-      o = await n.show().catch(y => i.setAsPlayBillingBlockedErrorIfNecessary(y)).finally(() => {
+      o = h.start(),
+      s = await n.show().catch(y => i.setAsPlayBillingBlockedErrorIfNecessary(y)).finally(() => {
         var y;
-        return (y = h.finish) == null ? void 0 : y.call(h, s)
+        return (y = h.finish) == null ? void 0 : y.call(h, o)
       }),
-      a = o == null ? void 0 : o.toJSON();
+      a = s == null ? void 0 : s.toJSON();
     let u = "unknown";
     return a.details.purchaseToken ? l(u) : l("fail", new Error("Play Billing returned no purchase token")), {
       setStatus: l,
       status: u,
       out: a,
-      verify: f
+      verify: g
     };
-    async function l(y, S) {
-      if (u = y, await (o == null ? void 0 : o.complete(y).catch(() => {})), S) throw S
+    async function l(y, O) {
+      if (u = y, await (s == null ? void 0 : s.complete(y).catch(() => {})), O) throw O
     }
-    async function f() {
+    async function g() {
       try {
         const {
           droplets: y
@@ -839,19 +844,19 @@ const i = class i {
         sku: a.itemId,
         token: a.purchaseToken
       })));
-      let s = 0,
-        o = 0;
-      for (const a of n) a.status === "fulfilled" ? s += a.value.droplets : o++;
-      return s > 0 && await i.refresh(), {
-        credited: s,
-        pending: o
+      let o = 0,
+        s = 0;
+      for (const a of n) a.status === "fulfilled" ? o += a.value.droplets : s++;
+      return o > 0 && await i.refresh(), {
+        credited: o,
+        pending: s
       }
     } catch {
       return t
     }
   }
   static async autoRecoverPendingPurchases() {
-    var s;
+    var o;
     if (i.twaGuard(), !h.shouldRecover() || (await i.wait, !i.isTWALoaded())) return;
     const {
       credited: t,
@@ -868,7 +873,7 @@ const i = class i {
       h.openPendingDialog();
       return
     }
-    const n = (s = h.checkout) == null ? void 0 : s.state;
+    const n = (o = h.checkout) == null ? void 0 : o.state;
     if ((n == null ? void 0 : n.type) === "finished" && !n.view) {
       n.droplets && h.openCheckoutDialog(n.droplets);
       return
@@ -887,13 +892,13 @@ const i = class i {
     return window
   }
   static isTWA() {
-    return vt() && !!this.getGlobal().getDigitalGoodsService
+    return jt() && !this.forceNotTWA.current && !!this.getGlobal().getDigitalGoodsService
   }
   static canLoadTWA() {
     return this.isTWA()
   }
   static isTWALoaded() {
-    return !!(Y.data && this.billing && this.service)
+    return !!(Y.data && this.billing && this.service && !this.forceNotTWA.current)
   }
   static async load() {
     var t;
@@ -909,9 +914,9 @@ const i = class i {
     var t;
     if (h.shouldRecover()) try {
       const e = await i.getPurchasesAfter(),
-        s = ((t = Object.groupBy(e, o => o.status).paid) == null ? void 0 : t.reduce((o, a) => o + a.droplets, 0)) ?? 0;
-      if (s > 0) {
-        await h.openCheckoutDialog(s);
+        o = ((t = Object.groupBy(e, s => s.status).paid) == null ? void 0 : t.reduce((s, a) => s + a.droplets, 0)) ?? 0;
+      if (o > 0) {
+        await h.openCheckoutDialog(o);
         return
       }
       if (e != null && e.length) {
@@ -923,15 +928,15 @@ const i = class i {
     }
   }
   static async getPurchasesAfter() {
-    var s, o;
-    const t = ((s = h.checkout) == null ? void 0 : s.state.view) ?? ((o = h.checkout) == null ? void 0 : o.state.startedAt);
+    var o, s;
+    const t = ((o = h.checkout) == null ? void 0 : o.state.view) ?? ((s = h.checkout) == null ? void 0 : s.state.startedAt);
     return t ? (await H.listPlayPurchaseHistory()).purchases.sort((a, u) => Date.parse(u.updatedAt) - Date.parse(a.updatedAt)).filter(a => Date.parse(a.updatedAt) > t) : []
   }
   static async loadTWA() {
     i.canLoadTWA() && await i.load()
   }
   static isSamsung() {
-    return kt() === "Samsung Internet"
+    return Tt() === "Samsung Internet"
   }
   static nativeFormat(t) {
     return new Intl.NumberFormat(navigator.language, {
@@ -940,63 +945,76 @@ const i = class i {
     }).format(+t.price.value)
   }
   static printPriceBySKU(t) {
-    var s;
+    var o;
     const e = i.mapSKUs.get(t);
     if ((e == null ? void 0 : e.price) != null) return this.nativeFormat(e);
     const n = (e == null ? void 0 : e.price) ?? {
-      value: ((s = J(t)) == null ? void 0 : s.price) * Bt / 100,
+      value: ((o = J(t)) == null ? void 0 : o.price) * Ot / 100,
       currency: "USD"
     };
     return [n.currency, Number(n.value).toFixed(2)].join(" ")
   }
 };
-m(i, "POOLING_TIME", 10), m(i, "playBillingBlockedError"), m(i, "billing", !1), m(i, "service"), m(i, "mapSKUs", new Map), m(i, "referrer", []), m(i, "wait", new tt), m(i, "USER_CANCELLED_ERROR", "Payment app returned RESULT_CANCELED code. This is how payment apps can close their activity programmatically."), m(i, "PLAY_BILLING_NOT_AVAILABLE", [{
-  printError: Vt(),
+m(i, "POOLING_TIME", 10), m(i, "playBillingBlockedError"), m(i, "forceNotTWA", new vt("twa:force_not_twa", !1, {
+  syncTabs: !1,
+  storage: "session"
+})), m(i, "billing", !1), m(i, "service"), m(i, "mapSKUs", new Map), m(i, "referrer", []), m(i, "wait", new et), m(i, "USER_CANCELLED_ERROR", "Payment app returned RESULT_CANCELED code. This is how payment apps can close their activity programmatically."), m(i, "PLAY_BILLING_NOT_AVAILABLE", [{
+  printError: Jt(),
   name: "AbortError",
   message: "Invalid state."
 }, {
-  printError: se(),
+  printError: $(),
   name: "NotSupportedError",
   message: 'The payment method "https://play.google.com/billing" is not supported.'
-}]), m(i, "getMapSKUs", ut(async () => {
-  var s;
+}, {
+  notTwaContext: !0,
+  printError: $(),
+  name: "NotSupportedError",
+  message: 'The payment method "https://play.google.com/billing" is not supported. Payment method https://play.google.com/billing is only supported in Trusted Web Activity.'
+}, {
+  notTwaContext: !0,
+  printError: $(),
+  name: "NotSupportedError",
+  message: 'The payment method "https://play.google.com/billing" is not supported. Unable to download payment manifest "https://play.google.com/billing". HTTP 403 Forbidden.'
+}]), m(i, "getMapSKUs", pt(async () => {
+  var o;
   i.twaGuard();
-  const t = Object.values(Ot.products).filter(o => "lookupKey" in o).map(o => o.lookupKey),
-    e = await ((s = i.service) == null ? void 0 : s.getDetails(t).catch(o => i.setAsPlayBillingBlockedErrorIfNecessary(o)));
-  return new Map(e == null ? void 0 : e.map(o => [o.itemId, o]))
-})), m(i, "getService", ut(() => {
+  const t = Object.values(Et.products).filter(s => "lookupKey" in s).map(s => s.lookupKey),
+    e = await ((o = i.service) == null ? void 0 : o.getDetails(t).catch(s => i.setAsPlayBillingBlockedErrorIfNecessary(s)));
+  return new Map(e == null ? void 0 : e.map(s => [s.itemId, s]))
+})), m(i, "getService", pt(() => {
   var t, e;
-  return (e = (t = i.getGlobal()).getDigitalGoodsService) == null ? void 0 : e.call(t, X.Play).then(n => (i.billing = !0, n))
+  return (e = (t = i.getGlobal()).getDigitalGoodsService) == null ? void 0 : e.call(t, tt.Play).then(n => (i.billing = !0, n))
 })), m(i, "onInit", async t => {
   i.referrer.push(document.referrer), h.preventNavigationInTWAIfInCheckout(t)
 });
 let k = i;
 
-function vt() {
+function jt() {
   return window.matchMedia("(display-mode: standalone)").matches || "standalone" in window.navigator && window.navigator.standalone === !0
 }
 
 function nr() {
   const r = "last-unfocus",
     t = new AbortController;
-  if (vt()) {
+  if (jt()) {
     queueMicrotask(async () => {
       await k.onInit(t)
     });
     const e = () => {
-        const s = localStorage.getItem(r);
-        if (s) {
-          const o = parseInt(s, 10);
-          Date.now() - o > 5 * pt.minute && window.location.reload()
+        const o = localStorage.getItem(r);
+        if (o) {
+          const s = parseInt(o, 10);
+          Date.now() - s > 5 * gt.minute && window.location.reload()
         }
       },
       n = () => {
         localStorage.setItem(r, Date.now().toString());
-        const s = ft.map;
-        if (s) {
-          const o = s.getCenter(),
-            a = s.getZoom();
-          ce(o, a)
+        const o = ft.map;
+        if (o) {
+          const s = o.getCenter(),
+            a = o.getZoom();
+          le(s, a)
         }
       };
     document.addEventListener("visibilitychange", () => {
@@ -1014,5 +1032,5 @@ function nr() {
   }
 }
 export {
-  h as T, k as a, ce as b, ae as c, vt as d, tr as g, er as i, rr as l, Vt as p, nr as s, Me as w
+  h as T, k as a, le as b, ce as c, jt as d, tr as g, er as i, rr as l, Jt as p, nr as s, qe as w
 };

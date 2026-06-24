@@ -57,16 +57,16 @@ import {
   Q as xr,
   t as vt,
   c as Kt
-} from "./Bijea84s.js";
+} from "./D6vLbxsX.js";
 import {
   a as kr,
   u as jr
-} from "./CiuOppeZ.js";
+} from "./7dazOjnF.js";
 import {
   T as Xt,
-  a as Ie,
+  a as Be,
   p as qr
-} from "./b4ytJ6Xk.js";
+} from "./D--33_yQ.js";
 import {
   r as Dr
 } from "./CFl7M2B7.js";
@@ -75,7 +75,7 @@ import {
 } from "./B_QX0J5a.js";
 import {
   r as Nt
-} from "./CKM1v4DI.js";
+} from "./sHXkJpUj.js";
 import {
   l as Pr
 } from "./B_Oz03f8.js";
@@ -1560,7 +1560,7 @@ function Mf(r, t) {
     a() && (_(w, "pending"), _(g, !0), J())
   });
   async function I() {
-    return Ie.autoRecoverPendingPurchases()
+    return Be.autoRecoverPendingPurchases()
   }
   let B = wf(async function() {
     try {
@@ -2425,13 +2425,13 @@ function sh(r, t) {
     V = W(!1);
 
   function Z() {
-    _(B, Ie.canLoadTWA(), !0), _(T, Ie.isTWALoaded(), !0), _(V, Ie.playBillingBlocked, !0)
+    _(B, Be.canLoadTWA(), !0), _(T, Be.isTWALoaded(), !0), _(V, Be.playBillingBlocked, !0)
   }
   let K = W(!1),
     ae = W(!1),
     A = W("");
   jt(() => {
-    Ie.wait.finally(() => {
+    Be.wait.finally(() => {
       Z()
     })
   });
@@ -2512,12 +2512,12 @@ function sh(r, t) {
     let s = !1,
       f = "";
     try {
-      const d = await Ie.createPayment(c);
+      const d = await Be.createPayment(c);
       s = !0, f = d.out.details.purchaseToken, await d.verify()
     } catch (d) {
       if (s) {
         _(g, !0);
-        const q = await me(f, () => Ie.verifyBySKU({
+        const q = await me(f, () => Be.verifyBySKU({
           sku: c,
           token: f
         }));
@@ -2572,7 +2572,7 @@ function sh(r, t) {
           amount: G
         }
       } catch {}
-      if ((Date.now() - f) / 1e3 > Ie.POOLING_TIME) return {
+      if ((Date.now() - f) / 1e3 > Be.POOLING_TIME) return {
         status: "pending",
         amount: 0
       };
@@ -2726,7 +2726,7 @@ function sh(r, t) {
                             Le = re(ee);
                           Vt(Le, () => n(T), ut => {
                             var ct = Qe();
-                            L(vr => x(ct, vr), [() => Ie.printPriceBySKU(lt())]), l(ut, ct)
+                            L(vr => x(ct, vr), [() => Be.printPriceBySKU(lt())]), l(ut, ct)
                           }), l(X, ee)
                         },
                         yr = X => {
@@ -2751,14 +2751,14 @@ function sh(r, t) {
 								${ut??""}`), mt.disabled = n(p) || n(V), Ot = Pe(Tt, 1, "", null, Ot, {
                         "opacity-0": n(p) && (n(B) || ((ct = n(y)) == null ? void 0 : ct.stripeLookupkey) === lt())
                       })
-                    }, [() => (Ze() + Ve()).toLocaleString(navigator.language), () => xt(), () => Ve().toLocaleString(navigator.language), () => D_()]), ve("click", mt, () => {
-                      Z(), n(B) ? je(lt()) : ke({
+                    }, [() => (Ze() + Ve()).toLocaleString(navigator.language), () => xt(), () => Ve().toLocaleString(navigator.language), () => D_()]), ve("click", mt, async () => {
+                      n(B) && await je(lt()), (!n(B) || Be.forceNotTWA.current) && ke({
                         price: nt(),
                         droplets: Ze(),
                         bonus: Ve(),
                         stripeLookupkey: lt(),
                         productId: lr()
-                      })
+                      }), Z()
                     }), l(He, Ct)
                   };
                   var qe = hy(),
@@ -2821,8 +2821,8 @@ function sh(r, t) {
                     dropdownClass: "max-sm:dropdown-top dropdown-center"
                   })), o(ge);
                   var we = u(ge, 2),
-                    Be = i(we),
-                    he = u(Be),
+                    Ie = i(we),
+                    he = u(Ie),
                     st = i(he, !0);
                   o(he), o(we);
                   var rt = u(we, 2);
@@ -2838,7 +2838,7 @@ function sh(r, t) {
                     })
                   }
                   L((He, Q, Ze, Ve) => {
-                    x(te, He), x(Be, `${Q??""} `), Ge(he, "href", Ze), x(st, Ve)
+                    x(te, He), x(Ie, `${Q??""} `), Ge(he, "href", Ze), x(st, Ve)
                   }, [() => d_(), () => e_(), () => Dr(), () => Zp()]), l(fe, qe)
                 },
                 Ae = fe => {
@@ -2849,14 +2849,14 @@ function sh(r, t) {
                       var ye = my(),
                         Oe = i(ye),
                         we = i(Oe),
-                        Be = i(we),
-                        he = u(Be, 2),
+                        Ie = i(we),
+                        he = u(Ie, 2),
                         st = u(he);
                       o(we);
                       var rt = u(we, 2),
                         Pt = i(rt, !0);
                       o(rt), o(Oe), o(ye), L((He, Q) => {
-                        Pe(we, 1, `group flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all ${n(m)==="stripe"?"dark:bg-base-100 bg-white text-[#635bff] shadow-sm":"text-base-content/50 hover:text-base-content/80"}`), Pe(Be, 0, `hidden w-auto transition-all sm:block sm:h-4 ${n(m)==="stripe"?"":"grayscale group-hover:grayscale-0"}`), Pe(he, 0, `hidden w-auto transition-all sm:block sm:h-4 ${n(m)==="stripe"?"":"grayscale group-hover:grayscale-0"}`), x(st, ` ${He??""}`), Pe(rt, 1, `flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all ${n(m)==="other"?"dark:bg-base-100 bg-white text-[#30313d] shadow-sm":"text-base-content/50 hover:text-base-content/80"}`), x(Pt, Q)
+                        Pe(we, 1, `group flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all ${n(m)==="stripe"?"dark:bg-base-100 bg-white text-[#635bff] shadow-sm":"text-base-content/50 hover:text-base-content/80"}`), Pe(Ie, 0, `hidden w-auto transition-all sm:block sm:h-4 ${n(m)==="stripe"?"":"grayscale group-hover:grayscale-0"}`), Pe(he, 0, `hidden w-auto transition-all sm:block sm:h-4 ${n(m)==="stripe"?"":"grayscale group-hover:grayscale-0"}`), x(st, ` ${He??""}`), Pe(rt, 1, `flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all ${n(m)==="other"?"dark:bg-base-100 bg-white text-[#30313d] shadow-sm":"text-base-content/50 hover:text-base-content/80"}`), x(Pt, Q)
                       }, [() => R_(), () => X_()]), ve("click", we, () => _(m, "stripe")), ve("click", rt, () => _(m, "other")), l(be, ye)
                     };
                     S(qe, be => {
@@ -2879,12 +2879,12 @@ function sh(r, t) {
                               onUnavailable: C
                             })
                           },
-                          Be = he => {
+                          Ie = he => {
                             var st = vy();
                             l(he, st)
                           };
                         S(Oe, he => {
-                          n(b) ? he(we) : he(Be, -1)
+                          n(b) ? he(we) : he(Ie, -1)
                         })
                       }
                       o(ye), L(() => Pe(ye, 1, Ft(n(m) !== "stripe" ? "h-0 overflow-hidden" : ""))), l(be, ye)
@@ -2907,14 +2907,14 @@ function sh(r, t) {
                         },
                         oncomplete: async we => {
                           try {
-                            const Be = n(y).droplets + n(y).bonus;
+                            const Ie = n(y).droplets + n(y).bonus;
                             if (we) {
                               const {
                                 orderId: he
                               } = await Ee.refreshFastspringSession(we);
                               await De.refresh(), he && await Ee.markFastspringOrderAsRead(he), localStorage.removeItem("fscBackFromCheckout")
                             }
-                            pe(), e(!1), _(v, Be), _(j, !0)
+                            pe(), e(!1), _(v, Ie), _(j, !0)
                           } catch {
                             vt.warning(jd())
                           }
@@ -3016,7 +3016,7 @@ function sh(r, t) {
     {
       let s = z(() => {
         var f;
-        return (f = Ie.playBillingBlockedError) == null ? void 0 : f.printError
+        return (f = Be.playBillingBlockedError) == null ? void 0 : f.printError
       });
       Kf(c, {
         get message() {

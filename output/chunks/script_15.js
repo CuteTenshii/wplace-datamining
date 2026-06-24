@@ -6498,7 +6498,7 @@ class cR {
     return n.status !== c.OK ? [] : (await n.json()).predictions ?? []
   }
   async postWorldCupPrediction(n, e) {
-    return (await this.request("/world-cup/predictions", {
+    const r = await this.request("/world-cup/predictions", {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
@@ -6506,7 +6506,13 @@ class cR {
         pick: e
       }),
       throwOnStatus: !1
-    })).status
+    });
+    return r.status !== c.OK ? {
+      status: r.status
+    } : {
+      status: r.status,
+      prediction: await r.json()
+    }
   }
   async logout() {
     const n = await this.request("/auth/logout", {
