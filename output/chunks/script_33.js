@@ -18,11 +18,11 @@ import {
   r as o,
   l as ve,
   c as h,
-  s as u,
+  s as c,
   n as qt,
-  t as B,
+  t as L,
   i as n,
-  u as z,
+  u as T,
   bl as Qe,
   y as Lt,
   e as W,
@@ -31,10 +31,10 @@ import {
   aI as wr
 } from "./CNUayq5u.js";
 import {
-  s as x
+  s as k
 } from "./Dnqs5_45.js";
 import {
-  i as S
+  i as z
 } from "./BZdRChsB.js";
 import {
   k as Vt
@@ -57,16 +57,16 @@ import {
   R as xr,
   t as vt,
   c as Kt
-} from "./D2EF9Wn0.js";
+} from "./CXqvsY6L.js";
 import {
   a as kr,
   u as jr
-} from "./CoQf9-eD.js";
+} from "./C8_sugrX.js";
 import {
   T as Xt,
   a as Le,
   p as qr
-} from "./5BKifjzw.js";
+} from "./BL9zpQ0B.js";
 import {
   r as Dr
 } from "./CFl7M2B7.js";
@@ -75,7 +75,7 @@ import {
 } from "./DLADINcb.js";
 import {
   r as Nt
-} from "./WB1JvQRM.js";
+} from "./6QKdcgO7.js";
 import {
   l as Pr
 } from "./B_Oz03f8.js";
@@ -878,29 +878,29 @@ function Ld(r, t) {
     Je(b, {
       class: "text-primary size-4.5"
     });
-    var G = u(b, 2),
+    var G = c(b, 2),
       J = i(G);
     qt(), o(G);
-    var I = u(G, 2);
+    var E = c(G, 2);
     {
-      var L = T => {
+      var I = A => {
         var V = zd(),
           Z = i(V);
         Pd(Z, {
           class: "size-4"
-        }), o(V), l(T, V)
+        }), o(V), l(A, V)
       };
-      S(I, T => {
-        a() && T(L)
+      z(E, A => {
+        a() && A(I)
       })
     }
-    o(y), B(T => x(J, `${T??""} `), [() => t.value.toLocaleString(navigator.language)]), l(g, y)
+    o(y), L(A => k(J, `${A??""} `), [() => t.value.toLocaleString(navigator.language)]), l(g, y)
   };
   let a = xe(t, "button", 3, !0);
   var p = Re(),
     v = re(p);
   {
-    var j = g => {
+    var q = g => {
         var y = Ad(),
           b = i(y);
         e(b), o(y), ve("click", y, () => {
@@ -912,8 +912,8 @@ function Ld(r, t) {
           b = i(y);
         e(b), o(y), l(g, y)
       };
-    S(v, g => {
-      a() ? g(j) : g(w, -1)
+    z(v, g => {
+      a() ? g(q) : g(w, -1)
     })
   }
   l(r, p), Se()
@@ -991,7 +991,7 @@ const gt = r => {
   rr = 32,
   Rd = (r, t) => {
     const e = (Math.sin(r * 12.9898 + t * 78.233) * 43758.5453 % 1 + 1) % 1,
-      a = (p, v, j) => Math.sqrt((r - p) ** 2 + (t - v) ** 2) < j + (e - .5) * 2;
+      a = (p, v, q) => Math.sqrt((r - p) ** 2 + (t - v) ** 2) < q + (e - .5) * 2;
     return a(6, 8, 5) || a(14, 14, 6) || a(26, 10, 7) || a(28, 22, 5) || a(18, 24, 3)
   },
   nr = [];
@@ -1034,379 +1034,379 @@ var Gd = h('<span class="wp-dots svelte-ifq4hh" aria-hidden="true"><span class="
 
 function at(r, t) {
   Ce(t, !0);
-  const e = I => {
-      var L = ef(),
-        T = i(L);
+  const e = E => {
+      var I = ef(),
+        A = i(I);
       let V, Z;
-      var K = i(T);
-      a(K), o(T);
-      var ae = u(T, 2),
-        A = i(ae);
+      var K = i(A);
+      a(K), o(A);
+      var ae = c(A, 2),
+        B = i(ae);
       let m;
-      var U = i(A),
-        O = u(U);
+      var U = i(B),
+        O = c(U);
       {
-        var F = c => {
+        var F = u => {
           var s = Gd();
-          l(c, s)
+          l(u, s)
         };
-        S(O, c => {
-          p() === "loading" && c(F)
+        z(O, u => {
+          p() === "loading" && u(F)
         })
       }
-      o(A);
-      var C = u(A, 2);
+      o(B);
+      var C = c(B, 2);
       {
-        var E = c => {
+        var M = u => {
           var s = Zd(),
-            f = i(s),
-            d = i(f, !0);
-          o(f);
-          var q = u(f, 2);
+            d = i(s),
+            f = i(d, !0);
+          o(d);
+          var x = c(d, 2);
           {
-            var M = D => {
-              var k = Hd(),
-                R = i(k, !0);
-              o(k), B(() => x(R, t.amountLabel)), l(D, k)
+            var S = D => {
+              var j = Hd(),
+                R = i(j, !0);
+              o(j), L(() => k(R, t.amountLabel)), l(D, j)
             };
-            S(q, D => {
-              t.amountLabel && D(M)
+            z(x, D => {
+              t.amountLabel && D(S)
             })
           }
-          o(s), B(() => x(d, t.amount)), l(c, s)
+          o(s), L(() => k(f, t.amount)), l(u, s)
         };
-        S(C, c => {
-          t.amount && c(E)
+        z(C, u => {
+          t.amount && u(M)
         })
       }
-      var se = u(C, 2);
+      var se = c(C, 2);
       {
-        var ke = c => {
+        var ke = u => {
           var s = Ud(),
-            f = i(s);
+            d = i(s);
           {
-            var d = D => {
-                var k = Re(),
-                  R = re(k);
-                Wt(R, () => t.body), l(D, k)
+            var f = D => {
+                var j = Re(),
+                  R = re(j);
+                Wt(R, () => t.body), l(D, j)
               },
-              q = z(() => g(t.body)),
-              M = D => {
-                var k = Qe();
-                B(() => x(k, t.body)), l(D, k)
+              x = T(() => g(t.body)),
+              S = D => {
+                var j = Qe();
+                L(() => k(j, t.body)), l(D, j)
               };
-            S(f, D => {
-              n(q) ? D(d) : D(M, -1)
+            z(d, D => {
+              n(x) ? D(f) : D(S, -1)
             })
           }
-          o(s), l(c, s)
+          o(s), l(u, s)
         };
-        S(se, c => {
-          t.body && c(ke)
+        z(se, u => {
+          t.body && u(ke)
         })
       }
-      var pe = u(se, 2);
+      var pe = c(se, 2);
       {
-        var ze = c => {
+        var ze = u => {
           var s = Vd();
-          ft(s, 21, () => t.bullets, Bt, (f, d) => {
-            var q = Od(),
-              M = i(q),
-              D = i(M),
-              k = i(D, !0);
+          ft(s, 21, () => t.bullets, Bt, (d, f) => {
+            var x = Od(),
+              S = i(x),
+              D = i(S),
+              j = i(D, !0);
             o(D);
-            var R = u(D, 2);
+            var R = c(D, 2);
             let ce;
             var oe = i(R);
             {
               var Y = $ => {
                 Id($)
               };
-              S(oe, $ => {
-                n(d).valueIcon && $(Y)
+              z(oe, $ => {
+                n(f).valueIcon && $(Y)
               })
             }
-            var N = u(oe);
-            o(R), o(M), o(q), B(() => {
-              x(k, n(d).label), ce = Ye(R, "", ce, {
-                color: n(d).valueColor ?? n(w).accent
-              }), x(N, ` ${n(d).value??""??""}`)
-            }), l(f, q)
-          }), o(s), l(c, s)
+            var N = c(oe);
+            o(R), o(S), o(x), L(() => {
+              k(j, n(f).label), ce = Ye(R, "", ce, {
+                color: n(f).valueColor ?? n(w).accent
+              }), k(N, ` ${n(f).value??""??""}`)
+            }), l(d, x)
+          }), o(s), l(u, s)
         };
-        S(pe, c => {
-          t.bullets && c(ze)
+        z(pe, u => {
+          t.bullets && u(ze)
         })
       }
-      var je = u(pe, 2);
+      var je = c(pe, 2);
       {
-        var le = c => {
+        var le = u => {
           var s = Nd(),
-            f = i(s);
-          ft(f, 17, () => t.receipt.rows, Bt, (M, D) => {
-            var k = Fd(),
-              R = i(k),
+            d = i(s);
+          ft(d, 17, () => t.receipt.rows, Bt, (S, D) => {
+            var j = Fd(),
+              R = i(j),
               ce = i(R, !0);
             o(R);
-            var oe = u(R, 2);
+            var oe = c(R, 2);
             let Y;
             var N = i(oe, !0);
-            o(oe), o(k), B(() => {
-              x(ce, n(D).label), Y = Ye(oe, "", Y, {
+            o(oe), o(j), L(() => {
+              k(ce, n(D).label), Y = Ye(oe, "", Y, {
                 color: n(D).color
-              }), x(N, n(D).value)
-            }), l(M, k)
+              }), k(N, n(D).value)
+            }), l(S, j)
           });
-          var d = u(f, 2);
+          var f = c(d, 2);
           {
-            var q = M => {
+            var x = S => {
               var D = Kd(),
-                k = u(re(D), 2),
-                R = i(k),
+                j = c(re(D), 2),
+                R = i(j),
                 ce = i(R, !0);
               o(R);
-              var oe = u(R, 2),
+              var oe = c(R, 2),
                 Y = i(oe, !0);
-              o(oe), o(k), B(() => {
-                x(ce, t.receipt.total.label), x(Y, t.receipt.total.value)
-              }), l(M, D)
+              o(oe), o(j), L(() => {
+                k(ce, t.receipt.total.label), k(Y, t.receipt.total.value)
+              }), l(S, D)
             };
-            S(d, M => {
-              t.receipt.total && M(q)
+            z(f, S => {
+              t.receipt.total && S(x)
             })
           }
-          o(s), l(c, s)
+          o(s), l(u, s)
         };
-        S(je, c => {
-          t.receipt && c(le)
+        z(je, u => {
+          t.receipt && u(le)
         })
       }
-      var me = u(je, 2);
+      var me = c(je, 2);
       {
-        var ue = c => {
+        var ue = u => {
           var s = Wd();
-          l(c, s)
+          l(u, s)
         };
-        S(me, c => {
-          j() && c(ue)
+        z(me, u => {
+          q() && u(ue)
         })
       }
-      var Te = u(me, 2);
+      var Te = c(me, 2);
       {
-        var Ke = c => {
+        var Ke = u => {
           var s = Yd(),
-            f = i(s);
+            d = i(s);
           {
-            var d = D => {
-                var k = Re(),
-                  R = re(k);
-                Wt(R, () => t.meta), l(D, k)
+            var f = D => {
+                var j = Re(),
+                  R = re(j);
+                Wt(R, () => t.meta), l(D, j)
               },
-              q = z(() => g(t.meta)),
-              M = D => {
-                var k = Qe();
-                B(() => x(k, t.meta)), l(D, k)
+              x = T(() => g(t.meta)),
+              S = D => {
+                var j = Qe();
+                L(() => k(j, t.meta)), l(D, j)
               };
-            S(f, D => {
-              n(q) ? D(d) : D(M, -1)
+            z(d, D => {
+              n(x) ? D(f) : D(S, -1)
             })
           }
-          o(s), l(c, s)
+          o(s), l(u, s)
         };
-        S(Te, c => {
-          t.meta && c(Ke)
+        z(Te, u => {
+          t.meta && u(Ke)
         })
       }
-      var Ge = u(Te, 2);
+      var Ge = c(Te, 2);
       {
-        var Ue = c => {
+        var Ue = u => {
             var s = Qd(),
-              f = i(s),
-              d = i(f, !0);
-            o(f);
-            var q = u(f, 2);
-            let M;
-            var D = i(q, !0);
-            o(q), o(s), B(() => {
-              x(d, t.buttonRow.secondary.label), M = Ye(q, "", M, {
+              d = i(s),
+              f = i(d, !0);
+            o(d);
+            var x = c(d, 2);
+            let S;
+            var D = i(x, !0);
+            o(x), o(s), L(() => {
+              k(f, t.buttonRow.secondary.label), S = Ye(x, "", S, {
                 "--cta-bg": t.buttonRow.primary.color,
                 "--cta-dark": t.buttonRow.primary.colorDark
-              }), x(D, t.buttonRow.primary.label)
-            }), ve("click", f, function(...k) {
+              }), k(D, t.buttonRow.primary.label)
+            }), ve("click", d, function(...j) {
               var R;
-              (R = t.buttonRow.secondary.onClick) == null || R.apply(this, k)
-            }), ve("click", q, function(...k) {
+              (R = t.buttonRow.secondary.onClick) == null || R.apply(this, j)
+            }), ve("click", x, function(...j) {
               var R;
-              (R = t.buttonRow.primary.onClick) == null || R.apply(this, k)
-            }), l(c, s)
+              (R = t.buttonRow.primary.onClick) == null || R.apply(this, j)
+            }), l(u, s)
           },
-          Ne = c => {
+          Ne = u => {
             var s = Jd();
-            let f;
-            var d = i(s),
-              q = i(d, !0);
-            o(d);
-            var M = u(d, 2);
+            let d;
+            var f = i(s),
+              x = i(f, !0);
+            o(f);
+            var S = c(f, 2);
             {
-              var D = k => {
-                Ed(k)
+              var D = j => {
+                Ed(j)
               };
-              S(M, k => {
-                t.primary.arrow !== !1 && k(D)
+              z(S, j => {
+                t.primary.arrow !== !1 && j(D)
               })
             }
-            o(s), B(() => {
-              f = Ye(s, "", f, {
+            o(s), L(() => {
+              d = Ye(s, "", d, {
                 "--cta-bg": t.primary.color,
                 "--cta-dark": t.primary.colorDark
-              }), x(q, t.primary.label)
-            }), ve("click", s, function(...k) {
+              }), k(x, t.primary.label)
+            }), ve("click", s, function(...j) {
               var R;
-              (R = t.primary.onClick) == null || R.apply(this, k)
-            }), l(c, s)
+              (R = t.primary.onClick) == null || R.apply(this, j)
+            }), l(u, s)
           };
-        S(Ge, c => {
-          t.buttonRow ? c(Ue) : t.primary && c(Ne, 1)
+        z(Ge, u => {
+          t.buttonRow ? u(Ue) : t.primary && u(Ne, 1)
         })
       }
-      var We = u(Ge, 2);
+      var We = c(Ge, 2);
       {
-        var $e = c => {
+        var $e = u => {
           var s = Xd(),
-            f = i(s, !0);
-          o(s), B(() => x(f, t.secondary.label)), ve("click", s, function(...d) {
-            var q;
-            (q = t.secondary.onClick) == null || q.apply(this, d)
-          }), l(c, s)
+            d = i(s, !0);
+          o(s), L(() => k(d, t.secondary.label)), ve("click", s, function(...f) {
+            var x;
+            (x = t.secondary.onClick) == null || x.apply(this, f)
+          }), l(u, s)
         };
-        S(We, c => {
-          t.secondary && !t.buttonRow && c($e)
+        z(We, u => {
+          t.secondary && !t.buttonRow && u($e)
         })
       }
-      var et = u(We, 2);
+      var et = c(We, 2);
       {
-        var it = c => {
+        var it = u => {
           var s = $d(),
-            f = i(s, !0);
-          o(s), B(d => {
-            Me(s, "href", d), x(f, t.ghost)
-          }, [() => Nt("/")]), l(c, s)
+            d = i(s, !0);
+          o(s), L(f => {
+            Me(s, "href", f), k(d, t.ghost)
+          }, [() => Nt("/")]), l(u, s)
         };
-        S(et, c => {
-          t.ghost && c(it)
+        z(et, u => {
+          t.ghost && u(it)
         })
       }
-      o(ae), o(L), B(() => {
-        V = Pe(T, 1, "wp-badge svelte-ifq4hh", null, V, {
+      o(ae), o(I), L(() => {
+        V = Pe(A, 1, "wp-badge svelte-ifq4hh", null, V, {
           "wp-badge-spin": p() === "loading"
-        }), Z = Ye(T, "", Z, {
+        }), Z = Ye(A, "", Z, {
           background: n(w).accent,
           "--bd": n(w).accentDark,
           "--bg-glow": n(w).accentShadow
-        }), m = Ye(A, "", m, {
+        }), m = Ye(B, "", m, {
           color: n(w).titleColor
-        }), x(U, `${t.title??""} `)
-      }), l(I, L)
+        }), k(U, `${t.title??""} `)
+      }), l(E, I)
     },
-    a = I => {
-      var L = Re(),
-        T = re(L);
+    a = E => {
+      var I = Re(),
+        A = re(I);
       {
         var V = C => {
-            var E = tf();
-            l(C, E)
+            var M = tf();
+            l(C, M)
           },
           Z = C => {
-            var E = rf();
-            l(C, E)
+            var M = rf();
+            l(C, M)
           },
           K = C => {
-            var E = nf();
-            l(C, E)
+            var M = nf();
+            l(C, M)
           },
           ae = C => {
-            var E = of();
-            l(C, E)
+            var M = of();
+            l(C, M)
           },
-          A = C => {
-            var E = af();
-            l(C, E)
+          B = C => {
+            var M = af();
+            l(C, M)
           },
           m = C => {
-            var E = sf();
-            l(C, E)
+            var M = sf();
+            l(C, M)
           },
           U = C => {
-            var E = lf();
-            l(C, E)
+            var M = lf();
+            l(C, M)
           },
           O = C => {
-            var E = uf();
-            l(C, E)
+            var M = uf();
+            l(C, M)
           },
           F = C => {
-            var E = cf();
-            l(C, E)
+            var M = cf();
+            l(C, M)
           };
-        S(T, C => {
-          p() === "success" ? C(V) : p() === "error" ? C(Z, 1) : p() === "warning" ? C(K, 2) : p() === "info" ? C(ae, 3) : p() === "reward" ? C(A, 4) : p() === "question" ? C(m, 5) : p() === "confirmation" ? C(U, 6) : p() === "loading" ? C(O, 7) : C(F, -1)
+        z(A, C => {
+          p() === "success" ? C(V) : p() === "error" ? C(Z, 1) : p() === "warning" ? C(K, 2) : p() === "info" ? C(ae, 3) : p() === "reward" ? C(B, 4) : p() === "question" ? C(m, 5) : p() === "confirmation" ? C(U, 6) : p() === "loading" ? C(O, 7) : C(F, -1)
         })
       }
-      l(I, L)
+      l(E, I)
     };
   let p = xe(t, "variant", 3, "success"),
     v = xe(t, "embedded", 3, !1),
-    j = xe(t, "progress", 3, !1);
-  const w = z(() => Md[p()]),
-    g = I => typeof I == "function";
+    q = xe(t, "progress", 3, !1);
+  const w = T(() => Md[p()]),
+    g = E => typeof E == "function";
   var y = Re(),
     b = re(y);
   {
-    var G = I => {
-        var L = ff(),
-          T = i(L);
-        e(T), o(L), l(I, L)
+    var G = E => {
+        var I = ff(),
+          A = i(I);
+        e(A), o(I), l(E, I)
       },
-      J = I => {
-        var L = hf(),
-          T = i(L);
-        Me(T, "viewBox", `0 0 ${tr} ${rr}`), ft(T, 21, () => nr, le => le.x + "-" + le.y, (le, me) => {
+      J = E => {
+        var I = hf(),
+          A = i(I);
+        Me(A, "viewBox", `0 0 ${tr} ${rr}`), ft(A, 21, () => nr, le => le.x + "-" + le.y, (le, me) => {
           var ue = yf();
-          B(() => {
+          L(() => {
             Me(ue, "x", n(me).x), Me(ue, "y", n(me).y)
           }), l(le, ue)
-        }), o(T);
-        var V = u(T, 2),
+        }), o(A);
+        var V = c(A, 2),
           Z = i(V),
           K = i(Z);
         gt(K), o(Z);
-        var ae = u(Z, 2),
-          A = i(ae);
-        gt(A), o(ae);
-        var m = u(ae, 2),
+        var ae = c(Z, 2),
+          B = i(ae);
+        gt(B), o(ae);
+        var m = c(ae, 2),
           U = i(m);
         gt(U), o(m);
-        var O = u(m, 2),
+        var O = c(m, 2),
           F = i(O);
         gt(F), o(O), o(V);
-        var C = u(V, 2),
-          E = i(C),
-          se = i(E),
+        var C = c(V, 2),
+          M = i(C),
+          se = i(M),
           ke = i(se);
         qt(2), o(se);
-        var pe = u(se, 2);
-        o(E);
-        var ze = u(E, 2),
+        var pe = c(se, 2);
+        o(M);
+        var ze = c(M, 2),
           je = i(ze);
-        e(je), o(ze), o(C), o(L), B(le => {
+        e(je), o(ze), o(C), o(I), L(le => {
           Me(se, "href", le), Me(ke, "src", Pr)
         }, [() => Nt("/")]), ve("click", pe, function(...le) {
           var me;
           (me = t.onclose) == null || me.apply(this, le)
-        }), l(I, L)
+        }), l(E, I)
       };
-    S(b, I => {
-      v() ? I(G) : I(J, -1)
+    z(b, E => {
+      v() ? E(G) : E(J, -1)
     })
   }
   l(r, y), Se()
@@ -1433,14 +1433,14 @@ function mf(r, t) {
     },
     children: (a, p) => {
       {
-        let v = z(() => vo()),
-          j = z(() => Fn()),
-          w = z(() => ({
+        let v = T(() => vo()),
+          q = T(() => Fn()),
+          w = T(() => ({
             label: oo(),
             arrow: !1,
             onClick: t.onRetry
           })),
-          g = z(() => ({
+          g = T(() => ({
             label: It(),
             onClick: () => e(!1)
           }));
@@ -1451,7 +1451,7 @@ function mf(r, t) {
             return n(v)
           },
           get body() {
-            return n(j)
+            return n(q)
           },
           get primary() {
             return n(w)
@@ -1506,80 +1506,80 @@ var xf = h('<li class="bg-base-100 border-base-content/10 grid items-center gap-
 
 function Rf(r, t) {
   Ce(t, !0);
-  const e = (A, m = wr) => {
+  const e = (B, m = wr) => {
     var U = kf();
     ft(U, 21, m, Bt, (O, F) => {
-      const C = z(() => n(F).status === "refunded" ? n(F).updatedAt : n(F).createdAt);
-      var E = xf(),
-        se = i(E),
+      const C = T(() => n(F).status === "refunded" ? n(F).updatedAt : n(F).createdAt);
+      var M = xf(),
+        se = i(M),
         ke = i(se);
       Je(ke, {
         class: "text-primary size-5"
       }), o(se);
-      var pe = u(se, 2),
+      var pe = c(se, 2),
         ze = i(pe),
         je = i(ze),
         le = i(je, !0);
       o(je), qt(2), o(ze), o(pe);
-      var me = u(pe, 2),
+      var me = c(pe, 2),
         ue = i(me),
         Te = i(ue, !0);
-      o(ue), o(me), o(E), B((Ke, Ge) => {
-        x(le, Ke), x(Te, Ge)
-      }, [() => n(F).droplets.toLocaleString(navigator.language), () => Z(new Date, new Date(n(C)))]), l(O, E)
-    }), o(U), l(A, U)
+      o(ue), o(me), o(M), L((Ke, Ge) => {
+        k(le, Ke), k(Te, Ge)
+      }, [() => n(F).droplets.toLocaleString(navigator.language), () => Z(new Date, new Date(n(C)))]), l(O, M)
+    }), o(U), l(B, U)
   };
   let a = xe(t, "open", 15),
     p = W(!1),
     v = W(br([])),
-    j = W(!1),
+    q = W(!1),
     w = W("pending"),
     g = W(!0);
-  const y = z(() => n(v).reduce((A, m) => (A[m.status].push(m), A), {
+  const y = T(() => n(v).reduce((B, m) => (B[m.status].push(m), B), {
       pending: [],
       paid: [],
       refunded: [],
       rejected: []
     })),
-    b = z(() => n(y)[n(w)]),
-    G = z(() => n(b).reduce((A, m) => A + m.droplets, 0));
+    b = T(() => n(y)[n(w)]),
+    G = T(() => n(b).reduce((B, m) => B + m.droplets, 0));
   async function J() {
-    _(j, !0);
+    _(q, !0);
     try {
       const {
-        purchases: A
+        purchases: B
       } = await Ee.listPlayPurchaseHistory();
-      _(v, A, !0)
+      _(v, B, !0)
     } catch {
       _(v, [], !0)
     } finally {
-      _(j, !1), Xt.markViewed()
+      _(q, !1), Xt.markViewed()
     }
   }
   Lt(() => {
     a() && (_(w, "pending"), _(g, !0), J())
   });
-  async function I() {
+  async function E() {
     return Le.autoRecoverPendingPurchases()
   }
-  let L = wf(async function() {
+  let I = wf(async function() {
     try {
-      _(p, !0), n(y).pending.length > 0 && await Ee.verifyPendingPlayPurchases().catch(() => {}), await I(), await J()
+      _(p, !0), n(y).pending.length > 0 && await Ee.verifyPendingPlayPurchases().catch(() => {}), await E(), await J()
     } finally {
       _(p, !1)
     }
   }, 100);
 
-  function T(A) {
-    return String(A).padStart(2, "0")
+  function A(B) {
+    return String(B).padStart(2, "0")
   }
 
-  function V(A, m) {
-    return A.getFullYear() === m.getFullYear() && A.getMonth() === m.getMonth() && A.getDate() === m.getDate()
+  function V(B, m) {
+    return B.getFullYear() === m.getFullYear() && B.getMonth() === m.getMonth() && B.getDate() === m.getDate()
   }
 
-  function Z(A, m) {
-    const U = Math.floor((A.getTime() - m.getTime()) / 6e4),
+  function Z(B, m) {
+    const U = Math.floor((B.getTime() - m.getTime()) / 6e4),
       O = navigator.language;
     if (U < 1) return new Intl.RelativeTimeFormat(O, {
       numeric: "auto"
@@ -1587,26 +1587,26 @@ function Rf(r, t) {
     if (U < 60) return new Intl.RelativeTimeFormat(O, {
       numeric: "auto"
     }).format(-U, "minute");
-    if (V(A, m)) return `${_s()}, ${T(m.getHours())}:${T(m.getMinutes())}`;
-    const F = new Date(A);
-    return F.setDate(F.getDate() - 1), V(F, m) ? `${qs()}, ${T(m.getHours())}:${T(m.getMinutes())}` : m.toLocaleDateString(O, {
+    if (V(B, m)) return `${_s()}, ${A(m.getHours())}:${A(m.getMinutes())}`;
+    const F = new Date(B);
+    return F.setDate(F.getDate() - 1), V(F, m) ? `${qs()}, ${A(m.getHours())}:${A(m.getMinutes())}` : m.toLocaleDateString(O, {
       day: "2-digit",
       month: "2-digit"
-    }) + ` ${T(m.getHours())}:${T(m.getMinutes())}`
+    }) + ` ${A(m.getHours())}:${A(m.getMinutes())}`
   }
 
-  function K(A, m) {
-    return A === "pending" ? m ? "bg-warning text-warning-content" : "bg-warning/15 text-warning" : m ? "bg-primary text-primary-content" : "bg-primary/10 text-base-content/70"
+  function K(B, m) {
+    return B === "pending" ? m ? "bg-warning text-warning-content" : "bg-warning/15 text-warning" : m ? "bg-primary text-primary-content" : "bg-primary/10 text-base-content/70"
   }
 
-  function ae(A) {
-    return A === "pending" ? {
+  function ae(B) {
+    return B === "pending" ? {
       title: Sa(),
       body: Ua()
-    } : A === "paid" ? {
+    } : B === "paid" ? {
       title: na(),
       body: ha()
-    } : A === "rejected" ? {
+    } : B === "rejected" ? {
       title: Pi(),
       body: Hi()
     } : {
@@ -1629,47 +1629,47 @@ function Rf(r, t) {
         O = i(U),
         F = i(O, !0);
       o(O);
-      var C = u(O, 2),
-        E = i(C, !0);
-      o(C), o(U), B((se, ke) => {
-        x(F, se), x(E, ke)
+      var C = c(O, 2),
+        M = i(C, !0);
+      o(C), o(U), L((se, ke) => {
+        k(F, se), k(M, ke)
       }, [() => $i(), () => su()]), l(m, U)
     },
     children: (m, U) => {
       var O = Mf(),
         F = i(O),
         C = i(F),
-        E = i(C),
-        se = i(E);
+        M = i(C),
+        se = i(M);
       Je(se, {
         class: "size-5 text-white"
-      }), o(E);
-      var ke = u(E, 2),
+      }), o(M);
+      var ke = c(M, 2),
         pe = i(ke),
         ze = i(pe, !0);
       o(pe);
-      var je = u(pe, 2),
+      var je = c(pe, 2),
         le = i(je),
         me = i(le, !0);
       o(le), qt(2), o(je), o(ke);
-      var ue = u(ke, 2),
+      var ue = c(ke, 2),
         Te = i(ue);
       {
         var Ke = s => {
-            var f = qf();
-            l(s, f)
+            var d = qf();
+            l(s, d)
           },
           Ge = s => {
             At(s, {
               class: "size-4"
             })
           };
-        S(Te, s => {
+        z(Te, s => {
           n(p) ? s(Ke) : s(Ge, -1)
         })
       }
       o(ue), o(C), o(F);
-      var Ue = u(F, 2);
+      var Ue = c(F, 2);
       ft(Ue, 21, () => [{
         key: "pending",
         label: Js(),
@@ -1686,58 +1686,58 @@ function Rf(r, t) {
         key: "rejected",
         label: kl(),
         count: n(y).rejected.length
-      }], s => s.key, (s, f) => {
-        const d = z(() => n(w) === n(f).key);
-        var q = Cf(),
-          M = i(q),
-          D = i(M, !0);
-        o(M);
-        var k = u(M, 2);
+      }], s => s.key, (s, d) => {
+        const f = T(() => n(w) === n(d).key);
+        var x = Cf(),
+          S = i(x),
+          D = i(S, !0);
+        o(S);
+        var j = c(S, 2);
         {
           var R = Y => {
             var N = Df(),
               $ = i(N, !0);
-            o(N), B(_e => {
-              Pe(N, 1, `inline-flex h-[18px] min-w-[18px] items-center justify-center rounded-full px-1.5 text-[10px] font-bold ${_e??""}`), x($, n(f).count)
-            }, [() => K(n(f).key, n(d))]), l(Y, N)
+            o(N), L(_e => {
+              Pe(N, 1, `inline-flex h-[18px] min-w-[18px] items-center justify-center rounded-full px-1.5 text-[10px] font-bold ${_e??""}`), k($, n(d).count)
+            }, [() => K(n(d).key, n(f))]), l(Y, N)
           };
-          S(k, Y => {
-            n(f).count > 0 && Y(R)
+          z(j, Y => {
+            n(d).count > 0 && Y(R)
           })
         }
-        var ce = u(k, 2);
+        var ce = c(j, 2);
         {
           var oe = Y => {
             var N = Pf();
             l(Y, N)
           };
-          S(ce, Y => {
-            n(d) && Y(oe)
+          z(ce, Y => {
+            n(f) && Y(oe)
           })
         }
-        o(q), B(() => {
-          Pe(q, 1, `relative flex-1 flex items-center justify-center gap-1.5 px-1.5 py-3.5 text-[13px] font-semibold transition-colors ${n(d)?"text-base-content":"text-base-content/60 hover:text-base-content/80"}`), x(D, n(f).label)
-        }), ve("click", q, () => _(w, n(f).key, !0)), l(s, q)
+        o(x), L(() => {
+          Pe(x, 1, `relative flex-1 flex items-center justify-center gap-1.5 px-1.5 py-3.5 text-[13px] font-semibold transition-colors ${n(f)?"text-base-content":"text-base-content/60 hover:text-base-content/80"}`), k(D, n(d).label)
+        }), ve("click", x, () => _(w, n(d).key, !0)), l(s, x)
       }), o(Ue);
-      var Ne = u(Ue, 2),
+      var Ne = c(Ue, 2),
         We = i(Ne);
       {
         var $e = s => {
-            var f = Sf();
-            l(s, f)
+            var d = Sf();
+            l(s, d)
           },
           et = s => {
-            var f = Tf(),
-              d = re(f),
-              q = i(d),
-              M = i(q);
-            bf(M, {
+            var d = Tf(),
+              f = re(d),
+              x = i(f),
+              S = i(x);
+            bf(S, {
               class: "text-warning size-4 shrink-0"
             });
-            var D = u(M, 2),
-              k = i(D, !0);
+            var D = c(S, 2),
+              j = i(D, !0);
             o(D);
-            var R = u(D, 2);
+            var R = c(D, 2);
             {
               var ce = H => {
                   Sr(H, {
@@ -1749,61 +1749,61 @@ function Rf(r, t) {
                     class: "text-warning size-4"
                   })
                 };
-              S(R, H => {
+              z(R, H => {
                 n(g) ? H(ce) : H(oe, -1)
               })
             }
-            o(q);
-            var Y = u(q, 2);
+            o(x);
+            var Y = c(x, 2);
             {
               var N = H => {
                 var te = zf(),
                   ge = i(te, !0);
-                o(te), B(tt => x(ge, tt), [() => oc()]), l(H, te)
+                o(te), L(tt => k(ge, tt), [() => oc()]), l(H, te)
               };
-              S(Y, H => {
+              z(Y, H => {
                 n(g) && H(N)
               })
             }
-            o(d);
-            var $ = u(d, 2);
+            o(f);
+            var $ = c(f, 2);
             e($, () => n(b));
-            var _e = u($, 2),
+            var _e = c($, 2),
               de = i(_e),
               Ae = i(de, !0);
             o(de);
-            var fe = u(de, 2),
+            var fe = c(de, 2),
               ie = i(fe);
             Je(ie, {
               class: "text-primary size-3.5"
             });
-            var qe = u(ie);
-            o(fe), o(_e), B((H, te, ge) => {
-              x(k, H), x(Ae, te), x(qe, ` ${ge??""}`)
-            }, [() => Vo(), () => El(), () => n(G).toLocaleString(navigator.language)]), ve("click", q, () => _(g, !n(g))), l(s, f)
+            var qe = c(ie);
+            o(fe), o(_e), L((H, te, ge) => {
+              k(j, H), k(Ae, te), k(qe, ` ${ge??""}`)
+            }, [() => Vo(), () => El(), () => n(G).toLocaleString(navigator.language)]), ve("click", x, () => _(g, !n(g))), l(s, d)
           },
           it = s => {
-            var f = Af(),
-              d = re(f);
-            e(d, () => n(b));
-            var q = u(d, 2),
-              M = i(q),
-              D = i(M, !0);
-            o(M), o(q), B(k => x(D, k), [() => bu({
+            var d = Af(),
+              f = re(d);
+            e(f, () => n(b));
+            var x = c(f, 2),
+              S = i(x),
+              D = i(S, !0);
+            o(S), o(x), L(j => k(D, j), [() => bu({
               count: n(G).toLocaleString(navigator.language)
-            })]), l(s, f)
+            })]), l(s, d)
           },
-          c = s => {
-            const f = z(() => ae(n(w)));
-            var d = Ef(),
-              q = i(d),
-              M = i(q),
-              D = i(M),
-              k = i(D);
-            Je(k, {
+          u = s => {
+            const d = T(() => ae(n(w)));
+            var f = Ef(),
+              x = i(f),
+              S = i(x),
+              D = i(S),
+              j = i(D);
+            Je(j, {
               class: "text-primary size-10"
-            }), o(D), o(M);
-            var R = u(M, 2);
+            }), o(D), o(S);
+            var R = c(S, 2);
             {
               var ce = H => {
                   var te = Bf(),
@@ -1819,18 +1819,18 @@ function Rf(r, t) {
                     class: "size-4"
                   }), o(te), l(H, te)
                 };
-              S(R, H => {
+              z(R, H => {
                 n(w) === "refunded" ? H(ce) : n(w) === "rejected" && H(oe, 1)
               })
             }
-            o(q);
-            var Y = u(q, 2),
+            o(x);
+            var Y = c(x, 2),
               N = i(Y, !0);
             o(Y);
-            var $ = u(Y, 2),
+            var $ = c(Y, 2),
               _e = i($, !0);
             o($);
-            var de = u($, 2),
+            var de = c($, 2),
               Ae = i(de);
             {
               var fe = H => {
@@ -1842,25 +1842,25 @@ function Rf(r, t) {
                     class: "size-3.5"
                   })
                 };
-              S(Ae, H => {
+              z(Ae, H => {
                 n(p) ? H(fe) : H(ie, -1)
               })
             }
-            var qe = u(Ae);
-            o(de), o(d), B(H => {
-              x(N, n(f).title), x(_e, n(f).body), de.disabled = n(p), x(qe, ` ${H??""}`)
-            }, [() => Yt()]), ve("click", de, L), l(s, d)
+            var qe = c(Ae);
+            o(de), o(f), L(H => {
+              k(N, n(d).title), k(_e, n(d).body), de.disabled = n(p), k(qe, ` ${H??""}`)
+            }, [() => Yt()]), ve("click", de, I), l(s, f)
           };
-        S(We, s => {
-          n(j) && n(v).length === 0 ? s($e) : n(w) === "pending" && n(b).length > 0 ? s(et, 1) : n(b).length > 0 ? s(it, 2) : s(c, -1)
+        z(We, s => {
+          n(q) && n(v).length === 0 ? s($e) : n(w) === "pending" && n(b).length > 0 ? s(et, 1) : n(b).length > 0 ? s(it, 2) : s(u, -1)
         })
       }
-      o(Ne), o(O), B((s, f, d) => {
-        x(ze, s), x(me, f), Me(ue, "aria-label", d), ue.disabled = n(p)
+      o(Ne), o(O), L((s, d, f) => {
+        k(ze, s), k(me, d), Me(ue, "aria-label", f), ue.disabled = n(p)
       }, [() => To(), () => {
         var s;
         return (((s = De.data) == null ? void 0 : s.droplets) ?? 0).toLocaleString(navigator.language)
-      }, () => Yt()]), ve("click", ue, L), l(m, O)
+      }, () => Yt()]), ve("click", ue, I), l(m, O)
     },
     $$slots: {
       header: !0,
@@ -1888,14 +1888,14 @@ function Gf(r, t) {
     },
     children: (a, p) => {
       {
-        let v = z(() => mc()),
-          j = z(() => Fu()),
-          w = z(() => ({
+        let v = T(() => mc()),
+          q = T(() => Fu()),
+          w = T(() => ({
             label: er(),
             arrow: !1,
             onClick: t.onViewHistory
           })),
-          g = z(() => ({
+          g = T(() => ({
             label: It(),
             onClick: () => e(!1)
           }));
@@ -1906,7 +1906,7 @@ function Gf(r, t) {
             return n(v)
           },
           get body() {
-            return n(j)
+            return n(q)
           },
           get primary() {
             return n(w)
@@ -1942,11 +1942,11 @@ function Zf(r, t) {
     },
     children: (a, p) => {
       var v = Hf(),
-        j = i(v);
+        q = i(v);
       {
-        let w = z(() => rp()),
-          g = z(() => Oc());
-        at(j, {
+        let w = T(() => rp()),
+          g = T(() => Oc());
+        at(q, {
           embedded: !0,
           variant: "loading",
           get title() {
@@ -1973,11 +1973,11 @@ function Of(r, t) {
     a = xe(t, "purchasedDroplets", 3, null);
   const p = typeof navigator < "u" ? navigator.language : "en-US",
     v = y => y.toLocaleString(p),
-    j = z(() => {
+    q = T(() => {
       var y;
       return (y = De.data) == null ? void 0 : y.droplets
     }),
-    w = z(() => n(j) !== void 0 ? {
+    w = T(() => n(q) !== void 0 ? {
       rows: a() ? [{
         label: ln(),
         value: `+${v(a())}`,
@@ -1985,7 +1985,7 @@ function Of(r, t) {
       }] : [],
       total: {
         label: Wr(),
-        value: v(n(j))
+        value: v(n(q))
       }
     } : void 0);
 
@@ -2010,11 +2010,11 @@ function Of(r, t) {
       var G = Uf(),
         J = i(G);
       {
-        let I = z(() => Tr()),
-          L = z(() => a() ? `+${v(a())}` : void 0),
-          T = z(() => a() ? xt() : void 0),
-          V = z(() => Ar()),
-          Z = z(() => ({
+        let E = T(() => Tr()),
+          I = T(() => a() ? `+${v(a())}` : void 0),
+          A = T(() => a() ? xt() : void 0),
+          V = T(() => Ar()),
+          Z = T(() => ({
             label: $t(),
             color: "#3b6fe8",
             colorDark: "#1f4fc8",
@@ -2024,13 +2024,13 @@ function Of(r, t) {
           embedded: !0,
           variant: "success",
           get title() {
-            return n(I)
+            return n(E)
           },
           get amount() {
-            return n(L)
+            return n(I)
           },
           get amountLabel() {
-            return n(T)
+            return n(A)
           },
           get body() {
             return n(V)
@@ -2070,11 +2070,11 @@ function Ff(r, t) {
     },
     children: (a, p) => {
       var v = Vf(),
-        j = i(v);
+        q = i(v);
       {
-        let w = z(() => yp()),
-          g = z(() => Cp()),
-          y = z(() => ({
+        let w = T(() => yp()),
+          g = T(() => Cp()),
+          y = T(() => ({
             label: $t(),
             color: "#3b6fe8",
             colorDark: "#1f4fc8",
@@ -2083,7 +2083,7 @@ function Ff(r, t) {
               e(!1), (b = t.onbacktostore) == null || b.call(t)
             }
           }));
-        at(j, {
+        at(q, {
           embedded: !0,
           variant: "warning",
           get title() {
@@ -2124,8 +2124,8 @@ function Kf(r, t) {
     },
     children: (p, v) => {
       {
-        let j = z(() => zc()),
-          w = z(() => ({
+        let q = T(() => zc()),
+          w = T(() => ({
             label: It(),
             arrow: !1,
             onClick: () => a(!1)
@@ -2134,7 +2134,7 @@ function Kf(r, t) {
           embedded: !0,
           variant: "error",
           get title() {
-            return n(j)
+            return n(q)
           },
           get body() {
             return e()
@@ -2163,30 +2163,30 @@ function Yf(r, t) {
     const b = window;
     let G = !1,
       J;
-    const I = () => {
+    const E = () => {
       var Z;
       n(p) || (_(p, !0), (Z = t.oncomplete) == null || Z.call(t, J ?? localStorage.getItem(a) ?? void 0))
     };
     localStorage.removeItem(a), b.FSCEventCallback = Z => {
-      Z === "FSC-purchaseComplete" && I()
+      Z === "FSC-purchaseComplete" && E()
     }, b.__fsp_wh__ = () => {
-      G = !0, I()
+      G = !0, E()
     };
-    const L = Z => {
-      var ae, A, m, U;
+    const I = Z => {
+      var ae, B, m, U;
       if (!Z.data || typeof Z.data != "object") return;
       const K = (ae = Z.data) == null ? void 0 : ae.fscPopupMessage;
       if (K) {
-        if ((K == null ? void 0 : K.action) === "event" && ((A = K == null ? void 0 : K.eventData) == null ? void 0 : A.event) === "FSC-checkoutStep5" && localStorage.setItem("fscBackFromCheckout", "1"), K.action === "event" && ((m = K.eventData) != null && m["fsc-url"])) {
+        if ((K == null ? void 0 : K.action) === "event" && ((B = K == null ? void 0 : K.eventData) == null ? void 0 : B.event) === "FSC-checkoutStep5" && localStorage.setItem("fscBackFromCheckout", "1"), K.action === "event" && ((m = K.eventData) != null && m["fsc-url"])) {
           const O = K.eventData["fsc-url"].match(/\/session\/([^/]+)\/complete/);
-          O != null && O[1] && !J && (J = O[1], G && I())
+          O != null && O[1] && !J && (J = O[1], G && E())
         }
-        K.action === "event" && ((U = K.eventData) == null ? void 0 : U.event) === "FSC-purchaseComplete" && I()
+        K.action === "event" && ((U = K.eventData) == null ? void 0 : U.event) === "FSC-purchaseComplete" && E()
       }
     };
-    window.addEventListener("message", L), (V = document.getElementById("fsc-api")) == null || V.remove(), delete b.fastspring;
-    const T = document.createElement("script");
-    return T.id = "fsc-api", T.src = "https://sbl.onfastspring.com/sbl/1.0.7/fastspring-builder.min.js", T.setAttribute("data-storefront", e), T.setAttribute("data-popup-webhook-received", "__fsp_wh__"), T.onload = async () => {
+    window.addEventListener("message", I), (V = document.getElementById("fsc-api")) == null || V.remove(), delete b.fastspring;
+    const A = document.createElement("script");
+    return A.id = "fsc-api", A.src = "https://sbl.onfastspring.com/sbl/1.0.7/fastspring-builder.min.js", A.setAttribute("data-storefront", e), A.setAttribute("data-popup-webhook-received", "__fsp_wh__"), A.onload = async () => {
       const Z = await Ee.meEmail();
       b.fastspring.builder.push({
         reset: !0,
@@ -2203,25 +2203,25 @@ function Yf(r, t) {
           email: Z
         }
       })
-    }, document.head.appendChild(T), () => {
+    }, document.head.appendChild(A), () => {
       var Z;
-      window.removeEventListener("message", L), delete b.FSCEventCallback, delete b.__fsp_wh__, (Z = document.getElementById("fsc-api")) == null || Z.remove(), delete b.fastspring
+      window.removeEventListener("message", I), delete b.FSCEventCallback, delete b.__fsp_wh__, (Z = document.getElementById("fsc-api")) == null || Z.remove(), delete b.fastspring
     }
   });
   var v = Wf(),
-    j = re(v);
+    q = re(v);
   {
     var w = b => {
       var G = Nf();
       l(b, G)
     };
-    S(j, b => {
+    z(q, b => {
       n(p) && b(w)
     })
   }
-  var g = u(j, 2);
+  var g = c(q, 2);
   let y;
-  B(() => y = Pe(g, 1, "", null, y, {
+  L(() => y = Pe(g, 1, "", null, y, {
     hidden: n(p)
   })), l(r, v), Se()
 }
@@ -2302,8 +2302,8 @@ var ey = function(t) {
           }
         }
         wt = oy(e, a), bt = ny(a), p.addEventListener("load", wt), p.addEventListener("error", bt)
-      } catch (j) {
-        a(j);
+      } catch (q) {
+        a(q);
         return
       }
     }), pt.catch(function(e) {
@@ -2315,9 +2315,9 @@ var ey = function(t) {
     var p = e[0];
     if (typeof p != "string") throw new Error("Expected publishable key to be of type string, got type ".concat(kt(p), " instead."));
     var v = p.match(/^pk_test/),
-      j = Qf(t.version),
+      q = Qf(t.version),
       w = or;
-    v && j !== w && console.warn("Stripe.js@".concat(j, " was loaded on the page, but @stripe/stripe-js@").concat("8.11.0", " expected Stripe.js@").concat(w, ". This may result in unexpected behavior. For more information, see https://docs.stripe.com/sdks/stripejs-versioning"));
+    v && q !== w && console.warn("Stripe.js@".concat(q, " was loaded on the page, but @stripe/stripe-js@").concat("8.11.0", " expected Stripe.js@").concat(w, ". This may result in unexpected behavior. For more information, see https://docs.stripe.com/sdks/stripejs-versioning"));
     var g = t.apply(void 0, e);
     return ry(g, a), g
   },
@@ -2348,10 +2348,10 @@ function cy(r, t) {
   let e, a, p = W(!1);
   const v = 2e3;
   jt(async () => {
-    var G, J, I;
+    var G, J, E;
     let b;
     try {
-      b = await Promise.race([sy(xr), new Promise((L, T) => setTimeout(() => T(new Error("stripe-load-timeout")), v))])
+      b = await Promise.race([sy(xr), new Promise((I, A) => setTimeout(() => A(new Error("stripe-load-timeout")), v))])
     } catch {
       (G = t.onUnavailable) == null || G.call(t);
       return
@@ -2364,29 +2364,29 @@ function cy(r, t) {
       a = await b.initEmbeddedCheckout({
         fetchClientSecret: async () => t.clientSecret,
         onComplete: async () => {
-          var L;
-          a == null || a.destroy(), a = void 0, _(p, !0), (L = t.onComplete) == null || L.call(t)
+          var I;
+          a == null || a.destroy(), a = void 0, _(p, !0), (I = t.onComplete) == null || I.call(t)
         }
       }), a.mount(e)
     } catch {
-      (I = t.onUnavailable) == null || I.call(t)
+      (E = t.onUnavailable) == null || E.call(t)
     }
   }), gr(() => {
     a == null || a.destroy(), a = void 0
   });
-  var j = uy(),
-    w = re(j);
+  var q = uy(),
+    w = re(q);
   {
     var g = b => {
       var G = ly();
       l(b, G)
     };
-    S(w, b => {
+    z(w, b => {
       n(p) && b(g)
     })
   }
-  var y = u(w, 2);
-  Br(y, b => e = b, () => e), l(r, j), Se()
+  var y = c(w, 2);
+  Br(y, b => e = b, () => e), l(r, q), Se()
 }
 var py = h('<!> <h3 class="text-xl font-bold"> </h3> <div class="mr-2 ml-auto"><!></div>', 1),
   _y = h('<button class="btn btn-ghost btn-sm btn-circle"><!></button> <h3 class="text-xl font-bold"> </h3>', 1),
@@ -2406,32 +2406,36 @@ function sh(r, t) {
     a = W("products"),
     p = W(!1),
     v = W(0),
-    j = W(!1),
+    q = W(!1),
     w = W(!1),
     g = W(!1),
     y = W(null),
     b = W(null),
     G = W(null);
-  const J = z(() => {
-      var c, s;
-      return ((s = (c = De.data) == null ? void 0 : c.country) == null ? void 0 : s.toUpperCase()) === "MX"
+  const J = T(() => {
+      var u, s;
+      return ((s = (u = De.data) == null ? void 0 : u.country) == null ? void 0 : s.toUpperCase()) === "MX"
     }),
-    I = z(() => {
-      var c, s;
-      return ((s = (c = De.data) == null ? void 0 : c.country) == null ? void 0 : s.toUpperCase()) === "BR"
+    E = T(() => {
+      var u, s;
+      return ((s = (u = De.data) == null ? void 0 : u.country) == null ? void 0 : s.toUpperCase()) === "BR"
     });
-  let L = W(!1),
-    T = W(!1),
+  let I = W(!1),
+    A = W(!1),
     V = W(!1);
 
   function Z() {
-    _(L, Le.isTWA(), !0), _(T, Le.isTWALoaded(), !0), _(V, Le.playBillingBlocked, !0)
+    _(I, Le.isTWA(), !0), _(A, Le.isTWALoaded(), !0), _(V, Le.playBillingBlocked, !0)
   }
   let K = W(!1),
     ae = W(!1),
-    A = W("");
-  jt(() => {
-    Le.loadMapSKUs().finally(Z)
+    B = W("");
+  jt(async () => {
+    try {
+      await Le.loadMapSKUs()
+    } finally {
+      Z()
+    }
   });
   let m = W("stripe"),
     U = W(!1);
@@ -2451,34 +2455,34 @@ function sh(r, t) {
       history.replaceState({}, "", window.location.pathname), _(g, !0), se(s)
     }
   });
-  let E = null;
-  async function se(c) {
+  let M = null;
+  async function se(u) {
     const s = {
       cancelled: !1
     };
-    E = s, _(g, !0);
-    for (let f = 0; f < 2; f++) {
-      if (f !== 0 && await new Promise(d => setTimeout(d, 2e3)), s.cancelled) {
+    M = s, _(g, !0);
+    for (let d = 0; d < 2; d++) {
+      if (d !== 0 && await new Promise(f => setTimeout(f, 2e3)), s.cancelled) {
         _(g, !1);
         return
       }
       try {
-        const d = await Ee.getLastFastspringOrder();
-        if (!d) continue;
-        if (!d.read) {
+        const f = await Ee.getLastFastspringOrder();
+        if (!f) continue;
+        if (!f.read) {
           if (s.cancelled) {
             _(g, !1);
             return
           }
-          _(g, !1), _(w, !1), _(v, c, !0), _(j, !0), await De.refresh(), await Ee.markFastspringOrderAsRead(d.id);
+          _(g, !1), _(w, !1), _(v, u, !0), _(q, !0), await De.refresh(), await Ee.markFastspringOrderAsRead(f.id);
           return
         }
       } catch {}
     }
     _(g, !1), s.cancelled || _(w, !0)
   }
-  async function ke(c) {
-    if (E && (E.cancelled = !0), _(y, c, !0), localStorage.setItem("wplace_fs_droplets", String(c.droplets + c.bonus)), n(F)) {
+  async function ke(u) {
+    if (M && (M.cancelled = !0), _(y, u, !0), localStorage.setItem("wplace_fs_droplets", String(u.droplets + u.bonus)), n(F)) {
       _(m, "other"), _(U, !0), _(a, "checkout");
       return
     }
@@ -2486,7 +2490,7 @@ function sh(r, t) {
     try {
       await (async s => {
         _(b, s.clientSecret, !0), _(G, s.sessionId, !0)
-      })(await Ee.createEmbeddedCheckout(c.stripeLookupkey)), _(a, "checkout")
+      })(await Ee.createEmbeddedCheckout(u.stripeLookupkey)), _(a, "checkout")
     } catch (s) {
       vt.error(s.message ?? "Unexpected error")
     } finally {
@@ -2499,33 +2503,34 @@ function sh(r, t) {
   }
   async function ze() {
     _(v, n(y).droplets + n(y).bonus);
-    const c = n(G);
-    c && (await Ee.refreshStripeSession(c).catch(() => {
+    const u = n(G);
+    u && (await Ee.refreshStripeSession(u).catch(() => {
       vt.error(Kt())
-    }), await De.refresh()), pe(), e(!1), _(j, !0)
+    }), await De.refresh()), pe(), e(!1), _(q, !0)
   }
-  async function je(c) {
+  async function je(u) {
+    var f;
     if (n(p)) return;
     _(p, !0), jr();
     let s = !1,
-      f = "";
+      d = "";
     try {
-      const d = await Le.createPayment(c);
-      s = !0, f = d.out.details.purchaseToken, await d.verify()
-    } catch (d) {
+      const x = await Le.createPayment(u);
+      s = !0, d = (f = x == null ? void 0 : x.out) == null ? void 0 : f.details.purchaseToken, await x.verify()
+    } catch (x) {
       if (s) {
         _(g, !0);
-        const q = await me(f, () => Le.verifyBySKU({
-          sku: c,
-          token: f
+        const S = await me(d, D => Le.verifyBySKU({
+          sku: u,
+          token: D
         }));
-        switch (_(g, !1), q.status) {
+        switch (_(g, !1), S.status) {
           case "accepted": {
-            Xt.openCheckoutDialog(q.amount);
+            Xt.openCheckoutDialog(S.amount);
             break
           }
           case "declined": {
-            _(A, c, !0), _(ae, !0);
+            _(B, u, !0), _(ae, !0);
             break
           }
           default: {
@@ -2534,43 +2539,43 @@ function sh(r, t) {
           }
         }
       } else {
-        const q = (d == null ? void 0 : d.message) ?? "";
-        /abort|cancel/i.test(q) || vt.error(q || Kt())
+        const S = (x == null ? void 0 : x.message) ?? "";
+        /abort|cancel/i.test(S) || vt.error(S || Kt())
       }
     } finally {
       _(p, !1)
     }
   }
-  const le = c => new Promise(s => setTimeout(s, c));
-  async function me(c, s) {
-    if (!c) return {
+  const le = u => new Promise(s => setTimeout(s, u));
+  async function me(u, s) {
+    if (!u) return {
       status: "declined",
       amount: 0
     };
-    const f = Date.now();
+    const d = Date.now();
     for (;;) {
-      let d = null;
+      let f = null;
       try {
-        d = await Ee.getPlayClaimStatus(c)
+        f = await Ee.getPlayClaimStatus(u)
       } catch {}
-      if ((d == null ? void 0 : d.status) === "processed") return await De.refresh(), {
+      if ((f == null ? void 0 : f.status) === "processed") return await De.refresh(), {
         status: "accepted",
-        amount: d.droplets
+        amount: f.droplets
       };
-      if ((d == null ? void 0 : d.status) === "rejected") return {
+      if ((f == null ? void 0 : f.status) === "rejected") return {
         status: "declined",
         amount: 0
       };
-      if ((d == null ? void 0 : d.status) === "unknown") try {
+      if ((f == null ? void 0 : f.status) === "unknown") try {
         const {
-          droplets: M
-        } = await s();
+          droplets: S
+        } = await s(u);
         return await De.refresh(), {
           status: "accepted",
-          amount: M
+          amount: S
         }
       } catch {}
-      if ((Date.now() - f) / 1e3 > Le.POOLING_TIME) return {
+      if ((Date.now() - d) / 1e3 > Le.POOLING_TIME) return {
         status: "pending",
         amount: 0
       };
@@ -2581,7 +2586,7 @@ function sh(r, t) {
     Te = re(ue),
     Ke = i(Te);
   {
-    const c = k => {
+    const u = j => {
       var R = Re(),
         ce = re(R);
       {
@@ -2591,13 +2596,13 @@ function sh(r, t) {
             Je(_e, {
               class: "text-primary size-5"
             });
-            var de = u(_e, 2),
+            var de = c(_e, 2),
               Ae = i(de, !0);
             o(de);
-            var fe = u(de, 2),
+            var fe = c(de, 2),
               ie = i(fe);
             {
-              let qe = z(() => De.data.droplets ?? 0);
+              let qe = T(() => De.data.droplets ?? 0);
               Ld(ie, {
                 get value() {
                   return n(qe)
@@ -2605,7 +2610,7 @@ function sh(r, t) {
                 button: !1
               })
             }
-            o(fe), B(qe => x(Ae, qe), [() => xt()]), l(N, $)
+            o(fe), L(qe => k(Ae, qe), [() => xt()]), l(N, $)
           },
           Y = N => {
             var $ = _y(),
@@ -2614,39 +2619,39 @@ function sh(r, t) {
             Lr(de, {
               class: "size-5"
             }), o(_e);
-            var Ae = u(_e, 2),
+            var Ae = c(_e, 2),
               fe = i(Ae, !0);
-            o(Ae), B(ie => x(fe, ie), [() => pd()]), ve("click", _e, pe), l(N, $)
+            o(Ae), L(ie => k(fe, ie), [() => pd()]), ve("click", _e, pe), l(N, $)
           };
-        S(ce, N => {
+        z(ce, N => {
           n(a) === "products" && De.data ? N(oe) : n(a) === "checkout" && n(y) && N(Y, 1)
         })
       }
-      l(k, R)
+      l(j, R)
     };
-    let s = z(() => n(a) === "products" ? "max-w-2xl" : "max-w-5xl max-h-[min(91.6vh,57rem)]"),
-      f = z(() => n(a) === "checkout" ? "px-0 sm:px-0 pt-0 pb-4" : ""),
-      d = z(() => n(a) === "products"),
-      q = z(() => n(a) !== "checkout"),
-      M = z(() => n(a) === "checkout"),
-      D = z(() => n(a) === "products");
+    let s = T(() => n(a) === "products" ? "max-w-2xl" : "max-w-5xl max-h-[min(91.6vh,57rem)]"),
+      d = T(() => n(a) === "checkout" ? "px-0 sm:px-0 pt-0 pb-4" : ""),
+      f = T(() => n(a) === "products"),
+      x = T(() => n(a) !== "checkout"),
+      S = T(() => n(a) === "checkout"),
+      D = T(() => n(a) === "products");
     Fe(Ke, {
       dialogClass: "bg-black/90!",
       get modalBoxClass() {
         return n(s)
       },
       get contentAreaClass() {
-        return n(f)
+        return n(d)
       },
       get isDynamicHeight() {
-        return n(d)
+        return n(f)
       },
       hasCloseButton: !0,
       get hasHeaderBorder() {
-        return n(q)
+        return n(x)
       },
       get disableCloseAnimation() {
-        return n(M)
+        return n(S)
       },
       get hasBackdrop() {
         return n(D)
@@ -2659,11 +2664,11 @@ function sh(r, t) {
       get open() {
         return e()
       },
-      set open(k) {
-        e(k)
+      set open(j) {
+        e(j)
       },
-      header: c,
-      children: (k, R) => {
+      header: u,
+      children: (j, R) => {
         var ce = Re(),
           oe = re(ce);
         {
@@ -2684,73 +2689,73 @@ function sh(r, t) {
                     Je(Et, {
                       class: "mb-1 inline size-7"
                     });
-                    var Mt = u(Et, 2),
+                    var Mt = c(Et, 2),
                       Rt = i(Mt),
-                      Gt = u(Rt),
+                      Gt = c(Rt),
                       ur = i(Gt, !0);
                     o(Gt), o(Mt), o(St);
-                    var zt = u(St, 2),
+                    var zt = c(St, 2),
                       Ht = i(zt);
                     {
                       var cr = X => {
                         var ee = Qe();
-                        B((Be, ut) => x(ee, `${Be??""} ${ut??""}`), [() => Ze().toLocaleString(navigator.language), () => xt()]), l(X, ee)
+                        L((Be, ut) => k(ee, `${Be??""} ${ut??""}`), [() => Ze().toLocaleString(navigator.language), () => xt()]), l(X, ee)
                       };
-                      S(Ht, X => {
+                      z(Ht, X => {
                         Ve() && X(cr)
                       })
                     }
-                    var Zt = u(Ht, 2),
+                    var Zt = c(Ht, 2),
                       pr = i(Zt);
                     o(Zt), o(zt);
-                    var mt = u(zt, 2),
+                    var mt = c(zt, 2),
                       Ut = i(mt);
                     {
                       var _r = X => {
                         var ee = dy();
                         l(X, ee)
                       };
-                      S(Ut, X => {
+                      z(Ut, X => {
                         var ee;
-                        n(p) && (n(L) || ((ee = n(y)) == null ? void 0 : ee.stripeLookupkey) === lt()) && X(_r)
+                        n(p) && (n(I) || ((ee = n(y)) == null ? void 0 : ee.stripeLookupkey) === lt()) && X(_r)
                       })
                     }
-                    var Tt = u(Ut, 2);
+                    var Tt = c(Ut, 2);
                     let Ot;
                     var dr = i(Tt);
                     {
                       var fr = X => {
                           var ee = Re(),
                             Be = re(ee);
-                          Vt(Be, () => n(T), ut => {
+                          Vt(Be, () => n(A), ut => {
                             var ct = Qe();
-                            B(vr => x(ct, vr), [() => Le.printPriceBySKU(lt())]), l(ut, ct)
+                            L(vr => k(ct, vr), [() => Le.printPriceBySKU(lt())]), l(ut, ct)
                           }), l(X, ee)
                         },
                         yr = X => {
                           var ee = Qe();
-                          B(Be => x(ee, `MX$${Be??""}`), [() => (nt() * 18).toFixed(2)]), l(X, ee)
+                          L(Be => k(ee, `MX$${Be??""}`), [() => (nt() * 18).toFixed(2)]), l(X, ee)
                         },
                         hr = X => {
                           var ee = Qe();
-                          B(Be => x(ee, `R$${Be??""}`), [() => (nt() * 4).toFixed(2).replace(".", ",")]), l(X, ee)
+                          L(Be => k(ee, `R$${Be??""}`), [() => (nt() * 4).toFixed(2).replace(".", ",")]), l(X, ee)
                         },
                         mr = X => {
                           var ee = Qe();
-                          B(Be => x(ee, `$${Be??""}`), [() => nt().toFixed(2)]), l(X, ee)
+                          L(Be => k(ee, `$${Be??""}`), [() => nt().toFixed(2)]), l(X, ee)
                         };
-                      S(dr, X => {
-                        n(L) ? X(fr) : n(J) ? X(yr, 1) : n(I) ? X(hr, 2) : X(mr, -1)
+                      z(dr, X => {
+                        n(I) ? X(fr) : n(J) ? X(yr, 1) : n(E) ? X(hr, 2) : X(mr, -1)
                       })
                     }
-                    o(Tt), o(mt), o(Ct), B((X, ee, Be, ut) => {
+                    o(Tt), o(mt), o(Ct), L((X, ee, Be, ut) => {
                       var ct;
-                      x(Rt, `${X??""} `), x(ur, ee), x(pr, `+${Be??""}
+                      k(Rt, `${X??""} `), k(ur, ee), k(pr, `+${Be??""}
 								${ut??""}`), mt.disabled = n(p) || n(V), Ot = Pe(Tt, 1, "", null, Ot, {
-                        "opacity-0": n(p) && (n(L) || ((ct = n(y)) == null ? void 0 : ct.stripeLookupkey) === lt())
+                        "opacity-0": n(p) && (n(I) || ((ct = n(y)) == null ? void 0 : ct.stripeLookupkey) === lt())
                       })
                     }, [() => (Ze() + Ve()).toLocaleString(navigator.language), () => xt(), () => Ve().toLocaleString(navigator.language), () => D_()]), ve("click", mt, async () => {
-                      n(L) && await je(lt()), (!n(L) || Le.forceTWA.current === !1) && ke({
+                      n(I) && await je(lt()), (!n(I) || Le.forceTWA.current === !1) && ke({
                         price: nt(),
                         droplets: Ze(),
                         bonus: Ve(),
@@ -2763,7 +2768,7 @@ function sh(r, t) {
                     H = re(qe),
                     te = i(H, !0);
                   o(H);
-                  var ge = u(H, 2),
+                  var ge = c(H, 2),
                     tt = i(ge);
                   ie(tt, () => ({
                     price: 5,
@@ -2773,7 +2778,7 @@ function sh(r, t) {
                     productId: 10,
                     dropdownClass: "dropdown-center"
                   }));
-                  var yt = u(tt, 2);
+                  var yt = c(tt, 2);
                   ie(yt, () => ({
                     price: 15,
                     droplets: 75e3,
@@ -2782,7 +2787,7 @@ function sh(r, t) {
                     productId: 20,
                     dropdownClass: "dropdown-center"
                   }));
-                  var ht = u(yt, 2);
+                  var ht = c(yt, 2);
                   ie(ht, () => ({
                     price: 30,
                     droplets: 15e4,
@@ -2791,7 +2796,7 @@ function sh(r, t) {
                     productId: 30,
                     dropdownClass: "dropdown-center"
                   }));
-                  var be = u(ht, 2);
+                  var be = c(ht, 2);
                   ie(be, () => ({
                     price: 50,
                     droplets: 25e4,
@@ -2800,7 +2805,7 @@ function sh(r, t) {
                     productId: 40,
                     dropdownClass: "dropdown-center"
                   }));
-                  var ye = u(be, 2);
+                  var ye = c(be, 2);
                   ie(ye, () => ({
                     price: 75,
                     droplets: 375e3,
@@ -2809,7 +2814,7 @@ function sh(r, t) {
                     productId: 50,
                     dropdownClass: "dropdown-center"
                   }));
-                  var Oe = u(ye, 2);
+                  var Oe = c(ye, 2);
                   ie(Oe, () => ({
                     price: 100,
                     droplets: 5e5,
@@ -2818,25 +2823,25 @@ function sh(r, t) {
                     productId: 60,
                     dropdownClass: "max-sm:dropdown-top dropdown-center"
                   })), o(ge);
-                  var we = u(ge, 2),
+                  var we = c(ge, 2),
                     Ie = i(we),
-                    he = u(Ie),
+                    he = c(Ie),
                     st = i(he, !0);
                   o(he), o(we);
-                  var rt = u(we, 2);
+                  var rt = c(we, 2);
                   {
                     var Pt = He => {
                       var Q = yy(),
                         Ze = i(Q),
                         Ve = i(Ze, !0);
-                      o(Ze), o(Q), B(nt => x(Ve, nt), [() => er()]), ve("click", Ze, () => dt.pendingHistoryDialogOpen = !0), l(He, Q)
+                      o(Ze), o(Q), L(nt => k(Ve, nt), [() => er()]), ve("click", Ze, () => dt.pendingHistoryDialogOpen = !0), l(He, Q)
                     };
-                    S(rt, He => {
-                      n(L) && He(Pt)
+                    z(rt, He => {
+                      n(I) && He(Pt)
                     })
                   }
-                  B((He, Q, Ze, Ve) => {
-                    x(te, He), x(Ie, `${Q??""} `), Me(he, "href", Ze), x(st, Ve)
+                  L((He, Q, Ze, Ve) => {
+                    k(te, He), k(Ie, `${Q??""} `), Me(he, "href", Ze), k(st, Ve)
                   }, [() => d_(), () => e_(), () => Dr(), () => Zp()]), l(fe, qe)
                 },
                 Ae = fe => {
@@ -2848,20 +2853,20 @@ function sh(r, t) {
                         Oe = i(ye),
                         we = i(Oe),
                         Ie = i(we),
-                        he = u(Ie, 2),
-                        st = u(he);
+                        he = c(Ie, 2),
+                        st = c(he);
                       o(we);
-                      var rt = u(we, 2),
+                      var rt = c(we, 2),
                         Pt = i(rt, !0);
-                      o(rt), o(Oe), o(ye), B((He, Q) => {
-                        Pe(we, 1, `group flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all ${n(m)==="stripe"?"dark:bg-base-100 bg-white text-[#635bff] shadow-sm":"text-base-content/50 hover:text-base-content/80"}`), Pe(Ie, 0, `hidden w-auto transition-all sm:block sm:h-4 ${n(m)==="stripe"?"":"grayscale group-hover:grayscale-0"}`), Pe(he, 0, `hidden w-auto transition-all sm:block sm:h-4 ${n(m)==="stripe"?"":"grayscale group-hover:grayscale-0"}`), x(st, ` ${He??""}`), Pe(rt, 1, `flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all ${n(m)==="other"?"dark:bg-base-100 bg-white text-[#30313d] shadow-sm":"text-base-content/50 hover:text-base-content/80"}`), x(Pt, Q)
+                      o(rt), o(Oe), o(ye), L((He, Q) => {
+                        Pe(we, 1, `group flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all ${n(m)==="stripe"?"dark:bg-base-100 bg-white text-[#635bff] shadow-sm":"text-base-content/50 hover:text-base-content/80"}`), Pe(Ie, 0, `hidden w-auto transition-all sm:block sm:h-4 ${n(m)==="stripe"?"":"grayscale group-hover:grayscale-0"}`), Pe(he, 0, `hidden w-auto transition-all sm:block sm:h-4 ${n(m)==="stripe"?"":"grayscale group-hover:grayscale-0"}`), k(st, ` ${He??""}`), Pe(rt, 1, `flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all ${n(m)==="other"?"dark:bg-base-100 bg-white text-[#30313d] shadow-sm":"text-base-content/50 hover:text-base-content/80"}`), k(Pt, Q)
                       }, [() => G_(), () => X_()]), ve("click", we, () => _(m, "stripe")), ve("click", rt, () => _(m, "other")), l(be, ye)
                     };
-                    S(qe, be => {
+                    z(qe, be => {
                       n(F) || be(H)
                     })
                   }
-                  var te = u(qe, 2),
+                  var te = c(qe, 2),
                     ge = i(te);
                   {
                     var tt = be => {
@@ -2881,17 +2886,17 @@ function sh(r, t) {
                             var st = vy();
                             l(he, st)
                           };
-                        S(Oe, he => {
+                        z(Oe, he => {
                           n(b) ? he(we) : he(Ie, -1)
                         })
                       }
-                      o(ye), B(() => Pe(ye, 1, Ft(n(m) !== "stripe" ? "h-0 overflow-hidden" : ""))), l(be, ye)
+                      o(ye), L(() => Pe(ye, 1, Ft(n(m) !== "stripe" ? "h-0 overflow-hidden" : ""))), l(be, ye)
                     };
-                    S(ge, be => {
+                    z(ge, be => {
                       n(F) || be(tt)
                     })
                   }
-                  var yt = u(ge, 2);
+                  var yt = c(ge, 2);
                   {
                     var ht = be => {
                       var ye = Jt(),
@@ -2912,30 +2917,30 @@ function sh(r, t) {
                               } = await Ee.refreshFastspringSession(we);
                               await De.refresh(), he && await Ee.markFastspringOrderAsRead(he), localStorage.removeItem("fscBackFromCheckout")
                             }
-                            pe(), e(!1), _(v, Ie), _(j, !0)
+                            pe(), e(!1), _(v, Ie), _(q, !0)
                           } catch {
                             vt.warning(jd())
                           }
                         }
-                      }), o(ye), B(() => Pe(ye, 1, Ft(n(m) !== "other" ? "h-0 overflow-hidden" : ""))), l(be, ye)
+                      }), o(ye), L(() => Pe(ye, 1, Ft(n(m) !== "other" ? "h-0 overflow-hidden" : ""))), l(be, ye)
                     };
-                    S(yt, be => {
+                    z(yt, be => {
                       n(U) && be(ht)
                     })
                   }
                   o(te), l(fe, ie)
                 };
-              S(_e, fe => {
+              z(_e, fe => {
                 n(a) === "products" ? fe(de) : n(a) === "checkout" && n(y) && fe(Ae, 1)
               })
             }
             l(N, $)
           };
-          S(oe, N => {
+          z(oe, N => {
             De.data && N(Y)
           })
         }
-        l(k, ce)
+        l(j, ce)
       },
       $$slots: {
         header: !0,
@@ -2944,39 +2949,39 @@ function sh(r, t) {
     })
   }
   o(Te);
-  var Ge = u(Te, 2);
+  var Ge = c(Te, 2);
   Of(Ge, {
     get purchasedDroplets() {
       return n(v)
     },
     onbacktostore: () => e(!1),
     get open() {
-      return n(j)
+      return n(q)
     },
-    set open(c) {
-      _(j, c, !0)
+    set open(u) {
+      _(q, u, !0)
     }
   });
-  var Ue = u(Ge, 2);
+  var Ue = c(Ge, 2);
   Ff(Ue, {
     onbacktostore: () => e(!0),
     get open() {
       return n(w)
     },
-    set open(c) {
-      _(w, c, !0)
+    set open(u) {
+      _(w, u, !0)
     }
   });
-  var Ne = u(Ue, 2);
+  var Ne = c(Ue, 2);
   Zf(Ne, {
     get open() {
       return n(g)
     },
-    set open(c) {
-      _(g, c, !0)
+    set open(u) {
+      _(g, u, !0)
     }
   });
-  var We = u(Ne, 2);
+  var We = c(Ne, 2);
   Gf(We, {
     onViewHistory: () => {
       _(K, !1), dt.pendingHistoryDialogOpen = !0
@@ -2984,51 +2989,51 @@ function sh(r, t) {
     get open() {
       return n(K)
     },
-    set open(c) {
-      _(K, c, !0)
+    set open(u) {
+      _(K, u, !0)
     }
   });
-  var $e = u(We, 2);
+  var $e = c(We, 2);
   mf($e, {
     onRetry: () => {
-      _(ae, !1), je(n(A))
+      _(ae, !1), je(n(B))
     },
     get open() {
       return n(ae)
     },
-    set open(c) {
-      _(ae, c, !0)
+    set open(u) {
+      _(ae, u, !0)
     }
   });
-  var et = u($e, 2);
+  var et = c($e, 2);
   Rf(et, {
     get open() {
       return dt.pendingHistoryDialogOpen
     },
-    set open(c) {
-      dt.pendingHistoryDialogOpen = c
+    set open(u) {
+      dt.pendingHistoryDialogOpen = u
     }
   });
-  var it = u(et, 2);
-  Vt(it, () => n(V), c => {
+  var it = c(et, 2);
+  Vt(it, () => n(V), u => {
     {
-      let s = z(() => {
-        var f;
-        return (f = Le.playBillingBlockedError) == null ? void 0 : f.printError
+      let s = T(() => {
+        var d;
+        return (d = Le.playBillingBlockedError) == null ? void 0 : d.printError
       });
-      Kf(c, {
+      Kf(u, {
         get message() {
           return n(s)
         },
         get open() {
           return n(V)
         },
-        set open(f) {
-          _(V, f, !0)
+        set open(d) {
+          _(V, d, !0)
         }
       })
     }
-  }), B(() => Me(Te, "data-theme", n(a) === "checkout" ? "custom-winter" : void 0)), l(r, ue), Se()
+  }), L(() => Me(Te, "data-theme", n(a) === "checkout" ? "custom-winter" : void 0)), l(r, ue), Se()
 }
 Dt(["click"]);
 var wy = new Set(["$$slots", "$$events", "$$legacy"]),
@@ -3075,7 +3080,7 @@ function ch(r, t) {
           ...e
         })), l(w, g)
       },
-      j = w => {
+      q = w => {
         var g = Py();
         Xe(g, () => ({
           xmlns: "http://www.w3.org/2000/svg",
@@ -3084,8 +3089,8 @@ function ch(r, t) {
           ...e
         })), l(w, g)
       };
-    S(p, w => {
-      t.filled ? w(v) : w(j, -1)
+    z(p, w => {
+      t.filled ? w(v) : w(q, -1)
     })
   }
   l(r, a)
@@ -3095,15 +3100,15 @@ function ph([r, t], [e, a]) {
   r = Math.floor(r), t = Math.floor(t), e = Math.floor(e), a = Math.floor(a);
   const p = [],
     v = Math.abs(e - r),
-    j = Math.abs(a - t),
+    q = Math.abs(a - t),
     w = r < e ? 1 : -1,
     g = t < a ? 1 : -1;
-  let y = v - j,
+  let y = v - q,
     b = r,
     G = t;
   for (; p.push([b, G]), !(b === e && G === a);) {
     const J = 2 * y;
-    J > -j && (y -= j, b += w), J < v && (y += v, G += g)
+    J > -q && (y -= q, b += w), J < v && (y += v, G += g)
   }
   return p
 }
@@ -3111,37 +3116,37 @@ var Cy = h('<img class="pixelated bg-base-200" alt="User profile"/>'),
   Sy = h('<div class="relative w-max"><div class="bg-base-content/20 size-12 rounded-full"></div> <div class="level-fill center-absolute absolute size-12 rotate-[215deg] rounded-full svelte-12f880g"></div> <div class="avatar center-absolute absolute"><div class="size-10 rounded-full"><!></div></div> <div> </div></div>');
 
 function _h(r, t) {
-  const e = z(() => t.level % 1 * 360);
+  const e = T(() => t.level % 1 * 360);
   var a = Sy(),
-    p = u(i(a), 2),
-    v = u(p, 2),
-    j = i(v),
-    w = i(j);
+    p = c(i(a), 2),
+    v = c(p, 2),
+    q = i(v),
+    w = i(q);
   {
-    var g = I => {
-        Ir(I, {
+    var g = E => {
+        Ir(E, {
           get userId() {
             return t.userId
           }
         })
       },
-      y = I => {
-        var L = Cy();
-        B(() => Me(L, "src", t.pictureUrl)), l(I, L)
+      y = E => {
+        var I = Cy();
+        L(() => Me(I, "src", t.pictureUrl)), l(E, I)
       };
-    S(w, I => {
-      t.pictureUrl ? I(y, -1) : I(g)
+    z(w, E => {
+      t.pictureUrl ? E(y, -1) : E(g)
     })
   }
-  o(j), o(v);
-  var b = u(v, 2);
+  o(q), o(v);
+  var b = c(v, 2);
   let G;
   var J = i(b, !0);
-  o(b), o(a), B(I => {
+  o(b), o(a), L(E => {
     Ye(p, `--angle: ${n(e)??""}deg; --color: var(--color-secondary)`), G = Pe(b, 1, "text-primary-content bg-secondary absolute bottom-0 flex items-center justify-center rounded-full px-[5px] py-0 text-xs font-bold", null, G, {
       "left-0": t.level > 99,
       "-left-1": t.level > 99
-    }), x(J, I)
+    }), k(J, E)
   }, [() => Math.floor(t.level)]), l(r, a)
 }
 export {

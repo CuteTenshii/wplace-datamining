@@ -1,59 +1,58 @@
 import {
-  T as w,
-  P,
-  u as T
-} from "./D2EF9Wn0.js";
+  T as m,
+  P as w,
+  u as d
+} from "./CXqvsY6L.js";
 import {
-  f as U
+  f as P
 } from "./DstqyuRl.js";
-const A = "wplace-auth";
+const U = "wplace-auth";
 
-function E(t) {
-  const e = new URL(`/auth/${t}`, P);
+function A(t) {
+  const e = new URL(`/auth/${t}`, w);
   return e.search = new URLSearchParams({
     r: "/login/popup-callback"
   }).toString(), e.href
 }
 
-function S(t) {
-  var i;
-  const e = window.open(E(t), "wplace-oauth", "width=480,height=720");
-  return e ? ((i = e.focus) == null || i.call(e), new Promise(d => {
-    let o = !1,
+function C(t) {
+  var o;
+  const e = window.open(A(t), "wplace-oauth", "width=480,height=720");
+  return e ? ((o = e.focus) == null || o.call(e), new Promise(f => {
+    let a = !1,
       n;
-    const c = new AbortController,
-      a = r => {
-        if (!o) {
-          o = !0, c.abort(), n == null || n(), clearTimeout(s);
+    const i = new AbortController,
+      s = r => {
+        if (!a) {
+          a = !0, i.abort(), n == null || n(), clearTimeout(g);
           try {
             e.close()
           } catch {}
-          d(r)
+          f(r)
         }
       },
-      l = async () => {
-        o || m(e) && a(await T.refresh())
-      }, g = r => {
-        var f, h;
-        r.origin === location.origin && r.source === e && ((f = r.data) == null ? void 0 : f.type) === A && (((h = r.data) == null ? void 0 : h.ok) === !1 ? a(!1) : l())
+      c = async () => {
+        if (!a) {
+          if (await d.refresh()) {
+            s(!0);
+            return
+          }
+          E(e) && s(!1)
+        }
+      }, h = r => {
+        var l, u;
+        r.origin === location.origin && r.source === e && ((l = r.data) == null ? void 0 : l.type) === U && (((u = r.data) == null ? void 0 : u.ok) === !1 ? s(!1) : c())
       };
-    window.addEventListener("message", g, {
-      signal: c.signal
-    }), n = U(l, {
+    window.addEventListener("message", h, {
+      signal: i.signal
+    }), n = P(c, {
       interval: 1500
     });
-    let s = u();
-
-    function u() {
-      return clearTimeout(s), s = setTimeout(() => {
-        if (!m(e)) return u();
-        a(!1)
-      }, w.second * 30)
-    }
+    const g = setTimeout(() => s(!1), 5 * m.minute)
   })) : Promise.resolve(!1)
 }
 
-function m(t) {
+function E(t) {
   try {
     return (t == null ? void 0 : t.closed) ?? !0
   } catch {
@@ -61,6 +60,5 @@ function m(t) {
   }
 }
 export {
-  A,
-  S as l
+  U as A, C as l
 };

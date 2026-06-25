@@ -6129,6 +6129,7 @@ class m extends Error {
     super(n), this.message = n, this.status = e
   }
 }
+class mI extends Error {}
 
 function ar(t, n) {
   const e = {};
@@ -6140,7 +6141,7 @@ function ar(t, n) {
   return e
 }
 
-function mI(t, n) {
+function hI(t, n) {
   const e = {};
   for (const r of t) {
     const o = n(r);
@@ -8264,7 +8265,7 @@ typeof window < "u" && Gr(() => {
     n && !t && window.dispatchEvent(new CustomEvent("wplace:online")), t = n
   })
 });
-const hI = t => new URL(t, rn).toString();
+const gI = t => new URL(t, rn).toString();
 
 function zr(t, n) {
   if (!(t != null && t.length)) return !1;
@@ -8317,7 +8318,7 @@ class mR {
   }
 }
 
-function gI(t) {
+function wI(t) {
   return new Promise((n, e) => {
     const r = new FileReader;
     r.onload = () => {
@@ -8331,7 +8332,7 @@ function gI(t) {
   })
 }
 
-function wI(t) {
+function yI(t) {
   if (typeof FileReader > "u") {
     const n = t.type || "application/octet-stream";
     return t.arrayBuffer().then(e => `data:${n};base64,${pR(new Uint8Array(e))}`)
@@ -8349,7 +8350,7 @@ function wI(t) {
   })
 }
 
-function yI(t) {
+function bI(t) {
   if (!t.startsWith("data:")) throw new Error("Could not parse data URL");
   const n = t.indexOf(",");
   if (n === -1) throw new Error("Could not parse data URL");
@@ -8369,7 +8370,7 @@ function yI(t) {
   })
 }
 
-function bI(...t) {
+function vI(...t) {
   return t.filter(Boolean).join(" ")
 }
 const hR = typeof document < "u";
@@ -8571,7 +8572,7 @@ function yR(t, n) {
   })
 }
 var It;
-class vI {
+class EI {
   constructor() {
     j(this, It, Ne(() => J.toasts.filter(n => !n.dismiss)))
   }
@@ -9210,5 +9211,5 @@ class jR {
 }
 const Le = new MR;
 export {
-  uy as $, aR as A, vI as B, tI as C, JR as D, $ as E, XR as F, _I as G, $R as H, YR as I, VR as J, qR as K, Le as L, Ko as M, iR as N, xr as O, rn as P, KR as Q, WR as R, dI as S, _e as T, cf as U, Qt as V, eI as W, Dr as X, Ut as Y, Vn as Z, gI as _, fe as a, Vp as a0, E_ as a1, ol as a2, tE as a3, yp as a4, wI as a5, yI as a6, pI as a7, nI as a8, RO as a9, Dk as aa, hI as ab, sI as ac, oI as ad, cI as ae, aI as af, mI as ag, fI as ah, GR as ai, Ey as aj, St as b, f as c, rI as d, uI as e, lI as f, Ir as g, u_ as h, Yw as i, Lp as j, Vu as k, ap as l, Gv as m, Zt as n, $o as o, HR as p, QR as q, ZR as r, iI as s, vR as t, ye as u, en as v, Xo as w, LA as x, J as y, bI as z
+  wI as $, aR as A, EI as B, tI as C, JR as D, $ as E, XR as F, _I as G, $R as H, YR as I, VR as J, qR as K, Le as L, Ko as M, iR as N, xr as O, rn as P, KR as Q, WR as R, dI as S, _e as T, cf as U, Qt as V, mI as W, eI as X, Dr as Y, Ut as Z, Vn as _, fe as a, uy as a0, Vp as a1, E_ as a2, ol as a3, tE as a4, yp as a5, yI as a6, bI as a7, pI as a8, nI as a9, RO as aa, Dk as ab, gI as ac, sI as ad, oI as ae, cI as af, aI as ag, hI as ah, fI as ai, GR as aj, Ey as ak, St as b, f as c, rI as d, uI as e, lI as f, Ir as g, u_ as h, Yw as i, Lp as j, Vu as k, ap as l, Gv as m, Zt as n, $o as o, HR as p, QR as q, ZR as r, iI as s, vR as t, ye as u, LA as v, en as w, Xo as x, J as y, vI as z
 };
