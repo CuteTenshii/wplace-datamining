@@ -1,6 +1,6 @@
 import {
   p
-} from "./waOtv_yw.js";
+} from "./CvYv0rY2.js";
 const o = p;
 export {
   o as p
