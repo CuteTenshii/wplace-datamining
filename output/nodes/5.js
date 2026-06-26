@@ -104,10 +104,10 @@ import {
   g as au,
   c as pP,
   d as hP
-} from "../chunks/C3oWzrBX.js";
+} from "../chunks/Dcwibv8e.js";
 import {
   p as Qa
-} from "../chunks/CdW-aqOf.js";
+} from "../chunks/Dn1Cta0l.js";
 import {
   a6 as _P,
   a7 as $2,
@@ -159,7 +159,7 @@ import {
   P as DP,
   c as LP,
   f as RP
-} from "../chunks/RwkUqA7a.js";
+} from "../chunks/Bz7VUMi8.js";
 import {
   A as Yi
 } from "../chunks/C5gxwtjY.js";
@@ -171,7 +171,7 @@ import {
   c as FP,
   d as BP,
   i as OP
-} from "../chunks/Dw6Oi-3z.js";
+} from "../chunks/hDv0oCdP.js";
 import {
   P as La
 } from "../chunks/fCNThiE4.js";
@@ -371,7 +371,7 @@ import {
 import {
   c as x4,
   L as w4
-} from "../chunks/SeaoUFw9.js";
+} from "../chunks/TSJNndkc.js";
 import {
   L as Yy
 } from "../chunks/BDJVyurs.js";
@@ -465,7 +465,7 @@ import {
 } from "../chunks/lSLusnBY.js";
 import {
   r as dv
-} from "../chunks/CwC2i-en.js";
+} from "../chunks/C_fqQhyQ.js";
 import {
   c as B4
 } from "../chunks/BZcJYfQJ.js";
@@ -53408,7 +53408,7 @@ async function Tyt(c, i) {
   }
   return Mm.fromJson(kk(e), i)
 }
-const Syt = globalThis.__sveltekit_2s6q64.env,
+const Syt = globalThis.__sveltekit_1nbu5n4.env,
   zv = Syt.PUBLIC_GOOGLE_DRIVE_CLIENT_ID ?? "",
   Uw = "https://accounts.google.com/gsi/client",
   Pyt = "https://www.googleapis.com/auth/drive.appdata",
@@ -71269,7 +71269,8 @@ function s3t(c, i) {
         "fill-opacity": ["step", ["zoom"],
           ["case", ["boolean", ["feature-state", "hover"], !1], .18, 0], S(), 0
         ]
-      }
+      },
+      maxzoom: 10.6
     }, W), i.map.on("mousemove", B, oe => {
       var me, G, Z;
       if (!((me = oe.features) != null && me.length)) return;
