@@ -1,113 +1,70 @@
-import "./Bzak7iHL.js";
 import {
-  k as j,
-  p as z,
-  q as y,
-  f as S,
-  i as x,
-  a as i,
-  b as B,
-  u as C,
-  d as m,
-  aI as h,
-  r as v,
-  t as _,
-  c as I,
-  l as s
-} from "./CNUayq5u.js";
-import {
-  s as k
-} from "./DIzQwxY1.js";
-import {
-  i as U
-} from "./BZdRChsB.js";
-import {
-  a as p,
-  c as F,
-  s as l
-} from "./U9FR6gvg.js";
-import {
-  p as d
-} from "./CxJ_bcWF.js";
-import {
-  P as G
-} from "./fCNThiE4.js";
-import {
-  u as H
-} from "./DN0dyc3w.js";
-
-function D(o) {
-  return `/dashboard/users?id=${encodeURIComponent(String(o))}`
-}
-
-function J(o) {
-  typeof window > "u" || window.open(D(o), "_blank", "noopener,noreferrer")
-}
-var Q = I('<span role="link" tabindex="0"><!></span>'),
-  T = I('<a target="_blank" rel="noopener noreferrer"><!></a>'),
-  W = I("<span><!></span>");
-
-function te(o, e) {
-  z(e, !0);
-  let E = d(e, "mode", 3, "anchor"),
-    g = d(e, "class", 3, ""),
-    w = d(e, "linkClass", 19, g),
-    L = d(e, "textClass", 19, g);
-  const N = C(() => e.userId != null && e.userId > 0 && H.hasAnyPermission(G.dashboard.users)),
-    R = C(() => e.userId == null ? "" : D(e.userId));
-
-  function f(n) {
-    n.stopPropagation()
-  }
-
-  function b(n) {
-    e.userId == null || e.userId <= 0 || (n.preventDefault(), n.stopPropagation(), J(e.userId))
-  }
-
-  function q(n) {
-    n.key !== "Enter" && n.key !== " " || b(n)
-  }
-  var P = y(),
-    A = S(P);
-  {
-    var K = n => {
-        var r = y(),
-          u = S(r);
-        {
-          var O = t => {
-              var a = Q(),
-                c = m(a);
-              k(c, () => e.children ?? h), v(a), _(() => {
-                p(a, 1, `cursor-pointer hover:underline ${w()}`), l(a, "title", e.title)
-              }), s("pointerdown", a, f), s("click", a, b), s("keydown", a, q), i(t, a)
-            },
-            V = t => {
-              var a = T(),
-                c = m(a);
-              k(c, () => e.children ?? h), v(a), _(() => {
-                p(a, 1, `cursor-pointer hover:underline ${w()}`), l(a, "href", x(R)), l(a, "title", e.title)
-              }), s("pointerdown", a, f), s("click", a, f), i(t, a)
-            };
-          U(u, t => {
-            E() === "inline" ? t(O) : t(V, -1)
-          })
-        }
-        i(n, r)
-      },
-      M = n => {
-        var r = W(),
-          u = m(r);
-        k(u, () => e.children ?? h), v(r), _(() => {
-          p(r, 1, F(L())), l(r, "title", e.title)
-        }), i(n, r)
-      };
-    U(A, n => {
-      x(N) ? n(K) : n(M, -1)
-    })
-  }
-  i(o, P), B()
-}
-j(["pointerdown", "click", "keydown"]);
+  g as n
+} from "./BhCkpOlh.js";
+const u = () => "Month",
+  o = () => "Mês",
+  s = () => "月",
+  i = () => "Monat",
+  c = () => "Mes",
+  _ = () => "Mois",
+  f = () => "Mese",
+  h = () => "月",
+  d = () => "Miesiąc",
+  m = () => "Месяц",
+  a = () => "Місяць",
+  p = () => "Tháng",
+  $ = (e = {}, r = {}) => {
+    const t = r.locale ?? n();
+    return t === "en" ? u() : t === "pt" ? o() : t === "ch" ? s() : t === "de" ? i() : t === "es" ? c() : t === "fr" ? _() : t === "it" ? f() : t === "jp" ? h() : t === "pl" ? d() : t === "ru" ? m() : t === "uk" ? a() : p()
+  },
+  l = () => "this month",
+  y = () => "neste mês",
+  D = () => "本月",
+  I = () => "diesen Monat",
+  j = () => "este mes",
+  k = () => "ce mois-ci",
+  g = () => "questo mese",
+  M = () => "今月",
+  v = () => "w tym miesiącu",
+  H = () => "в этом месяце",
+  w = () => "цього місяця",
+  z = () => "tháng này",
+  tt = (e = {}, r = {}) => {
+    const t = r.locale ?? n();
+    return t === "en" ? l() : t === "pt" ? y() : t === "ch" ? D() : t === "de" ? I() : t === "es" ? j() : t === "fr" ? k() : t === "it" ? g() : t === "jp" ? M() : t === "pl" ? v() : t === "ru" ? H() : t === "uk" ? w() : z()
+  },
+  T = () => "Today",
+  q = () => "Hoje",
+  x = () => "今天",
+  A = () => "Heute",
+  B = () => "Hoy",
+  L = () => "Aujourd’hui",
+  O = () => "Oggi",
+  U = () => "今日",
+  b = () => "Dziś",
+  C = () => "Сегодня",
+  E = () => "Сьогодні",
+  F = () => "Hôm nay",
+  rt = (e = {}, r = {}) => {
+    const t = r.locale ?? n();
+    return t === "en" ? T() : t === "pt" ? q() : t === "ch" ? x() : t === "de" ? A() : t === "es" ? B() : t === "fr" ? L() : t === "it" ? O() : t === "jp" ? U() : t === "pl" ? b() : t === "ru" ? C() : t === "uk" ? E() : F()
+  },
+  G = () => "User ID",
+  J = () => "ID do usuário",
+  K = () => "用户ID",
+  N = () => "Benutzer-ID",
+  P = () => "ID de usuario",
+  Q = () => "ID utilisateur",
+  R = () => "ID dell'utente",
+  S = () => "ユーザーID",
+  V = () => "ID użytkownika",
+  W = () => "Идентификатор пользователя",
+  X = () => "ID користувача",
+  Y = () => "ID người dùng",
+  nt = (e = {}, r = {}) => {
+    const t = r.locale ?? n();
+    return t === "en" ? G() : t === "pt" ? J() : t === "ch" ? K() : t === "de" ? N() : t === "es" ? P() : t === "fr" ? Q() : t === "it" ? R() : t === "jp" ? S() : t === "pl" ? V() : t === "ru" ? W() : t === "uk" ? X() : Y()
+  };
 export {
-  te as S
+  tt as a, $ as m, rt as t, nt as u
 };

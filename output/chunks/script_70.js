@@ -1,22 +1,22 @@
 import {
-  g as r
+  g as n
 } from "./BhCkpOlh.js";
-const u = () => "Timeout",
-  n = () => "Suspender",
-  o = () => "禁言",
-  i = () => "Timeout",
-  s = () => "Suspender",
-  c = () => "Suspendre",
-  m = () => "Sospendi",
-  f = () => "タイムアウト",
-  p = () => "Zawieszenie",
-  _ = () => "Тайм-аут",
-  a = () => "Тайм-аут",
-  l = () => "Tạm khóa",
-  h = (d = {}, e = {}) => {
-    const t = e.locale ?? r();
-    return t === "en" ? u() : t === "pt" ? n() : t === "ch" ? o() : t === "de" ? i() : t === "es" ? s() : t === "fr" ? c() : t === "it" ? m() : t === "jp" ? f() : t === "pl" ? p() : t === "ru" ? _() : t === "uk" ? a() : l()
+const t = () => "Leaderboard",
+  a = () => "Ranking",
+  o = () => "排行榜",
+  d = () => "Bestenliste",
+  u = () => "Clasificación",
+  s = () => "Classement",
+  l = () => "Classifica",
+  i = () => "ランキング",
+  c = () => "Ranking",
+  f = () => "Таблица лидеров",
+  b = () => "Таблиця лідерів",
+  _ = () => "Bảng xếp hạng",
+  k = (p = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? t() : r === "pt" ? a() : r === "ch" ? o() : r === "de" ? d() : r === "es" ? u() : r === "fr" ? s() : r === "it" ? l() : r === "jp" ? i() : r === "pl" ? c() : r === "ru" ? f() : r === "uk" ? b() : _()
   };
 export {
-  h as t
+  k as l
 };

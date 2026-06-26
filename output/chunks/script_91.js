@@ -1,79 +1,27 @@
 import "./Bzak7iHL.js";
-import "./ZmEkclne.js";
 import {
-  p as k,
-  d as n,
-  r as l,
-  t as d,
-  a as p,
-  b as z,
-  s as _,
-  at as o,
-  B as c,
-  c as R
-} from "./CNUayq5u.js";
+  a as e,
+  w as a
+} from "./DmPVOt2G.js";
 import {
-  s as v
-} from "./Dnqs5_45.js";
+  d as p
+} from "./C9hRcinp.js";
 import {
-  i as A
-} from "./BZdRChsB.js";
-import {
-  a as B
-} from "./U9FR6gvg.js";
-import {
-  i as M
-} from "./DTZEEjXL.js";
-import {
-  p as g
-} from "./CxJ_bcWF.js";
-import {
-  R as b,
-  a as u
-} from "./TTfhDrzz.js";
-import {
-  L as x
-} from "./BDJVyurs.js";
-var L = R('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
-  N = R("<span><!></span>");
+  r as v
+} from "./D4ILXblz.js";
+var l = new Set(["$$slots", "$$events", "$$legacy"]),
+  m = a('<svg><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"></path></svg>');
 
-function I(h, i) {
-  k(i, !1);
-  let a = g(i, "role", 8),
-    w = g(i, "big", 8, !1);
-  M();
-  var t = N();
-  let f;
-  var E = n(t);
-  {
-    var y = s => {
-        var e = L(),
-          r = n(e);
-        x(r, {
-          size: "none"
-        });
-        var m = _(r, 1, !0);
-        l(e), d(() => v(m, (o(b), o(a()), c(() => b[a()])))), p(s, e)
-      },
-      O = s => {
-        var e = L(),
-          r = n(e);
-        x(r, {
-          size: "small"
-        });
-        var m = _(r, 1, !0);
-        l(e), d(() => v(m, (o(u), o(a()), c(() => u[a()])))), p(s, e)
-      };
-    A(E, s => {
-      w() ? s(y) : s(O, -1)
-    })
-  }
-  l(t), d(() => f = B(t, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center whitespace-nowrap pt-0.5 font-semibold leading-none shadow", null, f, {
-    "badge-info": a() === "admin",
-    "badge-secondary": a() === "sac" || a() === "game_master" || a() === "game_master_leader" || a() === "dev",
-    "badge-warning": a() === "discord_mod" || a() === "discord_leader"
-  })), p(h, t), z()
+function g(t, o) {
+  let s = v(o, l);
+  var r = m();
+  p(r, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...s
+  })), e(t, r)
 }
 export {
-  I as R
+  g as C
 };

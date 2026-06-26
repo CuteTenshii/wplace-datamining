@@ -1,22 +1,22 @@
 import {
-  g as o
+  g as e
 } from "./BhCkpOlh.js";
-const e = () => "Go to store",
-  n = () => "Ir para a loja",
-  _ = () => "前往商店",
-  s = () => "Zum Shop",
-  u = () => "Ir a la tienda",
-  c = () => "Aller à la boutique",
-  i = () => "Vai al negozio",
-  g = () => "ストアへ",
-  a = () => "Przejdź do sklepu",
-  f = () => "Перейти в магазин",
-  l = () => "Перейти до магазину",
-  p = () => "Đến cửa hàng",
-  j = (d = {}, r = {}) => {
-    const t = r.locale ?? o();
-    return t === "en" ? e() : t === "pt" ? n() : t === "ch" ? _() : t === "de" ? s() : t === "es" ? u() : t === "fr" ? c() : t === "it" ? i() : t === "jp" ? g() : t === "pl" ? a() : t === "ru" ? f() : t === "uk" ? l() : p()
+const o = () => "Droplets",
+  s = () => "Droplets",
+  n = () => "Droplets",
+  p = () => "Droplets",
+  l = () => "Droplets",
+  u = () => "Droplets",
+  c = () => "Droplets",
+  d = () => "Droplets",
+  i = () => "Droplets",
+  f = () => "Droplets",
+  D = () => "Droplets",
+  _ = () => "Droplets",
+  h = (a = {}, t = {}) => {
+    const r = t.locale ?? e();
+    return r === "en" ? o() : r === "pt" ? s() : r === "ch" ? n() : r === "de" ? p() : r === "es" ? l() : r === "fr" ? u() : r === "it" ? c() : r === "jp" ? d() : r === "pl" ? i() : r === "ru" ? f() : r === "uk" ? D() : _()
   };
 export {
-  j as g
+  h as d
 };

@@ -1,38 +1,22 @@
 import {
-  g as s
+  g as e
 } from "./BhCkpOlh.js";
-const t = () => "Users banned successfully",
-  u = () => "Usuários banidos com sucesso",
-  o = () => "用户已成功封禁",
-  i = () => "Benutzer erfolgreich gebannt",
-  c = () => "Usuarios baneados correctamente",
-  _ = () => "Utilisateurs bannis avec succès",
-  a = () => "Utenti bannati con successo",
-  d = () => "ユーザーをBANしました。",
-  f = () => "Użytkownicy zostali pomyślnie zbanowani",
-  l = () => "Пользователи успешно забанены",
-  m = () => "Користувачів успішно заблоковано",
-  p = () => "Đã cấm người dùng thành công",
-  L = (n = {}, r = {}) => {
-    const e = r.locale ?? s();
-    return e === "en" ? t() : e === "pt" ? u() : e === "ch" ? o() : e === "de" ? i() : e === "es" ? c() : e === "fr" ? _() : e === "it" ? a() : e === "jp" ? d() : e === "pl" ? f() : e === "ru" ? l() : e === "uk" ? m() : p()
-  },
-  b = () => "Users timeouted successfully",
-  g = () => "Usuários suspensos com sucesso",
-  U = () => "用户已成功禁言",
-  h = () => "Benutzer erfolgreich mit Timeout belegt",
-  y = () => "Usuarios suspendidos correctamente",
-  k = () => "Utilisateurs suspendus avec succès",
-  z = () => "Utenti sospesi con successo",
-  j = () => "ユーザーをタイムアウトしました。",
-  v = () => "Użytkownicy zostali pomyślnie zawieszeni",
-  w = () => "Пользователям успешно выдан тайм-аут",
-  B = () => "Користувачам успішно призначено тайм-аут",
-  x = () => "Đã tạm khóa người dùng thành công",
-  N = (n = {}, r = {}) => {
-    const e = r.locale ?? s();
-    return e === "en" ? b() : e === "pt" ? g() : e === "ch" ? U() : e === "de" ? h() : e === "es" ? y() : e === "fr" ? k() : e === "it" ? z() : e === "jp" ? j() : e === "pl" ? v() : e === "ru" ? w() : e === "uk" ? B() : x()
+const t = () => "Alliance",
+  l = () => "Aliança",
+  a = () => "联盟",
+  i = () => "Allianz",
+  c = () => "Alianza",
+  u = () => "Alliance",
+  o = () => "Alleanza",
+  s = () => "アライアンス",
+  f = () => "Sojusz",
+  _ = () => "Альянс",
+  p = () => "Альянс",
+  A = () => "Liên minh",
+  j = (z = {}, r = {}) => {
+    const n = r.locale ?? e();
+    return n === "en" ? t() : n === "pt" ? l() : n === "ch" ? a() : n === "de" ? i() : n === "es" ? c() : n === "fr" ? u() : n === "it" ? o() : n === "jp" ? s() : n === "pl" ? f() : n === "ru" ? _() : n === "uk" ? p() : A()
   };
 export {
-  N as a, L as u
+  j as a
 };

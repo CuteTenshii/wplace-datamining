@@ -1,22 +1,22 @@
 import {
-  g as o
+  g as r
 } from "./BhCkpOlh.js";
-const t = () => "Load more",
-  n = () => "Carregar mais",
-  a = () => "加载更多",
-  u = () => "Mehr laden",
-  _ = () => "Cargar más",
-  l = () => "Charger plus",
-  c = () => "Carica altro",
-  s = () => "さらに読み込む",
-  i = () => "Wczytaj więcej",
-  m = () => "Загрузить ещё",
-  d = () => "Завантажити ще",
-  f = () => "Tải thêm",
-  h = (p = {}, e = {}) => {
-    const r = e.locale ?? o();
-    return r === "en" ? t() : r === "pt" ? n() : r === "ch" ? a() : r === "de" ? u() : r === "es" ? _() : r === "fr" ? l() : r === "it" ? c() : r === "jp" ? s() : r === "pl" ? i() : r === "ru" ? m() : r === "uk" ? d() : f()
+const a = () => "No alliance",
+  t = () => "Sem aliança",
+  l = () => "无联盟",
+  i = () => "Ohne Allianz",
+  o = () => "Sin alianza",
+  c = () => "Sans alliance",
+  u = () => "Senza alleanza",
+  _ = () => "同盟なし",
+  s = () => "Bez sojuszu",
+  f = () => "Без альянса",
+  p = () => "Без альянсу",
+  z = () => "Không liên minh",
+  S = (h = {}, e = {}) => {
+    const n = e.locale ?? r();
+    return n === "en" ? a() : n === "pt" ? t() : n === "ch" ? l() : n === "de" ? i() : n === "es" ? o() : n === "fr" ? c() : n === "it" ? u() : n === "jp" ? _() : n === "pl" ? s() : n === "ru" ? f() : n === "uk" ? p() : z()
   };
 export {
-  h as l
+  S as n
 };

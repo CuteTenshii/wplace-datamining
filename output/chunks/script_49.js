@@ -1,192 +1,167 @@
+var x = Object.defineProperty;
+var m = (s, e, t) => e in s ? x(s, e, {
+  enumerable: !0,
+  configurable: !0,
+  writable: !0,
+  value: t
+}) : s[e] = t;
+var u = (s, e, t) => m(s, typeof e != "symbol" ? e + "" : e, t);
 import {
-  g as _
+  g as T
 } from "./BhCkpOlh.js";
-import "./Bzak7iHL.js";
 import {
-  p as E,
-  i as c,
-  h,
-  y as I,
-  d as o,
-  s as v,
-  bm as N,
-  r as u,
-  t as g,
-  a as b,
-  b as T,
-  e as W,
-  u as B,
-  c as q
-} from "./CNUayq5u.js";
-import {
-  s as k
-} from "./Dnqs5_45.js";
-import {
-  i as S
-} from "./BZdRChsB.js";
-import {
-  d as D,
-  C as G
-} from "./U9FR6gvg.js";
-import {
-  b as R
-} from "./CnIGMQSl.js";
-import {
-  b as V
-} from "./D_HBaeR1.js";
-import {
-  p as f,
-  r as F
-} from "./CxJ_bcWF.js";
-const H = () => "Extra context on what happened (required)",
-  J = () => "Mais informações sobre o que aconteceu (obrigatório)",
-  K = () => "请提供发生情况的额外背景（必填）",
-  P = () => "Zusätzliche Informationen zum Vorfall (erforderlich)",
-  Q = () => "Más contexto sobre lo que ocurrió (obligatorio)",
-  U = () => "Contexte supplémentaire sur ce qui s’est passé (obligatoire)",
-  X = () => "Maggiori informazioni su ciò che è successo (obbligatorio)",
-  Y = () => "何が起きたかの詳細な説明（必須）",
-  $ = () => "Dodatkowy kontekst tego, co się stało (wymagane)",
-  ee = () => "Дополнительный контекст о произошедшем (обязательно)",
-  re = () => "Додаткова інформація про те, що сталося (обовʼязково)",
-  te = () => "Thêm ngữ cảnh về chuyện đã xảy ra (bắt buộc)",
-  mr = (e = {}, t = {}) => {
-    const r = t.locale ?? _();
-    return r === "en" ? H() : r === "pt" ? J() : r === "ch" ? K() : r === "de" ? P() : r === "es" ? Q() : r === "fr" ? U() : r === "it" ? X() : r === "jp" ? Y() : r === "pl" ? $() : r === "ru" ? ee() : r === "uk" ? re() : te()
+  b as p
+} from "./xnkhiuXW.js";
+const L = () => "No description",
+  d = () => "Sem descrição",
+  M = () => "无描述",
+  f = () => "Keine Beschreibung",
+  _ = () => "Sin descripción",
+  P = () => "Aucune description",
+  S = () => "Nessuna descrizione",
+  y = () => "説明なし",
+  B = () => "Brak opisu",
+  g = () => "Без описания",
+  z = () => "Без опису",
+  b = () => "Không có mô tả",
+  C = (s = {}, e = {}) => {
+    const t = e.locale ?? T();
+    return t === "en" ? L() : t === "pt" ? d() : t === "ch" ? M() : t === "de" ? f() : t === "es" ? _() : t === "fr" ? P() : t === "it" ? S() : t === "jp" ? y() : t === "pl" ? B() : t === "ru" ? g() : t === "uk" ? z() : b()
   },
-  ne = e => `Max. characters: ${e.max}`,
-  ae = e => `Máximo de caracteres: ${e.max}`,
-  ce = e => `最大字符数：${e.max}`,
-  ie = e => `Max. Zeichen: ${e.max}`,
-  se = e => `Máx. de caracteres: ${e.max}`,
-  oe = e => `Max. de caractères : ${e.max}`,
-  ue = e => `Numero massimo di caratteri: ${e.max}`,
-  _e = e => `最大文字数: ${e.max}`,
-  le = e => `Maks. znaków: ${e.max}`,
-  fe = e => `Макс. символов: ${e.max}`,
-  me = e => `Макс. символів: ${e.max}`,
-  xe = e => `Số ký tự tối đa: ${e.max}`,
-  de = (e, t = {}) => {
-    const r = t.locale ?? _();
-    return r === "en" ? ne(e) : r === "pt" ? ae(e) : r === "ch" ? ce(e) : r === "de" ? ie(e) : r === "es" ? se(e) : r === "fr" ? oe(e) : r === "it" ? ue(e) : r === "jp" ? _e(e) : r === "pl" ? le(e) : r === "ru" ? fe(e) : r === "uk" ? me(e) : xe(e)
-  },
-  he = e => `Min. characters: ${e.min}`,
-  ve = e => `Mínimo de caracteres: ${e.min}`,
-  ge = e => `最少字符数：${e.min}`,
-  be = e => `Min. Zeichen: ${e.min}`,
-  ke = e => `Mín. de caracteres: ${e.min}`,
-  qe = e => `Min. de caractères : ${e.min}`,
-  Me = e => `Numero minimo di caratteri: ${e.min}`,
-  je = e => `最小文字数: ${e.min}`,
-  we = e => `Min. znaków: ${e.min}`,
-  Se = e => `Мин. символов: ${e.min}`,
-  pe = e => `Мін. символів: ${e.min}`,
-  ye = e => `Số ký tự tối thiểu: ${e.min}`,
-  ze = (e, t = {}) => {
-    const r = t.locale ?? _();
-    return r === "en" ? he(e) : r === "pt" ? ve(e) : r === "ch" ? ge(e) : r === "de" ? be(e) : r === "es" ? ke(e) : r === "fr" ? qe(e) : r === "it" ? Me(e) : r === "jp" ? je(e) : r === "pl" ? we(e) : r === "ru" ? Se(e) : r === "uk" ? pe(e) : ye(e)
-  },
-  Ce = () => "Required",
-  Le = () => "Obrigatório",
-  Oe = () => "必填",
-  Ze = () => "Erforderlich",
-  Ae = () => "Obligatorio",
-  Ee = () => "Obligatoire",
-  Ie = () => "Obbligatorio",
-  Ne = () => "必須",
-  Te = () => "Wymagane",
-  We = () => "Обязательно",
-  Be = () => "Обовʼязково",
-  De = () => "Bắt buộc",
-  Ge = (e = {}, t = {}) => {
-    const r = t.locale ?? _();
-    return r === "en" ? Ce() : r === "pt" ? Le() : r === "ch" ? Oe() : r === "de" ? Ze() : r === "es" ? Ae() : r === "fr" ? Ee() : r === "it" ? Ie() : r === "jp" ? Ne() : r === "pl" ? Te() : r === "ru" ? We() : r === "uk" ? Be() : De()
-  },
-  Re = () => "Select the reason",
-  Ve = () => "Selecione o motivo",
-  Fe = () => "选择原因",
-  He = () => "Grund auswählen",
-  Je = () => "Selecciona el motivo",
-  Ke = () => "Sélectionnez la raison",
-  Pe = () => "Seleziona il motivo",
-  Qe = () => "理由を選択",
-  Ue = () => "Wybierz powód",
-  Xe = () => "Выберите причину",
-  Ye = () => "Виберіть причину",
-  $e = () => "Chọn lý do",
-  xr = (e = {}, t = {}) => {
-    const r = t.locale ?? _();
-    return r === "en" ? Re() : r === "pt" ? Ve() : r === "ch" ? Fe() : r === "de" ? He() : r === "es" ? Je() : r === "fr" ? Ke() : r === "it" ? Pe() : r === "jp" ? Qe() : r === "pl" ? Ue() : r === "ru" ? Xe() : r === "uk" ? Ye() : $e()
-  };
-var er = new Set(["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate", "disabled", "ref"]),
-  rr = q('<legend class="fieldset-legend"> </legend>'),
-  tr = q('<span class="text-base-content/80"> </span>'),
-  nr = q('<fieldset class="fieldset"><!> <textarea></textarea> <div class="flex items-center justify-between text-xs"><span class="text-error"> </span> <!></div></fieldset>');
-
-function dr(e, t) {
-  E(t, !0);
-  let r = f(t, "value", 15),
-    p = f(t, "validate", 15),
-    y = f(t, "disabled", 3, !1),
-    M = f(t, "ref", 15),
-    z = F(t, er),
-    i = W("");
-  const l = B(() => {
-    var n;
-    return ((n = r()) == null ? void 0 : n.length) ?? 0
-  });
-  p(C);
-
-  function C() {
-    return t.min !== void 0 && c(l) < t.min ? (h(i, t.min === 1 ? Ge() : ze({
-      min: t.min
-    }), !0), !1) : t.max !== void 0 && c(l) > t.max ? (h(i, de({
-      max: t.max
-    }), !0), !1) : (h(i, ""), !0)
+  a = 2 * Math.PI * 6378137 / 2;
+class E {
+  constructor(e = 256) {
+    u(this, "initialResolution");
+    this.tileSize = e, this.initialResolution = 2 * a / this.tileSize
   }
-  I(() => {
-    var n;
-    t.max !== void 0 && c(l) > t.max && r((n = r()) == null ? void 0 : n.substring(0, t.max))
-  });
-  var m = nr(),
-    j = o(m);
-  {
-    var L = n => {
-      var a = rr(),
-        d = o(a, !0);
-      u(a), g(() => k(d, t.label)), b(n, a)
-    };
-    S(j, n => {
-      t.label && n(L)
-    })
+  latLonToMeters(e, t) {
+    const i = t / 180 * a,
+      n = Math.log(Math.tan((90 + e) * Math.PI / 360)) / (Math.PI / 180) * a / 180;
+    return [i, n]
   }
-  var s = v(j, 2);
-  N(s), D(s, () => ({
-    ...z,
-    class: `textarea w-full ${t.class??""}`,
-    placeholder: t.placeholder,
-    disabled: y(),
-    [G]: {
-      "textarea-error": !!c(i)
+  metersToLatLon(e, t) {
+    const i = e / a * 180;
+    let n = t / a * 180;
+    return n = 180 / Math.PI * (2 * Math.atan(Math.exp(n * Math.PI / 180)) - Math.PI / 2), [n, i]
+  }
+  pixelsToMeters(e, t, i) {
+    const n = this.resolution(i),
+      o = e * n - a,
+      r = a - t * n;
+    return [o, r]
+  }
+  pixelsToLatLon(e, t, i) {
+    const [n, o] = this.pixelsToMeters(e, t, i);
+    return this.metersToLatLon(n, o)
+  }
+  latLonToPixels(e, t, i) {
+    const [n, o] = this.latLonToMeters(e, t);
+    return this.metersToPixels(n, o, i)
+  }
+  latLonToPixelsFloor(e, t, i) {
+    const [n, o] = this.latLonToPixels(e, t, i);
+    return [Math.floor(n), Math.floor(o)]
+  }
+  metersToPixels(e, t, i) {
+    const n = this.resolution(i),
+      o = (e + a) / n,
+      r = (a - t) / n;
+    return [o, r]
+  }
+  latLonToTile(e, t, i) {
+    const [n, o] = this.latLonToMeters(e, t);
+    return this.metersToTile(n, o, i)
+  }
+  metersToTile(e, t, i) {
+    const [n, o] = this.metersToPixels(e, t, i);
+    return this.pixelsToTile(n, o)
+  }
+  pixelsToTile(e, t) {
+    const i = Math.ceil(e / this.tileSize) - 1,
+      n = Math.ceil(t / this.tileSize) - 1;
+    return [i, n]
+  }
+  pixelsToTileLocal(e, t) {
+    return {
+      tile: this.pixelsToTile(e, t),
+      pixel: [Math.floor(e) % this.tileSize, Math.floor(t) % this.tileSize]
     }
-  })), V(s, n => M(n), () => M());
-  var w = v(s, 2),
-    x = o(w),
-    O = o(x, !0);
-  u(x);
-  var Z = v(x, 2);
-  {
-    var A = n => {
-      var a = tr(),
-        d = o(a, !0);
-      u(a), g(() => k(d, t.max - c(l))), b(n, a)
-    };
-    S(Z, n => {
-      t.max !== void 0 && n(A)
-    })
   }
-  u(w), u(m), g(() => k(O, c(i))), R(s, r), b(e, m), T()
+  tileBounds(e, t, i) {
+    const [n, o] = this.pixelsToMeters(e * this.tileSize, t * this.tileSize, i), [r, l] = this.pixelsToMeters((e + 1) * this.tileSize, (t + 1) * this.tileSize, i);
+    return {
+      min: [n, o],
+      max: [r, l]
+    }
+  }
+  tileBoundsLatLon(e, t, i) {
+    const n = this.tileBounds(e, t, i);
+    return {
+      min: this.metersToLatLon(n.min[0], n.min[1]),
+      max: this.metersToLatLon(n.max[0], n.max[1])
+    }
+  }
+  resolution(e) {
+    return this.initialResolution / 2 ** e
+  }
+  latLonToTileAndPixel(e, t, i) {
+    const [n, o] = this.latLonToMeters(e, t), [r, l] = this.metersToTile(n, o, i), [c, h] = this.metersToPixels(n, o, i);
+    return {
+      tile: [r, l],
+      pixel: [Math.floor(c) % this.tileSize, Math.floor(h) % this.tileSize]
+    }
+  }
+  pixelBounds(e, t, i) {
+    return {
+      min: this.pixelsToMeters(e, t, i),
+      max: this.pixelsToMeters(e + 1, t + 1, i)
+    }
+  }
+  pixelToBoundsLatLon(e, t, i) {
+    const n = this.pixelBounds(e, t, i);
+    return {
+      min: this.metersToLatLon(n.min[0], n.min[1]),
+      max: this.metersToLatLon(n.max[0], n.max[1])
+    }
+  }
+  latLonToTileBoundsLatLon(e, t, i) {
+    const [n, o] = this.latLonToMeters(e, t), [r, l] = this.metersToTile(n, o, i);
+    return this.tileBoundsLatLon(r, l, i)
+  }
+  latLonToPixelBoundsLatLon(e, t, i) {
+    const [n, o] = this.latLonToMeters(e, t), [r, l] = this.metersToPixels(n, o, i);
+    return this.pixelToBoundsLatLon(Math.floor(r), Math.floor(l), i)
+  }
+  latLonToRegionAndPixel(e, t, i, n = p.regionSize) {
+    const [o, r] = this.latLonToPixelsFloor(e, t, i), l = this.tileSize * n;
+    return {
+      region: [Math.floor(o / l), Math.floor(r / l)],
+      pixel: [o % l, r % l]
+    }
+  }
+}
+
+function F(s, e = !0) {
+  const {
+    min: t,
+    max: i
+  } = s;
+  return e ? [
+    [t[1], i[0]],
+    [i[1], i[0]],
+    [i[1], t[0]],
+    [t[1], t[0]]
+  ] : [
+    [t[0], i[1]],
+    [i[0], i[1]],
+    [i[0], t[1]],
+    [t[0], t[1]]
+  ]
+}
+
+function N(s) {
+  return [(s.min[0] + s.max[0]) / 2, (s.min[1] + s.max[1]) / 2]
 }
 export {
-  dr as L, mr as g, xr as s
+  E as G, F as b, N as g, C as n
 };

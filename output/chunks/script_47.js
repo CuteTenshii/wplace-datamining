@@ -1,75 +1,57 @@
 import {
-  S as p
-} from "./DN0dyc3w.js";
-const h = p;
+  t as T,
+  J as d,
+  O as v,
+  a6 as i,
+  K as M,
+  T as C,
+  ax as _,
+  ay as m,
+  Q as y,
+  a8 as p,
+  ar as w,
+  az as N,
+  aA as O,
+  aB as g,
+  aC as H,
+  aD as R
+} from "./DmPVOt2G.js";
 
-function b(f) {
-  const s = [],
-    a = s,
-    d = Object.keys(f);
-  for (const o of d) {
-    const t = f[o];
-    if (typeof t == "string") {
-      a.push(t), Object.defineProperty(s, o, {
-        value: t,
-        enumerable: !0,
-        configurable: !1,
-        writable: !1
-      });
-      continue
-    }
-    const n = b(t);
-    Object.defineProperty(s, o, {
-      value: n,
-      enumerable: !0,
-      configurable: !1,
-      writable: !1
-    });
-    const r = n;
-    for (let e = 0; e < r.length; e += 1) a.push(r[e])
+function L(h, A, u = !1, f = !1, t = !1, b = !1) {
+  var n = h,
+    e = "";
+  if (u) {
+    var l = h;
+    d && (n = v(i(l)))
   }
-  return Object.defineProperty(s, "only", {
-    value: (...o) => {
-      const t = [];
-      for (let n = 0; n < o.length; n += 1) {
-        const r = o[n],
-          e = s[r];
-        if (typeof e == "string") {
-          t.push(e);
-          continue
-        }
-        const l = e;
-        for (let i = 0; i < l.length; i += 1) t.push(l[i])
+  T(() => {
+    var r = C;
+    if (e === (e = A() ?? "")) {
+      d && M();
+      return
+    }
+    if (u && !d) {
+      r.nodes = null, l.innerHTML = e, e !== "" && _(i(l), l.lastChild);
+      return
+    }
+    if (r.nodes !== null && (m(r.nodes.start, r.nodes.end), r.nodes = null), e !== "") {
+      if (d) {
+        y.data;
+        for (var a = M(), c = a; a !== null && (a.nodeType !== p || a.data !== "");) c = a, a = w(a);
+        if (a === null) throw N(), O;
+        _(y, c), n = v(a);
+        return
       }
-      return t
-    },
-    enumerable: !1,
-    configurable: !1,
-    writable: !1
-  }), Object.defineProperty(s, "but", {
-    value: (...o) => {
-      const t = new Set(o),
-        n = [],
-        r = Object.keys(s);
-      for (let e = 0; e < r.length; e += 1) {
-        const l = r[e];
-        if (t.has(l)) continue;
-        const i = s[l];
-        if (typeof i == "string") {
-          n.push(i);
-          continue
-        }
-        const u = i;
-        for (let c = 0; c < u.length; c += 1) n.push(u[c])
-      }
-      return n
-    },
-    enumerable: !1,
-    configurable: !1,
-    writable: !1
-  }), Object.freeze(s)
+      var E = f ? H : t ? R : void 0,
+        o = g(f ? "svg" : t ? "math" : "template", E);
+      o.innerHTML = e;
+      var s = f || t ? o : o.content;
+      if (_(i(s), s.lastChild), f || t)
+        for (; i(s);) n.before(i(s));
+      else n.before(s)
+    }
+  })
 }
-const m = b(h);
 export {
-  m as P
+  L as h
 };

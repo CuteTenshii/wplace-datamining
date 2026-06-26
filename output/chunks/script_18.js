@@ -20,13 +20,13 @@ import {
   t as Tt,
   W as D,
   a as Q,
-  w as X,
+  H as X,
   u as tt,
-  A as Bt,
-  x as Et,
-  G as Gt,
+  I as Bt,
+  J as Et,
+  K as Gt,
   b as Ct
-} from "./DN0dyc3w.js";
+} from "./xnkhiuXW.js";
 import {
   e as st,
   i as ct,
@@ -35,24 +35,24 @@ import {
   aE as Dt,
   y as Lt,
   B as zt
-} from "./CNUayq5u.js";
+} from "./DmPVOt2G.js";
 import {
   g as Rt
-} from "./Dcwibv8e.js";
+} from "./DIxLb6GE.js";
 import {
   r as Ut
-} from "./C_fqQhyQ.js";
+} from "./CD9WkkTr.js";
 import {
   c as bt
-} from "./Dnqs5_45.js";
+} from "./DhqkUb9U.js";
 import {
   g as Y
 } from "./BhCkpOlh.js";
-import "./DYjy9diV.js";
+import "./KH4OTVDv.js";
 const xt = () => "Download WPlace from the Google Play Store.",
   Ft = () => "Baixe o WPlace na Google Play Store.",
-  Wt = () => "请从 Google Play 商店下载 WPlace。",
-  Kt = () => "Lade WPlace aus dem Google Play Store herunter.",
+  Kt = () => "请从 Google Play 商店下载 WPlace。",
+  Wt = () => "Lade WPlace aus dem Google Play Store herunter.",
   Mt = () => "Descarga WPlace desde Google Play Store.",
   qt = () => "Téléchargez WPlace depuis le Google Play Store.",
   Yt = () => "Scarica WPlace dal Google Play Store.",
@@ -63,7 +63,7 @@ const xt = () => "Download WPlace from the Google Play Store.",
   Zt = () => "Hãy tải WPlace từ Google Play Store.",
   Qt = (r = {}, t = {}) => {
     const e = t.locale ?? Y();
-    return e === "en" ? xt() : e === "pt" ? Ft() : e === "ch" ? Wt() : e === "de" ? Kt() : e === "es" ? Mt() : e === "fr" ? qt() : e === "it" ? Yt() : e === "jp" ? Ht() : e === "pl" ? Vt() : e === "ru" ? Jt() : e === "uk" ? $t() : Zt()
+    return e === "en" ? xt() : e === "pt" ? Ft() : e === "ch" ? Kt() : e === "de" ? Wt() : e === "es" ? Mt() : e === "fr" ? qt() : e === "it" ? Yt() : e === "jp" ? Ht() : e === "pl" ? Vt() : e === "ru" ? Jt() : e === "uk" ? $t() : Zt()
   },
   Xt = () => "We couldn't find your account. Please try again later.",
   te = () => "Não foi possível encontrar sua conta. Tente novamente mais tarde.",
@@ -118,8 +118,8 @@ const xt = () => "Download WPlace from the Google Play Store.",
   Ue = () => "不支持 Play Billing。",
   xe = () => "Play Billing wird nicht unterstützt.",
   Fe = () => "Play Billing no es compatible.",
-  We = () => "Play Billing non pris en charge.",
-  Ke = () => "Play Billing non supportato.",
+  Ke = () => "Play Billing non pris en charge.",
+  We = () => "Play Billing non supportato.",
   Me = () => "Play Billing はサポートされていません。",
   qe = () => "Play Billing nie jest obsługiwane.",
   Ye = () => "Play Billing не поддерживается.",
@@ -127,7 +127,7 @@ const xt = () => "Download WPlace from the Google Play Store.",
   Ve = () => "Play Billing không được hỗ trợ.",
   pt = (r = {}, t = {}) => {
     const e = t.locale ?? Y();
-    return e === "en" ? ze() : e === "pt" ? Re() : e === "ch" ? Ue() : e === "de" ? xe() : e === "es" ? Fe() : e === "fr" ? We() : e === "it" ? Ke() : e === "jp" ? Me() : e === "pl" ? qe() : e === "ru" ? Ye() : e === "uk" ? He() : Ve()
+    return e === "en" ? ze() : e === "pt" ? Re() : e === "ch" ? Ue() : e === "de" ? xe() : e === "es" ? Fe() : e === "fr" ? Ke() : e === "it" ? We() : e === "jp" ? Me() : e === "pl" ? qe() : e === "ru" ? Ye() : e === "uk" ? He() : Ve()
   };
 
 function Je(r) {
@@ -207,11 +207,11 @@ function Xe() {
 function Hr(r) {
   return r.lat >= -90 && r.lat <= 90 && r.lng >= -180 && r.lng <= 180
 }
-var F, W;
+var F, K;
 class tr {
   constructor() {
     f(this, F, st(-1));
-    f(this, W, st([]))
+    f(this, K, st([]))
   }
   get idx() {
     return ct(c(this, F))
@@ -220,10 +220,10 @@ class tr {
     lt(c(this, F), t, !0)
   }
   get entries() {
-    return ct(c(this, W))
+    return ct(c(this, K))
   }
   set entries(t) {
-    lt(c(this, W), t)
+    lt(c(this, K), t)
   }
   hasNext() {
     return this.idx < this.entries.length - 1
@@ -254,7 +254,7 @@ class tr {
     this.idx = this.idx + 1, this.entries = [...this.entries.slice(0, this.idx), t]
   }
 }
-F = new WeakMap, W = new WeakMap;
+F = new WeakMap, K = new WeakMap;
 const Vr = new tr;
 
 function er(r, t) {
@@ -457,16 +457,16 @@ function Br(r) {
   }
   return t
 }
-var E, K;
+var E, W;
 class Er {
   constructor(t = {}) {
     f(this, E);
-    f(this, K);
+    f(this, W);
     const {
       window: e = kt,
       document: n = e == null ? void 0 : e.document
     } = t;
-    e !== void 0 && (y(this, E, n), y(this, K, bt(o => {
+    e !== void 0 && (y(this, E, n), y(this, W, bt(o => {
       const i = rt(e, "focusin", o),
         s = rt(e, "focusout", o);
       return () => {
@@ -476,10 +476,10 @@ class Er {
   }
   get current() {
     var t;
-    return (t = c(this, K)) == null || t.call(this), c(this, E) ? Br(c(this, E)) : null
+    return (t = c(this, W)) == null || t.call(this), c(this, E) ? Br(c(this, E)) : null
   }
 }
-E = new WeakMap, K = new WeakMap;
+E = new WeakMap, W = new WeakMap;
 new Er;
 
 function Gr(r, t) {
