@@ -90,10 +90,10 @@ import {
   s as It,
   a as Tr,
   r as ha,
-  e as hc,
+  e as pc,
   g as J2,
   b as yi,
-  c as bc,
+  c as yc,
   h as dP,
   j as o1,
   k as i1,
@@ -104,16 +104,16 @@ import {
   g as au,
   c as pP,
   d as hP
-} from "../chunks/BsZKDDlI.js";
+} from "../chunks/C3oWzrBX.js";
 import {
   p as Qa
-} from "../chunks/CnXxn7Rx.js";
+} from "../chunks/CdW-aqOf.js";
 import {
   a6 as _P,
   a7 as $2,
   b as Ca,
   f as _a,
-  e as pc,
+  e as dc,
   Q as $p,
   O as r_,
   a as gn,
@@ -151,7 +151,7 @@ import {
   U as s1,
   D as i5,
   n as od,
-  b as dc,
+  b as uc,
   I as Uv,
   e as EP,
   r as zP,
@@ -159,7 +159,7 @@ import {
   P as DP,
   c as LP,
   f as RP
-} from "../chunks/DDhX_ZH0.js";
+} from "../chunks/RwkUqA7a.js";
 import {
   A as Yi
 } from "../chunks/C5gxwtjY.js";
@@ -171,7 +171,7 @@ import {
   c as FP,
   d as BP,
   i as OP
-} from "../chunks/BxqTGFhw.js";
+} from "../chunks/Dw6Oi-3z.js";
 import {
   P as La
 } from "../chunks/fCNThiE4.js";
@@ -341,7 +341,7 @@ import {
   a as af
 } from "../chunks/B0JoJohi.js";
 import {
-  f as yc,
+  f as vc,
   s as Kh,
   a as g4
 } from "../chunks/CiB29Aqe.js";
@@ -371,7 +371,7 @@ import {
 import {
   c as x4,
   L as w4
-} from "../chunks/CIknK6mF.js";
+} from "../chunks/SeaoUFw9.js";
 import {
   L as Yy
 } from "../chunks/BDJVyurs.js";
@@ -465,7 +465,7 @@ import {
 } from "../chunks/lSLusnBY.js";
 import {
   r as dv
-} from "../chunks/D9LUekzD.js";
+} from "../chunks/CwC2i-en.js";
 import {
   c as B4
 } from "../chunks/BZcJYfQJ.js";
@@ -1409,141 +1409,141 @@ const V4 = () => "OR",
   QF = () => "Your overlays stay on this device and in Google Drive, but they will no longer sync until you reconnect.",
   JF = () => "Your overlays stay on this device and in Google Drive, but they will no longer sync until you reconnect.",
   $F = () => "Your overlays stay on this device and in Google Drive, but they will no longer sync until you reconnect.",
-  eB = () => "Your overlays stay on this device and in Google Drive, but they will no longer sync until you reconnect.",
-  tB = () => "Your overlays stay on this device and in Google Drive, but they will no longer sync until you reconnect.",
-  rB = (c = {}, i = {}) => {
+  e7 = () => "Your overlays stay on this device and in Google Drive, but they will no longer sync until you reconnect.",
+  t7 = () => "Your overlays stay on this device and in Google Drive, but they will no longer sync until you reconnect.",
+  r7 = (c = {}, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? GF() : e === "pt" ? ZF() : e === "ch" ? WF() : e === "de" ? HF() : e === "es" ? YF() : e === "fr" ? XF() : e === "it" ? KF() : e === "jp" ? QF() : e === "pl" ? JF() : e === "ru" ? $F() : e === "uk" ? eB() : tB()
+    return e === "en" ? GF() : e === "pt" ? ZF() : e === "ch" ? WF() : e === "de" ? HF() : e === "es" ? YF() : e === "fr" ? XF() : e === "it" ? KF() : e === "jp" ? QF() : e === "pl" ? JF() : e === "ru" ? $F() : e === "uk" ? e7() : t7()
   },
-  nB = () => "Disconnected on this device, but the server could not revoke Google Drive access. Try again later.",
-  oB = () => "Desconectado neste dispositivo, mas o servidor não pôde revogar o acesso ao Google Drive. Tente novamente mais tarde.",
-  iB = () => "此设备已断开连接，但服务器未能撤销 Google 云端硬盘的访问权限。请稍后再试。",
-  aB = () => "Verbindung auf diesem Gerät getrennt, aber der Server konnte den Google Drive-Zugriff nicht widerrufen. Versuchen Sie es später erneut.",
-  sB = () => "Desconectado en este dispositivo, pero el servidor no pudo revocar el acceso a Google Drive. Inténtalo de nuevo más tarde.",
-  lB = () => "Déconnecté sur cet appareil, mais le serveur n'a pas pu révoquer l'accès à Google Drive. Réessayez plus tard.",
-  cB = () => "Disconnesso su questo dispositivo, ma il server non è riuscito a revocare l'accesso a Google Drive. Riprova più tardi.",
-  uB = () => "このデバイスから切断されましたが、サーバーはGoogleドライブへのアクセスを取り消すことができませんでした。後でもう一度お試しください。",
-  dB = () => "Rozłączono na tym urządzeniu, ale serwer nie mógł odwołać dostępu do Dysku Google. Spróbuj ponownie później.",
-  pB = () => "Отключено на этом устройстве, но сервер не смог отозвать доступ к Google Диску. Повторите попытку позже.",
-  hB = () => "Відключено на цьому пристрої, але сервер не зміг відкликати доступ до Google Диска. Спробуйте пізніше.",
-  _B = () => "Đã ngắt kết nối trên thiết bị này, nhưng máy chủ không thể thu hồi quyền truy cập Google Drive. Vui lòng thử lại sau.",
-  fB = (c = {}, i = {}) => {
+  n7 = () => "Disconnected on this device, but the server could not revoke Google Drive access. Try again later.",
+  o7 = () => "Desconectado neste dispositivo, mas o servidor não pôde revogar o acesso ao Google Drive. Tente novamente mais tarde.",
+  i7 = () => "此设备已断开连接，但服务器未能撤销 Google 云端硬盘的访问权限。请稍后再试。",
+  a7 = () => "Verbindung auf diesem Gerät getrennt, aber der Server konnte den Google Drive-Zugriff nicht widerrufen. Versuchen Sie es später erneut.",
+  s7 = () => "Desconectado en este dispositivo, pero el servidor no pudo revocar el acceso a Google Drive. Inténtalo de nuevo más tarde.",
+  l7 = () => "Déconnecté sur cet appareil, mais le serveur n'a pas pu révoquer l'accès à Google Drive. Réessayez plus tard.",
+  c7 = () => "Disconnesso su questo dispositivo, ma il server non è riuscito a revocare l'accesso a Google Drive. Riprova più tardi.",
+  u7 = () => "このデバイスから切断されましたが、サーバーはGoogleドライブへのアクセスを取り消すことができませんでした。後でもう一度お試しください。",
+  d7 = () => "Rozłączono na tym urządzeniu, ale serwer nie mógł odwołać dostępu do Dysku Google. Spróbuj ponownie później.",
+  p7 = () => "Отключено на этом устройстве, но сервер не смог отозвать доступ к Google Диску. Повторите попытку позже.",
+  h7 = () => "Відключено на цьому пристрої, але сервер не зміг відкликати доступ до Google Диска. Спробуйте пізніше.",
+  _7 = () => "Đã ngắt kết nối trên thiết bị này, nhưng máy chủ không thể thu hồi quyền truy cập Google Drive. Vui lòng thử lại sau.",
+  f7 = (c = {}, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? nB() : e === "pt" ? oB() : e === "ch" ? iB() : e === "de" ? aB() : e === "es" ? sB() : e === "fr" ? lB() : e === "it" ? cB() : e === "jp" ? uB() : e === "pl" ? dB() : e === "ru" ? pB() : e === "uk" ? hB() : _B()
+    return e === "en" ? n7() : e === "pt" ? o7() : e === "ch" ? i7() : e === "de" ? a7() : e === "es" ? s7() : e === "fr" ? l7() : e === "it" ? c7() : e === "jp" ? u7() : e === "pl" ? d7() : e === "ru" ? p7() : e === "uk" ? h7() : _7()
   },
-  mB = () => "Disconnected from Google Drive.",
-  gB = () => "Disconnected from Google Drive.",
-  vB = () => "Disconnected from Google Drive.",
-  yB = () => "Disconnected from Google Drive.",
-  bB = () => "Disconnected from Google Drive.",
-  xB = () => "Disconnected from Google Drive.",
-  wB = () => "Disconnected from Google Drive.",
-  kB = () => "Disconnected from Google Drive.",
-  TB = () => "Disconnected from Google Drive.",
-  SB = () => "Disconnected from Google Drive.",
-  PB = () => "Disconnected from Google Drive.",
-  CB = () => "Disconnected from Google Drive.",
-  IB = (c = {}, i = {}) => {
+  m7 = () => "Disconnected from Google Drive.",
+  g7 = () => "Disconnected from Google Drive.",
+  v7 = () => "Disconnected from Google Drive.",
+  y7 = () => "Disconnected from Google Drive.",
+  b7 = () => "Disconnected from Google Drive.",
+  x7 = () => "Disconnected from Google Drive.",
+  w7 = () => "Disconnected from Google Drive.",
+  k7 = () => "Disconnected from Google Drive.",
+  T7 = () => "Disconnected from Google Drive.",
+  S7 = () => "Disconnected from Google Drive.",
+  P7 = () => "Disconnected from Google Drive.",
+  C7 = () => "Disconnected from Google Drive.",
+  I7 = (c = {}, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? mB() : e === "pt" ? gB() : e === "ch" ? vB() : e === "de" ? yB() : e === "es" ? bB() : e === "fr" ? xB() : e === "it" ? wB() : e === "jp" ? kB() : e === "pl" ? TB() : e === "ru" ? SB() : e === "uk" ? PB() : CB()
+    return e === "en" ? m7() : e === "pt" ? g7() : e === "ch" ? v7() : e === "de" ? y7() : e === "es" ? b7() : e === "fr" ? x7() : e === "it" ? w7() : e === "jp" ? k7() : e === "pl" ? T7() : e === "ru" ? S7() : e === "uk" ? P7() : C7()
   },
-  MB = c => `Google Drive sync failed: ${c.error}`,
-  EB = c => `Google Drive sync failed: ${c.error}`,
-  zB = c => `Google Drive sync failed: ${c.error}`,
-  AB = c => `Google Drive sync failed: ${c.error}`,
-  DB = c => `Google Drive sync failed: ${c.error}`,
-  LB = c => `Google Drive sync failed: ${c.error}`,
-  RB = c => `Google Drive sync failed: ${c.error}`,
-  jB = c => `Google Drive sync failed: ${c.error}`,
-  FB = c => `Google Drive sync failed: ${c.error}`,
-  BB = c => `Google Drive sync failed: ${c.error}`,
-  OB = c => `Google Drive sync failed: ${c.error}`,
-  qB = c => `Google Drive sync failed: ${c.error}`,
-  NB = (c, i = {}) => {
+  M7 = c => `Google Drive sync failed: ${c.error}`,
+  E7 = c => `Google Drive sync failed: ${c.error}`,
+  z7 = c => `Google Drive sync failed: ${c.error}`,
+  A7 = c => `Google Drive sync failed: ${c.error}`,
+  D7 = c => `Google Drive sync failed: ${c.error}`,
+  L7 = c => `Google Drive sync failed: ${c.error}`,
+  R7 = c => `Google Drive sync failed: ${c.error}`,
+  j7 = c => `Google Drive sync failed: ${c.error}`,
+  F7 = c => `Google Drive sync failed: ${c.error}`,
+  B7 = c => `Google Drive sync failed: ${c.error}`,
+  O7 = c => `Google Drive sync failed: ${c.error}`,
+  q7 = c => `Google Drive sync failed: ${c.error}`,
+  N7 = (c, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? MB(c) : e === "pt" ? EB(c) : e === "ch" ? zB(c) : e === "de" ? AB(c) : e === "es" ? DB(c) : e === "fr" ? LB(c) : e === "it" ? RB(c) : e === "jp" ? jB(c) : e === "pl" ? FB(c) : e === "ru" ? BB(c) : e === "uk" ? OB(c) : qB(c)
+    return e === "en" ? M7(c) : e === "pt" ? E7(c) : e === "ch" ? z7(c) : e === "de" ? A7(c) : e === "es" ? D7(c) : e === "fr" ? L7(c) : e === "it" ? R7(c) : e === "jp" ? j7(c) : e === "pl" ? F7(c) : e === "ru" ? B7(c) : e === "uk" ? O7(c) : q7(c)
   },
-  UB = c => `Last sync: ${c.time}`,
-  VB = c => `Last sync: ${c.time}`,
-  GB = c => `Last sync: ${c.time}`,
-  ZB = c => `Last sync: ${c.time}`,
-  WB = c => `Last sync: ${c.time}`,
-  HB = c => `Last sync: ${c.time}`,
-  YB = c => `Last sync: ${c.time}`,
-  XB = c => `Last sync: ${c.time}`,
-  KB = c => `Last sync: ${c.time}`,
-  QB = c => `Last sync: ${c.time}`,
-  JB = c => `Last sync: ${c.time}`,
-  $B = c => `Last sync: ${c.time}`,
-  e7 = (c, i = {}) => {
+  U7 = c => `Last sync: ${c.time}`,
+  V7 = c => `Last sync: ${c.time}`,
+  G7 = c => `Last sync: ${c.time}`,
+  Z7 = c => `Last sync: ${c.time}`,
+  W7 = c => `Last sync: ${c.time}`,
+  H7 = c => `Last sync: ${c.time}`,
+  Y7 = c => `Last sync: ${c.time}`,
+  X7 = c => `Last sync: ${c.time}`,
+  K7 = c => `Last sync: ${c.time}`,
+  Q7 = c => `Last sync: ${c.time}`,
+  J7 = c => `Last sync: ${c.time}`,
+  $7 = c => `Last sync: ${c.time}`,
+  eB = (c, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? UB(c) : e === "pt" ? VB(c) : e === "ch" ? GB(c) : e === "de" ? ZB(c) : e === "es" ? WB(c) : e === "fr" ? HB(c) : e === "it" ? YB(c) : e === "jp" ? XB(c) : e === "pl" ? KB(c) : e === "ru" ? QB(c) : e === "uk" ? JB(c) : $B(c)
+    return e === "en" ? U7(c) : e === "pt" ? V7(c) : e === "ch" ? G7(c) : e === "de" ? Z7(c) : e === "es" ? W7(c) : e === "fr" ? H7(c) : e === "it" ? Y7(c) : e === "jp" ? X7(c) : e === "pl" ? K7(c) : e === "ru" ? Q7(c) : e === "uk" ? J7(c) : $7(c)
   },
-  t7 = () => "Never synced",
-  r7 = () => "Never synced",
-  n7 = () => "Never synced",
-  o7 = () => "Never synced",
-  i7 = () => "Never synced",
-  a7 = () => "Never synced",
-  s7 = () => "Never synced",
-  l7 = () => "Never synced",
-  c7 = () => "Never synced",
-  u7 = () => "Never synced",
-  d7 = () => "Never synced",
-  p7 = () => "Never synced",
-  h7 = (c = {}, i = {}) => {
+  tB = () => "Never synced",
+  rB = () => "Never synced",
+  nB = () => "Never synced",
+  oB = () => "Never synced",
+  iB = () => "Never synced",
+  aB = () => "Never synced",
+  sB = () => "Never synced",
+  lB = () => "Never synced",
+  cB = () => "Never synced",
+  uB = () => "Never synced",
+  dB = () => "Never synced",
+  pB = () => "Never synced",
+  hB = (c = {}, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? t7() : e === "pt" ? r7() : e === "ch" ? n7() : e === "de" ? o7() : e === "es" ? i7() : e === "fr" ? a7() : e === "it" ? s7() : e === "jp" ? l7() : e === "pl" ? c7() : e === "ru" ? u7() : e === "uk" ? d7() : p7()
+    return e === "en" ? tB() : e === "pt" ? rB() : e === "ch" ? nB() : e === "de" ? oB() : e === "es" ? iB() : e === "fr" ? aB() : e === "it" ? sB() : e === "jp" ? lB() : e === "pl" ? cB() : e === "ru" ? uB() : e === "uk" ? dB() : pB()
   },
-  _7 = c => `${c.count} pending changes`,
-  f7 = c => `${c.count} pending changes`,
-  m7 = c => `${c.count} pending changes`,
-  g7 = c => `${c.count} pending changes`,
-  v7 = c => `${c.count} pending changes`,
-  y7 = c => `${c.count} pending changes`,
-  b7 = c => `${c.count} pending changes`,
-  x7 = c => `${c.count} pending changes`,
-  w7 = c => `${c.count} pending changes`,
-  k7 = c => `${c.count} pending changes`,
-  T7 = c => `${c.count} pending changes`,
-  S7 = c => `${c.count} pending changes`,
-  P7 = (c, i = {}) => {
+  _B = c => `${c.count} pending changes`,
+  fB = c => `${c.count} pending changes`,
+  mB = c => `${c.count} pending changes`,
+  gB = c => `${c.count} pending changes`,
+  vB = c => `${c.count} pending changes`,
+  yB = c => `${c.count} pending changes`,
+  bB = c => `${c.count} pending changes`,
+  xB = c => `${c.count} pending changes`,
+  wB = c => `${c.count} pending changes`,
+  kB = c => `${c.count} pending changes`,
+  TB = c => `${c.count} pending changes`,
+  SB = c => `${c.count} pending changes`,
+  PB = (c, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? _7(c) : e === "pt" ? f7(c) : e === "ch" ? m7(c) : e === "de" ? g7(c) : e === "es" ? v7(c) : e === "fr" ? y7(c) : e === "it" ? b7(c) : e === "jp" ? x7(c) : e === "pl" ? w7(c) : e === "ru" ? k7(c) : e === "uk" ? T7(c) : S7(c)
+    return e === "en" ? _B(c) : e === "pt" ? fB(c) : e === "ch" ? mB(c) : e === "de" ? gB(c) : e === "es" ? vB(c) : e === "fr" ? yB(c) : e === "it" ? bB(c) : e === "jp" ? xB(c) : e === "pl" ? wB(c) : e === "ru" ? kB(c) : e === "uk" ? TB(c) : SB(c)
   },
-  C7 = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
-  I7 = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
-  M7 = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
-  E7 = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
-  z7 = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
-  A7 = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
-  D7 = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
-  L7 = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
-  R7 = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
-  j7 = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
-  F7 = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
-  B7 = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
-  O7 = (c = {}, i = {}) => {
+  CB = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
+  IB = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
+  MB = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
+  EB = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
+  zB = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
+  AB = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
+  DB = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
+  LB = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
+  RB = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
+  jB = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
+  FB = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
+  BB = () => "Your browser blocked the Google sign-in window. Allow pop-ups for this site (look for the pop-up blocked icon in the address bar) and try again.",
+  OB = (c = {}, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? C7() : e === "pt" ? I7() : e === "ch" ? M7() : e === "de" ? E7() : e === "es" ? z7() : e === "fr" ? A7() : e === "it" ? D7() : e === "jp" ? L7() : e === "pl" ? R7() : e === "ru" ? j7() : e === "uk" ? F7() : B7()
+    return e === "en" ? CB() : e === "pt" ? IB() : e === "ch" ? MB() : e === "de" ? EB() : e === "es" ? zB() : e === "fr" ? AB() : e === "it" ? DB() : e === "jp" ? LB() : e === "pl" ? RB() : e === "ru" ? jB() : e === "uk" ? FB() : BB()
   },
-  q7 = () => "Syncing...",
-  N7 = () => "Syncing...",
-  U7 = () => "Syncing...",
-  V7 = () => "Syncing...",
-  G7 = () => "Syncing...",
-  Z7 = () => "Syncing...",
-  W7 = () => "Syncing...",
-  H7 = () => "Syncing...",
-  Y7 = () => "Syncing...",
-  X7 = () => "Syncing...",
-  K7 = () => "Syncing...",
-  Q7 = () => "Syncing...",
-  J7 = (c = {}, i = {}) => {
+  qB = () => "Syncing...",
+  NB = () => "Syncing...",
+  UB = () => "Syncing...",
+  VB = () => "Syncing...",
+  GB = () => "Syncing...",
+  ZB = () => "Syncing...",
+  WB = () => "Syncing...",
+  HB = () => "Syncing...",
+  YB = () => "Syncing...",
+  XB = () => "Syncing...",
+  KB = () => "Syncing...",
+  QB = () => "Syncing...",
+  JB = (c = {}, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? q7() : e === "pt" ? N7() : e === "ch" ? U7() : e === "de" ? V7() : e === "es" ? G7() : e === "fr" ? Z7() : e === "it" ? W7() : e === "jp" ? H7() : e === "pl" ? Y7() : e === "ru" ? X7() : e === "uk" ? K7() : Q7()
+    return e === "en" ? qB() : e === "pt" ? NB() : e === "ch" ? UB() : e === "de" ? VB() : e === "es" ? GB() : e === "fr" ? ZB() : e === "it" ? WB() : e === "jp" ? HB() : e === "pl" ? YB() : e === "ru" ? XB() : e === "uk" ? KB() : QB()
   },
-  $7 = () => "Edit",
+  $B = () => "Edit",
   eO = () => "Editar",
   tO = () => "编辑",
   rO = () => "Bearbeiten",
@@ -1557,7 +1557,7 @@ const V4 = () => "OR",
   uO = () => "Chỉnh sửa",
   C5 = (c = {}, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? $7() : e === "pt" ? eO() : e === "ch" ? tO() : e === "de" ? rO() : e === "es" ? nO() : e === "fr" ? oO() : e === "it" ? iO() : e === "jp" ? aO() : e === "pl" ? sO() : e === "ru" ? lO() : e === "uk" ? cO() : uO()
+    return e === "en" ? $B() : e === "pt" ? eO() : e === "ch" ? tO() : e === "de" ? rO() : e === "es" ? nO() : e === "fr" ? oO() : e === "it" ? iO() : e === "jp" ? aO() : e === "pl" ? sO() : e === "ru" ? lO() : e === "uk" ? cO() : uO()
   },
   dO = () => "Equip",
   pO = () => "Equipar",
@@ -5765,144 +5765,144 @@ Nếu tăng thêm, bản xem trước có thể lỗi, chế độ xây dựng c
   QFe = () => "お使いのブラウザではService Workerがサポートされていないか無効になっています。一部の機能が正しく動作しない可能性があります。",
   JFe = () => "Service Workers nie są obsługiwane lub są wyłączone w Twojej przeglądarce. Niektóre funkcje mogą nie działać poprawnie.",
   $Fe = () => "Service Workers не поддерживаются или отключены в вашем браузере. Некоторые функции могут работать некорректно.",
-  eBe = () => "Service Workers не підтримуються або вимкнені у вашому браузері. Деякі функції можуть працювати некоректно.",
-  tBe = () => "Trình duyệt của bạn không hỗ trợ/bật Service Workers. Một số tính năng có thể không hoạt động đúng.",
-  rBe = (c = {}, i = {}) => {
+  e7e = () => "Service Workers не підтримуються або вимкнені у вашому браузері. Деякі функції можуть працювати некоректно.",
+  t7e = () => "Trình duyệt của bạn không hỗ trợ/bật Service Workers. Một số tính năng có thể không hoạt động đúng.",
+  r7e = (c = {}, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? GFe() : e === "pt" ? ZFe() : e === "ch" ? WFe() : e === "de" ? HFe() : e === "es" ? YFe() : e === "fr" ? XFe() : e === "it" ? KFe() : e === "jp" ? QFe() : e === "pl" ? JFe() : e === "ru" ? $Fe() : e === "uk" ? eBe() : tBe()
+    return e === "en" ? GFe() : e === "pt" ? ZFe() : e === "ch" ? WFe() : e === "de" ? HFe() : e === "es" ? YFe() : e === "fr" ? XFe() : e === "it" ? KFe() : e === "jp" ? QFe() : e === "pl" ? JFe() : e === "ru" ? $Fe() : e === "uk" ? e7e() : t7e()
   },
-  nBe = () => "Temporary restricted",
-  oBe = () => "Restrito temporariamente",
-  iBe = () => "暂时受限",
-  aBe = () => "Vorübergehend eingeschränkt",
-  sBe = () => "Restringido temporalmente",
-  lBe = () => "Temporairement restreint",
-  cBe = () => "Temporaneamente limitato",
-  uBe = () => "一時制限",
-  dBe = () => "Tymczasowo ograniczony",
-  pBe = () => "Временно ограничено",
-  hBe = () => "Тимчасово обмежено",
-  _Be = () => "Tạm thời bị hạn chế",
+  n7e = () => "Temporary restricted",
+  o7e = () => "Restrito temporariamente",
+  i7e = () => "暂时受限",
+  a7e = () => "Vorübergehend eingeschränkt",
+  s7e = () => "Restringido temporalmente",
+  l7e = () => "Temporairement restreint",
+  c7e = () => "Temporaneamente limitato",
+  u7e = () => "一時制限",
+  d7e = () => "Tymczasowo ograniczony",
+  p7e = () => "Временно ограничено",
+  h7e = () => "Тимчасово обмежено",
+  _7e = () => "Tạm thời bị hạn chế",
   oy = (c = {}, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? nBe() : e === "pt" ? oBe() : e === "ch" ? iBe() : e === "de" ? aBe() : e === "es" ? sBe() : e === "fr" ? lBe() : e === "it" ? cBe() : e === "jp" ? uBe() : e === "pl" ? dBe() : e === "ru" ? pBe() : e === "uk" ? hBe() : _Be()
+    return e === "en" ? n7e() : e === "pt" ? o7e() : e === "ch" ? i7e() : e === "de" ? a7e() : e === "es" ? s7e() : e === "fr" ? l7e() : e === "it" ? c7e() : e === "jp" ? u7e() : e === "pl" ? d7e() : e === "ru" ? p7e() : e === "uk" ? h7e() : _7e()
   },
-  fBe = () => "Terms",
-  mBe = () => "Termos",
-  gBe = () => "条款",
-  vBe = () => "Bedingungen",
-  yBe = () => "Términos",
-  bBe = () => "Conditions",
-  xBe = () => "Termini",
-  wBe = () => "利用規約",
-  kBe = () => "Warunki",
-  TBe = () => "Условия",
-  SBe = () => "Умови",
-  PBe = () => "Điều khoản",
-  CBe = (c = {}, i = {}) => {
+  f7e = () => "Terms",
+  m7e = () => "Termos",
+  g7e = () => "条款",
+  v7e = () => "Bedingungen",
+  y7e = () => "Términos",
+  b7e = () => "Conditions",
+  x7e = () => "Termini",
+  w7e = () => "利用規約",
+  k7e = () => "Warunki",
+  T7e = () => "Условия",
+  S7e = () => "Умови",
+  P7e = () => "Điều khoản",
+  C7e = (c = {}, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? fBe() : e === "pt" ? mBe() : e === "ch" ? gBe() : e === "de" ? vBe() : e === "es" ? yBe() : e === "fr" ? bBe() : e === "it" ? xBe() : e === "jp" ? wBe() : e === "pl" ? kBe() : e === "ru" ? TBe() : e === "uk" ? SBe() : PBe()
+    return e === "en" ? f7e() : e === "pt" ? m7e() : e === "ch" ? g7e() : e === "de" ? v7e() : e === "es" ? y7e() : e === "fr" ? b7e() : e === "it" ? x7e() : e === "jp" ? w7e() : e === "pl" ? k7e() : e === "ru" ? T7e() : e === "uk" ? S7e() : P7e()
   },
-  IBe = () => "Text Styles",
-  MBe = () => "Estilos de Texto",
-  EBe = () => "文本样式",
-  zBe = () => "Textstile",
-  ABe = () => "Estilos de texto",
-  DBe = () => "Styles de texte",
-  LBe = () => "Stili di testo",
-  RBe = () => "テキストスタイル",
-  jBe = () => "Style tekstu",
-  FBe = () => "Стили текста",
-  BBe = () => "Текстові стилі",
-  OBe = () => "Kiểu văn bản",
+  I7e = () => "Text Styles",
+  M7e = () => "Estilos de Texto",
+  E7e = () => "文本样式",
+  z7e = () => "Textstile",
+  A7e = () => "Estilos de texto",
+  D7e = () => "Styles de texte",
+  L7e = () => "Stili di testo",
+  R7e = () => "テキストスタイル",
+  j7e = () => "Style tekstu",
+  F7e = () => "Стили текста",
+  B7e = () => "Текстові стилі",
+  O7e = () => "Kiểu văn bản",
   jd = (c = {}, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? IBe() : e === "pt" ? MBe() : e === "ch" ? EBe() : e === "de" ? zBe() : e === "es" ? ABe() : e === "fr" ? DBe() : e === "it" ? LBe() : e === "jp" ? RBe() : e === "pl" ? jBe() : e === "ru" ? FBe() : e === "uk" ? BBe() : OBe()
+    return e === "en" ? I7e() : e === "pt" ? M7e() : e === "ch" ? E7e() : e === "de" ? z7e() : e === "es" ? A7e() : e === "fr" ? D7e() : e === "it" ? L7e() : e === "jp" ? R7e() : e === "pl" ? j7e() : e === "ru" ? F7e() : e === "uk" ? B7e() : O7e()
   },
-  qBe = () => "This action is irreversible, do you want to proceed?",
-  NBe = () => "Esta ação é irreversível, você deseja prosseguir?",
-  UBe = () => "此操作不可逆，是否继续？",
-  VBe = () => "Diese Aktion ist irreversibel. Möchtest du fortfahren?",
-  GBe = () => "Esta acción es irreversible, ¿quieres continuar?",
-  ZBe = () => "Cette action est irréversible, souhaitez-vous continuer ?",
-  WBe = () => "Questa azione è irreversibile, vuoi procedere?",
-  HBe = () => "この操作は元に戻せません。実行してもよろしいですか？",
-  YBe = () => "Ta akcja jest nieodwracalna. Czy chcesz kontynuować?",
-  XBe = () => "Это действие необратимо. Продолжить?",
-  KBe = () => "Цю дію неможливо скасувати. Продовжити?",
-  QBe = () => "Hành động này không thể hoàn tác, bạn có muốn tiếp tục?",
-  JBe = (c = {}, i = {}) => {
+  q7e = () => "This action is irreversible, do you want to proceed?",
+  N7e = () => "Esta ação é irreversível, você deseja prosseguir?",
+  U7e = () => "此操作不可逆，是否继续？",
+  V7e = () => "Diese Aktion ist irreversibel. Möchtest du fortfahren?",
+  G7e = () => "Esta acción es irreversible, ¿quieres continuar?",
+  Z7e = () => "Cette action est irréversible, souhaitez-vous continuer ?",
+  W7e = () => "Questa azione è irreversibile, vuoi procedere?",
+  H7e = () => "この操作は元に戻せません。実行してもよろしいですか？",
+  Y7e = () => "Ta akcja jest nieodwracalna. Czy chcesz kontynuować?",
+  X7e = () => "Это действие необратимо. Продолжить?",
+  K7e = () => "Цю дію неможливо скасувати. Продовжити?",
+  Q7e = () => "Hành động này không thể hoàn tác, bạn có muốn tiếp tục?",
+  J7e = (c = {}, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? qBe() : e === "pt" ? NBe() : e === "ch" ? UBe() : e === "de" ? VBe() : e === "es" ? GBe() : e === "fr" ? ZBe() : e === "it" ? WBe() : e === "jp" ? HBe() : e === "pl" ? YBe() : e === "ru" ? XBe() : e === "uk" ? KBe() : QBe()
+    return e === "en" ? q7e() : e === "pt" ? N7e() : e === "ch" ? U7e() : e === "de" ? V7e() : e === "es" ? G7e() : e === "fr" ? Z7e() : e === "it" ? W7e() : e === "jp" ? H7e() : e === "pl" ? Y7e() : e === "ru" ? X7e() : e === "uk" ? K7e() : Q7e()
   },
-  $Be = () => "this week",
-  e7e = () => "nesta semana",
-  t7e = () => "本周",
-  r7e = () => "diese Woche",
-  n7e = () => "esta semana",
-  o7e = () => "cette semaine",
-  i7e = () => "questa settimana",
-  a7e = () => "今週",
-  s7e = () => "w tym tygodniu",
-  l7e = () => "на этой неделе",
-  c7e = () => "цього тижня",
-  u7e = () => "tuần này",
+  $7e = () => "this week",
+  eBe = () => "nesta semana",
+  tBe = () => "本周",
+  rBe = () => "diese Woche",
+  nBe = () => "esta semana",
+  oBe = () => "cette semaine",
+  iBe = () => "questa settimana",
+  aBe = () => "今週",
+  sBe = () => "w tym tygodniu",
+  lBe = () => "на этой неделе",
+  cBe = () => "цього тижня",
+  uBe = () => "tuần này",
   Jy = (c = {}, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? $Be() : e === "pt" ? e7e() : e === "ch" ? t7e() : e === "de" ? r7e() : e === "es" ? n7e() : e === "fr" ? o7e() : e === "it" ? i7e() : e === "jp" ? a7e() : e === "pl" ? s7e() : e === "ru" ? l7e() : e === "uk" ? c7e() : u7e()
+    return e === "en" ? $7e() : e === "pt" ? eBe() : e === "ch" ? tBe() : e === "de" ? rBe() : e === "es" ? nBe() : e === "fr" ? oBe() : e === "it" ? iBe() : e === "jp" ? aBe() : e === "pl" ? sBe() : e === "ru" ? lBe() : e === "uk" ? cBe() : uBe()
   },
-  d7e = () => "This will permanently delete your account and all associated data. This action cannot be undone.",
-  p7e = () => "Isso excluirá permanentemente sua conta e todos os dados associados. Esta ação não pode ser desfeita.",
-  h7e = () => "这将永久删除你的账号及所有相关数据，此操作无法撤销。",
-  _7e = () => "Dies wird dein Konto und alle dazugehörigen Daten dauerhaft löschen. Diese Aktion kann nicht rückgängig gemacht werden.",
-  f7e = () => "Esto eliminará permanentemente tu cuenta y todos los datos asociados. Esta acción no se puede deshacer.",
-  m7e = () => "Cela supprimera définitivement votre compte et toutes les données associées. Cette action est irréversible.",
-  g7e = () => "Questa azione eliminerà definitivamente il tuo account e tutti i dati associati. Non potrà essere annullata.",
-  v7e = () => "この操作により、アカウントと関連するすべてのデータが完全に削除されます。元に戻すことはできません。",
-  y7e = () => "To trwale usunie Twoje konto i wszystkie powiązane dane. Tej akcji nie można cofnąć.",
-  b7e = () => "Это действие навсегда удалит ваш аккаунт и все связанные данные. Его нельзя отменить.",
-  x7e = () => "Це назавжди видалить ваш акаунт і всі повʼязані дані. Цю дію не можна буде скасувати.",
-  w7e = () => "Việc này sẽ xóa vĩnh viễn tài khoản và tất cả dữ liệu liên quan. Hành động này không thể hoàn tác.",
-  k7e = (c = {}, i = {}) => {
+  dBe = () => "This will permanently delete your account and all associated data. This action cannot be undone.",
+  pBe = () => "Isso excluirá permanentemente sua conta e todos os dados associados. Esta ação não pode ser desfeita.",
+  hBe = () => "这将永久删除你的账号及所有相关数据，此操作无法撤销。",
+  _Be = () => "Dies wird dein Konto und alle dazugehörigen Daten dauerhaft löschen. Diese Aktion kann nicht rückgängig gemacht werden.",
+  fBe = () => "Esto eliminará permanentemente tu cuenta y todos los datos asociados. Esta acción no se puede deshacer.",
+  mBe = () => "Cela supprimera définitivement votre compte et toutes les données associées. Cette action est irréversible.",
+  gBe = () => "Questa azione eliminerà definitivamente il tuo account e tutti i dati associati. Non potrà essere annullata.",
+  vBe = () => "この操作により、アカウントと関連するすべてのデータが完全に削除されます。元に戻すことはできません。",
+  yBe = () => "To trwale usunie Twoje konto i wszystkie powiązane dane. Tej akcji nie można cofnąć.",
+  bBe = () => "Это действие навсегда удалит ваш аккаунт и все связанные данные. Его нельзя отменить.",
+  xBe = () => "Це назавжди видалить ваш акаунт і всі повʼязані дані. Цю дію не можна буде скасувати.",
+  wBe = () => "Việc này sẽ xóa vĩnh viễn tài khoản và tất cả dữ liệu liên quan. Hành động này không thể hoàn tác.",
+  kBe = (c = {}, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? d7e() : e === "pt" ? p7e() : e === "ch" ? h7e() : e === "de" ? _7e() : e === "es" ? f7e() : e === "fr" ? m7e() : e === "it" ? g7e() : e === "jp" ? v7e() : e === "pl" ? y7e() : e === "ru" ? b7e() : e === "uk" ? x7e() : w7e()
+    return e === "en" ? dBe() : e === "pt" ? pBe() : e === "ch" ? hBe() : e === "de" ? _Be() : e === "es" ? fBe() : e === "fr" ? mBe() : e === "it" ? gBe() : e === "jp" ? vBe() : e === "pl" ? yBe() : e === "ru" ? bBe() : e === "uk" ? xBe() : wBe()
   },
-  T7e = () => "Tickets",
-  S7e = () => "Tickets",
-  P7e = () => "工单",
-  C7e = () => "Tickets",
-  I7e = () => "Tickets",
-  M7e = () => "Tickets",
-  E7e = () => "Ticket",
-  z7e = () => "チケット",
-  A7e = () => "Tickety",
-  D7e = () => "Тикеты",
-  L7e = () => "Тікети",
-  R7e = () => "Phiếu hỗ trợ",
-  j7e = (c = {}, i = {}) => {
+  TBe = () => "Tickets",
+  SBe = () => "Tickets",
+  PBe = () => "工单",
+  CBe = () => "Tickets",
+  IBe = () => "Tickets",
+  MBe = () => "Tickets",
+  EBe = () => "Ticket",
+  zBe = () => "チケット",
+  ABe = () => "Tickety",
+  DBe = () => "Тикеты",
+  LBe = () => "Тікети",
+  RBe = () => "Phiếu hỗ trợ",
+  jBe = (c = {}, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? T7e() : e === "pt" ? S7e() : e === "ch" ? P7e() : e === "de" ? C7e() : e === "es" ? I7e() : e === "fr" ? M7e() : e === "it" ? E7e() : e === "jp" ? z7e() : e === "pl" ? A7e() : e === "ru" ? D7e() : e === "uk" ? L7e() : R7e()
+    return e === "en" ? TBe() : e === "pt" ? SBe() : e === "ch" ? PBe() : e === "de" ? CBe() : e === "es" ? IBe() : e === "fr" ? MBe() : e === "it" ? EBe() : e === "jp" ? zBe() : e === "pl" ? ABe() : e === "ru" ? DBe() : e === "uk" ? LBe() : RBe()
   },
-  F7e = () => "Tiktok",
-  B7e = () => "Tiktok",
-  O7e = () => "抖音",
-  q7e = () => "Tiktok",
-  N7e = () => "TikTok",
-  U7e = () => "Tiktok",
-  V7e = () => "Tiktok",
-  G7e = () => "ティックトック",
-  Z7e = () => "Tiktok",
-  W7e = () => "ТикТок",
-  H7e = () => "TikTok",
-  Y7e = () => "Tiktok",
-  X7e = (c = {}, i = {}) => {
+  FBe = () => "Tiktok",
+  BBe = () => "Tiktok",
+  OBe = () => "抖音",
+  qBe = () => "Tiktok",
+  NBe = () => "TikTok",
+  UBe = () => "Tiktok",
+  VBe = () => "Tiktok",
+  GBe = () => "ティックトック",
+  ZBe = () => "Tiktok",
+  WBe = () => "ТикТок",
+  HBe = () => "TikTok",
+  YBe = () => "Tiktok",
+  XBe = (c = {}, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? F7e() : e === "pt" ? B7e() : e === "ch" ? O7e() : e === "de" ? q7e() : e === "es" ? N7e() : e === "fr" ? U7e() : e === "it" ? V7e() : e === "jp" ? G7e() : e === "pl" ? Z7e() : e === "ru" ? W7e() : e === "uk" ? H7e() : Y7e()
+    return e === "en" ? FBe() : e === "pt" ? BBe() : e === "ch" ? OBe() : e === "de" ? qBe() : e === "es" ? NBe() : e === "fr" ? UBe() : e === "it" ? VBe() : e === "jp" ? GBe() : e === "pl" ? ZBe() : e === "ru" ? WBe() : e === "uk" ? HBe() : YBe()
   },
-  K7e = () => "Timeout appeal",
-  Q7e = () => "Revisão de suspensão",
-  J7e = () => "禁言申诉",
-  $7e = () => "Timeout-Einspruch",
+  KBe = () => "Timeout appeal",
+  QBe = () => "Revisão de suspensão",
+  JBe = () => "禁言申诉",
+  $Be = () => "Timeout-Einspruch",
   eOe = () => "Apelación de suspensión",
   tOe = () => "Recours de suspension",
   rOe = () => "Ricorso contro la sospensione",
@@ -5913,7 +5913,7 @@ Nếu tăng thêm, bản xem trước có thể lỗi, chế độ xây dựng c
   sOe = () => "Kháng cáo tạm khóa",
   lOe = (c = {}, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? K7e() : e === "pt" ? Q7e() : e === "ch" ? J7e() : e === "de" ? $7e() : e === "es" ? eOe() : e === "fr" ? tOe() : e === "it" ? rOe() : e === "jp" ? nOe() : e === "pl" ? oOe() : e === "ru" ? iOe() : e === "uk" ? aOe() : sOe()
+    return e === "en" ? KBe() : e === "pt" ? QBe() : e === "ch" ? JBe() : e === "de" ? $Be() : e === "es" ? eOe() : e === "fr" ? tOe() : e === "it" ? rOe() : e === "jp" ? nOe() : e === "pl" ? oOe() : e === "ru" ? iOe() : e === "uk" ? aOe() : sOe()
   },
   cOe = () => "to paint.",
   uOe = () => "para pintar",
@@ -6619,21 +6619,21 @@ Nếu tăng thêm, bản xem trước có thể lỗi, chế độ xây dựng c
     const e = i.locale ?? le();
     return e === "en" ? wYe() : e === "pt" ? kYe() : e === "ch" ? TYe() : e === "de" ? SYe() : e === "es" ? PYe() : e === "fr" ? CYe() : e === "it" ? IYe() : e === "jp" ? MYe() : e === "pl" ? EYe() : e === "ru" ? zYe() : e === "uk" ? AYe() : DYe()
   },
-  wc = () => "Exchange",
-  RYe = wc,
-  jYe = wc,
-  FYe = wc,
-  BYe = wc,
-  OYe = wc,
-  qYe = wc,
-  NYe = wc,
-  UYe = wc,
-  VYe = wc,
-  GYe = wc,
-  ZYe = wc,
+  xc = () => "Exchange",
+  RYe = xc,
+  jYe = xc,
+  FYe = xc,
+  BYe = xc,
+  OYe = xc,
+  qYe = xc,
+  NYe = xc,
+  UYe = xc,
+  VYe = xc,
+  GYe = xc,
+  ZYe = xc,
   Y1 = (c = {}, i = {}) => {
     const e = i.locale ?? le();
-    return e === "en" ? wc() : e === "pt" ? RYe() : e === "ch" ? jYe() : e === "de" ? FYe() : e === "es" ? BYe() : e === "fr" ? OYe() : e === "it" ? qYe() : e === "jp" ? NYe() : e === "pl" ? UYe() : e === "ru" ? VYe() : e === "uk" ? GYe() : ZYe()
+    return e === "en" ? xc() : e === "pt" ? RYe() : e === "ch" ? jYe() : e === "de" ? FYe() : e === "es" ? BYe() : e === "fr" ? OYe() : e === "it" ? qYe() : e === "jp" ? NYe() : e === "pl" ? UYe() : e === "ru" ? VYe() : e === "uk" ? GYe() : ZYe()
   },
   WYe = () => "Daily mission",
   HYe = () => "Missão diária",
@@ -15033,7 +15033,7 @@ function c_t() {
             return !0
           }
         }
-        let _c = class {
+        let hc = class {
           constructor(o = [], t = (n, l) => n < l ? -1 : n > l ? 1 : 0) {
             if (this.data = o, this.length = this.data.length, this.compare = t, this.length > 0)
               for (let n = (this.length >> 1) - 1; n >= 0; n--) this._down(n)
@@ -15091,15 +15091,15 @@ function c_t() {
             const h = o[t];
             let f = n,
               m = l;
-            for (kc(o, n, t), u(o[l], h) > 0 && kc(o, n, l); f < m;) {
-              for (kc(o, f, m), f++, m--; u(o[f], h) < 0;) f++;
+            for (wc(o, n, t), u(o[l], h) > 0 && wc(o, n, l); f < m;) {
+              for (wc(o, f, m), f++, m--; u(o[f], h) < 0;) f++;
               for (; u(o[m], h) > 0;) m--
             }
-            u(o[n], h) === 0 ? kc(o, n, m) : (m++, kc(o, m, l)), m <= t && (n = m + 1), t <= m && (l = m - 1)
+            u(o[n], h) === 0 ? wc(o, n, m) : (m++, wc(o, m, l)), m <= t && (n = m + 1), t <= m && (l = m - 1)
           }
         }
 
-        function kc(o, t, n) {
+        function wc(o, t, n) {
           const l = o[t];
           o[t] = o[n], o[n] = l
         }
@@ -15108,24 +15108,24 @@ function c_t() {
           return o < t ? -1 : o > t ? 1 : 0
         }
 
-        function Tc(o, t) {
+        function kc(o, t) {
           if (o.length <= 1) return [o];
           const n = [];
           let l, u;
           for (const h of o) {
-            const f = Pc(h);
+            const f = Sc(h);
             f !== 0 && (h.area = Math.abs(f), u === void 0 && (u = f < 0), u === f < 0 ? (l && n.push(l), l = [h]) : l.push(h))
           }
           if (l && n.push(l), t > 1)
-            for (let h = 0; h < n.length; h++) n[h].length <= t || (oc(n[h], t, 1, n[h].length - 1, Sc), n[h] = n[h].slice(0, t));
+            for (let h = 0; h < n.length; h++) n[h].length <= t || (oc(n[h], t, 1, n[h].length - 1, Tc), n[h] = n[h].slice(0, t));
           return n
         }
 
-        function Sc(o, t) {
+        function Tc(o, t) {
           return t.area - o.area
         }
 
-        function Pc(o) {
+        function Sc(o) {
           let t = 0;
           for (let n, l, u = 0, h = o.length, f = h - 1; u < h; f = u++) n = o[u], l = o[f], t += (l.x - n.x) * (n.y + l.y);
           return t
@@ -15340,7 +15340,7 @@ function c_t() {
         function ko(o, t, n, l, u = 1 / 0) {
           let h = Math.min(l.distance(o[0], n[0][0]), u);
           if (h === 0) return h;
-          const f = new _c([
+          const f = new hc([
               [0, [0, o.length - 1],
                 [0, 0]
               ]
@@ -15373,7 +15373,7 @@ function c_t() {
         function Io(o, t, n, l, u, h = 1 / 0) {
           let f = Math.min(h, u.distance(o[0], n[0]));
           if (f === 0) return f;
-          const m = new _c([
+          const m = new hc([
             [0, [0, o.length - 1],
               [0, n.length - 1]
             ]
@@ -15480,7 +15480,7 @@ function c_t() {
               if (t.geometryType() === "Polygon") return (function(n, l) {
                 const u = n.geometry();
                 if (u.length === 0 || u[0].length === 0) return NaN;
-                const h = Tc(u, 0).map((w => w.map((x => x.map((P => wi([P.x, P.y], n.canonical))))))),
+                const h = kc(u, 0).map((w => w.map((x => x.map((P => wi([P.x, P.y], n.canonical))))))),
                   f = new uu(h[0][0][0][1]);
                 let m = 1 / 0;
                 for (const w of l)
@@ -17480,7 +17480,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           }
           return l
         }
-        class fc {
+        class _c {
           constructor() {
             this.first = !0
           }
@@ -17494,7 +17494,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           return /[\u02EA\u02EB\u2E80-\u2FDF\u2FF0-\u303F\u3041-\u3096\u309D-\u309F\u30A1-\u30FA\u30FD-\u30FF\u3105-\u312F\u31A0-\u4DBF\u4E00-\uA48C\uA490-\uA4C6\uF900-\uFA6D\uFA70-\uFAD9\uFE10-\uFE1F\uFE30-\uFE4F\uFF00-\uFFEF]|\uD81B[\uDFE0-\uDFFF]|[\uD81C-\uD822\uD840-\uD868\uD86A-\uD86D\uD86F-\uD872\uD874-\uD879\uD880-\uD883\uD885-\uD88C][\uDC00-\uDFFF]|\uD823[\uDC00-\uDCD5\uDCFF-\uDD1E\uDD80-\uDDF2]|\uD82B[\uDFF0-\uDFFF]|\uD82C[\uDC00-\uDEFB]|\uD83C[\uDE00-\uDEFF]|\uD869[\uDC00-\uDEDF\uDF00-\uDFFF]|\uD86E[\uDC00-\uDC1D\uDC20-\uDFFF]|\uD873[\uDC00-\uDEAD\uDEB0-\uDFFF]|\uD87A[\uDC00-\uDFE0\uDFF0-\uDFFF]|\uD87B[\uDC00-\uDE5D]|\uD87E[\uDC00-\uDE1D]|\uD884[\uDC00-\uDF4A\uDF50-\uDFFF]|\uD88D[\uDC00-\uDC79]/gim.test(String.fromCodePoint(o))
         }
 
-        function Cc(o) {
+        function Pc(o) {
           return /[\u02EA\u02EB\u1100-\u11FF\u1400-\u167F\u18B0-\u18F5\u2E80-\u2E99\u2E9B-\u2EF3\u2F00-\u2FD5\u2FF0-\u3007\u3012\u3013\u3020-\u302F\u3031-\u303F\u3041-\u3096\u309D-\u30FB\u30FD-\u30FF\u3105-\u312F\u3131-\u318E\u3190-\uA48C\uA490-\uA4C6\uA960-\uA97C\uAC00-\uD7A3\uD7B0-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFE10-\uFE1F\uFE30-\uFE48\uFE50-\uFE57\uFE5F-\uFE62\uFE67-\uFE6F\uFF00-\uFF07\uFF0A-\uFF0C\uFF0E-\uFF19\uFF1F-\uFF3A\uFF3C\uFF3E\uFF40-\uFF5A\uFFE0-\uFFE2\uFFE4-\uFFE7]|\uD802[\uDD80-\uDD9F]|\uD805[\uDD80-\uDDFF]|\uD806[\uDE00-\uDEBF]|\uD811[\uDC00-\uDE7F]|\uD81B[\uDFE0-\uDFE4\uDFF0-\uDFF6]|[\uD81C-\uD822\uD83D\uD840-\uD868\uD86A-\uD86D\uD86F-\uD872\uD874-\uD879\uD880-\uD883\uD885-\uD88C][\uDC00-\uDFFF]|\uD823[\uDC00-\uDCD5\uDCFF-\uDD1E\uDD80-\uDDF2]|\uD82B[\uDFF0-\uDFF3\uDFF5-\uDFFB\uDFFD\uDFFE]|\uD82C[\uDC00-\uDD22\uDD30-\uDEFB]|\uD833[\uDEC0-\uDFCF]|\uD834[\uDC00-\uDDFF\uDEE0-\uDF7F]|\uD836[\uDC00-\uDEAF]|\uD83C[\uDC00-\uDE00\uDF00-\uDFFF]|\uD83E[\uDD00-\uDEFF]|\uD869[\uDC00-\uDEDF\uDF00-\uDFFF]|\uD86E[\uDC00-\uDC1D\uDC20-\uDFFF]|\uD873[\uDC00-\uDEAD\uDEB0-\uDFFF]|\uD87A[\uDC00-\uDFE0\uDFF0-\uDFFF]|\uD87B[\uDC00-\uDE5D]|\uD87E[\uDC00-\uDE1D]|\uD884[\uDC00-\uDF4A\uDF50-\uDFFF]|\uD88D[\uDC00-\uDC79]/gim.test(String.fromCodePoint(o))
         }
 
@@ -17504,7 +17504,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
 
         function pu(o) {
           for (const t of o)
-            if (Cc(t.codePointAt(0))) return !0;
+            if (Pc(t.codePointAt(0))) return !0;
           return !1
         }
 
@@ -17531,7 +17531,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
         }
 
         function Ou(o) {
-          return !(Cc(o) || (t = o, /[\xA7\xA9\xAE\xB1\xBC-\xBE\xD7\xF7\u2016\u2020\u2021\u2030\u2031\u203B\u203C\u2042\u2047-\u2049\u2051\u2100-\u218F\u221E\u2234\u2235\u2300-\u2307\u230C-\u231F\u2324-\u2328\u232B\u237D-\u239A\u23BE-\u23CD\u23CF\u23D1-\u23DB\u23E2-\u2422\u2424-\u24FF\u25A0-\u2619\u2620-\u2767\u2776-\u2793\u2B12-\u2B2F\u2B50-\u2B59\u2BB8-\u2BEB\u3000-\u303F\u30A0-\u30FF\uE000-\uF8FF\uFE30-\uFE6F\uFF00-\uFFEF\uFFFC\uFFFD]|[\uDB80-\uDBFF][\uDC00-\uDFFF]/gim.test(String.fromCodePoint(t))));
+          return !(Pc(o) || (t = o, /[\xA7\xA9\xAE\xB1\xBC-\xBE\xD7\xF7\u2016\u2020\u2021\u2030\u2031\u203B\u203C\u2042\u2047-\u2049\u2051\u2100-\u218F\u221E\u2234\u2235\u2300-\u2307\u230C-\u231F\u2324-\u2328\u232B\u237D-\u239A\u23BE-\u23CD\u23CF\u23D1-\u23DB\u23E2-\u2422\u2424-\u24FF\u25A0-\u2619\u2620-\u2767\u2776-\u2793\u2B12-\u2B2F\u2B50-\u2B59\u2BB8-\u2BEB\u3000-\u303F\u30A0-\u30FF\uE000-\uF8FF\uFE30-\uFE6F\uFF00-\uFFEF\uFFFC\uFFFD]|[\uDB80-\uDBFF][\uDC00-\uDFFF]/gim.test(String.fromCodePoint(t))));
           var t
         }
         const _d = pd(["Adlm", "Arab", "Armi", "Avst", "Chrs", "Cprt", "Egyp", "Elym", "Gara", "Hatr", "Hebr", "Hung", "Khar", "Lydi", "Mand", "Mani", "Mend", "Merc", "Mero", "Narb", "Nbat", "Nkoo", "Orkh", "Palm", "Phli", "Phlp", "Phnx", "Prti", "Rohg", "Samr", "Sarb", "Sogo", "Syrc", "Thaa", "Todr", "Yezi"]);
@@ -17598,7 +17598,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
         };
         class Hi {
           constructor(t, n) {
-            this.isSupportedScript = Zc, this.zoom = t, n ? (this.now = n.now || 0, this.fadeDuration = n.fadeDuration || 0, this.zoomHistory = n.zoomHistory || new fc, this.transition = n.transition || {}) : (this.now = 0, this.fadeDuration = 0, this.zoomHistory = new fc, this.transition = {})
+            this.isSupportedScript = Zc, this.zoom = t, n ? (this.now = n.now || 0, this.fadeDuration = n.fadeDuration || 0, this.zoomHistory = n.zoomHistory || new _c, this.transition = n.transition || {}) : (this.now = 0, this.fadeDuration = 0, this.zoomHistory = new _c, this.transition = {})
           }
           crossFadingFactor() {
             return this.fadeDuration === 0 ? 1 : Math.min((this.now - this.zoomHistory.lastIntegerZoomTime) / this.fadeDuration, 1)
@@ -17626,7 +17626,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             return !0
           })(o, fs.getRTLTextPluginStatus() === "loaded")
         }
-        const mc = "-transition";
+        const fc = "-transition";
         class ac {
           constructor(t, n, l) {
             this.property = t, this.value = n, this.expression = (function(u, h, f) {
@@ -17689,7 +17689,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
               const l = this.getValue(n);
               l !== void 0 && (t[n] = l);
               const u = this.getTransition(n);
-              u !== void 0 && (t[`${n}${mc}`] = u)
+              u !== void 0 && (t[`${n}${fc}`] = u)
             }
             return t
           }
@@ -17999,11 +17999,11 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             if (n == null || !this._validate(za, `layers.${this.id}.layout.${t}`, t, n, l)) return t === "visibility" ? (this.visibility = n, this._visibilityExpression.setValue(n), void this.recalculateVisibility()) : void this._unevaluatedLayout.setValue(t, n)
           }
           getPaintProperty(t) {
-            return t.endsWith(mc) ? this._transitionablePaint.getTransition(t.slice(0, -11)) : this._transitionablePaint.getValue(t)
+            return t.endsWith(fc) ? this._transitionablePaint.getTransition(t.slice(0, -11)) : this._transitionablePaint.getValue(t)
           }
           setPaintProperty(t, n, l = {}) {
             if (n != null && this._validate(qi, `layers.${this.id}.paint.${t}`, t, n, l)) return !1;
-            if (t.endsWith(mc)) return this._transitionablePaint.setTransition(t.slice(0, -11), n || void 0), !1;
+            if (t.endsWith(fc)) return this._transitionablePaint.setTransition(t.slice(0, -11), n || void 0), !1;
             {
               const u = this._transitionablePaint._values[t],
                 h = u.property.specification["property-type"] === "cross-faded-data-driven",
@@ -18910,7 +18910,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             return Ga.exports = o, Ga.exports.murmur3 = o, Ga.exports.murmur2 = t, Ga.exports
           })(),
           pl = re(Fs);
-        class gc {
+        class mc {
           constructor() {
             this.ids = [], this.positions = [], this.indexed = !1
           }
@@ -18937,13 +18937,13 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           static serialize(t, n) {
             const l = new Float64Array(t.ids),
               u = new Uint32Array(t.positions);
-            return Ic(l, u, 0, l.length - 1), n && n.push(l.buffer, u.buffer), {
+            return Cc(l, u, 0, l.length - 1), n && n.push(l.buffer, u.buffer), {
               ids: l,
               positions: u
             }
           }
           static deserialize(t) {
-            const n = new gc;
+            const n = new mc;
             return n.ids = t.ids, n.positions = t.positions, n.indexed = !0, n
           }
         }
@@ -18953,7 +18953,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           return !isNaN(t) && t <= Number.MAX_SAFE_INTEGER ? t : pl(String(o))
         }
 
-        function Ic(o, t, n, l) {
+        function Cc(o, t, n, l) {
           for (; n < l;) {
             const u = o[n + l >> 1];
             let h = n - 1,
@@ -18962,17 +18962,17 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
               do h++; while (o[h] < u);
               do f--; while (o[f] > u);
               if (h >= f) break;
-              Mc(o, h, f), Mc(t, 3 * h, 3 * f), Mc(t, 3 * h + 1, 3 * f + 1), Mc(t, 3 * h + 2, 3 * f + 2)
+              Ic(o, h, f), Ic(t, 3 * h, 3 * f), Ic(t, 3 * h + 1, 3 * f + 1), Ic(t, 3 * h + 2, 3 * f + 2)
             }
-            f - n < l - f ? (Ic(o, t, n, f), n = f + 1) : (Ic(o, t, f + 1, l), l = f)
+            f - n < l - f ? (Cc(o, t, n, f), n = f + 1) : (Cc(o, t, f + 1, l), l = f)
           }
         }
 
-        function Mc(o, t, n) {
+        function Ic(o, t, n) {
           const l = o[t];
           o[t] = o[n], o[n] = l
         }
-        kn("FeaturePositionMap", gc);
+        kn("FeaturePositionMap", mc);
         class Kl {
           constructor(t, n) {
             this.gl = t.gl, this.location = n
@@ -19004,10 +19004,10 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
         }
         const Xc = new Float32Array(16);
 
-        function Ec(o) {
+        function Mc(o) {
           return [ga(255 * o.r, 255 * o.g), ga(255 * o.b, 255 * o.a)]
         }
-        class zc {
+        class Ec {
           constructor(t, n, l) {
             this.value = t, this.uniformNames = n.map((u => `u_${u}`)), this.type = l
           }
@@ -19056,7 +19056,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           }
           _setPaintValue(t, n, l) {
             if (this.type === "color") {
-              const u = Ec(l);
+              const u = Mc(l);
               for (let h = t; h < n; h++) this.paintVertexArray.emplace(h, u[0], u[1])
             } else {
               for (let u = t; u < n; u++) this.paintVertexArray.emplace(u, l);
@@ -19093,8 +19093,8 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           }
           _setPaintValue(t, n, l, u) {
             if (this.type === "color") {
-              const h = Ec(l),
-                f = Ec(u);
+              const h = Mc(l),
+                f = Mc(u);
               for (let m = t; m < n; m++) this.paintVertexArray.emplace(m, h[0], h[1], f[0], f[1])
             } else {
               for (let h = t; h < n; h++) this.paintVertexArray.emplace(h, l, u);
@@ -19190,7 +19190,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                 P = f.property.useIntegerZoom,
                 k = f.property.specification["property-type"],
                 D = k === "cross-faded" || k === "cross-faded-data-driven";
-              if (w.kind === "constant") this.binders[h] = D ? new cs(w.value, m) : new zc(w.value, m, x), u.push(`/u_${h}`);
+              if (w.kind === "constant") this.binders[h] = D ? new cs(w.value, m) : new Ec(w.value, m, x), u.push(`/u_${h}`);
               else if (w.kind === "source" || D) {
                 const C = gf(h, x, "source");
                 this.binders[h] = D ? h === "line-dasharray" ? new ff(w, x, P, n, C, t.id) : new _f(w, x, P, n, C, t.id) : new is(w, m, x, C), u.push(`/a_${h}`)
@@ -19244,7 +19244,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             const t = [];
             for (const n in this.binders) {
               const l = this.binders[n];
-              (l instanceof zc || l instanceof cs) && t.push(...l.uniformNames.map((u => `#define HAS_UNIFORM_${u}`)))
+              (l instanceof Ec || l instanceof cs) && t.push(...l.uniformNames.map((u => `#define HAS_UNIFORM_${u}`)))
             }
             return t
           }
@@ -19265,7 +19265,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             const t = [];
             for (const n in this.binders) {
               const l = this.binders[n];
-              if (l instanceof zc || l instanceof cs || l instanceof Es)
+              if (l instanceof Ec || l instanceof cs || l instanceof Es)
                 for (const u of l.uniformNames) t.push(u)
             }
             return t
@@ -19277,7 +19277,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             const l = [];
             for (const u in this.binders) {
               const h = this.binders[u];
-              if (h instanceof zc || h instanceof cs || h instanceof Es) {
+              if (h instanceof Ec || h instanceof cs || h instanceof Es) {
                 for (const f of h.uniformNames)
                   if (n[f]) {
                     const m = h.getBinding(t, n[f], f);
@@ -19327,7 +19327,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           constructor(t, n, l = () => !0) {
             this.programConfigurations = {};
             for (const u of t) this.programConfigurations[u.id] = new mf(u, n, l);
-            this.needsUpload = !1, this._featureMap = new gc, this._bufferOffset = 0
+            this.needsUpload = !1, this._featureMap = new mc, this._bufferOffset = 0
           }
           populatePaintArrays(t, n, l, u) {
             for (const h in this.programConfigurations) this.programConfigurations[h].populatePaintArrays(t, n, u);
@@ -19403,11 +19403,11 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             })(o);
           return u && u[n] || l[t][n]
         }
-        kn("ConstantBinder", zc), kn("CrossFadedConstantBinder", cs), kn("SourceExpressionBinder", is), kn("CrossFadedPatternBinder", _f), kn("CrossFadedDasharrayBinder", ff), kn("CompositeExpressionBinder", Es), kn("ProgramConfiguration", mf, {
+        kn("ConstantBinder", Ec), kn("CrossFadedConstantBinder", cs), kn("SourceExpressionBinder", is), kn("CrossFadedPatternBinder", _f), kn("CrossFadedDasharrayBinder", ff), kn("CompositeExpressionBinder", Es), kn("ProgramConfiguration", mf, {
           omit: ["_buffers"]
         }), kn("ProgramConfigurationSet", vu);
-        const Ac = Math.pow(2, 14) - 1,
-          _h = -Ac - 1;
+        const zc = Math.pow(2, 14) - 1,
+          _h = -zc - 1;
 
         function Kc(o) {
           const t = Le / o.extent,
@@ -19418,7 +19418,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
               const f = u[h],
                 m = Math.round(f.x * t),
                 w = Math.round(f.y * t);
-              f.x = _t(m, _h, Ac), f.y = _t(w, _h, Ac), (m < f.x || m > f.x + 1 || w < f.y || w > f.y + 1) && Ht("Geometry exceeds allowed extent, reduce your vector tile buffer size")
+              f.x = _t(m, _h, zc), f.y = _t(w, _h, zc), (m < f.x || m > f.x + 1 || w < f.y || w > f.y + 1) && Ht("Geometry exceeds allowed extent, reduce your vector tile buffer size")
             }
           }
           return n
@@ -21095,7 +21095,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             this.layoutVertexBuffer && (this.layoutVertexBuffer.destroy(), this.indexBuffer.destroy(), this.indexBuffer2.destroy(), this.programConfigurations.destroy(), this.segments.destroy(), this.segments2.destroy())
           }
           addFeature(t, n, l, u, h, f) {
-            for (const m of Tc(n, 500)) {
+            for (const m of kc(n, 500)) {
               const w = Q0(m, u, f.fill.getGranularityForZoomLevel(u.z)),
                 x = this.layoutVertexArray;
               J0(((P, k) => {
@@ -21406,7 +21406,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             this.layoutVertexBuffer && (this.layoutVertexBuffer.destroy(), this.indexBuffer.destroy(), this.programConfigurations.destroy(), this.segments.destroy(), this.centroidVertexBuffer.destroy())
           }
           addFeature(t, n, l, u, h, f) {
-            for (const m of Tc(n, 500)) {
+            for (const m of kc(n, 500)) {
               const w = {
                   x: 0,
                   y: 0,
@@ -24269,24 +24269,24 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                   Nl = Math.max(Nl, wu.imageOffset), rl.imageName = ms.imageName
                 }
                 const {
-                  rect: Rc,
+                  rect: Lc,
                   metrics: Ah,
                   baselineOffset: Xu
                 } = wu;
-                rl.y += Xu, rl.scale = ms.scale, rl.metrics = Ah, rl.rect = Rc, kl.push(rl), ws ? (Ue.verticalizable = !0, un += ("imageName" in ms ? Ah.advance : Js) * ms.scale + dn) : un += Ah.advance * ms.scale + dn, Ul++
+                rl.y += Xu, rl.scale = ms.scale, rl.metrics = Ah, rl.rect = Lc, kl.push(rl), ws ? (Ue.verticalizable = !0, un += ("imageName" in ms ? Ah.advance : Js) * ms.scale + dn) : un += Ah.advance * ms.scale + dn, Ul++
               }
               kl.length !== 0 && (oa = Math.max(un - dn, oa), FT(kl, 0, kl.length - 1, Pa)), un = 0, wl.lineOffset = Math.max(Nl, (il - 1) * Js);
-              const vc = Ir * il + Nl;
-              Do += vc, pa = Math.max(vc, pa), ++xs
+              const gc = Ir * il + Nl;
+              Do += gc, pa = Math.max(gc, pa), ++xs
             }
             const {
               horizontalAlign: Hs,
               verticalAlign: el
             } = Cg(Sr);
-            (function(ps, il, wl, kl, Nl, gl, Ul, vc, tl) {
+            (function(ps, il, wl, kl, Nl, gl, Ul, gc, tl) {
               const ms = (il - wl) * Nl;
               let Bs = 0;
-              Bs = gl !== Ul ? -vc * kl - -17 : -kl * tl * Ul + .5 * Ul;
+              Bs = gl !== Ul ? -gc * kl - -17 : -kl * tl * Ul + .5 * Ul;
               for (const ws of ps)
                 for (const rl of ws.positionedGlyphs) rl.x += ms, rl.y += Bs
             })(Ue.positionedLines, Pa, Hs, el, oa, pa, Ir, Do, or.length), Ue.top += -el * Do, Ue.bottom = Ue.top + Do, Ue.left += -Hs * oa, Ue.right = Ue.left + oa
@@ -24353,7 +24353,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
         }
 
         function LT(o, t, n) {
-          return !(o === M.aw.horizontal || !t && !Cc(n) || t && (dd(n) || (l = n, new RegExp("\\p{sc=Arab}", "u").test(String.fromCodePoint(l)))));
+          return !(o === M.aw.horizontal || !t && !Pc(n) || t && (dd(n) || (l = n, new RegExp("\\p{sc=Arab}", "u").test(String.fromCodePoint(l)))));
           var l
         }
 
@@ -26207,7 +26207,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             for (let l = o[0]; n < t - 4; n += 4) l = o[n] += l, l = o[n + 1] += l, l = o[n + 2] += l, l = o[n + 3] += l;
           for (; n !== o.length;) o[n] += o[n - 1], ++n
         }
-        var _l, Dc, Md, Jl, ds, $s, ix, Wu;
+        var _l, Ac, Md, Jl, ds, $s, ix, Wu;
 
         function Dl(o, t) {
           const n = (function(l, u) {
@@ -26217,7 +26217,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             switch (f) {
               case _l.DATA:
                 m = {
-                  dictionaryType: Object.values(Dc)[15 & h]
+                  dictionaryType: Object.values(Ac)[15 & h]
                 };
                 break;
               case _l.OFFSET:
@@ -26282,14 +26282,14 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           o.PRESENT = "PRESENT", o.DATA = "DATA", o.OFFSET = "OFFSET", o.LENGTH = "LENGTH"
         })(_l || (_l = {})), (function(o) {
           o.NONE = "NONE", o.SINGLE = "SINGLE", o.SHARED = "SHARED", o.VERTEX = "VERTEX", o.MORTON = "MORTON", o.FSST = "FSST"
-        })(Dc || (Dc = {})), (function(o) {
+        })(Ac || (Ac = {})), (function(o) {
           o.VERTEX = "VERTEX", o.INDEX = "INDEX", o.STRING = "STRING", o.KEY = "KEY"
         })(Md || (Md = {})), (function(o) {
           o.VAR_BINARY = "VAR_BINARY", o.GEOMETRIES = "GEOMETRIES", o.PARTS = "PARTS", o.RINGS = "RINGS", o.TRIANGLES = "TRIANGLES", o.SYMBOL = "SYMBOL", o.DICTIONARY = "DICTIONARY"
         })(Jl || (Jl = {})), (function(o) {
           o[o.FLAT = 0] = "FLAT", o[o.CONST = 1] = "CONST", o[o.SEQUENCE = 2] = "SEQUENCE", o[o.DICTIONARY = 3] = "DICTIONARY", o[o.FSST_DICTIONARY = 4] = "FSST_DICTIONARY"
         })(ds || (ds = {}));
-        class Lc {
+        class Dc {
           constructor(t, n) {
             this.values = t, this._size = n
           }
@@ -26645,7 +26645,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           const h = o.logicalLevelTechnique1;
           if (h === Ni.RLE) return o.runs === 1 ? ds.CONST : ds.FLAT;
           if (h !== Ni.DELTA || o.logicalLevelTechnique2 !== Ni.RLE) return o.numValues === 1 ? ds.CONST : ds.FLAT;
-          const f = t instanceof Lc ? t.size() : t;
+          const f = t instanceof Dc ? t.size() : t;
           if (o.numRleValues !== f) return ds.FLAT;
           if (o.runs === 1) return ds.SEQUENCE;
           if (o.runs !== 2) return o.numValues === 1 ? ds.CONST : ds.FLAT;
@@ -27043,7 +27043,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                   }
                   break;
                 case _l.DATA:
-                  Dc.VERTEX === Ct.logicalStreamType.dictionaryType ? m = Wg(o, n, Ct) : (w = {
+                  Ac.VERTEX === Ct.logicalStreamType.dictionaryType ? m = Wg(o, n, Ct) : (w = {
                     numBits: Ct.numBits,
                     coordinateShift: Ct.coordinateShift
                   }, m = $l(o, n, Ct))
@@ -27097,7 +27097,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                 }
                 break;
               case _l.DATA:
-                Dc.VERTEX === ie.logicalStreamType.dictionaryType ? m = Wg(o, n, ie) : (w = {
+                Ac.VERTEX === ie.logicalStreamType.dictionaryType ? m = Wg(o, n, ie) : (w = {
                   numBits: ie.numBits,
                   coordinateShift: ie.coordinateShift
                 }, m = $l(o, n, ie))
@@ -27225,8 +27225,8 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           return u ? (function(f, m, w) {
             if (!w) return f;
             const x = w.size(),
-              P = new Lc(f, m),
-              k = new Lc(new Uint8Array(Math.ceil(x / 8)), x);
+              P = new Dc(f, m),
+              k = new Dc(new Uint8Array(Math.ceil(x / 8)), x);
             let D = 0;
             for (let C = 0; C < x; C++) {
               const q = !!w.get(C) && P.get(D++);
@@ -27313,7 +27313,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                 V = q.numValues,
                 J = w.get(),
                 ee = Ih(m, V, q.byteLength, w);
-              w.set(J + q.byteLength), D = new Lc(ee, q.numValues)
+              w.set(J + q.byteLength), D = new Dc(ee, q.numValues)
             }
             const C = D ?? x;
             switch (P.physicalType) {
@@ -27355,7 +27355,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                     switch (Sr.physicalStreamType) {
                       case _l.PRESENT: {
                         const Pr = Ih(V, Sr.numValues, Sr.byteLength, J),
-                          mr = new Lc(Pr, Sr.numValues);
+                          mr = new Dc(Pr, Sr.numValues);
                         Ct = ve ?? mr;
                         break
                       }
@@ -27371,7 +27371,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                         const Pr = V.subarray(J.get(), J.get() + Sr.byteLength);
                         J.add(Sr.byteLength);
                         const mr = Sr.logicalStreamType.dictionaryType;
-                        Dc.FSST === mr ? ft = Pr : Dc.SINGLE === mr || Dc.SHARED === mr ? Ae = Pr : Dc.NONE === mr && (or = Pr);
+                        Ac.FSST === mr ? ft = Pr : Ac.SINGLE === mr || Ac.SHARED === mr ? Ae = Pr : Ac.NONE === mr && (or = Pr);
                         break
                       }
                     }
@@ -27400,7 +27400,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                     Ue = Mh(ve) ? ve : void 0,
                     ft = Ih(q, be, ie.byteLength, V, Ue);
                   V.set(Ae + ie.byteLength);
-                  const Ct = new Lc(ft, be);
+                  const Ct = new Dc(ft, be);
                   return new iS(J.name, Ct, ve)
                 })(m, w, k, 0, C);
               case 6:
@@ -27517,7 +27517,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                   Jl.DICTIONARY === ve.logicalStreamType.lengthType ? P = Hu(f, m, ve) : D = Hu(f, m, ve);
                   break;
                 case _l.DATA:
-                  Dc.SINGLE === ve.logicalStreamType.dictionaryType || Dc.SHARED === ve.logicalStreamType.dictionaryType ? (k = f.subarray(m.get(), m.get() + ve.byteLength), q = !0) : C = f.subarray(m.get(), m.get() + ve.byteLength), m.add(ve.byteLength)
+                  Ac.SINGLE === ve.logicalStreamType.dictionaryType || Ac.SHARED === ve.logicalStreamType.dictionaryType ? (k = f.subarray(m.get(), m.get() + ve.byteLength), q = !0) : C = f.subarray(m.get(), m.get() + ve.byteLength), m.add(ve.byteLength)
               }
             }
             const V = w.complexType.children,
@@ -27531,15 +27531,15 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
               const Ae = Dl(f, m),
                 Ue = Ih(f, Ae.numValues, Ae.byteLength, m),
                 ft = Dl(f, m),
-                Ct = $l(f, m, ft, 0, ft.decompressedCount !== x ? new Lc(Ue, Ae.numValues) : void 0);
-              J[ee++] = C ? new wx(be, Ct, P, k, D, C, new Lc(Ue, Ae.numValues)) : new Cp(be, Ct, P, k, new Lc(Ue, Ae.numValues))
+                Ct = $l(f, m, ft, 0, ft.decompressedCount !== x ? new Dc(Ue, Ae.numValues) : void 0);
+              J[ee++] = C ? new wx(be, Ct, P, k, D, C, new Dc(Ue, Ae.numValues)) : new Cp(be, Ct, P, k, new Dc(Ue, Ae.numValues))
             }
             return J
           })(o, t, n, u)
         }
 
         function Mh(o) {
-          return o instanceof Lc
+          return o instanceof Dc
         }
 
         function kx(o) {
@@ -27874,7 +27874,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                       const Ct = Dl(l, f),
                         $t = f.get(),
                         or = Ih(l, Ct.numValues, Ct.byteLength, f);
-                      f.set($t + Ct.byteLength), Ue = new Lc(or, Ct.numValues)
+                      f.set($t + Ct.byteLength), Ue = new Dc(or, Ct.numValues)
                     }
                     const ft = Dl(l, f);
                     ve = Ue ? Ue.size() : ft.decompressedCount, V = _S(l, be, f, Ae, ft, Ue ?? ve, h)
@@ -28357,7 +28357,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                 el._matMult(Bs), ps._matMult(Bs), wl._matMult(Bs), il._matMult(Bs)
               }
               const Ul = mr.stretch + mr.fixed,
-                vc = dn.stretch + dn.fixed;
+                gc = dn.stretch + dn.fixed;
               return {
                 tl: el,
                 tr: ps,
@@ -28365,9 +28365,9 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                 br: il,
                 tex: {
                   x: h.paddedRect.x + 1 + Ul,
-                  y: h.paddedRect.y + 1 + vc,
+                  y: h.paddedRect.y + 1 + gc,
                   w: An.stretch + An.fixed - Ul,
-                  h: Cn.stretch + Cn.fixed - vc
+                  h: Cn.stretch + Cn.fixed - gc
                 },
                 writingMode: void 0,
                 glyphOffset: [0, 0],
@@ -28705,7 +28705,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           l && Sr !== "none" && (o.allowVerticalPlacement && n.vertical && (Pr = jb(l, n.vertical, Sr, C.get("icon-text-fit-padding"), q, J)), V && (l = jb(l, V, Sr, C.get("icon-text-fit-padding"), q, J)));
           const mr = P ? k.line.getGranularityForZoomLevel(P.z) : 1,
             dn = (An, Cn) => {
-              Cn.x < 0 || Cn.x >= Le || Cn.y < 0 || Cn.y >= Le || (function(un, Do, oa, pa, Pa, ml, xs, Hs, el, ps, il, wl, kl, Nl, gl, Ul, vc, tl, ms, Bs, ws, rl, wu, Rc, Ah) {
+              Cn.x < 0 || Cn.x >= Le || Cn.y < 0 || Cn.y >= Le || (function(un, Do, oa, pa, Pa, ml, xs, Hs, el, ps, il, wl, kl, Nl, gl, Ul, gc, tl, ms, Bs, ws, rl, wu, Lc, Ah) {
                 const Xu = un.addToLineVertexArray(Do, oa);
                 let Ed, Mp, Ep, zp, Zx = 0,
                   Wx = 0,
@@ -28716,31 +28716,31 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                 const ku = {};
                 let Xx = pl("");
                 if (un.allowVerticalPlacement && pa.vertical) {
-                  const Tl = Hs.layout.get("text-rotate").evaluate(ws, {}, Rc) + 90;
-                  Ep = new Uf(el, Do, ps, il, wl, pa.vertical, kl, Nl, gl, Tl), xs && (zp = new Uf(el, Do, ps, il, wl, xs, vc, tl, gl, Tl))
+                  const Tl = Hs.layout.get("text-rotate").evaluate(ws, {}, Lc) + 90;
+                  Ep = new Uf(el, Do, ps, il, wl, pa.vertical, kl, Nl, gl, Tl), xs && (zp = new Uf(el, Do, ps, il, wl, xs, gc, tl, gl, Tl))
                 }
                 if (Pa) {
                   const Tl = Hs.layout.get("icon-rotate").evaluate(ws, {}),
                     cc = Hs.layout.get("icon-text-fit") !== "none",
                     zd = Ox(Pa, Tl, wu, cc),
-                    Fc = xs ? Ox(xs, Tl, wu, cc) : void 0;
-                  Mp = new Uf(el, Do, ps, il, wl, Pa, vc, tl, !1, Tl), Zx = 4 * zd.length;
+                    jc = xs ? Ox(xs, Tl, wu, cc) : void 0;
+                  Mp = new Uf(el, Do, ps, il, wl, Pa, gc, tl, !1, Tl), Zx = 4 * zd.length;
                   const Ad = un.iconSizeData;
                   let Jc = null;
-                  Ad.kind === "source" ? (Jc = [bu * Hs.layout.get("icon-size").evaluate(ws, {})], Jc[0] > Vu && Ht(`${un.layerIds[0]}: Value for "icon-size" is >= 255. Reduce your "icon-size".`)) : Ad.kind === "composite" && (Jc = [bu * rl.compositeIconSizes[0].evaluate(ws, {}, Rc), bu * rl.compositeIconSizes[1].evaluate(ws, {}, Rc)], (Jc[0] > Vu || Jc[1] > Vu) && Ht(`${un.layerIds[0]}: Value for "icon-size" is >= 255. Reduce your "icon-size".`)), un.addSymbols(un.icon, zd, Jc, Bs, ms, ws, M.aw.none, Do, Xu.lineStartIndex, Xu.lineLength, -1, Rc), av = un.icon.placedSymbolArray.length - 1, Fc && (Wx = 4 * Fc.length, un.addSymbols(un.icon, Fc, Jc, Bs, ms, ws, M.aw.vertical, Do, Xu.lineStartIndex, Xu.lineLength, -1, Rc), sv = un.icon.placedSymbolArray.length - 1)
+                  Ad.kind === "source" ? (Jc = [bu * Hs.layout.get("icon-size").evaluate(ws, {})], Jc[0] > Vu && Ht(`${un.layerIds[0]}: Value for "icon-size" is >= 255. Reduce your "icon-size".`)) : Ad.kind === "composite" && (Jc = [bu * rl.compositeIconSizes[0].evaluate(ws, {}, Lc), bu * rl.compositeIconSizes[1].evaluate(ws, {}, Lc)], (Jc[0] > Vu || Jc[1] > Vu) && Ht(`${un.layerIds[0]}: Value for "icon-size" is >= 255. Reduce your "icon-size".`)), un.addSymbols(un.icon, zd, Jc, Bs, ms, ws, M.aw.none, Do, Xu.lineStartIndex, Xu.lineLength, -1, Lc), av = un.icon.placedSymbolArray.length - 1, jc && (Wx = 4 * jc.length, un.addSymbols(un.icon, jc, Jc, Bs, ms, ws, M.aw.vertical, Do, Xu.lineStartIndex, Xu.lineLength, -1, Lc), sv = un.icon.placedSymbolArray.length - 1)
                 }
                 const Kx = Object.keys(pa.horizontal);
                 for (const Tl of Kx) {
                   const cc = pa.horizontal[Tl];
                   if (!Ed) {
                     Xx = pl(cc.text);
-                    const Fc = Hs.layout.get("text-rotate").evaluate(ws, {}, Rc);
-                    Ed = new Uf(el, Do, ps, il, wl, cc, kl, Nl, gl, Fc)
+                    const jc = Hs.layout.get("text-rotate").evaluate(ws, {}, Lc);
+                    Ed = new Uf(el, Do, ps, il, wl, cc, kl, Nl, gl, jc)
                   }
                   const zd = cc.positionedLines.length === 1;
-                  if (Hx += Vx(un, Do, cc, ml, Hs, gl, ws, Ul, Xu, pa.vertical ? M.aw.horizontal : M.aw.horizontalOnly, zd ? Kx : [Tl], ku, av, rl, Rc), zd) break
+                  if (Hx += Vx(un, Do, cc, ml, Hs, gl, ws, Ul, Xu, pa.vertical ? M.aw.horizontal : M.aw.horizontalOnly, zd ? Kx : [Tl], ku, av, rl, Lc), zd) break
                 }
-                pa.vertical && (Yx += Vx(un, Do, pa.vertical, ml, Hs, gl, ws, Ul, Xu, M.aw.vertical, ["vertical"], ku, sv, rl, Rc));
+                pa.vertical && (Yx += Vx(un, Do, pa.vertical, ml, Hs, gl, ws, Ul, Xu, M.aw.vertical, ["vertical"], ku, sv, rl, Lc));
                 const RS = Ed ? Ed.boxStartIndex : un.collisionBoxArray.length,
                   jS = Ed ? Ed.boxEndIndex : un.collisionBoxArray.length,
                   FS = Ep ? Ep.boxStartIndex : un.collisionBoxArray.length,
@@ -28749,23 +28749,23 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                   qS = Mp ? Mp.boxEndIndex : un.collisionBoxArray.length,
                   NS = zp ? zp.boxStartIndex : un.collisionBoxArray.length,
                   US = zp ? zp.boxEndIndex : un.collisionBoxArray.length;
-                let jc = -1;
+                let Rc = -1;
                 const Gf = (Tl, cc) => Tl && Tl.circleDiameter ? Math.max(Tl.circleDiameter, cc) : cc;
-                jc = Gf(Ed, jc), jc = Gf(Ep, jc), jc = Gf(Mp, jc), jc = Gf(zp, jc);
-                const Qx = jc > -1 ? 1 : 0;
-                Qx && (jc *= Ah / Js), un.glyphOffsetArray.length >= vp.MAX_GLYPHS && Ht("Too many glyphs being rendered in a tile. See https://github.com/mapbox/mapbox-gl-js/issues/2907"), ws.sortKey !== void 0 && un.addToSortKeyRanges(un.symbolInstances.length, ws.sortKey);
-                const VS = Ux(Hs, ws, Rc),
+                Rc = Gf(Ed, Rc), Rc = Gf(Ep, Rc), Rc = Gf(Mp, Rc), Rc = Gf(zp, Rc);
+                const Qx = Rc > -1 ? 1 : 0;
+                Qx && (Rc *= Ah / Js), un.glyphOffsetArray.length >= vp.MAX_GLYPHS && Ht("Too many glyphs being rendered in a tile. See https://github.com/mapbox/mapbox-gl-js/issues/2907"), ws.sortKey !== void 0 && un.addToSortKeyRanges(un.symbolInstances.length, ws.sortKey);
+                const VS = Ux(Hs, ws, Lc),
                   [GS, ZS] = (function(Tl, cc) {
                     const zd = Tl.length,
-                      Fc = cc == null ? void 0 : cc.values;
-                    if ((Fc == null ? void 0 : Fc.length) > 0)
-                      for (let Ad = 0; Ad < Fc.length; Ad += 2) {
-                        const Jc = Fc[Ad + 1];
-                        Tl.emplaceBack(M.aM[Fc[Ad]], Jc[0], Jc[1])
+                      jc = cc == null ? void 0 : cc.values;
+                    if ((jc == null ? void 0 : jc.length) > 0)
+                      for (let Ad = 0; Ad < jc.length; Ad += 2) {
+                        const Jc = jc[Ad + 1];
+                        Tl.emplaceBack(M.aM[jc[Ad]], Jc[0], Jc[1])
                       }
                     return [zd, Tl.length]
                   })(un.textAnchorOffsets, VS);
-                un.symbolInstances.emplaceBack(Do.x, Do.y, ku.right >= 0 ? ku.right : -1, ku.center >= 0 ? ku.center : -1, ku.left >= 0 ? ku.left : -1, ku.vertical || -1, av, sv, Xx, RS, jS, FS, BS, OS, qS, NS, US, ps, Hx, Yx, Zx, Wx, Qx, 0, kl, jc, GS, ZS)
+                un.symbolInstances.emplaceBack(Do.x, Do.y, ku.right >= 0 ? ku.right : -1, ku.center >= 0 ? ku.center : -1, ku.left >= 0 ? ku.left : -1, ku.vertical || -1, av, sv, Xx, RS, jS, FS, BS, OS, qS, NS, US, ps, Hx, Yx, Zx, Wx, Qx, 0, kl, Rc, GS, ZS)
               })(o, Cn, An, n, l, u, Pr, o.layers[0], o.collisionBoxArray, t.index, t.sourceLayerIndex, o.index, ee, [Ae, Ae, Ae, Ae], Ct, w, ie, Ue, $t, q, t, h, x, P, f)
             };
           if (or === "line")
@@ -28781,7 +28781,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                   un && dn(Cn, un)
                 }
             } else if (t.type === "Polygon")
-            for (const An of Tc(t.geometry, 0)) {
+            for (const An of kc(t.geometry, 0)) {
               const Cn = ES(An, 16);
               dn(Cd(An[0], mr, !0), new Yu(Cn.x, Cn.y, 0))
             } else if (t.type === "LineString")
@@ -28839,7 +28839,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                     wl._matMult(Bs), kl._matMult(Bs), Nl._matMult(Bs), gl._matMult(Bs)
                   }
                   const Ul = new F(0, 0),
-                    vc = new F(0, 0);
+                    gc = new F(0, 0);
                   Ir.push({
                     tl: wl,
                     tr: kl,
@@ -28851,7 +28851,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                     sectionIndex: Pr.sectionIndex,
                     isSDF: An,
                     pixelOffsetTL: Ul,
-                    pixelOffsetBR: vc,
+                    pixelOffsetBR: gc,
                     minFontScaleX: 0,
                     minFontScaleY: 0
                   })
@@ -29379,7 +29379,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
             }
           }
           return o
-        }, M.bN = Cr, M.bO = fc, M.bP = function o(t, n) {
+        }, M.bN = Cr, M.bO = _c, M.bP = function o(t, n) {
           if (Array.isArray(t)) {
             if (!Array.isArray(n) || t.length !== n.length) return !1;
             for (let l = 0; l < t.length; l++)
@@ -30071,7 +30071,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
           return new Af(o).readFields(ET, [])
         }, M.p = Ab, M.q = function(o) {
           return /[\u02EA\u02EB\u1100-\u11FF\u2E80-\u2FDF\u3000-\u30FF\u3105-\u312F\u3131-\u318E\u31A0-\u4DBF\u4E00-\uA48C\uA490-\uA4C6\uA960-\uA97C\uAC00-\uD7C6\uD7CB-\uD7FB\uF900-\uFA6D\uFA70-\uFAD9\uFE10-\uFE1F\uFE30-\uFE4F\uFF00-\uFFEF]|\uD81B[\uDFE0-\uDFFF]|[\uD81C-\uD822\uD840-\uD868\uD86A-\uD86D\uD86F-\uD872\uD874-\uD879\uD880-\uD883\uD885-\uD88C][\uDC00-\uDFFF]|\uD823[\uDC00-\uDCD5\uDCFF-\uDD1E\uDD80-\uDDF2]|\uD82B[\uDFF0-\uDFFF]|\uD82C[\uDC00-\uDEFB]|\uD83C[\uDE00-\uDEFF]|\uD869[\uDC00-\uDEDF\uDF00-\uDFFF]|\uD86E[\uDC00-\uDC1D\uDC20-\uDFFF]|\uD873[\uDC00-\uDEAD\uDEB0-\uDFFF]|\uD87A[\uDC00-\uDFE0\uDFF0-\uDFFF]|\uD87B[\uDC00-\uDE5D]|\uD87E[\uDC00-\uDE1D]|\uD884[\uDC00-\uDF4A\uDF50-\uDFFF]|\uD88D[\uDC00-\uDC79]/gim.test(String.fromCodePoint(o))
-        }, M.r = fh, M.s = it, M.t = dl, M.u = $e, M.v = Ws, M.w = Ht, M.x = Wc, M.y = Ua, M.z = mc
+        }, M.r = fh, M.s = it, M.t = dl, M.u = $e, M.v = Ws, M.w = Ht, M.x = Wc, M.y = Ua, M.z = fc
       })), R("worker", ["./shared"], (function(M) {
         class d {
           constructor(G, Z) {
@@ -35014,12 +35014,12 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                   Ms = null,
                   Fs = null,
                   pl = null,
-                  gc = 0,
+                  mc = 0,
                   Yc = 0,
-                  Ic = 0;
-                Vn.textFeatureIndex ? gc = Vn.textFeatureIndex : Ur.useRuntimeCollisionCircles && (gc = Ur.featureIndex), Vn.verticalTextFeatureIndex && (Yc = Vn.verticalTextFeatureIndex);
-                const Mc = Vn.textBox;
-                if (Mc) {
+                  Cc = 0;
+                Vn.textFeatureIndex ? mc = Vn.textFeatureIndex : Ur.useRuntimeCollisionCircles && (mc = Ur.featureIndex), Vn.verticalTextFeatureIndex && (Yc = Vn.verticalTextFeatureIndex);
+                const Ic = Vn.textBox;
+                if (Ic) {
                   const Ol = cs => {
                       let is = d.aw.horizontal;
                       if (_.allowVerticalPlacement && !cs && this.prevPlacement) {
@@ -35034,14 +35034,14 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                           if (Es === d.aw.vertical ? (Ga = is(), Qs = Ga) : Ga = cs(), Ga && Ga.placeable) break
                       } else Ga = cs()
                     },
-                    Ec = Ur.textAnchorOffsetStartIndex,
-                    zc = Ur.textAnchorOffsetEndIndex;
-                  if (zc === Ec) {
+                    Mc = Ur.textAnchorOffsetStartIndex,
+                    Ec = Ur.textAnchorOffsetEndIndex;
+                  if (Ec === Mc) {
                     const cs = (is, Es) => {
                       const us = this.collisionIndex.placeCollisionBox(is, Oe, O, tr, z, gt, lt, T, ge.predicate, fr, void 0, Kr);
                       return us && us.placeable && (this.markUsedOrientation(_, Es, Ur), this.placedOrientations[Ur.crossTileID] = Es), us
                     };
-                    Xc((() => cs(Mc, d.aw.horizontal)), (() => {
+                    Xc((() => cs(Ic, d.aw.horizontal)), (() => {
                       const is = Vn.verticalTextBox;
                       return _.allowVerticalPlacement && Ur.numVerticalGlyphVertices > 0 && is ? cs(is, d.aw.vertical) : {
                         box: null,
@@ -35055,27 +35055,27 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                         vu = us.y2 - us.y1,
                         Xm = Ur.textBoxScale,
                         gf = rt && ut === "never" ? _f : null;
-                      let Ac = null,
+                      let zc = null,
                         _h = Oe === "never" ? 1 : 2,
                         Kc = "never";
                       cs && _h++;
                       for (let Qc = 0; Qc < _h; Qc++) {
-                        for (let sp = Ec; sp < zc; sp++) {
+                        for (let sp = Mc; sp < Ec; sp++) {
                           const vf = _.textAnchorOffsets.get(sp);
                           if (cs && vf.textAnchor !== cs) continue;
                           const Sd = this.attemptAnchorPlacement(vf, us, mf, vu, Xm, lt, gt, O, tr, z, ge, Kc, Ur, _, ff, T, E, gf, fr);
-                          if (Sd && (Ac = Sd.placedGlyphBoxes, Ac && Ac.placeable)) return Ka = !0, js = Sd.shift, Ac
+                          if (Sd && (zc = Sd.placedGlyphBoxes, zc && zc.placeable)) return Ka = !0, js = Sd.shift, zc
                         }
                         cs ? cs = null : Kc = Oe
                       }
-                      return p && !Ac && (Ac = {
-                        box: this.collisionIndex.placeCollisionBox(Mc, "always", O, tr, z, gt, lt, T, ge.predicate, fr, void 0, Kr).box,
+                      return p && !zc && (zc = {
+                        box: this.collisionIndex.placeCollisionBox(Ic, "always", O, tr, z, gt, lt, T, ge.predicate, fr, void 0, Kr).box,
                         offscreen: !1,
                         placeable: !1,
                         occluded: !1
-                      }), Ac
+                      }), zc
                     };
-                    Xc((() => is(Mc, Vn.iconBox, d.aw.horizontal)), (() => {
+                    Xc((() => is(Ic, Vn.iconBox, d.aw.horizontal)), (() => {
                       const us = Vn.verticalTextBox;
                       return _.allowVerticalPlacement && (!Ga || !Ga.placeable) && Ur.numVerticalGlyphVertices > 0 && us ? is(us, Vn.verticalIconBox, d.aw.vertical) : {
                         box: null,
@@ -35093,10 +35093,10 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                 if (Ms = Ga, Ka = Ms && Ms.placeable, Va = Ms && Ms.offscreen, Ur.useRuntimeCollisionCircles && Ur.centerJustifiedTextSymbolIndex >= 0) {
                   const Ol = _.text.placedSymbolArray.get(Ur.centerJustifiedTextSymbolIndex),
                     Xc = d.ax(_.textSizeData, ne, Ol),
-                    Ec = y.get("text-padding");
-                  Fs = this.collisionIndex.placeCollisionCircles(Oe, Ol, _.lineVertexArray, _.glyphOffsetArray, Xc, z, j, p, gt, ge.predicate, Ur.collisionCircleDiameter, Ec, T, fr), Fs.circles.length && Fs.collisionDetected && !p && d.w("Collisions detected, but collision boxes are not shown"), Ka = Ke || Fs.circles.length > 0 && !Fs.collisionDetected, Va = Va && Fs.offscreen
+                    Mc = y.get("text-padding");
+                  Fs = this.collisionIndex.placeCollisionCircles(Oe, Ol, _.lineVertexArray, _.glyphOffsetArray, Xc, z, j, p, gt, ge.predicate, Ur.collisionCircleDiameter, Mc, T, fr), Fs.circles.length && Fs.collisionDetected && !p && d.w("Collisions detected, but collision boxes are not shown"), Ka = Ke || Fs.circles.length > 0 && !Fs.collisionDetected, Va = Va && Fs.offscreen
                 }
-                if (Vn.iconFeatureIndex && (Ic = Vn.iconFeatureIndex), Vn.iconBox) {
+                if (Vn.iconFeatureIndex && (Cc = Vn.iconFeatureIndex), Vn.iconBox) {
                   const Ol = Xc => this.collisionIndex.placeCollisionBox(Xc, ut, O, tr, z, gt, lt, E, ge.predicate, fr, rt && js ? js : void 0, Kr);
                   Qs && Qs.placeable && Vn.verticalIconBox ? (pl = Ol(Vn.verticalIconBox), ls = pl.placeable) : (pl = Ol(Vn.iconBox), ls = pl.placeable), Va = Va && pl.offscreen
                 }
@@ -35104,7 +35104,7 @@ Use an identity property function instead: \`{ "type": "identity", "property": $
                   mu = Fe || Ur.numIconVertices === 0;
                 Kl || mu ? mu ? Kl || (ls = ls && Ka) : Ka = ls && Ka : ls = Ka = ls && Ka;
                 const gu = ls && pl.placeable;
-                if (Ka && Ms.placeable && this.collisionIndex.insertCollisionBox(Ms.box, Oe, y.get("text-ignore-placement"), _.bucketInstanceId, Qs && Qs.placeable && Yc ? Yc : gc, ge.ID), gu && this.collisionIndex.insertCollisionBox(pl.box, ut, y.get("icon-ignore-placement"), _.bucketInstanceId, Ic, ge.ID), Fs && Ka && this.collisionIndex.insertCollisionCircles(Fs.circles, Oe, y.get("text-ignore-placement"), _.bucketInstanceId, gc, ge.ID), p && this.storeCollisionData(_.bucketInstanceId, Jn, Vn, Ms, pl, Fs), Ur.crossTileID === 0) throw new Error("symbolInstance.crossTileID can't be 0");
+                if (Ka && Ms.placeable && this.collisionIndex.insertCollisionBox(Ms.box, Oe, y.get("text-ignore-placement"), _.bucketInstanceId, Qs && Qs.placeable && Yc ? Yc : mc, ge.ID), gu && this.collisionIndex.insertCollisionBox(pl.box, ut, y.get("icon-ignore-placement"), _.bucketInstanceId, Cc, ge.ID), Fs && Ka && this.collisionIndex.insertCollisionCircles(Fs.circles, Oe, y.get("text-ignore-placement"), _.bucketInstanceId, mc, ge.ID), p && this.storeCollisionData(_.bucketInstanceId, Jn, Vn, Ms, pl, Fs), Ur.crossTileID === 0) throw new Error("symbolInstance.crossTileID can't be 0");
                 if (_.bucketInstanceId === 0) throw new Error("bucket.bucketInstanceId can't be 0");
                 this.placements[Ur.crossTileID] = new po((Ka || yr) && !(Ms != null && Ms.occluded), (ls || kr) && !(pl != null && pl.occluded), Va || _.justReloaded), a[Ur.crossTileID] = !0
               };
@@ -40445,7 +40445,7 @@ uniform ${O} ${X} u_${K};
             u_overlay: 0,
             u_overlay_scale: r
           }),
-          _c = (g, r, a, p) => {
+          hc = (g, r, a, p) => {
             const _ = d.aK(g, 1, r) / (d.a5 * Math.pow(2, g.tileID.overscaledZ)) * 2 * Math.PI * p;
             return {
               u_extrude_scale: d.aK(g, 1, r),
@@ -40465,7 +40465,7 @@ uniform ${O} ${X} u_${K};
               u_opacity: r.paint.get("heatmap-opacity")
             }
           },
-          kc = (g, r, a) => {
+          wc = (g, r, a) => {
             const p = a.paint.get("hillshade-accent-color");
             let _;
             switch (a.paint.get("hillshade-method")) {
@@ -40488,7 +40488,7 @@ uniform ${O} ${X} u_${K};
             for (let T = 0; T < y.directionRadians.length; T++) a.paint.get("hillshade-illumination-anchor") === "viewport" && (y.directionRadians[T] += g.transform.bearingInRadians);
             return {
               u_image: 0,
-              u_latrange: Tc(0, r.tileID),
+              u_latrange: kc(0, r.tileID),
               u_exaggeration: a.paint.get("hillshade-exaggeration"),
               u_altitudes: y.altitudeRadians,
               u_azimuths: y.directionRadians,
@@ -40510,12 +40510,12 @@ uniform ${O} ${X} u_${K};
             }
           };
 
-        function Tc(g, r) {
+        function kc(g, r) {
           const a = Math.pow(2, r.canonical.z),
             p = r.canonical.y;
           return [new d.a6(0, p / a).toLngLat().lat, new d.a6(0, (p + 1) / a).toLngLat().lat]
         }
-        const Sc = (g, r, a = 0) => ({
+        const Tc = (g, r, a = 0) => ({
             u_image: 0,
             u_unpack: r.getUnpackVector(),
             u_dimension: [r.stride, r.stride],
@@ -40524,7 +40524,7 @@ uniform ${O} ${X} u_${K};
             u_color_ramp_size: a,
             u_opacity: g.paint.get("color-relief-opacity")
           }),
-          Pc = (g, r, a, p) => {
+          Sc = (g, r, a, p) => {
             const _ = g.transform;
             return {
               u_translation: ae(g, r, a),
@@ -40533,7 +40533,7 @@ uniform ${O} ${X} u_${K};
               u_units_to_pixels: [1 / _.pixelsToGLUnits[0], 1 / _.pixelsToGLUnits[1]]
             }
           },
-          ju = (g, r, a, p, _) => d.e(Pc(g, r, a, p), {
+          ju = (g, r, a, p, _) => d.e(Sc(g, r, a, p), {
             u_image: 0,
             u_image_height: _
           }),
@@ -40553,7 +40553,7 @@ uniform ${O} ${X} u_${K};
           },
           cu = (g, r, a, p, _) => {
             const y = Q(r, g.transform);
-            return d.e(Pc(g, r, a, p), {
+            return d.e(Sc(g, r, a, p), {
               u_tileratio: y,
               u_crossfade_from: _.fromScale,
               u_crossfade_to: _.toScale,
@@ -40565,7 +40565,7 @@ uniform ${O} ${X} u_${K};
           },
           uu = (g, r, a, p, _, y) => {
             const T = Q(r, g.transform);
-            return d.e(Pc(g, r, a, p), {
+            return d.e(Sc(g, r, a, p), {
               u_image: 0,
               u_image_height: y,
               u_tileratio: T,
@@ -41662,11 +41662,11 @@ uniform ${O} ${X} u_${K};
             }
             const Fs = d.aK(tr, 1, g.transform.zoom),
               pl = Zr(Fe, g.transform, Fs),
-              gc = d.N();
-            d.ay(gc, pl);
+              mc = d.N();
+            d.ay(mc, pl);
             const Yc = Or(Oe, Fe, g.transform, Fs),
-              Ic = d.aL(De, tr, y, T),
-              Mc = De.getProjectionData({
+              Cc = d.aL(De, tr, y, T),
+              Ic = De.getProjectionData({
                 overscaledTileID: kr,
                 applyGlobeMatrix: !K,
                 applyTerrainMatrix: !0
@@ -41676,18 +41676,18 @@ uniform ${O} ${X} u_${K};
             if (Ke) {
               const cs = g.style.map.terrain ? (Es, us) => g.style.map.terrain.getElevation(kr, Es, us) : null,
                 is = a.layout.get("text-rotation-alignment") === "map";
-              pi(fr, g, _, pl, gc, Oe, j, is, kr.toUnwrapped(), De.width, De.height, Ic, cs)
+              pi(fr, g, _, pl, mc, Oe, j, is, kr.toUnwrapped(), De.width, De.height, Cc, cs)
             }
             const gu = _ && rt || mu,
               Ol = Ke || gu ? mn : Oe ? pl : g.transform.clipSpaceToPixelsMatrix,
               Xc = Ur && a.paint.get(_ ? "text-halo-width" : "icon-halo-width").constantOr(1) !== 0;
-            let Ec;
-            Ec = Ur ? fr.iconsInText ? Tt(Vn.kind, os, ut, Oe, Ke, gu, g, Ol, Yc, Ic, ls, Qs, yr) : et(Vn.kind, os, ut, Oe, Ke, gu, g, Ol, Yc, Ic, _, ls, 0, yr) : dt(Vn.kind, os, ut, Oe, Ke, gu, g, Ol, Yc, Ic, _, ls, yr);
-            const zc = {
+            let Mc;
+            Mc = Ur ? fr.iconsInText ? Tt(Vn.kind, os, ut, Oe, Ke, gu, g, Ol, Yc, Cc, ls, Qs, yr) : et(Vn.kind, os, ut, Oe, Ke, gu, g, Ol, Yc, Cc, _, ls, 0, yr) : dt(Vn.kind, os, ut, Oe, Ke, gu, g, Ol, Yc, Cc, _, ls, yr);
+            const Ec = {
               program: ga,
               buffers: Kr,
-              uniformValues: Ec,
-              projectionData: Mc,
+              uniformValues: Mc,
+              projectionData: Ic,
               atlasTexture: Va,
               atlasTextureIcon: Ms,
               atlasInterpolation: js,
@@ -41701,13 +41701,13 @@ uniform ${O} ${X} u_${K};
               for (const is of cs) Dt.push({
                 segments: new d.aV([is]),
                 sortKey: is.sortKey,
-                state: zc,
+                state: Ec,
                 terrainData: Ka
               })
             } else Dt.push({
               segments: Kr.segments,
               sortKey: 0,
-              state: zc,
+              state: Ec,
               terrainData: Ka
             })
           }
@@ -41747,7 +41747,7 @@ uniform ${O} ${X} u_${K};
               applyTerrainMatrix: !0
             }),
             De = g.style.map.terrain.getTerrainData(p);
-          ne.draw(y, T.TRIANGLES, yo.disabled, E, z, Ro.disabled, _c(r, g.transform.zoom, a.paint.get("heatmap-intensity"), 1), De, ge, a.id, j.layoutVertexBuffer, j.indexBuffer, j.segments, a.paint, g.transform.zoom, K)
+          ne.draw(y, T.TRIANGLES, yo.disabled, E, z, Ro.disabled, hc(r, g.transform.zoom, a.paint.get("heatmap-intensity"), 1), De, ge, a.id, j.layoutVertexBuffer, j.indexBuffer, j.segments, a.paint, g.transform.zoom, K)
         }
 
         function ei(g, r, a, p, _) {
@@ -41924,7 +41924,7 @@ uniform ${O} ${X} u_${K};
               applyGlobeMatrix: !z,
               applyTerrainMatrix: !0
             });
-            De.draw(X, ne.TRIANGLES, y, _[Oe.overscaledZ], T, Ro.backCCW, kc(g, Ke, a), lt, gt, a.id, Xe.vertexBuffer, Xe.indexBuffer, Xe.segments)
+            De.draw(X, ne.TRIANGLES, y, _[Oe.overscaledZ], T, Ro.backCCW, wc(g, Ke, a), lt, gt, a.id, Xe.vertexBuffer, Xe.indexBuffer, Xe.segments)
           }
         }
 
@@ -41969,7 +41969,7 @@ uniform ${O} ${X} u_${K};
                 applyGlobeMatrix: !z,
                 applyTerrainMatrix: !0
               });
-            ge.draw(X, ne.TRIANGLES, y, _[ut.overscaledZ], T, Ro.backCCW, Sc(a, Xe.dem, Ke), yr, kr, a.id, Dt.vertexBuffer, Dt.indexBuffer, Dt.segments)
+            ge.draw(X, ne.TRIANGLES, y, _[ut.overscaledZ], T, Ro.backCCW, Tc(a, Xe.dem, Ke), yr, kr, a.id, Dt.vertexBuffer, Dt.indexBuffer, Dt.segments)
           }
         }
         const vi = [new d.P(0, 0), new d.P(d.a5, 0), new d.P(d.a5, d.a5), new d.P(0, d.a5)];
@@ -42667,7 +42667,7 @@ uniform ${O} ${X} u_${K};
                       applyTerrainMatrix: !1
                     }),
                     nn = Xe.getCircleRadiusCorrection();
-                  fr.draw(Ke, ut.TRIANGLES, yo.disabled, lt, gt, Ro.backCCW, _c(yr, Xe.zoom, Fe.paint.get("heatmap-intensity"), nn), null, Kr, Fe.id, kr.layoutVertexBuffer, kr.indexBuffer, kr.segments, Fe.paint, Xe.zoom, tr)
+                  fr.draw(Ke, ut.TRIANGLES, yo.disabled, lt, gt, Ro.backCCW, hc(yr, Xe.zoom, Fe.paint.get("heatmap-intensity"), nn), null, Kr, Fe.id, kr.layoutVertexBuffer, kr.indexBuffer, kr.segments, Fe.paint, Xe.zoom, tr)
                 }
                 Ke.viewport.set([0, 0, ge.width, ge.height])
               })(T, E, z, j) : T.renderPass === "translucent" && (function(ge, De) {
@@ -42727,7 +42727,7 @@ uniform ${O} ${X} u_${K};
                   }),
                   Va = yr.getPixelScale();
                 let js;
-                ut ? (js = Fu(T, fr, z, Va, lt), Wn(rt, Dt, fr, nn, lt)) : Oe && Xe ? (js = uu(T, fr, z, Va, lt, Kr.lineClipsArray.length), On(T, E, rt, Dt, z, Kr, tr, nn, lt)) : Oe ? (js = cu(T, fr, z, Va, lt), zo(T, rt, Dt, nn, Jn, lt)) : Xe ? (js = ju(T, fr, z, Va, Kr.lineClipsArray.length), Eo(T, E, rt, Dt, z, Kr, tr)) : js = Pc(T, fr, z, Va);
+                ut ? (js = Fu(T, fr, z, Va, lt), Wn(rt, Dt, fr, nn, lt)) : Oe && Xe ? (js = uu(T, fr, z, Va, lt, Kr.lineClipsArray.length), On(T, E, rt, Dt, z, Kr, tr, nn, lt)) : Oe ? (js = cu(T, fr, z, Va, lt), zo(T, rt, Dt, nn, Jn, lt)) : Xe ? (js = ju(T, fr, z, Va, Kr.lineClipsArray.length), Eo(T, E, rt, Dt, z, Kr, tr)) : js = Sc(T, fr, z, Va);
                 const Ga = T.stencilModeForClipping(tr);
                 Vn.draw(rt, Dt.TRIANGLES, ge, Ga, De, Ro.disabled, js, ga, ls, z.id, Kr.layoutVertexBuffer, Kr.indexBuffer, Kr.segments, z.paint, T.transform.zoom, nn, Kr.layoutVertexBuffer2), kr = !1
               }
@@ -43547,7 +43547,7 @@ ${ne.shaderPreludeCode.vertexSource}`,
             return r.button === this._eventButton
           }
         }
-        class fc {
+        class _c {
           constructor() {
             this._firstTouch = void 0
           }
@@ -43576,7 +43576,7 @@ ${ne.shaderPreludeCode.vertexSource}`,
         class Gc {
           constructor(r = new Cs({
             checkCorrectEvent: () => !0
-          }), a = new fc) {
+          }), a = new _c) {
             this.mouseMoveStateManager = r, this.oneFingerTouchMoveStateManager = a
           }
           _executeRelevantHandler(r, a, p) {
@@ -43598,7 +43598,7 @@ ${ne.shaderPreludeCode.vertexSource}`,
             return this._executeRelevantHandler(r, (a => this.mouseMoveStateManager.isValidEndEvent(a)), (a => this.oneFingerTouchMoveStateManager.isValidEndEvent(a)))
           }
         }
-        const Cc = g => {
+        const Pc = g => {
           g.mousedown = g.dragStart, g.mousemoveWindow = g.dragMove, g.mouseup = g.dragEnd, g.contextmenu = r => {
             r.preventDefault()
           }
@@ -43873,7 +43873,7 @@ ${ne.shaderPreludeCode.vertexSource}`,
         }
         const Hi = 4.000244140625,
           Zc = 1 / 450;
-        class mc {
+        class fc {
           constructor(r, a) {
             this._onTimeout = p => {
               this._type = "wheel", this._delta -= this._lastValue, this._active || this._start(p)
@@ -44315,7 +44315,7 @@ ${ne.shaderPreludeCode.vertexSource}`,
                   },
                   moveStateManager: kr,
                   enable: Xe,
-                  assignEvents: Cc
+                  assignEvents: Pc
                 })
               })(r, O),
               K = (function({
@@ -44333,7 +44333,7 @@ ${ne.shaderPreludeCode.vertexSource}`,
                   }),
                   moveStateManager: rt,
                   enable: Xe,
-                  assignEvents: Cc
+                  assignEvents: Pc
                 })
               })(r),
               ne = (function({
@@ -44355,7 +44355,7 @@ ${ne.shaderPreludeCode.vertexSource}`,
                   },
                   moveStateManager: Dt,
                   enable: Xe,
-                  assignEvents: Cc
+                  assignEvents: Pc
                 })
               })(r, O);
             a.dragRotate = new ah(r, X, K, ne), this._add("mouseRotate", X, ["mousePitch"]), this._add("mousePitch", K, ["mouseRotate", "mouseRoll"]), this._add("mouseRoll", ne, ["mousePitch"]), r.interactive && r.dragRotate && a.dragRotate.enable();
@@ -44375,7 +44375,7 @@ ${ne.shaderPreludeCode.vertexSource}`,
                   activateOnStart: !0,
                   moveStateManager: gt,
                   enable: Xe,
-                  assignEvents: Cc
+                  assignEvents: Pc
                 })
               })(r),
               De = new dd(r, a);
@@ -44383,7 +44383,7 @@ ${ne.shaderPreludeCode.vertexSource}`,
             const Fe = new Ou,
               Oe = new hd;
             a.touchZoomRotate = new uf(p, Oe, Fe, z), this._add("touchRotate", Fe, ["touchPan", "touchZoom"]), this._add("touchZoom", Oe, ["touchPan", "touchRotate"]), r.interactive && r.touchZoomRotate && a.touchZoomRotate.enable(r.touchZoomRotate), this._add("blockableMapEvent", new As(a));
-            const Ke = a.scrollZoom = new mc(a, (() => this._triggerRenderFrame()));
+            const Ke = a.scrollZoom = new fc(a, (() => this._triggerRenderFrame()));
             this._add("scrollZoom", Ke, ["mousePan"]), r.interactive && r.scrollZoom && a.scrollZoom.enable(r.scrollZoom);
             const ut = a.keyboard = new bs(a);
             this._add("keyboard", ut), r.interactive && r.keyboard && a.keyboard.enable()
@@ -47289,7 +47289,7 @@ ${ne.shaderPreludeCode.vertexSource}`,
           onRemove() {
             this._container.remove(), this._map.off("move", this._onMove), this._map = void 0
           }
-        }, M.ScrollZoomHandler = mc, M.Style = wi, M.TerrainControl = class {
+        }, M.ScrollZoomHandler = fc, M.Style = wi, M.TerrainControl = class {
           constructor(g) {
             this._toggleTerrain = () => {
               this._map.getTerrain() ? this._map.setTerrain(null) : this._map.setTerrain(this.options), this._updateTerrainIcon()
@@ -47940,7 +47940,7 @@ const ak = [{
   __t = new Ys(_a);
 
 function Np(c, i) {
-  const [e, S] = __t.pixelsToLatLon(c, i, pc);
+  const [e, S] = __t.pixelsToLatLon(c, i, dc);
   return [S, e]
 }
 
@@ -48059,16 +48059,16 @@ const sk = m_t(),
     section: c.properties.section
   })),
   _w = "cuptile",
-  uc = 256,
-  fw = new Ys(uc),
+  Fc = 1e3,
+  fw = new Ys(Fc),
   Em = new Ys(_a),
   lf = [...new Map(mm.map(c => [`${c.tileX},${c.tileY}`, c])).values()],
   g_t = Math.min(...lf.map(c => c.tileX)),
   v_t = Math.max(...lf.map(c => c.tileX)),
   y_t = Math.min(...lf.map(c => c.tileY)),
   b_t = Math.max(...lf.map(c => c.tileY)),
-  [x_t, w_t] = Em.pixelsToLatLon(g_t * _a, y_t * _a, pc),
-  [k_t, T_t] = Em.pixelsToLatLon((v_t + 1) * _a, (b_t + 1) * _a, pc),
+  [x_t, w_t] = Em.pixelsToLatLon(g_t * _a, y_t * _a, dc),
+  [k_t, T_t] = Em.pixelsToLatLon((v_t + 1) * _a, (b_t + 1) * _a, dc),
   mw = [w_t, k_t, T_t, x_t],
   gw = new Map;
 
@@ -48085,29 +48085,20 @@ function S_t(c, i, e) {
 
 function P_t() {
   Nd.addProtocol(_w, async c => {
-    const [i, e] = c.url.slice(_w.length + 3).split("?"), [S, R, B] = i.split("/").map(Number), M = Number(new URLSearchParams(e).get("v") ?? 0);
-    if (S > 12) {
-      const Z = new OffscreenCanvas(uc, uc);
-      return Z.getContext("2d"), {
-        data: await (await Z.convertToBlob({
-          type: "image/png"
-        })).arrayBuffer()
-      }
-    }
-    const [d, F] = fw.pixelsToLatLon(R * uc, B * uc, S), [re, pe] = fw.pixelsToLatLon((R + 1) * uc, (B + 1) * uc, S), [se, Ce] = Em.latLonToPixels(d, F, pc), [Pe, Ie] = Em.latLonToPixels(re, pe, pc), we = Math.floor(se / _a), W = Math.floor(Ce / _a), oe = Math.floor(Pe / _a), he = Math.floor(Ie / _a), fe = lf.filter(Z => Z.tileX >= we && Z.tileX <= oe && Z.tileY >= W && Z.tileY <= he);
+    const [i, e] = c.url.slice(_w.length + 3).split("?"), [S, R, B] = i.split("/").map(Number), M = Number(new URLSearchParams(e).get("v") ?? 0), [d, F] = fw.pixelsToLatLon(R * Fc, B * Fc, S), [re, pe] = fw.pixelsToLatLon((R + 1) * Fc, (B + 1) * Fc, S), [se, Ce] = Em.latLonToPixels(d, F, dc), [Pe, Ie] = Em.latLonToPixels(re, pe, dc), we = Math.floor(se / _a), W = Math.floor(Ce / _a), oe = Math.floor(Pe / _a), he = Math.floor(Ie / _a), fe = lf.filter(Z => Z.tileX >= we && Z.tileX <= oe && Z.tileY >= W && Z.tileY <= he);
     if (fe.length === 0) {
-      const Z = new OffscreenCanvas(uc, uc);
+      const Z = new OffscreenCanvas(Fc, Fc);
       return Z.getContext("2d"), {
         data: await (await Z.convertToBlob({
           type: "image/png"
         })).arrayBuffer()
       }
     }
-    const _e = new OffscreenCanvas(uc, uc),
+    const _e = new OffscreenCanvas(Fc, Fc),
       Se = _e.getContext("2d");
     Se.imageSmoothingEnabled = !1;
-    const ce = uc / (Pe - se),
-      me = uc / (Ie - Ce);
+    const ce = Fc / (Pe - se),
+      me = Fc / (Ie - Ce);
     return await Promise.all(fe.map(async Z => {
       try {
         const H = await S_t(Z.tileX, Z.tileY, M),
@@ -49231,7 +49222,7 @@ function mft(c, i) {
       s(S) || ce(Se)
     })
   }
-  v(Ce), v(d), di(2), v(M), hc(M, () => ce => {
+  v(Ce), v(d), di(2), v(M), pc(M, () => ce => {
     pn(() => {
       e() ? ce.show() : ce.close()
     })
@@ -49779,7 +49770,7 @@ function Gft(c, i) {
         ye = Xt(H);
       cd(ye, () => e.page, ke => {
         var qe = Dw();
-        hc(qe, () => Ze => {
+        pc(qe, () => Ze => {
           const Te = new IntersectionObserver(Re => {
             Re[0].isIntersecting && !e.loading && (e.loading = !0, gn.getAllianceMembers(e.page).then(xe => {
               e.data = [...e.data, ...xe.data], e.hasNextPage = xe.hasNext, e.page++
@@ -49874,7 +49865,7 @@ function Gft(c, i) {
         ye = Xt(H);
       cd(ye, () => S.page, ke => {
         var qe = Dw();
-        hc(qe, () => Ze => {
+        pc(qe, () => Ze => {
           const Te = new IntersectionObserver(Re => {
             Re[0].isIntersecting && !S.loading && (S.loading = !0, gn.getAllianceBannedMembers(S.page).then(xe => {
               S.data = [...S.data, ...xe.data], S.hasNextPage = xe.hasNext, S.page++
@@ -50041,7 +50032,7 @@ ci(["click"]);
 var Qft = new Set(["$$slots", "$$events", "$$legacy"]),
   Jft = Sn('<svg><path d="M240-120q-45 0-89-22t-71-58q26 0 53-20.5t27-59.5q0-50 35-85t85-35q50 0 85 35t35 85q0 66-47 113t-113 47Zm230-240L360-470l358-358q11-11 27.5-11.5T774-828l54 54q12 12 12 28t-12 28L470-360Z"></path></svg>');
 
-function xc(c, i) {
+function bc(c, i) {
   let e = vn(i, Qft);
   var S = Jft();
   hn(S, () => ({
@@ -50280,7 +50271,7 @@ function Smt(c, i) {
         var Ve = I(Le, 2),
           Et = b(Ve),
           jt = b(Et);
-        xc(jt, {
+        bc(jt, {
           class: "inline size-4"
         });
         var ur = I(jt, 2),
@@ -50514,11 +50505,11 @@ function Mmt(c, i) {
     get onlastpixelclick() {
       return i.onlastpixelclick
     }
-  }), v(re), v(R), di(2), v(S), hc(S, () => se => {
+  }), v(re), v(R), di(2), v(S), pc(S, () => se => {
     pn(() => {
       e() ? (se.show(), Qa.url.searchParams.get("alliance") && (Qa.url.searchParams.delete("alliance"), au(Qa.url.toString()))) : se.close()
     })
-  }), te(se => N(F, se), [() => af()]), Ci("close", S, () => e(!1)), vl(2, re, () => yc, () => ({
+  }), te(se => N(F, se), [() => af()]), Ci("close", S, () => e(!1)), vl(2, re, () => vc, () => ({
     duration: 300
   })), A(c, S), bn()
 }
@@ -50663,7 +50654,7 @@ function Bmt(c, i) {
             s(R) && (await navigator.clipboard.write([new ClipboardItem({
               "image/png": s(R)
             })]), gr.info(qZ()))
-          }), vl(2, me, () => yc, () => ({
+          }), vl(2, me, () => vc, () => ({
             duration: 300
           })), A(Se, me)
         };
@@ -50941,7 +50932,7 @@ function igt(c, i) {
             }
             v(jt), te(qt => {
               Tr(jt, 1, qt), N(Ut, s(Et).title)
-            }, [() => bc(_5("border-base-content/10 relative flex h-11 min-w-max items-center overflow-visible rounded-t-xl border border-b-0 px-4 text-sm font-semibold transition-all duration-200 ease-out", s(B) === s(Et).id ? "bg-base-300 text-base-content -mb-px translate-y-0" : "text-base-content/80 hover:bg-base-200 hover:text-base-content translate-y-3 bg-transparent hover:translate-y-0"))]), Be("click", jt, () => we(s(Et).id)), A(Ve, jt)
+            }, [() => yc(_5("border-base-content/10 relative flex h-11 min-w-max items-center overflow-visible rounded-t-xl border border-b-0 px-4 text-sm font-semibold transition-all duration-200 ease-out", s(B) === s(Et).id ? "bg-base-300 text-base-content -mb-px translate-y-0" : "text-base-content/80 hover:bg-base-200 hover:text-base-content translate-y-3 bg-transparent hover:translate-y-0"))]), Be("click", jt, () => we(s(Et).id)), A(Ve, jt)
           }), v(st), v(Le), A(ze, Le)
         };
         de(Se, ze => {
@@ -51222,7 +51213,7 @@ function pgt(c, i) {
   var pe = I(F, 2),
     se = b(pe),
     Ce = b(se, !0);
-  v(se), v(pe), v(R), v(S), hc(S, () => Pe => {
+  v(se), v(pe), v(R), v(S), pc(S, () => Pe => {
     pn(() => {
       e() ? Pe.show() : Pe.close()
     })
@@ -51538,7 +51529,7 @@ function qgt(c, i) {
           v(Ne), v(yt), v(Ce), te((zt, At, nt, pt, Lt, We, wr, Dr, Rr, Qr, cr, Zr, Or, jn, eo, wo, In, pi, go, Xn, Nn, Ln, Ko, Oo) => {
             N(we, `${zt??""} `), N(W, ` ©
 					${At??""} `), N(_e, `v${e??""}`), N(G, nt), N(ke, pt), N(Re, Lt), N(st, We), N(ur, wr), N(Vt, Dr), N(Ft, Rr), N(at, Qr), It(ct, "src", Po.language === "pt" ? "https://www.youtube.com/embed/AcE85QM4iPQ?si=4UlrvT0wfGf_hEeC" : "https://www.youtube.com/embed/xOXtd-WzRxA?si=T5kNmgdqxbCusC_V"), N(rr, cr), N(dr, `${Zr??""} `), N(ot, ` ${Or??""}`), N(er, `${jn??""} `), N(ht, eo), N(kt, ` ${wo??""}`), N(br, In), It(bt, "href", pi), N(hr, go), It(qr, "href", `${Qa.url.origin??""}/terms/privacy`), N($e, Xn), It(Vr, "href", Nn), N(zr, Ln), N(Lr, Ko), N(Je, Oo)
-          }, [() => N2e(), () => Ole(), () => o4(), () => S4(), () => SW(), () => CWe(), () => X7e(), () => zqe(), () => GGe(), () => j1e(), () => _Z(), () => zGe(), () => Ple(), () => UG(), () => Hje(), () => HM(), () => UK(), () => k4(), () => CBe(), () => J5e(), () => m5(), () => A5(), () => VFe(), () => lA()]), vl(2, Ce, () => yc, () => ({
+          }, [() => N2e(), () => Ole(), () => o4(), () => S4(), () => SW(), () => CWe(), () => XBe(), () => zqe(), () => GGe(), () => j1e(), () => _Z(), () => zGe(), () => Ple(), () => UG(), () => Hje(), () => HM(), () => UK(), () => k4(), () => C7e(), () => J5e(), () => m5(), () => A5(), () => VFe(), () => lA()]), vl(2, Ce, () => vc, () => ({
             duration: 300
           })), A(se, Ce)
         };
@@ -52610,7 +52601,7 @@ function Rvt(c, i) {
         re = b(F);
       w4(re, {
         close: () => e(!1)
-      }), v(F), vl(2, F, () => yc, () => ({
+      }), v(F), vl(2, F, () => vc, () => ({
         duration: 300
       })), A(d, F)
     };
@@ -52618,7 +52609,7 @@ function Rvt(c, i) {
       e() && d(M)
     })
   }
-  v(R), di(2), v(S), hc(S, () => d => {
+  v(R), di(2), v(S), pc(S, () => d => {
     pn(() => {
       e() ? d.show() : d.close()
     })
@@ -53069,7 +53060,7 @@ ${F1()}`, !0), L(M, !0)
             ce = Xt(Se);
           cd(ce, () => s(B), me => {
             var G = $vt();
-            hc(G, () => Z => {
+            pc(G, () => Z => {
               const H = new IntersectionObserver(ye => {
                 ye[0].isIntersecting && !s(S) && (L(S, !0), gn.getNotificationPage(s(B)).then(ke => {
                   L(R, [...s(R) ?? [], ...ke.notifications], !0), L(B, ke.nextCursor, !0);
@@ -53417,7 +53408,7 @@ async function Tyt(c, i) {
   }
   return Mm.fromJson(kk(e), i)
 }
-const Syt = globalThis.__sveltekit_ljvh81.env,
+const Syt = globalThis.__sveltekit_2s6q64.env,
   zv = Syt.PUBLIC_GOOGLE_DRIVE_CLIENT_ID ?? "",
   Uw = "https://accounts.google.com/gsi/client",
   Pyt = "https://www.googleapis.com/auth/drive.appdata",
@@ -54738,7 +54729,7 @@ function vbt(c, i) {
     Ht = Me(!1);
 
   function at(U) {
-    return U instanceof Error && U.name === My ? O7() : U instanceof Error ? U.message : String(U)
+    return U instanceof Error && U.name === My ? OB() : U instanceof Error ? U.message : String(U)
   }
   async function ct() {
     try {
@@ -54750,14 +54741,14 @@ function vbt(c, i) {
   async function He() {
     Os.setEnabled(!1);
     try {
-      await Ll.disconnect(), gr.success(IB())
+      await Ll.disconnect(), gr.success(I7())
     } catch {
-      gr.error(fB())
+      gr.error(f7())
     }
   }
   async function vt() {
     try {
-      await Os.syncNow(!0), Os.lastError && gr.error(NB({
+      await Os.syncNow(!0), Os.lastError && gr.error(N7({
         error: Os.lastError
       }))
     } catch (U) {
@@ -54799,14 +54790,14 @@ function vbt(c, i) {
     }, rr))
   }
   let Qe = Me(Bo(Date.now())),
-    ht = $(() => Ll.connected ? Os.syncing ? J7() : Os.pendingCount > 0 ? P7({
+    ht = $(() => Ll.connected ? Os.syncing ? JB() : Os.pendingCount > 0 ? PB({
       count: Os.pendingCount
-    }) : e7({
+    }) : eB({
       time: kt(Os.lastSyncAt, s(Qe))
     }) : oF());
 
   function kt(U, ue) {
-    if (U === null) return h7();
+    if (U === null) return hB();
     const je = Math.max(0, Math.round((ue - U) / 1e3));
     if (je < 60) return `${je}s ago`;
     const tt = Math.round(je / 60);
@@ -56049,7 +56040,7 @@ function vbt(c, i) {
     }
     jo(U), et();
     const je = s(Ve) !== "build";
-    zi(), L(Ve, "build"), Si(), an.placementSession = !1, Ls.setColorPaletteMode(ol(U, ue.colorPaletteMode ?? "all")), Ls.setHighlightSelectedColor(!1), kc(U, Oa(s(jt))), fa(U, re), je && i.onopenbuild()
+    zi(), L(Ve, "build"), Si(), an.placementSession = !1, Ls.setColorPaletteMode(ol(U, ue.colorPaletteMode ?? "all")), Ls.setHighlightSelectedColor(!1), wc(U, Oa(s(jt))), fa(U, re), je && i.onopenbuild()
   }
   async function Ml() {
     const U = an.activeTemplateId;
@@ -56138,28 +56129,28 @@ function vbt(c, i) {
     ue && (L(_t, U, !0), L(Mt, ue.name, !0), await iu(), (je = s(St)) == null || je.focus(), (tt = s(St)) == null || tt.select())
   }
 
-  function _c() {
+  function hc() {
     L(_t, null), L(Mt, ""), L(St, null)
   }
 
   function oc() {
     const U = s(_t);
     if (!U) {
-      _c();
+      hc();
       return
     }
     const ue = an.getById(U);
     if (!ue) {
-      _c();
+      hc();
       return
     }
     const je = s(Mt).trim();
     je.length !== 0 && (je !== ue.name && an.update(U, {
       name: je
-    }), _c())
+    }), hc())
   }
 
-  function kc(U, ue) {
+  function wc(U, ue) {
     an.update(U, {
       opacity: ue
     }), i.map.getLayer(Ra) && i.map.setPaintProperty(Ra, "raster-opacity", ue)
@@ -56174,14 +56165,14 @@ function vbt(c, i) {
     }), Gi(U))
   }
 
-  function Tc(U, ue) {
+  function kc(U, ue) {
     const je = an.getById(U);
     !je || je.dithering === ue || (an.update(U, {
       dithering: ue
     }), Gi(U))
   }
 
-  function Sc(U, ue, je) {
+  function Tc(U, ue, je) {
     const tt = an.getById(U);
     if (!tt) return;
     const Yt = In(tt.bounds);
@@ -56193,7 +56184,7 @@ function vbt(c, i) {
     }))
   }
 
-  function Pc(U) {
+  function Sc(U) {
     const ue = an.getById(U),
       je = Se.get(U);
     if (!ue || !je) return;
@@ -56573,7 +56564,7 @@ function vbt(c, i) {
       const Mr = an.activeTemplateId;
       if (!Mr || !an.getById(Mr)) return;
       const fn = sr.key;
-      fn === "ArrowLeft" ? (sr.preventDefault(), Sc(Mr, -1, 0)) : fn === "ArrowRight" ? (sr.preventDefault(), Sc(Mr, 1, 0)) : fn === "ArrowUp" ? (sr.preventDefault(), Sc(Mr, 0, -1)) : fn === "ArrowDown" && (sr.preventDefault(), Sc(Mr, 0, 1))
+      fn === "ArrowLeft" ? (sr.preventDefault(), Tc(Mr, -1, 0)) : fn === "ArrowRight" ? (sr.preventDefault(), Tc(Mr, 1, 0)) : fn === "ArrowUp" ? (sr.preventDefault(), Tc(Mr, 0, -1)) : fn === "ArrowDown" && (sr.preventDefault(), Tc(Mr, 0, 1))
     };
     window.addEventListener("keydown", tt);
     const Yt = window.setInterval(() => {
@@ -56640,7 +56631,7 @@ function vbt(c, i) {
         {
           var Kn = ei => {
             var io = H0t();
-            hc(io, () => fo => (H.set(s(ue).id, fo), Gi(s(ue).id), () => H.delete(s(ue).id))), Be("pointerdown", io, fo => Ee(fo, s(ue).id)), A(ei, io)
+            pc(io, () => fo => (H.set(s(ue).id, fo), Gi(s(ue).id), () => H.delete(s(ue).id))), Be("pointerdown", io, fo => Ee(fo, s(ue).id)), A(ei, io)
           };
           de(to, ei => {
             s(Ve) === "edit" && ei(Kn)
@@ -56677,7 +56668,7 @@ function vbt(c, i) {
             s(sr) && ei(Zi)
           })
         }
-        v(mn), hc(mn, () => ei => (ye.set(s(ue).id, ei), () => ye.delete(s(ue).id))), te(() => {
+        v(mn), pc(mn, () => ei => (ye.set(s(ue).id, ei), () => ye.delete(s(ue).id))), te(() => {
           Pn = Tr(mn, 1, "overlay svelte-1mwy93i", null, Pn, {
             active: s(Yt),
             "pointer-events-auto": s(sr)
@@ -57001,7 +56992,7 @@ function vbt(c, i) {
   var li = I(zl, 2);
   {
     let U = $(() => VF()),
-      ue = $(() => rB()),
+      ue = $(() => r7()),
       je = $(() => EF());
     $v(li, {
       type: "warning",
@@ -57060,7 +57051,7 @@ function vbt(c, i) {
               var gi = xo => {
                   var ui = ibt();
                   ha(ui), ll(ui, vi => L(St, vi), () => s(St)), Be("keydown", ui, vi => {
-                    vi.key === "Enter" && oc(), vi.key === "Escape" && _c()
+                    vi.key === "Enter" && oc(), vi.key === "Escape" && hc()
                   }), Ci("blur", ui, oc), Pl(ui, () => s(Mt), vi => L(Mt, vi)), A(xo, ui)
                 },
                 lo = xo => {
@@ -57193,7 +57184,7 @@ function vbt(c, i) {
                   Ls.setColorPaletteMode(za), an.update(s(To).id, {
                     colorPaletteMode: za
                   })
-                }), Be("change", ya, qi => Tc(s(To).id, qi.currentTarget.checked)), Be("click", Ea, () => cu(s(To).id, !0, !1)), Be("click", cn, () => cu(s(To).id, !1, !0)), Be("click", Oi, () => fa(s(To).id, re)), Be("click", Ws, () => Pc(s(To).id)), A(xo, ui)
+                }), Be("change", ya, qi => kc(s(To).id, qi.currentTarget.checked)), Be("click", Ea, () => cu(s(To).id, !0, !1)), Be("click", cn, () => cu(s(To).id, !1, !0)), Be("click", Oi, () => fa(s(To).id, re)), Be("click", Ws, () => Sc(s(To).id)), A(xo, ui)
               };
               de(ao, xo => {
                 s(Et) || xo(_i)
@@ -57234,7 +57225,7 @@ function vbt(c, i) {
                     ao = b(Ao);
                   let _i;
                   var xo = b(ao);
-                  xc(xo, {
+                  bc(xo, {
                     class: "size-4"
                   });
                   var ui = I(xo, 2),
@@ -57452,7 +57443,7 @@ function Fk(c, i) {
   }));
   var F = b(d),
     re = b(F);
-  xc(re, {
+  bc(re, {
     class: "size-6"
   });
   var pe = I(re, 2),
@@ -58245,7 +58236,7 @@ function nxt(c, i) {
         var Re = Le => {
             var st = $bt(),
               Ve = Xt(st);
-            dc(Ve, {
+            uc(Ve, {
               class: "size-5"
             });
             var Et = I(Ve);
@@ -58289,7 +58280,7 @@ function nxt(c, i) {
       Rt.data && Pe(Ce)
     })
   }
-  v(pe), di(2), v(re), hc(re, () => Pe => {
+  v(pe), di(2), v(re), pc(re, () => Pe => {
     pn(() => {
       e() ? Pe.show() : Pe.close()
     })
@@ -58966,7 +58957,7 @@ function bxt(c, i) {
           children: (Br, _n) => {
             var Ot = Jf(),
               Fr = Xt(Ot);
-            xc(Fr, {
+            bc(Fr, {
               class: "inline size-5"
             });
             var $r = I(Fr);
@@ -59095,7 +59086,7 @@ function bxt(c, i) {
       })
     }
     v(Co), v(no), te(() => {
-      Tr(no, 1, bc({
+      Tr(no, 1, yc({
         tooltip: !0,
         "max-sm:h-6": s(ye),
         "max-sm:before:translate-x-1/4": s(_n) % 8 === 0 && s(Br).label.length > 7,
@@ -59104,7 +59095,7 @@ function bxt(c, i) {
         "max-xl:before:-translate-x-1/4": (s(_n) - 15) % 16 === 0 && s(Br).label.length > 7,
         "xl:before:translate-x-1/4": s(ye) && s(_n) % 32 === 0 && s(Br).label.length > 7,
         "xl:before:-translate-x-1/4": s(ye) && (s(_n) - 31) % 32 === 0 && s(Br).label.length > 7
-      })), It(no, "data-tip", s(Br).label), Tr(Co, 1, bc({
+      })), It(no, "data-tip", s(Br).label), Tr(Co, 1, yc({
         "btn relative aspect-square w-full rounded-xl": !0,
         "border-primary ring-primary ring-2": s($r),
         "border-base-300": !s($r) && s(Rn),
@@ -59229,7 +59220,7 @@ function bxt(c, i) {
       L(Se, xr, !0)
     }
   }), te((xr, Br, _n, Ot, Fr, $r) => {
-    N(Jt, `${xr??""} `), N(Cr, `${Br??""} `), Tr(Bt, 1, bc({
+    N(Jt, `${xr??""} `), N(Cr, `${Br??""} `), Tr(Bt, 1, yc({
       "btn btn-circle btn-sm": !0,
       "btn-ghost": !s(_e),
       "btn-primary": s(_e)
@@ -59239,7 +59230,7 @@ function bxt(c, i) {
       "opacity-50": !at.canUndo
     }), zr.disabled = !at.canUndo, N(zt, `${Fr??""} `), nt = Tr(At, 1, "btn btn-sm btn-circle btn-ghost text-base-content/80", null, nt, {
       "opacity-50": !at.canRedo
-    }), At.disabled = !at.canRedo, Tr(Dr, 1, bc({
+    }), At.disabled = !at.canRedo, Tr(Dr, 1, yc({
       "grid grid-cols-8 md:grid-cols-16 min-[100rem]:grid-cols-32": !0,
       "gap-0.5 sm:grid-cols-16 sm:gap-1 xl:grid-cols-32": s(ye),
       "gap-1": !s(ye)
@@ -59772,13 +59763,13 @@ function Lxt(c, i) {
   var Te = I(F, 2),
     Re = b(Te),
     xe = b(Re, !0);
-  v(Re), v(Te), v(d), hc(d, () => ze => {
+  v(Re), v(Te), v(d), pc(d, () => ze => {
     pn(() => {
       e() ? ze.showModal() : ze.close()
     })
   }), te((ze, Le, st, Ve, Et, jt, ur, Ut, _t) => {
     N(Ce, ze), N(we, Le), N(W, ` ${st??""}`), N(he, `${Ve??""} ${Et??""}`), N(_e, s(M)), It(Se, "placeholder", jt), N(H, ur), ye.disabled = s(B), N(ke, `${Ut??""} `), N(xe, _t)
-  }, [() => ry(), () => qE(), () => k7e(), () => JBe(), () => Gqe(), () => n9e(), () => Wd(), () => ry(), () => Xd()]), Ci("close", d, () => e(!1)), Pl(Se, () => s(S), ze => L(S, ze)), Be("click", Z, () => {
+  }, [() => ry(), () => qE(), () => kBe(), () => J7e(), () => Gqe(), () => n9e(), () => Wd(), () => ry(), () => Xd()]), Ci("close", d, () => e(!1)), Pl(Se, () => s(S), ze => L(S, ze)), Be("click", Z, () => {
     e(!1)
   }), Be("click", ye, async () => {
     if (s(S) !== s(M)) {
@@ -61030,7 +61021,7 @@ function g1t(c, i) {
       s(oe) && Pt(bi)
     })
   }
-  v(ot), hc(ot, () => Pt => {
+  v(ot), pc(ot, () => Pt => {
     pn(() => {
       e() ? Pt.showModal() : Pt.close()
     })
@@ -61053,9 +61044,9 @@ function g1t(c, i) {
       L(Gt, Pt, !0)
     }
   }), te((Pt, Zt, ar, wn, en, Bn, bo, Zn, jo, $o, Si, wi, Go, ri, Qo, ki, Ba, xa, fa, Oa, yl, cl) => {
-    N(ht, Pt), Tr(Lr, 1, `tab ${s(se)==="settings"?"tab-active":""}`), N(Ne, Zt), Tr(Je, 1, `tab ${s(se)==="photo"?"tab-active":""}`), N(zt, ar), Tr(At, 1, `tab ${s(se)==="frame"?"tab-active":""}`), N(nt, wn), Tr(pt, 1, `tab ${s(se)==="style"?"tab-active":""}`), N(Lt, `${en??""} & ${Bn??""}`), Tr(We, 1, `tab ${s(se)==="flag"?"tab-active":""}`), N(wr, bo), Tr(Dr, 1, `tab ${s(se)==="badges"?"tab-active":""}`), N(Rr, Zn), Tr(cr, 1, bc(s(se) !== "photo" ? "hidden" : "")), N(wo, jo), Tr(Xn, 1, `size-full overflow-hidden rounded-full border-2 transition-all disabled:opacity-50 ${s(W)?"border-primary ring-primary ring-2 ring-offset-2":"border-base-content/15 hover:scale-105"}`), Xn.disabled = s(W), Tr(Zo, 1, bc(s(se) !== "frame" ? "hidden" : "")), Tr(Ai, 1, `tooltip relative aspect-square overflow-hidden rounded-2xl transition-all disabled:opacity-50 ${s(Ut)?"ring-primary ring-2 ring-offset-2":"hover:scale-105"}`), It(Ai, "data-tip", $o), N(oi, Si), Tr(hi, 1, bc(s(se) !== "style" ? "hidden" : "flex flex-col gap-5")), N(Wr, wi), N(ii, Go), Tr($a, 1, bc(s(se) !== "settings" ? "hidden" : "flex flex-col gap-4")), It(Qn, "data-tip", ri), N(Mo, ` ${Qo??""}`), N(da, ` ${ki??""}`), Ji = Tr(Li, 1, "label text-sm", null, Ji, {
+    N(ht, Pt), Tr(Lr, 1, `tab ${s(se)==="settings"?"tab-active":""}`), N(Ne, Zt), Tr(Je, 1, `tab ${s(se)==="photo"?"tab-active":""}`), N(zt, ar), Tr(At, 1, `tab ${s(se)==="frame"?"tab-active":""}`), N(nt, wn), Tr(pt, 1, `tab ${s(se)==="style"?"tab-active":""}`), N(Lt, `${en??""} & ${Bn??""}`), Tr(We, 1, `tab ${s(se)==="flag"?"tab-active":""}`), N(wr, bo), Tr(Dr, 1, `tab ${s(se)==="badges"?"tab-active":""}`), N(Rr, Zn), Tr(cr, 1, yc(s(se) !== "photo" ? "hidden" : "")), N(wo, jo), Tr(Xn, 1, `size-full overflow-hidden rounded-full border-2 transition-all disabled:opacity-50 ${s(W)?"border-primary ring-primary ring-2 ring-offset-2":"border-base-content/15 hover:scale-105"}`), Xn.disabled = s(W), Tr(Zo, 1, yc(s(se) !== "frame" ? "hidden" : "")), Tr(Ai, 1, `tooltip relative aspect-square overflow-hidden rounded-2xl transition-all disabled:opacity-50 ${s(Ut)?"ring-primary ring-2 ring-offset-2":"hover:scale-105"}`), It(Ai, "data-tip", $o), N(oi, Si), Tr(hi, 1, yc(s(se) !== "style" ? "hidden" : "flex flex-col gap-5")), N(Wr, wi), N(ii, Go), Tr($a, 1, yc(s(se) !== "settings" ? "hidden" : "flex flex-col gap-4")), It(Qn, "data-tip", ri), N(Mo, ` ${Qo??""}`), N(da, ` ${ki??""}`), Ji = Tr(Li, 1, "label text-sm", null, Ji, {
       "opacity-60": s(d)
-    }), t_(Wa, s(d) || s(M)), Wa.disabled = s(d), N(Gi, ` ${Ba??""} `), It(ji, "data-tip", xa), Tr($i, 1, bc(s(se) !== "badges" ? "hidden" : "")), N(Qt, fa), N(ja, Oa), N(Ks, yl), tn.disabled = s(F), N(Ho, cl), Uo.disabled = s(F)
+    }), t_(Wa, s(d) || s(M)), Wa.disabled = s(d), N(Gi, ` ${Ba??""} `), It(ji, "data-tip", xa), Tr($i, 1, yc(s(se) !== "badges" ? "hidden" : "")), N(Qt, fa), N(ja, Oa), N(Ks, yl), tn.disabled = s(F), N(Ho, cl), Uo.disabled = s(F)
   }, [() => z5(), () => qLe(), () => km(), () => lU(), () => Vp(), () => Jh(), () => ny(), () => Sz(), () => ty(), () => Qoe(), () => I5(), () => Vp(), () => Vp(), () => Ate(), () => BRe(), () => SRe(), () => SHe(), () => s(d) ? QHe() : BHe(), () => Hee(), () => h5(), () => ry(), () => Xd()]), Ci("cancel", ot, Pt => {
     Pt.preventDefault(), ur()
   }), Ci("close", ot, () => {
@@ -61451,7 +61442,7 @@ function swt(c, i) {
       v(jt);
       var qt = I(jt, 2),
         nr = b(qt);
-      xc(nr, {
+      bc(nr, {
         class: "inline size-4"
       });
       var xt = I(nr, 2),
@@ -61666,7 +61657,7 @@ function swt(c, i) {
             var Rn = I($r);
             v(Fr), te(po => {
               It(Fr, "href", `${Qa.url.origin??""}/tickets`), N(Rn, ` ${po??""}`)
-            }, [() => j7e()]), A(Ot, Fr)
+            }, [() => jBe()]), A(Ot, Fr)
           },
           Rr = $(() => i.user.hasAnyPermission(La.tickets));
         de(wr, Ot => {
@@ -62698,7 +62689,7 @@ function Dwt(c, i) {
         get regionId() {
           return i.region.id
         }
-      }), v(W), vl(2, W, () => yc, () => ({
+      }), v(W), vl(2, W, () => vc, () => ({
         duration: 300
       })), A(we, W)
     };
@@ -62706,7 +62697,7 @@ function Dwt(c, i) {
       e() && we(Ie)
     })
   }
-  v(B), di(2), v(R), hc(R, () => we => {
+  v(B), di(2), v(R), pc(R, () => we => {
     pn(() => {
       e() ? we.show() : we.close()
     })
@@ -66408,7 +66399,7 @@ function n5t(c, i) {
       L(F, !1)
     }
   }
-  const _c = Q => ({
+  const hc = Q => ({
     id: Q.id,
     name: Q.name,
     picture: Q.picture,
@@ -66438,7 +66429,7 @@ function n5t(c, i) {
     return [...Q.values()]
   }
 
-  function kc() {
+  function wc() {
     const Q = oc().map(ae => ae.id).filter(ae => ae !== 0).join(", ");
     navigator.clipboard.writeText(Q), gr.success("Player IDs copied to clipboard")
   }
@@ -66466,7 +66457,7 @@ function n5t(c, i) {
       L(M, !1)
     }
   }
-  async function Tc(Q, ae) {
+  async function kc(Q, ae) {
     try {
       L(B, !0);
       const Ee = Q.filter(ko => ko.id !== 0);
@@ -66533,7 +66524,7 @@ function n5t(c, i) {
         Yo = Tn[0] !== si[0] || Tn[1] !== si[1] ? ho.pixelsToLatLon(Tn[0] * i.tileSize + Yr[0] + .5, Tn[1] * i.tileSize + Yr[1] + .5, i.pixelArtZoom) : [Hr, Jr];
       i.onmodaction({
         action: ae,
-        targets: Ee.map(_c),
+        targets: Ee.map(hc),
         image: Nr,
         latLon: Yo,
         zoom: i.map.getZoom(),
@@ -66549,9 +66540,9 @@ function n5t(c, i) {
       L(B, !1)
     }
   }
-  var Sc = h2();
+  var Tc = h2();
   Ci("keydown", ad, Q => Q.code === "Escape" && At());
-  var Pc = Xt(Sc);
+  var Sc = Xt(Tc);
   {
     var ju = Q => {
         Fp(Q, {
@@ -66921,7 +66912,7 @@ function n5t(c, i) {
                             class: "size-4"
                           }), v(qn), te(() => qn.disabled = s(B)), Be("click", qn, () => {
                             const Ea = oc();
-                            Tc(Ea, "timeout")
+                            kc(Ea, "timeout")
                           }), A(Xo, qn)
                         },
                         ka = $(() => Rt.hasPermission(La.tools.selectArea.timeout));
@@ -66938,7 +66929,7 @@ function n5t(c, i) {
                             class: "size-4"
                           }), v(qn), te(() => qn.disabled = s(B)), Be("click", qn, () => {
                             const Ea = oc();
-                            Tc(Ea, "ban")
+                            kc(Ea, "ban")
                           }), A(Xo, qn)
                         },
                         es = $(() => Rt.hasPermission(La.tools.selectArea.ban));
@@ -67049,8 +67040,8 @@ function n5t(c, i) {
                           },
                           za = _s => {
                             var Cs = K2t(),
-                              fc = Xt(Cs);
-                            Wl(fc, {
+                              _c = Xt(Cs);
+                            Wl(_c, {
                               class: "size-5",
                               get userId() {
                                 return s(qn).id
@@ -67059,12 +67050,12 @@ function n5t(c, i) {
                                 return s(qn).picture
                               }
                             });
-                            var Gc = I(fc, 2),
-                              Cc = b(Gc);
+                            var Gc = I(_c, 2),
+                              Pc = b(Gc);
                             {
                               let bs = $(() => ks(s(qn).id)),
                                 fs = $(() => ks(s(qn).id));
-                              xm(Cc, {
+                              xm(Pc, {
                                 get userId() {
                                   return s(qn).id
                                 },
@@ -67075,29 +67066,29 @@ function n5t(c, i) {
                                   return `font-medium ${s(fs)??""} flex gap-1.5`
                                 },
                                 children: (Hi, Zc) => {
-                                  var mc = Y2t(),
-                                    ac = Xt(mc),
+                                  var fc = Y2t(),
+                                    ac = Xt(fc),
                                     qu = b(ac, !0);
                                   v(ac);
                                   var Wc = I(ac),
                                     md = b(Wc);
                                   v(Wc), te(() => {
                                     N(qu, s(qn).name), N(md, `#${s(qn).id??""}`)
-                                  }), A(Hi, mc)
+                                  }), A(Hi, fc)
                                 },
                                 $$slots: {
                                   default: !0
                                 }
                               })
                             }
-                            var dd = I(Cc, 2);
+                            var dd = I(Pc, 2);
                             {
                               var pu = bs => {
                                 {
                                   let fs = $(() => lu(s(qn).allianceId)),
                                     Hi = $(() => ks(s(qn).allianceId)),
                                     Zc = $(() => lu(s(qn).allianceId)),
-                                    mc = $(() => ks(s(qn).allianceId));
+                                    fc = $(() => ks(s(qn).allianceId));
                                   Hd(bs, {
                                     get allianceId() {
                                       return s(qn).allianceId
@@ -67106,7 +67097,7 @@ function n5t(c, i) {
                                       return `badge badge-sm ml-0.5 border-0 ${s(fs)??""} ${s(Hi)??""}`
                                     },
                                     get textClass() {
-                                      return `badge badge-sm ml-0.5 border-0 ${s(Zc)??""} ${s(mc)??""}`
+                                      return `badge badge-sm ml-0.5 border-0 ${s(Zc)??""} ${s(fc)??""}`
                                     },
                                     children: (ac, qu) => {
                                       di();
@@ -67181,8 +67172,8 @@ function n5t(c, i) {
                       {
                         var kn = _s => {
                             var Cs = Q2t(),
-                              fc = b(Cs);
-                            v(Cs), te(Gc => N(fc, `of ${Gc??""}`), [() => nt(s(qn).painted).toLocaleString(navigator.language)]), A(_s, Cs)
+                              _c = b(Cs);
+                            v(Cs), te(Gc => N(_c, `of ${Gc??""}`), [() => nt(s(qn).painted).toLocaleString(navigator.language)]), A(_s, Cs)
                           },
                           Yl = $(() => s(ra) !== nt(s(qn).painted));
                         de(ns, _s => {
@@ -67193,8 +67184,8 @@ function n5t(c, i) {
                       {
                         var Bu = _s => {
                           var Cs = J2t(),
-                            fc = b(Cs);
-                          v(Cs), te(Gc => N(fc, `(${Gc??""} selected)`), [() => s(cn).toLocaleString(navigator.language)]), A(_s, Cs)
+                            _c = b(Cs);
+                          v(Cs), te(Gc => N(_c, `(${Gc??""} selected)`), [() => s(cn).toLocaleString(navigator.language)]), A(_s, Cs)
                         };
                         de(du, _s => {
                           s(cn) > 0 && !s(Oi) && _s(Bu)
@@ -67209,7 +67200,7 @@ function n5t(c, i) {
                       }), A(Xo, ts)
                     }), v(Rs), v(zo), v(Wn), te(() => {
                       t_(ao, s(Mn) !== "none"), ao.indeterminate = s(Mn) === "some"
-                    }), Be("click", ao, sn), Be("click", xo, kc), A(Fo, Wn)
+                    }), Be("click", ao, sn), Be("click", xo, wc), A(Fo, Wn)
                   };
                 de(ei, Fo => {
                   s(Xn).length === 0 ? Fo(io) : Fo(fo, -1)
@@ -67288,11 +67279,11 @@ function n5t(c, i) {
           duration: 100
         })), A(Q, ae)
       };
-    de(Pc, Q => {
+    de(Sc, Q => {
       e.length < 2 ? Q(ju) : Q(Fu, -1)
     })
   }
-  var cu = I(Pc, 2);
+  var cu = I(Sc, 2);
   {
     var uu = Q => {
       d2t(Q, {
@@ -67321,7 +67312,7 @@ function n5t(c, i) {
       s(re) && Q(uu)
     })
   }
-  A(c, Sc), bn()
+  A(c, Tc), bn()
 }
 ci(["pointerdown", "click"]);
 var o5t = new Set(["$$slots", "$$events", "$$legacy"]),
@@ -67542,7 +67533,7 @@ function z5t(c, i) {
       Te = yt => {
         var bt = _5t(),
           hr = b(bt);
-        xc(hr, {
+        bc(hr, {
           class: "text-base-content/40 size-10"
         }), v(bt), A(yt, bt)
       },
@@ -67960,7 +67951,7 @@ function z5t(c, i) {
   var Qe = I(ye, 2),
     ht = b(Qe),
     kt = b(ht);
-  xc(kt, {
+  bc(kt, {
     class: "size-4"
   });
   var lr = I(kt);
@@ -67968,7 +67959,7 @@ function z5t(c, i) {
   var Jt = I(Qe, 2),
     br = b(Jt),
     ir = b(br);
-  xc(ir, {
+  bc(ir, {
     class: "size-4"
   });
   var Ar = I(ir);
@@ -68641,7 +68632,7 @@ function Q5t(c, i) {
             qe = Ze => {
               var Te = Y5t(),
                 Re = Xt(Te);
-              dc(Re, {
+              uc(Re, {
                 class: "size-3"
               });
               var xe = I(Re, 2),
@@ -68966,7 +68957,7 @@ function rkt(c, i) {
             Bt = wt => {
               var pr = nm(),
                 yt = Xt(pr);
-              dc(yt, {
+              uc(yt, {
                 class: "size-3"
               });
               var bt = I(yt, 2),
@@ -69053,7 +69044,7 @@ function rkt(c, i) {
             Bt = wt => {
               var pr = nm(),
                 yt = Xt(pr);
-              dc(yt, {
+              uc(yt, {
                 class: "size-3"
               });
               var bt = I(yt, 2),
@@ -69160,7 +69151,7 @@ function rkt(c, i) {
               Lt = We => {
                 var wr = nm(),
                   Dr = Xt(wr);
-                dc(Dr, {
+                uc(Dr, {
                   class: "size-3"
                 });
                 var Rr = I(Dr, 2),
@@ -69271,7 +69262,7 @@ function rkt(c, i) {
               Lt = We => {
                 var wr = nm(),
                   Dr = Xt(wr);
-                dc(Dr, {
+                uc(Dr, {
                   class: "size-3"
                 });
                 var Rr = I(Dr, 2),
@@ -69804,7 +69795,7 @@ function Rkt(c, i) {
           c_(Vt, {
             class: "text-base-content/60 size-4.5 inline pb-0.5"
           }), v(Mt), te(qt => {
-            Tr(Mt, 1, bc({
+            Tr(Mt, 1, yc({
               "tooltip inline": !0,
               "lg:before:-translate-x-1/3": (G() + 1) % 4 === 0,
               "lg:before:translate-x-1/3": G() % 4 === 0,
@@ -69844,7 +69835,7 @@ function Rkt(c, i) {
               })
             }
             var nr = I(Vt, 2);
-            dc(nr, {
+            uc(nr, {
               class: "size-4"
             });
             var xt = I(nr, 2);
@@ -70069,7 +70060,7 @@ function L2(c, i) {
     })
   }
   var G = I(ce, 2);
-  dc(G, {
+  uc(G, {
     class: "size-4"
   });
   var Z = I(G),
@@ -71054,7 +71045,7 @@ function a3t(c, i) {
               s(re) === "main" ? kt(er) : s(re) === "all-frames" ? kt(Qe, 1) : s(re) === "all-styles" && kt(ht, 2)
             })
           }
-          v(ot), vl(2, ot, () => yc), A(it, ot)
+          v(ot), vl(2, ot, () => vc), A(it, ot)
         };
         de(dr, it => {
           Rt.data && Se() && it(Gt)
@@ -71417,7 +71408,7 @@ function qv(c, i) {
   v(we);
   var fe = I(we, 2),
     _e = b(fe);
-  xc(_e, {
+  bc(_e, {
     class: "size-3"
   });
   var Se = I(_e);
@@ -71453,7 +71444,6 @@ function h3t(c, i) {
         type: "raster",
         tiles: [d()],
         tileSize: 256,
-        minzoom: 3,
         bounds: mw
       }), !i.map.getLayer(S)) {
       const se = i.map.getLayer(e) ? e : void 0;
@@ -71461,6 +71451,8 @@ function h3t(c, i) {
         id: S,
         type: "raster",
         source: S,
+        maxzoom: 10.7,
+        minzoom: 3,
         paint: {
           "raster-resampling": "nearest",
           "raster-fade-duration": 0,
@@ -71552,7 +71544,7 @@ function f3t(c, i) {
     d = new Ys(_a);
 
   function F(he, fe) {
-    const [_e, Se] = d.pixelsToLatLon(he * _a, fe * _a, pc);
+    const [_e, Se] = d.pixelsToLatLon(he * _a, fe * _a, dc);
     return [Se, _e]
   }
   const [re, pe] = F(1350.5, 1244.5);
@@ -72152,7 +72144,7 @@ function N2(c, i) {
           v(Ut), v(ye);
           var Mt = I(ye, 2),
             Vt = b(Mt);
-          xc(Vt, {
+          bc(Vt, {
             class: "size-3"
           });
           var qt = I(Vt);
@@ -72296,8 +72288,8 @@ function J3t(c, i) {
   function re(we, W) {
     const oe = we * _a,
       he = W * _a,
-      [fe, _e] = B.pixelsToLatLon(oe, he, pc),
-      [Se, ce] = B.pixelsToLatLon(oe + _a, he + _a, pc);
+      [fe, _e] = B.pixelsToLatLon(oe, he, dc),
+      [Se, ce] = B.pixelsToLatLon(oe + _a, he + _a, dc);
     return [
       [_e, fe],
       [ce, fe],
@@ -72343,8 +72335,8 @@ function J3t(c, i) {
     for (const W of M(i.portals)) {
       const oe = W.tileX * _a,
         he = W.tileY * _a,
-        [fe, _e] = B.pixelsToLatLon(oe, he, pc),
-        [Se, ce] = B.pixelsToLatLon(oe + _a, he + _a, pc);
+        [fe, _e] = B.pixelsToLatLon(oe, he, dc),
+        [Se, ce] = B.pixelsToLatLon(oe + _a, he + _a, dc);
       if (ce < we.getWest() || _e > we.getEast() || fe < we.getSouth() || Se > we.getNorth()) continue;
       const me = d(W.key);
       i.map.getSource(me) ? i.map.getSource(me).updateImage({
@@ -72785,7 +72777,7 @@ function jTt(c, i) {
             qr = nt => {
               var pt = sTt(),
                 Lt = b(pt);
-              dc(Lt, {
+              uc(Lt, {
                 class: "size-5"
               });
               var We = I(Lt);
@@ -72802,7 +72794,7 @@ function jTt(c, i) {
                   wr = Dr => {
                     var Rr = lTt(),
                       Qr = Xt(Rr);
-                    dc(Qr, {
+                    uc(Qr, {
                       class: "text-info size-5"
                     });
                     var cr = I(Qr);
@@ -72823,7 +72815,7 @@ function jTt(c, i) {
           _r = b(zr);
         v(zr);
         var Lr = I(zr, 2);
-        dc(Lr, {
+        uc(Lr, {
           class: "text-primary size-3 opacity-60"
         });
         var Ne = I(Lr);
@@ -72832,7 +72824,7 @@ function jTt(c, i) {
           zt = b(Je);
         v(Je);
         var At = I(Je, 2);
-        dc(At, {
+        uc(At, {
           class: "text-primary size-3 opacity-60"
         }), v(Vr), v(ht), te((nt, pt, Lt, We, wr, Dr, Rr, Qr) => {
           N(Jt, `+${nt??""} ${pt??""}`), N(ir, Lt), Cr.disabled = s(fe) <= 1, wt.disabled = s(fe) >= s(Z), pr.disabled = s(Z) < 1 || s(fe) >= s(Z), N(yt, We), N(_r, `${wr??""} ${Dr??""}`), N(zt, `${Rr??""} ${Qr??""}`)
@@ -72958,7 +72950,7 @@ function jTt(c, i) {
         var pr = I(Bt, 2),
           yt = b(pr, !0),
           bt = I(yt);
-        dc(bt, {
+        uc(bt, {
           class: "size-3"
         });
         var hr = I(bt);
@@ -73366,7 +73358,7 @@ function G2(c, i) {
             Ut = _t => {
               var Mt = tSt(),
                 Vt = b(Mt);
-              xc(Vt, {
+              bc(Vt, {
                 class: "size-3.5"
               });
               var qt = I(Vt);
@@ -73402,7 +73394,7 @@ function G2(c, i) {
     var qe = xe => {
       var ze = nSt(),
         Le = b(ze);
-      xc(Le, {
+      bc(Le, {
         class: "size-3.5"
       });
       var st = I(Le);
@@ -75632,7 +75624,7 @@ function LCt(c, i) {
     d = fk.filter(({
       markdown: Wt
     }) => Wt),
-    F = pc,
+    F = dc,
     re = _a,
     pe = new Ys(re),
     se = F - .4,
@@ -76159,7 +76151,7 @@ function LCt(c, i) {
   }), Ja(() => {
     if (!navigator.serviceWorker) {
       setTimeout(() => {
-        console.log("Setting up service worker message listener", navigator.serviceWorker), gr.warning(rBe(), {
+        console.log("Setting up service worker message listener", navigator.serviceWorker), gr.warning(r7e(), {
           duration: 5e3
         })
       });
@@ -76241,7 +76233,7 @@ function LCt(c, i) {
           })
         }
         v(tn), te(Uo => {
-          It(tn, "title", Uo), Tr(tn, 1, bc({
+          It(tn, "title", Uo), Tr(tn, 1, yc({
             "btn btn-lg btn-square sm:btn-xl z-30 shadow-md": !0,
             "text-base-content/80": s(dr),
             "btn-primary btn-soft": !s(dr)
@@ -76350,7 +76342,7 @@ function LCt(c, i) {
             onclickalliance: () => {
               L(Qr, !0)
             }
-          }), v(tn), vl(3, tn, () => yc, () => ({
+          }), v(tn), vl(3, tn, () => vc, () => ({
             duration: 150
           })), A(xn, tn)
         };
@@ -76414,7 +76406,7 @@ function LCt(c, i) {
             L(Dr, !0)
           }), Be("click", Mi, () => {
             L(pt, !0)
-          }), vl(3, tn, () => yc, () => ({
+          }), vl(3, tn, () => vc, () => ({
             duration: 150
           })), A(xn, tn)
         },
@@ -76444,7 +76436,7 @@ function LCt(c, i) {
             })
           }, [() => s(_e) ? f4() : GX()]), Be("click", Ho, () => {
             L(_e, !s(_e)), s(_e) ? Yi.plop.play() : Yi.smallPlop.play()
-          }), vl(1, tn, () => yc, () => ({
+          }), vl(1, tn, () => vc, () => ({
             delay: 150,
             duration: 150
           })), A(xn, tn)
@@ -76601,9 +76593,9 @@ function LCt(c, i) {
           class: "size-5"
         });
         var Uo = I(Ho);
-        v(tn), te(uo => N(Uo, ` ${uo??""}`), [() => hle()]), vl(1, tn, () => yc, () => ({
+        v(tn), te(uo => N(Uo, ` ${uo??""}`), [() => hle()]), vl(1, tn, () => vc, () => ({
           duration: 1e3
-        })), vl(2, tn, () => yc), A(xn, tn)
+        })), vl(2, tn, () => vc), A(xn, tn)
       };
       de(sn, xn => {
         gn.online || xn(En)
@@ -76624,7 +76616,7 @@ function LCt(c, i) {
             center: s(W).getCenter(),
             zoom: F
           })
-        }), vl(3, tn, () => yc, () => ({
+        }), vl(3, tn, () => vc, () => ({
           duration: 300
         })), A(xn, tn)
       };
@@ -76854,7 +76846,7 @@ function LCt(c, i) {
                   return re
                 },
                 get pixelArtZoom() {
-                  return pc
+                  return dc
                 },
                 get season() {
                   return Pe
@@ -77042,7 +77034,7 @@ function LCt(c, i) {
       var Qt;
       (Qt = s(W)) == null || Qt.flyTo({
         center: Wt,
-        zoom: pc + 1
+        zoom: dc + 1
       }), Bc(Wt, s(he)), Vv.push({
         pos: Wt,
         zoom: s(he)
