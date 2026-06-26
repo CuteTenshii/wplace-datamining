@@ -4961,18 +4961,18 @@ Vui lòng sử dụng kênh hỗ trợ phù hợp nếu vấn đề của bạn 
     const e = n.locale ?? w();
     return e === "en" ? Nv() : e === "pt" ? Dv() : e === "ch" ? Lv() : e === "de" ? Pv() : e === "es" ? xv() : e === "fr" ? zv() : e === "it" ? Mv() : e === "jp" ? Cv() : e === "pl" ? jv() : e === "ru" ? Bv() : e === "uk" ? Fv() : Uv()
   },
-  qv = () => "Use more than one account to paint pixels",
-  Wv = () => "Usar mais de uma conta para pintar",
-  Vv = () => "使用多个账号绘制像素",
-  Kv = () => "Mehr als ein Konto zum Malen verwenden",
-  Hv = () => "Uso de más de una cuenta para pintar píxeles",
-  $v = () => "Utiliser plus d’un compte pour peindre",
-  Xv = () => "Usare più di un account per dipingere",
-  Yv = () => "複数のアカウントを使ってピクセルを塗った。",
-  Jv = () => "Używanie więcej niż jednego konta do malowania pikseli",
-  Zv = () => "Использование более одного аккаунта для рисования",
-  Qv = () => "Використання більше ніж одного акаунта для малювання",
-  eE = () => "Sử dụng nhiều hơn một tài khoản để tô pixel",
+  qv = () => "Paint with more than one account or using virtual machines, residential proxies, or multi-accounting browsers",
+  Wv = () => "Pintar com mais de uma conta ou usando máquinas virtuais, proxies residenciais ou navegadores multi-conta",
+  Vv = () => "使用多个账号绘制像素，或使用虚拟机、住宅代理或多账号浏览器",
+  Kv = () => "Mehr als ein Konto zum Malen verwenden oder virtuelle Maschinen, Residential-Proxys oder Multi-Accounting-Browser nutzen",
+  Hv = () => "Pintar con más de una cuenta o usar máquinas virtuales, proxies residenciales o navegadores multicuenta",
+  $v = () => "Utiliser plus d’un compte pour peindre, ou utiliser des machines virtuelles, des proxys résidentiels ou des navigateurs multi-comptes",
+  Xv = () => "Usare più di un account per dipingere, oppure usare macchine virtuali, proxy residenziali o browser multi-account",
+  Yv = () => "複数のアカウントを使ってピクセルを塗る、または仮想マシン、住宅プロキシ、マルチアカウントブラウザを使用する",
+  Jv = () => "Malowanie pikseli na więcej niż jednym koncie lub przy użyciu maszyn wirtualnych, proxy residential lub przeglądarek multi-kontowych",
+  Zv = () => "Рисование с более чем одного аккаунта или с использованием виртуальных машин, резидентных прокси или мультиаккаунт-браузеров",
+  Qv = () => "Малювання з більш ніж одного акаунта або з використанням віртуальних машин, резидентних проксі чи мультиакаунт-браузерів",
+  eE = () => "Vẽ pixel bằng nhiều hơn một tài khoản hoặc bằng máy ảo, proxy dân cư hoặc trình duyệt đa tài khoản",
   tE = (t = {}, n = {}) => {
     const e = n.locale ?? w();
     return e === "en" ? qv() : e === "pt" ? Wv() : e === "ch" ? Vv() : e === "de" ? Kv() : e === "es" ? Hv() : e === "fr" ? $v() : e === "it" ? Xv() : e === "jp" ? Yv() : e === "pl" ? Jv() : e === "ru" ? Zv() : e === "uk" ? Qv() : eE()
