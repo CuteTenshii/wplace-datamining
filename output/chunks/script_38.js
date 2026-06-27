@@ -1,11 +1,11 @@
 import "./Bzak7iHL.js";
 import {
-  a as e,
+  a as s,
   w as p
 } from "./DmPVOt2G.js";
 import {
-  d as a
-} from "./C9hRcinp.js";
+  e as a
+} from "./tuZNrlvy.js";
 import {
   r as l
 } from "./D4ILXblz.js";
@@ -13,14 +13,14 @@ var v = new Set(["$$slots", "$$events", "$$legacy"]),
   m = p('<svg><path d="M480-100q-133 0-226.5-92T160-416q0-63 24.5-120.5T254-638l226-222 226 222q45 44 69.5 101.5T800-416q0 132-93.5 224T480-100Z"></path></svg>');
 
 function w(t, o) {
-  let s = l(o, v);
+  let e = l(o, v);
   var r = m();
   a(r, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
-    ...s
-  })), e(t, r)
+    ...e
+  })), s(t, r)
 }
 export {
   w as D

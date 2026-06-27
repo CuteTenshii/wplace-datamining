@@ -9,8 +9,8 @@ import {
   i as w
 } from "./CPZ_RRGr.js";
 import {
-  d as e
-} from "./C9hRcinp.js";
+  e as l
+} from "./tuZNrlvy.js";
 import {
   r as c
 } from "./D4ILXblz.js";
@@ -20,12 +20,12 @@ var d = new Set(["$$slots", "$$events", "$$legacy", "filled"]),
 
 function b(i, s) {
   let a = c(s, d);
-  var l = g(),
-    m = n(l);
+  var e = g(),
+    m = n(e);
   {
     var f = t => {
         var r = h();
-        e(r, () => ({
+        l(r, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
           fill: "currentColor",
@@ -34,7 +34,7 @@ function b(i, s) {
       },
       p = t => {
         var r = q();
-        e(r, () => ({
+        l(r, () => ({
           xmlns: "http://www.w3.org/2000/svg",
           viewBox: "0 -960 960 960",
           fill: "currentColor",
@@ -45,7 +45,7 @@ function b(i, s) {
       s.filled ? t(f) : t(p, -1)
     })
   }
-  o(i, l)
+  o(i, e)
 }
 export {
   b as E
