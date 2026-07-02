@@ -8,7 +8,7 @@ var Fr = (n, t, e) => t in n ? Br(n, t, {
   writable: !0,
   value: e
 }) : n[t] = e;
-var P = (n, t, e) => Fr(n, typeof t != "symbol" ? t + "" : t, e),
+var L = (n, t, e) => Fr(n, typeof t != "symbol" ? t + "" : t, e),
   Ur = (n, t, e) => t.has(n) || ln("Cannot " + e);
 var T = (n, t, e) => (Ur(n, t, "read from private field"), e ? e.call(n) : t.get(n)),
   j = (n, t, e) => t.has(n) ? ln("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(n) : t.set(n, e);
@@ -23,15 +23,15 @@ import {
   u as Ne
 } from "./DmPVOt2G.js";
 import {
-  g as w
+  g
 } from "./BhCkpOlh.js";
-const GR = "https://maps.wplace.live",
-  qR = "8d582454-e5ec-4314-b1c2-89e460ac1d28",
+const tI = "https://maps.wplace.live",
+  nI = "8d582454-e5ec-4314-b1c2-89e460ac1d28",
   Wr = "svHwYf228UcW8vPuQ575",
-  WR = "pk_live_51RMHjBAtY4KIdFGnnJ9ZHjvgP68opqg7wlT7fA1HG3p91vfhVQyn6je810y5Cz3ggTycnJtFRkwHsYy1qJEyKRFW00x1i0iWMl",
+  rI = "pk_live_51RMHjBAtY4KIdFGnnJ9ZHjvgP68opqg7wlT7fA1HG3p91vfhVQyn6je810y5Cz3ggTycnJtFRkwHsYy1qJEyKRFW00x1i0iWMl",
   Vr = "true",
-  VR = "0x4AAAAAABpHqZ-6i7uL0nmG",
-  KR = "https://backend.wplace.live/files",
+  oI = "0x4AAAAAABpHqZ-6i7uL0nmG",
+  iI = "https://backend.wplace.live/files",
   rn = "https://backend.wplace.live",
   Kr = "" + new URL("../assets/pawtect_wasm_bg.8VPqYlMZ.wasm", import.meta.url).href;
 var Hr = "2.0.0";
@@ -425,7 +425,7 @@ function Do() {
   return n
 }
 
-function Lo() {
+function Po() {
   const {
     productSub: n
   } = navigator;
@@ -433,7 +433,7 @@ function Lo() {
   return n
 }
 
-function Po() {
+function Lo() {
   if (navigator.connection === void 0) throw new B(-1, "navigator.connection is undefined");
   if (navigator.connection.rtt === void 0) throw new B(-1, "navigator.connection.rtt is undefined");
   return navigator.connection.rtt
@@ -448,7 +448,7 @@ function zo() {
   return navigator.webdriver
 }
 
-function Mo() {
+function Co() {
   const n = document.createElement("canvas");
   if (typeof n.getContext != "function") throw new B(-2, "HTMLCanvasElement.getContext is not a function");
   const t = n.getContext("webgl");
@@ -462,7 +462,7 @@ function Mo() {
   }
 }
 
-function Co() {
+function Mo() {
   if (window.external === void 0) throw new B(-1, "window.external is undefined");
   const {
     external: n
@@ -549,16 +549,16 @@ const Fo = {
   documentFocus: Oo,
   userAgent: xo,
   appVersion: go,
-  rtt: Po,
+  rtt: Lo,
   windowSize: jo,
   pluginsLength: No,
   pluginsArray: Io,
   errorTrace: yo,
-  productSub: Lo,
-  windowExternal: Co,
+  productSub: Po,
+  windowExternal: Mo,
   mimeTypesConsistent: Ao,
   evalLength: bo,
-  webGL: Mo,
+  webGL: Co,
   webDriver: zo,
   languages: So,
   notificationPermissions: Ro,
@@ -626,7 +626,7 @@ function Ko() {
 }
 const Ho = /; wv\)|FBAN|FBAV|Instagram|BytedanceWebview|musical_ly|Line\/|Snapchat|Twitter|MicroMessenger/i;
 
-function HR() {
+function aI() {
   return $o() ? !1 : Ho.test(navigator.userAgent)
 }
 
@@ -639,10 +639,10 @@ function Xo(n = void 0) {
     e = (n == null ? void 0 : n.vendor) ?? navigator.vendor;
   return "brave" in navigator ? "Brave" : /\bEdg(?:e|A|iOS)?\//.test(t) ? "Edge" : /\bOPR\/|\bOpera\//.test(t) ? "Opera" : /\bVivaldi\//.test(t) ? "Vivaldi" : /\bYaBrowser\//.test(t) ? "Yandex" : /\bSamsungBrowser\//.test(t) ? "Samsung Internet" : /\bUCBrowser\/|\bUCWEB\//.test(t) ? "UC Browser" : /\bDuckDuckGo\/|\bDdg\//.test(t) ? "DuckDuckGo" : getComputedStyle(document.documentElement).getPropertyValue("--arc-palette-title") ? "Arc" : /Firefox\/|FxiOS\//.test(t) ? "Firefox" : /Chrome\/|CriOS\//.test(t) && /google/i.test(e) ? "Chrome" : /Safari\//.test(t) && /apple/i.test(e) ? "Safari" : "Unknown"
 }
-let Lt;
+let Pt;
 
 function Yo() {
-  return Lt || (Lt = Jo()), Lt
+  return Pt || (Pt = Jo()), Pt
 }
 
 function Jo() {
@@ -773,12 +773,12 @@ const Qo = `
     t.clearRect(0, 0, n.width, n.height), n.width = o.width, n.height = o.height, n.style && (n.style.display = "none");
     const d = (({
         seed: S,
-        offset: g,
+        offset: w,
         multiplier: z
       }) => {
-        let O = Number(S) % Number(g);
+        let O = Number(S) % Number(w);
         return {
-          getNextSeed: () => (O = Number(z) * O % Number(g), O)
+          getNextSeed: () => (O = Number(z) * O % Number(w), O)
         }
       })({
         seed: s,
@@ -788,59 +788,59 @@ const Qo = `
       {
         getNextSeed: y
       } = d,
-      p = (S, g, z, O) => {
-        const R = (S - 1) / g * (z || 1) || 0;
+      p = (S, w, z, O) => {
+        const R = (S - 1) / w * (z || 1) || 0;
         return O ? R : Math.floor(R)
       },
-      h = (S, g, z, O, R) => {
+      h = (S, w, z, O, R) => {
         const {
           width: F,
           height: pe
-        } = z, se = S.createRadialGradient(p(R(), g, F), p(R(), g, pe), p(R(), g, F), p(R(), g, F), p(R(), g, pe), p(R(), g, F));
-        se.addColorStop(0, O[p(R(), g, O.length)]), se.addColorStop(1, O[p(R(), g, O.length)]), S.fillStyle = se
+        } = z, se = S.createRadialGradient(p(R(), w, F), p(R(), w, pe), p(R(), w, F), p(R(), w, F), p(R(), w, pe), p(R(), w, F));
+        se.addColorStop(0, O[p(R(), w, O.length)]), se.addColorStop(1, O[p(R(), w, O.length)]), S.fillStyle = se
       },
       v = ["#FF6633", "#FFB399", "#FF33FF", "#FFFF99", "#00B3E6", "#E6B333", "#3366E6", "#999966", "#99FF99", "#B34D4D", "#80B300", "#809900", "#E6B3B3", "#6680B3", "#66991A", "#FF99E6", "#CCFF1A", "#FF1A66", "#E6331A", "#33FFCC", "#66994D", "#B366CC", "#4D8000", "#B33300", "#CC80CC", "#66664D", "#991AFF", "#E666FF", "#4DB3FF", "#1AB399", "#E666B3", "#33991A", "#CC9999", "#B3B31A", "#00E680", "#4D8066", "#809980", "#E6FF80", "#1AFF33", "#999933", "#FF3380", "#CCCC00", "#66E64D", "#4D80CC", "#9900B3", "#E64D66", "#4DB380", "#FF4D4D", "#99E6E6", "#6666FF"],
-      E = (S, g, z, O) => {
+      E = (S, w, z, O) => {
         const {
           width: R,
           height: F
         } = z, pe = 2.99;
-        S.font = `${F/pe}px ${r.replace(/!important/gm,"")}`, S.strokeText("👾A", p(O(), g, R), p(O(), g, F), p(O(), g, R))
+        S.font = `${F/pe}px ${r.replace(/!important/gm,"")}`, S.strokeText("👾A", p(O(), w, R), p(O(), w, F), p(O(), w, R))
       },
-      D = (S, g, z, O) => {
+      D = (S, w, z, O) => {
         const {
           width: R,
           height: F
         } = z;
-        S.beginPath(), S.arc(p(O(), g, R), p(O(), g, F), p(O(), g, Math.min(R, F)), p(O(), g, 2 * Math.PI, !0), p(O(), g, 2 * Math.PI, !0)), S.stroke()
+        S.beginPath(), S.arc(p(O(), w, R), p(O(), w, F), p(O(), w, Math.min(R, F)), p(O(), w, 2 * Math.PI, !0), p(O(), w, 2 * Math.PI, !0)), S.stroke()
       },
-      b = (S, g, z, O) => {
+      b = (S, w, z, O) => {
         const {
           width: R,
           height: F
         } = z;
-        S.beginPath(), S.moveTo(p(O(), g, R), p(O(), g, F)), S.bezierCurveTo(p(O(), g, R), p(O(), g, F), p(O(), g, R), p(O(), g, F), p(O(), g, R), p(O(), g, F)), S.stroke()
+        S.beginPath(), S.moveTo(p(O(), w, R), p(O(), w, F)), S.bezierCurveTo(p(O(), w, R), p(O(), w, F), p(O(), w, R), p(O(), w, F), p(O(), w, R), p(O(), w, F)), S.stroke()
       },
-      k = (S, g, z, O) => {
+      k = (S, w, z, O) => {
         const {
           width: R,
           height: F
         } = z;
-        S.beginPath(), S.moveTo(p(O(), g, R), p(O(), g, F)), S.quadraticCurveTo(p(O(), g, R), p(O(), g, F), p(O(), g, R), p(O(), g, F)), S.stroke()
+        S.beginPath(), S.moveTo(p(O(), w, R), p(O(), w, F)), S.quadraticCurveTo(p(O(), w, R), p(O(), w, F), p(O(), w, R), p(O(), w, F)), S.stroke()
       },
-      A = (S, g, z, O) => {
+      A = (S, w, z, O) => {
         if (!("ellipse" in S)) return;
         const {
           width: R,
           height: F
         } = z;
-        S.beginPath(), S.ellipse(p(O(), g, R), p(O(), g, F), p(O(), g, Math.floor(R / 2)), p(O(), g, Math.floor(F / 2)), p(O(), g, 2 * Math.PI, !0), p(O(), g, 2 * Math.PI, !0), p(O(), g, 2 * Math.PI, !0)), S.stroke()
+        S.beginPath(), S.ellipse(p(O(), w, R), p(O(), w, F), p(O(), w, Math.floor(R / 2)), p(O(), w, Math.floor(F / 2)), p(O(), w, 2 * Math.PI, !0), p(O(), w, 2 * Math.PI, !0), p(O(), w, 2 * Math.PI, !0)), S.stroke()
       },
-      L = [D, b, k];
-    Yo() !== "WebKit" && L.push(A), e && L.push(E), [...Array(i)].forEach(S => {
+      P = [D, b, k];
+    Yo() !== "WebKit" && P.push(A), e && P.push(E), [...Array(i)].forEach(S => {
       h(t, u, o, v, y), t.shadowBlur = p(y(), u, a, !0), t.shadowColor = v[p(y(), u, v.length)];
-      const g = L[p(y(), u, L.length)];
-      g(t, u, o, y), t.fill()
+      const w = P[p(y(), u, P.length)];
+      w(t, u, o, y), t.fill()
     })
   },
   pn = {
@@ -928,22 +928,22 @@ async function _i() {
     const u = (b, k) => {
         if (!b) return;
         const A = Z(() => b.getShaderPrecisionFormat(b[k], b.LOW_FLOAT)),
-          L = Z(() => b.getShaderPrecisionFormat(b[k], b.MEDIUM_FLOAT)),
-          C = Z(() => b.getShaderPrecisionFormat(b[k], b.HIGH_FLOAT)),
+          P = Z(() => b.getShaderPrecisionFormat(b[k], b.MEDIUM_FLOAT)),
+          M = Z(() => b.getShaderPrecisionFormat(b[k], b.HIGH_FLOAT)),
           S = Z(() => b.getShaderPrecisionFormat(b[k], b.HIGH_INT));
         return {
           LOW_FLOAT: A,
-          MEDIUM_FLOAT: L,
-          HIGH_FLOAT: C,
+          MEDIUM_FLOAT: P,
+          HIGH_FLOAT: M,
           HIGH_INT: S
         }
       },
       l = (b, k) => {
         const A = {};
         if (!k) return A;
-        for (const L in k) {
-          const C = k[L];
-          A[b + "." + L + ".precision"] = C ? Z(() => C.precision) : void 0, A[b + "." + L + ".rangeMax"] = C ? Z(() => C.rangeMax) : void 0, A[b + "." + L + ".rangeMin"] = C ? Z(() => C.rangeMin) : void 0
+        for (const P in k) {
+          const M = k[P];
+          A[b + "." + P + ".precision"] = M ? Z(() => M.precision) : void 0, A[b + "." + P + ".rangeMax"] = M ? Z(() => M.rangeMax) : void 0, A[b + "." + P + ".rangeMin"] = M ? Z(() => M.rangeMin) : void 0
         }
         return A
       },
@@ -951,11 +951,11 @@ async function _i() {
         const k = {};
         if (!b) return k;
         const A = b;
-        for (const L of ui) {
-          const C = A[L];
-          if (C === void 0) continue;
-          const S = b.getParameter(C);
-          S && ArrayBuffer.isView(S) ? k[L] = Array.from(S) : k[L] = S
+        for (const P of ui) {
+          const M = A[P];
+          if (M === void 0) continue;
+          const S = b.getParameter(M);
+          S && ArrayBuffer.isView(S) ? k[P] = Array.from(S) : k[P] = S
         }
         return k
       },
@@ -967,18 +967,18 @@ async function _i() {
       y = b => {
         if (!b) return [];
         const k = [];
-        for (const [A, L] of Object.entries(li)) {
-          const C = Z(() => b.getExtension(A));
-          if (C)
-            for (const S of L) {
-              const g = C[S];
-              if (typeof g != "number") continue;
+        for (const [A, P] of Object.entries(li)) {
+          const M = Z(() => b.getExtension(A));
+          if (M)
+            for (const S of P) {
+              const w = M[S];
+              if (typeof w != "number") continue;
               if (!di.has(S)) {
-                k.push(`${S}=${g}`);
+                k.push(`${S}=${w}`);
                 continue
               }
-              const z = Z(() => b.getParameter(g));
-              z == null ? k.push(`${S}=${g}`) : typeof z == "object" && "length" in z ? k.push(`${S}=${g}=${Array.from(z).join(",")}`) : k.push(`${S}=${g}=${z}`)
+              const z = Z(() => b.getParameter(w));
+              z == null ? k.push(`${S}=${w}`) : typeof z == "object" && "length" in z ? k.push(`${S}=${w}=${Array.from(z).join(",")}`) : k.push(`${S}=${w}=${z}`)
             }
         }
         return k.sort()
@@ -1070,7 +1070,7 @@ const fi = "client_timeout",
   wi = "wrong_worker_option",
   yi = "worker_initialization_failed",
   bi = "sandboxed_iframe",
-  Pe = "bundle_not_defined",
+  Le = "bundle_not_defined",
   re = {
     [fi]: "Client timeout",
     [pi]: "Network connection error",
@@ -1079,7 +1079,7 @@ const fi = "client_timeout",
     [Tt]: 'The provided endpoint in "endpoints" parameter is not a valid URL',
     [Wt]: "Handle on demand agent data error",
     [ke]: "Failed to load the JS script of the agent",
-    [Pe]: "9319",
+    [Le]: "9319",
     [hi]: "Can't parse the backend response. Make sure the proper endpoints are used.",
     [Vt]: "The `apiKey` option is not provided",
     [Kt]: "The `apiKey` option is not a string",
@@ -1231,8 +1231,8 @@ function Ei(n, t) {
         abort: y
       } = u, p = {
         failedAttempts: []
-      }, [h, v] = (function(b, k, A, L) {
-        const C = (function(z) {
+      }, [h, v] = (function(b, k, A, P) {
+        const M = (function(z) {
             const O = [...z];
             return {
               current: () => O[0],
@@ -1248,16 +1248,16 @@ function Ei(n, t) {
           S = (function(z, O) {
             let R = 0;
             return () => Math.random() * Math.min(O, z * Math.pow(2, R++))
-          })(A, L),
-          g = new Set;
-        return [C.current(), (z, O, R) => {
+          })(A, P),
+          w = new Set;
+        return [M.current(), (z, O, R) => {
           const F = k(z, O, R);
-          F.action === "exclude" ? C.exclude() : C.postpone();
+          F.action === "exclude" ? M.exclude() : M.postpone();
           const pe = () => Math.max(0, z.getTime() + S() - Date.now());
           let se;
           se = typeof F.delay == "number" ? F.delay : pe();
-          const Ie = C.current();
-          return se === 0 && Ie && Date.now() - z.getTime() < 50 && (g.has(Ie) ? se = pe() : g.add(Ie)), Ie === void 0 ? void 0 : [Ie, se]
+          const Ie = M.current();
+          return se === 0 && Ie && Date.now() - z.getTime() < 50 && (w.has(Ie) ? se = pe() : w.add(Ie)), Ie === void 0 ? void 0 : [Ie, se]
         }]
       })(o, s, _, d), E = (D = [y == null ? void 0 : y.then(b => p.aborted = {
         resolve: !0,
@@ -1291,7 +1291,7 @@ function Ei(n, t) {
       }
     }, o => ({
       result: o
-    }), Li, {
+    }), Pi, {
       maxAttemptCount: 5,
       backoffBase: 100,
       backoffCap: 3e3
@@ -1317,7 +1317,7 @@ function Ti(n) {
 function Oi(n) {
   return (function(t) {
     const e = Ot(t);
-    Pt = Pt || (function() {
+    Lt = Lt || (function() {
       let o;
       const i = new Uint32Array(256);
       for (let a = 0; a < 256; a++) {
@@ -1328,11 +1328,11 @@ function Oi(n) {
       return i
     })();
     let r = -1;
-    for (let o = 0; o < e.length; o++) r = r >>> 8 ^ Pt[255 & (r ^ e[o])];
+    for (let o = 0; o < e.length; o++) r = r >>> 8 ^ Lt[255 & (r ^ e[o])];
     return (-1 ^ r) >>> 0
   })(ur(n))
 }
-let Pt;
+let Lt;
 
 function ki(n, t) {
   return new Promise(e => (function(r, o, ...i) {
@@ -1392,7 +1392,7 @@ function xt(n) {
   return decodeURIComponent(escape(String.fromCharCode.apply(null, t)))
 }
 
-function Ni(n = Pi) {
+function Ni(n = Li) {
   return function(t) {
     let e, r;
     const {
@@ -1419,10 +1419,10 @@ function Ni(n = Pi) {
         const D = h.prepareScriptEndpoints(v, "https://fpnpmcdn.net/");
         if (D === null) throw new Q(re[Ht], Ht);
         return D.map(b => (function(k, A) {
-          const L = new URL(k, window.location.href),
-            C = L.pathname,
+          const P = new URL(k, window.location.href),
+            M = P.pathname,
             S = "4";
-          return L.pathname = `${C}${C.endsWith("/")?"":"/"}v${S}/${encodeURIComponent(A)}`, L.search = `?ci=jsl/${encodeURIComponent(Di)}`, L.href
+          return P.pathname = `${M}${M.endsWith("/")?"":"/"}v${S}/${encodeURIComponent(A)}`, P.search = `?ci=jsl/${encodeURIComponent(Di)}`, P.href
         })(b, E))
       })(n, s, a),
       [d, y] = (function() {
@@ -1444,9 +1444,9 @@ function Ni(n = Pi) {
               if ((function(A) {
                   if (URL.prototype) try {
                     return new URL(A, location.href), !1
-                  } catch (L) {
-                    if (dr(L)) return !0;
-                    throw L
+                  } catch (P) {
+                    if (dr(P)) return !0;
+                    throw P
                   }
                 })(k)) throw new Q(re[Tt], Tt);
               try {
@@ -1457,7 +1457,7 @@ function Ni(n = Pi) {
             }, () => {
               throw new Q(re[Et], Et)
             }).then(A => {
-              if (typeof(A == null ? void 0 : A.start) != "function") throw new Q(re[Pe], Pe);
+              if (typeof(A == null ? void 0 : A.start) != "function") throw new Q(re[Le], Le);
               return A
             })
           })(n, D)), E = await h.start({
@@ -1470,7 +1470,7 @@ function Ni(n = Pi) {
           return e = E, E
         } catch (h) {
           throw r = (function(v) {
-            return v instanceof Q && v.code === Pe ? new Q(re[ke], ke) : v
+            return v instanceof Q && v.code === Le ? new Q(re[ke], ke) : v
           })(h), r
         } finally {
           y()
@@ -1527,12 +1527,12 @@ function Tn(n) {
 }
 var Di = "4.1.1";
 
-function Li(n, t, e) {
+function Pi(n, t, e) {
   const r = e instanceof Q ? e.code : null;
   return r === Et || r === Tt ? {
     action: "exclude",
     delay: 0
-  } : r === Pe ? {
+  } : r === Le ? {
     action: "exclude",
     delay: "backoff"
   } : r === ke ? {
@@ -1543,7 +1543,7 @@ function Li(n, t, e) {
     delay: "backoff"
   }
 }
-const Pi = {
+const Li = {
     prepareScriptEndpoints: function(n, t) {
       return n === void 0 ? [t] : ft(n) ? (function(e, r) {
         let o, i = !1;
@@ -1601,7 +1601,7 @@ function _r(n, t) {
     if ((function(r) {
         if (!(r instanceof DOMException)) return !1;
         const o = r.message;
-        return zi.test(o) || Mi.test(o) || Ci.test(o)
+        return zi.test(o) || Ci.test(o) || Mi.test(o)
       })(e)) return t;
     throw e
   }
@@ -1612,8 +1612,8 @@ function _t(n) {
   return Ai(n) ? n : [n]
 }
 const zi = /The document is sandboxed and lacks the 'allow-same-origin' flag/,
-  Mi = /The operation is insecure/,
-  Ci = /Forbidden in a sandboxed document without the 'allow-same-origin' flag/;
+  Ci = /The operation is insecure/,
+  Mi = /Forbidden in a sandboxed document without the 'allow-same-origin' flag/;
 
 function $t(n) {
   return !!n && n.__type__ === lr
@@ -1702,7 +1702,7 @@ function fr(n, t) {
   }
 }
 
-function Mt(n, t, ...e) {
+function Ct(n, t, ...e) {
   n && (async function(r, o) {
     try {
       return await r()
@@ -1764,19 +1764,19 @@ const ia = function(n, t = {}) {
       try {
         (y = localStorage == null ? void 0 : localStorage.setItem) === null || y === void 0 || y.call(localStorage, _, d)
       } catch {}
-    })(u, s)), l.notifications.forEach(Ri), Mt(r, () => ({
+    })(u, s)), l.notifications.forEach(Ri), Ct(r, () => ({
       e: 25,
       result: {
         response: l
       }
-    }))) : Mt(r, () => ({
+    }))) : Ct(r, () => ({
       e: 25,
       result: {
         error: new Error("Failed to decode response")
       }
     }))
   } catch (l) {
-    throw Mt(r, () => ({
+    throw Ct(r, () => ({
       e: 25,
       result: {
         error: l instanceof Error ? l : new Error(String(l))
@@ -1825,7 +1825,7 @@ function Dn(n, t) {
     t(!1, e)
   }
 }
-async function Ln(n, t, e = 16) {
+async function Pn(n, t, e = 16) {
   const r = Array(n.length);
   let o = Date.now();
   for (let i = 0; i < n.length; ++i) {
@@ -1965,7 +1965,7 @@ function W(n, t) {
 const fa = [4283543511, 3981806797],
   pa = [3301882366, 444984403];
 
-function Pn(n) {
+function Ln(n) {
   const t = [0, n[0] >>> 1];
   W(n, t), Y(n, fa), t[1] = n[0] >>> 1, W(n, t), Y(n, pa), t[1] = n[0] >>> 1, W(n, t)
 }
@@ -2021,7 +2021,7 @@ function ga(n, t) {
     case 1:
       d[1] = e[_], W(u, d), Y(u, pt), Ee(u, 31), Y(u, mt), W(a, u)
   }
-  return W(a, r), W(s, r), ce(a, s), ce(s, a), Pn(a), Pn(s), ce(a, s), ce(s, a), ("00000000" + (a[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (a[1] >>> 0).toString(16)).slice(-8) + ("00000000" + (s[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (s[1] >>> 0).toString(16)).slice(-8)
+  return W(a, r), W(s, r), ce(a, s), ce(s, a), Ln(a), Ln(s), ce(a, s), ce(s, a), ("00000000" + (a[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (a[1] >>> 0).toString(16)).slice(-8) + ("00000000" + (s[0] >>> 0).toString(16)).slice(-8) + ("00000000" + (s[1] >>> 0).toString(16)).slice(-8)
 }
 
 function wa(n) {
@@ -2080,10 +2080,10 @@ function va(n, t) {
 
 function Ea(n, t, e, r) {
   const o = Object.keys(n).filter(a => la(e, a)),
-    i = ze(Ln(o, a => va(n[a], t), r));
+    i = ze(Pn(o, a => va(n[a], t), r));
   return async function() {
     const s = await i,
-      u = await Ln(s, d => ze(d()), r),
+      u = await Pn(s, d => ze(d()), r),
       l = await Promise.all(u),
       _ = {};
     for (let d = 0; d < o.length; ++d) _[o[d]] = l[d];
@@ -2216,7 +2216,7 @@ function Nt() {
   return n ? K([!("SharedWorker" in e), r[o] && "ontypechange" in r[o], !("sinkId" in new Audio)]) >= 2 : t ? K(["onorientationchange" in e, "orientation" in e, /android/i.test(r.appVersion)]) >= 2 : !1
 }
 
-function La() {
+function Pa() {
   const n = navigator,
     t = window,
     e = Audio.prototype,
@@ -2226,8 +2226,8 @@ function La() {
   return K(["srLatency" in e, "srChannelCount" in e, "devicePosture" in n, r && "segments" in r, "getTextInformation" in Image.prototype]) >= 3
 }
 
-function Pa() {
-  return Ma() ? -4 : xa()
+function La() {
+  return Ca() ? -4 : xa()
 }
 
 function xa() {
@@ -2242,7 +2242,7 @@ function xa() {
   i.type = "triangle", i.frequency.value = 1e4;
   const a = o.createDynamicsCompressor();
   a.threshold.value = -50, a.knee.value = 40, a.ratio.value = 12, a.attack.value = 0, a.release.value = .25, i.connect(a), a.connect(o.destination), i.start(0);
-  const [s, u] = Ca(o), l = ze(s.then(_ => ja(_.getChannelData(0).subarray(e)), _ => {
+  const [s, u] = Ma(o), l = ze(s.then(_ => ja(_.getChannelData(0).subarray(e)), _ => {
     if (_.name === "timeout" || _.name === "suspended") return -3;
     throw _
   }));
@@ -2253,11 +2253,11 @@ function za() {
   return te() && !un() && !Ra()
 }
 
-function Ma() {
-  return te() && lt() && ct() || Re() && La() && Sa()
+function Ca() {
+  return te() && lt() && ct() || Re() && Pa() && Sa()
 }
 
-function Ca(n) {
+function Ma(n) {
   let i = () => {};
   return [new Promise((s, u) => {
     let l = !1,
@@ -2365,7 +2365,7 @@ function Ua() {
 const Ga = "mmMwWLliI0O&1",
   qa = "48px",
   Te = ["monospace", "sans-serif", "serif"],
-  Mn = ["sans-serif-thin", "ARNO PRO", "Agency FB", "Arabic Typesetting", "Arial Unicode MS", "AvantGarde Bk BT", "BankGothic Md BT", "Batang", "Bitstream Vera Sans Mono", "Calibri", "Century", "Century Gothic", "Clarendon", "EUROSTILE", "Franklin Gothic", "Futura Bk BT", "Futura Md BT", "GOTHAM", "Gill Sans", "HELV", "Haettenschweiler", "Helvetica Neue", "Humanst521 BT", "Leelawadee", "Letter Gothic", "Levenim MT", "Lucida Bright", "Lucida Sans", "Menlo", "MS Mincho", "MS Outlook", "MS Reference Specialty", "MS UI Gothic", "MT Extra", "MYRIAD PRO", "Marlett", "Meiryo UI", "Microsoft Uighur", "Minion Pro", "Monotype Corsiva", "PMingLiU", "Pristina", "SCRIPTINA", "Segoe UI Light", "Serifa", "SimHei", "Small Fonts", "Staccato222 BT", "TRAJAN PRO", "Univers CE 55 Medium", "Vrinda", "ZWAdobeF"];
+  Cn = ["sans-serif-thin", "ARNO PRO", "Agency FB", "Arabic Typesetting", "Arial Unicode MS", "AvantGarde Bk BT", "BankGothic Md BT", "Batang", "Bitstream Vera Sans Mono", "Calibri", "Century", "Century Gothic", "Clarendon", "EUROSTILE", "Franklin Gothic", "Futura Bk BT", "Futura Md BT", "GOTHAM", "Gill Sans", "HELV", "Haettenschweiler", "Helvetica Neue", "Humanst521 BT", "Leelawadee", "Letter Gothic", "Levenim MT", "Lucida Bright", "Lucida Sans", "Menlo", "MS Mincho", "MS Outlook", "MS Reference Specialty", "MS UI Gothic", "MT Extra", "MYRIAD PRO", "Marlett", "Meiryo UI", "Microsoft Uighur", "Minion Pro", "Monotype Corsiva", "PMingLiU", "Pristina", "SCRIPTINA", "Segoe UI Light", "Serifa", "SimHei", "Small Fonts", "Staccato222 BT", "TRAJAN PRO", "Univers CE 55 Medium", "Vrinda", "ZWAdobeF"];
 
 function Wa() {
   return yr(async (n, {
@@ -2388,7 +2388,7 @@ function Wa() {
       u = () => Te.map(a),
       l = () => {
         const p = {};
-        for (const h of Mn) p[h] = Te.map(v => s(h, v));
+        for (const h of Cn) p[h] = Te.map(v => s(h, v));
         return p
       },
       _ = p => Te.some((h, v) => p[v].offsetWidth !== o[h] || p[v].offsetHeight !== i[h]),
@@ -2396,7 +2396,7 @@ function Wa() {
       y = l();
     e.appendChild(r);
     for (let p = 0; p < Te.length; p++) o[Te[p]] = d[p].offsetWidth, i[Te[p]] = d[p].offsetHeight;
-    return Mn.filter(p => _(y[p]))
+    return Cn.filter(p => _(y[p]))
   })
 }
 
@@ -2454,9 +2454,9 @@ function Ya(n) {
 
 function Ja(n, t) {
   Za(n, t);
-  const e = Ct(n),
-    r = Ct(n);
-  return e !== r ? ["unstable", "unstable"] : (Qa(n, t), [Ct(n), e])
+  const e = Mt(n),
+    r = Mt(n);
+  return e !== r ? ["unstable", "unstable"] : (Qa(n, t), [Mt(n), e])
 }
 
 function Za(n, t) {
@@ -2475,7 +2475,7 @@ function Qa(n, t) {
   t.fillStyle = "#f9c", t.arc(60, 60, 60, 0, Math.PI * 2, !0), t.arc(60, 60, 20, 0, Math.PI * 2, !0), t.fill("evenodd")
 }
 
-function Ct(n) {
+function Mt(n) {
   return n.toDataURL()
 }
 
@@ -2747,12 +2747,12 @@ async function Is(n) {
     r = e.createElement("div"),
     o = new Array(n.length),
     i = {};
-  Cn(r);
+  Mn(r);
   for (let a = 0; a < n.length; ++a) {
     const s = Ba(n[a]);
     s.tagName === "DIALOG" && s.show();
     const u = e.createElement("div");
-    Cn(u), u.appendChild(s), r.appendChild(u), o[a] = s
+    Mn(u), u.appendChild(s), r.appendChild(u), o[a] = s
   }
   for (; !e.body;) await kt(50);
   e.body.appendChild(r);
@@ -2764,7 +2764,7 @@ async function Is(n) {
   return i
 }
 
-function Cn(n) {
+function Mn(n) {
   n.style.setProperty("visibility", "hidden", "important"), n.style.setProperty("display", "block", "important")
 }
 
@@ -2785,7 +2785,7 @@ function Ds() {
     if (matchMedia(`(color-gamut: ${n})`).matches) return n
 }
 
-function Ls() {
+function Ps() {
   if (jn("inverted")) return !0;
   if (jn("none")) return !1
 }
@@ -2794,7 +2794,7 @@ function jn(n) {
   return matchMedia(`(inverted-colors: ${n})`).matches
 }
 
-function Ps() {
+function Ls() {
   if (Bn("active")) return !0;
   if (Bn("none")) return !1
 }
@@ -2812,7 +2812,7 @@ function zs() {
   }
 }
 
-function Ms() {
+function Cs() {
   if (Oe("no-preference")) return 0;
   if (Oe("high") || Oe("more")) return 1;
   if (Oe("low") || Oe("less")) return -1;
@@ -2823,7 +2823,7 @@ function Oe(n) {
   return matchMedia(`(prefers-contrast: ${n})`).matches
 }
 
-function Cs() {
+function Ms() {
   if (Fn("reduce")) return !0;
   if (Fn("no-preference")) return !1
 }
@@ -2849,34 +2849,34 @@ function Bs() {
 function Gn(n) {
   return matchMedia(`(dynamic-range: ${n})`).matches
 }
-const M = Math,
+const C = Math,
   H = () => 0;
 
 function Fs() {
-  const n = M.acos || H,
-    t = M.acosh || H,
-    e = M.asin || H,
-    r = M.asinh || H,
-    o = M.atanh || H,
-    i = M.atan || H,
-    a = M.sin || H,
-    s = M.sinh || H,
-    u = M.cos || H,
-    l = M.cosh || H,
-    _ = M.tan || H,
-    d = M.tanh || H,
-    y = M.exp || H,
-    p = M.expm1 || H,
-    h = M.log1p || H,
-    v = g => M.pow(M.PI, g),
-    E = g => M.log(g + M.sqrt(g * g - 1)),
-    D = g => M.log(g + M.sqrt(g * g + 1)),
-    b = g => M.log((1 + g) / (1 - g)) / 2,
-    k = g => M.exp(g) - 1 / M.exp(g) / 2,
-    A = g => (M.exp(g) + 1 / M.exp(g)) / 2,
-    L = g => M.exp(g) - 1,
-    C = g => (M.exp(2 * g) - 1) / (M.exp(2 * g) + 1),
-    S = g => M.log(1 + g);
+  const n = C.acos || H,
+    t = C.acosh || H,
+    e = C.asin || H,
+    r = C.asinh || H,
+    o = C.atanh || H,
+    i = C.atan || H,
+    a = C.sin || H,
+    s = C.sinh || H,
+    u = C.cos || H,
+    l = C.cosh || H,
+    _ = C.tan || H,
+    d = C.tanh || H,
+    y = C.exp || H,
+    p = C.expm1 || H,
+    h = C.log1p || H,
+    v = w => C.pow(C.PI, w),
+    E = w => C.log(w + C.sqrt(w * w - 1)),
+    D = w => C.log(w + C.sqrt(w * w + 1)),
+    b = w => C.log((1 + w) / (1 - w)) / 2,
+    k = w => C.exp(w) - 1 / C.exp(w) / 2,
+    A = w => (C.exp(w) + 1 / C.exp(w)) / 2,
+    P = w => C.exp(w) - 1,
+    M = w => (C.exp(2 * w) - 1) / (C.exp(2 * w) + 1),
+    S = w => C.log(1 + w);
   return {
     acos: n(.12312423423423424),
     acosh: t(1e308),
@@ -2895,10 +2895,10 @@ function Fs() {
     coshPf: A(1),
     tan: _(-1e300),
     tanh: d(1),
-    tanhPf: C(1),
+    tanhPf: M(1),
     exp: y(1),
     expm1: p(1),
-    expm1Pf: L(1),
+    expm1Pf: P(1),
     log1p: h(10),
     log1pPf: S(10),
     powPI: v(-100)
@@ -3162,7 +3162,7 @@ const dc = {
   fonts: Wa,
   domBlockers: As,
   fontPreferences: Gs,
-  audio: Pa,
+  audio: La,
   screenFrame: _s,
   canvas: Ka,
   osCpu: ns,
@@ -3184,11 +3184,11 @@ const dc = {
   vendorFlavors: Os,
   cookiesEnabled: ks,
   colorGamut: Ds,
-  invertedColors: Ls,
-  forcedColors: Ps,
+  invertedColors: Ps,
+  forcedColors: Ls,
   monochrome: zs,
-  contrast: Ms,
-  reducedMotion: Cs,
+  contrast: Cs,
+  reducedMotion: Ms,
   reducedTransparency: js,
   hdr: Bs,
   math: Fs,
@@ -3351,10 +3351,10 @@ async function Oc() {
       plugins: b,
       deviceMemory: k,
       languages: A,
-      dateTimeLocale: L,
-      ...C
+      dateTimeLocale: P,
+      ...M
     } = t.components;
-    e = C
+    e = M
   } else {
     const {
       languages: h,
@@ -3407,11 +3407,11 @@ function kc() {
   })
 }
 const Wn = "theme";
-var Me, Ce, je, Be, Fe, Ue, Ge, qe, We, Ve, Ke;
+var Ce, Me, je, Be, Fe, Ue, Ge, qe, We, Ve, Ke;
 class Sc {
   constructor() {
-    j(this, Me, V(!1));
     j(this, Ce, V(!1));
+    j(this, Me, V(!1));
     j(this, je, V(!1));
     j(this, Be, V(0));
     j(this, Fe, V(!1));
@@ -3426,16 +3426,16 @@ class Sc {
     }, 500), this.theme = localStorage.getItem(Wn), this.theme !== "dark" && this.theme !== "custom-winter" && (this.theme = "custom-winter")
   }
   get dropletsDialogOpen() {
-    return G(T(this, Me))
-  }
-  set dropletsDialogOpen(t) {
-    q(T(this, Me), t, !0)
-  }
-  get pendingHistoryDialogOpen() {
     return G(T(this, Ce))
   }
-  set pendingHistoryDialogOpen(t) {
+  set dropletsDialogOpen(t) {
     q(T(this, Ce), t, !0)
+  }
+  get pendingHistoryDialogOpen() {
+    return G(T(this, Me))
+  }
+  set pendingHistoryDialogOpen(t) {
+    q(T(this, Me), t, !0)
   }
   get storeDialogOpen() {
     return G(T(this, je))
@@ -3492,7 +3492,7 @@ class Sc {
     q(T(this, Ke), t, !0)
   }
 }
-Me = new WeakMap, Ce = new WeakMap, je = new WeakMap, Be = new WeakMap, Fe = new WeakMap, Ue = new WeakMap, Ge = new WeakMap, qe = new WeakMap, We = new WeakMap, Ve = new WeakMap, Ke = new WeakMap;
+Ce = new WeakMap, Me = new WeakMap, je = new WeakMap, Be = new WeakMap, Fe = new WeakMap, Ue = new WeakMap, Ge = new WeakMap, qe = new WeakMap, We = new WeakMap, Ve = new WeakMap, Ke = new WeakMap;
 const Ir = new Sc;
 
 function Ac() {
@@ -3582,7 +3582,7 @@ async function Dc(n, t) {
 }
 const Nr = 3;
 var He, $e;
-class Lc {
+class Pc {
   constructor() {
     j(this, He, V(null));
     j(this, $e, V(0))
@@ -3601,9 +3601,9 @@ class Lc {
   }
 }
 He = new WeakMap, $e = new WeakMap;
-const $ = new Lc;
+const $ = new Pc;
 async function Vn(n) {
-  if (n === 1) return Pc();
+  if (n === 1) return Lc();
   if (n === 2) {
     const t = await Dr();
     return t ? Kn("turnstile", t) : !1
@@ -3614,7 +3614,7 @@ async function Vn(n) {
   }
   return n === 4 ? zc() : !1
 }
-async function Pc() {
+async function Lc() {
   for (let n = 0; n < Nr; n++) try {
     const t = await Nc();
     if (!t) continue;
@@ -3643,14 +3643,14 @@ async function Kn(n, t) {
 const Ae = {};
 
 function Dr() {
-  return Lr(2)
+  return Pr(2)
 }
 
 function xc() {
-  return Lr(3)
+  return Pr(3)
 }
 
-function Lr(n) {
+function Pr(n) {
   const t = Ae[n];
   if (t) return t;
   const e = new Promise(r => {
@@ -3678,1795 +3678,1811 @@ function zc() {
   return Ae[4] = t, t
 }
 
-function $R(n) {
+function sI(n) {
   const t = $.current;
   !t || t.tier === 4 || (t.resolve(n), $.current = null)
 }
 
-function XR() {
+function cI() {
   const n = $.current;
   !n || n.tier === 4 || ($.errorCount += 1, $.errorCount >= Nr && (n.resolve(void 0), $.current = null))
 }
 
-function YR() {
+function uI() {
   const n = $.current;
   !n || n.tier !== 4 || (n.resolve(!0), $.current = null)
 }
 
-function JR() {
+function lI() {
   const n = $.current;
   n && (n.tier === 4 ? n.resolve(!1) : n.resolve(void 0), $.current = null)
 }
-const Mc = () => "Your account has been suspended for breaking the rules",
-  Cc = () => "Sua conta foi suspensa por quebrar as regras",
-  jc = () => "您的账号因违反规则已被暂停",
-  Bc = () => "Dein Konto wurde wegen Regelverstößen gesperrt",
-  Fc = () => "Tu cuenta ha sido suspendida por infringir las regras",
-  Uc = () => "Votre compte a été suspendu pour avoir enfreint les règles",
-  Gc = () => "Il tuo account è stato sospeso per aver infranto le regole",
-  qc = () => "ルール違反により、あなたのアカウントは一時停止されています。",
-  Wc = () => "Twoje konto zostało zawieszone za łamanie zasad",
-  Vc = () => "Ваш аккаунт был временно заблокирован за нарушение правил",
-  Kc = () => "Ваш обліковий запис було призупинено за порушення правил",
-  Hc = () => "Tài khoản của bạn đã bị tạm đình chỉ vì vi phạm luật",
+const Cc = () => "A punishment cache reload is already running",
+  Mc = () => "Um recarregamento do cache de punições já está em andamento",
+  jc = () => "处罚缓存重新加载已在进行中",
+  Bc = () => "Ein Neuladen des Strafen-Caches läuft bereits",
+  Fc = () => "Ya hay una recarga de la caché de sanciones en curso",
+  Uc = () => "Un rechargement du cache des sanctions est déjà en cours",
+  Gc = () => "Un ricaricamento della cache delle sanzioni è già in corso",
+  qc = () => "処罰キャッシュの再読み込みは既に実行中です",
+  Wc = () => "Przeładowanie pamięci kar już trwa",
+  Vc = () => "Перезагрузка кэша наказаний уже выполняется",
+  Kc = () => "Перезавантаження кешу покарань уже виконується",
+  Hc = () => "Quá trình tải lại bộ nhớ đệm hình phạt đang chạy",
+  $c = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? Cc() : e === "pt" ? Mc() : e === "ch" ? jc() : e === "de" ? Bc() : e === "es" ? Fc() : e === "fr" ? Uc() : e === "it" ? Gc() : e === "jp" ? qc() : e === "pl" ? Wc() : e === "ru" ? Vc() : e === "uk" ? Kc() : Hc()
+  },
+  Xc = () => "Your account has been suspended for breaking the rules",
+  Yc = () => "Sua conta foi suspensa por quebrar as regras",
+  Jc = () => "您的账号因违反规则已被暂停",
+  Zc = () => "Dein Konto wurde wegen Regelverstößen gesperrt",
+  Qc = () => "Tu cuenta ha sido suspendida por infringir las regras",
+  eu = () => "Votre compte a été suspendu pour avoir enfreint les règles",
+  tu = () => "Il tuo account è stato sospeso per aver infranto le regole",
+  nu = () => "ルール違反により、あなたのアカウントは一時停止されています。",
+  ru = () => "Twoje konto zostało zawieszone za łamanie zasad",
+  ou = () => "Ваш аккаунт был временно заблокирован за нарушение правил",
+  iu = () => "Ваш обліковий запис було призупинено за порушення правил",
+  au = () => "Tài khoản của bạn đã bị tạm đình chỉ vì vi phạm luật",
   Hn = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? Mc() : e === "pt" ? Cc() : e === "ch" ? jc() : e === "de" ? Bc() : e === "es" ? Fc() : e === "fr" ? Uc() : e === "it" ? Gc() : e === "jp" ? qc() : e === "pl" ? Wc() : e === "ru" ? Vc() : e === "uk" ? Kc() : Hc()
+    const e = t.locale ?? g();
+    return e === "en" ? Xc() : e === "pt" ? Yc() : e === "ch" ? Jc() : e === "de" ? Zc() : e === "es" ? Qc() : e === "fr" ? eu() : e === "it" ? tu() : e === "jp" ? nu() : e === "pl" ? ru() : e === "ru" ? ou() : e === "uk" ? iu() : au()
   },
-  $c = () => "Alliance name already taken",
-  Xc = () => "Já possui uma aliança com esse nome",
-  Yc = () => "该联盟名称已被占用",
-  Jc = () => "Der Allianzname ist bereits vergeben",
-  Zc = () => "Ese nombre de alianza ya está en uso",
-  Qc = () => "Ce nom d’alliance est déjà pris",
-  eu = () => "Esiste già un'alleanza con questo nome",
-  tu = () => "このアライアンス名は既に使用されています。",
-  nu = () => "Nazwa sojuszu jest już zajęta",
-  ru = () => "Такое название альянса уже используется",
-  ou = () => "Назва альянсу вже зайнята",
-  iu = () => "Tên liên minh đã được sử dụng",
-  au = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? $c() : e === "pt" ? Xc() : e === "ch" ? Yc() : e === "de" ? Jc() : e === "es" ? Zc() : e === "fr" ? Qc() : e === "it" ? eu() : e === "jp" ? tu() : e === "pl" ? nu() : e === "ru" ? ru() : e === "uk" ? ou() : iu()
-  },
-  su = () => "Alliance name exceeded the maximum number of characters",
-  cu = () => "O nome da aliança excedeu o número máximo de caracteres",
-  uu = () => "联盟名称超过最大字符数限制",
-  lu = () => "Der Allianzname überschreitet die maximale Zeichenanzahl",
-  du = () => "El nombre de la alianza superó el número máximo de caracteres",
-  _u = () => "Le nom de l’alliance a dépassé le nombre maximal de caractères",
-  fu = () => "Il nome dell'alleanza ha superato il numero massimo di caratteri",
-  pu = () => "アライアンス名が最大文字数を超えています。",
-  mu = () => "Nazwa sojuszu przekroczyła maksymalną liczbę znaków",
-  hu = () => "Название альянса превышает максимальную длину",
-  gu = () => "Назва альянсу перевищує максимально допустиму кількість символів",
-  wu = () => "Tên liên minh vượt quá số ký tự cho phép",
+  su = () => "Alliance name already taken",
+  cu = () => "Já possui uma aliança com esse nome",
+  uu = () => "该联盟名称已被占用",
+  lu = () => "Der Allianzname ist bereits vergeben",
+  du = () => "Ese nombre de alianza ya está en uso",
+  _u = () => "Ce nom d’alliance est déjà pris",
+  fu = () => "Esiste già un'alleanza con questo nome",
+  pu = () => "このアライアンス名は既に使用されています。",
+  mu = () => "Nazwa sojuszu jest już zajęta",
+  hu = () => "Такое название альянса уже используется",
+  gu = () => "Назва альянсу вже зайнята",
+  wu = () => "Tên liên minh đã được sử dụng",
   yu = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? su() : e === "pt" ? cu() : e === "ch" ? uu() : e === "de" ? lu() : e === "es" ? du() : e === "fr" ? _u() : e === "it" ? fu() : e === "jp" ? pu() : e === "pl" ? mu() : e === "ru" ? hu() : e === "uk" ? gu() : wu()
   },
-  bu = () => "Alliance with empty name",
-  vu = () => "Aliança com nome vazio",
-  Eu = () => "名称为空的联盟",
-  Tu = () => "Allianz mit leerem Namen",
-  Ou = () => "Alianza con nombre vacío",
-  ku = () => "Alliance avec nom vide",
-  Su = () => "Alleanza con nome vuoto",
-  Au = () => "名前が空のアライアンスです。",
-  Ru = () => "Sojusz z pustą nazwą",
-  Iu = () => "Альянс с пустым названием",
-  Nu = () => "Альянс із порожньою назвою",
-  Du = () => "Liên minh không có tên",
-  Lu = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+  bu = () => "Alliance name exceeded the maximum number of characters",
+  vu = () => "O nome da aliança excedeu o número máximo de caracteres",
+  Eu = () => "联盟名称超过最大字符数限制",
+  Tu = () => "Der Allianzname überschreitet die maximale Zeichenanzahl",
+  Ou = () => "El nombre de la alianza superó el número máximo de caracteres",
+  ku = () => "Le nom de l’alliance a dépassé le nombre maximal de caractères",
+  Su = () => "Il nome dell'alleanza ha superato il numero massimo di caratteri",
+  Au = () => "アライアンス名が最大文字数を超えています。",
+  Ru = () => "Nazwa sojuszu przekroczyła maksymalną liczbę znaków",
+  Iu = () => "Название альянса превышает максимальную длину",
+  Nu = () => "Назва альянсу перевищує максимально допустиму кількість символів",
+  Du = () => "Tên liên minh vượt quá số ký tự cho phép",
+  Pu = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
     return e === "en" ? bu() : e === "pt" ? vu() : e === "ch" ? Eu() : e === "de" ? Tu() : e === "es" ? Ou() : e === "fr" ? ku() : e === "it" ? Su() : e === "jp" ? Au() : e === "pl" ? Ru() : e === "ru" ? Iu() : e === "uk" ? Nu() : Du()
   },
-  Pu = () => "Botting",
-  xu = () => "Uso de bots",
-  zu = () => "脚本",
-  Mu = () => "Bot-Nutzung",
-  Cu = () => "Botting",
-  ju = () => "Bots",
-  Bu = () => "Uso di bot",
-  Fu = () => "ボット使用",
-  Uu = () => "Botting",
-  Gu = () => "Боттинг",
-  qu = () => "Боти",
-  Wu = () => "Botting",
+  Lu = () => "Alliance with empty name",
+  xu = () => "Aliança com nome vazio",
+  zu = () => "名称为空的联盟",
+  Cu = () => "Allianz mit leerem Namen",
+  Mu = () => "Alianza con nombre vacío",
+  ju = () => "Alliance avec nom vide",
+  Bu = () => "Alleanza con nome vuoto",
+  Fu = () => "名前が空のアライアンスです。",
+  Uu = () => "Sojusz z pustą nazwą",
+  Gu = () => "Альянс с пустым названием",
+  qu = () => "Альянс із порожньою назвою",
+  Wu = () => "Liên minh không có tên",
   Vu = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? Pu() : e === "pt" ? xu() : e === "ch" ? zu() : e === "de" ? Mu() : e === "es" ? Cu() : e === "fr" ? ju() : e === "it" ? Bu() : e === "jp" ? Fu() : e === "pl" ? Uu() : e === "ru" ? Gu() : e === "uk" ? qu() : Wu()
+    const e = t.locale ?? g();
+    return e === "en" ? Lu() : e === "pt" ? xu() : e === "ch" ? zu() : e === "de" ? Cu() : e === "es" ? Mu() : e === "fr" ? ju() : e === "it" ? Bu() : e === "jp" ? Fu() : e === "pl" ? Uu() : e === "ru" ? Gu() : e === "uk" ? qu() : Wu()
   },
-  Ku = () => "Use of software to completely automate painting",
-  Hu = () => "Uso de software para pintar de forma completamente automatizada ",
-  $u = () => "使用软件完全自动化绘制",
-  Xu = () => "Verwendung von Software, um das Malen vollständig zu automatisieren",
-  Yu = () => "Uso de software para automatizar completamente la pintura",
-  Ju = () => "Utilisation de logiciels pour automatiser complètement la peinture",
-  Zu = () => "Uso di software per dipingere in modo completamente automatizzato",
-  Qu = () => "ペイントを完全に自動化するソフトウェアの使用",
-  el = () => "Używanie oprogramowania do całkowicie zautomatyzowanego malowania",
-  tl = () => "Использование программ для полной автоматизации рисования",
-  nl = () => "Використання програм, які повністю автоматизують малювання",
-  rl = () => "Sử dụng phần mềm để tự động hóa hoàn toàn việc tô pixel",
+  Ku = () => "Botting",
+  Hu = () => "Uso de bots",
+  $u = () => "脚本",
+  Xu = () => "Bot-Nutzung",
+  Yu = () => "Botting",
+  Ju = () => "Bots",
+  Zu = () => "Uso di bot",
+  Qu = () => "ボット使用",
+  el = () => "Botting",
+  tl = () => "Боттинг",
+  nl = () => "Боти",
+  rl = () => "Botting",
   ol = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? Ku() : e === "pt" ? Hu() : e === "ch" ? $u() : e === "de" ? Xu() : e === "es" ? Yu() : e === "fr" ? Ju() : e === "it" ? Zu() : e === "jp" ? Qu() : e === "pl" ? el() : e === "ru" ? tl() : e === "uk" ? nl() : rl()
   },
-  il = () => "Breaking the rules",
-  al = () => "Quebrar as regras",
-  sl = () => "违反规则",
-  cl = () => "Regeln brechen",
-  ul = () => "Romper las reglas",
-  ll = () => "Violation des règles",
-  dl = () => "Violazione delle regole",
-  _l = () => "ルール違反",
-  fl = () => "Łamanie zasad",
-  pl = () => "Нарушение правил",
-  ml = () => "Порушення правил",
-  hl = () => "Vi phạm luật",
+  il = () => "Use of software to completely automate painting",
+  al = () => "Uso de software para pintar de forma completamente automatizada ",
+  sl = () => "使用软件完全自动化绘制",
+  cl = () => "Verwendung von Software, um das Malen vollständig zu automatisieren",
+  ul = () => "Uso de software para automatizar completamente la pintura",
+  ll = () => "Utilisation de logiciels pour automatiser complètement la peinture",
+  dl = () => "Uso di software per dipingere in modo completamente automatizzato",
+  _l = () => "ペイントを完全に自動化するソフトウェアの使用",
+  fl = () => "Używanie oprogramowania do całkowicie zautomatyzowanego malowania",
+  pl = () => "Использование программ для полной автоматизации рисования",
+  ml = () => "Використання програм, які повністю автоматизують малювання",
+  hl = () => "Sử dụng phần mềm để tự động hóa hoàn toàn việc tô pixel",
   gl = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? il() : e === "pt" ? al() : e === "ch" ? sl() : e === "de" ? cl() : e === "es" ? ul() : e === "fr" ? ll() : e === "it" ? dl() : e === "jp" ? _l() : e === "pl" ? fl() : e === "ru" ? pl() : e === "uk" ? ml() : hl()
   },
-  wl = () => "You have broken one of Wplace's rules",
-  yl = () => "Você quebrou uma das regras do Wplace",
-  bl = () => "你违反了 Wplace 的一项规则",
-  vl = () => "Du hast gegen eine der Wplace-Regeln verstoßen",
-  El = () => "Has infringido una de las reglas de Wplace",
-  Tl = () => "Vous avez enfreint l’une des règles de Wplace",
-  Ol = () => "Hai infranto una delle regole di Wplace",
-  kl = () => "Wplaceのルールのいずれかに違反しました。",
-  Sl = () => "Złamałeś jedną z zasad Wplace",
-  Al = () => "Вы нарушили одно из правил Wplace",
-  Rl = () => "Ви порушили одне з правил Wplace",
-  Il = () => "Bạn đã vi phạm một trong các luật của Wplace",
+  wl = () => "Breaking the rules",
+  yl = () => "Quebrar as regras",
+  bl = () => "违反规则",
+  vl = () => "Regeln brechen",
+  El = () => "Romper las reglas",
+  Tl = () => "Violation des règles",
+  Ol = () => "Violazione delle regole",
+  kl = () => "ルール違反",
+  Sl = () => "Łamanie zasad",
+  Al = () => "Нарушение правил",
+  Rl = () => "Порушення правил",
+  Il = () => "Vi phạm luật",
   Nl = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? wl() : e === "pt" ? yl() : e === "ch" ? bl() : e === "de" ? vl() : e === "es" ? El() : e === "fr" ? Tl() : e === "it" ? Ol() : e === "jp" ? kl() : e === "pl" ? Sl() : e === "ru" ? Al() : e === "uk" ? Rl() : Il()
   },
-  Dl = () => "You cannot paint over event pixels",
-  Ll = () => "Você não pode pintar sobre pixels de eventos",
-  Pl = () => "你不能覆盖活动像素",
-  xl = () => "Du kannst nicht über Event-Pixel malen",
-  zl = () => "No puedes pintar sobre píxeles de evento",
-  Ml = () => "Vous ne pouvez pas peindre sur des pixels d’événement",
-  Cl = () => "Non puoi dipingere sopra i pixel dell'evento",
-  jl = () => "イベント用のピクセルの上には塗れません。",
-  Bl = () => "Nie możesz malować po pikselach wydarzenia",
-  Fl = () => "Вы не можете рисовать по пикселям события",
-  Ul = () => "Ви не можете малювати поверх пікселів події",
-  Gl = () => "Bạn không thể tô lên pixel sự kiện",
+  Dl = () => "You have broken one of Wplace's rules",
+  Pl = () => "Você quebrou uma das regras do Wplace",
+  Ll = () => "你违反了 Wplace 的一项规则",
+  xl = () => "Du hast gegen eine der Wplace-Regeln verstoßen",
+  zl = () => "Has infringido una de las reglas de Wplace",
+  Cl = () => "Vous avez enfreint l’une des règles de Wplace",
+  Ml = () => "Hai infranto una delle regole di Wplace",
+  jl = () => "Wplaceのルールのいずれかに違反しました。",
+  Bl = () => "Złamałeś jedną z zasad Wplace",
+  Fl = () => "Вы нарушили одно из правил Wplace",
+  Ul = () => "Ви порушили одне з правил Wplace",
+  Gl = () => "Bạn đã vi phạm một trong các luật của Wplace",
+  ql = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? Dl() : e === "pt" ? Pl() : e === "ch" ? Ll() : e === "de" ? xl() : e === "es" ? zl() : e === "fr" ? Cl() : e === "it" ? Ml() : e === "jp" ? jl() : e === "pl" ? Bl() : e === "ru" ? Fl() : e === "uk" ? Ul() : Gl()
+  },
+  Wl = () => "You cannot paint over event pixels",
+  Vl = () => "Você não pode pintar sobre pixels de eventos",
+  Kl = () => "你不能覆盖活动像素",
+  Hl = () => "Du kannst nicht über Event-Pixel malen",
+  $l = () => "No puedes pintar sobre píxeles de evento",
+  Xl = () => "Vous ne pouvez pas peindre sur des pixels d’événement",
+  Yl = () => "Non puoi dipingere sopra i pixel dell'evento",
+  Jl = () => "イベント用のピクセルの上には塗れません。",
+  Zl = () => "Nie możesz malować po pikselach wydarzenia",
+  Ql = () => "Вы не можете рисовать по пикселям события",
+  ed = () => "Ви не можете малювати поверх пікселів події",
+  td = () => "Bạn không thể tô lên pixel sự kiện",
   $n = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? Dl() : e === "pt" ? Ll() : e === "ch" ? Pl() : e === "de" ? xl() : e === "es" ? zl() : e === "fr" ? Ml() : e === "it" ? Cl() : e === "jp" ? jl() : e === "pl" ? Bl() : e === "ru" ? Fl() : e === "uk" ? Ul() : Gl()
+    const e = t.locale ?? g();
+    return e === "en" ? Wl() : e === "pt" ? Vl() : e === "ch" ? Kl() : e === "de" ? Hl() : e === "es" ? $l() : e === "fr" ? Xl() : e === "it" ? Yl() : e === "jp" ? Jl() : e === "pl" ? Zl() : e === "ru" ? Ql() : e === "uk" ? ed() : td()
   },
-  ql = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
-  Wl = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
-  Vl = () => "无法连接到服务器。可能是你没有网络，或服务器已离线。请稍后重试。",
-  Kl = () => "Server nicht erreichbar. Vielleicht hast du keine Internetverbindung oder der Server ist offline. Versuche es später erneut.",
-  Hl = () => "No se puede conectar con el servidor. Puede que estés sin internet o el servidor esté caído. Inténtalo de nuevo más tarde.",
-  $l = () => "Impossible d’atteindre le serveur. Vous n’êtes peut-être pas connecté à Internet ou le serveur est hors ligne. Réessayez plus tard.",
-  Xl = () => "Impossibile contattare il server. Forse sei senza connessione o il server è offline. Riprova più tardi.",
-  Yl = () => "サーバーに接続できません。インターネットに接続されていないか、サーバーが停止している可能性があります。しばらくしてからもう一度お試しください。",
-  Jl = () => "Nie można połączyć się z serwerem. Być może nie masz internetu lub serwer nie działa. Spróbuj ponownie później.",
-  Zl = () => "Не удаётся подключиться к серверу. Возможно, у вас нет доступа к интернету или сервер недоступен. Попробуйте позже.",
-  Ql = () => "Не вдається підключитися до сервера. Можливо, у вас немає інтернет-зʼєднання або сервер недоступний. Спробуйте пізніше.",
-  ed = () => "Không thể kết nối tới máy chủ. Có thể bạn đang mất kết nối mạng hoặc máy chủ đang tạm ngưng. Hãy thử lại sau",
-  td = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? ql() : e === "pt" ? Wl() : e === "ch" ? Vl() : e === "de" ? Kl() : e === "es" ? Hl() : e === "fr" ? $l() : e === "it" ? Xl() : e === "jp" ? Yl() : e === "pl" ? Jl() : e === "ru" ? Zl() : e === "uk" ? Ql() : ed()
-  },
-  nd = () => "Challenge verification not completed",
-  rd = () => "Verificação do desafio não concluída",
-  od = () => "挑战验证未完成",
-  id = () => "Herausforderungsverifizierung nicht abgeschlossen",
-  ad = () => "Verificación del desafío no completada",
-  sd = () => "Vérification du défi non terminée",
-  cd = () => "Verifica della sfida non completata",
-  ud = () => "チャレンジ検証が完了していません",
-  ld = () => "Weryfikacja wyzwania niezakończona",
-  dd = () => "Верификация вызова не завершена",
-  _d = () => "Перевірку виклику не завершено",
-  fd = () => "Xác minh thử thách chưa hoàn thành",
-  Ut = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+  nd = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
+  rd = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
+  od = () => "无法连接到服务器。可能是你没有网络，或服务器已离线。请稍后重试。",
+  id = () => "Server nicht erreichbar. Vielleicht hast du keine Internetverbindung oder der Server ist offline. Versuche es später erneut.",
+  ad = () => "No se puede conectar con el servidor. Puede que estés sin internet o el servidor esté caído. Inténtalo de nuevo más tarde.",
+  sd = () => "Impossible d’atteindre le serveur. Vous n’êtes peut-être pas connecté à Internet ou le serveur est hors ligne. Réessayez plus tard.",
+  cd = () => "Impossibile contattare il server. Forse sei senza connessione o il server è offline. Riprova più tardi.",
+  ud = () => "サーバーに接続できません。インターネットに接続されていないか、サーバーが停止している可能性があります。しばらくしてからもう一度お試しください。",
+  ld = () => "Nie można połączyć się z serwerem. Być może nie masz internetu lub serwer nie działa. Spróbuj ponownie później.",
+  dd = () => "Не удаётся подключиться к серверу. Возможно, у вас нет доступа к интернету или сервер недоступен. Попробуйте позже.",
+  _d = () => "Не вдається підключитися до сервера. Можливо, у вас немає інтернет-зʼєднання або сервер недоступний. Спробуйте пізніше.",
+  fd = () => "Không thể kết nối tới máy chủ. Có thể bạn đang mất kết nối mạng hoặc máy chủ đang tạm ngưng. Hãy thử lại sau",
+  pd = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
     return e === "en" ? nd() : e === "pt" ? rd() : e === "ch" ? od() : e === "de" ? id() : e === "es" ? ad() : e === "fr" ? sd() : e === "it" ? cd() : e === "jp" ? ud() : e === "pl" ? ld() : e === "ru" ? dd() : e === "uk" ? _d() : fd()
   },
-  pd = () => "Couldn't complete the purchase. This item does not exist.",
-  md = () => "Não foi possível concluir a compra. Este item não existe.",
-  hd = () => "无法完成购买。该物品不存在。",
-  gd = () => "Kauf konnte nicht abgeschlossen werden. Dieses Item existiert nicht.",
-  wd = () => "No se pudo completar la compra. Este ítem no existe.",
-  yd = () => "Achat impossible. Cet objet n’existe pas.",
-  bd = () => "Impossibile completare l'acquisto. Questo oggetto non esiste.",
-  vd = () => "購入を完了できませんでした。このアイテムは存在しません。",
-  Ed = () => "Nie udało się dokończyć zakupu. Ten przedmiot nie istnieje.",
-  Td = () => "Не удалось завершить покупку. Этот предмет не существует.",
-  Od = () => "Не вдалося завершити покупку. Цей предмет не існує.",
-  kd = () => "Không thể hoàn tất giao dịch. Vật phẩm này không tồn tại.",
+  md = () => "Challenge verification not completed",
+  hd = () => "Verificação do desafio não concluída",
+  gd = () => "挑战验证未完成",
+  wd = () => "Herausforderungsverifizierung nicht abgeschlossen",
+  yd = () => "Verificación del desafío no completada",
+  bd = () => "Vérification du défi non terminée",
+  vd = () => "Verifica della sfida non completata",
+  Ed = () => "チャレンジ検証が完了していません",
+  Td = () => "Weryfikacja wyzwania niezakończona",
+  Od = () => "Верификация вызова не завершена",
+  kd = () => "Перевірку виклику не завершено",
+  Sd = () => "Xác minh thử thách chưa hoàn thành",
+  Ut = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? md() : e === "pt" ? hd() : e === "ch" ? gd() : e === "de" ? wd() : e === "es" ? yd() : e === "fr" ? bd() : e === "it" ? vd() : e === "jp" ? Ed() : e === "pl" ? Td() : e === "ru" ? Od() : e === "uk" ? kd() : Sd()
+  },
+  Ad = () => "Couldn't complete the purchase. This item does not exist.",
+  Rd = () => "Não foi possível concluir a compra. Este item não existe.",
+  Id = () => "无法完成购买。该物品不存在。",
+  Nd = () => "Kauf konnte nicht abgeschlossen werden. Dieses Item existiert nicht.",
+  Dd = () => "No se pudo completar la compra. Este ítem no existe.",
+  Pd = () => "Achat impossible. Cet objet n’existe pas.",
+  Ld = () => "Impossibile completare l'acquisto. Questo oggetto non esiste.",
+  xd = () => "購入を完了できませんでした。このアイテムは存在しません。",
+  zd = () => "Nie udało się dokończyć zakupu. Ten przedmiot nie istnieje.",
+  Cd = () => "Не удалось завершить покупку. Этот предмет не существует.",
+  Md = () => "Не вдалося завершити покупку. Цей предмет не існує.",
+  jd = () => "Không thể hoàn tất giao dịch. Vật phẩm này không tồn tại.",
   Xn = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? pd() : e === "pt" ? md() : e === "ch" ? hd() : e === "de" ? gd() : e === "es" ? wd() : e === "fr" ? yd() : e === "it" ? bd() : e === "jp" ? vd() : e === "pl" ? Ed() : e === "ru" ? Td() : e === "uk" ? Od() : kd()
+    const e = t.locale ?? g();
+    return e === "en" ? Ad() : e === "pt" ? Rd() : e === "ch" ? Id() : e === "de" ? Nd() : e === "es" ? Dd() : e === "fr" ? Pd() : e === "it" ? Ld() : e === "jp" ? xd() : e === "pl" ? zd() : e === "ru" ? Cd() : e === "uk" ? Md() : jd()
   },
-  Sd = () => "Your phone number's country doesn't match your current location. Please use a local number.",
-  Ad = () => "O país do seu número de telefone não corresponde à sua localização atual. Por favor, use um número local.",
-  Rd = () => "您的电话号码所属国家与您当前位置不匹配。请使用本地号码。",
-  Id = () => "Das Land deiner Telefonnummer stimmt nicht mit deinem aktuellen Standort überein. Bitte verwende eine lokale Nummer.",
-  Nd = () => "El país de tu número de teléfono no coincide con tu ubicación actual. Por favor, usa un número local.",
-  Dd = () => "Le pays de votre numéro de téléphone ne correspond pas à votre localisation actuelle. Veuillez utiliser un numéro local.",
-  Ld = () => "Il paese del tuo numero di telefono non corrisponde alla tua posizione attuale. Per favore usa un numero locale.",
-  Pd = () => "電話番号の国があなたの現在地と一致しません。現地の番号を使用してください。",
-  xd = () => "Kraj Twojego numeru telefonu nie odpowiada Twojej aktualnej lokalizacji. Użyj lokalnego numeru.",
-  zd = () => "Страна вашего номера телефона не совпадает с вашим текущим местоположением. Пожалуйста, используйте местный номер.",
-  Md = () => "Країна вашого номера телефону не збігається з вашим поточним місцезнаходженням. Будь ласка, використовуйте місцевий номер.",
-  Cd = () => "Quốc gia của số điện thoại không khớp với vị trí hiện tại của bạn. Vui lòng sử dụng số địa phương.",
-  jd = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? Sd() : e === "pt" ? Ad() : e === "ch" ? Rd() : e === "de" ? Id() : e === "es" ? Nd() : e === "fr" ? Dd() : e === "it" ? Ld() : e === "jp" ? Pd() : e === "pl" ? xd() : e === "ru" ? zd() : e === "uk" ? Md() : Cd()
-  },
-  Bd = () => "We’re currently experiencing high traffic. Some requests may not be processed at this time—please try again later. Thank you for your patience.",
-  Fd = () => "Estamos enfrentando um volume alto de acessos no momento. Algumas solicitações podem não ser processadas agora — por favor, tente novamente mais tarde. Agradecemos a sua compreensão.",
-  Ud = () => "我们当前正遭遇高流量。一些请求可能无法立即处理——请稍后再试。感谢你的耐心。",
-  Gd = () => "Wir haben gerade sehr viel Traffic. Einige Anfragen können momentan nicht verarbeitet werden – bitte versuche es später erneut. Danke für deine Geduld.",
-  qd = () => "Actualmente estamos recibiendo mucho tráfico. Es posible que algunas solicitudes no se procesen en este momento; inténtalo de nuevo más tarde. Gracias por tu paciencia.",
-  Wd = () => "Nous subissons actuellement un trafic élevé. Certaines requêtes peuvent ne pas être traitées pour le moment — veuillez réessayer plus tard. Merci pour votre patience.",
-  Vd = () => "Stiamo affrontando un elevato volume di accessi in questo momento. Alcune richieste potrebbero non essere elaborate ora — riprova più tardi. Grazie per la comprensione.",
-  Kd = () => "現在アクセスが集中しています。一部のリクエストが処理されない場合があります。しばらくしてからもう一度お試しください。ご理解ありがとうございます。",
-  Hd = () => "Obecnie doświadczamy dużego ruchu. Niektóre żądania mogą nie zostać teraz przetworzone — spróbuj ponownie później. Dziękujemy za cierpliwość.",
-  $d = () => "Сейчас мы испытываем очень высокую нагрузку. Некоторые запросы могут не обрабатываться — попробуйте позже. Спасибо за ваше терпение.",
-  Xd = () => "Зараз ми отримуємо великий обсяг трафіку. Деякі запити можуть тимчасово не оброблятися — будь ласка, спробуйте пізніше. Дякуємо за розуміння.",
-  Yd = () => "Hiện chúng tôi đang chịu lượng truy cập rất cao. Một số yêu cầu có thể không được xử lý ngay bây giờ — hãy thử lại sau. Cảm ơn bạn đã thông cảm.",
-  Yn = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+  Bd = () => "Your phone number's country doesn't match your current location. Please use a local number.",
+  Fd = () => "O país do seu número de telefone não corresponde à sua localização atual. Por favor, use um número local.",
+  Ud = () => "您的电话号码所属国家与您当前位置不匹配。请使用本地号码。",
+  Gd = () => "Das Land deiner Telefonnummer stimmt nicht mit deinem aktuellen Standort überein. Bitte verwende eine lokale Nummer.",
+  qd = () => "El país de tu número de teléfono no coincide con tu ubicación actual. Por favor, usa un número local.",
+  Wd = () => "Le pays de votre numéro de téléphone ne correspond pas à votre localisation actuelle. Veuillez utiliser un numéro local.",
+  Vd = () => "Il paese del tuo numero di telefono non corrisponde alla tua posizione attuale. Per favore usa un numero locale.",
+  Kd = () => "電話番号の国があなたの現在地と一致しません。現地の番号を使用してください。",
+  Hd = () => "Kraj Twojego numeru telefonu nie odpowiada Twojej aktualnej lokalizacji. Użyj lokalnego numeru.",
+  $d = () => "Страна вашего номера телефона не совпадает с вашим текущим местоположением. Пожалуйста, используйте местный номер.",
+  Xd = () => "Країна вашого номера телефону не збігається з вашим поточним місцезнаходженням. Будь ласка, використовуйте місцевий номер.",
+  Yd = () => "Quốc gia của số điện thoại không khớp với vị trí hiện tại của bạn. Vui lòng sử dụng số địa phương.",
+  Jd = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
     return e === "en" ? Bd() : e === "pt" ? Fd() : e === "ch" ? Ud() : e === "de" ? Gd() : e === "es" ? qd() : e === "fr" ? Wd() : e === "it" ? Vd() : e === "jp" ? Kd() : e === "pl" ? Hd() : e === "ru" ? $d() : e === "uk" ? Xd() : Yd()
   },
-  Jd = () => "Doxxing",
-  Zd = () => "Doxxing",
-  Qd = () => "人肉搜索",
-  e_ = () => "Doxxing",
-  t_ = () => "Doxxing",
-  n_ = () => "Doxxing",
-  r_ = () => "Doxxing",
-  o_ = () => "ドックス（Doxxing）",
-  i_ = () => "Doxxing",
-  a_ = () => "Докcинг",
-  s_ = () => "Докcинг",
-  c_ = () => "Doxxing",
-  u_ = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? Jd() : e === "pt" ? Zd() : e === "ch" ? Qd() : e === "de" ? e_() : e === "es" ? t_() : e === "fr" ? n_() : e === "it" ? r_() : e === "jp" ? o_() : e === "pl" ? i_() : e === "ru" ? a_() : e === "uk" ? s_() : c_()
+  Zd = () => "We’re currently experiencing high traffic. Some requests may not be processed at this time—please try again later. Thank you for your patience.",
+  Qd = () => "Estamos enfrentando um volume alto de acessos no momento. Algumas solicitações podem não ser processadas agora — por favor, tente novamente mais tarde. Agradecemos a sua compreensão.",
+  e_ = () => "我们当前正遭遇高流量。一些请求可能无法立即处理——请稍后再试。感谢你的耐心。",
+  t_ = () => "Wir haben gerade sehr viel Traffic. Einige Anfragen können momentan nicht verarbeitet werden – bitte versuche es später erneut. Danke für deine Geduld.",
+  n_ = () => "Actualmente estamos recibiendo mucho tráfico. Es posible que algunas solicitudes no se procesen en este momento; inténtalo de nuevo más tarde. Gracias por tu paciencia.",
+  r_ = () => "Nous subissons actuellement un trafic élevé. Certaines requêtes peuvent ne pas être traitées pour le moment — veuillez réessayer plus tard. Merci pour votre patience.",
+  o_ = () => "Stiamo affrontando un elevato volume di accessi in questo momento. Alcune richieste potrebbero non essere elaborate ora — riprova più tardi. Grazie per la comprensione.",
+  i_ = () => "現在アクセスが集中しています。一部のリクエストが処理されない場合があります。しばらくしてからもう一度お試しください。ご理解ありがとうございます。",
+  a_ = () => "Obecnie doświadczamy dużego ruchu. Niektóre żądania mogą nie zostać teraz przetworzone — spróbuj ponownie później. Dziękujemy za cierpliwość.",
+  s_ = () => "Сейчас мы испытываем очень высокую нагрузку. Некоторые запросы могут не обрабатываться — попробуйте позже. Спасибо за ваше терпение.",
+  c_ = () => "Зараз ми отримуємо великий обсяг трафіку. Деякі запити можуть тимчасово не оброблятися — будь ласка, спробуйте пізніше. Дякуємо за розуміння.",
+  u_ = () => "Hiện chúng tôi đang chịu lượng truy cập rất cao. Một số yêu cầu có thể không được xử lý ngay bây giờ — hãy thử lại sau. Cảm ơn bạn đã thông cảm.",
+  Yn = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? Zd() : e === "pt" ? Qd() : e === "ch" ? e_() : e === "de" ? t_() : e === "es" ? n_() : e === "fr" ? r_() : e === "it" ? o_() : e === "jp" ? i_() : e === "pl" ? a_() : e === "ru" ? s_() : e === "uk" ? c_() : u_()
   },
-  l_ = () => "Released other's personal information without their consent",
-  d_ = () => "Vazar informações pessoais de terceiros sem consentimento",
-  __ = () => "在未获同意的情况下公开他人个人信息",
-  f_ = () => "Persönliche Daten anderer ohne deren Zustimmung veröffentlicht",
-  p_ = () => "Divulgó información personal de otra persona sin su consentimiento",
-  m_ = () => "Diffusion des informations personnelles de quelqu’un sans son consentement",
-  h_ = () => "Diffusione di informazioni personali di terzi senza consenso",
-  g_ = () => "他人の個人情報を同意なく公開した。",
-  w_ = () => "Udostępnianie cudzych danych osobowych bez ich zgody",
-  y_ = () => "Публикация личной информации других людей без их согласия",
-  b_ = () => "Розповсюдження особистої інформації інших людей без їхньої згоди",
-  v_ = () => "Công khai thông tin cá nhân của người khác mà không có sự cho phép",
+  l_ = () => "Doxxing",
+  d_ = () => "Doxxing",
+  __ = () => "人肉搜索",
+  f_ = () => "Doxxing",
+  p_ = () => "Doxxing",
+  m_ = () => "Doxxing",
+  h_ = () => "Doxxing",
+  g_ = () => "ドックス（Doxxing）",
+  w_ = () => "Doxxing",
+  y_ = () => "Докcинг",
+  b_ = () => "Докcинг",
+  v_ = () => "Doxxing",
   E_ = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? l_() : e === "pt" ? d_() : e === "ch" ? __() : e === "de" ? f_() : e === "es" ? p_() : e === "fr" ? m_() : e === "it" ? h_() : e === "jp" ? g_() : e === "pl" ? w_() : e === "ru" ? y_() : e === "uk" ? b_() : v_()
   },
-  T_ = () => "This email is already in use.",
-  O_ = () => "Este e-mail já está em uso.",
-  k_ = () => "This email is already in use.",
-  S_ = () => "This email is already in use.",
-  A_ = () => "Este correo electrónico ya está en uso.",
-  R_ = () => "This email is already in use.",
-  I_ = () => "Questa email è già in uso.",
-  N_ = () => "This email is already in use.",
-  D_ = () => "This email is already in use.",
-  L_ = () => "This email is already in use.",
-  P_ = () => "This email is already in use.",
-  x_ = () => "This email is already in use.",
+  T_ = () => "Released other's personal information without their consent",
+  O_ = () => "Vazar informações pessoais de terceiros sem consentimento",
+  k_ = () => "在未获同意的情况下公开他人个人信息",
+  S_ = () => "Persönliche Daten anderer ohne deren Zustimmung veröffentlicht",
+  A_ = () => "Divulgó información personal de otra persona sin su consentimiento",
+  R_ = () => "Diffusion des informations personnelles de quelqu’un sans son consentement",
+  I_ = () => "Diffusione di informazioni personali di terzi senza consenso",
+  N_ = () => "他人の個人情報を同意なく公開した。",
+  D_ = () => "Udostępnianie cudzych danych osobowych bez ich zgody",
+  P_ = () => "Публикация личной информации других людей без их согласия",
+  L_ = () => "Розповсюдження особистої інформації інших людей без їхньої згоди",
+  x_ = () => "Công khai thông tin cá nhân của người khác mà không có sự cho phép",
   z_ = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? T_() : e === "pt" ? O_() : e === "ch" ? k_() : e === "de" ? S_() : e === "es" ? A_() : e === "fr" ? R_() : e === "it" ? I_() : e === "jp" ? N_() : e === "pl" ? D_() : e === "ru" ? L_() : e === "uk" ? P_() : x_()
+    const e = t.locale ?? g();
+    return e === "en" ? T_() : e === "pt" ? O_() : e === "ch" ? k_() : e === "de" ? S_() : e === "es" ? A_() : e === "fr" ? R_() : e === "it" ? I_() : e === "jp" ? N_() : e === "pl" ? D_() : e === "ru" ? P_() : e === "uk" ? L_() : x_()
   },
-  M_ = n => `This email is already in use by user #${n.userId}.`,
-  C_ = n => `Este e-mail já está em uso pelo usuário #${n.userId}.`,
-  j_ = n => `This email is already in use by user #${n.userId}.`,
-  B_ = n => `This email is already in use by user #${n.userId}.`,
-  F_ = n => `Este correo electrónico ya está en uso por el usuario #${n.userId}.`,
-  U_ = n => `This email is already in use by user #${n.userId}.`,
-  G_ = n => `Questa email è già in uso dall'utente #${n.userId}.`,
-  q_ = n => `This email is already in use by user #${n.userId}.`,
-  W_ = n => `This email is already in use by user #${n.userId}.`,
-  V_ = n => `This email is already in use by user #${n.userId}.`,
-  K_ = n => `This email is already in use by user #${n.userId}.`,
-  H_ = n => `This email is already in use by user #${n.userId}.`,
-  $_ = (n, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? M_(n) : e === "pt" ? C_(n) : e === "ch" ? j_(n) : e === "de" ? B_(n) : e === "es" ? F_(n) : e === "fr" ? U_(n) : e === "it" ? G_(n) : e === "jp" ? q_(n) : e === "pl" ? W_(n) : e === "ru" ? V_(n) : e === "uk" ? K_(n) : H_(n)
+  C_ = () => "This email is already in use.",
+  M_ = () => "Este e-mail já está em uso.",
+  j_ = () => "This email is already in use.",
+  B_ = () => "This email is already in use.",
+  F_ = () => "Este correo electrónico ya está en uso.",
+  U_ = () => "This email is already in use.",
+  G_ = () => "Questa email è già in uso.",
+  q_ = () => "This email is already in use.",
+  W_ = () => "This email is already in use.",
+  V_ = () => "This email is already in use.",
+  K_ = () => "This email is already in use.",
+  H_ = () => "This email is already in use.",
+  $_ = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? C_() : e === "pt" ? M_() : e === "ch" ? j_() : e === "de" ? B_() : e === "es" ? F_() : e === "fr" ? U_() : e === "it" ? G_() : e === "jp" ? q_() : e === "pl" ? W_() : e === "ru" ? V_() : e === "uk" ? K_() : H_()
   },
-  X_ = () => "Enter a valid email address.",
-  Y_ = () => "Informe um endereço de e-mail válido.",
-  J_ = () => "Enter a valid email address.",
-  Z_ = () => "Enter a valid email address.",
-  Q_ = () => "Introduce una dirección de correo electrónico válida.",
-  ef = () => "Enter a valid email address.",
-  tf = () => "Inserisci un indirizzo email valido.",
-  nf = () => "Enter a valid email address.",
-  rf = () => "Enter a valid email address.",
-  of = () => "Enter a valid email address.",
-  af = () => "Enter a valid email address.",
-  sf = () => "Enter a valid email address.",
-  cf = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? X_() : e === "pt" ? Y_() : e === "ch" ? J_() : e === "de" ? Z_() : e === "es" ? Q_() : e === "fr" ? ef() : e === "it" ? tf() : e === "jp" ? nf() : e === "pl" ? rf() : e === "ru" ? of() : e === "uk" ? af() : sf()
+  X_ = n => `This email is already in use by user #${n.userId}.`,
+  Y_ = n => `Este e-mail já está em uso pelo usuário #${n.userId}.`,
+  J_ = n => `This email is already in use by user #${n.userId}.`,
+  Z_ = n => `This email is already in use by user #${n.userId}.`,
+  Q_ = n => `Este correo electrónico ya está en uso por el usuario #${n.userId}.`,
+  ef = n => `This email is already in use by user #${n.userId}.`,
+  tf = n => `Questa email è già in uso dall'utente #${n.userId}.`,
+  nf = n => `This email is already in use by user #${n.userId}.`,
+  rf = n => `This email is already in use by user #${n.userId}.`,
+  of = n => `This email is already in use by user #${n.userId}.`,
+  af = n => `This email is already in use by user #${n.userId}.`,
+  sf = n => `This email is already in use by user #${n.userId}.`,
+  cf = (n, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? X_(n) : e === "pt" ? Y_(n) : e === "ch" ? J_(n) : e === "de" ? Z_(n) : e === "es" ? Q_(n) : e === "fr" ? ef(n) : e === "it" ? tf(n) : e === "jp" ? nf(n) : e === "pl" ? rf(n) : e === "ru" ? of(n) : e === "uk" ? af(n) : sf(n)
   },
-  uf = n => `Error while painting: ${n.err}`,
-  lf = n => `Erro enquanto pinta: ${n.err}`,
-  df = n => `绘制时出错：${n.err}`,
-  _f = n => `Fehler beim Malen: ${n.err}`,
-  ff = n => `Error al pintar: ${n.err}`,
-  pf = n => `Erreur lors de la peinture : ${n.err}`,
-  mf = n => `Errore durante la pittura: ${n.err}`,
-  hf = n => `ペイント中にエラーが発生しました: ${n.err}`,
-  gf = n => `Błąd podczas malowania: ${n.err}`,
-  wf = n => `Ошибка при рисовании: ${n.err}`,
-  yf = n => `Помилка під час малювання: ${n.err}`,
-  bf = n => `Lỗi khi tô: ${n.err}`,
-  vf = (n, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? uf(n) : e === "pt" ? lf(n) : e === "ch" ? df(n) : e === "de" ? _f(n) : e === "es" ? ff(n) : e === "fr" ? pf(n) : e === "it" ? mf(n) : e === "jp" ? hf(n) : e === "pl" ? gf(n) : e === "ru" ? wf(n) : e === "uk" ? yf(n) : bf(n)
+  uf = () => "Enter a valid email address.",
+  lf = () => "Informe um endereço de e-mail válido.",
+  df = () => "Enter a valid email address.",
+  _f = () => "Enter a valid email address.",
+  ff = () => "Introduce una dirección de correo electrónico válida.",
+  pf = () => "Enter a valid email address.",
+  mf = () => "Inserisci un indirizzo email valido.",
+  hf = () => "Enter a valid email address.",
+  gf = () => "Enter a valid email address.",
+  wf = () => "Enter a valid email address.",
+  yf = () => "Enter a valid email address.",
+  bf = () => "Enter a valid email address.",
+  vf = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? uf() : e === "pt" ? lf() : e === "ch" ? df() : e === "de" ? _f() : e === "es" ? ff() : e === "fr" ? pf() : e === "it" ? mf() : e === "jp" ? hf() : e === "pl" ? gf() : e === "ru" ? wf() : e === "uk" ? yf() : bf()
   },
-  Ef = () => "Exceeded maximum number of characters",
-  Tf = () => "Excedeu o número máximo de caracteres permitidos",
-  Of = () => "超出最大字符数",
-  kf = () => "Maximale Zeichenanzahl überschritten",
-  Sf = () => "Se excedió el número máximo de caracteres",
-  Af = () => "Nombre maximal de caractères dépassé",
-  Rf = () => "Numero massimo di caratteri superato",
-  If = () => "最大文字数を超過しました",
-  Nf = () => "Przekroczono maksymalną liczbę znaków",
-  Df = () => "Превышено максимальное количество символов",
-  Lf = () => "Перевищено максимальну кількість символів",
-  Pf = () => "Đã vượt quá số ký tự tối đa",
-  xf = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? Ef() : e === "pt" ? Tf() : e === "ch" ? Of() : e === "de" ? kf() : e === "es" ? Sf() : e === "fr" ? Af() : e === "it" ? Rf() : e === "jp" ? If() : e === "pl" ? Nf() : e === "ru" ? Df() : e === "uk" ? Lf() : Pf()
+  Ef = n => `Error while painting: ${n.err}`,
+  Tf = n => `Erro enquanto pinta: ${n.err}`,
+  Of = n => `绘制时出错：${n.err}`,
+  kf = n => `Fehler beim Malen: ${n.err}`,
+  Sf = n => `Error al pintar: ${n.err}`,
+  Af = n => `Erreur lors de la peinture : ${n.err}`,
+  Rf = n => `Errore durante la pittura: ${n.err}`,
+  If = n => `ペイント中にエラーが発生しました: ${n.err}`,
+  Nf = n => `Błąd podczas malowania: ${n.err}`,
+  Df = n => `Ошибка при рисовании: ${n.err}`,
+  Pf = n => `Помилка під час малювання: ${n.err}`,
+  Lf = n => `Lỗi khi tô: ${n.err}`,
+  xf = (n, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? Ef(n) : e === "pt" ? Tf(n) : e === "ch" ? Of(n) : e === "de" ? kf(n) : e === "es" ? Sf(n) : e === "fr" ? Af(n) : e === "it" ? Rf(n) : e === "jp" ? If(n) : e === "pl" ? Nf(n) : e === "ru" ? Df(n) : e === "uk" ? Pf(n) : Lf(n)
   },
-  zf = () => "Verification code expired. Please request a new one.",
-  Mf = () => "Código de verificação expirado. Por favor, solicite um novo.",
-  Cf = () => "验证码已过期，请重新获取。",
-  jf = () => "Bestätigungscode abgelaufen. Bitte fordern Sie einen neuen an.",
-  Bf = () => "Código de verificación expirado. Por favor, solicita uno nuevo.",
-  Ff = () => "Code de vérification expiré. Veuillez en demander un nouveau.",
-  Uf = () => "Codice di verifica scaduto. Per favore, richiedine uno nuovo.",
-  Gf = () => "確認コードの有効期限が切れました。新しいコードをリクエストしてください。",
-  qf = () => "Kod weryfikacyjny wygasł. Poproś o nowy.",
-  Wf = () => "Код подтверждения истёк. Пожалуйста, запросите новый.",
-  Vf = () => "Код підтвердження закінчився. Будь ласка, запросіть новий.",
-  Kf = () => "Mã xác minh đã hết hạn. Vui lòng yêu cầu mã mới.",
+  zf = () => "Exceeded maximum number of characters",
+  Cf = () => "Excedeu o número máximo de caracteres permitidos",
+  Mf = () => "超出最大字符数",
+  jf = () => "Maximale Zeichenanzahl überschritten",
+  Bf = () => "Se excedió el número máximo de caracteres",
+  Ff = () => "Nombre maximal de caractères dépassé",
+  Uf = () => "Numero massimo di caratteri superato",
+  Gf = () => "最大文字数を超過しました",
+  qf = () => "Przekroczono maksymalną liczbę znaków",
+  Wf = () => "Превышено максимальное количество символов",
+  Vf = () => "Перевищено максимальну кількість символів",
+  Kf = () => "Đã vượt quá số ký tự tối đa",
   Hf = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? zf() : e === "pt" ? Mf() : e === "ch" ? Cf() : e === "de" ? jf() : e === "es" ? Bf() : e === "fr" ? Ff() : e === "it" ? Uf() : e === "jp" ? Gf() : e === "pl" ? qf() : e === "ru" ? Wf() : e === "uk" ? Vf() : Kf()
+    const e = t.locale ?? g();
+    return e === "en" ? zf() : e === "pt" ? Cf() : e === "ch" ? Mf() : e === "de" ? jf() : e === "es" ? Bf() : e === "fr" ? Ff() : e === "it" ? Uf() : e === "jp" ? Gf() : e === "pl" ? qf() : e === "ru" ? Wf() : e === "uk" ? Vf() : Kf()
   },
-  $f = () => "Griefing",
-  Xf = () => "Griefing",
-  Yf = () => "破坏行为",
-  Jf = () => "Griefing",
-  Zf = () => "Griefing",
-  Qf = () => "Griefing",
-  ep = () => "Griefing",
-  tp = () => "グリーフィング",
-  np = () => "Griefing",
-  rp = () => "Гриферство",
-  op = () => "Гріфінг",
-  ip = () => "Griefing",
+  $f = () => "Verification code expired. Please request a new one.",
+  Xf = () => "Código de verificação expirado. Por favor, solicite um novo.",
+  Yf = () => "验证码已过期，请重新获取。",
+  Jf = () => "Bestätigungscode abgelaufen. Bitte fordern Sie einen neuen an.",
+  Zf = () => "Código de verificación expirado. Por favor, solicita uno nuevo.",
+  Qf = () => "Code de vérification expiré. Veuillez en demander un nouveau.",
+  ep = () => "Codice di verifica scaduto. Per favore, richiedine uno nuovo.",
+  tp = () => "確認コードの有効期限が切れました。新しいコードをリクエストしてください。",
+  np = () => "Kod weryfikacyjny wygasł. Poproś o nowy.",
+  rp = () => "Код подтверждения истёк. Пожалуйста, запросите новый.",
+  op = () => "Код підтвердження закінчився. Будь ласка, запросіть новий.",
+  ip = () => "Mã xác minh đã hết hạn. Vui lòng yêu cầu mã mới.",
   ap = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? $f() : e === "pt" ? Xf() : e === "ch" ? Yf() : e === "de" ? Jf() : e === "es" ? Zf() : e === "fr" ? Qf() : e === "it" ? ep() : e === "jp" ? tp() : e === "pl" ? np() : e === "ru" ? rp() : e === "uk" ? op() : ip()
   },
-  sp = () => "Messed up with other's artworks",
-  cp = () => "Estragou os desenhos dos outros",
-  up = () => "破坏了他人的作品",
-  lp = () => "Kunstwerke anderer beschädigt",
-  dp = () => "Arruinó las obras de arte de otros",
-  _p = () => "A abîmé les œuvres des autres",
-  fp = () => "Ha rovinato i disegni degli altri",
-  pp = () => "他人の作品を荒らした",
-  mp = () => "Zniszczył prace innych",
-  hp = () => "Испортил чужие рисунки",
-  gp = () => "Зіпсував роботи інших",
-  wp = () => "Phá hỏng tranh của người khác",
+  sp = () => "Griefing",
+  cp = () => "Griefing",
+  up = () => "破坏行为",
+  lp = () => "Griefing",
+  dp = () => "Griefing",
+  _p = () => "Griefing",
+  fp = () => "Griefing",
+  pp = () => "グリーフィング",
+  mp = () => "Griefing",
+  hp = () => "Гриферство",
+  gp = () => "Гріфінг",
+  wp = () => "Griefing",
   yp = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? sp() : e === "pt" ? cp() : e === "ch" ? up() : e === "de" ? lp() : e === "es" ? dp() : e === "fr" ? _p() : e === "it" ? fp() : e === "jp" ? pp() : e === "pl" ? mp() : e === "ru" ? hp() : e === "uk" ? gp() : wp()
   },
-  bp = () => "Hate speech",
-  vp = () => "Discurso de Ódio",
-  Ep = () => "仇恨言论",
-  Tp = () => "Hassrede",
-  Op = () => "Discurso de odio",
-  kp = () => "Discours haineux",
-  Sp = () => "Discorso d'odio",
-  Ap = () => "ヘイトスピーチ",
-  Rp = () => "Mowa nienawiści",
-  Ip = () => "Речь ненависти",
-  Np = () => "Мова ворожнечі",
-  Dp = () => "Ngôn từ thù hằn",
-  Lp = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+  bp = () => "Messed up with other's artworks",
+  vp = () => "Estragou os desenhos dos outros",
+  Ep = () => "破坏了他人的作品",
+  Tp = () => "Kunstwerke anderer beschädigt",
+  Op = () => "Arruinó las obras de arte de otros",
+  kp = () => "A abîmé les œuvres des autres",
+  Sp = () => "Ha rovinato i disegni degli altri",
+  Ap = () => "他人の作品を荒らした",
+  Rp = () => "Zniszczył prace innych",
+  Ip = () => "Испортил чужие рисунки",
+  Np = () => "Зіпсував роботи інших",
+  Dp = () => "Phá hỏng tranh của người khác",
+  Pp = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
     return e === "en" ? bp() : e === "pt" ? vp() : e === "ch" ? Ep() : e === "de" ? Tp() : e === "es" ? Op() : e === "fr" ? kp() : e === "it" ? Sp() : e === "jp" ? Ap() : e === "pl" ? Rp() : e === "ru" ? Ip() : e === "uk" ? Np() : Dp()
   },
-  Pp = () => "Racism, homophobia, hate groups, ...",
-  xp = () => "Racismo, homofobia, grupos de ódio, ...",
-  zp = () => "种族主义、恐同、仇恨团体等",
-  Mp = () => "Rassismus, Homophobie, Hassgruppen, ...",
-  Cp = () => "Racismo, homofobia, grupos de odio, ...",
-  jp = () => "Racisme, homophobie, groupes haineux, ...",
-  Bp = () => "Razzismo, omofobia, gruppi d'odio, ...",
-  Fp = () => "人種差別、同性愛差別、ヘイト団体など。",
-  Up = () => "Rasizm, homofobia, grupy nienawiści, ...",
-  Gp = () => "Расизм, гомофобия, группы ненависти и т.п.",
-  qp = () => "Расизм, гомофобія, групи ненависті, ...",
-  Wp = () => "Phân biệt chủng tộc, kỳ thị LGBT, nhóm thù hận, ...",
+  Lp = () => "Hate speech",
+  xp = () => "Discurso de Ódio",
+  zp = () => "仇恨言论",
+  Cp = () => "Hassrede",
+  Mp = () => "Discurso de odio",
+  jp = () => "Discours haineux",
+  Bp = () => "Discorso d'odio",
+  Fp = () => "ヘイトスピーチ",
+  Up = () => "Mowa nienawiści",
+  Gp = () => "Речь ненависти",
+  qp = () => "Мова ворожнечі",
+  Wp = () => "Ngôn từ thù hằn",
   Vp = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? Pp() : e === "pt" ? xp() : e === "ch" ? zp() : e === "de" ? Mp() : e === "es" ? Cp() : e === "fr" ? jp() : e === "it" ? Bp() : e === "jp" ? Fp() : e === "pl" ? Up() : e === "ru" ? Gp() : e === "uk" ? qp() : Wp()
+    const e = t.locale ?? g();
+    return e === "en" ? Lp() : e === "pt" ? xp() : e === "ch" ? zp() : e === "de" ? Cp() : e === "es" ? Mp() : e === "fr" ? jp() : e === "it" ? Bp() : e === "jp" ? Fp() : e === "pl" ? Up() : e === "ru" ? Gp() : e === "uk" ? qp() : Wp()
   },
-  Kp = () => `This case has already been reviewed, resolved, or acted on by the moderation team.
+  Kp = () => "Racism, homophobia, hate groups, ...",
+  Hp = () => "Racismo, homofobia, grupos de ódio, ...",
+  $p = () => "种族主义、恐同、仇恨团体等",
+  Xp = () => "Rassismus, Homophobie, Hassgruppen, ...",
+  Yp = () => "Racismo, homofobia, grupos de odio, ...",
+  Jp = () => "Racisme, homophobie, groupes haineux, ...",
+  Zp = () => "Razzismo, omofobia, gruppi d'odio, ...",
+  Qp = () => "人種差別、同性愛差別、ヘイト団体など。",
+  em = () => "Rasizm, homofobia, grupy nienawiści, ...",
+  tm = () => "Расизм, гомофобия, группы ненависти и т.п.",
+  nm = () => "Расизм, гомофобія, групи ненависті, ...",
+  rm = () => "Phân biệt chủng tộc, kỳ thị LGBT, nhóm thù hận, ...",
+  om = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? Kp() : e === "pt" ? Hp() : e === "ch" ? $p() : e === "de" ? Xp() : e === "es" ? Yp() : e === "fr" ? Jp() : e === "it" ? Zp() : e === "jp" ? Qp() : e === "pl" ? em() : e === "ru" ? tm() : e === "uk" ? nm() : rm()
+  },
+  im = () => `This case has already been reviewed, resolved, or acted on by the moderation team.
 
 The reported incident may have already resulted in a punishment, warning, previous decision, or internal review. Submitting the same case again without new evidence will not usually change the outcome.
 
 If you have new and relevant evidence that was not included before, please submit a new report and clearly explain what new information is being provided.`,
-  Hp = () => `Este caso já foi analisado, resolvido ou tratado pela equipe de moderação.
+  am = () => `Este caso já foi analisado, resolvido ou tratado pela equipe de moderação.
 
 O incidente denunciado pode já ter resultado em uma punição, advertência, decisão anterior ou revisão interna. Enviar o mesmo caso novamente sem novas evidências geralmente não altera o resultado.
 
 Se você tiver evidências novas e relevantes que não foram incluídas antes, envie uma nova denúncia e explique claramente quais novas informações estão sendo fornecidas.`,
-  $p = () => `此案件已由审核团队审查、解决或处理。
+  sm = () => `此案件已由审核团队审查、解决或处理。
 
 被举报的事件可能已经导致了处罚、警告、先前的裁决或内部审查。在没有新证据的情况下重复提交相同的案件通常不会改变结果。
 
 如果您有此前未提供的、相关的新证据，请提交一份新的举报，并清楚说明所提供的新信息是什么。`,
-  Xp = () => `Dieser Fall wurde vom Moderationsteam bereits überprüft, gelöst oder bearbeitet.
+  cm = () => `Dieser Fall wurde vom Moderationsteam bereits überprüft, gelöst oder bearbeitet.
 
 Der gemeldete Vorfall hat möglicherweise bereits zu einer Strafe, einer Verwarnung, einer früheren Entscheidung oder einer internen Überprüfung geführt. Denselben Fall ohne neue Beweise erneut einzureichen, ändert das Ergebnis in der Regel nicht.
 
 Wenn du neue und relevante Beweise hast, die zuvor nicht enthalten waren, reiche bitte eine neue Meldung ein und erkläre klar, welche neuen Informationen vorliegen.`,
-  Yp = () => `Este caso ya ha sido revisado, resuelto o gestionado por el equipo de moderación.
+  um = () => `Este caso ya ha sido revisado, resuelto o gestionado por el equipo de moderación.
 
 El incidente reportado puede haber dado lugar ya a una sanción, una advertencia, una decisión previa o una revisión interna. Enviar el mismo caso de nuevo sin pruebas nuevas no suele cambiar el resultado.
 
 Si tienes pruebas nuevas y relevantes que no se incluyeron antes, envía un nuevo reporte y explica claramente qué información nueva aportas.`,
-  Jp = () => `Ce cas a déjà été examiné, résolu ou traité par l'équipe de modération.
+  lm = () => `Ce cas a déjà été examiné, résolu ou traité par l'équipe de modération.
 
 L'incident signalé a peut-être déjà donné lieu à une sanction, un avertissement, une décision antérieure ou un examen interne. Soumettre à nouveau le même cas sans nouvelles preuves ne change généralement pas le résultat.
 
 Si vous disposez de nouvelles preuves pertinentes qui n'avaient pas été incluses, veuillez soumettre un nouveau signalement et expliquer clairement quelles nouvelles informations vous apportez.`,
-  Zp = () => `Questo caso è già stato esaminato, risolto o gestito dal team di moderazione.
+  dm = () => `Questo caso è già stato esaminato, risolto o gestito dal team di moderazione.
 
 L'incidente segnalato potrebbe aver già portato a una punizione, un avviso, una decisione precedente o una revisione interna. Inviare di nuovo lo stesso caso senza nuove prove di solito non cambia l'esito.
 
 Se hai prove nuove e pertinenti non incluse in precedenza, invia una nuova segnalazione e spiega chiaramente quali nuove informazioni stai fornendo.`,
-  Qp = () => `このケースはすでにモデレーションチームによって確認・解決・対応されています。
+  _m = () => `このケースはすでにモデレーションチームによって確認・解決・対応されています。
 
 報告された事案は、すでに処分、警告、過去の判断、または内部審査につながっている可能性があります。新たな証拠なしに同じケースを再度提出しても、通常は結果は変わりません。
 
 以前に含まれていなかった新しく関連性のある証拠がある場合は、新しい報告を提出し、どのような新しい情報を提供するのかを明確に説明してください。`,
-  em = () => `Ta sprawa została już sprawdzona, rozstrzygnięta lub rozpatrzona przez zespół moderacji.
+  fm = () => `Ta sprawa została już sprawdzona, rozstrzygnięta lub rozpatrzona przez zespół moderacji.
 
 Zgłoszone zdarzenie mogło już skutkować karą, ostrzeżeniem, wcześniejszą decyzją lub wewnętrzną weryfikacją. Ponowne przesłanie tej samej sprawy bez nowych dowodów zwykle nie zmieni wyniku.
 
 Jeśli masz nowe i istotne dowody, które nie zostały wcześniej dołączone, prześlij nowe zgłoszenie i jasno wyjaśnij, jakie nowe informacje przekazujesz.`,
-  tm = () => `Этот случай уже был рассмотрен, решён или обработан командой модерации.
+  pm = () => `Этот случай уже был рассмотрен, решён или обработан командой модерации.
 
 Сообщённый инцидент мог уже привести к наказанию, предупреждению, ранее принятому решению или внутренней проверке. Повторная подача того же случая без новых доказательств обычно не меняет результат.
 
 Если у вас есть новые и значимые доказательства, которые ранее не были предоставлены, отправьте новую жалобу и чётко объясните, какая новая информация предоставляется.`,
-  nm = () => `Цю справу вже розглянуто, вирішено або опрацьовано командою модерації.
+  mm = () => `Цю справу вже розглянуто, вирішено або опрацьовано командою модерації.
 
 Повідомлений інцидент, можливо, вже призвів до покарання, попередження, попереднього рішення або внутрішньої перевірки. Повторне надсилання тієї самої справи без нових доказів зазвичай не змінює результату.
 
 Якщо у вас є нові та важливі докази, які не були додані раніше, надішліть нову скаргу та чітко поясніть, яку нову інформацію ви надаєте.`,
-  rm = () => `Trường hợp này đã được đội ngũ kiểm duyệt xem xét, giải quyết hoặc xử lý.
+  hm = () => `Trường hợp này đã được đội ngũ kiểm duyệt xem xét, giải quyết hoặc xử lý.
 
 Sự việc bị báo cáo có thể đã dẫn đến một hình phạt, cảnh cáo, quyết định trước đó hoặc một lần xem xét nội bộ. Việc gửi lại cùng một trường hợp mà không có bằng chứng mới thường sẽ không thay đổi kết quả.
 
 Nếu bạn có bằng chứng mới và liên quan mà trước đây chưa được đưa vào, vui lòng gửi một báo cáo mới và giải thích rõ thông tin mới mà bạn cung cấp là gì.`,
-  om = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? Kp() : e === "pt" ? Hp() : e === "ch" ? $p() : e === "de" ? Xp() : e === "es" ? Yp() : e === "fr" ? Jp() : e === "it" ? Zp() : e === "jp" ? Qp() : e === "pl" ? em() : e === "ru" ? tm() : e === "uk" ? nm() : rm()
-  },
-  im = () => "Already Handled",
-  am = () => "Já tratado",
-  sm = () => "已处理",
-  cm = () => "Bereits bearbeitet",
-  um = () => "Ya gestionado",
-  lm = () => "Déjà traité",
-  dm = () => "Già gestito",
-  _m = () => "対応済み",
-  fm = () => "Już rozpatrzone",
-  pm = () => "Уже рассмотрено",
-  mm = () => "Вже розглянуто",
-  hm = () => "Đã xử lý",
   gm = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? im() : e === "pt" ? am() : e === "ch" ? sm() : e === "de" ? cm() : e === "es" ? um() : e === "fr" ? lm() : e === "it" ? dm() : e === "jp" ? _m() : e === "pl" ? fm() : e === "ru" ? pm() : e === "uk" ? mm() : hm()
   },
-  wm = () => `The reported action was allowed under the event rules or special conditions active at the time.
+  wm = () => "Already Handled",
+  ym = () => "Já tratado",
+  bm = () => "已处理",
+  vm = () => "Bereits bearbeitet",
+  Em = () => "Ya gestionado",
+  Tm = () => "Déjà traité",
+  Om = () => "Già gestito",
+  km = () => "対応済み",
+  Sm = () => "Już rozpatrzone",
+  Am = () => "Уже рассмотрено",
+  Rm = () => "Вже розглянуто",
+  Im = () => "Đã xử lý",
+  Nm = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? wm() : e === "pt" ? ym() : e === "ch" ? bm() : e === "de" ? vm() : e === "es" ? Em() : e === "fr" ? Tm() : e === "it" ? Om() : e === "jp" ? km() : e === "pl" ? Sm() : e === "ru" ? Am() : e === "uk" ? Rm() : Im()
+  },
+  Dm = () => `The reported action was allowed under the event rules or special conditions active at the time.
 
 Some events, areas, game modes, or temporary rules may allow behavior that would normally be restricted elsewhere. Because the action was permitted in that specific context, no moderation action will be taken.
 
 Please make sure to check the current event rules or special-area rules before submitting reports related to event gameplay.`,
-  ym = () => `A ação denunciada era permitida pelas regras do evento ou pelas condições especiais ativas no momento.
+  Pm = () => `A ação denunciada era permitida pelas regras do evento ou pelas condições especiais ativas no momento.
 
 Alguns eventos, áreas, modos de jogo ou regras temporárias podem permitir comportamentos que normalmente seriam restritos em outros lugares. Como a ação era permitida nesse contexto específico, nenhuma ação de moderação será tomada.
 
 Verifique as regras atuais do evento ou as regras de áreas especiais antes de enviar denúncias relacionadas à jogabilidade do evento.`,
-  bm = () => `被举报的行为在当时生效的活动规则或特殊条件下是被允许的。
+  Lm = () => `被举报的行为在当时生效的活动规则或特殊条件下是被允许的。
 
 某些活动、区域、游戏模式或临时规则可能允许在其他情况下通常会被限制的行为。由于该行为在特定情境下被允许，因此不会采取任何审核措施。
 
 在提交与活动玩法相关的举报之前，请务必查看当前的活动规则或特殊区域规则。`,
-  vm = () => `Die gemeldete Aktion war nach den Event-Regeln oder den zu diesem Zeitpunkt geltenden Sonderbedingungen erlaubt.
+  xm = () => `Die gemeldete Aktion war nach den Event-Regeln oder den zu diesem Zeitpunkt geltenden Sonderbedingungen erlaubt.
 
 Manche Events, Bereiche, Spielmodi oder temporäre Regeln können Verhalten erlauben, das anderswo normalerweise eingeschränkt wäre. Da die Aktion in diesem speziellen Kontext erlaubt war, wird keine Moderationsmaßnahme ergriffen.
 
 Bitte prüfe die aktuellen Event-Regeln oder die Regeln für Sonderbereiche, bevor du Meldungen zum Event-Gameplay einreichst.`,
-  Em = () => `La acción reportada estaba permitida según las reglas del evento o las condiciones especiales activas en ese momento.
+  zm = () => `La acción reportada estaba permitida según las reglas del evento o las condiciones especiales activas en ese momento.
 
 Algunos eventos, áreas, modos de juego o reglas temporales pueden permitir comportamientos que normalmente estarían restringidos en otros lugares. Dado que la acción estaba permitida en ese contexto específico, no se tomará ninguna medida de moderación.
 
 Asegúrate de revisar las reglas actuales del evento o las reglas de áreas especiales antes de enviar reportes relacionados con la jugabilidad del evento.`,
-  Tm = () => `L'action signalée était autorisée par les règles de l'événement ou par les conditions spéciales en vigueur à ce moment-là.
+  Cm = () => `L'action signalée était autorisée par les règles de l'événement ou par les conditions spéciales en vigueur à ce moment-là.
 
 Certains événements, zones, modes de jeu ou règles temporaires peuvent autoriser des comportements qui seraient normalement restreints ailleurs. Comme l'action était autorisée dans ce contexte précis, aucune mesure de modération ne sera prise.
 
 Veuillez vérifier les règles actuelles de l'événement ou les règles des zones spéciales avant de soumettre des signalements liés au gameplay d'un événement.`,
-  Om = () => `L'azione segnalata era consentita dalle regole dell'evento o dalle condizioni speciali attive in quel momento.
+  Mm = () => `L'azione segnalata era consentita dalle regole dell'evento o dalle condizioni speciali attive in quel momento.
 
 Alcuni eventi, aree, modalità di gioco o regole temporanee possono consentire comportamenti che altrove sarebbero normalmente vietati. Poiché l'azione era consentita in quel contesto specifico, non verrà presa alcuna azione di moderazione.
 
 Assicurati di controllare le regole attuali dell'evento o le regole delle aree speciali prima di inviare segnalazioni relative al gameplay degli eventi.`,
-  km = () => `報告された行為は、その時点で有効だったイベントのルールや特別な条件のもとで許可されていました。
+  jm = () => `報告された行為は、その時点で有効だったイベントのルールや特別な条件のもとで許可されていました。
 
 一部のイベント、エリア、ゲームモード、または一時的なルールでは、通常なら他の場所で制限される行為が許可される場合があります。その特定の状況では行為が許可されていたため、モデレーションの措置は行われません。
 
 イベントのプレイに関する報告を提出する前に、現在のイベントルールや特別エリアのルールを必ず確認してください。`,
-  Sm = () => `Zgłoszone działanie było dozwolone zgodnie z zasadami wydarzenia lub specjalnymi warunkami obowiązującymi w tym czasie.
+  Bm = () => `Zgłoszone działanie było dozwolone zgodnie z zasadami wydarzenia lub specjalnymi warunkami obowiązującymi w tym czasie.
 
 Niektóre wydarzenia, obszary, tryby gry lub zasady tymczasowe mogą zezwalać na zachowania, które gdzie indziej byłyby zwykle ograniczone. Ponieważ działanie było dozwolone w tym konkretnym kontekście, nie zostaną podjęte żadne działania moderacyjne.
 
 Przed wysłaniem zgłoszeń dotyczących rozgrywki podczas wydarzenia sprawdź aktualne zasady wydarzenia lub zasady obszarów specjalnych.`,
-  Am = () => `Сообщённое действие было разрешено правилами события или особыми условиями, действовавшими в тот момент.
+  Fm = () => `Сообщённое действие было разрешено правилами события или особыми условиями, действовавшими в тот момент.
 
 Некоторые события, зоны, режимы игры или временные правила могут разрешать поведение, которое обычно ограничено в других местах. Поскольку действие было разрешено в этом конкретном контексте, никаких мер модерации приниматься не будет.
 
 Пожалуйста, проверяйте текущие правила события или правила особых зон, прежде чем отправлять жалобы, связанные с игровым процессом события.`,
-  Rm = () => `Повідомлена дія була дозволена правилами події або особливими умовами, що діяли на той момент.
+  Um = () => `Повідомлена дія була дозволена правилами події або особливими умовами, що діяли на той момент.
 
 Деякі події, зони, режими гри або тимчасові правила можуть дозволяти поведінку, яка зазвичай обмежена в інших місцях. Оскільки дія була дозволена в цьому конкретному контексті, жодних заходів модерації вжито не буде.
 
 Будь ласка, перевіряйте чинні правила події або правила особливих зон, перш ніж надсилати скарги, пов'язані з ігровим процесом події.`,
-  Im = () => `Hành động bị báo cáo được cho phép theo quy tắc sự kiện hoặc các điều kiện đặc biệt đang có hiệu lực vào thời điểm đó.
+  Gm = () => `Hành động bị báo cáo được cho phép theo quy tắc sự kiện hoặc các điều kiện đặc biệt đang có hiệu lực vào thời điểm đó.
 
 Một số sự kiện, khu vực, chế độ chơi hoặc quy tắc tạm thời có thể cho phép những hành vi mà ở nơi khác thường bị hạn chế. Vì hành động được cho phép trong bối cảnh cụ thể đó, sẽ không có biện pháp kiểm duyệt nào được áp dụng.
 
 Vui lòng kiểm tra quy tắc sự kiện hiện hành hoặc quy tắc khu vực đặc biệt trước khi gửi báo cáo liên quan đến lối chơi trong sự kiện.`,
-  Nm = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? wm() : e === "pt" ? ym() : e === "ch" ? bm() : e === "de" ? vm() : e === "es" ? Em() : e === "fr" ? Tm() : e === "it" ? Om() : e === "jp" ? km() : e === "pl" ? Sm() : e === "ru" ? Am() : e === "uk" ? Rm() : Im()
-  },
-  Dm = () => "Allowed by Event or Special Rules",
-  Lm = () => "Permitido por evento ou regras especiais",
-  Pm = () => "活动或特殊规则允许",
-  xm = () => "Durch Event oder Sonderregeln erlaubt",
-  zm = () => "Permitido por evento o reglas especiales",
-  Mm = () => "Autorisé par un événement ou des règles spéciales",
-  Cm = () => "Consentito da evento o regole speciali",
-  jm = () => "イベントまたは特別ルールにより許可",
-  Bm = () => "Dozwolone przez wydarzenie lub zasady specjalne",
-  Fm = () => "Разрешено событием или особыми правилами",
-  Um = () => "Дозволено подією або особливими правилами",
-  Gm = () => "Được phép theo sự kiện hoặc quy tắc đặc biệt",
   qm = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? Dm() : e === "pt" ? Lm() : e === "ch" ? Pm() : e === "de" ? xm() : e === "es" ? zm() : e === "fr" ? Mm() : e === "it" ? Cm() : e === "jp" ? jm() : e === "pl" ? Bm() : e === "ru" ? Fm() : e === "uk" ? Um() : Gm()
+    const e = t.locale ?? g();
+    return e === "en" ? Dm() : e === "pt" ? Pm() : e === "ch" ? Lm() : e === "de" ? xm() : e === "es" ? zm() : e === "fr" ? Cm() : e === "it" ? Mm() : e === "jp" ? jm() : e === "pl" ? Bm() : e === "ru" ? Fm() : e === "uk" ? Um() : Gm()
   },
-  Wm = () => `The reported issue appears to have been caused by a glitch, bug, lag, desync, or another technical problem.
+  Wm = () => "Allowed by Event or Special Rules",
+  Vm = () => "Permitido por evento ou regras especiais",
+  Km = () => "活动或特殊规则允许",
+  Hm = () => "Durch Event oder Sonderregeln erlaubt",
+  $m = () => "Permitido por evento o reglas especiales",
+  Xm = () => "Autorisé par un événement ou des règles spéciales",
+  Ym = () => "Consentito da evento o regole speciali",
+  Jm = () => "イベントまたは特別ルールにより許可",
+  Zm = () => "Dozwolone przez wydarzenie lub zasady specjalne",
+  Qm = () => "Разрешено событием или особыми правилами",
+  eh = () => "Дозволено подією або особливими правилами",
+  th = () => "Được phép theo sự kiện hoặc quy tắc đặc biệt",
+  nh = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? Wm() : e === "pt" ? Vm() : e === "ch" ? Km() : e === "de" ? Hm() : e === "es" ? $m() : e === "fr" ? Xm() : e === "it" ? Ym() : e === "jp" ? Jm() : e === "pl" ? Zm() : e === "ru" ? Qm() : e === "uk" ? eh() : th()
+  },
+  rh = () => `The reported issue appears to have been caused by a glitch, bug, lag, desync, or another technical problem.
 
 Because the evidence suggests that the situation may not have been intentional player misconduct, we cannot treat it as a punishable rule violation.
 
 If the issue continues, please report it as a bug or provide more evidence showing that a player intentionally abused the glitch.`,
-  Vm = () => `O problema denunciado parece ter sido causado por uma falha, bug, lag, dessincronização ou outro problema técnico.
+  oh = () => `O problema denunciado parece ter sido causado por uma falha, bug, lag, dessincronização ou outro problema técnico.
 
 Como as evidências sugerem que a situação pode não ter sido má conduta intencional de um jogador, não podemos tratá-la como uma violação de regras passível de punição.
 
 Se o problema persistir, denuncie-o como um bug ou forneça mais evidências mostrando que um jogador abusou intencionalmente da falha.`,
-  Km = () => `被举报的问题似乎是由故障、漏洞、延迟、不同步或其他技术问题导致的。
+  ih = () => `被举报的问题似乎是由故障、漏洞、延迟、不同步或其他技术问题导致的。
 
 由于证据表明该情况可能并非玩家的故意不当行为，我们无法将其视为可处罚的违规行为。
 
 如果问题持续存在，请将其作为漏洞举报，或提供更多证据，证明有玩家故意利用了该故障。`,
-  Hm = () => `Das gemeldete Problem scheint durch einen Glitch, Bug, Lag, eine Desynchronisation oder ein anderes technisches Problem verursacht worden zu sein.
+  ah = () => `Das gemeldete Problem scheint durch einen Glitch, Bug, Lag, eine Desynchronisation oder ein anderes technisches Problem verursacht worden zu sein.
 
 Da die Beweise darauf hindeuten, dass es sich möglicherweise nicht um vorsätzliches Fehlverhalten eines Spielers handelte, können wir es nicht als strafbaren Regelverstoß behandeln.
 
 Wenn das Problem weiterhin besteht, melde es bitte als Bug oder liefere weitere Beweise, die zeigen, dass ein Spieler den Glitch absichtlich ausgenutzt hat.`,
-  $m = () => `El problema reportado parece haber sido causado por un fallo, un error, lag, desincronización u otro problema técnico.
+  sh = () => `El problema reportado parece haber sido causado por un fallo, un error, lag, desincronización u otro problema técnico.
 
 Dado que las pruebas sugieren que la situación pudo no ser una mala conducta intencional de un jugador, no podemos tratarla como una violación de reglas sancionable.
 
 Si el problema continúa, repórtalo como un error o aporta más pruebas que demuestren que un jugador abusó intencionalmente del fallo.`,
-  Xm = () => `Le problème signalé semble avoir été causé par un bug, un glitch, du lag, une désynchronisation ou un autre problème technique.
+  ch = () => `Le problème signalé semble avoir été causé par un bug, un glitch, du lag, une désynchronisation ou un autre problème technique.
 
 Comme les preuves suggèrent que la situation n'était peut-être pas une faute intentionnelle d'un joueur, nous ne pouvons pas la traiter comme une infraction passible de sanction.
 
 Si le problème persiste, veuillez le signaler en tant que bug ou fournir davantage de preuves montrant qu'un joueur a intentionnellement abusé du bug.`,
-  Ym = () => `Il problema segnalato sembra essere stato causato da un glitch, un bug, lag, desincronizzazione o un altro problema tecnico.
+  uh = () => `Il problema segnalato sembra essere stato causato da un glitch, un bug, lag, desincronizzazione o un altro problema tecnico.
 
 Poiché le prove suggeriscono che la situazione potrebbe non essere stata una cattiva condotta intenzionale di un giocatore, non possiamo trattarla come una violazione delle regole punibile.
 
 Se il problema persiste, segnalalo come bug o fornisci ulteriori prove che mostrino che un giocatore ha abusato intenzionalmente del glitch.`,
-  Jm = () => `報告された問題は、不具合、バグ、ラグ、同期ずれ、またはその他の技術的な問題によって引き起こされた可能性があります。
+  lh = () => `報告された問題は、不具合、バグ、ラグ、同期ずれ、またはその他の技術的な問題によって引き起こされた可能性があります。
 
 証拠からは、プレイヤーの意図的な不正行為ではなかった可能性が示唆されるため、処罰の対象となるルール違反として扱うことはできません。
 
 問題が続く場合は、バグとして報告するか、プレイヤーが意図的に不具合を悪用したことを示すさらなる証拠を提出してください。`,
-  Zm = () => `Zgłoszony problem prawdopodobnie został spowodowany usterką, błędem, lagiem, desynchronizacją lub innym problemem technicznym.
+  dh = () => `Zgłoszony problem prawdopodobnie został spowodowany usterką, błędem, lagiem, desynchronizacją lub innym problemem technicznym.
 
 Ponieważ dowody sugerują, że sytuacja mogła nie być celowym niewłaściwym zachowaniem gracza, nie możemy potraktować jej jako karalnego naruszenia zasad.
 
 Jeśli problem będzie się powtarzał, zgłoś go jako błąd lub dostarcz więcej dowodów pokazujących, że gracz celowo wykorzystał usterkę.`,
-  Qm = () => `Сообщённая проблема, по-видимому, была вызвана сбоем, багом, лагом, рассинхронизацией или другой технической неполадкой.
+  _h = () => `Сообщённая проблема, по-видимому, была вызвана сбоем, багом, лагом, рассинхронизацией или другой технической неполадкой.
 
 Поскольку доказательства указывают на то, что ситуация могла не быть умышленным нарушением со стороны игрока, мы не можем рассматривать её как наказуемое нарушение правил.
 
 Если проблема сохраняется, сообщите о ней как об ошибке или предоставьте дополнительные доказательства того, что игрок умышленно воспользовался сбоем.`,
-  eh = () => `Повідомлена проблема, схоже, була спричинена збоєм, багом, лагом, розсинхронізацією або іншою технічною несправністю.
+  fh = () => `Повідомлена проблема, схоже, була спричинена збоєм, багом, лагом, розсинхронізацією або іншою технічною несправністю.
 
 Оскільки докази свідчать, що ситуація могла не бути навмисною неправомірною поведінкою гравця, ми не можемо розглядати її як порушення правил, що карається.
 
 Якщо проблема повторюється, повідомте про неї як про помилку або надайте додаткові докази того, що гравець навмисно скористався збоєм.`,
-  th = () => `Vấn đề bị báo cáo có vẻ do một lỗi kỹ thuật, bug, lag, mất đồng bộ hoặc một sự cố kỹ thuật khác gây ra.
+  ph = () => `Vấn đề bị báo cáo có vẻ do một lỗi kỹ thuật, bug, lag, mất đồng bộ hoặc một sự cố kỹ thuật khác gây ra.
 
 Vì bằng chứng cho thấy tình huống có thể không phải là hành vi sai phạm cố ý của người chơi, chúng tôi không thể xem đó là vi phạm quy tắc có thể bị xử phạt.
 
 Nếu vấn đề vẫn tiếp diễn, vui lòng báo cáo dưới dạng lỗi hoặc cung cấp thêm bằng chứng cho thấy người chơi đã cố ý lợi dụng lỗi đó.`,
-  nh = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? Wm() : e === "pt" ? Vm() : e === "ch" ? Km() : e === "de" ? Hm() : e === "es" ? $m() : e === "fr" ? Xm() : e === "it" ? Ym() : e === "jp" ? Jm() : e === "pl" ? Zm() : e === "ru" ? Qm() : e === "uk" ? eh() : th()
-  },
-  rh = () => "Caused by a Glitch",
-  oh = () => "Causado por uma falha",
-  ih = () => "由故障导致",
-  ah = () => "Durch einen Glitch verursacht",
-  sh = () => "Causado por un fallo",
-  ch = () => "Causé par un bug",
-  uh = () => "Causato da un glitch",
-  lh = () => "不具合が原因",
-  dh = () => "Spowodowane usterką",
-  _h = () => "Вызвано сбоем",
-  fh = () => "Спричинено збоєм",
-  ph = () => "Do lỗi kỹ thuật gây ra",
   mh = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? rh() : e === "pt" ? oh() : e === "ch" ? ih() : e === "de" ? ah() : e === "es" ? sh() : e === "fr" ? ch() : e === "it" ? uh() : e === "jp" ? lh() : e === "pl" ? dh() : e === "ru" ? _h() : e === "uk" ? fh() : ph()
   },
-  hh = () => `We could not confirm what happened based on the information provided.
+  hh = () => "Caused by a Glitch",
+  gh = () => "Causado por uma falha",
+  wh = () => "由故障导致",
+  yh = () => "Durch einen Glitch verursacht",
+  bh = () => "Causado por un fallo",
+  vh = () => "Causé par un bug",
+  Eh = () => "Causato da un glitch",
+  Th = () => "不具合が原因",
+  Oh = () => "Spowodowane usterką",
+  kh = () => "Вызвано сбоем",
+  Sh = () => "Спричинено збоєм",
+  Ah = () => "Do lỗi kỹ thuật gây ra",
+  Rh = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? hh() : e === "pt" ? gh() : e === "ch" ? wh() : e === "de" ? yh() : e === "es" ? bh() : e === "fr" ? vh() : e === "it" ? Eh() : e === "jp" ? Th() : e === "pl" ? Oh() : e === "ru" ? kh() : e === "uk" ? Sh() : Ah()
+  },
+  Ih = () => `We could not confirm what happened based on the information provided.
 
 The report may show part of the situation, but it does not include enough context for the moderation team to understand the full incident, verify the sequence of events, or determine whether a rule was broken.
 
 When submitting a report, please include clear evidence, relevant timestamps, location or coordinates when applicable, and enough surrounding context to help us understand what happened before and after the reported action.`,
-  gh = () => `Não foi possível confirmar o que aconteceu com base nas informações fornecidas.
+  Nh = () => `Não foi possível confirmar o que aconteceu com base nas informações fornecidas.
 
 A denúncia pode mostrar parte da situação, mas não inclui contexto suficiente para que a equipe de moderação entenda o incidente completo, verifique a sequência dos eventos ou determine se uma regra foi violada.
 
 Ao enviar uma denúncia, inclua evidências claras, registros de horário relevantes, localização ou coordenadas quando aplicável e contexto suficiente para nos ajudar a entender o que aconteceu antes e depois da ação denunciada.`,
-  wh = () => `根据所提供的信息，我们无法确认发生了什么。
+  Dh = () => `根据所提供的信息，我们无法确认发生了什么。
 
 该举报可能展示了部分情况，但没有包含足够的背景信息，使审核团队无法了解整个事件、核实事件的先后顺序，或判断是否违反了规则。
 
 提交举报时，请附上清晰的证据、相关的时间戳、适用时的位置或坐标，以及足够的背景信息，帮助我们了解被举报行为前后发生了什么。`,
-  yh = () => `Anhand der bereitgestellten Informationen konnten wir nicht bestätigen, was passiert ist.
+  Ph = () => `Anhand der bereitgestellten Informationen konnten wir nicht bestätigen, was passiert ist.
 
 Die Meldung zeigt möglicherweise einen Teil der Situation, enthält aber nicht genug Kontext, damit das Moderationsteam den gesamten Vorfall verstehen, den Ablauf der Ereignisse überprüfen oder feststellen kann, ob eine Regel verletzt wurde.
 
 Füge beim Einreichen einer Meldung bitte klare Beweise, relevante Zeitstempel, gegebenenfalls Ort oder Koordinaten sowie genügend Kontext hinzu, damit wir verstehen, was vor und nach der gemeldeten Aktion geschah.`,
-  bh = () => `No pudimos confirmar qué ocurrió con la información proporcionada.
+  Lh = () => `No pudimos confirmar qué ocurrió con la información proporcionada.
 
 El reporte puede mostrar parte de la situación, pero no incluye contexto suficiente para que el equipo de moderación entienda el incidente completo, verifique la secuencia de los hechos o determine si se infringió una regla.
 
 Al enviar un reporte, incluye pruebas claras, marcas de tiempo relevantes, ubicación o coordenadas cuando corresponda y contexto suficiente para ayudarnos a entender qué ocurrió antes y después de la acción reportada.`,
-  vh = () => `Nous n'avons pas pu confirmer ce qui s'est passé sur la base des informations fournies.
+  xh = () => `Nous n'avons pas pu confirmer ce qui s'est passé sur la base des informations fournies.
 
 Le signalement montre peut-être une partie de la situation, mais il ne fournit pas assez de contexte pour que l'équipe de modération comprenne l'incident dans son ensemble, vérifie le déroulement des événements ou détermine si une règle a été enfreinte.
 
 Lorsque vous soumettez un signalement, veuillez inclure des preuves claires, les horodatages pertinents, l'emplacement ou les coordonnées le cas échéant, et suffisamment de contexte pour nous aider à comprendre ce qui s'est passé avant et après l'action signalée.`,
-  Eh = () => `Non siamo riusciti a confermare cosa sia successo in base alle informazioni fornite.
+  zh = () => `Non siamo riusciti a confermare cosa sia successo in base alle informazioni fornite.
 
 La segnalazione può mostrare parte della situazione, ma non include abbastanza contesto per permettere al team di moderazione di comprendere l'intero incidente, verificare la sequenza degli eventi o stabilire se una regola sia stata violata.
 
 Quando invii una segnalazione, includi prove chiare, marche temporali pertinenti, posizione o coordinate quando applicabile e contesto sufficiente per aiutarci a capire cosa è successo prima e dopo l'azione segnalata.`,
-  Th = () => `提供された情報からは、何が起きたのかを確認できませんでした。
+  Ch = () => `提供された情報からは、何が起きたのかを確認できませんでした。
 
 この報告は状況の一部を示しているかもしれませんが、モデレーションチームが事案の全体像を把握し、出来事の流れを確認し、ルール違反があったかどうかを判断するのに十分な背景情報が含まれていません。
 
 報告を提出する際は、明確な証拠、関連するタイムスタンプ、該当する場合は場所や座標、そして報告された行為の前後に何が起きたかを理解するのに十分な背景情報を含めてください。`,
-  Oh = () => `Na podstawie podanych informacji nie mogliśmy potwierdzić, co się wydarzyło.
+  Mh = () => `Na podstawie podanych informacji nie mogliśmy potwierdzić, co się wydarzyło.
 
 Zgłoszenie może pokazywać część sytuacji, ale nie zawiera wystarczającego kontekstu, aby zespół moderacji mógł zrozumieć całe zdarzenie, zweryfikować przebieg wydarzeń lub ustalić, czy doszło do naruszenia zasad.
 
 Wysyłając zgłoszenie, dołącz wyraźne dowody, odpowiednie znaczniki czasu, lokalizację lub współrzędne, jeśli dotyczy, oraz wystarczający kontekst, który pomoże nam zrozumieć, co wydarzyło się przed zgłoszonym działaniem i po nim.`,
-  kh = () => `На основании предоставленной информации мы не смогли подтвердить, что произошло.
+  jh = () => `На основании предоставленной информации мы не смогли подтвердить, что произошло.
 
 Жалоба может показывать часть ситуации, но в ней недостаточно контекста, чтобы команда модерации могла понять инцидент целиком, проверить последовательность событий или определить, было ли нарушено правило.
 
 При отправке жалобы прилагайте чёткие доказательства, соответствующие временные метки, местоположение или координаты, если применимо, и достаточный контекст, чтобы помочь нам понять, что происходило до и после указанного действия.`,
-  Sh = () => `На основі наданої інформації ми не змогли підтвердити, що сталося.
+  Bh = () => `На основі наданої інформації ми не змогли підтвердити, що сталося.
 
 Скарга може показувати частину ситуації, але в ній недостатньо контексту, щоб команда модерації зрозуміла весь інцидент, перевірила послідовність подій або визначила, чи було порушено правило.
 
 Надсилаючи скаргу, додавайте чіткі докази, відповідні позначки часу, місце або координати, якщо це доречно, і достатньо контексту, щоб допомогти нам зрозуміти, що відбувалося до та після зазначеної дії.`,
-  Ah = () => `Chúng tôi không thể xác nhận điều gì đã xảy ra dựa trên thông tin được cung cấp.
+  Fh = () => `Chúng tôi không thể xác nhận điều gì đã xảy ra dựa trên thông tin được cung cấp.
 
 Báo cáo có thể cho thấy một phần tình huống, nhưng không bao gồm đủ bối cảnh để đội ngũ kiểm duyệt hiểu toàn bộ sự việc, xác minh trình tự các sự kiện hoặc xác định liệu có vi phạm quy tắc hay không.
 
 Khi gửi báo cáo, vui lòng kèm theo bằng chứng rõ ràng, dấu thời gian liên quan, vị trí hoặc tọa độ khi cần, và đủ bối cảnh xung quanh để giúp chúng tôi hiểu điều gì đã xảy ra trước và sau hành động bị báo cáo.`,
-  Rh = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? hh() : e === "pt" ? gh() : e === "ch" ? wh() : e === "de" ? yh() : e === "es" ? bh() : e === "fr" ? vh() : e === "it" ? Eh() : e === "jp" ? Th() : e === "pl" ? Oh() : e === "ru" ? kh() : e === "uk" ? Sh() : Ah()
-  },
-  Ih = () => "Insufficient Context",
-  Nh = () => "Contexto insuficiente",
-  Dh = () => "背景信息不足",
-  Lh = () => "Unzureichender Kontext",
-  Ph = () => "Contexto insuficiente",
-  xh = () => "Contexte insuffisant",
-  zh = () => "Contesto insufficiente",
-  Mh = () => "情報が不十分",
-  Ch = () => "Niewystarczający kontekst",
-  jh = () => "Недостаточно контекста",
-  Bh = () => "Недостатньо контексту",
-  Fh = () => "Không đủ bối cảnh",
   Uh = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? Ih() : e === "pt" ? Nh() : e === "ch" ? Dh() : e === "de" ? Lh() : e === "es" ? Ph() : e === "fr" ? xh() : e === "it" ? zh() : e === "jp" ? Mh() : e === "pl" ? Ch() : e === "ru" ? jh() : e === "uk" ? Bh() : Fh()
+    const e = t.locale ?? g();
+    return e === "en" ? Ih() : e === "pt" ? Nh() : e === "ch" ? Dh() : e === "de" ? Ph() : e === "es" ? Lh() : e === "fr" ? xh() : e === "it" ? zh() : e === "jp" ? Ch() : e === "pl" ? Mh() : e === "ru" ? jh() : e === "uk" ? Bh() : Fh()
   },
-  Gh = () => `The report contains incorrect, incomplete, inaccessible, or unusable information.
+  Gh = () => "Insufficient Context",
+  qh = () => "Contexto insuficiente",
+  Wh = () => "背景信息不足",
+  Vh = () => "Unzureichender Kontext",
+  Kh = () => "Contexto insuficiente",
+  Hh = () => "Contexte insuffisant",
+  $h = () => "Contesto insufficiente",
+  Xh = () => "情報が不十分",
+  Yh = () => "Niewystarczający kontekst",
+  Jh = () => "Недостаточно контекста",
+  Zh = () => "Недостатньо контексту",
+  Qh = () => "Không đủ bối cảnh",
+  eg = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? Gh() : e === "pt" ? qh() : e === "ch" ? Wh() : e === "de" ? Vh() : e === "es" ? Kh() : e === "fr" ? Hh() : e === "it" ? $h() : e === "jp" ? Xh() : e === "pl" ? Yh() : e === "ru" ? Jh() : e === "uk" ? Zh() : Qh()
+  },
+  tg = () => `The report contains incorrect, incomplete, inaccessible, or unusable information.
 
 This can happen when the evidence does not match the report, the link is broken, or required details are missing.
 
 Please review the information carefully before submitting a report. Make sure to report the correct player, make sure that it is an actual violation, and make sure to submit enough context details to help the moderation team investigate reports properly.`,
-  qh = () => `A denúncia contém informações incorretas, incompletas, inacessíveis ou inutilizáveis.
+  ng = () => `A denúncia contém informações incorretas, incompletas, inacessíveis ou inutilizáveis.
 
 Isso pode acontecer quando as evidências não correspondem à denúncia, o link está quebrado ou detalhes obrigatórios estão faltando.
 
 Revise as informações com atenção antes de enviar uma denúncia. Certifique-se de denunciar o jogador correto, de que se trata de uma violação real e de fornecer detalhes de contexto suficientes para ajudar a equipe de moderação a investigar as denúncias adequadamente.`,
-  Wh = () => `该举报包含不正确、不完整、无法访问或无法使用的信息。
+  rg = () => `该举报包含不正确、不完整、无法访问或无法使用的信息。
 
 这可能是因为证据与举报内容不符、链接失效，或缺少必要的细节。
 
 提交举报前，请仔细核对信息。请确保举报的是正确的玩家、确实存在违规行为，并提供足够的背景细节，以帮助审核团队妥善调查举报。`,
-  Vh = () => `Die Meldung enthält falsche, unvollständige, nicht zugängliche oder unbrauchbare Informationen.
+  og = () => `Die Meldung enthält falsche, unvollständige, nicht zugängliche oder unbrauchbare Informationen.
 
 Das kann passieren, wenn die Beweise nicht zur Meldung passen, der Link defekt ist oder erforderliche Angaben fehlen.
 
 Bitte überprüfe die Informationen sorgfältig, bevor du eine Meldung einreichst. Stelle sicher, dass du den richtigen Spieler meldest, dass es sich tatsächlich um einen Verstoß handelt und dass du genügend Kontextdetails angibst, damit das Moderationsteam Meldungen ordnungsgemäß untersuchen kann.`,
-  Kh = () => `El reporte contiene información incorrecta, incompleta, inaccesible o inservible.
+  ig = () => `El reporte contiene información incorrecta, incompleta, inaccesible o inservible.
 
 Esto puede ocurrir cuando las pruebas no coinciden con el reporte, el enlace está roto o faltan datos necesarios.
 
 Revisa la información con cuidado antes de enviar un reporte. Asegúrate de reportar al jugador correcto, de que se trata de una infracción real y de aportar suficientes detalles de contexto para ayudar al equipo de moderación a investigar los reportes adecuadamente.`,
-  Hh = () => `Le signalement contient des informations incorrectes, incomplètes, inaccessibles ou inutilisables.
+  ag = () => `Le signalement contient des informations incorrectes, incomplètes, inaccessibles ou inutilisables.
 
 Cela peut arriver lorsque les preuves ne correspondent pas au signalement, que le lien est rompu ou que des détails requis sont manquants.
 
 Veuillez vérifier attentivement les informations avant de soumettre un signalement. Assurez-vous de signaler le bon joueur, qu'il s'agit bien d'une véritable infraction et de fournir suffisamment de détails de contexte pour aider l'équipe de modération à enquêter correctement sur les signalements.`,
-  $h = () => `La segnalazione contiene informazioni errate, incomplete, inaccessibili o inutilizzabili.
+  sg = () => `La segnalazione contiene informazioni errate, incomplete, inaccessibili o inutilizzabili.
 
 Ciò può accadere quando le prove non corrispondono alla segnalazione, il link è interrotto o mancano dettagli obbligatori.
 
 Controlla attentamente le informazioni prima di inviare una segnalazione. Assicurati di segnalare il giocatore corretto, che si tratti di una violazione reale e di fornire dettagli di contesto sufficienti per aiutare il team di moderazione a investigare correttamente le segnalazioni.`,
-  Xh = () => `この報告には、誤った、不完全な、アクセスできない、または使用できない情報が含まれています。
+  cg = () => `この報告には、誤った、不完全な、アクセスできない、または使用できない情報が含まれています。
 
 これは、証拠が報告内容と一致しない、リンクが切れている、または必要な詳細が欠けている場合に起こり得ます。
 
 報告を提出する前に、情報を注意深く確認してください。正しいプレイヤーを報告していること、実際に違反であること、そしてモデレーションチームが報告を適切に調査できるよう十分な背景情報を提出していることを確認してください。`,
-  Yh = () => `Zgłoszenie zawiera nieprawidłowe, niepełne, niedostępne lub nieprzydatne informacje.
+  ug = () => `Zgłoszenie zawiera nieprawidłowe, niepełne, niedostępne lub nieprzydatne informacje.
 
 Może się to zdarzyć, gdy dowody nie pasują do zgłoszenia, link jest nieaktywny lub brakuje wymaganych szczegółów.
 
 Przed wysłaniem zgłoszenia dokładnie sprawdź informacje. Upewnij się, że zgłaszasz właściwego gracza, że jest to rzeczywiste naruszenie oraz że podajesz wystarczające szczegóły kontekstu, aby pomóc zespołowi moderacji prawidłowo zbadać zgłoszenia.`,
-  Jh = () => `Жалоба содержит неверную, неполную, недоступную или непригодную информацию.
+  lg = () => `Жалоба содержит неверную, неполную, недоступную или непригодную информацию.
 
 Это может произойти, когда доказательства не соответствуют жалобе, ссылка не работает или отсутствуют необходимые сведения.
 
 Внимательно проверьте информацию перед отправкой жалобы. Убедитесь, что вы жалуетесь на нужного игрока, что это действительно нарушение, и что вы предоставили достаточно контекстных деталей, чтобы помочь команде модерации правильно расследовать жалобы.`,
-  Zh = () => `Скарга містить неправильну, неповну, недоступну або непридатну інформацію.
+  dg = () => `Скарга містить неправильну, неповну, недоступну або непридатну інформацію.
 
 Це може статися, коли докази не відповідають скарзі, посилання не працює або відсутні обов'язкові деталі.
 
 Уважно перевірте інформацію перед надсиланням скарги. Переконайтеся, що ви скаржитеся на правильного гравця, що це справді порушення, і що ви надаєте достатньо контекстних деталей, щоб допомогти команді модерації належно розслідувати скарги.`,
-  Qh = () => `Báo cáo chứa thông tin không chính xác, không đầy đủ, không truy cập được hoặc không sử dụng được.
+  _g = () => `Báo cáo chứa thông tin không chính xác, không đầy đủ, không truy cập được hoặc không sử dụng được.
 
 Điều này có thể xảy ra khi bằng chứng không khớp với báo cáo, liên kết bị hỏng hoặc thiếu các chi tiết bắt buộc.
 
 Vui lòng xem lại thông tin cẩn thận trước khi gửi báo cáo. Hãy chắc chắn rằng bạn báo cáo đúng người chơi, rằng đó thực sự là một vi phạm, và cung cấp đủ chi tiết bối cảnh để giúp đội ngũ kiểm duyệt điều tra báo cáo một cách hợp lý.`,
-  eg = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? Gh() : e === "pt" ? qh() : e === "ch" ? Wh() : e === "de" ? Vh() : e === "es" ? Kh() : e === "fr" ? Hh() : e === "it" ? $h() : e === "jp" ? Xh() : e === "pl" ? Yh() : e === "ru" ? Jh() : e === "uk" ? Zh() : Qh()
-  },
-  tg = () => "Invalid Information",
-  ng = () => "Informação inválida",
-  rg = () => "信息无效",
-  og = () => "Ungültige Informationen",
-  ig = () => "Información no válida",
-  ag = () => "Informations non valides",
-  sg = () => "Informazioni non valide",
-  cg = () => "無効な情報",
-  ug = () => "Nieprawidłowe informacje",
-  lg = () => "Недействительная информация",
-  dg = () => "Недійсна інформація",
-  _g = () => "Thông tin không hợp lệ",
   fg = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? tg() : e === "pt" ? ng() : e === "ch" ? rg() : e === "de" ? og() : e === "es" ? ig() : e === "fr" ? ag() : e === "it" ? sg() : e === "jp" ? cg() : e === "pl" ? ug() : e === "ru" ? lg() : e === "uk" ? dg() : _g()
   },
-  pg = () => `The reported behavior does not appear to violate the current rules.
+  pg = () => "Invalid Information",
+  mg = () => "Informação inválida",
+  hg = () => "信息无效",
+  gg = () => "Ungültige Informationen",
+  wg = () => "Información no válida",
+  yg = () => "Informations non valides",
+  bg = () => "Informazioni non valide",
+  vg = () => "無効な情報",
+  Eg = () => "Nieprawidłowe informacje",
+  Tg = () => "Недействительная информация",
+  Og = () => "Недійсна інформація",
+  kg = () => "Thông tin không hợp lệ",
+  Sg = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? pg() : e === "pt" ? mg() : e === "ch" ? hg() : e === "de" ? gg() : e === "es" ? wg() : e === "fr" ? yg() : e === "it" ? bg() : e === "jp" ? vg() : e === "pl" ? Eg() : e === "ru" ? Tg() : e === "uk" ? Og() : kg()
+  },
+  Ag = () => `The reported behavior does not appear to violate the current rules.
 
 The situation may have been frustrating, unwanted, or disruptive from your perspective, but based on the evidence provided, it does not meet the criteria for a rule violation.
 
 Moderation actions are only taken when a report clearly shows behavior that breaks the rules. If you believe this decision is incorrect, please make sure future reports include enough context explaining why you believe that a rule was violated.`,
-  mg = () => `O comportamento denunciado não parece violar as regras atuais.
+  Rg = () => `O comportamento denunciado não parece violar as regras atuais.
 
 A situação pode ter sido frustrante, indesejada ou perturbadora do seu ponto de vista, mas, com base nas evidências fornecidas, ela não atende aos critérios de uma violação de regra.
 
 Ações de moderação só são tomadas quando uma denúncia mostra claramente um comportamento que infringe as regras. Se você acredita que esta decisão está incorreta, certifique-se de que futuras denúncias incluam contexto suficiente explicando por que você acredita que uma regra foi violada.`,
-  hg = () => `被举报的行为似乎并未违反当前规则。
+  Ig = () => `被举报的行为似乎并未违反当前规则。
 
 从您的角度看，这种情况可能令人沮丧、不受欢迎或具有干扰性，但根据所提供的证据，它并不符合违规的标准。
 
 只有当举报清楚地显示出违反规则的行为时，才会采取审核措施。如果您认为此决定有误，请确保今后的举报包含足够的背景信息，说明您为何认为某条规则被违反。`,
-  gg = () => `Das gemeldete Verhalten scheint nicht gegen die aktuellen Regeln zu verstoßen.
+  Ng = () => `Das gemeldete Verhalten scheint nicht gegen die aktuellen Regeln zu verstoßen.
 
 Die Situation mag aus deiner Sicht frustrierend, unerwünscht oder störend gewesen sein, aber auf Grundlage der vorgelegten Beweise erfüllt sie nicht die Kriterien für einen Regelverstoß.
 
 Moderationsmaßnahmen werden nur ergriffen, wenn eine Meldung eindeutig ein Verhalten zeigt, das gegen die Regeln verstößt. Wenn du der Meinung bist, dass diese Entscheidung falsch ist, achte bitte darauf, dass künftige Meldungen genügend Kontext enthalten und erklären, warum du glaubst, dass eine Regel verletzt wurde.`,
-  wg = () => `El comportamiento reportado no parece infringir las reglas actuales.
+  Dg = () => `El comportamiento reportado no parece infringir las reglas actuales.
 
 La situación pudo haber sido frustrante, no deseada o molesta desde tu punto de vista, pero, según las pruebas aportadas, no cumple los criterios de una infracción de reglas.
 
 Las acciones de moderación solo se toman cuando un reporte muestra claramente un comportamiento que rompe las reglas. Si crees que esta decisión es incorrecta, asegúrate de que los reportes futuros incluyan suficiente contexto que explique por qué consideras que se infringió una regla.`,
-  yg = () => `Le comportement signalé ne semble pas enfreindre les règles actuelles.
+  Pg = () => `Le comportement signalé ne semble pas enfreindre les règles actuelles.
 
 La situation a peut-être été frustrante, indésirable ou perturbante de votre point de vue, mais d'après les preuves fournies, elle ne remplit pas les critères d'une infraction aux règles.
 
 Des mesures de modération ne sont prises que lorsqu'un signalement montre clairement un comportement qui enfreint les règles. Si vous pensez que cette décision est incorrecte, veillez à ce que vos futurs signalements incluent suffisamment de contexte expliquant pourquoi vous estimez qu'une règle a été enfreinte.`,
-  bg = () => `Il comportamento segnalato non sembra violare le regole attuali.
+  Lg = () => `Il comportamento segnalato non sembra violare le regole attuali.
 
 La situazione potrebbe essere stata frustrante, indesiderata o fastidiosa dal tuo punto di vista, ma in base alle prove fornite non soddisfa i criteri di una violazione delle regole.
 
 Le azioni di moderazione vengono intraprese solo quando una segnalazione mostra chiaramente un comportamento che infrange le regole. Se ritieni che questa decisione sia errata, assicurati che le segnalazioni future includano contesto sufficiente a spiegare perché ritieni che una regola sia stata violata.`,
-  vg = () => `報告された行為は、現在のルールに違反していないようです。
+  xg = () => `報告された行為は、現在のルールに違反していないようです。
 
 その状況は、あなたの視点ではいら立たしく、望ましくなく、または迷惑なものだったかもしれませんが、提供された証拠に基づくと、ルール違反の基準を満たしていません。
 
 モデレーションの措置は、報告が明確にルールを破る行為を示している場合にのみ行われます。この判断が誤っていると思われる場合は、今後の報告に、なぜルール違反だと考えるのかを説明する十分な背景情報を含めるようにしてください。`,
-  Eg = () => `Zgłoszone zachowanie nie wydaje się naruszać obowiązujących zasad.
+  zg = () => `Zgłoszone zachowanie nie wydaje się naruszać obowiązujących zasad.
 
 Sytuacja mogła być z twojej perspektywy frustrująca, niechciana lub uciążliwa, ale na podstawie dostarczonych dowodów nie spełnia kryteriów naruszenia zasad.
 
 Działania moderacyjne są podejmowane tylko wtedy, gdy zgłoszenie wyraźnie pokazuje zachowanie łamiące zasady. Jeśli uważasz, że ta decyzja jest błędna, zadbaj o to, aby przyszłe zgłoszenia zawierały wystarczający kontekst wyjaśniający, dlaczego uważasz, że doszło do naruszenia zasad.`,
-  Tg = () => `Указанное поведение, по-видимому, не нарушает действующих правил.
+  Cg = () => `Указанное поведение, по-видимому, не нарушает действующих правил.
 
 С вашей точки зрения ситуация могла быть неприятной, нежелательной или мешающей, но на основании предоставленных доказательств она не соответствует критериям нарушения правил.
 
 Меры модерации принимаются только тогда, когда жалоба чётко показывает поведение, нарушающее правила. Если вы считаете, что это решение неверно, постарайтесь, чтобы будущие жалобы содержали достаточно контекста, объясняющего, почему вы считаете, что правило было нарушено.`,
-  Og = () => `Зазначена поведінка, схоже, не порушує чинних правил.
+  Mg = () => `Зазначена поведінка, схоже, не порушує чинних правил.
 
 З вашого погляду ситуація могла бути неприємною, небажаною або такою, що заважає, але на основі наданих доказів вона не відповідає критеріям порушення правил.
 
 Заходи модерації вживаються лише тоді, коли скарга чітко показує поведінку, що порушує правила. Якщо ви вважаєте, що це рішення неправильне, подбайте, щоб майбутні скарги містили достатньо контексту з поясненням, чому ви вважаєте, що правило було порушено.`,
-  kg = () => `Hành vi bị báo cáo dường như không vi phạm các quy tắc hiện hành.
+  jg = () => `Hành vi bị báo cáo dường như không vi phạm các quy tắc hiện hành.
 
 Tình huống có thể gây bực bội, không mong muốn hoặc gây phiền toái từ góc nhìn của bạn, nhưng dựa trên bằng chứng được cung cấp, nó không đáp ứng tiêu chí của một vi phạm quy tắc.
 
 Các biện pháp kiểm duyệt chỉ được áp dụng khi một báo cáo cho thấy rõ hành vi vi phạm quy tắc. Nếu bạn cho rằng quyết định này không đúng, hãy đảm bảo các báo cáo trong tương lai có đủ bối cảnh giải thích vì sao bạn tin rằng một quy tắc đã bị vi phạm.`,
-  Sg = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? pg() : e === "pt" ? mg() : e === "ch" ? hg() : e === "de" ? gg() : e === "es" ? wg() : e === "fr" ? yg() : e === "it" ? bg() : e === "jp" ? vg() : e === "pl" ? Eg() : e === "ru" ? Tg() : e === "uk" ? Og() : kg()
-  },
-  Ag = () => "No Rule Violation",
-  Rg = () => "Nenhuma violação de regra",
-  Ig = () => "未违反规则",
-  Ng = () => "Kein Regelverstoß",
-  Dg = () => "Sin infracción de reglas",
-  Lg = () => "Aucune infraction aux règles",
-  Pg = () => "Nessuna violazione delle regole",
-  xg = () => "ルール違反なし",
-  zg = () => "Brak naruszenia zasad",
-  Mg = () => "Нарушения правил нет",
-  Cg = () => "Порушення правил немає",
-  jg = () => "Không vi phạm quy tắc",
   Bg = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? Ag() : e === "pt" ? Rg() : e === "ch" ? Ig() : e === "de" ? Ng() : e === "es" ? Dg() : e === "fr" ? Lg() : e === "it" ? Pg() : e === "jp" ? xg() : e === "pl" ? zg() : e === "ru" ? Mg() : e === "uk" ? Cg() : jg()
+    const e = t.locale ?? g();
+    return e === "en" ? Ag() : e === "pt" ? Rg() : e === "ch" ? Ig() : e === "de" ? Ng() : e === "es" ? Dg() : e === "fr" ? Pg() : e === "it" ? Lg() : e === "jp" ? xg() : e === "pl" ? zg() : e === "ru" ? Cg() : e === "uk" ? Mg() : jg()
   },
-  Fg = () => `The report shows behavior that may be questionable, but it is not severe or clear enough to justify a moderation action.
+  Fg = () => "No Rule Violation",
+  Ug = () => "Nenhuma violação de regra",
+  Gg = () => "未违反规则",
+  qg = () => "Kein Regelverstoß",
+  Wg = () => "Sin infracción de reglas",
+  Vg = () => "Aucune infraction aux règles",
+  Kg = () => "Nessuna violazione delle regole",
+  Hg = () => "ルール違反なし",
+  $g = () => "Brak naruszenia zasad",
+  Xg = () => "Нарушения правил нет",
+  Yg = () => "Порушення правил немає",
+  Jg = () => "Không vi phạm quy tắc",
+  Zg = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? Fg() : e === "pt" ? Ug() : e === "ch" ? Gg() : e === "de" ? qg() : e === "es" ? Wg() : e === "fr" ? Vg() : e === "it" ? Kg() : e === "jp" ? Hg() : e === "pl" ? $g() : e === "ru" ? Xg() : e === "uk" ? Yg() : Jg()
+  },
+  Qg = () => `The report shows behavior that may be questionable, but it is not severe or clear enough to justify a moderation action.
 
 Some situations may be inappropriate, annoying, or borderline, but still not reach the threshold required for a punishment. In these cases, the moderation team may choose not to take formal action unless the behavior continues or becomes more serious.
 
 If this happens again, please submit a new report with additional evidence showing a repeated pattern or a more serious violation.`,
-  Ug = () => `A denúncia mostra um comportamento que pode ser questionável, mas não é grave nem claro o suficiente para justificar uma ação de moderação.
+  ew = () => `A denúncia mostra um comportamento que pode ser questionável, mas não é grave nem claro o suficiente para justificar uma ação de moderação.
 
 Algumas situações podem ser inadequadas, irritantes ou limítrofes, mas ainda assim não atingem o limite necessário para uma punição. Nesses casos, a equipe de moderação pode optar por não tomar uma ação formal, a menos que o comportamento continue ou se torne mais grave.
 
 Se isso acontecer novamente, envie uma nova denúncia com evidências adicionais que mostrem um padrão repetido ou uma violação mais grave.`,
-  Gg = () => `该举报显示的行为可能存在问题，但还不够严重或明确，不足以采取审核措施。
+  tw = () => `该举报显示的行为可能存在问题，但还不够严重或明确，不足以采取审核措施。
 
 某些情况可能不恰当、令人厌烦或处于灰色地带，但仍未达到处罚所需的门槛。在这种情况下，除非该行为继续发生或变得更加严重，否则审核团队可能选择不采取正式行动。
 
 如果此情况再次发生，请提交一份新的举报，并附上能显示重复行为模式或更严重违规的额外证据。`,
-  qg = () => `Die Meldung zeigt ein Verhalten, das fragwürdig sein mag, aber nicht schwerwiegend oder eindeutig genug ist, um eine Moderationsmaßnahme zu rechtfertigen.
+  nw = () => `Die Meldung zeigt ein Verhalten, das fragwürdig sein mag, aber nicht schwerwiegend oder eindeutig genug ist, um eine Moderationsmaßnahme zu rechtfertigen.
 
 Manche Situationen sind vielleicht unangemessen, störend oder grenzwertig, erreichen aber dennoch nicht die für eine Strafe erforderliche Schwelle. In solchen Fällen kann das Moderationsteam entscheiden, keine formelle Maßnahme zu ergreifen, sofern das Verhalten nicht anhält oder schwerwiegender wird.
 
 Wenn dies erneut geschieht, reiche bitte eine neue Meldung mit zusätzlichen Beweisen ein, die ein wiederholtes Muster oder einen schwerwiegenderen Verstoß zeigen.`,
-  Wg = () => `El reporte muestra un comportamiento que puede ser cuestionable, pero no es lo bastante grave ni claro como para justificar una acción de moderación.
+  rw = () => `El reporte muestra un comportamiento que puede ser cuestionable, pero no es lo bastante grave ni claro como para justificar una acción de moderación.
 
 Algunas situaciones pueden ser inapropiadas, molestas o estar en el límite, pero aun así no alcanzan el umbral necesario para una sanción. En estos casos, el equipo de moderación puede optar por no tomar medidas formales a menos que el comportamiento continúe o se agrave.
 
 Si esto vuelve a ocurrir, envía un nuevo reporte con pruebas adicionales que muestren un patrón repetido o una infracción más grave.`,
-  Vg = () => `Le signalement montre un comportement qui peut être discutable, mais qui n'est pas assez grave ou clair pour justifier une mesure de modération.
+  ow = () => `Le signalement montre un comportement qui peut être discutable, mais qui n'est pas assez grave ou clair pour justifier une mesure de modération.
 
 Certaines situations peuvent être inappropriées, agaçantes ou limites, sans pour autant atteindre le seuil requis pour une sanction. Dans ces cas, l'équipe de modération peut choisir de ne pas prendre de mesure formelle, sauf si le comportement persiste ou s'aggrave.
 
 Si cela se reproduit, veuillez soumettre un nouveau signalement avec des preuves supplémentaires montrant un schéma répété ou une infraction plus grave.`,
-  Kg = () => `La segnalazione mostra un comportamento che può essere discutibile, ma non è abbastanza grave o chiaro da giustificare un'azione di moderazione.
+  iw = () => `La segnalazione mostra un comportamento che può essere discutibile, ma non è abbastanza grave o chiaro da giustificare un'azione di moderazione.
 
 Alcune situazioni possono essere inappropriate, fastidiose o al limite, ma non raggiungono comunque la soglia richiesta per una punizione. In questi casi, il team di moderazione può scegliere di non intervenire formalmente, a meno che il comportamento non continui o diventi più grave.
 
 Se dovesse ripetersi, invia una nuova segnalazione con prove aggiuntive che mostrino uno schema ripetuto o una violazione più grave.`,
-  Hg = () => `この報告は、問題があるかもしれない行為を示していますが、モデレーションの措置を正当化するほど深刻でも明確でもありません。
+  aw = () => `この報告は、問題があるかもしれない行為を示していますが、モデレーションの措置を正当化するほど深刻でも明確でもありません。
 
 一部の状況は不適切だったり、迷惑だったり、際どいものだったりするかもしれませんが、それでも処分に必要な基準には達していません。こうした場合、行為が続いたりより深刻になったりしない限り、モデレーションチームは正式な措置を取らないことを選ぶことがあります。
 
 再び起きた場合は、繰り返しのパターンやより深刻な違反を示す追加の証拠を添えて、新しい報告を提出してください。`,
-  $g = () => `Zgłoszenie pokazuje zachowanie, które może budzić wątpliwości, ale nie jest na tyle poważne ani jednoznaczne, aby uzasadniać działanie moderacyjne.
+  sw = () => `Zgłoszenie pokazuje zachowanie, które może budzić wątpliwości, ale nie jest na tyle poważne ani jednoznaczne, aby uzasadniać działanie moderacyjne.
 
 Niektóre sytuacje mogą być nieodpowiednie, irytujące lub graniczne, a mimo to nie osiągają progu wymaganego do nałożenia kary. W takich przypadkach zespół moderacji może nie podjąć formalnych działań, chyba że zachowanie będzie się powtarzać lub stanie się poważniejsze.
 
 Jeśli sytuacja się powtórzy, prześlij nowe zgłoszenie z dodatkowymi dowodami pokazującymi powtarzający się wzorzec lub poważniejsze naruszenie.`,
-  Xg = () => `Жалоба показывает поведение, которое может вызывать сомнения, но оно недостаточно серьёзное или явное, чтобы оправдать меры модерации.
+  cw = () => `Жалоба показывает поведение, которое может вызывать сомнения, но оно недостаточно серьёзное или явное, чтобы оправдать меры модерации.
 
 Некоторые ситуации могут быть неуместными, раздражающими или пограничными, но всё же не достигают порога, необходимого для наказания. В таких случаях команда модерации может решить не предпринимать официальных действий, если поведение не продолжится или не станет более серьёзным.
 
 Если это повторится, отправьте новую жалобу с дополнительными доказательствами, показывающими повторяющийся характер или более серьёзное нарушение.`,
-  Yg = () => `Скарга показує поведінку, яка може викликати сумніви, але вона недостатньо серйозна чи однозначна, щоб виправдати захід модерації.
+  uw = () => `Скарга показує поведінку, яка може викликати сумніви, але вона недостатньо серйозна чи однозначна, щоб виправдати захід модерації.
 
 Деякі ситуації можуть бути недоречними, дратівливими або межовими, але все ж не досягають порогу, потрібного для покарання. У таких випадках команда модерації може вирішити не вживати офіційних заходів, якщо поведінка не повторюватиметься або не стане серйознішою.
 
 Якщо це повториться, надішліть нову скаргу з додатковими доказами, що показують повторюваний характер або серйозніше порушення.`,
-  Jg = () => `Báo cáo cho thấy hành vi có thể đáng ngờ, nhưng chưa đủ nghiêm trọng hoặc rõ ràng để biện minh cho một biện pháp kiểm duyệt.
+  lw = () => `Báo cáo cho thấy hành vi có thể đáng ngờ, nhưng chưa đủ nghiêm trọng hoặc rõ ràng để biện minh cho một biện pháp kiểm duyệt.
 
 Một số tình huống có thể không phù hợp, gây khó chịu hoặc nằm ở ranh giới, nhưng vẫn chưa đạt đến mức cần thiết để xử phạt. Trong những trường hợp này, đội ngũ kiểm duyệt có thể chọn không hành động chính thức trừ khi hành vi tiếp diễn hoặc trở nên nghiêm trọng hơn.
 
 Nếu điều này lại xảy ra, vui lòng gửi một báo cáo mới kèm bằng chứng bổ sung cho thấy một khuôn mẫu lặp lại hoặc một vi phạm nghiêm trọng hơn.`,
-  Zg = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? Fg() : e === "pt" ? Ug() : e === "ch" ? Gg() : e === "de" ? qg() : e === "es" ? Wg() : e === "fr" ? Vg() : e === "it" ? Kg() : e === "jp" ? Hg() : e === "pl" ? $g() : e === "ru" ? Xg() : e === "uk" ? Yg() : Jg()
-  },
-  Qg = () => "Not Enough for Punishment",
-  ew = () => "Insuficiente para punição",
-  tw = () => "不足以处罚",
-  nw = () => "Nicht ausreichend für eine Strafe",
-  rw = () => "Insuficiente para una sanción",
-  ow = () => "Insuffisant pour une sanction",
-  iw = () => "Insufficiente per una punizione",
-  aw = () => "処分には不十分",
-  sw = () => "Niewystarczające do nałożenia kary",
-  cw = () => "Недостаточно для наказания",
-  uw = () => "Недостатньо для покарання",
-  lw = () => "Không đủ để xử phạt",
   dw = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? Qg() : e === "pt" ? ew() : e === "ch" ? tw() : e === "de" ? nw() : e === "es" ? rw() : e === "fr" ? ow() : e === "it" ? iw() : e === "jp" ? aw() : e === "pl" ? sw() : e === "ru" ? cw() : e === "uk" ? uw() : lw()
   },
-  _w = () => `This report is outside the scope of what the moderation team can act on through the report system.
+  _w = () => "Not Enough for Punishment",
+  fw = () => "Insuficiente para punição",
+  pw = () => "不足以处罚",
+  mw = () => "Nicht ausreichend für eine Strafe",
+  hw = () => "Insuficiente para una sanción",
+  gw = () => "Insuffisant pour une sanction",
+  ww = () => "Insufficiente per una punizione",
+  yw = () => "処分には不十分",
+  bw = () => "Niewystarczające do nałożenia kary",
+  vw = () => "Недостаточно для наказания",
+  Ew = () => "Недостатньо для покарання",
+  Tw = () => "Không đủ để xử phạt",
+  Ow = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? _w() : e === "pt" ? fw() : e === "ch" ? pw() : e === "de" ? mw() : e === "es" ? hw() : e === "fr" ? gw() : e === "it" ? ww() : e === "jp" ? yw() : e === "pl" ? bw() : e === "ru" ? vw() : e === "uk" ? Ew() : Tw()
+  },
+  kw = () => `This report is outside the scope of what the moderation team can act on through the report system.
 
 This may include issues that happened outside the game, personal disputes, support requests, appeals, bug reports, or situations that are not covered by the current moderation rules.
 
 Please use the correct support channel if your issue is related to technical problems, account issues, appeals, or other non-moderation matters.`,
-  fw = () => `Esta denúncia está fora do escopo daquilo que a equipe de moderação pode tratar pelo sistema de denúncias.
+  Sw = () => `Esta denúncia está fora do escopo daquilo que a equipe de moderação pode tratar pelo sistema de denúncias.
 
 Isso pode incluir problemas que aconteceram fora do jogo, disputas pessoais, pedidos de suporte, apelos, relatos de bugs ou situações que não são abrangidas pelas regras de moderação atuais.
 
 Use o canal de suporte correto se o seu problema estiver relacionado a problemas técnicos, questões de conta, apelos ou outros assuntos que não sejam de moderação.`,
-  pw = () => `此举报超出了审核团队通过举报系统能够处理的范围。
+  Aw = () => `此举报超出了审核团队通过举报系统能够处理的范围。
 
 这可能包括发生在游戏之外的问题、个人纠纷、支持请求、申诉、漏洞报告，或当前审核规则未涵盖的情况。
 
 如果您的问题与技术故障、账户问题、申诉或其他非审核事项有关，请使用正确的支持渠道。`,
-  mw = () => `Diese Meldung liegt außerhalb dessen, was das Moderationsteam über das Meldesystem bearbeiten kann.
+  Rw = () => `Diese Meldung liegt außerhalb dessen, was das Moderationsteam über das Meldesystem bearbeiten kann.
 
 Dazu können Probleme gehören, die außerhalb des Spiels aufgetreten sind, persönliche Streitigkeiten, Support-Anfragen, Einsprüche, Fehlerberichte oder Situationen, die nicht von den aktuellen Moderationsregeln abgedeckt sind.
 
 Bitte nutze den richtigen Support-Kanal, wenn dein Anliegen technische Probleme, Kontoangelegenheiten, Einsprüche oder andere nicht zur Moderation gehörende Themen betrifft.`,
-  hw = () => `Este reporte está fuera del alcance de lo que el equipo de moderación puede gestionar a través del sistema de reportes.
+  Iw = () => `Este reporte está fuera del alcance de lo que el equipo de moderación puede gestionar a través del sistema de reportes.
 
 Esto puede incluir problemas ocurridos fuera del juego, disputas personales, solicitudes de soporte, apelaciones, reportes de errores o situaciones que no están cubiertas por las reglas de moderación actuales.
 
 Utiliza el canal de soporte correcto si tu problema está relacionado con problemas técnicos, asuntos de cuenta, apelaciones u otros temas ajenos a la moderación.`,
-  gw = () => `Ce signalement dépasse le champ d'action de l'équipe de modération via le système de signalement.
+  Nw = () => `Ce signalement dépasse le champ d'action de l'équipe de modération via le système de signalement.
 
 Cela peut inclure des problèmes survenus en dehors du jeu, des différends personnels, des demandes d'assistance, des recours, des rapports de bugs ou des situations qui ne sont pas couvertes par les règles de modération actuelles.
 
 Veuillez utiliser le bon canal d'assistance si votre problème concerne des soucis techniques, des questions de compte, des recours ou d'autres sujets ne relevant pas de la modération.`,
-  ww = () => `Questa segnalazione esula da ciò che il team di moderazione può gestire tramite il sistema di segnalazione.
+  Dw = () => `Questa segnalazione esula da ciò che il team di moderazione può gestire tramite il sistema di segnalazione.
 
 Può includere problemi avvenuti al di fuori del gioco, dispute personali, richieste di assistenza, ricorsi, segnalazioni di bug o situazioni non coperte dalle attuali regole di moderazione.
 
 Utilizza il canale di assistenza corretto se il tuo problema riguarda questioni tecniche, problemi di account, ricorsi o altre questioni non legate alla moderazione.`,
-  yw = () => `この報告は、モデレーションチームが報告システムを通じて対応できる範囲を超えています。
+  Pw = () => `この報告は、モデレーションチームが報告システムを通じて対応できる範囲を超えています。
 
 これには、ゲーム外で起きた問題、個人的なトラブル、サポート依頼、異議申し立て、バグ報告、または現在のモデレーションルールでは扱えない状況が含まれる場合があります。
 
 技術的な問題、アカウントの問題、異議申し立て、その他モデレーション以外の事項に関する場合は、適切なサポート窓口をご利用ください。`,
-  bw = () => `To zgłoszenie wykracza poza zakres tego, czym zespół moderacji może się zająć za pośrednictwem systemu zgłoszeń.
+  Lw = () => `To zgłoszenie wykracza poza zakres tego, czym zespół moderacji może się zająć za pośrednictwem systemu zgłoszeń.
 
 Może to obejmować problemy, które miały miejsce poza grą, spory osobiste, prośby o wsparcie, odwołania, zgłoszenia błędów lub sytuacje nieobjęte obecnymi zasadami moderacji.
 
 Skorzystaj z właściwego kanału wsparcia, jeśli twój problem dotyczy kwestii technicznych, spraw związanych z kontem, odwołań lub innych zagadnień niezwiązanych z moderacją.`,
-  vw = () => `Эта жалоба выходит за рамки того, что команда модерации может рассматривать через систему жалоб.
+  xw = () => `Эта жалоба выходит за рамки того, что команда модерации может рассматривать через систему жалоб.
 
 Сюда могут относиться проблемы, возникшие вне игры, личные споры, обращения в поддержку, апелляции, сообщения об ошибках или ситуации, не охваченные действующими правилами модерации.
 
 Пожалуйста, используйте подходящий канал поддержки, если ваш вопрос связан с техническими проблемами, вопросами учётной записи, апелляциями или другими темами, не относящимися к модерации.`,
-  Ew = () => `Ця скарга виходить за межі того, що команда модерації може розглядати через систему скарг.
+  zw = () => `Ця скарга виходить за межі того, що команда модерації може розглядати через систему скарг.
 
 Сюди можуть належати проблеми, що сталися поза грою, особисті суперечки, звернення до підтримки, апеляції, повідомлення про помилки або ситуації, не охоплені чинними правилами модерації.
 
 Будь ласка, скористайтеся відповідним каналом підтримки, якщо ваше питання стосується технічних проблем, питань облікового запису, апеляцій або інших тем, не пов'язаних із модерацією.`,
-  Tw = () => `Báo cáo này nằm ngoài phạm vi mà đội ngũ kiểm duyệt có thể xử lý qua hệ thống báo cáo.
+  Cw = () => `Báo cáo này nằm ngoài phạm vi mà đội ngũ kiểm duyệt có thể xử lý qua hệ thống báo cáo.
 
 Điều này có thể bao gồm các vấn đề xảy ra bên ngoài trò chơi, tranh chấp cá nhân, yêu cầu hỗ trợ, kháng cáo, báo cáo lỗi hoặc các tình huống không thuộc phạm vi các quy tắc kiểm duyệt hiện hành.
 
 Vui lòng sử dụng kênh hỗ trợ phù hợp nếu vấn đề của bạn liên quan đến sự cố kỹ thuật, vấn đề tài khoản, kháng cáo hoặc các vấn đề khác không thuộc về kiểm duyệt.`,
-  Ow = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? _w() : e === "pt" ? fw() : e === "ch" ? pw() : e === "de" ? mw() : e === "es" ? hw() : e === "fr" ? gw() : e === "it" ? ww() : e === "jp" ? yw() : e === "pl" ? bw() : e === "ru" ? vw() : e === "uk" ? Ew() : Tw()
+  Mw = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? kw() : e === "pt" ? Sw() : e === "ch" ? Aw() : e === "de" ? Rw() : e === "es" ? Iw() : e === "fr" ? Nw() : e === "it" ? Dw() : e === "jp" ? Pw() : e === "pl" ? Lw() : e === "ru" ? xw() : e === "uk" ? zw() : Cw()
   },
-  kw = () => "Out of Scope",
-  Sw = () => "Fora do escopo",
-  Aw = () => "超出处理范围",
-  Rw = () => "Außerhalb des Zuständigkeitsbereichs",
-  Iw = () => "Fuera del alcance",
-  Nw = () => "Hors du champ d'action",
-  Dw = () => "Fuori ambito",
-  Lw = () => "対応範囲外",
-  Pw = () => "Poza zakresem",
-  xw = () => "Вне зоны ответственности",
-  zw = () => "Поза межами компетенції",
-  Mw = () => "Ngoài phạm vi xử lý",
-  Cw = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? kw() : e === "pt" ? Sw() : e === "ch" ? Aw() : e === "de" ? Rw() : e === "es" ? Iw() : e === "fr" ? Nw() : e === "it" ? Dw() : e === "jp" ? Lw() : e === "pl" ? Pw() : e === "ru" ? xw() : e === "uk" ? zw() : Mw()
-  },
-  jw = () => "Inappropriate content",
-  Bw = () => "Conteúdo inapropriado",
-  Fw = () => "不当内容",
-  Uw = () => "Unangemessene Inhalte",
-  Gw = () => "Contenido inapropiado",
-  qw = () => "Contenu inapproprié",
-  Ww = () => "Contenuto inappropriato",
-  Vw = () => "不適切なコンテンツ",
-  Kw = () => "Nieodpowiednie treści",
-  Hw = () => "Неприемлемый контент",
-  $w = () => "Неприйнятний вміст",
-  Xw = () => "Nội dung không phù hợp",
+  jw = () => "Out of Scope",
+  Bw = () => "Fora do escopo",
+  Fw = () => "超出处理范围",
+  Uw = () => "Außerhalb des Zuständigkeitsbereichs",
+  Gw = () => "Fuera del alcance",
+  qw = () => "Hors du champ d'action",
+  Ww = () => "Fuori ambito",
+  Vw = () => "対応範囲外",
+  Kw = () => "Poza zakresem",
+  Hw = () => "Вне зоны ответственности",
+  $w = () => "Поза межами компетенції",
+  Xw = () => "Ngoài phạm vi xử lý",
   Yw = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? jw() : e === "pt" ? Bw() : e === "ch" ? Fw() : e === "de" ? Uw() : e === "es" ? Gw() : e === "fr" ? qw() : e === "it" ? Ww() : e === "jp" ? Vw() : e === "pl" ? Kw() : e === "ru" ? Hw() : e === "uk" ? $w() : Xw()
   },
-  Jw = () => "Explicit, hateful, or illegal content",
-  Zw = () => "Conteúdo explícito, de ódio ou ilegal",
-  Qw = () => "露骨、仇恨或非法内容",
-  ey = () => "Expliziter, hasserfüllter oder illegaler Inhalt",
-  ty = () => "Contenido explícito, de odio o ilegal",
-  ny = () => "Contenu explicite, haineux ou illégal",
-  ry = () => "Contenuto esplicito, d'odio o illegale",
-  oy = () => "露骨、差別的、または違法なコンテンツ",
-  iy = () => "Treści o charakterze jawnie seksualnym, nawołujące do nienawiści lub nielegalne",
-  ay = () => "Откровенный, разжигающий ненависть или незаконный контент",
-  sy = () => "Відвертий, ворожий або незаконний вміст",
-  cy = () => "Nội dung phản cảm, thù ghét hoặc bất hợp pháp",
+  Jw = () => "Inappropriate content",
+  Zw = () => "Conteúdo inapropriado",
+  Qw = () => "不当内容",
+  ey = () => "Unangemessene Inhalte",
+  ty = () => "Contenido inapropiado",
+  ny = () => "Contenu inapproprié",
+  ry = () => "Contenuto inappropriato",
+  oy = () => "不適切なコンテンツ",
+  iy = () => "Nieodpowiednie treści",
+  ay = () => "Неприемлемый контент",
+  sy = () => "Неприйнятний вміст",
+  cy = () => "Nội dung không phù hợp",
   uy = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? Jw() : e === "pt" ? Zw() : e === "ch" ? Qw() : e === "de" ? ey() : e === "es" ? ty() : e === "fr" ? ny() : e === "it" ? ry() : e === "jp" ? oy() : e === "pl" ? iy() : e === "ru" ? ay() : e === "uk" ? sy() : cy()
   },
-  ly = () => "Invalid captcha. Please try again.",
-  dy = () => "Captcha inválido. Por favor, tente novamente.",
-  _y = () => "验证码无效，请重试。",
-  fy = () => "Ungültiges Captcha. Bitte versuche es erneut.",
-  py = () => "Captcha inválido. Por favor, inténtelo de nuevo.",
-  my = () => "Captcha invalide. Veuillez réessayer.",
-  hy = () => "Captcha non valido. Riprova.",
-  gy = () => "キャプチャが無効です。もう一度お試しください。",
-  wy = () => "Nieprawidłowa captcha. Spróbuj ponownie.",
-  yy = () => "Неверная капча. Пожалуйста, попробуйте снова.",
-  by = () => "Неправильна капча. Будь ласка, спробуйте ще раз.",
-  vy = () => "Captcha không hợp lệ. Vui lòng thử lại.",
+  ly = () => "Explicit, hateful, or illegal content",
+  dy = () => "Conteúdo explícito, de ódio ou ilegal",
+  _y = () => "露骨、仇恨或非法内容",
+  fy = () => "Expliziter, hasserfüllter oder illegaler Inhalt",
+  py = () => "Contenido explícito, de odio o ilegal",
+  my = () => "Contenu explicite, haineux ou illégal",
+  hy = () => "Contenuto esplicito, d'odio o illegale",
+  gy = () => "露骨、差別的、または違法なコンテンツ",
+  wy = () => "Treści o charakterze jawnie seksualnym, nawołujące do nienawiści lub nielegalne",
+  yy = () => "Откровенный, разжигающий ненависть или незаконный контент",
+  by = () => "Відвертий, ворожий або незаконний вміст",
+  vy = () => "Nội dung phản cảm, thù ghét hoặc bất hợp pháp",
   Ey = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? ly() : e === "pt" ? dy() : e === "ch" ? _y() : e === "de" ? fy() : e === "es" ? py() : e === "fr" ? my() : e === "it" ? hy() : e === "jp" ? gy() : e === "pl" ? wy() : e === "ru" ? yy() : e === "uk" ? by() : vy()
   },
-  Ty = () => "Invalid challenge response",
-  Oy = () => "Resposta de desafio inválida",
-  ky = () => "质询响应无效",
-  Sy = () => "Ungültige Challenge-Antwort",
-  Ay = () => "Respuesta de desafío inválida",
-  Ry = () => "Réponse au défi invalide",
-  Iy = () => "Risposta alla sfida non valida",
-  Ny = () => "無効なチャレンジ応答",
-  Dy = () => "Nieprawidłowa odpowiedź na wyzwanie",
-  Ly = () => "Неверный ответ на вызов",
-  Py = () => "Недійсна відповідь на виклик",
-  xy = () => "Phản hồi thử thách không hợp lệ",
+  Ty = () => "Invalid captcha. Please try again.",
+  Oy = () => "Captcha inválido. Por favor, tente novamente.",
+  ky = () => "验证码无效，请重试。",
+  Sy = () => "Ungültiges Captcha. Bitte versuche es erneut.",
+  Ay = () => "Captcha inválido. Por favor, inténtelo de nuevo.",
+  Ry = () => "Captcha invalide. Veuillez réessayer.",
+  Iy = () => "Captcha non valido. Riprova.",
+  Ny = () => "キャプチャが無効です。もう一度お試しください。",
+  Dy = () => "Nieprawidłowa captcha. Spróbuj ponownie.",
+  Py = () => "Неверная капча. Пожалуйста, попробуйте снова.",
+  Ly = () => "Неправильна капча. Будь ласка, спробуйте ще раз.",
+  xy = () => "Captcha không hợp lệ. Vui lòng thử lại.",
   zy = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? Ty() : e === "pt" ? Oy() : e === "ch" ? ky() : e === "de" ? Sy() : e === "es" ? Ay() : e === "fr" ? Ry() : e === "it" ? Iy() : e === "jp" ? Ny() : e === "pl" ? Dy() : e === "ru" ? Ly() : e === "uk" ? Py() : xy()
+    const e = t.locale ?? g();
+    return e === "en" ? Ty() : e === "pt" ? Oy() : e === "ch" ? ky() : e === "de" ? Sy() : e === "es" ? Ay() : e === "fr" ? Ry() : e === "it" ? Iy() : e === "jp" ? Ny() : e === "pl" ? Dy() : e === "ru" ? Py() : e === "uk" ? Ly() : xy()
   },
-  My = () => "The verification code is incorrect. Please check it and try again.",
-  Cy = () => "Código inválido",
-  jy = () => "验证码不正确。请检查后重试。",
-  By = () => "Der Bestätigungscode ist nicht korrekt. Bitte überprüfe ihn und versuche es erneut.",
-  Fy = () => "El código de verificación es incorrecto. Por favor, revísalo e inténtalo de nuevo.",
-  Uy = () => "Le code de vérification est incorrect. Veuillez le vérifier et réessayer.",
-  Gy = () => "Il codice di verifica non è corretto. Controllalo e riprova.",
-  qy = () => "確認コードが正しくありません。コードを確認してもう一度お試しください。",
-  Wy = () => "Kod weryfikacyjny jest nieprawidłowy. Sprawdź go i spróbuj ponownie.",
-  Vy = () => "Код подтверждения неверный. Пожалуйста, проверьте его и попробуйте снова.",
-  Ky = () => "Код підтвердження неправильний. Будь ласка, перевірте його та спробуйте ще раз.",
-  Hy = () => "Mã xác minh không đúng. Vui lòng kiểm tra lại và thử lại.",
+  Cy = () => "Invalid challenge response",
+  My = () => "Resposta de desafio inválida",
+  jy = () => "质询响应无效",
+  By = () => "Ungültige Challenge-Antwort",
+  Fy = () => "Respuesta de desafío inválida",
+  Uy = () => "Réponse au défi invalide",
+  Gy = () => "Risposta alla sfida non valida",
+  qy = () => "無効なチャレンジ応答",
+  Wy = () => "Nieprawidłowa odpowiedź na wyzwanie",
+  Vy = () => "Неверный ответ на вызов",
+  Ky = () => "Недійсна відповідь на виклик",
+  Hy = () => "Phản hồi thử thách không hợp lệ",
   $y = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? My() : e === "pt" ? Cy() : e === "ch" ? jy() : e === "de" ? By() : e === "es" ? Fy() : e === "fr" ? Uy() : e === "it" ? Gy() : e === "jp" ? qy() : e === "pl" ? Wy() : e === "ru" ? Vy() : e === "uk" ? Ky() : Hy()
+    const e = t.locale ?? g();
+    return e === "en" ? Cy() : e === "pt" ? My() : e === "ch" ? jy() : e === "de" ? By() : e === "es" ? Fy() : e === "fr" ? Uy() : e === "it" ? Gy() : e === "jp" ? qy() : e === "pl" ? Wy() : e === "ru" ? Vy() : e === "uk" ? Ky() : Hy()
   },
-  Xy = () => "Invalid discord.",
-  Yy = () => "Discord inválido.",
-  Jy = () => "无效的 Discord。",
-  Zy = () => "Ungültiger Discord.",
-  Qy = () => "Discord inválido.",
-  eb = () => "Discord invalide.",
-  tb = () => "Discord non valido.",
-  nb = () => "無効なDiscordアカウントです。",
-  rb = () => "Nieprawidłowy Discord.",
-  ob = () => "Неверный Discord.",
-  ib = () => "Некоректний Discord.",
-  ab = () => "Discord không hợp lệ.",
+  Xy = () => "The verification code is incorrect. Please check it and try again.",
+  Yy = () => "Código inválido",
+  Jy = () => "验证码不正确。请检查后重试。",
+  Zy = () => "Der Bestätigungscode ist nicht korrekt. Bitte überprüfe ihn und versuche es erneut.",
+  Qy = () => "El código de verificación es incorrecto. Por favor, revísalo e inténtalo de nuevo.",
+  eb = () => "Le code de vérification est incorrect. Veuillez le vérifier et réessayer.",
+  tb = () => "Il codice di verifica non è corretto. Controllalo e riprova.",
+  nb = () => "確認コードが正しくありません。コードを確認してもう一度お試しください。",
+  rb = () => "Kod weryfikacyjny jest nieprawidłowy. Sprawdź go i spróbuj ponownie.",
+  ob = () => "Код подтверждения неверный. Пожалуйста, проверьте его и попробуйте снова.",
+  ib = () => "Код підтвердження неправильний. Будь ласка, перевірте його та спробуйте ще раз.",
+  ab = () => "Mã xác minh không đúng. Vui lòng kiểm tra lại và thử lại.",
   sb = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? Xy() : e === "pt" ? Yy() : e === "ch" ? Jy() : e === "de" ? Zy() : e === "es" ? Qy() : e === "fr" ? eb() : e === "it" ? tb() : e === "jp" ? nb() : e === "pl" ? rb() : e === "ru" ? ob() : e === "uk" ? ib() : ab()
   },
-  cb = () => "The name contains disallowed characters or words. Please choose a different name.",
-  ub = () => "O nome contém caracteres ou palavras não permitidas. Por favor, escolha outro nome.",
-  lb = () => "名称包含禁止的字符或词语，请选择其他名称。",
-  db = () => "Der Name enthält nicht erlaubte Zeichen oder Wörter. Bitte wähle einen anderen Namen.",
-  _b = () => "El nombre contiene caracteres o palabras no permitidas. Elige otro nombre.",
-  fb = () => "Le nom contient des caractères ou des mots non autorisés. Veuillez choisir un autre nom.",
-  pb = () => "Il nome contiene caratteri o parole non consentiti. Scegli un altro nome.",
-  mb = () => "この名前には使用できない文字または単語が含まれています。別の名前を選んでください。",
-  hb = () => "Nazwa zawiera niedozwolone znaki lub słowa. Wybierz inną nazwę.",
-  gb = () => "Имя содержит запрещённые символы или слова. Пожалуйста, выберите другое имя.",
-  wb = () => "Імʼя містить заборонені символи або слова. Оберіть інше імʼя.",
-  yb = () => "Tên chứa ký tự hoặc từ không được phép. Hãy chọn tên khác.",
-  Jn = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+  cb = () => "Invalid discord.",
+  ub = () => "Discord inválido.",
+  lb = () => "无效的 Discord。",
+  db = () => "Ungültiger Discord.",
+  _b = () => "Discord inválido.",
+  fb = () => "Discord invalide.",
+  pb = () => "Discord non valido.",
+  mb = () => "無効なDiscordアカウントです。",
+  hb = () => "Nieprawidłowy Discord.",
+  gb = () => "Неверный Discord.",
+  wb = () => "Некоректний Discord.",
+  yb = () => "Discord không hợp lệ.",
+  bb = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
     return e === "en" ? cb() : e === "pt" ? ub() : e === "ch" ? lb() : e === "de" ? db() : e === "es" ? _b() : e === "fr" ? fb() : e === "it" ? pb() : e === "jp" ? mb() : e === "pl" ? hb() : e === "ru" ? gb() : e === "uk" ? wb() : yb()
   },
-  bb = () => "Please enter a valid phone number with country code.",
-  vb = () => "Insira um número de telefone válido com código do país.",
-  Eb = () => "请输入带国家代码的有效电话号码。",
-  Tb = () => "Bitte gib eine gültige Telefonnummer mit Landesvorwahl ein.",
-  Ob = () => "Introduce un número de teléfono válido con código de país.",
-  kb = () => "Veuillez saisir un numéro de téléphone valide avec l'indicatif du pays.",
-  Sb = () => "Inserisci un numero di telefono valido con il prefisso internazionale.",
-  Ab = () => "国番号付きの有効な電話番号を入力してください。",
-  Rb = () => "Wprowadź poprawny numer telefonu wraz z kodem kraju.",
-  Ib = () => "Введите действительный номер телефона с кодом страны.",
-  Nb = () => "Будь ласка, введіть дійсний номер телефону з кодом країни.",
-  Db = () => "Vui lòng nhập số điện thoại hợp lệ kèm mã quốc gia.",
-  Lb = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? bb() : e === "pt" ? vb() : e === "ch" ? Eb() : e === "de" ? Tb() : e === "es" ? Ob() : e === "fr" ? kb() : e === "it" ? Sb() : e === "jp" ? Ab() : e === "pl" ? Rb() : e === "ru" ? Ib() : e === "uk" ? Nb() : Db()
+  vb = () => "The name contains disallowed characters or words. Please choose a different name.",
+  Eb = () => "O nome contém caracteres ou palavras não permitidas. Por favor, escolha outro nome.",
+  Tb = () => "名称包含禁止的字符或词语，请选择其他名称。",
+  Ob = () => "Der Name enthält nicht erlaubte Zeichen oder Wörter. Bitte wähle einen anderen Namen.",
+  kb = () => "El nombre contiene caracteres o palabras no permitidas. Elige otro nombre.",
+  Sb = () => "Le nom contient des caractères ou des mots non autorisés. Veuillez choisir un autre nom.",
+  Ab = () => "Il nome contiene caratteri o parole non consentiti. Scegli un altro nome.",
+  Rb = () => "この名前には使用できない文字または単語が含まれています。別の名前を選んでください。",
+  Ib = () => "Nazwa zawiera niedozwolone znaki lub słowa. Wybierz inną nazwę.",
+  Nb = () => "Имя содержит запрещённые символы или слова. Пожалуйста, выберите другое имя.",
+  Db = () => "Імʼя містить заборонені символи або слова. Оберіть інше імʼя.",
+  Pb = () => "Tên chứa ký tự hoặc từ không được phép. Hãy chọn tên khác.",
+  Jn = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? vb() : e === "pt" ? Eb() : e === "ch" ? Tb() : e === "de" ? Ob() : e === "es" ? kb() : e === "fr" ? Sb() : e === "it" ? Ab() : e === "jp" ? Rb() : e === "pl" ? Ib() : e === "ru" ? Nb() : e === "uk" ? Db() : Pb()
   },
-  Pb = () => "Phone number not supported. Please try another number.",
-  xb = () => "Número de telefone não suportado. Por favor, tente outro número.",
-  zb = () => "不支持此电话号码。请尝试其他号码。",
-  Mb = () => "Telefonnummer nicht unterstützt. Bitte versuche eine andere Nummer.",
-  Cb = () => "Número de teléfono no compatible. Por favor, prueba con otro número.",
-  jb = () => "Numéro de téléphone non pris en charge. Veuillez essayer un autre numéro.",
-  Bb = () => "Numero di telefono non supportato. Prova con un altro numero.",
-  Fb = () => "この電話番号はサポートされていません。別の番号をお試しください。",
-  Ub = () => "Numer telefonu nie jest obsługiwany. Spróbuj innego numeru.",
-  Gb = () => "Номер телефона не поддерживается. Пожалуйста, попробуйте другой номер.",
-  qb = () => "Номер телефону не підтримується. Будь ласка, спробуйте інший номер.",
-  Wb = () => "Số điện thoại không được hỗ trợ. Vui lòng thử số khác.",
+  Lb = () => "Please enter a valid phone number with country code.",
+  xb = () => "Insira um número de telefone válido com código do país.",
+  zb = () => "请输入带国家代码的有效电话号码。",
+  Cb = () => "Bitte gib eine gültige Telefonnummer mit Landesvorwahl ein.",
+  Mb = () => "Introduce un número de teléfono válido con código de país.",
+  jb = () => "Veuillez saisir un numéro de téléphone valide avec l'indicatif du pays.",
+  Bb = () => "Inserisci un numero di telefono valido con il prefisso internazionale.",
+  Fb = () => "国番号付きの有効な電話番号を入力してください。",
+  Ub = () => "Wprowadź poprawny numer telefonu wraz z kodem kraju.",
+  Gb = () => "Введите действительный номер телефона с кодом страны.",
+  qb = () => "Будь ласка, введіть дійсний номер телефону з кодом країни.",
+  Wb = () => "Vui lòng nhập số điện thoại hợp lệ kèm mã quốc gia.",
   Vb = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? Pb() : e === "pt" ? xb() : e === "ch" ? zb() : e === "de" ? Mb() : e === "es" ? Cb() : e === "fr" ? jb() : e === "it" ? Bb() : e === "jp" ? Fb() : e === "pl" ? Ub() : e === "ru" ? Gb() : e === "uk" ? qb() : Wb()
+    const e = t.locale ?? g();
+    return e === "en" ? Lb() : e === "pt" ? xb() : e === "ch" ? zb() : e === "de" ? Cb() : e === "es" ? Mb() : e === "fr" ? jb() : e === "it" ? Bb() : e === "jp" ? Fb() : e === "pl" ? Ub() : e === "ru" ? Gb() : e === "uk" ? qb() : Wb()
   },
-  Kb = () => "The new leader must be a member of the alliance",
-  Hb = () => "O novo líder deve ser um membro da aliança",
-  $b = () => "新盟主必须是联盟成员",
-  Xb = () => "Der neue Anführer muss Mitglied der Allianz sein",
-  Yb = () => "El nuevo líder debe ser miembro de la alianza",
-  Jb = () => "Le nouveau chef doit être membre de l’alliance",
-  Zb = () => "Il nuovo leader deve essere un membro dell'alleanza",
-  Qb = () => "新しいリーダーはアライアンスのメンバーである必要があります。",
-  ev = () => "Nowy lider musi być członkiem sojuszu",
-  tv = () => "Новый лидер должен быть участником альянса",
-  nv = () => "Новий лідер має бути учасником альянсу",
-  rv = () => "Thủ lĩnh mới phải là thành viên của liên minh",
+  Kb = () => "Phone number not supported. Please try another number.",
+  Hb = () => "Número de telefone não suportado. Por favor, tente outro número.",
+  $b = () => "不支持此电话号码。请尝试其他号码。",
+  Xb = () => "Telefonnummer nicht unterstützt. Bitte versuche eine andere Nummer.",
+  Yb = () => "Número de teléfono no compatible. Por favor, prueba con otro número.",
+  Jb = () => "Numéro de téléphone non pris en charge. Veuillez essayer un autre numéro.",
+  Zb = () => "Numero di telefono non supportato. Prova con un altro numero.",
+  Qb = () => "この電話番号はサポートされていません。別の番号をお試しください。",
+  ev = () => "Numer telefonu nie jest obsługiwany. Spróbuj innego numeru.",
+  tv = () => "Номер телефона не поддерживается. Пожалуйста, попробуйте другой номер.",
+  nv = () => "Номер телефону не підтримується. Будь ласка, спробуйте інший номер.",
+  rv = () => "Số điện thoại không được hỗ trợ. Vui lòng thử số khác.",
   ov = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? Kb() : e === "pt" ? Hb() : e === "ch" ? $b() : e === "de" ? Xb() : e === "es" ? Yb() : e === "fr" ? Jb() : e === "it" ? Zb() : e === "jp" ? Qb() : e === "pl" ? ev() : e === "ru" ? tv() : e === "uk" ? nv() : rv()
   },
-  iv = () => "Leaderboard is temporarily disabled",
-  av = () => "O ranking está temporariamente desativado",
-  sv = () => "排行榜已暂时停用",
-  cv = () => "Die Bestenliste ist vorübergehend deaktiviert",
-  uv = () => "La clasificación está deshabilitada temporalmente",
-  lv = () => "Le classement est temporairement désactivé",
-  dv = () => "La classifica è temporaneamente disattivata",
-  _v = () => "ランキングは一時的に無効になっています。",
-  fv = () => "Ranking jest tymczasowo wyłączony",
-  pv = () => "Таблица лидеров временно отключена",
-  mv = () => "Таблиця лідерів тимчасово вимкнена",
-  hv = () => "Bảng xếp hạng tạm thời bị vô hiệu hóa",
-  me = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+  iv = () => "The new leader must be a member of the alliance",
+  av = () => "O novo líder deve ser um membro da aliança",
+  sv = () => "新盟主必须是联盟成员",
+  cv = () => "Der neue Anführer muss Mitglied der Allianz sein",
+  uv = () => "El nuevo líder debe ser miembro de la alianza",
+  lv = () => "Le nouveau chef doit être membre de l’alliance",
+  dv = () => "Il nuovo leader deve essere un membro dell'alleanza",
+  _v = () => "新しいリーダーはアライアンスのメンバーである必要があります。",
+  fv = () => "Nowy lider musi być członkiem sojuszu",
+  pv = () => "Новый лидер должен быть участником альянса",
+  mv = () => "Новий лідер має бути учасником альянсу",
+  hv = () => "Thủ lĩnh mới phải là thành viên của liên minh",
+  gv = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
     return e === "en" ? iv() : e === "pt" ? av() : e === "ch" ? sv() : e === "de" ? cv() : e === "es" ? uv() : e === "fr" ? lv() : e === "it" ? dv() : e === "jp" ? _v() : e === "pl" ? fv() : e === "ru" ? pv() : e === "uk" ? mv() : hv()
   },
-  gv = () => "Location name is too big (max. 128 characters)",
-  wv = () => "Nome da localização é grande demais (max. 128 caracteres)",
-  yv = () => "位置名称过长（最大 128 个字符）",
-  bv = () => "Ortsname ist zu lang (max. 128 Zeichen)",
-  vv = () => "El nombre de la ubicación es demasiado largo (máx. 128 caracteres)",
-  Ev = () => "Le nom de l’emplacement est trop long (max. 128 caractères)",
-  Tv = () => "Il nome della località è troppo lungo (max. 128 caratteri)",
-  Ov = () => "場所の名前が長すぎます（最大128文字）。",
-  kv = () => "Nazwa lokalizacji jest za długa (maks. 128 znaków)",
-  Sv = () => "Название локации слишком длинное (макс. 128 символов)",
-  Av = () => "Назва локації надто довга (макс. 128 символів)",
-  Rv = () => "Tên vị trí quá dài (tối đa 128 ký tự)",
-  Iv = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? gv() : e === "pt" ? wv() : e === "ch" ? yv() : e === "de" ? bv() : e === "es" ? vv() : e === "fr" ? Ev() : e === "it" ? Tv() : e === "jp" ? Ov() : e === "pl" ? kv() : e === "ru" ? Sv() : e === "uk" ? Av() : Rv()
+  wv = () => "Leaderboard is temporarily disabled",
+  yv = () => "O ranking está temporariamente desativado",
+  bv = () => "排行榜已暂时停用",
+  vv = () => "Die Bestenliste ist vorübergehend deaktiviert",
+  Ev = () => "La clasificación está deshabilitada temporalmente",
+  Tv = () => "Le classement est temporairement désactivé",
+  Ov = () => "La classifica è temporaneamente disattivata",
+  kv = () => "ランキングは一時的に無効になっています。",
+  Sv = () => "Ranking jest tymczasowo wyłączony",
+  Av = () => "Таблица лидеров временно отключена",
+  Rv = () => "Таблиця лідерів тимчасово вимкнена",
+  Iv = () => "Bảng xếp hạng tạm thời bị vô hiệu hóa",
+  me = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? wv() : e === "pt" ? yv() : e === "ch" ? bv() : e === "de" ? vv() : e === "es" ? Ev() : e === "fr" ? Tv() : e === "it" ? Ov() : e === "jp" ? kv() : e === "pl" ? Sv() : e === "ru" ? Av() : e === "uk" ? Rv() : Iv()
   },
-  Nv = () => "Multi-accounting",
-  Dv = () => "Múltiplas contas",
-  Lv = () => "多账号",
-  Pv = () => "Multi-Accounting",
-  xv = () => "Multi-cuentas",
-  zv = () => "Multi-comptes",
-  Mv = () => "Multi-account",
-  Cv = () => "複数アカウント使用",
-  jv = () => "Multi-konta",
-  Bv = () => "Мультиаккаунт",
-  Fv = () => "Мультиакаунтинг",
-  Uv = () => "Nhiều tài khoản",
+  Nv = () => "Location name is too big (max. 128 characters)",
+  Dv = () => "Nome da localização é grande demais (max. 128 caracteres)",
+  Pv = () => "位置名称过长（最大 128 个字符）",
+  Lv = () => "Ortsname ist zu lang (max. 128 Zeichen)",
+  xv = () => "El nombre de la ubicación es demasiado largo (máx. 128 caracteres)",
+  zv = () => "Le nom de l’emplacement est trop long (max. 128 caractères)",
+  Cv = () => "Il nome della località è troppo lungo (max. 128 caratteri)",
+  Mv = () => "場所の名前が長すぎます（最大128文字）。",
+  jv = () => "Nazwa lokalizacji jest za długa (maks. 128 znaków)",
+  Bv = () => "Название локации слишком длинное (макс. 128 символов)",
+  Fv = () => "Назва локації надто довга (макс. 128 символів)",
+  Uv = () => "Tên vị trí quá dài (tối đa 128 ký tự)",
   Gv = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? Nv() : e === "pt" ? Dv() : e === "ch" ? Lv() : e === "de" ? Pv() : e === "es" ? xv() : e === "fr" ? zv() : e === "it" ? Mv() : e === "jp" ? Cv() : e === "pl" ? jv() : e === "ru" ? Bv() : e === "uk" ? Fv() : Uv()
+    const e = t.locale ?? g();
+    return e === "en" ? Nv() : e === "pt" ? Dv() : e === "ch" ? Pv() : e === "de" ? Lv() : e === "es" ? xv() : e === "fr" ? zv() : e === "it" ? Cv() : e === "jp" ? Mv() : e === "pl" ? jv() : e === "ru" ? Bv() : e === "uk" ? Fv() : Uv()
   },
-  qv = () => "Paint with more than one account or using virtual machines, residential proxies, or multi-accounting browsers",
-  Wv = () => "Pintar com mais de uma conta ou usando máquinas virtuais, proxies residenciais ou navegadores multi-conta",
-  Vv = () => "使用多个账号绘制像素，或使用虚拟机、住宅代理或多账号浏览器",
-  Kv = () => "Mehr als ein Konto zum Malen verwenden oder virtuelle Maschinen, Residential-Proxys oder Multi-Accounting-Browser nutzen",
-  Hv = () => "Pintar con más de una cuenta o usar máquinas virtuales, proxies residenciales o navegadores multicuenta",
-  $v = () => "Utiliser plus d’un compte pour peindre, ou utiliser des machines virtuelles, des proxys résidentiels ou des navigateurs multi-comptes",
-  Xv = () => "Usare più di un account per dipingere, oppure usare macchine virtuali, proxy residenziali o browser multi-account",
-  Yv = () => "複数のアカウントを使ってピクセルを塗る、または仮想マシン、住宅プロキシ、マルチアカウントブラウザを使用する",
-  Jv = () => "Malowanie pikseli na więcej niż jednym koncie lub przy użyciu maszyn wirtualnych, proxy residential lub przeglądarek multi-kontowych",
-  Zv = () => "Рисование с более чем одного аккаунта или с использованием виртуальных машин, резидентных прокси или мультиаккаунт-браузеров",
-  Qv = () => "Малювання з більш ніж одного акаунта або з використанням віртуальних машин, резидентних проксі чи мультиакаунт-браузерів",
-  eE = () => "Vẽ pixel bằng nhiều hơn một tài khoản hoặc bằng máy ảo, proxy dân cư hoặc trình duyệt đa tài khoản",
+  qv = () => "Multi-accounting",
+  Wv = () => "Múltiplas contas",
+  Vv = () => "多账号",
+  Kv = () => "Multi-Accounting",
+  Hv = () => "Multi-cuentas",
+  $v = () => "Multi-comptes",
+  Xv = () => "Multi-account",
+  Yv = () => "複数アカウント使用",
+  Jv = () => "Multi-konta",
+  Zv = () => "Мультиаккаунт",
+  Qv = () => "Мультиакаунтинг",
+  eE = () => "Nhiều tài khoản",
   tE = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? qv() : e === "pt" ? Wv() : e === "ch" ? Vv() : e === "de" ? Kv() : e === "es" ? Hv() : e === "fr" ? $v() : e === "it" ? Xv() : e === "jp" ? Yv() : e === "pl" ? Jv() : e === "ru" ? Zv() : e === "uk" ? Qv() : eE()
   },
-  nE = n => `You can change your name again in ${n.days} days`,
-  rE = n => `Você pode alterar seu nome novamente em ${n.days} dias.`,
-  oE = n => `你可以在 ${n.days} 天后再次修改名称`,
-  iE = n => `Du kannst deinen Namen in ${n.days} Tagen erneut ändern`,
-  aE = n => `Podrás cambiar tu nombre de nuevo en ${n.days} días`,
-  sE = n => `Vous pourrez changer votre nom à nouveau dans ${n.days} jours`,
-  cE = n => `Potrai cambiare di nuovo il tuo nome tra ${n.days} giorni.`,
-  uE = n => `${n.days}日後に再び名前を変更できます。`,
-  lE = n => `Następną zmianę nazwy możesz wykonać za ${n.days} dni`,
-  dE = n => `Вы сможете изменить имя снова через ${n.days} дн.`,
-  _E = n => `Ви зможете змінити імʼя знову через ${n.days} днів`,
-  fE = n => `Bạn có thể đổi tên lại sau ${n.days} ngày`,
-  pE = (n, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? nE(n) : e === "pt" ? rE(n) : e === "ch" ? oE(n) : e === "de" ? iE(n) : e === "es" ? aE(n) : e === "fr" ? sE(n) : e === "it" ? cE(n) : e === "jp" ? uE(n) : e === "pl" ? lE(n) : e === "ru" ? dE(n) : e === "uk" ? _E(n) : fE(n)
+  nE = () => "Paint with more than one account or using virtual machines, residential proxies, or multi-accounting browsers",
+  rE = () => "Pintar com mais de uma conta ou usando máquinas virtuais, proxies residenciais ou navegadores multi-conta",
+  oE = () => "使用多个账号绘制像素，或使用虚拟机、住宅代理或多账号浏览器",
+  iE = () => "Mehr als ein Konto zum Malen verwenden oder virtuelle Maschinen, Residential-Proxys oder Multi-Accounting-Browser nutzen",
+  aE = () => "Pintar con más de una cuenta o usar máquinas virtuales, proxies residenciales o navegadores multicuenta",
+  sE = () => "Utiliser plus d’un compte pour peindre, ou utiliser des machines virtuelles, des proxys résidentiels ou des navigateurs multi-comptes",
+  cE = () => "Usare più di un account per dipingere, oppure usare macchine virtuali, proxy residenziali o browser multi-account",
+  uE = () => "複数のアカウントを使ってピクセルを塗る、または仮想マシン、住宅プロキシ、マルチアカウントブラウザを使用する",
+  lE = () => "Malowanie pikseli na więcej niż jednym koncie lub przy użyciu maszyn wirtualnych, proxy residential lub przeglądarek multi-kontowych",
+  dE = () => "Рисование с более чем одного аккаунта или с использованием виртуальных машин, резидентных прокси или мультиаккаунт-браузеров",
+  _E = () => "Малювання з більш ніж одного акаунта або з використанням віртуальних машин, резидентних проксі чи мультиакаунт-браузерів",
+  fE = () => "Vẽ pixel bằng nhiều hơn một tài khoản hoặc bằng máy ảo, proxy dân cư hoặc trình duyệt đa tài khoản",
+  pE = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? nE() : e === "pt" ? rE() : e === "ch" ? oE() : e === "de" ? iE() : e === "es" ? aE() : e === "fr" ? sE() : e === "it" ? cE() : e === "jp" ? uE() : e === "pl" ? lE() : e === "ru" ? dE() : e === "uk" ? _E() : fE()
   },
-  mE = () => "No internet access or the servers are offline. Try again later.",
-  hE = () => "Sem acesso à internet ou os servidores estão fora do ar. Tente novamente mais tarde.",
-  gE = () => "没有网络连接或服务器已离线。请稍后重试。",
-  wE = () => "Keine Internetverbindung oder Server offline. Versuche es später erneut.",
-  yE = () => "Sin acceso a internet o los servidores están fuera de línea. Inténtalo de nuevo más tarde.",
-  bE = () => "Pas d’accès à Internet ou serveurs hors ligne. Réessayez plus tard.",
-  vE = () => "Nessun accesso a internet o server offline. Riprova più tardi.",
-  EE = () => "インターネットに接続されていないか、サーバーがオフラインです。しばらくしてから再度お試しください。",
-  TE = () => "Brak dostępu do internetu lub serwery są offline. Spróbuj ponownie później.",
-  OE = () => "Нет доступа к интернету или серверы недоступны. Попробуйте позже.",
-  kE = () => "Немає доступу до інтернету або сервери недоступні. Спробуйте пізніше.",
-  SE = () => "Không có kết nối internet hoặc máy chủ đang ngoại tuyến. Hãy thử lại sau.",
-  AE = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? mE() : e === "pt" ? hE() : e === "ch" ? gE() : e === "de" ? wE() : e === "es" ? yE() : e === "fr" ? bE() : e === "it" ? vE() : e === "jp" ? EE() : e === "pl" ? TE() : e === "ru" ? OE() : e === "uk" ? kE() : SE()
+  mE = n => `You can change your name again in ${n.days} days`,
+  hE = n => `Você pode alterar seu nome novamente em ${n.days} dias.`,
+  gE = n => `你可以在 ${n.days} 天后再次修改名称`,
+  wE = n => `Du kannst deinen Namen in ${n.days} Tagen erneut ändern`,
+  yE = n => `Podrás cambiar tu nombre de nuevo en ${n.days} días`,
+  bE = n => `Vous pourrez changer votre nom à nouveau dans ${n.days} jours`,
+  vE = n => `Potrai cambiare di nuovo il tuo nome tra ${n.days} giorni.`,
+  EE = n => `${n.days}日後に再び名前を変更できます。`,
+  TE = n => `Następną zmianę nazwy możesz wykonać za ${n.days} dni`,
+  OE = n => `Вы сможете изменить имя снова через ${n.days} дн.`,
+  kE = n => `Ви зможете змінити імʼя знову через ${n.days} днів`,
+  SE = n => `Bạn có thể đổi tên lại sau ${n.days} ngày`,
+  AE = (n, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? mE(n) : e === "pt" ? hE(n) : e === "ch" ? gE(n) : e === "de" ? wE(n) : e === "es" ? yE(n) : e === "fr" ? bE(n) : e === "it" ? vE(n) : e === "jp" ? EE(n) : e === "pl" ? TE(n) : e === "ru" ? OE(n) : e === "uk" ? kE(n) : SE(n)
   },
-  RE = () => "You are not allowed to verify a phone number. Try refreshing the page",
-  IE = () => "Você não está autorizado a verificar um número de telefone. Tente atualizar a página.",
-  NE = () => "您无权验证电话号码。请尝试刷新页面。",
-  DE = () => "Sie dürfen keine Telefonnummer verifizieren. Versuchen Sie, die Seite zu aktualisieren.",
-  LE = () => "No tienes permiso para verificar un número de teléfono. Prueba a recargar la página.",
-  PE = () => "Vous n'êtes pas autorisé à vérifier un numéro de téléphone. Essayez d'actualiser la page.",
-  xE = () => "Non ti è consentito verificare un numero di telefono. Prova ad aggiornare la pagina.",
-  zE = () => "電話番号の認証は許可されていません。ページを更新してみてください。",
-  ME = () => "Nie możesz zweryfikować numeru telefonu. Spróbuj odświeżyć stronę.",
-  CE = () => "Вам не разрешено подтверждать номер телефона. Попробуйте обновить страницу.",
-  jE = () => "Вам не дозволено перевіряти номер телефону. Спробуйте оновити сторінку.",
-  BE = () => "Bạn không được phép xác minh số điện thoại. Vui lòng thử tải lại trang.",
+  RE = () => "No internet access or the servers are offline. Try again later.",
+  IE = () => "Sem acesso à internet ou os servidores estão fora do ar. Tente novamente mais tarde.",
+  NE = () => "没有网络连接或服务器已离线。请稍后重试。",
+  DE = () => "Keine Internetverbindung oder Server offline. Versuche es später erneut.",
+  PE = () => "Sin acceso a internet o los servidores están fuera de línea. Inténtalo de nuevo más tarde.",
+  LE = () => "Pas d’accès à Internet ou serveurs hors ligne. Réessayez plus tard.",
+  xE = () => "Nessun accesso a internet o server offline. Riprova più tardi.",
+  zE = () => "インターネットに接続されていないか、サーバーがオフラインです。しばらくしてから再度お試しください。",
+  CE = () => "Brak dostępu do internetu lub serwery są offline. Spróbuj ponownie później.",
+  ME = () => "Нет доступа к интернету или серверы недоступны. Попробуйте позже.",
+  jE = () => "Немає доступу до інтернету або сервери недоступні. Спробуйте пізніше.",
+  BE = () => "Không có kết nối internet hoặc máy chủ đang ngoại tuyến. Hãy thử lại sau.",
   FE = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? RE() : e === "pt" ? IE() : e === "ch" ? NE() : e === "de" ? DE() : e === "es" ? LE() : e === "fr" ? PE() : e === "it" ? xE() : e === "jp" ? zE() : e === "pl" ? ME() : e === "ru" ? CE() : e === "uk" ? jE() : BE()
+    const e = t.locale ?? g();
+    return e === "en" ? RE() : e === "pt" ? IE() : e === "ch" ? NE() : e === "de" ? DE() : e === "es" ? PE() : e === "fr" ? LE() : e === "it" ? xE() : e === "jp" ? zE() : e === "pl" ? CE() : e === "ru" ? ME() : e === "uk" ? jE() : BE()
   },
-  UE = () => "Operation not allowed. Maybe you have too many favorite locations.",
-  GE = () => "Operação não permitida. Talvez você tenha muitos locais favoritos.",
-  qE = () => "操作不被允许。你的收藏位置可能过多。",
-  WE = () => "Aktion nicht erlaubt. Vielleicht hast du zu viele Lieblingsorte.",
-  VE = () => "Operación no permitida. Puede que tengas demasiadas ubicaciones favoritas.",
-  KE = () => "Opération non autorisée. Vous avez peut-être trop d’emplacements favoris.",
-  HE = () => "Operazione non consentita. Forse hai troppi luoghi preferiti.",
-  $E = () => "この操作は許可されていません。お気に入りの場所が多すぎる可能性があります。",
-  XE = () => "Operacja niedozwolona. Możliwe, że masz zbyt wiele ulubionych lokalizacji.",
-  YE = () => "Операция запрещена. Возможно, у вас слишком много избранных локаций.",
-  JE = () => "Операцію заборонено. Можливо, у вас забагато вибраних локацій.",
-  ZE = () => "Thao tác không được phép. Có thể bạn đã có quá nhiều vị trí yêu thích.",
+  UE = () => "You are not allowed to verify a phone number. Try refreshing the page",
+  GE = () => "Você não está autorizado a verificar um número de telefone. Tente atualizar a página.",
+  qE = () => "您无权验证电话号码。请尝试刷新页面。",
+  WE = () => "Sie dürfen keine Telefonnummer verifizieren. Versuchen Sie, die Seite zu aktualisieren.",
+  VE = () => "No tienes permiso para verificar un número de teléfono. Prueba a recargar la página.",
+  KE = () => "Vous n'êtes pas autorisé à vérifier un numéro de téléphone. Essayez d'actualiser la page.",
+  HE = () => "Non ti è consentito verificare un numero di telefono. Prova ad aggiornare la pagina.",
+  $E = () => "電話番号の認証は許可されていません。ページを更新してみてください。",
+  XE = () => "Nie możesz zweryfikować numeru telefonu. Spróbuj odświeżyć stronę.",
+  YE = () => "Вам не разрешено подтверждать номер телефона. Попробуйте обновить страницу.",
+  JE = () => "Вам не дозволено перевіряти номер телефону. Спробуйте оновити сторінку.",
+  ZE = () => "Bạn không được phép xác minh số điện thoại. Vui lòng thử tải lại trang.",
   QE = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? UE() : e === "pt" ? GE() : e === "ch" ? qE() : e === "de" ? WE() : e === "es" ? VE() : e === "fr" ? KE() : e === "it" ? HE() : e === "jp" ? $E() : e === "pl" ? XE() : e === "ru" ? YE() : e === "uk" ? JE() : ZE()
   },
-  eT = n => `Not enough charges: you have ${n.charges} but this overlay needs ${n.pixels}.`,
-  tT = n => `Cargas insuficientes: você tem ${n.charges}, mas esta sobreposição precisa de ${n.pixels}.`,
-  nT = n => `充能不足：你有 ${n.charges}，但此叠加层需要 ${n.pixels}。`,
-  rT = n => `Nicht genügend Ladungen: Du hast ${n.charges}, aber dieses Overlay benötigt ${n.pixels}.`,
-  oT = n => `Cargas insuficientes: tienes ${n.charges} pero esta superposición necesita ${n.pixels}.`,
-  iT = n => `Charges insuffisantes : vous avez ${n.charges} mais ce calque nécessite ${n.pixels}.`,
-  aT = n => `Cariche insufficienti: ne hai ${n.charges} ma questo overlay ne richiede ${n.pixels}.`,
-  sT = n => `チャージが足りません：現在 ${n.charges} ですが、このオーバーレイには ${n.pixels} 必要です。`,
-  cT = n => `Za mało ładunków: masz ${n.charges}, ale ta nakładka wymaga ${n.pixels}.`,
-  uT = n => `Недостаточно зарядов: у вас ${n.charges}, но для этого слоя нужно ${n.pixels}.`,
-  lT = n => `Недостатньо зарядів: у вас ${n.charges}, але для цього шару потрібно ${n.pixels}.`,
-  dT = n => `Không đủ lượt sơn: bạn có ${n.charges} nhưng lớp phủ này cần ${n.pixels}.`,
-  _T = (n, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? eT(n) : e === "pt" ? tT(n) : e === "ch" ? nT(n) : e === "de" ? rT(n) : e === "es" ? oT(n) : e === "fr" ? iT(n) : e === "it" ? aT(n) : e === "jp" ? sT(n) : e === "pl" ? cT(n) : e === "ru" ? uT(n) : e === "uk" ? lT(n) : dT(n)
+  eT = () => "Operation not allowed. Maybe you have too many favorite locations.",
+  tT = () => "Operação não permitida. Talvez você tenha muitos locais favoritos.",
+  nT = () => "操作不被允许。你的收藏位置可能过多。",
+  rT = () => "Aktion nicht erlaubt. Vielleicht hast du zu viele Lieblingsorte.",
+  oT = () => "Operación no permitida. Puede que tengas demasiadas ubicaciones favoritas.",
+  iT = () => "Opération non autorisée. Vous avez peut-être trop d’emplacements favoris.",
+  aT = () => "Operazione non consentita. Forse hai troppi luoghi preferiti.",
+  sT = () => "この操作は許可されていません。お気に入りの場所が多すぎる可能性があります。",
+  cT = () => "Operacja niedozwolona. Możliwe, że masz zbyt wiele ulubionych lokalizacji.",
+  uT = () => "Операция запрещена. Возможно, у вас слишком много избранных локаций.",
+  lT = () => "Операцію заборонено. Можливо, у вас забагато вибраних локацій.",
+  dT = () => "Thao tác không được phép. Có thể bạn đã có quá nhiều vị trí yêu thích.",
+  _T = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? eT() : e === "pt" ? tT() : e === "ch" ? nT() : e === "de" ? rT() : e === "es" ? oT() : e === "fr" ? iT() : e === "it" ? aT() : e === "jp" ? sT() : e === "pl" ? cT() : e === "ru" ? uT() : e === "uk" ? lT() : dT()
   },
-  fT = () => "You are trying to paint with a color you do not own",
-  pT = () => "Você está tentando pintar com uma cor que não possui",
-  mT = () => "你正在尝试使用尚未拥有的颜色进行绘制",
-  hT = () => "Du versuchst mit einer Farbe zu malen, die du nicht besitzt",
-  gT = () => "Estás intentando pintar con un color que no posees",
-  wT = () => "Vous essayez de peindre avec une couleur que vous ne possédez pas",
-  yT = () => "Stai cercando di dipingere con un colore che non possiedi",
-  bT = () => "所持していない色で塗ろうとしています。",
-  vT = () => "Próbujesz malować kolorem, którego nie posiadasz",
-  ET = () => "Вы пытаетесь рисовать цветом, которого у вас нет",
-  TT = () => "Ви намагаєтеся малювати кольором, якого не маєте",
-  OT = () => "Bạn đang cố tô bằng một màu bạn không sở hữu",
+  fT = n => `Not enough charges: you have ${n.charges} but this overlay needs ${n.pixels}.`,
+  pT = n => `Cargas insuficientes: você tem ${n.charges}, mas esta sobreposição precisa de ${n.pixels}.`,
+  mT = n => `充能不足：你有 ${n.charges}，但此叠加层需要 ${n.pixels}。`,
+  hT = n => `Nicht genügend Ladungen: Du hast ${n.charges}, aber dieses Overlay benötigt ${n.pixels}.`,
+  gT = n => `Cargas insuficientes: tienes ${n.charges} pero esta superposición necesita ${n.pixels}.`,
+  wT = n => `Charges insuffisantes : vous avez ${n.charges} mais ce calque nécessite ${n.pixels}.`,
+  yT = n => `Cariche insufficienti: ne hai ${n.charges} ma questo overlay ne richiede ${n.pixels}.`,
+  bT = n => `チャージが足りません：現在 ${n.charges} ですが、このオーバーレイには ${n.pixels} 必要です。`,
+  vT = n => `Za mało ładunków: masz ${n.charges}, ale ta nakładka wymaga ${n.pixels}.`,
+  ET = n => `Недостаточно зарядов: у вас ${n.charges}, но для этого слоя нужно ${n.pixels}.`,
+  TT = n => `Недостатньо зарядів: у вас ${n.charges}, але для цього шару потрібно ${n.pixels}.`,
+  OT = n => `Không đủ lượt sơn: bạn có ${n.charges} nhưng lớp phủ này cần ${n.pixels}.`,
+  kT = (n, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? fT(n) : e === "pt" ? pT(n) : e === "ch" ? mT(n) : e === "de" ? hT(n) : e === "es" ? gT(n) : e === "fr" ? wT(n) : e === "it" ? yT(n) : e === "jp" ? bT(n) : e === "pl" ? vT(n) : e === "ru" ? ET(n) : e === "uk" ? TT(n) : OT(n)
+  },
+  ST = () => "You are trying to paint with a color you do not own",
+  AT = () => "Você está tentando pintar com uma cor que não possui",
+  RT = () => "你正在尝试使用尚未拥有的颜色进行绘制",
+  IT = () => "Du versuchst mit einer Farbe zu malen, die du nicht besitzt",
+  NT = () => "Estás intentando pintar con un color que no posees",
+  DT = () => "Vous essayez de peindre avec une couleur que vous ne possédez pas",
+  PT = () => "Stai cercando di dipingere con un colore che non possiedi",
+  LT = () => "所持していない色で塗ろうとしています。",
+  xT = () => "Próbujesz malować kolorem, którego nie posiadasz",
+  zT = () => "Вы пытаетесь рисовать цветом, которого у вас нет",
+  CT = () => "Ви намагаєтеся малювати кольором, якого не маєте",
+  MT = () => "Bạn đang cố tô bằng một màu bạn không sở hữu",
   Zn = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? fT() : e === "pt" ? pT() : e === "ch" ? mT() : e === "de" ? hT() : e === "es" ? gT() : e === "fr" ? wT() : e === "it" ? yT() : e === "jp" ? bT() : e === "pl" ? vT() : e === "ru" ? ET() : e === "uk" ? TT() : OT()
+    const e = t.locale ?? g();
+    return e === "en" ? ST() : e === "pt" ? AT() : e === "ch" ? RT() : e === "de" ? IT() : e === "es" ? NT() : e === "fr" ? DT() : e === "it" ? PT() : e === "jp" ? LT() : e === "pl" ? xT() : e === "ru" ? zT() : e === "uk" ? CT() : MT()
   },
-  kT = () => "Phone already used",
-  ST = () => "Telefone já usado",
-  AT = () => "电话号码已被使用",
-  RT = () => "Telefonnummer bereits verwendet",
-  IT = () => "Teléfono ya utilizado",
-  NT = () => "Téléphone déjà utilisé",
-  DT = () => "Telefono già utilizzato",
-  LT = () => "この電話番号は既に使用されています。",
-  PT = () => "Numer telefonu jest już używany",
-  xT = () => "Телефон уже используется",
-  zT = () => "Номер телефону вже використовується",
-  MT = () => "Số điện thoại đã được sử dụng",
-  CT = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? kT() : e === "pt" ? ST() : e === "ch" ? AT() : e === "de" ? RT() : e === "es" ? IT() : e === "fr" ? NT() : e === "it" ? DT() : e === "jp" ? LT() : e === "pl" ? PT() : e === "ru" ? xT() : e === "uk" ? zT() : MT()
-  },
-  jT = () => "This phone number's region is not supported",
-  BT = () => "A região deste número de telefone não é suportada",
-  FT = () => "此电话号码的地区不受支持",
-  UT = () => "Die Region dieser Telefonnummer wird nicht unterstützt",
-  GT = () => "La región de este número de teléfono no es compatible",
-  qT = () => "La région de ce numéro de téléphone n'est pas prise en charge",
-  WT = () => "La regione di questo numero di telefono non è supportata",
-  VT = () => "この電話番号の地域はサポートされていません",
-  KT = () => "Region tego numeru telefonu nie jest obsługiwany",
-  HT = () => "Регион этого номера телефона не поддерживается",
-  $T = () => "Регіон цього номера телефону не підтримується",
-  XT = () => "Vùng của số điện thoại này không được hỗ trợ",
+  jT = () => "Phone already used",
+  BT = () => "Telefone já usado",
+  FT = () => "电话号码已被使用",
+  UT = () => "Telefonnummer bereits verwendet",
+  GT = () => "Teléfono ya utilizado",
+  qT = () => "Téléphone déjà utilisé",
+  WT = () => "Telefono già utilizzato",
+  VT = () => "この電話番号は既に使用されています。",
+  KT = () => "Numer telefonu jest już używany",
+  HT = () => "Телефон уже используется",
+  $T = () => "Номер телефону вже використовується",
+  XT = () => "Số điện thoại đã được sử dụng",
   YT = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? jT() : e === "pt" ? BT() : e === "ch" ? FT() : e === "de" ? UT() : e === "es" ? GT() : e === "fr" ? qT() : e === "it" ? WT() : e === "jp" ? VT() : e === "pl" ? KT() : e === "ru" ? HT() : e === "uk" ? $T() : XT()
   },
-  JT = () => "Refresh your page to get the latest update",
-  ZT = () => "Recarregue sua página para obter as últimas atualizações",
-  QT = () => "刷新页面以获取最新更新",
-  e0 = () => "Aktualisiere die Seite, um die neuesten Updates zu erhalten",
-  t0 = () => "Actualiza la página para obtener la última versión",
-  n0 = () => "Actualisez la page pour obtenir les dernières mises à jour",
-  r0 = () => "Ricarica la pagina per ottenere gli ultimi aggiornamenti",
-  o0 = () => "最新の状態にするにはページを再読み込みしてください。",
-  i0 = () => "Odśwież stronę, aby zobaczyć najnowszą aktualizację",
-  a0 = () => "Обновите страницу, чтобы получить последние изменения",
-  s0 = () => "Оновіть сторінку, щоб отримати останні оновлення",
-  c0 = () => "Hãy làm mới trang để nhận được cập nhật mới nhất",
-  Qn = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+  JT = () => "This phone number's region is not supported",
+  ZT = () => "A região deste número de telefone não é suportada",
+  QT = () => "此电话号码的地区不受支持",
+  e0 = () => "Die Region dieser Telefonnummer wird nicht unterstützt",
+  t0 = () => "La región de este número de teléfono no es compatible",
+  n0 = () => "La région de ce numéro de téléphone n'est pas prise en charge",
+  r0 = () => "La regione di questo numero di telefono non è supportata",
+  o0 = () => "この電話番号の地域はサポートされていません",
+  i0 = () => "Region tego numeru telefonu nie jest obsługiwany",
+  a0 = () => "Регион этого номера телефона не поддерживается",
+  s0 = () => "Регіон цього номера телефону не підтримується",
+  c0 = () => "Vùng của số điện thoại này không được hỗ trợ",
+  u0 = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
     return e === "en" ? JT() : e === "pt" ? ZT() : e === "ch" ? QT() : e === "de" ? e0() : e === "es" ? t0() : e === "fr" ? n0() : e === "it" ? r0() : e === "jp" ? o0() : e === "pl" ? i0() : e === "ru" ? a0() : e === "uk" ? s0() : c0()
   },
-  u0 = () => "The request timed out. Please try again.",
-  l0 = () => "A solicitação expirou. Por favor, tente novamente.",
-  d0 = () => "请求超时。请重试。",
-  _0 = () => "Die Anfrage hat ein Zeitlimit überschritten. Bitte versuchen Sie es erneut.",
-  f0 = () => "La solicitud agotó el tiempo de espera. Por favor, inténtelo de nuevo.",
-  p0 = () => "La requête a expiré. Veuillez réessayer.",
-  m0 = () => "La richiesta è scaduta. Riprova.",
-  h0 = () => "リクエストがタイムアウトしました。もう一度お試しください。",
-  g0 = () => "Żądanie przekroczyło limit czasu. Proszę spróbować ponownie.",
-  w0 = () => "Время ожидания запроса истекло. Пожалуйста, попробуйте снова.",
-  y0 = () => "Час очікування запиту вичерпано. Будь ласка, спробуйте ще раз.",
-  b0 = () => "Yêu cầu đã hết thời gian. Vui lòng thử lại.",
-  v0 = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? u0() : e === "pt" ? l0() : e === "ch" ? d0() : e === "de" ? _0() : e === "es" ? f0() : e === "fr" ? p0() : e === "it" ? m0() : e === "jp" ? h0() : e === "pl" ? g0() : e === "ru" ? w0() : e === "uk" ? y0() : b0()
+  l0 = () => "Refresh your page to get the latest update",
+  d0 = () => "Recarregue sua página para obter as últimas atualizações",
+  _0 = () => "刷新页面以获取最新更新",
+  f0 = () => "Aktualisiere die Seite, um die neuesten Updates zu erhalten",
+  p0 = () => "Actualiza la página para obtener la última versión",
+  m0 = () => "Actualisez la page pour obtenir les dernières mises à jour",
+  h0 = () => "Ricarica la pagina per ottenere gli ultimi aggiornamenti",
+  g0 = () => "最新の状態にするにはページを再読み込みしてください。",
+  w0 = () => "Odśwież stronę, aby zobaczyć najnowszą aktualizację",
+  y0 = () => "Обновите страницу, чтобы получить последние изменения",
+  b0 = () => "Оновіть сторінку, щоб отримати останні оновлення",
+  v0 = () => "Hãy làm mới trang để nhận được cập nhật mới nhất",
+  Qn = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? l0() : e === "pt" ? d0() : e === "ch" ? _0() : e === "de" ? f0() : e === "es" ? p0() : e === "fr" ? m0() : e === "it" ? h0() : e === "jp" ? g0() : e === "pl" ? w0() : e === "ru" ? y0() : e === "uk" ? b0() : v0()
   },
-  E0 = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  T0 = () => "A área selecionada tem histórico demais para exportar um timelapse. Tente uma área menor.",
-  O0 = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  k0 = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  S0 = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  A0 = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  R0 = () => "L'area selezionata ha troppa cronologia per esportare un timelapse. Prova con un'area più piccola.",
-  I0 = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  N0 = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  D0 = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  L0 = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  P0 = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  E0 = () => "The request timed out. Please try again.",
+  T0 = () => "A solicitação expirou. Por favor, tente novamente.",
+  O0 = () => "请求超时。请重试。",
+  k0 = () => "Die Anfrage hat ein Zeitlimit überschritten. Bitte versuchen Sie es erneut.",
+  S0 = () => "La solicitud agotó el tiempo de espera. Por favor, inténtelo de nuevo.",
+  A0 = () => "La requête a expiré. Veuillez réessayer.",
+  R0 = () => "La richiesta è scaduta. Riprova.",
+  I0 = () => "リクエストがタイムアウトしました。もう一度お試しください。",
+  N0 = () => "Żądanie przekroczyło limit czasu. Proszę spróbować ponownie.",
+  D0 = () => "Время ожидания запроса истекло. Пожалуйста, попробуйте снова.",
+  P0 = () => "Час очікування запиту вичерпано. Будь ласка, спробуйте ще раз.",
+  L0 = () => "Yêu cầu đã hết thời gian. Vui lòng thử lại.",
   x0 = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? E0() : e === "pt" ? T0() : e === "ch" ? O0() : e === "de" ? k0() : e === "es" ? S0() : e === "fr" ? A0() : e === "it" ? R0() : e === "jp" ? I0() : e === "pl" ? N0() : e === "ru" ? D0() : e === "uk" ? L0() : P0()
+    const e = t.locale ?? g();
+    return e === "en" ? E0() : e === "pt" ? T0() : e === "ch" ? O0() : e === "de" ? k0() : e === "es" ? S0() : e === "fr" ? A0() : e === "it" ? R0() : e === "jp" ? I0() : e === "pl" ? N0() : e === "ru" ? D0() : e === "uk" ? P0() : L0()
   },
-  z0 = () => "The service is currently unavailable. Please try again later.",
-  M0 = () => "O serviço está indisponível no momento. Por favor, tente novamente mais tarde.",
-  C0 = () => "服务当前不可用。请稍后再试。",
-  j0 = () => "Der Dienst ist derzeit nicht verfügbar. Bitte versuchen Sie es später erneut.",
-  B0 = () => "El servicio no está disponible actualmente. Por favor, inténtelo de nuevo más tarde.",
-  F0 = () => "Le service est actuellement indisponible. Veuillez réessayer plus tard.",
-  U0 = () => "Il servizio non è attualmente disponibile. Riprova più tardi.",
-  G0 = () => "現在、サービスはご利用いただけません。後でもう一度お試しください。",
-  q0 = () => "Usługa jest obecnie niedostępna. Proszę spróbować ponownie później.",
-  W0 = () => "Сервис в настоящее время недоступен. Пожалуйста, попробуйте позже.",
-  V0 = () => "Сервіс наразі недоступний. Будь ласка, спробуйте пізніше.",
-  K0 = () => "Dịch vụ hiện không khả dụng. Vui lòng thử lại sau.",
+  z0 = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  C0 = () => "A área selecionada tem histórico demais para exportar um timelapse. Tente uma área menor.",
+  M0 = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  j0 = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  B0 = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  F0 = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  U0 = () => "L'area selezionata ha troppa cronologia per esportare un timelapse. Prova con un'area più piccola.",
+  G0 = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  q0 = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  W0 = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  V0 = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  K0 = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
   H0 = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? z0() : e === "pt" ? M0() : e === "ch" ? C0() : e === "de" ? j0() : e === "es" ? B0() : e === "fr" ? F0() : e === "it" ? U0() : e === "jp" ? G0() : e === "pl" ? q0() : e === "ru" ? W0() : e === "uk" ? V0() : K0()
+    const e = t.locale ?? g();
+    return e === "en" ? z0() : e === "pt" ? C0() : e === "ch" ? M0() : e === "de" ? j0() : e === "es" ? B0() : e === "fr" ? F0() : e === "it" ? U0() : e === "jp" ? G0() : e === "pl" ? q0() : e === "ru" ? W0() : e === "uk" ? V0() : K0()
   },
-  $0 = () => "Too many attempts. Please try again later",
-  X0 = () => "Muitas tentativas. Por favor, tente novamente mais tarde.",
-  Y0 = () => "尝试次数过多，请稍后再试",
-  J0 = () => "Zu viele Versuche. Bitte versuchen Sie es später erneut",
-  Z0 = () => "Demasiados intentos. Por favor, inténtalo de nuevo más tarde",
-  Q0 = () => "Trop de tentatives. Veuillez réessayer plus tard",
-  eO = () => "Troppi tentativi. Riprova più tardi.",
-  tO = () => "試行回数が多すぎます。後で再度お試しください。",
-  nO = () => "Zbyt wiele prób. Proszę spróbować ponownie później",
-  rO = () => "Слишком много попыток. Пожалуйста, попробуйте позже",
-  oO = () => "Забагато спроб. Будь ласка, спробуйте пізніше",
-  iO = () => "Quá nhiều lần thử. Vui lòng thử lại sau.",
-  er = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+  $0 = () => "The service is currently unavailable. Please try again later.",
+  X0 = () => "O serviço está indisponível no momento. Por favor, tente novamente mais tarde.",
+  Y0 = () => "服务当前不可用。请稍后再试。",
+  J0 = () => "Der Dienst ist derzeit nicht verfügbar. Bitte versuchen Sie es später erneut.",
+  Z0 = () => "El servicio no está disponible actualmente. Por favor, inténtelo de nuevo más tarde.",
+  Q0 = () => "Le service est actuellement indisponible. Veuillez réessayer plus tard.",
+  eO = () => "Il servizio non è attualmente disponibile. Riprova più tardi.",
+  tO = () => "現在、サービスはご利用いただけません。後でもう一度お試しください。",
+  nO = () => "Usługa jest obecnie niedostępna. Proszę spróbować ponownie później.",
+  rO = () => "Сервис в настоящее время недоступен. Пожалуйста, попробуйте позже.",
+  oO = () => "Сервіс наразі недоступний. Будь ласка, спробуйте пізніше.",
+  iO = () => "Dịch vụ hiện không khả dụng. Vui lòng thử lại sau.",
+  aO = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
     return e === "en" ? $0() : e === "pt" ? X0() : e === "ch" ? Y0() : e === "de" ? J0() : e === "es" ? Z0() : e === "fr" ? Q0() : e === "it" ? eO() : e === "jp" ? tO() : e === "pl" ? nO() : e === "ru" ? rO() : e === "uk" ? oO() : iO()
   },
-  aO = () => "Access through Tor or anonymous networks is not allowed. Please connect from a regular network to continue.",
-  sO = () => "O acesso através do Tor ou redes anônimas não é permitido. Por favor, conecte-se a partir de uma rede comum para continuar.",
-  cO = () => "不允许通过 Tor 或匿名网络访问。请使用常规网络连接以继续。",
-  uO = () => "Der Zugriff über Tor oder anonyme Netzwerke ist nicht erlaubt. Bitte verbinden Sie sich über ein normales Netzwerk, um fortzufahren.",
-  lO = () => "No se permite el acceso a través de Tor o redes anónimas. Por favor, conéctate desde una red normal para continuar.",
-  dO = () => "L'accès via Tor ou des réseaux anonymes n'est pas autorisé. Veuillez vous connecter depuis un réseau normal pour continuer.",
-  _O = () => "L'accesso tramite Tor o reti anonime non è consentito. Connettiti da una rete normale per continuare.",
-  fO = () => "Torまたは匿名ネットワーク経由でのアクセスは許可されていません。続行するには通常のネットワークから接続してください。",
-  pO = () => "Dostęp przez Tor lub sieci anonimowe jest niedozwolony. Aby kontynuować, połącz się ze zwykłej sieci.",
-  mO = () => "Доступ через Tor или анонимные сети не разрешён. Пожалуйста, подключитесь из обычной сети, чтобы продолжить.",
-  hO = () => "Доступ через Tor або анонімні мережі заборонено. Будь ласка, підключіться зі звичайної мережі, щоб продовжити.",
-  gO = () => "Không cho phép truy cập qua Tor hoặc các mạng ẩn danh. Vui lòng kết nối từ mạng thông thường để tiếp tục.",
-  wO = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? aO() : e === "pt" ? sO() : e === "ch" ? cO() : e === "de" ? uO() : e === "es" ? lO() : e === "fr" ? dO() : e === "it" ? _O() : e === "jp" ? fO() : e === "pl" ? pO() : e === "ru" ? mO() : e === "uk" ? hO() : gO()
+  sO = () => "Too many attempts. Please try again later",
+  cO = () => "Muitas tentativas. Por favor, tente novamente mais tarde.",
+  uO = () => "尝试次数过多，请稍后再试",
+  lO = () => "Zu viele Versuche. Bitte versuchen Sie es später erneut",
+  dO = () => "Demasiados intentos. Por favor, inténtalo de nuevo más tarde",
+  _O = () => "Trop de tentatives. Veuillez réessayer plus tard",
+  fO = () => "Troppi tentativi. Riprova più tardi.",
+  pO = () => "試行回数が多すぎます。後で再度お試しください。",
+  mO = () => "Zbyt wiele prób. Proszę spróbować ponownie później",
+  hO = () => "Слишком много попыток. Пожалуйста, попробуйте позже",
+  gO = () => "Забагато спроб. Будь ласка, спробуйте пізніше",
+  wO = () => "Quá nhiều lần thử. Vui lòng thử lại sau.",
+  er = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? sO() : e === "pt" ? cO() : e === "ch" ? uO() : e === "de" ? lO() : e === "es" ? dO() : e === "fr" ? _O() : e === "it" ? fO() : e === "jp" ? pO() : e === "pl" ? mO() : e === "ru" ? hO() : e === "uk" ? gO() : wO()
   },
-  yO = () => "The typed username does not match your current username.",
-  bO = () => "O nome de usuário digitado não corresponde ao seu nome de usuário atual.",
-  vO = () => "输入的用户名与当前用户名不匹配。",
-  EO = () => "Der eingegebene Benutzername stimmt nicht mit deinem aktuellen Benutzernamen überein.",
-  TO = () => "El nombre de usuario ingresado no coincide con tu nombre de usuario actual.",
-  OO = () => "Le nom d’utilisateur saisi ne correspond pas à votre nom d’utilisateur actuel.",
-  kO = () => "Il nome utente inserito non corrisponde al tuo nome utente attuale.",
-  SO = () => "入力されたユーザー名が、現在のユーザー名と一致しません。",
-  AO = () => "Wpisana nazwa użytkownika nie zgadza się z obecną nazwą.",
-  RO = () => "Введённое имя пользователя не совпадает с текущим.",
-  IO = () => "Введене імʼя користувача не збігається з поточним.",
-  NO = () => "Tên người dùng nhập vào không trùng với tên hiện tại.",
+  yO = () => "Access through Tor or anonymous networks is not allowed. Please connect from a regular network to continue.",
+  bO = () => "O acesso através do Tor ou redes anônimas não é permitido. Por favor, conecte-se a partir de uma rede comum para continuar.",
+  vO = () => "不允许通过 Tor 或匿名网络访问。请使用常规网络连接以继续。",
+  EO = () => "Der Zugriff über Tor oder anonyme Netzwerke ist nicht erlaubt. Bitte verbinden Sie sich über ein normales Netzwerk, um fortzufahren.",
+  TO = () => "No se permite el acceso a través de Tor o redes anónimas. Por favor, conéctate desde una red normal para continuar.",
+  OO = () => "L'accès via Tor ou des réseaux anonymes n'est pas autorisé. Veuillez vous connecter depuis un réseau normal pour continuer.",
+  kO = () => "L'accesso tramite Tor o reti anonime non è consentito. Connettiti da una rete normale per continuare.",
+  SO = () => "Torまたは匿名ネットワーク経由でのアクセスは許可されていません。続行するには通常のネットワークから接続してください。",
+  AO = () => "Dostęp przez Tor lub sieci anonimowe jest niedozwolony. Aby kontynuować, połącz się ze zwykłej sieci.",
+  RO = () => "Доступ через Tor или анонимные сети не разрешён. Пожалуйста, подключитесь из обычной сети, чтобы продолжить.",
+  IO = () => "Доступ через Tor або анонімні мережі заборонено. Будь ласка, підключіться зі звичайної мережі, щоб продовжити.",
+  NO = () => "Không cho phép truy cập qua Tor hoặc các mạng ẩn danh. Vui lòng kết nối từ mạng thông thường để tiếp tục.",
   DO = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? yO() : e === "pt" ? bO() : e === "ch" ? vO() : e === "de" ? EO() : e === "es" ? TO() : e === "fr" ? OO() : e === "it" ? kO() : e === "jp" ? SO() : e === "pl" ? AO() : e === "ru" ? RO() : e === "uk" ? IO() : NO()
   },
-  LO = () => "Unexpected server error. Try again later.",
-  PO = () => "Erro inesperado do servidor. Tente novamente mais tarde.",
-  xO = () => "服务器出现意外错误。请稍后再试。",
-  zO = () => "Unerwarteter Serverfehler. Versuche es später erneut.",
-  MO = () => "Error inesperado del servidor. Inténtalo de nuevo más tarde.",
-  CO = () => "Erreur serveur inattendue. Réessayez plus tard.",
-  jO = () => "Errore imprevisto del server. Riprova più tardi.",
-  BO = () => "予期しないサーバーエラーが発生しました。時間をおいて再度お試しください。",
-  FO = () => "Nieoczekiwany błąd serwera. Spróbuj ponownie później.",
-  UO = () => "Непредвиденная ошибка сервера. Попробуйте позже.",
-  GO = () => "Неочікувана помилка сервера. Спробуйте пізніше.",
-  qO = () => "Lỗi máy chủ không mong muốn. Hãy thử lại sau.",
+  PO = () => "The typed username does not match your current username.",
+  LO = () => "O nome de usuário digitado não corresponde ao seu nome de usuário atual.",
+  xO = () => "输入的用户名与当前用户名不匹配。",
+  zO = () => "Der eingegebene Benutzername stimmt nicht mit deinem aktuellen Benutzernamen überein.",
+  CO = () => "El nombre de usuario ingresado no coincide con tu nombre de usuario actual.",
+  MO = () => "Le nom d’utilisateur saisi ne correspond pas à votre nom d’utilisateur actuel.",
+  jO = () => "Il nome utente inserito non corrisponde al tuo nome utente attuale.",
+  BO = () => "入力されたユーザー名が、現在のユーザー名と一致しません。",
+  FO = () => "Wpisana nazwa użytkownika nie zgadza się z obecną nazwą.",
+  UO = () => "Введённое имя пользователя не совпадает с текущим.",
+  GO = () => "Введене імʼя користувача не збігається з поточним.",
+  qO = () => "Tên người dùng nhập vào không trùng với tên hiện tại.",
+  WO = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? PO() : e === "pt" ? LO() : e === "ch" ? xO() : e === "de" ? zO() : e === "es" ? CO() : e === "fr" ? MO() : e === "it" ? jO() : e === "jp" ? BO() : e === "pl" ? FO() : e === "ru" ? UO() : e === "uk" ? GO() : qO()
+  },
+  VO = () => "Unexpected server error. Try again later.",
+  KO = () => "Erro inesperado do servidor. Tente novamente mais tarde.",
+  HO = () => "服务器出现意外错误。请稍后再试。",
+  $O = () => "Unerwarteter Serverfehler. Versuche es später erneut.",
+  XO = () => "Error inesperado del servidor. Inténtalo de nuevo más tarde.",
+  YO = () => "Erreur serveur inattendue. Réessayez plus tard.",
+  JO = () => "Errore imprevisto del server. Riprova più tardi.",
+  ZO = () => "予期しないサーバーエラーが発生しました。時間をおいて再度お試しください。",
+  QO = () => "Nieoczekiwany błąd serwera. Spróbuj ponownie później.",
+  ek = () => "Непредвиденная ошибка сервера. Попробуйте позже.",
+  tk = () => "Неочікувана помилка сервера. Спробуйте пізніше.",
+  nk = () => "Lỗi máy chủ không mong muốn. Hãy thử lại sau.",
   f = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? LO() : e === "pt" ? PO() : e === "ch" ? xO() : e === "de" ? zO() : e === "es" ? MO() : e === "fr" ? CO() : e === "it" ? jO() : e === "jp" ? BO() : e === "pl" ? FO() : e === "ru" ? UO() : e === "uk" ? GO() : qO()
+    const e = t.locale ?? g();
+    return e === "en" ? VO() : e === "pt" ? KO() : e === "ch" ? HO() : e === "de" ? $O() : e === "es" ? XO() : e === "fr" ? YO() : e === "it" ? JO() : e === "jp" ? ZO() : e === "pl" ? QO() : e === "ru" ? ek() : e === "uk" ? tk() : nk()
   },
-  WO = () => "The phone number is unsubscribed from SMS notifications. Check the link for more info: https://www.twilio.com/docs/api/errors/21610",
-  VO = () => "O número de telefone foi desinscrito das notificações por SMS. Verifique o link para mais informações: https://www.twilio.com/docs/api/errors/21610",
-  KO = () => "电话号码已退订短信通知。请查看链接获取更多信息：https://www.twilio.com/docs/api/errors/21610",
-  HO = () => "Die Telefonnummer wurde von SMS-Benachrichtigungen abgemeldet. Weitere Informationen finden Sie unter: https://www.twilio.com/docs/api/errors/21610",
-  $O = () => "El número de teléfono ha sido dado de baja de las notificaciones por SMS. Consulta el enlace para más información: https://www.twilio.com/docs/api/errors/21610",
-  XO = () => "Le numéro de téléphone est désabonné des notifications par SMS. Consultez le lien pour plus d'informations : https://www.twilio.com/docs/api/errors/21610",
-  YO = () => "Il numero di telefono è stato disiscritto dalle notifiche SMS. Per maggiori informazioni, consulta il link: https://www.twilio.com/docs/api/errors/21610",
-  JO = () => "この電話番号はSMS通知から登録解除されました。詳細については、以下のリンクをご確認ください: https://www.twilio.com/docs/api/errors/21610",
-  ZO = () => "Numer telefonu został wypisany z powiadomień SMS. Sprawdź link, aby uzyskać więcej informacji: https://www.twilio.com/docs/api/errors/21610",
-  QO = () => "Номер телефона отписан от SMS-уведомлений. Дополнительную информацию смотрите по ссылке: https://www.twilio.com/docs/api/errors/21610",
-  ek = () => "Номер телефону відключено від SMS-сповіщень. Перегляньте посилання для отримання додаткової інформації: https://www.twilio.com/docs/api/errors/21610",
-  tk = () => "Số điện thoại này đã hủy đăng ký nhận thông báo SMS. Kiểm tra liên kết để biết thêm thông tin: https://www.twilio.com/docs/api/errors/21610",
-  nk = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? WO() : e === "pt" ? VO() : e === "ch" ? KO() : e === "de" ? HO() : e === "es" ? $O() : e === "fr" ? XO() : e === "it" ? YO() : e === "jp" ? JO() : e === "pl" ? ZO() : e === "ru" ? QO() : e === "uk" ? ek() : tk()
-  },
-  rk = () => "VPN or proxy detected. Please disable your VPN and try again.",
-  ok = () => "VPN ou proxy detectado. Por favor, desative sua VPN e tente novamente.",
-  ik = () => "检测到VPN或代理。请关闭VPN后重试。",
-  ak = () => "VPN oder Proxy erkannt. Bitte deaktiviere dein VPN und versuche es erneut.",
-  sk = () => "VPN o proxy detectado. Por favor, desactiva tu VPN e inténtalo de nuevo.",
-  ck = () => "VPN ou proxy détecté. Veuillez désactiver votre VPN et réessayer.",
-  uk = () => "VPN o proxy rilevato. Disattiva la tua VPN e riprova.",
-  lk = () => "VPNまたはプロキシが検出されました。VPNを無効にしてもう一度お試しください。",
-  dk = () => "Wykryto VPN lub proxy. Wyłącz VPN i spróbuj ponownie.",
-  _k = () => "Обнаружен VPN или прокси. Пожалуйста, отключите VPN и попробуйте снова.",
-  fk = () => "Виявлено VPN або проксі. Будь ласка, вимкніть VPN і спробуйте знову.",
-  pk = () => "Phát hiện VPN hoặc proxy. Vui lòng tắt VPN và thử lại.",
+  rk = () => "The phone number is unsubscribed from SMS notifications. Check the link for more info: https://www.twilio.com/docs/api/errors/21610",
+  ok = () => "O número de telefone foi desinscrito das notificações por SMS. Verifique o link para mais informações: https://www.twilio.com/docs/api/errors/21610",
+  ik = () => "电话号码已退订短信通知。请查看链接获取更多信息：https://www.twilio.com/docs/api/errors/21610",
+  ak = () => "Die Telefonnummer wurde von SMS-Benachrichtigungen abgemeldet. Weitere Informationen finden Sie unter: https://www.twilio.com/docs/api/errors/21610",
+  sk = () => "El número de teléfono ha sido dado de baja de las notificaciones por SMS. Consulta el enlace para más información: https://www.twilio.com/docs/api/errors/21610",
+  ck = () => "Le numéro de téléphone est désabonné des notifications par SMS. Consultez le lien pour plus d'informations : https://www.twilio.com/docs/api/errors/21610",
+  uk = () => "Il numero di telefono è stato disiscritto dalle notifiche SMS. Per maggiori informazioni, consulta il link: https://www.twilio.com/docs/api/errors/21610",
+  lk = () => "この電話番号はSMS通知から登録解除されました。詳細については、以下のリンクをご確認ください: https://www.twilio.com/docs/api/errors/21610",
+  dk = () => "Numer telefonu został wypisany z powiadomień SMS. Sprawdź link, aby uzyskać więcej informacji: https://www.twilio.com/docs/api/errors/21610",
+  _k = () => "Номер телефона отписан от SMS-уведомлений. Дополнительную информацию смотрите по ссылке: https://www.twilio.com/docs/api/errors/21610",
+  fk = () => "Номер телефону відключено від SMS-сповіщень. Перегляньте посилання для отримання додаткової інформації: https://www.twilio.com/docs/api/errors/21610",
+  pk = () => "Số điện thoại này đã hủy đăng ký nhận thông báo SMS. Kiểm tra liên kết để biết thêm thông tin: https://www.twilio.com/docs/api/errors/21610",
   mk = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? rk() : e === "pt" ? ok() : e === "ch" ? ik() : e === "de" ? ak() : e === "es" ? sk() : e === "fr" ? ck() : e === "it" ? uk() : e === "jp" ? lk() : e === "pl" ? dk() : e === "ru" ? _k() : e === "uk" ? fk() : pk()
   },
-  hk = () => "Failed to load WebAssembly module. Try to use another browser.",
-  gk = () => "Erro ao carregar módulo WebAssembly. Tente usar outro navegador.",
-  wk = () => "WebAssembly 模块加载失败。请尝试使用其他浏览器。",
-  yk = () => "Fehler beim Laden des WebAssembly-Moduls. Versuche, einen anderen Browser zu verwenden.",
-  bk = () => "Error al cargar el módulo WebAssembly. Intenta usar otro navegador.",
-  vk = () => "Erreur lors du chargement du module WebAssembly. Essayez d’utiliser un autre navigateur.",
-  Ek = () => "Errore nel caricamento del modulo WebAssembly. Prova a usare un altro browser.",
-  Tk = () => "WebAssembly モジュールの読み込みに失敗しました。別のブラウザをお試しください。",
-  Ok = () => "Nie udało się załadować modułu WebAssembly. Spróbuj użyć innej przeglądarki.",
-  kk = () => "Ошибка при загрузке модуля WebAssembly. Попробуйте использовать другой браузер.",
-  Sk = () => "Не вдалося завантажити модуль WebAssembly. Спробуйте інший браузер.",
-  Ak = () => "Lỗi tải mô-đun WebAssembly. Hãy thử dùng trình duyệt khác.",
+  hk = () => "VPN or proxy detected. Please disable your VPN and try again.",
+  gk = () => "VPN ou proxy detectado. Por favor, desative sua VPN e tente novamente.",
+  wk = () => "检测到VPN或代理。请关闭VPN后重试。",
+  yk = () => "VPN oder Proxy erkannt. Bitte deaktiviere dein VPN und versuche es erneut.",
+  bk = () => "VPN o proxy detectado. Por favor, desactiva tu VPN e inténtalo de nuevo.",
+  vk = () => "VPN ou proxy détecté. Veuillez désactiver votre VPN et réessayer.",
+  Ek = () => "VPN o proxy rilevato. Disattiva la tua VPN e riprova.",
+  Tk = () => "VPNまたはプロキシが検出されました。VPNを無効にしてもう一度お試しください。",
+  Ok = () => "Wykryto VPN lub proxy. Wyłącz VPN i spróbuj ponownie.",
+  kk = () => "Обнаружен VPN или прокси. Пожалуйста, отключите VPN и попробуйте снова.",
+  Sk = () => "Виявлено VPN або проксі. Будь ласка, вимкніть VPN і спробуйте знову.",
+  Ak = () => "Phát hiện VPN hoặc proxy. Vui lòng tắt VPN và thử lại.",
   Rk = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+    const e = t.locale ?? g();
     return e === "en" ? hk() : e === "pt" ? gk() : e === "ch" ? wk() : e === "de" ? yk() : e === "es" ? bk() : e === "fr" ? vk() : e === "it" ? Ek() : e === "jp" ? Tk() : e === "pl" ? Ok() : e === "ru" ? kk() : e === "uk" ? Sk() : Ak()
   },
-  Ik = () => "You already have this item. Please refresh the page.",
-  Nk = () => "Você já possui este item. Atualize a página.",
-  Dk = () => "你已经拥有此物品。请刷新页面。",
-  Lk = () => "Du besitzt dieses Item bereits. Bitte aktualisiere die Seite.",
-  Pk = () => "Ya tienes este ítem. Actualiza la página.",
-  xk = () => "Vous possédez déjà cet objet. Actualisez la page.",
-  zk = () => "Possiedi già questo oggetto. Aggiorna la pagina.",
-  Mk = () => "このアイテムはすでに所持しています。ページを更新してください。",
-  Ck = () => "Masz już ten przedmiot. Odśwież stronę.",
-  jk = () => "У вас уже есть этот предмет. Обновите страницу.",
-  Bk = () => "У вас уже є цей предмет. Оновіть сторінку.",
-  Fk = () => "Bạn đã sở hữu vật phẩm này. Hãy tải lại trang.",
+  Ik = () => "Failed to load WebAssembly module. Try to use another browser.",
+  Nk = () => "Erro ao carregar módulo WebAssembly. Tente usar outro navegador.",
+  Dk = () => "WebAssembly 模块加载失败。请尝试使用其他浏览器。",
+  Pk = () => "Fehler beim Laden des WebAssembly-Moduls. Versuche, einen anderen Browser zu verwenden.",
+  Lk = () => "Error al cargar el módulo WebAssembly. Intenta usar otro navegador.",
+  xk = () => "Erreur lors du chargement du module WebAssembly. Essayez d’utiliser un autre navigateur.",
+  zk = () => "Errore nel caricamento del modulo WebAssembly. Prova a usare un altro browser.",
+  Ck = () => "WebAssembly モジュールの読み込みに失敗しました。別のブラウザをお試しください。",
+  Mk = () => "Nie udało się załadować modułu WebAssembly. Spróbuj użyć innej przeglądarki.",
+  jk = () => "Ошибка при загрузке модуля WebAssembly. Попробуйте использовать другой браузер.",
+  Bk = () => "Не вдалося завантажити модуль WebAssembly. Спробуйте інший браузер.",
+  Fk = () => "Lỗi tải mô-đun WebAssembly. Hãy thử dùng trình duyệt khác.",
+  Uk = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? Ik() : e === "pt" ? Nk() : e === "ch" ? Dk() : e === "de" ? Pk() : e === "es" ? Lk() : e === "fr" ? xk() : e === "it" ? zk() : e === "jp" ? Ck() : e === "pl" ? Mk() : e === "ru" ? jk() : e === "uk" ? Bk() : Fk()
+  },
+  Gk = () => "You already have this item. Please refresh the page.",
+  qk = () => "Você já possui este item. Atualize a página.",
+  Wk = () => "你已经拥有此物品。请刷新页面。",
+  Vk = () => "Du besitzt dieses Item bereits. Bitte aktualisiere die Seite.",
+  Kk = () => "Ya tienes este ítem. Actualiza la página.",
+  Hk = () => "Vous possédez déjà cet objet. Actualisez la page.",
+  $k = () => "Possiedi già questo oggetto. Aggiorna la pagina.",
+  Xk = () => "このアイテムはすでに所持しています。ページを更新してください。",
+  Yk = () => "Masz już ten przedmiot. Odśwież stronę.",
+  Jk = () => "У вас уже есть этот предмет. Обновите страницу.",
+  Zk = () => "У вас уже є цей предмет. Оновіть сторінку.",
+  Qk = () => "Bạn đã sở hữu vật phẩm này. Hãy tải lại trang.",
   tr = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? Ik() : e === "pt" ? Nk() : e === "ch" ? Dk() : e === "de" ? Lk() : e === "es" ? Pk() : e === "fr" ? xk() : e === "it" ? zk() : e === "jp" ? Mk() : e === "pl" ? Ck() : e === "ru" ? jk() : e === "uk" ? Bk() : Fk()
+    const e = t.locale ?? g();
+    return e === "en" ? Gk() : e === "pt" ? qk() : e === "ch" ? Wk() : e === "de" ? Vk() : e === "es" ? Kk() : e === "fr" ? Hk() : e === "it" ? $k() : e === "jp" ? Xk() : e === "pl" ? Yk() : e === "ru" ? Jk() : e === "uk" ? Zk() : Qk()
   },
-  Uk = () => "You are already in an alliance",
-  Gk = () => "Você já está em uma aliança",
-  qk = () => "你已经在一个联盟中",
-  Wk = () => "Du bist bereits in einer Allianz",
-  Vk = () => "Ya estás en una alianza",
-  Kk = () => "Vous êtes déjà dans une alliance",
-  Hk = () => "Sei già in un'alleanza",
-  $k = () => "すでにアライアンスに所属しています。",
-  Xk = () => "Jesteś już w sojuszu",
-  Yk = () => "Вы уже состоите в альянсе",
-  Jk = () => "Ви вже перебуваєте в альянсі",
-  Zk = () => "Bạn đã ở trong một liên minh",
-  Qk = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? Uk() : e === "pt" ? Gk() : e === "ch" ? qk() : e === "de" ? Wk() : e === "es" ? Vk() : e === "fr" ? Kk() : e === "it" ? Hk() : e === "jp" ? $k() : e === "pl" ? Xk() : e === "ru" ? Yk() : e === "uk" ? Jk() : Zk()
-  },
-  eS = () => "You are not allowed to do this",
-  tS = () => "Você não tem permissão para fazer isso",
-  nS = () => "你无权执行此操作",
-  rS = () => "Du bist dazu nicht berechtigt",
-  oS = () => "No tienes permiso para hacer esto",
-  iS = () => "Vous n’êtes pas autorisé à faire cela",
-  aS = () => "Non hai il permesso di farlo",
-  sS = () => "この操作を行う権限がありません。",
-  cS = () => "Nie masz uprawnień, aby to zrobić",
-  uS = () => "У вас нет прав для этого действия",
-  lS = () => "Ви не маєте права це робити",
-  dS = () => "Bạn không có quyền làm việc này",
-  he = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+  eS = () => "You are already in an alliance",
+  tS = () => "Você já está em uma aliança",
+  nS = () => "你已经在一个联盟中",
+  rS = () => "Du bist bereits in einer Allianz",
+  oS = () => "Ya estás en una alianza",
+  iS = () => "Vous êtes déjà dans une alliance",
+  aS = () => "Sei già in un'alleanza",
+  sS = () => "すでにアライアンスに所属しています。",
+  cS = () => "Jesteś już w sojuszu",
+  uS = () => "Вы уже состоите в альянсе",
+  lS = () => "Ви вже перебуваєте в альянсі",
+  dS = () => "Bạn đã ở trong một liên minh",
+  _S = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
     return e === "en" ? eS() : e === "pt" ? tS() : e === "ch" ? nS() : e === "de" ? rS() : e === "es" ? oS() : e === "fr" ? iS() : e === "it" ? aS() : e === "jp" ? sS() : e === "pl" ? cS() : e === "ru" ? uS() : e === "uk" ? lS() : dS()
   },
-  _S = () => "You do not have enough Droplets to buy this item.",
-  fS = () => "Você não tem Droplets suficientes para comprar este item.",
-  pS = () => "你的 Droplets 不足，无法购买此物品。",
-  mS = () => "Du hast nicht genug Droplets, um dieses Item zu kaufen.",
-  hS = () => "No tienes suficientes Droplets para comprar este ítem.",
-  gS = () => "Vous n’avez pas assez de Droplets pour acheter cet objet.",
-  wS = () => "Non hai abbastanza Droplets per acquistare questo oggetto.",
-  yS = () => "このアイテムを購入するのに十分なDropletsがありません。",
-  bS = () => "Nie masz wystarczającej liczby Droplets, aby kupić ten przedmiot.",
-  vS = () => "У вас недостаточно Droplets для покупки этого предмета.",
-  ES = () => "У вас недостатньо Droplets, щоб купити цей предмет.",
-  TS = () => "Bạn không có đủ Droplets để mua vật phẩm này.",
+  fS = () => "You are not allowed to do this",
+  pS = () => "Você não tem permissão para fazer isso",
+  mS = () => "你无权执行此操作",
+  hS = () => "Du bist dazu nicht berechtigt",
+  gS = () => "No tienes permiso para hacer esto",
+  wS = () => "Vous n’êtes pas autorisé à faire cela",
+  yS = () => "Non hai il permesso di farlo",
+  bS = () => "この操作を行う権限がありません。",
+  vS = () => "Nie masz uprawnień, aby to zrobić",
+  ES = () => "У вас нет прав для этого действия",
+  TS = () => "Ви не маєте права це робити",
+  OS = () => "Bạn không có quyền làm việc này",
+  he = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? fS() : e === "pt" ? pS() : e === "ch" ? mS() : e === "de" ? hS() : e === "es" ? gS() : e === "fr" ? wS() : e === "it" ? yS() : e === "jp" ? bS() : e === "pl" ? vS() : e === "ru" ? ES() : e === "uk" ? TS() : OS()
+  },
+  kS = () => "You do not have enough Droplets to buy this item.",
+  SS = () => "Você não tem Droplets suficientes para comprar este item.",
+  AS = () => "你的 Droplets 不足，无法购买此物品。",
+  RS = () => "Du hast nicht genug Droplets, um dieses Item zu kaufen.",
+  IS = () => "No tienes suficientes Droplets para comprar este ítem.",
+  NS = () => "Vous n’avez pas assez de Droplets pour acheter cet objet.",
+  DS = () => "Non hai abbastanza Droplets per acquistare questo oggetto.",
+  PS = () => "このアイテムを購入するのに十分なDropletsがありません。",
+  LS = () => "Nie masz wystarczającej liczby Droplets, aby kupić ten przedmiot.",
+  xS = () => "У вас недостаточно Droplets для покупки этого предмета.",
+  zS = () => "У вас недостатньо Droplets, щоб купити цей предмет.",
+  CS = () => "Bạn không có đủ Droplets để mua vật phẩm này.",
   nr = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? _S() : e === "pt" ? fS() : e === "ch" ? pS() : e === "de" ? mS() : e === "es" ? hS() : e === "fr" ? gS() : e === "it" ? wS() : e === "jp" ? yS() : e === "pl" ? bS() : e === "ru" ? vS() : e === "uk" ? ES() : TS()
+    const e = t.locale ?? g();
+    return e === "en" ? kS() : e === "pt" ? SS() : e === "ch" ? AS() : e === "de" ? RS() : e === "es" ? IS() : e === "fr" ? NS() : e === "it" ? DS() : e === "jp" ? PS() : e === "pl" ? LS() : e === "ru" ? xS() : e === "uk" ? zS() : CS()
   },
-  OS = () => "You need to be logged in to paint",
-  kS = () => "Você precisa estar conectado para pintar",
-  SS = () => "你需要登录才能进行绘制",
-  AS = () => "Du musst eingeloggt sein, um zu malen",
-  RS = () => "Debes iniciar sesión para pintar",
-  IS = () => "Vous devez être connecté pour peindre",
-  NS = () => "Devi avere effettuato l'accesso per dipingere",
-  DS = () => "ペイントするにはログインが必要です。",
-  LS = () => "Musisz być zalogowany, aby malować",
-  PS = () => "Чтобы рисовать, нужно войти в аккаунт",
-  xS = () => "Щоб малювати, необхідно увійти в акаунт",
-  zS = () => "Bạn cần đăng nhập để tô",
+  MS = () => "You need to be logged in to paint",
+  jS = () => "Você precisa estar conectado para pintar",
+  BS = () => "你需要登录才能进行绘制",
+  FS = () => "Du musst eingeloggt sein, um zu malen",
+  US = () => "Debes iniciar sesión para pintar",
+  GS = () => "Vous devez être connecté pour peindre",
+  qS = () => "Devi avere effettuato l'accesso per dipingere",
+  WS = () => "ペイントするにはログインが必要です。",
+  VS = () => "Musisz być zalogowany, aby malować",
+  KS = () => "Чтобы рисовать, нужно войти в аккаунт",
+  HS = () => "Щоб малювати, необхідно увійти в акаунт",
+  $S = () => "Bạn cần đăng nhập để tô",
   rr = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? OS() : e === "pt" ? kS() : e === "ch" ? SS() : e === "de" ? AS() : e === "es" ? RS() : e === "fr" ? IS() : e === "it" ? NS() : e === "jp" ? DS() : e === "pl" ? LS() : e === "ru" ? PS() : e === "uk" ? xS() : zS()
+    const e = t.locale ?? g();
+    return e === "en" ? MS() : e === "pt" ? jS() : e === "ch" ? BS() : e === "de" ? FS() : e === "es" ? US() : e === "fr" ? GS() : e === "it" ? qS() : e === "jp" ? WS() : e === "pl" ? VS() : e === "ru" ? KS() : e === "uk" ? HS() : $S()
   },
-  MS = () => "You or someone in your network is making a lot of requests to the server. Try again later.",
-  CS = () => "Você ou alguém na sua rede está fazendo muitas solicitações ao servidor. Tente novamente mais tarde.",
-  jS = () => "你或与你同一网络中的某人向服务器发出了大量请求。请稍后再试。",
-  BS = () => "Du oder jemand in deinem Netzwerk sendet sehr viele Anfragen an den Server. Versuche es später erneut.",
-  FS = () => "Tú o alguien en tu red está realizando demasiadas solicitudes al servidor. Inténtalo de nuevo más tarde.",
-  US = () => "Vous ou quelqu’un sur votre réseau envoie beaucoup de requêtes au serveur. Réessayez plus tard.",
-  GS = () => "Tu o qualcuno nella tua rete state facendo troppe richieste al server. Riprova più tardi.",
-  qS = () => "あなた、または同じネットワーク上の誰かがサーバーへ大量のリクエストを送信しています。しばらくしてから再度お試しください。",
-  WS = () => "Ty lub ktoś w Twojej sieci wysyła zbyt wiele żądań do serwera. Spróbuj ponownie później.",
-  VS = () => "Вы или кто-то в вашей сети делает слишком много запросов к серверу. Попробуйте позже.",
-  KS = () => "Ви або хтось у вашій мережі надсилає надто багато запитів до сервера. Спробуйте пізніше.",
-  HS = () => "Bạn hoặc ai đó trong mạng của bạn đang gửi quá nhiều yêu cầu đến máy chủ. Hãy thử lại sau.",
-  $S = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? MS() : e === "pt" ? CS() : e === "ch" ? jS() : e === "de" ? BS() : e === "es" ? FS() : e === "fr" ? US() : e === "it" ? GS() : e === "jp" ? qS() : e === "pl" ? WS() : e === "ru" ? VS() : e === "uk" ? KS() : HS()
+  XS = () => "You or someone in your network is making a lot of requests to the server. Try again later.",
+  YS = () => "Você ou alguém na sua rede está fazendo muitas solicitações ao servidor. Tente novamente mais tarde.",
+  JS = () => "你或与你同一网络中的某人向服务器发出了大量请求。请稍后再试。",
+  ZS = () => "Du oder jemand in deinem Netzwerk sendet sehr viele Anfragen an den Server. Versuche es später erneut.",
+  QS = () => "Tú o alguien en tu red está realizando demasiadas solicitudes al servidor. Inténtalo de nuevo más tarde.",
+  eA = () => "Vous ou quelqu’un sur votre réseau envoie beaucoup de requêtes au serveur. Réessayez plus tard.",
+  tA = () => "Tu o qualcuno nella tua rete state facendo troppe richieste al server. Riprova più tardi.",
+  nA = () => "あなた、または同じネットワーク上の誰かがサーバーへ大量のリクエストを送信しています。しばらくしてから再度お試しください。",
+  rA = () => "Ty lub ktoś w Twojej sieci wysyła zbyt wiele żądań do serwera. Spróbuj ponownie później.",
+  oA = () => "Вы или кто-то в вашей сети делает слишком много запросов к серверу. Попробуйте позже.",
+  iA = () => "Ви або хтось у вашій мережі надсилає надто багато запитів до сервера. Спробуйте пізніше.",
+  aA = () => "Bạn hoặc ai đó trong mạng của bạn đang gửi quá nhiều yêu cầu đến máy chủ. Hãy thử lại sau.",
+  sA = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? XS() : e === "pt" ? YS() : e === "ch" ? JS() : e === "de" ? ZS() : e === "es" ? QS() : e === "fr" ? eA() : e === "it" ? tA() : e === "jp" ? nA() : e === "pl" ? rA() : e === "ru" ? oA() : e === "uk" ? iA() : aA()
   },
-  XS = n => `Your account has been suspended out until ${n.until}`,
-  YS = n => `A sua conta está suspensa até ${n.until}`,
-  JS = n => `你的账号已被暂停至 ${n.until}`,
-  ZS = n => `Dein Konto ist gesperrt bis ${n.until}`,
-  QS = n => `Tu cuenta ha sido suspendida hasta ${n.until}`,
-  eA = n => `Votre compte est suspendu jusqu’au ${n.until}`,
-  tA = n => `Il tuo account è sospeso fino al ${n.until}`,
-  nA = n => `あなたのアカウントは${n.until}まで一時停止されています。`,
-  rA = n => `Twoje konto zostało zawieszone do ${n.until}`,
-  oA = n => `Ваш аккаунт заблокирован до ${n.until}`,
-  iA = n => `Ваш акаунт призупинено до ${n.until}`,
-  aA = n => `Tài khoản của bạn đã bị đình chỉ đến ${n.until}`,
+  cA = n => `Your account has been suspended out until ${n.until}`,
+  uA = n => `A sua conta está suspensa até ${n.until}`,
+  lA = n => `你的账号已被暂停至 ${n.until}`,
+  dA = n => `Dein Konto ist gesperrt bis ${n.until}`,
+  _A = n => `Tu cuenta ha sido suspendida hasta ${n.until}`,
+  fA = n => `Votre compte est suspendu jusqu’au ${n.until}`,
+  pA = n => `Il tuo account è sospeso fino al ${n.until}`,
+  mA = n => `あなたのアカウントは${n.until}まで一時停止されています。`,
+  hA = n => `Twoje konto zostało zawieszone do ${n.until}`,
+  gA = n => `Ваш аккаунт заблокирован до ${n.until}`,
+  wA = n => `Ваш акаунт призупинено до ${n.until}`,
+  yA = n => `Tài khoản của bạn đã bị đình chỉ đến ${n.until}`,
   or = (n, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? XS(n) : e === "pt" ? YS(n) : e === "ch" ? JS(n) : e === "de" ? ZS(n) : e === "es" ? QS(n) : e === "fr" ? eA(n) : e === "it" ? tA(n) : e === "jp" ? nA(n) : e === "pl" ? rA(n) : e === "ru" ? oA(n) : e === "uk" ? iA(n) : aA(n)
+    const e = t.locale ?? g();
+    return e === "en" ? cA(n) : e === "pt" ? uA(n) : e === "ch" ? lA(n) : e === "de" ? dA(n) : e === "es" ? _A(n) : e === "fr" ? fA(n) : e === "it" ? pA(n) : e === "jp" ? mA(n) : e === "pl" ? hA(n) : e === "ru" ? gA(n) : e === "uk" ? wA(n) : yA(n)
   },
-  sA = () => "A correction is already pending for this ticket.",
-  cA = () => "Já existe uma correção pendente para este ticket.",
-  uA = () => "此工单已存在待审核的更正请求。",
-  lA = () => "Für dieses Ticket ist bereits eine Korrektur in Arbeit.",
-  dA = () => "Ya hay una corrección pendiente para este ticket.",
-  _A = () => "Une correction est déjà en attente pour ce ticket.",
-  fA = () => "Una correzione è già in sospeso per questo ticket.",
-  pA = () => "このチケットには未処理の修正があります。",
-  mA = () => "Dla tego zgłoszenia istnieje już oczekująca prośba o poprawkę.",
-  hA = () => "Для этого тикета уже есть запрос на исправление.",
-  gA = () => "Для цього тікета вже є запит на перевірці.",
-  wA = () => "Đã có yêu cầu sửa đang chờ cho ticket này.",
-  yA = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? sA() : e === "pt" ? cA() : e === "ch" ? uA() : e === "de" ? lA() : e === "es" ? dA() : e === "fr" ? _A() : e === "it" ? fA() : e === "jp" ? pA() : e === "pl" ? mA() : e === "ru" ? hA() : e === "uk" ? gA() : wA()
-  },
-  bA = () => "You cannot review your own correction request.",
-  vA = () => "Você não pode revisar sua própria solicitação de correção.",
-  EA = () => "不能审核自己提交的更正请求。",
-  TA = () => "Du kannst deine eigene Korrekturanfrage nicht prüfen.",
-  OA = () => "No puedes revisar tu propia solicitud de corrección.",
-  kA = () => "Tu ne peux pas examiner ta propre demande de correction.",
-  SA = () => "Non puoi revisionare la tua stessa richiesta di correzione.",
-  AA = () => "自分のリクエストはレビューできません。",
-  RA = () => "Nie możesz zweryfikować własnej prośby o poprawkę.",
-  IA = () => "Нельзя рассматривать собственный запрос.",
-  NA = () => "Не можна перевіряти власний запит.",
-  DA = () => "Bạn không thể duyệt yêu cầu của chính mình.",
-  LA = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
+  bA = () => "A correction is already pending for this ticket.",
+  vA = () => "Já existe uma correção pendente para este ticket.",
+  EA = () => "此工单已存在待审核的更正请求。",
+  TA = () => "Für dieses Ticket ist bereits eine Korrektur in Arbeit.",
+  OA = () => "Ya hay una corrección pendiente para este ticket.",
+  kA = () => "Une correction est déjà en attente pour ce ticket.",
+  SA = () => "Una correzione è già in sospeso per questo ticket.",
+  AA = () => "このチケットには未処理の修正があります。",
+  RA = () => "Dla tego zgłoszenia istnieje już oczekująca prośba o poprawkę.",
+  IA = () => "Для этого тикета уже есть запрос на исправление.",
+  NA = () => "Для цього тікета вже є запит на перевірці.",
+  DA = () => "Đã có yêu cầu sửa đang chờ cho ticket này.",
+  PA = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
     return e === "en" ? bA() : e === "pt" ? vA() : e === "ch" ? EA() : e === "de" ? TA() : e === "es" ? OA() : e === "fr" ? kA() : e === "it" ? SA() : e === "jp" ? AA() : e === "pl" ? RA() : e === "ru" ? IA() : e === "uk" ? NA() : DA()
   },
-  PA = () => "This correction has already been reviewed.",
-  xA = () => "Esta correção já foi revisada.",
-  zA = () => "此请求已被审核。",
-  MA = () => "Diese Korrektur wurde bereits geprüft.",
-  CA = () => "Esta corrección ya ha sido revisada.",
-  jA = () => "Cette correction a déjà été examinée.",
-  BA = () => "Questa correzione è già stata revisionata.",
-  FA = () => "このリクエストはすでにレビュー済みです。",
-  UA = () => "Ta prośba została już rozpatrzona.",
-  GA = () => "Этот запрос уже рассмотрен.",
-  qA = () => "Цей запит вже перевірено.",
-  WA = () => "Yêu cầu này đã được duyệt.",
+  LA = () => "You cannot review your own correction request.",
+  xA = () => "Você não pode revisar sua própria solicitação de correção.",
+  zA = () => "不能审核自己提交的更正请求。",
+  CA = () => "Du kannst deine eigene Korrekturanfrage nicht prüfen.",
+  MA = () => "No puedes revisar tu propia solicitud de corrección.",
+  jA = () => "Tu ne peux pas examiner ta propre demande de correction.",
+  BA = () => "Non puoi revisionare la tua stessa richiesta di correzione.",
+  FA = () => "自分のリクエストはレビューできません。",
+  UA = () => "Nie możesz zweryfikować własnej prośby o poprawkę.",
+  GA = () => "Нельзя рассматривать собственный запрос.",
+  qA = () => "Не можна перевіряти власний запит.",
+  WA = () => "Bạn không thể duyệt yêu cầu của chính mình.",
   VA = (n = {}, t = {}) => {
-    const e = t.locale ?? w();
-    return e === "en" ? PA() : e === "pt" ? xA() : e === "ch" ? zA() : e === "de" ? MA() : e === "es" ? CA() : e === "fr" ? jA() : e === "it" ? BA() : e === "jp" ? FA() : e === "pl" ? UA() : e === "ru" ? GA() : e === "uk" ? qA() : WA()
+    const e = t.locale ?? g();
+    return e === "en" ? LA() : e === "pt" ? xA() : e === "ch" ? zA() : e === "de" ? CA() : e === "es" ? MA() : e === "fr" ? jA() : e === "it" ? BA() : e === "jp" ? FA() : e === "pl" ? UA() : e === "ru" ? GA() : e === "uk" ? qA() : WA()
+  },
+  KA = () => "This correction has already been reviewed.",
+  HA = () => "Esta correção já foi revisada.",
+  $A = () => "此请求已被审核。",
+  XA = () => "Diese Korrektur wurde bereits geprüft.",
+  YA = () => "Esta corrección ya ha sido revisada.",
+  JA = () => "Cette correction a déjà été examinée.",
+  ZA = () => "Questa correzione è già stata revisionata.",
+  QA = () => "このリクエストはすでにレビュー済みです。",
+  eR = () => "Ta prośba została już rozpatrzona.",
+  tR = () => "Этот запрос уже рассмотрен.",
+  nR = () => "Цей запит вже перевірено.",
+  rR = () => "Yêu cầu này đã được duyệt.",
+  oR = (n = {}, t = {}) => {
+    const e = t.locale ?? g();
+    return e === "en" ? KA() : e === "pt" ? HA() : e === "ch" ? $A() : e === "de" ? XA() : e === "es" ? YA() : e === "fr" ? JA() : e === "it" ? ZA() : e === "jp" ? QA() : e === "pl" ? eR() : e === "ru" ? tR() : e === "uk" ? nR() : rR()
   },
   Qt = {
+    insufficient_context: eg(),
+    no_rule_violation: Zg(),
+    not_enough_for_punishment: Ow(),
+    caused_by_glitch: Rh(),
+    out_of_scope: Yw(),
+    invalid_information: Sg(),
+    allowed_by_event: nh(),
+    already_handled: Nm()
+  },
+  dI = {
     insufficient_context: Uh(),
     no_rule_violation: Bg(),
     not_enough_for_punishment: dw(),
     caused_by_glitch: mh(),
-    out_of_scope: Cw(),
+    out_of_scope: Mw(),
     invalid_information: fg(),
     allowed_by_event: qm(),
     already_handled: gm()
   },
-  ZR = {
-    insufficient_context: Rh(),
-    no_rule_violation: Sg(),
-    not_enough_for_punishment: Zg(),
-    caused_by_glitch: nh(),
-    out_of_scope: Ow(),
-    invalid_information: eg(),
-    allowed_by_event: Nm(),
-    already_handled: om()
-  },
-  QR = Object.keys(Qt).map(n => ({
+  _I = Object.keys(Qt).map(n => ({
     value: n,
     label: Qt[n]
   }));
 
-function eI(n) {
+function fI(n) {
   return n in Qt
 }
 var c = (n => (n[n.CONTINUE = 100] = "CONTINUE", n[n.SWITCHING_PROTOCOLS = 101] = "SWITCHING_PROTOCOLS", n[n.PROCESSING = 102] = "PROCESSING", n[n.EARLY_HINTS = 103] = "EARLY_HINTS", n[n.OK = 200] = "OK", n[n.CREATED = 201] = "CREATED", n[n.ACCEPTED = 202] = "ACCEPTED", n[n.NON_AUTHORITATIVE_INFORMATION = 203] = "NON_AUTHORITATIVE_INFORMATION", n[n.NO_CONTENT = 204] = "NO_CONTENT", n[n.RESET_CONTENT = 205] = "RESET_CONTENT", n[n.PARTIAL_CONTENT = 206] = "PARTIAL_CONTENT", n[n.MULTI_STATUS = 207] = "MULTI_STATUS", n[n.ALREADY_REPORTED = 208] = "ALREADY_REPORTED", n[n.IM_USED = 226] = "IM_USED", n[n.MULTIPLE_CHOICES = 300] = "MULTIPLE_CHOICES", n[n.MOVED_PERMANENTLY = 301] = "MOVED_PERMANENTLY", n[n.MOVED_TEMPORARILY = 302] = "MOVED_TEMPORARILY", n[n.FOUND = 302] = "FOUND", n[n.SEE_OTHER = 303] = "SEE_OTHER", n[n.NOT_MODIFIED = 304] = "NOT_MODIFIED", n[n.USE_PROXY = 305] = "USE_PROXY", n[n.SWITCH_PROXY = 306] = "SWITCH_PROXY", n[n.TEMPORARY_REDIRECT = 307] = "TEMPORARY_REDIRECT", n[n.PERMANENT_REDIRECT = 308] = "PERMANENT_REDIRECT", n[n.BAD_REQUEST = 400] = "BAD_REQUEST", n[n.UNAUTHORIZED = 401] = "UNAUTHORIZED", n[n.PAYMENT_REQUIRED = 402] = "PAYMENT_REQUIRED", n[n.FORBIDDEN = 403] = "FORBIDDEN", n[n.NOT_FOUND = 404] = "NOT_FOUND", n[n.METHOD_NOT_ALLOWED = 405] = "METHOD_NOT_ALLOWED", n[n.NOT_ACCEPTABLE = 406] = "NOT_ACCEPTABLE", n[n.PROXY_AUTHENTICATION_REQUIRED = 407] = "PROXY_AUTHENTICATION_REQUIRED", n[n.REQUEST_TIMEOUT = 408] = "REQUEST_TIMEOUT", n[n.CONFLICT = 409] = "CONFLICT", n[n.GONE = 410] = "GONE", n[n.LENGTH_REQUIRED = 411] = "LENGTH_REQUIRED", n[n.PRECONDITION_FAILED = 412] = "PRECONDITION_FAILED", n[n.REQUEST_TOO_LONG = 413] = "REQUEST_TOO_LONG", n[n.CONTENT_TOO_LARGE = 413] = "CONTENT_TOO_LARGE", n[n.REQUEST_URI_TOO_LONG = 414] = "REQUEST_URI_TOO_LONG", n[n.URI_TOO_LONG = 414] = "URI_TOO_LONG", n[n.UNSUPPORTED_MEDIA_TYPE = 415] = "UNSUPPORTED_MEDIA_TYPE", n[n.REQUESTED_RANGE_NOT_SATISFIABLE = 416] = "REQUESTED_RANGE_NOT_SATISFIABLE", n[n.RANGE_NOT_SATISFIABLE = 416] = "RANGE_NOT_SATISFIABLE", n[n.EXPECTATION_FAILED = 417] = "EXPECTATION_FAILED", n[n.IM_A_TEAPOT = 418] = "IM_A_TEAPOT", n[n.INSUFFICIENT_SPACE_ON_RESOURCE = 419] = "INSUFFICIENT_SPACE_ON_RESOURCE", n[n.MISDIRECTED_REQUEST = 421] = "MISDIRECTED_REQUEST", n[n.UNPROCESSABLE_ENTITY = 422] = "UNPROCESSABLE_ENTITY", n[n.UNPROCESSABLE_CONTENT = 422] = "UNPROCESSABLE_CONTENT", n[n.LOCKED = 423] = "LOCKED", n[n.FAILED_DEPENDENCY = 424] = "FAILED_DEPENDENCY", n[n.TOO_EARLY = 425] = "TOO_EARLY", n[n.UPGRADE_REQUIRED = 426] = "UPGRADE_REQUIRED", n[n.PRECONDITION_REQUIRED = 428] = "PRECONDITION_REQUIRED", n[n.TOO_MANY_REQUESTS = 429] = "TOO_MANY_REQUESTS", n[n.REQUEST_HEADER_FIELDS_TOO_LARGE = 431] = "REQUEST_HEADER_FIELDS_TOO_LARGE", n[n.UNAVAILABLE_FOR_LEGAL_REASONS = 451] = "UNAVAILABLE_FOR_LEGAL_REASONS", n[n.INTERNAL_SERVER_ERROR = 500] = "INTERNAL_SERVER_ERROR", n[n.NOT_IMPLEMENTED = 501] = "NOT_IMPLEMENTED", n[n.BAD_GATEWAY = 502] = "BAD_GATEWAY", n[n.SERVICE_UNAVAILABLE = 503] = "SERVICE_UNAVAILABLE", n[n.GATEWAY_TIMEOUT = 504] = "GATEWAY_TIMEOUT", n[n.HTTP_VERSION_NOT_SUPPORTED = 505] = "HTTP_VERSION_NOT_SUPPORTED", n[n.VARIANT_ALSO_NEGOTIATES = 506] = "VARIANT_ALSO_NEGOTIATES", n[n.INSUFFICIENT_STORAGE = 507] = "INSUFFICIENT_STORAGE", n[n.LOOP_DETECTED = 508] = "LOOP_DETECTED", n[n.NOT_EXTENDED = 510] = "NOT_EXTENDED", n[n.NETWORK_AUTHENTICATION_REQUIRED = 511] = "NETWORK_AUTHENTICATION_REQUIRED", n[n.AWS_ELB_000 = 0] = "AWS_ELB_000", n[n.THIS_IS_FINE = 218] = "THIS_IS_FINE", n[n.PAGE_EXPIRED = 419] = "PAGE_EXPIRED", n[n.METHOD_FAILURE = 420] = "METHOD_FAILURE", n[n.ENHANCE_YOUR_CALM = 420] = "ENHANCE_YOUR_CALM", n[n.REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY = 430] = "REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY", n[n.SHOPIFY_SECURITY_REJECTION = 430] = "SHOPIFY_SECURITY_REJECTION", n[n.LOGIN_TIME_OUT = 440] = "LOGIN_TIME_OUT", n[n.NO_RESPONSE = 444] = "NO_RESPONSE", n[n.RETRY_WITH = 449] = "RETRY_WITH", n[n.BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS = 450] = "BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS", n[n.REDIRECT_IIS = 451] = "REDIRECT_IIS", n[n.CLIENT_CLOSED_CONNECTION_AWS_ELB = 460] = "CLIENT_CLOSED_CONNECTION_AWS_ELB", n[n.X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB = 463] = "X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB", n[n.INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB = 464] = "INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB", n[n.REQUEST_HEADER_TOO_LARGE = 494] = "REQUEST_HEADER_TOO_LARGE", n[n.SSL_CERTIFICATE_ERROR = 495] = "SSL_CERTIFICATE_ERROR", n[n.SSL_CERTIFICATE_REQUIRED = 496] = "SSL_CERTIFICATE_REQUIRED", n[n.HTTP_REQUEST_SENT_TO_HTTPS_PORT = 497] = "HTTP_REQUEST_SENT_TO_HTTPS_PORT", n[n.INVALID_TOKEN = 498] = "INVALID_TOKEN", n[n.CLIENT_CLOSED_REQUEST = 499] = "CLIENT_CLOSED_REQUEST", n[n.TOKEN_REQUIRED = 499] = "TOKEN_REQUIRED", n[n.BANDWIDTH_LIMIT_EXCEEDED = 509] = "BANDWIDTH_LIMIT_EXCEEDED", n[n.RESOURCE_LIMIT_IS_REACHED = 508] = "RESOURCE_LIMIT_IS_REACHED", n[n.WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR = 520] = "WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR", n[n.WEB_SERVER_IS_DOWN = 521] = "WEB_SERVER_IS_DOWN", n[n.CONNECTION_TIMED_OUT = 522] = "CONNECTION_TIMED_OUT", n[n.ORIGIN_IS_UNREACHABLE = 523] = "ORIGIN_IS_UNREACHABLE", n[n.A_TIMEOUT_OCCURRED = 524] = "A_TIMEOUT_OCCURRED", n[n.SSL_HANDSHAKE_FAILED = 525] = "SSL_HANDSHAKE_FAILED", n[n.INVALID_SSL_CERTIFICATE = 526] = "INVALID_SSL_CERTIFICATE", n[n.RAILGUN_ERROR = 527] = "RAILGUN_ERROR", n[n.SITE_IS_OVERLOADED = 529] = "SITE_IS_OVERLOADED", n[n.ORIGIN_UNAVAILABLE = 530] = "ORIGIN_UNAVAILABLE", n[n.ORIGIN_DNS_ERROR = 530] = "ORIGIN_DNS_ERROR", n[n.SITE_IS_FROZEN = 530] = "SITE_IS_FROZEN", n[n.TEMPORARILY_DISABLED = 540] = "TEMPORARILY_DISABLED", n[n.UNAUTHORIZED_AWS_ELB = 561] = "UNAUTHORIZED_AWS_ELB", n[n.NETWORK_READ_TIMEOUT_ERROR = 598] = "NETWORK_READ_TIMEOUT_ERROR", n[n.NETWORK_CONNECT_TIMEOUT_ERROR = 599] = "NETWORK_CONNECT_TIMEOUT_ERROR", n[n.UNEXPECTED_TOKEN = 783] = "UNEXPECTED_TOKEN", n[n.REQUEST_DENIED = 999] = "REQUEST_DENIED", n))(c || {});
@@ -5477,7 +5493,7 @@ const _e = {
   second: 1e3
 };
 
-function tI(n) {
+function pI(n) {
   const t = Math.floor(n / _e.hour);
   n -= t * _e.hour;
   const e = Math.floor(n / _e.minute);
@@ -5486,7 +5502,7 @@ function tI(n) {
   return t > 0 ? `${t}:${e.toString().padStart(2,"0")}:${o}` : `${e}:${o}`
 }
 
-function nI(n) {
+function mI(n) {
   const t = n.getFullYear(),
     e = String(n.getMonth() + 1).padStart(2, "0"),
     r = String(n.getDate()).padStart(2, "0"),
@@ -5495,25 +5511,25 @@ function nI(n) {
     a = String(n.getSeconds()).padStart(2, "0");
   return `${t}-${e}-${r} ${o}:${i}:${a}`
 }
-const rI = {
-    griefing: ap(),
-    "multi-accounting": Gv(),
-    "hate-speech": Lp(),
-    bot: Vu(),
-    doxxing: u_(),
-    "inappropriate-content": Yw(),
-    other: gl()
-  },
-  oI = {
-    doxxing: E_(),
-    "hate-speech": Vp(),
+const hI = {
     griefing: yp(),
     "multi-accounting": tE(),
+    "hate-speech": Vp(),
     bot: ol(),
+    doxxing: E_(),
     "inappropriate-content": uy(),
     other: Nl()
   },
-  iI = {
+  gI = {
+    doxxing: z_(),
+    "hate-speech": om(),
+    griefing: Pp(),
+    "multi-accounting": pE(),
+    bot: gl(),
+    "inappropriate-content": Ey(),
+    other: ql()
+  },
+  wI = {
     doxxing: "text-red-600",
     "hate-speech": "text-red-400",
     "inappropriate-content": "text-amber-500",
@@ -5531,7 +5547,7 @@ const rI = {
     other: 5,
     griefing: 6
   },
-  aI = {
+  yI = {
     griefing: "topic-2",
     "inappropriate-content": "topic-1",
     bot: "topic-3",
@@ -5540,21 +5556,21 @@ const rI = {
     doxxing: "topic-1",
     other: ""
   },
-  KA = 365 * _e.day;
+  iR = 365 * _e.day;
 
-function Pr(n) {
+function Lr(n) {
   if (!n) return null;
   const e = (n instanceof Date ? n : new Date(n)).getTime();
   return Number.isFinite(e) ? e : null
 }
 
-function sI(n, t = Date.now()) {
-  const e = Pr(n);
-  return e === null ? !1 : e - t >= KA
+function bI(n, t = Date.now()) {
+  const e = Lr(n);
+  return e === null ? !1 : e - t >= iR
 }
 
-function cI(n, t = Date.now()) {
-  const e = Pr(n);
+function vI(n, t = Date.now()) {
+  const e = Lr(n);
   if (e === null || e <= t) return {
     days: 0,
     hours: 0,
@@ -5570,13 +5586,13 @@ function cI(n, t = Date.now()) {
     minutes: a
   }
 }
-const HA = [{
+const aR = [{
     tileSize: 1e3,
     zoom: 11
   }],
-  $A = 4,
-  XA = 6e3,
-  YA = [{
+  sR = 4,
+  cR = 6e3,
+  uR = [{
     name: "Transparent",
     rgb: [0, 0, 0]
   }, {
@@ -5769,7 +5785,7 @@ const HA = [{
     name: "Light Stone",
     rgb: [205, 197, 158]
   }],
-  JA = {
+  lR = {
     android: {
       googlePlayBilling: {
         price: 1.2
@@ -5777,7 +5793,7 @@ const HA = [{
       appName: "live.wplace.twa"
     }
   },
-  ZA = {
+  dR = {
     10: {
       name: "25,000 Droplets",
       price: 500,
@@ -5908,8 +5924,8 @@ const HA = [{
       }]
     }
   },
-  QA = JSON.parse(`[{"id":1,"name":"Afghanistan","code":"AF","flag":"🇦🇫"},{"id":2,"name":"Albania","code":"AL","flag":"🇦🇱"},{"id":3,"name":"Algeria","code":"DZ","flag":"🇩🇿"},{"id":4,"name":"American Samoa","code":"AS","flag":"🇦🇸"},{"id":5,"name":"Andorra","code":"AD","flag":"🇦🇩"},{"id":6,"name":"Angola","code":"AO","flag":"🇦🇴"},{"id":7,"name":"Anguilla","code":"AI","flag":"🇦🇮"},{"id":8,"name":"Antarctica","code":"AQ","flag":"🇦🇶"},{"id":9,"name":"Antigua and Barbuda","code":"AG","flag":"🇦🇬"},{"id":10,"name":"Argentina","code":"AR","flag":"🇦🇷"},{"id":11,"name":"Armenia","code":"AM","flag":"🇦🇲"},{"id":12,"name":"Aruba","code":"AW","flag":"🇦🇼"},{"id":13,"name":"Australia","code":"AU","flag":"🇦🇺"},{"id":14,"name":"Austria","code":"AT","flag":"🇦🇹"},{"id":15,"name":"Azerbaijan","code":"AZ","flag":"🇦🇿"},{"id":16,"name":"Bahamas","code":"BS","flag":"🇧🇸"},{"id":17,"name":"Bahrain","code":"BH","flag":"🇧🇭"},{"id":18,"name":"Bangladesh","code":"BD","flag":"🇧🇩"},{"id":19,"name":"Barbados","code":"BB","flag":"🇧🇧"},{"id":20,"name":"Belarus","code":"BY","flag":"🇧🇾"},{"id":21,"name":"Belgium","code":"BE","flag":"🇧🇪"},{"id":22,"name":"Belize","code":"BZ","flag":"🇧🇿"},{"id":23,"name":"Benin","code":"BJ","flag":"🇧🇯"},{"id":24,"name":"Bermuda","code":"BM","flag":"🇧🇲"},{"id":25,"name":"Bhutan","code":"BT","flag":"🇧🇹"},{"id":26,"name":"Bolivia","code":"BO","flag":"🇧🇴"},{"id":27,"name":"Bonaire","code":"BQ","flag":"🇧🇶"},{"id":28,"name":"Bosnia and Herzegovina","code":"BA","flag":"🇧🇦"},{"id":29,"name":"Botswana","code":"BW","flag":"🇧🇼"},{"id":30,"name":"Bouvet Island","code":"BV","flag":"🇧🇻"},{"id":31,"name":"Brazil","code":"BR","flag":"🇧🇷"},{"id":32,"name":"British Indian Ocean Territory","code":"IO","flag":"🇮🇴"},{"id":33,"name":"Brunei Darussalam","code":"BN","flag":"🇧🇳"},{"id":34,"name":"Bulgaria","code":"BG","flag":"🇧🇬"},{"id":35,"name":"Burkina Faso","code":"BF","flag":"🇧🇫"},{"id":36,"name":"Burundi","code":"BI","flag":"🇧🇮"},{"id":37,"name":"Cabo Verde","code":"CV","flag":"🇨🇻"},{"id":38,"name":"Cambodia","code":"KH","flag":"🇰🇭"},{"id":39,"name":"Cameroon","code":"CM","flag":"🇨🇲"},{"id":40,"name":"Canada","code":"CA","flag":"🇨🇦"},{"id":41,"name":"Cayman Islands","code":"KY","flag":"🇰🇾"},{"id":42,"name":"Central African Republic","code":"CF","flag":"🇨🇫"},{"id":43,"name":"Chad","code":"TD","flag":"🇹🇩"},{"id":44,"name":"Chile","code":"CL","flag":"🇨🇱"},{"id":45,"name":"China","code":"CN","flag":"🇨🇳"},{"id":46,"name":"Christmas Island","code":"CX","flag":"🇨🇽"},{"id":47,"name":"Cocos (Keeling) Islands","code":"CC","flag":"🇨🇨"},{"id":48,"name":"Colombia","code":"CO","flag":"🇨🇴"},{"id":49,"name":"Comoros","code":"KM","flag":"🇰🇲"},{"id":50,"name":"Congo","code":"CG","flag":"🇨🇬"},{"id":51,"name":"Cook Islands","code":"CK","flag":"🇨🇰"},{"id":52,"name":"Costa Rica","code":"CR","flag":"🇨🇷"},{"id":53,"name":"Croatia","code":"HR","flag":"🇭🇷"},{"id":54,"name":"Cuba","code":"CU","flag":"🇨🇺"},{"id":55,"name":"Curaçao","code":"CW","flag":"🇨🇼"},{"id":56,"name":"Cyprus","code":"CY","flag":"🇨🇾"},{"id":57,"name":"Czechia","code":"CZ","flag":"🇨🇿"},{"id":58,"name":"Côte d'Ivoire","code":"CI","flag":"🇨🇮"},{"id":59,"name":"Denmark","code":"DK","flag":"🇩🇰"},{"id":60,"name":"Djibouti","code":"DJ","flag":"🇩🇯"},{"id":61,"name":"Dominica","code":"DM","flag":"🇩🇲"},{"id":62,"name":"Dominican Republic","code":"DO","flag":"🇩🇴"},{"id":63,"name":"Ecuador","code":"EC","flag":"🇪🇨"},{"id":64,"name":"Egypt","code":"EG","flag":"🇪🇬"},{"id":65,"name":"El Salvador","code":"SV","flag":"🇸🇻"},{"id":66,"name":"Equatorial Guinea","code":"GQ","flag":"🇬🇶"},{"id":67,"name":"Eritrea","code":"ER","flag":"🇪🇷"},{"id":68,"name":"Estonia","code":"EE","flag":"🇪🇪"},{"id":69,"name":"Eswatini","code":"SZ","flag":"🇸🇿"},{"id":70,"name":"Ethiopia","code":"ET","flag":"🇪🇹"},{"id":71,"name":"Falkland Islands (Malvinas)","code":"FK","flag":"🇫🇰"},{"id":72,"name":"Faroe Islands","code":"FO","flag":"🇫🇴"},{"id":73,"name":"Fiji","code":"FJ","flag":"🇫🇯"},{"id":74,"name":"Finland","code":"FI","flag":"🇫🇮"},{"id":75,"name":"France","code":"FR","flag":"🇫🇷"},{"id":76,"name":"French Guiana","code":"GF","flag":"🇬🇫"},{"id":77,"name":"French Polynesia","code":"PF","flag":"🇵🇫"},{"id":78,"name":"French Southern Territories","code":"TF","flag":"🇹🇫"},{"id":79,"name":"Gabon","code":"GA","flag":"🇬🇦"},{"id":80,"name":"Gambia","code":"GM","flag":"🇬🇲"},{"id":81,"name":"Georgia","code":"GE","flag":"🇬🇪"},{"id":82,"name":"Germany","code":"DE","flag":"🇩🇪"},{"id":83,"name":"Ghana","code":"GH","flag":"🇬🇭"},{"id":84,"name":"Gibraltar","code":"GI","flag":"🇬🇮"},{"id":85,"name":"Greece","code":"GR","flag":"🇬🇷"},{"id":86,"name":"Greenland","code":"GL","flag":"🇬🇱"},{"id":87,"name":"Grenada","code":"GD","flag":"🇬🇩"},{"id":88,"name":"Guadeloupe","code":"GP","flag":"🇬🇵"},{"id":89,"name":"Guam","code":"GU","flag":"🇬🇺"},{"id":90,"name":"Guatemala","code":"GT","flag":"🇬🇹"},{"id":91,"name":"Guernsey","code":"GG","flag":"🇬🇬"},{"id":92,"name":"Guinea","code":"GN","flag":"🇬🇳"},{"id":93,"name":"Guinea-Bissau","code":"GW","flag":"🇬🇼"},{"id":94,"name":"Guyana","code":"GY","flag":"🇬🇾"},{"id":95,"name":"Haiti","code":"HT","flag":"🇭🇹"},{"id":96,"name":"Heard Island and McDonald Islands","code":"HM","flag":"🇭🇲"},{"id":97,"name":"Honduras","code":"HN","flag":"🇭🇳"},{"id":98,"name":"Hong Kong","code":"HK","flag":"🇭🇰"},{"id":99,"name":"Hungary","code":"HU","flag":"🇭🇺"},{"id":100,"name":"Iceland","code":"IS","flag":"🇮🇸"},{"id":101,"name":"India","code":"IN","flag":"🇮🇳"},{"id":102,"name":"Indonesia","code":"ID","flag":"🇮🇩"},{"id":103,"name":"Iran","code":"IR","flag":"🇮🇷"},{"id":104,"name":"Iraq","code":"IQ","flag":"🇮🇶"},{"id":105,"name":"Ireland","code":"IE","flag":"🇮🇪"},{"id":106,"name":"Isle of Man","code":"IM","flag":"🇮🇲"},{"id":107,"name":"Israel","code":"IL","flag":"🇮🇱"},{"id":108,"name":"Italy","code":"IT","flag":"🇮🇹"},{"id":109,"name":"Jamaica","code":"JM","flag":"🇯🇲"},{"id":110,"name":"Japan","code":"JP","flag":"🇯🇵"},{"id":111,"name":"Jersey","code":"JE","flag":"🇯🇪"},{"id":112,"name":"Jordan","code":"JO","flag":"🇯🇴"},{"id":113,"name":"Kazakhstan","code":"KZ","flag":"🇰🇿"},{"id":114,"name":"Kenya","code":"KE","flag":"🇰🇪"},{"id":115,"name":"Kiribati","code":"KI","flag":"🇰🇮"},{"id":116,"name":"Kosovo","code":"XK","flag":"🇽🇰"},{"id":117,"name":"Kuwait","code":"KW","flag":"🇰🇼"},{"id":118,"name":"Kyrgyzstan","code":"KG","flag":"🇰🇬"},{"id":119,"name":"Laos","code":"LA","flag":"🇱🇦"},{"id":120,"name":"Latvia","code":"LV","flag":"🇱🇻"},{"id":121,"name":"Lebanon","code":"LB","flag":"🇱🇧"},{"id":122,"name":"Lesotho","code":"LS","flag":"🇱🇸"},{"id":123,"name":"Liberia","code":"LR","flag":"🇱🇷"},{"id":124,"name":"Libya","code":"LY","flag":"🇱🇾"},{"id":125,"name":"Liechtenstein","code":"LI","flag":"🇱🇮"},{"id":126,"name":"Lithuania","code":"LT","flag":"🇱🇹"},{"id":127,"name":"Luxembourg","code":"LU","flag":"🇱🇺"},{"id":128,"name":"Macao","code":"MO","flag":"🇲🇴"},{"id":129,"name":"Madagascar","code":"MG","flag":"🇲🇬"},{"id":130,"name":"Malawi","code":"MW","flag":"🇲🇼"},{"id":131,"name":"Malaysia","code":"MY","flag":"🇲🇾"},{"id":132,"name":"Maldives","code":"MV","flag":"🇲🇻"},{"id":133,"name":"Mali","code":"ML","flag":"🇲🇱"},{"id":134,"name":"Malta","code":"MT","flag":"🇲🇹"},{"id":135,"name":"Marshall Islands","code":"MH","flag":"🇲🇭"},{"id":136,"name":"Martinique","code":"MQ","flag":"🇲🇶"},{"id":137,"name":"Mauritania","code":"MR","flag":"🇲🇷"},{"id":138,"name":"Mauritius","code":"MU","flag":"🇲🇺"},{"id":139,"name":"Mayotte","code":"YT","flag":"🇾🇹"},{"id":140,"name":"Mexico","code":"MX","flag":"🇲🇽"},{"id":141,"name":"Micronesia","code":"FM","flag":"🇫🇲"},{"id":142,"name":"Moldova","code":"MD","flag":"🇲🇩"},{"id":143,"name":"Monaco","code":"MC","flag":"🇲🇨"},{"id":144,"name":"Mongolia","code":"MN","flag":"🇲🇳"},{"id":145,"name":"Montenegro","code":"ME","flag":"🇲🇪"},{"id":146,"name":"Montserrat","code":"MS","flag":"🇲🇸"},{"id":147,"name":"Morocco","code":"MA","flag":"🇲🇦"},{"id":148,"name":"Mozambique","code":"MZ","flag":"🇲🇿"},{"id":149,"name":"Myanmar","code":"MM","flag":"🇲🇲"},{"id":150,"name":"Namibia","code":"NA","flag":"🇳🇦"},{"id":151,"name":"Nauru","code":"NR","flag":"🇳🇷"},{"id":152,"name":"Nepal","code":"NP","flag":"🇳🇵"},{"id":153,"name":"Netherlands","code":"NL","flag":"🇳🇱"},{"id":154,"name":"New Caledonia","code":"NC","flag":"🇳🇨"},{"id":155,"name":"New Zealand","code":"NZ","flag":"🇳🇿"},{"id":156,"name":"Nicaragua","code":"NI","flag":"🇳🇮"},{"id":157,"name":"Niger","code":"NE","flag":"🇳🇪"},{"id":158,"name":"Nigeria","code":"NG","flag":"🇳🇬"},{"id":159,"name":"Niue","code":"NU","flag":"🇳🇺"},{"id":160,"name":"Norfolk Island","code":"NF","flag":"🇳🇫"},{"id":161,"name":"North Korea","code":"KP","flag":"🇰🇵"},{"id":162,"name":"North Macedonia","code":"MK","flag":"🇲🇰"},{"id":163,"name":"Northern Mariana Islands","code":"MP","flag":"🇲🇵"},{"id":164,"name":"Norway","code":"NO","flag":"🇳🇴"},{"id":165,"name":"Oman","code":"OM","flag":"🇴🇲"},{"id":166,"name":"Pakistan","code":"PK","flag":"🇵🇰"},{"id":167,"name":"Palau","code":"PW","flag":"🇵🇼"},{"id":168,"name":"Palestine","code":"PS","flag":"🇵🇸"},{"id":169,"name":"Panama","code":"PA","flag":"🇵🇦"},{"id":170,"name":"Papua New Guinea","code":"PG","flag":"🇵🇬"},{"id":171,"name":"Paraguay","code":"PY","flag":"🇵🇾"},{"id":172,"name":"Peru","code":"PE","flag":"🇵🇪"},{"id":173,"name":"Philippines","code":"PH","flag":"🇵🇭"},{"id":174,"name":"Pitcairn","code":"PN","flag":"🇵🇳"},{"id":175,"name":"Poland","code":"PL","flag":"🇵🇱"},{"id":176,"name":"Portugal","code":"PT","flag":"🇵🇹"},{"id":177,"name":"Puerto Rico","code":"PR","flag":"🇵🇷"},{"id":178,"name":"Qatar","code":"QA","flag":"🇶🇦"},{"id":179,"name":"Republic of the Congo","code":"CD","flag":"🇨🇩"},{"id":180,"name":"Romania","code":"RO","flag":"🇷🇴"},{"id":181,"name":"Russia","code":"RU","flag":"🇷🇺"},{"id":182,"name":"Rwanda","code":"RW","flag":"🇷🇼"},{"id":183,"name":"Réunion","code":"RE","flag":"🇷🇪"},{"id":184,"name":"Saint Barthélemy","code":"BL","flag":"🇧🇱"},{"id":185,"name":"Saint Helena","code":"SH","flag":"🇸🇭"},{"id":186,"name":"Saint Kitts and Nevis","code":"KN","flag":"🇰🇳"},{"id":187,"name":"Saint Lucia","code":"LC","flag":"🇱🇨"},{"id":188,"name":"Saint Martin (French part)","code":"MF","flag":"🇲🇫"},{"id":189,"name":"Saint Pierre and Miquelon","code":"PM","flag":"🇵🇲"},{"id":190,"name":"Saint Vincent and the Grenadines","code":"VC","flag":"🇻🇨"},{"id":191,"name":"Samoa","code":"WS","flag":"🇼🇸"},{"id":192,"name":"San Marino","code":"SM","flag":"🇸🇲"},{"id":193,"name":"Sao Tome and Principe","code":"ST","flag":"🇸🇹"},{"id":194,"name":"Saudi Arabia","code":"SA","flag":"🇸🇦"},{"id":195,"name":"Senegal","code":"SN","flag":"🇸🇳"},{"id":196,"name":"Serbia","code":"RS","flag":"🇷🇸"},{"id":197,"name":"Seychelles","code":"SC","flag":"🇸🇨"},{"id":198,"name":"Sierra Leone","code":"SL","flag":"🇸🇱"},{"id":199,"name":"Singapore","code":"SG","flag":"🇸🇬"},{"id":200,"name":"Sint Maarten (Dutch part)","code":"SX","flag":"🇸🇽"},{"id":201,"name":"Slovakia","code":"SK","flag":"🇸🇰"},{"id":202,"name":"Slovenia","code":"SI","flag":"🇸🇮"},{"id":203,"name":"Solomon Islands","code":"SB","flag":"🇸🇧"},{"id":204,"name":"Somalia","code":"SO","flag":"🇸🇴"},{"id":205,"name":"South Africa","code":"ZA","flag":"🇿🇦"},{"id":206,"name":"South Georgia and the South Sandwich Islands","code":"GS","flag":"🇬🇸"},{"id":207,"name":"South Korea","code":"KR","flag":"🇰🇷"},{"id":208,"name":"South Sudan","code":"SS","flag":"🇸🇸"},{"id":209,"name":"Spain","code":"ES","flag":"🇪🇸"},{"id":210,"name":"Sri Lanka","code":"LK","flag":"🇱🇰"},{"id":211,"name":"Sudan","code":"SD","flag":"🇸🇩"},{"id":212,"name":"Suriname","code":"SR","flag":"🇸🇷"},{"id":213,"name":"Svalbard and Jan Mayen","code":"SJ","flag":"🇸🇯"},{"id":214,"name":"Sweden","code":"SE","flag":"🇸🇪"},{"id":215,"name":"Switzerland","code":"CH","flag":"🇨🇭"},{"id":216,"name":"Syrian Arab Republic","code":"SY","flag":"🇸🇾"},{"id":217,"name":"Taiwan","code":"TW","flag":"🇹🇼"},{"id":218,"name":"Tajikistan","code":"TJ","flag":"🇹🇯"},{"id":219,"name":"Tanzania","code":"TZ","flag":"🇹🇿"},{"id":220,"name":"Thailand","code":"TH","flag":"🇹🇭"},{"id":221,"name":"Timor-Leste","code":"TL","flag":"🇹🇱"},{"id":222,"name":"Togo","code":"TG","flag":"🇹🇬"},{"id":223,"name":"Tokelau","code":"TK","flag":"🇹🇰"},{"id":224,"name":"Tonga","code":"TO","flag":"🇹🇴"},{"id":225,"name":"Trinidad and Tobago","code":"TT","flag":"🇹🇹"},{"id":226,"name":"Tunisia","code":"TN","flag":"🇹🇳"},{"id":227,"name":"Turkmenistan","code":"TM","flag":"🇹🇲"},{"id":228,"name":"Turks and Caicos Islands","code":"TC","flag":"🇹🇨"},{"id":229,"name":"Tuvalu","code":"TV","flag":"🇹🇻"},{"id":230,"name":"Türkiye","code":"TR","flag":"🇹🇷"},{"id":231,"name":"Uganda","code":"UG","flag":"🇺🇬"},{"id":232,"name":"Ukraine","code":"UA","flag":"🇺🇦"},{"id":233,"name":"United Arab Emirates","code":"AE","flag":"🇦🇪"},{"id":234,"name":"United Kingdom","code":"GB","flag":"🇬🇧"},{"id":235,"name":"United States","code":"US","flag":"🇺🇸"},{"id":236,"name":"United States Minor Outlying Islands","code":"UM","flag":"🇺🇲"},{"id":237,"name":"Uruguay","code":"UY","flag":"🇺🇾"},{"id":238,"name":"Uzbekistan","code":"UZ","flag":"🇺🇿"},{"id":239,"name":"Vanuatu","code":"VU","flag":"🇻🇺"},{"id":240,"name":"Vatican City","code":"VA","flag":"🇻🇦"},{"id":241,"name":"Venezuela","code":"VE","flag":"🇻🇪"},{"id":242,"name":"Viet Nam","code":"VN","flag":"🇻🇳"},{"id":243,"name":"Virgin Islands","code":"VG","flag":"🇻🇬"},{"id":244,"name":"Virgin Islands","code":"VI","flag":"🇻🇮"},{"id":245,"name":"Wallis and Futuna","code":"WF","flag":"🇼🇫"},{"id":246,"name":"Western Sahara","code":"EH","flag":"🇪🇭"},{"id":247,"name":"Yemen","code":"YE","flag":"🇾🇪"},{"id":248,"name":"Zambia","code":"ZM","flag":"🇿🇲"},{"id":249,"name":"Zimbabwe","code":"ZW","flag":"🇿🇼"},{"id":250,"name":"Åland Islands","code":"AX","flag":"🇦🇽"},{"id":251,"name":"Canary Islands","code":"IC","flag":"🇮🇨"}]`),
-  eR = {
+  _R = JSON.parse(`[{"id":1,"name":"Afghanistan","code":"AF","flag":"🇦🇫"},{"id":2,"name":"Albania","code":"AL","flag":"🇦🇱"},{"id":3,"name":"Algeria","code":"DZ","flag":"🇩🇿"},{"id":4,"name":"American Samoa","code":"AS","flag":"🇦🇸"},{"id":5,"name":"Andorra","code":"AD","flag":"🇦🇩"},{"id":6,"name":"Angola","code":"AO","flag":"🇦🇴"},{"id":7,"name":"Anguilla","code":"AI","flag":"🇦🇮"},{"id":8,"name":"Antarctica","code":"AQ","flag":"🇦🇶"},{"id":9,"name":"Antigua and Barbuda","code":"AG","flag":"🇦🇬"},{"id":10,"name":"Argentina","code":"AR","flag":"🇦🇷"},{"id":11,"name":"Armenia","code":"AM","flag":"🇦🇲"},{"id":12,"name":"Aruba","code":"AW","flag":"🇦🇼"},{"id":13,"name":"Australia","code":"AU","flag":"🇦🇺"},{"id":14,"name":"Austria","code":"AT","flag":"🇦🇹"},{"id":15,"name":"Azerbaijan","code":"AZ","flag":"🇦🇿"},{"id":16,"name":"Bahamas","code":"BS","flag":"🇧🇸"},{"id":17,"name":"Bahrain","code":"BH","flag":"🇧🇭"},{"id":18,"name":"Bangladesh","code":"BD","flag":"🇧🇩"},{"id":19,"name":"Barbados","code":"BB","flag":"🇧🇧"},{"id":20,"name":"Belarus","code":"BY","flag":"🇧🇾"},{"id":21,"name":"Belgium","code":"BE","flag":"🇧🇪"},{"id":22,"name":"Belize","code":"BZ","flag":"🇧🇿"},{"id":23,"name":"Benin","code":"BJ","flag":"🇧🇯"},{"id":24,"name":"Bermuda","code":"BM","flag":"🇧🇲"},{"id":25,"name":"Bhutan","code":"BT","flag":"🇧🇹"},{"id":26,"name":"Bolivia","code":"BO","flag":"🇧🇴"},{"id":27,"name":"Bonaire","code":"BQ","flag":"🇧🇶"},{"id":28,"name":"Bosnia and Herzegovina","code":"BA","flag":"🇧🇦"},{"id":29,"name":"Botswana","code":"BW","flag":"🇧🇼"},{"id":30,"name":"Bouvet Island","code":"BV","flag":"🇧🇻"},{"id":31,"name":"Brazil","code":"BR","flag":"🇧🇷"},{"id":32,"name":"British Indian Ocean Territory","code":"IO","flag":"🇮🇴"},{"id":33,"name":"Brunei Darussalam","code":"BN","flag":"🇧🇳"},{"id":34,"name":"Bulgaria","code":"BG","flag":"🇧🇬"},{"id":35,"name":"Burkina Faso","code":"BF","flag":"🇧🇫"},{"id":36,"name":"Burundi","code":"BI","flag":"🇧🇮"},{"id":37,"name":"Cabo Verde","code":"CV","flag":"🇨🇻"},{"id":38,"name":"Cambodia","code":"KH","flag":"🇰🇭"},{"id":39,"name":"Cameroon","code":"CM","flag":"🇨🇲"},{"id":40,"name":"Canada","code":"CA","flag":"🇨🇦"},{"id":41,"name":"Cayman Islands","code":"KY","flag":"🇰🇾"},{"id":42,"name":"Central African Republic","code":"CF","flag":"🇨🇫"},{"id":43,"name":"Chad","code":"TD","flag":"🇹🇩"},{"id":44,"name":"Chile","code":"CL","flag":"🇨🇱"},{"id":45,"name":"China","code":"CN","flag":"🇨🇳"},{"id":46,"name":"Christmas Island","code":"CX","flag":"🇨🇽"},{"id":47,"name":"Cocos (Keeling) Islands","code":"CC","flag":"🇨🇨"},{"id":48,"name":"Colombia","code":"CO","flag":"🇨🇴"},{"id":49,"name":"Comoros","code":"KM","flag":"🇰🇲"},{"id":50,"name":"Congo","code":"CG","flag":"🇨🇬"},{"id":51,"name":"Cook Islands","code":"CK","flag":"🇨🇰"},{"id":52,"name":"Costa Rica","code":"CR","flag":"🇨🇷"},{"id":53,"name":"Croatia","code":"HR","flag":"🇭🇷"},{"id":54,"name":"Cuba","code":"CU","flag":"🇨🇺"},{"id":55,"name":"Curaçao","code":"CW","flag":"🇨🇼"},{"id":56,"name":"Cyprus","code":"CY","flag":"🇨🇾"},{"id":57,"name":"Czechia","code":"CZ","flag":"🇨🇿"},{"id":58,"name":"Côte d'Ivoire","code":"CI","flag":"🇨🇮"},{"id":59,"name":"Denmark","code":"DK","flag":"🇩🇰"},{"id":60,"name":"Djibouti","code":"DJ","flag":"🇩🇯"},{"id":61,"name":"Dominica","code":"DM","flag":"🇩🇲"},{"id":62,"name":"Dominican Republic","code":"DO","flag":"🇩🇴"},{"id":63,"name":"Ecuador","code":"EC","flag":"🇪🇨"},{"id":64,"name":"Egypt","code":"EG","flag":"🇪🇬"},{"id":65,"name":"El Salvador","code":"SV","flag":"🇸🇻"},{"id":66,"name":"Equatorial Guinea","code":"GQ","flag":"🇬🇶"},{"id":67,"name":"Eritrea","code":"ER","flag":"🇪🇷"},{"id":68,"name":"Estonia","code":"EE","flag":"🇪🇪"},{"id":69,"name":"Eswatini","code":"SZ","flag":"🇸🇿"},{"id":70,"name":"Ethiopia","code":"ET","flag":"🇪🇹"},{"id":71,"name":"Falkland Islands (Malvinas)","code":"FK","flag":"🇫🇰"},{"id":72,"name":"Faroe Islands","code":"FO","flag":"🇫🇴"},{"id":73,"name":"Fiji","code":"FJ","flag":"🇫🇯"},{"id":74,"name":"Finland","code":"FI","flag":"🇫🇮"},{"id":75,"name":"France","code":"FR","flag":"🇫🇷"},{"id":76,"name":"French Guiana","code":"GF","flag":"🇬🇫"},{"id":77,"name":"French Polynesia","code":"PF","flag":"🇵🇫"},{"id":78,"name":"French Southern Territories","code":"TF","flag":"🇹🇫"},{"id":79,"name":"Gabon","code":"GA","flag":"🇬🇦"},{"id":80,"name":"Gambia","code":"GM","flag":"🇬🇲"},{"id":81,"name":"Georgia","code":"GE","flag":"🇬🇪"},{"id":82,"name":"Germany","code":"DE","flag":"🇩🇪"},{"id":83,"name":"Ghana","code":"GH","flag":"🇬🇭"},{"id":84,"name":"Gibraltar","code":"GI","flag":"🇬🇮"},{"id":85,"name":"Greece","code":"GR","flag":"🇬🇷"},{"id":86,"name":"Greenland","code":"GL","flag":"🇬🇱"},{"id":87,"name":"Grenada","code":"GD","flag":"🇬🇩"},{"id":88,"name":"Guadeloupe","code":"GP","flag":"🇬🇵"},{"id":89,"name":"Guam","code":"GU","flag":"🇬🇺"},{"id":90,"name":"Guatemala","code":"GT","flag":"🇬🇹"},{"id":91,"name":"Guernsey","code":"GG","flag":"🇬🇬"},{"id":92,"name":"Guinea","code":"GN","flag":"🇬🇳"},{"id":93,"name":"Guinea-Bissau","code":"GW","flag":"🇬🇼"},{"id":94,"name":"Guyana","code":"GY","flag":"🇬🇾"},{"id":95,"name":"Haiti","code":"HT","flag":"🇭🇹"},{"id":96,"name":"Heard Island and McDonald Islands","code":"HM","flag":"🇭🇲"},{"id":97,"name":"Honduras","code":"HN","flag":"🇭🇳"},{"id":98,"name":"Hong Kong","code":"HK","flag":"🇭🇰"},{"id":99,"name":"Hungary","code":"HU","flag":"🇭🇺"},{"id":100,"name":"Iceland","code":"IS","flag":"🇮🇸"},{"id":101,"name":"India","code":"IN","flag":"🇮🇳"},{"id":102,"name":"Indonesia","code":"ID","flag":"🇮🇩"},{"id":103,"name":"Iran","code":"IR","flag":"🇮🇷"},{"id":104,"name":"Iraq","code":"IQ","flag":"🇮🇶"},{"id":105,"name":"Ireland","code":"IE","flag":"🇮🇪"},{"id":106,"name":"Isle of Man","code":"IM","flag":"🇮🇲"},{"id":107,"name":"Israel","code":"IL","flag":"🇮🇱"},{"id":108,"name":"Italy","code":"IT","flag":"🇮🇹"},{"id":109,"name":"Jamaica","code":"JM","flag":"🇯🇲"},{"id":110,"name":"Japan","code":"JP","flag":"🇯🇵"},{"id":111,"name":"Jersey","code":"JE","flag":"🇯🇪"},{"id":112,"name":"Jordan","code":"JO","flag":"🇯🇴"},{"id":113,"name":"Kazakhstan","code":"KZ","flag":"🇰🇿"},{"id":114,"name":"Kenya","code":"KE","flag":"🇰🇪"},{"id":115,"name":"Kiribati","code":"KI","flag":"🇰🇮"},{"id":116,"name":"Kosovo","code":"XK","flag":"🇽🇰"},{"id":117,"name":"Kuwait","code":"KW","flag":"🇰🇼"},{"id":118,"name":"Kyrgyzstan","code":"KG","flag":"🇰🇬"},{"id":119,"name":"Laos","code":"LA","flag":"🇱🇦"},{"id":120,"name":"Latvia","code":"LV","flag":"🇱🇻"},{"id":121,"name":"Lebanon","code":"LB","flag":"🇱🇧"},{"id":122,"name":"Lesotho","code":"LS","flag":"🇱🇸"},{"id":123,"name":"Liberia","code":"LR","flag":"🇱🇷"},{"id":124,"name":"Libya","code":"LY","flag":"🇱🇾"},{"id":125,"name":"Liechtenstein","code":"LI","flag":"🇱🇮"},{"id":126,"name":"Lithuania","code":"LT","flag":"🇱🇹"},{"id":127,"name":"Luxembourg","code":"LU","flag":"🇱🇺"},{"id":128,"name":"Macao","code":"MO","flag":"🇲🇴"},{"id":129,"name":"Madagascar","code":"MG","flag":"🇲🇬"},{"id":130,"name":"Malawi","code":"MW","flag":"🇲🇼"},{"id":131,"name":"Malaysia","code":"MY","flag":"🇲🇾"},{"id":132,"name":"Maldives","code":"MV","flag":"🇲🇻"},{"id":133,"name":"Mali","code":"ML","flag":"🇲🇱"},{"id":134,"name":"Malta","code":"MT","flag":"🇲🇹"},{"id":135,"name":"Marshall Islands","code":"MH","flag":"🇲🇭"},{"id":136,"name":"Martinique","code":"MQ","flag":"🇲🇶"},{"id":137,"name":"Mauritania","code":"MR","flag":"🇲🇷"},{"id":138,"name":"Mauritius","code":"MU","flag":"🇲🇺"},{"id":139,"name":"Mayotte","code":"YT","flag":"🇾🇹"},{"id":140,"name":"Mexico","code":"MX","flag":"🇲🇽"},{"id":141,"name":"Micronesia","code":"FM","flag":"🇫🇲"},{"id":142,"name":"Moldova","code":"MD","flag":"🇲🇩"},{"id":143,"name":"Monaco","code":"MC","flag":"🇲🇨"},{"id":144,"name":"Mongolia","code":"MN","flag":"🇲🇳"},{"id":145,"name":"Montenegro","code":"ME","flag":"🇲🇪"},{"id":146,"name":"Montserrat","code":"MS","flag":"🇲🇸"},{"id":147,"name":"Morocco","code":"MA","flag":"🇲🇦"},{"id":148,"name":"Mozambique","code":"MZ","flag":"🇲🇿"},{"id":149,"name":"Myanmar","code":"MM","flag":"🇲🇲"},{"id":150,"name":"Namibia","code":"NA","flag":"🇳🇦"},{"id":151,"name":"Nauru","code":"NR","flag":"🇳🇷"},{"id":152,"name":"Nepal","code":"NP","flag":"🇳🇵"},{"id":153,"name":"Netherlands","code":"NL","flag":"🇳🇱"},{"id":154,"name":"New Caledonia","code":"NC","flag":"🇳🇨"},{"id":155,"name":"New Zealand","code":"NZ","flag":"🇳🇿"},{"id":156,"name":"Nicaragua","code":"NI","flag":"🇳🇮"},{"id":157,"name":"Niger","code":"NE","flag":"🇳🇪"},{"id":158,"name":"Nigeria","code":"NG","flag":"🇳🇬"},{"id":159,"name":"Niue","code":"NU","flag":"🇳🇺"},{"id":160,"name":"Norfolk Island","code":"NF","flag":"🇳🇫"},{"id":161,"name":"North Korea","code":"KP","flag":"🇰🇵"},{"id":162,"name":"North Macedonia","code":"MK","flag":"🇲🇰"},{"id":163,"name":"Northern Mariana Islands","code":"MP","flag":"🇲🇵"},{"id":164,"name":"Norway","code":"NO","flag":"🇳🇴"},{"id":165,"name":"Oman","code":"OM","flag":"🇴🇲"},{"id":166,"name":"Pakistan","code":"PK","flag":"🇵🇰"},{"id":167,"name":"Palau","code":"PW","flag":"🇵🇼"},{"id":168,"name":"Palestine","code":"PS","flag":"🇵🇸"},{"id":169,"name":"Panama","code":"PA","flag":"🇵🇦"},{"id":170,"name":"Papua New Guinea","code":"PG","flag":"🇵🇬"},{"id":171,"name":"Paraguay","code":"PY","flag":"🇵🇾"},{"id":172,"name":"Peru","code":"PE","flag":"🇵🇪"},{"id":173,"name":"Philippines","code":"PH","flag":"🇵🇭"},{"id":174,"name":"Pitcairn","code":"PN","flag":"🇵🇳"},{"id":175,"name":"Poland","code":"PL","flag":"🇵🇱"},{"id":176,"name":"Portugal","code":"PT","flag":"🇵🇹"},{"id":177,"name":"Puerto Rico","code":"PR","flag":"🇵🇷"},{"id":178,"name":"Qatar","code":"QA","flag":"🇶🇦"},{"id":179,"name":"Republic of the Congo","code":"CD","flag":"🇨🇩"},{"id":180,"name":"Romania","code":"RO","flag":"🇷🇴"},{"id":181,"name":"Russia","code":"RU","flag":"🇷🇺"},{"id":182,"name":"Rwanda","code":"RW","flag":"🇷🇼"},{"id":183,"name":"Réunion","code":"RE","flag":"🇷🇪"},{"id":184,"name":"Saint Barthélemy","code":"BL","flag":"🇧🇱"},{"id":185,"name":"Saint Helena","code":"SH","flag":"🇸🇭"},{"id":186,"name":"Saint Kitts and Nevis","code":"KN","flag":"🇰🇳"},{"id":187,"name":"Saint Lucia","code":"LC","flag":"🇱🇨"},{"id":188,"name":"Saint Martin (French part)","code":"MF","flag":"🇲🇫"},{"id":189,"name":"Saint Pierre and Miquelon","code":"PM","flag":"🇵🇲"},{"id":190,"name":"Saint Vincent and the Grenadines","code":"VC","flag":"🇻🇨"},{"id":191,"name":"Samoa","code":"WS","flag":"🇼🇸"},{"id":192,"name":"San Marino","code":"SM","flag":"🇸🇲"},{"id":193,"name":"Sao Tome and Principe","code":"ST","flag":"🇸🇹"},{"id":194,"name":"Saudi Arabia","code":"SA","flag":"🇸🇦"},{"id":195,"name":"Senegal","code":"SN","flag":"🇸🇳"},{"id":196,"name":"Serbia","code":"RS","flag":"🇷🇸"},{"id":197,"name":"Seychelles","code":"SC","flag":"🇸🇨"},{"id":198,"name":"Sierra Leone","code":"SL","flag":"🇸🇱"},{"id":199,"name":"Singapore","code":"SG","flag":"🇸🇬"},{"id":200,"name":"Sint Maarten (Dutch part)","code":"SX","flag":"🇸🇽"},{"id":201,"name":"Slovakia","code":"SK","flag":"🇸🇰"},{"id":202,"name":"Slovenia","code":"SI","flag":"🇸🇮"},{"id":203,"name":"Solomon Islands","code":"SB","flag":"🇸🇧"},{"id":204,"name":"Somalia","code":"SO","flag":"🇸🇴"},{"id":205,"name":"South Africa","code":"ZA","flag":"🇿🇦"},{"id":206,"name":"South Georgia and the South Sandwich Islands","code":"GS","flag":"🇬🇸"},{"id":207,"name":"South Korea","code":"KR","flag":"🇰🇷"},{"id":208,"name":"South Sudan","code":"SS","flag":"🇸🇸"},{"id":209,"name":"Spain","code":"ES","flag":"🇪🇸"},{"id":210,"name":"Sri Lanka","code":"LK","flag":"🇱🇰"},{"id":211,"name":"Sudan","code":"SD","flag":"🇸🇩"},{"id":212,"name":"Suriname","code":"SR","flag":"🇸🇷"},{"id":213,"name":"Svalbard and Jan Mayen","code":"SJ","flag":"🇸🇯"},{"id":214,"name":"Sweden","code":"SE","flag":"🇸🇪"},{"id":215,"name":"Switzerland","code":"CH","flag":"🇨🇭"},{"id":216,"name":"Syrian Arab Republic","code":"SY","flag":"🇸🇾"},{"id":217,"name":"Taiwan","code":"TW","flag":"🇹🇼"},{"id":218,"name":"Tajikistan","code":"TJ","flag":"🇹🇯"},{"id":219,"name":"Tanzania","code":"TZ","flag":"🇹🇿"},{"id":220,"name":"Thailand","code":"TH","flag":"🇹🇭"},{"id":221,"name":"Timor-Leste","code":"TL","flag":"🇹🇱"},{"id":222,"name":"Togo","code":"TG","flag":"🇹🇬"},{"id":223,"name":"Tokelau","code":"TK","flag":"🇹🇰"},{"id":224,"name":"Tonga","code":"TO","flag":"🇹🇴"},{"id":225,"name":"Trinidad and Tobago","code":"TT","flag":"🇹🇹"},{"id":226,"name":"Tunisia","code":"TN","flag":"🇹🇳"},{"id":227,"name":"Turkmenistan","code":"TM","flag":"🇹🇲"},{"id":228,"name":"Turks and Caicos Islands","code":"TC","flag":"🇹🇨"},{"id":229,"name":"Tuvalu","code":"TV","flag":"🇹🇻"},{"id":230,"name":"Türkiye","code":"TR","flag":"🇹🇷"},{"id":231,"name":"Uganda","code":"UG","flag":"🇺🇬"},{"id":232,"name":"Ukraine","code":"UA","flag":"🇺🇦"},{"id":233,"name":"United Arab Emirates","code":"AE","flag":"🇦🇪"},{"id":234,"name":"United Kingdom","code":"GB","flag":"🇬🇧"},{"id":235,"name":"United States","code":"US","flag":"🇺🇸"},{"id":236,"name":"United States Minor Outlying Islands","code":"UM","flag":"🇺🇲"},{"id":237,"name":"Uruguay","code":"UY","flag":"🇺🇾"},{"id":238,"name":"Uzbekistan","code":"UZ","flag":"🇺🇿"},{"id":239,"name":"Vanuatu","code":"VU","flag":"🇻🇺"},{"id":240,"name":"Vatican City","code":"VA","flag":"🇻🇦"},{"id":241,"name":"Venezuela","code":"VE","flag":"🇻🇪"},{"id":242,"name":"Viet Nam","code":"VN","flag":"🇻🇳"},{"id":243,"name":"Virgin Islands","code":"VG","flag":"🇻🇬"},{"id":244,"name":"Virgin Islands","code":"VI","flag":"🇻🇮"},{"id":245,"name":"Wallis and Futuna","code":"WF","flag":"🇼🇫"},{"id":246,"name":"Western Sahara","code":"EH","flag":"🇪🇭"},{"id":247,"name":"Yemen","code":"YE","flag":"🇾🇪"},{"id":248,"name":"Zambia","code":"ZM","flag":"🇿🇲"},{"id":249,"name":"Zimbabwe","code":"ZW","flag":"🇿🇼"},{"id":250,"name":"Åland Islands","code":"AX","flag":"🇦🇽"},{"id":251,"name":"Canary Islands","code":"IC","flag":"🇮🇨"}]`),
+  fR = {
     dashboard: {
       summary: {
         counters: {
@@ -5928,7 +5944,8 @@ const HA = [{
           unban: "staff.dashboard.summary.users.unban",
           incrementDroplets: "staff.dashboard.summary.users.increment_droplets",
           phoneVerification: "staff.dashboard.summary.users.phone_verification"
-        }
+        },
+        reloadPunishmentCache: "staff.dashboard.summary.reload_punishment_cache"
       },
       team: {
         tickets: "staff.dashboard.team.tickets",
@@ -6042,14 +6059,14 @@ const HA = [{
       assignCosmetics: "staff.cosmetics.assign_cosmetics"
     }
   },
-  tR = {
+  pR = {
     tools: {
       wayback: {
         limit: 1e4
       }
     }
   },
-  nR = [{
+  mR = [{
     slug: "country_badge",
     kind: "country",
     name: "Country badge",
@@ -6077,34 +6094,34 @@ const HA = [{
     unlockCondition: "knockout_perfect",
     image: "https://files.wplace.live/img/world-cup/world-cup-dust-badge.png"
   }],
-  rR = {
+  hR = {
     areaRadius: 250
   },
   ae = {
-    seasons: HA,
-    regionSize: $A,
-    refreshIntervalMs: XA,
-    colors: YA,
-    platforms: JA,
-    products: ZA,
-    countries: QA,
-    permissions: eR,
-    settings: tR,
-    worldCupStore: nR,
-    moderation: rR
+    seasons: aR,
+    regionSize: sR,
+    refreshIntervalMs: cR,
+    colors: uR,
+    platforms: lR,
+    products: dR,
+    countries: _R,
+    permissions: fR,
+    settings: pR,
+    worldCupStore: mR,
+    moderation: hR
   },
   St = ae,
-  oR = ae.seasons,
+  gR = ae.seasons,
   xr = ae.seasons.length - 1,
-  uI = ae.seasons[xr].zoom,
-  lI = ae.seasons[xr].tileSize,
-  dI = ae.permissions,
-  iR = ae.settings,
-  aR = ae.platforms.android,
-  _I = aR.googlePlayBilling.price,
-  fI = ae.worldCupStore;
+  EI = ae.seasons[xr].zoom,
+  TI = ae.seasons[xr].tileSize,
+  OI = ae.permissions,
+  wR = ae.settings,
+  yR = ae.platforms.android,
+  kI = yR.googlePlayBilling.price,
+  SI = ae.worldCupStore;
 
-function pI(n) {
+function AI(n) {
   return St.countries[n - 1]
 }
 
@@ -6114,10 +6131,10 @@ function en(n) {
   n.sharedProducts = Object.entries(St.products).map(([t, e]) => ({
     ...e,
     productId: t
-  })).filter(t => "lookupKey" in t), n.map = sR(n.sharedProducts, t => t.lookupKey)
+  })).filter(t => "lookupKey" in t), n.map = bR(n.sharedProducts, t => t.lookupKey)
 })(en || (en = {}));
 
-function sR(n, t) {
+function bR(n, t) {
   const e = new Map;
   for (const r in n) {
     const o = Reflect.get(n, r),
@@ -6131,7 +6148,7 @@ class m extends Error {
     super(t), this.message = t, this.status = e
   }
 }
-class mI extends Error {}
+class RI extends Error {}
 
 function ar(n, t) {
   const e = {};
@@ -6143,7 +6160,7 @@ function ar(n, t) {
   return e
 }
 
-function hI(n, t) {
+function II(n, t) {
   const e = {};
   for (const r of n) {
     const o = t(r);
@@ -6151,13 +6168,13 @@ function hI(n, t) {
   }
   return e
 }
-const cR = 30 * _e.minute;
+const vR = 30 * _e.minute;
 var Xe, Ye;
-class uR {
+class ER {
   constructor(t) {
     j(this, Xe, V(!0));
     j(this, Ye, V(null));
-    P(this, "lastHotspotRequestAt", 0);
+    L(this, "lastHotspotRequestAt", 0);
     this.url = t
   }
   get online() {
@@ -6207,7 +6224,7 @@ class uR {
         }))
       },
       o = JSON.stringify(r),
-      i = await Le.getHeaders(o),
+      i = await Pe.getHeaders(o),
       a = await this.request("/paint", {
         method: "POST",
         body: o,
@@ -6327,7 +6344,7 @@ class uR {
     if (r.status === c.BAD_REQUEST) {
       const o = await r.json(),
         i = (o == null ? void 0 : o.error) ?? "";
-      throw i === "timelapse_too_many_events" ? new m(x0(), c.BAD_REQUEST) : new m(typeof i == "string" && i ? i : f(), c.BAD_REQUEST)
+      throw i === "timelapse_too_many_events" ? new m(H0(), c.BAD_REQUEST) : new m(typeof i == "string" && i ? i : f(), c.BAD_REQUEST)
     }
     if (r.status !== c.OK) throw new m(f(), r.status);
     return r.arrayBuffer()
@@ -6360,7 +6377,7 @@ class uR {
           colors: u.map(E => E.colorIdx),
           coords: u.flatMap(E => E.pixel),
           csid: r
-        }, p = JSON.stringify(y), h = e(d, l, _), v = await Le.getHeaders(p);
+        }, p = JSON.stringify(y), h = e(d, l, _), v = await Pe.getHeaders(p);
         return this.request(h, {
           method: "POST",
           body: p,
@@ -6388,8 +6405,8 @@ class uR {
     }
   }
   async adminAutoPainterPaint(t, e, r) {
-    const o = lR(t),
-      i = await dR(o),
+    const o = TR(t),
+      i = await OR(o),
       a = new FormData;
     a.append("fingerprint", e), a.append("season", o.season.toString()), a.append("px0", o.offsetX.toString()), a.append("py0", o.offsetY.toString()), a.append("width", o.width.toString()), a.append("height", o.height.toString()), a.append("pixels", t.length.toString()), a.append("bitmap", i, "auto-painter.png"), a.append("userId", r.toString());
     const s = await this.request("/staff/tools/auto-painter/paint", {
@@ -6399,7 +6416,7 @@ class uR {
     });
     if (s.status === c.FORBIDDEN) {
       const u = await s.json().catch(() => null);
-      if (typeof(u == null ? void 0 : u.charges) == "number") throw new Error(_T({
+      if (typeof(u == null ? void 0 : u.charges) == "number") throw new Error(kT({
         charges: Math.floor(u.charges),
         pixels: t.length
       }));
@@ -6421,7 +6438,7 @@ class uR {
     });
     if (s.status !== c.OK) {
       const u = await s.text();
-      throw new Error(vf({
+      throw new Error(xf({
         err: u
       }))
     }
@@ -6629,15 +6646,15 @@ class uR {
       }),
       throwOnStatus: !1
     });
-    if (e.status === c.BAD_REQUEST) throw new Error(Lb());
-    if (e.status === c.CONFLICT) throw new Error(CT());
-    if (e.status === c.FORBIDDEN) throw new Error(FE());
+    if (e.status === c.BAD_REQUEST) throw new Error(Vb());
+    if (e.status === c.CONFLICT) throw new Error(YT());
+    if (e.status === c.FORBIDDEN) throw new Error(QE());
     if (e.status === c.TOO_MANY_REQUESTS) throw new Error(er());
-    if (e.status === c.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(YT());
-    if (e.status === c.LOCKED) throw new Error(nk());
-    if (e.status === c.UNPROCESSABLE_ENTITY) throw new Error(Vb());
-    if (e.status === c.NOT_ACCEPTABLE) throw new Error(mk());
-    if (e.status === c.PRECONDITION_FAILED) throw new Error(jd());
+    if (e.status === c.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(u0());
+    if (e.status === c.LOCKED) throw new Error(mk());
+    if (e.status === c.UNPROCESSABLE_ENTITY) throw new Error(ov());
+    if (e.status === c.NOT_ACCEPTABLE) throw new Error(Rk());
+    if (e.status === c.PRECONDITION_FAILED) throw new Error(Jd());
     if (e.status !== c.OK) throw new Error(f());
     return await e.json()
   }
@@ -6669,12 +6686,12 @@ class uR {
       }
     });
     if (t.type === "otp") {
-      if (r.status === c.GONE) throw new Error(Hf());
-      if (r.status === c.BAD_REQUEST) throw new Error($y());
+      if (r.status === c.GONE) throw new Error(ap());
+      if (r.status === c.BAD_REQUEST) throw new Error(sb());
       if (r.status === c.TOO_MANY_REQUESTS) throw new Error(er());
       if (r.status !== c.OK) throw new Error(f())
     } else {
-      if (r.status === c.BAD_REQUEST) throw new Error(zy());
+      if (r.status === c.BAD_REQUEST) throw new Error($y());
       if (r.status !== c.OK) throw new Error(f())
     }
   }
@@ -6697,10 +6714,10 @@ class uR {
       const r = await e.json(),
         o = (r == null ? void 0 : r.error) ?? "";
       if (o === "invalid_name") throw new Error(Jn());
-      if (o === "invalid_discord") throw new Error(sb());
+      if (o === "invalid_discord") throw new Error(bb());
       if (typeof o == "string" && o.startsWith("name_change_cooldown:")) {
         const i = parseInt(o.split(":")[1] ?? "0", 10);
-        throw new Error(pE({
+        throw new Error(AE({
           days: i
         }))
       }
@@ -6715,7 +6732,7 @@ class uR {
         confirmText: t
       })
     });
-    if (e.status === c.BAD_REQUEST) throw new Error(DO());
+    if (e.status === c.BAD_REQUEST) throw new Error(WO());
     if (e.status !== c.OK) throw new Error(f())
   }
   async favoriteLocation(t) {
@@ -6727,7 +6744,7 @@ class uR {
       }),
       credentials: "include"
     });
-    if (e.status === c.FORBIDDEN) throw new Error(QE());
+    if (e.status === c.FORBIDDEN) throw new Error(_T());
     if (e.status !== c.OK) throw new Error(f())
   }
   async deleteFavoriteLocation(t) {
@@ -6748,7 +6765,7 @@ class uR {
       }),
       credentials: "include"
     });
-    if (r.status === c.BAD_REQUEST) throw new Error(Iv());
+    if (r.status === c.BAD_REQUEST) throw new Error(Gv());
     if (r.status !== c.OK) throw new Error(f())
   }
   async leaderboardPlayers(t) {
@@ -6784,7 +6801,7 @@ class uR {
     throw new Error(me())
   }
   refreshHotspotsIfStale() {
-    Date.now() - this.lastHotspotRequestAt < cR || (this.lastHotspotRequestAt = Date.now(), this.request("/map/hotspots", {
+    Date.now() - this.lastHotspotRequestAt < vR || (this.lastHotspotRequestAt = Date.now(), this.request("/map/hotspots", {
       credentials: "include",
       keepalive: !0,
       throwOnStatus: !1
@@ -6832,8 +6849,8 @@ class uR {
     if (e.status === c.OK) return e.json();
     if (e.status === c.BAD_REQUEST) {
       const r = await e.json();
-      throw r.error === "max_characters" ? new Error(yu()) : r.error === "name_taken" ? new Error(au()) : r.error == "empty_name" ? new Error(Lu()) : new Error(f())
-    } else throw e.status === c.FORBIDDEN ? new Error(Qk()) : new Error(f())
+      throw r.error === "max_characters" ? new Error(Pu()) : r.error === "name_taken" ? new Error(yu()) : r.error == "empty_name" ? new Error(Vu()) : new Error(f())
+    } else throw e.status === c.FORBIDDEN ? new Error(_S()) : new Error(f())
   }
   async leaveAlliance() {
     if ((await this.request("/alliance/leave", {
@@ -6849,7 +6866,7 @@ class uR {
         description: t
       })
     });
-    if (e.status !== c.OK) throw e.status === c.FORBIDDEN ? new Error(he()) : e.status === c.BAD_REQUEST ? new Error(xf()) : new Error(f())
+    if (e.status !== c.OK) throw e.status === c.FORBIDDEN ? new Error(he()) : e.status === c.BAD_REQUEST ? new Error(Hf()) : new Error(f())
   }
   async updateAllianceHeadquarters(t, e) {
     const r = await this.request("/alliance/update-headquarters", {
@@ -7025,7 +7042,7 @@ class uR {
     });
     if (r.status === c.BAD_REQUEST) {
       const o = await r.json();
-      throw (o == null ? void 0 : o.error) === "user_not_in_alliance" ? new Error(ov()) : new Error(f())
+      throw (o == null ? void 0 : o.error) === "user_not_in_alliance" ? new Error(gv()) : new Error(f())
     } else if (r.status !== c.OK) throw new m(f(), r.status)
   }
   async banAllAllianceMembers(t, e, r) {
@@ -7239,7 +7256,7 @@ class uR {
     });
     if (e.status === c.CONFLICT) {
       const r = await e.json().catch(() => ({}));
-      throw (r == null ? void 0 : r.error) === "reversal_already_pending" ? new m(yA(), c.CONFLICT) : new m(f(), c.CONFLICT)
+      throw (r == null ? void 0 : r.error) === "reversal_already_pending" ? new m(PA(), c.CONFLICT) : new m(f(), c.CONFLICT)
     }
     if (e.status !== c.OK) throw new m(f(), e.status);
     return e.json()
@@ -7272,8 +7289,8 @@ class uR {
         notes: r
       })
     });
-    if (o.status === c.FORBIDDEN) throw new m(LA(), c.FORBIDDEN);
-    if (o.status === c.CONFLICT) throw new m(VA(), c.CONFLICT);
+    if (o.status === c.FORBIDDEN) throw new m(VA(), c.FORBIDDEN);
+    if (o.status === c.CONFLICT) throw new m(oR(), c.CONFLICT);
     if (o.status !== c.OK) throw new m(f(), o.status)
   }
   async request(t, e) {
@@ -7286,20 +7303,20 @@ class uR {
     try {
       r = await fetch(`${this.url}${t}`, e), this.online = !0, this.updateServerTimeEstimate(r)
     } catch (s) {
-      throw console.error("Fetch error:", s), this.online = !1, new Error(td(), {
+      throw console.error("Fetch error:", s), this.online = !1, new Error(pd(), {
         cause: s
       })
     }
-    if (r.status === c.FORBIDDEN && r.headers.get("x-block-reason") === "tor") throw new Error(wO());
+    if (r.status === c.FORBIDDEN && r.headers.get("x-block-reason") === "tor") throw new Error(DO());
     const o = ((a = r.headers.get("cf-mitigated")) == null ? void 0 : a.toLowerCase()) === "challenge";
     if (r.status === 403 && o) {
-      if (Le.setCfLikelyAutomated(!0), !await Dr()) throw new Error(Ut());
+      if (Pe.setCfLikelyAutomated(!0), !await Dr()) throw new Error(Ut());
       r = await fetch(`${this.url}${t}`, e), this.online = !0, this.updateServerTimeEstimate(r)
     }
     if ((e == null ? void 0 : e.throwOnStatus) ?? !0) {
-      if (r.status === c.TOO_MANY_REQUESTS) throw new Error($S());
-      if (r.status === c.REQUEST_TIMEOUT) throw new Error(v0());
-      if (r.status === c.SERVICE_UNAVAILABLE) throw new Error(H0())
+      if (r.status === c.TOO_MANY_REQUESTS) throw new Error(sA());
+      if (r.status === c.REQUEST_TIMEOUT) throw new Error(x0());
+      if (r.status === c.SERVICE_UNAVAILABLE) throw new Error(aO())
     }
     return r
   }
@@ -7537,14 +7554,14 @@ class uR {
     if (r.status === c.BAD_REQUEST) {
       const o = await r.json(),
         i = (o == null ? void 0 : o.error) ?? "";
-      throw i === "email_required" || i === "invalid_email" ? new m(cf(), c.BAD_REQUEST) : new m(typeof i == "string" && i ? i : f(), c.BAD_REQUEST)
+      throw i === "email_required" || i === "invalid_email" ? new m(vf(), c.BAD_REQUEST) : new m(typeof i == "string" && i ? i : f(), c.BAD_REQUEST)
     }
     if (r.status === c.CONFLICT) {
       const o = await r.json();
       if (((o == null ? void 0 : o.error) ?? "") === "email_already_in_use") {
-        const a = new m(typeof(o == null ? void 0 : o.userId) == "number" ? $_({
+        const a = new m(typeof(o == null ? void 0 : o.userId) == "number" ? cf({
           userId: o.userId
-        }) : z_(), c.CONFLICT);
+        }) : $_(), c.CONFLICT);
         throw typeof(o == null ? void 0 : o.userId) == "number" && (a.userId = o.userId), a
       }
       throw new m(f(), c.CONFLICT)
@@ -7739,6 +7756,14 @@ class uR {
     });
     if (o.status !== c.OK) throw new m(f(), o.status)
   }
+  async reloadPunishmentCache() {
+    const t = await this.request("/staff/dashboard/summary/reload-punishment-cache", {
+      method: "POST",
+      credentials: "include"
+    });
+    if (t.status === c.CONFLICT) throw new m($c(), t.status);
+    if (t.status !== c.OK && t.status !== c.ACCEPTED) throw new m(f(), t.status)
+  }
   async postUnbanUsers(t, e) {
     const r = await this.request("/staff/dashboard/summary/users/unban", {
       method: "POST",
@@ -7870,7 +7895,7 @@ class uR {
       } : {
         message: t
       }),
-      o = await Le.getHeaders(r),
+      o = await Pe.getHeaders(r),
       i = await this.request("/report/appeal", {
         method: "POST",
         credentials: "include",
@@ -8070,13 +8095,13 @@ class uR {
         "x-fp": await Zt()
       }
     });
-    if (!r.ok) throw r.status === 500 ? new m(f(), r.status) : new m(Ey(), r.status);
+    if (!r.ok) throw r.status === 500 ? new m(f(), r.status) : new m(zy(), r.status);
     return r.json()
   }
   validWaybackInput(t) {
     const e = Number.isFinite(t.timestamp) && Number.isInteger(t.timestamp) && t.timestamp >= 0 && t.timestamp <= this.getEstimatedServerNowMs(),
-      r = Number.isFinite(t.season) && Number.isInteger(t.season) && t.season >= 0 && t.season < oR.length,
-      o = Number.isFinite(t.limit) && Number.isInteger(t.limit) && t.limit > 0 && t.limit <= iR.tools.wayback.limit,
+      r = Number.isFinite(t.season) && Number.isInteger(t.season) && t.season >= 0 && t.season < gR.length,
+      o = Number.isFinite(t.limit) && Number.isInteger(t.limit) && t.limit > 0 && t.limit <= wR.tools.wayback.limit,
       i = Number.isFinite(t.tileX) && Number.isFinite(t.tileY) && Number.isInteger(t.tileX) && Number.isInteger(t.tileY) && t.tileX >= 0 && t.tileY >= 0,
       a = t.cursorTs !== void 0,
       s = t.cursorUserId !== void 0,
@@ -8229,7 +8254,7 @@ class uR {
 }
 Xe = new WeakMap, Ye = new WeakMap;
 
-function lR(n) {
+function TR(n) {
   var y, p;
   if (!n.length) throw new Error("Auto painter request does not contain any pixels.");
   const t = n[0].season;
@@ -8265,8 +8290,8 @@ function lR(n) {
     if (!D) throw new Error(`Unknown palette color index: ${E}`);
     const b = h - o,
       A = ((v - i) * l + b) * 4,
-      [L, C, S] = D.rgb;
-    d[A] = L, d[A + 1] = C, d[A + 2] = S, d[A + 3] = E === 0 ? 1 : 255
+      [P, M, S] = D.rgb;
+    d[A] = P, d[A + 1] = M, d[A + 2] = S, d[A + 3] = E === 0 ? 1 : 255
   }
   return {
     data: d,
@@ -8277,8 +8302,8 @@ function lR(n) {
     season: t
   }
 }
-async function dR(n) {
-  const t = _R(n.width, n.height),
+async function OR(n) {
+  const t = kR(n.width, n.height),
     e = t.getContext("2d");
   if (!e) throw new Error("Canvas API is not available to encode auto painter bitmap.");
   const r = e.createImageData(n.width, n.height);
@@ -8295,7 +8320,7 @@ async function dR(n) {
   })
 }
 
-function _R(n, t) {
+function kR(n, t) {
   if (typeof OffscreenCanvas < "u") return new OffscreenCanvas(n, t);
   if (typeof document < "u") {
     const e = document.createElement("canvas");
@@ -8303,7 +8328,7 @@ function _R(n, t) {
   }
   throw new Error("Canvas API is not available in the current environment.")
 }
-let fe = new uR(rn);
+let fe = new ER(rn);
 typeof window < "u" && Gr(() => {
   let n = fe.online;
   qr(() => {
@@ -8311,7 +8336,7 @@ typeof window < "u" && Gr(() => {
     t && !n && window.dispatchEvent(new CustomEvent("wplace:online")), n = t
   })
 });
-const gI = n => new URL(n, rn).toString();
+const NI = n => new URL(n, rn).toString();
 
 function zr(n, t) {
   if (!(n != null && n.length)) return !1;
@@ -8320,28 +8345,28 @@ function zr(n, t) {
   return !1
 }
 
-function fR(n, t) {
+function SR(n, t) {
   for (const e of t)
     if (zr(n, e)) return !0;
   return !1
 }
 
-function Mr(n) {
+function Cr(n) {
   const t = atob(n),
     e = new Uint8Array(t.length);
   for (let r = 0; r < t.length; r++) e[r] = t.charCodeAt(r);
   return e
 }
 
-function pR(n) {
+function AR(n) {
   if (typeof Buffer < "u") return Buffer.from(n).toString("base64");
   let t = "";
   for (let e = 0; e < n.length; e++) t += String.fromCharCode(n[e]);
   return btoa(t)
 }
-class mR {
+class RR {
   constructor(t) {
-    P(this, "bytes");
+    L(this, "bytes");
     this.bytes = t ?? new Uint8Array
   }
   set(t, e) {
@@ -8364,7 +8389,7 @@ class mR {
   }
 }
 
-function wI(n) {
+function DI(n) {
   return new Promise((t, e) => {
     const r = new FileReader;
     r.onload = () => {
@@ -8378,10 +8403,10 @@ function wI(n) {
   })
 }
 
-function yI(n) {
+function PI(n) {
   if (typeof FileReader > "u") {
     const t = n.type || "application/octet-stream";
-    return n.arrayBuffer().then(e => `data:${t};base64,${pR(new Uint8Array(e))}`)
+    return n.arrayBuffer().then(e => `data:${t};base64,${AR(new Uint8Array(e))}`)
   }
   return new Promise((t, e) => {
     const r = new FileReader;
@@ -8396,7 +8421,7 @@ function yI(n) {
   })
 }
 
-function bI(n) {
+function LI(n) {
   if (!n.startsWith("data:")) throw new Error("Could not parse data URL");
   const t = n.indexOf(",");
   if (t === -1) throw new Error("Could not parse data URL");
@@ -8405,7 +8430,7 @@ function bI(n) {
     o = e.indexOf(";base64"),
     i = (o === -1 ? e : e.slice(0, o)) || "text/plain";
   if (o !== -1) {
-    const a = Mr(r),
+    const a = Cr(r),
       s = new Uint8Array(a.byteLength);
     return s.set(a), new Blob([s], {
       type: i
@@ -8416,13 +8441,13 @@ function bI(n) {
   })
 }
 
-function vI(...n) {
+function xI(...n) {
   return n.filter(Boolean).join(" ")
 }
-const hR = typeof document < "u";
+const IR = typeof document < "u";
 let sr = 0;
 var Je, Ze, Qe;
-class gR {
+class NR {
   constructor() {
     j(this, Je, V(vt([])));
     j(this, Ze, V(vt([])));
@@ -8430,10 +8455,10 @@ class gR {
       const e = this.toasts.findIndex(r => r.id === t);
       return e === -1 ? null : e
     });
-    P(this, "addToast", t => {
-      hR && this.toasts.unshift(t)
+    L(this, "addToast", t => {
+      IR && this.toasts.unshift(t)
     });
-    P(this, "updateToast", ({
+    L(this, "updateToast", ({
       id: t,
       data: e,
       type: r,
@@ -8450,7 +8475,7 @@ class gR {
         updated: !0
       }
     });
-    P(this, "create", t => {
+    L(this, "create", t => {
       var s;
       const {
         message: e,
@@ -8472,7 +8497,7 @@ class gR {
         })
       }), o
     });
-    P(this, "dismiss", t => (dn(() => {
+    L(this, "dismiss", t => (dn(() => {
       if (t === void 0) {
         this.toasts = this.toasts.map(r => ({
           ...r,
@@ -8486,7 +8511,7 @@ class gR {
         dismiss: !0
       })
     }), t));
-    P(this, "remove", t => {
+    L(this, "remove", t => {
       if (t === void 0) {
         this.toasts = [];
         return
@@ -8494,37 +8519,37 @@ class gR {
       const e = T(this, Qe).call(this, t);
       if (e !== null) return this.toasts.splice(e, 1), t
     });
-    P(this, "message", (t, e) => this.create({
+    L(this, "message", (t, e) => this.create({
       ...e,
       type: "default",
       message: t
     }));
-    P(this, "error", (t, e) => this.create({
+    L(this, "error", (t, e) => this.create({
       ...e,
       type: "error",
       message: t
     }));
-    P(this, "success", (t, e) => this.create({
+    L(this, "success", (t, e) => this.create({
       ...e,
       type: "success",
       message: t
     }));
-    P(this, "info", (t, e) => this.create({
+    L(this, "info", (t, e) => this.create({
       ...e,
       type: "info",
       message: t
     }));
-    P(this, "warning", (t, e) => this.create({
+    L(this, "warning", (t, e) => this.create({
       ...e,
       type: "warning",
       message: t
     }));
-    P(this, "loading", (t, e) => this.create({
+    L(this, "loading", (t, e) => this.create({
       ...e,
       type: "loading",
       message: t
     }));
-    P(this, "promise", (t, e) => {
+    L(this, "promise", (t, e) => {
       if (!e) return;
       let r;
       e.loading !== void 0 && (r = this.create({
@@ -8538,7 +8563,7 @@ class gR {
       return o.then(a => {
         if (typeof a == "object" && a && "ok" in a && typeof a.ok == "boolean" && !a.ok) {
           i = !1;
-          const s = wR(a);
+          const s = DR(a);
           this.create({
             id: r,
             type: "error",
@@ -8568,7 +8593,7 @@ class gR {
         i && (this.dismiss(r), r = void 0), (a = e.finally) == null || a.call(e)
       }), r
     });
-    P(this, "custom", (t, e) => {
+    L(this, "custom", (t, e) => {
       const r = (e == null ? void 0 : e.id) || sr++;
       return this.create({
         component: t,
@@ -8576,10 +8601,10 @@ class gR {
         ...e
       }), r
     });
-    P(this, "removeHeight", t => {
+    L(this, "removeHeight", t => {
       this.heights = this.heights.filter(e => e.toastId !== t)
     });
-    P(this, "setHeight", t => {
+    L(this, "setHeight", t => {
       const e = T(this, Qe).call(this, t.toastId);
       if (e === null) {
         this.heights.push(t);
@@ -8587,7 +8612,7 @@ class gR {
       }
       this.heights[e] = t
     });
-    P(this, "reset", () => {
+    L(this, "reset", () => {
       this.toasts = [], this.heights = []
     })
   }
@@ -8606,19 +8631,19 @@ class gR {
 }
 Je = new WeakMap, Ze = new WeakMap, Qe = new WeakMap;
 
-function wR(n) {
+function DR(n) {
   return n && typeof n == "object" && "status" in n ? `HTTP error! Status: ${n.status}` : `Error! ${n}`
 }
-const J = new gR;
+const J = new NR;
 
-function yR(n, t) {
+function PR(n, t) {
   return J.create({
     message: n,
     ...t
   })
 }
 var It;
-class EI {
+class zI {
   constructor() {
     j(this, It, Ne(() => J.toasts.filter(t => !t.dismiss)))
   }
@@ -8627,8 +8652,8 @@ class EI {
   }
 }
 It = new WeakMap;
-const bR = yR,
-  vR = Object.assign(bR, {
+const LR = PR,
+  xR = Object.assign(LR, {
     success: J.success,
     info: J.info,
     warning: J.warning,
@@ -8641,9 +8666,9 @@ const bR = yR,
     getActiveToasts: () => J.toasts.filter(n => !n.dismiss)
   });
 var et, tt, nt, rt, ot, it, at, st;
-class ER {
+class zR {
   constructor() {
-    P(this, "channel", new BroadcastChannel("user-channel"));
+    L(this, "channel", new BroadcastChannel("user-channel"));
     j(this, et, V());
     j(this, tt, V(!0));
     j(this, nt, V());
@@ -8658,7 +8683,7 @@ class ER {
     j(this, it, Ne(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
     j(this, at, Ne(() => {
       var t;
-      return new mR(Mr(((t = this.data) == null ? void 0 : t.flagsBitmap) ?? "AA=="))
+      return new RR(Cr(((t = this.data) == null ? void 0 : t.flagsBitmap) ?? "AA=="))
     }));
     j(this, st, Ne(() => {
       var e;
@@ -8727,9 +8752,9 @@ class ER {
         data: this.data
       })), this.data && this.notificationCount === void 0 && fe.getNotificationCount().then(r => {
         this.notificationCount = r
-      }), (e = this.data) != null && e.id && Le.setUserId(this.data.id), !!this.data
+      }), (e = this.data) != null && e.id && Pe.setUserId(this.data.id), !!this.data
     } catch (r) {
-      return console.error(r), vR.warning(AE(), {
+      return console.error(r), xR.warning(FE(), {
         duration: 1e4
       }), !1
     } finally {
@@ -8752,11 +8777,11 @@ class ER {
   }
   hasAnyPermission(t) {
     var e;
-    return fR((e = this.data) == null ? void 0 : e.permissions, t)
+    return SR((e = this.data) == null ? void 0 : e.permissions, t)
   }
 }
 et = new WeakMap, tt = new WeakMap, nt = new WeakMap, rt = new WeakMap, ot = new WeakMap, it = new WeakMap, at = new WeakMap, st = new WeakMap;
-const ye = new ER;
+const ye = new zR;
 let x;
 const ie = new Array(128).fill(void 0);
 ie.push(void 0, null, !0, !1);
@@ -8783,7 +8808,7 @@ function ue(n, t) {
 function ge(n) {
   return n == null
 }
-const Cr = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
+const Mr = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
   ignoreBOM: !0,
   fatal: !0
 }) : {
@@ -8791,7 +8816,7 @@ const Cr = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
     throw Error("TextDecoder not available")
   }
 };
-typeof TextDecoder < "u" && Cr.decode();
+typeof TextDecoder < "u" && Mr.decode();
 let De = null;
 
 function wt() {
@@ -8799,16 +8824,16 @@ function wt() {
 }
 
 function yt(n, t) {
-  return n = n >>> 0, Cr.decode(wt().subarray(n, n + t))
+  return n = n >>> 0, Mr.decode(wt().subarray(n, n + t))
 }
 
-function TR(n) {
+function CR(n) {
   n < 132 || (ie[n] = xe, xe = n)
 }
 
 function cr(n) {
   const t = N(n);
-  return TR(n), t
+  return CR(n), t
 }
 let we = null;
 
@@ -8821,7 +8846,7 @@ const bt = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
       throw Error("TextEncoder not available")
     }
   },
-  OR = typeof bt.encodeInto == "function" ? function(n, t) {
+  MR = typeof bt.encodeInto == "function" ? function(n, t) {
     return bt.encodeInto(n, t)
   } : function(n, t) {
     const e = bt.encode(n);
@@ -8849,31 +8874,31 @@ function dt(n, t, e) {
   if (a !== r) {
     a !== 0 && (n = n.slice(a)), o = e(o, r, r = a + n.length * 3, 1) >>> 0;
     const s = wt().subarray(o + a, o + r),
-      u = OR(n, s);
+      u = MR(n, s);
     a += u.written, o = e(o, r, a, 1) >>> 0
   }
   return ve = a, o
 }
 
-function kR(n) {
+function jR(n) {
   const t = dt(n, x.__wbindgen_export_1, x.__wbindgen_export_2),
     e = ve;
   x.set_discord_id(t, e)
 }
 
-function SR(n) {
+function BR(n) {
   const t = dt(n, x.__wbindgen_export_1, x.__wbindgen_export_2),
     e = ve;
   x.set_fingerprint(t, e)
 }
 
-function AR(n) {
+function FR(n) {
   const t = dt(n, x.__wbindgen_export_1, x.__wbindgen_export_2),
     e = ve;
   x.set_detected_bot(t, e)
 }
 
-function RR(n) {
+function UR(n) {
   let t, e;
   try {
     const i = x.__wbindgen_add_to_stack_pointer(-16),
@@ -8892,24 +8917,24 @@ function Gt(n) {
   x.set_user_id(n)
 }
 
-function IR(n) {
+function GR(n) {
   x.set_cf_likely_automated(n)
 }
 
-function NR(n) {
+function qR(n) {
   x.set_automated_clicks(n)
 }
 
-function DR(n) {
+function WR(n) {
   const t = dt(n, x.__wbindgen_export_1, x.__wbindgen_export_2),
     e = ve;
   x.request_url(t, e)
 }
 
-function LR(n) {
+function VR(n) {
   x.set_automated_browser(n)
 }
-async function PR(n, t) {
+async function KR(n, t) {
   if (typeof Response == "function" && n instanceof Response) {
     if (typeof WebAssembly.instantiateStreaming == "function") try {
       return await WebAssembly.instantiateStreaming(n, t)
@@ -8928,7 +8953,7 @@ async function PR(n, t) {
   }
 }
 
-function xR() {
+function HR() {
   const n = {};
   return n.wbg = {}, n.wbg.__wbg_buffer_609cc3eee51ed158 = function(t) {
     const e = N(t).buffer;
@@ -9064,7 +9089,7 @@ function xR() {
   }, n
 }
 
-function zR(n, t) {
+function $R(n, t) {
   return x = n.exports, jr.__wbindgen_wasm_module = t, we = null, De = null, x
 }
 async function jr(n) {
@@ -9072,21 +9097,21 @@ async function jr(n) {
   typeof n < "u" && (Object.getPrototypeOf(n) === Object.prototype ? {
     module_or_path: n
   } = n : console.warn("using deprecated parameters for the initialization function; pass a single object instead")), typeof n > "u" && (n = new URL("pawtect_wasm_bg.wasm", import.meta.url));
-  const t = xR();
+  const t = HR();
   (typeof n == "string" || typeof Request == "function" && n instanceof Request || typeof URL == "function" && n instanceof URL) && (n = fetch(n));
   const {
     instance: e,
     module: r
-  } = await PR(await n, t);
-  return zR(e, r)
+  } = await KR(await n, t);
+  return $R(e, r)
 }
-class MR {
+class XR {
   constructor() {
-    P(this, "interval");
-    P(this, "storagesEmpty", !1);
-    P(this, "storages", [new Rt, new tn, new nn, new jR]);
-    P(this, "pawtectLoaded");
-    P(this, "pawtectError")
+    L(this, "interval");
+    L(this, "storagesEmpty", !1);
+    L(this, "storages", [new Rt, new tn, new nn, new JR]);
+    L(this, "pawtectLoaded");
+    L(this, "pawtectError")
   }
   init() {
     this.interval === void 0 && (this.loadPawtect(), this.interval = setInterval(() => {
@@ -9125,9 +9150,9 @@ class MR {
         await jr(Kr), (t = ye.data) != null && t.id && Gt(ye.data.id);
         const e = fetch;
         return Object.assign(window, {
-          fetch: CR((r, o) => {
+          fetch: YR((r, o) => {
             let i = null;
-            return r instanceof Request ? i = r.url : r instanceof URL ? i = r.href : typeof r == "string" && (i = r), i !== null && !i.startsWith("/") && DR(i), e.call(window, r, o)
+            return r instanceof Request ? i = r.url : r instanceof URL ? i = r.href : typeof r == "string" && (i = r), i !== null && !i.startsWith("/") && WR(i), e.call(window, r, o)
           })
         }), !0
       } catch (e) {
@@ -9139,7 +9164,7 @@ class MR {
     await this.loadPawtect(), Gt(t)
   }
   async setCfLikelyAutomated(t) {
-    await this.loadPawtect(), IR(t)
+    await this.loadPawtect(), GR(t)
   }
   isPawtectReady() {
     return this.pawtectLoaded ?? Promise.resolve(!1)
@@ -9153,16 +9178,16 @@ class MR {
     }
   }
   async getPawtectedEndpointPayload(t) {
-    if (!await this.loadPawtect()) throw new Error(Rk());
+    if (!await this.loadPawtect()) throw new Error(Uk());
     const r = navigator.webdriver,
       [o, i] = await Promise.all([Zt(), Wo().catch(a => (console.error(a), {
         bot: !1
       }))]);
-    return Gt(ye.data.id), kR(ye.data.discordId ?? ""), SR(o), LR(r), NR(Ir.automatedClicks), i.bot && AR(i.botKind ?? "unknown"), RR(t)
+    return Gt(ye.data.id), jR(ye.data.discordId ?? ""), BR(o), VR(r), qR(Ir.automatedClicks), i.bot && FR(i.botKind ?? "unknown"), UR(t)
   }
 }
 
-function CR(n) {
+function YR(n) {
   return n.bind().bind()
 }
 const le = class le {
@@ -9189,7 +9214,7 @@ const le = class le {
     localStorage.setItem(le.KEY, btoa(String.fromCharCode(...r)))
   }
 };
-P(le, "KEY", "ui_layout_v3"), P(le, "XOR_KEY", "wplace-prefs");
+L(le, "KEY", "ui_layout_v3"), L(le, "XOR_KEY", "wplace-prefs");
 let Rt = le;
 const de = class de {
   get() {
@@ -9216,7 +9241,7 @@ const de = class de {
     sessionStorage.setItem(de.KEY, r)
   }
 };
-P(de, "KEY", "nav.cursor"), P(de, "SHIFT", 13);
+L(de, "KEY", "nav.cursor"), L(de, "SHIFT", 13);
 let tn = de;
 const be = class be {
   get() {
@@ -9236,11 +9261,11 @@ const be = class be {
     document.cookie = `${be.KEY}=${encodeURIComponent(e)};path=/;max-age=${be.MAX_AGE};SameSite=Lax`
   }
 };
-P(be, "KEY", "_pf_uid"), P(be, "MAX_AGE", 3600 * 24 * 365);
+L(be, "KEY", "_pf_uid"), L(be, "MAX_AGE", 3600 * 24 * 365);
 let nn = be;
-class jR {
+class JR {
   constructor() {
-    P(this, "packed")
+    L(this, "packed")
   }
   get() {
     if (this.packed === void 0) return;
@@ -9255,7 +9280,7 @@ class jR {
     this.packed = BigInt(t.timestamp) << 32n | BigInt(t.userId) & 0xffffffffn
   }
 }
-const Le = new MR;
+const Pe = new XR;
 export {
-  iR as $, ol as A, tE as B, Gv as C, yp as D, QR as E, ZR as F, LA as G, en as H, aR as I, Xo as J, _I as K, J as L, vI as M, EI as N, tI as O, rn as P, JR as Q, $ as R, dI as S, _e as T, XR as U, $R as V, mI as W, YR as X, VR as Y, qR as Z, Ko as _, fe as a, xr as a0, KR as a1, WR as a2, pI as a3, cf as a4, Qt as a5, eI as a6, yI as a7, bI as a8, nI as a9, Rk as aa, DO as ab, gI as ac, sI as ad, oI as ae, cI as af, aI as ag, hI as ah, fI as ai, GR as aj, Ey as ak, St as b, f as c, rI as d, uI as e, lI as f, Ir as g, Zt as h, $o as i, HR as j, u_ as k, Yw as l, Lp as m, Vu as n, ap as o, Le as p, Dr as q, Ut as r, iI as s, vR as t, ye as u, Vn as v, wI as w, uy as x, Vp as y, E_ as z
+  wR as $, gl as A, pE as B, tE as C, Pp as D, _I as E, dI as F, VA as G, en as H, yR as I, Xo as J, kI as K, J as L, xI as M, zI as N, pI as O, rn as P, lI as Q, $ as R, OI as S, _e as T, cI as U, sI as V, RI as W, uI as X, oI as Y, nI as Z, Ko as _, fe as a, xr as a0, iI as a1, rI as a2, AI as a3, vf as a4, Qt as a5, fI as a6, PI as a7, LI as a8, mI as a9, Uk as aa, WO as ab, NI as ac, bI as ad, gI as ae, vI as af, yI as ag, II as ah, SI as ai, tI as aj, zy as ak, St as b, f as c, hI as d, EI as e, TI as f, Ir as g, Zt as h, $o as i, aI as j, uy as k, Vp as l, E_ as m, ol as n, yp as o, Pe as p, Dr as q, Ut as r, wI as s, xR as t, ye as u, Vn as v, DI as w, Ey as x, om as y, z_ as z
 };

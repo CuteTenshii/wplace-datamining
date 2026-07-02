@@ -31,10 +31,10 @@ import {
 } from "./D4ILXblz.js";
 import {
   P as G
-} from "./bqvJemOs.js";
+} from "./B1aXZTY1.js";
 import {
   u as H
-} from "./DRnS8Zxq.js";
+} from "./Clc6E9hk.js";
 
 function D(r) {
   return `/dashboard/alliances?id=${encodeURIComponent(String(r))}`
