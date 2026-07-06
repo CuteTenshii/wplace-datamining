@@ -1,64 +1,67 @@
+import "./Bzak7iHL.js";
 import {
-  T as m,
-  P as w,
-  u as d
-} from "./Clc6E9hk.js";
+  p as x,
+  t as m,
+  a as p,
+  b as g,
+  c as f,
+  d as _,
+  s as h,
+  r as b
+} from "./Dkgr_Dbt.js";
 import {
-  f as P
-} from "./DstqyuRl.js";
-const U = "wplace-auth";
+  i as w
+} from "./rBVNqKOk.js";
+import {
+  e as z,
+  a as c,
+  s as k
+} from "./CfjQLVhL.js";
+import {
+  p as L,
+  r as T
+} from "./DOQuOeXT.js";
+import {
+  l as y
+} from "./B_Oz03f8.js";
+var S = new Set(["$$slots", "$$events", "$$legacy", "hasText", "size"]),
+  U = f("<span>wplace</span>"),
+  W = f('<div><img alt="Wplace logo"/> <!></div>');
 
-function A(t) {
-  const e = new URL(`/auth/${t}`, w);
-  return e.search = new URLSearchParams({
-    r: "/login/popup-callback"
-  }).toString(), e.href
-}
-
-function C(t) {
-  var o;
-  const e = window.open(A(t), "wplace-oauth", "width=480,height=720");
-  return e ? ((o = e.focus) == null || o.call(e), new Promise(f => {
-    let a = !1,
-      n;
-    const i = new AbortController,
-      s = r => {
-        if (!a) {
-          a = !0, i.abort(), n == null || n(), clearTimeout(g);
-          try {
-            e.close()
-          } catch {}
-          f(r)
-        }
-      },
-      c = async () => {
-        if (!a) {
-          if (await d.refresh()) {
-            s(!0);
-            return
-          }
-          E(e) && s(!1)
-        }
-      }, h = r => {
-        var l, u;
-        r.origin === location.origin && r.source === e && ((l = r.data) == null ? void 0 : l.type) === U && (((u = r.data) == null ? void 0 : u.ok) === !1 ? s(!1) : c())
-      };
-    window.addEventListener("message", h, {
-      signal: i.signal
-    }), n = P(c, {
-      interval: 1500
-    });
-    const g = setTimeout(() => s(!1), 5 * m.minute)
-  })) : Promise.resolve(!1)
-}
-
-function E(t) {
-  try {
-    return (t == null ? void 0 : t.closed) ?? !0
-  } catch {
-    return !1
+function E(n, t) {
+  x(t, !0);
+  let e = L(t, "size", 3, "default"),
+    d = T(t, S);
+  var a = W();
+  z(a, () => ({
+    ...d,
+    class: `flex items-center gap-1.5 ${t.class??""}`
+  }));
+  var s = _(a);
+  let r;
+  var u = h(s, 2);
+  {
+    var v = l => {
+      var o = U();
+      let i;
+      m(() => i = c(o, 1, "text-base-content font-pixel", null, i, {
+        "text-4xl": e() === "default",
+        "text-5xl": e() === "lg" || e() === "medium"
+      })), p(l, o)
+    };
+    w(u, l => {
+      t.hasText && l(v)
+    })
   }
+  b(a), m(() => {
+    r = c(s, 1, "pixelated h-auto shrink-0", null, r, {
+      "w-4": e() === "small",
+      "w-10": e() === "default",
+      "w-16": e() === "medium",
+      "w-20": e() === "lg"
+    }), k(s, "src", y)
+  }), p(n, a), g()
 }
 export {
-  U as A, C as l
+  E as L
 };

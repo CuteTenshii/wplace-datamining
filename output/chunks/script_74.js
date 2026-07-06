@@ -3,38 +3,38 @@ import {
   k as j,
   p as z,
   q as y,
-  f as S,
-  i as x,
+  f as x,
+  i as S,
   a as l,
   b as B,
   u as C,
   d as u,
-  aI as h,
+  x as h,
   r as v,
   t as _,
-  c as I,
+  c as g,
   l as o
-} from "./DmPVOt2G.js";
+} from "./Dkgr_Dbt.js";
 import {
   s as k
-} from "./BAb2Drqf.js";
+} from "./BPhfHpSd.js";
 import {
   i as A
-} from "./CPZ_RRGr.js";
+} from "./rBVNqKOk.js";
 import {
   a as p,
   c as F,
   s
-} from "./tuZNrlvy.js";
+} from "./CfjQLVhL.js";
 import {
   p as d
-} from "./D4ILXblz.js";
+} from "./DOQuOeXT.js";
 import {
   P as G
-} from "./B1aXZTY1.js";
+} from "./CX5FFEEh.js";
 import {
   u as H
-} from "./Clc6E9hk.js";
+} from "./D8WmDnaK.js";
 
 function D(r) {
   return `/dashboard/alliances?id=${encodeURIComponent(String(r))}`
@@ -43,16 +43,16 @@ function D(r) {
 function J(r) {
   typeof window > "u" || window.open(D(r), "_blank", "noopener,noreferrer")
 }
-var Q = I('<span role="link" tabindex="0"><!></span>'),
-  T = I('<a target="_blank" rel="noopener noreferrer"><!></a>'),
-  W = I("<span><!></span>");
+var Q = g('<span role="link" tabindex="0"><!></span>'),
+  T = g('<a target="_blank" rel="noopener noreferrer"><!></a>'),
+  W = g("<span><!></span>");
 
 function ia(r, a) {
   z(a, !0);
   let E = d(a, "mode", 3, "anchor"),
-    g = d(a, "class", 3, ""),
-    w = d(a, "linkClass", 19, g),
-    L = d(a, "textClass", 19, g);
+    I = d(a, "class", 3, ""),
+    w = d(a, "linkClass", 19, I),
+    L = d(a, "textClass", 19, I);
   const N = C(() => a.allianceId != null && a.allianceId > 0 && H.hasAnyPermission(G.dashboard.alliances)),
     R = C(() => a.allianceId == null ? "" : D(a.allianceId));
 
@@ -68,11 +68,11 @@ function ia(r, a) {
     n.key !== "Enter" && n.key !== " " || b(n)
   }
   var P = y(),
-    K = S(P);
+    K = x(P);
   {
     var M = n => {
         var t = y(),
-          f = S(t);
+          f = x(t);
         {
           var U = i => {
               var e = Q(),
@@ -85,7 +85,7 @@ function ia(r, a) {
               var e = T(),
                 m = u(e);
               k(m, () => a.children ?? h), v(e), _(() => {
-                p(e, 1, `cursor-pointer hover:underline ${w()}`), s(e, "href", x(R)), s(e, "title", a.title)
+                p(e, 1, `cursor-pointer hover:underline ${w()}`), s(e, "href", S(R)), s(e, "title", a.title)
               }), o("pointerdown", e, c), o("click", e, c), l(i, e)
             };
           A(f, i => {
@@ -102,7 +102,7 @@ function ia(r, a) {
         }), l(n, t)
       };
     A(K, n => {
-      x(N) ? n(M) : n(O, -1)
+      S(N) ? n(M) : n(O, -1)
     })
   }
   l(r, P), B()

@@ -10,8 +10,8 @@ import {
   g as T
 } from "./BhCkpOlh.js";
 import {
-  b as p
-} from "./Clc6E9hk.js";
+  d as p
+} from "./D8WmDnaK.js";
 const L = () => "No description",
   d = () => "Sem descrição",
   M = () => "无描述",
@@ -23,10 +23,10 @@ const L = () => "No description",
   B = () => "Brak opisu",
   g = () => "Без описания",
   z = () => "Без опису",
-  b = () => "Không có mô tả",
+  R = () => "Không có mô tả",
   C = (s = {}, e = {}) => {
     const t = e.locale ?? T();
-    return t === "en" ? L() : t === "pt" ? d() : t === "ch" ? M() : t === "de" ? f() : t === "es" ? _() : t === "fr" ? P() : t === "it" ? S() : t === "jp" ? y() : t === "pl" ? B() : t === "ru" ? g() : t === "uk" ? z() : b()
+    return t === "en" ? L() : t === "pt" ? d() : t === "ch" ? M() : t === "de" ? f() : t === "es" ? _() : t === "fr" ? P() : t === "it" ? S() : t === "jp" ? y() : t === "pl" ? B() : t === "ru" ? g() : t === "uk" ? z() : R()
   },
   a = 2 * Math.PI * 6378137 / 2;
 class E {

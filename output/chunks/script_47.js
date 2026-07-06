@@ -1,57 +1,57 @@
 import {
-  t as T,
-  J as d,
-  O as v,
-  a6 as i,
-  K as M,
-  T as C,
-  ax as _,
-  ay as m,
-  Q as y,
-  a8 as p,
-  ar as w,
-  az as N,
-  aA as O,
+  t as C,
+  L as d,
+  Q as v,
+  a8 as i,
+  M,
+  V as T,
+  ay as _,
+  az as m,
+  S as E,
+  aa as p,
+  at as w,
+  aA as N,
   aB as g,
   aC as H,
-  aD as R
-} from "./DmPVOt2G.js";
+  aD as L,
+  aE as O
+} from "./Dkgr_Dbt.js";
 
-function L(h, A, u = !1, f = !1, t = !1, b = !1) {
+function b(h, y, u = !1, f = !1, t = !1, R = !1) {
   var n = h,
     e = "";
   if (u) {
     var l = h;
     d && (n = v(i(l)))
   }
-  T(() => {
-    var r = C;
-    if (e === (e = A() ?? "")) {
+  C(() => {
+    var s = T;
+    if (e === (e = y() ?? "")) {
       d && M();
       return
     }
     if (u && !d) {
-      r.nodes = null, l.innerHTML = e, e !== "" && _(i(l), l.lastChild);
+      s.nodes = null, l.innerHTML = e, e !== "" && _(i(l), l.lastChild);
       return
     }
-    if (r.nodes !== null && (m(r.nodes.start, r.nodes.end), r.nodes = null), e !== "") {
+    if (s.nodes !== null && (m(s.nodes.start, s.nodes.end), s.nodes = null), e !== "") {
       if (d) {
-        y.data;
+        E.data;
         for (var a = M(), c = a; a !== null && (a.nodeType !== p || a.data !== "");) c = a, a = w(a);
-        if (a === null) throw N(), O;
-        _(y, c), n = v(a);
+        if (a === null) throw N(), g;
+        _(E, c), n = v(a);
         return
       }
-      var E = f ? H : t ? R : void 0,
-        o = g(f ? "svg" : t ? "math" : "template", E);
+      var A = f ? L : t ? O : void 0,
+        o = H(f ? "svg" : t ? "math" : "template", A);
       o.innerHTML = e;
-      var s = f || t ? o : o.content;
-      if (_(i(s), s.lastChild), f || t)
-        for (; i(s);) n.before(i(s));
-      else n.before(s)
+      var r = f || t ? o : o.content;
+      if (_(i(r), r.lastChild), f || t)
+        for (; i(r);) n.before(i(r));
+      else n.before(r)
     }
   })
 }
 export {
-  L as h
+  b as h
 };

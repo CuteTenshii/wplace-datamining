@@ -1,48 +1,29 @@
+import "./Bzak7iHL.js";
 import {
-  z as d,
-  aE as g,
-  y as c,
-  aF as l,
-  B as m,
-  aG as b,
-  i as p,
-  at as v,
-  aH as h
-} from "./DmPVOt2G.js";
+  a as s,
+  w as p
+} from "./Dkgr_Dbt.js";
+import {
+  e as a
+} from "./CfjQLVhL.js";
+import {
+  r as v
+} from "./DOQuOeXT.js";
+var m = new Set(["$$slots", "$$events", "$$legacy"]),
+  i = p('<svg><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm40-80h480L570-480 450-320l-90-120-120 160Zm-40 80v-560 560Z"></path></svg>');
 
-function y(n = !1) {
-  const t = d,
-    e = t.l.u;
-  if (!e) return;
-  let f = () => v(t.s);
-  if (n) {
-    let a = 0,
-      s = {};
-    const _ = h(() => {
-      let i = !1;
-      const r = t.s;
-      for (const o in r) r[o] !== s[o] && (s[o] = r[o], i = !0);
-      return i && a++, a
-    });
-    f = () => p(_)
-  }
-  e.b.length && g(() => {
-    u(t, f), l(e.b)
-  }), c(() => {
-    const a = m(() => e.m.map(b));
-    return () => {
-      for (const s of a) typeof s == "function" && s()
-    }
-  }), e.a.length && c(() => {
-    u(t, f), l(e.a)
-  })
-}
-
-function u(n, t) {
-  if (n.l.s)
-    for (const e of n.l.s) p(e);
-  t()
+function n(r, e) {
+  let o = v(e, m);
+  var t = i();
+  a(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    height: "24px",
+    viewBox: "0 -960 960 960",
+    width: "24px",
+    fill: "currentColor",
+    ...o
+  })), s(r, t)
 }
 export {
-  y as i
+  n as I
 };

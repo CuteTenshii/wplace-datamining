@@ -3,10 +3,10 @@ import {
   p as B,
   i as c,
   h as x,
-  y as E,
+  A as E,
   d as u,
   s as h,
-  bk as I,
+  bl as I,
   r as m,
   t as v,
   a as b,
@@ -14,27 +14,27 @@ import {
   e as T,
   u as W,
   c as q
-} from "./DmPVOt2G.js";
+} from "./Dkgr_Dbt.js";
 import {
   s as g
-} from "./DhqkUb9U.js";
+} from "./DbffVGnc.js";
 import {
   i as S
-} from "./CPZ_RRGr.js";
+} from "./rBVNqKOk.js";
 import {
   e as D,
   C as F
-} from "./tuZNrlvy.js";
+} from "./CfjQLVhL.js";
 import {
   b as G
-} from "./8J2sB2km.js";
+} from "./48wryRq-.js";
 import {
   b as H
-} from "./CqzYBvze.js";
+} from "./CqpZKCt-.js";
 import {
   p as l,
   r as J
-} from "./D4ILXblz.js";
+} from "./DOQuOeXT.js";
 import {
   g as k
 } from "./BhCkpOlh.js";
@@ -79,14 +79,14 @@ const K = r => `Max. characters: ${r.max}`,
   jr = () => "Obbligatorio",
   wr = () => "必須",
   Sr = () => "Wymagane",
-  yr = () => "Обязательно",
-  Lr = () => "Обовʼязково",
-  Or = () => "Bắt buộc",
-  zr = (r = {}, t = {}) => {
+  Lr = () => "Обязательно",
+  Or = () => "Обовʼязково",
+  yr = () => "Bắt buộc",
+  Ar = (r = {}, t = {}) => {
     const e = t.locale ?? k();
-    return e === "en" ? vr() : e === "pt" ? br() : e === "ch" ? gr() : e === "de" ? qr() : e === "es" ? kr() : e === "fr" ? Mr() : e === "it" ? jr() : e === "jp" ? wr() : e === "pl" ? Sr() : e === "ru" ? yr() : e === "uk" ? Lr() : Or()
+    return e === "en" ? vr() : e === "pt" ? br() : e === "ch" ? gr() : e === "de" ? qr() : e === "es" ? kr() : e === "fr" ? Mr() : e === "it" ? jr() : e === "jp" ? wr() : e === "pl" ? Sr() : e === "ru" ? Lr() : e === "uk" ? Or() : yr()
   };
-var Ar = new Set(["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate", "disabled", "ref"]),
+var zr = new Set(["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate", "disabled", "ref"]),
   Cr = q('<legend class="fieldset-legend"> </legend>'),
   Nr = q('<span class="text-base-content/80"> </span>'),
   Zr = q('<fieldset class="fieldset"><!> <textarea></textarea> <div class="flex items-center justify-between text-xs"><span class="text-error"> </span> <!></div></fieldset>');
@@ -94,19 +94,19 @@ var Ar = new Set(["$$slots", "$$events", "$$legacy", "label", "placeholder", "va
 function Hr(r, t) {
   B(t, !0);
   let e = l(t, "value", 15),
-    y = l(t, "validate", 15),
-    L = l(t, "disabled", 3, !1),
+    L = l(t, "validate", 15),
+    O = l(t, "disabled", 3, !1),
     M = l(t, "ref", 15),
-    O = J(t, Ar),
+    y = J(t, zr),
     i = T("");
   const o = W(() => {
     var a;
     return ((a = e()) == null ? void 0 : a.length) ?? 0
   });
-  y(z);
+  L(A);
 
-  function z() {
-    return t.min !== void 0 && c(o) < t.min ? (x(i, t.min === 1 ? zr() : hr({
+  function A() {
+    return t.min !== void 0 && c(o) < t.min ? (x(i, t.min === 1 ? Ar() : hr({
       min: t.min
     }), !0), !1) : t.max !== void 0 && c(o) > t.max ? (x(i, ar({
       max: t.max
@@ -119,21 +119,21 @@ function Hr(r, t) {
   var f = Zr(),
     j = u(f);
   {
-    var A = a => {
+    var z = a => {
       var n = Cr(),
         d = u(n, !0);
       m(n), v(() => g(d, t.label)), b(a, n)
     };
     S(j, a => {
-      t.label && a(A)
+      t.label && a(z)
     })
   }
   var s = h(j, 2);
   I(s), D(s, () => ({
-    ...O,
+    ...y,
     class: `textarea w-full ${t.class??""}`,
     placeholder: t.placeholder,
-    disabled: L(),
+    disabled: O(),
     [F]: {
       "textarea-error": !!c(i)
     }
