@@ -4849,7 +4849,7 @@ class Lk {
   }
   async getAllTickets(t) {
     const e = new URLSearchParams;
-    e.set("page", String(t.page ?? 0)), e.set("pageSize", String(t.pageSize ?? 20)), t.modId && e.set("modId", String(t.modId)), t.sortBy && e.set("sortBy", t.sortBy), t.sortDir && e.set("sortDir", t.sortDir), t.status && e.set("status", t.status), t.reason && e.set("reason", t.reason), t.role && e.set("role", t.role), t.reviewed && e.set("reviewed", t.reviewed), t.reSolvedOnly && e.set("reSolvedOnly", "true"), t.dateFrom && e.set("dateFrom", t.dateFrom), t.dateTo && e.set("dateTo", t.dateTo);
+    e.set("page", String(t.page ?? 0)), e.set("pageSize", String(t.pageSize ?? 20)), t.modId && e.set("modId", String(t.modId)), t.sortBy && e.set("sortBy", t.sortBy), t.sortDir && e.set("sortDir", t.sortDir), t.status && e.set("status", t.status), t.reason && e.set("reason", t.reason), t.role && e.set("role", t.role), t.reviewed && e.set("reviewed", t.reviewed), t.reSolvedOnly && e.set("reSolvedOnly", "true"), t.hideSystem && e.set("hideSystem", "true"), t.dateFrom && e.set("dateFrom", t.dateFrom), t.dateTo && e.set("dateTo", t.dateTo);
     const r = await this.request(`/staff/dashboard/all-tickets?${e.toString()}`, {
       method: "GET",
       credentials: "include"
@@ -4872,6 +4872,14 @@ class Lk {
       method: "POST",
       credentials: "include",
       body: JSON.stringify(t)
+    });
+    if (e.status !== i.OK) throw new l(u(), e.status);
+    return e.json()
+  }
+  async getTicketOverturnInfo(t) {
+    const e = await this.request(`/staff/dashboard/all-tickets/overturn-info?ticketId=${encodeURIComponent(t)}`, {
+      method: "GET",
+      credentials: "include"
     });
     if (e.status !== i.OK) throw new l(u(), e.status);
     return e.json()
@@ -5515,6 +5523,16 @@ class Lk {
       credentials: "include"
     });
     if (e.status !== i.OK) throw new l(u(), e.status)
+  }
+  async postTelemetry(t, e) {
+    return (await this.request("/frontend/telemetry", {
+      method: "POST",
+      credentials: "include",
+      body: JSON.stringify({
+        event: t,
+        data: e
+      })
+    })).status === i.OK
   }
   async markRulesAsRead() {
     return (await this.request("/me/rules/read", {
@@ -6553,5 +6571,5 @@ class _T {
 }
 const X = new lT;
 export {
-  $T as $, mm as A, pt as B, Fe as C, TT as D, ak as E, $e as F, Pk as G, qT as H, R as I, GT as J, VT as K, OT as L, vT as M, N, yT as O, xT as P, wT as Q, bT as R, jT as S, B as T, Mn as U, xk as V, MT as W, kt as X, UT as Y, js as Z, FT as _, C as a, IT as a0, nv as a1, ib as a2, CT as a3, RT as a4, NT as a5, DT as a6, AT as a7, BT as a8, LT as a9, Jf as aa, ST as b, PT as c, Pe as d, u as e, ET as f, wt as g, Tf as h, kT as i, ic as j, La as k, yo as l, xu as m, X as n, bt as o, Me as p, KT as q, Vu as r, zT as s, Yk as t, V as u, et as v, Lf as w, wc as x, Ja as y, Do as z
+  $T as $, mm as A, pt as B, Fe as C, TT as D, ak as E, $e as F, Pk as G, qT as H, R as I, GT as J, VT as K, OT as L, vT as M, N, yT as O, xT as P, wT as Q, bT as R, jT as S, B as T, Mn as U, xk as V, MT as W, kt as X, UT as Y, js as Z, FT as _, C as a, IT as a0, nv as a1, ib as a2, CT as a3, RT as a4, NT as a5, DT as a6, AT as a7, BT as a8, LT as a9, Jf as aa, ST as b, PT as c, Pe as d, u as e, La as f, wt as g, ic as h, Tf as i, yo as j, xu as k, kT as l, ET as m, X as n, bt as o, Me as p, KT as q, Vu as r, zT as s, Yk as t, V as u, et as v, Lf as w, wc as x, Ja as y, Do as z
 };
