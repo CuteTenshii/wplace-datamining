@@ -67,16 +67,16 @@ function Ct(n, t) {
   for (const o in t) {
     const a = t[o],
       c = a(n);
-    let s = {
+    let u = {
       bot: !1
     };
-    typeof c == "string" ? s = {
+    typeof c == "string" ? u = {
       bot: !0,
       botKind: c
-    } : c && (s = {
+    } : c && (u = {
       bot: !0,
       botKind: h.Unknown
-    }), e[o] = s, s.bot && (r = s)
+    }), e[o] = u, u.bot && (r = u)
   }
   return [e, r]
 }
@@ -534,8 +534,8 @@ function Dn() {
     const a = n[t];
     if (a !== void 0) {
       const c = a.window === void 0 ? !1 : Ke(r, ...a.window),
-        s = a.document === void 0 || !o.length ? !1 : Ke(o, ...a.document);
-      e[t] = c || s
+        u = a.document === void 0 || !o.length ? !1 : Ke(o, ...a.document);
+      e[t] = c || u
     }
   }
   return e
@@ -786,8 +786,8 @@ async function Gn(n, t) {
       c = setTimeout(() => {
         a.terminate(), URL.revokeObjectURL(o), e(null)
       }, 12e4);
-    a.onmessage = s => {
-      clearTimeout(c), a.terminate(), URL.revokeObjectURL(o), s.data.error ? e(null) : e(s.data.nonce)
+    a.onmessage = u => {
+      clearTimeout(c), a.terminate(), URL.revokeObjectURL(o), u.data.error ? e(null) : e(u.data.nonce)
     }, a.onerror = () => {
       clearTimeout(c), a.terminate(), URL.revokeObjectURL(o), e(null)
     }, a.postMessage({
@@ -2461,7 +2461,7 @@ Vui lòng sử dụng kênh hỗ trợ phù hợp nếu vấn đề của bạn 
   hb = () => "Непредвиденная ошибка сервера. Попробуйте позже.",
   mb = () => "Неочікувана помилка сервера. Спробуйте пізніше.",
   gb = () => "Lỗi máy chủ không mong muốn. Hãy thử lại sau.",
-  u = (n = {}, t = {}) => {
+  s = (n = {}, t = {}) => {
     const e = t.locale ?? d();
     return e === "en" ? ab() : e === "pt" ? sb() : e === "ch" ? ub() : e === "de" ? cb() : e === "es" ? lb() : e === "fr" ? db() : e === "it" ? _b() : e === "jp" ? fb() : e === "pl" ? pb() : e === "ru" ? hb() : e === "uk" ? mb() : gb()
   },
@@ -3180,6 +3180,7 @@ const vk = [{
         removeTimeout: "staff.dashboard.users.remove_timeout",
         ban: "staff.dashboard.users.ban",
         removeBan: "staff.dashboard.users.remove_ban",
+        autoReviewBan: "staff.dashboard.users.auto_review_ban",
         personalInformation: "staff.dashboard.users.personal_information",
         editEmail: "staff.dashboard.users.edit_email",
         disconnect: "staff.dashboard.users.disconnect",
@@ -3431,16 +3432,16 @@ class Lk {
     Number.isFinite(r) && (this.serverTimeOffsetMs = r - Date.now())
   }
   async paint(t) {
-    const e = ht(t, s => `t=(${s.tile[0]},${s.tile[1]}),s=${s.season}`),
+    const e = ht(t, u => `t=(${u.tile[0]},${u.tile[1]}),s=${u.season}`),
       r = {
         season: t[0].season,
-        tiles: Object.values(e).map(s => ({
-          x: s[0].tile[0],
-          y: s[0].tile[1],
+        tiles: Object.values(e).map(u => ({
+          x: u[0].tile[0],
+          y: u[0].tile[1],
           pixels: {
-            x: s.map(_ => _.pixel[0]),
-            y: s.map(_ => _.pixel[1]),
-            colors: s.map(_ => _.colorIdx)
+            x: u.map(_ => _.pixel[0]),
+            y: u.map(_ => _.pixel[1]),
+            colors: u.map(_ => _.colorIdx)
           }
         }))
       },
@@ -3453,37 +3454,37 @@ class Lk {
         credentials: "include"
       });
     if (c.status === i.OK) {
-      const s = await c.json().catch(() => ({}));
+      const u = await c.json().catch(() => ({}));
       return {
-        worldCupQuestCompleted: !!(s != null && s.worldCupQuestCompleted)
+        worldCupQuestCompleted: !!(u != null && u.worldCupQuestCompleted)
       }
     }
     if (c.status !== i.OK) {
       if (c.status === i.UNAUTHORIZED) throw new Error(_t());
       if (c.status === i.FORBIDDEN) {
         if (c.headers.get("cf-mitigated") === "challenge") throw new Error(it());
-        const s = await c.json();
-        if ((s == null ? void 0 : s.error) === "timeout") {
-          const _ = new Date(Date.now() + ((s == null ? void 0 : s.durationMs) ?? 0));
+        const u = await c.json();
+        if ((u == null ? void 0 : u.error) === "timeout") {
+          const _ = new Date(Date.now() + ((u == null ? void 0 : u.durationMs) ?? 0));
           throw new Error(ft({
             until: _.toLocaleString()
           }))
         }
-        if ((s == null ? void 0 : s.error) === "refresh") throw new Error(ut());
-        if ((s == null ? void 0 : s.error) === "color-not-owned") throw new Error(st());
-        if ((s == null ? void 0 : s.error) === "event-pixel-present") throw new Error(rt());
-        if ((s == null ? void 0 : s.error) === "challenge-required")
-          if (s.tier) {
-            if (await et(s.tier)) return this.paint(t);
+        if ((u == null ? void 0 : u.error) === "refresh") throw new Error(ut());
+        if ((u == null ? void 0 : u.error) === "color-not-owned") throw new Error(st());
+        if ((u == null ? void 0 : u.error) === "event-pixel-present") throw new Error(rt());
+        if ((u == null ? void 0 : u.error) === "challenge-required")
+          if (u.tier) {
+            if (await et(u.tier)) return this.paint(t);
             throw new Error(Me())
-          } else console.error("Challenge required but no tier provided", s);
-        if ((s == null ? void 0 : s.error) === "verification-required") {
+          } else console.error("Challenge required but no tier provided", u);
+        if ((u == null ? void 0 : u.error) === "verification-required") {
           const f = (await qt().get()).sealed_result;
           if (f) return await this.verifyAnticheat(f), this.paint(t);
-          throw new Error(u())
+          throw new Error(s())
         }
         V.refresh()
-      } else throw new Error(u())
+      } else throw new Error(s())
     }
     return {
       worldCupQuestCompleted: !1
@@ -3501,7 +3502,7 @@ class Lk {
       },
       credentials: "include"
     });
-    if (e.status !== i.OK) throw new l(u(), e.status);
+    if (e.status !== i.OK) throw new l(s(), e.status);
     return e.json()
   }
   async getReverseTimestamps(t, e = {}) {
@@ -3522,7 +3523,7 @@ class Lk {
       },
       credentials: "include"
     });
-    if (c.status !== i.OK) throw new l(u(), c.status);
+    if (c.status !== i.OK) throw new l(s(), c.status);
     return c.json()
   }
   async getReversePreview(t, e) {
@@ -3543,7 +3544,7 @@ class Lk {
       },
       credentials: "include"
     });
-    if (c.status !== i.OK) throw new l(u(), c.status);
+    if (c.status !== i.OK) throw new l(s(), c.status);
     return c.json()
   }
   async getReverseTimelapse(t, e) {
@@ -3565,9 +3566,9 @@ class Lk {
     if (r.status === i.BAD_REQUEST) {
       const o = await r.json(),
         a = (o == null ? void 0 : o.error) ?? "";
-      throw a === "timelapse_too_many_events" ? new l(uy(), i.BAD_REQUEST) : new l(typeof a == "string" && a ? a : u(), i.BAD_REQUEST)
+      throw a === "timelapse_too_many_events" ? new l(uy(), i.BAD_REQUEST) : new l(typeof a == "string" && a ? a : s(), i.BAD_REQUEST)
     }
-    if (r.status !== i.OK) throw new l(u(), r.status);
+    if (r.status !== i.OK) throw new l(s(), r.status);
     return r.arrayBuffer()
   }
   async applyReverse(t, e) {
@@ -3588,12 +3589,12 @@ class Lk {
       },
       credentials: "include"
     });
-    if (c.status !== i.OK) throw new l(u(), c.status);
+    if (c.status !== i.OK) throw new l(s(), c.status);
     return c.json()
   }
   async sendPaintRequests(t, e, r, o) {
     const a = ht(t, _ => `t=(${_.tile[0]},${_.tile[1]}),s=${_.season}`),
-      s = (await Promise.all(Object.values(a).map(async _ => {
+      u = (await Promise.all(Object.values(a).map(async _ => {
         const [f, O] = _[0].tile, y = _[0].season, D = {
           colors: _.map(z => z.colorIdx),
           coords: _.flatMap(z => z.pixel),
@@ -3606,8 +3607,8 @@ class Lk {
           credentials: "include"
         })
       }))).filter(_ => _.status !== i.OK);
-    if (s.length) {
-      const _ = s[0];
+    if (u.length) {
+      const _ = u[0];
       if (_.status === i.UNAUTHORIZED) throw new Error(_t());
       if (_.status === i.FORBIDDEN) {
         if (_.headers.get("cf-mitigated") === "challenge") throw new Error(it());
@@ -3622,7 +3623,7 @@ class Lk {
         if ((f == null ? void 0 : f.error) === "color-not-owned") throw new Error(st());
         if ((f == null ? void 0 : f.error) === "event-pixel-present") throw new Error(rt());
         V.refresh()
-      } else throw new Error(u())
+      } else throw new Error(s())
     }
   }
   async adminAutoPainterPaint(t, e, r) {
@@ -3630,13 +3631,13 @@ class Lk {
       a = await Mk(o),
       c = new FormData;
     c.append("fingerprint", e), c.append("season", o.season.toString()), c.append("px0", o.offsetX.toString()), c.append("py0", o.offsetY.toString()), c.append("width", o.width.toString()), c.append("height", o.height.toString()), c.append("pixels", t.length.toString()), c.append("bitmap", a, "auto-painter.png"), c.append("userId", r.toString());
-    const s = await this.request("/staff/tools/auto-painter/paint", {
+    const u = await this.request("/staff/tools/auto-painter/paint", {
       method: "POST",
       body: c,
       credentials: "include"
     });
-    if (s.status === i.FORBIDDEN) {
-      const _ = await s.json().catch(() => null);
+    if (u.status === i.FORBIDDEN) {
+      const _ = await u.json().catch(() => null);
       if (typeof(_ == null ? void 0 : _.charges) == "number") throw new Error(Bg({
         charges: Math.floor(_.charges),
         pixels: t.length
@@ -3644,8 +3645,8 @@ class Lk {
       const f = typeof(_ == null ? void 0 : _.error) == "string" ? _.error.trim() : "";
       throw f && f !== "Forbidden" ? new Error(f) : new Error("Auto painter is restricted to administrators.")
     }
-    if (s.status !== i.OK) throw new Error(u());
-    return s.json()
+    if (u.status !== i.OK) throw new Error(s());
+    return u.json()
   }
   async getPixelInfo({
     season: t,
@@ -3654,29 +3655,29 @@ class Lk {
   }) {
     const c = new URLSearchParams;
     c.set("x", String(o)), c.set("y", String(a));
-    const s = await this.request(`/s${t}/pixel/${e}/${r}?${c.toString()}`, {
+    const u = await this.request(`/s${t}/pixel/${e}/${r}?${c.toString()}`, {
       credentials: "include"
     });
-    if (s.status !== i.OK) {
-      const _ = await s.text();
+    if (u.status !== i.OK) {
+      const _ = await u.text();
       throw new Error(Ws({
         err: _
       }))
     }
-    return s.json()
+    return u.json()
   }
   async getPixelAreaInfo({
     season: t,
     tile: [e, r],
     p0: [o, a],
-    p1: [c, s]
+    p1: [c, u]
   }) {
-    const _ = await this.request(`/staff/tools/select-area/s${t}/${e}/${r}?x0=${o}&y0=${a}&x1=${c}&y1=${s}`, {
+    const _ = await this.request(`/staff/tools/select-area/s${t}/${e}/${r}?x0=${o}&y0=${a}&x1=${c}&y1=${u}`, {
       credentials: "include"
     });
     if (_.status !== i.OK) {
       const S = await _.text();
-      throw console.error("Error while fetching pixel area info", S), new Error(u())
+      throw console.error("Error while fetching pixel area info", S), new Error(s())
     }
     const f = await _.arrayBuffer(),
       O = new DataView(f),
@@ -3852,7 +3853,7 @@ class Lk {
     const t = await this.request("/anticheat/otp/cooldown", {
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new Error(u());
+    if (t.status !== i.OK) throw new Error(s());
     return await t.json()
   }
   async sendOtp(t) {
@@ -3876,7 +3877,7 @@ class Lk {
     if (e.status === i.UNPROCESSABLE_ENTITY) throw new Error(yh());
     if (e.status === i.NOT_ACCEPTABLE) throw new Error(Fb());
     if (e.status === i.PRECONDITION_FAILED) throw new Error(_a());
-    if (e.status !== i.OK) throw new Error(u());
+    if (e.status !== i.OK) throw new Error(s());
     return await e.json()
   }
   async verifyChallenge(t) {
@@ -3910,10 +3911,10 @@ class Lk {
       if (r.status === i.GONE) throw new Error(bu());
       if (r.status === i.BAD_REQUEST) throw new Error(Ep());
       if (r.status === i.TOO_MANY_REQUESTS) throw new Error(ct());
-      if (r.status !== i.OK) throw new Error(u())
+      if (r.status !== i.OK) throw new Error(s())
     } else {
       if (r.status === i.BAD_REQUEST) throw new Error(cp());
-      if (r.status !== i.OK) throw new Error(u())
+      if (r.status !== i.OK) throw new Error(s())
     }
   }
   async verifyAnticheat(t) {
@@ -3923,7 +3924,7 @@ class Lk {
         body: JSON.stringify({
           sealedResults: t.base64()
         })
-      })).status !== i.OK) throw new Error(u())
+      })).status !== i.OK) throw new Error(s())
   }
   async updateMe(t) {
     const e = await this.request("/me/update", {
@@ -3943,7 +3944,7 @@ class Lk {
         }))
       }
       throw new Error(r == null ? void 0 : r.error)
-    } else if (e.status !== i.OK) throw new Error(u())
+    } else if (e.status !== i.OK) throw new Error(s())
   }
   async deleteMe(t) {
     const e = await this.request("/me", {
@@ -3954,7 +3955,7 @@ class Lk {
       })
     });
     if (e.status === i.BAD_REQUEST) throw new Error(ib());
-    if (e.status !== i.OK) throw new Error(u())
+    if (e.status !== i.OK) throw new Error(s())
   }
   async favoriteLocation(t) {
     const e = await this.request("/favorite-location", {
@@ -3966,7 +3967,7 @@ class Lk {
       credentials: "include"
     });
     if (e.status === i.FORBIDDEN) throw new Error(Sg());
-    if (e.status !== i.OK) throw new Error(u())
+    if (e.status !== i.OK) throw new Error(s())
   }
   async deleteFavoriteLocation(t) {
     if ((await this.request("/favorite-location/delete", {
@@ -3975,7 +3976,7 @@ class Lk {
           id: t
         }),
         credentials: "include"
-      })).status !== i.OK) throw new Error(u())
+      })).status !== i.OK) throw new Error(s())
   }
   async updateFavoriteLocation(t, e) {
     const r = await this.request("/favorite-location/update", {
@@ -3987,7 +3988,7 @@ class Lk {
       credentials: "include"
     });
     if (r.status === i.BAD_REQUEST) throw new Error(rm());
-    if (r.status !== i.OK) throw new Error(u())
+    if (r.status !== i.OK) throw new Error(s())
   }
   async leaderboardPlayers(t) {
     const e = await this.request(`/leaderboard/player/${t}`);
@@ -4038,7 +4039,7 @@ class Lk {
   }
   async getRandomTile(t) {
     const e = await this.request(`/s${t}/tile/random`);
-    if (e.status !== i.OK) throw new Error(u());
+    if (e.status !== i.OK) throw new Error(s());
     return e.json()
   }
   async purchase(t) {
@@ -4049,7 +4050,7 @@ class Lk {
         product: t
       })
     });
-    if (e.status !== i.OK) throw e.status === i.NOT_FOUND ? new Error(ot()) : e.status === i.FORBIDDEN ? new Error(dt()) : e.status === i.CONFLICT ? new Error(lt()) : new Error(u())
+    if (e.status !== i.OK) throw e.status === i.NOT_FOUND ? new Error(ot()) : e.status === i.FORBIDDEN ? new Error(dt()) : e.status === i.CONFLICT ? new Error(lt()) : new Error(s())
   }
   async getAlliance() {
     const t = await this.request("/alliance", {
@@ -4057,7 +4058,7 @@ class Lk {
     });
     if (t.status === i.OK) return t.json();
     if (t.status === i.NOT_FOUND) return;
-    throw new Error(u())
+    throw new Error(s())
   }
   async createAlliance(t) {
     const e = await this.request("/alliance", {
@@ -4070,14 +4071,14 @@ class Lk {
     if (e.status === i.OK) return e.json();
     if (e.status === i.BAD_REQUEST) {
       const r = await e.json();
-      throw r.error === "max_characters" ? new Error(Vr()) : r.error === "name_taken" ? new Error(xr()) : r.error == "empty_name" ? new Error(io()) : new Error(u())
-    } else throw e.status === i.FORBIDDEN ? new Error(Sv()) : new Error(u())
+      throw r.error === "max_characters" ? new Error(Vr()) : r.error === "name_taken" ? new Error(xr()) : r.error == "empty_name" ? new Error(io()) : new Error(s())
+    } else throw e.status === i.FORBIDDEN ? new Error(Sv()) : new Error(s())
   }
   async leaveAlliance() {
     if ((await this.request("/alliance/leave", {
         method: "POST",
         credentials: "include"
-      })).status !== i.OK) throw new Error(u())
+      })).status !== i.OK) throw new Error(s())
   }
   async updateAllianceDescription(t) {
     const e = await this.request("/alliance/update-description", {
@@ -4087,7 +4088,7 @@ class Lk {
         description: t
       })
     });
-    if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(F()) : e.status === i.BAD_REQUEST ? new Error(su()) : new Error(u())
+    if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(F()) : e.status === i.BAD_REQUEST ? new Error(su()) : new Error(s())
   }
   async updateAllianceHeadquarters(t, e) {
     const r = await this.request("/alliance/update-headquarters", {
@@ -4098,7 +4099,7 @@ class Lk {
         longitude: e
       })
     });
-    if (r.status !== i.OK) throw r.status === i.FORBIDDEN ? new Error(F()) : new Error(u())
+    if (r.status !== i.OK) throw r.status === i.FORBIDDEN ? new Error(F()) : new Error(s())
   }
   async allianceLeaderboard(t) {
     const e = await this.request(`/alliance/leaderboard/${t}`, {
@@ -4112,7 +4113,7 @@ class Lk {
       credentials: "include"
     });
     if (t.status === i.OK) return t.json();
-    throw t.status === i.FORBIDDEN ? new Error(F()) : new Error(u())
+    throw t.status === i.FORBIDDEN ? new Error(F()) : new Error(s())
   }
   async joinAlliance(t) {
     switch ((await this.request(`/alliance/join/${t}`, {
@@ -4138,14 +4139,14 @@ class Lk {
       credentials: "include"
     });
     if (e.status === i.OK) return e.json();
-    throw new Error(u())
+    throw new Error(s())
   }
   async getAllianceBannedMembers(t) {
     const e = await this.request(`/alliance/members/banned/${t}`, {
       credentials: "include"
     });
     if (e.status === i.OK) return e.json();
-    throw new Error(u())
+    throw new Error(s())
   }
   async getAllianceById(t) {
     const e = await this.request(`/staff/dashboard/alliances/${t}`, {
@@ -4153,7 +4154,7 @@ class Lk {
       credentials: "include"
     });
     if (e.status === i.NOT_FOUND) return;
-    if (e.status !== i.OK) throw new l(u(), e.status);
+    if (e.status !== i.OK) throw new l(s(), e.status);
     const r = await e.json();
     return {
       id: Number(r.id),
@@ -4169,7 +4170,7 @@ class Lk {
         method: "GET",
         credentials: "include"
       });
-    if (r.status !== i.OK) throw new l(u(), r.status);
+    if (r.status !== i.OK) throw new l(s(), r.status);
     const o = await r.json();
     return (Array.isArray(o) ? o : []).map(a => ({
       id: Number(a.id),
@@ -4186,7 +4187,7 @@ class Lk {
       credentials: "include"
     });
     if (e.status === i.NOT_FOUND) return null;
-    if (e.status !== i.OK) throw new l(u(), e.status);
+    if (e.status !== i.OK) throw new l(s(), e.status);
     const r = await e.json(),
       o = Array.isArray(r == null ? void 0 : r.members) ? r.members : [];
     return {
@@ -4226,20 +4227,20 @@ class Lk {
       members: [],
       total: 0
     };
-    if (o.status !== i.OK) throw new l(u(), o.status);
+    if (o.status !== i.OK) throw new l(s(), o.status);
     const a = await o.json(),
       c = Array.isArray(a == null ? void 0 : a.members) ? a.members : [];
     return {
-      members: c.map(s => ({
-        id: Number(s == null ? void 0 : s.id),
-        name: String((s == null ? void 0 : s.name) ?? `#${s==null?void 0:s.id}`),
-        picture: (s == null ? void 0 : s.picture) ?? null,
-        pixelsPainted: Number((s == null ? void 0 : s.pixelsPainted) ?? (s == null ? void 0 : s.pixels_painted) ?? 0),
-        lastPixelLatitude: (s == null ? void 0 : s.lastPixelLatitude) ?? null,
-        lastPixelLongitude: (s == null ? void 0 : s.lastPixelLongitude) ?? null,
-        role: (s == null ? void 0 : s.alliance_role) === "admin" || (s == null ? void 0 : s.role) === "admin" ? "admin" : "member",
-        timedOut: !!(s != null && s.timedOut),
-        banned: !!(s != null && s.banned)
+      members: c.map(u => ({
+        id: Number(u == null ? void 0 : u.id),
+        name: String((u == null ? void 0 : u.name) ?? `#${u==null?void 0:u.id}`),
+        picture: (u == null ? void 0 : u.picture) ?? null,
+        pixelsPainted: Number((u == null ? void 0 : u.pixelsPainted) ?? (u == null ? void 0 : u.pixels_painted) ?? 0),
+        lastPixelLatitude: (u == null ? void 0 : u.lastPixelLatitude) ?? null,
+        lastPixelLongitude: (u == null ? void 0 : u.lastPixelLongitude) ?? null,
+        role: (u == null ? void 0 : u.alliance_role) === "admin" || (u == null ? void 0 : u.role) === "admin" ? "admin" : "member",
+        timedOut: !!(u != null && u.timedOut),
+        banned: !!(u != null && u.banned)
       })),
       total: Number((a == null ? void 0 : a.total) ?? c.length)
     }
@@ -4254,8 +4255,8 @@ class Lk {
     });
     if (r.status === i.BAD_REQUEST) {
       const o = await r.json().catch(() => ({}));
-      throw new Error((o == null ? void 0 : o.error) ?? u())
-    } else if (r.status !== i.OK) throw new l(u(), r.status)
+      throw new Error((o == null ? void 0 : o.error) ?? s())
+    } else if (r.status !== i.OK) throw new l(s(), r.status)
   }
   async changeAllianceLeader(t, e) {
     const r = await this.request(`/staff/dashboard/alliances/${t}/leader`, {
@@ -4267,8 +4268,8 @@ class Lk {
     });
     if (r.status === i.BAD_REQUEST) {
       const o = await r.json();
-      throw (o == null ? void 0 : o.error) === "user_not_in_alliance" ? new Error(Dh()) : new Error(u())
-    } else if (r.status !== i.OK) throw new l(u(), r.status)
+      throw (o == null ? void 0 : o.error) === "user_not_in_alliance" ? new Error(Dh()) : new Error(s())
+    } else if (r.status !== i.OK) throw new l(s(), r.status)
   }
   async banAllAllianceMembers(t, e, r) {
     const o = await this.request(`/staff/dashboard/alliances/${t}/ban-all`, {
@@ -4279,7 +4280,7 @@ class Lk {
         notes: r
       })
     });
-    if (o.status !== i.OK) throw new l(u(), o.status)
+    if (o.status !== i.OK) throw new l(s(), o.status)
   }
   async setAllianceMemberRole(t, e, r) {
     const o = await this.request(`/staff/dashboard/alliances/${t}/members/${e}/role`, {
@@ -4289,14 +4290,14 @@ class Lk {
         role: r
       })
     });
-    if (o.status !== i.OK) throw new l(u(), o.status)
+    if (o.status !== i.OK) throw new l(s(), o.status)
   }
   async removeAllianceMember(t, e) {
     const r = await this.request(`/staff/dashboard/alliances/${t}/members/${e}/remove`, {
       method: "POST",
       credentials: "include"
     });
-    if (r.status !== i.OK) throw new l(u(), r.status)
+    if (r.status !== i.OK) throw new l(s(), r.status)
   }
   async giveAllianceAdmin(t) {
     const e = await this.request("/alliance/give-admin", {
@@ -4306,7 +4307,7 @@ class Lk {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(F()) : new Error(u())
+    if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(F()) : new Error(s())
   }
   async banAllianceUser(t) {
     const e = await this.request("/alliance/ban", {
@@ -4316,19 +4317,19 @@ class Lk {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(F()) : new Error(u())
+    if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(F()) : new Error(s())
   }
   async equipFlag(t) {
     if ((await this.request(`/flag/equip/${t}`, {
         method: "POST",
         credentials: "include"
-      })).status !== i.OK) throw new Error(u())
+      })).status !== i.OK) throw new Error(s())
   }
   async getMyProfilePictures() {
     const t = await this.request("/me/profile-pictures", {
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new Error(u());
+    if (t.status !== i.OK) throw new Error(s());
     return t.json()
   }
   async changeProfilePicture(t) {
@@ -4338,7 +4339,7 @@ class Lk {
         body: JSON.stringify({
           pictureId: t
         })
-      })).status !== i.OK) throw new Error(u())
+      })).status !== i.OK) throw new Error(s())
   }
   async unbanAllianceUser(t) {
     const e = await this.request("/alliance/unban", {
@@ -4348,7 +4349,7 @@ class Lk {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(F()) : new Error(u())
+    if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(F()) : new Error(s())
   }
   async health() {
     return (await this.request("/health")).json()
@@ -4358,7 +4359,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new Error(u());
+    if (t.status !== i.OK) throw new Error(s());
     return t.json()
   }
   async verifyPlayPurchase(t) {
@@ -4375,7 +4376,7 @@ class Lk {
       throw new Error((r == null ? void 0 : r.error) ?? "Invalid Play purchase")
     }
     if (e.status === i.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(nt());
-    if (e.status !== i.OK) throw new Error(u());
+    if (e.status !== i.OK) throw new Error(s());
     return e.json()
   }
   async verifyPendingPlayPurchases() {
@@ -4383,7 +4384,7 @@ class Lk {
       method: "POST",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new Error(u());
+    if (t.status !== i.OK) throw new Error(s());
     return t.json()
   }
   async getPlayClaimStatus(t) {
@@ -4395,7 +4396,7 @@ class Lk {
       status: "unknown",
       droplets: 0
     };
-    if (e.status !== i.OK) throw new Error(u());
+    if (e.status !== i.OK) throw new Error(s());
     return e.json()
   }
   async listPlayPurchaseHistory() {
@@ -4403,7 +4404,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new Error(u());
+    if (t.status !== i.OK) throw new Error(s());
     return t.json()
   }
   async getModeratorTickets() {
@@ -4411,7 +4412,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status);
+    if (t.status !== i.OK) throw new l(s(), t.status);
     const e = await t.json();
     for (const r of e.tickets) r.reports.sort((o, a) => pt[o.reason] - pt[a.reason]);
     return e
@@ -4421,7 +4422,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status);
+    if (t.status !== i.OK) throw new l(s(), t.status);
     return t.json()
   }
   async getOpenTicketsCount() {
@@ -4429,7 +4430,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status);
+    if (t.status !== i.OK) throw new l(s(), t.status);
     const {
       tickets: e
     } = await t.json();
@@ -4440,7 +4441,7 @@ class Lk {
       method: "POST",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status);
+    if (t.status !== i.OK) throw new l(s(), t.status);
     return t.json()
   }
   async setTicketStatus(t, e, r, o, a) {
@@ -4455,14 +4456,14 @@ class Lk {
         ignoreReason: a
       })
     });
-    if (c.status !== i.OK && c.status !== i.BAD_REQUEST) throw new l(u(), c.status)
+    if (c.status !== i.OK && c.status !== i.BAD_REQUEST) throw new l(s(), c.status)
   }
   async getLastResolvedTicket() {
     const t = await this.request("/staff/tickets/reversals/last-resolved", {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status);
+    if (t.status !== i.OK) throw new l(s(), t.status);
     return (await t.json()).ticket
   }
   async getTicketReversalTicketInfo(t) {
@@ -4470,7 +4471,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== i.OK) throw new l(u(), e.status);
+    if (e.status !== i.OK) throw new l(s(), e.status);
     return (await e.json()).ticket
   }
   async createTicketReversal(t) {
@@ -4481,9 +4482,9 @@ class Lk {
     });
     if (e.status === i.CONFLICT) {
       const r = await e.json().catch(() => ({}));
-      throw (r == null ? void 0 : r.error) === "reversal_already_pending" ? new l(HE(), i.CONFLICT) : new l(u(), i.CONFLICT)
+      throw (r == null ? void 0 : r.error) === "reversal_already_pending" ? new l(HE(), i.CONFLICT) : new l(s(), i.CONFLICT)
     }
-    if (e.status !== i.OK) throw new l(u(), e.status);
+    if (e.status !== i.OK) throw new l(s(), e.status);
     return e.json()
   }
   async reSolveTicket(t) {
@@ -4492,7 +4493,7 @@ class Lk {
       credentials: "include",
       body: JSON.stringify(t)
     });
-    if (e.status !== i.OK) throw new l(u(), e.status);
+    if (e.status !== i.OK) throw new l(s(), e.status);
     return e.json()
   }
   async listTicketReversals(t = {}) {
@@ -4503,7 +4504,7 @@ class Lk {
         method: "GET",
         credentials: "include"
       });
-    if (o.status !== i.OK) throw new l(u(), o.status);
+    if (o.status !== i.OK) throw new l(s(), o.status);
     return (await o.json()).reversals ?? []
   }
   async getTicketReversal(t) {
@@ -4511,7 +4512,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== i.OK) throw new l(u(), e.status);
+    if (e.status !== i.OK) throw new l(s(), e.status);
     return (await e.json()).reversal
   }
   async reviewTicketReversal(t, e, r) {
@@ -4525,7 +4526,7 @@ class Lk {
     });
     if (o.status === i.FORBIDDEN) throw new l(ak(), i.FORBIDDEN);
     if (o.status === i.CONFLICT) throw new l(yk(), i.CONFLICT);
-    if (o.status !== i.OK) throw new l(u(), o.status)
+    if (o.status !== i.OK) throw new l(s(), o.status)
   }
   async request(t, e) {
     var c;
@@ -4536,8 +4537,8 @@ class Lk {
     };
     try {
       r = await fetch(`${this.url}${t}`, e), this.online = !0, this.updateServerTimeEstimate(r)
-    } catch (s) {
-      throw console.error("Fetch error:", s), this.online = !1, new Error(zi())
+    } catch (u) {
+      throw console.error("Fetch error:", u), this.online = !1, new Error(zi())
     }
     if (r.status === i.FORBIDDEN && r.headers.get("x-block-reason") === "tor") throw new Error(Vy());
     const o = ((c = r.headers.get("cf-mitigated")) == null ? void 0 : c.toLowerCase()) === "challenge";
@@ -4557,7 +4558,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status);
+    if (t.status !== i.OK) throw new l(s(), t.status);
     return t.json()
   }
   async getOpenReportsSummary() {
@@ -4565,7 +4566,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status);
+    if (t.status !== i.OK) throw new l(s(), t.status);
     return t.json()
   }
   async getBanAppealStats(t, e) {
@@ -4573,7 +4574,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== i.OK) throw new l(u(), r.status);
+    if (r.status !== i.OK) throw new l(s(), r.status);
     const o = await r.json();
     return {
       items: o.items ?? [],
@@ -4585,7 +4586,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== i.OK) throw new l(u(), r.status);
+    if (r.status !== i.OK) throw new l(s(), r.status);
     return (await r.json()).items.map(a => ({
       ...a,
       suspensionRate: (a.ban + a.timeout) / a.total
@@ -4596,7 +4597,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== i.OK) throw new l(u(), r.status);
+    if (r.status !== i.OK) throw new l(s(), r.status);
     return (await r.json()).items.map(a => ({
       ...a,
       suspensionRate: (a.ban + a.timeout) / a.total
@@ -4610,7 +4611,7 @@ class Lk {
         userIds: t
       })
     });
-    if (e.status !== i.OK) throw new l(u(), e.status);
+    if (e.status !== i.OK) throw new l(s(), e.status);
     return e.json()
   }
   async getUserInfoFull(t) {
@@ -4619,7 +4620,7 @@ class Lk {
       credentials: "include"
     });
     if (e.status !== i.NOT_FOUND) {
-      if (e.status !== i.OK) throw new l(u(), e.status);
+      if (e.status !== i.OK) throw new l(s(), e.status);
       return e.json()
     }
   }
@@ -4630,7 +4631,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== i.OK) throw new l(u(), r.status);
+    if (r.status !== i.OK) throw new l(s(), r.status);
     return r.json()
   }
   async getUserInfoByEmail(t) {
@@ -4639,7 +4640,7 @@ class Lk {
       credentials: "include"
     });
     if (e.status !== i.NOT_FOUND) {
-      if (e.status !== i.OK) throw new l(u(), e.status);
+      if (e.status !== i.OK) throw new l(s(), e.status);
       return e.json()
     }
   }
@@ -4648,7 +4649,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== i.OK) throw new l(u(), e.status);
+    if (e.status !== i.OK) throw new l(s(), e.status);
     return (await e.json()).punishments ?? []
   }
   async getUserAnticheat(t) {
@@ -4656,7 +4657,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== i.OK) throw new l(u(), e.status);
+    if (e.status !== i.OK) throw new l(s(), e.status);
     return await e.json()
   }
   async getPunishmentTicket(t) {
@@ -4664,7 +4665,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== i.OK) throw new l(u(), e.status);
+    if (e.status !== i.OK) throw new l(s(), e.status);
     return (await e.json()).ticket
   }
   async overturnPunishment(t) {
@@ -4675,7 +4676,18 @@ class Lk {
         punishmentId: t
       })
     });
-    if (e.status !== i.OK) throw new l(u(), e.status)
+    if (e.status !== i.OK) throw new l(s(), e.status)
+  }
+  async autoReviewBan(t) {
+    const e = await this.request("/staff/dashboard/users/auto-review-ban", {
+      method: "POST",
+      credentials: "include",
+      body: JSON.stringify({
+        userId: t
+      })
+    });
+    if (e.status !== i.OK) throw new l(s(), e.status);
+    return await e.json()
   }
   async getUserNotes(t, e) {
     const r = e == "dashboard" ? `/staff/dashboard/users/notes?userId=${encodeURIComponent(t)}` : `/staff/appeals/notes?userId=${encodeURIComponent(t)}`,
@@ -4683,7 +4695,7 @@ class Lk {
         method: "GET",
         credentials: "include"
       });
-    if (o.status !== i.OK) throw new l(u(), o.status);
+    if (o.status !== i.OK) throw new l(s(), o.status);
     return o.json()
   }
   async addUserNote(t, e, r) {
@@ -4696,14 +4708,14 @@ class Lk {
           note: e
         })
       });
-    if (a.status !== i.OK) throw new l(u(), a.status)
+    if (a.status !== i.OK) throw new l(s(), a.status)
   }
   async getUserPermissions(t) {
     const e = await this.request(`/staff/dashboard/permissions/get?userId=${encodeURIComponent(t)}`, {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== i.OK) throw new l(u(), e.status);
+    if (e.status !== i.OK) throw new l(s(), e.status);
     return e.json()
   }
   async setUserPermissions(t, e) {
@@ -4715,7 +4727,7 @@ class Lk {
         permissions: Array.from(e)
       })
     });
-    if (r.status !== i.OK) throw new l(u(), r.status);
+    if (r.status !== i.OK) throw new l(s(), r.status);
     const o = await r.json();
     return Array.isArray(o == null ? void 0 : o.permissions) ? o.permissions : []
   }
@@ -4724,15 +4736,15 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== i.OK) throw new l(u(), e.status);
+    if (e.status !== i.OK) throw new l(s(), e.status);
     const r = await e.json();
     return (Array.isArray(r == null ? void 0 : r.purchases) ? r.purchases : []).map(a => {
       const c = a.is_dollar ?? a.isDollar ?? a.currency ?? a.Currency ?? 0;
-      let s;
+      let u;
       if (typeof c == "string") {
         const y = c.toLowerCase();
-        s = y === "usd" || y === "dollar" || y === "true"
-      } else typeof c == "number" ? s = c !== 0 : s = !!c;
+        u = y === "usd" || y === "dollar" || y === "true"
+      } else typeof c == "number" ? u = c !== 0 : u = !!c;
       const _ = typeof a.createdAt == "string" ? a.createdAt : a.CreatedAt ? new Date(a.CreatedAt).toISOString() : "",
         f = a.product_variant ?? a.productVariant,
         O = f == null || f === "" ? null : Number(f);
@@ -4740,7 +4752,7 @@ class Lk {
         product_name: String(a.productName ?? a.product_name ?? ""),
         amount: Number(a.amount ?? 0),
         price: Number(a.price ?? 0),
-        is_dollar: s,
+        is_dollar: u,
         created_at: _,
         product_variant: Number.isInteger(O) ? O : null
       }
@@ -4755,7 +4767,7 @@ class Lk {
         droplets: e
       })
     });
-    if (r.status !== i.OK) throw new l(u(), r.status)
+    if (r.status !== i.OK) throw new l(s(), r.status)
   }
   async postAdminRenameUser(t, e, r) {
     const o = await this.request("/staff/dashboard/users/rename", {
@@ -4770,9 +4782,9 @@ class Lk {
     if (o.status === i.BAD_REQUEST) {
       const a = await o.json(),
         c = (a == null ? void 0 : a.error) ?? "";
-      throw c === "invalid_name" ? new l(at(), i.BAD_REQUEST) : new l(typeof c == "string" && c ? c : u(), i.BAD_REQUEST)
+      throw c === "invalid_name" ? new l(at(), i.BAD_REQUEST) : new l(typeof c == "string" && c ? c : s(), i.BAD_REQUEST)
     }
-    if (o.status !== i.OK) throw new l(u(), o.status)
+    if (o.status !== i.OK) throw new l(s(), o.status)
   }
   async postAdminChangeUserEmail(t, e) {
     const r = await this.request("/staff/dashboard/users/email", {
@@ -4786,7 +4798,7 @@ class Lk {
     if (r.status === i.BAD_REQUEST) {
       const o = await r.json(),
         a = (o == null ? void 0 : o.error) ?? "";
-      throw a === "email_required" || a === "invalid_email" ? new l(js(), i.BAD_REQUEST) : new l(typeof a == "string" && a ? a : u(), i.BAD_REQUEST)
+      throw a === "email_required" || a === "invalid_email" ? new l(js(), i.BAD_REQUEST) : new l(typeof a == "string" && a ? a : s(), i.BAD_REQUEST)
     }
     if (r.status === i.CONFLICT) {
       const o = await r.json();
@@ -4796,16 +4808,16 @@ class Lk {
         }) : cs(), i.CONFLICT);
         throw typeof(o == null ? void 0 : o.userId) == "number" && (c.userId = o.userId), c
       }
-      throw new l(u(), i.CONFLICT)
+      throw new l(s(), i.CONFLICT)
     }
     if (r.status === i.NOT_FOUND) throw new l("User not found.", i.NOT_FOUND);
-    if (r.status !== i.OK) throw new l(u(), r.status)
+    if (r.status !== i.OK) throw new l(s(), r.status)
   }
   async getAdminUserProfilePictures(t) {
     const e = await this.request(`/staff/dashboard/users/profile-pictures?userId=${t}`, {
       credentials: "include"
     });
-    if (e.status !== i.OK) throw new l(u(), e.status);
+    if (e.status !== i.OK) throw new l(s(), e.status);
     return e.json()
   }
   async postAdminRemoveUserPicture(t) {
@@ -4816,7 +4828,7 @@ class Lk {
         pictureId: t
       })
     });
-    if (e.status !== i.OK) throw new l(u(), e.status)
+    if (e.status !== i.OK) throw new l(s(), e.status)
   }
   async postAdminRerollUserAvatar(t) {
     const e = await this.request("/staff/dashboard/users/reroll-avatar", {
@@ -4826,7 +4838,7 @@ class Lk {
         userId: t
       })
     });
-    if (e.status !== i.OK) throw new l(u(), e.status);
+    if (e.status !== i.OK) throw new l(s(), e.status);
     return e.json()
   }
   async getUserTickets(t, e) {
@@ -4838,12 +4850,12 @@ class Lk {
         method: "GET",
         credentials: "include"
       });
-    if (a.status !== i.OK) throw new l(u(), a.status);
+    if (a.status !== i.OK) throw new l(s(), a.status);
     const c = await a.json(),
-      s = Array.isArray(c == null ? void 0 : c.tickets) ? c.tickets : [],
-      _ = typeof(c == null ? void 0 : c.total) == "number" ? c.total : s.length;
+      u = Array.isArray(c == null ? void 0 : c.tickets) ? c.tickets : [],
+      _ = typeof(c == null ? void 0 : c.total) == "number" ? c.total : u.length;
     return {
-      tickets: s,
+      tickets: u,
       total: _
     }
   }
@@ -4854,16 +4866,16 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== i.OK) throw new l(u(), r.status);
+    if (r.status !== i.OK) throw new l(s(), r.status);
     const o = await r.json(),
       a = Array.isArray(o == null ? void 0 : o.tickets) ? o.tickets : [],
       c = typeof(o == null ? void 0 : o.total) == "number" ? o.total : a.length,
-      s = typeof(o == null ? void 0 : o.matchedTotal) == "number" ? o.matchedTotal : c,
+      u = typeof(o == null ? void 0 : o.matchedTotal) == "number" ? o.matchedTotal : c,
       _ = typeof(o == null ? void 0 : o.reviewedTotal) == "number" ? o.reviewedTotal : 0;
     return {
       tickets: a,
       total: c,
-      matchedTotal: s,
+      matchedTotal: u,
       reviewedTotal: _
     }
   }
@@ -4873,7 +4885,7 @@ class Lk {
       credentials: "include",
       body: JSON.stringify(t)
     });
-    if (e.status !== i.OK) throw new l(u(), e.status);
+    if (e.status !== i.OK) throw new l(s(), e.status);
     return e.json()
   }
   async getTicketOverturnInfo(t) {
@@ -4881,7 +4893,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (e.status !== i.OK) throw new l(u(), e.status);
+    if (e.status !== i.OK) throw new l(s(), e.status);
     return e.json()
   }
   async getUserAppeals(t) {
@@ -4891,7 +4903,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== i.OK) throw new l(u(), r.status);
+    if (r.status !== i.OK) throw new l(s(), r.status);
     const o = await r.json(),
       a = Array.isArray(o == null ? void 0 : o.appeals) ? o.appeals : [],
       c = typeof(o == null ? void 0 : o.total) == "number" ? o.total : a.length;
@@ -4909,12 +4921,12 @@ class Lk {
           text: t
         })
       });
-    if (o.status !== i.OK) throw new l(u(), o.status);
+    if (o.status !== i.OK) throw new l(s(), o.status);
     const a = await o.json();
     return a == null ? void 0 : a.translation
   }
   mapTicketsToReportRows(t, e) {
-    var o, a, c, s, _;
+    var o, a, c, u, _;
     const r = [];
     for (const f of t) {
       const O = f.status ?? "open";
@@ -4961,7 +4973,7 @@ class Lk {
           name: "—",
           picture: null
         },
-        reason: String(((_ = (s = f.reports) == null ? void 0 : s[0]) == null ? void 0 : _.reason) ?? "other"),
+        reason: String(((_ = (u = f.reports) == null ? void 0 : u[0]) == null ? void 0 : _.reason) ?? "other"),
         status: O
       })
     }
@@ -4975,7 +4987,7 @@ class Lk {
         method: "GET",
         credentials: "include"
       });
-    if (r.status !== i.OK) throw new l(u(), r.status);
+    if (r.status !== i.OK) throw new l(s(), r.status);
     return r.json()
   }
   async unlinkDiscord() {
@@ -4983,21 +4995,21 @@ class Lk {
       method: "POST",
       credentials: "include"
     });
-    if (t.status !== i.NO_CONTENT) throw new l(u(), t.status)
+    if (t.status !== i.NO_CONTENT) throw new l(s(), t.status)
   }
   async deleteSessions() {
     const t = await this.request("/me/sessions", {
       method: "DELETE",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status)
+    if (t.status !== i.OK) throw new l(s(), t.status)
   }
   async deleteAllUserSessions(t) {
     const e = await this.request(`/staff/dashboard/users/${t}/sessions`, {
       method: "DELETE",
       credentials: "include"
     });
-    if (e.status !== i.OK) throw new l(u(), e.status)
+    if (e.status !== i.OK) throw new l(s(), e.status)
   }
   async banUsers(t, e, r) {
     const o = await this.request("/staff/dashboard/summary/users/ban", {
@@ -5009,7 +5021,7 @@ class Lk {
         notes: r
       })
     });
-    if (o.status !== i.OK) throw new l(u(), o.status)
+    if (o.status !== i.OK) throw new l(s(), o.status)
   }
   async timeoutUsers(t, e, r) {
     const o = await this.request("/staff/dashboard/summary/users/timeout", {
@@ -5021,7 +5033,7 @@ class Lk {
         notes: r
       })
     });
-    if (o.status !== i.OK) throw new l(u(), o.status)
+    if (o.status !== i.OK) throw new l(s(), o.status)
   }
   async incrementUsersDroplets(t, e, r) {
     const o = await this.request("/staff/dashboard/summary/users/increment-droplet", {
@@ -5033,7 +5045,7 @@ class Lk {
         notes: r
       })
     });
-    if (o.status !== i.OK) throw new l(u(), o.status)
+    if (o.status !== i.OK) throw new l(s(), o.status)
   }
   async reloadPunishmentCache() {
     const t = await this.request("/staff/dashboard/summary/reload-punishment-cache", {
@@ -5041,7 +5053,7 @@ class Lk {
       credentials: "include"
     });
     if (t.status === i.CONFLICT) throw new l(ur(), t.status);
-    if (t.status !== i.OK && t.status !== i.ACCEPTED) throw new l(u(), t.status)
+    if (t.status !== i.OK && t.status !== i.ACCEPTED) throw new l(s(), t.status)
   }
   async postUnbanUsers(t, e) {
     const r = await this.request("/staff/dashboard/summary/users/unban", {
@@ -5052,7 +5064,7 @@ class Lk {
         notes: e
       })
     });
-    if (r.status !== i.OK) throw new l(u(), r.status)
+    if (r.status !== i.OK) throw new l(s(), r.status)
   }
   async postAnticheatUnbanUsers(t, e) {
     const r = await this.request("/staff/dashboard/anticheat/unban", {
@@ -5063,7 +5075,7 @@ class Lk {
         notes: e
       })
     });
-    if (r.status !== i.OK) throw new l(u(), r.status)
+    if (r.status !== i.OK) throw new l(s(), r.status)
   }
   async postAnticheatBanUsers(t, e, r) {
     const o = await this.request("/staff/dashboard/anticheat/ban", {
@@ -5075,7 +5087,7 @@ class Lk {
         reason: r
       })
     });
-    if (o.status !== i.OK) throw new l(u(), o.status)
+    if (o.status !== i.OK) throw new l(s(), o.status)
   }
   async postBulkPhoneVerification(t, e) {
     const r = await this.request("/staff/dashboard/summary/users/phone-verification", {
@@ -5086,7 +5098,7 @@ class Lk {
         notes: e
       })
     });
-    if (r.status !== i.OK) throw new l(u(), r.status);
+    if (r.status !== i.OK) throw new l(s(), r.status);
     return await r.json()
   }
   async getAuditLogs(t) {
@@ -5096,7 +5108,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== i.OK) throw new l(u(), r.status);
+    if (r.status !== i.OK) throw new l(s(), r.status);
     return r.json()
   }
   async postUsersSuspend(t, e, r) {
@@ -5120,7 +5132,7 @@ class Lk {
         method: "POST",
         credentials: "include",
         body: JSON.stringify(t)
-      })).status !== i.OK) throw new Error(u())
+      })).status !== i.OK) throw new Error(s())
   }
   async postSelectAreaPhoneVerification(t, e = "") {
     const r = await this.request("/staff/tools/select-area/phone-verification", {
@@ -5131,7 +5143,7 @@ class Lk {
         notes: e
       })
     });
-    if (r.status !== i.OK) throw new l(u(), r.status);
+    if (r.status !== i.OK) throw new l(s(), r.status);
     return await r.json()
   }
   async postDashboardUserPhoneVerification(t, e = "") {
@@ -5143,7 +5155,7 @@ class Lk {
         notes: e
       })
     });
-    if (r.status !== i.OK) throw new l(u(), r.status);
+    if (r.status !== i.OK) throw new l(s(), r.status);
     return await r.json()
   }
   async postReportUserName(t) {
@@ -5154,7 +5166,7 @@ class Lk {
         userId: t
       })
     });
-    if (e.status !== i.OK) throw new l(u(), e.status)
+    if (e.status !== i.OK) throw new l(s(), e.status)
   }
   async postReportAllianceName(t) {
     const e = await this.request("/report/alliance/name", {
@@ -5164,7 +5176,7 @@ class Lk {
         allianceId: t
       })
     });
-    if (e.status !== i.OK) throw new l(u(), e.status);
+    if (e.status !== i.OK) throw new l(s(), e.status);
     return e.json()
   }
   async submitBanAppeal(t, e) {
@@ -5188,7 +5200,7 @@ class Lk {
         throw new l(Me(), a.status)
       }
     }
-    if (a.status !== i.OK && a.status !== i.ALREADY_REPORTED) throw new l(u(), a.status);
+    if (a.status !== i.OK && a.status !== i.ALREADY_REPORTED) throw new l(s(), a.status);
     return a.status
   }
   async getOpenAppeals() {
@@ -5196,7 +5208,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status);
+    if (t.status !== i.OK) throw new l(s(), t.status);
     return t.json()
   }
   async postSolveAppeal(t, e) {
@@ -5207,7 +5219,7 @@ class Lk {
         approved: e
       })
     });
-    if (r.status !== i.OK) throw new l(u(), r.status);
+    if (r.status !== i.OK) throw new l(s(), r.status);
     return await r.json()
   }
   async getUserLastAppeal() {
@@ -5215,7 +5227,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status);
+    if (t.status !== i.OK) throw new l(s(), t.status);
     const e = await t.json();
     return (e == null ? void 0 : e.appealDate) ?? null
   }
@@ -5224,7 +5236,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status);
+    if (t.status !== i.OK) throw new l(s(), t.status);
     const e = await t.json();
     return !(e != null && e.active) || !Array.isArray(e == null ? void 0 : e.punishments) ? null : {
       punishments: e.punishments.map(o => ({
@@ -5244,14 +5256,14 @@ class Lk {
       method: "POST",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status);
+    if (t.status !== i.OK) throw new l(s(), t.status);
     return await t.json()
   }
   async getNotificationCount() {
     const t = await this.request("/notification/count", {
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status);
+    if (t.status !== i.OK) throw new l(s(), t.status);
     const {
       count: e
     } = await t.json();
@@ -5262,7 +5274,7 @@ class Lk {
       o = await this.request(r, {
         credentials: "include"
       });
-    if (o.status !== i.OK) throw new l(u(), o.status);
+    if (o.status !== i.OK) throw new l(s(), o.status);
     return o.json()
   }
   async postNotificationMarkRead(t) {
@@ -5273,7 +5285,7 @@ class Lk {
         notificationIds: t
       })
     });
-    if (e.status !== i.OK) throw new l(u(), e.status);
+    if (e.status !== i.OK) throw new l(s(), e.status);
     return e.json()
   }
   async postNotificationMarkReadAll() {
@@ -5281,7 +5293,7 @@ class Lk {
       method: "POST",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status);
+    if (t.status !== i.OK) throw new l(s(), t.status);
     return t.json()
   }
   async getAnticheatStats(t, e) {
@@ -5289,7 +5301,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== i.OK) throw new l(u(), r.status);
+    if (r.status !== i.OK) throw new l(s(), r.status);
     return r.json()
   }
   async getAnticheatSignals(t, e) {
@@ -5297,7 +5309,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== i.OK) throw new l(u(), r.status);
+    if (r.status !== i.OK) throw new l(s(), r.status);
     return r.json()
   }
   async getAnticheatUserJourney(t, e, r) {
@@ -5305,7 +5317,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (o.status !== i.OK) throw new l(u(), o.status);
+    if (o.status !== i.OK) throw new l(s(), o.status);
     return o.json()
   }
   async getAnticheatSignalAnalysis(t, e, r) {
@@ -5313,7 +5325,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (o.status !== i.OK) throw new l(u(), o.status);
+    if (o.status !== i.OK) throw new l(s(), o.status);
     return o.json()
   }
   async getPendingAppealsCount() {
@@ -5321,7 +5333,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status);
+    if (t.status !== i.OK) throw new l(s(), t.status);
     const e = await t.json();
     return (e == null ? void 0 : e.appeals) ?? 0
   }
@@ -5330,7 +5342,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status);
+    if (t.status !== i.OK) throw new l(s(), t.status);
     const e = await t.json();
     return (e == null ? void 0 : e.paintedToday) ?? 0
   }
@@ -5339,7 +5351,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status);
+    if (t.status !== i.OK) throw new l(s(), t.status);
     return t.json()
   }
   async postEquipUserFrame(t) {
@@ -5347,14 +5359,14 @@ class Lk {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== i.OK) throw new l(u(), e.status)
+    if (e.status !== i.OK) throw new l(s(), e.status)
   }
   async getUserBadges() {
     const t = await this.request("/me/badges", {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status);
+    if (t.status !== i.OK) throw new l(s(), t.status);
     return t.json()
   }
   async postEquipUserBadge(t) {
@@ -5363,7 +5375,7 @@ class Lk {
       credentials: "include",
       body: JSON.stringify(t)
     });
-    if (e.status !== i.OK) throw new l(u(), e.status)
+    if (e.status !== i.OK) throw new l(s(), e.status)
   }
   async postCaptchaSession(t, e = "include") {
     const r = await this.request("/anticheat/captcha/session", {
@@ -5374,7 +5386,7 @@ class Lk {
         "x-fp": await Ce()
       }
     });
-    if (!r.ok) throw r.status === 500 ? new l(u(), r.status) : new l(Jf(), r.status);
+    if (!r.ok) throw r.status === 500 ? new l(s(), r.status) : new l(Jf(), r.status);
     return r.json()
   }
   validWaybackInput(t) {
@@ -5383,11 +5395,11 @@ class Lk {
       o = Number.isFinite(t.limit) && Number.isInteger(t.limit) && t.limit > 0 && t.limit <= xk.tools.wayback.limit,
       a = Number.isFinite(t.tileX) && Number.isFinite(t.tileY) && Number.isInteger(t.tileX) && Number.isInteger(t.tileY) && t.tileX >= 0 && t.tileY >= 0,
       c = t.cursorTs !== void 0,
-      s = t.cursorUserId !== void 0,
+      u = t.cursorUserId !== void 0,
       _ = t.cursorAllianceId !== void 0,
       f = t.cursorPixelsCount !== void 0,
-      O = c || s || _ || f,
-      y = c && s && _ && f;
+      O = c || u || _ || f,
+      y = c && u && _ && f;
     let D = !0;
     return O && (D = y && Number.isFinite(t.cursorTs) && Number.isInteger(t.cursorTs) && t.cursorTs >= 0 && t.cursorTs <= t.timestamp && Number.isFinite(t.cursorUserId) && Number.isInteger(t.cursorUserId) && t.cursorUserId >= 0 && Number.isFinite(t.cursorAllianceId) && Number.isInteger(t.cursorAllianceId) && t.cursorAllianceId >= 0 && Number.isFinite(t.cursorPixelsCount) && Number.isInteger(t.cursorPixelsCount) && t.cursorPixelsCount >= 0), !(!r || !o || !a || !e || !D)
   }
@@ -5414,7 +5426,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status);
+    if (t.status !== i.OK) throw new l(s(), t.status);
     return t.json()
   }
   async postBuyUserFrame(t) {
@@ -5425,7 +5437,7 @@ class Lk {
     if (e.status === i.NOT_FOUND) throw new Error(ot());
     if (e.status === i.FORBIDDEN) throw new Error(dt());
     if (e.status === i.CONFLICT) throw new Error(lt());
-    if (e.status !== i.OK) throw new Error(u())
+    if (e.status !== i.OK) throw new Error(s())
   }
   async postEquipCosmetics(t) {
     const e = await this.request("/me/cosmetic/equip", {
@@ -5433,14 +5445,14 @@ class Lk {
       credentials: "include",
       body: JSON.stringify(t)
     });
-    if (e.status !== i.OK) throw new l(u(), e.status)
+    if (e.status !== i.OK) throw new l(s(), e.status)
   }
   async getStoreNameCosmetics() {
     const t = await this.request("/store/name", {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status);
+    if (t.status !== i.OK) throw new l(s(), t.status);
     return await t.json()
   }
   async postBuyCosmetic(t) {
@@ -5448,14 +5460,14 @@ class Lk {
       method: "POST",
       credentials: "include"
     });
-    if (e.status !== i.OK) throw new l(u(), e.status)
+    if (e.status !== i.OK) throw new l(s(), e.status)
   }
   async getMyNameCosmetics() {
     const t = await this.request("/me/cosmetics/name", {
       method: "GET",
       credentials: "include"
     });
-    if (t.status !== i.OK) throw new l(u(), t.status);
+    if (t.status !== i.OK) throw new l(s(), t.status);
     return await t.json()
   }
   async getTicketsKpi(t) {
@@ -5465,7 +5477,7 @@ class Lk {
       method: "GET",
       credentials: "include"
     });
-    if (r.status !== i.OK) throw new l(u(), r.status);
+    if (r.status !== i.OK) throw new l(s(), r.status);
     return r.json()
   }
   async postCreateFrame(t) {
@@ -5476,7 +5488,7 @@ class Lk {
       credentials: "include",
       body: e
     });
-    if (r.status !== i.OK) throw new l(u(), r.status)
+    if (r.status !== i.OK) throw new l(s(), r.status)
   }
   async postCreateFont(t) {
     const e = await this.request("/staff/store-manager/fonts", {
@@ -5484,7 +5496,7 @@ class Lk {
       credentials: "include",
       body: JSON.stringify(t)
     });
-    if (e.status !== i.OK) throw new l(u(), e.status)
+    if (e.status !== i.OK) throw new l(s(), e.status)
   }
   async postCreateStyle(t) {
     const e = await this.request("/staff/store-manager/styles", {
@@ -5492,7 +5504,7 @@ class Lk {
       credentials: "include",
       body: JSON.stringify(t)
     });
-    if (e.status !== i.OK) throw new l(u(), e.status)
+    if (e.status !== i.OK) throw new l(s(), e.status)
   }
   async getR2Images(t) {
     const e = new URLSearchParams({
@@ -5503,7 +5515,7 @@ class Lk {
         method: "GET",
         credentials: "include"
       });
-    if (r.status !== i.OK) throw new l(u(), r.status);
+    if (r.status !== i.OK) throw new l(s(), r.status);
     return r.json()
   }
   async postUploadR2Image(t) {
@@ -5514,7 +5526,7 @@ class Lk {
       credentials: "include",
       body: e
     });
-    if (r.status !== i.OK) throw new l(u(), r.status);
+    if (r.status !== i.OK) throw new l(s(), r.status);
     return r.json()
   }
   async deleteR2Image(t) {
@@ -5522,7 +5534,7 @@ class Lk {
       method: "DELETE",
       credentials: "include"
     });
-    if (e.status !== i.OK) throw new l(u(), e.status)
+    if (e.status !== i.OK) throw new l(s(), e.status)
   }
   async postTelemetry(t, e) {
     return (await this.request("/frontend/telemetry", {
@@ -5555,18 +5567,18 @@ function Uk(n) {
   let o = Number.POSITIVE_INFINITY,
     a = Number.POSITIVE_INFINITY,
     c = Number.NEGATIVE_INFINITY,
-    s = Number.NEGATIVE_INFINITY;
+    u = Number.NEGATIVE_INFINITY;
   const _ = n.map(S => {
       const A = Math.round(S.tile[0] * r + S.pixel[0]),
         z = Math.round(S.tile[1] * r + S.pixel[1]);
-      return A < o && (o = A), z < a && (a = z), A > c && (c = A), z > s && (s = z), {
+      return A < o && (o = A), z < a && (a = z), A > c && (c = A), z > u && (u = z), {
         x: A,
         y: z,
         colorIdx: S.colorIdx
       }
     }),
     f = c - o + 1,
-    O = s - a + 1;
+    O = u - a + 1;
   if (!Number.isFinite(f) || !Number.isFinite(O) || f <= 0 || O <= 0) throw new Error("Failed to compute image bounds for auto painter payload.");
   const y = new Uint8ClampedArray(f * O * 4);
   for (const {
@@ -5663,8 +5675,8 @@ class Fk {
       o = t % 8;
     if (r >= this.bytes.length) {
       const c = new Uint8Array(r + 1),
-        s = c.length - this.bytes.length;
-      for (let _ = 0; _ < this.bytes.length; _++) c[_ + s] = this.bytes[_];
+        u = c.length - this.bytes.length;
+      for (let _ = 0; _ < this.bytes.length; _++) c[_ + u] = this.bytes[_];
       this.bytes = c
     }
     const a = this.bytes.length - 1 - r;
@@ -5720,8 +5732,8 @@ function $T(n) {
     a = (o === -1 ? e : e.slice(0, o)) || "text/plain";
   if (o !== -1) {
     const c = Ot(r),
-      s = new Uint8Array(c.byteLength);
-    return s.set(c), new Blob([s], {
+      u = new Uint8Array(c.byteLength);
+    return u.set(c), new Blob([u], {
       type: a
     })
   }
@@ -5753,7 +5765,7 @@ class Gk {
       type: r,
       message: o
     }) => {
-      const a = this.toasts.findIndex(s => s.id === t),
+      const a = this.toasts.findIndex(u => u.id === t),
         c = this.toasts[a];
       this.toasts[a] = {
         ...c,
@@ -5765,11 +5777,11 @@ class Gk {
       }
     });
     g(this, "create", t => {
-      var s;
+      var u;
       const {
         message: e,
         ...r
-      } = t, o = typeof(t == null ? void 0 : t.id) == "number" || t.id && ((s = t.id) == null ? void 0 : s.length) > 0 ? t.id : mt++, a = t.dismissable === void 0 ? !0 : t.dismissable, c = t.type === void 0 ? "default" : t.type;
+      } = t, o = typeof(t == null ? void 0 : t.id) == "number" || t.id && ((u = t.id) == null ? void 0 : u.length) > 0 ? t.id : mt++, a = t.dismissable === void 0 ? !0 : t.dismissable, c = t.type === void 0 ? "default" : t.type;
       return Qe(() => {
         this.toasts.find(f => f.id === o) ? this.updateToast({
           id: o,
@@ -5852,29 +5864,29 @@ class Gk {
       return o.then(c => {
         if (typeof c == "object" && c && "ok" in c && typeof c.ok == "boolean" && !c.ok) {
           a = !1;
-          const s = Vk(c);
+          const u = Vk(c);
           this.create({
             id: r,
             type: "error",
-            message: s
+            message: u
           })
         } else if (e.success !== void 0) {
           a = !1;
-          const s = typeof e.success == "function" ? e.success(c) : e.success;
+          const u = typeof e.success == "function" ? e.success(c) : e.success;
           this.create({
             id: r,
             type: "success",
-            message: s
+            message: u
           })
         }
       }).catch(c => {
         if (e.error !== void 0) {
           a = !1;
-          const s = typeof e.error == "function" ? e.error(c) : e.error;
+          const u = typeof e.error == "function" ? e.error(c) : e.error;
           this.create({
             id: r,
             type: "error",
-            message: s
+            message: u
           })
         }
       }).finally(() => {
@@ -6147,23 +6159,23 @@ const De = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
 
 function Se(n, t, e) {
   if (e === void 0) {
-    const s = De.encode(n),
-      _ = t(s.length, 1) >>> 0;
-    return Ae().subarray(_, _ + s.length).set(s), W = s.length, _
+    const u = De.encode(n),
+      _ = t(u.length, 1) >>> 0;
+    return Ae().subarray(_, _ + u.length).set(u), W = u.length, _
   }
   let r = n.length,
     o = t(r, 1) >>> 0;
   const a = Ae();
   let c = 0;
   for (; c < r; c++) {
-    const s = n.charCodeAt(c);
-    if (s > 127) break;
-    a[o + c] = s
+    const u = n.charCodeAt(c);
+    if (u > 127) break;
+    a[o + c] = u
   }
   if (c !== r) {
     c !== 0 && (n = n.slice(c)), o = e(o, r, r = c + n.length * 3, 1) >>> 0;
-    const s = Ae().subarray(o + c, o + r),
-      _ = Zk(n, s);
+    const u = Ae().subarray(o + c, o + r),
+      _ = Zk(n, u);
     c += _.written, o = e(o, r, c, 1) >>> 0
   }
   return W = c, o
@@ -6192,8 +6204,8 @@ function nT(n) {
   try {
     const a = w.__wbindgen_add_to_stack_pointer(-16),
       c = Se(n, w.__wbindgen_export_1, w.__wbindgen_export_2),
-      s = W;
-    w.get_pawtected_endpoint_payload(a, c, s);
+      u = W;
+    w.get_pawtected_endpoint_payload(a, c, u);
     var r = je().getInt32(a + 0, !0),
       o = je().getInt32(a + 4, !0);
     return t = r, e = o, Re(r, o)
@@ -6571,5 +6583,5 @@ class _T {
 }
 const X = new lT;
 export {
-  $T as $, mm as A, pt as B, Fe as C, TT as D, ak as E, $e as F, Pk as G, qT as H, R as I, GT as J, VT as K, OT as L, vT as M, N, yT as O, xT as P, wT as Q, bT as R, jT as S, B as T, Mn as U, xk as V, MT as W, kt as X, UT as Y, js as Z, FT as _, C as a, IT as a0, nv as a1, ib as a2, CT as a3, RT as a4, NT as a5, DT as a6, AT as a7, BT as a8, LT as a9, Jf as aa, ST as b, PT as c, Pe as d, u as e, La as f, wt as g, ic as h, Tf as i, yo as j, xu as k, kT as l, ET as m, X as n, bt as o, Me as p, KT as q, Vu as r, zT as s, Yk as t, V as u, et as v, Lf as w, wc as x, Ja as y, Do as z
+  $T as $, mm as A, pt as B, Fe as C, TT as D, ak as E, $e as F, Pk as G, qT as H, R as I, GT as J, VT as K, OT as L, vT as M, N, yT as O, xT as P, wT as Q, bT as R, jT as S, B as T, Mn as U, xk as V, MT as W, kt as X, UT as Y, js as Z, FT as _, C as a, IT as a0, nv as a1, ib as a2, CT as a3, RT as a4, NT as a5, DT as a6, AT as a7, BT as a8, LT as a9, Jf as aa, ST as b, PT as c, Pe as d, s as e, La as f, wt as g, ic as h, Tf as i, yo as j, xu as k, kT as l, ET as m, X as n, bt as o, Me as p, KT as q, Vu as r, zT as s, Yk as t, V as u, et as v, Lf as w, wc as x, Ja as y, Do as z
 };
