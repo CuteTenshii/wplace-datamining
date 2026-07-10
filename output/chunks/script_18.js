@@ -1,5 +1,5 @@
 var Nt = Object.defineProperty;
-var At = q => {
+var ct = q => {
   throw TypeError(q)
 };
 var Mt = (q, t, e) => t in q ? Nt(q, t, {
@@ -9,9 +9,9 @@ var Mt = (q, t, e) => t in q ? Nt(q, t, {
   value: e
 }) : q[t] = e;
 var y = (q, t, e) => Mt(q, typeof t != "symbol" ? t + "" : t, e),
-  et = (q, t, e) => t.has(q) || At("Cannot " + e);
+  et = (q, t, e) => t.has(q) || ct("Cannot " + e);
 var V = (q, t, e) => (et(q, t, "read from private field"), e ? e.call(q) : t.get(q)),
-  p = (q, t, e) => t.has(q) ? At("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(q) : t.set(q, e),
+  p = (q, t, e) => t.has(q) ? ct("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(q) : t.set(q, e),
   l = (q, t, e, r) => (et(q, t, "write to private field"), r ? r.call(q, e) : t.set(q, e), e),
   B = (q, t, e) => (et(q, t, "access private method"), e);
 import {
@@ -27,9 +27,9 @@ import {
   d as Ut
 } from "./CbgV-OBE.js";
 import {
-  e as ut,
-  i as lt,
-  h as pt,
+  e as At,
+  i as ut,
+  h as lt,
   bJ as ot,
   aF as Yt,
   A as Ot,
@@ -37,10 +37,10 @@ import {
 } from "./Dkgr_Dbt.js";
 import {
   g as _t
-} from "./BuZVfeCt.js";
+} from "./Dtag-PwQ.js";
 import {
   r as Ft
-} from "./BZ3_Yh2g.js";
+} from "./DcC0RQvz.js";
 import {
   c as bt
 } from "./DbffVGnc.js";
@@ -50,7 +50,7 @@ import {
 import {
   g as K
 } from "./BhCkpOlh.js";
-import "./DHhUfisG.js";
+import "./DeqLVldt.js";
 const Wt = () => "Download WPlace from the Google Play Store.",
   Jt = () => "Baixe o WPlace na Google Play Store.",
   Kt = () => "请从 Google Play 商店下载 WPlace。",
@@ -79,7 +79,7 @@ const Wt = () => "Download WPlace from the Google Play Store.",
   pe = () => "Не удалось найти ваш аккаунт. Повторите попытку позже.",
   de = () => "Не вдалося знайти ваш обліковий запис. Спробуйте пізніше.",
   ge = () => "Không tìm thấy tài khoản của bạn. Vui lòng thử lại sau.",
-  dt = (q = {}, t = {}) => {
+  pt = (q = {}, t = {}) => {
     const e = t.locale ?? K();
     return e === "en" ? oe() : e === "pt" ? ae() : e === "ch" ? se() : e === "de" ? ie() : e === "es" ? Ve() : e === "fr" ? ce() : e === "it" ? Ae() : e === "jp" ? ue() : e === "pl" ? le() : e === "ru" ? pe() : e === "uk" ? de() : ge()
   },
@@ -127,7 +127,7 @@ const Wt = () => "Download WPlace from the Google Play Store.",
   He = () => "Play Billing не поддерживается.",
   $e = () => "Play Billing не підтримується.",
   tq = () => "Play Billing không được hỗ trợ.",
-  gt = (q = {}, t = {}) => {
+  dt = (q = {}, t = {}) => {
     const e = t.locale ?? K();
     return e === "en" ? _e() : e === "pt" ? Fe() : e === "ch" ? Re() : e === "de" ? We() : e === "es" ? Je() : e === "fr" ? Ke() : e === "it" ? Qe() : e === "jp" ? Ze() : e === "pl" ? Xe() : e === "ru" ? He() : e === "uk" ? $e() : tq()
   },
@@ -138,15 +138,15 @@ const Wt = () => "Download WPlace from the Google Play Store.",
   oq = "data:audio/mpeg;base64,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qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/+xDE1gPAAAGkHAAAIAAANIAAAASqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqg==",
   aq = "data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAAE/gDLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//////////////////////////////////////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJAOoAAAAAAAABP6u4u+sAAAAAAD/+9DEAAAGhC1UdGMAJM1C6nc34FFSaWP+7vYBAAEOAAiHPJp6YAwtNgQl3qDHKBgo4Th/wf/Lh/8H35R3/4IAg7//gh/+UOcPgABgAAAB0YnM2TIZDUkAGYOFBdqBQkadAmEAgiDTKD1BYUFTGA4LixoJUcUsGkDJrfwYKEmBDRg+gZmBSBeYUQyJj2B9mAOAkYXINwOA3cdvzIrBtMDwFYOAEMZhFcyRwWTDiAGWo/LzSFp7vtDTSQ3bHKocXbPR6kg2U07Vs4KcJaDIIGTHZxDsSjEMyhPing6w8PSYAlwHfdtbFq3lAc1qmqzPxFFV1cbUkrP9GG/cbKIyivlRWq1mzvHDWNad73eE7q3JYPnIerXqKJTtzV3DmUzLZZFM7sv1z9U8czh5wVG4G3nru8cfyy+rhT5TtHTb7jzd3eWO6Wmy3R3e6/DW9b5l/b9e5///87///eY////9///////Df7/8vx/Xf///9f///52O6s3rZINILq82aqo6x1TAYDoYGInIIhASA++E8wYSIkIBd0NdJXDHQL2vFAR4YOsgwGFK6QQiPQDhcITBl4MWgDBEAosgZUgoDGkAwGFAMCCEDEQVAwaOgMChwEQXAwUBg5MTgJcAwARZxBj4Ng0LAigBGYdKKwKBIeIQDHCyhWxMlUmTx0xUCgJFBjnkGFkpk0ZF4gSLLRZJKGARbBQAsZDCCFAhxianDEuspVXRkOUWCGGCYsxZiXa0Ukl/8XOS4vxxjrDJR7RLyeiisxJn//y+11pJqNycOJkgiapIoo0UdS0dL//sUjzHxMgBgMUtVdLRYGrKTEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq//tgxOMAHVGjN7magIAAADSDgAAEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
   sr = sq();
-let yt;
-async function ct() {
-  yt ?? (yt = new AudioContext);
-  const q = yt;
+let gt;
+async function Vt() {
+  gt ?? (gt = new AudioContext);
+  const q = gt;
   return q.state !== "running" && await Promise.race([q.resume().catch(() => {}), new Promise(t => setTimeout(t, 150))]), q.state === "running" ? q : void 0
 }
 
 function ir() {
-  ct()
+  Vt()
 }
 
 function Tt(q, t) {
@@ -171,7 +171,7 @@ function T(q, t, e, r, n, a, s) {
 }
 async function Vr() {
   if ($.muted) return !0;
-  const q = await ct();
+  const q = await Vt();
   if (!q) return !1;
   const t = Tt(q, .25),
     e = q.currentTime + .03;
@@ -179,7 +179,7 @@ async function Vr() {
 }
 async function cr() {
   if ($.muted) return !0;
-  const q = await ct();
+  const q = await Vt();
   if (!q) return !1;
   const t = Tt(q, .22),
     e = q.currentTime + .03;
@@ -279,20 +279,20 @@ function ur(q) {
 var _, F;
 class lq {
   constructor() {
-    p(this, _, ut(-1));
-    p(this, F, ut([]))
+    p(this, _, At(-1));
+    p(this, F, At([]))
   }
   get idx() {
-    return lt(V(this, _))
+    return ut(V(this, _))
   }
   set idx(t) {
-    pt(V(this, _), t, !0)
+    lt(V(this, _), t, !0)
   }
   get entries() {
-    return lt(V(this, F))
+    return ut(V(this, F))
   }
   set entries(t) {
-    pt(V(this, F), t)
+    lt(V(this, F), t)
   }
   hasNext() {
     return this.idx < this.entries.length - 1
@@ -335,7 +335,7 @@ function pq(q, t) {
   }
   return e
 }
-const ft = typeof globalThis == "object" && globalThis || typeof window == "object" && window || typeof self == "object" && self || typeof global == "object" && global || (function() {
+const yt = typeof globalThis == "object" && globalThis || typeof window == "object" && window || typeof self == "object" && self || typeof global == "object" && global || (function() {
   return this
 })();
 
@@ -354,15 +354,15 @@ function dq(q, t = {}) {
 
 function gq() {}
 
-function ht(q) {
-  return typeof ft.Buffer < "u" && ft.Buffer.isBuffer(q)
+function ft(q) {
+  return typeof yt.Buffer < "u" && yt.Buffer.isBuffer(q)
 }
 
-function mt(q) {
+function ht(q) {
   return Object.getOwnPropertySymbols(q).filter(t => Object.prototype.propertyIsEnumerable.call(q, t))
 }
 
-function wt(q) {
+function mt(q) {
   return q == null ? q === void 0 ? "[object Undefined]" : "[object Null]" : Object.prototype.toString.call(q)
 }
 const yq = "[object RegExp]",
@@ -391,7 +391,7 @@ const yq = "[object RegExp]",
   Uq = "[object Float32Array]",
   Yq = "[object Float64Array]";
 
-function Pt(q) {
+function wt(q) {
   if (!q || typeof q != "object") return !1;
   const t = Object.getPrototypeOf(q);
   return t === null || t === Object.prototype || Object.getPrototypeOf(t) === null ? Object.prototype.toString.call(q) === "[object Object]" : !1
@@ -427,8 +427,8 @@ function z(q, t, e, r, n, a, s) {
 
 function O(q, t, e, r) {
   if (Object.is(q, t)) return !0;
-  let n = wt(q),
-    a = wt(t);
+  let n = mt(q),
+    a = mt(t);
   if (n === "[object Arguments]" && (n = nt), a === "[object Arguments]" && (a = nt), n !== a) return !1;
   switch (n) {
     case fq:
@@ -480,7 +480,7 @@ function O(q, t, e, r) {
       case zq:
       case Uq:
       case Yq:
-        if (ht(q) !== ht(t) || q.length !== t.length) return !1;
+        if (ft(q) !== ft(t) || q.length !== t.length) return !1;
         for (let c = 0; c < q.length; c++)
           if (!z(q[c], t[c], c, q, t, e, r)) return !1;
         return !0;
@@ -491,9 +491,9 @@ function O(q, t, e, r) {
       case Dq:
         return q.name === t.name && q.message === t.message;
       case nt: {
-        if (!(O(q.constructor, t.constructor, e, r) || Pt(q) && Pt(t))) return !1;
-        const c = [...Object.keys(q), ...mt(q)],
-          u = [...Object.keys(t), ...mt(t)];
+        if (!(O(q.constructor, t.constructor, e, r) || wt(q) && wt(t))) return !1;
+        const c = [...Object.keys(q), ...ht(q)],
+          u = [...Object.keys(t), ...ht(t)];
         if (c.length !== u.length) return !1;
         for (let g = 0; g < c.length; g++) {
           const w = c[g],
@@ -763,7 +763,7 @@ function Zq(q) {
   return dq(q)
 }
 
-function Bt(q) {
+function Pt(q) {
   return Zq(function(...e) {
     return x.create(q(...e))
   })
@@ -865,7 +865,7 @@ y(A, "checkoutState", new jt("twa:checkout", void 0, {
 })), y(A, "memoryCheckout");
 let d = A;
 
-function Et(q) {
+function Bt(q) {
   const t = q;
   return {
     name: t == null ? void 0 : t.name,
@@ -910,7 +910,7 @@ const o = class o {
   }
   static setAsPlayBillingBlockedErrorIfNecessary(t, e) {
     if (t) try {
-      const r = o.PLAY_BILLING_NOT_AVAILABLE.find(n => _q(Et(t), Et(n)));
+      const r = o.PLAY_BILLING_NOT_AVAILABLE.find(n => _q(Bt(t), Bt(n)));
       if (!r) return;
       if ((r == null ? void 0 : r.kind) === "not-twa-context") {
         o.forceTWA.current = !1;
@@ -1128,25 +1128,25 @@ H = new WeakMap, y(o, "pattern", /^android-app:[/][/]([^/?]+)(.+)?$/), y(o, "for
 })), y(o, "POOLING_TIME", 10), y(o, "errors", []), y(o, "service"), y(o, "mapSKUs", new Map), y(o, "referrer", []), y(o, "ERRORS", {
   PAYMENT_PLAY_NO_ACCOUNT_DESCRIPTION: {
     kind: "billing-blocked",
-    printError: dt(),
+    printError: pt(),
     name: "NO_ACCOUNT_ID",
     message: "NO_ACCOUNT_ID",
     contexts: []
   },
   GENERIC_NOT_SUPPORTED: {
     kind: "billing-blocked",
-    printError: dt(),
+    printError: pt(),
     name: "NotSupportedError",
     message: 'The payment method "https://play.google.com/billing" is not supported.'
   }
 }), y(o, "PLAY_BILLING_NOT_AVAILABLE", [{
   kind: "not-twa-context",
-  printError: gt(),
+  printError: dt(),
   name: "NotSupportedError",
   message: 'The payment method "https://play.google.com/billing" is not supported. Payment method https://play.google.com/billing is only supported in Trusted Web Activity.'
 }, {
   kind: "not-twa-context",
-  printError: gt(),
+  printError: dt(),
   name: "NotSupportedError",
   message: 'The payment method "https://play.google.com/billing" is not supported. Unable to download payment manifest "https://play.google.com/billing". HTTP 403 Forbidden.'
 }, {
@@ -1164,7 +1164,7 @@ H = new WeakMap, y(o, "pattern", /^android-app:[/][/]([^/?]+)(.+)?$/), y(o, "for
   printError: xe(),
   name: "AbortError",
   message: "Invalid state."
-}, o.ERRORS.PAYMENT_PLAY_NO_ACCOUNT_DESCRIPTION, o.ERRORS.GENERIC_NOT_SUPPORTED]), y(o, "loadMapSKUs", Bt(async () => {
+}, o.ERRORS.PAYMENT_PLAY_NO_ACCOUNT_DESCRIPTION, o.ERRORS.GENERIC_NOT_SUPPORTED]), y(o, "loadMapSKUs", Pt(async () => {
   var a, s;
   if (!D()) return;
   o.twaGuard();
@@ -1173,7 +1173,7 @@ H = new WeakMap, y(o, "pattern", /^android-app:[/][/]([^/?]+)(.+)?$/), y(o, "for
     r = await (e == null ? void 0 : e.getDetails(t).catch(o.setAsPlayBillingBlockedErrorIfNecessary)),
     n = new Map(r == null ? void 0 : r.map(i => [i.itemId, i]));
   return (s = o.mapSKUs) != null && s.size || (o.mapSKUs = n), n
-})), y(o, "loadService", Bt(() => {
+})), y(o, "loadService", Pt(() => {
   var t, e, r;
   return (r = (e = (t = o.getGlobal()).getDigitalGoodsService) == null ? void 0 : e.call(t, it.Play)) == null ? void 0 : r.then(n => o.service ?? (o.service = n)).then(n => (n && (o.forceTWA.current = !0), n))
 })), p(o, H, new Set([1, !0].map(String))), y(o, "onInit", async t => {
@@ -1215,7 +1215,7 @@ function pr(q) {
 function dr(q, t) {
   return q = new URL(q), t.pos !== void 0 && (q.searchParams.set("lat", t.pos.lat.toString()), q.searchParams.set("lng", t.pos.lng.toString())), t.zoom !== void 0 && q.searchParams.set("zoom", t.zoom.toString()), t.season !== void 0 && q.searchParams.set("season", t.season.toString()), t.opaque !== void 0 && q.searchParams.set("opaque", t.opaque ? "1" : "0"), t.alliance !== void 0 && q.searchParams.set("alliance", t.alliance ? "1" : "0"), t.select && q.searchParams.set("alliance", "1"), q
 }
-var Vt;
+var Et;
 (q => {
   async function t() {
     if (e() || history.length < 3) return;
@@ -1233,7 +1233,7 @@ var Vt;
       return !1
     }
   }
-})(Vt || (Vt = {}));
+})(Et || (Et = {}));
 
 function Xq(q, t, e) {
   return new Promise((r, n) => {
@@ -1251,7 +1251,7 @@ function gr() {
   const q = "last-unfocus",
     t = new AbortController;
   if (D()) {
-    Vt.reset(), queueMicrotask(async () => {
+    queueMicrotask(async () => {
       await k.onInit(t)
     });
     const e = () => {
