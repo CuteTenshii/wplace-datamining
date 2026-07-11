@@ -1,7 +1,7 @@
 import {
   s as t,
   p as r
-} from "./Dtag-PwQ.js";
+} from "./BDghhBKq.js";
 const a = {
   get data() {
     return r.data
