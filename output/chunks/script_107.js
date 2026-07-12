@@ -1,46 +1,93 @@
-import {
-  g as a
-} from "./BhCkpOlh.js";
 import "./Bzak7iHL.js";
+import "./C_q9A17M.js";
 import {
-  a as p,
-  w as o
+  p as P,
+  a as t,
+  b as k,
+  c as i,
+  d as m,
+  i as r,
+  s as _,
+  r as d,
+  t as W,
+  af as q
 } from "./Dkgr_Dbt.js";
 import {
-  e as s
-} from "./CfjQLVhL.js";
+  i as h
+} from "./rBVNqKOk.js";
 import {
-  r as u
-} from "./DOQuOeXT.js";
-const c = () => "Ban appeal",
-  l = () => "Revisão de banimento",
-  i = () => "封禁申诉",
-  _ = () => "Bann-Einspruch",
-  f = () => "Apelación de ban",
-  b = () => "Recours de bannissement",
-  m = () => "Ricorso contro il ban",
-  q = () => "BANの異議申立て",
-  v = () => "Odwołanie od bana",
-  d = () => "Апелляция на бан",
-  g = () => "Апеляція на бан",
-  h = () => "Kháng cáo lệnh cấm",
-  R = (e = {}, n = {}) => {
-    const r = n.locale ?? a();
-    return r === "en" ? c() : r === "pt" ? l() : r === "ch" ? i() : r === "de" ? _() : r === "es" ? f() : r === "fr" ? b() : r === "it" ? m() : r === "jp" ? q() : r === "pl" ? v() : r === "ru" ? d() : r === "uk" ? g() : h()
-  };
-var w = new Set(["$$slots", "$$events", "$$legacy"]),
-  T = o('<svg><path d="m336-280 144-144 144 144 56-56-144-144 144-144-56-56-144 144-144-144-56 56 144 144-144 144 56 56ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"></path></svg>');
+  e as H
+} from "./C5VgB5sf.js";
+import {
+  b as I
+} from "./tzSUQnZi.js";
+import {
+  i as S
+} from "./B-qA8Tv_.js";
+import {
+  a as $,
+  W as j,
+  P as A
+} from "./JMr9IHdY.js";
+var B = i('<div class="z-10 size-2.5 rounded-full bg-primary shadow-[0_0_0_3px] shadow-primary/15"></div>'),
+  C = i('<div class="z-10 size-2 rounded-full border-2 border-base-300 bg-base-100"></div>'),
+  D = i('<div class="mt-1 w-px flex-1 bg-base-300/50"></div>'),
+  E = i('<div class="relative flex gap-3.5"><div class="flex shrink-0 flex-col items-center pt-2.25"><!> <!></div> <div class="min-w-0 flex-1 pb-9"><!></div></div>'),
+  F = i('<div class="flex flex-col"></div>');
 
-function j(e, n) {
-  let r = u(n, w);
-  var t = T();
-  s(t, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...r
-  })), p(e, t)
+function T(b, u) {
+  P(u, !1);
+  const f = [...$].reverse().map(e => ({
+    version: e.version,
+    title: e.title,
+    html: j(e.markdown)
+  }));
+  S();
+  var l = F();
+  H(l, 7, () => f, e => e.version, (e, x, o) => {
+    var v = E(),
+      p = m(v),
+      c = m(p);
+    {
+      var g = a => {
+          var s = B();
+          t(a, s)
+        },
+        w = a => {
+          var s = C();
+          t(a, s)
+        };
+      h(c, a => {
+        r(o) === 0 ? a(g) : a(w, -1)
+      })
+    }
+    var N = _(c, 2);
+    {
+      var y = a => {
+        var s = D();
+        t(a, s)
+      };
+      h(N, a => {
+        r(o) < f.length - 1 && a(y)
+      })
+    }
+    d(p);
+    var n = _(p, 2),
+      z = m(n);
+    {
+      let a = q(() => r(o) === 0);
+      A(z, {
+        get patchNote() {
+          return r(x)
+        },
+        get latest() {
+          return r(a)
+        }
+      })
+    }
+    d(n), d(v), W(() => I(v, `animation: patchSlideIn 0.3s ease-out ${r(o)*50}ms both`)), t(e, v)
+  }), d(l), t(b, l), k()
 }
 export {
-  j as C, R as b
+  T as P
 };

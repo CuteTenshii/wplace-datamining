@@ -94,20 +94,20 @@ import {
   g as Q2,
   b as ko,
   c as yc,
-  j as dP,
-  i as n1,
-  h as i1,
-  k as e_,
+  h as dP,
+  j as n1,
+  k as i1,
+  i as e_,
   d as Gf
-} from "../chunks/CfjQLVhL.js";
+} from "../chunks/tzSUQnZi.js";
 import {
   g as ou,
   c as pP,
   d as hP
-} from "../chunks/BDghhBKq.js";
+} from "../chunks/MCRHOnhc.js";
 import {
   p as Qa
-} from "../chunks/CBiH1iWP.js";
+} from "../chunks/N5_5HrHs.js";
 import {
   e as Jp,
   d as J2,
@@ -125,7 +125,7 @@ import {
   P as vP,
   a as yP,
   c as bP
-} from "../chunks/DtGdZ38r.js";
+} from "../chunks/D24AZ3r6.js";
 import {
   _ as xP,
   $ as tk,
@@ -142,10 +142,10 @@ import {
   g as ki,
   L as rk,
   C as kP,
-  m as TP,
+  A as TP,
   D as SP,
   e as om,
-  n as jd,
+  l as jd,
   a1,
   a2 as PP,
   a3 as CP,
@@ -157,7 +157,7 @@ import {
   a8 as zP,
   a9 as AP,
   aa as DP
-} from "../chunks/CbgV-OBE.js";
+} from "../chunks/DZ57bVuC.js";
 import {
   w as sd,
   A as Yo,
@@ -169,16 +169,16 @@ import {
   i as FP,
   h as BP,
   j as OP
-} from "../chunks/rpHHNapM.js";
+} from "../chunks/tBfWysPS.js";
 import {
   P as Ra
-} from "../chunks/BuCmGSK8.js";
+} from "../chunks/ppk9hldz.js";
 import {
   G as Ys,
   b as By,
   n as Uv,
   g as Oy
-} from "../chunks/bf0mLqMM.js";
+} from "../chunks/CwEBdpRu.js";
 import {
   l as qP,
   c as zu,
@@ -198,7 +198,7 @@ import {
   a as lv,
   u as GP,
   h as ZP
-} from "../chunks/XVlWEqTU.js";
+} from "../chunks/CePdE_5X.js";
 import {
   p as jr,
   r as Cn,
@@ -213,7 +213,7 @@ import {
 } from "../chunks/CqpZKCt-.js";
 import {
   L as ok
-} from "../chunks/DH2i2uPl.js";
+} from "../chunks/9IzBWnQV.js";
 import {
   g as se,
   l as WP
@@ -272,15 +272,15 @@ import {
   m as d1,
   a as oC,
   u as aC
-} from "../chunks/uHrmfrYH.js";
+} from "../chunks/DB4vT7hj.js";
 import {
   P as Wl,
   a as sC
-} from "../chunks/CAc99mK-.js";
+} from "../chunks/BSJpLJxk.js";
 import {
   L as nf,
   p as n_
-} from "../chunks/DcyyfYjx.js";
+} from "../chunks/BRSsLCRo.js";
 import {
   l as lC,
   v as cC,
@@ -294,19 +294,20 @@ import {
   f as Od,
   U as uC,
   P as dC
-} from "../chunks/pdQ8-l2q.js";
+} from "../chunks/B69uIfAd.js";
 import {
   k as ld
 } from "../chunks/DRY9BP4c.js";
 import {
   S as Qv
-} from "../chunks/BLwvrTPr.js";
+} from "../chunks/DiwdG2l3.js";
 import {
   A as Wd
-} from "../chunks/CT4XElRr.js";
+} from "../chunks/BNVrIQ23.js";
 import {
-  b as Gy
-} from "../chunks/DaX0l6qk.js";
+  b as Gy,
+  S as Hd
+} from "../chunks/Ds0hlLjj.js";
 import {
   u as pC
 } from "../chunks/DNTW03EA.js";
@@ -318,7 +319,7 @@ import {
   a as su,
   c as Fp,
   b as bm
-} from "../chunks/B-vOi_ld.js";
+} from "../chunks/Dn5QsSWQ.js";
 import {
   n as Jv,
   c as uk,
@@ -329,10 +330,10 @@ import {
   A as xm,
   D as fC,
   U as pk
-} from "../chunks/C3OMGNWm.js";
+} from "../chunks/CbInqwDn.js";
 import {
   E as i_
-} from "../chunks/DIhIVCrN.js";
+} from "../chunks/hwxyqZC5.js";
 import {
   l as Zy
 } from "../chunks/BRekz1nD.js";
@@ -345,28 +346,27 @@ import {
   a as mC
 } from "../chunks/CiB29Aqe.js";
 import {
-  W as th,
   r as gC,
   t as vC,
   b as yC,
   R as bC,
   a as p1
-} from "../chunks/DF5a5ePh.js";
+} from "../chunks/CUBiJbfe.js";
 import {
   C as Wy
-} from "../chunks/CIrvqs-X.js";
+} from "../chunks/Bd7la4kS.js";
 import {
   I as hk
-} from "../chunks/gnxXPszy.js";
+} from "../chunks/C378A6ho.js";
 import {
   D as Fl
-} from "../chunks/CHhbPFQr.js";
+} from "../chunks/CpPZ3d4d.js";
 import {
   l as xC
 } from "../chunks/B_Oz03f8.js";
 import {
   C as rc
-} from "../chunks/DwXAmnUp.js";
+} from "../chunks/CtUN0rF5.js";
 import {
   t as _k
 } from "../chunks/Ct12j0u0.js";
@@ -377,14 +377,14 @@ import {
 import {
   R as wC,
   r as kC
-} from "../chunks/CaERNp-4.js";
+} from "../chunks/W8ypPp4k.js";
 import {
   c as TC,
   L as SC
-} from "../chunks/Dpf_wG4j.js";
+} from "../chunks/CGPnwGyX.js";
 import {
   L as Hy
-} from "../chunks/t4vfb3CI.js";
+} from "../chunks/Bnma6RRg.js";
 import {
   t as PC,
   r as mk,
@@ -392,13 +392,13 @@ import {
 } from "../chunks/CFl7M2B7.js";
 import {
   a as o_,
-  L as Hd
-} from "../chunks/CTZlVOmd.js";
+  L as Yd
+} from "../chunks/BP9xzOFF.js";
 import {
   r as IC,
   S as gk,
   p as MC
-} from "../chunks/DxsNPS_p.js";
+} from "../chunks/DvM-Lxbv.js";
 import {
   c as jl
 } from "../chunks/CIVCrfNX.js";
@@ -406,23 +406,23 @@ import {
   s as ks
 } from "../chunks/BPhfHpSd.js";
 import {
-  S as Yd
-} from "../chunks/DbYeFuK6.js";
-import {
   a as vk
 } from "../chunks/BdCqcZGB.js";
 import {
   R as Kh
-} from "../chunks/BukePOp2.js";
+} from "../chunks/B-Laja9b.js";
+import {
+  W as th
+} from "../chunks/C8yeG_YH.js";
 import {
   C as $v
-} from "../chunks/DqBzoWl0.js";
+} from "../chunks/CgLet7P_.js";
 import {
   C as Tu
-} from "../chunks/DSWoJAsb.js";
+} from "../chunks/GBT3r0eU.js";
 import {
   U as yk
-} from "../chunks/C7DB4SfJ.js";
+} from "../chunks/BeeeGIjM.js";
 import {
   _ as h1
 } from "../chunks/ogBv_Jow.js";
@@ -430,15 +430,14 @@ import {
   l as Zf
 } from "../chunks/Cp-hTSeP.js";
 import {
-  s as EC,
-  R as _1
-} from "../chunks/BXfq5HwM.js";
+  s as EC
+} from "../chunks/DIbtzbsw.js";
 import {
   D as uc
-} from "../chunks/CSpxoanP.js";
+} from "../chunks/ymfB6Mq_.js";
 import {
   C as Bm
-} from "../chunks/D5p77Ou0.js";
+} from "../chunks/DvBRSXt9.js";
 import {
   e as zC
 } from "../chunks/kMrz8wtr.js";
@@ -450,20 +449,23 @@ import {
 } from "../chunks/BKBS1EOp.js";
 import {
   R as Om
-} from "../chunks/C0vIhgxN.js";
+} from "../chunks/DUv0ZhtB.js";
 import {
   I as AC,
   d as wm
-} from "../chunks/JLXD0GYy.js";
+} from "../chunks/DS4xe8oW.js";
 import {
   n as bk
 } from "../chunks/-AhnqyAZ.js";
 import {
+  R as _1
+} from "../chunks/BxCWo2fp.js";
+import {
   S as Wf
-} from "../chunks/CveSQ1D0.js";
+} from "../chunks/g97gYyuE.js";
 import {
   V as xk
-} from "../chunks/EU67SewG.js";
+} from "../chunks/rKmhMY_7.js";
 import {
   a as DC
 } from "../chunks/og9Js_3x.js";
@@ -472,11 +474,11 @@ import {
 } from "../chunks/CTKAXTri.js";
 import {
   P as RC
-} from "../chunks/nKW-h-cz.js";
+} from "../chunks/rJ6lMKro.js";
 import {
   b as jC,
   C as FC
-} from "../chunks/MV0eKVjW.js";
+} from "../chunks/Drj-IwGu.js";
 import {
   a as BC
 } from "../chunks/B1W-ZFhT.js";
@@ -489,11 +491,11 @@ import {
 } from "../chunks/TTfhDrzz.js";
 import {
   R as ty
-} from "../chunks/1sskFOid.js";
+} from "../chunks/Tm6Wmsfz.js";
 import {
   T as Kd,
   G as km
-} from "../chunks/Ctze9Cg8.js";
+} from "../chunks/B785t6De.js";
 import {
   l as UC
 } from "../chunks/Cme64dX3.js";
@@ -502,16 +504,16 @@ import {
 } from "../chunks/BJMWNMzA.js";
 import {
   r as cv
-} from "../chunks/Dk2xNdz6.js";
+} from "../chunks/CNRYItHK.js";
 import {
   F as VC
-} from "../chunks/DRiY09HY.js";
+} from "../chunks/256W1AVf.js";
 import {
   c as GC
 } from "../chunks/BZcJYfQJ.js";
 import {
   W as ZC
-} from "../chunks/B2U5thht.js";
+} from "../chunks/GExgiGuU.js";
 import {
   r as WC
 } from "../chunks/DBS6HGbD.js";
@@ -52383,7 +52385,7 @@ function hvt(c, o) {
                         wt = J(() => Es(s(Pt).allianceId)),
                         hr = J(() => su(s(Pt).allianceId)),
                         Yt = J(() => Es(s(Pt).allianceId));
-                      Yd($e, {
+                      Hd($e, {
                         get allianceId() {
                           return s(Pt).allianceId
                         },
@@ -52449,7 +52451,7 @@ function hvt(c, o) {
                 {
                   let He = J(() => Es(s(dt).id)),
                     bt = J(() => Es(s(dt).id));
-                  Yd(Ft, {
+                  Hd(Ft, {
                     get allianceId() {
                       return s(dt).id
                     },
@@ -53332,7 +53334,7 @@ async function cyt(c, o) {
   }
   return Im.fromJson(k5(e), o)
 }
-const uyt = globalThis.__sveltekit_14xlkxf.env,
+const uyt = globalThis.__sveltekit_1950r33.env,
   Mv = uyt.PUBLIC_GOOGLE_DRIVE_CLIENT_ID ?? "",
   Uw = "https://accounts.google.com/gsi/client",
   dyt = "https://www.googleapis.com/auth/drive.appdata",
@@ -57255,7 +57257,7 @@ function tbt(c, o) {
             var Gn = b(di);
             {
               var Mi = Bn => {
-                  Hd(Bn, {
+                  Yd(Bn, {
                     class: "size-4"
                   })
                 },
@@ -58990,12 +58992,12 @@ function nxt(c, o) {
       var po = Li => {
         var hi = ext(),
           Zr = Qt(hi);
-        Hd(Zr, {
+        Yd(Zr, {
           class: "center-absolute absolute size-4 opacity-30 sm:hidden sm:size-6"
         });
         var Ze = I(Zr, 2),
           Xt = b(Ze);
-        Hd(Xt, {
+        Yd(Xt, {
           class: "text-base-content/80 size-4"
         }), v(Ze), A(Li, hi)
       };
@@ -59344,7 +59346,7 @@ function hxt(c, o) {
                 var ar = Ar => {
                   var Rr = oxt(),
                     Jt = b(Rr);
-                  Hd(Jt, {
+                  Yd(Jt, {
                     class: "text-error size-8"
                   }), v(Rr), A(Ar, Rr)
                 };
@@ -59515,7 +59517,7 @@ function hxt(c, o) {
               v(Ne);
               var ar = I(Ne, 2),
                 ir = b(ar);
-              Hd(ir, {
+              Yd(ir, {
                 class: "text-error size-6"
               }), v(ar), v(je), v(Vr);
               var sr = I(Vr, 2),
@@ -60178,7 +60180,7 @@ function e1t(c, o) {
             ur = J(() => Es(At.data.allianceId)),
             xn = J(() => su(At.data.allianceId)),
             Jr = J(() => Es(At.data.allianceId));
-          Yd(Tt, {
+          Hd(Tt, {
             get allianceId() {
               return At.data.allianceId
             },
@@ -60828,7 +60830,7 @@ function e1t(c, o) {
                 v(to);
                 var xo = I(to, 2),
                   Oa = b(xo);
-                Hd(Oa, {
+                Yd(Oa, {
                   class: "text-base-content/60 size-5"
                 }), v(xo), v(Ui), te(() => {
                   It(Ui, "data-tip", s(xn).secret ? "???" : s(xn).name), It(Yi, "src", s(xn).imageUrl), It(Yi, "alt", s(xn).name)
@@ -62463,7 +62465,7 @@ function uwt(c, o) {
                         er = J(() => Es(s(xe).allianceId)),
                         Ut = J(() => su(s(xe).allianceId)),
                         pr = J(() => Es(s(xe).allianceId));
-                      Yd(He, {
+                      Hd(He, {
                         get allianceId() {
                           return s(xe).allianceId
                         },
@@ -62529,7 +62531,7 @@ function uwt(c, o) {
                 {
                   let Pt = J(() => Es(s(Re).id)),
                     Zt = J(() => Es(s(Re).id));
-                  Yd(fr, {
+                  Hd(fr, {
                     get allianceId() {
                       return s(Re).id
                     },
@@ -66985,7 +66987,7 @@ function A2t(c, o) {
                                     Ho = J(() => Es(s(Rn).allianceId)),
                                     Gc = J(() => su(s(Rn).allianceId)),
                                     fc = J(() => Es(s(Rn).allianceId));
-                                  Yd(bs, {
+                                  Hd(bs, {
                                     get allianceId() {
                                       return s(Rn).allianceId
                                     },
@@ -67658,7 +67660,7 @@ function akt(c, o) {
                   Rr = J(() => Es(s(yt).allianceId)),
                   Jt = J(() => su(s(yt).allianceId)),
                   Kr = J(() => Es(s(yt).allianceId));
-                Yd(Nt, {
+                Hd(Nt, {
                   get allianceId() {
                     return s(yt).allianceId
                   },
@@ -75498,7 +75500,7 @@ var JSt = Y('<meta property="og:title" content="Wplace - A massive real-time pix
   yPt = Y("<!> <!>", 1),
   bPt = Y('<div class="disable-pinch-zoom relative h-full overflow-hidden"><div id="map" class="h-screen w-screen cursor-default"></div> <!> <div><div><!> <!></div></div> <div><!> <div class="flex flex-col gap-1 max-sm:hidden"><button class="btn btn-sm btn-circle">+</button> <button class="btn btn-sm btn-circle">-</button></div> <button class="btn btn-sm btn-circle relative text-base">⚽ <div class="absolute top-0 right-0 size-2 animate-pulse rounded-full bg-red-500"></div></button> <!> <!> <!> <!></div> <div><!> <!> <!></div> <div><!></div> <div><!></div> <div><!></div>  <!> <!></div> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!>', 1);
 
-function m4t(c, o) {
+function g4t(c, o) {
   gn(o, !0);
   let e = Pe(!1),
     S = Pe(!1),
@@ -76305,7 +76307,7 @@ function m4t(c, o) {
           var ai = b(Zi);
           {
             var Ro = oo => {
-                Hd(oo, {
+                Yd(oo, {
                   class: "size-5"
                 })
               },
@@ -77213,5 +77215,5 @@ function m4t(c, o) {
 }
 lo(["click"]);
 export {
-  m4t as component
+  g4t as component
 };

@@ -1,27 +1,27 @@
 import "./Bzak7iHL.js";
 import {
-  a as s,
-  w as q
+  a as e,
+  w as s
 } from "./Dkgr_Dbt.js";
 import {
-  e as a
-} from "./CfjQLVhL.js";
+  e as p
+} from "./tzSUQnZi.js";
 import {
-  r as m
+  r as a
 } from "./DOQuOeXT.js";
-var p = new Set(["$$slots", "$$events", "$$legacy"]),
-  v = q('<svg><path d="M480-440q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0-80q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0 440q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-400Zm0-315-240 90v189q0 54 15 105t41 96q42-21 88-33t96-12q50 0 96 12t88 33q26-45 41-96t15-105v-189l-240-90Zm0 515q-36 0-70 8t-65 22q29 30 63 52t72 34q38-12 72-34t63-52q-31-14-65-22t-70-8Z"></path></svg>');
+var m = new Set(["$$slots", "$$events", "$$legacy"]),
+  q = s('<svg><path d="M240-80q-50 0-85-35t-35-85v-120h120v-560l60 60 60-60 60 60 60-60 60 60 60-60 60 60 60-60 60 60 60-60v680q0 50-35 85t-85 35H240Zm480-80q17 0 28.5-11.5T760-200v-560H320v440h360v120q0 17 11.5 28.5T720-160ZM360-600v-80h240v80H360Zm0 120v-80h240v80H360Zm320-120q-17 0-28.5-11.5T640-640q0-17 11.5-28.5T680-680q17 0 28.5 11.5T720-640q0 17-11.5 28.5T680-600Zm0 120q-17 0-28.5-11.5T640-520q0-17 11.5-28.5T680-560q17 0 28.5 11.5T720-520q0 17-11.5 28.5T680-480ZM240-160h360v-80H200v40q0 17 11.5 28.5T240-160Zm-40 0v-80 80Z"></path></svg>');
 
-function g(r, o) {
-  let e = m(o, p);
-  var t = v();
-  a(t, () => ({
+function f(r, v) {
+  let o = a(v, m);
+  var t = q();
+  p(t, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
-    ...e
-  })), s(r, t)
+    ...o
+  })), e(r, t)
 }
 export {
-  g as S
+  f as R
 };
