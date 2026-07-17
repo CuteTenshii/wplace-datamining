@@ -4777,22 +4777,21 @@ class Lk {
     });
     if (r.status !== i.OK) throw new l(s(), r.status)
   }
-  async postAdminRenameUser(t, e, r) {
-    const o = await this.request("/staff/dashboard/users/rename", {
+  async postAdminRenameUser(t, e) {
+    const r = await this.request("/staff/dashboard/users/rename", {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
         userId: t,
-        newName: e,
-        oldName: r
+        newName: e
       })
     });
-    if (o.status === i.BAD_REQUEST) {
-      const a = await o.json(),
-        c = (a == null ? void 0 : a.error) ?? "";
-      throw c === "invalid_name" ? new l(at(), i.BAD_REQUEST) : new l(typeof c == "string" && c ? c : s(), i.BAD_REQUEST)
+    if (r.status === i.BAD_REQUEST) {
+      const o = await r.json(),
+        a = (o == null ? void 0 : o.error) ?? "";
+      throw a === "invalid_name" ? new l(at(), i.BAD_REQUEST) : new l(typeof a == "string" && a ? a : s(), i.BAD_REQUEST)
     }
-    if (o.status !== i.OK) throw new l(s(), o.status)
+    if (r.status !== i.OK) throw new l(s(), r.status)
   }
   async postAdminChangeUserEmail(t, e) {
     const r = await this.request("/staff/dashboard/users/email", {
