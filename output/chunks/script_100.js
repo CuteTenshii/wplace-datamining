@@ -1,22 +1,22 @@
 import {
   g as t
 } from "./BhCkpOlh.js";
-const u = () => "User",
-  n = () => "Usuário",
-  s = () => "用户",
-  o = () => "Benutzer",
-  i = () => "Usuario",
-  c = () => "Utilisateur",
-  f = () => "Utente",
-  _ = () => "ユーザー",
-  p = () => "Użytkownik",
-  l = () => "Пользователь",
-  a = () => "Користувач",
-  U = () => "Người dùng",
-  d = (g = {}, e = {}) => {
+const n = () => "Home",
+  o = () => "Início",
+  u = () => "主页",
+  c = () => "Startseite",
+  i = () => "Inicio",
+  s = () => "Accueil",
+  h = () => "Home",
+  m = () => "ホーム",
+  f = () => "Strona główna",
+  _ = () => "Главная",
+  a = () => "Головна",
+  p = () => "Trang chủ",
+  d = (l = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? u() : r === "pt" ? n() : r === "ch" ? s() : r === "de" ? o() : r === "es" ? i() : r === "fr" ? c() : r === "it" ? f() : r === "jp" ? _() : r === "pl" ? p() : r === "ru" ? l() : r === "uk" ? a() : U()
+    return r === "en" ? n() : r === "pt" ? o() : r === "ch" ? u() : r === "de" ? c() : r === "es" ? i() : r === "fr" ? s() : r === "it" ? h() : r === "jp" ? m() : r === "pl" ? f() : r === "ru" ? _() : r === "uk" ? a() : p()
   };
 export {
-  d as u
+  d as h
 };

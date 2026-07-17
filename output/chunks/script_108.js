@@ -1,46 +1,71 @@
-import {
-  g as a
-} from "./BhCkpOlh.js";
 import "./Bzak7iHL.js";
 import {
-  a as p,
-  w as o
-} from "./Dkgr_Dbt.js";
+  p as R,
+  d as i,
+  r as l,
+  t as m,
+  a as n,
+  b as h,
+  s as f,
+  c as g
+} from "./BKnGt6Ki.js";
 import {
-  e as s
-} from "./tzSUQnZi.js";
+  s as _
+} from "./DbGfTWgr.js";
 import {
-  r as u
-} from "./DOQuOeXT.js";
-const c = () => "Ban appeal",
-  l = () => "Revisão de banimento",
-  i = () => "封禁申诉",
-  _ = () => "Bann-Einspruch",
-  f = () => "Apelación de ban",
-  b = () => "Recours de bannissement",
-  m = () => "Ricorso contro il ban",
-  q = () => "BANの異議申立て",
-  v = () => "Odwołanie od bana",
-  d = () => "Апелляция на бан",
-  g = () => "Апеляція на бан",
-  h = () => "Kháng cáo lệnh cấm",
-  R = (e = {}, n = {}) => {
-    const r = n.locale ?? a();
-    return r === "en" ? c() : r === "pt" ? l() : r === "ch" ? i() : r === "de" ? _() : r === "es" ? f() : r === "fr" ? b() : r === "it" ? m() : r === "jp" ? q() : r === "pl" ? v() : r === "ru" ? d() : r === "uk" ? g() : h()
-  };
-var w = new Set(["$$slots", "$$events", "$$legacy"]),
-  T = o('<svg><path d="m336-280 144-144 144 144 56-56-144-144 144-144-56-56-144 144-144-144-56 56 144 144-144 144 56 56ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"></path></svg>');
+  i as w
+} from "./C31cMBCe.js";
+import {
+  a as E
+} from "./Czze0tKx.js";
+import {
+  p as y
+} from "./Bu-IUIdW.js";
+import {
+  R as O,
+  a as z
+} from "./TTfhDrzz.js";
+import {
+  L as v
+} from "./DOyCRYNQ.js";
+var c = g('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
+  A = g("<span><!></span>");
 
-function j(e, n) {
-  let r = u(n, w);
-  var t = T();
-  s(t, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...r
-  })), p(e, t)
+function T(b, e) {
+  R(e, !0);
+  let p = y(e, "big", 3, !1);
+  var s = A();
+  let d;
+  var u = i(s);
+  {
+    var x = r => {
+        var a = c(),
+          t = i(a);
+        v(t, {
+          size: "none"
+        });
+        var o = f(t, 1, !0);
+        l(a), m(() => _(o, O[e.role])), n(r, a)
+      },
+      L = r => {
+        var a = c(),
+          t = i(a);
+        v(t, {
+          size: "small"
+        });
+        var o = f(t, 1, !0);
+        l(a), m(() => _(o, z[e.role])), n(r, a)
+      };
+    w(u, r => {
+      p() ? r(x) : r(L, -1)
+    })
+  }
+  l(s), m(() => d = E(s, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center pt-0.5 leading-none font-semibold whitespace-nowrap shadow", null, d, {
+    "badge-info": e.role === "admin",
+    "badge-secondary": e.role === "sac" || e.role === "game_master" || e.role === "game_master_leader" || e.role === "dev",
+    "badge-warning": e.role === "discord_mod" || e.role === "discord_leader"
+  })), n(b, s), h()
 }
 export {
-  j as C, R as b
+  T as R
 };

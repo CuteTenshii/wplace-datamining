@@ -17,7 +17,7 @@ var v = (o, t, n) => (sn(o, t, "read from private field"), n ? n.call(o) : t.get
 import "../chunks/Bzak7iHL.js";
 import {
   o as he
-} from "../chunks/Kz-50a97.js";
+} from "../chunks/1oxOLtYl.js";
 import {
   p as Yt,
   d as nt,
@@ -27,65 +27,65 @@ import {
   b as Xt,
   c as ft,
   bJ as Re,
-  G as Jn,
-  F as En,
-  H as $n,
+  E as Jn,
+  D as En,
+  F as $n,
   e as tt,
   g as gn,
-  A as Mt,
+  y as Mt,
   h as p,
   i as r,
-  D as Pe,
+  B as Pe,
   s as Et,
-  l as oe,
-  v as nn,
+  o as oe,
+  q as nn,
   u as E,
-  x as qt,
-  q as $,
+  m as qt,
+  w as $,
   f as G,
-  k as rn,
-  y as Tn,
-  w as Ge,
+  l as rn,
+  v as Tn,
+  k as Ge,
   bK as Mn,
   n as Bn,
   bH as ti
-} from "../chunks/Dkgr_Dbt.js";
+} from "../chunks/BKnGt6Ki.js";
 import {
   c as ei,
   s as Ht
-} from "../chunks/DbffVGnc.js";
+} from "../chunks/DbGfTWgr.js";
 import {
   i as st
-} from "../chunks/rBVNqKOk.js";
+} from "../chunks/C31cMBCe.js";
 import {
   s as Ut
-} from "../chunks/BPhfHpSd.js";
+} from "../chunks/BLpt-Kcc.js";
 import {
   v as ni
-} from "../chunks/CFZcgMPJ.js";
+} from "../chunks/6KqoE0Tw.js";
 import {
-  I as Ot,
-  J as ae,
-  K as ii,
+  J as Ot,
+  K as ae,
+  L as ii,
   g as hn,
-  a as an,
+  b as an,
   t as ve,
   u as Xe,
-  L as Dn,
-  M as ri,
-  N as ln,
-  O as Sn,
-  Q as xn,
-  R as oi,
+  M as Dn,
+  N as ri,
+  O as ln,
+  Q as Sn,
+  R as xn,
+  U as oi,
   l as Nn,
-  U as si,
+  V as si,
   T as ai
-} from "../chunks/DdhD_NEo.js";
+} from "../chunks/BX_mgEO_.js";
 import {
   s as li,
   a as ui,
   A as ci
-} from "../chunks/CuXfH2PZ.js";
+} from "../chunks/o8XjsP3o.js";
 import {
   a as Hn,
   i as on,
@@ -102,20 +102,20 @@ import {
   h as _i,
   j as gi,
   k as vi
-} from "../chunks/CePdE_5X.js";
+} from "../chunks/LCTvARUc.js";
 import {
   k as yi
-} from "../chunks/DRY9BP4c.js";
+} from "../chunks/Dp-kwvwZ.js";
 import {
   c as le,
   a as Zt,
   s as bt,
-  b as un,
-  e as ye,
+  e as un,
+  b as ye,
   S as Ci,
   h as bi,
-  f as Un
-} from "../chunks/tzSUQnZi.js";
+  d as Un
+} from "../chunks/Czze0tKx.js";
 import {
   b as wi,
   c as Ii
@@ -124,19 +124,19 @@ import {
   p as P,
   s as ke,
   r as Ee
-} from "../chunks/DOQuOeXT.js";
+} from "../chunks/Bu-IUIdW.js";
 import {
   _ as Ei
 } from "../chunks/Dp1pzeXC.js";
 import {
   e as Qe
-} from "../chunks/C5VgB5sf.js";
+} from "../chunks/46VnMWdA.js";
 import {
   c as Jt
-} from "../chunks/CIVCrfNX.js";
+} from "../chunks/D0jnjjI8.js";
 import {
   b as vn
-} from "../chunks/CqpZKCt-.js";
+} from "../chunks/COc1n5Dd.js";
 import {
   t as Ti
 } from "../chunks/Ct12j0u0.js";
@@ -146,7 +146,7 @@ import {
 import {
   p as Di
 } from "../chunks/BTQgEZ2f.js";
-import "../chunks/C_q9A17M.js";
+import "../chunks/DAi4IXg9.js";
 const Si = !0,
   ul = Object.freeze(Object.defineProperty({
     __proto__: null,
@@ -456,7 +456,7 @@ function bs(o, t) {
           var Lt = fs(),
             l = nt(Lt);
           Ut(l, () => t.loadingIcon), J(Lt), Tt(e => {
-            Zt(Lt, 1, e), bt(Lt, "data-visible", r(O) === "loading")
+            Zt(Lt, 1, e), bt(Lt, "data-visible", r(M) === "loading")
           }, [() => {
             var e, i, s;
             return le(ae((e = r(Q)) == null ? void 0 : e.loader, (s = (i = t.toast) == null ? void 0 : i.classes) == null ? void 0 : s.loader, "sonner-loader"))
@@ -468,7 +468,7 @@ function bs(o, t) {
                 var e, i;
                 return ae((e = r(Q)) == null ? void 0 : e.loader, (i = t.toast.classes) == null ? void 0 : i.loader)
               }),
-              l = E(() => r(O) === "loading");
+              l = E(() => r(M) === "loading");
             ts(m, {
               get class() {
                 return r(Lt)
@@ -489,7 +489,7 @@ function bs(o, t) {
     _ = P(t, "actionButtonStyle", 3, ""),
     w = P(t, "descriptionClass", 3, ""),
     S = P(t, "unstyled", 3, !1),
-    B = P(t, "defaultRichColors", 3, !1);
+    H = P(t, "defaultRichColors", 3, !1);
   const W = {
     ...ds
   };
@@ -498,7 +498,7 @@ function bs(o, t) {
     T = tt(!1),
     N = tt(!1),
     Y = tt(!1),
-    H = tt(0),
+    O = tt(0),
     X = tt(0),
     R = t.toast.duration || t.duration || Ln,
     b = tt(void 0),
@@ -506,7 +506,7 @@ function bs(o, t) {
     K = tt(null);
   const I = E(() => t.index === 0),
     j = E(() => t.index + 1 <= t.visibleToasts),
-    O = E(() => t.toast.type),
+    M = E(() => t.toast.type),
     _t = E(() => t.toast.dismissable !== !1),
     Dt = E(() => t.toast.class || ""),
     x = E(() => t.toast.descriptionClass || ""),
@@ -518,7 +518,7 @@ function bs(o, t) {
     Bt = E(() => Ot.heights.reduce((k, U, rt) => rt >= r(q) ? k : k + U.height, 0)),
     ee = ss(),
     at = E(() => t.toast.invert || t.invert),
-    zt = E(() => r(O) === "loading"),
+    zt = E(() => r(M) === "loading"),
     Q = E(() => ({
       ...W,
       ...t.classes
@@ -549,12 +549,12 @@ function bs(o, t) {
   });
 
   function z() {
-    p(y, !0), p(H, r(L), !0), Ot.removeHeight(t.toast.id), setTimeout(() => {
+    p(y, !0), p(O, r(L), !0), Ot.removeHeight(t.toast.id), setTimeout(() => {
       Ot.remove(t.toast.id)
     }, us)
   }
   let wt;
-  const lt = E(() => t.toast.promise && r(O) === "loading" || t.toast.duration === Number.POSITIVE_INFINITY);
+  const lt = E(() => t.toast.promise && r(M) === "loading" || t.toast.duration === Number.POSITIVE_INFINITY);
 
   function Wt() {
     p(Ct, new Date().getTime(), !0), wt = setTimeout(() => {
@@ -590,7 +590,7 @@ function bs(o, t) {
   });
   const _e = k => {
       if (r(zt)) return;
-      p(H, r(L), !0);
+      p(O, r(L), !0);
       const U = k.target;
       U.setPointerCapture(k.pointerId), U.tagName !== "BUTTON" && (p(T, !0), xt = {
         x: k.clientX,
@@ -607,7 +607,7 @@ function bs(o, t) {
         ut = r(D) === "x" ? k : U,
         et = Math.abs(ut) / rt;
       if (Math.abs(ut) >= ls || et > .11) {
-        p(H, r(L), !0), (e = (l = t.toast).onDismiss) == null || e.call(l, t.toast), r(D) === "x" ? p(K, k > 0 ? "right" : "left", !0) : p(K, U > 0 ? "down" : "up", !0), z(), p(N, !0);
+        p(O, r(L), !0), (e = (l = t.toast).onDismiss) == null || e.call(l, t.toast), r(D) === "x" ? p(K, k > 0 ? "right" : "left", !0) : p(K, U > 0 ? "down" : "up", !0), z(), p(N, !0);
         return
       } else(i = r(b)) == null || i.style.setProperty("--swipe-amount-x", "0px"), (s = r(b)) == null || s.style.setProperty("--swipe-amount-y", "0px");
       p(Y, !1), p(T, !1), p(D, null)
@@ -640,7 +640,7 @@ function bs(o, t) {
     Ft = () => {
       p(T, !1), p(D, null), xt = null
     },
-    Pt = E(() => t.toast.icon ? t.toast.icon : r(O) === "success" ? t.successIcon : r(O) === "error" ? t.errorIcon : r(O) === "warning" ? t.warningIcon : r(O) === "info" ? t.infoIcon : r(O) === "loading" ? t.loadingIcon : null);
+    Pt = E(() => t.toast.icon ? t.toast.icon : r(M) === "success" ? t.successIcon : r(M) === "error" ? t.errorIcon : r(M) === "warning" ? t.warningIcon : r(M) === "info" ? t.infoIcon : r(M) === "loading" ? t.loadingIcon : null);
   var Z = Cs();
   bt(Z, "tabindex", 0);
   let fe;
@@ -660,7 +660,7 @@ function bs(o, t) {
       }), g(k, U)
     };
     st(Te, k => {
-      r(dt) && !t.toast.component && r(O) !== "loading" && t.closeIcon !== null && k(De)
+      r(dt) && !t.toast.component && r(M) !== "loading" && t.closeIcon !== null && k(De)
     })
   }
   var Se = Et(Te, 2);
@@ -683,7 +683,7 @@ function bs(o, t) {
             var d = ps(),
               C = nt(d);
             {
-              var M = V => {
+              var B = V => {
                 var F = $(),
                   gt = G(F);
                 {
@@ -704,7 +704,7 @@ function bs(o, t) {
                 g(V, F)
               };
               st(C, V => {
-                (t.toast.promise || r(O) === "loading") && V(M)
+                (t.toast.promise || r(M) === "loading") && V(B)
               })
             }
             var pt = Et(C, 2);
@@ -741,7 +741,7 @@ function bs(o, t) {
                       Ut(te, () => t.infoIcon ?? qt), g(St, Rt)
                     };
                   st(gt, St => {
-                    t.toast.icon ? St(it) : r(O) === "success" ? St(ht, 1) : r(O) === "error" ? St(ot, 2) : r(O) === "warning" ? St(Gt, 3) : r(O) === "info" && St(jt, 4)
+                    t.toast.icon ? St(it) : r(M) === "success" ? St(ht, 1) : r(M) === "error" ? St(ot, 2) : r(M) === "warning" ? St(Gt, 3) : r(M) === "info" && St(jt, 4)
                   })
                 }
                 g(V, F)
@@ -756,7 +756,7 @@ function bs(o, t) {
             }]), g(h, d)
           };
           st(rt, h => {
-            (r(O) || t.toast.icon || t.toast.promise) && t.toast.icon !== null && (r(Pt) !== null || t.toast.icon) && h(ut)
+            (r(M) || t.toast.icon || t.toast.promise) && t.toast.icon !== null && (r(Pt) !== null || t.toast.icon) && h(ut)
           })
         }
         var et = Et(rt, 2),
@@ -767,7 +767,7 @@ function bs(o, t) {
             var d = $(),
               C = G(d);
             {
-              var M = ct => {
+              var B = ct => {
                   const V = E(() => t.toast.title);
                   var F = $(),
                     gt = G(F);
@@ -780,7 +780,7 @@ function bs(o, t) {
                   Tt(() => Ht(V, t.toast.title)), g(ct, V)
                 };
               st(C, ct => {
-                typeof t.toast.title != "string" ? ct(M) : ct(pt, -1)
+                typeof t.toast.title != "string" ? ct(B) : ct(pt, -1)
               })
             }
             g(h, d)
@@ -796,7 +796,7 @@ function bs(o, t) {
             var d = _s(),
               C = nt(d);
             {
-              var M = ct => {
+              var B = ct => {
                   const V = E(() => t.toast.description);
                   var F = $(),
                     gt = G(F);
@@ -809,7 +809,7 @@ function bs(o, t) {
                   Tt(() => Ht(V, t.toast.description)), g(ct, V)
                 };
               st(C, ct => {
-                typeof t.toast.description != "string" ? ct(M) : ct(pt, -1)
+                typeof t.toast.description != "string" ? ct(B) : ct(pt, -1)
               })
             }
             J(d), Tt(ct => Zt(d, 1, ct), [() => {
@@ -828,7 +828,7 @@ function bs(o, t) {
             var d = $(),
               C = G(d);
             {
-              var M = V => {
+              var B = V => {
                   var F = $(),
                     gt = G(F);
                   Jt(gt, () => t.toast.cancel, (it, ht) => {
@@ -850,7 +850,7 @@ function bs(o, t) {
                 },
                 ct = E(() => Ke(t.toast.cancel));
               st(C, V => {
-                typeof t.toast.cancel == "function" ? V(M) : r(ct) && V(pt, 1)
+                typeof t.toast.cancel == "function" ? V(B) : r(ct) && V(pt, 1)
               })
             }
             g(h, d)
@@ -865,7 +865,7 @@ function bs(o, t) {
             var d = $(),
               C = G(d);
             {
-              var M = V => {
+              var B = V => {
                   var F = $(),
                     gt = G(F);
                   Jt(gt, () => t.toast.action, (it, ht) => {
@@ -887,7 +887,7 @@ function bs(o, t) {
                 },
                 ct = E(() => Ke(t.toast.action));
               st(C, V => {
-                typeof t.toast.action == "function" ? V(M) : r(ct) && V(pt, 1)
+                typeof t.toast.action == "function" ? V(B) : r(ct) && V(pt, 1)
               })
             }
             g(h, d)
@@ -906,16 +906,16 @@ function bs(o, t) {
     })
   }
   J(Z), vn(Z, k => p(b, k), () => r(b)), Tt((k, U, rt) => {
-    Zt(Z, 1, k), bt(Z, "data-rich-colors", t.toast.richColors ?? B()), bt(Z, "data-styled", !(t.toast.component || t.toast.unstyled || S())), bt(Z, "data-mounted", r(A)), bt(Z, "data-promise", U), bt(Z, "data-swiped", r(Y)), bt(Z, "data-removed", r(y)), bt(Z, "data-visible", r(j)), bt(Z, "data-y-position", r(At)[0]), bt(Z, "data-x-position", r(At)[1]), bt(Z, "data-index", t.index), bt(Z, "data-front", r(I)), bt(Z, "data-swiping", r(T)), bt(Z, "data-dismissable", r(_t)), bt(Z, "data-type", r(O)), bt(Z, "data-invert", r(at)), bt(Z, "data-swipe-out", r(N)), bt(Z, "data-swipe-direction", r(K)), bt(Z, "data-expanded", rt), fe = un(Z, `${t.style} ${t.toast.style}`, fe, {
+    Zt(Z, 1, k), bt(Z, "data-rich-colors", t.toast.richColors ?? H()), bt(Z, "data-styled", !(t.toast.component || t.toast.unstyled || S())), bt(Z, "data-mounted", r(A)), bt(Z, "data-promise", U), bt(Z, "data-swiped", r(Y)), bt(Z, "data-removed", r(y)), bt(Z, "data-visible", r(j)), bt(Z, "data-y-position", r(At)[0]), bt(Z, "data-x-position", r(At)[1]), bt(Z, "data-index", t.index), bt(Z, "data-front", r(I)), bt(Z, "data-swiping", r(T)), bt(Z, "data-dismissable", r(_t)), bt(Z, "data-type", r(M)), bt(Z, "data-invert", r(at)), bt(Z, "data-swipe-out", r(N)), bt(Z, "data-swipe-direction", r(K)), bt(Z, "data-expanded", rt), fe = un(Z, `${t.style} ${t.toast.style}`, fe, {
       "--index": t.index,
       "--toasts-before": t.index,
       "--z-index": Ot.toasts.length - t.index,
-      "--offset": `${r(y)?r(H):r(L)}px`,
+      "--offset": `${r(y)?r(O):r(L)}px`,
       "--initial-height": t.expandByDefault ? "auto" : `${r(X)}px`
     })
   }, [() => {
     var k, U, rt, ut, et, m;
-    return le(ae(t.class, r(Dt), (k = r(Q)) == null ? void 0 : k.toast, (rt = (U = t.toast) == null ? void 0 : U.classes) == null ? void 0 : rt.toast, (ut = r(Q)) == null ? void 0 : ut[r(O)], (m = (et = t.toast) == null ? void 0 : et.classes) == null ? void 0 : m[r(O)]))
+    return le(ae(t.class, r(Dt), (k = r(Q)) == null ? void 0 : k.toast, (rt = (U = t.toast) == null ? void 0 : U.classes) == null ? void 0 : rt.toast, (ut = r(Q)) == null ? void 0 : ut[r(M)], (m = (et = t.toast) == null ? void 0 : et.classes) == null ? void 0 : m[r(M)]))
   }, () => !!t.toast.promise, () => !!(t.expanded || t.expandByDefault && r(A))]), oe("pointermove", Z, Vt), oe("pointerup", Z, ie), oe("pointerdown", Z, _e), nn("dragend", Z, Ft), g(o, Z), Xt()
 }
 rn(["pointermove", "pointerup", "pointerdown", "click"]);
@@ -963,7 +963,7 @@ function Ms(o, t) {
   return [o, t].forEach((f, _) => {
     const w = _ === 1,
       S = w ? "--mobile-offset" : "--offset",
-      B = w ? Vn : Wn;
+      H = w ? Vn : Wn;
 
     function W(A) {
       ["top", "right", "bottom", "left"].forEach(y => {
@@ -972,8 +972,8 @@ function Ms(o, t) {
     }
     typeof f == "number" || typeof f == "string" ? W(f) : typeof f == "object" ? ["top", "right", "bottom", "left"].forEach(A => {
       const y = f[A];
-      y === void 0 ? n[`${S}-${A}`] = B : n[`${S}-${A}`] = typeof y == "number" ? `${y}px` : y
-    }) : W(B)
+      y === void 0 ? n[`${S}-${A}`] = H : n[`${S}-${A}`] = typeof y == "number" ? `${y}px` : y
+    }) : W(H)
   }), n
 }
 var Bs = new Set(["$$slots", "$$events", "$$legacy", "invert", "position", "hotkey", "expand", "closeButton", "offset", "mobileOffset", "theme", "richColors", "duration", "visibleToasts", "toastOptions", "dir", "gap", "loadingIcon", "successIcon", "errorIcon", "warningIcon", "closeIcon", "infoIcon", "containerAriaLabel", "class", "closeButtonAriaLabel", "onblur", "onfocus", "onmouseenter", "onmousemove", "onmouseleave", "ondragend", "onpointerdown", "onpointerup"]),
@@ -990,14 +990,14 @@ function Ws(o, t) {
     _ = P(t, "position", 3, "bottom-right"),
     w = P(t, "hotkey", 19, () => ["altKey", "KeyT"]),
     S = P(t, "expand", 3, !1),
-    B = P(t, "closeButton", 3, !1),
+    H = P(t, "closeButton", 3, !1),
     W = P(t, "offset", 3, Wn),
     A = P(t, "mobileOffset", 3, Vn),
     y = P(t, "theme", 3, "light"),
     T = P(t, "richColors", 3, !1),
     N = P(t, "duration", 3, ks),
     Y = P(t, "visibleToasts", 3, Ps),
-    H = P(t, "toastOptions", 19, () => ({})),
+    O = P(t, "toastOptions", 19, () => ({})),
     X = P(t, "dir", 7, "auto"),
     R = P(t, "gap", 3, Os),
     b = P(t, "containerAriaLabel", 3, "Notifications"),
@@ -1011,7 +1011,7 @@ function Ws(o, t) {
     return L === "auto" || !L ? (Pe(() => X(window.getComputedStyle(document.documentElement).direction ?? "ltr")), X()) : (Pe(() => X(L)), L)
   }
   const j = E(() => Array.from(new Set([_(), ...Ot.toasts.filter(L => L.position).map(L => L.position)].filter(Boolean))));
-  let O = tt(!1),
+  let M = tt(!1),
     _t = tt(!1),
     Dt = tt(gn(n(y()))),
     x = tt(void 0),
@@ -1019,7 +1019,7 @@ function Ws(o, t) {
     dt = tt(!1);
   const Nt = E(() => w().join("+").replace(/Key/g, "").replace(/Digit/g, ""));
   Mt(() => {
-    Ot.toasts.length <= 1 && p(O, !1)
+    Ot.toasts.length <= 1 && p(M, !1)
   }), Mt(() => {
     const L = Ot.toasts.filter(z => z.dismiss && !z.delete);
     if (L.length > 0) {
@@ -1035,7 +1035,7 @@ function Ws(o, t) {
     }), p(q, null), p(dt, !1))
   }), he(() => (Ot.reset(), Re(document, "keydown", z => {
     var lt, Wt;
-    w().every($t => z[$t] || z.code === $t) && (p(O, !0), (lt = r(x)) == null || lt.focus()), z.code === "Escape" && (document.activeElement === r(x) || (Wt = r(x)) != null && Wt.contains(document.activeElement)) && p(O, !1)
+    w().every($t => z[$t] || z.code === $t) && (p(M, !0), (lt = r(x)) == null || lt.focus()), z.code === "Escape" && (document.activeElement === r(x) || (Wt = r(x)) != null && Wt.contains(document.activeElement)) && p(M, !1)
   }))), Mt(() => {
     if (y() !== "system" && p(Dt, y()), typeof window < "u") {
       y() === "system" && (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? p(Dt, cn) : p(Dt, qe));
@@ -1064,19 +1064,19 @@ function Ws(o, t) {
     },
     ee = L => {
       var z;
-      (z = t.onmouseenter) == null || z.call(t, L), p(O, !0)
+      (z = t.onmouseenter) == null || z.call(t, L), p(M, !0)
     },
     at = L => {
       var z;
-      (z = t.onmouseleave) == null || z.call(t, L), r(_t) || p(O, !1)
+      (z = t.onmouseleave) == null || z.call(t, L), r(_t) || p(M, !1)
     },
     zt = L => {
       var z;
-      (z = t.onmousemove) == null || z.call(t, L), p(O, !0)
+      (z = t.onmousemove) == null || z.call(t, L), p(M, !0)
     },
     Q = L => {
       var z;
-      (z = t.ondragend) == null || z.call(t, L), p(O, !1)
+      (z = t.ondragend) == null || z.call(t, L), p(M, !1)
     },
     mt = L => {
       var z;
@@ -1142,8 +1142,8 @@ function Ws(o, t) {
                 {
                   var u = d => {
                       var C = $(),
-                        M = G(C);
-                      Ut(M, () => t.successIcon ?? qt), g(d, C)
+                        B = G(C);
+                      Ut(B, () => t.successIcon ?? qt), g(d, C)
                     },
                     h = d => {
                       Is(d)
@@ -1160,8 +1160,8 @@ function Ws(o, t) {
                 {
                   var u = d => {
                       var C = $(),
-                        M = G(C);
-                      Ut(M, () => t.errorIcon ?? qt), g(d, C)
+                        B = G(C);
+                      Ut(B, () => t.errorIcon ?? qt), g(d, C)
                     },
                     h = d => {
                       Ts(d)
@@ -1178,8 +1178,8 @@ function Ws(o, t) {
                 {
                   var u = d => {
                       var C = $(),
-                        M = G(C);
-                      Ut(M, () => t.warningIcon ?? qt), g(d, C)
+                        B = G(C);
+                      Ut(B, () => t.warningIcon ?? qt), g(d, C)
                     },
                     h = d => {
                       Ss(d)
@@ -1196,8 +1196,8 @@ function Ws(o, t) {
                 {
                   var u = d => {
                       var C = $(),
-                        M = G(C);
-                      Ut(M, () => t.infoIcon ?? qt), g(d, C)
+                        B = G(C);
+                      Ut(B, () => t.infoIcon ?? qt), g(d, C)
                     },
                     h = d => {
                       Ns(d)
@@ -1214,8 +1214,8 @@ function Ws(o, t) {
                 {
                   var u = d => {
                       var C = $(),
-                        M = G(C);
-                      Ut(M, () => t.closeIcon ?? qt), g(d, C)
+                        B = G(C);
+                      Ut(B, () => t.closeIcon ?? qt), g(d, C)
                     },
                     h = d => {
                       Ls(d)
@@ -1228,33 +1228,33 @@ function Ws(o, t) {
               };
             let U = E(() => {
                 var s;
-                return ((s = H()) == null ? void 0 : s.duration) ?? N()
+                return ((s = O()) == null ? void 0 : s.duration) ?? N()
               }),
               rt = E(() => {
                 var s;
-                return ((s = H()) == null ? void 0 : s.class) ?? ""
+                return ((s = O()) == null ? void 0 : s.class) ?? ""
               }),
               ut = E(() => {
                 var s;
-                return ((s = H()) == null ? void 0 : s.descriptionClass) || ""
+                return ((s = O()) == null ? void 0 : s.descriptionClass) || ""
               }),
               et = E(() => {
                 var s;
-                return ((s = H()) == null ? void 0 : s.style) ?? ""
+                return ((s = O()) == null ? void 0 : s.style) ?? ""
               }),
-              m = E(() => H().classes || {}),
-              Lt = E(() => H().unstyled ?? !1),
+              m = E(() => O().classes || {}),
+              Lt = E(() => O().unstyled ?? !1),
               l = E(() => {
                 var s;
-                return ((s = H()) == null ? void 0 : s.cancelButtonStyle) ?? ""
+                return ((s = O()) == null ? void 0 : s.cancelButtonStyle) ?? ""
               }),
               e = E(() => {
                 var s;
-                return ((s = H()) == null ? void 0 : s.actionButtonStyle) ?? ""
+                return ((s = O()) == null ? void 0 : s.actionButtonStyle) ?? ""
               }),
               i = E(() => {
                 var s;
-                return ((s = H()) == null ? void 0 : s.closeButtonAriaLabel) ?? D()
+                return ((s = O()) == null ? void 0 : s.closeButtonAriaLabel) ?? D()
               });
             bs(Pt, {
               get index() {
@@ -1282,7 +1282,7 @@ function Ws(o, t) {
                 return Y()
               },
               get closeButton() {
-                return B()
+                return H()
               },
               get interacting() {
                 return r(_t)
@@ -1312,7 +1312,7 @@ function Ws(o, t) {
                 return S()
               },
               get expanded() {
-                return r(O)
+                return r(M)
               },
               get loadingIcon() {
                 return t.loadingIcon
@@ -1382,7 +1382,7 @@ function Gs(o, t) {
       }
     };
   let S = tt(!1),
-    B = tt(!1),
+    H = tt(!1),
     W;
 
   function A() {
@@ -1393,8 +1393,8 @@ function Gs(o, t) {
   }
 
   function y() {
-    p(B, !1), W && clearTimeout(W), W = setTimeout(() => {
-      (!r(Ne) || !r(S)) && p(B, !0)
+    p(H, !1), W && clearTimeout(W), W = setTimeout(() => {
+      (!r(Ne) || !r(S)) && p(H, !0)
     }, 5e3)
   }
 
@@ -1407,7 +1407,7 @@ function Gs(o, t) {
   var N = $(),
     Y = G(N);
   {
-    var H = R => {
+    var O = R => {
         var b = Vs();
         Hn(b, (D, K) => w == null ? void 0 : w(D, K), () => r(_)), g(R, b)
       },
@@ -1416,21 +1416,21 @@ function Gs(o, t) {
           D = nt(b);
         {
           var K = j => {
-              var O = Fs();
-              oe("click", O, T), g(j, O)
+              var M = Fs();
+              oe("click", M, T), g(j, M)
             },
             I = j => {
-              var O = js();
-              g(j, O)
+              var M = js();
+              g(j, M)
             };
           st(D, j => {
-            r(B) ? j(K) : j(I, -1)
+            r(H) ? j(K) : j(I, -1)
           })
         }
         J(b), g(R, b)
       };
     st(Y, R => {
-      r(Ne) && r(S) ? R(H) : R(X, -1)
+      r(Ne) && r(S) ? R(O) : R(X, -1)
     })
   }
   g(o, N), Xt()
@@ -1557,7 +1557,7 @@ function ua({
 }) {
   let w = tt(!1),
     S = tt(!1),
-    B = tt(!1);
+    H = tt(!1);
 
   function W() {
     const y = n.current;
@@ -1567,21 +1567,21 @@ function ua({
   function A() {
     const y = o.current,
       T = t.current;
-    if (!y || !T || r(B) || n.current === "none") return;
+    if (!y || !T || r(H) || n.current === "none") return;
     const N = y,
       Y = N.getBoundingClientRect().left + N.offsetWidth,
-      H = N.getBoundingClientRect().top + N.offsetHeight / 2,
+      O = N.getBoundingClientRect().top + N.offsetHeight / 2,
       X = Y - sa,
-      R = H;
-    _.querySelectorAll(la).length === 0 && _.getDocument().elementFromPoint(X, R) === y || (p(w, !0), p(B, !0))
+      R = O;
+    _.querySelectorAll(la).length === 0 && _.getDocument().elementFromPoint(X, R) === y || (p(w, !0), p(H, !0))
   }
   return Mt(() => {
     const y = o.current;
     if (!y || n.current === "none") return;
 
     function T() {
-      const H = jn(y).innerWidth - y.getBoundingClientRect().right;
-      p(S, H >= zn)
+      const O = jn(y).innerWidth - y.getBoundingClientRect().right;
+      p(S, O >= zn)
     }
     T();
     const N = setInterval(T, 1e3);
@@ -1594,11 +1594,11 @@ function ua({
     const T = setTimeout(A, 0),
       N = setTimeout(A, 2e3),
       Y = setTimeout(A, 5e3),
-      H = setTimeout(() => {
-        p(B, !0)
+      O = setTimeout(() => {
+        p(H, !0)
       }, 6e3);
     return () => {
-      clearTimeout(T), clearTimeout(N), clearTimeout(Y), clearTimeout(H)
+      clearTimeout(T), clearTimeout(N), clearTimeout(Y), clearTimeout(O)
     }
   }), {
     get hasPwmBadge() {
@@ -1694,19 +1694,19 @@ const Cn = class Cn {
         _ = t.selectionEnd,
         w = t.selectionDirection ?? "none",
         S = t.maxLength,
-        B = t.value,
+        H = t.value,
         W = r(v(this, de)).prev;
       let A = -1,
         y = -1,
         T;
-      if (B.length !== 0 && f !== null && _ !== null) {
+      if (H.length !== 0 && f !== null && _ !== null) {
         const R = f === _,
-          b = f === B.length && B.length < S;
+          b = f === H.length && H.length < S;
         if (R && !b) {
           const D = f;
           if (D === 0) A = 0, y = 1, T = "forward";
           else if (D === S) A = D - 1, y = D, T = "backward";
-          else if (S > 1 && B.length > 1) {
+          else if (S > 1 && H.length > 1) {
             let K = 0;
             if (W[0] !== null && W[1] !== null) {
               T = D < W[1] ? "backward" : "forward";
@@ -1720,8 +1720,8 @@ const Cn = class Cn {
       }
       const N = A !== -1 ? A : f,
         Y = y !== -1 ? y : _,
-        H = T ?? w;
-      p(v(this, Kt), N, !0), p(v(this, Qt), Y, !0), r(v(this, de)).prev = [N, Y, H]
+        O = T ?? w;
+      p(v(this, Kt), N, !0), p(v(this, Qt), Y, !0), r(v(this, de)).prev = [N, Y, O]
     });
     It(this, "oninput", t => {
       const n = t.currentTarget.value.slice(0, this.opts.maxLength.current);
@@ -1744,27 +1744,27 @@ const Cn = class Cn {
       var y, T, N, Y;
       const n = this.opts.inputRef.current;
       if (!n) return;
-      const f = H => {
+      const f = O => {
           const X = n.selectionStart === null ? void 0 : n.selectionStart,
             R = n.selectionEnd === null ? void 0 : n.selectionEnd,
             b = X !== R,
             D = this.opts.value.current;
-          return (b ? D.slice(0, X) + H + D.slice(R) : D.slice(0, X) + H + D.slice(X)).slice(0, this.opts.maxLength.current)
+          return (b ? D.slice(0, X) + O + D.slice(R) : D.slice(0, X) + O + D.slice(X)).slice(0, this.opts.maxLength.current)
         },
-        _ = H => H.length > 0 && r(v(this, re)) && !r(v(this, re)).test(H);
+        _ = O => O.length > 0 && r(v(this, re)) && !r(v(this, re)).test(O);
       if (!((y = this.opts.pasteTransformer) != null && y.current) && (!v(this, Ie).isIOS || !t.clipboardData || !n)) {
-        const H = f((T = t.clipboardData) == null ? void 0 : T.getData("text/plain"));
-        _(H) && t.preventDefault();
+        const O = f((T = t.clipboardData) == null ? void 0 : T.getData("text/plain"));
+        _(O) && t.preventDefault();
         return
       }
       const w = ((N = t.clipboardData) == null ? void 0 : N.getData("text/plain")) ?? "",
         S = (Y = this.opts.pasteTransformer) != null && Y.current ? this.opts.pasteTransformer.current(w) : w;
       t.preventDefault();
-      const B = f(S);
-      if (_(B)) return;
-      n.value = B, this.opts.value.current = B;
-      const W = Math.min(B.length, this.opts.maxLength.current - 1),
-        A = B.length;
+      const H = f(S);
+      if (_(H)) return;
+      n.value = H, this.opts.value.current = H;
+      const W = Math.min(H.length, this.opts.maxLength.current - 1),
+        A = H.length;
       n.setSelectionRange(W, A), p(v(this, Kt), W, !0), p(v(this, Qt), A, !0)
     });
     It(this, "onmouseover", t => {
@@ -1843,9 +1843,9 @@ const Cn = class Cn {
         _ && _.style.setProperty("--bits-pin-input-root-height", `${f.clientHeight}px`)
       };
       S();
-      const B = new ResizeObserver(S);
-      return B.observe(f), () => {
-        w(), B.disconnect()
+      const H = new ResizeObserver(S);
+      return H.observe(f), () => {
+        w(), H.disconnect()
       }
     }), hi([() => this.opts.value.current, () => this.opts.inputRef.current], () => {
       da(() => {
@@ -1953,14 +1953,14 @@ function ma(o, t) {
     _ = P(t, "inputId", 19, () => `${mn(n)}-input`),
     w = P(t, "ref", 15, null),
     S = P(t, "inputRef", 15, null),
-    B = P(t, "maxlength", 3, 6),
+    H = P(t, "maxlength", 3, 6),
     W = P(t, "textalign", 3, "left"),
     A = P(t, "inputmode", 3, "numeric"),
     y = P(t, "onComplete", 3, An),
     T = P(t, "pushPasswordManagerStrategy", 3, "increase-width"),
     N = P(t, "class", 3, ""),
     Y = P(t, "autocomplete", 3, "one-time-code"),
-    H = P(t, "disabled", 3, !1),
+    O = P(t, "disabled", 3, !1),
     X = P(t, "value", 15, ""),
     R = P(t, "onValueChange", 3, An),
     b = Ee(t, ha);
@@ -1970,9 +1970,9 @@ function ma(o, t) {
       inputRef: kt(() => S(), q => S(q)),
       inputId: kt(() => _()),
       autocomplete: kt(() => Y()),
-      maxLength: kt(() => B()),
+      maxLength: kt(() => H()),
       textAlign: kt(() => W()),
-      disabled: kt(() => H()),
+      disabled: kt(() => O()),
       inputmode: kt(() => A()),
       pattern: kt(() => t.pattern),
       onComplete: kt(() => y()),
@@ -1987,11 +1987,11 @@ function ma(o, t) {
       class: N()
     })),
     j = E(() => Ye(D.inputWrapperProps, {}));
-  var O = fa();
-  ye(O, () => ({
+  var M = fa();
+  ye(M, () => ({
     ...r(I)
   }));
-  var _t = nt(O);
+  var _t = nt(M);
   Ut(_t, () => t.children ?? qt, () => D.snippetProps);
   var Dt = Et(_t, 2);
   ye(Dt, () => ({
@@ -2000,7 +2000,7 @@ function ma(o, t) {
   var x = nt(Dt);
   ye(x, () => ({
     ...r(K)
-  }), void 0, void 0, void 0, void 0, !0), J(Dt), J(O), g(o, O), Xt()
+  }), void 0, void 0, void 0, void 0, !0), J(Dt), J(M), g(o, M), Xt()
 }
 var pa = new Set(["$$slots", "$$events", "$$legacy", "id", "ref", "cell", "child", "children"]),
   _a = ft("<div><!></div>");
@@ -2016,24 +2016,24 @@ function ga(o, t) {
       ref: kt(() => _(), N => _(N)),
       cell: kt(() => t.cell)
     }),
-    B = E(() => Ye(w, S.props));
+    H = E(() => Ye(w, S.props));
   var W = $(),
     A = G(W);
   {
     var y = N => {
         var Y = $(),
-          H = G(Y);
-        Ut(H, () => t.child, () => ({
-          props: r(B)
+          O = G(Y);
+        Ut(O, () => t.child, () => ({
+          props: r(H)
         })), g(N, Y)
       },
       T = N => {
         var Y = _a();
         ye(Y, () => ({
-          ...r(B)
+          ...r(H)
         }));
-        var H = nt(Y);
-        Ut(H, () => t.children ?? qt), J(Y), g(N, Y)
+        var O = nt(Y);
+        Ut(O, () => t.children ?? qt), J(Y), g(N, Y)
       };
     st(A, N => {
       t.child ? N(y) : N(T, -1)
@@ -2053,8 +2053,8 @@ function ba(o, t) {
     w = G(_);
   {
     let S = E(() => yn("border-input relative flex size-12 items-center justify-center border-y border-r text-xl transition-all first:rounded-l-md first:border-l last:rounded-r-md", t.cell.isActive && "ring-base-content/40 z-10 ring-2", t.class));
-    Jt(w, () => ga, (B, W) => {
-      W(B, ke({
+    Jt(w, () => ga, (H, W) => {
+      W(H, ke({
         get cell() {
           return t.cell
         },
@@ -2074,12 +2074,12 @@ function ba(o, t) {
             N = G(T),
             Y = Et(N);
           {
-            var H = X => {
+            var O = X => {
               var R = ya();
               g(X, R)
             };
             st(Y, X => {
-              t.cell.hasFakeCaret && X(H)
+              t.cell.hasFakeCaret && X(O)
             })
           }
           Tt(() => Ht(N, `${t.cell.char??""} `)), g(A, T)
@@ -2102,11 +2102,11 @@ function Ia(o, t) {
   var w = $(),
     S = G(w);
   {
-    let B = E(() => yn("flex items-center gap-2 has-disabled:opacity-50 [&_input]:disabled:cursor-not-allowed", t.class));
+    let H = E(() => yn("flex items-center gap-2 has-disabled:opacity-50 [&_input]:disabled:cursor-not-allowed", t.class));
     Jt(S, () => ma, (W, A) => {
       A(W, ke({
         get class() {
-          return r(B)
+          return r(H)
         }
       }, () => _, {
         get ref() {
@@ -2147,7 +2147,7 @@ function Ea() {
               enumerable: !0
             })
           },
-          B = (l, e, i, s) => {
+          H = (l, e, i, s) => {
             if (e && typeof e == "object" || typeof e == "function")
               for (let a of _(e)) !w.call(l, a) && a !== i && n(l, a, {
                 get: () => e[a],
@@ -2155,7 +2155,7 @@ function Ea() {
               });
             return l
           },
-          W = l => B(n({}, "__esModule", {
+          W = l => H(n({}, "__esModule", {
             value: !0
           }), l),
           A = {};
@@ -2667,7 +2667,7 @@ function Ea() {
             zm: "Zambia",
             zw: "Zimbabwe"
           },
-          H = Y,
+          O = Y,
           X = {
             selectedCountryAriaLabel: "Change country, selected ${countryName} (${dialCode})",
             noCountrySelected: "Select country",
@@ -2682,7 +2682,7 @@ function Ea() {
           },
           R = X,
           b = {
-            ...H,
+            ...O,
             ...R
           },
           D = b,
@@ -2709,7 +2709,7 @@ function Ea() {
             ESC: "Escape",
             TAB: "Tab"
           },
-          O = {
+          M = {
             PASTE: "insertFromPaste",
             DELETE_FWD: "deleteContentForward"
           },
@@ -2818,8 +2818,8 @@ function Ea() {
               u = [],
               h = [],
               d = [];
-            for (const M of l) M.iso2 === i ? s.push(M) : M.normalisedName.startsWith(i) ? a.push(M) : M.normalisedName.includes(i) ? c.push(M) : i === M.dialCode || i === M.dialCodePlus ? u.push(M) : M.dialCodePlus.includes(i) ? h.push(M) : M.initials.includes(i) && d.push(M);
-            const C = (M, pt) => M.priority - pt.priority;
+            for (const B of l) B.iso2 === i ? s.push(B) : B.normalisedName.startsWith(i) ? a.push(B) : B.normalisedName.includes(i) ? c.push(B) : i === B.dialCode || i === B.dialCodePlus ? u.push(B) : B.dialCodePlus.includes(i) ? h.push(B) : B.initials.includes(i) && d.push(B);
+            const C = (B, pt) => B.priority - pt.priority;
             return [...s.sort(C), ...a.sort(C), ...c.sort(C), ...u.sort(C), ...h.sort(C), ...d.sort(C)]
           },
           z = (l, e) => {
@@ -3075,8 +3075,8 @@ function Ea() {
                 C = h - a + e.scrollTop;
               if (h < a) e.scrollTop = C;
               else if (d > c) {
-                const M = s - u;
-                e.scrollTop = C - M
+                const B = s - u;
+                e.scrollTop = C - B
               }
             }
             highlightListItem(l, e) {
@@ -3151,8 +3151,8 @@ function Ea() {
                 const h = s[u.dialCode][0];
                 for (const d of u.areaCodes) {
                   for (let C = 1; C < d.length; C++) {
-                    const M = d.substring(0, C),
-                      pt = u.dialCode + M;
+                    const B = d.substring(0, C),
+                      pt = u.dialCode + B;
                     a(h, pt), a(u.iso2, pt)
                   }
                   a(u.iso2, u.dialCode + d)
@@ -3283,9 +3283,9 @@ function Ea() {
                 d = ge(u),
                 {
                   initialCountry: C,
-                  geoIpLookup: M
+                  geoIpLookup: B
                 } = this.options,
-                pt = C === Bt.AUTO && M;
+                pt = C === Bt.AUTO && B;
               if (h && !d) this._updateCountryFromNumber(u);
               else if (!pt || e) {
                 const ct = C ? C.toLowerCase() : "";
@@ -3384,15 +3384,15 @@ function Ea() {
                   return
                 }
                 this._updateCountryFromNumber(C) && this._triggerCountryChange();
-                const M = (d == null ? void 0 : d.data) && _t.NON_PLUS_NUMERIC.test(d.data),
-                  pt = (d == null ? void 0 : d.inputType) === O.PASTE && C;
-                M || pt && !e ? u = !0 : _t.NON_PLUS_NUMERIC.test(C) || (u = !1);
+                const B = (d == null ? void 0 : d.data) && _t.NON_PLUS_NUMERIC.test(d.data),
+                  pt = (d == null ? void 0 : d.inputType) === M.PASTE && C;
+                B || pt && !e ? u = !0 : _t.NON_PLUS_NUMERIC.test(C) || (u = !1);
                 const ct = (d == null ? void 0 : d.detail) && d.detail.isSetNumber,
                   V = this.userNumeralSet === "ascii";
                 if (i && !u && !ct && V) {
                   const F = this.ui.telInput.selectionStart || 0,
                     it = C.substring(0, F).replace(_t.NON_PLUS_NUMERIC_GLOBAL, "").length,
-                    ht = (d == null ? void 0 : d.inputType) === O.DELETE_FWD,
+                    ht = (d == null ? void 0 : d.inputType) === M.DELETE_FWD,
                     ot = this._getFullNumber(),
                     Gt = Te(ot, C, m.utils, this.selectedCountryData, this.options.separateDialCode),
                     jt = De(it, Gt, F, ht);
@@ -3420,8 +3420,8 @@ function Ea() {
                     if (e) {
                       const h = this._getTelInputValue(),
                         C = !h.startsWith("+") && this.ui.telInput.selectionStart === 0 && u.key === "+",
-                        M = this._normaliseNumerals(u.key),
-                        pt = /^[0-9]$/.test(M),
+                        B = this._normaliseNumerals(u.key),
+                        pt = /^[0-9]$/.test(B),
                         ct = i ? pt : C || pt,
                         V = this.ui.telInput,
                         F = V.selectionStart,
@@ -3453,8 +3453,8 @@ function Ea() {
                     h = u.slice(0, a),
                     d = u.slice(c),
                     C = this.selectedCountryData.iso2,
-                    M = i.clipboardData.getData("text"),
-                    pt = this._normaliseNumerals(M),
+                    B = i.clipboardData.getData("text"),
+                    pt = this._normaliseNumerals(B),
                     ct = a === 0 && c > 0,
                     V = !u.startsWith("+") || ct,
                     F = pt.replace(_t.NON_PLUS_NUMERIC_GLOBAL, ""),
@@ -3676,10 +3676,10 @@ function Ea() {
                 let d, C;
                 if (e) {
                   const {
-                    name: M,
+                    name: B,
                     dialCode: pt
                   } = this.selectedCountryData;
-                  C = M, d = a.selectedCountryAriaLabel.replace("${countryName}", M).replace("${dialCode}", `+${pt}`)
+                  C = B, d = a.selectedCountryAriaLabel.replace("${countryName}", B).replace("${dialCode}", `+${pt}`)
                 } else C = a.noCountrySelected, d = a.noCountrySelected;
                 this.ui.selectedCountryInner.className = h, this.ui.selectedCountry.setAttribute("title", C), this.ui.selectedCountry.setAttribute(at.LABEL, d)
               }
@@ -3943,7 +3943,7 @@ function La(o, t) {
     _ = tt(0),
     w = tt(!1);
   const S = E(() => r(_) > 0 || r(w));
-  let B = tt(!1),
+  let H = tt(!1),
     W = tt(""),
     A = tt(void 0);
   const y = E(() => {
@@ -3991,7 +3991,7 @@ function La(o, t) {
     }
   }
   Mt(() => {
-    r(W).length === 6 && (p(B, !0), (async () => {
+    r(W).length === 6 && (p(H, !0), (async () => {
       try {
         await an.verifyChallenge({
           type: "otp",
@@ -4000,14 +4000,14 @@ function La(o, t) {
       } catch (b) {
         ve.error(b.message)
       } finally {
-        p(W, ""), p(B, !1)
+        p(W, ""), p(H, !1)
       }
     })())
   });
   var N = Aa(),
     Y = nt(N);
   {
-    var H = b => {
+    var O = b => {
         var D = Sa();
         g(b, D)
       },
@@ -4016,7 +4016,7 @@ function La(o, t) {
           K = G(D),
           I = nt(K),
           j = nt(I),
-          O = nt(j, !0);
+          M = nt(j, !0);
         J(j);
         var _t = Et(j, 2),
           Dt = nt(_t, !0);
@@ -4063,7 +4063,7 @@ function La(o, t) {
         var at = Et(K, 2),
           zt = nt(at, !0);
         J(at), Tt((Q, mt, yt, Ct) => {
-          Ht(O, Q), Ht(Dt, mt), dt.disabled = r(S), Ht(Nt, `${yt??""} `), Ht(zt, Ct)
+          Ht(M, Q), Ht(Dt, mt), dt.disabled = r(S), Ht(Nt, `${yt??""} `), Ht(zt, Ct)
         }, [() => Di(), () => Tr(), () => co(), () => hr()]), nn("submit", x, async () => {
           var mt;
           if (r(S)) return;
@@ -4081,9 +4081,9 @@ function La(o, t) {
           I = nt(K),
           j = nt(I, !0);
         J(I);
-        var O = Et(I, 2),
-          _t = nt(O, !0);
-        J(O), J(K);
+        var M = Et(I, 2),
+          _t = nt(M, !0);
+        J(M), J(K);
         var Dt = Et(K, 2),
           x = nt(Dt);
         {
@@ -4121,7 +4121,7 @@ function La(o, t) {
               maxlength: 6,
               class: "mx-auto w-max",
               get disabled() {
-                return r(B)
+                return r(H)
               },
               get value() {
                 return r(W)
@@ -4175,7 +4175,7 @@ function La(o, t) {
         }), g(b, D)
       };
     st(Y, b => {
-      r(f) ? b(H) : n() ? b(R, -1) : b(X, 1)
+      r(f) ? b(O) : n() ? b(R, -1) : b(X, 1)
     })
   }
   J(N), g(o, N), Xt()
@@ -4194,7 +4194,7 @@ function Ma(o, t) {
     _ = P(t, "language", 3, "auto"),
     w = P(t, "execution", 3, "render"),
     S = P(t, "retryInterval", 3, 8e3),
-    B = P(t, "retry", 3, "auto"),
+    H = P(t, "retry", 3, "auto"),
     W = P(t, "refreshExpired", 3, "auto"),
     A = P(t, "theme", 3, "auto"),
     y = P(t, "size", 3, "normal"),
@@ -4242,12 +4242,12 @@ function Ma(o, t) {
       execution: w(),
       language: _(),
       action: t.action,
-      retry: B(),
+      retry: H(),
       theme: A(),
       cData: t.cData,
       size: y()
     })),
-    H = (x, q) => {
+    O = (x, q) => {
       let dt = window.turnstile.render(x, q);
       return n(dt), {
         destroy() {
@@ -4282,12 +4282,12 @@ function Ma(o, t) {
     p(X, !1), b && clearTimeout(b)
   }));
   var j = $(),
-    O = G(j);
+    M = G(j);
   {
     var _t = x => {
         var q = Pa();
         let dt;
-        Hn(q, (Nt, xt) => H == null ? void 0 : H(Nt, xt), () => r(Y)), Tt(() => dt = Zt(q, 1, `h-16 ${t.class??""}`, "svelte-1lm836y", dt, {
+        Hn(q, (Nt, xt) => O == null ? void 0 : O(Nt, xt), () => r(Y)), Tt(() => dt = Zt(q, 1, `h-16 ${t.class??""}`, "svelte-1lm836y", dt, {
           flexible: y() == "flexible"
         })), g(x, q)
       },
@@ -4309,7 +4309,7 @@ function Ma(o, t) {
         }
         J(q), Tt(() => Zt(q, 1, `flex h-16 items-center justify-center ${t.class??""}`, "svelte-1lm836y")), g(x, q)
       };
-    st(O, x => {
+    st(M, x => {
       r(Le) && r(X) ? x(_t) : x(Dt, -1)
     })
   }
@@ -4328,14 +4328,14 @@ function Ha(o, t) {
   let _ = tt("");
   var w = Ba(),
     S = nt(w);
-  let B;
+  let H;
   var W = nt(S),
     A = nt(W);
   {
     var y = T => {
       var N = $(),
         Y = G(N);
-      yi(Y, () => ln.errorCount, H => {
+      yi(Y, () => ln.errorCount, O => {
         var X = $(),
           R = G(X);
         {
@@ -4346,7 +4346,7 @@ function Ha(o, t) {
                   get siteKey() {
                     return r(j)
                   },
-                  callback: O => xn(O),
+                  callback: M => xn(M),
                   errorCallback: () => Sn()
                 })
               }
@@ -4358,7 +4358,7 @@ function Ha(o, t) {
                   get siteKey() {
                     return r(j)
                   },
-                  callback: O => xn(O),
+                  callback: M => xn(M),
                   errorCallback: () => Sn()
                 })
               }
@@ -4378,7 +4378,7 @@ function Ha(o, t) {
             r(f) === 2 ? I(b) : r(f) === 3 ? I(D, 1) : r(f) === 4 && I(K, 2)
           })
         }
-        g(H, X)
+        g(O, X)
       }), g(T, N)
     };
     st(A, T => {
@@ -4389,7 +4389,7 @@ function Ha(o, t) {
     Mt(() => {
       r(n) ? T.show() : T.close()
     })
-  }), Tt(() => B = Zt(S, 1, "modal-box flex max-w-sm flex-col items-center gap-4", null, B, {
+  }), Tt(() => H = Zt(S, 1, "modal-box flex max-w-sm flex-col items-center gap-4", null, H, {
     "h-84": r(f) === 4 && !r(_)
   })), nn("close", w, () => ri()), g(o, w), Xt()
 }
@@ -4410,7 +4410,7 @@ function cl(o, t) {
       immediate: !0
     });
     let Y = setInterval(() => {
-      gi()
+      gi().catch(O => console.warn("[sw] message failed", O))
     }, 5e3);
     return () => {
       clearTimeout(Y), y(), N(), Nn.cleanup()
@@ -4431,20 +4431,20 @@ function cl(o, t) {
   }), he(() => {});
   var f = Ua();
   nn("beforeunload", ti, () => {
-    vi()
+    vi().catch(y => console.warn("[sw] message failed", y))
   });
   var _ = G(f),
     w = nt(_);
   J(_);
   var S = Et(_, 2);
   {
-    var B = y => {
+    var H = y => {
       var T = $(),
         N = G(T);
       Ut(N, () => t.children), g(y, T)
     };
     st(S, y => {
-      y(B, -1)
+      y(H, -1)
     })
   }
   var W = Et(S, 2);

@@ -11,7 +11,7 @@ import {
 } from "./BhCkpOlh.js";
 import {
   d as p
-} from "./DdhD_NEo.js";
+} from "./BX_mgEO_.js";
 const L = () => "No description",
   d = () => "Sem descrição",
   M = () => "无描述",

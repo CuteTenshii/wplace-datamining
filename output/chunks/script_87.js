@@ -4,14 +4,14 @@ import {
 import "./Bzak7iHL.js";
 import {
   a as s,
-  w as u
-} from "./Dkgr_Dbt.js";
+  k as u
+} from "./BKnGt6Ki.js";
 import {
-  e as d
-} from "./tzSUQnZi.js";
+  b as d
+} from "./Czze0tKx.js";
 import {
   r as o
-} from "./DOQuOeXT.js";
+} from "./Bu-IUIdW.js";
 const _ = () => "Enter a valid user ID",
   p = () => "Informe um ID válido",
   c = () => "请输入有效的用户 ID",
@@ -28,21 +28,21 @@ const _ = () => "Enter a valid user ID",
     const r = e.locale ?? n();
     return r === "en" ? _() : r === "pt" ? p() : r === "ch" ? c() : r === "de" ? a() : r === "es" ? l() : r === "fr" ? f() : r === "it" ? v() : r === "jp" ? m() : r === "pl" ? I() : r === "ru" ? g() : r === "uk" ? D() : R()
   },
-  w = () => "Reddit",
   h = () => "Reddit",
+  w = () => "Reddit",
   q = () => "Reddit",
-  T = () => "Reddit",
   k = () => "Reddit",
+  T = () => "Reddit",
   $ = () => "Reddit",
   j = () => "Reddit",
   x = () => "Reddit",
-  S = () => "Reddit",
   b = () => "Reddit",
+  S = () => "Reddit",
   y = () => "Reddit",
   z = () => "Reddit",
   W = (t = {}, e = {}) => {
     const r = e.locale ?? n();
-    return r === "en" ? w() : r === "pt" ? h() : r === "ch" ? q() : r === "de" ? T() : r === "es" ? k() : r === "fr" ? $() : r === "it" ? j() : r === "jp" ? x() : r === "pl" ? S() : r === "ru" ? b() : r === "uk" ? y() : z()
+    return r === "en" ? h() : r === "pt" ? w() : r === "ch" ? q() : r === "de" ? k() : r === "es" ? T() : r === "fr" ? $() : r === "it" ? j() : r === "jp" ? x() : r === "pl" ? b() : r === "ru" ? S() : r === "uk" ? y() : z()
   };
 var B = new Set(["$$slots", "$$events", "$$legacy"]),
   E = u('<svg><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"></path></svg>');

@@ -1,54 +1,38 @@
 import {
   g as e
 } from "./BhCkpOlh.js";
-const i = () => "Last pixel",
+const n = () => "Last pixel",
   s = () => "Último pixel",
   u = () => "最后一个像素",
-  c = () => "Letzter Pixel",
-  l = () => "Último píxel",
+  l = () => "Letzter Pixel",
+  c = () => "Último píxel",
   o = () => "Dernier pixel",
   _ = () => "Ultimo pixel",
-  a = () => "最後のピクセル",
-  p = () => "Ostatni piksel",
-  f = () => "Последний пиксель",
-  h = () => "Останній піксель",
-  x = () => "Pixel cuối cùng",
-  G = (n = {}, t = {}) => {
-    const r = t.locale ?? e();
-    return r === "en" ? i() : r === "pt" ? s() : r === "ch" ? u() : r === "de" ? c() : r === "es" ? l() : r === "fr" ? o() : r === "it" ? _() : r === "jp" ? a() : r === "pl" ? p() : r === "ru" ? f() : r === "uk" ? h() : x()
+  p = () => "最後のピクセル",
+  f = () => "Ostatni piksel",
+  a = () => "Последний пиксель",
+  x = () => "Останній піксель",
+  v = () => "Pixel cuối cùng",
+  D = (i = {}, r = {}) => {
+    const t = r.locale ?? e();
+    return t === "en" ? n() : t === "pt" ? s() : t === "ch" ? u() : t === "de" ? l() : t === "es" ? c() : t === "fr" ? o() : t === "it" ? _() : t === "jp" ? p() : t === "pl" ? f() : t === "ru" ? a() : t === "uk" ? x() : v()
   },
-  v = () => "Search",
-  k = () => "Buscar",
-  d = () => "搜索",
-  m = () => "Suchen",
-  j = () => "Buscar",
-  V = () => "Rechercher",
-  g = () => "Cerca",
-  B = () => "検索",
-  L = () => "Szukaj",
-  S = () => "Поиск",
-  z = () => "Пошук",
-  O = () => "Tìm kiếm",
-  H = (n = {}, t = {}) => {
-    const r = t.locale ?? e();
-    return r === "en" ? v() : r === "pt" ? k() : r === "ch" ? d() : r === "de" ? m() : r === "es" ? j() : r === "fr" ? V() : r === "it" ? g() : r === "jp" ? B() : r === "pl" ? L() : r === "ru" ? S() : r === "uk" ? z() : O()
-  },
-  P = () => "Visit",
-  T = () => "Visitar",
-  w = () => "访问",
-  C = () => "Besuchen",
-  D = () => "Visitar",
-  R = () => "Visiter",
-  U = () => "Visita",
-  b = () => "訪問",
-  q = () => "Odwiedź",
-  y = () => "Перейти",
-  A = () => "Перейти",
-  E = () => "Thăm",
-  I = (n = {}, t = {}) => {
-    const r = t.locale ?? e();
-    return r === "en" ? P() : r === "pt" ? T() : r === "ch" ? w() : r === "de" ? C() : r === "es" ? D() : r === "fr" ? R() : r === "it" ? U() : r === "jp" ? b() : r === "pl" ? q() : r === "ru" ? y() : r === "uk" ? A() : E()
+  d = () => "Visit",
+  h = () => "Visitar",
+  m = () => "访问",
+  k = () => "Besuchen",
+  V = () => "Visitar",
+  j = () => "Visiter",
+  g = () => "Visita",
+  L = () => "訪問",
+  O = () => "Odwiedź",
+  P = () => "Перейти",
+  w = () => "Перейти",
+  z = () => "Thăm",
+  T = (i = {}, r = {}) => {
+    const t = r.locale ?? e();
+    return t === "en" ? d() : t === "pt" ? h() : t === "ch" ? m() : t === "de" ? k() : t === "es" ? V() : t === "fr" ? j() : t === "it" ? g() : t === "jp" ? L() : t === "pl" ? O() : t === "ru" ? P() : t === "uk" ? w() : z()
   };
 export {
-  G as l, H as s, I as v
+  D as l, T as v
 };

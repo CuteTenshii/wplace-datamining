@@ -1,42 +1,84 @@
-import {
-  K as c,
-  L as o,
-  M as l,
-  N as b,
-  O as p,
-  P as v,
-  Q as g,
-  R as f,
-  S as m
-} from "./Dkgr_Dbt.js";
-import {
-  B as y
-} from "./6BB2hkhT.js";
-
-function R(_, d, h = !1) {
-  var n;
-  o && (n = m, l());
-  var s = new y(_),
-    u = h ? b : 0;
-
-  function t(a, r) {
-    if (o) {
-      var e = p(n);
-      if (a !== parseInt(e.substring(1))) {
-        var i = v();
-        g(i), s.anchor = i, f(!1), s.ensure(a, r), f(!0);
-        return
+const f = ["en", "pt", "ch", "de", "es", "fr", "it", "jp", "pl", "ru", "uk", "vi"],
+  g = "PARAGLIDE_LOCALE",
+  u = ["localStorage", "preferredLanguage", "baseLocale"];
+globalThis.__paraglide = {};
+let i = !1,
+  h = () => {
+    let e;
+    for (const t of u) {
+      if (t === "baseLocale") e = "en";
+      else if (t === "preferredLanguage") e = w();
+      else if (t === "localStorage") e = localStorage.getItem(g) ?? void 0;
+      else if (d(t) && r.has(t)) {
+        const o = r.get(t);
+        if (o) {
+          const a = o.getLocale();
+          if (a instanceof Promise) continue;
+          e = a
+        }
+      }
+      if (e !== void 0) {
+        const o = m(e);
+        return i || (i = !0, p(o, {
+          reload: !1
+        })), o
       }
     }
-    s.ensure(a, r)
+    throw new Error("No locale found. Read the docs https://inlang.com/m/gerre34r/library-inlang-paraglideJs/errors#no-locale-found")
+  },
+  p = (e, t) => {
+    const o = {
+      reload: !0,
+      ...t
+    };
+    let a;
+    try {
+      a = h()
+    } catch {}
+    for (const l of u)
+      if (l !== "baseLocale") {
+        if (l === "localStorage" && typeof window < "u") localStorage.setItem(g, e);
+        else if (d(l) && r.has(l)) {
+          const n = r.get(l);
+          if (n) {
+            const c = n.setLocale(e);
+            c instanceof Promise && c.catch(L => {
+              console.warn(`Custom strategy "${l}" setLocale failed:`, L)
+            })
+          }
+        }
+      } o.reload && window.location && e !== a && window.location.reload()
+  };
+
+function s(e) {
+  return e ? f.includes(e) : !1
+}
+
+function m(e) {
+  if (s(e) === !1) throw new Error(`Invalid locale: ${e}. Expected one of: ${f.join(", ")}`);
+  return e
+}
+
+function w() {
+  var t;
+  if (!((t = navigator == null ? void 0 : navigator.languages) != null && t.length)) return;
+  const e = navigator.languages.map(o => {
+    var a;
+    return {
+      fullTag: o.toLowerCase(),
+      baseTag: (a = o.split("-")[0]) == null ? void 0 : a.toLowerCase()
+    }
+  });
+  for (const o of e) {
+    if (s(o.fullTag)) return o.fullTag;
+    if (s(o.baseTag)) return o.baseTag
   }
-  c(() => {
-    var a = !1;
-    d((r, e = 0) => {
-      a = !0, t(e, r)
-    }), a || t(-1, null)
-  }, u)
+}
+const r = new Map;
+
+function d(e) {
+  return typeof e == "string" && /^custom-[A-Za-z0-9_-]+$/.test(e)
 }
 export {
-  R as i
+  h as g, g as l
 };

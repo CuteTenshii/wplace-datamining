@@ -1,43 +1,43 @@
 import {
-  g as O
+  g as U
 } from "./BhCkpOlh.js";
 import "./Bzak7iHL.js";
 import {
-  k as U,
-  p as V,
-  q as x,
-  f as B,
-  i as S,
+  l as V,
+  p as Z,
+  w as B,
+  f as S,
+  i as x,
   a as l,
-  b as Z,
+  b as q,
   u as A,
   d as _,
-  x as b,
+  m as b,
   r as h,
   t as p,
   c as g,
-  l as s
-} from "./Dkgr_Dbt.js";
+  o as s
+} from "./BKnGt6Ki.js";
 import {
   s as v
-} from "./BPhfHpSd.js";
+} from "./BLpt-Kcc.js";
 import {
   i as C
-} from "./rBVNqKOk.js";
+} from "./C31cMBCe.js";
 import {
   a as k,
   c as z,
   s as c
-} from "./tzSUQnZi.js";
+} from "./Czze0tKx.js";
 import {
   p as d
-} from "./DOQuOeXT.js";
+} from "./Bu-IUIdW.js";
 import {
   P as F
-} from "./CErsBPAx.js";
+} from "./C4gmi8IW.js";
 import {
   u as H
-} from "./DdhD_NEo.js";
+} from "./BX_mgEO_.js";
 const J = () => "Banned",
   Q = () => "Banido",
   T = () => "已封禁",
@@ -51,7 +51,7 @@ const J = () => "Banned",
   rn = () => "Заблоковано",
   tn = () => "Đã bị cấm",
   kn = (i = {}, n = {}) => {
-    const r = n.locale ?? O();
+    const r = n.locale ?? U();
     return r === "en" ? J() : r === "pt" ? Q() : r === "ch" ? T() : r === "de" ? W() : r === "es" ? X() : r === "fr" ? Y() : r === "it" ? $() : r === "jp" ? nn() : r === "pl" ? en() : r === "ru" ? an() : r === "uk" ? rn() : tn()
   };
 
@@ -67,7 +67,7 @@ var ln = g('<span role="link" tabindex="0"><!></span>'),
   cn = g("<span><!></span>");
 
 function gn(i, n) {
-  V(n, !0);
+  Z(n, !0);
   let r = d(n, "mode", 3, "anchor"),
     w = d(n, "class", 3, ""),
     I = d(n, "linkClass", 19, w),
@@ -86,34 +86,34 @@ function gn(i, n) {
   function j(a) {
     a.key !== "Enter" && a.key !== " " || y(a)
   }
-  var P = x(),
-    R = B(P);
+  var P = B(),
+    R = S(P);
   {
-    var q = a => {
-        var t = x(),
-          f = B(t);
+    var G = a => {
+        var t = B(),
+          f = S(t);
         {
-          var K = o => {
+          var M = o => {
               var e = ln(),
                 m = _(e);
               v(m, () => n.children ?? b), h(e), p(() => {
                 k(e, 1, `cursor-pointer hover:underline ${I()}`), c(e, "title", n.title)
               }), s("pointerdown", e, u), s("click", e, y), s("keydown", e, j), l(o, e)
             },
-            M = o => {
+            O = o => {
               var e = sn(),
                 m = _(e);
               v(m, () => n.children ?? b), h(e), p(() => {
-                k(e, 1, `cursor-pointer hover:underline ${I()}`), c(e, "href", S(N)), c(e, "title", n.title)
+                k(e, 1, `cursor-pointer hover:underline ${I()}`), c(e, "href", x(N)), c(e, "title", n.title)
               }), s("pointerdown", e, u), s("click", e, u), l(o, e)
             };
           C(f, o => {
-            r() === "inline" ? o(K) : o(M, -1)
+            r() === "inline" ? o(M) : o(O, -1)
           })
         }
         l(a, t)
       },
-      G = a => {
+      K = a => {
         var t = cn(),
           f = _(t);
         v(f, () => n.children ?? b), h(t), p(() => {
@@ -121,12 +121,12 @@ function gn(i, n) {
         }), l(a, t)
       };
     C(R, a => {
-      S(L) ? a(q) : a(G, -1)
+      x(L) ? a(G) : a(K, -1)
     })
   }
-  l(i, P), Z()
+  l(i, P), q()
 }
-U(["pointerdown", "click", "keydown"]);
+V(["pointerdown", "click", "keydown"]);
 export {
   gn as S, kn as b
 };

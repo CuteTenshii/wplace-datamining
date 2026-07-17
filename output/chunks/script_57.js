@@ -1,70 +1,54 @@
 import {
   g as n
 } from "./BhCkpOlh.js";
-const u = () => "Month",
-  o = () => "Mês",
+const o = () => "Month",
+  u = () => "Mês",
   s = () => "月",
   i = () => "Monat",
   c = () => "Mes",
-  _ = () => "Mois",
-  f = () => "Mese",
-  h = () => "月",
-  d = () => "Miesiąc",
-  m = () => "Месяц",
-  a = () => "Місяць",
-  p = () => "Tháng",
-  $ = (e = {}, r = {}) => {
+  h = () => "Mois",
+  _ = () => "Mese",
+  f = () => "月",
+  m = () => "Miesiąc",
+  a = () => "Месяц",
+  p = () => "Місяць",
+  d = () => "Tháng",
+  K = (e = {}, r = {}) => {
     const t = r.locale ?? n();
-    return t === "en" ? u() : t === "pt" ? o() : t === "ch" ? s() : t === "de" ? i() : t === "es" ? c() : t === "fr" ? _() : t === "it" ? f() : t === "jp" ? h() : t === "pl" ? d() : t === "ru" ? m() : t === "uk" ? a() : p()
+    return t === "en" ? o() : t === "pt" ? u() : t === "ch" ? s() : t === "de" ? i() : t === "es" ? c() : t === "fr" ? h() : t === "it" ? _() : t === "jp" ? f() : t === "pl" ? m() : t === "ru" ? a() : t === "uk" ? p() : d()
   },
   l = () => "this month",
   y = () => "neste mês",
-  D = () => "本月",
-  I = () => "diesen Monat",
-  j = () => "este mes",
+  j = () => "本月",
+  M = () => "diesen Monat",
+  g = () => "este mes",
   k = () => "ce mois-ci",
-  g = () => "questo mese",
-  M = () => "今月",
-  v = () => "w tym miesiącu",
-  H = () => "в этом месяце",
+  H = () => "questo mese",
+  v = () => "今月",
+  T = () => "w tym miesiącu",
+  q = () => "в этом месяце",
   w = () => "цього місяця",
-  z = () => "tháng này",
-  tt = (e = {}, r = {}) => {
+  x = () => "tháng này",
+  N = (e = {}, r = {}) => {
     const t = r.locale ?? n();
-    return t === "en" ? l() : t === "pt" ? y() : t === "ch" ? D() : t === "de" ? I() : t === "es" ? j() : t === "fr" ? k() : t === "it" ? g() : t === "jp" ? M() : t === "pl" ? v() : t === "ru" ? H() : t === "uk" ? w() : z()
+    return t === "en" ? l() : t === "pt" ? y() : t === "ch" ? j() : t === "de" ? M() : t === "es" ? g() : t === "fr" ? k() : t === "it" ? H() : t === "jp" ? v() : t === "pl" ? T() : t === "ru" ? q() : t === "uk" ? w() : x()
   },
-  T = () => "Today",
-  q = () => "Hoje",
-  x = () => "今天",
-  A = () => "Heute",
-  B = () => "Hoy",
-  L = () => "Aujourd’hui",
-  O = () => "Oggi",
-  U = () => "今日",
-  b = () => "Dziś",
-  C = () => "Сегодня",
-  E = () => "Сьогодні",
-  F = () => "Hôm nay",
-  rt = (e = {}, r = {}) => {
+  z = () => "Today",
+  A = () => "Hoje",
+  D = () => "今天",
+  L = () => "Heute",
+  O = () => "Hoy",
+  b = () => "Aujourd’hui",
+  B = () => "Oggi",
+  C = () => "今日",
+  E = () => "Dziś",
+  F = () => "Сегодня",
+  G = () => "Сьогодні",
+  I = () => "Hôm nay",
+  P = (e = {}, r = {}) => {
     const t = r.locale ?? n();
-    return t === "en" ? T() : t === "pt" ? q() : t === "ch" ? x() : t === "de" ? A() : t === "es" ? B() : t === "fr" ? L() : t === "it" ? O() : t === "jp" ? U() : t === "pl" ? b() : t === "ru" ? C() : t === "uk" ? E() : F()
-  },
-  G = () => "User ID",
-  J = () => "ID do usuário",
-  K = () => "用户ID",
-  N = () => "Benutzer-ID",
-  P = () => "ID de usuario",
-  Q = () => "ID utilisateur",
-  R = () => "ID dell'utente",
-  S = () => "ユーザーID",
-  V = () => "ID użytkownika",
-  W = () => "Идентификатор пользователя",
-  X = () => "ID користувача",
-  Y = () => "ID người dùng",
-  nt = (e = {}, r = {}) => {
-    const t = r.locale ?? n();
-    return t === "en" ? G() : t === "pt" ? J() : t === "ch" ? K() : t === "de" ? N() : t === "es" ? P() : t === "fr" ? Q() : t === "it" ? R() : t === "jp" ? S() : t === "pl" ? V() : t === "ru" ? W() : t === "uk" ? X() : Y()
+    return t === "en" ? z() : t === "pt" ? A() : t === "ch" ? D() : t === "de" ? L() : t === "es" ? O() : t === "fr" ? b() : t === "it" ? B() : t === "jp" ? C() : t === "pl" ? E() : t === "ru" ? F() : t === "uk" ? G() : I()
   };
 export {
-  tt as a, $ as m, rt as t, nt as u
+  N as a, K as m, P as t
 };

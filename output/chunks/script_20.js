@@ -1,34 +1,13 @@
 import {
-  s as t,
-  p as r
-} from "./CFZcgMPJ.js";
-const a = {
-  get data() {
-    return r.data
-  },
-  get error() {
-    return r.error
-  },
-  get form() {
-    return r.form
-  },
-  get params() {
-    return r.params
-  },
-  get route() {
-    return r.route
-  },
-  get state() {
-    return r.state
-  },
-  get status() {
-    return r.status
-  },
-  get url() {
-    return r.url
-  }
-};
-t.updated.check;
+  b as o,
+  r
+} from "./6KqoE0Tw.js";
+const t = "";
+
+function s(...e) {
+  if (!e[0].startsWith("/")) throw new Error(`Cannot use \`resolve(...)\` with a non-absolute pathname or route ID (got "${e[0]}"). \`resolve\` is only for internal pathnames and route IDs; external URLs should be used directly.`);
+  return o + t + r(e[0], e[1])
+}
 export {
-  a as p
+  s as r
 };

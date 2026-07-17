@@ -1,11 +1,11 @@
 import "./Bzak7iHL.js";
 import {
   o as yt
-} from "./Kz-50a97.js";
+} from "./1oxOLtYl.js";
 import {
   a as f,
-  w as xt,
-  k as kt,
+  k as xt,
+  l as kt,
   p as zt,
   h as I,
   i as d,
@@ -14,30 +14,30 @@ import {
   r as u,
   n as jt,
   t as y,
-  v as Ct,
+  q as Ct,
   b as Tt,
   e as E,
   f as Wt,
-  l as V,
+  o as V,
   c as v,
-  J as Mt
-} from "./Dkgr_Dbt.js";
+  H as Mt
+} from "./BKnGt6Ki.js";
 import {
   s as l
-} from "./DbffVGnc.js";
+} from "./DbGfTWgr.js";
 import {
   i as m
-} from "./rBVNqKOk.js";
+} from "./C31cMBCe.js";
 import {
-  e as $t,
+  b as $t,
   s as F,
   r as X,
   g as tt
-} from "./tzSUQnZi.js";
+} from "./Czze0tKx.js";
 import {
   r as At,
   p as Bt
-} from "./DOQuOeXT.js";
+} from "./Bu-IUIdW.js";
 import {
   g as Lt,
   i as Pt,
@@ -46,28 +46,28 @@ import {
 } from "./DzBCW1Dp.js";
 import {
   t as Et
-} from "./CFl7M2B7.js";
+} from "./CFZpPBFD.js";
 import {
   g as p
 } from "./BhCkpOlh.js";
 import {
   L as Vt
-} from "./Bnma6RRg.js";
+} from "./DOyCRYNQ.js";
 const Ft = () => "and",
   Kt = () => "e",
   Nt = () => "和",
   Rt = () => "und",
   Dt = () => "y",
-  Ot = () => "et",
-  Ht = () => "e",
+  Ht = () => "et",
+  Ot = () => "e",
   qt = () => "と",
   Gt = () => "i",
   Ut = () => "и",
-  Jt = () => "та",
-  Zt = () => "và",
+  Zt = () => "та",
+  Jt = () => "và",
   Yt = (e = {}, r = {}) => {
     const t = r.locale ?? p();
-    return t === "en" ? Ft() : t === "pt" ? Kt() : t === "ch" ? Nt() : t === "de" ? Rt() : t === "es" ? Dt() : t === "fr" ? Ot() : t === "it" ? Ht() : t === "jp" ? qt() : t === "pl" ? Gt() : t === "ru" ? Ut() : t === "uk" ? Jt() : Zt()
+    return t === "en" ? Ft() : t === "pt" ? Kt() : t === "ch" ? Nt() : t === "de" ? Rt() : t === "es" ? Dt() : t === "fr" ? Ht() : t === "it" ? Ot() : t === "jp" ? qt() : t === "pl" ? Gt() : t === "ru" ? Ut() : t === "uk" ? Zt() : Jt()
   },
   Qt = () => "By continuing, you agree to our",
   Xt = () => "Ao continuar, você concorda com nossos",
@@ -124,16 +124,16 @@ const Ft = () => "and",
   Ne = e => `Continuar con ${e.name}`,
   Re = e => `Continuer avec ${e.name}`,
   De = e => `Continua con ${e.name}`,
-  Oe = e => `${e.name}で続行`,
-  He = e => `Kontynuuj przez ${e.name}`,
+  He = e => `${e.name}で続行`,
+  Oe = e => `Kontynuuj przez ${e.name}`,
   qe = e => `Продолжить через ${e.name}`,
   Ge = e => `Продовжити через ${e.name}`,
   Ue = e => `Tiếp tục với ${e.name}`,
-  Je = (e, r = {}) => {
+  Ze = (e, r = {}) => {
     const t = r.locale ?? p();
-    return t === "en" ? Ee(e) : t === "pt" ? Ve(e) : t === "ch" ? Fe(e) : t === "de" ? Ke(e) : t === "es" ? Ne(e) : t === "fr" ? Re(e) : t === "it" ? De(e) : t === "jp" ? Oe(e) : t === "pl" ? He(e) : t === "ru" ? qe(e) : t === "uk" ? Ge(e) : Ue(e)
+    return t === "en" ? Ee(e) : t === "pt" ? Ve(e) : t === "ch" ? Fe(e) : t === "de" ? Ke(e) : t === "es" ? Ne(e) : t === "fr" ? Re(e) : t === "it" ? De(e) : t === "jp" ? He(e) : t === "pl" ? Oe(e) : t === "ru" ? qe(e) : t === "uk" ? Ge(e) : Ue(e)
   },
-  Ze = () => "Log in to place pixels on the shared world map.",
+  Je = () => "Log in to place pixels on the shared world map.",
   Ye = () => "Entre para colocar pixels no mapa do mundo compartilhado.",
   Qe = () => "登录即可在共享的世界地图上放置像素。",
   Xe = () => "Melde dich an, um Pixel auf der gemeinsamen Weltkarte zu setzen.",
@@ -147,7 +147,7 @@ const Ft = () => "and",
   an = () => "Đăng nhập để đặt pixel trên bản đồ thế giới chung.",
   sn = (e = {}, r = {}) => {
     const t = r.locale ?? p();
-    return t === "en" ? Ze() : t === "pt" ? Ye() : t === "ch" ? Qe() : t === "de" ? Xe() : t === "es" ? tn() : t === "fr" ? en() : t === "it" ? nn() : t === "jp" ? rn() : t === "pl" ? on() : t === "ru" ? un() : t === "uk" ? cn() : an()
+    return t === "en" ? Je() : t === "pt" ? Ye() : t === "ch" ? Qe() : t === "de" ? Xe() : t === "es" ? tn() : t === "fr" ? en() : t === "it" ? nn() : t === "jp" ? rn() : t === "pl" ? on() : t === "ru" ? un() : t === "uk" ? cn() : an()
   },
   _n = () => "Migrate your account",
   ln = () => "Migre sua conta",
@@ -189,16 +189,16 @@ const Ft = () => "and",
   Nn = () => "Politique de confidentialité",
   Rn = () => "Informativa sulla privacy",
   Dn = () => "プライバシーポリシー",
-  On = () => "Polityka prywatności",
-  Hn = () => "Политика конфиденциальности",
+  Hn = () => "Polityka prywatności",
+  On = () => "Политика конфиденциальности",
   qn = () => "Політика конфіденційності",
   Gn = () => "Chính sách quyền riêng tư",
   Un = (e = {}, r = {}) => {
     const t = r.locale ?? p();
-    return t === "en" ? In() : t === "pt" ? En() : t === "ch" ? Vn() : t === "de" ? Fn() : t === "es" ? Kn() : t === "fr" ? Nn() : t === "it" ? Rn() : t === "jp" ? Dn() : t === "pl" ? On() : t === "ru" ? Hn() : t === "uk" ? qn() : Gn()
+    return t === "en" ? In() : t === "pt" ? En() : t === "ch" ? Vn() : t === "de" ? Fn() : t === "es" ? Kn() : t === "fr" ? Nn() : t === "it" ? Rn() : t === "jp" ? Dn() : t === "pl" ? Hn() : t === "ru" ? On() : t === "uk" ? qn() : Gn()
   },
-  Jn = () => "Terms of Service",
-  Zn = () => "Termos de Serviço",
+  Zn = () => "Terms of Service",
+  Jn = () => "Termos de Serviço",
   Yn = () => "服务条款",
   Qn = () => "Nutzungsbedingungen",
   Xn = () => "Términos de servicio",
@@ -211,7 +211,7 @@ const Ft = () => "and",
   ur = () => "Điều khoản dịch vụ",
   cr = (e = {}, r = {}) => {
     const t = r.locale ?? p();
-    return t === "en" ? Jn() : t === "pt" ? Zn() : t === "ch" ? Yn() : t === "de" ? Qn() : t === "es" ? Xn() : t === "fr" ? tr() : t === "it" ? er() : t === "jp" ? nr() : t === "pl" ? rr() : t === "ru" ? ir() : t === "uk" ? or() : ur()
+    return t === "en" ? Zn() : t === "pt" ? Jn() : t === "ch" ? Yn() : t === "de" ? Qn() : t === "es" ? Xn() : t === "fr" ? tr() : t === "it" ? er() : t === "jp" ? nr() : t === "pl" ? rr() : t === "ru" ? ir() : t === "uk" ? or() : ur()
   },
   ar = () => "Some features may not work correctly. We recommend using a regular browser.",
   sr = () => "Algumas funcionalidades podem não funcionar corretamente. Recomendamos acessar por um navegador comum.",
@@ -264,7 +264,7 @@ var Er = v('<input type="hidden" name="fp"/>'),
   Nr = v('<span class="loading loading-spinner loading-sm"></span>'),
   Rr = v('<!> <button type="submit" class="btn btn-xl text-base"><!> </button>', 1),
   Dr = v('<div class="border-base-200 bg-base-200/60 border-t px-8 py-4"><p class="text-base-content/70 text-center text-xs"> <button type="submit" class="text-primary/90 cursor-pointer bg-transparent p-0 font-semibold underline-offset-2 hover:underline disabled:cursor-not-allowed disabled:opacity-60"> </button></p></div>'),
-  Or = v('<form method="POST" class="bg-base-100 mx-auto w-full max-w-md overflow-hidden rounded-2xl shadow-xl"><!> <!> <!> <div class="flex h-1 w-full" aria-hidden="true"><div class="h-full grow bg-rose-500 brightness-95"></div> <div class="h-full grow bg-orange-500 brightness-95"></div> <div class="h-full grow bg-lime-500 brightness-95"></div> <div class="h-full grow bg-emerald-500 brightness-95"></div> <div class="h-full grow bg-blue-500 brightness-95"></div> <div class="h-full grow bg-purple-500 brightness-95"></div> <div class="h-full grow bg-pink-500 brightness-95"></div></div> <div class="px-8 pt-8 pb-8"><div class="flex flex-col items-center"><!> <p class="text-base-content/80 mt-6 px-2 text-center text-sm leading-snug"> </p></div> <div class="mt-8 flex flex-col gap-3"><!></div> <p class="text-base-content/60 mx-auto mt-8 px-2 text-center text-xs leading-relaxed"> <a class="text-base-content/75 font-medium underline-offset-2 hover:underline" target="_blank"> </a>, <a class="text-base-content/75 font-medium underline-offset-2 hover:underline" href="/terms/privacy" target="_blank"> </a> <a class="text-base-content/75 font-medium underline-offset-2 hover:underline" href="/terms/community-guidelines" target="_blank"> </a>.</p></div> <!></form>');
+  Hr = v('<form method="POST" class="bg-base-100 mx-auto w-full max-w-md overflow-hidden rounded-2xl shadow-xl"><!> <!> <!> <div class="flex h-1 w-full" aria-hidden="true"><div class="h-full grow bg-rose-500 brightness-95"></div> <div class="h-full grow bg-orange-500 brightness-95"></div> <div class="h-full grow bg-lime-500 brightness-95"></div> <div class="h-full grow bg-emerald-500 brightness-95"></div> <div class="h-full grow bg-blue-500 brightness-95"></div> <div class="h-full grow bg-purple-500 brightness-95"></div> <div class="h-full grow bg-pink-500 brightness-95"></div></div> <div class="px-8 pt-8 pb-8"><div class="flex flex-col items-center"><!> <p class="text-base-content/80 mt-6 px-2 text-center text-sm leading-snug"> </p></div> <div class="mt-8 flex flex-col gap-3"><!></div> <p class="text-base-content/60 mx-auto mt-8 px-2 text-center text-xs leading-relaxed"> <a class="text-base-content/75 font-medium underline-offset-2 hover:underline" target="_blank"> </a>, <a class="text-base-content/75 font-medium underline-offset-2 hover:underline" href="/terms/privacy" target="_blank"> </a> <a class="text-base-content/75 font-medium underline-offset-2 hover:underline" href="/terms/community-guidelines" target="_blank"> </a>.</p></div> <!></form>');
 
 function ni(e, r) {
   zt(r, !0);
@@ -296,7 +296,7 @@ function ni(e, r) {
     const i = n.currentTarget;
     await d(C), await Mt(), (s = i.form) == null || s.requestSubmit(i)
   }
-  var z = Or(),
+  var z = Hr(),
     R = o(z);
   {
     var it = n => {
@@ -317,23 +317,23 @@ function ni(e, r) {
       r.redirect && n(ot)
     })
   }
-  var O = c(D, 2);
+  var H = c(D, 2);
   {
     var ut = n => {
       var i = Fr();
       f(n, i)
     };
-    m(O, n => {
+    m(H, n => {
       nt && n(ut)
     })
   }
-  var T = c(O, 4),
+  var T = c(H, 4),
     W = o(T),
-    H = o(W);
-  Vt(H, {
+    O = o(W);
+  Vt(O, {
     hasText: !0
   });
-  var q = c(H, 2),
+  var q = c(O, 2),
     ct = o(q, !0);
   u(q), u(W);
   var M = c(W, 2),
@@ -382,7 +382,7 @@ function ni(e, r) {
       var B = c(b);
       u(a), y((_, g) => {
         F(a, "formaction", _), a.disabled = d(k), l(B, ` ${g??""}`)
-      }, [() => K("google"), () => Je({
+      }, [() => K("google"), () => Ze({
         name: "Google"
       })]), V("click", a, N), f(n, i)
     };
@@ -399,10 +399,10 @@ function ni(e, r) {
   var $ = c(j, 2),
     lt = o($, !0);
   u($);
-  var J = c($),
-    Z = c(J),
-    pt = o(Z, !0);
-  u(Z), jt(), u(G), u(T);
+  var Z = c($),
+    J = c(Z),
+    pt = o(J, !0);
+  u(J), jt(), u(G), u(T);
   var ft = c(T, 2);
   {
     var dt = n => {
@@ -420,7 +420,7 @@ function ni(e, r) {
     })
   }
   u(z), y((n, i, s, h, a, b, x) => {
-    l(ct, n), l(U, `${i??""} `), F(j, "href", s), l(_t, h), l(lt, a), l(J, ` ${b??""} `), l(pt, x)
+    l(ct, n), l(U, `${i??""} `), F(j, "href", s), l(_t, h), l(lt, a), l(Z, ` ${b??""} `), l(pt, x)
   }, [() => sn(), () => _e(), () => Et(), () => cr(), () => Un(), () => Yt(), () => ke()]), Ct("submit", z, () => {
     I(k, !0)
   }), f(e, z), Tt()

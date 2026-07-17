@@ -1,53 +1,53 @@
 import "./Bzak7iHL.js";
 import {
-  k as or,
+  l as or,
   p as ar,
-  A as ke,
+  y as ke,
   h as B,
   d as a,
   s as _,
   r as o,
-  v as ze,
+  q as ze,
   a as v,
   b as sr,
   e as F,
   i as t,
   t as y,
-  l as pe,
+  o as pe,
   c as P,
   u as j,
-  y as Q,
+  v as Q,
   f as je,
   n as Se
-} from "./Dkgr_Dbt.js";
+} from "./BKnGt6Ki.js";
 import {
   s as h
-} from "./DbffVGnc.js";
+} from "./DbGfTWgr.js";
 import {
   i as R
-} from "./rBVNqKOk.js";
+} from "./C31cMBCe.js";
 import {
   e as Ie
-} from "./C5VgB5sf.js";
+} from "./46VnMWdA.js";
 import {
   t as ir
-} from "./CrVhdNDn.js";
+} from "./CSE1AVm0.js";
 import {
-  f as ur,
+  d as ur,
   r as Ne,
   s as J,
   g as cr,
   a as lr
-} from "./tzSUQnZi.js";
+} from "./Czze0tKx.js";
 import {
   a as _r
-} from "./48wryRq-.js";
+} from "./Ds9nY-KM.js";
 import {
   b as dr
-} from "./CqpZKCt-.js";
+} from "./COc1n5Dd.js";
 import {
   p as pr
-} from "./DOQuOeXT.js";
+} from "./Bu-IUIdW.js";
 import {
   P as fr
 } from "./DzBCW1Dp.js";
@@ -55,73 +55,73 @@ import {
   t as b,
   l as Ue,
   m as mr,
-  n as Be,
+  o as Be,
   v as vr,
-  o as gr,
-  a as fe,
-  p as hr,
+  p as gr,
+  b as fe,
+  q as hr,
   k as br,
-  q as xr,
+  r as xr,
   i as wr,
-  r as yr,
+  w as yr,
   h as kr,
-  w as zr,
+  x as zr,
   f as jr,
-  x as Sr,
+  y as Sr,
   j as Ir,
-  y as Nr
-} from "./DdhD_NEo.js";
+  z as Nr
+} from "./BX_mgEO_.js";
 import {
-  L as Ur
-} from "./9IzBWnQV.js";
+  L as Ur,
+  g as Br
+} from "./BnHaYJri.js";
 import {
   P as Ce
-} from "./BSJpLJxk.js";
+} from "./xxtmNUhV.js";
 import {
   S as Re,
-  b as Ae
-} from "./BPSzX53u.js";
+  b as Te
+} from "./BssNbCo6.js";
 import {
-  S as Te
-} from "./BvGz6-9J.js";
+  S as Ae
+} from "./DkEFMazE.js";
 import {
   G as Le,
   T as Pe
-} from "./B785t6De.js";
+} from "./6TV0FKwC.js";
 import {
-  W as Br
-} from "./C8yeG_YH.js";
+  W as Cr
+} from "./CmYcKFK4.js";
 import {
   g
 } from "./BhCkpOlh.js";
 import {
-  c as Cr
+  c as Rr
 } from "./D6_ahSxh.js";
 import {
-  s as Rr,
-  a as Ar,
-  g as Tr
-} from "./BFsn9KTY.js";
-import {
-  o as Lr
+  o as Tr
 } from "./L80GiOtt.js";
+import {
+  s as Ar,
+  a as Lr
+} from "./CiUV14RK.js";
 import {
   t as De
 } from "./BJMWNMzA.js";
 import {
-  g as q,
+  g as Z,
   a as te
-} from "./Coo5CotL.js";
+} from "./CgBk9Kv4.js";
 import {
   f as Pr
 } from "./CiB29Aqe.js";
 const Dr = () => "Alliance name reported successfully",
   Er = () => "Nome da aliança denunciado com sucesso",
   Vr = () => "联盟名称举报成功",
-  Mr = () => "Allianzname erfolgreich gemeldet",
-  Or = () => "Nombre de la alianza reportado correctamente",
-  Zr = () => "Nom d’alliance signalé avec succès",
-  qr = () => "Nome dell'alleanza segnalato con successo",
+  qr = () => "Allianzname erfolgreich gemeldet",
+  Mr = () => "Nombre de la alianza reportado correctamente",
+  Or = () => "Nom d’alliance signalé avec succès",
+  Zr = () => "Nome dell'alleanza segnalato con successo",
   Hr = () => "アライアンス名を通報しました。",
   Kr = () => "Nazwa sojuszu została pomyślnie zgłoszona",
   Wr = () => "Название альянса успешно пожаловано",
@@ -129,7 +129,7 @@ const Dr = () => "Alliance name reported successfully",
   Yr = () => "Đã báo cáo tên liên minh thành công",
   Fr = (f = {}, r = {}) => {
     const e = r.locale ?? g();
-    return e === "en" ? Dr() : e === "pt" ? Er() : e === "ch" ? Vr() : e === "de" ? Mr() : e === "es" ? Or() : e === "fr" ? Zr() : e === "it" ? qr() : e === "jp" ? Hr() : e === "pl" ? Kr() : e === "ru" ? Wr() : e === "uk" ? Gr() : Yr()
+    return e === "en" ? Dr() : e === "pt" ? Er() : e === "ch" ? Vr() : e === "de" ? qr() : e === "es" ? Mr() : e === "fr" ? Or() : e === "it" ? Zr() : e === "jp" ? Hr() : e === "pl" ? Kr() : e === "ru" ? Wr() : e === "uk" ? Gr() : Yr()
   },
   Qr = () => "Ban User",
   Jr = () => "Banir usuário",
@@ -175,25 +175,25 @@ const Dr = () => "Alliance name reported successfully",
   Bt = () => "Ваша учетная запись слишком новая, чтобы сообщать о нарушениях",
   Ct = () => "Ваш обліковий запис занадто новий, щоб подавати скарги.",
   Rt = () => "Tài khoản của bạn còn quá mới để báo cáo.",
-  At = (f = {}, r = {}) => {
+  Tt = (f = {}, r = {}) => {
     const e = r.locale ?? g();
     return e === "en" ? wt() : e === "pt" ? yt() : e === "ch" ? kt() : e === "de" ? zt() : e === "es" ? jt() : e === "fr" ? St() : e === "it" ? It() : e === "jp" ? Nt() : e === "pl" ? Ut() : e === "ru" ? Bt() : e === "uk" ? Ct() : Rt()
   },
-  Tt = () => "Paint with more than one account",
+  At = () => "Paint with more than one account",
   Lt = () => "Pintar com mais de uma conta",
   Pt = () => "使用多个账号绘制像素",
   Dt = () => "Mehr als ein Konto zum Malen verwenden",
   Et = () => "Pintar con más de una cuenta",
   Vt = () => "Utiliser plus d’un compte pour peindre",
-  Mt = () => "Usare più di un account per dipingere",
-  Ot = () => "複数のアカウントを使ってピクセルを塗る",
-  Zt = () => "Malowanie pikseli na więcej niż jednym koncie",
-  qt = () => "Рисование с более чем одного аккаунта",
+  qt = () => "Usare più di un account per dipingere",
+  Mt = () => "複数のアカウントを使ってピクセルを塗る",
+  Ot = () => "Malowanie pikseli na więcej niż jednym koncie",
+  Zt = () => "Рисование с более чем одного аккаунта",
   Ht = () => "Малювання з більш ніж одного акаунта",
   Kt = () => "Vẽ pixel bằng nhiều hơn một tài khoản",
   Wt = (f = {}, r = {}) => {
     const e = r.locale ?? g();
-    return e === "en" ? Tt() : e === "pt" ? Lt() : e === "ch" ? Pt() : e === "de" ? Dt() : e === "es" ? Et() : e === "fr" ? Vt() : e === "it" ? Mt() : e === "jp" ? Ot() : e === "pl" ? Zt() : e === "ru" ? qt() : e === "uk" ? Ht() : Kt()
+    return e === "en" ? At() : e === "pt" ? Lt() : e === "ch" ? Pt() : e === "de" ? Dt() : e === "es" ? Et() : e === "fr" ? Vt() : e === "it" ? qt() : e === "jp" ? Mt() : e === "pl" ? Ot() : e === "ru" ? Zt() : e === "uk" ? Ht() : Kt()
   },
   Gt = () => "Name reported successfully",
   Yt = () => "Nome denunciado com sucesso",
@@ -243,21 +243,21 @@ const Dr = () => "Alliance name reported successfully",
     const e = r.locale ?? g();
     return e === "en" ? xn() : e === "pt" ? wn() : e === "ch" ? yn() : e === "de" ? kn() : e === "es" ? zn() : e === "fr" ? jn() : e === "it" ? Sn() : e === "jp" ? In() : e === "pl" ? Nn() : e === "ru" ? Un() : e === "uk" ? Bn() : Cn()
   },
-  An = () => "Report alliance name",
-  Tn = () => "Denunciar nome da aliança",
+  Tn = () => "Report alliance name",
+  An = () => "Denunciar nome da aliança",
   Ln = () => "举报联盟名称",
   Pn = () => "Allianzname melden",
   Dn = () => "Reportar nombre de la alianza",
   En = () => "Signaler le nom de l’alliance",
   Vn = () => "Segnala nome dell'alleanza",
-  Mn = () => "アライアンス名を通報",
-  On = () => "Zgłoś nazwę sojuszu",
-  Zn = () => "Пожаловаться на название альянса",
-  qn = () => "Поскаржитися на назву альянсу",
+  qn = () => "アライアンス名を通報",
+  Mn = () => "Zgłoś nazwę sojuszu",
+  On = () => "Пожаловаться на название альянса",
+  Zn = () => "Поскаржитися на назву альянсу",
   Hn = () => "Báo cáo tên liên minh",
   Kn = (f = {}, r = {}) => {
     const e = r.locale ?? g();
-    return e === "en" ? An() : e === "pt" ? Tn() : e === "ch" ? Ln() : e === "de" ? Pn() : e === "es" ? Dn() : e === "fr" ? En() : e === "it" ? Vn() : e === "jp" ? Mn() : e === "pl" ? On() : e === "ru" ? Zn() : e === "uk" ? qn() : Hn()
+    return e === "en" ? Tn() : e === "pt" ? An() : e === "ch" ? Ln() : e === "de" ? Pn() : e === "es" ? Dn() : e === "fr" ? En() : e === "it" ? Vn() : e === "jp" ? qn() : e === "pl" ? Mn() : e === "ru" ? On() : e === "uk" ? Zn() : Hn()
   },
   Wn = () => "This area is already under review",
   Gn = () => "Esta área já está em análise",
@@ -309,19 +309,19 @@ const Dr = () => "Alliance name reported successfully",
   },
   Co = () => "Report sent successfully",
   Ro = () => "Denúncia enviada com sucesso",
-  Ao = () => "举报已成功发送",
-  To = () => "Meldung erfolgreich gesendet",
+  To = () => "举报已成功发送",
+  Ao = () => "Meldung erfolgreich gesendet",
   Lo = () => "Reporte enviado correctamente",
   Po = () => "Signalement envoyé avec succès",
   Do = () => "Segnalazione inviata con successo",
   Eo = () => "通報を送信しました。",
   Vo = () => "Zgłoszenie zostało pomyślnie wysłane",
-  Mo = () => "Жалоба успешно отправлена",
-  Oo = () => "Скаргу успішно надіслано",
-  Zo = () => "Đã gửi báo cáo thành công",
-  qo = (f = {}, r = {}) => {
+  qo = () => "Жалоба успешно отправлена",
+  Mo = () => "Скаргу успішно надіслано",
+  Oo = () => "Đã gửi báo cáo thành công",
+  Zo = (f = {}, r = {}) => {
     const e = r.locale ?? g();
-    return e === "en" ? Co() : e === "pt" ? Ro() : e === "ch" ? Ao() : e === "de" ? To() : e === "es" ? Lo() : e === "fr" ? Po() : e === "it" ? Do() : e === "jp" ? Eo() : e === "pl" ? Vo() : e === "ru" ? Mo() : e === "uk" ? Oo() : Zo()
+    return e === "en" ? Co() : e === "pt" ? Ro() : e === "ch" ? To() : e === "de" ? Ao() : e === "es" ? Lo() : e === "fr" ? Po() : e === "it" ? Do() : e === "jp" ? Eo() : e === "pl" ? Vo() : e === "ru" ? qo() : e === "uk" ? Mo() : Oo()
   },
   Ho = () => "Report User",
   Ko = () => "Denunciar usuário",
@@ -376,20 +376,20 @@ const Dr = () => "Alliance name reported successfully",
   Ba = () => "用户已成功封禁",
   Ca = () => "Benutzer erfolgreich gebannt",
   Ra = () => "Usuarios baneados correctamente",
-  Aa = () => "Utilisateurs bannis avec succès",
-  Ta = () => "Utenti bannati con successo",
+  Ta = () => "Utilisateurs bannis avec succès",
+  Aa = () => "Utenti bannati con successo",
   La = () => "ユーザーをBANしました。",
   Pa = () => "Użytkownicy zostali pomyślnie zbanowani",
   Da = () => "Пользователи успешно забанены",
   Ea = () => "Користувачів успішно заблоковано",
   Va = () => "Đã cấm người dùng thành công",
-  Ma = (f = {}, r = {}) => {
+  qa = (f = {}, r = {}) => {
     const e = r.locale ?? g();
-    return e === "en" ? Na() : e === "pt" ? Ua() : e === "ch" ? Ba() : e === "de" ? Ca() : e === "es" ? Ra() : e === "fr" ? Aa() : e === "it" ? Ta() : e === "jp" ? La() : e === "pl" ? Pa() : e === "ru" ? Da() : e === "uk" ? Ea() : Va()
+    return e === "en" ? Na() : e === "pt" ? Ua() : e === "ch" ? Ba() : e === "de" ? Ca() : e === "es" ? Ra() : e === "fr" ? Ta() : e === "it" ? Aa() : e === "jp" ? La() : e === "pl" ? Pa() : e === "ru" ? Da() : e === "uk" ? Ea() : Va()
   },
-  Oa = () => "Users timeouted successfully",
-  Za = () => "Usuários suspensos com sucesso",
-  qa = () => "用户已成功禁言",
+  Ma = () => "Users timeouted successfully",
+  Oa = () => "Usuários suspensos com sucesso",
+  Za = () => "用户已成功禁言",
   Ha = () => "Benutzer erfolgreich mit Timeout belegt",
   Ka = () => "Usuarios suspendidos correctamente",
   Wa = () => "Utilisateurs suspendus avec succès",
@@ -401,9 +401,9 @@ const Dr = () => "Alliance name reported successfully",
   Xa = () => "Đã tạm khóa người dùng thành công",
   $a = (f = {}, r = {}) => {
     const e = r.locale ?? g();
-    return e === "en" ? Oa() : e === "pt" ? Za() : e === "ch" ? qa() : e === "de" ? Ha() : e === "es" ? Ka() : e === "fr" ? Wa() : e === "it" ? Ga() : e === "jp" ? Ya() : e === "pl" ? Fa() : e === "ru" ? Qa() : e === "uk" ? Ja() : Xa()
+    return e === "en" ? Ma() : e === "pt" ? Oa() : e === "ch" ? Za() : e === "de" ? Ha() : e === "es" ? Ka() : e === "fr" ? Wa() : e === "it" ? Ga() : e === "jp" ? Ya() : e === "pl" ? Fa() : e === "ru" ? Qa() : e === "uk" ? Ja() : Xa()
   };
-var Me = P("<span> </span> <span> </span>", 1),
+var qe = P("<span> </span> <span> </span>", 1),
   es = P('<span class="badge badge-sm border-0"> </span>'),
   ne = P('<span class="tooltip"><!></span>'),
   rs = P('<li><button class="text-error py-2 font-medium"> </button></li>'),
@@ -414,16 +414,16 @@ var Me = P("<span> </span> <span> </span>", 1),
   ss = P('<form method="POST"><input name="zoom" hidden=""/> <section class="flex gap-3"><!> <div class="min-w-0"><h2 class="text-xl font-semibold"><!></h2> <!></div></section> <!> <section class="mt-6"><h3 class="text-base-content/80 text-base"> </h3> <div class="mt-2 flex flex-col gap-3"></div></section> <section class="mt-6"><!></section> <section class="mt-3 flex justify-end gap-2"><button type="button" class="btn"> </button> <button class="btn btn-error"> </button></section></form>'),
   is = P('<dialog class="modal" closedby="any"><div class="modal-box max-h-[97%] max-w-xl"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute top-2 right-2">✕</button></form> <!></div></dialog>');
 
-function As(f, r) {
+function Ts(f, r) {
   ar(r, !0);
   const e = [];
-  let O = pr(r, "open", 15),
+  let M = pr(r, "open", 15),
     E = F(!1),
     X = F(""),
     oe = F(""),
     ae = F(null),
     se = F(null);
-  const Oe = [{
+  const Me = [{
     value: "griefing",
     label: br(),
     description: hr()
@@ -449,7 +449,7 @@ function As(f, r) {
     description: Wt()
   }, {
     value: "other",
-    label: Lr(),
+    label: Tr(),
     description: bn()
   }];
   let m = j(() => {
@@ -457,9 +457,9 @@ function As(f, r) {
     return (I = r.targets) == null ? void 0 : I[0]
   });
   ke(() => {
-    O() || (B(X, ""), B(oe, ""))
+    M() || (B(X, ""), B(oe, ""))
   });
-  async function Ze(I) {
+  async function Oe(I) {
     try {
       B(E, !0);
       for (const S of I)
@@ -474,7 +474,7 @@ function As(f, r) {
       B(E, !1)
     }
   }
-  async function qe(I) {
+  async function Ze(I) {
     try {
       B(E, !0);
       for (const S of I)
@@ -547,14 +547,14 @@ function As(f, r) {
         var Xe = s => {
           var n = ts(),
             l = a(n);
-          Te(l, {
+          Ae(l, {
             get userId() {
               return t(m).id
             },
             linkClass: "flex gap-1.5",
             textClass: "flex gap-1.5",
             children: (u, c) => {
-              var p = Me(),
+              var p = qe(),
                 N = je(p),
                 Y = a(N, !0);
               o(N);
@@ -584,9 +584,9 @@ function As(f, r) {
             var d = u => {
               {
                 let c = j(() => te(t(m).allianceId)),
-                  p = j(() => q(t(m).allianceId)),
+                  p = j(() => Z(t(m).allianceId)),
                   N = j(() => te(t(m).allianceId)),
-                  Y = j(() => q(t(m).allianceId));
+                  Y = j(() => Z(t(m).allianceId));
                 Re(u, {
                   get allianceId() {
                     return t(m).allianceId
@@ -619,9 +619,9 @@ function As(f, r) {
                   p = a(c);
                 Le(p, {
                   class: "text-error inline size-4"
-                }), o(c), y(N => J(c, "data-tip", N), [() => Ae()]), v(u, c)
+                }), o(c), y(N => J(c, "data-tip", N), [() => Te()]), v(u, c)
               },
-              Z = u => {
+              O = u => {
                 var c = ne(),
                   p = a(c);
                 Pe(p, {
@@ -629,13 +629,13 @@ function As(f, r) {
                 }), o(c), y(N => J(c, "data-tip", N), [() => De()]), v(u, c)
               };
             R(C, u => {
-              t(m).banned ? u(x) : t(m).timedOut && u(Z, 1)
+              t(m).banned ? u(x) : t(m).timedOut && u(O, 1)
             })
           }
-          var A = _(C, 2),
-            V = a(A),
-            T = a(V);
-          Br(T, {
+          var T = _(C, 2),
+            V = a(T),
+            A = a(V);
+          Cr(A, {
             class: "text-error/80 inline size-4"
           }), o(V);
           var W = _(V, 2),
@@ -645,23 +645,23 @@ function As(f, r) {
           o(w), o(G);
           var D = _(G, 2);
           {
-            var M = u => {
+            var q = u => {
                 var c = rs(),
                   p = a(c),
                   N = a(p, !0);
                 o(p), o(c), y(Y => h(N, Y), [() => Kn()]), pe("click", p, async () => {
-                  await qe(r.targets), document.activeElement.blur()
+                  await Ze(r.targets), document.activeElement.blur()
                 }), v(u, c)
               },
               H = j(() => r.targets.some(u => u.allianceId));
             R(D, u => {
-              t(H) && u(M)
+              t(H) && u(q)
             })
           }
-          o(W), o(A), o(n), y((u, c) => {
+          o(W), o(T), o(n), y((u, c) => {
             lr(n, 1, `font-medium ${u??""} flex flex-wrap items-center gap-1.5`), h(z, c)
-          }, [() => q(t(m).id), () => Bo()]), pe("click", w, async () => {
-            await Ze(r.targets), document.activeElement.blur()
+          }, [() => Z(t(m).id), () => Bo()]), pe("click", w, async () => {
+            await Oe(r.targets), document.activeElement.blur()
           }), v(s, n)
         };
         R(Je, s => {
@@ -691,11 +691,11 @@ function As(f, r) {
             });
             var C = _(d, 2),
               x = a(C),
-              Z = a(x);
+              O = a(x);
             {
-              let w = j(() => q(t(i).id)),
-                z = j(() => q(t(i).id));
-              Te(Z, {
+              let w = j(() => Z(t(i).id)),
+                z = j(() => Z(t(i).id));
+              Ae(O, {
                 get userId() {
                   return t(i).id
                 },
@@ -705,8 +705,8 @@ function As(f, r) {
                 get textClass() {
                   return `font-medium ${t(z)??""} flex gap-1.5`
                 },
-                children: (D, M) => {
-                  var H = Me(),
+                children: (D, q) => {
+                  var H = qe(),
                     u = je(H),
                     c = a(u, !0);
                   o(u);
@@ -721,14 +721,14 @@ function As(f, r) {
                 }
               })
             }
-            var A = _(Z, 2);
+            var T = _(O, 2);
             {
               var V = w => {
                 {
                   let z = j(() => te(t(i).allianceId)),
-                    D = j(() => q(t(i).allianceId)),
-                    M = j(() => te(t(i).allianceId)),
-                    H = j(() => q(t(i).allianceId));
+                    D = j(() => Z(t(i).allianceId)),
+                    q = j(() => te(t(i).allianceId)),
+                    H = j(() => Z(t(i).allianceId));
                   Re(w, {
                     get allianceId() {
                       return t(i).allianceId
@@ -737,7 +737,7 @@ function As(f, r) {
                       return `badge badge-xs border-0 ${t(z)??""} ${t(D)??""}`
                     },
                     get textClass() {
-                      return `badge badge-xs border-0 ${t(M)??""} ${t(H)??""}`
+                      return `badge badge-xs border-0 ${t(q)??""} ${t(H)??""}`
                     },
                     children: (u, c) => {
                       Se();
@@ -750,27 +750,27 @@ function As(f, r) {
                   })
                 }
               };
-              R(A, w => {
+              R(T, w => {
                 t(i).allianceId && t(i).allianceName && w(V)
               })
             }
-            var T = _(A, 2);
+            var A = _(T, 2);
             {
               var W = w => {
                   var z = ne(),
                     D = a(z);
                   Le(D, {
                     class: "text-error inline size-3.5"
-                  }), o(z), y(M => J(z, "data-tip", M), [() => Ae()]), v(w, z)
+                  }), o(z), y(q => J(z, "data-tip", q), [() => Te()]), v(w, z)
                 },
                 G = w => {
                   var z = ne(),
                     D = a(z);
                   Pe(D, {
                     class: "text-warning inline size-3.5"
-                  }), o(z), y(M => J(z, "data-tip", M), [() => De()]), v(w, z)
+                  }), o(z), y(q => J(z, "data-tip", q), [() => De()]), v(w, z)
                 };
-              R(T, w => {
+              R(A, w => {
                 t(i).banned ? w(W) : t(i).timedOut && w(G, 1)
               })
             }
@@ -786,7 +786,7 @@ function As(f, r) {
         er = a(le);
       o(le);
       var be = _(le, 2);
-      Ie(be, 21, () => Oe, s => s.value, (s, n) => {
+      Ie(be, 21, () => Me, s => s.value, (s, n) => {
         var l = as(),
           k = a(l);
         Ne(k);
@@ -795,15 +795,15 @@ function As(f, r) {
           C = a(d, !0);
         o(d);
         var x = _(d, 2),
-          Z = a(x, !0);
+          O = a(x, !0);
         o(x), o(U), o(l), y(() => {
-          J(k, "aria-label", t(n).label), i !== (i = t(n).value) && (k.value = (k.__value = t(n).value) ?? ""), h(C, t(n).label), h(Z, t(n).description)
-        }), _r(e, [], k, () => (t(n).value, t(X)), A => B(X, A)), v(s, l)
+          J(k, "aria-label", t(n).label), i !== (i = t(n).value) && (k.value = (k.__value = t(n).value) ?? ""), h(C, t(n).label), h(O, t(n).description)
+        }), _r(e, [], k, () => (t(n).value, t(X)), T => B(X, T)), v(s, l)
       }), o(be), o(ce);
       var _e = _(ce, 2),
         rr = a(_e);
       {
-        let s = j(() => Tr()),
+        let s = j(() => Br()),
           n = j(() => t(X) === "doxxing" ? 20 : 5);
         Ur(rr, {
           class: "h-20 rounded-lg",
@@ -838,13 +838,13 @@ function As(f, r) {
         nr = a(de, !0);
       o(de), o(xe), o(S), dr(S, s => B(ae, s), () => t(ae)), y((s, n, l) => {
         cr($, r.zoom), h(er, `${s??""}:`), h(tr, n), de.disabled = t(E), h(nr, l)
-      }, [() => Rr(), () => Cr(), () => Rn()]), ze("submit", S, async s => {
+      }, [() => Ar(), () => Rr(), () => Rn()]), ze("submit", S, async s => {
         var U;
         if (s.preventDefault(), t(E) || !t(se)()) return;
         const n = new FormData(t(ae)),
           l = String(n.get("reason") ?? "");
         if (!l) {
-          b.error(Ar());
+          b.error(Lr());
           return
         }
         const k = String(n.get("notes") ?? ""),
@@ -858,7 +858,7 @@ function As(f, r) {
             if (!r.viewport) throw new Error(L());
             n.append("reportedUserId", String(i[0])), n.append("latitude", r.latLon[0].toString()), n.append("longitude", r.latLon[1].toString()), n.append("viewportNorth", r.viewport.north.toString()), n.append("viewportSouth", r.viewport.south.toString()), n.append("viewportWest", r.viewport.west.toString()), n.append("viewportEast", r.viewport.east.toString()), n.append("viewportWidth", r.viewport.width.toString()), n.append("viewportHeight", r.viewport.height.toString());
             const d = async () => {
-              var A, V;
+              var T, V;
               const C = await Ue.getHeaders(""),
                 x = await fetch(`${fr}/report-user`, {
                   method: "POST",
@@ -866,23 +866,23 @@ function As(f, r) {
                   credentials: "include",
                   headers: C
                 });
-              if (((A = x.headers.get("cf-mitigated")) == null ? void 0 : A.toLowerCase()) === "challenge") {
+              if (((T = x.headers.get("cf-mitigated")) == null ? void 0 : T.toLowerCase()) === "challenge") {
                 if (Ue.setCfLikelyAutomated(!0), !await mr()) throw new Error(Be());
                 await d();
                 return
               }
               if (x.status === 200 || x.status === 409 || x.status === 403) {
-                const T = await x.json().catch(() => ({}));
-                if (T.error === "challenge-required" && T.tier) {
-                  if (!await vr(T.tier)) throw new Error(Be());
+                const A = await x.json().catch(() => ({}));
+                if (A.error === "challenge-required" && A.tier) {
+                  if (!await vr(A.tier)) throw new Error(Be());
                   await d();
                   return
                 }
-                if (x.status === 403 && !T.reason) {
+                if (x.status === 403 && !A.reason) {
                   b.error(L());
                   return
                 }
-                switch (T.reason) {
+                switch (A.reason) {
                   case "area_cooldown":
                     b.warning(oo());
                     break;
@@ -890,18 +890,18 @@ function As(f, r) {
                     b.warning(ma());
                     break;
                   case "min_pixels_painted":
-                    b.warning(At());
+                    b.warning(Tt());
                     break;
                   case "max_report_per_hour":
                     b.warning(xt());
                     break;
                   default:
-                    b.success(qo());
+                    b.success(Zo());
                     break
                 }(V = r.onsuccess) == null || V.call(r, {
                   action: r.action,
                   userIds: [i[0]]
-                }), O(!1)
+                }), M(!1)
               } else b.error(L())
             };
             await d()
@@ -918,11 +918,11 @@ function As(f, r) {
               reason: l,
               notes: k
             }, r.origin, r.action);
-            const x = r.action === "ban" ? i.length > 1 ? Ma() : Ee() : i.length > 1 ? $a() : Ve();
+            const x = r.action === "ban" ? i.length > 1 ? qa() : Ee() : i.length > 1 ? $a() : Ve();
             b.success(x), (U = r.onsuccess) == null || U.call(r, {
               action: r.action,
               userIds: [i[0]]
-            }), O(!1)
+            }), M(!1)
           }
         } catch (d) {
           b.error((d == null ? void 0 : d.message) ?? L())
@@ -930,20 +930,20 @@ function As(f, r) {
           B(E, !1)
         }
       }), pe("click", ee, () => {
-        O(!1)
+        M(!1)
       }), ir(2, S, () => Pr), v(I, S)
     };
     R(He, I => {
-      O() && I(Ke)
+      M() && I(Ke)
     })
   }
   o(me), o(K), ur(K, () => I => {
     ke(() => {
-      O() ? I.show() : I.close()
+      M() ? I.show() : I.close()
     })
-  }), ze("close", K, () => O(!1)), v(f, K), sr()
+  }), ze("close", K, () => M(!1)), v(f, K), sr()
 }
 or(["click"]);
 export {
-  As as R, L as a, Ee as b, ta as r, Ve as t
+  Ts as R, L as a, Ee as b, ta as r, Ve as t
 };

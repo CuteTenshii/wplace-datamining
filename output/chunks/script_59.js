@@ -1,40 +1,40 @@
 import "./Bzak7iHL.js";
 import {
-  k as j,
+  l as q,
   p as z,
-  q as y,
-  f as x,
-  i as S,
+  w as y,
+  f as S,
+  i as x,
   a as i,
   b as B,
   u as C,
   d as m,
-  x as h,
+  m as h,
   r as v,
   t as _,
   c as g,
-  l as s
-} from "./Dkgr_Dbt.js";
+  o as s
+} from "./BKnGt6Ki.js";
 import {
   s as k
-} from "./BPhfHpSd.js";
+} from "./BLpt-Kcc.js";
 import {
   i as U
-} from "./rBVNqKOk.js";
+} from "./C31cMBCe.js";
 import {
   a as p,
   c as F,
   s as l
-} from "./tzSUQnZi.js";
+} from "./Czze0tKx.js";
 import {
   p as d
-} from "./DOQuOeXT.js";
+} from "./Bu-IUIdW.js";
 import {
   P as G
-} from "./CErsBPAx.js";
+} from "./C4gmi8IW.js";
 import {
   u as H
-} from "./DdhD_NEo.js";
+} from "./BX_mgEO_.js";
 
 function D(o) {
   return `/dashboard/users?id=${encodeURIComponent(String(o))}`
@@ -50,9 +50,9 @@ var Q = g('<span role="link" tabindex="0"><!></span>'),
 function te(o, e) {
   z(e, !0);
   let E = d(e, "mode", 3, "anchor"),
-    I = d(e, "class", 3, ""),
-    w = d(e, "linkClass", 19, I),
-    L = d(e, "textClass", 19, I);
+    w = d(e, "class", 3, ""),
+    I = d(e, "linkClass", 19, w),
+    L = d(e, "textClass", 19, w);
   const N = C(() => e.userId != null && e.userId > 0 && H.hasAnyPermission(G.dashboard.users)),
     R = C(() => e.userId == null ? "" : D(e.userId));
 
@@ -64,50 +64,50 @@ function te(o, e) {
     e.userId == null || e.userId <= 0 || (a.preventDefault(), a.stopPropagation(), J(e.userId))
   }
 
-  function q(a) {
+  function A(a) {
     a.key !== "Enter" && a.key !== " " || b(a)
   }
   var P = y(),
-    A = x(P);
+    K = S(P);
   {
-    var K = a => {
+    var M = a => {
         var r = y(),
-          u = x(r);
+          u = S(r);
         {
-          var O = t => {
+          var V = t => {
               var n = Q(),
                 c = m(n);
               k(c, () => e.children ?? h), v(n), _(() => {
-                p(n, 1, `cursor-pointer hover:underline ${w()}`), l(n, "title", e.title)
-              }), s("pointerdown", n, f), s("click", n, b), s("keydown", n, q), i(t, n)
+                p(n, 1, `cursor-pointer hover:underline ${I()}`), l(n, "title", e.title)
+              }), s("pointerdown", n, f), s("click", n, b), s("keydown", n, A), i(t, n)
             },
-            V = t => {
+            j = t => {
               var n = T(),
                 c = m(n);
               k(c, () => e.children ?? h), v(n), _(() => {
-                p(n, 1, `cursor-pointer hover:underline ${w()}`), l(n, "href", S(R)), l(n, "title", e.title)
+                p(n, 1, `cursor-pointer hover:underline ${I()}`), l(n, "href", x(R)), l(n, "title", e.title)
               }), s("pointerdown", n, f), s("click", n, f), i(t, n)
             };
           U(u, t => {
-            E() === "inline" ? t(O) : t(V, -1)
+            E() === "inline" ? t(V) : t(j, -1)
           })
         }
         i(a, r)
       },
-      M = a => {
+      O = a => {
         var r = W(),
           u = m(r);
         k(u, () => e.children ?? h), v(r), _(() => {
           p(r, 1, F(L())), l(r, "title", e.title)
         }), i(a, r)
       };
-    U(A, a => {
-      S(N) ? a(K) : a(M, -1)
+    U(K, a => {
+      x(N) ? a(M) : a(O, -1)
     })
   }
   i(o, P), B()
 }
-j(["pointerdown", "click", "keydown"]);
+q(["pointerdown", "click", "keydown"]);
 export {
   te as S
 };
