@@ -4771,16 +4771,17 @@ class Lk {
       }
     })
   }
-  async postSetUserDroplets(t, e) {
-    const r = await this.request("/staff/dashboard/users/set-user-droplets", {
+  async postAdjustUserDroplets(t, e) {
+    const r = await this.request("/staff/dashboard/users/adjust-user-droplets", {
       method: "POST",
       credentials: "include",
       body: JSON.stringify({
         userId: t,
-        droplets: e
+        delta: e
       })
     });
-    if (r.status !== i.OK) throw new l(s(), r.status)
+    if (r.status !== i.OK) throw new l(s(), r.status);
+    return (await r.json()).droplets
   }
   async postAdminRenameUser(t, e) {
     const r = await this.request("/staff/dashboard/users/rename", {
