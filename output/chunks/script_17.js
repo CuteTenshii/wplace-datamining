@@ -1,38 +1,38 @@
 var Dt = Object.defineProperty;
-var Qe = n => {
-  throw TypeError(n)
+var Ye = r => {
+  throw TypeError(r)
 };
-var xt = (n, t, e) => t in n ? Dt(n, t, {
+var Pt = (r, t, e) => t in r ? Dt(r, t, {
   enumerable: !0,
   configurable: !0,
   writable: !0,
   value: e
-}) : n[t] = e;
-var g = (n, t, e) => xt(n, typeof t != "symbol" ? t + "" : t, e),
-  jt = (n, t, e) => t.has(n) || Qe("Cannot " + e);
-var p = (n, t, e) => (jt(n, t, "read from private field"), e ? e.call(n) : t.get(n)),
-  b = (n, t, e) => t.has(n) ? Qe("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(n) : t.set(n, e);
+}) : r[t] = e;
+var g = (r, t, e) => Pt(r, typeof t != "symbol" ? t + "" : t, e),
+  xt = (r, t, e) => t.has(r) || Ye("Cannot " + e);
+var p = (r, t, e) => (xt(r, t, "read from private field"), e ? e.call(r) : t.get(r)),
+  b = (r, t, e) => t.has(r) ? Ye("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(r) : t.set(r, e);
 import {
-  h as Pt,
-  P as We,
-  j as qt,
-  g as Ce
+  h as Ut,
+  P as _t,
+  g as Ge,
+  j as jt
 } from "./DzBCW1Dp.js";
 import {
   e as I,
-  i as k,
-  h as T,
+  i as T,
+  h as O,
   g as xe,
   bL as Lt,
-  y as Ut,
-  B as Ze,
+  y as Mt,
+  B as Je,
   u as Q
 } from "./BKnGt6Ki.js";
 import {
   g as d
 } from "./BhCkpOlh.js";
-const Mt = "" + new URL("../assets/pawtect_wasm_bg.8VPqYlMZ.wasm", import.meta.url).href;
-var Bt = "2.0.0";
+const Bt = "" + new URL("../assets/pawtect_wasm_bg.8VPqYlMZ.wasm", import.meta.url).href;
+var qt = "2.0.0";
 const h = {
   Awesomium: "awesomium",
   Cef: "cef",
@@ -59,341 +59,341 @@ class v extends Error {
   }
 }
 
-function Ct(n, t) {
+function Ct(r, t) {
   const e = {};
-  let r = {
+  let n = {
     bot: !1
   };
-  for (const o in t) {
-    const a = t[o],
-      c = a(n);
-    let u = {
+  for (const s in t) {
+    const i = t[s],
+      u = i(r);
+    let c = {
       bot: !1
     };
-    typeof c == "string" ? u = {
+    typeof u == "string" ? c = {
       bot: !0,
-      botKind: c
-    } : c && (u = {
+      botKind: u
+    } : u && (c = {
       bot: !0,
       botKind: h.Unknown
-    }), e[o] = u, u.bot && (r = u)
+    }), e[s] = c, c.bot && (n = c)
   }
-  return [e, r]
+  return [e, n]
 }
-async function Kt(n) {
+async function zt(r) {
   const t = {},
-    e = Object.keys(n);
-  return await Promise.all(e.map(async r => {
-    const o = n[r];
+    e = Object.keys(r);
+  return await Promise.all(e.map(async n => {
+    const s = r[n];
     try {
-      t[r] = {
-        value: await o(),
+      t[n] = {
+        value: await s(),
         state: 0
       }
-    } catch (a) {
-      a instanceof v ? t[r] = {
-        state: a.state,
-        error: `${a.name}: ${a.message}`
-      } : t[r] = {
+    } catch (i) {
+      i instanceof v ? t[n] = {
+        state: i.state,
+        error: `${i.name}: ${i.message}`
+      } : t[n] = {
         state: -3,
-        error: a instanceof Error ? `${a.name}: ${a.message}` : String(a)
+        error: i instanceof Error ? `${i.name}: ${i.message}` : String(i)
       }
     }
   })), t
 }
 
-function Ft({
-  appVersion: n
+function Kt({
+  appVersion: r
 }) {
-  if (n.state !== 0) return !1;
-  if (/headless/i.test(n.value)) return h.HeadlessChrome;
-  if (/electron/i.test(n.value)) return h.Electron;
-  if (/slimerjs/i.test(n.value)) return h.SlimerJS
+  if (r.state !== 0) return !1;
+  if (/headless/i.test(r.value)) return h.HeadlessChrome;
+  if (/electron/i.test(r.value)) return h.Electron;
+  if (/slimerjs/i.test(r.value)) return h.SlimerJS
 }
 
-function ze(n, t) {
-  return n.indexOf(t) !== -1
+function Ae(r, t) {
+  return r.indexOf(t) !== -1
 }
 
-function x(n, t) {
-  return n.indexOf(t) !== -1
+function x(r, t) {
+  return r.indexOf(t) !== -1
 }
 
-function $t(n, t) {
-  if ("find" in n) return n.find(t);
-  for (let e = 0; e < n.length; e++)
-    if (t(n[e], e, n)) return n[e]
+function Ft(r, t) {
+  if ("find" in r) return r.find(t);
+  for (let e = 0; e < r.length; e++)
+    if (t(r[e], e, r)) return r[e]
 }
 
-function Xe(n) {
-  return Object.getOwnPropertyNames(n)
+function Qe(r) {
+  return Object.getOwnPropertyNames(r)
 }
 
-function Ke(n, ...t) {
+function Ce(r, ...t) {
   for (const e of t)
     if (typeof e == "string") {
-      if (ze(n, e)) return !0
-    } else if ($t(n, o => e.test(o)) != null) return !0;
+      if (Ae(r, e)) return !0
+    } else if (Ft(r, s => e.test(s)) != null) return !0;
   return !1
 }
 
-function Y(n) {
-  return n.reduce((t, e) => t + (e ? 1 : 0), 0)
+function Y(r) {
+  return r.reduce((t, e) => t + (e ? 1 : 0), 0)
+}
+
+function $t({
+  documentElementKeys: r
+}) {
+  if (r.state !== 0) return !1;
+  if (Ce(r.value, "selenium", "webdriver", "driver")) return h.Selenium
 }
 
 function Gt({
-  documentElementKeys: n
+  errorTrace: r
 }) {
-  if (n.state !== 0) return !1;
-  if (Ke(n.value, "selenium", "webdriver", "driver")) return h.Selenium
+  if (r.state !== 0) return !1;
+  if (/PhantomJS/i.test(r.value)) return h.PhantomJS
 }
 
 function Vt({
-  errorTrace: n
-}) {
-  if (n.state !== 0) return !1;
-  if (/PhantomJS/i.test(n.value)) return h.PhantomJS
-}
-
-function Ht({
-  evalLength: n,
+  evalLength: r,
   browserKind: t,
   browserEngineKind: e
 }) {
-  if (n.state !== 0 || t.state !== 0 || e.state !== 0) return;
-  const r = n.value;
-  return e.value === "unknown" ? !1 : r === 37 && !ze(["webkit", "gecko"], e.value) || r === 39 && !ze(["internet_explorer"], t.value) || r === 33 && !ze(["chromium"], e.value)
+  if (r.state !== 0 || t.state !== 0 || e.state !== 0) return;
+  const n = r.value;
+  return e.value === "unknown" ? !1 : n === 37 && !Ae(["webkit", "gecko"], e.value) || n === 39 && !Ae(["internet_explorer"], t.value) || n === 33 && !Ae(["chromium"], e.value)
+}
+
+function Ht({
+  functionBind: r
+}) {
+  if (r.state === -2) return h.PhantomJS
 }
 
 function Wt({
-  functionBind: n
+  languages: r
 }) {
-  if (n.state === -2) return h.PhantomJS
+  if (r.state === 0 && r.value.length === 0) return h.HeadlessChrome
 }
 
 function Yt({
-  languages: n
+  mimeTypesConsistent: r
 }) {
-  if (n.state === 0 && n.value.length === 0) return h.HeadlessChrome
+  if (r.state === 0 && !r.value) return h.Unknown
 }
 
 function Jt({
-  mimeTypesConsistent: n
-}) {
-  if (n.state === 0 && !n.value) return h.Unknown
-}
-
-function Qt({
-  notificationPermissions: n,
+  notificationPermissions: r,
   browserKind: t
 }) {
   if (t.state !== 0 || t.value !== "chrome") return !1;
-  if (n.state === 0 && n.value) return h.HeadlessChrome
+  if (r.state === 0 && r.value) return h.HeadlessChrome
 }
 
-function Zt({
-  pluginsArray: n
+function Qt({
+  pluginsArray: r
 }) {
-  if (n.state === 0 && !n.value) return h.HeadlessChrome
+  if (r.state === 0 && !r.value) return h.HeadlessChrome
 }
 
 function Xt({
-  pluginsLength: n,
+  pluginsLength: r,
   android: t,
   browserKind: e,
-  browserEngineKind: r
+  browserEngineKind: n
 }) {
-  if (!(n.state !== 0 || t.state !== 0 || e.state !== 0 || r.state !== 0) && !(e.value !== "chrome" || t.value || r.value !== "chromium") && n.value === 0) return h.HeadlessChrome
+  if (!(r.state !== 0 || t.state !== 0 || e.state !== 0 || n.state !== 0) && !(e.value !== "chrome" || t.value || n.value !== "chromium") && r.value === 0) return h.HeadlessChrome
 }
 
-function en({
-  process: n
+function Zt({
+  process: r
 }) {
   var t;
-  if (n.state !== 0) return !1;
-  if (n.value.type === "renderer" || ((t = n.value.versions) === null || t === void 0 ? void 0 : t.electron) != null) return h.Electron
+  if (r.state !== 0) return !1;
+  if (r.value.type === "renderer" || ((t = r.value.versions) === null || t === void 0 ? void 0 : t.electron) != null) return h.Electron
 }
 
-function tn({
-  productSub: n,
+function er({
+  productSub: r,
   browserKind: t
 }) {
-  if (n.state !== 0 || t.state !== 0) return !1;
-  if ((t.value === "chrome" || t.value === "safari" || t.value === "opera" || t.value === "wechat") && n.value !== "20030107") return h.Unknown
+  if (r.state !== 0 || t.state !== 0) return !1;
+  if ((t.value === "chrome" || t.value === "safari" || t.value === "opera" || t.value === "wechat") && r.value !== "20030107") return h.Unknown
 }
 
-function nn({
-  userAgent: n
+function tr({
+  userAgent: r
 }) {
-  if (n.state !== 0) return !1;
-  if (/PhantomJS/i.test(n.value)) return h.PhantomJS;
-  if (/Headless/i.test(n.value)) return h.HeadlessChrome;
-  if (/Electron/i.test(n.value)) return h.Electron;
-  if (/slimerjs/i.test(n.value)) return h.SlimerJS
+  if (r.state !== 0) return !1;
+  if (/PhantomJS/i.test(r.value)) return h.PhantomJS;
+  if (/Headless/i.test(r.value)) return h.HeadlessChrome;
+  if (/Electron/i.test(r.value)) return h.Electron;
+  if (/slimerjs/i.test(r.value)) return h.SlimerJS
 }
 
-function rn({
-  webDriver: n
+function rr({
+  webDriver: r
 }) {
-  if (n.state === 0 && n.value) return h.HeadlessChrome
+  if (r.state === 0 && r.value) return h.HeadlessChrome
 }
 
-function on({
-  webGL: n
+function nr({
+  webGL: r
 }) {
-  if (n.state === 0) {
+  if (r.state === 0) {
     const {
       vendor: t,
       renderer: e
-    } = n.value;
+    } = r.value;
     if (t == "Brian Paul" && e == "Mesa OffScreen") return h.HeadlessChrome
   }
 }
 
-function an({
-  windowExternal: n
+function sr({
+  windowExternal: r
 }) {
-  if (n.state !== 0) return !1;
-  if (/Sequentum/i.test(n.value)) return h.Sequentum
+  if (r.state !== 0) return !1;
+  if (/Sequentum/i.test(r.value)) return h.Sequentum
 }
 
-function sn({
-  windowSize: n,
+function ar({
+  windowSize: r,
   documentFocus: t
 }) {
-  if (n.state !== 0 || t.state !== 0) return !1;
+  if (r.state !== 0 || t.state !== 0) return !1;
   const {
     outerWidth: e,
-    outerHeight: r
-  } = n.value;
-  if (t.value && e === 0 && r === 0) return h.HeadlessChrome
+    outerHeight: n
+  } = r.value;
+  if (t.value && e === 0 && n === 0) return h.HeadlessChrome
 }
 
-function un({
-  distinctiveProps: n
+function ir({
+  distinctiveProps: r
 }) {
-  if (n.state !== 0) return !1;
-  const t = n.value;
+  if (r.state !== 0) return !1;
+  const t = r.value;
   let e;
   for (e in t)
     if (t[e]) return e
 }
-const cn = {
-  detectAppVersion: Ft,
-  detectDocumentAttributes: Gt,
-  detectErrorTrace: Vt,
-  detectEvalLengthInconsistency: Ht,
-  detectFunctionBind: Wt,
-  detectLanguagesLengthInconsistency: Yt,
-  detectNotificationPermissions: Qt,
-  detectPluginsArray: Zt,
+const or = {
+  detectAppVersion: Kt,
+  detectDocumentAttributes: $t,
+  detectErrorTrace: Gt,
+  detectEvalLengthInconsistency: Vt,
+  detectFunctionBind: Ht,
+  detectLanguagesLengthInconsistency: Wt,
+  detectNotificationPermissions: Jt,
+  detectPluginsArray: Qt,
   detectPluginsLengthInconsistency: Xt,
-  detectProcess: en,
-  detectUserAgent: nn,
-  detectWebDriver: rn,
-  detectWebGL: on,
-  detectWindowExternal: an,
-  detectWindowSize: sn,
-  detectMimeTypesConsistent: Jt,
-  detectProductSub: tn,
-  detectDistinctiveProperties: un
+  detectProcess: Zt,
+  detectUserAgent: tr,
+  detectWebDriver: rr,
+  detectWebGL: nr,
+  detectWindowExternal: sr,
+  detectWindowSize: ar,
+  detectMimeTypesConsistent: Yt,
+  detectProductSub: er,
+  detectDistinctiveProperties: ir
 };
 
-function ln() {
-  const n = navigator.appVersion;
-  if (n == null) throw new v(-1, "navigator.appVersion is undefined");
-  return n
+function cr() {
+  const r = navigator.appVersion;
+  if (r == null) throw new v(-1, "navigator.appVersion is undefined");
+  return r
 }
 
-function dn() {
+function ur() {
   if (document.documentElement === void 0) throw new v(-1, "document.documentElement is undefined");
   const {
-    documentElement: n
+    documentElement: r
   } = document;
-  if (typeof n.getAttributeNames != "function") throw new v(-2, "document.documentElement.getAttributeNames is not a function");
-  return n.getAttributeNames()
+  if (typeof r.getAttributeNames != "function") throw new v(-2, "document.documentElement.getAttributeNames is not a function");
+  return r.getAttributeNames()
 }
 
-function _n() {
+function lr() {
   try {
     null[0]()
-  } catch (n) {
-    if (n instanceof Error && n.stack != null) return n.stack.toString()
+  } catch (r) {
+    if (r instanceof Error && r.stack != null) return r.stack.toString()
   }
   throw new v(-3, "errorTrace signal unexpected behaviour")
 }
 
-function fn() {
+function dr() {
   return eval.toString().length
 }
 
-function pn() {
+function _r() {
   if (Function.prototype.bind === void 0) throw new v(-2, "Function.prototype.bind is undefined");
   return Function.prototype.bind.toString()
 }
 
-function Ye() {
-  var n, t;
+function Ve() {
+  var r, t;
   const e = window,
-    r = navigator;
-  return Y(["webkitPersistentStorage" in r, "webkitTemporaryStorage" in r, r.vendor.indexOf("Google") === 0, "webkitResolveLocalFileSystemURL" in e, "BatteryManager" in e, "webkitMediaStream" in e, "webkitSpeechGrammar" in e]) >= 5 ? "chromium" : Y(["ApplePayError" in e, "CSSPrimitiveValue" in e, "Counter" in e, r.vendor.indexOf("Apple") === 0, "getStorageUpdates" in r, "WebKitMediaKeys" in e]) >= 4 ? "webkit" : Y(["buildID" in navigator, "MozAppearance" in ((t = (n = document.documentElement) === null || n === void 0 ? void 0 : n.style) !== null && t !== void 0 ? t : {}), "onmozfullscreenchange" in e, "mozInnerScreenX" in e, "CSSMozDocumentRule" in e, "CanvasCaptureMediaStream" in e]) >= 4 ? "gecko" : "unknown"
+    n = navigator;
+  return Y(["webkitPersistentStorage" in n, "webkitTemporaryStorage" in n, n.vendor.indexOf("Google") === 0, "webkitResolveLocalFileSystemURL" in e, "BatteryManager" in e, "webkitMediaStream" in e, "webkitSpeechGrammar" in e]) >= 5 ? "chromium" : Y(["ApplePayError" in e, "CSSPrimitiveValue" in e, "Counter" in e, n.vendor.indexOf("Apple") === 0, "getStorageUpdates" in n, "WebKitMediaKeys" in e]) >= 4 ? "webkit" : Y(["buildID" in navigator, "MozAppearance" in ((t = (r = document.documentElement) === null || r === void 0 ? void 0 : r.style) !== null && t !== void 0 ? t : {}), "onmozfullscreenchange" in e, "mozInnerScreenX" in e, "CSSMozDocumentRule" in e, "CanvasCaptureMediaStream" in e]) >= 4 ? "gecko" : "unknown"
 }
 
-function hn() {
-  var n;
-  const t = (n = navigator.userAgent) === null || n === void 0 ? void 0 : n.toLowerCase();
+function fr() {
+  var r;
+  const t = (r = navigator.userAgent) === null || r === void 0 ? void 0 : r.toLowerCase();
   return x(t, "edg/") ? "edge" : x(t, "trident") || x(t, "msie") ? "internet_explorer" : x(t, "wechat") ? "wechat" : x(t, "firefox") ? "firefox" : x(t, "opera") || x(t, "opr") ? "opera" : x(t, "chrome") ? "chrome" : x(t, "safari") ? "safari" : "unknown"
 }
 
-function mn() {
-  const n = Ye(),
-    t = n === "chromium",
-    e = n === "gecko",
-    r = window,
-    o = navigator,
-    a = "connection";
-  return t ? Y([!("SharedWorker" in r), o[a] && "ontypechange" in o[a], !("sinkId" in new Audio)]) >= 2 : e ? Y(["onorientationchange" in r, "orientation" in r, /android/i.test(o.appVersion)]) >= 2 : !1
+function pr() {
+  const r = Ve(),
+    t = r === "chromium",
+    e = r === "gecko",
+    n = window,
+    s = navigator,
+    i = "connection";
+  return t ? Y([!("SharedWorker" in n), s[i] && "ontypechange" in s[i], !("sinkId" in new Audio)]) >= 2 : e ? Y(["onorientationchange" in n, "orientation" in n, /android/i.test(s.appVersion)]) >= 2 : !1
 }
 
-function gn() {
+function hr() {
   return document.hasFocus === void 0 ? !1 : document.hasFocus()
 }
 
-function wn() {
-  const n = window;
-  return Y([!("MediaSettingsRange" in n), "RTCEncodedAudioFrame" in n, "" + n.Intl == "[object Intl]", "" + n.Reflect == "[object Reflect]"]) >= 3
+function mr() {
+  const r = window;
+  return Y([!("MediaSettingsRange" in r), "RTCEncodedAudioFrame" in r, "" + r.Intl == "[object Intl]", "" + r.Reflect == "[object Reflect]"]) >= 3
 }
 
-function yn() {
-  const n = navigator,
+function gr() {
+  const r = navigator,
     t = [],
-    e = n.language || n.userLanguage || n.browserLanguage || n.systemLanguage;
-  if (e !== void 0 && t.push([e]), Array.isArray(n.languages)) Ye() === "chromium" && wn() || t.push(n.languages);
-  else if (typeof n.languages == "string") {
-    const r = n.languages;
-    r && t.push(r.split(","))
+    e = r.language || r.userLanguage || r.browserLanguage || r.systemLanguage;
+  if (e !== void 0 && t.push([e]), Array.isArray(r.languages)) Ve() === "chromium" && mr() || t.push(r.languages);
+  else if (typeof r.languages == "string") {
+    const n = r.languages;
+    n && t.push(n.split(","))
   }
   return t
 }
 
-function bn() {
+function wr() {
   if (navigator.mimeTypes === void 0) throw new v(-1, "navigator.mimeTypes is undefined");
   const {
-    mimeTypes: n
+    mimeTypes: r
   } = navigator;
-  let t = Object.getPrototypeOf(n) === MimeTypeArray.prototype;
-  for (let e = 0; e < n.length; e++) t && (t = Object.getPrototypeOf(n[e]) === MimeType.prototype);
+  let t = Object.getPrototypeOf(r) === MimeTypeArray.prototype;
+  for (let e = 0; e < r.length; e++) t && (t = Object.getPrototypeOf(r[e]) === MimeType.prototype);
   return t
 }
-async function vn() {
+async function yr() {
   if (window.Notification === void 0) throw new v(-1, "window.Notification is undefined");
   if (navigator.permissions === void 0) throw new v(-1, "navigator.permissions is undefined");
   const {
-    permissions: n
+    permissions: r
   } = navigator;
-  if (typeof n.query != "function") throw new v(-2, "navigator.permissions.query is not a function");
+  if (typeof r.query != "function") throw new v(-2, "navigator.permissions.query is not a function");
   try {
-    const t = await n.query({
+    const t = await r.query({
       name: "notifications"
     });
     return window.Notification.permission === "denied" && t.state === "prompt"
@@ -402,74 +402,74 @@ async function vn() {
   }
 }
 
-function En() {
+function br() {
   if (navigator.plugins === void 0) throw new v(-1, "navigator.plugins is undefined");
   if (window.PluginArray === void 0) throw new v(-1, "window.PluginArray is undefined");
   return navigator.plugins instanceof PluginArray
 }
 
-function kn() {
+function vr() {
   if (navigator.plugins === void 0) throw new v(-1, "navigator.plugins is undefined");
   if (navigator.plugins.length === void 0) throw new v(-3, "navigator.plugins.length is undefined");
   return navigator.plugins.length
 }
 
-function Tn() {
+function Er() {
   const {
-    process: n
+    process: r
   } = window, t = "window.process is";
-  if (n === void 0) throw new v(-1, `${t} undefined`);
-  if (n && typeof n != "object") throw new v(-3, `${t} not an object`);
-  return n
+  if (r === void 0) throw new v(-1, `${t} undefined`);
+  if (r && typeof r != "object") throw new v(-3, `${t} not an object`);
+  return r
 }
 
-function On() {
+function Tr() {
   const {
-    productSub: n
+    productSub: r
   } = navigator;
-  if (n === void 0) throw new v(-1, "navigator.productSub is undefined");
-  return n
+  if (r === void 0) throw new v(-1, "navigator.productSub is undefined");
+  return r
 }
 
-function In() {
+function Or() {
   if (navigator.connection === void 0) throw new v(-1, "navigator.connection is undefined");
   if (navigator.connection.rtt === void 0) throw new v(-1, "navigator.connection.rtt is undefined");
   return navigator.connection.rtt
 }
 
-function Sn() {
+function kr() {
   return navigator.userAgent
 }
 
-function Nn() {
+function Ir() {
   if (navigator.webdriver == null) throw new v(-1, "navigator.webdriver is undefined");
   return navigator.webdriver
 }
 
-function zn() {
-  const n = document.createElement("canvas");
-  if (typeof n.getContext != "function") throw new v(-2, "HTMLCanvasElement.getContext is not a function");
-  const t = n.getContext("webgl");
+function Nr() {
+  const r = document.createElement("canvas");
+  if (typeof r.getContext != "function") throw new v(-2, "HTMLCanvasElement.getContext is not a function");
+  const t = r.getContext("webgl");
   if (t === null) throw new v(-4, "WebGLRenderingContext is null");
   if (typeof t.getParameter != "function") throw new v(-2, "WebGLRenderingContext.getParameter is not a function");
   const e = t.getParameter(t.VENDOR),
-    r = t.getParameter(t.RENDERER);
+    n = t.getParameter(t.RENDERER);
   return {
     vendor: e,
-    renderer: r
+    renderer: n
   }
 }
 
-function An() {
+function Sr() {
   if (window.external === void 0) throw new v(-1, "window.external is undefined");
   const {
-    external: n
+    external: r
   } = window;
-  if (typeof n.toString != "function") throw new v(-2, "window.external.toString is not a function");
-  return n.toString()
+  if (typeof r.toString != "function") throw new v(-2, "window.external.toString is not a function");
+  return r.toString()
 }
 
-function Rn() {
+function Ar() {
   return {
     outerWidth: window.outerWidth,
     outerHeight: window.outerHeight,
@@ -478,8 +478,8 @@ function Rn() {
   }
 }
 
-function Dn() {
-  const n = {
+function Rr() {
+  const r = {
     [h.Awesomium]: {
       window: ["awesomium"]
     },
@@ -527,45 +527,45 @@ function Dn() {
   };
   let t;
   const e = {},
-    r = Xe(window);
-  let o = [];
-  window.document !== void 0 && (o = Xe(window.document));
-  for (t in n) {
-    const a = n[t];
-    if (a !== void 0) {
-      const c = a.window === void 0 ? !1 : Ke(r, ...a.window),
-        u = a.document === void 0 || !o.length ? !1 : Ke(o, ...a.document);
-      e[t] = c || u
+    n = Qe(window);
+  let s = [];
+  window.document !== void 0 && (s = Qe(window.document));
+  for (t in r) {
+    const i = r[t];
+    if (i !== void 0) {
+      const u = i.window === void 0 ? !1 : Ce(n, ...i.window),
+        c = i.document === void 0 || !s.length ? !1 : Ce(s, ...i.document);
+      e[t] = u || c
     }
   }
   return e
 }
-const xn = {
-  android: mn,
-  browserKind: hn,
-  browserEngineKind: Ye,
-  documentFocus: gn,
-  userAgent: Sn,
-  appVersion: ln,
-  rtt: In,
-  windowSize: Rn,
-  pluginsLength: kn,
-  pluginsArray: En,
-  errorTrace: _n,
-  productSub: On,
-  windowExternal: An,
-  mimeTypesConsistent: bn,
-  evalLength: fn,
-  webGL: zn,
-  webDriver: Nn,
-  languages: yn,
-  notificationPermissions: vn,
-  documentElementKeys: dn,
-  functionBind: pn,
-  process: Tn,
-  distinctiveProps: Dn
+const Dr = {
+  android: pr,
+  browserKind: fr,
+  browserEngineKind: Ve,
+  documentFocus: hr,
+  userAgent: kr,
+  appVersion: cr,
+  rtt: Or,
+  windowSize: Ar,
+  pluginsLength: vr,
+  pluginsArray: br,
+  errorTrace: lr,
+  productSub: Tr,
+  windowExternal: Sr,
+  mimeTypesConsistent: wr,
+  evalLength: dr,
+  webGL: Nr,
+  webDriver: Ir,
+  languages: gr,
+  notificationPermissions: yr,
+  documentElementKeys: ur,
+  functionBind: _r,
+  process: Er,
+  distinctiveProps: Rr
 };
-class jn {
+class Pr {
   constructor() {
     this.components = void 0, this.detections = void 0
   }
@@ -577,149 +577,149 @@ class jn {
   }
   detect() {
     if (this.components === void 0) throw new Error("BotDetector.detect can't be called before BotDetector.collect");
-    const [t, e] = Ct(this.components, cn);
+    const [t, e] = Ct(this.components, or);
     return this.detections = t, e
   }
   async collect() {
-    return this.components = await Kt(xn), this.components
+    return this.components = await zt(Dr), this.components
   }
 }
 
-function Pn() {
+function xr() {
   if (!(window.__fpjs_d_m || Math.random() >= .001)) try {
-    const n = new XMLHttpRequest;
-    n.open("get", `https://m1.openfpcdn.io/botd/v${Bt}/npm-monitoring`, !0), n.send()
-  } catch (n) {
-    console.error(n)
+    const r = new XMLHttpRequest;
+    r.open("get", `https://m1.openfpcdn.io/botd/v${qt}/npm-monitoring`, !0), r.send()
+  } catch (r) {
+    console.error(r)
   }
 }
-async function qn({
-  monitoring: n = !0
+async function Ur({
+  monitoring: r = !0
 } = {}) {
-  n && Pn();
-  const t = new jn;
+  r && xr();
+  const t = new Pr;
   return await t.collect(), t
 }
-let Ue = null;
-async function Ln() {
-  return await Un() ? {
+let Be = null;
+async function jr() {
+  return await Lr() ? {
     bot: !1
-  } : (await Mn()).detect()
+  } : (await Mr()).detect()
 }
-async function Un() {
+async function Lr() {
   var e;
-  const n = navigator;
-  if (!((e = n.brave) != null && e.isBrave) || !/Android|iPhone|iPad|iPod|Mobile/i.test(n.userAgent)) return !1;
+  const r = navigator;
+  if (!((e = r.brave) != null && e.isBrave) || !/Android|iPhone|iPad|iPod|Mobile/i.test(r.userAgent)) return !1;
   try {
-    return await n.brave.isBrave()
+    return await r.brave.isBrave()
   } catch {
     return !1
   }
 }
 
-function Mn() {
-  return Ue || (Ue = qn({
+function Mr() {
+  return Be || (Be = Ur({
     monitoring: !1
-  })), Ue
+  })), Be
 }
-const et = "theme";
-var te, ne, re, oe, ie, ae, se, ue, ce, le, de;
-class Bn {
+const Xe = "theme";
+var te, re, ne, se, ae, ie, oe, ce, ue, le, de;
+class Br {
   constructor() {
     b(this, te, I(!1));
-    b(this, ne, I(!1));
     b(this, re, I(!1));
-    b(this, oe, I(0));
-    b(this, ie, I(!1));
-    b(this, ae, I(xe(Cn())));
-    b(this, se, I(null));
-    b(this, ue, I(!1));
-    b(this, ce, I("custom-winter"));
+    b(this, ne, I(!1));
+    b(this, se, I(0));
+    b(this, ae, I(!1));
+    b(this, ie, I(xe(qr())));
+    b(this, oe, I(null));
+    b(this, ce, I(!1));
+    b(this, ue, I("custom-winter"));
     b(this, le, I(xe(Date.now())));
     b(this, de, I(void 0));
     setInterval(() => {
-      T(p(this, le), Date.now(), !0)
-    }, 500), this.theme = localStorage.getItem(et), this.theme !== "dark" && this.theme !== "custom-winter" && (this.theme = "custom-winter")
+      O(p(this, le), Date.now(), !0)
+    }, 500), this.theme = localStorage.getItem(Xe), this.theme !== "dark" && this.theme !== "custom-winter" && (this.theme = "custom-winter")
   }
   get dropletsDialogOpen() {
-    return k(p(this, te))
+    return T(p(this, te))
   }
   set dropletsDialogOpen(t) {
-    T(p(this, te), t, !0)
+    O(p(this, te), t, !0)
   }
   get pendingHistoryDialogOpen() {
-    return k(p(this, ne))
+    return T(p(this, re))
   }
   set pendingHistoryDialogOpen(t) {
-    T(p(this, ne), t, !0)
+    O(p(this, re), t, !0)
   }
   get storeDialogOpen() {
-    return k(p(this, re))
+    return T(p(this, ne))
   }
   set storeDialogOpen(t) {
-    T(p(this, re), t, !0)
+    O(p(this, ne), t, !0)
   }
   get storeTabIndex() {
-    return k(p(this, oe))
+    return T(p(this, se))
   }
   set storeTabIndex(t) {
-    T(p(this, oe), t, !0)
+    O(p(this, se), t, !0)
   }
   get muted() {
-    return k(p(this, ie))
+    return T(p(this, ae))
   }
   set muted(t) {
-    T(p(this, ie), t, !0)
+    O(p(this, ae), t, !0)
   }
   get language() {
-    return k(p(this, ae))
+    return T(p(this, ie))
   }
   set language(t) {
-    T(p(this, ae), t, !0)
+    O(p(this, ie), t, !0)
   }
   get map() {
-    return k(p(this, se))
+    return T(p(this, oe))
   }
   set map(t) {
-    T(p(this, se), t)
+    O(p(this, oe), t)
   }
   get automatedClicks() {
-    return k(p(this, ue))
+    return T(p(this, ce))
   }
   set automatedClicks(t) {
-    T(p(this, ue), t, !0)
+    O(p(this, ce), t, !0)
   }
   get theme() {
-    return k(p(this, ce))
+    return T(p(this, ue))
   }
   set theme(t) {
-    T(p(this, ce), t, !0), localStorage.setItem(et, t), document.documentElement.setAttribute("data-theme", t)
+    O(p(this, ue), t, !0), localStorage.setItem(Xe, t), document.documentElement.setAttribute("data-theme", t)
   }
   get now() {
-    return k(p(this, le))
+    return T(p(this, le))
   }
   get captcha() {
-    return Kn ? k(p(this, de)) : {
+    return Cr ? T(p(this, de)) : {
       token: "turnstile-disabled",
       time: Date.now()
     }
   }
   set captcha(t) {
-    T(p(this, de), t, !0)
+    O(p(this, de), t, !0)
   }
 }
-te = new WeakMap, ne = new WeakMap, re = new WeakMap, oe = new WeakMap, ie = new WeakMap, ae = new WeakMap, se = new WeakMap, ue = new WeakMap, ce = new WeakMap, le = new WeakMap, de = new WeakMap;
-const Fe = new Bn;
+te = new WeakMap, re = new WeakMap, ne = new WeakMap, se = new WeakMap, ae = new WeakMap, ie = new WeakMap, oe = new WeakMap, ce = new WeakMap, ue = new WeakMap, le = new WeakMap, de = new WeakMap;
+const ze = new Br;
 
-function Cn() {
+function qr() {
   if (navigator.languages && navigator.languages.length > 0) {
-    const n = navigator.languages.find(t => t.length === 2);
-    if (n) return n
+    const r = navigator.languages.find(t => t.length === 2);
+    if (r) return r
   }
   return (navigator.language || navigator.userLanguage || navigator.browserLanguage || "en").substring(0, 2)
 }
-const Kn = Pt.toLowerCase() !== "false",
-  Fn = `
+const Cr = Ut.toLowerCase() !== "false",
+  zr = `
 self.onmessage = function(e) {
   const { prefix, difficulty } = e.data;
 
@@ -760,14 +760,14 @@ self.onmessage = function(e) {
   solve().catch(err => self.postMessage({ error: err.message }));
 };
 `;
-async function $n() {
+async function Kr() {
   try {
-    const n = await fetch(`${We}/anticheat/pow/challenge`, {
+    const r = await fetch(`${_t}/anticheat/pow/challenge`, {
       credentials: "include"
     });
-    if (!n.ok) return null;
-    const t = await n.json(),
-      e = await Gn(t.prefix, t.difficulty);
+    if (!r.ok) return null;
+    const t = await r.json(),
+      e = await Fr(t.prefix, t.difficulty);
     return e ? {
       ...t,
       nonce: e
@@ -776,65 +776,65 @@ async function $n() {
     return null
   }
 }
-async function Gn(n, t) {
+async function Fr(r, t) {
   return new Promise(e => {
-    const r = new Blob([Fn], {
+    const n = new Blob([zr], {
         type: "application/javascript"
       }),
-      o = URL.createObjectURL(r),
-      a = new Worker(o),
-      c = setTimeout(() => {
-        a.terminate(), URL.revokeObjectURL(o), e(null)
+      s = URL.createObjectURL(n),
+      i = new Worker(s),
+      u = setTimeout(() => {
+        i.terminate(), URL.revokeObjectURL(s), e(null)
       }, 12e4);
-    a.onmessage = u => {
-      clearTimeout(c), a.terminate(), URL.revokeObjectURL(o), u.data.error ? e(null) : e(u.data.nonce)
-    }, a.onerror = () => {
-      clearTimeout(c), a.terminate(), URL.revokeObjectURL(o), e(null)
-    }, a.postMessage({
-      prefix: n,
+    i.onmessage = c => {
+      clearTimeout(u), i.terminate(), URL.revokeObjectURL(s), c.data.error ? e(null) : e(c.data.nonce)
+    }, i.onerror = () => {
+      clearTimeout(u), i.terminate(), URL.revokeObjectURL(s), e(null)
+    }, i.postMessage({
+      prefix: r,
       difficulty: t
     })
   })
 }
-const yt = 3;
+const ft = 3;
 var _e, fe;
-class Vn {
+class $r {
   constructor() {
     b(this, _e, I(null));
     b(this, fe, I(0))
   }
   get current() {
-    return k(p(this, _e))
+    return T(p(this, _e))
   }
   set current(t) {
-    T(p(this, _e), t, !0)
+    O(p(this, _e), t, !0)
   }
   get errorCount() {
-    return k(p(this, fe))
+    return T(p(this, fe))
   }
   set errorCount(t) {
-    T(p(this, fe), t, !0)
+    O(p(this, fe), t, !0)
   }
 }
 _e = new WeakMap, fe = new WeakMap;
-const N = new Vn;
-async function tt(n) {
-  if (n === 1) return Hn();
-  if (n === 2) {
-    const t = await bt();
-    return t ? nt("turnstile", t) : !1
+const S = new $r;
+async function pt(r) {
+  if (r === 1) return Gr();
+  if (r === 2) {
+    const t = await ht();
+    return t ? Ze("turnstile", t) : !1
   }
-  if (n === 3) {
-    const t = await Wn();
-    return t ? nt("hcaptcha", t) : !1
+  if (r === 3) {
+    const t = await Vr();
+    return t ? Ze("hcaptcha", t) : !1
   }
-  return n === 4 ? Yn() : !1
+  return r === 4 ? Hr() : !1
 }
-async function Hn() {
-  for (let n = 0; n < yt; n++) try {
-    const t = await $n();
+async function Gr() {
+  for (let r = 0; r < ft; r++) try {
+    const t = await Kr();
     if (!t) continue;
-    return await C.verifyChallenge({
+    return await z.verifyChallenge({
       type: "pow",
       challengeId: t.challengeId,
       nonce: t.nonce
@@ -842,13 +842,13 @@ async function Hn() {
   } catch {}
   return !1
 }
-async function nt(n, t) {
+async function Ze(r, t) {
   try {
-    const e = await C.postCaptchaSession({
-      provider: n,
+    const e = await z.postCaptchaSession({
+      provider: r,
       token: t
     });
-    return await C.verifyChallenge({
+    return await z.verifyChallenge({
       type: "captcha",
       sessionId: e.sessionId
     }), !0
@@ -858,1894 +858,2465 @@ async function nt(n, t) {
 }
 const J = {};
 
-function bt() {
-  return vt(2)
+function ht() {
+  return mt(2)
 }
 
-function Wn() {
-  return vt(3)
+function Vr() {
+  return mt(3)
 }
 
-function vt(n) {
-  const t = J[n];
+function mt(r) {
+  const t = J[r];
   if (t) return t;
-  const e = new Promise(r => {
-    N.errorCount = 0, N.current = {
-      tier: n,
-      resolve: o => {
-        delete J[n], r(o)
+  const e = new Promise(n => {
+    S.errorCount = 0, S.current = {
+      tier: r,
+      resolve: s => {
+        delete J[r], n(s)
       }
     }
   });
-  return J[n] = e, e
+  return J[r] = e, e
 }
 
-function Yn() {
-  const n = J[4];
-  if (n) return n;
+function Hr() {
+  const r = J[4];
+  if (r) return r;
   const t = new Promise(e => {
-    N.errorCount = 0, N.current = {
+    S.errorCount = 0, S.current = {
       tier: 4,
-      resolve: r => {
-        delete J[4], e(r)
+      resolve: n => {
+        delete J[4], e(n)
       }
     }
   });
   return J[4] = t, t
 }
 
-function wT(n) {
-  const t = N.current;
-  !t || t.tier === 4 || (t.resolve(n), N.current = null)
+function qb(r) {
+  const t = S.current;
+  !t || t.tier === 4 || (t.resolve(r), S.current = null)
 }
 
-function yT() {
-  const n = N.current;
-  !n || n.tier === 4 || (N.errorCount += 1, N.errorCount >= yt && (n.resolve(void 0), N.current = null))
+function Cb() {
+  const r = S.current;
+  !r || r.tier === 4 || (S.errorCount += 1, S.errorCount >= ft && (r.resolve(void 0), S.current = null))
 }
 
-function bT() {
-  const n = N.current;
-  !n || n.tier !== 4 || (n.resolve(!0), N.current = null)
+function zb() {
+  const r = S.current;
+  !r || r.tier !== 4 || (r.resolve(!0), S.current = null)
 }
 
-function vT() {
-  const n = N.current;
-  n && (n.tier === 4 ? n.resolve(!1) : n.resolve(void 0), N.current = null)
+function Kb() {
+  const r = S.current;
+  r && (r.tier === 4 ? r.resolve(!1) : r.resolve(void 0), S.current = null)
 }
-const Jn = () => "A punishment cache reload is already running",
-  Qn = () => "Um recarregamento do cache de punições já está em andamento",
-  Zn = () => "处罚缓存重新加载已在进行中",
-  Xn = () => "Ein Neuladen des Strafen-Caches läuft bereits",
-  er = () => "Ya hay una recarga de la caché de sanciones en curso",
-  tr = () => "Un rechargement du cache des sanctions est déjà en cours",
-  nr = () => "Un ricaricamento della cache delle sanzioni è già in corso",
-  rr = () => "処罰キャッシュの再読み込みは既に実行中です",
-  or = () => "Przeładowanie pamięci kar już trwa",
-  ir = () => "Перезагрузка кэша наказаний уже выполняется",
-  ar = () => "Перезавантаження кешу покарань уже виконується",
-  sr = () => "Quá trình tải lại bộ nhớ đệm hình phạt đang chạy",
-  ur = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Jn() : e === "pt" ? Qn() : e === "ch" ? Zn() : e === "de" ? Xn() : e === "es" ? er() : e === "fr" ? tr() : e === "it" ? nr() : e === "jp" ? rr() : e === "pl" ? or() : e === "ru" ? ir() : e === "uk" ? ar() : sr()
-  },
-  cr = () => "Your account has been suspended for breaking the rules",
-  lr = () => "Sua conta foi suspensa por quebrar as regras",
-  dr = () => "您的账号因违反规则已被暂停",
-  _r = () => "Dein Konto wurde wegen Regelverstößen gesperrt",
-  fr = () => "Tu cuenta ha sido suspendida por infringir las regras",
-  pr = () => "Votre compte a été suspendu pour avoir enfreint les règles",
-  hr = () => "Il tuo account è stato sospeso per aver infranto le regole",
-  mr = () => "ルール違反により、あなたのアカウントは一時停止されています。",
-  gr = () => "Twoje konto zostało zawieszone za łamanie zasad",
-  wr = () => "Ваш аккаунт был временно заблокирован за нарушение правил",
-  yr = () => "Ваш обліковий запис було призупинено за порушення правил",
-  br = () => "Tài khoản của bạn đã bị tạm đình chỉ vì vi phạm luật",
-  rt = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? cr() : e === "pt" ? lr() : e === "ch" ? dr() : e === "de" ? _r() : e === "es" ? fr() : e === "fr" ? pr() : e === "it" ? hr() : e === "jp" ? mr() : e === "pl" ? gr() : e === "ru" ? wr() : e === "uk" ? yr() : br()
-  },
-  vr = () => "Alliance name already taken",
-  Er = () => "Já possui uma aliança com esse nome",
-  kr = () => "该联盟名称已被占用",
-  Tr = () => "Der Allianzname ist bereits vergeben",
-  Or = () => "Ese nombre de alianza ya está en uso",
-  Ir = () => "Ce nom d’alliance est déjà pris",
-  Sr = () => "Esiste già un'alleanza con questo nome",
-  Nr = () => "このアライアンス名は既に使用されています。",
-  zr = () => "Nazwa sojuszu jest już zajęta",
-  Ar = () => "Такое название альянса уже используется",
-  Rr = () => "Назва альянсу вже зайнята",
-  Dr = () => "Tên liên minh đã được sử dụng",
-  xr = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? vr() : e === "pt" ? Er() : e === "ch" ? kr() : e === "de" ? Tr() : e === "es" ? Or() : e === "fr" ? Ir() : e === "it" ? Sr() : e === "jp" ? Nr() : e === "pl" ? zr() : e === "ru" ? Ar() : e === "uk" ? Rr() : Dr()
-  },
-  jr = () => "Alliance name exceeded the maximum number of characters",
-  Pr = () => "O nome da aliança excedeu o número máximo de caracteres",
-  qr = () => "联盟名称超过最大字符数限制",
-  Lr = () => "Der Allianzname überschreitet die maximale Zeichenanzahl",
-  Ur = () => "El nombre de la alianza superó el número máximo de caracteres",
-  Mr = () => "Le nom de l’alliance a dépassé le nombre maximal de caractères",
-  Br = () => "Il nome dell'alleanza ha superato il numero massimo di caratteri",
-  Cr = () => "アライアンス名が最大文字数を超えています。",
-  Kr = () => "Nazwa sojuszu przekroczyła maksymalną liczbę znaków",
-  Fr = () => "Название альянса превышает максимальную длину",
-  $r = () => "Назва альянсу перевищує максимально допустиму кількість символів",
-  Gr = () => "Tên liên minh vượt quá số ký tự cho phép",
-  Vr = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? jr() : e === "pt" ? Pr() : e === "ch" ? qr() : e === "de" ? Lr() : e === "es" ? Ur() : e === "fr" ? Mr() : e === "it" ? Br() : e === "jp" ? Cr() : e === "pl" ? Kr() : e === "ru" ? Fr() : e === "uk" ? $r() : Gr()
-  },
-  Hr = () => "Alliance with empty name",
-  Wr = () => "Aliança com nome vazio",
-  Yr = () => "名称为空的联盟",
-  Jr = () => "Allianz mit leerem Namen",
-  Qr = () => "Alianza con nombre vacío",
-  Zr = () => "Alliance avec nom vide",
-  Xr = () => "Alleanza con nome vuoto",
-  eo = () => "名前が空のアライアンスです。",
-  to = () => "Sojusz z pustą nazwą",
-  no = () => "Альянс с пустым названием",
-  ro = () => "Альянс із порожньою назвою",
-  oo = () => "Liên minh không có tên",
-  io = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Hr() : e === "pt" ? Wr() : e === "ch" ? Yr() : e === "de" ? Jr() : e === "es" ? Qr() : e === "fr" ? Zr() : e === "it" ? Xr() : e === "jp" ? eo() : e === "pl" ? to() : e === "ru" ? no() : e === "uk" ? ro() : oo()
-  },
-  ao = () => "Botting",
-  so = () => "Uso de bots",
-  uo = () => "脚本",
-  co = () => "Bot-Nutzung",
-  lo = () => "Botting",
-  _o = () => "Bots",
-  fo = () => "Uso di bot",
-  po = () => "ボット使用",
-  ho = () => "Botting",
-  mo = () => "Боттинг",
-  go = () => "Боти",
-  wo = () => "Botting",
-  yo = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? ao() : e === "pt" ? so() : e === "ch" ? uo() : e === "de" ? co() : e === "es" ? lo() : e === "fr" ? _o() : e === "it" ? fo() : e === "jp" ? po() : e === "pl" ? ho() : e === "ru" ? mo() : e === "uk" ? go() : wo()
-  },
-  bo = () => "Use of software to completely automate painting",
-  vo = () => "Uso de software para pintar de forma completamente automatizada ",
-  Eo = () => "使用软件完全自动化绘制",
-  ko = () => "Verwendung von Software, um das Malen vollständig zu automatisieren",
-  To = () => "Uso de software para automatizar completamente la pintura",
-  Oo = () => "Utilisation de logiciels pour automatiser complètement la peinture",
-  Io = () => "Uso di software per dipingere in modo completamente automatizzato",
-  So = () => "ペイントを完全に自動化するソフトウェアの使用",
-  No = () => "Używanie oprogramowania do całkowicie zautomatyzowanego malowania",
-  zo = () => "Использование программ для полной автоматизации рисования",
-  Ao = () => "Використання програм, які повністю автоматизують малювання",
-  Ro = () => "Sử dụng phần mềm để tự động hóa hoàn toàn việc tô pixel",
-  Do = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? bo() : e === "pt" ? vo() : e === "ch" ? Eo() : e === "de" ? ko() : e === "es" ? To() : e === "fr" ? Oo() : e === "it" ? Io() : e === "jp" ? So() : e === "pl" ? No() : e === "ru" ? zo() : e === "uk" ? Ao() : Ro()
-  },
-  xo = () => "Breaking the rules",
-  jo = () => "Quebrar as regras",
-  Po = () => "违反规则",
-  qo = () => "Regeln brechen",
-  Lo = () => "Romper las reglas",
-  Uo = () => "Violation des règles",
-  Mo = () => "Violazione delle regole",
-  Bo = () => "ルール違反",
-  Co = () => "Łamanie zasad",
-  Ko = () => "Нарушение правил",
-  Fo = () => "Порушення правил",
-  $o = () => "Vi phạm luật",
-  Go = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? xo() : e === "pt" ? jo() : e === "ch" ? Po() : e === "de" ? qo() : e === "es" ? Lo() : e === "fr" ? Uo() : e === "it" ? Mo() : e === "jp" ? Bo() : e === "pl" ? Co() : e === "ru" ? Ko() : e === "uk" ? Fo() : $o()
-  },
-  Vo = () => "You have broken one of Wplace's rules",
-  Ho = () => "Você quebrou uma das regras do Wplace",
-  Wo = () => "你违反了 Wplace 的一项规则",
-  Yo = () => "Du hast gegen eine der Wplace-Regeln verstoßen",
-  Jo = () => "Has infringido una de las reglas de Wplace",
-  Qo = () => "Vous avez enfreint l’une des règles de Wplace",
-  Zo = () => "Hai infranto una delle regole di Wplace",
-  Xo = () => "Wplaceのルールのいずれかに違反しました。",
-  ei = () => "Złamałeś jedną z zasad Wplace",
-  ti = () => "Вы нарушили одно из правил Wplace",
-  ni = () => "Ви порушили одне з правил Wplace",
-  ri = () => "Bạn đã vi phạm một trong các luật của Wplace",
-  oi = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Vo() : e === "pt" ? Ho() : e === "ch" ? Wo() : e === "de" ? Yo() : e === "es" ? Jo() : e === "fr" ? Qo() : e === "it" ? Zo() : e === "jp" ? Xo() : e === "pl" ? ei() : e === "ru" ? ti() : e === "uk" ? ni() : ri()
-  },
-  ii = () => "You cannot paint over event pixels",
-  ai = () => "Você não pode pintar sobre pixels de eventos",
-  si = () => "你不能覆盖活动像素",
-  ui = () => "Du kannst nicht über Event-Pixel malen",
-  ci = () => "No puedes pintar sobre píxeles de evento",
-  li = () => "Vous ne pouvez pas peindre sur des pixels d’événement",
-  di = () => "Non puoi dipingere sopra i pixel dell'evento",
-  _i = () => "イベント用のピクセルの上には塗れません。",
-  fi = () => "Nie możesz malować po pikselach wydarzenia",
-  pi = () => "Вы не можете рисовать по пикселям события",
-  hi = () => "Ви не можете малювати поверх пікселів події",
-  mi = () => "Bạn không thể tô lên pixel sự kiện",
-  ot = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? ii() : e === "pt" ? ai() : e === "ch" ? si() : e === "de" ? ui() : e === "es" ? ci() : e === "fr" ? li() : e === "it" ? di() : e === "jp" ? _i() : e === "pl" ? fi() : e === "ru" ? pi() : e === "uk" ? hi() : mi()
-  },
-  gi = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
-  wi = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
-  yi = () => "无法连接到服务器。可能是你没有网络，或服务器已离线。请稍后重试。",
-  bi = () => "Server nicht erreichbar. Vielleicht hast du keine Internetverbindung oder der Server ist offline. Versuche es später erneut.",
-  vi = () => "No se puede conectar con el servidor. Puede que estés sin internet o el servidor esté caído. Inténtalo de nuevo más tarde.",
-  Ei = () => "Impossible d’atteindre le serveur. Vous n’êtes peut-être pas connecté à Internet ou le serveur est hors ligne. Réessayez plus tard.",
-  ki = () => "Impossibile contattare il server. Forse sei senza connessione o il server è offline. Riprova più tardi.",
-  Ti = () => "サーバーに接続できません。インターネットに接続されていないか、サーバーが停止している可能性があります。しばらくしてからもう一度お試しください。",
-  Oi = () => "Nie można połączyć się z serwerem. Być może nie masz internetu lub serwer nie działa. Spróbuj ponownie później.",
-  Ii = () => "Не удаётся подключиться к серверу. Возможно, у вас нет доступа к интернету или сервер недоступен. Попробуйте позже.",
-  Si = () => "Не вдається підключитися до сервера. Можливо, у вас немає інтернет-зʼєднання або сервер недоступний. Спробуйте пізніше.",
-  Ni = () => "Không thể kết nối tới máy chủ. Có thể bạn đang mất kết nối mạng hoặc máy chủ đang tạm ngưng. Hãy thử lại sau",
-  zi = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? gi() : e === "pt" ? wi() : e === "ch" ? yi() : e === "de" ? bi() : e === "es" ? vi() : e === "fr" ? Ei() : e === "it" ? ki() : e === "jp" ? Ti() : e === "pl" ? Oi() : e === "ru" ? Ii() : e === "uk" ? Si() : Ni()
-  },
-  Ai = () => "Challenge verification not completed",
-  Ri = () => "Verificação do desafio não concluída",
-  Di = () => "挑战验证未完成",
-  xi = () => "Herausforderungsverifizierung nicht abgeschlossen",
-  ji = () => "Verificación del desafío no completada",
-  Pi = () => "Vérification du défi non terminée",
-  qi = () => "Verifica della sfida non completata",
-  Li = () => "チャレンジ検証が完了していません",
-  Ui = () => "Weryfikacja wyzwania niezakończona",
-  Mi = () => "Верификация вызова не завершена",
-  Bi = () => "Перевірку виклику не завершено",
-  Ci = () => "Xác minh thử thách chưa hoàn thành",
-  Me = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Ai() : e === "pt" ? Ri() : e === "ch" ? Di() : e === "de" ? xi() : e === "es" ? ji() : e === "fr" ? Pi() : e === "it" ? qi() : e === "jp" ? Li() : e === "pl" ? Ui() : e === "ru" ? Mi() : e === "uk" ? Bi() : Ci()
-  },
-  Ki = () => "Couldn't complete the purchase. This item does not exist.",
-  Fi = () => "Não foi possível concluir a compra. Este item não existe.",
-  $i = () => "无法完成购买。该物品不存在。",
-  Gi = () => "Kauf konnte nicht abgeschlossen werden. Dieses Item existiert nicht.",
-  Vi = () => "No se pudo completar la compra. Este ítem no existe.",
-  Hi = () => "Achat impossible. Cet objet n’existe pas.",
-  Wi = () => "Impossibile completare l'acquisto. Questo oggetto non esiste.",
-  Yi = () => "購入を完了できませんでした。このアイテムは存在しません。",
-  Ji = () => "Nie udało się dokończyć zakupu. Ten przedmiot nie istnieje.",
-  Qi = () => "Не удалось завершить покупку. Этот предмет не существует.",
-  Zi = () => "Не вдалося завершити покупку. Цей предмет не існує.",
-  Xi = () => "Không thể hoàn tất giao dịch. Vật phẩm này không tồn tại.",
-  it = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Ki() : e === "pt" ? Fi() : e === "ch" ? $i() : e === "de" ? Gi() : e === "es" ? Vi() : e === "fr" ? Hi() : e === "it" ? Wi() : e === "jp" ? Yi() : e === "pl" ? Ji() : e === "ru" ? Qi() : e === "uk" ? Zi() : Xi()
-  },
-  ea = () => "Your phone number's country doesn't match your current location. Please use a local number.",
-  ta = () => "O país do seu número de telefone não corresponde à sua localização atual. Por favor, use um número local.",
-  na = () => "您的电话号码所属国家与您当前位置不匹配。请使用本地号码。",
-  ra = () => "Das Land deiner Telefonnummer stimmt nicht mit deinem aktuellen Standort überein. Bitte verwende eine lokale Nummer.",
-  oa = () => "El país de tu número de teléfono no coincide con tu ubicación actual. Por favor, usa un número local.",
-  ia = () => "Le pays de votre numéro de téléphone ne correspond pas à votre localisation actuelle. Veuillez utiliser un numéro local.",
-  aa = () => "Il paese del tuo numero di telefono non corrisponde alla tua posizione attuale. Per favore usa un numero locale.",
-  sa = () => "電話番号の国があなたの現在地と一致しません。現地の番号を使用してください。",
-  ua = () => "Kraj Twojego numeru telefonu nie odpowiada Twojej aktualnej lokalizacji. Użyj lokalnego numeru.",
-  ca = () => "Страна вашего номера телефона не совпадает с вашим текущим местоположением. Пожалуйста, используйте местный номер.",
-  la = () => "Країна вашого номера телефону не збігається з вашим поточним місцезнаходженням. Будь ласка, використовуйте місцевий номер.",
-  da = () => "Quốc gia của số điện thoại không khớp với vị trí hiện tại của bạn. Vui lòng sử dụng số địa phương.",
-  _a = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? ea() : e === "pt" ? ta() : e === "ch" ? na() : e === "de" ? ra() : e === "es" ? oa() : e === "fr" ? ia() : e === "it" ? aa() : e === "jp" ? sa() : e === "pl" ? ua() : e === "ru" ? ca() : e === "uk" ? la() : da()
-  },
-  fa = () => "We’re currently experiencing high traffic. Some requests may not be processed at this time—please try again later. Thank you for your patience.",
-  pa = () => "Estamos enfrentando um volume alto de acessos no momento. Algumas solicitações podem não ser processadas agora — por favor, tente novamente mais tarde. Agradecemos a sua compreensão.",
-  ha = () => "我们当前正遭遇高流量。一些请求可能无法立即处理——请稍后再试。感谢你的耐心。",
-  ma = () => "Wir haben gerade sehr viel Traffic. Einige Anfragen können momentan nicht verarbeitet werden – bitte versuche es später erneut. Danke für deine Geduld.",
-  ga = () => "Actualmente estamos recibiendo mucho tráfico. Es posible que algunas solicitudes no se procesen en este momento; inténtalo de nuevo más tarde. Gracias por tu paciencia.",
-  wa = () => "Nous subissons actuellement un trafic élevé. Certaines requêtes peuvent ne pas être traitées pour le moment — veuillez réessayer plus tard. Merci pour votre patience.",
-  ya = () => "Stiamo affrontando un elevato volume di accessi in questo momento. Alcune richieste potrebbero non essere elaborate ora — riprova più tardi. Grazie per la comprensione.",
-  ba = () => "現在アクセスが集中しています。一部のリクエストが処理されない場合があります。しばらくしてからもう一度お試しください。ご理解ありがとうございます。",
-  va = () => "Obecnie doświadczamy dużego ruchu. Niektóre żądania mogą nie zostać teraz przetworzone — spróbuj ponownie później. Dziękujemy za cierpliwość.",
-  Ea = () => "Сейчас мы испытываем очень высокую нагрузку. Некоторые запросы могут не обрабатываться — попробуйте позже. Спасибо за ваше терпение.",
-  ka = () => "Зараз ми отримуємо великий обсяг трафіку. Деякі запити можуть тимчасово не оброблятися — будь ласка, спробуйте пізніше. Дякуємо за розуміння.",
-  Ta = () => "Hiện chúng tôi đang chịu lượng truy cập rất cao. Một số yêu cầu có thể không được xử lý ngay bây giờ — hãy thử lại sau. Cảm ơn bạn đã thông cảm.",
-  at = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? fa() : e === "pt" ? pa() : e === "ch" ? ha() : e === "de" ? ma() : e === "es" ? ga() : e === "fr" ? wa() : e === "it" ? ya() : e === "jp" ? ba() : e === "pl" ? va() : e === "ru" ? Ea() : e === "uk" ? ka() : Ta()
-  },
-  Oa = () => "Doxxing",
-  Ia = () => "Doxxing",
-  Sa = () => "人肉搜索",
-  Na = () => "Doxxing",
-  za = () => "Doxxing",
-  Aa = () => "Doxxing",
-  Ra = () => "Doxxing",
-  Da = () => "ドックス（Doxxing）",
-  xa = () => "Doxxing",
-  ja = () => "Докcинг",
-  Pa = () => "Докcинг",
-  qa = () => "Doxxing",
-  La = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Oa() : e === "pt" ? Ia() : e === "ch" ? Sa() : e === "de" ? Na() : e === "es" ? za() : e === "fr" ? Aa() : e === "it" ? Ra() : e === "jp" ? Da() : e === "pl" ? xa() : e === "ru" ? ja() : e === "uk" ? Pa() : qa()
-  },
-  Ua = () => "Released other's personal information without their consent",
-  Ma = () => "Vazar informações pessoais de terceiros sem consentimento",
-  Ba = () => "在未获同意的情况下公开他人个人信息",
-  Ca = () => "Persönliche Daten anderer ohne deren Zustimmung veröffentlicht",
-  Ka = () => "Divulgó información personal de otra persona sin su consentimiento",
-  Fa = () => "Diffusion des informations personnelles de quelqu’un sans son consentement",
-  $a = () => "Diffusione di informazioni personali di terzi senza consenso",
-  Ga = () => "他人の個人情報を同意なく公開した。",
-  Va = () => "Udostępnianie cudzych danych osobowych bez ich zgody",
-  Ha = () => "Публикация личной информации других людей без их согласия",
-  Wa = () => "Розповсюдження особистої інформації інших людей без їхньої згоди",
-  Ya = () => "Công khai thông tin cá nhân của người khác mà không có sự cho phép",
-  Ja = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Ua() : e === "pt" ? Ma() : e === "ch" ? Ba() : e === "de" ? Ca() : e === "es" ? Ka() : e === "fr" ? Fa() : e === "it" ? $a() : e === "jp" ? Ga() : e === "pl" ? Va() : e === "ru" ? Ha() : e === "uk" ? Wa() : Ya()
-  },
-  Qa = () => "This email is already in use.",
-  Za = () => "Este e-mail já está em uso.",
-  Xa = () => "This email is already in use.",
-  es = () => "This email is already in use.",
-  ts = () => "Este correo electrónico ya está en uso.",
-  ns = () => "This email is already in use.",
-  rs = () => "Questa email è già in uso.",
-  os = () => "This email is already in use.",
-  is = () => "This email is already in use.",
-  as = () => "This email is already in use.",
-  ss = () => "This email is already in use.",
-  us = () => "This email is already in use.",
-  cs = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Qa() : e === "pt" ? Za() : e === "ch" ? Xa() : e === "de" ? es() : e === "es" ? ts() : e === "fr" ? ns() : e === "it" ? rs() : e === "jp" ? os() : e === "pl" ? is() : e === "ru" ? as() : e === "uk" ? ss() : us()
-  },
-  ls = n => `This email is already in use by user #${n.userId}.`,
-  ds = n => `Este e-mail já está em uso pelo usuário #${n.userId}.`,
-  _s = n => `This email is already in use by user #${n.userId}.`,
-  fs = n => `This email is already in use by user #${n.userId}.`,
-  ps = n => `Este correo electrónico ya está en uso por el usuario #${n.userId}.`,
-  hs = n => `This email is already in use by user #${n.userId}.`,
-  ms = n => `Questa email è già in uso dall'utente #${n.userId}.`,
-  gs = n => `This email is already in use by user #${n.userId}.`,
-  ws = n => `This email is already in use by user #${n.userId}.`,
-  ys = n => `This email is already in use by user #${n.userId}.`,
-  bs = n => `This email is already in use by user #${n.userId}.`,
-  vs = n => `This email is already in use by user #${n.userId}.`,
-  Es = (n, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? ls(n) : e === "pt" ? ds(n) : e === "ch" ? _s(n) : e === "de" ? fs(n) : e === "es" ? ps(n) : e === "fr" ? hs(n) : e === "it" ? ms(n) : e === "jp" ? gs(n) : e === "pl" ? ws(n) : e === "ru" ? ys(n) : e === "uk" ? bs(n) : vs(n)
-  },
-  ks = () => "Enter a valid email address.",
-  Ts = () => "Informe um endereço de e-mail válido.",
-  Os = () => "Enter a valid email address.",
-  Is = () => "Enter a valid email address.",
-  Ss = () => "Introduce una dirección de correo electrónico válida.",
-  Ns = () => "Enter a valid email address.",
-  zs = () => "Inserisci un indirizzo email valido.",
-  As = () => "Enter a valid email address.",
-  Rs = () => "Enter a valid email address.",
-  Ds = () => "Enter a valid email address.",
-  xs = () => "Enter a valid email address.",
-  js = () => "Enter a valid email address.",
-  Ps = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? ks() : e === "pt" ? Ts() : e === "ch" ? Os() : e === "de" ? Is() : e === "es" ? Ss() : e === "fr" ? Ns() : e === "it" ? zs() : e === "jp" ? As() : e === "pl" ? Rs() : e === "ru" ? Ds() : e === "uk" ? xs() : js()
-  },
-  qs = n => `Error while painting: ${n.err}`,
-  Ls = n => `Erro enquanto pinta: ${n.err}`,
-  Us = n => `绘制时出错：${n.err}`,
-  Ms = n => `Fehler beim Malen: ${n.err}`,
-  Bs = n => `Error al pintar: ${n.err}`,
-  Cs = n => `Erreur lors de la peinture : ${n.err}`,
-  Ks = n => `Errore durante la pittura: ${n.err}`,
-  Fs = n => `ペイント中にエラーが発生しました: ${n.err}`,
-  $s = n => `Błąd podczas malowania: ${n.err}`,
-  Gs = n => `Ошибка при рисовании: ${n.err}`,
-  Vs = n => `Помилка під час малювання: ${n.err}`,
-  Hs = n => `Lỗi khi tô: ${n.err}`,
-  Ws = (n, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? qs(n) : e === "pt" ? Ls(n) : e === "ch" ? Us(n) : e === "de" ? Ms(n) : e === "es" ? Bs(n) : e === "fr" ? Cs(n) : e === "it" ? Ks(n) : e === "jp" ? Fs(n) : e === "pl" ? $s(n) : e === "ru" ? Gs(n) : e === "uk" ? Vs(n) : Hs(n)
-  },
-  Ys = () => "Exceeded maximum number of characters",
-  Js = () => "Excedeu o número máximo de caracteres permitidos",
-  Qs = () => "超出最大字符数",
-  Zs = () => "Maximale Zeichenanzahl überschritten",
-  Xs = () => "Se excedió el número máximo de caracteres",
-  eu = () => "Nombre maximal de caractères dépassé",
-  tu = () => "Numero massimo di caratteri superato",
-  nu = () => "最大文字数を超過しました",
-  ru = () => "Przekroczono maksymalną liczbę znaków",
-  ou = () => "Превышено максимальное количество символов",
-  iu = () => "Перевищено максимальну кількість символів",
-  au = () => "Đã vượt quá số ký tự tối đa",
-  su = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Ys() : e === "pt" ? Js() : e === "ch" ? Qs() : e === "de" ? Zs() : e === "es" ? Xs() : e === "fr" ? eu() : e === "it" ? tu() : e === "jp" ? nu() : e === "pl" ? ru() : e === "ru" ? ou() : e === "uk" ? iu() : au()
-  },
-  uu = () => "Verification code expired. Please request a new one.",
-  cu = () => "Código de verificação expirado. Por favor, solicite um novo.",
-  lu = () => "验证码已过期，请重新获取。",
-  du = () => "Bestätigungscode abgelaufen. Bitte fordern Sie einen neuen an.",
-  _u = () => "Código de verificación expirado. Por favor, solicita uno nuevo.",
-  fu = () => "Code de vérification expiré. Veuillez en demander un nouveau.",
-  pu = () => "Codice di verifica scaduto. Per favore, richiedine uno nuovo.",
-  hu = () => "確認コードの有効期限が切れました。新しいコードをリクエストしてください。",
-  mu = () => "Kod weryfikacyjny wygasł. Poproś o nowy.",
-  gu = () => "Код подтверждения истёк. Пожалуйста, запросите новый.",
-  wu = () => "Код підтвердження закінчився. Будь ласка, запросіть новий.",
-  yu = () => "Mã xác minh đã hết hạn. Vui lòng yêu cầu mã mới.",
-  bu = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? uu() : e === "pt" ? cu() : e === "ch" ? lu() : e === "de" ? du() : e === "es" ? _u() : e === "fr" ? fu() : e === "it" ? pu() : e === "jp" ? hu() : e === "pl" ? mu() : e === "ru" ? gu() : e === "uk" ? wu() : yu()
-  },
-  vu = () => "Griefing",
-  Eu = () => "Griefing",
-  ku = () => "破坏行为",
-  Tu = () => "Griefing",
-  Ou = () => "Griefing",
-  Iu = () => "Griefing",
-  Su = () => "Griefing",
-  Nu = () => "グリーフィング",
-  zu = () => "Griefing",
-  Au = () => "Гриферство",
-  Ru = () => "Гріфінг",
-  Du = () => "Griefing",
-  xu = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? vu() : e === "pt" ? Eu() : e === "ch" ? ku() : e === "de" ? Tu() : e === "es" ? Ou() : e === "fr" ? Iu() : e === "it" ? Su() : e === "jp" ? Nu() : e === "pl" ? zu() : e === "ru" ? Au() : e === "uk" ? Ru() : Du()
-  },
-  ju = () => "Messed up with other's artworks",
-  Pu = () => "Estragou os desenhos dos outros",
-  qu = () => "破坏了他人的作品",
-  Lu = () => "Kunstwerke anderer beschädigt",
-  Uu = () => "Arruinó las obras de arte de otros",
-  Mu = () => "A abîmé les œuvres des autres",
-  Bu = () => "Ha rovinato i disegni degli altri",
-  Cu = () => "他人の作品を荒らした",
-  Ku = () => "Zniszczył prace innych",
-  Fu = () => "Испортил чужие рисунки",
-  $u = () => "Зіпсував роботи інших",
-  Gu = () => "Phá hỏng tranh của người khác",
-  Vu = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? ju() : e === "pt" ? Pu() : e === "ch" ? qu() : e === "de" ? Lu() : e === "es" ? Uu() : e === "fr" ? Mu() : e === "it" ? Bu() : e === "jp" ? Cu() : e === "pl" ? Ku() : e === "ru" ? Fu() : e === "uk" ? $u() : Gu()
-  },
-  Hu = () => "Hate speech",
-  Wu = () => "Discurso de Ódio",
-  Yu = () => "仇恨言论",
-  Ju = () => "Hassrede",
-  Qu = () => "Discurso de odio",
-  Zu = () => "Discours haineux",
-  Xu = () => "Discorso d'odio",
-  ec = () => "ヘイトスピーチ",
-  tc = () => "Mowa nienawiści",
-  nc = () => "Речь ненависти",
-  rc = () => "Мова ворожнечі",
-  oc = () => "Ngôn từ thù hằn",
-  ic = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Hu() : e === "pt" ? Wu() : e === "ch" ? Yu() : e === "de" ? Ju() : e === "es" ? Qu() : e === "fr" ? Zu() : e === "it" ? Xu() : e === "jp" ? ec() : e === "pl" ? tc() : e === "ru" ? nc() : e === "uk" ? rc() : oc()
-  },
-  ac = () => "Racism, homophobia, hate symbols, etc",
-  sc = () => "Racismo, homofobia, símbolos de ódio, etc.",
-  uc = () => "种族主义、恐同、仇恨符号等",
-  cc = () => "Rassismus, Homophobie, Hasssymbole usw.",
-  lc = () => "Racismo, homofobia, símbolos de odio, etc.",
-  dc = () => "Racisme, homophobie, symboles haineux, etc.",
-  _c = () => "Razzismo, omofobia, simboli d'odio, ecc.",
-  fc = () => "人種差別、同性愛嫌悪、ヘイトシンボルなど",
-  pc = () => "Rasizm, homofobia, symbole nienawiści itp.",
-  hc = () => "Расизм, гомофобия, символы ненависти и т. п.",
-  mc = () => "Расизм, гомофобія, символи ненависті тощо",
-  gc = () => "Phân biệt chủng tộc, kỳ thị đồng tính, biểu tượng thù ghét, v.v.",
-  wc = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? ac() : e === "pt" ? sc() : e === "ch" ? uc() : e === "de" ? cc() : e === "es" ? lc() : e === "fr" ? dc() : e === "it" ? _c() : e === "jp" ? fc() : e === "pl" ? pc() : e === "ru" ? hc() : e === "uk" ? mc() : gc()
-  },
-  yc = () => `This case has already been reviewed, resolved, or acted on by the moderation team.
-
-The reported incident may have already resulted in a punishment, warning, previous decision, or internal review. Submitting the same case again without new evidence will not usually change the outcome.
-
-If you have new and relevant evidence that was not included before, please submit a new report and clearly explain what new information is being provided.`,
-  bc = () => `Este caso já foi analisado, resolvido ou tratado pela equipe de moderação.
-
-O incidente denunciado pode já ter resultado em uma punição, advertência, decisão anterior ou revisão interna. Enviar o mesmo caso novamente sem novas evidências geralmente não altera o resultado.
-
-Se você tiver evidências novas e relevantes que não foram incluídas antes, envie uma nova denúncia e explique claramente quais novas informações estão sendo fornecidas.`,
-  vc = () => `此案件已由审核团队审查、解决或处理。
-
-被举报的事件可能已经导致了处罚、警告、先前的裁决或内部审查。在没有新证据的情况下重复提交相同的案件通常不会改变结果。
-
-如果您有此前未提供的、相关的新证据，请提交一份新的举报，并清楚说明所提供的新信息是什么。`,
-  Ec = () => `Dieser Fall wurde vom Moderationsteam bereits überprüft, gelöst oder bearbeitet.
-
-Der gemeldete Vorfall hat möglicherweise bereits zu einer Strafe, einer Verwarnung, einer früheren Entscheidung oder einer internen Überprüfung geführt. Denselben Fall ohne neue Beweise erneut einzureichen, ändert das Ergebnis in der Regel nicht.
-
-Wenn du neue und relevante Beweise hast, die zuvor nicht enthalten waren, reiche bitte eine neue Meldung ein und erkläre klar, welche neuen Informationen vorliegen.`,
-  kc = () => `Este caso ya ha sido revisado, resuelto o gestionado por el equipo de moderación.
-
-El incidente reportado puede haber dado lugar ya a una sanción, una advertencia, una decisión previa o una revisión interna. Enviar el mismo caso de nuevo sin pruebas nuevas no suele cambiar el resultado.
-
-Si tienes pruebas nuevas y relevantes que no se incluyeron antes, envía un nuevo reporte y explica claramente qué información nueva aportas.`,
-  Tc = () => `Ce cas a déjà été examiné, résolu ou traité par l'équipe de modération.
-
-L'incident signalé a peut-être déjà donné lieu à une sanction, un avertissement, une décision antérieure ou un examen interne. Soumettre à nouveau le même cas sans nouvelles preuves ne change généralement pas le résultat.
-
-Si vous disposez de nouvelles preuves pertinentes qui n'avaient pas été incluses, veuillez soumettre un nouveau signalement et expliquer clairement quelles nouvelles informations vous apportez.`,
-  Oc = () => `Questo caso è già stato esaminato, risolto o gestito dal team di moderazione.
-
-L'incidente segnalato potrebbe aver già portato a una punizione, un avviso, una decisione precedente o una revisione interna. Inviare di nuovo lo stesso caso senza nuove prove di solito non cambia l'esito.
-
-Se hai prove nuove e pertinenti non incluse in precedenza, invia una nuova segnalazione e spiega chiaramente quali nuove informazioni stai fornendo.`,
-  Ic = () => `このケースはすでにモデレーションチームによって確認・解決・対応されています。
-
-報告された事案は、すでに処分、警告、過去の判断、または内部審査につながっている可能性があります。新たな証拠なしに同じケースを再度提出しても、通常は結果は変わりません。
-
-以前に含まれていなかった新しく関連性のある証拠がある場合は、新しい報告を提出し、どのような新しい情報を提供するのかを明確に説明してください。`,
-  Sc = () => `Ta sprawa została już sprawdzona, rozstrzygnięta lub rozpatrzona przez zespół moderacji.
-
-Zgłoszone zdarzenie mogło już skutkować karą, ostrzeżeniem, wcześniejszą decyzją lub wewnętrzną weryfikacją. Ponowne przesłanie tej samej sprawy bez nowych dowodów zwykle nie zmieni wyniku.
-
-Jeśli masz nowe i istotne dowody, które nie zostały wcześniej dołączone, prześlij nowe zgłoszenie i jasno wyjaśnij, jakie nowe informacje przekazujesz.`,
-  Nc = () => `Этот случай уже был рассмотрен, решён или обработан командой модерации.
-
-Сообщённый инцидент мог уже привести к наказанию, предупреждению, ранее принятому решению или внутренней проверке. Повторная подача того же случая без новых доказательств обычно не меняет результат.
-
-Если у вас есть новые и значимые доказательства, которые ранее не были предоставлены, отправьте новую жалобу и чётко объясните, какая новая информация предоставляется.`,
-  zc = () => `Цю справу вже розглянуто, вирішено або опрацьовано командою модерації.
-
-Повідомлений інцидент, можливо, вже призвів до покарання, попередження, попереднього рішення або внутрішньої перевірки. Повторне надсилання тієї самої справи без нових доказів зазвичай не змінює результату.
-
-Якщо у вас є нові та важливі докази, які не були додані раніше, надішліть нову скаргу та чітко поясніть, яку нову інформацію ви надаєте.`,
-  Ac = () => `Trường hợp này đã được đội ngũ kiểm duyệt xem xét, giải quyết hoặc xử lý.
-
-Sự việc bị báo cáo có thể đã dẫn đến một hình phạt, cảnh cáo, quyết định trước đó hoặc một lần xem xét nội bộ. Việc gửi lại cùng một trường hợp mà không có bằng chứng mới thường sẽ không thay đổi kết quả.
-
-Nếu bạn có bằng chứng mới và liên quan mà trước đây chưa được đưa vào, vui lòng gửi một báo cáo mới và giải thích rõ thông tin mới mà bạn cung cấp là gì.`,
-  Rc = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? yc() : e === "pt" ? bc() : e === "ch" ? vc() : e === "de" ? Ec() : e === "es" ? kc() : e === "fr" ? Tc() : e === "it" ? Oc() : e === "jp" ? Ic() : e === "pl" ? Sc() : e === "ru" ? Nc() : e === "uk" ? zc() : Ac()
-  },
-  Dc = () => "Already Handled",
-  xc = () => "Já tratado",
-  jc = () => "已处理",
-  Pc = () => "Bereits bearbeitet",
-  qc = () => "Ya gestionado",
-  Lc = () => "Déjà traité",
-  Uc = () => "Già gestito",
-  Mc = () => "対応済み",
-  Bc = () => "Już rozpatrzone",
-  Cc = () => "Уже рассмотрено",
-  Kc = () => "Вже розглянуто",
-  Fc = () => "Đã xử lý",
-  $c = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Dc() : e === "pt" ? xc() : e === "ch" ? jc() : e === "de" ? Pc() : e === "es" ? qc() : e === "fr" ? Lc() : e === "it" ? Uc() : e === "jp" ? Mc() : e === "pl" ? Bc() : e === "ru" ? Cc() : e === "uk" ? Kc() : Fc()
-  },
-  Gc = () => `The reported action was allowed under the event rules or special conditions active at the time.
-
-Some events, areas, game modes, or temporary rules may allow behavior that would normally be restricted elsewhere. Because the action was permitted in that specific context, no moderation action will be taken.
-
-Please make sure to check the current event rules or special-area rules before submitting reports related to event gameplay.`,
-  Vc = () => `A ação denunciada era permitida pelas regras do evento ou pelas condições especiais ativas no momento.
-
-Alguns eventos, áreas, modos de jogo ou regras temporárias podem permitir comportamentos que normalmente seriam restritos em outros lugares. Como a ação era permitida nesse contexto específico, nenhuma ação de moderação será tomada.
-
-Verifique as regras atuais do evento ou as regras de áreas especiais antes de enviar denúncias relacionadas à jogabilidade do evento.`,
-  Hc = () => `被举报的行为在当时生效的活动规则或特殊条件下是被允许的。
-
-某些活动、区域、游戏模式或临时规则可能允许在其他情况下通常会被限制的行为。由于该行为在特定情境下被允许，因此不会采取任何审核措施。
-
-在提交与活动玩法相关的举报之前，请务必查看当前的活动规则或特殊区域规则。`,
-  Wc = () => `Die gemeldete Aktion war nach den Event-Regeln oder den zu diesem Zeitpunkt geltenden Sonderbedingungen erlaubt.
-
-Manche Events, Bereiche, Spielmodi oder temporäre Regeln können Verhalten erlauben, das anderswo normalerweise eingeschränkt wäre. Da die Aktion in diesem speziellen Kontext erlaubt war, wird keine Moderationsmaßnahme ergriffen.
-
-Bitte prüfe die aktuellen Event-Regeln oder die Regeln für Sonderbereiche, bevor du Meldungen zum Event-Gameplay einreichst.`,
-  Yc = () => `La acción reportada estaba permitida según las reglas del evento o las condiciones especiales activas en ese momento.
-
-Algunos eventos, áreas, modos de juego o reglas temporales pueden permitir comportamientos que normalmente estarían restringidos en otros lugares. Dado que la acción estaba permitida en ese contexto específico, no se tomará ninguna medida de moderación.
-
-Asegúrate de revisar las reglas actuales del evento o las reglas de áreas especiales antes de enviar reportes relacionados con la jugabilidad del evento.`,
-  Jc = () => `L'action signalée était autorisée par les règles de l'événement ou par les conditions spéciales en vigueur à ce moment-là.
-
-Certains événements, zones, modes de jeu ou règles temporaires peuvent autoriser des comportements qui seraient normalement restreints ailleurs. Comme l'action était autorisée dans ce contexte précis, aucune mesure de modération ne sera prise.
-
-Veuillez vérifier les règles actuelles de l'événement ou les règles des zones spéciales avant de soumettre des signalements liés au gameplay d'un événement.`,
-  Qc = () => `L'azione segnalata era consentita dalle regole dell'evento o dalle condizioni speciali attive in quel momento.
-
-Alcuni eventi, aree, modalità di gioco o regole temporanee possono consentire comportamenti che altrove sarebbero normalmente vietati. Poiché l'azione era consentita in quel contesto specifico, non verrà presa alcuna azione di moderazione.
-
-Assicurati di controllare le regole attuali dell'evento o le regole delle aree speciali prima di inviare segnalazioni relative al gameplay degli eventi.`,
-  Zc = () => `報告された行為は、その時点で有効だったイベントのルールや特別な条件のもとで許可されていました。
-
-一部のイベント、エリア、ゲームモード、または一時的なルールでは、通常なら他の場所で制限される行為が許可される場合があります。その特定の状況では行為が許可されていたため、モデレーションの措置は行われません。
-
-イベントのプレイに関する報告を提出する前に、現在のイベントルールや特別エリアのルールを必ず確認してください。`,
-  Xc = () => `Zgłoszone działanie było dozwolone zgodnie z zasadami wydarzenia lub specjalnymi warunkami obowiązującymi w tym czasie.
-
-Niektóre wydarzenia, obszary, tryby gry lub zasady tymczasowe mogą zezwalać na zachowania, które gdzie indziej byłyby zwykle ograniczone. Ponieważ działanie było dozwolone w tym konkretnym kontekście, nie zostaną podjęte żadne działania moderacyjne.
-
-Przed wysłaniem zgłoszeń dotyczących rozgrywki podczas wydarzenia sprawdź aktualne zasady wydarzenia lub zasady obszarów specjalnych.`,
-  el = () => `Сообщённое действие было разрешено правилами события или особыми условиями, действовавшими в тот момент.
-
-Некоторые события, зоны, режимы игры или временные правила могут разрешать поведение, которое обычно ограничено в других местах. Поскольку действие было разрешено в этом конкретном контексте, никаких мер модерации приниматься не будет.
-
-Пожалуйста, проверяйте текущие правила события или правила особых зон, прежде чем отправлять жалобы, связанные с игровым процессом события.`,
-  tl = () => `Повідомлена дія була дозволена правилами події або особливими умовами, що діяли на той момент.
-
-Деякі події, зони, режими гри або тимчасові правила можуть дозволяти поведінку, яка зазвичай обмежена в інших місцях. Оскільки дія була дозволена в цьому конкретному контексті, жодних заходів модерації вжито не буде.
-
-Будь ласка, перевіряйте чинні правила події або правила особливих зон, перш ніж надсилати скарги, пов'язані з ігровим процесом події.`,
-  nl = () => `Hành động bị báo cáo được cho phép theo quy tắc sự kiện hoặc các điều kiện đặc biệt đang có hiệu lực vào thời điểm đó.
-
-Một số sự kiện, khu vực, chế độ chơi hoặc quy tắc tạm thời có thể cho phép những hành vi mà ở nơi khác thường bị hạn chế. Vì hành động được cho phép trong bối cảnh cụ thể đó, sẽ không có biện pháp kiểm duyệt nào được áp dụng.
-
-Vui lòng kiểm tra quy tắc sự kiện hiện hành hoặc quy tắc khu vực đặc biệt trước khi gửi báo cáo liên quan đến lối chơi trong sự kiện.`,
-  rl = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Gc() : e === "pt" ? Vc() : e === "ch" ? Hc() : e === "de" ? Wc() : e === "es" ? Yc() : e === "fr" ? Jc() : e === "it" ? Qc() : e === "jp" ? Zc() : e === "pl" ? Xc() : e === "ru" ? el() : e === "uk" ? tl() : nl()
-  },
-  ol = () => "Allowed by Event or Special Rules",
-  il = () => "Permitido por evento ou regras especiais",
-  al = () => "活动或特殊规则允许",
-  sl = () => "Durch Event oder Sonderregeln erlaubt",
-  ul = () => "Permitido por evento o reglas especiales",
-  cl = () => "Autorisé par un événement ou des règles spéciales",
-  ll = () => "Consentito da evento o regole speciali",
-  dl = () => "イベントまたは特別ルールにより許可",
-  _l = () => "Dozwolone przez wydarzenie lub zasady specjalne",
-  fl = () => "Разрешено событием или особыми правилами",
-  pl = () => "Дозволено подією або особливими правилами",
-  hl = () => "Được phép theo sự kiện hoặc quy tắc đặc biệt",
-  ml = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? ol() : e === "pt" ? il() : e === "ch" ? al() : e === "de" ? sl() : e === "es" ? ul() : e === "fr" ? cl() : e === "it" ? ll() : e === "jp" ? dl() : e === "pl" ? _l() : e === "ru" ? fl() : e === "uk" ? pl() : hl()
-  },
-  gl = () => `The reported issue appears to have been caused by a glitch, bug, lag, desync, or another technical problem.
-
-Because the evidence suggests that the situation may not have been intentional player misconduct, we cannot treat it as a punishable rule violation.
-
-If the issue continues, please report it as a bug or provide more evidence showing that a player intentionally abused the glitch.`,
-  wl = () => `O problema denunciado parece ter sido causado por uma falha, bug, lag, dessincronização ou outro problema técnico.
-
-Como as evidências sugerem que a situação pode não ter sido má conduta intencional de um jogador, não podemos tratá-la como uma violação de regras passível de punição.
-
-Se o problema persistir, denuncie-o como um bug ou forneça mais evidências mostrando que um jogador abusou intencionalmente da falha.`,
-  yl = () => `被举报的问题似乎是由故障、漏洞、延迟、不同步或其他技术问题导致的。
-
-由于证据表明该情况可能并非玩家的故意不当行为，我们无法将其视为可处罚的违规行为。
-
-如果问题持续存在，请将其作为漏洞举报，或提供更多证据，证明有玩家故意利用了该故障。`,
-  bl = () => `Das gemeldete Problem scheint durch einen Glitch, Bug, Lag, eine Desynchronisation oder ein anderes technisches Problem verursacht worden zu sein.
-
-Da die Beweise darauf hindeuten, dass es sich möglicherweise nicht um vorsätzliches Fehlverhalten eines Spielers handelte, können wir es nicht als strafbaren Regelverstoß behandeln.
-
-Wenn das Problem weiterhin besteht, melde es bitte als Bug oder liefere weitere Beweise, die zeigen, dass ein Spieler den Glitch absichtlich ausgenutzt hat.`,
-  vl = () => `El problema reportado parece haber sido causado por un fallo, un error, lag, desincronización u otro problema técnico.
-
-Dado que las pruebas sugieren que la situación pudo no ser una mala conducta intencional de un jugador, no podemos tratarla como una violación de reglas sancionable.
-
-Si el problema continúa, repórtalo como un error o aporta más pruebas que demuestren que un jugador abusó intencionalmente del fallo.`,
-  El = () => `Le problème signalé semble avoir été causé par un bug, un glitch, du lag, une désynchronisation ou un autre problème technique.
-
-Comme les preuves suggèrent que la situation n'était peut-être pas une faute intentionnelle d'un joueur, nous ne pouvons pas la traiter comme une infraction passible de sanction.
-
-Si le problème persiste, veuillez le signaler en tant que bug ou fournir davantage de preuves montrant qu'un joueur a intentionnellement abusé du bug.`,
-  kl = () => `Il problema segnalato sembra essere stato causato da un glitch, un bug, lag, desincronizzazione o un altro problema tecnico.
-
-Poiché le prove suggeriscono che la situazione potrebbe non essere stata una cattiva condotta intenzionale di un giocatore, non possiamo trattarla come una violazione delle regole punibile.
-
-Se il problema persiste, segnalalo come bug o fornisci ulteriori prove che mostrino che un giocatore ha abusato intenzionalmente del glitch.`,
-  Tl = () => `報告された問題は、不具合、バグ、ラグ、同期ずれ、またはその他の技術的な問題によって引き起こされた可能性があります。
-
-証拠からは、プレイヤーの意図的な不正行為ではなかった可能性が示唆されるため、処罰の対象となるルール違反として扱うことはできません。
-
-問題が続く場合は、バグとして報告するか、プレイヤーが意図的に不具合を悪用したことを示すさらなる証拠を提出してください。`,
-  Ol = () => `Zgłoszony problem prawdopodobnie został spowodowany usterką, błędem, lagiem, desynchronizacją lub innym problemem technicznym.
-
-Ponieważ dowody sugerują, że sytuacja mogła nie być celowym niewłaściwym zachowaniem gracza, nie możemy potraktować jej jako karalnego naruszenia zasad.
-
-Jeśli problem będzie się powtarzał, zgłoś go jako błąd lub dostarcz więcej dowodów pokazujących, że gracz celowo wykorzystał usterkę.`,
-  Il = () => `Сообщённая проблема, по-видимому, была вызвана сбоем, багом, лагом, рассинхронизацией или другой технической неполадкой.
-
-Поскольку доказательства указывают на то, что ситуация могла не быть умышленным нарушением со стороны игрока, мы не можем рассматривать её как наказуемое нарушение правил.
-
-Если проблема сохраняется, сообщите о ней как об ошибке или предоставьте дополнительные доказательства того, что игрок умышленно воспользовался сбоем.`,
-  Sl = () => `Повідомлена проблема, схоже, була спричинена збоєм, багом, лагом, розсинхронізацією або іншою технічною несправністю.
-
-Оскільки докази свідчать, що ситуація могла не бути навмисною неправомірною поведінкою гравця, ми не можемо розглядати її як порушення правил, що карається.
-
-Якщо проблема повторюється, повідомте про неї як про помилку або надайте додаткові докази того, що гравець навмисно скористався збоєм.`,
-  Nl = () => `Vấn đề bị báo cáo có vẻ do một lỗi kỹ thuật, bug, lag, mất đồng bộ hoặc một sự cố kỹ thuật khác gây ra.
-
-Vì bằng chứng cho thấy tình huống có thể không phải là hành vi sai phạm cố ý của người chơi, chúng tôi không thể xem đó là vi phạm quy tắc có thể bị xử phạt.
-
-Nếu vấn đề vẫn tiếp diễn, vui lòng báo cáo dưới dạng lỗi hoặc cung cấp thêm bằng chứng cho thấy người chơi đã cố ý lợi dụng lỗi đó.`,
-  zl = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? gl() : e === "pt" ? wl() : e === "ch" ? yl() : e === "de" ? bl() : e === "es" ? vl() : e === "fr" ? El() : e === "it" ? kl() : e === "jp" ? Tl() : e === "pl" ? Ol() : e === "ru" ? Il() : e === "uk" ? Sl() : Nl()
-  },
-  Al = () => "Caused by a Glitch",
-  Rl = () => "Causado por uma falha",
-  Dl = () => "由故障导致",
-  xl = () => "Durch einen Glitch verursacht",
-  jl = () => "Causado por un fallo",
-  Pl = () => "Causé par un bug",
-  ql = () => "Causato da un glitch",
-  Ll = () => "不具合が原因",
-  Ul = () => "Spowodowane usterką",
-  Ml = () => "Вызвано сбоем",
-  Bl = () => "Спричинено збоєм",
-  Cl = () => "Do lỗi kỹ thuật gây ra",
-  Kl = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Al() : e === "pt" ? Rl() : e === "ch" ? Dl() : e === "de" ? xl() : e === "es" ? jl() : e === "fr" ? Pl() : e === "it" ? ql() : e === "jp" ? Ll() : e === "pl" ? Ul() : e === "ru" ? Ml() : e === "uk" ? Bl() : Cl()
-  },
-  Fl = () => `We could not confirm what happened based on the information provided.
-
-The report may show part of the situation, but it does not include enough context for the moderation team to understand the full incident, verify the sequence of events, or determine whether a rule was broken.
-
-When submitting a report, please include clear evidence, relevant timestamps, location or coordinates when applicable, and enough surrounding context to help us understand what happened before and after the reported action.`,
-  $l = () => `Não foi possível confirmar o que aconteceu com base nas informações fornecidas.
-
-A denúncia pode mostrar parte da situação, mas não inclui contexto suficiente para que a equipe de moderação entenda o incidente completo, verifique a sequência dos eventos ou determine se uma regra foi violada.
-
-Ao enviar uma denúncia, inclua evidências claras, registros de horário relevantes, localização ou coordenadas quando aplicável e contexto suficiente para nos ajudar a entender o que aconteceu antes e depois da ação denunciada.`,
-  Gl = () => `根据所提供的信息，我们无法确认发生了什么。
-
-该举报可能展示了部分情况，但没有包含足够的背景信息，使审核团队无法了解整个事件、核实事件的先后顺序，或判断是否违反了规则。
-
-提交举报时，请附上清晰的证据、相关的时间戳、适用时的位置或坐标，以及足够的背景信息，帮助我们了解被举报行为前后发生了什么。`,
-  Vl = () => `Anhand der bereitgestellten Informationen konnten wir nicht bestätigen, was passiert ist.
-
-Die Meldung zeigt möglicherweise einen Teil der Situation, enthält aber nicht genug Kontext, damit das Moderationsteam den gesamten Vorfall verstehen, den Ablauf der Ereignisse überprüfen oder feststellen kann, ob eine Regel verletzt wurde.
-
-Füge beim Einreichen einer Meldung bitte klare Beweise, relevante Zeitstempel, gegebenenfalls Ort oder Koordinaten sowie genügend Kontext hinzu, damit wir verstehen, was vor und nach der gemeldeten Aktion geschah.`,
-  Hl = () => `No pudimos confirmar qué ocurrió con la información proporcionada.
-
-El reporte puede mostrar parte de la situación, pero no incluye contexto suficiente para que el equipo de moderación entienda el incidente completo, verifique la secuencia de los hechos o determine si se infringió una regla.
-
-Al enviar un reporte, incluye pruebas claras, marcas de tiempo relevantes, ubicación o coordenadas cuando corresponda y contexto suficiente para ayudarnos a entender qué ocurrió antes y después de la acción reportada.`,
-  Wl = () => `Nous n'avons pas pu confirmer ce qui s'est passé sur la base des informations fournies.
-
-Le signalement montre peut-être une partie de la situation, mais il ne fournit pas assez de contexte pour que l'équipe de modération comprenne l'incident dans son ensemble, vérifie le déroulement des événements ou détermine si une règle a été enfreinte.
-
-Lorsque vous soumettez un signalement, veuillez inclure des preuves claires, les horodatages pertinents, l'emplacement ou les coordonnées le cas échéant, et suffisamment de contexte pour nous aider à comprendre ce qui s'est passé avant et après l'action signalée.`,
-  Yl = () => `Non siamo riusciti a confermare cosa sia successo in base alle informazioni fornite.
-
-La segnalazione può mostrare parte della situazione, ma non include abbastanza contesto per permettere al team di moderazione di comprendere l'intero incidente, verificare la sequenza degli eventi o stabilire se una regola sia stata violata.
-
-Quando invii una segnalazione, includi prove chiare, marche temporali pertinenti, posizione o coordinate quando applicabile e contesto sufficiente per aiutarci a capire cosa è successo prima e dopo l'azione segnalata.`,
-  Jl = () => `提供された情報からは、何が起きたのかを確認できませんでした。
-
-この報告は状況の一部を示しているかもしれませんが、モデレーションチームが事案の全体像を把握し、出来事の流れを確認し、ルール違反があったかどうかを判断するのに十分な背景情報が含まれていません。
-
-報告を提出する際は、明確な証拠、関連するタイムスタンプ、該当する場合は場所や座標、そして報告された行為の前後に何が起きたかを理解するのに十分な背景情報を含めてください。`,
-  Ql = () => `Na podstawie podanych informacji nie mogliśmy potwierdzić, co się wydarzyło.
-
-Zgłoszenie może pokazywać część sytuacji, ale nie zawiera wystarczającego kontekstu, aby zespół moderacji mógł zrozumieć całe zdarzenie, zweryfikować przebieg wydarzeń lub ustalić, czy doszło do naruszenia zasad.
-
-Wysyłając zgłoszenie, dołącz wyraźne dowody, odpowiednie znaczniki czasu, lokalizację lub współrzędne, jeśli dotyczy, oraz wystarczający kontekst, który pomoże nam zrozumieć, co wydarzyło się przed zgłoszonym działaniem i po nim.`,
-  Zl = () => `На основании предоставленной информации мы не смогли подтвердить, что произошло.
-
-Жалоба может показывать часть ситуации, но в ней недостаточно контекста, чтобы команда модерации могла понять инцидент целиком, проверить последовательность событий или определить, было ли нарушено правило.
-
-При отправке жалобы прилагайте чёткие доказательства, соответствующие временные метки, местоположение или координаты, если применимо, и достаточный контекст, чтобы помочь нам понять, что происходило до и после указанного действия.`,
-  Xl = () => `На основі наданої інформації ми не змогли підтвердити, що сталося.
-
-Скарга може показувати частину ситуації, але в ній недостатньо контексту, щоб команда модерації зрозуміла весь інцидент, перевірила послідовність подій або визначила, чи було порушено правило.
-
-Надсилаючи скаргу, додавайте чіткі докази, відповідні позначки часу, місце або координати, якщо це доречно, і достатньо контексту, щоб допомогти нам зрозуміти, що відбувалося до та після зазначеної дії.`,
-  ed = () => `Chúng tôi không thể xác nhận điều gì đã xảy ra dựa trên thông tin được cung cấp.
-
-Báo cáo có thể cho thấy một phần tình huống, nhưng không bao gồm đủ bối cảnh để đội ngũ kiểm duyệt hiểu toàn bộ sự việc, xác minh trình tự các sự kiện hoặc xác định liệu có vi phạm quy tắc hay không.
-
-Khi gửi báo cáo, vui lòng kèm theo bằng chứng rõ ràng, dấu thời gian liên quan, vị trí hoặc tọa độ khi cần, và đủ bối cảnh xung quanh để giúp chúng tôi hiểu điều gì đã xảy ra trước và sau hành động bị báo cáo.`,
-  td = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Fl() : e === "pt" ? $l() : e === "ch" ? Gl() : e === "de" ? Vl() : e === "es" ? Hl() : e === "fr" ? Wl() : e === "it" ? Yl() : e === "jp" ? Jl() : e === "pl" ? Ql() : e === "ru" ? Zl() : e === "uk" ? Xl() : ed()
-  },
-  nd = () => "Insufficient Context",
-  rd = () => "Contexto insuficiente",
-  od = () => "背景信息不足",
-  id = () => "Unzureichender Kontext",
-  ad = () => "Contexto insuficiente",
-  sd = () => "Contexte insuffisant",
-  ud = () => "Contesto insufficiente",
-  cd = () => "情報が不十分",
-  ld = () => "Niewystarczający kontekst",
-  dd = () => "Недостаточно контекста",
-  _d = () => "Недостатньо контексту",
-  fd = () => "Không đủ bối cảnh",
-  pd = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? nd() : e === "pt" ? rd() : e === "ch" ? od() : e === "de" ? id() : e === "es" ? ad() : e === "fr" ? sd() : e === "it" ? ud() : e === "jp" ? cd() : e === "pl" ? ld() : e === "ru" ? dd() : e === "uk" ? _d() : fd()
-  },
-  hd = () => `The report contains incorrect, incomplete, inaccessible, or unusable information.
-
-This can happen when the evidence does not match the report, the link is broken, or required details are missing.
-
-Please review the information carefully before submitting a report. Make sure to report the correct player, make sure that it is an actual violation, and make sure to submit enough context details to help the moderation team investigate reports properly.`,
-  md = () => `A denúncia contém informações incorretas, incompletas, inacessíveis ou inutilizáveis.
-
-Isso pode acontecer quando as evidências não correspondem à denúncia, o link está quebrado ou detalhes obrigatórios estão faltando.
-
-Revise as informações com atenção antes de enviar uma denúncia. Certifique-se de denunciar o jogador correto, de que se trata de uma violação real e de fornecer detalhes de contexto suficientes para ajudar a equipe de moderação a investigar as denúncias adequadamente.`,
-  gd = () => `该举报包含不正确、不完整、无法访问或无法使用的信息。
-
-这可能是因为证据与举报内容不符、链接失效，或缺少必要的细节。
-
-提交举报前，请仔细核对信息。请确保举报的是正确的玩家、确实存在违规行为，并提供足够的背景细节，以帮助审核团队妥善调查举报。`,
-  wd = () => `Die Meldung enthält falsche, unvollständige, nicht zugängliche oder unbrauchbare Informationen.
-
-Das kann passieren, wenn die Beweise nicht zur Meldung passen, der Link defekt ist oder erforderliche Angaben fehlen.
-
-Bitte überprüfe die Informationen sorgfältig, bevor du eine Meldung einreichst. Stelle sicher, dass du den richtigen Spieler meldest, dass es sich tatsächlich um einen Verstoß handelt und dass du genügend Kontextdetails angibst, damit das Moderationsteam Meldungen ordnungsgemäß untersuchen kann.`,
-  yd = () => `El reporte contiene información incorrecta, incompleta, inaccesible o inservible.
-
-Esto puede ocurrir cuando las pruebas no coinciden con el reporte, el enlace está roto o faltan datos necesarios.
-
-Revisa la información con cuidado antes de enviar un reporte. Asegúrate de reportar al jugador correcto, de que se trata de una infracción real y de aportar suficientes detalles de contexto para ayudar al equipo de moderación a investigar los reportes adecuadamente.`,
-  bd = () => `Le signalement contient des informations incorrectes, incomplètes, inaccessibles ou inutilisables.
-
-Cela peut arriver lorsque les preuves ne correspondent pas au signalement, que le lien est rompu ou que des détails requis sont manquants.
-
-Veuillez vérifier attentivement les informations avant de soumettre un signalement. Assurez-vous de signaler le bon joueur, qu'il s'agit bien d'une véritable infraction et de fournir suffisamment de détails de contexte pour aider l'équipe de modération à enquêter correctement sur les signalements.`,
-  vd = () => `La segnalazione contiene informazioni errate, incomplete, inaccessibili o inutilizzabili.
-
-Ciò può accadere quando le prove non corrispondono alla segnalazione, il link è interrotto o mancano dettagli obbligatori.
-
-Controlla attentamente le informazioni prima di inviare una segnalazione. Assicurati di segnalare il giocatore corretto, che si tratti di una violazione reale e di fornire dettagli di contesto sufficienti per aiutare il team di moderazione a investigare correttamente le segnalazioni.`,
-  Ed = () => `この報告には、誤った、不完全な、アクセスできない、または使用できない情報が含まれています。
-
-これは、証拠が報告内容と一致しない、リンクが切れている、または必要な詳細が欠けている場合に起こり得ます。
-
-報告を提出する前に、情報を注意深く確認してください。正しいプレイヤーを報告していること、実際に違反であること、そしてモデレーションチームが報告を適切に調査できるよう十分な背景情報を提出していることを確認してください。`,
-  kd = () => `Zgłoszenie zawiera nieprawidłowe, niepełne, niedostępne lub nieprzydatne informacje.
-
-Może się to zdarzyć, gdy dowody nie pasują do zgłoszenia, link jest nieaktywny lub brakuje wymaganych szczegółów.
-
-Przed wysłaniem zgłoszenia dokładnie sprawdź informacje. Upewnij się, że zgłaszasz właściwego gracza, że jest to rzeczywiste naruszenie oraz że podajesz wystarczające szczegóły kontekstu, aby pomóc zespołowi moderacji prawidłowo zbadać zgłoszenia.`,
-  Td = () => `Жалоба содержит неверную, неполную, недоступную или непригодную информацию.
-
-Это может произойти, когда доказательства не соответствуют жалобе, ссылка не работает или отсутствуют необходимые сведения.
-
-Внимательно проверьте информацию перед отправкой жалобы. Убедитесь, что вы жалуетесь на нужного игрока, что это действительно нарушение, и что вы предоставили достаточно контекстных деталей, чтобы помочь команде модерации правильно расследовать жалобы.`,
-  Od = () => `Скарга містить неправильну, неповну, недоступну або непридатну інформацію.
-
-Це може статися, коли докази не відповідають скарзі, посилання не працює або відсутні обов'язкові деталі.
-
-Уважно перевірте інформацію перед надсиланням скарги. Переконайтеся, що ви скаржитеся на правильного гравця, що це справді порушення, і що ви надаєте достатньо контекстних деталей, щоб допомогти команді модерації належно розслідувати скарги.`,
-  Id = () => `Báo cáo chứa thông tin không chính xác, không đầy đủ, không truy cập được hoặc không sử dụng được.
-
-Điều này có thể xảy ra khi bằng chứng không khớp với báo cáo, liên kết bị hỏng hoặc thiếu các chi tiết bắt buộc.
-
-Vui lòng xem lại thông tin cẩn thận trước khi gửi báo cáo. Hãy chắc chắn rằng bạn báo cáo đúng người chơi, rằng đó thực sự là một vi phạm, và cung cấp đủ chi tiết bối cảnh để giúp đội ngũ kiểm duyệt điều tra báo cáo một cách hợp lý.`,
-  Sd = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? hd() : e === "pt" ? md() : e === "ch" ? gd() : e === "de" ? wd() : e === "es" ? yd() : e === "fr" ? bd() : e === "it" ? vd() : e === "jp" ? Ed() : e === "pl" ? kd() : e === "ru" ? Td() : e === "uk" ? Od() : Id()
-  },
-  Nd = () => "Invalid Information",
-  zd = () => "Informação inválida",
-  Ad = () => "信息无效",
-  Rd = () => "Ungültige Informationen",
-  Dd = () => "Información no válida",
-  xd = () => "Informations non valides",
-  jd = () => "Informazioni non valide",
-  Pd = () => "無効な情報",
-  qd = () => "Nieprawidłowe informacje",
-  Ld = () => "Недействительная информация",
-  Ud = () => "Недійсна інформація",
-  Md = () => "Thông tin không hợp lệ",
-  Bd = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Nd() : e === "pt" ? zd() : e === "ch" ? Ad() : e === "de" ? Rd() : e === "es" ? Dd() : e === "fr" ? xd() : e === "it" ? jd() : e === "jp" ? Pd() : e === "pl" ? qd() : e === "ru" ? Ld() : e === "uk" ? Ud() : Md()
-  },
-  Cd = () => `The reported behavior does not appear to violate the current rules.
-
-The situation may have been frustrating, unwanted, or disruptive from your perspective, but based on the evidence provided, it does not meet the criteria for a rule violation.
-
-Moderation actions are only taken when a report clearly shows behavior that breaks the rules. If you believe this decision is incorrect, please make sure future reports include enough context explaining why you believe that a rule was violated.`,
-  Kd = () => `O comportamento denunciado não parece violar as regras atuais.
-
-A situação pode ter sido frustrante, indesejada ou perturbadora do seu ponto de vista, mas, com base nas evidências fornecidas, ela não atende aos critérios de uma violação de regra.
-
-Ações de moderação só são tomadas quando uma denúncia mostra claramente um comportamento que infringe as regras. Se você acredita que esta decisão está incorreta, certifique-se de que futuras denúncias incluam contexto suficiente explicando por que você acredita que uma regra foi violada.`,
-  Fd = () => `被举报的行为似乎并未违反当前规则。
-
-从您的角度看，这种情况可能令人沮丧、不受欢迎或具有干扰性，但根据所提供的证据，它并不符合违规的标准。
-
-只有当举报清楚地显示出违反规则的行为时，才会采取审核措施。如果您认为此决定有误，请确保今后的举报包含足够的背景信息，说明您为何认为某条规则被违反。`,
-  $d = () => `Das gemeldete Verhalten scheint nicht gegen die aktuellen Regeln zu verstoßen.
-
-Die Situation mag aus deiner Sicht frustrierend, unerwünscht oder störend gewesen sein, aber auf Grundlage der vorgelegten Beweise erfüllt sie nicht die Kriterien für einen Regelverstoß.
-
-Moderationsmaßnahmen werden nur ergriffen, wenn eine Meldung eindeutig ein Verhalten zeigt, das gegen die Regeln verstößt. Wenn du der Meinung bist, dass diese Entscheidung falsch ist, achte bitte darauf, dass künftige Meldungen genügend Kontext enthalten und erklären, warum du glaubst, dass eine Regel verletzt wurde.`,
-  Gd = () => `El comportamiento reportado no parece infringir las reglas actuales.
-
-La situación pudo haber sido frustrante, no deseada o molesta desde tu punto de vista, pero, según las pruebas aportadas, no cumple los criterios de una infracción de reglas.
-
-Las acciones de moderación solo se toman cuando un reporte muestra claramente un comportamiento que rompe las reglas. Si crees que esta decisión es incorrecta, asegúrate de que los reportes futuros incluyan suficiente contexto que explique por qué consideras que se infringió una regla.`,
-  Vd = () => `Le comportement signalé ne semble pas enfreindre les règles actuelles.
-
-La situation a peut-être été frustrante, indésirable ou perturbante de votre point de vue, mais d'après les preuves fournies, elle ne remplit pas les critères d'une infraction aux règles.
-
-Des mesures de modération ne sont prises que lorsqu'un signalement montre clairement un comportement qui enfreint les règles. Si vous pensez que cette décision est incorrecte, veillez à ce que vos futurs signalements incluent suffisamment de contexte expliquant pourquoi vous estimez qu'une règle a été enfreinte.`,
-  Hd = () => `Il comportamento segnalato non sembra violare le regole attuali.
-
-La situazione potrebbe essere stata frustrante, indesiderata o fastidiosa dal tuo punto di vista, ma in base alle prove fornite non soddisfa i criteri di una violazione delle regole.
-
-Le azioni di moderazione vengono intraprese solo quando una segnalazione mostra chiaramente un comportamento che infrange le regole. Se ritieni che questa decisione sia errata, assicurati che le segnalazioni future includano contesto sufficiente a spiegare perché ritieni che una regola sia stata violata.`,
-  Wd = () => `報告された行為は、現在のルールに違反していないようです。
-
-その状況は、あなたの視点ではいら立たしく、望ましくなく、または迷惑なものだったかもしれませんが、提供された証拠に基づくと、ルール違反の基準を満たしていません。
-
-モデレーションの措置は、報告が明確にルールを破る行為を示している場合にのみ行われます。この判断が誤っていると思われる場合は、今後の報告に、なぜルール違反だと考えるのかを説明する十分な背景情報を含めるようにしてください。`,
-  Yd = () => `Zgłoszone zachowanie nie wydaje się naruszać obowiązujących zasad.
-
-Sytuacja mogła być z twojej perspektywy frustrująca, niechciana lub uciążliwa, ale na podstawie dostarczonych dowodów nie spełnia kryteriów naruszenia zasad.
-
-Działania moderacyjne są podejmowane tylko wtedy, gdy zgłoszenie wyraźnie pokazuje zachowanie łamiące zasady. Jeśli uważasz, że ta decyzja jest błędna, zadbaj o to, aby przyszłe zgłoszenia zawierały wystarczający kontekst wyjaśniający, dlaczego uważasz, że doszło do naruszenia zasad.`,
-  Jd = () => `Указанное поведение, по-видимому, не нарушает действующих правил.
-
-С вашей точки зрения ситуация могла быть неприятной, нежелательной или мешающей, но на основании предоставленных доказательств она не соответствует критериям нарушения правил.
-
-Меры модерации принимаются только тогда, когда жалоба чётко показывает поведение, нарушающее правила. Если вы считаете, что это решение неверно, постарайтесь, чтобы будущие жалобы содержали достаточно контекста, объясняющего, почему вы считаете, что правило было нарушено.`,
-  Qd = () => `Зазначена поведінка, схоже, не порушує чинних правил.
-
-З вашого погляду ситуація могла бути неприємною, небажаною або такою, що заважає, але на основі наданих доказів вона не відповідає критеріям порушення правил.
-
-Заходи модерації вживаються лише тоді, коли скарга чітко показує поведінку, що порушує правила. Якщо ви вважаєте, що це рішення неправильне, подбайте, щоб майбутні скарги містили достатньо контексту з поясненням, чому ви вважаєте, що правило було порушено.`,
-  Zd = () => `Hành vi bị báo cáo dường như không vi phạm các quy tắc hiện hành.
-
-Tình huống có thể gây bực bội, không mong muốn hoặc gây phiền toái từ góc nhìn của bạn, nhưng dựa trên bằng chứng được cung cấp, nó không đáp ứng tiêu chí của một vi phạm quy tắc.
-
-Các biện pháp kiểm duyệt chỉ được áp dụng khi một báo cáo cho thấy rõ hành vi vi phạm quy tắc. Nếu bạn cho rằng quyết định này không đúng, hãy đảm bảo các báo cáo trong tương lai có đủ bối cảnh giải thích vì sao bạn tin rằng một quy tắc đã bị vi phạm.`,
-  Xd = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Cd() : e === "pt" ? Kd() : e === "ch" ? Fd() : e === "de" ? $d() : e === "es" ? Gd() : e === "fr" ? Vd() : e === "it" ? Hd() : e === "jp" ? Wd() : e === "pl" ? Yd() : e === "ru" ? Jd() : e === "uk" ? Qd() : Zd()
-  },
-  e_ = () => "No Rule Violation",
-  t_ = () => "Nenhuma violação de regra",
-  n_ = () => "未违反规则",
-  r_ = () => "Kein Regelverstoß",
-  o_ = () => "Sin infracción de reglas",
-  i_ = () => "Aucune infraction aux règles",
-  a_ = () => "Nessuna violazione delle regole",
-  s_ = () => "ルール違反なし",
-  u_ = () => "Brak naruszenia zasad",
-  c_ = () => "Нарушения правил нет",
-  l_ = () => "Порушення правил немає",
-  d_ = () => "Không vi phạm quy tắc",
-  __ = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? e_() : e === "pt" ? t_() : e === "ch" ? n_() : e === "de" ? r_() : e === "es" ? o_() : e === "fr" ? i_() : e === "it" ? a_() : e === "jp" ? s_() : e === "pl" ? u_() : e === "ru" ? c_() : e === "uk" ? l_() : d_()
-  },
-  f_ = () => `The report shows behavior that may be questionable, but it is not severe or clear enough to justify a moderation action.
-
-Some situations may be inappropriate, annoying, or borderline, but still not reach the threshold required for a punishment. In these cases, the moderation team may choose not to take formal action unless the behavior continues or becomes more serious.
-
-If this happens again, please submit a new report with additional evidence showing a repeated pattern or a more serious violation.`,
-  p_ = () => `A denúncia mostra um comportamento que pode ser questionável, mas não é grave nem claro o suficiente para justificar uma ação de moderação.
-
-Algumas situações podem ser inadequadas, irritantes ou limítrofes, mas ainda assim não atingem o limite necessário para uma punição. Nesses casos, a equipe de moderação pode optar por não tomar uma ação formal, a menos que o comportamento continue ou se torne mais grave.
-
-Se isso acontecer novamente, envie uma nova denúncia com evidências adicionais que mostrem um padrão repetido ou uma violação mais grave.`,
-  h_ = () => `该举报显示的行为可能存在问题，但还不够严重或明确，不足以采取审核措施。
-
-某些情况可能不恰当、令人厌烦或处于灰色地带，但仍未达到处罚所需的门槛。在这种情况下，除非该行为继续发生或变得更加严重，否则审核团队可能选择不采取正式行动。
-
-如果此情况再次发生，请提交一份新的举报，并附上能显示重复行为模式或更严重违规的额外证据。`,
-  m_ = () => `Die Meldung zeigt ein Verhalten, das fragwürdig sein mag, aber nicht schwerwiegend oder eindeutig genug ist, um eine Moderationsmaßnahme zu rechtfertigen.
-
-Manche Situationen sind vielleicht unangemessen, störend oder grenzwertig, erreichen aber dennoch nicht die für eine Strafe erforderliche Schwelle. In solchen Fällen kann das Moderationsteam entscheiden, keine formelle Maßnahme zu ergreifen, sofern das Verhalten nicht anhält oder schwerwiegender wird.
-
-Wenn dies erneut geschieht, reiche bitte eine neue Meldung mit zusätzlichen Beweisen ein, die ein wiederholtes Muster oder einen schwerwiegenderen Verstoß zeigen.`,
-  g_ = () => `El reporte muestra un comportamiento que puede ser cuestionable, pero no es lo bastante grave ni claro como para justificar una acción de moderación.
-
-Algunas situaciones pueden ser inapropiadas, molestas o estar en el límite, pero aun así no alcanzan el umbral necesario para una sanción. En estos casos, el equipo de moderación puede optar por no tomar medidas formales a menos que el comportamiento continúe o se agrave.
-
-Si esto vuelve a ocurrir, envía un nuevo reporte con pruebas adicionales que muestren un patrón repetido o una infracción más grave.`,
-  w_ = () => `Le signalement montre un comportement qui peut être discutable, mais qui n'est pas assez grave ou clair pour justifier une mesure de modération.
-
-Certaines situations peuvent être inappropriées, agaçantes ou limites, sans pour autant atteindre le seuil requis pour une sanction. Dans ces cas, l'équipe de modération peut choisir de ne pas prendre de mesure formelle, sauf si le comportement persiste ou s'aggrave.
-
-Si cela se reproduit, veuillez soumettre un nouveau signalement avec des preuves supplémentaires montrant un schéma répété ou une infraction plus grave.`,
-  y_ = () => `La segnalazione mostra un comportamento che può essere discutibile, ma non è abbastanza grave o chiaro da giustificare un'azione di moderazione.
-
-Alcune situazioni possono essere inappropriate, fastidiose o al limite, ma non raggiungono comunque la soglia richiesta per una punizione. In questi casi, il team di moderazione può scegliere di non intervenire formalmente, a meno che il comportamento non continui o diventi più grave.
-
-Se dovesse ripetersi, invia una nuova segnalazione con prove aggiuntive che mostrino uno schema ripetuto o una violazione più grave.`,
-  b_ = () => `この報告は、問題があるかもしれない行為を示していますが、モデレーションの措置を正当化するほど深刻でも明確でもありません。
-
-一部の状況は不適切だったり、迷惑だったり、際どいものだったりするかもしれませんが、それでも処分に必要な基準には達していません。こうした場合、行為が続いたりより深刻になったりしない限り、モデレーションチームは正式な措置を取らないことを選ぶことがあります。
-
-再び起きた場合は、繰り返しのパターンやより深刻な違反を示す追加の証拠を添えて、新しい報告を提出してください。`,
-  v_ = () => `Zgłoszenie pokazuje zachowanie, które może budzić wątpliwości, ale nie jest na tyle poważne ani jednoznaczne, aby uzasadniać działanie moderacyjne.
-
-Niektóre sytuacje mogą być nieodpowiednie, irytujące lub graniczne, a mimo to nie osiągają progu wymaganego do nałożenia kary. W takich przypadkach zespół moderacji może nie podjąć formalnych działań, chyba że zachowanie będzie się powtarzać lub stanie się poważniejsze.
-
-Jeśli sytuacja się powtórzy, prześlij nowe zgłoszenie z dodatkowymi dowodami pokazującymi powtarzający się wzorzec lub poważniejsze naruszenie.`,
-  E_ = () => `Жалоба показывает поведение, которое может вызывать сомнения, но оно недостаточно серьёзное или явное, чтобы оправдать меры модерации.
-
-Некоторые ситуации могут быть неуместными, раздражающими или пограничными, но всё же не достигают порога, необходимого для наказания. В таких случаях команда модерации может решить не предпринимать официальных действий, если поведение не продолжится или не станет более серьёзным.
-
-Если это повторится, отправьте новую жалобу с дополнительными доказательствами, показывающими повторяющийся характер или более серьёзное нарушение.`,
-  k_ = () => `Скарга показує поведінку, яка може викликати сумніви, але вона недостатньо серйозна чи однозначна, щоб виправдати захід модерації.
-
-Деякі ситуації можуть бути недоречними, дратівливими або межовими, але все ж не досягають порогу, потрібного для покарання. У таких випадках команда модерації може вирішити не вживати офіційних заходів, якщо поведінка не повторюватиметься або не стане серйознішою.
-
-Якщо це повториться, надішліть нову скаргу з додатковими доказами, що показують повторюваний характер або серйозніше порушення.`,
-  T_ = () => `Báo cáo cho thấy hành vi có thể đáng ngờ, nhưng chưa đủ nghiêm trọng hoặc rõ ràng để biện minh cho một biện pháp kiểm duyệt.
-
-Một số tình huống có thể không phù hợp, gây khó chịu hoặc nằm ở ranh giới, nhưng vẫn chưa đạt đến mức cần thiết để xử phạt. Trong những trường hợp này, đội ngũ kiểm duyệt có thể chọn không hành động chính thức trừ khi hành vi tiếp diễn hoặc trở nên nghiêm trọng hơn.
-
-Nếu điều này lại xảy ra, vui lòng gửi một báo cáo mới kèm bằng chứng bổ sung cho thấy một khuôn mẫu lặp lại hoặc một vi phạm nghiêm trọng hơn.`,
-  O_ = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? f_() : e === "pt" ? p_() : e === "ch" ? h_() : e === "de" ? m_() : e === "es" ? g_() : e === "fr" ? w_() : e === "it" ? y_() : e === "jp" ? b_() : e === "pl" ? v_() : e === "ru" ? E_() : e === "uk" ? k_() : T_()
-  },
-  I_ = () => "Not Enough for Punishment",
-  S_ = () => "Insuficiente para punição",
-  N_ = () => "不足以处罚",
-  z_ = () => "Nicht ausreichend für eine Strafe",
-  A_ = () => "Insuficiente para una sanción",
-  R_ = () => "Insuffisant pour une sanction",
-  D_ = () => "Insufficiente per una punizione",
-  x_ = () => "処分には不十分",
-  j_ = () => "Niewystarczające do nałożenia kary",
-  P_ = () => "Недостаточно для наказания",
-  q_ = () => "Недостатньо для покарання",
-  L_ = () => "Không đủ để xử phạt",
-  U_ = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? I_() : e === "pt" ? S_() : e === "ch" ? N_() : e === "de" ? z_() : e === "es" ? A_() : e === "fr" ? R_() : e === "it" ? D_() : e === "jp" ? x_() : e === "pl" ? j_() : e === "ru" ? P_() : e === "uk" ? q_() : L_()
-  },
-  M_ = () => `This report is outside the scope of what the moderation team can act on through the report system.
-
-This may include issues that happened outside the game, personal disputes, support requests, appeals, bug reports, or situations that are not covered by the current moderation rules.
-
-Please use the correct support channel if your issue is related to technical problems, account issues, appeals, or other non-moderation matters.`,
-  B_ = () => `Esta denúncia está fora do escopo daquilo que a equipe de moderação pode tratar pelo sistema de denúncias.
-
-Isso pode incluir problemas que aconteceram fora do jogo, disputas pessoais, pedidos de suporte, apelos, relatos de bugs ou situações que não são abrangidas pelas regras de moderação atuais.
-
-Use o canal de suporte correto se o seu problema estiver relacionado a problemas técnicos, questões de conta, apelos ou outros assuntos que não sejam de moderação.`,
-  C_ = () => `此举报超出了审核团队通过举报系统能够处理的范围。
-
-这可能包括发生在游戏之外的问题、个人纠纷、支持请求、申诉、漏洞报告，或当前审核规则未涵盖的情况。
-
-如果您的问题与技术故障、账户问题、申诉或其他非审核事项有关，请使用正确的支持渠道。`,
-  K_ = () => `Diese Meldung liegt außerhalb dessen, was das Moderationsteam über das Meldesystem bearbeiten kann.
-
-Dazu können Probleme gehören, die außerhalb des Spiels aufgetreten sind, persönliche Streitigkeiten, Support-Anfragen, Einsprüche, Fehlerberichte oder Situationen, die nicht von den aktuellen Moderationsregeln abgedeckt sind.
-
-Bitte nutze den richtigen Support-Kanal, wenn dein Anliegen technische Probleme, Kontoangelegenheiten, Einsprüche oder andere nicht zur Moderation gehörende Themen betrifft.`,
-  F_ = () => `Este reporte está fuera del alcance de lo que el equipo de moderación puede gestionar a través del sistema de reportes.
-
-Esto puede incluir problemas ocurridos fuera del juego, disputas personales, solicitudes de soporte, apelaciones, reportes de errores o situaciones que no están cubiertas por las reglas de moderación actuales.
-
-Utiliza el canal de soporte correcto si tu problema está relacionado con problemas técnicos, asuntos de cuenta, apelaciones u otros temas ajenos a la moderación.`,
-  $_ = () => `Ce signalement dépasse le champ d'action de l'équipe de modération via le système de signalement.
-
-Cela peut inclure des problèmes survenus en dehors du jeu, des différends personnels, des demandes d'assistance, des recours, des rapports de bugs ou des situations qui ne sont pas couvertes par les règles de modération actuelles.
-
-Veuillez utiliser le bon canal d'assistance si votre problème concerne des soucis techniques, des questions de compte, des recours ou d'autres sujets ne relevant pas de la modération.`,
-  G_ = () => `Questa segnalazione esula da ciò che il team di moderazione può gestire tramite il sistema di segnalazione.
-
-Può includere problemi avvenuti al di fuori del gioco, dispute personali, richieste di assistenza, ricorsi, segnalazioni di bug o situazioni non coperte dalle attuali regole di moderazione.
-
-Utilizza il canale di assistenza corretto se il tuo problema riguarda questioni tecniche, problemi di account, ricorsi o altre questioni non legate alla moderazione.`,
-  V_ = () => `この報告は、モデレーションチームが報告システムを通じて対応できる範囲を超えています。
-
-これには、ゲーム外で起きた問題、個人的なトラブル、サポート依頼、異議申し立て、バグ報告、または現在のモデレーションルールでは扱えない状況が含まれる場合があります。
-
-技術的な問題、アカウントの問題、異議申し立て、その他モデレーション以外の事項に関する場合は、適切なサポート窓口をご利用ください。`,
-  H_ = () => `To zgłoszenie wykracza poza zakres tego, czym zespół moderacji może się zająć za pośrednictwem systemu zgłoszeń.
-
-Może to obejmować problemy, które miały miejsce poza grą, spory osobiste, prośby o wsparcie, odwołania, zgłoszenia błędów lub sytuacje nieobjęte obecnymi zasadami moderacji.
-
-Skorzystaj z właściwego kanału wsparcia, jeśli twój problem dotyczy kwestii technicznych, spraw związanych z kontem, odwołań lub innych zagadnień niezwiązanych z moderacją.`,
-  W_ = () => `Эта жалоба выходит за рамки того, что команда модерации может рассматривать через систему жалоб.
-
-Сюда могут относиться проблемы, возникшие вне игры, личные споры, обращения в поддержку, апелляции, сообщения об ошибках или ситуации, не охваченные действующими правилами модерации.
-
-Пожалуйста, используйте подходящий канал поддержки, если ваш вопрос связан с техническими проблемами, вопросами учётной записи, апелляциями или другими темами, не относящимися к модерации.`,
-  Y_ = () => `Ця скарга виходить за межі того, що команда модерації може розглядати через систему скарг.
-
-Сюди можуть належати проблеми, що сталися поза грою, особисті суперечки, звернення до підтримки, апеляції, повідомлення про помилки або ситуації, не охоплені чинними правилами модерації.
-
-Будь ласка, скористайтеся відповідним каналом підтримки, якщо ваше питання стосується технічних проблем, питань облікового запису, апеляцій або інших тем, не пов'язаних із модерацією.`,
-  J_ = () => `Báo cáo này nằm ngoài phạm vi mà đội ngũ kiểm duyệt có thể xử lý qua hệ thống báo cáo.
-
-Điều này có thể bao gồm các vấn đề xảy ra bên ngoài trò chơi, tranh chấp cá nhân, yêu cầu hỗ trợ, kháng cáo, báo cáo lỗi hoặc các tình huống không thuộc phạm vi các quy tắc kiểm duyệt hiện hành.
-
-Vui lòng sử dụng kênh hỗ trợ phù hợp nếu vấn đề của bạn liên quan đến sự cố kỹ thuật, vấn đề tài khoản, kháng cáo hoặc các vấn đề khác không thuộc về kiểm duyệt.`,
-  Q_ = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? M_() : e === "pt" ? B_() : e === "ch" ? C_() : e === "de" ? K_() : e === "es" ? F_() : e === "fr" ? $_() : e === "it" ? G_() : e === "jp" ? V_() : e === "pl" ? H_() : e === "ru" ? W_() : e === "uk" ? Y_() : J_()
-  },
-  Z_ = () => "Out of Scope",
-  X_ = () => "Fora do escopo",
-  ef = () => "超出处理范围",
-  tf = () => "Außerhalb des Zuständigkeitsbereichs",
-  nf = () => "Fuera del alcance",
-  rf = () => "Hors du champ d'action",
-  of = () => "Fuori ambito",
-  af = () => "対応範囲外",
-  sf = () => "Poza zakresem",
-  uf = () => "Вне зоны ответственности",
-  cf = () => "Поза межами компетенції",
-  lf = () => "Ngoài phạm vi xử lý",
-  df = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Z_() : e === "pt" ? X_() : e === "ch" ? ef() : e === "de" ? tf() : e === "es" ? nf() : e === "fr" ? rf() : e === "it" ? of() : e === "jp" ? af() : e === "pl" ? sf() : e === "ru" ? uf() : e === "uk" ? cf() : lf()
-  },
-  _f = () => "Inappropriate content",
-  ff = () => "Conteúdo inapropriado",
-  pf = () => "不当内容",
-  hf = () => "Unangemessene Inhalte",
-  mf = () => "Contenido inapropiado",
-  gf = () => "Contenu inapproprié",
-  wf = () => "Contenuto inappropriato",
-  yf = () => "不適切なコンテンツ",
-  bf = () => "Nieodpowiednie treści",
-  vf = () => "Неприемлемый контент",
-  Ef = () => "Неприйнятний вміст",
-  kf = () => "Nội dung không phù hợp",
-  Tf = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? _f() : e === "pt" ? ff() : e === "ch" ? pf() : e === "de" ? hf() : e === "es" ? mf() : e === "fr" ? gf() : e === "it" ? wf() : e === "jp" ? yf() : e === "pl" ? bf() : e === "ru" ? vf() : e === "uk" ? Ef() : kf()
-  },
-  Of = () => "Explicit or illegal content, severe slurs",
-  If = () => "Conteúdo explícito ou ilegal, insultos graves",
-  Sf = () => "露骨或非法内容、严重的侮辱性言论",
-  Nf = () => "Expliziter oder illegaler Inhalt, schwere Beleidigungen",
-  zf = () => "Contenido explícito o ilegal, insultos graves",
-  Af = () => "Contenu explicite ou illégal, insultes graves",
-  Rf = () => "Contenuto esplicito o illegale, insulti gravi",
-  Df = () => "露骨または違法なコンテンツ、ひどい侮辱・中傷",
-  xf = () => "Treści jawnie seksualne lub nielegalne, poważne obelgi",
-  jf = () => "Откровенный или незаконный контент, грубые оскорбления",
-  Pf = () => "Відвертий або незаконний вміст, грубі образи",
-  qf = () => "Nội dung phản cảm hoặc bất hợp pháp, lời lẽ lăng mạ nghiêm trọng",
-  Lf = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Of() : e === "pt" ? If() : e === "ch" ? Sf() : e === "de" ? Nf() : e === "es" ? zf() : e === "fr" ? Af() : e === "it" ? Rf() : e === "jp" ? Df() : e === "pl" ? xf() : e === "ru" ? jf() : e === "uk" ? Pf() : qf()
-  },
-  Uf = () => "Invalid captcha. Please try again.",
-  Mf = () => "Captcha inválido. Por favor, tente novamente.",
-  Bf = () => "验证码无效，请重试。",
-  Cf = () => "Ungültiges Captcha. Bitte versuche es erneut.",
-  Kf = () => "Captcha inválido. Por favor, inténtelo de nuevo.",
-  Ff = () => "Captcha invalide. Veuillez réessayer.",
-  $f = () => "Captcha non valido. Riprova.",
-  Gf = () => "キャプチャが無効です。もう一度お試しください。",
-  Vf = () => "Nieprawidłowa captcha. Spróbuj ponownie.",
-  Hf = () => "Неверная капча. Пожалуйста, попробуйте снова.",
-  Wf = () => "Неправильна капча. Будь ласка, спробуйте ще раз.",
-  Yf = () => "Captcha không hợp lệ. Vui lòng thử lại.",
-  Jf = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Uf() : e === "pt" ? Mf() : e === "ch" ? Bf() : e === "de" ? Cf() : e === "es" ? Kf() : e === "fr" ? Ff() : e === "it" ? $f() : e === "jp" ? Gf() : e === "pl" ? Vf() : e === "ru" ? Hf() : e === "uk" ? Wf() : Yf()
-  },
-  Qf = () => "Invalid challenge response",
-  Zf = () => "Resposta de desafio inválida",
-  Xf = () => "质询响应无效",
-  ep = () => "Ungültige Challenge-Antwort",
-  tp = () => "Respuesta de desafío inválida",
-  np = () => "Réponse au défi invalide",
-  rp = () => "Risposta alla sfida non valida",
-  op = () => "無効なチャレンジ応答",
-  ip = () => "Nieprawidłowa odpowiedź na wyzwanie",
-  ap = () => "Неверный ответ на вызов",
-  sp = () => "Недійсна відповідь на виклик",
-  up = () => "Phản hồi thử thách không hợp lệ",
-  cp = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Qf() : e === "pt" ? Zf() : e === "ch" ? Xf() : e === "de" ? ep() : e === "es" ? tp() : e === "fr" ? np() : e === "it" ? rp() : e === "jp" ? op() : e === "pl" ? ip() : e === "ru" ? ap() : e === "uk" ? sp() : up()
-  },
-  lp = () => "The verification code is incorrect. Please check it and try again.",
-  dp = () => "Código inválido",
-  _p = () => "验证码不正确。请检查后重试。",
-  fp = () => "Der Bestätigungscode ist nicht korrekt. Bitte überprüfe ihn und versuche es erneut.",
-  pp = () => "El código de verificación es incorrecto. Por favor, revísalo e inténtalo de nuevo.",
-  hp = () => "Le code de vérification est incorrect. Veuillez le vérifier et réessayer.",
-  mp = () => "Il codice di verifica non è corretto. Controllalo e riprova.",
-  gp = () => "確認コードが正しくありません。コードを確認してもう一度お試しください。",
-  wp = () => "Kod weryfikacyjny jest nieprawidłowy. Sprawdź go i spróbuj ponownie.",
-  yp = () => "Код подтверждения неверный. Пожалуйста, проверьте его и попробуйте снова.",
-  bp = () => "Код підтвердження неправильний. Будь ласка, перевірте його та спробуйте ще раз.",
-  vp = () => "Mã xác minh không đúng. Vui lòng kiểm tra lại và thử lại.",
-  Ep = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? lp() : e === "pt" ? dp() : e === "ch" ? _p() : e === "de" ? fp() : e === "es" ? pp() : e === "fr" ? hp() : e === "it" ? mp() : e === "jp" ? gp() : e === "pl" ? wp() : e === "ru" ? yp() : e === "uk" ? bp() : vp()
-  },
-  kp = () => "Invalid discord.",
-  Tp = () => "Discord inválido.",
-  Op = () => "无效的 Discord。",
-  Ip = () => "Ungültiger Discord.",
-  Sp = () => "Discord inválido.",
-  Np = () => "Discord invalide.",
-  zp = () => "Discord non valido.",
-  Ap = () => "無効なDiscordアカウントです。",
-  Rp = () => "Nieprawidłowy Discord.",
-  Dp = () => "Неверный Discord.",
-  xp = () => "Некоректний Discord.",
-  jp = () => "Discord không hợp lệ.",
-  Pp = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? kp() : e === "pt" ? Tp() : e === "ch" ? Op() : e === "de" ? Ip() : e === "es" ? Sp() : e === "fr" ? Np() : e === "it" ? zp() : e === "jp" ? Ap() : e === "pl" ? Rp() : e === "ru" ? Dp() : e === "uk" ? xp() : jp()
-  },
-  qp = () => "The name contains disallowed characters or words. Please choose a different name.",
-  Lp = () => "O nome contém caracteres ou palavras não permitidas. Por favor, escolha outro nome.",
-  Up = () => "名称包含禁止的字符或词语，请选择其他名称。",
-  Mp = () => "Der Name enthält nicht erlaubte Zeichen oder Wörter. Bitte wähle einen anderen Namen.",
-  Bp = () => "El nombre contiene caracteres o palabras no permitidas. Elige otro nombre.",
-  Cp = () => "Le nom contient des caractères ou des mots non autorisés. Veuillez choisir un autre nom.",
-  Kp = () => "Il nome contiene caratteri o parole non consentiti. Scegli un altro nome.",
-  Fp = () => "この名前には使用できない文字または単語が含まれています。別の名前を選んでください。",
-  $p = () => "Nazwa zawiera niedozwolone znaki lub słowa. Wybierz inną nazwę.",
-  Gp = () => "Имя содержит запрещённые символы или слова. Пожалуйста, выберите другое имя.",
-  Vp = () => "Імʼя містить заборонені символи або слова. Оберіть інше імʼя.",
-  Hp = () => "Tên chứa ký tự hoặc từ không được phép. Hãy chọn tên khác.",
-  st = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? qp() : e === "pt" ? Lp() : e === "ch" ? Up() : e === "de" ? Mp() : e === "es" ? Bp() : e === "fr" ? Cp() : e === "it" ? Kp() : e === "jp" ? Fp() : e === "pl" ? $p() : e === "ru" ? Gp() : e === "uk" ? Vp() : Hp()
-  },
-  Wp = () => "Please enter a valid phone number with country code.",
-  Yp = () => "Insira um número de telefone válido com código do país.",
-  Jp = () => "请输入带国家代码的有效电话号码。",
-  Qp = () => "Bitte gib eine gültige Telefonnummer mit Landesvorwahl ein.",
-  Zp = () => "Introduce un número de teléfono válido con código de país.",
-  Xp = () => "Veuillez saisir un numéro de téléphone valide avec l'indicatif du pays.",
-  eh = () => "Inserisci un numero di telefono valido con il prefisso internazionale.",
-  th = () => "国番号付きの有効な電話番号を入力してください。",
-  nh = () => "Wprowadź poprawny numer telefonu wraz z kodem kraju.",
-  rh = () => "Введите действительный номер телефона с кодом страны.",
-  oh = () => "Будь ласка, введіть дійсний номер телефону з кодом країни.",
-  ih = () => "Vui lòng nhập số điện thoại hợp lệ kèm mã quốc gia.",
-  ah = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Wp() : e === "pt" ? Yp() : e === "ch" ? Jp() : e === "de" ? Qp() : e === "es" ? Zp() : e === "fr" ? Xp() : e === "it" ? eh() : e === "jp" ? th() : e === "pl" ? nh() : e === "ru" ? rh() : e === "uk" ? oh() : ih()
-  },
-  sh = () => "Phone number not supported. Please try another number.",
-  uh = () => "Número de telefone não suportado. Por favor, tente outro número.",
-  ch = () => "不支持此电话号码。请尝试其他号码。",
-  lh = () => "Telefonnummer nicht unterstützt. Bitte versuche eine andere Nummer.",
-  dh = () => "Número de teléfono no compatible. Por favor, prueba con otro número.",
-  _h = () => "Numéro de téléphone non pris en charge. Veuillez essayer un autre numéro.",
-  fh = () => "Numero di telefono non supportato. Prova con un altro numero.",
-  ph = () => "この電話番号はサポートされていません。別の番号をお試しください。",
-  hh = () => "Numer telefonu nie jest obsługiwany. Spróbuj innego numeru.",
-  mh = () => "Номер телефона не поддерживается. Пожалуйста, попробуйте другой номер.",
-  gh = () => "Номер телефону не підтримується. Будь ласка, спробуйте інший номер.",
-  wh = () => "Số điện thoại không được hỗ trợ. Vui lòng thử số khác.",
-  yh = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? sh() : e === "pt" ? uh() : e === "ch" ? ch() : e === "de" ? lh() : e === "es" ? dh() : e === "fr" ? _h() : e === "it" ? fh() : e === "jp" ? ph() : e === "pl" ? hh() : e === "ru" ? mh() : e === "uk" ? gh() : wh()
-  },
-  bh = () => "The new leader must be a member of the alliance",
-  vh = () => "O novo líder deve ser um membro da aliança",
-  Eh = () => "新盟主必须是联盟成员",
-  kh = () => "Der neue Anführer muss Mitglied der Allianz sein",
-  Th = () => "El nuevo líder debe ser miembro de la alianza",
-  Oh = () => "Le nouveau chef doit être membre de l’alliance",
-  Ih = () => "Il nuovo leader deve essere un membro dell'alleanza",
-  Sh = () => "新しいリーダーはアライアンスのメンバーである必要があります。",
-  Nh = () => "Nowy lider musi być członkiem sojuszu",
-  zh = () => "Новый лидер должен быть участником альянса",
-  Ah = () => "Новий лідер має бути учасником альянсу",
-  Rh = () => "Thủ lĩnh mới phải là thành viên của liên minh",
-  Dh = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? bh() : e === "pt" ? vh() : e === "ch" ? Eh() : e === "de" ? kh() : e === "es" ? Th() : e === "fr" ? Oh() : e === "it" ? Ih() : e === "jp" ? Sh() : e === "pl" ? Nh() : e === "ru" ? zh() : e === "uk" ? Ah() : Rh()
-  },
-  xh = () => "Leaderboard is temporarily disabled",
-  jh = () => "O ranking está temporariamente desativado",
-  Ph = () => "排行榜已暂时停用",
-  qh = () => "Die Bestenliste ist vorübergehend deaktiviert",
-  Lh = () => "La clasificación está deshabilitada temporalmente",
-  Uh = () => "Le classement est temporairement désactivé",
-  Mh = () => "La classifica è temporaneamente disattivata",
-  Bh = () => "ランキングは一時的に無効になっています。",
-  Ch = () => "Ranking jest tymczasowo wyłączony",
-  Kh = () => "Таблица лидеров временно отключена",
-  Fh = () => "Таблиця лідерів тимчасово вимкнена",
-  $h = () => "Bảng xếp hạng tạm thời bị vô hiệu hóa",
-  K = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? xh() : e === "pt" ? jh() : e === "ch" ? Ph() : e === "de" ? qh() : e === "es" ? Lh() : e === "fr" ? Uh() : e === "it" ? Mh() : e === "jp" ? Bh() : e === "pl" ? Ch() : e === "ru" ? Kh() : e === "uk" ? Fh() : $h()
-  },
-  Gh = () => "Location name is too big (max. 128 characters)",
-  Vh = () => "Nome da localização é grande demais (max. 128 caracteres)",
-  Hh = () => "位置名称过长（最大 128 个字符）",
-  Wh = () => "Ortsname ist zu lang (max. 128 Zeichen)",
-  Yh = () => "El nombre de la ubicación es demasiado largo (máx. 128 caracteres)",
-  Jh = () => "Le nom de l’emplacement est trop long (max. 128 caractères)",
-  Qh = () => "Il nome della località è troppo lungo (max. 128 caratteri)",
-  Zh = () => "場所の名前が長すぎます（最大128文字）。",
-  Xh = () => "Nazwa lokalizacji jest za długa (maks. 128 znaków)",
-  em = () => "Название локации слишком длинное (макс. 128 символов)",
-  tm = () => "Назва локації надто довга (макс. 128 символів)",
-  nm = () => "Tên vị trí quá dài (tối đa 128 ký tự)",
-  rm = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Gh() : e === "pt" ? Vh() : e === "ch" ? Hh() : e === "de" ? Wh() : e === "es" ? Yh() : e === "fr" ? Jh() : e === "it" ? Qh() : e === "jp" ? Zh() : e === "pl" ? Xh() : e === "ru" ? em() : e === "uk" ? tm() : nm()
-  },
-  om = () => "Multi-accounting",
-  im = () => "Múltiplas contas",
-  am = () => "多账号",
-  sm = () => "Multi-Accounting",
-  um = () => "Multi-cuentas",
-  cm = () => "Multi-comptes",
-  lm = () => "Multi-account",
-  dm = () => "複数アカウント使用",
-  _m = () => "Multi-konta",
-  fm = () => "Мультиаккаунт",
-  pm = () => "Мультиакаунтинг",
-  hm = () => "Nhiều tài khoản",
-  mm = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? om() : e === "pt" ? im() : e === "ch" ? am() : e === "de" ? sm() : e === "es" ? um() : e === "fr" ? cm() : e === "it" ? lm() : e === "jp" ? dm() : e === "pl" ? _m() : e === "ru" ? fm() : e === "uk" ? pm() : hm()
-  },
-  gm = () => "Paint with more than one account or using virtual machines, residential proxies, or multi-accounting browsers",
-  wm = () => "Pintar com mais de uma conta ou usando máquinas virtuais, proxies residenciais ou navegadores multi-conta",
-  ym = () => "使用多个账号绘制像素，或使用虚拟机、住宅代理或多账号浏览器",
-  bm = () => "Mehr als ein Konto zum Malen verwenden oder virtuelle Maschinen, Residential-Proxys oder Multi-Accounting-Browser nutzen",
-  vm = () => "Pintar con más de una cuenta o usar máquinas virtuales, proxies residenciales o navegadores multicuenta",
-  Em = () => "Utiliser plus d’un compte pour peindre, ou utiliser des machines virtuelles, des proxys résidentiels ou des navigateurs multi-comptes",
-  km = () => "Usare più di un account per dipingere, oppure usare macchine virtuali, proxy residenziali o browser multi-account",
-  Tm = () => "複数のアカウントを使ってピクセルを塗る、または仮想マシン、住宅プロキシ、マルチアカウントブラウザを使用する",
-  Om = () => "Malowanie pikseli na więcej niż jednym koncie lub przy użyciu maszyn wirtualnych, proxy residential lub przeglądarek multi-kontowych",
-  Im = () => "Рисование с более чем одного аккаунта или с использованием виртуальных машин, резидентных прокси или мультиаккаунт-браузеров",
-  Sm = () => "Малювання з більш ніж одного акаунта або з використанням віртуальних машин, резидентних проксі чи мультиакаунт-браузерів",
-  Nm = () => "Vẽ pixel bằng nhiều hơn một tài khoản hoặc bằng máy ảo, proxy dân cư hoặc trình duyệt đa tài khoản",
-  zm = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? gm() : e === "pt" ? wm() : e === "ch" ? ym() : e === "de" ? bm() : e === "es" ? vm() : e === "fr" ? Em() : e === "it" ? km() : e === "jp" ? Tm() : e === "pl" ? Om() : e === "ru" ? Im() : e === "uk" ? Sm() : Nm()
-  },
-  Am = n => `You can change your name again in ${n.days} days`,
-  Rm = n => `Você pode alterar seu nome novamente em ${n.days} dias.`,
-  Dm = n => `你可以在 ${n.days} 天后再次修改名称`,
-  xm = n => `Du kannst deinen Namen in ${n.days} Tagen erneut ändern`,
-  jm = n => `Podrás cambiar tu nombre de nuevo en ${n.days} días`,
-  Pm = n => `Vous pourrez changer votre nom à nouveau dans ${n.days} jours`,
-  qm = n => `Potrai cambiare di nuovo il tuo nome tra ${n.days} giorni.`,
-  Lm = n => `${n.days}日後に再び名前を変更できます。`,
-  Um = n => `Następną zmianę nazwy możesz wykonać za ${n.days} dni`,
-  Mm = n => `Вы сможете изменить имя снова через ${n.days} дн.`,
-  Bm = n => `Ви зможете змінити імʼя знову через ${n.days} днів`,
-  Cm = n => `Bạn có thể đổi tên lại sau ${n.days} ngày`,
-  Km = (n, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Am(n) : e === "pt" ? Rm(n) : e === "ch" ? Dm(n) : e === "de" ? xm(n) : e === "es" ? jm(n) : e === "fr" ? Pm(n) : e === "it" ? qm(n) : e === "jp" ? Lm(n) : e === "pl" ? Um(n) : e === "ru" ? Mm(n) : e === "uk" ? Bm(n) : Cm(n)
-  },
-  Fm = () => "No internet access or the servers are offline. Try again later.",
-  $m = () => "Sem acesso à internet ou os servidores estão fora do ar. Tente novamente mais tarde.",
-  Gm = () => "没有网络连接或服务器已离线。请稍后重试。",
-  Vm = () => "Keine Internetverbindung oder Server offline. Versuche es später erneut.",
-  Hm = () => "Sin acceso a internet o los servidores están fuera de línea. Inténtalo de nuevo más tarde.",
-  Wm = () => "Pas d’accès à Internet ou serveurs hors ligne. Réessayez plus tard.",
-  Ym = () => "Nessun accesso a internet o server offline. Riprova più tardi.",
-  Jm = () => "インターネットに接続されていないか、サーバーがオフラインです。しばらくしてから再度お試しください。",
-  Qm = () => "Brak dostępu do internetu lub serwery są offline. Spróbuj ponownie później.",
-  Zm = () => "Нет доступа к интернету или серверы недоступны. Попробуйте позже.",
-  Xm = () => "Немає доступу до інтернету або сервери недоступні. Спробуйте пізніше.",
-  eg = () => "Không có kết nối internet hoặc máy chủ đang ngoại tuyến. Hãy thử lại sau.",
-  tg = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Fm() : e === "pt" ? $m() : e === "ch" ? Gm() : e === "de" ? Vm() : e === "es" ? Hm() : e === "fr" ? Wm() : e === "it" ? Ym() : e === "jp" ? Jm() : e === "pl" ? Qm() : e === "ru" ? Zm() : e === "uk" ? Xm() : eg()
-  },
-  ng = () => "You are not allowed to verify a phone number. Try refreshing the page",
-  rg = () => "Você não está autorizado a verificar um número de telefone. Tente atualizar a página.",
-  og = () => "您无权验证电话号码。请尝试刷新页面。",
-  ig = () => "Sie dürfen keine Telefonnummer verifizieren. Versuchen Sie, die Seite zu aktualisieren.",
-  ag = () => "No tienes permiso para verificar un número de teléfono. Prueba a recargar la página.",
-  sg = () => "Vous n'êtes pas autorisé à vérifier un numéro de téléphone. Essayez d'actualiser la page.",
-  ug = () => "Non ti è consentito verificare un numero di telefono. Prova ad aggiornare la pagina.",
-  cg = () => "電話番号の認証は許可されていません。ページを更新してみてください。",
-  lg = () => "Nie możesz zweryfikować numeru telefonu. Spróbuj odświeżyć stronę.",
-  dg = () => "Вам не разрешено подтверждать номер телефона. Попробуйте обновить страницу.",
-  _g = () => "Вам не дозволено перевіряти номер телефону. Спробуйте оновити сторінку.",
-  fg = () => "Bạn không được phép xác minh số điện thoại. Vui lòng thử tải lại trang.",
-  pg = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? ng() : e === "pt" ? rg() : e === "ch" ? og() : e === "de" ? ig() : e === "es" ? ag() : e === "fr" ? sg() : e === "it" ? ug() : e === "jp" ? cg() : e === "pl" ? lg() : e === "ru" ? dg() : e === "uk" ? _g() : fg()
-  },
-  hg = () => "Operation not allowed. Maybe you have too many favorite locations.",
-  mg = () => "Operação não permitida. Talvez você tenha muitos locais favoritos.",
-  gg = () => "操作不被允许。你的收藏位置可能过多。",
-  wg = () => "Aktion nicht erlaubt. Vielleicht hast du zu viele Lieblingsorte.",
-  yg = () => "Operación no permitida. Puede que tengas demasiadas ubicaciones favoritas.",
-  bg = () => "Opération non autorisée. Vous avez peut-être trop d’emplacements favoris.",
-  vg = () => "Operazione non consentita. Forse hai troppi luoghi preferiti.",
-  Eg = () => "この操作は許可されていません。お気に入りの場所が多すぎる可能性があります。",
-  kg = () => "Operacja niedozwolona. Możliwe, że masz zbyt wiele ulubionych lokalizacji.",
-  Tg = () => "Операция запрещена. Возможно, у вас слишком много избранных локаций.",
-  Og = () => "Операцію заборонено. Можливо, у вас забагато вибраних локацій.",
-  Ig = () => "Thao tác không được phép. Có thể bạn đã có quá nhiều vị trí yêu thích.",
-  Sg = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? hg() : e === "pt" ? mg() : e === "ch" ? gg() : e === "de" ? wg() : e === "es" ? yg() : e === "fr" ? bg() : e === "it" ? vg() : e === "jp" ? Eg() : e === "pl" ? kg() : e === "ru" ? Tg() : e === "uk" ? Og() : Ig()
-  },
-  Ng = n => `Not enough charges: you have ${n.charges} but this overlay needs ${n.pixels}.`,
-  zg = n => `Cargas insuficientes: você tem ${n.charges}, mas esta sobreposição precisa de ${n.pixels}.`,
-  Ag = n => `充能不足：你有 ${n.charges}，但此叠加层需要 ${n.pixels}。`,
-  Rg = n => `Nicht genügend Ladungen: Du hast ${n.charges}, aber dieses Overlay benötigt ${n.pixels}.`,
-  Dg = n => `Cargas insuficientes: tienes ${n.charges} pero esta superposición necesita ${n.pixels}.`,
-  xg = n => `Charges insuffisantes : vous avez ${n.charges} mais ce calque nécessite ${n.pixels}.`,
-  jg = n => `Cariche insufficienti: ne hai ${n.charges} ma questo overlay ne richiede ${n.pixels}.`,
-  Pg = n => `チャージが足りません：現在 ${n.charges} ですが、このオーバーレイには ${n.pixels} 必要です。`,
-  qg = n => `Za mało ładunków: masz ${n.charges}, ale ta nakładka wymaga ${n.pixels}.`,
-  Lg = n => `Недостаточно зарядов: у вас ${n.charges}, но для этого слоя нужно ${n.pixels}.`,
-  Ug = n => `Недостатньо зарядів: у вас ${n.charges}, але для цього шару потрібно ${n.pixels}.`,
-  Mg = n => `Không đủ lượt sơn: bạn có ${n.charges} nhưng lớp phủ này cần ${n.pixels}.`,
-  Bg = (n, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Ng(n) : e === "pt" ? zg(n) : e === "ch" ? Ag(n) : e === "de" ? Rg(n) : e === "es" ? Dg(n) : e === "fr" ? xg(n) : e === "it" ? jg(n) : e === "jp" ? Pg(n) : e === "pl" ? qg(n) : e === "ru" ? Lg(n) : e === "uk" ? Ug(n) : Mg(n)
-  },
-  Cg = () => "You are trying to paint with a color you do not own",
-  Kg = () => "Você está tentando pintar com uma cor que não possui",
-  Fg = () => "你正在尝试使用尚未拥有的颜色进行绘制",
-  $g = () => "Du versuchst mit einer Farbe zu malen, die du nicht besitzt",
-  Gg = () => "Estás intentando pintar con un color que no posees",
-  Vg = () => "Vous essayez de peindre avec une couleur que vous ne possédez pas",
-  Hg = () => "Stai cercando di dipingere con un colore che non possiedi",
-  Wg = () => "所持していない色で塗ろうとしています。",
-  Yg = () => "Próbujesz malować kolorem, którego nie posiadasz",
-  Jg = () => "Вы пытаетесь рисовать цветом, которого у вас нет",
-  Qg = () => "Ви намагаєтеся малювати кольором, якого не маєте",
-  Zg = () => "Bạn đang cố tô bằng một màu bạn không sở hữu",
-  ut = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Cg() : e === "pt" ? Kg() : e === "ch" ? Fg() : e === "de" ? $g() : e === "es" ? Gg() : e === "fr" ? Vg() : e === "it" ? Hg() : e === "jp" ? Wg() : e === "pl" ? Yg() : e === "ru" ? Jg() : e === "uk" ? Qg() : Zg()
-  },
-  Xg = () => "Phone already used",
-  ew = () => "Telefone já usado",
-  tw = () => "电话号码已被使用",
-  nw = () => "Telefonnummer bereits verwendet",
-  rw = () => "Teléfono ya utilizado",
-  ow = () => "Téléphone déjà utilisé",
-  iw = () => "Telefono già utilizzato",
-  aw = () => "この電話番号は既に使用されています。",
-  sw = () => "Numer telefonu jest już używany",
-  uw = () => "Телефон уже используется",
-  cw = () => "Номер телефону вже використовується",
-  lw = () => "Số điện thoại đã được sử dụng",
-  dw = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Xg() : e === "pt" ? ew() : e === "ch" ? tw() : e === "de" ? nw() : e === "es" ? rw() : e === "fr" ? ow() : e === "it" ? iw() : e === "jp" ? aw() : e === "pl" ? sw() : e === "ru" ? uw() : e === "uk" ? cw() : lw()
-  },
-  _w = () => "This phone number's region is not supported",
-  fw = () => "A região deste número de telefone não é suportada",
-  pw = () => "此电话号码的地区不受支持",
-  hw = () => "Die Region dieser Telefonnummer wird nicht unterstützt",
-  mw = () => "La región de este número de teléfono no es compatible",
-  gw = () => "La région de ce numéro de téléphone n'est pas prise en charge",
-  ww = () => "La regione di questo numero di telefono non è supportata",
-  yw = () => "この電話番号の地域はサポートされていません",
-  bw = () => "Region tego numeru telefonu nie jest obsługiwany",
-  vw = () => "Регион этого номера телефона не поддерживается",
-  Ew = () => "Регіон цього номера телефону не підтримується",
-  kw = () => "Vùng của số điện thoại này không được hỗ trợ",
-  Tw = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? _w() : e === "pt" ? fw() : e === "ch" ? pw() : e === "de" ? hw() : e === "es" ? mw() : e === "fr" ? gw() : e === "it" ? ww() : e === "jp" ? yw() : e === "pl" ? bw() : e === "ru" ? vw() : e === "uk" ? Ew() : kw()
-  },
-  Ow = () => "Refresh your page to get the latest update",
-  Iw = () => "Recarregue sua página para obter as últimas atualizações",
-  Sw = () => "刷新页面以获取最新更新",
-  Nw = () => "Aktualisiere die Seite, um die neuesten Updates zu erhalten",
-  zw = () => "Actualiza la página para obtener la última versión",
-  Aw = () => "Actualisez la page pour obtenir les dernières mises à jour",
-  Rw = () => "Ricarica la pagina per ottenere gli ultimi aggiornamenti",
-  Dw = () => "最新の状態にするにはページを再読み込みしてください。",
-  xw = () => "Odśwież stronę, aby zobaczyć najnowszą aktualizację",
-  jw = () => "Обновите страницу, чтобы получить последние изменения",
-  Pw = () => "Оновіть сторінку, щоб отримати останні оновлення",
-  qw = () => "Hãy làm mới trang để nhận được cập nhật mới nhất",
-  ct = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Ow() : e === "pt" ? Iw() : e === "ch" ? Sw() : e === "de" ? Nw() : e === "es" ? zw() : e === "fr" ? Aw() : e === "it" ? Rw() : e === "jp" ? Dw() : e === "pl" ? xw() : e === "ru" ? jw() : e === "uk" ? Pw() : qw()
-  },
-  Lw = () => "The request timed out. Please try again.",
-  Uw = () => "A solicitação expirou. Por favor, tente novamente.",
-  Mw = () => "请求超时。请重试。",
-  Bw = () => "Die Anfrage hat ein Zeitlimit überschritten. Bitte versuchen Sie es erneut.",
-  Cw = () => "La solicitud agotó el tiempo de espera. Por favor, inténtelo de nuevo.",
-  Kw = () => "La requête a expiré. Veuillez réessayer.",
-  Fw = () => "La richiesta è scaduta. Riprova.",
-  $w = () => "リクエストがタイムアウトしました。もう一度お試しください。",
-  Gw = () => "Żądanie przekroczyło limit czasu. Proszę spróbować ponownie.",
-  Vw = () => "Время ожидания запроса истекло. Пожалуйста, попробуйте снова.",
-  Hw = () => "Час очікування запиту вичерпано. Будь ласка, спробуйте ще раз.",
-  Ww = () => "Yêu cầu đã hết thời gian. Vui lòng thử lại.",
-  Yw = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Lw() : e === "pt" ? Uw() : e === "ch" ? Mw() : e === "de" ? Bw() : e === "es" ? Cw() : e === "fr" ? Kw() : e === "it" ? Fw() : e === "jp" ? $w() : e === "pl" ? Gw() : e === "ru" ? Vw() : e === "uk" ? Hw() : Ww()
-  },
-  Jw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  Qw = () => "A área selecionada tem histórico demais para exportar um timelapse. Tente uma área menor.",
-  Zw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  Xw = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  ey = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  ty = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  ny = () => "L'area selezionata ha troppa cronologia per esportare un timelapse. Prova con un'area più piccola.",
-  ry = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  oy = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  iy = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  ay = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  sy = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
-  uy = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Jw() : e === "pt" ? Qw() : e === "ch" ? Zw() : e === "de" ? Xw() : e === "es" ? ey() : e === "fr" ? ty() : e === "it" ? ny() : e === "jp" ? ry() : e === "pl" ? oy() : e === "ru" ? iy() : e === "uk" ? ay() : sy()
-  },
-  cy = () => "The service is currently unavailable. Please try again later.",
-  ly = () => "O serviço está indisponível no momento. Por favor, tente novamente mais tarde.",
-  dy = () => "服务当前不可用。请稍后再试。",
-  _y = () => "Der Dienst ist derzeit nicht verfügbar. Bitte versuchen Sie es später erneut.",
-  fy = () => "El servicio no está disponible actualmente. Por favor, inténtelo de nuevo más tarde.",
-  py = () => "Le service est actuellement indisponible. Veuillez réessayer plus tard.",
-  hy = () => "Il servizio non è attualmente disponibile. Riprova più tardi.",
-  my = () => "現在、サービスはご利用いただけません。後でもう一度お試しください。",
-  gy = () => "Usługa jest obecnie niedostępna. Proszę spróbować ponownie później.",
-  wy = () => "Сервис в настоящее время недоступен. Пожалуйста, попробуйте позже.",
-  yy = () => "Сервіс наразі недоступний. Будь ласка, спробуйте пізніше.",
-  by = () => "Dịch vụ hiện không khả dụng. Vui lòng thử lại sau.",
-  vy = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? cy() : e === "pt" ? ly() : e === "ch" ? dy() : e === "de" ? _y() : e === "es" ? fy() : e === "fr" ? py() : e === "it" ? hy() : e === "jp" ? my() : e === "pl" ? gy() : e === "ru" ? wy() : e === "uk" ? yy() : by()
-  },
-  Ey = () => "Too many attempts. Please try again later",
-  ky = () => "Muitas tentativas. Por favor, tente novamente mais tarde.",
-  Ty = () => "尝试次数过多，请稍后再试",
-  Oy = () => "Zu viele Versuche. Bitte versuchen Sie es später erneut",
-  Iy = () => "Demasiados intentos. Por favor, inténtalo de nuevo más tarde",
-  Sy = () => "Trop de tentatives. Veuillez réessayer plus tard",
-  Ny = () => "Troppi tentativi. Riprova più tardi.",
-  zy = () => "試行回数が多すぎます。後で再度お試しください。",
-  Ay = () => "Zbyt wiele prób. Proszę spróbować ponownie później",
-  Ry = () => "Слишком много попыток. Пожалуйста, попробуйте позже",
-  Dy = () => "Забагато спроб. Будь ласка, спробуйте пізніше",
-  xy = () => "Quá nhiều lần thử. Vui lòng thử lại sau.",
-  lt = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Ey() : e === "pt" ? ky() : e === "ch" ? Ty() : e === "de" ? Oy() : e === "es" ? Iy() : e === "fr" ? Sy() : e === "it" ? Ny() : e === "jp" ? zy() : e === "pl" ? Ay() : e === "ru" ? Ry() : e === "uk" ? Dy() : xy()
-  },
-  jy = () => "Access through Tor or anonymous networks is not allowed. Please connect from a regular network to continue.",
-  Py = () => "O acesso através do Tor ou redes anônimas não é permitido. Por favor, conecte-se a partir de uma rede comum para continuar.",
-  qy = () => "不允许通过 Tor 或匿名网络访问。请使用常规网络连接以继续。",
-  Ly = () => "Der Zugriff über Tor oder anonyme Netzwerke ist nicht erlaubt. Bitte verbinden Sie sich über ein normales Netzwerk, um fortzufahren.",
-  Uy = () => "No se permite el acceso a través de Tor o redes anónimas. Por favor, conéctate desde una red normal para continuar.",
-  My = () => "L'accès via Tor ou des réseaux anonymes n'est pas autorisé. Veuillez vous connecter depuis un réseau normal pour continuer.",
-  By = () => "L'accesso tramite Tor o reti anonime non è consentito. Connettiti da una rete normale per continuare.",
-  Cy = () => "Torまたは匿名ネットワーク経由でのアクセスは許可されていません。続行するには通常のネットワークから接続してください。",
-  Ky = () => "Dostęp przez Tor lub sieci anonimowe jest niedozwolony. Aby kontynuować, połącz się ze zwykłej sieci.",
-  Fy = () => "Доступ через Tor или анонимные сети не разрешён. Пожалуйста, подключитесь из обычной сети, чтобы продолжить.",
-  $y = () => "Доступ через Tor або анонімні мережі заборонено. Будь ласка, підключіться зі звичайної мережі, щоб продовжити.",
-  Gy = () => "Không cho phép truy cập qua Tor hoặc các mạng ẩn danh. Vui lòng kết nối từ mạng thông thường để tiếp tục.",
-  Vy = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? jy() : e === "pt" ? Py() : e === "ch" ? qy() : e === "de" ? Ly() : e === "es" ? Uy() : e === "fr" ? My() : e === "it" ? By() : e === "jp" ? Cy() : e === "pl" ? Ky() : e === "ru" ? Fy() : e === "uk" ? $y() : Gy()
-  },
-  Hy = () => "The typed username does not match your current username.",
-  Wy = () => "O nome de usuário digitado não corresponde ao seu nome de usuário atual.",
-  Yy = () => "输入的用户名与当前用户名不匹配。",
-  Jy = () => "Der eingegebene Benutzername stimmt nicht mit deinem aktuellen Benutzernamen überein.",
-  Qy = () => "El nombre de usuario ingresado no coincide con tu nombre de usuario actual.",
-  Zy = () => "Le nom d’utilisateur saisi ne correspond pas à votre nom d’utilisateur actuel.",
-  Xy = () => "Il nome utente inserito non corrisponde al tuo nome utente attuale.",
-  eb = () => "入力されたユーザー名が、現在のユーザー名と一致しません。",
-  tb = () => "Wpisana nazwa użytkownika nie zgadza się z obecną nazwą.",
-  nb = () => "Введённое имя пользователя не совпадает с текущим.",
-  rb = () => "Введене імʼя користувача не збігається з поточним.",
-  ob = () => "Tên người dùng nhập vào không trùng với tên hiện tại.",
-  ib = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Hy() : e === "pt" ? Wy() : e === "ch" ? Yy() : e === "de" ? Jy() : e === "es" ? Qy() : e === "fr" ? Zy() : e === "it" ? Xy() : e === "jp" ? eb() : e === "pl" ? tb() : e === "ru" ? nb() : e === "uk" ? rb() : ob()
-  },
-  ab = () => "Unexpected server error. Try again later.",
-  sb = () => "Erro inesperado do servidor. Tente novamente mais tarde.",
-  ub = () => "服务器出现意外错误。请稍后再试。",
-  cb = () => "Unerwarteter Serverfehler. Versuche es später erneut.",
-  lb = () => "Error inesperado del servidor. Inténtalo de nuevo más tarde.",
-  db = () => "Erreur serveur inattendue. Réessayez plus tard.",
-  _b = () => "Errore imprevisto del server. Riprova più tardi.",
-  fb = () => "予期しないサーバーエラーが発生しました。時間をおいて再度お試しください。",
-  pb = () => "Nieoczekiwany błąd serwera. Spróbuj ponownie później.",
-  hb = () => "Непредвиденная ошибка сервера. Попробуйте позже.",
-  mb = () => "Неочікувана помилка сервера. Спробуйте пізніше.",
-  gb = () => "Lỗi máy chủ không mong muốn. Hãy thử lại sau.",
-  s = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? ab() : e === "pt" ? sb() : e === "ch" ? ub() : e === "de" ? cb() : e === "es" ? lb() : e === "fr" ? db() : e === "it" ? _b() : e === "jp" ? fb() : e === "pl" ? pb() : e === "ru" ? hb() : e === "uk" ? mb() : gb()
-  },
-  wb = () => "The phone number is unsubscribed from SMS notifications. Check the link for more info: https://www.twilio.com/docs/api/errors/21610",
-  yb = () => "O número de telefone foi desinscrito das notificações por SMS. Verifique o link para mais informações: https://www.twilio.com/docs/api/errors/21610",
-  bb = () => "电话号码已退订短信通知。请查看链接获取更多信息：https://www.twilio.com/docs/api/errors/21610",
-  vb = () => "Die Telefonnummer wurde von SMS-Benachrichtigungen abgemeldet. Weitere Informationen finden Sie unter: https://www.twilio.com/docs/api/errors/21610",
-  Eb = () => "El número de teléfono ha sido dado de baja de las notificaciones por SMS. Consulta el enlace para más información: https://www.twilio.com/docs/api/errors/21610",
-  kb = () => "Le numéro de téléphone est désabonné des notifications par SMS. Consultez le lien pour plus d'informations : https://www.twilio.com/docs/api/errors/21610",
-  Tb = () => "Il numero di telefono è stato disiscritto dalle notifiche SMS. Per maggiori informazioni, consulta il link: https://www.twilio.com/docs/api/errors/21610",
-  Ob = () => "この電話番号はSMS通知から登録解除されました。詳細については、以下のリンクをご確認ください: https://www.twilio.com/docs/api/errors/21610",
-  Ib = () => "Numer telefonu został wypisany z powiadomień SMS. Sprawdź link, aby uzyskać więcej informacji: https://www.twilio.com/docs/api/errors/21610",
-  Sb = () => "Номер телефона отписан от SMS-уведомлений. Дополнительную информацию смотрите по ссылке: https://www.twilio.com/docs/api/errors/21610",
-  Nb = () => "Номер телефону відключено від SMS-сповіщень. Перегляньте посилання для отримання додаткової інформації: https://www.twilio.com/docs/api/errors/21610",
-  zb = () => "Số điện thoại này đã hủy đăng ký nhận thông báo SMS. Kiểm tra liên kết để biết thêm thông tin: https://www.twilio.com/docs/api/errors/21610",
-  Ab = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? wb() : e === "pt" ? yb() : e === "ch" ? bb() : e === "de" ? vb() : e === "es" ? Eb() : e === "fr" ? kb() : e === "it" ? Tb() : e === "jp" ? Ob() : e === "pl" ? Ib() : e === "ru" ? Sb() : e === "uk" ? Nb() : zb()
-  },
-  Rb = () => "VPN or proxy detected. Please disable your VPN and try again.",
-  Db = () => "VPN ou proxy detectado. Por favor, desative sua VPN e tente novamente.",
-  xb = () => "检测到VPN或代理。请关闭VPN后重试。",
-  jb = () => "VPN oder Proxy erkannt. Bitte deaktiviere dein VPN und versuche es erneut.",
-  Pb = () => "VPN o proxy detectado. Por favor, desactiva tu VPN e inténtalo de nuevo.",
-  qb = () => "VPN ou proxy détecté. Veuillez désactiver votre VPN et réessayer.",
-  Lb = () => "VPN o proxy rilevato. Disattiva la tua VPN e riprova.",
-  Ub = () => "VPNまたはプロキシが検出されました。VPNを無効にしてもう一度お試しください。",
-  Mb = () => "Wykryto VPN lub proxy. Wyłącz VPN i spróbuj ponownie.",
-  Bb = () => "Обнаружен VPN или прокси. Пожалуйста, отключите VPN и попробуйте снова.",
-  Cb = () => "Виявлено VPN або проксі. Будь ласка, вимкніть VPN і спробуйте знову.",
-  Kb = () => "Phát hiện VPN hoặc proxy. Vui lòng tắt VPN và thử lại.",
-  Fb = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Rb() : e === "pt" ? Db() : e === "ch" ? xb() : e === "de" ? jb() : e === "es" ? Pb() : e === "fr" ? qb() : e === "it" ? Lb() : e === "jp" ? Ub() : e === "pl" ? Mb() : e === "ru" ? Bb() : e === "uk" ? Cb() : Kb()
-  },
-  $b = () => "Failed to load WebAssembly module. Try to use another browser.",
-  Gb = () => "Erro ao carregar módulo WebAssembly. Tente usar outro navegador.",
-  Vb = () => "WebAssembly 模块加载失败。请尝试使用其他浏览器。",
-  Hb = () => "Fehler beim Laden des WebAssembly-Moduls. Versuche, einen anderen Browser zu verwenden.",
-  Wb = () => "Error al cargar el módulo WebAssembly. Intenta usar otro navegador.",
-  Yb = () => "Erreur lors du chargement du module WebAssembly. Essayez d’utiliser un autre navigateur.",
-  Jb = () => "Errore nel caricamento del modulo WebAssembly. Prova a usare un altro browser.",
-  Qb = () => "WebAssembly モジュールの読み込みに失敗しました。別のブラウザをお試しください。",
-  Zb = () => "Nie udało się załadować modułu WebAssembly. Spróbuj użyć innej przeglądarki.",
-  Xb = () => "Ошибка при загрузке модуля WebAssembly. Попробуйте использовать другой браузер.",
-  ev = () => "Не вдалося завантажити модуль WebAssembly. Спробуйте інший браузер.",
-  tv = () => "Lỗi tải mô-đun WebAssembly. Hãy thử dùng trình duyệt khác.",
-  nv = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? $b() : e === "pt" ? Gb() : e === "ch" ? Vb() : e === "de" ? Hb() : e === "es" ? Wb() : e === "fr" ? Yb() : e === "it" ? Jb() : e === "jp" ? Qb() : e === "pl" ? Zb() : e === "ru" ? Xb() : e === "uk" ? ev() : tv()
-  },
-  rv = () => "You already have this item. Please refresh the page.",
-  ov = () => "Você já possui este item. Atualize a página.",
-  iv = () => "你已经拥有此物品。请刷新页面。",
-  av = () => "Du besitzt dieses Item bereits. Bitte aktualisiere die Seite.",
-  sv = () => "Ya tienes este ítem. Actualiza la página.",
-  uv = () => "Vous possédez déjà cet objet. Actualisez la page.",
-  cv = () => "Possiedi già questo oggetto. Aggiorna la pagina.",
-  lv = () => "このアイテムはすでに所持しています。ページを更新してください。",
-  dv = () => "Masz już ten przedmiot. Odśwież stronę.",
-  _v = () => "У вас уже есть этот предмет. Обновите страницу.",
-  fv = () => "У вас уже є цей предмет. Оновіть сторінку.",
-  pv = () => "Bạn đã sở hữu vật phẩm này. Hãy tải lại trang.",
-  dt = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? rv() : e === "pt" ? ov() : e === "ch" ? iv() : e === "de" ? av() : e === "es" ? sv() : e === "fr" ? uv() : e === "it" ? cv() : e === "jp" ? lv() : e === "pl" ? dv() : e === "ru" ? _v() : e === "uk" ? fv() : pv()
-  },
-  hv = () => "You are already in an alliance",
-  mv = () => "Você já está em uma aliança",
-  gv = () => "你已经在一个联盟中",
-  wv = () => "Du bist bereits in einer Allianz",
-  yv = () => "Ya estás en una alianza",
-  bv = () => "Vous êtes déjà dans une alliance",
-  vv = () => "Sei già in un'alleanza",
-  Ev = () => "すでにアライアンスに所属しています。",
-  kv = () => "Jesteś już w sojuszu",
-  Tv = () => "Вы уже состоите в альянсе",
-  Ov = () => "Ви вже перебуваєте в альянсі",
-  Iv = () => "Bạn đã ở trong một liên minh",
-  Sv = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? hv() : e === "pt" ? mv() : e === "ch" ? gv() : e === "de" ? wv() : e === "es" ? yv() : e === "fr" ? bv() : e === "it" ? vv() : e === "jp" ? Ev() : e === "pl" ? kv() : e === "ru" ? Tv() : e === "uk" ? Ov() : Iv()
-  },
-  Nv = () => "You are not allowed to do this",
-  zv = () => "Você não tem permissão para fazer isso",
-  Av = () => "你无权执行此操作",
-  Rv = () => "Du bist dazu nicht berechtigt",
-  Dv = () => "No tienes permiso para hacer esto",
-  xv = () => "Vous n’êtes pas autorisé à faire cela",
-  jv = () => "Non hai il permesso di farlo",
-  Pv = () => "この操作を行う権限がありません。",
-  qv = () => "Nie masz uprawnień, aby to zrobić",
-  Lv = () => "У вас нет прав для этого действия",
-  Uv = () => "Ви не маєте права це робити",
-  Mv = () => "Bạn không có quyền làm việc này",
-  F = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Nv() : e === "pt" ? zv() : e === "ch" ? Av() : e === "de" ? Rv() : e === "es" ? Dv() : e === "fr" ? xv() : e === "it" ? jv() : e === "jp" ? Pv() : e === "pl" ? qv() : e === "ru" ? Lv() : e === "uk" ? Uv() : Mv()
-  },
-  Bv = () => "You do not have enough Droplets to buy this item.",
-  Cv = () => "Você não tem Droplets suficientes para comprar este item.",
-  Kv = () => "你的 Droplets 不足，无法购买此物品。",
-  Fv = () => "Du hast nicht genug Droplets, um dieses Item zu kaufen.",
-  $v = () => "No tienes suficientes Droplets para comprar este ítem.",
-  Gv = () => "Vous n’avez pas assez de Droplets pour acheter cet objet.",
-  Vv = () => "Non hai abbastanza Droplets per acquistare questo oggetto.",
-  Hv = () => "このアイテムを購入するのに十分なDropletsがありません。",
-  Wv = () => "Nie masz wystarczającej liczby Droplets, aby kupić ten przedmiot.",
-  Yv = () => "У вас недостаточно Droplets для покупки этого предмета.",
-  Jv = () => "У вас недостатньо Droplets, щоб купити цей предмет.",
-  Qv = () => "Bạn không có đủ Droplets để mua vật phẩm này.",
-  _t = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Bv() : e === "pt" ? Cv() : e === "ch" ? Kv() : e === "de" ? Fv() : e === "es" ? $v() : e === "fr" ? Gv() : e === "it" ? Vv() : e === "jp" ? Hv() : e === "pl" ? Wv() : e === "ru" ? Yv() : e === "uk" ? Jv() : Qv()
-  },
-  Zv = () => "You need to be logged in to paint",
-  Xv = () => "Você precisa estar conectado para pintar",
-  eE = () => "你需要登录才能进行绘制",
-  tE = () => "Du musst eingeloggt sein, um zu malen",
-  nE = () => "Debes iniciar sesión para pintar",
-  rE = () => "Vous devez être connecté pour peindre",
-  oE = () => "Devi avere effettuato l'accesso per dipingere",
-  iE = () => "ペイントするにはログインが必要です。",
-  aE = () => "Musisz być zalogowany, aby malować",
-  sE = () => "Чтобы рисовать, нужно войти в аккаунт",
-  uE = () => "Щоб малювати, необхідно увійти в акаунт",
-  cE = () => "Bạn cần đăng nhập để tô",
-  ft = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? Zv() : e === "pt" ? Xv() : e === "ch" ? eE() : e === "de" ? tE() : e === "es" ? nE() : e === "fr" ? rE() : e === "it" ? oE() : e === "jp" ? iE() : e === "pl" ? aE() : e === "ru" ? sE() : e === "uk" ? uE() : cE()
-  },
-  lE = () => "You or someone in your network is making a lot of requests to the server. Try again later.",
-  dE = () => "Você ou alguém na sua rede está fazendo muitas solicitações ao servidor. Tente novamente mais tarde.",
-  _E = () => "你或与你同一网络中的某人向服务器发出了大量请求。请稍后再试。",
-  fE = () => "Du oder jemand in deinem Netzwerk sendet sehr viele Anfragen an den Server. Versuche es später erneut.",
-  pE = () => "Tú o alguien en tu red está realizando demasiadas solicitudes al servidor. Inténtalo de nuevo más tarde.",
-  hE = () => "Vous ou quelqu’un sur votre réseau envoie beaucoup de requêtes au serveur. Réessayez plus tard.",
-  mE = () => "Tu o qualcuno nella tua rete state facendo troppe richieste al server. Riprova più tardi.",
-  gE = () => "あなた、または同じネットワーク上の誰かがサーバーへ大量のリクエストを送信しています。しばらくしてから再度お試しください。",
-  wE = () => "Ty lub ktoś w Twojej sieci wysyła zbyt wiele żądań do serwera. Spróbuj ponownie później.",
-  yE = () => "Вы или кто-то в вашей сети делает слишком много запросов к серверу. Попробуйте позже.",
-  bE = () => "Ви або хтось у вашій мережі надсилає надто багато запитів до сервера. Спробуйте пізніше.",
-  vE = () => "Bạn hoặc ai đó trong mạng của bạn đang gửi quá nhiều yêu cầu đến máy chủ. Hãy thử lại sau.",
-  EE = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? lE() : e === "pt" ? dE() : e === "ch" ? _E() : e === "de" ? fE() : e === "es" ? pE() : e === "fr" ? hE() : e === "it" ? mE() : e === "jp" ? gE() : e === "pl" ? wE() : e === "ru" ? yE() : e === "uk" ? bE() : vE()
-  },
-  kE = n => `Your account has been suspended out until ${n.until}`,
-  TE = n => `A sua conta está suspensa até ${n.until}`,
-  OE = n => `你的账号已被暂停至 ${n.until}`,
-  IE = n => `Dein Konto ist gesperrt bis ${n.until}`,
-  SE = n => `Tu cuenta ha sido suspendida hasta ${n.until}`,
-  NE = n => `Votre compte est suspendu jusqu’au ${n.until}`,
-  zE = n => `Il tuo account è sospeso fino al ${n.until}`,
-  AE = n => `あなたのアカウントは${n.until}まで一時停止されています。`,
-  RE = n => `Twoje konto zostało zawieszone do ${n.until}`,
-  DE = n => `Ваш аккаунт заблокирован до ${n.until}`,
-  xE = n => `Ваш акаунт призупинено до ${n.until}`,
-  jE = n => `Tài khoản của bạn đã bị đình chỉ đến ${n.until}`,
-  pt = (n, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? kE(n) : e === "pt" ? TE(n) : e === "ch" ? OE(n) : e === "de" ? IE(n) : e === "es" ? SE(n) : e === "fr" ? NE(n) : e === "it" ? zE(n) : e === "jp" ? AE(n) : e === "pl" ? RE(n) : e === "ru" ? DE(n) : e === "uk" ? xE(n) : jE(n)
-  },
-  PE = () => "A correction is already pending for this ticket.",
-  qE = () => "Já existe uma correção pendente para este ticket.",
-  LE = () => "此工单已存在待审核的更正请求。",
-  UE = () => "Für dieses Ticket ist bereits eine Korrektur in Arbeit.",
-  ME = () => "Ya hay una corrección pendiente para este ticket.",
-  BE = () => "Une correction est déjà en attente pour ce ticket.",
-  CE = () => "Una correzione è già in sospeso per questo ticket.",
-  KE = () => "このチケットには未処理の修正があります。",
-  FE = () => "Dla tego zgłoszenia istnieje już oczekująca prośba o poprawkę.",
-  $E = () => "Для этого тикета уже есть запрос на исправление.",
-  GE = () => "Для цього тікета вже є запит на перевірці.",
-  VE = () => "Đã có yêu cầu sửa đang chờ cho ticket này.",
-  HE = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? PE() : e === "pt" ? qE() : e === "ch" ? LE() : e === "de" ? UE() : e === "es" ? ME() : e === "fr" ? BE() : e === "it" ? CE() : e === "jp" ? KE() : e === "pl" ? FE() : e === "ru" ? $E() : e === "uk" ? GE() : VE()
-  },
-  WE = () => "You cannot review your own correction request.",
-  YE = () => "Você não pode revisar sua própria solicitação de correção.",
-  JE = () => "不能审核自己提交的更正请求。",
-  QE = () => "Du kannst deine eigene Korrekturanfrage nicht prüfen.",
-  ZE = () => "No puedes revisar tu propia solicitud de corrección.",
-  XE = () => "Tu ne peux pas examiner ta propre demande de correction.",
-  ek = () => "Non puoi revisionare la tua stessa richiesta di correzione.",
-  tk = () => "自分のリクエストはレビューできません。",
-  nk = () => "Nie możesz zweryfikować własnej prośby o poprawkę.",
-  rk = () => "Нельзя рассматривать собственный запрос.",
-  ok = () => "Не можна перевіряти власний запит.",
-  ik = () => "Bạn không thể duyệt yêu cầu của chính mình.",
-  ak = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? WE() : e === "pt" ? YE() : e === "ch" ? JE() : e === "de" ? QE() : e === "es" ? ZE() : e === "fr" ? XE() : e === "it" ? ek() : e === "jp" ? tk() : e === "pl" ? nk() : e === "ru" ? rk() : e === "uk" ? ok() : ik()
-  },
-  sk = () => "This correction has already been reviewed.",
-  uk = () => "Esta correção já foi revisada.",
-  ck = () => "此请求已被审核。",
-  lk = () => "Diese Korrektur wurde bereits geprüft.",
-  dk = () => "Esta corrección ya ha sido revisada.",
-  _k = () => "Cette correction a déjà été examinée.",
-  fk = () => "Questa correzione è già stata revisionata.",
-  pk = () => "このリクエストはすでにレビュー済みです。",
-  hk = () => "Ta prośba została już rozpatrzona.",
-  mk = () => "Этот запрос уже рассмотрен.",
-  gk = () => "Цей запит вже перевірено.",
-  wk = () => "Yêu cầu này đã được duyệt.",
-  yk = (n = {}, t = {}) => {
-    const e = t.locale ?? d();
-    return e === "en" ? sk() : e === "pt" ? uk() : e === "ch" ? ck() : e === "de" ? lk() : e === "es" ? dk() : e === "fr" ? _k() : e === "it" ? fk() : e === "jp" ? pk() : e === "pl" ? hk() : e === "ru" ? mk() : e === "uk" ? gk() : wk()
-  },
-  $e = {
-    insufficient_context: pd(),
-    no_rule_violation: __(),
-    not_enough_for_punishment: U_(),
-    caused_by_glitch: Kl(),
-    out_of_scope: df(),
-    invalid_information: Bd(),
-    allowed_by_event: ml(),
-    already_handled: $c()
-  },
-  ET = {
-    insufficient_context: td(),
-    no_rule_violation: Xd(),
-    not_enough_for_punishment: O_(),
-    caused_by_glitch: zl(),
-    out_of_scope: Q_(),
-    invalid_information: Sd(),
-    allowed_by_event: rl(),
-    already_handled: Rc()
-  },
-  kT = Object.keys($e).map(n => ({
-    value: n,
-    label: $e[n]
-  }));
-
-function TT(n) {
-  return n in $e
+var a = (r => (r[r.CONTINUE = 100] = "CONTINUE", r[r.SWITCHING_PROTOCOLS = 101] = "SWITCHING_PROTOCOLS", r[r.PROCESSING = 102] = "PROCESSING", r[r.EARLY_HINTS = 103] = "EARLY_HINTS", r[r.OK = 200] = "OK", r[r.CREATED = 201] = "CREATED", r[r.ACCEPTED = 202] = "ACCEPTED", r[r.NON_AUTHORITATIVE_INFORMATION = 203] = "NON_AUTHORITATIVE_INFORMATION", r[r.NO_CONTENT = 204] = "NO_CONTENT", r[r.RESET_CONTENT = 205] = "RESET_CONTENT", r[r.PARTIAL_CONTENT = 206] = "PARTIAL_CONTENT", r[r.MULTI_STATUS = 207] = "MULTI_STATUS", r[r.ALREADY_REPORTED = 208] = "ALREADY_REPORTED", r[r.IM_USED = 226] = "IM_USED", r[r.MULTIPLE_CHOICES = 300] = "MULTIPLE_CHOICES", r[r.MOVED_PERMANENTLY = 301] = "MOVED_PERMANENTLY", r[r.MOVED_TEMPORARILY = 302] = "MOVED_TEMPORARILY", r[r.FOUND = 302] = "FOUND", r[r.SEE_OTHER = 303] = "SEE_OTHER", r[r.NOT_MODIFIED = 304] = "NOT_MODIFIED", r[r.USE_PROXY = 305] = "USE_PROXY", r[r.SWITCH_PROXY = 306] = "SWITCH_PROXY", r[r.TEMPORARY_REDIRECT = 307] = "TEMPORARY_REDIRECT", r[r.PERMANENT_REDIRECT = 308] = "PERMANENT_REDIRECT", r[r.BAD_REQUEST = 400] = "BAD_REQUEST", r[r.UNAUTHORIZED = 401] = "UNAUTHORIZED", r[r.PAYMENT_REQUIRED = 402] = "PAYMENT_REQUIRED", r[r.FORBIDDEN = 403] = "FORBIDDEN", r[r.NOT_FOUND = 404] = "NOT_FOUND", r[r.METHOD_NOT_ALLOWED = 405] = "METHOD_NOT_ALLOWED", r[r.NOT_ACCEPTABLE = 406] = "NOT_ACCEPTABLE", r[r.PROXY_AUTHENTICATION_REQUIRED = 407] = "PROXY_AUTHENTICATION_REQUIRED", r[r.REQUEST_TIMEOUT = 408] = "REQUEST_TIMEOUT", r[r.CONFLICT = 409] = "CONFLICT", r[r.GONE = 410] = "GONE", r[r.LENGTH_REQUIRED = 411] = "LENGTH_REQUIRED", r[r.PRECONDITION_FAILED = 412] = "PRECONDITION_FAILED", r[r.REQUEST_TOO_LONG = 413] = "REQUEST_TOO_LONG", r[r.CONTENT_TOO_LARGE = 413] = "CONTENT_TOO_LARGE", r[r.REQUEST_URI_TOO_LONG = 414] = "REQUEST_URI_TOO_LONG", r[r.URI_TOO_LONG = 414] = "URI_TOO_LONG", r[r.UNSUPPORTED_MEDIA_TYPE = 415] = "UNSUPPORTED_MEDIA_TYPE", r[r.REQUESTED_RANGE_NOT_SATISFIABLE = 416] = "REQUESTED_RANGE_NOT_SATISFIABLE", r[r.RANGE_NOT_SATISFIABLE = 416] = "RANGE_NOT_SATISFIABLE", r[r.EXPECTATION_FAILED = 417] = "EXPECTATION_FAILED", r[r.IM_A_TEAPOT = 418] = "IM_A_TEAPOT", r[r.INSUFFICIENT_SPACE_ON_RESOURCE = 419] = "INSUFFICIENT_SPACE_ON_RESOURCE", r[r.MISDIRECTED_REQUEST = 421] = "MISDIRECTED_REQUEST", r[r.UNPROCESSABLE_ENTITY = 422] = "UNPROCESSABLE_ENTITY", r[r.UNPROCESSABLE_CONTENT = 422] = "UNPROCESSABLE_CONTENT", r[r.LOCKED = 423] = "LOCKED", r[r.FAILED_DEPENDENCY = 424] = "FAILED_DEPENDENCY", r[r.TOO_EARLY = 425] = "TOO_EARLY", r[r.UPGRADE_REQUIRED = 426] = "UPGRADE_REQUIRED", r[r.PRECONDITION_REQUIRED = 428] = "PRECONDITION_REQUIRED", r[r.TOO_MANY_REQUESTS = 429] = "TOO_MANY_REQUESTS", r[r.REQUEST_HEADER_FIELDS_TOO_LARGE = 431] = "REQUEST_HEADER_FIELDS_TOO_LARGE", r[r.UNAVAILABLE_FOR_LEGAL_REASONS = 451] = "UNAVAILABLE_FOR_LEGAL_REASONS", r[r.INTERNAL_SERVER_ERROR = 500] = "INTERNAL_SERVER_ERROR", r[r.NOT_IMPLEMENTED = 501] = "NOT_IMPLEMENTED", r[r.BAD_GATEWAY = 502] = "BAD_GATEWAY", r[r.SERVICE_UNAVAILABLE = 503] = "SERVICE_UNAVAILABLE", r[r.GATEWAY_TIMEOUT = 504] = "GATEWAY_TIMEOUT", r[r.HTTP_VERSION_NOT_SUPPORTED = 505] = "HTTP_VERSION_NOT_SUPPORTED", r[r.VARIANT_ALSO_NEGOTIATES = 506] = "VARIANT_ALSO_NEGOTIATES", r[r.INSUFFICIENT_STORAGE = 507] = "INSUFFICIENT_STORAGE", r[r.LOOP_DETECTED = 508] = "LOOP_DETECTED", r[r.NOT_EXTENDED = 510] = "NOT_EXTENDED", r[r.NETWORK_AUTHENTICATION_REQUIRED = 511] = "NETWORK_AUTHENTICATION_REQUIRED", r[r.AWS_ELB_000 = 0] = "AWS_ELB_000", r[r.THIS_IS_FINE = 218] = "THIS_IS_FINE", r[r.PAGE_EXPIRED = 419] = "PAGE_EXPIRED", r[r.METHOD_FAILURE = 420] = "METHOD_FAILURE", r[r.ENHANCE_YOUR_CALM = 420] = "ENHANCE_YOUR_CALM", r[r.REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY = 430] = "REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY", r[r.SHOPIFY_SECURITY_REJECTION = 430] = "SHOPIFY_SECURITY_REJECTION", r[r.LOGIN_TIME_OUT = 440] = "LOGIN_TIME_OUT", r[r.NO_RESPONSE = 444] = "NO_RESPONSE", r[r.RETRY_WITH = 449] = "RETRY_WITH", r[r.BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS = 450] = "BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS", r[r.REDIRECT_IIS = 451] = "REDIRECT_IIS", r[r.CLIENT_CLOSED_CONNECTION_AWS_ELB = 460] = "CLIENT_CLOSED_CONNECTION_AWS_ELB", r[r.X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB = 463] = "X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB", r[r.INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB = 464] = "INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB", r[r.REQUEST_HEADER_TOO_LARGE = 494] = "REQUEST_HEADER_TOO_LARGE", r[r.SSL_CERTIFICATE_ERROR = 495] = "SSL_CERTIFICATE_ERROR", r[r.SSL_CERTIFICATE_REQUIRED = 496] = "SSL_CERTIFICATE_REQUIRED", r[r.HTTP_REQUEST_SENT_TO_HTTPS_PORT = 497] = "HTTP_REQUEST_SENT_TO_HTTPS_PORT", r[r.INVALID_TOKEN = 498] = "INVALID_TOKEN", r[r.CLIENT_CLOSED_REQUEST = 499] = "CLIENT_CLOSED_REQUEST", r[r.TOKEN_REQUIRED = 499] = "TOKEN_REQUIRED", r[r.BANDWIDTH_LIMIT_EXCEEDED = 509] = "BANDWIDTH_LIMIT_EXCEEDED", r[r.RESOURCE_LIMIT_IS_REACHED = 508] = "RESOURCE_LIMIT_IS_REACHED", r[r.WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR = 520] = "WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR", r[r.WEB_SERVER_IS_DOWN = 521] = "WEB_SERVER_IS_DOWN", r[r.CONNECTION_TIMED_OUT = 522] = "CONNECTION_TIMED_OUT", r[r.ORIGIN_IS_UNREACHABLE = 523] = "ORIGIN_IS_UNREACHABLE", r[r.A_TIMEOUT_OCCURRED = 524] = "A_TIMEOUT_OCCURRED", r[r.SSL_HANDSHAKE_FAILED = 525] = "SSL_HANDSHAKE_FAILED", r[r.INVALID_SSL_CERTIFICATE = 526] = "INVALID_SSL_CERTIFICATE", r[r.RAILGUN_ERROR = 527] = "RAILGUN_ERROR", r[r.SITE_IS_OVERLOADED = 529] = "SITE_IS_OVERLOADED", r[r.ORIGIN_UNAVAILABLE = 530] = "ORIGIN_UNAVAILABLE", r[r.ORIGIN_DNS_ERROR = 530] = "ORIGIN_DNS_ERROR", r[r.SITE_IS_FROZEN = 530] = "SITE_IS_FROZEN", r[r.TEMPORARILY_DISABLED = 540] = "TEMPORARILY_DISABLED", r[r.UNAUTHORIZED_AWS_ELB = 561] = "UNAUTHORIZED_AWS_ELB", r[r.NETWORK_READ_TIMEOUT_ERROR = 598] = "NETWORK_READ_TIMEOUT_ERROR", r[r.NETWORK_CONNECT_TIMEOUT_ERROR = 599] = "NETWORK_CONNECT_TIMEOUT_ERROR", r[r.UNEXPECTED_TOKEN = 783] = "UNEXPECTED_TOKEN", r[r.REQUEST_DENIED = 999] = "REQUEST_DENIED", r))(a || {});
+const Wr = () => "A punishment cache reload is already running",
+  Yr = () => "Um recarregamento do cache de punições já está em andamento",
+  Jr = () => "处罚缓存重新加载已在进行中",
+  Qr = () => "Ein Neuladen des Strafen-Caches läuft bereits",
+  Xr = () => "Ya hay una recarga de la caché de sanciones en curso",
+  Zr = () => "Un rechargement du cache des sanctions est déjà en cours",
+  en = () => "Un ricaricamento della cache delle sanzioni è già in corso",
+  tn = () => "処罰キャッシュの再読み込みは既に実行中です",
+  rn = () => "Przeładowanie pamięci kar już trwa",
+  nn = () => "Перезагрузка кэша наказаний уже выполняется",
+  sn = () => "Перезавантаження кешу покарань уже виконується",
+  an = () => "Quá trình tải lại bộ nhớ đệm hình phạt đang chạy",
+  on = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Wr() : e === "pt" ? Yr() : e === "ch" ? Jr() : e === "de" ? Qr() : e === "es" ? Xr() : e === "fr" ? Zr() : e === "it" ? en() : e === "jp" ? tn() : e === "pl" ? rn() : e === "ru" ? nn() : e === "uk" ? sn() : an()
+  },
+  cn = () => "Your account has been suspended for breaking the rules",
+  un = () => "Sua conta foi suspensa por quebrar as regras",
+  ln = () => "您的账号因违反规则已被暂停",
+  dn = () => "Dein Konto wurde wegen Regelverstößen gesperrt",
+  _n = () => "Tu cuenta ha sido suspendida por infringir las regras",
+  fn = () => "Votre compte a été suspendu pour avoir enfreint les règles",
+  pn = () => "Il tuo account è stato sospeso per aver infranto le regole",
+  hn = () => "ルール違反により、あなたのアカウントは一時停止されています。",
+  mn = () => "Twoje konto zostało zawieszone za łamanie zasad",
+  gn = () => "Ваш аккаунт был временно заблокирован за нарушение правил",
+  wn = () => "Ваш обліковий запис було призупинено за порушення правил",
+  yn = () => "Tài khoản của bạn đã bị tạm đình chỉ vì vi phạm luật",
+  et = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? cn() : e === "pt" ? un() : e === "ch" ? ln() : e === "de" ? dn() : e === "es" ? _n() : e === "fr" ? fn() : e === "it" ? pn() : e === "jp" ? hn() : e === "pl" ? mn() : e === "ru" ? gn() : e === "uk" ? wn() : yn()
+  },
+  bn = () => "Alliance name already taken",
+  vn = () => "Já possui uma aliança com esse nome",
+  En = () => "该联盟名称已被占用",
+  Tn = () => "Der Allianzname ist bereits vergeben",
+  On = () => "Ese nombre de alianza ya está en uso",
+  kn = () => "Ce nom d’alliance est déjà pris",
+  In = () => "Esiste già un'alleanza con questo nome",
+  Nn = () => "このアライアンス名は既に使用されています。",
+  Sn = () => "Nazwa sojuszu jest już zajęta",
+  An = () => "Такое название альянса уже используется",
+  Rn = () => "Назва альянсу вже зайнята",
+  Dn = () => "Tên liên minh đã được sử dụng",
+  Pn = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? bn() : e === "pt" ? vn() : e === "ch" ? En() : e === "de" ? Tn() : e === "es" ? On() : e === "fr" ? kn() : e === "it" ? In() : e === "jp" ? Nn() : e === "pl" ? Sn() : e === "ru" ? An() : e === "uk" ? Rn() : Dn()
+  },
+  xn = () => "Alliance name exceeded the maximum number of characters",
+  Un = () => "O nome da aliança excedeu o número máximo de caracteres",
+  jn = () => "联盟名称超过最大字符数限制",
+  Ln = () => "Der Allianzname überschreitet die maximale Zeichenanzahl",
+  Mn = () => "El nombre de la alianza superó el número máximo de caracteres",
+  Bn = () => "Le nom de l’alliance a dépassé le nombre maximal de caractères",
+  qn = () => "Il nome dell'alleanza ha superato il numero massimo di caratteri",
+  Cn = () => "アライアンス名が最大文字数を超えています。",
+  zn = () => "Nazwa sojuszu przekroczyła maksymalną liczbę znaków",
+  Kn = () => "Название альянса превышает максимальную длину",
+  Fn = () => "Назва альянсу перевищує максимально допустиму кількість символів",
+  $n = () => "Tên liên minh vượt quá số ký tự cho phép",
+  Gn = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? xn() : e === "pt" ? Un() : e === "ch" ? jn() : e === "de" ? Ln() : e === "es" ? Mn() : e === "fr" ? Bn() : e === "it" ? qn() : e === "jp" ? Cn() : e === "pl" ? zn() : e === "ru" ? Kn() : e === "uk" ? Fn() : $n()
+  },
+  Vn = () => "Alliance with empty name",
+  Hn = () => "Aliança com nome vazio",
+  Wn = () => "名称为空的联盟",
+  Yn = () => "Allianz mit leerem Namen",
+  Jn = () => "Alianza con nombre vacío",
+  Qn = () => "Alliance avec nom vide",
+  Xn = () => "Alleanza con nome vuoto",
+  Zn = () => "名前が空のアライアンスです。",
+  es = () => "Sojusz z pustą nazwą",
+  ts = () => "Альянс с пустым названием",
+  rs = () => "Альянс із порожньою назвою",
+  ns = () => "Liên minh không có tên",
+  ss = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Vn() : e === "pt" ? Hn() : e === "ch" ? Wn() : e === "de" ? Yn() : e === "es" ? Jn() : e === "fr" ? Qn() : e === "it" ? Xn() : e === "jp" ? Zn() : e === "pl" ? es() : e === "ru" ? ts() : e === "uk" ? rs() : ns()
+  },
+  as = () => "Botting",
+  is = () => "Uso de bots",
+  os = () => "脚本",
+  cs = () => "Bot-Nutzung",
+  us = () => "Botting",
+  ls = () => "Bots",
+  ds = () => "Uso di bot",
+  _s = () => "ボット使用",
+  fs = () => "Botting",
+  ps = () => "Боттинг",
+  hs = () => "Боти",
+  ms = () => "Botting",
+  gs = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? as() : e === "pt" ? is() : e === "ch" ? os() : e === "de" ? cs() : e === "es" ? us() : e === "fr" ? ls() : e === "it" ? ds() : e === "jp" ? _s() : e === "pl" ? fs() : e === "ru" ? ps() : e === "uk" ? hs() : ms()
+  },
+  ws = () => "Use of software to completely automate painting",
+  ys = () => "Uso de software para pintar de forma completamente automatizada ",
+  bs = () => "使用软件完全自动化绘制",
+  vs = () => "Verwendung von Software, um das Malen vollständig zu automatisieren",
+  Es = () => "Uso de software para automatizar completamente la pintura",
+  Ts = () => "Utilisation de logiciels pour automatiser complètement la peinture",
+  Os = () => "Uso di software per dipingere in modo completamente automatizzato",
+  ks = () => "ペイントを完全に自動化するソフトウェアの使用",
+  Is = () => "Używanie oprogramowania do całkowicie zautomatyzowanego malowania",
+  Ns = () => "Использование программ для полной автоматизации рисования",
+  Ss = () => "Використання програм, які повністю автоматизують малювання",
+  As = () => "Sử dụng phần mềm để tự động hóa hoàn toàn việc tô pixel",
+  Rs = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? ws() : e === "pt" ? ys() : e === "ch" ? bs() : e === "de" ? vs() : e === "es" ? Es() : e === "fr" ? Ts() : e === "it" ? Os() : e === "jp" ? ks() : e === "pl" ? Is() : e === "ru" ? Ns() : e === "uk" ? Ss() : As()
+  },
+  Ds = () => "Breaking the rules",
+  Ps = () => "Quebrar as regras",
+  xs = () => "违反规则",
+  Us = () => "Regeln brechen",
+  js = () => "Romper las reglas",
+  Ls = () => "Violation des règles",
+  Ms = () => "Violazione delle regole",
+  Bs = () => "ルール違反",
+  qs = () => "Łamanie zasad",
+  Cs = () => "Нарушение правил",
+  zs = () => "Порушення правил",
+  Ks = () => "Vi phạm luật",
+  Fs = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Ds() : e === "pt" ? Ps() : e === "ch" ? xs() : e === "de" ? Us() : e === "es" ? js() : e === "fr" ? Ls() : e === "it" ? Ms() : e === "jp" ? Bs() : e === "pl" ? qs() : e === "ru" ? Cs() : e === "uk" ? zs() : Ks()
+  },
+  $s = () => "You have broken one of Wplace's rules",
+  Gs = () => "Você quebrou uma das regras do Wplace",
+  Vs = () => "你违反了 Wplace 的一项规则",
+  Hs = () => "Du hast gegen eine der Wplace-Regeln verstoßen",
+  Ws = () => "Has infringido una de las reglas de Wplace",
+  Ys = () => "Vous avez enfreint l’une des règles de Wplace",
+  Js = () => "Hai infranto una delle regole di Wplace",
+  Qs = () => "Wplaceのルールのいずれかに違反しました。",
+  Xs = () => "Złamałeś jedną z zasad Wplace",
+  Zs = () => "Вы нарушили одно из правил Wplace",
+  ea = () => "Ви порушили одне з правил Wplace",
+  ta = () => "Bạn đã vi phạm một trong các luật của Wplace",
+  ra = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? $s() : e === "pt" ? Gs() : e === "ch" ? Vs() : e === "de" ? Hs() : e === "es" ? Ws() : e === "fr" ? Ys() : e === "it" ? Js() : e === "jp" ? Qs() : e === "pl" ? Xs() : e === "ru" ? Zs() : e === "uk" ? ea() : ta()
+  },
+  na = () => "You cannot paint over event pixels",
+  sa = () => "Você não pode pintar sobre pixels de eventos",
+  aa = () => "你不能覆盖活动像素",
+  ia = () => "Du kannst nicht über Event-Pixel malen",
+  oa = () => "No puedes pintar sobre píxeles de evento",
+  ca = () => "Vous ne pouvez pas peindre sur des pixels d’événement",
+  ua = () => "Non puoi dipingere sopra i pixel dell'evento",
+  la = () => "イベント用のピクセルの上には塗れません。",
+  da = () => "Nie możesz malować po pikselach wydarzenia",
+  _a = () => "Вы не можете рисовать по пикселям события",
+  fa = () => "Ви не можете малювати поверх пікселів події",
+  pa = () => "Bạn không thể tô lên pixel sự kiện",
+  tt = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? na() : e === "pt" ? sa() : e === "ch" ? aa() : e === "de" ? ia() : e === "es" ? oa() : e === "fr" ? ca() : e === "it" ? ua() : e === "jp" ? la() : e === "pl" ? da() : e === "ru" ? _a() : e === "uk" ? fa() : pa()
+  },
+  ha = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
+  ma = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
+  ga = () => "无法连接到服务器。可能是你没有网络，或服务器已离线。请稍后重试。",
+  wa = () => "Server nicht erreichbar. Vielleicht hast du keine Internetverbindung oder der Server ist offline. Versuche es später erneut.",
+  ya = () => "No se puede conectar con el servidor. Puede que estés sin internet o el servidor esté caído. Inténtalo de nuevo más tarde.",
+  ba = () => "Impossible d’atteindre le serveur. Vous n’êtes peut-être pas connecté à Internet ou le serveur est hors ligne. Réessayez plus tard.",
+  va = () => "Impossibile contattare il server. Forse sei senza connessione o il server è offline. Riprova più tardi.",
+  Ea = () => "サーバーに接続できません。インターネットに接続されていないか、サーバーが停止している可能性があります。しばらくしてからもう一度お試しください。",
+  Ta = () => "Nie można połączyć się z serwerem. Być może nie masz internetu lub serwer nie działa. Spróbuj ponownie później.",
+  Oa = () => "Не удаётся подключиться к серверу. Возможно, у вас нет доступа к интернету или сервер недоступен. Попробуйте позже.",
+  ka = () => "Не вдається підключитися до сервера. Можливо, у вас немає інтернет-зʼєднання або сервер недоступний. Спробуйте пізніше.",
+  Ia = () => "Không thể kết nối tới máy chủ. Có thể bạn đang mất kết nối mạng hoặc máy chủ đang tạm ngưng. Hãy thử lại sau",
+  Na = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? ha() : e === "pt" ? ma() : e === "ch" ? ga() : e === "de" ? wa() : e === "es" ? ya() : e === "fr" ? ba() : e === "it" ? va() : e === "jp" ? Ea() : e === "pl" ? Ta() : e === "ru" ? Oa() : e === "uk" ? ka() : Ia()
+  },
+  Sa = () => "Challenge verification not completed",
+  Aa = () => "Verificação do desafio não concluída",
+  Ra = () => "挑战验证未完成",
+  Da = () => "Herausforderungsverifizierung nicht abgeschlossen",
+  Pa = () => "Verificación del desafío no completada",
+  xa = () => "Vérification du défi non terminée",
+  Ua = () => "Verifica della sfida non completata",
+  ja = () => "チャレンジ検証が完了していません",
+  La = () => "Weryfikacja wyzwania niezakończona",
+  Ma = () => "Верификация вызова не завершена",
+  Ba = () => "Перевірку виклику не завершено",
+  qa = () => "Xác minh thử thách chưa hoàn thành",
+  He = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Sa() : e === "pt" ? Aa() : e === "ch" ? Ra() : e === "de" ? Da() : e === "es" ? Pa() : e === "fr" ? xa() : e === "it" ? Ua() : e === "jp" ? ja() : e === "pl" ? La() : e === "ru" ? Ma() : e === "uk" ? Ba() : qa()
+  },
+  Ca = () => "Couldn't complete the purchase. This item does not exist.",
+  za = () => "Não foi possível concluir a compra. Este item não existe.",
+  Ka = () => "无法完成购买。该物品不存在。",
+  Fa = () => "Kauf konnte nicht abgeschlossen werden. Dieses Item existiert nicht.",
+  $a = () => "No se pudo completar la compra. Este ítem no existe.",
+  Ga = () => "Achat impossible. Cet objet n’existe pas.",
+  Va = () => "Impossibile completare l'acquisto. Questo oggetto non esiste.",
+  Ha = () => "購入を完了できませんでした。このアイテムは存在しません。",
+  Wa = () => "Nie udało się dokończyć zakupu. Ten przedmiot nie istnieje.",
+  Ya = () => "Не удалось завершить покупку. Этот предмет не существует.",
+  Ja = () => "Не вдалося завершити покупку. Цей предмет не існує.",
+  Qa = () => "Không thể hoàn tất giao dịch. Vật phẩm này không tồn tại.",
+  gt = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Ca() : e === "pt" ? za() : e === "ch" ? Ka() : e === "de" ? Fa() : e === "es" ? $a() : e === "fr" ? Ga() : e === "it" ? Va() : e === "jp" ? Ha() : e === "pl" ? Wa() : e === "ru" ? Ya() : e === "uk" ? Ja() : Qa()
+  },
+  Xa = () => "Your phone number's country doesn't match your current location. Please use a local number.",
+  Za = () => "O país do seu número de telefone não corresponde à sua localização atual. Por favor, use um número local.",
+  ei = () => "您的电话号码所属国家与您当前位置不匹配。请使用本地号码。",
+  ti = () => "Das Land deiner Telefonnummer stimmt nicht mit deinem aktuellen Standort überein. Bitte verwende eine lokale Nummer.",
+  ri = () => "El país de tu número de teléfono no coincide con tu ubicación actual. Por favor, usa un número local.",
+  ni = () => "Le pays de votre numéro de téléphone ne correspond pas à votre localisation actuelle. Veuillez utiliser un numéro local.",
+  si = () => "Il paese del tuo numero di telefono non corrisponde alla tua posizione attuale. Per favore usa un numero locale.",
+  ai = () => "電話番号の国があなたの現在地と一致しません。現地の番号を使用してください。",
+  ii = () => "Kraj Twojego numeru telefonu nie odpowiada Twojej aktualnej lokalizacji. Użyj lokalnego numeru.",
+  oi = () => "Страна вашего номера телефона не совпадает с вашим текущим местоположением. Пожалуйста, используйте местный номер.",
+  ci = () => "Країна вашого номера телефону не збігається з вашим поточним місцезнаходженням. Будь ласка, використовуйте місцевий номер.",
+  ui = () => "Quốc gia của số điện thoại không khớp với vị trí hiện tại của bạn. Vui lòng sử dụng số địa phương.",
+  li = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Xa() : e === "pt" ? Za() : e === "ch" ? ei() : e === "de" ? ti() : e === "es" ? ri() : e === "fr" ? ni() : e === "it" ? si() : e === "jp" ? ai() : e === "pl" ? ii() : e === "ru" ? oi() : e === "uk" ? ci() : ui()
+  },
+  di = () => "We’re currently experiencing high traffic. Some requests may not be processed at this time—please try again later. Thank you for your patience.",
+  _i = () => "Estamos enfrentando um volume alto de acessos no momento. Algumas solicitações podem não ser processadas agora — por favor, tente novamente mais tarde. Agradecemos a sua compreensão.",
+  fi = () => "我们当前正遭遇高流量。一些请求可能无法立即处理——请稍后再试。感谢你的耐心。",
+  pi = () => "Wir haben gerade sehr viel Traffic. Einige Anfragen können momentan nicht verarbeitet werden – bitte versuche es später erneut. Danke für deine Geduld.",
+  hi = () => "Actualmente estamos recibiendo mucho tráfico. Es posible que algunas solicitudes no se procesen en este momento; inténtalo de nuevo más tarde. Gracias por tu paciencia.",
+  mi = () => "Nous subissons actuellement un trafic élevé. Certaines requêtes peuvent ne pas être traitées pour le moment — veuillez réessayer plus tard. Merci pour votre patience.",
+  gi = () => "Stiamo affrontando un elevato volume di accessi in questo momento. Alcune richieste potrebbero non essere elaborate ora — riprova più tardi. Grazie per la comprensione.",
+  wi = () => "現在アクセスが集中しています。一部のリクエストが処理されない場合があります。しばらくしてからもう一度お試しください。ご理解ありがとうございます。",
+  yi = () => "Obecnie doświadczamy dużego ruchu. Niektóre żądania mogą nie zostać teraz przetworzone — spróbuj ponownie później. Dziękujemy za cierpliwość.",
+  bi = () => "Сейчас мы испытываем очень высокую нагрузку. Некоторые запросы могут не обрабатываться — попробуйте позже. Спасибо за ваше терпение.",
+  vi = () => "Зараз ми отримуємо великий обсяг трафіку. Деякі запити можуть тимчасово не оброблятися — будь ласка, спробуйте пізніше. Дякуємо за розуміння.",
+  Ei = () => "Hiện chúng tôi đang chịu lượng truy cập rất cao. Một số yêu cầu có thể không được xử lý ngay bây giờ — hãy thử lại sau. Cảm ơn bạn đã thông cảm.",
+  rt = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? di() : e === "pt" ? _i() : e === "ch" ? fi() : e === "de" ? pi() : e === "es" ? hi() : e === "fr" ? mi() : e === "it" ? gi() : e === "jp" ? wi() : e === "pl" ? yi() : e === "ru" ? bi() : e === "uk" ? vi() : Ei()
+  },
+  Ti = () => "Doxxing",
+  Oi = () => "Doxxing",
+  ki = () => "人肉搜索",
+  Ii = () => "Doxxing",
+  Ni = () => "Doxxing",
+  Si = () => "Doxxing",
+  Ai = () => "Doxxing",
+  Ri = () => "ドックス（Doxxing）",
+  Di = () => "Doxxing",
+  Pi = () => "Докcинг",
+  xi = () => "Докcинг",
+  Ui = () => "Doxxing",
+  ji = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Ti() : e === "pt" ? Oi() : e === "ch" ? ki() : e === "de" ? Ii() : e === "es" ? Ni() : e === "fr" ? Si() : e === "it" ? Ai() : e === "jp" ? Ri() : e === "pl" ? Di() : e === "ru" ? Pi() : e === "uk" ? xi() : Ui()
+  },
+  Li = () => "Released other's personal information without their consent",
+  Mi = () => "Vazar informações pessoais de terceiros sem consentimento",
+  Bi = () => "在未获同意的情况下公开他人个人信息",
+  qi = () => "Persönliche Daten anderer ohne deren Zustimmung veröffentlicht",
+  Ci = () => "Divulgó información personal de otra persona sin su consentimiento",
+  zi = () => "Diffusion des informations personnelles de quelqu’un sans son consentement",
+  Ki = () => "Diffusione di informazioni personali di terzi senza consenso",
+  Fi = () => "他人の個人情報を同意なく公開した。",
+  $i = () => "Udostępnianie cudzych danych osobowych bez ich zgody",
+  Gi = () => "Публикация личной информации других людей без их согласия",
+  Vi = () => "Розповсюдження особистої інформації інших людей без їхньої згоди",
+  Hi = () => "Công khai thông tin cá nhân của người khác mà không có sự cho phép",
+  Wi = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Li() : e === "pt" ? Mi() : e === "ch" ? Bi() : e === "de" ? qi() : e === "es" ? Ci() : e === "fr" ? zi() : e === "it" ? Ki() : e === "jp" ? Fi() : e === "pl" ? $i() : e === "ru" ? Gi() : e === "uk" ? Vi() : Hi()
+  },
+  Yi = () => "This email is already in use.",
+  Ji = () => "Este e-mail já está em uso.",
+  Qi = () => "This email is already in use.",
+  Xi = () => "This email is already in use.",
+  Zi = () => "Este correo electrónico ya está en uso.",
+  eo = () => "This email is already in use.",
+  to = () => "Questa email è già in uso.",
+  ro = () => "This email is already in use.",
+  no = () => "This email is already in use.",
+  so = () => "This email is already in use.",
+  ao = () => "This email is already in use.",
+  io = () => "This email is already in use.",
+  oo = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Yi() : e === "pt" ? Ji() : e === "ch" ? Qi() : e === "de" ? Xi() : e === "es" ? Zi() : e === "fr" ? eo() : e === "it" ? to() : e === "jp" ? ro() : e === "pl" ? no() : e === "ru" ? so() : e === "uk" ? ao() : io()
+  },
+  co = r => `This email is already in use by user #${r.userId}.`,
+  uo = r => `Este e-mail já está em uso pelo usuário #${r.userId}.`,
+  lo = r => `This email is already in use by user #${r.userId}.`,
+  _o = r => `This email is already in use by user #${r.userId}.`,
+  fo = r => `Este correo electrónico ya está en uso por el usuario #${r.userId}.`,
+  po = r => `This email is already in use by user #${r.userId}.`,
+  ho = r => `Questa email è già in uso dall'utente #${r.userId}.`,
+  mo = r => `This email is already in use by user #${r.userId}.`,
+  go = r => `This email is already in use by user #${r.userId}.`,
+  wo = r => `This email is already in use by user #${r.userId}.`,
+  yo = r => `This email is already in use by user #${r.userId}.`,
+  bo = r => `This email is already in use by user #${r.userId}.`,
+  vo = (r, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? co(r) : e === "pt" ? uo(r) : e === "ch" ? lo(r) : e === "de" ? _o(r) : e === "es" ? fo(r) : e === "fr" ? po(r) : e === "it" ? ho(r) : e === "jp" ? mo(r) : e === "pl" ? go(r) : e === "ru" ? wo(r) : e === "uk" ? yo(r) : bo(r)
+  },
+  Eo = () => "Enter a valid email address.",
+  To = () => "Informe um endereço de e-mail válido.",
+  Oo = () => "Enter a valid email address.",
+  ko = () => "Enter a valid email address.",
+  Io = () => "Introduce una dirección de correo electrónico válida.",
+  No = () => "Enter a valid email address.",
+  So = () => "Inserisci un indirizzo email valido.",
+  Ao = () => "Enter a valid email address.",
+  Ro = () => "Enter a valid email address.",
+  Do = () => "Enter a valid email address.",
+  Po = () => "Enter a valid email address.",
+  xo = () => "Enter a valid email address.",
+  Uo = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Eo() : e === "pt" ? To() : e === "ch" ? Oo() : e === "de" ? ko() : e === "es" ? Io() : e === "fr" ? No() : e === "it" ? So() : e === "jp" ? Ao() : e === "pl" ? Ro() : e === "ru" ? Do() : e === "uk" ? Po() : xo()
+  },
+  jo = r => `Error while painting: ${r.err}`,
+  Lo = r => `Erro enquanto pinta: ${r.err}`,
+  Mo = r => `绘制时出错：${r.err}`,
+  Bo = r => `Fehler beim Malen: ${r.err}`,
+  qo = r => `Error al pintar: ${r.err}`,
+  Co = r => `Erreur lors de la peinture : ${r.err}`,
+  zo = r => `Errore durante la pittura: ${r.err}`,
+  Ko = r => `ペイント中にエラーが発生しました: ${r.err}`,
+  Fo = r => `Błąd podczas malowania: ${r.err}`,
+  $o = r => `Ошибка при рисовании: ${r.err}`,
+  Go = r => `Помилка під час малювання: ${r.err}`,
+  Vo = r => `Lỗi khi tô: ${r.err}`,
+  Ho = (r, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? jo(r) : e === "pt" ? Lo(r) : e === "ch" ? Mo(r) : e === "de" ? Bo(r) : e === "es" ? qo(r) : e === "fr" ? Co(r) : e === "it" ? zo(r) : e === "jp" ? Ko(r) : e === "pl" ? Fo(r) : e === "ru" ? $o(r) : e === "uk" ? Go(r) : Vo(r)
+  },
+  Wo = () => "Exceeded maximum number of characters",
+  Yo = () => "Excedeu o número máximo de caracteres permitidos",
+  Jo = () => "超出最大字符数",
+  Qo = () => "Maximale Zeichenanzahl überschritten",
+  Xo = () => "Se excedió el número máximo de caracteres",
+  Zo = () => "Nombre maximal de caractères dépassé",
+  ec = () => "Numero massimo di caratteri superato",
+  tc = () => "最大文字数を超過しました",
+  rc = () => "Przekroczono maksymalną liczbę znaków",
+  nc = () => "Превышено максимальное количество символов",
+  sc = () => "Перевищено максимальну кількість символів",
+  ac = () => "Đã vượt quá số ký tự tối đa",
+  ic = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Wo() : e === "pt" ? Yo() : e === "ch" ? Jo() : e === "de" ? Qo() : e === "es" ? Xo() : e === "fr" ? Zo() : e === "it" ? ec() : e === "jp" ? tc() : e === "pl" ? rc() : e === "ru" ? nc() : e === "uk" ? sc() : ac()
+  },
+  oc = () => "Verification code expired. Please request a new one.",
+  cc = () => "Código de verificação expirado. Por favor, solicite um novo.",
+  uc = () => "验证码已过期，请重新获取。",
+  lc = () => "Bestätigungscode abgelaufen. Bitte fordern Sie einen neuen an.",
+  dc = () => "Código de verificación expirado. Por favor, solicita uno nuevo.",
+  _c = () => "Code de vérification expiré. Veuillez en demander un nouveau.",
+  fc = () => "Codice di verifica scaduto. Per favore, richiedine uno nuovo.",
+  pc = () => "確認コードの有効期限が切れました。新しいコードをリクエストしてください。",
+  hc = () => "Kod weryfikacyjny wygasł. Poproś o nowy.",
+  mc = () => "Код подтверждения истёк. Пожалуйста, запросите новый.",
+  gc = () => "Код підтвердження закінчився. Будь ласка, запросіть новий.",
+  wc = () => "Mã xác minh đã hết hạn. Vui lòng yêu cầu mã mới.",
+  yc = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? oc() : e === "pt" ? cc() : e === "ch" ? uc() : e === "de" ? lc() : e === "es" ? dc() : e === "fr" ? _c() : e === "it" ? fc() : e === "jp" ? pc() : e === "pl" ? hc() : e === "ru" ? mc() : e === "uk" ? gc() : wc()
+  },
+  bc = () => "Griefing",
+  vc = () => "Griefing",
+  Ec = () => "破坏行为",
+  Tc = () => "Griefing",
+  Oc = () => "Griefing",
+  kc = () => "Griefing",
+  Ic = () => "Griefing",
+  Nc = () => "グリーフィング",
+  Sc = () => "Griefing",
+  Ac = () => "Гриферство",
+  Rc = () => "Гріфінг",
+  Dc = () => "Griefing",
+  Pc = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? bc() : e === "pt" ? vc() : e === "ch" ? Ec() : e === "de" ? Tc() : e === "es" ? Oc() : e === "fr" ? kc() : e === "it" ? Ic() : e === "jp" ? Nc() : e === "pl" ? Sc() : e === "ru" ? Ac() : e === "uk" ? Rc() : Dc()
+  },
+  xc = () => "Messed up with other's artworks",
+  Uc = () => "Estragou os desenhos dos outros",
+  jc = () => "破坏了他人的作品",
+  Lc = () => "Kunstwerke anderer beschädigt",
+  Mc = () => "Arruinó las obras de arte de otros",
+  Bc = () => "A abîmé les œuvres des autres",
+  qc = () => "Ha rovinato i disegni degli altri",
+  Cc = () => "他人の作品を荒らした",
+  zc = () => "Zniszczył prace innych",
+  Kc = () => "Испортил чужие рисунки",
+  Fc = () => "Зіпсував роботи інших",
+  $c = () => "Phá hỏng tranh của người khác",
+  Gc = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? xc() : e === "pt" ? Uc() : e === "ch" ? jc() : e === "de" ? Lc() : e === "es" ? Mc() : e === "fr" ? Bc() : e === "it" ? qc() : e === "jp" ? Cc() : e === "pl" ? zc() : e === "ru" ? Kc() : e === "uk" ? Fc() : $c()
+  },
+  Vc = () => "Hate speech",
+  Hc = () => "Discurso de Ódio",
+  Wc = () => "仇恨言论",
+  Yc = () => "Hassrede",
+  Jc = () => "Discurso de odio",
+  Qc = () => "Discours haineux",
+  Xc = () => "Discorso d'odio",
+  Zc = () => "ヘイトスピーチ",
+  eu = () => "Mowa nienawiści",
+  tu = () => "Речь ненависти",
+  ru = () => "Мова ворожнечі",
+  nu = () => "Ngôn từ thù hằn",
+  su = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Vc() : e === "pt" ? Hc() : e === "ch" ? Wc() : e === "de" ? Yc() : e === "es" ? Jc() : e === "fr" ? Qc() : e === "it" ? Xc() : e === "jp" ? Zc() : e === "pl" ? eu() : e === "ru" ? tu() : e === "uk" ? ru() : nu()
+  },
+  au = () => "Racism, homophobia, hate symbols, etc",
+  iu = () => "Racismo, homofobia, símbolos de ódio, etc.",
+  ou = () => "种族主义、恐同、仇恨符号等",
+  cu = () => "Rassismus, Homophobie, Hasssymbole usw.",
+  uu = () => "Racismo, homofobia, símbolos de odio, etc.",
+  lu = () => "Racisme, homophobie, symboles haineux, etc.",
+  du = () => "Razzismo, omofobia, simboli d'odio, ecc.",
+  _u = () => "人種差別、同性愛嫌悪、ヘイトシンボルなど",
+  fu = () => "Rasizm, homofobia, symbole nienawiści itp.",
+  pu = () => "Расизм, гомофобия, символы ненависти и т. п.",
+  hu = () => "Расизм, гомофобія, символи ненависті тощо",
+  mu = () => "Phân biệt chủng tộc, kỳ thị đồng tính, biểu tượng thù ghét, v.v.",
+  gu = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? au() : e === "pt" ? iu() : e === "ch" ? ou() : e === "de" ? cu() : e === "es" ? uu() : e === "fr" ? lu() : e === "it" ? du() : e === "jp" ? _u() : e === "pl" ? fu() : e === "ru" ? pu() : e === "uk" ? hu() : mu()
+  },
+  wu = () => "Inappropriate content",
+  yu = () => "Conteúdo inapropriado",
+  bu = () => "不当内容",
+  vu = () => "Unangemessene Inhalte",
+  Eu = () => "Contenido inapropiado",
+  Tu = () => "Contenu inapproprié",
+  Ou = () => "Contenuto inappropriato",
+  ku = () => "不適切なコンテンツ",
+  Iu = () => "Nieodpowiednie treści",
+  Nu = () => "Неприемлемый контент",
+  Su = () => "Неприйнятний вміст",
+  Au = () => "Nội dung không phù hợp",
+  Ru = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? wu() : e === "pt" ? yu() : e === "ch" ? bu() : e === "de" ? vu() : e === "es" ? Eu() : e === "fr" ? Tu() : e === "it" ? Ou() : e === "jp" ? ku() : e === "pl" ? Iu() : e === "ru" ? Nu() : e === "uk" ? Su() : Au()
+  },
+  Du = () => "Explicit or illegal content, severe slurs",
+  Pu = () => "Conteúdo explícito ou ilegal, insultos graves",
+  xu = () => "露骨或非法内容、严重的侮辱性言论",
+  Uu = () => "Expliziter oder illegaler Inhalt, schwere Beleidigungen",
+  ju = () => "Contenido explícito o ilegal, insultos graves",
+  Lu = () => "Contenu explicite ou illégal, insultes graves",
+  Mu = () => "Contenuto esplicito o illegale, insulti gravi",
+  Bu = () => "露骨または違法なコンテンツ、ひどい侮辱・中傷",
+  qu = () => "Treści jawnie seksualne lub nielegalne, poważne obelgi",
+  Cu = () => "Откровенный или незаконный контент, грубые оскорбления",
+  zu = () => "Відвертий або незаконний вміст, грубі образи",
+  Ku = () => "Nội dung phản cảm hoặc bất hợp pháp, lời lẽ lăng mạ nghiêm trọng",
+  Fu = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Du() : e === "pt" ? Pu() : e === "ch" ? xu() : e === "de" ? Uu() : e === "es" ? ju() : e === "fr" ? Lu() : e === "it" ? Mu() : e === "jp" ? Bu() : e === "pl" ? qu() : e === "ru" ? Cu() : e === "uk" ? zu() : Ku()
+  },
+  $u = () => "Invalid captcha. Please try again.",
+  Gu = () => "Captcha inválido. Por favor, tente novamente.",
+  Vu = () => "验证码无效，请重试。",
+  Hu = () => "Ungültiges Captcha. Bitte versuche es erneut.",
+  Wu = () => "Captcha inválido. Por favor, inténtelo de nuevo.",
+  Yu = () => "Captcha invalide. Veuillez réessayer.",
+  Ju = () => "Captcha non valido. Riprova.",
+  Qu = () => "キャプチャが無効です。もう一度お試しください。",
+  Xu = () => "Nieprawidłowa captcha. Spróbuj ponownie.",
+  Zu = () => "Неверная капча. Пожалуйста, попробуйте снова.",
+  el = () => "Неправильна капча. Будь ласка, спробуйте ще раз.",
+  tl = () => "Captcha không hợp lệ. Vui lòng thử lại.",
+  rl = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? $u() : e === "pt" ? Gu() : e === "ch" ? Vu() : e === "de" ? Hu() : e === "es" ? Wu() : e === "fr" ? Yu() : e === "it" ? Ju() : e === "jp" ? Qu() : e === "pl" ? Xu() : e === "ru" ? Zu() : e === "uk" ? el() : tl()
+  },
+  nl = () => "Invalid challenge response",
+  sl = () => "Resposta de desafio inválida",
+  al = () => "质询响应无效",
+  il = () => "Ungültige Challenge-Antwort",
+  ol = () => "Respuesta de desafío inválida",
+  cl = () => "Réponse au défi invalide",
+  ul = () => "Risposta alla sfida non valida",
+  ll = () => "無効なチャレンジ応答",
+  dl = () => "Nieprawidłowa odpowiedź na wyzwanie",
+  _l = () => "Неверный ответ на вызов",
+  fl = () => "Недійсна відповідь на виклик",
+  pl = () => "Phản hồi thử thách không hợp lệ",
+  hl = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? nl() : e === "pt" ? sl() : e === "ch" ? al() : e === "de" ? il() : e === "es" ? ol() : e === "fr" ? cl() : e === "it" ? ul() : e === "jp" ? ll() : e === "pl" ? dl() : e === "ru" ? _l() : e === "uk" ? fl() : pl()
+  },
+  ml = () => "The verification code is incorrect. Please check it and try again.",
+  gl = () => "Código inválido",
+  wl = () => "验证码不正确。请检查后重试。",
+  yl = () => "Der Bestätigungscode ist nicht korrekt. Bitte überprüfe ihn und versuche es erneut.",
+  bl = () => "El código de verificación es incorrecto. Por favor, revísalo e inténtalo de nuevo.",
+  vl = () => "Le code de vérification est incorrect. Veuillez le vérifier et réessayer.",
+  El = () => "Il codice di verifica non è corretto. Controllalo e riprova.",
+  Tl = () => "確認コードが正しくありません。コードを確認してもう一度お試しください。",
+  Ol = () => "Kod weryfikacyjny jest nieprawidłowy. Sprawdź go i spróbuj ponownie.",
+  kl = () => "Код подтверждения неверный. Пожалуйста, проверьте его и попробуйте снова.",
+  Il = () => "Код підтвердження неправильний. Будь ласка, перевірте його та спробуйте ще раз.",
+  Nl = () => "Mã xác minh không đúng. Vui lòng kiểm tra lại và thử lại.",
+  Sl = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? ml() : e === "pt" ? gl() : e === "ch" ? wl() : e === "de" ? yl() : e === "es" ? bl() : e === "fr" ? vl() : e === "it" ? El() : e === "jp" ? Tl() : e === "pl" ? Ol() : e === "ru" ? kl() : e === "uk" ? Il() : Nl()
+  },
+  Al = () => "Invalid discord.",
+  Rl = () => "Discord inválido.",
+  Dl = () => "无效的 Discord。",
+  Pl = () => "Ungültiger Discord.",
+  xl = () => "Discord inválido.",
+  Ul = () => "Discord invalide.",
+  jl = () => "Discord non valido.",
+  Ll = () => "無効なDiscordアカウントです。",
+  Ml = () => "Nieprawidłowy Discord.",
+  Bl = () => "Неверный Discord.",
+  ql = () => "Некоректний Discord.",
+  Cl = () => "Discord không hợp lệ.",
+  zl = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Al() : e === "pt" ? Rl() : e === "ch" ? Dl() : e === "de" ? Pl() : e === "es" ? xl() : e === "fr" ? Ul() : e === "it" ? jl() : e === "jp" ? Ll() : e === "pl" ? Ml() : e === "ru" ? Bl() : e === "uk" ? ql() : Cl()
+  },
+  Kl = () => "The name contains disallowed characters or words. Please choose a different name.",
+  Fl = () => "O nome contém caracteres ou palavras não permitidas. Por favor, escolha outro nome.",
+  $l = () => "名称包含禁止的字符或词语，请选择其他名称。",
+  Gl = () => "Der Name enthält nicht erlaubte Zeichen oder Wörter. Bitte wähle einen anderen Namen.",
+  Vl = () => "El nombre contiene caracteres o palabras no permitidas. Elige otro nombre.",
+  Hl = () => "Le nom contient des caractères ou des mots non autorisés. Veuillez choisir un autre nom.",
+  Wl = () => "Il nome contiene caratteri o parole non consentiti. Scegli un altro nome.",
+  Yl = () => "この名前には使用できない文字または単語が含まれています。別の名前を選んでください。",
+  Jl = () => "Nazwa zawiera niedozwolone znaki lub słowa. Wybierz inną nazwę.",
+  Ql = () => "Имя содержит запрещённые символы или слова. Пожалуйста, выберите другое имя.",
+  Xl = () => "Імʼя містить заборонені символи або слова. Оберіть інше імʼя.",
+  Zl = () => "Tên chứa ký tự hoặc từ không được phép. Hãy chọn tên khác.",
+  wt = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Kl() : e === "pt" ? Fl() : e === "ch" ? $l() : e === "de" ? Gl() : e === "es" ? Vl() : e === "fr" ? Hl() : e === "it" ? Wl() : e === "jp" ? Yl() : e === "pl" ? Jl() : e === "ru" ? Ql() : e === "uk" ? Xl() : Zl()
+  },
+  ed = () => "Please enter a valid phone number with country code.",
+  td = () => "Insira um número de telefone válido com código do país.",
+  rd = () => "请输入带国家代码的有效电话号码。",
+  nd = () => "Bitte gib eine gültige Telefonnummer mit Landesvorwahl ein.",
+  sd = () => "Introduce un número de teléfono válido con código de país.",
+  ad = () => "Veuillez saisir un numéro de téléphone valide avec l'indicatif du pays.",
+  id = () => "Inserisci un numero di telefono valido con il prefisso internazionale.",
+  od = () => "国番号付きの有効な電話番号を入力してください。",
+  cd = () => "Wprowadź poprawny numer telefonu wraz z kodem kraju.",
+  ud = () => "Введите действительный номер телефона с кодом страны.",
+  ld = () => "Будь ласка, введіть дійсний номер телефону з кодом країни.",
+  dd = () => "Vui lòng nhập số điện thoại hợp lệ kèm mã quốc gia.",
+  _d = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? ed() : e === "pt" ? td() : e === "ch" ? rd() : e === "de" ? nd() : e === "es" ? sd() : e === "fr" ? ad() : e === "it" ? id() : e === "jp" ? od() : e === "pl" ? cd() : e === "ru" ? ud() : e === "uk" ? ld() : dd()
+  },
+  fd = () => "Phone number not supported. Please try another number.",
+  pd = () => "Número de telefone não suportado. Por favor, tente outro número.",
+  hd = () => "不支持此电话号码。请尝试其他号码。",
+  md = () => "Telefonnummer nicht unterstützt. Bitte versuche eine andere Nummer.",
+  gd = () => "Número de teléfono no compatible. Por favor, prueba con otro número.",
+  wd = () => "Numéro de téléphone non pris en charge. Veuillez essayer un autre numéro.",
+  yd = () => "Numero di telefono non supportato. Prova con un altro numero.",
+  bd = () => "この電話番号はサポートされていません。別の番号をお試しください。",
+  vd = () => "Numer telefonu nie jest obsługiwany. Spróbuj innego numeru.",
+  Ed = () => "Номер телефона не поддерживается. Пожалуйста, попробуйте другой номер.",
+  Td = () => "Номер телефону не підтримується. Будь ласка, спробуйте інший номер.",
+  Od = () => "Số điện thoại không được hỗ trợ. Vui lòng thử số khác.",
+  kd = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? fd() : e === "pt" ? pd() : e === "ch" ? hd() : e === "de" ? md() : e === "es" ? gd() : e === "fr" ? wd() : e === "it" ? yd() : e === "jp" ? bd() : e === "pl" ? vd() : e === "ru" ? Ed() : e === "uk" ? Td() : Od()
+  },
+  Id = () => "The new leader must be a member of the alliance",
+  Nd = () => "O novo líder deve ser um membro da aliança",
+  Sd = () => "新盟主必须是联盟成员",
+  Ad = () => "Der neue Anführer muss Mitglied der Allianz sein",
+  Rd = () => "El nuevo líder debe ser miembro de la alianza",
+  Dd = () => "Le nouveau chef doit être membre de l’alliance",
+  Pd = () => "Il nuovo leader deve essere un membro dell'alleanza",
+  xd = () => "新しいリーダーはアライアンスのメンバーである必要があります。",
+  Ud = () => "Nowy lider musi być członkiem sojuszu",
+  jd = () => "Новый лидер должен быть участником альянса",
+  Ld = () => "Новий лідер має бути учасником альянсу",
+  Md = () => "Thủ lĩnh mới phải là thành viên của liên minh",
+  Bd = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Id() : e === "pt" ? Nd() : e === "ch" ? Sd() : e === "de" ? Ad() : e === "es" ? Rd() : e === "fr" ? Dd() : e === "it" ? Pd() : e === "jp" ? xd() : e === "pl" ? Ud() : e === "ru" ? jd() : e === "uk" ? Ld() : Md()
+  },
+  qd = () => "Leaderboard is temporarily disabled",
+  Cd = () => "O ranking está temporariamente desativado",
+  zd = () => "排行榜已暂时停用",
+  Kd = () => "Die Bestenliste ist vorübergehend deaktiviert",
+  Fd = () => "La clasificación está deshabilitada temporalmente",
+  $d = () => "Le classement est temporairement désactivé",
+  Gd = () => "La classifica è temporaneamente disattivata",
+  Vd = () => "ランキングは一時的に無効になっています。",
+  Hd = () => "Ranking jest tymczasowo wyłączony",
+  Wd = () => "Таблица лидеров временно отключена",
+  Yd = () => "Таблиця лідерів тимчасово вимкнена",
+  Jd = () => "Bảng xếp hạng tạm thời bị vô hiệu hóa",
+  $ = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? qd() : e === "pt" ? Cd() : e === "ch" ? zd() : e === "de" ? Kd() : e === "es" ? Fd() : e === "fr" ? $d() : e === "it" ? Gd() : e === "jp" ? Vd() : e === "pl" ? Hd() : e === "ru" ? Wd() : e === "uk" ? Yd() : Jd()
+  },
+  Qd = () => "Location name is too big (max. 128 characters)",
+  Xd = () => "Nome da localização é grande demais (max. 128 caracteres)",
+  Zd = () => "位置名称过长（最大 128 个字符）",
+  e_ = () => "Ortsname ist zu lang (max. 128 Zeichen)",
+  t_ = () => "El nombre de la ubicación es demasiado largo (máx. 128 caracteres)",
+  r_ = () => "Le nom de l’emplacement est trop long (max. 128 caractères)",
+  n_ = () => "Il nome della località è troppo lungo (max. 128 caratteri)",
+  s_ = () => "場所の名前が長すぎます（最大128文字）。",
+  a_ = () => "Nazwa lokalizacji jest za długa (maks. 128 znaków)",
+  i_ = () => "Название локации слишком длинное (макс. 128 символов)",
+  o_ = () => "Назва локації надто довга (макс. 128 символів)",
+  c_ = () => "Tên vị trí quá dài (tối đa 128 ký tự)",
+  u_ = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Qd() : e === "pt" ? Xd() : e === "ch" ? Zd() : e === "de" ? e_() : e === "es" ? t_() : e === "fr" ? r_() : e === "it" ? n_() : e === "jp" ? s_() : e === "pl" ? a_() : e === "ru" ? i_() : e === "uk" ? o_() : c_()
+  },
+  l_ = () => "Multi-accounting",
+  d_ = () => "Múltiplas contas",
+  __ = () => "多账号",
+  f_ = () => "Multi-Accounting",
+  p_ = () => "Multi-cuentas",
+  h_ = () => "Multi-comptes",
+  m_ = () => "Multi-account",
+  g_ = () => "複数アカウント使用",
+  w_ = () => "Multi-konta",
+  y_ = () => "Мультиаккаунт",
+  b_ = () => "Мультиакаунтинг",
+  v_ = () => "Nhiều tài khoản",
+  E_ = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? l_() : e === "pt" ? d_() : e === "ch" ? __() : e === "de" ? f_() : e === "es" ? p_() : e === "fr" ? h_() : e === "it" ? m_() : e === "jp" ? g_() : e === "pl" ? w_() : e === "ru" ? y_() : e === "uk" ? b_() : v_()
+  },
+  T_ = () => "Paint with more than one account or using virtual machines, residential proxies, or multi-accounting browsers",
+  O_ = () => "Pintar com mais de uma conta ou usando máquinas virtuais, proxies residenciais ou navegadores multi-conta",
+  k_ = () => "使用多个账号绘制像素，或使用虚拟机、住宅代理或多账号浏览器",
+  I_ = () => "Mehr als ein Konto zum Malen verwenden oder virtuelle Maschinen, Residential-Proxys oder Multi-Accounting-Browser nutzen",
+  N_ = () => "Pintar con más de una cuenta o usar máquinas virtuales, proxies residenciales o navegadores multicuenta",
+  S_ = () => "Utiliser plus d’un compte pour peindre, ou utiliser des machines virtuelles, des proxys résidentiels ou des navigateurs multi-comptes",
+  A_ = () => "Usare più di un account per dipingere, oppure usare macchine virtuali, proxy residenziali o browser multi-account",
+  R_ = () => "複数のアカウントを使ってピクセルを塗る、または仮想マシン、住宅プロキシ、マルチアカウントブラウザを使用する",
+  D_ = () => "Malowanie pikseli na więcej niż jednym koncie lub przy użyciu maszyn wirtualnych, proxy residential lub przeglądarek multi-kontowych",
+  P_ = () => "Рисование с более чем одного аккаунта или с использованием виртуальных машин, резидентных прокси или мультиаккаунт-браузеров",
+  x_ = () => "Малювання з більш ніж одного акаунта або з використанням віртуальних машин, резидентних проксі чи мультиакаунт-браузерів",
+  U_ = () => "Vẽ pixel bằng nhiều hơn một tài khoản hoặc bằng máy ảo, proxy dân cư hoặc trình duyệt đa tài khoản",
+  j_ = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? T_() : e === "pt" ? O_() : e === "ch" ? k_() : e === "de" ? I_() : e === "es" ? N_() : e === "fr" ? S_() : e === "it" ? A_() : e === "jp" ? R_() : e === "pl" ? D_() : e === "ru" ? P_() : e === "uk" ? x_() : U_()
+  },
+  L_ = r => `You can change your name again in ${r.days} days`,
+  M_ = r => `Você pode alterar seu nome novamente em ${r.days} dias.`,
+  B_ = r => `你可以在 ${r.days} 天后再次修改名称`,
+  q_ = r => `Du kannst deinen Namen in ${r.days} Tagen erneut ändern`,
+  C_ = r => `Podrás cambiar tu nombre de nuevo en ${r.days} días`,
+  z_ = r => `Vous pourrez changer votre nom à nouveau dans ${r.days} jours`,
+  K_ = r => `Potrai cambiare di nuovo il tuo nome tra ${r.days} giorni.`,
+  F_ = r => `${r.days}日後に再び名前を変更できます。`,
+  $_ = r => `Następną zmianę nazwy możesz wykonać za ${r.days} dni`,
+  G_ = r => `Вы сможете изменить имя снова через ${r.days} дн.`,
+  V_ = r => `Ви зможете змінити імʼя знову через ${r.days} днів`,
+  H_ = r => `Bạn có thể đổi tên lại sau ${r.days} ngày`,
+  W_ = (r, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? L_(r) : e === "pt" ? M_(r) : e === "ch" ? B_(r) : e === "de" ? q_(r) : e === "es" ? C_(r) : e === "fr" ? z_(r) : e === "it" ? K_(r) : e === "jp" ? F_(r) : e === "pl" ? $_(r) : e === "ru" ? G_(r) : e === "uk" ? V_(r) : H_(r)
+  },
+  Y_ = () => "No internet access or the servers are offline. Try again later.",
+  J_ = () => "Sem acesso à internet ou os servidores estão fora do ar. Tente novamente mais tarde.",
+  Q_ = () => "没有网络连接或服务器已离线。请稍后重试。",
+  X_ = () => "Keine Internetverbindung oder Server offline. Versuche es später erneut.",
+  Z_ = () => "Sin acceso a internet o los servidores están fuera de línea. Inténtalo de nuevo más tarde.",
+  ef = () => "Pas d’accès à Internet ou serveurs hors ligne. Réessayez plus tard.",
+  tf = () => "Nessun accesso a internet o server offline. Riprova più tardi.",
+  rf = () => "インターネットに接続されていないか、サーバーがオフラインです。しばらくしてから再度お試しください。",
+  nf = () => "Brak dostępu do internetu lub serwery są offline. Spróbuj ponownie później.",
+  sf = () => "Нет доступа к интернету или серверы недоступны. Попробуйте позже.",
+  af = () => "Немає доступу до інтернету або сервери недоступні. Спробуйте пізніше.",
+  of = () => "Không có kết nối internet hoặc máy chủ đang ngoại tuyến. Hãy thử lại sau.",
+  cf = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Y_() : e === "pt" ? J_() : e === "ch" ? Q_() : e === "de" ? X_() : e === "es" ? Z_() : e === "fr" ? ef() : e === "it" ? tf() : e === "jp" ? rf() : e === "pl" ? nf() : e === "ru" ? sf() : e === "uk" ? af() : of()
+  },
+  uf = () => "You are not allowed to verify a phone number. Try refreshing the page",
+  lf = () => "Você não está autorizado a verificar um número de telefone. Tente atualizar a página.",
+  df = () => "您无权验证电话号码。请尝试刷新页面。",
+  _f = () => "Sie dürfen keine Telefonnummer verifizieren. Versuchen Sie, die Seite zu aktualisieren.",
+  ff = () => "No tienes permiso para verificar un número de teléfono. Prueba a recargar la página.",
+  pf = () => "Vous n'êtes pas autorisé à vérifier un numéro de téléphone. Essayez d'actualiser la page.",
+  hf = () => "Non ti è consentito verificare un numero di telefono. Prova ad aggiornare la pagina.",
+  mf = () => "電話番号の認証は許可されていません。ページを更新してみてください。",
+  gf = () => "Nie możesz zweryfikować numeru telefonu. Spróbuj odświeżyć stronę.",
+  wf = () => "Вам не разрешено подтверждать номер телефона. Попробуйте обновить страницу.",
+  yf = () => "Вам не дозволено перевіряти номер телефону. Спробуйте оновити сторінку.",
+  bf = () => "Bạn không được phép xác minh số điện thoại. Vui lòng thử tải lại trang.",
+  vf = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? uf() : e === "pt" ? lf() : e === "ch" ? df() : e === "de" ? _f() : e === "es" ? ff() : e === "fr" ? pf() : e === "it" ? hf() : e === "jp" ? mf() : e === "pl" ? gf() : e === "ru" ? wf() : e === "uk" ? yf() : bf()
+  },
+  Ef = () => "Operation not allowed. Maybe you have too many favorite locations.",
+  Tf = () => "Operação não permitida. Talvez você tenha muitos locais favoritos.",
+  Of = () => "操作不被允许。你的收藏位置可能过多。",
+  kf = () => "Aktion nicht erlaubt. Vielleicht hast du zu viele Lieblingsorte.",
+  If = () => "Operación no permitida. Puede que tengas demasiadas ubicaciones favoritas.",
+  Nf = () => "Opération non autorisée. Vous avez peut-être trop d’emplacements favoris.",
+  Sf = () => "Operazione non consentita. Forse hai troppi luoghi preferiti.",
+  Af = () => "この操作は許可されていません。お気に入りの場所が多すぎる可能性があります。",
+  Rf = () => "Operacja niedozwolona. Możliwe, że masz zbyt wiele ulubionych lokalizacji.",
+  Df = () => "Операция запрещена. Возможно, у вас слишком много избранных локаций.",
+  Pf = () => "Операцію заборонено. Можливо, у вас забагато вибраних локацій.",
+  xf = () => "Thao tác không được phép. Có thể bạn đã có quá nhiều vị trí yêu thích.",
+  Uf = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Ef() : e === "pt" ? Tf() : e === "ch" ? Of() : e === "de" ? kf() : e === "es" ? If() : e === "fr" ? Nf() : e === "it" ? Sf() : e === "jp" ? Af() : e === "pl" ? Rf() : e === "ru" ? Df() : e === "uk" ? Pf() : xf()
+  },
+  jf = r => `Not enough charges: you have ${r.charges} but this overlay needs ${r.pixels}.`,
+  Lf = r => `Cargas insuficientes: você tem ${r.charges}, mas esta sobreposição precisa de ${r.pixels}.`,
+  Mf = r => `充能不足：你有 ${r.charges}，但此叠加层需要 ${r.pixels}。`,
+  Bf = r => `Nicht genügend Ladungen: Du hast ${r.charges}, aber dieses Overlay benötigt ${r.pixels}.`,
+  qf = r => `Cargas insuficientes: tienes ${r.charges} pero esta superposición necesita ${r.pixels}.`,
+  Cf = r => `Charges insuffisantes : vous avez ${r.charges} mais ce calque nécessite ${r.pixels}.`,
+  zf = r => `Cariche insufficienti: ne hai ${r.charges} ma questo overlay ne richiede ${r.pixels}.`,
+  Kf = r => `チャージが足りません：現在 ${r.charges} ですが、このオーバーレイには ${r.pixels} 必要です。`,
+  Ff = r => `Za mało ładunków: masz ${r.charges}, ale ta nakładka wymaga ${r.pixels}.`,
+  $f = r => `Недостаточно зарядов: у вас ${r.charges}, но для этого слоя нужно ${r.pixels}.`,
+  Gf = r => `Недостатньо зарядів: у вас ${r.charges}, але для цього шару потрібно ${r.pixels}.`,
+  Vf = r => `Không đủ lượt sơn: bạn có ${r.charges} nhưng lớp phủ này cần ${r.pixels}.`,
+  Hf = (r, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? jf(r) : e === "pt" ? Lf(r) : e === "ch" ? Mf(r) : e === "de" ? Bf(r) : e === "es" ? qf(r) : e === "fr" ? Cf(r) : e === "it" ? zf(r) : e === "jp" ? Kf(r) : e === "pl" ? Ff(r) : e === "ru" ? $f(r) : e === "uk" ? Gf(r) : Vf(r)
+  },
+  Wf = () => "You are trying to paint with a color you do not own",
+  Yf = () => "Você está tentando pintar com uma cor que não possui",
+  Jf = () => "你正在尝试使用尚未拥有的颜色进行绘制",
+  Qf = () => "Du versuchst mit einer Farbe zu malen, die du nicht besitzt",
+  Xf = () => "Estás intentando pintar con un color que no posees",
+  Zf = () => "Vous essayez de peindre avec une couleur que vous ne possédez pas",
+  ep = () => "Stai cercando di dipingere con un colore che non possiedi",
+  tp = () => "所持していない色で塗ろうとしています。",
+  rp = () => "Próbujesz malować kolorem, którego nie posiadasz",
+  np = () => "Вы пытаетесь рисовать цветом, которого у вас нет",
+  sp = () => "Ви намагаєтеся малювати кольором, якого не маєте",
+  ap = () => "Bạn đang cố tô bằng một màu bạn không sở hữu",
+  nt = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Wf() : e === "pt" ? Yf() : e === "ch" ? Jf() : e === "de" ? Qf() : e === "es" ? Xf() : e === "fr" ? Zf() : e === "it" ? ep() : e === "jp" ? tp() : e === "pl" ? rp() : e === "ru" ? np() : e === "uk" ? sp() : ap()
+  },
+  ip = () => "Phone already used",
+  op = () => "Telefone já usado",
+  cp = () => "电话号码已被使用",
+  up = () => "Telefonnummer bereits verwendet",
+  lp = () => "Teléfono ya utilizado",
+  dp = () => "Téléphone déjà utilisé",
+  _p = () => "Telefono già utilizzato",
+  fp = () => "この電話番号は既に使用されています。",
+  pp = () => "Numer telefonu jest już używany",
+  hp = () => "Телефон уже используется",
+  mp = () => "Номер телефону вже використовується",
+  gp = () => "Số điện thoại đã được sử dụng",
+  wp = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? ip() : e === "pt" ? op() : e === "ch" ? cp() : e === "de" ? up() : e === "es" ? lp() : e === "fr" ? dp() : e === "it" ? _p() : e === "jp" ? fp() : e === "pl" ? pp() : e === "ru" ? hp() : e === "uk" ? mp() : gp()
+  },
+  yp = () => "This phone number's region is not supported",
+  bp = () => "A região deste número de telefone não é suportada",
+  vp = () => "此电话号码的地区不受支持",
+  Ep = () => "Die Region dieser Telefonnummer wird nicht unterstützt",
+  Tp = () => "La región de este número de teléfono no es compatible",
+  Op = () => "La région de ce numéro de téléphone n'est pas prise en charge",
+  kp = () => "La regione di questo numero di telefono non è supportata",
+  Ip = () => "この電話番号の地域はサポートされていません",
+  Np = () => "Region tego numeru telefonu nie jest obsługiwany",
+  Sp = () => "Регион этого номера телефона не поддерживается",
+  Ap = () => "Регіон цього номера телефону не підтримується",
+  Rp = () => "Vùng của số điện thoại này không được hỗ trợ",
+  Dp = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? yp() : e === "pt" ? bp() : e === "ch" ? vp() : e === "de" ? Ep() : e === "es" ? Tp() : e === "fr" ? Op() : e === "it" ? kp() : e === "jp" ? Ip() : e === "pl" ? Np() : e === "ru" ? Sp() : e === "uk" ? Ap() : Rp()
+  },
+  Pp = () => "Refresh your page to get the latest update",
+  xp = () => "Recarregue sua página para obter as últimas atualizações",
+  Up = () => "刷新页面以获取最新更新",
+  jp = () => "Aktualisiere die Seite, um die neuesten Updates zu erhalten",
+  Lp = () => "Actualiza la página para obtener la última versión",
+  Mp = () => "Actualisez la page pour obtenir les dernières mises à jour",
+  Bp = () => "Ricarica la pagina per ottenere gli ultimi aggiornamenti",
+  qp = () => "最新の状態にするにはページを再読み込みしてください。",
+  Cp = () => "Odśwież stronę, aby zobaczyć najnowszą aktualizację",
+  zp = () => "Обновите страницу, чтобы получить последние изменения",
+  Kp = () => "Оновіть сторінку, щоб отримати останні оновлення",
+  Fp = () => "Hãy làm mới trang để nhận được cập nhật mới nhất",
+  st = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Pp() : e === "pt" ? xp() : e === "ch" ? Up() : e === "de" ? jp() : e === "es" ? Lp() : e === "fr" ? Mp() : e === "it" ? Bp() : e === "jp" ? qp() : e === "pl" ? Cp() : e === "ru" ? zp() : e === "uk" ? Kp() : Fp()
+  },
+  $p = () => "The request timed out. Please try again.",
+  Gp = () => "A solicitação expirou. Por favor, tente novamente.",
+  Vp = () => "请求超时。请重试。",
+  Hp = () => "Die Anfrage hat ein Zeitlimit überschritten. Bitte versuchen Sie es erneut.",
+  Wp = () => "La solicitud agotó el tiempo de espera. Por favor, inténtelo de nuevo.",
+  Yp = () => "La requête a expiré. Veuillez réessayer.",
+  Jp = () => "La richiesta è scaduta. Riprova.",
+  Qp = () => "リクエストがタイムアウトしました。もう一度お試しください。",
+  Xp = () => "Żądanie przekroczyło limit czasu. Proszę spróbować ponownie.",
+  Zp = () => "Время ожидания запроса истекло. Пожалуйста, попробуйте снова.",
+  eh = () => "Час очікування запиту вичерпано. Будь ласка, спробуйте ще раз.",
+  th = () => "Yêu cầu đã hết thời gian. Vui lòng thử lại.",
+  rh = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? $p() : e === "pt" ? Gp() : e === "ch" ? Vp() : e === "de" ? Hp() : e === "es" ? Wp() : e === "fr" ? Yp() : e === "it" ? Jp() : e === "jp" ? Qp() : e === "pl" ? Xp() : e === "ru" ? Zp() : e === "uk" ? eh() : th()
+  },
+  nh = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  sh = () => "A área selecionada tem histórico demais para exportar um timelapse. Tente uma área menor.",
+  ah = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  ih = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  oh = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  ch = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  uh = () => "L'area selezionata ha troppa cronologia per esportare un timelapse. Prova con un'area più piccola.",
+  lh = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  dh = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  _h = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  fh = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  ph = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  hh = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? nh() : e === "pt" ? sh() : e === "ch" ? ah() : e === "de" ? ih() : e === "es" ? oh() : e === "fr" ? ch() : e === "it" ? uh() : e === "jp" ? lh() : e === "pl" ? dh() : e === "ru" ? _h() : e === "uk" ? fh() : ph()
+  },
+  mh = () => "The service is currently unavailable. Please try again later.",
+  gh = () => "O serviço está indisponível no momento. Por favor, tente novamente mais tarde.",
+  wh = () => "服务当前不可用。请稍后再试。",
+  yh = () => "Der Dienst ist derzeit nicht verfügbar. Bitte versuchen Sie es später erneut.",
+  bh = () => "El servicio no está disponible actualmente. Por favor, inténtelo de nuevo más tarde.",
+  vh = () => "Le service est actuellement indisponible. Veuillez réessayer plus tard.",
+  Eh = () => "Il servizio non è attualmente disponibile. Riprova più tardi.",
+  Th = () => "現在、サービスはご利用いただけません。後でもう一度お試しください。",
+  Oh = () => "Usługa jest obecnie niedostępna. Proszę spróbować ponownie później.",
+  kh = () => "Сервис в настоящее время недоступен. Пожалуйста, попробуйте позже.",
+  Ih = () => "Сервіс наразі недоступний. Будь ласка, спробуйте пізніше.",
+  Nh = () => "Dịch vụ hiện không khả dụng. Vui lòng thử lại sau.",
+  Sh = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? mh() : e === "pt" ? gh() : e === "ch" ? wh() : e === "de" ? yh() : e === "es" ? bh() : e === "fr" ? vh() : e === "it" ? Eh() : e === "jp" ? Th() : e === "pl" ? Oh() : e === "ru" ? kh() : e === "uk" ? Ih() : Nh()
+  },
+  Ah = () => "Too many attempts. Please try again later",
+  Rh = () => "Muitas tentativas. Por favor, tente novamente mais tarde.",
+  Dh = () => "尝试次数过多，请稍后再试",
+  Ph = () => "Zu viele Versuche. Bitte versuchen Sie es später erneut",
+  xh = () => "Demasiados intentos. Por favor, inténtalo de nuevo más tarde",
+  Uh = () => "Trop de tentatives. Veuillez réessayer plus tard",
+  jh = () => "Troppi tentativi. Riprova più tardi.",
+  Lh = () => "試行回数が多すぎます。後で再度お試しください。",
+  Mh = () => "Zbyt wiele prób. Proszę spróbować ponownie później",
+  Bh = () => "Слишком много попыток. Пожалуйста, попробуйте позже",
+  qh = () => "Забагато спроб. Будь ласка, спробуйте пізніше",
+  Ch = () => "Quá nhiều lần thử. Vui lòng thử lại sau.",
+  at = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Ah() : e === "pt" ? Rh() : e === "ch" ? Dh() : e === "de" ? Ph() : e === "es" ? xh() : e === "fr" ? Uh() : e === "it" ? jh() : e === "jp" ? Lh() : e === "pl" ? Mh() : e === "ru" ? Bh() : e === "uk" ? qh() : Ch()
+  },
+  zh = () => "Access through Tor or anonymous networks is not allowed. Please connect from a regular network to continue.",
+  Kh = () => "O acesso através do Tor ou redes anônimas não é permitido. Por favor, conecte-se a partir de uma rede comum para continuar.",
+  Fh = () => "不允许通过 Tor 或匿名网络访问。请使用常规网络连接以继续。",
+  $h = () => "Der Zugriff über Tor oder anonyme Netzwerke ist nicht erlaubt. Bitte verbinden Sie sich über ein normales Netzwerk, um fortzufahren.",
+  Gh = () => "No se permite el acceso a través de Tor o redes anónimas. Por favor, conéctate desde una red normal para continuar.",
+  Vh = () => "L'accès via Tor ou des réseaux anonymes n'est pas autorisé. Veuillez vous connecter depuis un réseau normal pour continuer.",
+  Hh = () => "L'accesso tramite Tor o reti anonime non è consentito. Connettiti da una rete normale per continuare.",
+  Wh = () => "Torまたは匿名ネットワーク経由でのアクセスは許可されていません。続行するには通常のネットワークから接続してください。",
+  Yh = () => "Dostęp przez Tor lub sieci anonimowe jest niedozwolony. Aby kontynuować, połącz się ze zwykłej sieci.",
+  Jh = () => "Доступ через Tor или анонимные сети не разрешён. Пожалуйста, подключитесь из обычной сети, чтобы продолжить.",
+  Qh = () => "Доступ через Tor або анонімні мережі заборонено. Будь ласка, підключіться зі звичайної мережі, щоб продовжити.",
+  Xh = () => "Không cho phép truy cập qua Tor hoặc các mạng ẩn danh. Vui lòng kết nối từ mạng thông thường để tiếp tục.",
+  Zh = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? zh() : e === "pt" ? Kh() : e === "ch" ? Fh() : e === "de" ? $h() : e === "es" ? Gh() : e === "fr" ? Vh() : e === "it" ? Hh() : e === "jp" ? Wh() : e === "pl" ? Yh() : e === "ru" ? Jh() : e === "uk" ? Qh() : Xh()
+  },
+  em = () => "The typed username does not match your current username.",
+  tm = () => "O nome de usuário digitado não corresponde ao seu nome de usuário atual.",
+  rm = () => "输入的用户名与当前用户名不匹配。",
+  nm = () => "Der eingegebene Benutzername stimmt nicht mit deinem aktuellen Benutzernamen überein.",
+  sm = () => "El nombre de usuario ingresado no coincide con tu nombre de usuario actual.",
+  am = () => "Le nom d’utilisateur saisi ne correspond pas à votre nom d’utilisateur actuel.",
+  im = () => "Il nome utente inserito non corrisponde al tuo nome utente attuale.",
+  om = () => "入力されたユーザー名が、現在のユーザー名と一致しません。",
+  cm = () => "Wpisana nazwa użytkownika nie zgadza się z obecną nazwą.",
+  um = () => "Введённое имя пользователя не совпадает с текущим.",
+  lm = () => "Введене імʼя користувача не збігається з поточним.",
+  dm = () => "Tên người dùng nhập vào không trùng với tên hiện tại.",
+  _m = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? em() : e === "pt" ? tm() : e === "ch" ? rm() : e === "de" ? nm() : e === "es" ? sm() : e === "fr" ? am() : e === "it" ? im() : e === "jp" ? om() : e === "pl" ? cm() : e === "ru" ? um() : e === "uk" ? lm() : dm()
+  },
+  fm = () => "Unexpected server error. Try again later.",
+  pm = () => "Erro inesperado do servidor. Tente novamente mais tarde.",
+  hm = () => "服务器出现意外错误。请稍后再试。",
+  mm = () => "Unerwarteter Serverfehler. Versuche es später erneut.",
+  gm = () => "Error inesperado del servidor. Inténtalo de nuevo más tarde.",
+  wm = () => "Erreur serveur inattendue. Réessayez plus tard.",
+  ym = () => "Errore imprevisto del server. Riprova più tardi.",
+  bm = () => "予期しないサーバーエラーが発生しました。時間をおいて再度お試しください。",
+  vm = () => "Nieoczekiwany błąd serwera. Spróbuj ponownie później.",
+  Em = () => "Непредвиденная ошибка сервера. Попробуйте позже.",
+  Tm = () => "Неочікувана помилка сервера. Спробуйте пізніше.",
+  Om = () => "Lỗi máy chủ không mong muốn. Hãy thử lại sau.",
+  o = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? fm() : e === "pt" ? pm() : e === "ch" ? hm() : e === "de" ? mm() : e === "es" ? gm() : e === "fr" ? wm() : e === "it" ? ym() : e === "jp" ? bm() : e === "pl" ? vm() : e === "ru" ? Em() : e === "uk" ? Tm() : Om()
+  },
+  km = () => "The phone number is unsubscribed from SMS notifications. Check the link for more info: https://www.twilio.com/docs/api/errors/21610",
+  Im = () => "O número de telefone foi desinscrito das notificações por SMS. Verifique o link para mais informações: https://www.twilio.com/docs/api/errors/21610",
+  Nm = () => "电话号码已退订短信通知。请查看链接获取更多信息：https://www.twilio.com/docs/api/errors/21610",
+  Sm = () => "Die Telefonnummer wurde von SMS-Benachrichtigungen abgemeldet. Weitere Informationen finden Sie unter: https://www.twilio.com/docs/api/errors/21610",
+  Am = () => "El número de teléfono ha sido dado de baja de las notificaciones por SMS. Consulta el enlace para más información: https://www.twilio.com/docs/api/errors/21610",
+  Rm = () => "Le numéro de téléphone est désabonné des notifications par SMS. Consultez le lien pour plus d'informations : https://www.twilio.com/docs/api/errors/21610",
+  Dm = () => "Il numero di telefono è stato disiscritto dalle notifiche SMS. Per maggiori informazioni, consulta il link: https://www.twilio.com/docs/api/errors/21610",
+  Pm = () => "この電話番号はSMS通知から登録解除されました。詳細については、以下のリンクをご確認ください: https://www.twilio.com/docs/api/errors/21610",
+  xm = () => "Numer telefonu został wypisany z powiadomień SMS. Sprawdź link, aby uzyskać więcej informacji: https://www.twilio.com/docs/api/errors/21610",
+  Um = () => "Номер телефона отписан от SMS-уведомлений. Дополнительную информацию смотрите по ссылке: https://www.twilio.com/docs/api/errors/21610",
+  jm = () => "Номер телефону відключено від SMS-сповіщень. Перегляньте посилання для отримання додаткової інформації: https://www.twilio.com/docs/api/errors/21610",
+  Lm = () => "Số điện thoại này đã hủy đăng ký nhận thông báo SMS. Kiểm tra liên kết để biết thêm thông tin: https://www.twilio.com/docs/api/errors/21610",
+  Mm = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? km() : e === "pt" ? Im() : e === "ch" ? Nm() : e === "de" ? Sm() : e === "es" ? Am() : e === "fr" ? Rm() : e === "it" ? Dm() : e === "jp" ? Pm() : e === "pl" ? xm() : e === "ru" ? Um() : e === "uk" ? jm() : Lm()
+  },
+  Bm = () => "VPN or proxy detected. Please disable your VPN and try again.",
+  qm = () => "VPN ou proxy detectado. Por favor, desative sua VPN e tente novamente.",
+  Cm = () => "检测到VPN或代理。请关闭VPN后重试。",
+  zm = () => "VPN oder Proxy erkannt. Bitte deaktiviere dein VPN und versuche es erneut.",
+  Km = () => "VPN o proxy detectado. Por favor, desactiva tu VPN e inténtalo de nuevo.",
+  Fm = () => "VPN ou proxy détecté. Veuillez désactiver votre VPN et réessayer.",
+  $m = () => "VPN o proxy rilevato. Disattiva la tua VPN e riprova.",
+  Gm = () => "VPNまたはプロキシが検出されました。VPNを無効にしてもう一度お試しください。",
+  Vm = () => "Wykryto VPN lub proxy. Wyłącz VPN i spróbuj ponownie.",
+  Hm = () => "Обнаружен VPN или прокси. Пожалуйста, отключите VPN и попробуйте снова.",
+  Wm = () => "Виявлено VPN або проксі. Будь ласка, вимкніть VPN і спробуйте знову.",
+  Ym = () => "Phát hiện VPN hoặc proxy. Vui lòng tắt VPN và thử lại.",
+  Jm = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Bm() : e === "pt" ? qm() : e === "ch" ? Cm() : e === "de" ? zm() : e === "es" ? Km() : e === "fr" ? Fm() : e === "it" ? $m() : e === "jp" ? Gm() : e === "pl" ? Vm() : e === "ru" ? Hm() : e === "uk" ? Wm() : Ym()
+  },
+  Qm = () => "Failed to load WebAssembly module. Try to use another browser.",
+  Xm = () => "Erro ao carregar módulo WebAssembly. Tente usar outro navegador.",
+  Zm = () => "WebAssembly 模块加载失败。请尝试使用其他浏览器。",
+  eg = () => "Fehler beim Laden des WebAssembly-Moduls. Versuche, einen anderen Browser zu verwenden.",
+  tg = () => "Error al cargar el módulo WebAssembly. Intenta usar otro navegador.",
+  rg = () => "Erreur lors du chargement du module WebAssembly. Essayez d’utiliser un autre navigateur.",
+  ng = () => "Errore nel caricamento del modulo WebAssembly. Prova a usare un altro browser.",
+  sg = () => "WebAssembly モジュールの読み込みに失敗しました。別のブラウザをお試しください。",
+  ag = () => "Nie udało się załadować modułu WebAssembly. Spróbuj użyć innej przeglądarki.",
+  ig = () => "Ошибка при загрузке модуля WebAssembly. Попробуйте использовать другой браузер.",
+  og = () => "Не вдалося завантажити модуль WebAssembly. Спробуйте інший браузер.",
+  cg = () => "Lỗi tải mô-đun WebAssembly. Hãy thử dùng trình duyệt khác.",
+  ug = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Qm() : e === "pt" ? Xm() : e === "ch" ? Zm() : e === "de" ? eg() : e === "es" ? tg() : e === "fr" ? rg() : e === "it" ? ng() : e === "jp" ? sg() : e === "pl" ? ag() : e === "ru" ? ig() : e === "uk" ? og() : cg()
+  },
+  lg = () => "You already have this item. Please refresh the page.",
+  dg = () => "Você já possui este item. Atualize a página.",
+  _g = () => "你已经拥有此物品。请刷新页面。",
+  fg = () => "Du besitzt dieses Item bereits. Bitte aktualisiere die Seite.",
+  pg = () => "Ya tienes este ítem. Actualiza la página.",
+  hg = () => "Vous possédez déjà cet objet. Actualisez la page.",
+  mg = () => "Possiedi già questo oggetto. Aggiorna la pagina.",
+  gg = () => "このアイテムはすでに所持しています。ページを更新してください。",
+  wg = () => "Masz już ten przedmiot. Odśwież stronę.",
+  yg = () => "У вас уже есть этот предмет. Обновите страницу.",
+  bg = () => "У вас уже є цей предмет. Оновіть сторінку.",
+  vg = () => "Bạn đã sở hữu vật phẩm này. Hãy tải lại trang.",
+  yt = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? lg() : e === "pt" ? dg() : e === "ch" ? _g() : e === "de" ? fg() : e === "es" ? pg() : e === "fr" ? hg() : e === "it" ? mg() : e === "jp" ? gg() : e === "pl" ? wg() : e === "ru" ? yg() : e === "uk" ? bg() : vg()
+  },
+  Eg = () => "You are already in an alliance",
+  Tg = () => "Você já está em uma aliança",
+  Og = () => "你已经在一个联盟中",
+  kg = () => "Du bist bereits in einer Allianz",
+  Ig = () => "Ya estás en una alianza",
+  Ng = () => "Vous êtes déjà dans une alliance",
+  Sg = () => "Sei già in un'alleanza",
+  Ag = () => "すでにアライアンスに所属しています。",
+  Rg = () => "Jesteś już w sojuszu",
+  Dg = () => "Вы уже состоите в альянсе",
+  Pg = () => "Ви вже перебуваєте в альянсі",
+  xg = () => "Bạn đã ở trong một liên minh",
+  Ug = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Eg() : e === "pt" ? Tg() : e === "ch" ? Og() : e === "de" ? kg() : e === "es" ? Ig() : e === "fr" ? Ng() : e === "it" ? Sg() : e === "jp" ? Ag() : e === "pl" ? Rg() : e === "ru" ? Dg() : e === "uk" ? Pg() : xg()
+  },
+  jg = () => "You are not allowed to do this",
+  Lg = () => "Você não tem permissão para fazer isso",
+  Mg = () => "你无权执行此操作",
+  Bg = () => "Du bist dazu nicht berechtigt",
+  qg = () => "No tienes permiso para hacer esto",
+  Cg = () => "Vous n’êtes pas autorisé à faire cela",
+  zg = () => "Non hai il permesso di farlo",
+  Kg = () => "この操作を行う権限がありません。",
+  Fg = () => "Nie masz uprawnień, aby to zrobić",
+  $g = () => "У вас нет прав для этого действия",
+  Gg = () => "Ви не маєте права це робити",
+  Vg = () => "Bạn không có quyền làm việc này",
+  K = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? jg() : e === "pt" ? Lg() : e === "ch" ? Mg() : e === "de" ? Bg() : e === "es" ? qg() : e === "fr" ? Cg() : e === "it" ? zg() : e === "jp" ? Kg() : e === "pl" ? Fg() : e === "ru" ? $g() : e === "uk" ? Gg() : Vg()
+  },
+  Hg = () => "You do not have enough Droplets to buy this item.",
+  Wg = () => "Você não tem Droplets suficientes para comprar este item.",
+  Yg = () => "你的 Droplets 不足，无法购买此物品。",
+  Jg = () => "Du hast nicht genug Droplets, um dieses Item zu kaufen.",
+  Qg = () => "No tienes suficientes Droplets para comprar este ítem.",
+  Xg = () => "Vous n’avez pas assez de Droplets pour acheter cet objet.",
+  Zg = () => "Non hai abbastanza Droplets per acquistare questo oggetto.",
+  ew = () => "このアイテムを購入するのに十分なDropletsがありません。",
+  tw = () => "Nie masz wystarczającej liczby Droplets, aby kupić ten przedmiot.",
+  rw = () => "У вас недостаточно Droplets для покупки этого предмета.",
+  nw = () => "У вас недостатньо Droplets, щоб купити цей предмет.",
+  sw = () => "Bạn không có đủ Droplets để mua vật phẩm này.",
+  bt = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Hg() : e === "pt" ? Wg() : e === "ch" ? Yg() : e === "de" ? Jg() : e === "es" ? Qg() : e === "fr" ? Xg() : e === "it" ? Zg() : e === "jp" ? ew() : e === "pl" ? tw() : e === "ru" ? rw() : e === "uk" ? nw() : sw()
+  },
+  aw = () => "You need to be logged in to paint",
+  iw = () => "Você precisa estar conectado para pintar",
+  ow = () => "你需要登录才能进行绘制",
+  cw = () => "Du musst eingeloggt sein, um zu malen",
+  uw = () => "Debes iniciar sesión para pintar",
+  lw = () => "Vous devez être connecté pour peindre",
+  dw = () => "Devi avere effettuato l'accesso per dipingere",
+  _w = () => "ペイントするにはログインが必要です。",
+  fw = () => "Musisz być zalogowany, aby malować",
+  pw = () => "Чтобы рисовать, нужно войти в аккаунт",
+  hw = () => "Щоб малювати, необхідно увійти в акаунт",
+  mw = () => "Bạn cần đăng nhập để tô",
+  it = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? aw() : e === "pt" ? iw() : e === "ch" ? ow() : e === "de" ? cw() : e === "es" ? uw() : e === "fr" ? lw() : e === "it" ? dw() : e === "jp" ? _w() : e === "pl" ? fw() : e === "ru" ? pw() : e === "uk" ? hw() : mw()
+  },
+  gw = () => "You or someone in your network is making a lot of requests to the server. Try again later.",
+  ww = () => "Você ou alguém na sua rede está fazendo muitas solicitações ao servidor. Tente novamente mais tarde.",
+  yw = () => "你或与你同一网络中的某人向服务器发出了大量请求。请稍后再试。",
+  bw = () => "Du oder jemand in deinem Netzwerk sendet sehr viele Anfragen an den Server. Versuche es später erneut.",
+  vw = () => "Tú o alguien en tu red está realizando demasiadas solicitudes al servidor. Inténtalo de nuevo más tarde.",
+  Ew = () => "Vous ou quelqu’un sur votre réseau envoie beaucoup de requêtes au serveur. Réessayez plus tard.",
+  Tw = () => "Tu o qualcuno nella tua rete state facendo troppe richieste al server. Riprova più tardi.",
+  Ow = () => "あなた、または同じネットワーク上の誰かがサーバーへ大量のリクエストを送信しています。しばらくしてから再度お試しください。",
+  kw = () => "Ty lub ktoś w Twojej sieci wysyła zbyt wiele żądań do serwera. Spróbuj ponownie później.",
+  Iw = () => "Вы или кто-то в вашей сети делает слишком много запросов к серверу. Попробуйте позже.",
+  Nw = () => "Ви або хтось у вашій мережі надсилає надто багато запитів до сервера. Спробуйте пізніше.",
+  Sw = () => "Bạn hoặc ai đó trong mạng của bạn đang gửi quá nhiều yêu cầu đến máy chủ. Hãy thử lại sau.",
+  Aw = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? gw() : e === "pt" ? ww() : e === "ch" ? yw() : e === "de" ? bw() : e === "es" ? vw() : e === "fr" ? Ew() : e === "it" ? Tw() : e === "jp" ? Ow() : e === "pl" ? kw() : e === "ru" ? Iw() : e === "uk" ? Nw() : Sw()
+  },
+  Rw = r => `Your account has been suspended out until ${r.until}`,
+  Dw = r => `A sua conta está suspensa até ${r.until}`,
+  Pw = r => `你的账号已被暂停至 ${r.until}`,
+  xw = r => `Dein Konto ist gesperrt bis ${r.until}`,
+  Uw = r => `Tu cuenta ha sido suspendida hasta ${r.until}`,
+  jw = r => `Votre compte est suspendu jusqu’au ${r.until}`,
+  Lw = r => `Il tuo account è sospeso fino al ${r.until}`,
+  Mw = r => `あなたのアカウントは${r.until}まで一時停止されています。`,
+  Bw = r => `Twoje konto zostało zawieszone do ${r.until}`,
+  qw = r => `Ваш аккаунт заблокирован до ${r.until}`,
+  Cw = r => `Ваш акаунт призупинено до ${r.until}`,
+  zw = r => `Tài khoản của bạn đã bị đình chỉ đến ${r.until}`,
+  ot = (r, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Rw(r) : e === "pt" ? Dw(r) : e === "ch" ? Pw(r) : e === "de" ? xw(r) : e === "es" ? Uw(r) : e === "fr" ? jw(r) : e === "it" ? Lw(r) : e === "jp" ? Mw(r) : e === "pl" ? Bw(r) : e === "ru" ? qw(r) : e === "uk" ? Cw(r) : zw(r)
+  },
+  Kw = () => "A correction is already pending for this ticket.",
+  Fw = () => "Já existe uma correção pendente para este ticket.",
+  $w = () => "此工单已存在待审核的更正请求。",
+  Gw = () => "Für dieses Ticket ist bereits eine Korrektur in Arbeit.",
+  Vw = () => "Ya hay una corrección pendiente para este ticket.",
+  Hw = () => "Une correction est déjà en attente pour ce ticket.",
+  Ww = () => "Una correzione è già in sospeso per questo ticket.",
+  Yw = () => "このチケットには未処理の修正があります。",
+  Jw = () => "Dla tego zgłoszenia istnieje już oczekująca prośba o poprawkę.",
+  Qw = () => "Для этого тикета уже есть запрос на исправление.",
+  Xw = () => "Для цього тікета вже є запит на перевірці.",
+  Zw = () => "Đã có yêu cầu sửa đang chờ cho ticket này.",
+  ey = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? Kw() : e === "pt" ? Fw() : e === "ch" ? $w() : e === "de" ? Gw() : e === "es" ? Vw() : e === "fr" ? Hw() : e === "it" ? Ww() : e === "jp" ? Yw() : e === "pl" ? Jw() : e === "ru" ? Qw() : e === "uk" ? Xw() : Zw()
+  },
+  ty = () => "You cannot review your own correction request.",
+  ry = () => "Você não pode revisar sua própria solicitação de correção.",
+  ny = () => "不能审核自己提交的更正请求。",
+  sy = () => "Du kannst deine eigene Korrekturanfrage nicht prüfen.",
+  ay = () => "No puedes revisar tu propia solicitud de corrección.",
+  iy = () => "Tu ne peux pas examiner ta propre demande de correction.",
+  oy = () => "Non puoi revisionare la tua stessa richiesta di correzione.",
+  cy = () => "自分のリクエストはレビューできません。",
+  uy = () => "Nie możesz zweryfikować własnej prośby o poprawkę.",
+  ly = () => "Нельзя рассматривать собственный запрос.",
+  dy = () => "Не можна перевіряти власний запит.",
+  _y = () => "Bạn không thể duyệt yêu cầu của chính mình.",
+  fy = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? ty() : e === "pt" ? ry() : e === "ch" ? ny() : e === "de" ? sy() : e === "es" ? ay() : e === "fr" ? iy() : e === "it" ? oy() : e === "jp" ? cy() : e === "pl" ? uy() : e === "ru" ? ly() : e === "uk" ? dy() : _y()
+  },
+  py = () => "This correction has already been reviewed.",
+  hy = () => "Esta correção já foi revisada.",
+  my = () => "此请求已被审核。",
+  gy = () => "Diese Korrektur wurde bereits geprüft.",
+  wy = () => "Esta corrección ya ha sido revisada.",
+  yy = () => "Cette correction a déjà été examinée.",
+  by = () => "Questa correzione è già stata revisionata.",
+  vy = () => "このリクエストはすでにレビュー済みです。",
+  Ey = () => "Ta prośba została już rozpatrzona.",
+  Ty = () => "Этот запрос уже рассмотрен.",
+  Oy = () => "Цей запит вже перевірено.",
+  ky = () => "Yêu cầu này đã được duyệt.",
+  Iy = (r = {}, t = {}) => {
+    const e = t.locale ?? d();
+    return e === "en" ? py() : e === "pt" ? hy() : e === "ch" ? my() : e === "de" ? gy() : e === "es" ? wy() : e === "fr" ? yy() : e === "it" ? by() : e === "jp" ? vy() : e === "pl" ? Ey() : e === "ru" ? Ty() : e === "uk" ? Oy() : ky()
+  };
+var pe, he;
+class Ny {
+  constructor(t) {
+    b(this, pe, I(!0));
+    b(this, he, I(null));
+    this.url = t
+  }
+  get online() {
+    return T(p(this, pe))
+  }
+  set online(t) {
+    O(p(this, pe), t, !0)
+  }
+  get serverTimeOffsetMs() {
+    return T(p(this, he))
+  }
+  set serverTimeOffsetMs(t) {
+    O(p(this, he), t, !0)
+  }
+  hasServerTimeEstimate() {
+    return this.serverTimeOffsetMs !== null
+  }
+  getEstimatedServerNowMs() {
+    const t = Date.now();
+    return this.serverTimeOffsetMs === null ? t - 6e4 : t + this.serverTimeOffsetMs
+  }
+  clampWaybackTimestamp(t) {
+    if (!Number.isFinite(t)) return 0;
+    const e = Math.trunc(t);
+    if (e <= 0) return 0;
+    const n = Math.trunc(this.getEstimatedServerNowMs());
+    return e > n ? n : e
+  }
+  updateServerTimeEstimate(t) {
+    const e = t.headers.get("date");
+    if (!e) return;
+    const n = new Date(e).getTime();
+    Number.isFinite(n) && (this.serverTimeOffsetMs = n - Date.now())
+  }
+  async verifyAnticheat(t) {
+    if ((await this.request("/anticheat/verify", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          sealedResults: t.base64()
+        })
+      })).status !== a.OK) throw new Error(o())
+  }
+  async guardedFetch(t, e) {
+    try {
+      const n = await fetch(`${this.url}${t}`, e);
+      return this.online = !0, this.updateServerTimeEstimate(n), n
+    } catch (n) {
+      throw console.error("Fetch error:", n), this.online = !1, new Error(Na())
+    }
+  }
+  async request(t, e) {
+    var u;
+    e = {
+      credentials: "include",
+      ...e
+    };
+    let n = await this.guardedFetch(t, e);
+    if (n.status === a.FORBIDDEN && n.headers.get("x-block-reason") === "tor") throw new Error(Zh());
+    const s = ((u = n.headers.get("cf-mitigated")) == null ? void 0 : u.toLowerCase()) === "challenge";
+    if (n.status === 403 && s) {
+      if (ee.setCfLikelyAutomated(!0), !await ht()) throw new Error(He());
+      n = await this.guardedFetch(t, e)
+    }
+    if ((e == null ? void 0 : e.throwOnStatus) ?? !0) {
+      if (n.status === a.TOO_MANY_REQUESTS) throw new Error(Aw());
+      if (n.status === a.REQUEST_TIMEOUT) throw new Error(rh());
+      if (n.status === a.SERVICE_UNAVAILABLE) throw new Error(Sh())
+    }
+    return n
+  }
 }
-var i = (n => (n[n.CONTINUE = 100] = "CONTINUE", n[n.SWITCHING_PROTOCOLS = 101] = "SWITCHING_PROTOCOLS", n[n.PROCESSING = 102] = "PROCESSING", n[n.EARLY_HINTS = 103] = "EARLY_HINTS", n[n.OK = 200] = "OK", n[n.CREATED = 201] = "CREATED", n[n.ACCEPTED = 202] = "ACCEPTED", n[n.NON_AUTHORITATIVE_INFORMATION = 203] = "NON_AUTHORITATIVE_INFORMATION", n[n.NO_CONTENT = 204] = "NO_CONTENT", n[n.RESET_CONTENT = 205] = "RESET_CONTENT", n[n.PARTIAL_CONTENT = 206] = "PARTIAL_CONTENT", n[n.MULTI_STATUS = 207] = "MULTI_STATUS", n[n.ALREADY_REPORTED = 208] = "ALREADY_REPORTED", n[n.IM_USED = 226] = "IM_USED", n[n.MULTIPLE_CHOICES = 300] = "MULTIPLE_CHOICES", n[n.MOVED_PERMANENTLY = 301] = "MOVED_PERMANENTLY", n[n.MOVED_TEMPORARILY = 302] = "MOVED_TEMPORARILY", n[n.FOUND = 302] = "FOUND", n[n.SEE_OTHER = 303] = "SEE_OTHER", n[n.NOT_MODIFIED = 304] = "NOT_MODIFIED", n[n.USE_PROXY = 305] = "USE_PROXY", n[n.SWITCH_PROXY = 306] = "SWITCH_PROXY", n[n.TEMPORARY_REDIRECT = 307] = "TEMPORARY_REDIRECT", n[n.PERMANENT_REDIRECT = 308] = "PERMANENT_REDIRECT", n[n.BAD_REQUEST = 400] = "BAD_REQUEST", n[n.UNAUTHORIZED = 401] = "UNAUTHORIZED", n[n.PAYMENT_REQUIRED = 402] = "PAYMENT_REQUIRED", n[n.FORBIDDEN = 403] = "FORBIDDEN", n[n.NOT_FOUND = 404] = "NOT_FOUND", n[n.METHOD_NOT_ALLOWED = 405] = "METHOD_NOT_ALLOWED", n[n.NOT_ACCEPTABLE = 406] = "NOT_ACCEPTABLE", n[n.PROXY_AUTHENTICATION_REQUIRED = 407] = "PROXY_AUTHENTICATION_REQUIRED", n[n.REQUEST_TIMEOUT = 408] = "REQUEST_TIMEOUT", n[n.CONFLICT = 409] = "CONFLICT", n[n.GONE = 410] = "GONE", n[n.LENGTH_REQUIRED = 411] = "LENGTH_REQUIRED", n[n.PRECONDITION_FAILED = 412] = "PRECONDITION_FAILED", n[n.REQUEST_TOO_LONG = 413] = "REQUEST_TOO_LONG", n[n.CONTENT_TOO_LARGE = 413] = "CONTENT_TOO_LARGE", n[n.REQUEST_URI_TOO_LONG = 414] = "REQUEST_URI_TOO_LONG", n[n.URI_TOO_LONG = 414] = "URI_TOO_LONG", n[n.UNSUPPORTED_MEDIA_TYPE = 415] = "UNSUPPORTED_MEDIA_TYPE", n[n.REQUESTED_RANGE_NOT_SATISFIABLE = 416] = "REQUESTED_RANGE_NOT_SATISFIABLE", n[n.RANGE_NOT_SATISFIABLE = 416] = "RANGE_NOT_SATISFIABLE", n[n.EXPECTATION_FAILED = 417] = "EXPECTATION_FAILED", n[n.IM_A_TEAPOT = 418] = "IM_A_TEAPOT", n[n.INSUFFICIENT_SPACE_ON_RESOURCE = 419] = "INSUFFICIENT_SPACE_ON_RESOURCE", n[n.MISDIRECTED_REQUEST = 421] = "MISDIRECTED_REQUEST", n[n.UNPROCESSABLE_ENTITY = 422] = "UNPROCESSABLE_ENTITY", n[n.UNPROCESSABLE_CONTENT = 422] = "UNPROCESSABLE_CONTENT", n[n.LOCKED = 423] = "LOCKED", n[n.FAILED_DEPENDENCY = 424] = "FAILED_DEPENDENCY", n[n.TOO_EARLY = 425] = "TOO_EARLY", n[n.UPGRADE_REQUIRED = 426] = "UPGRADE_REQUIRED", n[n.PRECONDITION_REQUIRED = 428] = "PRECONDITION_REQUIRED", n[n.TOO_MANY_REQUESTS = 429] = "TOO_MANY_REQUESTS", n[n.REQUEST_HEADER_FIELDS_TOO_LARGE = 431] = "REQUEST_HEADER_FIELDS_TOO_LARGE", n[n.UNAVAILABLE_FOR_LEGAL_REASONS = 451] = "UNAVAILABLE_FOR_LEGAL_REASONS", n[n.INTERNAL_SERVER_ERROR = 500] = "INTERNAL_SERVER_ERROR", n[n.NOT_IMPLEMENTED = 501] = "NOT_IMPLEMENTED", n[n.BAD_GATEWAY = 502] = "BAD_GATEWAY", n[n.SERVICE_UNAVAILABLE = 503] = "SERVICE_UNAVAILABLE", n[n.GATEWAY_TIMEOUT = 504] = "GATEWAY_TIMEOUT", n[n.HTTP_VERSION_NOT_SUPPORTED = 505] = "HTTP_VERSION_NOT_SUPPORTED", n[n.VARIANT_ALSO_NEGOTIATES = 506] = "VARIANT_ALSO_NEGOTIATES", n[n.INSUFFICIENT_STORAGE = 507] = "INSUFFICIENT_STORAGE", n[n.LOOP_DETECTED = 508] = "LOOP_DETECTED", n[n.NOT_EXTENDED = 510] = "NOT_EXTENDED", n[n.NETWORK_AUTHENTICATION_REQUIRED = 511] = "NETWORK_AUTHENTICATION_REQUIRED", n[n.AWS_ELB_000 = 0] = "AWS_ELB_000", n[n.THIS_IS_FINE = 218] = "THIS_IS_FINE", n[n.PAGE_EXPIRED = 419] = "PAGE_EXPIRED", n[n.METHOD_FAILURE = 420] = "METHOD_FAILURE", n[n.ENHANCE_YOUR_CALM = 420] = "ENHANCE_YOUR_CALM", n[n.REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY = 430] = "REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY", n[n.SHOPIFY_SECURITY_REJECTION = 430] = "SHOPIFY_SECURITY_REJECTION", n[n.LOGIN_TIME_OUT = 440] = "LOGIN_TIME_OUT", n[n.NO_RESPONSE = 444] = "NO_RESPONSE", n[n.RETRY_WITH = 449] = "RETRY_WITH", n[n.BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS = 450] = "BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS", n[n.REDIRECT_IIS = 451] = "REDIRECT_IIS", n[n.CLIENT_CLOSED_CONNECTION_AWS_ELB = 460] = "CLIENT_CLOSED_CONNECTION_AWS_ELB", n[n.X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB = 463] = "X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB", n[n.INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB = 464] = "INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB", n[n.REQUEST_HEADER_TOO_LARGE = 494] = "REQUEST_HEADER_TOO_LARGE", n[n.SSL_CERTIFICATE_ERROR = 495] = "SSL_CERTIFICATE_ERROR", n[n.SSL_CERTIFICATE_REQUIRED = 496] = "SSL_CERTIFICATE_REQUIRED", n[n.HTTP_REQUEST_SENT_TO_HTTPS_PORT = 497] = "HTTP_REQUEST_SENT_TO_HTTPS_PORT", n[n.INVALID_TOKEN = 498] = "INVALID_TOKEN", n[n.CLIENT_CLOSED_REQUEST = 499] = "CLIENT_CLOSED_REQUEST", n[n.TOKEN_REQUIRED = 499] = "TOKEN_REQUIRED", n[n.BANDWIDTH_LIMIT_EXCEEDED = 509] = "BANDWIDTH_LIMIT_EXCEEDED", n[n.RESOURCE_LIMIT_IS_REACHED = 508] = "RESOURCE_LIMIT_IS_REACHED", n[n.WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR = 520] = "WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR", n[n.WEB_SERVER_IS_DOWN = 521] = "WEB_SERVER_IS_DOWN", n[n.CONNECTION_TIMED_OUT = 522] = "CONNECTION_TIMED_OUT", n[n.ORIGIN_IS_UNREACHABLE = 523] = "ORIGIN_IS_UNREACHABLE", n[n.A_TIMEOUT_OCCURRED = 524] = "A_TIMEOUT_OCCURRED", n[n.SSL_HANDSHAKE_FAILED = 525] = "SSL_HANDSHAKE_FAILED", n[n.INVALID_SSL_CERTIFICATE = 526] = "INVALID_SSL_CERTIFICATE", n[n.RAILGUN_ERROR = 527] = "RAILGUN_ERROR", n[n.SITE_IS_OVERLOADED = 529] = "SITE_IS_OVERLOADED", n[n.ORIGIN_UNAVAILABLE = 530] = "ORIGIN_UNAVAILABLE", n[n.ORIGIN_DNS_ERROR = 530] = "ORIGIN_DNS_ERROR", n[n.SITE_IS_FROZEN = 530] = "SITE_IS_FROZEN", n[n.TEMPORARILY_DISABLED = 540] = "TEMPORARILY_DISABLED", n[n.UNAUTHORIZED_AWS_ELB = 561] = "UNAUTHORIZED_AWS_ELB", n[n.NETWORK_READ_TIMEOUT_ERROR = 598] = "NETWORK_READ_TIMEOUT_ERROR", n[n.NETWORK_CONNECT_TIMEOUT_ERROR = 599] = "NETWORK_CONNECT_TIMEOUT_ERROR", n[n.UNEXPECTED_TOKEN = 783] = "UNEXPECTED_TOKEN", n[n.REQUEST_DENIED = 999] = "REQUEST_DENIED", n))(i || {});
-const B = {
+pe = new WeakMap, he = new WeakMap;
+class l extends Error {
+  constructor(t, e) {
+    super(t), this.message = t, this.status = e
+  }
+}
+class Fb extends Error {}
+
+function Sy(r) {
+  return class extends r {
+    async me() {
+      const t = await this.request("/me", {
+        credentials: "include",
+        throwOnStatus: !1
+      });
+      if (t.status === a.OK) return await t.json();
+      if (t.status !== a.UNAUTHORIZED) throw new l(o(), t.status)
+    }
+    async meEmail() {
+      const t = await this.request("/me/email", {
+        credentials: "include"
+      });
+      if (t.status === a.OK) return (await t.json()).email
+    }
+    async logout() {
+      const t = await this.request("/auth/logout", {
+        method: "POST",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new Error(await t.text());
+      return await t.json()
+    }
+    async getOtpCooldown() {
+      const t = await this.request("/anticheat/otp/cooldown", {
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new Error(o());
+      return await t.json()
+    }
+    async sendOtp(t) {
+      const e = await this.request("/anticheat/otp/send", {
+        method: "POST",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          phone: t
+        }),
+        throwOnStatus: !1
+      });
+      if (e.status === a.BAD_REQUEST) throw new Error(_d());
+      if (e.status === a.CONFLICT) throw new Error(wp());
+      if (e.status === a.FORBIDDEN) throw new Error(vf());
+      if (e.status === a.TOO_MANY_REQUESTS) throw new Error(at());
+      if (e.status === a.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(Dp());
+      if (e.status === a.LOCKED) throw new Error(Mm());
+      if (e.status === a.UNPROCESSABLE_ENTITY) throw new Error(kd());
+      if (e.status === a.NOT_ACCEPTABLE) throw new Error(Jm());
+      if (e.status === a.PRECONDITION_FAILED) throw new Error(li());
+      if (e.status !== a.OK) throw new Error(o());
+      return await e.json()
+    }
+    async verifyChallenge(t) {
+      let e;
+      switch (t.type) {
+        case "pow":
+          e = {
+            code: t.challengeId,
+            nonce: t.nonce
+          };
+          break;
+        case "captcha":
+          e = {
+            code: t.sessionId
+          };
+          break;
+        case "otp":
+          e = {
+            code: t.code
+          }
+      }
+      const n = await this.request("/anticheat/challenge/verify", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify(e),
+        headers: {
+          "x-fp": await Ge()
+        }
+      });
+      if (t.type === "otp") {
+        if (n.status === a.GONE) throw new Error(yc());
+        if (n.status === a.BAD_REQUEST) throw new Error(Sl());
+        if (n.status === a.TOO_MANY_REQUESTS) throw new Error(at());
+        if (n.status !== a.OK) throw new Error(o())
+      } else {
+        if (n.status === a.BAD_REQUEST) throw new Error(hl());
+        if (n.status !== a.OK) throw new Error(o())
+      }
+    }
+    async updateMe(t) {
+      const e = await this.request("/me/update", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify(t)
+      });
+      if (e.status === a.BAD_REQUEST) {
+        const n = await e.json(),
+          s = (n == null ? void 0 : n.error) ?? "";
+        if (s === "invalid_name") throw new Error(wt());
+        if (s === "invalid_discord") throw new Error(zl());
+        if (typeof s == "string" && s.startsWith("name_change_cooldown:")) {
+          const i = parseInt(s.split(":")[1] ?? "0", 10);
+          throw new Error(W_({
+            days: i
+          }))
+        }
+        throw new Error(n == null ? void 0 : n.error)
+      } else if (e.status !== a.OK) throw new Error(o())
+    }
+    async deleteMe(t) {
+      const e = await this.request("/me", {
+        method: "DELETE",
+        credentials: "include",
+        body: JSON.stringify({
+          confirmText: t
+        })
+      });
+      if (e.status === a.BAD_REQUEST) throw new Error(_m());
+      if (e.status !== a.OK) throw new Error(o())
+    }
+    async favoriteLocation(t) {
+      const e = await this.request("/favorite-location", {
+        method: "POST",
+        body: JSON.stringify({
+          latitude: t[0],
+          longitude: t[1]
+        }),
+        credentials: "include"
+      });
+      if (e.status === a.FORBIDDEN) throw new Error(Uf());
+      if (e.status !== a.OK) throw new Error(o())
+    }
+    async deleteFavoriteLocation(t) {
+      if ((await this.request("/favorite-location/delete", {
+          method: "POST",
+          body: JSON.stringify({
+            id: t
+          }),
+          credentials: "include"
+        })).status !== a.OK) throw new Error(o())
+    }
+    async updateFavoriteLocation(t, e) {
+      const n = await this.request("/favorite-location/update", {
+        method: "POST",
+        body: JSON.stringify({
+          id: t,
+          name: e
+        }),
+        credentials: "include"
+      });
+      if (n.status === a.BAD_REQUEST) throw new Error(u_());
+      if (n.status !== a.OK) throw new Error(o())
+    }
+    async getMyProfilePictures() {
+      const t = await this.request("/me/profile-pictures", {
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new Error(o());
+      return t.json()
+    }
+    async changeProfilePicture(t) {
+      if ((await this.request("/me/profile-picture/change", {
+          method: "POST",
+          credentials: "include",
+          body: JSON.stringify({
+            pictureId: t
+          })
+        })).status !== a.OK) throw new Error(o())
+    }
+    async unlinkDiscord() {
+      const t = await this.request("/discord/unlink", {
+        method: "POST",
+        credentials: "include"
+      });
+      if (t.status !== a.NO_CONTENT) throw new l(o(), t.status)
+    }
+    async deleteSessions() {
+      const t = await this.request("/me/sessions", {
+        method: "DELETE",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status)
+    }
+    async deleteAllUserSessions(t) {
+      const e = await this.request(`/staff/dashboard/users/${t}/sessions`, {
+        method: "DELETE",
+        credentials: "include"
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status)
+    }
+    async getMySuspensionDetails() {
+      const t = await this.request("/me/suspension", {
+        method: "GET",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status);
+      const e = await t.json();
+      return !(e != null && e.active) || !Array.isArray(e == null ? void 0 : e.punishments) ? null : {
+        punishments: e.punishments.map(s => ({
+          kind: (s == null ? void 0 : s.kind) === "ban" ? "ban" : "timeout",
+          reason: s == null ? void 0 : s.reason,
+          timeoutUntil: typeof(s == null ? void 0 : s.timeoutUntil) == "string" ? s.timeoutUntil : void 0,
+          reportedLatitude: typeof(s == null ? void 0 : s.reportedLatitude) == "number" ? s.reportedLatitude : void 0,
+          reportedLongitude: typeof(s == null ? void 0 : s.reportedLongitude) == "number" ? s.reportedLongitude : void 0,
+          zoom: typeof(s == null ? void 0 : s.zoom) == "number" ? s.zoom : void 0,
+          appealSubmitted: (s == null ? void 0 : s.appealSubmitted) === !0,
+          ticketId: typeof(s == null ? void 0 : s.ticketId) == "string" ? s.ticketId : void 0
+        }))
+      }
+    }
+    async getUserPixelsPaintedToday() {
+      const t = await this.request("/me/pixels-painted-today", {
+        method: "GET",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status);
+      const e = await t.json();
+      return (e == null ? void 0 : e.paintedToday) ?? 0
+    }
+    async markRulesAsRead() {
+      return (await this.request("/me/rules/read", {
+        method: "POST",
+        credentials: "include"
+      })).status === a.OK
+    }
+  }
+}
+
+function Ay(r) {
+  return class extends r {
+    async health() {
+      return (await this.request("/health")).json()
+    }
+    async postAdjustUserDroplets(t, e) {
+      const n = await this.request("/staff/dashboard/users/adjust-user-droplets", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          userId: t,
+          delta: e
+        })
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      return (await n.json()).droplets
+    }
+    async postAdminRenameUser(t, e) {
+      const n = await this.request("/staff/dashboard/users/rename", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          userId: t,
+          newName: e
+        })
+      });
+      if (n.status === a.BAD_REQUEST) {
+        const s = await n.json(),
+          i = (s == null ? void 0 : s.error) ?? "";
+        throw i === "invalid_name" ? new l(wt(), a.BAD_REQUEST) : new l(typeof i == "string" && i ? i : o(), a.BAD_REQUEST)
+      }
+      if (n.status !== a.OK) throw new l(o(), n.status)
+    }
+    async postAdminChangeUserEmail(t, e) {
+      const n = await this.request("/staff/dashboard/users/email", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          userId: t,
+          email: e
+        })
+      });
+      if (n.status === a.BAD_REQUEST) {
+        const s = await n.json(),
+          i = (s == null ? void 0 : s.error) ?? "";
+        throw i === "email_required" || i === "invalid_email" ? new l(Uo(), a.BAD_REQUEST) : new l(typeof i == "string" && i ? i : o(), a.BAD_REQUEST)
+      }
+      if (n.status === a.CONFLICT) {
+        const s = await n.json();
+        if (((s == null ? void 0 : s.error) ?? "") === "email_already_in_use") {
+          const u = new l(typeof(s == null ? void 0 : s.userId) == "number" ? vo({
+            userId: s.userId
+          }) : oo(), a.CONFLICT);
+          throw typeof(s == null ? void 0 : s.userId) == "number" && (u.userId = s.userId), u
+        }
+        throw new l(o(), a.CONFLICT)
+      }
+      if (n.status === a.NOT_FOUND) throw new l("User not found.", a.NOT_FOUND);
+      if (n.status !== a.OK) throw new l(o(), n.status)
+    }
+    async getAdminUserProfilePictures(t) {
+      const e = await this.request(`/staff/dashboard/users/profile-pictures?userId=${t}`, {
+        credentials: "include"
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status);
+      return e.json()
+    }
+    async postAdminRemoveUserPicture(t) {
+      const e = await this.request("/staff/dashboard/users/remove-picture", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          pictureId: t
+        })
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status)
+    }
+    async postAdminRerollUserAvatar(t) {
+      const e = await this.request("/staff/dashboard/users/reroll-avatar", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          userId: t
+        })
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status);
+      return e.json()
+    }
+    async banUsers(t, e, n) {
+      const s = await this.request("/staff/dashboard/summary/users/ban", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          userIds: t,
+          reason: e,
+          notes: n
+        })
+      });
+      if (s.status !== a.OK) throw new l(o(), s.status)
+    }
+    async timeoutUsers(t, e, n) {
+      const s = await this.request("/staff/dashboard/summary/users/timeout", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          userIds: t,
+          reason: e,
+          notes: n
+        })
+      });
+      if (s.status !== a.OK) throw new l(o(), s.status)
+    }
+    async incrementUsersDroplets(t, e, n) {
+      const s = await this.request("/staff/dashboard/summary/users/increment-droplet", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          userIds: t,
+          delta: e,
+          notes: n
+        })
+      });
+      if (s.status !== a.OK) throw new l(o(), s.status)
+    }
+    async reloadPunishmentCache() {
+      const t = await this.request("/staff/dashboard/summary/reload-punishment-cache", {
+        method: "POST",
+        credentials: "include"
+      });
+      if (t.status === a.CONFLICT) throw new l(on(), t.status);
+      if (t.status !== a.OK && t.status !== a.ACCEPTED) throw new l(o(), t.status)
+    }
+    async postUnbanUsers(t, e) {
+      const n = await this.request("/staff/dashboard/summary/users/unban", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          userIds: t,
+          notes: e
+        })
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status)
+    }
+    async postAnticheatUnbanUsers(t, e) {
+      const n = await this.request("/staff/dashboard/anticheat/unban", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          userIds: t,
+          notes: e
+        })
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status)
+    }
+    async postAnticheatBanUsers(t, e, n) {
+      const s = await this.request("/staff/dashboard/anticheat/ban", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          userIds: t,
+          notes: e,
+          reason: n
+        })
+      });
+      if (s.status !== a.OK) throw new l(o(), s.status)
+    }
+    async postBulkPhoneVerification(t, e) {
+      const n = await this.request("/staff/dashboard/summary/users/phone-verification", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          userIds: t,
+          notes: e
+        })
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      return await n.json()
+    }
+    async getAuditLogs(t) {
+      const e = new URLSearchParams;
+      t.actorUserId !== void 0 && e.set("actorUserId", String(t.actorUserId)), t.targetUserId !== void 0 && e.set("targetUserId", String(t.targetUserId)), t.action && e.set("action", t.action), t.sortKey && e.set("sortKey", t.sortKey), t.sortDir && e.set("sortDir", t.sortDir), e.set("limit", String(t.limit)), e.set("offset", String(t.offset));
+      const n = await this.request(`/staff/dashboard/audit-logs/see?${e.toString()}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      return n.json()
+    }
+    async postUsersSuspend(t, e, n) {
+      let s;
+      switch (e) {
+        case "dashboard":
+          s = `/staff/dashboard/users/${n}`;
+          break;
+        case "summary":
+          s = `/staff/dashboard/summary/users/${n}`;
+          break;
+        case "select-area":
+          s = `/staff/tools/select-area/${n}`;
+          break;
+        case "select-pixel":
+        default:
+          s = `/staff/tools/select-pixel/${n}`;
+          break
+      }
+      if ((await this.request(s, {
+          method: "POST",
+          credentials: "include",
+          body: JSON.stringify(t)
+        })).status !== a.OK) throw new Error(o())
+    }
+    async postSelectAreaPhoneVerification(t, e = "") {
+      const n = await this.request("/staff/tools/select-area/phone-verification", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          userIds: t,
+          notes: e
+        })
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      return await n.json()
+    }
+    async postDashboardUserPhoneVerification(t, e = "") {
+      const n = await this.request("/staff/dashboard/users/phone-verification", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          userIds: [t],
+          notes: e
+        })
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      return await n.json()
+    }
+    async postReportUserName(t) {
+      const e = await this.request("/report/user/name", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          userId: t
+        })
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status)
+    }
+    async postReportAllianceName(t) {
+      const e = await this.request("/report/alliance/name", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          allianceId: t
+        })
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status);
+      return e.json()
+    }
+  }
+}
+
+function Ry(r) {
+  return class extends r {
+    async getAlliance() {
+      const t = await this.request("/alliance", {
+        credentials: "include"
+      });
+      if (t.status === a.OK) return t.json();
+      if (t.status === a.NOT_FOUND) return;
+      throw new Error(o())
+    }
+    async createAlliance(t) {
+      const e = await this.request("/alliance", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          name: t
+        })
+      });
+      if (e.status === a.OK) return e.json();
+      if (e.status === a.BAD_REQUEST) {
+        const n = await e.json();
+        throw n.error === "max_characters" ? new Error(Gn()) : n.error === "name_taken" ? new Error(Pn()) : n.error == "empty_name" ? new Error(ss()) : new Error(o())
+      } else throw e.status === a.FORBIDDEN ? new Error(Ug()) : new Error(o())
+    }
+    async leaveAlliance() {
+      if ((await this.request("/alliance/leave", {
+          method: "POST",
+          credentials: "include"
+        })).status !== a.OK) throw new Error(o())
+    }
+    async updateAllianceDescription(t) {
+      const e = await this.request("/alliance/update-description", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          description: t
+        })
+      });
+      if (e.status !== a.OK) throw e.status === a.FORBIDDEN ? new Error(K()) : e.status === a.BAD_REQUEST ? new Error(ic()) : new Error(o())
+    }
+    async updateAllianceHeadquarters(t, e) {
+      const n = await this.request("/alliance/update-headquarters", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          latitude: t,
+          longitude: e
+        })
+      });
+      if (n.status !== a.OK) throw n.status === a.FORBIDDEN ? new Error(K()) : new Error(o())
+    }
+    async allianceLeaderboard(t) {
+      const e = await this.request(`/alliance/leaderboard/${t}`, {
+        credentials: "include"
+      });
+      if (e.status === a.OK) return e.json();
+      throw e.status === a.FORBIDDEN ? new Error(K()) : new Error($())
+    }
+    async getAllianceInvites() {
+      const t = await this.request("/alliance/invites", {
+        credentials: "include"
+      });
+      if (t.status === a.OK) return t.json();
+      throw t.status === a.FORBIDDEN ? new Error(K()) : new Error(o())
+    }
+    async joinAlliance(t) {
+      switch ((await this.request(`/alliance/join/${t}`, {
+          method: "POST",
+          credentials: "include"
+        })).status) {
+        case a.OK:
+          return "success";
+        case a.ALREADY_REPORTED:
+          return "in-another-alliance";
+        case a.UNAUTHORIZED:
+          return "not-logged-in";
+        case a.FORBIDDEN:
+          return "banned";
+        case a.BAD_REQUEST:
+        case a.NOT_FOUND:
+          return "invalid-invite";
+        default:
+          return "error"
+      }
+    }
+    async getAllianceMembers(t) {
+      const e = await this.request(`/alliance/members/${t}`, {
+        credentials: "include"
+      });
+      if (e.status === a.OK) return e.json();
+      throw new Error(o())
+    }
+    async getAllianceBannedMembers(t) {
+      const e = await this.request(`/alliance/members/banned/${t}`, {
+        credentials: "include"
+      });
+      if (e.status === a.OK) return e.json();
+      throw new Error(o())
+    }
+    async getAllianceById(t) {
+      const e = await this.request(`/staff/dashboard/alliances/${t}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (e.status === a.NOT_FOUND) return;
+      if (e.status !== a.OK) throw new l(o(), e.status);
+      const n = await e.json();
+      return {
+        id: Number(n.id),
+        name: String(n.name),
+        pixelsPainted: Number((n == null ? void 0 : n.pixels_painted) ?? 0)
+      }
+    }
+    async searchAlliance(t) {
+      const e = new URLSearchParams({
+          q: t
+        }),
+        n = await this.request(`/staff/dashboard/alliances/search?${e.toString()}`, {
+          method: "GET",
+          credentials: "include"
+        });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      const s = await n.json();
+      return (Array.isArray(s) ? s : []).map(i => ({
+        id: Number(i.id),
+        name: String(i.name ?? ""),
+        pixelsPainted: Number((i == null ? void 0 : i.pixels_painted) ?? 0)
+      }))
+    }
+    async searchAlliances(t) {
+      return this.searchAlliance(t)
+    }
+    async getAllianceFull(t) {
+      const e = await this.request(`/staff/dashboard/alliances/${t}/full`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (e.status === a.NOT_FOUND) return null;
+      if (e.status !== a.OK) throw new l(o(), e.status);
+      const n = await e.json(),
+        s = Array.isArray(n == null ? void 0 : n.members) ? n.members : [];
+      return {
+        id: Number(n == null ? void 0 : n.id),
+        name: String((n == null ? void 0 : n.name) ?? ""),
+        description: (n == null ? void 0 : n.description) ?? null,
+        ownerId: Number((n == null ? void 0 : n.ownerId) ?? (n == null ? void 0 : n.created_by)),
+        ownerName: (n == null ? void 0 : n.ownerName) ?? null,
+        hqName: (n == null ? void 0 : n.hqName) ?? null,
+        hqLatitude: (n == null ? void 0 : n.hqLatitude) ?? (n == null ? void 0 : n.hq_latitude) ?? null,
+        hqLongitude: (n == null ? void 0 : n.hqLongitude) ?? (n == null ? void 0 : n.hq_longitude) ?? null,
+        pixelsPainted: Number((n == null ? void 0 : n.pixelsPainted) ?? (n == null ? void 0 : n.pixels_painted) ?? 0),
+        membersCount: Number((n == null ? void 0 : n.membersCount) ?? s.length),
+        members: s.map(i => ({
+          id: Number(i == null ? void 0 : i.id),
+          name: String((i == null ? void 0 : i.name) ?? `#${i==null?void 0:i.id}`),
+          picture: (i == null ? void 0 : i.picture) ?? null,
+          pixelsPainted: Number((i == null ? void 0 : i.pixelsPainted) ?? (i == null ? void 0 : i.pixels_painted) ?? 0),
+          lastPixelLatitude: (i == null ? void 0 : i.lastPixelLatitude) ?? null,
+          lastPixelLongitude: (i == null ? void 0 : i.lastPixelLongitude) ?? null,
+          role: (i == null ? void 0 : i.alliance_role) === "admin" || (i == null ? void 0 : i.role) === "admin" ? "admin" : "member",
+          timedOut: !!(i != null && i.timedOut),
+          banned: !!(i != null && i.banned)
+        }))
+      }
+    }
+    async getAdminAllianceMembers(t, e) {
+      const n = new URLSearchParams({
+          page: String(e.page),
+          pageSize: String(e.pageSize)
+        }),
+        s = await this.request(`/staff/dashboard/alliances/${t}/members?${n.toString()}`, {
+          method: "GET",
+          credentials: "include"
+        });
+      if (s.status === a.NOT_FOUND) return {
+        members: [],
+        total: 0
+      };
+      if (s.status !== a.OK) throw new l(o(), s.status);
+      const i = await s.json(),
+        u = Array.isArray(i == null ? void 0 : i.members) ? i.members : [];
+      return {
+        members: u.map(c => ({
+          id: Number(c == null ? void 0 : c.id),
+          name: String((c == null ? void 0 : c.name) ?? `#${c==null?void 0:c.id}`),
+          picture: (c == null ? void 0 : c.picture) ?? null,
+          pixelsPainted: Number((c == null ? void 0 : c.pixelsPainted) ?? (c == null ? void 0 : c.pixels_painted) ?? 0),
+          lastPixelLatitude: (c == null ? void 0 : c.lastPixelLatitude) ?? null,
+          lastPixelLongitude: (c == null ? void 0 : c.lastPixelLongitude) ?? null,
+          role: (c == null ? void 0 : c.alliance_role) === "admin" || (c == null ? void 0 : c.role) === "admin" ? "admin" : "member",
+          timedOut: !!(c != null && c.timedOut),
+          banned: !!(c != null && c.banned)
+        })),
+        total: Number((i == null ? void 0 : i.total) ?? u.length)
+      }
+    }
+    async renameAlliance(t, e) {
+      const n = await this.request(`/staff/dashboard/alliances/${t}/rename`, {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          name: e
+        })
+      });
+      if (n.status === a.BAD_REQUEST) {
+        const s = await n.json().catch(() => ({}));
+        throw new Error((s == null ? void 0 : s.error) ?? o())
+      } else if (n.status !== a.OK) throw new l(o(), n.status)
+    }
+    async changeAllianceLeader(t, e) {
+      const n = await this.request(`/staff/dashboard/alliances/${t}/leader`, {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          newLeaderUserId: e
+        })
+      });
+      if (n.status === a.BAD_REQUEST) {
+        const s = await n.json();
+        throw (s == null ? void 0 : s.error) === "user_not_in_alliance" ? new Error(Bd()) : new Error(o())
+      } else if (n.status !== a.OK) throw new l(o(), n.status)
+    }
+    async banAllAllianceMembers(t, e, n) {
+      const s = await this.request(`/staff/dashboard/alliances/${t}/ban-all`, {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          reason: e,
+          notes: n
+        })
+      });
+      if (s.status !== a.OK) throw new l(o(), s.status)
+    }
+    async setAllianceMemberRole(t, e, n) {
+      const s = await this.request(`/staff/dashboard/alliances/${t}/members/${e}/role`, {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          role: n
+        })
+      });
+      if (s.status !== a.OK) throw new l(o(), s.status)
+    }
+    async removeAllianceMember(t, e) {
+      const n = await this.request(`/staff/dashboard/alliances/${t}/members/${e}/remove`, {
+        method: "POST",
+        credentials: "include"
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status)
+    }
+    async giveAllianceAdmin(t) {
+      const e = await this.request("/alliance/give-admin", {
+        body: JSON.stringify({
+          promotedUserId: t
+        }),
+        method: "POST",
+        credentials: "include"
+      });
+      if (e.status !== a.OK) throw e.status === a.FORBIDDEN ? new Error(K()) : new Error(o())
+    }
+    async banAllianceUser(t) {
+      const e = await this.request("/alliance/ban", {
+        body: JSON.stringify({
+          bannedUserId: t
+        }),
+        method: "POST",
+        credentials: "include"
+      });
+      if (e.status !== a.OK) throw e.status === a.FORBIDDEN ? new Error(K()) : new Error(o())
+    }
+    async equipFlag(t) {
+      if ((await this.request(`/flag/equip/${t}`, {
+          method: "POST",
+          credentials: "include"
+        })).status !== a.OK) throw new Error(o())
+    }
+    async unbanAllianceUser(t) {
+      const e = await this.request("/alliance/unban", {
+        body: JSON.stringify({
+          unbannedUserId: t
+        }),
+        method: "POST",
+        credentials: "include"
+      });
+      if (e.status !== a.OK) throw e.status === a.FORBIDDEN ? new Error(K()) : new Error(o())
+    }
+  }
+}
+
+function Dy(r) {
+  return class extends r {
+    async getUserAnticheat(t) {
+      const e = await this.request(`/staff/dashboard/users/anticheat?id=${encodeURIComponent(t)}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status);
+      return await e.json()
+    }
+    async getAnticheatStats(t, e) {
+      const n = await this.request(`/staff/dashboard/anticheat/stats?from=${t}&to=${e}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      return n.json()
+    }
+    async getAnticheatSignals(t, e) {
+      const n = await this.request(`/staff/dashboard/anticheat/signals?from=${t}&to=${e}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      return n.json()
+    }
+    async getAnticheatUserJourney(t, e, n) {
+      const s = await this.request(`/staff/dashboard/anticheat/user/${t}?from=${e}&to=${n}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (s.status !== a.OK) throw new l(o(), s.status);
+      return s.json()
+    }
+    async getAnticheatSignalAnalysis(t, e, n) {
+      const s = await this.request(`/staff/dashboard/anticheat/signal/${encodeURIComponent(t)}?from=${encodeURIComponent(e)}&to=${encodeURIComponent(n)}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (s.status !== a.OK) throw new l(o(), s.status);
+      return s.json()
+    }
+  }
+}
+
+function Py(r) {
+  return class extends r {
+    async autoReviewBan(t) {
+      const e = await this.request("/staff/dashboard/users/auto-review-ban", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          userId: t
+        })
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status);
+      return await e.json()
+    }
+    async getUserAppeals(t) {
+      const e = new URLSearchParams;
+      e.set("userId", String(t.userId)), e.set("kind", t.kind), t.page !== void 0 && e.set("page", String(t.page)), t.pageSize !== void 0 && e.set("pageSize", String(t.pageSize)), t.sortBy && e.set("sortBy", t.sortBy), t.sortDir && e.set("sortDir", t.sortDir);
+      const n = await this.request(`/staff/dashboard/users/appeals?${e.toString()}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      const s = await n.json(),
+        i = Array.isArray(s == null ? void 0 : s.appeals) ? s.appeals : [],
+        u = typeof(s == null ? void 0 : s.total) == "number" ? s.total : i.length;
+      return {
+        appeals: i,
+        total: u
+      }
+    }
+    async submitBanAppeal(t, e) {
+      const n = JSON.stringify(e ? {
+          message: t,
+          ticketId: e
+        } : {
+          message: t
+        }),
+        s = await ee.getHeaders(n),
+        i = await this.request("/report/appeal", {
+          method: "POST",
+          credentials: "include",
+          body: n,
+          headers: s
+        });
+      if (i.status === a.FORBIDDEN) {
+        const u = await i.json();
+        if ((u == null ? void 0 : u.error) === "challenge-required" && u.tier) {
+          if (await pt(u.tier)) return this.submitBanAppeal(t, e);
+          throw new l(He(), i.status)
+        }
+      }
+      if (i.status !== a.OK && i.status !== a.ALREADY_REPORTED) throw new l(o(), i.status);
+      return i.status
+    }
+    async getOpenAppeals() {
+      const t = await this.request("/staff/appeals/get", {
+        method: "GET",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status);
+      return t.json()
+    }
+    async postSolveAppeal(t, e) {
+      const n = await this.request(`/staff/appeals/${t}/handle`, {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          approved: e
+        })
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      return await n.json()
+    }
+    async getUserLastAppeal() {
+      const t = await this.request("/me/last-appeal", {
+        method: "GET",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status);
+      const e = await t.json();
+      return (e == null ? void 0 : e.appealDate) ?? null
+    }
+    async assignAppeals() {
+      const t = await this.request("/staff/appeals/assign", {
+        method: "POST",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status);
+      return await t.json()
+    }
+    async getPendingAppealsCount() {
+      const t = await this.request("/staff/appeals/open_count", {
+        method: "GET",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status);
+      const e = await t.json();
+      return (e == null ? void 0 : e.appeals) ?? 0
+    }
+  }
+}
+
+function xy(r) {
+  return class extends r {
+    async getUserFrames() {
+      const t = await this.request("/me/frames", {
+        method: "GET",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status);
+      return t.json()
+    }
+    async postEquipUserFrame(t) {
+      const e = await this.request(`/me/frames/equip/${t}`, {
+        method: "POST",
+        credentials: "include"
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status)
+    }
+    async getUserBadges() {
+      const t = await this.request("/me/badges", {
+        method: "GET",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status);
+      return t.json()
+    }
+    async postEquipUserBadge(t) {
+      const e = await this.request("/me/badges/equip", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify(t)
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status)
+    }
+    async getStoreFrames() {
+      const t = await this.request("/store/frames", {
+        method: "GET",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status);
+      return t.json()
+    }
+    async postBuyUserFrame(t) {
+      const e = await this.request(`/store/frames/buy/${t}`, {
+        method: "POST",
+        credentials: "include"
+      });
+      if (e.status === a.NOT_FOUND) throw new Error(gt());
+      if (e.status === a.FORBIDDEN) throw new Error(bt());
+      if (e.status === a.CONFLICT) throw new Error(yt());
+      if (e.status !== a.OK) throw new Error(o())
+    }
+    async postEquipCosmetics(t) {
+      const e = await this.request("/me/cosmetic/equip", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify(t)
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status)
+    }
+    async getStoreNameCosmetics() {
+      const t = await this.request("/store/name", {
+        method: "GET",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status);
+      return await t.json()
+    }
+    async postBuyCosmetic(t) {
+      const e = await this.request(`/store/name/buy/${t}`, {
+        method: "POST",
+        credentials: "include"
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status)
+    }
+    async getMyNameCosmetics() {
+      const t = await this.request("/me/cosmetics/name", {
+        method: "GET",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status);
+      return await t.json()
+    }
+    async postCreateFrame(t) {
+      const e = new FormData;
+      e.append("name", t.name), e.append("image", t.image), e.append("description", t.description), e.append("value", t.value.toString()), e.append("rarity", t.rarity), e.append("purchasable", t.purchasable.toString());
+      const n = await this.request("/staff/store-manager/frames", {
+        method: "POST",
+        credentials: "include",
+        body: e
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status)
+    }
+    async postCreateFont(t) {
+      const e = await this.request("/staff/store-manager/fonts", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify(t)
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status)
+    }
+    async postCreateStyle(t) {
+      const e = await this.request("/staff/store-manager/styles", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify(t)
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status)
+    }
+    async getR2Images(t) {
+      const e = new URLSearchParams({
+          page: String(t.page),
+          pageSize: String(t.pageSize)
+        }),
+        n = await this.request(`/staff/store-manager/images?${e.toString()}`, {
+          method: "GET",
+          credentials: "include"
+        });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      return n.json()
+    }
+    async postUploadR2Image(t) {
+      const e = new FormData;
+      t.name && e.append("name", t.name), e.append("image", t.image);
+      const n = await this.request("/staff/store-manager/images", {
+        method: "POST",
+        credentials: "include",
+        body: e
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      return n.json()
+    }
+    async deleteR2Image(t) {
+      const e = await this.request(`/staff/store-manager/images/${t}`, {
+        method: "DELETE",
+        credentials: "include"
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status)
+    }
+  }
+}
+const C = {
   day: 1440 * 60 * 1e3,
   hour: 3600 * 1e3,
   minute: 60 * 1e3,
   second: 1e3
 };
 
-function OT(n) {
-  const t = Math.floor(n / B.hour);
-  n -= t * B.hour;
-  const e = Math.floor(n / B.minute);
-  n -= e * B.minute;
-  const o = Math.floor(n / B.second).toString().padStart(2, "0");
-  return t > 0 ? `${t}:${e.toString().padStart(2,"0")}:${o}` : `${e}:${o}`
+function $b(r) {
+  const t = Math.floor(r / C.hour);
+  r -= t * C.hour;
+  const e = Math.floor(r / C.minute);
+  r -= e * C.minute;
+  const s = Math.floor(r / C.second).toString().padStart(2, "0");
+  return t > 0 ? `${t}:${e.toString().padStart(2,"0")}:${s}` : `${e}:${s}`
 }
 
-function IT(n) {
-  const t = n.getFullYear(),
-    e = String(n.getMonth() + 1).padStart(2, "0"),
-    r = String(n.getDate()).padStart(2, "0"),
-    o = String(n.getHours()).padStart(2, "0"),
-    a = String(n.getMinutes()).padStart(2, "0"),
-    c = String(n.getSeconds()).padStart(2, "0");
-  return `${t}-${e}-${r} ${o}:${a}:${c}`
+function Gb(r) {
+  const t = r.getFullYear(),
+    e = String(r.getMonth() + 1).padStart(2, "0"),
+    n = String(r.getDate()).padStart(2, "0"),
+    s = String(r.getHours()).padStart(2, "0"),
+    i = String(r.getMinutes()).padStart(2, "0"),
+    u = String(r.getSeconds()).padStart(2, "0");
+  return `${t}-${e}-${n} ${s}:${i}:${u}`
 }
-const ST = {
-    griefing: xu(),
-    "multi-accounting": mm(),
-    "hate-speech": ic(),
-    bot: yo(),
-    doxxing: La(),
-    "inappropriate-content": Tf(),
-    other: Go()
+const Uy = 30 * C.minute;
+
+function jy(r) {
+  return class extends r {
+    constructor() {
+      super(...arguments);
+      g(this, "lastHotspotRequestAt", 0)
+    }
+    async leaderboardPlayers(e) {
+      const n = await this.request(`/leaderboard/player/${e}`);
+      if (n.status !== a.OK) throw new Error($());
+      return n.json()
+    }
+    async leaderboardAlliances(e) {
+      const n = await this.request(`/leaderboard/alliance/${e}`);
+      if (n.status !== a.OK) throw new Error($());
+      return n.json()
+    }
+    async leaderboardRegions(e, n = 0) {
+      const s = await this.request(`/leaderboard/region/${e}/${n}`);
+      if (s.status === a.OK) return s.json();
+      throw new Error($())
+    }
+    async leaderboardRegionPlayers(e, n) {
+      const s = await this.request(`/leaderboard/region/players/${e}/${n}`);
+      if (s.status === a.OK) return s.json();
+      throw new Error($())
+    }
+    async leaderboardRegionAlliances(e, n) {
+      const s = await this.request(`/leaderboard/region/alliances/${e}/${n}`);
+      if (s.status === a.OK) return s.json();
+      throw new Error($())
+    }
+    async leaderboardCountries(e) {
+      const n = await this.request(`/leaderboard/country/${e}`, {
+        credentials: "include"
+      });
+      if (n.status === a.OK) return n.json();
+      throw new Error($())
+    }
+    refreshHotspotsIfStale() {
+      Date.now() - this.lastHotspotRequestAt < Uy || (this.lastHotspotRequestAt = Date.now(), this.request("/map/hotspots", {
+        credentials: "include",
+        keepalive: !0,
+        throwOnStatus: !1
+      }).catch(() => {
+        this.lastHotspotRequestAt = 0
+      }))
+    }
+    async getMapHotspots() {
+      const e = await this.request("/map/hotspots", {
+        credentials: "include"
+      });
+      return e.status !== 200 ? [] : (this.lastHotspotRequestAt = Date.now(), e.json())
+    }
+    async getRandomTile(e) {
+      const n = await this.request(`/s${e}/tile/random`);
+      if (n.status !== a.OK) throw new Error(o());
+      return n.json()
+    }
+  }
+}
+
+function Ly(r) {
+  return class extends r {
+    async postCaptchaSession(t, e = "include") {
+      const n = await this.request("/anticheat/captcha/session", {
+        method: "POST",
+        credentials: e,
+        body: JSON.stringify(t),
+        headers: {
+          "x-fp": await Ge()
+        }
+      });
+      if (!n.ok) throw n.status === 500 ? new l(o(), n.status) : new l(rl(), n.status);
+      return n.json()
+    }
+    async postTelemetry(t, e) {
+      return (await this.request("/frontend/telemetry", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          event: t,
+          data: e
+        })
+      })).status === a.OK
+    }
+  }
+}
+const Vb = {
+    griefing: Pc(),
+    "multi-accounting": E_(),
+    "hate-speech": su(),
+    bot: gs(),
+    doxxing: ji(),
+    "inappropriate-content": Ru(),
+    other: Fs()
   },
-  NT = {
-    doxxing: Ja(),
-    "hate-speech": wc(),
-    griefing: Vu(),
-    "multi-accounting": zm(),
-    bot: Do(),
-    "inappropriate-content": Lf(),
-    other: oi()
+  Hb = {
+    doxxing: Wi(),
+    "hate-speech": gu(),
+    griefing: Gc(),
+    "multi-accounting": j_(),
+    bot: Rs(),
+    "inappropriate-content": Fu(),
+    other: ra()
   },
-  zT = {
+  Wb = {
     doxxing: "text-red-600",
     "hate-speech": "text-red-400",
     "inappropriate-content": "text-amber-500",
@@ -2754,7 +3325,7 @@ const ST = {
     griefing: "text-amber-200",
     other: "text-cyan-600"
   },
-  ht = {
+  ct = {
     doxxing: 0,
     "hate-speech": 1,
     "inappropriate-content": 2,
@@ -2763,7 +3334,7 @@ const ST = {
     other: 5,
     griefing: 6
   },
-  AT = {
+  Yb = {
     griefing: "topic-2",
     "inappropriate-content": "topic-1",
     bot: "topic-3",
@@ -2772,43 +3343,752 @@ const ST = {
     doxxing: "topic-1",
     other: ""
   },
-  bk = 365 * B.day;
+  My = 365 * C.day;
 
-function Et(n) {
-  if (!n) return null;
-  const e = (n instanceof Date ? n : new Date(n)).getTime();
+function vt(r) {
+  if (!r) return null;
+  const e = (r instanceof Date ? r : new Date(r)).getTime();
   return Number.isFinite(e) ? e : null
 }
 
-function RT(n, t = Date.now()) {
-  const e = Et(n);
-  return e === null ? !1 : e - t >= bk
+function Jb(r, t = Date.now()) {
+  const e = vt(r);
+  return e === null ? !1 : e - t >= My
 }
 
-function DT(n, t = Date.now()) {
-  const e = Et(n);
+function Qb(r, t = Date.now()) {
+  const e = vt(r);
   if (e === null || e <= t) return {
     days: 0,
     hours: 0,
     minutes: 0
   };
-  const r = Math.max(0, Math.ceil((e - t) / 6e4)),
-    o = Math.floor(r / 1440),
-    a = Math.floor(r % 1440 / 60),
-    c = r % 60;
+  const n = Math.max(0, Math.ceil((e - t) / 6e4)),
+    s = Math.floor(n / 1440),
+    i = Math.floor(n % 1440 / 60),
+    u = n % 60;
   return {
-    days: o,
-    hours: a,
-    minutes: c
+    days: s,
+    hours: i,
+    minutes: u
   }
 }
-const vk = [{
+
+function By(r) {
+  return class extends r {
+    async getModeratorTickets() {
+      const t = await this.request("/staff/tickets/get", {
+        method: "GET",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status);
+      const e = await t.json();
+      for (const n of e.tickets) n.reports.sort((s, i) => ct[s.reason] - ct[i.reason]);
+      return e
+    }
+    async countMyTicketsClosedToday() {
+      const t = await this.request("/staff/tickets/closed-today", {
+        method: "GET",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status);
+      return t.json()
+    }
+    async getOpenTicketsCount() {
+      const t = await this.request("/staff/tickets/open_count", {
+        method: "GET",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status);
+      const {
+        tickets: e
+      } = await t.json();
+      return e
+    }
+    async assignNewTickets() {
+      const t = await this.request("/staff/tickets/assign", {
+        method: "POST",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status);
+      return t.json()
+    }
+    async setTicketStatus(t, e, n, s, i) {
+      const u = await this.request("/staff/tickets/set-status", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          ticketId: t,
+          status: e,
+          selectedReportId: n,
+          assignedReason: s,
+          ignoreReason: i
+        })
+      });
+      if (u.status !== a.OK && u.status !== a.BAD_REQUEST) throw new l(o(), u.status)
+    }
+    async getLastResolvedTicket() {
+      const t = await this.request("/staff/tickets/reversals/last-resolved", {
+        method: "GET",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status);
+      return (await t.json()).ticket
+    }
+    async getTicketReversalTicketInfo(t) {
+      const e = await this.request(`/staff/tickets/reversals/ticket-info?ticketId=${encodeURIComponent(t)}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status);
+      return (await e.json()).ticket
+    }
+    async getReporterReportHistory(t, e) {
+      const n = await this.request(`/staff/tickets/reporter-history?ticketId=${encodeURIComponent(t)}&reporterId=${e}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      return (await n.json()).reports
+    }
+    async createTicketReversal(t) {
+      const e = await this.request("/staff/tickets/reversals", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify(t)
+      });
+      if (e.status === a.CONFLICT) {
+        const n = await e.json().catch(() => ({}));
+        throw (n == null ? void 0 : n.error) === "reversal_already_pending" ? new l(ey(), a.CONFLICT) : new l(o(), a.CONFLICT)
+      }
+      if (e.status !== a.OK) throw new l(o(), e.status);
+      return e.json()
+    }
+    async reSolveTicket(t) {
+      const e = await this.request("/staff/tickets/re-solve", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify(t)
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status);
+      return e.json()
+    }
+    async listTicketReversals(t = {}) {
+      const e = new URLSearchParams;
+      t.status && e.set("status", t.status), t.page != null && e.set("page", String(t.page)), t.pageSize != null && e.set("pageSize", String(t.pageSize));
+      const n = `/staff/tickets/reversals${e.toString()?`?${e.toString()}`:""}`,
+        s = await this.request(n, {
+          method: "GET",
+          credentials: "include"
+        });
+      if (s.status !== a.OK) throw new l(o(), s.status);
+      return (await s.json()).reversals ?? []
+    }
+    async getTicketReversal(t) {
+      const e = await this.request(`/staff/tickets/reversals/${t}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status);
+      return (await e.json()).reversal
+    }
+    async reviewTicketReversal(t, e, n) {
+      const s = await this.request(`/staff/tickets/reversals/${t}/review`, {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          decision: e,
+          notes: n
+        })
+      });
+      if (s.status === a.FORBIDDEN) throw new l(fy(), a.FORBIDDEN);
+      if (s.status === a.CONFLICT) throw new l(Iy(), a.CONFLICT);
+      if (s.status !== a.OK) throw new l(o(), s.status)
+    }
+    async getOpenTicketsSummary() {
+      const t = await this.request("/staff/dashboard/summary/counters/tickets", {
+        method: "GET",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status);
+      return t.json()
+    }
+    async getOpenReportsSummary() {
+      const t = await this.request("/staff/dashboard/summary/counters/reports", {
+        method: "GET",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status);
+      return t.json()
+    }
+    async getBanAppealStats(t, e) {
+      const n = await this.request(`/staff/dashboard/ban-appeals/see?start=${encodeURIComponent(t)}&end=${encodeURIComponent(e)}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      const s = await n.json();
+      return {
+        items: s.items ?? [],
+        globals: s.globals
+      }
+    }
+    async getClosedTicketsByMod(t, e) {
+      const n = await this.request(`/staff/dashboard/team/closed-tickets?start=${encodeURIComponent(t)}&end=${encodeURIComponent(e)}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      return (await n.json()).items.map(i => ({
+        ...i,
+        suspensionRate: (i.ban + i.timeout) / i.total
+      }))
+    }
+    async getClosedReportsByMod(t, e) {
+      const n = await this.request(`/staff/dashboard/team/closed-reports?start=${encodeURIComponent(t)}&end=${encodeURIComponent(e)}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      return (await n.json()).items.map(i => ({
+        ...i,
+        suspensionRate: (i.ban + i.timeout) / i.total
+      }))
+    }
+    async getMultipleUsersInfoById(t) {
+      const e = await this.request("/staff/tools/select-area/users", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          userIds: t
+        })
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status);
+      return e.json()
+    }
+    async getUserInfoFull(t) {
+      const e = await this.request(`/staff/dashboard/users/info?id=${encodeURIComponent(t)}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (e.status !== a.NOT_FOUND) {
+        if (e.status !== a.OK) throw new l(o(), e.status);
+        return e.json()
+      }
+    }
+    async getUsersReportInfo(t) {
+      const e = t.filter(s => Number.isFinite(s) && s > 0);
+      if (e.length === 0) return [];
+      const n = await this.request(`/staff/dashboard/users/info-batch?ids=${encodeURIComponent(e.join(","))}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      return n.json()
+    }
+    async getUserInfoByEmail(t) {
+      const e = await this.request(`/staff/dashboard/users/info-by-email?email=${encodeURIComponent(t)}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (e.status !== a.NOT_FOUND) {
+        if (e.status !== a.OK) throw new l(o(), e.status);
+        return e.json()
+      }
+    }
+    async getUserPunishments(t) {
+      const e = await this.request(`/staff/dashboard/users/punishments?userId=${encodeURIComponent(t)}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status);
+      return (await e.json()).punishments ?? []
+    }
+    async getPunishmentTicket(t) {
+      const e = await this.request(`/staff/dashboard/users/punishment-ticket?ticketId=${encodeURIComponent(t)}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status);
+      return (await e.json()).ticket
+    }
+    async overturnPunishment(t) {
+      const e = await this.request("/staff/dashboard/users/overturn-punishment", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          punishmentId: t
+        })
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status)
+    }
+    async getUserNotes(t, e) {
+      const n = e == "dashboard" ? `/staff/dashboard/users/notes?userId=${encodeURIComponent(t)}` : `/staff/appeals/notes?userId=${encodeURIComponent(t)}`,
+        s = await this.request(n, {
+          method: "GET",
+          credentials: "include"
+        });
+      if (s.status !== a.OK) throw new l(o(), s.status);
+      return s.json()
+    }
+    async addUserNote(t, e, n) {
+      const s = n == "dashboard" ? `/staff/dashboard/users/notes?userId=${encodeURIComponent(t)}` : `/staff/appeals/notes?userId=${encodeURIComponent(t)}`,
+        i = await this.request(s, {
+          method: "POST",
+          credentials: "include",
+          body: JSON.stringify({
+            userId: t,
+            note: e
+          })
+        });
+      if (i.status !== a.OK) throw new l(o(), i.status)
+    }
+    async getUserPermissions(t) {
+      const e = await this.request(`/staff/dashboard/permissions/get?userId=${encodeURIComponent(t)}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status);
+      return e.json()
+    }
+    async setUserPermissions(t, e) {
+      const n = await this.request("/staff/dashboard/permissions/set", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          userId: t,
+          permissions: Array.from(e)
+        })
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      const s = await n.json();
+      return Array.isArray(s == null ? void 0 : s.permissions) ? s.permissions : []
+    }
+    async getUserPurchases(t) {
+      const e = await this.request(`/staff/dashboard/users/purchases?userId=${encodeURIComponent(t)}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status);
+      const n = await e.json();
+      return (Array.isArray(n == null ? void 0 : n.purchases) ? n.purchases : []).map(i => {
+        const u = i.is_dollar ?? i.isDollar ?? i.currency ?? i.Currency ?? 0;
+        let c;
+        if (typeof u == "string") {
+          const y = u.toLowerCase();
+          c = y === "usd" || y === "dollar" || y === "true"
+        } else typeof u == "number" ? c = u !== 0 : c = !!u;
+        const _ = typeof i.createdAt == "string" ? i.createdAt : i.CreatedAt ? new Date(i.CreatedAt).toISOString() : "",
+          f = i.product_variant ?? i.productVariant,
+          k = f == null || f === "" ? null : Number(f);
+        return {
+          product_name: String(i.productName ?? i.product_name ?? ""),
+          amount: Number(i.amount ?? 0),
+          price: Number(i.price ?? 0),
+          is_dollar: c,
+          created_at: _,
+          product_variant: Number.isInteger(k) ? k : null
+        }
+      })
+    }
+    async getUserTickets(t, e) {
+      if (e === "appeals" && (t.appealId ?? 0) <= 0) throw new Error("Appeal id is required.");
+      const n = new URLSearchParams;
+      n.set("userId", String(t.userId)), n.set("kind", String(t.kind)), n.set("page", String(t.page ?? 0)), n.set("pageSize", String(t.pageSize ?? 20)), t.sortBy && n.set("sortBy", t.sortBy), t.sortDir && n.set("sortDir", t.sortDir), t.status && n.set("status", t.status), t.reason && n.set("reason", t.reason), e === "appeals" && n.set("appealId", String(t.appealId));
+      const s = e === "appeals" ? `/staff/appeals/tickets?${n.toString()}` : `/staff/dashboard/users/tickets?${n.toString()}`,
+        i = await this.request(s, {
+          method: "GET",
+          credentials: "include"
+        });
+      if (i.status !== a.OK) throw new l(o(), i.status);
+      const u = await i.json(),
+        c = Array.isArray(u == null ? void 0 : u.tickets) ? u.tickets : [],
+        _ = typeof(u == null ? void 0 : u.total) == "number" ? u.total : c.length;
+      return {
+        tickets: c,
+        total: _
+      }
+    }
+    async getAllTickets(t) {
+      const e = new URLSearchParams;
+      e.set("page", String(t.page ?? 0)), e.set("pageSize", String(t.pageSize ?? 20)), t.modId && e.set("modId", String(t.modId)), t.sortBy && e.set("sortBy", t.sortBy), t.sortDir && e.set("sortDir", t.sortDir), t.status && e.set("status", t.status), t.reason && e.set("reason", t.reason), t.role && e.set("role", t.role), t.reviewed && e.set("reviewed", t.reviewed), t.reSolvedOnly && e.set("reSolvedOnly", "true"), t.hideSystem && e.set("hideSystem", "true"), t.dateFrom && e.set("dateFrom", t.dateFrom), t.dateTo && e.set("dateTo", t.dateTo);
+      const n = await this.request(`/staff/dashboard/all-tickets?${e.toString()}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      const s = await n.json(),
+        i = Array.isArray(s == null ? void 0 : s.tickets) ? s.tickets : [],
+        u = typeof(s == null ? void 0 : s.total) == "number" ? s.total : i.length,
+        c = typeof(s == null ? void 0 : s.matchedTotal) == "number" ? s.matchedTotal : u,
+        _ = typeof(s == null ? void 0 : s.reviewedTotal) == "number" ? s.reviewedTotal : 0;
+      return {
+        tickets: i,
+        total: u,
+        matchedTotal: c,
+        reviewedTotal: _
+      }
+    }
+    async reviewTicket(t) {
+      const e = await this.request("/staff/dashboard/all-tickets/review", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify(t)
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status);
+      return e.json()
+    }
+    async getTicketOverturnInfo(t) {
+      const e = await this.request(`/staff/dashboard/all-tickets/overturn-info?ticketId=${encodeURIComponent(t)}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status);
+      return e.json()
+    }
+    async getModerationTranslate(t, e) {
+      const n = e == "tickets" ? "/staff/tickets/translate" : "/staff/appeals/translate",
+        s = await this.request(n, {
+          method: "POST",
+          credentials: "include",
+          body: JSON.stringify({
+            text: t
+          })
+        });
+      if (s.status !== a.OK) throw new l(o(), s.status);
+      const i = await s.json();
+      return i == null ? void 0 : i.translation
+    }
+    mapTicketsToReportRows(t, e) {
+      var s, i, u, c, _;
+      const n = [];
+      for (const f of t) {
+        const k = f.status ?? "open";
+        if (e === "received") {
+          for (const y of f.reports) n.push({
+            id: String(y.id),
+            ticketId: String(f.id),
+            createdAt: y.createdAt ?? f.createdAt,
+            byUser: {
+              id: Number(y.reportedBy),
+              name: String(y.reportedByName ?? y.reportedBy),
+              picture: y.reportedByPicture ?? null
+            },
+            reason: String(y.reason),
+            status: k
+          });
+          continue
+        }
+        if (e === "sent") {
+          for (const y of f.reports) n.push({
+            id: String(y.id),
+            ticketId: String(f.id),
+            createdAt: y.createdAt ?? f.createdAt,
+            toUser: {
+              id: Number(f.reportedUser.id),
+              name: String(f.reportedUser.name),
+              picture: f.reportedUser.picture ?? null
+            },
+            reason: String(y.reason),
+            status: k
+          });
+          continue
+        }
+        n.push({
+          id: String(f.id),
+          ticketId: String(f.id),
+          createdAt: f.createdAt,
+          handledBy: f.status && f.status !== "open" ? {
+            id: ((s = f.handledBy) == null ? void 0 : s.id) ?? 0,
+            name: ((i = f.handledBy) == null ? void 0 : i.name) ?? "Moderator",
+            picture: ((u = f.handledBy) == null ? void 0 : u.picture) ?? null
+          } : {
+            id: 0,
+            name: "—",
+            picture: null
+          },
+          reason: String(((_ = (c = f.reports) == null ? void 0 : c[0]) == null ? void 0 : _.reason) ?? "other"),
+          status: k
+        })
+      }
+      return n.sort((f, k) => new Date(k.createdAt).getTime() - new Date(f.createdAt).getTime()), n
+    }
+    async getModeratorClosedTicketStats(t) {
+      const e = new URLSearchParams({
+          id: String(t)
+        }).toString(),
+        n = await this.request(`/staff/dashboard/users/tickets/stats?${e}`, {
+          method: "GET",
+          credentials: "include"
+        });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      return n.json()
+    }
+    async getTicketsKpi(t) {
+      const e = new URLSearchParams;
+      e.set("start", t.startIso), e.set("end", t.endIso), t.compare && e.set("compare", "1"), t.userId != null && e.set("userId", String(t.userId)), t.allianceId != null && e.set("allianceId", String(t.allianceId)), t.reason != null && e.set("reason", t.reason), t.punishment != null && e.set("punishment", t.punishment), t.granularity != null && e.set("granularity", t.granularity);
+      const n = await this.request(`/staff/dashboard/kpi/tickets?${e.toString()}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      return n.json()
+    }
+  }
+}
+
+function qy(r) {
+  return class extends r {
+    async getNotificationCount() {
+      const t = await this.request("/notification/count", {
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status);
+      const {
+        count: e
+      } = await t.json();
+      return e
+    }
+    async getNotificationPage(t) {
+      const n = `/notification/page${t!==void 0?`?cursor=${encodeURIComponent(t)}`:""}`,
+        s = await this.request(n, {
+          credentials: "include"
+        });
+      if (s.status !== a.OK) throw new l(o(), s.status);
+      return s.json()
+    }
+    async postNotificationMarkRead(t) {
+      const e = await this.request("/notification/mark-read", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          notificationIds: t
+        })
+      });
+      if (e.status !== a.OK) throw new l(o(), e.status);
+      return e.json()
+    }
+    async postNotificationMarkReadAll() {
+      const t = await this.request("/notification/mark-read/all", {
+        method: "POST",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new l(o(), t.status);
+      return t.json()
+    }
+  }
+}
+
+function Cy(r) {
+  return class extends r {
+    async exchangeForCupCoins(t) {
+      return (await this.request("/world-cup/coins/exchange", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          batches: t
+        }),
+        throwOnStatus: !1
+      })).status === a.OK
+    }
+    async getOwnedWorldCupItems() {
+      const t = await this.request("/world-cup/items/owned", {
+        credentials: "include",
+        throwOnStatus: !1
+      });
+      return t.status !== a.OK ? {
+        owned: [],
+        cupQuestDoneToday: !1,
+        cupCoins: 0
+      } : t.json()
+    }
+    async buyWorldCupItem(t, e) {
+      return (await this.request(`/world-cup/store/buy/${t}`, {
+        method: "POST",
+        credentials: "include",
+        body: e ? JSON.stringify({
+          country: e
+        }) : void 0,
+        throwOnStatus: !1
+      })).status === a.OK
+    }
+    async getWorldCupPredictions() {
+      const t = await this.request("/world-cup/predictions", {
+        credentials: "omit",
+        throwOnStatus: !1
+      });
+      return t.status !== a.OK ? [] : (await t.json()).predictions ?? []
+    }
+    async getMyWorldCupPredictions() {
+      const t = await this.request("/world-cup/predictions/mine", {
+        credentials: "include",
+        throwOnStatus: !1
+      });
+      return t.status !== a.OK ? [] : (await t.json()).predictions ?? []
+    }
+    async postWorldCupPrediction(t, e) {
+      const n = await this.request("/world-cup/predictions", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          matchId: t,
+          pick: e
+        }),
+        throwOnStatus: !1
+      });
+      return n.status !== a.OK ? {
+        status: n.status
+      } : {
+        status: n.status,
+        result: await n.json()
+      }
+    }
+    async driveStatus() {
+      const t = await this.request("/drive/status", {
+        credentials: "include"
+      });
+      return t.status !== a.OK ? !1 : !!(await t.json()).connected
+    }
+    async driveConnect(t) {
+      const e = await this.request("/drive/connect", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          code: t
+        })
+      });
+      if (e.status !== a.OK) throw new Error(`drive connect failed: ${e.status}`);
+      return e.json()
+    }
+    async driveToken() {
+      const t = await this.request("/drive/token", {
+        credentials: "include",
+        throwOnStatus: !1
+      });
+      if (t.status === a.CONFLICT) return null;
+      if (t.status !== a.OK) throw new Error(`drive token failed: ${t.status}`);
+      return t.json()
+    }
+    async driveDisconnect() {
+      await this.request("/drive/disconnect", {
+        method: "POST",
+        credentials: "include",
+        throwOnStatus: !1
+      })
+    }
+    async createEmbeddedCheckout(t) {
+      const e = await this.request("/payment/create-checkout-session", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          lookup_key: t
+        })
+      });
+      if (e.status === a.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(et());
+      if (e.status !== a.OK) throw new Error(await e.text());
+      return e.json()
+    }
+    async refreshStripeSession(t) {
+      await this.request(`/payment/refresh-session/${t}`, {
+        method: "POST",
+        credentials: "include"
+      })
+    }
+    async refreshFastspringSession(t) {
+      const e = await this.request(`/payment/fastspring/refresh-session/${t}`, {
+        method: "POST",
+        credentials: "include"
+      });
+      if (!e.ok) throw new Error(`fastspring refresh failed: ${e.status}`);
+      return await e.json()
+    }
+    async getLastFastspringOrder() {
+      const t = await this.request("/payment/fastspring/orders/last", {
+        credentials: "include"
+      });
+      if (t.status === a.NOT_FOUND) return null;
+      if (!t.ok) throw new Error(`Failed to get last FastSpring order: ${t.status} ${t.statusText}`);
+      return await t.json()
+    }
+    async markFastspringOrderAsRead(t) {
+      const e = await this.request(`/payment/fastspring/orders/${t}/mark-as-read`, {
+        method: "PATCH",
+        credentials: "include"
+      });
+      if (!e.ok) throw new Error(`Failed to update FastSpring order: ${e.status} ${e.statusText}`)
+    }
+    async purchase(t) {
+      const e = await this.request("/purchase", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          product: t
+        })
+      });
+      if (e.status !== a.OK) throw e.status === a.NOT_FOUND ? new Error(gt()) : e.status === a.FORBIDDEN ? new Error(bt()) : e.status === a.CONFLICT ? new Error(yt()) : new Error(o())
+    }
+    async getPlayAccountId() {
+      const t = await this.request("/payment/play/account-id", {
+        method: "GET",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new Error(o());
+      return t.json()
+    }
+    async verifyPlayPurchase(t) {
+      const e = await this.request("/payment/play/verify", {
+        method: "POST",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(t)
+      });
+      if (e.status === a.BAD_REQUEST) {
+        const n = await e.json().catch(() => ({}));
+        throw new Error((n == null ? void 0 : n.error) ?? "Invalid Play purchase")
+      }
+      if (e.status === a.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(et());
+      if (e.status !== a.OK) throw new Error(o());
+      return e.json()
+    }
+    async verifyPendingPlayPurchases() {
+      const t = await this.request("/payment/play/verify-pending", {
+        method: "POST",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new Error(o());
+      return t.json()
+    }
+    async getPlayClaimStatus(t) {
+      const e = await this.request(`/payment/play/claim/${encodeURIComponent(t)}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (e.status === a.NOT_FOUND) return {
+        status: "unknown",
+        droplets: 0
+      };
+      if (e.status !== a.OK) throw new Error(o());
+      return e.json()
+    }
+    async listPlayPurchaseHistory() {
+      const t = await this.request("/payment/play/history", {
+        method: "GET",
+        credentials: "include"
+      });
+      if (t.status !== a.OK) throw new Error(o());
+      return t.json()
+    }
+  }
+}
+const zy = [{
     tileSize: 1e3,
     zoom: 11
   }],
-  Ek = 4,
-  kk = 6e3,
-  Tk = [{
+  Ky = 4,
+  Fy = 6e3,
+  $y = [{
     name: "Transparent",
     rgb: [0, 0, 0]
   }, {
@@ -3001,7 +4281,7 @@ const vk = [{
     name: "Light Stone",
     rgb: [205, 197, 158]
   }],
-  Ok = {
+  Gy = {
     android: {
       googlePlayBilling: {
         price: 1.2
@@ -3009,7 +4289,7 @@ const vk = [{
       appName: "live.wplace.twa"
     }
   },
-  Ik = {
+  Vy = {
     10: {
       name: "25,000 Droplets",
       price: 500,
@@ -3140,8 +4420,8 @@ const vk = [{
       }]
     }
   },
-  Sk = JSON.parse(`[{"id":1,"name":"Afghanistan","code":"AF","flag":"🇦🇫"},{"id":2,"name":"Albania","code":"AL","flag":"🇦🇱"},{"id":3,"name":"Algeria","code":"DZ","flag":"🇩🇿"},{"id":4,"name":"American Samoa","code":"AS","flag":"🇦🇸"},{"id":5,"name":"Andorra","code":"AD","flag":"🇦🇩"},{"id":6,"name":"Angola","code":"AO","flag":"🇦🇴"},{"id":7,"name":"Anguilla","code":"AI","flag":"🇦🇮"},{"id":8,"name":"Antarctica","code":"AQ","flag":"🇦🇶"},{"id":9,"name":"Antigua and Barbuda","code":"AG","flag":"🇦🇬"},{"id":10,"name":"Argentina","code":"AR","flag":"🇦🇷"},{"id":11,"name":"Armenia","code":"AM","flag":"🇦🇲"},{"id":12,"name":"Aruba","code":"AW","flag":"🇦🇼"},{"id":13,"name":"Australia","code":"AU","flag":"🇦🇺"},{"id":14,"name":"Austria","code":"AT","flag":"🇦🇹"},{"id":15,"name":"Azerbaijan","code":"AZ","flag":"🇦🇿"},{"id":16,"name":"Bahamas","code":"BS","flag":"🇧🇸"},{"id":17,"name":"Bahrain","code":"BH","flag":"🇧🇭"},{"id":18,"name":"Bangladesh","code":"BD","flag":"🇧🇩"},{"id":19,"name":"Barbados","code":"BB","flag":"🇧🇧"},{"id":20,"name":"Belarus","code":"BY","flag":"🇧🇾"},{"id":21,"name":"Belgium","code":"BE","flag":"🇧🇪"},{"id":22,"name":"Belize","code":"BZ","flag":"🇧🇿"},{"id":23,"name":"Benin","code":"BJ","flag":"🇧🇯"},{"id":24,"name":"Bermuda","code":"BM","flag":"🇧🇲"},{"id":25,"name":"Bhutan","code":"BT","flag":"🇧🇹"},{"id":26,"name":"Bolivia","code":"BO","flag":"🇧🇴"},{"id":27,"name":"Bonaire","code":"BQ","flag":"🇧🇶"},{"id":28,"name":"Bosnia and Herzegovina","code":"BA","flag":"🇧🇦"},{"id":29,"name":"Botswana","code":"BW","flag":"🇧🇼"},{"id":30,"name":"Bouvet Island","code":"BV","flag":"🇧🇻"},{"id":31,"name":"Brazil","code":"BR","flag":"🇧🇷"},{"id":32,"name":"British Indian Ocean Territory","code":"IO","flag":"🇮🇴"},{"id":33,"name":"Brunei Darussalam","code":"BN","flag":"🇧🇳"},{"id":34,"name":"Bulgaria","code":"BG","flag":"🇧🇬"},{"id":35,"name":"Burkina Faso","code":"BF","flag":"🇧🇫"},{"id":36,"name":"Burundi","code":"BI","flag":"🇧🇮"},{"id":37,"name":"Cabo Verde","code":"CV","flag":"🇨🇻"},{"id":38,"name":"Cambodia","code":"KH","flag":"🇰🇭"},{"id":39,"name":"Cameroon","code":"CM","flag":"🇨🇲"},{"id":40,"name":"Canada","code":"CA","flag":"🇨🇦"},{"id":41,"name":"Cayman Islands","code":"KY","flag":"🇰🇾"},{"id":42,"name":"Central African Republic","code":"CF","flag":"🇨🇫"},{"id":43,"name":"Chad","code":"TD","flag":"🇹🇩"},{"id":44,"name":"Chile","code":"CL","flag":"🇨🇱"},{"id":45,"name":"China","code":"CN","flag":"🇨🇳"},{"id":46,"name":"Christmas Island","code":"CX","flag":"🇨🇽"},{"id":47,"name":"Cocos (Keeling) Islands","code":"CC","flag":"🇨🇨"},{"id":48,"name":"Colombia","code":"CO","flag":"🇨🇴"},{"id":49,"name":"Comoros","code":"KM","flag":"🇰🇲"},{"id":50,"name":"Congo","code":"CG","flag":"🇨🇬"},{"id":51,"name":"Cook Islands","code":"CK","flag":"🇨🇰"},{"id":52,"name":"Costa Rica","code":"CR","flag":"🇨🇷"},{"id":53,"name":"Croatia","code":"HR","flag":"🇭🇷"},{"id":54,"name":"Cuba","code":"CU","flag":"🇨🇺"},{"id":55,"name":"Curaçao","code":"CW","flag":"🇨🇼"},{"id":56,"name":"Cyprus","code":"CY","flag":"🇨🇾"},{"id":57,"name":"Czechia","code":"CZ","flag":"🇨🇿"},{"id":58,"name":"Côte d'Ivoire","code":"CI","flag":"🇨🇮"},{"id":59,"name":"Denmark","code":"DK","flag":"🇩🇰"},{"id":60,"name":"Djibouti","code":"DJ","flag":"🇩🇯"},{"id":61,"name":"Dominica","code":"DM","flag":"🇩🇲"},{"id":62,"name":"Dominican Republic","code":"DO","flag":"🇩🇴"},{"id":63,"name":"Ecuador","code":"EC","flag":"🇪🇨"},{"id":64,"name":"Egypt","code":"EG","flag":"🇪🇬"},{"id":65,"name":"El Salvador","code":"SV","flag":"🇸🇻"},{"id":66,"name":"Equatorial Guinea","code":"GQ","flag":"🇬🇶"},{"id":67,"name":"Eritrea","code":"ER","flag":"🇪🇷"},{"id":68,"name":"Estonia","code":"EE","flag":"🇪🇪"},{"id":69,"name":"Eswatini","code":"SZ","flag":"🇸🇿"},{"id":70,"name":"Ethiopia","code":"ET","flag":"🇪🇹"},{"id":71,"name":"Falkland Islands (Malvinas)","code":"FK","flag":"🇫🇰"},{"id":72,"name":"Faroe Islands","code":"FO","flag":"🇫🇴"},{"id":73,"name":"Fiji","code":"FJ","flag":"🇫🇯"},{"id":74,"name":"Finland","code":"FI","flag":"🇫🇮"},{"id":75,"name":"France","code":"FR","flag":"🇫🇷"},{"id":76,"name":"French Guiana","code":"GF","flag":"🇬🇫"},{"id":77,"name":"French Polynesia","code":"PF","flag":"🇵🇫"},{"id":78,"name":"French Southern Territories","code":"TF","flag":"🇹🇫"},{"id":79,"name":"Gabon","code":"GA","flag":"🇬🇦"},{"id":80,"name":"Gambia","code":"GM","flag":"🇬🇲"},{"id":81,"name":"Georgia","code":"GE","flag":"🇬🇪"},{"id":82,"name":"Germany","code":"DE","flag":"🇩🇪"},{"id":83,"name":"Ghana","code":"GH","flag":"🇬🇭"},{"id":84,"name":"Gibraltar","code":"GI","flag":"🇬🇮"},{"id":85,"name":"Greece","code":"GR","flag":"🇬🇷"},{"id":86,"name":"Greenland","code":"GL","flag":"🇬🇱"},{"id":87,"name":"Grenada","code":"GD","flag":"🇬🇩"},{"id":88,"name":"Guadeloupe","code":"GP","flag":"🇬🇵"},{"id":89,"name":"Guam","code":"GU","flag":"🇬🇺"},{"id":90,"name":"Guatemala","code":"GT","flag":"🇬🇹"},{"id":91,"name":"Guernsey","code":"GG","flag":"🇬🇬"},{"id":92,"name":"Guinea","code":"GN","flag":"🇬🇳"},{"id":93,"name":"Guinea-Bissau","code":"GW","flag":"🇬🇼"},{"id":94,"name":"Guyana","code":"GY","flag":"🇬🇾"},{"id":95,"name":"Haiti","code":"HT","flag":"🇭🇹"},{"id":96,"name":"Heard Island and McDonald Islands","code":"HM","flag":"🇭🇲"},{"id":97,"name":"Honduras","code":"HN","flag":"🇭🇳"},{"id":98,"name":"Hong Kong","code":"HK","flag":"🇭🇰"},{"id":99,"name":"Hungary","code":"HU","flag":"🇭🇺"},{"id":100,"name":"Iceland","code":"IS","flag":"🇮🇸"},{"id":101,"name":"India","code":"IN","flag":"🇮🇳"},{"id":102,"name":"Indonesia","code":"ID","flag":"🇮🇩"},{"id":103,"name":"Iran","code":"IR","flag":"🇮🇷"},{"id":104,"name":"Iraq","code":"IQ","flag":"🇮🇶"},{"id":105,"name":"Ireland","code":"IE","flag":"🇮🇪"},{"id":106,"name":"Isle of Man","code":"IM","flag":"🇮🇲"},{"id":107,"name":"Israel","code":"IL","flag":"🇮🇱"},{"id":108,"name":"Italy","code":"IT","flag":"🇮🇹"},{"id":109,"name":"Jamaica","code":"JM","flag":"🇯🇲"},{"id":110,"name":"Japan","code":"JP","flag":"🇯🇵"},{"id":111,"name":"Jersey","code":"JE","flag":"🇯🇪"},{"id":112,"name":"Jordan","code":"JO","flag":"🇯🇴"},{"id":113,"name":"Kazakhstan","code":"KZ","flag":"🇰🇿"},{"id":114,"name":"Kenya","code":"KE","flag":"🇰🇪"},{"id":115,"name":"Kiribati","code":"KI","flag":"🇰🇮"},{"id":116,"name":"Kosovo","code":"XK","flag":"🇽🇰"},{"id":117,"name":"Kuwait","code":"KW","flag":"🇰🇼"},{"id":118,"name":"Kyrgyzstan","code":"KG","flag":"🇰🇬"},{"id":119,"name":"Laos","code":"LA","flag":"🇱🇦"},{"id":120,"name":"Latvia","code":"LV","flag":"🇱🇻"},{"id":121,"name":"Lebanon","code":"LB","flag":"🇱🇧"},{"id":122,"name":"Lesotho","code":"LS","flag":"🇱🇸"},{"id":123,"name":"Liberia","code":"LR","flag":"🇱🇷"},{"id":124,"name":"Libya","code":"LY","flag":"🇱🇾"},{"id":125,"name":"Liechtenstein","code":"LI","flag":"🇱🇮"},{"id":126,"name":"Lithuania","code":"LT","flag":"🇱🇹"},{"id":127,"name":"Luxembourg","code":"LU","flag":"🇱🇺"},{"id":128,"name":"Macao","code":"MO","flag":"🇲🇴"},{"id":129,"name":"Madagascar","code":"MG","flag":"🇲🇬"},{"id":130,"name":"Malawi","code":"MW","flag":"🇲🇼"},{"id":131,"name":"Malaysia","code":"MY","flag":"🇲🇾"},{"id":132,"name":"Maldives","code":"MV","flag":"🇲🇻"},{"id":133,"name":"Mali","code":"ML","flag":"🇲🇱"},{"id":134,"name":"Malta","code":"MT","flag":"🇲🇹"},{"id":135,"name":"Marshall Islands","code":"MH","flag":"🇲🇭"},{"id":136,"name":"Martinique","code":"MQ","flag":"🇲🇶"},{"id":137,"name":"Mauritania","code":"MR","flag":"🇲🇷"},{"id":138,"name":"Mauritius","code":"MU","flag":"🇲🇺"},{"id":139,"name":"Mayotte","code":"YT","flag":"🇾🇹"},{"id":140,"name":"Mexico","code":"MX","flag":"🇲🇽"},{"id":141,"name":"Micronesia","code":"FM","flag":"🇫🇲"},{"id":142,"name":"Moldova","code":"MD","flag":"🇲🇩"},{"id":143,"name":"Monaco","code":"MC","flag":"🇲🇨"},{"id":144,"name":"Mongolia","code":"MN","flag":"🇲🇳"},{"id":145,"name":"Montenegro","code":"ME","flag":"🇲🇪"},{"id":146,"name":"Montserrat","code":"MS","flag":"🇲🇸"},{"id":147,"name":"Morocco","code":"MA","flag":"🇲🇦"},{"id":148,"name":"Mozambique","code":"MZ","flag":"🇲🇿"},{"id":149,"name":"Myanmar","code":"MM","flag":"🇲🇲"},{"id":150,"name":"Namibia","code":"NA","flag":"🇳🇦"},{"id":151,"name":"Nauru","code":"NR","flag":"🇳🇷"},{"id":152,"name":"Nepal","code":"NP","flag":"🇳🇵"},{"id":153,"name":"Netherlands","code":"NL","flag":"🇳🇱"},{"id":154,"name":"New Caledonia","code":"NC","flag":"🇳🇨"},{"id":155,"name":"New Zealand","code":"NZ","flag":"🇳🇿"},{"id":156,"name":"Nicaragua","code":"NI","flag":"🇳🇮"},{"id":157,"name":"Niger","code":"NE","flag":"🇳🇪"},{"id":158,"name":"Nigeria","code":"NG","flag":"🇳🇬"},{"id":159,"name":"Niue","code":"NU","flag":"🇳🇺"},{"id":160,"name":"Norfolk Island","code":"NF","flag":"🇳🇫"},{"id":161,"name":"North Korea","code":"KP","flag":"🇰🇵"},{"id":162,"name":"North Macedonia","code":"MK","flag":"🇲🇰"},{"id":163,"name":"Northern Mariana Islands","code":"MP","flag":"🇲🇵"},{"id":164,"name":"Norway","code":"NO","flag":"🇳🇴"},{"id":165,"name":"Oman","code":"OM","flag":"🇴🇲"},{"id":166,"name":"Pakistan","code":"PK","flag":"🇵🇰"},{"id":167,"name":"Palau","code":"PW","flag":"🇵🇼"},{"id":168,"name":"Palestine","code":"PS","flag":"🇵🇸"},{"id":169,"name":"Panama","code":"PA","flag":"🇵🇦"},{"id":170,"name":"Papua New Guinea","code":"PG","flag":"🇵🇬"},{"id":171,"name":"Paraguay","code":"PY","flag":"🇵🇾"},{"id":172,"name":"Peru","code":"PE","flag":"🇵🇪"},{"id":173,"name":"Philippines","code":"PH","flag":"🇵🇭"},{"id":174,"name":"Pitcairn","code":"PN","flag":"🇵🇳"},{"id":175,"name":"Poland","code":"PL","flag":"🇵🇱"},{"id":176,"name":"Portugal","code":"PT","flag":"🇵🇹"},{"id":177,"name":"Puerto Rico","code":"PR","flag":"🇵🇷"},{"id":178,"name":"Qatar","code":"QA","flag":"🇶🇦"},{"id":179,"name":"Republic of the Congo","code":"CD","flag":"🇨🇩"},{"id":180,"name":"Romania","code":"RO","flag":"🇷🇴"},{"id":181,"name":"Russia","code":"RU","flag":"🇷🇺"},{"id":182,"name":"Rwanda","code":"RW","flag":"🇷🇼"},{"id":183,"name":"Réunion","code":"RE","flag":"🇷🇪"},{"id":184,"name":"Saint Barthélemy","code":"BL","flag":"🇧🇱"},{"id":185,"name":"Saint Helena","code":"SH","flag":"🇸🇭"},{"id":186,"name":"Saint Kitts and Nevis","code":"KN","flag":"🇰🇳"},{"id":187,"name":"Saint Lucia","code":"LC","flag":"🇱🇨"},{"id":188,"name":"Saint Martin (French part)","code":"MF","flag":"🇲🇫"},{"id":189,"name":"Saint Pierre and Miquelon","code":"PM","flag":"🇵🇲"},{"id":190,"name":"Saint Vincent and the Grenadines","code":"VC","flag":"🇻🇨"},{"id":191,"name":"Samoa","code":"WS","flag":"🇼🇸"},{"id":192,"name":"San Marino","code":"SM","flag":"🇸🇲"},{"id":193,"name":"Sao Tome and Principe","code":"ST","flag":"🇸🇹"},{"id":194,"name":"Saudi Arabia","code":"SA","flag":"🇸🇦"},{"id":195,"name":"Senegal","code":"SN","flag":"🇸🇳"},{"id":196,"name":"Serbia","code":"RS","flag":"🇷🇸"},{"id":197,"name":"Seychelles","code":"SC","flag":"🇸🇨"},{"id":198,"name":"Sierra Leone","code":"SL","flag":"🇸🇱"},{"id":199,"name":"Singapore","code":"SG","flag":"🇸🇬"},{"id":200,"name":"Sint Maarten (Dutch part)","code":"SX","flag":"🇸🇽"},{"id":201,"name":"Slovakia","code":"SK","flag":"🇸🇰"},{"id":202,"name":"Slovenia","code":"SI","flag":"🇸🇮"},{"id":203,"name":"Solomon Islands","code":"SB","flag":"🇸🇧"},{"id":204,"name":"Somalia","code":"SO","flag":"🇸🇴"},{"id":205,"name":"South Africa","code":"ZA","flag":"🇿🇦"},{"id":206,"name":"South Georgia and the South Sandwich Islands","code":"GS","flag":"🇬🇸"},{"id":207,"name":"South Korea","code":"KR","flag":"🇰🇷"},{"id":208,"name":"South Sudan","code":"SS","flag":"🇸🇸"},{"id":209,"name":"Spain","code":"ES","flag":"🇪🇸"},{"id":210,"name":"Sri Lanka","code":"LK","flag":"🇱🇰"},{"id":211,"name":"Sudan","code":"SD","flag":"🇸🇩"},{"id":212,"name":"Suriname","code":"SR","flag":"🇸🇷"},{"id":213,"name":"Svalbard and Jan Mayen","code":"SJ","flag":"🇸🇯"},{"id":214,"name":"Sweden","code":"SE","flag":"🇸🇪"},{"id":215,"name":"Switzerland","code":"CH","flag":"🇨🇭"},{"id":216,"name":"Syrian Arab Republic","code":"SY","flag":"🇸🇾"},{"id":217,"name":"Taiwan","code":"TW","flag":"🇹🇼"},{"id":218,"name":"Tajikistan","code":"TJ","flag":"🇹🇯"},{"id":219,"name":"Tanzania","code":"TZ","flag":"🇹🇿"},{"id":220,"name":"Thailand","code":"TH","flag":"🇹🇭"},{"id":221,"name":"Timor-Leste","code":"TL","flag":"🇹🇱"},{"id":222,"name":"Togo","code":"TG","flag":"🇹🇬"},{"id":223,"name":"Tokelau","code":"TK","flag":"🇹🇰"},{"id":224,"name":"Tonga","code":"TO","flag":"🇹🇴"},{"id":225,"name":"Trinidad and Tobago","code":"TT","flag":"🇹🇹"},{"id":226,"name":"Tunisia","code":"TN","flag":"🇹🇳"},{"id":227,"name":"Turkmenistan","code":"TM","flag":"🇹🇲"},{"id":228,"name":"Turks and Caicos Islands","code":"TC","flag":"🇹🇨"},{"id":229,"name":"Tuvalu","code":"TV","flag":"🇹🇻"},{"id":230,"name":"Türkiye","code":"TR","flag":"🇹🇷"},{"id":231,"name":"Uganda","code":"UG","flag":"🇺🇬"},{"id":232,"name":"Ukraine","code":"UA","flag":"🇺🇦"},{"id":233,"name":"United Arab Emirates","code":"AE","flag":"🇦🇪"},{"id":234,"name":"United Kingdom","code":"GB","flag":"🇬🇧"},{"id":235,"name":"United States","code":"US","flag":"🇺🇸"},{"id":236,"name":"United States Minor Outlying Islands","code":"UM","flag":"🇺🇲"},{"id":237,"name":"Uruguay","code":"UY","flag":"🇺🇾"},{"id":238,"name":"Uzbekistan","code":"UZ","flag":"🇺🇿"},{"id":239,"name":"Vanuatu","code":"VU","flag":"🇻🇺"},{"id":240,"name":"Vatican City","code":"VA","flag":"🇻🇦"},{"id":241,"name":"Venezuela","code":"VE","flag":"🇻🇪"},{"id":242,"name":"Viet Nam","code":"VN","flag":"🇻🇳"},{"id":243,"name":"Virgin Islands","code":"VG","flag":"🇻🇬"},{"id":244,"name":"Virgin Islands","code":"VI","flag":"🇻🇮"},{"id":245,"name":"Wallis and Futuna","code":"WF","flag":"🇼🇫"},{"id":246,"name":"Western Sahara","code":"EH","flag":"🇪🇭"},{"id":247,"name":"Yemen","code":"YE","flag":"🇾🇪"},{"id":248,"name":"Zambia","code":"ZM","flag":"🇿🇲"},{"id":249,"name":"Zimbabwe","code":"ZW","flag":"🇿🇼"},{"id":250,"name":"Åland Islands","code":"AX","flag":"🇦🇽"},{"id":251,"name":"Canary Islands","code":"IC","flag":"🇮🇨"}]`),
-  Nk = {
+  Hy = JSON.parse(`[{"id":1,"name":"Afghanistan","code":"AF","flag":"🇦🇫"},{"id":2,"name":"Albania","code":"AL","flag":"🇦🇱"},{"id":3,"name":"Algeria","code":"DZ","flag":"🇩🇿"},{"id":4,"name":"American Samoa","code":"AS","flag":"🇦🇸"},{"id":5,"name":"Andorra","code":"AD","flag":"🇦🇩"},{"id":6,"name":"Angola","code":"AO","flag":"🇦🇴"},{"id":7,"name":"Anguilla","code":"AI","flag":"🇦🇮"},{"id":8,"name":"Antarctica","code":"AQ","flag":"🇦🇶"},{"id":9,"name":"Antigua and Barbuda","code":"AG","flag":"🇦🇬"},{"id":10,"name":"Argentina","code":"AR","flag":"🇦🇷"},{"id":11,"name":"Armenia","code":"AM","flag":"🇦🇲"},{"id":12,"name":"Aruba","code":"AW","flag":"🇦🇼"},{"id":13,"name":"Australia","code":"AU","flag":"🇦🇺"},{"id":14,"name":"Austria","code":"AT","flag":"🇦🇹"},{"id":15,"name":"Azerbaijan","code":"AZ","flag":"🇦🇿"},{"id":16,"name":"Bahamas","code":"BS","flag":"🇧🇸"},{"id":17,"name":"Bahrain","code":"BH","flag":"🇧🇭"},{"id":18,"name":"Bangladesh","code":"BD","flag":"🇧🇩"},{"id":19,"name":"Barbados","code":"BB","flag":"🇧🇧"},{"id":20,"name":"Belarus","code":"BY","flag":"🇧🇾"},{"id":21,"name":"Belgium","code":"BE","flag":"🇧🇪"},{"id":22,"name":"Belize","code":"BZ","flag":"🇧🇿"},{"id":23,"name":"Benin","code":"BJ","flag":"🇧🇯"},{"id":24,"name":"Bermuda","code":"BM","flag":"🇧🇲"},{"id":25,"name":"Bhutan","code":"BT","flag":"🇧🇹"},{"id":26,"name":"Bolivia","code":"BO","flag":"🇧🇴"},{"id":27,"name":"Bonaire","code":"BQ","flag":"🇧🇶"},{"id":28,"name":"Bosnia and Herzegovina","code":"BA","flag":"🇧🇦"},{"id":29,"name":"Botswana","code":"BW","flag":"🇧🇼"},{"id":30,"name":"Bouvet Island","code":"BV","flag":"🇧🇻"},{"id":31,"name":"Brazil","code":"BR","flag":"🇧🇷"},{"id":32,"name":"British Indian Ocean Territory","code":"IO","flag":"🇮🇴"},{"id":33,"name":"Brunei Darussalam","code":"BN","flag":"🇧🇳"},{"id":34,"name":"Bulgaria","code":"BG","flag":"🇧🇬"},{"id":35,"name":"Burkina Faso","code":"BF","flag":"🇧🇫"},{"id":36,"name":"Burundi","code":"BI","flag":"🇧🇮"},{"id":37,"name":"Cabo Verde","code":"CV","flag":"🇨🇻"},{"id":38,"name":"Cambodia","code":"KH","flag":"🇰🇭"},{"id":39,"name":"Cameroon","code":"CM","flag":"🇨🇲"},{"id":40,"name":"Canada","code":"CA","flag":"🇨🇦"},{"id":41,"name":"Cayman Islands","code":"KY","flag":"🇰🇾"},{"id":42,"name":"Central African Republic","code":"CF","flag":"🇨🇫"},{"id":43,"name":"Chad","code":"TD","flag":"🇹🇩"},{"id":44,"name":"Chile","code":"CL","flag":"🇨🇱"},{"id":45,"name":"China","code":"CN","flag":"🇨🇳"},{"id":46,"name":"Christmas Island","code":"CX","flag":"🇨🇽"},{"id":47,"name":"Cocos (Keeling) Islands","code":"CC","flag":"🇨🇨"},{"id":48,"name":"Colombia","code":"CO","flag":"🇨🇴"},{"id":49,"name":"Comoros","code":"KM","flag":"🇰🇲"},{"id":50,"name":"Congo","code":"CG","flag":"🇨🇬"},{"id":51,"name":"Cook Islands","code":"CK","flag":"🇨🇰"},{"id":52,"name":"Costa Rica","code":"CR","flag":"🇨🇷"},{"id":53,"name":"Croatia","code":"HR","flag":"🇭🇷"},{"id":54,"name":"Cuba","code":"CU","flag":"🇨🇺"},{"id":55,"name":"Curaçao","code":"CW","flag":"🇨🇼"},{"id":56,"name":"Cyprus","code":"CY","flag":"🇨🇾"},{"id":57,"name":"Czechia","code":"CZ","flag":"🇨🇿"},{"id":58,"name":"Côte d'Ivoire","code":"CI","flag":"🇨🇮"},{"id":59,"name":"Denmark","code":"DK","flag":"🇩🇰"},{"id":60,"name":"Djibouti","code":"DJ","flag":"🇩🇯"},{"id":61,"name":"Dominica","code":"DM","flag":"🇩🇲"},{"id":62,"name":"Dominican Republic","code":"DO","flag":"🇩🇴"},{"id":63,"name":"Ecuador","code":"EC","flag":"🇪🇨"},{"id":64,"name":"Egypt","code":"EG","flag":"🇪🇬"},{"id":65,"name":"El Salvador","code":"SV","flag":"🇸🇻"},{"id":66,"name":"Equatorial Guinea","code":"GQ","flag":"🇬🇶"},{"id":67,"name":"Eritrea","code":"ER","flag":"🇪🇷"},{"id":68,"name":"Estonia","code":"EE","flag":"🇪🇪"},{"id":69,"name":"Eswatini","code":"SZ","flag":"🇸🇿"},{"id":70,"name":"Ethiopia","code":"ET","flag":"🇪🇹"},{"id":71,"name":"Falkland Islands (Malvinas)","code":"FK","flag":"🇫🇰"},{"id":72,"name":"Faroe Islands","code":"FO","flag":"🇫🇴"},{"id":73,"name":"Fiji","code":"FJ","flag":"🇫🇯"},{"id":74,"name":"Finland","code":"FI","flag":"🇫🇮"},{"id":75,"name":"France","code":"FR","flag":"🇫🇷"},{"id":76,"name":"French Guiana","code":"GF","flag":"🇬🇫"},{"id":77,"name":"French Polynesia","code":"PF","flag":"🇵🇫"},{"id":78,"name":"French Southern Territories","code":"TF","flag":"🇹🇫"},{"id":79,"name":"Gabon","code":"GA","flag":"🇬🇦"},{"id":80,"name":"Gambia","code":"GM","flag":"🇬🇲"},{"id":81,"name":"Georgia","code":"GE","flag":"🇬🇪"},{"id":82,"name":"Germany","code":"DE","flag":"🇩🇪"},{"id":83,"name":"Ghana","code":"GH","flag":"🇬🇭"},{"id":84,"name":"Gibraltar","code":"GI","flag":"🇬🇮"},{"id":85,"name":"Greece","code":"GR","flag":"🇬🇷"},{"id":86,"name":"Greenland","code":"GL","flag":"🇬🇱"},{"id":87,"name":"Grenada","code":"GD","flag":"🇬🇩"},{"id":88,"name":"Guadeloupe","code":"GP","flag":"🇬🇵"},{"id":89,"name":"Guam","code":"GU","flag":"🇬🇺"},{"id":90,"name":"Guatemala","code":"GT","flag":"🇬🇹"},{"id":91,"name":"Guernsey","code":"GG","flag":"🇬🇬"},{"id":92,"name":"Guinea","code":"GN","flag":"🇬🇳"},{"id":93,"name":"Guinea-Bissau","code":"GW","flag":"🇬🇼"},{"id":94,"name":"Guyana","code":"GY","flag":"🇬🇾"},{"id":95,"name":"Haiti","code":"HT","flag":"🇭🇹"},{"id":96,"name":"Heard Island and McDonald Islands","code":"HM","flag":"🇭🇲"},{"id":97,"name":"Honduras","code":"HN","flag":"🇭🇳"},{"id":98,"name":"Hong Kong","code":"HK","flag":"🇭🇰"},{"id":99,"name":"Hungary","code":"HU","flag":"🇭🇺"},{"id":100,"name":"Iceland","code":"IS","flag":"🇮🇸"},{"id":101,"name":"India","code":"IN","flag":"🇮🇳"},{"id":102,"name":"Indonesia","code":"ID","flag":"🇮🇩"},{"id":103,"name":"Iran","code":"IR","flag":"🇮🇷"},{"id":104,"name":"Iraq","code":"IQ","flag":"🇮🇶"},{"id":105,"name":"Ireland","code":"IE","flag":"🇮🇪"},{"id":106,"name":"Isle of Man","code":"IM","flag":"🇮🇲"},{"id":107,"name":"Israel","code":"IL","flag":"🇮🇱"},{"id":108,"name":"Italy","code":"IT","flag":"🇮🇹"},{"id":109,"name":"Jamaica","code":"JM","flag":"🇯🇲"},{"id":110,"name":"Japan","code":"JP","flag":"🇯🇵"},{"id":111,"name":"Jersey","code":"JE","flag":"🇯🇪"},{"id":112,"name":"Jordan","code":"JO","flag":"🇯🇴"},{"id":113,"name":"Kazakhstan","code":"KZ","flag":"🇰🇿"},{"id":114,"name":"Kenya","code":"KE","flag":"🇰🇪"},{"id":115,"name":"Kiribati","code":"KI","flag":"🇰🇮"},{"id":116,"name":"Kosovo","code":"XK","flag":"🇽🇰"},{"id":117,"name":"Kuwait","code":"KW","flag":"🇰🇼"},{"id":118,"name":"Kyrgyzstan","code":"KG","flag":"🇰🇬"},{"id":119,"name":"Laos","code":"LA","flag":"🇱🇦"},{"id":120,"name":"Latvia","code":"LV","flag":"🇱🇻"},{"id":121,"name":"Lebanon","code":"LB","flag":"🇱🇧"},{"id":122,"name":"Lesotho","code":"LS","flag":"🇱🇸"},{"id":123,"name":"Liberia","code":"LR","flag":"🇱🇷"},{"id":124,"name":"Libya","code":"LY","flag":"🇱🇾"},{"id":125,"name":"Liechtenstein","code":"LI","flag":"🇱🇮"},{"id":126,"name":"Lithuania","code":"LT","flag":"🇱🇹"},{"id":127,"name":"Luxembourg","code":"LU","flag":"🇱🇺"},{"id":128,"name":"Macao","code":"MO","flag":"🇲🇴"},{"id":129,"name":"Madagascar","code":"MG","flag":"🇲🇬"},{"id":130,"name":"Malawi","code":"MW","flag":"🇲🇼"},{"id":131,"name":"Malaysia","code":"MY","flag":"🇲🇾"},{"id":132,"name":"Maldives","code":"MV","flag":"🇲🇻"},{"id":133,"name":"Mali","code":"ML","flag":"🇲🇱"},{"id":134,"name":"Malta","code":"MT","flag":"🇲🇹"},{"id":135,"name":"Marshall Islands","code":"MH","flag":"🇲🇭"},{"id":136,"name":"Martinique","code":"MQ","flag":"🇲🇶"},{"id":137,"name":"Mauritania","code":"MR","flag":"🇲🇷"},{"id":138,"name":"Mauritius","code":"MU","flag":"🇲🇺"},{"id":139,"name":"Mayotte","code":"YT","flag":"🇾🇹"},{"id":140,"name":"Mexico","code":"MX","flag":"🇲🇽"},{"id":141,"name":"Micronesia","code":"FM","flag":"🇫🇲"},{"id":142,"name":"Moldova","code":"MD","flag":"🇲🇩"},{"id":143,"name":"Monaco","code":"MC","flag":"🇲🇨"},{"id":144,"name":"Mongolia","code":"MN","flag":"🇲🇳"},{"id":145,"name":"Montenegro","code":"ME","flag":"🇲🇪"},{"id":146,"name":"Montserrat","code":"MS","flag":"🇲🇸"},{"id":147,"name":"Morocco","code":"MA","flag":"🇲🇦"},{"id":148,"name":"Mozambique","code":"MZ","flag":"🇲🇿"},{"id":149,"name":"Myanmar","code":"MM","flag":"🇲🇲"},{"id":150,"name":"Namibia","code":"NA","flag":"🇳🇦"},{"id":151,"name":"Nauru","code":"NR","flag":"🇳🇷"},{"id":152,"name":"Nepal","code":"NP","flag":"🇳🇵"},{"id":153,"name":"Netherlands","code":"NL","flag":"🇳🇱"},{"id":154,"name":"New Caledonia","code":"NC","flag":"🇳🇨"},{"id":155,"name":"New Zealand","code":"NZ","flag":"🇳🇿"},{"id":156,"name":"Nicaragua","code":"NI","flag":"🇳🇮"},{"id":157,"name":"Niger","code":"NE","flag":"🇳🇪"},{"id":158,"name":"Nigeria","code":"NG","flag":"🇳🇬"},{"id":159,"name":"Niue","code":"NU","flag":"🇳🇺"},{"id":160,"name":"Norfolk Island","code":"NF","flag":"🇳🇫"},{"id":161,"name":"North Korea","code":"KP","flag":"🇰🇵"},{"id":162,"name":"North Macedonia","code":"MK","flag":"🇲🇰"},{"id":163,"name":"Northern Mariana Islands","code":"MP","flag":"🇲🇵"},{"id":164,"name":"Norway","code":"NO","flag":"🇳🇴"},{"id":165,"name":"Oman","code":"OM","flag":"🇴🇲"},{"id":166,"name":"Pakistan","code":"PK","flag":"🇵🇰"},{"id":167,"name":"Palau","code":"PW","flag":"🇵🇼"},{"id":168,"name":"Palestine","code":"PS","flag":"🇵🇸"},{"id":169,"name":"Panama","code":"PA","flag":"🇵🇦"},{"id":170,"name":"Papua New Guinea","code":"PG","flag":"🇵🇬"},{"id":171,"name":"Paraguay","code":"PY","flag":"🇵🇾"},{"id":172,"name":"Peru","code":"PE","flag":"🇵🇪"},{"id":173,"name":"Philippines","code":"PH","flag":"🇵🇭"},{"id":174,"name":"Pitcairn","code":"PN","flag":"🇵🇳"},{"id":175,"name":"Poland","code":"PL","flag":"🇵🇱"},{"id":176,"name":"Portugal","code":"PT","flag":"🇵🇹"},{"id":177,"name":"Puerto Rico","code":"PR","flag":"🇵🇷"},{"id":178,"name":"Qatar","code":"QA","flag":"🇶🇦"},{"id":179,"name":"Republic of the Congo","code":"CD","flag":"🇨🇩"},{"id":180,"name":"Romania","code":"RO","flag":"🇷🇴"},{"id":181,"name":"Russia","code":"RU","flag":"🇷🇺"},{"id":182,"name":"Rwanda","code":"RW","flag":"🇷🇼"},{"id":183,"name":"Réunion","code":"RE","flag":"🇷🇪"},{"id":184,"name":"Saint Barthélemy","code":"BL","flag":"🇧🇱"},{"id":185,"name":"Saint Helena","code":"SH","flag":"🇸🇭"},{"id":186,"name":"Saint Kitts and Nevis","code":"KN","flag":"🇰🇳"},{"id":187,"name":"Saint Lucia","code":"LC","flag":"🇱🇨"},{"id":188,"name":"Saint Martin (French part)","code":"MF","flag":"🇲🇫"},{"id":189,"name":"Saint Pierre and Miquelon","code":"PM","flag":"🇵🇲"},{"id":190,"name":"Saint Vincent and the Grenadines","code":"VC","flag":"🇻🇨"},{"id":191,"name":"Samoa","code":"WS","flag":"🇼🇸"},{"id":192,"name":"San Marino","code":"SM","flag":"🇸🇲"},{"id":193,"name":"Sao Tome and Principe","code":"ST","flag":"🇸🇹"},{"id":194,"name":"Saudi Arabia","code":"SA","flag":"🇸🇦"},{"id":195,"name":"Senegal","code":"SN","flag":"🇸🇳"},{"id":196,"name":"Serbia","code":"RS","flag":"🇷🇸"},{"id":197,"name":"Seychelles","code":"SC","flag":"🇸🇨"},{"id":198,"name":"Sierra Leone","code":"SL","flag":"🇸🇱"},{"id":199,"name":"Singapore","code":"SG","flag":"🇸🇬"},{"id":200,"name":"Sint Maarten (Dutch part)","code":"SX","flag":"🇸🇽"},{"id":201,"name":"Slovakia","code":"SK","flag":"🇸🇰"},{"id":202,"name":"Slovenia","code":"SI","flag":"🇸🇮"},{"id":203,"name":"Solomon Islands","code":"SB","flag":"🇸🇧"},{"id":204,"name":"Somalia","code":"SO","flag":"🇸🇴"},{"id":205,"name":"South Africa","code":"ZA","flag":"🇿🇦"},{"id":206,"name":"South Georgia and the South Sandwich Islands","code":"GS","flag":"🇬🇸"},{"id":207,"name":"South Korea","code":"KR","flag":"🇰🇷"},{"id":208,"name":"South Sudan","code":"SS","flag":"🇸🇸"},{"id":209,"name":"Spain","code":"ES","flag":"🇪🇸"},{"id":210,"name":"Sri Lanka","code":"LK","flag":"🇱🇰"},{"id":211,"name":"Sudan","code":"SD","flag":"🇸🇩"},{"id":212,"name":"Suriname","code":"SR","flag":"🇸🇷"},{"id":213,"name":"Svalbard and Jan Mayen","code":"SJ","flag":"🇸🇯"},{"id":214,"name":"Sweden","code":"SE","flag":"🇸🇪"},{"id":215,"name":"Switzerland","code":"CH","flag":"🇨🇭"},{"id":216,"name":"Syrian Arab Republic","code":"SY","flag":"🇸🇾"},{"id":217,"name":"Taiwan","code":"TW","flag":"🇹🇼"},{"id":218,"name":"Tajikistan","code":"TJ","flag":"🇹🇯"},{"id":219,"name":"Tanzania","code":"TZ","flag":"🇹🇿"},{"id":220,"name":"Thailand","code":"TH","flag":"🇹🇭"},{"id":221,"name":"Timor-Leste","code":"TL","flag":"🇹🇱"},{"id":222,"name":"Togo","code":"TG","flag":"🇹🇬"},{"id":223,"name":"Tokelau","code":"TK","flag":"🇹🇰"},{"id":224,"name":"Tonga","code":"TO","flag":"🇹🇴"},{"id":225,"name":"Trinidad and Tobago","code":"TT","flag":"🇹🇹"},{"id":226,"name":"Tunisia","code":"TN","flag":"🇹🇳"},{"id":227,"name":"Turkmenistan","code":"TM","flag":"🇹🇲"},{"id":228,"name":"Turks and Caicos Islands","code":"TC","flag":"🇹🇨"},{"id":229,"name":"Tuvalu","code":"TV","flag":"🇹🇻"},{"id":230,"name":"Türkiye","code":"TR","flag":"🇹🇷"},{"id":231,"name":"Uganda","code":"UG","flag":"🇺🇬"},{"id":232,"name":"Ukraine","code":"UA","flag":"🇺🇦"},{"id":233,"name":"United Arab Emirates","code":"AE","flag":"🇦🇪"},{"id":234,"name":"United Kingdom","code":"GB","flag":"🇬🇧"},{"id":235,"name":"United States","code":"US","flag":"🇺🇸"},{"id":236,"name":"United States Minor Outlying Islands","code":"UM","flag":"🇺🇲"},{"id":237,"name":"Uruguay","code":"UY","flag":"🇺🇾"},{"id":238,"name":"Uzbekistan","code":"UZ","flag":"🇺🇿"},{"id":239,"name":"Vanuatu","code":"VU","flag":"🇻🇺"},{"id":240,"name":"Vatican City","code":"VA","flag":"🇻🇦"},{"id":241,"name":"Venezuela","code":"VE","flag":"🇻🇪"},{"id":242,"name":"Viet Nam","code":"VN","flag":"🇻🇳"},{"id":243,"name":"Virgin Islands","code":"VG","flag":"🇻🇬"},{"id":244,"name":"Virgin Islands","code":"VI","flag":"🇻🇮"},{"id":245,"name":"Wallis and Futuna","code":"WF","flag":"🇼🇫"},{"id":246,"name":"Western Sahara","code":"EH","flag":"🇪🇭"},{"id":247,"name":"Yemen","code":"YE","flag":"🇾🇪"},{"id":248,"name":"Zambia","code":"ZM","flag":"🇿🇲"},{"id":249,"name":"Zimbabwe","code":"ZW","flag":"🇿🇼"},{"id":250,"name":"Åland Islands","code":"AX","flag":"🇦🇽"},{"id":251,"name":"Canary Islands","code":"IC","flag":"🇮🇨"}]`),
+  Wy = {
     dashboard: {
       summary: {
         counters: {
@@ -3281,14 +4561,14 @@ const vk = [{
       assignCosmetics: "staff.cosmetics.assign_cosmetics"
     }
   },
-  zk = {
+  Yy = {
     tools: {
       wayback: {
         limit: 1e4
       }
     }
   },
-  Ak = [{
+  Jy = [{
     slug: "country_badge",
     kind: "country",
     name: "Country badge",
@@ -3316,2511 +4596,631 @@ const vk = [{
     unlockCondition: "knockout_perfect",
     image: "https://files.wplace.live/img/world-cup/world-cup-dust-badge.png"
   }],
-  Rk = {
+  Qy = {
     areaRadius: 250
   },
-  P = {
-    seasons: vk,
-    regionSize: Ek,
-    refreshIntervalMs: kk,
-    colors: Tk,
-    platforms: Ok,
-    products: Ik,
-    countries: Sk,
-    permissions: Nk,
-    settings: zk,
-    worldCupStore: Ak,
-    moderation: Rk
+  j = {
+    seasons: zy,
+    regionSize: Ky,
+    refreshIntervalMs: Fy,
+    colors: $y,
+    platforms: Gy,
+    products: Vy,
+    countries: Hy,
+    permissions: Wy,
+    settings: Yy,
+    worldCupStore: Jy,
+    moderation: Qy
   },
-  je = P,
-  Dk = P.seasons,
-  kt = P.seasons.length - 1,
-  xT = P.seasons[kt].zoom,
-  jT = P.seasons[kt].tileSize,
-  PT = P.permissions,
-  xk = P.settings,
-  jk = P.platforms.android,
-  qT = jk.googlePlayBilling.price,
-  LT = P.worldCupStore;
+  Ue = j,
+  Xy = j.seasons,
+  Et = j.seasons.length - 1,
+  Xb = j.seasons[Et].zoom,
+  Zb = j.seasons[Et].tileSize,
+  ev = j.permissions,
+  Zy = j.settings,
+  eb = j.platforms.android,
+  tv = eb.googlePlayBilling.price,
+  rv = j.worldCupStore;
 
-function UT(n) {
-  return je.countries[n - 1]
+function nv(r) {
+  return Ue.countries[r - 1]
 }
 
-function Ge(n) {
-  return Ge.map.get(n)
-}(n => {
-  n.sharedProducts = Object.entries(je.products).map(([t, e]) => ({
+function Ke(r) {
+  return Ke.map.get(r)
+}(r => {
+  r.sharedProducts = Object.entries(Ue.products).map(([t, e]) => ({
     ...e,
     productId: t
-  })).filter(t => "lookupKey" in t), n.map = Pk(n.sharedProducts, t => t.lookupKey)
-})(Ge || (Ge = {}));
+  })).filter(t => "lookupKey" in t), r.map = tb(r.sharedProducts, t => t.lookupKey)
+})(Ke || (Ke = {}));
 
-function Pk(n, t) {
+function tb(r, t) {
   const e = new Map;
-  for (const r in n) {
-    const o = Reflect.get(n, r),
-      a = t(o, r, n);
-    e.set(a, o)
-  }
-  return e
-}
-class l extends Error {
-  constructor(t, e) {
-    super(t), this.message = t, this.status = e
-  }
-}
-class MT extends Error {}
-
-function mt(n, t) {
-  const e = {};
-  for (const r of n) {
-    const o = t(r),
-      a = e[o];
-    a ? a.push(r) : e[o] = [r]
+  for (const n in r) {
+    const s = Reflect.get(r, n),
+      i = t(s, n, r);
+    e.set(i, s)
   }
   return e
 }
 
-function BT(n, t) {
+function ut(r, t) {
   const e = {};
-  for (const r of n) {
-    const o = t(r);
-    e[o] = r
+  for (const n of r) {
+    const s = t(n),
+      i = e[s];
+    i ? i.push(n) : e[s] = [n]
   }
   return e
 }
-const qk = 30 * B.minute;
-var pe, he;
-class Lk {
-  constructor(t) {
-    b(this, pe, I(!0));
-    b(this, he, I(null));
-    g(this, "lastHotspotRequestAt", 0);
-    this.url = t
+
+function sv(r, t) {
+  const e = {};
+  for (const n of r) {
+    const s = t(n);
+    e[s] = n
   }
-  get online() {
-    return k(p(this, pe))
-  }
-  set online(t) {
-    T(p(this, pe), t, !0)
-  }
-  get serverTimeOffsetMs() {
-    return k(p(this, he))
-  }
-  set serverTimeOffsetMs(t) {
-    T(p(this, he), t, !0)
-  }
-  hasServerTimeEstimate() {
-    return this.serverTimeOffsetMs !== null
-  }
-  getEstimatedServerNowMs() {
-    const t = Date.now();
-    return this.serverTimeOffsetMs === null ? t - 6e4 : t + this.serverTimeOffsetMs
-  }
-  clampWaybackTimestamp(t) {
-    if (!Number.isFinite(t)) return 0;
-    const e = Math.trunc(t);
-    if (e <= 0) return 0;
-    const r = Math.trunc(this.getEstimatedServerNowMs());
-    return e > r ? r : e
-  }
-  updateServerTimeEstimate(t) {
-    const e = t.headers.get("date");
-    if (!e) return;
-    const r = new Date(e).getTime();
-    Number.isFinite(r) && (this.serverTimeOffsetMs = r - Date.now())
-  }
-  async paint(t) {
-    const e = mt(t, u => `t=(${u.tile[0]},${u.tile[1]}),s=${u.season}`),
-      r = {
-        season: t[0].season,
-        tiles: Object.values(e).map(u => ({
-          x: u[0].tile[0],
-          y: u[0].tile[1],
-          pixels: {
-            x: u.map(_ => _.pixel[0]),
-            y: u.map(_ => _.pixel[1]),
-            colors: u.map(_ => _.colorIdx)
-          }
-        }))
-      },
-      o = JSON.stringify(r),
-      a = await X.getHeaders(o),
-      c = await this.request("/paint", {
-        method: "POST",
-        body: o,
-        headers: a,
-        credentials: "include"
-      });
-    if (c.status === i.OK) {
-      const u = await c.json().catch(() => ({}));
-      return {
-        worldCupQuestCompleted: !!(u != null && u.worldCupQuestCompleted)
-      }
-    }
-    if (c.status !== i.OK) {
-      if (c.status === i.UNAUTHORIZED) throw new Error(ft());
-      if (c.status === i.FORBIDDEN) {
-        if (c.headers.get("cf-mitigated") === "challenge") throw new Error(at());
-        const u = await c.json();
-        if ((u == null ? void 0 : u.error) === "timeout") {
-          const _ = new Date(Date.now() + ((u == null ? void 0 : u.durationMs) ?? 0));
-          throw new Error(pt({
-            until: _.toLocaleString()
+  return e
+}
+
+function rb(r) {
+  return class extends r {
+    async paint(t) {
+      const e = ut(t, c => `t=(${c.tile[0]},${c.tile[1]}),s=${c.season}`),
+        n = {
+          season: t[0].season,
+          tiles: Object.values(e).map(c => ({
+            x: c[0].tile[0],
+            y: c[0].tile[1],
+            pixels: {
+              x: c.map(_ => _.pixel[0]),
+              y: c.map(_ => _.pixel[1]),
+              colors: c.map(_ => _.colorIdx)
+            }
           }))
-        }
-        if ((u == null ? void 0 : u.error) === "refresh") throw new Error(ct());
-        if ((u == null ? void 0 : u.error) === "color-not-owned") throw new Error(ut());
-        if ((u == null ? void 0 : u.error) === "event-pixel-present") throw new Error(ot());
-        if ((u == null ? void 0 : u.error) === "challenge-required")
-          if (u.tier) {
-            if (await tt(u.tier)) return this.paint(t);
-            throw new Error(Me())
-          } else console.error("Challenge required but no tier provided", u);
-        if ((u == null ? void 0 : u.error) === "verification-required") {
-          const f = (await qt().get()).sealed_result;
-          if (f) return await this.verifyAnticheat(f), this.paint(t);
-          throw new Error(s())
-        }
-        V.refresh()
-      } else throw new Error(s())
-    }
-    return {
-      worldCupQuestCompleted: !1
-    }
-  }
-  async selectAreaClear(t, e) {
-    return this.sendPaintRequests(t, (r, o, a) => `/staff/tools/select-area/clear/s${r}/pixel/${o}/${a}`, e)
-  }
-  async createReverseSession(t) {
-    const e = await this.request("/staff/tools/select-area/reverse/session", {
-      method: "POST",
-      body: t.buffer,
-      headers: {
-        "Content-Type": "application/octet-stream"
-      },
-      credentials: "include"
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status);
-    return e.json()
-  }
-  async getReverseTimestamps(t, e = {}) {
-    const {
-      mode: r = "depth",
-      beforeDepth: o,
-      beforeTimestamp: a
-    } = e, c = await this.request("/staff/tools/select-area/reverse/timestamps", {
-      method: "POST",
-      body: JSON.stringify({
-        sessionId: t,
-        mode: r,
-        beforeDepth: o,
-        beforeTimestamp: a
-      }),
-      headers: {
-        "Content-Type": "application/json"
-      },
-      credentials: "include"
-    });
-    if (c.status !== i.OK) throw new l(s(), c.status);
-    return c.json()
-  }
-  async getReversePreview(t, e) {
-    const {
-      mode: r = "depth",
-      snapshotDepth: o,
-      timestamp: a
-    } = e, c = await this.request("/staff/tools/select-area/reverse/preview", {
-      method: "POST",
-      body: JSON.stringify({
-        sessionId: t,
-        mode: r,
-        snapshotDepth: o,
-        timestamp: a
-      }),
-      headers: {
-        "Content-Type": "application/json"
-      },
-      credentials: "include"
-    });
-    if (c.status !== i.OK) throw new l(s(), c.status);
-    return c.json()
-  }
-  async getReverseTimelapse(t, e) {
-    const r = await this.request("/staff/tools/select-area/reverse/timelapse", {
-      method: "POST",
-      body: JSON.stringify({
-        sessionId: t,
-        paceMode: e.paceMode,
-        fps: e.fps,
-        durationSeconds: e.durationSeconds,
-        maxFrameCount: e.maxFrameCount,
-        beforeTimestamp: e.beforeTimestamp ?? 0
-      }),
-      headers: {
-        "Content-Type": "application/json"
-      },
-      credentials: "include"
-    });
-    if (r.status === i.BAD_REQUEST) {
-      const o = await r.json(),
-        a = (o == null ? void 0 : o.error) ?? "";
-      throw a === "timelapse_too_many_events" ? new l(uy(), i.BAD_REQUEST) : new l(typeof a == "string" && a ? a : s(), i.BAD_REQUEST)
-    }
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    return r.arrayBuffer()
-  }
-  async applyReverse(t, e) {
-    const {
-      mode: r = "depth",
-      snapshotDepth: o,
-      timestamp: a
-    } = e, c = await this.request("/staff/tools/select-area/reverse/apply", {
-      method: "POST",
-      body: JSON.stringify({
-        sessionId: t,
-        mode: r,
-        snapshotDepth: o,
-        timestamp: a
-      }),
-      headers: {
-        "Content-Type": "application/json"
-      },
-      credentials: "include"
-    });
-    if (c.status !== i.OK) throw new l(s(), c.status);
-    return c.json()
-  }
-  async sendPaintRequests(t, e, r, o) {
-    const a = mt(t, _ => `t=(${_.tile[0]},${_.tile[1]}),s=${_.season}`),
-      u = (await Promise.all(Object.values(a).map(async _ => {
-        const [f, O] = _[0].tile, y = _[0].season, D = {
-          colors: _.map(z => z.colorIdx),
-          coords: _.flatMap(z => z.pixel),
-          csid: r
-        }, q = JSON.stringify(D), S = e(y, f, O), A = await X.getHeaders(q);
-        return this.request(S, {
-          method: "POST",
-          body: q,
-          headers: A,
-          credentials: "include"
-        })
-      }))).filter(_ => _.status !== i.OK);
-    if (u.length) {
-      const _ = u[0];
-      if (_.status === i.UNAUTHORIZED) throw new Error(ft());
-      if (_.status === i.FORBIDDEN) {
-        if (_.headers.get("cf-mitigated") === "challenge") throw new Error(at());
-        const f = await _.json();
-        if ((f == null ? void 0 : f.error) === "timeout") {
-          const O = new Date(Date.now() + ((f == null ? void 0 : f.durationMs) ?? 0));
-          throw new Error(pt({
-            until: O.toLocaleString()
-          }))
-        }
-        if ((f == null ? void 0 : f.error) === "refresh") throw new Error(ct());
-        if ((f == null ? void 0 : f.error) === "color-not-owned") throw new Error(ut());
-        if ((f == null ? void 0 : f.error) === "event-pixel-present") throw new Error(ot());
-        V.refresh()
-      } else throw new Error(s())
-    }
-  }
-  async adminAutoPainterPaint(t, e, r) {
-    const o = Uk(t),
-      a = await Mk(o),
-      c = new FormData;
-    c.append("fingerprint", e), c.append("season", o.season.toString()), c.append("px0", o.offsetX.toString()), c.append("py0", o.offsetY.toString()), c.append("width", o.width.toString()), c.append("height", o.height.toString()), c.append("pixels", t.length.toString()), c.append("bitmap", a, "auto-painter.png"), c.append("userId", r.toString());
-    const u = await this.request("/staff/tools/auto-painter/paint", {
-      method: "POST",
-      body: c,
-      credentials: "include"
-    });
-    if (u.status === i.FORBIDDEN) {
-      const _ = await u.json().catch(() => null);
-      if (typeof(_ == null ? void 0 : _.charges) == "number") throw new Error(Bg({
-        charges: Math.floor(_.charges),
-        pixels: t.length
-      }));
-      const f = typeof(_ == null ? void 0 : _.error) == "string" ? _.error.trim() : "";
-      throw f && f !== "Forbidden" ? new Error(f) : new Error("Auto painter is restricted to administrators.")
-    }
-    if (u.status !== i.OK) throw new Error(s());
-    return u.json()
-  }
-  async getPixelInfo({
-    season: t,
-    tile: [e, r],
-    pixel: [o, a]
-  }) {
-    const c = new URLSearchParams;
-    c.set("x", String(o)), c.set("y", String(a));
-    const u = await this.request(`/s${t}/pixel/${e}/${r}?${c.toString()}`, {
-      credentials: "include"
-    });
-    if (u.status !== i.OK) {
-      const _ = await u.text();
-      throw new Error(Ws({
-        err: _
-      }))
-    }
-    return u.json()
-  }
-  async getPixelAreaInfo({
-    season: t,
-    tile: [e, r],
-    p0: [o, a],
-    p1: [c, u]
-  }) {
-    const _ = await this.request(`/staff/tools/select-area/s${t}/${e}/${r}?x0=${o}&y0=${a}&x1=${c}&y1=${u}`, {
-      credentials: "include"
-    });
-    if (_.status !== i.OK) {
-      const S = await _.text();
-      throw console.error("Error while fetching pixel area info", S), new Error(s())
-    }
-    const f = await _.arrayBuffer(),
-      O = new DataView(f),
-      y = Math.floor(f.byteLength / 5),
-      D = new Uint32Array(y),
-      q = new Uint8Array(y);
-    for (let S = 0; S < y; S++) {
-      const A = S * 5;
-      D[S] = O.getUint32(A, !0), q[S] = O.getUint8(A + 4)
-    }
-    return {
-      paintedBy: D,
-      colors: q
-    }
-  }
-  async me() {
-    const t = await this.request("/me", {
-      credentials: "include",
-      throwOnStatus: !1
-    });
-    if (t.status === i.OK) return await t.json();
-    if (t.status !== i.UNAUTHORIZED) throw new l(s(), t.status)
-  }
-  async meEmail() {
-    const t = await this.request("/me/email", {
-      credentials: "include"
-    });
-    if (t.status === i.OK) return (await t.json()).email
-  }
-  async exchangeForCupCoins(t) {
-    return (await this.request("/world-cup/coins/exchange", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        batches: t
-      }),
-      throwOnStatus: !1
-    })).status === i.OK
-  }
-  async getOwnedWorldCupItems() {
-    const t = await this.request("/world-cup/items/owned", {
-      credentials: "include",
-      throwOnStatus: !1
-    });
-    return t.status !== i.OK ? {
-      owned: [],
-      cupQuestDoneToday: !1,
-      cupCoins: 0
-    } : t.json()
-  }
-  async buyWorldCupItem(t, e) {
-    return (await this.request(`/world-cup/store/buy/${t}`, {
-      method: "POST",
-      credentials: "include",
-      body: e ? JSON.stringify({
-        country: e
-      }) : void 0,
-      throwOnStatus: !1
-    })).status === i.OK
-  }
-  async getWorldCupPredictions() {
-    const t = await this.request("/world-cup/predictions", {
-      credentials: "omit",
-      throwOnStatus: !1
-    });
-    return t.status !== i.OK ? [] : (await t.json()).predictions ?? []
-  }
-  async getMyWorldCupPredictions() {
-    const t = await this.request("/world-cup/predictions/mine", {
-      credentials: "include",
-      throwOnStatus: !1
-    });
-    return t.status !== i.OK ? [] : (await t.json()).predictions ?? []
-  }
-  async postWorldCupPrediction(t, e) {
-    const r = await this.request("/world-cup/predictions", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        matchId: t,
-        pick: e
-      }),
-      throwOnStatus: !1
-    });
-    return r.status !== i.OK ? {
-      status: r.status
-    } : {
-      status: r.status,
-      result: await r.json()
-    }
-  }
-  async logout() {
-    const t = await this.request("/auth/logout", {
-      method: "POST",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new Error(await t.text());
-    return await t.json()
-  }
-  async driveStatus() {
-    const t = await this.request("/drive/status", {
-      credentials: "include"
-    });
-    return t.status !== i.OK ? !1 : !!(await t.json()).connected
-  }
-  async driveConnect(t) {
-    const e = await this.request("/drive/connect", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        code: t
-      })
-    });
-    if (e.status !== i.OK) throw new Error(`drive connect failed: ${e.status}`);
-    return e.json()
-  }
-  async driveToken() {
-    const t = await this.request("/drive/token", {
-      credentials: "include",
-      throwOnStatus: !1
-    });
-    if (t.status === i.CONFLICT) return null;
-    if (t.status !== i.OK) throw new Error(`drive token failed: ${t.status}`);
-    return t.json()
-  }
-  async driveDisconnect() {
-    await this.request("/drive/disconnect", {
-      method: "POST",
-      credentials: "include",
-      throwOnStatus: !1
-    })
-  }
-  async createEmbeddedCheckout(t) {
-    const e = await this.request("/payment/create-checkout-session", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        lookup_key: t
-      })
-    });
-    if (e.status === i.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(rt());
-    if (e.status !== i.OK) throw new Error(await e.text());
-    return e.json()
-  }
-  async refreshStripeSession(t) {
-    await this.request(`/payment/refresh-session/${t}`, {
-      method: "POST",
-      credentials: "include"
-    })
-  }
-  async refreshFastspringSession(t) {
-    const e = await this.request(`/payment/fastspring/refresh-session/${t}`, {
-      method: "POST",
-      credentials: "include"
-    });
-    if (!e.ok) throw new Error(`fastspring refresh failed: ${e.status}`);
-    return await e.json()
-  }
-  async getLastFastspringOrder() {
-    const t = await this.request("/payment/fastspring/orders/last", {
-      credentials: "include"
-    });
-    if (t.status === i.NOT_FOUND) return null;
-    if (!t.ok) throw new Error(`Failed to get last FastSpring order: ${t.status} ${t.statusText}`);
-    return await t.json()
-  }
-  async markFastspringOrderAsRead(t) {
-    const e = await this.request(`/payment/fastspring/orders/${t}/mark-as-read`, {
-      method: "PATCH",
-      credentials: "include"
-    });
-    if (!e.ok) throw new Error(`Failed to update FastSpring order: ${e.status} ${e.statusText}`)
-  }
-  async getOtpCooldown() {
-    const t = await this.request("/anticheat/otp/cooldown", {
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new Error(s());
-    return await t.json()
-  }
-  async sendOtp(t) {
-    const e = await this.request("/anticheat/otp/send", {
-      method: "POST",
-      credentials: "include",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        phone: t
-      }),
-      throwOnStatus: !1
-    });
-    if (e.status === i.BAD_REQUEST) throw new Error(ah());
-    if (e.status === i.CONFLICT) throw new Error(dw());
-    if (e.status === i.FORBIDDEN) throw new Error(pg());
-    if (e.status === i.TOO_MANY_REQUESTS) throw new Error(lt());
-    if (e.status === i.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(Tw());
-    if (e.status === i.LOCKED) throw new Error(Ab());
-    if (e.status === i.UNPROCESSABLE_ENTITY) throw new Error(yh());
-    if (e.status === i.NOT_ACCEPTABLE) throw new Error(Fb());
-    if (e.status === i.PRECONDITION_FAILED) throw new Error(_a());
-    if (e.status !== i.OK) throw new Error(s());
-    return await e.json()
-  }
-  async verifyChallenge(t) {
-    let e;
-    switch (t.type) {
-      case "pow":
-        e = {
-          code: t.challengeId,
-          nonce: t.nonce
-        };
-        break;
-      case "captcha":
-        e = {
-          code: t.sessionId
-        };
-        break;
-      case "otp":
-        e = {
-          code: t.code
-        }
-    }
-    const r = await this.request("/anticheat/challenge/verify", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify(e),
-      headers: {
-        "x-fp": await Ce()
-      }
-    });
-    if (t.type === "otp") {
-      if (r.status === i.GONE) throw new Error(bu());
-      if (r.status === i.BAD_REQUEST) throw new Error(Ep());
-      if (r.status === i.TOO_MANY_REQUESTS) throw new Error(lt());
-      if (r.status !== i.OK) throw new Error(s())
-    } else {
-      if (r.status === i.BAD_REQUEST) throw new Error(cp());
-      if (r.status !== i.OK) throw new Error(s())
-    }
-  }
-  async verifyAnticheat(t) {
-    if ((await this.request("/anticheat/verify", {
-        method: "POST",
-        credentials: "include",
-        body: JSON.stringify({
-          sealedResults: t.base64()
-        })
-      })).status !== i.OK) throw new Error(s())
-  }
-  async updateMe(t) {
-    const e = await this.request("/me/update", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify(t)
-    });
-    if (e.status === i.BAD_REQUEST) {
-      const r = await e.json(),
-        o = (r == null ? void 0 : r.error) ?? "";
-      if (o === "invalid_name") throw new Error(st());
-      if (o === "invalid_discord") throw new Error(Pp());
-      if (typeof o == "string" && o.startsWith("name_change_cooldown:")) {
-        const a = parseInt(o.split(":")[1] ?? "0", 10);
-        throw new Error(Km({
-          days: a
-        }))
-      }
-      throw new Error(r == null ? void 0 : r.error)
-    } else if (e.status !== i.OK) throw new Error(s())
-  }
-  async deleteMe(t) {
-    const e = await this.request("/me", {
-      method: "DELETE",
-      credentials: "include",
-      body: JSON.stringify({
-        confirmText: t
-      })
-    });
-    if (e.status === i.BAD_REQUEST) throw new Error(ib());
-    if (e.status !== i.OK) throw new Error(s())
-  }
-  async favoriteLocation(t) {
-    const e = await this.request("/favorite-location", {
-      method: "POST",
-      body: JSON.stringify({
-        latitude: t[0],
-        longitude: t[1]
-      }),
-      credentials: "include"
-    });
-    if (e.status === i.FORBIDDEN) throw new Error(Sg());
-    if (e.status !== i.OK) throw new Error(s())
-  }
-  async deleteFavoriteLocation(t) {
-    if ((await this.request("/favorite-location/delete", {
-        method: "POST",
-        body: JSON.stringify({
-          id: t
-        }),
-        credentials: "include"
-      })).status !== i.OK) throw new Error(s())
-  }
-  async updateFavoriteLocation(t, e) {
-    const r = await this.request("/favorite-location/update", {
-      method: "POST",
-      body: JSON.stringify({
-        id: t,
-        name: e
-      }),
-      credentials: "include"
-    });
-    if (r.status === i.BAD_REQUEST) throw new Error(rm());
-    if (r.status !== i.OK) throw new Error(s())
-  }
-  async leaderboardPlayers(t) {
-    const e = await this.request(`/leaderboard/player/${t}`);
-    if (e.status !== i.OK) throw new Error(K());
-    return e.json()
-  }
-  async leaderboardAlliances(t) {
-    const e = await this.request(`/leaderboard/alliance/${t}`);
-    if (e.status !== i.OK) throw new Error(K());
-    return e.json()
-  }
-  async leaderboardRegions(t, e = 0) {
-    const r = await this.request(`/leaderboard/region/${t}/${e}`);
-    if (r.status === i.OK) return r.json();
-    throw new Error(K())
-  }
-  async leaderboardRegionPlayers(t, e) {
-    const r = await this.request(`/leaderboard/region/players/${t}/${e}`);
-    if (r.status === i.OK) return r.json();
-    throw new Error(K())
-  }
-  async leaderboardRegionAlliances(t, e) {
-    const r = await this.request(`/leaderboard/region/alliances/${t}/${e}`);
-    if (r.status === i.OK) return r.json();
-    throw new Error(K())
-  }
-  async leaderboardCountries(t) {
-    const e = await this.request(`/leaderboard/country/${t}`, {
-      credentials: "include"
-    });
-    if (e.status === i.OK) return e.json();
-    throw new Error(K())
-  }
-  refreshHotspotsIfStale() {
-    Date.now() - this.lastHotspotRequestAt < qk || (this.lastHotspotRequestAt = Date.now(), this.request("/map/hotspots", {
-      credentials: "include",
-      keepalive: !0,
-      throwOnStatus: !1
-    }).catch(() => {
-      this.lastHotspotRequestAt = 0
-    }))
-  }
-  async getMapHotspots() {
-    const t = await this.request("/map/hotspots", {
-      credentials: "include"
-    });
-    return t.status !== 200 ? [] : (this.lastHotspotRequestAt = Date.now(), t.json())
-  }
-  async getRandomTile(t) {
-    const e = await this.request(`/s${t}/tile/random`);
-    if (e.status !== i.OK) throw new Error(s());
-    return e.json()
-  }
-  async purchase(t) {
-    const e = await this.request("/purchase", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        product: t
-      })
-    });
-    if (e.status !== i.OK) throw e.status === i.NOT_FOUND ? new Error(it()) : e.status === i.FORBIDDEN ? new Error(_t()) : e.status === i.CONFLICT ? new Error(dt()) : new Error(s())
-  }
-  async getAlliance() {
-    const t = await this.request("/alliance", {
-      credentials: "include"
-    });
-    if (t.status === i.OK) return t.json();
-    if (t.status === i.NOT_FOUND) return;
-    throw new Error(s())
-  }
-  async createAlliance(t) {
-    const e = await this.request("/alliance", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        name: t
-      })
-    });
-    if (e.status === i.OK) return e.json();
-    if (e.status === i.BAD_REQUEST) {
-      const r = await e.json();
-      throw r.error === "max_characters" ? new Error(Vr()) : r.error === "name_taken" ? new Error(xr()) : r.error == "empty_name" ? new Error(io()) : new Error(s())
-    } else throw e.status === i.FORBIDDEN ? new Error(Sv()) : new Error(s())
-  }
-  async leaveAlliance() {
-    if ((await this.request("/alliance/leave", {
-        method: "POST",
-        credentials: "include"
-      })).status !== i.OK) throw new Error(s())
-  }
-  async updateAllianceDescription(t) {
-    const e = await this.request("/alliance/update-description", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        description: t
-      })
-    });
-    if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(F()) : e.status === i.BAD_REQUEST ? new Error(su()) : new Error(s())
-  }
-  async updateAllianceHeadquarters(t, e) {
-    const r = await this.request("/alliance/update-headquarters", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        latitude: t,
-        longitude: e
-      })
-    });
-    if (r.status !== i.OK) throw r.status === i.FORBIDDEN ? new Error(F()) : new Error(s())
-  }
-  async allianceLeaderboard(t) {
-    const e = await this.request(`/alliance/leaderboard/${t}`, {
-      credentials: "include"
-    });
-    if (e.status === i.OK) return e.json();
-    throw e.status === i.FORBIDDEN ? new Error(F()) : new Error(K())
-  }
-  async getAllianceInvites() {
-    const t = await this.request("/alliance/invites", {
-      credentials: "include"
-    });
-    if (t.status === i.OK) return t.json();
-    throw t.status === i.FORBIDDEN ? new Error(F()) : new Error(s())
-  }
-  async joinAlliance(t) {
-    switch ((await this.request(`/alliance/join/${t}`, {
-        method: "POST",
-        credentials: "include"
-      })).status) {
-      case i.OK:
-        return "success";
-      case i.ALREADY_REPORTED:
-        return "in-another-alliance";
-      case i.UNAUTHORIZED:
-        return "not-logged-in";
-      case i.FORBIDDEN:
-        return "banned";
-      case i.BAD_REQUEST:
-      case i.NOT_FOUND:
-        return "invalid-invite";
-      default:
-        return "error"
-    }
-  }
-  async getAllianceMembers(t) {
-    const e = await this.request(`/alliance/members/${t}`, {
-      credentials: "include"
-    });
-    if (e.status === i.OK) return e.json();
-    throw new Error(s())
-  }
-  async getAllianceBannedMembers(t) {
-    const e = await this.request(`/alliance/members/banned/${t}`, {
-      credentials: "include"
-    });
-    if (e.status === i.OK) return e.json();
-    throw new Error(s())
-  }
-  async getAllianceById(t) {
-    const e = await this.request(`/staff/dashboard/alliances/${t}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (e.status === i.NOT_FOUND) return;
-    if (e.status !== i.OK) throw new l(s(), e.status);
-    const r = await e.json();
-    return {
-      id: Number(r.id),
-      name: String(r.name),
-      pixelsPainted: Number((r == null ? void 0 : r.pixels_painted) ?? 0)
-    }
-  }
-  async searchAlliance(t) {
-    const e = new URLSearchParams({
-        q: t
-      }),
-      r = await this.request(`/staff/dashboard/alliances/search?${e.toString()}`, {
-        method: "GET",
-        credentials: "include"
-      });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    const o = await r.json();
-    return (Array.isArray(o) ? o : []).map(a => ({
-      id: Number(a.id),
-      name: String(a.name ?? ""),
-      pixelsPainted: Number((a == null ? void 0 : a.pixels_painted) ?? 0)
-    }))
-  }
-  async searchAlliances(t) {
-    return this.searchAlliance(t)
-  }
-  async getAllianceFull(t) {
-    const e = await this.request(`/staff/dashboard/alliances/${t}/full`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (e.status === i.NOT_FOUND) return null;
-    if (e.status !== i.OK) throw new l(s(), e.status);
-    const r = await e.json(),
-      o = Array.isArray(r == null ? void 0 : r.members) ? r.members : [];
-    return {
-      id: Number(r == null ? void 0 : r.id),
-      name: String((r == null ? void 0 : r.name) ?? ""),
-      description: (r == null ? void 0 : r.description) ?? null,
-      ownerId: Number((r == null ? void 0 : r.ownerId) ?? (r == null ? void 0 : r.created_by)),
-      ownerName: (r == null ? void 0 : r.ownerName) ?? null,
-      hqName: (r == null ? void 0 : r.hqName) ?? null,
-      hqLatitude: (r == null ? void 0 : r.hqLatitude) ?? (r == null ? void 0 : r.hq_latitude) ?? null,
-      hqLongitude: (r == null ? void 0 : r.hqLongitude) ?? (r == null ? void 0 : r.hq_longitude) ?? null,
-      pixelsPainted: Number((r == null ? void 0 : r.pixelsPainted) ?? (r == null ? void 0 : r.pixels_painted) ?? 0),
-      membersCount: Number((r == null ? void 0 : r.membersCount) ?? o.length),
-      members: o.map(a => ({
-        id: Number(a == null ? void 0 : a.id),
-        name: String((a == null ? void 0 : a.name) ?? `#${a==null?void 0:a.id}`),
-        picture: (a == null ? void 0 : a.picture) ?? null,
-        pixelsPainted: Number((a == null ? void 0 : a.pixelsPainted) ?? (a == null ? void 0 : a.pixels_painted) ?? 0),
-        lastPixelLatitude: (a == null ? void 0 : a.lastPixelLatitude) ?? null,
-        lastPixelLongitude: (a == null ? void 0 : a.lastPixelLongitude) ?? null,
-        role: (a == null ? void 0 : a.alliance_role) === "admin" || (a == null ? void 0 : a.role) === "admin" ? "admin" : "member",
-        timedOut: !!(a != null && a.timedOut),
-        banned: !!(a != null && a.banned)
-      }))
-    }
-  }
-  async getAdminAllianceMembers(t, e) {
-    const r = new URLSearchParams({
-        page: String(e.page),
-        pageSize: String(e.pageSize)
-      }),
-      o = await this.request(`/staff/dashboard/alliances/${t}/members?${r.toString()}`, {
-        method: "GET",
-        credentials: "include"
-      });
-    if (o.status === i.NOT_FOUND) return {
-      members: [],
-      total: 0
-    };
-    if (o.status !== i.OK) throw new l(s(), o.status);
-    const a = await o.json(),
-      c = Array.isArray(a == null ? void 0 : a.members) ? a.members : [];
-    return {
-      members: c.map(u => ({
-        id: Number(u == null ? void 0 : u.id),
-        name: String((u == null ? void 0 : u.name) ?? `#${u==null?void 0:u.id}`),
-        picture: (u == null ? void 0 : u.picture) ?? null,
-        pixelsPainted: Number((u == null ? void 0 : u.pixelsPainted) ?? (u == null ? void 0 : u.pixels_painted) ?? 0),
-        lastPixelLatitude: (u == null ? void 0 : u.lastPixelLatitude) ?? null,
-        lastPixelLongitude: (u == null ? void 0 : u.lastPixelLongitude) ?? null,
-        role: (u == null ? void 0 : u.alliance_role) === "admin" || (u == null ? void 0 : u.role) === "admin" ? "admin" : "member",
-        timedOut: !!(u != null && u.timedOut),
-        banned: !!(u != null && u.banned)
-      })),
-      total: Number((a == null ? void 0 : a.total) ?? c.length)
-    }
-  }
-  async renameAlliance(t, e) {
-    const r = await this.request(`/staff/dashboard/alliances/${t}/rename`, {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        name: e
-      })
-    });
-    if (r.status === i.BAD_REQUEST) {
-      const o = await r.json().catch(() => ({}));
-      throw new Error((o == null ? void 0 : o.error) ?? s())
-    } else if (r.status !== i.OK) throw new l(s(), r.status)
-  }
-  async changeAllianceLeader(t, e) {
-    const r = await this.request(`/staff/dashboard/alliances/${t}/leader`, {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        newLeaderUserId: e
-      })
-    });
-    if (r.status === i.BAD_REQUEST) {
-      const o = await r.json();
-      throw (o == null ? void 0 : o.error) === "user_not_in_alliance" ? new Error(Dh()) : new Error(s())
-    } else if (r.status !== i.OK) throw new l(s(), r.status)
-  }
-  async banAllAllianceMembers(t, e, r) {
-    const o = await this.request(`/staff/dashboard/alliances/${t}/ban-all`, {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        reason: e,
-        notes: r
-      })
-    });
-    if (o.status !== i.OK) throw new l(s(), o.status)
-  }
-  async setAllianceMemberRole(t, e, r) {
-    const o = await this.request(`/staff/dashboard/alliances/${t}/members/${e}/role`, {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        role: r
-      })
-    });
-    if (o.status !== i.OK) throw new l(s(), o.status)
-  }
-  async removeAllianceMember(t, e) {
-    const r = await this.request(`/staff/dashboard/alliances/${t}/members/${e}/remove`, {
-      method: "POST",
-      credentials: "include"
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status)
-  }
-  async giveAllianceAdmin(t) {
-    const e = await this.request("/alliance/give-admin", {
-      body: JSON.stringify({
-        promotedUserId: t
-      }),
-      method: "POST",
-      credentials: "include"
-    });
-    if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(F()) : new Error(s())
-  }
-  async banAllianceUser(t) {
-    const e = await this.request("/alliance/ban", {
-      body: JSON.stringify({
-        bannedUserId: t
-      }),
-      method: "POST",
-      credentials: "include"
-    });
-    if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(F()) : new Error(s())
-  }
-  async equipFlag(t) {
-    if ((await this.request(`/flag/equip/${t}`, {
-        method: "POST",
-        credentials: "include"
-      })).status !== i.OK) throw new Error(s())
-  }
-  async getMyProfilePictures() {
-    const t = await this.request("/me/profile-pictures", {
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new Error(s());
-    return t.json()
-  }
-  async changeProfilePicture(t) {
-    if ((await this.request("/me/profile-picture/change", {
-        method: "POST",
-        credentials: "include",
-        body: JSON.stringify({
-          pictureId: t
-        })
-      })).status !== i.OK) throw new Error(s())
-  }
-  async unbanAllianceUser(t) {
-    const e = await this.request("/alliance/unban", {
-      body: JSON.stringify({
-        unbannedUserId: t
-      }),
-      method: "POST",
-      credentials: "include"
-    });
-    if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(F()) : new Error(s())
-  }
-  async health() {
-    return (await this.request("/health")).json()
-  }
-  async getPlayAccountId() {
-    const t = await this.request("/payment/play/account-id", {
-      method: "GET",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new Error(s());
-    return t.json()
-  }
-  async verifyPlayPurchase(t) {
-    const e = await this.request("/payment/play/verify", {
-      method: "POST",
-      credentials: "include",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(t)
-    });
-    if (e.status === i.BAD_REQUEST) {
-      const r = await e.json().catch(() => ({}));
-      throw new Error((r == null ? void 0 : r.error) ?? "Invalid Play purchase")
-    }
-    if (e.status === i.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(rt());
-    if (e.status !== i.OK) throw new Error(s());
-    return e.json()
-  }
-  async verifyPendingPlayPurchases() {
-    const t = await this.request("/payment/play/verify-pending", {
-      method: "POST",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new Error(s());
-    return t.json()
-  }
-  async getPlayClaimStatus(t) {
-    const e = await this.request(`/payment/play/claim/${encodeURIComponent(t)}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (e.status === i.NOT_FOUND) return {
-      status: "unknown",
-      droplets: 0
-    };
-    if (e.status !== i.OK) throw new Error(s());
-    return e.json()
-  }
-  async listPlayPurchaseHistory() {
-    const t = await this.request("/payment/play/history", {
-      method: "GET",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new Error(s());
-    return t.json()
-  }
-  async getModeratorTickets() {
-    const t = await this.request("/staff/tickets/get", {
-      method: "GET",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status);
-    const e = await t.json();
-    for (const r of e.tickets) r.reports.sort((o, a) => ht[o.reason] - ht[a.reason]);
-    return e
-  }
-  async countMyTicketsClosedToday() {
-    const t = await this.request("/staff/tickets/closed-today", {
-      method: "GET",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status);
-    return t.json()
-  }
-  async getOpenTicketsCount() {
-    const t = await this.request("/staff/tickets/open_count", {
-      method: "GET",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status);
-    const {
-      tickets: e
-    } = await t.json();
-    return e
-  }
-  async assignNewTickets() {
-    const t = await this.request("/staff/tickets/assign", {
-      method: "POST",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status);
-    return t.json()
-  }
-  async setTicketStatus(t, e, r, o, a) {
-    const c = await this.request("/staff/tickets/set-status", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        ticketId: t,
-        status: e,
-        selectedReportId: r,
-        assignedReason: o,
-        ignoreReason: a
-      })
-    });
-    if (c.status !== i.OK && c.status !== i.BAD_REQUEST) throw new l(s(), c.status)
-  }
-  async getLastResolvedTicket() {
-    const t = await this.request("/staff/tickets/reversals/last-resolved", {
-      method: "GET",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status);
-    return (await t.json()).ticket
-  }
-  async getTicketReversalTicketInfo(t) {
-    const e = await this.request(`/staff/tickets/reversals/ticket-info?ticketId=${encodeURIComponent(t)}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status);
-    return (await e.json()).ticket
-  }
-  async getReporterReportHistory(t, e) {
-    const r = await this.request(`/staff/tickets/reporter-history?ticketId=${encodeURIComponent(t)}&reporterId=${e}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    return (await r.json()).reports
-  }
-  async createTicketReversal(t) {
-    const e = await this.request("/staff/tickets/reversals", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify(t)
-    });
-    if (e.status === i.CONFLICT) {
-      const r = await e.json().catch(() => ({}));
-      throw (r == null ? void 0 : r.error) === "reversal_already_pending" ? new l(HE(), i.CONFLICT) : new l(s(), i.CONFLICT)
-    }
-    if (e.status !== i.OK) throw new l(s(), e.status);
-    return e.json()
-  }
-  async reSolveTicket(t) {
-    const e = await this.request("/staff/tickets/re-solve", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify(t)
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status);
-    return e.json()
-  }
-  async listTicketReversals(t = {}) {
-    const e = new URLSearchParams;
-    t.status && e.set("status", t.status), t.page != null && e.set("page", String(t.page)), t.pageSize != null && e.set("pageSize", String(t.pageSize));
-    const r = `/staff/tickets/reversals${e.toString()?`?${e.toString()}`:""}`,
-      o = await this.request(r, {
-        method: "GET",
-        credentials: "include"
-      });
-    if (o.status !== i.OK) throw new l(s(), o.status);
-    return (await o.json()).reversals ?? []
-  }
-  async getTicketReversal(t) {
-    const e = await this.request(`/staff/tickets/reversals/${t}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status);
-    return (await e.json()).reversal
-  }
-  async reviewTicketReversal(t, e, r) {
-    const o = await this.request(`/staff/tickets/reversals/${t}/review`, {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        decision: e,
-        notes: r
-      })
-    });
-    if (o.status === i.FORBIDDEN) throw new l(ak(), i.FORBIDDEN);
-    if (o.status === i.CONFLICT) throw new l(yk(), i.CONFLICT);
-    if (o.status !== i.OK) throw new l(s(), o.status)
-  }
-  async guardedFetch(t, e) {
-    try {
-      const r = await fetch(`${this.url}${t}`, e);
-      return this.online = !0, this.updateServerTimeEstimate(r), r
-    } catch (r) {
-      throw console.error("Fetch error:", r), this.online = !1, new Error(zi())
-    }
-  }
-  async request(t, e) {
-    var c;
-    e = {
-      credentials: "include",
-      ...e
-    };
-    let r = await this.guardedFetch(t, e);
-    if (r.status === i.FORBIDDEN && r.headers.get("x-block-reason") === "tor") throw new Error(Vy());
-    const o = ((c = r.headers.get("cf-mitigated")) == null ? void 0 : c.toLowerCase()) === "challenge";
-    if (r.status === 403 && o) {
-      if (X.setCfLikelyAutomated(!0), !await bt()) throw new Error(Me());
-      r = await this.guardedFetch(t, e)
-    }
-    if ((e == null ? void 0 : e.throwOnStatus) ?? !0) {
-      if (r.status === i.TOO_MANY_REQUESTS) throw new Error(EE());
-      if (r.status === i.REQUEST_TIMEOUT) throw new Error(Yw());
-      if (r.status === i.SERVICE_UNAVAILABLE) throw new Error(vy())
-    }
-    return r
-  }
-  async getOpenTicketsSummary() {
-    const t = await this.request("/staff/dashboard/summary/counters/tickets", {
-      method: "GET",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status);
-    return t.json()
-  }
-  async getOpenReportsSummary() {
-    const t = await this.request("/staff/dashboard/summary/counters/reports", {
-      method: "GET",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status);
-    return t.json()
-  }
-  async getBanAppealStats(t, e) {
-    const r = await this.request(`/staff/dashboard/ban-appeals/see?start=${encodeURIComponent(t)}&end=${encodeURIComponent(e)}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    const o = await r.json();
-    return {
-      items: o.items ?? [],
-      globals: o.globals
-    }
-  }
-  async getClosedTicketsByMod(t, e) {
-    const r = await this.request(`/staff/dashboard/team/closed-tickets?start=${encodeURIComponent(t)}&end=${encodeURIComponent(e)}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    return (await r.json()).items.map(a => ({
-      ...a,
-      suspensionRate: (a.ban + a.timeout) / a.total
-    }))
-  }
-  async getClosedReportsByMod(t, e) {
-    const r = await this.request(`/staff/dashboard/team/closed-reports?start=${encodeURIComponent(t)}&end=${encodeURIComponent(e)}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    return (await r.json()).items.map(a => ({
-      ...a,
-      suspensionRate: (a.ban + a.timeout) / a.total
-    }))
-  }
-  async getMultipleUsersInfoById(t) {
-    const e = await this.request("/staff/tools/select-area/users", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        userIds: t
-      })
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status);
-    return e.json()
-  }
-  async getUserInfoFull(t) {
-    const e = await this.request(`/staff/dashboard/users/info?id=${encodeURIComponent(t)}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (e.status !== i.NOT_FOUND) {
-      if (e.status !== i.OK) throw new l(s(), e.status);
-      return e.json()
-    }
-  }
-  async getUsersReportInfo(t) {
-    const e = t.filter(o => Number.isFinite(o) && o > 0);
-    if (e.length === 0) return [];
-    const r = await this.request(`/staff/dashboard/users/info-batch?ids=${encodeURIComponent(e.join(","))}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    return r.json()
-  }
-  async getUserInfoByEmail(t) {
-    const e = await this.request(`/staff/dashboard/users/info-by-email?email=${encodeURIComponent(t)}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (e.status !== i.NOT_FOUND) {
-      if (e.status !== i.OK) throw new l(s(), e.status);
-      return e.json()
-    }
-  }
-  async getUserPunishments(t) {
-    const e = await this.request(`/staff/dashboard/users/punishments?userId=${encodeURIComponent(t)}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status);
-    return (await e.json()).punishments ?? []
-  }
-  async getUserAnticheat(t) {
-    const e = await this.request(`/staff/dashboard/users/anticheat?id=${encodeURIComponent(t)}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status);
-    return await e.json()
-  }
-  async getPunishmentTicket(t) {
-    const e = await this.request(`/staff/dashboard/users/punishment-ticket?ticketId=${encodeURIComponent(t)}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status);
-    return (await e.json()).ticket
-  }
-  async overturnPunishment(t) {
-    const e = await this.request("/staff/dashboard/users/overturn-punishment", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        punishmentId: t
-      })
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status)
-  }
-  async autoReviewBan(t) {
-    const e = await this.request("/staff/dashboard/users/auto-review-ban", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        userId: t
-      })
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status);
-    return await e.json()
-  }
-  async getUserNotes(t, e) {
-    const r = e == "dashboard" ? `/staff/dashboard/users/notes?userId=${encodeURIComponent(t)}` : `/staff/appeals/notes?userId=${encodeURIComponent(t)}`,
-      o = await this.request(r, {
-        method: "GET",
-        credentials: "include"
-      });
-    if (o.status !== i.OK) throw new l(s(), o.status);
-    return o.json()
-  }
-  async addUserNote(t, e, r) {
-    const o = r == "dashboard" ? `/staff/dashboard/users/notes?userId=${encodeURIComponent(t)}` : `/staff/appeals/notes?userId=${encodeURIComponent(t)}`,
-      a = await this.request(o, {
-        method: "POST",
-        credentials: "include",
-        body: JSON.stringify({
-          userId: t,
-          note: e
-        })
-      });
-    if (a.status !== i.OK) throw new l(s(), a.status)
-  }
-  async getUserPermissions(t) {
-    const e = await this.request(`/staff/dashboard/permissions/get?userId=${encodeURIComponent(t)}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status);
-    return e.json()
-  }
-  async setUserPermissions(t, e) {
-    const r = await this.request("/staff/dashboard/permissions/set", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        userId: t,
-        permissions: Array.from(e)
-      })
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    const o = await r.json();
-    return Array.isArray(o == null ? void 0 : o.permissions) ? o.permissions : []
-  }
-  async getUserPurchases(t) {
-    const e = await this.request(`/staff/dashboard/users/purchases?userId=${encodeURIComponent(t)}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status);
-    const r = await e.json();
-    return (Array.isArray(r == null ? void 0 : r.purchases) ? r.purchases : []).map(a => {
-      const c = a.is_dollar ?? a.isDollar ?? a.currency ?? a.Currency ?? 0;
-      let u;
-      if (typeof c == "string") {
-        const y = c.toLowerCase();
-        u = y === "usd" || y === "dollar" || y === "true"
-      } else typeof c == "number" ? u = c !== 0 : u = !!c;
-      const _ = typeof a.createdAt == "string" ? a.createdAt : a.CreatedAt ? new Date(a.CreatedAt).toISOString() : "",
-        f = a.product_variant ?? a.productVariant,
-        O = f == null || f === "" ? null : Number(f);
-      return {
-        product_name: String(a.productName ?? a.product_name ?? ""),
-        amount: Number(a.amount ?? 0),
-        price: Number(a.price ?? 0),
-        is_dollar: u,
-        created_at: _,
-        product_variant: Number.isInteger(O) ? O : null
-      }
-    })
-  }
-  async postAdjustUserDroplets(t, e) {
-    const r = await this.request("/staff/dashboard/users/adjust-user-droplets", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        userId: t,
-        delta: e
-      })
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    return (await r.json()).droplets
-  }
-  async postAdminRenameUser(t, e) {
-    const r = await this.request("/staff/dashboard/users/rename", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        userId: t,
-        newName: e
-      })
-    });
-    if (r.status === i.BAD_REQUEST) {
-      const o = await r.json(),
-        a = (o == null ? void 0 : o.error) ?? "";
-      throw a === "invalid_name" ? new l(st(), i.BAD_REQUEST) : new l(typeof a == "string" && a ? a : s(), i.BAD_REQUEST)
-    }
-    if (r.status !== i.OK) throw new l(s(), r.status)
-  }
-  async postAdminChangeUserEmail(t, e) {
-    const r = await this.request("/staff/dashboard/users/email", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        userId: t,
-        email: e
-      })
-    });
-    if (r.status === i.BAD_REQUEST) {
-      const o = await r.json(),
-        a = (o == null ? void 0 : o.error) ?? "";
-      throw a === "email_required" || a === "invalid_email" ? new l(Ps(), i.BAD_REQUEST) : new l(typeof a == "string" && a ? a : s(), i.BAD_REQUEST)
-    }
-    if (r.status === i.CONFLICT) {
-      const o = await r.json();
-      if (((o == null ? void 0 : o.error) ?? "") === "email_already_in_use") {
-        const c = new l(typeof(o == null ? void 0 : o.userId) == "number" ? Es({
-          userId: o.userId
-        }) : cs(), i.CONFLICT);
-        throw typeof(o == null ? void 0 : o.userId) == "number" && (c.userId = o.userId), c
-      }
-      throw new l(s(), i.CONFLICT)
-    }
-    if (r.status === i.NOT_FOUND) throw new l("User not found.", i.NOT_FOUND);
-    if (r.status !== i.OK) throw new l(s(), r.status)
-  }
-  async getAdminUserProfilePictures(t) {
-    const e = await this.request(`/staff/dashboard/users/profile-pictures?userId=${t}`, {
-      credentials: "include"
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status);
-    return e.json()
-  }
-  async postAdminRemoveUserPicture(t) {
-    const e = await this.request("/staff/dashboard/users/remove-picture", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        pictureId: t
-      })
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status)
-  }
-  async postAdminRerollUserAvatar(t) {
-    const e = await this.request("/staff/dashboard/users/reroll-avatar", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        userId: t
-      })
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status);
-    return e.json()
-  }
-  async getUserTickets(t, e) {
-    if (e === "appeals" && (t.appealId ?? 0) <= 0) throw new Error("Appeal id is required.");
-    const r = new URLSearchParams;
-    r.set("userId", String(t.userId)), r.set("kind", String(t.kind)), r.set("page", String(t.page ?? 0)), r.set("pageSize", String(t.pageSize ?? 20)), t.sortBy && r.set("sortBy", t.sortBy), t.sortDir && r.set("sortDir", t.sortDir), t.status && r.set("status", t.status), t.reason && r.set("reason", t.reason), e === "appeals" && r.set("appealId", String(t.appealId));
-    const o = e === "appeals" ? `/staff/appeals/tickets?${r.toString()}` : `/staff/dashboard/users/tickets?${r.toString()}`,
-      a = await this.request(o, {
-        method: "GET",
-        credentials: "include"
-      });
-    if (a.status !== i.OK) throw new l(s(), a.status);
-    const c = await a.json(),
-      u = Array.isArray(c == null ? void 0 : c.tickets) ? c.tickets : [],
-      _ = typeof(c == null ? void 0 : c.total) == "number" ? c.total : u.length;
-    return {
-      tickets: u,
-      total: _
-    }
-  }
-  async getAllTickets(t) {
-    const e = new URLSearchParams;
-    e.set("page", String(t.page ?? 0)), e.set("pageSize", String(t.pageSize ?? 20)), t.modId && e.set("modId", String(t.modId)), t.sortBy && e.set("sortBy", t.sortBy), t.sortDir && e.set("sortDir", t.sortDir), t.status && e.set("status", t.status), t.reason && e.set("reason", t.reason), t.role && e.set("role", t.role), t.reviewed && e.set("reviewed", t.reviewed), t.reSolvedOnly && e.set("reSolvedOnly", "true"), t.hideSystem && e.set("hideSystem", "true"), t.dateFrom && e.set("dateFrom", t.dateFrom), t.dateTo && e.set("dateTo", t.dateTo);
-    const r = await this.request(`/staff/dashboard/all-tickets?${e.toString()}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    const o = await r.json(),
-      a = Array.isArray(o == null ? void 0 : o.tickets) ? o.tickets : [],
-      c = typeof(o == null ? void 0 : o.total) == "number" ? o.total : a.length,
-      u = typeof(o == null ? void 0 : o.matchedTotal) == "number" ? o.matchedTotal : c,
-      _ = typeof(o == null ? void 0 : o.reviewedTotal) == "number" ? o.reviewedTotal : 0;
-    return {
-      tickets: a,
-      total: c,
-      matchedTotal: u,
-      reviewedTotal: _
-    }
-  }
-  async reviewTicket(t) {
-    const e = await this.request("/staff/dashboard/all-tickets/review", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify(t)
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status);
-    return e.json()
-  }
-  async getTicketOverturnInfo(t) {
-    const e = await this.request(`/staff/dashboard/all-tickets/overturn-info?ticketId=${encodeURIComponent(t)}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status);
-    return e.json()
-  }
-  async getUserAppeals(t) {
-    const e = new URLSearchParams;
-    e.set("userId", String(t.userId)), e.set("kind", t.kind), t.page !== void 0 && e.set("page", String(t.page)), t.pageSize !== void 0 && e.set("pageSize", String(t.pageSize)), t.sortBy && e.set("sortBy", t.sortBy), t.sortDir && e.set("sortDir", t.sortDir);
-    const r = await this.request(`/staff/dashboard/users/appeals?${e.toString()}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    const o = await r.json(),
-      a = Array.isArray(o == null ? void 0 : o.appeals) ? o.appeals : [],
-      c = typeof(o == null ? void 0 : o.total) == "number" ? o.total : a.length;
-    return {
-      appeals: a,
-      total: c
-    }
-  }
-  async getModerationTranslate(t, e) {
-    const r = e == "tickets" ? "/staff/tickets/translate" : "/staff/appeals/translate",
-      o = await this.request(r, {
-        method: "POST",
-        credentials: "include",
-        body: JSON.stringify({
-          text: t
-        })
-      });
-    if (o.status !== i.OK) throw new l(s(), o.status);
-    const a = await o.json();
-    return a == null ? void 0 : a.translation
-  }
-  mapTicketsToReportRows(t, e) {
-    var o, a, c, u, _;
-    const r = [];
-    for (const f of t) {
-      const O = f.status ?? "open";
-      if (e === "received") {
-        for (const y of f.reports) r.push({
-          id: String(y.id),
-          ticketId: String(f.id),
-          createdAt: y.createdAt ?? f.createdAt,
-          byUser: {
-            id: Number(y.reportedBy),
-            name: String(y.reportedByName ?? y.reportedBy),
-            picture: y.reportedByPicture ?? null
-          },
-          reason: String(y.reason),
-          status: O
-        });
-        continue
-      }
-      if (e === "sent") {
-        for (const y of f.reports) r.push({
-          id: String(y.id),
-          ticketId: String(f.id),
-          createdAt: y.createdAt ?? f.createdAt,
-          toUser: {
-            id: Number(f.reportedUser.id),
-            name: String(f.reportedUser.name),
-            picture: f.reportedUser.picture ?? null
-          },
-          reason: String(y.reason),
-          status: O
-        });
-        continue
-      }
-      r.push({
-        id: String(f.id),
-        ticketId: String(f.id),
-        createdAt: f.createdAt,
-        handledBy: f.status && f.status !== "open" ? {
-          id: ((o = f.handledBy) == null ? void 0 : o.id) ?? 0,
-          name: ((a = f.handledBy) == null ? void 0 : a.name) ?? "Moderator",
-          picture: ((c = f.handledBy) == null ? void 0 : c.picture) ?? null
-        } : {
-          id: 0,
-          name: "—",
-          picture: null
         },
-        reason: String(((_ = (u = f.reports) == null ? void 0 : u[0]) == null ? void 0 : _.reason) ?? "other"),
-        status: O
-      })
-    }
-    return r.sort((f, O) => new Date(O.createdAt).getTime() - new Date(f.createdAt).getTime()), r
-  }
-  async getModeratorClosedTicketStats(t) {
-    const e = new URLSearchParams({
-        id: String(t)
-      }).toString(),
-      r = await this.request(`/staff/dashboard/users/tickets/stats?${e}`, {
-        method: "GET",
-        credentials: "include"
-      });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    return r.json()
-  }
-  async unlinkDiscord() {
-    const t = await this.request("/discord/unlink", {
-      method: "POST",
-      credentials: "include"
-    });
-    if (t.status !== i.NO_CONTENT) throw new l(s(), t.status)
-  }
-  async deleteSessions() {
-    const t = await this.request("/me/sessions", {
-      method: "DELETE",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status)
-  }
-  async deleteAllUserSessions(t) {
-    const e = await this.request(`/staff/dashboard/users/${t}/sessions`, {
-      method: "DELETE",
-      credentials: "include"
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status)
-  }
-  async banUsers(t, e, r) {
-    const o = await this.request("/staff/dashboard/summary/users/ban", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        userIds: t,
-        reason: e,
-        notes: r
-      })
-    });
-    if (o.status !== i.OK) throw new l(s(), o.status)
-  }
-  async timeoutUsers(t, e, r) {
-    const o = await this.request("/staff/dashboard/summary/users/timeout", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        userIds: t,
-        reason: e,
-        notes: r
-      })
-    });
-    if (o.status !== i.OK) throw new l(s(), o.status)
-  }
-  async incrementUsersDroplets(t, e, r) {
-    const o = await this.request("/staff/dashboard/summary/users/increment-droplet", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        userIds: t,
-        delta: e,
-        notes: r
-      })
-    });
-    if (o.status !== i.OK) throw new l(s(), o.status)
-  }
-  async reloadPunishmentCache() {
-    const t = await this.request("/staff/dashboard/summary/reload-punishment-cache", {
-      method: "POST",
-      credentials: "include"
-    });
-    if (t.status === i.CONFLICT) throw new l(ur(), t.status);
-    if (t.status !== i.OK && t.status !== i.ACCEPTED) throw new l(s(), t.status)
-  }
-  async postUnbanUsers(t, e) {
-    const r = await this.request("/staff/dashboard/summary/users/unban", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        userIds: t,
-        notes: e
-      })
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status)
-  }
-  async postAnticheatUnbanUsers(t, e) {
-    const r = await this.request("/staff/dashboard/anticheat/unban", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        userIds: t,
-        notes: e
-      })
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status)
-  }
-  async postAnticheatBanUsers(t, e, r) {
-    const o = await this.request("/staff/dashboard/anticheat/ban", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        userIds: t,
-        notes: e,
-        reason: r
-      })
-    });
-    if (o.status !== i.OK) throw new l(s(), o.status)
-  }
-  async postBulkPhoneVerification(t, e) {
-    const r = await this.request("/staff/dashboard/summary/users/phone-verification", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        userIds: t,
-        notes: e
-      })
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    return await r.json()
-  }
-  async getAuditLogs(t) {
-    const e = new URLSearchParams;
-    t.actorUserId !== void 0 && e.set("actorUserId", String(t.actorUserId)), t.targetUserId !== void 0 && e.set("targetUserId", String(t.targetUserId)), t.action && e.set("action", t.action), t.sortKey && e.set("sortKey", t.sortKey), t.sortDir && e.set("sortDir", t.sortDir), e.set("limit", String(t.limit)), e.set("offset", String(t.offset));
-    const r = await this.request(`/staff/dashboard/audit-logs/see?${e.toString()}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    return r.json()
-  }
-  async postUsersSuspend(t, e, r) {
-    let o;
-    switch (e) {
-      case "dashboard":
-        o = `/staff/dashboard/users/${r}`;
-        break;
-      case "summary":
-        o = `/staff/dashboard/summary/users/${r}`;
-        break;
-      case "select-area":
-        o = `/staff/tools/select-area/${r}`;
-        break;
-      case "select-pixel":
-      default:
-        o = `/staff/tools/select-pixel/${r}`;
-        break
-    }
-    if ((await this.request(o, {
-        method: "POST",
-        credentials: "include",
-        body: JSON.stringify(t)
-      })).status !== i.OK) throw new Error(s())
-  }
-  async postSelectAreaPhoneVerification(t, e = "") {
-    const r = await this.request("/staff/tools/select-area/phone-verification", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        userIds: t,
-        notes: e
-      })
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    return await r.json()
-  }
-  async postDashboardUserPhoneVerification(t, e = "") {
-    const r = await this.request("/staff/dashboard/users/phone-verification", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        userIds: [t],
-        notes: e
-      })
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    return await r.json()
-  }
-  async postReportUserName(t) {
-    const e = await this.request("/report/user/name", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        userId: t
-      })
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status)
-  }
-  async postReportAllianceName(t) {
-    const e = await this.request("/report/alliance/name", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        allianceId: t
-      })
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status);
-    return e.json()
-  }
-  async submitBanAppeal(t, e) {
-    const r = JSON.stringify(e ? {
-        message: t,
-        ticketId: e
-      } : {
-        message: t
-      }),
-      o = await X.getHeaders(r),
-      a = await this.request("/report/appeal", {
-        method: "POST",
-        credentials: "include",
-        body: r,
-        headers: o
-      });
-    if (a.status === i.FORBIDDEN) {
-      const c = await a.json();
-      if ((c == null ? void 0 : c.error) === "challenge-required" && c.tier) {
-        if (await tt(c.tier)) return this.submitBanAppeal(t, e);
-        throw new l(Me(), a.status)
+        s = JSON.stringify(n),
+        i = await ee.getHeaders(s),
+        u = await this.request("/paint", {
+          method: "POST",
+          body: s,
+          headers: i,
+          credentials: "include"
+        });
+      if (u.status === a.OK) {
+        const c = await u.json().catch(() => ({}));
+        return {
+          worldCupQuestCompleted: !!(c != null && c.worldCupQuestCompleted)
+        }
+      }
+      if (u.status !== a.OK) {
+        if (u.status === a.UNAUTHORIZED) throw new Error(it());
+        if (u.status === a.FORBIDDEN) {
+          if (u.headers.get("cf-mitigated") === "challenge") throw new Error(rt());
+          const c = await u.json();
+          if ((c == null ? void 0 : c.error) === "timeout") {
+            const _ = new Date(Date.now() + ((c == null ? void 0 : c.durationMs) ?? 0));
+            throw new Error(ot({
+              until: _.toLocaleString()
+            }))
+          }
+          if ((c == null ? void 0 : c.error) === "refresh") throw new Error(st());
+          if ((c == null ? void 0 : c.error) === "color-not-owned") throw new Error(nt());
+          if ((c == null ? void 0 : c.error) === "event-pixel-present") throw new Error(tt());
+          if ((c == null ? void 0 : c.error) === "challenge-required")
+            if (c.tier) {
+              if (await pt(c.tier)) return this.paint(t);
+              throw new Error(He())
+            } else console.error("Challenge required but no tier provided", c);
+          if ((c == null ? void 0 : c.error) === "verification-required") {
+            const f = (await jt().get()).sealed_result;
+            if (f) return await this.verifyAnticheat(f), this.paint(t);
+            throw new Error(o())
+          }
+          V.refresh()
+        } else throw new Error(o())
+      }
+      return {
+        worldCupQuestCompleted: !1
       }
     }
-    if (a.status !== i.OK && a.status !== i.ALREADY_REPORTED) throw new l(s(), a.status);
-    return a.status
-  }
-  async getOpenAppeals() {
-    const t = await this.request("/staff/appeals/get", {
-      method: "GET",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status);
-    return t.json()
-  }
-  async postSolveAppeal(t, e) {
-    const r = await this.request(`/staff/appeals/${t}/handle`, {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        approved: e
-      })
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    return await r.json()
-  }
-  async getUserLastAppeal() {
-    const t = await this.request("/me/last-appeal", {
-      method: "GET",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status);
-    const e = await t.json();
-    return (e == null ? void 0 : e.appealDate) ?? null
-  }
-  async getMySuspensionDetails() {
-    const t = await this.request("/me/suspension", {
-      method: "GET",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status);
-    const e = await t.json();
-    return !(e != null && e.active) || !Array.isArray(e == null ? void 0 : e.punishments) ? null : {
-      punishments: e.punishments.map(o => ({
-        kind: (o == null ? void 0 : o.kind) === "ban" ? "ban" : "timeout",
-        reason: o == null ? void 0 : o.reason,
-        timeoutUntil: typeof(o == null ? void 0 : o.timeoutUntil) == "string" ? o.timeoutUntil : void 0,
-        reportedLatitude: typeof(o == null ? void 0 : o.reportedLatitude) == "number" ? o.reportedLatitude : void 0,
-        reportedLongitude: typeof(o == null ? void 0 : o.reportedLongitude) == "number" ? o.reportedLongitude : void 0,
-        zoom: typeof(o == null ? void 0 : o.zoom) == "number" ? o.zoom : void 0,
-        appealSubmitted: (o == null ? void 0 : o.appealSubmitted) === !0,
-        ticketId: typeof(o == null ? void 0 : o.ticketId) == "string" ? o.ticketId : void 0
-      }))
+    async selectAreaClear(t, e) {
+      return this.sendPaintRequests(t, (n, s, i) => `/staff/tools/select-area/clear/s${n}/pixel/${s}/${i}`, e)
     }
-  }
-  async assignAppeals() {
-    const t = await this.request("/staff/appeals/assign", {
-      method: "POST",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status);
-    return await t.json()
-  }
-  async getNotificationCount() {
-    const t = await this.request("/notification/count", {
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status);
-    const {
-      count: e
-    } = await t.json();
-    return e
-  }
-  async getNotificationPage(t) {
-    const r = `/notification/page${t!==void 0?`?cursor=${encodeURIComponent(t)}`:""}`,
-      o = await this.request(r, {
+    async createReverseSession(t) {
+      const e = await this.request("/staff/tools/select-area/reverse/session", {
+        method: "POST",
+        body: t.buffer,
+        headers: {
+          "Content-Type": "application/octet-stream"
+        },
         credentials: "include"
       });
-    if (o.status !== i.OK) throw new l(s(), o.status);
-    return o.json()
-  }
-  async postNotificationMarkRead(t) {
-    const e = await this.request("/notification/mark-read", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        notificationIds: t
-      })
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status);
-    return e.json()
-  }
-  async postNotificationMarkReadAll() {
-    const t = await this.request("/notification/mark-read/all", {
-      method: "POST",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status);
-    return t.json()
-  }
-  async getAnticheatStats(t, e) {
-    const r = await this.request(`/staff/dashboard/anticheat/stats?from=${t}&to=${e}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    return r.json()
-  }
-  async getAnticheatSignals(t, e) {
-    const r = await this.request(`/staff/dashboard/anticheat/signals?from=${t}&to=${e}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    return r.json()
-  }
-  async getAnticheatUserJourney(t, e, r) {
-    const o = await this.request(`/staff/dashboard/anticheat/user/${t}?from=${e}&to=${r}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (o.status !== i.OK) throw new l(s(), o.status);
-    return o.json()
-  }
-  async getAnticheatSignalAnalysis(t, e, r) {
-    const o = await this.request(`/staff/dashboard/anticheat/signal/${encodeURIComponent(t)}?from=${encodeURIComponent(e)}&to=${encodeURIComponent(r)}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (o.status !== i.OK) throw new l(s(), o.status);
-    return o.json()
-  }
-  async getPendingAppealsCount() {
-    const t = await this.request("/staff/appeals/open_count", {
-      method: "GET",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status);
-    const e = await t.json();
-    return (e == null ? void 0 : e.appeals) ?? 0
-  }
-  async getUserPixelsPaintedToday() {
-    const t = await this.request("/me/pixels-painted-today", {
-      method: "GET",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status);
-    const e = await t.json();
-    return (e == null ? void 0 : e.paintedToday) ?? 0
-  }
-  async getUserFrames() {
-    const t = await this.request("/me/frames", {
-      method: "GET",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status);
-    return t.json()
-  }
-  async postEquipUserFrame(t) {
-    const e = await this.request(`/me/frames/equip/${t}`, {
-      method: "POST",
-      credentials: "include"
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status)
-  }
-  async getUserBadges() {
-    const t = await this.request("/me/badges", {
-      method: "GET",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status);
-    return t.json()
-  }
-  async postEquipUserBadge(t) {
-    const e = await this.request("/me/badges/equip", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify(t)
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status)
-  }
-  async postCaptchaSession(t, e = "include") {
-    const r = await this.request("/anticheat/captcha/session", {
-      method: "POST",
-      credentials: e,
-      body: JSON.stringify(t),
-      headers: {
-        "x-fp": await Ce()
+      if (e.status !== a.OK) throw new l(o(), e.status);
+      return e.json()
+    }
+    async getReverseTimestamps(t, e = {}) {
+      const {
+        mode: n = "depth",
+        beforeDepth: s,
+        beforeTimestamp: i
+      } = e, u = await this.request("/staff/tools/select-area/reverse/timestamps", {
+        method: "POST",
+        body: JSON.stringify({
+          sessionId: t,
+          mode: n,
+          beforeDepth: s,
+          beforeTimestamp: i
+        }),
+        headers: {
+          "Content-Type": "application/json"
+        },
+        credentials: "include"
+      });
+      if (u.status !== a.OK) throw new l(o(), u.status);
+      return u.json()
+    }
+    async getReversePreview(t, e) {
+      const {
+        mode: n = "depth",
+        snapshotDepth: s,
+        timestamp: i
+      } = e, u = await this.request("/staff/tools/select-area/reverse/preview", {
+        method: "POST",
+        body: JSON.stringify({
+          sessionId: t,
+          mode: n,
+          snapshotDepth: s,
+          timestamp: i
+        }),
+        headers: {
+          "Content-Type": "application/json"
+        },
+        credentials: "include"
+      });
+      if (u.status !== a.OK) throw new l(o(), u.status);
+      return u.json()
+    }
+    async getReverseTimelapse(t, e) {
+      const n = await this.request("/staff/tools/select-area/reverse/timelapse", {
+        method: "POST",
+        body: JSON.stringify({
+          sessionId: t,
+          paceMode: e.paceMode,
+          fps: e.fps,
+          durationSeconds: e.durationSeconds,
+          maxFrameCount: e.maxFrameCount,
+          beforeTimestamp: e.beforeTimestamp ?? 0
+        }),
+        headers: {
+          "Content-Type": "application/json"
+        },
+        credentials: "include"
+      });
+      if (n.status === a.BAD_REQUEST) {
+        const s = await n.json(),
+          i = (s == null ? void 0 : s.error) ?? "";
+        throw i === "timelapse_too_many_events" ? new l(hh(), a.BAD_REQUEST) : new l(typeof i == "string" && i ? i : o(), a.BAD_REQUEST)
       }
-    });
-    if (!r.ok) throw r.status === 500 ? new l(s(), r.status) : new l(Jf(), r.status);
-    return r.json()
-  }
-  validWaybackInput(t) {
-    const e = Number.isFinite(t.timestamp) && Number.isInteger(t.timestamp) && t.timestamp >= 0 && t.timestamp <= this.getEstimatedServerNowMs(),
-      r = Number.isFinite(t.season) && Number.isInteger(t.season) && t.season >= 0 && t.season < Dk.length,
-      o = Number.isFinite(t.limit) && Number.isInteger(t.limit) && t.limit > 0 && t.limit <= xk.tools.wayback.limit,
-      a = Number.isFinite(t.tileX) && Number.isFinite(t.tileY) && Number.isInteger(t.tileX) && Number.isInteger(t.tileY) && t.tileX >= 0 && t.tileY >= 0,
-      c = t.cursorTs !== void 0,
-      u = t.cursorUserId !== void 0,
-      _ = t.cursorAllianceId !== void 0,
-      f = t.cursorPixelsCount !== void 0,
-      O = c || u || _ || f,
-      y = c && u && _ && f;
-    let D = !0;
-    return O && (D = y && Number.isFinite(t.cursorTs) && Number.isInteger(t.cursorTs) && t.cursorTs >= 0 && t.cursorTs <= t.timestamp && Number.isFinite(t.cursorUserId) && Number.isInteger(t.cursorUserId) && t.cursorUserId >= 0 && Number.isFinite(t.cursorAllianceId) && Number.isInteger(t.cursorAllianceId) && t.cursorAllianceId >= 0 && Number.isFinite(t.cursorPixelsCount) && Number.isInteger(t.cursorPixelsCount) && t.cursorPixelsCount >= 0), !(!r || !o || !a || !e || !D)
-  }
-  getSafeWaybackInput(t) {
-    return t.season = Math.trunc(t.season), t.limit = Math.trunc(t.limit), t.timestamp = Math.trunc(t.timestamp), t.tileX = Math.trunc(t.tileX), t.tileY = Math.trunc(t.tileY), t.cursorTs !== void 0 && (t.cursorTs = Math.trunc(t.cursorTs)), t.cursorUserId !== void 0 && (t.cursorUserId = Math.trunc(t.cursorUserId)), t.cursorAllianceId !== void 0 && (t.cursorAllianceId = Math.trunc(t.cursorAllianceId)), t.cursorPixelsCount !== void 0 && (t.cursorPixelsCount = Math.trunc(t.cursorPixelsCount)), t
-  }
-  async getWaybackEvents(t) {
-    if (!this.validWaybackInput(t)) throw new Error("Invalid query params");
-    t = this.getSafeWaybackInput(t);
-    const e = new URLSearchParams;
-    t.cursorTs !== void 0 && e.set("cursorTs", String(t.cursorTs)), t.cursorUserId !== void 0 && e.set("cursorUserId", String(t.cursorUserId)), t.cursorAllianceId !== void 0 && e.set("cursorAllianceId", String(t.cursorAllianceId)), t.cursorPixelsCount !== void 0 && e.set("cursorPixelsCount", String(t.cursorPixelsCount));
-    const r = `/staff/tools/wayback/s${t.season}/l${t.limit}/x${t.tileX}/y${t.tileY}/t${t.timestamp}`,
-      o = e.toString(),
-      a = await this.request(o.length > 0 ? `${r}?${o}` : r, {
-        method: "GET",
+      if (n.status !== a.OK) throw new l(o(), n.status);
+      return n.arrayBuffer()
+    }
+    async applyReverse(t, e) {
+      const {
+        mode: n = "depth",
+        snapshotDepth: s,
+        timestamp: i
+      } = e, u = await this.request("/staff/tools/select-area/reverse/apply", {
+        method: "POST",
+        body: JSON.stringify({
+          sessionId: t,
+          mode: n,
+          snapshotDepth: s,
+          timestamp: i
+        }),
+        headers: {
+          "Content-Type": "application/json"
+        },
         credentials: "include"
       });
-    if (a.status === i.FORBIDDEN) throw new Error("Access denied");
-    if (a.status !== i.OK) throw new Error("Failed to fetch wayback events");
-    return a.json()
-  }
-  async getStoreFrames() {
-    const t = await this.request("/store/frames", {
-      method: "GET",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status);
-    return t.json()
-  }
-  async postBuyUserFrame(t) {
-    const e = await this.request(`/store/frames/buy/${t}`, {
-      method: "POST",
-      credentials: "include"
-    });
-    if (e.status === i.NOT_FOUND) throw new Error(it());
-    if (e.status === i.FORBIDDEN) throw new Error(_t());
-    if (e.status === i.CONFLICT) throw new Error(dt());
-    if (e.status !== i.OK) throw new Error(s())
-  }
-  async postEquipCosmetics(t) {
-    const e = await this.request("/me/cosmetic/equip", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify(t)
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status)
-  }
-  async getStoreNameCosmetics() {
-    const t = await this.request("/store/name", {
-      method: "GET",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status);
-    return await t.json()
-  }
-  async postBuyCosmetic(t) {
-    const e = await this.request(`/store/name/buy/${t}`, {
-      method: "POST",
-      credentials: "include"
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status)
-  }
-  async getMyNameCosmetics() {
-    const t = await this.request("/me/cosmetics/name", {
-      method: "GET",
-      credentials: "include"
-    });
-    if (t.status !== i.OK) throw new l(s(), t.status);
-    return await t.json()
-  }
-  async getTicketsKpi(t) {
-    const e = new URLSearchParams;
-    e.set("start", t.startIso), e.set("end", t.endIso), t.compare && e.set("compare", "1"), t.userId != null && e.set("userId", String(t.userId)), t.allianceId != null && e.set("allianceId", String(t.allianceId)), t.reason != null && e.set("reason", t.reason), t.punishment != null && e.set("punishment", t.punishment), t.granularity != null && e.set("granularity", t.granularity);
-    const r = await this.request(`/staff/dashboard/kpi/tickets?${e.toString()}`, {
-      method: "GET",
-      credentials: "include"
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    return r.json()
-  }
-  async postCreateFrame(t) {
-    const e = new FormData;
-    e.append("name", t.name), e.append("image", t.image), e.append("description", t.description), e.append("value", t.value.toString()), e.append("rarity", t.rarity), e.append("purchasable", t.purchasable.toString());
-    const r = await this.request("/staff/store-manager/frames", {
-      method: "POST",
-      credentials: "include",
-      body: e
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status)
-  }
-  async postCreateFont(t) {
-    const e = await this.request("/staff/store-manager/fonts", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify(t)
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status)
-  }
-  async postCreateStyle(t) {
-    const e = await this.request("/staff/store-manager/styles", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify(t)
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status)
-  }
-  async getR2Images(t) {
-    const e = new URLSearchParams({
-        page: String(t.page),
-        pageSize: String(t.pageSize)
-      }),
-      r = await this.request(`/staff/store-manager/images?${e.toString()}`, {
-        method: "GET",
+      if (u.status !== a.OK) throw new l(o(), u.status);
+      return u.json()
+    }
+    async sendPaintRequests(t, e, n, s) {
+      const i = ut(t, _ => `t=(${_.tile[0]},${_.tile[1]}),s=${_.season}`),
+        c = (await Promise.all(Object.values(i).map(async _ => {
+          const [f, k] = _[0].tile, y = _[0].season, P = {
+            colors: _.map(A => A.colorIdx),
+            coords: _.flatMap(A => A.pixel),
+            csid: n
+          }, L = JSON.stringify(P), N = e(y, f, k), R = await ee.getHeaders(L);
+          return this.request(N, {
+            method: "POST",
+            body: L,
+            headers: R,
+            credentials: "include"
+          })
+        }))).filter(_ => _.status !== a.OK);
+      if (c.length) {
+        const _ = c[0];
+        if (_.status === a.UNAUTHORIZED) throw new Error(it());
+        if (_.status === a.FORBIDDEN) {
+          if (_.headers.get("cf-mitigated") === "challenge") throw new Error(rt());
+          const f = await _.json();
+          if ((f == null ? void 0 : f.error) === "timeout") {
+            const k = new Date(Date.now() + ((f == null ? void 0 : f.durationMs) ?? 0));
+            throw new Error(ot({
+              until: k.toLocaleString()
+            }))
+          }
+          if ((f == null ? void 0 : f.error) === "refresh") throw new Error(st());
+          if ((f == null ? void 0 : f.error) === "color-not-owned") throw new Error(nt());
+          if ((f == null ? void 0 : f.error) === "event-pixel-present") throw new Error(tt());
+          V.refresh()
+        } else throw new Error(o())
+      }
+    }
+    async adminAutoPainterPaint(t, e, n) {
+      const s = nb(t),
+        i = await sb(s),
+        u = new FormData;
+      u.append("fingerprint", e), u.append("season", s.season.toString()), u.append("px0", s.offsetX.toString()), u.append("py0", s.offsetY.toString()), u.append("width", s.width.toString()), u.append("height", s.height.toString()), u.append("pixels", t.length.toString()), u.append("bitmap", i, "auto-painter.png"), u.append("userId", n.toString());
+      const c = await this.request("/staff/tools/auto-painter/paint", {
+        method: "POST",
+        body: u,
         credentials: "include"
       });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    return r.json()
-  }
-  async postUploadR2Image(t) {
-    const e = new FormData;
-    t.name && e.append("name", t.name), e.append("image", t.image);
-    const r = await this.request("/staff/store-manager/images", {
-      method: "POST",
-      credentials: "include",
-      body: e
-    });
-    if (r.status !== i.OK) throw new l(s(), r.status);
-    return r.json()
-  }
-  async deleteR2Image(t) {
-    const e = await this.request(`/staff/store-manager/images/${t}`, {
-      method: "DELETE",
-      credentials: "include"
-    });
-    if (e.status !== i.OK) throw new l(s(), e.status)
-  }
-  async postTelemetry(t, e) {
-    return (await this.request("/frontend/telemetry", {
-      method: "POST",
-      credentials: "include",
-      body: JSON.stringify({
-        event: t,
-        data: e
-      })
-    })).status === i.OK
-  }
-  async markRulesAsRead() {
-    return (await this.request("/me/rules/read", {
-      method: "POST",
-      credentials: "include"
-    })).status === i.OK
+      if (c.status === a.FORBIDDEN) {
+        const _ = await c.json().catch(() => null);
+        if (typeof(_ == null ? void 0 : _.charges) == "number") throw new Error(Hf({
+          charges: Math.floor(_.charges),
+          pixels: t.length
+        }));
+        const f = typeof(_ == null ? void 0 : _.error) == "string" ? _.error.trim() : "";
+        throw f && f !== "Forbidden" ? new Error(f) : new Error("Auto painter is restricted to administrators.")
+      }
+      if (c.status !== a.OK) throw new Error(o());
+      return c.json()
+    }
+    async getPixelInfo({
+      season: t,
+      tile: [e, n],
+      pixel: [s, i]
+    }) {
+      const u = new URLSearchParams;
+      u.set("x", String(s)), u.set("y", String(i));
+      const c = await this.request(`/s${t}/pixel/${e}/${n}?${u.toString()}`, {
+        credentials: "include"
+      });
+      if (c.status !== a.OK) {
+        const _ = await c.text();
+        throw new Error(Ho({
+          err: _
+        }))
+      }
+      return c.json()
+    }
+    async getPixelAreaInfo({
+      season: t,
+      tile: [e, n],
+      p0: [s, i],
+      p1: [u, c]
+    }) {
+      const _ = await this.request(`/staff/tools/select-area/s${t}/${e}/${n}?x0=${s}&y0=${i}&x1=${u}&y1=${c}`, {
+        credentials: "include"
+      });
+      if (_.status !== a.OK) {
+        const N = await _.text();
+        throw console.error("Error while fetching pixel area info", N), new Error(o())
+      }
+      const f = await _.arrayBuffer(),
+        k = new DataView(f),
+        y = Math.floor(f.byteLength / 5),
+        P = new Uint32Array(y),
+        L = new Uint8Array(y);
+      for (let N = 0; N < y; N++) {
+        const R = N * 5;
+        P[N] = k.getUint32(R, !0), L[N] = k.getUint8(R + 4)
+      }
+      return {
+        paintedBy: P,
+        colors: L
+      }
+    }
   }
 }
-pe = new WeakMap, he = new WeakMap;
 
-function Uk(n) {
-  var D, q;
-  if (!n.length) throw new Error("Auto painter request does not contain any pixels.");
-  const t = n[0].season;
-  for (const S of n)
-    if (S.season !== t) throw new Error("Auto painter requests cannot mix seasons.");
-  const e = (D = je.seasons) == null ? void 0 : D[t];
+function nb(r) {
+  var P, L;
+  if (!r.length) throw new Error("Auto painter request does not contain any pixels.");
+  const t = r[0].season;
+  for (const N of r)
+    if (N.season !== t) throw new Error("Auto painter requests cannot mix seasons.");
+  const e = (P = Ue.seasons) == null ? void 0 : P[t];
   if (!e) throw new Error("Invalid season selected for auto painter request.");
-  const r = e.tileSize;
-  let o = Number.POSITIVE_INFINITY,
-    a = Number.POSITIVE_INFINITY,
-    c = Number.NEGATIVE_INFINITY,
-    u = Number.NEGATIVE_INFINITY;
-  const _ = n.map(S => {
-      const A = Math.round(S.tile[0] * r + S.pixel[0]),
-        z = Math.round(S.tile[1] * r + S.pixel[1]);
-      return A < o && (o = A), z < a && (a = z), A > c && (c = A), z > u && (u = z), {
-        x: A,
-        y: z,
-        colorIdx: S.colorIdx
+  const n = e.tileSize;
+  let s = Number.POSITIVE_INFINITY,
+    i = Number.POSITIVE_INFINITY,
+    u = Number.NEGATIVE_INFINITY,
+    c = Number.NEGATIVE_INFINITY;
+  const _ = r.map(N => {
+      const R = Math.round(N.tile[0] * n + N.pixel[0]),
+        A = Math.round(N.tile[1] * n + N.pixel[1]);
+      return R < s && (s = R), A < i && (i = A), R > u && (u = R), A > c && (c = A), {
+        x: R,
+        y: A,
+        colorIdx: N.colorIdx
       }
     }),
-    f = c - o + 1,
-    O = u - a + 1;
-  if (!Number.isFinite(f) || !Number.isFinite(O) || f <= 0 || O <= 0) throw new Error("Failed to compute image bounds for auto painter payload.");
-  const y = new Uint8ClampedArray(f * O * 4);
+    f = u - s + 1,
+    k = c - i + 1;
+  if (!Number.isFinite(f) || !Number.isFinite(k) || f <= 0 || k <= 0) throw new Error("Failed to compute image bounds for auto painter payload.");
+  const y = new Uint8ClampedArray(f * k * 4);
   for (const {
-      x: S,
-      y: A,
-      colorIdx: z
+      x: N,
+      y: R,
+      colorIdx: A
     }
     of _) {
-    const Je = (q = je.colors) == null ? void 0 : q[z];
-    if (!Je) throw new Error(`Unknown palette color index: ${z}`);
-    const Nt = S - o,
-      Ne = ((A - a) * f + Nt) * 4,
-      [zt, At, Rt] = Je.rgb;
-    y[Ne] = zt, y[Ne + 1] = At, y[Ne + 2] = Rt, y[Ne + 3] = z === 0 ? 1 : 255
+    const We = (L = Ue.colors) == null ? void 0 : L[A];
+    if (!We) throw new Error(`Unknown palette color index: ${A}`);
+    const Nt = N - s,
+      Se = ((R - i) * f + Nt) * 4,
+      [St, At, Rt] = We.rgb;
+    y[Se] = St, y[Se + 1] = At, y[Se + 2] = Rt, y[Se + 3] = A === 0 ? 1 : 255
   }
   return {
     data: y,
     width: f,
-    height: O,
-    offsetX: o,
-    offsetY: a,
+    height: k,
+    offsetX: s,
+    offsetY: i,
     season: t
   }
 }
-async function Mk(n) {
-  const t = Bk(n.width, n.height),
+async function sb(r) {
+  const t = ab(r.width, r.height),
     e = t.getContext("2d");
   if (!e) throw new Error("Canvas API is not available to encode auto painter bitmap.");
-  const r = e.createImageData(n.width, n.height);
-  return r.data.set(n.data), e.putImageData(r, 0, 0), "convertToBlob" in t ? t.convertToBlob({
+  const n = e.createImageData(r.width, r.height);
+  return n.data.set(r.data), e.putImageData(n, 0, 0), "convertToBlob" in t ? t.convertToBlob({
     type: "image/png"
-  }) : new Promise((o, a) => {
-    t.toBlob(c => {
-      if (!c) {
-        a(new Error("Failed to encode auto painter bitmap."));
+  }) : new Promise((s, i) => {
+    t.toBlob(u => {
+      if (!u) {
+        i(new Error("Failed to encode auto painter bitmap."));
         return
       }
-      o(c)
+      s(u)
     }, "image/png")
   })
 }
 
-function Bk(n, t) {
-  if (typeof OffscreenCanvas < "u") return new OffscreenCanvas(n, t);
+function ab(r, t) {
+  if (typeof OffscreenCanvas < "u") return new OffscreenCanvas(r, t);
   if (typeof document < "u") {
     const e = document.createElement("canvas");
-    return e.width = n, e.height = t, e
+    return e.width = r, e.height = t, e
   }
   throw new Error("Canvas API is not available in the current environment.")
 }
-const C = new Lk(We);
+
+function ib(r) {
+  return class extends r {
+    validWaybackInput(t) {
+      const e = Number.isFinite(t.timestamp) && Number.isInteger(t.timestamp) && t.timestamp >= 0 && t.timestamp <= this.getEstimatedServerNowMs(),
+        n = Number.isFinite(t.season) && Number.isInteger(t.season) && t.season >= 0 && t.season < Xy.length,
+        s = Number.isFinite(t.limit) && Number.isInteger(t.limit) && t.limit > 0 && t.limit <= Zy.tools.wayback.limit,
+        i = Number.isFinite(t.tileX) && Number.isFinite(t.tileY) && Number.isInteger(t.tileX) && Number.isInteger(t.tileY) && t.tileX >= 0 && t.tileY >= 0,
+        u = t.cursorTs !== void 0,
+        c = t.cursorUserId !== void 0,
+        _ = t.cursorAllianceId !== void 0,
+        f = t.cursorPixelsCount !== void 0,
+        k = u || c || _ || f,
+        y = u && c && _ && f;
+      let P = !0;
+      return k && (P = y && Number.isFinite(t.cursorTs) && Number.isInteger(t.cursorTs) && t.cursorTs >= 0 && t.cursorTs <= t.timestamp && Number.isFinite(t.cursorUserId) && Number.isInteger(t.cursorUserId) && t.cursorUserId >= 0 && Number.isFinite(t.cursorAllianceId) && Number.isInteger(t.cursorAllianceId) && t.cursorAllianceId >= 0 && Number.isFinite(t.cursorPixelsCount) && Number.isInteger(t.cursorPixelsCount) && t.cursorPixelsCount >= 0), !(!n || !s || !i || !e || !P)
+    }
+    getSafeWaybackInput(t) {
+      return t.season = Math.trunc(t.season), t.limit = Math.trunc(t.limit), t.timestamp = Math.trunc(t.timestamp), t.tileX = Math.trunc(t.tileX), t.tileY = Math.trunc(t.tileY), t.cursorTs !== void 0 && (t.cursorTs = Math.trunc(t.cursorTs)), t.cursorUserId !== void 0 && (t.cursorUserId = Math.trunc(t.cursorUserId)), t.cursorAllianceId !== void 0 && (t.cursorAllianceId = Math.trunc(t.cursorAllianceId)), t.cursorPixelsCount !== void 0 && (t.cursorPixelsCount = Math.trunc(t.cursorPixelsCount)), t
+    }
+    async getWaybackEvents(t) {
+      if (!this.validWaybackInput(t)) throw new Error("Invalid query params");
+      t = this.getSafeWaybackInput(t);
+      const e = new URLSearchParams;
+      t.cursorTs !== void 0 && e.set("cursorTs", String(t.cursorTs)), t.cursorUserId !== void 0 && e.set("cursorUserId", String(t.cursorUserId)), t.cursorAllianceId !== void 0 && e.set("cursorAllianceId", String(t.cursorAllianceId)), t.cursorPixelsCount !== void 0 && e.set("cursorPixelsCount", String(t.cursorPixelsCount));
+      const n = `/staff/tools/wayback/s${t.season}/l${t.limit}/x${t.tileX}/y${t.tileY}/t${t.timestamp}`,
+        s = e.toString(),
+        i = await this.request(s.length > 0 ? `${n}?${s}` : n, {
+          method: "GET",
+          credentials: "include"
+        });
+      if (i.status === a.FORBIDDEN) throw new Error("Access denied");
+      if (i.status !== a.OK) throw new Error("Failed to fetch wayback events");
+      return i.json()
+    }
+  }
+}
+class ob extends Sy(Ay(Ry(Dy(Py(xy(jy(Ly(By(qy(Cy(rb(ib(Ny))))))))))))) {}
+const z = new ob(_t);
 typeof window < "u" && Lt(() => {
-  let n = C.online;
-  Ut(() => {
-    const t = C.online;
-    t && !n && window.dispatchEvent(new CustomEvent("wplace:online")), n = t
+  let r = z.online;
+  Mt(() => {
+    const t = z.online;
+    t && !r && window.dispatchEvent(new CustomEvent("wplace:online")), r = t
   })
 });
-const CT = n => new URL(n, We).toString();
 
-function Tt(n, t) {
-  if (!(n != null && n.length)) return !1;
-  for (const e of n)
+function Tt(r, t) {
+  if (!(r != null && r.length)) return !1;
+  for (const e of r)
     if (e === t) return !0;
   return !1
 }
 
-function Ck(n, t) {
+function cb(r, t) {
   for (const e of t)
-    if (Tt(n, e)) return !0;
+    if (Tt(r, e)) return !0;
   return !1
 }
 
-function Ot(n) {
-  const t = atob(n),
+function Ot(r) {
+  const t = atob(r),
     e = new Uint8Array(t.length);
-  for (let r = 0; r < t.length; r++) e[r] = t.charCodeAt(r);
+  for (let n = 0; n < t.length; n++) e[n] = t.charCodeAt(n);
   return e
 }
 
-function Kk(n) {
-  if (typeof Buffer < "u") return Buffer.from(n).toString("base64");
+function ub(r) {
+  if (typeof Buffer < "u") return Buffer.from(r).toString("base64");
   let t = "";
-  for (let e = 0; e < n.length; e++) t += String.fromCharCode(n[e]);
+  for (let e = 0; e < r.length; e++) t += String.fromCharCode(r[e]);
   return btoa(t)
 }
-class Fk {
+class lb {
   constructor(t) {
     g(this, "bytes");
     this.bytes = t ?? new Uint8Array
   }
   set(t, e) {
-    const r = Math.floor(t / 8),
-      o = t % 8;
-    if (r >= this.bytes.length) {
-      const c = new Uint8Array(r + 1),
-        u = c.length - this.bytes.length;
-      for (let _ = 0; _ < this.bytes.length; _++) c[_ + u] = this.bytes[_];
-      this.bytes = c
+    const n = Math.floor(t / 8),
+      s = t % 8;
+    if (n >= this.bytes.length) {
+      const u = new Uint8Array(n + 1),
+        c = u.length - this.bytes.length;
+      for (let _ = 0; _ < this.bytes.length; _++) u[_ + c] = this.bytes[_];
+      this.bytes = u
     }
-    const a = this.bytes.length - 1 - r;
-    e ? this.bytes[a] = this.bytes[a] | 1 << o : this.bytes[a] = this.bytes[a] & ~(1 << o)
+    const i = this.bytes.length - 1 - n;
+    e ? this.bytes[i] = this.bytes[i] | 1 << s : this.bytes[i] = this.bytes[i] & ~(1 << s)
   }
   get(t) {
     const e = Math.floor(t / 8),
-      r = t % 8,
-      o = this.bytes.length;
-    return e > o ? !1 : (this.bytes[o - 1 - e] & 1 << r) !== 0
+      n = t % 8,
+      s = this.bytes.length;
+    return e > s ? !1 : (this.bytes[s - 1 - e] & 1 << n) !== 0
   }
 }
 
-function KT(n) {
+function av(r) {
   return new Promise((t, e) => {
-    const r = new FileReader;
-    r.onload = () => {
-      const o = r.result;
-      if (!o || typeof o != "string") {
+    const n = new FileReader;
+    n.onload = () => {
+      const s = n.result;
+      if (!s || typeof s != "string") {
         e(new Error("Could not read blob as data URL"));
         return
       }
-      t(o.substring(o.indexOf(",") + 1))
-    }, r.readAsDataURL(n)
+      t(s.substring(s.indexOf(",") + 1))
+    }, n.readAsDataURL(r)
   })
 }
 
-function FT(n) {
+function iv(r) {
   if (typeof FileReader > "u") {
-    const t = n.type || "application/octet-stream";
-    return n.arrayBuffer().then(e => `data:${t};base64,${Kk(new Uint8Array(e))}`)
+    const t = r.type || "application/octet-stream";
+    return r.arrayBuffer().then(e => `data:${t};base64,${ub(new Uint8Array(e))}`)
   }
   return new Promise((t, e) => {
-    const r = new FileReader;
-    r.onloadend = () => {
-      const o = r.result;
-      if (typeof o != "string") {
+    const n = new FileReader;
+    n.onloadend = () => {
+      const s = n.result;
+      if (typeof s != "string") {
         e(new Error("Could not read blob as data URL"));
         return
       }
-      t(o)
-    }, r.onerror = e, r.readAsDataURL(n)
+      t(s)
+    }, n.onerror = e, n.readAsDataURL(r)
   })
 }
 
-function $T(n) {
-  if (!n.startsWith("data:")) throw new Error("Could not parse data URL");
-  const t = n.indexOf(",");
+function ov(r) {
+  if (!r.startsWith("data:")) throw new Error("Could not parse data URL");
+  const t = r.indexOf(",");
   if (t === -1) throw new Error("Could not parse data URL");
-  const e = n.slice(5, t),
-    r = n.slice(t + 1),
-    o = e.indexOf(";base64"),
-    a = (o === -1 ? e : e.slice(0, o)) || "text/plain";
-  if (o !== -1) {
-    const c = Ot(r),
-      u = new Uint8Array(c.byteLength);
-    return u.set(c), new Blob([u], {
-      type: a
+  const e = r.slice(5, t),
+    n = r.slice(t + 1),
+    s = e.indexOf(";base64"),
+    i = (s === -1 ? e : e.slice(0, s)) || "text/plain";
+  if (s !== -1) {
+    const u = Ot(n),
+      c = new Uint8Array(u.byteLength);
+    return c.set(u), new Blob([c], {
+      type: i
     })
   }
-  return new Blob([decodeURIComponent(r)], {
-    type: a
+  return new Blob([decodeURIComponent(n)], {
+    type: i
   })
 }
 
-function GT(...n) {
-  return n.filter(Boolean).join(" ")
+function cv(...r) {
+  return r.filter(Boolean).join(" ")
 }
-const $k = typeof document < "u";
-let gt = 0;
+const db = typeof document < "u";
+let lt = 0;
 var me, ge, we;
-class Gk {
+class _b {
   constructor() {
     b(this, me, I(xe([])));
     b(this, ge, I(xe([])));
     b(this, we, t => {
-      const e = this.toasts.findIndex(r => r.id === t);
+      const e = this.toasts.findIndex(n => n.id === t);
       return e === -1 ? null : e
     });
     g(this, "addToast", t => {
-      $k && this.toasts.unshift(t)
+      db && this.toasts.unshift(t)
     });
     g(this, "updateToast", ({
       id: t,
       data: e,
-      type: r,
-      message: o
+      type: n,
+      message: s
     }) => {
-      const a = this.toasts.findIndex(u => u.id === t),
-        c = this.toasts[a];
-      this.toasts[a] = {
-        ...c,
+      const i = this.toasts.findIndex(c => c.id === t),
+        u = this.toasts[i];
+      this.toasts[i] = {
+        ...u,
         ...e,
         id: t,
-        title: o,
-        type: r,
+        title: s,
+        type: n,
         updated: !0
       }
     });
     g(this, "create", t => {
-      var u;
+      var c;
       const {
         message: e,
-        ...r
-      } = t, o = typeof(t == null ? void 0 : t.id) == "number" || t.id && ((u = t.id) == null ? void 0 : u.length) > 0 ? t.id : gt++, a = t.dismissable === void 0 ? !0 : t.dismissable, c = t.type === void 0 ? "default" : t.type;
-      return Ze(() => {
-        this.toasts.find(f => f.id === o) ? this.updateToast({
-          id: o,
+        ...n
+      } = t, s = typeof(t == null ? void 0 : t.id) == "number" || t.id && ((c = t.id) == null ? void 0 : c.length) > 0 ? t.id : lt++, i = t.dismissable === void 0 ? !0 : t.dismissable, u = t.type === void 0 ? "default" : t.type;
+      return Je(() => {
+        this.toasts.find(f => f.id === s) ? this.updateToast({
+          id: s,
           data: t,
-          type: c,
+          type: u,
           message: e,
-          dismissable: a
+          dismissable: i
         }) : this.addToast({
-          ...r,
-          id: o,
+          ...n,
+          id: s,
           title: e,
-          dismissable: a,
-          type: c
+          dismissable: i,
+          type: u
         })
-      }), o
+      }), s
     });
-    g(this, "dismiss", t => (Ze(() => {
+    g(this, "dismiss", t => (Je(() => {
       if (t === void 0) {
-        this.toasts = this.toasts.map(r => ({
-          ...r,
+        this.toasts = this.toasts.map(n => ({
+          ...n,
           dismiss: !0
         }));
         return
       }
-      const e = this.toasts.findIndex(r => r.id === t);
+      const e = this.toasts.findIndex(n => n.id === t);
       this.toasts[e] && (this.toasts[e] = {
         ...this.toasts[e],
         dismiss: !0
@@ -5866,55 +5266,55 @@ class Gk {
     }));
     g(this, "promise", (t, e) => {
       if (!e) return;
-      let r;
-      e.loading !== void 0 && (r = this.create({
+      let n;
+      e.loading !== void 0 && (n = this.create({
         ...e,
         promise: t,
         type: "loading",
         message: typeof e.loading == "string" ? e.loading : e.loading()
       }));
-      const o = t instanceof Promise ? t : t();
-      let a = r !== void 0;
-      return o.then(c => {
-        if (typeof c == "object" && c && "ok" in c && typeof c.ok == "boolean" && !c.ok) {
-          a = !1;
-          const u = Vk(c);
+      const s = t instanceof Promise ? t : t();
+      let i = n !== void 0;
+      return s.then(u => {
+        if (typeof u == "object" && u && "ok" in u && typeof u.ok == "boolean" && !u.ok) {
+          i = !1;
+          const c = fb(u);
           this.create({
-            id: r,
+            id: n,
             type: "error",
-            message: u
+            message: c
           })
         } else if (e.success !== void 0) {
-          a = !1;
-          const u = typeof e.success == "function" ? e.success(c) : e.success;
+          i = !1;
+          const c = typeof e.success == "function" ? e.success(u) : e.success;
           this.create({
-            id: r,
+            id: n,
             type: "success",
-            message: u
+            message: c
           })
         }
-      }).catch(c => {
+      }).catch(u => {
         if (e.error !== void 0) {
-          a = !1;
-          const u = typeof e.error == "function" ? e.error(c) : e.error;
+          i = !1;
+          const c = typeof e.error == "function" ? e.error(u) : e.error;
           this.create({
-            id: r,
+            id: n,
             type: "error",
-            message: u
+            message: c
           })
         }
       }).finally(() => {
-        var c;
-        a && (this.dismiss(r), r = void 0), (c = e.finally) == null || c.call(e)
-      }), r
+        var u;
+        i && (this.dismiss(n), n = void 0), (u = e.finally) == null || u.call(e)
+      }), n
     });
     g(this, "custom", (t, e) => {
-      const r = (e == null ? void 0 : e.id) || gt++;
+      const n = (e == null ? void 0 : e.id) || lt++;
       return this.create({
         component: t,
-        id: r,
+        id: n,
         ...e
-      }), r
+      }), n
     });
     g(this, "removeHeight", t => {
       this.heights = this.heights.filter(e => e.toastId !== t)
@@ -5932,80 +5332,80 @@ class Gk {
     })
   }
   get toasts() {
-    return k(p(this, me))
+    return T(p(this, me))
   }
   set toasts(t) {
-    T(p(this, me), t, !0)
+    O(p(this, me), t, !0)
   }
   get heights() {
-    return k(p(this, ge))
+    return T(p(this, ge))
   }
   set heights(t) {
-    T(p(this, ge), t, !0)
+    O(p(this, ge), t, !0)
   }
 }
 me = new WeakMap, ge = new WeakMap, we = new WeakMap;
 
-function Vk(n) {
-  return n && typeof n == "object" && "status" in n ? `HTTP error! Status: ${n.status}` : `Error! ${n}`
+function fb(r) {
+  return r && typeof r == "object" && "status" in r ? `HTTP error! Status: ${r.status}` : `Error! ${r}`
 }
-const R = new Gk;
+const D = new _b;
 
-function Hk(n, t) {
-  return R.create({
-    message: n,
+function pb(r, t) {
+  return D.create({
+    message: r,
     ...t
   })
 }
-var Le;
-class VT {
+var Me;
+class uv {
   constructor() {
-    b(this, Le, Q(() => R.toasts.filter(t => !t.dismiss)))
+    b(this, Me, Q(() => D.toasts.filter(t => !t.dismiss)))
   }
   get toasts() {
-    return k(p(this, Le))
+    return T(p(this, Me))
   }
 }
-Le = new WeakMap;
-const Wk = Hk,
-  Yk = Object.assign(Wk, {
-    success: R.success,
-    info: R.info,
-    warning: R.warning,
-    error: R.error,
-    custom: R.custom,
-    message: R.message,
-    promise: R.promise,
-    dismiss: R.dismiss,
-    loading: R.loading,
-    getActiveToasts: () => R.toasts.filter(n => !n.dismiss)
+Me = new WeakMap;
+const hb = pb,
+  mb = Object.assign(hb, {
+    success: D.success,
+    info: D.info,
+    warning: D.warning,
+    error: D.error,
+    custom: D.custom,
+    message: D.message,
+    promise: D.promise,
+    dismiss: D.dismiss,
+    loading: D.loading,
+    getActiveToasts: () => D.toasts.filter(r => !r.dismiss)
   });
-var ye, be, ve, Ee, ke, Te, Oe, Ie;
-class Jk {
+var ye, be, ve, Ee, Te, Oe, ke, Ie;
+class gb {
   constructor() {
     g(this, "channel", new BroadcastChannel("user-channel"));
     b(this, ye, I());
     b(this, be, I(!0));
     b(this, ve, I());
     b(this, Ee, I(Date.now()));
-    b(this, ke, Q(() => {
+    b(this, Te, Q(() => {
       if (!this.data) return;
       const t = this.data.charges;
       if (t.count > t.max) return t.count;
-      const e = t.count + Math.max((Fe.now - this.lastFetch) / t.cooldownMs, 0);
+      const e = t.count + Math.max((ze.now - this.lastFetch) / t.cooldownMs, 0);
       return Math.min(t.max, e)
     }));
-    b(this, Te, Q(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
-    b(this, Oe, Q(() => {
+    b(this, Oe, Q(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
+    b(this, ke, Q(() => {
       var t;
-      return new Fk(Ot(((t = this.data) == null ? void 0 : t.flagsBitmap) ?? "AA=="))
+      return new lb(Ot(((t = this.data) == null ? void 0 : t.flagsBitmap) ?? "AA=="))
     }));
     b(this, Ie, Q(() => {
-      var r;
-      if (!((r = this.data) != null && r.timeoutUntil)) return;
+      var n;
+      if (!((n = this.data) != null && n.timeoutUntil)) return;
       const t = new Date(this.data.timeoutUntil),
         e = t.getTime();
-      if (!(!Number.isFinite(e) || e <= Fe.now)) return t
+      if (!(!Number.isFinite(e) || e <= ze.now)) return t
     }));
     this.channel && (this.channel.onmessage = t => {
       const e = JSON.parse(t.data);
@@ -6013,66 +5413,66 @@ class Jk {
     })
   }
   get data() {
-    return k(p(this, ye))
+    return T(p(this, ye))
   }
   set data(t) {
-    T(p(this, ye), t, !0)
+    O(p(this, ye), t, !0)
   }
   get loading() {
-    return k(p(this, be))
+    return T(p(this, be))
   }
   set loading(t) {
-    T(p(this, be), t, !0)
+    O(p(this, be), t, !0)
   }
   get notificationCount() {
-    return k(p(this, ve))
+    return T(p(this, ve))
   }
   set notificationCount(t) {
-    T(p(this, ve), t, !0)
+    O(p(this, ve), t, !0)
   }
   get lastFetch() {
-    return k(p(this, Ee))
+    return T(p(this, Ee))
   }
   set lastFetch(t) {
-    T(p(this, Ee), t)
+    O(p(this, Ee), t)
   }
   get charges() {
-    return k(p(this, ke))
+    return T(p(this, Te))
   }
   set charges(t) {
-    T(p(this, ke), t)
+    O(p(this, Te), t)
   }
   get cooldown() {
-    return k(p(this, Te))
+    return T(p(this, Oe))
   }
   set cooldown(t) {
-    T(p(this, Te), t)
+    O(p(this, Oe), t)
   }
   get flagsBitmap() {
-    return k(p(this, Oe))
+    return T(p(this, ke))
   }
   set flagsBitmap(t) {
-    T(p(this, Oe), t)
+    O(p(this, ke), t)
   }
   get timeoutUntil() {
-    return k(p(this, Ie))
+    return T(p(this, Ie))
   }
   set timeoutUntil(t) {
-    T(p(this, Ie), t)
+    O(p(this, Ie), t)
   }
   async refresh() {
     var t, e;
     try {
-      return this.loading = !0, this.data = await C.me(), this.lastFetch = Date.now(), (t = this.channel) == null || t.postMessage(JSON.stringify({
+      return this.loading = !0, this.data = await z.me(), this.lastFetch = Date.now(), (t = this.channel) == null || t.postMessage(JSON.stringify({
         type: "refresh",
         data: this.data
-      })), this.data && this.notificationCount === void 0 && C.getNotificationCount().then(r => {
-        this.notificationCount = r
-      }).catch(r => {
-        console.error("Failed to refresh notification count:", r)
-      }), (e = this.data) != null && e.id && X.setUserId(this.data.id), !0
-    } catch (r) {
-      return console.error(r), Yk.warning(tg(), {
+      })), this.data && this.notificationCount === void 0 && z.getNotificationCount().then(n => {
+        this.notificationCount = n
+      }).catch(n => {
+        console.error("Failed to refresh notification count:", n)
+      }), (e = this.data) != null && e.id && ee.setUserId(this.data.id), !0
+    } catch (n) {
+      return console.error(n), mb.warning(cf(), {
         duration: 1e4
       }), !1
     } finally {
@@ -6081,13 +5481,13 @@ class Jk {
   }
   async logout() {
     var t;
-    await C.logout(), (t = this.channel) == null || t.postMessage(JSON.stringify({
+    await z.logout(), (t = this.channel) == null || t.postMessage(JSON.stringify({
       type: "logout"
     })), this.data = void 0
   }
   hasColor(t) {
-    var r;
-    return t < 32 ? !0 : ((((r = this.data) == null ? void 0 : r.extraColorsBitmap) ?? 0) & 1 << t - 32) !== 0
+    var n;
+    return t < 32 ? !0 : ((((n = this.data) == null ? void 0 : n.extraColorsBitmap) ?? 0) & 1 << t - 32) !== 0
   }
   hasPermission(t) {
     var e;
@@ -6095,38 +5495,38 @@ class Jk {
   }
   hasAnyPermission(t) {
     var e;
-    return Ck((e = this.data) == null ? void 0 : e.permissions, t)
+    return cb((e = this.data) == null ? void 0 : e.permissions, t)
   }
 }
-ye = new WeakMap, be = new WeakMap, ve = new WeakMap, Ee = new WeakMap, ke = new WeakMap, Te = new WeakMap, Oe = new WeakMap, Ie = new WeakMap;
-const V = new Jk;
+ye = new WeakMap, be = new WeakMap, ve = new WeakMap, Ee = new WeakMap, Te = new WeakMap, Oe = new WeakMap, ke = new WeakMap, Ie = new WeakMap;
+const V = new gb;
 let w;
-const j = new Array(128).fill(void 0);
-j.push(void 0, null, !0, !1);
+const U = new Array(128).fill(void 0);
+U.push(void 0, null, !0, !1);
 
-function m(n) {
-  return j[n]
+function m(r) {
+  return U[r]
 }
-let ee = j.length;
+let Z = U.length;
 
-function E(n) {
-  ee === j.length && j.push(j.length + 1);
-  const t = ee;
-  return ee = j[t], j[t] = n, t
+function E(r) {
+  Z === U.length && U.push(U.length + 1);
+  const t = Z;
+  return Z = U[t], U[t] = r, t
 }
 
-function L(n, t) {
+function M(r, t) {
   try {
-    return n.apply(this, t)
+    return r.apply(this, t)
   } catch (e) {
     w.__wbindgen_export_0(E(e))
   }
 }
 
-function $(n) {
-  return n == null
+function F(r) {
+  return r == null
 }
-const It = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
+const kt = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
   ignoreBOM: !0,
   fatal: !0
 }) : {
@@ -6134,183 +5534,183 @@ const It = typeof TextDecoder < "u" ? new TextDecoder("utf-8", {
     throw Error("TextDecoder not available")
   }
 };
-typeof TextDecoder < "u" && It.decode();
-let Z = null;
+typeof TextDecoder < "u" && kt.decode();
+let X = null;
 
-function Ae() {
-  return (Z === null || Z.byteLength === 0) && (Z = new Uint8Array(w.memory.buffer)), Z
+function Re() {
+  return (X === null || X.byteLength === 0) && (X = new Uint8Array(w.memory.buffer)), X
 }
 
-function Re(n, t) {
-  return n = n >>> 0, It.decode(Ae().subarray(n, n + t))
+function De(r, t) {
+  return r = r >>> 0, kt.decode(Re().subarray(r, r + t))
 }
 
-function Qk(n) {
-  n < 132 || (j[n] = ee, ee = n)
+function wb(r) {
+  r < 132 || (U[r] = Z, Z = r)
 }
 
-function wt(n) {
-  const t = m(n);
-  return Qk(n), t
+function dt(r) {
+  const t = m(r);
+  return wb(r), t
 }
 let G = null;
 
-function Pe() {
+function je() {
   return (G === null || G.buffer.detached === !0 || G.buffer.detached === void 0 && G.buffer !== w.memory.buffer) && (G = new DataView(w.memory.buffer)), G
 }
 let W = 0;
-const De = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
+const Pe = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
     encode: () => {
       throw Error("TextEncoder not available")
     }
   },
-  Zk = typeof De.encodeInto == "function" ? function(n, t) {
-    return De.encodeInto(n, t)
-  } : function(n, t) {
-    const e = De.encode(n);
+  yb = typeof Pe.encodeInto == "function" ? function(r, t) {
+    return Pe.encodeInto(r, t)
+  } : function(r, t) {
+    const e = Pe.encode(r);
     return t.set(e), {
-      read: n.length,
+      read: r.length,
       written: e.length
     }
   };
 
-function Se(n, t, e) {
+function Ne(r, t, e) {
   if (e === void 0) {
-    const u = De.encode(n),
-      _ = t(u.length, 1) >>> 0;
-    return Ae().subarray(_, _ + u.length).set(u), W = u.length, _
+    const c = Pe.encode(r),
+      _ = t(c.length, 1) >>> 0;
+    return Re().subarray(_, _ + c.length).set(c), W = c.length, _
   }
-  let r = n.length,
-    o = t(r, 1) >>> 0;
-  const a = Ae();
-  let c = 0;
-  for (; c < r; c++) {
-    const u = n.charCodeAt(c);
-    if (u > 127) break;
-    a[o + c] = u
+  let n = r.length,
+    s = t(n, 1) >>> 0;
+  const i = Re();
+  let u = 0;
+  for (; u < n; u++) {
+    const c = r.charCodeAt(u);
+    if (c > 127) break;
+    i[s + u] = c
   }
-  if (c !== r) {
-    c !== 0 && (n = n.slice(c)), o = e(o, r, r = c + n.length * 3, 1) >>> 0;
-    const u = Ae().subarray(o + c, o + r),
-      _ = Zk(n, u);
-    c += _.written, o = e(o, r, c, 1) >>> 0
+  if (u !== n) {
+    u !== 0 && (r = r.slice(u)), s = e(s, n, n = u + r.length * 3, 1) >>> 0;
+    const c = Re().subarray(s + u, s + n),
+      _ = yb(r, c);
+    u += _.written, s = e(s, n, u, 1) >>> 0
   }
-  return W = c, o
+  return W = u, s
 }
 
-function Xk(n) {
-  const t = Se(n, w.__wbindgen_export_1, w.__wbindgen_export_2),
+function bb(r) {
+  const t = Ne(r, w.__wbindgen_export_1, w.__wbindgen_export_2),
     e = W;
   w.set_discord_id(t, e)
 }
 
-function eT(n) {
-  const t = Se(n, w.__wbindgen_export_1, w.__wbindgen_export_2),
+function vb(r) {
+  const t = Ne(r, w.__wbindgen_export_1, w.__wbindgen_export_2),
     e = W;
   w.set_fingerprint(t, e)
 }
 
-function tT(n) {
-  const t = Se(n, w.__wbindgen_export_1, w.__wbindgen_export_2),
+function Eb(r) {
+  const t = Ne(r, w.__wbindgen_export_1, w.__wbindgen_export_2),
     e = W;
   w.set_detected_bot(t, e)
 }
 
-function nT(n) {
+function Tb(r) {
   let t, e;
   try {
-    const a = w.__wbindgen_add_to_stack_pointer(-16),
-      c = Se(n, w.__wbindgen_export_1, w.__wbindgen_export_2),
-      u = W;
-    w.get_pawtected_endpoint_payload(a, c, u);
-    var r = Pe().getInt32(a + 0, !0),
-      o = Pe().getInt32(a + 4, !0);
-    return t = r, e = o, Re(r, o)
+    const i = w.__wbindgen_add_to_stack_pointer(-16),
+      u = Ne(r, w.__wbindgen_export_1, w.__wbindgen_export_2),
+      c = W;
+    w.get_pawtected_endpoint_payload(i, u, c);
+    var n = je().getInt32(i + 0, !0),
+      s = je().getInt32(i + 4, !0);
+    return t = n, e = s, De(n, s)
   } finally {
     w.__wbindgen_add_to_stack_pointer(16), w.__wbindgen_export_3(t, e, 1)
   }
 }
 
-function Be(n) {
-  w.set_user_id(n)
+function qe(r) {
+  w.set_user_id(r)
 }
 
-function rT(n) {
-  w.set_cf_likely_automated(n)
+function Ob(r) {
+  w.set_cf_likely_automated(r)
 }
 
-function oT(n) {
-  w.set_automated_clicks(n)
+function kb(r) {
+  w.set_automated_clicks(r)
 }
 
-function iT(n) {
-  const t = Se(n, w.__wbindgen_export_1, w.__wbindgen_export_2),
+function Ib(r) {
+  const t = Ne(r, w.__wbindgen_export_1, w.__wbindgen_export_2),
     e = W;
   w.request_url(t, e)
 }
 
-function aT(n) {
-  w.set_automated_browser(n)
+function Nb(r) {
+  w.set_automated_browser(r)
 }
-async function sT(n, t) {
-  if (typeof Response == "function" && n instanceof Response) {
+async function Sb(r, t) {
+  if (typeof Response == "function" && r instanceof Response) {
     if (typeof WebAssembly.instantiateStreaming == "function") try {
-      return await WebAssembly.instantiateStreaming(n, t)
-    } catch (r) {
-      if (n.headers.get("Content-Type") != "application/wasm") console.warn("`WebAssembly.instantiateStreaming` failed because your server does not serve Wasm with `application/wasm` MIME type. Falling back to `WebAssembly.instantiate` which is slower. Original error:\n", r);
-      else throw r
+      return await WebAssembly.instantiateStreaming(r, t)
+    } catch (n) {
+      if (r.headers.get("Content-Type") != "application/wasm") console.warn("`WebAssembly.instantiateStreaming` failed because your server does not serve Wasm with `application/wasm` MIME type. Falling back to `WebAssembly.instantiate` which is slower. Original error:\n", n);
+      else throw n
     }
-    const e = await n.arrayBuffer();
+    const e = await r.arrayBuffer();
     return await WebAssembly.instantiate(e, t)
   } else {
-    const e = await WebAssembly.instantiate(n, t);
+    const e = await WebAssembly.instantiate(r, t);
     return e instanceof WebAssembly.Instance ? {
       instance: e,
-      module: n
+      module: r
     } : e
   }
 }
 
-function uT() {
-  const n = {};
-  return n.wbg = {}, n.wbg.__wbg_buffer_609cc3eee51ed158 = function(t) {
+function Ab() {
+  const r = {};
+  return r.wbg = {}, r.wbg.__wbg_buffer_609cc3eee51ed158 = function(t) {
     const e = m(t).buffer;
     return E(e)
-  }, n.wbg.__wbg_call_672a4d21634d4a24 = function() {
-    return L(function(t, e) {
-      const r = m(t).call(m(e));
-      return E(r)
+  }, r.wbg.__wbg_call_672a4d21634d4a24 = function() {
+    return M(function(t, e) {
+      const n = m(t).call(m(e));
+      return E(n)
     }, arguments)
-  }, n.wbg.__wbg_call_7cccdd69e0791ae2 = function() {
-    return L(function(t, e, r) {
-      const o = m(t).call(m(e), m(r));
-      return E(o)
+  }, r.wbg.__wbg_call_7cccdd69e0791ae2 = function() {
+    return M(function(t, e, n) {
+      const s = m(t).call(m(e), m(n));
+      return E(s)
     }, arguments)
-  }, n.wbg.__wbg_crypto_574e78ad8b13b65f = function(t) {
+  }, r.wbg.__wbg_crypto_574e78ad8b13b65f = function(t) {
     const e = m(t).crypto;
     return E(e)
-  }, n.wbg.__wbg_document_d249400bd7bd996d = function(t) {
+  }, r.wbg.__wbg_document_d249400bd7bd996d = function(t) {
     const e = m(t).document;
-    return $(e) ? 0 : E(e)
-  }, n.wbg.__wbg_getRandomValues_b8f5dbd5f3995a9e = function() {
-    return L(function(t, e) {
+    return F(e) ? 0 : E(e)
+  }, r.wbg.__wbg_getRandomValues_b8f5dbd5f3995a9e = function() {
+    return M(function(t, e) {
       m(t).getRandomValues(m(e))
     }, arguments)
-  }, n.wbg.__wbg_get_67b2ba62fc30de12 = function() {
-    return L(function(t, e) {
-      const r = Reflect.get(m(t), m(e));
-      return E(r)
+  }, r.wbg.__wbg_get_67b2ba62fc30de12 = function() {
+    return M(function(t, e) {
+      const n = Reflect.get(m(t), m(e));
+      return E(n)
     }, arguments)
-  }, n.wbg.__wbg_hasFocus_21add8cd20546ed0 = function() {
-    return L(function(t) {
+  }, r.wbg.__wbg_hasFocus_21add8cd20546ed0 = function() {
+    return M(function(t) {
       return m(t).hasFocus()
     }, arguments)
-  }, n.wbg.__wbg_innerWidth_7e0498dbd876d498 = function() {
-    return L(function(t) {
+  }, r.wbg.__wbg_innerWidth_7e0498dbd876d498 = function() {
+    return M(function(t) {
       const e = m(t).innerWidth;
       return E(e)
     }, arguments)
-  }, n.wbg.__wbg_instanceof_Window_def73ea0955fc569 = function(t) {
+  }, r.wbg.__wbg_instanceof_Window_def73ea0955fc569 = function(t) {
     let e;
     try {
       e = m(t) instanceof Window
@@ -6318,126 +5718,126 @@ function uT() {
       e = !1
     }
     return e
-  }, n.wbg.__wbg_msCrypto_a61aeb35a24c1329 = function(t) {
+  }, r.wbg.__wbg_msCrypto_a61aeb35a24c1329 = function(t) {
     const e = m(t).msCrypto;
     return E(e)
-  }, n.wbg.__wbg_navigator_1577371c070c8947 = function(t) {
+  }, r.wbg.__wbg_navigator_1577371c070c8947 = function(t) {
     const e = m(t).navigator;
     return E(e)
-  }, n.wbg.__wbg_new_a12002a7f91c75be = function(t) {
+  }, r.wbg.__wbg_new_a12002a7f91c75be = function(t) {
     const e = new Uint8Array(m(t));
     return E(e)
-  }, n.wbg.__wbg_newnoargs_105ed471475aaf50 = function(t, e) {
-    const r = new Function(Re(t, e));
-    return E(r)
-  }, n.wbg.__wbg_newwithbyteoffsetandlength_d97e637ebe145a9a = function(t, e, r) {
-    const o = new Uint8Array(m(t), e >>> 0, r >>> 0);
-    return E(o)
-  }, n.wbg.__wbg_newwithlength_a381634e90c276d4 = function(t) {
+  }, r.wbg.__wbg_newnoargs_105ed471475aaf50 = function(t, e) {
+    const n = new Function(De(t, e));
+    return E(n)
+  }, r.wbg.__wbg_newwithbyteoffsetandlength_d97e637ebe145a9a = function(t, e, n) {
+    const s = new Uint8Array(m(t), e >>> 0, n >>> 0);
+    return E(s)
+  }, r.wbg.__wbg_newwithlength_a381634e90c276d4 = function(t) {
     const e = new Uint8Array(t >>> 0);
     return E(e)
-  }, n.wbg.__wbg_node_905d3e251edff8a2 = function(t) {
+  }, r.wbg.__wbg_node_905d3e251edff8a2 = function(t) {
     const e = m(t).node;
     return E(e)
-  }, n.wbg.__wbg_now_807e54c39636c349 = function() {
+  }, r.wbg.__wbg_now_807e54c39636c349 = function() {
     return Date.now()
-  }, n.wbg.__wbg_process_dc0fbacc7c1c06f7 = function(t) {
+  }, r.wbg.__wbg_process_dc0fbacc7c1c06f7 = function(t) {
     const e = m(t).process;
     return E(e)
-  }, n.wbg.__wbg_randomFillSync_ac0988aba3254290 = function() {
-    return L(function(t, e) {
-      m(t).randomFillSync(wt(e))
+  }, r.wbg.__wbg_randomFillSync_ac0988aba3254290 = function() {
+    return M(function(t, e) {
+      m(t).randomFillSync(dt(e))
     }, arguments)
-  }, n.wbg.__wbg_require_60cc747a6bc5215a = function() {
-    return L(function() {
+  }, r.wbg.__wbg_require_60cc747a6bc5215a = function() {
+    return M(function() {
       const t = module.require;
       return E(t)
     }, arguments)
-  }, n.wbg.__wbg_set_65595bdd868b3009 = function(t, e, r) {
-    m(t).set(m(e), r >>> 0)
-  }, n.wbg.__wbg_static_accessor_GLOBAL_88a902d13a557d07 = function() {
+  }, r.wbg.__wbg_set_65595bdd868b3009 = function(t, e, n) {
+    m(t).set(m(e), n >>> 0)
+  }, r.wbg.__wbg_static_accessor_GLOBAL_88a902d13a557d07 = function() {
     const t = typeof global > "u" ? null : global;
-    return $(t) ? 0 : E(t)
-  }, n.wbg.__wbg_static_accessor_GLOBAL_THIS_56578be7e9f832b0 = function() {
+    return F(t) ? 0 : E(t)
+  }, r.wbg.__wbg_static_accessor_GLOBAL_THIS_56578be7e9f832b0 = function() {
     const t = typeof globalThis > "u" ? null : globalThis;
-    return $(t) ? 0 : E(t)
-  }, n.wbg.__wbg_static_accessor_SELF_37c5d418e4bf5819 = function() {
+    return F(t) ? 0 : E(t)
+  }, r.wbg.__wbg_static_accessor_SELF_37c5d418e4bf5819 = function() {
     const t = typeof self > "u" ? null : self;
-    return $(t) ? 0 : E(t)
-  }, n.wbg.__wbg_static_accessor_WINDOW_5de37043a91a9c40 = function() {
+    return F(t) ? 0 : E(t)
+  }, r.wbg.__wbg_static_accessor_WINDOW_5de37043a91a9c40 = function() {
     const t = typeof window > "u" ? null : window;
-    return $(t) ? 0 : E(t)
-  }, n.wbg.__wbg_subarray_aa9065fa9dc5df96 = function(t, e, r) {
-    const o = m(t).subarray(e >>> 0, r >>> 0);
-    return E(o)
-  }, n.wbg.__wbg_versions_c01dfd4722a88165 = function(t) {
+    return F(t) ? 0 : E(t)
+  }, r.wbg.__wbg_subarray_aa9065fa9dc5df96 = function(t, e, n) {
+    const s = m(t).subarray(e >>> 0, n >>> 0);
+    return E(s)
+  }, r.wbg.__wbg_versions_c01dfd4722a88165 = function(t) {
     const e = m(t).versions;
     return E(e)
-  }, n.wbg.__wbindgen_boolean_get = function(t) {
+  }, r.wbg.__wbindgen_boolean_get = function(t) {
     const e = m(t);
     return typeof e == "boolean" ? e ? 1 : 0 : 2
-  }, n.wbg.__wbindgen_is_function = function(t) {
+  }, r.wbg.__wbindgen_is_function = function(t) {
     return typeof m(t) == "function"
-  }, n.wbg.__wbindgen_is_null = function(t) {
+  }, r.wbg.__wbindgen_is_null = function(t) {
     return m(t) === null
-  }, n.wbg.__wbindgen_is_object = function(t) {
+  }, r.wbg.__wbindgen_is_object = function(t) {
     const e = m(t);
     return typeof e == "object" && e !== null
-  }, n.wbg.__wbindgen_is_string = function(t) {
+  }, r.wbg.__wbindgen_is_string = function(t) {
     return typeof m(t) == "string"
-  }, n.wbg.__wbindgen_is_undefined = function(t) {
+  }, r.wbg.__wbindgen_is_undefined = function(t) {
     return m(t) === void 0
-  }, n.wbg.__wbindgen_memory = function() {
+  }, r.wbg.__wbindgen_memory = function() {
     const t = w.memory;
     return E(t)
-  }, n.wbg.__wbindgen_number_get = function(t, e) {
-    const r = m(e),
-      o = typeof r == "number" ? r : void 0;
-    Pe().setFloat64(t + 8, $(o) ? 0 : o, !0), Pe().setInt32(t + 0, !$(o), !0)
-  }, n.wbg.__wbindgen_object_clone_ref = function(t) {
+  }, r.wbg.__wbindgen_number_get = function(t, e) {
+    const n = m(e),
+      s = typeof n == "number" ? n : void 0;
+    je().setFloat64(t + 8, F(s) ? 0 : s, !0), je().setInt32(t + 0, !F(s), !0)
+  }, r.wbg.__wbindgen_object_clone_ref = function(t) {
     const e = m(t);
     return E(e)
-  }, n.wbg.__wbindgen_object_drop_ref = function(t) {
-    wt(t)
-  }, n.wbg.__wbindgen_string_new = function(t, e) {
-    const r = Re(t, e);
-    return E(r)
-  }, n.wbg.__wbindgen_throw = function(t, e) {
-    throw new Error(Re(t, e))
-  }, n
+  }, r.wbg.__wbindgen_object_drop_ref = function(t) {
+    dt(t)
+  }, r.wbg.__wbindgen_string_new = function(t, e) {
+    const n = De(t, e);
+    return E(n)
+  }, r.wbg.__wbindgen_throw = function(t, e) {
+    throw new Error(De(t, e))
+  }, r
 }
 
-function cT(n, t) {
-  return w = n.exports, St.__wbindgen_wasm_module = t, G = null, Z = null, w
+function Rb(r, t) {
+  return w = r.exports, It.__wbindgen_wasm_module = t, G = null, X = null, w
 }
-async function St(n) {
+async function It(r) {
   if (w !== void 0) return w;
-  typeof n < "u" && (Object.getPrototypeOf(n) === Object.prototype ? {
-    module_or_path: n
-  } = n : console.warn("using deprecated parameters for the initialization function; pass a single object instead")), typeof n > "u" && (n = new URL("pawtect_wasm_bg.wasm", import.meta.url));
-  const t = uT();
-  (typeof n == "string" || typeof Request == "function" && n instanceof Request || typeof URL == "function" && n instanceof URL) && (n = fetch(n));
+  typeof r < "u" && (Object.getPrototypeOf(r) === Object.prototype ? {
+    module_or_path: r
+  } = r : console.warn("using deprecated parameters for the initialization function; pass a single object instead")), typeof r > "u" && (r = new URL("pawtect_wasm_bg.wasm", import.meta.url));
+  const t = Ab();
+  (typeof r == "string" || typeof Request == "function" && r instanceof Request || typeof URL == "function" && r instanceof URL) && (r = fetch(r));
   const {
     instance: e,
-    module: r
-  } = await sT(await n, t);
-  return cT(e, r)
+    module: n
+  } = await Sb(await r, t);
+  return Rb(e, n)
 }
-class lT {
+class Db {
   constructor() {
     g(this, "interval");
     g(this, "storagesEmpty", !1);
-    g(this, "storages", [new qe, new Ve, new He, new _T]);
+    g(this, "storages", [new Le, new Fe, new $e, new xb]);
     g(this, "pawtectLoaded");
     g(this, "pawtectError")
   }
   init() {
     this.interval === void 0 && (this.loadPawtect(), this.interval = setInterval(() => {
-      if (!(!V.data || this.storagesEmpty || localStorage.getItem(qe.KEY))) {
+      if (!(!V.data || this.storagesEmpty || localStorage.getItem(Le.KEY))) {
         for (const e of this.storages) {
-          const r = e.get();
-          if (r) {
-            for (const o of this.storages) o.set(r);
+          const n = e.get();
+          if (n) {
+            for (const s of this.storages) s.set(n);
             return
           }
         }
@@ -6449,28 +5849,28 @@ class lT {
     clearInterval(this.interval), this.interval = void 0
   }
   isMultiAccounting(t) {
-    const e = B.day;
-    for (const o of this.storages) {
-      const a = o.get();
-      if (a && !(a.timestamp + e < Date.now()) && a.userId !== t) return !0
+    const e = C.day;
+    for (const s of this.storages) {
+      const i = s.get();
+      if (i && !(i.timestamp + e < Date.now()) && i.userId !== t) return !0
     }
-    const r = {
+    const n = {
       userId: t,
       timestamp: Date.now()
     };
-    for (const o of this.storages) o.set(r);
+    for (const s of this.storages) s.set(n);
     return this.storagesEmpty = !1, !1
   }
   loadPawtect() {
     return this.pawtectLoaded || (this.pawtectLoaded = (async () => {
       var t;
       try {
-        await St(Mt), (t = V.data) != null && t.id && Be(V.data.id);
+        await It(Bt), (t = V.data) != null && t.id && qe(V.data.id);
         const e = fetch;
         return Object.assign(window, {
-          fetch: dT((r, o) => {
-            let a = null;
-            return r instanceof Request ? a = r.url : r instanceof URL ? a = r.href : typeof r == "string" && (a = r), a !== null && !a.startsWith("/") && iT(a), e.call(window, r, o)
+          fetch: Pb((n, s) => {
+            let i = null;
+            return n instanceof Request ? i = n.url : n instanceof URL ? i = n.href : typeof n == "string" && (i = n), i !== null && !i.startsWith("/") && Ib(i), e.call(window, n, s)
           })
         }), !0
       } catch (e) {
@@ -6479,10 +5879,10 @@ class lT {
     })()), this.pawtectLoaded
   }
   async setUserId(t) {
-    await this.loadPawtect(), Be(t)
+    await this.loadPawtect(), qe(t)
   }
   async setCfLikelyAutomated(t) {
-    await this.loadPawtect(), rT(t)
+    await this.loadPawtect(), Ob(t)
   }
   isPawtectReady() {
     return this.pawtectLoaded ?? Promise.resolve(!1)
@@ -6496,53 +5896,53 @@ class lT {
     }
   }
   async getPawtectedEndpointPayload(t) {
-    if (!await this.loadPawtect()) throw new Error(nv());
-    const r = navigator.webdriver,
-      [o, a] = await Promise.all([Ce(), Ln().catch(c => (console.error(c), {
+    if (!await this.loadPawtect()) throw new Error(ug());
+    const n = navigator.webdriver,
+      [s, i] = await Promise.all([Ge(), jr().catch(u => (console.error(u), {
         bot: !1
       }))]);
-    return Be(V.data.id), Xk(V.data.discordId ?? ""), eT(o), aT(r), oT(Fe.automatedClicks), a.bot && tT(a.botKind ?? "unknown"), nT(t)
+    return qe(V.data.id), bb(V.data.discordId ?? ""), vb(s), Nb(n), kb(ze.automatedClicks), i.bot && Eb(i.botKind ?? "unknown"), Tb(t)
   }
 }
 
-function dT(n) {
-  return n.bind().bind()
+function Pb(r) {
+  return r.bind().bind()
 }
-const U = class U {
+const B = class B {
   static codec(t) {
     const e = new TextEncoder().encode(this.XOR_KEY),
-      r = new Uint8Array(t.length);
-    for (let o = 0; o < t.length; o++) r[o] = t[o] ^ e[o % e.length];
-    return r
+      n = new Uint8Array(t.length);
+    for (let s = 0; s < t.length; s++) n[s] = t[s] ^ e[s % e.length];
+    return n
   }
   get() {
     try {
-      const t = localStorage.getItem(U.KEY);
+      const t = localStorage.getItem(B.KEY);
       if (!t) return;
-      const e = Uint8Array.from(atob(t), o => o.charCodeAt(0)),
-        r = new TextDecoder().decode(U.codec(e));
-      return JSON.parse(r)
+      const e = Uint8Array.from(atob(t), s => s.charCodeAt(0)),
+        n = new TextDecoder().decode(B.codec(e));
+      return JSON.parse(n)
     } catch {
       return
     }
   }
   set(t) {
     const e = new TextEncoder().encode(JSON.stringify(t)),
-      r = U.codec(e);
-    localStorage.setItem(U.KEY, btoa(String.fromCharCode(...r)))
+      n = B.codec(e);
+    localStorage.setItem(B.KEY, btoa(String.fromCharCode(...n)))
   }
 };
-g(U, "KEY", "ui_layout_v3"), g(U, "XOR_KEY", "wplace-prefs");
-let qe = U;
-const M = class M {
+g(B, "KEY", "ui_layout_v3"), g(B, "XOR_KEY", "wplace-prefs");
+let Le = B;
+const q = class q {
   get() {
     try {
-      const t = sessionStorage.getItem(M.KEY);
+      const t = sessionStorage.getItem(q.KEY);
       if (!t) return;
       let e = "";
-      for (let r = 0; r < t.length; r += 4) {
-        const o = parseInt(t.slice(r, r + 4), 16);
-        e += String.fromCharCode(o - M.SHIFT & 65535)
+      for (let n = 0; n < t.length; n += 4) {
+        const s = parseInt(t.slice(n, n + 4), 16);
+        e += String.fromCharCode(s - q.SHIFT & 65535)
       }
       return JSON.parse(e)
     } catch {
@@ -6551,24 +5951,24 @@ const M = class M {
   }
   set(t) {
     const e = JSON.stringify(t);
-    let r = "";
-    for (const o of e) {
-      const a = o.charCodeAt(0) + M.SHIFT & 65535;
-      r += a.toString(16).padStart(4, "0")
+    let n = "";
+    for (const s of e) {
+      const i = s.charCodeAt(0) + q.SHIFT & 65535;
+      n += i.toString(16).padStart(4, "0")
     }
-    sessionStorage.setItem(M.KEY, r)
+    sessionStorage.setItem(q.KEY, n)
   }
 };
-g(M, "KEY", "nav.cursor"), g(M, "SHIFT", 13);
-let Ve = M;
+g(q, "KEY", "nav.cursor"), g(q, "SHIFT", 13);
+let Fe = q;
 const H = class H {
   get() {
     const t = document.cookie.match(new RegExp("(?:^|; )" + H.KEY + "=([^;]*)"));
     if (t) try {
-      const [e, r] = decodeURIComponent(t[1]).split("."), o = parseInt(e, 36), a = parseInt(r, 36);
-      return !Number.isFinite(o) || !Number.isFinite(a) ? void 0 : {
-        userId: o,
-        timestamp: a
+      const [e, n] = decodeURIComponent(t[1]).split("."), s = parseInt(e, 36), i = parseInt(n, 36);
+      return !Number.isFinite(s) || !Number.isFinite(i) ? void 0 : {
+        userId: s,
+        timestamp: i
       }
     } catch {
       return
@@ -6580,8 +5980,8 @@ const H = class H {
   }
 };
 g(H, "KEY", "_pf_uid"), g(H, "MAX_AGE", 3600 * 24 * 365);
-let He = H;
-class _T {
+let $e = H;
+class xb {
   constructor() {
     g(this, "packed")
   }
@@ -6598,7 +5998,7 @@ class _T {
     this.packed = BigInt(t.timestamp) << 32n | BigInt(t.userId) & 0xffffffffn
   }
 }
-const X = new lT;
+const ee = new Db;
 export {
-  Ps as $, mm as A, kT as B, ET as C, ht as D, $e as E, TT as F, ak as G, Ge as H, jk as I, qT as J, R as K, GT as L, VT as M, OT as N, vT as O, xT as P, N as Q, yT as R, PT as S, B as T, wT as U, bT as V, MT as W, Mn as X, xk as Y, kt as Z, UT as _, ST as a, Dk as a0, FT as a1, $T as a2, IT as a3, RT as a4, DT as a5, nv as a6, ib as a7, CT as a8, NT as a9, AT as aa, BT as ab, LT as ac, Jf as ad, C as b, jT as c, je as d, i as e, s as f, Fe as g, La as h, Tf as i, ic as j, yo as k, xu as l, X as m, tg as n, bt as o, Me as p, KT as q, Vu as r, zT as s, Yk as t, V as u, tt as v, Lf as w, wc as x, Ja as y, Do as z
+  Gb as $, E_ as A, ct as B, fy as C, Ke as D, eb as E, D as F, tv as G, cv as H, uv as I, $b as J, Kb as K, S as L, Cb as M, qb as N, zb as O, Xb as P, Mr as Q, Zy as R, ev as S, C as T, Et as U, nv as V, Fb as W, Uo as X, Xy as Y, iv as Z, ov as _, Vb as a, Jb as a0, Qb as a1, ug as a2, _m as a3, Hb as a4, Yb as a5, sv as a6, rv as a7, rl as a8, z as b, Zb as c, Ue as d, a as e, o as f, ze as g, ji as h, Ru as i, su as j, gs as k, Pc as l, ee as m, cf as n, ht as o, He as p, av as q, Gc as r, Wb as s, mb as t, V as u, pt as v, Fu as w, gu as x, Wi as y, Rs as z
 };
