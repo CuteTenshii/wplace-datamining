@@ -16,7 +16,7 @@ var s = (q, t, e) => (tt(q, t, "read from private field"), e ? e.call(q) : t.get
   w = (q, t, e) => (tt(q, t, "access private method"), e);
 import {
   g as H,
-  T as bt,
+  T as Et,
   t as St,
   W as C,
   b as et,
@@ -25,7 +25,7 @@ import {
   I as Ct,
   J as Lt,
   d as Yt
-} from "./B2ImdKYM.js";
+} from "./jCg5vVN2.js";
 import {
   e as ct,
   i as ut,
@@ -37,12 +37,12 @@ import {
 } from "./BKnGt6Ki.js";
 import {
   g as _t
-} from "./5LOboS2c.js";
+} from "./gL9dUGBV.js";
 import {
   r as xt
-} from "./BplwZin7.js";
+} from "./Dg-P0KzD.js";
 import {
-  c as Et
+  c as bt
 } from "./DbGfTWgr.js";
 import {
   d as Wt
@@ -50,7 +50,7 @@ import {
 import {
   g as J
 } from "./BhCkpOlh.js";
-import "./-rYi7kSS.js";
+import "./0-HQcnRU.js";
 const Ft = () => "Download WPlace from the Google Play Store.",
   Rt = () => "Baixe o WPlace na Google Play Store.",
   Jt = () => "请从 Google Play 商店下载 WPlace。",
@@ -89,15 +89,15 @@ const Ft = () => "Download WPlace from the Google Play Store.",
   he = () => "Lade die Seite neu und versuche es erneut.",
   me = () => "Recarga la página e inténtalo de nuevo.",
   we = () => "Rechargez la page et réessayez.",
-  Be = () => "Ricarica la pagina e riprova.",
-  Pe = () => "ページを再読み込みして、もう一度お試しください。",
-  be = () => "Odśwież stronę i spróbuj ponownie.",
-  Ee = () => "Перезагрузите страницу и попробуйте снова.",
-  Te = () => "Перезавантажте сторінку та спробуйте ще раз.",
-  ve = () => "Hãy tải lại trang và thử lại.",
+  Pe = () => "Ricarica la pagina e riprova.",
+  Be = () => "ページを再読み込みして、もう一度お試しください。",
+  Ee = () => "Odśwież stronę i spróbuj ponownie.",
+  be = () => "Перезагрузите страницу и попробуйте снова.",
+  ve = () => "Перезавантажте сторінку та спробуйте ще раз.",
+  Te = () => "Hãy tải lại trang và thử lại.",
   De = (q = {}, t = {}) => {
     const e = t.locale ?? J();
-    return e === "en" ? ge() : e === "pt" ? ye() : e === "ch" ? fe() : e === "de" ? he() : e === "es" ? me() : e === "fr" ? we() : e === "it" ? Be() : e === "jp" ? Pe() : e === "pl" ? be() : e === "ru" ? Ee() : e === "uk" ? Te() : ve()
+    return e === "en" ? ge() : e === "pt" ? ye() : e === "ch" ? fe() : e === "de" ? he() : e === "es" ? me() : e === "fr" ? we() : e === "it" ? Pe() : e === "jp" ? Be() : e === "pl" ? Ee() : e === "ru" ? be() : e === "uk" ? ve() : Te()
   },
   Ie = () => "Your browser can't process Google Play purchases. Set Google Chrome as your device's default browser, then reopen WPlace to buy Droplets.",
   Ge = () => "Seu browser não processa compras pela Google Play. Defina o Google Chrome como navegador padrão do dispositivo e reabra o WPlace para comprar Droplets.",
@@ -137,7 +137,7 @@ const Ft = () => "Download WPlace from the Google Play Store.",
   rq = "data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAADAAAHVgCKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioru7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7///////////////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJAUQAAAAAAAAB1ZvGw9zAAAAAAD/+9DEAAAGgANNtBAAJL5DKPc9kEkIAKVy6ZvTvjNiAEAQA4fwcOKBAED85LicHw/BAEHfg+D4f/B8Hwf/Ococ/lz//4P//lwfAAAQCzgEApUAchBICAMDwGwwpg3jDHA2MWkaAxCQqDAjBQMMoFYwVgLDCrX1NfwPQxajfTO/VkEYD4sAuYOwYBgPgBGmQOAYIgDoKER8AN4KNYgISnpehHt0X2WsksoO27zM1duB3IgimTpnXNwTefFr9ly4HYK1lgtE8a3uVY23SCpDEpz4xL3DZVTV8ZygdeB4X+GuX6sTh9sVNAzuwVTIUztBdnLL60VnPsrt8f+fw/LCUy2caLDNmzuzGatmcu97UsVIYilyxqUcpaSPSW63KzZucjnakuzw+zlc5nD7yfL5zPv59z7/dQ9EolEu9pf5V1Y1+7Eayl1qkt8rXLGdi5nz//////////////////9/r9dw1l39/+P73/7////rWr1PdwxvJCIEbNPJ1QmAABaCxKJEmLpurTGDFSAYMB0FQxfggyqAeYtYSphnAwmFmBIYTATyaZhFiAGFIEqY0hJ5wAIxmFKCgaFaihh9A1GSlMSJYunOGWWB6pdsMvN5kqIig49MYApkLhJxyjmgkA1gIGDp1/CEIOLNkht0Ag8+NWKWQOW+aivhGVsj00TCW4CiJWJKkYRECshrDX0vHCHosi1cqERxakomvtDHA2TIAyjt52yUsMz8EMpZDLYdbq3V0XSRtfmhWkyaFM+YpBSrxQBAx03pQHPND6exc0OKEQq3lvKqM9hSCVHlv0yVdJhNZf+1Nx2GYZbqxt2qLJ9GC00ETr2vY+tmMTrOqWWTEkkUeh27PYQFIWX0rcGmtAswPXlLzWp6IVZe/ssk8FZ02r16Xdz3hTwPHJu3DEos63dr2927GPfz3+sM+93/63n3u//D///3nv9/rX71v97/PHuGWv7z/1Uo+X7tNTZ91XyoaWnob1bs9Yp86oQUCZIAAwEB7VQIuyrSQANCQ2GhZMQQ4MOCHMFxAMRwkMAxlMHzDM9QQMAxabsYLC+aWdScYCCZCoabxBOZSGWZcE2FB0xAuPp4zhWswUOJAsxAQMFDR4qN//vAxOUALmI5MbnsgE1xwGT3O7ABhADArk1MFMSD0qUALTCIVTNZ6aumhCoZWXmZixYEi2Kiy35BH02oFLPGCg7rCgQDQYw4ZYE5yE1rTPX1YekYKAYsD1hgHKA0ZBWZkQVFFhX2gNE3fFvt411kDPlAE5BAAMrWnKUzkdUQ4GcKFNJrQ1beZZDA2TyBhzsLNlCcxIeBUAMBCRkBamhsy15MFpJFZV1ovs/V/u78Uh+bo5dMT3L0lpqC3Wi9mVXpPlvn5TNa1Vyq409e/b1XvY/9bHmF3O1dwt2u5ZY444Y8q2a2Ou5Zd/GzvHV7tu/cx5fzv587Xua5ewz1n3+91X/LPesO2M9Zb7c5n3eOHcb+5KDXnf0F87HySsMMMAEIAAAwaBkBfgCqAAS3goeAwxXwM3QBieI+IEf/E3Ckh6ID/mLENJk99YSErPrb/4uVDX/7Vo/+KKI1///VTEFNRTMuMTAwVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVX/+yDE4AAIHGcJGUmAAAAANIOAAARVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV",
   nq = "data:audio/mpeg;base64,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qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/+xDE1gPAAAGkHAAAIAAANIAAAASqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqg==",
   oq = "data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAAE/gDLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//////////////////////////////////////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJAOoAAAAAAAABP6u4u+sAAAAAAD/+9DEAAAGhC1UdGMAJM1C6nc34FFSaWP+7vYBAAEOAAiHPJp6YAwtNgQl3qDHKBgo4Th/wf/Lh/8H35R3/4IAg7//gh/+UOcPgABgAAAB0YnM2TIZDUkAGYOFBdqBQkadAmEAgiDTKD1BYUFTGA4LixoJUcUsGkDJrfwYKEmBDRg+gZmBSBeYUQyJj2B9mAOAkYXINwOA3cdvzIrBtMDwFYOAEMZhFcyRwWTDiAGWo/LzSFp7vtDTSQ3bHKocXbPR6kg2U07Vs4KcJaDIIGTHZxDsSjEMyhPing6w8PSYAlwHfdtbFq3lAc1qmqzPxFFV1cbUkrP9GG/cbKIyivlRWq1mzvHDWNad73eE7q3JYPnIerXqKJTtzV3DmUzLZZFM7sv1z9U8czh5wVG4G3nru8cfyy+rhT5TtHTb7jzd3eWO6Wmy3R3e6/DW9b5l/b9e5///87///eY////9///////Df7/8vx/Xf///9f///52O6s3rZINILq82aqo6x1TAYDoYGInIIhASA++E8wYSIkIBd0NdJXDHQL2vFAR4YOsgwGFK6QQiPQDhcITBl4MWgDBEAosgZUgoDGkAwGFAMCCEDEQVAwaOgMChwEQXAwUBg5MTgJcAwARZxBj4Ng0LAigBGYdKKwKBIeIQDHCyhWxMlUmTx0xUCgJFBjnkGFkpk0ZF4gSLLRZJKGARbBQAsZDCCFAhxianDEuspVXRkOUWCGGCYsxZiXa0Ukl/8XOS4vxxjrDJR7RLyeiisxJn//y+11pJqNycOJkgiapIoo0UdS0dL//sUjzHxMgBgMUtVdLRYGrKTEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq//tgxOMAHVGjN7magIAAADSDgAAEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq",
-  cr = aq();
+  ur = aq();
 let dt;
 async function it() {
   dt ?? (dt = new AudioContext);
@@ -145,11 +145,11 @@ async function it() {
   return q.state !== "running" && await Promise.race([q.resume().catch(() => {}), new Promise(t => setTimeout(t, 150))]), q.state === "running" ? q : void 0
 }
 
-function ur() {
+function Ar() {
   it()
 }
 
-function Tt(q, t) {
+function vt(q, t) {
   const e = new GainNode(q, {
       gain: t
     }),
@@ -160,7 +160,7 @@ function Tt(q, t) {
   return e.connect(r).connect(q.destination), e
 }
 
-function v(q, t, e, r, n, a, V) {
+function T(q, t, e, r, n, a, V) {
   const i = new OscillatorNode(q, {
     type: "triangle",
     frequency: e
@@ -169,21 +169,21 @@ function v(q, t, e, r, n, a, V) {
   const c = new GainNode(q);
   c.gain.setValueAtTime(0, r), c.gain.linearRampToValueAtTime(a, r + .008), c.gain.exponentialRampToValueAtTime(.001, r + n), i.connect(c).connect(t), i.start(r), i.stop(r + n + .05)
 }
-async function Ar() {
-  if (H.muted) return !0;
-  const q = await it();
-  if (!q) return !1;
-  const t = Tt(q, .25),
-    e = q.currentTime + .03;
-  return v(q, t, 523.25, e, .12, .5), v(q, t, 659.25, e + .085, .12, .55), v(q, t, 783.99, e + .17, .12, .6), v(q, t, 1046.5, e + .255, .55, .7), v(q, t, 1318.51, e + .255, .55, .25), v(q, t, 2093, e + .33, .4, .1), !0
-}
 async function lr() {
   if (H.muted) return !0;
   const q = await it();
   if (!q) return !1;
-  const t = Tt(q, .22),
+  const t = vt(q, .25),
     e = q.currentTime + .03;
-  return v(q, t, 329.63, e, .16, .55), v(q, t, 261.63, e + .15, .5, .6, 233.08), !0
+  return T(q, t, 523.25, e, .12, .5), T(q, t, 659.25, e + .085, .12, .55), T(q, t, 783.99, e + .17, .12, .6), T(q, t, 1046.5, e + .255, .55, .7), T(q, t, 1318.51, e + .255, .55, .25), T(q, t, 2093, e + .33, .4, .1), !0
+}
+async function pr() {
+  if (H.muted) return !0;
+  const q = await it();
+  if (!q) return !1;
+  const t = vt(q, .22),
+    e = q.currentTime + .03;
+  return T(q, t, 329.63, e, .16, .55), T(q, t, 261.63, e + .15, .5, .6, 233.08), !0
 }
 
 function aq() {
@@ -205,7 +205,7 @@ function Vq(q) {
 const ot = 14.5,
   iq = 0,
   sq = 24;
-async function pr() {
+async function dr() {
   const q = lq();
   if (q) return q;
   try {
@@ -259,17 +259,17 @@ const uq = {
       lng: 151.2083447239608
     }
   },
-  vt = "location";
+  Tt = "location";
 
 function Aq(q, t) {
-  localStorage.setItem(vt, JSON.stringify({
+  localStorage.setItem(Tt, JSON.stringify({
     ...q,
     zoom: t
   }))
 }
 
 function lq() {
-  const q = localStorage.getItem(vt);
+  const q = localStorage.getItem(Tt);
   if (!q) return;
   let t;
   try {
@@ -348,7 +348,7 @@ class gq {
   }
 }
 _ = new WeakMap, x = new WeakMap;
-const dr = new gq;
+const gr = new gq;
 
 function yq(q, t) {
   const e = {};
@@ -391,12 +391,12 @@ function ht(q) {
 }
 const mq = "[object RegExp]",
   wq = "[object String]",
-  Bq = "[object Number]",
-  Pq = "[object Boolean]",
-  bq = "[object Symbol]",
-  Eq = "[object Date]",
-  Tq = "[object Map]",
-  vq = "[object Set]",
+  Pq = "[object Number]",
+  Bq = "[object Boolean]",
+  Eq = "[object Symbol]",
+  bq = "[object Date]",
+  vq = "[object Map]",
+  Tq = "[object Set]",
   Dq = "[object Array]",
   Iq = "[object Function]",
   Gq = "[object ArrayBuffer]",
@@ -457,11 +457,11 @@ function O(q, t, e, r) {
   switch (n) {
     case wq:
       return q.toString() === t.toString();
-    case Bq:
-      return Wq(q.valueOf(), t.valueOf());
     case Pq:
-    case Eq:
+      return Wq(q.valueOf(), t.valueOf());
+    case Bq:
     case bq:
+    case Eq:
       return Object.is(q.valueOf(), t.valueOf());
     case mq:
       return q.source === t.source && q.flags === t.flags;
@@ -475,18 +475,18 @@ function O(q, t, e, r) {
   e.set(q, t), e.set(t, q);
   try {
     switch (n) {
-      case Tq:
+      case vq:
         if (q.size !== t.size) return !1;
         for (const [c, A] of q.entries())
           if (!t.has(c) || !L(A, t.get(c), c, q, t, e, r)) return !1;
         return !0;
-      case vq: {
+      case Tq: {
         if (q.size !== t.size) return !1;
         const c = Array.from(q.values()),
           A = Array.from(t.values());
         for (let f = 0; f < c.length; f++) {
-          const b = c[f],
-            h = A.findIndex(E => L(b, E, void 0, q, t, e, r));
+          const E = c[f],
+            h = A.findIndex(b => L(E, b, void 0, q, t, e, r));
           if (h === -1) return !1;
           A.splice(h, 1)
         }
@@ -520,11 +520,11 @@ function O(q, t, e, r) {
           A = [...Object.keys(t), ...ft(t)];
         if (c.length !== A.length) return !1;
         for (let f = 0; f < c.length; f++) {
-          const b = c[f],
-            h = q[b];
-          if (!Object.hasOwn(t, b)) return !1;
-          const E = t[b];
-          if (!L(h, E, b, q, t, e, r)) return !1
+          const E = c[f],
+            h = q[E];
+          if (!Object.hasOwn(t, E)) return !1;
+          const b = t[E];
+          if (!L(h, b, E, q, t, e, r)) return !1
         }
         return !0
       }
@@ -559,7 +559,7 @@ class Kq {
       window: e = Dt,
       document: r = e == null ? void 0 : e.document
     } = t;
-    e !== void 0 && (l(this, M, r), l(this, W, Et(n => {
+    e !== void 0 && (l(this, M, r), l(this, W, bt(n => {
       const a = nt(e, "focusin", n),
         V = nt(e, "focusout", n);
       return () => {
@@ -631,14 +631,14 @@ function Gt(q, t, e, r, n, a) {
     set: (c, A, f) => (n == null || n(), Reflect.set(c, A, f), a(t), !0)
   }), e.set(q, i)), i
 }
-var B, P, N, T, j, I, Q, m, G, S, F, R, Z, y, Y, U, at, jt;
+var P, B, N, v, j, I, Q, m, G, S, F, R, Z, y, Y, U, at, jt;
 class kt {
   constructor(t, e, r = {}) {
     p(this, y);
-    p(this, B);
     p(this, P);
+    p(this, B);
     p(this, N);
-    p(this, T);
+    p(this, v);
     p(this, j);
     p(this, I);
     p(this, Q, new WeakMap);
@@ -649,7 +649,7 @@ class kt {
     p(this, R);
     p(this, Z, t => {
       var e;
-      t.key !== s(this, P) || t.newValue === null || (l(this, B, w(this, y, Y).call(this, t.newValue)), (e = s(this, I)) == null || e.call(this))
+      t.key !== s(this, B) || t.newValue === null || (l(this, P, w(this, y, Y).call(this, t.newValue)), (e = s(this, I)) == null || e.call(this))
     });
     const {
       storage: n = "local",
@@ -660,20 +660,20 @@ class kt {
       syncTabs: V = !0,
       connected: i = !0
     } = r, c = "window" in r ? r.window : Dt;
-    if (l(this, B, e), l(this, P, t), l(this, N, a), l(this, m, i), l(this, S, c), l(this, F, V), l(this, R, n), c === void 0) return;
+    if (l(this, P, e), l(this, B, t), l(this, N, a), l(this, m, i), l(this, S, c), l(this, F, V), l(this, R, n), c === void 0) return;
     const A = Hq(n, c);
-    l(this, T, A);
+    l(this, v, A);
     const f = A.getItem(t);
-    f !== null ? l(this, B, w(this, y, Y).call(this, f)) : i && w(this, y, U).call(this, e), w(this, y, at).call(this)
+    f !== null ? l(this, P, w(this, y, Y).call(this, f)) : i && w(this, y, U).call(this, e), w(this, y, at).call(this)
   }
   get current() {
     var e, r, n, a;
     (e = s(this, j)) == null || e.call(this);
     let t;
     if (s(this, m)) {
-      const V = (r = s(this, T)) == null ? void 0 : r.getItem(s(this, P));
-      t = V ? w(this, y, Y).call(this, V) : s(this, B)
-    } else t = s(this, B);
+      const V = (r = s(this, v)) == null ? void 0 : r.getItem(s(this, B));
+      t = V ? w(this, y, Y).call(this, V) : s(this, P)
+    } else t = s(this, P);
     return Gt(t, t, s(this, Q), (n = s(this, j)) == null ? void 0 : n.bind(this), (a = s(this, I)) == null ? void 0 : a.bind(this), w(this, y, U).bind(this))
   }
   set current(t) {
@@ -686,33 +686,33 @@ class kt {
   disconnect() {
     var e, r;
     if (!s(this, m)) return;
-    const t = (e = s(this, T)) == null ? void 0 : e.getItem(s(this, P));
-    t && l(this, B, w(this, y, Y).call(this, t)), l(this, m, !1), (r = s(this, T)) == null || r.removeItem(s(this, P)), w(this, y, jt).call(this)
+    const t = (e = s(this, v)) == null ? void 0 : e.getItem(s(this, B));
+    t && l(this, P, w(this, y, Y).call(this, t)), l(this, m, !1), (r = s(this, v)) == null || r.removeItem(s(this, B)), w(this, y, jt).call(this)
   }
   connect() {
-    s(this, m) || (l(this, m, !0), w(this, y, U).call(this, s(this, B)), w(this, y, at).call(this))
+    s(this, m) || (l(this, m, !0), w(this, y, U).call(this, s(this, P)), w(this, y, at).call(this))
   }
 }
-B = new WeakMap, P = new WeakMap, N = new WeakMap, T = new WeakMap, j = new WeakMap, I = new WeakMap, Q = new WeakMap, m = new WeakMap, G = new WeakMap, S = new WeakMap, F = new WeakMap, R = new WeakMap, Z = new WeakMap, y = new WeakSet, Y = function(t) {
+P = new WeakMap, B = new WeakMap, N = new WeakMap, v = new WeakMap, j = new WeakMap, I = new WeakMap, Q = new WeakMap, m = new WeakMap, G = new WeakMap, S = new WeakMap, F = new WeakMap, R = new WeakMap, Z = new WeakMap, y = new WeakSet, Y = function(t) {
   try {
     return s(this, N).deserialize(t)
   } catch (e) {
-    console.error(`Error when parsing "${t}" from persisted store "${s(this,P)}"`, e);
+    console.error(`Error when parsing "${t}" from persisted store "${s(this,B)}"`, e);
     return
   }
 }, U = function(t) {
   var e;
   if (!s(this, m)) {
-    l(this, B, t);
+    l(this, P, t);
     return
   }
   try {
-    t !== void 0 && ((e = s(this, T)) == null || e.setItem(s(this, P), s(this, N).serialize(t)))
+    t !== void 0 && ((e = s(this, v)) == null || e.setItem(s(this, B), s(this, N).serialize(t)))
   } catch (r) {
-    console.error(`Error when writing value from persisted store "${s(this,P)}" to ${s(this,T)}`, r)
+    console.error(`Error when writing value from persisted store "${s(this,B)}" to ${s(this,v)}`, r)
   }
 }, at = function() {
-  !s(this, S) || !s(this, m) || l(this, j, Et(t => (l(this, I, t), l(this, G, s(this, m) && s(this, F) && s(this, R) === "local" ? nt(s(this, S), "storage", s(this, Z)) : void 0), () => {
+  !s(this, S) || !s(this, m) || l(this, j, bt(t => (l(this, I, t), l(this, G, s(this, m) && s(this, F) && s(this, R) === "local" ? nt(s(this, S), "storage", s(this, Z)) : void 0), () => {
     var e;
     (e = s(this, G)) == null || e.call(this), l(this, G, void 0), l(this, I, void 0)
   })))
@@ -723,6 +723,11 @@ B = new WeakMap, P = new WeakMap, N = new WeakMap, T = new WeakMap, j = new Weak
 class z extends Promise {
   constructor(e) {
     let r;
+    const n = {
+      current: {
+        status: "pending"
+      }
+    };
     super((V, i) => {
       r = {
         resolve: a("fulfilled", V),
@@ -730,17 +735,17 @@ class z extends Promise {
       }, e == null || e(r.resolve, r.reject)
     });
     g(this, "resolvers");
-    g(this, "state", {
-      status: "pending"
-    });
-    this.resolvers = r;
-    const n = this;
+    g(this, "stateHolder");
+    this.resolvers = r, this.stateHolder = n;
 
     function a(V, i) {
       return function(...A) {
-        return n.state.status === "pending" && (n.state = n.mountStateByStatus(V, A[0])), i(...A)
+        return n.current.status === "pending" && (n.current = $q(V, A[0], n.current)), i(...A)
       }
     }
+  }
+  get state() {
+    return this.stateHolder.current
   }
   get resolve() {
     return this.resolvers.resolve
@@ -750,19 +755,6 @@ class z extends Promise {
   }
   get isFinished() {
     return this.state.status && this.state.status !== "pending"
-  }
-  mountStateByStatus(e, r) {
-    switch (e) {
-      case "fulfilled":
-        return {
-          status: e, value: r
-        };
-      case "rejected":
-        return {
-          status: e, reason: r
-        }
-    }
-    return this.state
   }
   static create(e) {
     const r = new z;
@@ -781,14 +773,28 @@ class z extends Promise {
     return r.catch(() => clearTimeout(n)), r
   }
 }
+
+function $q(q, t, e) {
+  switch (q) {
+    case "fulfilled":
+      return {
+        status: q, value: t
+      };
+    case "rejected":
+      return {
+        status: q, reason: t
+      }
+  }
+  return e
+}
 var Vt = (q => (q.Play = "https://play.google.com/billing", q))(Vt || {});
 
-function $q(q) {
+function tr(q) {
   return fq(q)
 }
 
 function wt(q) {
-  return $q(function(...e) {
+  return tr(function(...e) {
     return z.create(q(...e))
   })
 }
@@ -811,7 +817,7 @@ const u = class u {
   }
   static shouldRecover() {
     var t, e;
-    return D() && ((t = u.checkout) == null ? void 0 : t.startedAt) && Date.now() - ((e = u.checkout) == null ? void 0 : e.startedAt) <= 3 * bt.day
+    return D() && ((t = u.checkout) == null ? void 0 : t.startedAt) && Date.now() - ((e = u.checkout) == null ? void 0 : e.startedAt) <= 3 * Et.day
   }
   static isRunning() {
     var t;
@@ -889,7 +895,7 @@ g(u, "checkoutState", new kt("twa:checkout", void 0, {
 })), g(u, "memoryCheckout");
 let d = u;
 
-function Bt(q) {
+function Pt(q) {
   const t = q;
   return {
     name: t == null ? void 0 : t.name,
@@ -934,7 +940,7 @@ const o = class o {
   }
   static setAsPlayBillingBlockedErrorIfNecessary(t, e) {
     if (t) try {
-      const r = o.PLAY_BILLING_NOT_AVAILABLE.find(n => Rq(Bt(t), Bt(n)));
+      const r = o.PLAY_BILLING_NOT_AVAILABLE.find(n => Rq(Pt(t), Pt(n)));
       if (!r) return;
       if ((r == null ? void 0 : r.kind) === "not-twa-context") {
         o.forceTWA.current = !1;
@@ -957,11 +963,11 @@ const o = class o {
     return o.createPaymentRequest(t, e)
   }
   static async createPayment(t) {
-    var b;
+    var E;
     o.twaGuard();
     const e = qt(t);
     if (!(e != null && e.productId)) throw new C("No sku config or productId found");
-    if (!((b = K.data) != null && b.id)) throw new C("No user id");
+    if (!((E = K.data) != null && E.id)) throw new C("No user id");
     const r = await o.createPaymentBySkuId(t),
       n = d.start(),
       V = await r.show().catch(o.setAsPlayBillingBlockedErrorIfNecessary).finally(() => {
@@ -976,17 +982,17 @@ const o = class o {
       out: i,
       verify: f
     };
-    async function A(h, E) {
-      if (c = h, await (V == null ? void 0 : V.complete(h).catch(() => {})), E) throw E
+    async function A(h, b) {
+      if (c = h, await (V == null ? void 0 : V.complete(h).catch(() => {})), b) throw b
     }
     async function f() {
-      var h, E;
+      var h, b;
       if ((h = i == null ? void 0 : i.details) != null && h.purchaseToken) try {
         const {
           droplets: $
         } = await o.verifyBySKU({
           sku: t,
-          token: (E = i == null ? void 0 : i.details) == null ? void 0 : E.purchaseToken
+          token: (b = i == null ? void 0 : i.details) == null ? void 0 : b.purchaseToken
         });
         return await A("success"), await o.refresh(), d.openCheckoutDialog($)
       } catch ($) {
@@ -1204,31 +1210,32 @@ X = new WeakMap, g(o, "pattern", /^android-app:[/][/]([^/?]+)(.+)?$/), g(o, "for
   o.loadService(), o.checkIfShouldForceTWA(), d.preventNavigationInTWAIfInCheckout(t)
 });
 let k = o;
-var Pt;
+var Bt;
 (q => {
   async function t() {
     if (e() || history.length < 3) return;
     const r = 50;
     for (let n = 0; n < r; n++) history.pushState({}, "");
-    navigator.userActivation.hasBeenActive || await tr(document, ["pointerdown", "keydown", "touchstart", "click"]), !e() && history.go(-(history.length - 1))
+    navigator.userActivation.hasBeenActive || await er(document, ["pointerdown", "keydown", "touchstart", "click"]), !e() && history.go(-(history.length - 1))
   }
   q.reset = t;
 
   function e() {
-    var r, n;
+    var r, n, a;
     try {
-      return ((n = (r = K) == null ? void 0 : r.data) == null ? void 0 : n.id) || navigation.entries().length >= history.length
+      return ((n = (r = K) == null ? void 0 : r.data) == null ? void 0 : n.id) || (((a = window.navigation) == null ? void 0 : a.entries().length) ?? 0) >= history.length
     } catch {
       return !1
     }
   }
-})(Pt || (Pt = {}));
+})(Bt || (Bt = {}));
 
-function tr(q, t, e) {
-  return new Promise((r, n) => {
-    t.forEach(a => q.addEventListener(a, r, {
-      once: !0
-    }))
+function er(q, t, e) {
+  return new Promise(r => {
+    const n = a => {
+      t.forEach(V => q.removeEventListener(V, n)), r(a)
+    };
+    t.forEach(a => q.addEventListener(a, n))
   })
 }
 
@@ -1236,7 +1243,7 @@ function D() {
   return window.matchMedia("(display-mode: standalone)").matches || "standalone" in window.navigator && window.navigator.standalone === !0
 }
 
-function gr() {
+function yr() {
   const q = "last-unfocus",
     t = new AbortController;
   if (D()) {
@@ -1247,7 +1254,7 @@ function gr() {
         const n = localStorage.getItem(q);
         if (n) {
           const a = parseInt(n, 10);
-          Date.now() - a > 5 * bt.minute && window.location.reload()
+          Date.now() - a > 5 * Et.minute && window.location.reload()
         }
       },
       r = () => {
@@ -1274,5 +1281,5 @@ function gr() {
   }
 }
 export {
-  cr as A, d as T, k as a, lr as b, ze as c, dq as d, Aq as e, uq as f, pr as g, D as h, pq as i, dr as l, Ar as p, gr as s, ur as u, Zq as w
+  ur as A, d as T, k as a, pr as b, ze as c, dq as d, Aq as e, uq as f, dr as g, D as h, pq as i, gr as l, lr as p, yr as s, Ar as u, Zq as w
 };

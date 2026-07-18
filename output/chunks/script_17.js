@@ -3375,8 +3375,8 @@ class MT extends Error {}
 function mt(n, t) {
   const e = {};
   for (const r of n) {
-    const o = t(r);
-    let a = e[o];
+    const o = t(r),
+      a = e[o];
     a ? a.push(r) : e[o] = [r]
   }
   return e
@@ -5643,7 +5643,7 @@ function Bk(n, t) {
   }
   throw new Error("Canvas API is not available in the current environment.")
 }
-let C = new Lk(We);
+const C = new Lk(We);
 typeof window < "u" && Lt(() => {
   let n = C.online;
   Ut(() => {
