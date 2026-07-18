@@ -53,24 +53,24 @@ import {
 } from "./DzBCW1Dp.js";
 import {
   t as b,
-  l as Ue,
-  m as mr,
-  o as Be,
+  m as Ue,
+  o as mr,
+  p as Be,
   v as vr,
-  p as gr,
+  q as gr,
   b as fe,
-  q as hr,
-  k as br,
-  r as xr,
+  r as hr,
+  l as br,
+  w as xr,
   i as wr,
-  w as yr,
-  h as kr,
-  x as zr,
-  f as jr,
-  y as Sr,
-  j as Ir,
-  z as Nr
-} from "./CTc2Wq1y.js";
+  x as yr,
+  j as kr,
+  y as zr,
+  h as jr,
+  z as Sr,
+  k as Ir,
+  A as Nr
+} from "./B2ImdKYM.js";
 import {
   L as Ur,
   g as Br
@@ -80,11 +80,11 @@ import {
 } from "./xxtmNUhV.js";
 import {
   S as Re,
-  b as Te
-} from "./DGTudTCJ.js";
+  b as Ae
+} from "./C66n46jA.js";
 import {
-  S as Ae
-} from "./g99-ZK3F.js";
+  S as Te
+} from "./B3nhwn0n.js";
 import {
   G as Le,
   T as Pe
@@ -99,10 +99,10 @@ import {
   c as Rr
 } from "./D6_ahSxh.js";
 import {
-  o as Tr
+  o as Ar
 } from "./L80GiOtt.js";
 import {
-  s as Ar,
+  s as Tr,
   a as Lr
 } from "./CiUV14RK.js";
 import {
@@ -111,7 +111,7 @@ import {
 import {
   g as Z,
   a as te
-} from "./C7fF5uc4.js";
+} from "./BVJ80JqR.js";
 import {
   f as Pr
 } from "./CiB29Aqe.js";
@@ -175,11 +175,11 @@ const Dr = () => "Alliance name reported successfully",
   Bt = () => "Ваша учетная запись слишком новая, чтобы сообщать о нарушениях",
   Ct = () => "Ваш обліковий запис занадто новий, щоб подавати скарги.",
   Rt = () => "Tài khoản của bạn còn quá mới để báo cáo.",
-  Tt = (f = {}, r = {}) => {
+  At = (f = {}, r = {}) => {
     const e = r.locale ?? g();
     return e === "en" ? wt() : e === "pt" ? yt() : e === "ch" ? kt() : e === "de" ? zt() : e === "es" ? jt() : e === "fr" ? St() : e === "it" ? It() : e === "jp" ? Nt() : e === "pl" ? Ut() : e === "ru" ? Bt() : e === "uk" ? Ct() : Rt()
   },
-  At = () => "Paint with more than one account",
+  Tt = () => "Paint with more than one account",
   Lt = () => "Pintar com mais de uma conta",
   Pt = () => "使用多个账号绘制像素",
   Dt = () => "Mehr als ein Konto zum Malen verwenden",
@@ -193,7 +193,7 @@ const Dr = () => "Alliance name reported successfully",
   Kt = () => "Vẽ pixel bằng nhiều hơn một tài khoản",
   Wt = (f = {}, r = {}) => {
     const e = r.locale ?? g();
-    return e === "en" ? At() : e === "pt" ? Lt() : e === "ch" ? Pt() : e === "de" ? Dt() : e === "es" ? Et() : e === "fr" ? Vt() : e === "it" ? qt() : e === "jp" ? Mt() : e === "pl" ? Ot() : e === "ru" ? Zt() : e === "uk" ? Ht() : Kt()
+    return e === "en" ? Tt() : e === "pt" ? Lt() : e === "ch" ? Pt() : e === "de" ? Dt() : e === "es" ? Et() : e === "fr" ? Vt() : e === "it" ? qt() : e === "jp" ? Mt() : e === "pl" ? Ot() : e === "ru" ? Zt() : e === "uk" ? Ht() : Kt()
   },
   Gt = () => "Name reported successfully",
   Yt = () => "Nome denunciado com sucesso",
@@ -243,8 +243,8 @@ const Dr = () => "Alliance name reported successfully",
     const e = r.locale ?? g();
     return e === "en" ? xn() : e === "pt" ? wn() : e === "ch" ? yn() : e === "de" ? kn() : e === "es" ? zn() : e === "fr" ? jn() : e === "it" ? Sn() : e === "jp" ? In() : e === "pl" ? Nn() : e === "ru" ? Un() : e === "uk" ? Bn() : Cn()
   },
-  Tn = () => "Report alliance name",
-  An = () => "Denunciar nome da aliança",
+  An = () => "Report alliance name",
+  Tn = () => "Denunciar nome da aliança",
   Ln = () => "举报联盟名称",
   Pn = () => "Allianzname melden",
   Dn = () => "Reportar nombre de la alianza",
@@ -257,7 +257,7 @@ const Dr = () => "Alliance name reported successfully",
   Hn = () => "Báo cáo tên liên minh",
   Kn = (f = {}, r = {}) => {
     const e = r.locale ?? g();
-    return e === "en" ? Tn() : e === "pt" ? An() : e === "ch" ? Ln() : e === "de" ? Pn() : e === "es" ? Dn() : e === "fr" ? En() : e === "it" ? Vn() : e === "jp" ? qn() : e === "pl" ? Mn() : e === "ru" ? On() : e === "uk" ? Zn() : Hn()
+    return e === "en" ? An() : e === "pt" ? Tn() : e === "ch" ? Ln() : e === "de" ? Pn() : e === "es" ? Dn() : e === "fr" ? En() : e === "it" ? Vn() : e === "jp" ? qn() : e === "pl" ? Mn() : e === "ru" ? On() : e === "uk" ? Zn() : Hn()
   },
   Wn = () => "This area is already under review",
   Gn = () => "Esta área já está em análise",
@@ -309,8 +309,8 @@ const Dr = () => "Alliance name reported successfully",
   },
   Co = () => "Report sent successfully",
   Ro = () => "Denúncia enviada com sucesso",
-  To = () => "举报已成功发送",
-  Ao = () => "Meldung erfolgreich gesendet",
+  Ao = () => "举报已成功发送",
+  To = () => "Meldung erfolgreich gesendet",
   Lo = () => "Reporte enviado correctamente",
   Po = () => "Signalement envoyé avec succès",
   Do = () => "Segnalazione inviata con successo",
@@ -321,7 +321,7 @@ const Dr = () => "Alliance name reported successfully",
   Oo = () => "Đã gửi báo cáo thành công",
   Zo = (f = {}, r = {}) => {
     const e = r.locale ?? g();
-    return e === "en" ? Co() : e === "pt" ? Ro() : e === "ch" ? To() : e === "de" ? Ao() : e === "es" ? Lo() : e === "fr" ? Po() : e === "it" ? Do() : e === "jp" ? Eo() : e === "pl" ? Vo() : e === "ru" ? qo() : e === "uk" ? Mo() : Oo()
+    return e === "en" ? Co() : e === "pt" ? Ro() : e === "ch" ? Ao() : e === "de" ? To() : e === "es" ? Lo() : e === "fr" ? Po() : e === "it" ? Do() : e === "jp" ? Eo() : e === "pl" ? Vo() : e === "ru" ? qo() : e === "uk" ? Mo() : Oo()
   },
   Ho = () => "Report User",
   Ko = () => "Denunciar usuário",
@@ -376,8 +376,8 @@ const Dr = () => "Alliance name reported successfully",
   Ba = () => "用户已成功封禁",
   Ca = () => "Benutzer erfolgreich gebannt",
   Ra = () => "Usuarios baneados correctamente",
-  Ta = () => "Utilisateurs bannis avec succès",
-  Aa = () => "Utenti bannati con successo",
+  Aa = () => "Utilisateurs bannis avec succès",
+  Ta = () => "Utenti bannati con successo",
   La = () => "ユーザーをBANしました。",
   Pa = () => "Użytkownicy zostali pomyślnie zbanowani",
   Da = () => "Пользователи успешно забанены",
@@ -385,7 +385,7 @@ const Dr = () => "Alliance name reported successfully",
   Va = () => "Đã cấm người dùng thành công",
   qa = (f = {}, r = {}) => {
     const e = r.locale ?? g();
-    return e === "en" ? Na() : e === "pt" ? Ua() : e === "ch" ? Ba() : e === "de" ? Ca() : e === "es" ? Ra() : e === "fr" ? Ta() : e === "it" ? Aa() : e === "jp" ? La() : e === "pl" ? Pa() : e === "ru" ? Da() : e === "uk" ? Ea() : Va()
+    return e === "en" ? Na() : e === "pt" ? Ua() : e === "ch" ? Ba() : e === "de" ? Ca() : e === "es" ? Ra() : e === "fr" ? Aa() : e === "it" ? Ta() : e === "jp" ? La() : e === "pl" ? Pa() : e === "ru" ? Da() : e === "uk" ? Ea() : Va()
   },
   Ma = () => "Users timeouted successfully",
   Oa = () => "Usuários suspensos com sucesso",
@@ -414,7 +414,7 @@ var qe = P("<span> </span> <span> </span>", 1),
   ss = P('<form method="POST"><input name="zoom" hidden=""/> <section class="flex gap-3"><!> <div class="min-w-0"><h2 class="text-xl font-semibold"><!></h2> <!></div></section> <!> <section class="mt-6"><h3 class="text-base-content/80 text-base"> </h3> <div class="mt-2 flex flex-col gap-3"></div></section> <section class="mt-6"><!></section> <section class="mt-3 flex justify-end gap-2"><button type="button" class="btn"> </button> <button class="btn btn-error"> </button></section></form>'),
   is = P('<dialog class="modal" closedby="any"><div class="modal-box max-h-[97%] max-w-xl"><form method="dialog"><button class="btn btn-sm btn-circle btn-ghost absolute top-2 right-2">✕</button></form> <!></div></dialog>');
 
-function Ts(f, r) {
+function As(f, r) {
   ar(r, !0);
   const e = [];
   let M = pr(r, "open", 15),
@@ -449,7 +449,7 @@ function Ts(f, r) {
     description: Wt()
   }, {
     value: "other",
-    label: Tr(),
+    label: Ar(),
     description: bn()
   }];
   let m = j(() => {
@@ -547,7 +547,7 @@ function Ts(f, r) {
         var Xe = s => {
           var n = ts(),
             l = a(n);
-          Ae(l, {
+          Te(l, {
             get userId() {
               return t(m).id
             },
@@ -619,7 +619,7 @@ function Ts(f, r) {
                   p = a(c);
                 Le(p, {
                   class: "text-error inline size-4"
-                }), o(c), y(N => J(c, "data-tip", N), [() => Te()]), v(u, c)
+                }), o(c), y(N => J(c, "data-tip", N), [() => Ae()]), v(u, c)
               },
               O = u => {
                 var c = ne(),
@@ -632,10 +632,10 @@ function Ts(f, r) {
               t(m).banned ? u(x) : t(m).timedOut && u(O, 1)
             })
           }
-          var T = _(C, 2),
-            V = a(T),
-            A = a(V);
-          Cr(A, {
+          var A = _(C, 2),
+            V = a(A),
+            T = a(V);
+          Cr(T, {
             class: "text-error/80 inline size-4"
           }), o(V);
           var W = _(V, 2),
@@ -658,7 +658,7 @@ function Ts(f, r) {
               t(H) && u(q)
             })
           }
-          o(W), o(T), o(n), y((u, c) => {
+          o(W), o(A), o(n), y((u, c) => {
             lr(n, 1, `font-medium ${u??""} flex flex-wrap items-center gap-1.5`), h(z, c)
           }, [() => Z(t(m).id), () => Bo()]), pe("click", w, async () => {
             await Oe(r.targets), document.activeElement.blur()
@@ -695,7 +695,7 @@ function Ts(f, r) {
             {
               let w = j(() => Z(t(i).id)),
                 z = j(() => Z(t(i).id));
-              Ae(O, {
+              Te(O, {
                 get userId() {
                   return t(i).id
                 },
@@ -721,7 +721,7 @@ function Ts(f, r) {
                 }
               })
             }
-            var T = _(O, 2);
+            var A = _(O, 2);
             {
               var V = w => {
                 {
@@ -750,18 +750,18 @@ function Ts(f, r) {
                   })
                 }
               };
-              R(T, w => {
+              R(A, w => {
                 t(i).allianceId && t(i).allianceName && w(V)
               })
             }
-            var A = _(T, 2);
+            var T = _(A, 2);
             {
               var W = w => {
                   var z = ne(),
                     D = a(z);
                   Le(D, {
                     class: "text-error inline size-3.5"
-                  }), o(z), y(q => J(z, "data-tip", q), [() => Te()]), v(w, z)
+                  }), o(z), y(q => J(z, "data-tip", q), [() => Ae()]), v(w, z)
                 },
                 G = w => {
                   var z = ne(),
@@ -770,7 +770,7 @@ function Ts(f, r) {
                     class: "text-warning inline size-3.5"
                   }), o(z), y(q => J(z, "data-tip", q), [() => De()]), v(w, z)
                 };
-              R(A, w => {
+              R(T, w => {
                 t(i).banned ? w(W) : t(i).timedOut && w(G, 1)
               })
             }
@@ -798,7 +798,7 @@ function Ts(f, r) {
           O = a(x, !0);
         o(x), o(U), o(l), y(() => {
           J(k, "aria-label", t(n).label), i !== (i = t(n).value) && (k.value = (k.__value = t(n).value) ?? ""), h(C, t(n).label), h(O, t(n).description)
-        }), _r(e, [], k, () => (t(n).value, t(X)), T => B(X, T)), v(s, l)
+        }), _r(e, [], k, () => (t(n).value, t(X)), A => B(X, A)), v(s, l)
       }), o(be), o(ce);
       var _e = _(ce, 2),
         rr = a(_e);
@@ -838,7 +838,7 @@ function Ts(f, r) {
         nr = a(de, !0);
       o(de), o(xe), o(S), dr(S, s => B(ae, s), () => t(ae)), y((s, n, l) => {
         cr($, r.zoom), h(er, `${s??""}:`), h(tr, n), de.disabled = t(E), h(nr, l)
-      }, [() => Ar(), () => Rr(), () => Rn()]), ze("submit", S, async s => {
+      }, [() => Tr(), () => Rr(), () => Rn()]), ze("submit", S, async s => {
         var U;
         if (s.preventDefault(), t(E) || !t(se)()) return;
         const n = new FormData(t(ae)),
@@ -858,7 +858,7 @@ function Ts(f, r) {
             if (!r.viewport) throw new Error(L());
             n.append("reportedUserId", String(i[0])), n.append("latitude", r.latLon[0].toString()), n.append("longitude", r.latLon[1].toString()), n.append("viewportNorth", r.viewport.north.toString()), n.append("viewportSouth", r.viewport.south.toString()), n.append("viewportWest", r.viewport.west.toString()), n.append("viewportEast", r.viewport.east.toString()), n.append("viewportWidth", r.viewport.width.toString()), n.append("viewportHeight", r.viewport.height.toString());
             const d = async () => {
-              var T, V;
+              var A, V;
               const C = await Ue.getHeaders(""),
                 x = await fetch(`${fr}/report-user`, {
                   method: "POST",
@@ -866,23 +866,23 @@ function Ts(f, r) {
                   credentials: "include",
                   headers: C
                 });
-              if (((T = x.headers.get("cf-mitigated")) == null ? void 0 : T.toLowerCase()) === "challenge") {
+              if (((A = x.headers.get("cf-mitigated")) == null ? void 0 : A.toLowerCase()) === "challenge") {
                 if (Ue.setCfLikelyAutomated(!0), !await mr()) throw new Error(Be());
                 await d();
                 return
               }
               if (x.status === 200 || x.status === 409 || x.status === 403) {
-                const A = await x.json().catch(() => ({}));
-                if (A.error === "challenge-required" && A.tier) {
-                  if (!await vr(A.tier)) throw new Error(Be());
+                const T = await x.json().catch(() => ({}));
+                if (T.error === "challenge-required" && T.tier) {
+                  if (!await vr(T.tier)) throw new Error(Be());
                   await d();
                   return
                 }
-                if (x.status === 403 && !A.reason) {
+                if (x.status === 403 && !T.reason) {
                   b.error(L());
                   return
                 }
-                switch (A.reason) {
+                switch (T.reason) {
                   case "area_cooldown":
                     b.warning(oo());
                     break;
@@ -890,7 +890,7 @@ function Ts(f, r) {
                     b.warning(ma());
                     break;
                   case "min_pixels_painted":
-                    b.warning(Tt());
+                    b.warning(At());
                     break;
                   case "max_report_per_hour":
                     b.warning(xt());
@@ -945,5 +945,5 @@ function Ts(f, r) {
 }
 or(["click"]);
 export {
-  Ts as R, L as a, Ee as b, ta as r, Ve as t
+  As as R, L as a, Ee as b, ta as r, Ve as t
 };

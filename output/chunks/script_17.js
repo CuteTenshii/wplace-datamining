@@ -4119,6 +4119,7 @@ class Lk {
   }
   async joinAlliance(t) {
     switch ((await this.request(`/alliance/join/${t}`, {
+        method: "POST",
         credentials: "include"
       })).status) {
       case i.OK:
@@ -6599,5 +6600,5 @@ class _T {
 }
 const X = new lT;
 export {
-  Dk as $, kT as A, ET as B, ht as C, $e as D, TT as E, ak as F, Ge as G, jk as H, qT as I, R as J, GT as K, VT as L, OT as M, vT as N, N as O, xT as P, yT as Q, wT as R, PT as S, B as T, bT as U, Mn as V, MT as W, xk as X, kt as Y, UT as Z, Ps as _, ST as a, FT as a0, $T as a1, IT as a2, RT as a3, DT as a4, nv as a5, ib as a6, CT as a7, NT as a8, AT as a9, BT as aa, LT as ab, Jf as ac, C as b, jT as c, je as d, s as e, La as f, Fe as g, ic as h, Tf as i, yo as j, xu as k, X as l, bt as m, tg as n, Me as o, KT as p, Vu as q, Lf as r, zT as s, Yk as t, V as u, tt as v, wc as w, Ja as x, Do as y, mm as z
+  Ps as $, mm as A, kT as B, ET as C, ht as D, $e as E, TT as F, ak as G, Ge as H, jk as I, qT as J, R as K, GT as L, VT as M, OT as N, vT as O, xT as P, N as Q, yT as R, PT as S, B as T, wT as U, bT as V, MT as W, Mn as X, xk as Y, kt as Z, UT as _, ST as a, Dk as a0, FT as a1, $T as a2, IT as a3, RT as a4, DT as a5, nv as a6, ib as a7, CT as a8, NT as a9, AT as aa, BT as ab, LT as ac, Jf as ad, C as b, jT as c, je as d, i as e, s as f, Fe as g, La as h, Tf as i, ic as j, yo as k, xu as l, X as m, tg as n, bt as o, Me as p, KT as q, Vu as r, zT as s, Yk as t, V as u, tt as v, Lf as w, wc as x, Ja as y, Do as z
 };
