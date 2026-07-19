@@ -104,10 +104,10 @@ import {
   g as Yc,
   c as FC,
   d as BC
-} from "../chunks/a1inmv-3.js";
+} from "../chunks/4OF7heri.js";
 import {
   p as Za
-} from "../chunks/DFPZjs4K.js";
+} from "../chunks/D0IggfIN.js";
 import {
   P as d5,
   e as Kp,
@@ -125,7 +125,7 @@ import {
   P as qC,
   a as UC,
   c as VC
-} from "../chunks/v_lqlnaX.js";
+} from "../chunks/C3erfLXv.js";
 import {
   Y as GC,
   Z as ZC,
@@ -165,7 +165,7 @@ import {
   g as eI,
   f as tI,
   h as rI
-} from "../chunks/pwt92evV.js";
+} from "../chunks/COxHg5xb.js";
 import {
   P as Wa
 } from "../chunks/BXeqT4ik.js";
@@ -510,7 +510,7 @@ import {
 } from "../chunks/Cme64dX3.js";
 import {
   r as Lv
-} from "../chunks/DSF1jVZ6.js";
+} from "../chunks/B5Dbk0mr.js";
 import {
   F as dM
 } from "../chunks/CGV1nAsF.js";
@@ -47606,7 +47606,9 @@ void main() {
 }
 `,
   Vgt = `
-precision mediump float;
+// The repeated image coordinate needs enough precision to address every annotation pixel.
+// mediump produces visible sampling artifacts on GPUs that implement it with a 10-bit mantissa.
+precision highp float;
 uniform sampler2D u_mask;
 uniform sampler2D u_image;
 uniform float u_canvas_size;
@@ -47638,7 +47640,9 @@ void main() {
 }
 `,
   Zgt = `#version 300 es
-precision mediump float;
+// The repeated image coordinate needs enough precision to address every annotation pixel.
+// mediump produces visible sampling artifacts on GPUs that implement it with a 10-bit mantissa.
+precision highp float;
 uniform sampler2D u_mask;
 uniform sampler2D u_image;
 uniform float u_canvas_size;
@@ -53982,7 +53986,7 @@ async function o1t(a, n) {
   }
   return Gm.fromJson(BT(e), n)
 }
-const a1t = globalThis.__sveltekit_afz6b4.env,
+const a1t = globalThis.__sveltekit_lcgdsk.env,
   ry = a1t.PUBLIC_GOOGLE_DRIVE_CLIENT_ID ?? "",
   q2 = "https://accounts.google.com/gsi/client",
   s1t = "https://www.googleapis.com/auth/drive.appdata",
