@@ -1,122 +1,40 @@
 import "./Bzak7iHL.js";
 import {
-  l as G,
-  p as I,
-  b as J,
-  t as x,
-  i as k,
-  o as K,
-  h as B,
-  a as d,
-  d as e,
-  s as f,
-  c as u,
-  e as L,
-  r as o
+  a as s,
+  k as e
 } from "./BKnGt6Ki.js";
 import {
-  s as l
-} from "./DbGfTWgr.js";
-import {
-  i as T
-} from "./C31cMBCe.js";
-import {
-  a as M
+  b as q
 } from "./Czze0tKx.js";
 import {
-  p as g
+  r as a
 } from "./Bu-IUIdW.js";
-import {
-  D as N
-} from "./CAZ79jFA.js";
-import "./BhCkpOlh.js";
-import {
-  c as O
-} from "./D6_ahSxh.js";
-import {
-  c as Q
-} from "./BZcJYfQJ.js";
-var R = u('<h3 class="text-xl font-bold"> </h3>'),
-  S = u('<p class="text-base-content/80 mt-1 text-sm"> </p>'),
-  U = u('<span class="loading loading-spinner center-absolute absolute"></span>'),
-  V = u('<div><p class="text-lg"> </p> <!> <div class="mt-6 flex justify-end gap-3 pb-2"><form method="dialog"><button class="btn btn-ghost hover:bg-base-content/10"> </button></form> <button> <!></button></div></div>');
+var p = new Set(["$$slots", "$$events", "$$legacy"]),
+  T = e('<svg><path d="M240-640h360v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85h-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640Zm0 480h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM240-160v-400 400Z"></path></svg>');
 
-function nt(j, t) {
-  I(t, !0);
-  let v = g(t, "open", 15),
-    h = g(t, "type", 3, "confirmation"),
-    H = g(t, "buttonText", 19, () => Q()),
-    m = L(!1);
-  N(j, {
-    dialogClass: "!bg-black/80",
-    modalBoxClass: "max-w-md max-sm:!w-11/12 max-sm:!h-auto max-sm:!max-w-md max-sm:!max-h-[85vh] max-sm:!rounded-xl",
-    hasCloseButton: !1,
-    isDynamicHeight: !0,
-    get open() {
-      return v()
-    },
-    set open(r) {
-      v(r)
-    },
-    header: r => {
-      var c = R(),
-        s = e(c, !0);
-      o(c), x(() => l(s, t.title)), d(r, c)
-    },
-    children: (r, c) => {
-      var s = V(),
-        p = e(s),
-        P = e(p, !0);
-      o(p);
-      var _ = f(p, 2);
-      {
-        var q = a => {
-          var i = S(),
-            F = e(i, !0);
-          o(i), x(() => l(F, t.subDescription)), d(a, i)
-        };
-        T(_, a => {
-          t.subDescription && a(q)
-        })
-      }
-      var y = f(_, 2),
-        b = e(y),
-        w = e(b),
-        z = e(w, !0);
-      o(w), o(b);
-      var n = f(b, 2);
-      let C;
-      var D = e(n),
-        A = f(D);
-      {
-        var E = a => {
-          var i = U();
-          d(a, i)
-        };
-        T(A, a => {
-          k(m) && a(E)
-        })
-      }
-      o(n), o(y), o(s), x(a => {
-        l(P, t.description), l(z, a), C = M(n, 1, "btn min-w-32 px-6", null, C, {
-          "btn-error": h() === "warning",
-          "btn-primary": h() === "confirmation"
-        }), n.disabled = k(m), l(D, `${H()??""} `)
-      }, [() => O()]), K("click", n, async () => {
-        try {
-          B(m, !0), v(await t.onConfirm())
-        } finally {
-          B(m, !1)
-        }
-      }), d(r, s)
-    },
-    $$slots: {
-      header: !0,
-      default: !0
-    }
-  }), J()
+function g(v, r) {
+  let o = a(r, p);
+  var t = T();
+  q(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...o
+  })), s(v, t)
 }
-G(["click"]);
+var l = new Set(["$$slots", "$$events", "$$legacy"]),
+  n = e('<svg><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"></path></svg>');
+
+function w(v, r) {
+  let o = a(r, l);
+  var t = n();
+  q(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...o
+  })), s(v, t)
+}
 export {
-  nt as C
+  w as L, g as a
 };
