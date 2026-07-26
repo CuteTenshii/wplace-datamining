@@ -279,10 +279,10 @@ function ue(t, e, n = JSON.stringify) {
   } catch {}
 }
 var ve;
-const U = ((ve = globalThis.__sveltekit_1f6en3l) == null ? void 0 : ve.base) ?? "";
+const U = ((ve = globalThis.__sveltekit_kuodo0) == null ? void 0 : ve.base) ?? "";
 var ye;
-const dn = ((ye = globalThis.__sveltekit_1f6en3l) == null ? void 0 : ye.assets) ?? U ?? "",
-  hn = "1784928106219",
+const dn = ((ye = globalThis.__sveltekit_kuodo0) == null ? void 0 : ye.assets) ?? U ?? "",
+  hn = "1785031108713",
   xe = "sveltekit:snapshot",
   Le = "sveltekit:scroll",
   $t = "sveltekit:states",
@@ -639,13 +639,13 @@ const Ut = new Set,
   _e = new Map;
 async function zn(t, e, n) {
   var i, o, s, c;
-  if (globalThis.__sveltekit_1f6en3l.data) {
+  if (globalThis.__sveltekit_kuodo0.data) {
     const {
       q: l = {},
       p: f = {},
       l: h = {},
       f: _ = {}
-    } = globalThis.__sveltekit_1f6en3l.data;
+    } = globalThis.__sveltekit_kuodo0.data;
     for (const u in l) l[u];
     for (const u in h) h[u];
     for (const u in _) _[u];

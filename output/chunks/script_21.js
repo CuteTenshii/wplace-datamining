@@ -1,7 +1,7 @@
 import {
   s as t,
   p as r
-} from "./BZdzQ-C6.js";
+} from "./ChOkHhqq.js";
 const a = {
   get data() {
     return r.data

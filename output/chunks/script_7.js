@@ -1,9 +1,9 @@
 import {
-  g as e
+  g as t
 } from "./BhCkpOlh.js";
 
-function t() {
-  return e()
+function e() {
+  return t()
 }
 
 function u(r) {
@@ -21,13 +21,9 @@ function u(r) {
   }
 }
 
-function s() {
-  return `/terms/return${t()==="pt"?"/pt":""}`
-}
-
 function a() {
-  return `/terms/terms-of-service${t()==="pt"?"/pt":""}`
+  return `/terms/return${e()==="pt"?"/pt":""}`
 }
 export {
-  u as b, t as g, s as r, a as t
+  u as b, e as g, a as r
 };
