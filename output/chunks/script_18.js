@@ -1,14 +1,15 @@
 const li = "https://maps.wplace.live",
   di = "8d582454-e5ec-4314-b1c2-89e460ac1d28",
   Mt = "svHwYf228UcW8vPuQ575",
-  fi = "pk_live_51RMHjBAtY4KIdFGnnJ9ZHjvgP68opqg7wlT7fA1HG3p91vfhVQyn6je810y5Cz3ggTycnJtFRkwHsYy1qJEyKRFW00x1i0iWMl",
-  mi = "true",
-  pi = "0x4AAAAAABpHqZ-6i7uL0nmG",
-  hi = "https://backend.wplace.live/files",
-  _i = "https://backend.wplace.live",
+  fi = "JFFRUM6NQ3-PJS0AAFC2_W",
+  mi = "pk_live_51RMHjBAtY4KIdFGnnJ9ZHjvgP68opqg7wlT7fA1HG3p91vfhVQyn6je810y5Cz3ggTycnJtFRkwHsYy1qJEyKRFW00x1i0iWMl",
+  pi = "true",
+  hi = "0x4AAAAAABpHqZ-6i7uL0nmG",
+  _i = "https://backend.wplace.live/files",
+  Ei = "https://backend.wplace.live",
   Ft = /; wv\)|FBAN|FBAV|Instagram|BytedanceWebview|musical_ly|Line\/|Snapchat|Twitter|MicroMessenger/i;
 
-function Ei() {
+function gi() {
   return It() ? !1 : Ft.test(navigator.userAgent)
 }
 
@@ -171,56 +172,56 @@ const Dt = `
         getNextSeed: h
       } = c,
       l = (y, m, L, E) => {
-        const A = (y - 1) / m * (L || 1) || 0;
-        return E ? A : Math.floor(A)
+        const w = (y - 1) / m * (L || 1) || 0;
+        return E ? w : Math.floor(w)
       },
-      p = (y, m, L, E, A) => {
+      p = (y, m, L, E, w) => {
         const {
           width: M,
           height: U
-        } = L, x = y.createRadialGradient(l(A(), m, M), l(A(), m, U), l(A(), m, M), l(A(), m, M), l(A(), m, U), l(A(), m, M));
-        x.addColorStop(0, E[l(A(), m, E.length)]), x.addColorStop(1, E[l(A(), m, E.length)]), y.fillStyle = x
+        } = L, x = y.createRadialGradient(l(w(), m, M), l(w(), m, U), l(w(), m, M), l(w(), m, M), l(w(), m, U), l(w(), m, M));
+        x.addColorStop(0, E[l(w(), m, E.length)]), x.addColorStop(1, E[l(w(), m, E.length)]), y.fillStyle = x
       },
-      T = ["#FF6633", "#FFB399", "#FF33FF", "#FFFF99", "#00B3E6", "#E6B333", "#3366E6", "#999966", "#99FF99", "#B34D4D", "#80B300", "#809900", "#E6B3B3", "#6680B3", "#66991A", "#FF99E6", "#CCFF1A", "#FF1A66", "#E6331A", "#33FFCC", "#66994D", "#B366CC", "#4D8000", "#B33300", "#CC80CC", "#66664D", "#991AFF", "#E666FF", "#4DB3FF", "#1AB399", "#E666B3", "#33991A", "#CC9999", "#B3B31A", "#00E680", "#4D8066", "#809980", "#E6FF80", "#1AFF33", "#999933", "#FF3380", "#CCCC00", "#66E64D", "#4D80CC", "#9900B3", "#E64D66", "#4DB380", "#FF4D4D", "#99E6E6", "#6666FF"],
-      w = (y, m, L, E) => {
+      A = ["#FF6633", "#FFB399", "#FF33FF", "#FFFF99", "#00B3E6", "#E6B333", "#3366E6", "#999966", "#99FF99", "#B34D4D", "#80B300", "#809900", "#E6B3B3", "#6680B3", "#66991A", "#FF99E6", "#CCFF1A", "#FF1A66", "#E6331A", "#33FFCC", "#66994D", "#B366CC", "#4D8000", "#B33300", "#CC80CC", "#66664D", "#991AFF", "#E666FF", "#4DB3FF", "#1AB399", "#E666B3", "#33991A", "#CC9999", "#B3B31A", "#00E680", "#4D8066", "#809980", "#E6FF80", "#1AFF33", "#999933", "#FF3380", "#CCCC00", "#66E64D", "#4D80CC", "#9900B3", "#E64D66", "#4DB380", "#FF4D4D", "#99E6E6", "#6666FF"],
+      T = (y, m, L, E) => {
         const {
-          width: A,
+          width: w,
           height: M
         } = L, U = 2.99;
-        y.font = `${M/U}px ${o.replace(/!important/gm,"")}`, y.strokeText("👾A", l(E(), m, A), l(E(), m, M), l(E(), m, A))
+        y.font = `${M/U}px ${o.replace(/!important/gm,"")}`, y.strokeText("👾A", l(E(), m, w), l(E(), m, M), l(E(), m, w))
       },
       S = (y, m, L, E) => {
         const {
-          width: A,
+          width: w,
           height: M
         } = L;
-        y.beginPath(), y.arc(l(E(), m, A), l(E(), m, M), l(E(), m, Math.min(A, M)), l(E(), m, 2 * Math.PI, !0), l(E(), m, 2 * Math.PI, !0)), y.stroke()
+        y.beginPath(), y.arc(l(E(), m, w), l(E(), m, M), l(E(), m, Math.min(w, M)), l(E(), m, 2 * Math.PI, !0), l(E(), m, 2 * Math.PI, !0)), y.stroke()
       },
       _ = (y, m, L, E) => {
         const {
-          width: A,
+          width: w,
           height: M
         } = L;
-        y.beginPath(), y.moveTo(l(E(), m, A), l(E(), m, M)), y.bezierCurveTo(l(E(), m, A), l(E(), m, M), l(E(), m, A), l(E(), m, M), l(E(), m, A), l(E(), m, M)), y.stroke()
+        y.beginPath(), y.moveTo(l(E(), m, w), l(E(), m, M)), y.bezierCurveTo(l(E(), m, w), l(E(), m, M), l(E(), m, w), l(E(), m, M), l(E(), m, w), l(E(), m, M)), y.stroke()
       },
       g = (y, m, L, E) => {
         const {
-          width: A,
+          width: w,
           height: M
         } = L;
-        y.beginPath(), y.moveTo(l(E(), m, A), l(E(), m, M)), y.quadraticCurveTo(l(E(), m, A), l(E(), m, M), l(E(), m, A), l(E(), m, M)), y.stroke()
+        y.beginPath(), y.moveTo(l(E(), m, w), l(E(), m, M)), y.quadraticCurveTo(l(E(), m, w), l(E(), m, M), l(E(), m, w), l(E(), m, M)), y.stroke()
       },
       b = (y, m, L, E) => {
         if (!("ellipse" in y)) return;
         const {
-          width: A,
+          width: w,
           height: M
         } = L;
-        y.beginPath(), y.ellipse(l(E(), m, A), l(E(), m, M), l(E(), m, Math.floor(A / 2)), l(E(), m, Math.floor(M / 2)), l(E(), m, 2 * Math.PI, !0), l(E(), m, 2 * Math.PI, !0), l(E(), m, 2 * Math.PI, !0)), y.stroke()
+        y.beginPath(), y.ellipse(l(E(), m, w), l(E(), m, M), l(E(), m, Math.floor(w / 2)), l(E(), m, Math.floor(M / 2)), l(E(), m, 2 * Math.PI, !0), l(E(), m, 2 * Math.PI, !0), l(E(), m, 2 * Math.PI, !0)), y.stroke()
       },
       R = [S, _, g];
-    Pt() !== "WebKit" && R.push(b), n && R.push(w), [...Array(a)].forEach(y => {
-      p(t, d, i, T, h), t.shadowBlur = l(h(), d, r, !0), t.shadowColor = T[l(h(), d, T.length)];
+    Pt() !== "WebKit" && R.push(b), n && R.push(T), [...Array(a)].forEach(y => {
+      p(t, d, i, A, h), t.shadowBlur = l(h(), d, r, !0), t.shadowColor = A[l(h(), d, A.length)];
       const m = R[l(h(), d, R.length)];
       m(t, d, i, h), t.fill()
     })
@@ -377,11 +378,11 @@ async function $t() {
         const g = B(() => _.getSupportedExtensions());
         return g || []
       },
-      T = {
+      A = {
         ...u(r),
         ...l(r)
       },
-      w = {
+      T = {
         ...u(s),
         ...l(s)
       };
@@ -392,8 +393,8 @@ async function $t() {
       extensionParameters: h(r),
       extensionParameters2: h(s),
       parameters: {
+        ...A,
         ...T,
-        ...w,
         ...f("VERTEX_SHADER", d(r, "VERTEX_SHADER")),
         ...f("FRAGMENT_SHADER", d(r, "FRAGMENT_SHADER"))
       }
@@ -442,11 +443,11 @@ const Jt = "client_timeout",
   Qt = "network_abort",
   ae = "csp_block",
   se = "invalid_endpoint",
-  Te = "handle_agent_data",
+  Ae = "handle_agent_data",
   Y = "script_load_fail",
   qt = "bad_response_format",
-  we = "api_key_missing",
-  Ae = "api_key_invalid",
+  Te = "api_key_missing",
+  we = "api_key_invalid",
   en = "cache_misconfigured",
   be = "endpoints_misconfigured",
   tn = "wrong_worker_option",
@@ -459,12 +460,12 @@ const Jt = "client_timeout",
     [Qt]: "Network request aborted",
     [ae]: "Blocked by CSP",
     [se]: 'The provided endpoint in "endpoints" parameter is not a valid URL',
-    [Te]: "Handle on demand agent data error",
+    [Ae]: "Handle on demand agent data error",
     [Y]: "Failed to load the JS script of the agent",
     [J]: "9319",
     [qt]: "Can't parse the backend response. Make sure the proper endpoints are used.",
-    [we]: "The `apiKey` option is not provided",
-    [Ae]: "The `apiKey` option is not a string",
+    [Te]: "The `apiKey` option is not provided",
+    [we]: "The `apiKey` option is not a string",
     [en]: "The `cache` option is misconfigured",
     [be]: "The `endpoints` option is misconfigured",
     [tn]: "Wrong `worker` option, it should be a Worker instance",
@@ -522,9 +523,9 @@ function rn(e) {
                 Vn(i, ut(String.fromCharCode(S))), r += 4;
                 continue
               }
-              const w = Gn[a[r]];
-              if (w) {
-                We(i, w);
+              const T = Gn[a[r]];
+              if (T) {
+                We(i, T);
                 continue
               }
               return p()
@@ -532,32 +533,32 @@ function rn(e) {
             if (a[r] === void 0) return p();
             We(i, a[r])
           }
-          return r++, me((function(w) {
-            return w.arr.subarray(0, w.len)
+          return r++, me((function(T) {
+            return T.arr.subarray(0, T.len)
           })(i))
         },
         f = () => {
-          const w = r;
+          const T = r;
           for (; a[r] === In || a[r] === ve || a[r] === vn || a[r] === Mn || ke(a[r]);) r++;
-          return Number(me(a.subarray(w, r)))
+          return Number(me(a.subarray(T, r)))
         },
         u = () => {
-          const w = [];
+          const T = [];
           for (r++;;) {
             if (h(), a[r] === Pn) {
               r++;
               break
             }
-            if (w.length) {
+            if (T.length) {
               if (a[r] !== Ue) return p();
               r++
             }
-            w.push(s())
+            T.push(s())
           }
-          return w
+          return T
         },
         c = () => {
-          const w = {};
+          const T = {};
           let S = !0;
           for (r++;;) {
             if (h(), a[r] === Bn) {
@@ -570,29 +571,29 @@ function rn(e) {
             }
             if (a[r] !== pe) return p();
             const _ = d();
-            if (h(), a[r] !== An) return p();
-            r++, Object.defineProperty(w, _, {
+            if (h(), a[r] !== wn) return p();
+            r++, Object.defineProperty(T, _, {
               value: s(),
               configurable: !0,
               enumerable: !0,
               writable: !0
             }), S = !1
           }
-          return w
+          return T
         },
         h = () => {
           for (; a[r] === bn || a[r] === Ln || a[r] === Rn || a[r] === Sn;) r++
         },
-        l = w => {
-          for (let S = 0; S < w.length; S++)
-            if (a[r + S] !== w[S]) return !1;
+        l = T => {
+          for (let S = 0; S < T.length; S++)
+            if (a[r + S] !== T[S]) return !1;
           return !0
         },
         p = () => {
           throw new SyntaxError("Unexpected " + (r < a.length ? `byte ${r}` : "end"))
         },
-        T = s();
-      return h(), a[r] !== void 0 && p(), T
+        A = s();
+      return h(), a[r] !== void 0 && p(), A
     })(n)
   } catch {}
   return null
@@ -613,14 +614,14 @@ function an(e, t) {
         abort: h
       } = d, l = {
         failedAttempts: []
-      }, [p, T] = (function(_, g, b, R) {
+      }, [p, A] = (function(_, g, b, R) {
         const v = (function(L) {
             const E = [...L];
             return {
               current: () => E[0],
               postpone() {
-                const A = E.shift();
-                A !== void 0 && E.push(A)
+                const w = E.shift();
+                w !== void 0 && E.push(w)
               },
               exclude() {
                 E.shift()
@@ -628,12 +629,12 @@ function an(e, t) {
             }
           })(_),
           y = (function(L, E) {
-            let A = 0;
-            return () => Math.random() * Math.min(E, L * Math.pow(2, A++))
+            let w = 0;
+            return () => Math.random() * Math.min(E, L * Math.pow(2, w++))
           })(b, R),
           m = new Set;
-        return [v.current(), (L, E, A) => {
-          const M = g(L, E, A);
+        return [v.current(), (L, E, w) => {
+          const M = g(L, E, w);
           M.action === "exclude" ? v.exclude() : v.postpone();
           const U = () => Math.max(0, L.getTime() + y() - Date.now());
           let x;
@@ -641,16 +642,16 @@ function an(e, t) {
           const $ = v.current();
           return x === 0 && $ && Date.now() - L.getTime() < 50 && (m.has($) ? x = U() : m.add($)), $ === void 0 ? void 0 : [$, x]
         }]
-      })(i, s, u, c), w = (S = [h == null ? void 0 : h.then(_ => l.aborted = {
+      })(i, s, u, c), T = (S = [h == null ? void 0 : h.then(_ => l.aborted = {
         resolve: !0,
         value: _
       }, _ => l.aborted = {
         resolve: !1,
         error: _
-      }), Wn(p, f, a, r, T, l, h)], Promise.race(S.filter(_ => !!_))).then(() => l);
+      }), Wn(p, f, a, r, A, l, h)], Promise.race(S.filter(_ => !!_))).then(() => l);
       var S;
       return {
-        then: w.then.bind(w),
+        then: T.then.bind(T),
         current: l
       }
     })(e, async i => {
@@ -780,48 +781,48 @@ function pn(e = En) {
     const {
       picked: i,
       rest: a
-    } = (function(p, T) {
-      const w = {},
+    } = (function(p, A) {
+      const T = {},
         S = {};
-      for (const [_, g] of Object.entries(p)) T.includes(_) ? w[_] = g : S[_] = g;
+      for (const [_, g] of Object.entries(p)) A.includes(_) ? T[_] = g : S[_] = g;
       return {
-        picked: w,
+        picked: T,
         rest: S
       }
     })(t, ["apiKey"]), {
       apiKey: r
     } = i;
-    if (!r) throw new D(W[we], we);
-    if (typeof r != "string") throw new D(W[Ae], Ae);
-    const s = (function(p, T) {
-      return Object.prototype.hasOwnProperty.call(p, T)
+    if (!r) throw new D(W[Te], Te);
+    if (typeof r != "string") throw new D(W[we], we);
+    const s = (function(p, A) {
+      return Object.prototype.hasOwnProperty.call(p, A)
     })(d = t, f = "endpoints") ? d[f] : void 0;
     var d, f;
-    const u = (function(p, T, w) {
-        const S = p.prepareScriptEndpoints(T, "https://fpnpmcdn.net/");
+    const u = (function(p, A, T) {
+        const S = p.prepareScriptEndpoints(A, "https://fpnpmcdn.net/");
         if (S === null) throw new D(W[be], be);
         return S.map(_ => (function(g, b) {
           const R = new URL(g, window.location.href),
             v = R.pathname,
             y = "4";
           return R.pathname = `${v}${v.endsWith("/")?"":"/"}v${y}/${encodeURIComponent(b)}`, R.search = `?ci=jsl/${encodeURIComponent(hn)}`, R.href
-        })(_, w))
+        })(_, T))
       })(e, s, r),
       [c, h] = (function() {
         const p = [],
-          T = () => {
+          A = () => {
             p.push({
               time: new Date,
               state: document.visibilityState
             })
           },
-          w = (S = document, _ = "visibilitychange", g = T, S.addEventListener(_, g, b), () => S.removeEventListener(_, g, b));
+          T = (S = document, _ = "visibilitychange", g = A, S.addEventListener(_, g, b), () => S.removeEventListener(_, g, b));
         var S, _, g, b;
-        return T(), [p, w]
+        return A(), [p, T]
       })(),
       l = (async function() {
         try {
-          const [p, T] = await an(u, S => (function(_, g) {
+          const [p, A] = await an(u, S => (function(_, g) {
             return _.withCspViolationWatch(g, async () => {
               if ((function(b) {
                   if (URL.prototype) try {
@@ -842,17 +843,17 @@ function pn(e = En) {
               if (typeof(b == null ? void 0 : b.start) != "function") throw new D(W[J], J);
               return b
             })
-          })(e, S)), w = await p.start({
+          })(e, S)), T = await p.start({
             ...a,
             ldi: {
-              attempts: T,
+              attempts: A,
               visibilityStates: c
             }
           });
-          return n = w, w
+          return n = T, T
         } catch (p) {
-          throw o = (function(T) {
-            return T instanceof D && T.code === J ? new D(W[Y], Y) : T
+          throw o = (function(A) {
+            return A instanceof D && A.code === J ? new D(W[Y], Y) : A
           })(p), o
         } finally {
           h()
@@ -983,7 +984,7 @@ function ft(e, t) {
     if ((function(o) {
         if (!(o instanceof DOMException)) return !1;
         const i = o.message;
-        return yn.test(i) || Tn.test(i) || wn.test(i)
+        return yn.test(i) || An.test(i) || Tn.test(i)
       })(n)) return t;
     throw n
   }
@@ -994,8 +995,8 @@ function te(e) {
   return dn(e) ? e : [e]
 }
 const yn = /The document is sandboxed and lacks the 'allow-same-origin' flag/,
-  Tn = /The operation is insecure/,
-  wn = /Forbidden in a sandboxed document without the 'allow-same-origin' flag/;
+  An = /The operation is insecure/,
+  Tn = /Forbidden in a sandboxed document without the 'allow-same-origin' flag/;
 
 function Se(e) {
   return !!e && e.__type__ === lt
@@ -1006,7 +1007,7 @@ function ne(e) {
 }
 const pe = 34,
   Ue = 44,
-  An = 58,
+  wn = 58,
   bn = 32,
   Sn = 9,
   Rn = 13,
@@ -1163,7 +1164,7 @@ const Un = function(e, t = {}) {
       result: {
         error: f instanceof Error ? f : new Error(String(f))
       }
-    })), new D(W[Te], Te)
+    })), new D(W[Ae], Ae)
   }
   var i, a, r, s, d
 };
@@ -1609,14 +1610,14 @@ function Eo() {
 }
 
 function go() {
-  return wo() ? -4 : yo()
+  return To() ? -4 : yo()
 }
 
 function yo() {
   const e = window,
     t = e.OfflineAudioContext || e.webkitOfflineAudioContext;
   if (!t) return -2;
-  if (To()) return -1;
+  if (Ao()) return -1;
   const n = 4500,
     o = 5e3,
     i = new t(1, o, 44100),
@@ -1624,22 +1625,22 @@ function yo() {
   a.type = "triangle", a.frequency.value = 1e4;
   const r = i.createDynamicsCompressor();
   r.threshold.value = -50, r.knee.value = 40, r.ratio.value = 12, r.attack.value = 0, r.release.value = .25, a.connect(r), r.connect(i.destination), a.start(0);
-  const [s, d] = Ao(i), f = K(s.then(u => bo(u.getChannelData(0).subarray(n)), u => {
+  const [s, d] = wo(i), f = K(s.then(u => bo(u.getChannelData(0).subarray(n)), u => {
     if (u.name === "timeout" || u.name === "suspended") return -3;
     throw u
   }));
   return () => (d(), f)
 }
 
-function To() {
+function Ao() {
   return k() && !Ie() && !mo()
 }
 
-function wo() {
+function To() {
   return k() && ee() && Q() || z() && Eo() && lo()
 }
 
-function Ao(e) {
+function wo(e) {
   let a = () => {};
   return [new Promise((s, d) => {
     let f = !1,
@@ -1691,8 +1692,8 @@ async function yt(e, t, n = 50) {
         const c = () => {
             u = !0, d()
           },
-          h = T => {
-            u = !0, f(T)
+          h = A => {
+            u = !0, f(A)
           };
         s.onload = c, s.onerror = h;
         const {
@@ -1700,8 +1701,8 @@ async function yt(e, t, n = 50) {
         } = s;
         l.setProperty("display", "block", "important"), l.position = "absolute", l.top = "0", l.left = "0", l.visibility = "hidden", t && "srcdoc" in s ? s.srcdoc = t : s.src = "about:blank", r.body.appendChild(s);
         const p = () => {
-          var T, w;
-          u || (((w = (T = s.contentWindow) === null || T === void 0 ? void 0 : T.document) === null || w === void 0 ? void 0 : w.readyState) === "complete" ? c() : setTimeout(p, 10))
+          var A, T;
+          u || (((T = (A = s.contentWindow) === null || A === void 0 ? void 0 : A.document) === null || T === void 0 ? void 0 : T.readyState) === "complete" ? c() : setTimeout(p, 10))
         };
         p()
       }); !(!((i = (o = s.contentWindow) === null || o === void 0 ? void 0 : o.document) === null || i === void 0) && i.body);) await ue(n);
@@ -1762,18 +1763,18 @@ function Mo() {
       r = l => {
         const p = t.createElement("span"),
           {
-            style: T
+            style: A
           } = p;
-        return T.position = "absolute", T.top = "0", T.left = "0", T.fontFamily = l, p.textContent = Co, o.appendChild(p), p
+        return A.position = "absolute", A.top = "0", A.left = "0", A.fontFamily = l, p.textContent = Co, o.appendChild(p), p
       },
       s = (l, p) => r(`'${l}',${p}`),
       d = () => Z.map(r),
       f = () => {
         const l = {};
-        for (const p of tt) l[p] = Z.map(T => s(p, T));
+        for (const p of tt) l[p] = Z.map(A => s(p, A));
         return l
       },
-      u = l => Z.some((p, T) => l[T].offsetWidth !== i[p] || l[T].offsetHeight !== a[p]),
+      u = l => Z.some((p, A) => l[A].offsetWidth !== i[p] || l[A].offsetHeight !== a[p]),
       c = d(),
       h = f();
     n.appendChild(o);
@@ -2186,7 +2187,7 @@ function rt(e) {
 }
 const yr = 100;
 
-function Tr() {
+function Ar() {
   if (matchMedia("(min-monochrome: 0)").matches) {
     for (let e = 0; e <= yr; ++e)
       if (matchMedia(`(max-monochrome: ${e})`).matches) return e;
@@ -2194,7 +2195,7 @@ function Tr() {
   }
 }
 
-function wr() {
+function Tr() {
   if (j("no-preference")) return 0;
   if (j("high") || j("more")) return 1;
   if (j("low") || j("less")) return -1;
@@ -2205,7 +2206,7 @@ function j(e) {
   return matchMedia(`(prefers-contrast: ${e})`).matches
 }
 
-function Ar() {
+function wr() {
   if (it("reduce")) return !0;
   if (it("no-preference")) return !1
 }
@@ -2250,8 +2251,8 @@ function Rr() {
     h = C.exp || O,
     l = C.expm1 || O,
     p = C.log1p || O,
-    T = m => C.pow(C.PI, m),
-    w = m => C.log(m + C.sqrt(m * m - 1)),
+    A = m => C.pow(C.PI, m),
+    T = m => C.log(m + C.sqrt(m * m - 1)),
     S = m => C.log(m + C.sqrt(m * m + 1)),
     _ = m => C.log((1 + m) / (1 - m)) / 2,
     g = m => C.exp(m) - 1 / C.exp(m) / 2,
@@ -2262,7 +2263,7 @@ function Rr() {
   return {
     acos: e(.12312423423423424),
     acosh: t(1e308),
-    acoshPf: w(1e154),
+    acoshPf: T(1e154),
     asin: n(.12312423423423424),
     asinh: o(1),
     asinhPf: S(1),
@@ -2283,7 +2284,7 @@ function Rr() {
     expm1Pf: R(1),
     log1p: p(10),
     log1pPf: y(10),
-    powPI: T(-100)
+    powPI: A(-100)
   }
 }
 const Lr = "mmMwWLliI0fiflO&1",
@@ -2383,13 +2384,13 @@ function Br() {
     n = (e = t.attributionSourceId) !== null && e !== void 0 ? e : t.attributionsourceid;
   return n === void 0 ? void 0 : String(n)
 }
-const Tt = -1,
-  wt = -2,
+const At = -1,
+  Tt = -2,
   Dr = new Set([10752, 2849, 2884, 2885, 2886, 2928, 2929, 2930, 2931, 2932, 2960, 2961, 2962, 2963, 2964, 2965, 2966, 2967, 2968, 2978, 3024, 3042, 3088, 3089, 3106, 3107, 32773, 32777, 32777, 32823, 32824, 32936, 32937, 32938, 32939, 32968, 32969, 32970, 32971, 3317, 33170, 3333, 3379, 3386, 33901, 33902, 34016, 34024, 34076, 3408, 3410, 3411, 3412, 3413, 3414, 3415, 34467, 34816, 34817, 34818, 34819, 34877, 34921, 34930, 35660, 35661, 35724, 35738, 35739, 36003, 36004, 36005, 36347, 36348, 36349, 37440, 37441, 37443, 7936, 7937, 7938]),
   Gr = new Set([34047, 35723, 36063, 34852, 34853, 34854, 34229, 36392, 36795, 38449]),
   kr = ["FRAGMENT_SHADER", "VERTEX_SHADER"],
   Wr = ["LOW_FLOAT", "MEDIUM_FLOAT", "HIGH_FLOAT", "LOW_INT", "MEDIUM_INT", "HIGH_INT"],
-  At = "WEBGL_debug_renderer_info",
+  wt = "WEBGL_debug_renderer_info",
   Xr = "WEBGL_polygon_mode";
 
 function xr({
@@ -2397,9 +2398,9 @@ function xr({
 }) {
   var t, n, o, i, a, r;
   const s = bt(e);
-  if (!s) return Tt;
-  if (!Rt(s)) return wt;
-  const d = St() ? null : s.getExtension(At);
+  if (!s) return At;
+  if (!Rt(s)) return Tt;
+  const d = St() ? null : s.getExtension(wt);
   return {
     version: ((t = s.getParameter(s.VERSION)) === null || t === void 0 ? void 0 : t.toString()) || "",
     vendor: ((n = s.getParameter(s.VENDOR)) === null || n === void 0 ? void 0 : n.toString()) || "",
@@ -2414,8 +2415,8 @@ function Vr({
   cache: e
 }) {
   const t = bt(e);
-  if (!t) return Tt;
-  if (!Rt(t)) return wt;
+  if (!t) return At;
+  if (!Rt(t)) return Tt;
   const n = t.getSupportedExtensions(),
     o = t.getContextAttributes(),
     i = [],
@@ -2432,7 +2433,7 @@ function Vr({
   }
   if (n)
     for (const u of n) {
-      if (u === At && St() || u === Xr && Zr()) continue;
+      if (u === wt && St() || u === Xr && Zr()) continue;
       const c = t.getExtension(u);
       if (!c) {
         i.push(u);
@@ -2568,9 +2569,9 @@ const Jr = {
   colorGamut: _r,
   invertedColors: Er,
   forcedColors: gr,
-  monochrome: Tr,
-  contrast: wr,
-  reducedMotion: Ar,
+  monochrome: Ar,
+  contrast: Tr,
+  reducedMotion: wr,
   reducedTransparency: br,
   hdr: Sr,
   math: Rr,
@@ -2697,7 +2698,7 @@ let ye = null;
 async function ci() {
   return ye || (ye = vt.load()), ye
 }
-async function gi() {
+async function yi() {
   return ui().then(e => e.visitorId)
 }
 async function ui() {
@@ -2714,21 +2715,21 @@ async function ui() {
   else if (o === "Chrome") {
     const {
       languages: p,
-      ...T
+      ...A
     } = t.components;
-    n = T
+    n = A
   } else if (o === "Firefox") {
     const {
       languages: p,
-      dateTimeLocale: T,
-      ...w
+      dateTimeLocale: A,
+      ...T
     } = t.components;
-    n = w
+    n = T
   } else if (o === "Brave") {
     const {
       fonts: p,
-      audio: T,
-      canvas: w,
+      audio: A,
+      canvas: T,
       hardwareConcurrency: S,
       plugins: _,
       deviceMemory: g,
@@ -2740,9 +2741,9 @@ async function ui() {
   } else {
     const {
       languages: p,
-      ...T
+      ...A
     } = t.components;
-    n = T
+    n = A
   }(o === "Safari" || d) && (n = {
     userAgent: {
       value: navigator.userAgent,
@@ -2781,7 +2782,7 @@ async function ui() {
   }
 }
 
-function yi() {
+function Ai() {
   return Hn.start({
     apiKey: Mt,
     endpoints: ["https://wplace.live/7eskSe93usV8ENxB/?region=eu"],
@@ -2789,5 +2790,5 @@ function yi() {
   })
 }
 export {
-  _i as P, Ei as a, pi as b, di as c, Ot as d, hi as e, fi as f, gi as g, mi as h, It as i, yi as j, li as k
+  Ei as P, gi as a, hi as b, di as c, Ot as d, _i as e, fi as f, yi as g, mi as h, It as i, pi as j, Ai as k, li as l
 };

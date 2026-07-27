@@ -13,11 +13,11 @@ var g = (r, t, e) => xt(r, typeof t != "symbol" ? t + "" : t, e),
 var p = (r, t, e) => (jt(r, t, "read from private field"), e ? e.call(r) : t.get(r)),
   b = (r, t, e) => t.has(r) ? Je("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(r) : t.set(r, e);
 import {
-  h as Ut,
+  j as Ut,
   P as ft,
   g as Ve,
-  j as Lt
-} from "./DzBCW1Dp.js";
+  k as Lt
+} from "./DV3DPphW.js";
 import {
   e as I,
   i as E,
@@ -4002,6 +4002,13 @@ function fb(r) {
       });
       if (!e.ok) throw new Error(`fastspring refresh failed: ${e.status}`);
       return await e.json()
+    }
+    async getFastspringSecurePayload(t) {
+      const e = await this.request(`/payment/fastspring/secure-payload?lookup_key=${encodeURIComponent(t)}`, {
+        credentials: "include",
+        throwOnStatus: !1
+      });
+      return e.status !== a.OK ? null : await e.json()
     }
     async getLastFastspringOrder() {
       const t = await this.request("/payment/fastspring/orders/last", {
