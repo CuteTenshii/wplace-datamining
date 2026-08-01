@@ -14,12 +14,12 @@ var h = (r, t, e) => (Jt(r, t, "read from private field"), e ? e.call(r) : t.get
   v = (r, t, e) => t.has(r) ? nt("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(r) : t.set(r, e);
 import {
   j as Qt,
-  P as Nt,
+  P as It,
   g as tt,
   k as We
 } from "./CftFOTTa.js";
 import {
-  e as A,
+  e as S,
   i as E,
   h as T,
   g as Be,
@@ -339,13 +339,13 @@ function rt() {
   return X(["webkitPersistentStorage" in n, "webkitTemporaryStorage" in n, n.vendor.indexOf("Google") === 0, "webkitResolveLocalFileSystemURL" in e, "BatteryManager" in e, "webkitMediaStream" in e, "webkitSpeechGrammar" in e]) >= 5 ? "chromium" : X(["ApplePayError" in e, "CSSPrimitiveValue" in e, "Counter" in e, n.vendor.indexOf("Apple") === 0, "getStorageUpdates" in n, "WebKitMediaKeys" in e]) >= 4 ? "webkit" : X(["buildID" in navigator, "MozAppearance" in ((t = (r = document.documentElement) === null || r === void 0 ? void 0 : r.style) !== null && t !== void 0 ? t : {}), "onmozfullscreenchange" in e, "mozInnerScreenX" in e, "CSSMozDocumentRule" in e, "CanvasCaptureMediaStream" in e]) >= 4 ? "gecko" : "unknown"
 }
 
-function Ir() {
+function Nr() {
   var r;
   const t = (r = navigator.userAgent) === null || r === void 0 ? void 0 : r.toLowerCase();
   return z(t, "edg/") ? "edge" : z(t, "trident") || z(t, "msie") ? "internet_explorer" : z(t, "wechat") ? "wechat" : z(t, "firefox") ? "firefox" : z(t, "opera") || z(t, "opr") ? "opera" : z(t, "chrome") ? "chrome" : z(t, "safari") ? "safari" : "unknown"
 }
 
-function Nr() {
+function Ir() {
   const r = rt(),
     t = r === "chromium",
     e = r === "gecko",
@@ -541,8 +541,8 @@ function Gr() {
   return e
 }
 const Vr = {
-  android: Nr,
-  browserKind: Ir,
+  android: Ir,
+  browserKind: Nr,
   browserEngineKind: rt,
   documentFocus: Rr,
   userAgent: Br,
@@ -626,18 +626,18 @@ const st = "theme";
 var ce, ue, le, _e, de, fe, he, pe, me, ge, we, ye;
 class en {
   constructor() {
-    v(this, ce, A(!1));
-    v(this, ue, A(!1));
-    v(this, le, A(!1));
-    v(this, _e, A(!1));
-    v(this, de, A(0));
-    v(this, fe, A(!1));
-    v(this, he, A(Be(tn())));
-    v(this, pe, A(null));
-    v(this, me, A(!1));
-    v(this, ge, A("custom-winter"));
-    v(this, we, A(Be(Date.now())));
-    v(this, ye, A(void 0));
+    v(this, ce, S(!1));
+    v(this, ue, S(!1));
+    v(this, le, S(!1));
+    v(this, _e, S(!1));
+    v(this, de, S(0));
+    v(this, fe, S(!1));
+    v(this, he, S(Be(tn())));
+    v(this, pe, S(null));
+    v(this, me, S(!1));
+    v(this, ge, S("custom-winter"));
+    v(this, we, S(Be(Date.now())));
+    v(this, ye, S(void 0));
     setInterval(() => {
       T(h(this, we), Date.now(), !0)
     }, 500), this.theme = localStorage.getItem(st), this.theme !== "dark" && this.theme !== "custom-winter" && (this.theme = "custom-winter")
@@ -769,7 +769,7 @@ self.onmessage = function(e) {
 `;
 async function an() {
   try {
-    const r = await fetch(`${Nt}/anticheat/pow/challenge`, {
+    const r = await fetch(`${It}/anticheat/pow/challenge`, {
       credentials: "include"
     });
     if (!r.ok) return null;
@@ -807,8 +807,8 @@ const Rt = 3;
 var ve, be;
 class on {
   constructor() {
-    v(this, ve, A(null));
-    v(this, be, A(0))
+    v(this, ve, S(null));
+    v(this, be, S(0))
   }
   get current() {
     return E(h(this, ve))
@@ -901,22 +901,22 @@ function ln() {
   return Z[4] = t, t
 }
 
-function vI(r) {
+function vN(r) {
   const t = R.current;
   !t || t.tier === 4 || (t.resolve(r), R.current = null)
 }
 
-function bI() {
+function bN() {
   const r = R.current;
   !r || r.tier === 4 || (R.errorCount += 1, R.errorCount >= Rt && (r.resolve(void 0), R.current = null))
 }
 
-function EI() {
+function EN() {
   const r = R.current;
   !r || r.tier !== 4 || (r.resolve(!0), R.current = null)
 }
 
-function OI() {
+function ON() {
   const r = R.current;
   r && (r.tier === 4 ? r.resolve(!1) : r.resolve(void 0), R.current = null)
 }
@@ -943,8 +943,8 @@ const _n = () => "A punishment cache reload is already running",
   qn = () => "您的账号因违反规则已被暂停",
   An = () => "Dein Konto wurde wegen Regelverstößen gesperrt",
   Sn = () => "Tu cuenta ha sido suspendida por infringir las regras",
-  In = () => "Votre compte a été suspendu pour avoir enfreint les règles",
-  Nn = () => "Il tuo account è stato sospeso per aver infranto le regole",
+  Nn = () => "Votre compte a été suspendu pour avoir enfreint les règles",
+  In = () => "Il tuo account è stato sospeso per aver infranto le regole",
   Rn = () => "ルール違反により、あなたのアカウントは一時停止されています。",
   Dn = () => "Twoje konto zostało zawieszone za łamanie zasad",
   Pn = () => "Ваш аккаунт был временно заблокирован за нарушение правил",
@@ -952,7 +952,7 @@ const _n = () => "A punishment cache reload is already running",
   jn = () => "Tài khoản của bạn đã bị tạm đình chỉ vì vi phạm luật",
   ct = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Tn() : e === "pt" ? kn() : e === "ch" ? qn() : e === "de" ? An() : e === "es" ? Sn() : e === "fr" ? In() : e === "it" ? Nn() : e === "jp" ? Rn() : e === "pl" ? Dn() : e === "ru" ? Pn() : e === "uk" ? xn() : jn()
+    return e === "en" ? Tn() : e === "pt" ? kn() : e === "ch" ? qn() : e === "de" ? An() : e === "es" ? Sn() : e === "fr" ? Nn() : e === "it" ? In() : e === "jp" ? Rn() : e === "pl" ? Dn() : e === "ru" ? Pn() : e === "uk" ? xn() : jn()
   },
   zn = () => "Alliance name already taken",
   Ln = () => "Já possui uma aliança com esse nome",
@@ -1012,11 +1012,11 @@ const _n = () => "A punishment cache reload is already running",
   qa = () => "ボット使用",
   Aa = () => "Botting",
   Sa = () => "Боттинг",
-  Ia = () => "Боти",
-  Na = () => "Botting",
+  Na = () => "Боти",
+  Ia = () => "Botting",
   Ra = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? ya() : e === "pt" ? va() : e === "ch" ? ba() : e === "de" ? Ea() : e === "es" ? Oa() : e === "fr" ? Ta() : e === "it" ? ka() : e === "jp" ? qa() : e === "pl" ? Aa() : e === "ru" ? Sa() : e === "uk" ? Ia() : Na()
+    return e === "en" ? ya() : e === "pt" ? va() : e === "ch" ? ba() : e === "de" ? Ea() : e === "es" ? Oa() : e === "fr" ? Ta() : e === "it" ? ka() : e === "jp" ? qa() : e === "pl" ? Aa() : e === "ru" ? Sa() : e === "uk" ? Na() : Ia()
   },
   Da = () => "Use of software to completely automate painting",
   Pa = () => "Uso de software para pintar de forma completamente automatizada ",
@@ -1082,8 +1082,8 @@ const _n = () => "A punishment cache reload is already running",
     const e = t.locale ?? _();
     return e === "en" ? gi() : e === "pt" ? wi() : e === "ch" ? yi() : e === "de" ? vi() : e === "es" ? bi() : e === "fr" ? Ei() : e === "it" ? Oi() : e === "jp" ? Ti() : e === "pl" ? ki() : e === "ru" ? qi() : e === "uk" ? Ai() : Si()
   },
-  Ii = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
-  Ni = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
+  Ni = () => "Can't reach the server. Maybe you are without internet connection or the server is down. Try again later",
+  Ii = () => "Não é possível acessar o servidor. Talvez você esteja sem conexão com a internet ou o servidor esteja fora do ar. Tente novamente mais tarde.",
   Ri = () => "无法连接到服务器。可能是你没有网络，或服务器已离线。请稍后重试。",
   Di = () => "Server nicht erreichbar. Vielleicht hast du keine Internetverbindung oder der Server ist offline. Versuche es später erneut.",
   Pi = () => "No se puede conectar con el servidor. Puede que estés sin internet o el servidor esté caído. Inténtalo de nuevo más tarde.",
@@ -1096,7 +1096,7 @@ const _n = () => "A punishment cache reload is already running",
   Mi = () => "Không thể kết nối tới máy chủ. Có thể bạn đang mất kết nối mạng hoặc máy chủ đang tạm ngưng. Hãy thử lại sau",
   Bi = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Ii() : e === "pt" ? Ni() : e === "ch" ? Ri() : e === "de" ? Di() : e === "es" ? Pi() : e === "fr" ? xi() : e === "it" ? ji() : e === "jp" ? zi() : e === "pl" ? Li() : e === "ru" ? Ui() : e === "uk" ? Ci() : Mi()
+    return e === "en" ? Ni() : e === "pt" ? Ii() : e === "ch" ? Ri() : e === "de" ? Di() : e === "es" ? Pi() : e === "fr" ? xi() : e === "it" ? ji() : e === "jp" ? zi() : e === "pl" ? Li() : e === "ru" ? Ui() : e === "uk" ? Ci() : Mi()
   },
   Ki = () => "Challenge verification not completed",
   $i = () => "Verificação do desafio não concluída",
@@ -1150,8 +1150,8 @@ const _n = () => "A punishment cache reload is already running",
   qs = () => "Estamos enfrentando um volume alto de acessos no momento. Algumas solicitações podem não ser processadas agora — por favor, tente novamente mais tarde. Agradecemos a sua compreensão.",
   As = () => "我们当前正遭遇高流量。一些请求可能无法立即处理——请稍后再试。感谢你的耐心。",
   Ss = () => "Wir haben gerade sehr viel Traffic. Einige Anfragen können momentan nicht verarbeitet werden – bitte versuche es später erneut. Danke für deine Geduld.",
-  Is = () => "Actualmente estamos recibiendo mucho tráfico. Es posible que algunas solicitudes no se procesen en este momento; inténtalo de nuevo más tarde. Gracias por tu paciencia.",
-  Ns = () => "Nous subissons actuellement un trafic élevé. Certaines requêtes peuvent ne pas être traitées pour le moment — veuillez réessayer plus tard. Merci pour votre patience.",
+  Ns = () => "Actualmente estamos recibiendo mucho tráfico. Es posible que algunas solicitudes no se procesen en este momento; inténtalo de nuevo más tarde. Gracias por tu paciencia.",
+  Is = () => "Nous subissons actuellement un trafic élevé. Certaines requêtes peuvent ne pas être traitées pour le moment — veuillez réessayer plus tard. Merci pour votre patience.",
   Rs = () => "Stiamo affrontando un elevato volume di accessi in questo momento. Alcune richieste potrebbero non essere elaborate ora — riprova più tardi. Grazie per la comprensione.",
   Ds = () => "現在アクセスが集中しています。一部のリクエストが処理されない場合があります。しばらくしてからもう一度お試しください。ご理解ありがとうございます。",
   Ps = () => "Obecnie doświadczamy dużego ruchu. Niektóre żądania mogą nie zostać teraz przetworzone — spróbuj ponownie później. Dziękujemy za cierpliwość.",
@@ -1160,7 +1160,7 @@ const _n = () => "A punishment cache reload is already running",
   zs = () => "Hiện chúng tôi đang chịu lượng truy cập rất cao. Một số yêu cầu có thể không được xử lý ngay bây giờ — hãy thử lại sau. Cảm ơn bạn đã thông cảm.",
   dt = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? ks() : e === "pt" ? qs() : e === "ch" ? As() : e === "de" ? Ss() : e === "es" ? Is() : e === "fr" ? Ns() : e === "it" ? Rs() : e === "jp" ? Ds() : e === "pl" ? Ps() : e === "ru" ? xs() : e === "uk" ? js() : zs()
+    return e === "en" ? ks() : e === "pt" ? qs() : e === "ch" ? As() : e === "de" ? Ss() : e === "es" ? Ns() : e === "fr" ? Is() : e === "it" ? Rs() : e === "jp" ? Ds() : e === "pl" ? Ps() : e === "ru" ? xs() : e === "uk" ? js() : zs()
   },
   Ls = () => "Doxxing",
   Us = () => "Doxxing",
@@ -1216,15 +1216,15 @@ const _n = () => "A punishment cache reload is already running",
   qo = () => "Diese Konten können nicht automatisch zusammengeführt werden. Kontaktieren Sie uns unter contact@wplace.live und wir kümmern uns darum.",
   Ao = () => "Estas cuentas no se pueden fusionar automáticamente. Contáctanos en contact@wplace.live y lo solucionaremos.",
   So = () => "Ces comptes ne peuvent pas être fusionnés automatiquement. Contactez-nous à contact@wplace.live et nous nous en occuperons.",
-  Io = () => "Questi account non possono essere uniti automaticamente. Contattaci a contact@wplace.live e sistemeremo tutto.",
-  No = () => "これらのアカウントは自動的に統合できません。contact@wplace.liveまでお問い合わせください。弊社が対応いたします。",
+  No = () => "Questi account non possono essere uniti automaticamente. Contattaci a contact@wplace.live e sistemeremo tutto.",
+  Io = () => "これらのアカウントは自動的に統合できません。contact@wplace.liveまでお問い合わせください。弊社が対応いたします。",
   Ro = () => "Te konta nie mogą zostać automatycznie scalone. Skontaktuj się z nami pod adresem contact@wplace.live, a my się tym zajmiemy.",
   Do = () => "Эти аккаунты не могут быть объединены автоматически. Свяжитесь с нами по адресу contact@wplace.live, и мы разберемся.",
   Po = () => "Ці облікові записи не можуть бути об'єднані автоматично. Зв'яжіться з нами за адресою contact@wplace.live, і ми все владнаємо.",
   xo = () => "Các tài khoản này không thể hợp nhất tự động. Hãy liên hệ với chúng tôi tại contact@wplace.live và chúng tôi sẽ giải quyết.",
   jo = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Oo() : e === "pt" ? To() : e === "ch" ? ko() : e === "de" ? qo() : e === "es" ? Ao() : e === "fr" ? So() : e === "it" ? Io() : e === "jp" ? No() : e === "pl" ? Ro() : e === "ru" ? Do() : e === "uk" ? Po() : xo()
+    return e === "en" ? Oo() : e === "pt" ? To() : e === "ch" ? ko() : e === "de" ? qo() : e === "es" ? Ao() : e === "fr" ? So() : e === "it" ? No() : e === "jp" ? Io() : e === "pl" ? Ro() : e === "ru" ? Do() : e === "uk" ? Po() : xo()
   },
   zo = () => "This email is already in use.",
   Lo = () => "Este e-mail já está em uso.",
@@ -1282,13 +1282,13 @@ const _n = () => "A punishment cache reload is already running",
   qc = r => `Erreur lors de la peinture : ${r.err}`,
   Ac = r => `Errore durante la pittura: ${r.err}`,
   Sc = r => `ペイント中にエラーが発生しました: ${r.err}`,
-  Ic = r => `Błąd podczas malowania: ${r.err}`,
-  Nc = r => `Ошибка при рисовании: ${r.err}`,
+  Nc = r => `Błąd podczas malowania: ${r.err}`,
+  Ic = r => `Ошибка при рисовании: ${r.err}`,
   Rc = r => `Помилка під час малювання: ${r.err}`,
   Dc = r => `Lỗi khi tô: ${r.err}`,
   Pc = (r, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? bc(r) : e === "pt" ? Ec(r) : e === "ch" ? Oc(r) : e === "de" ? Tc(r) : e === "es" ? kc(r) : e === "fr" ? qc(r) : e === "it" ? Ac(r) : e === "jp" ? Sc(r) : e === "pl" ? Ic(r) : e === "ru" ? Nc(r) : e === "uk" ? Rc(r) : Dc(r)
+    return e === "en" ? bc(r) : e === "pt" ? Ec(r) : e === "ch" ? Oc(r) : e === "de" ? Tc(r) : e === "es" ? kc(r) : e === "fr" ? qc(r) : e === "it" ? Ac(r) : e === "jp" ? Sc(r) : e === "pl" ? Nc(r) : e === "ru" ? Ic(r) : e === "uk" ? Rc(r) : Dc(r)
   },
   xc = () => "Exceeded maximum number of characters",
   jc = () => "Excedeu o número máximo de caracteres permitidos",
@@ -1348,11 +1348,11 @@ const _n = () => "A punishment cache reload is already running",
   qu = () => "他人の作品を荒らした",
   Au = () => "Zniszczył prace innych",
   Su = () => "Испортил чужие рисунки",
-  Iu = () => "Зіпсував роботи інших",
-  Nu = () => "Phá hỏng tranh của người khác",
+  Nu = () => "Зіпсував роботи інших",
+  Iu = () => "Phá hỏng tranh của người khác",
   Ru = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? yu() : e === "pt" ? vu() : e === "ch" ? bu() : e === "de" ? Eu() : e === "es" ? Ou() : e === "fr" ? Tu() : e === "it" ? ku() : e === "jp" ? qu() : e === "pl" ? Au() : e === "ru" ? Su() : e === "uk" ? Iu() : Nu()
+    return e === "en" ? yu() : e === "pt" ? vu() : e === "ch" ? bu() : e === "de" ? Eu() : e === "es" ? Ou() : e === "fr" ? Tu() : e === "it" ? ku() : e === "jp" ? qu() : e === "pl" ? Au() : e === "ru" ? Su() : e === "uk" ? Nu() : Iu()
   },
   Du = () => "Hate speech",
   Pu = () => "Discurso de Ódio",
@@ -1414,11 +1414,11 @@ const _n = () => "A punishment cache reload is already running",
   ql = () => "Откровенный или незаконный контент, грубые оскорбления",
   Al = () => "Відвертий або незаконний вміст, грубі образи",
   Sl = () => "Nội dung phản cảm hoặc bất hợp pháp, lời lẽ lăng mạ nghiêm trọng",
-  Il = (r = {}, t = {}) => {
+  Nl = (r = {}, t = {}) => {
     const e = t.locale ?? _();
     return e === "en" ? gl() : e === "pt" ? wl() : e === "ch" ? yl() : e === "de" ? vl() : e === "es" ? bl() : e === "fr" ? El() : e === "it" ? Ol() : e === "jp" ? Tl() : e === "pl" ? kl() : e === "ru" ? ql() : e === "uk" ? Al() : Sl()
   },
-  Nl = () => "Invalid captcha. Please try again.",
+  Il = () => "Invalid captcha. Please try again.",
   Rl = () => "Captcha inválido. Por favor, tente novamente.",
   Dl = () => "验证码无效，请重试。",
   Pl = () => "Ungültiges Captcha. Bitte versuche es erneut.",
@@ -1432,7 +1432,7 @@ const _n = () => "A punishment cache reload is already running",
   Bl = () => "Captcha không hợp lệ. Vui lòng thử lại.",
   Kl = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Nl() : e === "pt" ? Rl() : e === "ch" ? Dl() : e === "de" ? Pl() : e === "es" ? xl() : e === "fr" ? jl() : e === "it" ? zl() : e === "jp" ? Ll() : e === "pl" ? Ul() : e === "ru" ? Cl() : e === "uk" ? Ml() : Bl()
+    return e === "en" ? Il() : e === "pt" ? Rl() : e === "ch" ? Dl() : e === "de" ? Pl() : e === "es" ? xl() : e === "fr" ? jl() : e === "it" ? zl() : e === "jp" ? Ll() : e === "pl" ? Ul() : e === "ru" ? Cl() : e === "uk" ? Ml() : Bl()
   },
   $l = () => "Invalid challenge response",
   Fl = () => "Resposta de desafio inválida",
@@ -1483,8 +1483,8 @@ const _n = () => "A punishment cache reload is already running",
     return e === "en" ? p_() : e === "pt" ? m_() : e === "ch" ? g_() : e === "de" ? w_() : e === "es" ? y_() : e === "fr" ? v_() : e === "it" ? b_() : e === "jp" ? E_() : e === "pl" ? O_() : e === "ru" ? T_() : e === "uk" ? k_() : q_()
   },
   S_ = () => "The name contains disallowed characters or words. Please choose a different name.",
-  I_ = () => "O nome contém caracteres ou palavras não permitidas. Por favor, escolha outro nome.",
-  N_ = () => "名称包含禁止的字符或词语，请选择其他名称。",
+  N_ = () => "O nome contém caracteres ou palavras não permitidas. Por favor, escolha outro nome.",
+  I_ = () => "名称包含禁止的字符或词语，请选择其他名称。",
   R_ = () => "Der Name enthält nicht erlaubte Zeichen oder Wörter. Bitte wähle einen anderen Namen.",
   D_ = () => "El nombre contiene caracteres o palabras no permitidas. Elige otro nombre.",
   P_ = () => "Le nom contient des caractères ou des mots non autorisés. Veuillez choisir un autre nom.",
@@ -1496,7 +1496,7 @@ const _n = () => "A punishment cache reload is already running",
   C_ = () => "Tên chứa ký tự hoặc từ không được phép. Hãy chọn tên khác.",
   jt = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? S_() : e === "pt" ? I_() : e === "ch" ? N_() : e === "de" ? R_() : e === "es" ? D_() : e === "fr" ? P_() : e === "it" ? x_() : e === "jp" ? j_() : e === "pl" ? z_() : e === "ru" ? L_() : e === "uk" ? U_() : C_()
+    return e === "en" ? S_() : e === "pt" ? N_() : e === "ch" ? I_() : e === "de" ? R_() : e === "es" ? D_() : e === "fr" ? P_() : e === "it" ? x_() : e === "jp" ? j_() : e === "pl" ? z_() : e === "ru" ? L_() : e === "uk" ? U_() : C_()
   },
   M_ = () => "Please enter a valid phone number with country code.",
   B_ = () => "Insira um número de telefone válido com código do país.",
@@ -1550,8 +1550,8 @@ const _n = () => "A punishment cache reload is already running",
   qd = () => "O ranking está temporariamente desativado",
   Ad = () => "排行榜已暂时停用",
   Sd = () => "Die Bestenliste ist vorübergehend deaktiviert",
-  Id = () => "La clasificación está deshabilitada temporalmente",
-  Nd = () => "Le classement est temporairement désactivé",
+  Nd = () => "La clasificación está deshabilitada temporalmente",
+  Id = () => "Le classement est temporairement désactivé",
   Rd = () => "La classifica è temporaneamente disattivata",
   Dd = () => "ランキングは一時的に無効になっています。",
   Pd = () => "Ranking jest tymczasowo wyłączony",
@@ -1560,7 +1560,7 @@ const _n = () => "A punishment cache reload is already running",
   zd = () => "Bảng xếp hạng tạm thời bị vô hiệu hóa",
   V = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? kd() : e === "pt" ? qd() : e === "ch" ? Ad() : e === "de" ? Sd() : e === "es" ? Id() : e === "fr" ? Nd() : e === "it" ? Rd() : e === "jp" ? Dd() : e === "pl" ? Pd() : e === "ru" ? xd() : e === "uk" ? jd() : zd()
+    return e === "en" ? kd() : e === "pt" ? qd() : e === "ch" ? Ad() : e === "de" ? Sd() : e === "es" ? Nd() : e === "fr" ? Id() : e === "it" ? Rd() : e === "jp" ? Dd() : e === "pl" ? Pd() : e === "ru" ? xd() : e === "uk" ? jd() : zd()
   },
   Ld = () => "Location name is too big (max. 128 characters)",
   Ud = () => "Nome da localização é grande demais (max. 128 caracteres)",
@@ -1616,15 +1616,15 @@ const _n = () => "A punishment cache reload is already running",
   qf = r => `Du kannst deinen Namen in ${r.days} Tagen erneut ändern`,
   Af = r => `Podrás cambiar tu nombre de nuevo en ${r.days} días`,
   Sf = r => `Vous pourrez changer votre nom à nouveau dans ${r.days} jours`,
-  If = r => `Potrai cambiare di nuovo il tuo nome tra ${r.days} giorni.`,
-  Nf = r => `${r.days}日後に再び名前を変更できます。`,
+  Nf = r => `Potrai cambiare di nuovo il tuo nome tra ${r.days} giorni.`,
+  If = r => `${r.days}日後に再び名前を変更できます。`,
   Rf = r => `Następną zmianę nazwy możesz wykonać za ${r.days} dni`,
   Df = r => `Вы сможете изменить имя снова через ${r.days} дн.`,
   Pf = r => `Ви зможете змінити імʼя знову через ${r.days} днів`,
   xf = r => `Bạn có thể đổi tên lại sau ${r.days} ngày`,
   jf = (r, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Of(r) : e === "pt" ? Tf(r) : e === "ch" ? kf(r) : e === "de" ? qf(r) : e === "es" ? Af(r) : e === "fr" ? Sf(r) : e === "it" ? If(r) : e === "jp" ? Nf(r) : e === "pl" ? Rf(r) : e === "ru" ? Df(r) : e === "uk" ? Pf(r) : xf(r)
+    return e === "en" ? Of(r) : e === "pt" ? Tf(r) : e === "ch" ? kf(r) : e === "de" ? qf(r) : e === "es" ? Af(r) : e === "fr" ? Sf(r) : e === "it" ? Nf(r) : e === "jp" ? If(r) : e === "pl" ? Rf(r) : e === "ru" ? Df(r) : e === "uk" ? Pf(r) : xf(r)
   },
   zf = () => "No internet access or the servers are offline. Try again later.",
   Lf = () => "Sem acesso à internet ou os servidores estão fora do ar. Tente novamente mais tarde.",
@@ -1683,12 +1683,12 @@ const _n = () => "A punishment cache reload is already running",
   qh = () => "Operazione non consentita. Forse hai troppi luoghi preferiti.",
   Ah = () => "この操作は許可されていません。お気に入りの場所が多すぎる可能性があります。",
   Sh = () => "Operacja niedozwolona. Możliwe, że masz zbyt wiele ulubionych lokalizacji.",
-  Ih = () => "Операция запрещена. Возможно, у вас слишком много избранных локаций.",
-  Nh = () => "Операцію заборонено. Можливо, у вас забагато вибраних локацій.",
+  Nh = () => "Операция запрещена. Возможно, у вас слишком много избранных локаций.",
+  Ih = () => "Операцію заборонено. Можливо, у вас забагато вибраних локацій.",
   Rh = () => "Thao tác không được phép. Có thể bạn đã có quá nhiều vị trí yêu thích.",
   Dh = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? vh() : e === "pt" ? bh() : e === "ch" ? Eh() : e === "de" ? Oh() : e === "es" ? Th() : e === "fr" ? kh() : e === "it" ? qh() : e === "jp" ? Ah() : e === "pl" ? Sh() : e === "ru" ? Ih() : e === "uk" ? Nh() : Rh()
+    return e === "en" ? vh() : e === "pt" ? bh() : e === "ch" ? Eh() : e === "de" ? Oh() : e === "es" ? Th() : e === "fr" ? kh() : e === "it" ? qh() : e === "jp" ? Ah() : e === "pl" ? Sh() : e === "ru" ? Nh() : e === "uk" ? Ih() : Rh()
   },
   Ph = r => `Not enough charges: you have ${r.charges} but this overlay needs ${r.pixels}.`,
   xh = r => `Cargas insuficientes: você tem ${r.charges}, mas esta sobreposição precisa de ${r.pixels}.`,
@@ -1750,11 +1750,11 @@ const _n = () => "A punishment cache reload is already running",
   qp = () => "Регион этого номера телефона не поддерживается",
   Ap = () => "Регіон цього номера телефону не підтримується",
   Sp = () => "Vùng của số điện thoại này không được hỗ trợ",
-  Ip = (r = {}, t = {}) => {
+  Np = (r = {}, t = {}) => {
     const e = t.locale ?? _();
     return e === "en" ? gp() : e === "pt" ? wp() : e === "ch" ? yp() : e === "de" ? vp() : e === "es" ? bp() : e === "fr" ? Ep() : e === "it" ? Op() : e === "jp" ? Tp() : e === "pl" ? kp() : e === "ru" ? qp() : e === "uk" ? Ap() : Sp()
   },
-  Np = () => "Refresh your page to get the latest update",
+  Ip = () => "Refresh your page to get the latest update",
   Rp = () => "Recarregue sua página para obter as últimas atualizações",
   Dp = () => "刷新页面以获取最新更新",
   Pp = () => "Aktualisiere die Seite, um die neuesten Updates zu erhalten",
@@ -1768,7 +1768,7 @@ const _n = () => "A punishment cache reload is already running",
   Bp = () => "Hãy làm mới trang để nhận được cập nhật mới nhất",
   pt = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Np() : e === "pt" ? Rp() : e === "ch" ? Dp() : e === "de" ? Pp() : e === "es" ? xp() : e === "fr" ? jp() : e === "it" ? zp() : e === "jp" ? Lp() : e === "pl" ? Up() : e === "ru" ? Cp() : e === "uk" ? Mp() : Bp()
+    return e === "en" ? Ip() : e === "pt" ? Rp() : e === "ch" ? Dp() : e === "de" ? Pp() : e === "es" ? xp() : e === "fr" ? jp() : e === "it" ? zp() : e === "jp" ? Lp() : e === "pl" ? Up() : e === "ru" ? Cp() : e === "uk" ? Mp() : Bp()
   },
   Kp = () => "Report failed. Please try again later",
   $p = () => "Denúncia falhou. Por favor, tente novamente mais tarde",
@@ -1820,8 +1820,8 @@ const _n = () => "A punishment cache reload is already running",
   },
   Am = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
   Sm = () => "A área selecionada tem histórico demais para exportar um timelapse. Tente uma área menor.",
-  Im = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
   Nm = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
+  Im = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
   Rm = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
   Dm = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
   Pm = () => "L'area selezionata ha troppa cronologia per esportare un timelapse. Prova con un'area più piccola.",
@@ -1832,7 +1832,7 @@ const _n = () => "A punishment cache reload is already running",
   Um = () => "Selected area has too much history to export a timelapse. Try a smaller area.",
   Cm = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Am() : e === "pt" ? Sm() : e === "ch" ? Im() : e === "de" ? Nm() : e === "es" ? Rm() : e === "fr" ? Dm() : e === "it" ? Pm() : e === "jp" ? xm() : e === "pl" ? jm() : e === "ru" ? zm() : e === "uk" ? Lm() : Um()
+    return e === "en" ? Am() : e === "pt" ? Sm() : e === "ch" ? Nm() : e === "de" ? Im() : e === "es" ? Rm() : e === "fr" ? Dm() : e === "it" ? Pm() : e === "jp" ? xm() : e === "pl" ? jm() : e === "ru" ? zm() : e === "uk" ? Lm() : Um()
   },
   Mm = () => "The service is currently unavailable. Please try again later.",
   Bm = () => "O serviço está indisponível no momento. Por favor, tente novamente mais tarde.",
@@ -1887,8 +1887,8 @@ const _n = () => "A punishment cache reload is already running",
   qg = () => "输入的用户名与当前用户名不匹配。",
   Ag = () => "Der eingegebene Benutzername stimmt nicht mit deinem aktuellen Benutzernamen überein.",
   Sg = () => "El nombre de usuario ingresado no coincide con tu nombre de usuario actual.",
-  Ig = () => "Le nom d’utilisateur saisi ne correspond pas à votre nom d’utilisateur actuel.",
-  Ng = () => "Il nome utente inserito non corrisponde al tuo nome utente attuale.",
+  Ng = () => "Le nom d’utilisateur saisi ne correspond pas à votre nom d’utilisateur actuel.",
+  Ig = () => "Il nome utente inserito non corrisponde al tuo nome utente attuale.",
   Rg = () => "入力されたユーザー名が、現在のユーザー名と一致しません。",
   Dg = () => "Wpisana nazwa użytkownika nie zgadza się z obecną nazwą.",
   Pg = () => "Введённое имя пользователя не совпадает с текущим.",
@@ -1896,7 +1896,7 @@ const _n = () => "A punishment cache reload is already running",
   jg = () => "Tên người dùng nhập vào không trùng với tên hiện tại.",
   zg = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Tg() : e === "pt" ? kg() : e === "ch" ? qg() : e === "de" ? Ag() : e === "es" ? Sg() : e === "fr" ? Ig() : e === "it" ? Ng() : e === "jp" ? Rg() : e === "pl" ? Dg() : e === "ru" ? Pg() : e === "uk" ? xg() : jg()
+    return e === "en" ? Tg() : e === "pt" ? kg() : e === "ch" ? qg() : e === "de" ? Ag() : e === "es" ? Sg() : e === "fr" ? Ng() : e === "it" ? Ig() : e === "jp" ? Rg() : e === "pl" ? Dg() : e === "ru" ? Pg() : e === "uk" ? xg() : jg()
   },
   Lg = () => "Unexpected server error. Try again later.",
   Ug = () => "Erro inesperado do servidor. Tente novamente mais tarde.",
@@ -1954,13 +1954,13 @@ const _n = () => "A punishment cache reload is already running",
   qw = () => "Erreur lors du chargement du module WebAssembly. Essayez d’utiliser un autre navigateur.",
   Aw = () => "Errore nel caricamento del modulo WebAssembly. Prova a usare un altro browser.",
   Sw = () => "WebAssembly モジュールの読み込みに失敗しました。別のブラウザをお試しください。",
-  Iw = () => "Nie udało się załadować modułu WebAssembly. Spróbuj użyć innej przeglądarki.",
-  Nw = () => "Ошибка при загрузке модуля WebAssembly. Попробуйте использовать другой браузер.",
+  Nw = () => "Nie udało się załadować modułu WebAssembly. Spróbuj użyć innej przeglądarki.",
+  Iw = () => "Ошибка при загрузке модуля WebAssembly. Попробуйте использовать другой браузер.",
   Rw = () => "Не вдалося завантажити модуль WebAssembly. Спробуйте інший браузер.",
   Dw = () => "Lỗi tải mô-đun WebAssembly. Hãy thử dùng trình duyệt khác.",
   Pw = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? bw() : e === "pt" ? Ew() : e === "ch" ? Ow() : e === "de" ? Tw() : e === "es" ? kw() : e === "fr" ? qw() : e === "it" ? Aw() : e === "jp" ? Sw() : e === "pl" ? Iw() : e === "ru" ? Nw() : e === "uk" ? Rw() : Dw()
+    return e === "en" ? bw() : e === "pt" ? Ew() : e === "ch" ? Ow() : e === "de" ? Tw() : e === "es" ? kw() : e === "fr" ? qw() : e === "it" ? Aw() : e === "jp" ? Sw() : e === "pl" ? Nw() : e === "ru" ? Iw() : e === "uk" ? Rw() : Dw()
   },
   xw = () => "You already have this item. Please refresh the page.",
   jw = () => "Você já possui este item. Atualize a página.",
@@ -2006,7 +2006,7 @@ const _n = () => "A punishment cache reload is already running",
   hy = () => "У вас нет прав для этого действия",
   py = () => "Ви не маєте права це робити",
   my = () => "Bạn không có quyền làm việc này",
-  S = (r = {}, t = {}) => {
+  A = (r = {}, t = {}) => {
     const e = t.locale ?? _();
     return e === "en" ? iy() : e === "pt" ? sy() : e === "ch" ? oy() : e === "de" ? cy() : e === "es" ? uy() : e === "fr" ? ly() : e === "it" ? _y() : e === "jp" ? dy() : e === "pl" ? fy() : e === "ru" ? hy() : e === "uk" ? py() : my()
   },
@@ -2026,8 +2026,8 @@ const _n = () => "A punishment cache reload is already running",
     const e = t.locale ?? _();
     return e === "en" ? gy() : e === "pt" ? wy() : e === "ch" ? yy() : e === "de" ? vy() : e === "es" ? by() : e === "fr" ? Ey() : e === "it" ? Oy() : e === "jp" ? Ty() : e === "pl" ? ky() : e === "ru" ? qy() : e === "uk" ? Ay() : Sy()
   },
-  Iy = () => "You need to be logged in to paint",
-  Ny = () => "Você precisa estar conectado para pintar",
+  Ny = () => "You need to be logged in to paint",
+  Iy = () => "Você precisa estar conectado para pintar",
   Ry = () => "你需要登录才能进行绘制",
   Dy = () => "Du musst eingeloggt sein, um zu malen",
   Py = () => "Debes iniciar sesión para pintar",
@@ -2040,7 +2040,7 @@ const _n = () => "A punishment cache reload is already running",
   My = () => "Bạn cần đăng nhập để tô",
   gt = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Iy() : e === "pt" ? Ny() : e === "ch" ? Ry() : e === "de" ? Dy() : e === "es" ? Py() : e === "fr" ? xy() : e === "it" ? jy() : e === "jp" ? zy() : e === "pl" ? Ly() : e === "ru" ? Uy() : e === "uk" ? Cy() : My()
+    return e === "en" ? Ny() : e === "pt" ? Iy() : e === "ch" ? Ry() : e === "de" ? Dy() : e === "es" ? Py() : e === "fr" ? xy() : e === "it" ? jy() : e === "jp" ? zy() : e === "pl" ? Ly() : e === "ru" ? Uy() : e === "uk" ? Cy() : My()
   },
   By = () => "You or someone in your network is making a lot of requests to the server. Try again later.",
   Ky = () => "Você ou alguém na sua rede está fazendo muitas solicitações ao servidor. Tente novamente mais tarde.",
@@ -2094,8 +2094,8 @@ const _n = () => "A punishment cache reload is already running",
   qv = () => "Você não pode revisar sua própria solicitação de correção.",
   Av = () => "不能审核自己提交的更正请求。",
   Sv = () => "Du kannst deine eigene Korrekturanfrage nicht prüfen.",
-  Iv = () => "No puedes revisar tu propia solicitud de corrección.",
-  Nv = () => "Tu ne peux pas examiner ta propre demande de correction.",
+  Nv = () => "No puedes revisar tu propia solicitud de corrección.",
+  Iv = () => "Tu ne peux pas examiner ta propre demande de correction.",
   Rv = () => "Non puoi revisionare la tua stessa richiesta di correzione.",
   Dv = () => "自分のリクエストはレビューできません。",
   Pv = () => "Nie możesz zweryfikować własnej prośby o poprawkę.",
@@ -2104,7 +2104,7 @@ const _n = () => "A punishment cache reload is already running",
   zv = () => "Bạn không thể duyệt yêu cầu của chính mình.",
   Lv = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? kv() : e === "pt" ? qv() : e === "ch" ? Av() : e === "de" ? Sv() : e === "es" ? Iv() : e === "fr" ? Nv() : e === "it" ? Rv() : e === "jp" ? Dv() : e === "pl" ? Pv() : e === "ru" ? xv() : e === "uk" ? jv() : zv()
+    return e === "en" ? kv() : e === "pt" ? qv() : e === "ch" ? Av() : e === "de" ? Sv() : e === "es" ? Nv() : e === "fr" ? Iv() : e === "it" ? Rv() : e === "jp" ? Dv() : e === "pl" ? Pv() : e === "ru" ? xv() : e === "uk" ? jv() : zv()
   },
   Uv = () => "This correction has already been reviewed.",
   Cv = () => "Esta correção já foi revisada.",
@@ -2160,15 +2160,15 @@ const _n = () => "A punishment cache reload is already running",
   qb = () => "Diese Allianz hat bereits die maximale Anzahl aktiver Einladungen",
   Ab = () => "Esta alianza ya tiene el número máximo de invitaciones activas",
   Sb = () => "Cette alliance a déjà le nombre maximal d'invitations actives",
-  Ib = () => "Questa alleanza ha già il numero massimo di inviti attivi",
-  Nb = () => "このアライアンスは有効な招待の上限に達しています",
+  Nb = () => "Questa alleanza ha già il numero massimo di inviti attivi",
+  Ib = () => "このアライアンスは有効な招待の上限に達しています",
   Rb = () => "Ten sojusz ma już maksymalną liczbę aktywnych zaproszeń",
   Db = () => "У этого альянса уже максимальное количество активных приглашений",
   Pb = () => "Цей альянс уже має максимальну кількість активних запрошень",
   xb = () => "Liên minh này đã đạt số lời mời đang hoạt động tối đa",
   jb = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Ob() : e === "pt" ? Tb() : e === "ch" ? kb() : e === "de" ? qb() : e === "es" ? Ab() : e === "fr" ? Sb() : e === "it" ? Ib() : e === "jp" ? Nb() : e === "pl" ? Rb() : e === "ru" ? Db() : e === "uk" ? Pb() : xb()
+    return e === "en" ? Ob() : e === "pt" ? Tb() : e === "ch" ? kb() : e === "de" ? qb() : e === "es" ? Ab() : e === "fr" ? Sb() : e === "it" ? Nb() : e === "jp" ? Ib() : e === "pl" ? Rb() : e === "ru" ? Db() : e === "uk" ? Pb() : xb()
   },
   zb = () => "Enter a valid discord.gg or discord.com/invite link",
   Lb = () => "Informe um link válido de discord.gg ou discord.com/invite",
@@ -2227,12 +2227,12 @@ const _n = () => "A punishment cache reload is already running",
   qE = () => "Questa funzione è già sbloccata",
   AE = () => "この機能はすでにロック解除されています",
   SE = () => "Ta funkcja jest już odblokowana",
-  IE = () => "Эта возможность уже разблокирована",
-  NE = () => "Цю можливість уже розблоковано",
+  NE = () => "Эта возможность уже разблокирована",
+  IE = () => "Цю можливість уже розблоковано",
   RE = () => "Tính năng này đã được mở khóa",
   yt = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? vE() : e === "pt" ? bE() : e === "ch" ? EE() : e === "de" ? OE() : e === "es" ? TE() : e === "fr" ? kE() : e === "it" ? qE() : e === "jp" ? AE() : e === "pl" ? SE() : e === "ru" ? IE() : e === "uk" ? NE() : RE()
+    return e === "en" ? vE() : e === "pt" ? bE() : e === "ch" ? EE() : e === "de" ? OE() : e === "es" ? TE() : e === "fr" ? kE() : e === "it" ? qE() : e === "jp" ? AE() : e === "pl" ? SE() : e === "ru" ? NE() : e === "uk" ? IE() : RE()
   },
   DE = () => "This alliance color requires Better Pallet",
   PE = () => "Esta cor da aliança requer a Paleta melhorada",
@@ -2298,8 +2298,8 @@ const _n = () => "A punishment cache reload is already running",
     const e = t.locale ?? _();
     return e === "en" ? mO() : e === "pt" ? gO() : e === "ch" ? wO() : e === "de" ? yO() : e === "es" ? vO() : e === "fr" ? bO() : e === "it" ? EO() : e === "jp" ? OO() : e === "pl" ? TO() : e === "ru" ? kO() : e === "uk" ? qO() : AO()
   },
-  IO = () => "This member already has access to the draft",
-  NO = () => "Este membro já tem acesso ao rascunho",
+  NO = () => "This member already has access to the draft",
+  IO = () => "Este membro já tem acesso ao rascunho",
   RO = () => "该成员已拥有此草稿的权限",
   DO = () => "Dieses Mitglied hat bereits Zugriff auf den Entwurf",
   PO = () => "Este miembro ya tiene acceso al borrador",
@@ -2312,7 +2312,7 @@ const _n = () => "A punishment cache reload is already running",
   MO = () => "Thành viên này đã có quyền truy cập bản nháp",
   BO = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? IO() : e === "pt" ? NO() : e === "ch" ? RO() : e === "de" ? DO() : e === "es" ? PO() : e === "fr" ? xO() : e === "it" ? jO() : e === "jp" ? zO() : e === "pl" ? LO() : e === "ru" ? UO() : e === "uk" ? CO() : MO()
+    return e === "en" ? NO() : e === "pt" ? IO() : e === "ch" ? RO() : e === "de" ? DO() : e === "es" ? PO() : e === "fr" ? xO() : e === "it" ? jO() : e === "jp" ? zO() : e === "pl" ? LO() : e === "ru" ? UO() : e === "uk" ? CO() : MO()
   },
   KO = () => "Unequip this version before removing it",
   $O = () => "Desequipe esta versão antes de removê-la",
@@ -2366,8 +2366,8 @@ const _n = () => "A punishment cache reload is already running",
   qT = () => "Escolha primeiro o local da sede no mapa",
   AT = () => "请先在地图上选择总部位置",
   ST = () => "Wähle zuerst den Standort des Hauptquartiers auf der Karte",
-  IT = () => "Elige primero la ubicación del cuartel general en el mapa",
-  NT = () => "Choisissez d'abord l'emplacement du quartier général sur la carte",
+  NT = () => "Elige primero la ubicación del cuartel general en el mapa",
+  IT = () => "Choisissez d'abord l'emplacement du quartier général sur la carte",
   RT = () => "Scegli prima la posizione del quartier generale sulla mappa",
   DT = () => "先にマップ上で拠点の場所を選択してください",
   PT = () => "Najpierw wybierz lokalizację siedziby na mapie",
@@ -2376,7 +2376,7 @@ const _n = () => "A punishment cache reload is already running",
   zT = () => "Hãy chọn vị trí trụ sở trên bản đồ trước",
   LT = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? kT() : e === "pt" ? qT() : e === "ch" ? AT() : e === "de" ? ST() : e === "es" ? IT() : e === "fr" ? NT() : e === "it" ? RT() : e === "jp" ? DT() : e === "pl" ? PT() : e === "ru" ? xT() : e === "uk" ? jT() : zT()
+    return e === "en" ? kT() : e === "pt" ? qT() : e === "ch" ? AT() : e === "de" ? ST() : e === "es" ? NT() : e === "fr" ? IT() : e === "it" ? RT() : e === "jp" ? DT() : e === "pl" ? PT() : e === "ru" ? xT() : e === "uk" ? jT() : zT()
   },
   UT = () => "Moving the headquarters requires a Change Headquarters credit",
   CT = () => "Mover a sede requer um crédito de Mudar Sede",
@@ -2432,15 +2432,15 @@ const _n = () => "A punishment cache reload is already running",
   qk = () => "Nicht genügend Hauptquartier-Ladungen",
   Ak = () => "Cargas del cuartel general insuficientes",
   Sk = () => "Charges du quartier général insuffisantes",
-  Ik = () => "Cariche del quartier generale insufficienti",
-  Nk = () => "拠点のチャージが足りません",
+  Nk = () => "Cariche del quartier generale insufficienti",
+  Ik = () => "拠点のチャージが足りません",
   Rk = () => "Za mało ładunków siedziby",
   Dk = () => "Недостаточно зарядов штаб-квартиры",
   Pk = () => "Недостатньо зарядів штаб-квартири",
   xk = () => "Không đủ lượt tô của trụ sở",
   jk = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? Ok() : e === "pt" ? Tk() : e === "ch" ? kk() : e === "de" ? qk() : e === "es" ? Ak() : e === "fr" ? Sk() : e === "it" ? Ik() : e === "jp" ? Nk() : e === "pl" ? Rk() : e === "ru" ? Dk() : e === "uk" ? Pk() : xk()
+    return e === "en" ? Ok() : e === "pt" ? Tk() : e === "ch" ? kk() : e === "de" ? qk() : e === "es" ? Ak() : e === "fr" ? Sk() : e === "it" ? Nk() : e === "jp" ? Ik() : e === "pl" ? Rk() : e === "ru" ? Dk() : e === "uk" ? Pk() : xk()
   },
   zk = () => "Nothing changed on the canvas",
   Lk = () => "Nada mudou no canvas",
@@ -2498,13 +2498,13 @@ const _n = () => "A punishment cache reload is already running",
   qq = () => "Un motif est obligatoire",
   Aq = () => "Il motivo è obbligatorio",
   Sq = () => "理由は必須です",
-  Iq = () => "Powód jest wymagany",
-  Nq = () => "Нужно указать причину",
+  Nq = () => "Powód jest wymagany",
+  Iq = () => "Нужно указать причину",
   Rq = () => "Потрібно вказати причину",
   Dq = () => "Cần nhập lý do",
   Ot = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? bq() : e === "pt" ? Eq() : e === "ch" ? Oq() : e === "de" ? Tq() : e === "es" ? kq() : e === "fr" ? qq() : e === "it" ? Aq() : e === "jp" ? Sq() : e === "pl" ? Iq() : e === "ru" ? Nq() : e === "uk" ? Rq() : Dq()
+    return e === "en" ? bq() : e === "pt" ? Eq() : e === "ch" ? Oq() : e === "de" ? Tq() : e === "es" ? kq() : e === "fr" ? qq() : e === "it" ? Aq() : e === "jp" ? Sq() : e === "pl" ? Nq() : e === "ru" ? Iq() : e === "uk" ? Rq() : Dq()
   },
   Pq = () => "This member already has an active headquarters timeout",
   xq = () => "Este membro já tem uma suspensão ativa da sede",
@@ -2565,10 +2565,10 @@ const _n = () => "A punishment cache reload is already running",
   qA = () => "Sojusz nie jest zarchiwizowany",
   AA = () => "Альянс не находится в архиве",
   SA = () => "Альянс не архівований",
-  IA = () => "Liên minh này chưa được lưu trữ",
-  NA = (r = {}, t = {}) => {
+  NA = () => "Liên minh này chưa được lưu trữ",
+  IA = (r = {}, t = {}) => {
     const e = t.locale ?? _();
-    return e === "en" ? wA() : e === "pt" ? yA() : e === "ch" ? vA() : e === "de" ? bA() : e === "es" ? EA() : e === "fr" ? OA() : e === "it" ? TA() : e === "jp" ? kA() : e === "pl" ? qA() : e === "ru" ? AA() : e === "uk" ? SA() : IA()
+    return e === "en" ? wA() : e === "pt" ? yA() : e === "ch" ? vA() : e === "de" ? bA() : e === "es" ? EA() : e === "fr" ? OA() : e === "it" ? TA() : e === "jp" ? kA() : e === "pl" ? qA() : e === "ru" ? AA() : e === "uk" ? SA() : NA()
   },
   RA = () => "The selected headquarters pixels have too much history to change at once. Select fewer pixels.",
   DA = () => "Os pixels selecionados têm histórico demais para alterar de uma vez. Selecione menos pixels.",
@@ -2609,8 +2609,8 @@ function nS(r, t) {
 var Ee, Oe;
 class aS {
   constructor(t) {
-    v(this, Ee, A(!0));
-    v(this, Oe, A(null));
+    v(this, Ee, S(!0));
+    v(this, Oe, S(null));
     this.url = t
   }
   get online() {
@@ -2689,7 +2689,7 @@ class l extends Error {
     super(t), this.message = t, this.status = e
   }
 }
-class TI extends Error {}
+class TN extends Error {}
 
 function iS(r) {
   return class extends r {
@@ -2738,7 +2738,7 @@ function iS(r) {
       if (e.status === i.CONFLICT) throw new Error(mp());
       if (e.status === i.FORBIDDEN) throw new Error(oh());
       if (e.status === i.TOO_MANY_REQUESTS) throw new Error(mt());
-      if (e.status === i.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(Ip());
+      if (e.status === i.UNAVAILABLE_FOR_LEGAL_REASONS) throw new Error(Np());
       if (e.status === i.LOCKED) throw new Error(ow());
       if (e.status === i.UNPROCESSABLE_ENTITY) throw new Error(_d());
       if (e.status === i.NOT_ACCEPTABLE) throw new Error(vw());
@@ -3761,14 +3761,14 @@ const oS = [{
   Ke = H,
   vS = H.seasons,
   Ut = H.seasons.length - 1,
-  kI = H.seasons[Ut].zoom,
-  qI = H.seasons[Ut].tileSize,
-  AI = H.permissions,
+  kN = H.seasons[Ut].zoom,
+  qN = H.seasons[Ut].tileSize,
+  AN = H.permissions,
   Ct = H.settings,
   bS = H.platforms.android,
-  SI = bS.googlePlayBilling.price;
+  SN = bS.googlePlayBilling.price;
 
-function II(r) {
+function NN(r) {
   return Ke.countries[r - 1]
 }
 
@@ -3830,7 +3830,7 @@ function kS(r) {
 
 function kt(r) {
   const t = (r == null ? void 0 : r.role) ?? (r == null ? void 0 : r.alliance_role);
-  return t === "admin" || t === "leader" ? t : "member"
+  return t === "mod" || t === "admin" || t === "leader" ? t : "member"
 }
 
 function qS(r) {
@@ -3872,7 +3872,7 @@ function qS(r) {
         })
       });
       if (e.status === i.OK) return e.json();
-      if (e.status === i.FORBIDDEN) throw new Error(S());
+      if (e.status === i.FORBIDDEN) throw new Error(A());
       if (e.status === i.BAD_REQUEST) {
         const n = await e.json().catch(() => ({}));
         throw new Error(n.error === "invalid_markdown" ? SO() : Gc())
@@ -4080,7 +4080,7 @@ function qS(r) {
         })
       });
       if (n.status === i.OK) return;
-      if (n.status === i.FORBIDDEN) throw new Error(S());
+      if (n.status === i.FORBIDDEN) throw new Error(A());
       const a = await n.json().catch(() => ({}));
       throw a.error === "headquarters_credit_required" ? new Error(JT()) : a.error === "headquarters_not_unlocked" ? new Error(Et()) : new Error(o())
     }
@@ -4219,7 +4219,7 @@ function qS(r) {
         })
       });
       if (a.status === i.OK) return a.json();
-      if (a.status === i.FORBIDDEN) throw new Error(S());
+      if (a.status === i.FORBIDDEN) throw new Error(A());
       const s = await a.json().catch(() => ({}));
       throw s.error === "headquarters_timeout_active" ? new Error(Hq()) : s.error === "invalid_timeout_reason" ? new Error(Ot()) : new Error(o())
     }
@@ -4232,7 +4232,7 @@ function qS(r) {
         })
       });
       if (n.status === i.OK) return;
-      if (n.status === i.FORBIDDEN) throw new Error(S());
+      if (n.status === i.FORBIDDEN) throw new Error(A());
       const a = await n.json().catch(() => ({}));
       throw a.error === "headquarters_timeout_inactive" ? new Error(aA()) : a.error === "invalid_timeout_reason" ? new Error(Ot()) : new Error(o())
     }
@@ -4246,14 +4246,14 @@ function qS(r) {
         credentials: "include"
       });
       if (e.status === i.OK) return e.json();
-      throw e.status === i.FORBIDDEN ? new Error(S()) : new Error(V())
+      throw e.status === i.FORBIDDEN ? new Error(A()) : new Error(V())
     }
     async getAllianceInvites() {
       const t = await this.request("/alliance/invites", {
         credentials: "include"
       });
       if (t.status === i.OK) return t.json();
-      throw t.status === i.FORBIDDEN ? new Error(S()) : new Error(o())
+      throw t.status === i.FORBIDDEN ? new Error(A()) : new Error(o())
     }
     async createAllianceInvite(t) {
       const e = await this.request("/alliance/invites", {
@@ -4265,21 +4265,21 @@ function qS(r) {
         })
       });
       if (e.status === i.OK) return e.json();
-      throw e.status === i.BAD_REQUEST ? (await e.json().catch(() => ({}))).error === "max_invites" ? new Error(jb()) : new Error(o()) : e.status === i.FORBIDDEN ? new Error(S()) : new Error(o())
+      throw e.status === i.BAD_REQUEST ? (await e.json().catch(() => ({}))).error === "max_invites" ? new Error(jb()) : new Error(o()) : e.status === i.FORBIDDEN ? new Error(A()) : new Error(o())
     }
     async revokeAllianceInvite(t) {
       const e = await this.request(`/alliance/invites/${t}/revoke`, {
         method: "POST",
         credentials: "include"
       });
-      if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(S()) : new Error(o())
+      if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(A()) : new Error(o())
     }
     async getAllianceGallery(t) {
       const e = new URLSearchParams({
         sort: t.sort,
         page: String(t.page)
       });
-      t.query && e.set("q", t.query);
+      t.query && e.set("q", t.query), t.joinPolicy && e.set("joinPolicy", t.joinPolicy);
       const n = await this.request(`/alliances?${e.toString()}`, {});
       if (n.status === i.OK) return n.json();
       throw new Error(o())
@@ -4360,7 +4360,7 @@ function qS(r) {
         credentials: "include"
       });
       if (e.status === i.OK) return e.json();
-      throw e.status === i.FORBIDDEN ? new Error(S()) : new Error(o())
+      throw e.status === i.FORBIDDEN ? new Error(A()) : new Error(o())
     }
     async reviewAllianceJoinRequest(t, e) {
       const n = await this.request(`/alliance/join-requests/${t}/review`, {
@@ -4372,7 +4372,7 @@ function qS(r) {
       });
       if (n.status === i.OK) return "success";
       if (n.status === i.CONFLICT) return "stale";
-      throw n.status === i.FORBIDDEN ? new Error(S()) : new Error(o())
+      throw n.status === i.FORBIDDEN ? new Error(A()) : new Error(o())
     }
     async kickAllianceMember(t) {
       const e = await this.request("/alliance/kick", {
@@ -4382,7 +4382,7 @@ function qS(r) {
           kickedUserId: t
         })
       });
-      if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(S()) : new Error(o())
+      if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(A()) : new Error(o())
     }
     async removeAllianceAdmin(t) {
       const e = await this.request("/alliance/remove-admin", {
@@ -4392,7 +4392,34 @@ function qS(r) {
           demotedUserId: t
         })
       });
-      if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(S()) : new Error(o())
+      if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(A()) : new Error(o())
+    }
+    async setOwnAllianceMemberRole(t, e) {
+      const n = await this.request(`/alliance/members/${t}/role`, {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          role: e
+        })
+      });
+      if (n.status !== i.OK) throw n.status === i.FORBIDDEN ? new Error(A()) : new Error(o())
+    }
+    async getAllianceRolePermissions() {
+      const t = await this.request("/alliance/role-permissions", {
+        credentials: "include"
+      });
+      if (t.status === i.OK) return t.json();
+      throw t.status === i.FORBIDDEN ? new Error(A()) : new Error(o())
+    }
+    async updateAllianceRolePermissions(t) {
+      const e = await this.request("/alliance/role-permissions", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          roles: t
+        })
+      });
+      if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(A()) : new Error(o())
     }
     async transferAllianceLeadership(t) {
       const e = await this.request("/alliance/transfer-leadership", {
@@ -4402,7 +4429,7 @@ function qS(r) {
           newLeaderUserId: t
         })
       });
-      if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(S()) : new Error(o())
+      if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(A()) : new Error(o())
     }
     async updateAllianceSettings(t) {
       const e = await this.request("/alliance/settings", {
@@ -4410,7 +4437,7 @@ function qS(r) {
         credentials: "include",
         body: JSON.stringify(t)
       });
-      if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(S()) : new Error(o())
+      if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(A()) : new Error(o())
     }
     async setAllianceDiscordInvite(t) {
       const e = await this.request("/alliance/discord-invite", {
@@ -4423,7 +4450,7 @@ function qS(r) {
       if (e.status !== i.OK) {
         {
           if (e.status === i.BAD_REQUEST) throw new Error(Yb());
-          if (e.status === i.FORBIDDEN) throw new Error(S())
+          if (e.status === i.FORBIDDEN) throw new Error(A())
         }
         throw new Error(o())
       }
@@ -4434,7 +4461,7 @@ function qS(r) {
           credentials: "include"
         });
       if (n.status === i.OK) return n.json();
-      throw n.status === i.FORBIDDEN ? new Error(S()) : new Error(o())
+      throw n.status === i.FORBIDDEN ? new Error(A()) : new Error(o())
     }
     async getAllianceNotificationPreferences() {
       const t = await this.request("/alliance/notification-preferences", {
@@ -4675,17 +4702,17 @@ function qS(r) {
       const D = s.headers.get("X-Alliance-Canvas-Anchor-Latitude"),
         x = s.headers.get("X-Alliance-Canvas-Anchor-Longitude"),
         q = Number(D),
-        I = Number(x),
-        N = D !== null && x !== null && Number.isFinite(q) && Number.isFinite(I) ? {
+        N = Number(x),
+        I = D !== null && x !== null && Number.isFinite(q) && Number.isFinite(N) ? {
           latitude: q,
-          longitude: I
+          longitude: N
         } : void 0;
       return {
         bounds: e,
         paintedBy: f,
         colors: k,
         eventIds: g,
-        anchor: N
+        anchor: I
       }
     }
     async getAdminAllianceHqAreaChunk(t, e, n) {
@@ -4931,7 +4958,7 @@ function qS(r) {
       });
       if (n.status === i.BAD_REQUEST) {
         const a = await n.json().catch(() => ({}));
-        throw (a == null ? void 0 : a.error) === "user_not_found" ? new Error(Eb()) : (a == null ? void 0 : a.error) === "user_already_in_alliance" ? new Error(gA()) : (a == null ? void 0 : a.error) === "alliance_not_archived" ? new Error(NA()) : new Error(o())
+        throw (a == null ? void 0 : a.error) === "user_not_found" ? new Error(Eb()) : (a == null ? void 0 : a.error) === "user_already_in_alliance" ? new Error(gA()) : (a == null ? void 0 : a.error) === "alliance_not_archived" ? new Error(IA()) : new Error(o())
       }
       if (n.status !== i.OK) throw new l(o(), n.status)
     }
@@ -4966,7 +4993,7 @@ function qS(r) {
         method: "POST",
         credentials: "include"
       });
-      if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(S()) : new Error(o())
+      if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(A()) : new Error(o())
     }
     async banAllianceUser(t) {
       const e = await this.request("/alliance/ban", {
@@ -4976,7 +5003,7 @@ function qS(r) {
         method: "POST",
         credentials: "include"
       });
-      if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(S()) : new Error(o())
+      if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(A()) : new Error(o())
     }
     async equipFlag(t) {
       if ((await this.request(`/flag/equip/${t}`, {
@@ -4992,7 +5019,7 @@ function qS(r) {
         method: "POST",
         credentials: "include"
       });
-      if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(S()) : new Error(o())
+      if (e.status !== i.OK) throw e.status === i.FORBIDDEN ? new Error(A()) : new Error(o())
     }
   }
 }
@@ -5143,7 +5170,7 @@ function SS(r) {
   }
 }
 
-function IS(r) {
+function NS(r) {
   return class extends r {
     async getUserFrames() {
       const t = await this.request("/me/frames", {
@@ -5290,7 +5317,7 @@ const K = {
   second: 1e3
 };
 
-function NI(r) {
+function IN(r) {
   const t = Math.floor(r / K.hour);
   r -= t * K.hour;
   const e = Math.floor(r / K.minute);
@@ -5299,7 +5326,7 @@ function NI(r) {
   return t > 0 ? `${t}:${e.toString().padStart(2,"0")}:${a}` : `${e}:${a}`
 }
 
-function RI(r) {
+function RN(r) {
   const t = r.getFullYear(),
     e = String(r.getMonth() + 1).padStart(2, "0"),
     n = String(r.getDate()).padStart(2, "0"),
@@ -5308,7 +5335,7 @@ function RI(r) {
     c = String(r.getSeconds()).padStart(2, "0");
   return `${t}-${e}-${n} ${a}:${s}:${c}`
 }
-const NS = 30 * K.minute;
+const IS = 30 * K.minute;
 
 function RS(r) {
   return class extends r {
@@ -5349,7 +5376,7 @@ function RS(r) {
       throw new Error(V())
     }
     refreshHotspotsIfStale() {
-      Date.now() - this.lastHotspotRequestAt < NS || (this.lastHotspotRequestAt = Date.now(), this.request("/map/hotspots", {
+      Date.now() - this.lastHotspotRequestAt < IS || (this.lastHotspotRequestAt = Date.now(), this.request("/map/hotspots", {
         credentials: "include",
         keepalive: !0,
         throwOnStatus: !1
@@ -5397,7 +5424,7 @@ function DS(r) {
     }
   }
 }
-const DI = {
+const DN = {
     griefing: wu(),
     "multi-accounting": uf(),
     "hate-speech": Fu(),
@@ -5406,16 +5433,16 @@ const DI = {
     "inappropriate-content": ml(),
     other: ni()
   },
-  PI = {
+  PN = {
     doxxing: co(),
     "hate-speech": nl(),
     griefing: Ru(),
     "multi-accounting": Ef(),
     bot: Fa(),
-    "inappropriate-content": Il(),
+    "inappropriate-content": Nl(),
     other: mi()
   },
-  xI = {
+  xN = {
     doxxing: "text-red-600",
     "hate-speech": "text-red-400",
     "inappropriate-content": "text-amber-500",
@@ -5433,7 +5460,7 @@ const DI = {
     other: 5,
     griefing: 6
   },
-  jI = {
+  jN = {
     griefing: "topic-2",
     "inappropriate-content": "topic-1",
     bot: "topic-3",
@@ -5450,12 +5477,12 @@ function Mt(r) {
   return Number.isFinite(e) ? e : null
 }
 
-function zI(r, t = Date.now()) {
+function zN(r, t = Date.now()) {
   const e = Mt(r);
   return e === null ? !1 : e - t >= PS
 }
 
-function LI(r, t = Date.now()) {
+function LN(r, t = Date.now()) {
   const e = Mt(r);
   if (e === null || e <= t) return {
     days: 0,
@@ -6137,7 +6164,7 @@ function At(r, t) {
   return e
 }
 
-function UI(r, t) {
+function UN(r, t) {
   const e = {};
   for (const n of r) {
     const a = t(n);
@@ -6304,14 +6331,14 @@ function LS(r) {
       const s = At(t, d => `t=(${d.tile[0]},${d.tile[1]}),s=${d.season}`),
         u = (await Promise.all(Object.values(s).map(async d => {
           const [f, k] = d[0].tile, g = d[0].season, D = {
-            colors: d.map(N => N.colorIdx),
-            coords: d.flatMap(N => N.pixel),
+            colors: d.map(I => I.colorIdx),
+            coords: d.flatMap(I => I.pixel),
             csid: n
-          }, x = JSON.stringify(D), q = e(g, f, k), I = await F.getHeaders(x);
+          }, x = JSON.stringify(D), q = e(g, f, k), N = await F.getHeaders(x);
           return this.request(q, {
             method: "POST",
             body: x,
-            headers: I,
+            headers: N,
             credentials: "include"
           })
         }))).filter(d => d.status !== i.OK);
@@ -6393,8 +6420,8 @@ function LS(r) {
         D = new Uint32Array(g),
         x = new Uint8Array(g);
       for (let q = 0; q < g; q++) {
-        const I = q * 5;
-        D[q] = k.getUint32(I, !0), x[q] = k.getUint8(I + 4)
+        const N = q * 5;
+        D[q] = k.getUint32(N, !0), x[q] = k.getUint8(N + 4)
       }
       return {
         paintedBy: D,
@@ -6418,11 +6445,11 @@ function US(r) {
     c = Number.NEGATIVE_INFINITY,
     u = Number.NEGATIVE_INFINITY;
   const d = r.map(q => {
-      const I = Math.round(q.tile[0] * n + q.pixel[0]),
-        N = Math.round(q.tile[1] * n + q.pixel[1]);
-      return I < a && (a = I), N < s && (s = N), I > c && (c = I), N > u && (u = N), {
-        x: I,
-        y: N,
+      const N = Math.round(q.tile[0] * n + q.pixel[0]),
+        I = Math.round(q.tile[1] * n + q.pixel[1]);
+      return N < a && (a = N), I < s && (s = I), N > c && (c = N), I > u && (u = I), {
+        x: N,
+        y: I,
         colorIdx: q.colorIdx
       }
     }),
@@ -6432,16 +6459,16 @@ function US(r) {
   const g = new Uint8ClampedArray(f * k * 4);
   for (const {
       x: q,
-      y: I,
-      colorIdx: N
+      y: N,
+      colorIdx: I
     }
     of d) {
-    const j = (x = Ke.colors) == null ? void 0 : x[N];
-    if (!j) throw new Error(`Unknown palette color index: ${N}`);
+    const j = (x = Ke.colors) == null ? void 0 : x[I];
+    if (!j) throw new Error(`Unknown palette color index: ${I}`);
     const te = q - a,
-      ze = ((I - s) * f + te) * 4,
+      ze = ((N - s) * f + te) * 4,
       [Ht, Gt, Vt] = j.rgb;
-    g[ze] = Ht, g[ze + 1] = Gt, g[ze + 2] = Vt, g[ze + 3] = N === 0 ? 1 : 255
+    g[ze] = Ht, g[ze + 1] = Gt, g[ze + 2] = Vt, g[ze + 3] = I === 0 ? 1 : 255
   }
   return {
     data: g,
@@ -6515,8 +6542,8 @@ function BS(r) {
     }
   }
 }
-class KS extends iS(sS(qS(AS(SS(IS(RS(DS(xS(jS(zS(LS(BS(aS))))))))))))) {}
-const $ = new KS(Nt);
+class KS extends iS(sS(qS(AS(SS(NS(RS(DS(xS(jS(zS(LS(BS(aS))))))))))))) {}
+const $ = new KS(It);
 typeof window < "u" && Xt(() => {
   let r = $.online;
   Zt(() => {
@@ -6576,7 +6603,7 @@ class HS {
   }
 }
 
-function CI(r) {
+function CN(r) {
   return new Promise((t, e) => {
     const n = new FileReader;
     n.onload = () => {
@@ -6590,7 +6617,7 @@ function CI(r) {
   })
 }
 
-function MI(r) {
+function MN(r) {
   if (typeof FileReader > "u") {
     const t = r.type || "application/octet-stream";
     return r.arrayBuffer().then(e => `data:${t};base64,${FS(new Uint8Array(e))}`)
@@ -6608,7 +6635,7 @@ function MI(r) {
   })
 }
 
-function BI(r) {
+function BN(r) {
   if (!r.startsWith("data:")) throw new Error("Could not parse data URL");
   const t = r.indexOf(",");
   if (t === -1) throw new Error("Could not parse data URL");
@@ -6628,7 +6655,7 @@ function BI(r) {
   })
 }
 
-function KI(...r) {
+function KN(...r) {
   return r.filter(Boolean).join(" ")
 }
 const GS = typeof document < "u";
@@ -6636,8 +6663,8 @@ let St = 0;
 var Te, ke, qe;
 class VS {
   constructor() {
-    v(this, Te, A(Be([])));
-    v(this, ke, A(Be([])));
+    v(this, Te, S(Be([])));
+    v(this, ke, S(Be([])));
     v(this, qe, t => {
       const e = this.toasts.findIndex(n => n.id === t);
       return e === -1 ? null : e
@@ -6830,7 +6857,7 @@ function WS(r, t) {
   })
 }
 var Ge;
-class $I {
+class $N {
   constructor() {
     v(this, Ge, ne(() => P.toasts.filter(t => !t.dismiss)))
   }
@@ -6852,14 +6879,14 @@ const JS = WS,
     loading: P.loading,
     getActiveToasts: () => P.toasts.filter(r => !r.dismiss)
   });
-var Ae, Se, Ie, Ne, Re, De, Pe, xe;
+var Ae, Se, Ne, Ie, Re, De, Pe, xe;
 class XS {
   constructor() {
     w(this, "channel", new BroadcastChannel("user-channel"));
-    v(this, Ae, A());
-    v(this, Se, A(!0));
-    v(this, Ie, A());
-    v(this, Ne, A(Date.now()));
+    v(this, Ae, S());
+    v(this, Se, S(!0));
+    v(this, Ne, S());
+    v(this, Ie, S(Date.now()));
     v(this, Re, ne(() => {
       if (!this.data) return;
       const t = this.data.charges;
@@ -6897,16 +6924,16 @@ class XS {
     T(h(this, Se), t, !0)
   }
   get notificationCount() {
-    return E(h(this, Ie))
-  }
-  set notificationCount(t) {
-    T(h(this, Ie), t, !0)
-  }
-  get lastFetch() {
     return E(h(this, Ne))
   }
+  set notificationCount(t) {
+    T(h(this, Ne), t, !0)
+  }
+  get lastFetch() {
+    return E(h(this, Ie))
+  }
   set lastFetch(t) {
-    T(h(this, Ne), t)
+    T(h(this, Ie), t)
   }
   get charges() {
     return E(h(this, Re))
@@ -6970,7 +6997,7 @@ class XS {
     return $S((e = this.data) == null ? void 0 : e.permissions, t)
   }
 }
-Ae = new WeakMap, Se = new WeakMap, Ie = new WeakMap, Ne = new WeakMap, Re = new WeakMap, De = new WeakMap, Pe = new WeakMap, xe = new WeakMap;
+Ae = new WeakMap, Se = new WeakMap, Ne = new WeakMap, Ie = new WeakMap, Re = new WeakMap, De = new WeakMap, Pe = new WeakMap, xe = new WeakMap;
 const W = new XS;
 let y;
 const L = new Array(128).fill(void 0);
@@ -7021,7 +7048,7 @@ function ZS(r) {
   r < 132 || (L[r] = oe, oe = r)
 }
 
-function It(r) {
+function Nt(r) {
   const t = m(r);
   return ZS(r), t
 }
@@ -7036,7 +7063,7 @@ const Me = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
       throw Error("TextEncoder not available")
     }
   },
-  eI = typeof Me.encodeInto == "function" ? function(r, t) {
+  eN = typeof Me.encodeInto == "function" ? function(r, t) {
     return Me.encodeInto(r, t)
   } : function(r, t) {
     const e = Me.encode(r);
@@ -7064,31 +7091,31 @@ function je(r, t, e) {
   if (c !== n) {
     c !== 0 && (r = r.slice(c)), a = e(a, n, n = c + r.length * 3, 1) >>> 0;
     const u = Ue().subarray(a + c, a + n),
-      d = eI(r, u);
+      d = eN(r, u);
     c += d.written, a = e(a, n, c, 1) >>> 0
   }
   return Q = c, a
 }
 
-function tI(r) {
+function tN(r) {
   const t = je(r, y.__wbindgen_export_1, y.__wbindgen_export_2),
     e = Q;
   y.set_discord_id(t, e)
 }
 
-function rI(r) {
+function rN(r) {
   const t = je(r, y.__wbindgen_export_1, y.__wbindgen_export_2),
     e = Q;
   y.set_fingerprint(t, e)
 }
 
-function nI(r) {
+function nN(r) {
   const t = je(r, y.__wbindgen_export_1, y.__wbindgen_export_2),
     e = Q;
   y.set_detected_bot(t, e)
 }
 
-function aI(r) {
+function aN(r) {
   let t, e;
   try {
     const s = y.__wbindgen_add_to_stack_pointer(-16),
@@ -7107,24 +7134,24 @@ function Ye(r) {
   y.set_user_id(r)
 }
 
-function iI(r) {
+function iN(r) {
   y.set_cf_likely_automated(r)
 }
 
-function sI(r) {
+function sN(r) {
   y.set_automated_clicks(r)
 }
 
-function oI(r) {
+function oN(r) {
   const t = je(r, y.__wbindgen_export_1, y.__wbindgen_export_2),
     e = Q;
   y.request_url(t, e)
 }
 
-function cI(r) {
+function cN(r) {
   y.set_automated_browser(r)
 }
-async function uI(r, t) {
+async function uN(r, t) {
   if (typeof Response == "function" && r instanceof Response) {
     if (typeof WebAssembly.instantiateStreaming == "function") try {
       return await WebAssembly.instantiateStreaming(r, t)
@@ -7143,7 +7170,7 @@ async function uI(r, t) {
   }
 }
 
-function lI() {
+function lN() {
   const r = {};
   return r.wbg = {}, r.wbg.__wbg_buffer_609cc3eee51ed158 = function(t) {
     const e = m(t).buffer;
@@ -7218,7 +7245,7 @@ function lI() {
     return O(e)
   }, r.wbg.__wbg_randomFillSync_ac0988aba3254290 = function() {
     return C(function(t, e) {
-      m(t).randomFillSync(It(e))
+      m(t).randomFillSync(Nt(e))
     }, arguments)
   }, r.wbg.__wbg_require_60cc747a6bc5215a = function() {
     return C(function() {
@@ -7270,7 +7297,7 @@ function lI() {
     const e = m(t);
     return O(e)
   }, r.wbg.__wbindgen_object_drop_ref = function(t) {
-    It(t)
+    Nt(t)
   }, r.wbg.__wbindgen_string_new = function(t, e) {
     const n = Ce(t, e);
     return O(n)
@@ -7279,7 +7306,7 @@ function lI() {
   }, r
 }
 
-function _I(r, t) {
+function _N(r, t) {
   return y = r.exports, Ft.__wbindgen_wasm_module = t, Y = null, ie = null, y
 }
 async function Ft(r) {
@@ -7287,19 +7314,19 @@ async function Ft(r) {
   typeof r < "u" && (Object.getPrototypeOf(r) === Object.prototype ? {
     module_or_path: r
   } = r : console.warn("using deprecated parameters for the initialization function; pass a single object instead")), typeof r > "u" && (r = new URL("pawtect_wasm_bg.wasm", import.meta.url));
-  const t = lI();
+  const t = lN();
   (typeof r == "string" || typeof Request == "function" && r instanceof Request || typeof URL == "function" && r instanceof URL) && (r = fetch(r));
   const {
     instance: e,
     module: n
-  } = await uI(await r, t);
-  return _I(e, n)
+  } = await uN(await r, t);
+  return _N(e, n)
 }
-class dI {
+class dN {
   constructor() {
     w(this, "interval");
     w(this, "storagesEmpty", !1);
-    w(this, "storages", [new He, new Ze, new et, new hI]);
+    w(this, "storages", [new He, new Ze, new et, new hN]);
     w(this, "pawtectLoaded");
     w(this, "pawtectError")
   }
@@ -7340,9 +7367,9 @@ class dI {
         await Ft(er), (t = W.data) != null && t.id && Ye(W.data.id);
         const e = fetch;
         return Object.assign(window, {
-          fetch: fI((n, a) => {
+          fetch: fN((n, a) => {
             let s = null;
-            return n instanceof Request ? s = n.url : n instanceof URL ? s = n.href : typeof n == "string" && (s = n), s !== null && !s.startsWith("/") && oI(s), e.call(window, n, a)
+            return n instanceof Request ? s = n.url : n instanceof URL ? s = n.href : typeof n == "string" && (s = n), s !== null && !s.startsWith("/") && oN(s), e.call(window, n, a)
           })
         }), !0
       } catch (e) {
@@ -7354,7 +7381,7 @@ class dI {
     await this.loadPawtect(), Ye(t)
   }
   async setCfLikelyAutomated(t) {
-    await this.loadPawtect(), iI(t)
+    await this.loadPawtect(), iN(t)
   }
   isPawtectReady() {
     return this.pawtectLoaded ?? Promise.resolve(!1)
@@ -7373,11 +7400,11 @@ class dI {
       [a, s] = await Promise.all([tt(), Qr().catch(c => (console.error(c), {
         bot: !1
       }))]);
-    return Ye(W.data.id), tI(W.data.discordId ?? ""), rI(a), cI(n), sI(Qe.automatedClicks), s.bot && nI(s.botKind ?? "unknown"), aI(t)
+    return Ye(W.data.id), tN(W.data.discordId ?? ""), rN(a), cN(n), sN(Qe.automatedClicks), s.bot && nN(s.botKind ?? "unknown"), aN(t)
   }
 }
 
-function fI(r) {
+function fN(r) {
   return r.bind().bind()
 }
 const M = class M {
@@ -7453,7 +7480,7 @@ const J = class J {
 };
 w(J, "KEY", "_pf_uid"), w(J, "MAX_AGE", 3600 * 24 * 365);
 let et = J;
-class hI {
+class hN {
   constructor() {
     w(this, "packed")
   }
@@ -7470,7 +7497,7 @@ class hI {
     this.packed = BigInt(t.timestamp) << 32n | BigInt(t.userId) & 0xffffffffn
   }
 }
-const F = new dI;
+const F = new dN;
 export {
-  II as $, Fa as A, Ra as B, uf as C, qt as D, Xe as E, bS as F, SI as G, Lv as H, P as I, KI as J, $I as K, NI as L, OI as M, R as N, bI as O, kI as P, vI as Q, EI as R, AI as S, K as T, Zr as U, qm as V, TI as W, Ut as X, Ct as Y, ub as Z, Eb as _, DI as a, vc as a0, vS as a1, MI as a2, BI as a3, ae as a4, l as a5, oq as a6, rO as a7, oE as a8, RI as a9, HS as aa, Kt as ab, zI as ac, LI as ad, Pw as ae, zg as af, PI as ag, jI as ah, UI as ai, Kl as aj, ct as ak, $ as b, qI as c, Ke as d, i as e, o as f, Qe as g, ft as h, F as i, Dt as j, ee as k, CI as l, Ru as m, Yf as n, wu as o, Il as p, ml as q, em as r, xI as s, QS as t, W as u, se as v, nl as w, Fu as x, co as y, Ws as z
+  NN as $, Fa as A, Ra as B, uf as C, qt as D, Xe as E, bS as F, SN as G, Lv as H, P as I, KN as J, $N as K, IN as L, ON as M, R as N, bN as O, kN as P, vN as Q, EN as R, AN as S, K as T, Zr as U, qm as V, TN as W, Ut as X, Ct as Y, ub as Z, Eb as _, DN as a, vc as a0, vS as a1, MN as a2, BN as a3, ae as a4, l as a5, oq as a6, rO as a7, oE as a8, RN as a9, HS as aa, Kt as ab, zN as ac, LN as ad, Pw as ae, zg as af, PN as ag, jN as ah, UN as ai, Kl as aj, ct as ak, $ as b, qN as c, Ke as d, i as e, o as f, Qe as g, ft as h, F as i, Dt as j, ee as k, CN as l, Ru as m, Yf as n, wu as o, Nl as p, ml as q, em as r, xN as s, QS as t, W as u, se as v, nl as w, Fu as x, co as y, Ws as z
 };

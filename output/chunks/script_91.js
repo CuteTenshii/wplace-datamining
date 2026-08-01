@@ -1,38 +1,22 @@
 import {
-  g as t
+  g as n
 } from "./BhCkpOlh.js";
-const u = () => "Remove",
-  s = () => "Remover",
-  o = () => "移除",
-  i = () => "Entfernen",
-  c = () => "Eliminar",
-  v = () => "Retirer",
-  a = () => "Rimuovi",
-  f = () => "削除",
-  _ = () => "Usuń",
-  m = () => "Удалить",
-  p = () => "Видалити",
-  l = () => "Xóa",
-  X = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? u() : r === "pt" ? s() : r === "ch" ? o() : r === "de" ? i() : r === "es" ? c() : r === "fr" ? v() : r === "it" ? a() : r === "jp" ? f() : r === "pl" ? _() : r === "ru" ? m() : r === "uk" ? p() : l()
-  },
-  d = () => "Save",
-  h = () => "Salvar",
-  j = () => "保存",
-  k = () => "Speichern",
-  R = () => "Guardar",
-  S = () => "Enregistrer",
-  g = () => "Salva",
-  E = () => "保存",
-  L = () => "Zapisz",
-  x = () => "Сохранить",
-  z = () => "Зберегти",
-  G = () => "Lưu",
-  Z = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? d() : r === "pt" ? h() : r === "ch" ? j() : r === "de" ? k() : r === "es" ? R() : r === "fr" ? S() : r === "it" ? g() : r === "jp" ? E() : r === "pl" ? L() : r === "ru" ? x() : r === "uk" ? z() : G()
+const e = () => "Add",
+  d = () => "Adicionar",
+  u = () => "添加",
+  o = () => "Hinzufügen",
+  a = () => "Añadir",
+  i = () => "Ajouter",
+  c = () => "Aggiungi",
+  s = () => "追加",
+  f = () => "Dodaj",
+  _ = () => "Добавить",
+  p = () => "Додати",
+  l = () => "Thêm",
+  j = (g = {}, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? e() : r === "pt" ? d() : r === "ch" ? u() : r === "de" ? o() : r === "es" ? a() : r === "fr" ? i() : r === "it" ? c() : r === "jp" ? s() : r === "pl" ? f() : r === "ru" ? _() : r === "uk" ? p() : l()
   };
 export {
-  X as r, Z as s
+  j as a
 };
