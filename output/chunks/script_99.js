@@ -1,62 +1,52 @@
-import {
-  g as n
-} from "./BhCkpOlh.js";
 import "./Bzak7iHL.js";
 import {
-  a as s,
-  k as u
-} from "./sZguypfn.js";
+  w as g,
+  f as n,
+  a as o,
+  k as v
+} from "./DUZ_qUVk.js";
 import {
-  b as d
-} from "./Cy1wQjPv.js";
+  i as w
+} from "./BLc2SwOK.js";
 import {
-  r as o
-} from "./BwfjFjwf.js";
-const _ = () => "Enter a valid user ID",
-  p = () => "Informe um ID válido",
-  c = () => "请输入有效的用户 ID",
-  a = () => "Gib eine gültige Benutzer-ID ein",
-  l = () => "Introduce un ID de usuario válido",
-  f = () => "Entrez un ID d’utilisateur valide",
-  v = () => "Inserisci un ID valido",
-  m = () => "有効なユーザーIDを入力してください。",
-  I = () => "Wprowadź prawidłowe ID użytkownika",
-  g = () => "Введите корректный ID пользователя",
-  D = () => "Введіть коректний ID користувача",
-  R = () => "Nhập một ID người dùng hợp lệ",
-  N = (t = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? _() : r === "pt" ? p() : r === "ch" ? c() : r === "de" ? a() : r === "es" ? l() : r === "fr" ? f() : r === "it" ? v() : r === "jp" ? m() : r === "pl" ? I() : r === "ru" ? g() : r === "uk" ? D() : R()
-  },
-  h = () => "Reddit",
-  w = () => "Reddit",
-  q = () => "Reddit",
-  k = () => "Reddit",
-  T = () => "Reddit",
-  $ = () => "Reddit",
-  j = () => "Reddit",
-  x = () => "Reddit",
-  b = () => "Reddit",
-  S = () => "Reddit",
-  y = () => "Reddit",
-  z = () => "Reddit",
-  W = (t = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? h() : r === "pt" ? w() : r === "ch" ? q() : r === "de" ? k() : r === "es" ? T() : r === "fr" ? $() : r === "it" ? j() : r === "jp" ? x() : r === "pl" ? b() : r === "ru" ? S() : r === "uk" ? y() : z()
-  };
-var B = new Set(["$$slots", "$$events", "$$legacy"]),
-  E = u('<svg><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"></path></svg>');
+  b as e
+} from "./M4i-R8Gk.js";
+import {
+  r as c
+} from "./DXFW01RN.js";
+var d = new Set(["$$slots", "$$events", "$$legacy", "filled"]),
+  h = v('<svg><path d="M160-160v-100.77l527.23-527.77q6.15-5.48 13.57-8.47 7.43-2.99 15.49-2.99t15.62 2.54q7.55 2.54 13.94 9.15l42.69 42.93q6.61 6.38 9.04 14 2.42 7.63 2.42 15.25 0 8.13-2.74 15.56-2.74 7.42-8.72 13.57L260.77-160H160Zm540.15-496.46L760-715.54 715.54-760l-59.08 59.85 43.69 43.69Z"></path></svg>'),
+  _ = v('<svg><path d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"></path></svg>');
 
-function A(t, e) {
-  let r = o(e, B);
-  var i = E();
-  d(i, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...r
-  })), s(t, i)
+function L(i, s) {
+  let a = c(s, d);
+  var l = g(),
+    m = n(l);
+  {
+    var f = t => {
+        var r = h();
+        e(r, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...a
+        })), o(t, r)
+      },
+      p = t => {
+        var r = _();
+        e(r, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...a
+        })), o(t, r)
+      };
+    w(m, t => {
+      s.filled ? t(f) : t(p, -1)
+    })
+  }
+  o(i, l)
 }
 export {
-  A as S, N as p, W as r
+  L as E
 };

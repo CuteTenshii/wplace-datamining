@@ -27,7 +27,7 @@ import {
   y as Zt,
   B as at,
   u as ne
-} from "./sZguypfn.js";
+} from "./DUZ_qUVk.js";
 import {
   g as _
 } from "./BhCkpOlh.js";
@@ -901,22 +901,22 @@ function ln() {
   return Z[4] = t, t
 }
 
-function yI(r) {
+function vI(r) {
   const t = R.current;
   !t || t.tier === 4 || (t.resolve(r), R.current = null)
 }
 
-function vI() {
+function bI() {
   const r = R.current;
   !r || r.tier === 4 || (R.errorCount += 1, R.errorCount >= Rt && (r.resolve(void 0), R.current = null))
 }
 
-function bI() {
+function EI() {
   const r = R.current;
   !r || r.tier !== 4 || (r.resolve(!0), R.current = null)
 }
 
-function EI() {
+function OI() {
   const r = R.current;
   r && (r.tier === 4 ? r.resolve(!1) : r.resolve(void 0), R.current = null)
 }
@@ -2187,7 +2187,7 @@ const _n = () => "A punishment cache reload is already running",
     return e === "en" ? zb() : e === "pt" ? Lb() : e === "ch" ? Ub() : e === "de" ? Cb() : e === "es" ? Mb() : e === "fr" ? Bb() : e === "it" ? Kb() : e === "jp" ? $b() : e === "pl" ? Fb() : e === "ru" ? Hb() : e === "uk" ? Gb() : Vb()
   },
   Wb = () => "Enter a positive multiple of the conversion rate",
-  Jb = () => "Informe um multiplo positivo da taxa de conversao",
+  Jb = () => "Informe um múltiplo positivo da taxa de conversão",
   Qb = () => "请输入兑换比例的正整数倍",
   Xb = () => "Gib ein positives Vielfaches des Umrechnungskurses ein",
   Zb = () => "Introduce un múltiplo positivo de la tasa de conversión",
@@ -2203,7 +2203,7 @@ const _n = () => "A punishment cache reload is already running",
     return e === "en" ? Wb() : e === "pt" ? Jb() : e === "ch" ? Qb() : e === "de" ? Xb() : e === "es" ? Zb() : e === "fr" ? eE() : e === "it" ? tE() : e === "jp" ? rE() : e === "pl" ? nE() : e === "ru" ? aE() : e === "uk" ? iE() : sE()
   },
   cE = () => "The alliance does not have enough Coins",
-  uE = () => "A alianca nao tem moedas suficientes",
+  uE = () => "A aliança não tem moedas suficientes",
   lE = () => "该联盟的金币不足",
   _E = () => "Die Allianz hat nicht genug Coins",
   dE = () => "La alianza no tiene suficientes Monedas",
@@ -2219,7 +2219,7 @@ const _n = () => "A punishment cache reload is already running",
     return e === "en" ? cE() : e === "pt" ? uE() : e === "ch" ? lE() : e === "de" ? _E() : e === "es" ? dE() : e === "fr" ? fE() : e === "it" ? hE() : e === "jp" ? pE() : e === "pl" ? mE() : e === "ru" ? gE() : e === "uk" ? wE() : yE()
   },
   vE = () => "This capability is already unlocked",
-  bE = () => "Este recurso ja esta desbloqueado",
+  bE = () => "Este recurso já está desbloqueado",
   EE = () => "此功能已解锁",
   OE = () => "Diese Funktion ist bereits freigeschaltet",
   TE = () => "Esta función ya está desbloqueada",
@@ -2235,7 +2235,7 @@ const _n = () => "A punishment cache reload is already running",
     return e === "en" ? vE() : e === "pt" ? bE() : e === "ch" ? EE() : e === "de" ? OE() : e === "es" ? TE() : e === "fr" ? kE() : e === "it" ? qE() : e === "jp" ? AE() : e === "pl" ? SE() : e === "ru" ? IE() : e === "uk" ? NE() : RE()
   },
   DE = () => "This alliance color requires Better Pallet",
-  PE = () => "Esta cor da alianca requer a Paleta melhorada",
+  PE = () => "Esta cor da aliança requer a Paleta melhorada",
   xE = () => "此联盟颜色需要高级调色板",
   jE = () => "Diese Allianzfarbe erfordert Bessere Palette",
   zE = () => "Este color de alianza requiere la Paleta mejorada",
@@ -2267,7 +2267,7 @@ const _n = () => "A punishment cache reload is already running",
     return e === "en" ? FE() : e === "pt" ? HE() : e === "ch" ? GE() : e === "de" ? VE() : e === "es" ? YE() : e === "fr" ? WE() : e === "it" ? JE() : e === "jp" ? QE() : e === "pl" ? XE() : e === "ru" ? ZE() : e === "uk" ? eO() : tO()
   },
   nO = () => "A description change credit is required",
-  aO = () => "E necessario um credito de alteracao da descricao",
+  aO = () => "É necessário um crédito de alteração da descrição",
   iO = () => "需要一次描述修改额度",
   sO = () => "Dafür wird ein Guthaben für Beschreibungsänderungen benötigt",
   oO = () => "Se necesita un crédito de cambio de descripción",
@@ -2283,7 +2283,7 @@ const _n = () => "A punishment cache reload is already running",
     return e === "en" ? nO() : e === "pt" ? aO() : e === "ch" ? iO() : e === "de" ? sO() : e === "es" ? oO() : e === "fr" ? cO() : e === "it" ? uO() : e === "jp" ? lO() : e === "pl" ? _O() : e === "ru" ? dO() : e === "uk" ? fO() : hO()
   },
   mO = () => "The description contains unsupported Markdown or an unsafe link",
-  gO = () => "A descricao contem Markdown nao suportado ou um link inseguro",
+  gO = () => "A descrição contém Markdown não suportado ou um link inseguro",
   wO = () => "描述中包含不受支持的 Markdown 或不安全的链接",
   yO = () => "Die Beschreibung enthält nicht unterstütztes Markdown oder einen unsicheren Link",
   vO = () => "La descripción contiene Markdown no compatible o un enlace inseguro",
@@ -2299,7 +2299,7 @@ const _n = () => "A punishment cache reload is already running",
     return e === "en" ? mO() : e === "pt" ? gO() : e === "ch" ? wO() : e === "de" ? yO() : e === "es" ? vO() : e === "fr" ? bO() : e === "it" ? EO() : e === "jp" ? OO() : e === "pl" ? TO() : e === "ru" ? kO() : e === "uk" ? qO() : AO()
   },
   IO = () => "This member already has access to the draft",
-  NO = () => "Este membro ja tem acesso ao rascunho",
+  NO = () => "Este membro já tem acesso ao rascunho",
   RO = () => "该成员已拥有此草稿的权限",
   DO = () => "Dieses Mitglied hat bereits Zugriff auf den Entwurf",
   PO = () => "Este miembro ya tiene acceso al borrador",
@@ -2315,7 +2315,7 @@ const _n = () => "A punishment cache reload is already running",
     return e === "en" ? IO() : e === "pt" ? NO() : e === "ch" ? RO() : e === "de" ? DO() : e === "es" ? PO() : e === "fr" ? xO() : e === "it" ? jO() : e === "jp" ? zO() : e === "pl" ? LO() : e === "ru" ? UO() : e === "uk" ? CO() : MO()
   },
   KO = () => "Unequip this version before removing it",
-  $O = () => "Desequipe esta versao antes de remove-la",
+  $O = () => "Desequipe esta versão antes de removê-la",
   FO = () => "移除前请先卸下此版本",
   HO = () => "Lege diese Version ab, bevor du sie entfernst",
   GO = () => "Desequipa esta versión antes de eliminarla",
@@ -2331,7 +2331,7 @@ const _n = () => "A punishment cache reload is already running",
     return e === "en" ? KO() : e === "pt" ? $O() : e === "ch" ? FO() : e === "de" ? HO() : e === "es" ? GO() : e === "fr" ? VO() : e === "it" ? YO() : e === "jp" ? WO() : e === "pl" ? JO() : e === "ru" ? QO() : e === "uk" ? XO() : ZO()
   },
   tT = () => "You are painting too quickly. Wait a moment and try again.",
-  rT = () => "Voce esta pintando rapido demais. Espere um momento e tente novamente.",
+  rT = () => "Você está pintando rápido demais. Espere um momento e tente novamente.",
   nT = () => "你的绘制速度过快。请稍后再试。",
   aT = () => "Du malst zu schnell. Warte einen Moment und versuche es erneut.",
   iT = () => "Estás pintando demasiado rápido. Espera un momento e inténtalo de nuevo.",
@@ -2347,7 +2347,7 @@ const _n = () => "A punishment cache reload is already running",
     return e === "en" ? tT() : e === "pt" ? rT() : e === "ch" ? nT() : e === "de" ? aT() : e === "es" ? iT() : e === "fr" ? sT() : e === "it" ? oT() : e === "jp" ? cT() : e === "pl" ? uT() : e === "ru" ? lT() : e === "uk" ? _T() : dT()
   },
   fT = () => "The alliance headquarters is not unlocked yet",
-  hT = () => "A sede da alianca ainda nao foi desbloqueada",
+  hT = () => "A sede da aliança ainda não foi desbloqueada",
   pT = () => "该联盟总部尚未解锁",
   mT = () => "Das Hauptquartier der Allianz ist noch nicht freigeschaltet",
   gT = () => "El cuartel general de la alianza aún no está desbloqueado",
@@ -2379,7 +2379,7 @@ const _n = () => "A punishment cache reload is already running",
     return e === "en" ? kT() : e === "pt" ? qT() : e === "ch" ? AT() : e === "de" ? ST() : e === "es" ? IT() : e === "fr" ? NT() : e === "it" ? RT() : e === "jp" ? DT() : e === "pl" ? PT() : e === "ru" ? xT() : e === "uk" ? jT() : zT()
   },
   UT = () => "Moving the headquarters requires a Change Headquarters credit",
-  CT = () => "Mover a sede requer um credito de Mudar Sede",
+  CT = () => "Mover a sede requer um crédito de Mudar Sede",
   MT = () => "移动总部需要一张“迁移总部”凭证",
   BT = () => 'Zum Verlegen des Hauptquartiers wird ein Gutschein "Hauptquartier verlegen" benötigt',
   KT = () => "Mover el cuartel general requiere un crédito de Cambiar cuartel general",
@@ -2459,7 +2459,7 @@ const _n = () => "A punishment cache reload is already running",
     return e === "en" ? zk() : e === "pt" ? Lk() : e === "ch" ? Uk() : e === "de" ? Ck() : e === "es" ? Mk() : e === "fr" ? Bk() : e === "it" ? Kk() : e === "jp" ? $k() : e === "pl" ? Fk() : e === "ru" ? Hk() : e === "uk" ? Gk() : Vk()
   },
   Wk = () => "The headquarters canvas is locked by moderation",
-  Jk = () => "O canvas da sede esta bloqueado pela moderacao",
+  Jk = () => "O canvas da sede está bloqueado pela moderação",
   Qk = () => "总部画布已被审核锁定",
   Xk = () => "Der Hauptquartier-Canvas ist von der Moderation gesperrt",
   Zk = () => "El lienzo del cuartel general está bloqueado por la moderación",
@@ -2475,7 +2475,7 @@ const _n = () => "A punishment cache reload is already running",
     return e === "en" ? Wk() : e === "pt" ? Jk() : e === "ch" ? Qk() : e === "de" ? Xk() : e === "es" ? Zk() : e === "fr" ? eq() : e === "it" ? tq() : e === "jp" ? rq() : e === "pl" ? nq() : e === "ru" ? aq() : e === "uk" ? iq() : sq()
   },
   cq = () => "You are timed out from the headquarters canvas",
-  uq = () => "Voce esta suspenso do canvas da sede",
+  uq = () => "Você está suspenso do canvas da sede",
   lq = () => "你已被禁言，无法在总部画布上绘制",
   _q = () => "Du hast einen Timeout für den Hauptquartier-Canvas",
   dq = () => "Estás suspendido del lienzo del cuartel general",
@@ -2491,7 +2491,7 @@ const _n = () => "A punishment cache reload is already running",
     return e === "en" ? cq() : e === "pt" ? uq() : e === "ch" ? lq() : e === "de" ? _q() : e === "es" ? dq() : e === "fr" ? fq() : e === "it" ? hq() : e === "jp" ? pq() : e === "pl" ? mq() : e === "ru" ? gq() : e === "uk" ? wq() : yq()
   },
   bq = () => "A reason is required",
-  Eq = () => "Um motivo e obrigatorio",
+  Eq = () => "Um motivo é obrigatório",
   Oq = () => "必须填写原因",
   Tq = () => "Ein Grund ist erforderlich",
   kq = () => "Se requiere un motivo",
@@ -2507,7 +2507,7 @@ const _n = () => "A punishment cache reload is already running",
     return e === "en" ? bq() : e === "pt" ? Eq() : e === "ch" ? Oq() : e === "de" ? Tq() : e === "es" ? kq() : e === "fr" ? qq() : e === "it" ? Aq() : e === "jp" ? Sq() : e === "pl" ? Iq() : e === "ru" ? Nq() : e === "uk" ? Rq() : Dq()
   },
   Pq = () => "This member already has an active headquarters timeout",
-  xq = () => "Este membro ja tem uma suspensao ativa da sede",
+  xq = () => "Este membro já tem uma suspensão ativa da sede",
   jq = () => "该成员已有生效中的总部禁言",
   zq = () => "Dieses Mitglied hat bereits einen aktiven Hauptquartier-Timeout",
   Lq = () => "Este miembro ya tiene una suspensión activa del cuartel general",
@@ -2523,7 +2523,7 @@ const _n = () => "A punishment cache reload is already running",
     return e === "en" ? Pq() : e === "pt" ? xq() : e === "ch" ? jq() : e === "de" ? zq() : e === "es" ? Lq() : e === "fr" ? Uq() : e === "it" ? Cq() : e === "jp" ? Mq() : e === "pl" ? Bq() : e === "ru" ? Kq() : e === "uk" ? $q() : Fq()
   },
   Gq = () => "This timeout is no longer active",
-  Vq = () => "Esta suspensao nao esta mais ativa",
+  Vq = () => "Esta suspensão não está mais ativa",
   Yq = () => "该禁言已不再生效",
   Wq = () => "Dieser Timeout ist nicht mehr aktiv",
   Jq = () => "Esta suspensión ya no está activa",
@@ -2539,7 +2539,7 @@ const _n = () => "A punishment cache reload is already running",
     return e === "en" ? Gq() : e === "pt" ? Vq() : e === "ch" ? Yq() : e === "de" ? Wq() : e === "es" ? Jq() : e === "fr" ? Qq() : e === "it" ? Xq() : e === "jp" ? Zq() : e === "pl" ? eA() : e === "ru" ? tA() : e === "uk" ? rA() : nA()
   },
   iA = () => "That user already belongs to an alliance",
-  sA = () => "Esse usuario ja pertence a uma alianca",
+  sA = () => "Esse usuário já pertence a uma aliança",
   oA = () => "该用户已属于其他联盟",
   cA = () => "Dieser Nutzer gehört bereits einer Allianz an",
   uA = () => "Ese usuario ya pertenece a una alianza",
@@ -2555,7 +2555,7 @@ const _n = () => "A punishment cache reload is already running",
     return e === "en" ? iA() : e === "pt" ? sA() : e === "ch" ? oA() : e === "de" ? cA() : e === "es" ? uA() : e === "fr" ? lA() : e === "it" ? _A() : e === "jp" ? dA() : e === "pl" ? fA() : e === "ru" ? hA() : e === "uk" ? pA() : mA()
   },
   wA = () => "The alliance is not archived",
-  yA = () => "A alianca nao esta arquivada",
+  yA = () => "A aliança não está arquivada",
   vA = () => "该联盟未被归档",
   bA = () => "Die Allianz ist nicht archiviert",
   EA = () => "La alianza no está archivada",
@@ -2571,7 +2571,7 @@ const _n = () => "A punishment cache reload is already running",
     return e === "en" ? wA() : e === "pt" ? yA() : e === "ch" ? vA() : e === "de" ? bA() : e === "es" ? EA() : e === "fr" ? OA() : e === "it" ? TA() : e === "jp" ? kA() : e === "pl" ? qA() : e === "ru" ? AA() : e === "uk" ? SA() : IA()
   },
   RA = () => "The selected headquarters pixels have too much history to change at once. Select fewer pixels.",
-  DA = () => "Os pixels selecionados tem historico demais para alterar de uma vez. Selecione menos pixels.",
+  DA = () => "Os pixels selecionados têm histórico demais para alterar de uma vez. Selecione menos pixels.",
   PA = () => "所选总部像素的历史记录过多，无法一次性修改。请减少选择的像素。",
   xA = () => "Die ausgewählten Hauptquartier-Pixel haben zu viel Verlauf, um sie auf einmal zu ändern. Wähle weniger Pixel aus.",
   jA = () => "Los píxeles seleccionados del cuartel general tienen demasiado historial para cambiarlos de una vez. Selecciona menos píxeles.",
@@ -2602,8 +2602,12 @@ const _n = () => "A punishment cache reload is already running",
     const e = t.locale ?? _();
     return e === "en" ? FA() : e === "pt" ? HA() : e === "ch" ? GA() : e === "de" ? VA() : e === "es" ? YA() : e === "fr" ? WA() : e === "it" ? JA() : e === "jp" ? QA() : e === "pl" ? XA() : e === "ru" ? ZA() : e === "uk" ? eS() : tS()
   };
+
+function nS(r, t) {
+  return (t == null ? void 0 : t.aborted) === !0 || typeof DOMException < "u" && r instanceof DOMException && r.name === "AbortError"
+}
 var Ee, Oe;
-class nS {
+class aS {
   constructor(t) {
     v(this, Ee, A(!0));
     v(this, Oe, A(null));
@@ -2655,7 +2659,7 @@ class nS {
       const n = await fetch(`${this.url}${t}`, e);
       return this.online = !0, this.updateServerTimeEstimate(n), n
     } catch (n) {
-      throw console.error("Fetch error:", n), this.online = !1, new Error(Bi())
+      throw nS(n, e == null ? void 0 : e.signal) ? n : (console.error("Fetch error:", n), this.online = !1, new Error(Bi()))
     }
   }
   async request(t, e) {
@@ -2685,9 +2689,9 @@ class l extends Error {
     super(t), this.message = t, this.status = e
   }
 }
-class OI extends Error {}
+class TI extends Error {}
 
-function aS(r) {
+function iS(r) {
   return class extends r {
     async me() {
       const t = await this.request("/me", {
@@ -2942,7 +2946,7 @@ function aS(r) {
   }
 }
 
-function iS(r) {
+function sS(r) {
   return class extends r {
     async health() {
       return (await this.request("/health")).json()
@@ -3205,13 +3209,13 @@ function iS(r) {
     }
   }
 }
-const sS = [{
+const oS = [{
     tileSize: 1e3,
     zoom: 11
   }],
-  oS = 4,
-  cS = 6e3,
-  uS = [{
+  cS = 4,
+  uS = 6e3,
+  lS = [{
     name: "Transparent",
     rgb: [0, 0, 0]
   }, {
@@ -3404,10 +3408,10 @@ const sS = [{
     name: "Light Stone",
     rgb: [205, 197, 158]
   }],
-  lS = {
+  _S = {
     needsPhoneVerification: "needs_phone_verification"
   },
-  _S = {
+  dS = {
     Droplet: {},
     "Max. Charge": {},
     "Paint Charge": {},
@@ -3418,7 +3422,7 @@ const sS = [{
     "Custom Name Font": {},
     "Custom Name Style": {}
   },
-  dS = {
+  fS = {
     android: {
       googlePlayBilling: {
         price: 1.2
@@ -3426,7 +3430,7 @@ const sS = [{
       appName: "live.wplace.twa"
     }
   },
-  fS = {
+  hS = {
     10: {
       name: "25,000 Droplets",
       price: 500,
@@ -3557,8 +3561,8 @@ const sS = [{
       }]
     }
   },
-  hS = JSON.parse(`[{"id":1,"name":"Afghanistan","code":"AF","flag":"🇦🇫"},{"id":2,"name":"Albania","code":"AL","flag":"🇦🇱"},{"id":3,"name":"Algeria","code":"DZ","flag":"🇩🇿"},{"id":4,"name":"American Samoa","code":"AS","flag":"🇦🇸"},{"id":5,"name":"Andorra","code":"AD","flag":"🇦🇩"},{"id":6,"name":"Angola","code":"AO","flag":"🇦🇴"},{"id":7,"name":"Anguilla","code":"AI","flag":"🇦🇮"},{"id":8,"name":"Antarctica","code":"AQ","flag":"🇦🇶"},{"id":9,"name":"Antigua and Barbuda","code":"AG","flag":"🇦🇬"},{"id":10,"name":"Argentina","code":"AR","flag":"🇦🇷"},{"id":11,"name":"Armenia","code":"AM","flag":"🇦🇲"},{"id":12,"name":"Aruba","code":"AW","flag":"🇦🇼"},{"id":13,"name":"Australia","code":"AU","flag":"🇦🇺"},{"id":14,"name":"Austria","code":"AT","flag":"🇦🇹"},{"id":15,"name":"Azerbaijan","code":"AZ","flag":"🇦🇿"},{"id":16,"name":"Bahamas","code":"BS","flag":"🇧🇸"},{"id":17,"name":"Bahrain","code":"BH","flag":"🇧🇭"},{"id":18,"name":"Bangladesh","code":"BD","flag":"🇧🇩"},{"id":19,"name":"Barbados","code":"BB","flag":"🇧🇧"},{"id":20,"name":"Belarus","code":"BY","flag":"🇧🇾"},{"id":21,"name":"Belgium","code":"BE","flag":"🇧🇪"},{"id":22,"name":"Belize","code":"BZ","flag":"🇧🇿"},{"id":23,"name":"Benin","code":"BJ","flag":"🇧🇯"},{"id":24,"name":"Bermuda","code":"BM","flag":"🇧🇲"},{"id":25,"name":"Bhutan","code":"BT","flag":"🇧🇹"},{"id":26,"name":"Bolivia","code":"BO","flag":"🇧🇴"},{"id":27,"name":"Bonaire","code":"BQ","flag":"🇧🇶"},{"id":28,"name":"Bosnia and Herzegovina","code":"BA","flag":"🇧🇦"},{"id":29,"name":"Botswana","code":"BW","flag":"🇧🇼"},{"id":30,"name":"Bouvet Island","code":"BV","flag":"🇧🇻"},{"id":31,"name":"Brazil","code":"BR","flag":"🇧🇷"},{"id":32,"name":"British Indian Ocean Territory","code":"IO","flag":"🇮🇴"},{"id":33,"name":"Brunei Darussalam","code":"BN","flag":"🇧🇳"},{"id":34,"name":"Bulgaria","code":"BG","flag":"🇧🇬"},{"id":35,"name":"Burkina Faso","code":"BF","flag":"🇧🇫"},{"id":36,"name":"Burundi","code":"BI","flag":"🇧🇮"},{"id":37,"name":"Cabo Verde","code":"CV","flag":"🇨🇻"},{"id":38,"name":"Cambodia","code":"KH","flag":"🇰🇭"},{"id":39,"name":"Cameroon","code":"CM","flag":"🇨🇲"},{"id":40,"name":"Canada","code":"CA","flag":"🇨🇦"},{"id":41,"name":"Cayman Islands","code":"KY","flag":"🇰🇾"},{"id":42,"name":"Central African Republic","code":"CF","flag":"🇨🇫"},{"id":43,"name":"Chad","code":"TD","flag":"🇹🇩"},{"id":44,"name":"Chile","code":"CL","flag":"🇨🇱"},{"id":45,"name":"China","code":"CN","flag":"🇨🇳"},{"id":46,"name":"Christmas Island","code":"CX","flag":"🇨🇽"},{"id":47,"name":"Cocos (Keeling) Islands","code":"CC","flag":"🇨🇨"},{"id":48,"name":"Colombia","code":"CO","flag":"🇨🇴"},{"id":49,"name":"Comoros","code":"KM","flag":"🇰🇲"},{"id":50,"name":"Congo","code":"CG","flag":"🇨🇬"},{"id":51,"name":"Cook Islands","code":"CK","flag":"🇨🇰"},{"id":52,"name":"Costa Rica","code":"CR","flag":"🇨🇷"},{"id":53,"name":"Croatia","code":"HR","flag":"🇭🇷"},{"id":54,"name":"Cuba","code":"CU","flag":"🇨🇺"},{"id":55,"name":"Curaçao","code":"CW","flag":"🇨🇼"},{"id":56,"name":"Cyprus","code":"CY","flag":"🇨🇾"},{"id":57,"name":"Czechia","code":"CZ","flag":"🇨🇿"},{"id":58,"name":"Côte d'Ivoire","code":"CI","flag":"🇨🇮"},{"id":59,"name":"Denmark","code":"DK","flag":"🇩🇰"},{"id":60,"name":"Djibouti","code":"DJ","flag":"🇩🇯"},{"id":61,"name":"Dominica","code":"DM","flag":"🇩🇲"},{"id":62,"name":"Dominican Republic","code":"DO","flag":"🇩🇴"},{"id":63,"name":"Ecuador","code":"EC","flag":"🇪🇨"},{"id":64,"name":"Egypt","code":"EG","flag":"🇪🇬"},{"id":65,"name":"El Salvador","code":"SV","flag":"🇸🇻"},{"id":66,"name":"Equatorial Guinea","code":"GQ","flag":"🇬🇶"},{"id":67,"name":"Eritrea","code":"ER","flag":"🇪🇷"},{"id":68,"name":"Estonia","code":"EE","flag":"🇪🇪"},{"id":69,"name":"Eswatini","code":"SZ","flag":"🇸🇿"},{"id":70,"name":"Ethiopia","code":"ET","flag":"🇪🇹"},{"id":71,"name":"Falkland Islands (Malvinas)","code":"FK","flag":"🇫🇰"},{"id":72,"name":"Faroe Islands","code":"FO","flag":"🇫🇴"},{"id":73,"name":"Fiji","code":"FJ","flag":"🇫🇯"},{"id":74,"name":"Finland","code":"FI","flag":"🇫🇮"},{"id":75,"name":"France","code":"FR","flag":"🇫🇷"},{"id":76,"name":"French Guiana","code":"GF","flag":"🇬🇫"},{"id":77,"name":"French Polynesia","code":"PF","flag":"🇵🇫"},{"id":78,"name":"French Southern Territories","code":"TF","flag":"🇹🇫"},{"id":79,"name":"Gabon","code":"GA","flag":"🇬🇦"},{"id":80,"name":"Gambia","code":"GM","flag":"🇬🇲"},{"id":81,"name":"Georgia","code":"GE","flag":"🇬🇪"},{"id":82,"name":"Germany","code":"DE","flag":"🇩🇪"},{"id":83,"name":"Ghana","code":"GH","flag":"🇬🇭"},{"id":84,"name":"Gibraltar","code":"GI","flag":"🇬🇮"},{"id":85,"name":"Greece","code":"GR","flag":"🇬🇷"},{"id":86,"name":"Greenland","code":"GL","flag":"🇬🇱"},{"id":87,"name":"Grenada","code":"GD","flag":"🇬🇩"},{"id":88,"name":"Guadeloupe","code":"GP","flag":"🇬🇵"},{"id":89,"name":"Guam","code":"GU","flag":"🇬🇺"},{"id":90,"name":"Guatemala","code":"GT","flag":"🇬🇹"},{"id":91,"name":"Guernsey","code":"GG","flag":"🇬🇬"},{"id":92,"name":"Guinea","code":"GN","flag":"🇬🇳"},{"id":93,"name":"Guinea-Bissau","code":"GW","flag":"🇬🇼"},{"id":94,"name":"Guyana","code":"GY","flag":"🇬🇾"},{"id":95,"name":"Haiti","code":"HT","flag":"🇭🇹"},{"id":96,"name":"Heard Island and McDonald Islands","code":"HM","flag":"🇭🇲"},{"id":97,"name":"Honduras","code":"HN","flag":"🇭🇳"},{"id":98,"name":"Hong Kong","code":"HK","flag":"🇭🇰"},{"id":99,"name":"Hungary","code":"HU","flag":"🇭🇺"},{"id":100,"name":"Iceland","code":"IS","flag":"🇮🇸"},{"id":101,"name":"India","code":"IN","flag":"🇮🇳"},{"id":102,"name":"Indonesia","code":"ID","flag":"🇮🇩"},{"id":103,"name":"Iran","code":"IR","flag":"🇮🇷"},{"id":104,"name":"Iraq","code":"IQ","flag":"🇮🇶"},{"id":105,"name":"Ireland","code":"IE","flag":"🇮🇪"},{"id":106,"name":"Isle of Man","code":"IM","flag":"🇮🇲"},{"id":107,"name":"Israel","code":"IL","flag":"🇮🇱"},{"id":108,"name":"Italy","code":"IT","flag":"🇮🇹"},{"id":109,"name":"Jamaica","code":"JM","flag":"🇯🇲"},{"id":110,"name":"Japan","code":"JP","flag":"🇯🇵"},{"id":111,"name":"Jersey","code":"JE","flag":"🇯🇪"},{"id":112,"name":"Jordan","code":"JO","flag":"🇯🇴"},{"id":113,"name":"Kazakhstan","code":"KZ","flag":"🇰🇿"},{"id":114,"name":"Kenya","code":"KE","flag":"🇰🇪"},{"id":115,"name":"Kiribati","code":"KI","flag":"🇰🇮"},{"id":116,"name":"Kosovo","code":"XK","flag":"🇽🇰"},{"id":117,"name":"Kuwait","code":"KW","flag":"🇰🇼"},{"id":118,"name":"Kyrgyzstan","code":"KG","flag":"🇰🇬"},{"id":119,"name":"Laos","code":"LA","flag":"🇱🇦"},{"id":120,"name":"Latvia","code":"LV","flag":"🇱🇻"},{"id":121,"name":"Lebanon","code":"LB","flag":"🇱🇧"},{"id":122,"name":"Lesotho","code":"LS","flag":"🇱🇸"},{"id":123,"name":"Liberia","code":"LR","flag":"🇱🇷"},{"id":124,"name":"Libya","code":"LY","flag":"🇱🇾"},{"id":125,"name":"Liechtenstein","code":"LI","flag":"🇱🇮"},{"id":126,"name":"Lithuania","code":"LT","flag":"🇱🇹"},{"id":127,"name":"Luxembourg","code":"LU","flag":"🇱🇺"},{"id":128,"name":"Macao","code":"MO","flag":"🇲🇴"},{"id":129,"name":"Madagascar","code":"MG","flag":"🇲🇬"},{"id":130,"name":"Malawi","code":"MW","flag":"🇲🇼"},{"id":131,"name":"Malaysia","code":"MY","flag":"🇲🇾"},{"id":132,"name":"Maldives","code":"MV","flag":"🇲🇻"},{"id":133,"name":"Mali","code":"ML","flag":"🇲🇱"},{"id":134,"name":"Malta","code":"MT","flag":"🇲🇹"},{"id":135,"name":"Marshall Islands","code":"MH","flag":"🇲🇭"},{"id":136,"name":"Martinique","code":"MQ","flag":"🇲🇶"},{"id":137,"name":"Mauritania","code":"MR","flag":"🇲🇷"},{"id":138,"name":"Mauritius","code":"MU","flag":"🇲🇺"},{"id":139,"name":"Mayotte","code":"YT","flag":"🇾🇹"},{"id":140,"name":"Mexico","code":"MX","flag":"🇲🇽"},{"id":141,"name":"Micronesia","code":"FM","flag":"🇫🇲"},{"id":142,"name":"Moldova","code":"MD","flag":"🇲🇩"},{"id":143,"name":"Monaco","code":"MC","flag":"🇲🇨"},{"id":144,"name":"Mongolia","code":"MN","flag":"🇲🇳"},{"id":145,"name":"Montenegro","code":"ME","flag":"🇲🇪"},{"id":146,"name":"Montserrat","code":"MS","flag":"🇲🇸"},{"id":147,"name":"Morocco","code":"MA","flag":"🇲🇦"},{"id":148,"name":"Mozambique","code":"MZ","flag":"🇲🇿"},{"id":149,"name":"Myanmar","code":"MM","flag":"🇲🇲"},{"id":150,"name":"Namibia","code":"NA","flag":"🇳🇦"},{"id":151,"name":"Nauru","code":"NR","flag":"🇳🇷"},{"id":152,"name":"Nepal","code":"NP","flag":"🇳🇵"},{"id":153,"name":"Netherlands","code":"NL","flag":"🇳🇱"},{"id":154,"name":"New Caledonia","code":"NC","flag":"🇳🇨"},{"id":155,"name":"New Zealand","code":"NZ","flag":"🇳🇿"},{"id":156,"name":"Nicaragua","code":"NI","flag":"🇳🇮"},{"id":157,"name":"Niger","code":"NE","flag":"🇳🇪"},{"id":158,"name":"Nigeria","code":"NG","flag":"🇳🇬"},{"id":159,"name":"Niue","code":"NU","flag":"🇳🇺"},{"id":160,"name":"Norfolk Island","code":"NF","flag":"🇳🇫"},{"id":161,"name":"North Korea","code":"KP","flag":"🇰🇵"},{"id":162,"name":"North Macedonia","code":"MK","flag":"🇲🇰"},{"id":163,"name":"Northern Mariana Islands","code":"MP","flag":"🇲🇵"},{"id":164,"name":"Norway","code":"NO","flag":"🇳🇴"},{"id":165,"name":"Oman","code":"OM","flag":"🇴🇲"},{"id":166,"name":"Pakistan","code":"PK","flag":"🇵🇰"},{"id":167,"name":"Palau","code":"PW","flag":"🇵🇼"},{"id":168,"name":"Palestine","code":"PS","flag":"🇵🇸"},{"id":169,"name":"Panama","code":"PA","flag":"🇵🇦"},{"id":170,"name":"Papua New Guinea","code":"PG","flag":"🇵🇬"},{"id":171,"name":"Paraguay","code":"PY","flag":"🇵🇾"},{"id":172,"name":"Peru","code":"PE","flag":"🇵🇪"},{"id":173,"name":"Philippines","code":"PH","flag":"🇵🇭"},{"id":174,"name":"Pitcairn","code":"PN","flag":"🇵🇳"},{"id":175,"name":"Poland","code":"PL","flag":"🇵🇱"},{"id":176,"name":"Portugal","code":"PT","flag":"🇵🇹"},{"id":177,"name":"Puerto Rico","code":"PR","flag":"🇵🇷"},{"id":178,"name":"Qatar","code":"QA","flag":"🇶🇦"},{"id":179,"name":"Republic of the Congo","code":"CD","flag":"🇨🇩"},{"id":180,"name":"Romania","code":"RO","flag":"🇷🇴"},{"id":181,"name":"Russia","code":"RU","flag":"🇷🇺"},{"id":182,"name":"Rwanda","code":"RW","flag":"🇷🇼"},{"id":183,"name":"Réunion","code":"RE","flag":"🇷🇪"},{"id":184,"name":"Saint Barthélemy","code":"BL","flag":"🇧🇱"},{"id":185,"name":"Saint Helena","code":"SH","flag":"🇸🇭"},{"id":186,"name":"Saint Kitts and Nevis","code":"KN","flag":"🇰🇳"},{"id":187,"name":"Saint Lucia","code":"LC","flag":"🇱🇨"},{"id":188,"name":"Saint Martin (French part)","code":"MF","flag":"🇲🇫"},{"id":189,"name":"Saint Pierre and Miquelon","code":"PM","flag":"🇵🇲"},{"id":190,"name":"Saint Vincent and the Grenadines","code":"VC","flag":"🇻🇨"},{"id":191,"name":"Samoa","code":"WS","flag":"🇼🇸"},{"id":192,"name":"San Marino","code":"SM","flag":"🇸🇲"},{"id":193,"name":"Sao Tome and Principe","code":"ST","flag":"🇸🇹"},{"id":194,"name":"Saudi Arabia","code":"SA","flag":"🇸🇦"},{"id":195,"name":"Senegal","code":"SN","flag":"🇸🇳"},{"id":196,"name":"Serbia","code":"RS","flag":"🇷🇸"},{"id":197,"name":"Seychelles","code":"SC","flag":"🇸🇨"},{"id":198,"name":"Sierra Leone","code":"SL","flag":"🇸🇱"},{"id":199,"name":"Singapore","code":"SG","flag":"🇸🇬"},{"id":200,"name":"Sint Maarten (Dutch part)","code":"SX","flag":"🇸🇽"},{"id":201,"name":"Slovakia","code":"SK","flag":"🇸🇰"},{"id":202,"name":"Slovenia","code":"SI","flag":"🇸🇮"},{"id":203,"name":"Solomon Islands","code":"SB","flag":"🇸🇧"},{"id":204,"name":"Somalia","code":"SO","flag":"🇸🇴"},{"id":205,"name":"South Africa","code":"ZA","flag":"🇿🇦"},{"id":206,"name":"South Georgia and the South Sandwich Islands","code":"GS","flag":"🇬🇸"},{"id":207,"name":"South Korea","code":"KR","flag":"🇰🇷"},{"id":208,"name":"South Sudan","code":"SS","flag":"🇸🇸"},{"id":209,"name":"Spain","code":"ES","flag":"🇪🇸"},{"id":210,"name":"Sri Lanka","code":"LK","flag":"🇱🇰"},{"id":211,"name":"Sudan","code":"SD","flag":"🇸🇩"},{"id":212,"name":"Suriname","code":"SR","flag":"🇸🇷"},{"id":213,"name":"Svalbard and Jan Mayen","code":"SJ","flag":"🇸🇯"},{"id":214,"name":"Sweden","code":"SE","flag":"🇸🇪"},{"id":215,"name":"Switzerland","code":"CH","flag":"🇨🇭"},{"id":216,"name":"Syrian Arab Republic","code":"SY","flag":"🇸🇾"},{"id":217,"name":"Taiwan","code":"TW","flag":"🇹🇼"},{"id":218,"name":"Tajikistan","code":"TJ","flag":"🇹🇯"},{"id":219,"name":"Tanzania","code":"TZ","flag":"🇹🇿"},{"id":220,"name":"Thailand","code":"TH","flag":"🇹🇭"},{"id":221,"name":"Timor-Leste","code":"TL","flag":"🇹🇱"},{"id":222,"name":"Togo","code":"TG","flag":"🇹🇬"},{"id":223,"name":"Tokelau","code":"TK","flag":"🇹🇰"},{"id":224,"name":"Tonga","code":"TO","flag":"🇹🇴"},{"id":225,"name":"Trinidad and Tobago","code":"TT","flag":"🇹🇹"},{"id":226,"name":"Tunisia","code":"TN","flag":"🇹🇳"},{"id":227,"name":"Turkmenistan","code":"TM","flag":"🇹🇲"},{"id":228,"name":"Turks and Caicos Islands","code":"TC","flag":"🇹🇨"},{"id":229,"name":"Tuvalu","code":"TV","flag":"🇹🇻"},{"id":230,"name":"Türkiye","code":"TR","flag":"🇹🇷"},{"id":231,"name":"Uganda","code":"UG","flag":"🇺🇬"},{"id":232,"name":"Ukraine","code":"UA","flag":"🇺🇦"},{"id":233,"name":"United Arab Emirates","code":"AE","flag":"🇦🇪"},{"id":234,"name":"United Kingdom","code":"GB","flag":"🇬🇧"},{"id":235,"name":"United States","code":"US","flag":"🇺🇸"},{"id":236,"name":"United States Minor Outlying Islands","code":"UM","flag":"🇺🇲"},{"id":237,"name":"Uruguay","code":"UY","flag":"🇺🇾"},{"id":238,"name":"Uzbekistan","code":"UZ","flag":"🇺🇿"},{"id":239,"name":"Vanuatu","code":"VU","flag":"🇻🇺"},{"id":240,"name":"Vatican City","code":"VA","flag":"🇻🇦"},{"id":241,"name":"Venezuela","code":"VE","flag":"🇻🇪"},{"id":242,"name":"Viet Nam","code":"VN","flag":"🇻🇳"},{"id":243,"name":"Virgin Islands","code":"VG","flag":"🇻🇬"},{"id":244,"name":"Virgin Islands","code":"VI","flag":"🇻🇮"},{"id":245,"name":"Wallis and Futuna","code":"WF","flag":"🇼🇫"},{"id":246,"name":"Western Sahara","code":"EH","flag":"🇪🇭"},{"id":247,"name":"Yemen","code":"YE","flag":"🇾🇪"},{"id":248,"name":"Zambia","code":"ZM","flag":"🇿🇲"},{"id":249,"name":"Zimbabwe","code":"ZW","flag":"🇿🇼"},{"id":250,"name":"Åland Islands","code":"AX","flag":"🇦🇽"},{"id":251,"name":"Canary Islands","code":"IC","flag":"🇮🇨"}]`),
-  pS = {
+  pS = JSON.parse(`[{"id":1,"name":"Afghanistan","code":"AF","flag":"🇦🇫"},{"id":2,"name":"Albania","code":"AL","flag":"🇦🇱"},{"id":3,"name":"Algeria","code":"DZ","flag":"🇩🇿"},{"id":4,"name":"American Samoa","code":"AS","flag":"🇦🇸"},{"id":5,"name":"Andorra","code":"AD","flag":"🇦🇩"},{"id":6,"name":"Angola","code":"AO","flag":"🇦🇴"},{"id":7,"name":"Anguilla","code":"AI","flag":"🇦🇮"},{"id":8,"name":"Antarctica","code":"AQ","flag":"🇦🇶"},{"id":9,"name":"Antigua and Barbuda","code":"AG","flag":"🇦🇬"},{"id":10,"name":"Argentina","code":"AR","flag":"🇦🇷"},{"id":11,"name":"Armenia","code":"AM","flag":"🇦🇲"},{"id":12,"name":"Aruba","code":"AW","flag":"🇦🇼"},{"id":13,"name":"Australia","code":"AU","flag":"🇦🇺"},{"id":14,"name":"Austria","code":"AT","flag":"🇦🇹"},{"id":15,"name":"Azerbaijan","code":"AZ","flag":"🇦🇿"},{"id":16,"name":"Bahamas","code":"BS","flag":"🇧🇸"},{"id":17,"name":"Bahrain","code":"BH","flag":"🇧🇭"},{"id":18,"name":"Bangladesh","code":"BD","flag":"🇧🇩"},{"id":19,"name":"Barbados","code":"BB","flag":"🇧🇧"},{"id":20,"name":"Belarus","code":"BY","flag":"🇧🇾"},{"id":21,"name":"Belgium","code":"BE","flag":"🇧🇪"},{"id":22,"name":"Belize","code":"BZ","flag":"🇧🇿"},{"id":23,"name":"Benin","code":"BJ","flag":"🇧🇯"},{"id":24,"name":"Bermuda","code":"BM","flag":"🇧🇲"},{"id":25,"name":"Bhutan","code":"BT","flag":"🇧🇹"},{"id":26,"name":"Bolivia","code":"BO","flag":"🇧🇴"},{"id":27,"name":"Bonaire","code":"BQ","flag":"🇧🇶"},{"id":28,"name":"Bosnia and Herzegovina","code":"BA","flag":"🇧🇦"},{"id":29,"name":"Botswana","code":"BW","flag":"🇧🇼"},{"id":30,"name":"Bouvet Island","code":"BV","flag":"🇧🇻"},{"id":31,"name":"Brazil","code":"BR","flag":"🇧🇷"},{"id":32,"name":"British Indian Ocean Territory","code":"IO","flag":"🇮🇴"},{"id":33,"name":"Brunei Darussalam","code":"BN","flag":"🇧🇳"},{"id":34,"name":"Bulgaria","code":"BG","flag":"🇧🇬"},{"id":35,"name":"Burkina Faso","code":"BF","flag":"🇧🇫"},{"id":36,"name":"Burundi","code":"BI","flag":"🇧🇮"},{"id":37,"name":"Cabo Verde","code":"CV","flag":"🇨🇻"},{"id":38,"name":"Cambodia","code":"KH","flag":"🇰🇭"},{"id":39,"name":"Cameroon","code":"CM","flag":"🇨🇲"},{"id":40,"name":"Canada","code":"CA","flag":"🇨🇦"},{"id":41,"name":"Cayman Islands","code":"KY","flag":"🇰🇾"},{"id":42,"name":"Central African Republic","code":"CF","flag":"🇨🇫"},{"id":43,"name":"Chad","code":"TD","flag":"🇹🇩"},{"id":44,"name":"Chile","code":"CL","flag":"🇨🇱"},{"id":45,"name":"China","code":"CN","flag":"🇨🇳"},{"id":46,"name":"Christmas Island","code":"CX","flag":"🇨🇽"},{"id":47,"name":"Cocos (Keeling) Islands","code":"CC","flag":"🇨🇨"},{"id":48,"name":"Colombia","code":"CO","flag":"🇨🇴"},{"id":49,"name":"Comoros","code":"KM","flag":"🇰🇲"},{"id":50,"name":"Congo","code":"CG","flag":"🇨🇬"},{"id":51,"name":"Cook Islands","code":"CK","flag":"🇨🇰"},{"id":52,"name":"Costa Rica","code":"CR","flag":"🇨🇷"},{"id":53,"name":"Croatia","code":"HR","flag":"🇭🇷"},{"id":54,"name":"Cuba","code":"CU","flag":"🇨🇺"},{"id":55,"name":"Curaçao","code":"CW","flag":"🇨🇼"},{"id":56,"name":"Cyprus","code":"CY","flag":"🇨🇾"},{"id":57,"name":"Czechia","code":"CZ","flag":"🇨🇿"},{"id":58,"name":"Côte d'Ivoire","code":"CI","flag":"🇨🇮"},{"id":59,"name":"Denmark","code":"DK","flag":"🇩🇰"},{"id":60,"name":"Djibouti","code":"DJ","flag":"🇩🇯"},{"id":61,"name":"Dominica","code":"DM","flag":"🇩🇲"},{"id":62,"name":"Dominican Republic","code":"DO","flag":"🇩🇴"},{"id":63,"name":"Ecuador","code":"EC","flag":"🇪🇨"},{"id":64,"name":"Egypt","code":"EG","flag":"🇪🇬"},{"id":65,"name":"El Salvador","code":"SV","flag":"🇸🇻"},{"id":66,"name":"Equatorial Guinea","code":"GQ","flag":"🇬🇶"},{"id":67,"name":"Eritrea","code":"ER","flag":"🇪🇷"},{"id":68,"name":"Estonia","code":"EE","flag":"🇪🇪"},{"id":69,"name":"Eswatini","code":"SZ","flag":"🇸🇿"},{"id":70,"name":"Ethiopia","code":"ET","flag":"🇪🇹"},{"id":71,"name":"Falkland Islands (Malvinas)","code":"FK","flag":"🇫🇰"},{"id":72,"name":"Faroe Islands","code":"FO","flag":"🇫🇴"},{"id":73,"name":"Fiji","code":"FJ","flag":"🇫🇯"},{"id":74,"name":"Finland","code":"FI","flag":"🇫🇮"},{"id":75,"name":"France","code":"FR","flag":"🇫🇷"},{"id":76,"name":"French Guiana","code":"GF","flag":"🇬🇫"},{"id":77,"name":"French Polynesia","code":"PF","flag":"🇵🇫"},{"id":78,"name":"French Southern Territories","code":"TF","flag":"🇹🇫"},{"id":79,"name":"Gabon","code":"GA","flag":"🇬🇦"},{"id":80,"name":"Gambia","code":"GM","flag":"🇬🇲"},{"id":81,"name":"Georgia","code":"GE","flag":"🇬🇪"},{"id":82,"name":"Germany","code":"DE","flag":"🇩🇪"},{"id":83,"name":"Ghana","code":"GH","flag":"🇬🇭"},{"id":84,"name":"Gibraltar","code":"GI","flag":"🇬🇮"},{"id":85,"name":"Greece","code":"GR","flag":"🇬🇷"},{"id":86,"name":"Greenland","code":"GL","flag":"🇬🇱"},{"id":87,"name":"Grenada","code":"GD","flag":"🇬🇩"},{"id":88,"name":"Guadeloupe","code":"GP","flag":"🇬🇵"},{"id":89,"name":"Guam","code":"GU","flag":"🇬🇺"},{"id":90,"name":"Guatemala","code":"GT","flag":"🇬🇹"},{"id":91,"name":"Guernsey","code":"GG","flag":"🇬🇬"},{"id":92,"name":"Guinea","code":"GN","flag":"🇬🇳"},{"id":93,"name":"Guinea-Bissau","code":"GW","flag":"🇬🇼"},{"id":94,"name":"Guyana","code":"GY","flag":"🇬🇾"},{"id":95,"name":"Haiti","code":"HT","flag":"🇭🇹"},{"id":96,"name":"Heard Island and McDonald Islands","code":"HM","flag":"🇭🇲"},{"id":97,"name":"Honduras","code":"HN","flag":"🇭🇳"},{"id":98,"name":"Hong Kong","code":"HK","flag":"🇭🇰"},{"id":99,"name":"Hungary","code":"HU","flag":"🇭🇺"},{"id":100,"name":"Iceland","code":"IS","flag":"🇮🇸"},{"id":101,"name":"India","code":"IN","flag":"🇮🇳"},{"id":102,"name":"Indonesia","code":"ID","flag":"🇮🇩"},{"id":103,"name":"Iran","code":"IR","flag":"🇮🇷"},{"id":104,"name":"Iraq","code":"IQ","flag":"🇮🇶"},{"id":105,"name":"Ireland","code":"IE","flag":"🇮🇪"},{"id":106,"name":"Isle of Man","code":"IM","flag":"🇮🇲"},{"id":107,"name":"Israel","code":"IL","flag":"🇮🇱"},{"id":108,"name":"Italy","code":"IT","flag":"🇮🇹"},{"id":109,"name":"Jamaica","code":"JM","flag":"🇯🇲"},{"id":110,"name":"Japan","code":"JP","flag":"🇯🇵"},{"id":111,"name":"Jersey","code":"JE","flag":"🇯🇪"},{"id":112,"name":"Jordan","code":"JO","flag":"🇯🇴"},{"id":113,"name":"Kazakhstan","code":"KZ","flag":"🇰🇿"},{"id":114,"name":"Kenya","code":"KE","flag":"🇰🇪"},{"id":115,"name":"Kiribati","code":"KI","flag":"🇰🇮"},{"id":116,"name":"Kosovo","code":"XK","flag":"🇽🇰"},{"id":117,"name":"Kuwait","code":"KW","flag":"🇰🇼"},{"id":118,"name":"Kyrgyzstan","code":"KG","flag":"🇰🇬"},{"id":119,"name":"Laos","code":"LA","flag":"🇱🇦"},{"id":120,"name":"Latvia","code":"LV","flag":"🇱🇻"},{"id":121,"name":"Lebanon","code":"LB","flag":"🇱🇧"},{"id":122,"name":"Lesotho","code":"LS","flag":"🇱🇸"},{"id":123,"name":"Liberia","code":"LR","flag":"🇱🇷"},{"id":124,"name":"Libya","code":"LY","flag":"🇱🇾"},{"id":125,"name":"Liechtenstein","code":"LI","flag":"🇱🇮"},{"id":126,"name":"Lithuania","code":"LT","flag":"🇱🇹"},{"id":127,"name":"Luxembourg","code":"LU","flag":"🇱🇺"},{"id":128,"name":"Macao","code":"MO","flag":"🇲🇴"},{"id":129,"name":"Madagascar","code":"MG","flag":"🇲🇬"},{"id":130,"name":"Malawi","code":"MW","flag":"🇲🇼"},{"id":131,"name":"Malaysia","code":"MY","flag":"🇲🇾"},{"id":132,"name":"Maldives","code":"MV","flag":"🇲🇻"},{"id":133,"name":"Mali","code":"ML","flag":"🇲🇱"},{"id":134,"name":"Malta","code":"MT","flag":"🇲🇹"},{"id":135,"name":"Marshall Islands","code":"MH","flag":"🇲🇭"},{"id":136,"name":"Martinique","code":"MQ","flag":"🇲🇶"},{"id":137,"name":"Mauritania","code":"MR","flag":"🇲🇷"},{"id":138,"name":"Mauritius","code":"MU","flag":"🇲🇺"},{"id":139,"name":"Mayotte","code":"YT","flag":"🇾🇹"},{"id":140,"name":"Mexico","code":"MX","flag":"🇲🇽"},{"id":141,"name":"Micronesia","code":"FM","flag":"🇫🇲"},{"id":142,"name":"Moldova","code":"MD","flag":"🇲🇩"},{"id":143,"name":"Monaco","code":"MC","flag":"🇲🇨"},{"id":144,"name":"Mongolia","code":"MN","flag":"🇲🇳"},{"id":145,"name":"Montenegro","code":"ME","flag":"🇲🇪"},{"id":146,"name":"Montserrat","code":"MS","flag":"🇲🇸"},{"id":147,"name":"Morocco","code":"MA","flag":"🇲🇦"},{"id":148,"name":"Mozambique","code":"MZ","flag":"🇲🇿"},{"id":149,"name":"Myanmar","code":"MM","flag":"🇲🇲"},{"id":150,"name":"Namibia","code":"NA","flag":"🇳🇦"},{"id":151,"name":"Nauru","code":"NR","flag":"🇳🇷"},{"id":152,"name":"Nepal","code":"NP","flag":"🇳🇵"},{"id":153,"name":"Netherlands","code":"NL","flag":"🇳🇱"},{"id":154,"name":"New Caledonia","code":"NC","flag":"🇳🇨"},{"id":155,"name":"New Zealand","code":"NZ","flag":"🇳🇿"},{"id":156,"name":"Nicaragua","code":"NI","flag":"🇳🇮"},{"id":157,"name":"Niger","code":"NE","flag":"🇳🇪"},{"id":158,"name":"Nigeria","code":"NG","flag":"🇳🇬"},{"id":159,"name":"Niue","code":"NU","flag":"🇳🇺"},{"id":160,"name":"Norfolk Island","code":"NF","flag":"🇳🇫"},{"id":161,"name":"North Korea","code":"KP","flag":"🇰🇵"},{"id":162,"name":"North Macedonia","code":"MK","flag":"🇲🇰"},{"id":163,"name":"Northern Mariana Islands","code":"MP","flag":"🇲🇵"},{"id":164,"name":"Norway","code":"NO","flag":"🇳🇴"},{"id":165,"name":"Oman","code":"OM","flag":"🇴🇲"},{"id":166,"name":"Pakistan","code":"PK","flag":"🇵🇰"},{"id":167,"name":"Palau","code":"PW","flag":"🇵🇼"},{"id":168,"name":"Palestine","code":"PS","flag":"🇵🇸"},{"id":169,"name":"Panama","code":"PA","flag":"🇵🇦"},{"id":170,"name":"Papua New Guinea","code":"PG","flag":"🇵🇬"},{"id":171,"name":"Paraguay","code":"PY","flag":"🇵🇾"},{"id":172,"name":"Peru","code":"PE","flag":"🇵🇪"},{"id":173,"name":"Philippines","code":"PH","flag":"🇵🇭"},{"id":174,"name":"Pitcairn","code":"PN","flag":"🇵🇳"},{"id":175,"name":"Poland","code":"PL","flag":"🇵🇱"},{"id":176,"name":"Portugal","code":"PT","flag":"🇵🇹"},{"id":177,"name":"Puerto Rico","code":"PR","flag":"🇵🇷"},{"id":178,"name":"Qatar","code":"QA","flag":"🇶🇦"},{"id":179,"name":"Republic of the Congo","code":"CD","flag":"🇨🇩"},{"id":180,"name":"Romania","code":"RO","flag":"🇷🇴"},{"id":181,"name":"Russia","code":"RU","flag":"🇷🇺"},{"id":182,"name":"Rwanda","code":"RW","flag":"🇷🇼"},{"id":183,"name":"Réunion","code":"RE","flag":"🇷🇪"},{"id":184,"name":"Saint Barthélemy","code":"BL","flag":"🇧🇱"},{"id":185,"name":"Saint Helena","code":"SH","flag":"🇸🇭"},{"id":186,"name":"Saint Kitts and Nevis","code":"KN","flag":"🇰🇳"},{"id":187,"name":"Saint Lucia","code":"LC","flag":"🇱🇨"},{"id":188,"name":"Saint Martin (French part)","code":"MF","flag":"🇲🇫"},{"id":189,"name":"Saint Pierre and Miquelon","code":"PM","flag":"🇵🇲"},{"id":190,"name":"Saint Vincent and the Grenadines","code":"VC","flag":"🇻🇨"},{"id":191,"name":"Samoa","code":"WS","flag":"🇼🇸"},{"id":192,"name":"San Marino","code":"SM","flag":"🇸🇲"},{"id":193,"name":"Sao Tome and Principe","code":"ST","flag":"🇸🇹"},{"id":194,"name":"Saudi Arabia","code":"SA","flag":"🇸🇦"},{"id":195,"name":"Senegal","code":"SN","flag":"🇸🇳"},{"id":196,"name":"Serbia","code":"RS","flag":"🇷🇸"},{"id":197,"name":"Seychelles","code":"SC","flag":"🇸🇨"},{"id":198,"name":"Sierra Leone","code":"SL","flag":"🇸🇱"},{"id":199,"name":"Singapore","code":"SG","flag":"🇸🇬"},{"id":200,"name":"Sint Maarten (Dutch part)","code":"SX","flag":"🇸🇽"},{"id":201,"name":"Slovakia","code":"SK","flag":"🇸🇰"},{"id":202,"name":"Slovenia","code":"SI","flag":"🇸🇮"},{"id":203,"name":"Solomon Islands","code":"SB","flag":"🇸🇧"},{"id":204,"name":"Somalia","code":"SO","flag":"🇸🇴"},{"id":205,"name":"South Africa","code":"ZA","flag":"🇿🇦"},{"id":206,"name":"South Georgia and the South Sandwich Islands","code":"GS","flag":"🇬🇸"},{"id":207,"name":"South Korea","code":"KR","flag":"🇰🇷"},{"id":208,"name":"South Sudan","code":"SS","flag":"🇸🇸"},{"id":209,"name":"Spain","code":"ES","flag":"🇪🇸"},{"id":210,"name":"Sri Lanka","code":"LK","flag":"🇱🇰"},{"id":211,"name":"Sudan","code":"SD","flag":"🇸🇩"},{"id":212,"name":"Suriname","code":"SR","flag":"🇸🇷"},{"id":213,"name":"Svalbard and Jan Mayen","code":"SJ","flag":"🇸🇯"},{"id":214,"name":"Sweden","code":"SE","flag":"🇸🇪"},{"id":215,"name":"Switzerland","code":"CH","flag":"🇨🇭"},{"id":216,"name":"Syrian Arab Republic","code":"SY","flag":"🇸🇾"},{"id":217,"name":"Taiwan","code":"TW","flag":"🇹🇼"},{"id":218,"name":"Tajikistan","code":"TJ","flag":"🇹🇯"},{"id":219,"name":"Tanzania","code":"TZ","flag":"🇹🇿"},{"id":220,"name":"Thailand","code":"TH","flag":"🇹🇭"},{"id":221,"name":"Timor-Leste","code":"TL","flag":"🇹🇱"},{"id":222,"name":"Togo","code":"TG","flag":"🇹🇬"},{"id":223,"name":"Tokelau","code":"TK","flag":"🇹🇰"},{"id":224,"name":"Tonga","code":"TO","flag":"🇹🇴"},{"id":225,"name":"Trinidad and Tobago","code":"TT","flag":"🇹🇹"},{"id":226,"name":"Tunisia","code":"TN","flag":"🇹🇳"},{"id":227,"name":"Turkmenistan","code":"TM","flag":"🇹🇲"},{"id":228,"name":"Turks and Caicos Islands","code":"TC","flag":"🇹🇨"},{"id":229,"name":"Tuvalu","code":"TV","flag":"🇹🇻"},{"id":230,"name":"Türkiye","code":"TR","flag":"🇹🇷"},{"id":231,"name":"Uganda","code":"UG","flag":"🇺🇬"},{"id":232,"name":"Ukraine","code":"UA","flag":"🇺🇦"},{"id":233,"name":"United Arab Emirates","code":"AE","flag":"🇦🇪"},{"id":234,"name":"United Kingdom","code":"GB","flag":"🇬🇧"},{"id":235,"name":"United States","code":"US","flag":"🇺🇸"},{"id":236,"name":"United States Minor Outlying Islands","code":"UM","flag":"🇺🇲"},{"id":237,"name":"Uruguay","code":"UY","flag":"🇺🇾"},{"id":238,"name":"Uzbekistan","code":"UZ","flag":"🇺🇿"},{"id":239,"name":"Vanuatu","code":"VU","flag":"🇻🇺"},{"id":240,"name":"Vatican City","code":"VA","flag":"🇻🇦"},{"id":241,"name":"Venezuela","code":"VE","flag":"🇻🇪"},{"id":242,"name":"Viet Nam","code":"VN","flag":"🇻🇳"},{"id":243,"name":"Virgin Islands","code":"VG","flag":"🇻🇬"},{"id":244,"name":"Virgin Islands","code":"VI","flag":"🇻🇮"},{"id":245,"name":"Wallis and Futuna","code":"WF","flag":"🇼🇫"},{"id":246,"name":"Western Sahara","code":"EH","flag":"🇪🇭"},{"id":247,"name":"Yemen","code":"YE","flag":"🇾🇪"},{"id":248,"name":"Zambia","code":"ZM","flag":"🇿🇲"},{"id":249,"name":"Zimbabwe","code":"ZW","flag":"🇿🇼"},{"id":250,"name":"Åland Islands","code":"AX","flag":"🇦🇽"},{"id":251,"name":"Canary Islands","code":"IC","flag":"🇮🇨"}]`),
+  mS = {
     dashboard: {
       summary: {
         counters: {
@@ -3701,7 +3705,7 @@ const sS = [{
       assignCosmetics: "staff.cosmetics.assign_cosmetics"
     }
   },
-  mS = {
+  gS = {
     tools: {
       wayback: {
         limit: 1e4,
@@ -3709,10 +3713,10 @@ const sS = [{
       }
     }
   },
-  gS = {
+  wS = {
     areaRadius: 250
   },
-  wS = {
+  yS = {
     creationCostDroplets: 25e3,
     donationDropletsPerCoin: 1e3,
     paintsPerCoin: 5e3,
@@ -3740,31 +3744,31 @@ const sS = [{
     memberPageSize: 50
   },
   H = {
-    seasons: sS,
-    regionSize: oS,
-    refreshIntervalMs: cS,
-    colors: uS,
-    errors: lS,
-    items: _S,
-    platforms: dS,
-    products: fS,
-    countries: hS,
-    permissions: pS,
-    settings: mS,
-    moderation: gS,
-    alliance: wS
+    seasons: oS,
+    regionSize: cS,
+    refreshIntervalMs: uS,
+    colors: lS,
+    errors: _S,
+    items: dS,
+    platforms: fS,
+    products: hS,
+    countries: pS,
+    permissions: mS,
+    settings: gS,
+    moderation: wS,
+    alliance: yS
   },
   Ke = H,
-  yS = H.seasons,
+  vS = H.seasons,
   Ut = H.seasons.length - 1,
-  TI = H.seasons[Ut].zoom,
-  kI = H.seasons[Ut].tileSize,
-  qI = H.permissions,
+  kI = H.seasons[Ut].zoom,
+  qI = H.seasons[Ut].tileSize,
+  AI = H.permissions,
   Ct = H.settings,
-  vS = H.platforms.android,
-  AI = vS.googlePlayBilling.price;
+  bS = H.platforms.android,
+  SI = bS.googlePlayBilling.price;
 
-function SI(r) {
+function II(r) {
   return Ke.countries[r - 1]
 }
 
@@ -3774,10 +3778,10 @@ function Xe(r) {
   r.sharedProducts = Object.entries(Ke.products).map(([t, e]) => ({
     ...e,
     productId: t
-  })).filter(t => "lookupKey" in t), r.map = bS(r.sharedProducts, t => t.lookupKey)
+  })).filter(t => "lookupKey" in t), r.map = ES(r.sharedProducts, t => t.lookupKey)
 })(Xe || (Xe = {}));
 
-function bS(r, t) {
+function ES(r, t) {
   const e = new Map;
   for (const n in r) {
     const a = Reflect.get(r, n),
@@ -3789,9 +3793,9 @@ function bS(r, t) {
 const $e = 5e3,
   Tt = 4,
   U = 64,
-  ES = 8;
+  OS = 8;
 
-function OS(r) {
+function TS(r) {
   const t = r.maxX - r.minX + 1,
     e = r.maxY - r.minY + 1;
   if (t <= 0 || e <= 0) return [];
@@ -3808,7 +3812,7 @@ function OS(r) {
   return s
 }
 
-function TS(r) {
+function kS(r) {
   const t = [],
     e = Math.floor(r.minX / U),
     n = Math.floor(r.maxX / U),
@@ -3829,7 +3833,7 @@ function kt(r) {
   return t === "admin" || t === "leader" ? t : "member"
 }
 
-function kS(r) {
+function qS(r) {
   return class extends r {
     async getAlliance() {
       const t = await this.request("/alliance", {
@@ -4298,8 +4302,14 @@ function kS(r) {
       throw new Error(o())
     }
     async getPublicAllianceMembers(t, e) {
-      const n = await this.request(`/alliances/${t}/members?page=${e}`, {});
-      if (n.status === i.OK) return n.json();
+      const n = new URLSearchParams({
+        page: String(e.page),
+        role: e.role,
+        sort: e.sort
+      });
+      e.query && n.set("q", e.query);
+      const a = await this.request(`/alliances/${t}/members?${n.toString()}`, {});
+      if (a.status === i.OK) return a.json();
       throw new Error(o())
     }
     async getAllianceViewerState(t) {
@@ -4492,17 +4502,26 @@ function kS(r) {
       }
     }
     async getAllianceMembers(t) {
-      const e = await this.request(`/alliance/members/${t}`, {
+      const e = new URLSearchParams({
+        role: t.role,
+        sort: t.sort
+      });
+      t.query && e.set("q", t.query);
+      const n = await this.request(`/alliance/members/${t.page}?${e.toString()}`, {
         credentials: "include"
       });
-      if (e.status === i.OK) return e.json();
+      if (n.status === i.OK) return n.json();
       throw new Error(o())
     }
     async getAllianceBannedMembers(t) {
-      const e = await this.request(`/alliance/members/banned/${t}`, {
+      const e = new URLSearchParams({
+        sort: t.sort
+      });
+      t.query && e.set("q", t.query);
+      const n = await this.request(`/alliance/members/banned/${t.page}?${e.toString()}`, {
         credentials: "include"
       });
-      if (e.status === i.OK) return e.json();
+      if (n.status === i.OK) return n.json();
       throw new Error(o())
     }
     async getAllianceById(t) {
@@ -4595,7 +4614,7 @@ function kS(r) {
       return a.json()
     }
     async getAdminAllianceHqArea(t, e) {
-      const n = OS(e);
+      const n = TS(e);
       if (n.length === 0) throw new Error(o());
       const a = await this.getAdminAllianceHqAreaChunk(t, n[0]),
         s = [...a.pixels];
@@ -4611,11 +4630,11 @@ function kS(r) {
     }
     async getAdminAllianceHqSelectArea(t, e, n) {
       var d;
-      const a = TS(e),
+      const a = kS(e),
         s = new Array(a.length);
       let c = 0;
       const u = Array.from({
-        length: Math.min(ES, a.length)
+        length: Math.min(OS, a.length)
       }, async () => {
         for (; c < a.length;) {
           const f = c;
@@ -4771,16 +4790,21 @@ function kS(r) {
     }
     async getAdminAllianceMembers(t, e) {
       const n = new URLSearchParams({
-          page: String(e.page),
-          pageSize: String(e.pageSize)
-        }),
-        a = await this.request(`/staff/dashboard/alliances/${t}/members?${n.toString()}`, {
-          method: "GET",
-          credentials: "include"
-        });
+        page: String(e.page),
+        pageSize: String(e.pageSize),
+        role: e.role,
+        status: e.status,
+        sort: e.sort
+      });
+      e.query && n.set("q", e.query);
+      const a = await this.request(`/staff/dashboard/alliances/${t}/members?${n.toString()}`, {
+        method: "GET",
+        credentials: "include"
+      });
       if (a.status === i.NOT_FOUND) return {
         members: [],
-        total: 0
+        total: 0,
+        filteredTotal: 0
       };
       if (a.status !== i.OK) throw new l(o(), a.status);
       const s = await a.json(),
@@ -4798,7 +4822,8 @@ function kS(r) {
           timedOut: !!(u != null && u.timedOut),
           banned: !!(u != null && u.banned)
         })),
-        total: Number((s == null ? void 0 : s.total) ?? c.length)
+        total: Number((s == null ? void 0 : s.total) ?? c.length),
+        filteredTotal: Number((s == null ? void 0 : s.filteredTotal) ?? (s == null ? void 0 : s.total) ?? c.length)
       }
     }
     async renameAlliance(t, e) {
@@ -4972,7 +4997,7 @@ function kS(r) {
   }
 }
 
-function qS(r) {
+function AS(r) {
   return class extends r {
     async getUserAnticheat(t) {
       const e = await this.request(`/staff/dashboard/users/anticheat?id=${encodeURIComponent(t)}`, {
@@ -5017,7 +5042,7 @@ function qS(r) {
   }
 }
 
-function AS(r) {
+function SS(r) {
   return class extends r {
     async autoReviewBan(t) {
       const e = await this.request("/staff/dashboard/users/auto-review-ban", {
@@ -5118,7 +5143,7 @@ function AS(r) {
   }
 }
 
-function SS(r) {
+function IS(r) {
   return class extends r {
     async getUserFrames() {
       const t = await this.request("/me/frames", {
@@ -5265,7 +5290,7 @@ const K = {
   second: 1e3
 };
 
-function II(r) {
+function NI(r) {
   const t = Math.floor(r / K.hour);
   r -= t * K.hour;
   const e = Math.floor(r / K.minute);
@@ -5274,7 +5299,7 @@ function II(r) {
   return t > 0 ? `${t}:${e.toString().padStart(2,"0")}:${a}` : `${e}:${a}`
 }
 
-function NI(r) {
+function RI(r) {
   const t = r.getFullYear(),
     e = String(r.getMonth() + 1).padStart(2, "0"),
     n = String(r.getDate()).padStart(2, "0"),
@@ -5283,9 +5308,9 @@ function NI(r) {
     c = String(r.getSeconds()).padStart(2, "0");
   return `${t}-${e}-${n} ${a}:${s}:${c}`
 }
-const IS = 30 * K.minute;
+const NS = 30 * K.minute;
 
-function NS(r) {
+function RS(r) {
   return class extends r {
     constructor() {
       super(...arguments);
@@ -5324,7 +5349,7 @@ function NS(r) {
       throw new Error(V())
     }
     refreshHotspotsIfStale() {
-      Date.now() - this.lastHotspotRequestAt < IS || (this.lastHotspotRequestAt = Date.now(), this.request("/map/hotspots", {
+      Date.now() - this.lastHotspotRequestAt < NS || (this.lastHotspotRequestAt = Date.now(), this.request("/map/hotspots", {
         credentials: "include",
         keepalive: !0,
         throwOnStatus: !1
@@ -5346,7 +5371,7 @@ function NS(r) {
   }
 }
 
-function RS(r) {
+function DS(r) {
   return class extends r {
     async postCaptchaSession(t, e = "include") {
       const n = await this.request("/anticheat/captcha/session", {
@@ -5372,7 +5397,7 @@ function RS(r) {
     }
   }
 }
-const RI = {
+const DI = {
     griefing: wu(),
     "multi-accounting": uf(),
     "hate-speech": Fu(),
@@ -5381,7 +5406,7 @@ const RI = {
     "inappropriate-content": ml(),
     other: ni()
   },
-  DI = {
+  PI = {
     doxxing: co(),
     "hate-speech": nl(),
     griefing: Ru(),
@@ -5390,7 +5415,7 @@ const RI = {
     "inappropriate-content": Il(),
     other: mi()
   },
-  PI = {
+  xI = {
     doxxing: "text-red-600",
     "hate-speech": "text-red-400",
     "inappropriate-content": "text-amber-500",
@@ -5408,7 +5433,7 @@ const RI = {
     other: 5,
     griefing: 6
   },
-  xI = {
+  jI = {
     griefing: "topic-2",
     "inappropriate-content": "topic-1",
     bot: "topic-3",
@@ -5417,7 +5442,7 @@ const RI = {
     doxxing: "topic-1",
     other: ""
   },
-  DS = 365 * K.day;
+  PS = 365 * K.day;
 
 function Mt(r) {
   if (!r) return null;
@@ -5425,12 +5450,12 @@ function Mt(r) {
   return Number.isFinite(e) ? e : null
 }
 
-function jI(r, t = Date.now()) {
+function zI(r, t = Date.now()) {
   const e = Mt(r);
-  return e === null ? !1 : e - t >= DS
+  return e === null ? !1 : e - t >= PS
 }
 
-function zI(r, t = Date.now()) {
+function LI(r, t = Date.now()) {
   const e = Mt(r);
   if (e === null || e <= t) return {
     days: 0,
@@ -5448,7 +5473,7 @@ function zI(r, t = Date.now()) {
   }
 }
 
-function PS(r) {
+function xS(r) {
   return class extends r {
     async getModeratorTickets() {
       const t = await this.request("/staff/tickets/get", {
@@ -5911,7 +5936,7 @@ function PS(r) {
   }
 }
 
-function xS(r) {
+function jS(r) {
   return class extends r {
     async getNotificationCount() {
       const t = await this.request("/notification/count", {
@@ -5953,7 +5978,7 @@ function xS(r) {
   }
 }
 
-function jS(r) {
+function zS(r) {
   return class extends r {
     async driveStatus() {
       const t = await this.request("/drive/status", {
@@ -6112,7 +6137,7 @@ function At(r, t) {
   return e
 }
 
-function LI(r, t) {
+function UI(r, t) {
   const e = {};
   for (const n of r) {
     const a = t(n);
@@ -6121,7 +6146,7 @@ function LI(r, t) {
   return e
 }
 
-function zS(r) {
+function LS(r) {
   return class extends r {
     async paint(t) {
       const e = At(t, u => `t=(${u.tile[0]},${u.tile[1]}),s=${u.season}`),
@@ -6310,8 +6335,8 @@ function zS(r) {
       }
     }
     async adminAutoPainterPaint(t, e, n) {
-      const a = LS(t),
-        s = await US(a),
+      const a = US(t),
+        s = await CS(a),
         c = new FormData;
       c.append("fingerprint", e), c.append("season", a.season.toString()), c.append("px0", a.offsetX.toString()), c.append("py0", a.offsetY.toString()), c.append("width", a.width.toString()), c.append("height", a.height.toString()), c.append("pixels", t.length.toString()), c.append("bitmap", s, "auto-painter.png"), c.append("userId", n.toString());
       const u = await this.request("/staff/tools/auto-painter/paint", {
@@ -6379,7 +6404,7 @@ function zS(r) {
   }
 }
 
-function LS(r) {
+function US(r) {
   var D, x;
   if (!r.length) throw new Error("Auto painter request does not contain any pixels.");
   const t = r[0].season;
@@ -6427,8 +6452,8 @@ function LS(r) {
     season: t
   }
 }
-async function US(r) {
-  const t = CS(r.width, r.height),
+async function CS(r) {
+  const t = MS(r.width, r.height),
     e = t.getContext("2d");
   if (!e) throw new Error("Canvas API is not available to encode auto painter bitmap.");
   const n = e.createImageData(r.width, r.height);
@@ -6445,7 +6470,7 @@ async function US(r) {
   })
 }
 
-function CS(r, t) {
+function MS(r, t) {
   if (typeof OffscreenCanvas < "u") return new OffscreenCanvas(r, t);
   if (typeof document < "u") {
     const e = document.createElement("canvas");
@@ -6454,11 +6479,11 @@ function CS(r, t) {
   throw new Error("Canvas API is not available in the current environment.")
 }
 
-function MS(r) {
+function BS(r) {
   return class extends r {
     validWaybackInput(t) {
       const e = Number.isFinite(t.timestamp) && Number.isInteger(t.timestamp) && t.timestamp >= 0 && t.timestamp <= this.getEstimatedServerNowMs(),
-        n = Number.isFinite(t.season) && Number.isInteger(t.season) && t.season >= 0 && t.season < yS.length,
+        n = Number.isFinite(t.season) && Number.isInteger(t.season) && t.season >= 0 && t.season < vS.length,
         a = Number.isFinite(t.limit) && Number.isInteger(t.limit) && t.limit > 0 && t.limit <= Ct.tools.wayback.limit,
         s = Number.isFinite(t.tileX) && Number.isFinite(t.tileY) && Number.isInteger(t.tileX) && Number.isInteger(t.tileY) && t.tileX >= 0 && t.tileY >= 0,
         c = t.cursorTs !== void 0,
@@ -6490,8 +6515,8 @@ function MS(r) {
     }
   }
 }
-class BS extends aS(iS(kS(qS(AS(SS(NS(RS(PS(xS(jS(zS(MS(nS))))))))))))) {}
-const $ = new BS(Nt);
+class KS extends iS(sS(qS(AS(SS(IS(RS(DS(xS(jS(zS(LS(BS(aS))))))))))))) {}
+const $ = new KS(Nt);
 typeof window < "u" && Xt(() => {
   let r = $.online;
   Zt(() => {
@@ -6507,7 +6532,7 @@ function Bt(r, t) {
   return !1
 }
 
-function KS(r, t) {
+function $S(r, t) {
   for (const e of t)
     if (Bt(r, e)) return !0;
   return !1
@@ -6520,13 +6545,13 @@ function Kt(r) {
   return e
 }
 
-function $S(r) {
+function FS(r) {
   if (typeof Buffer < "u") return Buffer.from(r).toString("base64");
   let t = "";
   for (let e = 0; e < r.length; e++) t += String.fromCharCode(r[e]);
   return btoa(t)
 }
-class FS {
+class HS {
   constructor(t) {
     w(this, "bytes");
     this.bytes = t ?? new Uint8Array
@@ -6551,7 +6576,7 @@ class FS {
   }
 }
 
-function UI(r) {
+function CI(r) {
   return new Promise((t, e) => {
     const n = new FileReader;
     n.onload = () => {
@@ -6565,10 +6590,10 @@ function UI(r) {
   })
 }
 
-function CI(r) {
+function MI(r) {
   if (typeof FileReader > "u") {
     const t = r.type || "application/octet-stream";
-    return r.arrayBuffer().then(e => `data:${t};base64,${$S(new Uint8Array(e))}`)
+    return r.arrayBuffer().then(e => `data:${t};base64,${FS(new Uint8Array(e))}`)
   }
   return new Promise((t, e) => {
     const n = new FileReader;
@@ -6583,7 +6608,7 @@ function CI(r) {
   })
 }
 
-function MI(r) {
+function BI(r) {
   if (!r.startsWith("data:")) throw new Error("Could not parse data URL");
   const t = r.indexOf(",");
   if (t === -1) throw new Error("Could not parse data URL");
@@ -6603,13 +6628,13 @@ function MI(r) {
   })
 }
 
-function BI(...r) {
+function KI(...r) {
   return r.filter(Boolean).join(" ")
 }
-const HS = typeof document < "u";
+const GS = typeof document < "u";
 let St = 0;
 var Te, ke, qe;
-class GS {
+class VS {
   constructor() {
     v(this, Te, A(Be([])));
     v(this, ke, A(Be([])));
@@ -6618,7 +6643,7 @@ class GS {
       return e === -1 ? null : e
     });
     w(this, "addToast", t => {
-      HS && this.toasts.unshift(t)
+      GS && this.toasts.unshift(t)
     });
     w(this, "updateToast", ({
       id: t,
@@ -6725,7 +6750,7 @@ class GS {
       return a.then(c => {
         if (typeof c == "object" && c && "ok" in c && typeof c.ok == "boolean" && !c.ok) {
           s = !1;
-          const u = VS(c);
+          const u = YS(c);
           this.create({
             id: n,
             type: "error",
@@ -6793,19 +6818,19 @@ class GS {
 }
 Te = new WeakMap, ke = new WeakMap, qe = new WeakMap;
 
-function VS(r) {
+function YS(r) {
   return r && typeof r == "object" && "status" in r ? `HTTP error! Status: ${r.status}` : `Error! ${r}`
 }
-const P = new GS;
+const P = new VS;
 
-function YS(r, t) {
+function WS(r, t) {
   return P.create({
     message: r,
     ...t
   })
 }
 var Ge;
-class KI {
+class $I {
   constructor() {
     v(this, Ge, ne(() => P.toasts.filter(t => !t.dismiss)))
   }
@@ -6814,8 +6839,8 @@ class KI {
   }
 }
 Ge = new WeakMap;
-const WS = YS,
-  JS = Object.assign(WS, {
+const JS = WS,
+  QS = Object.assign(JS, {
     success: P.success,
     info: P.info,
     warning: P.warning,
@@ -6828,7 +6853,7 @@ const WS = YS,
     getActiveToasts: () => P.toasts.filter(r => !r.dismiss)
   });
 var Ae, Se, Ie, Ne, Re, De, Pe, xe;
-class QS {
+class XS {
   constructor() {
     w(this, "channel", new BroadcastChannel("user-channel"));
     v(this, Ae, A());
@@ -6845,7 +6870,7 @@ class QS {
     v(this, De, ne(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0));
     v(this, Pe, ne(() => {
       var t;
-      return new FS(Kt(((t = this.data) == null ? void 0 : t.flagsBitmap) ?? "AA=="))
+      return new HS(Kt(((t = this.data) == null ? void 0 : t.flagsBitmap) ?? "AA=="))
     }));
     v(this, xe, ne(() => {
       var n;
@@ -6919,7 +6944,7 @@ class QS {
         console.error("Failed to refresh notification count:", n)
       }), (e = this.data) != null && e.id && F.setUserId(this.data.id), !0
     } catch (n) {
-      return console.error(n), JS.warning(Yf(), {
+      return console.error(n), QS.warning(Yf(), {
         duration: 1e4
       }), !1
     } finally {
@@ -6942,11 +6967,11 @@ class QS {
   }
   hasAnyPermission(t) {
     var e;
-    return KS((e = this.data) == null ? void 0 : e.permissions, t)
+    return $S((e = this.data) == null ? void 0 : e.permissions, t)
   }
 }
 Ae = new WeakMap, Se = new WeakMap, Ie = new WeakMap, Ne = new WeakMap, Re = new WeakMap, De = new WeakMap, Pe = new WeakMap, xe = new WeakMap;
-const W = new QS;
+const W = new XS;
 let y;
 const L = new Array(128).fill(void 0);
 L.push(void 0, null, !0, !1);
@@ -6992,13 +7017,13 @@ function Ce(r, t) {
   return r = r >>> 0, $t.decode(Ue().subarray(r, r + t))
 }
 
-function XS(r) {
+function ZS(r) {
   r < 132 || (L[r] = oe, oe = r)
 }
 
 function It(r) {
   const t = m(r);
-  return XS(r), t
+  return ZS(r), t
 }
 let Y = null;
 
@@ -7011,7 +7036,7 @@ const Me = typeof TextEncoder < "u" ? new TextEncoder("utf-8") : {
       throw Error("TextEncoder not available")
     }
   },
-  ZS = typeof Me.encodeInto == "function" ? function(r, t) {
+  eI = typeof Me.encodeInto == "function" ? function(r, t) {
     return Me.encodeInto(r, t)
   } : function(r, t) {
     const e = Me.encode(r);
@@ -7039,31 +7064,31 @@ function je(r, t, e) {
   if (c !== n) {
     c !== 0 && (r = r.slice(c)), a = e(a, n, n = c + r.length * 3, 1) >>> 0;
     const u = Ue().subarray(a + c, a + n),
-      d = ZS(r, u);
+      d = eI(r, u);
     c += d.written, a = e(a, n, c, 1) >>> 0
   }
   return Q = c, a
 }
 
-function eI(r) {
+function tI(r) {
   const t = je(r, y.__wbindgen_export_1, y.__wbindgen_export_2),
     e = Q;
   y.set_discord_id(t, e)
 }
 
-function tI(r) {
+function rI(r) {
   const t = je(r, y.__wbindgen_export_1, y.__wbindgen_export_2),
     e = Q;
   y.set_fingerprint(t, e)
 }
 
-function rI(r) {
+function nI(r) {
   const t = je(r, y.__wbindgen_export_1, y.__wbindgen_export_2),
     e = Q;
   y.set_detected_bot(t, e)
 }
 
-function nI(r) {
+function aI(r) {
   let t, e;
   try {
     const s = y.__wbindgen_add_to_stack_pointer(-16),
@@ -7082,24 +7107,24 @@ function Ye(r) {
   y.set_user_id(r)
 }
 
-function aI(r) {
+function iI(r) {
   y.set_cf_likely_automated(r)
 }
 
-function iI(r) {
+function sI(r) {
   y.set_automated_clicks(r)
 }
 
-function sI(r) {
+function oI(r) {
   const t = je(r, y.__wbindgen_export_1, y.__wbindgen_export_2),
     e = Q;
   y.request_url(t, e)
 }
 
-function oI(r) {
+function cI(r) {
   y.set_automated_browser(r)
 }
-async function cI(r, t) {
+async function uI(r, t) {
   if (typeof Response == "function" && r instanceof Response) {
     if (typeof WebAssembly.instantiateStreaming == "function") try {
       return await WebAssembly.instantiateStreaming(r, t)
@@ -7118,7 +7143,7 @@ async function cI(r, t) {
   }
 }
 
-function uI() {
+function lI() {
   const r = {};
   return r.wbg = {}, r.wbg.__wbg_buffer_609cc3eee51ed158 = function(t) {
     const e = m(t).buffer;
@@ -7254,7 +7279,7 @@ function uI() {
   }, r
 }
 
-function lI(r, t) {
+function _I(r, t) {
   return y = r.exports, Ft.__wbindgen_wasm_module = t, Y = null, ie = null, y
 }
 async function Ft(r) {
@@ -7262,19 +7287,19 @@ async function Ft(r) {
   typeof r < "u" && (Object.getPrototypeOf(r) === Object.prototype ? {
     module_or_path: r
   } = r : console.warn("using deprecated parameters for the initialization function; pass a single object instead")), typeof r > "u" && (r = new URL("pawtect_wasm_bg.wasm", import.meta.url));
-  const t = uI();
+  const t = lI();
   (typeof r == "string" || typeof Request == "function" && r instanceof Request || typeof URL == "function" && r instanceof URL) && (r = fetch(r));
   const {
     instance: e,
     module: n
-  } = await cI(await r, t);
-  return lI(e, n)
+  } = await uI(await r, t);
+  return _I(e, n)
 }
-class _I {
+class dI {
   constructor() {
     w(this, "interval");
     w(this, "storagesEmpty", !1);
-    w(this, "storages", [new He, new Ze, new et, new fI]);
+    w(this, "storages", [new He, new Ze, new et, new hI]);
     w(this, "pawtectLoaded");
     w(this, "pawtectError")
   }
@@ -7315,9 +7340,9 @@ class _I {
         await Ft(er), (t = W.data) != null && t.id && Ye(W.data.id);
         const e = fetch;
         return Object.assign(window, {
-          fetch: dI((n, a) => {
+          fetch: fI((n, a) => {
             let s = null;
-            return n instanceof Request ? s = n.url : n instanceof URL ? s = n.href : typeof n == "string" && (s = n), s !== null && !s.startsWith("/") && sI(s), e.call(window, n, a)
+            return n instanceof Request ? s = n.url : n instanceof URL ? s = n.href : typeof n == "string" && (s = n), s !== null && !s.startsWith("/") && oI(s), e.call(window, n, a)
           })
         }), !0
       } catch (e) {
@@ -7329,7 +7354,7 @@ class _I {
     await this.loadPawtect(), Ye(t)
   }
   async setCfLikelyAutomated(t) {
-    await this.loadPawtect(), aI(t)
+    await this.loadPawtect(), iI(t)
   }
   isPawtectReady() {
     return this.pawtectLoaded ?? Promise.resolve(!1)
@@ -7348,11 +7373,11 @@ class _I {
       [a, s] = await Promise.all([tt(), Qr().catch(c => (console.error(c), {
         bot: !1
       }))]);
-    return Ye(W.data.id), eI(W.data.discordId ?? ""), tI(a), oI(n), iI(Qe.automatedClicks), s.bot && rI(s.botKind ?? "unknown"), nI(t)
+    return Ye(W.data.id), tI(W.data.discordId ?? ""), rI(a), cI(n), sI(Qe.automatedClicks), s.bot && nI(s.botKind ?? "unknown"), aI(t)
   }
 }
 
-function dI(r) {
+function fI(r) {
   return r.bind().bind()
 }
 const M = class M {
@@ -7428,7 +7453,7 @@ const J = class J {
 };
 w(J, "KEY", "_pf_uid"), w(J, "MAX_AGE", 3600 * 24 * 365);
 let et = J;
-class fI {
+class hI {
   constructor() {
     w(this, "packed")
   }
@@ -7445,7 +7470,7 @@ class fI {
     this.packed = BigInt(t.timestamp) << 32n | BigInt(t.userId) & 0xffffffffn
   }
 }
-const F = new _I;
+const F = new dI;
 export {
-  SI as $, Fa as A, Ra as B, uf as C, qt as D, Lv as E, Xe as F, vS as G, AI as H, P as I, BI as J, KI as K, II as L, EI as M, R as N, vI as O, TI as P, yI as Q, bI as R, qI as S, K as T, Zr as U, qm as V, OI as W, Ut as X, Ct as Y, ub as Z, Eb as _, RI as a, vc as a0, yS as a1, CI as a2, MI as a3, ae as a4, l as a5, oq as a6, rO as a7, oE as a8, NI as a9, FS as aa, Kt as ab, jI as ac, zI as ad, Pw as ae, zg as af, DI as ag, xI as ah, LI as ai, Kl as aj, ct as ak, $ as b, kI as c, Ke as d, i as e, o as f, Qe as g, ft as h, F as i, Dt as j, ee as k, UI as l, Ru as m, Yf as n, wu as o, Il as p, ml as q, em as r, PI as s, JS as t, W as u, se as v, nl as w, Fu as x, co as y, Ws as z
+  II as $, Fa as A, Ra as B, uf as C, qt as D, Xe as E, bS as F, SI as G, Lv as H, P as I, KI as J, $I as K, NI as L, OI as M, R as N, bI as O, kI as P, vI as Q, EI as R, AI as S, K as T, Zr as U, qm as V, TI as W, Ut as X, Ct as Y, ub as Z, Eb as _, DI as a, vc as a0, vS as a1, MI as a2, BI as a3, ae as a4, l as a5, oq as a6, rO as a7, oE as a8, RI as a9, HS as aa, Kt as ab, zI as ac, LI as ad, Pw as ae, zg as af, PI as ag, jI as ah, UI as ai, Kl as aj, ct as ak, $ as b, qI as c, Ke as d, i as e, o as f, Qe as g, ft as h, F as i, Dt as j, ee as k, CI as l, Ru as m, Yf as n, wu as o, Il as p, ml as q, em as r, xI as s, QS as t, W as u, se as v, nl as w, Fu as x, co as y, Ws as z
 };

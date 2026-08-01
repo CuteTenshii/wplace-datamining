@@ -1,22 +1,22 @@
 import {
   g as t
 } from "./BhCkpOlh.js";
-const n = () => "Clear",
-  c = () => "Limpar",
-  u = () => "清除",
-  a = () => "Leeren",
-  l = () => "Limpiar",
-  i = () => "Effacer",
-  o = () => "Pulisci",
-  s = () => "クリア",
-  f = () => "Wyczyść",
-  _ = () => "Очистить",
-  p = () => "Очистити",
-  m = () => "Xóa",
-  g = (L = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? n() : r === "pt" ? c() : r === "ch" ? u() : r === "de" ? a() : r === "es" ? l() : r === "fr" ? i() : r === "it" ? o() : r === "jp" ? s() : r === "pl" ? f() : r === "ru" ? _() : r === "uk" ? p() : m()
+const e = () => "Ban",
+  u = () => "Banimento",
+  a = () => "封禁",
+  o = () => "Bannen",
+  c = () => "Banear",
+  s = () => "Bannir",
+  i = () => "Ban",
+  b = () => "BAN",
+  f = () => "Ban",
+  _ = () => "Забанить",
+  p = () => "Бан",
+  B = () => "Cấm",
+  d = (l = {}, r = {}) => {
+    const n = r.locale ?? t();
+    return n === "en" ? e() : n === "pt" ? u() : n === "ch" ? a() : n === "de" ? o() : n === "es" ? c() : n === "fr" ? s() : n === "it" ? i() : n === "jp" ? b() : n === "pl" ? f() : n === "ru" ? _() : n === "uk" ? p() : B()
   };
 export {
-  g as c
+  d as b
 };

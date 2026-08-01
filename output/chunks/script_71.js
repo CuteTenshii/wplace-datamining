@@ -1,52 +1,67 @@
 import "./Bzak7iHL.js";
 import {
-  w as h,
-  f as n,
-  a as v,
-  k as l
-} from "./sZguypfn.js";
+  p as x,
+  t as m,
+  a as p,
+  b as g,
+  c as f,
+  d as _,
+  s as b,
+  r as h
+} from "./DUZ_qUVk.js";
 import {
-  i as g
-} from "./DKaXnpGW.js";
+  i as w
+} from "./BLc2SwOK.js";
 import {
-  b as e
-} from "./Cy1wQjPv.js";
+  b as z,
+  a as c,
+  s as k
+} from "./M4i-R8Gk.js";
 import {
-  r as w
-} from "./BwfjFjwf.js";
-var c = new Set(["$$slots", "$$events", "$$legacy", "filled"]),
-  q = l('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
-  T = l('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
+  p as L,
+  r as T
+} from "./DXFW01RN.js";
+import {
+  l as y
+} from "./B_Oz03f8.js";
+var S = new Set(["$$slots", "$$events", "$$legacy", "hasText", "size"]),
+  U = f("<span>wplace</span>"),
+  W = f('<div><img alt="Wplace logo"/> <!></div>');
 
-function C(i, o) {
-  let s = w(o, c);
-  var a = h(),
-    f = n(a);
+function E(n, t) {
+  x(t, !0);
+  let e = L(t, "size", 3, "default"),
+    d = T(t, S);
+  var a = W();
+  z(a, () => ({
+    ...d,
+    class: `flex items-center gap-1.5 ${t.class??""}`
+  }));
+  var s = _(a);
+  let r;
+  var u = b(s, 2);
   {
-    var m = r => {
-        var t = q();
-        e(t, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...s
-        })), v(r, t)
-      },
-      p = r => {
-        var t = T();
-        e(t, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...s
-        })), v(r, t)
-      };
-    g(f, r => {
-      o.filled ? r(m) : r(p, -1)
+    var v = l => {
+      var o = U();
+      let i;
+      m(() => i = c(o, 1, "text-base-content font-pixel", null, i, {
+        "text-4xl": e() === "default",
+        "text-5xl": e() === "lg" || e() === "medium"
+      })), p(l, o)
+    };
+    w(u, l => {
+      t.hasText && l(v)
     })
   }
-  v(i, a)
+  h(a), m(() => {
+    r = c(s, 1, "pixelated h-auto shrink-0", null, r, {
+      "w-4": e() === "small",
+      "w-10": e() === "default",
+      "w-16": e() === "medium",
+      "w-20": e() === "lg"
+    }), k(s, "src", y)
+  }), p(n, a), g()
 }
 export {
-  C
+  E as L
 };

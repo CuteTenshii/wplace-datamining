@@ -1,71 +1,70 @@
-import "./Bzak7iHL.js";
 import {
-  p as R,
-  d as i,
-  r as l,
-  t as m,
-  a as n,
-  b as h,
-  s as f,
-  c as g
-} from "./sZguypfn.js";
-import {
-  s as _
-} from "./jdzncLHG.js";
-import {
-  i as w
-} from "./DKaXnpGW.js";
-import {
-  a as E
-} from "./Cy1wQjPv.js";
-import {
-  p as y
-} from "./BwfjFjwf.js";
-import {
-  R as O,
-  a as z
-} from "./TTfhDrzz.js";
-import {
-  L as v
-} from "./C1BGxFg3.js";
-var c = g('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
-  A = g("<span><!></span>");
-
-function T(b, e) {
-  R(e, !0);
-  let p = y(e, "big", 3, !1);
-  var s = A();
-  let d;
-  var u = i(s);
-  {
-    var x = r => {
-        var a = c(),
-          t = i(a);
-        v(t, {
-          size: "none"
-        });
-        var o = f(t, 1, !0);
-        l(a), m(() => _(o, O[e.role])), n(r, a)
-      },
-      L = r => {
-        var a = c(),
-          t = i(a);
-        v(t, {
-          size: "small"
-        });
-        var o = f(t, 1, !0);
-        l(a), m(() => _(o, z[e.role])), n(r, a)
-      };
-    w(u, r => {
-      p() ? r(x) : r(L, -1)
-    })
-  }
-  l(s), m(() => d = E(s, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center pt-0.5 leading-none font-semibold whitespace-nowrap shadow", null, d, {
-    "badge-info": e.role === "admin",
-    "badge-secondary": e.role === "sac" || e.role === "game_master" || e.role === "game_master_leader" || e.role === "dev",
-    "badge-warning": e.role === "discord_mod" || e.role === "discord_leader"
-  })), n(b, s), h()
-}
+  g as t
+} from "./BhCkpOlh.js";
+const a = () => "Load more",
+  s = () => "Carregar mais",
+  l = () => "加载更多",
+  o = () => "Mehr laden",
+  u = () => "Cargar más",
+  _ = () => "Charger plus",
+  c = () => "Carica altro",
+  i = () => "さらに読み込む",
+  p = () => "Wczytaj więcej",
+  d = () => "Загрузить ещё",
+  f = () => "Завантажити ще",
+  m = () => "Tải thêm",
+  $ = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? a() : e === "pt" ? s() : e === "ch" ? l() : e === "de" ? o() : e === "es" ? u() : e === "fr" ? _() : e === "it" ? c() : e === "jp" ? i() : e === "pl" ? p() : e === "ru" ? d() : e === "uk" ? f() : m()
+  },
+  h = () => "Player",
+  y = () => "Jogador",
+  g = () => "玩家",
+  j = () => "Spieler",
+  k = () => "Jugador",
+  v = () => "Joueur",
+  N = () => "Giocatore",
+  x = () => "プレイヤー",
+  C = () => "Gracz",
+  z = () => "Игрок",
+  E = () => "Гравець",
+  G = () => "Người chơi",
+  ee = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? h() : e === "pt" ? y() : e === "ch" ? g() : e === "de" ? j() : e === "es" ? k() : e === "fr" ? v() : e === "it" ? N() : e === "jp" ? x() : e === "pl" ? C() : e === "ru" ? z() : e === "uk" ? E() : G()
+  },
+  J = () => "Deleted",
+  S = () => "Excluido",
+  w = () => "已删除",
+  K = () => "Gelöscht",
+  L = () => "Eliminado",
+  b = () => "Supprimé",
+  A = () => "Eliminato",
+  D = () => "削除済み",
+  F = () => "Usunięte",
+  M = () => "Удалено",
+  P = () => "Видалено",
+  T = () => "Đã xóa",
+  re = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? J() : e === "pt" ? S() : e === "ch" ? w() : e === "de" ? K() : e === "es" ? L() : e === "fr" ? b() : e === "it" ? A() : e === "jp" ? D() : e === "pl" ? F() : e === "ru" ? M() : e === "uk" ? P() : T()
+  },
+  U = () => "No players match the current filters.",
+  W = () => "Nenhum jogador corresponde aos filtros atuais.",
+  q = () => "没有玩家符合当前筛选条件。",
+  B = () => "Keine Spieler entsprechen den aktuellen Filtern.",
+  H = () => "Ningún jugador coincide con los filtros actuales.",
+  I = () => "Aucun joueur ne correspond aux filtres actuels.",
+  O = () => "Nessun giocatore corrisponde ai filtri attuali.",
+  Q = () => "現在のフィルターに一致するプレイヤーはいません。",
+  R = () => "Żaden gracz nie pasuje do aktualnych filtrów.",
+  V = () => "Нет игроков, соответствующих текущим фильтрам.",
+  X = () => "Жоден гравець не відповідає поточним фільтрам.",
+  Y = () => "Không có người chơi nào khớp với bộ lọc hiện tại.",
+  te = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? U() : e === "pt" ? W() : e === "ch" ? q() : e === "de" ? B() : e === "es" ? H() : e === "fr" ? I() : e === "it" ? O() : e === "jp" ? Q() : e === "pl" ? R() : e === "ru" ? V() : e === "uk" ? X() : Y()
+  };
 export {
-  T as R
+  re as a, $ as l, ee as p, te as s
 };

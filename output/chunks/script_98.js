@@ -1,52 +1,90 @@
 import "./Bzak7iHL.js";
 import {
-  w as g,
-  f as n,
+  p as y,
+  w as S,
+  f as A,
   a as o,
-  k as v
-} from "./sZguypfn.js";
+  b as I,
+  d as w,
+  r,
+  t as n,
+  i as s,
+  s as k,
+  c as u,
+  u as m,
+  k as B
+} from "./DUZ_qUVk.js";
 import {
-  i as w
-} from "./DKaXnpGW.js";
+  i as C
+} from "./BLc2SwOK.js";
 import {
-  b as e
-} from "./Cy1wQjPv.js";
+  h as f
+} from "./Dk_Sh0M8.js";
 import {
-  r as c
-} from "./BwfjFjwf.js";
-var d = new Set(["$$slots", "$$events", "$$legacy", "filled"]),
-  h = v('<svg><path d="M160-160v-100.77l527.23-527.77q6.15-5.48 13.57-8.47 7.43-2.99 15.49-2.99t15.62 2.54q7.55 2.54 13.94 9.15l42.69 42.93q6.61 6.38 9.04 14 2.42 7.63 2.42 15.25 0 8.13-2.74 15.56-2.74 7.42-8.72 13.57L260.77-160H160Zm540.15-496.46L760-715.54 715.54-760l-59.08 59.85 43.69 43.69Z"></path></svg>'),
-  _ = v('<svg><path d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"></path></svg>');
+  a as g,
+  s as L,
+  b as Z
+} from "./M4i-R8Gk.js";
+import {
+  p as j,
+  r as z
+} from "./DXFW01RN.js";
+import {
+  a as E
+} from "./BcgwktUU.js";
+import {
+  m as M
+} from "./Dcjf6cED.js";
+var O = u('<div><img alt="" class="size-full object-cover" style="image-rendering: pixelated" draggable="false"/></div>'),
+  Q = u('<div aria-hidden="true"><div class="absolute -top-1/2 -right-4 aspect-square h-[200%] rotate-12 opacity-25 select-none"></div> <div class="absolute -bottom-1/3 left-6 aspect-square h-[110%] -rotate-6 opacity-15 select-none"></div></div>'),
+  D = u("<div></div>");
 
-function L(i, s) {
-  let a = c(s, d);
-  var l = g(),
-    m = n(l);
+function W(v, e) {
+  y(e, !0);
+  let c = j(e, "variant", 3, "picture");
+  const l = m(() => e.seed && e.seed.length > 0 ? e.seed : `alliance-${e.allianceId}`),
+    d = m(() => M(s(l), 95, 45)),
+    h = m(() => E(e.allianceId));
+  var _ = S(),
+    p = A(_);
   {
-    var f = t => {
-        var r = h();
-        e(r, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...a
-        })), o(t, r)
+    var q = t => {
+        var a = O(),
+          i = w(a);
+        r(a), n(() => {
+          g(a, 1, `overflow-hidden bg-white ${e.class??""??""}`), L(i, "src", e.imageSrc)
+        }), o(t, a)
       },
-      p = t => {
-        var r = _();
-        e(r, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...a
-        })), o(t, r)
+      T = t => {
+        var a = Q(),
+          i = w(a);
+        f(i, () => s(d), !0), r(i);
+        var b = k(i, 2);
+        f(b, () => s(d), !0), r(b), r(a), n(() => g(a, 1, `relative overflow-hidden ${s(h)??""} ${e.class??""??""}`)), o(t, a)
+      },
+      x = t => {
+        var a = D();
+        f(a, () => s(d), !0), r(a), n(() => g(a, 1, `overflow-hidden ${s(h)??""} ${e.class??""??""}`)), o(t, a)
       };
-    w(m, t => {
-      s.filled ? t(f) : t(p, -1)
+    C(p, t => {
+      e.imageSrc ? t(q) : c() === "banner" ? t(T, 1) : t(x, -1)
     })
   }
-  o(i, l)
+  o(v, _), I()
+}
+var F = new Set(["$$slots", "$$events", "$$legacy"]),
+  G = B('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
+
+function X(v, e) {
+  let c = z(e, F);
+  var l = G();
+  Z(l, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...c
+  })), o(v, l)
 }
 export {
-  L as E
+  W as A, X as L
 };

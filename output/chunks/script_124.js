@@ -1,22 +1,27 @@
+import "./Bzak7iHL.js";
 import {
-  g as t
-} from "./BhCkpOlh.js";
-const u = () => "User ID",
-  n = () => "ID do usuário",
-  s = () => "用户ID",
-  i = () => "Benutzer-ID",
-  _ = () => "ID de usuario",
-  o = () => "ID utilisateur",
-  c = () => "ID dell'utente",
-  d = () => "ユーザーID",
-  f = () => "ID użytkownika",
-  D = () => "Идентификатор пользователя",
-  I = () => "ID користувача",
-  l = () => "ID người dùng",
-  g = (p = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? u() : r === "pt" ? n() : r === "ch" ? s() : r === "de" ? i() : r === "es" ? _() : r === "fr" ? o() : r === "it" ? c() : r === "jp" ? d() : r === "pl" ? f() : r === "ru" ? D() : r === "uk" ? I() : l()
-  };
+  a as e,
+  k as v
+} from "./DUZ_qUVk.js";
+import {
+  b as p
+} from "./M4i-R8Gk.js";
+import {
+  r as a
+} from "./DXFW01RN.js";
+var q = new Set(["$$slots", "$$events", "$$legacy"]),
+  m = v('<svg><path d="M240-640h360v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85h-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640Zm0 480h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM240-160v-400 400Z"></path></svg>');
+
+function l(r, o) {
+  let s = a(o, q);
+  var t = m();
+  p(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...s
+  })), e(r, t)
+}
 export {
-  g as u
+  l as L
 };

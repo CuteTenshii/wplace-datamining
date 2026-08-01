@@ -1,22 +1,93 @@
+import "./Bzak7iHL.js";
+import "./CC8rAinp.js";
 import {
-  g as t
-} from "./BhCkpOlh.js";
-const n = () => "Refresh",
-  s = () => "Atualizar",
-  u = () => "刷新",
-  f = () => "Aktualisieren",
-  i = () => "Actualizar",
-  c = () => "Actualiser",
-  o = () => "Aggiorna",
-  h = () => "更新",
-  a = () => "Odśwież",
-  _ = () => "Обновить",
-  l = () => "Оновити",
-  p = () => "Làm mới",
-  m = (A = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? n() : r === "pt" ? s() : r === "ch" ? u() : r === "de" ? f() : r === "es" ? i() : r === "fr" ? c() : r === "it" ? o() : r === "jp" ? h() : r === "pl" ? a() : r === "ru" ? _() : r === "uk" ? l() : p()
-  };
+  p as P,
+  a as t,
+  b as k,
+  c as i,
+  d as m,
+  i as r,
+  s as _,
+  r as d,
+  t as W,
+  af as q
+} from "./DUZ_qUVk.js";
+import {
+  i as h
+} from "./BLc2SwOK.js";
+import {
+  e as H
+} from "./BuccT-Wn.js";
+import {
+  e as I
+} from "./M4i-R8Gk.js";
+import {
+  i as S
+} from "./C-b1Lok8.js";
+import {
+  a as $,
+  W as j,
+  P as A
+} from "./BU-t5wcF.js";
+var B = i('<div class="bg-primary shadow-primary/15 z-10 size-2.5 rounded-full shadow-[0_0_0_3px]"></div>'),
+  C = i('<div class="border-base-300 bg-base-100 z-10 size-2 rounded-full border-2"></div>'),
+  D = i('<div class="bg-base-300/50 mt-1 w-px flex-1"></div>'),
+  E = i('<div class="relative flex gap-3.5"><div class="flex shrink-0 flex-col items-center pt-2.25"><!> <!></div> <div class="min-w-0 flex-1 pb-9"><!></div></div>'),
+  F = i('<div class="flex flex-col"></div>');
+
+function T(b, u) {
+  P(u, !1);
+  const f = [...$].reverse().map(e => ({
+    version: e.version,
+    title: e.title,
+    html: j(e.markdown)
+  }));
+  S();
+  var l = F();
+  H(l, 7, () => f, e => e.version, (e, x, o) => {
+    var v = E(),
+      p = m(v),
+      c = m(p);
+    {
+      var g = a => {
+          var s = B();
+          t(a, s)
+        },
+        w = a => {
+          var s = C();
+          t(a, s)
+        };
+      h(c, a => {
+        r(o) === 0 ? a(g) : a(w, -1)
+      })
+    }
+    var N = _(c, 2);
+    {
+      var y = a => {
+        var s = D();
+        t(a, s)
+      };
+      h(N, a => {
+        r(o) < f.length - 1 && a(y)
+      })
+    }
+    d(p);
+    var n = _(p, 2),
+      z = m(n);
+    {
+      let a = q(() => r(o) === 0);
+      A(z, {
+        get patchNote() {
+          return r(x)
+        },
+        get latest() {
+          return r(a)
+        }
+      })
+    }
+    d(n), d(v), W(() => I(v, `animation: patchSlideIn 0.3s ease-out ${r(o)*50}ms both`)), t(e, v)
+  }), d(l), t(b, l), k()
+}
 export {
-  m as r
+  T as P
 };

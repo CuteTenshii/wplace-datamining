@@ -1,22 +1,22 @@
 import {
-  g as n
+  g as t
 } from "./BhCkpOlh.js";
-const o = () => "Error loading",
-  t = () => "Erro ao carregar",
-  i = () => "加载出错",
-  a = () => "Fehler beim Laden",
-  u = () => "Error al cargar",
-  l = () => "Erreur lors du chargement",
-  _ = () => "Errore nel caricamento",
-  c = () => "読み込みエラー",
-  d = () => "Błąd ładowania",
-  s = () => "Ошибка загрузки",
-  g = () => "Помилка завантаження",
-  f = () => "Lỗi tải dữ liệu",
-  E = (p = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? o() : r === "pt" ? t() : r === "ch" ? i() : r === "de" ? a() : r === "es" ? u() : r === "fr" ? l() : r === "it" ? _() : r === "jp" ? c() : r === "pl" ? d() : r === "ru" ? s() : r === "uk" ? g() : f()
+const n = () => "Home",
+  o = () => "Início",
+  u = () => "主页",
+  c = () => "Startseite",
+  i = () => "Inicio",
+  s = () => "Accueil",
+  h = () => "Home",
+  m = () => "ホーム",
+  f = () => "Strona główna",
+  _ = () => "Главная",
+  a = () => "Головна",
+  p = () => "Trang chủ",
+  d = (l = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? n() : r === "pt" ? o() : r === "ch" ? u() : r === "de" ? c() : r === "es" ? i() : r === "fr" ? s() : r === "it" ? h() : r === "jp" ? m() : r === "pl" ? f() : r === "ru" ? _() : r === "uk" ? a() : p()
   };
 export {
-  E as e
+  d as h
 };

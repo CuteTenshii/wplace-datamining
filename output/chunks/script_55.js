@@ -1,75 +1,132 @@
 import {
-  S as p
-} from "./DTIeP7CF.js";
-const h = p;
+  g as U
+} from "./BhCkpOlh.js";
+import "./Bzak7iHL.js";
+import {
+  l as V,
+  p as Z,
+  w as B,
+  f as S,
+  i as x,
+  a as l,
+  b as q,
+  u as A,
+  d as _,
+  n as b,
+  r as h,
+  t as p,
+  c as g,
+  m as s
+} from "./DUZ_qUVk.js";
+import {
+  s as v
+} from "./b7oAWk-Y.js";
+import {
+  i as C
+} from "./BLc2SwOK.js";
+import {
+  a as k,
+  c as z,
+  s as c
+} from "./M4i-R8Gk.js";
+import {
+  p as d
+} from "./DXFW01RN.js";
+import {
+  P as F
+} from "./C487wHnb.js";
+import {
+  u as H
+} from "./BaJFs6Jy.js";
+const J = () => "Banned",
+  Q = () => "Banido",
+  T = () => "已封禁",
+  W = () => "Gebannt",
+  X = () => "Baneado",
+  Y = () => "Banni",
+  $ = () => "Bannato",
+  nn = () => "BAN済み",
+  en = () => "Zbanowany",
+  an = () => "Забанен",
+  rn = () => "Заблоковано",
+  tn = () => "Đã bị cấm",
+  kn = (i = {}, n = {}) => {
+    const r = n.locale ?? U();
+    return r === "en" ? J() : r === "pt" ? Q() : r === "ch" ? T() : r === "de" ? W() : r === "es" ? X() : r === "fr" ? Y() : r === "it" ? $() : r === "jp" ? nn() : r === "pl" ? en() : r === "ru" ? an() : r === "uk" ? rn() : tn()
+  };
 
-function b(f) {
-  const s = [],
-    a = s,
-    d = Object.keys(f);
-  for (const o of d) {
-    const t = f[o];
-    if (typeof t == "string") {
-      a.push(t), Object.defineProperty(s, o, {
-        value: t,
-        enumerable: !0,
-        configurable: !1,
-        writable: !1
-      });
-      continue
-    }
-    const n = b(t);
-    Object.defineProperty(s, o, {
-      value: n,
-      enumerable: !0,
-      configurable: !1,
-      writable: !1
-    });
-    const r = n;
-    for (let e = 0; e < r.length; e += 1) a.push(r[e])
-  }
-  return Object.defineProperty(s, "only", {
-    value: (...o) => {
-      const t = [];
-      for (let n = 0; n < o.length; n += 1) {
-        const r = o[n],
-          e = s[r];
-        if (typeof e == "string") {
-          t.push(e);
-          continue
-        }
-        const l = e;
-        for (let i = 0; i < l.length; i += 1) t.push(l[i])
-      }
-      return t
-    },
-    enumerable: !1,
-    configurable: !1,
-    writable: !1
-  }), Object.defineProperty(s, "but", {
-    value: (...o) => {
-      const t = new Set(o),
-        n = [],
-        r = Object.keys(s);
-      for (let e = 0; e < r.length; e += 1) {
-        const l = r[e];
-        if (t.has(l)) continue;
-        const i = s[l];
-        if (typeof i == "string") {
-          n.push(i);
-          continue
-        }
-        const u = i;
-        for (let c = 0; c < u.length; c += 1) n.push(u[c])
-      }
-      return n
-    },
-    enumerable: !1,
-    configurable: !1,
-    writable: !1
-  }), Object.freeze(s)
+function D(i) {
+  return `/dashboard/alliances?id=${encodeURIComponent(String(i))}`
 }
-const m = b(h);
+
+function on(i) {
+  typeof window > "u" || window.open(D(i), "_blank", "noopener,noreferrer")
+}
+var ln = g('<span role="link" tabindex="0"><!></span>'),
+  sn = g('<a target="_blank" rel="noopener noreferrer"><!></a>'),
+  cn = g("<span><!></span>");
+
+function gn(i, n) {
+  Z(n, !0);
+  let r = d(n, "mode", 3, "anchor"),
+    w = d(n, "class", 3, ""),
+    I = d(n, "linkClass", 19, w),
+    E = d(n, "textClass", 19, w);
+  const L = A(() => n.allianceId != null && n.allianceId > 0 && H.hasAnyPermission(F.dashboard.alliances)),
+    N = A(() => n.allianceId == null ? "" : D(n.allianceId));
+
+  function u(a) {
+    a.stopPropagation()
+  }
+
+  function y(a) {
+    n.allianceId == null || n.allianceId <= 0 || (a.preventDefault(), a.stopPropagation(), on(n.allianceId))
+  }
+
+  function j(a) {
+    a.key !== "Enter" && a.key !== " " || y(a)
+  }
+  var P = B(),
+    R = S(P);
+  {
+    var G = a => {
+        var t = B(),
+          f = S(t);
+        {
+          var M = o => {
+              var e = ln(),
+                m = _(e);
+              v(m, () => n.children ?? b), h(e), p(() => {
+                k(e, 1, `cursor-pointer hover:underline ${I()}`), c(e, "title", n.title)
+              }), s("pointerdown", e, u), s("click", e, y), s("keydown", e, j), l(o, e)
+            },
+            O = o => {
+              var e = sn(),
+                m = _(e);
+              v(m, () => n.children ?? b), h(e), p(() => {
+                k(e, 1, `cursor-pointer hover:underline ${I()}`), c(e, "href", x(N)), c(e, "title", n.title)
+              }), s("pointerdown", e, u), s("click", e, u), l(o, e)
+            };
+          C(f, o => {
+            r() === "inline" ? o(M) : o(O, -1)
+          })
+        }
+        l(a, t)
+      },
+      K = a => {
+        var t = cn(),
+          f = _(t);
+        v(f, () => n.children ?? b), h(t), p(() => {
+          k(t, 1, z(E())), c(t, "title", n.title)
+        }), l(a, t)
+      };
+    C(R, a => {
+      x(L) ? a(G) : a(K, -1)
+    })
+  }
+  l(i, P), q()
+}
+V(["pointerdown", "click", "keydown"]);
 export {
-  m as P
+  gn as S, kn as b
 };

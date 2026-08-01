@@ -1,22 +1,22 @@
 import {
-  g as n
+  g as t
 } from "./BhCkpOlh.js";
-const e = () => "Permissions",
-  i = () => "Permissões",
-  t = () => "权限",
-  o = () => "Berechtigungen",
-  u = () => "Permisos",
-  p = () => "Permissions",
-  c = () => "Permessi",
-  m = () => "権限",
-  f = () => "Uprawnienia",
-  _ = () => "Права",
-  a = () => "Дозволи",
-  l = () => "Quyền",
-  h = (P = {}, s = {}) => {
-    const r = s.locale ?? n();
-    return r === "en" ? e() : r === "pt" ? i() : r === "ch" ? t() : r === "de" ? o() : r === "es" ? u() : r === "fr" ? p() : r === "it" ? c() : r === "jp" ? m() : r === "pl" ? f() : r === "ru" ? _() : r === "uk" ? a() : l()
+const u = () => "User ID",
+  n = () => "ID do usuário",
+  s = () => "用户ID",
+  i = () => "Benutzer-ID",
+  _ = () => "ID de usuario",
+  o = () => "ID utilisateur",
+  c = () => "ID dell'utente",
+  d = () => "ユーザーID",
+  f = () => "ID użytkownika",
+  D = () => "Идентификатор пользователя",
+  I = () => "ID користувача",
+  l = () => "ID người dùng",
+  g = (p = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? u() : r === "pt" ? n() : r === "ch" ? s() : r === "de" ? i() : r === "es" ? _() : r === "fr" ? o() : r === "it" ? c() : r === "jp" ? d() : r === "pl" ? f() : r === "ru" ? D() : r === "uk" ? I() : l()
   };
 export {
-  h as p
+  g as u
 };

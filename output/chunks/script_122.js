@@ -1,27 +1,38 @@
-import "./Bzak7iHL.js";
 import {
-  a as o,
-  k as s
-} from "./sZguypfn.js";
-import {
-  b as a
-} from "./Cy1wQjPv.js";
-import {
-  r as p
-} from "./BwfjFjwf.js";
-var h = new Set(["$$slots", "$$events", "$$legacy"]),
-  m = s('<svg><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"></path></svg>');
-
-function g(t, v) {
-  let e = p(v, h);
-  var r = m();
-  a(r, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...e
-  })), o(t, r)
-}
+  g as t
+} from "./BhCkpOlh.js";
+const u = () => "Next",
+  o = () => "Próximo",
+  s = () => "下一张",
+  c = () => "Weiter",
+  i = () => "Siguiente",
+  _ = () => "Suivant",
+  l = () => "Successivo",
+  a = () => "次へ",
+  p = () => "Następny",
+  f = () => "Далее",
+  v = () => "Далі",
+  x = () => "Tiếp",
+  L = (n = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? u() : r === "pt" ? o() : r === "ch" ? s() : r === "de" ? c() : r === "es" ? i() : r === "fr" ? _() : r === "it" ? l() : r === "jp" ? a() : r === "pl" ? p() : r === "ru" ? f() : r === "uk" ? v() : x()
+  },
+  d = () => "Previous",
+  k = () => "Anterior",
+  P = () => "上一张",
+  h = () => "Zurück",
+  j = () => "Anterior",
+  g = () => "Précédent",
+  m = () => "Precedente",
+  S = () => "前へ",
+  A = () => "Poprzedni",
+  N = () => "Назад",
+  T = () => "Назад",
+  y = () => "Trước",
+  W = (n = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? d() : r === "pt" ? k() : r === "ch" ? P() : r === "de" ? h() : r === "es" ? j() : r === "fr" ? g() : r === "it" ? m() : r === "jp" ? S() : r === "pl" ? A() : r === "ru" ? N() : r === "uk" ? T() : y()
+  };
 export {
-  g as D
+  L as a, W as c
 };

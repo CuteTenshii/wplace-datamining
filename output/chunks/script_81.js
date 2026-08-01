@@ -1,50 +1,22 @@
-const h = o => o;
-
-function b(o) {
-  const r = o - 1;
-  return r * r * r + 1
-}
-
-function f(o, {
-  delay: r = 0,
-  duration: i = 400,
-  easing: s = h
-} = {}) {
-  const p = +getComputedStyle(o).opacity;
-  return {
-    delay: r,
-    duration: i,
-    easing: s,
-    css: a => `opacity: ${a*p}`
-  }
-}
-
-function v(o, {
-  delay: r = 0,
-  duration: i = 400,
-  easing: s = b,
-  axis: p = "y"
-} = {}) {
-  const a = getComputedStyle(o),
-    c = +a.opacity,
-    d = p === "y" ? "height" : "width",
-    $ = parseFloat(a[d]),
-    e = p === "y" ? ["top", "bottom"] : ["left", "right"],
-    n = e.map(t => `${t[0].toUpperCase()}${t.slice(1)}`),
-    l = parseFloat(a[`padding${n[0]}`]),
-    _ = parseFloat(a[`padding${n[1]}`]),
-    u = parseFloat(a[`margin${n[0]}`]),
-    y = parseFloat(a[`margin${n[1]}`]),
-    g = parseFloat(a[`border${n[0]}Width`]),
-    m = parseFloat(a[`border${n[1]}Width`]);
-  return {
-    delay: r,
-    duration: i,
-    easing: s,
-    css: t => `overflow: hidden;opacity: ${Math.min(t*20,1)*c};${d}: ${t*$}px;padding-${e[0]}: ${t*l}px;padding-${e[1]}: ${t*_}px;margin-${e[0]}: ${t*u}px;margin-${e[1]}: ${t*y}px;border-${e[0]}-width: ${t*g}px;border-${e[1]}-width: ${t*m}px;min-${d}: 0`
-  }
-}
+import {
+  g as t
+} from "./BhCkpOlh.js";
+const n = () => "Role",
+  o = () => "Cargo",
+  u = () => "角色",
+  l = () => "Rolle",
+  c = () => "Rol",
+  s = () => "Rôle",
+  i = () => "Ruolo",
+  f = () => "ロール",
+  _ = () => "Rola",
+  p = () => "Роль",
+  a = () => "Роль",
+  R = () => "Vai trò",
+  h = (g = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? n() : r === "pt" ? o() : r === "ch" ? u() : r === "de" ? l() : r === "es" ? c() : r === "fr" ? s() : r === "it" ? i() : r === "jp" ? f() : r === "pl" ? _() : r === "ru" ? p() : r === "uk" ? a() : R()
+  };
 export {
-  f,
-  v as s
+  h as r
 };

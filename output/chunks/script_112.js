@@ -1,27 +1,138 @@
 import "./Bzak7iHL.js";
 import {
-  a as e,
-  k as q
-} from "./sZguypfn.js";
+  l as J,
+  p as K,
+  b as L,
+  t as h,
+  i as j,
+  m as M,
+  h as H,
+  a as l,
+  d as r,
+  s as m,
+  c as v,
+  e as N,
+  r as o,
+  w as O,
+  f as Q
+} from "./DUZ_qUVk.js";
 import {
-  b as a
-} from "./Cy1wQjPv.js";
+  s as c
+} from "./DtUyTUmd.js";
 import {
-  r as m
-} from "./BwfjFjwf.js";
-var p = new Set(["$$slots", "$$events", "$$legacy"]),
-  v = q('<svg><path d="M480-440q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0-80q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0 440q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-400Zm0-315-240 90v189q0 54 15 105t41 96q42-21 88-33t96-12q50 0 96 12t88 33q26-45 41-96t15-105v-189l-240-90Zm0 515q-36 0-70 8t-65 22q29 30 63 52t72 34q38-12 72-34t63-52q-31-14-65-22t-70-8Z"></path></svg>');
+  s as R
+} from "./b7oAWk-Y.js";
+import {
+  i as g
+} from "./BLc2SwOK.js";
+import {
+  a as S
+} from "./M4i-R8Gk.js";
+import {
+  p as _
+} from "./DXFW01RN.js";
+import {
+  D as U
+} from "./DG57bZmM.js";
+import "./BhCkpOlh.js";
+import {
+  c as V
+} from "./D6_ahSxh.js";
+import {
+  c as W
+} from "./BZcJYfQJ.js";
+var X = v('<h3 class="text-xl font-bold"> </h3>'),
+  Y = v('<p class="text-base-content/80 mt-1 text-sm whitespace-pre-line"> </p>'),
+  Z = v('<span class="loading loading-spinner center-absolute absolute"></span>'),
+  $ = v('<div><p class="text-lg"> </p> <!> <!> <div class="mt-6 flex justify-end gap-3 pb-2"><form method="dialog"><button class="btn btn-ghost hover:bg-base-content/10"> </button></form> <button> <!></button></div></div>');
 
-function g(r, o) {
-  let s = m(o, p);
-  var t = v();
-  a(t, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...s
-  })), e(r, t)
+function ft(P, a) {
+  K(a, !0);
+  let p = _(a, "open", 15),
+    w = _(a, "type", 3, "confirmation"),
+    q = _(a, "buttonText", 19, () => W()),
+    d = N(!1);
+  U(P, {
+    dialogClass: "!bg-black/80",
+    modalBoxClass: "max-w-md max-sm:!w-11/12 max-sm:!h-auto max-sm:!max-w-md max-sm:!max-h-[85vh] max-sm:!rounded-xl",
+    hasCloseButton: !1,
+    isDynamicHeight: !0,
+    get open() {
+      return p()
+    },
+    set open(s) {
+      p(s)
+    },
+    header: s => {
+      var f = X(),
+        n = r(f, !0);
+      o(f), h(() => c(n, a.title)), l(s, f)
+    },
+    children: (s, f) => {
+      var n = $(),
+        u = r(n),
+        z = r(u, !0);
+      o(u);
+      var y = m(u, 2);
+      {
+        var A = t => {
+          var e = Y(),
+            x = r(e, !0);
+          o(e), h(() => c(x, a.subDescription)), l(t, e)
+        };
+        g(y, t => {
+          a.subDescription && t(A)
+        })
+      }
+      var C = m(y, 2);
+      {
+        var E = t => {
+          var e = O(),
+            x = Q(e);
+          R(x, () => a.children), l(t, e)
+        };
+        g(C, t => {
+          a.children && t(E)
+        })
+      }
+      var D = m(C, 2),
+        b = r(D),
+        k = r(b),
+        F = r(k, !0);
+      o(k), o(b);
+      var i = m(b, 2);
+      let B;
+      var T = r(i),
+        G = m(T);
+      {
+        var I = t => {
+          var e = Z();
+          l(t, e)
+        };
+        g(G, t => {
+          j(d) && t(I)
+        })
+      }
+      o(i), o(D), o(n), h(t => {
+        c(z, a.description), c(F, t), B = S(i, 1, "btn min-w-32 px-6", null, B, {
+          "btn-error": w() === "warning",
+          "btn-primary": w() === "confirmation"
+        }), i.disabled = j(d), c(T, `${q()??""} `)
+      }, [() => V()]), M("click", i, async () => {
+        try {
+          H(d, !0), p(await a.onConfirm())
+        } finally {
+          H(d, !1)
+        }
+      }), l(s, n)
+    },
+    $$slots: {
+      header: !0,
+      default: !0
+    }
+  }), L()
 }
+J(["click"]);
 export {
-  g as S
+  ft as C
 };

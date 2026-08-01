@@ -1,22 +1,22 @@
 import {
-  g as t
+  g as r
 } from "./BhCkpOlh.js";
-const n = () => "Search",
-  c = () => "Buscar",
-  s = () => "搜索",
-  u = () => "Suchen",
-  a = () => "Buscar",
-  o = () => "Rechercher",
-  h = () => "Cerca",
-  i = () => "検索",
-  f = () => "Szukaj",
-  _ = () => "Поиск",
-  p = () => "Пошук",
-  l = () => "Tìm kiếm",
-  j = (k = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? n() : r === "pt" ? c() : r === "ch" ? s() : r === "de" ? u() : r === "es" ? a() : r === "fr" ? o() : r === "it" ? h() : r === "jp" ? i() : r === "pl" ? f() : r === "ru" ? _() : r === "uk" ? p() : l()
+const n = () => "Tickets",
+  c = () => "Tickets",
+  i = () => "工单",
+  s = () => "Tickets",
+  u = () => "Tickets",
+  k = () => "Tickets",
+  o = () => "Ticket",
+  f = () => "チケット",
+  _ = () => "Tickety",
+  p = () => "Тикеты",
+  l = () => "Тікети",
+  T = () => "Phiếu",
+  d = (a = {}, e = {}) => {
+    const t = e.locale ?? r();
+    return t === "en" ? n() : t === "pt" ? c() : t === "ch" ? i() : t === "de" ? s() : t === "es" ? u() : t === "fr" ? k() : t === "it" ? o() : t === "jp" ? f() : t === "pl" ? _() : t === "ru" ? p() : t === "uk" ? l() : T()
   };
 export {
-  j as s
+  d as t
 };
