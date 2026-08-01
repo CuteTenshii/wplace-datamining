@@ -1,124 +1,207 @@
-import "./Bzak7iHL.js";
 import {
-  w as B,
-  f as I,
-  a as q,
-  k as h
-} from "./CQWoSB4q.js";
-import {
-  i as k
-} from "./URwf35_8.js";
-import {
-  b as n
-} from "./S4tA3GK6.js";
-import {
-  r as w
-} from "./CKPpRXbX.js";
+  d as b
+} from "./DTIeP7CF.js";
+const L = ["text-red-500", "text-orange-500", "text-yellow-500", "text-lime-500", "text-emerald-500", "text-teal-500", "text-cyan-500", "text-sky-500", "text-indigo-500", "text-violet-500", "text-purple-500", "text-fuchsia-500", "text-pink-500", "text-rose-500"],
+  R = ["bg-red-500/10", "bg-orange-500/10", "bg-yellow-500/10", "bg-lime-500/10", "bg-emerald-500/10", "bg-teal-500/10", "bg-cyan-500/10", "bg-sky-500/10", "bg-indigo-500/10", "bg-violet-500/10", "bg-purple-500/10", "bg-fuchsia-500/10", "bg-pink-500/10", "bg-rose-500/10"];
 
-function L(r) {
-  const t = r - 1;
-  return t * t * t + 1
+function rt(t) {
+  return L[t % L.length]
 }
 
-function Q(r, {
-  from: t,
-  to: a
-}, e = {}) {
-  var {
-    delay: T = 0,
-    duration: o = l => Math.sqrt(l) * 120,
-    easing: p = L
-  } = e, s = getComputedStyle(r), v = s.transform === "none" ? "" : s.transform, [c, g] = s.transformOrigin.split(" ").map(parseFloat);
-  c /= r.clientWidth, g /= r.clientHeight;
-  var u = O(r),
-    d = r.clientWidth / a.width / u,
-    $ = r.clientHeight / a.height / u,
-    x = t.left + t.width * c,
-    Z = t.top + t.height * g,
-    y = a.left + a.width * c,
-    _ = a.top + a.height * g,
-    m = (x - y) * d,
-    f = (Z - _) * $,
-    S = t.width / a.width,
-    C = t.height / a.height;
+function it(t) {
+  return R[t % R.length]
+}
+
+function at({
+  r: t,
+  g: n,
+  b: o
+}) {
+  function e(s) {
+    return s.toString(16).padStart(2, "0")
+  }
+  return `#${e(t)}${e(n)}${e(o)}`
+}
+
+function lt(t) {
+  return t = t.trim().replace("#", ""), t.length === 3 && (t = t[0] + t[0] + t[1] + t[1] + t[2] + t[2]), t.length !== 6 ? {
+    r: 0,
+    g: 0,
+    b: 0
+  } : {
+    r: +("0x" + t.slice(0, 2)),
+    g: +("0x" + t.slice(2, 4)),
+    b: +("0x" + t.slice(4, 6))
+  }
+}
+
+function gt(t) {
+  t = Math.min(t, b.colors.length - 1);
+  const [n, o, e] = b.colors[t].rgb;
   return {
-    delay: T,
-    duration: typeof o == "function" ? o(Math.sqrt(m * m + f * f)) : o,
-    easing: p,
-    css: (l, i) => {
-      var H = i * m,
-        M = i * f,
-        b = l + i * S,
-        z = l + i * C;
-      return `transform: ${v} translate(${H}px, ${M}px) scale(${b}, ${z});`
-    }
+    r: n,
+    g: o,
+    b: e,
+    a: t === 0 ? 0 : 255
   }
 }
+const d = 2 * Math.PI,
+  B = 6103515625,
+  G = .5235987755982988,
+  K = .10471975511965977,
+  Q = 1.0995574287564276,
+  Y = 4.799655442984406,
+  Z = .4363323129985824;
 
-function O(r) {
-  if ("currentCSSZoom" in r) return r.currentCSSZoom;
-  for (var t = r, a = 1; t !== null;) a *= +getComputedStyle(t).zoom, t = t.parentElement;
-  return a
+function S(t) {
+  const n = t * t;
+  return n * n * n * t
 }
-var P = new Set(["$$slots", "$$events", "$$legacy", "filled"]),
-  U = h('<svg><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"></path></svg>'),
-  W = h('<svg><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"></path></svg>');
 
-function R(r, t) {
-  let a = w(t, P);
-  var e = B(),
-    T = I(e);
-  {
-    var o = s => {
-        var v = U();
-        n(v, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...a
-        })), q(s, v)
-      },
-      p = s => {
-        var v = W();
-        n(v, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...a
-        })), q(s, v)
-      };
-    k(T, s => {
-      t.filled ? s(o) : s(p, -1)
+function H(t, n) {
+  const o = Math.atan2(t, n);
+  return o < 0 ? o + d : o
+}
+const P = new Float64Array(256);
+for (let t = 0; t < 256; t++) {
+  const n = t / 255;
+  P[t] = n > .04045 ? Math.pow((n + .055) / 1.055, 2.4) : n / 12.92
+}
+
+function k(t) {
+  const n = P[t.r],
+    o = P[t.g],
+    e = P[t.b];
+  let s = (n * .4124 + o * .3576 + e * .1805) / .95047,
+    c = n * .2126 + o * .7152 + e * .0722,
+    r = (n * .0193 + o * .1192 + e * .9505) / 1.08883;
+  return s = s > .008856 ? Math.cbrt(s) : 7.787 * s + 16 / 116, c = c > .008856 ? Math.cbrt(c) : 7.787 * c + 16 / 116, r = r > .008856 ? Math.cbrt(r) : 7.787 * r + 16 / 116, {
+    l: 116 * c - 16,
+    a: 500 * (s - c),
+    b: 200 * (c - r)
+  }
+}
+const E = b.colors.map((t, n) => ({
+    idx: n,
+    lab: k({
+      r: t.rgb[0],
+      g: t.rgb[1],
+      b: t.rgb[2]
     })
+  })).filter(t => t.idx !== 0),
+  p = b.colors.map((t, n) => ({
+    idx: n,
+    rgb: {
+      r: t.rgb[0],
+      g: t.rgb[1],
+      b: t.rgb[2]
+    }
+  })).filter(t => t.idx !== 0),
+  w = new Array(b.colors.length);
+for (const t of E) w[t.idx] = t;
+const N = new Array(b.colors.length);
+for (const t of p) N[t.idx] = t;
+
+function tt(t, n, o) {
+  let e = E[0].idx,
+    s = Number.MAX_VALUE;
+  const c = o && o.length > 0,
+    r = c ? o.length : E.length;
+  for (let i = 0; i < r; i++) {
+    const a = c ? w[o[i]] : E[i];
+    if (!a) continue;
+    const l = n(t, a.lab);
+    (l < s || l === s && a.idx < e) && (e = a.idx, s = l)
   }
-  q(r, e)
+  return e
 }
-var E = new Set(["$$slots", "$$events", "$$legacy"]),
-  F = h('<svg><path d="M280-200v-80h284q63 0 109.5-40T720-420q0-60-46.5-100T564-560H312l104 104-56 56-200-200 200-200 56 56-104 104h252q97 0 166.5 63T800-420q0 94-69.5 157T564-200H280Z"></path></svg>');
 
-function V(r, t) {
-  let a = w(t, E);
-  var e = F();
-  n(e, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...a
-  })), q(r, e)
+function nt(t, n) {
+  let o = p[0].idx,
+    e = Number.MAX_VALUE;
+  const s = n && n.length > 0,
+    c = s ? n.length : p.length;
+  for (let r = 0; r < c; r++) {
+    const i = s ? N[n[r]] : p[r];
+    if (!i) continue;
+    const a = st(t, i.rgb);
+    (a < e || a === e && i.idx < o) && (o = i.idx, e = a)
+  }
+  return o
 }
-var j = new Set(["$$slots", "$$events", "$$legacy"]),
-  A = h('<svg><path d="M380-720v-98L142-580h98v60H40v-200h60v98l238-238h-98v-60h200v200h-60ZM593-40q-24 0-46-9t-39-26L304-280l30-31q16-16 37.5-21.5t42.5.5l66 19v-327q0-17 11.5-28.5T520-680q17 0 28.5 11.5T560-640v433l-97-27 102 102q5 5 12.5 8.5T593-120h167q33 0 56.5-23.5T840-200v-160q0-17 11.5-28.5T880-400q17 0 28.5 11.5T920-360v160q0 66-47 113T760-40H593Zm7-280v-160q0-17 11.5-28.5T640-520q17 0 28.5 11.5T680-480v160h-80Zm120 0v-120q0-17 11.5-28.5T760-480q17 0 28.5 11.5T800-440v120h-80Zm-20 80Z"></path></svg>');
 
-function X(r, t) {
-  let a = w(t, j);
-  var e = A();
-  n(e, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...a
-  })), q(r, e)
+function ut(t, n = "lab", o) {
+  if (n === "compuphase") return nt(t, o);
+  const e = k(t);
+  return tt(e, n === "ciede2000" ? et : ot, o)
+}
+
+function ot(t, n) {
+  const o = t.l - n.l,
+    e = t.a - n.a,
+    s = t.b - n.b,
+    c = Math.sqrt(t.a * t.a + t.b * t.b),
+    r = Math.sqrt(n.a * n.a + n.b * n.b),
+    i = c - r;
+  let a = e * e + s * s - i * i;
+  a = a < 0 ? 0 : Math.sqrt(a);
+  const l = 1 + .045 * c,
+    h = 1 + .015 * c,
+    u = i / l,
+    f = a / h,
+    M = o * o + u * u + f * f;
+  return M < 0 ? 0 : Math.sqrt(M)
+}
+
+function et(t, n) {
+  const o = Math.sqrt(t.a * t.a + t.b * t.b),
+    e = Math.sqrt(n.a * n.a + n.b * n.b),
+    s = (o + e) * .5,
+    c = S(s),
+    r = .5 * (1 - Math.sqrt(c / (c + B))),
+    i = (1 + r) * t.a,
+    a = (1 + r) * n.a,
+    l = Math.sqrt(i * i + t.b * t.b),
+    h = Math.sqrt(a * a + n.b * n.b),
+    u = l * h,
+    f = l === 0 ? 0 : H(t.b, i),
+    M = h === 0 ? 0 : H(n.b, a),
+    v = n.l - t.l,
+    F = h - l;
+  let m = 0;
+  u !== 0 && (m = M - f, m > Math.PI ? m -= d : m < -Math.PI && (m += d));
+  const O = u === 0 ? 0 : 2 * Math.sqrt(u) * Math.sin(m * .5),
+    U = (t.l + n.l) * .5,
+    x = (l + h) * .5;
+  let g = f + M;
+  u !== 0 && (Math.abs(f - M) > Math.PI ? g = g < d ? (g + d) * .5 : (g - d) * .5 : g *= .5);
+  const $ = 1 - .17 * Math.cos(g - G) + .24 * Math.cos(2 * g) + .32 * Math.cos(3 * g + K) - .2 * Math.cos(4 * g - Q),
+    q = (g - Y) / Z,
+    z = G * Math.exp(-(q * q)),
+    A = S(x),
+    V = 2 * Math.sqrt(A / (A + B)),
+    y = U - 50,
+    C = y * y,
+    X = 1 + .015 * C / Math.sqrt(20 + C),
+    W = 1 + .045 * x,
+    j = 1 + .015 * x * $,
+    J = -Math.sin(2 * z) * V,
+    T = v / X,
+    _ = F / W,
+    D = O / j,
+    I = T * T + _ * _ + D * D + J * _ * D;
+  return I > 0 ? I : 0
+}
+
+function st(t, n) {
+  const o = (t.r + n.r) / 2,
+    e = t.r - n.r,
+    s = t.g - n.g,
+    c = t.b - n.b,
+    r = 2 + o / 256,
+    i = 2 + (255 - o) / 256;
+  return r * e * e + 4 * s * s + i * c * c
 }
 export {
-  R as H, X as P, V as U, Q as f
+  it as a, ut as b, gt as c, rt as g, lt as h, at as r
 };

@@ -1,70 +1,149 @@
 import {
-  g as e
+  g as n
 } from "./BhCkpOlh.js";
-const s = () => "All Frames",
-  a = () => "Todas as Molduras",
-  u = () => "所有相框",
-  o = () => "Alle Rahmen",
-  c = () => "Todos los Marcos",
-  _ = () => "Tous les cadres",
-  i = () => "Tutte le cornici",
-  l = () => "すべてのフレーム",
-  f = () => "Wszystkie ramki",
-  m = () => "Все рамки",
-  p = () => "Усі Рамки",
-  k = () => "Tất cả các khung",
-  $ = (n = {}, t = {}) => {
-    const r = t.locale ?? e();
-    return r === "en" ? s() : r === "pt" ? a() : r === "ch" ? u() : r === "de" ? o() : r === "es" ? c() : r === "fr" ? _() : r === "it" ? i() : r === "jp" ? l() : r === "pl" ? f() : r === "ru" ? m() : r === "uk" ? p() : k()
+import {
+  u as s
+} from "./DKkygPh8.js";
+const a = () => "Administrator",
+  o = () => "Administrador",
+  d = () => "管理员",
+  i = () => "Administrator",
+  u = () => "Administrador",
+  c = () => "Administrateur",
+  _ = () => "Amministratore",
+  m = () => "管理者",
+  f = () => "Administrator",
+  l = () => "Администратор",
+  p = () => "Адміністратор",
+  D = () => "Quản trị viên",
+  v = (t = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? a() : r === "pt" ? o() : r === "ch" ? d() : r === "de" ? i() : r === "es" ? u() : r === "fr" ? c() : r === "it" ? _() : r === "jp" ? m() : r === "pl" ? f() : r === "ru" ? l() : r === "uk" ? p() : D()
   },
-  d = () => "Back to list",
-  h = () => "Voltar para a lista",
-  b = () => "返回列表",
-  y = () => "Zurück zur Liste",
-  z = () => "Volver a la lista",
-  j = () => "Retour à la liste",
-  N = () => "Torna alla lista",
-  g = () => "一覧に戻る",
-  v = () => "Wróć do listy",
-  T = () => "Вернуться к списку",
-  A = () => "Повернутися до списку",
-  W = () => "Quay lại danh sách",
-  rr = (n = {}, t = {}) => {
-    const r = t.locale ?? e();
-    return r === "en" ? d() : r === "pt" ? h() : r === "ch" ? b() : r === "de" ? y() : r === "es" ? z() : r === "fr" ? j() : r === "it" ? N() : r === "jp" ? g() : r === "pl" ? v() : r === "ru" ? T() : r === "uk" ? A() : W()
+  M = () => "Discord Leaders",
+  g = () => "Líderes do Discord",
+  G = () => "Discord 负责人",
+  L = () => "Discord-Leiter",
+  A = () => "Líderes de Discord",
+  h = () => "Leaders Discord",
+  S = () => "Leader Discord",
+  j = () => "Discordリーダー",
+  k = () => "Liderzy Discorda",
+  C = () => "Лидеры Discord",
+  R = () => "Лідери Discord",
+  E = () => "Trưởng nhóm Discord",
+  O = (t = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? M() : r === "pt" ? g() : r === "ch" ? G() : r === "de" ? L() : r === "es" ? A() : r === "fr" ? h() : r === "it" ? S() : r === "jp" ? j() : r === "pl" ? k() : r === "ru" ? C() : r === "uk" ? R() : E()
   },
-  R = () => "Name",
-  w = () => "Nome",
-  L = () => "名称",
-  M = () => "Name",
-  V = () => "Nombre",
-  q = () => "Nom",
-  x = () => "Nome",
-  B = () => "名前",
-  C = () => "Nazwa",
-  F = () => "Имя",
-  K = () => "Імʼя",
-  Q = () => "Tên",
-  tr = (n = {}, t = {}) => {
-    const r = t.locale ?? e();
-    return r === "en" ? R() : r === "pt" ? w() : r === "ch" ? L() : r === "de" ? M() : r === "es" ? V() : r === "fr" ? q() : r === "it" ? x() : r === "jp" ? B() : r === "pl" ? C() : r === "ru" ? F() : r === "uk" ? K() : Q()
+  N = () => "Discord Moderator",
+  T = () => "Moderador do Discord",
+  x = () => "Discord 管理员",
+  y = () => "Discord-Moderator",
+  z = () => "Moderador de Discord",
+  F = () => "Modérateur Discord",
+  H = () => "Moderatore Discord",
+  Q = () => "Discordモデレーター",
+  U = () => "Moderator Discord",
+  b = () => "Модератор Discord",
+  q = () => "Модератор Discord",
+  w = () => "Discord Moderator",
+  B = (t = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? N() : r === "pt" ? T() : r === "ch" ? x() : r === "de" ? y() : r === "es" ? z() : r === "fr" ? F() : r === "it" ? H() : r === "jp" ? Q() : r === "pl" ? U() : r === "ru" ? b() : r === "uk" ? q() : w()
   },
-  U = () => "We don't have frames to buy yet, wait for future updates ;)",
-  Z = () => "Ainda não temos molduras, crie sua primeira!",
-  D = () => "我们还没有相框可供购买，敬请期待未来的更新 :)",
-  E = () => "Wir haben noch keine Rahmen zum Kauf, bleibt dran für zukünftige Updates ;)",
-  G = () => "Aún no tenemos marcos para comprar, espera futuras actualizaciones ;)",
-  H = () => "Nous n'avons pas encore de cadres à acheter, attendez les futures mises à jour ;)",
-  I = () => "Non abbiamo ancora cornici da acquistare, attendete futuri aggiornamenti ;)",
-  J = () => "まだ購入できるフレームはありません。今後のアップデートをお待ちくださいね ;)",
-  O = () => "Nie mamy jeszcze ramek do kupienia, poczekaj na przyszłe aktualizacje ;)",
-  P = () => "У нас пока нет рам для покупки, ждите будущих обновлений ;)",
-  S = () => "У нас ще немає рам для покупки, чекайте майбутніх оновлень ;)",
-  X = () => "Chúng tôi chưa có khung ảnh để bán đâu, hãy chờ các bản cập nhật sắp tới nhé ;)",
-  er = (n = {}, t = {}) => {
-    const r = t.locale ?? e();
-    return r === "en" ? U() : r === "pt" ? Z() : r === "ch" ? D() : r === "de" ? E() : r === "es" ? G() : r === "fr" ? H() : r === "it" ? I() : r === "jp" ? J() : r === "pl" ? O() : r === "ru" ? P() : r === "uk" ? S() : X()
+  I = () => "Game Master",
+  J = () => "Game Master",
+  K = () => "Game Master",
+  P = () => "Game Master",
+  V = () => "Game Master",
+  W = () => "Game Master",
+  X = () => "Game Master",
+  Y = () => "Game Master",
+  Z = () => "Game Master",
+  $ = () => "Game Master",
+  rr = () => "Game Master",
+  er = () => "Game Master",
+  tr = (t = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? I() : r === "pt" ? J() : r === "ch" ? K() : r === "de" ? P() : r === "es" ? V() : r === "fr" ? W() : r === "it" ? X() : r === "jp" ? Y() : r === "pl" ? Z() : r === "ru" ? $() : r === "uk" ? rr() : er()
+  },
+  nr = () => "Game Master Leader",
+  sr = () => "Game Master Leader",
+  ar = () => "Game Master Leader",
+  or = () => "Game Master Leader",
+  dr = () => "Game Master Leader",
+  ir = () => "Game Master Leader",
+  ur = () => "Game Master Leader",
+  cr = () => "Game Master Leader",
+  _r = () => "Game Master Leader",
+  mr = () => "Game Master Leader",
+  fr = () => "Game Master Leader",
+  lr = () => "Game Master Leader",
+  pr = (t = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? nr() : r === "pt" ? sr() : r === "ch" ? ar() : r === "de" ? or() : r === "es" ? dr() : r === "fr" ? ir() : r === "it" ? ur() : r === "jp" ? cr() : r === "pl" ? _r() : r === "ru" ? mr() : r === "uk" ? fr() : lr()
+  },
+  Dr = () => "SAC",
+  vr = () => "SAC",
+  Mr = () => "SAC",
+  gr = () => "SAC",
+  Gr = () => "SAC",
+  Lr = () => "SAC",
+  Ar = () => "SAC",
+  hr = () => "SAC",
+  Sr = () => "SAC",
+  jr = () => "SAC",
+  kr = () => "SAC",
+  Cr = () => "SAC",
+  Rr = (t = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? Dr() : r === "pt" ? vr() : r === "ch" ? Mr() : r === "de" ? gr() : r === "es" ? Gr() : r === "fr" ? Lr() : r === "it" ? Ar() : r === "jp" ? hr() : r === "pl" ? Sr() : r === "ru" ? jr() : r === "uk" ? kr() : Cr()
+  },
+  Er = () => "Developer",
+  Or = () => "Developer",
+  Nr = () => "Developer",
+  Tr = () => "Developer",
+  xr = () => "Developer",
+  yr = () => "Developer",
+  zr = () => "Developer",
+  Fr = () => "Developer",
+  Hr = () => "Developer",
+  Qr = () => "Developer",
+  Ur = () => "Developer",
+  br = () => "Developer",
+  qr = (t = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? Er() : r === "pt" ? Or() : r === "ch" ? Nr() : r === "de" ? Tr() : r === "es" ? xr() : r === "fr" ? yr() : r === "it" ? zr() : r === "jp" ? Fr() : r === "pl" ? Hr() : r === "ru" ? Qr() : r === "uk" ? Ur() : br()
+  };
+
+function wr(t, e) {
+  return e.includes(t)
+}
+
+function Jr(t) {
+  return wr(t, ["sac", "game_master", "game_master_leader", "dev", "admin"])
+}
+const Kr = {
+    user: s(),
+    discord_mod: "Disc. Mod",
+    discord_leader: "Disc. Lead",
+    sac: "SAC",
+    game_master: "GM",
+    game_master_leader: "GM Lead",
+    dev: "Dev",
+    admin: "Admin"
+  },
+  Pr = {
+    user: s(),
+    discord_mod: B(),
+    discord_leader: O(),
+    sac: Rr(),
+    game_master: tr(),
+    game_master_leader: pr(),
+    dev: qr(),
+    admin: v()
   };
 export {
-  $ as a, rr as b, er as c, tr as n
+  Pr as R, Kr as a, tr as g, Jr as i
 };

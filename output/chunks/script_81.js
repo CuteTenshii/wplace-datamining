@@ -1,48 +1,50 @@
-import {
-  z as d,
-  aE as g,
-  y as c,
-  aF as l,
-  B as m,
-  aG as b,
-  i as p,
-  aH as v,
-  aI as h
-} from "./CQWoSB4q.js";
+const h = o => o;
 
-function y(n = !1) {
-  const s = d,
-    e = s.l.u;
-  if (!e) return;
-  let f = () => v(s.s);
-  if (n) {
-    let a = 0,
-      t = {};
-    const _ = h(() => {
-      let i = !1;
-      const r = s.s;
-      for (const o in r) r[o] !== t[o] && (t[o] = r[o], i = !0);
-      return i && a++, a
-    });
-    f = () => p(_)
-  }
-  e.b.length && g(() => {
-    u(s, f), l(e.b)
-  }), c(() => {
-    const a = m(() => e.m.map(b));
-    return () => {
-      for (const t of a) typeof t == "function" && t()
-    }
-  }), e.a.length && c(() => {
-    u(s, f), l(e.a)
-  })
+function b(o) {
+  const r = o - 1;
+  return r * r * r + 1
 }
 
-function u(n, s) {
-  if (n.l.s)
-    for (const e of n.l.s) p(e);
-  s()
+function f(o, {
+  delay: r = 0,
+  duration: i = 400,
+  easing: s = h
+} = {}) {
+  const p = +getComputedStyle(o).opacity;
+  return {
+    delay: r,
+    duration: i,
+    easing: s,
+    css: a => `opacity: ${a*p}`
+  }
+}
+
+function v(o, {
+  delay: r = 0,
+  duration: i = 400,
+  easing: s = b,
+  axis: p = "y"
+} = {}) {
+  const a = getComputedStyle(o),
+    c = +a.opacity,
+    d = p === "y" ? "height" : "width",
+    $ = parseFloat(a[d]),
+    e = p === "y" ? ["top", "bottom"] : ["left", "right"],
+    n = e.map(t => `${t[0].toUpperCase()}${t.slice(1)}`),
+    l = parseFloat(a[`padding${n[0]}`]),
+    _ = parseFloat(a[`padding${n[1]}`]),
+    u = parseFloat(a[`margin${n[0]}`]),
+    y = parseFloat(a[`margin${n[1]}`]),
+    g = parseFloat(a[`border${n[0]}Width`]),
+    m = parseFloat(a[`border${n[1]}Width`]);
+  return {
+    delay: r,
+    duration: i,
+    easing: s,
+    css: t => `overflow: hidden;opacity: ${Math.min(t*20,1)*c};${d}: ${t*$}px;padding-${e[0]}: ${t*l}px;padding-${e[1]}: ${t*_}px;margin-${e[0]}: ${t*u}px;margin-${e[1]}: ${t*y}px;border-${e[0]}-width: ${t*g}px;border-${e[1]}-width: ${t*m}px;min-${d}: 0`
+  }
 }
 export {
-  y as i
+  f,
+  v as s
 };

@@ -1,35 +1,35 @@
 import {
-  z as h,
-  S as w,
-  T as x,
+  z as w,
+  T as S,
+  U as x,
   B,
-  U as E,
-  V as O,
-  W as Y
-} from "./CQWoSB4q.js";
+  V as E,
+  W as O,
+  X as Y
+} from "./sZguypfn.js";
 
 function n(r, f) {
   return r === f || (r == null ? void 0 : r[Y]) === f
 }
 
 function A(r = {}, f, i, k) {
-  var p = h.r,
-    S = E;
-  return w(() => {
+  var p = w.r,
+    T = E;
+  return S(() => {
     var a, t;
     return x(() => {
       a = t, t = [], B(() => {
         n(i(...t), r) || (f(r, ...t), a && n(i(...a), r) && f(null, ...a))
       })
     }), () => {
-      let s = S;
+      let s = T;
       for (; s !== p && s.parent !== null && s.parent.f & O;) s = s.parent;
-      const T = () => {
+      const h = () => {
           t && n(i(...t), r) && f(null, ...t)
         },
         c = s.teardown;
       s.teardown = () => {
-        T(), c == null || c()
+        h(), c == null || c()
       }
     }
   }), r

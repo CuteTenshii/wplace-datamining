@@ -1,67 +1,27 @@
 import "./Bzak7iHL.js";
 import {
-  p as x,
-  t as m,
-  a as p,
-  b as g,
-  c as f,
-  d as _,
-  s as b,
-  r as h
-} from "./CQWoSB4q.js";
+  a as v,
+  k as e
+} from "./sZguypfn.js";
 import {
-  i as w
-} from "./URwf35_8.js";
+  b as a
+} from "./Cy1wQjPv.js";
 import {
-  b as z,
-  a as c,
-  s as k
-} from "./S4tA3GK6.js";
-import {
-  p as L,
-  r as T
-} from "./CKPpRXbX.js";
-import {
-  l as y
-} from "./B_Oz03f8.js";
-var S = new Set(["$$slots", "$$events", "$$legacy", "hasText", "size"]),
-  U = f("<span>wplace</span>"),
-  W = f('<div><img alt="Wplace logo"/> <!></div>');
+  r as p
+} from "./BwfjFjwf.js";
+var q = new Set(["$$slots", "$$events", "$$legacy"]),
+  m = e('<svg><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"></path></svg>');
 
-function E(n, t) {
-  x(t, !0);
-  let e = L(t, "size", 3, "default"),
-    d = T(t, S);
-  var a = W();
-  z(a, () => ({
-    ...d,
-    class: `flex items-center gap-1.5 ${t.class??""}`
-  }));
-  var s = _(a);
-  let r;
-  var u = b(s, 2);
-  {
-    var v = l => {
-      var o = U();
-      let i;
-      m(() => i = c(o, 1, "text-base-content font-pixel", null, i, {
-        "text-4xl": e() === "default",
-        "text-5xl": e() === "lg" || e() === "medium"
-      })), p(l, o)
-    };
-    w(u, l => {
-      t.hasText && l(v)
-    })
-  }
-  h(a), m(() => {
-    r = c(s, 1, "pixelated h-auto shrink-0", null, r, {
-      "w-4": e() === "small",
-      "w-10": e() === "default",
-      "w-16": e() === "medium",
-      "w-20": e() === "lg"
-    }), k(s, "src", y)
-  }), p(n, a), g()
+function n(r, o) {
+  let s = p(o, q);
+  var t = m();
+  a(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...s
+  })), v(r, t)
 }
 export {
-  E as L
+  n as L
 };

@@ -1,22 +1,38 @@
 import {
   g as t
 } from "./BhCkpOlh.js";
-const n = () => "Appeal",
-  p = () => "Apelo",
-  a = () => "申诉",
-  u = () => "Einspruch",
-  o = () => "Apelación",
-  c = () => "Recours",
-  l = () => "Ricorso",
-  s = () => "異議申立て",
-  i = () => "Odwołanie",
-  f = () => "Апелляция",
-  _ = () => "Апеляція",
-  h = () => "Kháng cáo",
-  A = (d = {}, e = {}) => {
+const u = () => "Next",
+  o = () => "Próximo",
+  s = () => "下一张",
+  c = () => "Weiter",
+  i = () => "Siguiente",
+  _ = () => "Suivant",
+  l = () => "Successivo",
+  a = () => "次へ",
+  p = () => "Następny",
+  f = () => "Далее",
+  v = () => "Далі",
+  x = () => "Tiếp",
+  L = (n = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? n() : r === "pt" ? p() : r === "ch" ? a() : r === "de" ? u() : r === "es" ? o() : r === "fr" ? c() : r === "it" ? l() : r === "jp" ? s() : r === "pl" ? i() : r === "ru" ? f() : r === "uk" ? _() : h()
+    return r === "en" ? u() : r === "pt" ? o() : r === "ch" ? s() : r === "de" ? c() : r === "es" ? i() : r === "fr" ? _() : r === "it" ? l() : r === "jp" ? a() : r === "pl" ? p() : r === "ru" ? f() : r === "uk" ? v() : x()
+  },
+  d = () => "Previous",
+  k = () => "Anterior",
+  P = () => "上一张",
+  h = () => "Zurück",
+  j = () => "Anterior",
+  g = () => "Précédent",
+  m = () => "Precedente",
+  S = () => "前へ",
+  A = () => "Poprzedni",
+  N = () => "Назад",
+  T = () => "Назад",
+  y = () => "Trước",
+  W = (n = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? d() : r === "pt" ? k() : r === "ch" ? P() : r === "de" ? h() : r === "es" ? j() : r === "fr" ? g() : r === "it" ? m() : r === "jp" ? S() : r === "pl" ? A() : r === "ru" ? N() : r === "uk" ? T() : y()
   };
 export {
-  A as a
+  L as a, W as c
 };

@@ -1,120 +1,90 @@
+import "./Bzak7iHL.js";
 import {
-  g as o
-} from "./BhCkpOlh.js";
+  p as y,
+  w as S,
+  f as A,
+  a as o,
+  b as I,
+  d as w,
+  r,
+  t as n,
+  i as s,
+  s as k,
+  c as u,
+  u as m,
+  k as B
+} from "./sZguypfn.js";
 import {
-  P as r
-} from "./DB3ILEHS.js";
+  i as C
+} from "./DKaXnpGW.js";
 import {
-  a as t
-} from "./BdCqcZGB.js";
+  h as f
+} from "./Bbq58OV7.js";
 import {
-  a as i
-} from "./og9Js_3x.js";
+  a as g,
+  s as L,
+  b as Z
+} from "./Cy1wQjPv.js";
 import {
-  a as d
-} from "./U_H6LM6d.js";
+  p as j,
+  r as z
+} from "./BwfjFjwf.js";
 import {
-  h as n
-} from "./Bw7Hy7Ll.js";
+  a as E
+} from "./Dwd6JCtZ.js";
 import {
-  p as h
-} from "./Dt2PKvft.js";
-import {
-  s as l
-} from "./ByH6mgv9.js";
-import {
-  t as b
-} from "./OvJd4Dh6.js";
-import {
-  t as m
-} from "./CW0X7odH.js";
-import {
-  u as p
-} from "./CsIr9lN0.js";
-import {
-  t as u
-} from "./CqMJ2HFU.js";
-const f = () => "Dashboard",
-  c = () => "Painel",
-  k = () => "控制台",
-  _ = () => "Dashboard",
-  y = () => "Panel",
-  g = () => "Tableau de bord",
-  P = () => "Pannello",
-  S = () => "ダッシュボード",
-  v = () => "Panel",
-  A = () => "Панель",
-  D = () => "Панель",
-  I = () => "Bảng điều khiển",
-  H = (e = {}, a = {}) => {
-    const s = a.locale ?? o();
-    return s === "en" ? f() : s === "pt" ? c() : s === "ch" ? k() : s === "de" ? _() : s === "es" ? y() : s === "fr" ? g() : s === "it" ? P() : s === "jp" ? S() : s === "pl" ? v() : s === "ru" ? A() : s === "uk" ? D() : I()
-  },
-  O = [{
-    key: "dashboard",
-    href: "/dashboard/home",
-    label: () => n(),
-    permissions: r.dashboard.summary
-  }, {
-    key: "mods",
-    href: "/dashboard/team",
-    label: () => b(),
-    permissions: r.dashboard.team
-  }, {
-    key: "appeals",
-    href: "/dashboard/appeals",
-    label: () => i(),
-    permissions: r.dashboard.banAppeals
-  }, {
-    key: "tickets",
-    href: "/dashboard/tickets",
-    label: () => m(),
-    permissions: r.dashboard.allTickets
-  }, {
-    key: "kpi",
-    href: "/dashboard/kpi/tickets",
-    label: () => "KPI",
-    permissions: r.dashboard.kpi
-  }, {
-    key: "users",
-    href: "/dashboard/users",
-    label: () => p(),
-    permissions: r.dashboard.users
-  }, {
-    key: "permissions",
-    href: "/dashboard/permissions",
-    label: () => h(),
-    permissions: r.dashboard.permissions
-  }, {
-    key: "alliances",
-    href: "/dashboard/alliances",
-    label: () => t(),
-    permissions: r.dashboard.alliances
-  }, {
-    key: "audit-logs",
-    href: "/dashboard/audit-logs",
-    label: () => d(),
-    permissions: r.dashboard.auditLogs
-  }, {
-    key: "ticket-reversals",
-    href: "/dashboard/ticket-reversals",
-    label: () => u(),
-    permissions: r.tickets.only("revertReview")
-  }, {
-    key: "store-manager",
-    href: "/dashboard/store-manager",
-    label: () => l(),
-    permissions: r.dashboard.storeManager
-  }, {
-    key: "anticheat",
-    href: "/dashboard/anticheat",
-    label: () => "Anticheat",
-    permissions: r.dashboard.anticheat
-  }];
+  m as M
+} from "./C_bJK8gT.js";
+var O = u('<div><img alt="" class="size-full object-cover" style="image-rendering: pixelated" draggable="false"/></div>'),
+  Q = u('<div aria-hidden="true"><div class="absolute -top-1/2 -right-4 aspect-square h-[200%] rotate-12 opacity-25 select-none"></div> <div class="absolute -bottom-1/3 left-6 aspect-square h-[110%] -rotate-6 opacity-15 select-none"></div></div>'),
+  D = u("<div></div>");
 
-function K(e) {
-  return O.find(a => e.hasAnyPermission(a.permissions))
+function W(v, e) {
+  y(e, !0);
+  let c = j(e, "variant", 3, "picture");
+  const l = m(() => e.seed && e.seed.length > 0 ? e.seed : `alliance-${e.allianceId}`),
+    d = m(() => M(s(l), 95, 45)),
+    h = m(() => E(e.allianceId));
+  var _ = S(),
+    p = A(_);
+  {
+    var q = t => {
+        var a = O(),
+          i = w(a);
+        r(a), n(() => {
+          g(a, 1, `overflow-hidden bg-white ${e.class??""??""}`), L(i, "src", e.imageSrc)
+        }), o(t, a)
+      },
+      T = t => {
+        var a = Q(),
+          i = w(a);
+        f(i, () => s(d), !0), r(i);
+        var b = k(i, 2);
+        f(b, () => s(d), !0), r(b), r(a), n(() => g(a, 1, `relative overflow-hidden ${s(h)??""} ${e.class??""??""}`)), o(t, a)
+      },
+      x = t => {
+        var a = D();
+        f(a, () => s(d), !0), r(a), n(() => g(a, 1, `overflow-hidden ${s(h)??""} ${e.class??""??""}`)), o(t, a)
+      };
+    C(p, t => {
+      e.imageSrc ? t(q) : c() === "banner" ? t(T, 1) : t(x, -1)
+    })
+  }
+  o(v, _), I()
+}
+var F = new Set(["$$slots", "$$events", "$$legacy"]),
+  G = B('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
+
+function X(v, e) {
+  let c = z(e, F);
+  var l = G();
+  Z(l, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...c
+  })), o(v, l)
 }
 export {
-  O as D, H as d, K as f
+  W as A, X as L
 };

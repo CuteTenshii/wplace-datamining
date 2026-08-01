@@ -1,93 +1,48 @@
-import "./Bzak7iHL.js";
-import "./Dwl2lRiN.js";
 import {
-  p as P,
-  a as t,
-  b as k,
-  c as i,
-  d as m,
-  i as r,
-  s as _,
-  r as d,
-  t as W,
-  ae as q
-} from "./CQWoSB4q.js";
-import {
-  i as h
-} from "./URwf35_8.js";
-import {
-  e as H
-} from "./CQ0jliM2.js";
-import {
-  e as I
-} from "./S4tA3GK6.js";
-import {
-  i as S
-} from "./iKAzIUbp.js";
-import {
-  a as $,
-  W as j,
-  P as A
-} from "./A-c45iN4.js";
-var B = i('<div class="bg-primary shadow-primary/15 z-10 size-2.5 rounded-full shadow-[0_0_0_3px]"></div>'),
-  C = i('<div class="border-base-300 bg-base-100 z-10 size-2 rounded-full border-2"></div>'),
-  D = i('<div class="bg-base-300/50 mt-1 w-px flex-1"></div>'),
-  E = i('<div class="relative flex gap-3.5"><div class="flex shrink-0 flex-col items-center pt-2.25"><!> <!></div> <div class="min-w-0 flex-1 pb-9"><!></div></div>'),
-  F = i('<div class="flex flex-col"></div>');
+  z as d,
+  aF as g,
+  y as c,
+  aG as l,
+  B as m,
+  aH as b,
+  i as p,
+  aI as v,
+  aJ as h
+} from "./sZguypfn.js";
 
-function T(b, u) {
-  P(u, !1);
-  const f = [...$].reverse().map(e => ({
-    version: e.version,
-    title: e.title,
-    html: j(e.markdown)
-  }));
-  S();
-  var l = F();
-  H(l, 7, () => f, e => e.version, (e, x, o) => {
-    var v = E(),
-      p = m(v),
-      c = m(p);
-    {
-      var g = a => {
-          var s = B();
-          t(a, s)
-        },
-        w = a => {
-          var s = C();
-          t(a, s)
-        };
-      h(c, a => {
-        r(o) === 0 ? a(g) : a(w, -1)
-      })
+function y(n = !1) {
+  const s = d,
+    e = s.l.u;
+  if (!e) return;
+  let f = () => v(s.s);
+  if (n) {
+    let a = 0,
+      t = {};
+    const _ = h(() => {
+      let i = !1;
+      const r = s.s;
+      for (const o in r) r[o] !== t[o] && (t[o] = r[o], i = !0);
+      return i && a++, a
+    });
+    f = () => p(_)
+  }
+  e.b.length && g(() => {
+    u(s, f), l(e.b)
+  }), c(() => {
+    const a = m(() => e.m.map(b));
+    return () => {
+      for (const t of a) typeof t == "function" && t()
     }
-    var N = _(c, 2);
-    {
-      var y = a => {
-        var s = D();
-        t(a, s)
-      };
-      h(N, a => {
-        r(o) < f.length - 1 && a(y)
-      })
-    }
-    d(p);
-    var n = _(p, 2),
-      z = m(n);
-    {
-      let a = q(() => r(o) === 0);
-      A(z, {
-        get patchNote() {
-          return r(x)
-        },
-        get latest() {
-          return r(a)
-        }
-      })
-    }
-    d(n), d(v), W(() => I(v, `animation: patchSlideIn 0.3s ease-out ${r(o)*50}ms both`)), t(e, v)
-  }), d(l), t(b, l), k()
+  }), e.a.length && c(() => {
+    u(s, f), l(e.a)
+  })
+}
+
+function u(n, s) {
+  if (n.l.s)
+    for (const e of n.l.s) p(e);
+  s()
 }
 export {
-  T as P
+  y as i
 };

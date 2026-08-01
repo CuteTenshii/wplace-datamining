@@ -1,54 +1,40 @@
+import "./Bzak7iHL.js";
 import {
-  g as n
-} from "./BhCkpOlh.js";
-const o = () => "Month",
-  u = () => "Mês",
-  s = () => "月",
-  i = () => "Monat",
-  c = () => "Mes",
-  h = () => "Mois",
-  _ = () => "Mese",
-  f = () => "月",
-  m = () => "Miesiąc",
-  a = () => "Месяц",
-  p = () => "Місяць",
-  d = () => "Tháng",
-  K = (e = {}, r = {}) => {
-    const t = r.locale ?? n();
-    return t === "en" ? o() : t === "pt" ? u() : t === "ch" ? s() : t === "de" ? i() : t === "es" ? c() : t === "fr" ? h() : t === "it" ? _() : t === "jp" ? f() : t === "pl" ? m() : t === "ru" ? a() : t === "uk" ? p() : d()
-  },
-  l = () => "this month",
-  y = () => "neste mês",
-  j = () => "本月",
-  M = () => "diesen Monat",
-  g = () => "este mes",
-  k = () => "ce mois-ci",
-  H = () => "questo mese",
-  v = () => "今月",
-  T = () => "w tym miesiącu",
-  q = () => "в этом месяце",
-  w = () => "цього місяця",
-  x = () => "tháng này",
-  N = (e = {}, r = {}) => {
-    const t = r.locale ?? n();
-    return t === "en" ? l() : t === "pt" ? y() : t === "ch" ? j() : t === "de" ? M() : t === "es" ? g() : t === "fr" ? k() : t === "it" ? H() : t === "jp" ? v() : t === "pl" ? T() : t === "ru" ? q() : t === "uk" ? w() : x()
-  },
-  z = () => "Today",
-  A = () => "Hoje",
-  D = () => "今天",
-  L = () => "Heute",
-  O = () => "Hoy",
-  b = () => "Aujourd’hui",
-  B = () => "Oggi",
-  C = () => "今日",
-  E = () => "Dziś",
-  F = () => "Сегодня",
-  G = () => "Сьогодні",
-  I = () => "Hôm nay",
-  P = (e = {}, r = {}) => {
-    const t = r.locale ?? n();
-    return t === "en" ? z() : t === "pt" ? A() : t === "ch" ? D() : t === "de" ? L() : t === "es" ? O() : t === "fr" ? b() : t === "it" ? B() : t === "jp" ? C() : t === "pl" ? E() : t === "ru" ? F() : t === "uk" ? G() : I()
-  };
+  a as o,
+  k as v
+} from "./sZguypfn.js";
+import {
+  b as a
+} from "./Cy1wQjPv.js";
+import {
+  r as l
+} from "./BwfjFjwf.js";
+var p = new Set(["$$slots", "$$events", "$$legacy"]),
+  m = v('<svg><path d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z"></path></svg>');
+
+function c(r, s) {
+  let e = l(s, p);
+  var t = m();
+  a(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...e
+  })), o(r, t)
+}
+var n = new Set(["$$slots", "$$events", "$$legacy"]),
+  $ = v('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
+
+function f(r, s) {
+  let e = l(s, n);
+  var t = $();
+  a(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...e
+  })), o(r, t)
+}
 export {
-  N as a, K as m, P as t
+  f as G, c as T
 };

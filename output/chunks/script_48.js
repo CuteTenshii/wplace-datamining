@@ -1,75 +1,57 @@
 import {
-  S as p
-} from "./IfPOFYzJ.js";
-const h = p;
+  t as C,
+  K as d,
+  P as v,
+  a8 as i,
+  L as E,
+  V as T,
+  ay as _,
+  az as m,
+  R as M,
+  aa as p,
+  at as w,
+  aA as N,
+  aB as R,
+  aC as g,
+  aD as H,
+  aE as L
+} from "./sZguypfn.js";
 
-function b(f) {
-  const s = [],
-    a = s,
-    d = Object.keys(f);
-  for (const o of d) {
-    const t = f[o];
-    if (typeof t == "string") {
-      a.push(t), Object.defineProperty(s, o, {
-        value: t,
-        enumerable: !0,
-        configurable: !1,
-        writable: !1
-      });
-      continue
-    }
-    const n = b(t);
-    Object.defineProperty(s, o, {
-      value: n,
-      enumerable: !0,
-      configurable: !1,
-      writable: !1
-    });
-    const r = n;
-    for (let e = 0; e < r.length; e += 1) a.push(r[e])
+function D(h, y, u = !1, f = !1, t = !1, O = !1) {
+  var n = h,
+    e = "";
+  if (u) {
+    var l = h;
+    d && (n = v(i(l)))
   }
-  return Object.defineProperty(s, "only", {
-    value: (...o) => {
-      const t = [];
-      for (let n = 0; n < o.length; n += 1) {
-        const r = o[n],
-          e = s[r];
-        if (typeof e == "string") {
-          t.push(e);
-          continue
-        }
-        const l = e;
-        for (let i = 0; i < l.length; i += 1) t.push(l[i])
+  C(() => {
+    var s = T;
+    if (e === (e = y() ?? "")) {
+      d && E();
+      return
+    }
+    if (u && !d) {
+      s.nodes = null, l.innerHTML = e, e !== "" && _(i(l), l.lastChild);
+      return
+    }
+    if (s.nodes !== null && (m(s.nodes.start, s.nodes.end), s.nodes = null), e !== "") {
+      if (d) {
+        M.data;
+        for (var a = E(), c = a; a !== null && (a.nodeType !== p || a.data !== "");) c = a, a = w(a);
+        if (a === null) throw N(), R;
+        _(M, c), n = v(a);
+        return
       }
-      return t
-    },
-    enumerable: !1,
-    configurable: !1,
-    writable: !1
-  }), Object.defineProperty(s, "but", {
-    value: (...o) => {
-      const t = new Set(o),
-        n = [],
-        r = Object.keys(s);
-      for (let e = 0; e < r.length; e += 1) {
-        const l = r[e];
-        if (t.has(l)) continue;
-        const i = s[l];
-        if (typeof i == "string") {
-          n.push(i);
-          continue
-        }
-        const u = i;
-        for (let c = 0; c < u.length; c += 1) n.push(u[c])
-      }
-      return n
-    },
-    enumerable: !1,
-    configurable: !1,
-    writable: !1
-  }), Object.freeze(s)
+      var A = f ? H : t ? L : void 0,
+        o = g(f ? "svg" : t ? "math" : "template", A);
+      o.innerHTML = e;
+      var r = f || t ? o : o.content;
+      if (_(i(r), r.lastChild), f || t)
+        for (; i(r);) n.before(i(r));
+      else n.before(r)
+    }
+  })
 }
-const m = b(h);
 export {
-  m as P
+  D as h
 };

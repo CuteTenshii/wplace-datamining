@@ -1,22 +1,71 @@
+import "./Bzak7iHL.js";
 import {
-  g as s
-} from "./BhCkpOlh.js";
-const t = () => "Users",
-  u = () => "Usuários",
-  n = () => "用户",
-  i = () => "Benutzer",
-  o = () => "Usuarios",
-  c = () => "Utilisateurs",
-  f = () => "Utenti",
-  _ = () => "ユーザー",
-  p = () => "Użytkownicy",
-  l = () => "Пользователи",
-  a = () => "Користувачі",
-  U = () => "Người dùng",
-  k = (g = {}, e = {}) => {
-    const r = e.locale ?? s();
-    return r === "en" ? t() : r === "pt" ? u() : r === "ch" ? n() : r === "de" ? i() : r === "es" ? o() : r === "fr" ? c() : r === "it" ? f() : r === "jp" ? _() : r === "pl" ? p() : r === "ru" ? l() : r === "uk" ? a() : U()
-  };
+  p as R,
+  d as i,
+  r as l,
+  t as m,
+  a as n,
+  b as h,
+  s as f,
+  c as g
+} from "./sZguypfn.js";
+import {
+  s as _
+} from "./jdzncLHG.js";
+import {
+  i as w
+} from "./DKaXnpGW.js";
+import {
+  a as E
+} from "./Cy1wQjPv.js";
+import {
+  p as y
+} from "./BwfjFjwf.js";
+import {
+  R as O,
+  a as z
+} from "./TTfhDrzz.js";
+import {
+  L as v
+} from "./C1BGxFg3.js";
+var c = g('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
+  A = g("<span><!></span>");
+
+function T(b, e) {
+  R(e, !0);
+  let p = y(e, "big", 3, !1);
+  var s = A();
+  let d;
+  var u = i(s);
+  {
+    var x = r => {
+        var a = c(),
+          t = i(a);
+        v(t, {
+          size: "none"
+        });
+        var o = f(t, 1, !0);
+        l(a), m(() => _(o, O[e.role])), n(r, a)
+      },
+      L = r => {
+        var a = c(),
+          t = i(a);
+        v(t, {
+          size: "small"
+        });
+        var o = f(t, 1, !0);
+        l(a), m(() => _(o, z[e.role])), n(r, a)
+      };
+    w(u, r => {
+      p() ? r(x) : r(L, -1)
+    })
+  }
+  l(s), m(() => d = E(s, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center pt-0.5 leading-none font-semibold whitespace-nowrap shadow", null, d, {
+    "badge-info": e.role === "admin",
+    "badge-secondary": e.role === "sac" || e.role === "game_master" || e.role === "game_master_leader" || e.role === "dev",
+    "badge-warning": e.role === "discord_mod" || e.role === "discord_leader"
+  })), n(b, s), h()
+}
 export {
-  k as u
+  T as R
 };

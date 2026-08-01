@@ -1,22 +1,22 @@
 import {
   g as t
 } from "./BhCkpOlh.js";
-const n = () => "Refresh",
-  s = () => "Atualizar",
-  u = () => "刷新",
-  f = () => "Aktualisieren",
-  i = () => "Actualizar",
-  c = () => "Actualiser",
-  o = () => "Aggiorna",
-  h = () => "更新",
-  a = () => "Odśwież",
-  _ = () => "Обновить",
-  l = () => "Оновити",
-  p = () => "Làm mới",
-  m = (A = {}, e = {}) => {
+const u = () => "User ID",
+  n = () => "ID do usuário",
+  s = () => "用户ID",
+  i = () => "Benutzer-ID",
+  _ = () => "ID de usuario",
+  o = () => "ID utilisateur",
+  c = () => "ID dell'utente",
+  d = () => "ユーザーID",
+  f = () => "ID użytkownika",
+  D = () => "Идентификатор пользователя",
+  I = () => "ID користувача",
+  l = () => "ID người dùng",
+  g = (p = {}, e = {}) => {
     const r = e.locale ?? t();
-    return r === "en" ? n() : r === "pt" ? s() : r === "ch" ? u() : r === "de" ? f() : r === "es" ? i() : r === "fr" ? c() : r === "it" ? o() : r === "jp" ? h() : r === "pl" ? a() : r === "ru" ? _() : r === "uk" ? l() : p()
+    return r === "en" ? u() : r === "pt" ? n() : r === "ch" ? s() : r === "de" ? i() : r === "es" ? _() : r === "fr" ? o() : r === "it" ? c() : r === "jp" ? d() : r === "pl" ? f() : r === "ru" ? D() : r === "uk" ? I() : l()
   };
 export {
-  m as r
+  g as u
 };

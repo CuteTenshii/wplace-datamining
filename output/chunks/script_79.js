@@ -1,52 +1,22 @@
-import "./Bzak7iHL.js";
 import {
-  w as h,
-  f as n,
-  a as v,
-  k as l
-} from "./CQWoSB4q.js";
-import {
-  i as g
-} from "./URwf35_8.js";
-import {
-  b as e
-} from "./S4tA3GK6.js";
-import {
-  r as w
-} from "./CKPpRXbX.js";
-var c = new Set(["$$slots", "$$events", "$$legacy", "filled"]),
-  q = l('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>'),
-  T = l('<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>');
-
-function C(i, o) {
-  let s = w(o, c);
-  var a = h(),
-    f = n(a);
-  {
-    var m = r => {
-        var t = q();
-        e(t, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...s
-        })), v(r, t)
-      },
-      p = r => {
-        var t = T();
-        e(t, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...s
-        })), v(r, t)
-      };
-    g(f, r => {
-      o.filled ? r(m) : r(p, -1)
-    })
-  }
-  v(i, a)
-}
+  g as n
+} from "./BhCkpOlh.js";
+const i = () => "Pixels painted",
+  r = () => "Pixels pintados",
+  p = () => "已绘制像素数",
+  s = () => "Gemalte Pixel",
+  l = () => "Píxeles pintados",
+  u = () => "Pixels peints",
+  _ = () => "Pixel dipinti",
+  a = () => "塗られたピクセル数",
+  o = () => "Pomalowane piksele",
+  x = () => "Нарисованные пиксели",
+  c = () => "Намальовані пікселі",
+  d = () => "Pixel đã tô",
+  m = (f = {}, t = {}) => {
+    const e = t.locale ?? n();
+    return e === "en" ? i() : e === "pt" ? r() : e === "ch" ? p() : e === "de" ? s() : e === "es" ? l() : e === "fr" ? u() : e === "it" ? _() : e === "jp" ? a() : e === "pl" ? o() : e === "ru" ? x() : e === "uk" ? c() : d()
+  };
 export {
-  C
+  m as p
 };

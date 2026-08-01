@@ -1,27 +1,22 @@
-import "./Bzak7iHL.js";
 import {
-  a as e,
-  k as a
-} from "./CQWoSB4q.js";
-import {
-  b as m
-} from "./S4tA3GK6.js";
-import {
-  r as p
-} from "./CKPpRXbX.js";
-var v = new Set(["$$slots", "$$events", "$$legacy"]),
-  n = a('<svg><path d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"></path></svg>');
-
-function c(t, o) {
-  let s = p(o, v);
-  var r = n();
-  m(r, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...s
-  })), e(t, r)
-}
+  g as t
+} from "./BhCkpOlh.js";
+const e = () => "Ban",
+  u = () => "Banimento",
+  a = () => "封禁",
+  o = () => "Bannen",
+  c = () => "Banear",
+  s = () => "Bannir",
+  i = () => "Ban",
+  b = () => "BAN",
+  f = () => "Ban",
+  _ = () => "Забанить",
+  p = () => "Бан",
+  B = () => "Cấm",
+  d = (l = {}, r = {}) => {
+    const n = r.locale ?? t();
+    return n === "en" ? e() : n === "pt" ? u() : n === "ch" ? a() : n === "de" ? o() : n === "es" ? c() : n === "fr" ? s() : n === "it" ? i() : n === "jp" ? b() : n === "pl" ? f() : n === "ru" ? _() : n === "uk" ? p() : B()
+  };
 export {
-  c as W
+  d as b
 };
