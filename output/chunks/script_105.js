@@ -1,38 +1,22 @@
 import {
-  g as e
+  g as n
 } from "./BhCkpOlh.js";
-const n = () => "All roles",
-  s = () => "Todos os cargos",
-  _ = () => "所有职位",
-  a = () => "Alle Stellen",
-  o = () => "Todos los cargos",
-  c = () => "Tous les postes",
-  u = () => "Tutte le posizioni",
-  i = () => "すべての役職",
-  f = () => "Wszystkie stanowiska",
-  p = () => "Все должности",
-  d = () => "Усі посади",
-  h = () => "Tất cả chức vụ",
-  w = (l = {}, t = {}) => {
-    const r = t.locale ?? e();
-    return r === "en" ? n() : r === "pt" ? s() : r === "ch" ? _() : r === "de" ? a() : r === "es" ? o() : r === "fr" ? c() : r === "it" ? u() : r === "jp" ? i() : r === "pl" ? f() : r === "ru" ? p() : r === "uk" ? d() : h()
-  },
-  k = () => "Clear filters",
-  T = () => "Limpar filtros",
-  g = () => "清除筛选器",
-  j = () => "Filter löschen",
-  y = () => "Borrar filtros",
-  m = () => "Effacer les filtres",
-  v = () => "Cancella filtri",
-  z = () => "フィルターをクリア",
-  b = () => "Wyczyść filtry",
-  A = () => "Очистить фильтры",
-  C = () => "Очистити фільтри",
-  L = () => "Xóa bộ lọc",
-  x = (l = {}, t = {}) => {
-    const r = t.locale ?? e();
-    return r === "en" ? k() : r === "pt" ? T() : r === "ch" ? g() : r === "de" ? j() : r === "es" ? y() : r === "fr" ? m() : r === "it" ? v() : r === "jp" ? z() : r === "pl" ? b() : r === "ru" ? A() : r === "uk" ? C() : L()
+const e = () => "Sort",
+  o = () => "Ordenar",
+  s = () => "排序",
+  u = () => "Sortieren",
+  _ = () => "Ordenar",
+  a = () => "Trier",
+  c = () => "Ordinare",
+  i = () => "並べ替える",
+  f = () => "Sortować",
+  p = () => "Сортировать",
+  l = () => "Сортувати",
+  d = () => "Sắp xếp",
+  g = (S = {}, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? e() : r === "pt" ? o() : r === "ch" ? s() : r === "de" ? u() : r === "es" ? _() : r === "fr" ? a() : r === "it" ? c() : r === "jp" ? i() : r === "pl" ? f() : r === "ru" ? p() : r === "uk" ? l() : d()
   };
 export {
-  w as a, x as b
+  g as a
 };

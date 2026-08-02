@@ -1,27 +1,46 @@
+import {
+  g as n
+} from "./BhCkpOlh.js";
 import "./Bzak7iHL.js";
 import {
-  a as e,
-  k as a
+  a as m,
+  k as o
 } from "./DUZ_qUVk.js";
 import {
-  b as p
+  b as u
 } from "./M4i-R8Gk.js";
 import {
-  r as v
+  r as i
 } from "./DXFW01RN.js";
-var l = new Set(["$$slots", "$$events", "$$legacy"]),
-  m = a('<svg><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"></path></svg>');
+const c = () => "Members",
+  p = () => "Membros",
+  f = () => "成员",
+  b = () => "Mitglieder",
+  v = () => "Miembros",
+  a = () => "Membres",
+  l = () => "Membri",
+  _ = () => "メンバー",
+  h = () => "Członkowie",
+  g = () => "Участники",
+  w = () => "Учасники",
+  M = () => "Thành viên",
+  j = (t = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? c() : r === "pt" ? p() : r === "ch" ? f() : r === "de" ? b() : r === "es" ? v() : r === "fr" ? a() : r === "it" ? l() : r === "jp" ? _() : r === "pl" ? h() : r === "ru" ? g() : r === "uk" ? w() : M()
+  };
+var d = new Set(["$$slots", "$$events", "$$legacy"]),
+  $ = o('<svg><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"></path></svg>');
 
-function c(t, o) {
-  let s = v(o, l);
-  var r = m();
-  p(r, () => ({
+function C(t, e) {
+  let r = i(e, d);
+  var s = $();
+  u(s, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
-    ...s
-  })), e(t, r)
+    ...r
+  })), m(t, s)
 }
 export {
-  c as S
+  C as O, j as m
 };
