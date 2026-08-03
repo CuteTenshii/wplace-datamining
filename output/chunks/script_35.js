@@ -1,391 +1,389 @@
 import {
-  g as P
+  g as C
 } from "./BhCkpOlh.js";
 import "./Bzak7iHL.js";
 import {
-  o as xt,
-  a as mr
+  o as jt,
+  a as gr
 } from "./CRTPBFbF.js";
 import {
-  l as jt,
-  p as Ce,
-  w as He,
-  f as ne,
+  l as Dt,
+  p as Se,
+  w as Ue,
+  f as re,
   a as u,
-  b as Se,
+  b as Ce,
   d as o,
   r as a,
-  m as me,
-  c as h,
-  s as c,
-  o as kt,
-  t as T,
+  m as he,
+  c as y,
+  s as l,
+  o as qt,
+  t as I,
   i as r,
-  k as xe,
-  u as L,
+  k as je,
+  u as S,
   v as Je,
-  y as Lt,
+  y as Tt,
   e as W,
-  g as vr,
+  g as br,
   h as p,
-  n as gr
+  n as wr
 } from "./DUZ_qUVk.js";
 import {
-  s as w
+  s as k
 } from "./DtUyTUmd.js";
 import {
-  i as A
+  i as B
 } from "./BLc2SwOK.js";
 import {
-  k as Ot
+  k as Vt
 } from "./BSwVEwq1.js";
 import {
   s as Ge,
   a as Pe,
   e as Ye,
-  c as Ft,
-  b as br
+  c as Kt,
+  b as xr
 } from "./M4i-R8Gk.js";
 import {
-  p as we,
-  r as wr
+  p as ke,
+  r as kr
 } from "./DXFW01RN.js";
 import {
-  g as _t,
-  u as De,
+  g as pt,
+  u as xe,
   b as Ee,
-  t as ht,
-  f as Vt
+  t as vt,
+  f as Nt
 } from "./BadwafE7.js";
 import {
-  a as xr,
-  u as kr
+  a as jr,
+  u as qr
 } from "./oKQjVPWp.js";
 import {
-  T as Jt,
+  T as Xt,
   a as Te,
-  p as jr
-} from "./Cshyijwn.js";
+  p as Dr
+} from "./BDv9okN2.js";
 import {
-  r as qr
+  r as Pr
 } from "./DL_rIE8k.js";
 import {
   D as Ke
 } from "./DG57bZmM.js";
 import {
-  A as Dr,
-  U as Pr
+  A as Sr,
+  U as Cr
 } from "./CKLrOkV4.js";
 import {
   D as Qe
 } from "./AcHVui-2.js";
 import {
-  r as Kt
-} from "./DCbzg060.js";
+  r as Zt
+} from "./NEjusmPr.js";
 import {
-  l as Cr
+  l as zr
 } from "./B_Oz03f8.js";
 import {
-  s as Nt
+  s as Wt
 } from "./b7oAWk-Y.js";
 import {
-  e as pt,
-  i as At
+  e as dt,
+  i as Bt
 } from "./BuccT-Wn.js";
 import {
-  c as Bt
+  c as It
 } from "./BKBS1EOp.js";
 import {
-  C as Sr
+  C as Ar
 } from "./B_8gPEyS.js";
 import {
-  I as zr,
-  d as bt
+  I as Lr,
+  d as xt
 } from "./S7qexJFG.js";
 import {
-  R as zt
+  R as Lt
 } from "./B-597znB.js";
 import {
-  U as Ar
+  U as Br
 } from "./Chw4ERUB.js";
 import {
-  g as Qt
+  g as $t
 } from "./VcJKu71K.js";
 import {
-  p as Lr,
-  t as Br
+  p as Tr,
+  t as Ir
 } from "./DKgxZV0V.js";
 import {
-  e as Tr,
-  f as Ir
+  e as Er,
+  f as Gr
 } from "./CftFOTTa.js";
 import {
-  b as Er
+  b as Rr
 } from "./DhSIbJcI.js";
 import {
-  A as Gr
+  A as Mr
 } from "./DgQkzLoR.js";
 import {
-  a as Rr
+  a as Ur
 } from "./Dcjf6cED.js";
-const Mr = () => "Balance",
-  Ur = () => "Saldo",
-  Hr = () => "余额",
-  Or = () => "Guthaben",
-  Fr = () => "Saldo",
-  Vr = () => "Solde",
+const Hr = () => "Balance",
+  Or = () => "Saldo",
+  Fr = () => "余额",
+  Vr = () => "Guthaben",
   Kr = () => "Saldo",
-  Nr = () => "残高",
+  Nr = () => "Solde",
   Zr = () => "Saldo",
-  Wr = () => "Баланс",
-  Yr = () => "Баланс",
-  Jr = () => "Số dư",
-  Qr = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? Mr() : e === "pt" ? Ur() : e === "ch" ? Hr() : e === "de" ? Or() : e === "es" ? Fr() : e === "fr" ? Vr() : e === "it" ? Kr() : e === "jp" ? Nr() : e === "pl" ? Zr() : e === "ru" ? Wr() : e === "uk" ? Yr() : Jr()
+  Wr = () => "残高",
+  Yr = () => "Saldo",
+  Jr = () => "Баланс",
+  Qr = () => "Баланс",
+  Xr = () => "Số dư",
+  $r = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? Hr() : e === "pt" ? Or() : e === "ch" ? Fr() : e === "de" ? Vr() : e === "es" ? Kr() : e === "fr" ? Nr() : e === "it" ? Zr() : e === "jp" ? Wr() : e === "pl" ? Yr() : e === "ru" ? Jr() : e === "uk" ? Qr() : Xr()
   },
-  Xr = () => "Purchased",
-  $r = () => "Comprado",
-  en = () => "已购买",
-  tn = () => "Gekauft",
-  rn = () => "Comprado",
-  nn = () => "Acheté",
-  an = () => "Acquistato",
-  on = () => "購入済み",
-  sn = () => "Zakupiono",
-  un = () => "Куплено",
-  ln = () => "Придбано",
-  cn = () => "Đã mua",
-  _n = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? Xr() : e === "pt" ? $r() : e === "ch" ? en() : e === "de" ? tn() : e === "es" ? rn() : e === "fr" ? nn() : e === "it" ? an() : e === "jp" ? on() : e === "pl" ? sn() : e === "ru" ? un() : e === "uk" ? ln() : cn()
+  en = () => "Purchased",
+  tn = () => "Comprado",
+  rn = () => "已购买",
+  nn = () => "Gekauft",
+  an = () => "Comprado",
+  on = () => "Acheté",
+  sn = () => "Acquistato",
+  un = () => "購入済み",
+  ln = () => "Zakupiono",
+  cn = () => "Куплено",
+  _n = () => "Придбано",
+  pn = () => "Đã mua",
+  dn = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? en() : e === "pt" ? tn() : e === "ch" ? rn() : e === "de" ? nn() : e === "es" ? an() : e === "fr" ? on() : e === "it" ? sn() : e === "jp" ? un() : e === "pl" ? ln() : e === "ru" ? cn() : e === "uk" ? _n() : pn()
   },
-  pn = () => "Eraser",
-  dn = () => "Borracha",
-  fn = () => "橡皮擦",
-  yn = () => "Radierer",
-  hn = () => "Borrador",
-  mn = () => "Gomme",
-  vn = () => "Gomma",
-  gn = () => "消しゴム",
-  bn = () => "Gumka",
-  wn = () => "Ластик",
-  xn = () => "Гумка",
-  kn = () => "Cục tẩy",
-  My = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? pn() : e === "pt" ? dn() : e === "ch" ? fn() : e === "de" ? yn() : e === "es" ? hn() : e === "fr" ? mn() : e === "it" ? vn() : e === "jp" ? gn() : e === "pl" ? bn() : e === "ru" ? wn() : e === "uk" ? xn() : kn()
+  fn = () => "Eraser",
+  yn = () => "Borracha",
+  hn = () => "橡皮擦",
+  mn = () => "Radierer",
+  vn = () => "Borrador",
+  gn = () => "Gomme",
+  bn = () => "Gomma",
+  wn = () => "消しゴム",
+  xn = () => "Gumka",
+  kn = () => "Ластик",
+  jn = () => "Гумка",
+  qn = () => "Cục tẩy",
+  Hy = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? fn() : e === "pt" ? yn() : e === "ch" ? hn() : e === "de" ? mn() : e === "es" ? vn() : e === "fr" ? gn() : e === "it" ? bn() : e === "jp" ? wn() : e === "pl" ? xn() : e === "ru" ? kn() : e === "uk" ? jn() : qn()
   },
-  jn = () => "Your bank or Google Play turned down this charge, so no Droplets were added.",
-  qn = () => "Seu banco ou a Google Play recusou esta cobrança, então nenhum Droplet foi adicionado.",
-  Dn = () => "你的银行或 Google Play 拒绝了这笔扣款，因此未添加任何水滴。",
-  Pn = () => "Deine Bank oder Google Play hat diese Abbuchung abgelehnt, daher wurden keine Droplets hinzugefügt.",
-  Cn = () => "Tu banco o Google Play rechazó este cargo, así que no se añadieron gotas.",
-  Sn = () => "Votre banque ou Google Play a refusé ce paiement, aucun droplet n’a donc été ajouté.",
-  zn = () => "La tua banca o Google Play ha rifiutato questo addebito, quindi non sono state aggiunte gocce.",
-  An = () => "ご利用の銀行または Google Play がこの請求を拒否したため、ドロップレットは追加されませんでした。",
-  Ln = () => "Twój bank lub Google Play odrzucił tę płatność, więc nie dodano żadnych kropli.",
-  Bn = () => "Ваш банк или Google Play отклонил этот платёж, поэтому droplets не были добавлены.",
-  Tn = () => "Ваш банк або Google Play відхилив цей платіж, тож жодних дроплетів не було додано.",
-  In = () => "Ngân hàng của bạn hoặc Google Play đã từ chối khoản thanh toán này nên không có droplets nào được thêm vào.",
-  En = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? jn() : e === "pt" ? qn() : e === "ch" ? Dn() : e === "de" ? Pn() : e === "es" ? Cn() : e === "fr" ? Sn() : e === "it" ? zn() : e === "jp" ? An() : e === "pl" ? Ln() : e === "ru" ? Bn() : e === "uk" ? Tn() : In()
+  Dn = () => "Your bank or Google Play turned down this charge, so no Droplets were added.",
+  Pn = () => "Seu banco ou a Google Play recusou esta cobrança, então nenhum Droplet foi adicionado.",
+  Sn = () => "你的银行或 Google Play 拒绝了这笔扣款，因此未添加任何水滴。",
+  Cn = () => "Deine Bank oder Google Play hat diese Abbuchung abgelehnt, daher wurden keine Droplets hinzugefügt.",
+  zn = () => "Tu banco o Google Play rechazó este cargo, así que no se añadieron gotas.",
+  An = () => "Votre banque ou Google Play a refusé ce paiement, aucun droplet n’a donc été ajouté.",
+  Ln = () => "La tua banca o Google Play ha rifiutato questo addebito, quindi non sono state aggiunte gocce.",
+  Bn = () => "ご利用の銀行または Google Play がこの請求を拒否したため、ドロップレットは追加されませんでした。",
+  Tn = () => "Twój bank lub Google Play odrzucił tę płatność, więc nie dodano żadnych kropli.",
+  In = () => "Ваш банк или Google Play отклонил этот платёж, поэтому droplets не были добавлены.",
+  En = () => "Ваш банк або Google Play відхилив цей платіж, тож жодних дроплетів не було додано.",
+  Gn = () => "Ngân hàng của bạn hoặc Google Play đã từ chối khoản thanh toán này nên không có droplets nào được thêm vào.",
+  Rn = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? Dn() : e === "pt" ? Pn() : e === "ch" ? Sn() : e === "de" ? Cn() : e === "es" ? zn() : e === "fr" ? An() : e === "it" ? Ln() : e === "jp" ? Bn() : e === "pl" ? Tn() : e === "ru" ? In() : e === "uk" ? En() : Gn()
   },
-  Gn = () => "Try again",
-  Rn = () => "Tentar novamente",
-  Mn = () => "重试",
-  Un = () => "Erneut versuchen",
-  Hn = () => "Intentar de nuevo",
-  On = () => "Réessayer",
-  Fn = () => "Riprova",
-  Vn = () => "もう一度試す",
-  Kn = () => "Spróbuj ponownie",
-  Nn = () => "Попробовать снова",
-  Zn = () => "Спробувати ще раз",
-  Wn = () => "Thử lại",
-  Yn = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? Gn() : e === "pt" ? Rn() : e === "ch" ? Mn() : e === "de" ? Un() : e === "es" ? Hn() : e === "fr" ? On() : e === "it" ? Fn() : e === "jp" ? Vn() : e === "pl" ? Kn() : e === "ru" ? Nn() : e === "uk" ? Zn() : Wn()
+  Mn = () => "Try again",
+  Un = () => "Tentar novamente",
+  Hn = () => "重试",
+  On = () => "Erneut versuchen",
+  Fn = () => "Intentar de nuevo",
+  Vn = () => "Réessayer",
+  Kn = () => "Riprova",
+  Nn = () => "もう一度試す",
+  Zn = () => "Spróbuj ponownie",
+  Wn = () => "Попробовать снова",
+  Yn = () => "Спробувати ще раз",
+  Jn = () => "Thử lại",
+  Qn = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? Mn() : e === "pt" ? Un() : e === "ch" ? Hn() : e === "de" ? On() : e === "es" ? Fn() : e === "fr" ? Vn() : e === "it" ? Kn() : e === "jp" ? Nn() : e === "pl" ? Zn() : e === "ru" ? Wn() : e === "uk" ? Yn() : Jn()
   },
-  Jn = () => "Payment declined",
-  Qn = () => "Pagamento recusado",
-  Xn = () => "付款被拒",
-  $n = () => "Zahlung abgelehnt",
-  ea = () => "Pago rechazado",
-  ta = () => "Paiement refusé",
-  ra = () => "Pagamento rifiutato",
-  na = () => "支払いが拒否されました",
-  aa = () => "Płatność odrzucona",
-  oa = () => "Платёж отклонён",
-  ia = () => "Платіж відхилено",
-  sa = () => "Thanh toán bị từ chối",
-  ua = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? Jn() : e === "pt" ? Qn() : e === "ch" ? Xn() : e === "de" ? $n() : e === "es" ? ea() : e === "fr" ? ta() : e === "it" ? ra() : e === "jp" ? na() : e === "pl" ? aa() : e === "ru" ? oa() : e === "uk" ? ia() : sa()
+  Xn = () => "Payment declined",
+  $n = () => "Pagamento recusado",
+  ea = () => "付款被拒",
+  ta = () => "Zahlung abgelehnt",
+  ra = () => "Pago rechazado",
+  na = () => "Paiement refusé",
+  aa = () => "Pagamento rifiutato",
+  oa = () => "支払いが拒否されました",
+  ia = () => "Płatność odrzucona",
+  sa = () => "Платёж отклонён",
+  ua = () => "Платіж відхилено",
+  la = () => "Thanh toán bị từ chối",
+  ca = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? Xn() : e === "pt" ? $n() : e === "ch" ? ea() : e === "de" ? ta() : e === "es" ? ra() : e === "fr" ? na() : e === "it" ? aa() : e === "jp" ? oa() : e === "pl" ? ia() : e === "ru" ? sa() : e === "uk" ? ua() : la()
   },
-  la = () => "Your balance",
-  ca = () => "Seu saldo",
-  _a = () => "你的余额",
-  pa = () => "Dein Guthaben",
-  da = () => "Tu saldo",
-  fa = () => "Votre solde",
-  ya = () => "Il tuo saldo",
-  ha = () => "残高",
-  ma = () => "Twoje saldo",
-  va = () => "Ваш баланс",
-  ga = () => "Ваш баланс",
-  ba = () => "Số dư của bạn",
-  wa = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? la() : e === "pt" ? ca() : e === "ch" ? _a() : e === "de" ? pa() : e === "es" ? da() : e === "fr" ? fa() : e === "it" ? ya() : e === "jp" ? ha() : e === "pl" ? ma() : e === "ru" ? va() : e === "uk" ? ga() : ba()
+  _a = () => "Your balance",
+  pa = () => "Seu saldo",
+  da = () => "你的余额",
+  fa = () => "Dein Guthaben",
+  ya = () => "Tu saldo",
+  ha = () => "Votre solde",
+  ma = () => "Il tuo saldo",
+  va = () => "残高",
+  ga = () => "Twoje saldo",
+  ba = () => "Ваш баланс",
+  wa = () => "Ваш баланс",
+  xa = () => "Số dư của bạn",
+  ka = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? _a() : e === "pt" ? pa() : e === "ch" ? da() : e === "de" ? fa() : e === "es" ? ya() : e === "fr" ? ha() : e === "it" ? ma() : e === "jp" ? va() : e === "pl" ? ga() : e === "ru" ? ba() : e === "uk" ? wa() : xa()
   },
-  xa = () => "Payments under verification",
-  ka = () => "Pagamentos em verificação",
-  ja = () => "付款验证中",
-  qa = () => "Zahlungen in Überprüfung",
-  Da = () => "Pagos en verificación",
-  Pa = () => "Paiements en cours de vérification",
-  Ca = () => "Pagamenti in verifica",
-  Sa = () => "確認中の支払い",
-  za = () => "Płatności w trakcie weryfikacji",
-  Aa = () => "Платежи на проверке",
-  La = () => "Платежі на перевірці",
-  Ba = () => "Thanh toán đang được xác minh",
-  Ta = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? xa() : e === "pt" ? ka() : e === "ch" ? ja() : e === "de" ? qa() : e === "es" ? Da() : e === "fr" ? Pa() : e === "it" ? Ca() : e === "jp" ? Sa() : e === "pl" ? za() : e === "ru" ? Aa() : e === "uk" ? La() : Ba()
+  ja = () => "Payments under verification",
+  qa = () => "Pagamentos em verificação",
+  Da = () => "付款验证中",
+  Pa = () => "Zahlungen in Überprüfung",
+  Sa = () => "Pagos en verificación",
+  Ca = () => "Paiements en cours de vérification",
+  za = () => "Pagamenti in verifica",
+  Aa = () => "確認中の支払い",
+  La = () => "Płatności w trakcie weryfikacji",
+  Ba = () => "Платежи на проверке",
+  Ta = () => "Платежі на перевірці",
+  Ia = () => "Thanh toán đang được xác minh",
+  Ea = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? ja() : e === "pt" ? qa() : e === "ch" ? Da() : e === "de" ? Pa() : e === "es" ? Sa() : e === "fr" ? Ca() : e === "it" ? za() : e === "jp" ? Aa() : e === "pl" ? La() : e === "ru" ? Ba() : e === "uk" ? Ta() : Ia()
   },
-  Ia = () => "You haven't bought Droplets yet",
-  Ea = () => "Você ainda não comprou Droplets",
-  Ga = () => "你还没有购买过 Droplets",
-  Ra = () => "Du hast noch keine Droplets gekauft",
-  Ma = () => "Aún no has comprado Droplets",
-  Ua = () => "Vous n’avez pas encore acheté de Droplets",
-  Ha = () => "Non hai ancora acquistato Droplets",
-  Oa = () => "まだDropletsを購入していません",
-  Fa = () => "Nie masz jeszcze żadnych zakupów",
-  Va = () => "Вы ещё не покупали Droplets",
-  Ka = () => "Ви ще не купували Droplets",
-  Na = () => "Bạn chưa mua Droplets",
-  Za = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? Ia() : e === "pt" ? Ea() : e === "ch" ? Ga() : e === "de" ? Ra() : e === "es" ? Ma() : e === "fr" ? Ua() : e === "it" ? Ha() : e === "jp" ? Oa() : e === "pl" ? Fa() : e === "ru" ? Va() : e === "uk" ? Ka() : Na()
+  Ga = () => "You haven't bought Droplets yet",
+  Ra = () => "Você ainda não comprou Droplets",
+  Ma = () => "你还没有购买过 Droplets",
+  Ua = () => "Du hast noch keine Droplets gekauft",
+  Ha = () => "Aún no has comprado Droplets",
+  Oa = () => "Vous n’avez pas encore acheté de Droplets",
+  Fa = () => "Non hai ancora acquistato Droplets",
+  Va = () => "まだDropletsを購入していません",
+  Ka = () => "Nie masz jeszcze żadnych zakupów",
+  Na = () => "Вы ещё не покупали Droplets",
+  Za = () => "Ви ще не купували Droplets",
+  Wa = () => "Bạn chưa mua Droplets",
+  Ya = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? Ga() : e === "pt" ? Ra() : e === "ch" ? Ma() : e === "de" ? Ua() : e === "es" ? Ha() : e === "fr" ? Oa() : e === "it" ? Fa() : e === "jp" ? Va() : e === "pl" ? Ka() : e === "ru" ? Na() : e === "uk" ? Za() : Wa()
   },
-  Wa = () => "Your purchases will appear organized by day.",
-  Ya = () => "Suas compras vão aparecer organizadas por dia.",
-  Ja = () => "你的购买记录将按天显示在这里。",
-  Qa = () => "Deine Käufe erscheinen hier nach Tagen geordnet.",
-  Xa = () => "Tus compras aparecerán organizadas por día.",
-  $a = () => "Vos achats apparaîtront organisés par jour.",
-  eo = () => "I tuoi acquisti appariranno organizzati per giorno.",
-  to = () => "購入履歴は日別に表示されます。",
-  ro = () => "Twoje zakupy pojawią się tutaj pogrupowane według dni.",
-  no = () => "Ваши покупки будут показаны здесь по дням.",
-  ao = () => "Ваші покупки з'являться тут, згруповані за днями.",
-  oo = () => "Các giao dịch mua của bạn sẽ hiển thị theo từng ngày.",
-  io = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? Wa() : e === "pt" ? Ya() : e === "ch" ? Ja() : e === "de" ? Qa() : e === "es" ? Xa() : e === "fr" ? $a() : e === "it" ? eo() : e === "jp" ? to() : e === "pl" ? ro() : e === "ru" ? no() : e === "uk" ? ao() : oo()
+  Ja = () => "Your purchases will appear organized by day.",
+  Qa = () => "Suas compras vão aparecer organizadas por dia.",
+  Xa = () => "你的购买记录将按天显示在这里。",
+  $a = () => "Deine Käufe erscheinen hier nach Tagen geordnet.",
+  eo = () => "Tus compras aparecerán organizadas por día.",
+  to = () => "Vos achats apparaîtront organisés par jour.",
+  ro = () => "I tuoi acquisti appariranno organizzati per giorno.",
+  no = () => "購入履歴は日別に表示されます。",
+  ao = () => "Twoje zakupy pojawią się tutaj pogrupowane według dni.",
+  oo = () => "Ваши покупки будут показаны здесь по дням.",
+  io = () => "Ваші покупки з'являться тут, згруповані за днями.",
+  so = () => "Các giao dịch mua của bạn sẽ hiển thị theo từng ngày.",
+  uo = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? Ja() : e === "pt" ? Qa() : e === "ch" ? Xa() : e === "de" ? $a() : e === "es" ? eo() : e === "fr" ? to() : e === "it" ? ro() : e === "jp" ? no() : e === "pl" ? ao() : e === "ru" ? oo() : e === "uk" ? io() : so()
   },
-  so = () => "Nothing pending",
-  uo = () => "Nada em processamento",
-  lo = () => "暂无待处理付款",
-  co = () => "Nichts ausstehend",
-  _o = () => "Nada pendiente",
-  po = () => "Rien en attente",
-  fo = () => "Niente in sospeso",
-  yo = () => "保留中の支払いはありません",
-  ho = () => "Brak oczekujących płatności",
-  mo = () => "Нет ожидающих платежей",
-  vo = () => "Нічого в очікуванні",
-  go = () => "Không có gì đang chờ",
-  bo = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? so() : e === "pt" ? uo() : e === "ch" ? lo() : e === "de" ? co() : e === "es" ? _o() : e === "fr" ? po() : e === "it" ? fo() : e === "jp" ? yo() : e === "pl" ? ho() : e === "ru" ? mo() : e === "uk" ? vo() : go()
+  lo = () => "Nothing pending",
+  co = () => "Nada em processamento",
+  _o = () => "暂无待处理付款",
+  po = () => "Nichts ausstehend",
+  fo = () => "Nada pendiente",
+  yo = () => "Rien en attente",
+  ho = () => "Niente in sospeso",
+  mo = () => "保留中の支払いはありません",
+  vo = () => "Brak oczekujących płatności",
+  go = () => "Нет ожидающих платежей",
+  bo = () => "Нічого в очікуванні",
+  wo = () => "Không có gì đang chờ",
+  xo = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? lo() : e === "pt" ? co() : e === "ch" ? _o() : e === "de" ? po() : e === "es" ? fo() : e === "fr" ? yo() : e === "it" ? ho() : e === "jp" ? mo() : e === "pl" ? vo() : e === "ru" ? go() : e === "uk" ? bo() : wo()
   },
-  wo = () => "When you buy Droplets, the status appears here until confirmation.",
-  xo = () => "Quando você comprar Droplets, o status aparece aqui até a confirmação.",
-  ko = () => "购买 Droplets 后，状态会显示在这里，直到确认完成。",
-  jo = () => "Wenn du Droplets kaufst, erscheint der Status hier bis zur Bestätigung.",
-  qo = () => "Cuando compres Droplets, el estado aparece aquí hasta la confirmación.",
-  Do = () => "Quand vous achetez des Droplets, le statut apparaît ici jusqu’à la confirmation.",
-  Po = () => "Quando acquisti Droplets, lo stato appare qui fino alla conferma.",
-  Co = () => "Dropletsを購入すると、確認が完了するまでステータスがここに表示されます。",
-  So = () => "Gdy kupisz Droplets, status pojawi się tutaj do momentu potwierdzenia.",
-  zo = () => "Когда вы купите Droplets, статус будет отображаться здесь до подтверждения.",
-  Ao = () => "Коли ви купите Droplets, статус відображатиметься тут до підтвердження.",
-  Lo = () => "Khi bạn mua Droplets, trạng thái sẽ hiển thị ở đây cho đến khi được xác nhận.",
-  Bo = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? wo() : e === "pt" ? xo() : e === "ch" ? ko() : e === "de" ? jo() : e === "es" ? qo() : e === "fr" ? Do() : e === "it" ? Po() : e === "jp" ? Co() : e === "pl" ? So() : e === "ru" ? zo() : e === "uk" ? Ao() : Lo()
+  ko = () => "When you buy Droplets, the status appears here until confirmation.",
+  jo = () => "Quando você comprar Droplets, o status aparece aqui até a confirmação.",
+  qo = () => "购买 Droplets 后，状态会显示在这里，直到确认完成。",
+  Do = () => "Wenn du Droplets kaufst, erscheint der Status hier bis zur Bestätigung.",
+  Po = () => "Cuando compres Droplets, el estado aparece aquí hasta la confirmación.",
+  So = () => "Quand vous achetez des Droplets, le statut apparaît ici jusqu’à la confirmation.",
+  Co = () => "Quando acquisti Droplets, lo stato appare qui fino alla conferma.",
+  zo = () => "Dropletsを購入すると、確認が完了するまでステータスがここに表示されます。",
+  Ao = () => "Gdy kupisz Droplets, status pojawi się tutaj do momentu potwierdzenia.",
+  Lo = () => "Когда вы купите Droplets, статус будет отображаться здесь до подтверждения.",
+  Bo = () => "Коли ви купите Droplets, статус відображатиметься тут до підтвердження.",
+  To = () => "Khi bạn mua Droplets, trạng thái sẽ hiển thị ở đây cho đến khi được xác nhận.",
+  Io = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? ko() : e === "pt" ? jo() : e === "ch" ? qo() : e === "de" ? Do() : e === "es" ? Po() : e === "fr" ? So() : e === "it" ? Co() : e === "jp" ? zo() : e === "pl" ? Ao() : e === "ru" ? Lo() : e === "uk" ? Bo() : To()
   },
-  To = () => "No refunds",
-  Io = () => "Sem reembolsos",
-  Eo = () => "暂无退款",
-  Go = () => "Keine Rückerstattungen",
-  Ro = () => "Sin reembolsos",
-  Mo = () => "Aucun remboursement",
-  Uo = () => "Nessun rimborso",
-  Ho = () => "返金はありません",
-  Oo = () => "Brak zwrotów",
-  Fo = () => "Нет возвратов",
-  Vo = () => "Немає повернень",
-  Ko = () => "Không có khoản hoàn tiền",
-  No = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? To() : e === "pt" ? Io() : e === "ch" ? Eo() : e === "de" ? Go() : e === "es" ? Ro() : e === "fr" ? Mo() : e === "it" ? Uo() : e === "jp" ? Ho() : e === "pl" ? Oo() : e === "ru" ? Fo() : e === "uk" ? Vo() : Ko()
+  Eo = () => "No refunds",
+  Go = () => "Sem reembolsos",
+  Ro = () => "暂无退款",
+  Mo = () => "Keine Rückerstattungen",
+  Uo = () => "Sin reembolsos",
+  Ho = () => "Aucun remboursement",
+  Oo = () => "Nessun rimborso",
+  Fo = () => "返金はありません",
+  Vo = () => "Brak zwrotów",
+  Ko = () => "Нет возвратов",
+  No = () => "Немає повернень",
+  Zo = () => "Không có khoản hoàn tiền",
+  Wo = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? Eo() : e === "pt" ? Go() : e === "ch" ? Ro() : e === "de" ? Mo() : e === "es" ? Uo() : e === "fr" ? Ho() : e === "it" ? Oo() : e === "jp" ? Fo() : e === "pl" ? Vo() : e === "ru" ? Ko() : e === "uk" ? No() : Zo()
   },
-  Zo = () => "Refunds approved by Google appear here automatically.",
-  Wo = () => "Reembolsos aprovados pela Google aparecem aqui automaticamente.",
-  Yo = () => "经 Google 批准的退款会自动显示在这里。",
-  Jo = () => "Von Google genehmigte Rückerstattungen erscheinen hier automatisch.",
-  Qo = () => "Los reembolsos aprobados por Google aparecen aquí automáticamente.",
-  Xo = () => "Les remboursements approuvés par Google apparaissent ici automatiquement.",
-  $o = () => "I rimborsi approvati da Google appaiono qui automaticamente.",
-  ei = () => "Googleが承認した返金は自動的にここに表示されます。",
-  ti = () => "Zwroty zatwierdzone przez Google pojawiają się tutaj automatycznie.",
-  ri = () => "Возвраты, одобренные Google, появляются здесь автоматически.",
-  ni = () => "Повернення, схвалені Google, з'являються тут автоматично.",
-  ai = () => "Các khoản hoàn tiền được Google chấp thuận sẽ tự động hiển thị ở đây.",
-  oi = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? Zo() : e === "pt" ? Wo() : e === "ch" ? Yo() : e === "de" ? Jo() : e === "es" ? Qo() : e === "fr" ? Xo() : e === "it" ? $o() : e === "jp" ? ei() : e === "pl" ? ti() : e === "ru" ? ri() : e === "uk" ? ni() : ai()
+  Yo = () => "Refunds approved by Google appear here automatically.",
+  Jo = () => "Reembolsos aprovados pela Google aparecem aqui automaticamente.",
+  Qo = () => "经 Google 批准的退款会自动显示在这里。",
+  Xo = () => "Von Google genehmigte Rückerstattungen erscheinen hier automatisch.",
+  $o = () => "Los reembolsos aprobados por Google aparecen aquí automáticamente.",
+  ei = () => "Les remboursements approuvés par Google apparaissent ici automatiquement.",
+  ti = () => "I rimborsi approvati da Google appaiono qui automaticamente.",
+  ri = () => "Googleが承認した返金は自動的にここに表示されます。",
+  ni = () => "Zwroty zatwierdzone przez Google pojawiają się tutaj automatycznie.",
+  ai = () => "Возвраты, одобренные Google, появляются здесь автоматически.",
+  oi = () => "Повернення, схвалені Google, з'являються тут автоматично.",
+  ii = () => "Các khoản hoàn tiền được Google chấp thuận sẽ tự động hiển thị ở đây.",
+  si = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? Yo() : e === "pt" ? Jo() : e === "ch" ? Qo() : e === "de" ? Xo() : e === "es" ? $o() : e === "fr" ? ei() : e === "it" ? ti() : e === "jp" ? ri() : e === "pl" ? ni() : e === "ru" ? ai() : e === "uk" ? oi() : ii()
   },
-  ii = () => "No declined attempts",
-  si = () => "Nenhuma compra recusada",
-  ui = () => "暂无被拒交易",
-  li = () => "Keine abgelehnten Versuche",
-  ci = () => "Sin intentos rechazados",
-  _i = () => "Aucune tentative refusée",
-  pi = () => "Nessun tentativo rifiutato",
-  di = () => "拒否された支払いはありません",
-  fi = () => "Brak odrzuconych prób",
-  yi = () => "Нет отклонённых попыток",
-  hi = () => "Немає відхилених спроб",
-  mi = () => "Không có giao dịch bị từ chối",
-  vi = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? ii() : e === "pt" ? si() : e === "ch" ? ui() : e === "de" ? li() : e === "es" ? ci() : e === "fr" ? _i() : e === "it" ? pi() : e === "jp" ? di() : e === "pl" ? fi() : e === "ru" ? yi() : e === "uk" ? hi() : mi()
+  ui = () => "No declined attempts",
+  li = () => "Nenhuma compra recusada",
+  ci = () => "暂无被拒交易",
+  _i = () => "Keine abgelehnten Versuche",
+  pi = () => "Sin intentos rechazados",
+  di = () => "Aucune tentative refusée",
+  fi = () => "Nessun tentativo rifiutato",
+  yi = () => "拒否された支払いはありません",
+  hi = () => "Brak odrzuconych prób",
+  mi = () => "Нет отклонённых попыток",
+  vi = () => "Немає відхилених спроб",
+  gi = () => "Không có giao dịch bị từ chối",
+  bi = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? ui() : e === "pt" ? li() : e === "ch" ? ci() : e === "de" ? _i() : e === "es" ? pi() : e === "fr" ? di() : e === "it" ? fi() : e === "jp" ? yi() : e === "pl" ? hi() : e === "ru" ? mi() : e === "uk" ? vi() : gi()
   },
-  gi = () => "Charges declined by Google or your bank are listed here.",
-  bi = () => "Cobranças recusadas pela Google ou pelo banco ficam listadas aqui.",
-  wi = () => "被 Google 或银行拒绝的扣款会列在这里。",
-  xi = () => "Von Google oder deiner Bank abgelehnte Abbuchungen werden hier aufgelistet.",
-  ki = () => "Los cargos rechazados por Google o tu banco se listan aquí.",
-  ji = () => "Les paiements refusés par Google ou votre banque sont listés ici.",
-  qi = () => "Gli addebiti rifiutati da Google o dalla tua banca sono elencati qui.",
-  Di = () => "Googleまたは銀行に拒否された請求がここに表示されます。",
-  Pi = () => "Obciążenia odrzucone przez Google lub Twój bank znajdziesz tutaj.",
-  Ci = () => "Платежи, отклонённые Google или вашим банком, отображаются здесь.",
-  Si = () => "Платежі, відхилені Google або вашим банком, показані тут.",
-  zi = () => "Các khoản thanh toán bị Google hoặc ngân hàng của bạn từ chối sẽ được liệt kê ở đây.",
-  Ai = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? gi() : e === "pt" ? bi() : e === "ch" ? wi() : e === "de" ? xi() : e === "es" ? ki() : e === "fr" ? ji() : e === "it" ? qi() : e === "jp" ? Di() : e === "pl" ? Pi() : e === "ru" ? Ci() : e === "uk" ? Si() : zi()
+  wi = () => "Charges declined by Google or your bank are listed here.",
+  xi = () => "Cobranças recusadas pela Google ou pelo banco ficam listadas aqui.",
+  ki = () => "被 Google 或银行拒绝的扣款会列在这里。",
+  ji = () => "Von Google oder deiner Bank abgelehnte Abbuchungen werden hier aufgelistet.",
+  qi = () => "Los cargos rechazados por Google o tu banco se listan aquí.",
+  Di = () => "Les paiements refusés par Google ou votre banque sont listés ici.",
+  Pi = () => "Gli addebiti rifiutati da Google o dalla tua banca sono elencati qui.",
+  Si = () => "Googleまたは銀行に拒否された請求がここに表示されます。",
+  Ci = () => "Obciążenia odrzucone przez Google lub Twój bank znajdziesz tutaj.",
+  zi = () => "Платежи, отклонённые Google или вашим банком, отображаются здесь.",
+  Ai = () => "Платежі, відхилені Google або вашим банком, показані тут.",
+  Li = () => "Các khoản thanh toán bị Google hoặc ngân hàng của bạn từ chối sẽ được liệt kê ở đây.",
+  Bi = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? wi() : e === "pt" ? xi() : e === "ch" ? ki() : e === "de" ? ji() : e === "es" ? qi() : e === "fr" ? Di() : e === "it" ? Pi() : e === "jp" ? Si() : e === "pl" ? Ci() : e === "ru" ? zi() : e === "uk" ? Ai() : Li()
   },
-  Li = () => "Google Play",
-  Bi = () => "Google Play",
   Ti = () => "Google Play",
   Ii = () => "Google Play",
   Ei = () => "Google Play",
@@ -396,510 +394,512 @@ const Mr = () => "Balance",
   Hi = () => "Google Play",
   Oi = () => "Google Play",
   Fi = () => "Google Play",
-  Vi = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? Li() : e === "pt" ? Bi() : e === "ch" ? Ti() : e === "de" ? Ii() : e === "es" ? Ei() : e === "fr" ? Gi() : e === "it" ? Ri() : e === "jp" ? Mi() : e === "pl" ? Ui() : e === "ru" ? Hi() : e === "uk" ? Oi() : Fi()
+  Vi = () => "Google Play",
+  Ki = () => "Google Play",
+  Ni = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? Ti() : e === "pt" ? Ii() : e === "ch" ? Ei() : e === "de" ? Gi() : e === "es" ? Ri() : e === "fr" ? Mi() : e === "it" ? Ui() : e === "jp" ? Hi() : e === "pl" ? Oi() : e === "ru" ? Fi() : e === "uk" ? Vi() : Ki()
   },
-  Ki = () => "today",
-  Ni = () => "hoje",
-  Zi = () => "今天",
-  Wi = () => "heute",
-  Yi = () => "hoy",
-  Ji = () => "aujourd’hui",
-  Qi = () => "oggi",
-  Xi = () => "今日",
-  $i = () => "dzisiaj",
-  es = () => "сегодня",
-  ts = () => "сьогодні",
-  rs = () => "hôm nay",
-  ns = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? Ki() : e === "pt" ? Ni() : e === "ch" ? Zi() : e === "de" ? Wi() : e === "es" ? Yi() : e === "fr" ? Ji() : e === "it" ? Qi() : e === "jp" ? Xi() : e === "pl" ? $i() : e === "ru" ? es() : e === "uk" ? ts() : rs()
+  Zi = () => "today",
+  Wi = () => "hoje",
+  Yi = () => "今天",
+  Ji = () => "heute",
+  Qi = () => "hoy",
+  Xi = () => "aujourd’hui",
+  $i = () => "oggi",
+  es = () => "今日",
+  ts = () => "dzisiaj",
+  rs = () => "сегодня",
+  ns = () => "сьогодні",
+  as = () => "hôm nay",
+  os = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? Zi() : e === "pt" ? Wi() : e === "ch" ? Yi() : e === "de" ? Ji() : e === "es" ? Qi() : e === "fr" ? Xi() : e === "it" ? $i() : e === "jp" ? es() : e === "pl" ? ts() : e === "ru" ? rs() : e === "uk" ? ns() : as()
   },
-  as = () => "yesterday",
-  os = () => "ontem",
-  is = () => "昨天",
-  ss = () => "gestern",
-  us = () => "ayer",
-  ls = () => "hier",
-  cs = () => "ieri",
-  _s = () => "昨日",
-  ps = () => "wczoraj",
-  ds = () => "вчера",
-  fs = () => "вчора",
-  ys = () => "hôm qua",
-  hs = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? as() : e === "pt" ? os() : e === "ch" ? is() : e === "de" ? ss() : e === "es" ? us() : e === "fr" ? ls() : e === "it" ? cs() : e === "jp" ? _s() : e === "pl" ? ps() : e === "ru" ? ds() : e === "uk" ? fs() : ys()
+  is = () => "yesterday",
+  ss = () => "ontem",
+  us = () => "昨天",
+  ls = () => "gestern",
+  cs = () => "ayer",
+  _s = () => "hier",
+  ps = () => "ieri",
+  ds = () => "昨日",
+  fs = () => "wczoraj",
+  ys = () => "вчера",
+  hs = () => "вчора",
+  ms = () => "hôm qua",
+  vs = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? is() : e === "pt" ? ss() : e === "ch" ? us() : e === "de" ? ls() : e === "es" ? cs() : e === "fr" ? _s() : e === "it" ? ps() : e === "jp" ? ds() : e === "pl" ? fs() : e === "ru" ? ys() : e === "uk" ? hs() : ms()
   },
-  ms = () => "Paid",
-  vs = () => "Pago",
-  gs = () => "已支付",
-  bs = () => "Bezahlt",
-  ws = () => "Pagado",
-  xs = () => "Payé",
-  ks = () => "Pagato",
-  js = () => "支払い済み",
-  qs = () => "Zapłacone",
-  Ds = () => "Оплачено",
-  Ps = () => "Оплачено",
-  Cs = () => "Đã thanh toán",
-  Ss = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? ms() : e === "pt" ? vs() : e === "ch" ? gs() : e === "de" ? bs() : e === "es" ? ws() : e === "fr" ? xs() : e === "it" ? ks() : e === "jp" ? js() : e === "pl" ? qs() : e === "ru" ? Ds() : e === "uk" ? Ps() : Cs()
+  gs = () => "Paid",
+  bs = () => "Pago",
+  ws = () => "已支付",
+  xs = () => "Bezahlt",
+  ks = () => "Pagado",
+  js = () => "Payé",
+  qs = () => "Pagato",
+  Ds = () => "支払い済み",
+  Ps = () => "Zapłacone",
+  Ss = () => "Оплачено",
+  Cs = () => "Оплачено",
+  zs = () => "Đã thanh toán",
+  As = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? gs() : e === "pt" ? bs() : e === "ch" ? ws() : e === "de" ? xs() : e === "es" ? ks() : e === "fr" ? js() : e === "it" ? qs() : e === "jp" ? Ds() : e === "pl" ? Ps() : e === "ru" ? Ss() : e === "uk" ? Cs() : zs()
   },
-  zs = () => "Pending",
-  As = () => "Processando",
-  Ls = () => "处理中",
-  Bs = () => "Ausstehend",
-  Ts = () => "Pendiente",
-  Is = () => "En attente",
-  Es = () => "In sospeso",
-  Gs = () => "保留中",
-  Rs = () => "Oczekujące",
-  Ms = () => "В обработке",
-  Us = () => "В очікуванні",
-  Hs = () => "Đang chờ",
-  Os = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? zs() : e === "pt" ? As() : e === "ch" ? Ls() : e === "de" ? Bs() : e === "es" ? Ts() : e === "fr" ? Is() : e === "it" ? Es() : e === "jp" ? Gs() : e === "pl" ? Rs() : e === "ru" ? Ms() : e === "uk" ? Us() : Hs()
+  Ls = () => "Pending",
+  Bs = () => "Processando",
+  Ts = () => "处理中",
+  Is = () => "Ausstehend",
+  Es = () => "Pendiente",
+  Gs = () => "En attente",
+  Rs = () => "In sospeso",
+  Ms = () => "保留中",
+  Us = () => "Oczekujące",
+  Hs = () => "В обработке",
+  Os = () => "В очікуванні",
+  Fs = () => "Đang chờ",
+  Vs = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? Ls() : e === "pt" ? Bs() : e === "ch" ? Ts() : e === "de" ? Is() : e === "es" ? Es() : e === "fr" ? Gs() : e === "it" ? Rs() : e === "jp" ? Ms() : e === "pl" ? Us() : e === "ru" ? Hs() : e === "uk" ? Os() : Fs()
   },
-  Fs = () => "Refunds",
-  Vs = () => "Reembolsos",
-  Ks = () => "退款",
-  Ns = () => "Rückerstattungen",
-  Zs = () => "Reembolsos",
-  Ws = () => "Remboursements",
-  Ys = () => "Rimborsi",
-  Js = () => "返金",
-  Qs = () => "Zwroty",
-  Xs = () => "Возвраты",
-  $s = () => "Повернення",
-  eu = () => "Hoàn tiền",
-  tu = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? Fs() : e === "pt" ? Vs() : e === "ch" ? Ks() : e === "de" ? Ns() : e === "es" ? Zs() : e === "fr" ? Ws() : e === "it" ? Ys() : e === "jp" ? Js() : e === "pl" ? Qs() : e === "ru" ? Xs() : e === "uk" ? $s() : eu()
+  Ks = () => "Refunds",
+  Ns = () => "Reembolsos",
+  Zs = () => "退款",
+  Ws = () => "Rückerstattungen",
+  Ys = () => "Reembolsos",
+  Js = () => "Remboursements",
+  Qs = () => "Rimborsi",
+  Xs = () => "返金",
+  $s = () => "Zwroty",
+  eu = () => "Возвраты",
+  tu = () => "Повернення",
+  ru = () => "Hoàn tiền",
+  nu = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? Ks() : e === "pt" ? Ns() : e === "ch" ? Zs() : e === "de" ? Ws() : e === "es" ? Ys() : e === "fr" ? Js() : e === "it" ? Qs() : e === "jp" ? Xs() : e === "pl" ? $s() : e === "ru" ? eu() : e === "uk" ? tu() : ru()
   },
-  ru = () => "Declined",
-  nu = () => "Recusadas",
-  au = () => "已拒绝",
-  ou = () => "Abgelehnt",
-  iu = () => "Rechazados",
-  su = () => "Refusés",
-  uu = () => "Rifiutati",
-  lu = () => "拒否",
-  cu = () => "Odrzucone",
-  _u = () => "Отклонённые",
-  pu = () => "Відхилені",
-  du = () => "Bị từ chối",
-  fu = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? ru() : e === "pt" ? nu() : e === "ch" ? au() : e === "de" ? ou() : e === "es" ? iu() : e === "fr" ? su() : e === "it" ? uu() : e === "jp" ? lu() : e === "pl" ? cu() : e === "ru" ? _u() : e === "uk" ? pu() : du()
+  au = () => "Declined",
+  ou = () => "Recusadas",
+  iu = () => "已拒绝",
+  su = () => "Abgelehnt",
+  uu = () => "Rechazados",
+  lu = () => "Refusés",
+  cu = () => "Rifiutati",
+  _u = () => "拒否",
+  pu = () => "Odrzucone",
+  du = () => "Отклонённые",
+  fu = () => "Відхилені",
+  yu = () => "Bị từ chối",
+  hu = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? au() : e === "pt" ? ou() : e === "ch" ? iu() : e === "de" ? su() : e === "es" ? uu() : e === "fr" ? lu() : e === "it" ? cu() : e === "jp" ? _u() : e === "pl" ? pu() : e === "ru" ? du() : e === "uk" ? fu() : yu()
   },
-  yu = () => "Pending total",
-  hu = () => "Total pendente",
-  mu = () => "待处理总额",
-  vu = () => "Ausstehende Summe",
-  gu = () => "Total pendiente",
-  bu = () => "Total en attente",
-  wu = () => "Totale in sospeso",
-  xu = () => "保留中の合計",
-  ku = () => "Suma oczekujących",
-  ju = () => "Сумма в ожидании",
-  qu = () => "Сума в очікуванні",
-  Du = () => "Tổng đang chờ",
-  Pu = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? yu() : e === "pt" ? hu() : e === "ch" ? mu() : e === "de" ? vu() : e === "es" ? gu() : e === "fr" ? bu() : e === "it" ? wu() : e === "jp" ? xu() : e === "pl" ? ku() : e === "ru" ? ju() : e === "uk" ? qu() : Du()
+  mu = () => "Pending total",
+  vu = () => "Total pendente",
+  gu = () => "待处理总额",
+  bu = () => "Ausstehende Summe",
+  wu = () => "Total pendiente",
+  xu = () => "Total en attente",
+  ku = () => "Totale in sospeso",
+  ju = () => "保留中の合計",
+  qu = () => "Suma oczekujących",
+  Du = () => "Сумма в ожидании",
+  Pu = () => "Сума в очікуванні",
+  Su = () => "Tổng đang chờ",
+  Cu = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? mu() : e === "pt" ? vu() : e === "ch" ? gu() : e === "de" ? bu() : e === "es" ? wu() : e === "fr" ? xu() : e === "it" ? ku() : e === "jp" ? ju() : e === "pl" ? qu() : e === "ru" ? Du() : e === "uk" ? Pu() : Su()
   },
-  Cu = () => "Verify again",
-  Su = () => "Verificar novamente",
-  zu = () => "再次验证",
-  Au = () => "Erneut prüfen",
-  Lu = () => "Verificar de nuevo",
-  Bu = () => "Vérifier à nouveau",
-  Tu = () => "Verifica di nuovo",
-  Iu = () => "再確認",
-  Eu = () => "Zweryfikuj ponownie",
-  Gu = () => "Проверить снова",
-  Ru = () => "Перевірити ще раз",
-  Mu = () => "Xác minh lại",
-  Zt = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? Cu() : e === "pt" ? Su() : e === "ch" ? zu() : e === "de" ? Au() : e === "es" ? Lu() : e === "fr" ? Bu() : e === "it" ? Tu() : e === "jp" ? Iu() : e === "pl" ? Eu() : e === "ru" ? Gu() : e === "uk" ? Ru() : Mu()
+  zu = () => "Verify again",
+  Au = () => "Verificar novamente",
+  Lu = () => "再次验证",
+  Bu = () => "Erneut prüfen",
+  Tu = () => "Verificar de nuevo",
+  Iu = () => "Vérifier à nouveau",
+  Eu = () => "Verifica di nuovo",
+  Gu = () => "再確認",
+  Ru = () => "Zweryfikuj ponownie",
+  Mu = () => "Проверить снова",
+  Uu = () => "Перевірити ще раз",
+  Hu = () => "Xác minh lại",
+  Yt = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? zu() : e === "pt" ? Au() : e === "ch" ? Lu() : e === "de" ? Bu() : e === "es" ? Tu() : e === "fr" ? Iu() : e === "it" ? Eu() : e === "jp" ? Gu() : e === "pl" ? Ru() : e === "ru" ? Mu() : e === "uk" ? Uu() : Hu()
   },
-  Uu = () => "Purchase History",
-  Hu = () => "Histórico de Compras",
-  Ou = () => "购买记录",
-  Fu = () => "Kaufverlauf",
-  Vu = () => "Historial de compras",
-  Ku = () => "Historique des achats",
-  Nu = () => "Cronologia acquisti",
-  Zu = () => "購入履歴",
-  Wu = () => "Historia zakupów",
-  Yu = () => "История покупок",
-  Ju = () => "Історія покупок",
-  Qu = () => "Lịch sử mua hàng",
-  Xu = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? Uu() : e === "pt" ? Hu() : e === "ch" ? Ou() : e === "de" ? Fu() : e === "es" ? Vu() : e === "fr" ? Ku() : e === "it" ? Nu() : e === "jp" ? Zu() : e === "pl" ? Wu() : e === "ru" ? Yu() : e === "uk" ? Ju() : Qu()
+  Ou = () => "Purchase History",
+  Fu = () => "Histórico de Compras",
+  Vu = () => "购买记录",
+  Ku = () => "Kaufverlauf",
+  Nu = () => "Historial de compras",
+  Zu = () => "Historique des achats",
+  Wu = () => "Cronologia acquisti",
+  Yu = () => "購入履歴",
+  Ju = () => "Historia zakupów",
+  Qu = () => "История покупок",
+  Xu = () => "Історія покупок",
+  $u = () => "Lịch sử mua hàng",
+  el = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? Ou() : e === "pt" ? Fu() : e === "ch" ? Vu() : e === "de" ? Ku() : e === "es" ? Nu() : e === "fr" ? Zu() : e === "it" ? Wu() : e === "jp" ? Yu() : e === "pl" ? Ju() : e === "ru" ? Qu() : e === "uk" ? Xu() : $u()
   },
-  $u = n => `Total: ${n.count} Droplets`,
-  el = n => `Total: ${n.count} Droplets`,
-  tl = n => `总计：${n.count} Droplets`,
-  rl = n => `Gesamt: ${n.count} Droplets`,
-  nl = n => `Total: ${n.count} Droplets`,
-  al = n => `Total : ${n.count} Droplets`,
-  ol = n => `Totale: ${n.count} Droplets`,
-  il = n => `合計: ${n.count} Droplets`,
-  sl = n => `Łącznie: ${n.count} Droplets`,
-  ul = n => `Итого: ${n.count} Droplets`,
-  ll = n => `Разом: ${n.count} Droplets`,
-  cl = n => `Tổng cộng: ${n.count} Droplets`,
-  _l = (n, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? $u(n) : e === "pt" ? el(n) : e === "ch" ? tl(n) : e === "de" ? rl(n) : e === "es" ? nl(n) : e === "fr" ? al(n) : e === "it" ? ol(n) : e === "jp" ? il(n) : e === "pl" ? sl(n) : e === "ru" ? ul(n) : e === "uk" ? ll(n) : cl(n)
+  tl = n => `Total: ${n.count} Droplets`,
+  rl = n => `Total: ${n.count} Droplets`,
+  nl = n => `总计：${n.count} Droplets`,
+  al = n => `Gesamt: ${n.count} Droplets`,
+  ol = n => `Total: ${n.count} Droplets`,
+  il = n => `Total : ${n.count} Droplets`,
+  sl = n => `Totale: ${n.count} Droplets`,
+  ul = n => `合計: ${n.count} Droplets`,
+  ll = n => `Łącznie: ${n.count} Droplets`,
+  cl = n => `Итого: ${n.count} Droplets`,
+  _l = n => `Разом: ${n.count} Droplets`,
+  pl = n => `Tổng cộng: ${n.count} Droplets`,
+  dl = (n, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? tl(n) : e === "pt" ? rl(n) : e === "ch" ? nl(n) : e === "de" ? al(n) : e === "es" ? ol(n) : e === "fr" ? il(n) : e === "it" ? sl(n) : e === "jp" ? ul(n) : e === "pl" ? ll(n) : e === "ru" ? cl(n) : e === "uk" ? _l(n) : pl(n)
   },
-  pl = () => "Purchase history",
-  dl = () => "Histórico de compras",
-  fl = () => "购买记录",
-  yl = () => "Kaufverlauf",
-  hl = () => "Historial de compras",
-  ml = () => "Historique des achats",
-  vl = () => "Cronologia acquisti",
-  gl = () => "購入履歴",
-  bl = () => "Historia zakupów",
-  wl = () => "История покупок",
-  xl = () => "Історія покупок",
-  kl = () => "Lịch sử mua hàng",
-  Xt = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? pl() : e === "pt" ? dl() : e === "ch" ? fl() : e === "de" ? yl() : e === "es" ? hl() : e === "fr" ? ml() : e === "it" ? vl() : e === "jp" ? gl() : e === "pl" ? bl() : e === "ru" ? wl() : e === "uk" ? xl() : kl()
+  fl = () => "Purchase history",
+  yl = () => "Histórico de compras",
+  hl = () => "购买记录",
+  ml = () => "Kaufverlauf",
+  vl = () => "Historial de compras",
+  gl = () => "Historique des achats",
+  bl = () => "Cronologia acquisti",
+  wl = () => "購入履歴",
+  xl = () => "Historia zakupów",
+  kl = () => "История покупок",
+  jl = () => "Історія покупок",
+  ql = () => "Lịch sử mua hàng",
+  er = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? fl() : e === "pt" ? yl() : e === "ch" ? hl() : e === "de" ? ml() : e === "es" ? vl() : e === "fr" ? gl() : e === "it" ? bl() : e === "jp" ? wl() : e === "pl" ? xl() : e === "ru" ? kl() : e === "uk" ? jl() : ql()
   },
-  jl = () => "Your payment was received but is still being verified. This usually takes a few seconds, but can take a few minutes.",
-  ql = () => "Seu pagamento está sendo processado. Normalmente leva alguns segundos, mas pode demorar alguns minutos.",
-  Dl = () => "你的付款已收到，但仍在验证中。通常只需几秒钟，但也可能需要几分钟。",
-  Pl = () => "Deine Zahlung ist eingegangen, wird aber noch überprüft. Das dauert normalerweise ein paar Sekunden, kann aber einige Minuten in Anspruch nehmen.",
-  Cl = () => "Tu pago fue recibido pero aún se está verificando. Esto suele tardar unos segundos, pero puede tomar unos minutos.",
-  Sl = () => "Votre paiement a bien été reçu mais est encore en cours de vérification. Cela prend généralement quelques secondes, mais peut durer quelques minutes.",
-  zl = () => "Il tuo pagamento è stato ricevuto ma è ancora in fase di verifica. Di solito richiede pochi secondi, ma può richiedere qualche minuto.",
-  Al = () => "お支払いは受け付けられましたが、まだ確認中です。通常は数秒で完了しますが、数分かかる場合があります。",
-  Ll = () => "Twoja płatność dotarła, ale wciąż jest weryfikowana. Zwykle zajmuje to kilka sekund, ale może potrwać kilka minut.",
-  Bl = () => "Ваш платёж получен, но ещё проверяется. Обычно это занимает несколько секунд, но может растянуться на несколько минут.",
-  Tl = () => "Ваш платіж отримано, але він ще перевіряється. Зазвичай це триває кілька секунд, але може зайняти кілька хвилин.",
-  Il = () => "Thanh toán của bạn đã được ghi nhận nhưng vẫn đang được xác minh. Quá trình này thường mất vài giây, nhưng có thể kéo dài vài phút.",
-  El = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? jl() : e === "pt" ? ql() : e === "ch" ? Dl() : e === "de" ? Pl() : e === "es" ? Cl() : e === "fr" ? Sl() : e === "it" ? zl() : e === "jp" ? Al() : e === "pl" ? Ll() : e === "ru" ? Bl() : e === "uk" ? Tl() : Il()
+  Dl = () => "Your payment was received but is still being verified. This usually takes a few seconds, but can take a few minutes.",
+  Pl = () => "Seu pagamento está sendo processado. Normalmente leva alguns segundos, mas pode demorar alguns minutos.",
+  Sl = () => "你的付款已收到，但仍在验证中。通常只需几秒钟，但也可能需要几分钟。",
+  Cl = () => "Deine Zahlung ist eingegangen, wird aber noch überprüft. Das dauert normalerweise ein paar Sekunden, kann aber einige Minuten in Anspruch nehmen.",
+  zl = () => "Tu pago fue recibido pero aún se está verificando. Esto suele tardar unos segundos, pero puede tomar unos minutos.",
+  Al = () => "Votre paiement a bien été reçu mais est encore en cours de vérification. Cela prend généralement quelques secondes, mais peut durer quelques minutes.",
+  Ll = () => "Il tuo pagamento è stato ricevuto ma è ancora in fase di verifica. Di solito richiede pochi secondi, ma può richiedere qualche minuto.",
+  Bl = () => "お支払いは受け付けられましたが、まだ確認中です。通常は数秒で完了しますが、数分かかる場合があります。",
+  Tl = () => "Twoja płatność dotarła, ale wciąż jest weryfikowana. Zwykle zajmuje to kilka sekund, ale może potrwać kilka minut.",
+  Il = () => "Ваш платёж получен, но ещё проверяется. Обычно это занимает несколько секунд, но может растянуться на несколько минут.",
+  El = () => "Ваш платіж отримано, але він ще перевіряється. Зазвичай це триває кілька секунд, але може зайняти кілька хвилин.",
+  Gl = () => "Thanh toán của bạn đã được ghi nhận nhưng vẫn đang được xác minh. Quá trình này thường mất vài giây, nhưng có thể kéo dài vài phút.",
+  Rl = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? Dl() : e === "pt" ? Pl() : e === "ch" ? Sl() : e === "de" ? Cl() : e === "es" ? zl() : e === "fr" ? Al() : e === "it" ? Ll() : e === "jp" ? Bl() : e === "pl" ? Tl() : e === "ru" ? Il() : e === "uk" ? El() : Gl()
   },
-  Gl = () => "Once approved, your droplets will be credited automatically. You can close this window — credit will arrive even if you leave.",
-  Rl = () => "Assim que aprovado, seus droplets serão creditados automaticamente. Você pode fechar esta janela — o crédito chega mesmo se você sair.",
-  Ml = () => "审核通过后，你的 Droplets 将自动到账。你可以关闭此窗口——即使离开，款项也会到账。",
-  Ul = () => "Sobald die Zahlung genehmigt ist, werden deine Droplets automatisch gutgeschrieben. Du kannst dieses Fenster schließen — die Gutschrift kommt auch an, wenn du gehst.",
-  Hl = () => "Una vez aprobado, tus Droplets se acreditarán automáticamente. Puedes cerrar esta ventana — el crédito llegará aunque salgas.",
-  Ol = () => "Une fois approuvé, vos Droplets seront crédités automatiquement. Vous pouvez fermer cette fenêtre — le crédit arrivera même si vous partez.",
-  Fl = () => "Una volta approvato, i tuoi Droplets verranno accreditati automaticamente. Puoi chiudere questa finestra — l'accredito arriverà anche se esci.",
-  Vl = () => "承認されると、Dropletsは自動的に付与されます。このウィンドウを閉じてもかまいません。離れていても付与されます。",
-  Kl = () => "Po zatwierdzeniu Twoje Droplets zostaną doliczone automatycznie. Możesz zamknąć to okno — środki dotrą, nawet jeśli wyjdziesz.",
-  Nl = () => "После одобрения ваши Droplets будут начислены автоматически. Можете закрыть это окно — начисление придёт, даже если вы уйдёте.",
-  Zl = () => "Після схвалення ваші Droplets буде нараховано автоматично. Можете закрити це вікно — нарахування надійде, навіть якщо ви вийдете.",
-  Wl = () => "Sau khi được chấp thuận, Droplets của bạn sẽ tự động được cộng. Bạn có thể đóng cửa sổ này — Droplets vẫn sẽ được cộng kể cả khi bạn rời đi.",
-  Yl = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? Gl() : e === "pt" ? Rl() : e === "ch" ? Ml() : e === "de" ? Ul() : e === "es" ? Hl() : e === "fr" ? Ol() : e === "it" ? Fl() : e === "jp" ? Vl() : e === "pl" ? Kl() : e === "ru" ? Nl() : e === "uk" ? Zl() : Wl()
+  Ml = () => "Once approved, your droplets will be credited automatically. You can close this window — credit will arrive even if you leave.",
+  Ul = () => "Assim que aprovado, seus droplets serão creditados automaticamente. Você pode fechar esta janela — o crédito chega mesmo se você sair.",
+  Hl = () => "审核通过后，你的 Droplets 将自动到账。你可以关闭此窗口——即使离开，款项也会到账。",
+  Ol = () => "Sobald die Zahlung genehmigt ist, werden deine Droplets automatisch gutgeschrieben. Du kannst dieses Fenster schließen — die Gutschrift kommt auch an, wenn du gehst.",
+  Fl = () => "Una vez aprobado, tus Droplets se acreditarán automáticamente. Puedes cerrar esta ventana — el crédito llegará aunque salgas.",
+  Vl = () => "Une fois approuvé, vos Droplets seront crédités automatiquement. Vous pouvez fermer cette fenêtre — le crédit arrivera même si vous partez.",
+  Kl = () => "Una volta approvato, i tuoi Droplets verranno accreditati automaticamente. Puoi chiudere questa finestra — l'accredito arriverà anche se esci.",
+  Nl = () => "承認されると、Dropletsは自動的に付与されます。このウィンドウを閉じてもかまいません。離れていても付与されます。",
+  Zl = () => "Po zatwierdzeniu Twoje Droplets zostaną doliczone automatycznie. Możesz zamknąć to okno — środki dotrą, nawet jeśli wyjdziesz.",
+  Wl = () => "После одобрения ваши Droplets будут начислены автоматически. Можете закрыть это окно — начисление придёт, даже если вы уйдёте.",
+  Yl = () => "Після схвалення ваші Droplets буде нараховано автоматично. Можете закрити це вікно — нарахування надійде, навіть якщо ви вийдете.",
+  Jl = () => "Sau khi được chấp thuận, Droplets của bạn sẽ tự động được cộng. Bạn có thể đóng cửa sổ này — Droplets vẫn sẽ được cộng kể cả khi bạn rời đi.",
+  Ql = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? Ml() : e === "pt" ? Ul() : e === "ch" ? Hl() : e === "de" ? Ol() : e === "es" ? Fl() : e === "fr" ? Vl() : e === "it" ? Kl() : e === "jp" ? Nl() : e === "pl" ? Zl() : e === "ru" ? Wl() : e === "uk" ? Yl() : Jl()
   },
-  Jl = () => "Payment pending",
-  Ql = () => "Pagamento em processamento",
-  Xl = () => "付款处理中",
-  $l = () => "Zahlung ausstehend",
-  ec = () => "Pago pendiente",
-  tc = () => "Paiement en attente",
-  rc = () => "Pagamento in sospeso",
-  nc = () => "支払い保留中",
-  ac = () => "Płatność oczekująca",
-  oc = () => "Платёж в обработке",
-  ic = () => "Платіж в обробці",
-  sc = () => "Thanh toán đang chờ",
-  uc = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? Jl() : e === "pt" ? Ql() : e === "ch" ? Xl() : e === "de" ? $l() : e === "es" ? ec() : e === "fr" ? tc() : e === "it" ? rc() : e === "jp" ? nc() : e === "pl" ? ac() : e === "ru" ? oc() : e === "uk" ? ic() : sc()
+  Xl = () => "Payment pending",
+  $l = () => "Pagamento em processamento",
+  ec = () => "付款处理中",
+  tc = () => "Zahlung ausstehend",
+  rc = () => "Pago pendiente",
+  nc = () => "Paiement en attente",
+  ac = () => "Pagamento in sospeso",
+  oc = () => "支払い保留中",
+  ic = () => "Płatność oczekująca",
+  sc = () => "Платёж в обработке",
+  uc = () => "Платіж в обробці",
+  lc = () => "Thanh toán đang chờ",
+  cc = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? Xl() : e === "pt" ? $l() : e === "ch" ? ec() : e === "de" ? tc() : e === "es" ? rc() : e === "fr" ? nc() : e === "it" ? ac() : e === "jp" ? oc() : e === "pl" ? ic() : e === "ru" ? sc() : e === "uk" ? uc() : lc()
   },
-  lc = () => "Purchases unavailable",
-  cc = () => "Compras indisponíveis",
-  _c = () => "暂时无法购买",
-  pc = () => "Käufe nicht verfügbar",
-  dc = () => "Compras no disponibles",
-  fc = () => "Achats indisponibles",
-  yc = () => "Acquisti non disponibili",
-  hc = () => "購入できません",
-  mc = () => "Zakupy niedostępne",
-  vc = () => "Покупки недоступны",
-  gc = () => "Покупки недоступні",
-  bc = () => "Không thể mua hàng",
-  wc = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? lc() : e === "pt" ? cc() : e === "ch" ? _c() : e === "de" ? pc() : e === "es" ? dc() : e === "fr" ? fc() : e === "it" ? yc() : e === "jp" ? hc() : e === "pl" ? mc() : e === "ru" ? vc() : e === "uk" ? gc() : bc()
+  _c = () => "Purchases unavailable",
+  pc = () => "Compras indisponíveis",
+  dc = () => "暂时无法购买",
+  fc = () => "Käufe nicht verfügbar",
+  yc = () => "Compras no disponibles",
+  hc = () => "Achats indisponibles",
+  mc = () => "Acquisti non disponibili",
+  vc = () => "購入できません",
+  gc = () => "Zakupy niedostępne",
+  bc = () => "Покупки недоступны",
+  wc = () => "Покупки недоступні",
+  xc = () => "Không thể mua hàng",
+  kc = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? _c() : e === "pt" ? pc() : e === "ch" ? dc() : e === "de" ? fc() : e === "es" ? yc() : e === "fr" ? hc() : e === "it" ? mc() : e === "jp" ? vc() : e === "pl" ? gc() : e === "ru" ? bc() : e === "uk" ? wc() : xc()
   },
-  xc = () => "Hang tight — we're confirming your payment. This usually takes just a few seconds.",
-  kc = () => "Aguarde um instante, seu pagamento está sendo processado. Isso normalmente leva alguns segundos.",
-  jc = () => "请稍候，我们正在确认您的付款。这通常只需几秒钟。",
-  qc = () => "Einen Moment — wir bestätigen deine Zahlung. Das dauert normalerweise nur wenige Sekunden.",
-  Dc = () => "Espera un momento, estamos confirmando tu pago. Esto suele tardar solo unos segundos.",
-  Pc = () => "Un instant — nous confirmons votre paiement. Cela ne prend généralement que quelques secondes.",
-  Cc = () => "Attendi un attimo, stiamo confermando il tuo pagamento. Di solito richiede solo pochi secondi.",
-  Sc = () => "少々お待ちください。お支払いを確認しています。通常は数秒で完了します。",
-  zc = () => "Chwila — potwierdzamy Twoją płatność. Zwykle zajmuje to tylko kilka sekund.",
-  Ac = () => "Подождите — мы подтверждаем ваш платёж. Обычно это занимает всего несколько секунд.",
-  Lc = () => "Зачекайте — ми підтверджуємо ваш платіж. Зазвичай це займає лише кілька секунд.",
-  Bc = () => "Vui lòng chờ — chúng tôi đang xác nhận thanh toán của bạn. Việc này thường chỉ mất vài giây.",
-  Tc = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? xc() : e === "pt" ? kc() : e === "ch" ? jc() : e === "de" ? qc() : e === "es" ? Dc() : e === "fr" ? Pc() : e === "it" ? Cc() : e === "jp" ? Sc() : e === "pl" ? zc() : e === "ru" ? Ac() : e === "uk" ? Lc() : Bc()
+  jc = () => "Hang tight — we're confirming your payment. This usually takes just a few seconds.",
+  qc = () => "Aguarde um instante, seu pagamento está sendo processado. Isso normalmente leva alguns segundos.",
+  Dc = () => "请稍候，我们正在确认您的付款。这通常只需几秒钟。",
+  Pc = () => "Einen Moment — wir bestätigen deine Zahlung. Das dauert normalerweise nur wenige Sekunden.",
+  Sc = () => "Espera un momento, estamos confirmando tu pago. Esto suele tardar solo unos segundos.",
+  Cc = () => "Un instant — nous confirmons votre paiement. Cela ne prend généralement que quelques secondes.",
+  zc = () => "Attendi un attimo, stiamo confermando il tuo pagamento. Di solito richiede solo pochi secondi.",
+  Ac = () => "少々お待ちください。お支払いを確認しています。通常は数秒で完了します。",
+  Lc = () => "Chwila — potwierdzamy Twoją płatność. Zwykle zajmuje to tylko kilka sekund.",
+  Bc = () => "Подождите — мы подтверждаем ваш платёж. Обычно это занимает всего несколько секунд.",
+  Tc = () => "Зачекайте — ми підтверджуємо ваш платіж. Зазвичай це займає лише кілька секунд.",
+  Ic = () => "Vui lòng chờ — chúng tôi đang xác nhận thanh toán của bạn. Việc này thường chỉ mất vài giây.",
+  Ec = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? jc() : e === "pt" ? qc() : e === "ch" ? Dc() : e === "de" ? Pc() : e === "es" ? Sc() : e === "fr" ? Cc() : e === "it" ? zc() : e === "jp" ? Ac() : e === "pl" ? Lc() : e === "ru" ? Bc() : e === "uk" ? Tc() : Ic()
   },
-  Ic = () => "Processing payment",
-  Ec = () => "Processando pagamento",
-  Gc = () => "正在处理付款",
-  Rc = () => "Zahlung wird verarbeitet",
-  Mc = () => "Procesando el pago",
-  Uc = () => "Traitement du paiement",
-  Hc = () => "Elaborazione del pagamento",
-  Oc = () => "支払いを処理中",
-  Fc = () => "Przetwarzanie płatności",
-  Vc = () => "Обработка платежа",
-  Kc = () => "Обробка платежу",
-  Nc = () => "Đang xử lý thanh toán",
-  Zc = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? Ic() : e === "pt" ? Ec() : e === "ch" ? Gc() : e === "de" ? Rc() : e === "es" ? Mc() : e === "fr" ? Uc() : e === "it" ? Hc() : e === "jp" ? Oc() : e === "pl" ? Fc() : e === "ru" ? Vc() : e === "uk" ? Kc() : Nc()
+  Gc = () => "Processing payment",
+  Rc = () => "Processando pagamento",
+  Mc = () => "正在处理付款",
+  Uc = () => "Zahlung wird verarbeitet",
+  Hc = () => "Procesando el pago",
+  Oc = () => "Traitement du paiement",
+  Fc = () => "Elaborazione del pagamento",
+  Vc = () => "支払いを処理中",
+  Kc = () => "Przetwarzanie płatności",
+  Nc = () => "Обработка платежа",
+  Zc = () => "Обробка платежу",
+  Wc = () => "Đang xử lý thanh toán",
+  Yc = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? Gc() : e === "pt" ? Rc() : e === "ch" ? Mc() : e === "de" ? Uc() : e === "es" ? Hc() : e === "fr" ? Oc() : e === "it" ? Fc() : e === "jp" ? Vc() : e === "pl" ? Kc() : e === "ru" ? Nc() : e === "uk" ? Zc() : Wc()
   },
-  Wc = () => "Payment incomplete",
-  Yc = () => "Pagamento incompleto",
-  Jc = () => "支付未完成",
-  Qc = () => "Zahlung unvollständig",
-  Xc = () => "Pago incompleto",
-  $c = () => "Paiement incomplet",
-  e_ = () => "Pagamento incompleto",
-  t_ = () => "支払い未完了",
-  r_ = () => "Płatność niekompletna",
-  n_ = () => "Платёж не завершён",
-  a_ = () => "Платіж не завершено",
-  o_ = () => "Thanh toán chưa hoàn thành",
-  i_ = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? Wc() : e === "pt" ? Yc() : e === "ch" ? Jc() : e === "de" ? Qc() : e === "es" ? Xc() : e === "fr" ? $c() : e === "it" ? e_() : e === "jp" ? t_() : e === "pl" ? r_() : e === "ru" ? n_() : e === "uk" ? a_() : o_()
+  Jc = () => "Payment incomplete",
+  Qc = () => "Pagamento incompleto",
+  Xc = () => "支付未完成",
+  $c = () => "Zahlung unvollständig",
+  e_ = () => "Pago incompleto",
+  t_ = () => "Paiement incomplet",
+  r_ = () => "Pagamento incompleto",
+  n_ = () => "支払い未完了",
+  a_ = () => "Płatność niekompletna",
+  o_ = () => "Платёж не завершён",
+  i_ = () => "Платіж не завершено",
+  s_ = () => "Thanh toán chưa hoàn thành",
+  u_ = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? Jc() : e === "pt" ? Qc() : e === "ch" ? Xc() : e === "de" ? $c() : e === "es" ? e_() : e === "fr" ? t_() : e === "it" ? r_() : e === "jp" ? n_() : e === "pl" ? a_() : e === "ru" ? o_() : e === "uk" ? i_() : s_()
   },
-  s_ = () => "Your payment was not completed. Return to the store to try again.",
-  u_ = () => "Seu pagamento não foi concluído. Volte à loja para tentar novamente.",
-  l_ = () => "您的付款尚未完成。请返回商店重试。",
-  c_ = () => "Ihre Zahlung wurde nicht abgeschlossen. Kehren Sie zum Shop zurück, um es erneut zu versuchen.",
-  __ = () => "Tu pago no fue completado. Vuelve a la tienda para intentarlo de nuevo.",
-  p_ = () => "Votre paiement n'a pas été complété. Retournez à la boutique pour réessayer.",
-  d_ = () => "Il tuo pagamento non è stato completato. Torna al negozio per riprovare.",
-  f_ = () => "お支払いが完了していません。ストアに戻ってもう一度お試しください。",
-  y_ = () => "Twoja płatność nie została ukończona. Wróć do sklepu i spróbuj ponownie.",
-  h_ = () => "Ваш платёж не был завершён. Вернитесь в магазин и попробуйте снова.",
-  m_ = () => "Ваш платіж не був завершений. Поверніться до магазину та спробуйте знову.",
-  v_ = () => "Thanh toán của bạn chưa được hoàn thành. Vui lòng quay lại cửa hàng để thử lại.",
-  g_ = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? s_() : e === "pt" ? u_() : e === "ch" ? l_() : e === "de" ? c_() : e === "es" ? __() : e === "fr" ? p_() : e === "it" ? d_() : e === "jp" ? f_() : e === "pl" ? y_() : e === "ru" ? h_() : e === "uk" ? m_() : v_()
+  l_ = () => "Your payment was not completed. Return to the store to try again.",
+  c_ = () => "Seu pagamento não foi concluído. Volte à loja para tentar novamente.",
+  __ = () => "您的付款尚未完成。请返回商店重试。",
+  p_ = () => "Ihre Zahlung wurde nicht abgeschlossen. Kehren Sie zum Shop zurück, um es erneut zu versuchen.",
+  d_ = () => "Tu pago no fue completado. Vuelve a la tienda para intentarlo de nuevo.",
+  f_ = () => "Votre paiement n'a pas été complété. Retournez à la boutique pour réessayer.",
+  y_ = () => "Il tuo pagamento non è stato completato. Torna al negozio per riprovare.",
+  h_ = () => "お支払いが完了していません。ストアに戻ってもう一度お試しください。",
+  m_ = () => "Twoja płatność nie została ukończona. Wróć do sklepu i spróbuj ponownie.",
+  v_ = () => "Ваш платёж не был завершён. Вернитесь в магазин и попробуйте снова.",
+  g_ = () => "Ваш платіж не був завершений. Поверніться до магазину та спробуйте знову.",
+  b_ = () => "Thanh toán của bạn chưa được hoàn thành. Vui lòng quay lại cửa hàng để thử lại.",
+  w_ = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? l_() : e === "pt" ? c_() : e === "ch" ? __() : e === "de" ? p_() : e === "es" ? d_() : e === "fr" ? f_() : e === "it" ? y_() : e === "jp" ? h_() : e === "pl" ? m_() : e === "ru" ? v_() : e === "uk" ? g_() : b_()
   },
-  b_ = () => "Refund Policy",
-  w_ = () => "Política de Reembolso",
-  x_ = () => "退款政策",
-  k_ = () => "Rückerstattungsrichtlinie",
-  j_ = () => "Política de reembolso",
-  q_ = () => "Politique de remboursement",
-  D_ = () => "Politica di rimborso",
-  P_ = () => "返金ポリシー",
-  C_ = () => "Polityka zwrotów",
-  S_ = () => "Политика возврата средств",
-  z_ = () => "Політика повернення коштів",
-  A_ = () => "Chính sách hoàn tiền",
-  L_ = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? b_() : e === "pt" ? w_() : e === "ch" ? x_() : e === "de" ? k_() : e === "es" ? j_() : e === "fr" ? q_() : e === "it" ? D_() : e === "jp" ? P_() : e === "pl" ? C_() : e === "ru" ? S_() : e === "uk" ? z_() : A_()
+  x_ = () => "Refund Policy",
+  k_ = () => "Política de Reembolso",
+  j_ = () => "退款政策",
+  q_ = () => "Rückerstattungsrichtlinie",
+  D_ = () => "Política de reembolso",
+  P_ = () => "Politique de remboursement",
+  S_ = () => "Politica di rimborso",
+  C_ = () => "返金ポリシー",
+  z_ = () => "Polityka zwrotów",
+  A_ = () => "Политика возврата средств",
+  L_ = () => "Політика повернення коштів",
+  B_ = () => "Chính sách hoàn tiền",
+  T_ = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? x_() : e === "pt" ? k_() : e === "ch" ? j_() : e === "de" ? q_() : e === "es" ? D_() : e === "fr" ? P_() : e === "it" ? S_() : e === "jp" ? C_() : e === "pl" ? z_() : e === "ru" ? A_() : e === "uk" ? L_() : B_()
   },
-  B_ = () => "For refund requests and processing details, please see our",
-  T_ = () => "Para pedidos de reembolso, consulte nossa",
-  I_ = () => "有关退款请求和处理详情，请参阅我们的",
-  E_ = () => "Für Rückerstattungen und Details siehe unsere",
-  G_ = () => "Para solicitudes de reembolso y más detalles, consulta nuestra",
-  R_ = () => "Pour les demandes de remboursement et les détails de traitement, consultez notre",
-  M_ = () => "Per richieste di rimborso, consulta la nostra",
-  U_ = () => "返金の申請方法と詳細については、こちらをご覧ください:",
-  H_ = () => "Aby uzyskać informacje o zwrotach, zobacz naszą",
-  O_ = () => "Для запросов на возврат средств и деталей обработки см. нашу",
-  F_ = () => "Для запитів на повернення та деталей обробки дивіться нашу",
-  V_ = () => "Để yêu cầu hoàn tiền và chi tiết xử lý, hãy xem",
-  K_ = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? B_() : e === "pt" ? T_() : e === "ch" ? I_() : e === "de" ? E_() : e === "es" ? G_() : e === "fr" ? R_() : e === "it" ? M_() : e === "jp" ? U_() : e === "pl" ? H_() : e === "ru" ? O_() : e === "uk" ? F_() : V_()
+  I_ = () => "For refund requests and processing details, please see our",
+  E_ = () => "Para pedidos de reembolso, consulte nossa",
+  G_ = () => "有关退款请求和处理详情，请参阅我们的",
+  R_ = () => "Für Rückerstattungen und Details siehe unsere",
+  M_ = () => "Para solicitudes de reembolso y más detalles, consulta nuestra",
+  U_ = () => "Pour les demandes de remboursement et les détails de traitement, consultez notre",
+  H_ = () => "Per richieste di rimborso, consulta la nostra",
+  O_ = () => "返金の申請方法と詳細については、こちらをご覧ください:",
+  F_ = () => "Aby uzyskać informacje o zwrotach, zobacz naszą",
+  V_ = () => "Для запросов на возврат средств и деталей обработки см. нашу",
+  K_ = () => "Для запитів на повернення та деталей обробки дивіться нашу",
+  N_ = () => "Để yêu cầu hoàn tiền và chi tiết xử lý, hãy xem",
+  Z_ = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? I_() : e === "pt" ? E_() : e === "ch" ? G_() : e === "de" ? R_() : e === "es" ? M_() : e === "fr" ? U_() : e === "it" ? H_() : e === "jp" ? O_() : e === "pl" ? F_() : e === "ru" ? V_() : e === "uk" ? K_() : N_()
   },
-  N_ = () => "You gain 1 droplet per pixel painted and 500 Droplets per level",
-  Z_ = () => "Você ganha 1 Droplet por pixel pintado e 500 Droplets por level",
-  W_ = () => "你每绘制 1 个像素可获得 1 个 Droplet，每升 1 级可获得 500 个 Droplets",
-  Y_ = () => "Du erhältst 1 Droplet pro gemaltem Pixel und 500 Droplets pro Level",
-  J_ = () => "Ganas 1 Droplet por píxel pintado y 500 Droplets por nivel",
-  Q_ = () => "Vous gagnez 1 Droplet par pixel peint et 500 Droplets par niveau",
-  X_ = () => "Guadagni 1 Droplet per ogni pixel dipinto e 500 Droplets per livello",
-  $_ = () => "ピクセルを1つ塗るごとに1 Droplet、レベルごとに500 Dropletsを獲得します。",
-  ep = () => "Otrzymujesz 1 Droplet za każdy pomalowany piksel i 500 Droplets za każdy poziom",
-  tp = () => "Вы получаете 1 Droplet за каждый нарисованный пиксель и 500 Droplets за уровень",
-  rp = () => "Ви отримуєте 1 Droplet за кожен намальований піксель і 500 Droplets за рівень",
-  np = () => "Bạn nhận 1 Droplet cho mỗi pixel tô và 500 Droplets mỗi cấp độ",
-  ap = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? N_() : e === "pt" ? Z_() : e === "ch" ? W_() : e === "de" ? Y_() : e === "es" ? J_() : e === "fr" ? Q_() : e === "it" ? X_() : e === "jp" ? $_() : e === "pl" ? ep() : e === "ru" ? tp() : e === "uk" ? rp() : np()
+  W_ = () => "You gain 1 droplet per pixel painted and 500 Droplets per level",
+  Y_ = () => "Você ganha 1 Droplet por pixel pintado e 500 Droplets por level",
+  J_ = () => "你每绘制 1 个像素可获得 1 个 Droplet，每升 1 级可获得 500 个 Droplets",
+  Q_ = () => "Du erhältst 1 Droplet pro gemaltem Pixel und 500 Droplets pro Level",
+  X_ = () => "Ganas 1 Droplet por píxel pintado y 500 Droplets por nivel",
+  $_ = () => "Vous gagnez 1 Droplet par pixel peint et 500 Droplets par niveau",
+  ep = () => "Guadagni 1 Droplet per ogni pixel dipinto e 500 Droplets per livello",
+  tp = () => "ピクセルを1つ塗るごとに1 Droplet、レベルごとに500 Dropletsを獲得します。",
+  rp = () => "Otrzymujesz 1 Droplet za każdy pomalowany piksel i 500 Droplets za każdy poziom",
+  np = () => "Вы получаете 1 Droplet за каждый нарисованный пиксель и 500 Droplets за уровень",
+  ap = () => "Ви отримуєте 1 Droplet за кожен намальований піксель і 500 Droplets за рівень",
+  op = () => "Bạn nhận 1 Droplet cho mỗi pixel tô và 500 Droplets mỗi cấp độ",
+  ip = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? W_() : e === "pt" ? Y_() : e === "ch" ? J_() : e === "de" ? Q_() : e === "es" ? X_() : e === "fr" ? $_() : e === "it" ? ep() : e === "jp" ? tp() : e === "pl" ? rp() : e === "ru" ? np() : e === "uk" ? ap() : op()
   },
-  op = () => "bonus",
-  ip = () => "bônus",
-  sp = () => "奖励",
-  up = () => "Bonus",
-  lp = () => "bono",
-  cp = () => "bonus",
-  _p = () => "bonus",
-  pp = () => "ボーナス",
+  sp = () => "bonus",
+  up = () => "bônus",
+  lp = () => "奖励",
+  cp = () => "Bonus",
+  _p = () => "bono",
+  pp = () => "bonus",
   dp = () => "bonus",
-  fp = () => "бонус",
-  yp = () => "бонус",
-  hp = () => "thưởng",
-  mp = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? op() : e === "pt" ? ip() : e === "ch" ? sp() : e === "de" ? up() : e === "es" ? lp() : e === "fr" ? cp() : e === "it" ? _p() : e === "jp" ? pp() : e === "pl" ? dp() : e === "ru" ? fp() : e === "uk" ? yp() : hp()
+  fp = () => "ボーナス",
+  yp = () => "bonus",
+  hp = () => "бонус",
+  mp = () => "бонус",
+  vp = () => "thưởng",
+  gp = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? sp() : e === "pt" ? up() : e === "ch" ? lp() : e === "de" ? cp() : e === "es" ? _p() : e === "fr" ? pp() : e === "it" ? dp() : e === "jp" ? fp() : e === "pl" ? yp() : e === "ru" ? hp() : e === "uk" ? mp() : vp()
   },
-  vp = () => "Card",
-  gp = () => "Cartão",
-  bp = () => "卡",
-  wp = () => "Karte",
-  xp = () => "Tarjeta",
-  kp = () => "Carte",
-  jp = () => "Carta",
-  qp = () => "カード",
-  Dp = () => "Karta",
-  Pp = () => "Карта",
-  Cp = () => "Картка",
-  Sp = () => "Thẻ",
-  zp = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? vp() : e === "pt" ? gp() : e === "ch" ? bp() : e === "de" ? wp() : e === "es" ? xp() : e === "fr" ? kp() : e === "it" ? jp() : e === "jp" ? qp() : e === "pl" ? Dp() : e === "ru" ? Pp() : e === "uk" ? Cp() : Sp()
+  bp = () => "Card",
+  wp = () => "Cartão",
+  xp = () => "卡",
+  kp = () => "Karte",
+  jp = () => "Tarjeta",
+  qp = () => "Carte",
+  Dp = () => "Carta",
+  Pp = () => "カード",
+  Sp = () => "Karta",
+  Cp = () => "Карта",
+  zp = () => "Картка",
+  Ap = () => "Thẻ",
+  Lp = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? bp() : e === "pt" ? wp() : e === "ch" ? xp() : e === "de" ? kp() : e === "es" ? jp() : e === "fr" ? qp() : e === "it" ? Dp() : e === "jp" ? Pp() : e === "pl" ? Sp() : e === "ru" ? Cp() : e === "uk" ? zp() : Ap()
   },
-  Ap = () => "Other methods",
-  Lp = () => "Outros métodos",
-  Bp = () => "其他方式",
-  Tp = () => "Andere Methoden",
-  Ip = () => "Otros métodos",
-  Ep = () => "Autres méthodes",
-  Gp = () => "Altri metodi",
-  Rp = () => "その他の方法",
-  Mp = () => "Inne metody",
-  Up = () => "Другие методы",
-  Hp = () => "Інші методи",
-  Op = () => "Phương thức khác",
-  Fp = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? Ap() : e === "pt" ? Lp() : e === "ch" ? Bp() : e === "de" ? Tp() : e === "es" ? Ip() : e === "fr" ? Ep() : e === "it" ? Gp() : e === "jp" ? Rp() : e === "pl" ? Mp() : e === "ru" ? Up() : e === "uk" ? Hp() : Op()
+  Bp = () => "Other methods",
+  Tp = () => "Outros métodos",
+  Ip = () => "其他方式",
+  Ep = () => "Andere Methoden",
+  Gp = () => "Otros métodos",
+  Rp = () => "Autres méthodes",
+  Mp = () => "Altri metodi",
+  Up = () => "その他の方法",
+  Hp = () => "Inne metody",
+  Op = () => "Другие методы",
+  Fp = () => "Інші методи",
+  Vp = () => "Phương thức khác",
+  Kp = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? Bp() : e === "pt" ? Tp() : e === "ch" ? Ip() : e === "de" ? Ep() : e === "es" ? Gp() : e === "fr" ? Rp() : e === "it" ? Mp() : e === "jp" ? Up() : e === "pl" ? Hp() : e === "ru" ? Op() : e === "uk" ? Fp() : Vp()
   },
-  Vp = () => "Payment",
-  Kp = () => "Pagamento",
-  Np = () => "付款",
-  Zp = () => "Zahlung",
-  Wp = () => "Pago",
-  Yp = () => "Paiement",
-  Jp = () => "Pagamento",
-  Qp = () => "お支払い",
-  Xp = () => "Płatność",
-  $p = () => "Оплата",
-  ed = () => "Оплата",
-  td = () => "Thanh toán",
-  rd = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? Vp() : e === "pt" ? Kp() : e === "ch" ? Np() : e === "de" ? Zp() : e === "es" ? Wp() : e === "fr" ? Yp() : e === "it" ? Jp() : e === "jp" ? Qp() : e === "pl" ? Xp() : e === "ru" ? $p() : e === "uk" ? ed() : td()
+  Np = () => "Payment",
+  Zp = () => "Pagamento",
+  Wp = () => "付款",
+  Yp = () => "Zahlung",
+  Jp = () => "Pago",
+  Qp = () => "Paiement",
+  Xp = () => "Pagamento",
+  $p = () => "お支払い",
+  ed = () => "Płatność",
+  td = () => "Оплата",
+  rd = () => "Оплата",
+  nd = () => "Thanh toán",
+  ad = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? Np() : e === "pt" ? Zp() : e === "ch" ? Wp() : e === "de" ? Yp() : e === "es" ? Jp() : e === "fr" ? Qp() : e === "it" ? Xp() : e === "jp" ? $p() : e === "pl" ? ed() : e === "ru" ? td() : e === "uk" ? rd() : nd()
   },
-  nd = () => "The payment status could not be refreshed. Please wait a few seconds and refresh the page.",
-  ad = () => "Não foi possível atualizar o status do pagamento. Aguarde alguns segundos e atualize a página.",
-  od = () => "无法刷新付款状态。请等待几秒钟后刷新页面。",
-  id = () => "Der Zahlungsstatus konnte nicht aktualisiert werden. Bitte warte ein paar Sekunden und lade die Seite neu.",
-  sd = () => "No se pudo actualizar el estado del pago. Espera unos segundos y actualiza la página.",
-  ud = () => "Impossible d'actualiser l'état du paiement. Veuillez patienter quelques secondes et actualiser la page.",
-  ld = () => "Impossibile aggiornare lo stato del pagamento. Attendi qualche secondo e ricarica la pagina.",
-  cd = () => "支払い状況を更新できませんでした。数秒待ってからページを更新してください。",
-  _d = () => "Nie udało się odświeżyć statusu płatności. Poczekaj kilka sekund i odśwież stronę.",
-  pd = () => "Не удалось обновить статус платежа. Подождите несколько секунд и обновите страницу.",
-  dd = () => "Не вдалося оновити статус платежу. Зачекайте кілька секунд і оновіть сторінку.",
-  fd = () => "Không thể làm mới trạng thái thanh toán. Vui lòng đợi vài giây và làm mới trang.",
-  yd = (n = {}, t = {}) => {
-    const e = t.locale ?? P();
-    return e === "en" ? nd() : e === "pt" ? ad() : e === "ch" ? od() : e === "de" ? id() : e === "es" ? sd() : e === "fr" ? ud() : e === "it" ? ld() : e === "jp" ? cd() : e === "pl" ? _d() : e === "ru" ? pd() : e === "uk" ? dd() : fd()
+  od = () => "The payment status could not be refreshed. Please wait a few seconds and refresh the page.",
+  id = () => "Não foi possível atualizar o status do pagamento. Aguarde alguns segundos e atualize a página.",
+  sd = () => "无法刷新付款状态。请等待几秒钟后刷新页面。",
+  ud = () => "Der Zahlungsstatus konnte nicht aktualisiert werden. Bitte warte ein paar Sekunden und lade die Seite neu.",
+  ld = () => "No se pudo actualizar el estado del pago. Espera unos segundos y actualiza la página.",
+  cd = () => "Impossible d'actualiser l'état du paiement. Veuillez patienter quelques secondes et actualiser la page.",
+  _d = () => "Impossibile aggiornare lo stato del pagamento. Attendi qualche secondo e ricarica la pagina.",
+  pd = () => "支払い状況を更新できませんでした。数秒待ってからページを更新してください。",
+  dd = () => "Nie udało się odświeżyć statusu płatności. Poczekaj kilka sekund i odśwież stronę.",
+  fd = () => "Не удалось обновить статус платежа. Подождите несколько секунд и обновите страницу.",
+  yd = () => "Не вдалося оновити статус платежу. Зачекайте кілька секунд і оновіть сторінку.",
+  hd = () => "Không thể làm mới trạng thái thanh toán. Vui lòng đợi vài giây và làm mới trang.",
+  md = (n = {}, t = {}) => {
+    const e = t.locale ?? C();
+    return e === "en" ? od() : e === "pt" ? id() : e === "ch" ? sd() : e === "de" ? ud() : e === "es" ? ld() : e === "fr" ? cd() : e === "it" ? _d() : e === "jp" ? pd() : e === "pl" ? dd() : e === "ru" ? fd() : e === "uk" ? yd() : hd()
   },
-  Uy = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAAXNSR0IArs4c6QAAACpJREFUeNpj+AsEZ86ASIa/DAwMZ84ACRDzDBigMs/AARITq1oUwxBWAADaREUdDMswKwAAAABJRU5ErkJggg==";
-var hd = h('<span class="btn btn-xs btn-circle btn-primary ml-0.5 size-5"><!></span>'),
-  md = h('<span class="flex items-center gap-1"><!> <span class="text-primary text-base font-semibold"> <span class="text-xs max-lg:hidden">Droplets</span></span> <!></span>'),
-  vd = h('<button class="badge badge-lg border-base-content/10 right-tooltip cursor-pointer border-2 pr-1 pl-1"><!></button>'),
-  gd = h('<span class="badge badge-lg border-base-content/10 right-tooltip border-2 pr-2 pl-1"><!></span>');
+  Oy = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAAXNSR0IArs4c6QAAACpJREFUeNpj+AsEZ86ASIa/DAwMZ84ACRDzDBigMs/AARITq1oUwxBWAADaREUdDMswKwAAAABJRU5ErkJggg==";
+var vd = y('<span class="btn btn-xs btn-circle btn-primary ml-0.5 size-5"><!></span>'),
+  gd = y('<span class="flex items-center gap-1"><!> <span class="text-primary text-base font-semibold"> <span class="text-xs max-lg:hidden">Droplets</span></span> <!></span>'),
+  bd = y('<button class="badge badge-lg border-base-content/10 right-tooltip cursor-pointer border-2 pr-1 pl-1"><!></button>'),
+  wd = y('<span class="badge badge-lg border-base-content/10 right-tooltip border-2 pr-2 pl-1"><!></span>');
 
-function bd(n, t) {
-  Ce(t, !0);
-  const e = x => {
-    var y = md(),
-      m = o(y);
-    Qe(m, {
+function xd(n, t) {
+  Se(t, !0);
+  const e = j => {
+    var f = gd(),
+      h = o(f);
+    Qe(h, {
       class: "text-primary size-4.5"
     });
-    var U = c(m, 2),
-      Q = o(U);
-    kt(), a(U);
-    var E = c(U, 2);
+    var H = l(h, 2),
+      Q = o(H);
+    qt(), a(H);
+    var G = l(H, 2);
     {
-      var I = C => {
-        var V = hd(),
-          G = o(V);
-        Dr(G, {
+      var E = z => {
+        var V = vd(),
+          R = o(V);
+        Sr(R, {
           class: "size-4"
-        }), a(V), u(C, V)
+        }), a(V), u(z, V)
       };
-      A(E, C => {
-        i() && C(I)
+      B(G, z => {
+        i() && z(E)
       })
     }
-    a(y), T(C => w(Q, `${C??""} `), [() => t.value.toLocaleString(navigator.language)]), u(x, y)
+    a(f), I(z => k(Q, `${z??""} `), [() => t.value.toLocaleString(navigator.language)]), u(j, f)
   };
-  let i = we(t, "button", 3, !0);
-  var _ = He(),
-    g = ne(_);
+  let i = ke(t, "button", 3, !0);
+  var c = Ue(),
+    w = re(c);
   {
-    var q = x => {
-        var y = vd(),
-          m = o(y);
-        e(m), a(y), me("click", y, () => {
-          _t.dropletsDialogOpen = !0
-        }), u(x, y)
+    var D = j => {
+        var f = bd(),
+          h = o(f);
+        e(h), a(f), he("click", f, () => {
+          pt.dropletsDialogOpen = !0
+        }), u(j, f)
       },
-      D = x => {
-        var y = gd(),
-          m = o(y);
-        e(m), a(y), u(x, y)
+      P = j => {
+        var f = wd(),
+          h = o(f);
+        e(h), a(f), u(j, f)
       };
-    A(g, x => {
-      i() ? x(q) : x(D, -1)
+    B(w, j => {
+      i() ? j(D) : j(P, -1)
     })
   }
-  u(n, _), Se()
+  u(n, c), Ce()
 }
-jt(["click"]);
-const mt = n => {
-    var t = Jd();
-    u(n, t)
-  },
-  wd = n => {
-    var t = Qd();
-    u(n, t)
-  },
-  xd = n => {
+Dt(["click"]);
+const gt = n => {
     var t = Xd();
     u(n, t)
   },
-  kd = {
+  kd = n => {
+    var t = $d();
+    u(n, t)
+  },
+  jd = n => {
+    var t = ef();
+    u(n, t)
+  },
+  qd = {
     success: {
       accent: "#22c55e",
       accentDark: "#16a34a",
@@ -955,437 +955,437 @@ const mt = n => {
       titleColor: "#334155"
     }
   },
-  $t = 38,
-  er = 32,
-  jd = (n, t) => {
+  tr = 38,
+  rr = 32,
+  Dd = (n, t) => {
     const e = (Math.sin(n * 12.9898 + t * 78.233) * 43758.5453 % 1 + 1) % 1,
-      i = (_, g, q) => Math.sqrt((n - _) ** 2 + (t - g) ** 2) < q + (e - .5) * 2;
+      i = (c, w, D) => Math.sqrt((n - c) ** 2 + (t - w) ** 2) < D + (e - .5) * 2;
     return i(6, 8, 5) || i(14, 14, 6) || i(26, 10, 7) || i(28, 22, 5) || i(18, 24, 3)
   },
-  tr = [];
-for (let n = 0; n < er; n++)
-  for (let t = 0; t < $t; t++) jd(t, n) && tr.push({
+  nr = [];
+for (let n = 0; n < rr; n++)
+  for (let t = 0; t < tr; t++) Dd(t, n) && nr.push({
     x: t,
     y: n
   });
-var qd = h('<span class="wp-dots svelte-ifq4hh" aria-hidden="true"><span class="svelte-ifq4hh"></span><span class="svelte-ifq4hh"></span><span class="svelte-ifq4hh"></span></span>'),
-  Dd = h('<div class="wp-amount-label svelte-ifq4hh"> </div>'),
-  Pd = h('<div class="svelte-ifq4hh"><div class="wp-amount tabular-nums svelte-ifq4hh"> </div> <!></div>'),
-  Cd = h('<p class="wp-body svelte-ifq4hh"><!></p>'),
-  Sd = h('<li class="svelte-ifq4hh"><span class="wp-bullet-row svelte-ifq4hh"><span class="wp-bullet-label svelte-ifq4hh"> </span> <span class="wp-bullet-value tabular-nums svelte-ifq4hh"><!> </span></span></li>'),
-  zd = h('<ul class="wp-bullets svelte-ifq4hh"></ul>'),
-  Ad = h('<div class="wp-receipt-row svelte-ifq4hh"><span class="svelte-ifq4hh"> </span> <strong class="svelte-ifq4hh"> </strong></div>'),
-  Ld = h('<div class="wp-receipt-divider svelte-ifq4hh"></div> <div class="wp-receipt-row wp-receipt-total svelte-ifq4hh"><span class="svelte-ifq4hh"> </span> <span class="v svelte-ifq4hh"> </span></div>', 1),
-  Bd = h('<div class="wp-receipt svelte-ifq4hh"><!> <!></div>'),
-  Td = h('<div class="wp-progress svelte-ifq4hh" aria-hidden="true"></div>'),
-  Id = h('<div class="wp-meta svelte-ifq4hh"><!></div>'),
-  Ed = h('<div class="wp-btn-row svelte-ifq4hh"><button class="wp-cta wp-cta-ghost focus:outline-none svelte-ifq4hh" type="button"> </button> <button class="wp-cta focus:outline-none svelte-ifq4hh" type="button"> </button></div>'),
-  Gd = h('<button class="wp-cta focus:outline-none svelte-ifq4hh" type="button"><span class="svelte-ifq4hh"> </span> <!></button>'),
-  Rd = h('<button class="wp-cta wp-cta-ghost svelte-ifq4hh" type="button"> </button>'),
-  Md = h('<a class="wp-ghost-link svelte-ifq4hh"> </a>'),
-  Ud = h('<div class="wp-card-wrap svelte-ifq4hh"><div><!></div> <div class="wp-card svelte-ifq4hh" role="status" aria-live="polite"><h2 class="wp-title svelte-ifq4hh"> <!></h2> <!> <!> <!> <!> <!> <!> <!> <!> <!></div></div>'),
-  Hd = xe('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M6 16 L13 23 L26 9" stroke="#fff" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter" class="svelte-ifq4hh"></path></svg>'),
-  Od = xe('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M9 9 L23 23 M23 9 L9 23" stroke="#fff" stroke-width="4" stroke-linecap="square" class="svelte-ifq4hh"></path></svg>'),
-  Fd = xe('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><rect x="14" y="7" width="4" height="13" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="22" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
-  Vd = xe('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><rect x="14" y="13" width="4" height="13" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="6" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
-  Kd = xe('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><path d="M16 5 L19 13 L27 13 L21 18 L23 26 L16 22 L9 26 L11 18 L5 13 L13 13 Z" fill="#fff" class="svelte-ifq4hh"></path></svg>'),
-  Nd = xe('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M11 12 Q11 8 16 8 Q21 8 21 12 Q21 15 16 16 L16 19" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="square" class="svelte-ifq4hh"></path><rect x="14" y="22" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
-  Zd = xe('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="6" y="10" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="10" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="22" y="10" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="6" y="18" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="18" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="22" y="18" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
-  Wd = xe('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="14" y="4" width="4" height="6" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="22" width="4" height="6" fill="rgba(255,255,255,0.25)" class="svelte-ifq4hh"></rect><rect x="4" y="14" width="6" height="4" fill="rgba(255,255,255,0.5)" class="svelte-ifq4hh"></rect><rect x="22" y="14" width="6" height="4" fill="rgba(255,255,255,0.75)" class="svelte-ifq4hh"></rect><rect x="7.5" y="7.5" width="4" height="4" fill="rgba(255,255,255,0.85)" class="svelte-ifq4hh"></rect><rect x="20.5" y="20.5" width="4" height="4" fill="rgba(255,255,255,0.4)" class="svelte-ifq4hh"></rect><rect x="20.5" y="7.5" width="4" height="4" fill="rgba(255,255,255,0.6)" class="svelte-ifq4hh"></rect><rect x="7.5" y="20.5" width="4" height="4" fill="rgba(255,255,255,0.2)" class="svelte-ifq4hh"></rect></svg>'),
-  Yd = xe('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="7" y="9" width="18" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="7" y="9" width="4" height="16" fill="#fff" class="svelte-ifq4hh"></rect><rect x="21" y="9" width="4" height="16" fill="#fff" class="svelte-ifq4hh"></rect><rect x="7" y="21" width="18" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
-  Jd = xe('<svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="7" y="1" width="2" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="6" y="2" width="4" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="5" y="3" width="6" height="2" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="4" y="5" width="8" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="3" y="6" width="10" height="2" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="2" y="8" width="12" height="3" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="3" y="11" width="10" height="2" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="4" y="13" width="8" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="6" y="14" width="4" height="1" fill="currentColor" class="svelte-ifq4hh"></rect></svg>'),
-  Qd = xe('<svg viewBox="0 0 16 16" width="14" height="14" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><path d="M3 8 L7 12 L13 5" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="square" class="svelte-ifq4hh"></path></svg>'),
-  Xd = xe('<svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M3 8h9 M9 5l4 3-4 3" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" class="svelte-ifq4hh"></path></svg>'),
-  $d = h('<div class="wp-embed svelte-ifq4hh"><!></div>'),
-  ef = xe('<rect width="1" height="1" fill="#2D6378" class="svelte-ifq4hh"></rect>'),
-  tf = h('<div class="wp-stage svelte-ifq4hh" aria-hidden="false"><svg class="wp-map svelte-ifq4hh" preserveAspectRatio="xMidYMid slice" shape-rendering="crispEdges" aria-hidden="true"></svg> <div class="wp-droplets svelte-ifq4hh" aria-hidden="true"><div class="wp-d wp-d1 svelte-ifq4hh"><!></div> <div class="wp-d wp-d2 svelte-ifq4hh"><!></div> <div class="wp-d wp-d3 svelte-ifq4hh"><!></div> <div class="wp-d wp-d4 svelte-ifq4hh"><!></div></div> <div class="wp-shell svelte-ifq4hh"><header class="wp-topbar svelte-ifq4hh"><a class="wp-brand svelte-ifq4hh" aria-label="WPlace home"><img class="pixelated h-auto w-6 shrink-0 svelte-ifq4hh" alt="Wplace logo"/> <span class="wp-brand-name svelte-ifq4hh">wplace</span></a> <button class="wp-close svelte-ifq4hh" type="button" aria-label="Close"><svg viewBox="0 0 16 16" fill="none" width="14" height="14" aria-hidden="true" class="svelte-ifq4hh"><path d="M3 3 L13 13 M13 3 L3 13" stroke="currentColor" stroke-width="2" stroke-linecap="square" class="svelte-ifq4hh"></path></svg></button></header> <main class="wp-main svelte-ifq4hh"><!></main></div></div>');
+var Pd = y('<span class="wp-dots svelte-ifq4hh" aria-hidden="true"><span class="svelte-ifq4hh"></span><span class="svelte-ifq4hh"></span><span class="svelte-ifq4hh"></span></span>'),
+  Sd = y('<div class="wp-amount-label svelte-ifq4hh"> </div>'),
+  Cd = y('<div class="svelte-ifq4hh"><div class="wp-amount tabular-nums svelte-ifq4hh"> </div> <!></div>'),
+  zd = y('<p class="wp-body svelte-ifq4hh"><!></p>'),
+  Ad = y('<li class="svelte-ifq4hh"><span class="wp-bullet-row svelte-ifq4hh"><span class="wp-bullet-label svelte-ifq4hh"> </span> <span class="wp-bullet-value tabular-nums svelte-ifq4hh"><!> </span></span></li>'),
+  Ld = y('<ul class="wp-bullets svelte-ifq4hh"></ul>'),
+  Bd = y('<div class="wp-receipt-row svelte-ifq4hh"><span class="svelte-ifq4hh"> </span> <strong class="svelte-ifq4hh"> </strong></div>'),
+  Td = y('<div class="wp-receipt-divider svelte-ifq4hh"></div> <div class="wp-receipt-row wp-receipt-total svelte-ifq4hh"><span class="svelte-ifq4hh"> </span> <span class="v svelte-ifq4hh"> </span></div>', 1),
+  Id = y('<div class="wp-receipt svelte-ifq4hh"><!> <!></div>'),
+  Ed = y('<div class="wp-progress svelte-ifq4hh" aria-hidden="true"></div>'),
+  Gd = y('<div class="wp-meta svelte-ifq4hh"><!></div>'),
+  Rd = y('<div class="wp-btn-row svelte-ifq4hh"><button class="wp-cta wp-cta-ghost focus:outline-none svelte-ifq4hh" type="button"> </button> <button class="wp-cta focus:outline-none svelte-ifq4hh" type="button"> </button></div>'),
+  Md = y('<button class="wp-cta focus:outline-none svelte-ifq4hh" type="button"><span class="svelte-ifq4hh"> </span> <!></button>'),
+  Ud = y('<button class="wp-cta wp-cta-ghost svelte-ifq4hh" type="button"> </button>'),
+  Hd = y('<a class="wp-ghost-link svelte-ifq4hh"> </a>'),
+  Od = y('<div class="wp-card-wrap svelte-ifq4hh"><div><!></div> <div class="wp-card svelte-ifq4hh" role="status" aria-live="polite"><h2 class="wp-title svelte-ifq4hh"> <!></h2> <!> <!> <!> <!> <!> <!> <!> <!> <!></div></div>'),
+  Fd = je('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M6 16 L13 23 L26 9" stroke="#fff" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter" class="svelte-ifq4hh"></path></svg>'),
+  Vd = je('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M9 9 L23 23 M23 9 L9 23" stroke="#fff" stroke-width="4" stroke-linecap="square" class="svelte-ifq4hh"></path></svg>'),
+  Kd = je('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><rect x="14" y="7" width="4" height="13" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="22" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
+  Nd = je('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><rect x="14" y="13" width="4" height="13" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="6" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
+  Zd = je('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><path d="M16 5 L19 13 L27 13 L21 18 L23 26 L16 22 L9 26 L11 18 L5 13 L13 13 Z" fill="#fff" class="svelte-ifq4hh"></path></svg>'),
+  Wd = je('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M11 12 Q11 8 16 8 Q21 8 21 12 Q21 15 16 16 L16 19" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="square" class="svelte-ifq4hh"></path><rect x="14" y="22" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
+  Yd = je('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="6" y="10" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="10" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="22" y="10" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="6" y="18" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="18" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="22" y="18" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
+  Jd = je('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="14" y="4" width="4" height="6" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="22" width="4" height="6" fill="rgba(255,255,255,0.25)" class="svelte-ifq4hh"></rect><rect x="4" y="14" width="6" height="4" fill="rgba(255,255,255,0.5)" class="svelte-ifq4hh"></rect><rect x="22" y="14" width="6" height="4" fill="rgba(255,255,255,0.75)" class="svelte-ifq4hh"></rect><rect x="7.5" y="7.5" width="4" height="4" fill="rgba(255,255,255,0.85)" class="svelte-ifq4hh"></rect><rect x="20.5" y="20.5" width="4" height="4" fill="rgba(255,255,255,0.4)" class="svelte-ifq4hh"></rect><rect x="20.5" y="7.5" width="4" height="4" fill="rgba(255,255,255,0.6)" class="svelte-ifq4hh"></rect><rect x="7.5" y="20.5" width="4" height="4" fill="rgba(255,255,255,0.2)" class="svelte-ifq4hh"></rect></svg>'),
+  Qd = je('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="7" y="9" width="18" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="7" y="9" width="4" height="16" fill="#fff" class="svelte-ifq4hh"></rect><rect x="21" y="9" width="4" height="16" fill="#fff" class="svelte-ifq4hh"></rect><rect x="7" y="21" width="18" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
+  Xd = je('<svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="7" y="1" width="2" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="6" y="2" width="4" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="5" y="3" width="6" height="2" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="4" y="5" width="8" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="3" y="6" width="10" height="2" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="2" y="8" width="12" height="3" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="3" y="11" width="10" height="2" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="4" y="13" width="8" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="6" y="14" width="4" height="1" fill="currentColor" class="svelte-ifq4hh"></rect></svg>'),
+  $d = je('<svg viewBox="0 0 16 16" width="14" height="14" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><path d="M3 8 L7 12 L13 5" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="square" class="svelte-ifq4hh"></path></svg>'),
+  ef = je('<svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M3 8h9 M9 5l4 3-4 3" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" class="svelte-ifq4hh"></path></svg>'),
+  tf = y('<div class="wp-embed svelte-ifq4hh"><!></div>'),
+  rf = je('<rect width="1" height="1" fill="#2D6378" class="svelte-ifq4hh"></rect>'),
+  nf = y('<div class="wp-stage svelte-ifq4hh" aria-hidden="false"><svg class="wp-map svelte-ifq4hh" preserveAspectRatio="xMidYMid slice" shape-rendering="crispEdges" aria-hidden="true"></svg> <div class="wp-droplets svelte-ifq4hh" aria-hidden="true"><div class="wp-d wp-d1 svelte-ifq4hh"><!></div> <div class="wp-d wp-d2 svelte-ifq4hh"><!></div> <div class="wp-d wp-d3 svelte-ifq4hh"><!></div> <div class="wp-d wp-d4 svelte-ifq4hh"><!></div></div> <div class="wp-shell svelte-ifq4hh"><header class="wp-topbar svelte-ifq4hh"><a class="wp-brand svelte-ifq4hh" aria-label="WPlace home"><img class="pixelated h-auto w-6 shrink-0 svelte-ifq4hh" alt="Wplace logo"/> <span class="wp-brand-name svelte-ifq4hh">wplace</span></a> <button class="wp-close svelte-ifq4hh" type="button" aria-label="Close"><svg viewBox="0 0 16 16" fill="none" width="14" height="14" aria-hidden="true" class="svelte-ifq4hh"><path d="M3 3 L13 13 M13 3 L3 13" stroke="currentColor" stroke-width="2" stroke-linecap="square" class="svelte-ifq4hh"></path></svg></button></header> <main class="wp-main svelte-ifq4hh"><!></main></div></div>');
 
-function nt(n, t) {
-  Ce(t, !0);
-  const e = E => {
-      var I = Ud(),
-        C = o(I);
-      let V, G;
-      var N = o(C);
-      i(N), a(C);
-      var ae = c(C, 2),
-        B = o(ae);
-      let v;
-      var O = o(B),
-        F = c(O);
+function ot(n, t) {
+  Se(t, !0);
+  const e = G => {
+      var E = Od(),
+        z = o(E);
+      let V, R;
+      var K = o(z);
+      i(K), a(z);
+      var ne = l(z, 2),
+        T = o(ne);
+      let m;
+      var O = o(T),
+        F = l(O);
       {
-        var K = l => {
-          var s = qd();
-          u(l, s)
+        var Y = q => {
+          var _ = Pd();
+          u(q, _)
         };
-        A(F, l => {
-          _() === "loading" && l(K)
+        B(F, q => {
+          c() === "loading" && q(Y)
         })
       }
-      a(B);
-      var S = c(B, 2);
+      a(T);
+      var A = l(T, 2);
       {
-        var R = l => {
-          var s = Pd(),
-            d = o(s),
-            f = o(d, !0);
-          a(d);
-          var b = c(d, 2);
+        var U = q => {
+          var _ = Cd(),
+            s = o(_),
+            d = o(s, !0);
+          a(s);
+          var g = l(s, 2);
           {
-            var z = j => {
-              var k = Dd(),
-                M = o(k, !0);
-              a(k), T(() => w(M, t.amountLabel)), u(j, k)
+            var v = b => {
+              var x = Sd(),
+                M = o(x, !0);
+              a(x), I(() => k(M, t.amountLabel)), u(b, x)
             };
-            A(b, j => {
-              t.amountLabel && j(z)
+            B(g, b => {
+              t.amountLabel && b(v)
             })
           }
-          a(s), T(() => w(f, t.amount)), u(l, s)
+          a(_), I(() => k(d, t.amount)), u(q, _)
         };
-        A(S, l => {
-          t.amount && l(R)
+        B(A, q => {
+          t.amount && q(U)
         })
       }
-      var ie = c(S, 2);
+      var ee = l(A, 2);
       {
-        var ke = l => {
-          var s = Cd(),
-            d = o(s);
+        var fe = q => {
+          var _ = zd(),
+            s = o(_);
           {
-            var f = j => {
-                var k = He(),
-                  M = ne(k);
-                Nt(M, () => t.body), u(j, k)
+            var d = b => {
+                var x = Ue(),
+                  M = re(x);
+                Wt(M, () => t.body), u(b, x)
               },
-              b = L(() => x(t.body)),
-              z = j => {
-                var k = Je();
-                T(() => w(k, t.body)), u(j, k)
+              g = S(() => j(t.body)),
+              v = b => {
+                var x = Je();
+                I(() => k(x, t.body)), u(b, x)
               };
-            A(d, j => {
-              r(b) ? j(f) : j(z, -1)
+            B(s, b => {
+              r(g) ? b(d) : b(v, -1)
             })
           }
-          a(s), u(l, s)
+          a(_), u(q, _)
         };
-        A(ie, l => {
-          t.body && l(ke)
+        B(ee, q => {
+          t.body && q(fe)
         })
       }
-      var ce = c(ie, 2);
+      var me = l(ee, 2);
       {
-        var ze = l => {
-          var s = zd();
-          pt(s, 21, () => t.bullets, At, (d, f) => {
-            var b = Sd(),
-              z = o(b),
-              j = o(z),
-              k = o(j, !0);
-            a(j);
-            var M = c(j, 2);
-            let le;
-            var re = o(M);
+        var ze = q => {
+          var _ = Ld();
+          dt(_, 21, () => t.bullets, Bt, (s, d) => {
+            var g = Ad(),
+              v = o(g),
+              b = o(v),
+              x = o(b, !0);
+            a(b);
+            var M = l(b, 2);
+            let ae;
+            var te = o(M);
             {
-              var Y = $ => {
-                wd($)
+              var N = _e => {
+                kd(_e)
               };
-              A(re, $ => {
-                r(f).valueIcon && $(Y)
+              B(te, _e => {
+                r(d).valueIcon && _e(N)
               })
             }
-            var Z = c(re);
-            a(M), a(z), a(b), T(() => {
-              w(k, r(f).label), le = Ye(M, "", le, {
-                color: r(f).valueColor ?? r(D).accent
-              }), w(Z, ` ${r(f).value??""??""}`)
-            }), u(d, b)
-          }), a(s), u(l, s)
+            var oe = l(te);
+            a(M), a(v), a(g), I(() => {
+              k(x, r(d).label), ae = Ye(M, "", ae, {
+                color: r(d).valueColor ?? r(P).accent
+              }), k(oe, ` ${r(d).value??""??""}`)
+            }), u(s, g)
+          }), a(_), u(q, _)
         };
-        A(ce, l => {
-          t.bullets && l(ze)
+        B(me, q => {
+          t.bullets && q(ze)
         })
       }
-      var je = c(ce, 2);
+      var ve = l(me, 2);
       {
-        var se = l => {
-          var s = Bd(),
-            d = o(s);
-          pt(d, 17, () => t.receipt.rows, At, (z, j) => {
-            var k = Ad(),
-              M = o(k),
-              le = o(M, !0);
+        var ie = q => {
+          var _ = Id(),
+            s = o(_);
+          dt(s, 17, () => t.receipt.rows, Bt, (v, b) => {
+            var x = Bd(),
+              M = o(x),
+              ae = o(M, !0);
             a(M);
-            var re = c(M, 2);
-            let Y;
-            var Z = o(re, !0);
-            a(re), a(k), T(() => {
-              w(le, r(j).label), Y = Ye(re, "", Y, {
-                color: r(j).color
-              }), w(Z, r(j).value)
-            }), u(z, k)
+            var te = l(M, 2);
+            let N;
+            var oe = o(te, !0);
+            a(te), a(x), I(() => {
+              k(ae, r(b).label), N = Ye(te, "", N, {
+                color: r(b).color
+              }), k(oe, r(b).value)
+            }), u(v, x)
           });
-          var f = c(d, 2);
+          var d = l(s, 2);
           {
-            var b = z => {
-              var j = Ld(),
-                k = c(ne(j), 2),
-                M = o(k),
-                le = o(M, !0);
+            var g = v => {
+              var b = Td(),
+                x = l(re(b), 2),
+                M = o(x),
+                ae = o(M, !0);
               a(M);
-              var re = c(M, 2),
-                Y = o(re, !0);
-              a(re), a(k), T(() => {
-                w(le, t.receipt.total.label), w(Y, t.receipt.total.value)
-              }), u(z, j)
+              var te = l(M, 2),
+                N = o(te, !0);
+              a(te), a(x), I(() => {
+                k(ae, t.receipt.total.label), k(N, t.receipt.total.value)
+              }), u(v, b)
             };
-            A(f, z => {
-              t.receipt.total && z(b)
+            B(d, v => {
+              t.receipt.total && v(g)
             })
           }
-          a(s), u(l, s)
+          a(_), u(q, _)
         };
-        A(je, l => {
-          t.receipt && l(se)
+        B(ve, q => {
+          t.receipt && q(ie)
         })
       }
-      var he = c(je, 2);
+      var le = l(ve, 2);
       {
-        var ue = l => {
-          var s = Td();
-          u(l, s)
+        var ce = q => {
+          var _ = Ed();
+          u(q, _)
         };
-        A(he, l => {
-          q() && l(ue)
+        B(le, q => {
+          D() && q(ce)
         })
       }
-      var Ae = c(he, 2);
+      var He = l(le, 2);
       {
-        var Ne = l => {
-          var s = Id(),
-            d = o(s);
+        var Oe = q => {
+          var _ = Gd(),
+            s = o(_);
           {
-            var f = j => {
-                var k = He(),
-                  M = ne(k);
-                Nt(M, () => t.meta), u(j, k)
+            var d = b => {
+                var x = Ue(),
+                  M = re(x);
+                Wt(M, () => t.meta), u(b, x)
               },
-              b = L(() => x(t.meta)),
-              z = j => {
-                var k = Je();
-                T(() => w(k, t.meta)), u(j, k)
+              g = S(() => j(t.meta)),
+              v = b => {
+                var x = Je();
+                I(() => k(x, t.meta)), u(b, x)
               };
-            A(d, j => {
-              r(b) ? j(f) : j(z, -1)
+            B(s, b => {
+              r(g) ? b(d) : b(v, -1)
             })
           }
-          a(s), u(l, s)
+          a(_), u(q, _)
         };
-        A(Ae, l => {
-          t.meta && l(Ne)
+        B(He, q => {
+          t.meta && q(Oe)
         })
       }
-      var Re = c(Ae, 2);
+      var Ae = l(He, 2);
       {
-        var Oe = l => {
-            var s = Ed(),
-              d = o(s),
-              f = o(d, !0);
-            a(d);
-            var b = c(d, 2);
-            let z;
-            var j = o(b, !0);
-            a(b), a(s), T(() => {
-              w(f, t.buttonRow.secondary.label), z = Ye(b, "", z, {
+        var Ne = q => {
+            var _ = Rd(),
+              s = o(_),
+              d = o(s, !0);
+            a(s);
+            var g = l(s, 2);
+            let v;
+            var b = o(g, !0);
+            a(g), a(_), I(() => {
+              k(d, t.buttonRow.secondary.label), v = Ye(g, "", v, {
                 "--cta-bg": t.buttonRow.primary.color,
                 "--cta-dark": t.buttonRow.primary.colorDark
-              }), w(j, t.buttonRow.primary.label)
-            }), me("click", d, function(...k) {
+              }), k(b, t.buttonRow.primary.label)
+            }), he("click", s, function(...x) {
               var M;
-              (M = t.buttonRow.secondary.onClick) == null || M.apply(this, k)
-            }), me("click", b, function(...k) {
+              (M = t.buttonRow.secondary.onClick) == null || M.apply(this, x)
+            }), he("click", g, function(...x) {
               var M;
-              (M = t.buttonRow.primary.onClick) == null || M.apply(this, k)
-            }), u(l, s)
+              (M = t.buttonRow.primary.onClick) == null || M.apply(this, x)
+            }), u(q, _)
           },
-          Ze = l => {
-            var s = Gd();
-            let d;
-            var f = o(s),
-              b = o(f, !0);
-            a(f);
-            var z = c(f, 2);
+          Ze = q => {
+            var _ = Md();
+            let s;
+            var d = o(_),
+              g = o(d, !0);
+            a(d);
+            var v = l(d, 2);
             {
-              var j = k => {
-                xd(k)
+              var b = x => {
+                jd(x)
               };
-              A(z, k => {
-                t.primary.arrow !== !1 && k(j)
+              B(v, x => {
+                t.primary.arrow !== !1 && x(b)
               })
             }
-            a(s), T(() => {
-              d = Ye(s, "", d, {
+            a(_), I(() => {
+              s = Ye(_, "", s, {
                 "--cta-bg": t.primary.color,
                 "--cta-dark": t.primary.colorDark
-              }), w(b, t.primary.label)
-            }), me("click", s, function(...k) {
+              }), k(g, t.primary.label)
+            }), he("click", _, function(...x) {
               var M;
-              (M = t.primary.onClick) == null || M.apply(this, k)
-            }), u(l, s)
+              (M = t.primary.onClick) == null || M.apply(this, x)
+            }), u(q, _)
           };
-        A(Re, l => {
-          t.buttonRow ? l(Oe) : t.primary && l(Ze, 1)
+        B(Ae, q => {
+          t.buttonRow ? q(Ne) : t.primary && q(Ze, 1)
         })
       }
-      var We = c(Re, 2);
+      var We = l(Ae, 2);
       {
-        var Xe = l => {
-          var s = Rd(),
-            d = o(s, !0);
-          a(s), T(() => w(d, t.secondary.label)), me("click", s, function(...f) {
-            var b;
-            (b = t.secondary.onClick) == null || b.apply(this, f)
-          }), u(l, s)
+        var Xe = q => {
+          var _ = Ud(),
+            s = o(_, !0);
+          a(_), I(() => k(s, t.secondary.label)), he("click", _, function(...d) {
+            var g;
+            (g = t.secondary.onClick) == null || g.apply(this, d)
+          }), u(q, _)
         };
-        A(We, l => {
-          t.secondary && !t.buttonRow && l(Xe)
+        B(We, q => {
+          t.secondary && !t.buttonRow && q(Xe)
         })
       }
-      var $e = c(We, 2);
+      var $e = l(We, 2);
       {
-        var at = l => {
-          var s = Md(),
-            d = o(s, !0);
-          a(s), T(f => {
-            Ge(s, "href", f), w(d, t.ghost)
-          }, [() => Kt("/")]), u(l, s)
+        var et = q => {
+          var _ = Hd(),
+            s = o(_, !0);
+          a(_), I(d => {
+            Ge(_, "href", d), k(s, t.ghost)
+          }, [() => Zt("/")]), u(q, _)
         };
-        A($e, l => {
-          t.ghost && l(at)
+        B($e, q => {
+          t.ghost && q(et)
         })
       }
-      a(ae), a(I), T(() => {
-        V = Pe(C, 1, "wp-badge svelte-ifq4hh", null, V, {
-          "wp-badge-spin": _() === "loading"
-        }), G = Ye(C, "", G, {
-          background: r(D).accent,
-          "--bd": r(D).accentDark,
-          "--bg-glow": r(D).accentShadow
-        }), v = Ye(B, "", v, {
-          color: r(D).titleColor
-        }), w(O, `${t.title??""} `)
-      }), u(E, I)
+      a(ne), a(E), I(() => {
+        V = Pe(z, 1, "wp-badge svelte-ifq4hh", null, V, {
+          "wp-badge-spin": c() === "loading"
+        }), R = Ye(z, "", R, {
+          background: r(P).accent,
+          "--bd": r(P).accentDark,
+          "--bg-glow": r(P).accentShadow
+        }), m = Ye(T, "", m, {
+          color: r(P).titleColor
+        }), k(O, `${t.title??""} `)
+      }), u(G, E)
     },
-    i = E => {
-      var I = He(),
-        C = ne(I);
+    i = G => {
+      var E = Ue(),
+        z = re(E);
       {
-        var V = S => {
-            var R = Hd();
-            u(S, R)
+        var V = A => {
+            var U = Fd();
+            u(A, U)
           },
-          G = S => {
-            var R = Od();
-            u(S, R)
+          R = A => {
+            var U = Vd();
+            u(A, U)
           },
-          N = S => {
-            var R = Fd();
-            u(S, R)
+          K = A => {
+            var U = Kd();
+            u(A, U)
           },
-          ae = S => {
-            var R = Vd();
-            u(S, R)
+          ne = A => {
+            var U = Nd();
+            u(A, U)
           },
-          B = S => {
-            var R = Kd();
-            u(S, R)
+          T = A => {
+            var U = Zd();
+            u(A, U)
           },
-          v = S => {
-            var R = Nd();
-            u(S, R)
+          m = A => {
+            var U = Wd();
+            u(A, U)
           },
-          O = S => {
-            var R = Zd();
-            u(S, R)
+          O = A => {
+            var U = Yd();
+            u(A, U)
           },
-          F = S => {
-            var R = Wd();
-            u(S, R)
+          F = A => {
+            var U = Jd();
+            u(A, U)
           },
-          K = S => {
-            var R = Yd();
-            u(S, R)
+          Y = A => {
+            var U = Qd();
+            u(A, U)
           };
-        A(C, S => {
-          _() === "success" ? S(V) : _() === "error" ? S(G, 1) : _() === "warning" ? S(N, 2) : _() === "info" ? S(ae, 3) : _() === "reward" ? S(B, 4) : _() === "question" ? S(v, 5) : _() === "confirmation" ? S(O, 6) : _() === "loading" ? S(F, 7) : S(K, -1)
+        B(z, A => {
+          c() === "success" ? A(V) : c() === "error" ? A(R, 1) : c() === "warning" ? A(K, 2) : c() === "info" ? A(ne, 3) : c() === "reward" ? A(T, 4) : c() === "question" ? A(m, 5) : c() === "confirmation" ? A(O, 6) : c() === "loading" ? A(F, 7) : A(Y, -1)
         })
       }
-      u(E, I)
+      u(G, E)
     };
-  let _ = we(t, "variant", 3, "success"),
-    g = we(t, "embedded", 3, !1),
-    q = we(t, "progress", 3, !1);
-  const D = L(() => kd[_()]),
-    x = E => typeof E == "function";
-  var y = He(),
-    m = ne(y);
+  let c = ke(t, "variant", 3, "success"),
+    w = ke(t, "embedded", 3, !1),
+    D = ke(t, "progress", 3, !1);
+  const P = S(() => qd[c()]),
+    j = G => typeof G == "function";
+  var f = Ue(),
+    h = re(f);
   {
-    var U = E => {
-        var I = $d(),
-          C = o(I);
-        e(C), a(I), u(E, I)
+    var H = G => {
+        var E = tf(),
+          z = o(E);
+        e(z), a(E), u(G, E)
       },
-      Q = E => {
-        var I = tf(),
-          C = o(I);
-        Ge(C, "viewBox", `0 0 ${$t} ${er}`), pt(C, 21, () => tr, se => se.x + "-" + se.y, (se, he) => {
-          var ue = ef();
-          T(() => {
-            Ge(ue, "x", r(he).x), Ge(ue, "y", r(he).y)
-          }), u(se, ue)
-        }), a(C);
-        var V = c(C, 2),
-          G = o(V),
-          N = o(G);
-        mt(N), a(G);
-        var ae = c(G, 2),
-          B = o(ae);
-        mt(B), a(ae);
-        var v = c(ae, 2),
-          O = o(v);
-        mt(O), a(v);
-        var F = c(v, 2),
-          K = o(F);
-        mt(K), a(F), a(V);
-        var S = c(V, 2),
-          R = o(S),
-          ie = o(R),
-          ke = o(ie);
-        kt(2), a(ie);
-        var ce = c(ie, 2);
-        a(R);
-        var ze = c(R, 2),
-          je = o(ze);
-        e(je), a(ze), a(S), a(I), T(se => {
-          Ge(ie, "href", se), Ge(ke, "src", Cr)
-        }, [() => Kt("/")]), me("click", ce, function(...se) {
-          var he;
-          (he = t.onclose) == null || he.apply(this, se)
-        }), u(E, I)
+      Q = G => {
+        var E = nf(),
+          z = o(E);
+        Ge(z, "viewBox", `0 0 ${tr} ${rr}`), dt(z, 21, () => nr, ie => ie.x + "-" + ie.y, (ie, le) => {
+          var ce = rf();
+          I(() => {
+            Ge(ce, "x", r(le).x), Ge(ce, "y", r(le).y)
+          }), u(ie, ce)
+        }), a(z);
+        var V = l(z, 2),
+          R = o(V),
+          K = o(R);
+        gt(K), a(R);
+        var ne = l(R, 2),
+          T = o(ne);
+        gt(T), a(ne);
+        var m = l(ne, 2),
+          O = o(m);
+        gt(O), a(m);
+        var F = l(m, 2),
+          Y = o(F);
+        gt(Y), a(F), a(V);
+        var A = l(V, 2),
+          U = o(A),
+          ee = o(U),
+          fe = o(ee);
+        qt(2), a(ee);
+        var me = l(ee, 2);
+        a(U);
+        var ze = l(U, 2),
+          ve = o(ze);
+        e(ve), a(ze), a(A), a(E), I(ie => {
+          Ge(ee, "href", ie), Ge(fe, "src", zr)
+        }, [() => Zt("/")]), he("click", me, function(...ie) {
+          var le;
+          (le = t.onclose) == null || le.apply(this, ie)
+        }), u(G, E)
       };
-    A(m, E => {
-      g() ? E(U) : E(Q, -1)
+    B(h, G => {
+      w() ? G(H) : G(Q, -1)
     })
   }
-  u(n, y), Se()
+  u(n, f), Ce()
 }
-jt(["click"]);
+Dt(["click"]);
 
-function rf(n, t) {
-  Ce(t, !0);
-  let e = we(t, "open", 15);
-  Lt(() => {
-    e() && xr()
+function af(n, t) {
+  Se(t, !0);
+  let e = ke(t, "open", 15);
+  Tt(() => {
+    e() && jr()
   }), Ke(n, {
     isDynamicHeight: !0,
     hasCloseButton: !1,
@@ -1399,33 +1399,33 @@ function rf(n, t) {
     set open(i) {
       e(i)
     },
-    children: (i, _) => {
+    children: (i, c) => {
       {
-        let g = L(() => ua()),
-          q = L(() => En()),
-          D = L(() => ({
-            label: Yn(),
+        let w = S(() => ca()),
+          D = S(() => Rn()),
+          P = S(() => ({
+            label: Qn(),
             arrow: !1,
             onClick: t.onRetry
           })),
-          x = L(() => ({
-            label: Bt(),
+          j = S(() => ({
+            label: It(),
             onClick: () => e(!1)
           }));
-        nt(i, {
+        ot(i, {
           embedded: !0,
           variant: "error",
           get title() {
-            return r(g)
+            return r(w)
           },
           get body() {
-            return r(q)
-          },
-          get primary() {
             return r(D)
           },
+          get primary() {
+            return r(P)
+          },
           get secondary() {
-            return r(x)
+            return r(j)
           }
         })
       }
@@ -1433,108 +1433,108 @@ function rf(n, t) {
     $$slots: {
       default: !0
     }
-  }), Se()
+  }), Ce()
 }
 
-function nf(n, t) {
+function of(n, t) {
   let e;
   return ((...i) => {
     clearTimeout(e), e = setTimeout(() => n(...i), t)
   })
 }
-var af = h('<li class="bg-base-100 border-base-content/10 grid items-center gap-3 rounded-2xl border px-3.5 py-3" style="grid-template-columns: 36px 1fr auto;"><div class="bg-primary/10 grid size-9 place-items-center rounded-[10px]"><!></div> <div class="flex min-w-0 flex-col gap-0.5"><div class="flex items-baseline gap-1"><span class="text-base-content text-base font-extrabold tracking-tight tabular-nums"> </span> <span class="text-base-content/70 text-[12.5px] font-semibold">Droplets</span></div></div> <div class="text-base-content/60 flex flex-col items-end gap-0.5 text-[11px] font-semibold whitespace-nowrap tabular-nums"><span> </span></div></li>'),
-  of = h('<ul class="flex flex-col gap-1.5"></ul>'),
-  sf = h('<div class="flex flex-col gap-0.5"><span class="text-base-content/60 text-[11px] font-semibold tracking-[0.08em] uppercase"> </span> <h3 class="text-[22px] leading-tight font-extrabold tracking-tight"> </h3></div>'),
-  uf = h('<span class="loading loading-spinner size-4"></span>'),
-  lf = h("<span> </span>"),
-  cf = h('<span class="bg-primary absolute right-2 -bottom-px left-2 h-0.5 rounded-t"></span>'),
-  _f = h('<button role="tab" type="button"><span> </span> <!> <!></button>'),
-  pf = h('<div class="flex h-32 items-center justify-center"><span class="loading loading-spinner loading-lg"></span></div>'),
-  df = h('<p class="text-warning/90 px-3.5 pb-3 pl-9 text-[12.5px] leading-snug"> </p>'),
-  ff = h('<div class="bg-warning/10 border-warning/30 overflow-hidden rounded-2xl border"><button type="button" class="flex w-full items-center gap-2.5 px-3.5 py-3 text-left"><!> <span class="text-warning flex-1 text-[13px] font-bold"> </span> <!></button> <!></div> <!> <div class="flex items-center justify-between px-1 pt-2"><span class="text-base-content/70 text-xs font-semibold"> </span> <span class="text-base-content inline-flex items-center gap-1 text-sm font-extrabold tabular-nums"><!> </span></div>', 1),
-  yf = h('<!> <div class="flex items-center justify-between px-1 pt-2"><span class="text-base-content/70 text-xs font-semibold"> </span></div>', 1),
-  hf = h('<div class="bg-base-100 ring-primary/15 text-primary absolute -right-1 -bottom-1 grid size-9 place-items-center rounded-full shadow-md ring-2"><!></div>'),
-  mf = h('<div class="bg-error ring-base-100 absolute -top-1 -right-1 grid size-8 place-items-center rounded-full text-white shadow-md ring-2"><!></div>'),
-  vf = h('<span class="loading loading-spinner size-3"></span>'),
-  gf = h('<div class="flex flex-col items-center px-7 py-8 text-center"><div class="relative mb-4"><div class="bg-primary/5 grid size-28 place-items-center rounded-full"><div class="bg-primary/10 grid size-20 place-items-center rounded-full"><!></div></div> <!></div> <div class="mb-1.5 text-base font-extrabold tracking-tight"> </div> <div class="text-base-content/60 mb-4 max-w-[240px] text-[13px] leading-snug"> </div> <button type="button" class="bg-primary/10 text-primary hover:bg-primary/20 inline-flex items-center gap-1.5 rounded-lg px-3.5 py-2 text-[12.5px] font-bold transition-colors disabled:opacity-60"><!> </button></div>'),
-  bf = h('<div class="-mx-4 -mb-4 flex flex-col gap-3 sm:-mx-6"><div class="px-4 sm:px-6"><div class="from-primary text-primary-content shadow-primary/30 flex items-center gap-3 rounded-2xl bg-gradient-to-br to-blue-500 p-3 shadow-lg"><div class="grid size-9 place-items-center rounded-xl bg-white/15 backdrop-blur"><!></div> <div class="flex flex-1 flex-col"><span class="text-[11px] font-semibold tracking-[0.06em] text-white/75 uppercase"> </span> <div class="flex items-baseline gap-1.5"><span class="text-[22px] font-extrabold tracking-tight tabular-nums"> </span> <span class="text-xs font-semibold text-white/75">Droplets</span></div></div> <button type="button" class="grid size-9 place-items-center rounded-xl bg-white/15 transition-all hover:bg-white/25 active:rotate-180 disabled:opacity-60"><!></button></div></div> <div role="tablist" class="border-base-content/10 -mb-px flex scrollbar-none gap-1 overflow-x-auto overflow-y-hidden border-b px-2 sm:px-4"></div> <div class="flex flex-col gap-3 px-4 pt-1 pb-5 sm:px-6"><!></div></div>');
+var sf = y('<li class="bg-base-100 border-base-content/10 grid items-center gap-3 rounded-2xl border px-3.5 py-3" style="grid-template-columns: 36px 1fr auto;"><div class="bg-primary/10 grid size-9 place-items-center rounded-[10px]"><!></div> <div class="flex min-w-0 flex-col gap-0.5"><div class="flex items-baseline gap-1"><span class="text-base-content text-base font-extrabold tracking-tight tabular-nums"> </span> <span class="text-base-content/70 text-[12.5px] font-semibold">Droplets</span></div></div> <div class="text-base-content/60 flex flex-col items-end gap-0.5 text-[11px] font-semibold whitespace-nowrap tabular-nums"><span> </span></div></li>'),
+  uf = y('<ul class="flex flex-col gap-1.5"></ul>'),
+  lf = y('<div class="flex flex-col gap-0.5"><span class="text-base-content/60 text-[11px] font-semibold tracking-[0.08em] uppercase"> </span> <h3 class="text-[22px] leading-tight font-extrabold tracking-tight"> </h3></div>'),
+  cf = y('<span class="loading loading-spinner size-4"></span>'),
+  _f = y("<span> </span>"),
+  pf = y('<span class="bg-primary absolute right-2 -bottom-px left-2 h-0.5 rounded-t"></span>'),
+  df = y('<button role="tab" type="button"><span> </span> <!> <!></button>'),
+  ff = y('<div class="flex h-32 items-center justify-center"><span class="loading loading-spinner loading-lg"></span></div>'),
+  yf = y('<p class="text-warning/90 px-3.5 pb-3 pl-9 text-[12.5px] leading-snug"> </p>'),
+  hf = y('<div class="bg-warning/10 border-warning/30 overflow-hidden rounded-2xl border"><button type="button" class="flex w-full items-center gap-2.5 px-3.5 py-3 text-left"><!> <span class="text-warning flex-1 text-[13px] font-bold"> </span> <!></button> <!></div> <!> <div class="flex items-center justify-between px-1 pt-2"><span class="text-base-content/70 text-xs font-semibold"> </span> <span class="text-base-content inline-flex items-center gap-1 text-sm font-extrabold tabular-nums"><!> </span></div>', 1),
+  mf = y('<!> <div class="flex items-center justify-between px-1 pt-2"><span class="text-base-content/70 text-xs font-semibold"> </span></div>', 1),
+  vf = y('<div class="bg-base-100 ring-primary/15 text-primary absolute -right-1 -bottom-1 grid size-9 place-items-center rounded-full shadow-md ring-2"><!></div>'),
+  gf = y('<div class="bg-error ring-base-100 absolute -top-1 -right-1 grid size-8 place-items-center rounded-full text-white shadow-md ring-2"><!></div>'),
+  bf = y('<span class="loading loading-spinner size-3"></span>'),
+  wf = y('<div class="flex flex-col items-center px-7 py-8 text-center"><div class="relative mb-4"><div class="bg-primary/5 grid size-28 place-items-center rounded-full"><div class="bg-primary/10 grid size-20 place-items-center rounded-full"><!></div></div> <!></div> <div class="mb-1.5 text-base font-extrabold tracking-tight"> </div> <div class="text-base-content/60 mb-4 max-w-[240px] text-[13px] leading-snug"> </div> <button type="button" class="bg-primary/10 text-primary hover:bg-primary/20 inline-flex items-center gap-1.5 rounded-lg px-3.5 py-2 text-[12.5px] font-bold transition-colors disabled:opacity-60"><!> </button></div>'),
+  xf = y('<div class="-mx-4 -mb-4 flex flex-col gap-3 sm:-mx-6"><div class="px-4 sm:px-6"><div class="from-primary text-primary-content shadow-primary/30 flex items-center gap-3 rounded-2xl bg-gradient-to-br to-blue-500 p-3 shadow-lg"><div class="grid size-9 place-items-center rounded-xl bg-white/15 backdrop-blur"><!></div> <div class="flex flex-1 flex-col"><span class="text-[11px] font-semibold tracking-[0.06em] text-white/75 uppercase"> </span> <div class="flex items-baseline gap-1.5"><span class="text-[22px] font-extrabold tracking-tight tabular-nums"> </span> <span class="text-xs font-semibold text-white/75">Droplets</span></div></div> <button type="button" class="grid size-9 place-items-center rounded-xl bg-white/15 transition-all hover:bg-white/25 active:rotate-180 disabled:opacity-60"><!></button></div></div> <div role="tablist" class="border-base-content/10 -mb-px flex scrollbar-none gap-1 overflow-x-auto overflow-y-hidden border-b px-2 sm:px-4"></div> <div class="flex flex-col gap-3 px-4 pt-1 pb-5 sm:px-6"><!></div></div>');
 
-function wf(n, t) {
-  Ce(t, !0);
-  const e = (B, v = gr) => {
-    var O = of();
-    pt(O, 21, v, At, (F, K) => {
-      const S = L(() => r(K).status === "refunded" ? r(K).updatedAt : r(K).createdAt);
-      var R = af(),
-        ie = o(R),
-        ke = o(ie);
-      Qe(ke, {
+function kf(n, t) {
+  Se(t, !0);
+  const e = (T, m = wr) => {
+    var O = uf();
+    dt(O, 21, m, Bt, (F, Y) => {
+      const A = S(() => r(Y).status === "refunded" ? r(Y).updatedAt : r(Y).createdAt);
+      var U = sf(),
+        ee = o(U),
+        fe = o(ee);
+      Qe(fe, {
         class: "text-primary size-5"
-      }), a(ie);
-      var ce = c(ie, 2),
-        ze = o(ce),
-        je = o(ze),
-        se = o(je, !0);
-      a(je), kt(2), a(ze), a(ce);
-      var he = c(ce, 2),
-        ue = o(he),
-        Ae = o(ue, !0);
-      a(ue), a(he), a(R), T((Ne, Re) => {
-        w(se, Ne), w(Ae, Re)
-      }, [() => r(K).droplets.toLocaleString(navigator.language), () => G(new Date, new Date(r(S)))]), u(F, R)
-    }), a(O), u(B, O)
+      }), a(ee);
+      var me = l(ee, 2),
+        ze = o(me),
+        ve = o(ze),
+        ie = o(ve, !0);
+      a(ve), qt(2), a(ze), a(me);
+      var le = l(me, 2),
+        ce = o(le),
+        He = o(ce, !0);
+      a(ce), a(le), a(U), I((Oe, Ae) => {
+        k(ie, Oe), k(He, Ae)
+      }, [() => r(Y).droplets.toLocaleString(navigator.language), () => R(new Date, new Date(r(A)))]), u(F, U)
+    }), a(O), u(T, O)
   };
-  let i = we(t, "open", 15),
-    _ = W(!1),
-    g = W(vr([])),
-    q = W(!1),
-    D = W("pending"),
-    x = W(!0);
-  const y = L(() => r(g).reduce((B, v) => (B[v.status].push(v), B), {
+  let i = ke(t, "open", 15),
+    c = W(!1),
+    w = W(br([])),
+    D = W(!1),
+    P = W("pending"),
+    j = W(!0);
+  const f = S(() => r(w).reduce((T, m) => (T[m.status].push(m), T), {
       pending: [],
       paid: [],
       refunded: [],
       rejected: []
     })),
-    m = L(() => r(y)[r(D)]),
-    U = L(() => r(m).reduce((B, v) => B + v.droplets, 0));
+    h = S(() => r(f)[r(P)]),
+    H = S(() => r(h).reduce((T, m) => T + m.droplets, 0));
   async function Q() {
-    p(q, !0);
+    p(D, !0);
     try {
       const {
-        purchases: B
+        purchases: T
       } = await Ee.listPlayPurchaseHistory();
-      p(g, B, !0)
+      p(w, T, !0)
     } catch {
-      p(g, [], !0)
+      p(w, [], !0)
     } finally {
-      p(q, !1), Jt.markViewed()
+      p(D, !1), Xt.markViewed()
     }
   }
-  Lt(() => {
-    i() && (p(D, "pending"), p(x, !0), Q())
+  Tt(() => {
+    i() && (p(P, "pending"), p(j, !0), Q())
   });
-  async function E() {
+  async function G() {
     return Te.autoRecoverPendingPurchases()
   }
-  let I = nf(async function() {
+  let E = of(async function() {
     try {
-      p(_, !0), r(y).pending.length > 0 && await Ee.verifyPendingPlayPurchases().catch(() => {}), await E(), await Q()
+      p(c, !0), r(f).pending.length > 0 && await Ee.verifyPendingPlayPurchases().catch(() => {}), await G(), await Q()
     } finally {
-      p(_, !1)
+      p(c, !1)
     }
   }, 100);
 
-  function C(B) {
-    return String(B).padStart(2, "0")
+  function z(T) {
+    return String(T).padStart(2, "0")
   }
 
-  function V(B, v) {
-    return B.getFullYear() === v.getFullYear() && B.getMonth() === v.getMonth() && B.getDate() === v.getDate()
+  function V(T, m) {
+    return T.getFullYear() === m.getFullYear() && T.getMonth() === m.getMonth() && T.getDate() === m.getDate()
   }
 
-  function G(B, v) {
-    const O = Math.floor((B.getTime() - v.getTime()) / 6e4),
+  function R(T, m) {
+    const O = Math.floor((T.getTime() - m.getTime()) / 6e4),
       F = navigator.language;
     if (O < 1) return new Intl.RelativeTimeFormat(F, {
       numeric: "auto"
@@ -1542,31 +1542,31 @@ function wf(n, t) {
     if (O < 60) return new Intl.RelativeTimeFormat(F, {
       numeric: "auto"
     }).format(-O, "minute");
-    if (V(B, v)) return `${ns()}, ${C(v.getHours())}:${C(v.getMinutes())}`;
-    const K = new Date(B);
-    return K.setDate(K.getDate() - 1), V(K, v) ? `${hs()}, ${C(v.getHours())}:${C(v.getMinutes())}` : v.toLocaleDateString(F, {
+    if (V(T, m)) return `${os()}, ${z(m.getHours())}:${z(m.getMinutes())}`;
+    const Y = new Date(T);
+    return Y.setDate(Y.getDate() - 1), V(Y, m) ? `${vs()}, ${z(m.getHours())}:${z(m.getMinutes())}` : m.toLocaleDateString(F, {
       day: "2-digit",
       month: "2-digit"
-    }) + ` ${C(v.getHours())}:${C(v.getMinutes())}`
+    }) + ` ${z(m.getHours())}:${z(m.getMinutes())}`
   }
 
-  function N(B, v) {
-    return B === "pending" ? v ? "bg-warning text-warning-content" : "bg-warning/15 text-warning" : v ? "bg-primary text-primary-content" : "bg-primary/10 text-base-content/70"
+  function K(T, m) {
+    return T === "pending" ? m ? "bg-warning text-warning-content" : "bg-warning/15 text-warning" : m ? "bg-primary text-primary-content" : "bg-primary/10 text-base-content/70"
   }
 
-  function ae(B) {
-    return B === "pending" ? {
-      title: bo(),
-      body: Bo()
-    } : B === "paid" ? {
-      title: Za(),
-      body: io()
-    } : B === "rejected" ? {
-      title: vi(),
-      body: Ai()
+  function ne(T) {
+    return T === "pending" ? {
+      title: xo(),
+      body: Io()
+    } : T === "paid" ? {
+      title: Ya(),
+      body: uo()
+    } : T === "rejected" ? {
+      title: bi(),
+      body: Bi()
     } : {
-      title: No(),
-      body: oi()
+      title: Wo(),
+      body: si()
     }
   }
   Ke(n, {
@@ -1576,258 +1576,258 @@ function wf(n, t) {
     get open() {
       return i()
     },
-    set open(v) {
-      i(v)
+    set open(m) {
+      i(m)
     },
-    header: v => {
-      var O = sf(),
+    header: m => {
+      var O = lf(),
         F = o(O),
-        K = o(F, !0);
+        Y = o(F, !0);
       a(F);
-      var S = c(F, 2),
-        R = o(S, !0);
-      a(S), a(O), T((ie, ke) => {
-        w(K, ie), w(R, ke)
-      }, [() => Vi(), () => Xu()]), u(v, O)
+      var A = l(F, 2),
+        U = o(A, !0);
+      a(A), a(O), I((ee, fe) => {
+        k(Y, ee), k(U, fe)
+      }, [() => Ni(), () => el()]), u(m, O)
     },
-    children: (v, O) => {
-      var F = bf(),
-        K = o(F),
-        S = o(K),
-        R = o(S),
-        ie = o(R);
-      Qe(ie, {
+    children: (m, O) => {
+      var F = xf(),
+        Y = o(F),
+        A = o(Y),
+        U = o(A),
+        ee = o(U);
+      Qe(ee, {
         class: "size-5 text-white"
-      }), a(R);
-      var ke = c(R, 2),
-        ce = o(ke),
-        ze = o(ce, !0);
-      a(ce);
-      var je = c(ce, 2),
-        se = o(je),
-        he = o(se, !0);
-      a(se), kt(2), a(je), a(ke);
-      var ue = c(ke, 2),
-        Ae = o(ue);
+      }), a(U);
+      var fe = l(U, 2),
+        me = o(fe),
+        ze = o(me, !0);
+      a(me);
+      var ve = l(me, 2),
+        ie = o(ve),
+        le = o(ie, !0);
+      a(ie), qt(2), a(ve), a(fe);
+      var ce = l(fe, 2),
+        He = o(ce);
       {
-        var Ne = s => {
-            var d = uf();
-            u(s, d)
+        var Oe = _ => {
+            var s = cf();
+            u(_, s)
           },
-          Re = s => {
-            zt(s, {
+          Ae = _ => {
+            Lt(_, {
               class: "size-4"
             })
           };
-        A(Ae, s => {
-          r(_) ? s(Ne) : s(Re, -1)
+        B(He, _ => {
+          r(c) ? _(Oe) : _(Ae, -1)
         })
       }
-      a(ue), a(S), a(K);
-      var Oe = c(K, 2);
-      pt(Oe, 21, () => [{
+      a(ce), a(A), a(Y);
+      var Ne = l(Y, 2);
+      dt(Ne, 21, () => [{
         key: "pending",
-        label: Os(),
-        count: r(y).pending.length
+        label: Vs(),
+        count: r(f).pending.length
       }, {
         key: "paid",
-        label: Ss(),
-        count: r(y).paid.length
+        label: As(),
+        count: r(f).paid.length
       }, {
         key: "refunded",
-        label: tu(),
-        count: r(y).refunded.length
+        label: nu(),
+        count: r(f).refunded.length
       }, {
         key: "rejected",
-        label: fu(),
-        count: r(y).rejected.length
-      }], s => s.key, (s, d) => {
-        const f = L(() => r(D) === r(d).key);
-        var b = _f(),
-          z = o(b),
-          j = o(z, !0);
-        a(z);
-        var k = c(z, 2);
+        label: hu(),
+        count: r(f).rejected.length
+      }], _ => _.key, (_, s) => {
+        const d = S(() => r(P) === r(s).key);
+        var g = df(),
+          v = o(g),
+          b = o(v, !0);
+        a(v);
+        var x = l(v, 2);
         {
-          var M = Y => {
-            var Z = lf(),
-              $ = o(Z, !0);
-            a(Z), T(_e => {
-              Pe(Z, 1, `inline-flex h-[18px] min-w-[18px] items-center justify-center rounded-full px-1.5 text-[10px] font-bold ${_e??""}`), w($, r(d).count)
-            }, [() => N(r(d).key, r(f))]), u(Y, Z)
+          var M = N => {
+            var oe = _f(),
+              _e = o(oe, !0);
+            a(oe), I(se => {
+              Pe(oe, 1, `inline-flex h-[18px] min-w-[18px] items-center justify-center rounded-full px-1.5 text-[10px] font-bold ${se??""}`), k(_e, r(s).count)
+            }, [() => K(r(s).key, r(d))]), u(N, oe)
           };
-          A(k, Y => {
-            r(d).count > 0 && Y(M)
+          B(x, N => {
+            r(s).count > 0 && N(M)
           })
         }
-        var le = c(k, 2);
+        var ae = l(x, 2);
         {
-          var re = Y => {
-            var Z = cf();
-            u(Y, Z)
+          var te = N => {
+            var oe = pf();
+            u(N, oe)
           };
-          A(le, Y => {
-            r(f) && Y(re)
+          B(ae, N => {
+            r(d) && N(te)
           })
         }
-        a(b), T(() => {
-          Pe(b, 1, `relative flex flex-1 items-center justify-center gap-1.5 px-1.5 py-3.5 text-[13px] font-semibold transition-colors ${r(f)?"text-base-content":"text-base-content/60 hover:text-base-content/80"}`), w(j, r(d).label)
-        }), me("click", b, () => p(D, r(d).key, !0)), u(s, b)
-      }), a(Oe);
-      var Ze = c(Oe, 2),
+        a(g), I(() => {
+          Pe(g, 1, `relative flex flex-1 items-center justify-center gap-1.5 px-1.5 py-3.5 text-[13px] font-semibold transition-colors ${r(d)?"text-base-content":"text-base-content/60 hover:text-base-content/80"}`), k(b, r(s).label)
+        }), he("click", g, () => p(P, r(s).key, !0)), u(_, g)
+      }), a(Ne);
+      var Ze = l(Ne, 2),
         We = o(Ze);
       {
-        var Xe = s => {
-            var d = pf();
-            u(s, d)
+        var Xe = _ => {
+            var s = ff();
+            u(_, s)
           },
-          $e = s => {
-            var d = ff(),
-              f = ne(d),
-              b = o(f),
-              z = o(b);
-            zr(z, {
+          $e = _ => {
+            var s = hf(),
+              d = re(s),
+              g = o(d),
+              v = o(g);
+            Lr(v, {
               class: "text-warning size-4 shrink-0"
             });
-            var j = c(z, 2),
-              k = o(j, !0);
-            a(j);
-            var M = c(j, 2);
+            var b = l(v, 2),
+              x = o(b, !0);
+            a(b);
+            var M = l(b, 2);
             {
-              var le = H => {
-                  Pr(H, {
+              var ae = L => {
+                  Cr(L, {
                     class: "text-warning size-4"
                   })
                 },
-                re = H => {
-                  Ar(H, {
+                te = L => {
+                  Br(L, {
                     class: "text-warning size-4"
                   })
                 };
-              A(M, H => {
-                r(x) ? H(le) : H(re, -1)
+              B(M, L => {
+                r(j) ? L(ae) : L(te, -1)
               })
             }
-            a(b);
-            var Y = c(b, 2);
+            a(g);
+            var N = l(g, 2);
             {
-              var Z = H => {
-                var te = df(),
-                  ve = o(te, !0);
-                a(te), T(et => w(ve, et), [() => Yl()]), u(H, te)
+              var oe = L => {
+                var Z = yf(),
+                  qe = o(Z, !0);
+                a(Z), I(tt => k(qe, tt), [() => Ql()]), u(L, Z)
               };
-              A(Y, H => {
-                r(x) && H(Z)
+              B(N, L => {
+                r(j) && L(oe)
               })
             }
-            a(f);
-            var $ = c(f, 2);
-            e($, () => r(m));
-            var _e = c($, 2),
-              pe = o(_e),
-              Le = o(pe, !0);
-            a(pe);
-            var de = c(pe, 2),
-              oe = o(de);
-            Qe(oe, {
+            a(d);
+            var _e = l(d, 2);
+            e(_e, () => r(h));
+            var se = l(_e, 2),
+              ue = o(se),
+              ge = o(ue, !0);
+            a(ue);
+            var De = l(ue, 2),
+              Le = o(De);
+            Qe(Le, {
               class: "text-primary size-3.5"
             });
-            var qe = c(oe);
-            a(de), a(_e), T((H, te, ve) => {
-              w(k, H), w(Le, te), w(qe, ` ${ve??""}`)
-            }, [() => Ta(), () => Pu(), () => r(U).toLocaleString(navigator.language)]), me("click", b, () => p(x, !r(x))), u(s, d)
+            var ye = l(Le);
+            a(De), a(se), I((L, Z, qe) => {
+              k(x, L), k(ge, Z), k(ye, ` ${qe??""}`)
+            }, [() => Ea(), () => Cu(), () => r(H).toLocaleString(navigator.language)]), he("click", g, () => p(j, !r(j))), u(_, s)
           },
-          at = s => {
-            var d = yf(),
-              f = ne(d);
-            e(f, () => r(m));
-            var b = c(f, 2),
-              z = o(b),
-              j = o(z, !0);
-            a(z), a(b), T(k => w(j, k), [() => _l({
-              count: r(U).toLocaleString(navigator.language)
-            })]), u(s, d)
+          et = _ => {
+            var s = mf(),
+              d = re(s);
+            e(d, () => r(h));
+            var g = l(d, 2),
+              v = o(g),
+              b = o(v, !0);
+            a(v), a(g), I(x => k(b, x), [() => dl({
+              count: r(H).toLocaleString(navigator.language)
+            })]), u(_, s)
           },
-          l = s => {
-            const d = L(() => ae(r(D)));
-            var f = gf(),
-              b = o(f),
-              z = o(b),
-              j = o(z),
-              k = o(j);
-            Qe(k, {
+          q = _ => {
+            const s = S(() => ne(r(P)));
+            var d = wf(),
+              g = o(d),
+              v = o(g),
+              b = o(v),
+              x = o(b);
+            Qe(x, {
               class: "text-primary size-10"
-            }), a(j), a(z);
-            var M = c(z, 2);
+            }), a(b), a(v);
+            var M = l(v, 2);
             {
-              var le = H => {
-                  var te = hf(),
-                    ve = o(te);
-                  zt(ve, {
+              var ae = L => {
+                  var Z = vf(),
+                    qe = o(Z);
+                  Lt(qe, {
                     class: "size-5"
-                  }), a(te), u(H, te)
+                  }), a(Z), u(L, Z)
                 },
-                re = H => {
-                  var te = mf(),
-                    ve = o(te);
-                  Sr(ve, {
+                te = L => {
+                  var Z = gf(),
+                    qe = o(Z);
+                  Ar(qe, {
                     class: "size-4"
-                  }), a(te), u(H, te)
+                  }), a(Z), u(L, Z)
                 };
-              A(M, H => {
-                r(D) === "refunded" ? H(le) : r(D) === "rejected" && H(re, 1)
+              B(M, L => {
+                r(P) === "refunded" ? L(ae) : r(P) === "rejected" && L(te, 1)
               })
             }
-            a(b);
-            var Y = c(b, 2),
-              Z = o(Y, !0);
-            a(Y);
-            var $ = c(Y, 2),
-              _e = o($, !0);
-            a($);
-            var pe = c($, 2),
-              Le = o(pe);
+            a(g);
+            var N = l(g, 2),
+              oe = o(N, !0);
+            a(N);
+            var _e = l(N, 2),
+              se = o(_e, !0);
+            a(_e);
+            var ue = l(_e, 2),
+              ge = o(ue);
             {
-              var de = H => {
-                  var te = vf();
-                  u(H, te)
+              var De = L => {
+                  var Z = bf();
+                  u(L, Z)
                 },
-                oe = H => {
-                  zt(H, {
+                Le = L => {
+                  Lt(L, {
                     class: "size-3.5"
                   })
                 };
-              A(Le, H => {
-                r(_) ? H(de) : H(oe, -1)
+              B(ge, L => {
+                r(c) ? L(De) : L(Le, -1)
               })
             }
-            var qe = c(Le);
-            a(pe), a(f), T(H => {
-              w(Z, r(d).title), w(_e, r(d).body), pe.disabled = r(_), w(qe, ` ${H??""}`)
-            }, [() => Zt()]), me("click", pe, I), u(s, f)
+            var ye = l(ge);
+            a(ue), a(d), I(L => {
+              k(oe, r(s).title), k(se, r(s).body), ue.disabled = r(c), k(ye, ` ${L??""}`)
+            }, [() => Yt()]), he("click", ue, E), u(_, d)
           };
-        A(We, s => {
-          r(q) && r(g).length === 0 ? s(Xe) : r(D) === "pending" && r(m).length > 0 ? s($e, 1) : r(m).length > 0 ? s(at, 2) : s(l, -1)
+        B(We, _ => {
+          r(D) && r(w).length === 0 ? _(Xe) : r(P) === "pending" && r(h).length > 0 ? _($e, 1) : r(h).length > 0 ? _(et, 2) : _(q, -1)
         })
       }
-      a(Ze), a(F), T((s, d, f) => {
-        w(ze, s), w(he, d), Ge(ue, "aria-label", f), ue.disabled = r(_)
-      }, [() => wa(), () => {
-        var s;
-        return (((s = De.data) == null ? void 0 : s.droplets) ?? 0).toLocaleString(navigator.language)
-      }, () => Zt()]), me("click", ue, I), u(v, F)
+      a(Ze), a(F), I((_, s, d) => {
+        k(ze, _), k(le, s), Ge(ce, "aria-label", d), ce.disabled = r(c)
+      }, [() => ka(), () => {
+        var _;
+        return (((_ = xe.data) == null ? void 0 : _.droplets) ?? 0).toLocaleString(navigator.language)
+      }, () => Yt()]), he("click", ce, E), u(m, F)
     },
     $$slots: {
       header: !0,
       default: !0
     }
-  }), Se()
+  }), Ce()
 }
-jt(["click"]);
+Dt(["click"]);
 
-function xf(n, t) {
-  Ce(t, !0);
-  let e = we(t, "open", 15);
+function jf(n, t) {
+  Se(t, !0);
+  let e = ke(t, "open", 15);
   Ke(n, {
     isDynamicHeight: !0,
     hasCloseButton: !1,
@@ -1841,33 +1841,33 @@ function xf(n, t) {
     set open(i) {
       e(i)
     },
-    children: (i, _) => {
+    children: (i, c) => {
       {
-        let g = L(() => uc()),
-          q = L(() => El()),
-          D = L(() => ({
-            label: Xt(),
+        let w = S(() => cc()),
+          D = S(() => Rl()),
+          P = S(() => ({
+            label: er(),
             arrow: !1,
             onClick: t.onViewHistory
           })),
-          x = L(() => ({
-            label: Bt(),
+          j = S(() => ({
+            label: It(),
             onClick: () => e(!1)
           }));
-        nt(i, {
+        ot(i, {
           embedded: !0,
           variant: "warning",
           get title() {
-            return r(g)
+            return r(w)
           },
           get body() {
-            return r(q)
-          },
-          get primary() {
             return r(D)
           },
+          get primary() {
+            return r(P)
+          },
           get secondary() {
-            return r(x)
+            return r(j)
           }
         })
       }
@@ -1875,13 +1875,13 @@ function xf(n, t) {
     $$slots: {
       default: !0
     }
-  }), Se()
+  }), Ce()
 }
-var kf = h('<div class="my-auto w-full"><!></div>');
+var qf = y('<div class="my-auto w-full"><!></div>');
 
-function jf(n, t) {
-  Ce(t, !0);
-  let e = we(t, "open", 15);
+function Df(n, t) {
+  Se(t, !0);
+  let e = ke(t, "open", 15);
   Ke(n, {
     isDynamicHeight: !0,
     hasCloseButton: !1,
@@ -1895,58 +1895,58 @@ function jf(n, t) {
     set open(i) {
       e(i)
     },
-    children: (i, _) => {
-      var g = kf(),
-        q = o(g);
+    children: (i, c) => {
+      var w = qf(),
+        D = o(w);
       {
-        let D = L(() => Zc()),
-          x = L(() => Tc());
-        nt(q, {
+        let P = S(() => Yc()),
+          j = S(() => Ec());
+        ot(D, {
           embedded: !0,
           variant: "loading",
           get title() {
-            return r(D)
+            return r(P)
           },
           get body() {
-            return r(x)
+            return r(j)
           },
           progress: !0
         })
       }
-      a(g), u(i, g)
+      a(w), u(i, w)
     },
     $$slots: {
       default: !0
     }
-  }), Se()
+  }), Ce()
 }
-var qf = h('<div class="my-auto w-full"><!></div>');
+var Pf = y('<div class="my-auto w-full"><!></div>');
 
-function Df(n, t) {
-  Ce(t, !0);
-  let e = we(t, "open", 15),
-    i = we(t, "purchasedDroplets", 3, null);
-  const _ = typeof navigator < "u" ? navigator.language : "en-US",
-    g = y => y.toLocaleString(_),
-    q = L(() => {
-      var y;
-      return (y = De.data) == null ? void 0 : y.droplets
+function Sf(n, t) {
+  Se(t, !0);
+  let e = ke(t, "open", 15),
+    i = ke(t, "purchasedDroplets", 3, null);
+  const c = typeof navigator < "u" ? navigator.language : "en-US",
+    w = f => f.toLocaleString(c),
+    D = S(() => {
+      var f;
+      return (f = xe.data) == null ? void 0 : f.droplets
     }),
-    D = L(() => r(q) !== void 0 ? {
+    P = S(() => r(D) !== void 0 ? {
       rows: i() ? [{
-        label: _n(),
-        value: `+${g(i())}`,
+        label: dn(),
+        value: `+${w(i())}`,
         color: "#22c55e"
       }] : [],
       total: {
-        label: Qr(),
-        value: g(r(q))
+        label: $r(),
+        value: w(r(D))
       }
     } : void 0);
 
-  function x() {
-    var y;
-    e(!1), (y = t.onbacktostore) == null || y.call(t)
+  function j() {
+    var f;
+    e(!1), (f = t.onbacktostore) == null || f.call(t)
   }
   Ke(n, {
     isDynamicHeight: !0,
@@ -1958,58 +1958,58 @@ function Df(n, t) {
     get open() {
       return e()
     },
-    set open(y) {
-      e(y)
+    set open(f) {
+      e(f)
     },
-    children: (y, m) => {
-      var U = qf(),
-        Q = o(U);
+    children: (f, h) => {
+      var H = Pf(),
+        Q = o(H);
       {
-        let E = L(() => Lr()),
-          I = L(() => i() ? `+${g(i())}` : void 0),
-          C = L(() => i() ? bt() : void 0),
-          V = L(() => Br()),
-          G = L(() => ({
-            label: Qt(),
+        let G = S(() => Tr()),
+          E = S(() => i() ? `+${w(i())}` : void 0),
+          z = S(() => i() ? xt() : void 0),
+          V = S(() => Ir()),
+          R = S(() => ({
+            label: $t(),
             color: "#3b6fe8",
             colorDark: "#1f4fc8",
-            onClick: x
+            onClick: j
           }));
-        nt(Q, {
+        ot(Q, {
           embedded: !0,
           variant: "success",
           get title() {
-            return r(E)
+            return r(G)
           },
           get amount() {
-            return r(I)
+            return r(E)
           },
           get amountLabel() {
-            return r(C)
+            return r(z)
           },
           get body() {
             return r(V)
           },
           get receipt() {
-            return r(D)
+            return r(P)
           },
           get primary() {
-            return r(G)
+            return r(R)
           }
         })
       }
-      a(U), u(y, U)
+      a(H), u(f, H)
     },
     $$slots: {
       default: !0
     }
-  }), Se()
+  }), Ce()
 }
-var Pf = h('<div class="my-auto w-full"><!></div>');
+var Cf = y('<div class="my-auto w-full"><!></div>');
 
-function Cf(n, t) {
-  Ce(t, !0);
-  let e = we(t, "open", 15);
+function zf(n, t) {
+  Se(t, !0);
+  let e = ke(t, "open", 15);
   Ke(n, {
     isDynamicHeight: !0,
     hasCloseButton: !1,
@@ -2023,47 +2023,47 @@ function Cf(n, t) {
     set open(i) {
       e(i)
     },
-    children: (i, _) => {
-      var g = Pf(),
-        q = o(g);
+    children: (i, c) => {
+      var w = Cf(),
+        D = o(w);
       {
-        let D = L(() => i_()),
-          x = L(() => g_()),
-          y = L(() => ({
-            label: Qt(),
+        let P = S(() => u_()),
+          j = S(() => w_()),
+          f = S(() => ({
+            label: $t(),
             color: "#3b6fe8",
             colorDark: "#1f4fc8",
             onClick: () => {
-              var m;
-              e(!1), (m = t.onbacktostore) == null || m.call(t)
+              var h;
+              e(!1), (h = t.onbacktostore) == null || h.call(t)
             }
           }));
-        nt(q, {
+        ot(D, {
           embedded: !0,
           variant: "warning",
           get title() {
-            return r(D)
+            return r(P)
           },
           get body() {
-            return r(x)
+            return r(j)
           },
           get primary() {
-            return r(y)
+            return r(f)
           }
         })
       }
-      a(g), u(i, g)
+      a(w), u(i, w)
     },
     $$slots: {
       default: !0
     }
-  }), Se()
+  }), Ce()
 }
 
-function Sf(n, t) {
-  Ce(t, !0);
-  let e = we(t, "message", 19, () => jr()),
-    i = we(t, "open", 15);
+function Af(n, t) {
+  Se(t, !0);
+  let e = ke(t, "message", 19, () => Dr()),
+    i = ke(t, "open", 15);
   Ke(n, {
     isDynamicHeight: !0,
     hasCloseButton: !1,
@@ -2074,28 +2074,28 @@ function Sf(n, t) {
     get open() {
       return i()
     },
-    set open(_) {
-      i(_)
+    set open(c) {
+      i(c)
     },
-    children: (_, g) => {
+    children: (c, w) => {
       {
-        let q = L(() => wc()),
-          D = L(() => ({
-            label: Bt(),
+        let D = S(() => kc()),
+          P = S(() => ({
+            label: It(),
             arrow: !1,
             onClick: () => i(!1)
           }));
-        nt(_, {
+        ot(c, {
           embedded: !0,
           variant: "error",
           get title() {
-            return r(q)
+            return r(D)
           },
           get body() {
             return e()
           },
           get primary() {
-            return r(D)
+            return r(P)
           }
         })
       }
@@ -2103,132 +2103,132 @@ function Sf(n, t) {
     $$slots: {
       default: !0
     }
-  }), Se()
+  }), Ce()
 }
-var zf = h('<div class="mt-32 flex justify-center"><div class="loading loading-spinner"></div></div>'),
-  Af = h('<!> <div id="fsc-embedded-checkout-container"></div>', 1);
+var Lf = y('<div class="mt-32 flex justify-center"><div class="loading loading-spinner"></div></div>'),
+  Bf = y('<!> <div id="fsc-embedded-checkout-container"></div>', 1);
 
-function Lf(n, t) {
-  Ce(t, !0);
+function Tf(n, t) {
+  Se(t, !0);
   const e = "wplace.onfastspring.com/embedded-stacked",
     i = `fscLatestSession-${e}`;
-  let _ = W(!1);
-  xt(() => {
+  let c = W(!1);
+  jt(() => {
     var V;
-    const m = window;
-    let U = !1,
+    const h = window;
+    let H = !1,
       Q;
-    const E = () => {
-      var G;
-      r(_) || (p(_, !0), (G = t.oncomplete) == null || G.call(t, Q ?? localStorage.getItem(i) ?? void 0))
+    const G = () => {
+      var R;
+      r(c) || (p(c, !0), (R = t.oncomplete) == null || R.call(t, Q ?? localStorage.getItem(i) ?? void 0))
     };
-    localStorage.removeItem(i), m.FSCEventCallback = G => {
-      G === "FSC-purchaseComplete" && E()
-    }, m.__fsp_wh__ = () => {
-      U = !0, E()
+    localStorage.removeItem(i), h.FSCEventCallback = R => {
+      R === "FSC-purchaseComplete" && G()
+    }, h.__fsp_wh__ = () => {
+      H = !0, G()
     };
-    const I = G => {
-      var ae, B, v, O;
-      if (!G.data || typeof G.data != "object") return;
-      const N = (ae = G.data) == null ? void 0 : ae.fscPopupMessage;
-      if (N) {
-        if ((N == null ? void 0 : N.action) === "event" && ((B = N == null ? void 0 : N.eventData) == null ? void 0 : B.event) === "FSC-checkoutStep5" && localStorage.setItem("fscBackFromCheckout", "1"), N.action === "event" && ((v = N.eventData) != null && v["fsc-url"])) {
-          const F = N.eventData["fsc-url"].match(/\/session\/([^/]+)\/complete/);
-          F != null && F[1] && !Q && (Q = F[1], U && E())
+    const E = R => {
+      var ne, T, m, O;
+      if (!R.data || typeof R.data != "object") return;
+      const K = (ne = R.data) == null ? void 0 : ne.fscPopupMessage;
+      if (K) {
+        if ((K == null ? void 0 : K.action) === "event" && ((T = K == null ? void 0 : K.eventData) == null ? void 0 : T.event) === "FSC-checkoutStep5" && localStorage.setItem("fscBackFromCheckout", "1"), K.action === "event" && ((m = K.eventData) != null && m["fsc-url"])) {
+          const F = K.eventData["fsc-url"].match(/\/session\/([^/]+)\/complete/);
+          F != null && F[1] && !Q && (Q = F[1], H && G())
         }
-        N.action === "event" && ((O = N.eventData) == null ? void 0 : O.event) === "FSC-purchaseComplete" && E()
+        K.action === "event" && ((O = K.eventData) == null ? void 0 : O.event) === "FSC-purchaseComplete" && G()
       }
     };
-    window.addEventListener("message", I), (V = document.getElementById("fsc-api")) == null || V.remove(), delete m.fastspring;
-    const C = document.createElement("script");
-    return C.id = "fsc-api", C.src = "https://sbl.onfastspring.com/sbl/1.0.7/fastspring-builder.min.js", C.setAttribute("data-storefront", e), C.setAttribute("data-popup-webhook-received", "__fsp_wh__"), m.__fsp_err__ = (...G) => console.error("FastSpring SBL error:", ...G), C.setAttribute("data-error-callback", "__fsp_err__"), C.setAttribute("data-access-key", Tr), C.onload = async () => {
-      const G = await Ee.getFastspringSecurePayload(t.lookupKey).catch(() => null);
-      if (!G) {
+    window.addEventListener("message", E), (V = document.getElementById("fsc-api")) == null || V.remove(), delete h.fastspring;
+    const z = document.createElement("script");
+    return z.id = "fsc-api", z.src = "https://sbl.onfastspring.com/sbl/1.0.7/fastspring-builder.min.js", z.setAttribute("data-storefront", e), z.setAttribute("data-popup-webhook-received", "__fsp_wh__"), h.__fsp_err__ = (...R) => console.error("FastSpring SBL error:", ...R), z.setAttribute("data-error-callback", "__fsp_err__"), z.setAttribute("data-access-key", Er), z.onload = async () => {
+      const R = await Ee.getFastspringSecurePayload(t.lookupKey).catch(() => null);
+      if (!R) {
         console.error("FastSpring: no secure payload, checkout cannot render");
         return
       }
-      m.fastspring.builder.secure(G.key ? G.payload : JSON.parse(G.payload), G.key)
-    }, document.head.appendChild(C), () => {
-      var G;
-      window.removeEventListener("message", I), delete m.FSCEventCallback, delete m.__fsp_wh__, delete m.__fsp_err__, (G = document.getElementById("fsc-api")) == null || G.remove(), delete m.fastspring
+      h.fastspring.builder.secure(R.key ? R.payload : JSON.parse(R.payload), R.key)
+    }, document.head.appendChild(z), () => {
+      var R;
+      window.removeEventListener("message", E), delete h.FSCEventCallback, delete h.__fsp_wh__, delete h.__fsp_err__, (R = document.getElementById("fsc-api")) == null || R.remove(), delete h.fastspring
     }
   });
-  var g = Af(),
-    q = ne(g);
+  var w = Bf(),
+    D = re(w);
   {
-    var D = m => {
-      var U = zf();
-      u(m, U)
+    var P = h => {
+      var H = Lf();
+      u(h, H)
     };
-    A(q, m => {
-      r(_) && m(D)
+    B(D, h => {
+      r(c) && h(P)
     })
   }
-  var x = c(q, 2);
-  let y;
-  T(() => y = Pe(x, 1, "", null, y, {
-    hidden: r(_)
-  })), u(n, g), Se()
+  var j = l(D, 2);
+  let f;
+  I(() => f = Pe(j, 1, "", null, f, {
+    hidden: r(c)
+  })), u(n, w), Ce()
 }
 
-function wt(n) {
+function kt(n) {
   "@babel/helpers - typeof";
-  return typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? wt = function(t) {
+  return typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? kt = function(t) {
     return typeof t
-  } : wt = function(t) {
+  } : kt = function(t) {
     return t && typeof Symbol == "function" && t.constructor === Symbol && t !== Symbol.prototype ? "symbol" : typeof t
-  }, wt(n)
+  }, kt(n)
 }
-var rr = "clover",
-  Bf = function(t) {
+var ar = "clover",
+  If = function(t) {
     return t === 3 ? "v3" : t
   },
-  nr = "https://js.stripe.com",
-  Tf = "".concat(nr, "/").concat(rr, "/stripe.js"),
-  If = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/,
-  Ef = /^https:\/\/js\.stripe\.com\/(v3|[a-z]+)\/stripe\.js(\?.*)?$/;
-var Gf = function(t) {
-    return If.test(t) || Ef.test(t)
+  or = "https://js.stripe.com",
+  Ef = "".concat(or, "/").concat(ar, "/stripe.js"),
+  Gf = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/,
+  Rf = /^https:\/\/js\.stripe\.com\/(v3|[a-z]+)\/stripe\.js(\?.*)?$/;
+var Mf = function(t) {
+    return Gf.test(t) || Rf.test(t)
   },
-  Rf = function() {
-    for (var t = document.querySelectorAll('script[src^="'.concat(nr, '"]')), e = 0; e < t.length; e++) {
+  Uf = function() {
+    for (var t = document.querySelectorAll('script[src^="'.concat(or, '"]')), e = 0; e < t.length; e++) {
       var i = t[e];
-      if (Gf(i.src)) return i
+      if (Mf(i.src)) return i
     }
     return null
   },
-  Wt = function(t) {
+  Jt = function(t) {
     var e = "",
       i = document.createElement("script");
-    i.src = "".concat(Tf).concat(e);
-    var _ = document.head || document.body;
-    if (!_) throw new Error("Expected document.body not to be null. Stripe.js requires a <body> element.");
-    return _.appendChild(i), i
+    i.src = "".concat(Ef).concat(e);
+    var c = document.head || document.body;
+    if (!c) throw new Error("Expected document.body not to be null. Stripe.js requires a <body> element.");
+    return c.appendChild(i), i
   },
-  Mf = function(t, e) {
+  Hf = function(t, e) {
     !t || !t._registerWrapper || t._registerWrapper({
       name: "stripe-js",
       version: "8.11.0",
       startTime: e
     })
   },
-  lt = null,
-  vt = null,
-  gt = null,
-  Uf = function(t) {
+  ct = null,
+  bt = null,
+  wt = null,
+  Of = function(t) {
     return function(e) {
       t(new Error("Failed to load Stripe.js", {
         cause: e
       }))
     }
   },
-  Hf = function(t, e) {
+  Ff = function(t, e) {
     return function() {
       window.Stripe ? t(window.Stripe) : e(new Error("Stripe.js not available"))
     }
   },
-  Of = function(t) {
-    return lt !== null ? lt : (lt = new Promise(function(e, i) {
+  Vf = function(t) {
+    return ct !== null ? ct : (ct = new Promise(function(e, i) {
       if (typeof window > "u" || typeof document > "u") {
         e(null);
         return
@@ -2238,484 +2238,486 @@ var Gf = function(t) {
         return
       }
       try {
-        var _ = Rf();
-        if (!(_ && t)) {
-          if (!_) _ = Wt(t);
-          else if (_ && gt !== null && vt !== null) {
-            var g;
-            _.removeEventListener("load", gt), _.removeEventListener("error", vt), (g = _.parentNode) === null || g === void 0 || g.removeChild(_), _ = Wt(t)
+        var c = Uf();
+        if (!(c && t)) {
+          if (!c) c = Jt(t);
+          else if (c && wt !== null && bt !== null) {
+            var w;
+            c.removeEventListener("load", wt), c.removeEventListener("error", bt), (w = c.parentNode) === null || w === void 0 || w.removeChild(c), c = Jt(t)
           }
         }
-        gt = Hf(e, i), vt = Uf(i), _.addEventListener("load", gt), _.addEventListener("error", vt)
-      } catch (q) {
-        i(q);
+        wt = Ff(e, i), bt = Of(i), c.addEventListener("load", wt), c.addEventListener("error", bt)
+      } catch (D) {
+        i(D);
         return
       }
-    }), lt.catch(function(e) {
-      return lt = null, Promise.reject(e)
+    }), ct.catch(function(e) {
+      return ct = null, Promise.reject(e)
     }))
   },
-  Ff = function(t, e, i) {
+  Kf = function(t, e, i) {
     if (t === null) return null;
-    var _ = e[0];
-    if (typeof _ != "string") throw new Error("Expected publishable key to be of type string, got type ".concat(wt(_), " instead."));
-    var g = _.match(/^pk_test/),
-      q = Bf(t.version),
-      D = rr;
-    g && q !== D && console.warn("Stripe.js@".concat(q, " was loaded on the page, but @stripe/stripe-js@").concat("8.11.0", " expected Stripe.js@").concat(D, ". This may result in unexpected behavior. For more information, see https://docs.stripe.com/sdks/stripejs-versioning"));
-    var x = t.apply(void 0, e);
-    return Mf(x, i), x
+    var c = e[0];
+    if (typeof c != "string") throw new Error("Expected publishable key to be of type string, got type ".concat(kt(c), " instead."));
+    var w = c.match(/^pk_test/),
+      D = If(t.version),
+      P = ar;
+    w && D !== P && console.warn("Stripe.js@".concat(D, " was loaded on the page, but @stripe/stripe-js@").concat("8.11.0", " expected Stripe.js@").concat(P, ". This may result in unexpected behavior. For more information, see https://docs.stripe.com/sdks/stripejs-versioning"));
+    var j = t.apply(void 0, e);
+    return Hf(j, i), j
   },
-  ct, ar = !1,
-  or = function() {
-    return ct || (ct = Of(null).catch(function(t) {
-      return ct = null, Promise.reject(t)
-    }), ct)
+  _t, ir = !1,
+  sr = function() {
+    return _t || (_t = Vf(null).catch(function(t) {
+      return _t = null, Promise.reject(t)
+    }), _t)
   };
 Promise.resolve().then(function() {
-  return or()
+  return sr()
 }).catch(function(n) {
-  ar || console.warn(n)
+  ir || console.warn(n)
 });
-var Vf = function() {
+var Nf = function() {
     for (var t = arguments.length, e = new Array(t), i = 0; i < t; i++) e[i] = arguments[i];
-    ar = !0;
-    var _ = Date.now();
-    return or().then(function(g) {
-      return Ff(g, e, _)
+    ir = !0;
+    var c = Date.now();
+    return sr().then(function(w) {
+      return Kf(w, e, c)
     })
   },
-  Kf = h('<div class="mt-32 flex justify-center"><div class="loading loading-spinner"></div></div>'),
-  Nf = h('<!> <div class="w-full"></div>', 1);
+  Zf = y('<div class="mt-32 flex justify-center"><div class="loading loading-spinner"></div></div>'),
+  Wf = y('<!> <div class="w-full"></div>', 1);
 
-function Zf(n, t) {
-  Ce(t, !0);
-  let e, i, _ = W(!1);
-  const g = 2e3;
-  xt(async () => {
-    var U, Q, E;
-    let m;
+function Yf(n, t) {
+  Se(t, !0);
+  let e, i, c = W(!1);
+  const w = 2e3;
+  jt(async () => {
+    var H, Q, G;
+    let h;
     try {
-      m = await Promise.race([Vf(Ir), new Promise((I, C) => setTimeout(() => C(new Error("stripe-load-timeout")), g))])
+      h = await Promise.race([Nf(Gr), new Promise((E, z) => setTimeout(() => z(new Error("stripe-load-timeout")), w))])
     } catch {
-      (U = t.onUnavailable) == null || U.call(t);
+      (H = t.onUnavailable) == null || H.call(t);
       return
     }
-    if (!m) {
+    if (!h) {
       (Q = t.onUnavailable) == null || Q.call(t);
       return
     }
     try {
-      i = await m.initEmbeddedCheckout({
+      i = await h.initEmbeddedCheckout({
         fetchClientSecret: async () => t.clientSecret,
         onComplete: async () => {
-          var I;
-          i == null || i.destroy(), i = void 0, p(_, !0), (I = t.onComplete) == null || I.call(t)
+          var E;
+          i == null || i.destroy(), i = void 0, p(c, !0), (E = t.onComplete) == null || E.call(t)
         }
       }), i.mount(e)
     } catch {
-      (E = t.onUnavailable) == null || E.call(t)
+      (G = t.onUnavailable) == null || G.call(t)
     }
-  }), mr(() => {
+  }), gr(() => {
     i == null || i.destroy(), i = void 0
   });
-  var q = Nf(),
-    D = ne(q);
+  var D = Wf(),
+    P = re(D);
   {
-    var x = m => {
-      var U = Kf();
-      u(m, U)
+    var j = h => {
+      var H = Zf();
+      u(h, H)
     };
-    A(D, m => {
-      r(_) && m(x)
+    B(P, h => {
+      r(c) && h(j)
     })
   }
-  var y = c(D, 2);
-  Er(y, m => e = m, () => e), u(n, q), Se()
+  var f = l(P, 2);
+  Rr(f, h => e = h, () => e), u(n, D), Ce()
 }
-var Wf = h('<!> <h3 class="text-xl font-bold"> </h3> <div class="mr-2 ml-auto"><!></div>', 1),
-  Yf = h('<button class="btn btn-ghost btn-sm btn-circle"><!></button> <h3 class="text-xl font-bold"> </h3>', 1),
-  Jf = h('<span class="loading loading-spinner loading-sm absolute"></span>'),
-  Qf = h('<div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-6"><p class="text-primary text-3xl font-bold"><!> <span> <span class="text-lg font-normal"> </span></span></p> <p class="text-base-content/80 mt-0.5 text-center text-xs"><!> <span class="text-primary/80 font-medium"> </span></p> <button class="btn btn-lg btn-primary relative mt-3 h-10"><!> <span><!></span></button></div>'),
-  Xf = h('<div class="mt-2 text-center"><button class="link text-sm font-medium"> </button></div>'),
-  $f = h('<p class="text-base-content/80 mb-4 text-sm"> </p> <div class="grid gap-3 sm:grid-cols-2"><!> <!> <!> <!> <!> <!></div> <p class="text-base-content/60 mt-4 text-center text-sm"> <a class="font-medium" target="_blank"> </a></p> <!>', 1),
-  ey = h('<div class="flex flex-col gap-4 px-6 pt-6 pb-2"><div class="bg-base-200 flex rounded-2xl p-1"><button><svg viewBox="0 0 750 471" xmlns="http://www.w3.org/2000/svg" aria-label="Visa"><rect width="750" height="471" rx="40" fill="#1a1f71"></rect><path d="M278 334L311 138h51L329 334h-51zM524 142c-10-4-26-8-46-8-51 0-87 27-87 65-1 28 25 44 45 53 20 10 27 16 27 25-1 13-16 19-31 19-21 0-32-3-49-10l-7-3-7 44c12 5 33 10 56 10 54 0 89-27 89-68 0-22-14-39-44-53-18-9-30-15-30-24 0-8 10-17 31-17 17 0 30 4 40 8l5 2 7-43zM614 138h-40c-12 0-21 4-27 16l-77 180h54l11-30h66l6 30h48l-41-196zm-63 127l20-54 10-30 5 27 18 57h-53zM230 138l-50 133-5-27c-10-32-40-66-74-83l46 173h55l82-196h-54z" fill="#fff"></path><path d="M131 138H48l-1 4c65 17 108 56 126 103l-18-91c-3-12-12-16-24-16z" fill="#f9a533"></path></svg> <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" aria-label="Mastercard"><rect width="38" height="24" rx="4" fill="#252525"></rect><circle cx="15" cy="12" r="7" fill="#eb001b"></circle><circle cx="23" cy="12" r="7" fill="#f79e1b"></circle><path d="M19 6.8a7 7 0 0 1 0 10.4A7 7 0 0 1 19 6.8z" fill="#ff5f00"></path></svg> </button> <button> </button></div></div>'),
-  ty = h('<div class="flex h-40 items-center justify-center"><span class="loading loading-spinner loading-lg"></span></div>'),
-  Yt = h("<div><!></div>"),
-  ry = h('<!> <div class="mt-4"><!> <!></div>', 1),
-  ny = h("<div><!></div> <!> <!> <!> <!> <!> <!> <!>", 1);
+var Jf = y('<!> <h3 class="text-xl font-bold"> </h3> <div class="mr-2 ml-auto"><!></div>', 1),
+  Qf = y('<button class="btn btn-ghost btn-sm btn-circle"><!></button> <h3 class="text-xl font-bold"> </h3>', 1),
+  Xf = y('<span class="loading loading-spinner loading-sm absolute"></span>'),
+  $f = y('<div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-6"><p class="text-primary text-3xl font-bold"><!> <span> <span class="text-lg font-normal"> </span></span></p> <p class="text-base-content/80 mt-0.5 text-center text-xs"><!> <span class="text-primary/80 font-medium"> </span></p> <button class="btn btn-lg btn-primary relative mt-3 h-10"><!> <span><!></span></button></div>'),
+  ey = y('<div class="mt-2 text-center"><button class="link text-sm font-medium"> </button></div>'),
+  ty = y('<p class="text-base-content/80 mb-4 text-sm"> </p> <div class="grid gap-3 sm:grid-cols-2"><!> <!> <!> <!> <!> <!></div> <p class="text-base-content/60 mt-4 text-center text-sm"> <a class="font-medium" target="_blank"> </a></p> <!>', 1),
+  ry = y('<div class="flex flex-col gap-4 px-6 pt-6 pb-2"><div class="bg-base-200 flex rounded-2xl p-1"><button><svg viewBox="0 0 750 471" xmlns="http://www.w3.org/2000/svg" aria-label="Visa"><rect width="750" height="471" rx="40" fill="#1a1f71"></rect><path d="M278 334L311 138h51L329 334h-51zM524 142c-10-4-26-8-46-8-51 0-87 27-87 65-1 28 25 44 45 53 20 10 27 16 27 25-1 13-16 19-31 19-21 0-32-3-49-10l-7-3-7 44c12 5 33 10 56 10 54 0 89-27 89-68 0-22-14-39-44-53-18-9-30-15-30-24 0-8 10-17 31-17 17 0 30 4 40 8l5 2 7-43zM614 138h-40c-12 0-21 4-27 16l-77 180h54l11-30h66l6 30h48l-41-196zm-63 127l20-54 10-30 5 27 18 57h-53zM230 138l-50 133-5-27c-10-32-40-66-74-83l46 173h55l82-196h-54z" fill="#fff"></path><path d="M131 138H48l-1 4c65 17 108 56 126 103l-18-91c-3-12-12-16-24-16z" fill="#f9a533"></path></svg> <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" aria-label="Mastercard"><rect width="38" height="24" rx="4" fill="#252525"></rect><circle cx="15" cy="12" r="7" fill="#eb001b"></circle><circle cx="23" cy="12" r="7" fill="#f79e1b"></circle><path d="M19 6.8a7 7 0 0 1 0 10.4A7 7 0 0 1 19 6.8z" fill="#ff5f00"></path></svg> </button> <button> </button></div></div>'),
+  ny = y('<div class="flex h-40 items-center justify-center"><span class="loading loading-spinner loading-lg"></span></div>'),
+  Qt = y("<div><!></div>"),
+  ay = y('<!> <div class="mt-4"><!> <!></div>', 1),
+  oy = y("<div><!></div> <!> <!> <!> <!> <!> <!> <!>", 1);
 
-function Hy(n, t) {
-  Ce(t, !0);
-  let e = we(t, "open", 15),
+function Fy(n, t) {
+  Se(t, !0);
+  let e = ke(t, "open", 15),
     i = W("products"),
-    _ = W(!1),
-    g = W(0),
-    q = W(!1),
+    c = W(!1),
+    w = W(0),
     D = W(!1),
-    x = W(!1),
-    y = W(null),
-    m = W(null),
-    U = W(null);
-  const Q = L(() => {
-      var l, s;
-      return ((s = (l = De.data) == null ? void 0 : l.country) == null ? void 0 : s.toUpperCase()) === "MX"
+    P = W(!1),
+    j = W(!1),
+    f = W(null),
+    h = W(null),
+    H = W(null);
+  const Q = S(() => {
+      var s, d;
+      return ((d = (s = xe.data) == null ? void 0 : s.country) == null ? void 0 : d.toUpperCase()) === "MX"
     }),
-    E = L(() => {
-      var l, s;
-      return ((s = (l = De.data) == null ? void 0 : l.country) == null ? void 0 : s.toUpperCase()) === "BR"
+    G = S(() => {
+      var s, d;
+      return ((d = (s = xe.data) == null ? void 0 : s.country) == null ? void 0 : d.toUpperCase()) === "BR"
     });
-  let I = W(!1),
-    C = W(!1),
+  let E = W(!1),
+    z = W(!1),
     V = W(!1);
 
-  function G() {
-    p(I, Te.isTWA(), !0), p(C, Te.isTWALoaded(), !0), p(V, Te.playBillingBlocked, !0)
+  function R() {
+    p(E, Te.isTWA(), !0), p(z, Te.isTWALoaded(), !0), p(V, Te.playBillingBlocked, !0)
   }
-  let N = W(!1),
-    ae = W(!1),
-    B = W("");
-  xt(async () => {
+  let K = W(!1),
+    ne = W(!1),
+    T = W("");
+  jt(async () => {
     try {
       await Te.loadMapSKUs()
     } finally {
-      G()
+      R()
     }
   });
-  let v = W("stripe"),
+  let m = W("stripe"),
     O = W(!1);
-  Lt(() => {
-    r(v) === "other" && p(O, !0)
+  Tt(() => {
+    r(m) === "other" && p(O, !0)
   });
   const F = "wplace_stripe_blocked";
-  let K = W(!1);
+  let Y = W(!1);
 
-  function S() {
-    p(K, !0), localStorage.setItem(F, "1"), p(O, !0), p(v, "other")
+  function A() {
+    p(Y, !0), localStorage.setItem(F, "1"), p(O, !0), p(m, "other")
   }
-  xt(() => {
-    if (p(K, !!localStorage.getItem(F)), !!localStorage.getItem("fscBackFromCheckout")) {
+  const U = S(() => xe.data ? xe.data.id % 2 === 0 : !1),
+    ee = S(() => r(Y) || r(U));
+  jt(() => {
+    if (p(Y, !!localStorage.getItem(F)), !!localStorage.getItem("fscBackFromCheckout")) {
       localStorage.removeItem("fscBackFromCheckout");
-      const s = Number(localStorage.getItem("wplace_fs_droplets")) || 0;
-      history.replaceState({}, "", window.location.pathname), p(x, !0), ie(s)
+      const d = Number(localStorage.getItem("wplace_fs_droplets")) || 0;
+      history.replaceState({}, "", window.location.pathname), p(j, !0), me(d)
     }
   });
-  let R = null;
-  async function ie(l) {
-    const s = {
+  let fe = null;
+  async function me(s) {
+    const d = {
       cancelled: !1
     };
-    R = s, p(x, !0);
-    for (let d = 0; d < 2; d++) {
-      if (d !== 0 && await new Promise(f => setTimeout(f, 2e3)), s.cancelled) {
-        p(x, !1);
+    fe = d, p(j, !0);
+    for (let g = 0; g < 2; g++) {
+      if (g !== 0 && await new Promise(v => setTimeout(v, 2e3)), d.cancelled) {
+        p(j, !1);
         return
       }
       try {
-        const f = await Ee.getLastFastspringOrder();
-        if (!f) continue;
-        if (!f.read) {
-          if (s.cancelled) {
-            p(x, !1);
+        const v = await Ee.getLastFastspringOrder();
+        if (!v) continue;
+        if (!v.read) {
+          if (d.cancelled) {
+            p(j, !1);
             return
           }
-          p(x, !1), p(D, !1), p(g, l, !0), p(q, !0), await De.refresh(), await Ee.markFastspringOrderAsRead(f.id);
+          p(j, !1), p(P, !1), p(w, s, !0), p(D, !0), await xe.refresh(), await Ee.markFastspringOrderAsRead(v.id);
           return
         }
       } catch {}
     }
-    p(x, !1), s.cancelled || p(D, !0)
+    p(j, !1), d.cancelled || p(P, !0)
   }
-  async function ke(l) {
-    if (R && (R.cancelled = !0), p(y, l, !0), localStorage.setItem("wplace_fs_droplets", String(l.droplets + l.bonus)), r(K)) {
-      p(v, "other"), p(O, !0), p(i, "checkout");
+  async function ze(s) {
+    if (fe && (fe.cancelled = !0), p(f, s, !0), localStorage.setItem("wplace_fs_droplets", String(s.droplets + s.bonus)), r(ee)) {
+      p(m, "other"), p(O, !0), p(i, "checkout");
       return
     }
-    p(v, "stripe"), p(_, !0);
+    p(m, "stripe"), p(c, !0);
     try {
-      await (async s => {
-        p(m, s.clientSecret, !0), p(U, s.sessionId, !0)
-      })(await Ee.createEmbeddedCheckout(l.stripeLookupkey)), p(i, "checkout")
-    } catch (s) {
-      ht.error(s.message ?? "Unexpected error")
+      await (async d => {
+        p(h, d.clientSecret, !0), p(H, d.sessionId, !0)
+      })(await Ee.createEmbeddedCheckout(s.stripeLookupkey)), p(i, "checkout")
+    } catch (d) {
+      vt.error(d.message ?? "Unexpected error")
     } finally {
-      p(_, !1)
+      p(c, !1)
     }
   }
 
-  function ce() {
-    p(i, "products"), p(y, null), p(m, null), p(U, null), localStorage.removeItem("wplace_fs_droplets")
+  function ve() {
+    p(i, "products"), p(f, null), p(h, null), p(H, null), localStorage.removeItem("wplace_fs_droplets")
   }
-  async function ze() {
-    p(g, r(y).droplets + r(y).bonus);
-    const l = r(U);
-    l && (await Ee.refreshStripeSession(l).catch(() => {
-      ht.error(Vt())
-    }), await De.refresh()), ce(), e(!1), p(q, !0)
+  async function ie() {
+    p(w, r(f).droplets + r(f).bonus);
+    const s = r(H);
+    s && (await Ee.refreshStripeSession(s).catch(() => {
+      vt.error(Nt())
+    }), await xe.refresh()), ve(), e(!1), p(D, !0)
   }
-  async function je(l) {
-    var f;
-    if (r(_)) return;
-    p(_, !0), kr();
-    let s = !1,
-      d = "";
+  async function le(s) {
+    var v;
+    if (r(c)) return;
+    p(c, !0), qr();
+    let d = !1,
+      g = "";
     try {
-      const b = await Te.createPayment(l);
-      s = !0, d = (f = b == null ? void 0 : b.out) == null ? void 0 : f.details.purchaseToken, await b.verify()
+      const b = await Te.createPayment(s);
+      d = !0, g = (v = b == null ? void 0 : b.out) == null ? void 0 : v.details.purchaseToken, await b.verify()
     } catch (b) {
-      if (s) {
-        p(x, !0);
-        const z = await he(d, j => Te.verifyBySKU({
-          sku: l,
-          token: j
+      if (d) {
+        p(j, !0);
+        const x = await He(g, M => Te.verifyBySKU({
+          sku: s,
+          token: M
         }));
-        switch (p(x, !1), z.status) {
+        switch (p(j, !1), x.status) {
           case "accepted": {
-            Jt.openCheckoutDialog(z.amount);
+            Xt.openCheckoutDialog(x.amount);
             break
           }
           case "declined": {
-            p(B, l, !0), p(ae, !0);
+            p(T, s, !0), p(ne, !0);
             break
           }
           default: {
-            p(N, !0);
+            p(K, !0);
             break
           }
         }
       } else {
-        const z = (b == null ? void 0 : b.message) ?? "";
-        /abort|cancel/i.test(z) || ht.error(z || Vt())
+        const x = (b == null ? void 0 : b.message) ?? "";
+        /abort|cancel/i.test(x) || vt.error(x || Nt())
       }
     } finally {
-      p(_, !1)
+      p(c, !1)
     }
   }
-  const se = l => new Promise(s => setTimeout(s, l));
-  async function he(l, s) {
-    if (!l) return {
+  const ce = s => new Promise(d => setTimeout(d, s));
+  async function He(s, d) {
+    if (!s) return {
       status: "declined",
       amount: 0
     };
-    const d = Date.now();
+    const g = Date.now();
     for (;;) {
-      let f = null;
+      let v = null;
       try {
-        f = await Ee.getPlayClaimStatus(l)
+        v = await Ee.getPlayClaimStatus(s)
       } catch {}
-      if ((f == null ? void 0 : f.status) === "processed") return await De.refresh(), {
+      if ((v == null ? void 0 : v.status) === "processed") return await xe.refresh(), {
         status: "accepted",
-        amount: f.droplets
+        amount: v.droplets
       };
-      if ((f == null ? void 0 : f.status) === "rejected") return {
+      if ((v == null ? void 0 : v.status) === "rejected") return {
         status: "declined",
         amount: 0
       };
-      if ((f == null ? void 0 : f.status) === "unknown") try {
+      if ((v == null ? void 0 : v.status) === "unknown") try {
         const {
-          droplets: z
-        } = await s(l);
-        return await De.refresh(), {
+          droplets: x
+        } = await d(s);
+        return await xe.refresh(), {
           status: "accepted",
-          amount: z
+          amount: x
         }
       } catch {}
-      if ((Date.now() - d) / 1e3 > Te.POOLING_TIME) return {
+      if ((Date.now() - g) / 1e3 > Te.POOLING_TIME) return {
         status: "pending",
         amount: 0
       };
-      await se(1500)
+      await ce(1500)
     }
   }
-  var ue = ny(),
-    Ae = ne(ue),
+  var Oe = oy(),
+    Ae = re(Oe),
     Ne = o(Ae);
   {
-    const l = k => {
-      var M = He(),
-        le = ne(M);
+    const s = ae => {
+      var te = Ue(),
+        N = re(te);
       {
-        var re = Z => {
-            var $ = Wf(),
-              _e = ne($);
-            Qe(_e, {
+        var oe = se => {
+            var ue = Jf(),
+              ge = re(ue);
+            Qe(ge, {
               class: "text-primary size-5"
             });
-            var pe = c(_e, 2),
-              Le = o(pe, !0);
-            a(pe);
-            var de = c(pe, 2),
-              oe = o(de);
+            var De = l(ge, 2),
+              Le = o(De, !0);
+            a(De);
+            var ye = l(De, 2),
+              L = o(ye);
             {
-              let qe = L(() => De.data.droplets ?? 0);
-              bd(oe, {
+              let Z = S(() => xe.data.droplets ?? 0);
+              xd(L, {
                 get value() {
-                  return r(qe)
+                  return r(Z)
                 },
                 button: !1
               })
             }
-            a(de), T(qe => w(Le, qe), [() => bt()]), u(Z, $)
+            a(ye), I(Z => k(Le, Z), [() => xt()]), u(se, ue)
           },
-          Y = Z => {
-            var $ = Yf(),
-              _e = ne($),
-              pe = o(_e);
-            Gr(pe, {
+          _e = se => {
+            var ue = Qf(),
+              ge = re(ue),
+              De = o(ge);
+            Mr(De, {
               class: "size-5"
-            }), a(_e);
-            var Le = c(_e, 2),
-              de = o(Le, !0);
-            a(Le), T(oe => w(de, oe), [() => rd()]), me("click", _e, ce), u(Z, $)
+            }), a(ge);
+            var Le = l(ge, 2),
+              ye = o(Le, !0);
+            a(Le), I(L => k(ye, L), [() => ad()]), he("click", ge, ve), u(se, ue)
           };
-        A(le, Z => {
-          r(i) === "products" && De.data ? Z(re) : r(i) === "checkout" && r(y) && Z(Y, 1)
+        B(N, se => {
+          r(i) === "products" && xe.data ? se(oe) : r(i) === "checkout" && r(f) && se(_e, 1)
         })
       }
-      u(k, M)
+      u(ae, te)
     };
-    let s = L(() => r(i) === "products" ? "max-w-2xl" : "max-w-5xl max-h-[min(91.6vh,57rem)]"),
-      d = L(() => r(i) === "checkout" ? "px-0 sm:px-0 pt-0 pb-4" : ""),
-      f = L(() => r(i) === "products"),
-      b = L(() => r(i) !== "checkout"),
-      z = L(() => r(i) === "checkout"),
-      j = L(() => r(i) === "products");
+    let d = S(() => r(i) === "products" ? "max-w-2xl" : "max-w-5xl max-h-[min(91.6vh,57rem)]"),
+      g = S(() => r(i) === "checkout" ? "px-0 sm:px-0 pt-0 pb-4" : ""),
+      v = S(() => r(i) === "products"),
+      b = S(() => r(i) !== "checkout"),
+      x = S(() => r(i) === "checkout"),
+      M = S(() => r(i) === "products");
     Ke(Ne, {
       dialogClass: "bg-black/90!",
       get modalBoxClass() {
-        return r(s)
-      },
-      get contentAreaClass() {
         return r(d)
       },
+      get contentAreaClass() {
+        return r(g)
+      },
       get isDynamicHeight() {
-        return r(f)
+        return r(v)
       },
       hasCloseButton: !0,
       get hasHeaderBorder() {
         return r(b)
       },
       get disableCloseAnimation() {
-        return r(z)
+        return r(x)
       },
       get hasBackdrop() {
-        return r(j)
+        return r(M)
       },
       onclose: () => {
         setTimeout(() => {
-          p(i, "products"), p(y, null), p(m, null), p(U, null), p(v, "stripe"), p(O, !1)
+          p(i, "products"), p(f, null), p(h, null), p(H, null), p(m, "stripe"), p(O, !1)
         }, 100)
       },
       get open() {
         return e()
       },
-      set open(k) {
-        e(k)
+      set open(ae) {
+        e(ae)
       },
-      header: l,
-      children: (k, M) => {
-        var le = He(),
-          re = ne(le);
+      header: s,
+      children: (ae, te) => {
+        var N = Ue(),
+          oe = re(N);
         {
-          var Y = Z => {
-            var $ = He(),
-              _e = ne($);
+          var _e = se => {
+            var ue = Ue(),
+              ge = re(ue);
             {
-              var pe = de => {
-                  const oe = (Me, J) => {
-                    let Ue = () => J == null ? void 0 : J().droplets,
+              var De = ye => {
+                  const L = (Re, J) => {
+                    let Me = () => J == null ? void 0 : J().droplets,
                       Ve = () => J == null ? void 0 : J().bonus,
-                      rt = () => J == null ? void 0 : J().price,
-                      it = () => J == null ? void 0 : J().stripeLookupkey,
-                      ir = () => J == null ? void 0 : J().productId;
-                    var Dt = Qf(),
-                      Pt = o(Dt),
-                      Tt = o(Pt);
-                    Qe(Tt, {
+                      at = () => J == null ? void 0 : J().price,
+                      st = () => J == null ? void 0 : J().stripeLookupkey,
+                      ur = () => J == null ? void 0 : J().productId;
+                    var St = $f(),
+                      Ct = o(St),
+                      Et = o(Ct);
+                    Qe(Et, {
                       class: "mb-1 inline size-7"
                     });
-                    var It = c(Tt, 2),
-                      Et = o(It),
-                      Gt = c(Et),
-                      sr = o(Gt, !0);
-                    a(Gt), a(It), a(Pt);
-                    var Ct = c(Pt, 2),
-                      Rt = o(Ct);
-                    {
-                      var ur = X => {
-                        var ee = Je();
-                        T((Be, st) => w(ee, `${Be??""} ${st??""}`), [() => Ue().toLocaleString(navigator.language), () => bt()]), u(X, ee)
-                      };
-                      A(Rt, X => {
-                        Ve() && X(ur)
-                      })
-                    }
-                    var Mt = c(Rt, 2),
-                      lr = o(Mt);
-                    a(Mt), a(Ct);
-                    var yt = c(Ct, 2),
-                      Ut = o(yt);
+                    var Gt = l(Et, 2),
+                      Rt = o(Gt),
+                      Mt = l(Rt),
+                      lr = o(Mt, !0);
+                    a(Mt), a(Gt), a(Ct);
+                    var zt = l(Ct, 2),
+                      Ut = o(zt);
                     {
                       var cr = X => {
-                        var ee = Jf();
-                        u(X, ee)
+                        var $ = Je();
+                        I((Be, ut) => k($, `${Be??""} ${ut??""}`), [() => Me().toLocaleString(navigator.language), () => xt()]), u(X, $)
                       };
-                      A(Ut, X => {
-                        var ee;
-                        r(_) && (r(I) || ((ee = r(y)) == null ? void 0 : ee.stripeLookupkey) === it()) && X(cr)
+                      B(Ut, X => {
+                        Ve() && X(cr)
                       })
                     }
-                    var St = c(Ut, 2);
-                    let Ht;
-                    var _r = o(St);
+                    var Ht = l(Ut, 2),
+                      _r = o(Ht);
+                    a(Ht), a(zt);
+                    var mt = l(zt, 2),
+                      Ot = o(mt);
                     {
                       var pr = X => {
-                          var ee = He(),
-                            Be = ne(ee);
-                          Ot(Be, () => r(C), st => {
-                            var ut = Je();
-                            T(hr => w(ut, hr), [() => Te.printPriceBySKU(it())]), u(st, ut)
-                          }), u(X, ee)
-                        },
-                        dr = X => {
-                          var ee = Je();
-                          T(Be => w(ee, `MX$${Be??""}`), [() => (rt() * 18).toFixed(2)]), u(X, ee)
-                        },
-                        fr = X => {
-                          var ee = Je();
-                          T(Be => w(ee, `R$${Be??""}`), [() => (rt() * 4).toFixed(2).replace(".", ",")]), u(X, ee)
-                        },
-                        yr = X => {
-                          var ee = Je();
-                          T(Be => w(ee, `$${Be??""}`), [() => rt().toFixed(2)]), u(X, ee)
-                        };
-                      A(_r, X => {
-                        r(I) ? X(pr) : r(Q) ? X(dr, 1) : r(E) ? X(fr, 2) : X(yr, -1)
+                        var $ = Xf();
+                        u(X, $)
+                      };
+                      B(Ot, X => {
+                        var $;
+                        r(c) && (r(E) || (($ = r(f)) == null ? void 0 : $.stripeLookupkey) === st()) && X(pr)
                       })
                     }
-                    a(St), a(yt), a(Dt), T((X, ee, Be, st) => {
-                      var ut;
-                      w(Et, `${X??""} `), w(sr, ee), w(lr, `+${Be??""}
-								${st??""}`), yt.disabled = r(_) || r(V), Ht = Pe(St, 1, "", null, Ht, {
-                        "opacity-0": r(_) && (r(I) || ((ut = r(y)) == null ? void 0 : ut.stripeLookupkey) === it())
+                    var At = l(Ot, 2);
+                    let Ft;
+                    var dr = o(At);
+                    {
+                      var fr = X => {
+                          var $ = Ue(),
+                            Be = re($);
+                          Vt(Be, () => r(z), ut => {
+                            var lt = Je();
+                            I(vr => k(lt, vr), [() => Te.printPriceBySKU(st())]), u(ut, lt)
+                          }), u(X, $)
+                        },
+                        yr = X => {
+                          var $ = Je();
+                          I(Be => k($, `MX$${Be??""}`), [() => (at() * 18).toFixed(2)]), u(X, $)
+                        },
+                        hr = X => {
+                          var $ = Je();
+                          I(Be => k($, `R$${Be??""}`), [() => (at() * 4).toFixed(2).replace(".", ",")]), u(X, $)
+                        },
+                        mr = X => {
+                          var $ = Je();
+                          I(Be => k($, `$${Be??""}`), [() => at().toFixed(2)]), u(X, $)
+                        };
+                      B(dr, X => {
+                        r(E) ? X(fr) : r(Q) ? X(yr, 1) : r(G) ? X(hr, 2) : X(mr, -1)
                       })
-                    }, [() => (Ue() + Ve()).toLocaleString(navigator.language), () => bt(), () => Ve().toLocaleString(navigator.language), () => mp()]), me("click", yt, async () => {
-                      r(I) && await je(it()), (!r(I) || Te.forceTWA.current === !1) && ke({
-                        price: rt(),
-                        droplets: Ue(),
+                    }
+                    a(At), a(mt), a(St), I((X, $, Be, ut) => {
+                      var lt;
+                      k(Rt, `${X??""} `), k(lr, $), k(_r, `+${Be??""}
+								${ut??""}`), mt.disabled = r(c) || r(V), Ft = Pe(At, 1, "", null, Ft, {
+                        "opacity-0": r(c) && (r(E) || ((lt = r(f)) == null ? void 0 : lt.stripeLookupkey) === st())
+                      })
+                    }, [() => (Me() + Ve()).toLocaleString(navigator.language), () => xt(), () => Ve().toLocaleString(navigator.language), () => gp()]), he("click", mt, async () => {
+                      r(E) && await le(st()), (!r(E) || Te.forceTWA.current === !1) && ze({
+                        price: at(),
+                        droplets: Me(),
                         bonus: Ve(),
-                        stripeLookupkey: it(),
-                        productId: ir()
-                      }), G()
-                    }), u(Me, Dt)
+                        stripeLookupkey: st(),
+                        productId: ur()
+                      }), R()
+                    }), u(Re, St)
                   };
-                  var qe = $f(),
-                    H = ne(qe),
-                    te = o(H, !0);
-                  a(H);
-                  var ve = c(H, 2),
-                    et = o(ve);
-                  oe(et, () => ({
+                  var Z = ty(),
+                    qe = re(Z),
+                    tt = o(qe, !0);
+                  a(qe);
+                  var rt = l(qe, 2),
+                    ft = o(rt);
+                  L(ft, () => ({
                     price: 5,
                     droplets: 25e3,
                     bonus: 0,
@@ -2723,8 +2725,8 @@ function Hy(n, t) {
                     productId: 10,
                     dropdownClass: "dropdown-center"
                   }));
-                  var dt = c(et, 2);
-                  oe(dt, () => ({
+                  var yt = l(ft, 2);
+                  L(yt, () => ({
                     price: 15,
                     droplets: 75e3,
                     bonus: 3750,
@@ -2732,8 +2734,8 @@ function Hy(n, t) {
                     productId: 20,
                     dropdownClass: "dropdown-center"
                   }));
-                  var ft = c(dt, 2);
-                  oe(ft, () => ({
+                  var ht = l(yt, 2);
+                  L(ht, () => ({
                     price: 30,
                     droplets: 15e4,
                     bonus: 15e3,
@@ -2741,8 +2743,8 @@ function Hy(n, t) {
                     productId: 30,
                     dropdownClass: "dropdown-center"
                   }));
-                  var ge = c(ft, 2);
-                  oe(ge, () => ({
+                  var be = l(ht, 2);
+                  L(be, () => ({
                     price: 50,
                     droplets: 25e4,
                     bonus: 37500,
@@ -2750,8 +2752,8 @@ function Hy(n, t) {
                     productId: 40,
                     dropdownClass: "dropdown-center"
                   }));
-                  var fe = c(ge, 2);
-                  oe(fe, () => ({
+                  var pe = l(be, 2);
+                  L(pe, () => ({
                     price: 75,
                     droplets: 375e3,
                     bonus: 75e3,
@@ -2759,130 +2761,130 @@ function Hy(n, t) {
                     productId: 50,
                     dropdownClass: "dropdown-center"
                   }));
-                  var Fe = c(fe, 2);
-                  oe(Fe, () => ({
+                  var Fe = l(pe, 2);
+                  L(Fe, () => ({
                     price: 100,
                     droplets: 5e5,
                     bonus: 125e3,
                     stripeLookupkey: "droplets_100",
                     productId: 60,
                     dropdownClass: "max-sm:dropdown-top dropdown-center"
-                  })), a(ve);
-                  var be = c(ve, 2),
-                    Ie = o(be),
-                    ye = c(Ie),
-                    ot = o(ye, !0);
-                  a(ye), a(be);
-                  var tt = c(be, 2);
+                  })), a(rt);
+                  var we = l(rt, 2),
+                    Ie = o(we),
+                    de = l(Ie),
+                    it = o(de, !0);
+                  a(de), a(we);
+                  var nt = l(we, 2);
                   {
-                    var qt = Me => {
-                      var J = Xf(),
-                        Ue = o(J),
-                        Ve = o(Ue, !0);
-                      a(Ue), a(J), T(rt => w(Ve, rt), [() => Xt()]), me("click", Ue, () => _t.pendingHistoryDialogOpen = !0), u(Me, J)
+                    var Pt = Re => {
+                      var J = ey(),
+                        Me = o(J),
+                        Ve = o(Me, !0);
+                      a(Me), a(J), I(at => k(Ve, at), [() => er()]), he("click", Me, () => pt.pendingHistoryDialogOpen = !0), u(Re, J)
                     };
-                    A(tt, Me => {
-                      r(I) && Me(qt)
+                    B(nt, Re => {
+                      r(E) && Re(Pt)
                     })
                   }
-                  T((Me, J, Ue, Ve) => {
-                    w(te, Me), w(Ie, `${J??""} `), Ge(ye, "href", Ue), w(ot, Ve)
-                  }, [() => ap(), () => K_(), () => qr(), () => L_()]), u(de, qe)
+                  I((Re, J, Me, Ve) => {
+                    k(tt, Re), k(Ie, `${J??""} `), Ge(de, "href", Me), k(it, Ve)
+                  }, [() => ip(), () => Z_(), () => Pr(), () => T_()]), u(ye, Z)
                 },
-                Le = de => {
-                  var oe = ry(),
-                    qe = ne(oe);
+                Le = ye => {
+                  var L = ay(),
+                    Z = re(L);
                   {
-                    var H = ge => {
-                      var fe = ey(),
-                        Fe = o(fe),
-                        be = o(Fe),
-                        Ie = o(be),
-                        ye = c(Ie, 2),
-                        ot = c(ye);
-                      a(be);
-                      var tt = c(be, 2),
-                        qt = o(tt, !0);
-                      a(tt), a(Fe), a(fe), T((Me, J) => {
-                        Pe(be, 1, `group flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all ${r(v)==="stripe"?"dark:bg-base-100 bg-white text-[#635bff] shadow-sm":"text-base-content/50 hover:text-base-content/80"}`), Pe(Ie, 0, `hidden w-auto transition-all sm:block sm:h-4 ${r(v)==="stripe"?"":"grayscale group-hover:grayscale-0"}`), Pe(ye, 0, `hidden w-auto transition-all sm:block sm:h-4 ${r(v)==="stripe"?"":"grayscale group-hover:grayscale-0"}`), w(ot, ` ${Me??""}`), Pe(tt, 1, `flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all ${r(v)==="other"?"dark:bg-base-100 bg-white text-[#30313d] shadow-sm":"text-base-content/50 hover:text-base-content/80"}`), w(qt, J)
-                      }, [() => zp(), () => Fp()]), me("click", be, () => p(v, "stripe")), me("click", tt, () => p(v, "other")), u(ge, fe)
+                    var qe = be => {
+                      var pe = ry(),
+                        Fe = o(pe),
+                        we = o(Fe),
+                        Ie = o(we),
+                        de = l(Ie, 2),
+                        it = l(de);
+                      a(we);
+                      var nt = l(we, 2),
+                        Pt = o(nt, !0);
+                      a(nt), a(Fe), a(pe), I((Re, J) => {
+                        Pe(we, 1, `group flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all ${r(m)==="stripe"?"dark:bg-base-100 bg-white text-[#635bff] shadow-sm":"text-base-content/50 hover:text-base-content/80"}`), Pe(Ie, 0, `hidden w-auto transition-all sm:block sm:h-4 ${r(m)==="stripe"?"":"grayscale group-hover:grayscale-0"}`), Pe(de, 0, `hidden w-auto transition-all sm:block sm:h-4 ${r(m)==="stripe"?"":"grayscale group-hover:grayscale-0"}`), k(it, ` ${Re??""}`), Pe(nt, 1, `flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all ${r(m)==="other"?"dark:bg-base-100 bg-white text-[#30313d] shadow-sm":"text-base-content/50 hover:text-base-content/80"}`), k(Pt, J)
+                      }, [() => Lp(), () => Kp()]), he("click", we, () => p(m, "stripe")), he("click", nt, () => p(m, "other")), u(be, pe)
                     };
-                    A(qe, ge => {
-                      r(K) || ge(H)
+                    B(Z, be => {
+                      r(ee) || be(qe)
                     })
                   }
-                  var te = c(qe, 2),
-                    ve = o(te);
+                  var tt = l(Z, 2),
+                    rt = o(tt);
                   {
-                    var et = ge => {
-                      var fe = Yt(),
-                        Fe = o(fe);
+                    var ft = be => {
+                      var pe = Qt(),
+                        Fe = o(pe);
                       {
-                        var be = ye => {
-                            Zf(ye, {
+                        var we = de => {
+                            Yf(de, {
                               get clientSecret() {
-                                return r(m)
+                                return r(h)
                               },
-                              onComplete: ze,
-                              onUnavailable: S
+                              onComplete: ie,
+                              onUnavailable: A
                             })
                           },
-                          Ie = ye => {
-                            var ot = ty();
-                            u(ye, ot)
+                          Ie = de => {
+                            var it = ny();
+                            u(de, it)
                           };
-                        A(Fe, ye => {
-                          r(m) ? ye(be) : ye(Ie, -1)
+                        B(Fe, de => {
+                          r(h) ? de(we) : de(Ie, -1)
                         })
                       }
-                      a(fe), T(() => Pe(fe, 1, Ft(r(v) !== "stripe" ? "h-0 overflow-hidden" : ""))), u(ge, fe)
+                      a(pe), I(() => Pe(pe, 1, Kt(r(m) !== "stripe" ? "h-0 overflow-hidden" : ""))), u(be, pe)
                     };
-                    A(ve, ge => {
-                      r(K) || ge(et)
+                    B(rt, be => {
+                      r(ee) || be(ft)
                     })
                   }
-                  var dt = c(ve, 2);
+                  var yt = l(rt, 2);
                   {
-                    var ft = ge => {
-                      var fe = Yt(),
-                        Fe = o(fe);
-                      Lf(Fe, {
+                    var ht = be => {
+                      var pe = Qt(),
+                        Fe = o(pe);
+                      Tf(Fe, {
                         get lookupKey() {
-                          return r(y).stripeLookupkey
+                          return r(f).stripeLookupkey
                         },
-                        oncomplete: async be => {
+                        oncomplete: async we => {
                           try {
-                            const Ie = r(y).droplets + r(y).bonus;
-                            if (be) {
+                            const Ie = r(f).droplets + r(f).bonus;
+                            if (we) {
                               const {
-                                orderId: ye
-                              } = await Ee.refreshFastspringSession(be);
-                              await De.refresh(), ye && await Ee.markFastspringOrderAsRead(ye), localStorage.removeItem("fscBackFromCheckout")
+                                orderId: de
+                              } = await Ee.refreshFastspringSession(we);
+                              await xe.refresh(), de && await Ee.markFastspringOrderAsRead(de), localStorage.removeItem("fscBackFromCheckout")
                             }
-                            ce(), e(!1), p(g, Ie), p(q, !0)
+                            ve(), e(!1), p(w, Ie), p(D, !0)
                           } catch {
-                            ht.warning(yd())
+                            vt.warning(md())
                           }
                         }
-                      }), a(fe), T(() => Pe(fe, 1, Ft(r(v) !== "other" ? "h-0 overflow-hidden" : ""))), u(ge, fe)
+                      }), a(pe), I(() => Pe(pe, 1, Kt(r(m) !== "other" ? "h-0 overflow-hidden" : ""))), u(be, pe)
                     };
-                    A(dt, ge => {
-                      r(O) && ge(ft)
+                    B(yt, be => {
+                      r(O) && be(ht)
                     })
                   }
-                  a(te), u(de, oe)
+                  a(tt), u(ye, L)
                 };
-              A(_e, de => {
-                r(i) === "products" ? de(pe) : r(i) === "checkout" && r(y) && de(Le, 1)
+              B(ge, ye => {
+                r(i) === "products" ? ye(De) : r(i) === "checkout" && r(f) && ye(Le, 1)
               })
             }
-            u(Z, $)
+            u(se, ue)
           };
-          A(re, Z => {
-            De.data && Z(Y)
+          B(oe, se => {
+            xe.data && se(_e)
           })
         }
-        u(k, le)
+        u(ae, N)
       },
       $$slots: {
         header: !0,
@@ -2891,100 +2893,100 @@ function Hy(n, t) {
     })
   }
   a(Ae);
-  var Re = c(Ae, 2);
-  Df(Re, {
+  var Ze = l(Ae, 2);
+  Sf(Ze, {
     get purchasedDroplets() {
-      return r(g)
+      return r(w)
     },
     onbacktostore: () => e(!1),
     get open() {
-      return r(q)
-    },
-    set open(l) {
-      p(q, l, !0)
-    }
-  });
-  var Oe = c(Re, 2);
-  Cf(Oe, {
-    onbacktostore: () => e(!0),
-    get open() {
       return r(D)
     },
-    set open(l) {
-      p(D, l, !0)
+    set open(s) {
+      p(D, s, !0)
     }
   });
-  var Ze = c(Oe, 2);
-  jf(Ze, {
+  var We = l(Ze, 2);
+  zf(We, {
+    onbacktostore: () => e(!0),
     get open() {
-      return r(x)
+      return r(P)
     },
-    set open(l) {
-      p(x, l, !0)
+    set open(s) {
+      p(P, s, !0)
     }
   });
-  var We = c(Ze, 2);
-  xf(We, {
+  var Xe = l(We, 2);
+  Df(Xe, {
+    get open() {
+      return r(j)
+    },
+    set open(s) {
+      p(j, s, !0)
+    }
+  });
+  var $e = l(Xe, 2);
+  jf($e, {
     onViewHistory: () => {
-      p(N, !1), _t.pendingHistoryDialogOpen = !0
+      p(K, !1), pt.pendingHistoryDialogOpen = !0
     },
     get open() {
-      return r(N)
+      return r(K)
     },
-    set open(l) {
-      p(N, l, !0)
+    set open(s) {
+      p(K, s, !0)
     }
   });
-  var Xe = c(We, 2);
-  rf(Xe, {
+  var et = l($e, 2);
+  af(et, {
     onRetry: () => {
-      p(ae, !1), je(r(B))
+      p(ne, !1), le(r(T))
     },
     get open() {
-      return r(ae)
+      return r(ne)
     },
-    set open(l) {
-      p(ae, l, !0)
+    set open(s) {
+      p(ne, s, !0)
     }
   });
-  var $e = c(Xe, 2);
-  wf($e, {
+  var q = l(et, 2);
+  kf(q, {
     get open() {
-      return _t.pendingHistoryDialogOpen
+      return pt.pendingHistoryDialogOpen
     },
-    set open(l) {
-      _t.pendingHistoryDialogOpen = l
+    set open(s) {
+      pt.pendingHistoryDialogOpen = s
     }
   });
-  var at = c($e, 2);
-  Ot(at, () => r(V), l => {
+  var _ = l(q, 2);
+  Vt(_, () => r(V), s => {
     {
-      let s = L(() => {
-        var d;
-        return (d = Te.playBillingBlockedError) == null ? void 0 : d.printError
+      let d = S(() => {
+        var g;
+        return (g = Te.playBillingBlockedError) == null ? void 0 : g.printError
       });
-      Sf(l, {
+      Af(s, {
         get message() {
-          return r(s)
+          return r(d)
         },
         get open() {
           return r(V)
         },
-        set open(d) {
-          p(V, d, !0)
+        set open(g) {
+          p(V, g, !0)
         }
       })
     }
-  }), T(() => Ge(Ae, "data-theme", r(i) === "checkout" ? "custom-winter" : void 0)), u(n, ue), Se()
+  }), I(() => Ge(Ae, "data-theme", r(i) === "checkout" ? "custom-winter" : void 0)), u(n, Oe), Ce()
 }
-jt(["click"]);
-var ay = new Set(["$$slots", "$$events", "$$legacy"]),
-  oy = xe('<svg><path d="M440-320v-326L336-542l-56-58 200-200 200 200-56 58-104-104v326h-80ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
+Dt(["click"]);
+var iy = new Set(["$$slots", "$$events", "$$legacy"]),
+  sy = je('<svg><path d="M440-320v-326L336-542l-56-58 200-200 200 200-56 58-104-104v326h-80ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
 
-function Oy(n, t) {
-  let e = wr(t, ay);
-  var i = oy();
-  br(i, () => ({
+function Vy(n, t) {
+  let e = kr(t, iy);
+  var i = sy();
+  xr(i, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
@@ -2992,35 +2994,35 @@ function Oy(n, t) {
   })), u(n, i)
 }
 
-function Fy([n, t], [e, i]) {
+function Ky([n, t], [e, i]) {
   n = Math.floor(n), t = Math.floor(t), e = Math.floor(e), i = Math.floor(i);
-  const _ = [],
-    g = Math.abs(e - n),
-    q = Math.abs(i - t),
-    D = n < e ? 1 : -1,
-    x = t < i ? 1 : -1;
-  let y = g - q,
-    m = n,
-    U = t;
-  for (; _.push([m, U]), !(m === e && U === i);) {
-    const Q = 2 * y;
-    Q > -q && (y -= q, m += D), Q < g && (y += g, U += x)
+  const c = [],
+    w = Math.abs(e - n),
+    D = Math.abs(i - t),
+    P = n < e ? 1 : -1,
+    j = t < i ? 1 : -1;
+  let f = w - D,
+    h = n,
+    H = t;
+  for (; c.push([h, H]), !(h === e && H === i);) {
+    const Q = 2 * f;
+    Q > -D && (f -= D, h += P), Q < w && (f += w, H += j)
   }
-  return _
+  return c
 }
-var iy = h('<img class="pixelated bg-base-200" alt="User profile"/>'),
-  sy = h('<div class="relative w-max"><div class="bg-base-content/20 size-12 rounded-full"></div> <div class="level-fill center-absolute absolute size-12 rotate-[215deg] rounded-full svelte-12f880g"></div> <div class="avatar center-absolute absolute"><div class="size-10 rounded-full"><!></div></div> <div> </div></div>');
+var uy = y('<img class="pixelated bg-base-200" alt="User profile"/>'),
+  ly = y('<div class="relative w-max"><div class="bg-base-content/20 size-12 rounded-full"></div> <div class="level-fill center-absolute absolute size-12 rotate-[215deg] rounded-full svelte-12f880g"></div> <div class="avatar center-absolute absolute"><div class="size-10 rounded-full"><!></div></div> <div> </div></div>');
 
-function Vy(n, t) {
-  const e = L(() => t.level % 1 * 360);
-  var i = sy(),
-    _ = c(o(i), 2),
-    g = c(_, 2),
-    q = o(g),
-    D = o(q);
+function Ny(n, t) {
+  const e = S(() => t.level % 1 * 360);
+  var i = ly(),
+    c = l(o(i), 2),
+    w = l(c, 2),
+    D = o(w),
+    P = o(D);
   {
-    var x = E => {
-        Rr(E, {
+    var j = G => {
+        Ur(G, {
           get userId() {
             return t.userId
           },
@@ -3029,25 +3031,25 @@ function Vy(n, t) {
           }
         })
       },
-      y = E => {
-        var I = iy();
-        T(() => Ge(I, "src", t.pictureUrl)), u(E, I)
+      f = G => {
+        var E = uy();
+        I(() => Ge(E, "src", t.pictureUrl)), u(G, E)
       };
-    A(D, E => {
-      t.pictureUrl ? E(y, -1) : E(x)
+    B(P, G => {
+      t.pictureUrl ? G(f, -1) : G(j)
     })
   }
-  a(q), a(g);
-  var m = c(g, 2);
-  let U;
-  var Q = o(m, !0);
-  a(m), a(i), T(E => {
-    Ye(_, `--angle: ${r(e)??""}deg; --color: var(--color-secondary)`), U = Pe(m, 1, "text-primary-content bg-secondary absolute bottom-0 flex items-center justify-center rounded-full px-[5px] py-0 text-xs font-bold", null, U, {
+  a(D), a(w);
+  var h = l(w, 2);
+  let H;
+  var Q = o(h, !0);
+  a(h), a(i), I(G => {
+    Ye(c, `--angle: ${r(e)??""}deg; --color: var(--color-secondary)`), H = Pe(h, 1, "text-primary-content bg-secondary absolute bottom-0 flex items-center justify-center rounded-full px-[5px] py-0 text-xs font-bold", null, H, {
       "left-0": t.level > 99,
       "-left-1": t.level > 99
-    }), w(Q, E)
+    }), k(Q, G)
   }, [() => Math.floor(t.level)]), u(n, i)
 }
 export {
-  bd as D, Vy as P, Oy as U, Hy as a, Uy as c, nf as d, My as e, Fy as r
+  xd as D, Ny as P, Vy as U, Fy as a, Oy as c, of as d, Hy as e, Ky as r
 };
