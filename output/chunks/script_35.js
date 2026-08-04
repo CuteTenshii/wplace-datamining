@@ -3,33 +3,44 @@ import {
 } from "./BhCkpOlh.js";
 import "./Bzak7iHL.js";
 import {
-  o as jt,
-  a as gr
-} from "./CRTPBFbF.js";
-import {
+  a as u,
+  k as je,
   l as Dt,
   p as Se,
   w as Ue,
   f as re,
-  a as u,
   b as Ce,
   d as o,
   r as a,
   m as he,
   c as y,
   s as l,
-  o as qt,
+  o as jt,
   t as I,
   i as r,
-  k as je,
   u as S,
   v as Je,
   y as Tt,
   e as W,
-  g as br,
+  g as gr,
   h as p,
-  n as wr
+  n as br
 } from "./DUZ_qUVk.js";
+import {
+  b as wr,
+  s as Ge,
+  a as Pe,
+  e as Ye,
+  c as Vt
+} from "./M4i-R8Gk.js";
+import {
+  r as xr,
+  p as ke
+} from "./DXFW01RN.js";
+import {
+  o as qt,
+  a as kr
+} from "./CRTPBFbF.js";
 import {
   s as k
 } from "./DtUyTUmd.js";
@@ -37,35 +48,24 @@ import {
   i as B
 } from "./BLc2SwOK.js";
 import {
-  k as Vt
+  k as Kt
 } from "./BSwVEwq1.js";
-import {
-  s as Ge,
-  a as Pe,
-  e as Ye,
-  c as Kt,
-  b as xr
-} from "./M4i-R8Gk.js";
-import {
-  p as ke,
-  r as kr
-} from "./DXFW01RN.js";
 import {
   g as pt,
   u as xe,
   b as Ee,
   t as vt,
   f as Nt
-} from "./BadwafE7.js";
+} from "./Bj8wTZm9.js";
 import {
   a as jr,
   u as qr
-} from "./oKQjVPWp.js";
+} from "./CifsnVYR.js";
 import {
   T as Xt,
   a as Te,
   p as Dr
-} from "./BDv9okN2.js";
+} from "./i7tFyr04.js";
 import {
   r as Pr
 } from "./DL_rIE8k.js";
@@ -81,7 +81,7 @@ import {
 } from "./AcHVui-2.js";
 import {
   r as Zt
-} from "./NEjusmPr.js";
+} from "./rrpPc8q9.js";
 import {
   l as zr
 } from "./B_Oz03f8.js";
@@ -833,26 +833,39 @@ const Hr = () => "Balance",
     return e === "en" ? od() : e === "pt" ? id() : e === "ch" ? sd() : e === "de" ? ud() : e === "es" ? ld() : e === "fr" ? cd() : e === "it" ? _d() : e === "jp" ? pd() : e === "pl" ? dd() : e === "ru" ? fd() : e === "uk" ? yd() : hd()
   },
   Oy = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAAXNSR0IArs4c6QAAACpJREFUeNpj+AsEZ86ASIa/DAwMZ84ACRDzDBigMs/AARITq1oUwxBWAADaREUdDMswKwAAAABJRU5ErkJggg==";
-var vd = y('<span class="btn btn-xs btn-circle btn-primary ml-0.5 size-5"><!></span>'),
-  gd = y('<span class="flex items-center gap-1"><!> <span class="text-primary text-base font-semibold"> <span class="text-xs max-lg:hidden">Droplets</span></span> <!></span>'),
-  bd = y('<button class="badge badge-lg border-base-content/10 right-tooltip cursor-pointer border-2 pr-1 pl-1"><!></button>'),
-  wd = y('<span class="badge badge-lg border-base-content/10 right-tooltip border-2 pr-2 pl-1"><!></span>');
+var vd = new Set(["$$slots", "$$events", "$$legacy"]),
+  gd = je('<svg><path d="M440-320v-326L336-542l-56-58 200-200 200 200-56 58-104-104v326h-80ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
 
-function xd(n, t) {
+function Fy(n, t) {
+  let e = xr(t, vd);
+  var i = gd();
+  wr(i, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...e
+  })), u(n, i)
+}
+var bd = y('<span class="btn btn-xs btn-circle btn-primary ml-0.5 size-5"><!></span>'),
+  wd = y('<span class="flex items-center gap-1"><!> <span class="text-primary text-base font-semibold"> <span class="text-xs max-lg:hidden">Droplets</span></span> <!></span>'),
+  xd = y('<button class="badge badge-lg border-base-content/10 right-tooltip cursor-pointer border-2 pr-1 pl-1"><!></button>'),
+  kd = y('<span class="badge badge-lg border-base-content/10 right-tooltip border-2 pr-2 pl-1"><!></span>');
+
+function jd(n, t) {
   Se(t, !0);
   const e = j => {
-    var f = gd(),
+    var f = wd(),
       h = o(f);
     Qe(h, {
       class: "text-primary size-4.5"
     });
     var H = l(h, 2),
       Q = o(H);
-    qt(), a(H);
+    jt(), a(H);
     var G = l(H, 2);
     {
       var E = z => {
-        var V = vd(),
+        var V = bd(),
           R = o(V);
         Sr(R, {
           class: "size-4"
@@ -869,14 +882,14 @@ function xd(n, t) {
     w = re(c);
   {
     var D = j => {
-        var f = bd(),
+        var f = xd(),
           h = o(f);
         e(h), a(f), he("click", f, () => {
           pt.dropletsDialogOpen = !0
         }), u(j, f)
       },
       P = j => {
-        var f = wd(),
+        var f = kd(),
           h = o(f);
         e(h), a(f), u(j, f)
       };
@@ -888,18 +901,18 @@ function xd(n, t) {
 }
 Dt(["click"]);
 const gt = n => {
-    var t = Xd();
-    u(n, t)
-  },
-  kd = n => {
-    var t = $d();
-    u(n, t)
-  },
-  jd = n => {
     var t = ef();
     u(n, t)
   },
-  qd = {
+  qd = n => {
+    var t = tf();
+    u(n, t)
+  },
+  Dd = n => {
+    var t = rf();
+    u(n, t)
+  },
+  Pd = {
     success: {
       accent: "#22c55e",
       accentDark: "#16a34a",
@@ -957,53 +970,53 @@ const gt = n => {
   },
   tr = 38,
   rr = 32,
-  Dd = (n, t) => {
+  Sd = (n, t) => {
     const e = (Math.sin(n * 12.9898 + t * 78.233) * 43758.5453 % 1 + 1) % 1,
       i = (c, w, D) => Math.sqrt((n - c) ** 2 + (t - w) ** 2) < D + (e - .5) * 2;
     return i(6, 8, 5) || i(14, 14, 6) || i(26, 10, 7) || i(28, 22, 5) || i(18, 24, 3)
   },
   nr = [];
 for (let n = 0; n < rr; n++)
-  for (let t = 0; t < tr; t++) Dd(t, n) && nr.push({
+  for (let t = 0; t < tr; t++) Sd(t, n) && nr.push({
     x: t,
     y: n
   });
-var Pd = y('<span class="wp-dots svelte-ifq4hh" aria-hidden="true"><span class="svelte-ifq4hh"></span><span class="svelte-ifq4hh"></span><span class="svelte-ifq4hh"></span></span>'),
-  Sd = y('<div class="wp-amount-label svelte-ifq4hh"> </div>'),
-  Cd = y('<div class="svelte-ifq4hh"><div class="wp-amount tabular-nums svelte-ifq4hh"> </div> <!></div>'),
-  zd = y('<p class="wp-body svelte-ifq4hh"><!></p>'),
-  Ad = y('<li class="svelte-ifq4hh"><span class="wp-bullet-row svelte-ifq4hh"><span class="wp-bullet-label svelte-ifq4hh"> </span> <span class="wp-bullet-value tabular-nums svelte-ifq4hh"><!> </span></span></li>'),
-  Ld = y('<ul class="wp-bullets svelte-ifq4hh"></ul>'),
-  Bd = y('<div class="wp-receipt-row svelte-ifq4hh"><span class="svelte-ifq4hh"> </span> <strong class="svelte-ifq4hh"> </strong></div>'),
-  Td = y('<div class="wp-receipt-divider svelte-ifq4hh"></div> <div class="wp-receipt-row wp-receipt-total svelte-ifq4hh"><span class="svelte-ifq4hh"> </span> <span class="v svelte-ifq4hh"> </span></div>', 1),
-  Id = y('<div class="wp-receipt svelte-ifq4hh"><!> <!></div>'),
-  Ed = y('<div class="wp-progress svelte-ifq4hh" aria-hidden="true"></div>'),
-  Gd = y('<div class="wp-meta svelte-ifq4hh"><!></div>'),
-  Rd = y('<div class="wp-btn-row svelte-ifq4hh"><button class="wp-cta wp-cta-ghost focus:outline-none svelte-ifq4hh" type="button"> </button> <button class="wp-cta focus:outline-none svelte-ifq4hh" type="button"> </button></div>'),
-  Md = y('<button class="wp-cta focus:outline-none svelte-ifq4hh" type="button"><span class="svelte-ifq4hh"> </span> <!></button>'),
-  Ud = y('<button class="wp-cta wp-cta-ghost svelte-ifq4hh" type="button"> </button>'),
-  Hd = y('<a class="wp-ghost-link svelte-ifq4hh"> </a>'),
-  Od = y('<div class="wp-card-wrap svelte-ifq4hh"><div><!></div> <div class="wp-card svelte-ifq4hh" role="status" aria-live="polite"><h2 class="wp-title svelte-ifq4hh"> <!></h2> <!> <!> <!> <!> <!> <!> <!> <!> <!></div></div>'),
-  Fd = je('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M6 16 L13 23 L26 9" stroke="#fff" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter" class="svelte-ifq4hh"></path></svg>'),
-  Vd = je('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M9 9 L23 23 M23 9 L9 23" stroke="#fff" stroke-width="4" stroke-linecap="square" class="svelte-ifq4hh"></path></svg>'),
-  Kd = je('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><rect x="14" y="7" width="4" height="13" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="22" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
-  Nd = je('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><rect x="14" y="13" width="4" height="13" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="6" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
-  Zd = je('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><path d="M16 5 L19 13 L27 13 L21 18 L23 26 L16 22 L9 26 L11 18 L5 13 L13 13 Z" fill="#fff" class="svelte-ifq4hh"></path></svg>'),
-  Wd = je('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M11 12 Q11 8 16 8 Q21 8 21 12 Q21 15 16 16 L16 19" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="square" class="svelte-ifq4hh"></path><rect x="14" y="22" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
-  Yd = je('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="6" y="10" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="10" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="22" y="10" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="6" y="18" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="18" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="22" y="18" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
-  Jd = je('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="14" y="4" width="4" height="6" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="22" width="4" height="6" fill="rgba(255,255,255,0.25)" class="svelte-ifq4hh"></rect><rect x="4" y="14" width="6" height="4" fill="rgba(255,255,255,0.5)" class="svelte-ifq4hh"></rect><rect x="22" y="14" width="6" height="4" fill="rgba(255,255,255,0.75)" class="svelte-ifq4hh"></rect><rect x="7.5" y="7.5" width="4" height="4" fill="rgba(255,255,255,0.85)" class="svelte-ifq4hh"></rect><rect x="20.5" y="20.5" width="4" height="4" fill="rgba(255,255,255,0.4)" class="svelte-ifq4hh"></rect><rect x="20.5" y="7.5" width="4" height="4" fill="rgba(255,255,255,0.6)" class="svelte-ifq4hh"></rect><rect x="7.5" y="20.5" width="4" height="4" fill="rgba(255,255,255,0.2)" class="svelte-ifq4hh"></rect></svg>'),
-  Qd = je('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="7" y="9" width="18" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="7" y="9" width="4" height="16" fill="#fff" class="svelte-ifq4hh"></rect><rect x="21" y="9" width="4" height="16" fill="#fff" class="svelte-ifq4hh"></rect><rect x="7" y="21" width="18" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
-  Xd = je('<svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="7" y="1" width="2" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="6" y="2" width="4" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="5" y="3" width="6" height="2" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="4" y="5" width="8" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="3" y="6" width="10" height="2" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="2" y="8" width="12" height="3" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="3" y="11" width="10" height="2" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="4" y="13" width="8" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="6" y="14" width="4" height="1" fill="currentColor" class="svelte-ifq4hh"></rect></svg>'),
-  $d = je('<svg viewBox="0 0 16 16" width="14" height="14" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><path d="M3 8 L7 12 L13 5" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="square" class="svelte-ifq4hh"></path></svg>'),
-  ef = je('<svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M3 8h9 M9 5l4 3-4 3" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" class="svelte-ifq4hh"></path></svg>'),
-  tf = y('<div class="wp-embed svelte-ifq4hh"><!></div>'),
-  rf = je('<rect width="1" height="1" fill="#2D6378" class="svelte-ifq4hh"></rect>'),
-  nf = y('<div class="wp-stage svelte-ifq4hh" aria-hidden="false"><svg class="wp-map svelte-ifq4hh" preserveAspectRatio="xMidYMid slice" shape-rendering="crispEdges" aria-hidden="true"></svg> <div class="wp-droplets svelte-ifq4hh" aria-hidden="true"><div class="wp-d wp-d1 svelte-ifq4hh"><!></div> <div class="wp-d wp-d2 svelte-ifq4hh"><!></div> <div class="wp-d wp-d3 svelte-ifq4hh"><!></div> <div class="wp-d wp-d4 svelte-ifq4hh"><!></div></div> <div class="wp-shell svelte-ifq4hh"><header class="wp-topbar svelte-ifq4hh"><a class="wp-brand svelte-ifq4hh" aria-label="WPlace home"><img class="pixelated h-auto w-6 shrink-0 svelte-ifq4hh" alt="Wplace logo"/> <span class="wp-brand-name svelte-ifq4hh">wplace</span></a> <button class="wp-close svelte-ifq4hh" type="button" aria-label="Close"><svg viewBox="0 0 16 16" fill="none" width="14" height="14" aria-hidden="true" class="svelte-ifq4hh"><path d="M3 3 L13 13 M13 3 L3 13" stroke="currentColor" stroke-width="2" stroke-linecap="square" class="svelte-ifq4hh"></path></svg></button></header> <main class="wp-main svelte-ifq4hh"><!></main></div></div>');
+var Cd = y('<span class="wp-dots svelte-ifq4hh" aria-hidden="true"><span class="svelte-ifq4hh"></span><span class="svelte-ifq4hh"></span><span class="svelte-ifq4hh"></span></span>'),
+  zd = y('<div class="wp-amount-label svelte-ifq4hh"> </div>'),
+  Ad = y('<div class="svelte-ifq4hh"><div class="wp-amount tabular-nums svelte-ifq4hh"> </div> <!></div>'),
+  Ld = y('<p class="wp-body svelte-ifq4hh"><!></p>'),
+  Bd = y('<li class="svelte-ifq4hh"><span class="wp-bullet-row svelte-ifq4hh"><span class="wp-bullet-label svelte-ifq4hh"> </span> <span class="wp-bullet-value tabular-nums svelte-ifq4hh"><!> </span></span></li>'),
+  Td = y('<ul class="wp-bullets svelte-ifq4hh"></ul>'),
+  Id = y('<div class="wp-receipt-row svelte-ifq4hh"><span class="svelte-ifq4hh"> </span> <strong class="svelte-ifq4hh"> </strong></div>'),
+  Ed = y('<div class="wp-receipt-divider svelte-ifq4hh"></div> <div class="wp-receipt-row wp-receipt-total svelte-ifq4hh"><span class="svelte-ifq4hh"> </span> <span class="v svelte-ifq4hh"> </span></div>', 1),
+  Gd = y('<div class="wp-receipt svelte-ifq4hh"><!> <!></div>'),
+  Rd = y('<div class="wp-progress svelte-ifq4hh" aria-hidden="true"></div>'),
+  Md = y('<div class="wp-meta svelte-ifq4hh"><!></div>'),
+  Ud = y('<div class="wp-btn-row svelte-ifq4hh"><button class="wp-cta wp-cta-ghost focus:outline-none svelte-ifq4hh" type="button"> </button> <button class="wp-cta focus:outline-none svelte-ifq4hh" type="button"> </button></div>'),
+  Hd = y('<button class="wp-cta focus:outline-none svelte-ifq4hh" type="button"><span class="svelte-ifq4hh"> </span> <!></button>'),
+  Od = y('<button class="wp-cta wp-cta-ghost svelte-ifq4hh" type="button"> </button>'),
+  Fd = y('<a class="wp-ghost-link svelte-ifq4hh"> </a>'),
+  Vd = y('<div class="wp-card-wrap svelte-ifq4hh"><div><!></div> <div class="wp-card svelte-ifq4hh" role="status" aria-live="polite"><h2 class="wp-title svelte-ifq4hh"> <!></h2> <!> <!> <!> <!> <!> <!> <!> <!> <!></div></div>'),
+  Kd = je('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M6 16 L13 23 L26 9" stroke="#fff" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter" class="svelte-ifq4hh"></path></svg>'),
+  Nd = je('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M9 9 L23 23 M23 9 L9 23" stroke="#fff" stroke-width="4" stroke-linecap="square" class="svelte-ifq4hh"></path></svg>'),
+  Zd = je('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><rect x="14" y="7" width="4" height="13" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="22" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
+  Wd = je('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><rect x="14" y="13" width="4" height="13" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="6" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
+  Yd = je('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><path d="M16 5 L19 13 L27 13 L21 18 L23 26 L16 22 L9 26 L11 18 L5 13 L13 13 Z" fill="#fff" class="svelte-ifq4hh"></path></svg>'),
+  Jd = je('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M11 12 Q11 8 16 8 Q21 8 21 12 Q21 15 16 16 L16 19" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="square" class="svelte-ifq4hh"></path><rect x="14" y="22" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
+  Qd = je('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="6" y="10" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="10" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="22" y="10" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="6" y="18" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="18" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="22" y="18" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
+  Xd = je('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="14" y="4" width="4" height="6" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="22" width="4" height="6" fill="rgba(255,255,255,0.25)" class="svelte-ifq4hh"></rect><rect x="4" y="14" width="6" height="4" fill="rgba(255,255,255,0.5)" class="svelte-ifq4hh"></rect><rect x="22" y="14" width="6" height="4" fill="rgba(255,255,255,0.75)" class="svelte-ifq4hh"></rect><rect x="7.5" y="7.5" width="4" height="4" fill="rgba(255,255,255,0.85)" class="svelte-ifq4hh"></rect><rect x="20.5" y="20.5" width="4" height="4" fill="rgba(255,255,255,0.4)" class="svelte-ifq4hh"></rect><rect x="20.5" y="7.5" width="4" height="4" fill="rgba(255,255,255,0.6)" class="svelte-ifq4hh"></rect><rect x="7.5" y="20.5" width="4" height="4" fill="rgba(255,255,255,0.2)" class="svelte-ifq4hh"></rect></svg>'),
+  $d = je('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="7" y="9" width="18" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="7" y="9" width="4" height="16" fill="#fff" class="svelte-ifq4hh"></rect><rect x="21" y="9" width="4" height="16" fill="#fff" class="svelte-ifq4hh"></rect><rect x="7" y="21" width="18" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
+  ef = je('<svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="7" y="1" width="2" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="6" y="2" width="4" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="5" y="3" width="6" height="2" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="4" y="5" width="8" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="3" y="6" width="10" height="2" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="2" y="8" width="12" height="3" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="3" y="11" width="10" height="2" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="4" y="13" width="8" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="6" y="14" width="4" height="1" fill="currentColor" class="svelte-ifq4hh"></rect></svg>'),
+  tf = je('<svg viewBox="0 0 16 16" width="14" height="14" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><path d="M3 8 L7 12 L13 5" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="square" class="svelte-ifq4hh"></path></svg>'),
+  rf = je('<svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M3 8h9 M9 5l4 3-4 3" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" class="svelte-ifq4hh"></path></svg>'),
+  nf = y('<div class="wp-embed svelte-ifq4hh"><!></div>'),
+  af = je('<rect width="1" height="1" fill="#2D6378" class="svelte-ifq4hh"></rect>'),
+  of = y('<div class="wp-stage svelte-ifq4hh" aria-hidden="false"><svg class="wp-map svelte-ifq4hh" preserveAspectRatio="xMidYMid slice" shape-rendering="crispEdges" aria-hidden="true"></svg> <div class="wp-droplets svelte-ifq4hh" aria-hidden="true"><div class="wp-d wp-d1 svelte-ifq4hh"><!></div> <div class="wp-d wp-d2 svelte-ifq4hh"><!></div> <div class="wp-d wp-d3 svelte-ifq4hh"><!></div> <div class="wp-d wp-d4 svelte-ifq4hh"><!></div></div> <div class="wp-shell svelte-ifq4hh"><header class="wp-topbar svelte-ifq4hh"><a class="wp-brand svelte-ifq4hh" aria-label="WPlace home"><img class="pixelated h-auto w-6 shrink-0 svelte-ifq4hh" alt="Wplace logo"/> <span class="wp-brand-name svelte-ifq4hh">wplace</span></a> <button class="wp-close svelte-ifq4hh" type="button" aria-label="Close"><svg viewBox="0 0 16 16" fill="none" width="14" height="14" aria-hidden="true" class="svelte-ifq4hh"><path d="M3 3 L13 13 M13 3 L3 13" stroke="currentColor" stroke-width="2" stroke-linecap="square" class="svelte-ifq4hh"></path></svg></button></header> <main class="wp-main svelte-ifq4hh"><!></main></div></div>');
 
 function ot(n, t) {
   Se(t, !0);
   const e = G => {
-      var E = Od(),
+      var E = Vd(),
         z = o(E);
       let V, R;
       var K = o(z);
@@ -1015,7 +1028,7 @@ function ot(n, t) {
         F = l(O);
       {
         var Y = q => {
-          var _ = Pd();
+          var _ = Cd();
           u(q, _)
         };
         B(F, q => {
@@ -1026,14 +1039,14 @@ function ot(n, t) {
       var A = l(T, 2);
       {
         var U = q => {
-          var _ = Cd(),
+          var _ = Ad(),
             s = o(_),
             d = o(s, !0);
           a(s);
           var g = l(s, 2);
           {
             var v = b => {
-              var x = Sd(),
+              var x = zd(),
                 M = o(x, !0);
               a(x), I(() => k(M, t.amountLabel)), u(b, x)
             };
@@ -1050,7 +1063,7 @@ function ot(n, t) {
       var ee = l(A, 2);
       {
         var fe = q => {
-          var _ = zd(),
+          var _ = Ld(),
             s = o(_);
           {
             var d = b => {
@@ -1076,9 +1089,9 @@ function ot(n, t) {
       var me = l(ee, 2);
       {
         var ze = q => {
-          var _ = Ld();
+          var _ = Td();
           dt(_, 21, () => t.bullets, Bt, (s, d) => {
-            var g = Ad(),
+            var g = Bd(),
               v = o(g),
               b = o(v),
               x = o(b, !0);
@@ -1088,7 +1101,7 @@ function ot(n, t) {
             var te = o(M);
             {
               var N = _e => {
-                kd(_e)
+                qd(_e)
               };
               B(te, _e => {
                 r(d).valueIcon && _e(N)
@@ -1109,10 +1122,10 @@ function ot(n, t) {
       var ve = l(me, 2);
       {
         var ie = q => {
-          var _ = Id(),
+          var _ = Gd(),
             s = o(_);
           dt(s, 17, () => t.receipt.rows, Bt, (v, b) => {
-            var x = Bd(),
+            var x = Id(),
               M = o(x),
               ae = o(M, !0);
             a(M);
@@ -1128,7 +1141,7 @@ function ot(n, t) {
           var d = l(s, 2);
           {
             var g = v => {
-              var b = Td(),
+              var b = Ed(),
                 x = l(re(b), 2),
                 M = o(x),
                 ae = o(M, !0);
@@ -1152,7 +1165,7 @@ function ot(n, t) {
       var le = l(ve, 2);
       {
         var ce = q => {
-          var _ = Ed();
+          var _ = Rd();
           u(q, _)
         };
         B(le, q => {
@@ -1162,7 +1175,7 @@ function ot(n, t) {
       var He = l(le, 2);
       {
         var Oe = q => {
-          var _ = Gd(),
+          var _ = Md(),
             s = o(_);
           {
             var d = b => {
@@ -1188,7 +1201,7 @@ function ot(n, t) {
       var Ae = l(He, 2);
       {
         var Ne = q => {
-            var _ = Rd(),
+            var _ = Ud(),
               s = o(_),
               d = o(s, !0);
             a(s);
@@ -1209,7 +1222,7 @@ function ot(n, t) {
             }), u(q, _)
           },
           Ze = q => {
-            var _ = Md();
+            var _ = Hd();
             let s;
             var d = o(_),
               g = o(d, !0);
@@ -1217,7 +1230,7 @@ function ot(n, t) {
             var v = l(d, 2);
             {
               var b = x => {
-                jd(x)
+                Dd(x)
               };
               B(v, x => {
                 t.primary.arrow !== !1 && x(b)
@@ -1240,7 +1253,7 @@ function ot(n, t) {
       var We = l(Ae, 2);
       {
         var Xe = q => {
-          var _ = Ud(),
+          var _ = Od(),
             s = o(_, !0);
           a(_), I(() => k(s, t.secondary.label)), he("click", _, function(...d) {
             var g;
@@ -1254,7 +1267,7 @@ function ot(n, t) {
       var $e = l(We, 2);
       {
         var et = q => {
-          var _ = Hd(),
+          var _ = Fd(),
             s = o(_, !0);
           a(_), I(d => {
             Ge(_, "href", d), k(s, t.ghost)
@@ -1281,39 +1294,39 @@ function ot(n, t) {
         z = re(E);
       {
         var V = A => {
-            var U = Fd();
-            u(A, U)
-          },
-          R = A => {
-            var U = Vd();
-            u(A, U)
-          },
-          K = A => {
             var U = Kd();
             u(A, U)
           },
-          ne = A => {
+          R = A => {
             var U = Nd();
             u(A, U)
           },
-          T = A => {
+          K = A => {
             var U = Zd();
             u(A, U)
           },
-          m = A => {
+          ne = A => {
             var U = Wd();
             u(A, U)
           },
-          O = A => {
+          T = A => {
             var U = Yd();
             u(A, U)
           },
-          F = A => {
+          m = A => {
             var U = Jd();
             u(A, U)
           },
-          Y = A => {
+          O = A => {
             var U = Qd();
+            u(A, U)
+          },
+          F = A => {
+            var U = Xd();
+            u(A, U)
+          },
+          Y = A => {
+            var U = $d();
             u(A, U)
           };
         B(z, A => {
@@ -1325,21 +1338,21 @@ function ot(n, t) {
   let c = ke(t, "variant", 3, "success"),
     w = ke(t, "embedded", 3, !1),
     D = ke(t, "progress", 3, !1);
-  const P = S(() => qd[c()]),
+  const P = S(() => Pd[c()]),
     j = G => typeof G == "function";
   var f = Ue(),
     h = re(f);
   {
     var H = G => {
-        var E = tf(),
+        var E = nf(),
           z = o(E);
         e(z), a(E), u(G, E)
       },
       Q = G => {
-        var E = nf(),
+        var E = of(),
           z = o(E);
         Ge(z, "viewBox", `0 0 ${tr} ${rr}`), dt(z, 21, () => nr, ie => ie.x + "-" + ie.y, (ie, le) => {
-          var ce = rf();
+          var ce = af();
           I(() => {
             Ge(ce, "x", r(le).x), Ge(ce, "y", r(le).y)
           }), u(ie, ce)
@@ -1361,7 +1374,7 @@ function ot(n, t) {
           U = o(A),
           ee = o(U),
           fe = o(ee);
-        qt(2), a(ee);
+        jt(2), a(ee);
         var me = l(ee, 2);
         a(U);
         var ze = l(U, 2),
@@ -1381,7 +1394,7 @@ function ot(n, t) {
 }
 Dt(["click"]);
 
-function af(n, t) {
+function sf(n, t) {
   Se(t, !0);
   let e = ke(t, "open", 15);
   Tt(() => {
@@ -1436,36 +1449,36 @@ function af(n, t) {
   }), Ce()
 }
 
-function of(n, t) {
+function uf(n, t) {
   let e;
   return ((...i) => {
     clearTimeout(e), e = setTimeout(() => n(...i), t)
   })
 }
-var sf = y('<li class="bg-base-100 border-base-content/10 grid items-center gap-3 rounded-2xl border px-3.5 py-3" style="grid-template-columns: 36px 1fr auto;"><div class="bg-primary/10 grid size-9 place-items-center rounded-[10px]"><!></div> <div class="flex min-w-0 flex-col gap-0.5"><div class="flex items-baseline gap-1"><span class="text-base-content text-base font-extrabold tracking-tight tabular-nums"> </span> <span class="text-base-content/70 text-[12.5px] font-semibold">Droplets</span></div></div> <div class="text-base-content/60 flex flex-col items-end gap-0.5 text-[11px] font-semibold whitespace-nowrap tabular-nums"><span> </span></div></li>'),
-  uf = y('<ul class="flex flex-col gap-1.5"></ul>'),
-  lf = y('<div class="flex flex-col gap-0.5"><span class="text-base-content/60 text-[11px] font-semibold tracking-[0.08em] uppercase"> </span> <h3 class="text-[22px] leading-tight font-extrabold tracking-tight"> </h3></div>'),
-  cf = y('<span class="loading loading-spinner size-4"></span>'),
-  _f = y("<span> </span>"),
-  pf = y('<span class="bg-primary absolute right-2 -bottom-px left-2 h-0.5 rounded-t"></span>'),
-  df = y('<button role="tab" type="button"><span> </span> <!> <!></button>'),
-  ff = y('<div class="flex h-32 items-center justify-center"><span class="loading loading-spinner loading-lg"></span></div>'),
-  yf = y('<p class="text-warning/90 px-3.5 pb-3 pl-9 text-[12.5px] leading-snug"> </p>'),
-  hf = y('<div class="bg-warning/10 border-warning/30 overflow-hidden rounded-2xl border"><button type="button" class="flex w-full items-center gap-2.5 px-3.5 py-3 text-left"><!> <span class="text-warning flex-1 text-[13px] font-bold"> </span> <!></button> <!></div> <!> <div class="flex items-center justify-between px-1 pt-2"><span class="text-base-content/70 text-xs font-semibold"> </span> <span class="text-base-content inline-flex items-center gap-1 text-sm font-extrabold tabular-nums"><!> </span></div>', 1),
-  mf = y('<!> <div class="flex items-center justify-between px-1 pt-2"><span class="text-base-content/70 text-xs font-semibold"> </span></div>', 1),
-  vf = y('<div class="bg-base-100 ring-primary/15 text-primary absolute -right-1 -bottom-1 grid size-9 place-items-center rounded-full shadow-md ring-2"><!></div>'),
-  gf = y('<div class="bg-error ring-base-100 absolute -top-1 -right-1 grid size-8 place-items-center rounded-full text-white shadow-md ring-2"><!></div>'),
-  bf = y('<span class="loading loading-spinner size-3"></span>'),
-  wf = y('<div class="flex flex-col items-center px-7 py-8 text-center"><div class="relative mb-4"><div class="bg-primary/5 grid size-28 place-items-center rounded-full"><div class="bg-primary/10 grid size-20 place-items-center rounded-full"><!></div></div> <!></div> <div class="mb-1.5 text-base font-extrabold tracking-tight"> </div> <div class="text-base-content/60 mb-4 max-w-[240px] text-[13px] leading-snug"> </div> <button type="button" class="bg-primary/10 text-primary hover:bg-primary/20 inline-flex items-center gap-1.5 rounded-lg px-3.5 py-2 text-[12.5px] font-bold transition-colors disabled:opacity-60"><!> </button></div>'),
-  xf = y('<div class="-mx-4 -mb-4 flex flex-col gap-3 sm:-mx-6"><div class="px-4 sm:px-6"><div class="from-primary text-primary-content shadow-primary/30 flex items-center gap-3 rounded-2xl bg-gradient-to-br to-blue-500 p-3 shadow-lg"><div class="grid size-9 place-items-center rounded-xl bg-white/15 backdrop-blur"><!></div> <div class="flex flex-1 flex-col"><span class="text-[11px] font-semibold tracking-[0.06em] text-white/75 uppercase"> </span> <div class="flex items-baseline gap-1.5"><span class="text-[22px] font-extrabold tracking-tight tabular-nums"> </span> <span class="text-xs font-semibold text-white/75">Droplets</span></div></div> <button type="button" class="grid size-9 place-items-center rounded-xl bg-white/15 transition-all hover:bg-white/25 active:rotate-180 disabled:opacity-60"><!></button></div></div> <div role="tablist" class="border-base-content/10 -mb-px flex scrollbar-none gap-1 overflow-x-auto overflow-y-hidden border-b px-2 sm:px-4"></div> <div class="flex flex-col gap-3 px-4 pt-1 pb-5 sm:px-6"><!></div></div>');
+var lf = y('<li class="bg-base-100 border-base-content/10 grid items-center gap-3 rounded-2xl border px-3.5 py-3" style="grid-template-columns: 36px 1fr auto;"><div class="bg-primary/10 grid size-9 place-items-center rounded-[10px]"><!></div> <div class="flex min-w-0 flex-col gap-0.5"><div class="flex items-baseline gap-1"><span class="text-base-content text-base font-extrabold tracking-tight tabular-nums"> </span> <span class="text-base-content/70 text-[12.5px] font-semibold">Droplets</span></div></div> <div class="text-base-content/60 flex flex-col items-end gap-0.5 text-[11px] font-semibold whitespace-nowrap tabular-nums"><span> </span></div></li>'),
+  cf = y('<ul class="flex flex-col gap-1.5"></ul>'),
+  _f = y('<div class="flex flex-col gap-0.5"><span class="text-base-content/60 text-[11px] font-semibold tracking-[0.08em] uppercase"> </span> <h3 class="text-[22px] leading-tight font-extrabold tracking-tight"> </h3></div>'),
+  pf = y('<span class="loading loading-spinner size-4"></span>'),
+  df = y("<span> </span>"),
+  ff = y('<span class="bg-primary absolute right-2 -bottom-px left-2 h-0.5 rounded-t"></span>'),
+  yf = y('<button role="tab" type="button"><span> </span> <!> <!></button>'),
+  hf = y('<div class="flex h-32 items-center justify-center"><span class="loading loading-spinner loading-lg"></span></div>'),
+  mf = y('<p class="text-warning/90 px-3.5 pb-3 pl-9 text-[12.5px] leading-snug"> </p>'),
+  vf = y('<div class="bg-warning/10 border-warning/30 overflow-hidden rounded-2xl border"><button type="button" class="flex w-full items-center gap-2.5 px-3.5 py-3 text-left"><!> <span class="text-warning flex-1 text-[13px] font-bold"> </span> <!></button> <!></div> <!> <div class="flex items-center justify-between px-1 pt-2"><span class="text-base-content/70 text-xs font-semibold"> </span> <span class="text-base-content inline-flex items-center gap-1 text-sm font-extrabold tabular-nums"><!> </span></div>', 1),
+  gf = y('<!> <div class="flex items-center justify-between px-1 pt-2"><span class="text-base-content/70 text-xs font-semibold"> </span></div>', 1),
+  bf = y('<div class="bg-base-100 ring-primary/15 text-primary absolute -right-1 -bottom-1 grid size-9 place-items-center rounded-full shadow-md ring-2"><!></div>'),
+  wf = y('<div class="bg-error ring-base-100 absolute -top-1 -right-1 grid size-8 place-items-center rounded-full text-white shadow-md ring-2"><!></div>'),
+  xf = y('<span class="loading loading-spinner size-3"></span>'),
+  kf = y('<div class="flex flex-col items-center px-7 py-8 text-center"><div class="relative mb-4"><div class="bg-primary/5 grid size-28 place-items-center rounded-full"><div class="bg-primary/10 grid size-20 place-items-center rounded-full"><!></div></div> <!></div> <div class="mb-1.5 text-base font-extrabold tracking-tight"> </div> <div class="text-base-content/60 mb-4 max-w-[240px] text-[13px] leading-snug"> </div> <button type="button" class="bg-primary/10 text-primary hover:bg-primary/20 inline-flex items-center gap-1.5 rounded-lg px-3.5 py-2 text-[12.5px] font-bold transition-colors disabled:opacity-60"><!> </button></div>'),
+  jf = y('<div class="-mx-4 -mb-4 flex flex-col gap-3 sm:-mx-6"><div class="px-4 sm:px-6"><div class="from-primary text-primary-content shadow-primary/30 flex items-center gap-3 rounded-2xl bg-gradient-to-br to-blue-500 p-3 shadow-lg"><div class="grid size-9 place-items-center rounded-xl bg-white/15 backdrop-blur"><!></div> <div class="flex flex-1 flex-col"><span class="text-[11px] font-semibold tracking-[0.06em] text-white/75 uppercase"> </span> <div class="flex items-baseline gap-1.5"><span class="text-[22px] font-extrabold tracking-tight tabular-nums"> </span> <span class="text-xs font-semibold text-white/75">Droplets</span></div></div> <button type="button" class="grid size-9 place-items-center rounded-xl bg-white/15 transition-all hover:bg-white/25 active:rotate-180 disabled:opacity-60"><!></button></div></div> <div role="tablist" class="border-base-content/10 -mb-px flex scrollbar-none gap-1 overflow-x-auto overflow-y-hidden border-b px-2 sm:px-4"></div> <div class="flex flex-col gap-3 px-4 pt-1 pb-5 sm:px-6"><!></div></div>');
 
-function kf(n, t) {
+function qf(n, t) {
   Se(t, !0);
-  const e = (T, m = wr) => {
-    var O = uf();
+  const e = (T, m = br) => {
+    var O = cf();
     dt(O, 21, m, Bt, (F, Y) => {
       const A = S(() => r(Y).status === "refunded" ? r(Y).updatedAt : r(Y).createdAt);
-      var U = sf(),
+      var U = lf(),
         ee = o(U),
         fe = o(ee);
       Qe(fe, {
@@ -1475,7 +1488,7 @@ function kf(n, t) {
         ze = o(me),
         ve = o(ze),
         ie = o(ve, !0);
-      a(ve), qt(2), a(ze), a(me);
+      a(ve), jt(2), a(ze), a(me);
       var le = l(me, 2),
         ce = o(le),
         He = o(ce, !0);
@@ -1486,7 +1499,7 @@ function kf(n, t) {
   };
   let i = ke(t, "open", 15),
     c = W(!1),
-    w = W(br([])),
+    w = W(gr([])),
     D = W(!1),
     P = W("pending"),
     j = W(!0);
@@ -1517,7 +1530,7 @@ function kf(n, t) {
   async function G() {
     return Te.autoRecoverPendingPurchases()
   }
-  let E = of(async function() {
+  let E = uf(async function() {
     try {
       p(c, !0), r(f).pending.length > 0 && await Ee.verifyPendingPlayPurchases().catch(() => {}), await G(), await Q()
     } finally {
@@ -1580,7 +1593,7 @@ function kf(n, t) {
       i(m)
     },
     header: m => {
-      var O = lf(),
+      var O = _f(),
         F = o(O),
         Y = o(F, !0);
       a(F);
@@ -1591,7 +1604,7 @@ function kf(n, t) {
       }, [() => Ni(), () => el()]), u(m, O)
     },
     children: (m, O) => {
-      var F = xf(),
+      var F = jf(),
         Y = o(F),
         A = o(Y),
         U = o(A),
@@ -1606,12 +1619,12 @@ function kf(n, t) {
       var ve = l(me, 2),
         ie = o(ve),
         le = o(ie, !0);
-      a(ie), qt(2), a(ve), a(fe);
+      a(ie), jt(2), a(ve), a(fe);
       var ce = l(fe, 2),
         He = o(ce);
       {
         var Oe = _ => {
-            var s = cf();
+            var s = pf();
             u(_, s)
           },
           Ae = _ => {
@@ -1643,14 +1656,14 @@ function kf(n, t) {
         count: r(f).rejected.length
       }], _ => _.key, (_, s) => {
         const d = S(() => r(P) === r(s).key);
-        var g = df(),
+        var g = yf(),
           v = o(g),
           b = o(v, !0);
         a(v);
         var x = l(v, 2);
         {
           var M = N => {
-            var oe = _f(),
+            var oe = df(),
               _e = o(oe, !0);
             a(oe), I(se => {
               Pe(oe, 1, `inline-flex h-[18px] min-w-[18px] items-center justify-center rounded-full px-1.5 text-[10px] font-bold ${se??""}`), k(_e, r(s).count)
@@ -1663,7 +1676,7 @@ function kf(n, t) {
         var ae = l(x, 2);
         {
           var te = N => {
-            var oe = pf();
+            var oe = ff();
             u(N, oe)
           };
           B(ae, N => {
@@ -1678,11 +1691,11 @@ function kf(n, t) {
         We = o(Ze);
       {
         var Xe = _ => {
-            var s = ff();
+            var s = hf();
             u(_, s)
           },
           $e = _ => {
-            var s = hf(),
+            var s = vf(),
               d = re(s),
               g = o(d),
               v = o(g);
@@ -1712,7 +1725,7 @@ function kf(n, t) {
             var N = l(g, 2);
             {
               var oe = L => {
-                var Z = yf(),
+                var Z = mf(),
                   qe = o(Z, !0);
                 a(Z), I(tt => k(qe, tt), [() => Ql()]), u(L, Z)
               };
@@ -1738,7 +1751,7 @@ function kf(n, t) {
             }, [() => Ea(), () => Cu(), () => r(H).toLocaleString(navigator.language)]), he("click", g, () => p(j, !r(j))), u(_, s)
           },
           et = _ => {
-            var s = mf(),
+            var s = gf(),
               d = re(s);
             e(d, () => r(h));
             var g = l(d, 2),
@@ -1750,7 +1763,7 @@ function kf(n, t) {
           },
           q = _ => {
             const s = S(() => ne(r(P)));
-            var d = wf(),
+            var d = kf(),
               g = o(d),
               v = o(g),
               b = o(v),
@@ -1761,14 +1774,14 @@ function kf(n, t) {
             var M = l(v, 2);
             {
               var ae = L => {
-                  var Z = vf(),
+                  var Z = bf(),
                     qe = o(Z);
                   Lt(qe, {
                     class: "size-5"
                   }), a(Z), u(L, Z)
                 },
                 te = L => {
-                  var Z = gf(),
+                  var Z = wf(),
                     qe = o(Z);
                   Ar(qe, {
                     class: "size-4"
@@ -1789,7 +1802,7 @@ function kf(n, t) {
               ge = o(ue);
             {
               var De = L => {
-                  var Z = bf();
+                  var Z = xf();
                   u(L, Z)
                 },
                 Le = L => {
@@ -1825,7 +1838,7 @@ function kf(n, t) {
 }
 Dt(["click"]);
 
-function jf(n, t) {
+function Df(n, t) {
   Se(t, !0);
   let e = ke(t, "open", 15);
   Ke(n, {
@@ -1877,9 +1890,9 @@ function jf(n, t) {
     }
   }), Ce()
 }
-var qf = y('<div class="my-auto w-full"><!></div>');
+var Pf = y('<div class="my-auto w-full"><!></div>');
 
-function Df(n, t) {
+function Sf(n, t) {
   Se(t, !0);
   let e = ke(t, "open", 15);
   Ke(n, {
@@ -1896,7 +1909,7 @@ function Df(n, t) {
       e(i)
     },
     children: (i, c) => {
-      var w = qf(),
+      var w = Pf(),
         D = o(w);
       {
         let P = S(() => Yc()),
@@ -1920,9 +1933,9 @@ function Df(n, t) {
     }
   }), Ce()
 }
-var Pf = y('<div class="my-auto w-full"><!></div>');
+var Cf = y('<div class="my-auto w-full"><!></div>');
 
-function Sf(n, t) {
+function zf(n, t) {
   Se(t, !0);
   let e = ke(t, "open", 15),
     i = ke(t, "purchasedDroplets", 3, null);
@@ -1962,7 +1975,7 @@ function Sf(n, t) {
       e(f)
     },
     children: (f, h) => {
-      var H = Pf(),
+      var H = Cf(),
         Q = o(H);
       {
         let G = S(() => Tr()),
@@ -2005,9 +2018,9 @@ function Sf(n, t) {
     }
   }), Ce()
 }
-var Cf = y('<div class="my-auto w-full"><!></div>');
+var Af = y('<div class="my-auto w-full"><!></div>');
 
-function zf(n, t) {
+function Lf(n, t) {
   Se(t, !0);
   let e = ke(t, "open", 15);
   Ke(n, {
@@ -2024,7 +2037,7 @@ function zf(n, t) {
       e(i)
     },
     children: (i, c) => {
-      var w = Cf(),
+      var w = Af(),
         D = o(w);
       {
         let P = S(() => u_()),
@@ -2060,7 +2073,7 @@ function zf(n, t) {
   }), Ce()
 }
 
-function Af(n, t) {
+function Bf(n, t) {
   Se(t, !0);
   let e = ke(t, "message", 19, () => Dr()),
     i = ke(t, "open", 15);
@@ -2105,15 +2118,15 @@ function Af(n, t) {
     }
   }), Ce()
 }
-var Lf = y('<div class="mt-32 flex justify-center"><div class="loading loading-spinner"></div></div>'),
-  Bf = y('<!> <div id="fsc-embedded-checkout-container"></div>', 1);
+var Tf = y('<div class="mt-32 flex justify-center"><div class="loading loading-spinner"></div></div>'),
+  If = y('<!> <div id="fsc-embedded-checkout-container"></div>', 1);
 
-function Tf(n, t) {
+function Ef(n, t) {
   Se(t, !0);
   const e = "wplace.onfastspring.com/embedded-stacked",
     i = `fscLatestSession-${e}`;
   let c = W(!1);
-  jt(() => {
+  qt(() => {
     var V;
     const h = window;
     let H = !1,
@@ -2153,11 +2166,11 @@ function Tf(n, t) {
       window.removeEventListener("message", E), delete h.FSCEventCallback, delete h.__fsp_wh__, delete h.__fsp_err__, (R = document.getElementById("fsc-api")) == null || R.remove(), delete h.fastspring
     }
   });
-  var w = Bf(),
+  var w = If(),
     D = re(w);
   {
     var P = h => {
-      var H = Lf();
+      var H = Tf();
       u(h, H)
     };
     B(D, h => {
@@ -2180,32 +2193,32 @@ function kt(n) {
   }, kt(n)
 }
 var ar = "clover",
-  If = function(t) {
+  Gf = function(t) {
     return t === 3 ? "v3" : t
   },
   or = "https://js.stripe.com",
-  Ef = "".concat(or, "/").concat(ar, "/stripe.js"),
-  Gf = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/,
-  Rf = /^https:\/\/js\.stripe\.com\/(v3|[a-z]+)\/stripe\.js(\?.*)?$/;
-var Mf = function(t) {
-    return Gf.test(t) || Rf.test(t)
+  Rf = "".concat(or, "/").concat(ar, "/stripe.js"),
+  Mf = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/,
+  Uf = /^https:\/\/js\.stripe\.com\/(v3|[a-z]+)\/stripe\.js(\?.*)?$/;
+var Hf = function(t) {
+    return Mf.test(t) || Uf.test(t)
   },
-  Uf = function() {
+  Of = function() {
     for (var t = document.querySelectorAll('script[src^="'.concat(or, '"]')), e = 0; e < t.length; e++) {
       var i = t[e];
-      if (Mf(i.src)) return i
+      if (Hf(i.src)) return i
     }
     return null
   },
   Jt = function(t) {
     var e = "",
       i = document.createElement("script");
-    i.src = "".concat(Ef).concat(e);
+    i.src = "".concat(Rf).concat(e);
     var c = document.head || document.body;
     if (!c) throw new Error("Expected document.body not to be null. Stripe.js requires a <body> element.");
     return c.appendChild(i), i
   },
-  Hf = function(t, e) {
+  Ff = function(t, e) {
     !t || !t._registerWrapper || t._registerWrapper({
       name: "stripe-js",
       version: "8.11.0",
@@ -2215,19 +2228,19 @@ var Mf = function(t) {
   ct = null,
   bt = null,
   wt = null,
-  Of = function(t) {
+  Vf = function(t) {
     return function(e) {
       t(new Error("Failed to load Stripe.js", {
         cause: e
       }))
     }
   },
-  Ff = function(t, e) {
+  Kf = function(t, e) {
     return function() {
       window.Stripe ? t(window.Stripe) : e(new Error("Stripe.js not available"))
     }
   },
-  Vf = function(t) {
+  Nf = function(t) {
     return ct !== null ? ct : (ct = new Promise(function(e, i) {
       if (typeof window > "u" || typeof document > "u") {
         e(null);
@@ -2238,7 +2251,7 @@ var Mf = function(t) {
         return
       }
       try {
-        var c = Uf();
+        var c = Of();
         if (!(c && t)) {
           if (!c) c = Jt(t);
           else if (c && wt !== null && bt !== null) {
@@ -2246,7 +2259,7 @@ var Mf = function(t) {
             c.removeEventListener("load", wt), c.removeEventListener("error", bt), (w = c.parentNode) === null || w === void 0 || w.removeChild(c), c = Jt(t)
           }
         }
-        wt = Ff(e, i), bt = Of(i), c.addEventListener("load", wt), c.addEventListener("error", bt)
+        wt = Kf(e, i), bt = Vf(i), c.addEventListener("load", wt), c.addEventListener("error", bt)
       } catch (D) {
         i(D);
         return
@@ -2255,20 +2268,20 @@ var Mf = function(t) {
       return ct = null, Promise.reject(e)
     }))
   },
-  Kf = function(t, e, i) {
+  Zf = function(t, e, i) {
     if (t === null) return null;
     var c = e[0];
     if (typeof c != "string") throw new Error("Expected publishable key to be of type string, got type ".concat(kt(c), " instead."));
     var w = c.match(/^pk_test/),
-      D = If(t.version),
+      D = Gf(t.version),
       P = ar;
     w && D !== P && console.warn("Stripe.js@".concat(D, " was loaded on the page, but @stripe/stripe-js@").concat("8.11.0", " expected Stripe.js@").concat(P, ". This may result in unexpected behavior. For more information, see https://docs.stripe.com/sdks/stripejs-versioning"));
     var j = t.apply(void 0, e);
-    return Hf(j, i), j
+    return Ff(j, i), j
   },
   _t, ir = !1,
   sr = function() {
-    return _t || (_t = Vf(null).catch(function(t) {
+    return _t || (_t = Nf(null).catch(function(t) {
       return _t = null, Promise.reject(t)
     }), _t)
   };
@@ -2277,26 +2290,26 @@ Promise.resolve().then(function() {
 }).catch(function(n) {
   ir || console.warn(n)
 });
-var Nf = function() {
+var Wf = function() {
     for (var t = arguments.length, e = new Array(t), i = 0; i < t; i++) e[i] = arguments[i];
     ir = !0;
     var c = Date.now();
     return sr().then(function(w) {
-      return Kf(w, e, c)
+      return Zf(w, e, c)
     })
   },
-  Zf = y('<div class="mt-32 flex justify-center"><div class="loading loading-spinner"></div></div>'),
-  Wf = y('<!> <div class="w-full"></div>', 1);
+  Yf = y('<div class="mt-32 flex justify-center"><div class="loading loading-spinner"></div></div>'),
+  Jf = y('<!> <div class="w-full"></div>', 1);
 
-function Yf(n, t) {
+function Qf(n, t) {
   Se(t, !0);
   let e, i, c = W(!1);
   const w = 2e3;
-  jt(async () => {
+  qt(async () => {
     var H, Q, G;
     let h;
     try {
-      h = await Promise.race([Nf(Gr), new Promise((E, z) => setTimeout(() => z(new Error("stripe-load-timeout")), w))])
+      h = await Promise.race([Wf(Gr), new Promise((E, z) => setTimeout(() => z(new Error("stripe-load-timeout")), w))])
     } catch {
       (H = t.onUnavailable) == null || H.call(t);
       return
@@ -2316,14 +2329,14 @@ function Yf(n, t) {
     } catch {
       (G = t.onUnavailable) == null || G.call(t)
     }
-  }), gr(() => {
+  }), kr(() => {
     i == null || i.destroy(), i = void 0
   });
-  var D = Wf(),
+  var D = Jf(),
     P = re(D);
   {
     var j = h => {
-      var H = Zf();
+      var H = Yf();
       u(h, H)
     };
     B(P, h => {
@@ -2333,19 +2346,19 @@ function Yf(n, t) {
   var f = l(P, 2);
   Rr(f, h => e = h, () => e), u(n, D), Ce()
 }
-var Jf = y('<!> <h3 class="text-xl font-bold"> </h3> <div class="mr-2 ml-auto"><!></div>', 1),
-  Qf = y('<button class="btn btn-ghost btn-sm btn-circle"><!></button> <h3 class="text-xl font-bold"> </h3>', 1),
-  Xf = y('<span class="loading loading-spinner loading-sm absolute"></span>'),
-  $f = y('<div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-6"><p class="text-primary text-3xl font-bold"><!> <span> <span class="text-lg font-normal"> </span></span></p> <p class="text-base-content/80 mt-0.5 text-center text-xs"><!> <span class="text-primary/80 font-medium"> </span></p> <button class="btn btn-lg btn-primary relative mt-3 h-10"><!> <span><!></span></button></div>'),
-  ey = y('<div class="mt-2 text-center"><button class="link text-sm font-medium"> </button></div>'),
-  ty = y('<p class="text-base-content/80 mb-4 text-sm"> </p> <div class="grid gap-3 sm:grid-cols-2"><!> <!> <!> <!> <!> <!></div> <p class="text-base-content/60 mt-4 text-center text-sm"> <a class="font-medium" target="_blank"> </a></p> <!>', 1),
-  ry = y('<div class="flex flex-col gap-4 px-6 pt-6 pb-2"><div class="bg-base-200 flex rounded-2xl p-1"><button><svg viewBox="0 0 750 471" xmlns="http://www.w3.org/2000/svg" aria-label="Visa"><rect width="750" height="471" rx="40" fill="#1a1f71"></rect><path d="M278 334L311 138h51L329 334h-51zM524 142c-10-4-26-8-46-8-51 0-87 27-87 65-1 28 25 44 45 53 20 10 27 16 27 25-1 13-16 19-31 19-21 0-32-3-49-10l-7-3-7 44c12 5 33 10 56 10 54 0 89-27 89-68 0-22-14-39-44-53-18-9-30-15-30-24 0-8 10-17 31-17 17 0 30 4 40 8l5 2 7-43zM614 138h-40c-12 0-21 4-27 16l-77 180h54l11-30h66l6 30h48l-41-196zm-63 127l20-54 10-30 5 27 18 57h-53zM230 138l-50 133-5-27c-10-32-40-66-74-83l46 173h55l82-196h-54z" fill="#fff"></path><path d="M131 138H48l-1 4c65 17 108 56 126 103l-18-91c-3-12-12-16-24-16z" fill="#f9a533"></path></svg> <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" aria-label="Mastercard"><rect width="38" height="24" rx="4" fill="#252525"></rect><circle cx="15" cy="12" r="7" fill="#eb001b"></circle><circle cx="23" cy="12" r="7" fill="#f79e1b"></circle><path d="M19 6.8a7 7 0 0 1 0 10.4A7 7 0 0 1 19 6.8z" fill="#ff5f00"></path></svg> </button> <button> </button></div></div>'),
-  ny = y('<div class="flex h-40 items-center justify-center"><span class="loading loading-spinner loading-lg"></span></div>'),
+var Xf = y('<!> <h3 class="text-xl font-bold"> </h3> <div class="mr-2 ml-auto"><!></div>', 1),
+  $f = y('<button class="btn btn-ghost btn-sm btn-circle"><!></button> <h3 class="text-xl font-bold"> </h3>', 1),
+  ey = y('<span class="loading loading-spinner loading-sm absolute"></span>'),
+  ty = y('<div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-6"><p class="text-primary text-3xl font-bold"><!> <span> <span class="text-lg font-normal"> </span></span></p> <p class="text-base-content/80 mt-0.5 text-center text-xs"><!> <span class="text-primary/80 font-medium"> </span></p> <button class="btn btn-lg btn-primary relative mt-3 h-10"><!> <span><!></span></button></div>'),
+  ry = y('<div class="mt-2 text-center"><button class="link text-sm font-medium"> </button></div>'),
+  ny = y('<p class="text-base-content/80 mb-4 text-sm"> </p> <div class="grid gap-3 sm:grid-cols-2"><!> <!> <!> <!> <!> <!></div> <p class="text-base-content/60 mt-4 text-center text-sm"> <a class="font-medium" target="_blank"> </a></p> <!>', 1),
+  ay = y('<div class="flex flex-col gap-4 px-6 pt-6 pb-2"><div class="bg-base-200 flex rounded-2xl p-1"><button><svg viewBox="0 0 750 471" xmlns="http://www.w3.org/2000/svg" aria-label="Visa"><rect width="750" height="471" rx="40" fill="#1a1f71"></rect><path d="M278 334L311 138h51L329 334h-51zM524 142c-10-4-26-8-46-8-51 0-87 27-87 65-1 28 25 44 45 53 20 10 27 16 27 25-1 13-16 19-31 19-21 0-32-3-49-10l-7-3-7 44c12 5 33 10 56 10 54 0 89-27 89-68 0-22-14-39-44-53-18-9-30-15-30-24 0-8 10-17 31-17 17 0 30 4 40 8l5 2 7-43zM614 138h-40c-12 0-21 4-27 16l-77 180h54l11-30h66l6 30h48l-41-196zm-63 127l20-54 10-30 5 27 18 57h-53zM230 138l-50 133-5-27c-10-32-40-66-74-83l46 173h55l82-196h-54z" fill="#fff"></path><path d="M131 138H48l-1 4c65 17 108 56 126 103l-18-91c-3-12-12-16-24-16z" fill="#f9a533"></path></svg> <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" aria-label="Mastercard"><rect width="38" height="24" rx="4" fill="#252525"></rect><circle cx="15" cy="12" r="7" fill="#eb001b"></circle><circle cx="23" cy="12" r="7" fill="#f79e1b"></circle><path d="M19 6.8a7 7 0 0 1 0 10.4A7 7 0 0 1 19 6.8z" fill="#ff5f00"></path></svg> </button> <button> </button></div></div>'),
+  oy = y('<div class="flex h-40 items-center justify-center"><span class="loading loading-spinner loading-lg"></span></div>'),
   Qt = y("<div><!></div>"),
-  ay = y('<!> <div class="mt-4"><!> <!></div>', 1),
-  oy = y("<div><!></div> <!> <!> <!> <!> <!> <!> <!>", 1);
+  iy = y('<!> <div class="mt-4"><!> <!></div>', 1),
+  sy = y("<div><!></div> <!> <!> <!> <!> <!> <!> <!>", 1);
 
-function Fy(n, t) {
+function Vy(n, t) {
   Se(t, !0);
   let e = ke(t, "open", 15),
     i = W("products"),
@@ -2375,7 +2388,7 @@ function Fy(n, t) {
   let K = W(!1),
     ne = W(!1),
     T = W("");
-  jt(async () => {
+  qt(async () => {
     try {
       await Te.loadMapSKUs()
     } finally {
@@ -2395,7 +2408,7 @@ function Fy(n, t) {
   }
   const U = S(() => xe.data ? xe.data.id % 2 === 0 : !1),
     ee = S(() => r(Y) || r(U));
-  jt(() => {
+  qt(() => {
     if (p(Y, !!localStorage.getItem(F)), !!localStorage.getItem("fscBackFromCheckout")) {
       localStorage.removeItem("fscBackFromCheckout");
       const d = Number(localStorage.getItem("wplace_fs_droplets")) || 0;
@@ -2529,7 +2542,7 @@ function Fy(n, t) {
       await ce(1500)
     }
   }
-  var Oe = oy(),
+  var Oe = sy(),
     Ae = re(Oe),
     Ne = o(Ae);
   {
@@ -2538,7 +2551,7 @@ function Fy(n, t) {
         N = re(te);
       {
         var oe = se => {
-            var ue = Jf(),
+            var ue = Xf(),
               ge = re(ue);
             Qe(ge, {
               class: "text-primary size-5"
@@ -2550,7 +2563,7 @@ function Fy(n, t) {
               L = o(ye);
             {
               let Z = S(() => xe.data.droplets ?? 0);
-              xd(L, {
+              jd(L, {
                 get value() {
                   return r(Z)
                 },
@@ -2560,7 +2573,7 @@ function Fy(n, t) {
             a(ye), I(Z => k(Le, Z), [() => xt()]), u(se, ue)
           },
           _e = se => {
-            var ue = Qf(),
+            var ue = $f(),
               ge = re(ue),
               De = o(ge);
             Mr(De, {
@@ -2630,7 +2643,7 @@ function Fy(n, t) {
                       at = () => J == null ? void 0 : J().price,
                       st = () => J == null ? void 0 : J().stripeLookupkey,
                       ur = () => J == null ? void 0 : J().productId;
-                    var St = $f(),
+                    var St = ty(),
                       Ct = o(St),
                       Et = o(Ct);
                     Qe(Et, {
@@ -2659,7 +2672,7 @@ function Fy(n, t) {
                       Ot = o(mt);
                     {
                       var pr = X => {
-                        var $ = Xf();
+                        var $ = ey();
                         u(X, $)
                       };
                       B(Ot, X => {
@@ -2674,7 +2687,7 @@ function Fy(n, t) {
                       var fr = X => {
                           var $ = Ue(),
                             Be = re($);
-                          Vt(Be, () => r(z), ut => {
+                          Kt(Be, () => r(z), ut => {
                             var lt = Je();
                             I(vr => k(lt, vr), [() => Te.printPriceBySKU(st())]), u(ut, lt)
                           }), u(X, $)
@@ -2711,7 +2724,7 @@ function Fy(n, t) {
                       }), R()
                     }), u(Re, St)
                   };
-                  var Z = ty(),
+                  var Z = ny(),
                     qe = re(Z),
                     tt = o(qe, !0);
                   a(qe);
@@ -2778,7 +2791,7 @@ function Fy(n, t) {
                   var nt = l(we, 2);
                   {
                     var Pt = Re => {
-                      var J = ey(),
+                      var J = ry(),
                         Me = o(J),
                         Ve = o(Me, !0);
                       a(Me), a(J), I(at => k(Ve, at), [() => er()]), he("click", Me, () => pt.pendingHistoryDialogOpen = !0), u(Re, J)
@@ -2792,11 +2805,11 @@ function Fy(n, t) {
                   }, [() => ip(), () => Z_(), () => Pr(), () => T_()]), u(ye, Z)
                 },
                 Le = ye => {
-                  var L = ay(),
+                  var L = iy(),
                     Z = re(L);
                   {
                     var qe = be => {
-                      var pe = ry(),
+                      var pe = ay(),
                         Fe = o(pe),
                         we = o(Fe),
                         Ie = o(we),
@@ -2821,7 +2834,7 @@ function Fy(n, t) {
                         Fe = o(pe);
                       {
                         var we = de => {
-                            Yf(de, {
+                            Qf(de, {
                               get clientSecret() {
                                 return r(h)
                               },
@@ -2830,14 +2843,14 @@ function Fy(n, t) {
                             })
                           },
                           Ie = de => {
-                            var it = ny();
+                            var it = oy();
                             u(de, it)
                           };
                         B(Fe, de => {
                           r(h) ? de(we) : de(Ie, -1)
                         })
                       }
-                      a(pe), I(() => Pe(pe, 1, Kt(r(m) !== "stripe" ? "h-0 overflow-hidden" : ""))), u(be, pe)
+                      a(pe), I(() => Pe(pe, 1, Vt(r(m) !== "stripe" ? "h-0 overflow-hidden" : ""))), u(be, pe)
                     };
                     B(rt, be => {
                       r(ee) || be(ft)
@@ -2848,7 +2861,7 @@ function Fy(n, t) {
                     var ht = be => {
                       var pe = Qt(),
                         Fe = o(pe);
-                      Tf(Fe, {
+                      Ef(Fe, {
                         get lookupKey() {
                           return r(f).stripeLookupkey
                         },
@@ -2866,7 +2879,7 @@ function Fy(n, t) {
                             vt.warning(md())
                           }
                         }
-                      }), a(pe), I(() => Pe(pe, 1, Kt(r(m) !== "other" ? "h-0 overflow-hidden" : ""))), u(be, pe)
+                      }), a(pe), I(() => Pe(pe, 1, Vt(r(m) !== "other" ? "h-0 overflow-hidden" : ""))), u(be, pe)
                     };
                     B(yt, be => {
                       r(O) && be(ht)
@@ -2894,7 +2907,7 @@ function Fy(n, t) {
   }
   a(Ae);
   var Ze = l(Ae, 2);
-  Sf(Ze, {
+  zf(Ze, {
     get purchasedDroplets() {
       return r(w)
     },
@@ -2907,7 +2920,7 @@ function Fy(n, t) {
     }
   });
   var We = l(Ze, 2);
-  zf(We, {
+  Lf(We, {
     onbacktostore: () => e(!0),
     get open() {
       return r(P)
@@ -2917,7 +2930,7 @@ function Fy(n, t) {
     }
   });
   var Xe = l(We, 2);
-  Df(Xe, {
+  Sf(Xe, {
     get open() {
       return r(j)
     },
@@ -2926,7 +2939,7 @@ function Fy(n, t) {
     }
   });
   var $e = l(Xe, 2);
-  jf($e, {
+  Df($e, {
     onViewHistory: () => {
       p(K, !1), pt.pendingHistoryDialogOpen = !0
     },
@@ -2938,7 +2951,7 @@ function Fy(n, t) {
     }
   });
   var et = l($e, 2);
-  af(et, {
+  sf(et, {
     onRetry: () => {
       p(ne, !1), le(r(T))
     },
@@ -2950,7 +2963,7 @@ function Fy(n, t) {
     }
   });
   var q = l(et, 2);
-  kf(q, {
+  qf(q, {
     get open() {
       return pt.pendingHistoryDialogOpen
     },
@@ -2959,13 +2972,13 @@ function Fy(n, t) {
     }
   });
   var _ = l(q, 2);
-  Vt(_, () => r(V), s => {
+  Kt(_, () => r(V), s => {
     {
       let d = S(() => {
         var g;
         return (g = Te.playBillingBlockedError) == null ? void 0 : g.printError
       });
-      Af(s, {
+      Bf(s, {
         get message() {
           return r(d)
         },
@@ -2980,19 +2993,6 @@ function Fy(n, t) {
   }), I(() => Ge(Ae, "data-theme", r(i) === "checkout" ? "custom-winter" : void 0)), u(n, Oe), Ce()
 }
 Dt(["click"]);
-var iy = new Set(["$$slots", "$$events", "$$legacy"]),
-  sy = je('<svg><path d="M440-320v-326L336-542l-56-58 200-200 200 200-56 58-104-104v326h-80ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>');
-
-function Vy(n, t) {
-  let e = kr(t, iy);
-  var i = sy();
-  xr(i, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...e
-  })), u(n, i)
-}
 
 function Ky([n, t], [e, i]) {
   n = Math.floor(n), t = Math.floor(t), e = Math.floor(e), i = Math.floor(i);
@@ -3051,5 +3051,5 @@ function Ny(n, t) {
   }, [() => Math.floor(t.level)]), u(n, i)
 }
 export {
-  xd as D, Ny as P, Vy as U, Fy as a, Oy as c, of as d, Hy as e, Ky as r
+  jd as D, Ny as P, Fy as U, Vy as a, Oy as c, uf as d, Hy as e, Ky as r
 };

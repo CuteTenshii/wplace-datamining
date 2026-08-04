@@ -1,22 +1,22 @@
 import {
-  g as t
+  g as r
 } from "./BhCkpOlh.js";
-const n = () => "Save",
-  s = () => "Salvar",
-  u = () => "保存",
-  a = () => "Speichern",
-  c = () => "Guardar",
-  o = () => "Enregistrer",
-  i = () => "Salva",
-  v = () => "保存",
-  f = () => "Zapisz",
-  _ = () => "Сохранить",
-  p = () => "Зберегти",
-  l = () => "Lưu",
-  g = (S = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? n() : r === "pt" ? s() : r === "ch" ? u() : r === "de" ? a() : r === "es" ? c() : r === "fr" ? o() : r === "it" ? i() : r === "jp" ? v() : r === "pl" ? f() : r === "ru" ? _() : r === "uk" ? p() : l()
+const n = () => "Delete",
+  u = () => "Deletar",
+  _ = () => "删除",
+  l = () => "Löschen",
+  i = () => "Eliminar",
+  s = () => "Supprimer",
+  c = () => "Eliminare",
+  o = () => "削除",
+  d = () => "Usuń",
+  f = () => "Удалить",
+  p = () => "Видалити",
+  a = () => "Xóa",
+  g = (m = {}, t = {}) => {
+    const e = t.locale ?? r();
+    return e === "en" ? n() : e === "pt" ? u() : e === "ch" ? _() : e === "de" ? l() : e === "es" ? i() : e === "fr" ? s() : e === "it" ? c() : e === "jp" ? o() : e === "pl" ? d() : e === "ru" ? f() : e === "uk" ? p() : a()
   };
 export {
-  g as s
+  g as _
 };
