@@ -1,50 +1,78 @@
-const h = o => o;
+const x = t => t;
 
-function b(o) {
-  const r = o - 1;
-  return r * r * r + 1
+function h(t) {
+  const o = t - 1;
+  return o * o * o + 1
 }
 
-function f(o, {
-  delay: r = 0,
+function f(t) {
+  const o = typeof t == "string" && t.match(/^\s*(-?[\d.]+)([^\s]*)\s*$/);
+  return o ? [parseFloat(o[1]), o[2] || "px"] : [t, "px"]
+}
+
+function b(t, {
+  delay: o = 0,
   duration: i = 400,
-  easing: s = h
+  easing: c = x
 } = {}) {
-  const p = +getComputedStyle(o).opacity;
+  const p = +getComputedStyle(t).opacity;
   return {
-    delay: r,
+    delay: o,
     duration: i,
-    easing: s,
-    css: a => `opacity: ${a*p}`
+    easing: c,
+    css: n => `opacity: ${n*p}`
   }
 }
 
-function v(o, {
-  delay: r = 0,
+function v(t, {
+  delay: o = 0,
   duration: i = 400,
-  easing: s = b,
+  easing: c = h,
+  x: p = 0,
+  y: n = 0,
+  opacity: l = 0
+} = {}) {
+  const e = getComputedStyle(t),
+    d = +e.opacity,
+    a = e.transform === "none" ? "" : e.transform,
+    s = d * (1 - l),
+    [_, y] = f(p),
+    [u, m] = f(n);
+  return {
+    delay: o,
+    duration: i,
+    easing: c,
+    css: ($, g) => `
+			transform: ${a} translate(${(1-$)*_}${y}, ${(1-$)*u}${m});
+			opacity: ${d-s*g}`
+  }
+}
+
+function F(t, {
+  delay: o = 0,
+  duration: i = 400,
+  easing: c = h,
   axis: p = "y"
 } = {}) {
-  const a = getComputedStyle(o),
-    c = +a.opacity,
-    d = p === "y" ? "height" : "width",
-    $ = parseFloat(a[d]),
-    e = p === "y" ? ["top", "bottom"] : ["left", "right"],
-    n = e.map(t => `${t[0].toUpperCase()}${t.slice(1)}`),
-    l = parseFloat(a[`padding${n[0]}`]),
-    _ = parseFloat(a[`padding${n[1]}`]),
-    u = parseFloat(a[`margin${n[0]}`]),
-    y = parseFloat(a[`margin${n[1]}`]),
-    g = parseFloat(a[`border${n[0]}Width`]),
-    m = parseFloat(a[`border${n[1]}Width`]);
+  const n = getComputedStyle(t),
+    l = +n.opacity,
+    e = p === "y" ? "height" : "width",
+    d = parseFloat(n[e]),
+    a = p === "y" ? ["top", "bottom"] : ["left", "right"],
+    s = a.map(r => `${r[0].toUpperCase()}${r.slice(1)}`),
+    _ = parseFloat(n[`padding${s[0]}`]),
+    y = parseFloat(n[`padding${s[1]}`]),
+    u = parseFloat(n[`margin${s[0]}`]),
+    m = parseFloat(n[`margin${s[1]}`]),
+    $ = parseFloat(n[`border${s[0]}Width`]),
+    g = parseFloat(n[`border${s[1]}Width`]);
   return {
-    delay: r,
+    delay: o,
     duration: i,
-    easing: s,
-    css: t => `overflow: hidden;opacity: ${Math.min(t*20,1)*c};${d}: ${t*$}px;padding-${e[0]}: ${t*l}px;padding-${e[1]}: ${t*_}px;margin-${e[0]}: ${t*u}px;margin-${e[1]}: ${t*y}px;border-${e[0]}-width: ${t*g}px;border-${e[1]}-width: ${t*m}px;min-${d}: 0`
+    easing: c,
+    css: r => `overflow: hidden;opacity: ${Math.min(r*20,1)*l};${e}: ${r*d}px;padding-${a[0]}: ${r*_}px;padding-${a[1]}: ${r*y}px;margin-${a[0]}: ${r*u}px;margin-${a[1]}: ${r*m}px;border-${a[0]}-width: ${r*$}px;border-${a[1]}-width: ${r*g}px;min-${e}: 0`
   }
 }
 export {
-  f,
-  v as s
+  v as a, b as f, F as s
 };

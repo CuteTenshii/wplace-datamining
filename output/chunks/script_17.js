@@ -3802,6 +3802,7 @@ const yN = [{
     paintsPerCoin: 5e3,
     betterDescriptionCostCoins: 25,
     betterPalletCostCoins: 25,
+    advancedPaintToolsCostCoins: 15,
     descriptionChangeCostCoins: 10,
     renameCostCoins: 20,
     pictureUnlockCostCoins: 50,
