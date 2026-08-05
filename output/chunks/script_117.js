@@ -1,27 +1,27 @@
 import "./Bzak7iHL.js";
 import {
-  a as o,
+  a as e,
   k as s
 } from "./DUZ_qUVk.js";
 import {
-  b as a
+  b as p
 } from "./M4i-R8Gk.js";
 import {
-  r as p
+  r as a
 } from "./DXFW01RN.js";
-var h = new Set(["$$slots", "$$events", "$$legacy"]),
-  m = s('<svg><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"></path></svg>');
+var m = new Set(["$$slots", "$$events", "$$legacy"]),
+  q = s('<svg><path d="M240-80q-50 0-85-35t-35-85v-120h120v-560l60 60 60-60 60 60 60-60 60 60 60-60 60 60 60-60 60 60 60-60v680q0 50-35 85t-85 35H240Zm480-80q17 0 28.5-11.5T760-200v-560H320v440h360v120q0 17 11.5 28.5T720-160ZM360-600v-80h240v80H360Zm0 120v-80h240v80H360Zm320-120q-17 0-28.5-11.5T640-640q0-17 11.5-28.5T680-680q17 0 28.5 11.5T720-640q0 17-11.5 28.5T680-600Zm0 120q-17 0-28.5-11.5T640-520q0-17 11.5-28.5T680-560q17 0 28.5 11.5T720-520q0 17-11.5 28.5T680-480ZM240-160h360v-80H200v40q0 17 11.5 28.5T240-160Zm-40 0v-80 80Z"></path></svg>');
 
-function g(t, v) {
-  let e = p(v, h);
-  var r = m();
-  a(r, () => ({
+function f(r, v) {
+  let o = a(v, m);
+  var t = q();
+  p(t, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
-    ...e
-  })), o(t, r)
+    ...o
+  })), e(r, t)
 }
 export {
-  g as D
+  f as R
 };

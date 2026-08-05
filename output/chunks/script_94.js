@@ -1,27 +1,22 @@
-import "./Bzak7iHL.js";
 import {
-  a as e,
-  k as a
-} from "./DUZ_qUVk.js";
-import {
-  b as p
-} from "./M4i-R8Gk.js";
-import {
-  r as v
-} from "./DXFW01RN.js";
-var l = new Set(["$$slots", "$$events", "$$legacy"]),
-  m = a('<svg><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"></path></svg>');
-
-function c(t, o) {
-  let s = v(o, l);
-  var r = m();
-  p(r, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...s
-  })), e(t, r)
-}
+  g as n
+} from "./BhCkpOlh.js";
+const e = () => "Back",
+  c = () => "Voltar",
+  u = () => "返回",
+  o = () => "Zurück",
+  a = () => "Atrás",
+  s = () => "Retour",
+  i = () => "Indietro",
+  k = () => "戻る",
+  b = () => "Wróć",
+  f = () => "Назад",
+  _ = () => "Назад",
+  l = () => "Quay lại",
+  g = (p = {}, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? e() : r === "pt" ? c() : r === "ch" ? u() : r === "de" ? o() : r === "es" ? a() : r === "fr" ? s() : r === "it" ? i() : r === "jp" ? k() : r === "pl" ? b() : r === "ru" ? f() : r === "uk" ? _() : l()
+  };
 export {
-  c as S
+  g as b
 };
