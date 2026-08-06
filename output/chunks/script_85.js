@@ -1,10 +1,10 @@
-var k = r => {
+var j = r => {
   throw TypeError(r)
 };
-var j = (r, n, e) => n.has(r) || k("Cannot " + e);
-var c = (r, n, e) => (j(r, n, "read from private field"), e ? e.call(r) : n.get(r)),
-  p = (r, n, e) => n.has(r) ? k("Cannot add the same private member more than once") : n instanceof WeakSet ? n.add(r) : n.set(r, e),
-  x = (r, n, e, _) => (j(r, n, "write to private field"), _ ? _.call(r, e) : n.set(r, e), e);
+var k = (r, n, e) => n.has(r) || j("Cannot " + e);
+var c = (r, n, e) => (k(r, n, "read from private field"), e ? e.call(r) : n.get(r)),
+  p = (r, n, e) => n.has(r) ? j("Cannot add the same private member more than once") : n instanceof WeakSet ? n.add(r) : n.set(r, e),
+  x = (r, n, e, _) => (k(r, n, "write to private field"), _ ? _.call(r, e) : n.set(r, e), e);
 import {
   g as a
 } from "./BhCkpOlh.js";
@@ -13,10 +13,10 @@ import {
   h as f,
   e as C,
   u as ve,
-  t as ke,
+  t as je,
   a as P,
   k as A,
-  d as je,
+  d as ke,
   r as xe
 } from "./DUZ_qUVk.js";
 import {
@@ -38,18 +38,18 @@ const Ae = () => "Leader",
   Re = () => "Líder",
   Se = () => "Chef",
   $e = () => "Leader",
-  De = () => "リーダー",
+  Fe = () => "リーダー",
   Le = () => "Lider",
-  Fe = () => "Лидер",
-  Be = () => "Лідер",
-  Ge = () => "Thủ lĩnh",
+  De = () => "Лидер",
+  Ee = () => "Лідер",
+  Be = () => "Thủ lĩnh",
   Ub = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? Ae() : e === "pt" ? Te() : e === "ch" ? Ue() : e === "de" ? Me() : e === "es" ? Re() : e === "fr" ? Se() : e === "it" ? $e() : e === "jp" ? De() : e === "pl" ? Le() : e === "ru" ? Fe() : e === "uk" ? Be() : Ge()
+    return e === "en" ? Ae() : e === "pt" ? Te() : e === "ch" ? Ue() : e === "de" ? Me() : e === "es" ? Re() : e === "fr" ? Se() : e === "it" ? $e() : e === "jp" ? Fe() : e === "pl" ? Le() : e === "ru" ? De() : e === "uk" ? Ee() : Be()
   },
-  Ee = () => "Rename alliance",
-  Ie = () => "Alterar nome da aliança",
-  Ne = () => "重命名联盟",
+  Ge = () => "Rename alliance",
+  Ne = () => "Alterar nome da aliança",
+  Ie = () => "重命名联盟",
   Oe = () => "Allianznamen ändern",
   He = () => "Renombrar alianza",
   Ze = () => "Renommer l’alliance",
@@ -61,7 +61,7 @@ const Ae = () => "Leader",
   Ye = () => "Đổi tên liên minh",
   Mb = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? Ee() : e === "pt" ? Ie() : e === "ch" ? Ne() : e === "de" ? Oe() : e === "es" ? He() : e === "fr" ? Ze() : e === "it" ? Ve() : e === "jp" ? Ke() : e === "pl" ? We() : e === "ru" ? Qe() : e === "uk" ? Je() : Ye()
+    return e === "en" ? Ge() : e === "pt" ? Ne() : e === "ch" ? Ie() : e === "de" ? Oe() : e === "es" ? He() : e === "fr" ? Ze() : e === "it" ? Ve() : e === "jp" ? Ke() : e === "pl" ? We() : e === "ru" ? Qe() : e === "uk" ? Je() : Ye()
   },
   Xe = () => "HQ",
   er = () => "Sede",
@@ -95,8 +95,8 @@ const Ae = () => "Leader",
     const e = n.locale ?? a();
     return e === "en" ? or() : e === "pt" ? dr() : e === "ch" ? mr() : e === "de" ? fr() : e === "es" ? pr() : e === "fr" ? wr() : e === "it" ? br() : e === "jp" ? gr() : e === "pl" ? yr() : e === "ru" ? hr() : e === "uk" ? qr() : vr()
   },
-  kr = () => "Gallery visibility",
-  jr = () => "Visibilidade na galeria",
+  jr = () => "Gallery visibility",
+  kr = () => "Visibilidade na galeria",
   xr = () => "列表可见性",
   zr = () => "Sichtbarkeit in der Galerie",
   Cr = () => "Visibilidad en la galería",
@@ -109,23 +109,23 @@ const Ae = () => "Leader",
   Sr = () => "Hiển thị trong thư viện",
   $b = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? kr() : e === "pt" ? jr() : e === "ch" ? xr() : e === "de" ? zr() : e === "es" ? Cr() : e === "fr" ? Pr() : e === "it" ? Ar() : e === "jp" ? Tr() : e === "pl" ? Ur() : e === "ru" ? Mr() : e === "uk" ? Rr() : Sr()
+    return e === "en" ? jr() : e === "pt" ? kr() : e === "ch" ? xr() : e === "de" ? zr() : e === "es" ? Cr() : e === "fr" ? Pr() : e === "it" ? Ar() : e === "jp" ? Tr() : e === "pl" ? Ur() : e === "ru" ? Mr() : e === "uk" ? Rr() : Sr()
   },
   $r = () => "Public",
-  Dr = () => "Pública",
+  Fr = () => "Pública",
   Lr = () => "公开",
-  Fr = () => "Öffentlich",
-  Br = () => "Pública",
-  Gr = () => "Publique",
-  Er = () => "Pubblica",
-  Ir = () => "公開",
-  Nr = () => "Publiczny",
+  Dr = () => "Öffentlich",
+  Er = () => "Pública",
+  Br = () => "Publique",
+  Gr = () => "Pubblica",
+  Nr = () => "公開",
+  Ir = () => "Publiczny",
   Or = () => "Публичный",
   Hr = () => "Публічний",
   Zr = () => "Công khai",
-  Db = (r = {}, n = {}) => {
+  Fb = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? $r() : e === "pt" ? Dr() : e === "ch" ? Lr() : e === "de" ? Fr() : e === "es" ? Br() : e === "fr" ? Gr() : e === "it" ? Er() : e === "jp" ? Ir() : e === "pl" ? Nr() : e === "ru" ? Or() : e === "uk" ? Hr() : Zr()
+    return e === "en" ? $r() : e === "pt" ? Fr() : e === "ch" ? Lr() : e === "de" ? Dr() : e === "es" ? Er() : e === "fr" ? Br() : e === "it" ? Gr() : e === "jp" ? Nr() : e === "pl" ? Ir() : e === "ru" ? Or() : e === "uk" ? Hr() : Zr()
   },
   Vr = () => "Unlisted",
   Kr = () => "Não listada",
@@ -155,7 +155,7 @@ const Ae = () => "Leader",
   pn = () => "Правила вступления",
   wn = () => "Правила вступу",
   bn = () => "Chính sách tham gia",
-  Fb = (r = {}, n = {}) => {
+  Db = (r = {}, n = {}) => {
     const e = n.locale ?? a();
     return e === "en" ? _n() : e === "pt" ? ln() : e === "ch" ? cn() : e === "de" ? sn() : e === "es" ? un() : e === "fr" ? on() : e === "it" ? dn() : e === "jp" ? mn() : e === "pl" ? fn() : e === "ru" ? pn() : e === "uk" ? wn() : bn()
   },
@@ -164,16 +164,16 @@ const Ae = () => "Leader",
   hn = () => "开放",
   qn = () => "Offen",
   vn = () => "Abierta",
-  kn = () => "Ouverte",
-  jn = () => "Aperta",
+  jn = () => "Ouverte",
+  kn = () => "Aperta",
   xn = () => "自由参加",
   zn = () => "Otwarty",
   Cn = () => "Свободный вход",
   Pn = () => "Відкритий",
   An = () => "Mở",
-  Bb = (r = {}, n = {}) => {
+  Eb = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? gn() : e === "pt" ? yn() : e === "ch" ? hn() : e === "de" ? qn() : e === "es" ? vn() : e === "fr" ? kn() : e === "it" ? jn() : e === "jp" ? xn() : e === "pl" ? zn() : e === "ru" ? Cn() : e === "uk" ? Pn() : An()
+    return e === "en" ? gn() : e === "pt" ? yn() : e === "ch" ? hn() : e === "de" ? qn() : e === "es" ? vn() : e === "fr" ? jn() : e === "it" ? kn() : e === "jp" ? xn() : e === "pl" ? zn() : e === "ru" ? Cn() : e === "uk" ? Pn() : An()
   },
   Tn = () => "By request",
   Un = () => "Por pedido",
@@ -181,18 +181,18 @@ const Ae = () => "Leader",
   Rn = () => "Auf Anfrage",
   Sn = () => "Por solicitud",
   $n = () => "Sur demande",
-  Dn = () => "Su richiesta",
+  Fn = () => "Su richiesta",
   Ln = () => "申請制",
-  Fn = () => "Na prośbę",
-  Bn = () => "По заявке",
-  Gn = () => "За заявкою",
-  En = () => "Theo yêu cầu",
-  Gb = (r = {}, n = {}) => {
+  Dn = () => "Na prośbę",
+  En = () => "По заявке",
+  Bn = () => "За заявкою",
+  Gn = () => "Theo yêu cầu",
+  Bb = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? Tn() : e === "pt" ? Un() : e === "ch" ? Mn() : e === "de" ? Rn() : e === "es" ? Sn() : e === "fr" ? $n() : e === "it" ? Dn() : e === "jp" ? Ln() : e === "pl" ? Fn() : e === "ru" ? Bn() : e === "uk" ? Gn() : En()
+    return e === "en" ? Tn() : e === "pt" ? Un() : e === "ch" ? Mn() : e === "de" ? Rn() : e === "es" ? Sn() : e === "fr" ? $n() : e === "it" ? Fn() : e === "jp" ? Ln() : e === "pl" ? Dn() : e === "ru" ? En() : e === "uk" ? Bn() : Gn()
   },
-  In = () => "Invite only",
-  Nn = () => "Somente convite",
+  Nn = () => "Invite only",
+  In = () => "Somente convite",
   On = () => "仅限邀请",
   Hn = () => "Nur mit Einladung",
   Zn = () => "Solo por invitación",
@@ -203,9 +203,9 @@ const Ae = () => "Leader",
   Jn = () => "Только по приглашению",
   Yn = () => "Лише за запрошенням",
   Xn = () => "Chỉ theo lời mời",
-  Eb = (r = {}, n = {}) => {
+  Gb = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? In() : e === "pt" ? Nn() : e === "ch" ? On() : e === "de" ? Hn() : e === "es" ? Zn() : e === "fr" ? Vn() : e === "it" ? Kn() : e === "jp" ? Wn() : e === "pl" ? Qn() : e === "ru" ? Jn() : e === "uk" ? Yn() : Xn()
+    return e === "en" ? Nn() : e === "pt" ? In() : e === "ch" ? On() : e === "de" ? Hn() : e === "es" ? Zn() : e === "fr" ? Vn() : e === "it" ? Kn() : e === "jp" ? Wn() : e === "pl" ? Qn() : e === "ru" ? Jn() : e === "uk" ? Yn() : Xn()
   },
   ea = () => "Members",
   ra = () => "Membros",
@@ -219,7 +219,7 @@ const Ae = () => "Leader",
   sa = () => "Участники",
   ua = () => "Учасники",
   oa = () => "Thành viên",
-  Ib = (r = {}, n = {}) => {
+  Nb = (r = {}, n = {}) => {
     const e = n.locale ?? a();
     return e === "en" ? ea() : e === "pt" ? ra() : e === "ch" ? na() : e === "de" ? aa() : e === "es" ? ta() : e === "fr" ? _a() : e === "it" ? ia() : e === "jp" ? la() : e === "pl" ? ca() : e === "ru" ? sa() : e === "uk" ? ua() : oa()
   },
@@ -234,12 +234,12 @@ const Ae = () => "Leader",
   ha = () => "Admini",
   qa = () => "Админы",
   va = () => "Адміни",
-  ka = () => "Quản trị viên",
-  Nb = (r = {}, n = {}) => {
+  ja = () => "Quản trị viên",
+  Ib = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? da() : e === "pt" ? ma() : e === "ch" ? fa() : e === "de" ? pa() : e === "es" ? wa() : e === "fr" ? ba() : e === "it" ? ga() : e === "jp" ? ya() : e === "pl" ? ha() : e === "ru" ? qa() : e === "uk" ? va() : ka()
+    return e === "en" ? da() : e === "pt" ? ma() : e === "ch" ? fa() : e === "de" ? pa() : e === "es" ? wa() : e === "fr" ? ba() : e === "it" ? ga() : e === "jp" ? ya() : e === "pl" ? ha() : e === "ru" ? qa() : e === "uk" ? va() : ja()
   },
-  ja = () => "Leader only",
+  ka = () => "Leader only",
   xa = () => "Somente o líder",
   za = () => "仅盟主",
   Ca = () => "Nur der Anführer",
@@ -253,23 +253,23 @@ const Ae = () => "Leader",
   $a = () => "Chỉ thủ lĩnh",
   Ob = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? ja() : e === "pt" ? xa() : e === "ch" ? za() : e === "de" ? Ca() : e === "es" ? Pa() : e === "fr" ? Aa() : e === "it" ? Ta() : e === "jp" ? Ua() : e === "pl" ? Ma() : e === "ru" ? Ra() : e === "uk" ? Sa() : $a()
+    return e === "en" ? ka() : e === "pt" ? xa() : e === "ch" ? za() : e === "de" ? Ca() : e === "es" ? Pa() : e === "fr" ? Aa() : e === "it" ? Ta() : e === "jp" ? Ua() : e === "pl" ? Ma() : e === "ru" ? Ra() : e === "uk" ? Sa() : $a()
   },
-  Da = () => "Discord server invite",
+  Fa = () => "Discord server invite",
   La = () => "Convite do servidor do Discord",
-  Fa = () => "Discord 服务器邀请",
-  Ba = () => "Einladung zum Discord-Server",
-  Ga = () => "Invitación al servidor de Discord",
-  Ea = () => "Invitation au serveur Discord",
-  Ia = () => "Invito al server Discord",
-  Na = () => "Discordサーバーの招待",
+  Da = () => "Discord 服务器邀请",
+  Ea = () => "Einladung zum Discord-Server",
+  Ba = () => "Invitación al servidor de Discord",
+  Ga = () => "Invitation au serveur Discord",
+  Na = () => "Invito al server Discord",
+  Ia = () => "Discordサーバーの招待",
   Oa = () => "Zaproszenie na serwer Discord",
   Ha = () => "Приглашение на сервер Discord",
   Za = () => "Запрошення на сервер Discord",
   Va = () => "Lời mời máy chủ Discord",
   Hb = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? Da() : e === "pt" ? La() : e === "ch" ? Fa() : e === "de" ? Ba() : e === "es" ? Ga() : e === "fr" ? Ea() : e === "it" ? Ia() : e === "jp" ? Na() : e === "pl" ? Oa() : e === "ru" ? Ha() : e === "uk" ? Za() : Va()
+    return e === "en" ? Fa() : e === "pt" ? La() : e === "ch" ? Da() : e === "de" ? Ea() : e === "es" ? Ba() : e === "fr" ? Ga() : e === "it" ? Na() : e === "jp" ? Ia() : e === "pl" ? Oa() : e === "ru" ? Ha() : e === "uk" ? Za() : Va()
   },
   Ka = () => "Profile picture",
   Wa = () => "Foto de perfil",
@@ -308,8 +308,8 @@ const Ae = () => "Leader",
   ht = () => "奖项",
   qt = () => "Auszeichnungen",
   vt = () => "Premios",
-  kt = () => "Récompenses",
-  jt = () => "Premi",
+  jt = () => "Récompenses",
+  kt = () => "Premi",
   xt = () => "アワード",
   zt = () => "Nagrody",
   Ct = () => "Награды",
@@ -317,7 +317,7 @@ const Ae = () => "Leader",
   At = () => "Giải thưởng",
   z = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? gt() : e === "pt" ? yt() : e === "ch" ? ht() : e === "de" ? qt() : e === "es" ? vt() : e === "fr" ? kt() : e === "it" ? jt() : e === "jp" ? xt() : e === "pl" ? zt() : e === "ru" ? Ct() : e === "uk" ? Pt() : At()
+    return e === "en" ? gt() : e === "pt" ? yt() : e === "ch" ? ht() : e === "de" ? qt() : e === "es" ? vt() : e === "fr" ? jt() : e === "it" ? kt() : e === "jp" ? xt() : e === "pl" ? zt() : e === "ru" ? Ct() : e === "uk" ? Pt() : At()
   },
   Tt = () => "Locked",
   Ut = () => "Bloqueado",
@@ -325,18 +325,18 @@ const Ae = () => "Leader",
   Rt = () => "Gesperrt",
   St = () => "Bloqueado",
   $t = () => "Verrouillée",
-  Dt = () => "Bloccato",
+  Ft = () => "Bloccato",
   Lt = () => "ロック中",
-  Ft = () => "Zablokowane",
-  Bt = () => "Заблокировано",
-  Gt = () => "Заблоковано",
-  Et = () => "Đã khóa",
+  Dt = () => "Zablokowane",
+  Et = () => "Заблокировано",
+  Bt = () => "Заблоковано",
+  Gt = () => "Đã khóa",
   Kb = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? Tt() : e === "pt" ? Ut() : e === "ch" ? Mt() : e === "de" ? Rt() : e === "es" ? St() : e === "fr" ? $t() : e === "it" ? Dt() : e === "jp" ? Lt() : e === "pl" ? Ft() : e === "ru" ? Bt() : e === "uk" ? Gt() : Et()
+    return e === "en" ? Tt() : e === "pt" ? Ut() : e === "ch" ? Mt() : e === "de" ? Rt() : e === "es" ? St() : e === "fr" ? $t() : e === "it" ? Ft() : e === "jp" ? Lt() : e === "pl" ? Dt() : e === "ru" ? Et() : e === "uk" ? Bt() : Gt()
   },
-  It = r => `Earned ${r.date}`,
-  Nt = r => `Conquistado em ${r.date}`,
+  Nt = r => `Earned ${r.date}`,
+  It = r => `Conquistado em ${r.date}`,
   Ot = r => `获得于 ${r.date}`,
   Ht = r => `Erhalten am ${r.date}`,
   Zt = r => `Conseguido el ${r.date}`,
@@ -349,7 +349,7 @@ const Ae = () => "Leader",
   Xt = r => `Đạt được ${r.date}`,
   Wb = (r, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? It(r) : e === "pt" ? Nt(r) : e === "ch" ? Ot(r) : e === "de" ? Ht(r) : e === "es" ? Zt(r) : e === "fr" ? Vt(r) : e === "it" ? Kt(r) : e === "jp" ? Wt(r) : e === "pl" ? Qt(r) : e === "ru" ? Jt(r) : e === "uk" ? Yt(r) : Xt(r)
+    return e === "en" ? Nt(r) : e === "pt" ? It(r) : e === "ch" ? Ot(r) : e === "de" ? Ht(r) : e === "es" ? Zt(r) : e === "fr" ? Vt(r) : e === "it" ? Kt(r) : e === "jp" ? Wt(r) : e === "pl" ? Qt(r) : e === "ru" ? Jt(r) : e === "uk" ? Yt(r) : Xt(r)
   },
   e_ = () => "Common",
   r_ = () => "Comum",
@@ -377,11 +377,11 @@ const Ae = () => "Leader",
   h_ = () => "アンコモン",
   q_ = () => "Niezwykły",
   v_ = () => "Необычная",
-  k_ = () => "Незвичайна",
-  j_ = () => "Ít gặp",
+  j_ = () => "Незвичайна",
+  k_ = () => "Ít gặp",
   x_ = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? m_() : e === "pt" ? f_() : e === "ch" ? p_() : e === "de" ? w_() : e === "es" ? b_() : e === "fr" ? g_() : e === "it" ? y_() : e === "jp" ? h_() : e === "pl" ? q_() : e === "ru" ? v_() : e === "uk" ? k_() : j_()
+    return e === "en" ? m_() : e === "pt" ? f_() : e === "ch" ? p_() : e === "de" ? w_() : e === "es" ? b_() : e === "fr" ? g_() : e === "it" ? y_() : e === "jp" ? h_() : e === "pl" ? q_() : e === "ru" ? v_() : e === "uk" ? j_() : k_()
   },
   z_ = () => "Rare",
   C_ = () => "Raro",
@@ -393,17 +393,17 @@ const Ae = () => "Leader",
   R_ = () => "レア",
   S_ = () => "Rzadki",
   $_ = () => "Редкая",
-  D_ = () => "Рідкісна",
+  F_ = () => "Рідкісна",
   L_ = () => "Hiếm",
-  F_ = (r = {}, n = {}) => {
+  D_ = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? z_() : e === "pt" ? C_() : e === "ch" ? P_() : e === "de" ? A_() : e === "es" ? T_() : e === "fr" ? U_() : e === "it" ? M_() : e === "jp" ? R_() : e === "pl" ? S_() : e === "ru" ? $_() : e === "uk" ? D_() : L_()
+    return e === "en" ? z_() : e === "pt" ? C_() : e === "ch" ? P_() : e === "de" ? A_() : e === "es" ? T_() : e === "fr" ? U_() : e === "it" ? M_() : e === "jp" ? R_() : e === "pl" ? S_() : e === "ru" ? $_() : e === "uk" ? F_() : L_()
   },
-  B_ = () => "Epic",
-  G_ = () => "Épico",
-  E_ = () => "史诗",
-  I_ = () => "Episch",
-  N_ = () => "Épico",
+  E_ = () => "Epic",
+  B_ = () => "Épico",
+  G_ = () => "史诗",
+  N_ = () => "Episch",
+  I_ = () => "Épico",
   O_ = () => "Épique",
   H_ = () => "Epico",
   Z_ = () => "エピック",
@@ -413,7 +413,7 @@ const Ae = () => "Leader",
   Q_ = () => "Tuyệt vời",
   J_ = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? B_() : e === "pt" ? G_() : e === "ch" ? E_() : e === "de" ? I_() : e === "es" ? N_() : e === "fr" ? O_() : e === "it" ? H_() : e === "jp" ? Z_() : e === "pl" ? V_() : e === "ru" ? K_() : e === "uk" ? W_() : Q_()
+    return e === "en" ? E_() : e === "pt" ? B_() : e === "ch" ? G_() : e === "de" ? N_() : e === "es" ? I_() : e === "fr" ? O_() : e === "it" ? H_() : e === "jp" ? Z_() : e === "pl" ? V_() : e === "ru" ? K_() : e === "uk" ? W_() : Q_()
   },
   Y_ = () => "Legendary",
   X_ = () => "Lendário",
@@ -443,11 +443,11 @@ const Ae = () => "Leader",
   hi = () => "Мифическая",
   qi = () => "Міфічна",
   vi = () => "Thần thoại",
-  ki = (r = {}, n = {}) => {
+  ji = (r = {}, n = {}) => {
     const e = n.locale ?? a();
     return e === "en" ? oi() : e === "pt" ? di() : e === "ch" ? mi() : e === "de" ? fi() : e === "es" ? pi() : e === "fr" ? wi() : e === "it" ? bi() : e === "jp" ? gi() : e === "pl" ? yi() : e === "ru" ? hi() : e === "uk" ? qi() : vi()
   },
-  ji = r => `Next: ${r.tier}`,
+  ki = r => `Next: ${r.tier}`,
   xi = r => `Próximo: ${r.tier}`,
   zi = r => `下一级：${r.tier}`,
   Ci = r => `Nächste: ${r.tier}`,
@@ -461,23 +461,23 @@ const Ae = () => "Leader",
   $i = r => `Tiếp theo: ${r.tier}`,
   Qb = (r, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? ji(r) : e === "pt" ? xi(r) : e === "ch" ? zi(r) : e === "de" ? Ci(r) : e === "es" ? Pi(r) : e === "fr" ? Ai(r) : e === "it" ? Ti(r) : e === "jp" ? Ui(r) : e === "pl" ? Mi(r) : e === "ru" ? Ri(r) : e === "uk" ? Si(r) : $i(r)
+    return e === "en" ? ki(r) : e === "pt" ? xi(r) : e === "ch" ? zi(r) : e === "de" ? Ci(r) : e === "es" ? Pi(r) : e === "fr" ? Ai(r) : e === "it" ? Ti(r) : e === "jp" ? Ui(r) : e === "pl" ? Mi(r) : e === "ru" ? Ri(r) : e === "uk" ? Si(r) : $i(r)
   },
-  Di = () => "First Gathering",
+  Fi = () => "First Gathering",
   Li = () => "Primeiro encontro",
-  Fi = () => "初次集结",
-  Bi = () => "Erste Zusammenkunft",
-  Gi = () => "Primer encuentro",
-  Ei = () => "Premier rassemblement",
-  Ii = () => "Primo raduno",
-  Ni = () => "初めての集い",
+  Di = () => "初次集结",
+  Ei = () => "Erste Zusammenkunft",
+  Bi = () => "Primer encuentro",
+  Gi = () => "Premier rassemblement",
+  Ni = () => "Primo raduno",
+  Ii = () => "初めての集い",
   Oi = () => "Pierwsze zgromadzenie",
   Hi = () => "Первый сбор",
   Zi = () => "Перший збір",
   Vi = () => "Cuộc hội ngộ đầu tiên",
   M = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? Di() : e === "pt" ? Li() : e === "ch" ? Fi() : e === "de" ? Bi() : e === "es" ? Gi() : e === "fr" ? Ei() : e === "it" ? Ii() : e === "jp" ? Ni() : e === "pl" ? Oi() : e === "ru" ? Hi() : e === "uk" ? Zi() : Vi()
+    return e === "en" ? Fi() : e === "pt" ? Li() : e === "ch" ? Di() : e === "de" ? Ei() : e === "es" ? Bi() : e === "fr" ? Gi() : e === "it" ? Ni() : e === "jp" ? Ii() : e === "pl" ? Oi() : e === "ru" ? Hi() : e === "uk" ? Zi() : Vi()
   },
   Ki = () => "Reach 5 eligible members",
   Wi = () => "Alcance 5 membros elegíveis",
@@ -516,8 +516,8 @@ const Ae = () => "Leader",
   hl = () => "达到 25 名符合条件的成员",
   ql = () => "Erreiche 25 berechtigte Mitglieder",
   vl = () => "Alcanza 25 miembros elegibles",
-  kl = () => "Atteignez 25 membres éligibles",
-  jl = () => "Raggiungi 25 membri idonei",
+  jl = () => "Atteignez 25 membres éligibles",
+  kl = () => "Raggiungi 25 membri idonei",
   xl = () => "対象メンバー25人に到達する",
   zl = () => "Osiągnij 25 uprawnionych członków",
   Cl = () => "Наберите 25 подходящих участников",
@@ -525,7 +525,7 @@ const Ae = () => "Leader",
   Al = () => "Đạt 25 thành viên hợp lệ",
   S = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? gl() : e === "pt" ? yl() : e === "ch" ? hl() : e === "de" ? ql() : e === "es" ? vl() : e === "fr" ? kl() : e === "it" ? jl() : e === "jp" ? xl() : e === "pl" ? zl() : e === "ru" ? Cl() : e === "uk" ? Pl() : Al()
+    return e === "en" ? gl() : e === "pt" ? yl() : e === "ch" ? hl() : e === "de" ? ql() : e === "es" ? vl() : e === "fr" ? jl() : e === "it" ? kl() : e === "jp" ? xl() : e === "pl" ? zl() : e === "ru" ? Cl() : e === "uk" ? Pl() : Al()
   },
   Tl = () => "United Force",
   Ul = () => "Força unida",
@@ -533,18 +533,18 @@ const Ae = () => "Leader",
   Rl = () => "Vereinte Kraft",
   Sl = () => "Fuerza unida",
   $l = () => "Force unie",
-  Dl = () => "Forza unita",
+  Fl = () => "Forza unita",
   Ll = () => "団結せし力",
-  Fl = () => "Zjednoczona siła",
-  Bl = () => "Объединённая сила",
-  Gl = () => "Об'єднана сила",
-  El = () => "Sức mạnh đoàn kết",
+  Dl = () => "Zjednoczona siła",
+  El = () => "Объединённая сила",
+  Bl = () => "Об'єднана сила",
+  Gl = () => "Sức mạnh đoàn kết",
   $ = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? Tl() : e === "pt" ? Ul() : e === "ch" ? Ml() : e === "de" ? Rl() : e === "es" ? Sl() : e === "fr" ? $l() : e === "it" ? Dl() : e === "jp" ? Ll() : e === "pl" ? Fl() : e === "ru" ? Bl() : e === "uk" ? Gl() : El()
+    return e === "en" ? Tl() : e === "pt" ? Ul() : e === "ch" ? Ml() : e === "de" ? Rl() : e === "es" ? Sl() : e === "fr" ? $l() : e === "it" ? Fl() : e === "jp" ? Ll() : e === "pl" ? Dl() : e === "ru" ? El() : e === "uk" ? Bl() : Gl()
   },
-  Il = () => "Reach 50 eligible members",
-  Nl = () => "Alcance 50 membros elegíveis",
+  Nl = () => "Reach 50 eligible members",
+  Il = () => "Alcance 50 membros elegíveis",
   Ol = () => "达到 50 名符合条件的成员",
   Hl = () => "Erreiche 50 berechtigte Mitglieder",
   Zl = () => "Alcanza 50 miembros elegibles",
@@ -555,9 +555,9 @@ const Ae = () => "Leader",
   Jl = () => "Наберите 50 подходящих участников",
   Yl = () => "Досягніть 50 учасників, які відповідають вимогам",
   Xl = () => "Đạt 50 thành viên hợp lệ",
-  D = (r = {}, n = {}) => {
+  F = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? Il() : e === "pt" ? Nl() : e === "ch" ? Ol() : e === "de" ? Hl() : e === "es" ? Zl() : e === "fr" ? Vl() : e === "it" ? Kl() : e === "jp" ? Wl() : e === "pl" ? Ql() : e === "ru" ? Jl() : e === "uk" ? Yl() : Xl()
+    return e === "en" ? Nl() : e === "pt" ? Il() : e === "ch" ? Ol() : e === "de" ? Hl() : e === "es" ? Zl() : e === "fr" ? Vl() : e === "it" ? Kl() : e === "jp" ? Wl() : e === "pl" ? Ql() : e === "ru" ? Jl() : e === "uk" ? Yl() : Xl()
   },
   ec = () => "Full House",
   rc = () => "Casa cheia",
@@ -586,12 +586,12 @@ const Ae = () => "Leader",
   hc = () => "Osiągnij 100 uprawnionych członków",
   qc = () => "Наберите 100 подходящих участников",
   vc = () => "Досягніть 100 учасників, які відповідають вимогам",
-  kc = () => "Đạt 100 thành viên hợp lệ",
-  F = (r = {}, n = {}) => {
+  jc = () => "Đạt 100 thành viên hợp lệ",
+  D = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? dc() : e === "pt" ? mc() : e === "ch" ? fc() : e === "de" ? pc() : e === "es" ? wc() : e === "fr" ? bc() : e === "it" ? gc() : e === "jp" ? yc() : e === "pl" ? hc() : e === "ru" ? qc() : e === "uk" ? vc() : kc()
+    return e === "en" ? dc() : e === "pt" ? mc() : e === "ch" ? fc() : e === "de" ? pc() : e === "es" ? wc() : e === "fr" ? bc() : e === "it" ? gc() : e === "jp" ? yc() : e === "pl" ? hc() : e === "ru" ? qc() : e === "uk" ? vc() : jc()
   },
-  jc = () => "Grand Coalition",
+  kc = () => "Grand Coalition",
   xc = () => "Grande coalizão",
   zc = () => "宏大同盟",
   Cc = () => "Große Koalition",
@@ -603,25 +603,25 @@ const Ae = () => "Leader",
   Rc = () => "Великая коалиция",
   Sc = () => "Велика коаліція",
   $c = () => "Đại liên minh",
-  B = (r = {}, n = {}) => {
+  E = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? jc() : e === "pt" ? xc() : e === "ch" ? zc() : e === "de" ? Cc() : e === "es" ? Pc() : e === "fr" ? Ac() : e === "it" ? Tc() : e === "jp" ? Uc() : e === "pl" ? Mc() : e === "ru" ? Rc() : e === "uk" ? Sc() : $c()
+    return e === "en" ? kc() : e === "pt" ? xc() : e === "ch" ? zc() : e === "de" ? Cc() : e === "es" ? Pc() : e === "fr" ? Ac() : e === "it" ? Tc() : e === "jp" ? Uc() : e === "pl" ? Mc() : e === "ru" ? Rc() : e === "uk" ? Sc() : $c()
   },
-  Dc = () => "Reach 500 eligible members",
+  Fc = () => "Reach 500 eligible members",
   Lc = () => "Alcance 500 membros elegíveis",
-  Fc = () => "达到 500 名符合条件的成员",
-  Bc = () => "Erreiche 500 berechtigte Mitglieder",
-  Gc = () => "Alcanza 500 miembros elegibles",
-  Ec = () => "Atteignez 500 membres éligibles",
-  Ic = () => "Raggiungi 500 membri idonei",
-  Nc = () => "対象メンバー500人に到達する",
+  Dc = () => "达到 500 名符合条件的成员",
+  Ec = () => "Erreiche 500 berechtigte Mitglieder",
+  Bc = () => "Alcanza 500 miembros elegibles",
+  Gc = () => "Atteignez 500 membres éligibles",
+  Nc = () => "Raggiungi 500 membri idonei",
+  Ic = () => "対象メンバー500人に到達する",
   Oc = () => "Osiągnij 500 uprawnionych członków",
   Hc = () => "Наберите 500 подходящих участников",
   Zc = () => "Досягніть 500 учасників, які відповідають вимогам",
   Vc = () => "Đạt 500 thành viên hợp lệ",
-  G = (r = {}, n = {}) => {
+  B = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? Dc() : e === "pt" ? Lc() : e === "ch" ? Fc() : e === "de" ? Bc() : e === "es" ? Gc() : e === "fr" ? Ec() : e === "it" ? Ic() : e === "jp" ? Nc() : e === "pl" ? Oc() : e === "ru" ? Hc() : e === "uk" ? Zc() : Vc()
+    return e === "en" ? Fc() : e === "pt" ? Lc() : e === "ch" ? Dc() : e === "de" ? Ec() : e === "es" ? Bc() : e === "fr" ? Gc() : e === "it" ? Nc() : e === "jp" ? Ic() : e === "pl" ? Oc() : e === "ru" ? Hc() : e === "uk" ? Zc() : Vc()
   },
   Kc = () => "Thousand Strong",
   Wc = () => "Mil fortes",
@@ -635,7 +635,7 @@ const Ae = () => "Leader",
   as = () => "Тысячная армия",
   ts = () => "Тисяча сильних",
   _s = () => "Ngàn người một lòng",
-  E = (r = {}, n = {}) => {
+  G = (r = {}, n = {}) => {
     const e = n.locale ?? a();
     return e === "en" ? Kc() : e === "pt" ? Wc() : e === "ch" ? Qc() : e === "de" ? Jc() : e === "es" ? Yc() : e === "fr" ? Xc() : e === "it" ? es() : e === "jp" ? rs() : e === "pl" ? ns() : e === "ru" ? as() : e === "uk" ? ts() : _s()
   },
@@ -651,7 +651,7 @@ const Ae = () => "Leader",
   ps = () => "Наберите 1 000 подходящих участников",
   ws = () => "Досягніть 1 000 учасників, які відповідають вимогам",
   bs = () => "Đạt 1.000 thành viên hợp lệ",
-  I = (r = {}, n = {}) => {
+  N = (r = {}, n = {}) => {
     const e = n.locale ?? a();
     return e === "en" ? is() : e === "pt" ? ls() : e === "ch" ? cs() : e === "de" ? ss() : e === "es" ? us() : e === "fr" ? os() : e === "it" ? ds() : e === "jp" ? ms() : e === "pl" ? fs() : e === "ru" ? ps() : e === "uk" ? ws() : bs()
   },
@@ -660,16 +660,16 @@ const Ae = () => "Leader",
   hs = () => "小小开端",
   qs = () => "Kleine Anfänge",
   vs = () => "Pequeños comienzos",
-  ks = () => "Petits débuts",
-  js = () => "Piccoli inizi",
+  js = () => "Petits débuts",
+  ks = () => "Piccoli inizi",
   xs = () => "小さな一歩",
   zs = () => "Skromne początki",
   Cs = () => "Скромное начало",
   Ps = () => "Скромний початок",
   As = () => "Khởi đầu nhỏ bé",
-  N = (r = {}, n = {}) => {
+  I = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? gs() : e === "pt" ? ys() : e === "ch" ? hs() : e === "de" ? qs() : e === "es" ? vs() : e === "fr" ? ks() : e === "it" ? js() : e === "jp" ? xs() : e === "pl" ? zs() : e === "ru" ? Cs() : e === "uk" ? Ps() : As()
+    return e === "en" ? gs() : e === "pt" ? ys() : e === "ch" ? hs() : e === "de" ? qs() : e === "es" ? vs() : e === "fr" ? js() : e === "it" ? ks() : e === "jp" ? xs() : e === "pl" ? zs() : e === "ru" ? Cs() : e === "uk" ? Ps() : As()
   },
   Ts = () => "Place 100 alliance pixels",
   Us = () => "Coloque 100 pixels pela aliança",
@@ -677,18 +677,18 @@ const Ae = () => "Leader",
   Rs = () => "Male 100 Pixel für die Allianz",
   Ss = () => "Coloca 100 píxeles para la alianza",
   $s = () => "Placez 100 pixels pour l'alliance",
-  Ds = () => "Piazza 100 pixel per l'alleanza",
+  Fs = () => "Piazza 100 pixel per l'alleanza",
   Ls = () => "アライアンスとして100ピクセルを塗る",
-  Fs = () => "Pomaluj 100 pikseli dla sojuszu",
-  Bs = () => "Нарисуйте 100 пикселей за альянс",
-  Gs = () => "Поставте 100 пікселів за альянс",
-  Es = () => "Đặt 100 pixel cho liên minh",
+  Ds = () => "Pomaluj 100 pikseli dla sojuszu",
+  Es = () => "Нарисуйте 100 пикселей за альянс",
+  Bs = () => "Поставте 100 пікселів за альянс",
+  Gs = () => "Đặt 100 pixel cho liên minh",
   O = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? Ts() : e === "pt" ? Us() : e === "ch" ? Ms() : e === "de" ? Rs() : e === "es" ? Ss() : e === "fr" ? $s() : e === "it" ? Ds() : e === "jp" ? Ls() : e === "pl" ? Fs() : e === "ru" ? Bs() : e === "uk" ? Gs() : Es()
+    return e === "en" ? Ts() : e === "pt" ? Us() : e === "ch" ? Ms() : e === "de" ? Rs() : e === "es" ? Ss() : e === "fr" ? $s() : e === "it" ? Fs() : e === "jp" ? Ls() : e === "pl" ? Ds() : e === "ru" ? Es() : e === "uk" ? Bs() : Gs()
   },
-  Is = () => "Making a Mark",
-  Ns = () => "Deixando a marca",
+  Ns = () => "Making a Mark",
+  Is = () => "Deixando a marca",
   Os = () => "初露锋芒",
   Hs = () => "Spuren hinterlassen",
   Zs = () => "Dejando huella",
@@ -701,7 +701,7 @@ const Ae = () => "Leader",
   Xs = () => "Ghi dấu ấn",
   H = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? Is() : e === "pt" ? Ns() : e === "ch" ? Os() : e === "de" ? Hs() : e === "es" ? Zs() : e === "fr" ? Vs() : e === "it" ? Ks() : e === "jp" ? Ws() : e === "pl" ? Qs() : e === "ru" ? Js() : e === "uk" ? Ys() : Xs()
+    return e === "en" ? Ns() : e === "pt" ? Is() : e === "ch" ? Os() : e === "de" ? Hs() : e === "es" ? Zs() : e === "fr" ? Vs() : e === "it" ? Ks() : e === "jp" ? Ws() : e === "pl" ? Qs() : e === "ru" ? Js() : e === "uk" ? Ys() : Xs()
   },
   eu = () => "Place 1,000 alliance pixels",
   ru = () => "Coloque 1.000 pixels pela aliança",
@@ -730,12 +730,12 @@ const Ae = () => "Leader",
   hu = () => "Potęga pikseli",
   qu = () => "Пиксельная мощь",
   vu = () => "Піксельна потуга",
-  ku = () => "Cường quốc pixel",
+  ju = () => "Cường quốc pixel",
   g = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? du() : e === "pt" ? mu() : e === "ch" ? fu() : e === "de" ? pu() : e === "es" ? wu() : e === "fr" ? bu() : e === "it" ? gu() : e === "jp" ? yu() : e === "pl" ? hu() : e === "ru" ? qu() : e === "uk" ? vu() : ku()
+    return e === "en" ? du() : e === "pt" ? mu() : e === "ch" ? fu() : e === "de" ? pu() : e === "es" ? wu() : e === "fr" ? bu() : e === "it" ? gu() : e === "jp" ? yu() : e === "pl" ? hu() : e === "ru" ? qu() : e === "uk" ? vu() : ju()
   },
-  ju = () => "Place 10,000 alliance pixels",
+  ku = () => "Place 10,000 alliance pixels",
   xu = () => "Coloque 10.000 pixels pela aliança",
   zu = () => "为联盟放置 10,000 个像素",
   Cu = () => "Male 10.000 Pixel für die Allianz",
@@ -749,23 +749,23 @@ const Ae = () => "Leader",
   $u = () => "Đặt 10.000 pixel cho liên minh",
   V = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? ju() : e === "pt" ? xu() : e === "ch" ? zu() : e === "de" ? Cu() : e === "es" ? Pu() : e === "fr" ? Au() : e === "it" ? Tu() : e === "jp" ? Uu() : e === "pl" ? Mu() : e === "ru" ? Ru() : e === "uk" ? Su() : $u()
+    return e === "en" ? ku() : e === "pt" ? xu() : e === "ch" ? zu() : e === "de" ? Cu() : e === "es" ? Pu() : e === "fr" ? Au() : e === "it" ? Tu() : e === "jp" ? Uu() : e === "pl" ? Mu() : e === "ru" ? Ru() : e === "uk" ? Su() : $u()
   },
-  Du = () => "Canvas Giant",
+  Fu = () => "Canvas Giant",
   Lu = () => "Gigante da tela",
-  Fu = () => "画布巨人",
-  Bu = () => "Canvas-Riese",
-  Gu = () => "Gigante del lienzo",
-  Eu = () => "Géant du canvas",
-  Iu = () => "Gigante della tela",
-  Nu = () => "キャンバスの巨人",
+  Du = () => "画布巨人",
+  Eu = () => "Canvas-Riese",
+  Bu = () => "Gigante del lienzo",
+  Gu = () => "Géant du canvas",
+  Nu = () => "Gigante della tela",
+  Iu = () => "キャンバスの巨人",
   Ou = () => "Gigant płótna",
   Hu = () => "Гигант холста",
   Zu = () => "Гігант полотна",
   Vu = () => "Khổng lồ bảng vẽ",
   K = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? Du() : e === "pt" ? Lu() : e === "ch" ? Fu() : e === "de" ? Bu() : e === "es" ? Gu() : e === "fr" ? Eu() : e === "it" ? Iu() : e === "jp" ? Nu() : e === "pl" ? Ou() : e === "ru" ? Hu() : e === "uk" ? Zu() : Vu()
+    return e === "en" ? Fu() : e === "pt" ? Lu() : e === "ch" ? Du() : e === "de" ? Eu() : e === "es" ? Bu() : e === "fr" ? Gu() : e === "it" ? Nu() : e === "jp" ? Iu() : e === "pl" ? Ou() : e === "ru" ? Hu() : e === "uk" ? Zu() : Vu()
   },
   Ku = () => "Place 100,000 alliance pixels",
   Wu = () => "Coloque 100.000 pixels pela aliança",
@@ -803,8 +803,8 @@ const Ae = () => "Leader",
   ho = () => "Coloque 1.000.000 pixels pela aliança",
   qo = () => "为联盟放置 1,000,000 个像素",
   vo = () => "Male 1.000.000 Pixel für die Allianz",
-  ko = () => "Coloca 1.000.000 de píxeles para la alianza",
-  jo = () => "Placez 1 000 000 pixels pour l'alliance",
+  jo = () => "Coloca 1.000.000 de píxeles para la alianza",
+  ko = () => "Placez 1 000 000 pixels pour l'alliance",
   xo = () => "Piazza 1.000.000 pixel per l'alleanza",
   zo = () => "アライアンスとして1,000,000ピクセルを塗る",
   Co = () => "Pomaluj 1 000 000 pikseli dla sojuszu",
@@ -813,25 +813,25 @@ const Ae = () => "Leader",
   To = () => "Đặt 1.000.000 pixel cho liên minh",
   J = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? yo() : e === "pt" ? ho() : e === "ch" ? qo() : e === "de" ? vo() : e === "es" ? ko() : e === "fr" ? jo() : e === "it" ? xo() : e === "jp" ? zo() : e === "pl" ? Co() : e === "ru" ? Po() : e === "uk" ? Ao() : To()
+    return e === "en" ? yo() : e === "pt" ? ho() : e === "ch" ? qo() : e === "de" ? vo() : e === "es" ? jo() : e === "fr" ? ko() : e === "it" ? xo() : e === "jp" ? zo() : e === "pl" ? Co() : e === "ru" ? Po() : e === "uk" ? Ao() : To()
   },
   Uo = () => "Canvas God",
   Mo = () => "Deus da tela",
   Ro = () => "画布之神",
   So = () => "Canvas-Gott",
   $o = () => "Dios del lienzo",
-  Do = () => "Dieu du canvas",
+  Fo = () => "Dieu du canvas",
   Lo = () => "Dio della tela",
-  Fo = () => "キャンバスの神",
-  Bo = () => "Bóg płótna",
-  Go = () => "Бог холста",
-  Eo = () => "Бог полотна",
-  Io = () => "Thần bảng vẽ",
+  Do = () => "キャンバスの神",
+  Eo = () => "Bóg płótna",
+  Bo = () => "Бог холста",
+  Go = () => "Бог полотна",
+  No = () => "Thần bảng vẽ",
   Y = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? Uo() : e === "pt" ? Mo() : e === "ch" ? Ro() : e === "de" ? So() : e === "es" ? $o() : e === "fr" ? Do() : e === "it" ? Lo() : e === "jp" ? Fo() : e === "pl" ? Bo() : e === "ru" ? Go() : e === "uk" ? Eo() : Io()
+    return e === "en" ? Uo() : e === "pt" ? Mo() : e === "ch" ? Ro() : e === "de" ? So() : e === "es" ? $o() : e === "fr" ? Fo() : e === "it" ? Lo() : e === "jp" ? Do() : e === "pl" ? Eo() : e === "ru" ? Bo() : e === "uk" ? Go() : No()
   },
-  No = () => "Place 10,000,000 alliance pixels",
+  Io = () => "Place 10,000,000 alliance pixels",
   Oo = () => "Coloque 10.000.000 pixels pela aliança",
   Ho = () => "为联盟放置 10,000,000 个像素",
   Zo = () => "Male 10.000.000 Pixel für die Allianz",
@@ -845,7 +845,7 @@ const Ae = () => "Leader",
   e0 = () => "Đặt 10.000.000 pixel cho liên minh",
   X = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? No() : e === "pt" ? Oo() : e === "ch" ? Ho() : e === "de" ? Zo() : e === "es" ? Vo() : e === "fr" ? Ko() : e === "it" ? Wo() : e === "jp" ? Qo() : e === "pl" ? Jo() : e === "ru" ? Yo() : e === "uk" ? Xo() : e0()
+    return e === "en" ? Io() : e === "pt" ? Oo() : e === "ch" ? Ho() : e === "de" ? Zo() : e === "es" ? Vo() : e === "fr" ? Ko() : e === "it" ? Wo() : e === "jp" ? Qo() : e === "pl" ? Jo() : e === "ru" ? Yo() : e === "uk" ? Xo() : e0()
   },
   r0 = () => "Dedicated Artists",
   n0 = () => "Artistas dedicados",
@@ -873,11 +873,11 @@ const Ae = () => "Leader",
   h0 = () => "10人のメンバーがそれぞれアライアンスとして10,000ピクセルを塗る",
   q0 = () => "Spraw, aby 10 członków pomalowało po 10 000 pikseli dla sojuszu",
   v0 = () => "10 участников должны нарисовать по 10 000 пикселей за альянс",
-  k0 = () => "Зберіть 10 учасників, кожен з яких поставить 10 000 пікселів за альянс",
-  j0 = () => "Có 10 thành viên, mỗi người đặt 10.000 pixel cho liên minh",
+  j0 = () => "Зберіть 10 учасників, кожен з яких поставить 10 000 пікселів за альянс",
+  k0 = () => "Có 10 thành viên, mỗi người đặt 10.000 pixel cho liên minh",
   ee = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? m0() : e === "pt" ? f0() : e === "ch" ? p0() : e === "de" ? w0() : e === "es" ? b0() : e === "fr" ? g0() : e === "it" ? y0() : e === "jp" ? h0() : e === "pl" ? q0() : e === "ru" ? v0() : e === "uk" ? k0() : j0()
+    return e === "en" ? m0() : e === "pt" ? f0() : e === "ch" ? p0() : e === "de" ? w0() : e === "es" ? b0() : e === "fr" ? g0() : e === "it" ? y0() : e === "jp" ? h0() : e === "pl" ? q0() : e === "ru" ? v0() : e === "uk" ? j0() : k0()
   },
   x0 = () => "Veteran Alliance",
   z0 = () => "Aliança veterana",
@@ -890,18 +890,18 @@ const Ae = () => "Leader",
   R0 = () => "Sojusz weteranów",
   S0 = () => "Альянс-ветеран",
   $0 = () => "Альянс-ветеран",
-  D0 = () => "Liên minh kỳ cựu",
+  F0 = () => "Liên minh kỳ cựu",
   h = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? x0() : e === "pt" ? z0() : e === "ch" ? C0() : e === "de" ? P0() : e === "es" ? A0() : e === "fr" ? T0() : e === "it" ? U0() : e === "jp" ? M0() : e === "pl" ? R0() : e === "ru" ? S0() : e === "uk" ? $0() : D0()
+    return e === "en" ? x0() : e === "pt" ? z0() : e === "ch" ? C0() : e === "de" ? P0() : e === "es" ? A0() : e === "fr" ? T0() : e === "it" ? U0() : e === "jp" ? M0() : e === "pl" ? R0() : e === "ru" ? S0() : e === "uk" ? $0() : F0()
   },
   L0 = () => "Remain active for 30 consecutive days",
-  F0 = () => "Permaneça ativa por 30 dias consecutivos",
-  B0 = () => "连续 30 天保持活跃",
-  G0 = () => "Bleibe 30 Tage in Folge aktiv",
-  E0 = () => "Permanece activa durante 30 días consecutivos",
-  I0 = () => "Restez active pendant 30 jours consécutifs",
-  N0 = () => "Resta attiva per 30 giorni consecutivi",
+  D0 = () => "Permaneça ativa por 30 dias consecutivos",
+  E0 = () => "连续 30 天保持活跃",
+  B0 = () => "Bleibe 30 Tage in Folge aktiv",
+  G0 = () => "Permanece activa durante 30 días consecutivos",
+  N0 = () => "Restez active pendant 30 jours consécutifs",
+  I0 = () => "Resta attiva per 30 giorni consecutivi",
   O0 = () => "30日連続で活動を続ける",
   H0 = () => "Pozostań aktywny przez 30 kolejnych dni",
   Z0 = () => "Оставайтесь активными 30 дней подряд",
@@ -909,7 +909,7 @@ const Ae = () => "Leader",
   K0 = () => "Duy trì hoạt động 30 ngày liên tiếp",
   re = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? L0() : e === "pt" ? F0() : e === "ch" ? B0() : e === "de" ? G0() : e === "es" ? E0() : e === "fr" ? I0() : e === "it" ? N0() : e === "jp" ? O0() : e === "pl" ? H0() : e === "ru" ? Z0() : e === "uk" ? V0() : K0()
+    return e === "en" ? L0() : e === "pt" ? D0() : e === "ch" ? E0() : e === "de" ? B0() : e === "es" ? G0() : e === "fr" ? N0() : e === "it" ? I0() : e === "jp" ? O0() : e === "pl" ? H0() : e === "ru" ? Z0() : e === "uk" ? V0() : K0()
   },
   W0 = () => "Seasoned Alliance",
   Q0 = () => "Aliança experiente",
@@ -947,8 +947,8 @@ const Ae = () => "Leader",
   hd = () => "Aliança duradoura",
   qd = () => "长青联盟",
   vd = () => "Beständige Allianz",
-  kd = () => "Alianza duradera",
-  jd = () => "Alliance durable",
+  jd = () => "Alianza duradera",
+  kd = () => "Alliance durable",
   xd = () => "Alleanza duratura",
   zd = () => "不屈のアライアンス",
   Cd = () => "Wytrwały sojusz",
@@ -957,25 +957,25 @@ const Ae = () => "Leader",
   Td = () => "Liên minh bền bỉ",
   te = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? yd() : e === "pt" ? hd() : e === "ch" ? qd() : e === "de" ? vd() : e === "es" ? kd() : e === "fr" ? jd() : e === "it" ? xd() : e === "jp" ? zd() : e === "pl" ? Cd() : e === "ru" ? Pd() : e === "uk" ? Ad() : Td()
+    return e === "en" ? yd() : e === "pt" ? hd() : e === "ch" ? qd() : e === "de" ? vd() : e === "es" ? jd() : e === "fr" ? kd() : e === "it" ? xd() : e === "jp" ? zd() : e === "pl" ? Cd() : e === "ru" ? Pd() : e === "uk" ? Ad() : Td()
   },
   Ud = () => "Remain active for 90 consecutive days",
   Md = () => "Permaneça ativa por 90 dias consecutivos",
   Rd = () => "连续 90 天保持活跃",
   Sd = () => "Bleibe 90 Tage in Folge aktiv",
   $d = () => "Permanece activa durante 90 días consecutivos",
-  Dd = () => "Restez active pendant 90 jours consécutifs",
+  Fd = () => "Restez active pendant 90 jours consécutifs",
   Ld = () => "Resta attiva per 90 giorni consecutivi",
-  Fd = () => "90日連続で活動を続ける",
-  Bd = () => "Pozostań aktywny przez 90 kolejnych dni",
-  Gd = () => "Оставайтесь активными 90 дней подряд",
-  Ed = () => "Залишайтеся активними 90 днів поспіль",
-  Id = () => "Duy trì hoạt động 90 ngày liên tiếp",
+  Dd = () => "90日連続で活動を続ける",
+  Ed = () => "Pozostań aktywny przez 90 kolejnych dni",
+  Bd = () => "Оставайтесь активными 90 дней подряд",
+  Gd = () => "Залишайтеся активними 90 днів поспіль",
+  Nd = () => "Duy trì hoạt động 90 ngày liên tiếp",
   _e = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? Ud() : e === "pt" ? Md() : e === "ch" ? Rd() : e === "de" ? Sd() : e === "es" ? $d() : e === "fr" ? Dd() : e === "it" ? Ld() : e === "jp" ? Fd() : e === "pl" ? Bd() : e === "ru" ? Gd() : e === "uk" ? Ed() : Id()
+    return e === "en" ? Ud() : e === "pt" ? Md() : e === "ch" ? Rd() : e === "de" ? Sd() : e === "es" ? $d() : e === "fr" ? Fd() : e === "it" ? Ld() : e === "jp" ? Dd() : e === "pl" ? Ed() : e === "ru" ? Bd() : e === "uk" ? Gd() : Nd()
   },
-  Nd = () => "Ancient Order",
+  Id = () => "Ancient Order",
   Od = () => "Ordem antiga",
   Hd = () => "古老秩序",
   Zd = () => "Alter Orden",
@@ -989,7 +989,7 @@ const Ae = () => "Leader",
   em = () => "Hội cổ xưa",
   ie = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? Nd() : e === "pt" ? Od() : e === "ch" ? Hd() : e === "de" ? Zd() : e === "es" ? Vd() : e === "fr" ? Kd() : e === "it" ? Wd() : e === "jp" ? Qd() : e === "pl" ? Jd() : e === "ru" ? Yd() : e === "uk" ? Xd() : em()
+    return e === "en" ? Id() : e === "pt" ? Od() : e === "ch" ? Hd() : e === "de" ? Zd() : e === "es" ? Vd() : e === "fr" ? Kd() : e === "it" ? Wd() : e === "jp" ? Qd() : e === "pl" ? Jd() : e === "ru" ? Yd() : e === "uk" ? Xd() : em()
   },
   rm = () => "Remain active for 180 consecutive days",
   nm = () => "Permaneça ativa por 180 dias consecutivos",
@@ -1017,11 +1017,11 @@ const Ae = () => "Leader",
   hm = () => "太古の存在",
   qm = () => "Pradawny",
   vm = () => "Первозданный",
-  km = () => "Первозданний",
-  jm = () => "Nguyên thủy",
+  jm = () => "Первозданний",
+  km = () => "Nguyên thủy",
   ce = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? mm() : e === "pt" ? fm() : e === "ch" ? pm() : e === "de" ? wm() : e === "es" ? bm() : e === "fr" ? gm() : e === "it" ? ym() : e === "jp" ? hm() : e === "pl" ? qm() : e === "ru" ? vm() : e === "uk" ? km() : jm()
+    return e === "en" ? mm() : e === "pt" ? fm() : e === "ch" ? pm() : e === "de" ? wm() : e === "es" ? bm() : e === "fr" ? gm() : e === "it" ? ym() : e === "jp" ? hm() : e === "pl" ? qm() : e === "ru" ? vm() : e === "uk" ? jm() : km()
   },
   xm = () => "Remain active for 365 consecutive days",
   zm = () => "Permaneça ativa por 365 dias consecutivos",
@@ -1034,18 +1034,18 @@ const Ae = () => "Leader",
   Rm = () => "Pozostań aktywny przez 365 kolejnych dni",
   Sm = () => "Оставайтесь активными 365 дней подряд",
   $m = () => "Залишайтеся активними 365 днів поспіль",
-  Dm = () => "Duy trì hoạt động 365 ngày liên tiếp",
+  Fm = () => "Duy trì hoạt động 365 ngày liên tiếp",
   se = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? xm() : e === "pt" ? zm() : e === "ch" ? Cm() : e === "de" ? Pm() : e === "es" ? Am() : e === "fr" ? Tm() : e === "it" ? Um() : e === "jp" ? Mm() : e === "pl" ? Rm() : e === "ru" ? Sm() : e === "uk" ? $m() : Dm()
+    return e === "en" ? xm() : e === "pt" ? zm() : e === "ch" ? Cm() : e === "de" ? Pm() : e === "es" ? Am() : e === "fr" ? Tm() : e === "it" ? Um() : e === "jp" ? Mm() : e === "pl" ? Rm() : e === "ru" ? Sm() : e === "uk" ? $m() : Fm()
   },
   Lm = () => "Active Community",
-  Fm = () => "Comunidade ativa",
-  Bm = () => "活跃社区",
-  Gm = () => "Aktive Community",
-  Em = () => "Comunidad activa",
-  Im = () => "Communauté active",
-  Nm = () => "Comunità attiva",
+  Dm = () => "Comunidade ativa",
+  Em = () => "活跃社区",
+  Bm = () => "Aktive Community",
+  Gm = () => "Comunidad activa",
+  Nm = () => "Communauté active",
+  Im = () => "Comunità attiva",
   Om = () => "活発なコミュニティ",
   Hm = () => "Aktywna społeczność",
   Zm = () => "Активное сообщество",
@@ -1053,7 +1053,7 @@ const Ae = () => "Leader",
   Km = () => "Cộng đồng năng động",
   q = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? Lm() : e === "pt" ? Fm() : e === "ch" ? Bm() : e === "de" ? Gm() : e === "es" ? Em() : e === "fr" ? Im() : e === "it" ? Nm() : e === "jp" ? Om() : e === "pl" ? Hm() : e === "ru" ? Zm() : e === "uk" ? Vm() : Km()
+    return e === "en" ? Lm() : e === "pt" ? Dm() : e === "ch" ? Em() : e === "de" ? Bm() : e === "es" ? Gm() : e === "fr" ? Nm() : e === "it" ? Im() : e === "jp" ? Om() : e === "pl" ? Hm() : e === "ru" ? Zm() : e === "uk" ? Vm() : Km()
   },
   Wm = () => "Have 10 members paint in one UTC day",
   Qm = () => "Tenha 10 membros pintando em um mesmo dia UTC",
@@ -1090,8 +1090,8 @@ const Ae = () => "Leader",
   hf = () => "Have 25 members paint in one UTC day",
   qf = () => "Tenha 25 membros pintando em um mesmo dia UTC",
   vf = () => "在同一个 UTC 日内有 25 名成员绘制",
-  kf = () => "Lass 25 Mitglieder an einem UTC-Tag malen",
-  jf = () => "Consigue que 25 miembros pinten en un mismo día UTC",
+  jf = () => "Lass 25 Mitglieder an einem UTC-Tag malen",
+  kf = () => "Consigue que 25 miembros pinten en un mismo día UTC",
   xf = () => "Ayez 25 membres qui peignent le même jour UTC",
   zf = () => "Fai dipingere 25 membri nello stesso giorno UTC",
   Cf = () => "同じUTCの1日に25人のメンバーがペイントする",
@@ -1101,23 +1101,23 @@ const Ae = () => "Leader",
   Uf = () => "Có 25 thành viên cùng tô trong một ngày UTC",
   de = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? hf() : e === "pt" ? qf() : e === "ch" ? vf() : e === "de" ? kf() : e === "es" ? jf() : e === "fr" ? xf() : e === "it" ? zf() : e === "jp" ? Cf() : e === "pl" ? Pf() : e === "ru" ? Af() : e === "uk" ? Tf() : Uf()
+    return e === "en" ? hf() : e === "pt" ? qf() : e === "ch" ? vf() : e === "de" ? jf() : e === "es" ? kf() : e === "fr" ? xf() : e === "it" ? zf() : e === "jp" ? Cf() : e === "pl" ? Pf() : e === "ru" ? Af() : e === "uk" ? Tf() : Uf()
   },
   Mf = () => "Rallying Crowd",
   Rf = () => "Multidão reunida",
   Sf = () => "集结的人潮",
   $f = () => "Versammelte Menge",
-  Df = () => "Multitud reunida",
+  Ff = () => "Multitud reunida",
   Lf = () => "Foule ralliée",
-  Ff = () => "Folla in adunata",
-  Bf = () => "集いし群衆",
-  Gf = () => "Zgromadzony tłum",
-  Ef = () => "Сплочённая толпа",
-  If = () => "Згуртований натовп",
-  Nf = () => "Đám đông tụ hội",
+  Df = () => "Folla in adunata",
+  Ef = () => "集いし群衆",
+  Bf = () => "Zgromadzony tłum",
+  Gf = () => "Сплочённая толпа",
+  Nf = () => "Згуртований натовп",
+  If = () => "Đám đông tụ hội",
   me = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? Mf() : e === "pt" ? Rf() : e === "ch" ? Sf() : e === "de" ? $f() : e === "es" ? Df() : e === "fr" ? Lf() : e === "it" ? Ff() : e === "jp" ? Bf() : e === "pl" ? Gf() : e === "ru" ? Ef() : e === "uk" ? If() : Nf()
+    return e === "en" ? Mf() : e === "pt" ? Rf() : e === "ch" ? Sf() : e === "de" ? $f() : e === "es" ? Ff() : e === "fr" ? Lf() : e === "it" ? Df() : e === "jp" ? Ef() : e === "pl" ? Bf() : e === "ru" ? Gf() : e === "uk" ? Nf() : If()
   },
   Of = () => "Have 50 members paint in one UTC day",
   Hf = () => "Tenha 50 membros pintando em um mesmo dia UTC",
@@ -1160,12 +1160,12 @@ const Ae = () => "Leader",
   hp = () => "Fai dipingere 100 membri nello stesso giorno UTC",
   qp = () => "同じUTCの1日に100人のメンバーがペイントする",
   vp = () => "Spraw, aby 100 członków malowało w ciągu jednego dnia UTC",
-  kp = () => "100 участников должны рисовать за один день UTC",
-  jp = () => "Зберіть 100 учасників, які малюватимуть за одну добу UTC",
+  jp = () => "100 участников должны рисовать за один день UTC",
+  kp = () => "Зберіть 100 учасників, які малюватимуть за одну добу UTC",
   xp = () => "Có 100 thành viên cùng tô trong một ngày UTC",
   we = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? fp() : e === "pt" ? pp() : e === "ch" ? wp() : e === "de" ? bp() : e === "es" ? gp() : e === "fr" ? yp() : e === "it" ? hp() : e === "jp" ? qp() : e === "pl" ? vp() : e === "ru" ? kp() : e === "uk" ? jp() : xp()
+    return e === "en" ? fp() : e === "pt" ? pp() : e === "ch" ? wp() : e === "de" ? bp() : e === "es" ? gp() : e === "fr" ? yp() : e === "it" ? hp() : e === "jp" ? qp() : e === "pl" ? vp() : e === "ru" ? jp() : e === "uk" ? kp() : xp()
   },
   zp = () => "Perfect Attendance",
   Cp = () => "Presença perfeita",
@@ -1177,18 +1177,18 @@ const Ae = () => "Leader",
   Rp = () => "皆勤賞",
   Sp = () => "Pełna frekwencja",
   $p = () => "Идеальная посещаемость",
-  Dp = () => "Ідеальна відвідуваність",
+  Fp = () => "Ідеальна відвідуваність",
   Lp = () => "Chuyên cần tuyệt đối",
   v = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? zp() : e === "pt" ? Cp() : e === "ch" ? Pp() : e === "de" ? Ap() : e === "es" ? Tp() : e === "fr" ? Up() : e === "it" ? Mp() : e === "jp" ? Rp() : e === "pl" ? Sp() : e === "ru" ? $p() : e === "uk" ? Dp() : Lp()
+    return e === "en" ? zp() : e === "pt" ? Cp() : e === "ch" ? Pp() : e === "de" ? Ap() : e === "es" ? Tp() : e === "fr" ? Up() : e === "it" ? Mp() : e === "jp" ? Rp() : e === "pl" ? Sp() : e === "ru" ? $p() : e === "uk" ? Fp() : Lp()
   },
-  Fp = () => "Have at least one member paint each day for 7 days",
-  Bp = () => "Tenha ao menos um membro pintando todos os dias por 7 dias",
-  Gp = () => "连续 7 天每天至少有一名成员绘制",
-  Ep = () => "Lass 7 Tage lang täglich mindestens ein Mitglied malen",
-  Ip = () => "Consigue que al menos un miembro pinte cada día durante 7 días",
-  Np = () => "Ayez au moins un membre qui peint chaque jour pendant 7 jours",
+  Dp = () => "Have at least one member paint each day for 7 days",
+  Ep = () => "Tenha ao menos um membro pintando todos os dias por 7 dias",
+  Bp = () => "连续 7 天每天至少有一名成员绘制",
+  Gp = () => "Lass 7 Tage lang täglich mindestens ein Mitglied malen",
+  Np = () => "Consigue que al menos un miembro pinte cada día durante 7 días",
+  Ip = () => "Ayez au moins un membre qui peint chaque jour pendant 7 jours",
   Op = () => "Fai dipingere almeno un membro ogni giorno per 7 giorni",
   Hp = () => "7日間、毎日1人以上のメンバーがペイントする",
   Zp = () => "Spraw, aby co najmniej jeden członek malował codziennie przez 7 dni",
@@ -1197,7 +1197,7 @@ const Ae = () => "Leader",
   Wp = () => "Có ít nhất một thành viên tô mỗi ngày trong 7 ngày",
   be = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? Fp() : e === "pt" ? Bp() : e === "ch" ? Gp() : e === "de" ? Ep() : e === "es" ? Ip() : e === "fr" ? Np() : e === "it" ? Op() : e === "jp" ? Hp() : e === "pl" ? Zp() : e === "ru" ? Vp() : e === "uk" ? Kp() : Wp()
+    return e === "en" ? Dp() : e === "pt" ? Ep() : e === "ch" ? Bp() : e === "de" ? Gp() : e === "es" ? Np() : e === "fr" ? Ip() : e === "it" ? Op() : e === "jp" ? Hp() : e === "pl" ? Zp() : e === "ru" ? Vp() : e === "uk" ? Kp() : Wp()
   },
   Qp = () => "Profile picture",
   Jp = () => "Foto do perfil",
@@ -1234,8 +1234,8 @@ const Ae = () => "Leader",
   hw = () => "Equipped",
   qw = () => "Equipado",
   vw = () => "已装备",
-  kw = () => "Ausgerüstet",
-  jw = () => "Equipado",
+  jw = () => "Ausgerüstet",
+  kw = () => "Equipado",
   xw = () => "Équipé",
   zw = () => "Equipaggiato",
   Cw = () => "装備中",
@@ -1245,23 +1245,23 @@ const Ae = () => "Leader",
   Uw = () => "Đã trang bị",
   Xb = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? hw() : e === "pt" ? qw() : e === "ch" ? vw() : e === "de" ? kw() : e === "es" ? jw() : e === "fr" ? xw() : e === "it" ? zw() : e === "jp" ? Cw() : e === "pl" ? Pw() : e === "ru" ? Aw() : e === "uk" ? Tw() : Uw()
+    return e === "en" ? hw() : e === "pt" ? qw() : e === "ch" ? vw() : e === "de" ? jw() : e === "es" ? kw() : e === "fr" ? xw() : e === "it" ? zw() : e === "jp" ? Cw() : e === "pl" ? Pw() : e === "ru" ? Aw() : e === "uk" ? Tw() : Uw()
   },
   Mw = () => "Public",
   Rw = () => "Pública",
   Sw = () => "公开",
   $w = () => "Öffentlich",
-  Dw = () => "Pública",
+  Fw = () => "Pública",
   Lw = () => "Public",
-  Fw = () => "Pubblico",
-  Bw = () => "公開",
-  Gw = () => "Publiczna",
-  Ew = () => "Публичная",
-  Iw = () => "Публічна",
-  Nw = () => "Công khai",
+  Dw = () => "Pubblico",
+  Ew = () => "公開",
+  Bw = () => "Publiczna",
+  Gw = () => "Публичная",
+  Nw = () => "Публічна",
+  Iw = () => "Công khai",
   eg = (r = {}, n = {}) => {
     const e = n.locale ?? a();
-    return e === "en" ? Mw() : e === "pt" ? Rw() : e === "ch" ? Sw() : e === "de" ? $w() : e === "es" ? Dw() : e === "fr" ? Lw() : e === "it" ? Fw() : e === "jp" ? Bw() : e === "pl" ? Gw() : e === "ru" ? Ew() : e === "uk" ? Iw() : Nw()
+    return e === "en" ? Mw() : e === "pt" ? Rw() : e === "ch" ? Sw() : e === "de" ? $w() : e === "es" ? Fw() : e === "fr" ? Lw() : e === "it" ? Dw() : e === "jp" ? Ew() : e === "pl" ? Bw() : e === "ru" ? Gw() : e === "uk" ? Nw() : Iw()
   },
   Ow = () => "Members only",
   Hw = () => "Somente membros",
@@ -1392,9 +1392,9 @@ const m = {
     members_25: b,
     members_50: $,
     members_100: L,
-    members_500: B,
-    members_1000: E,
-    pixels_100: N,
+    members_500: E,
+    members_1000: G,
+    pixels_100: I,
     pixels_1000: H,
     pixels_10000: g,
     pixels_100000: K,
@@ -1415,10 +1415,10 @@ const m = {
   w = {
     members_5: R,
     members_25: S,
-    members_50: D,
-    members_100: F,
-    members_500: G,
-    members_1000: I,
+    members_50: F,
+    members_100: D,
+    members_500: B,
+    members_1000: N,
     pixels_100: O,
     pixels_1000: Z,
     pixels_10000: V,
@@ -1443,11 +1443,11 @@ const m = {
       uncommon: b,
       rare: $,
       epic: L,
-      legendary: B,
-      mythic: E
+      legendary: E,
+      mythic: G
     },
     pixels: {
-      common: N,
+      common: I,
       uncommon: H,
       rare: g,
       epic: K,
@@ -1478,10 +1478,10 @@ const m = {
     members: {
       common: R,
       uncommon: S,
-      rare: D,
-      epic: F,
-      legendary: G,
-      mythic: I
+      rare: F,
+      epic: D,
+      legendary: B,
+      mythic: N
     },
     pixels: {
       common: O,
@@ -1514,10 +1514,10 @@ const m = {
   ge = {
     common: d_,
     uncommon: x_,
-    rare: F_,
+    rare: D_,
     epic: J_,
     legendary: ui,
-    mythic: ki
+    mythic: ji
   };
 
 function tg(r, n) {
@@ -1571,10 +1571,18 @@ function sg(r) {
       return "bg-rose-400 text-rose-950"
   }
 }
+
+function ug(r) {
+  return r.replace(new RegExp("(\\P{M})(\\p{M}+)", "gu"), (n, e, _) => {
+    if (/[\uFE0E\uFE0F\u20E3]/.test(_)) return n;
+    const i = e.normalize("NFKC");
+    return i === e || !new RegExp("^\\p{L}$", "u").test(i) ? n : (i + _).normalize("NFC")
+  })
+}
 var hb = new Set(["$$slots", "$$events", "$$legacy", "fill"]),
   qb = A('<svg><path d="M216.856 16.597A208.502 208.502 0 0 0 164.042 0c-2.275 4.113-4.933 9.645-6.766 14.046-19.692-2.961-39.203-2.961-58.533 0-1.832-4.4-4.55-9.933-6.846-14.046a207.809 207.809 0 0 0-52.855 16.638C5.618 67.147-3.443 116.4 1.087 164.956c22.169 16.555 43.653 26.612 64.775 33.193A161.094 161.094 0 0 0 79.735 175.3a136.413 136.413 0 0 1-21.846-10.632 108.636 108.636 0 0 0 5.356-4.237c42.122 19.702 87.89 19.702 129.51 0a131.66 131.66 0 0 0 5.355 4.237 136.07 136.07 0 0 1-21.886 10.653c4.006 8.02 8.638 15.67 13.873 22.848 21.142-6.58 42.646-16.637 64.815-33.213 5.316-56.288-9.08-105.09-38.056-148.36ZM85.474 135.095c-12.645 0-23.015-11.805-23.015-26.18s10.149-26.2 23.015-26.2c12.867 0 23.236 11.804 23.015 26.2.02 14.375-10.148 26.18-23.015 26.18Zm85.051 0c-12.645 0-23.014-11.805-23.014-26.18s10.148-26.2 23.014-26.2c12.867 0 23.236 11.804 23.015 26.2 0 14.375-10.148 26.18-23.015 26.18Z"></path></svg>');
 
-function ug(r, n) {
+function og(r, n) {
   let e = Pe(n, "fill", 3, "#5865F2"),
     _ = U(n, hb);
   var i = qb();
@@ -1586,15 +1594,15 @@ function ug(r, n) {
     preserveAspectRatio: "xMidYMid",
     ..._
   }));
-  var l = je(i);
-  xe(i), ke(() => Ce(l, "fill", e())), P(r, i)
+  var l = ke(i);
+  xe(i), je(() => Ce(l, "fill", e())), P(r, i)
 }
 var vb = new Set(["$$slots", "$$events", "$$legacy"]),
-  kb = A('<svg><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"></path></svg>');
+  jb = A('<svg><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"></path></svg>');
 
-function og(r, n) {
+function dg(r, n) {
   let e = U(n, vb);
-  var _ = kb();
+  var _ = jb();
   T(_, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -1603,5 +1611,5 @@ function og(r, n) {
   })), P(r, _)
 }
 export {
-  og as A, Ib as B, Ob as C, ag as D, Nb as E, ng as F, rg as G, eg as H, lg as I, cg as J, Xb as a, Jb as b, Yb as c, Vb as d, Zb as e, ug as f, Hb as g, Sb as h, Rb as i, z as j, Lb as k, ig as l, tg as m, sg as n, Kb as o, Wb as p, Qb as q, Mb as r, _g as s, Ub as t, $b as u, Db as v, Fb as w, Bb as x, Eb as y, Gb as z
+  dg as A, Bb as B, Nb as C, ag as D, Ob as E, Ib as F, ng as G, rg as H, eg as I, lg as J, cg as K, Xb as a, Jb as b, Yb as c, Vb as d, Zb as e, og as f, Hb as g, Sb as h, Rb as i, z as j, Lb as k, ug as l, ig as m, tg as n, sg as o, Kb as p, Wb as q, Mb as r, Qb as s, _g as t, Ub as u, $b as v, Fb as w, Db as x, Eb as y, Gb as z
 };
