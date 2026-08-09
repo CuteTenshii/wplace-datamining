@@ -14,7 +14,7 @@ import {
   p as Ce,
   d as C,
   r as z,
-  s as E,
+  s as F,
   t as oe,
   a as le,
   b as qe,
@@ -33,8 +33,8 @@ import {
   p as Oe
 } from "./DXFW01RN.js";
 const je = () => "Latest",
-  Ee = () => "Mais recente",
-  Fe = () => "最新",
+  Fe = () => "Mais recente",
+  Ee = () => "最新",
   Le = () => "Neueste",
   Be = () => "Último",
   De = () => "Derniers",
@@ -46,7 +46,7 @@ const je = () => "Latest",
   Ue = () => "Mới nhất",
   Ge = (n = {}, e = {}) => {
     const t = e.locale ?? me();
-    return t === "en" ? je() : t === "pt" ? Ee() : t === "ch" ? Fe() : t === "de" ? Le() : t === "es" ? Be() : t === "fr" ? De() : t === "it" ? He() : t === "jp" ? Ne() : t === "pl" ? We() : t === "ru" ? Ze() : t === "uk" ? Qe() : Ue()
+    return t === "en" ? je() : t === "pt" ? Fe() : t === "ch" ? Ee() : t === "de" ? Le() : t === "es" ? Be() : t === "fr" ? De() : t === "it" ? He() : t === "jp" ? Ne() : t === "pl" ? We() : t === "ru" ? Ze() : t === "uk" ? Qe() : Ue()
   },
   Ye = () => "Patch notes",
   Xe = () => "Notas de atualização",
@@ -60,7 +60,7 @@ const je = () => "Latest",
   at = () => "Примечания к обновлению",
   st = () => "Нотатки про оновлення",
   it = () => "Ghi chú cập nhật",
-  Bn = (n = {}, e = {}) => {
+  Hn = (n = {}, e = {}) => {
     const t = e.locale ?? me();
     return t === "en" ? Ye() : t === "pt" ? Xe() : t === "ch" ? Ke() : t === "de" ? Ve() : t === "es" ? Je() : t === "fr" ? et() : t === "it" ? tt() : t === "jp" ? nt() : t === "pl" ? rt() : t === "ru" ? at() : t === "uk" ? st() : it()
   };
@@ -239,8 +239,8 @@ var ot = (() => {
   Mt = m(It, "gu").replace(/notPunctSpace/g, ne).replace(/punctSpace/g, W).replace(/punct/g, P).getRegex(),
   Ot = m(/\\(punct)/, "gu").replace(/punct/g, P).getRegex(),
   jt = m(/^<(scheme:[^\s\x00-\x1f<>]*|email)>/).replace("scheme", /[a-zA-Z][a-zA-Z0-9+.-]{1,31}/).replace("email", /[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+(@)[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+(?![-_])/).getRegex(),
-  Et = m(ee).replace("(?:-->|$)", "-->").getRegex(),
-  Ft = m("^comment|^</[a-zA-Z][\\w:-]*\\s*>|^<[a-zA-Z][\\w-]*(?:attribute)*?\\s*/?>|^<\\?[\\s\\S]*?\\?>|^<![a-zA-Z]+\\s[\\s\\S]*?>|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>").replace("comment", Et).replace("attribute", /\s+[a-zA-Z:_][\w.:-]*(?:\s*=\s*"[^"]*"|\s*=\s*'[^']*'|\s*=\s*[^\s"'=<>`]+)?/).getRegex(),
+  Ft = m(ee).replace("(?:-->|$)", "-->").getRegex(),
+  Et = m("^comment|^</[a-zA-Z][\\w:-]*\\s*>|^<[a-zA-Z][\\w-]*(?:attribute)*?\\s*/?>|^<\\?[\\s\\S]*?\\?>|^<![a-zA-Z]+\\s[\\s\\S]*?>|^<!\\[CDATA\\[[\\s\\S]*?\\]\\]>").replace("comment", Ft).replace("attribute", /\s+[a-zA-Z:_][\w.:-]*(?:\s*=\s*"[^"]*"|\s*=\s*'[^']*'|\s*=\s*[^\s"'=<>`]+)?/).getRegex(),
   B = /(?:\[(?:\\[\s\S]|[^\[\]\\])*\]|\\[\s\S]|`+(?!`)[^`]*?`+(?!`)|``+(?=\])|[^\[\]\\`])*?/,
   Lt = m(/^!?\[(label)\]\(\s*(href)(?:(?:[ \t]+(?:\n[ \t]*)?|\n[ \t]*)(title))?\s*\)/).replace("label", B).replace("href", /<(?:\\.|[^\n<>\\])+>|[^ \t\n\x00-\x1f]*/).replace("title", /"(?:\\"?|[^"\\])*"|'(?:\\'?|[^'\\])*'|\((?:\\\)?|[^)\\])*\)/).getRegex(),
   Ae = m(/^!?\[(label)\]\[(ref)\]/).replace("label", B).replace("ref", J).getRegex(),
@@ -266,7 +266,7 @@ var ot = (() => {
     punctuation: vt,
     reflink: Ae,
     reflinkSearch: Bt,
-    tag: Ft,
+    tag: Et,
     text: xt,
     url: S
   },
@@ -291,7 +291,7 @@ var ot = (() => {
     br: m(ye).replace("{2,}", "*").getRegex(),
     text: m(U.text).replace("\\b_", "\\b_| {2,}\\n").replace(/\{2,\}/g, "*").getRegex()
   },
-  F = {
+  E = {
     normal: te,
     gfm: kt,
     pedantic: wt
@@ -939,14 +939,14 @@ ${h}` : h;
       };
       let t = {
         other: _,
-        block: F.normal,
+        block: E.normal,
         inline: q.normal
       };
-      this.options.pedantic ? (t.block = F.pedantic, t.inline = q.pedantic) : this.options.gfm && (t.block = F.gfm, this.options.breaks ? t.inline = q.breaks : t.inline = q.gfm), this.tokenizer.rules = t
+      this.options.pedantic ? (t.block = E.pedantic, t.inline = q.pedantic) : this.options.gfm && (t.block = E.gfm, this.options.breaks ? t.inline = q.breaks : t.inline = q.gfm), this.tokenizer.rules = t
     }
     static get rules() {
       return {
-        block: F,
+        block: E,
         inline: q
       }
     }
@@ -1792,7 +1792,7 @@ f.setOptions;
 f.use;
 f.walkTokens;
 f.parseInline;
-var Dn = f;
+var Nn = f;
 x.parse;
 y.lex;
 const Gt = `Welcome to WPlace, a platform to share and explore pixel art creations!
@@ -2207,7 +2207,17 @@ Alliances have been completely rebuilt into a full community system with public 
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  Pn = Object.assign({
+  Pn = `### Fixes
+
+- Fixed an issue where saved overlays could remain stuck loading and make the overlay menu unresponsive.
+`,
+  $n = Object.freeze(Object.defineProperty({
+    __proto__: null,
+    default: Pn
+  }, Symbol.toStringTag, {
+    value: "Module"
+  })),
+  Cn = Object.assign({
     "./markdown/1.0.0 - Welcome to WPlace!.md": Yt,
     "./markdown/1.1.0 - ✨ More Like You Update.md": Kt,
     "./markdown/1.1.1 - 🛠️ Quality & Cosmetics Improvements.md": Jt,
@@ -2224,9 +2234,10 @@ Alliances have been completely rebuilt into a full community system with public 
     "./markdown/1.4.4 - 🧭 Alliance Canvas Overlays.md": xn,
     "./markdown/1.4.5 - 🎨 Alliance Canvas Tools and Map Display.md": Sn,
     "./markdown/1.4.6 - 🛠️ Map Interaction Reliability.md": Rn,
-    "./markdown/1.4.7 - 🖼️ Alliance Overlays and Asset Studio.md": zn
+    "./markdown/1.4.7 - 🖼️ Alliance Overlays and Asset Studio.md": zn,
+    "./markdown/1.4.8 - 🛠️ Overlay Reliability.md": $n
   }),
-  Hn = Object.entries(Pn).map(([n, e]) => {
+  Wn = Object.entries(Cn).map(([n, e]) => {
     var i, o;
     const t = (i = n.split("/").at(-1)) == null ? void 0 : i.replace(".md", ""),
       a = (o = t == null ? void 0 : t.split("-")[0]) == null ? void 0 : o.trim(),
@@ -2239,22 +2250,22 @@ Alliances have been completely rebuilt into a full community system with public 
   }).sort((n, e) => n.version.localeCompare(e.version, void 0, {
     numeric: !0
   }));
-var $n = fe('<span class="text-primary inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-wide"><span class="relative flex size-1.5"><span class="bg-primary/60 absolute inline-flex size-full animate-ping rounded-full"></span> <span class="bg-primary relative inline-flex size-1.5 rounded-full"></span></span> </span>'),
-  Cn = fe('<article><div class="flex items-center gap-3"><span class="text-primary text-lg font-bold tracking-wide"> </span> <!></div> <h2 class="mt-1 text-[0.9375rem] leading-snug font-bold tracking-tight"> </h2> <div class="patch-content mt-4 svelte-1pfqn89"></div></article>');
+var qn = fe('<span class="text-primary inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-wide"><span class="relative flex size-1.5"><span class="bg-primary/60 absolute inline-flex size-full animate-ping rounded-full"></span> <span class="bg-primary relative inline-flex size-1.5 rounded-full"></span></span> </span>'),
+  In = fe('<article><div class="flex items-center gap-3"><span class="text-primary text-lg font-bold tracking-wide"> </span> <!></div> <h2 class="mt-1 text-[0.9375rem] leading-snug font-bold tracking-tight"> </h2> <div class="patch-content mt-4 svelte-1pfqn89"></div></article>');
 
-function Nn(n, e) {
+function Zn(n, e) {
   Ce(e, !0);
   let t = Oe(e, "latest", 3, !1);
-  var a = Cn(),
+  var a = In(),
     r = C(a),
     i = C(r),
     o = C(i);
   z(i);
-  var s = E(i, 2);
+  var s = F(i, 2);
   {
     var p = u => {
-      var c = $n(),
-        k = E(C(c));
+      var c = qn(),
+        k = F(C(c));
       z(c), oe(g => Q(k, ` ${g??""}`), [() => Ge()]), le(u, c)
     };
     Ie(s, u => {
@@ -2262,14 +2273,14 @@ function Nn(n, e) {
     })
   }
   z(r);
-  var l = E(r, 2),
+  var l = F(r, 2),
     h = C(l, !0);
   z(l);
-  var d = E(l, 2);
+  var d = F(l, 2);
   Me(d, () => e.patchNote.html, !0), z(d), z(a), oe(() => {
     Q(o, `v${e.patchNote.version??""}`), Q(h, e.patchNote.title)
   }), le(n, a), qe()
 }
 export {
-  Ut as D, Nn as P, Dn as W, Hn as a, Bn as p, H as y
+  Ut as D, Zn as P, Nn as W, Wn as a, Hn as p, H as y
 };
