@@ -1,59 +1,138 @@
-import {
-  g as l
-} from "./BhCkpOlh.js";
 import "./Bzak7iHL.js";
 import {
-  a,
-  k as o
+  l as J,
+  p as K,
+  b as L,
+  t as h,
+  i as j,
+  m as M,
+  h as H,
+  a as l,
+  d as r,
+  s as m,
+  c as v,
+  e as N,
+  r as o,
+  w as O,
+  f as Q
 } from "./DUZ_qUVk.js";
 import {
-  b as p
+  s as c
+} from "./DtUyTUmd.js";
+import {
+  s as R
+} from "./b7oAWk-Y.js";
+import {
+  i as g
+} from "./BLc2SwOK.js";
+import {
+  a as S
 } from "./M4i-R8Gk.js";
 import {
-  r as s
+  p as _
 } from "./DXFW01RN.js";
-const c = () => "Ban appeal",
-  u = () => "Revisão de banimento",
-  i = () => "封禁申诉",
-  v = () => "Bann-Einspruch",
-  _ = () => "Apelación de ban",
-  f = () => "Recours de bannissement",
-  m = () => "Ricorso contro il ban",
-  q = () => "BANの異議申立て",
-  b = () => "Odwołanie od bana",
-  h = () => "Апелляция на бан",
-  g = () => "Апеляція на бан",
-  T = () => "Kháng cáo lệnh cấm",
-  R = (n = {}, t = {}) => {
-    const r = t.locale ?? l();
-    return r === "en" ? c() : r === "pt" ? u() : r === "ch" ? i() : r === "de" ? v() : r === "es" ? _() : r === "fr" ? f() : r === "it" ? m() : r === "jp" ? q() : r === "pl" ? b() : r === "ru" ? h() : r === "uk" ? g() : T()
-  };
-var $ = new Set(["$$slots", "$$events", "$$legacy"]),
-  w = o('<svg><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"></path></svg>');
+import {
+  D as U
+} from "./DG57bZmM.js";
+import "./BhCkpOlh.js";
+import {
+  c as V
+} from "./D6_ahSxh.js";
+import {
+  c as W
+} from "./BZcJYfQJ.js";
+var X = v('<h3 class="text-xl font-bold"> </h3>'),
+  Y = v('<p class="text-base-content/80 mt-1 text-sm whitespace-pre-line"> </p>'),
+  Z = v('<span class="loading loading-spinner center-absolute absolute"></span>'),
+  $ = v('<div><p class="text-lg"> </p> <!> <!> <div class="mt-6 flex justify-end gap-3 pb-2"><form method="dialog"><button class="btn btn-ghost hover:bg-base-content/10"> </button></form> <button> <!></button></div></div>');
 
-function j(n, t) {
-  let r = s(t, $);
-  var e = w();
-  p(e, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...r
-  })), a(n, e)
+function ft(P, a) {
+  K(a, !0);
+  let p = _(a, "open", 15),
+    w = _(a, "type", 3, "confirmation"),
+    q = _(a, "buttonText", 19, () => W()),
+    d = N(!1);
+  U(P, {
+    dialogClass: "!bg-black/80",
+    modalBoxClass: "max-w-md max-sm:!w-11/12 max-sm:!h-auto max-sm:!max-w-md max-sm:!max-h-[85vh] max-sm:!rounded-xl",
+    hasCloseButton: !1,
+    isDynamicHeight: !0,
+    get open() {
+      return p()
+    },
+    set open(s) {
+      p(s)
+    },
+    header: s => {
+      var f = X(),
+        n = r(f, !0);
+      o(f), h(() => c(n, a.title)), l(s, f)
+    },
+    children: (s, f) => {
+      var n = $(),
+        u = r(n),
+        z = r(u, !0);
+      o(u);
+      var y = m(u, 2);
+      {
+        var A = t => {
+          var e = Y(),
+            x = r(e, !0);
+          o(e), h(() => c(x, a.subDescription)), l(t, e)
+        };
+        g(y, t => {
+          a.subDescription && t(A)
+        })
+      }
+      var C = m(y, 2);
+      {
+        var E = t => {
+          var e = O(),
+            x = Q(e);
+          R(x, () => a.children), l(t, e)
+        };
+        g(C, t => {
+          a.children && t(E)
+        })
+      }
+      var D = m(C, 2),
+        b = r(D),
+        k = r(b),
+        F = r(k, !0);
+      o(k), o(b);
+      var i = m(b, 2);
+      let B;
+      var T = r(i),
+        G = m(T);
+      {
+        var I = t => {
+          var e = Z();
+          l(t, e)
+        };
+        g(G, t => {
+          j(d) && t(I)
+        })
+      }
+      o(i), o(D), o(n), h(t => {
+        c(z, a.description), c(F, t), B = S(i, 1, "btn min-w-32 px-6", null, B, {
+          "btn-error": w() === "warning",
+          "btn-primary": w() === "confirmation"
+        }), i.disabled = j(d), c(T, `${q()??""} `)
+      }, [() => V()]), M("click", i, async () => {
+        try {
+          H(d, !0), p(await a.onConfirm())
+        } finally {
+          H(d, !1)
+        }
+      }), l(s, n)
+    },
+    $$slots: {
+      header: !0,
+      default: !0
+    }
+  }), L()
 }
-var d = new Set(["$$slots", "$$events", "$$legacy"]),
-  Z = o('<svg><path d="m336-280 144-144 144 144 56-56-144-144 144-144-56-56-144 144-144-144-56 56 144 144-144 144 56 56ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"></path></svg>');
-
-function A(n, t) {
-  let r = s(t, d);
-  var e = Z();
-  p(e, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...r
-  })), a(n, e)
-}
+J(["click"]);
 export {
-  A as C, j as T, R as b
+  ft as C
 };

@@ -1,38 +1,22 @@
 import {
-  g as t
+  g as o
 } from "./BhCkpOlh.js";
-const u = () => "Next",
-  o = () => "Próximo",
-  s = () => "下一张",
-  c = () => "Weiter",
-  i = () => "Siguiente",
-  _ = () => "Suivant",
-  l = () => "Successivo",
-  a = () => "次へ",
-  p = () => "Następny",
-  f = () => "Далее",
-  v = () => "Далі",
-  x = () => "Tiếp",
-  L = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? u() : r === "pt" ? o() : r === "ch" ? s() : r === "de" ? c() : r === "es" ? i() : r === "fr" ? _() : r === "it" ? l() : r === "jp" ? a() : r === "pl" ? p() : r === "ru" ? f() : r === "uk" ? v() : x()
-  },
-  d = () => "Previous",
-  k = () => "Anterior",
-  P = () => "上一张",
-  h = () => "Zurück",
-  j = () => "Anterior",
-  g = () => "Précédent",
-  m = () => "Precedente",
-  S = () => "前へ",
-  A = () => "Poprzedni",
-  N = () => "Назад",
-  T = () => "Назад",
-  y = () => "Trước",
-  W = (n = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? d() : r === "pt" ? k() : r === "ch" ? P() : r === "de" ? h() : r === "es" ? j() : r === "fr" ? g() : r === "it" ? m() : r === "jp" ? S() : r === "pl" ? A() : r === "ru" ? N() : r === "uk" ? T() : y()
+const r = () => "Not found",
+  u = () => "Não encontrado",
+  e = () => "未找到",
+  f = () => "Nicht gefunden",
+  _ = () => "No encontrado",
+  c = () => "Introuvable",
+  d = () => "Non trovato",
+  i = () => "見つかりません",
+  s = () => "Nie znaleziono",
+  a = () => "Не найдено",
+  l = () => "Не знайдено",
+  p = () => "Không tìm thấy",
+  g = (N = {}, t = {}) => {
+    const n = t.locale ?? o();
+    return n === "en" ? r() : n === "pt" ? u() : n === "ch" ? e() : n === "de" ? f() : n === "es" ? _() : n === "fr" ? c() : n === "it" ? d() : n === "jp" ? i() : n === "pl" ? s() : n === "ru" ? a() : n === "uk" ? l() : p()
   };
 export {
-  L as a, W as c
+  g as n
 };

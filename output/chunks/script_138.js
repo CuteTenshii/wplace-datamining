@@ -1,22 +1,22 @@
 import {
-  g as r
+  g as n
 } from "./BhCkpOlh.js";
-const n = () => "Tickets",
-  c = () => "Tickets",
-  i = () => "工单",
-  s = () => "Tickets",
-  u = () => "Tickets",
-  k = () => "Tickets",
-  o = () => "Ticket",
-  f = () => "チケット",
-  _ = () => "Tickety",
-  p = () => "Тикеты",
-  l = () => "Тікети",
-  T = () => "Phiếu",
-  d = (a = {}, e = {}) => {
-    const t = e.locale ?? r();
-    return t === "en" ? n() : t === "pt" ? c() : t === "ch" ? i() : t === "de" ? s() : t === "es" ? u() : t === "fr" ? k() : t === "it" ? o() : t === "jp" ? f() : t === "pl" ? _() : t === "ru" ? p() : t === "uk" ? l() : T()
+const t = () => "Store Manager",
+  a = () => "Gerente de Loja",
+  o = () => "店长",
+  s = () => "Filialleiter",
+  u = () => "Gerente de Tienda",
+  i = () => "Directeur de magasin",
+  _ = () => "Responsabile del negozio",
+  c = () => "店長",
+  g = () => "Kierownik sklepu",
+  m = () => "Менеджер магазина",
+  f = () => "Менеджер магазину",
+  l = () => "Quản lý cửa hàng",
+  k = (p = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? t() : r === "pt" ? a() : r === "ch" ? o() : r === "de" ? s() : r === "es" ? u() : r === "fr" ? i() : r === "it" ? _() : r === "jp" ? c() : r === "pl" ? g() : r === "ru" ? m() : r === "uk" ? f() : l()
   };
 export {
-  d as t
+  k as s
 };

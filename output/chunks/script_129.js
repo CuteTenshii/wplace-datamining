@@ -1,22 +1,22 @@
 import {
-  g as t
+  g as e
 } from "./BhCkpOlh.js";
-const u = () => "User ID",
-  n = () => "ID do usuário",
-  s = () => "用户ID",
-  i = () => "Benutzer-ID",
-  _ = () => "ID de usuario",
-  o = () => "ID utilisateur",
-  c = () => "ID dell'utente",
-  d = () => "ユーザーID",
-  f = () => "ID użytkownika",
-  D = () => "Идентификатор пользователя",
-  I = () => "ID користувача",
-  l = () => "ID người dùng",
-  g = (p = {}, e = {}) => {
-    const r = e.locale ?? t();
-    return r === "en" ? u() : r === "pt" ? n() : r === "ch" ? s() : r === "de" ? i() : r === "es" ? _() : r === "fr" ? o() : r === "it" ? c() : r === "jp" ? d() : r === "pl" ? f() : r === "ru" ? D() : r === "uk" ? I() : l()
+const t = () => "Alliances",
+  l = () => "Alianças",
+  a = () => "联盟",
+  s = () => "Allianzen",
+  i = () => "Alianzas",
+  c = () => "Alliances",
+  u = () => "Alleanze",
+  o = () => "アライアンス",
+  f = () => "Sojusze",
+  _ = () => "Альянсы",
+  p = () => "Альянси",
+  A = () => "Các liên minh",
+  j = (z = {}, r = {}) => {
+    const n = r.locale ?? e();
+    return n === "en" ? t() : n === "pt" ? l() : n === "ch" ? a() : n === "de" ? s() : n === "es" ? i() : n === "fr" ? c() : n === "it" ? u() : n === "jp" ? o() : n === "pl" ? f() : n === "ru" ? _() : n === "uk" ? p() : A()
   };
 export {
-  g as u
+  j as a
 };

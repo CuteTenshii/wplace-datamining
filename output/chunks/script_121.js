@@ -1,48 +1,22 @@
 import {
-  z as d,
-  aF as g,
-  y as c,
-  aG as l,
-  B as m,
-  aH as b,
-  i as p,
-  aI as v,
-  aJ as h
-} from "./DUZ_qUVk.js";
-
-function y(n = !1) {
-  const s = d,
-    e = s.l.u;
-  if (!e) return;
-  let f = () => v(s.s);
-  if (n) {
-    let a = 0,
-      t = {};
-    const _ = h(() => {
-      let i = !1;
-      const r = s.s;
-      for (const o in r) r[o] !== t[o] && (t[o] = r[o], i = !0);
-      return i && a++, a
-    });
-    f = () => p(_)
-  }
-  e.b.length && g(() => {
-    u(s, f), l(e.b)
-  }), c(() => {
-    const a = m(() => e.m.map(b));
-    return () => {
-      for (const t of a) typeof t == "function" && t()
-    }
-  }), e.a.length && c(() => {
-    u(s, f), l(e.a)
-  })
-}
-
-function u(n, s) {
-  if (n.l.s)
-    for (const e of n.l.s) p(e);
-  s()
-}
+  g as t
+} from "./BhCkpOlh.js";
+const n = () => "Search",
+  c = () => "Buscar",
+  s = () => "搜索",
+  u = () => "Suchen",
+  a = () => "Buscar",
+  o = () => "Rechercher",
+  h = () => "Cerca",
+  i = () => "検索",
+  f = () => "Szukaj",
+  _ = () => "Поиск",
+  p = () => "Пошук",
+  l = () => "Tìm kiếm",
+  j = (k = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? n() : r === "pt" ? c() : r === "ch" ? s() : r === "de" ? u() : r === "es" ? a() : r === "fr" ? o() : r === "it" ? h() : r === "jp" ? i() : r === "pl" ? f() : r === "ru" ? _() : r === "uk" ? p() : l()
+  };
 export {
-  y as i
+  j as s
 };
