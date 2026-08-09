@@ -2210,7 +2210,7 @@ Alliances have been completely rebuilt into a full community system with public 
   Pn = `### Fixes
 
 - Fixed an issue where saved overlays could remain stuck loading and make the overlay menu unresponsive.
-`,
+- Fixed an issue that prevented overlays with role-restricted audiences from being saved.`,
   $n = Object.freeze(Object.defineProperty({
     __proto__: null,
     default: Pn
