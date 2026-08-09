@@ -1,22 +1,22 @@
 import {
-  g as n
+  g as t
 } from "./BhCkpOlh.js";
-const t = () => "Leaderboard",
-  a = () => "Ranking",
-  o = () => "排行榜",
-  d = () => "Bestenliste",
-  u = () => "Clasificación",
-  s = () => "Classement",
-  l = () => "Classifica",
-  i = () => "ランキング",
-  c = () => "Ranking",
-  f = () => "Таблица лидеров",
-  b = () => "Таблиця лідерів",
-  _ = () => "Bảng xếp hạng",
-  k = (p = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? t() : r === "pt" ? a() : r === "ch" ? o() : r === "de" ? d() : r === "es" ? u() : r === "fr" ? s() : r === "it" ? l() : r === "jp" ? i() : r === "pl" ? c() : r === "ru" ? f() : r === "uk" ? b() : _()
+const n = () => "Search",
+  c = () => "Buscar",
+  s = () => "搜索",
+  u = () => "Suchen",
+  a = () => "Buscar",
+  o = () => "Rechercher",
+  h = () => "Cerca",
+  i = () => "検索",
+  f = () => "Szukaj",
+  _ = () => "Поиск",
+  p = () => "Пошук",
+  l = () => "Tìm kiếm",
+  j = (k = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? n() : r === "pt" ? c() : r === "ch" ? s() : r === "de" ? u() : r === "es" ? a() : r === "fr" ? o() : r === "it" ? h() : r === "jp" ? i() : r === "pl" ? f() : r === "ru" ? _() : r === "uk" ? p() : l()
   };
 export {
-  k as l
+  j as s
 };

@@ -1,22 +1,22 @@
 import {
-  g as u
+  g as t
 } from "./BhCkpOlh.js";
-const n = () => "Audit Logs",
-  o = () => "Logs de Auditoria",
-  i = () => "审计日志",
-  e = () => "Prüfprotokolle",
-  s = () => "Registros de auditoría",
-  a = () => "Journaux d’audit",
-  d = () => "Log di audit",
-  _ = () => "監査ログ",
-  l = () => "Dzienniki audytu",
-  c = () => "Журналы аудита",
-  g = () => "Журнали аудиту",
-  f = () => "Nhật ký kiểm tra",
-  L = (p = {}, r = {}) => {
-    const t = r.locale ?? u();
-    return t === "en" ? n() : t === "pt" ? o() : t === "ch" ? i() : t === "de" ? e() : t === "es" ? s() : t === "fr" ? a() : t === "it" ? d() : t === "jp" ? _() : t === "pl" ? l() : t === "ru" ? c() : t === "uk" ? g() : f()
+const n = () => "Appeals",
+  p = () => "Apelos",
+  s = () => "申诉",
+  a = () => "Einsprüche",
+  u = () => "Apelaciones",
+  o = () => "Recours",
+  c = () => "Ricorsi",
+  l = () => "異議申立て",
+  i = () => "Odwołania",
+  f = () => "Апелляции",
+  _ = () => "Апеляції",
+  h = () => "Các kháng cáo",
+  k = (d = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? n() : r === "pt" ? p() : r === "ch" ? s() : r === "de" ? a() : r === "es" ? u() : r === "fr" ? o() : r === "it" ? c() : r === "jp" ? l() : r === "pl" ? i() : r === "ru" ? f() : r === "uk" ? _() : h()
   };
 export {
-  L as a
+  k as a
 };

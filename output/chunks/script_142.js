@@ -1,22 +1,22 @@
 import {
-  g as n
+  g as r
 } from "./BhCkpOlh.js";
-const o = () => "Error loading",
-  t = () => "Erro ao carregar",
-  i = () => "加载出错",
-  a = () => "Fehler beim Laden",
-  u = () => "Error al cargar",
-  l = () => "Erreur lors du chargement",
-  _ = () => "Errore nel caricamento",
-  c = () => "読み込みエラー",
-  d = () => "Błąd ładowania",
-  s = () => "Ошибка загрузки",
-  g = () => "Помилка завантаження",
-  f = () => "Lỗi tải dữ liệu",
-  E = (p = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? o() : r === "pt" ? t() : r === "ch" ? i() : r === "de" ? a() : r === "es" ? u() : r === "fr" ? l() : r === "it" ? _() : r === "jp" ? c() : r === "pl" ? d() : r === "ru" ? s() : r === "uk" ? g() : f()
+const i = () => "Ticket corrections",
+  s = () => "Correções de tickets",
+  n = () => "工单更正",
+  c = () => "Ticket-Korrekturen",
+  _ = () => "Correcciones de tickets",
+  l = () => "Corrections de tickets",
+  o = () => "Correzioni ticket",
+  u = () => "チケット修正",
+  k = () => "Poprawki zgłoszeń",
+  a = () => "Исправления тикетов",
+  f = () => "Виправлення тікетів",
+  v = () => "Sửa ticket",
+  C = (p = {}, e = {}) => {
+    const t = e.locale ?? r();
+    return t === "en" ? i() : t === "pt" ? s() : t === "ch" ? n() : t === "de" ? c() : t === "es" ? _() : t === "fr" ? l() : t === "it" ? o() : t === "jp" ? u() : t === "pl" ? k() : t === "ru" ? a() : t === "uk" ? f() : v()
   };
 export {
-  E as e
+  C as t
 };
