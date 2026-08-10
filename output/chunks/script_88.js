@@ -1,57 +1,27 @@
-var k = Object.defineProperty;
-var w = t => {
-  throw TypeError(t)
-};
-var _ = (t, r, s) => r in t ? k(t, r, {
-  enumerable: !0,
-  configurable: !0,
-  writable: !0,
-  value: s
-}) : t[r] = s;
-var g = (t, r, s) => _(t, typeof r != "symbol" ? r + "" : r, s),
-  u = (t, r, s) => r.has(t) || w("Cannot " + s);
-var i = (t, r, s) => (u(t, r, "read from private field"), s ? s.call(t) : r.get(t)),
-  b = (t, r, s) => r.has(t) ? w("Cannot add the same private member more than once") : r instanceof WeakSet ? r.add(t) : r.set(t, s),
-  c = (t, r, s, e) => (u(t, r, "write to private field"), e ? e.call(t, s) : r.set(t, s), s),
-  p = (t, r, s) => (u(t, r, "access private method"), s);
+import "./Bzak7iHL.js";
 import {
-  T as z,
-  B as M
+  a as v,
+  k as e
 } from "./DUZ_qUVk.js";
-var o, a, v, h, x;
-const f = class f {
-  constructor(r) {
-    b(this, h);
-    b(this, o, new WeakMap);
-    b(this, a);
-    b(this, v);
-    c(this, v, r)
-  }
-  observe(r, s) {
-    var e = i(this, o).get(r) || new Set;
-    return e.add(s), i(this, o).set(r, e), p(this, h, x).call(this).observe(r, i(this, v)), () => {
-      var n = i(this, o).get(r);
-      n.delete(s), n.size === 0 && (i(this, o).delete(r), i(this, a).unobserve(r))
-    }
-  }
-};
-o = new WeakMap, a = new WeakMap, v = new WeakMap, h = new WeakSet, x = function() {
-  return i(this, a) ?? c(this, a, new ResizeObserver(r => {
-    for (var s of r) {
-      f.entries.set(s.target, s);
-      for (var e of i(this, o).get(s.target) || []) e(s)
-    }
-  }))
-}, g(f, "entries", new WeakMap);
-let d = f;
-var W = new d({
-  box: "border-box"
-});
+import {
+  b as a
+} from "./M4i-R8Gk.js";
+import {
+  r as p
+} from "./DXFW01RN.js";
+var q = new Set(["$$slots", "$$events", "$$legacy"]),
+  m = e('<svg><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"></path></svg>');
 
-function j(t, r, s) {
-  var e = W.observe(t, () => s(t[r]));
-  z(() => (M(() => s(t[r])), e))
+function n(r, o) {
+  let s = p(o, q);
+  var t = m();
+  a(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...s
+  })), v(r, t)
 }
 export {
-  j as b
+  n as L
 };

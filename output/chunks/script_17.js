@@ -5485,13 +5485,14 @@ function qI(r) {
     }
     async postCreateFrame(t) {
       const e = new FormData;
-      e.append("name", t.name), e.append("image", t.image), e.append("description", t.description), e.append("value", t.value.toString()), e.append("rarity", t.rarity), e.append("purchasable", t.purchasable.toString());
+      e.append("name", t.name), t.image && e.append("image", t.image), t.assetKey && e.append("assetKey", t.assetKey), e.append("description", t.description), e.append("value", t.value.toString()), e.append("rarity", t.rarity), e.append("purchasable", t.purchasable.toString()), t.sortOrder != null && e.append("sortOrder", t.sortOrder.toString()), e.append("allowedRoles", JSON.stringify(t.allowedRoles));
       const n = await this.request("/staff/store-manager/frames", {
         method: "POST",
         credentials: "include",
         body: e
       });
-      if (n.status !== i.OK) throw new l(o(), n.status)
+      if (n.status !== i.OK) throw new l(o(), n.status);
+      return n.json()
     }
     async postCreateFont(t) {
       const e = await this.request("/staff/store-manager/fonts", {
@@ -5499,13 +5500,80 @@ function qI(r) {
         credentials: "include",
         body: JSON.stringify(t)
       });
-      if (e.status !== i.OK) throw new l(o(), e.status)
+      if (e.status !== i.OK) throw new l(o(), e.status);
+      return e.json()
     }
     async postCreateStyle(t) {
       const e = await this.request("/staff/store-manager/styles", {
         method: "POST",
         credentials: "include",
         body: JSON.stringify(t)
+      });
+      if (e.status !== i.OK) throw new l(o(), e.status);
+      return e.json()
+    }
+    async getAdminCosmetics(t) {
+      const e = new URLSearchParams({
+        page: String(t.page),
+        pageSize: String(t.pageSize)
+      });
+      t.type && e.set("type", t.type), t.search && e.set("search", t.search), t.visibility && e.set("visibility", t.visibility);
+      const n = await this.request(`/staff/store-manager/cosmetics?${e.toString()}`, {
+        method: "GET",
+        credentials: "include"
+      });
+      if (n.status !== i.OK) throw new l(o(), n.status);
+      return n.json()
+    }
+    async putAdminCosmetic(t, e) {
+      const n = await this.request(`/staff/store-manager/cosmetics/${t}`, {
+        method: "PUT",
+        credentials: "include",
+        body: JSON.stringify(e)
+      });
+      if (n.status !== i.OK) throw new l(o(), n.status);
+      return n.json()
+    }
+    async deleteAdminCosmetic(t) {
+      const e = await this.request(`/staff/store-manager/cosmetics/${t}`, {
+        method: "DELETE",
+        credentials: "include"
+      });
+      if (e.status !== i.OK) throw new l(o(), e.status)
+    }
+    async getAdminBadges(t) {
+      const e = new URLSearchParams;
+      t && e.set("search", t);
+      const n = e.size ? `?${e.toString()}` : "",
+        a = await this.request(`/staff/store-manager/badges${n}`, {
+          method: "GET",
+          credentials: "include"
+        });
+      if (a.status !== i.OK) throw new l(o(), a.status);
+      return a.json()
+    }
+    async postAdminBadge(t) {
+      const e = await this.request("/staff/store-manager/badges", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify(t)
+      });
+      if (e.status !== i.OK) throw new l(o(), e.status);
+      return e.json()
+    }
+    async putAdminBadge(t, e) {
+      const n = await this.request(`/staff/store-manager/badges/${t}`, {
+        method: "PUT",
+        credentials: "include",
+        body: JSON.stringify(e)
+      });
+      if (n.status !== i.OK) throw new l(o(), n.status);
+      return n.json()
+    }
+    async deleteAdminBadge(t) {
+      const e = await this.request(`/staff/store-manager/badges/${t}`, {
+        method: "DELETE",
+        credentials: "include"
       });
       if (e.status !== i.OK) throw new l(o(), e.status)
     }
@@ -7730,5 +7798,5 @@ class _R {
 }
 const F = new uR;
 export {
-  qR as $, Wa as A, xa as B, ff as C, It as D, et as E, wI as F, kR as G, Bv as H, P as I, MR as J, CR as K, AR as L, vR as M, R as N, wR as O, ER as P, gR as Q, yR as R, TR as S, K as T, nn as U, Im as V, bR as W, Kt as X, $t as Y, fb as Z, qb as _, NR as a, Tc as a0, gI as a1, UR as a2, LR as a3, PR as a4, jR as a5, ae as a6, Mk as a7, l as a8, Tq as a9, sO as aa, _E as ab, At as ac, SR as ad, KI as ae, Gt as af, Uw as ag, Cg as ah, IR as ai, DR as aj, xR as ak, Gl as al, lt as am, $ as b, OR as c, $e as d, i as e, o as f, Ze as g, pt as h, F as i, zt as j, ee as k, zR as l, xu as m, Xf as n, Eu as o, Pl as p, vl as q, am as r, RR as s, WI as t, Y as u, se as v, ol as w, Wu as x, fo as y, Zs as z
+  qR as $, Wa as A, xa as B, ff as C, It as D, et as E, wI as F, kR as G, Bv as H, P as I, MR as J, CR as K, AR as L, vR as M, R as N, wR as O, ER as P, gR as Q, yR as R, TR as S, K as T, nn as U, $t as V, bR as W, Kt as X, Im as Y, fb as Z, qb as _, NR as a, Tc as a0, gI as a1, UR as a2, LR as a3, PR as a4, jR as a5, ae as a6, Mk as a7, l as a8, Tq as a9, sO as aa, _E as ab, At as ac, SR as ad, KI as ae, Gt as af, Uw as ag, Cg as ah, IR as ai, DR as aj, xR as ak, Gl as al, lt as am, $ as b, OR as c, $e as d, i as e, o as f, Ze as g, pt as h, F as i, zt as j, ee as k, zR as l, xu as m, Xf as n, Eu as o, Pl as p, vl as q, am as r, RR as s, WI as t, Y as u, se as v, ol as w, Wu as x, fo as y, Zs as z
 };

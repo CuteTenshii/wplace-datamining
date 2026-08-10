@@ -1,70 +1,27 @@
+import "./Bzak7iHL.js";
 import {
-  g as t
-} from "./BhCkpOlh.js";
-const a = () => "Load more",
-  s = () => "Carregar mais",
-  l = () => "加载更多",
-  o = () => "Mehr laden",
-  u = () => "Cargar más",
-  _ = () => "Charger plus",
-  c = () => "Carica altro",
-  i = () => "さらに読み込む",
-  p = () => "Wczytaj więcej",
-  d = () => "Загрузить ещё",
-  f = () => "Завантажити ще",
-  m = () => "Tải thêm",
-  $ = (n = {}, r = {}) => {
-    const e = r.locale ?? t();
-    return e === "en" ? a() : e === "pt" ? s() : e === "ch" ? l() : e === "de" ? o() : e === "es" ? u() : e === "fr" ? _() : e === "it" ? c() : e === "jp" ? i() : e === "pl" ? p() : e === "ru" ? d() : e === "uk" ? f() : m()
-  },
-  h = () => "Player",
-  y = () => "Jogador",
-  g = () => "玩家",
-  j = () => "Spieler",
-  k = () => "Jugador",
-  v = () => "Joueur",
-  N = () => "Giocatore",
-  x = () => "プレイヤー",
-  C = () => "Gracz",
-  z = () => "Игрок",
-  E = () => "Гравець",
-  G = () => "Người chơi",
-  ee = (n = {}, r = {}) => {
-    const e = r.locale ?? t();
-    return e === "en" ? h() : e === "pt" ? y() : e === "ch" ? g() : e === "de" ? j() : e === "es" ? k() : e === "fr" ? v() : e === "it" ? N() : e === "jp" ? x() : e === "pl" ? C() : e === "ru" ? z() : e === "uk" ? E() : G()
-  },
-  J = () => "Deleted",
-  S = () => "Excluido",
-  w = () => "已删除",
-  K = () => "Gelöscht",
-  L = () => "Eliminado",
-  b = () => "Supprimé",
-  A = () => "Eliminato",
-  D = () => "削除済み",
-  F = () => "Usunięte",
-  M = () => "Удалено",
-  P = () => "Видалено",
-  T = () => "Đã xóa",
-  re = (n = {}, r = {}) => {
-    const e = r.locale ?? t();
-    return e === "en" ? J() : e === "pt" ? S() : e === "ch" ? w() : e === "de" ? K() : e === "es" ? L() : e === "fr" ? b() : e === "it" ? A() : e === "jp" ? D() : e === "pl" ? F() : e === "ru" ? M() : e === "uk" ? P() : T()
-  },
-  U = () => "No players match the current filters.",
-  W = () => "Nenhum jogador corresponde aos filtros atuais.",
-  q = () => "没有玩家符合当前筛选条件。",
-  B = () => "Keine Spieler entsprechen den aktuellen Filtern.",
-  H = () => "Ningún jugador coincide con los filtros actuales.",
-  I = () => "Aucun joueur ne correspond aux filtres actuels.",
-  O = () => "Nessun giocatore corrisponde ai filtri attuali.",
-  Q = () => "現在のフィルターに一致するプレイヤーはいません。",
-  R = () => "Żaden gracz nie pasuje do aktualnych filtrów.",
-  V = () => "Нет игроков, соответствующих текущим фильтрам.",
-  X = () => "Жоден гравець не відповідає поточним фільтрам.",
-  Y = () => "Không có người chơi nào khớp với bộ lọc hiện tại.",
-  te = (n = {}, r = {}) => {
-    const e = r.locale ?? t();
-    return e === "en" ? U() : e === "pt" ? W() : e === "ch" ? q() : e === "de" ? B() : e === "es" ? H() : e === "fr" ? I() : e === "it" ? O() : e === "jp" ? Q() : e === "pl" ? R() : e === "ru" ? V() : e === "uk" ? X() : Y()
-  };
+  a as s,
+  k as a
+} from "./DUZ_qUVk.js";
+import {
+  b as p
+} from "./M4i-R8Gk.js";
+import {
+  r as v
+} from "./DXFW01RN.js";
+var l = new Set(["$$slots", "$$events", "$$legacy"]),
+  m = a('<svg><path d="M280-200v-80h284q63 0 109.5-40T720-420q0-60-46.5-100T564-560H312l104 104-56 56-200-200 200-200 56 56-104 104h252q97 0 166.5 63T800-420q0 94-69.5 157T564-200H280Z"></path></svg>');
+
+function c(t, e) {
+  let o = v(e, l);
+  var r = m();
+  p(r, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...o
+  })), s(t, r)
+}
 export {
-  re as a, $ as l, ee as p, te as s
+  c as R
 };

@@ -1,22 +1,27 @@
+import "./Bzak7iHL.js";
 import {
-  g as e
-} from "./BhCkpOlh.js";
-const c = () => "Cancel",
-  t = () => "Cancelar",
-  u = () => "取消",
-  l = () => "Abbrechen",
-  a = () => "Cancelar",
-  o = () => "Annuler",
-  s = () => "Annulla",
-  i = () => "キャンセル",
-  f = () => "Anuluj",
-  _ = () => "Отмена",
-  p = () => "Скасувати",
-  A = () => "Hủy",
-  C = (h = {}, r = {}) => {
-    const n = r.locale ?? e();
-    return n === "en" ? c() : n === "pt" ? t() : n === "ch" ? u() : n === "de" ? l() : n === "es" ? a() : n === "fr" ? o() : n === "it" ? s() : n === "jp" ? i() : n === "pl" ? f() : n === "ru" ? _() : n === "uk" ? p() : A()
-  };
+  a as e,
+  k as a
+} from "./DUZ_qUVk.js";
+import {
+  b as m
+} from "./M4i-R8Gk.js";
+import {
+  r as p
+} from "./DXFW01RN.js";
+var v = new Set(["$$slots", "$$events", "$$legacy"]),
+  n = a('<svg><path d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"></path></svg>');
+
+function c(t, o) {
+  let s = p(o, v);
+  var r = n();
+  m(r, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...s
+  })), e(t, r)
+}
 export {
-  C as c
+  c as W
 };

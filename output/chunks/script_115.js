@@ -1,27 +1,22 @@
-import "./Bzak7iHL.js";
 import {
-  a as e,
-  k as q
-} from "./DUZ_qUVk.js";
-import {
-  b as a
-} from "./M4i-R8Gk.js";
-import {
-  r as m
-} from "./DXFW01RN.js";
-var p = new Set(["$$slots", "$$events", "$$legacy"]),
-  v = q('<svg><path d="M480-440q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0-80q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0 440q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-400Zm0-315-240 90v189q0 54 15 105t41 96q42-21 88-33t96-12q50 0 96 12t88 33q26-45 41-96t15-105v-189l-240-90Zm0 515q-36 0-70 8t-65 22q29 30 63 52t72 34q38-12 72-34t63-52q-31-14-65-22t-70-8Z"></path></svg>');
-
-function g(r, o) {
-  let s = m(o, p);
-  var t = v();
-  a(t, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...s
-  })), e(r, t)
-}
+  g as t
+} from "./BhCkpOlh.js";
+const u = () => "Unban",
+  e = () => "Desbanir",
+  a = () => "解封",
+  s = () => "Entbannen",
+  b = () => "Desbanear",
+  c = () => "Débannir",
+  o = () => "Unban",
+  i = () => "BANを解除",
+  f = () => "Odbanuj",
+  _ = () => "Разбанить",
+  p = () => "Розбанити",
+  l = () => "Gỡ cấm",
+  m = (d = {}, r = {}) => {
+    const n = r.locale ?? t();
+    return n === "en" ? u() : n === "pt" ? e() : n === "ch" ? a() : n === "de" ? s() : n === "es" ? b() : n === "fr" ? c() : n === "it" ? o() : n === "jp" ? i() : n === "pl" ? f() : n === "ru" ? _() : n === "uk" ? p() : l()
+  };
 export {
-  g as S
+  m as u
 };

@@ -1,27 +1,27 @@
 import "./Bzak7iHL.js";
 import {
-  a as v,
-  k as e
+  a as e,
+  k as v
 } from "./DUZ_qUVk.js";
 import {
-  b as a
+  b as p
 } from "./M4i-R8Gk.js";
 import {
-  r as p
+  r as a
 } from "./DXFW01RN.js";
 var q = new Set(["$$slots", "$$events", "$$legacy"]),
-  m = e('<svg><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"></path></svg>');
+  m = v('<svg><path d="M240-640h360v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85h-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640Zm0 480h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM240-160v-400 400Z"></path></svg>');
 
-function n(r, o) {
-  let s = p(o, q);
+function l(r, o) {
+  let s = a(o, q);
   var t = m();
-  a(t, () => ({
+  p(t, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
     ...s
-  })), v(r, t)
+  })), e(r, t)
 }
 export {
-  n as L
+  l as L
 };

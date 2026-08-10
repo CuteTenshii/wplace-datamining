@@ -7,20 +7,20 @@ import {
   b as p
 } from "./M4i-R8Gk.js";
 import {
-  r as l
+  r as m
 } from "./DXFW01RN.js";
-var v = new Set(["$$slots", "$$events", "$$legacy"]),
-  f = a('<svg><path d="M480-120 300-300l58-58 122 122 122-122 58 58-180 180ZM358-598l-58-58 180-180 180 180-58 58-122-122-122 122Z"></path></svg>');
+var l = new Set(["$$slots", "$$events", "$$legacy"]),
+  v = a('<svg><path d="m356-160-56-56 180-180 180 180-56 56-124-124-124 124Zm124-404L300-744l56-56 124 124 124-124 56 56-180 180Z"></path></svg>');
 
-function c(o, t) {
-  let s = l(t, v);
-  var r = f();
+function c(t, o) {
+  let s = m(o, l);
+  var r = v();
   p(r, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
     ...s
-  })), e(o, r)
+  })), e(t, r)
 }
 export {
   c as U

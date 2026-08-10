@@ -60,7 +60,7 @@ const je = () => "Latest",
   at = () => "Примечания к обновлению",
   st = () => "Нотатки про оновлення",
   it = () => "Ghi chú cập nhật",
-  Hn = (n = {}, e = {}) => {
+  Wn = (n = {}, e = {}) => {
     const t = e.locale ?? me();
     return t === "en" ? Ye() : t === "pt" ? Xe() : t === "ch" ? Ke() : t === "de" ? Ve() : t === "es" ? Je() : t === "fr" ? et() : t === "it" ? tt() : t === "jp" ? nt() : t === "pl" ? rt() : t === "ru" ? at() : t === "uk" ? st() : it()
   };
@@ -1792,7 +1792,7 @@ f.setOptions;
 f.use;
 f.walkTokens;
 f.parseInline;
-var Nn = f;
+var Zn = f;
 x.parse;
 y.lex;
 const Gt = `Welcome to WPlace, a platform to share and explore pixel art creations!
@@ -2219,7 +2219,22 @@ Alliances have been completely rebuilt into a full community system with public 
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  Cn = Object.assign({
+  Cn = `### Improvements
+
+- Alliance Coin balances, prices, and notifications now use a dedicated coin icon, and Droplets have a refreshed icon.
+
+### Fixes
+
+- Fixed an issue where personal overlays could appear duplicated, rotated, or show incorrect pixels on some mobile devices.
+- Fixed an issue where reopened alliance picture or banner drafts could fail to finish.
+`,
+  qn = Object.freeze(Object.defineProperty({
+    __proto__: null,
+    default: Cn
+  }, Symbol.toStringTag, {
+    value: "Module"
+  })),
+  In = Object.assign({
     "./markdown/1.0.0 - Welcome to WPlace!.md": Yt,
     "./markdown/1.1.0 - ✨ More Like You Update.md": Kt,
     "./markdown/1.1.1 - 🛠️ Quality & Cosmetics Improvements.md": Jt,
@@ -2237,9 +2252,10 @@ Alliances have been completely rebuilt into a full community system with public 
     "./markdown/1.4.5 - 🎨 Alliance Canvas Tools and Map Display.md": Sn,
     "./markdown/1.4.6 - 🛠️ Map Interaction Reliability.md": Rn,
     "./markdown/1.4.7 - 🖼️ Alliance Overlays and Asset Studio.md": zn,
-    "./markdown/1.4.8 - 🛠️ Overlay Reliability.md": $n
+    "./markdown/1.4.8 - 🛠️ Overlay Reliability.md": $n,
+    "./markdown/1.4.9 - 🛍️ Mobile Overlay Fixes.md": qn
   }),
-  Wn = Object.entries(Cn).map(([n, e]) => {
+  Qn = Object.entries(In).map(([n, e]) => {
     var i, o;
     const t = (i = n.split("/").at(-1)) == null ? void 0 : i.replace(".md", ""),
       a = (o = t == null ? void 0 : t.split("-")[0]) == null ? void 0 : o.trim(),
@@ -2252,13 +2268,13 @@ Alliances have been completely rebuilt into a full community system with public 
   }).sort((n, e) => n.version.localeCompare(e.version, void 0, {
     numeric: !0
   }));
-var qn = fe('<span class="text-primary inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-wide"><span class="relative flex size-1.5"><span class="bg-primary/60 absolute inline-flex size-full animate-ping rounded-full"></span> <span class="bg-primary relative inline-flex size-1.5 rounded-full"></span></span> </span>'),
-  In = fe('<article><div class="flex items-center gap-3"><span class="text-primary text-lg font-bold tracking-wide"> </span> <!></div> <h2 class="mt-1 text-[0.9375rem] leading-snug font-bold tracking-tight"> </h2> <div class="patch-content mt-4 svelte-1pfqn89"></div></article>');
+var Mn = fe('<span class="text-primary inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-wide"><span class="relative flex size-1.5"><span class="bg-primary/60 absolute inline-flex size-full animate-ping rounded-full"></span> <span class="bg-primary relative inline-flex size-1.5 rounded-full"></span></span> </span>'),
+  On = fe('<article><div class="flex items-center gap-3"><span class="text-primary text-lg font-bold tracking-wide"> </span> <!></div> <h2 class="mt-1 text-[0.9375rem] leading-snug font-bold tracking-tight"> </h2> <div class="patch-content mt-4 svelte-1pfqn89"></div></article>');
 
-function Zn(n, e) {
+function Un(n, e) {
   Ce(e, !0);
   let t = Oe(e, "latest", 3, !1);
-  var a = In(),
+  var a = On(),
     r = C(a),
     i = C(r),
     o = C(i);
@@ -2266,7 +2282,7 @@ function Zn(n, e) {
   var s = F(i, 2);
   {
     var p = u => {
-      var c = qn(),
+      var c = Mn(),
         k = F(C(c));
       z(c), oe(g => Q(k, ` ${g??""}`), [() => Ge()]), le(u, c)
     };
@@ -2284,5 +2300,5 @@ function Zn(n, e) {
   }), le(n, a), qe()
 }
 export {
-  Ut as D, Zn as P, Nn as W, Wn as a, Hn as p, H as y
+  Ut as D, Un as P, Zn as W, Qn as a, Wn as p, H as y
 };

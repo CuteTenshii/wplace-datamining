@@ -1,182 +1,138 @@
+import "./Bzak7iHL.js";
 import {
-  g as n
-} from "./BhCkpOlh.js";
-const a = () => "View on map",
-  _ = () => "Ver no mapa",
-  i = () => "在地图上查看",
-  c = () => "Auf der Karte anzeigen",
-  l = () => "Ver en el mapa",
-  o = () => "Voir sur la carte",
-  u = () => "Visualizza sulla mappa",
-  s = () => "地図で表示",
-  f = () => "Zobacz na mapie",
-  p = () => "Посмотреть на карте",
-  d = () => "Переглянути на карті",
-  g = () => "Xem trên bản đồ",
-  Ee = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? a() : r === "pt" ? _() : r === "ch" ? i() : r === "de" ? c() : r === "es" ? l() : r === "fr" ? o() : r === "it" ? u() : r === "jp" ? s() : r === "pl" ? f() : r === "ru" ? p() : r === "uk" ? d() : g()
-  },
-  h = () => "The whole alliance",
-  v = () => "A aliança inteira",
-  m = () => "整个联盟",
-  b = () => "Die gesamte Allianz",
-  $ = () => "Toda la alianza",
-  q = () => "Toute l'alliance",
-  w = () => "L'intera alleanza",
-  j = () => "アライアンス全体",
-  k = () => "Cały sojusz",
-  z = () => "Весь альянс",
-  B = () => "Весь альянс",
-  V = () => "Toàn bộ liên minh",
-  Ce = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? h() : r === "pt" ? v() : r === "ch" ? m() : r === "de" ? b() : r === "es" ? $() : r === "fr" ? q() : r === "it" ? w() : r === "jp" ? j() : r === "pl" ? k() : r === "ru" ? z() : r === "uk" ? B() : V()
-  },
-  P = e => `Draft #${e.id}`,
-  E = e => `Rascunho #${e.id}`,
-  C = e => `草稿 #${e.id}`,
-  L = e => `Entwurf #${e.id}`,
-  S = e => `Borrador #${e.id}`,
-  y = e => `Brouillon #${e.id}`,
-  H = e => `Bozza #${e.id}`,
-  T = e => `下書き #${e.id}`,
-  A = e => `Szkic #${e.id}`,
-  R = e => `Черновик #${e.id}`,
-  D = e => `Чернетка #${e.id}`,
-  F = e => `Bản nháp #${e.id}`,
-  Le = (e, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? P(e) : r === "pt" ? E(e) : r === "ch" ? C(e) : r === "de" ? L(e) : r === "es" ? S(e) : r === "fr" ? y(e) : r === "it" ? H(e) : r === "jp" ? T(e) : r === "pl" ? A(e) : r === "ru" ? R(e) : r === "uk" ? D(e) : F(e)
-  },
-  I = e => `Event #${e.id}`,
-  W = e => `Evento #${e.id}`,
-  Z = e => `事件 #${e.id}`,
-  x = e => `Event #${e.id}`,
-  K = e => `Evento #${e.id}`,
-  U = e => `Événement #${e.id}`,
-  X = e => `Evento #${e.id}`,
-  G = e => `イベント #${e.id}`,
-  J = e => `Wydarzenie #${e.id}`,
-  M = e => `Событие #${e.id}`,
-  N = e => `Подія #${e.id}`,
-  O = e => `Sự kiện #${e.id}`,
-  Se = (e, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? I(e) : r === "pt" ? W(e) : r === "ch" ? Z(e) : r === "de" ? x(e) : r === "es" ? K(e) : r === "fr" ? U(e) : r === "it" ? X(e) : r === "jp" ? G(e) : r === "pl" ? J(e) : r === "ru" ? M(e) : r === "uk" ? N(e) : O(e)
-  },
-  Q = e => `Version #${e.id}`,
-  Y = e => `Versão #${e.id}`,
-  rr = e => `版本 #${e.id}`,
-  er = e => `Version #${e.id}`,
-  tr = e => `Versión #${e.id}`,
-  nr = e => `Version #${e.id}`,
-  ar = e => `Versione #${e.id}`,
-  _r = e => `バージョン #${e.id}`,
-  ir = e => `Wersja #${e.id}`,
-  cr = e => `Версия #${e.id}`,
-  lr = e => `Версія #${e.id}`,
-  or = e => `Phiên bản #${e.id}`,
-  ye = (e, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Q(e) : r === "pt" ? Y(e) : r === "ch" ? rr(e) : r === "de" ? er(e) : r === "es" ? tr(e) : r === "fr" ? nr(e) : r === "it" ? ar(e) : r === "jp" ? _r(e) : r === "pl" ? ir(e) : r === "ru" ? cr(e) : r === "uk" ? lr(e) : or(e)
-  },
-  ur = () => "Profile picture",
-  sr = () => "Foto do perfil",
-  fr = () => "头像",
-  pr = () => "Profilbild",
-  dr = () => "Foto de perfil",
-  gr = () => "Image de profil",
-  hr = () => "Immagine del profilo",
-  vr = () => "プロフィール画像",
-  mr = () => "Zdjęcie profilowe",
-  br = () => "Изображение профиля",
-  $r = () => "Зображення профілю",
-  qr = () => "Ảnh đại diện",
-  He = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? ur() : r === "pt" ? sr() : r === "ch" ? fr() : r === "de" ? pr() : r === "es" ? dr() : r === "fr" ? gr() : r === "it" ? hr() : r === "jp" ? vr() : r === "pl" ? mr() : r === "ru" ? br() : r === "uk" ? $r() : qr()
-  },
-  wr = () => "Profile banner",
-  jr = () => "Banner do perfil",
-  kr = () => "横幅",
-  zr = () => "Profilbanner",
-  Br = () => "Banner del perfil",
-  Vr = () => "Bannière de profil",
-  Pr = () => "Banner del profilo",
-  Er = () => "プロフィールバナー",
-  Cr = () => "Baner profilu",
-  Lr = () => "Баннер профиля",
-  Sr = () => "Банер профілю",
-  yr = () => "Ảnh bìa",
-  Te = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? wr() : r === "pt" ? jr() : r === "ch" ? kr() : r === "de" ? zr() : r === "es" ? Br() : r === "fr" ? Vr() : r === "it" ? Pr() : r === "jp" ? Er() : r === "pl" ? Cr() : r === "ru" ? Lr() : r === "uk" ? Sr() : yr()
-  },
-  Hr = () => "Picture draft",
-  Tr = () => "Rascunho da foto",
-  Ar = () => "头像草稿",
-  Rr = () => "Bildentwurf",
-  Dr = () => "Borrador de la foto",
-  Fr = () => "Brouillon d'image",
-  Ir = () => "Bozza dell'immagine",
-  Wr = () => "画像の下書き",
-  Zr = () => "Szkic zdjęcia",
-  xr = () => "Черновик изображения",
-  Kr = () => "Чернетка зображення",
-  Ur = () => "Bản nháp ảnh đại diện",
-  Ae = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Hr() : r === "pt" ? Tr() : r === "ch" ? Ar() : r === "de" ? Rr() : r === "es" ? Dr() : r === "fr" ? Fr() : r === "it" ? Ir() : r === "jp" ? Wr() : r === "pl" ? Zr() : r === "ru" ? xr() : r === "uk" ? Kr() : Ur()
-  },
-  Xr = () => "Banner draft",
-  Gr = () => "Rascunho do banner",
-  Jr = () => "横幅草稿",
-  Mr = () => "Bannerentwurf",
-  Nr = () => "Borrador del banner",
-  Or = () => "Brouillon de bannière",
-  Qr = () => "Bozza del banner",
-  Yr = () => "バナーの下書き",
-  re = () => "Szkic banera",
-  ee = () => "Черновик баннера",
-  te = () => "Чернетка банера",
-  ne = () => "Bản nháp ảnh bìa",
-  Re = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? Xr() : r === "pt" ? Gr() : r === "ch" ? Jr() : r === "de" ? Mr() : r === "es" ? Nr() : r === "fr" ? Or() : r === "it" ? Qr() : r === "jp" ? Yr() : r === "pl" ? re() : r === "ru" ? ee() : r === "uk" ? te() : ne()
-  },
-  ae = () => "Headquarters canvas",
-  _e = () => "Canvas da sede",
-  ie = () => "总部画布",
-  ce = () => "Hauptquartier-Canvas",
-  le = () => "Lienzo del cuartel general",
-  oe = () => "Canvas du quartier général",
-  ue = () => "Canvas del quartier generale",
-  se = () => "拠点のキャンバス",
-  fe = () => "Płótno siedziby",
-  pe = () => "Холст штаб-квартиры",
-  de = () => "Полотно штаб-квартири",
-  ge = () => "Bảng vẽ trụ sở",
-  De = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? ae() : r === "pt" ? _e() : r === "ch" ? ie() : r === "de" ? ce() : r === "es" ? le() : r === "fr" ? oe() : r === "it" ? ue() : r === "jp" ? se() : r === "pl" ? fe() : r === "ru" ? pe() : r === "uk" ? de() : ge()
-  },
-  he = () => "Headquarters location",
-  ve = () => "Localização da sede",
-  me = () => "总部位置",
-  be = () => "Standort des Hauptquartiers",
-  $e = () => "Ubicación del cuartel general",
-  qe = () => "Emplacement du quartier général",
-  we = () => "Posizione del quartier generale",
-  je = () => "拠点の場所",
-  ke = () => "Lokalizacja siedziby",
-  ze = () => "Расположение штаб-квартиры",
-  Be = () => "Розташування штаб-квартири",
-  Ve = () => "Vị trí trụ sở",
-  Fe = (e = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? he() : r === "pt" ? ve() : r === "ch" ? me() : r === "de" ? be() : r === "es" ? $e() : r === "fr" ? qe() : r === "it" ? we() : r === "jp" ? je() : r === "pl" ? ke() : r === "ru" ? ze() : r === "uk" ? Be() : Ve()
-  };
+  l as J,
+  p as K,
+  b as L,
+  t as h,
+  i as j,
+  m as M,
+  h as H,
+  a as l,
+  d as r,
+  s as m,
+  c as v,
+  e as N,
+  r as o,
+  w as O,
+  f as Q
+} from "./DUZ_qUVk.js";
+import {
+  s as c
+} from "./DtUyTUmd.js";
+import {
+  s as R
+} from "./b7oAWk-Y.js";
+import {
+  i as g
+} from "./BLc2SwOK.js";
+import {
+  a as S
+} from "./M4i-R8Gk.js";
+import {
+  p as _
+} from "./DXFW01RN.js";
+import {
+  D as U
+} from "./DBc7Cl6B.js";
+import "./BhCkpOlh.js";
+import {
+  c as V
+} from "./D6_ahSxh.js";
+import {
+  c as W
+} from "./BZcJYfQJ.js";
+var X = v('<h3 class="text-xl font-bold"> </h3>'),
+  Y = v('<p class="text-base-content/80 mt-1 text-sm whitespace-pre-line"> </p>'),
+  Z = v('<span class="loading loading-spinner center-absolute absolute"></span>'),
+  $ = v('<div><p class="text-lg"> </p> <!> <!> <div class="mt-6 flex justify-end gap-3 pb-2"><form method="dialog"><button class="btn btn-ghost hover:bg-base-content/10"> </button></form> <button> <!></button></div></div>');
+
+function ft(P, a) {
+  K(a, !0);
+  let p = _(a, "open", 15),
+    w = _(a, "type", 3, "confirmation"),
+    q = _(a, "buttonText", 19, () => W()),
+    d = N(!1);
+  U(P, {
+    dialogClass: "!bg-black/80",
+    modalBoxClass: "max-w-md max-sm:!w-11/12 max-sm:!h-auto max-sm:!max-w-md max-sm:!max-h-[85vh] max-sm:!rounded-xl",
+    hasCloseButton: !1,
+    isDynamicHeight: !0,
+    get open() {
+      return p()
+    },
+    set open(s) {
+      p(s)
+    },
+    header: s => {
+      var f = X(),
+        n = r(f, !0);
+      o(f), h(() => c(n, a.title)), l(s, f)
+    },
+    children: (s, f) => {
+      var n = $(),
+        u = r(n),
+        z = r(u, !0);
+      o(u);
+      var y = m(u, 2);
+      {
+        var A = t => {
+          var e = Y(),
+            x = r(e, !0);
+          o(e), h(() => c(x, a.subDescription)), l(t, e)
+        };
+        g(y, t => {
+          a.subDescription && t(A)
+        })
+      }
+      var C = m(y, 2);
+      {
+        var E = t => {
+          var e = O(),
+            x = Q(e);
+          R(x, () => a.children), l(t, e)
+        };
+        g(C, t => {
+          a.children && t(E)
+        })
+      }
+      var D = m(C, 2),
+        b = r(D),
+        k = r(b),
+        F = r(k, !0);
+      o(k), o(b);
+      var i = m(b, 2);
+      let B;
+      var T = r(i),
+        G = m(T);
+      {
+        var I = t => {
+          var e = Z();
+          l(t, e)
+        };
+        g(G, t => {
+          j(d) && t(I)
+        })
+      }
+      o(i), o(D), o(n), h(t => {
+        c(z, a.description), c(F, t), B = S(i, 1, "btn min-w-32 px-6", null, B, {
+          "btn-error": w() === "warning",
+          "btn-primary": w() === "confirmation"
+        }), i.disabled = j(d), c(T, `${q()??""} `)
+      }, [() => V()]), M("click", i, async () => {
+        try {
+          H(d, !0), p(await a.onConfirm())
+        } finally {
+          H(d, !1)
+        }
+      }), l(s, n)
+    },
+    $$slots: {
+      header: !0,
+      default: !0
+    }
+  }), L()
+}
+J(["click"]);
 export {
-  Ce as a, Fe as b, De as c, Te as d, He as e, Re as f, Ae as g, ye as h, Le as i, Se as j, Ee as v
+  ft as C
 };

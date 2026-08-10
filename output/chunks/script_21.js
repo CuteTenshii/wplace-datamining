@@ -1,7 +1,7 @@
 import {
   b as o,
   r
-} from "./6UOEFGVq.js";
+} from "./B8vggrwM.js";
 const t = "";
 
 function s(...e) {
