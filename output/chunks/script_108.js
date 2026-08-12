@@ -60,7 +60,7 @@ const je = () => "Latest",
   at = () => "Примечания к обновлению",
   st = () => "Нотатки про оновлення",
   it = () => "Ghi chú cập nhật",
-  Wn = (n = {}, e = {}) => {
+  Qn = (n = {}, e = {}) => {
     const t = e.locale ?? me();
     return t === "en" ? Ye() : t === "pt" ? Xe() : t === "ch" ? Ke() : t === "de" ? Ve() : t === "es" ? Je() : t === "fr" ? et() : t === "it" ? tt() : t === "jp" ? nt() : t === "pl" ? rt() : t === "ru" ? at() : t === "uk" ? st() : it()
   };
@@ -93,7 +93,7 @@ function m(n, e = "") {
     a = {
       replace: (r, i) => {
         let o = typeof i == "string" ? i : i.source;
-        return o = o.replace(_.caret, "$1"), t = t.replace(r, o), a
+        return o = o.replace(w.caret, "$1"), t = t.replace(r, o), a
       },
       getRegex: () => new RegExp(t, e)
     };
@@ -106,7 +106,7 @@ var ot = (() => {
       return !1
     }
   })(),
-  _ = {
+  w = {
     codeRemoveIndent: /^(?: {1,4}| {0,3}\t)/gm,
     outputLinkReplace: /\\([\[\]])/g,
     indentCodeCompensation: /^(\s+)(?:```)/,
@@ -171,7 +171,7 @@ var ot = (() => {
   ht = /^ {0,3}(#{1,6})(?=\s|$)(.*)(?:\n+|$)/,
   K = / {0,3}(?:[*+-]|\d{1,9}[.)])/,
   ke = /^(?!bull |blockCode|fences|blockquote|heading|html|table)((?:.|\n(?!\s*?\n|bull |blockCode|fences|blockquote|heading|html|table))+?)\n {0,3}(=+|-+) *(?:\n+|$)/,
-  we = m(ke).replace(/bull/g, K).replace(/blockCode/g, /(?: {4}| {0,3}\t)/).replace(/fences/g, / {0,3}(?:`{3,}|~{3,})/).replace(/blockquote/g, / {0,3}>/).replace(/heading/g, / {0,3}#{1,6}/).replace(/html/g, / {0,3}<[^\n>]+>\n/).replace(/\|table/g, "").getRegex(),
+  _e = m(ke).replace(/bull/g, K).replace(/blockCode/g, /(?: {4}| {0,3}\t)/).replace(/fences/g, / {0,3}(?:`{3,}|~{3,})/).replace(/blockquote/g, / {0,3}>/).replace(/heading/g, / {0,3}#{1,6}/).replace(/html/g, / {0,3}<[^\n>]+>\n/).replace(/\|table/g, "").getRegex(),
   ut = m(ke).replace(/bull/g, K).replace(/blockCode/g, /(?: {4}| {0,3}\t)/).replace(/fences/g, / {0,3}(?:`{3,}|~{3,})/).replace(/blockquote/g, / {0,3}>/).replace(/heading/g, / {0,3}#{1,6}/).replace(/html/g, / {0,3}<[^\n>]+>\n/).replace(/table/g, / {0,3}\|?(?:[:\- ]*\|)+[\:\- ]*\n/).getRegex(),
   V = /^([^\n]+(?:\n(?!hr|heading|lheading|blockquote|fences|list|html|table| +\n)[^\n]+)*)/,
   dt = /^[^\n]+/,
@@ -181,8 +181,8 @@ var ot = (() => {
   N = "address|article|aside|base|basefont|blockquote|body|caption|center|col|colgroup|dd|details|dialog|dir|div|dl|dt|fieldset|figcaption|figure|footer|form|frame|frameset|h[1-6]|head|header|hr|html|iframe|legend|li|link|main|menu|menuitem|meta|nav|noframes|ol|optgroup|option|p|param|search|section|summary|table|tbody|td|tfoot|th|thead|title|tr|track|ul",
   ee = /<!--(?:-?>|[\s\S]*?(?:-->|$))/,
   ft = m("^ {0,3}(?:<(script|pre|style|textarea)[\\s>][\\s\\S]*?(?:</\\1>[^\\n]*\\n+|$)|comment[^\\n]*(\\n+|$)|<\\?[\\s\\S]*?(?:\\?>\\n*|$)|<![A-Z][\\s\\S]*?(?:>\\n*|$)|<!\\[CDATA\\[[\\s\\S]*?(?:\\]\\]>\\n*|$)|</?(tag)(?: +|\\n|/?>)[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$)|<(?!script|pre|style|textarea)([a-z][\\w-]*)(?:attribute)*? */?>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$)|</(?!script|pre|style|textarea)[a-z][\\w-]*\\s*>(?=[ \\t]*(?:\\n|$))[\\s\\S]*?(?:(?:\\n[ 	]*)+\\n|$))", "i").replace("comment", ee).replace("tag", N).replace("attribute", / +[a-zA-Z:_][\w.:-]*(?: *= *"[^"\n]*"| *= *'[^'\n]*'| *= *[^\s"'=<>`]+)?/).getRegex(),
-  _e = m(V).replace("hr", O).replace("heading", " {0,3}#{1,6}(?:\\s|$)").replace("|lheading", "").replace("|table", "").replace("blockquote", " {0,3}>").replace("fences", " {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list", " {0,3}(?:[*+-]|1[.)])[ \\t]").replace("html", "</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag", N).getRegex(),
-  bt = m(/^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/).replace("paragraph", _e).getRegex(),
+  we = m(V).replace("hr", O).replace("heading", " {0,3}#{1,6}(?:\\s|$)").replace("|lheading", "").replace("|table", "").replace("blockquote", " {0,3}>").replace("fences", " {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list", " {0,3}(?:[*+-]|1[.)])[ \\t]").replace("html", "</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag", N).getRegex(),
+  bt = m(/^( {0,3}> ?(paragraph|[^\n]*)(?:\n|$))+/).replace("paragraph", we).getRegex(),
   te = {
     blockquote: bt,
     code: ct,
@@ -191,10 +191,10 @@ var ot = (() => {
     heading: ht,
     hr: O,
     html: ft,
-    lheading: we,
+    lheading: _e,
     list: mt,
     newline: lt,
-    paragraph: _e,
+    paragraph: we,
     table: S,
     text: dt
   },
@@ -205,7 +205,7 @@ var ot = (() => {
     table: ce,
     paragraph: m(V).replace("hr", O).replace("heading", " {0,3}#{1,6}(?:\\s|$)").replace("|lheading", "").replace("table", ce).replace("blockquote", " {0,3}>").replace("fences", " {0,3}(?:`{3,}(?=[^`\\n]*\\n)|~{3,})[^\\n]*\\n").replace("list", " {0,3}(?:[*+-]|1[.)])[ \\t]").replace("html", "</?(?:tag)(?: +|\\n|/?>)|<(?:script|pre|style|textarea|!--)").replace("tag", N).getRegex()
   },
-  wt = {
+  _t = {
     ...te,
     html: m(`^ *(?:comment *(?:\\n|\\s*$)|<(tag)[\\s\\S]+?</\\1> *(?:\\n{2,}|\\s*$)|<tag(?:"[^"]*"|'[^']*'|\\s[^'"/>\\s]*)*?/?> *(?:\\n{2,}|\\s*$))`).replace("comment", ee).replace(/tag/g, "(?!(?:a|em|strong|small|s|cite|q|dfn|abbr|data|time|code|var|samp|kbd|sub|sup|i|b|u|mark|ruby|rt|rp|bdi|bdo|span|br|wbr|ins|del|img)\\b)\\w+(?!:|[^\\w\\s@]*@)\\b").getRegex(),
     def: /^ *\[([^\]]+)\]: *<?([^\s>]+)>?(?: +(["(][^\n]+[")]))? *(?:\n+|$)/,
@@ -213,9 +213,9 @@ var ot = (() => {
     fences: S,
     lheading: /^(.+?)\n {0,3}(=+|-+) *(?:\n+|$)/,
     paragraph: m(V).replace("hr", O).replace("heading", ` *#{1,6} *[^
-]`).replace("lheading", we).replace("|table", "").replace("blockquote", " {0,3}>").replace("|fences", "").replace("|list", "").replace("|html", "").replace("|tag", "").getRegex()
+]`).replace("lheading", _e).replace("|table", "").replace("blockquote", " {0,3}>").replace("|fences", "").replace("|list", "").replace("|html", "").replace("|tag", "").getRegex()
   },
-  _t = /^\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/,
+  wt = /^\\([!"#$%&'()*+,\-./:;<=>?@\[\]\\^_`{|}~])/,
   yt = /^(`+)([^`]|[^`][\s\S]*?[^`])\1(?!`)/,
   ye = /^( {2,}|\\)\n(?!\s*$)/,
   xt = /^(`+|[^`])(?:(?= {2,}\n)|[\s\S]*?(?:(?=[\\<!\[`*_]|\b_|$)|[^ ](?= {2,}\n)))/,
@@ -260,7 +260,7 @@ var ot = (() => {
     emStrongLDelim: Tt,
     emStrongRDelimAst: Pt,
     emStrongRDelimUnd: Ct,
-    escape: _t,
+    escape: wt,
     link: Lt,
     nolink: Re,
     punctuation: vt,
@@ -294,7 +294,7 @@ var ot = (() => {
   E = {
     normal: te,
     gfm: kt,
-    pedantic: wt
+    pedantic: _t
   },
   q = {
     normal: re,
@@ -313,14 +313,14 @@ var ot = (() => {
 
 function v(n, e) {
   if (e) {
-    if (_.escapeTest.test(n)) return n.replace(_.escapeReplace, he)
-  } else if (_.escapeTestNoEncode.test(n)) return n.replace(_.escapeReplaceNoEncode, he);
+    if (w.escapeTest.test(n)) return n.replace(w.escapeReplace, he)
+  } else if (w.escapeTestNoEncode.test(n)) return n.replace(w.escapeReplaceNoEncode, he);
   return n
 }
 
 function ue(n) {
   try {
-    n = encodeURI(n).replace(_.percentDecode, "%")
+    n = encodeURI(n).replace(w.percentDecode, "%")
   } catch {
     return null
   }
@@ -329,19 +329,19 @@ function ue(n) {
 
 function de(n, e) {
   var i;
-  let t = n.replace(_.findPipe, (o, s, p) => {
+  let t = n.replace(w.findPipe, (o, s, p) => {
       let l = !1,
         h = s;
       for (; --h >= 0 && p[h] === "\\";) l = !l;
       return l ? "|" : " |"
     }),
-    a = t.split(_.splitPipe),
+    a = t.split(w.splitPipe),
     r = 0;
   if (a[0].trim() || a.shift(), a.length > 0 && !((i = a.at(-1)) != null && i.trim()) && a.pop(), e)
     if (a.length > e) a.splice(e);
     else
       for (; a.length < e;) a.push("");
-  for (; r < a.length; r++) a[r] = a[r].trim().replace(_.slashPipe, "|");
+  for (; r < a.length; r++) a[r] = a[r].trim().replace(w.slashPipe, "|");
   return a
 }
 
@@ -552,29 +552,29 @@ ${h}` : h;
             k = n.split(`
 `, 1)[0],
             g = !c.trim(),
-            w = 0;
-          if (this.options.pedantic ? (w = 2, u = c.trimStart()) : g ? w = e[1].length + 1 : (w = c.search(this.rules.other.nonSpaceChar), w = w > 4 ? 1 : w, u = c.slice(w), w += e[1].length), g && this.rules.other.blankLine.test(k) && (d += k + `
+            _ = 0;
+          if (this.options.pedantic ? (_ = 2, u = c.trimStart()) : g ? _ = e[1].length + 1 : (_ = c.search(this.rules.other.nonSpaceChar), _ = _ > 4 ? 1 : _, u = c.slice(_), _ += e[1].length), g && this.rules.other.blankLine.test(k) && (d += k + `
 `, n = n.substring(k.length + 1), h = !0), !h) {
-            let T = this.rules.other.nextBulletRegex(w),
-              j = this.rules.other.hrRegex(w),
-              se = this.rules.other.fencesBeginRegex(w),
-              ie = this.rules.other.headingBeginRegex(w),
-              Te = this.rules.other.htmlBeginRegex(w),
-              ze = this.rules.other.blockquoteBeginRegex(w);
+            let T = this.rules.other.nextBulletRegex(_),
+              j = this.rules.other.hrRegex(_),
+              se = this.rules.other.fencesBeginRegex(_),
+              ie = this.rules.other.headingBeginRegex(_),
+              Te = this.rules.other.htmlBeginRegex(_),
+              ze = this.rules.other.blockquoteBeginRegex(_);
             for (; n;) {
               let Z = n.split(`
 `, 1)[0],
                 $;
               if (k = Z, this.options.pedantic ? (k = k.replace(this.rules.other.listReplaceNesting, "  "), $ = k) : $ = k.replace(this.rules.other.tabCharGlobal, "    "), se.test(k) || ie.test(k) || Te.test(k) || ze.test(k) || T.test(k) || j.test(k)) break;
-              if ($.search(this.rules.other.nonSpaceChar) >= w || !k.trim()) u += `
-` + $.slice(w);
+              if ($.search(this.rules.other.nonSpaceChar) >= _ || !k.trim()) u += `
+` + $.slice(_);
               else {
                 if (g || c.replace(this.rules.other.tabCharGlobal, "    ").search(this.rules.other.nonSpaceChar) >= 4 || se.test(c) || ie.test(c) || j.test(c)) break;
                 u += `
 ` + k
               }
               g = !k.trim(), d += Z + `
-`, n = n.substring(Z.length + 1), c = $.slice(w)
+`, n = n.substring(Z.length + 1), c = $.slice(_)
             }
           }
           o.loose || (p ? o.loose = !0 : this.rules.other.doubleBlankLine.test(d) && (p = !0)), o.items.push({
@@ -938,7 +938,7 @@ ${h}` : h;
         top: !0
       };
       let t = {
-        other: _,
+        other: w,
         block: E.normal,
         inline: q.normal
       };
@@ -957,7 +957,7 @@ ${h}` : h;
       return new G(t).inlineTokens(e)
     }
     lex(e) {
-      e = e.replace(_.carriageReturn, `
+      e = e.replace(w.carriageReturn, `
 `), this.blockTokens(e, this.tokens);
       for (let t = 0; t < this.inlineQueue.length; t++) {
         let a = this.inlineQueue[t];
@@ -967,7 +967,7 @@ ${h}` : h;
     }
     blockTokens(e, t = [], a = !1) {
       var r, i, o;
-      for (this.tokenizer.lexer = this, this.options.pedantic && (e = e.replace(_.tabCharGlobal, "    ").replace(_.spaceLine, "")); e;) {
+      for (this.tokenizer.lexer = this, this.options.pedantic && (e = e.replace(w.tabCharGlobal, "    ").replace(w.spaceLine, "")); e;) {
         let s;
         if ((i = (r = this.options.extensions) == null ? void 0 : r.block) != null && i.some(l => (s = l.call({
             lexer: this
@@ -1148,12 +1148,12 @@ ${h}` : h;
         let k = e;
         if ((u = this.options.extensions) != null && u.startInline) {
           let g = 1 / 0,
-            w = e.slice(1),
+            _ = e.slice(1),
             T;
           this.options.extensions.startInline.forEach(j => {
             T = j.call({
               lexer: this
-            }, w), typeof T == "number" && T >= 0 && (g = Math.min(g, T))
+            }, _), typeof T == "number" && T >= 0 && (g = Math.min(g, T))
           }), g < 1 / 0 && g >= 0 && (k = e.substring(0, g + 1))
         }
         if (c = this.tokenizer.inlineText(k)) {
@@ -1188,8 +1188,8 @@ ${h}` : h;
       escaped: t
     }) {
       var i;
-      let a = (i = (e || "").match(_.notSpaceStart)) == null ? void 0 : i[0],
-        r = n.replace(_.endingNewline, "") + `
+      let a = (i = (e || "").match(w.notSpaceStart)) == null ? void 0 : i[0],
+        r = n.replace(w.endingNewline, "") + `
 `;
       return a ? '<pre><code class="language-' + v(a) + '">' + (t ? r : v(r, !0)) + `</code></pre>
 ` : "<pre><code>" + (t ? r : v(r, !0)) + `</code></pre>
@@ -1792,7 +1792,7 @@ f.setOptions;
 f.use;
 f.walkTokens;
 f.parseInline;
-var Zn = f;
+var Un = f;
 x.parse;
 y.lex;
 const Gt = `Welcome to WPlace, a platform to share and explore pixel art creations!
@@ -2080,7 +2080,17 @@ Alliances have been completely rebuilt into a full community system with public 
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  bn = `### Improvements
+  bn = `### Fixes
+
+- Fixed additional cases where large personal overlays could appear flipped, duplicated, or scrambled on mobile devices.
+`,
+  kn = Object.freeze(Object.defineProperty({
+    __proto__: null,
+    default: bn
+  }, Symbol.toStringTag, {
+    value: "Module"
+  })),
+  _n = `### Improvements
 
 - **Reliable public headquarters previews**: Public headquarters previews now properly load during heavy alliance activity instead of remaining unavailable while background work catches up.
 - **Better alliance browsing**: Filter the gallery by open, request-based, or invite-only membership, while recently active alliances continue loading reliably as their order changes.
@@ -2089,13 +2099,13 @@ Alliances have been completely rebuilt into a full community system with public 
 - **Clear purchase history**: The Alliance Coin ledger now names the store item bought in every purchase entry.
 - **Complete headquarters timeout history**: Revoked headquarters timeouts now show why painting access was restored.
 `,
-  kn = Object.freeze(Object.defineProperty({
+  wn = Object.freeze(Object.defineProperty({
     __proto__: null,
-    default: bn
+    default: _n
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  wn = `### Improvements
+  yn = `### Improvements
 
 - **Stable alliance canvas refreshes**:
   - Picture and banner canvases now keep their pan and zoom positions while collaborator changes load.
@@ -2110,13 +2120,13 @@ Alliances have been completely rebuilt into a full community system with public 
   - Managing who can paint an alliance draft now shows the full member list with a search box and a checkbox per member.
   - Ticking a member grants access instantly, unticking removes it, and current collaborators stay visible with the date they were added.
 `,
-  _n = Object.freeze(Object.defineProperty({
+  xn = Object.freeze(Object.defineProperty({
     __proto__: null,
-    default: wn
+    default: yn
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  yn = `### Additions
+  vn = `### Additions
 
 - **Shared alliance overlays**:
   - Alliances can now centrally manage overlays that are available across picture, banner, headquarters, and main-canvas overlay galleries.
@@ -2134,13 +2144,13 @@ Alliances have been completely rebuilt into a full community system with public 
 - Account actions now have stronger protection against unauthorized requests from other websites.
 - The alliance Activity feed and alliance notifications now show new events promptly, even during very busy periods.
 `,
-  xn = Object.freeze(Object.defineProperty({
+  Sn = Object.freeze(Object.defineProperty({
     __proto__: null,
-    default: yn
+    default: vn
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  vn = `### Improvements
+  An = `### Improvements
 
 - The art opacity button on the map now opens a display menu: set the art opacity to 0%, 50%, or 100%, and show or hide alliance headquarters pins and hotspot markers.
 - Clicking the alliance name on a selected pixel now opens that alliance's details.
@@ -2157,23 +2167,23 @@ Alliances have been completely rebuilt into a full community system with public 
 
 - Fixed an issue where the join policy filter in the alliance gallery was cut off in some languages.
 `,
-  Sn = Object.freeze(Object.defineProperty({
-    __proto__: null,
-    default: vn
-  }, Symbol.toStringTag, {
-    value: "Module"
-  })),
-  An = `### Fixes
-
-- Fixed an issue where alliance headquarters pins could appear at the wrong zoom after loading the map and moving the pointer could repeatedly cause map errors.
-`,
   Rn = Object.freeze(Object.defineProperty({
     __proto__: null,
     default: An
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  Tn = `### New features
+  Tn = `### Fixes
+
+- Fixed an issue where alliance headquarters pins could appear at the wrong zoom after loading the map and moving the pointer could repeatedly cause map errors.
+`,
+  zn = Object.freeze(Object.defineProperty({
+    __proto__: null,
+    default: Tn
+  }, Symbol.toStringTag, {
+    value: "Module"
+  })),
+  Pn = `### New features
 
 - Alliance headquarters now include a leaderboard of canvas contributions for today, this week, this month, and all time.
 - Alliance staff with overlay management permission can now use its edit dialog to place it independently on drafts, headquarters, and the main canvas.
@@ -2201,25 +2211,25 @@ Alliances have been completely rebuilt into a full community system with public 
 - Starting paint mode now keeps the current map zoom whenever individual pixels are already visible.
 - Pinch zooming on headquarters canvases now stays centered beneath your fingers on touchscreens.
 `,
-  zn = Object.freeze(Object.defineProperty({
-    __proto__: null,
-    default: Tn
-  }, Symbol.toStringTag, {
-    value: "Module"
-  })),
-  Pn = `### Fixes
-
-- Fixed an issue where saved overlays could remain stuck loading and make the overlay menu unresponsive.
-- Fixed an issue that prevented overlays with role-restricted audiences from being saved.
-- Alliance overlays now preserve full-resolution source images so their quantized colors stay consistent with matching personal overlays.
-`,
   $n = Object.freeze(Object.defineProperty({
     __proto__: null,
     default: Pn
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  Cn = `### Improvements
+  Cn = `### Fixes
+
+- Fixed an issue where saved overlays could remain stuck loading and make the overlay menu unresponsive.
+- Fixed an issue that prevented overlays with role-restricted audiences from being saved.
+- Alliance overlays now preserve full-resolution source images so their quantized colors stay consistent with matching personal overlays.
+`,
+  qn = Object.freeze(Object.defineProperty({
+    __proto__: null,
+    default: Cn
+  }, Symbol.toStringTag, {
+    value: "Module"
+  })),
+  In = `### Improvements
 
 - Alliance Coin balances, prices, and notifications now use a dedicated coin icon, and Droplets have a refreshed icon.
 
@@ -2228,13 +2238,13 @@ Alliances have been completely rebuilt into a full community system with public 
 - Fixed an issue where personal overlays could appear duplicated, rotated, or show incorrect pixels on some mobile devices.
 - Fixed an issue where reopened alliance picture or banner drafts could fail to finish.
 `,
-  qn = Object.freeze(Object.defineProperty({
+  Mn = Object.freeze(Object.defineProperty({
     __proto__: null,
-    default: Cn
+    default: In
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  In = Object.assign({
+  On = Object.assign({
     "./markdown/1.0.0 - Welcome to WPlace!.md": Yt,
     "./markdown/1.1.0 - ✨ More Like You Update.md": Kt,
     "./markdown/1.1.1 - 🛠️ Quality & Cosmetics Improvements.md": Jt,
@@ -2246,16 +2256,17 @@ Alliances have been completely rebuilt into a full community system with public 
     "./markdown/1.3.3 - ⚽ World Cup Predictions and Cosmetics & Anti-cheat Improvements.md": un,
     "./markdown/1.4.0 - 🛡️ The New Alliance System.md": gn,
     "./markdown/1.4.1 - 🛡️ Alliance System Fixes.md": fn,
-    "./markdown/1.4.2 - 🛠️ Headquarters Preview Reliability.md": kn,
-    "./markdown/1.4.3 - 🛠️ Alliance Usability Fixes.md": _n,
-    "./markdown/1.4.4 - 🧭 Alliance Canvas Overlays.md": xn,
-    "./markdown/1.4.5 - 🎨 Alliance Canvas Tools and Map Display.md": Sn,
-    "./markdown/1.4.6 - 🛠️ Map Interaction Reliability.md": Rn,
-    "./markdown/1.4.7 - 🖼️ Alliance Overlays and Asset Studio.md": zn,
-    "./markdown/1.4.8 - 🛠️ Overlay Reliability.md": $n,
-    "./markdown/1.4.9 - 🛍️ Mobile Overlay Fixes.md": qn
+    "./markdown/1.4.10 - 🛠️ Mobile Overlay Rendering.md": kn,
+    "./markdown/1.4.2 - 🛠️ Headquarters Preview Reliability.md": wn,
+    "./markdown/1.4.3 - 🛠️ Alliance Usability Fixes.md": xn,
+    "./markdown/1.4.4 - 🧭 Alliance Canvas Overlays.md": Sn,
+    "./markdown/1.4.5 - 🎨 Alliance Canvas Tools and Map Display.md": Rn,
+    "./markdown/1.4.6 - 🛠️ Map Interaction Reliability.md": zn,
+    "./markdown/1.4.7 - 🖼️ Alliance Overlays and Asset Studio.md": $n,
+    "./markdown/1.4.8 - 🛠️ Overlay Reliability.md": qn,
+    "./markdown/1.4.9 - 🛍️ Mobile Overlay Fixes.md": Mn
   }),
-  Qn = Object.entries(In).map(([n, e]) => {
+  Gn = Object.entries(On).map(([n, e]) => {
     var i, o;
     const t = (i = n.split("/").at(-1)) == null ? void 0 : i.replace(".md", ""),
       a = (o = t == null ? void 0 : t.split("-")[0]) == null ? void 0 : o.trim(),
@@ -2268,13 +2279,13 @@ Alliances have been completely rebuilt into a full community system with public 
   }).sort((n, e) => n.version.localeCompare(e.version, void 0, {
     numeric: !0
   }));
-var Mn = fe('<span class="text-primary inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-wide"><span class="relative flex size-1.5"><span class="bg-primary/60 absolute inline-flex size-full animate-ping rounded-full"></span> <span class="bg-primary relative inline-flex size-1.5 rounded-full"></span></span> </span>'),
-  On = fe('<article><div class="flex items-center gap-3"><span class="text-primary text-lg font-bold tracking-wide"> </span> <!></div> <h2 class="mt-1 text-[0.9375rem] leading-snug font-bold tracking-tight"> </h2> <div class="patch-content mt-4 svelte-1pfqn89"></div></article>');
+var jn = fe('<span class="text-primary inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-wide"><span class="relative flex size-1.5"><span class="bg-primary/60 absolute inline-flex size-full animate-ping rounded-full"></span> <span class="bg-primary relative inline-flex size-1.5 rounded-full"></span></span> </span>'),
+  Fn = fe('<article><div class="flex items-center gap-3"><span class="text-primary text-lg font-bold tracking-wide"> </span> <!></div> <h2 class="mt-1 text-[0.9375rem] leading-snug font-bold tracking-tight"> </h2> <div class="patch-content mt-4 svelte-1pfqn89"></div></article>');
 
-function Un(n, e) {
+function Yn(n, e) {
   Ce(e, !0);
   let t = Oe(e, "latest", 3, !1);
-  var a = On(),
+  var a = Fn(),
     r = C(a),
     i = C(r),
     o = C(i);
@@ -2282,7 +2293,7 @@ function Un(n, e) {
   var s = F(i, 2);
   {
     var p = u => {
-      var c = Mn(),
+      var c = jn(),
         k = F(C(c));
       z(c), oe(g => Q(k, ` ${g??""}`), [() => Ge()]), le(u, c)
     };
@@ -2300,5 +2311,5 @@ function Un(n, e) {
   }), le(n, a), qe()
 }
 export {
-  Ut as D, Un as P, Zn as W, Qn as a, Wn as p, H as y
+  Ut as D, Yn as P, Un as W, Gn as a, Qn as p, H as y
 };
