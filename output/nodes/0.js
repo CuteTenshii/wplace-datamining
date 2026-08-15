@@ -62,7 +62,7 @@ import {
 } from "../chunks/b7oAWk-Y.js";
 import {
   v as Jn
-} from "../chunks/eNufPRMc.js";
+} from "../chunks/DN3tkIwe.js";
 import {
   I as Rt,
   J as ae,
@@ -87,7 +87,7 @@ import {
 import {
   s as oi,
   a as si
-} from "../chunks/DU9xHTEs.js";
+} from "../chunks/B-dM7ymB.js";
 import {
   a as Mn,
   g as ai,
@@ -152,7 +152,7 @@ import {
 } from "../chunks/DoQwV0WM.js";
 import "../chunks/CC8rAinp.js";
 const Di = !0,
-  $a = Object.freeze(Object.defineProperty({
+  tl = Object.freeze(Object.defineProperty({
     __proto__: null,
     prerender: Di
   }, Symbol.toStringTag, {
@@ -2074,12 +2074,16 @@ function ha(s, t) {
   }
   g(s, T), Qt()
 }
+
+function fa(s) {
+  return s.closest("dialog") ?? document.body
+}
 var cn = {
     exports: {}
   },
   An;
 
-function fa() {
+function ma() {
   return An || (An = 1, (function(s) {
     (function(t) {
       s.exports ? s.exports = t() : window.intlTelInput = t()
@@ -3875,16 +3879,16 @@ function fa() {
     })
   })(cn)), cn.exports
 }
-var ma = fa();
-const pa = fi(ma);
-var _a = ft('<div class="my-auto"><span class="loading loading-spinner loading-xl"></span></div>'),
+var pa = ma();
+const _a = fi(pa);
+var ga = ft('<div class="my-auto"><span class="loading loading-spinner loading-xl"></span></div>'),
   Pn = ft('<span class="w-8"> </span>'),
   kn = ft('<span class="loading loading-spinner center-absolute absolute"></span>'),
-  ga = ft('<div class="my-auto flex w-full flex-col items-center"><div class="text-center"><h2 class="text-2xl font-bold"> </h2> <p class="text-base-content/80 mt-0.5 text-sm"> </p></div> <form class="mt-8 flex w-full flex-col gap-3"><input class="input w-full pl-12!" type="tel" id="phone"/> <button class="btn btn-primary relative w-full"> <!> <!></button></form></div> <p class="text-base-content/60 pt-3 pb-2 text-center text-xs"> </p>', 1),
-  va = ft('<div class="text-center"><h2 class="text-2xl font-bold"> </h2> <p class="mt-0.5 text-sm"> </p></div> <div class="mt-4"><!></div> <div class="mt-4 flex flex-col items-center gap-1"><button class="btn btn-ghost relative mb-1 w-max"> <!> <!></button> <button class="text-primary/80 cursor-pointer text-xs"> </button></div>', 1),
-  ya = ft('<div class="flex h-full w-full flex-col items-center"><!></div>');
+  va = ft('<div class="my-auto flex w-full flex-col items-center"><div class="text-center"><h2 class="text-2xl font-bold"> </h2> <p class="text-base-content/80 mt-0.5 text-sm"> </p></div> <form class="mt-8 flex w-full flex-col gap-3"><input class="input w-full pl-12!" type="tel" id="phone"/> <button class="btn btn-primary relative w-full"> <!> <!></button></form></div> <p class="text-base-content/60 pt-3 pb-2 text-center text-xs"> </p>', 1),
+  ya = ft('<div class="text-center"><h2 class="text-2xl font-bold"> </h2> <p class="mt-0.5 text-sm"> </p></div> <div class="mt-4"><!></div> <div class="mt-4 flex flex-col items-center gap-1"><button class="btn btn-ghost relative mb-1 w-max"> <!> <!></button> <button class="text-primary/80 cursor-pointer text-xs"> </button></div>', 1),
+  Ca = ft('<div class="flex h-full w-full flex-col items-center"><!></div>');
 
-function Ca(s, t) {
+function ba(s, t) {
   Xt(t, !0);
   let n = k(t, "verifyingPhone", 15, ""),
     f = Y(!0),
@@ -3952,15 +3956,15 @@ function Ca(s, t) {
       }
     })())
   });
-  var N = ya(),
+  var N = Ca(),
     X = it(N);
   {
     var B = w => {
-        var D = _a();
+        var D = ga();
         g(w, D)
       },
       tt = w => {
-        var D = ga(),
+        var D = va(),
           K = G(D),
           L = it(K),
           q = it(L),
@@ -3973,12 +3977,12 @@ function Ca(s, t) {
           j = it(I);
         Bn(j, () => Q => {
           var mt, vt;
-          return m(S, pa(Q, {
+          return m(S, _a(Q, {
             strictMode: !0,
             initialCountry: ((vt = (mt = Ye.data) == null ? void 0 : mt.country) == null ? void 0 : vt.toLocaleLowerCase()) ?? "br",
             loadUtils: () => wi(() => import("../chunks/3P6Si2Fo.js"), [], import.meta.url),
             containerClass: "w-full hide-search",
-            dropdownContainer: document.body
+            dropdownContainer: fa(Q)
           })), () => {
             var Ct;
             (Ct = r(S)) == null || Ct.destroy()
@@ -4024,7 +4028,7 @@ function Ca(s, t) {
         }), g(w, D)
       },
       b = w => {
-        var D = va(),
+        var D = ya(),
           K = G(D),
           L = it(K),
           q = it(L, !0);
@@ -4130,12 +4134,12 @@ function Ca(s, t) {
 }
 nn(["click"]);
 let Ae = Y(!1);
-var ba = ft("<div></div>"),
-  wa = ft('<button type="button" class="btn">Retry</button>'),
-  Ia = ft('<span class="loading loading-spinner loading-lg"></span>'),
-  Ea = ft("<div><!></div>");
+var wa = ft("<div></div>"),
+  Ia = ft('<button type="button" class="btn">Retry</button>'),
+  Ea = ft('<span class="loading loading-spinner loading-lg"></span>'),
+  Ta = ft("<div><!></div>");
 
-function Ta(s, t) {
+function Da(s, t) {
   Xt(t, !0);
   let n = k(t, "widgetId", 15),
     f = k(t, "appearance", 3, "always"),
@@ -4233,22 +4237,22 @@ function Ta(s, t) {
     U = G(q);
   {
     var pt = I => {
-        var j = ba();
+        var j = wa();
         let et;
         Mn(j, (St, xt) => B == null ? void 0 : B(St, xt), () => r(X)), Tt(() => et = qt(j, 1, `h-16 ${t.class??""}`, "svelte-1lm836y", et, {
           flexible: v() == "flexible"
         })), g(I, j)
       },
       Et = I => {
-        var j = Ea(),
+        var j = Ta(),
           et = it(j);
         {
           var St = Nt => {
-              var Mt = wa();
+              var Mt = Ia();
               oe("click", Mt, L), g(Nt, Mt)
             },
             xt = Nt => {
-              var Mt = Ia();
+              var Mt = Ea();
               g(Nt, Mt)
             };
           at(et, Nt => {
@@ -4264,9 +4268,9 @@ function Ta(s, t) {
   g(s, q), Qt()
 }
 nn(["click"]);
-var Da = ft('<dialog class="modal"><div></div> <div><div class="min-h-16"><!></div></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
+var xa = ft('<dialog class="modal"><div></div> <div><div class="min-h-16"><!></div></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
 
-function xa(s, t) {
+function Sa(s, t) {
   Xt(t, !0);
   const n = E(() => an.current !== null),
     f = E(() => {
@@ -4277,7 +4281,7 @@ function xa(s, t) {
   let T = Y(""),
     x = Y(void 0),
     O = Y(!1);
-  var M = Da(),
+  var M = xa(),
     S = it(M);
   let v;
   rn(S, b => m(x, b), () => r(x));
@@ -4296,7 +4300,7 @@ function xa(s, t) {
           var U = I => {
               {
                 let j = E(() => Ci.trim());
-                Ta(I, {
+                Da(I, {
                   get siteKey() {
                     return r(j)
                   },
@@ -4323,7 +4327,7 @@ function xa(s, t) {
               }
             },
             Et = I => {
-              Ca(I, {
+              ba(I, {
                 onsuccess: () => ei(),
                 get verifyingPhone() {
                   return r(T)
@@ -4358,9 +4362,9 @@ function xa(s, t) {
     m(O, !1), ti()
   }), g(s, M), Qt()
 }
-var Sa = ft('<span class="hidden"> </span> <!> <!> <!>', 1);
+var Na = ft('<span class="hidden"> </span> <!> <!> <!>', 1);
 
-function tl(s, t) {
+function el(s, t) {
   Xt(t, !0), he(() => {
     const v = oi();
     xn.init();
@@ -4394,7 +4398,7 @@ function tl(s, t) {
       localStorage.setItem(n, Number(v).toString())
     }
   }), he(() => {});
-  var f = Sa();
+  var f = Na();
   en("beforeunload", Qn, () => {
     _i().catch(v => console.warn("[sw] message failed", v))
   });
@@ -4413,7 +4417,7 @@ function tl(s, t) {
     })
   }
   var M = It(x, 2);
-  xa(M, {});
+  Sa(M, {});
   var S = It(M, 2);
   Us(S, {
     closeButton: !0,
@@ -4424,5 +4428,5 @@ function tl(s, t) {
   }), Tt(() => Bt(T, `Version: ${Jn}`)), g(s, f), Qt()
 }
 export {
-  tl as component, $a as universal
+  el as component, tl as universal
 };
