@@ -1,22 +1,27 @@
+import "./Bzak7iHL.js";
 import {
-  g as e
-} from "./BhCkpOlh.js";
-const t = () => "Name",
-  u = () => "Nome",
-  o = () => "名称",
-  a = () => "Name",
-  m = () => "Nombre",
-  c = () => "Nom",
-  s = () => "Nome",
-  i = () => "名前",
-  f = () => "Nazwa",
-  _ = () => "Имя",
-  p = () => "Імʼя",
-  l = () => "Tên",
-  g = (N = {}, r = {}) => {
-    const n = r.locale ?? e();
-    return n === "en" ? t() : n === "pt" ? u() : n === "ch" ? o() : n === "de" ? a() : n === "es" ? m() : n === "fr" ? c() : n === "it" ? s() : n === "jp" ? i() : n === "pl" ? f() : n === "ru" ? _() : n === "uk" ? p() : l()
-  };
+  a as e,
+  k as q
+} from "./DUZ_qUVk.js";
+import {
+  b as a
+} from "./2LwYy2UE.js";
+import {
+  r as m
+} from "./DXFW01RN.js";
+var p = new Set(["$$slots", "$$events", "$$legacy"]),
+  v = q('<svg><path d="M480-440q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0-80q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0 440q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-400Zm0-315-240 90v189q0 54 15 105t41 96q42-21 88-33t96-12q50 0 96 12t88 33q26-45 41-96t15-105v-189l-240-90Zm0 515q-36 0-70 8t-65 22q29 30 63 52t72 34q38-12 72-34t63-52q-31-14-65-22t-70-8Z"></path></svg>');
+
+function g(r, o) {
+  let s = m(o, p);
+  var t = v();
+  a(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...s
+  })), e(r, t)
+}
 export {
-  g as n
+  g as S
 };

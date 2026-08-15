@@ -1,22 +1,22 @@
 import {
-  g as r
+  g as e
 } from "./BhCkpOlh.js";
-const l = () => "Last pixel",
-  n = () => "Último pixel",
-  i = () => "最后一个像素",
-  s = () => "Letzter Pixel",
-  u = () => "Último píxel",
-  p = () => "Dernier pixel",
-  _ = () => "Ultimo pixel",
-  o = () => "最後のピクセル",
-  c = () => "Ostatni piksel",
-  x = () => "Последний пиксель",
-  a = () => "Останній піксель",
-  f = () => "Pixel cuối cùng",
-  k = (m = {}, e = {}) => {
-    const t = e.locale ?? r();
-    return t === "en" ? l() : t === "pt" ? n() : t === "ch" ? i() : t === "de" ? s() : t === "es" ? u() : t === "fr" ? p() : t === "it" ? _() : t === "jp" ? o() : t === "pl" ? c() : t === "ru" ? x() : t === "uk" ? a() : f()
+const t = () => "Reason",
+  o = () => "Motivo",
+  s = () => "原因",
+  u = () => "Grund",
+  a = () => "Motivo",
+  i = () => "Raison",
+  c = () => "Motivo",
+  f = () => "理由",
+  _ = () => "Powód",
+  p = () => "Причина",
+  l = () => "Причина",
+  d = () => "Lý do",
+  g = (v = {}, n = {}) => {
+    const r = n.locale ?? e();
+    return r === "en" ? t() : r === "pt" ? o() : r === "ch" ? s() : r === "de" ? u() : r === "es" ? a() : r === "fr" ? i() : r === "it" ? c() : r === "jp" ? f() : r === "pl" ? _() : r === "ru" ? p() : r === "uk" ? l() : d()
   };
 export {
-  k as l
+  g as r
 };

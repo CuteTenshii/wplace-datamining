@@ -1,38 +1,22 @@
 import {
-  g as e
+  g as r
 } from "./BhCkpOlh.js";
-const n = () => "All roles",
-  s = () => "Todos os cargos",
-  _ = () => "所有职位",
-  a = () => "Alle Stellen",
-  o = () => "Todos los cargos",
-  c = () => "Tous les postes",
-  u = () => "Tutte le posizioni",
-  i = () => "すべての役職",
-  f = () => "Wszystkie stanowiska",
-  p = () => "Все должности",
-  d = () => "Усі посади",
-  h = () => "Tất cả chức vụ",
-  w = (l = {}, t = {}) => {
-    const r = t.locale ?? e();
-    return r === "en" ? n() : r === "pt" ? s() : r === "ch" ? _() : r === "de" ? a() : r === "es" ? o() : r === "fr" ? c() : r === "it" ? u() : r === "jp" ? i() : r === "pl" ? f() : r === "ru" ? p() : r === "uk" ? d() : h()
-  },
-  k = () => "Clear filters",
-  T = () => "Limpar filtros",
-  g = () => "清除筛选器",
-  j = () => "Filter löschen",
-  y = () => "Borrar filtros",
-  m = () => "Effacer les filtres",
-  v = () => "Cancella filtri",
-  z = () => "フィルターをクリア",
-  b = () => "Wyczyść filtry",
-  A = () => "Очистить фильтры",
-  C = () => "Очистити фільтри",
-  L = () => "Xóa bộ lọc",
-  x = (l = {}, t = {}) => {
-    const r = t.locale ?? e();
-    return r === "en" ? k() : r === "pt" ? T() : r === "ch" ? g() : r === "de" ? j() : r === "es" ? y() : r === "fr" ? m() : r === "it" ? v() : r === "jp" ? z() : r === "pl" ? b() : r === "ru" ? A() : r === "uk" ? C() : L()
+const l = () => "Last pixel",
+  n = () => "Último pixel",
+  i = () => "最后一个像素",
+  s = () => "Letzter Pixel",
+  u = () => "Último píxel",
+  p = () => "Dernier pixel",
+  _ = () => "Ultimo pixel",
+  o = () => "最後のピクセル",
+  c = () => "Ostatni piksel",
+  x = () => "Последний пиксель",
+  a = () => "Останній піксель",
+  f = () => "Pixel cuối cùng",
+  k = (m = {}, e = {}) => {
+    const t = e.locale ?? r();
+    return t === "en" ? l() : t === "pt" ? n() : t === "ch" ? i() : t === "de" ? s() : t === "es" ? u() : t === "fr" ? p() : t === "it" ? _() : t === "jp" ? o() : t === "pl" ? c() : t === "ru" ? x() : t === "uk" ? a() : f()
   };
 export {
-  w as a, x as b
+  k as l
 };

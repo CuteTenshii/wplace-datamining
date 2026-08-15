@@ -12,7 +12,7 @@ import {
   n as h,
   r as v,
   t as _,
-  c as g,
+  c as p,
   m as s
 } from "./DUZ_qUVk.js";
 import {
@@ -22,7 +22,7 @@ import {
   i as U
 } from "./BLc2SwOK.js";
 import {
-  a as p,
+  a as g,
   c as F,
   s as l
 } from "./2LwYy2UE.js";
@@ -43,9 +43,9 @@ function D(o) {
 function J(o) {
   typeof window > "u" || window.open(D(o), "_blank", "noopener,noreferrer")
 }
-var Q = g('<span role="link" tabindex="0"><!></span>'),
-  T = g('<a target="_blank" rel="noopener noreferrer"><!></a>'),
-  W = g("<span><!></span>");
+var Q = p('<span role="link" tabindex="0"><!></span>'),
+  T = p('<a target="_blank" rel="noopener noreferrer"><!></a>'),
+  W = p("<span><!></span>");
 
 function te(o, e) {
   z(e, !0);
@@ -78,14 +78,14 @@ function te(o, e) {
               var n = Q(),
                 c = m(n);
               k(c, () => e.children ?? h), v(n), _(() => {
-                p(n, 1, `cursor-pointer hover:underline ${I()}`), l(n, "title", e.title)
+                g(n, 1, `cursor-pointer hover:underline ${I()}`), l(n, "title", e.title)
               }), s("pointerdown", n, f), s("click", n, b), s("keydown", n, A), i(t, n)
             },
             j = t => {
               var n = T(),
                 c = m(n);
               k(c, () => e.children ?? h), v(n), _(() => {
-                p(n, 1, `cursor-pointer hover:underline ${I()}`), l(n, "href", x(R)), l(n, "title", e.title)
+                g(n, 1, `cursor-pointer hover:underline ${I()}`), l(n, "href", x(R)), l(n, "title", e.title)
               }), s("pointerdown", n, f), s("click", n, f), i(t, n)
             };
           U(u, t => {
@@ -98,7 +98,7 @@ function te(o, e) {
         var r = W(),
           u = m(r);
         k(u, () => e.children ?? h), v(r), _(() => {
-          p(r, 1, F(L())), l(r, "title", e.title)
+          g(r, 1, F(L())), l(r, "title", e.title)
         }), i(a, r)
       };
     U(K, a => {
@@ -109,5 +109,5 @@ function te(o, e) {
 }
 q(["pointerdown", "click", "keydown"]);
 export {
-  te as S
+  te as S, D as g
 };
