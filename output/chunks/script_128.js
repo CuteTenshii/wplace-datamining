@@ -1,22 +1,48 @@
 import {
-  g as e
-} from "./BhCkpOlh.js";
-const t = () => "Alliances",
-  l = () => "Alianças",
-  a = () => "联盟",
-  s = () => "Allianzen",
-  i = () => "Alianzas",
-  c = () => "Alliances",
-  u = () => "Alleanze",
-  o = () => "アライアンス",
-  f = () => "Sojusze",
-  _ = () => "Альянсы",
-  p = () => "Альянси",
-  A = () => "Các liên minh",
-  j = (z = {}, r = {}) => {
-    const n = r.locale ?? e();
-    return n === "en" ? t() : n === "pt" ? l() : n === "ch" ? a() : n === "de" ? s() : n === "es" ? i() : n === "fr" ? c() : n === "it" ? u() : n === "jp" ? o() : n === "pl" ? f() : n === "ru" ? _() : n === "uk" ? p() : A()
-  };
+  z as d,
+  aF as g,
+  y as c,
+  aG as l,
+  B as m,
+  aH as b,
+  i as p,
+  aI as v,
+  aJ as h
+} from "./DUZ_qUVk.js";
+
+function y(n = !1) {
+  const s = d,
+    e = s.l.u;
+  if (!e) return;
+  let f = () => v(s.s);
+  if (n) {
+    let a = 0,
+      t = {};
+    const _ = h(() => {
+      let i = !1;
+      const r = s.s;
+      for (const o in r) r[o] !== t[o] && (t[o] = r[o], i = !0);
+      return i && a++, a
+    });
+    f = () => p(_)
+  }
+  e.b.length && g(() => {
+    u(s, f), l(e.b)
+  }), c(() => {
+    const a = m(() => e.m.map(b));
+    return () => {
+      for (const t of a) typeof t == "function" && t()
+    }
+  }), e.a.length && c(() => {
+    u(s, f), l(e.a)
+  })
+}
+
+function u(n, s) {
+  if (n.l.s)
+    for (const e of n.l.s) p(e);
+  s()
+}
 export {
-  j as a
+  y as i
 };

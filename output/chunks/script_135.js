@@ -1,22 +1,22 @@
 import {
-  g as u
+  g as f
 } from "./BhCkpOlh.js";
-const n = () => "Audit Logs",
-  o = () => "Logs de Auditoria",
-  i = () => "审计日志",
-  e = () => "Prüfprotokolle",
-  s = () => "Registros de auditoría",
-  a = () => "Journaux d’audit",
-  d = () => "Log di audit",
-  _ = () => "監査ログ",
-  l = () => "Dzienniki audytu",
-  c = () => "Журналы аудита",
-  g = () => "Журнали аудиту",
-  f = () => "Nhật ký kiểm tra",
-  L = (p = {}, r = {}) => {
-    const t = r.locale ?? u();
-    return t === "en" ? n() : t === "pt" ? o() : t === "ch" ? i() : t === "de" ? e() : t === "es" ? s() : t === "fr" ? a() : t === "it" ? d() : t === "jp" ? _() : t === "pl" ? l() : t === "ru" ? c() : t === "uk" ? g() : f()
+const n = () => "Staff",
+  e = () => "Equipe",
+  s = () => "工作人员",
+  u = () => "Staff",
+  a = () => "Staff",
+  o = () => "Staff",
+  c = () => "Staff",
+  i = () => "スタッフ",
+  _ = () => "Staff",
+  p = () => "Персонал",
+  l = () => "Персонал",
+  S = () => "Staff",
+  h = (d = {}, r = {}) => {
+    const t = r.locale ?? f();
+    return t === "en" ? n() : t === "pt" ? e() : t === "ch" ? s() : t === "de" ? u() : t === "es" ? a() : t === "fr" ? o() : t === "it" ? c() : t === "jp" ? i() : t === "pl" ? _() : t === "ru" ? p() : t === "uk" ? l() : S()
   };
 export {
-  L as a
+  h as s
 };

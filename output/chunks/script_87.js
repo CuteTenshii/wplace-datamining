@@ -1,57 +1,102 @@
-var k = Object.defineProperty;
-var w = t => {
-  throw TypeError(t)
-};
-var _ = (t, r, s) => r in t ? k(t, r, {
-  enumerable: !0,
-  configurable: !0,
-  writable: !0,
-  value: s
-}) : t[r] = s;
-var g = (t, r, s) => _(t, typeof r != "symbol" ? r + "" : r, s),
-  u = (t, r, s) => r.has(t) || w("Cannot " + s);
-var i = (t, r, s) => (u(t, r, "read from private field"), s ? s.call(t) : r.get(t)),
-  b = (t, r, s) => r.has(t) ? w("Cannot add the same private member more than once") : r instanceof WeakSet ? r.add(t) : r.set(t, s),
-  c = (t, r, s, e) => (u(t, r, "write to private field"), e ? e.call(t, s) : r.set(t, s), s),
-  p = (t, r, s) => (u(t, r, "access private method"), s);
 import {
-  T as z,
-  B as M
-} from "./DUZ_qUVk.js";
-var o, a, v, h, x;
-const f = class f {
-  constructor(r) {
-    b(this, h);
-    b(this, o, new WeakMap);
-    b(this, a);
-    b(this, v);
-    c(this, v, r)
-  }
-  observe(r, s) {
-    var e = i(this, o).get(r) || new Set;
-    return e.add(s), i(this, o).set(r, e), p(this, h, x).call(this).observe(r, i(this, v)), () => {
-      var n = i(this, o).get(r);
-      n.delete(s), n.size === 0 && (i(this, o).delete(r), i(this, a).unobserve(r))
-    }
-  }
-};
-o = new WeakMap, a = new WeakMap, v = new WeakMap, h = new WeakSet, x = function() {
-  return i(this, a) ?? c(this, a, new ResizeObserver(r => {
-    for (var s of r) {
-      f.entries.set(s.target, s);
-      for (var e of i(this, o).get(s.target) || []) e(s)
-    }
-  }))
-}, g(f, "entries", new WeakMap);
-let d = f;
-var W = new d({
-  box: "border-box"
-});
-
-function j(t, r, s) {
-  var e = W.observe(t, () => s(t[r]));
-  z(() => (M(() => s(t[r])), e))
-}
+  g as n
+} from "./BhCkpOlh.js";
+const i = () => "Search user",
+  l = () => "Buscar usuário",
+  u = () => "搜索用户",
+  _ = () => "Benutzer suchen",
+  o = () => "Buscar usuario",
+  a = () => "Rechercher un utilisateur",
+  c = () => "Cerca utente",
+  s = () => "ユーザーを検索",
+  f = () => "Szukaj użytkownika",
+  d = () => "Поиск пользователя",
+  m = () => "Пошук користувача",
+  p = () => "Tìm người dùng",
+  Lr = (t = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? i() : r === "pt" ? l() : r === "ch" ? u() : r === "de" ? _() : r === "es" ? o() : r === "fr" ? a() : r === "it" ? c() : r === "jp" ? s() : r === "pl" ? f() : r === "ru" ? d() : r === "uk" ? m() : p()
+  },
+  h = () => "Visit",
+  v = () => "Visitar",
+  b = () => "访问",
+  k = () => "Besuchen",
+  j = () => "Visitar",
+  M = () => "Visiter",
+  A = () => "Visita",
+  L = () => "訪問",
+  g = () => "Odwiedź",
+  V = () => "Перейти",
+  B = () => "Перейти",
+  T = () => "Thăm",
+  gr = (t = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? h() : r === "pt" ? v() : r === "ch" ? b() : r === "de" ? k() : r === "es" ? j() : r === "fr" ? M() : r === "it" ? A() : r === "jp" ? L() : r === "pl" ? g() : r === "ru" ? V() : r === "uk" ? B() : T()
+  },
+  z = () => "Leader",
+  C = () => "Líder",
+  w = () => "盟主",
+  S = () => "Anführer",
+  x = () => "Líder",
+  y = () => "Chef",
+  O = () => "Leader",
+  Q = () => "リーダー",
+  R = () => "Lider",
+  q = () => "Лидер",
+  D = () => "Лідер",
+  E = () => "Thủ lĩnh",
+  Vr = (t = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? z() : r === "pt" ? C() : r === "ch" ? w() : r === "de" ? S() : r === "es" ? x() : r === "fr" ? y() : r === "it" ? O() : r === "jp" ? Q() : r === "pl" ? R() : r === "ru" ? q() : r === "uk" ? D() : E()
+  },
+  F = () => "Admin",
+  G = () => "Admin",
+  H = () => "管理员",
+  I = () => "Admin",
+  J = () => "Admin",
+  K = () => "Admin",
+  N = () => "Admin",
+  P = () => "管理者",
+  U = () => "Admin",
+  W = () => "Админ",
+  X = () => "Адмін",
+  Y = () => "Quản trị viên",
+  Br = (t = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? F() : r === "pt" ? G() : r === "ch" ? H() : r === "de" ? I() : r === "es" ? J() : r === "fr" ? K() : r === "it" ? N() : r === "jp" ? P() : r === "pl" ? U() : r === "ru" ? W() : r === "uk" ? X() : Y()
+  },
+  Z = () => "Mod",
+  $ = () => "Moderador",
+  rr = () => "版主",
+  er = () => "Moderator",
+  nr = () => "Moderador",
+  tr = () => "Modérateur",
+  ir = () => "Moderatore",
+  lr = () => "モデレーター",
+  ur = () => "Moderator",
+  _r = () => "Модератор",
+  or = () => "Модератор",
+  ar = () => "Điều hành viên",
+  Tr = (t = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? Z() : r === "pt" ? $() : r === "ch" ? rr() : r === "de" ? er() : r === "es" ? nr() : r === "fr" ? tr() : r === "it" ? ir() : r === "jp" ? lr() : r === "pl" ? ur() : r === "ru" ? _r() : r === "uk" ? or() : ar()
+  },
+  cr = () => "Member",
+  sr = () => "Membro",
+  fr = () => "成员",
+  dr = () => "Mitglied",
+  mr = () => "Miembro",
+  pr = () => "Membre",
+  hr = () => "Membro",
+  vr = () => "メンバー",
+  br = () => "Członek",
+  kr = () => "Участник",
+  jr = () => "Учасник",
+  Mr = () => "Thành viên",
+  zr = (t = {}, e = {}) => {
+    const r = e.locale ?? n();
+    return r === "en" ? cr() : r === "pt" ? sr() : r === "ch" ? fr() : r === "de" ? dr() : r === "es" ? mr() : r === "fr" ? pr() : r === "it" ? hr() : r === "jp" ? vr() : r === "pl" ? br() : r === "ru" ? kr() : r === "uk" ? jr() : Mr()
+  };
 export {
-  j as b
+  Tr as a, Vr as b, Br as c, zr as d, Lr as s, gr as v
 };

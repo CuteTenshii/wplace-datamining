@@ -1,71 +1,70 @@
-import "./Bzak7iHL.js";
 import {
-  p as R,
-  d as i,
-  r as l,
-  t as m,
-  a as n,
-  b as h,
-  s as f,
-  c as g
-} from "./DUZ_qUVk.js";
-import {
-  s as _
-} from "./DtUyTUmd.js";
-import {
-  i as w
-} from "./BLc2SwOK.js";
-import {
-  a as E
-} from "./M4i-R8Gk.js";
-import {
-  p as y
-} from "./DXFW01RN.js";
-import {
-  R as O,
-  a as z
-} from "./TTfhDrzz.js";
-import {
-  L as v
-} from "./8xBTSGf9.js";
-var c = g('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
-  A = g("<span><!></span>");
-
-function T(b, e) {
-  R(e, !0);
-  let p = y(e, "big", 3, !1);
-  var s = A();
-  let d;
-  var u = i(s);
-  {
-    var x = r => {
-        var a = c(),
-          t = i(a);
-        v(t, {
-          size: "none"
-        });
-        var o = f(t, 1, !0);
-        l(a), m(() => _(o, O[e.role])), n(r, a)
-      },
-      L = r => {
-        var a = c(),
-          t = i(a);
-        v(t, {
-          size: "small"
-        });
-        var o = f(t, 1, !0);
-        l(a), m(() => _(o, z[e.role])), n(r, a)
-      };
-    w(u, r => {
-      p() ? r(x) : r(L, -1)
-    })
-  }
-  l(s), m(() => d = E(s, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center pt-0.5 leading-none font-semibold whitespace-nowrap shadow", null, d, {
-    "badge-info": e.role === "admin",
-    "badge-secondary": e.role === "sac" || e.role === "game_master" || e.role === "game_master_leader" || e.role === "dev",
-    "badge-warning": e.role === "discord_mod" || e.role === "discord_leader"
-  })), n(b, s), h()
-}
+  g as t
+} from "./BhCkpOlh.js";
+const s = () => "Pixels",
+  o = () => "Pixels",
+  i = () => "像素",
+  _ = () => "Pixel",
+  u = () => "Píxeles",
+  c = () => "Pixels",
+  l = () => "Pixel",
+  d = () => "ピクセル",
+  p = () => "Piksele",
+  f = () => "Пиксели",
+  a = () => "Пікселі",
+  h = () => "Pixel",
+  $ = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? s() : e === "pt" ? o() : e === "ch" ? i() : e === "de" ? _() : e === "es" ? u() : e === "fr" ? c() : e === "it" ? l() : e === "jp" ? d() : e === "pl" ? p() : e === "ru" ? f() : e === "uk" ? a() : h()
+  },
+  v = () => "Depth",
+  m = () => "Depth",
+  x = () => "Depth",
+  b = () => "Depth",
+  H = () => "Profundidad",
+  P = () => "Depth",
+  D = () => "Profondità",
+  k = () => "Depth",
+  M = () => "Depth",
+  j = () => "Depth",
+  g = () => "Depth",
+  L = () => "Depth",
+  ee = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? v() : e === "pt" ? m() : e === "ch" ? x() : e === "de" ? b() : e === "es" ? H() : e === "fr" ? P() : e === "it" ? D() : e === "jp" ? k() : e === "pl" ? M() : e === "ru" ? j() : e === "uk" ? g() : L()
+  },
+  S = () => "Historical",
+  q = () => "Historical",
+  w = () => "Historical",
+  y = () => "Historical",
+  z = () => "Histórico",
+  A = () => "Historical",
+  B = () => "Storico",
+  C = () => "Historical",
+  E = () => "Historical",
+  F = () => "Historical",
+  G = () => "Historical",
+  I = () => "Historical",
+  re = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? S() : e === "pt" ? q() : e === "ch" ? w() : e === "de" ? y() : e === "es" ? z() : e === "fr" ? A() : e === "it" ? B() : e === "jp" ? C() : e === "pl" ? E() : e === "ru" ? F() : e === "uk" ? G() : I()
+  },
+  J = () => "Method",
+  K = () => "Metodo",
+  N = () => "方法",
+  O = () => "Methode",
+  Q = () => "Método",
+  R = () => "Methode",
+  T = () => "Metodo",
+  U = () => "方法",
+  V = () => "Metoda",
+  W = () => "Metod",
+  X = () => "Metod",
+  Y = () => "Phuong thuc",
+  te = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? J() : e === "pt" ? K() : e === "ch" ? N() : e === "de" ? O() : e === "es" ? Q() : e === "fr" ? R() : e === "it" ? T() : e === "jp" ? U() : e === "pl" ? V() : e === "ru" ? W() : e === "uk" ? X() : Y()
+  };
 export {
-  T as R
+  ee as a, re as b, $ as p, te as r
 };

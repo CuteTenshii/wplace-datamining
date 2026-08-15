@@ -1,22 +1,22 @@
 import {
-  g as t
+  g as r
 } from "./BhCkpOlh.js";
-const u = () => "Unban",
-  e = () => "Desbanir",
-  a = () => "解封",
-  s = () => "Entbannen",
-  b = () => "Desbanear",
-  c = () => "Débannir",
-  o = () => "Unban",
-  i = () => "BANを解除",
-  f = () => "Odbanuj",
-  _ = () => "Разбанить",
-  p = () => "Розбанити",
-  l = () => "Gỡ cấm",
-  m = (d = {}, r = {}) => {
-    const n = r.locale ?? t();
-    return n === "en" ? u() : n === "pt" ? e() : n === "ch" ? a() : n === "de" ? s() : n === "es" ? b() : n === "fr" ? c() : n === "it" ? o() : n === "jp" ? i() : n === "pl" ? f() : n === "ru" ? _() : n === "uk" ? p() : l()
+const l = () => "Last pixel",
+  n = () => "Último pixel",
+  i = () => "最后一个像素",
+  s = () => "Letzter Pixel",
+  u = () => "Último píxel",
+  p = () => "Dernier pixel",
+  _ = () => "Ultimo pixel",
+  o = () => "最後のピクセル",
+  c = () => "Ostatni piksel",
+  x = () => "Последний пиксель",
+  a = () => "Останній піксель",
+  f = () => "Pixel cuối cùng",
+  k = (m = {}, e = {}) => {
+    const t = e.locale ?? r();
+    return t === "en" ? l() : t === "pt" ? n() : t === "ch" ? i() : t === "de" ? s() : t === "es" ? u() : t === "fr" ? p() : t === "it" ? _() : t === "jp" ? o() : t === "pl" ? c() : t === "ru" ? x() : t === "uk" ? a() : f()
   };
 export {
-  m as u
+  k as l
 };

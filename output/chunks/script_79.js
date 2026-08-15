@@ -1,22 +1,22 @@
 import {
-  g as n
+  g as t
 } from "./BhCkpOlh.js";
-const i = () => "Pixels painted",
-  r = () => "Pixels pintados",
-  p = () => "已绘制像素数",
-  s = () => "Gemalte Pixel",
-  l = () => "Píxeles pintados",
-  u = () => "Pixels peints",
-  _ = () => "Pixel dipinti",
-  a = () => "塗られたピクセル数",
-  o = () => "Pomalowane piksele",
-  x = () => "Нарисованные пиксели",
-  c = () => "Намальовані пікселі",
-  d = () => "Pixel đã tô",
-  m = (f = {}, t = {}) => {
-    const e = t.locale ?? n();
-    return e === "en" ? i() : e === "pt" ? r() : e === "ch" ? p() : e === "de" ? s() : e === "es" ? l() : e === "fr" ? u() : e === "it" ? _() : e === "jp" ? a() : e === "pl" ? o() : e === "ru" ? x() : e === "uk" ? c() : d()
+const n = () => "Clear",
+  c = () => "Limpar",
+  u = () => "清除",
+  a = () => "Leeren",
+  l = () => "Limpiar",
+  i = () => "Effacer",
+  o = () => "Pulisci",
+  s = () => "クリア",
+  f = () => "Wyczyść",
+  _ = () => "Очистить",
+  p = () => "Очистити",
+  m = () => "Xóa",
+  g = (L = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? n() : r === "pt" ? c() : r === "ch" ? u() : r === "de" ? a() : r === "es" ? l() : r === "fr" ? i() : r === "it" ? o() : r === "jp" ? s() : r === "pl" ? f() : r === "ru" ? _() : r === "uk" ? p() : m()
   };
 export {
-  m as p
+  g as c
 };

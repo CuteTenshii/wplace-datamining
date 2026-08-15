@@ -1,22 +1,22 @@
 import {
-  g as e
+  g as t
 } from "./BhCkpOlh.js";
-const n = () => "Team",
-  u = () => "Time",
-  a = () => "团队",
-  o = () => "Team",
-  i = () => "Equipo",
-  s = () => "Équipe",
-  c = () => "Team",
-  m = () => "チーム",
-  f = () => "Zespół",
-  p = () => "Команда",
-  _ = () => "Команда",
-  l = () => "Đội ngũ",
-  d = (T = {}, r = {}) => {
-    const t = r.locale ?? e();
-    return t === "en" ? n() : t === "pt" ? u() : t === "ch" ? a() : t === "de" ? o() : t === "es" ? i() : t === "fr" ? s() : t === "it" ? c() : t === "jp" ? m() : t === "pl" ? f() : t === "ru" ? p() : t === "uk" ? _() : l()
+const n = () => "Appeals",
+  p = () => "Apelos",
+  s = () => "申诉",
+  a = () => "Einsprüche",
+  u = () => "Apelaciones",
+  o = () => "Recours",
+  c = () => "Ricorsi",
+  l = () => "異議申立て",
+  i = () => "Odwołania",
+  f = () => "Апелляции",
+  _ = () => "Апеляції",
+  h = () => "Các kháng cáo",
+  k = (d = {}, e = {}) => {
+    const r = e.locale ?? t();
+    return r === "en" ? n() : r === "pt" ? p() : r === "ch" ? s() : r === "de" ? a() : r === "es" ? u() : r === "fr" ? o() : r === "it" ? c() : r === "jp" ? l() : r === "pl" ? i() : r === "ru" ? f() : r === "uk" ? _() : h()
   };
 export {
-  d as t
+  k as a
 };

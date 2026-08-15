@@ -1,48 +1,27 @@
+import "./Bzak7iHL.js";
 import {
-  z as d,
-  aF as g,
-  y as c,
-  aG as l,
-  B as m,
-  aH as b,
-  i as p,
-  aI as v,
-  aJ as h
+  a as e,
+  k as s
 } from "./DUZ_qUVk.js";
+import {
+  b as p
+} from "./2LwYy2UE.js";
+import {
+  r as a
+} from "./DXFW01RN.js";
+var m = new Set(["$$slots", "$$events", "$$legacy"]),
+  q = s('<svg><path d="M240-80q-50 0-85-35t-35-85v-120h120v-560l60 60 60-60 60 60 60-60 60 60 60-60 60 60 60-60 60 60 60-60v680q0 50-35 85t-85 35H240Zm480-80q17 0 28.5-11.5T760-200v-560H320v440h360v120q0 17 11.5 28.5T720-160ZM360-600v-80h240v80H360Zm0 120v-80h240v80H360Zm320-120q-17 0-28.5-11.5T640-640q0-17 11.5-28.5T680-680q17 0 28.5 11.5T720-640q0 17-11.5 28.5T680-600Zm0 120q-17 0-28.5-11.5T640-520q0-17 11.5-28.5T680-560q17 0 28.5 11.5T720-520q0 17-11.5 28.5T680-480ZM240-160h360v-80H200v40q0 17 11.5 28.5T240-160Zm-40 0v-80 80Z"></path></svg>');
 
-function y(n = !1) {
-  const s = d,
-    e = s.l.u;
-  if (!e) return;
-  let f = () => v(s.s);
-  if (n) {
-    let a = 0,
-      t = {};
-    const _ = h(() => {
-      let i = !1;
-      const r = s.s;
-      for (const o in r) r[o] !== t[o] && (t[o] = r[o], i = !0);
-      return i && a++, a
-    });
-    f = () => p(_)
-  }
-  e.b.length && g(() => {
-    u(s, f), l(e.b)
-  }), c(() => {
-    const a = m(() => e.m.map(b));
-    return () => {
-      for (const t of a) typeof t == "function" && t()
-    }
-  }), e.a.length && c(() => {
-    u(s, f), l(e.a)
-  })
-}
-
-function u(n, s) {
-  if (n.l.s)
-    for (const e of n.l.s) p(e);
-  s()
+function f(r, v) {
+  let o = a(v, m);
+  var t = q();
+  p(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...o
+  })), e(r, t)
 }
 export {
-  y as i
+  f as R
 };

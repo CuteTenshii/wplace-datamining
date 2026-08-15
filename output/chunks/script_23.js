@@ -1,7 +1,7 @@
 import {
   s as t,
   p as r
-} from "./DN3OSvEv.js";
+} from "./eNufPRMc.js";
 const a = {
   get data() {
     return r.data
