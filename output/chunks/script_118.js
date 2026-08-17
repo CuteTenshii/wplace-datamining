@@ -1,22 +1,38 @@
 import {
-  g as n
+  g as t
 } from "./BhCkpOlh.js";
-const e = () => "Sort",
-  o = () => "Ordenar",
-  s = () => "排序",
-  u = () => "Sortieren",
-  _ = () => "Ordenar",
-  a = () => "Trier",
-  c = () => "Ordinare",
-  i = () => "並べ替える",
-  f = () => "Sortować",
-  p = () => "Сортировать",
-  l = () => "Сортувати",
-  d = () => "Sắp xếp",
-  g = (S = {}, t = {}) => {
-    const r = t.locale ?? n();
-    return r === "en" ? e() : r === "pt" ? o() : r === "ch" ? s() : r === "de" ? u() : r === "es" ? _() : r === "fr" ? a() : r === "it" ? c() : r === "jp" ? i() : r === "pl" ? f() : r === "ru" ? p() : r === "uk" ? l() : d()
+const u = () => "Copied",
+  o = () => "Copiado",
+  c = () => "已复制",
+  i = () => "Kopiert",
+  s = () => "Copiado",
+  p = () => "Copié",
+  a = () => "Copiato",
+  f = () => "コピーしました。",
+  _ = () => "Skopiowano",
+  d = () => "Скопировано",
+  b = () => "Скопійовано",
+  l = () => "Đã sao chép",
+  E = (e = {}, r = {}) => {
+    const n = r.locale ?? t();
+    return n === "en" ? u() : n === "pt" ? o() : n === "ch" ? c() : n === "de" ? i() : n === "es" ? s() : n === "fr" ? p() : n === "it" ? a() : n === "jp" ? f() : n === "pl" ? _() : n === "ru" ? d() : n === "uk" ? b() : l()
+  },
+  h = () => "Unban",
+  j = () => "Desbanir",
+  k = () => "解封",
+  C = () => "Entbannen",
+  m = () => "Desbanear",
+  D = () => "Débannir",
+  g = () => "Unban",
+  v = () => "BANを解除",
+  U = () => "Odbanuj",
+  w = () => "Разбанить",
+  x = () => "Розбанити",
+  A = () => "Gỡ cấm",
+  G = (e = {}, r = {}) => {
+    const n = r.locale ?? t();
+    return n === "en" ? h() : n === "pt" ? j() : n === "ch" ? k() : n === "de" ? C() : n === "es" ? m() : n === "fr" ? D() : n === "it" ? g() : n === "jp" ? v() : n === "pl" ? U() : n === "ru" ? w() : n === "uk" ? x() : A()
   };
 export {
-  g as a
+  E as c, G as u
 };

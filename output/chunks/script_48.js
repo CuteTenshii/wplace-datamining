@@ -1,38 +1,27 @@
+import "./Bzak7iHL.js";
 import {
-  g as e
-} from "./BhCkpOlh.js";
-const u = () => "Payment succeeded",
-  o = () => "Pagamento bem sucedido",
-  _ = () => "支付成功",
-  s = () => "Zahlung erfolgreich",
-  c = () => "Pago realizado correctamente",
-  p = () => "Paiement réussi",
-  a = () => "Pagamento riuscito",
-  i = () => "支払いが完了しました。",
-  y = () => "Płatność powiodła się",
-  f = () => "Платёж прошёл успешно",
-  d = () => "Платіж виконано успішно",
-  h = () => "Thanh toán thành công",
-  x = (n = {}, t = {}) => {
-    const r = t.locale ?? e();
-    return r === "en" ? u() : r === "pt" ? o() : r === "ch" ? _() : r === "de" ? s() : r === "es" ? c() : r === "fr" ? p() : r === "it" ? a() : r === "jp" ? i() : r === "pl" ? y() : r === "ru" ? f() : r === "uk" ? d() : h()
-  },
-  m = () => "Thank you for your support!",
-  k = () => "Obrigado pelo seu apoio!",
-  l = () => "感谢你的支持！",
-  g = () => "Danke für deine Unterstützung!",
-  P = () => "¡Gracias por tu apoyo!",
-  j = () => "Merci pour votre soutien !",
-  z = () => "Grazie per il tuo supporto!",
-  b = () => "ご支援ありがとうございます！",
-  v = () => "Dziękujemy za wsparcie!",
-  w = () => "Спасибо за вашу поддержку!",
-  D = () => "Дякуємо за вашу підтримку!",
-  G = () => "Cảm ơn bạn đã ủng hộ!",
-  C = (n = {}, t = {}) => {
-    const r = t.locale ?? e();
-    return r === "en" ? m() : r === "pt" ? k() : r === "ch" ? l() : r === "de" ? g() : r === "es" ? P() : r === "fr" ? j() : r === "it" ? z() : r === "jp" ? b() : r === "pl" ? v() : r === "ru" ? w() : r === "uk" ? D() : G()
-  };
+  a as e,
+  k as a
+} from "./m4hpPlb8.js";
+import {
+  b as p
+} from "./BbR4hYuM.js";
+import {
+  r as l
+} from "./RFHi9kKd.js";
+var v = new Set(["$$slots", "$$events", "$$legacy"]),
+  f = a('<svg><path d="M480-120 300-300l58-58 122 122 122-122 58 58-180 180ZM358-598l-58-58 180-180 180 180-58 58-122-122-122 122Z"></path></svg>');
+
+function c(o, t) {
+  let s = l(t, v);
+  var r = f();
+  p(r, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...s
+  })), e(o, r)
+}
 export {
-  x as p, C as t
+  c as U
 };

@@ -1,90 +1,59 @@
+import {
+  g as l
+} from "./BhCkpOlh.js";
 import "./Bzak7iHL.js";
 import {
-  p as y,
-  w as S,
-  f as A,
-  a as o,
-  b as I,
-  d as w,
-  r,
-  t as n,
-  i as s,
-  s as k,
-  c as u,
-  u as m,
-  k as B
-} from "./DUZ_qUVk.js";
+  a,
+  k as o
+} from "./m4hpPlb8.js";
 import {
-  i as C
-} from "./BLc2SwOK.js";
+  b as p
+} from "./BbR4hYuM.js";
 import {
-  h as f
-} from "./Dk_Sh0M8.js";
-import {
-  a as g,
-  s as L,
-  b as Z
-} from "./2LwYy2UE.js";
-import {
-  p as j,
-  r as z
-} from "./DXFW01RN.js";
-import {
-  a as E
-} from "./DEFkucFg.js";
-import {
-  m as M
-} from "./DL7IYaEo.js";
-var O = u('<div><img alt="" class="size-full object-cover" style="image-rendering: pixelated" draggable="false"/></div>'),
-  Q = u('<div aria-hidden="true"><div class="absolute -top-1/2 -right-4 aspect-square h-[200%] rotate-12 opacity-25 select-none"></div> <div class="absolute -bottom-1/3 left-6 aspect-square h-[110%] -rotate-6 opacity-15 select-none"></div></div>'),
-  D = u("<div></div>");
+  r as s
+} from "./RFHi9kKd.js";
+const c = () => "Ban appeal",
+  u = () => "Revisão de banimento",
+  i = () => "封禁申诉",
+  v = () => "Bann-Einspruch",
+  _ = () => "Apelación de ban",
+  f = () => "Recours de bannissement",
+  m = () => "Ricorso contro il ban",
+  q = () => "BANの異議申立て",
+  b = () => "Odwołanie od bana",
+  h = () => "Апелляция на бан",
+  g = () => "Апеляція на бан",
+  T = () => "Kháng cáo lệnh cấm",
+  R = (n = {}, t = {}) => {
+    const r = t.locale ?? l();
+    return r === "en" ? c() : r === "pt" ? u() : r === "ch" ? i() : r === "de" ? v() : r === "es" ? _() : r === "fr" ? f() : r === "it" ? m() : r === "jp" ? q() : r === "pl" ? b() : r === "ru" ? h() : r === "uk" ? g() : T()
+  };
+var $ = new Set(["$$slots", "$$events", "$$legacy"]),
+  w = o('<svg><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"></path></svg>');
 
-function W(v, e) {
-  y(e, !0);
-  let c = j(e, "variant", 3, "picture");
-  const l = m(() => e.seed && e.seed.length > 0 ? e.seed : `alliance-${e.allianceId}`),
-    d = m(() => M(s(l), 95, 45)),
-    h = m(() => E(e.allianceId));
-  var _ = S(),
-    p = A(_);
-  {
-    var q = t => {
-        var a = O(),
-          i = w(a);
-        r(a), n(() => {
-          g(a, 1, `overflow-hidden bg-white ${e.class??""??""}`), L(i, "src", e.imageSrc)
-        }), o(t, a)
-      },
-      T = t => {
-        var a = Q(),
-          i = w(a);
-        f(i, () => s(d), !0), r(i);
-        var b = k(i, 2);
-        f(b, () => s(d), !0), r(b), r(a), n(() => g(a, 1, `relative overflow-hidden ${s(h)??""} ${e.class??""??""}`)), o(t, a)
-      },
-      x = t => {
-        var a = D();
-        f(a, () => s(d), !0), r(a), n(() => g(a, 1, `overflow-hidden ${s(h)??""} ${e.class??""??""}`)), o(t, a)
-      };
-    C(p, t => {
-      e.imageSrc ? t(q) : c() === "banner" ? t(T, 1) : t(x, -1)
-    })
-  }
-  o(v, _), I()
-}
-var F = new Set(["$$slots", "$$events", "$$legacy"]),
-  G = B('<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>');
-
-function X(v, e) {
-  let c = z(e, F);
-  var l = G();
-  Z(l, () => ({
+function j(n, t) {
+  let r = s(t, $);
+  var e = w();
+  p(e, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
     fill: "currentColor",
-    ...c
-  })), o(v, l)
+    ...r
+  })), a(n, e)
+}
+var d = new Set(["$$slots", "$$events", "$$legacy"]),
+  Z = o('<svg><path d="m336-280 144-144 144 144 56-56-144-144 144-144-56-56-144 144-144-144-56 56 144 144-144 144 56 56ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"></path></svg>');
+
+function A(n, t) {
+  let r = s(t, d);
+  var e = Z();
+  p(e, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...r
+  })), a(n, e)
 }
 export {
-  W as A, X as L
+  A as C, j as T, R as b
 };

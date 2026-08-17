@@ -1,22 +1,27 @@
+import "./Bzak7iHL.js";
 import {
-  g as o
-} from "./BhCkpOlh.js";
-const e = () => "Go to store",
-  n = () => "Ir para a loja",
-  _ = () => "前往商店",
-  s = () => "Zum Shop",
-  u = () => "Ir a la tienda",
-  c = () => "Aller à la boutique",
-  i = () => "Vai al negozio",
-  g = () => "ストアへ",
-  a = () => "Przejdź do sklepu",
-  f = () => "Перейти в магазин",
-  l = () => "Перейти до магазину",
-  p = () => "Đến cửa hàng",
-  j = (d = {}, r = {}) => {
-    const t = r.locale ?? o();
-    return t === "en" ? e() : t === "pt" ? n() : t === "ch" ? _() : t === "de" ? s() : t === "es" ? u() : t === "fr" ? c() : t === "it" ? i() : t === "jp" ? g() : t === "pl" ? a() : t === "ru" ? f() : t === "uk" ? l() : p()
-  };
+  a as e,
+  k as a
+} from "./m4hpPlb8.js";
+import {
+  b as p
+} from "./BbR4hYuM.js";
+import {
+  r as m
+} from "./RFHi9kKd.js";
+var l = new Set(["$$slots", "$$events", "$$legacy"]),
+  v = a('<svg><path d="m356-160-56-56 180-180 180 180-56 56-124-124-124 124Zm124-404L300-744l56-56 124 124 124-124 56 56-180 180Z"></path></svg>');
+
+function c(t, o) {
+  let s = m(o, l);
+  var r = v();
+  p(r, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...s
+  })), e(t, r)
+}
 export {
-  j as g
+  c as U
 };

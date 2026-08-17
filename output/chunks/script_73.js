@@ -1,67 +1,71 @@
 import "./Bzak7iHL.js";
 import {
-  p as x,
+  p as R,
+  d as i,
+  r as l,
   t as m,
-  a as p,
-  b as g,
-  c as f,
-  d as _,
-  s as b,
-  r as h
-} from "./DUZ_qUVk.js";
+  a as n,
+  b as h,
+  s as f,
+  c as g
+} from "./m4hpPlb8.js";
+import {
+  s as _
+} from "./riRxs-wl.js";
 import {
   i as w
-} from "./BLc2SwOK.js";
+} from "./DqioGq2r.js";
 import {
-  b as z,
-  a as c,
-  s as k
-} from "./2LwYy2UE.js";
+  a as E
+} from "./BbR4hYuM.js";
 import {
-  p as L,
-  r as T
-} from "./DXFW01RN.js";
+  p as y
+} from "./RFHi9kKd.js";
 import {
-  l as y
-} from "./B_Oz03f8.js";
-var S = new Set(["$$slots", "$$events", "$$legacy", "hasText", "size"]),
-  U = f("<span>wplace</span>"),
-  W = f('<div><img alt="Wplace logo"/> <!></div>');
+  R as O,
+  a as z
+} from "./TTfhDrzz.js";
+import {
+  L as v
+} from "./BQLD8HzL.js";
+var c = g('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
+  A = g("<span><!></span>");
 
-function E(n, t) {
-  x(t, !0);
-  let e = L(t, "size", 3, "default"),
-    d = T(t, S);
-  var a = W();
-  z(a, () => ({
-    ...d,
-    class: `flex items-center gap-1.5 ${t.class??""}`
-  }));
-  var s = _(a);
-  let r;
-  var u = b(s, 2);
+function T(b, e) {
+  R(e, !0);
+  let p = y(e, "big", 3, !1);
+  var s = A();
+  let d;
+  var u = i(s);
   {
-    var v = l => {
-      var o = U();
-      let i;
-      m(() => i = c(o, 1, "text-base-content font-pixel", null, i, {
-        "text-4xl": e() === "default",
-        "text-5xl": e() === "lg" || e() === "medium"
-      })), p(l, o)
-    };
-    w(u, l => {
-      t.hasText && l(v)
+    var x = r => {
+        var a = c(),
+          t = i(a);
+        v(t, {
+          size: "none"
+        });
+        var o = f(t, 1, !0);
+        l(a), m(() => _(o, O[e.role])), n(r, a)
+      },
+      L = r => {
+        var a = c(),
+          t = i(a);
+        v(t, {
+          size: "small"
+        });
+        var o = f(t, 1, !0);
+        l(a), m(() => _(o, z[e.role])), n(r, a)
+      };
+    w(u, r => {
+      p() ? r(x) : r(L, -1)
     })
   }
-  h(a), m(() => {
-    r = c(s, 1, "pixelated h-auto shrink-0", null, r, {
-      "w-4": e() === "small",
-      "w-10": e() === "default",
-      "w-16": e() === "medium",
-      "w-20": e() === "lg"
-    }), k(s, "src", y)
-  }), p(n, a), g()
+  l(s), m(() => d = E(s, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center pt-0.5 leading-none font-semibold whitespace-nowrap shadow", null, d, {
+    "badge-info": e.role === "admin",
+    "badge-secondary": e.role === "sac" || e.role === "game_master" || e.role === "game_master_leader" || e.role === "dev",
+    "badge-warning": e.role === "discord_mod" || e.role === "discord_leader"
+  })), n(b, s), h()
 }
 export {
-  E as L
+  T as R
 };

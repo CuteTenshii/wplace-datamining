@@ -1,149 +1,70 @@
 import {
-  g as n
+  g as t
 } from "./BhCkpOlh.js";
-import {
-  u as s
-} from "./DKkygPh8.js";
-const a = () => "Administrator",
-  o = () => "Administrador",
-  d = () => "管理员",
-  i = () => "Administrator",
-  u = () => "Administrador",
-  c = () => "Administrateur",
-  _ = () => "Amministratore",
-  m = () => "管理者",
-  f = () => "Administrator",
-  l = () => "Администратор",
-  p = () => "Адміністратор",
-  D = () => "Quản trị viên",
-  v = (t = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? a() : r === "pt" ? o() : r === "ch" ? d() : r === "de" ? i() : r === "es" ? u() : r === "fr" ? c() : r === "it" ? _() : r === "jp" ? m() : r === "pl" ? f() : r === "ru" ? l() : r === "uk" ? p() : D()
+const a = () => "Load more",
+  s = () => "Carregar mais",
+  l = () => "加载更多",
+  o = () => "Mehr laden",
+  u = () => "Cargar más",
+  _ = () => "Charger plus",
+  c = () => "Carica altro",
+  i = () => "さらに読み込む",
+  p = () => "Wczytaj więcej",
+  d = () => "Загрузить ещё",
+  f = () => "Завантажити ще",
+  m = () => "Tải thêm",
+  $ = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? a() : e === "pt" ? s() : e === "ch" ? l() : e === "de" ? o() : e === "es" ? u() : e === "fr" ? _() : e === "it" ? c() : e === "jp" ? i() : e === "pl" ? p() : e === "ru" ? d() : e === "uk" ? f() : m()
   },
-  M = () => "Discord Leaders",
-  g = () => "Líderes do Discord",
-  G = () => "Discord 负责人",
-  L = () => "Discord-Leiter",
-  A = () => "Líderes de Discord",
-  h = () => "Leaders Discord",
-  S = () => "Leader Discord",
-  j = () => "Discordリーダー",
-  k = () => "Liderzy Discorda",
-  C = () => "Лидеры Discord",
-  R = () => "Лідери Discord",
-  E = () => "Trưởng nhóm Discord",
-  O = (t = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? M() : r === "pt" ? g() : r === "ch" ? G() : r === "de" ? L() : r === "es" ? A() : r === "fr" ? h() : r === "it" ? S() : r === "jp" ? j() : r === "pl" ? k() : r === "ru" ? C() : r === "uk" ? R() : E()
+  h = () => "Player",
+  y = () => "Jogador",
+  g = () => "玩家",
+  j = () => "Spieler",
+  k = () => "Jugador",
+  v = () => "Joueur",
+  N = () => "Giocatore",
+  x = () => "プレイヤー",
+  C = () => "Gracz",
+  z = () => "Игрок",
+  E = () => "Гравець",
+  G = () => "Người chơi",
+  ee = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? h() : e === "pt" ? y() : e === "ch" ? g() : e === "de" ? j() : e === "es" ? k() : e === "fr" ? v() : e === "it" ? N() : e === "jp" ? x() : e === "pl" ? C() : e === "ru" ? z() : e === "uk" ? E() : G()
   },
-  N = () => "Discord Moderator",
-  T = () => "Moderador do Discord",
-  x = () => "Discord 管理员",
-  y = () => "Discord-Moderator",
-  z = () => "Moderador de Discord",
-  F = () => "Modérateur Discord",
-  H = () => "Moderatore Discord",
-  Q = () => "Discordモデレーター",
-  U = () => "Moderator Discord",
-  b = () => "Модератор Discord",
-  q = () => "Модератор Discord",
-  w = () => "Discord Moderator",
-  B = (t = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? N() : r === "pt" ? T() : r === "ch" ? x() : r === "de" ? y() : r === "es" ? z() : r === "fr" ? F() : r === "it" ? H() : r === "jp" ? Q() : r === "pl" ? U() : r === "ru" ? b() : r === "uk" ? q() : w()
+  J = () => "Deleted",
+  S = () => "Excluido",
+  w = () => "已删除",
+  K = () => "Gelöscht",
+  L = () => "Eliminado",
+  b = () => "Supprimé",
+  A = () => "Eliminato",
+  D = () => "削除済み",
+  F = () => "Usunięte",
+  M = () => "Удалено",
+  P = () => "Видалено",
+  T = () => "Đã xóa",
+  re = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? J() : e === "pt" ? S() : e === "ch" ? w() : e === "de" ? K() : e === "es" ? L() : e === "fr" ? b() : e === "it" ? A() : e === "jp" ? D() : e === "pl" ? F() : e === "ru" ? M() : e === "uk" ? P() : T()
   },
-  I = () => "Game Master",
-  J = () => "Game Master",
-  K = () => "Game Master",
-  P = () => "Game Master",
-  V = () => "Game Master",
-  W = () => "Game Master",
-  X = () => "Game Master",
-  Y = () => "Game Master",
-  Z = () => "Game Master",
-  $ = () => "Game Master",
-  rr = () => "Game Master",
-  er = () => "Game Master",
-  tr = (t = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? I() : r === "pt" ? J() : r === "ch" ? K() : r === "de" ? P() : r === "es" ? V() : r === "fr" ? W() : r === "it" ? X() : r === "jp" ? Y() : r === "pl" ? Z() : r === "ru" ? $() : r === "uk" ? rr() : er()
-  },
-  nr = () => "Game Master Leader",
-  sr = () => "Game Master Leader",
-  ar = () => "Game Master Leader",
-  or = () => "Game Master Leader",
-  dr = () => "Game Master Leader",
-  ir = () => "Game Master Leader",
-  ur = () => "Game Master Leader",
-  cr = () => "Game Master Leader",
-  _r = () => "Game Master Leader",
-  mr = () => "Game Master Leader",
-  fr = () => "Game Master Leader",
-  lr = () => "Game Master Leader",
-  pr = (t = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? nr() : r === "pt" ? sr() : r === "ch" ? ar() : r === "de" ? or() : r === "es" ? dr() : r === "fr" ? ir() : r === "it" ? ur() : r === "jp" ? cr() : r === "pl" ? _r() : r === "ru" ? mr() : r === "uk" ? fr() : lr()
-  },
-  Dr = () => "SAC",
-  vr = () => "SAC",
-  Mr = () => "SAC",
-  gr = () => "SAC",
-  Gr = () => "SAC",
-  Lr = () => "SAC",
-  Ar = () => "SAC",
-  hr = () => "SAC",
-  Sr = () => "SAC",
-  jr = () => "SAC",
-  kr = () => "SAC",
-  Cr = () => "SAC",
-  Rr = (t = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? Dr() : r === "pt" ? vr() : r === "ch" ? Mr() : r === "de" ? gr() : r === "es" ? Gr() : r === "fr" ? Lr() : r === "it" ? Ar() : r === "jp" ? hr() : r === "pl" ? Sr() : r === "ru" ? jr() : r === "uk" ? kr() : Cr()
-  },
-  Er = () => "Developer",
-  Or = () => "Developer",
-  Nr = () => "Developer",
-  Tr = () => "Developer",
-  xr = () => "Developer",
-  yr = () => "Developer",
-  zr = () => "Developer",
-  Fr = () => "Developer",
-  Hr = () => "Developer",
-  Qr = () => "Developer",
-  Ur = () => "Developer",
-  br = () => "Developer",
-  qr = (t = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? Er() : r === "pt" ? Or() : r === "ch" ? Nr() : r === "de" ? Tr() : r === "es" ? xr() : r === "fr" ? yr() : r === "it" ? zr() : r === "jp" ? Fr() : r === "pl" ? Hr() : r === "ru" ? Qr() : r === "uk" ? Ur() : br()
-  };
-
-function wr(t, e) {
-  return e.includes(t)
-}
-
-function Jr(t) {
-  return wr(t, ["sac", "game_master", "game_master_leader", "dev", "admin"])
-}
-const Kr = {
-    user: s(),
-    discord_mod: "Disc. Mod",
-    discord_leader: "Disc. Lead",
-    sac: "SAC",
-    game_master: "GM",
-    game_master_leader: "GM Lead",
-    dev: "Dev",
-    admin: "Admin"
-  },
-  Pr = {
-    user: s(),
-    discord_mod: B(),
-    discord_leader: O(),
-    sac: Rr(),
-    game_master: tr(),
-    game_master_leader: pr(),
-    dev: qr(),
-    admin: v()
+  U = () => "No players match the current filters.",
+  W = () => "Nenhum jogador corresponde aos filtros atuais.",
+  q = () => "没有玩家符合当前筛选条件。",
+  B = () => "Keine Spieler entsprechen den aktuellen Filtern.",
+  H = () => "Ningún jugador coincide con los filtros actuales.",
+  I = () => "Aucun joueur ne correspond aux filtres actuels.",
+  O = () => "Nessun giocatore corrisponde ai filtri attuali.",
+  Q = () => "現在のフィルターに一致するプレイヤーはいません。",
+  R = () => "Żaden gracz nie pasuje do aktualnych filtrów.",
+  V = () => "Нет игроков, соответствующих текущим фильтрам.",
+  X = () => "Жоден гравець не відповідає поточним фільтрам.",
+  Y = () => "Không có người chơi nào khớp với bộ lọc hiện tại.",
+  te = (n = {}, r = {}) => {
+    const e = r.locale ?? t();
+    return e === "en" ? U() : e === "pt" ? W() : e === "ch" ? q() : e === "de" ? B() : e === "es" ? H() : e === "fr" ? I() : e === "it" ? O() : e === "jp" ? Q() : e === "pl" ? R() : e === "ru" ? V() : e === "uk" ? X() : Y()
   };
 export {
-  Pr as R, Kr as a, tr as g, Jr as i
+  re as a, $ as l, ee as p, te as s
 };

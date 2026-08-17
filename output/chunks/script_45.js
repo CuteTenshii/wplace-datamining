@@ -1,27 +1,38 @@
-import "./Bzak7iHL.js";
 import {
-  a as e,
-  k as a
-} from "./DUZ_qUVk.js";
-import {
-  b as p
-} from "./2LwYy2UE.js";
-import {
-  r as m
-} from "./DXFW01RN.js";
-var l = new Set(["$$slots", "$$events", "$$legacy"]),
-  v = a('<svg><path d="m356-160-56-56 180-180 180 180-56 56-124-124-124 124Zm124-404L300-744l56-56 124 124 124-124 56 56-180 180Z"></path></svg>');
-
-function c(t, o) {
-  let s = m(o, l);
-  var r = v();
-  p(r, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...s
-  })), e(t, r)
-}
+  g as e
+} from "./BhCkpOlh.js";
+const n = () => "Droplets",
+  o = () => "Droplets",
+  u = () => "Droplets",
+  i = () => "Droplets",
+  p = () => "Droplets",
+  l = () => "Droplets",
+  c = () => "Droplets",
+  f = () => "Droplets",
+  m = () => "Droplets",
+  _ = () => "Droplets",
+  d = () => "Droplets",
+  D = () => "Droplets",
+  z = (s = {}, t = {}) => {
+    const r = t.locale ?? e();
+    return r === "en" ? n() : r === "pt" ? o() : r === "ch" ? u() : r === "de" ? i() : r === "es" ? p() : r === "fr" ? l() : r === "it" ? c() : r === "jp" ? f() : r === "pl" ? m() : r === "ru" ? _() : r === "uk" ? d() : D()
+  },
+  P = () => "Prism",
+  a = () => "Prisma",
+  h = () => "Prism",
+  j = () => "Prism",
+  k = () => "Prism",
+  g = () => "Prism",
+  v = () => "Prism",
+  x = () => "Prism",
+  L = () => "Prism",
+  b = () => "Prism",
+  q = () => "Prism",
+  w = () => "Prism",
+  A = (s = {}, t = {}) => {
+    const r = t.locale ?? e();
+    return r === "en" ? P() : r === "pt" ? a() : r === "ch" ? h() : r === "de" ? j() : r === "es" ? k() : r === "fr" ? g() : r === "it" ? v() : r === "jp" ? x() : r === "pl" ? L() : r === "ru" ? b() : r === "uk" ? q() : w()
+  };
 export {
-  c as U
+  z as d, A as p
 };

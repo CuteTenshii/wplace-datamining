@@ -1,38 +1,48 @@
 import {
-  g as i
-} from "./BhCkpOlh.js";
-const n = () => "Enter a valid user ID",
-  u = () => "Informe um ID válido",
-  s = () => "请输入有效的用户 ID",
-  d = () => "Gib eine gültige Benutzer-ID ein",
-  o = () => "Introduce un ID de usuario válido",
-  _ = () => "Entrez un ID d’utilisateur valide",
-  c = () => "Inserisci un ID valido",
-  l = () => "有効なユーザーIDを入力してください。",
-  p = () => "Wprowadź prawidłowe ID użytkownika",
-  a = () => "Введите корректный ID пользователя",
-  f = () => "Введіть коректний ID користувача",
-  v = () => "Nhập một ID người dùng hợp lệ",
-  y = (t = {}, e = {}) => {
-    const r = e.locale ?? i();
-    return r === "en" ? n() : r === "pt" ? u() : r === "ch" ? s() : r === "de" ? d() : r === "es" ? o() : r === "fr" ? _() : r === "it" ? c() : r === "jp" ? l() : r === "pl" ? p() : r === "ru" ? a() : r === "uk" ? f() : v()
-  },
-  m = () => "Reddit",
-  I = () => "Reddit",
-  D = () => "Reddit",
-  R = () => "Reddit",
-  g = () => "Reddit",
-  h = () => "Reddit",
-  k = () => "Reddit",
-  j = () => "Reddit",
-  w = () => "Reddit",
-  z = () => "Reddit",
-  E = () => "Reddit",
-  b = () => "Reddit",
-  B = (t = {}, e = {}) => {
-    const r = e.locale ?? i();
-    return r === "en" ? m() : r === "pt" ? I() : r === "ch" ? D() : r === "de" ? R() : r === "es" ? g() : r === "fr" ? h() : r === "it" ? k() : r === "jp" ? j() : r === "pl" ? w() : r === "ru" ? z() : r === "uk" ? E() : b()
-  };
+  z as d,
+  aF as g,
+  y as c,
+  aG as l,
+  B as m,
+  aH as b,
+  i as p,
+  aI as v,
+  aJ as h
+} from "./m4hpPlb8.js";
+
+function y(n = !1) {
+  const s = d,
+    e = s.l.u;
+  if (!e) return;
+  let f = () => v(s.s);
+  if (n) {
+    let a = 0,
+      t = {};
+    const _ = h(() => {
+      let i = !1;
+      const r = s.s;
+      for (const o in r) r[o] !== t[o] && (t[o] = r[o], i = !0);
+      return i && a++, a
+    });
+    f = () => p(_)
+  }
+  e.b.length && g(() => {
+    u(s, f), l(e.b)
+  }), c(() => {
+    const a = m(() => e.m.map(b));
+    return () => {
+      for (const t of a) typeof t == "function" && t()
+    }
+  }), e.a.length && c(() => {
+    u(s, f), l(e.a)
+  })
+}
+
+function u(n, s) {
+  if (n.l.s)
+    for (const e of n.l.s) p(e);
+  s()
+}
 export {
-  y as p, B as r
+  y as i
 };

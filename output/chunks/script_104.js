@@ -1,99 +1,166 @@
 import {
-  g as p
+  g as n
 } from "./BhCkpOlh.js";
-import "./Bzak7iHL.js";
-import {
-  a as i,
-  k as a,
-  w as h,
-  f as d
-} from "./DUZ_qUVk.js";
-import {
-  b as l
-} from "./2LwYy2UE.js";
-import {
-  r as v,
-  p as g
-} from "./DXFW01RN.js";
-import {
-  i as m
-} from "./BLc2SwOK.js";
-const w = () => "Edit",
-  T = () => "Editar",
-  _ = () => "编辑",
-  $ = () => "Bearbeiten",
-  Z = () => "Editar",
-  x = () => "Modifier",
-  H = () => "Modifica",
-  M = () => "編集",
-  Q = () => "Edytuj",
-  C = () => "Редактировать",
-  S = () => "Редагувати",
-  B = () => "Chỉnh sửa",
-  J = (o = {}, r = {}) => {
-    const t = r.locale ?? p();
-    return t === "en" ? w() : t === "pt" ? T() : t === "ch" ? _() : t === "de" ? $() : t === "es" ? Z() : t === "fr" ? x() : t === "it" ? H() : t === "jp" ? M() : t === "pl" ? Q() : t === "ru" ? C() : t === "uk" ? S() : B()
+const a = () => "The whole alliance",
+  _ = () => "A aliança inteira",
+  i = () => "整个联盟",
+  l = () => "Die gesamte Allianz",
+  c = () => "Toda la alianza",
+  o = () => "Toute l'alliance",
+  u = () => "L'intera alleanza",
+  s = () => "アライアンス全体",
+  f = () => "Cały sojusz",
+  p = () => "Весь альянс",
+  d = () => "Весь альянс",
+  g = () => "Toàn bộ liên minh",
+  be = (e = {}, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? a() : r === "pt" ? _() : r === "ch" ? i() : r === "de" ? l() : r === "es" ? c() : r === "fr" ? o() : r === "it" ? u() : r === "jp" ? s() : r === "pl" ? f() : r === "ru" ? p() : r === "uk" ? d() : g()
+  },
+  h = e => `Draft #${e.id}`,
+  b = e => `Rascunho #${e.id}`,
+  v = e => `草稿 #${e.id}`,
+  m = e => `Entwurf #${e.id}`,
+  $ = e => `Borrador #${e.id}`,
+  q = e => `Brouillon #${e.id}`,
+  j = e => `Bozza #${e.id}`,
+  k = e => `下書き #${e.id}`,
+  z = e => `Szkic #${e.id}`,
+  B = e => `Черновик #${e.id}`,
+  w = e => `Чернетка #${e.id}`,
+  P = e => `Bản nháp #${e.id}`,
+  ve = (e, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? h(e) : r === "pt" ? b(e) : r === "ch" ? v(e) : r === "de" ? m(e) : r === "es" ? $(e) : r === "fr" ? q(e) : r === "it" ? j(e) : r === "jp" ? k(e) : r === "pl" ? z(e) : r === "ru" ? B(e) : r === "uk" ? w(e) : P(e)
+  },
+  E = e => `Event #${e.id}`,
+  V = e => `Evento #${e.id}`,
+  C = e => `事件 #${e.id}`,
+  L = e => `Event #${e.id}`,
+  S = e => `Evento #${e.id}`,
+  y = e => `Événement #${e.id}`,
+  H = e => `Evento #${e.id}`,
+  T = e => `イベント #${e.id}`,
+  R = e => `Wydarzenie #${e.id}`,
+  A = e => `Событие #${e.id}`,
+  D = e => `Подія #${e.id}`,
+  F = e => `Sự kiện #${e.id}`,
+  me = (e, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? E(e) : r === "pt" ? V(e) : r === "ch" ? C(e) : r === "de" ? L(e) : r === "es" ? S(e) : r === "fr" ? y(e) : r === "it" ? H(e) : r === "jp" ? T(e) : r === "pl" ? R(e) : r === "ru" ? A(e) : r === "uk" ? D(e) : F(e)
+  },
+  I = e => `Version #${e.id}`,
+  W = e => `Versão #${e.id}`,
+  x = e => `版本 #${e.id}`,
+  U = e => `Version #${e.id}`,
+  Z = e => `Versión #${e.id}`,
+  G = e => `Version #${e.id}`,
+  J = e => `Versione #${e.id}`,
+  K = e => `バージョン #${e.id}`,
+  M = e => `Wersja #${e.id}`,
+  N = e => `Версия #${e.id}`,
+  O = e => `Версія #${e.id}`,
+  Q = e => `Phiên bản #${e.id}`,
+  $e = (e, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? I(e) : r === "pt" ? W(e) : r === "ch" ? x(e) : r === "de" ? U(e) : r === "es" ? Z(e) : r === "fr" ? G(e) : r === "it" ? J(e) : r === "jp" ? K(e) : r === "pl" ? M(e) : r === "ru" ? N(e) : r === "uk" ? O(e) : Q(e)
+  },
+  X = () => "Profile picture",
+  Y = () => "Foto do perfil",
+  rr = () => "头像",
+  er = () => "Profilbild",
+  tr = () => "Foto de perfil",
+  nr = () => "Image de profil",
+  ar = () => "Immagine del profilo",
+  _r = () => "プロフィール画像",
+  ir = () => "Zdjęcie profilowe",
+  lr = () => "Изображение профиля",
+  cr = () => "Зображення профілю",
+  or = () => "Ảnh đại diện",
+  qe = (e = {}, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? X() : r === "pt" ? Y() : r === "ch" ? rr() : r === "de" ? er() : r === "es" ? tr() : r === "fr" ? nr() : r === "it" ? ar() : r === "jp" ? _r() : r === "pl" ? ir() : r === "ru" ? lr() : r === "uk" ? cr() : or()
+  },
+  ur = () => "Profile banner",
+  sr = () => "Banner do perfil",
+  fr = () => "横幅",
+  pr = () => "Profilbanner",
+  dr = () => "Banner del perfil",
+  gr = () => "Bannière de profil",
+  hr = () => "Banner del profilo",
+  br = () => "プロフィールバナー",
+  vr = () => "Baner profilu",
+  mr = () => "Баннер профиля",
+  $r = () => "Банер профілю",
+  qr = () => "Ảnh bìa",
+  je = (e = {}, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? ur() : r === "pt" ? sr() : r === "ch" ? fr() : r === "de" ? pr() : r === "es" ? dr() : r === "fr" ? gr() : r === "it" ? hr() : r === "jp" ? br() : r === "pl" ? vr() : r === "ru" ? mr() : r === "uk" ? $r() : qr()
+  },
+  jr = () => "Picture draft",
+  kr = () => "Rascunho da foto",
+  zr = () => "头像草稿",
+  Br = () => "Bildentwurf",
+  wr = () => "Borrador de la foto",
+  Pr = () => "Brouillon d'image",
+  Er = () => "Bozza dell'immagine",
+  Vr = () => "画像の下書き",
+  Cr = () => "Szkic zdjęcia",
+  Lr = () => "Черновик изображения",
+  Sr = () => "Чернетка зображення",
+  yr = () => "Bản nháp ảnh đại diện",
+  ke = (e = {}, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? jr() : r === "pt" ? kr() : r === "ch" ? zr() : r === "de" ? Br() : r === "es" ? wr() : r === "fr" ? Pr() : r === "it" ? Er() : r === "jp" ? Vr() : r === "pl" ? Cr() : r === "ru" ? Lr() : r === "uk" ? Sr() : yr()
+  },
+  Hr = () => "Banner draft",
+  Tr = () => "Rascunho do banner",
+  Rr = () => "横幅草稿",
+  Ar = () => "Bannerentwurf",
+  Dr = () => "Borrador del banner",
+  Fr = () => "Brouillon de bannière",
+  Ir = () => "Bozza del banner",
+  Wr = () => "バナーの下書き",
+  xr = () => "Szkic banera",
+  Ur = () => "Черновик баннера",
+  Zr = () => "Чернетка банера",
+  Gr = () => "Bản nháp ảnh bìa",
+  ze = (e = {}, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? Hr() : r === "pt" ? Tr() : r === "ch" ? Rr() : r === "de" ? Ar() : r === "es" ? Dr() : r === "fr" ? Fr() : r === "it" ? Ir() : r === "jp" ? Wr() : r === "pl" ? xr() : r === "ru" ? Ur() : r === "uk" ? Zr() : Gr()
+  },
+  Jr = () => "Headquarters canvas",
+  Kr = () => "Canvas da sede",
+  Mr = () => "总部画布",
+  Nr = () => "Hauptquartier-Canvas",
+  Or = () => "Lienzo del cuartel general",
+  Qr = () => "Canvas du quartier général",
+  Xr = () => "Canvas del quartier generale",
+  Yr = () => "拠点のキャンバス",
+  re = () => "Płótno siedziby",
+  ee = () => "Холст штаб-квартиры",
+  te = () => "Полотно штаб-квартири",
+  ne = () => "Bảng vẽ trụ sở",
+  Be = (e = {}, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? Jr() : r === "pt" ? Kr() : r === "ch" ? Mr() : r === "de" ? Nr() : r === "es" ? Or() : r === "fr" ? Qr() : r === "it" ? Xr() : r === "jp" ? Yr() : r === "pl" ? re() : r === "ru" ? ee() : r === "uk" ? te() : ne()
+  },
+  ae = () => "Headquarters location",
+  _e = () => "Localização da sede",
+  ie = () => "总部位置",
+  le = () => "Standort des Hauptquartiers",
+  ce = () => "Ubicación del cuartel general",
+  oe = () => "Emplacement du quartier général",
+  ue = () => "Posizione del quartier generale",
+  se = () => "拠点の場所",
+  fe = () => "Lokalizacja siedziby",
+  pe = () => "Расположение штаб-квартиры",
+  de = () => "Розташування штаб-квартири",
+  ge = () => "Vị trí trụ sở",
+  we = (e = {}, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? ae() : r === "pt" ? _e() : r === "ch" ? ie() : r === "de" ? le() : r === "es" ? ce() : r === "fr" ? oe() : r === "it" ? ue() : r === "jp" ? se() : r === "pl" ? fe() : r === "ru" ? pe() : r === "uk" ? de() : ge()
   };
-var b = new Set(["$$slots", "$$events", "$$legacy"]),
-  k = a('<svg><path d="M841-518v318q0 33-23.5 56.5T761-120H201q-33 0-56.5-23.5T121-200v-318q-23-21-35.5-54t-.5-72l42-136q8-26 28.5-43t47.5-17h556q27 0 47 16.5t29 43.5l42 136q12 39-.5 71T841-518Zm-272-42q27 0 41-18.5t11-41.5l-22-140h-78v148q0 21 14 36.5t34 15.5Zm-180 0q23 0 37.5-15.5T441-612v-148h-78l-22 140q-4 24 10.5 42t37.5 18Zm-178 0q18 0 31.5-13t16.5-33l22-154h-78l-40 134q-6 20 6.5 43t41.5 23Zm540 0q29 0 42-23t6-43l-42-134h-76l22 154q3 20 16.5 33t31.5 13ZM201-200h560v-282q-5 2-6.5 2H751q-27 0-47.5-9T663-518q-18 18-41 28t-49 10q-27 0-50.5-10T481-518q-17 18-39.5 28T393-480q-29 0-52.5-10T299-518q-21 21-41.5 29.5T211-480h-4.5q-2.5 0-5.5-2v282Zm560 0H201h560Z"></path></svg>');
-
-function K(o, r) {
-  let t = v(r, b);
-  var e = k();
-  l(e, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...t
-  })), i(o, e)
-}
-var y = new Set(["$$slots", "$$events", "$$legacy"]),
-  E = a('<svg><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Z"></path></svg>');
-
-function N(o, r) {
-  let t = v(r, y);
-  var e = E();
-  l(e, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...t
-  })), i(o, e)
-}
-var j = new Set(["$$slots", "$$events", "$$legacy", "filled"]),
-  I = a('<svg><path d="M223.5-103.5Q200-127 200-160t23.5-56.5Q247-240 280-240t56.5 23.5Q360-193 360-160t-23.5 56.5Q313-80 280-80t-56.5-23.5Zm400 0Q600-127 600-160t23.5-56.5Q647-240 680-240t56.5 23.5Q760-193 760-160t-23.5 56.5Q713-80 680-80t-56.5-23.5ZM208-800h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Z"></path></svg>'),
-  L = a('<svg><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"></path></svg>');
-
-function O(o, r) {
-  let t = g(r, "filled", 3, !1),
-    e = v(r, j);
-  var q = h(),
-    u = d(q);
-  {
-    var c = s => {
-        var n = I();
-        l(n, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...e
-        })), i(s, n)
-      },
-      f = s => {
-        var n = L();
-        l(n, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...e
-        })), i(s, n)
-      };
-    m(u, s => {
-      t() ? s(c) : s(f, -1)
-    })
-  }
-  i(o, q)
-}
 export {
-  N as P, K as S, O as a, J as e
+  be as a, we as b, Be as c, je as d, qe as e, ze as f, ke as g, $e as h, ve as i, me as j
 };

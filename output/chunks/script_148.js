@@ -1,27 +1,22 @@
-import "./Bzak7iHL.js";
 import {
-  a as e,
-  k as q
-} from "./DUZ_qUVk.js";
-import {
-  b as T
-} from "./2LwYy2UE.js";
-import {
-  r as a
-} from "./DXFW01RN.js";
-var p = new Set(["$$slots", "$$events", "$$legacy"]),
-  m = q('<svg><path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"></path></svg>');
-
-function n(t, o) {
-  let s = a(o, p);
-  var r = m();
-  T(r, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...s
-  })), e(t, r)
-}
+  g as e
+} from "./BhCkpOlh.js";
+const n = () => "Team",
+  u = () => "Time",
+  a = () => "团队",
+  o = () => "Team",
+  i = () => "Equipo",
+  s = () => "Équipe",
+  c = () => "Team",
+  m = () => "チーム",
+  f = () => "Zespół",
+  p = () => "Команда",
+  _ = () => "Команда",
+  l = () => "Đội ngũ",
+  d = (T = {}, r = {}) => {
+    const t = r.locale ?? e();
+    return t === "en" ? n() : t === "pt" ? u() : t === "ch" ? a() : t === "de" ? o() : t === "es" ? i() : t === "fr" ? s() : t === "it" ? c() : t === "jp" ? m() : t === "pl" ? f() : t === "ru" ? p() : t === "uk" ? _() : l()
+  };
 export {
-  n as V
+  d as t
 };

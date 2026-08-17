@@ -1,40 +1,132 @@
+import {
+  g as U
+} from "./BhCkpOlh.js";
 import "./Bzak7iHL.js";
 import {
-  a as o,
-  k as v
-} from "./DUZ_qUVk.js";
+  l as V,
+  p as Z,
+  w as B,
+  f as S,
+  i as x,
+  a as l,
+  b as q,
+  u as A,
+  d as _,
+  n as b,
+  r as h,
+  t as p,
+  c as g,
+  m as s
+} from "./m4hpPlb8.js";
 import {
-  b as a
-} from "./2LwYy2UE.js";
+  s as v
+} from "./CBbF8MzG.js";
 import {
-  r as l
-} from "./DXFW01RN.js";
-var p = new Set(["$$slots", "$$events", "$$legacy"]),
-  m = v('<svg><path d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z"></path></svg>');
+  i as C
+} from "./DqioGq2r.js";
+import {
+  a as k,
+  c as z,
+  s as c
+} from "./BbR4hYuM.js";
+import {
+  p as d
+} from "./RFHi9kKd.js";
+import {
+  P as F
+} from "./D0GjwrQZ.js";
+import {
+  u as H
+} from "./CfW4pcKj.js";
+const J = () => "Banned",
+  Q = () => "Banido",
+  T = () => "已封禁",
+  W = () => "Gebannt",
+  X = () => "Baneado",
+  Y = () => "Banni",
+  $ = () => "Bannato",
+  nn = () => "BAN済み",
+  en = () => "Zbanowany",
+  an = () => "Забанен",
+  rn = () => "Заблоковано",
+  tn = () => "Đã bị cấm",
+  kn = (i = {}, n = {}) => {
+    const r = n.locale ?? U();
+    return r === "en" ? J() : r === "pt" ? Q() : r === "ch" ? T() : r === "de" ? W() : r === "es" ? X() : r === "fr" ? Y() : r === "it" ? $() : r === "jp" ? nn() : r === "pl" ? en() : r === "ru" ? an() : r === "uk" ? rn() : tn()
+  };
 
-function c(r, s) {
-  let e = l(s, p);
-  var t = m();
-  a(t, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...e
-  })), o(r, t)
+function D(i) {
+  return `/dashboard/alliances?id=${encodeURIComponent(String(i))}`
 }
-var n = new Set(["$$slots", "$$events", "$$legacy"]),
-  $ = v('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
 
-function f(r, s) {
-  let e = l(s, n);
-  var t = $();
-  a(t, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...e
-  })), o(r, t)
+function on(i) {
+  typeof window > "u" || window.open(D(i), "_blank", "noopener,noreferrer")
 }
+var ln = g('<span role="link" tabindex="0"><!></span>'),
+  sn = g('<a target="_blank" rel="noopener noreferrer"><!></a>'),
+  cn = g("<span><!></span>");
+
+function gn(i, n) {
+  Z(n, !0);
+  let r = d(n, "mode", 3, "anchor"),
+    w = d(n, "class", 3, ""),
+    I = d(n, "linkClass", 19, w),
+    E = d(n, "textClass", 19, w);
+  const L = A(() => n.allianceId != null && n.allianceId > 0 && H.hasAnyPermission(F.dashboard.alliances)),
+    N = A(() => n.allianceId == null ? "" : D(n.allianceId));
+
+  function u(a) {
+    a.stopPropagation()
+  }
+
+  function y(a) {
+    n.allianceId == null || n.allianceId <= 0 || (a.preventDefault(), a.stopPropagation(), on(n.allianceId))
+  }
+
+  function j(a) {
+    a.key !== "Enter" && a.key !== " " || y(a)
+  }
+  var P = B(),
+    R = S(P);
+  {
+    var G = a => {
+        var t = B(),
+          f = S(t);
+        {
+          var M = o => {
+              var e = ln(),
+                m = _(e);
+              v(m, () => n.children ?? b), h(e), p(() => {
+                k(e, 1, `cursor-pointer hover:underline ${I()}`), c(e, "title", n.title)
+              }), s("pointerdown", e, u), s("click", e, y), s("keydown", e, j), l(o, e)
+            },
+            O = o => {
+              var e = sn(),
+                m = _(e);
+              v(m, () => n.children ?? b), h(e), p(() => {
+                k(e, 1, `cursor-pointer hover:underline ${I()}`), c(e, "href", x(N)), c(e, "title", n.title)
+              }), s("pointerdown", e, u), s("click", e, u), l(o, e)
+            };
+          C(f, o => {
+            r() === "inline" ? o(M) : o(O, -1)
+          })
+        }
+        l(a, t)
+      },
+      K = a => {
+        var t = cn(),
+          f = _(t);
+        v(f, () => n.children ?? b), h(t), p(() => {
+          k(t, 1, z(E())), c(t, "title", n.title)
+        }), l(a, t)
+      };
+    C(R, a => {
+      x(L) ? a(G) : a(K, -1)
+    })
+  }
+  l(i, P), q()
+}
+V(["pointerdown", "click", "keydown"]);
 export {
-  f as G, c as T
+  gn as S, kn as b
 };

@@ -1,113 +1,160 @@
 import "./Bzak7iHL.js";
 import {
-  l as q,
-  p as z,
-  w as y,
-  f as S,
-  i as x,
-  a as i,
-  b as B,
-  u as C,
-  d as m,
-  n as h,
-  r as v,
-  t as _,
-  c as p,
-  m as s
-} from "./DUZ_qUVk.js";
+  p as B,
+  i as c,
+  h as x,
+  y as E,
+  d as u,
+  s as h,
+  bo as I,
+  r as m,
+  t as v,
+  a as b,
+  b as R,
+  e as T,
+  u as W,
+  c as q
+} from "./m4hpPlb8.js";
 import {
-  s as k
-} from "./b7oAWk-Y.js";
+  s as g
+} from "./riRxs-wl.js";
 import {
-  i as U
-} from "./BLc2SwOK.js";
+  i as S
+} from "./DqioGq2r.js";
 import {
-  a as g,
-  c as F,
-  s as l
-} from "./2LwYy2UE.js";
+  b as D,
+  C as F
+} from "./BbR4hYuM.js";
 import {
-  p as d
-} from "./DXFW01RN.js";
+  b as G
+} from "./RXlOjj6I.js";
 import {
-  P as G
-} from "./CwRn5GjN.js";
+  b as H
+} from "./D4UFk1VW.js";
 import {
-  u as H
-} from "./skEkKorJ.js";
+  p as l,
+  r as J
+} from "./RFHi9kKd.js";
+import {
+  g as k
+} from "./BhCkpOlh.js";
+const K = r => `Max. characters: ${r.max}`,
+  P = r => `Máximo de caracteres: ${r.max}`,
+  Q = r => `最大字符数：${r.max}`,
+  U = r => `Max. Zeichen: ${r.max}`,
+  V = r => `Máx. de caracteres: ${r.max}`,
+  X = r => `Max. de caractères : ${r.max}`,
+  Y = r => `Numero massimo di caratteri: ${r.max}`,
+  p = r => `最大文字数: ${r.max}`,
+  $ = r => `Maks. znaków: ${r.max}`,
+  rr = r => `Макс. символов: ${r.max}`,
+  er = r => `Макс. символів: ${r.max}`,
+  tr = r => `Số ký tự tối đa: ${r.max}`,
+  ar = (r, t = {}) => {
+    const e = t.locale ?? k();
+    return e === "en" ? K(r) : e === "pt" ? P(r) : e === "ch" ? Q(r) : e === "de" ? U(r) : e === "es" ? V(r) : e === "fr" ? X(r) : e === "it" ? Y(r) : e === "jp" ? p(r) : e === "pl" ? $(r) : e === "ru" ? rr(r) : e === "uk" ? er(r) : tr(r)
+  },
+  nr = r => `Min. characters: ${r.min}`,
+  cr = r => `Mínimo de caracteres: ${r.min}`,
+  ir = r => `最少字符数：${r.min}`,
+  sr = r => `Min. Zeichen: ${r.min}`,
+  ur = r => `Mín. de caracteres: ${r.min}`,
+  mr = r => `Min. de caractères : ${r.min}`,
+  or = r => `Numero minimo di caratteri: ${r.min}`,
+  lr = r => `最小文字数: ${r.min}`,
+  fr = r => `Min. znaków: ${r.min}`,
+  _r = r => `Мин. символов: ${r.min}`,
+  dr = r => `Мін. символів: ${r.min}`,
+  xr = r => `Số ký tự tối thiểu: ${r.min}`,
+  hr = (r, t = {}) => {
+    const e = t.locale ?? k();
+    return e === "en" ? nr(r) : e === "pt" ? cr(r) : e === "ch" ? ir(r) : e === "de" ? sr(r) : e === "es" ? ur(r) : e === "fr" ? mr(r) : e === "it" ? or(r) : e === "jp" ? lr(r) : e === "pl" ? fr(r) : e === "ru" ? _r(r) : e === "uk" ? dr(r) : xr(r)
+  },
+  vr = () => "Required",
+  br = () => "Obrigatório",
+  gr = () => "必填",
+  qr = () => "Erforderlich",
+  kr = () => "Obligatorio",
+  Mr = () => "Obligatoire",
+  jr = () => "Obbligatorio",
+  wr = () => "必須",
+  Sr = () => "Wymagane",
+  yr = () => "Обязательно",
+  Lr = () => "Обовʼязково",
+  Or = () => "Bắt buộc",
+  zr = (r = {}, t = {}) => {
+    const e = t.locale ?? k();
+    return e === "en" ? vr() : e === "pt" ? br() : e === "ch" ? gr() : e === "de" ? qr() : e === "es" ? kr() : e === "fr" ? Mr() : e === "it" ? jr() : e === "jp" ? wr() : e === "pl" ? Sr() : e === "ru" ? yr() : e === "uk" ? Lr() : Or()
+  };
+var Ar = new Set(["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate", "disabled", "ref"]),
+  Cr = q('<legend class="fieldset-legend"> </legend>'),
+  Nr = q('<span class="text-base-content/80"> </span>'),
+  Zr = q('<fieldset class="fieldset"><!> <textarea></textarea> <div class="flex items-center justify-between text-xs"><span class="text-error"> </span> <!></div></fieldset>');
 
-function D(o) {
-  return `/dashboard/users?id=${encodeURIComponent(String(o))}`
-}
+function Hr(r, t) {
+  B(t, !0);
+  let e = l(t, "value", 15),
+    y = l(t, "validate", 15),
+    L = l(t, "disabled", 3, !1),
+    M = l(t, "ref", 15),
+    O = J(t, Ar),
+    i = T("");
+  const o = W(() => {
+    var a;
+    return ((a = e()) == null ? void 0 : a.length) ?? 0
+  });
+  y(z);
 
-function J(o) {
-  typeof window > "u" || window.open(D(o), "_blank", "noopener,noreferrer")
-}
-var Q = p('<span role="link" tabindex="0"><!></span>'),
-  T = p('<a target="_blank" rel="noopener noreferrer"><!></a>'),
-  W = p("<span><!></span>");
-
-function te(o, e) {
-  z(e, !0);
-  let E = d(e, "mode", 3, "anchor"),
-    w = d(e, "class", 3, ""),
-    I = d(e, "linkClass", 19, w),
-    L = d(e, "textClass", 19, w);
-  const N = C(() => e.userId != null && e.userId > 0 && H.hasAnyPermission(G.dashboard.users)),
-    R = C(() => e.userId == null ? "" : D(e.userId));
-
-  function f(a) {
-    a.stopPropagation()
+  function z() {
+    return t.min !== void 0 && c(o) < t.min ? (x(i, t.min === 1 ? zr() : hr({
+      min: t.min
+    }), !0), !1) : t.max !== void 0 && c(o) > t.max ? (x(i, ar({
+      max: t.max
+    }), !0), !1) : (x(i, ""), !0)
   }
-
-  function b(a) {
-    e.userId == null || e.userId <= 0 || (a.preventDefault(), a.stopPropagation(), J(e.userId))
-  }
-
-  function A(a) {
-    a.key !== "Enter" && a.key !== " " || b(a)
-  }
-  var P = y(),
-    K = S(P);
+  E(() => {
+    var a;
+    t.max !== void 0 && c(o) > t.max && e((a = e()) == null ? void 0 : a.substring(0, t.max))
+  });
+  var f = Zr(),
+    j = u(f);
   {
-    var M = a => {
-        var r = y(),
-          u = S(r);
-        {
-          var V = t => {
-              var n = Q(),
-                c = m(n);
-              k(c, () => e.children ?? h), v(n), _(() => {
-                g(n, 1, `cursor-pointer hover:underline ${I()}`), l(n, "title", e.title)
-              }), s("pointerdown", n, f), s("click", n, b), s("keydown", n, A), i(t, n)
-            },
-            j = t => {
-              var n = T(),
-                c = m(n);
-              k(c, () => e.children ?? h), v(n), _(() => {
-                g(n, 1, `cursor-pointer hover:underline ${I()}`), l(n, "href", x(R)), l(n, "title", e.title)
-              }), s("pointerdown", n, f), s("click", n, f), i(t, n)
-            };
-          U(u, t => {
-            E() === "inline" ? t(V) : t(j, -1)
-          })
-        }
-        i(a, r)
-      },
-      O = a => {
-        var r = W(),
-          u = m(r);
-        k(u, () => e.children ?? h), v(r), _(() => {
-          g(r, 1, F(L())), l(r, "title", e.title)
-        }), i(a, r)
-      };
-    U(K, a => {
-      x(N) ? a(M) : a(O, -1)
+    var A = a => {
+      var n = Cr(),
+        d = u(n, !0);
+      m(n), v(() => g(d, t.label)), b(a, n)
+    };
+    S(j, a => {
+      t.label && a(A)
     })
   }
-  i(o, P), B()
+  var s = h(j, 2);
+  I(s), D(s, () => ({
+    ...O,
+    class: `textarea w-full ${t.class??""}`,
+    placeholder: t.placeholder,
+    disabled: L(),
+    [F]: {
+      "textarea-error": !!c(i)
+    }
+  }), void 0, void 0, void 0, "svelte-16tom9o"), H(s, a => M(a), () => M());
+  var w = h(s, 2),
+    _ = u(w),
+    C = u(_, !0);
+  m(_);
+  var N = h(_, 2);
+  {
+    var Z = a => {
+      var n = Nr(),
+        d = u(n, !0);
+      m(n), v(() => g(d, t.max - c(o))), b(a, n)
+    };
+    S(N, a => {
+      t.max !== void 0 && a(Z)
+    })
+  }
+  m(w), m(f), v(() => g(C, c(i))), G(s, e), b(r, f), R()
 }
-q(["pointerdown", "click", "keydown"]);
 export {
-  te as S, D as g
+  Hr as L, zr as r
 };

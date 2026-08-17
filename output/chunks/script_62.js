@@ -1,22 +1,40 @@
+import "./Bzak7iHL.js";
 import {
-  g as r
-} from "./BhCkpOlh.js";
-const n = () => "Extra context on what happened (required)",
-  o = () => "Mais informações sobre o que aconteceu (obrigatório)",
-  i = () => "请提供发生情况的额外背景（必填）",
-  c = () => "Zusätzliche Informationen zum Vorfall (erforderlich)",
-  u = () => "Más contexto sobre lo que ocurrió (obligatorio)",
-  a = () => "Contexte supplémentaire sur ce qui s’est passé (obligatoire)",
-  s = () => "Maggiori informazioni su ciò che è successo (obbligatorio)",
-  _ = () => "何が起きたかの詳細な説明（必須）",
-  x = () => "Dodatkowy kontekst tego, co się stało (wymagane)",
-  g = () => "Дополнительный контекст о произошедшем (обязательно)",
-  f = () => "Додаткова інформація про те, що сталося (обовʼязково)",
-  l = () => "Thêm ngữ cảnh về chuyện đã xảy ra (bắt buộc)",
-  h = (v = {}, e = {}) => {
-    const t = e.locale ?? r();
-    return t === "en" ? n() : t === "pt" ? o() : t === "ch" ? i() : t === "de" ? c() : t === "es" ? u() : t === "fr" ? a() : t === "it" ? s() : t === "jp" ? _() : t === "pl" ? x() : t === "ru" ? g() : t === "uk" ? f() : l()
-  };
+  a as o,
+  k as v
+} from "./m4hpPlb8.js";
+import {
+  b as a
+} from "./BbR4hYuM.js";
+import {
+  r as l
+} from "./RFHi9kKd.js";
+var p = new Set(["$$slots", "$$events", "$$legacy"]),
+  m = v('<svg><path d="M360-840v-80h240v80H360Zm80 440h80v-240h-80v240Zm40 320q-74 0-139.5-28.5T226-186q-49-49-77.5-114.5T120-440q0-74 28.5-139.5T226-694q49-49 114.5-77.5T480-800q62 0 119 20t107 58l56-56 56 56-56 56q38 50 58 107t20 119q0 74-28.5 139.5T734-186q-49 49-114.5 77.5T480-80Zm0-80q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-280Z"></path></svg>');
+
+function c(r, s) {
+  let e = l(s, p);
+  var t = m();
+  a(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...e
+  })), o(r, t)
+}
+var n = new Set(["$$slots", "$$events", "$$legacy"]),
+  $ = v('<svg><path d="M160-120v-80h480v80H160Zm226-194L160-540l84-86 228 226-86 86Zm254-254L414-796l86-84 226 226-86 86Zm184 408L302-682l56-56 522 522-56 56Z"></path></svg>');
+
+function f(r, s) {
+  let e = l(s, n);
+  var t = $();
+  a(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...e
+  })), o(r, t)
+}
 export {
-  h as g
+  f as G, c as T
 };

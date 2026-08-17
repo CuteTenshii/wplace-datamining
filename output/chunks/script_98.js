@@ -2,17 +2,17 @@ import "./Bzak7iHL.js";
 import {
   a as e,
   k as a
-} from "./DUZ_qUVk.js";
+} from "./m4hpPlb8.js";
 import {
   b as p
-} from "./2LwYy2UE.js";
+} from "./BbR4hYuM.js";
 import {
   r as v
-} from "./DXFW01RN.js";
+} from "./RFHi9kKd.js";
 var l = new Set(["$$slots", "$$events", "$$legacy"]),
-  m = a('<svg><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"></path></svg>');
+  m = a('<svg><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"></path></svg>');
 
-function c(t, o) {
+function g(t, o) {
   let s = v(o, l);
   var r = m();
   p(r, () => ({
@@ -23,5 +23,5 @@ function c(t, o) {
   })), e(t, r)
 }
 export {
-  c as S
+  g as C
 };

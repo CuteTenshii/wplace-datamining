@@ -1,128 +1,176 @@
-import "./Bzak7iHL.js";
+var x = Object.defineProperty;
+var T = (s, e, t) => e in s ? x(s, e, {
+  enumerable: !0,
+  configurable: !0,
+  writable: !0,
+  value: t
+}) : s[e] = t;
+var u = (s, e, t) => T(s, typeof e != "symbol" ? e + "" : e, t);
 import {
-  a as q,
-  k as h,
-  w as B,
-  f as I
-} from "./DUZ_qUVk.js";
+  g as p
+} from "./BhCkpOlh.js";
 import {
-  b as i
-} from "./2LwYy2UE.js";
-import {
-  r as w
-} from "./DXFW01RN.js";
-import {
-  i as k
-} from "./BLc2SwOK.js";
+  d as L
+} from "./CfW4pcKj.js";
+const d = () => "No description",
+  M = () => "Sem descrição",
+  f = () => "无描述",
+  _ = () => "Keine Beschreibung",
+  P = () => "Sin descripción",
+  S = () => "Aucune description",
+  y = () => "Nessuna descrizione",
+  B = () => "説明なし",
+  z = () => "Brak opisu",
+  g = () => "Без описания",
+  R = () => "Без опису",
+  A = () => "Không có mô tả",
+  F = (s = {}, e = {}) => {
+    const t = e.locale ?? p();
+    return t === "en" ? d() : t === "pt" ? M() : t === "ch" ? f() : t === "de" ? _() : t === "es" ? P() : t === "fr" ? S() : t === "it" ? y() : t === "jp" ? B() : t === "pl" ? z() : t === "ru" ? g() : t === "uk" ? R() : A()
+  },
+  a = 2 * Math.PI * 6378137 / 2,
+  h = 85.0511287798066;
 
-function Q(r) {
-  return r
+function E(s) {
+  return ((s + 180) % 360 + 360) % 360 - 180
 }
 
-function L(r) {
-  const t = r - 1;
-  return t * t * t + 1
+function N(s, e) {
+  return [Math.max(-h, Math.min(h, s)), E(e)]
 }
-var O = new Set(["$$slots", "$$events", "$$legacy"]),
-  P = h('<svg><path d="M280-200v-80h284q63 0 109.5-40T720-420q0-60-46.5-100T564-560H312l104 104-56 56-200-200 200-200 56 56-104 104h252q97 0 166.5 63T800-420q0 94-69.5 157T564-200H280Z"></path></svg>');
-
-function R(r, t) {
-  let a = w(t, O);
-  var e = P();
-  i(e, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...a
-  })), q(r, e)
-}
-
-function V(r, {
-  from: t,
-  to: a
-}, e = {}) {
-  var {
-    delay: T = 0,
-    duration: o = l => Math.sqrt(l) * 120,
-    easing: c = L
-  } = e, s = getComputedStyle(r), v = s.transform === "none" ? "" : s.transform, [p, g] = s.transformOrigin.split(" ").map(parseFloat);
-  p /= r.clientWidth, g /= r.clientHeight;
-  var u = U(r),
-    d = r.clientWidth / a.width / u,
-    $ = r.clientHeight / a.height / u,
-    x = t.left + t.width * p,
-    Z = t.top + t.height * g,
-    y = a.left + a.width * p,
-    _ = a.top + a.height * g,
-    f = (x - y) * d,
-    m = (Z - _) * $,
-    S = t.width / a.width,
-    C = t.height / a.height;
-  return {
-    delay: T,
-    duration: typeof o == "function" ? o(Math.sqrt(f * f + m * m)) : o,
-    easing: c,
-    css: (l, n) => {
-      var H = n * f,
-        M = n * m,
-        b = l + n * S,
-        z = l + n * C;
-      return `transform: ${v} translate(${H}px, ${M}px) scale(${b}, ${z});`
+class k {
+  constructor(e = 256) {
+    u(this, "initialResolution");
+    this.tileSize = e, this.initialResolution = 2 * a / this.tileSize
+  }
+  latLonToMeters(e, t) {
+    const n = t / 180 * a,
+      o = Math.log(Math.tan((90 + e) * Math.PI / 360)) / (Math.PI / 180) * a / 180;
+    return [n, o]
+  }
+  metersToLatLon(e, t) {
+    const n = e / a * 180;
+    let o = t / a * 180;
+    return o = 180 / Math.PI * (2 * Math.atan(Math.exp(o * Math.PI / 180)) - Math.PI / 2), [o, n]
+  }
+  pixelsToMeters(e, t, n) {
+    const o = this.resolution(n),
+      i = e * o - a,
+      r = a - t * o;
+    return [i, r]
+  }
+  pixelsToLatLon(e, t, n) {
+    const [o, i] = this.pixelsToMeters(e, t, n);
+    return this.metersToLatLon(o, i)
+  }
+  latLonToPixels(e, t, n) {
+    const [o, i] = this.latLonToMeters(e, t);
+    return this.metersToPixels(o, i, n)
+  }
+  latLonToPixelsFloor(e, t, n) {
+    const [o, i] = this.latLonToPixels(e, t, n);
+    return [Math.floor(o), Math.floor(i)]
+  }
+  metersToPixels(e, t, n) {
+    const o = this.resolution(n),
+      i = (e + a) / o,
+      r = (a - t) / o;
+    return [i, r]
+  }
+  latLonToTile(e, t, n) {
+    const [o, i] = this.latLonToMeters(e, t);
+    return this.metersToTile(o, i, n)
+  }
+  metersToTile(e, t, n) {
+    const [o, i] = this.metersToPixels(e, t, n);
+    return this.pixelsToTile(o, i)
+  }
+  pixelsToTile(e, t) {
+    const n = Math.ceil(e / this.tileSize) - 1,
+      o = Math.ceil(t / this.tileSize) - 1;
+    return [n, o]
+  }
+  pixelsToTileLocal(e, t) {
+    return {
+      tile: this.pixelsToTile(e, t),
+      pixel: [Math.floor(e) % this.tileSize, Math.floor(t) % this.tileSize]
+    }
+  }
+  tileBounds(e, t, n) {
+    const [o, i] = this.pixelsToMeters(e * this.tileSize, t * this.tileSize, n), [r, l] = this.pixelsToMeters((e + 1) * this.tileSize, (t + 1) * this.tileSize, n);
+    return {
+      min: [o, i],
+      max: [r, l]
+    }
+  }
+  tileBoundsLatLon(e, t, n) {
+    const o = this.tileBounds(e, t, n);
+    return {
+      min: this.metersToLatLon(o.min[0], o.min[1]),
+      max: this.metersToLatLon(o.max[0], o.max[1])
+    }
+  }
+  resolution(e) {
+    return this.initialResolution / 2 ** e
+  }
+  latLonToTileAndPixel(e, t, n) {
+    const [o, i] = this.latLonToMeters(e, t), [r, l] = this.metersToTile(o, i, n), [c, m] = this.metersToPixels(o, i, n);
+    return {
+      tile: [r, l],
+      pixel: [Math.floor(c) % this.tileSize, Math.floor(m) % this.tileSize]
+    }
+  }
+  pixelBounds(e, t, n) {
+    return {
+      min: this.pixelsToMeters(e, t, n),
+      max: this.pixelsToMeters(e + 1, t + 1, n)
+    }
+  }
+  pixelToBoundsLatLon(e, t, n) {
+    const o = this.pixelBounds(e, t, n);
+    return {
+      min: this.metersToLatLon(o.min[0], o.min[1]),
+      max: this.metersToLatLon(o.max[0], o.max[1])
+    }
+  }
+  latLonToTileBoundsLatLon(e, t, n) {
+    const [o, i] = this.latLonToMeters(e, t), [r, l] = this.metersToTile(o, i, n);
+    return this.tileBoundsLatLon(r, l, n)
+  }
+  latLonToPixelBoundsLatLon(e, t, n) {
+    const [o, i] = this.latLonToMeters(e, t), [r, l] = this.metersToPixels(o, i, n);
+    return this.pixelToBoundsLatLon(Math.floor(r), Math.floor(l), n)
+  }
+  latLonToRegionAndPixel(e, t, n, o = L.regionSize) {
+    const [i, r] = this.latLonToPixelsFloor(e, t, n), l = this.tileSize * o;
+    return {
+      region: [Math.floor(i / l), Math.floor(r / l)],
+      pixel: [i % l, r % l]
     }
   }
 }
 
-function U(r) {
-  if ("currentCSSZoom" in r) return r.currentCSSZoom;
-  for (var t = r, a = 1; t !== null;) a *= +getComputedStyle(t).zoom, t = t.parentElement;
-  return a
+function H(s, e = !0) {
+  const {
+    min: t,
+    max: n
+  } = s;
+  return e ? [
+    [t[1], n[0]],
+    [n[1], n[0]],
+    [n[1], t[0]],
+    [t[1], t[0]]
+  ] : [
+    [t[0], n[1]],
+    [n[0], n[1]],
+    [n[0], t[1]],
+    [t[0], t[1]]
+  ]
 }
-var W = new Set(["$$slots", "$$events", "$$legacy", "filled"]),
-  E = h('<svg><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"></path></svg>'),
-  F = h('<svg><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"></path></svg>');
 
-function X(r, t) {
-  let a = w(t, W);
-  var e = B(),
-    T = I(e);
-  {
-    var o = s => {
-        var v = E();
-        i(v, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...a
-        })), q(s, v)
-      },
-      c = s => {
-        var v = F();
-        i(v, () => ({
-          xmlns: "http://www.w3.org/2000/svg",
-          viewBox: "0 -960 960 960",
-          fill: "currentColor",
-          ...a
-        })), q(s, v)
-      };
-    k(T, s => {
-      t.filled ? s(o) : s(c, -1)
-    })
-  }
-  q(r, e)
-}
-var j = new Set(["$$slots", "$$events", "$$legacy"]),
-  A = h('<svg><path d="M380-720v-98L142-580h98v60H40v-200h60v98l238-238h-98v-60h200v200h-60ZM593-40q-24 0-46-9t-39-26L304-280l30-31q16-16 37.5-21.5t42.5.5l66 19v-327q0-17 11.5-28.5T520-680q17 0 28.5 11.5T560-640v433l-97-27 102 102q5 5 12.5 8.5T593-120h167q33 0 56.5-23.5T840-200v-160q0-17 11.5-28.5T880-400q17 0 28.5 11.5T920-360v160q0 66-47 113T760-40H593Zm7-280v-160q0-17 11.5-28.5T640-520q17 0 28.5 11.5T680-480v160h-80Zm120 0v-120q0-17 11.5-28.5T760-480q17 0 28.5 11.5T800-440v120h-80Zm-20 80Z"></path></svg>');
-
-function Y(r, t) {
-  let a = w(t, j);
-  var e = A();
-  i(e, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...a
-  })), q(r, e)
+function X(s) {
+  return [(s.min[0] + s.max[0]) / 2, (s.min[1] + s.max[1]) / 2]
 }
 export {
-  X as H, Y as P, R as U, L as c, V as f, Q as l
+  k as G, N as a, H as b, X as g, F as n, E as w
 };

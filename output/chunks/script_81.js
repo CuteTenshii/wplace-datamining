@@ -1,22 +1,22 @@
 import {
-  g as n
+  g as t
 } from "./BhCkpOlh.js";
-const i = () => "Pixels painted",
-  r = () => "Pixels pintados",
-  p = () => "已绘制像素数",
-  s = () => "Gemalte Pixel",
-  l = () => "Píxeles pintados",
-  u = () => "Pixels peints",
-  _ = () => "Pixel dipinti",
-  a = () => "塗られたピクセル数",
-  o = () => "Pomalowane piksele",
-  x = () => "Нарисованные пиксели",
-  c = () => "Намальовані пікселі",
-  d = () => "Pixel đã tô",
-  m = (f = {}, t = {}) => {
-    const e = t.locale ?? n();
-    return e === "en" ? i() : e === "pt" ? r() : e === "ch" ? p() : e === "de" ? s() : e === "es" ? l() : e === "fr" ? u() : e === "it" ? _() : e === "jp" ? a() : e === "pl" ? o() : e === "ru" ? x() : e === "uk" ? c() : d()
+const e = () => "Ban",
+  u = () => "Banimento",
+  a = () => "封禁",
+  o = () => "Bannen",
+  c = () => "Banear",
+  s = () => "Bannir",
+  i = () => "Ban",
+  b = () => "BAN",
+  f = () => "Ban",
+  _ = () => "Забанить",
+  p = () => "Бан",
+  B = () => "Cấm",
+  d = (l = {}, r = {}) => {
+    const n = r.locale ?? t();
+    return n === "en" ? e() : n === "pt" ? u() : n === "ch" ? a() : n === "de" ? o() : n === "es" ? c() : n === "fr" ? s() : n === "it" ? i() : n === "jp" ? b() : n === "pl" ? f() : n === "ru" ? _() : n === "uk" ? p() : B()
   };
 export {
-  m as p
+  d as b
 };

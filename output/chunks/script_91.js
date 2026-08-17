@@ -1,27 +1,70 @@
-import "./Bzak7iHL.js";
 import {
-  a as e,
-  k as v
-} from "./DUZ_qUVk.js";
-import {
-  b as p
-} from "./2LwYy2UE.js";
-import {
-  r as a
-} from "./DXFW01RN.js";
-var q = new Set(["$$slots", "$$events", "$$legacy"]),
-  m = v('<svg><path d="M240-640h360v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85h-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640Zm0 480h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM240-160v-400 400Z"></path></svg>');
-
-function l(r, o) {
-  let s = a(o, q);
-  var t = m();
-  p(t, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...s
-  })), e(r, t)
-}
+  g as n
+} from "./BhCkpOlh.js";
+const i = () => "Common",
+  u = () => "Comum",
+  o = () => "常见",
+  c = () => "Allgemein",
+  a = () => "Común",
+  _ = () => "Commun",
+  s = () => "Comune",
+  y = () => "共通",
+  f = () => "Wspólny",
+  p = () => "Обычный",
+  l = () => "Звичайний",
+  m = () => "Phổ biến",
+  $ = (e = {}, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? i() : r === "pt" ? u() : r === "ch" ? o() : r === "de" ? c() : r === "es" ? a() : r === "fr" ? _() : r === "it" ? s() : r === "jp" ? y() : r === "pl" ? f() : r === "ru" ? p() : r === "uk" ? l() : m()
+  },
+  d = () => "Epic",
+  g = () => "Épico",
+  h = () => "史诗",
+  k = () => "Episch",
+  j = () => "Épico",
+  L = () => "Épique",
+  R = () => "Epico",
+  v = () => "エピック",
+  C = () => "Epicki",
+  E = () => "Эпический",
+  b = () => "Епічний",
+  H = () => "Tuyệt vời",
+  rr = (e = {}, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? d() : r === "pt" ? g() : r === "ch" ? h() : r === "de" ? k() : r === "es" ? j() : r === "fr" ? L() : r === "it" ? R() : r === "jp" ? v() : r === "pl" ? C() : r === "ru" ? E() : r === "uk" ? b() : H()
+  },
+  q = () => "Legendary",
+  x = () => "Lendário",
+  z = () => "传奇的",
+  A = () => "Legendär",
+  P = () => "Legendario",
+  S = () => "Légendaire",
+  T = () => "Leggendario",
+  W = () => "伝説的",
+  w = () => "Legendarny",
+  B = () => "Легендарный",
+  D = () => "Легендарний",
+  F = () => "Huyền thoại",
+  tr = (e = {}, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? q() : r === "pt" ? x() : r === "ch" ? z() : r === "de" ? A() : r === "es" ? P() : r === "fr" ? S() : r === "it" ? T() : r === "jp" ? W() : r === "pl" ? w() : r === "ru" ? B() : r === "uk" ? D() : F()
+  },
+  G = () => "Rare",
+  I = () => "Raro",
+  J = () => "罕见",
+  K = () => "Selten",
+  M = () => "Raro",
+  N = () => "Rare",
+  O = () => "Raro",
+  Q = () => "レア",
+  U = () => "Rzadkie",
+  V = () => "Редкий",
+  X = () => "Рідкісний",
+  Y = () => "Hiếm",
+  nr = (e = {}, t = {}) => {
+    const r = t.locale ?? n();
+    return r === "en" ? G() : r === "pt" ? I() : r === "ch" ? J() : r === "de" ? K() : r === "es" ? M() : r === "fr" ? N() : r === "it" ? O() : r === "jp" ? Q() : r === "pl" ? U() : r === "ru" ? V() : r === "uk" ? X() : Y()
+  };
 export {
-  l as L
+  rr as a, nr as b, $ as c, tr as r
 };

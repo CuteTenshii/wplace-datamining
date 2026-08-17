@@ -1,22 +1,29 @@
+import "./Bzak7iHL.js";
 import {
-  g as n
-} from "./BhCkpOlh.js";
-const t = () => "Leaderboard",
-  a = () => "Ranking",
-  o = () => "排行榜",
-  d = () => "Bestenliste",
-  u = () => "Clasificación",
-  s = () => "Classement",
-  l = () => "Classifica",
-  i = () => "ランキング",
-  c = () => "Ranking",
-  f = () => "Таблица лидеров",
-  b = () => "Таблиця лідерів",
-  _ = () => "Bảng xếp hạng",
-  k = (p = {}, e = {}) => {
-    const r = e.locale ?? n();
-    return r === "en" ? t() : r === "pt" ? a() : r === "ch" ? o() : r === "de" ? d() : r === "es" ? u() : r === "fr" ? s() : r === "it" ? l() : r === "jp" ? i() : r === "pl" ? c() : r === "ru" ? f() : r === "uk" ? b() : _()
-  };
+  a as s,
+  k as p
+} from "./m4hpPlb8.js";
+import {
+  b as a
+} from "./BbR4hYuM.js";
+import {
+  r as v
+} from "./RFHi9kKd.js";
+var m = new Set(["$$slots", "$$events", "$$legacy"]),
+  i = p('<svg><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm40-80h480L570-480 450-320l-90-120-120 160Zm-40 80v-560 560Z"></path></svg>');
+
+function n(r, o) {
+  let e = v(o, m);
+  var t = i();
+  a(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    height: "24px",
+    viewBox: "0 -960 960 960",
+    width: "24px",
+    fill: "currentColor",
+    ...e
+  })), s(r, t)
+}
 export {
-  k as l
+  n as I
 };

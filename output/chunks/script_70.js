@@ -1,71 +1,27 @@
 import "./Bzak7iHL.js";
 import {
-  p as R,
-  d as i,
-  r as l,
-  t as m,
-  a as n,
-  b as h,
-  s as f,
-  c as g
-} from "./DUZ_qUVk.js";
+  a as s,
+  k as a
+} from "./m4hpPlb8.js";
 import {
-  s as _
-} from "./DtUyTUmd.js";
+  b as p
+} from "./BbR4hYuM.js";
 import {
-  i as w
-} from "./BLc2SwOK.js";
-import {
-  a as E
-} from "./2LwYy2UE.js";
-import {
-  p as y
-} from "./DXFW01RN.js";
-import {
-  R as O,
-  a as z
-} from "./TTfhDrzz.js";
-import {
-  L as v
-} from "./Cyv4PsD-.js";
-var c = g('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
-  A = g("<span><!></span>");
+  r as v
+} from "./RFHi9kKd.js";
+var l = new Set(["$$slots", "$$events", "$$legacy"]),
+  m = a('<svg><path d="M280-200v-80h284q63 0 109.5-40T720-420q0-60-46.5-100T564-560H312l104 104-56 56-200-200 200-200 56 56-104 104h252q97 0 166.5 63T800-420q0 94-69.5 157T564-200H280Z"></path></svg>');
 
-function T(b, e) {
-  R(e, !0);
-  let p = y(e, "big", 3, !1);
-  var s = A();
-  let d;
-  var u = i(s);
-  {
-    var x = r => {
-        var a = c(),
-          t = i(a);
-        v(t, {
-          size: "none"
-        });
-        var o = f(t, 1, !0);
-        l(a), m(() => _(o, O[e.role])), n(r, a)
-      },
-      L = r => {
-        var a = c(),
-          t = i(a);
-        v(t, {
-          size: "small"
-        });
-        var o = f(t, 1, !0);
-        l(a), m(() => _(o, z[e.role])), n(r, a)
-      };
-    w(u, r => {
-      p() ? r(x) : r(L, -1)
-    })
-  }
-  l(s), m(() => d = E(s, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center pt-0.5 leading-none font-semibold whitespace-nowrap shadow", null, d, {
-    "badge-info": e.role === "admin",
-    "badge-secondary": e.role === "sac" || e.role === "game_master" || e.role === "game_master_leader" || e.role === "dev",
-    "badge-warning": e.role === "discord_mod" || e.role === "discord_leader"
-  })), n(b, s), h()
+function c(t, e) {
+  let o = v(e, l);
+  var r = m();
+  p(r, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...o
+  })), s(t, r)
 }
 export {
-  T as R
+  c as R
 };

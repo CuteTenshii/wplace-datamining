@@ -1,46 +1,46 @@
 import {
   V as B,
-  M as L,
-  bg as M,
+  M,
   bh as U,
-  T as j,
-  B as q,
-  bi as z,
+  bi as j,
+  T as q,
+  B as z,
   bj as P,
   bk as G,
-  aU as K,
-  ap as V,
+  bl as K,
+  aU as V,
+  ap as W,
   n as N,
-  bl as F
-} from "./DUZ_qUVk.js";
+  bm as F
+} from "./m4hpPlb8.js";
 import {
-  a as W
-} from "./DtUyTUmd.js";
-const y = () => performance.now(),
-  p = {
+  a as y
+} from "./riRxs-wl.js";
+const D = () => performance.now(),
+  _ = {
     tick: i => requestAnimationFrame(i),
-    now: () => y(),
+    now: () => D(),
     tasks: new Set
   };
 
 function $() {
-  const i = p.now();
-  p.tasks.forEach(t => {
-    t.c(i) || (p.tasks.delete(t), t.f())
-  }), p.tasks.size !== 0 && p.tick($)
+  const i = _.now();
+  _.tasks.forEach(t => {
+    t.c(i) || (_.tasks.delete(t), t.f())
+  }), _.tasks.size !== 0 && _.tick($)
 }
 
-function D(i) {
+function H(i) {
   let t;
-  return p.tasks.size === 0 && p.tick($), {
+  return _.tasks.size === 0 && _.tick($), {
     promise: new Promise(a => {
-      p.tasks.add(t = {
+      _.tasks.add(t = {
         c: i,
         f: a
       })
     }),
     abort() {
-      p.tasks.delete(t)
+      _.tasks.delete(t)
     }
   }
 }
@@ -51,7 +51,7 @@ function A(i, t) {
   })
 }
 
-function H(i) {
+function J(i) {
   if (i === "float") return "cssFloat";
   if (i === "offset") return "cssOffset";
   if (i.startsWith("--")) return i;
@@ -65,15 +65,20 @@ function S(i) {
   for (const n of a) {
     const [o, e] = n.split(":");
     if (!o || e === void 0) break;
-    const u = H(o.trim());
+    const u = J(o.trim());
     t[u] = e.trim()
   }
   return t
 }
-const J = i => i;
+const Q = i => i;
+let L = null;
 
-function Y(i, t, a) {
-  var n = B,
+function Z(i) {
+  L = i
+}
+
+function tt(i, t, a) {
+  var n = L ?? B,
     o = n.nodes,
     e, u, s, l = null;
   o.a ?? (o.a = {
@@ -96,7 +101,7 @@ function Y(i, t, a) {
       if (!i.getAnimations().length) {
         var {
           position: v,
-          width: _,
+          width: m,
           height: d
         } = getComputedStyle(i);
         if (v !== "absolute" && v !== "fixed") {
@@ -106,11 +111,11 @@ function Y(i, t, a) {
             width: r.width,
             height: r.height,
             transform: r.transform
-          }, r.position = "absolute", r.width = _, r.height = d;
+          }, r.position = "absolute", r.width = m, r.height = d;
           var f = i.getBoundingClientRect();
           if (e.left !== f.left || e.top !== f.top) {
-            var T = `translate(${e.left-f.left}px, ${e.top-f.top}px)`;
-            r.transform = r.transform ? `${r.transform} ${T}` : T
+            var p = `translate(${e.left-f.left}px, ${e.top-f.top}px)`;
+            r.transform = r.transform ? `${r.transform} ${p}` : p
           }
         }
       }
@@ -124,71 +129,71 @@ function Y(i, t, a) {
   }), o.a.element = i
 }
 
-function Z(i, t, a, n) {
-  var m;
-  var o = (i & P) !== 0,
-    e = (i & G) !== 0,
+function it(i, t, a, n) {
+  var g;
+  var o = (i & G) !== 0,
+    e = (i & K) !== 0,
     u = o && e,
-    s = (i & z) !== 0,
+    s = (i & P) !== 0,
     l = u ? "both" : o ? "in" : "out",
-    v, _ = t.inert,
+    v, m = t.inert,
     d = t.style.overflow,
     r, f;
 
-  function T() {
+  function p() {
     return F(() => v ?? (v = a()(t, (n == null ? void 0 : n()) ?? {}, {
       direction: l
     })))
   }
-  var g = {
+  var T = {
       is_global: s,
       in() {
-        var c;
-        if (t.inert = _, !o) {
-          f == null || f.abort(), (c = f == null ? void 0 : f.reset) == null || c.call(f);
+        var h;
+        if (t.inert = m, !o) {
+          f == null || f.abort(), (h = f == null ? void 0 : f.reset) == null || h.call(f);
           return
         }
-        e || r == null || r.abort(), r = C(t, T(), f, 1, () => {
+        e || r == null || r.abort(), r = C(t, p(), f, 1, () => {
           A(t, "introstart")
         }, () => {
           A(t, "introend"), r == null || r.abort(), r = v = void 0, t.style.overflow = d
         })
       },
-      out(c) {
+      out(h) {
         if (!e) {
-          c == null || c(), v = void 0;
+          h == null || h(), v = void 0;
           return
         }
-        t.inert = !0, f = C(t, T(), r, 0, () => {
+        t.inert = !0, f = C(t, p(), r, 0, () => {
           A(t, "outrostart")
         }, () => {
-          A(t, "outroend"), c == null || c()
+          A(t, "outroend"), h == null || h()
         })
       },
       stop: () => {
         r == null || r.abort(), f == null || f.abort()
       }
     },
-    h = B;
-  if (((m = h.nodes).t ?? (m.t = [])).push(g), o && W) {
+    c = B;
+  if (((g = c.nodes).t ?? (g.t = [])).push(T), o && y) {
     var b = s;
     if (!b) {
-      for (var w = h.parent; w && (w.f & L) !== 0;)
+      for (var w = c.parent; w && (w.f & M) !== 0;)
         for (;
-          (w = w.parent) && (w.f & M) === 0;);
-      b = !w || (w.f & U) !== 0
+          (w = w.parent) && (w.f & U) === 0;);
+      b = !w || (w.f & j) !== 0
     }
-    b && j(() => {
-      q(() => g.in())
+    b && q(() => {
+      z(() => T.in())
     })
   }
 }
 
 function C(i, t, a, n, o, e) {
   var u = n === 1;
-  if (K(t)) {
+  if (V(t)) {
     var s, l = !1;
-    return V(() => {
+    return W(() => {
       if (!l) {
         var b = t({
           direction: u ? "in" : "out"
@@ -212,53 +217,53 @@ function C(i, t, a, n, o, e) {
   };
   const {
     delay: v = 0,
-    css: _,
+    css: m,
     tick: d,
-    easing: r = J
+    easing: r = Q
   } = t;
   var f = [];
-  if (u && a === void 0 && (d && d(0, 1), _)) {
-    var T = S(_(0, 1));
-    f.push(T, T)
+  if (u && a === void 0 && (d && d(0, 1), m)) {
+    var p = S(m(0, 1));
+    f.push(p, p)
   }
-  var g = () => 1 - n,
-    h = i.animate(f, {
+  var T = () => 1 - n,
+    c = i.animate(f, {
       duration: v,
       fill: "forwards"
     });
-  return h.onfinish = () => {
-    h.cancel(), o();
+  return c.onfinish = () => {
+    c.cancel(), o();
     var b = (a == null ? void 0 : a.t()) ?? 1 - n;
     a == null || a.abort();
     var w = n - b,
-      m = t.duration * Math.abs(w),
-      c = [];
-    if (m > 0) {
+      g = t.duration * Math.abs(w),
+      h = [];
+    if (g > 0) {
       var E = !1;
-      if (_)
-        for (var I = Math.ceil(m / 16.666666666666668), R = 0; R <= I; R += 1) {
+      if (m)
+        for (var I = Math.ceil(g / 16.666666666666668), R = 0; R <= I; R += 1) {
           var O = b + w * r(R / I),
-            x = S(_(O, 1 - O));
-          c.push(x), E || (E = x.overflow === "hidden")
+            x = S(m(O, 1 - O));
+          h.push(x), E || (E = x.overflow === "hidden")
         }
-      E && (i.style.overflow = "hidden"), g = () => {
-        var k = h.currentTime;
-        return b + w * r(k / m)
-      }, d && D(() => {
-        if (h.playState !== "running") return !1;
-        var k = g();
+      E && (i.style.overflow = "hidden"), T = () => {
+        var k = c.currentTime;
+        return b + w * r(k / g)
+      }, d && H(() => {
+        if (c.playState !== "running") return !1;
+        var k = T();
         return d(k, 1 - k), !0
       })
     }
-    h = i.animate(c, {
-      duration: m,
+    c = i.animate(h, {
+      duration: g,
       fill: "forwards"
-    }), h.onfinish = () => {
-      g = () => n, d == null || d(n, 1 - n), e()
+    }), c.onfinish = () => {
+      T = () => n, d == null || d(n, 1 - n), e()
     }
   }, {
     abort: () => {
-      h && (h.cancel(), h.effect = null, h.onfinish = N)
+      c && (c.cancel(), c.effect = null, c.onfinish = N)
     },
     deactivate: () => {
       e = N
@@ -266,9 +271,9 @@ function C(i, t, a, n, o, e) {
     reset: () => {
       n === 0 && (d == null || d(1, 0))
     },
-    t: () => g()
+    t: () => T()
   }
 }
 export {
-  Y as a, D as l, p as r, Z as t
+  tt as a, H as l, _ as r, Z as s, it as t
 };
