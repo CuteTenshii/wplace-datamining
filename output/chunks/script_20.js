@@ -26,7 +26,7 @@ import {
   I as St,
   J as Ot,
   d as Nt
-} from "./CfW4pcKj.js";
+} from "./DwCrBdmI.js";
 import {
   e as at,
   i as it,
@@ -35,10 +35,10 @@ import {
 } from "./m4hpPlb8.js";
 import {
   g as Et
-} from "./ByD84XK_.js";
+} from "./ohChnVLI.js";
 import {
   r as Bt
-} from "./BtHN6x5D.js";
+} from "./l2CIaGG3.js";
 import {
   d as Gt
 } from "./BL0vj2vA.js";
@@ -51,7 +51,7 @@ import {
 import {
   g as K
 } from "./BhCkpOlh.js";
-import "./Dy3DKCMS.js";
+import "./D9_ZFKaT.js";
 const Lt = () => "Download WPlace from the Google Play Store.",
   Rt = () => "Baixe o WPlace na Google Play Store.",
   zt = () => "请从 Google Play 商店下载 WPlace。",

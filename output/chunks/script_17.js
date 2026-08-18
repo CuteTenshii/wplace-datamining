@@ -3627,7 +3627,7 @@ const FI = [{
   WI = {
     android: {
       googlePlayBilling: {
-        price: 1.2
+        price: 1
       },
       appName: "live.wplace.twa"
     }
