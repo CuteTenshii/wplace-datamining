@@ -3763,63 +3763,63 @@ const FI = [{
       }]
     },
     160: {
-      name: "10 Prism",
+      name: "20 Prism",
       price: 1e3,
       priceCurrency: "fiat",
       lookupKey: "prism_10",
       items: [{
         name: "Prism",
-        amount: 10
+        amount: 20
       }]
     },
     161: {
-      name: "22 Prism",
+      name: "44 Prism",
       price: 2e3,
       priceCurrency: "fiat",
       lookupKey: "prism_20",
       items: [{
         name: "Prism",
-        amount: 22
+        amount: 44
       }]
     },
     162: {
-      name: "36 Prism",
+      name: "72 Prism",
       price: 3e3,
       priceCurrency: "fiat",
       lookupKey: "prism_30",
       items: [{
         name: "Prism",
-        amount: 36
+        amount: 72
       }]
     },
     163: {
-      name: "62 Prism",
+      name: "124 Prism",
       price: 5e3,
       priceCurrency: "fiat",
       lookupKey: "prism_50",
       items: [{
         name: "Prism",
-        amount: 62
+        amount: 124
       }]
     },
     164: {
-      name: "97 Prism",
+      name: "194 Prism",
       price: 7500,
       priceCurrency: "fiat",
       lookupKey: "prism_75",
       items: [{
         name: "Prism",
-        amount: 97
+        amount: 194
       }]
     },
     165: {
-      name: "135 Prism",
+      name: "270 Prism",
       price: 1e4,
       priceCurrency: "fiat",
       lookupKey: "prism_100",
       items: [{
         name: "Prism",
-        amount: 135
+        amount: 270
       }]
     }
   },
