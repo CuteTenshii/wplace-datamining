@@ -34,10 +34,10 @@ import {
 } from "./RFHi9kKd.js";
 import {
   P as F
-} from "./qRhS7Pqi.js";
+} from "./C25xQQEf.js";
 import {
   u as H
-} from "./wXDXmxUO.js";
+} from "./CJwiUDoa.js";
 const J = () => "Banned",
   Q = () => "Banido",
   T = () => "已封禁",

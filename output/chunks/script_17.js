@@ -6632,20 +6632,24 @@ function b0(r) {
         credentials: "include"
       })
     }
-    async refreshFastspringSession(t) {
-      const e = await this.request(`/payment/fastspring/refresh-session/${t}`, {
+    async createFastspringSession(t) {
+      const e = await this.request("/payment/fastspring/session", {
+        method: "POST",
+        credentials: "include",
+        body: JSON.stringify({
+          lookup_key: t
+        })
+      });
+      if (e.status !== i.OK) throw new Error(`fastspring session failed: ${e.status}`);
+      return await e.json()
+    }
+    async refreshFastspringOrder(t) {
+      const e = await this.request(`/payment/fastspring/refresh-order/${t}`, {
         method: "POST",
         credentials: "include"
       });
       if (!e.ok) throw new Error(`fastspring refresh failed: ${e.status}`);
       return await e.json()
-    }
-    async getFastspringSecurePayload(t) {
-      const e = await this.request(`/payment/fastspring/secure-payload?lookup_key=${encodeURIComponent(t)}`, {
-        credentials: "include",
-        throwOnStatus: !1
-      });
-      return e.status !== i.OK ? null : await e.json()
     }
     async getLastFastspringOrder() {
       const t = await this.request("/payment/fastspring/orders/last", {
