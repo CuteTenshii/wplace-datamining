@@ -7,7 +7,7 @@ import {
   y as f,
   i as u,
   h as t
-} from "./m4hpPlb8.js";
+} from "./B20EPEO9.js";
 const a = () => "Phone verification",
   s = () => "Verificação de telefone",
   _ = () => "电话验证",

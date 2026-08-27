@@ -5,13 +5,13 @@ import "./Bzak7iHL.js";
 import {
   a as _,
   k as l
-} from "./m4hpPlb8.js";
+} from "./B20EPEO9.js";
 import {
   b as a
-} from "./BbR4hYuM.js";
+} from "./CzjxjBon.js";
 import {
   r as o
-} from "./RFHi9kKd.js";
+} from "./BUHbb64A.js";
 const i = () => "Color",
   p = () => "Cor",
   c = () => "颜色",

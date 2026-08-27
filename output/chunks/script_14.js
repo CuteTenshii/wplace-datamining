@@ -1,28 +1,66 @@
 import {
-  aL as g,
-  aM as L,
-  aN as T,
-  i as c,
-  g as B,
-  h as M,
-  aO as N,
-  V as U,
-  an as Y,
-  aP as j,
-  B as K,
-  A as $,
-  aQ as q,
-  aR as z,
-  aJ as y,
-  af as C,
-  aS as G,
-  X as x,
-  aT as A,
-  aU as d
-} from "./m4hpPlb8.js";
-let v = !1;
+  ax as U,
+  aL as B,
+  n as x,
+  ak as M,
+  aM as Y,
+  aN as j,
+  i as p,
+  h as A,
+  aO as P,
+  aP as K,
+  aQ as $,
+  g as V,
+  aR as X,
+  V as q,
+  an as z,
+  aS as C,
+  B as G,
+  A as J,
+  aT as Q,
+  aU as W,
+  aJ as E,
+  af as Z,
+  aV as F,
+  X as D,
+  aW as T,
+  aX as d
+} from "./B20EPEO9.js";
+let v = !1,
+  S = Symbol("unmounted");
 
-function J(e) {
+function ne(e, r, t) {
+  const n = t[r] ?? (t[r] = {
+    store: null,
+    source: M(void 0),
+    unsubscribe: x
+  });
+  if (n.store !== e && !(S in t))
+    if (n.unsubscribe(), n.store = e ?? null, e == null) n.source.v = void 0, n.unsubscribe = x;
+    else {
+      var u = !0;
+      n.unsubscribe = Y(e, s => {
+        u ? n.source.v = s : A(n.source, s)
+      }), u = !1
+    } return e && S in t ? j(e) : p(n.source)
+}
+
+function te() {
+  const e = {};
+
+  function r() {
+    U(() => {
+      for (var t in e) e[t].unsubscribe();
+      B(e, S, {
+        enumerable: !1,
+        value: !0
+      })
+    })
+  }
+  return [e, r]
+}
+
+function H(e) {
   var r = v;
   try {
     return v = !1, [e(), v]
@@ -31,11 +69,11 @@ function J(e) {
   }
 }
 
-function Z(e, r = 1) {
-  const n = e();
-  return e(n + r), n
+function ue(e, r = 1) {
+  const t = e();
+  return e(t + r), t
 }
-const Q = {
+const k = {
   get(e, r) {
     if (!e.exclude.has(r)) return e.props[r]
   },
@@ -57,104 +95,104 @@ const Q = {
   }
 };
 
-function F(e, r, n) {
+function ie(e, r, t) {
   return new Proxy({
     props: e,
     exclude: r
-  }, Q)
+  }, k)
 }
-const V = {
+const ee = {
   get(e, r) {
-    let n = e.props.length;
-    for (; n--;) {
-      let t = e.props[n];
-      if (d(t) && (t = t()), typeof t == "object" && t !== null && r in t) return t[r]
-    }
-  },
-  set(e, r, n) {
     let t = e.props.length;
     for (; t--;) {
-      let i = e.props[t];
-      d(i) && (i = i());
-      const a = g(i, r);
-      if (a && a.set) return a.set(n), !0
+      let n = e.props[t];
+      if (d(n) && (n = n()), typeof n == "object" && n !== null && r in n) return n[r]
+    }
+  },
+  set(e, r, t) {
+    let n = e.props.length;
+    for (; n--;) {
+      let u = e.props[n];
+      d(u) && (u = u());
+      const s = P(u, r);
+      if (s && s.set) return s.set(t), !0
     }
     return !1
   },
   getOwnPropertyDescriptor(e, r) {
-    let n = e.props.length;
-    for (; n--;) {
-      let t = e.props[n];
-      if (d(t) && (t = t()), typeof t == "object" && t !== null && r in t) {
-        const i = g(t, r);
-        return i && !i.configurable && (i.configurable = !0), i
+    let t = e.props.length;
+    for (; t--;) {
+      let n = e.props[t];
+      if (d(n) && (n = n()), typeof n == "object" && n !== null && r in n) {
+        const u = P(n, r);
+        return u && !u.configurable && (u.configurable = !0), u
       }
     }
   },
   has(e, r) {
-    if (r === x || r === A) return !1;
-    for (let n of e.props)
-      if (d(n) && (n = n()), n != null && r in n) return !0;
+    if (r === D || r === T) return !1;
+    for (let t of e.props)
+      if (d(t) && (t = t()), t != null && r in t) return !0;
     return !1
   },
   ownKeys(e) {
     const r = [];
-    for (let n of e.props)
-      if (d(n) && (n = n()), !!n) {
-        for (const t in n) r.includes(t) || r.push(t);
-        for (const t of Object.getOwnPropertySymbols(n)) r.includes(t) || r.push(t)
+    for (let t of e.props)
+      if (d(t) && (t = t()), !!t) {
+        for (const n in t) r.includes(n) || r.push(n);
+        for (const n of Object.getOwnPropertySymbols(t)) r.includes(n) || r.push(n)
       } return r
   }
 };
 
-function H(...e) {
+function se(...e) {
   return new Proxy({
     props: e
-  }, V)
+  }, ee)
 }
 
-function W(e, r, n, t) {
+function ae(e, r, t, n) {
   var I;
-  var i = !$ || (n & q) !== 0,
-    a = (n & j) !== 0,
-    S = (n & G) !== 0,
-    u = t,
-    h = !0,
-    b = void 0,
-    O = () => S && i ? (b ?? (b = y(t)), c(b)) : (h && (h = !1, u = S ? K(t) : t), u);
-  let o;
-  if (a) {
-    var E = x in e || A in e;
-    o = ((I = g(e, r)) == null ? void 0 : I.set) ?? (E && r in e ? s => e[r] = s : void 0)
+  var u = !J || (t & Q) !== 0,
+    s = (t & C) !== 0,
+    h = (t & F) !== 0,
+    a = n,
+    b = !0,
+    O = void 0,
+    w = () => h && u ? (O ?? (O = E(n)), p(O)) : (b && (b = !1, a = h ? G(n) : n), a);
+  let l;
+  if (s) {
+    var m = D in e || T in e;
+    l = ((I = P(e, r)) == null ? void 0 : I.set) ?? (m && r in e ? i => e[r] = i : void 0)
   }
-  var l, w = !1;
-  a ? [l, w] = J(() => e[r]) : l = e[r], l === void 0 && t !== void 0 && (l = O(), o && (i && L(), o(l)));
+  var o, y = !1;
+  s ? [o, y] = H(() => e[r]) : o = e[r], o === void 0 && n !== void 0 && (o = w(), l && (u && K(), l(o)));
   var f;
-  if (i ? f = () => {
-      var s = e[r];
-      return s === void 0 ? O() : (h = !0, s)
+  if (u ? f = () => {
+      var i = e[r];
+      return i === void 0 ? w() : (b = !0, i)
     } : f = () => {
-      var s = e[r];
-      return s !== void 0 && (u = void 0), s === void 0 ? u : s
-    }, i && (n & T) === 0) return f;
-  if (o) {
-    var m = e.$$legacy;
-    return (function(s, _) {
-      return arguments.length > 0 ? ((!i || !_ || m || w) && o(_ ? f() : s), s) : f()
+      var i = e[r];
+      return i !== void 0 && (a = void 0), i === void 0 ? a : i
+    }, u && (t & $) === 0) return f;
+  if (l) {
+    var L = e.$$legacy;
+    return (function(i, _) {
+      return arguments.length > 0 ? ((!u || !_ || L || y) && l(_ ? f() : i), i) : f()
     })
   }
-  var P = !1,
-    p = ((n & z) !== 0 ? y : C)(() => (P = !1, f()));
-  a && c(p);
-  var D = U;
-  return (function(s, _) {
+  var g = !1,
+    c = ((t & W) !== 0 ? E : Z)(() => (g = !1, f()));
+  s && p(c);
+  var N = q;
+  return (function(i, _) {
     if (arguments.length > 0) {
-      const R = _ ? c(p) : i && a ? B(s) : s;
-      return M(p, R), P = !0, u !== void 0 && (u = R), s
+      const R = _ ? p(c) : u && s ? V(i) : i;
+      return A(c, R), g = !0, a !== void 0 && (a = R), i
     }
-    return N && P || (D.f & Y) !== 0 ? p.v : c(p)
+    return X && g || (N.f & z) !== 0 ? c.v : p(c)
   })
 }
 export {
-  W as p, F as r, H as s, Z as u
+  te as a, ne as b, ae as p, ie as r, se as s, ue as u
 };

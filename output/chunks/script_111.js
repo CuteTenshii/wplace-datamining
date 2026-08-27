@@ -5,13 +5,13 @@ import "./Bzak7iHL.js";
 import {
   a,
   k as o
-} from "./m4hpPlb8.js";
+} from "./B20EPEO9.js";
 import {
   b as p
-} from "./BbR4hYuM.js";
+} from "./CzjxjBon.js";
 import {
   r as s
-} from "./RFHi9kKd.js";
+} from "./BUHbb64A.js";
 const c = () => "Ban appeal",
   u = () => "Revisão de banimento",
   i = () => "封禁申诉",
