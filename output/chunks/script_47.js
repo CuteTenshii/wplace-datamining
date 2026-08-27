@@ -1,20 +1,20 @@
 import "./Bzak7iHL.js";
 import {
   a as e,
-  k as a
-} from "./B20EPEO9.js";
+  w as a
+} from "./D5GL_E7i.js";
 import {
-  b as p
-} from "./CzjxjBon.js";
+  e as p
+} from "./Ce1mtF2R.js";
 import {
-  r as m
-} from "./BUHbb64A.js";
-var l = new Set(["$$slots", "$$events", "$$legacy"]),
-  v = a('<svg><path d="m356-160-56-56 180-180 180 180-56 56-124-124-124 124Zm124-404L300-744l56-56 124 124 124-124 56 56-180 180Z"></path></svg>');
+  r as v
+} from "./LT-XNHCk.js";
+var m = new Set(["$$slots", "$$events", "$$legacy"]),
+  f = a('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
 
 function c(t, o) {
-  let s = m(o, l);
-  var r = v();
+  let s = v(o, m);
+  var r = f();
   p(r, () => ({
     xmlns: "http://www.w3.org/2000/svg",
     viewBox: "0 -960 960 960",
@@ -23,5 +23,5 @@ function c(t, o) {
   })), e(t, r)
 }
 export {
-  c as U
+  c as A
 };

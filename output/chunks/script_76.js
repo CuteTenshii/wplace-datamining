@@ -1,67 +1,52 @@
 import "./Bzak7iHL.js";
 import {
-  p as x,
-  t as m,
-  a as p,
-  b as g,
-  c as f,
-  d as _,
-  s as b,
-  r as h
-} from "./B20EPEO9.js";
+  l as g,
+  f as n,
+  a as o,
+  w as v
+} from "./D5GL_E7i.js";
 import {
   i as w
-} from "./BaKcxvCV.js";
+} from "./unjGrhDm.js";
 import {
-  b as z,
-  a as c,
-  s as k
-} from "./CzjxjBon.js";
+  e
+} from "./Ce1mtF2R.js";
 import {
-  p as L,
-  r as T
-} from "./BUHbb64A.js";
-import {
-  l as y
-} from "./B_Oz03f8.js";
-var S = new Set(["$$slots", "$$events", "$$legacy", "hasText", "size"]),
-  U = f("<span>wplace</span>"),
-  W = f('<div><img alt="Wplace logo"/> <!></div>');
+  r as c
+} from "./LT-XNHCk.js";
+var d = new Set(["$$slots", "$$events", "$$legacy", "filled"]),
+  h = v('<svg><path d="M160-160v-100.77l527.23-527.77q6.15-5.48 13.57-8.47 7.43-2.99 15.49-2.99t15.62 2.54q7.55 2.54 13.94 9.15l42.69 42.93q6.61 6.38 9.04 14 2.42 7.63 2.42 15.25 0 8.13-2.74 15.56-2.74 7.42-8.72 13.57L260.77-160H160Zm540.15-496.46L760-715.54 715.54-760l-59.08 59.85 43.69 43.69Z"></path></svg>'),
+  _ = v('<svg><path d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"></path></svg>');
 
-function E(n, t) {
-  x(t, !0);
-  let e = L(t, "size", 3, "default"),
-    d = T(t, S);
-  var a = W();
-  z(a, () => ({
-    ...d,
-    class: `flex items-center gap-1.5 ${t.class??""}`
-  }));
-  var s = _(a);
-  let r;
-  var u = b(s, 2);
+function b(i, s) {
+  let a = c(s, d);
+  var l = g(),
+    m = n(l);
   {
-    var v = l => {
-      var o = U();
-      let i;
-      m(() => i = c(o, 1, "text-base-content font-pixel", null, i, {
-        "text-4xl": e() === "default",
-        "text-5xl": e() === "lg" || e() === "medium"
-      })), p(l, o)
-    };
-    w(u, l => {
-      t.hasText && l(v)
+    var f = t => {
+        var r = h();
+        e(r, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...a
+        })), o(t, r)
+      },
+      p = t => {
+        var r = _();
+        e(r, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...a
+        })), o(t, r)
+      };
+    w(m, t => {
+      s.filled ? t(f) : t(p, -1)
     })
   }
-  h(a), m(() => {
-    r = c(s, 1, "pixelated h-auto shrink-0", null, r, {
-      "w-4": e() === "small",
-      "w-10": e() === "default",
-      "w-16": e() === "medium",
-      "w-20": e() === "lg"
-    }), k(s, "src", y)
-  }), p(n, a), g()
+  o(i, l)
 }
 export {
-  E as L
+  b as E
 };

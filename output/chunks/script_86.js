@@ -1,78 +1,27 @@
-const x = t => t;
+import "./Bzak7iHL.js";
+import {
+  a as s,
+  w as q
+} from "./D5GL_E7i.js";
+import {
+  e as a
+} from "./Ce1mtF2R.js";
+import {
+  r as m
+} from "./LT-XNHCk.js";
+var p = new Set(["$$slots", "$$events", "$$legacy"]),
+  v = q('<svg><path d="M480-440q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0-80q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0 440q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-400Zm0-315-240 90v189q0 54 15 105t41 96q42-21 88-33t96-12q50 0 96 12t88 33q26-45 41-96t15-105v-189l-240-90Zm0 515q-36 0-70 8t-65 22q29 30 63 52t72 34q38-12 72-34t63-52q-31-14-65-22t-70-8Z"></path></svg>');
 
-function h(t) {
-  const o = t - 1;
-  return o * o * o + 1
-}
-
-function f(t) {
-  const o = typeof t == "string" && t.match(/^\s*(-?[\d.]+)([^\s]*)\s*$/);
-  return o ? [parseFloat(o[1]), o[2] || "px"] : [t, "px"]
-}
-
-function b(t, {
-  delay: o = 0,
-  duration: i = 400,
-  easing: c = x
-} = {}) {
-  const p = +getComputedStyle(t).opacity;
-  return {
-    delay: o,
-    duration: i,
-    easing: c,
-    css: n => `opacity: ${n*p}`
-  }
-}
-
-function v(t, {
-  delay: o = 0,
-  duration: i = 400,
-  easing: c = h,
-  x: p = 0,
-  y: n = 0,
-  opacity: l = 0
-} = {}) {
-  const e = getComputedStyle(t),
-    d = +e.opacity,
-    a = e.transform === "none" ? "" : e.transform,
-    s = d * (1 - l),
-    [_, y] = f(p),
-    [u, m] = f(n);
-  return {
-    delay: o,
-    duration: i,
-    easing: c,
-    css: ($, g) => `
-			transform: ${a} translate(${(1-$)*_}${y}, ${(1-$)*u}${m});
-			opacity: ${d-s*g}`
-  }
-}
-
-function F(t, {
-  delay: o = 0,
-  duration: i = 400,
-  easing: c = h,
-  axis: p = "y"
-} = {}) {
-  const n = getComputedStyle(t),
-    l = +n.opacity,
-    e = p === "y" ? "height" : "width",
-    d = parseFloat(n[e]),
-    a = p === "y" ? ["top", "bottom"] : ["left", "right"],
-    s = a.map(r => `${r[0].toUpperCase()}${r.slice(1)}`),
-    _ = parseFloat(n[`padding${s[0]}`]),
-    y = parseFloat(n[`padding${s[1]}`]),
-    u = parseFloat(n[`margin${s[0]}`]),
-    m = parseFloat(n[`margin${s[1]}`]),
-    $ = parseFloat(n[`border${s[0]}Width`]),
-    g = parseFloat(n[`border${s[1]}Width`]);
-  return {
-    delay: o,
-    duration: i,
-    easing: c,
-    css: r => `overflow: hidden;opacity: ${Math.min(r*20,1)*l};${e}: ${r*d}px;padding-${a[0]}: ${r*_}px;padding-${a[1]}: ${r*y}px;margin-${a[0]}: ${r*u}px;margin-${a[1]}: ${r*m}px;border-${a[0]}-width: ${r*$}px;border-${a[1]}-width: ${r*g}px;min-${e}: 0`
-  }
+function g(r, o) {
+  let e = m(o, p);
+  var t = v();
+  a(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    viewBox: "0 -960 960 960",
+    fill: "currentColor",
+    ...e
+  })), s(r, t)
 }
 export {
-  v as a, b as f, F as s
+  g as S
 };

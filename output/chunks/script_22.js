@@ -7,16 +7,16 @@ var i = (t, e, n) => (h(t, e, "read from private field"), n ? n.call(t) : e.get(
   d = (t, e, n, r) => (h(t, e, "write to private field"), r ? r.call(t, n) : e.set(t, n), n);
 import {
   c as v
-} from "./dXo2ef-x.js";
+} from "./BATewRf7.js";
 import {
-  bq as m,
-  aF as A,
-  y as k,
-  B as E
-} from "./B20EPEO9.js";
-const F = typeof window < "u" ? window : void 0;
+  bu as m,
+  aI as A,
+  y as E,
+  E as k
+} from "./D5GL_E7i.js";
+const _ = typeof window < "u" ? window : void 0;
 
-function _(t) {
+function g(t) {
   let e = t.activeElement;
   for (; e != null && e.shadowRoot;) {
     const n = e.shadowRoot.activeElement;
@@ -25,18 +25,18 @@ function _(t) {
   }
   return e
 }
-var c, o;
-class g {
+var c, u;
+class F {
   constructor(e = {}) {
     l(this, c);
-    l(this, o);
+    l(this, u);
     const {
-      window: n = F,
+      window: n = _,
       document: r = n == null ? void 0 : n.document
     } = e;
-    n !== void 0 && (d(this, c, r), d(this, o, v(u => {
-      const a = m(n, "focusin", u),
-        s = m(n, "focusout", u);
+    n !== void 0 && (d(this, c, r), d(this, u, v(o => {
+      const a = m(n, "focusin", o),
+        s = m(n, "focusout", o);
       return () => {
         a(), s()
       }
@@ -44,16 +44,16 @@ class g {
   }
   get current() {
     var e;
-    return (e = i(this, o)) == null || e.call(this), i(this, c) ? _(i(this, c)) : null
+    return (e = i(this, u)) == null || e.call(this), i(this, c) ? g(i(this, c)) : null
   }
 }
-c = new WeakMap, o = new WeakMap;
-new g;
+c = new WeakMap, u = new WeakMap;
+new F;
 
-function R(t, e) {
+function I(t, e) {
   switch (t) {
     case "post":
-      k(e);
+      E(e);
       break;
     case "pre":
       A(e);
@@ -63,29 +63,29 @@ function R(t, e) {
 
 function w(t, e, n, r = {}) {
   const {
-    lazy: u = !1
+    lazy: o = !1
   } = r;
-  let a = !u,
+  let a = !o,
     s = Array.isArray(t) ? [] : void 0;
-  R(e, () => {
+  I(e, () => {
     const f = Array.isArray(t) ? t.map(y => y()) : t();
     if (!a) {
       a = !0, s = f;
       return
     }
-    const b = E(() => n(f, s));
+    const b = k(() => n(f, s));
     return s = f, b
   })
 }
 
-function W(t, e, n) {
+function R(t, e, n) {
   w(t, "post", e, n)
 }
 
-function q(t, e, n) {
+function W(t, e, n) {
   w(t, "pre", e, n)
 }
-W.pre = q;
+R.pre = W;
 export {
-  F as d, W as w
+  _ as d, R as w
 };

@@ -1,22 +1,52 @@
+import "./Bzak7iHL.js";
 import {
-  g as r
-} from "./BhCkpOlh.js";
-const n = () => "Extra context on what happened (required)",
-  o = () => "Mais informações sobre o que aconteceu (obrigatório)",
-  i = () => "请提供发生情况的额外背景（必填）",
-  c = () => "Zusätzliche Informationen zum Vorfall (erforderlich)",
-  u = () => "Más contexto sobre lo que ocurrió (obligatorio)",
-  a = () => "Contexte supplémentaire sur ce qui s’est passé (obligatoire)",
-  s = () => "Maggiori informazioni su ciò che è successo (obbligatorio)",
-  _ = () => "何が起きたかの詳細な説明（必須）",
-  x = () => "Dodatkowy kontekst tego, co się stało (wymagane)",
-  g = () => "Дополнительный контекст о произошедшем (обязательно)",
-  f = () => "Додаткова інформація про те, що сталося (обовʼязково)",
-  l = () => "Thêm ngữ cảnh về chuyện đã xảy ra (bắt buộc)",
-  h = (v = {}, e = {}) => {
-    const t = e.locale ?? r();
-    return t === "en" ? n() : t === "pt" ? o() : t === "ch" ? i() : t === "de" ? c() : t === "es" ? u() : t === "fr" ? a() : t === "it" ? s() : t === "jp" ? _() : t === "pl" ? x() : t === "ru" ? g() : t === "uk" ? f() : l()
-  };
+  l as g,
+  f as n,
+  a as o,
+  w as v
+} from "./D5GL_E7i.js";
+import {
+  i as w
+} from "./unjGrhDm.js";
+import {
+  e as l
+} from "./Ce1mtF2R.js";
+import {
+  r as c
+} from "./LT-XNHCk.js";
+var h = new Set(["$$slots", "$$events", "$$legacy", "filled"]),
+  _ = v('<svg><path d="M690-240h190v80H610l80-80Zm-500 80-85-85q-23-23-23.5-57t22.5-58l440-456q23-24 56.5-24t56.5 23l199 199q23 23 23 57t-23 57L520-160H190Z"></path></svg>'),
+  d = v('<svg><path d="M690-240h190v80H610l80-80Zm-500 80-85-85q-23-23-23.5-57t22.5-58l440-456q23-24 56.5-24t56.5 23l199 199q23 23 23 57t-23 57L520-160H190Zm296-80 314-322-198-198-442 456 64 64h262Zm-6-240Z"></path></svg>');
+
+function I(m, s) {
+  let a = c(s, h);
+  var e = g(),
+    i = n(e);
+  {
+    var f = t => {
+        var r = _();
+        l(r, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...a
+        })), o(t, r)
+      },
+      p = t => {
+        var r = d();
+        l(r, () => ({
+          xmlns: "http://www.w3.org/2000/svg",
+          viewBox: "0 -960 960 960",
+          fill: "currentColor",
+          ...a
+        })), o(t, r)
+      };
+    w(i, t => {
+      s.filled ? t(f) : t(p, -1)
+    })
+  }
+  o(m, e)
+}
 export {
-  h as g
+  I
 };

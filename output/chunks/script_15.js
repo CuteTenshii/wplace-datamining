@@ -1,0 +1,18 @@
+import {
+  M as p,
+  P as t
+} from "./D5GL_E7i.js";
+import {
+  B as c
+} from "./yJVs3h_J.js";
+
+function f(r, s, ...a) {
+  var e = new c(r);
+  p(() => {
+    const n = s() ?? null;
+    e.ensure(n, n && (o => n(o, ...a)))
+  }, t)
+}
+export {
+  f as s
+};

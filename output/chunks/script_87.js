@@ -1,22 +1,29 @@
+import "./Bzak7iHL.js";
 import {
-  g as t
-} from "./BhCkpOlh.js";
-const e = () => "Loading...",
-  o = () => "Carregando...",
-  i = () => "加载中...",
-  a = () => "Laden...",
-  u = () => "Cargando...",
-  l = () => "Chargement...",
-  c = () => "Caricamento...",
-  d = () => "読み込み中...",
-  g = () => "Ładowanie...",
-  s = () => "Загрузка...",
-  f = () => "Завантаження...",
-  _ = () => "Đang tải...",
-  C = (p = {}, r = {}) => {
-    const n = r.locale ?? t();
-    return n === "en" ? e() : n === "pt" ? o() : n === "ch" ? i() : n === "de" ? a() : n === "es" ? u() : n === "fr" ? l() : n === "it" ? c() : n === "jp" ? d() : n === "pl" ? g() : n === "ru" ? s() : n === "uk" ? f() : _()
-  };
+  a as s,
+  w as p
+} from "./D5GL_E7i.js";
+import {
+  e as a
+} from "./Ce1mtF2R.js";
+import {
+  r as v
+} from "./LT-XNHCk.js";
+var m = new Set(["$$slots", "$$events", "$$legacy"]),
+  i = p('<svg><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h560v-560H200v560Zm40-80h480L570-480 450-320l-90-120-120 160Zm-40 80v-560 560Z"></path></svg>');
+
+function n(r, e) {
+  let o = v(e, m);
+  var t = i();
+  a(t, () => ({
+    xmlns: "http://www.w3.org/2000/svg",
+    height: "24px",
+    viewBox: "0 -960 960 960",
+    width: "24px",
+    fill: "currentColor",
+    ...o
+  })), s(r, t)
+}
 export {
-  C as l
+  n as I
 };

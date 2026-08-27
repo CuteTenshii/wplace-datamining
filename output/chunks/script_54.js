@@ -1,57 +1,113 @@
+import "./Bzak7iHL.js";
 import {
-  t as C,
-  K as d,
-  P as v,
-  a8 as i,
-  L as E,
-  V as T,
-  ay as _,
-  az as m,
-  R as M,
-  aa as p,
-  at as w,
-  aA as N,
-  aB as R,
-  aC as g,
-  aD as H,
-  aE as L
-} from "./B20EPEO9.js";
+  k as j,
+  p as q,
+  l as y,
+  f as S,
+  i as x,
+  a as l,
+  b as B,
+  u as C,
+  d as u,
+  z as h,
+  r as v,
+  t as _,
+  c as g,
+  m as o
+} from "./D5GL_E7i.js";
+import {
+  s as k
+} from "./BMTVjKyu.js";
+import {
+  i as A
+} from "./unjGrhDm.js";
+import {
+  a as p,
+  c as F,
+  s
+} from "./Ce1mtF2R.js";
+import {
+  p as d
+} from "./LT-XNHCk.js";
+import {
+  P as G
+} from "./CrN6bqEV.js";
+import {
+  u as H
+} from "./DH3WiCeb.js";
 
-function D(h, y, u = !1, f = !1, t = !1, O = !1) {
-  var n = h,
-    e = "";
-  if (u) {
-    var l = h;
-    d && (n = v(i(l)))
-  }
-  C(() => {
-    var s = T;
-    if (e === (e = y() ?? "")) {
-      d && E();
-      return
-    }
-    if (u && !d) {
-      s.nodes = null, l.innerHTML = e, e !== "" && _(i(l), l.lastChild);
-      return
-    }
-    if (s.nodes !== null && (m(s.nodes.start, s.nodes.end), s.nodes = null), e !== "") {
-      if (d) {
-        M.data;
-        for (var a = E(), c = a; a !== null && (a.nodeType !== p || a.data !== "");) c = a, a = w(a);
-        if (a === null) throw N(), R;
-        _(M, c), n = v(a);
-        return
-      }
-      var A = f ? H : t ? L : void 0,
-        o = g(f ? "svg" : t ? "math" : "template", A);
-      o.innerHTML = e;
-      var r = f || t ? o : o.content;
-      if (_(i(r), r.lastChild), f || t)
-        for (; i(r);) n.before(i(r));
-      else n.before(r)
-    }
-  })
+function D(r) {
+  return `/dashboard/alliances?id=${encodeURIComponent(String(r))}`
 }
+
+function J(r) {
+  typeof window > "u" || window.open(D(r), "_blank", "noopener,noreferrer")
+}
+var Q = g('<span role="link" tabindex="0"><!></span>'),
+  T = g('<a target="_blank" rel="noopener noreferrer"><!></a>'),
+  W = g("<span><!></span>");
+
+function ia(r, a) {
+  q(a, !0);
+  let E = d(a, "mode", 3, "anchor"),
+    I = d(a, "class", 3, ""),
+    w = d(a, "linkClass", 19, I),
+    L = d(a, "textClass", 19, I);
+  const N = C(() => a.allianceId != null && a.allianceId > 0 && H.hasAnyPermission(G.dashboard.alliances)),
+    R = C(() => a.allianceId == null ? "" : D(a.allianceId));
+
+  function c(n) {
+    n.stopPropagation()
+  }
+
+  function b(n) {
+    a.allianceId == null || a.allianceId <= 0 || (n.preventDefault(), n.stopPropagation(), J(a.allianceId))
+  }
+
+  function z(n) {
+    n.key !== "Enter" && n.key !== " " || b(n)
+  }
+  var P = y(),
+    K = S(P);
+  {
+    var M = n => {
+        var t = y(),
+          f = S(t);
+        {
+          var U = i => {
+              var e = Q(),
+                m = u(e);
+              k(m, () => a.children ?? h), v(e), _(() => {
+                p(e, 1, `cursor-pointer hover:underline ${w()}`), s(e, "title", a.title)
+              }), o("pointerdown", e, c), o("click", e, b), o("keydown", e, z), l(i, e)
+            },
+            V = i => {
+              var e = T(),
+                m = u(e);
+              k(m, () => a.children ?? h), v(e), _(() => {
+                p(e, 1, `cursor-pointer hover:underline ${w()}`), s(e, "href", x(R)), s(e, "title", a.title)
+              }), o("pointerdown", e, c), o("click", e, c), l(i, e)
+            };
+          A(f, i => {
+            E() === "inline" ? i(U) : i(V, -1)
+          })
+        }
+        l(n, t)
+      },
+      O = n => {
+        var t = W(),
+          f = u(t);
+        k(f, () => a.children ?? h), v(t), _(() => {
+          p(t, 1, F(L())), s(t, "title", a.title)
+        }), l(n, t)
+      };
+    A(K, n => {
+      x(N) ? n(M) : n(O, -1)
+    })
+  }
+  l(r, P), B()
+}
+j(["pointerdown", "click", "keydown"]);
 export {
-  D as h
+  ia as S
 };

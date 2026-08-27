@@ -1,132 +1,112 @@
-var D = Object.defineProperty;
-var E = t => {
-  throw TypeError(t)
-};
-var F = (t, e, s) => e in t ? D(t, e, {
-  enumerable: !0,
-  configurable: !0,
-  writable: !0,
-  value: s
-}) : t[e] = s;
-var S = (t, e, s) => F(t, typeof e != "symbol" ? e + "" : e, s),
-  _ = (t, e, s) => e.has(t) || E("Cannot " + s);
-var A = (t, e, s) => (_(t, e, "read from private field"), s ? s.call(t) : e.get(t)),
-  m = (t, e, s) => e.has(t) ? E("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, s),
-  I = (t, e, s, a) => (_(t, e, "write to private field"), a ? a.call(t, s) : e.set(t, s), s),
-  w = (t, e, s) => (_(t, e, "access private method"), s);
 import "./Bzak7iHL.js";
 import {
-  p as R,
-  i as G,
-  r as C,
-  t as f,
-  a as g,
-  b as q,
-  u as j,
-  c as b,
-  d as L,
-  s as J
-} from "./B20EPEO9.js";
+  p as E,
+  i as r,
+  h as c,
+  y as F,
+  d as l,
+  s as o,
+  A as G,
+  r as d,
+  t as _,
+  a as b,
+  b as H,
+  e as J,
+  u as K,
+  c as w
+} from "./D5GL_E7i.js";
 import {
-  i as M
-} from "./BaKcxvCV.js";
+  s as h
+} from "./BATewRf7.js";
 import {
-  a as T,
-  e as P,
-  c as z,
-  s as H
-} from "./CzjxjBon.js";
+  i as S
+} from "./unjGrhDm.js";
 import {
-  h as Q
-} from "./B8pHkFBD.js";
+  e as M,
+  C as N
+} from "./Ce1mtF2R.js";
 import {
-  t as N
-} from "./Ct12j0u0.js";
-const k = 9,
-  V = 95,
-  W = 45,
-  p = 5;
+  b as O
+} from "./siaHaSCw.js";
+import {
+  b as P
+} from "./59dp7Pbq.js";
+import {
+  p as f,
+  r as Q
+} from "./LT-XNHCk.js";
+import {
+  m as g
+} from "./XL5Wf48w.js";
+var R = new Set(["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate", "disabled", "ref"]),
+  U = w('<legend class="fieldset-legend"> </legend>'),
+  V = w('<span class="text-base-content/80"> </span>'),
+  W = w('<fieldset class="fieldset"><!> <textarea></textarea> <div class="flex items-center justify-between text-xs"><span class="text-error"> </span> <!></div></fieldset>');
 
-function X(t) {
-  return t.split("").reduce((e, s) => (e ^ s.charCodeAt(0)) * -p, p) >>> 2
-}
+function ie(C, e) {
+  E(e, !0);
+  let n = f(e, "value", 15),
+    j = f(e, "validate", 15),
+    k = f(e, "disabled", 3, !1),
+    y = f(e, "ref", 15),
+    q = Q(e, R),
+    i = J("");
+  const m = K(() => {
+    var a;
+    return ((a = n()) == null ? void 0 : a.length) ?? 0
+  });
+  j(I);
 
-function y(t = "", e = V, s = W, a = X) {
-  const l = a(t),
-    d = l % k * (360 / k);
-  return [...Array(t ? 25 : 0)].reduce((v, x, o) => l & 1 << o % 15 ? v + `<rect x="${o>14?7-~~(o/5):~~(o/5)}" y="${o%5}" width="1" height="1"/>` : v, `<svg viewBox="-1.5 -1.5 8 8" xmlns="http://www.w3.org/2000/svg" fill="hsl(${d} ${e}% ${s}%)" shape-rendering="crispEdges">`) + "</svg>"
-}
-var B, r, h, c, u, U, O;
-(B = globalThis.customElements) != null && B.get("minidenticon-svg") || (O = globalThis.customElements) == null || O.define("minidenticon-svg", (r = class extends HTMLElement {
-  constructor() {
-    super(...arguments);
-    m(this, u);
-    m(this, c, !1)
+  function I() {
+    return e.min !== void 0 && r(m) < e.min ? (c(i, e.min === 1 ? g.required() : g.min_characters({
+      min: e.min
+    }), !0), !1) : e.max !== void 0 && r(m) > e.max ? (c(i, g.max_characters({
+      max: e.max
+    }), !0), !1) : (c(i, ""), !0)
   }
-  connectedCallback() {
-    w(this, u, U).call(this), I(this, c, !0)
-  }
-  attributeChangedCallback() {
-    A(this, c) && w(this, u, U).call(this)
-  }
-}, h = new WeakMap, c = new WeakMap, u = new WeakSet, U = function() {
-  var l;
-  const s = r.observedAttributes.map(d => this.getAttribute(d) || void 0),
-    a = s.join(",");
-  this.innerHTML = (l = A(r, h))[a] ?? (l[a] = y(...s))
-}, S(r, "observedAttributes", ["username", "saturation", "lightness"]), m(r, h, {}), r));
-var Y = b("<div></div>");
-
-function Z(t, e) {
-  R(e, !0);
-  const s = j(() => e.seed && e.seed.length > 0 ? e.seed : e.userId.toString());
-  var a = Y();
-  Q(a, () => y(G(s), 95, 45), !0), C(a), f(() => T(a, 1, `bg-base-200 minidenticon ${e.class??""??""}`)), g(t, a), q()
-}
-var K = b('<img class="pixelated bg-base-200 size-full" alt="User profile"/>'),
-  $ = b('<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square w-full"/>'),
-  ee = b("<div><div><!></div> <!></div>");
-
-function oe(t, e) {
-  R(e, !0);
-  var s = ee(),
-    a = L(s);
-  P(a, "width: 67.76785714285714%");
-  var l = L(a);
+  F(() => {
+    var a;
+    e.max !== void 0 && r(m) > e.max && n((a = n()) == null ? void 0 : a.substring(0, e.max))
+  });
+  var v = W(),
+    A = l(v);
   {
-    var d = i => {
-        Z(i, {
-          get userId() {
-            return e.userId
-          },
-          get seed() {
-            return e.avatarSeed
-          }
-        })
-      },
-      v = i => {
-        var n = K();
-        f(() => H(n, "src", e.pictureUrl)), g(i, n)
-      };
-    M(l, i => {
-      e.pictureUrl ? i(v, -1) : i(d)
-    })
-  }
-  C(a);
-  var x = J(a, 2);
-  {
-    var o = i => {
-      var n = $();
-      P(n, "scale: 114.99999999999999%;"), f(() => H(n, "src", e.frameUrl)), g(i, n)
+    var T = a => {
+      var t = U(),
+        x = l(t, !0);
+      d(t), _(() => h(x, e.label)), b(a, t)
     };
-    M(x, i => {
-      e.frameUrl && i(o)
+    S(A, a => {
+      e.label && a(T)
     })
   }
-  C(s), f((i, n) => {
-    T(s, 1, i), T(a, 1, n)
-  }, [() => z(N("relative inline-grid size-10 place-items-center", e.class)), () => z(N("avatar border-base-300 aspect-square overflow-hidden rounded-full border", e.avatarClass))]), g(t, s), q()
+  var s = o(A, 2);
+  G(s), M(s, () => ({
+    ...q,
+    class: `textarea w-full ${e.class??""}`,
+    placeholder: e.placeholder,
+    disabled: k(),
+    [N]: {
+      "textarea-error": !!r(i)
+    }
+  }), void 0, void 0, void 0, "svelte-16tom9o"), P(s, a => y(a), () => y());
+  var L = o(s, 2),
+    u = l(L),
+    z = l(u, !0);
+  d(u);
+  var B = o(u, 2);
+  {
+    var D = a => {
+      var t = V(),
+        x = l(t, !0);
+      d(t), _(() => h(x, e.max - r(m))), b(a, t)
+    };
+    S(B, a => {
+      e.max !== void 0 && a(D)
+    })
+  }
+  d(L), d(v), _(() => h(z, r(i))), O(s, n), b(C, v), H()
 }
 export {
-  oe as P, Z as a, y as m
+  ie as L
 };

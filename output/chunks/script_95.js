@@ -1,27 +1,74 @@
-import "./Bzak7iHL.js";
 import {
-  a as v,
-  k as e
-} from "./B20EPEO9.js";
+  P as s
+} from "./CrN6bqEV.js";
 import {
-  b as a
-} from "./CzjxjBon.js";
-import {
-  r as p
-} from "./BUHbb64A.js";
-var q = new Set(["$$slots", "$$events", "$$legacy"]),
-  m = e('<svg><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"></path></svg>');
+  m as a
+} from "./XL5Wf48w.js";
+const i = [{
+  key: "dashboard",
+  href: "/dashboard/home",
+  label: () => a.home(),
+  permissions: s.dashboard.summary
+}, {
+  key: "mods",
+  href: "/dashboard/team",
+  label: () => a.team(),
+  permissions: s.dashboard.team
+}, {
+  key: "appeals",
+  href: "/dashboard/appeals",
+  label: () => a.appeals(),
+  permissions: s.dashboard.banAppeals
+}, {
+  key: "tickets",
+  href: "/dashboard/tickets",
+  label: () => a.tickets(),
+  permissions: s.dashboard.allTickets
+}, {
+  key: "kpi",
+  href: "/dashboard/kpi/tickets",
+  label: () => "KPI",
+  permissions: s.dashboard.kpi
+}, {
+  key: "users",
+  href: "/dashboard/users",
+  label: () => a.users(),
+  permissions: s.dashboard.users
+}, {
+  key: "permissions",
+  href: "/dashboard/permissions",
+  label: () => a.permissions(),
+  permissions: s.dashboard.permissions
+}, {
+  key: "alliances",
+  href: "/dashboard/alliances",
+  label: () => a.alliances(),
+  permissions: s.dashboard.alliances
+}, {
+  key: "audit-logs",
+  href: "/dashboard/audit-logs",
+  label: () => a.audit_logs(),
+  permissions: s.dashboard.auditLogs.only("see")
+}, {
+  key: "ticket-reversals",
+  href: "/dashboard/ticket-reversals",
+  label: () => a.ticket_reversals_title(),
+  permissions: s.tickets.only("revertReview")
+}, {
+  key: "store-manager",
+  href: "/dashboard/store-manager",
+  label: () => a.store_manager(),
+  permissions: s.dashboard.storeManager
+}, {
+  key: "anticheat",
+  href: "/dashboard/anticheat",
+  label: () => "Anticheat",
+  permissions: s.dashboard.anticheat
+}];
 
-function n(r, o) {
-  let s = p(o, q);
-  var t = m();
-  a(t, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...s
-  })), v(r, t)
+function t(e) {
+  return i.find(r => e.hasAnyPermission(r.permissions))
 }
 export {
-  n as L
+  i as D, t as f
 };

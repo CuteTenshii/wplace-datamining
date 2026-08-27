@@ -1,42 +1,96 @@
+var D = Object.defineProperty;
+var g = i => {
+  throw TypeError(i)
+};
+var F = (i, e, s) => e in i ? D(i, e, {
+  enumerable: !0,
+  configurable: !0,
+  writable: !0,
+  value: s
+}) : i[e] = s;
+var w = (i, e, s) => F(i, typeof e != "symbol" ? e + "" : e, s),
+  y = (i, e, s) => e.has(i) || g("Cannot " + s);
+var t = (i, e, s) => (y(i, e, "read from private field"), s ? s.call(i) : e.get(i)),
+  l = (i, e, s) => e.has(i) ? g("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(i) : e.set(i, s),
+  M = (i, e, s, a) => (y(i, e, "write to private field"), a ? a.call(i, s) : e.set(i, s), s);
 import {
-  J as c,
-  K as o,
-  L as l,
-  M as b,
-  N as p,
-  O as v,
-  P as g,
-  Q as f,
-  R as m
-} from "./B20EPEO9.js";
-import {
-  B as y
-} from "./CwOkdcsw.js";
-
-function R(_, d, h = !1) {
-  var n;
-  o && (n = m, l());
-  var s = new y(_),
-    u = h ? b : 0;
-
-  function t(a, r) {
-    if (o) {
-      var e = p(n);
-      if (a !== parseInt(e.substring(1))) {
-        var i = v();
-        g(i), s.anchor = i, f(!1), s.ensure(a, r), f(!0);
-        return
+  a0 as x,
+  a1 as b,
+  a2 as C,
+  a3 as A,
+  a4 as B,
+  a5 as N,
+  N as S,
+  U,
+  a6 as j,
+  a7 as q
+} from "./D5GL_E7i.js";
+var c, n, r, u, p, _, v;
+class G {
+  constructor(e, s = !0) {
+    w(this, "anchor");
+    l(this, c, new Map);
+    l(this, n, new Map);
+    l(this, r, new Map);
+    l(this, u, new Set);
+    l(this, p, !0);
+    l(this, _, e => {
+      if (t(this, c).has(e)) {
+        var s = t(this, c).get(e),
+          a = t(this, n).get(s);
+        if (a) x(a), t(this, u).delete(s);
+        else {
+          var h = t(this, r).get(s);
+          h && (x(h.effect), t(this, n).set(s, h.effect), t(this, r).delete(s), h.fragment.lastChild.remove(), this.anchor.before(h.fragment), a = h.effect)
+        }
+        for (const [f, o] of t(this, c)) {
+          if (t(this, c).delete(f), f === e) break;
+          const d = t(this, r).get(o);
+          d && (b(d.effect), t(this, r).delete(o))
+        }
+        for (const [f, o] of t(this, n)) {
+          if (f === s || t(this, u).has(f)) continue;
+          const d = () => {
+            if (Array.from(t(this, c).values()).includes(f)) {
+              var k = document.createDocumentFragment();
+              j(o, k), k.append(A()), t(this, r).set(f, {
+                effect: o,
+                fragment: k
+              })
+            } else b(o);
+            t(this, u).delete(f), t(this, n).delete(f)
+          };
+          t(this, p) || !a ? (t(this, u).add(f), C(o, d, !1)) : d()
+        }
       }
-    }
-    s.ensure(a, r)
+    });
+    l(this, v, e => {
+      t(this, c).delete(e);
+      const s = Array.from(t(this, c).values());
+      for (const [a, h] of t(this, r)) s.includes(a) || (b(h.effect), t(this, r).delete(a))
+    });
+    this.anchor = e, M(this, p, s)
   }
-  c(() => {
-    var a = !1;
-    d((r, e = 0) => {
-      a = !0, t(e, r)
-    }), a || t(-1, null)
-  }, u)
+  ensure(e, s) {
+    var a = N,
+      h = q();
+    if (s && !t(this, n).has(e) && !t(this, r).has(e))
+      if (h) {
+        var f = document.createDocumentFragment(),
+          o = A();
+        f.append(o), t(this, r).set(e, {
+          effect: B(() => s(o)),
+          fragment: f
+        })
+      } else t(this, n).set(e, B(() => s(this.anchor)));
+    if (t(this, c).set(a, e), h) {
+      for (const [d, m] of t(this, n)) d === e ? a.unskip_effect(m) : a.skip_effect(m);
+      for (const [d, m] of t(this, r)) d === e ? a.unskip_effect(m.effect) : a.skip_effect(m.effect);
+      a.oncommit(t(this, _)), a.ondiscard(t(this, v))
+    } else S && (this.anchor = U), t(this, _).call(this, a)
+  }
 }
+c = new WeakMap, n = new WeakMap, r = new WeakMap, u = new WeakMap, p = new WeakMap, _ = new WeakMap, v = new WeakMap;
 export {
-  R as i
+  G as B
 };
