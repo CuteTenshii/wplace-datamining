@@ -1,194 +1,194 @@
 import "./Bzak7iHL.js";
 import {
-  o as Ct,
-  a as ba
+  o as kt,
+  a as ma
 } from "./D68Ns86n.js";
 import {
-  k as St,
-  p as Te,
-  l as Ve,
-  f as de,
+  k as Ct,
+  p as Re,
+  l as Ke,
+  f as ve,
   a as i,
-  b as Ue,
+  b as je,
   d as r,
   r as a,
-  m as qe,
+  m as Le,
   c as p,
   s as n,
-  n as $t,
-  t as E,
+  n as Zt,
+  t as I,
   i as t,
-  w as Me,
+  w as Be,
   u as D,
   o as it,
-  y as Rt,
+  y as zt,
   e as $,
-  g as ya,
+  g as ba,
   h as c,
-  z as ea,
-  ai as xa,
-  bP as wa
+  z as $t,
+  ai as ya,
+  bP as xa
 } from "./D5GL_E7i.js";
 import {
-  s as w
+  s as x
 } from "./BATewRf7.js";
 import {
   i as P
 } from "./unjGrhDm.js";
 import {
-  k as Kt
+  k as Gt
 } from "./BSqwrFfw.js";
 import {
-  s as He,
-  a as Se,
-  b as at,
-  c as Vt
+  s as Oe,
+  a as Ae,
+  b as tt,
+  c as Kt
 } from "./Ce1mtF2R.js";
 import {
-  p as Ae
+  p as Pe
 } from "./LT-XNHCk.js";
 import {
-  g as mt,
+  g as _t,
   u as ye,
-  a as Ke,
-  m as Nt,
-  t as Bt
-} from "./DH3WiCeb.js";
+  a as Ge,
+  m as Vt,
+  t as Dt
+} from "./CT6bOf-I.js";
 import {
-  a as ka,
-  u as Ca
-} from "./gwLxGujQ.js";
+  a as wa,
+  u as ka
+} from "./CwG1zf2_.js";
 import {
-  a as je,
-  T as Mt
-} from "./Hmj4PvJW.js";
+  a as ze,
+  T as Et
+} from "./B49yUQkc.js";
 import {
-  r as Sa
+  r as Ca
 } from "./VBpCGu7-.js";
 import {
-  D as rt
+  D as at
 } from "./DeqNqtry.js";
 import {
-  A as qa
+  A as Sa
 } from "./DbWKmSLt.js";
 import {
   D as lt
 } from "./XfM3qyVN.js";
 import {
-  r as Jt
-} from "./D9qabHo7.js";
+  r as Nt
+} from "./Doxze0Iw.js";
 import {
-  l as Aa
+  l as qa
 } from "./B_Oz03f8.js";
 import {
-  s as Xt
+  s as Jt
 } from "./BMTVjKyu.js";
 import {
   e as ot,
-  i as Yt
+  i as Xt
 } from "./Clrj6tX0.js";
 import {
   m as f
 } from "./XL5Wf48w.js";
 import {
-  C as La
+  C as Aa
 } from "./lC2jQGp7.js";
 import {
-  I as Pa
+  I as La
 } from "./DUdOWnGA.js";
 import {
-  P as zt
+  P as Mt
 } from "./CJr-euBW.js";
 import {
-  R as It
+  R as Bt
 } from "./C1nh0WCK.js";
 import {
-  U as Da
+  U as Pa
 } from "./BjJ3k5vh.js";
 import {
-  U as Ba
+  U as Da
 } from "./DIU-rKtX.js";
 import {
-  c as Ia,
-  d as Ea
-} from "./DHnjfrE5.js";
+  c as Ba,
+  d as Ia
+} from "./D5blgKZB.js";
 import {
-  b as Ma
+  b as Ea
 } from "./59dp7Pbq.js";
 import {
-  A as za
+  A as Ma
 } from "./D4Cpnjo6.js";
 import {
-  a as Ra
+  a as za
 } from "./DVUNSmMz.js";
-const nn = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAAXNSR0IArs4c6QAAACpJREFUeNpj+AsEZ86ASIa/DAwMZ84ACRDzDBigMs/AARITq1oUwxBWAADaREUdDMswKwAAAABJRU5ErkJggg==";
-var ja = p('<span class="btn btn-xs btn-circle btn-primary ml-0.5 size-5"><!></span>'),
-  Ta = p('<span class="flex items-center gap-1"><!> <span class="text-primary text-base font-semibold"> <span class="text-xs max-lg:hidden">Droplets</span></span> <!></span>'),
-  Ua = p('<button class="badge badge-lg border-base-content/10 right-tooltip cursor-pointer border-2 pr-1 pl-1"><!></button>'),
-  Fa = p('<span class="badge badge-lg border-base-content/10 right-tooltip border-2 pr-2 pl-1"><!></span>');
+const sn = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAAXNSR0IArs4c6QAAACpJREFUeNpj+AsEZ86ASIa/DAwMZ84ACRDzDBigMs/AARITq1oUwxBWAADaREUdDMswKwAAAABJRU5ErkJggg==";
+var Ra = p('<span class="btn btn-xs btn-circle btn-primary ml-0.5 size-5"><!></span>'),
+  ja = p('<span class="flex items-center gap-1"><!> <span class="text-primary text-base font-semibold"> <span class="text-xs max-lg:hidden">Droplets</span></span> <!></span>'),
+  Ta = p('<button class="badge badge-lg border-base-content/10 right-tooltip cursor-pointer border-2 pr-1 pl-1"><!></button>'),
+  Ua = p('<span class="badge badge-lg border-base-content/10 right-tooltip border-2 pr-2 pl-1"><!></span>');
 
-function Oa(v, e) {
-  Te(e, !0);
-  const o = C => {
-    var u = Ta(),
-      b = r(u);
-    lt(b, {
+function Fa(v, e) {
+  Re(e, !0);
+  const o = k => {
+    var u = ja(),
+      m = r(u);
+    lt(m, {
       class: "text-primary size-4.5"
     });
-    var B = n(b, 2),
-      M = r(B);
-    $t(), a(B);
-    var j = n(B, 2);
+    var B = n(m, 2),
+      z = r(B);
+    Zt(), a(B);
+    var R = n(B, 2);
     {
-      var F = g => {
-        var K = ja(),
-          N = r(K);
-        qa(N, {
+      var H = h => {
+        var K = Ra(),
+          X = r(K);
+        Sa(X, {
           class: "size-4"
-        }), a(K), i(g, K)
+        }), a(K), i(h, K)
       };
-      P(j, g => {
-        s() && g(F)
+      P(R, h => {
+        s() && h(H)
       })
     }
-    a(u), E(g => w(M, `${g??""} `), [() => e.value.toLocaleString(navigator.language)]), i(C, u)
+    a(u), I(h => x(z, `${h??""} `), [() => e.value.toLocaleString(navigator.language)]), i(k, u)
   };
-  let s = Ae(e, "button", 3, !0);
-  var l = Ve(),
-    m = de(l);
+  let s = Pe(e, "button", 3, !0);
+  var l = Ke(),
+    _ = ve(l);
   {
-    var L = C => {
-        var u = Ua(),
-          b = r(u);
-        o(b), a(u), qe("click", u, () => {
-          mt.dropletsDialogOpen = !0
-        }), i(C, u)
+    var L = k => {
+        var u = Ta(),
+          m = r(u);
+        o(m), a(u), Le("click", u, () => {
+          _t.dropletsDialogOpen = !0
+        }), i(k, u)
       },
-      k = C => {
-        var u = Fa(),
-          b = r(u);
-        o(b), a(u), i(C, u)
+      w = k => {
+        var u = Ua(),
+          m = r(u);
+        o(m), a(u), i(k, u)
       };
-    P(m, C => {
-      s() ? C(L) : C(k, -1)
+    P(_, k => {
+      s() ? k(L) : k(w, -1)
     })
   }
-  i(v, l), Ue()
+  i(v, l), je()
 }
-St(["click"]);
-const yt = v => {
-    var e = _r();
+Ct(["click"]);
+const bt = v => {
+    var e = gr();
     i(v, e)
   },
   Ha = v => {
+    var e = _r();
+    i(v, e)
+  },
+  Oa = v => {
     var e = mr();
     i(v, e)
   },
-  Wa = v => {
-    var e = br();
-    i(v, e)
-  },
-  Ga = {
+  Wa = {
     success: {
       accent: "#22c55e",
       accentDark: "#16a34a",
@@ -244,438 +244,438 @@ const yt = v => {
       titleColor: "#334155"
     }
   },
-  ta = 38,
-  aa = 32,
-  Ka = (v, e) => {
+  ea = 38,
+  ta = 32,
+  Ga = (v, e) => {
     const o = (Math.sin(v * 12.9898 + e * 78.233) * 43758.5453 % 1 + 1) % 1,
-      s = (l, m, L) => Math.sqrt((v - l) ** 2 + (e - m) ** 2) < L + (o - .5) * 2;
+      s = (l, _, L) => Math.sqrt((v - l) ** 2 + (e - _) ** 2) < L + (o - .5) * 2;
     return s(6, 8, 5) || s(14, 14, 6) || s(26, 10, 7) || s(28, 22, 5) || s(18, 24, 3)
   },
-  ra = [];
-for (let v = 0; v < aa; v++)
-  for (let e = 0; e < ta; e++) Ka(e, v) && ra.push({
+  aa = [];
+for (let v = 0; v < ta; v++)
+  for (let e = 0; e < ea; e++) Ga(e, v) && aa.push({
     x: e,
     y: v
   });
-var Va = p('<span class="wp-dots svelte-ifq4hh" aria-hidden="true"><span class="svelte-ifq4hh"></span><span class="svelte-ifq4hh"></span><span class="svelte-ifq4hh"></span></span>'),
-  Na = p('<div class="wp-amount-label svelte-ifq4hh"> </div>'),
-  Ja = p('<div class="svelte-ifq4hh"><div class="wp-amount tabular-nums svelte-ifq4hh"> </div> <!></div>'),
-  Xa = p('<p class="wp-body svelte-ifq4hh"><!></p>'),
-  Ya = p('<li class="svelte-ifq4hh"><span class="wp-bullet-row svelte-ifq4hh"><span class="wp-bullet-label svelte-ifq4hh"> </span> <span class="wp-bullet-value tabular-nums svelte-ifq4hh"><!> </span></span></li>'),
-  Qa = p('<ul class="wp-bullets svelte-ifq4hh"></ul>'),
-  Za = p('<div class="wp-receipt-row svelte-ifq4hh"><span class="svelte-ifq4hh"> </span> <strong class="svelte-ifq4hh"> </strong></div>'),
-  $a = p('<div class="wp-receipt-divider svelte-ifq4hh"></div> <div class="wp-receipt-row wp-receipt-total svelte-ifq4hh"><span class="svelte-ifq4hh"> </span> <span class="v svelte-ifq4hh"> </span></div>', 1),
-  er = p('<div class="wp-receipt svelte-ifq4hh"><!> <!></div>'),
-  tr = p('<div class="wp-progress svelte-ifq4hh" aria-hidden="true"></div>'),
-  ar = p('<div class="wp-meta svelte-ifq4hh"><!></div>'),
-  rr = p('<div class="wp-btn-row svelte-ifq4hh"><button class="wp-cta wp-cta-ghost focus:outline-none svelte-ifq4hh" type="button"> </button> <button class="wp-cta focus:outline-none svelte-ifq4hh" type="button"> </button></div>'),
-  sr = p('<button class="wp-cta focus:outline-none svelte-ifq4hh" type="button"><span class="svelte-ifq4hh"> </span> <!></button>'),
-  nr = p('<button class="wp-cta wp-cta-ghost svelte-ifq4hh" type="button"> </button>'),
-  ir = p('<a class="wp-ghost-link svelte-ifq4hh"> </a>'),
-  or = p('<div class="wp-card-wrap svelte-ifq4hh"><div><!></div> <div class="wp-card svelte-ifq4hh" role="status" aria-live="polite"><h2 class="wp-title svelte-ifq4hh"> <!></h2> <!> <!> <!> <!> <!> <!> <!> <!> <!></div></div>'),
-  lr = Me('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M6 16 L13 23 L26 9" stroke="#fff" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter" class="svelte-ifq4hh"></path></svg>'),
-  cr = Me('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M9 9 L23 23 M23 9 L9 23" stroke="#fff" stroke-width="4" stroke-linecap="square" class="svelte-ifq4hh"></path></svg>'),
-  dr = Me('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><rect x="14" y="7" width="4" height="13" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="22" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
-  vr = Me('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><rect x="14" y="13" width="4" height="13" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="6" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
-  ur = Me('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><path d="M16 5 L19 13 L27 13 L21 18 L23 26 L16 22 L9 26 L11 18 L5 13 L13 13 Z" fill="#fff" class="svelte-ifq4hh"></path></svg>'),
-  fr = Me('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M11 12 Q11 8 16 8 Q21 8 21 12 Q21 15 16 16 L16 19" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="square" class="svelte-ifq4hh"></path><rect x="14" y="22" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
-  pr = Me('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="6" y="10" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="10" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="22" y="10" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="6" y="18" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="18" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="22" y="18" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
-  hr = Me('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="14" y="4" width="4" height="6" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="22" width="4" height="6" fill="rgba(255,255,255,0.25)" class="svelte-ifq4hh"></rect><rect x="4" y="14" width="6" height="4" fill="rgba(255,255,255,0.5)" class="svelte-ifq4hh"></rect><rect x="22" y="14" width="6" height="4" fill="rgba(255,255,255,0.75)" class="svelte-ifq4hh"></rect><rect x="7.5" y="7.5" width="4" height="4" fill="rgba(255,255,255,0.85)" class="svelte-ifq4hh"></rect><rect x="20.5" y="20.5" width="4" height="4" fill="rgba(255,255,255,0.4)" class="svelte-ifq4hh"></rect><rect x="20.5" y="7.5" width="4" height="4" fill="rgba(255,255,255,0.6)" class="svelte-ifq4hh"></rect><rect x="7.5" y="20.5" width="4" height="4" fill="rgba(255,255,255,0.2)" class="svelte-ifq4hh"></rect></svg>'),
-  gr = Me('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="7" y="9" width="18" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="7" y="9" width="4" height="16" fill="#fff" class="svelte-ifq4hh"></rect><rect x="21" y="9" width="4" height="16" fill="#fff" class="svelte-ifq4hh"></rect><rect x="7" y="21" width="18" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
-  _r = Me('<svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="7" y="1" width="2" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="6" y="2" width="4" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="5" y="3" width="6" height="2" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="4" y="5" width="8" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="3" y="6" width="10" height="2" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="2" y="8" width="12" height="3" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="3" y="11" width="10" height="2" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="4" y="13" width="8" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="6" y="14" width="4" height="1" fill="currentColor" class="svelte-ifq4hh"></rect></svg>'),
-  mr = Me('<svg viewBox="0 0 16 16" width="14" height="14" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><path d="M3 8 L7 12 L13 5" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="square" class="svelte-ifq4hh"></path></svg>'),
-  br = Me('<svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M3 8h9 M9 5l4 3-4 3" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" class="svelte-ifq4hh"></path></svg>'),
-  yr = p('<div class="wp-embed svelte-ifq4hh"><!></div>'),
-  xr = Me('<rect width="1" height="1" fill="#2D6378" class="svelte-ifq4hh"></rect>'),
-  wr = p('<div class="wp-stage svelte-ifq4hh" aria-hidden="false"><svg class="wp-map svelte-ifq4hh" preserveAspectRatio="xMidYMid slice" shape-rendering="crispEdges" aria-hidden="true"></svg> <div class="wp-droplets svelte-ifq4hh" aria-hidden="true"><div class="wp-d wp-d1 svelte-ifq4hh"><!></div> <div class="wp-d wp-d2 svelte-ifq4hh"><!></div> <div class="wp-d wp-d3 svelte-ifq4hh"><!></div> <div class="wp-d wp-d4 svelte-ifq4hh"><!></div></div> <div class="wp-shell svelte-ifq4hh"><header class="wp-topbar svelte-ifq4hh"><a class="wp-brand svelte-ifq4hh" aria-label="WPlace home"><img class="pixelated h-auto w-6 shrink-0 svelte-ifq4hh" alt="Wplace logo"/> <span class="wp-brand-name svelte-ifq4hh">wplace</span></a> <button class="wp-close svelte-ifq4hh" type="button" aria-label="Close"><svg viewBox="0 0 16 16" fill="none" width="14" height="14" aria-hidden="true" class="svelte-ifq4hh"><path d="M3 3 L13 13 M13 3 L3 13" stroke="currentColor" stroke-width="2" stroke-linecap="square" class="svelte-ifq4hh"></path></svg></button></header> <main class="wp-main svelte-ifq4hh"><!></main></div></div>');
+var Ka = p('<span class="wp-dots svelte-ifq4hh" aria-hidden="true"><span class="svelte-ifq4hh"></span><span class="svelte-ifq4hh"></span><span class="svelte-ifq4hh"></span></span>'),
+  Va = p('<div class="wp-amount-label svelte-ifq4hh"> </div>'),
+  Na = p('<div class="svelte-ifq4hh"><div class="wp-amount tabular-nums svelte-ifq4hh"> </div> <!></div>'),
+  Ja = p('<p class="wp-body svelte-ifq4hh"><!></p>'),
+  Xa = p('<li class="svelte-ifq4hh"><span class="wp-bullet-row svelte-ifq4hh"><span class="wp-bullet-label svelte-ifq4hh"> </span> <span class="wp-bullet-value tabular-nums svelte-ifq4hh"><!> </span></span></li>'),
+  Ya = p('<ul class="wp-bullets svelte-ifq4hh"></ul>'),
+  Qa = p('<div class="wp-receipt-row svelte-ifq4hh"><span class="svelte-ifq4hh"> </span> <strong class="svelte-ifq4hh"> </strong></div>'),
+  Za = p('<div class="wp-receipt-divider svelte-ifq4hh"></div> <div class="wp-receipt-row wp-receipt-total svelte-ifq4hh"><span class="svelte-ifq4hh"> </span> <span class="v svelte-ifq4hh"> </span></div>', 1),
+  $a = p('<div class="wp-receipt svelte-ifq4hh"><!> <!></div>'),
+  er = p('<div class="wp-progress svelte-ifq4hh" aria-hidden="true"></div>'),
+  tr = p('<div class="wp-meta svelte-ifq4hh"><!></div>'),
+  ar = p('<div class="wp-btn-row svelte-ifq4hh"><button class="wp-cta wp-cta-ghost focus:outline-none svelte-ifq4hh" type="button"> </button> <button class="wp-cta focus:outline-none svelte-ifq4hh" type="button"> </button></div>'),
+  rr = p('<button class="wp-cta focus:outline-none svelte-ifq4hh" type="button"><span class="svelte-ifq4hh"> </span> <!></button>'),
+  sr = p('<button class="wp-cta wp-cta-ghost svelte-ifq4hh" type="button"> </button>'),
+  nr = p('<a class="wp-ghost-link svelte-ifq4hh"> </a>'),
+  ir = p('<div class="wp-card-wrap svelte-ifq4hh"><div><!></div> <div class="wp-card svelte-ifq4hh" role="status" aria-live="polite"><h2 class="wp-title svelte-ifq4hh"> <!></h2> <!> <!> <!> <!> <!> <!> <!> <!> <!></div></div>'),
+  or = Be('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M6 16 L13 23 L26 9" stroke="#fff" stroke-width="4" stroke-linecap="square" stroke-linejoin="miter" class="svelte-ifq4hh"></path></svg>'),
+  lr = Be('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M9 9 L23 23 M23 9 L9 23" stroke="#fff" stroke-width="4" stroke-linecap="square" class="svelte-ifq4hh"></path></svg>'),
+  cr = Be('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><rect x="14" y="7" width="4" height="13" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="22" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
+  dr = Be('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><rect x="14" y="13" width="4" height="13" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="6" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
+  vr = Be('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><path d="M16 5 L19 13 L27 13 L21 18 L23 26 L16 22 L9 26 L11 18 L5 13 L13 13 Z" fill="#fff" class="svelte-ifq4hh"></path></svg>'),
+  ur = Be('<svg viewBox="0 0 32 32" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M11 12 Q11 8 16 8 Q21 8 21 12 Q21 15 16 16 L16 19" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="square" class="svelte-ifq4hh"></path><rect x="14" y="22" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
+  fr = Be('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="6" y="10" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="10" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="22" y="10" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="6" y="18" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="18" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="22" y="18" width="4" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
+  pr = Be('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="14" y="4" width="4" height="6" fill="#fff" class="svelte-ifq4hh"></rect><rect x="14" y="22" width="4" height="6" fill="rgba(255,255,255,0.25)" class="svelte-ifq4hh"></rect><rect x="4" y="14" width="6" height="4" fill="rgba(255,255,255,0.5)" class="svelte-ifq4hh"></rect><rect x="22" y="14" width="6" height="4" fill="rgba(255,255,255,0.75)" class="svelte-ifq4hh"></rect><rect x="7.5" y="7.5" width="4" height="4" fill="rgba(255,255,255,0.85)" class="svelte-ifq4hh"></rect><rect x="20.5" y="20.5" width="4" height="4" fill="rgba(255,255,255,0.4)" class="svelte-ifq4hh"></rect><rect x="20.5" y="7.5" width="4" height="4" fill="rgba(255,255,255,0.6)" class="svelte-ifq4hh"></rect><rect x="7.5" y="20.5" width="4" height="4" fill="rgba(255,255,255,0.2)" class="svelte-ifq4hh"></rect></svg>'),
+  hr = Be('<svg viewBox="0 0 32 32" fill="none" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="7" y="9" width="18" height="4" fill="#fff" class="svelte-ifq4hh"></rect><rect x="7" y="9" width="4" height="16" fill="#fff" class="svelte-ifq4hh"></rect><rect x="21" y="9" width="4" height="16" fill="#fff" class="svelte-ifq4hh"></rect><rect x="7" y="21" width="18" height="4" fill="#fff" class="svelte-ifq4hh"></rect></svg>'),
+  gr = Be('<svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><rect x="7" y="1" width="2" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="6" y="2" width="4" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="5" y="3" width="6" height="2" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="4" y="5" width="8" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="3" y="6" width="10" height="2" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="2" y="8" width="12" height="3" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="3" y="11" width="10" height="2" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="4" y="13" width="8" height="1" fill="currentColor" class="svelte-ifq4hh"></rect><rect x="6" y="14" width="4" height="1" fill="currentColor" class="svelte-ifq4hh"></rect></svg>'),
+  _r = Be('<svg viewBox="0 0 16 16" width="14" height="14" shape-rendering="crispEdges" aria-hidden="true" class="svelte-ifq4hh"><path d="M3 8 L7 12 L13 5" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="square" class="svelte-ifq4hh"></path></svg>'),
+  mr = Be('<svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true" class="svelte-ifq4hh"><path d="M3 8h9 M9 5l4 3-4 3" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" class="svelte-ifq4hh"></path></svg>'),
+  br = p('<div class="wp-embed svelte-ifq4hh"><!></div>'),
+  yr = Be('<rect width="1" height="1" fill="#2D6378" class="svelte-ifq4hh"></rect>'),
+  xr = p('<div class="wp-stage svelte-ifq4hh" aria-hidden="false"><svg class="wp-map svelte-ifq4hh" preserveAspectRatio="xMidYMid slice" shape-rendering="crispEdges" aria-hidden="true"></svg> <div class="wp-droplets svelte-ifq4hh" aria-hidden="true"><div class="wp-d wp-d1 svelte-ifq4hh"><!></div> <div class="wp-d wp-d2 svelte-ifq4hh"><!></div> <div class="wp-d wp-d3 svelte-ifq4hh"><!></div> <div class="wp-d wp-d4 svelte-ifq4hh"><!></div></div> <div class="wp-shell svelte-ifq4hh"><header class="wp-topbar svelte-ifq4hh"><a class="wp-brand svelte-ifq4hh" aria-label="WPlace home"><img class="pixelated h-auto w-6 shrink-0 svelte-ifq4hh" alt="Wplace logo"/> <span class="wp-brand-name svelte-ifq4hh">wplace</span></a> <button class="wp-close svelte-ifq4hh" type="button" aria-label="Close"><svg viewBox="0 0 16 16" fill="none" width="14" height="14" aria-hidden="true" class="svelte-ifq4hh"><path d="M3 3 L13 13 M13 3 L3 13" stroke="currentColor" stroke-width="2" stroke-linecap="square" class="svelte-ifq4hh"></path></svg></button></header> <main class="wp-main svelte-ifq4hh"><!></main></div></div>');
 
-function ut(v, e) {
-  Te(e, !0);
-  const o = j => {
-      var F = or(),
-        g = r(F);
-      let K, N;
-      var T = r(g);
-      s(T), a(g);
-      var O = n(g, 2),
-        x = r(O);
+function vt(v, e) {
+  Re(e, !0);
+  const o = R => {
+      var H = ir(),
+        h = r(H);
+      let K, X;
+      var j = r(h);
+      s(j), a(h);
+      var W = n(h, 2),
+        y = r(W);
       let S;
-      var U = r(x),
-        V = n(U);
+      var U = r(y),
+        J = n(U);
       {
-        var ae = q => {
-          var A = Va();
+        var te = q => {
+          var A = Ka();
           i(q, A)
         };
-        P(V, q => {
-          l() === "loading" && q(ae)
+        P(J, q => {
+          l() === "loading" && q(te)
         })
       }
-      a(x);
-      var I = n(x, 2);
+      a(y);
+      var E = n(y, 2);
       {
-        var H = q => {
-          var A = Ja(),
-            W = r(A),
-            X = r(W, !0);
-          a(W);
-          var d = n(W, 2);
+        var G = q => {
+          var A = Na(),
+            V = r(A),
+            d = r(V, !0);
+          a(V);
+          var b = n(V, 2);
           {
-            var y = _ => {
-              var h = Na(),
-                z = r(h, !0);
-              a(h), E(() => w(z, e.amountLabel)), i(_, h)
+            var M = g => {
+              var C = Va(),
+                F = r(C, !0);
+              a(C), I(() => x(F, e.amountLabel)), i(g, C)
             };
-            P(d, _ => {
-              e.amountLabel && _(y)
+            P(b, g => {
+              e.amountLabel && g(M)
             })
           }
-          a(A), E(() => w(X, e.amount)), i(q, A)
+          a(A), I(() => x(d, e.amount)), i(q, A)
         };
-        P(I, q => {
-          e.amount && q(H)
+        P(E, q => {
+          e.amount && q(G)
         })
       }
-      var ve = n(I, 2);
+      var ie = n(E, 2);
       {
-        var me = q => {
-          var A = Xa(),
-            W = r(A);
+        var _e = q => {
+          var A = Ja(),
+            V = r(A);
           {
-            var X = _ => {
-                var h = Ve(),
-                  z = de(h);
-                Xt(z, () => e.body), i(_, h)
+            var d = g => {
+                var C = Ke(),
+                  F = ve(C);
+                Jt(F, () => e.body), i(g, C)
               },
-              d = D(() => C(e.body)),
-              y = _ => {
-                var h = it();
-                E(() => w(h, e.body)), i(_, h)
+              b = D(() => k(e.body)),
+              M = g => {
+                var C = it();
+                I(() => x(C, e.body)), i(g, C)
               };
-            P(W, _ => {
-              t(d) ? _(X) : _(y, -1)
+            P(V, g => {
+              t(b) ? g(d) : g(M, -1)
             })
           }
           a(A), i(q, A)
         };
-        P(ve, q => {
-          e.body && q(me)
+        P(ie, q => {
+          e.body && q(_e)
         })
       }
-      var De = n(ve, 2);
+      var Te = n(ie, 2);
       {
-        var ze = q => {
-          var A = Qa();
-          ot(A, 21, () => e.bullets, Yt, (W, X) => {
-            var d = Ya(),
-              y = r(d),
-              _ = r(y),
-              h = r(_, !0);
-            a(_);
-            var z = n(_, 2);
-            let pe;
-            var we = r(z);
+        var Ie = q => {
+          var A = Ya();
+          ot(A, 21, () => e.bullets, Xt, (V, d) => {
+            var b = Xa(),
+              M = r(b),
+              g = r(M),
+              C = r(g, !0);
+            a(g);
+            var F = n(g, 2);
+            let Ee;
+            var ge = r(F);
             {
-              var Pe = R => {
-                Ha(R)
+              var Me = T => {
+                Ha(T)
               };
-              P(we, R => {
-                t(X).valueIcon && R(Pe)
+              P(ge, T => {
+                t(d).valueIcon && T(Me)
               })
             }
-            var Ne = n(we);
-            a(z), a(y), a(d), E(() => {
-              w(h, t(X).label), pe = at(z, "", pe, {
-                color: t(X).valueColor ?? t(k).accent
-              }), w(Ne, ` ${t(X).value??""??""}`)
-            }), i(W, d)
+            var We = n(ge);
+            a(F), a(M), a(b), I(() => {
+              x(C, t(d).label), Ee = tt(F, "", Ee, {
+                color: t(d).valueColor ?? t(w).accent
+              }), x(We, ` ${t(d).value??""??""}`)
+            }), i(V, b)
           }), a(A), i(q, A)
         };
-        P(De, q => {
-          e.bullets && q(ze)
+        P(Te, q => {
+          e.bullets && q(Ie)
         })
       }
-      var Re = n(De, 2);
+      var xe = n(Te, 2);
       {
-        var oe = q => {
-          var A = er(),
-            W = r(A);
-          ot(W, 17, () => e.receipt.rows, Yt, (y, _) => {
-            var h = Za(),
-              z = r(h),
-              pe = r(z, !0);
-            a(z);
-            var we = n(z, 2);
-            let Pe;
-            var Ne = r(we, !0);
-            a(we), a(h), E(() => {
-              w(pe, t(_).label), Pe = at(we, "", Pe, {
-                color: t(_).color
-              }), w(Ne, t(_).value)
-            }), i(y, h)
+        var ce = q => {
+          var A = $a(),
+            V = r(A);
+          ot(V, 17, () => e.receipt.rows, Xt, (M, g) => {
+            var C = Qa(),
+              F = r(C),
+              Ee = r(F, !0);
+            a(F);
+            var ge = n(F, 2);
+            let Me;
+            var We = r(ge, !0);
+            a(ge), a(C), I(() => {
+              x(Ee, t(g).label), Me = tt(ge, "", Me, {
+                color: t(g).color
+              }), x(We, t(g).value)
+            }), i(M, C)
           });
-          var X = n(W, 2);
+          var d = n(V, 2);
           {
-            var d = y => {
-              var _ = $a(),
-                h = n(de(_), 2),
-                z = r(h),
-                pe = r(z, !0);
-              a(z);
-              var we = n(z, 2),
-                Pe = r(we, !0);
-              a(we), a(h), E(() => {
-                w(pe, e.receipt.total.label), w(Pe, e.receipt.total.value)
-              }), i(y, _)
+            var b = M => {
+              var g = Za(),
+                C = n(ve(g), 2),
+                F = r(C),
+                Ee = r(F, !0);
+              a(F);
+              var ge = n(F, 2),
+                Me = r(ge, !0);
+              a(ge), a(C), I(() => {
+                x(Ee, e.receipt.total.label), x(Me, e.receipt.total.value)
+              }), i(M, g)
             };
-            P(X, y => {
-              e.receipt.total && y(d)
+            P(d, M => {
+              e.receipt.total && M(b)
             })
           }
           a(A), i(q, A)
         };
-        P(Re, q => {
-          e.receipt && q(oe)
+        P(xe, q => {
+          e.receipt && q(ce)
         })
       }
-      var ge = n(Re, 2);
+      var we = n(xe, 2);
       {
-        var Le = q => {
-          var A = tr();
+        var ke = q => {
+          var A = er();
           i(q, A)
         };
-        P(ge, q => {
-          L() && q(Le)
+        P(we, q => {
+          L() && q(ke)
         })
       }
-      var We = n(ge, 2);
+      var Ve = n(we, 2);
       {
-        var Ze = q => {
-          var A = ar(),
-            W = r(A);
+        var Qe = q => {
+          var A = tr(),
+            V = r(A);
           {
-            var X = _ => {
-                var h = Ve(),
-                  z = de(h);
-                Xt(z, () => e.meta), i(_, h)
+            var d = g => {
+                var C = Ke(),
+                  F = ve(C);
+                Jt(F, () => e.meta), i(g, C)
               },
-              d = D(() => C(e.meta)),
-              y = _ => {
-                var h = it();
-                E(() => w(h, e.meta)), i(_, h)
+              b = D(() => k(e.meta)),
+              M = g => {
+                var C = it();
+                I(() => x(C, e.meta)), i(g, C)
               };
-            P(W, _ => {
-              t(d) ? _(X) : _(y, -1)
+            P(V, g => {
+              t(b) ? g(d) : g(M, -1)
             })
           }
           a(A), i(q, A)
         };
-        P(We, q => {
-          e.meta && q(Ze)
+        P(Ve, q => {
+          e.meta && q(Qe)
         })
       }
-      var xe = n(We, 2);
+      var me = n(Ve, 2);
       {
-        var st = q => {
-            var A = rr(),
-              W = r(A),
-              X = r(W, !0);
-            a(W);
-            var d = n(W, 2);
-            let y;
-            var _ = r(d, !0);
-            a(d), a(A), E(() => {
-              w(X, e.buttonRow.secondary.label), y = at(d, "", y, {
+        var Ne = q => {
+            var A = ar(),
+              V = r(A),
+              d = r(V, !0);
+            a(V);
+            var b = n(V, 2);
+            let M;
+            var g = r(b, !0);
+            a(b), a(A), I(() => {
+              x(d, e.buttonRow.secondary.label), M = tt(b, "", M, {
                 "--cta-bg": e.buttonRow.primary.color,
                 "--cta-dark": e.buttonRow.primary.colorDark
-              }), w(_, e.buttonRow.primary.label)
-            }), qe("click", W, function(...h) {
-              var z;
-              (z = e.buttonRow.secondary.onClick) == null || z.apply(this, h)
-            }), qe("click", d, function(...h) {
-              var z;
-              (z = e.buttonRow.primary.onClick) == null || z.apply(this, h)
+              }), x(g, e.buttonRow.primary.label)
+            }), Le("click", V, function(...C) {
+              var F;
+              (F = e.buttonRow.secondary.onClick) == null || F.apply(this, C)
+            }), Le("click", b, function(...C) {
+              var F;
+              (F = e.buttonRow.primary.onClick) == null || F.apply(this, C)
             }), i(q, A)
           },
-          Ge = q => {
-            var A = sr();
-            let W;
-            var X = r(A),
-              d = r(X, !0);
-            a(X);
-            var y = n(X, 2);
+          rt = q => {
+            var A = rr();
+            let V;
+            var d = r(A),
+              b = r(d, !0);
+            a(d);
+            var M = n(d, 2);
             {
-              var _ = h => {
-                Wa(h)
+              var g = C => {
+                Oa(C)
               };
-              P(y, h => {
-                e.primary.arrow !== !1 && h(_)
+              P(M, C => {
+                e.primary.arrow !== !1 && C(g)
               })
             }
-            a(A), E(() => {
-              W = at(A, "", W, {
+            a(A), I(() => {
+              V = tt(A, "", V, {
                 "--cta-bg": e.primary.color,
                 "--cta-dark": e.primary.colorDark
-              }), w(d, e.primary.label)
-            }), qe("click", A, function(...h) {
-              var z;
-              (z = e.primary.onClick) == null || z.apply(this, h)
+              }), x(b, e.primary.label)
+            }), Le("click", A, function(...C) {
+              var F;
+              (F = e.primary.onClick) == null || F.apply(this, C)
             }), i(q, A)
           };
-        P(xe, q => {
-          e.buttonRow ? q(st) : e.primary && q(Ge, 1)
+        P(me, q => {
+          e.buttonRow ? q(Ne) : e.primary && q(rt, 1)
         })
       }
-      var ct = n(xe, 2);
+      var st = n(me, 2);
       {
         var nt = q => {
-          var A = nr(),
-            W = r(A, !0);
-          a(A), E(() => w(W, e.secondary.label)), qe("click", A, function(...X) {
-            var d;
-            (d = e.secondary.onClick) == null || d.apply(this, X)
+          var A = sr(),
+            V = r(A, !0);
+          a(A), I(() => x(V, e.secondary.label)), Le("click", A, function(...d) {
+            var b;
+            (b = e.secondary.onClick) == null || b.apply(this, d)
           }), i(q, A)
         };
-        P(ct, q => {
+        P(st, q => {
           e.secondary && !e.buttonRow && q(nt)
         })
       }
-      var $e = n(ct, 2);
+      var Ze = n(st, 2);
       {
-        var dt = q => {
-          var A = ir(),
-            W = r(A, !0);
-          a(A), E(X => {
-            He(A, "href", X), w(W, e.ghost)
-          }, [() => Jt("/")]), i(q, A)
+        var ct = q => {
+          var A = nr(),
+            V = r(A, !0);
+          a(A), I(d => {
+            Oe(A, "href", d), x(V, e.ghost)
+          }, [() => Nt("/")]), i(q, A)
         };
-        P($e, q => {
-          e.ghost && q(dt)
+        P(Ze, q => {
+          e.ghost && q(ct)
         })
       }
-      a(O), a(F), E(() => {
-        K = Se(g, 1, "wp-badge svelte-ifq4hh", null, K, {
+      a(W), a(H), I(() => {
+        K = Ae(h, 1, "wp-badge svelte-ifq4hh", null, K, {
           "wp-badge-spin": l() === "loading"
-        }), N = at(g, "", N, {
-          background: t(k).accent,
-          "--bd": t(k).accentDark,
-          "--bg-glow": t(k).accentShadow
-        }), S = at(x, "", S, {
-          color: t(k).titleColor
-        }), w(U, `${e.title??""} `)
-      }), i(j, F)
+        }), X = tt(h, "", X, {
+          background: t(w).accent,
+          "--bd": t(w).accentDark,
+          "--bg-glow": t(w).accentShadow
+        }), S = tt(y, "", S, {
+          color: t(w).titleColor
+        }), x(U, `${e.title??""} `)
+      }), i(R, H)
     },
-    s = j => {
-      var F = Ve(),
-        g = de(F);
+    s = R => {
+      var H = Ke(),
+        h = ve(H);
       {
-        var K = I => {
-            var H = lr();
-            i(I, H)
+        var K = E => {
+            var G = or();
+            i(E, G)
           },
-          N = I => {
-            var H = cr();
-            i(I, H)
+          X = E => {
+            var G = lr();
+            i(E, G)
           },
-          T = I => {
-            var H = dr();
-            i(I, H)
+          j = E => {
+            var G = cr();
+            i(E, G)
           },
-          O = I => {
-            var H = vr();
-            i(I, H)
+          W = E => {
+            var G = dr();
+            i(E, G)
           },
-          x = I => {
-            var H = ur();
-            i(I, H)
+          y = E => {
+            var G = vr();
+            i(E, G)
           },
-          S = I => {
-            var H = fr();
-            i(I, H)
+          S = E => {
+            var G = ur();
+            i(E, G)
           },
-          U = I => {
-            var H = pr();
-            i(I, H)
+          U = E => {
+            var G = fr();
+            i(E, G)
           },
-          V = I => {
-            var H = hr();
-            i(I, H)
+          J = E => {
+            var G = pr();
+            i(E, G)
           },
-          ae = I => {
-            var H = gr();
-            i(I, H)
+          te = E => {
+            var G = hr();
+            i(E, G)
           };
-        P(g, I => {
-          l() === "success" ? I(K) : l() === "error" ? I(N, 1) : l() === "warning" ? I(T, 2) : l() === "info" ? I(O, 3) : l() === "reward" ? I(x, 4) : l() === "question" ? I(S, 5) : l() === "confirmation" ? I(U, 6) : l() === "loading" ? I(V, 7) : I(ae, -1)
+        P(h, E => {
+          l() === "success" ? E(K) : l() === "error" ? E(X, 1) : l() === "warning" ? E(j, 2) : l() === "info" ? E(W, 3) : l() === "reward" ? E(y, 4) : l() === "question" ? E(S, 5) : l() === "confirmation" ? E(U, 6) : l() === "loading" ? E(J, 7) : E(te, -1)
         })
       }
-      i(j, F)
+      i(R, H)
     };
-  let l = Ae(e, "variant", 3, "success"),
-    m = Ae(e, "embedded", 3, !1),
-    L = Ae(e, "progress", 3, !1);
-  const k = D(() => Ga[l()]),
-    C = j => typeof j == "function";
-  var u = Ve(),
-    b = de(u);
+  let l = Pe(e, "variant", 3, "success"),
+    _ = Pe(e, "embedded", 3, !1),
+    L = Pe(e, "progress", 3, !1);
+  const w = D(() => Wa[l()]),
+    k = R => typeof R == "function";
+  var u = Ke(),
+    m = ve(u);
   {
-    var B = j => {
-        var F = yr(),
-          g = r(F);
-        o(g), a(F), i(j, F)
+    var B = R => {
+        var H = br(),
+          h = r(H);
+        o(h), a(H), i(R, H)
       },
-      M = j => {
-        var F = wr(),
-          g = r(F);
-        He(g, "viewBox", `0 0 ${ta} ${aa}`), ot(g, 21, () => ra, oe => oe.x + "-" + oe.y, (oe, ge) => {
-          var Le = xr();
-          E(() => {
-            He(Le, "x", t(ge).x), He(Le, "y", t(ge).y)
-          }), i(oe, Le)
-        }), a(g);
-        var K = n(g, 2),
-          N = r(K),
-          T = r(N);
-        yt(T), a(N);
-        var O = n(N, 2),
-          x = r(O);
-        yt(x), a(O);
-        var S = n(O, 2),
+      z = R => {
+        var H = xr(),
+          h = r(H);
+        Oe(h, "viewBox", `0 0 ${ea} ${ta}`), ot(h, 21, () => aa, ce => ce.x + "-" + ce.y, (ce, we) => {
+          var ke = yr();
+          I(() => {
+            Oe(ke, "x", t(we).x), Oe(ke, "y", t(we).y)
+          }), i(ce, ke)
+        }), a(h);
+        var K = n(h, 2),
+          X = r(K),
+          j = r(X);
+        bt(j), a(X);
+        var W = n(X, 2),
+          y = r(W);
+        bt(y), a(W);
+        var S = n(W, 2),
           U = r(S);
-        yt(U), a(S);
-        var V = n(S, 2),
-          ae = r(V);
-        yt(ae), a(V), a(K);
-        var I = n(K, 2),
-          H = r(I),
-          ve = r(H),
-          me = r(ve);
-        $t(2), a(ve);
-        var De = n(ve, 2);
-        a(H);
-        var ze = n(H, 2),
-          Re = r(ze);
-        o(Re), a(ze), a(I), a(F), E(oe => {
-          He(ve, "href", oe), He(me, "src", Aa)
-        }, [() => Jt("/")]), qe("click", De, function(...oe) {
-          var ge;
-          (ge = e.onclose) == null || ge.apply(this, oe)
-        }), i(j, F)
+        bt(U), a(S);
+        var J = n(S, 2),
+          te = r(J);
+        bt(te), a(J), a(K);
+        var E = n(K, 2),
+          G = r(E),
+          ie = r(G),
+          _e = r(ie);
+        Zt(2), a(ie);
+        var Te = n(ie, 2);
+        a(G);
+        var Ie = n(G, 2),
+          xe = r(Ie);
+        o(xe), a(Ie), a(E), a(H), I(ce => {
+          Oe(ie, "href", ce), Oe(_e, "src", qa)
+        }, [() => Nt("/")]), Le("click", Te, function(...ce) {
+          var we;
+          (we = e.onclose) == null || we.apply(this, ce)
+        }), i(R, H)
       };
-    P(b, j => {
-      m() ? j(B) : j(M, -1)
+    P(m, R => {
+      _() ? R(B) : R(z, -1)
     })
   }
-  i(v, u), Ue()
+  i(v, u), je()
 }
-St(["click"]);
+Ct(["click"]);
 
-function kr(v, e) {
-  Te(e, !0);
-  let o = Ae(e, "open", 15);
-  Rt(() => {
-    o() && ka()
-  }), rt(v, {
+function wr(v, e) {
+  Re(e, !0);
+  let o = Pe(e, "open", 15);
+  zt(() => {
+    o() && wa()
+  }), at(v, {
     isDynamicHeight: !0,
     hasCloseButton: !1,
     hasHeaderBorder: !1,
@@ -690,31 +690,31 @@ function kr(v, e) {
     },
     children: (s, l) => {
       {
-        let m = D(() => f.payment_declined_title()),
+        let _ = D(() => f.payment_declined_title()),
           L = D(() => f.payment_declined_description()),
-          k = D(() => ({
+          w = D(() => ({
             label: f.payment_declined_retry(),
             arrow: !1,
             onClick: e.onRetry
           })),
-          C = D(() => ({
+          k = D(() => ({
             label: f.close(),
             onClick: () => o(!1)
           }));
-        ut(s, {
+        vt(s, {
           embedded: !0,
           variant: "error",
           get title() {
-            return t(m)
+            return t(_)
           },
           get body() {
             return t(L)
           },
           get primary() {
-            return t(k)
+            return t(w)
           },
           get secondary() {
-            return t(C)
+            return t(k)
           }
         })
       }
@@ -722,206 +722,206 @@ function kr(v, e) {
     $$slots: {
       default: !0
     }
-  }), Ue()
+  }), je()
 }
 
-function Cr(v, e) {
+function kr(v, e) {
   let o;
   return ((...s) => {
     clearTimeout(o), o = setTimeout(() => v(...s), e)
   })
 }
-const Et = (v, e = ea, o) => {
-  let s = xa(() => wa(o == null ? void 0 : o(), "row"));
+const It = (v, e = $t, o) => {
+  let s = ya(() => xa(o == null ? void 0 : o(), "row"));
   const l = D(() => e().currency === "prism");
-  var m = Lr(),
-    L = r(m);
+  var _ = Ar(),
+    L = r(_);
   {
-    var k = M => {
-      var j = Ve(),
-        F = de(j);
+    var w = z => {
+      var R = Ke(),
+        H = ve(R);
       {
-        var g = N => {
-            zt(N, {
+        var h = X => {
+            Mt(X, {
               class: "size-3.5"
             })
           },
-          K = N => {
-            lt(N, {
+          K = X => {
+            lt(X, {
               class: "text-primary size-3.5"
             })
           };
-        P(F, N => {
-          t(l) ? N(g) : N(K, -1)
+        P(H, X => {
+          t(l) ? X(h) : X(K, -1)
         })
       }
-      i(M, j)
+      i(z, R)
     };
-    P(L, M => {
-      t(s) === "compact" && M(k)
+    P(L, z => {
+      t(s) === "compact" && z(w)
     })
   }
-  var C = n(L, 2),
-    u = r(C, !0);
-  a(C);
-  var b = n(C, 2);
+  var k = n(L, 2),
+    u = r(k, !0);
+  a(k);
+  var m = n(k, 2);
   {
-    var B = M => {
-      var j = Ar(),
-        F = r(j, !0);
-      a(j), E(g => w(F, g), [() => t(l) ? f.prism() : f.droplets()]), i(M, j)
+    var B = z => {
+      var R = qr(),
+        H = r(R, !0);
+      a(R), I(h => x(H, h), [() => t(l) ? f.prism() : f.droplets()]), i(z, R)
     };
-    P(b, M => {
-      t(s) === "row" && M(B)
+    P(m, z => {
+      t(s) === "row" && z(B)
     })
   }
-  a(m), E(M => {
-    Se(m, 1, `inline-flex items-center gap-1 ${t(s)==="compact"?"text-sm":"text-base"}`), Se(C, 1, `font-extrabold tracking-tight tabular-nums ${t(l)?"prism-sheen-text":"text-base-content"}`), w(u, M)
-  }, [() => e().amount.toLocaleString(navigator.language)]), i(v, m)
+  a(_), I(z => {
+    Ae(_, 1, `inline-flex items-center gap-1 ${t(s)==="compact"?"text-sm":"text-base"}`), Ae(k, 1, `font-extrabold tracking-tight tabular-nums ${t(l)?"prism-sheen-text":"text-base-content"}`), x(u, z)
+  }, [() => e().amount.toLocaleString(navigator.language)]), i(v, _)
 };
-var Sr = p('<li class="bg-base-100 border-base-content/10 grid items-center gap-3 rounded-2xl border px-3.5 py-3" style="grid-template-columns: 36px 1fr auto;"><div><!></div> <div class="flex min-w-0 flex-col gap-0.5"><!></div> <div class="text-base-content/60 flex flex-col items-end gap-0.5 text-[11px] font-semibold whitespace-nowrap tabular-nums"><span> </span></div></li>'),
-  qr = p('<ul class="flex flex-col gap-1.5"></ul>'),
-  Ar = p('<span class="text-base-content/70 text-[12.5px] font-semibold"> </span>'),
-  Lr = p("<span><!> <span> </span> <!></span>"),
-  Pr = p('<div class="flex flex-col gap-0.5"><span class="text-base-content/60 text-[11px] font-semibold tracking-[0.08em] uppercase"> </span> <h3 class="text-[22px] leading-tight font-extrabold tracking-tight"> </h3></div>'),
-  Dr = p('<span class="loading loading-spinner size-4"></span>'),
-  Br = p("<span> </span>"),
-  Ir = p('<span class="bg-primary absolute right-2 -bottom-px left-2 h-0.5 rounded-t"></span>'),
-  Er = p('<button role="tab" type="button"><span> </span> <!> <!></button>'),
-  Mr = p('<div class="flex h-32 items-center justify-center"><span class="loading loading-spinner loading-lg"></span></div>'),
-  zr = p('<p class="text-warning/90 px-3.5 pb-3 pl-9 text-[12.5px] leading-snug"> </p>'),
-  Rr = p('<div class="bg-warning/10 border-warning/30 overflow-hidden rounded-2xl border"><button type="button" class="flex w-full items-center gap-2.5 px-3.5 py-3 text-left"><!> <span class="text-warning flex-1 text-[13px] font-bold"> </span> <!></button> <!></div> <!> <div class="flex items-center justify-between gap-3 px-1 pt-2"><span class="text-base-content/70 text-xs font-semibold"> </span> <div class="flex flex-wrap justify-end gap-x-3 gap-y-1"></div></div>', 1),
-  jr = p('<!> <div class="flex items-center justify-between gap-3 px-1 pt-2"><span class="text-base-content/70 text-xs font-semibold"> </span> <div class="flex flex-wrap justify-end gap-x-3 gap-y-1"></div></div>', 1),
-  Tr = p('<div class="bg-base-100 ring-primary/15 text-primary absolute -right-1 -bottom-1 grid size-9 place-items-center rounded-full shadow-md ring-2"><!></div>'),
-  Ur = p('<div class="bg-error ring-base-100 absolute -top-1 -right-1 grid size-8 place-items-center rounded-full text-white shadow-md ring-2"><!></div>'),
-  Fr = p('<span class="loading loading-spinner size-3"></span>'),
-  Or = p('<div class="flex flex-col items-center px-7 py-8 text-center"><div class="relative mb-4"><div class="bg-primary/5 grid size-28 place-items-center rounded-full"><div class="bg-primary/10 grid size-20 place-items-center rounded-full"><!></div></div> <!></div> <div class="mb-1.5 text-base font-extrabold tracking-tight"> </div> <div class="text-base-content/60 mb-4 max-w-[240px] text-[13px] leading-snug"> </div> <button type="button" class="bg-primary/10 text-primary hover:bg-primary/20 inline-flex items-center gap-1.5 rounded-lg px-3.5 py-2 text-[12.5px] font-bold transition-colors disabled:opacity-60"><!> </button></div>'),
+var Cr = p('<li class="bg-base-100 border-base-content/10 grid items-center gap-3 rounded-2xl border px-3.5 py-3" style="grid-template-columns: 36px 1fr auto;"><div><!></div> <div class="flex min-w-0 flex-col gap-0.5"><!></div> <div class="text-base-content/60 flex flex-col items-end gap-0.5 text-[11px] font-semibold whitespace-nowrap tabular-nums"><span> </span></div></li>'),
+  Sr = p('<ul class="flex flex-col gap-1.5"></ul>'),
+  qr = p('<span class="text-base-content/70 text-[12.5px] font-semibold"> </span>'),
+  Ar = p("<span><!> <span> </span> <!></span>"),
+  Lr = p('<div class="flex flex-col gap-0.5"><span class="text-base-content/60 text-[11px] font-semibold tracking-[0.08em] uppercase"> </span> <h3 class="text-[22px] leading-tight font-extrabold tracking-tight"> </h3></div>'),
+  Pr = p('<span class="loading loading-spinner size-4"></span>'),
+  Dr = p("<span> </span>"),
+  Br = p('<span class="bg-primary absolute right-2 -bottom-px left-2 h-0.5 rounded-t"></span>'),
+  Ir = p('<button role="tab" type="button"><span> </span> <!> <!></button>'),
+  Er = p('<div class="flex h-32 items-center justify-center"><span class="loading loading-spinner loading-lg"></span></div>'),
+  Mr = p('<p class="text-warning/90 px-3.5 pb-3 pl-9 text-[12.5px] leading-snug"> </p>'),
+  zr = p('<div class="bg-warning/10 border-warning/30 overflow-hidden rounded-2xl border"><button type="button" class="flex w-full items-center gap-2.5 px-3.5 py-3 text-left"><!> <span class="text-warning flex-1 text-[13px] font-bold"> </span> <!></button> <!></div> <!> <div class="flex items-center justify-between gap-3 px-1 pt-2"><span class="text-base-content/70 text-xs font-semibold"> </span> <div class="flex flex-wrap justify-end gap-x-3 gap-y-1"></div></div>', 1),
+  Rr = p('<!> <div class="flex items-center justify-between gap-3 px-1 pt-2"><span class="text-base-content/70 text-xs font-semibold"> </span> <div class="flex flex-wrap justify-end gap-x-3 gap-y-1"></div></div>', 1),
+  jr = p('<div class="bg-base-100 ring-primary/15 text-primary absolute -right-1 -bottom-1 grid size-9 place-items-center rounded-full shadow-md ring-2"><!></div>'),
+  Tr = p('<div class="bg-error ring-base-100 absolute -top-1 -right-1 grid size-8 place-items-center rounded-full text-white shadow-md ring-2"><!></div>'),
+  Ur = p('<span class="loading loading-spinner size-3"></span>'),
+  Fr = p('<div class="flex flex-col items-center px-7 py-8 text-center"><div class="relative mb-4"><div class="bg-primary/5 grid size-28 place-items-center rounded-full"><div class="bg-primary/10 grid size-20 place-items-center rounded-full"><!></div></div> <!></div> <div class="mb-1.5 text-base font-extrabold tracking-tight"> </div> <div class="text-base-content/60 mb-4 max-w-[240px] text-[13px] leading-snug"> </div> <button type="button" class="bg-primary/10 text-primary hover:bg-primary/20 inline-flex items-center gap-1.5 rounded-lg px-3.5 py-2 text-[12.5px] font-bold transition-colors disabled:opacity-60"><!> </button></div>'),
   Hr = p('<div class="-mx-4 -mb-4 flex flex-col gap-3 sm:-mx-6"><div class="px-4 sm:px-6"><div class="from-primary text-primary-content shadow-primary/30 flex items-center gap-3 rounded-2xl bg-gradient-to-br to-blue-500 p-3 shadow-lg"><div class="flex min-w-0 flex-1 flex-col gap-2"><span class="text-[11px] font-semibold tracking-[0.06em] text-white/75 uppercase"> </span> <div class="grid min-w-0 gap-2 sm:grid-cols-2 sm:gap-3"><div class="flex min-w-0 items-center gap-2"><div class="grid size-8 shrink-0 place-items-center rounded-lg bg-white/15 backdrop-blur"><!></div> <div class="flex min-w-0 items-baseline gap-1.5"><span class="truncate text-lg font-extrabold tracking-tight tabular-nums"> </span> <span class="shrink-0 text-xs font-semibold text-white/75"> </span></div></div> <div class="flex min-w-0 items-center gap-2"><div class="grid size-8 shrink-0 place-items-center rounded-lg bg-white/15 backdrop-blur"><!></div> <div class="flex min-w-0 items-baseline gap-1.5"><span class="truncate text-lg font-extrabold tracking-tight tabular-nums"> </span> <span class="shrink-0 text-xs font-semibold text-white/75"> </span></div></div></div></div> <button type="button" class="grid size-9 place-items-center rounded-xl bg-white/15 transition-all hover:bg-white/25 active:rotate-180 disabled:opacity-60"><!></button></div></div> <div role="tablist" class="border-base-content/10 -mb-px flex scrollbar-none gap-1 overflow-x-auto overflow-y-hidden border-b px-2 sm:px-4"></div> <div class="flex flex-col gap-3 px-4 pt-1 pb-5 sm:px-6"><!></div></div>');
 
-function Wr(v, e) {
-  Te(e, !0);
-  const o = (x, S = ea) => {
-    var U = qr();
-    ot(U, 21, S, V => V.createdAt + V.updatedAt + V.grant.currency + V.grant.amount, (V, ae) => {
-      const I = D(() => t(ae).status === "refunded" ? t(ae).updatedAt : t(ae).createdAt),
-        H = D(() => t(ae).grant.currency === "prism");
-      var ve = Sr(),
-        me = r(ve),
-        De = r(me);
+function Or(v, e) {
+  Re(e, !0);
+  const o = (y, S = $t) => {
+    var U = Sr();
+    ot(U, 21, S, J => J.createdAt + J.updatedAt + J.grant.currency + J.grant.amount, (J, te) => {
+      const E = D(() => t(te).status === "refunded" ? t(te).updatedAt : t(te).createdAt),
+        G = D(() => t(te).grant.currency === "prism");
+      var ie = Cr(),
+        _e = r(ie),
+        Te = r(_e);
       {
-        var ze = xe => {
-            zt(xe, {
+        var Ie = me => {
+            Mt(me, {
               class: "size-5"
             })
           },
-          Re = xe => {
-            lt(xe, {
+          xe = me => {
+            lt(me, {
               class: "text-primary size-5"
             })
           };
-        P(De, xe => {
-          t(H) ? xe(ze) : xe(Re, -1)
+        P(Te, me => {
+          t(G) ? me(Ie) : me(xe, -1)
         })
       }
-      a(me);
-      var oe = n(me, 2),
-        ge = r(oe);
-      Et(ge, () => t(ae).grant), a(oe);
-      var Le = n(oe, 2),
-        We = r(Le),
-        Ze = r(We, !0);
-      a(We), a(Le), a(ve), E(xe => {
-        Se(me, 1, `grid size-9 place-items-center rounded-[10px] ${t(H)?"bg-purple-500/10":"bg-primary/10"}`), w(Ze, xe)
-      }, [() => N(new Date, new Date(t(I)))]), i(V, ve)
-    }), a(U), i(x, U)
+      a(_e);
+      var ce = n(_e, 2),
+        we = r(ce);
+      It(we, () => t(te).grant), a(ce);
+      var ke = n(ce, 2),
+        Ve = r(ke),
+        Qe = r(Ve, !0);
+      a(Ve), a(ke), a(ie), I(me => {
+        Ae(_e, 1, `grid size-9 place-items-center rounded-[10px] ${t(G)?"bg-purple-500/10":"bg-primary/10"}`), x(Qe, me)
+      }, [() => X(new Date, new Date(t(E)))]), i(J, ie)
+    }), a(U), i(y, U)
   };
-  let s = Ae(e, "open", 15),
+  let s = Pe(e, "open", 15),
     l = $(!1),
-    m = $(ya([])),
+    _ = $(ba([])),
     L = $(!1),
-    k = $("pending"),
-    C = $(!0);
-  const u = D(() => t(m).reduce((x, S) => (x[S.status].push(S), x), {
+    w = $("pending"),
+    k = $(!0);
+  const u = D(() => t(_).reduce((y, S) => (y[S.status].push(S), y), {
       pending: [],
       paid: [],
       refunded: [],
       rejected: []
     })),
-    b = D(() => t(u)[t(k)]),
-    B = D(() => Nt(t(b).map(x => x.grant)));
-  async function M() {
+    m = D(() => t(u)[t(w)]),
+    B = D(() => Vt(t(m).map(y => y.grant)));
+  async function z() {
     c(L, !0);
     try {
       const {
-        purchases: x
-      } = await Ke.listPlayPurchaseHistory();
-      c(m, x, !0)
+        purchases: y
+      } = await Ge.listPlayPurchaseHistory();
+      c(_, y, !0)
     } catch {
-      c(m, [], !0)
+      c(_, [], !0)
     } finally {
-      c(L, !1), Mt.markViewed()
+      c(L, !1), Et.markViewed()
     }
   }
-  Rt(() => {
-    s() && (c(k, "pending"), c(C, !0), M())
+  zt(() => {
+    s() && (c(w, "pending"), c(k, !0), z())
   });
-  async function j() {
-    return je.autoRecoverPendingPurchases()
+  async function R() {
+    return ze.autoRecoverPendingPurchases()
   }
-  let F = Cr(async function() {
+  let H = kr(async function() {
     try {
       if (c(l, !0), t(u).pending.length > 0) {
-        const S = await Ke.verifyPendingPlayPurchases().then(({
+        const S = await Ge.verifyPendingPlayPurchases().then(({
           grants: U
-        }) => Nt(U)).catch(() => []);
+        }) => Vt(U)).catch(() => []);
         if (S.length > 0) {
-          await je.refresh(), await Mt.openCheckoutDialog(S);
+          await ze.refresh(), await Et.openCheckoutDialog(S);
           return
         }
       }
-      await j(), await M()
+      await R(), await z()
     } finally {
       c(l, !1)
     }
   }, 100);
 
-  function g(x) {
-    return String(x).padStart(2, "0")
+  function h(y) {
+    return String(y).padStart(2, "0")
   }
 
-  function K(x, S) {
-    return x.getFullYear() === S.getFullYear() && x.getMonth() === S.getMonth() && x.getDate() === S.getDate()
+  function K(y, S) {
+    return y.getFullYear() === S.getFullYear() && y.getMonth() === S.getMonth() && y.getDate() === S.getDate()
   }
 
-  function N(x, S) {
-    const U = Math.floor((x.getTime() - S.getTime()) / 6e4),
-      V = navigator.language;
-    if (U < 1) return new Intl.RelativeTimeFormat(V, {
+  function X(y, S) {
+    const U = Math.floor((y.getTime() - S.getTime()) / 6e4),
+      J = navigator.language;
+    if (U < 1) return new Intl.RelativeTimeFormat(J, {
       numeric: "auto"
     }).format(0, "minute");
-    if (U < 60) return new Intl.RelativeTimeFormat(V, {
+    if (U < 60) return new Intl.RelativeTimeFormat(J, {
       numeric: "auto"
     }).format(-U, "minute");
-    if (K(x, S)) return `${f.payment_history_today()}, ${g(S.getHours())}:${g(S.getMinutes())}`;
-    const ae = new Date(x);
-    return ae.setDate(ae.getDate() - 1), K(ae, S) ? `${f.payment_history_yesterday()}, ${g(S.getHours())}:${g(S.getMinutes())}` : S.toLocaleDateString(V, {
+    if (K(y, S)) return `${f.payment_history_today()}, ${h(S.getHours())}:${h(S.getMinutes())}`;
+    const te = new Date(y);
+    return te.setDate(te.getDate() - 1), K(te, S) ? `${f.payment_history_yesterday()}, ${h(S.getHours())}:${h(S.getMinutes())}` : S.toLocaleDateString(J, {
       day: "2-digit",
       month: "2-digit"
-    }) + ` ${g(S.getHours())}:${g(S.getMinutes())}`
+    }) + ` ${h(S.getHours())}:${h(S.getMinutes())}`
   }
 
-  function T(x, S) {
-    return x === "pending" ? S ? "bg-warning text-warning-content" : "bg-warning/15 text-warning" : S ? "bg-primary text-primary-content" : "bg-primary/10 text-base-content/70"
+  function j(y, S) {
+    return y === "pending" ? S ? "bg-warning text-warning-content" : "bg-warning/15 text-warning" : S ? "bg-primary text-primary-content" : "bg-primary/10 text-base-content/70"
   }
 
-  function O(x) {
-    return x === "pending" ? {
+  function W(y) {
+    return y === "pending" ? {
       title: f.payment_history_empty_pending(),
       body: f.payment_history_empty_pending_body()
-    } : x === "paid" ? {
+    } : y === "paid" ? {
       title: f.payment_history_empty_paid(),
       body: f.payment_history_empty_paid_body()
-    } : x === "rejected" ? {
+    } : y === "rejected" ? {
       title: f.payment_history_empty_rejected(),
       body: f.payment_history_empty_rejected_body()
     } : {
@@ -929,7 +929,7 @@ function Wr(v, e) {
       body: f.payment_history_empty_refunded_body()
     }
   }
-  rt(v, {
+  at(v, {
     dialogClass: "!bg-black/80",
     modalBoxClass: "max-w-md",
     isDynamicHeight: !0,
@@ -940,71 +940,71 @@ function Wr(v, e) {
       s(S)
     },
     header: S => {
-      var U = Pr(),
-        V = r(U),
-        ae = r(V, !0);
-      a(V);
-      var I = n(V, 2),
-        H = r(I, !0);
-      a(I), a(U), E((ve, me) => {
-        w(ae, ve), w(H, me)
+      var U = Lr(),
+        J = r(U),
+        te = r(J, !0);
+      a(J);
+      var E = n(J, 2),
+        G = r(E, !0);
+      a(E), a(U), I((ie, _e) => {
+        x(te, ie), x(G, _e)
       }, [() => f.payment_history_eyebrow(), () => f.payment_history_title()]), i(S, U)
     },
     children: (S, U) => {
-      var V = Hr(),
-        ae = r(V),
-        I = r(ae),
-        H = r(I),
-        ve = r(H),
-        me = r(ve, !0);
-      a(ve);
-      var De = n(ve, 2),
-        ze = r(De),
-        Re = r(ze),
-        oe = r(Re);
-      lt(oe, {
+      var J = Hr(),
+        te = r(J),
+        E = r(te),
+        G = r(E),
+        ie = r(G),
+        _e = r(ie, !0);
+      a(ie);
+      var Te = n(ie, 2),
+        Ie = r(Te),
+        xe = r(Ie),
+        ce = r(xe);
+      lt(ce, {
         class: "size-4.5 text-white",
         inverted: !0
-      }), a(Re);
-      var ge = n(Re, 2),
-        Le = r(ge),
-        We = r(Le, !0);
-      a(Le);
-      var Ze = n(Le, 2),
-        xe = r(Ze, !0);
-      a(Ze), a(ge), a(ze);
-      var st = n(ze, 2),
-        Ge = r(st),
-        ct = r(Ge);
-      zt(ct, {
+      }), a(xe);
+      var we = n(xe, 2),
+        ke = r(we),
+        Ve = r(ke, !0);
+      a(ke);
+      var Qe = n(ke, 2),
+        me = r(Qe, !0);
+      a(Qe), a(we), a(Ie);
+      var Ne = n(Ie, 2),
+        rt = r(Ne),
+        st = r(rt);
+      Mt(st, {
         class: "size-5"
-      }), a(Ge);
-      var nt = n(Ge, 2),
-        $e = r(nt),
-        dt = r($e, !0);
-      a($e);
-      var q = n($e, 2),
+      }), a(rt);
+      var nt = n(rt, 2),
+        Ze = r(nt),
+        ct = r(Ze, !0);
+      a(Ze);
+      var q = n(Ze, 2),
         A = r(q, !0);
-      a(q), a(nt), a(st), a(De), a(H);
-      var W = n(H, 2),
-        X = r(W);
+      a(q), a(nt), a(Ne), a(Te), a(G);
+      var V = n(G, 2),
+        d = r(V);
       {
-        var d = R => {
-            var ee = Dr();
-            i(R, ee)
+        var b = T => {
+            var ee = Pr();
+            i(T, ee)
           },
-          y = R => {
-            It(R, {
+          M = T => {
+            Bt(T, {
               class: "size-4"
             })
           };
-        P(X, R => {
-          t(l) ? R(d) : R(y, -1)
+        P(d, T => {
+          t(l) ? T(b) : T(M, -1)
         })
       }
-      a(W), a(I), a(ae);
-      var _ = n(ae, 2);
-      ot(_, 21, () => [{
+      a(V), a(E), a(te);
+      var g = n(te, 2);
+      ot(g, 21, () => [{
         key: "pending",
         label: f.payment_history_filter_pending(),
         count: t(u).pending.length
@@ -1020,196 +1020,196 @@ function Wr(v, e) {
         key: "rejected",
         label: f.payment_history_filter_rejected(),
         count: t(u).rejected.length
-      }], R => R.key, (R, ee) => {
-        const ce = D(() => t(k) === t(ee).key);
-        var J = Er(),
-          te = r(J),
-          ne = r(te, !0);
-        a(te);
-        var _e = n(te, 2);
+      }], T => T.key, (T, ee) => {
+        const Q = D(() => t(w) === t(ee).key);
+        var Y = Ir(),
+          Z = r(Y),
+          de = r(Z, !0);
+        a(Z);
+        var be = n(Z, 2);
         {
-          var he = re => {
-            var be = Br(),
-              Be = r(be, !0);
-            a(be), E(Ie => {
-              Se(be, 1, `inline-flex h-[18px] min-w-[18px] items-center justify-center rounded-full px-1.5 text-[10px] font-bold ${Ie??""}`), w(Be, t(ee).count)
-            }, [() => T(t(ee).key, t(ce))]), i(re, be)
+          var ae = ue => {
+            var Se = Dr(),
+              qe = r(Se, !0);
+            a(Se), I(Ue => {
+              Ae(Se, 1, `inline-flex h-[18px] min-w-[18px] items-center justify-center rounded-full px-1.5 text-[10px] font-bold ${Ue??""}`), x(qe, t(ee).count)
+            }, [() => j(t(ee).key, t(Q))]), i(ue, Se)
           };
-          P(_e, re => {
-            t(ee).count > 0 && re(he)
+          P(be, ue => {
+            t(ee).count > 0 && ue(ae)
           })
         }
-        var ue = n(_e, 2);
+        var oe = n(be, 2);
         {
-          var fe = re => {
-            var be = Ir();
-            i(re, be)
+          var Ce = ue => {
+            var Se = Br();
+            i(ue, Se)
           };
-          P(ue, re => {
-            t(ce) && re(fe)
+          P(oe, ue => {
+            t(Q) && ue(Ce)
           })
         }
-        a(J), E(() => {
-          Se(J, 1, `relative flex flex-1 items-center justify-center gap-1.5 px-1.5 py-3.5 text-[13px] font-semibold transition-colors ${t(ce)?"text-base-content":"text-base-content/60 hover:text-base-content/80"}`), w(ne, t(ee).label)
-        }), qe("click", J, () => c(k, t(ee).key, !0)), i(R, J)
-      }), a(_);
-      var h = n(_, 2),
-        z = r(h);
+        a(Y), I(() => {
+          Ae(Y, 1, `relative flex flex-1 items-center justify-center gap-1.5 px-1.5 py-3.5 text-[13px] font-semibold transition-colors ${t(Q)?"text-base-content":"text-base-content/60 hover:text-base-content/80"}`), x(de, t(ee).label)
+        }), Le("click", Y, () => c(w, t(ee).key, !0)), i(T, Y)
+      }), a(g);
+      var C = n(g, 2),
+        F = r(C);
       {
-        var pe = R => {
-            var ee = Mr();
-            i(R, ee)
+        var Ee = T => {
+            var ee = Er();
+            i(T, ee)
           },
-          we = R => {
-            var ee = Rr(),
-              ce = de(ee),
-              J = r(ce),
-              te = r(J);
-            Pa(te, {
+          ge = T => {
+            var ee = zr(),
+              Q = ve(ee),
+              Y = r(Q),
+              Z = r(Y);
+            La(Z, {
               class: "text-warning size-4 shrink-0"
             });
-            var ne = n(te, 2),
-              _e = r(ne, !0);
-            a(ne);
-            var he = n(ne, 2);
+            var de = n(Z, 2),
+              be = r(de, !0);
+            a(de);
+            var ae = n(de, 2);
             {
-              var ue = G => {
-                  Da(G, {
+              var oe = O => {
+                  Pa(O, {
                     class: "text-warning size-4"
                   })
                 },
-                fe = G => {
-                  Ba(G, {
+                Ce = O => {
+                  Da(O, {
                     class: "text-warning size-4"
                   })
                 };
-              P(he, G => {
-                t(C) ? G(ue) : G(fe, -1)
+              P(ae, O => {
+                t(k) ? O(oe) : O(Ce, -1)
               })
             }
-            a(J);
-            var re = n(J, 2);
+            a(Y);
+            var ue = n(Y, 2);
             {
-              var be = G => {
-                var Y = zr(),
-                  Q = r(Y, !0);
-                a(Y), E(Z => w(Q, Z), [() => f.payment_pending_subdescription()]), i(G, Y)
+              var Se = O => {
+                var he = Mr(),
+                  N = r(he, !0);
+                a(he), I(re => x(N, re), [() => f.payment_pending_subdescription()]), i(O, he)
               };
-              P(re, G => {
-                t(C) && G(be)
+              P(ue, O => {
+                t(k) && O(Se)
               })
             }
-            a(ce);
-            var Be = n(ce, 2);
-            o(Be, () => t(b));
-            var Ie = n(Be, 2),
-              Ee = r(Ie),
-              Je = r(Ee, !0);
-            a(Ee);
-            var Xe = n(Ee, 2);
-            ot(Xe, 21, () => t(B), G => G.currency, (G, Y) => {
-              Et(G, () => t(Y), () => "compact")
-            }), a(Xe), a(Ie), E((G, Y) => {
-              w(_e, G), w(Je, Y)
-            }, [() => f.payment_history_banner_title(), () => f.payment_history_total_pending()]), qe("click", J, () => c(C, !t(C))), i(R, ee)
+            a(Q);
+            var qe = n(Q, 2);
+            o(qe, () => t(m));
+            var Ue = n(qe, 2),
+              De = r(Ue),
+              Je = r(De, !0);
+            a(De);
+            var fe = n(De, 2);
+            ot(fe, 21, () => t(B), O => O.currency, (O, he) => {
+              It(O, () => t(he), () => "compact")
+            }), a(fe), a(Ue), I((O, he) => {
+              x(be, O), x(Je, he)
+            }, [() => f.payment_history_banner_title(), () => f.payment_history_total_pending()]), Le("click", Y, () => c(k, !t(k))), i(T, ee)
           },
-          Pe = R => {
-            var ee = jr(),
-              ce = de(ee);
-            o(ce, () => t(b));
-            var J = n(ce, 2),
-              te = r(J),
-              ne = r(te, !0);
-            a(te);
-            var _e = n(te, 2);
-            ot(_e, 21, () => t(B), he => he.currency, (he, ue) => {
-              Et(he, () => t(ue), () => "compact")
-            }), a(_e), a(J), E(he => w(ne, he), [() => f.total()]), i(R, ee)
+          Me = T => {
+            var ee = Rr(),
+              Q = ve(ee);
+            o(Q, () => t(m));
+            var Y = n(Q, 2),
+              Z = r(Y),
+              de = r(Z, !0);
+            a(Z);
+            var be = n(Z, 2);
+            ot(be, 21, () => t(B), ae => ae.currency, (ae, oe) => {
+              It(ae, () => t(oe), () => "compact")
+            }), a(be), a(Y), I(ae => x(de, ae), [() => f.total()]), i(T, ee)
           },
-          Ne = R => {
-            const ee = D(() => O(t(k)));
-            var ce = Or(),
-              J = r(ce),
-              te = r(J),
-              ne = r(te),
-              _e = r(ne);
-            lt(_e, {
+          We = T => {
+            const ee = D(() => W(t(w)));
+            var Q = Fr(),
+              Y = r(Q),
+              Z = r(Y),
+              de = r(Z),
+              be = r(de);
+            lt(be, {
               class: "text-primary size-10"
-            }), a(ne), a(te);
-            var he = n(te, 2);
+            }), a(de), a(Z);
+            var ae = n(Z, 2);
             {
-              var ue = Q => {
-                  var Z = Tr(),
-                    ke = r(Z);
-                  It(ke, {
+              var oe = N => {
+                  var re = jr(),
+                    pe = r(re);
+                  Bt(pe, {
                     class: "size-5"
-                  }), a(Z), i(Q, Z)
+                  }), a(re), i(N, re)
                 },
-                fe = Q => {
-                  var Z = Ur(),
-                    ke = r(Z);
-                  La(ke, {
+                Ce = N => {
+                  var re = Tr(),
+                    pe = r(re);
+                  Aa(pe, {
                     class: "size-4"
-                  }), a(Z), i(Q, Z)
+                  }), a(re), i(N, re)
                 };
-              P(he, Q => {
-                t(k) === "refunded" ? Q(ue) : t(k) === "rejected" && Q(fe, 1)
+              P(ae, N => {
+                t(w) === "refunded" ? N(oe) : t(w) === "rejected" && N(Ce, 1)
               })
             }
-            a(J);
-            var re = n(J, 2),
-              be = r(re, !0);
-            a(re);
-            var Be = n(re, 2),
-              Ie = r(Be, !0);
-            a(Be);
-            var Ee = n(Be, 2),
-              Je = r(Ee);
+            a(Y);
+            var ue = n(Y, 2),
+              Se = r(ue, !0);
+            a(ue);
+            var qe = n(ue, 2),
+              Ue = r(qe, !0);
+            a(qe);
+            var De = n(qe, 2),
+              Je = r(De);
             {
-              var Xe = Q => {
-                  var Z = Fr();
-                  i(Q, Z)
+              var fe = N => {
+                  var re = Ur();
+                  i(N, re)
                 },
-                G = Q => {
-                  It(Q, {
+                O = N => {
+                  Bt(N, {
                     class: "size-3.5"
                   })
                 };
-              P(Je, Q => {
-                t(l) ? Q(Xe) : Q(G, -1)
+              P(Je, N => {
+                t(l) ? N(fe) : N(O, -1)
               })
             }
-            var Y = n(Je);
-            a(Ee), a(ce), E(Q => {
-              w(be, t(ee).title), w(Ie, t(ee).body), Ee.disabled = t(l), w(Y, ` ${Q??""}`)
-            }, [() => f.payment_history_verify_again()]), qe("click", Ee, F), i(R, ce)
+            var he = n(Je);
+            a(De), a(Q), I(N => {
+              x(Se, t(ee).title), x(Ue, t(ee).body), De.disabled = t(l), x(he, ` ${N??""}`)
+            }, [() => f.payment_history_verify_again()]), Le("click", De, H), i(T, Q)
           };
-        P(z, R => {
-          t(L) && t(m).length === 0 ? R(pe) : t(k) === "pending" && t(b).length > 0 ? R(we, 1) : t(b).length > 0 ? R(Pe, 2) : R(Ne, -1)
+        P(F, T => {
+          t(L) && t(_).length === 0 ? T(Ee) : t(w) === "pending" && t(m).length > 0 ? T(ge, 1) : t(m).length > 0 ? T(Me, 2) : T(We, -1)
         })
       }
-      a(h), a(V), E((R, ee, ce, J, te, ne) => {
-        w(me, R), w(We, ee), w(xe, ce), w(dt, J), w(A, te), He(W, "aria-label", ne), W.disabled = t(l)
+      a(C), a(J), I((T, ee, Q, Y, Z, de) => {
+        x(_e, T), x(Ve, ee), x(me, Q), x(ct, Y), x(A, Z), Oe(V, "aria-label", de), V.disabled = t(l)
       }, [() => f.payment_history_balance(), () => {
-        var R;
-        return (((R = ye.data) == null ? void 0 : R.droplets) ?? 0).toLocaleString(navigator.language)
+        var T;
+        return (((T = ye.data) == null ? void 0 : T.droplets) ?? 0).toLocaleString(navigator.language)
       }, () => f.droplets(), () => {
-        var R;
-        return (((R = ye.data) == null ? void 0 : R.prism) ?? 0).toLocaleString(navigator.language)
-      }, () => f.prism(), () => f.payment_history_verify_again()]), qe("click", W, F), i(S, V)
+        var T;
+        return (((T = ye.data) == null ? void 0 : T.prism) ?? 0).toLocaleString(navigator.language)
+      }, () => f.prism(), () => f.payment_history_verify_again()]), Le("click", V, H), i(S, J)
     },
     $$slots: {
       header: !0,
       default: !0
     }
-  }), Ue()
+  }), je()
 }
-St(["click"]);
+Ct(["click"]);
 
-function Gr(v, e) {
-  Te(e, !0);
-  let o = Ae(e, "open", 15);
-  rt(v, {
+function Wr(v, e) {
+  Re(e, !0);
+  let o = Pe(e, "open", 15);
+  at(v, {
     isDynamicHeight: !0,
     hasCloseButton: !1,
     hasHeaderBorder: !1,
@@ -1224,31 +1224,31 @@ function Gr(v, e) {
     },
     children: (s, l) => {
       {
-        let m = D(() => f.payment_pending_title()),
+        let _ = D(() => f.payment_pending_title()),
           L = D(() => f.payment_pending_description()),
-          k = D(() => ({
+          w = D(() => ({
             label: f.payment_history_view(),
             arrow: !1,
             onClick: e.onViewHistory
           })),
-          C = D(() => ({
+          k = D(() => ({
             label: f.close(),
             onClick: () => o(!1)
           }));
-        ut(s, {
+        vt(s, {
           embedded: !0,
           variant: "warning",
           get title() {
-            return t(m)
+            return t(_)
           },
           get body() {
             return t(L)
           },
           get primary() {
-            return t(k)
+            return t(w)
           },
           get secondary() {
-            return t(C)
+            return t(k)
           }
         })
       }
@@ -1256,14 +1256,14 @@ function Gr(v, e) {
     $$slots: {
       default: !0
     }
-  }), Ue()
+  }), je()
 }
-var Kr = p('<div class="my-auto w-full"><!></div>');
+var Gr = p('<div class="my-auto w-full"><!></div>');
 
-function Vr(v, e) {
-  Te(e, !0);
-  let o = Ae(e, "open", 15);
-  rt(v, {
+function Kr(v, e) {
+  Re(e, !0);
+  let o = Pe(e, "open", 15);
+  at(v, {
     isDynamicHeight: !0,
     hasCloseButton: !1,
     hasHeaderBorder: !1,
@@ -1277,45 +1277,45 @@ function Vr(v, e) {
       o(s)
     },
     children: (s, l) => {
-      var m = Kr(),
-        L = r(m);
+      var _ = Gr(),
+        L = r(_);
       {
-        let k = D(() => f.payment_processing_title()),
-          C = D(() => f.payment_processing_description());
-        ut(L, {
+        let w = D(() => f.payment_processing_title()),
+          k = D(() => f.payment_processing_description());
+        vt(L, {
           embedded: !0,
           variant: "loading",
           get title() {
-            return t(k)
+            return t(w)
           },
           get body() {
-            return t(C)
+            return t(k)
           },
           progress: !0
         })
       }
-      a(m), i(s, m)
+      a(_), i(s, _)
     },
     $$slots: {
       default: !0
     }
-  }), Ue()
+  }), je()
 }
-var Nr = p('<div class="my-auto w-full"><!></div>');
+var Vr = p('<div class="my-auto w-full"><!></div>');
 
-function Jr(v, e) {
-  Te(e, !0);
-  let o = Ae(e, "open", 15),
-    s = Ae(e, "purchasedDroplets", 3, null),
-    l = Ae(e, "currency", 3, "droplets");
-  const m = typeof navigator < "u" ? navigator.language : "en-US",
-    L = B => B.toLocaleString(m),
-    k = D(() => {
-      var B, M;
-      return l() === "prism" ? (B = ye.data) == null ? void 0 : B.prism : (M = ye.data) == null ? void 0 : M.droplets
+function Nr(v, e) {
+  Re(e, !0);
+  let o = Pe(e, "open", 15),
+    s = Pe(e, "purchasedDroplets", 3, null),
+    l = Pe(e, "currency", 3, "droplets");
+  const _ = typeof navigator < "u" ? navigator.language : "en-US",
+    L = B => B.toLocaleString(_),
+    w = D(() => {
+      var B, z;
+      return l() === "prism" ? (B = ye.data) == null ? void 0 : B.prism : (z = ye.data) == null ? void 0 : z.droplets
     }),
-    C = D(() => l() === "prism" ? f.prism() : f.droplets()),
-    u = D(() => t(k) !== void 0 ? {
+    k = D(() => l() === "prism" ? f.prism() : f.droplets()),
+    u = D(() => t(w) !== void 0 ? {
       rows: s() ? [{
         label: f.purchased(),
         value: `+${L(s())}`,
@@ -1323,15 +1323,15 @@ function Jr(v, e) {
       }] : [],
       total: {
         label: f.balance(),
-        value: L(t(k))
+        value: L(t(w))
       }
     } : void 0);
 
-  function b() {
+  function m() {
     var B;
     o(!1), (B = e.onbacktostore) == null || B.call(e)
   }
-  rt(v, {
+  at(v, {
     isDynamicHeight: !0,
     hasCloseButton: !1,
     hasHeaderBorder: !1,
@@ -1344,56 +1344,56 @@ function Jr(v, e) {
     set open(B) {
       o(B)
     },
-    children: (B, M) => {
-      var j = Nr(),
-        F = r(j);
+    children: (B, z) => {
+      var R = Vr(),
+        H = r(R);
       {
-        let g = D(() => f.payment_succeded()),
+        let h = D(() => f.payment_succeded()),
           K = D(() => s() ? `+${L(s())}` : void 0),
-          N = D(() => s() ? t(C) : void 0),
-          T = D(() => f.thank_you_for_your_support()),
-          O = D(() => ({
+          X = D(() => s() ? t(k) : void 0),
+          j = D(() => f.thank_you_for_your_support()),
+          W = D(() => ({
             label: f.go_to_store(),
             color: "#3b6fe8",
             colorDark: "#1f4fc8",
-            onClick: b
+            onClick: m
           }));
-        ut(F, {
+        vt(H, {
           embedded: !0,
           variant: "success",
           get title() {
-            return t(g)
+            return t(h)
           },
           get amount() {
             return t(K)
           },
           get amountLabel() {
-            return t(N)
+            return t(X)
           },
           get body() {
-            return t(T)
+            return t(j)
           },
           get receipt() {
             return t(u)
           },
           get primary() {
-            return t(O)
+            return t(W)
           }
         })
       }
-      a(j), i(B, j)
+      a(R), i(B, R)
     },
     $$slots: {
       default: !0
     }
-  }), Ue()
+  }), je()
 }
-var Xr = p('<div class="my-auto w-full"><!></div>');
+var Jr = p('<div class="my-auto w-full"><!></div>');
 
-function Yr(v, e) {
-  Te(e, !0);
-  let o = Ae(e, "open", 15);
-  rt(v, {
+function Xr(v, e) {
+  Re(e, !0);
+  let o = Pe(e, "open", 15);
+  at(v, {
     isDynamicHeight: !0,
     hasCloseButton: !1,
     hasHeaderBorder: !1,
@@ -1407,47 +1407,47 @@ function Yr(v, e) {
       o(s)
     },
     children: (s, l) => {
-      var m = Xr(),
-        L = r(m);
+      var _ = Jr(),
+        L = r(_);
       {
-        let k = D(() => f.payment_incomplete()),
-          C = D(() => f.payment_incomplete_description()),
+        let w = D(() => f.payment_incomplete()),
+          k = D(() => f.payment_incomplete_description()),
           u = D(() => ({
             label: f.go_to_store(),
             color: "#3b6fe8",
             colorDark: "#1f4fc8",
             onClick: () => {
-              var b;
-              o(!1), (b = e.onbacktostore) == null || b.call(e)
+              var m;
+              o(!1), (m = e.onbacktostore) == null || m.call(e)
             }
           }));
-        ut(L, {
+        vt(L, {
           embedded: !0,
           variant: "warning",
           get title() {
-            return t(k)
+            return t(w)
           },
           get body() {
-            return t(C)
+            return t(k)
           },
           get primary() {
             return t(u)
           }
         })
       }
-      a(m), i(s, m)
+      a(_), i(s, _)
     },
     $$slots: {
       default: !0
     }
-  }), Ue()
+  }), je()
 }
 
-function Qr(v, e) {
-  Te(e, !0);
-  let o = Ae(e, "message", 19, () => f.payment_play_unavailable_description()),
-    s = Ae(e, "open", 15);
-  rt(v, {
+function Yr(v, e) {
+  Re(e, !0);
+  let o = Pe(e, "message", 19, () => f.payment_play_unavailable_description()),
+    s = Pe(e, "open", 15);
+  at(v, {
     isDynamicHeight: !0,
     hasCloseButton: !1,
     hasHeaderBorder: !1,
@@ -1460,15 +1460,15 @@ function Qr(v, e) {
     set open(l) {
       s(l)
     },
-    children: (l, m) => {
+    children: (l, _) => {
       {
         let L = D(() => f.payment_play_unavailable_title()),
-          k = D(() => ({
+          w = D(() => ({
             label: f.close(),
             arrow: !1,
             onClick: () => s(!1)
           }));
-        ut(l, {
+        vt(l, {
           embedded: !0,
           variant: "error",
           get title() {
@@ -1478,7 +1478,7 @@ function Qr(v, e) {
             return o()
           },
           get primary() {
-            return t(k)
+            return t(w)
           }
         })
       }
@@ -1486,134 +1486,134 @@ function Qr(v, e) {
     $$slots: {
       default: !0
     }
-  }), Ue()
+  }), je()
 }
-var Zr = p('<div class="mt-32 flex justify-center"><div class="loading loading-spinner"></div></div>'),
-  $r = p('<!> <div id="fsc-embedded-checkout-container"></div>', 1);
+var Qr = p('<div class="mt-32 flex justify-center"><div class="loading loading-spinner"></div></div>'),
+  Zr = p('<!> <div id="fsc-embedded-checkout-container"></div>', 1);
 
-function es(v, e) {
-  Te(e, !0);
+function $r(v, e) {
+  Re(e, !0);
   const o = "wplace.onfastspring.com/embedded-stacked";
   let s = $(!1);
-  Ct(() => {
-    var N;
+  kt(() => {
+    var X;
     const u = window;
-    let b = !1,
-      B, M;
-    const j = () => {
-        var T;
-        t(s) || (clearTimeout(M), c(s, !0), (T = e.oncomplete) == null || T.call(e, B))
+    let m = !1,
+      B, z;
+    const R = () => {
+        var j;
+        t(s) || (clearTimeout(z), c(s, !0), (j = e.oncomplete) == null || j.call(e, B))
       },
-      F = () => {
-        t(s) || M || (M = setTimeout(j, 5e3))
+      H = () => {
+        t(s) || z || (z = setTimeout(R, 5e3))
       },
-      g = T => {
-        const O = T == null ? void 0 : T.id;
-        !B && typeof O == "string" && (B = O)
+      h = j => {
+        const W = j == null ? void 0 : j.id;
+        !B && typeof W == "string" && (B = W)
       };
-    u.FSCEventCallback = T => {
-      T === "FSC-purchaseComplete" && F()
-    }, u.__fsp_wh__ = T => {
-      g(T), (T == null ? void 0 : T.completed) !== !1 && B && j()
-    }, u.__fsp_closed__ = T => {
-      g(T), B && j()
+    u.FSCEventCallback = j => {
+      j === "FSC-purchaseComplete" && H()
+    }, u.__fsp_wh__ = j => {
+      h(j), (j == null ? void 0 : j.completed) !== !1 && B && R()
+    }, u.__fsp_closed__ = j => {
+      h(j), B && R()
     };
-    const K = T => {
-      var x, S, U;
-      if (!T.data || typeof T.data != "object") return;
-      const O = (x = T.data) == null ? void 0 : x.fscPopupMessage;
-      O && ((O == null ? void 0 : O.action) === "event" && ((S = O == null ? void 0 : O.eventData) == null ? void 0 : S.event) === "FSC-checkoutStep5" && localStorage.setItem("fscBackFromCheckout", "1"), O.action === "event" && ((U = O.eventData) == null ? void 0 : U.event) === "FSC-purchaseComplete" && F())
+    const K = j => {
+      var y, S, U;
+      if (!j.data || typeof j.data != "object") return;
+      const W = (y = j.data) == null ? void 0 : y.fscPopupMessage;
+      W && ((W == null ? void 0 : W.action) === "event" && ((S = W == null ? void 0 : W.eventData) == null ? void 0 : S.event) === "FSC-checkoutStep5" && localStorage.setItem("fscBackFromCheckout", "1"), W.action === "event" && ((U = W.eventData) == null ? void 0 : U.event) === "FSC-purchaseComplete" && H())
     };
-    return window.addEventListener("message", K), (N = document.getElementById("fsc-api")) == null || N.remove(), delete u.fastspring, Ke.createFastspringSession(e.lookupKey).then(({
-      sessionId: T,
-      securePayload: O
+    return window.addEventListener("message", K), (X = document.getElementById("fsc-api")) == null || X.remove(), delete u.fastspring, Ge.createFastspringSession(e.lookupKey).then(({
+      sessionId: j,
+      securePayload: W
     }) => {
-      if (b) return;
-      const x = document.createElement("script");
-      x.id = "fsc-api", x.src = "https://sbl.onfastspring.com/sbl/1.0.7/fastspring-builder.min.js", x.setAttribute("data-storefront", o), x.setAttribute("data-popup-webhook-received", "__fsp_wh__"), x.setAttribute("data-popup-closed", "__fsp_closed__"), u.__fsp_err__ = (...S) => console.error("FastSpring SBL error:", ...S), x.setAttribute("data-error-callback", "__fsp_err__"), x.setAttribute("data-access-key", Ia), x.onload = () => {
-        O ? u.fastspring.builder.secure(O, "") : u.fastspring.builder.checkout(T)
-      }, document.head.appendChild(x)
-    }).catch(T => console.error("FastSpring: could not create session", T)), () => {
-      var T;
-      b = !0, clearTimeout(M), window.removeEventListener("message", K), delete u.FSCEventCallback, delete u.__fsp_wh__, delete u.__fsp_closed__, delete u.__fsp_err__, (T = document.getElementById("fsc-api")) == null || T.remove(), delete u.fastspring
+      if (m) return;
+      const y = document.createElement("script");
+      y.id = "fsc-api", y.src = "https://sbl.onfastspring.com/sbl/1.0.7/fastspring-builder.min.js", y.setAttribute("data-storefront", o), y.setAttribute("data-popup-webhook-received", "__fsp_wh__"), y.setAttribute("data-popup-closed", "__fsp_closed__"), u.__fsp_err__ = (...S) => console.error("FastSpring SBL error:", ...S), y.setAttribute("data-error-callback", "__fsp_err__"), y.setAttribute("data-access-key", Ba), y.onload = () => {
+        W ? u.fastspring.builder.secure(W, "") : u.fastspring.builder.checkout(j)
+      }, document.head.appendChild(y)
+    }).catch(j => console.error("FastSpring: could not create session", j)), () => {
+      var j;
+      m = !0, clearTimeout(z), window.removeEventListener("message", K), delete u.FSCEventCallback, delete u.__fsp_wh__, delete u.__fsp_closed__, delete u.__fsp_err__, (j = document.getElementById("fsc-api")) == null || j.remove(), delete u.fastspring
     }
   });
-  var l = $r(),
-    m = de(l);
+  var l = Zr(),
+    _ = ve(l);
   {
     var L = u => {
-      var b = Zr();
-      i(u, b)
+      var m = Qr();
+      i(u, m)
     };
-    P(m, u => {
+    P(_, u => {
       t(s) && u(L)
     })
   }
-  var k = n(m, 2);
-  let C;
-  E(() => C = Se(k, 1, "relative", null, C, {
+  var w = n(_, 2);
+  let k;
+  I(() => k = Ae(w, 1, "relative", null, k, {
     hidden: t(s)
-  })), i(v, l), Ue()
+  })), i(v, l), je()
 }
 
-function kt(v) {
+function wt(v) {
   "@babel/helpers - typeof";
-  return typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? kt = function(e) {
+  return typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? wt = function(e) {
     return typeof e
-  } : kt = function(e) {
+  } : wt = function(e) {
     return e && typeof Symbol == "function" && e.constructor === Symbol && e !== Symbol.prototype ? "symbol" : typeof e
-  }, kt(v)
+  }, wt(v)
 }
-var sa = "clover",
-  ts = function(e) {
+var ra = "clover",
+  es = function(e) {
     return e === 3 ? "v3" : e
   },
-  na = "https://js.stripe.com",
-  as = "".concat(na, "/").concat(sa, "/stripe.js"),
-  rs = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/,
-  ss = /^https:\/\/js\.stripe\.com\/(v3|[a-z]+)\/stripe\.js(\?.*)?$/;
-var ns = function(e) {
-    return rs.test(e) || ss.test(e)
+  sa = "https://js.stripe.com",
+  ts = "".concat(sa, "/").concat(ra, "/stripe.js"),
+  as = /^https:\/\/js\.stripe\.com\/v3\/?(\?.*)?$/,
+  rs = /^https:\/\/js\.stripe\.com\/(v3|[a-z]+)\/stripe\.js(\?.*)?$/;
+var ss = function(e) {
+    return as.test(e) || rs.test(e)
   },
-  is = function() {
-    for (var e = document.querySelectorAll('script[src^="'.concat(na, '"]')), o = 0; o < e.length; o++) {
+  ns = function() {
+    for (var e = document.querySelectorAll('script[src^="'.concat(sa, '"]')), o = 0; o < e.length; o++) {
       var s = e[o];
-      if (ns(s.src)) return s
+      if (ss(s.src)) return s
     }
     return null
   },
-  Qt = function(e) {
+  Yt = function(e) {
     var o = "",
       s = document.createElement("script");
-    s.src = "".concat(as).concat(o);
+    s.src = "".concat(ts).concat(o);
     var l = document.head || document.body;
     if (!l) throw new Error("Expected document.body not to be null. Stripe.js requires a <body> element.");
     return l.appendChild(s), s
   },
-  os = function(e, o) {
+  is = function(e, o) {
     !e || !e._registerWrapper || e._registerWrapper({
       name: "stripe-js",
       version: "8.11.0",
       startTime: o
     })
   },
-  gt = null,
+  ht = null,
+  yt = null,
   xt = null,
-  wt = null,
-  ls = function(e) {
+  os = function(e) {
     return function(o) {
       e(new Error("Failed to load Stripe.js", {
         cause: o
       }))
     }
   },
-  cs = function(e, o) {
+  ls = function(e, o) {
     return function() {
       window.Stripe ? e(window.Stripe) : o(new Error("Stripe.js not available"))
     }
   },
-  ds = function(e) {
-    return gt !== null ? gt : (gt = new Promise(function(o, s) {
+  cs = function(e) {
+    return ht !== null ? ht : (ht = new Promise(function(o, s) {
       if (typeof window > "u" || typeof document > "u") {
         o(null);
         return
@@ -1623,508 +1623,507 @@ var ns = function(e) {
         return
       }
       try {
-        var l = is();
+        var l = ns();
         if (!(l && e)) {
-          if (!l) l = Qt(e);
-          else if (l && wt !== null && xt !== null) {
-            var m;
-            l.removeEventListener("load", wt), l.removeEventListener("error", xt), (m = l.parentNode) === null || m === void 0 || m.removeChild(l), l = Qt(e)
+          if (!l) l = Yt(e);
+          else if (l && xt !== null && yt !== null) {
+            var _;
+            l.removeEventListener("load", xt), l.removeEventListener("error", yt), (_ = l.parentNode) === null || _ === void 0 || _.removeChild(l), l = Yt(e)
           }
         }
-        wt = cs(o, s), xt = ls(s), l.addEventListener("load", wt), l.addEventListener("error", xt)
+        xt = ls(o, s), yt = os(s), l.addEventListener("load", xt), l.addEventListener("error", yt)
       } catch (L) {
         s(L);
         return
       }
-    }), gt.catch(function(o) {
-      return gt = null, Promise.reject(o)
+    }), ht.catch(function(o) {
+      return ht = null, Promise.reject(o)
     }))
   },
-  vs = function(e, o, s) {
+  ds = function(e, o, s) {
     if (e === null) return null;
     var l = o[0];
-    if (typeof l != "string") throw new Error("Expected publishable key to be of type string, got type ".concat(kt(l), " instead."));
-    var m = l.match(/^pk_test/),
-      L = ts(e.version),
-      k = sa;
-    m && L !== k && console.warn("Stripe.js@".concat(L, " was loaded on the page, but @stripe/stripe-js@").concat("8.11.0", " expected Stripe.js@").concat(k, ". This may result in unexpected behavior. For more information, see https://docs.stripe.com/sdks/stripejs-versioning"));
-    var C = e.apply(void 0, o);
-    return os(C, s), C
+    if (typeof l != "string") throw new Error("Expected publishable key to be of type string, got type ".concat(wt(l), " instead."));
+    var _ = l.match(/^pk_test/),
+      L = es(e.version),
+      w = ra;
+    _ && L !== w && console.warn("Stripe.js@".concat(L, " was loaded on the page, but @stripe/stripe-js@").concat("8.11.0", " expected Stripe.js@").concat(w, ". This may result in unexpected behavior. For more information, see https://docs.stripe.com/sdks/stripejs-versioning"));
+    var k = e.apply(void 0, o);
+    return is(k, s), k
   },
-  _t, ia = !1,
-  oa = function() {
-    return _t || (_t = ds(null).catch(function(e) {
-      return _t = null, Promise.reject(e)
-    }), _t)
+  gt, na = !1,
+  ia = function() {
+    return gt || (gt = cs(null).catch(function(e) {
+      return gt = null, Promise.reject(e)
+    }), gt)
   };
 Promise.resolve().then(function() {
-  return oa()
+  return ia()
 }).catch(function(v) {
-  ia || console.warn(v)
+  na || console.warn(v)
 });
-var us = function() {
+var vs = function() {
     for (var e = arguments.length, o = new Array(e), s = 0; s < e; s++) o[s] = arguments[s];
-    ia = !0;
+    na = !0;
     var l = Date.now();
-    return oa().then(function(m) {
-      return vs(m, o, l)
+    return ia().then(function(_) {
+      return ds(_, o, l)
     })
   },
-  fs = p('<div class="mt-32 flex justify-center"><div class="loading loading-spinner"></div></div>'),
-  ps = p('<!> <div class="w-full"></div>', 1);
+  us = p('<div class="mt-32 flex justify-center"><div class="loading loading-spinner"></div></div>'),
+  fs = p('<!> <div class="w-full"></div>', 1);
 
-function hs(v, e) {
-  Te(e, !0);
+function ps(v, e) {
+  Re(e, !0);
   let o, s, l = $(!1);
-  const m = 2e3;
-  Ct(async () => {
-    var B, M, j;
-    let b;
+  const _ = 8e3;
+  kt(async () => {
+    var B, z, R;
+    let m;
     try {
-      b = await Promise.race([us(Ea), new Promise((F, g) => setTimeout(() => g(new Error("stripe-load-timeout")), m))])
+      m = await Promise.race([vs(Ia), new Promise((H, h) => setTimeout(() => h(new Error("stripe-load-timeout")), _))])
     } catch {
       (B = e.onUnavailable) == null || B.call(e);
       return
     }
-    if (!b) {
-      (M = e.onUnavailable) == null || M.call(e);
+    if (!m) {
+      (z = e.onUnavailable) == null || z.call(e);
       return
     }
     try {
-      s = await b.initEmbeddedCheckout({
+      s = await m.initEmbeddedCheckout({
         fetchClientSecret: async () => e.clientSecret,
         onComplete: async () => {
-          var F;
-          s == null || s.destroy(), s = void 0, c(l, !0), (F = e.onComplete) == null || F.call(e)
+          var H;
+          s == null || s.destroy(), s = void 0, c(l, !0), (H = e.onComplete) == null || H.call(e)
         }
       }), s.mount(o)
     } catch {
-      (j = e.onUnavailable) == null || j.call(e)
+      (R = e.onUnavailable) == null || R.call(e)
     }
-  }), ba(() => {
+  }), ma(() => {
     s == null || s.destroy(), s = void 0
   });
-  var L = ps(),
-    k = de(L);
+  var L = fs(),
+    w = ve(L);
   {
-    var C = b => {
-      var B = fs();
-      i(b, B)
+    var k = m => {
+      var B = us();
+      i(m, B)
     };
-    P(k, b => {
-      t(l) && b(C)
+    P(w, m => {
+      t(l) && m(k)
     })
   }
-  var u = n(k, 2);
-  Ma(u, b => o = b, () => o), i(v, L), Ue()
+  var u = n(w, 2);
+  Ea(u, m => o = m, () => o), i(v, L), je()
 }
-var gs = p('<!> <h3 class="text-xl font-bold"> </h3> <div class="mr-2 ml-auto"><!></div>', 1),
-  _s = p('<button class="btn btn-ghost btn-sm btn-circle"><!></button> <h3 class="text-xl font-bold"> </h3>', 1),
-  ms = p('<span class="loading loading-spinner loading-sm absolute"></span>'),
-  bs = p('<div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-6"><p class="text-primary text-3xl font-bold"><!> <span> <span class="text-lg font-normal"> </span></span></p> <p class="text-base-content/80 mt-0.5 text-center text-xs"><!> <span class="text-primary/80 font-medium"> </span></p> <button class="btn btn-lg btn-primary relative mt-3 h-10"><!> <span><!></span></button></div>'),
-  ys = p('<div class="mt-2 text-center"><button class="link text-sm font-medium"> </button></div>'),
-  xs = p('<p class="text-base-content/80 mb-4 text-sm"> </p> <div class="grid gap-3 sm:grid-cols-2"><!> <!> <!> <!> <!> <!></div> <p class="text-base-content/60 mt-4 text-center text-sm"> <a class="font-medium" target="_blank"> </a></p> <!>', 1),
-  ws = p('<div class="flex flex-col gap-4 px-6 pt-6 pb-2"><div class="bg-base-200 flex rounded-2xl p-1"><button><svg viewBox="0 0 750 471" xmlns="http://www.w3.org/2000/svg" aria-label="Visa"><rect width="750" height="471" rx="40" fill="#1a1f71"></rect><path d="M278 334L311 138h51L329 334h-51zM524 142c-10-4-26-8-46-8-51 0-87 27-87 65-1 28 25 44 45 53 20 10 27 16 27 25-1 13-16 19-31 19-21 0-32-3-49-10l-7-3-7 44c12 5 33 10 56 10 54 0 89-27 89-68 0-22-14-39-44-53-18-9-30-15-30-24 0-8 10-17 31-17 17 0 30 4 40 8l5 2 7-43zM614 138h-40c-12 0-21 4-27 16l-77 180h54l11-30h66l6 30h48l-41-196zm-63 127l20-54 10-30 5 27 18 57h-53zM230 138l-50 133-5-27c-10-32-40-66-74-83l46 173h55l82-196h-54z" fill="#fff"></path><path d="M131 138H48l-1 4c65 17 108 56 126 103l-18-91c-3-12-12-16-24-16z" fill="#f9a533"></path></svg> <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" aria-label="Mastercard"><rect width="38" height="24" rx="4" fill="#252525"></rect><circle cx="15" cy="12" r="7" fill="#eb001b"></circle><circle cx="23" cy="12" r="7" fill="#f79e1b"></circle><path d="M19 6.8a7 7 0 0 1 0 10.4A7 7 0 0 1 19 6.8z" fill="#ff5f00"></path></svg> </button> <button> </button></div></div>'),
-  ks = p('<div class="flex h-40 items-center justify-center"><span class="loading loading-spinner loading-lg"></span></div>'),
-  Zt = p("<div><!></div>"),
-  Cs = p('<!> <div class="mt-4"><!> <!></div>', 1),
-  Ss = p("<div><!></div> <!> <!> <!> <!> <!> <!> <!>", 1);
+var hs = p('<!> <h3 class="text-xl font-bold"> </h3> <div class="mr-2 ml-auto"><!></div>', 1),
+  gs = p('<button class="btn btn-ghost btn-sm btn-circle"><!></button> <h3 class="text-xl font-bold"> </h3>', 1),
+  _s = p('<span class="loading loading-spinner loading-sm absolute"></span>'),
+  ms = p('<div class="bg-base-300 flex flex-col items-center justify-center rounded-xl p-6"><p class="text-primary text-3xl font-bold"><!> <span> <span class="text-lg font-normal"> </span></span></p> <p class="text-base-content/80 mt-0.5 text-center text-xs"><!> <span class="text-primary/80 font-medium"> </span></p> <button class="btn btn-lg btn-primary relative mt-3 h-10"><!> <span><!></span></button></div>'),
+  bs = p('<div class="mt-2 text-center"><button class="link text-sm font-medium"> </button></div>'),
+  ys = p('<p class="text-base-content/80 mb-4 text-sm"> </p> <div class="grid gap-3 sm:grid-cols-2"><!> <!> <!> <!> <!> <!></div> <p class="text-base-content/60 mt-4 text-center text-sm"> <a class="font-medium" target="_blank"> </a></p> <!>', 1),
+  xs = p('<div class="flex flex-col gap-4 px-6 pt-6 pb-2"><div class="bg-base-200 flex rounded-2xl p-1"><button><svg viewBox="0 0 750 471" xmlns="http://www.w3.org/2000/svg" aria-label="Visa"><rect width="750" height="471" rx="40" fill="#1a1f71"></rect><path d="M278 334L311 138h51L329 334h-51zM524 142c-10-4-26-8-46-8-51 0-87 27-87 65-1 28 25 44 45 53 20 10 27 16 27 25-1 13-16 19-31 19-21 0-32-3-49-10l-7-3-7 44c12 5 33 10 56 10 54 0 89-27 89-68 0-22-14-39-44-53-18-9-30-15-30-24 0-8 10-17 31-17 17 0 30 4 40 8l5 2 7-43zM614 138h-40c-12 0-21 4-27 16l-77 180h54l11-30h66l6 30h48l-41-196zm-63 127l20-54 10-30 5 27 18 57h-53zM230 138l-50 133-5-27c-10-32-40-66-74-83l46 173h55l82-196h-54z" fill="#fff"></path><path d="M131 138H48l-1 4c65 17 108 56 126 103l-18-91c-3-12-12-16-24-16z" fill="#f9a533"></path></svg> <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg" aria-label="Mastercard"><rect width="38" height="24" rx="4" fill="#252525"></rect><circle cx="15" cy="12" r="7" fill="#eb001b"></circle><circle cx="23" cy="12" r="7" fill="#f79e1b"></circle><path d="M19 6.8a7 7 0 0 1 0 10.4A7 7 0 0 1 19 6.8z" fill="#ff5f00"></path></svg> </button> <button> </button></div></div>'),
+  ws = p('<div class="flex h-40 items-center justify-center"><span class="loading loading-spinner loading-lg"></span></div>'),
+  Qt = p("<div><!></div>"),
+  ks = p('<!> <div class="mt-4"><!> <!></div>', 1),
+  Cs = p("<div><!></div> <!> <!> <!> <!> <!> <!> <!>", 1);
 
-function on(v, e) {
-  Te(e, !0);
-  let o = Ae(e, "open", 15),
+function nn(v, e) {
+  Re(e, !0);
+  let o = Pe(e, "open", 15),
     s = $("products"),
     l = $(!1),
-    m = $(0),
+    _ = $(0),
     L = $("droplets"),
+    w = $(!1),
     k = $(!1),
-    C = $(!1),
     u = $(!1),
-    b = $(null),
+    m = $(null),
     B = $(null),
-    M = $(null);
-  const j = D(() => {
-      var d, y;
-      return ((y = (d = ye.data) == null ? void 0 : d.country) == null ? void 0 : y.toUpperCase()) === "MX"
+    z = $(null);
+  const R = D(() => {
+      var d, b;
+      return ((b = (d = ye.data) == null ? void 0 : d.country) == null ? void 0 : b.toUpperCase()) === "MX"
     }),
-    F = D(() => {
-      var d, y;
-      return ((y = (d = ye.data) == null ? void 0 : d.country) == null ? void 0 : y.toUpperCase()) === "BR"
+    H = D(() => {
+      var d, b;
+      return ((b = (d = ye.data) == null ? void 0 : d.country) == null ? void 0 : b.toUpperCase()) === "BR"
     });
-  let g = $(!1),
+  let h = $(!1),
     K = $(!1),
-    N = $(!1);
+    X = $(!1);
 
-  function T() {
-    c(g, je.isTWA(), !0), c(K, je.isTWALoaded(), !0), c(N, je.playBillingBlocked, !0)
+  function j() {
+    c(h, ze.isTWA(), !0), c(K, ze.isTWALoaded(), !0), c(X, ze.playBillingBlocked, !0)
   }
-  let O = $(!1),
-    x = $(!1),
+  let W = $(!1),
+    y = $(!1),
     S = $("");
-  Ct(async () => {
+  kt(async () => {
     try {
-      await je.loadMapSKUs()
+      await ze.loadMapSKUs()
     } finally {
-      T()
+      j()
     }
   });
   let U = $("stripe"),
-    V = $(!1);
-  Rt(() => {
-    t(U) === "other" && c(V, !0)
+    J = $(!1);
+  zt(() => {
+    t(U) === "other" && c(J, !0)
   });
-  const ae = "wplace_stripe_blocked";
-  let I = $(!1);
+  let te = $(!1);
 
-  function H() {
-    c(I, !0), localStorage.setItem(ae, "1"), c(V, !0), c(U, "other")
+  function E() {
+    c(te, !0), c(J, !0), c(U, "other")
   }
-  const ve = D(() => ye.data ? ye.data.id % 2 === 0 : !1),
-    me = D(() => t(I) || t(ve));
-  Ct(() => {
-    if (c(I, !!localStorage.getItem(ae)), !!localStorage.getItem("fscBackFromCheckout")) {
+  const G = D(() => ye.data ? ye.data.id % 2 === 0 : !1),
+    ie = D(() => t(te) || t(G));
+  kt(() => {
+    if (!!localStorage.getItem("fscBackFromCheckout")) {
       localStorage.removeItem("fscBackFromCheckout");
-      const y = localStorage.getItem("wplace_fs_currency") === "prism" ? "prism" : "droplets",
-        _ = Number(localStorage.getItem(y === "prism" ? "wplace_fs_prism" : "wplace_fs_droplets")) || 0;
-      history.replaceState({}, "", window.location.pathname), c(L, y, !0), c(u, !0), ze(_)
+      const b = localStorage.getItem("wplace_fs_currency") === "prism" ? "prism" : "droplets",
+        M = Number(localStorage.getItem(b === "prism" ? "wplace_fs_prism" : "wplace_fs_droplets")) || 0;
+      history.replaceState({}, "", window.location.pathname), c(L, b, !0), c(u, !0), Te(M)
     }
   });
-  let De = null;
-  async function ze(d) {
-    const y = {
+  let _e = null;
+  async function Te(d) {
+    const b = {
       cancelled: !1
     };
-    De = y, c(u, !0);
-    for (let _ = 0; _ < 2; _++) {
-      if (_ !== 0 && await new Promise(h => setTimeout(h, 2e3)), y.cancelled) {
+    _e = b, c(u, !0);
+    for (let M = 0; M < 2; M++) {
+      if (M !== 0 && await new Promise(g => setTimeout(g, 2e3)), b.cancelled) {
         c(u, !1);
         return
       }
       try {
-        const h = await Ke.getLastFastspringOrder();
-        if (!h) continue;
-        if (!h.read) {
-          if (y.cancelled) {
+        const g = await Ge.getLastFastspringOrder();
+        if (!g) continue;
+        if (!g.read) {
+          if (b.cancelled) {
             c(u, !1);
             return
           }
-          c(u, !1), c(C, !1), c(m, d, !0), c(k, !0), await ye.refresh(), await Ke.markFastspringOrderAsRead(h.id);
+          c(u, !1), c(k, !1), c(_, d, !0), c(w, !0), await ye.refresh(), await Ge.markFastspringOrderAsRead(g.id);
           return
         }
       } catch {}
     }
-    c(u, !1), y.cancelled || c(C, !0)
+    c(u, !1), b.cancelled || c(k, !0)
   }
-  async function Re(d) {
-    if (De && (De.cancelled = !0), c(b, d, !0), c(L, "droplets"), localStorage.setItem("wplace_fs_currency", "droplets"), localStorage.setItem("wplace_fs_droplets", String(d.droplets + d.bonus)), t(me)) {
-      c(U, "other"), c(V, !0), c(s, "checkout");
+  async function Ie(d) {
+    if (_e && (_e.cancelled = !0), c(m, d, !0), c(L, "droplets"), localStorage.setItem("wplace_fs_currency", "droplets"), localStorage.setItem("wplace_fs_droplets", String(d.droplets + d.bonus)), t(ie)) {
+      c(U, "other"), c(J, !0), c(s, "checkout");
       return
     }
     c(U, "stripe"), c(l, !0);
     try {
-      await (async y => {
-        c(B, y.clientSecret, !0), c(M, y.sessionId, !0)
-      })(await Ke.createEmbeddedCheckout(d.stripeLookupkey)), c(s, "checkout")
-    } catch (y) {
-      Bt.error(y.message ?? "Unexpected error")
+      await (async b => {
+        c(B, b.clientSecret, !0), c(z, b.sessionId, !0)
+      })(await Ge.createEmbeddedCheckout(d.stripeLookupkey)), c(s, "checkout")
+    } catch (b) {
+      Dt.error(b.message ?? "Unexpected error")
     } finally {
       c(l, !1)
     }
   }
 
-  function oe() {
-    c(s, "products"), c(b, null), c(B, null), c(M, null), localStorage.removeItem("wplace_fs_droplets"), localStorage.removeItem("wplace_fs_currency")
+  function xe() {
+    c(s, "products"), c(m, null), c(B, null), c(z, null), localStorage.removeItem("wplace_fs_droplets"), localStorage.removeItem("wplace_fs_currency")
   }
 
-  function ge() {
-    oe(), o(!1), c(O, !0)
+  function ce() {
+    xe(), o(!1), c(W, !0)
   }
-  async function Le() {
-    const d = t(b).droplets + t(b).bonus,
-      y = t(M);
-    let _ = !1;
-    if (y) {
+  async function we() {
+    const d = t(m).droplets + t(m).bonus,
+      b = t(z);
+    let M = !1;
+    if (b) {
       try {
         ({
-          credited: _
-        } = await Ke.refreshStripeSession(y))
+          credited: M
+        } = await Ge.refreshStripeSession(b))
       } catch {
-        _ = !1
+        M = !1
       }
       await ye.refresh()
     }
-    if (!_) {
-      ge();
+    if (!M) {
+      ce();
       return
     }
-    oe(), o(!1), c(m, d), c(k, !0)
+    xe(), o(!1), c(_, d), c(w, !0)
   }
-  async function We(d) {
-    var h;
+  async function ke(d) {
+    var g;
     if (t(l)) return;
-    c(l, !0), Ca();
-    let y = !1,
-      _ = "";
+    c(l, !0), ka();
+    let b = !1,
+      M = "";
     try {
-      const z = await je.createPayment(d);
-      y = !0, _ = (h = z == null ? void 0 : z.out) == null ? void 0 : h.details.purchaseToken, await z.verify()
-    } catch (z) {
-      if (y) {
+      const C = await ze.createPayment(d);
+      b = !0, M = (g = C == null ? void 0 : C.out) == null ? void 0 : g.details.purchaseToken, await C.verify()
+    } catch (C) {
+      if (b) {
         c(u, !0);
-        const pe = await xe(_, we => je.verifyBySKU({
+        const F = await Qe(M, Ee => ze.verifyBySKU({
           sku: d,
-          token: we
+          token: Ee
         }));
-        switch (c(u, !1), pe.status) {
+        switch (c(u, !1), F.status) {
           case "accepted": {
-            Mt.openCheckoutDialog({
+            Et.openCheckoutDialog({
               currency: "droplets",
-              amount: pe.amount
+              amount: F.amount
             });
             break
           }
           case "declined": {
-            c(S, d, !0), c(x, !0);
+            c(S, d, !0), c(y, !0);
             break
           }
           default: {
-            c(O, !0);
+            c(W, !0);
             break
           }
         }
       } else {
-        const pe = (z == null ? void 0 : z.message) ?? "";
-        /abort|cancel/i.test(pe) || Bt.error(pe || f.unexpected_server_error())
+        const F = (C == null ? void 0 : C.message) ?? "";
+        /abort|cancel/i.test(F) || Dt.error(F || f.unexpected_server_error())
       }
     } finally {
       c(l, !1)
     }
   }
-  const Ze = d => new Promise(y => setTimeout(y, d));
-  async function xe(d, y) {
+  const Ve = d => new Promise(b => setTimeout(b, d));
+  async function Qe(d, b) {
     if (!d) return {
       status: "declined",
       amount: 0
     };
-    const _ = Date.now();
+    const M = Date.now();
     for (;;) {
-      let h = null;
+      let g = null;
       try {
-        h = await Ke.getPlayClaimStatus(d)
+        g = await Ge.getPlayClaimStatus(d)
       } catch {}
-      if ((h == null ? void 0 : h.status) === "processed") return await ye.refresh(), {
+      if ((g == null ? void 0 : g.status) === "processed") return await ye.refresh(), {
         status: "accepted",
-        amount: h.grant.amount
+        amount: g.grant.amount
       };
-      if ((h == null ? void 0 : h.status) === "rejected") return {
+      if ((g == null ? void 0 : g.status) === "rejected") return {
         status: "declined",
         amount: 0
       };
-      if ((h == null ? void 0 : h.status) === "unknown") try {
+      if ((g == null ? void 0 : g.status) === "unknown") try {
         const {
-          grant: pe
-        } = await y(d);
+          grant: F
+        } = await b(d);
         return await ye.refresh(), {
           status: "accepted",
-          amount: pe.amount
+          amount: F.amount
         }
       } catch {}
-      if ((Date.now() - _) / 1e3 > je.POOLING_TIME) return {
+      if ((Date.now() - M) / 1e3 > ze.POOLING_TIME) return {
         status: "pending",
         amount: 0
       };
-      await Ze(1500)
+      await Ve(1500)
     }
   }
-  var st = Ss(),
-    Ge = de(st),
-    ct = r(Ge);
+  var me = Cs(),
+    Ne = ve(me),
+    rt = r(Ne);
   {
-    const d = Pe => {
-      var Ne = Ve(),
-        R = de(Ne);
+    const d = ge => {
+      var Me = Ke(),
+        We = ve(Me);
       {
-        var ee = J => {
-            var te = gs(),
-              ne = de(te);
-            lt(ne, {
+        var T = Q => {
+            var Y = hs(),
+              Z = ve(Y);
+            lt(Z, {
               class: "text-primary size-5"
             });
-            var _e = n(ne, 2),
-              he = r(_e, !0);
-            a(_e);
-            var ue = n(_e, 2),
-              fe = r(ue);
+            var de = n(Z, 2),
+              be = r(de, !0);
+            a(de);
+            var ae = n(de, 2),
+              oe = r(ae);
             {
-              let re = D(() => ye.data.droplets ?? 0);
-              Oa(fe, {
+              let Ce = D(() => ye.data.droplets ?? 0);
+              Fa(oe, {
                 get value() {
-                  return t(re)
+                  return t(Ce)
                 },
                 button: !1
               })
             }
-            a(ue), E(re => w(he, re), [() => f.droplets()]), i(J, te)
+            a(ae), I(Ce => x(be, Ce), [() => f.droplets()]), i(Q, Y)
           },
-          ce = J => {
-            var te = _s(),
-              ne = de(te),
-              _e = r(ne);
-            za(_e, {
+          ee = Q => {
+            var Y = gs(),
+              Z = ve(Y),
+              de = r(Z);
+            Ma(de, {
               class: "size-5"
-            }), a(ne);
-            var he = n(ne, 2),
-              ue = r(he, !0);
-            a(he), E(fe => w(ue, fe), [() => f.payment()]), qe("click", ne, oe), i(J, te)
+            }), a(Z);
+            var be = n(Z, 2),
+              ae = r(be, !0);
+            a(be), I(oe => x(ae, oe), [() => f.payment()]), Le("click", Z, xe), i(Q, Y)
           };
-        P(R, J => {
-          t(s) === "products" && ye.data ? J(ee) : t(s) === "checkout" && t(b) && J(ce, 1)
+        P(We, Q => {
+          t(s) === "products" && ye.data ? Q(T) : t(s) === "checkout" && t(m) && Q(ee, 1)
         })
       }
-      i(Pe, Ne)
+      i(ge, Me)
     };
-    let y = D(() => t(s) === "products" ? "max-w-2xl" : "max-w-5xl max-h-[min(91.6vh,57rem)]"),
-      _ = D(() => t(s) === "checkout" ? "px-0 sm:px-0 pt-0 pb-4" : ""),
-      h = D(() => t(s) === "products"),
-      z = D(() => t(s) !== "checkout"),
-      pe = D(() => t(s) === "checkout"),
-      we = D(() => t(s) === "products");
-    rt(ct, {
+    let b = D(() => t(s) === "products" ? "max-w-2xl" : "max-w-5xl max-h-[min(91.6vh,57rem)]"),
+      M = D(() => t(s) === "checkout" ? "px-0 sm:px-0 pt-0 pb-4" : ""),
+      g = D(() => t(s) === "products"),
+      C = D(() => t(s) !== "checkout"),
+      F = D(() => t(s) === "checkout"),
+      Ee = D(() => t(s) === "products");
+    at(rt, {
       dialogClass: "bg-black/90!",
       get modalBoxClass() {
-        return t(y)
+        return t(b)
       },
       get contentAreaClass() {
-        return t(_)
+        return t(M)
       },
       get isDynamicHeight() {
-        return t(h)
+        return t(g)
       },
       hasCloseButton: !0,
       get hasHeaderBorder() {
-        return t(z)
+        return t(C)
       },
       get disableCloseAnimation() {
-        return t(pe)
+        return t(F)
       },
       get hasBackdrop() {
-        return t(we)
+        return t(Ee)
       },
       onclose: () => {
         setTimeout(() => {
-          c(s, "products"), c(b, null), c(B, null), c(M, null), c(U, "stripe"), c(V, !1)
+          c(s, "products"), c(m, null), c(B, null), c(z, null), c(U, "stripe"), c(J, !1)
         }, 100)
       },
       get open() {
         return o()
       },
-      set open(Pe) {
-        o(Pe)
+      set open(ge) {
+        o(ge)
       },
       header: d,
-      children: (Pe, Ne) => {
-        var R = Ve(),
-          ee = de(R);
+      children: (ge, Me) => {
+        var We = Ke(),
+          T = ve(We);
         {
-          var ce = J => {
-            var te = Ve(),
-              ne = de(te);
+          var ee = Q => {
+            var Y = Ke(),
+              Z = ve(Y);
             {
-              var _e = ue => {
-                  const fe = (Ye, se) => {
-                    let Qe = () => se == null ? void 0 : se().droplets,
-                      tt = () => se == null ? void 0 : se().bonus,
-                      vt = () => se == null ? void 0 : se().price,
-                      ft = () => se == null ? void 0 : se().stripeLookupkey,
-                      la = () => se == null ? void 0 : se().productId;
-                    var At = bs(),
-                      Lt = r(At),
-                      jt = r(Lt);
-                    lt(jt, {
+              var de = ae => {
+                  const oe = (Xe, se) => {
+                    let Ye = () => se == null ? void 0 : se().droplets,
+                      et = () => se == null ? void 0 : se().bonus,
+                      dt = () => se == null ? void 0 : se().price,
+                      ut = () => se == null ? void 0 : se().stripeLookupkey,
+                      oa = () => se == null ? void 0 : se().productId;
+                    var qt = ms(),
+                      At = r(qt),
+                      Rt = r(At);
+                    lt(Rt, {
                       class: "mb-1 inline size-7"
                     });
-                    var Tt = n(jt, 2),
-                      Ut = r(Tt),
-                      Ft = n(Ut),
-                      ca = r(Ft, !0);
-                    a(Ft), a(Tt), a(Lt);
-                    var Pt = n(Lt, 2),
-                      Ot = r(Pt);
+                    var jt = n(Rt, 2),
+                      Tt = r(jt),
+                      Ut = n(Tt),
+                      la = r(Ut, !0);
+                    a(Ut), a(jt), a(At);
+                    var Lt = n(At, 2),
+                      Ft = r(Lt);
                     {
-                      var da = ie => {
+                      var ca = ne => {
                         var le = it();
-                        E((Oe, pt) => w(le, `${Oe??""} ${pt??""}`), [() => Qe().toLocaleString(navigator.language), () => f.droplets()]), i(ie, le)
+                        I((He, ft) => x(le, `${He??""} ${ft??""}`), [() => Ye().toLocaleString(navigator.language), () => f.droplets()]), i(ne, le)
                       };
-                      P(Ot, ie => {
-                        tt() && ie(da)
+                      P(Ft, ne => {
+                        et() && ne(ca)
                       })
                     }
-                    var Ht = n(Ot, 2),
-                      va = r(Ht);
-                    a(Ht), a(Pt);
-                    var bt = n(Pt, 2),
-                      Wt = r(bt);
+                    var Ht = n(Ft, 2),
+                      da = r(Ht);
+                    a(Ht), a(Lt);
+                    var mt = n(Lt, 2),
+                      Ot = r(mt);
                     {
-                      var ua = ie => {
-                        var le = ms();
-                        i(ie, le)
+                      var va = ne => {
+                        var le = _s();
+                        i(ne, le)
                       };
-                      P(Wt, ie => {
+                      P(Ot, ne => {
                         var le;
-                        t(l) && (t(g) || ((le = t(b)) == null ? void 0 : le.stripeLookupkey) === ft()) && ie(ua)
+                        t(l) && (t(h) || ((le = t(m)) == null ? void 0 : le.stripeLookupkey) === ut()) && ne(va)
                       })
                     }
-                    var Dt = n(Wt, 2);
-                    let Gt;
-                    var fa = r(Dt);
+                    var Pt = n(Ot, 2);
+                    let Wt;
+                    var ua = r(Pt);
                     {
-                      var pa = ie => {
-                          var le = Ve(),
-                            Oe = de(le);
-                          Kt(Oe, () => t(K), pt => {
-                            var ht = it();
-                            E(ma => w(ht, ma), [() => je.printPriceBySKU(ft())]), i(pt, ht)
-                          }), i(ie, le)
+                      var fa = ne => {
+                          var le = Ke(),
+                            He = ve(le);
+                          Gt(He, () => t(K), ft => {
+                            var pt = it();
+                            I(_a => x(pt, _a), [() => ze.printPriceBySKU(ut())]), i(ft, pt)
+                          }), i(ne, le)
                         },
-                        ha = ie => {
+                        pa = ne => {
                           var le = it();
-                          E(Oe => w(le, `MX$${Oe??""}`), [() => (vt() * 18).toFixed(2)]), i(ie, le)
+                          I(He => x(le, `MX$${He??""}`), [() => (dt() * 18).toFixed(2)]), i(ne, le)
                         },
-                        ga = ie => {
+                        ha = ne => {
                           var le = it();
-                          E(Oe => w(le, `R$${Oe??""}`), [() => (vt() * 4).toFixed(2).replace(".", ",")]), i(ie, le)
+                          I(He => x(le, `R$${He??""}`), [() => (dt() * 4).toFixed(2).replace(".", ",")]), i(ne, le)
                         },
-                        _a = ie => {
+                        ga = ne => {
                           var le = it();
-                          E(Oe => w(le, `$${Oe??""}`), [() => vt().toFixed(2)]), i(ie, le)
+                          I(He => x(le, `$${He??""}`), [() => dt().toFixed(2)]), i(ne, le)
                         };
-                      P(fa, ie => {
-                        t(g) ? ie(pa) : t(j) ? ie(ha, 1) : t(F) ? ie(ga, 2) : ie(_a, -1)
+                      P(ua, ne => {
+                        t(h) ? ne(fa) : t(R) ? ne(pa, 1) : t(H) ? ne(ha, 2) : ne(ga, -1)
                       })
                     }
-                    a(Dt), a(bt), a(At), E((ie, le, Oe, pt) => {
-                      var ht;
-                      w(Ut, `${ie??""} `), w(ca, le), w(va, `+${Oe??""}
-								${pt??""}`), bt.disabled = t(l) || t(N), Gt = Se(Dt, 1, "", null, Gt, {
-                        "opacity-0": t(l) && (t(g) || ((ht = t(b)) == null ? void 0 : ht.stripeLookupkey) === ft())
+                    a(Pt), a(mt), a(qt), I((ne, le, He, ft) => {
+                      var pt;
+                      x(Tt, `${ne??""} `), x(la, le), x(da, `+${He??""}
+								${ft??""}`), mt.disabled = t(l) || t(X), Wt = Ae(Pt, 1, "", null, Wt, {
+                        "opacity-0": t(l) && (t(h) || ((pt = t(m)) == null ? void 0 : pt.stripeLookupkey) === ut())
                       })
-                    }, [() => (Qe() + tt()).toLocaleString(navigator.language), () => f.droplets(), () => tt().toLocaleString(navigator.language), () => f.bonus()]), qe("click", bt, async () => {
-                      t(g) && await We(ft()), (!t(g) || je.forceTWA.current === !1) && Re({
-                        price: vt(),
-                        droplets: Qe(),
-                        bonus: tt(),
-                        stripeLookupkey: ft(),
-                        productId: la()
-                      }), T()
-                    }), i(Ye, At)
+                    }, [() => (Ye() + et()).toLocaleString(navigator.language), () => f.droplets(), () => et().toLocaleString(navigator.language), () => f.bonus()]), Le("click", mt, async () => {
+                      t(h) && await ke(ut()), (!t(h) || ze.forceTWA.current === !1) && Ie({
+                        price: dt(),
+                        droplets: Ye(),
+                        bonus: et(),
+                        stripeLookupkey: ut(),
+                        productId: oa()
+                      }), j()
+                    }), i(Xe, qt)
                   };
-                  var re = xs(),
-                    be = de(re),
-                    Be = r(be, !0);
-                  a(be);
-                  var Ie = n(be, 2),
-                    Ee = r(Ie);
-                  fe(Ee, () => ({
+                  var Ce = ys(),
+                    ue = ve(Ce),
+                    Se = r(ue, !0);
+                  a(ue);
+                  var qe = n(ue, 2),
+                    Ue = r(qe);
+                  oe(Ue, () => ({
                     price: 5,
                     droplets: 25e3,
                     bonus: 0,
@@ -2132,8 +2131,8 @@ function on(v, e) {
                     productId: 10,
                     dropdownClass: "dropdown-center"
                   }));
-                  var Je = n(Ee, 2);
-                  fe(Je, () => ({
+                  var De = n(Ue, 2);
+                  oe(De, () => ({
                     price: 15,
                     droplets: 75e3,
                     bonus: 3750,
@@ -2141,8 +2140,8 @@ function on(v, e) {
                     productId: 20,
                     dropdownClass: "dropdown-center"
                   }));
-                  var Xe = n(Je, 2);
-                  fe(Xe, () => ({
+                  var Je = n(De, 2);
+                  oe(Je, () => ({
                     price: 30,
                     droplets: 15e4,
                     bonus: 15e3,
@@ -2150,8 +2149,8 @@ function on(v, e) {
                     productId: 30,
                     dropdownClass: "dropdown-center"
                   }));
-                  var G = n(Xe, 2);
-                  fe(G, () => ({
+                  var fe = n(Je, 2);
+                  oe(fe, () => ({
                     price: 50,
                     droplets: 25e4,
                     bonus: 37500,
@@ -2159,8 +2158,8 @@ function on(v, e) {
                     productId: 40,
                     dropdownClass: "dropdown-center"
                   }));
-                  var Y = n(G, 2);
-                  fe(Y, () => ({
+                  var O = n(fe, 2);
+                  oe(O, () => ({
                     price: 75,
                     droplets: 375e3,
                     bonus: 75e3,
@@ -2168,136 +2167,136 @@ function on(v, e) {
                     productId: 50,
                     dropdownClass: "dropdown-center"
                   }));
-                  var Q = n(Y, 2);
-                  fe(Q, () => ({
+                  var he = n(O, 2);
+                  oe(he, () => ({
                     price: 100,
                     droplets: 5e5,
                     bonus: 125e3,
                     stripeLookupkey: "droplets_100",
                     productId: 60,
                     dropdownClass: "max-sm:dropdown-top dropdown-center"
-                  })), a(Ie);
-                  var Z = n(Ie, 2),
-                    ke = r(Z),
-                    Ce = n(ke),
-                    et = r(Ce, !0);
-                  a(Ce), a(Z);
-                  var Fe = n(Z, 2);
+                  })), a(qe);
+                  var N = n(qe, 2),
+                    re = r(N),
+                    pe = n(re),
+                    $e = r(pe, !0);
+                  a(pe), a(N);
+                  var Fe = n(N, 2);
                   {
-                    var qt = Ye => {
-                      var se = ys(),
-                        Qe = r(se),
-                        tt = r(Qe, !0);
-                      a(Qe), a(se), E(vt => w(tt, vt), [() => f.payment_history_view()]), qe("click", Qe, () => mt.pendingHistoryDialogOpen = !0), i(Ye, se)
+                    var St = Xe => {
+                      var se = bs(),
+                        Ye = r(se),
+                        et = r(Ye, !0);
+                      a(Ye), a(se), I(dt => x(et, dt), [() => f.payment_history_view()]), Le("click", Ye, () => _t.pendingHistoryDialogOpen = !0), i(Xe, se)
                     };
-                    P(Fe, Ye => {
-                      t(g) && Ye(qt)
+                    P(Fe, Xe => {
+                      t(h) && Xe(St)
                     })
                   }
-                  E((Ye, se, Qe, tt) => {
-                    w(Be, Ye), w(ke, `${se??""} `), He(Ce, "href", Qe), w(et, tt)
-                  }, [() => f.you_gain_droplet_per_pixel_painted(), () => f.refund_request_footnote(), () => Sa(), () => f.refund_policy()]), i(ue, re)
+                  I((Xe, se, Ye, et) => {
+                    x(Se, Xe), x(re, `${se??""} `), Oe(pe, "href", Ye), x($e, et)
+                  }, [() => f.you_gain_droplet_per_pixel_painted(), () => f.refund_request_footnote(), () => Ca(), () => f.refund_policy()]), i(ae, Ce)
                 },
-                he = ue => {
-                  var fe = Cs(),
-                    re = de(fe);
+                be = ae => {
+                  var oe = ks(),
+                    Ce = ve(oe);
                   {
-                    var be = G => {
-                      var Y = ws(),
-                        Q = r(Y),
-                        Z = r(Q),
-                        ke = r(Z),
-                        Ce = n(ke, 2),
-                        et = n(Ce);
-                      a(Z);
-                      var Fe = n(Z, 2),
-                        qt = r(Fe, !0);
-                      a(Fe), a(Q), a(Y), E((Ye, se) => {
-                        Se(Z, 1, `group flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all ${t(U)==="stripe"?"dark:bg-base-100 bg-white text-[#635bff] shadow-sm":"text-base-content/50 hover:text-base-content/80"}`), Se(ke, 0, `hidden w-auto transition-all sm:block sm:h-4 ${t(U)==="stripe"?"":"grayscale group-hover:grayscale-0"}`), Se(Ce, 0, `hidden w-auto transition-all sm:block sm:h-4 ${t(U)==="stripe"?"":"grayscale group-hover:grayscale-0"}`), w(et, ` ${Ye??""}`), Se(Fe, 1, `flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all ${t(U)==="other"?"dark:bg-base-100 bg-white text-[#30313d] shadow-sm":"text-base-content/50 hover:text-base-content/80"}`), w(qt, se)
-                      }, [() => f.card(), () => f.other_methods()]), qe("click", Z, () => c(U, "stripe")), qe("click", Fe, () => c(U, "other")), i(G, Y)
+                    var ue = fe => {
+                      var O = xs(),
+                        he = r(O),
+                        N = r(he),
+                        re = r(N),
+                        pe = n(re, 2),
+                        $e = n(pe);
+                      a(N);
+                      var Fe = n(N, 2),
+                        St = r(Fe, !0);
+                      a(Fe), a(he), a(O), I((Xe, se) => {
+                        Ae(N, 1, `group flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all ${t(U)==="stripe"?"dark:bg-base-100 bg-white text-[#635bff] shadow-sm":"text-base-content/50 hover:text-base-content/80"}`), Ae(re, 0, `hidden w-auto transition-all sm:block sm:h-4 ${t(U)==="stripe"?"":"grayscale group-hover:grayscale-0"}`), Ae(pe, 0, `hidden w-auto transition-all sm:block sm:h-4 ${t(U)==="stripe"?"":"grayscale group-hover:grayscale-0"}`), x($e, ` ${Xe??""}`), Ae(Fe, 1, `flex flex-1 items-center justify-center gap-2 rounded-xl py-3 text-sm font-bold transition-all ${t(U)==="other"?"dark:bg-base-100 bg-white text-[#30313d] shadow-sm":"text-base-content/50 hover:text-base-content/80"}`), x(St, se)
+                      }, [() => f.card(), () => f.other_methods()]), Le("click", N, () => c(U, "stripe")), Le("click", Fe, () => c(U, "other")), i(fe, O)
                     };
-                    P(re, G => {
-                      t(me) || G(be)
+                    P(Ce, fe => {
+                      t(ie) || fe(ue)
                     })
                   }
-                  var Be = n(re, 2),
-                    Ie = r(Be);
+                  var Se = n(Ce, 2),
+                    qe = r(Se);
                   {
-                    var Ee = G => {
-                      var Y = Zt(),
-                        Q = r(Y);
+                    var Ue = fe => {
+                      var O = Qt(),
+                        he = r(O);
                       {
-                        var Z = Ce => {
-                            hs(Ce, {
+                        var N = pe => {
+                            ps(pe, {
                               get clientSecret() {
                                 return t(B)
                               },
-                              onComplete: Le,
-                              onUnavailable: H
+                              onComplete: we,
+                              onUnavailable: E
                             })
                           },
-                          ke = Ce => {
-                            var et = ks();
-                            i(Ce, et)
+                          re = pe => {
+                            var $e = ws();
+                            i(pe, $e)
                           };
-                        P(Q, Ce => {
-                          t(B) ? Ce(Z) : Ce(ke, -1)
+                        P(he, pe => {
+                          t(B) ? pe(N) : pe(re, -1)
                         })
                       }
-                      a(Y), E(() => Se(Y, 1, Vt(t(U) !== "stripe" ? "h-0 overflow-hidden" : ""))), i(G, Y)
+                      a(O), I(() => Ae(O, 1, Kt(t(U) !== "stripe" ? "h-0 overflow-hidden" : ""))), i(fe, O)
                     };
-                    P(Ie, G => {
-                      t(me) || G(Ee)
+                    P(qe, fe => {
+                      t(ie) || fe(Ue)
                     })
                   }
-                  var Je = n(Ie, 2);
+                  var De = n(qe, 2);
                   {
-                    var Xe = G => {
-                      var Y = Zt(),
-                        Q = r(Y);
-                      es(Q, {
+                    var Je = fe => {
+                      var O = Qt(),
+                        he = r(O);
+                      $r(he, {
                         get lookupKey() {
-                          return t(b).stripeLookupkey
+                          return t(m).stripeLookupkey
                         },
-                        oncomplete: async Z => {
-                          if (!Z) {
-                            ge();
+                        oncomplete: async N => {
+                          if (!N) {
+                            ce();
                             return
                           }
                           try {
-                            let ke = t(b).droplets + t(b).bonus;
+                            let re = t(m).droplets + t(m).bonus;
                             const {
-                              credited: Ce,
-                              orderId: et,
+                              credited: pe,
+                              orderId: $e,
                               grant: Fe
-                            } = await Ke.refreshFastspringOrder(Z);
-                            if (!Ce) {
-                              ge();
+                            } = await Ge.refreshFastspringOrder(N);
+                            if (!pe) {
+                              ce();
                               return
-                            }(Fe == null ? void 0 : Fe.currency) === "droplets" && (ke = Fe.amount), await ye.refresh(), et && await Ke.markFastspringOrderAsRead(et), localStorage.removeItem("fscBackFromCheckout"), oe(), o(!1), c(m, ke, !0), c(k, !0)
+                            }(Fe == null ? void 0 : Fe.currency) === "droplets" && (re = Fe.amount), await ye.refresh(), $e && await Ge.markFastspringOrderAsRead($e), localStorage.removeItem("fscBackFromCheckout"), xe(), o(!1), c(_, re, !0), c(w, !0)
                           } catch {
-                            Bt.warning(f.payment_refresh_error())
+                            Dt.warning(f.payment_refresh_error())
                           }
                         }
-                      }), a(Y), E(() => Se(Y, 1, Vt(t(U) !== "other" ? "h-0 overflow-hidden" : ""))), i(G, Y)
+                      }), a(O), I(() => Ae(O, 1, Kt(t(U) !== "other" ? "h-0 overflow-hidden" : ""))), i(fe, O)
                     };
-                    P(Je, G => {
-                      t(V) && G(Xe)
+                    P(De, fe => {
+                      t(J) && fe(Je)
                     })
                   }
-                  a(Be), i(ue, fe)
+                  a(Se), i(ae, oe)
                 };
-              P(ne, ue => {
-                t(s) === "products" ? ue(_e) : t(s) === "checkout" && t(b) && ue(he, 1)
+              P(Z, ae => {
+                t(s) === "products" ? ae(de) : t(s) === "checkout" && t(m) && ae(be, 1)
               })
             }
-            i(J, te)
+            i(Q, Y)
           };
-          P(ee, J => {
-            ye.data && J(ce)
+          P(T, Q => {
+            ye.data && Q(ee)
           })
         }
-        i(Pe, R)
+        i(ge, We)
       },
       $$slots: {
         header: !0,
@@ -2305,16 +2304,26 @@ function on(v, e) {
       }
     })
   }
-  a(Ge);
-  var nt = n(Ge, 2);
-  Jr(nt, {
+  a(Ne);
+  var st = n(Ne, 2);
+  Nr(st, {
     get purchasedDroplets() {
-      return t(m)
+      return t(_)
     },
     get currency() {
       return t(L)
     },
     onbacktostore: () => o(!1),
+    get open() {
+      return t(w)
+    },
+    set open(d) {
+      c(w, d, !0)
+    }
+  });
+  var nt = n(st, 2);
+  Xr(nt, {
+    onbacktostore: () => o(!0),
     get open() {
       return t(k)
     },
@@ -2322,18 +2331,8 @@ function on(v, e) {
       c(k, d, !0)
     }
   });
-  var $e = n(nt, 2);
-  Yr($e, {
-    onbacktostore: () => o(!0),
-    get open() {
-      return t(C)
-    },
-    set open(d) {
-      c(C, d, !0)
-    }
-  });
-  var dt = n($e, 2);
-  Vr(dt, {
+  var Ze = n(nt, 2);
+  Kr(Ze, {
     get open() {
       return t(u)
     },
@@ -2341,92 +2340,92 @@ function on(v, e) {
       c(u, d, !0)
     }
   });
-  var q = n(dt, 2);
-  Gr(q, {
+  var ct = n(Ze, 2);
+  Wr(ct, {
     onViewHistory: () => {
-      c(O, !1), mt.pendingHistoryDialogOpen = !0
+      c(W, !1), _t.pendingHistoryDialogOpen = !0
     },
     get open() {
-      return t(O)
+      return t(W)
     },
     set open(d) {
-      c(O, d, !0)
+      c(W, d, !0)
+    }
+  });
+  var q = n(ct, 2);
+  wr(q, {
+    onRetry: () => {
+      c(y, !1), ke(t(S))
+    },
+    get open() {
+      return t(y)
+    },
+    set open(d) {
+      c(y, d, !0)
     }
   });
   var A = n(q, 2);
-  kr(A, {
-    onRetry: () => {
-      c(x, !1), We(t(S))
-    },
+  Or(A, {
     get open() {
-      return t(x)
+      return _t.pendingHistoryDialogOpen
     },
     set open(d) {
-      c(x, d, !0)
+      _t.pendingHistoryDialogOpen = d
     }
   });
-  var W = n(A, 2);
-  Wr(W, {
-    get open() {
-      return mt.pendingHistoryDialogOpen
-    },
-    set open(d) {
-      mt.pendingHistoryDialogOpen = d
-    }
-  });
-  var X = n(W, 2);
-  Kt(X, () => t(N), d => {
+  var V = n(A, 2);
+  Gt(V, () => t(X), d => {
     {
-      let y = D(() => {
-        var _;
-        return (_ = je.playBillingBlockedError) == null ? void 0 : _.printError
+      let b = D(() => {
+        var M;
+        return (M = ze.playBillingBlockedError) == null ? void 0 : M.printError
       });
-      Qr(d, {
+      Yr(d, {
         get message() {
-          return t(y)
+          return t(b)
         },
         get open() {
-          return t(N)
+          return t(X)
         },
-        set open(_) {
-          c(N, _, !0)
+        set open(M) {
+          c(X, M, !0)
         }
       })
     }
-  }), E(() => He(Ge, "data-theme", t(s) === "checkout" ? "custom-winter" : void 0)), i(v, st), Ue()
+  }), I(() => Oe(Ne, "data-theme", t(s) === "checkout" ? "custom-winter" : void 0)), i(v, me), je()
 }
-St(["click"]);
+Ct(["click"]);
 
-function ln([v, e], [o, s]) {
+function on([v, e], [o, s]) {
   v = Math.floor(v), e = Math.floor(e), o = Math.floor(o), s = Math.floor(s);
   const l = [],
-    m = Math.abs(o - v),
+    _ = Math.abs(o - v),
     L = Math.abs(s - e),
-    k = v < o ? 1 : -1,
-    C = e < s ? 1 : -1;
-  let u = m - L,
-    b = v,
+    w = v < o ? 1 : -1,
+    k = e < s ? 1 : -1;
+  let u = _ - L,
+    m = v,
     B = e;
-  for (; l.push([b, B]), !(b === o && B === s);) {
-    const M = 2 * u;
-    M > -L && (u -= L, b += k), M < m && (u += m, B += C)
+  for (; l.push([m, B]), !(m === o && B === s);) {
+    const z = 2 * u;
+    z > -L && (u -= L, m += w), z < _ && (u += _, B += k)
   }
   return l
 }
-var qs = p('<img class="pixelated bg-base-200" alt="User profile"/>'),
-  As = p('<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square max-w-none"/>'),
-  Ls = p('<div class="relative isolate w-max"><div class="bg-base-content/20 size-12 rounded-full"></div> <div class="level-fill center-absolute absolute size-12 rotate-[215deg] rounded-full svelte-12f880g"></div> <div class="avatar center-absolute absolute"><div class="size-10 rounded-full"><!></div></div> <!> <div> </div></div>');
+var Ss = p('<img class="pixelated bg-base-200" alt="User profile"/>'),
+  qs = p('<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square max-w-none"/>'),
+  As = p('<div class="relative isolate w-max"><div class="bg-base-content/20 size-12 rounded-full"></div> <div class="level-fill center-absolute absolute size-12 rotate-[215deg] rounded-full svelte-12f880g"></div> <div class="avatar center-absolute absolute"><div class="size-10 rounded-full"><!></div></div> <!> <div> </div></div>');
 
-function cn(v, e) {
+function ln(v, e) {
   const o = D(() => e.level % 1 * 360);
-  var s = Ls(),
+  var s = As(),
     l = n(r(s), 2),
-    m = n(l, 2),
-    L = r(m),
-    k = r(L);
+    _ = n(l, 2),
+    L = r(_),
+    w = r(L);
   {
-    var C = g => {
-        Ra(g, {
+    var k = h => {
+        za(h, {
           get userId() {
             return e.userId
           },
@@ -2435,35 +2434,35 @@ function cn(v, e) {
           }
         })
       },
-      u = g => {
-        var K = qs();
-        E(() => He(K, "src", e.pictureUrl)), i(g, K)
+      u = h => {
+        var K = Ss();
+        I(() => Oe(K, "src", e.pictureUrl)), i(h, K)
       };
-    P(k, g => {
-      e.pictureUrl ? g(u, -1) : g(C)
+    P(w, h => {
+      e.pictureUrl ? h(u, -1) : h(k)
     })
   }
-  a(L), a(m);
-  var b = n(m, 2);
+  a(L), a(_);
+  var m = n(_, 2);
   {
-    var B = g => {
-      var K = As();
-      at(K, "width: 67.87878787878788px;"), E(() => He(K, "src", e.frameUrl)), i(g, K)
+    var B = h => {
+      var K = qs();
+      tt(K, "width: 67.87878787878788px;"), I(() => Oe(K, "src", e.frameUrl)), i(h, K)
     };
-    P(b, g => {
-      e.frameUrl && g(B)
+    P(m, h => {
+      e.frameUrl && h(B)
     })
   }
-  var M = n(b, 2);
-  let j;
-  var F = r(M, !0);
-  a(M), a(s), E(g => {
-    at(l, `--angle: ${t(o)??""}deg; --color: var(--color-secondary)`), j = Se(M, 1, "text-primary-content bg-secondary absolute bottom-0 z-20 flex items-center justify-center rounded-full px-[5px] py-0 text-xs font-bold", null, j, {
+  var z = n(m, 2);
+  let R;
+  var H = r(z, !0);
+  a(z), a(s), I(h => {
+    tt(l, `--angle: ${t(o)??""}deg; --color: var(--color-secondary)`), R = Ae(z, 1, "text-primary-content bg-secondary absolute bottom-0 z-20 flex items-center justify-center rounded-full px-[5px] py-0 text-xs font-bold", null, R, {
       "left-0": e.level > 99,
       "-left-1": e.level > 99
-    }), w(F, g)
+    }), x(H, h)
   }, [() => Math.floor(e.level)]), i(v, s)
 }
 export {
-  Oa as D, es as F, cn as P, hs as S, on as a, Jr as b, nn as c, Cr as d, Vr as e, Gr as f, kr as g, Qr as h, ln as r
+  Fa as D, $r as F, ln as P, ps as S, nn as a, Nr as b, sn as c, kr as d, Kr as e, Wr as f, wr as g, Yr as h, on as r
 };

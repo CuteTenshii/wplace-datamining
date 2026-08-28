@@ -1760,7 +1760,7 @@ f.setOptions;
 f.use;
 f.walkTokens;
 f.parseInline;
-var qn = f;
+var In = f;
 x.parse;
 y.lex;
 const vt = `Welcome to WPlace, a platform to share and explore pixel art creations!
@@ -2310,7 +2310,17 @@ Alliances have been completely rebuilt into a full community system with public 
   }, Symbol.toStringTag, {
     value: "Module"
   })),
-  xn = Object.assign({
+  xn = `### Fixes
+
+- Stripe card checkout is available again and can be retried after temporary loading problems.
+`,
+  vn = Object.freeze(Object.defineProperty({
+    __proto__: null,
+    default: xn
+  }, Symbol.toStringTag, {
+    value: "Module"
+  })),
+  Sn = Object.assign({
     "./markdown/1.0.0 - Welcome to WPlace!.md": St,
     "./markdown/1.1.0 - ✨ More Like You Update.md": Pt,
     "./markdown/1.1.1 - 🛠️ Quality & Cosmetics Improvements.md": Tt,
@@ -2336,9 +2346,10 @@ Alliances have been completely rebuilt into a full community system with public 
     "./markdown/1.5.0 - 💎 Premium Cosmetics.md": gn,
     "./markdown/1.5.1 - 💎 More Prism Per Purchase.md": bn,
     "./markdown/1.5.2 - 🛠️ Store Purchase Reliability.md": kn,
-    "./markdown/1.5.3 - 🛠️ Account and Payment Reliability.md": yn
+    "./markdown/1.5.3 - 🛠️ Account and Payment Reliability.md": yn,
+    "./markdown/1.5.4 - 💳 Checkout Payment Options.md": vn
   }),
-  Mn = Object.entries(xn).map(([n, e]) => {
+  Fn = Object.entries(Sn).map(([n, e]) => {
     var i, o;
     const t = (i = n.split("/").at(-1)) == null ? void 0 : i.replace(".md", ""),
       a = (o = t == null ? void 0 : t.split("-")[0]) == null ? void 0 : o.trim(),
@@ -2351,13 +2362,13 @@ Alliances have been completely rebuilt into a full community system with public 
   }).sort((n, e) => n.version.localeCompare(e.version, void 0, {
     numeric: !0
   }));
-var vn = ge('<span class="text-primary inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-wide"><span class="relative flex size-1.5"><span class="bg-primary/60 absolute inline-flex size-full animate-ping rounded-full"></span> <span class="bg-primary relative inline-flex size-1.5 rounded-full"></span></span> </span>'),
-  Sn = ge('<article><div class="flex items-center gap-3"><span class="text-primary text-lg font-bold tracking-wide"> </span> <!></div> <h2 class="mt-1 text-[0.9375rem] leading-snug font-bold tracking-tight"> </h2> <div class="patch-content mt-4 svelte-1pfqn89"></div></article>');
+var An = ge('<span class="text-primary inline-flex items-center gap-1.5 text-[11px] font-semibold tracking-wide"><span class="relative flex size-1.5"><span class="bg-primary/60 absolute inline-flex size-full animate-ping rounded-full"></span> <span class="bg-primary relative inline-flex size-1.5 rounded-full"></span></span> </span>'),
+  Pn = ge('<article><div class="flex items-center gap-3"><span class="text-primary text-lg font-bold tracking-wide"> </span> <!></div> <h2 class="mt-1 text-[0.9375rem] leading-snug font-bold tracking-tight"> </h2> <div class="patch-content mt-4 svelte-1pfqn89"></div></article>');
 
-function In(n, e) {
+function jn(n, e) {
   Ce(e, !0);
   let t = Me(e, "latest", 3, !1);
-  var a = Sn(),
+  var a = Pn(),
     r = $(a),
     i = $(r),
     o = $(i);
@@ -2365,7 +2376,7 @@ function In(n, e) {
   var s = j(i, 2);
   {
     var p = u => {
-      var c = vn(),
+      var c = An(),
         _ = j($(c));
       T(c), oe(m => U(_, ` ${m??""}`), [() => Ie.latest()]), le(u, c)
     };
@@ -2383,5 +2394,5 @@ function In(n, e) {
   }), le(n, a), $e()
 }
 export {
-  xt as D, In as P, qn as W, Mn as p, H as y
+  xt as D, jn as P, In as W, Fn as p, H as y
 };

@@ -1,6 +1,6 @@
 import {
   p
-} from "./BvZMA6BE.js";
+} from "./ChznaGfn.js";
 const o = p;
 export {
   o as p
