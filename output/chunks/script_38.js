@@ -1,27 +1,34 @@
-import "./Bzak7iHL.js";
 import {
-  a as e,
-  w as v
-} from "./D5GL_E7i.js";
-import {
-  e as a
-} from "./Ce1mtF2R.js";
-import {
-  r as p
-} from "./LT-XNHCk.js";
-var m = new Set(["$$slots", "$$events", "$$legacy"]),
-  f = v('<svg><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"></path></svg>');
+  Et as e,
+  Q as t,
+  Y as n,
+  a as r,
+  nn as i,
+  o as a,
+  vt as o,
+  wt as s,
+  x as c,
+  y as l
+} from "./D6uuD926.js";
+import "./B8UK1oE5.js";
+var u = new Set([`$$slots`, `$$events`, `$$legacy`, `inverted`]),
+  d = t(`<svg><path d="M16 2.25C14.57 4.75 7.25 12.85 7.25 18.55C7.25 23.52 11.17 27.5 16 27.5s8.75-3.98 8.75-8.95C24.75 12.85 17.43 4.75 16 2.25Z" fill="currentColor" stroke="black" stroke-opacity="0.2" stroke-width="0.8" stroke-linejoin="round"></path><path d="M24.62 17.3c.09.44.13.86.13 1.25 0 4.97-3.92 8.95-8.75 8.95-3.65 0-6.8-2.27-8.12-5.49A8.75 8.75 0 0 0 24.62 17.3Z" fill="black" opacity="0.12"></path><path d="M11.15 17.1c.48-2.18 1.82-4.54 3.57-6.86" stroke-width="2.1" stroke-linecap="round"></path></svg>`);
 
-function h(t, o) {
-  let s = p(o, m);
-  var r = f();
-  a(r, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...s
-  })), e(t, r)
+function f(t, f) {
+  let p = r(f, `inverted`, 3, !1),
+    m = a(f, u);
+  var h = d();
+  l(h, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 0 32 32`,
+    fill: `none`,
+    ...m
+  }));
+  var g = e(s(h), 2);
+  i(h), o(() => {
+    c(g, `stroke`, p() ? `black` : `white`), c(g, `stroke-opacity`, p() ? `0.28` : `0.58`)
+  }), n(t, h)
 }
 export {
-  h as A
+  f as t
 };

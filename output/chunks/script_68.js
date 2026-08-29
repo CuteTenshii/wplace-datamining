@@ -1,157 +1,36 @@
-var u = Object.defineProperty;
-var L = (n, t, e) => t in n ? u(n, t, {
-  enumerable: !0,
-  configurable: !0,
-  writable: !0,
-  value: e
-}) : n[t] = e;
-var x = (n, t, e) => L(n, typeof t != "symbol" ? t + "" : t, e);
 import {
-  S as c
-} from "./CT6bOf-I.js";
-const a = 2 * Math.PI * 6378137 / 2,
-  m = 85.0511287798066;
+  Q as e,
+  Y as t,
+  o as n,
+  y as r
+} from "./D6uuD926.js";
+import "./B8UK1oE5.js";
+var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  a = e(`<svg><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"></path></svg>`);
 
-function M(n) {
-  return ((n + 180) % 360 + 360) % 360 - 180
+function o(e, o) {
+  let s = n(o, i);
+  var c = a();
+  r(c, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...s
+  })), t(e, c)
 }
+var s = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  c = e(`<svg><path d="m336-280 144-144 144 144 56-56-144-144 144-144-56-56-144 144-144-144-56 56 144 144-144 144 56 56ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"></path></svg>`);
 
-function P(n, t) {
-  return [Math.max(-m, Math.min(m, n)), M(t)]
-}
-class f {
-  constructor(t = 256) {
-    x(this, "initialResolution");
-    this.tileSize = t, this.initialResolution = 2 * a / this.tileSize
-  }
-  latLonToMeters(t, e) {
-    const o = e / 180 * a,
-      i = Math.log(Math.tan((90 + t) * Math.PI / 360)) / (Math.PI / 180) * a / 180;
-    return [o, i]
-  }
-  metersToLatLon(t, e) {
-    const o = t / a * 180;
-    let i = e / a * 180;
-    return i = 180 / Math.PI * (2 * Math.atan(Math.exp(i * Math.PI / 180)) - Math.PI / 2), [i, o]
-  }
-  pixelsToMeters(t, e, o) {
-    const i = this.resolution(o),
-      s = t * i - a,
-      r = a - e * i;
-    return [s, r]
-  }
-  pixelsToLatLon(t, e, o) {
-    const [i, s] = this.pixelsToMeters(t, e, o);
-    return this.metersToLatLon(i, s)
-  }
-  latLonToPixels(t, e, o) {
-    const [i, s] = this.latLonToMeters(t, e);
-    return this.metersToPixels(i, s, o)
-  }
-  latLonToPixelsFloor(t, e, o) {
-    const [i, s] = this.latLonToPixels(t, e, o);
-    return [Math.floor(i), Math.floor(s)]
-  }
-  metersToPixels(t, e, o) {
-    const i = this.resolution(o),
-      s = (t + a) / i,
-      r = (a - e) / i;
-    return [s, r]
-  }
-  latLonToTile(t, e, o) {
-    const [i, s] = this.latLonToMeters(t, e);
-    return this.metersToTile(i, s, o)
-  }
-  metersToTile(t, e, o) {
-    const [i, s] = this.metersToPixels(t, e, o);
-    return this.pixelsToTile(i, s)
-  }
-  pixelsToTile(t, e) {
-    const o = Math.ceil(t / this.tileSize) - 1,
-      i = Math.ceil(e / this.tileSize) - 1;
-    return [o, i]
-  }
-  pixelsToTileLocal(t, e) {
-    return {
-      tile: this.pixelsToTile(t, e),
-      pixel: [Math.floor(t) % this.tileSize, Math.floor(e) % this.tileSize]
-    }
-  }
-  tileBounds(t, e, o) {
-    const [i, s] = this.pixelsToMeters(t * this.tileSize, e * this.tileSize, o), [r, l] = this.pixelsToMeters((t + 1) * this.tileSize, (e + 1) * this.tileSize, o);
-    return {
-      min: [i, s],
-      max: [r, l]
-    }
-  }
-  tileBoundsLatLon(t, e, o) {
-    const i = this.tileBounds(t, e, o);
-    return {
-      min: this.metersToLatLon(i.min[0], i.min[1]),
-      max: this.metersToLatLon(i.max[0], i.max[1])
-    }
-  }
-  resolution(t) {
-    return this.initialResolution / 2 ** t
-  }
-  latLonToTileAndPixel(t, e, o) {
-    const [i, s] = this.latLonToMeters(t, e), [r, l] = this.metersToTile(i, s, o), [h, T] = this.metersToPixels(i, s, o);
-    return {
-      tile: [r, l],
-      pixel: [Math.floor(h) % this.tileSize, Math.floor(T) % this.tileSize]
-    }
-  }
-  pixelBounds(t, e, o) {
-    return {
-      min: this.pixelsToMeters(t, e, o),
-      max: this.pixelsToMeters(t + 1, e + 1, o)
-    }
-  }
-  pixelToBoundsLatLon(t, e, o) {
-    const i = this.pixelBounds(t, e, o);
-    return {
-      min: this.metersToLatLon(i.min[0], i.min[1]),
-      max: this.metersToLatLon(i.max[0], i.max[1])
-    }
-  }
-  latLonToTileBoundsLatLon(t, e, o) {
-    const [i, s] = this.latLonToMeters(t, e), [r, l] = this.metersToTile(i, s, o);
-    return this.tileBoundsLatLon(r, l, o)
-  }
-  latLonToPixelBoundsLatLon(t, e, o) {
-    const [i, s] = this.latLonToMeters(t, e), [r, l] = this.metersToPixels(i, s, o);
-    return this.pixelToBoundsLatLon(Math.floor(r), Math.floor(l), o)
-  }
-  latLonToRegionAndPixel(t, e, o, i = c.regionSize) {
-    const [s, r] = this.latLonToPixelsFloor(t, e, o), l = this.tileSize * i;
-    return {
-      region: [Math.floor(s / l), Math.floor(r / l)],
-      pixel: [s % l, r % l]
-    }
-  }
-}
-
-function S(n, t = !0) {
-  const {
-    min: e,
-    max: o
-  } = n;
-  return t ? [
-    [e[1], o[0]],
-    [o[1], o[0]],
-    [o[1], e[0]],
-    [e[1], e[0]]
-  ] : [
-    [e[0], o[1]],
-    [o[0], o[1]],
-    [o[0], e[1]],
-    [e[0], e[1]]
-  ]
-}
-
-function y(n) {
-  return [(n.min[0] + n.max[0]) / 2, (n.min[1] + n.max[1]) / 2]
+function l(e, i) {
+  let a = n(i, s);
+  var o = c();
+  r(o, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...a
+  })), t(e, o)
 }
 export {
-  f as G, S as b, y as g, P as n, M as w
+  o as n, l as t
 };

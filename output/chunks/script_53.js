@@ -1,112 +1,60 @@
-import "./Bzak7iHL.js";
 import {
-  p as E,
-  i as r,
-  h as c,
-  y as F,
-  d as l,
-  s as o,
-  A as G,
-  r as d,
-  t as _,
-  a as b,
-  b as H,
-  e as J,
-  u as K,
-  c as w
-} from "./D5GL_E7i.js";
+  Et as e,
+  G as t,
+  Jt as n,
+  O as r,
+  Y as i,
+  Yt as a,
+  Z as o,
+  a as s,
+  nn as c,
+  q as l,
+  vt as u,
+  wt as d
+} from "./D6uuD926.js";
+import "./B8UK1oE5.js";
 import {
-  s as h
-} from "./BATewRf7.js";
+  t as f
+} from "./mhrqN-wc.js";
 import {
-  i as S
-} from "./unjGrhDm.js";
-import {
-  e as M,
-  C as N
-} from "./Ce1mtF2R.js";
-import {
-  b as O
-} from "./siaHaSCw.js";
-import {
-  b as P
-} from "./59dp7Pbq.js";
-import {
-  p as f,
-  r as Q
-} from "./LT-XNHCk.js";
-import {
-  m as g
-} from "./XL5Wf48w.js";
-var R = new Set(["$$slots", "$$events", "$$legacy", "label", "placeholder", "value", "max", "min", "validate", "disabled", "ref"]),
-  U = w('<legend class="fieldset-legend"> </legend>'),
-  V = w('<span class="text-base-content/80"> </span>'),
-  W = w('<fieldset class="fieldset"><!> <textarea></textarea> <div class="flex items-center justify-between text-xs"><span class="text-error"> </span> <!></div></fieldset>');
+  n as p,
+  t as m
+} from "./fvWHtLxi.js";
+var h = o(`<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>`),
+  g = o(`<span><!></span>`);
 
-function ie(C, e) {
-  E(e, !0);
-  let n = f(e, "value", 15),
-    j = f(e, "validate", 15),
-    k = f(e, "disabled", 3, !1),
-    y = f(e, "ref", 15),
-    q = Q(e, R),
-    i = J("");
-  const m = K(() => {
-    var a;
-    return ((a = n()) == null ? void 0 : a.length) ?? 0
-  });
-  j(I);
-
-  function I() {
-    return e.min !== void 0 && r(m) < e.min ? (c(i, e.min === 1 ? g.required() : g.min_characters({
-      min: e.min
-    }), !0), !1) : e.max !== void 0 && r(m) > e.max ? (c(i, g.max_characters({
-      max: e.max
-    }), !0), !1) : (c(i, ""), !0)
-  }
-  F(() => {
-    var a;
-    e.max !== void 0 && r(m) > e.max && n((a = n()) == null ? void 0 : a.substring(0, e.max))
-  });
-  var v = W(),
-    A = l(v);
-  {
-    var T = a => {
-      var t = U(),
-        x = l(t, !0);
-      d(t), _(() => h(x, e.label)), b(a, t)
+function _(o, _) {
+  a(_, !0);
+  let v = s(_, `big`, 3, !1);
+  var y = g();
+  let b;
+  var x = d(y),
+    S = t => {
+      var n = h(),
+        r = d(n);
+      f(r, {
+        size: `none`
+      });
+      var a = e(r, 1, !0);
+      c(n), u(() => l(a, m[_.role])), i(t, n)
+    },
+    C = t => {
+      var n = h(),
+        r = d(n);
+      f(r, {
+        size: `small`
+      });
+      var a = e(r, 1, !0);
+      c(n), u(() => l(a, p[_.role])), i(t, n)
     };
-    S(A, a => {
-      e.label && a(T)
-    })
-  }
-  var s = o(A, 2);
-  G(s), M(s, () => ({
-    ...q,
-    class: `textarea w-full ${e.class??""}`,
-    placeholder: e.placeholder,
-    disabled: k(),
-    [N]: {
-      "textarea-error": !!r(i)
-    }
-  }), void 0, void 0, void 0, "svelte-16tom9o"), P(s, a => y(a), () => y());
-  var L = o(s, 2),
-    u = l(L),
-    z = l(u, !0);
-  d(u);
-  var B = o(u, 2);
-  {
-    var D = a => {
-      var t = V(),
-        x = l(t, !0);
-      d(t), _(() => h(x, e.max - r(m))), b(a, t)
-    };
-    S(B, a => {
-      e.max !== void 0 && a(D)
-    })
-  }
-  d(L), d(v), _(() => h(z, r(i))), O(s, n), b(C, v), H()
+  t(x, e => {
+    v() ? e(S) : e(C, -1)
+  }), c(y), u(() => b = r(y, 1, `badge badge-sm ml-0.5 inline-flex items-center justify-center pt-0.5 leading-none font-semibold whitespace-nowrap shadow`, null, b, {
+    "badge-info": _.role === `admin`,
+    "badge-secondary": _.role === `sac` || _.role === `game_master` || _.role === `game_master_leader` || _.role === `dev`,
+    "badge-warning": _.role === `discord_mod` || _.role === `discord_leader`
+  })), i(o, y), n()
 }
 export {
-  ie as L
+  _ as t
 };

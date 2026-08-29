@@ -1,67 +1,23 @@
-import "./Bzak7iHL.js";
 import {
-  p as x,
-  t as m,
-  a as p,
-  b as g,
-  c as f,
-  d as _,
-  s as h,
-  r as b
-} from "./D5GL_E7i.js";
-import {
-  i as w
-} from "./unjGrhDm.js";
-import {
-  e as z,
-  a as c,
-  s as k
-} from "./Ce1mtF2R.js";
-import {
-  p as L,
-  r as T
-} from "./LT-XNHCk.js";
-import {
-  l as y
-} from "./B_Oz03f8.js";
-var S = new Set(["$$slots", "$$events", "$$legacy", "hasText", "size"]),
-  U = f("<span>wplace</span>"),
-  W = f('<div><img alt="Wplace logo"/> <!></div>');
+  Q as e,
+  Y as t,
+  o as n,
+  y as r
+} from "./D6uuD926.js";
+import "./B8UK1oE5.js";
+var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  a = e(`<svg><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"></path></svg>`);
 
-function E(n, t) {
-  x(t, !0);
-  let e = L(t, "size", 3, "default"),
-    d = T(t, S);
-  var a = W();
-  z(a, () => ({
-    ...d,
-    class: `flex items-center gap-1.5 ${t.class??""}`
-  }));
-  var s = _(a);
-  let r;
-  var u = h(s, 2);
-  {
-    var v = l => {
-      var o = U();
-      let i;
-      m(() => i = c(o, 1, "text-base-content font-pixel", null, i, {
-        "text-4xl": e() === "default",
-        "text-5xl": e() === "lg" || e() === "medium"
-      })), p(l, o)
-    };
-    w(u, l => {
-      t.hasText && l(v)
-    })
-  }
-  b(a), m(() => {
-    r = c(s, 1, "pixelated h-auto shrink-0", null, r, {
-      "w-4": e() === "small",
-      "w-10": e() === "default",
-      "w-16": e() === "medium",
-      "w-20": e() === "lg"
-    }), k(s, "src", y)
-  }), p(n, a), g()
+function o(e, o) {
+  let s = n(o, i);
+  var c = a();
+  r(c, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...s
+  })), t(e, c)
 }
 export {
-  E as L
+  o as t
 };

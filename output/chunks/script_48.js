@@ -1,132 +1,99 @@
-var D = Object.defineProperty;
-var E = t => {
-  throw TypeError(t)
-};
-var F = (t, e, s) => e in t ? D(t, e, {
-  enumerable: !0,
-  configurable: !0,
-  writable: !0,
-  value: s
-}) : t[e] = s;
-var S = (t, e, s) => F(t, typeof e != "symbol" ? e + "" : e, s),
-  _ = (t, e, s) => e.has(t) || E("Cannot " + s);
-var A = (t, e, s) => (_(t, e, "read from private field"), s ? s.call(t) : e.get(t)),
-  m = (t, e, s) => e.has(t) ? E("Cannot add the same private member more than once") : e instanceof WeakSet ? e.add(t) : e.set(t, s),
-  I = (t, e, s, a) => (_(t, e, "write to private field"), a ? a.call(t, s) : e.set(t, s), s),
-  w = (t, e, s) => (_(t, e, "access private method"), s);
-import "./Bzak7iHL.js";
 import {
-  p as R,
-  i as G,
-  r as C,
-  t as f,
-  a as g,
-  b as q,
-  u as j,
-  c as b,
-  d as L,
-  s as J
-} from "./D5GL_E7i.js";
+  B as e,
+  G as t,
+  Jt as n,
+  O as r,
+  Pt as i,
+  Tt as a,
+  X as o,
+  Y as s,
+  Yt as c,
+  Z as l,
+  a as u,
+  ct as d,
+  k as f,
+  nn as p,
+  nt as m,
+  on as h,
+  tt as g,
+  vt as _,
+  wt as v,
+  x as y
+} from "./D6uuD926.js";
+import "./B8UK1oE5.js";
 import {
-  i as M
-} from "./unjGrhDm.js";
+  n as b
+} from "./BHDig7Ul.js";
 import {
-  a as T,
-  b as P,
-  c as z,
-  s as H
-} from "./Ce1mtF2R.js";
-import {
-  h as Q
-} from "./B4t60IST.js";
-import {
-  t as N
-} from "./Ct12j0u0.js";
-const k = 9,
-  V = 95,
-  W = 45,
-  p = 5;
+  t as x
+} from "./KnqTMKlG.js";
 
-function X(t) {
-  return t.split("").reduce((e, s) => (e ^ s.charCodeAt(0)) * -p, p) >>> 2
+function S(e) {
+  return `/dashboard/alliances?id=${encodeURIComponent(String(e))}`
 }
 
-function y(t = "", e = V, s = W, a = X) {
-  const l = a(t),
-    d = l % k * (360 / k);
-  return [...Array(t ? 25 : 0)].reduce((v, x, o) => l & 1 << o % 15 ? v + `<rect x="${o>14?7-~~(o/5):~~(o/5)}" y="${o%5}" width="1" height="1"/>` : v, `<svg viewBox="-1.5 -1.5 8 8" xmlns="http://www.w3.org/2000/svg" fill="hsl(${d} ${e}% ${s}%)" shape-rendering="crispEdges">`) + "</svg>"
+function C(e) {
+  typeof window > `u` || window.open(S(e), `_blank`, `noopener,noreferrer`)
 }
-var B, r, h, c, u, U, O;
-(B = globalThis.customElements) != null && B.get("minidenticon-svg") || (O = globalThis.customElements) == null || O.define("minidenticon-svg", (r = class extends HTMLElement {
-  constructor() {
-    super(...arguments);
-    m(this, u);
-    m(this, c, !1)
-  }
-  connectedCallback() {
-    w(this, u, U).call(this), I(this, c, !0)
-  }
-  attributeChangedCallback() {
-    A(this, c) && w(this, u, U).call(this)
-  }
-}, h = new WeakMap, c = new WeakMap, u = new WeakSet, U = function() {
-  var l;
-  const s = r.observedAttributes.map(d => this.getAttribute(d) || void 0),
-    a = s.join(",");
-  this.innerHTML = (l = A(r, h))[a] ?? (l[a] = y(...s))
-}, S(r, "observedAttributes", ["username", "saturation", "lightness"]), m(r, h, {}), r));
-var Y = b("<div></div>");
+var w = l(`<span role="link" tabindex="0"><!></span>`),
+  T = l(`<a target="_blank" rel="noopener noreferrer"><!></a>`),
+  E = l(`<span><!></span>`);
 
-function Z(t, e) {
-  R(e, !0);
-  const s = j(() => e.seed && e.seed.length > 0 ? e.seed : e.userId.toString());
-  var a = Y();
-  Q(a, () => y(G(s), 95, 45), !0), C(a), f(() => T(a, 1, `bg-base-200 minidenticon ${e.class??""??""}`)), g(t, a), q()
-}
-var K = b('<img class="pixelated bg-base-200 size-full" alt="User profile"/>'),
-  $ = b('<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square w-full"/>'),
-  ee = b("<div><div><!></div> <!></div>");
+function D(l, g) {
+  c(g, !0);
+  let D = u(g, `mode`, 3, `anchor`),
+    O = u(g, `class`, 3, ``),
+    k = u(g, `linkClass`, 19, O),
+    A = u(g, `textClass`, 19, O),
+    j = i(() => g.allianceId != null && g.allianceId > 0 && b.hasAnyPermission(x.dashboard.alliances)),
+    M = i(() => g.allianceId == null ? `` : S(g.allianceId));
 
-function oe(t, e) {
-  R(e, !0);
-  var s = ee(),
-    a = L(s);
-  P(a, "width: 67.76785714285714%");
-  var l = L(a);
-  {
-    var d = i => {
-        Z(i, {
-          get userId() {
-            return e.userId
-          },
-          get seed() {
-            return e.avatarSeed
-          }
-        })
-      },
-      v = i => {
-        var n = K();
-        f(() => H(n, "src", e.pictureUrl)), g(i, n)
-      };
-    M(l, i => {
-      e.pictureUrl ? i(v, -1) : i(d)
-    })
+  function N(e) {
+    e.stopPropagation()
   }
-  C(a);
-  var x = J(a, 2);
-  {
-    var o = i => {
-      var n = $();
-      P(n, "scale: 114.99999999999999%;"), f(() => H(n, "src", e.frameUrl)), g(i, n)
+
+  function P(e) {
+    g.allianceId == null || g.allianceId <= 0 || (e.preventDefault(), e.stopPropagation(), C(g.allianceId))
+  }
+
+  function F(e) {
+    (e.key === `Enter` || e.key === ` `) && P(e)
+  }
+  var I = o(),
+    L = a(I),
+    R = n => {
+      var i = o(),
+        c = a(i),
+        l = t => {
+          var n = w(),
+            i = v(n);
+          e(i, () => g.children ?? h), p(n), _(() => {
+            r(n, 1, `cursor-pointer hover:underline ${k()}`), y(n, `title`, g.title)
+          }), m(`pointerdown`, n, N), m(`click`, n, P), m(`keydown`, n, F), s(t, n)
+        },
+        u = t => {
+          var n = T(),
+            i = v(n);
+          e(i, () => g.children ?? h), p(n), _(() => {
+            r(n, 1, `cursor-pointer hover:underline ${k()}`), y(n, `href`, d(M)), y(n, `title`, g.title)
+          }), m(`pointerdown`, n, N), m(`click`, n, N), s(t, n)
+        };
+      t(c, e => {
+        D() === `inline` ? e(l) : e(u, -1)
+      }), s(n, i)
+    },
+    z = t => {
+      var n = E(),
+        i = v(n);
+      e(i, () => g.children ?? h), p(n), _(() => {
+        r(n, 1, f(A())), y(n, `title`, g.title)
+      }), s(t, n)
     };
-    M(x, i => {
-      e.frameUrl && i(o)
-    })
-  }
-  C(s), f((i, n) => {
-    T(s, 1, i), T(a, 1, n)
-  }, [() => z(N("relative inline-grid size-10 place-items-center", e.class)), () => z(N("avatar border-base-300 aspect-square overflow-hidden rounded-full border", e.avatarClass))]), g(t, s), q()
+  t(L, e => {
+    d(j) ? e(R) : e(z, -1)
+  }), s(l, I), n()
 }
+g([`pointerdown`, `click`, `keydown`]);
 export {
-  oe as P, Z as a, y as m
+  D as t
 };

@@ -1,113 +1,43 @@
-import "./Bzak7iHL.js";
 import {
-  k as j,
-  p as q,
-  l as y,
-  f as S,
-  i as x,
-  a as l,
-  b as B,
-  u as C,
-  d as u,
-  z as h,
-  r as v,
-  t as _,
-  c as g,
-  m as o
-} from "./D5GL_E7i.js";
-import {
-  s as k
-} from "./BMTVjKyu.js";
-import {
-  i as A
-} from "./unjGrhDm.js";
-import {
-  a as p,
-  c as F,
-  s
-} from "./Ce1mtF2R.js";
-import {
-  p as d
-} from "./LT-XNHCk.js";
-import {
-  P as G
-} from "./pKce-aOf.js";
-import {
-  u as H
-} from "./CT6bOf-I.js";
+  G as e,
+  Q as t,
+  Tt as n,
+  X as r,
+  Y as i,
+  o as a,
+  y as o
+} from "./D6uuD926.js";
+import "./B8UK1oE5.js";
+var s = new Set([`$$slots`, `$$events`, `$$legacy`, `filled`]),
+  c = t(`<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Z"></path></svg>`),
+  l = t(`<svg><path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360Zm0-80h360v-480H360v480ZM200-80q-33 0-56.5-23.5T120-160v-560h80v560h440v80H200Zm160-240v-480 480Z"></path></svg>`);
 
-function D(r) {
-  return `/dashboard/alliances?id=${encodeURIComponent(String(r))}`
+function u(t, u) {
+  let d = a(u, s);
+  var f = r(),
+    p = n(f),
+    m = e => {
+      var t = c();
+      o(t, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 -960 960 960`,
+        fill: `currentColor`,
+        ...d
+      })), i(e, t)
+    },
+    h = e => {
+      var t = l();
+      o(t, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 -960 960 960`,
+        fill: `currentColor`,
+        ...d
+      })), i(e, t)
+    };
+  e(p, e => {
+    u.filled ? e(m) : e(h, -1)
+  }), i(t, f)
 }
-
-function J(r) {
-  typeof window > "u" || window.open(D(r), "_blank", "noopener,noreferrer")
-}
-var Q = g('<span role="link" tabindex="0"><!></span>'),
-  T = g('<a target="_blank" rel="noopener noreferrer"><!></a>'),
-  W = g("<span><!></span>");
-
-function ia(r, a) {
-  q(a, !0);
-  let E = d(a, "mode", 3, "anchor"),
-    I = d(a, "class", 3, ""),
-    w = d(a, "linkClass", 19, I),
-    L = d(a, "textClass", 19, I);
-  const N = C(() => a.allianceId != null && a.allianceId > 0 && H.hasAnyPermission(G.dashboard.alliances)),
-    R = C(() => a.allianceId == null ? "" : D(a.allianceId));
-
-  function c(n) {
-    n.stopPropagation()
-  }
-
-  function b(n) {
-    a.allianceId == null || a.allianceId <= 0 || (n.preventDefault(), n.stopPropagation(), J(a.allianceId))
-  }
-
-  function z(n) {
-    n.key !== "Enter" && n.key !== " " || b(n)
-  }
-  var P = y(),
-    K = S(P);
-  {
-    var M = n => {
-        var t = y(),
-          f = S(t);
-        {
-          var U = i => {
-              var e = Q(),
-                m = u(e);
-              k(m, () => a.children ?? h), v(e), _(() => {
-                p(e, 1, `cursor-pointer hover:underline ${w()}`), s(e, "title", a.title)
-              }), o("pointerdown", e, c), o("click", e, b), o("keydown", e, z), l(i, e)
-            },
-            V = i => {
-              var e = T(),
-                m = u(e);
-              k(m, () => a.children ?? h), v(e), _(() => {
-                p(e, 1, `cursor-pointer hover:underline ${w()}`), s(e, "href", x(R)), s(e, "title", a.title)
-              }), o("pointerdown", e, c), o("click", e, c), l(i, e)
-            };
-          A(f, i => {
-            E() === "inline" ? i(U) : i(V, -1)
-          })
-        }
-        l(n, t)
-      },
-      O = n => {
-        var t = W(),
-          f = u(t);
-        k(f, () => a.children ?? h), v(t), _(() => {
-          p(t, 1, F(L())), s(t, "title", a.title)
-        }), l(n, t)
-      };
-    A(K, n => {
-      x(N) ? n(M) : n(O, -1)
-    })
-  }
-  l(r, P), B()
-}
-j(["pointerdown", "click", "keydown"]);
 export {
-  ia as S
+  u as t
 };

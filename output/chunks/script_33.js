@@ -1,40 +1,23 @@
 import {
-  a3 as o,
-  M as _,
-  a4 as g,
-  ax as p,
-  N as a,
-  ad as v,
-  aw as i,
-  T as l,
-  S as r,
-  U as m,
-  ab as E
-} from "./D5GL_E7i.js";
+  Q as e,
+  Y as t,
+  o as n,
+  y as r
+} from "./D6uuD926.js";
+import "./B8UK1oE5.js";
+var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  a = e(`<svg><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path></svg>`);
 
-function x(d, n) {
-  let t = null,
-    f = a;
-  var s;
-  if (a) {
-    t = m;
-    for (var e = E(document.head); e !== null && (e.nodeType !== v || e.data !== d);) e = i(e);
-    if (e === null) l(!1);
-    else {
-      var y = i(e);
-      e.remove(), r(y)
-    }
-  }
-  a || (s = document.head.appendChild(o()));
-  try {
-    _(() => {
-      var u = g(() => n(s));
-      u.f |= p
-    })
-  } finally {
-    f && (l(!0), r(t))
-  }
+function o(e, o) {
+  let s = n(o, i);
+  var c = a();
+  r(c, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...s
+  })), t(e, c)
 }
 export {
-  x as h
+  o as t
 };

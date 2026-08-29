@@ -1,27 +1,23 @@
-import "./Bzak7iHL.js";
 import {
-  a as s,
-  w as a
-} from "./D5GL_E7i.js";
-import {
-  e as p
-} from "./Ce1mtF2R.js";
-import {
-  r as v
-} from "./LT-XNHCk.js";
-var l = new Set(["$$slots", "$$events", "$$legacy"]),
-  m = a('<svg><path d="M280-200v-80h284q63 0 109.5-40T720-420q0-60-46.5-100T564-560H312l104 104-56 56-200-200 200-200 56 56-104 104h252q97 0 166.5 63T800-420q0 94-69.5 157T564-200H280Z"></path></svg>');
+  Q as e,
+  Y as t,
+  o as n,
+  y as r
+} from "./D6uuD926.js";
+import "./B8UK1oE5.js";
+var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  a = e(`<svg><path d="M240-640h360v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85h-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640Zm0 480h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM240-160v-400 400Z"></path></svg>`);
 
-function w(t, e) {
-  let o = v(e, l);
-  var r = m();
-  p(r, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...o
-  })), s(t, r)
+function o(e, o) {
+  let s = n(o, i);
+  var c = a();
+  r(c, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...s
+  })), t(e, c)
 }
 export {
-  w as R
+  o as t
 };

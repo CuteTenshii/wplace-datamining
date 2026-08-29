@@ -1,13 +1,4 @@
-import {
-  b as o,
-  r
-} from "./Cs4RbjOP.js";
-const t = "";
-
-function s(...e) {
-  if (!e[0].startsWith("/")) throw new Error(`Cannot use \`resolve(...)\` with a non-absolute pathname or route ID (got "${e[0]}"). \`resolve\` is only for internal pathnames and route IDs; external URLs should be used directly.`);
-  return o + t + r(e[0], e[1])
-}
+var e = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAABJQTFRFAQEBAAAAHGHnRcxVStlbMXLnk8SHtQAAAAF0Uk5TAEDm2GYAAABMSURBVHjadc9JCgAhDERRa7r/lZs0ikawdv+tkvEYALS07U2QawmOTo1oQBKr8/cUMLY7JLEPYLW0oISSNLtgiojRBfv0AuB67vH3B+FjAY/0rrGiAAAAAElFTkSuQmCC`;
 export {
-  s as r
+  e as t
 };

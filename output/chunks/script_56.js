@@ -1,113 +1,79 @@
-import "./Bzak7iHL.js";
 import {
-  k as j,
-  p as q,
-  l as y,
-  f as S,
-  i as x,
-  a as i,
-  b as B,
-  u as C,
-  d as m,
-  z as h,
-  r as v,
-  t as _,
-  c as p,
-  m as s
-} from "./D5GL_E7i.js";
+  Jt as e,
+  O as t,
+  Y as n,
+  Yt as r,
+  Z as i,
+  a,
+  nn as o,
+  q as s,
+  vt as c,
+  wt as l
+} from "./D6uuD926.js";
+import "./B8UK1oE5.js";
 import {
-  s as k
-} from "./BMTVjKyu.js";
-import {
-  i as U
-} from "./unjGrhDm.js";
-import {
-  a as g,
-  c as F,
-  s as l
-} from "./Ce1mtF2R.js";
-import {
-  p as d
-} from "./LT-XNHCk.js";
-import {
-  P as G
-} from "./pKce-aOf.js";
-import {
-  u as H
-} from "./CT6bOf-I.js";
+  t as u
+} from "./ciZYZuIg.js";
+var d = [`common`, `uncommon`, `rare`, `epic`, `legendary`, `mythic`],
+  f = {
+    common: u.rarity_common,
+    uncommon: u.rarity_uncommon,
+    rare: u.rarity_rare,
+    epic: u.rarity_epic,
+    legendary: u.rarity_legendary,
+    mythic: u.rarity_mythic
+  };
 
-function D(o) {
-  return `/dashboard/users?id=${encodeURIComponent(String(o))}`
+function p(e) {
+  return d.includes(e)
 }
 
-function J(o) {
-  typeof window > "u" || window.open(D(o), "_blank", "noopener,noreferrer")
+function m(e) {
+  return f[e]()
 }
-var Q = p('<span role="link" tabindex="0"><!></span>'),
-  T = p('<a target="_blank" rel="noopener noreferrer"><!></a>'),
-  W = p("<span><!></span>");
 
-function te(o, e) {
-  q(e, !0);
-  let E = d(e, "mode", 3, "anchor"),
-    I = d(e, "class", 3, ""),
-    w = d(e, "linkClass", 19, I),
-    L = d(e, "textClass", 19, I);
-  const N = C(() => e.userId != null && e.userId > 0 && H.hasAnyPermission(G.dashboard.users)),
-    R = C(() => e.userId == null ? "" : D(e.userId));
-
-  function f(n) {
-    n.stopPropagation()
-  }
-
-  function b(n) {
-    e.userId == null || e.userId <= 0 || (n.preventDefault(), n.stopPropagation(), J(e.userId))
-  }
-
-  function z(n) {
-    n.key !== "Enter" && n.key !== " " || b(n)
-  }
-  var P = y(),
-    A = S(P);
-  {
-    var K = n => {
-        var r = y(),
-          u = S(r);
-        {
-          var O = t => {
-              var a = Q(),
-                c = m(a);
-              k(c, () => e.children ?? h), v(a), _(() => {
-                g(a, 1, `cursor-pointer hover:underline ${w()}`), l(a, "title", e.title)
-              }), s("pointerdown", a, f), s("click", a, b), s("keydown", a, z), i(t, a)
-            },
-            V = t => {
-              var a = T(),
-                c = m(a);
-              k(c, () => e.children ?? h), v(a), _(() => {
-                g(a, 1, `cursor-pointer hover:underline ${w()}`), l(a, "href", x(R)), l(a, "title", e.title)
-              }), s("pointerdown", a, f), s("click", a, f), i(t, a)
-            };
-          U(u, t => {
-            E() === "inline" ? t(O) : t(V, -1)
-          })
-        }
-        i(n, r)
-      },
-      M = n => {
-        var r = W(),
-          u = m(r);
-        k(u, () => e.children ?? h), v(r), _(() => {
-          g(r, 1, F(L())), l(r, "title", e.title)
-        }), i(n, r)
-      };
-    U(A, n => {
-      x(N) ? n(K) : n(M, -1)
-    })
-  }
-  i(o, P), B()
+function h(e) {
+  return `tier--${e}`
 }
-j(["pointerdown", "click", "keydown"]);
+
+function g(e) {
+  return e && p(e) ? e : `common`
+}
+var _ = (e, t, n, r, i) => ({
+    x: e,
+    size: t,
+    color: n,
+    duration: r,
+    delay: i
+  }),
+  v = {
+    common: [],
+    uncommon: [],
+    rare: [],
+    epic: [_(`20%`, 5, `rgb(168 85 247 / 0.8)`, 5, 0), _(`55%`, 6, `rgb(124 58 237 / 0.7)`, 6, 1.8), _(`80%`, 5, `rgb(196 152 255 / 0.8)`, 5.5, 3.2)],
+    legendary: [_(`15%`, 5, `rgb(251 191 36 / 0.85)`, 4.8, 0), _(`42%`, 6, `rgb(245 158 11 / 0.75)`, 6, 1.4), _(`68%`, 4, `rgb(255 223 142 / 0.9)`, 5.2, 2.6), _(`86%`, 5, `rgb(251 191 36 / 0.8)`, 5.6, 3.6)],
+    mythic: [_(`12%`, 5, `rgb(255 77 109 / 0.85)`, 4.6, 0), _(`30%`, 4, `rgb(255 159 28 / 0.85)`, 5.4, 1.2), _(`50%`, 6, `rgb(74 222 128 / 0.8)`, 5, 2.2), _(`68%`, 4, `rgb(34 211 238 / 0.85)`, 5.8, 3), _(`86%`, 5, `rgb(168 85 247 / 0.85)`, 4.9, 3.8), _(`40%`, 3, `rgb(255 230 109 / 0.9)`, 6.2, 4.4)]
+  };
+
+function y(e) {
+  return v[e]
+}
+var b = i(`<span> </span>`);
+
+function x(i, u) {
+  r(u, !0);
+  let d = a(u, `variant`, 3, `solid`),
+    f = a(u, `paused`, 3, !1),
+    p = a(u, `class`, 3, ``);
+  var h = b();
+  let g;
+  var _ = l(h, !0);
+  o(h), c(e => {
+    g = t(h, 1, `tier-badge tier-badge--${d()??``} tier--${u.tier??``} ${p()??``}`, null, g, {
+      "tier-badge--paused": f()
+    }), s(_, e)
+  }, [() => u.label ?? m(u.tier)]), n(i, h), e()
+}
 export {
-  te as S, D as g
+  m as a, h as i, d as n, y as o, p as r, g as s, x as t
 };

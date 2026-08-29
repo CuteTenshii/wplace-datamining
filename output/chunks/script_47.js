@@ -1,27 +1,99 @@
-import "./Bzak7iHL.js";
 import {
-  a as e,
-  w as a
-} from "./D5GL_E7i.js";
+  B as e,
+  G as t,
+  Jt as n,
+  O as r,
+  Pt as i,
+  Tt as a,
+  X as o,
+  Y as s,
+  Yt as c,
+  Z as l,
+  a as u,
+  ct as d,
+  k as f,
+  nn as p,
+  nt as m,
+  on as h,
+  tt as g,
+  vt as _,
+  wt as v,
+  x as y
+} from "./D6uuD926.js";
+import "./B8UK1oE5.js";
 import {
-  e as p
-} from "./Ce1mtF2R.js";
+  n as b
+} from "./BHDig7Ul.js";
 import {
-  r as v
-} from "./LT-XNHCk.js";
-var m = new Set(["$$slots", "$$events", "$$legacy"]),
-  f = a('<svg><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"></path></svg>');
+  t as x
+} from "./KnqTMKlG.js";
 
-function c(t, o) {
-  let s = v(o, m);
-  var r = f();
-  p(r, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...s
-  })), e(t, r)
+function S(e) {
+  return `/dashboard/users?id=${encodeURIComponent(String(e))}`
 }
+
+function C(e) {
+  typeof window > `u` || window.open(S(e), `_blank`, `noopener,noreferrer`)
+}
+var w = l(`<span role="link" tabindex="0"><!></span>`),
+  T = l(`<a target="_blank" rel="noopener noreferrer"><!></a>`),
+  E = l(`<span><!></span>`);
+
+function D(l, g) {
+  c(g, !0);
+  let D = u(g, `mode`, 3, `anchor`),
+    O = u(g, `class`, 3, ``),
+    k = u(g, `linkClass`, 19, O),
+    A = u(g, `textClass`, 19, O),
+    j = i(() => g.userId != null && g.userId > 0 && b.hasAnyPermission(x.dashboard.users)),
+    M = i(() => g.userId == null ? `` : S(g.userId));
+
+  function N(e) {
+    e.stopPropagation()
+  }
+
+  function P(e) {
+    g.userId == null || g.userId <= 0 || (e.preventDefault(), e.stopPropagation(), C(g.userId))
+  }
+
+  function F(e) {
+    (e.key === `Enter` || e.key === ` `) && P(e)
+  }
+  var I = o(),
+    L = a(I),
+    R = n => {
+      var i = o(),
+        c = a(i),
+        l = t => {
+          var n = w(),
+            i = v(n);
+          e(i, () => g.children ?? h), p(n), _(() => {
+            r(n, 1, `cursor-pointer hover:underline ${k()}`), y(n, `title`, g.title)
+          }), m(`pointerdown`, n, N), m(`click`, n, P), m(`keydown`, n, F), s(t, n)
+        },
+        u = t => {
+          var n = T(),
+            i = v(n);
+          e(i, () => g.children ?? h), p(n), _(() => {
+            r(n, 1, `cursor-pointer hover:underline ${k()}`), y(n, `href`, d(M)), y(n, `title`, g.title)
+          }), m(`pointerdown`, n, N), m(`click`, n, N), s(t, n)
+        };
+      t(c, e => {
+        D() === `inline` ? e(l) : e(u, -1)
+      }), s(n, i)
+    },
+    z = t => {
+      var n = E(),
+        i = v(n);
+      e(i, () => g.children ?? h), p(n), _(() => {
+        r(n, 1, f(A())), y(n, `title`, g.title)
+      }), s(t, n)
+    };
+  t(L, e => {
+    d(j) ? e(R) : e(z, -1)
+  }), s(l, I), n()
+}
+g([`pointerdown`, `click`, `keydown`]);
 export {
-  c as A
+  S as n, D as t
 };

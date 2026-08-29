@@ -1,18 +1,34 @@
 import {
-  M as p,
-  P as t
-} from "./D5GL_E7i.js";
+  ln as e
+} from "./D6uuD926.js";
 import {
-  B as c
-} from "./yJVs3h_J.js";
-
-function f(r, s, ...a) {
-  var e = new c(r);
-  p(() => {
-    const n = s() ?? null;
-    e.ensure(n, n && (o => n(o, ...a)))
-  }, t)
-}
+  a as t,
+  c as n,
+  d as r,
+  f as i,
+  i as a,
+  l as o,
+  n as s,
+  o as c,
+  r as l,
+  s as u,
+  t as d,
+  u as f
+} from "./3pGDfLLI.js";
+var p = e({
+  afterNavigate: () => d,
+  beforeNavigate: () => s,
+  disableScrollHandling: () => l,
+  goto: () => a,
+  invalidate: () => t,
+  invalidateAll: () => c,
+  onNavigate: () => u,
+  preloadCode: () => n,
+  preloadData: () => o,
+  pushState: () => f,
+  refreshAll: () => r,
+  replaceState: () => i
+});
 export {
-  f as s
+  p as t
 };

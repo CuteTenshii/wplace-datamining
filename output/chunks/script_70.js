@@ -1,91 +1,84 @@
-import "./Bzak7iHL.js";
 import {
-  p as l,
-  t as u,
-  a as d,
-  b as y,
-  c as f,
-  d as p,
-  r as _
-} from "./D5GL_E7i.js";
+  Et as e,
+  G as t,
+  Jt as n,
+  O as r,
+  Pt as i,
+  Q as a,
+  Tt as o,
+  V as s,
+  X as c,
+  Y as l,
+  Yt as u,
+  Z as d,
+  a as f,
+  ct as p,
+  nn as m,
+  o as h,
+  vt as g,
+  wt as _,
+  x as v,
+  y
+} from "./D6uuD926.js";
+import "./B8UK1oE5.js";
 import {
-  s as T
-} from "./BATewRf7.js";
+  n as b
+} from "./BTdIvV88.js";
 import {
-  a as h
-} from "./Ce1mtF2R.js";
-import {
-  p as m
-} from "./LT-XNHCk.js";
-import {
-  m as a
-} from "./XL5Wf48w.js";
-const R = ["common", "uncommon", "rare", "epic", "legendary", "mythic"],
-  v = {
-    common: a.rarity_common,
-    uncommon: a.rarity_uncommon,
-    rare: a.rarity_rare,
-    epic: a.rarity_epic,
-    legendary: a.rarity_legendary,
-    mythic: a.rarity_mythic
-  };
+  r as x
+} from "./BoG0A1IZ.js";
+var S = new Set([`$$slots`, `$$events`, `$$legacy`, `allianceId`, `seed`, `variant`, `imageSrc`]),
+  C = d(`<div><img alt="" class="size-full object-cover" style="image-rendering: pixelated" draggable="false"/></div>`),
+  w = d(`<div aria-hidden="true"><div class="absolute -top-1/2 -right-4 aspect-square h-[200%] rotate-12 opacity-25 select-none"></div> <div class="absolute -bottom-1/3 left-6 aspect-square h-[110%] -rotate-6 opacity-15 select-none"></div></div>`),
+  T = d(`<div></div>`);
 
-function x(r) {
-  return R.includes(r)
+function E(a, d) {
+  u(d, !0);
+  let y = f(d, `variant`, 3, `picture`);
+  h(d, S);
+  let E = i(() => d.seed && d.seed.length > 0 ? d.seed : `alliance-${d.allianceId}`),
+    D = i(() => x(p(E), 95, 45)),
+    O = i(() => b(d.allianceId));
+  var k = c(),
+    A = o(k),
+    j = e => {
+      var t = C();
+      let n;
+      var i = _(t);
+      m(t), g(() => {
+        n = r(t, 1, `overflow-hidden ${d.class??``??``}`, null, n, {
+          "bg-white": y() === `banner`
+        }), v(i, `src`, d.imageSrc)
+      }), l(e, t)
+    },
+    M = t => {
+      var n = w(),
+        i = _(n);
+      s(i, () => p(D), !0), m(i);
+      var a = e(i, 2);
+      s(a, () => p(D), !0), m(a), m(n), g(() => r(n, 1, `relative overflow-hidden ${p(O)??``} ${d.class??``??``}`)), l(t, n)
+    },
+    N = e => {
+      var t = T();
+      s(t, () => p(D), !0), m(t), g(() => r(t, 1, `overflow-hidden ${p(O)??``} ${d.class??``??``}`)), l(e, t)
+    };
+  t(A, e => {
+    d.imageSrc ? e(j) : y() === `banner` ? e(M, 1) : e(N, -1)
+  }), l(a, k), n()
 }
+var D = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  O = a(`<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>`);
 
-function E(r) {
-  return v[r]()
-}
-
-function O(r) {
-  return `tier--${r}`
-}
-
-function Y(r) {
-  return r && x(r) ? r : "common"
-}
-const t = (r, e, n, o, s) => ({
-    x: r,
-    size: e,
-    color: n,
-    duration: o,
-    delay: s
-  }),
-  I = {
-    common: [],
-    uncommon: [],
-    rare: [],
-    epic: [t("20%", 5, "rgb(168 85 247 / 0.8)", 5, 0), t("55%", 6, "rgb(124 58 237 / 0.7)", 6, 1.8), t("80%", 5, "rgb(196 152 255 / 0.8)", 5.5, 3.2)],
-    legendary: [t("15%", 5, "rgb(251 191 36 / 0.85)", 4.8, 0), t("42%", 6, "rgb(245 158 11 / 0.75)", 6, 1.4), t("68%", 4, "rgb(255 223 142 / 0.9)", 5.2, 2.6), t("86%", 5, "rgb(251 191 36 / 0.8)", 5.6, 3.6)],
-    mythic: [t("12%", 5, "rgb(255 77 109 / 0.85)", 4.6, 0), t("30%", 4, "rgb(255 159 28 / 0.85)", 5.4, 1.2), t("50%", 6, "rgb(74 222 128 / 0.8)", 5, 2.2), t("68%", 4, "rgb(34 211 238 / 0.85)", 5.8, 3), t("86%", 5, "rgb(168 85 247 / 0.85)", 4.9, 3.8), t("40%", 3, "rgb(255 230 109 / 0.9)", 6.2, 4.4)]
-  };
-
-function j(r) {
-  return I[r]
-}
-var L = f("<span> </span>");
-
-function k(r, e) {
-  l(e, !0);
-  let n = m(e, "variant", 3, "solid"),
-    o = m(e, "paused", 3, !1),
-    s = m(e, "class", 3, "");
-  var i = L();
-  let c;
-  var b = p(i, !0);
-  _(i), u(g => {
-    c = h(i, 1, `tier-badge tier-badge--${n()??""} tier--${e.tier??""} ${s()??""}`, null, c, {
-      "tier-badge--paused": o()
-    }), T(b, g)
-  }, [() => e.label ?? E(e.tier)]), d(r, i), y()
+function k(e, t) {
+  let n = h(t, D);
+  var r = O();
+  y(r, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...n
+  })), l(e, r)
 }
 export {
-  R,
-  k as T,
-  Y as a,
-  j as b,
-  O as c,
-  x as i,
-  E as t
+  E as n, k as t
 };

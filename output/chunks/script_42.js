@@ -1,27 +1,105 @@
-import "./Bzak7iHL.js";
 import {
-  a as e,
-  w as q
-} from "./D5GL_E7i.js";
+  Q as e,
+  Y as t,
+  o as n,
+  y as r
+} from "./D6uuD926.js";
+import "./B8UK1oE5.js";
 import {
-  e as a
-} from "./Ce1mtF2R.js";
-import {
-  r as p
-} from "./LT-XNHCk.js";
-var m = new Set(["$$slots", "$$events", "$$legacy"]),
-  v = q('<svg><path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"></path></svg>');
+  t as i
+} from "./ciZYZuIg.js";
+var a = {
+    0: i.palette_transparent,
+    1: i.palette_black,
+    2: i.palette_dark_gray,
+    3: i.palette_gray,
+    4: i.palette_light_gray,
+    5: i.palette_white,
+    6: i.palette_deep_red,
+    7: i.palette_red,
+    8: i.palette_orange,
+    9: i.palette_gold,
+    10: i.palette_yellow,
+    11: i.palette_light_yellow,
+    12: i.palette_dark_green,
+    13: i.palette_green,
+    14: i.palette_light_green,
+    15: i.palette_dark_teal,
+    16: i.palette_teal,
+    17: i.palette_light_teal,
+    18: i.palette_dark_blue,
+    19: i.palette_blue,
+    20: i.palette_cyan,
+    21: i.palette_indigo,
+    22: i.palette_light_indigo,
+    23: i.palette_dark_purple,
+    24: i.palette_purple,
+    25: i.palette_light_purple,
+    26: i.palette_dark_pink,
+    27: i.palette_pink,
+    28: i.palette_light_pink,
+    29: i.palette_dark_brown,
+    30: i.palette_brown,
+    31: i.palette_beige,
+    32: i.palette_medium_gray,
+    33: i.palette_dark_red,
+    34: i.palette_light_red,
+    35: i.palette_dark_orange,
+    36: i.palette_light_tan,
+    37: i.palette_dark_goldenrod,
+    38: i.palette_goldenrod,
+    39: i.palette_light_goldenrod,
+    40: i.palette_dark_olive,
+    41: i.palette_olive,
+    42: i.palette_light_olive,
+    43: i.palette_dark_cyan,
+    44: i.palette_light_cyan,
+    45: i.palette_light_blue,
+    46: i.palette_dark_indigo,
+    47: i.palette_dark_slate_blue,
+    48: i.palette_slate_blue,
+    49: i.palette_light_slate_blue,
+    50: i.palette_light_brown,
+    51: i.palette_dark_beige,
+    52: i.palette_light_beige,
+    53: i.palette_dark_peach,
+    54: i.palette_peach,
+    55: i.palette_light_peach,
+    56: i.palette_dark_tan,
+    57: i.palette_tan,
+    58: i.palette_dark_slate,
+    59: i.palette_slate,
+    60: i.palette_light_slate,
+    61: i.palette_dark_stone,
+    62: i.palette_stone,
+    63: i.palette_light_stone
+  },
+  o = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  s = e(`<svg><path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v124q18 7 29 22t11 34v80q0 19-11 34t-29 22v404q0 33-23.5 56.5T680-40H280Zm0-80h400v-720H280v720Zm0 0v-720 720Zm200-200 160-160-56-56-64 62v-166h-80v166l-64-62-56 56 160 160Z"></path></svg>`);
 
-function l(r, o) {
-  let s = p(o, m);
-  var t = v();
-  a(t, () => ({
-    xmlns: "http://www.w3.org/2000/svg",
-    viewBox: "0 -960 960 960",
-    fill: "currentColor",
-    ...s
-  })), e(r, t)
+function c(e, i) {
+  let a = n(i, o);
+  var c = s();
+  r(c, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...a
+  })), t(e, c)
+}
+var l = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  u = e(`<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>`);
+
+function d(e, i) {
+  let a = n(i, l);
+  var o = u();
+  r(o, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...a
+  })), t(e, o)
 }
 export {
-  l as I
+  c as n, a as r, d as t
 };

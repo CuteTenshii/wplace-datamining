@@ -1,71 +1,23 @@
-import "./Bzak7iHL.js";
 import {
-  p as R,
-  d as i,
-  r as l,
-  t as m,
-  a as n,
-  b as h,
-  s as f,
-  c as g
-} from "./D5GL_E7i.js";
-import {
-  s as _
-} from "./BATewRf7.js";
-import {
-  i as w
-} from "./unjGrhDm.js";
-import {
-  a as E
-} from "./Ce1mtF2R.js";
-import {
-  p as y
-} from "./LT-XNHCk.js";
-import {
-  R as O,
-  a as z
-} from "./C5ztOpp6.js";
-import {
-  L as v
-} from "./8drrlwoY.js";
-var c = g('<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>'),
-  A = g("<span><!></span>");
+  Q as e,
+  Y as t,
+  o as n,
+  y as r
+} from "./D6uuD926.js";
+import "./B8UK1oE5.js";
+var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  a = e(`<svg><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"></path></svg>`);
 
-function T(b, e) {
-  R(e, !0);
-  let p = y(e, "big", 3, !1);
-  var s = A();
-  let d;
-  var u = i(s);
-  {
-    var x = r => {
-        var a = c(),
-          t = i(a);
-        v(t, {
-          size: "none"
-        });
-        var o = f(t, 1, !0);
-        l(a), m(() => _(o, O[e.role])), n(r, a)
-      },
-      L = r => {
-        var a = c(),
-          t = i(a);
-        v(t, {
-          size: "small"
-        });
-        var o = f(t, 1, !0);
-        l(a), m(() => _(o, z[e.role])), n(r, a)
-      };
-    w(u, r => {
-      p() ? r(x) : r(L, -1)
-    })
-  }
-  l(s), m(() => d = E(s, 1, "badge badge-sm ml-0.5 inline-flex items-center justify-center pt-0.5 leading-none font-semibold whitespace-nowrap shadow", null, d, {
-    "badge-info": e.role === "admin",
-    "badge-secondary": e.role === "sac" || e.role === "game_master" || e.role === "game_master_leader" || e.role === "dev",
-    "badge-warning": e.role === "discord_mod" || e.role === "discord_leader"
-  })), n(b, s), h()
+function o(e, o) {
+  let s = n(o, i);
+  var c = a();
+  r(c, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...s
+  })), t(e, c)
 }
 export {
-  T as R
+  o as t
 };

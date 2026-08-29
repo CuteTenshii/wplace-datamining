@@ -1,57 +1,23 @@
-var k = Object.defineProperty;
-var w = t => {
-  throw TypeError(t)
-};
-var W = (t, r, s) => r in t ? k(t, r, {
-  enumerable: !0,
-  configurable: !0,
-  writable: !0,
-  value: s
-}) : t[r] = s;
-var g = (t, r, s) => W(t, typeof r != "symbol" ? r + "" : r, s),
-  u = (t, r, s) => r.has(t) || w("Cannot " + s);
-var i = (t, r, s) => (u(t, r, "read from private field"), s ? s.call(t) : r.get(t)),
-  b = (t, r, s) => r.has(t) ? w("Cannot add the same private member more than once") : r instanceof WeakSet ? r.add(t) : r.set(t, s),
-  c = (t, r, s, e) => (u(t, r, "write to private field"), e ? e.call(t, s) : r.set(t, s), s),
-  p = (t, r, s) => (u(t, r, "access private method"), s);
 import {
-  W as _,
-  E as z
-} from "./D5GL_E7i.js";
-var o, a, v, h, x;
-const f = class f {
-  constructor(r) {
-    b(this, h);
-    b(this, o, new WeakMap);
-    b(this, a);
-    b(this, v);
-    c(this, v, r)
-  }
-  observe(r, s) {
-    var e = i(this, o).get(r) || new Set;
-    return e.add(s), i(this, o).set(r, e), p(this, h, x).call(this).observe(r, i(this, v)), () => {
-      var n = i(this, o).get(r);
-      n.delete(s), n.size === 0 && (i(this, o).delete(r), i(this, a).unobserve(r))
-    }
-  }
-};
-o = new WeakMap, a = new WeakMap, v = new WeakMap, h = new WeakSet, x = function() {
-  return i(this, a) ?? c(this, a, new ResizeObserver(r => {
-    for (var s of r) {
-      f.entries.set(s.target, s);
-      for (var e of i(this, o).get(s.target) || []) e(s)
-    }
-  }))
-}, g(f, "entries", new WeakMap);
-let d = f;
-var M = new d({
-  box: "border-box"
-});
+  Q as e,
+  Y as t,
+  o as n,
+  y as r
+} from "./D6uuD926.js";
+import "./B8UK1oE5.js";
+var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  a = e(`<svg><path d="M480-440q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0-80q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0 440q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-400Zm0-315-240 90v189q0 54 15 105t41 96q42-21 88-33t96-12q50 0 96 12t88 33q26-45 41-96t15-105v-189l-240-90Zm0 515q-36 0-70 8t-65 22q29 30 63 52t72 34q38-12 72-34t63-52q-31-14-65-22t-70-8Z"></path></svg>`);
 
-function q(t, r, s) {
-  var e = M.observe(t, () => s(t[r]));
-  _(() => (z(() => s(t[r])), e))
+function o(e, o) {
+  let s = n(o, i);
+  var c = a();
+  r(c, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...s
+  })), t(e, c)
 }
 export {
-  q as b
+  o as t
 };

@@ -1,1170 +1,1086 @@
-var Kn = Object.defineProperty;
-var _n = m => {
-  throw TypeError(m)
-};
-var Yn = (m, t, r) => t in m ? Kn(m, t, {
-  enumerable: !0,
-  configurable: !0,
-  writable: !0,
-  value: r
-}) : m[t] = r;
-var Vt = (m, t, r) => Yn(m, typeof t != "symbol" ? t + "" : t, r),
-  sn = (m, t, r) => t.has(m) || _n("Cannot " + r);
-var C = (m, t, r) => (sn(m, t, "read from private field"), r ? r.call(m) : t.get(m)),
-  yt = (m, t, r) => t.has(m) ? _n("Cannot add the same private member more than once") : t instanceof WeakSet ? t.add(m) : t.set(m, r),
-  me = (m, t, r, h) => (sn(m, t, "write to private field"), h ? h.call(m, r) : t.set(m, r), r),
-  bn = (m, t, r) => (sn(m, t, "access private method"), r);
-import "../chunks/Bzak7iHL.js";
 import {
-  o as de
-} from "../chunks/D68Ns86n.js";
+  $ as e,
+  A as t,
+  B as n,
+  Bt as r,
+  Ct as i,
+  D as a,
+  Dt as o,
+  Et as s,
+  Ft as c,
+  G as l,
+  H as u,
+  It as d,
+  Jt as f,
+  Kt as p,
+  Lt as m,
+  M as h,
+  O as g,
+  Pt as _,
+  Q as v,
+  Rt as y,
+  Tt as b,
+  W as x,
+  X as S,
+  Xt as C,
+  Y as w,
+  Yt as T,
+  Z as E,
+  a as D,
+  cn as O,
+  ct as k,
+  et as ee,
+  f as A,
+  ft as j,
+  in as M,
+  it as N,
+  j as te,
+  jt as P,
+  k as F,
+  kt as I,
+  ln as ne,
+  nn as L,
+  nt as R,
+  o as re,
+  on as z,
+  q as B,
+  qt as ie,
+  r as ae,
+  rt as V,
+  s as oe,
+  tn as H,
+  tt as U,
+  un as se,
+  v as ce,
+  vt as W,
+  wt as G,
+  x as K,
+  y as q,
+  yt as J,
+  z as Y,
+  zt as le
+} from "../chunks/D6uuD926.js";
+import "../chunks/3pGDfLLI.js";
 import {
-  p as Qt,
-  d as et,
-  a as y,
-  r as J,
-  t as Dt,
-  b as Zt,
-  c as ft,
-  bu as Oe,
-  I as qn,
-  H as wn,
-  J as Xn,
-  e as Y,
-  g as vn,
-  y as Ut,
-  h as f,
-  i,
-  E as Pe,
-  s as wt,
-  m as se,
-  v as tn,
-  u as D,
-  z as Xt,
-  l as $,
-  f as G,
-  k as en,
-  o as In,
-  w as je,
-  aO as On,
-  n as Rn,
-  x as Qn
-} from "../chunks/D5GL_E7i.js";
+  a as ue
+} from "../chunks/CrIi3LtV.js";
+import "../chunks/B8UK1oE5.js";
 import {
-  c as Zn,
-  s as Bt
-} from "../chunks/BATewRf7.js";
+  f as de,
+  g as fe
+} from "../chunks/CMCDTH43.js";
 import {
-  i as rt
-} from "../chunks/unjGrhDm.js";
+  C as pe,
+  G as me,
+  H as he,
+  J as ge,
+  S as _e,
+  U as ve,
+  V as ye,
+  W as be,
+  a as X,
+  f as xe,
+  i as Se,
+  n as Ce,
+  o as we,
+  q as Te,
+  r as Ee,
+  t as De
+} from "../chunks/BHDig7Ul.js";
 import {
-  s as Ht
-} from "../chunks/BMTVjKyu.js";
+  t as Z
+} from "../chunks/ciZYZuIg.js";
+import "../chunks/B4y8X1vy.js";
+import "../chunks/CTZDAN7C.js";
 import {
-  v as Jn
-} from "../chunks/Cs4RbjOP.js";
+  t as Oe
+} from "../chunks/D4MF_dxU.js";
 import {
-  o as Ot,
-  p as oe,
-  q as $n,
-  g as cn,
-  a as an,
-  t as ye,
-  u as dn,
-  r as En,
-  w as ti,
-  x as on,
-  y as Dn,
-  z as xn,
-  B as ei,
-  h as Tn,
-  D as ni,
-  T as ii
-} from "../chunks/CT6bOf-I.js";
+  i as ke,
+  s as Ae
+} from "../chunks/D50FBjsE.js";
 import {
-  A as si
-} from "../chunks/CwG1zf2_.js";
+  D as je,
+  E as Me,
+  M as Q,
+  T as $,
+  _ as Ne,
+  d as Pe,
+  h as Fe,
+  m as Ie,
+  n as Le,
+  o as Re,
+  r as ze,
+  s as Be,
+  t as Ve,
+  u as He,
+  y as Ue
+} from "../chunks/DOkb5bmJ.js";
 import {
-  s as ai,
-  a as oi
-} from "../chunks/B49yUQkc.js";
+  t as We
+} from "../chunks/DxdGK6Xj.js";
 import {
-  a as Mn,
-  g as ri,
-  s as li,
-  b as hn,
-  D as ui,
-  w as ci,
-  c as di,
-  d as hi,
-  e as fn,
-  n as Sn,
-  f as kt,
-  m as Ye,
-  h as fi,
-  i as mi,
-  j as gi,
-  k as vi
-} from "../chunks/CMxueFbF.js";
-import {
-  k as pi
-} from "../chunks/BSqwrFfw.js";
-import {
-  c as re,
-  a as qt,
-  s as Ct,
-  b as rn,
-  e as Ce,
-  S as yi,
-  k as Ci,
-  f as Bn
-} from "../chunks/Ce1mtF2R.js";
-import {
-  b as nn
-} from "../chunks/59dp7Pbq.js";
-import {
-  j as _i,
-  k as bi
-} from "../chunks/D5blgKZB.js";
-import {
-  p as k,
-  s as ke,
-  r as Ee
-} from "../chunks/LT-XNHCk.js";
-import {
-  _ as wi
-} from "../chunks/o88EtIUh.js";
-import {
-  e as qe
-} from "../chunks/Clrj6tX0.js";
-import {
-  c as $t
-} from "../chunks/BkCB8krf.js";
-import {
-  t as Ii
-} from "../chunks/Ct12j0u0.js";
-import {
-  m as ee
-} from "../chunks/XL5Wf48w.js";
-import {
-  k as Ei
-} from "../chunks/BDW2UD0r.js";
-import "../chunks/DG1CTLCN.js";
-const Di = !0,
-  La = Object.freeze(Object.defineProperty({
-    __proto__: null,
-    prerender: Di
-  }, Symbol.toStringTag, {
-    value: "Module"
-  })),
-  xi = Array(12).fill(0);
-var Ti = ft('<div class="sonner-loading-bar"></div>'),
-  Si = ft('<div><div class="sonner-spinner"></div></div>');
+  t as Ge
+} from "../chunks/IDjU3ntJ.js";
+import "../chunks/mhrqN-wc.js";
+var Ke = ne({
+    prerender: () => !0
+  }),
+  qe = Array(12).fill(0),
+  Je = E(`<div class="sonner-loading-bar"></div>`),
+  Ye = E(`<div><div class="sonner-spinner"></div></div>`);
 
-function Ni(m, t) {
-  Qt(t, !0);
-  var r = Si(),
-    h = et(r);
-  qe(h, 23, () => xi, (p, E) => `spinner-bar-${E}`, (p, E) => {
-    var x = Ti();
-    y(p, x)
-  }), J(h), J(r), Dt(p => {
-    qt(r, 1, p), Ct(r, "data-visible", t.visible)
-  }, [() => re(["sonner-loading-wrapper", t.class].filter(Boolean).join(" "))]), y(m, r), Zt()
+function Xe(e, t) {
+  T(t, !0);
+  var n = Ye(),
+    r = G(n);
+  u(r, 23, () => qe, (e, t) => `spinner-bar-${t}`, (e, t) => {
+    var n = Je();
+    w(e, n)
+  }), L(r), L(n), W(e => {
+    g(n, 1, e), K(n, `data-visible`, t.visible)
+  }, [() => F([`sonner-loading-wrapper`, t.class].filter(Boolean).join(` `))]), w(e, n), f()
 }
-const Li = typeof window < "u" ? window : void 0;
+var Ze = typeof window < `u` ? window : void 0;
+typeof window < `u` && window.document, typeof window < `u` && window.navigator, typeof window < `u` && window.location;
 
-function Ai(m) {
-  let t = m.activeElement;
+function Qe(e) {
+  let t = e.activeElement;
   for (; t != null && t.shadowRoot;) {
-    const r = t.shadowRoot.activeElement;
-    if (r === t) break;
-    t = r
+    let e = t.shadowRoot.activeElement;
+    if (e === t) break;
+    t = e
   }
   return t
 }
-var _e, Re;
-class Pi {
-  constructor(t = {}) {
-    yt(this, _e);
-    yt(this, Re);
-    const {
-      window: r = Li,
-      document: h = r == null ? void 0 : r.document
-    } = t;
-    r !== void 0 && (me(this, _e, h), me(this, Re, Zn(p => {
-      const E = Oe(r, "focusin", p),
-        x = Oe(r, "focusout", p);
+var $e = new WeakMap,
+  et = new WeakMap;
+new class {
+  constructor(e = {}) {
+    y(this, $e, void 0), y(this, et, void 0);
+    let {
+      window: t = Ze,
+      document: n = t == null ? void 0 : t.document
+    } = e;
+    t !== void 0 && (d($e, this, n), d(et, this, r(e => {
+      let n = N(t, `focusin`, e),
+        r = N(t, `focusout`, e);
       return () => {
-        E(), x()
+        n(), r()
       }
     })))
   }
   get current() {
-    var t;
-    return (t = C(this, Re)) == null || t.call(this), C(this, _e) ? Ai(C(this, _e)) : null
+    var e;
+    return (e = c(et, this)) == null || e.call(this), c($e, this) ? Qe(c($e, this)) : null
   }
-}
-_e = new WeakMap, Re = new WeakMap;
-new Pi;
-var Me, le;
-class ki {
-  constructor(t) {
-    yt(this, Me);
-    yt(this, le);
-    me(this, Me, t), me(this, le, Symbol(t))
-  }
-  get key() {
-    return C(this, le)
-  }
-  exists() {
-    return qn(C(this, le))
-  }
-  get() {
-    const t = wn(C(this, le));
-    if (t === void 0) throw new Error(`Context "${C(this,Me)}" not found`);
-    return t
-  }
-  getOr(t) {
-    const r = wn(C(this, le));
-    return r === void 0 ? t : r
-  }
-  set(t) {
-    return Xn(C(this, le), t)
-  }
-}
-Me = new WeakMap, le = new WeakMap;
-const Oi = new ki("<Toaster/>");
+};
+var tt = new WeakMap,
+  nt = new WeakMap,
+  rt = class {
+    constructor(e) {
+      y(this, tt, void 0), y(this, nt, void 0), d(tt, this, e), d(nt, this, Symbol(e))
+    }
+    get key() {
+      return c(nt, this)
+    }
+    exists() {
+      return ie(c(nt, this))
+    }
+    get() {
+      let e = p(c(nt, this));
+      if (e === void 0) throw Error(`Context "${c(tt,this)}" not found`);
+      return e
+    }
+    getOr(e) {
+      let t = p(c(nt, this));
+      return t === void 0 ? e : t
+    }
+    set(e) {
+      return C(c(nt, this), e)
+    }
+  };
+new rt(`richColorsContext`);
+var it = new rt(`<Toaster/>`);
 
-function Ge(m) {
-  return m.label !== void 0
+function at(e) {
+  return e.label !== void 0
 }
 
-function Ri() {
-  let m = Y(vn(typeof document < "u" ? document.hidden : !1));
-  return Ut(() => Oe(document, "visibilitychange", () => {
-    f(m, document.hidden, !0)
+function ot() {
+  let e = P(o(typeof document < `u` && document.hidden));
+  return J(() => N(document, `visibilitychange`, () => {
+    I(e, document.hidden, !0)
   })), {
     get current() {
-      return i(m)
+      return k(e)
     }
   }
 }
-const Nn = 4e3,
-  Mi = 14,
-  Bi = 45,
-  Hi = 200,
-  Ui = .05,
-  Wi = {
-    toast: "",
-    title: "",
-    description: "",
-    loader: "",
-    closeButton: "",
-    cancelButton: "",
-    actionButton: "",
-    action: "",
-    warning: "",
-    error: "",
-    success: "",
-    default: "",
-    info: "",
-    loading: ""
+var st = 4e3,
+  ct = 14,
+  lt = 45,
+  ut = 200,
+  dt = .05,
+  ft = {
+    toast: ``,
+    title: ``,
+    description: ``,
+    loader: ``,
+    closeButton: ``,
+    cancelButton: ``,
+    actionButton: ``,
+    action: ``,
+    warning: ``,
+    error: ``,
+    success: ``,
+    default: ``,
+    info: ``,
+    loading: ``
   };
 
-function Fi(m) {
-  const [t, r] = m.split("-"), h = [];
-  return t && h.push(t), r && h.push(r), h
+function pt(e) {
+  let [t, n] = e.split(`-`), r = [];
+  return t && r.push(t), n && r.push(n), r
 }
 
-function Ln(m) {
-  return 1 / (1.5 + Math.abs(m) / 20)
+function mt(e) {
+  return 1 / (1.5 + Math.abs(e) / 20)
 }
-var Vi = ft("<div><!></div>"),
-  zi = ft('<button data-close-button=""><!></button>'),
-  ji = ft('<div data-icon=""><!> <!></div>'),
-  Gi = ft('<div data-description=""><!></div>'),
-  Ki = ft('<button data-button="" data-cancel=""> </button>'),
-  Yi = ft('<button data-button=""> </button>'),
-  qi = ft('<!> <div data-content=""><div data-title=""><!></div> <!></div> <!> <!>', 1),
-  Xi = ft('<li data-sonner-toast=""><!> <!></li>');
+var ht = new Set(`$$slots.$$events.$$legacy.toast.index.expanded.invert.position.visibleToasts.expandByDefault.closeButton.interacting.cancelButtonStyle.actionButtonStyle.duration.descriptionClass.classes.unstyled.loadingIcon.successIcon.errorIcon.warningIcon.closeIcon.infoIcon.defaultRichColors.swipeDirections.closeButtonAriaLabel`.split(`.`)),
+  gt = E(`<div><!></div>`),
+  _t = E(`<button data-close-button=""><!></button>`),
+  vt = E(`<div data-icon=""><!> <!></div>`),
+  yt = E(`<div data-description=""><!></div>`),
+  bt = E(`<button data-button="" data-cancel=""> </button>`),
+  xt = E(`<button data-button=""> </button>`),
+  St = E(`<!> <div data-content=""><div data-title=""><!></div> <!></div> <!> <!>`, 1),
+  Ct = E(`<li data-sonner-toast=""><!> <!></li>`);
 
-function Qi(m, t) {
-  Qt(t, !0);
-  const r = R => {
-    var F = $(),
-      at = G(F);
-    {
-      var lt = v => {
-          var Nt = Vi(),
-            o = et(Nt);
-          Ht(o, () => t.loadingIcon), J(Nt), Dt(e => {
-            qt(Nt, 1, e), Ct(Nt, "data-visible", i(W) === "loading")
+function wt(e, t) {
+  T(t, !0);
+  let r = e => {
+      var r = S(),
+        i = b(r),
+        a = e => {
+          var r = gt(),
+            i = G(r);
+          n(i, () => t.loadingIcon), L(r), W(e => {
+            g(r, 1, e), K(r, `data-visible`, k(H) === `loading`)
           }, [() => {
-            var e, n, s;
-            return re(oe((e = i(Q)) == null ? void 0 : e.loader, (s = (n = t.toast) == null ? void 0 : n.classes) == null ? void 0 : s.loader, "sonner-loader"))
-          }]), y(v, Nt)
+            var e, n;
+            return F(we((e = k(_e)) == null ? void 0 : e.loader, (n = t.toast) == null || (n = n.classes) == null ? void 0 : n.loader, `sonner-loader`))
+          }]), w(e, r)
         },
-        tt = v => {
+        o = e => {
           {
-            let Nt = D(() => {
+            let n = _(() => {
                 var e, n;
-                return oe((e = i(Q)) == null ? void 0 : e.loader, (n = t.toast.classes) == null ? void 0 : n.loader)
+                return we((e = k(_e)) == null ? void 0 : e.loader, (n = t.toast.classes) == null ? void 0 : n.loader)
               }),
-              o = D(() => i(W) === "loading");
-            Ni(v, {
+              r = _(() => k(H) === `loading`);
+            Xe(e, {
               get class() {
-                return i(Nt)
+                return k(n)
               },
               get visible() {
-                return i(o)
+                return k(r)
               }
             })
           }
         };
-      rt(at, v => {
-        t.loadingIcon ? v(lt) : v(tt, -1)
-      })
-    }
-    y(R, F)
-  };
-  let h = k(t, "cancelButtonStyle", 3, ""),
-    p = k(t, "actionButtonStyle", 3, ""),
-    E = k(t, "descriptionClass", 3, ""),
-    x = k(t, "unstyled", 3, !1),
-    B = k(t, "defaultRichColors", 3, !1);
-  const H = {
-    ...Wi
-  };
-  let S = Y(!1),
-    _ = Y(!1),
-    N = Y(!1),
-    L = Y(!1),
-    q = Y(!1),
-    O = Y(0),
-    K = Y(0),
-    g = t.toast.duration || t.duration || Nn,
-    w = Y(void 0),
-    T = Y(null),
-    nt = Y(null);
-  const A = D(() => t.index === 0),
-    X = D(() => t.index + 1 <= t.visibleToasts),
-    W = D(() => t.toast.type),
-    gt = D(() => t.toast.dismissable !== !1),
-    It = D(() => t.toast.class || ""),
-    I = D(() => t.toast.descriptionClass || ""),
-    M = D(() => Ot.heights.findIndex(R => R.toastId === t.toast.id) || 0),
-    ct = D(() => t.toast.closeButton ?? t.closeButton),
-    Tt = D(() => t.toast.duration ?? t.duration ?? Nn);
-  let Lt = null;
-  const St = D(() => t.position.split("-")),
-    Rt = D(() => Ot.heights.reduce((R, F, at) => at >= i(M) ? R : R + F.height, 0)),
-    zt = Ri(),
-    mt = D(() => t.toast.invert || t.invert),
-    st = D(() => i(W) === "loading"),
-    Q = D(() => ({
-      ...H,
+      l(i, e => {
+        t.loadingIcon ? e(a) : e(o, -1)
+      }), w(e, r)
+    },
+    i = D(t, `cancelButtonStyle`, 3, ``),
+    o = D(t, `actionButtonStyle`, 3, ``),
+    c = D(t, `descriptionClass`, 3, ``),
+    u = D(t, `unstyled`, 3, !1),
+    d = D(t, `defaultRichColors`, 3, !1);
+  re(t, ht);
+  let p = {
+      ...ft
+    },
+    m = P(!1),
+    h = P(!1),
+    v = P(!1),
+    y = P(!1),
+    x = P(!1),
+    C = P(0),
+    E = P(0),
+    O = t.toast.duration || t.duration || st,
+    M = P(void 0),
+    N = P(null),
+    te = P(null),
+    ne = _(() => t.index === 0),
+    ie = _(() => t.index + 1 <= t.visibleToasts),
+    H = _(() => t.toast.type),
+    U = _(() => t.toast.dismissable !== !1),
+    se = _(() => t.toast.class || ``),
+    ce = _(() => t.toast.descriptionClass || ``),
+    q = _(() => X.heights.findIndex(e => e.toastId === t.toast.id) || 0),
+    le = _(() => t.toast.closeButton ?? t.closeButton),
+    ue = _(() => t.toast.duration ?? t.duration ?? st),
+    de = null,
+    fe = _(() => t.position.split(`-`)),
+    pe = _(() => X.heights.reduce((e, t, n) => n >= k(q) ? e : e + t.height, 0)),
+    me = ot(),
+    he = _(() => t.toast.invert || t.invert),
+    ge = _(() => k(H) === `loading`),
+    _e = _(() => ({
+      ...p,
       ...t.classes
     })),
-    Et = D(() => t.toast.title),
-    _t = D(() => t.toast.description);
-  let jt = Y(0),
-    ae = Y(0);
-  const P = D(() => Math.round(i(M) * Mi + i(Rt)));
-  Ut(() => {
-    i(Et), i(_t);
-    let R;
-    t.expanded || t.expandByDefault ? R = 1 : R = 1 - t.index * Ui;
-    const F = Pe(() => i(w));
-    if (F === void 0) return;
-    F.style.setProperty("height", "auto");
-    const at = F.offsetHeight,
-      lt = F.getBoundingClientRect().height,
-      tt = Math.round(lt / R + Number.EPSILON & 100) / 100;
-    F.style.removeProperty("height");
-    let v;
-    Math.abs(tt - at) < 1 ? v = tt : v = at, f(K, v, !0), Pe(() => {
-      Ot.setHeight({
+    ve = _(() => t.toast.title),
+    ye = _(() => t.toast.description),
+    be = P(0),
+    xe = P(0),
+    Se = _(() => Math.round(k(q) * ct + k(pe)));
+  J(() => {
+    k(ve), k(ye);
+    let e;
+    e = t.expanded || t.expandByDefault ? 1 : 1 - t.index * dt;
+    let n = j(() => k(M));
+    if (n === void 0) return;
+    n.style.setProperty(`height`, `auto`);
+    let r = n.offsetHeight,
+      i = n.getBoundingClientRect().height,
+      a = Math.round(i / e + 2 ** -52 & 100) / 100;
+    n.style.removeProperty(`height`);
+    let o;
+    o = Math.abs(a - r) < 1 ? a : r, I(E, o, !0), j(() => {
+      X.setHeight({
         toastId: t.toast.id,
-        height: v
+        height: o
       })
     })
   });
 
-  function j() {
-    f(_, !0), f(O, i(P), !0), Ot.removeHeight(t.toast.id), setTimeout(() => {
-      Ot.remove(t.toast.id)
-    }, Hi)
+  function Ce() {
+    I(h, !0), I(C, k(Se), !0), X.removeHeight(t.toast.id), setTimeout(() => {
+      X.remove(t.toast.id)
+    }, ut)
   }
-  let bt;
-  const dt = D(() => t.toast.promise && i(W) === "loading" || t.toast.duration === Number.POSITIVE_INFINITY);
+  let Te, Ee = _(() => t.toast.promise && k(H) === `loading` || t.toast.duration === 1 / 0);
 
-  function Mt() {
-    f(jt, new Date().getTime(), !0), bt = setTimeout(() => {
-      var R, F;
-      (F = (R = t.toast).onAutoClose) == null || F.call(R, t.toast), j()
-    }, g)
+  function De() {
+    I(be, new Date().getTime(), !0), Te = setTimeout(() => {
+      var e, n;
+      (e = (n = t.toast).onAutoClose) == null || e.call(n, t.toast), Ce()
+    }, O)
   }
 
-  function ne() {
-    if (i(ae) < i(jt)) {
-      const R = new Date().getTime() - i(jt);
-      g = g - R
+  function Z() {
+    if (k(xe) < k(be)) {
+      let e = new Date().getTime() - k(be);
+      O -= e
     }
-    f(ae, new Date().getTime(), !0)
+    I(xe, new Date().getTime(), !0)
   }
-  Ut(() => {
-    t.toast.updated && (clearTimeout(bt), g = i(Tt), Mt())
-  }), Ut(() => (i(dt) || (t.expanded || t.interacting || zt.current ? ne() : Mt()), () => clearTimeout(bt))), de(() => {
-    var F;
-    f(S, !0);
-    const R = (F = i(w)) == null ? void 0 : F.getBoundingClientRect().height;
-    return f(K, R, !0), Ot.setHeight({
+  J(() => {
+    t.toast.updated && (clearTimeout(Te), O = k(ue), De())
+  }), J(() => (k(Ee) || (t.expanded || t.interacting || me.current ? Z() : De()), () => clearTimeout(Te))), ae(() => {
+    var e;
+    I(m, !0);
+    let n = (e = k(M)) == null ? void 0 : e.getBoundingClientRect().height;
+    return I(E, n, !0), X.setHeight({
       toastId: t.toast.id,
-      height: R
+      height: n
     }), () => {
-      Ot.removeHeight(t.toast.id)
+      X.removeHeight(t.toast.id)
     }
-  }), Ut(() => {
-    t.toast.delete && Pe(() => {
-      var R, F;
-      j(), (F = (R = t.toast).onDismiss) == null || F.call(R, t.toast)
+  }), J(() => {
+    t.toast.delete && j(() => {
+      var e, n;
+      Ce(), (e = (n = t.toast).onDismiss) == null || e.call(n, t.toast)
     })
   });
-  const he = R => {
-      if (i(st)) return;
-      f(O, i(P), !0);
-      const F = R.target;
-      F.setPointerCapture(R.pointerId), F.tagName !== "BUTTON" && (f(N, !0), Lt = {
-        x: R.clientX,
-        y: R.clientY
+  let Oe = e => {
+      if (k(ge)) return;
+      I(C, k(Se), !0);
+      let t = e.target;
+      t.setPointerCapture(e.pointerId), t.tagName !== `BUTTON` && (I(v, !0), de = {
+        x: e.clientX,
+        y: e.clientY
       })
     },
-    fe = () => {
-      var v, Nt, o, e, n, s;
-      if (i(L) || !i(gt)) return;
-      Lt = null;
-      const R = Number(((v = i(w)) == null ? void 0 : v.style.getPropertyValue("--swipe-amount-x").replace("px", "")) || 0),
-        F = Number(((Nt = i(w)) == null ? void 0 : Nt.style.getPropertyValue("--swipe-amount-y").replace("px", "")) || 0),
-        at = new Date().getTime() - 0,
-        lt = i(T) === "x" ? R : F,
-        tt = Math.abs(lt) / at;
-      if (Math.abs(lt) >= Bi || tt > .11) {
-        f(O, i(P), !0), (e = (o = t.toast).onDismiss) == null || e.call(o, t.toast), i(T) === "x" ? f(nt, R > 0 ? "right" : "left", !0) : f(nt, F > 0 ? "down" : "up", !0), j(), f(L, !0);
+    ke = () => {
+      var e, n;
+      if (k(y) || !k(U)) return;
+      de = null;
+      let r = Number(((e = k(M)) == null ? void 0 : e.style.getPropertyValue(`--swipe-amount-x`).replace(`px`, ``)) || 0),
+        i = Number(((n = k(M)) == null ? void 0 : n.style.getPropertyValue(`--swipe-amount-y`).replace(`px`, ``)) || 0),
+        a = new Date().getTime() - 0,
+        o = k(N) === `x` ? r : i,
+        s = Math.abs(o) / a;
+      if (Math.abs(o) >= lt || s > .11) {
+        var c, l;
+        I(C, k(Se), !0), (c = (l = t.toast).onDismiss) == null || c.call(l, t.toast), k(N) === `x` ? I(te, r > 0 ? `right` : `left`, !0) : I(te, i > 0 ? `down` : `up`, !0), Ce(), I(y, !0);
         return
-      } else(n = i(w)) == null || n.style.setProperty("--swipe-amount-x", "0px"), (s = i(w)) == null || s.style.setProperty("--swipe-amount-y", "0px");
-      f(q, !1), f(N, !1), f(T, null)
+      }
+      var u, d;
+      (u = k(M)) == null || u.style.setProperty(`--swipe-amount-x`, `0px`), (d = k(M)) == null || d.style.setProperty(`--swipe-amount-y`, `0px`), I(x, !1), I(v, !1), I(N, null)
     },
-    Wt = R => {
-      var Nt, o, e;
-      if (!Lt || !i(gt) || (((Nt = window.getSelection()) == null ? void 0 : Nt.toString().length) ?? -1) > 0) return;
-      const at = R.clientY - Lt.y,
-        lt = R.clientX - Lt.x,
-        tt = t.swipeDirections ?? Fi(t.position);
-      !i(T) && (Math.abs(lt) > 1 || Math.abs(at) > 1) && f(T, Math.abs(lt) > Math.abs(at) ? "x" : "y", !0);
-      let v = {
+    Ae = e => {
+      var n, r, i;
+      if (!de || !k(U) || (((n = window.getSelection()) == null ? void 0 : n.toString().length) ?? -1) > 0) return;
+      let a = e.clientY - de.y,
+        o = e.clientX - de.x,
+        s = t.swipeDirections ?? pt(t.position);
+      !k(N) && (Math.abs(o) > 1 || Math.abs(a) > 1) && I(N, Math.abs(o) > Math.abs(a) ? `x` : `y`, !0);
+      let c = {
         x: 0,
         y: 0
       };
-      if (i(T) === "y") {
-        if (tt.includes("top") || tt.includes("bottom"))
-          if (tt.includes("top") && at < 0 || tt.includes("bottom") && at > 0) v.y = at;
+      if (k(N) === `y`) {
+        if (s.includes(`top`) || s.includes(`bottom`)) {
+          if (s.includes(`top`) && a < 0 || s.includes(`bottom`) && a > 0) c.y = a;
           else {
-            const n = at * Ln(at);
-            v.y = Math.abs(n) < Math.abs(at) ? n : at
+            let e = a * mt(a);
+            c.y = Math.abs(e) < Math.abs(a) ? e : a
           }
-      } else if (i(T) === "x" && (tt.includes("left") || tt.includes("right")))
-        if (tt.includes("left") && lt < 0 || tt.includes("right") && lt > 0) v.x = lt;
+        }
+      } else if (k(N) === `x` && (s.includes(`left`) || s.includes(`right`))) {
+        if (s.includes(`left`) && o < 0 || s.includes(`right`) && o > 0) c.x = o;
         else {
-          const n = lt * Ln(lt);
-          v.x = Math.abs(n) < Math.abs(lt) ? n : lt
-        }(Math.abs(v.x) > 0 || Math.abs(v.y) > 0) && f(q, !0), (o = i(w)) == null || o.style.setProperty("--swipe-amount-x", `${v.x}px`), (e = i(w)) == null || e.style.setProperty("--swipe-amount-y", `${v.y}px`)
+          let e = o * mt(o);
+          c.x = Math.abs(e) < Math.abs(o) ? e : o
+        }
+      }(Math.abs(c.x) > 0 || Math.abs(c.y) > 0) && I(x, !0), (r = k(M)) == null || r.style.setProperty(`--swipe-amount-x`, `${c.x}px`), (i = k(M)) == null || i.style.setProperty(`--swipe-amount-y`, `${c.y}px`)
     },
-    Gt = () => {
-      f(N, !1), f(T, null), Lt = null
+    je = () => {
+      I(v, !1), I(N, null), de = null
     },
-    At = D(() => t.toast.icon ? t.toast.icon : i(W) === "success" ? t.successIcon : i(W) === "error" ? t.errorIcon : i(W) === "warning" ? t.warningIcon : i(W) === "info" ? t.infoIcon : i(W) === "loading" ? t.loadingIcon : null);
-  var Z = Xi();
-  Ct(Z, "tabindex", 0);
-  let ve;
-  var De = et(Z);
-  {
-    var xe = R => {
-      var F = zi(),
-        at = et(F);
-      Ht(at, () => t.closeIcon ?? Xt), J(F), Dt(lt => {
-        Ct(F, "aria-label", t.closeButtonAriaLabel), Ct(F, "data-disabled", i(st)), qt(F, 1, lt)
+    Me = _(() => t.toast.icon ? t.toast.icon : k(H) === `success` ? t.successIcon : k(H) === `error` ? t.errorIcon : k(H) === `warning` ? t.warningIcon : k(H) === `info` ? t.infoIcon : k(H) === `loading` ? t.loadingIcon : null);
+  var Q = Ct();
+  K(Q, `tabindex`, 0);
+  let $;
+  var Ne = G(Q),
+    Pe = e => {
+      var r = _t(),
+        i = G(r);
+      n(i, () => t.closeIcon ?? z), L(r), W(e => {
+        K(r, `aria-label`, t.closeButtonAriaLabel), K(r, `data-disabled`, k(ge)), g(r, 1, e)
       }, [() => {
-        var lt, tt, v;
-        return re(oe((lt = i(Q)) == null ? void 0 : lt.closeButton, (v = (tt = t.toast) == null ? void 0 : tt.classes) == null ? void 0 : v.closeButton))
-      }]), se("click", F, () => {
-        var lt, tt;
-        i(st) || !i(gt) || (j(), (tt = (lt = t.toast).onDismiss) == null || tt.call(lt, t.toast))
-      }), y(R, F)
+        var e, n;
+        return F(we((e = k(_e)) == null ? void 0 : e.closeButton, (n = t.toast) == null || (n = n.classes) == null ? void 0 : n.closeButton))
+      }]), R(`click`, r, () => {
+        var e, n;
+        k(ge) || !k(U) || (Ce(), (e = (n = t.toast).onDismiss) == null || e.call(n, t.toast))
+      }), w(e, r)
     };
-    rt(De, R => {
-      i(ct) && !t.toast.component && i(W) !== "loading" && t.closeIcon !== null && R(xe)
-    })
-  }
-  var Te = wt(De, 2);
-  {
-    var pe = R => {
-        const F = D(() => t.toast.component);
-        var at = $(),
-          lt = G(at);
-        $t(lt, () => i(F), (tt, v) => {
-          v(tt, ke(() => t.toast.componentProps, {
-            closeToast: j
-          }))
-        }), y(R, at)
-      },
-      Se = R => {
-        var F = qi(),
-          at = G(F);
-        {
-          var lt = d => {
-            var c = ji(),
-              b = et(c);
-            {
-              var U = V => {
-                var z = $(),
-                  pt = G(z);
-                {
-                  var it = ot => {
-                      var Kt = $(),
-                        Ft = G(Kt);
-                      $t(Ft, () => t.toast.icon, (xt, Pt) => {
-                        Pt(xt, {})
-                      }), y(ot, Kt)
-                    },
-                    ht = ot => {
-                      r(ot)
-                    };
-                  rt(pt, ot => {
-                    t.toast.icon ? ot(it) : ot(ht, -1)
-                  })
-                }
-                y(V, z)
-              };
-              rt(b, V => {
-                (t.toast.promise || i(W) === "loading") && V(U)
-              })
-            }
-            var vt = wt(b, 2);
-            {
-              var ut = V => {
-                var z = $(),
-                  pt = G(z);
-                {
-                  var it = xt => {
-                      var Pt = $(),
-                        te = G(Pt);
-                      $t(te, () => t.toast.icon, (jn, Gn) => {
-                        Gn(jn, {})
-                      }), y(xt, Pt)
-                    },
-                    ht = xt => {
-                      var Pt = $(),
-                        te = G(Pt);
-                      Ht(te, () => t.successIcon ?? Xt), y(xt, Pt)
-                    },
-                    ot = xt => {
-                      var Pt = $(),
-                        te = G(Pt);
-                      Ht(te, () => t.errorIcon ?? Xt), y(xt, Pt)
-                    },
-                    Kt = xt => {
-                      var Pt = $(),
-                        te = G(Pt);
-                      Ht(te, () => t.warningIcon ?? Xt), y(xt, Pt)
-                    },
-                    Ft = xt => {
-                      var Pt = $(),
-                        te = G(Pt);
-                      Ht(te, () => t.infoIcon ?? Xt), y(xt, Pt)
-                    };
-                  rt(pt, xt => {
-                    t.toast.icon ? xt(it) : i(W) === "success" ? xt(ht, 1) : i(W) === "error" ? xt(ot, 2) : i(W) === "warning" ? xt(Kt, 3) : i(W) === "info" && xt(Ft, 4)
-                  })
-                }
-                y(V, z)
-              };
-              rt(vt, V => {
-                t.toast.type !== "loading" && V(ut)
-              })
-            }
-            J(c), Dt(V => qt(c, 1, V), [() => {
-              var V, z, pt;
-              return re(oe((V = i(Q)) == null ? void 0 : V.icon, (pt = (z = t.toast) == null ? void 0 : z.classes) == null ? void 0 : pt.icon))
-            }]), y(d, c)
-          };
-          rt(at, d => {
-            (i(W) || t.toast.icon || t.toast.promise) && t.toast.icon !== null && (i(At) !== null || t.toast.icon) && d(lt)
-          })
-        }
-        var tt = wt(at, 2),
-          v = et(tt),
-          Nt = et(v);
-        {
-          var o = d => {
-            var c = $(),
-              b = G(c);
-            {
-              var U = ut => {
-                  const V = D(() => t.toast.title);
-                  var z = $(),
-                    pt = G(z);
-                  $t(pt, () => i(V), (it, ht) => {
-                    ht(it, ke(() => t.toast.componentProps))
-                  }), y(ut, z)
+  l(Ne, e => {
+    k(le) && !t.toast.component && k(H) !== `loading` && t.closeIcon !== null && e(Pe)
+  });
+  var Fe = s(Ne, 2),
+    Ie = e => {
+      let n = _(() => t.toast.component);
+      var r = S(),
+        i = b(r);
+      Y(i, () => k(n), (e, n) => {
+        n(e, oe(() => t.toast.componentProps, {
+          closeToast: Ce
+        }))
+      }), w(e, r)
+    },
+    Le = e => {
+      var u = St(),
+        d = b(u),
+        f = e => {
+          var i = vt(),
+            a = G(i),
+            o = e => {
+              var n = S(),
+                i = b(n),
+                a = e => {
+                  var n = S(),
+                    r = b(n);
+                  Y(r, () => t.toast.icon, (e, t) => {
+                    t(e, {})
+                  }), w(e, n)
                 },
-                vt = ut => {
-                  var V = In();
-                  Dt(() => Bt(V, t.toast.title)), y(ut, V)
+                o = e => {
+                  r(e)
                 };
-              rt(b, ut => {
-                typeof t.toast.title != "string" ? ut(U) : ut(vt, -1)
-              })
-            }
-            y(d, c)
-          };
-          rt(Nt, d => {
-            t.toast.title && d(o)
-          })
-        }
-        J(v);
-        var e = wt(v, 2);
-        {
-          var n = d => {
-            var c = Gi(),
-              b = et(c);
-            {
-              var U = ut => {
-                  const V = D(() => t.toast.description);
-                  var z = $(),
-                    pt = G(z);
-                  $t(pt, () => i(V), (it, ht) => {
-                    ht(it, ke(() => t.toast.componentProps))
-                  }), y(ut, z)
+              l(i, e => {
+                t.toast.icon ? e(a) : e(o, -1)
+              }), w(e, n)
+            };
+          l(a, e => {
+            (t.toast.promise || k(H) === `loading`) && e(o)
+          });
+          var c = s(a, 2),
+            u = e => {
+              var r = S(),
+                i = b(r),
+                a = e => {
+                  var n = S(),
+                    r = b(n);
+                  Y(r, () => t.toast.icon, (e, t) => {
+                    t(e, {})
+                  }), w(e, n)
                 },
-                vt = ut => {
-                  var V = In();
-                  Dt(() => Bt(V, t.toast.description)), y(ut, V)
+                o = e => {
+                  var r = S(),
+                    i = b(r);
+                  n(i, () => t.successIcon ?? z), w(e, r)
+                },
+                s = e => {
+                  var r = S(),
+                    i = b(r);
+                  n(i, () => t.errorIcon ?? z), w(e, r)
+                },
+                c = e => {
+                  var r = S(),
+                    i = b(r);
+                  n(i, () => t.warningIcon ?? z), w(e, r)
+                },
+                u = e => {
+                  var r = S(),
+                    i = b(r);
+                  n(i, () => t.infoIcon ?? z), w(e, r)
                 };
-              rt(b, ut => {
-                typeof t.toast.description != "string" ? ut(U) : ut(vt, -1)
-              })
-            }
-            J(c), Dt(ut => qt(c, 1, ut), [() => {
-              var ut, V;
-              return re(oe(E(), i(I), (ut = i(Q)) == null ? void 0 : ut.description, (V = t.toast.classes) == null ? void 0 : V.description))
-            }]), y(d, c)
-          };
-          rt(e, d => {
-            t.toast.description && d(n)
-          })
-        }
-        J(tt);
-        var s = wt(tt, 2);
-        {
-          var a = d => {
-            var c = $(),
-              b = G(c);
-            {
-              var U = V => {
-                  var z = $(),
-                    pt = G(z);
-                  $t(pt, () => t.toast.cancel, (it, ht) => {
-                    ht(it, {})
-                  }), y(V, z)
-                },
-                vt = V => {
-                  var z = Ki(),
-                    pt = et(z, !0);
-                  J(z), Dt(it => {
-                    rn(z, t.toast.cancelButtonStyle ?? h()), qt(z, 1, it), Bt(pt, t.toast.cancel.label)
-                  }, [() => {
-                    var it, ht, ot;
-                    return re(oe((it = i(Q)) == null ? void 0 : it.cancelButton, (ot = (ht = t.toast) == null ? void 0 : ht.classes) == null ? void 0 : ot.cancelButton))
-                  }]), se("click", z, it => {
-                    var ht, ot;
-                    Ge(t.toast.cancel) && i(gt) && ((ot = (ht = t.toast.cancel) == null ? void 0 : ht.onClick) == null || ot.call(ht, it), j())
-                  }), y(V, z)
-                },
-                ut = D(() => Ge(t.toast.cancel));
-              rt(b, V => {
-                typeof t.toast.cancel == "function" ? V(U) : i(ut) && V(vt, 1)
-              })
-            }
-            y(d, c)
-          };
-          rt(s, d => {
-            t.toast.cancel && d(a)
-          })
-        }
-        var u = wt(s, 2);
-        {
-          var l = d => {
-            var c = $(),
-              b = G(c);
-            {
-              var U = V => {
-                  var z = $(),
-                    pt = G(z);
-                  $t(pt, () => t.toast.action, (it, ht) => {
-                    ht(it, {})
-                  }), y(V, z)
-                },
-                vt = V => {
-                  var z = Yi(),
-                    pt = et(z, !0);
-                  J(z), Dt(it => {
-                    rn(z, t.toast.actionButtonStyle ?? p()), qt(z, 1, it), Bt(pt, t.toast.action.label)
-                  }, [() => {
-                    var it, ht, ot;
-                    return re(oe((it = i(Q)) == null ? void 0 : it.actionButton, (ot = (ht = t.toast) == null ? void 0 : ht.classes) == null ? void 0 : ot.actionButton))
-                  }]), se("click", z, it => {
-                    var ht;
-                    Ge(t.toast.action) && ((ht = t.toast.action) == null || ht.onClick(it), !it.defaultPrevented && j())
-                  }), y(V, z)
-                },
-                ut = D(() => Ge(t.toast.action));
-              rt(b, V => {
-                typeof t.toast.action == "function" ? V(U) : i(ut) && V(vt, 1)
-              })
-            }
-            y(d, c)
-          };
-          rt(u, d => {
-            t.toast.action && d(l)
-          })
-        }
-        Dt(d => qt(v, 1, d), [() => {
-          var d, c, b;
-          return re(oe((d = i(Q)) == null ? void 0 : d.title, (b = (c = t.toast) == null ? void 0 : c.classes) == null ? void 0 : b.title))
-        }]), y(R, F)
-      };
-    rt(Te, R => {
-      t.toast.component ? R(pe) : R(Se, -1)
-    })
-  }
-  J(Z), nn(Z, R => f(w, R), () => i(w)), Dt((R, F, at) => {
-    qt(Z, 1, R), Ct(Z, "data-rich-colors", t.toast.richColors ?? B()), Ct(Z, "data-styled", !(t.toast.component || t.toast.unstyled || x())), Ct(Z, "data-mounted", i(S)), Ct(Z, "data-promise", F), Ct(Z, "data-swiped", i(q)), Ct(Z, "data-removed", i(_)), Ct(Z, "data-visible", i(X)), Ct(Z, "data-y-position", i(St)[0]), Ct(Z, "data-x-position", i(St)[1]), Ct(Z, "data-index", t.index), Ct(Z, "data-front", i(A)), Ct(Z, "data-swiping", i(N)), Ct(Z, "data-dismissable", i(gt)), Ct(Z, "data-type", i(W)), Ct(Z, "data-invert", i(mt)), Ct(Z, "data-swipe-out", i(L)), Ct(Z, "data-swipe-direction", i(nt)), Ct(Z, "data-expanded", at), ve = rn(Z, `${t.style} ${t.toast.style}`, ve, {
+              l(i, e => {
+                t.toast.icon ? e(a) : k(H) === `success` ? e(o, 1) : k(H) === `error` ? e(s, 2) : k(H) === `warning` ? e(c, 3) : k(H) === `info` && e(u, 4)
+              }), w(e, r)
+            };
+          l(c, e => {
+            t.toast.type !== `loading` && e(u)
+          }), L(i), W(e => g(i, 1, e), [() => {
+            var e, n;
+            return F(we((e = k(_e)) == null ? void 0 : e.icon, (n = t.toast) == null || (n = n.classes) == null ? void 0 : n.icon))
+          }]), w(e, i)
+        };
+      l(d, e => {
+        (k(H) || t.toast.icon || t.toast.promise) && t.toast.icon !== null && (k(Me) !== null || t.toast.icon) && e(f)
+      });
+      var p = s(d, 2),
+        m = G(p),
+        h = G(m),
+        v = e => {
+          var n = S(),
+            r = b(n),
+            i = e => {
+              let n = _(() => t.toast.title);
+              var r = S(),
+                i = b(r);
+              Y(i, () => k(n), (e, n) => {
+                n(e, oe(() => t.toast.componentProps))
+              }), w(e, r)
+            },
+            a = e => {
+              var n = ee();
+              W(() => B(n, t.toast.title)), w(e, n)
+            };
+          l(r, e => {
+            typeof t.toast.title == `string` ? e(a, -1) : e(i)
+          }), w(e, n)
+        };
+      l(h, e => {
+        t.toast.title && e(v)
+      }), L(m);
+      var y = s(m, 2),
+        x = e => {
+          var n = yt(),
+            r = G(n),
+            i = e => {
+              let n = _(() => t.toast.description);
+              var r = S(),
+                i = b(r);
+              Y(i, () => k(n), (e, n) => {
+                n(e, oe(() => t.toast.componentProps))
+              }), w(e, r)
+            },
+            a = e => {
+              var n = ee();
+              W(() => B(n, t.toast.description)), w(e, n)
+            };
+          l(r, e => {
+            typeof t.toast.description == `string` ? e(a, -1) : e(i)
+          }), L(n), W(e => g(n, 1, e), [() => {
+            var e, n;
+            return F(we(c(), k(ce), (e = k(_e)) == null ? void 0 : e.description, (n = t.toast.classes) == null ? void 0 : n.description))
+          }]), w(e, n)
+        };
+      l(y, e => {
+        t.toast.description && e(x)
+      }), L(p);
+      var C = s(p, 2),
+        T = e => {
+          var n = S(),
+            r = b(n),
+            o = e => {
+              var n = S(),
+                r = b(n);
+              Y(r, () => t.toast.cancel, (e, t) => {
+                t(e, {})
+              }), w(e, n)
+            },
+            s = e => {
+              var n = bt(),
+                r = G(n, !0);
+              L(n), W(e => {
+                a(n, t.toast.cancelButtonStyle ?? i()), g(n, 1, e), B(r, t.toast.cancel.label)
+              }, [() => {
+                var e, n;
+                return F(we((e = k(_e)) == null ? void 0 : e.cancelButton, (n = t.toast) == null || (n = n.classes) == null ? void 0 : n.cancelButton))
+              }]), R(`click`, n, e => {
+                var n, r;
+                at(t.toast.cancel) && k(U) && ((n = t.toast.cancel) == null || (r = n.onClick) == null || r.call(n, e), Ce())
+              }), w(e, n)
+            },
+            c = _(() => at(t.toast.cancel));
+          l(r, e => {
+            typeof t.toast.cancel == `function` ? e(o) : k(c) && e(s, 1)
+          }), w(e, n)
+        };
+      l(C, e => {
+        t.toast.cancel && e(T)
+      });
+      var E = s(C, 2),
+        D = e => {
+          var n = S(),
+            r = b(n),
+            i = e => {
+              var n = S(),
+                r = b(n);
+              Y(r, () => t.toast.action, (e, t) => {
+                t(e, {})
+              }), w(e, n)
+            },
+            s = e => {
+              var n = xt(),
+                r = G(n, !0);
+              L(n), W(e => {
+                a(n, t.toast.actionButtonStyle ?? o()), g(n, 1, e), B(r, t.toast.action.label)
+              }, [() => {
+                var e, n;
+                return F(we((e = k(_e)) == null ? void 0 : e.actionButton, (n = t.toast) == null || (n = n.classes) == null ? void 0 : n.actionButton))
+              }]), R(`click`, n, e => {
+                var n;
+                at(t.toast.action) && ((n = t.toast.action) == null || n.onClick(e), !e.defaultPrevented && Ce())
+              }), w(e, n)
+            },
+            c = _(() => at(t.toast.action));
+          l(r, e => {
+            typeof t.toast.action == `function` ? e(i) : k(c) && e(s, 1)
+          }), w(e, n)
+        };
+      l(E, e => {
+        t.toast.action && e(D)
+      }), W(e => g(m, 1, e), [() => {
+        var e, n;
+        return F(we((e = k(_e)) == null ? void 0 : e.title, (n = t.toast) == null || (n = n.classes) == null ? void 0 : n.title))
+      }]), w(e, u)
+    };
+  l(Fe, e => {
+    t.toast.component ? e(Ie) : e(Le, -1)
+  }), L(Q), A(Q, e => I(M, e), () => k(M)), W((e, n, r) => {
+    g(Q, 1, e), K(Q, `data-rich-colors`, t.toast.richColors ?? d()), K(Q, `data-styled`, !(t.toast.component || t.toast.unstyled || u())), K(Q, `data-mounted`, k(m)), K(Q, `data-promise`, n), K(Q, `data-swiped`, k(x)), K(Q, `data-removed`, k(h)), K(Q, `data-visible`, k(ie)), K(Q, `data-y-position`, k(fe)[0]), K(Q, `data-x-position`, k(fe)[1]), K(Q, `data-index`, t.index), K(Q, `data-front`, k(ne)), K(Q, `data-swiping`, k(v)), K(Q, `data-dismissable`, k(U)), K(Q, `data-type`, k(H)), K(Q, `data-invert`, k(he)), K(Q, `data-swipe-out`, k(y)), K(Q, `data-swipe-direction`, k(te)), K(Q, `data-expanded`, r), $ = a(Q, `${t.style} ${t.toast.style}`, $, {
       "--index": t.index,
       "--toasts-before": t.index,
-      "--z-index": Ot.toasts.length - t.index,
-      "--offset": `${i(_)?i(O):i(P)}px`,
-      "--initial-height": t.expandByDefault ? "auto" : `${i(K)}px`
+      "--z-index": X.toasts.length - t.index,
+      "--offset": `${k(h)?k(C):k(Se)}px`,
+      "--initial-height": t.expandByDefault ? `auto` : `${k(E)}px`
     })
   }, [() => {
-    var R, F, at, lt, tt, v;
-    return re(oe(t.class, i(It), (R = i(Q)) == null ? void 0 : R.toast, (at = (F = t.toast) == null ? void 0 : F.classes) == null ? void 0 : at.toast, (lt = i(Q)) == null ? void 0 : lt[i(W)], (v = (tt = t.toast) == null ? void 0 : tt.classes) == null ? void 0 : v[i(W)]))
-  }, () => !!t.toast.promise, () => !!(t.expanded || t.expandByDefault && i(S))]), se("pointermove", Z, Wt), se("pointerup", Z, fe), se("pointerdown", Z, he), tn("dragend", Z, Gt), y(m, Z), Zt()
+    var e, n, r, i;
+    return F(we(t.class, k(se), (e = k(_e)) == null ? void 0 : e.toast, (n = t.toast) == null || (n = n.classes) == null ? void 0 : n.toast, (r = k(_e)) == null ? void 0 : r[k(H)], (i = t.toast) == null || (i = i.classes) == null ? void 0 : i[k(H)]))
+  }, () => !!t.toast.promise, () => !!(t.expanded || t.expandByDefault && k(m))]), R(`pointermove`, Q, Ae), R(`pointerup`, Q, ke), R(`pointerdown`, Q, Oe), V(`dragend`, Q, je), w(e, Q), f()
 }
-en(["pointermove", "pointerup", "pointerdown", "click"]);
-var Zi = je('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" height="20" width="20" data-sonner-success-icon=""><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"></path></svg>');
+U([`pointermove`, `pointerup`, `pointerdown`, `click`]);
+var Tt = v(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" height="20" width="20" data-sonner-success-icon=""><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"></path></svg>`);
 
-function Ji(m) {
-  var t = Zi();
-  y(m, t)
+function Et(e) {
+  var t = Tt();
+  w(e, t)
 }
-var $i = je('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" height="20" width="20" data-sonner-error-icon=""><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0v-4.5A.75.75 0 0110 5zm0 10a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>');
+var Dt = v(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" height="20" width="20" data-sonner-error-icon=""><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0v-4.5A.75.75 0 0110 5zm0 10a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"></path></svg>`);
 
-function ts(m) {
-  var t = $i();
-  y(m, t)
+function Ot(e) {
+  var t = Dt();
+  w(e, t)
 }
-var es = je('<svg viewBox="0 0 64 64" fill="currentColor" height="20" width="20" data-sonner-warning-icon="" xmlns="http://www.w3.org/2000/svg"><path d="M32.427,7.987c2.183,0.124 4,1.165 5.096,3.281l17.936,36.208c1.739,3.66 -0.954,8.585 -5.373,8.656l-36.119,0c-4.022,-0.064 -7.322,-4.631 -5.352,-8.696l18.271,-36.207c0.342,-0.65 0.498,-0.838 0.793,-1.179c1.186,-1.375 2.483,-2.111 4.748,-2.063Zm-0.295,3.997c-0.687,0.034 -1.316,0.419 -1.659,1.017c-6.312,11.979 -12.397,24.081 -18.301,36.267c-0.546,1.225 0.391,2.797 1.762,2.863c12.06,0.195 24.125,0.195 36.185,0c1.325,-0.064 2.321,-1.584 1.769,-2.85c-5.793,-12.184 -11.765,-24.286 -17.966,-36.267c-0.366,-0.651 -0.903,-1.042 -1.79,-1.03Z"></path><path d="M33.631,40.581l-3.348,0l-0.368,-16.449l4.1,0l-0.384,16.449Zm-3.828,5.03c0,-0.609 0.197,-1.113 0.592,-1.514c0.396,-0.4 0.935,-0.601 1.618,-0.601c0.684,0 1.223,0.201 1.618,0.601c0.395,0.401 0.593,0.905 0.593,1.514c0,0.587 -0.193,1.078 -0.577,1.473c-0.385,0.395 -0.929,0.593 -1.634,0.593c-0.705,0 -1.249,-0.198 -1.634,-0.593c-0.384,-0.395 -0.576,-0.886 -0.576,-1.473Z"></path></svg>');
+var kt = v(`<svg viewBox="0 0 64 64" fill="currentColor" height="20" width="20" data-sonner-warning-icon="" xmlns="http://www.w3.org/2000/svg"><path d="M32.427,7.987c2.183,0.124 4,1.165 5.096,3.281l17.936,36.208c1.739,3.66 -0.954,8.585 -5.373,8.656l-36.119,0c-4.022,-0.064 -7.322,-4.631 -5.352,-8.696l18.271,-36.207c0.342,-0.65 0.498,-0.838 0.793,-1.179c1.186,-1.375 2.483,-2.111 4.748,-2.063Zm-0.295,3.997c-0.687,0.034 -1.316,0.419 -1.659,1.017c-6.312,11.979 -12.397,24.081 -18.301,36.267c-0.546,1.225 0.391,2.797 1.762,2.863c12.06,0.195 24.125,0.195 36.185,0c1.325,-0.064 2.321,-1.584 1.769,-2.85c-5.793,-12.184 -11.765,-24.286 -17.966,-36.267c-0.366,-0.651 -0.903,-1.042 -1.79,-1.03Z"></path><path d="M33.631,40.581l-3.348,0l-0.368,-16.449l4.1,0l-0.384,16.449Zm-3.828,5.03c0,-0.609 0.197,-1.113 0.592,-1.514c0.396,-0.4 0.935,-0.601 1.618,-0.601c0.684,0 1.223,0.201 1.618,0.601c0.395,0.401 0.593,0.905 0.593,1.514c0,0.587 -0.193,1.078 -0.577,1.473c-0.385,0.395 -0.929,0.593 -1.634,0.593c-0.705,0 -1.249,-0.198 -1.634,-0.593c-0.384,-0.395 -0.576,-0.886 -0.576,-1.473Z"></path></svg>`);
 
-function ns(m) {
-  var t = es();
-  y(m, t)
+function At(e) {
+  var t = kt();
+  w(e, t)
 }
-var is = je('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" height="20" width="20" data-sonner-info-icon=""><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd"></path></svg>');
+var jt = v(`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" height="20" width="20" data-sonner-info-icon=""><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z" clip-rule="evenodd"></path></svg>`);
 
-function ss(m) {
-  var t = is();
-  y(m, t)
+function Mt(e) {
+  var t = jt();
+  w(e, t)
 }
-var as = je('<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-sonner-close-icon=""><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>');
+var Nt = v(`<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" data-sonner-close-icon=""><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>`);
 
-function os(m) {
-  var t = as();
-  y(m, t)
+function Pt(e) {
+  var t = Nt();
+  w(e, t)
 }
-const rs = 3,
-  Hn = "24px",
-  Un = "16px",
-  ls = 4e3,
-  us = 356,
-  cs = 14,
-  ln = "dark",
-  Ke = "light";
+var Ft = 3,
+  It = `24px`,
+  Lt = `16px`,
+  Rt = 4e3,
+  zt = 356,
+  Bt = 14,
+  Vt = `dark`,
+  Ht = `light`;
 
-function ds(m, t) {
-  const r = {};
-  return [m, t].forEach((h, p) => {
-    const E = p === 1,
-      x = E ? "--mobile-offset" : "--offset",
-      B = E ? Un : Hn;
+function Ut(e, t) {
+  let n = {};
+  return [e, t].forEach((e, t) => {
+    let r = t === 1,
+      i = r ? `--mobile-offset` : `--offset`,
+      a = r ? Lt : It;
 
-    function H(S) {
-      ["top", "right", "bottom", "left"].forEach(_ => {
-        r[`${x}-${_}`] = typeof S == "number" ? `${S}px` : S
+    function o(e) {
+      [`top`, `right`, `bottom`, `left`].forEach(t => {
+        n[`${i}-${t}`] = typeof e == `number` ? `${e}px` : e
       })
     }
-    typeof h == "number" || typeof h == "string" ? H(h) : typeof h == "object" ? ["top", "right", "bottom", "left"].forEach(S => {
-      const _ = h[S];
-      _ === void 0 ? r[`${x}-${S}`] = B : r[`${x}-${S}`] = typeof _ == "number" ? `${_}px` : _
-    }) : H(B)
-  }), r
+    typeof e == `number` || typeof e == `string` ? o(e) : typeof e == `object` ? [`top`, `right`, `bottom`, `left`].forEach(t => {
+      let r = e[t];
+      r === void 0 ? n[`${i}-${t}`] = a : n[`${i}-${t}`] = typeof r == `number` ? `${r}px` : r
+    }) : o(a)
+  }), n
 }
-var hs = new Set(["$$slots", "$$events", "$$legacy", "invert", "position", "hotkey", "expand", "closeButton", "offset", "mobileOffset", "theme", "richColors", "duration", "visibleToasts", "toastOptions", "dir", "gap", "loadingIcon", "successIcon", "errorIcon", "warningIcon", "closeIcon", "infoIcon", "containerAriaLabel", "class", "closeButtonAriaLabel", "onblur", "onfocus", "onmouseenter", "onmousemove", "onmouseleave", "ondragend", "onpointerdown", "onpointerup"]),
-  fs = ft("<ol></ol>"),
-  ms = ft('<section aria-live="polite" aria-relevant="additions text" aria-atomic="false" class="svelte-wiukfn"><!></section>');
+var Wt = new Set(`$$slots.$$events.$$legacy.invert.position.hotkey.expand.closeButton.offset.mobileOffset.theme.richColors.duration.visibleToasts.toastOptions.dir.gap.loadingIcon.successIcon.errorIcon.warningIcon.closeIcon.infoIcon.containerAriaLabel.class.closeButtonAriaLabel.onblur.onfocus.onmouseenter.onmousemove.onmouseleave.ondragend.onpointerdown.onpointerup`.split(`.`)),
+  Gt = E(`<ol></ol>`),
+  Kt = E(`<section aria-live="polite" aria-relevant="additions text" aria-atomic="false" class="svelte-wiukfn"><!></section>`);
 
-function gs(m, t) {
-  Qt(t, !0);
+function qt(e, t) {
+  T(t, !0);
 
-  function r(P) {
-    return P !== "system" ? P : typeof window < "u" && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? ln : Ke
+  function r(e) {
+    return e === `system` ? typeof window < `u` && window.matchMedia && window.matchMedia(`(prefers-color-scheme: dark)`).matches ? Vt : Ht : e
   }
-  let h = k(t, "invert", 3, !1),
-    p = k(t, "position", 3, "bottom-right"),
-    E = k(t, "hotkey", 19, () => ["altKey", "KeyT"]),
-    x = k(t, "expand", 3, !1),
-    B = k(t, "closeButton", 3, !1),
-    H = k(t, "offset", 3, Hn),
-    S = k(t, "mobileOffset", 3, Un),
-    _ = k(t, "theme", 3, "light"),
-    N = k(t, "richColors", 3, !1),
-    L = k(t, "duration", 3, ls),
-    q = k(t, "visibleToasts", 3, rs),
-    O = k(t, "toastOptions", 19, () => ({})),
-    K = k(t, "dir", 7, "auto"),
-    g = k(t, "gap", 3, cs),
-    w = k(t, "containerAriaLabel", 3, "Notifications"),
-    T = k(t, "closeButtonAriaLabel", 3, "Close toast"),
-    nt = Ee(t, hs);
+  let i = D(t, `invert`, 3, !1),
+    a = D(t, `position`, 3, `bottom-right`),
+    s = D(t, `hotkey`, 19, () => [`altKey`, `KeyT`]),
+    c = D(t, `expand`, 3, !1),
+    d = D(t, `closeButton`, 3, !1),
+    p = D(t, `offset`, 3, It),
+    m = D(t, `mobileOffset`, 3, Lt),
+    h = D(t, `theme`, 3, `light`),
+    g = D(t, `richColors`, 3, !1),
+    v = D(t, `duration`, 3, Rt),
+    y = D(t, `visibleToasts`, 3, Ft),
+    x = D(t, `toastOptions`, 19, () => ({})),
+    C = D(t, `dir`, 7, `auto`),
+    E = D(t, `gap`, 3, Bt),
+    O = D(t, `containerAriaLabel`, 3, `Notifications`),
+    ee = D(t, `closeButtonAriaLabel`, 3, `Close toast`),
+    M = re(t, Wt);
 
-  function A() {
-    if (K() !== "auto") return K();
-    if (typeof window > "u" || typeof document > "u") return "ltr";
-    const P = document.documentElement.getAttribute("dir");
-    return P === "auto" || !P ? (Pe(() => K(window.getComputedStyle(document.documentElement).direction ?? "ltr")), K()) : (Pe(() => K(P)), P)
+  function te() {
+    if (C() !== `auto`) return C();
+    if (typeof window > `u` || typeof document > `u`) return `ltr`;
+    let e = document.documentElement.getAttribute(`dir`);
+    return e === `auto` || !e ? (j(() => C(window.getComputedStyle(document.documentElement).direction ?? `ltr`)), C()) : (j(() => C(e)), e)
   }
-  const X = D(() => Array.from(new Set([p(), ...Ot.toasts.filter(P => P.position).map(P => P.position)].filter(Boolean))));
-  let W = Y(!1),
-    gt = Y(!1),
-    It = Y(vn(r(_()))),
-    I = Y(void 0),
-    M = Y(null),
-    ct = Y(!1);
-  const Tt = D(() => E().join("+").replace(/Key/g, "").replace(/Digit/g, ""));
-  Ut(() => {
-    Ot.toasts.length <= 1 && f(W, !1)
-  }), Ut(() => {
-    const P = Ot.toasts.filter(j => j.dismiss && !j.delete);
-    if (P.length > 0) {
-      const j = Ot.toasts.map(bt => P.find(Mt => Mt.id === bt.id) ? {
-        ...bt,
+  let F = _(() => Array.from(new Set([a(), ...X.toasts.filter(e => e.position).map(e => e.position)].filter(Boolean)))),
+    ne = P(!1),
+    R = P(!1),
+    B = P(o(r(h()))),
+    ie = P(void 0),
+    V = P(null),
+    oe = P(!1),
+    H = _(() => s().join(`+`).replace(/Key/g, ``).replace(/Digit/g, ``));
+  J(() => {
+    X.toasts.length <= 1 && I(ne, !1)
+  }), J(() => {
+    let e = X.toasts.filter(e => e.dismiss && !e.delete);
+    if (e.length > 0) {
+      let t = X.toasts.map(t => e.find(e => e.id === t.id) ? {
+        ...t,
         delete: !0
-      } : bt);
-      Ot.toasts = j
+      } : t);
+      X.toasts = t
     }
-  }), Ut(() => () => {
-    i(I) && i(M) && (i(M).focus({
+  }), J(() => () => {
+    k(ie) && k(V) && (k(V).focus({
       preventScroll: !0
-    }), f(M, null), f(ct, !1))
-  }), de(() => (Ot.reset(), Oe(document, "keydown", j => {
-    var dt, Mt;
-    E().every(ne => j[ne] || j.code === ne) && (f(W, !0), (dt = i(I)) == null || dt.focus()), j.code === "Escape" && (document.activeElement === i(I) || (Mt = i(I)) != null && Mt.contains(document.activeElement)) && f(W, !1)
-  }))), Ut(() => {
-    if (_() !== "system" && f(It, _()), typeof window < "u") {
-      _() === "system" && (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? f(It, ln) : f(It, Ke));
-      const P = window.matchMedia("(prefers-color-scheme: dark)"),
-        j = ({
-          matches: bt
+    }), I(V, null), I(oe, !1))
+  }), ae(() => (X.reset(), N(document, `keydown`, e => {
+    var t;
+    if (s().every(t => e[t] || e.code === t)) {
+      var n;
+      I(ne, !0), (n = k(ie)) == null || n.focus()
+    }
+    e.code === `Escape` && (document.activeElement === k(ie) || (t = k(ie)) != null && t.contains(document.activeElement)) && I(ne, !1)
+  }))), J(() => {
+    if (h() !== `system` && I(B, h()), typeof window < `u`) {
+      h() === `system` && (window.matchMedia && window.matchMedia(`(prefers-color-scheme: dark)`).matches ? I(B, Vt) : I(B, Ht));
+      let e = window.matchMedia(`(prefers-color-scheme: dark)`),
+        t = ({
+          matches: e
         }) => {
-          f(It, bt ? ln : Ke, !0)
+          I(B, e ? Vt : Ht, !0)
         };
-      "addEventListener" in P ? P.addEventListener("change", j) : P.addListener(j)
+      `addEventListener` in e ? e.addEventListener(`change`, t) : e.addListener(t)
     }
   });
-  const Lt = P => {
-      var j;
-      (j = t.onblur) == null || j.call(t, P), i(ct) && !P.currentTarget.contains(P.relatedTarget) && (f(ct, !1), i(M) && (i(M).focus({
+  let U = e => {
+      var n;
+      (n = t.onblur) == null || n.call(t, e), k(oe) && !e.currentTarget.contains(e.relatedTarget) && (I(oe, !1), k(V) && (k(V).focus({
         preventScroll: !0
-      }), f(M, null)))
+      }), I(V, null)))
     },
-    St = P => {
-      var bt;
-      (bt = t.onfocus) == null || bt.call(t, P), !(P.target instanceof HTMLElement && P.target.dataset.dismissable === "false") && (i(ct) || (f(ct, !0), f(M, P.relatedTarget, !0)))
+    se = e => {
+      var n;
+      (n = t.onfocus) == null || n.call(t, e), !(e.target instanceof HTMLElement && e.target.dataset.dismissable === `false`) && (k(oe) || (I(oe, !0), I(V, e.relatedTarget, !0)))
     },
-    Rt = P => {
-      var bt;
-      (bt = t.onpointerdown) == null || bt.call(t, P), !(P.target instanceof HTMLElement && P.target.dataset.dismissable === "false") && f(gt, !0)
+    Y = e => {
+      var n;
+      (n = t.onpointerdown) == null || n.call(t, e), !(e.target instanceof HTMLElement && e.target.dataset.dismissable === `false`) && I(R, !0)
     },
-    zt = P => {
-      var j;
-      (j = t.onmouseenter) == null || j.call(t, P), f(W, !0)
+    le = e => {
+      var n;
+      (n = t.onmouseenter) == null || n.call(t, e), I(ne, !0)
     },
-    mt = P => {
-      var j;
-      (j = t.onmouseleave) == null || j.call(t, P), i(gt) || f(W, !1)
+    ue = e => {
+      var n;
+      (n = t.onmouseleave) == null || n.call(t, e), k(R) || I(ne, !1)
     },
-    st = P => {
-      var j;
-      (j = t.onmousemove) == null || j.call(t, P), f(W, !0)
+    de = e => {
+      var n;
+      (n = t.onmousemove) == null || n.call(t, e), I(ne, !0)
     },
-    Q = P => {
-      var j;
-      (j = t.ondragend) == null || j.call(t, P), f(W, !1)
+    fe = e => {
+      var n;
+      (n = t.ondragend) == null || n.call(t, e), I(ne, !1)
     },
-    Et = P => {
-      var j;
-      (j = t.onpointerup) == null || j.call(t, P), f(gt, !1)
+    pe = e => {
+      var n;
+      (n = t.onpointerup) == null || n.call(t, e), I(R, !1)
     };
-  Oi.set(new $n);
-  var _t = ms();
-  Ct(_t, "tabindex", -1);
-  var jt = et(_t);
-  {
-    var ae = P => {
-      var j = $(),
-        bt = G(j);
-      qe(bt, 18, () => i(X), dt => dt, (dt, Mt, ne, he) => {
-        const fe = D(() => {
-            const [At, Z] = Mt.split("-");
+  it.set(new Ee);
+  var me = Kt();
+  K(me, `tabindex`, -1);
+  var he = G(me),
+    ge = e => {
+      var r = S(),
+        a = b(r);
+      u(a, 18, () => k(F), e => e, (e, r, a, o) => {
+        let s = _(() => {
+            let [e, t] = r.split(`-`);
             return {
-              y: At,
-              x: Z
+              y: e,
+              x: t
             }
           }),
-          Wt = D(() => ds(H(), S()));
-        var Gt = fs();
-        Ce(Gt, At => {
-          var Z;
+          f = _(() => Ut(p(), m()));
+        var h = Gt();
+        q(h, e => {
+          var n;
           return {
             tabindex: -1,
-            dir: At,
+            dir: e,
             class: t.class,
             "data-sonner-toaster": !0,
-            "data-sonner-theme": i(It),
-            "data-y-position": i(fe).y,
-            "data-x-position": i(fe).x,
+            "data-sonner-theme": k(B),
+            "data-y-position": k(s).y,
+            "data-x-position": k(s).x,
             style: t.style,
-            onblur: Lt,
-            onfocus: St,
-            onmouseenter: zt,
-            onmousemove: st,
-            onmouseleave: mt,
-            ondragend: Q,
-            onpointerdown: Rt,
-            onpointerup: Et,
-            ...nt,
-            [yi]: {
-              "--front-toast-height": `${(Z=Ot.heights[0])==null?void 0:Z.height}px`,
-              "--width": `${us}px`,
-              "--gap": `${g()}px`,
-              "--offset-top": i(Wt)["--offset-top"],
-              "--offset-right": i(Wt)["--offset-right"],
-              "--offset-bottom": i(Wt)["--offset-bottom"],
-              "--offset-left": i(Wt)["--offset-left"],
-              "--mobile-offset-top": i(Wt)["--mobile-offset-top"],
-              "--mobile-offset-right": i(Wt)["--mobile-offset-right"],
-              "--mobile-offset-bottom": i(Wt)["--mobile-offset-bottom"],
-              "--mobile-offset-left": i(Wt)["--mobile-offset-left"]
+            onblur: U,
+            onfocus: se,
+            onmouseenter: le,
+            onmousemove: de,
+            onmouseleave: ue,
+            ondragend: fe,
+            onpointerdown: Y,
+            onpointerup: pe,
+            ...M,
+            [ce]: {
+              "--front-toast-height": `${(n=X.heights[0])==null?void 0:n.height}px`,
+              "--width": `${zt}px`,
+              "--gap": `${E()}px`,
+              "--offset-top": k(f)[`--offset-top`],
+              "--offset-right": k(f)[`--offset-right`],
+              "--offset-bottom": k(f)[`--offset-bottom`],
+              "--offset-left": k(f)[`--offset-left`],
+              "--mobile-offset-top": k(f)[`--mobile-offset-top`],
+              "--mobile-offset-right": k(f)[`--mobile-offset-right`],
+              "--mobile-offset-bottom": k(f)[`--mobile-offset-bottom`],
+              "--mobile-offset-left": k(f)[`--mobile-offset-left`]
             }
           }
-        }, [() => A()], void 0, void 0, "svelte-wiukfn"), qe(Gt, 23, () => Ot.toasts.filter(At => !At.position && i(ne) === 0 || At.position === Mt), At => At.id, (At, Z, ve, De) => {
+        }, [() => te()], void 0, void 0, `svelte-wiukfn`), u(h, 23, () => X.toasts.filter(e => !e.position && k(a) === 0 || e.position === r), e => e.id, (e, a, o, s) => {
           {
-            const xe = s => {
-                var a = $(),
-                  u = G(a);
-                {
-                  var l = c => {
-                      var b = $(),
-                        U = G(b);
-                      Ht(U, () => t.successIcon ?? Xt), y(c, b)
-                    },
-                    d = c => {
-                      Ji(c)
-                    };
-                  rt(u, c => {
-                    t.successIcon ? c(l) : t.successIcon !== null && c(d, 1)
-                  })
-                }
-                y(s, a)
+            let s = e => {
+                var r = S(),
+                  i = b(r),
+                  a = e => {
+                    var r = S(),
+                      i = b(r);
+                    n(i, () => t.successIcon ?? z), w(e, r)
+                  },
+                  o = e => {
+                    Et(e, {})
+                  };
+                l(i, e => {
+                  t.successIcon ? e(a) : t.successIcon !== null && e(o, 1)
+                }), w(e, r)
               },
-              Te = s => {
-                var a = $(),
-                  u = G(a);
-                {
-                  var l = c => {
-                      var b = $(),
-                        U = G(b);
-                      Ht(U, () => t.errorIcon ?? Xt), y(c, b)
-                    },
-                    d = c => {
-                      ts(c)
-                    };
-                  rt(u, c => {
-                    t.errorIcon ? c(l) : t.errorIcon !== null && c(d, 1)
-                  })
-                }
-                y(s, a)
+              u = e => {
+                var r = S(),
+                  i = b(r),
+                  a = e => {
+                    var r = S(),
+                      i = b(r);
+                    n(i, () => t.errorIcon ?? z), w(e, r)
+                  },
+                  o = e => {
+                    Ot(e, {})
+                  };
+                l(i, e => {
+                  t.errorIcon ? e(a) : t.errorIcon !== null && e(o, 1)
+                }), w(e, r)
               },
-              pe = s => {
-                var a = $(),
-                  u = G(a);
-                {
-                  var l = c => {
-                      var b = $(),
-                        U = G(b);
-                      Ht(U, () => t.warningIcon ?? Xt), y(c, b)
-                    },
-                    d = c => {
-                      ns(c)
-                    };
-                  rt(u, c => {
-                    t.warningIcon ? c(l) : t.warningIcon !== null && c(d, 1)
-                  })
-                }
-                y(s, a)
+              f = e => {
+                var r = S(),
+                  i = b(r),
+                  a = e => {
+                    var r = S(),
+                      i = b(r);
+                    n(i, () => t.warningIcon ?? z), w(e, r)
+                  },
+                  o = e => {
+                    At(e, {})
+                  };
+                l(i, e => {
+                  t.warningIcon ? e(a) : t.warningIcon !== null && e(o, 1)
+                }), w(e, r)
               },
-              Se = s => {
-                var a = $(),
-                  u = G(a);
-                {
-                  var l = c => {
-                      var b = $(),
-                        U = G(b);
-                      Ht(U, () => t.infoIcon ?? Xt), y(c, b)
-                    },
-                    d = c => {
-                      ss(c)
-                    };
-                  rt(u, c => {
-                    t.infoIcon ? c(l) : t.infoIcon !== null && c(d, 1)
-                  })
-                }
-                y(s, a)
+              p = e => {
+                var r = S(),
+                  i = b(r),
+                  a = e => {
+                    var r = S(),
+                      i = b(r);
+                    n(i, () => t.infoIcon ?? z), w(e, r)
+                  },
+                  o = e => {
+                    Mt(e, {})
+                  };
+                l(i, e => {
+                  t.infoIcon ? e(a) : t.infoIcon !== null && e(o, 1)
+                }), w(e, r)
               },
-              R = s => {
-                var a = $(),
-                  u = G(a);
-                {
-                  var l = c => {
-                      var b = $(),
-                        U = G(b);
-                      Ht(U, () => t.closeIcon ?? Xt), y(c, b)
-                    },
-                    d = c => {
-                      os(c)
-                    };
-                  rt(u, c => {
-                    t.closeIcon ? c(l) : t.closeIcon !== null && c(d, 1)
-                  })
-                }
-                y(s, a)
-              };
-            let F = D(() => {
-                var s;
-                return ((s = O()) == null ? void 0 : s.duration) ?? L()
+              m = e => {
+                var r = S(),
+                  i = b(r),
+                  a = e => {
+                    var r = S(),
+                      i = b(r);
+                    n(i, () => t.closeIcon ?? z), w(e, r)
+                  },
+                  o = e => {
+                    Pt(e, {})
+                  };
+                l(i, e => {
+                  t.closeIcon ? e(a) : t.closeIcon !== null && e(o, 1)
+                }), w(e, r)
+              },
+              h = _(() => {
+                var e;
+                return ((e = x()) == null ? void 0 : e.duration) ?? v()
               }),
-              at = D(() => {
-                var s;
-                return ((s = O()) == null ? void 0 : s.class) ?? ""
+              C = _(() => {
+                var e;
+                return ((e = x()) == null ? void 0 : e.class) ?? ``
               }),
-              lt = D(() => {
-                var s;
-                return ((s = O()) == null ? void 0 : s.descriptionClass) || ""
+              T = _(() => {
+                var e;
+                return ((e = x()) == null ? void 0 : e.descriptionClass) || ``
               }),
-              tt = D(() => {
-                var s;
-                return ((s = O()) == null ? void 0 : s.style) ?? ""
+              E = _(() => {
+                var e;
+                return ((e = x()) == null ? void 0 : e.style) ?? ``
               }),
-              v = D(() => O().classes || {}),
-              Nt = D(() => O().unstyled ?? !1),
-              o = D(() => {
-                var s;
-                return ((s = O()) == null ? void 0 : s.cancelButtonStyle) ?? ""
+              D = _(() => x().classes || {}),
+              O = _(() => x().unstyled ?? !1),
+              A = _(() => {
+                var e;
+                return ((e = x()) == null ? void 0 : e.cancelButtonStyle) ?? ``
               }),
-              e = D(() => {
-                var s;
-                return ((s = O()) == null ? void 0 : s.actionButtonStyle) ?? ""
+              j = _(() => {
+                var e;
+                return ((e = x()) == null ? void 0 : e.actionButtonStyle) ?? ``
               }),
-              n = D(() => {
-                var s;
-                return ((s = O()) == null ? void 0 : s.closeButtonAriaLabel) ?? T()
+              M = _(() => {
+                var e;
+                return ((e = x()) == null ? void 0 : e.closeButtonAriaLabel) ?? ee()
               });
-            Qi(At, {
+            wt(e, {
               get index() {
-                return i(ve)
+                return k(o)
               },
               get toast() {
-                return i(Z)
+                return k(a)
               },
               get defaultRichColors() {
-                return N()
+                return g()
               },
               get duration() {
-                return i(F)
+                return k(h)
               },
               get class() {
-                return i(at)
+                return k(C)
               },
               get descriptionClass() {
-                return i(lt)
+                return k(T)
               },
               get invert() {
-                return h()
+                return i()
               },
               get visibleToasts() {
-                return q()
+                return y()
               },
               get closeButton() {
-                return B()
+                return d()
               },
               get interacting() {
-                return i(gt)
+                return k(R)
               },
               get position() {
-                return Mt
+                return r
               },
               get style() {
-                return i(tt)
+                return k(E)
               },
               get classes() {
-                return i(v)
+                return k(D)
               },
               get unstyled() {
-                return i(Nt)
+                return k(O)
               },
               get cancelButtonStyle() {
-                return i(o)
+                return k(A)
               },
               get actionButtonStyle() {
-                return i(e)
+                return k(j)
               },
               get closeButtonAriaLabel() {
-                return i(n)
+                return k(M)
               },
               get expandByDefault() {
-                return x()
+                return c()
               },
               get expanded() {
-                return i(W)
+                return k(ne)
               },
               get loadingIcon() {
                 return t.loadingIcon
               },
-              successIcon: xe,
-              errorIcon: Te,
-              warningIcon: pe,
-              infoIcon: Se,
-              closeIcon: R,
+              successIcon: s,
+              errorIcon: u,
+              warningIcon: f,
+              infoIcon: p,
+              closeIcon: m,
               $$slots: {
                 successIcon: !0,
                 errorIcon: !0,
@@ -1174,702 +1090,651 @@ function gs(m, t) {
               }
             })
           }
-        }), J(Gt), nn(Gt, At => f(I, At), () => i(I)), Dt(() => Gt.dir = Gt.dir), y(dt, Gt)
-      }), y(P, j)
+        }), L(h), A(h, e => I(ie, e), () => k(ie)), W(() => h.dir = h.dir), w(e, h)
+      }), w(e, r)
     };
-    rt(jt, P => {
-      Ot.toasts.length > 0 && P(ae)
-    })
-  }
-  J(_t), Dt(() => Ct(_t, "aria-label", `${w()??""} ${i(Tt)??""}`)), y(m, _t), Zt()
+  l(he, e => {
+    X.toasts.length > 0 && e(ge)
+  }), L(me), W(() => K(me, `aria-label`, `${O()??``} ${k(H)??``}`)), w(e, me), f()
 }
-let Ne = Y(!1);
-var vs = ft("<div></div>"),
-  ps = ft('<button type="button" class="btn">Retry</button>'),
-  ys = ft('<span class="loading loading-spinner loading-lg"></span>'),
-  Cs = ft('<div class="flex h-16 items-center justify-center"><!></div>');
+var Jt = P(!1),
+  Yt = E(`<div></div>`),
+  Xt = E(`<button type="button" class="btn">Retry</button>`),
+  Zt = E(`<span class="loading loading-spinner loading-lg"></span>`),
+  Qt = E(`<div class="flex h-16 items-center justify-center"><!></div>`);
 
-function _s(m, t) {
-  Qt(t, !0);
-  let r = k(t, "theme", 19, () => cn.theme === "dark" ? "dark" : "light"),
-    h = k(t, "size", 3, "normal");
-  const p = D(() => ({
+function $t(e, t) {
+  T(t, !0);
+  let n = D(t, `theme`, 19, () => Te.theme === `dark` ? `dark` : `light`),
+    r = D(t, `size`, 3, `normal`),
+    i = _(() => ({
       sitekey: t.siteKey,
-      theme: r(),
-      size: h(),
+      theme: n(),
+      size: r(),
       ...t.challengeContainer ? {
         "challenge-container": t.challengeContainer
       } : {},
-      callback: g => {
-        var w;
-        return (w = t.callback) == null ? void 0 : w.call(t, g)
+      callback: e => {
+        var n;
+        return (n = t.callback) == null ? void 0 : n.call(t, e)
       },
       "open-callback": () => {
-        var g;
-        return (g = t.openCallback) == null ? void 0 : g.call(t)
+        var e;
+        return (e = t.openCallback) == null ? void 0 : e.call(t)
       },
       "close-callback": () => {
-        var g;
-        return (g = t.closeCallback) == null ? void 0 : g.call(t)
+        var e;
+        return (e = t.closeCallback) == null ? void 0 : e.call(t)
       },
-      "error-callback": g => {
-        var w;
-        return (w = t.errorCallback) == null ? void 0 : w.call(t, g)
+      "error-callback": e => {
+        var n;
+        return (n = t.errorCallback) == null ? void 0 : n.call(t, e)
       },
       "expired-callback": () => {
-        var g;
-        return (g = t.expiredCallback) == null ? void 0 : g.call(t)
+        var e;
+        return (e = t.expiredCallback) == null ? void 0 : e.call(t)
       }
     })),
-    E = (g, w) => {
-      var nt;
-      let T = window.hcaptcha.render(g, w);
-      return (nt = t.onload) == null || nt.call(t), {
+    a = (e, n) => {
+      var r;
+      let i = window.hcaptcha.render(e, n);
+      return (r = t.onload) == null || r.call(t), {
         destroy() {
-          var A;
-          (A = window.hcaptcha) == null || A.remove(T)
+          var e;
+          (e = window.hcaptcha) == null || e.remove(i)
         },
-        update(A) {
-          var X;
-          (X = window.hcaptcha) == null || X.remove(T), T = window.hcaptcha.render(g, A)
+        update(t) {
+          var n;
+          (n = window.hcaptcha) == null || n.remove(i), i = window.hcaptcha.render(e, t)
         }
       }
-    };
-  let x = Y(!1),
-    B = Y(!1),
-    H;
+    },
+    o = P(!1),
+    s = P(!1),
+    c;
 
-  function S() {
-    const g = document.createElement("script");
-    g.type = "text/javascript";
-    const w = new URL("https://js.hcaptcha.com/1/api.js");
-    w.searchParams.set("render", "explicit"), g.src = w.toString(), g.async = !0, g.defer = !0, g.addEventListener("load", () => f(Ne, !0), {
+  function u() {
+    let e = document.createElement(`script`);
+    e.type = `text/javascript`;
+    let t = new URL(`https://js.hcaptcha.com/1/api.js`);
+    t.searchParams.set(`render`, `explicit`), e.src = t.toString(), e.async = !0, e.defer = !0, e.addEventListener(`load`, () => I(Jt, !0), {
       once: !0
-    }), document.head.appendChild(g)
+    }), document.head.appendChild(e)
   }
 
-  function _() {
-    f(B, !1), H && clearTimeout(H), H = setTimeout(() => {
-      (!i(Ne) || !i(x)) && f(B, !0)
+  function d() {
+    I(s, !1), c && clearTimeout(c), c = setTimeout(() => {
+      (!k(Jt) || !k(o)) && I(s, !0)
     }, 5e3)
   }
 
-  function N() {
-    document.querySelectorAll('script[src*="js.hcaptcha.com"]').forEach(g => g.remove()), f(Ne, !1), S(), _()
+  function p() {
+    document.querySelectorAll(`script[src*="js.hcaptcha.com"]`).forEach(e => e.remove()), I(Jt, !1), u(), d()
   }
-  de(() => (f(x, !0), i(Ne) || S(), _(), () => {
-    f(x, !1), H && clearTimeout(H)
+  ae(() => (I(o, !0), k(Jt) || u(), d(), () => {
+    I(o, !1), c && clearTimeout(c)
   }));
-  var L = $(),
-    q = G(L);
-  {
-    var O = g => {
-        var w = vs();
-        Mn(w, (T, nt) => E == null ? void 0 : E(T, nt), () => i(p)), y(g, w)
-      },
-      K = g => {
-        var w = Cs(),
-          T = et(w);
-        {
-          var nt = X => {
-              var W = ps();
-              se("click", W, N), y(X, W)
-            },
-            A = X => {
-              var W = ys();
-              y(X, W)
-            };
-          rt(T, X => {
-            i(B) ? X(nt) : X(A, -1)
-          })
-        }
-        J(w), y(g, w)
-      };
-    rt(q, g => {
-      i(Ne) && i(x) ? g(O) : g(K, -1)
-    })
-  }
-  y(m, L), Zt()
+  var m = S(),
+    g = b(m),
+    v = e => {
+      var t = Yt();
+      h(t, (e, t) => a == null ? void 0 : a(e, t), () => k(i)), w(e, t)
+    },
+    y = e => {
+      var t = Qt(),
+        n = G(t),
+        r = e => {
+          var t = Xt();
+          R(`click`, t, p), w(e, t)
+        },
+        i = e => {
+          var t = Zt();
+          w(e, t)
+        };
+      l(n, e => {
+        k(s) ? e(r) : e(i, -1)
+      }), L(t), w(e, t)
+    };
+  l(g, e => {
+    k(Jt) && k(o) ? e(v) : e(y, -1)
+  }), w(e, m), f()
 }
-en(["click"]);
+U([`click`]);
 
-function pn(...m) {
-  return Ii(Ci(m))
+function en(...e) {
+  return We(t(e))
 }
-var bs = new Set(["$$slots", "$$events", "$$legacy", "ref", "class", "children"]),
-  ws = ft("<div><!></div>");
+var tn = new Set([`$$slots`, `$$events`, `$$legacy`, `ref`, `class`, `children`]),
+  nn = E(`<div><!></div>`);
 
-function Is(m, t) {
-  Qt(t, !0);
-  let r = k(t, "ref", 15, null),
-    h = Ee(t, bs);
-  var p = ws();
-  Ce(p, x => ({
-    class: x,
-    ...h
-  }), [() => pn("flex items-center", t.class)]);
-  var E = et(p);
-  Ht(E, () => t.children ?? Xt), J(p), nn(p, x => r(x), () => r()), y(m, p), Zt()
+function rn(e, t) {
+  T(t, !0);
+  let r = D(t, `ref`, 15, null),
+    i = re(t, tn);
+  var a = nn();
+  q(a, e => ({
+    class: e,
+    ...i
+  }), [() => en(`flex items-center`, t.class)]);
+  var o = G(a);
+  n(o, () => t.children ?? z), L(a), A(a, e => r(e), () => r()), w(e, a), f()
 }
-var Be, Xe;
-class Es {
-  constructor(t, r) {
-    yt(this, Be, () => {});
-    yt(this, Xe, D(() => C(this, Be).call(this)));
-    let h;
-    r !== void 0 && (h = r), me(this, Be, () => {
-      try {
-        return h
-      } finally {
-        h = t()
-      }
-    })
-  }
-  get current() {
-    return i(C(this, Xe))
-  }
-}
-Be = new WeakMap, Xe = new WeakMap;
-const Ds = 18,
-  Wn = 40,
-  xs = `${Wn}px`,
-  Ts = ["[data-lastpass-icon-root]", "com-1password-button", "[data-dashlanecreated]", '[style$="2147483647 !important;"]'].join(",");
+var an = 18,
+  on = 40,
+  sn = `${on}px`,
+  cn = [`[data-lastpass-icon-root]`, `com-1password-button`, `[data-dashlanecreated]`, `[style$="2147483647 !important;"]`].join(`,`);
 
-function Ss({
-  containerRef: m,
+function ln({
+  containerRef: e,
   inputRef: t,
-  pushPasswordManagerStrategy: r,
-  isFocused: h,
-  domContext: p
+  pushPasswordManagerStrategy: n,
+  isFocused: r,
+  domContext: i
 }) {
-  let E = Y(!1),
-    x = Y(!1),
-    B = Y(!1);
+  let a = P(!1),
+    o = P(!1),
+    s = P(!1);
 
-  function H() {
-    const _ = r.current;
-    return _ === "none" ? !1 : _ === "increase-width" && i(E) && i(x)
+  function c() {
+    let e = n.current;
+    return e !== `none` && e === `increase-width` && k(a) && k(o)
   }
 
-  function S() {
-    const _ = m.current,
-      N = t.current;
-    if (!_ || !N || i(B) || r.current === "none") return;
-    const L = _,
-      q = L.getBoundingClientRect().left + L.offsetWidth,
-      O = L.getBoundingClientRect().top + L.offsetHeight / 2,
-      K = q - Ds,
-      g = O;
-    p.querySelectorAll(Ts).length === 0 && p.getDocument().elementFromPoint(K, g) === _ || (f(E, !0), f(B, !0))
+  function l() {
+    let r = e.current,
+      o = t.current;
+    if (!r || !o || k(s) || n.current === `none`) return;
+    let c = r,
+      l = c.getBoundingClientRect().left + c.offsetWidth,
+      u = c.getBoundingClientRect().top + c.offsetHeight / 2,
+      d = l - an,
+      f = u;
+    (i.querySelectorAll(cn).length !== 0 || i.getDocument().elementFromPoint(d, f) !== r) && (I(a, !0), I(s, !0))
   }
-  return Ut(() => {
-    const _ = m.current;
-    if (!_ || r.current === "none") return;
+  return J(() => {
+    let t = e.current;
+    if (!t || n.current === `none`) return;
 
-    function N() {
-      const O = ri(_).innerWidth - _.getBoundingClientRect().right;
-      f(x, O >= Wn)
+    function r() {
+      let e = Ie(t).innerWidth - t.getBoundingClientRect().right;
+      I(o, e >= on)
     }
-    N();
-    const L = setInterval(N, 1e3);
+    r();
+    let i = setInterval(r, 1e3);
     return () => {
-      clearInterval(L)
+      clearInterval(i)
     }
-  }), Ut(() => {
-    const _ = h.current || p.getActiveElement() === t.current;
-    if (r.current === "none" || !_) return;
-    const N = setTimeout(S, 0),
-      L = setTimeout(S, 2e3),
-      q = setTimeout(S, 5e3),
-      O = setTimeout(() => {
-        f(B, !0)
+  }), J(() => {
+    let e = r.current || i.getActiveElement() === t.current;
+    if (n.current === `none` || !e) return;
+    let a = setTimeout(l, 0),
+      o = setTimeout(l, 2e3),
+      c = setTimeout(l, 5e3),
+      u = setTimeout(() => {
+        I(s, !0)
       }, 6e3);
     return () => {
-      clearTimeout(N), clearTimeout(L), clearTimeout(q), clearTimeout(O)
+      clearTimeout(a), clearTimeout(o), clearTimeout(c), clearTimeout(u)
     }
   }), {
     get hasPwmBadge() {
-      return i(E)
+      return k(a)
     },
     get willPushPwmBadge() {
-      return H()
+      return c()
     },
-    PWM_BADGE_SPACE_WIDTH: xs
+    PWM_BADGE_SPACE_WIDTH: sn
   }
 }
-const Fn = hi({
-    component: "pin-input",
-    parts: ["root", "cell"]
+var un = Be({
+    component: `pin-input`,
+    parts: [`root`, `cell`]
   }),
-  Ns = ["Backspace", "Delete", "ArrowLeft", "ArrowRight", "ArrowUp", "ArrowDown", "Home", "End", "Escape", "Enter", "Tab", "Shift", "Control", "Meta"];
-var be, ue, Yt, Jt, we, ie, ce, ge, Ie, Qe, He, Ue, Ze, Je, Vn, We, Fe, $e, Ve;
-const yn = class yn {
-  constructor(t) {
-    yt(this, Je);
-    Vt(this, "opts");
-    Vt(this, "attachment");
-    Vt(this, "inputAttachment");
-    yt(this, be, Y(!1));
-    yt(this, ue, li(!1));
-    yt(this, Yt, Y(null));
-    yt(this, Jt, Y(null));
-    yt(this, we, new Es(() => this.opts.value.current ?? ""));
-    yt(this, ie, D(() => typeof this.opts.pattern.current == "string" ? new RegExp(this.opts.pattern.current) : this.opts.pattern.current));
-    yt(this, ce, Y(vn({
-      prev: [null, null, "none"],
-      willSyntheticBlur: !1
-    })));
-    yt(this, ge);
-    yt(this, Ie);
-    Vt(this, "domContext");
-    Vt(this, "onkeydown", t => {
-      const r = t.key;
-      Ns.includes(r) || t.ctrlKey || t.metaKey || r && i(C(this, ie)) && !i(C(this, ie)).test(r) && t.preventDefault()
-    });
-    yt(this, Qe, D(() => ({
-      position: "relative",
-      cursor: this.opts.disabled.current ? "default" : "text",
-      userSelect: "none",
-      WebkitUserSelect: "none",
-      pointerEvents: "none"
-    })));
-    yt(this, He, D(() => ({
-      id: this.opts.id.current,
-      [Fn.root]: "",
-      style: i(C(this, Qe)),
-      ...this.attachment
-    })));
-    yt(this, Ue, D(() => ({
-      style: {
-        position: "absolute",
+  dn = [`Backspace`, `Delete`, `ArrowLeft`, `ArrowRight`, `ArrowUp`, `ArrowDown`, `Home`, `End`, `Escape`, `Enter`, `Tab`, `Shift`, `Control`, `Meta`],
+  fn = new WeakMap,
+  pn = new WeakMap,
+  mn = new WeakMap,
+  hn = new WeakMap,
+  gn = new WeakMap,
+  _n = new WeakMap,
+  vn = new WeakMap,
+  yn = new WeakMap,
+  bn = new WeakMap,
+  xn = new WeakMap,
+  Sn = new WeakMap,
+  Cn = new WeakMap,
+  wn = new WeakMap,
+  Tn = new WeakSet,
+  En = new WeakMap,
+  Dn = new WeakMap,
+  On = new WeakMap,
+  kn = new WeakMap,
+  An = class e {
+    static create(t) {
+      return new e(t)
+    }
+    constructor(e) {
+      var t;
+      le(this, Tn), M(this, `opts`, void 0), M(this, `attachment`, void 0), M(this, `inputAttachment`, void 0), y(this, fn, P(!1)), y(this, pn, Me(!1)), y(this, mn, P(null)), y(this, hn, P(null)), y(this, gn, new Fe(() => this.opts.value.current ?? ``)), y(this, _n, _(() => typeof this.opts.pattern.current == `string` ? new RegExp(this.opts.pattern.current) : this.opts.pattern.current)), y(this, vn, P(o({
+        prev: [null, null, `none`],
+        willSyntheticBlur: !1
+      }))), y(this, yn, void 0), y(this, bn, void 0), M(this, `domContext`, void 0), M(this, `onkeydown`, e => {
+        let t = e.key;
+        dn.includes(t) || e.ctrlKey || e.metaKey || t && k(c(_n, this)) && !k(c(_n, this)).test(t) && e.preventDefault()
+      }), y(this, xn, _(() => ({
+        position: `relative`,
+        cursor: this.opts.disabled.current ? `default` : `text`,
+        userSelect: `none`,
+        WebkitUserSelect: `none`,
+        pointerEvents: `none`
+      }))), y(this, Sn, _(() => ({
+        id: this.opts.id.current,
+        [un.root]: ``,
+        style: k(c(xn, this)),
+        ...this.attachment
+      }))), y(this, Cn, _(() => ({
+        style: {
+          position: `absolute`,
+          inset: 0,
+          pointerEvents: `none`
+        }
+      }))), y(this, wn, _(() => ({
+        position: `absolute`,
         inset: 0,
-        pointerEvents: "none"
-      }
-    })));
-    yt(this, Ze, D(() => ({
-      position: "absolute",
-      inset: 0,
-      width: C(this, ge).willPushPwmBadge ? `calc(100% + ${C(this,ge).PWM_BADGE_SPACE_WIDTH})` : "100%",
-      clipPath: C(this, ge).willPushPwmBadge ? `inset(0 ${C(this,ge).PWM_BADGE_SPACE_WIDTH} 0 0)` : void 0,
-      height: "100%",
-      display: "flex",
-      textAlign: this.opts.textAlign.current,
-      opacity: "1",
-      color: "transparent",
-      pointerEvents: "all",
-      background: "transparent",
-      caretColor: "transparent",
-      border: "0 solid transparent",
-      outline: "0 solid transparent",
-      boxShadow: "none",
-      lineHeight: "1",
-      letterSpacing: "-.5em",
-      fontSize: "var(--bits-pin-input-root-height)",
-      fontFamily: "monospace",
-      fontVariantNumeric: "tabular-nums"
-    })));
-    yt(this, We, () => {
-      var K;
-      const t = this.opts.inputRef.current,
-        r = this.opts.ref.current;
-      if (!t || !r) return;
-      if (this.domContext.getActiveElement() !== t) {
-        f(C(this, Yt), null), f(C(this, Jt), null);
-        return
-      }
-      const h = t.selectionStart,
-        p = t.selectionEnd,
-        E = t.selectionDirection ?? "none",
-        x = t.maxLength,
-        B = t.value,
-        H = i(C(this, ce)).prev;
-      let S = -1,
-        _ = -1,
-        N;
-      if (B.length !== 0 && h !== null && p !== null) {
-        const g = h === p,
-          w = h === B.length && B.length < x;
-        if (g && !w) {
-          const T = h;
-          if (T === 0) S = 0, _ = 1, N = "forward";
-          else if (T === x) S = T - 1, _ = T, N = "backward";
-          else if (x > 1 && B.length > 1) {
-            let nt = 0;
-            if (H[0] !== null && H[1] !== null) {
-              N = T < H[1] ? "backward" : "forward";
-              const A = H[0] === H[1] && H[0] < x;
-              N === "backward" && !A && (nt = -1)
+        width: c(yn, this).willPushPwmBadge ? `calc(100% + ${c(yn,this).PWM_BADGE_SPACE_WIDTH})` : `100%`,
+        clipPath: c(yn, this).willPushPwmBadge ? `inset(0 ${c(yn,this).PWM_BADGE_SPACE_WIDTH} 0 0)` : void 0,
+        height: `100%`,
+        display: `flex`,
+        textAlign: this.opts.textAlign.current,
+        opacity: `1`,
+        color: `transparent`,
+        pointerEvents: `all`,
+        background: `transparent`,
+        caretColor: `transparent`,
+        border: `0 solid transparent`,
+        outline: `0 solid transparent`,
+        boxShadow: `none`,
+        lineHeight: `1`,
+        letterSpacing: `-.5em`,
+        fontSize: `var(--bits-pin-input-root-height)`,
+        fontFamily: `monospace`,
+        fontVariantNumeric: `tabular-nums`
+      }))), y(this, En, () => {
+        let e = this.opts.inputRef.current,
+          t = this.opts.ref.current;
+        if (!e || !t) return;
+        if (this.domContext.getActiveElement() !== e) {
+          I(c(mn, this), null), I(c(hn, this), null);
+          return
+        }
+        let n = e.selectionStart,
+          r = e.selectionEnd,
+          i = e.selectionDirection ?? `none`,
+          a = e.maxLength,
+          o = e.value,
+          s = k(c(vn, this)).prev,
+          l = -1,
+          u = -1,
+          d;
+        if (o.length !== 0 && n !== null && r !== null) {
+          let e = n === r,
+            t = n === o.length && o.length < a;
+          if (e && !t) {
+            let e = n;
+            if (e === 0) l = 0, u = 1, d = `forward`;
+            else if (e === a) l = e - 1, u = e, d = `backward`;
+            else if (a > 1 && o.length > 1) {
+              let t = 0;
+              if (s[0] !== null && s[1] !== null) {
+                d = e < s[1] ? `backward` : `forward`;
+                let n = s[0] === s[1] && s[0] < a;
+                d === `backward` && !n && (t = -1)
+              }
+              l = t + e, u = t + e + 1
             }
-            S = nt + T, _ = nt + T + 1
+          }
+          if (l !== -1 && u !== -1 && l !== u) {
+            var f;
+            (f = this.opts.inputRef.current) == null || f.setSelectionRange(l, u, d)
           }
         }
-        S !== -1 && _ !== -1 && S !== _ && ((K = this.opts.inputRef.current) == null || K.setSelectionRange(S, _, N))
-      }
-      const L = S !== -1 ? S : h,
-        q = _ !== -1 ? _ : p,
-        O = N ?? E;
-      f(C(this, Yt), L, !0), f(C(this, Jt), q, !0), i(C(this, ce)).prev = [L, q, O]
-    });
-    Vt(this, "oninput", t => {
-      const r = t.currentTarget.value.slice(0, this.opts.maxLength.current);
-      if (r.length > 0 && i(C(this, ie)) && !i(C(this, ie)).test(r)) {
-        t.preventDefault();
-        return
-      }
-      typeof C(this, we).current == "string" && r.length < C(this, we).current.length && this.domContext.getDocument().dispatchEvent(new Event("selectionchange")), this.opts.value.current = r
-    });
-    Vt(this, "onfocus", t => {
-      const r = this.opts.inputRef.current;
-      if (r) {
-        const h = Math.min(r.value.length, this.opts.maxLength.current - 1),
-          p = r.value.length;
-        r.setSelectionRange(h, p), f(C(this, Yt), h, !0), f(C(this, Jt), p, !0)
-      }
-      C(this, ue).current = !0
-    });
-    Vt(this, "onpaste", t => {
-      var _, N, L, q;
-      const r = this.opts.inputRef.current;
-      if (!r) return;
-      const h = O => {
-          const K = r.selectionStart === null ? void 0 : r.selectionStart,
-            g = r.selectionEnd === null ? void 0 : r.selectionEnd,
-            w = K !== g,
-            T = this.opts.value.current;
-          return (w ? T.slice(0, K) + O + T.slice(g) : T.slice(0, K) + O + T.slice(K)).slice(0, this.opts.maxLength.current)
-        },
-        p = O => O.length > 0 && i(C(this, ie)) && !i(C(this, ie)).test(O);
-      if (!((_ = this.opts.pasteTransformer) != null && _.current) && (!C(this, Ie).isIOS || !t.clipboardData || !r)) {
-        const O = h((N = t.clipboardData) == null ? void 0 : N.getData("text/plain"));
-        p(O) && t.preventDefault();
-        return
-      }
-      const E = ((L = t.clipboardData) == null ? void 0 : L.getData("text/plain")) ?? "",
-        x = (q = this.opts.pasteTransformer) != null && q.current ? this.opts.pasteTransformer.current(E) : E;
-      t.preventDefault();
-      const B = h(x);
-      if (p(B)) return;
-      r.value = B, this.opts.value.current = B;
-      const H = Math.min(B.length, this.opts.maxLength.current - 1),
-        S = B.length;
-      r.setSelectionRange(H, S), f(C(this, Yt), H, !0), f(C(this, Jt), S, !0)
-    });
-    Vt(this, "onmouseover", t => {
-      f(C(this, be), !0)
-    });
-    Vt(this, "onmouseleave", t => {
-      f(C(this, be), !1)
-    });
-    Vt(this, "onblur", t => {
-      if (i(C(this, ce)).willSyntheticBlur) {
-        i(C(this, ce)).willSyntheticBlur = !1;
-        return
-      }
-      C(this, ue).current = !1
-    });
-    yt(this, Fe, D(() => {
-      var t;
-      return {
-        id: this.opts.inputId.current,
-        style: i(C(this, Ze)),
-        autocomplete: this.opts.autocomplete.current || "one-time-code",
-        "data-pin-input-input": "",
-        "data-pin-input-input-mss": i(C(this, Yt)),
-        "data-pin-input-input-mse": i(C(this, Jt)),
-        inputmode: this.opts.inputmode.current,
-        pattern: (t = i(C(this, ie))) == null ? void 0 : t.source,
-        maxlength: this.opts.maxLength.current,
-        value: this.opts.value.current,
-        disabled: di(this.opts.disabled.current),
-        onpaste: this.onpaste,
-        oninput: this.oninput,
-        onkeydown: this.onkeydown,
-        onmouseover: this.onmouseover,
-        onmouseleave: this.onmouseleave,
-        onfocus: this.onfocus,
-        onblur: this.onblur,
-        ...this.inputAttachment
-      }
-    }));
-    yt(this, $e, D(() => Array.from({
-      length: this.opts.maxLength.current
-    }).map((t, r) => {
-      const h = C(this, ue).current && i(C(this, Yt)) !== null && i(C(this, Jt)) !== null && (i(C(this, Yt)) === i(C(this, Jt)) && r === i(C(this, Yt)) || r >= i(C(this, Yt)) && r < i(C(this, Jt))),
-        p = this.opts.value.current[r] !== void 0 ? this.opts.value.current[r] : null;
-      return {
-        char: p,
-        isActive: h,
-        hasFakeCaret: h && p === null
-      }
-    })));
-    yt(this, Ve, D(() => ({
-      cells: i(C(this, $e)),
-      isFocused: C(this, ue).current,
-      isHovering: i(C(this, be))
-    })));
-    var r;
-    this.opts = t, this.attachment = hn(this.opts.ref), this.inputAttachment = hn(this.opts.inputRef), this.domContext = new ui(t.ref), me(this, Ie, {
-      value: this.opts.value,
-      isIOS: typeof window < "u" && ((r = window == null ? void 0 : window.CSS) == null ? void 0 : r.supports("-webkit-touch-callout", "none"))
-    }), me(this, ge, Ss({
-      containerRef: this.opts.ref,
-      inputRef: this.opts.inputRef,
-      isFocused: C(this, ue),
-      pushPasswordManagerStrategy: this.opts.pushPasswordManagerStrategy,
-      domContext: this.domContext
-    })), de(() => {
-      const h = this.opts.inputRef.current,
-        p = this.opts.ref.current;
-      if (!h || !p) return;
-      C(this, Ie).value.current !== h.value && (this.opts.value.current = h.value), i(C(this, ce)).prev = [h.selectionStart, h.selectionEnd, h.selectionDirection ?? "none"];
-      const E = Oe(this.domContext.getDocument(), "selectionchange", C(this, We), {
-        capture: !0
-      });
-      C(this, We).call(this), this.domContext.getActiveElement() === h && (C(this, ue).current = !0), this.domContext.getElementById("pin-input-style") || bn(this, Je, Vn).call(this);
-      const x = () => {
-        p && p.style.setProperty("--bits-pin-input-root-height", `${h.clientHeight}px`)
-      };
-      x();
-      const B = new ResizeObserver(x);
-      return B.observe(h), () => {
-        E(), B.disconnect()
-      }
-    }), ci([() => this.opts.value.current, () => this.opts.inputRef.current], () => {
-      Ls(() => {
-        const h = this.opts.inputRef.current;
-        if (!h) return;
-        h.dispatchEvent(new Event("input"));
-        const p = h.selectionStart,
-          E = h.selectionEnd,
-          x = h.selectionDirection ?? "none";
-        p !== null && E !== null && (f(C(this, Yt), p, !0), f(C(this, Jt), E, !0), i(C(this, ce)).prev = [p, E, x])
-      }, this.domContext)
-    }), Ut(() => {
-      const h = this.opts.value.current,
-        p = C(this, we).current,
-        E = this.opts.maxLength.current,
-        x = this.opts.onComplete.current;
-      p !== void 0 && h !== p && p.length < E && h.length === E && x(h)
-    })
-  }
-  static create(t) {
-    return new yn(t)
-  }
-  get rootProps() {
-    return i(C(this, He))
-  }
-  set rootProps(t) {
-    f(C(this, He), t)
-  }
-  get inputWrapperProps() {
-    return i(C(this, Ue))
-  }
-  set inputWrapperProps(t) {
-    f(C(this, Ue), t)
-  }
-  get inputProps() {
-    return i(C(this, Fe))
-  }
-  set inputProps(t) {
-    f(C(this, Fe), t)
-  }
-  get snippetProps() {
-    return i(C(this, Ve))
-  }
-  set snippetProps(t) {
-    f(C(this, Ve), t)
-  }
-};
-be = new WeakMap, ue = new WeakMap, Yt = new WeakMap, Jt = new WeakMap, we = new WeakMap, ie = new WeakMap, ce = new WeakMap, ge = new WeakMap, Ie = new WeakMap, Qe = new WeakMap, He = new WeakMap, Ue = new WeakMap, Ze = new WeakMap, Je = new WeakSet, Vn = function() {
-  const t = this.domContext.getDocument(),
-    r = t.createElement("style");
-  if (r.id = "pin-input-style", t.head.appendChild(r), r.sheet) {
-    const h = "background: transparent !important; color: transparent !important; border-color: transparent !important; opacity: 0 !important; box-shadow: none !important; -webkit-box-shadow: none !important; -webkit-text-fill-color: transparent !important;";
-    Le(r.sheet, "[data-pin-input-input]::selection { background: transparent !important; color: transparent !important; }"), Le(r.sheet, `[data-pin-input-input]:autofill { ${h} }`), Le(r.sheet, `[data-pin-input-input]:-webkit-autofill { ${h} }`), Le(r.sheet, "@supports (-webkit-touch-callout: none) { [data-pin-input-input] { letter-spacing: -.6em !important; font-weight: 100 !important; font-stretch: ultra-condensed; font-optical-sizing: none !important; left: -1px !important; right: 1px !important; } }"), Le(r.sheet, "[data-pin-input-input] + * { pointer-events: all !important; }")
-  }
-}, We = new WeakMap, Fe = new WeakMap, $e = new WeakMap, Ve = new WeakMap;
-let mn = yn;
-var ze;
-const Cn = class Cn {
-  constructor(t) {
-    Vt(this, "opts");
-    Vt(this, "attachment");
-    yt(this, ze, D(() => ({
-      id: this.opts.id.current,
-      [Fn.cell]: "",
-      "data-active": this.opts.cell.current.isActive ? "" : void 0,
-      "data-inactive": this.opts.cell.current.isActive ? void 0 : "",
-      ...this.attachment
-    })));
-    this.opts = t, this.attachment = hn(this.opts.ref)
-  }
-  static create(t) {
-    return new Cn(t)
-  }
-  get props() {
-    return i(C(this, ze))
-  }
-  set props(t) {
-    f(C(this, ze), t)
-  }
-};
-ze = new WeakMap;
-let gn = Cn;
+        let p = l === -1 ? n : l,
+          m = u === -1 ? r : u,
+          h = d ?? i;
+        I(c(mn, this), p, !0), I(c(hn, this), m, !0), k(c(vn, this)).prev = [p, m, h]
+      }), M(this, `oninput`, e => {
+        let t = e.currentTarget.value.slice(0, this.opts.maxLength.current);
+        if (t.length > 0 && k(c(_n, this)) && !k(c(_n, this)).test(t)) {
+          e.preventDefault();
+          return
+        }
+        typeof c(gn, this).current == `string` && t.length < c(gn, this).current.length && this.domContext.getDocument().dispatchEvent(new Event(`selectionchange`)), this.opts.value.current = t
+      }), M(this, `onfocus`, e => {
+        let t = this.opts.inputRef.current;
+        if (t) {
+          let e = Math.min(t.value.length, this.opts.maxLength.current - 1),
+            n = t.value.length;
+          t.setSelectionRange(e, n), I(c(mn, this), e, !0), I(c(hn, this), n, !0)
+        }
+        c(pn, this).current = !0
+      }), M(this, `onpaste`, e => {
+        var t, n, r;
+        let i = this.opts.inputRef.current;
+        if (!i) return;
+        let a = e => {
+            let t = i.selectionStart === null ? void 0 : i.selectionStart,
+              n = i.selectionEnd === null ? void 0 : i.selectionEnd,
+              r = t !== n,
+              a = this.opts.value.current;
+            return (r ? a.slice(0, t) + e + a.slice(n) : a.slice(0, t) + e + a.slice(t)).slice(0, this.opts.maxLength.current)
+          },
+          o = e => e.length > 0 && k(c(_n, this)) && !k(c(_n, this)).test(e);
+        if (!((t = this.opts.pasteTransformer) != null && t.current) && (!c(bn, this).isIOS || !e.clipboardData || !i)) {
+          var s;
+          o(a((s = e.clipboardData) == null ? void 0 : s.getData(`text/plain`))) && e.preventDefault();
+          return
+        }
+        let l = ((n = e.clipboardData) == null ? void 0 : n.getData(`text/plain`)) ?? ``,
+          u = (r = this.opts.pasteTransformer) != null && r.current ? this.opts.pasteTransformer.current(l) : l;
+        e.preventDefault();
+        let d = a(u);
+        if (o(d)) return;
+        i.value = d, this.opts.value.current = d;
+        let f = Math.min(d.length, this.opts.maxLength.current - 1),
+          p = d.length;
+        i.setSelectionRange(f, p), I(c(mn, this), f, !0), I(c(hn, this), p, !0)
+      }), M(this, `onmouseover`, e => {
+        I(c(fn, this), !0)
+      }), M(this, `onmouseleave`, e => {
+        I(c(fn, this), !1)
+      }), M(this, `onblur`, e => {
+        if (k(c(vn, this)).willSyntheticBlur) {
+          k(c(vn, this)).willSyntheticBlur = !1;
+          return
+        }
+        c(pn, this).current = !1
+      }), y(this, Dn, _(() => {
+        var e;
+        return {
+          id: this.opts.inputId.current,
+          style: k(c(wn, this)),
+          autocomplete: this.opts.autocomplete.current || `one-time-code`,
+          "data-pin-input-input": ``,
+          "data-pin-input-input-mss": k(c(mn, this)),
+          "data-pin-input-input-mse": k(c(hn, this)),
+          inputmode: this.opts.inputmode.current,
+          pattern: (e = k(c(_n, this))) == null ? void 0 : e.source,
+          maxlength: this.opts.maxLength.current,
+          value: this.opts.value.current,
+          disabled: Re(this.opts.disabled.current),
+          onpaste: this.onpaste,
+          oninput: this.oninput,
+          onkeydown: this.onkeydown,
+          onmouseover: this.onmouseover,
+          onmouseleave: this.onmouseleave,
+          onfocus: this.onfocus,
+          onblur: this.onblur,
+          ...this.inputAttachment
+        }
+      })), y(this, On, _(() => Array.from({
+        length: this.opts.maxLength.current
+      }).map((e, t) => {
+        let n = c(pn, this).current && k(c(mn, this)) !== null && k(c(hn, this)) !== null && (k(c(mn, this)) === k(c(hn, this)) && t === k(c(mn, this)) || t >= k(c(mn, this)) && t < k(c(hn, this))),
+          r = this.opts.value.current[t] === void 0 ? null : this.opts.value.current[t];
+        return {
+          char: r,
+          isActive: n,
+          hasFakeCaret: n && r === null
+        }
+      }))), y(this, kn, _(() => ({
+        cells: k(c(On, this)),
+        isFocused: c(pn, this).current,
+        isHovering: k(c(fn, this))
+      }))), this.opts = e, this.attachment = He(this.opts.ref), this.inputAttachment = He(this.opts.inputRef), this.domContext = new Pe(e.ref), d(bn, this, {
+        value: this.opts.value,
+        isIOS: typeof window < `u` && ((t = window) == null || (t = t.CSS) == null ? void 0 : t.supports(`-webkit-touch-callout`, `none`))
+      }), d(yn, this, ln({
+        containerRef: this.opts.ref,
+        inputRef: this.opts.inputRef,
+        isFocused: c(pn, this),
+        pushPasswordManagerStrategy: this.opts.pushPasswordManagerStrategy,
+        domContext: this.domContext
+      })), ae(() => {
+        let e = this.opts.inputRef.current,
+          t = this.opts.ref.current;
+        if (!e || !t) return;
+        c(bn, this).value.current !== e.value && (this.opts.value.current = e.value), k(c(vn, this)).prev = [e.selectionStart, e.selectionEnd, e.selectionDirection ?? `none`];
+        let n = N(this.domContext.getDocument(), `selectionchange`, c(En, this), {
+          capture: !0
+        });
+        c(En, this).call(this), this.domContext.getActiveElement() === e && (c(pn, this).current = !0), this.domContext.getElementById(`pin-input-style`) || m(Tn, this, jn).call(this);
+        let r = () => {
+          t && t.style.setProperty(`--bits-pin-input-root-height`, `${e.clientHeight}px`)
+        };
+        r();
+        let i = new ResizeObserver(r);
+        return i.observe(e), () => {
+          n(), i.disconnect()
+        }
+      }), Ne([() => this.opts.value.current, () => this.opts.inputRef.current], () => {
+        Pn(() => {
+          let e = this.opts.inputRef.current;
+          if (!e) return;
+          e.dispatchEvent(new Event(`input`));
+          let t = e.selectionStart,
+            n = e.selectionEnd,
+            r = e.selectionDirection ?? `none`;
+          t !== null && n !== null && (I(c(mn, this), t, !0), I(c(hn, this), n, !0), k(c(vn, this)).prev = [t, n, r])
+        }, this.domContext)
+      }), J(() => {
+        let e = this.opts.value.current,
+          t = c(gn, this).current,
+          n = this.opts.maxLength.current,
+          r = this.opts.onComplete.current;
+        t !== void 0 && e !== t && t.length < n && e.length === n && r(e)
+      })
+    }
+    get rootProps() {
+      return k(c(Sn, this))
+    }
+    set rootProps(e) {
+      I(c(Sn, this), e)
+    }
+    get inputWrapperProps() {
+      return k(c(Cn, this))
+    }
+    set inputWrapperProps(e) {
+      I(c(Cn, this), e)
+    }
+    get inputProps() {
+      return k(c(Dn, this))
+    }
+    set inputProps(e) {
+      I(c(Dn, this), e)
+    }
+    get snippetProps() {
+      return k(c(kn, this))
+    }
+    set snippetProps(e) {
+      I(c(kn, this), e)
+    }
+  };
 
-function Ls(m, t) {
-  const r = t.setTimeout(m, 0),
-    h = t.setTimeout(m, 10),
-    p = t.setTimeout(m, 50);
-  return [r, h, p]
+function jn() {
+  let e = this.domContext.getDocument(),
+    t = e.createElement(`style`);
+  if (t.id = `pin-input-style`, e.head.appendChild(t), t.sheet) {
+    let e = `background: transparent !important; color: transparent !important; border-color: transparent !important; opacity: 0 !important; box-shadow: none !important; -webkit-box-shadow: none !important; -webkit-text-fill-color: transparent !important;`;
+    Fn(t.sheet, `[data-pin-input-input]::selection { background: transparent !important; color: transparent !important; }`), Fn(t.sheet, `[data-pin-input-input]:autofill { ${e} }`), Fn(t.sheet, `[data-pin-input-input]:-webkit-autofill { ${e} }`), Fn(t.sheet, `@supports (-webkit-touch-callout: none) { [data-pin-input-input] { letter-spacing: -.6em !important; font-weight: 100 !important; font-stretch: ultra-condensed; font-optical-sizing: none !important; left: -1px !important; right: 1px !important; } }`), Fn(t.sheet, `[data-pin-input-input] + * { pointer-events: all !important; }`)
+  }
+}
+var Mn = new WeakMap,
+  Nn = class e {
+    static create(t) {
+      return new e(t)
+    }
+    constructor(e) {
+      M(this, `opts`, void 0), M(this, `attachment`, void 0), y(this, Mn, _(() => ({
+        id: this.opts.id.current,
+        [un.cell]: ``,
+        "data-active": this.opts.cell.current.isActive ? `` : void 0,
+        "data-inactive": this.opts.cell.current.isActive ? void 0 : ``,
+        ...this.attachment
+      }))), this.opts = e, this.attachment = He(this.opts.ref)
+    }
+    get props() {
+      return k(c(Mn, this))
+    }
+    set props(e) {
+      I(c(Mn, this), e)
+    }
+  };
+
+function Pn(e, t) {
+  return [t.setTimeout(e, 0), t.setTimeout(e, 10), t.setTimeout(e, 50)]
 }
 
-function Le(m, t) {
+function Fn(e, t) {
   try {
-    m.insertRule(t)
+    e.insertRule(t)
   } catch {
-    console.error("pin input could not insert CSS rule:", t)
+    console.error(`pin input could not insert CSS rule:`, t)
   }
 }
-var As = new Set(["$$slots", "$$events", "$$legacy", "id", "inputId", "ref", "inputRef", "maxlength", "textalign", "pattern", "inputmode", "onComplete", "pushPasswordManagerStrategy", "class", "children", "autocomplete", "disabled", "value", "onValueChange", "pasteTransformer"]),
-  Ps = ft("<div><!> <div><input/></div></div>");
+var In = new Set([`$$slots`, `$$events`, `$$legacy`, `id`, `inputId`, `ref`, `inputRef`, `maxlength`, `textalign`, `pattern`, `inputmode`, `onComplete`, `pushPasswordManagerStrategy`, `class`, `children`, `autocomplete`, `disabled`, `value`, `onValueChange`, `pasteTransformer`]),
+  Ln = E(`<div><!> <div><input/></div></div>`);
 
-function ks(m, t) {
-  const r = On();
-  Qt(t, !0);
-  let h = k(t, "id", 19, () => fn(r)),
-    p = k(t, "inputId", 19, () => `${fn(r)}-input`),
-    E = k(t, "ref", 15, null),
-    x = k(t, "inputRef", 15, null),
-    B = k(t, "maxlength", 3, 6),
-    H = k(t, "textalign", 3, "left"),
-    S = k(t, "inputmode", 3, "numeric"),
-    _ = k(t, "onComplete", 3, Sn),
-    N = k(t, "pushPasswordManagerStrategy", 3, "increase-width"),
-    L = k(t, "class", 3, ""),
-    q = k(t, "autocomplete", 3, "one-time-code"),
-    O = k(t, "disabled", 3, !1),
-    K = k(t, "value", 15, ""),
-    g = k(t, "onValueChange", 3, Sn),
-    w = Ee(t, As);
-  const T = mn.create({
-      id: kt(() => h()),
-      ref: kt(() => E(), M => E(M)),
-      inputRef: kt(() => x(), M => x(M)),
-      inputId: kt(() => p()),
-      autocomplete: kt(() => q()),
-      maxLength: kt(() => B()),
-      textAlign: kt(() => H()),
-      disabled: kt(() => O()),
-      inputmode: kt(() => S()),
-      pattern: kt(() => t.pattern),
-      onComplete: kt(() => _()),
-      value: kt(() => K(), M => {
-        K(M), g()(M)
+function Rn(t, r) {
+  let i = e();
+  T(r, !0);
+  let a = D(r, `id`, 19, () => Le(i)),
+    o = D(r, `inputId`, 19, () => `${Le(i)}-input`),
+    c = D(r, `ref`, 15, null),
+    l = D(r, `inputRef`, 15, null),
+    u = D(r, `maxlength`, 3, 6),
+    d = D(r, `textalign`, 3, `left`),
+    p = D(r, `inputmode`, 3, `numeric`),
+    m = D(r, `onComplete`, 3, ze),
+    h = D(r, `pushPasswordManagerStrategy`, 3, `increase-width`),
+    g = D(r, `class`, 3, ``),
+    v = D(r, `autocomplete`, 3, `one-time-code`),
+    y = D(r, `disabled`, 3, !1),
+    b = D(r, `value`, 15, ``),
+    x = D(r, `onValueChange`, 3, ze),
+    S = re(r, In),
+    C = An.create({
+      id: $(() => a()),
+      ref: $(() => c(), e => c(e)),
+      inputRef: $(() => l(), e => l(e)),
+      inputId: $(() => o()),
+      autocomplete: $(() => v()),
+      maxLength: $(() => u()),
+      textAlign: $(() => d()),
+      disabled: $(() => y()),
+      inputmode: $(() => p()),
+      pattern: $(() => r.pattern),
+      onComplete: $(() => m()),
+      value: $(() => b(), e => {
+        b(e), x()(e)
       }),
-      pushPasswordManagerStrategy: kt(() => N()),
-      pasteTransformer: kt(() => t.pasteTransformer)
+      pushPasswordManagerStrategy: $(() => h()),
+      pasteTransformer: $(() => r.pasteTransformer)
     }),
-    nt = D(() => Ye(w, T.inputProps)),
-    A = D(() => Ye(T.rootProps, {
-      class: L()
+    E = _(() => Ue(S, C.inputProps)),
+    O = _(() => Ue(C.rootProps, {
+      class: g()
     })),
-    X = D(() => Ye(T.inputWrapperProps, {}));
-  var W = Ps();
-  Ce(W, () => ({
-    ...i(A)
+    ee = _(() => Ue(C.inputWrapperProps, {}));
+  var A = Ln();
+  q(A, () => ({
+    ...k(O)
   }));
-  var gt = et(W);
-  Ht(gt, () => t.children ?? Xt, () => T.snippetProps);
-  var It = wt(gt, 2);
-  Ce(It, () => ({
-    ...i(X)
+  var j = G(A);
+  n(j, () => r.children ?? z, () => C.snippetProps);
+  var M = s(j, 2);
+  q(M, () => ({
+    ...k(ee)
   }));
-  var I = et(It);
-  Ce(I, () => ({
-    ...i(nt)
-  }), void 0, void 0, void 0, void 0, !0), J(It), J(W), y(m, W), Zt()
+  var N = G(M);
+  q(N, () => ({
+    ...k(E)
+  }), void 0, void 0, void 0, void 0, !0), L(M), L(A), w(t, A), f()
 }
-var Os = new Set(["$$slots", "$$events", "$$legacy", "id", "ref", "cell", "child", "children"]),
-  Rs = ft("<div><!></div>");
+var zn = new Set([`$$slots`, `$$events`, `$$legacy`, `id`, `ref`, `cell`, `child`, `children`]),
+  Bn = E(`<div><!></div>`);
 
-function Ms(m, t) {
-  const r = On();
-  Qt(t, !0);
-  let h = k(t, "id", 19, () => fn(r)),
-    p = k(t, "ref", 15, null),
-    E = Ee(t, Os);
-  const x = gn.create({
-      id: kt(() => h()),
-      ref: kt(() => p(), L => p(L)),
-      cell: kt(() => t.cell)
+function Vn(t, r) {
+  let i = e();
+  T(r, !0);
+  let a = D(r, `id`, 19, () => Le(i)),
+    o = D(r, `ref`, 15, null),
+    s = re(r, zn),
+    c = Nn.create({
+      id: $(() => a()),
+      ref: $(() => o(), e => o(e)),
+      cell: $(() => r.cell)
     }),
-    B = D(() => Ye(E, x.props));
-  var H = $(),
-    S = G(H);
-  {
-    var _ = L => {
-        var q = $(),
-          O = G(q);
-        Ht(O, () => t.child, () => ({
-          props: i(B)
-        })), y(L, q)
-      },
-      N = L => {
-        var q = Rs();
-        Ce(q, () => ({
-          ...i(B)
-        }));
-        var O = et(q);
-        Ht(O, () => t.children ?? Xt), J(q), y(L, q)
-      };
-    rt(S, L => {
-      t.child ? L(_) : L(N, -1)
-    })
-  }
-  y(m, H), Zt()
+    u = _(() => Ue(s, c.props));
+  var d = S(),
+    p = b(d),
+    m = e => {
+      var t = S(),
+        i = b(t);
+      n(i, () => r.child, () => ({
+        props: k(u)
+      })), w(e, t)
+    },
+    h = e => {
+      var t = Bn();
+      q(t, () => ({
+        ...k(u)
+      }));
+      var i = G(t);
+      n(i, () => r.children ?? z), L(t), w(e, t)
+    };
+  l(p, e => {
+    r.child ? e(m) : e(h, -1)
+  }), w(t, d), f()
 }
-var Bs = new Set(["$$slots", "$$events", "$$legacy", "ref", "cell", "class"]),
-  Hs = ft('<div class="pointer-events-none absolute inset-0 flex items-center justify-center"><div class="animate-caret-blink bg-base-content/80 h-4 w-px duration-1000"></div></div>'),
-  Us = ft(" <!>", 1);
+var Hn = new Set([`$$slots`, `$$events`, `$$legacy`, `ref`, `cell`, `class`]),
+  Un = E(`<div class="pointer-events-none absolute inset-0 flex items-center justify-center"><div class="animate-caret-blink bg-base-content/80 h-4 w-px duration-1000"></div></div>`),
+  Wn = E(` <!>`, 1);
 
-function Ws(m, t) {
-  Qt(t, !0);
-  let r = k(t, "ref", 15, null),
-    h = Ee(t, Bs);
-  var p = $(),
-    E = G(p);
+function Gn(e, t) {
+  T(t, !0);
+  let n = D(t, `ref`, 15, null),
+    r = re(t, Hn);
+  var i = S(),
+    a = b(i);
   {
-    let x = D(() => pn("border-input relative flex size-12 items-center justify-center border-y border-r text-xl transition-all first:rounded-l-md first:border-l last:rounded-r-md", t.cell.isActive && "ring-base-content/40 z-10 ring-2", t.class));
-    $t(E, () => Ms, (B, H) => {
-      H(B, ke({
+    let e = _(() => en(`border-input relative flex size-12 items-center justify-center border-y border-r text-xl transition-all first:rounded-l-md first:border-l last:rounded-r-md`, t.cell.isActive && `ring-base-content/40 z-10 ring-2`, t.class));
+    Y(a, () => Vn, (i, a) => {
+      a(i, oe({
         get cell() {
           return t.cell
         },
         get class() {
-          return i(x)
+          return k(e)
         }
-      }, () => h, {
+      }, () => r, {
         get ref() {
-          return r()
+          return n()
         },
-        set ref(S) {
-          r(S)
+        set ref(e) {
+          n(e)
         },
-        children: (S, _) => {
-          Rn();
-          var N = Us(),
-            L = G(N),
-            q = wt(L);
-          {
-            var O = K => {
-              var g = Hs();
-              y(K, g)
+        children: (e, n) => {
+          H();
+          var r = Wn(),
+            i = b(r),
+            a = s(i),
+            o = e => {
+              var t = Un();
+              w(e, t)
             };
-            rt(q, K => {
-              t.cell.hasFakeCaret && K(O)
-            })
-          }
-          Dt(() => Bt(L, `${t.cell.char??""} `)), y(S, N)
+          l(a, e => {
+            t.cell.hasFakeCaret && e(o)
+          }), W(() => B(i, `${t.cell.char??``} `)), w(e, r)
         },
         $$slots: {
           default: !0
@@ -1877,2395 +1742,2322 @@ function Ws(m, t) {
       }))
     })
   }
-  y(m, p), Zt()
+  w(e, i), f()
 }
-var Fs = new Set(["$$slots", "$$events", "$$legacy", "ref", "class", "value"]);
+var Kn = new Set([`$$slots`, `$$events`, `$$legacy`, `ref`, `class`, `value`]);
 
-function Vs(m, t) {
-  Qt(t, !0);
-  let r = k(t, "ref", 15, null),
-    h = k(t, "value", 15, ""),
-    p = Ee(t, Fs);
-  var E = $(),
-    x = G(E);
+function qn(e, t) {
+  T(t, !0);
+  let n = D(t, `ref`, 15, null),
+    r = D(t, `value`, 15, ``),
+    i = re(t, Kn);
+  var a = S(),
+    o = b(a);
   {
-    let B = D(() => pn("flex items-center gap-2 has-disabled:opacity-50 [&_input]:disabled:cursor-not-allowed", t.class));
-    $t(x, () => ks, (H, S) => {
-      S(H, ke({
+    let e = _(() => en(`flex items-center gap-2 has-disabled:opacity-50 [&_input]:disabled:cursor-not-allowed`, t.class));
+    Y(o, () => Rn, (t, a) => {
+      a(t, oe({
         get class() {
-          return i(B)
+          return k(e)
         }
-      }, () => p, {
+      }, () => i, {
         get ref() {
-          return r()
+          return n()
         },
-        set ref(_) {
-          r(_)
+        set ref(e) {
+          n(e)
         },
         get value() {
-          return h()
+          return r()
         },
-        set value(_) {
-          h(_)
+        set value(e) {
+          r(e)
         }
       }))
     })
   }
-  y(m, E), Zt()
+  w(e, a), f()
 }
 
-function zs(m) {
-  return m.closest("dialog") ?? document.body
+function Jn(e) {
+  return e.closest(`dialog`) ?? document.body
 }
-var un = {
-    exports: {}
-  },
-  An;
-
-function js() {
-  return An || (An = 1, (function(m) {
-    (function(t) {
-      m.exports ? m.exports = t() : window.intlTelInput = t()
-    })(() => {
-      var t = (() => {
-        var r = Object.defineProperty,
-          h = Object.getOwnPropertyDescriptor,
-          p = Object.getOwnPropertyNames,
-          E = Object.prototype.hasOwnProperty,
-          x = (o, e) => {
-            for (var n in e) r(o, n, {
-              get: e[n],
-              enumerable: !0
-            })
-          },
-          B = (o, e, n, s) => {
-            if (e && typeof e == "object" || typeof e == "function")
-              for (let a of p(e)) !E.call(o, a) && a !== n && r(o, a, {
-                get: () => e[a],
-                enumerable: !(s = h(e, a)) || s.enumerable
-              });
-            return o
-          },
-          H = o => B(r({}, "__esModule", {
-            value: !0
-          }), o),
-          S = {};
-        x(S, {
-          Iti: () => at,
-          default: () => Nt
-        });
-        var _ = [
-            ["af", "93", 0, null, "0"],
-            ["ax", "358", 1, ["18", "4"], "0"],
-            ["al", "355", 0, null, "0"],
-            ["dz", "213", 0, null, "0"],
-            ["as", "1", 5, ["684"], "1"],
-            ["ad", "376"],
-            ["ao", "244"],
-            ["ai", "1", 6, ["264"], "1"],
-            ["ag", "1", 7, ["268"], "1"],
-            ["ar", "54", 0, null, "0"],
-            ["am", "374", 0, null, "0"],
-            ["aw", "297"],
-            ["ac", "247"],
-            ["au", "61", 0, ["4"], "0"],
-            ["at", "43", 0, null, "0"],
-            ["az", "994", 0, null, "0"],
-            ["bs", "1", 8, ["242"], "1"],
-            ["bh", "973"],
-            ["bd", "880", 0, null, "0"],
-            ["bb", "1", 9, ["246"], "1"],
-            ["by", "375", 0, null, "8"],
-            ["be", "32", 0, null, "0"],
-            ["bz", "501"],
-            ["bj", "229"],
-            ["bm", "1", 10, ["441"], "1"],
-            ["bt", "975"],
-            ["bo", "591", 0, null, "0"],
-            ["ba", "387", 0, null, "0"],
-            ["bw", "267"],
-            ["br", "55", 0, null, "0"],
-            ["io", "246"],
-            ["vg", "1", 11, ["284"], "1"],
-            ["bn", "673"],
-            ["bg", "359", 0, null, "0"],
-            ["bf", "226"],
-            ["bi", "257"],
-            ["kh", "855", 0, null, "0"],
-            ["cm", "237"],
-            ["ca", "1", 1, ["204", "226", "236", "249", "250", "257", "263", "289", "306", "343", "354", "365", "367", "368", "382", "403", "416", "418", "428", "431", "437", "438", "450", "468", "474", "506", "514", "519", "548", "579", "581", "584", "587", "604", "613", "639", "647", "672", "683", "705", "709", "742", "753", "778", "780", "782", "807", "819", "825", "867", "873", "879", "902", "905", "942"], "1"],
-            ["cv", "238"],
-            ["bq", "599", 1, ["3", "4", "7"]],
-            ["ky", "1", 12, ["345"], "1"],
-            ["cf", "236"],
-            ["td", "235"],
-            ["cl", "56"],
-            ["cn", "86", 0, null, "0"],
-            ["cx", "61", 2, ["4", "89164"], "0"],
-            ["cc", "61", 1, ["4", "89162"], "0"],
-            ["co", "57", 0, null, "0"],
-            ["km", "269"],
-            ["cg", "242"],
-            ["cd", "243", 0, null, "0"],
-            ["ck", "682"],
-            ["cr", "506"],
-            ["ci", "225"],
-            ["hr", "385", 0, null, "0"],
-            ["cu", "53", 0, null, "0"],
-            ["cw", "599", 0],
-            ["cy", "357"],
-            ["cz", "420"],
-            ["dk", "45"],
-            ["dj", "253"],
-            ["dm", "1", 13, ["767"], "1"],
-            ["do", "1", 2, ["809", "829", "849"], "1"],
-            ["ec", "593", 0, null, "0"],
-            ["eg", "20", 0, null, "0"],
-            ["sv", "503"],
-            ["gq", "240"],
-            ["er", "291", 0, null, "0"],
-            ["ee", "372"],
-            ["sz", "268"],
-            ["et", "251", 0, null, "0"],
-            ["fk", "500"],
-            ["fo", "298"],
-            ["fj", "679"],
-            ["fi", "358", 0, ["4"], "0"],
-            ["fr", "33", 0, null, "0"],
-            ["gf", "594", 0, null, "0"],
-            ["pf", "689"],
-            ["ga", "241"],
-            ["gm", "220"],
-            ["ge", "995", 0, null, "0"],
-            ["de", "49", 0, null, "0"],
-            ["gh", "233", 0, null, "0"],
-            ["gi", "350"],
-            ["gr", "30"],
-            ["gl", "299"],
-            ["gd", "1", 14, ["473"], "1"],
-            ["gp", "590", 0, null, "0"],
-            ["gu", "1", 15, ["671"], "1"],
-            ["gt", "502"],
-            ["gg", "44", 1, ["1481", "7781", "7839", "7911"], "0"],
-            ["gn", "224"],
-            ["gw", "245"],
-            ["gy", "592"],
-            ["ht", "509"],
-            ["hn", "504"],
-            ["hk", "852"],
-            ["hu", "36", 0, null, "06"],
-            ["is", "354"],
-            ["in", "91", 0, null, "0"],
-            ["id", "62", 0, null, "0"],
-            ["ir", "98", 0, null, "0"],
-            ["iq", "964", 0, null, "0"],
-            ["ie", "353", 0, null, "0"],
-            ["im", "44", 2, ["1624", "74576", "7524", "7624", "7924"], "0"],
-            ["il", "972", 0, null, "0"],
-            ["it", "39", 0, ["3"]],
-            ["jm", "1", 4, ["658", "876"], "1"],
-            ["jp", "81", 0, null, "0"],
-            ["je", "44", 3, ["1534", "7509", "7700", "7797", "7829", "7937"], "0"],
-            ["jo", "962", 0, null, "0"],
-            ["kz", "7", 1, ["33", "7"], "8"],
-            ["ke", "254", 0, null, "0"],
-            ["ki", "686", 0, null, "0"],
-            ["xk", "383", 0, null, "0"],
-            ["kw", "965"],
-            ["kg", "996", 0, null, "0"],
-            ["la", "856", 0, null, "0"],
-            ["lv", "371"],
-            ["lb", "961", 0, null, "0"],
-            ["ls", "266"],
-            ["lr", "231", 0, null, "0"],
-            ["ly", "218", 0, null, "0"],
-            ["li", "423", 0, null, "0"],
-            ["lt", "370", 0, null, "0"],
-            ["lu", "352"],
-            ["mo", "853"],
-            ["mg", "261", 0, null, "0"],
-            ["mw", "265", 0, null, "0"],
-            ["my", "60", 0, null, "0"],
-            ["mv", "960"],
-            ["ml", "223"],
-            ["mt", "356"],
-            ["mh", "692", 0, null, "1"],
-            ["mq", "596", 0, null, "0"],
-            ["mr", "222"],
-            ["mu", "230"],
-            ["yt", "262", 1, ["269", "639"], "0"],
-            ["mx", "52"],
-            ["fm", "691"],
-            ["md", "373", 0, null, "0"],
-            ["mc", "377", 0, null, "0"],
-            ["mn", "976", 0, null, "0"],
-            ["me", "382", 0, null, "0"],
-            ["ms", "1", 16, ["664"], "1"],
-            ["ma", "212", 0, ["6", "7"], "0"],
-            ["mz", "258"],
-            ["mm", "95", 0, null, "0"],
-            ["na", "264", 0, null, "0"],
-            ["nr", "674"],
-            ["np", "977", 0, null, "0"],
-            ["nl", "31", 0, null, "0"],
-            ["nc", "687"],
-            ["nz", "64", 0, null, "0"],
-            ["ni", "505"],
-            ["ne", "227"],
-            ["ng", "234", 0, null, "0"],
-            ["nu", "683"],
-            ["nf", "672"],
-            ["kp", "850", 0, null, "0"],
-            ["mk", "389", 0, null, "0"],
-            ["mp", "1", 17, ["670"], "1"],
-            ["no", "47", 0, ["4", "9"]],
-            ["om", "968"],
-            ["pk", "92", 0, null, "0"],
-            ["pw", "680"],
-            ["ps", "970", 0, null, "0"],
-            ["pa", "507"],
-            ["pg", "675"],
-            ["py", "595", 0, null, "0"],
-            ["pe", "51", 0, null, "0"],
-            ["ph", "63", 0, null, "0"],
-            ["pl", "48"],
-            ["pt", "351"],
-            ["pr", "1", 3, ["787", "939"], "1"],
-            ["qa", "974"],
-            ["re", "262", 0, null, "0"],
-            ["ro", "40", 0, null, "0"],
-            ["ru", "7", 0, ["33"], "8"],
-            ["rw", "250", 0, null, "0"],
-            ["ws", "685"],
-            ["sm", "378"],
-            ["st", "239"],
-            ["sa", "966", 0, null, "0"],
-            ["sn", "221"],
-            ["rs", "381", 0, null, "0"],
-            ["sc", "248"],
-            ["sl", "232", 0, null, "0"],
-            ["sg", "65"],
-            ["sx", "1", 21, ["721"], "1"],
-            ["sk", "421", 0, null, "0"],
-            ["si", "386", 0, null, "0"],
-            ["sb", "677"],
-            ["so", "252", 0, null, "0"],
-            ["za", "27", 0, null, "0"],
-            ["kr", "82", 0, null, "0"],
-            ["ss", "211", 0, null, "0"],
-            ["es", "34"],
-            ["lk", "94", 0, null, "0"],
-            ["bl", "590", 1, null, "0"],
-            ["sh", "290"],
-            ["kn", "1", 18, ["869"], "1"],
-            ["lc", "1", 19, ["758"], "1"],
-            ["mf", "590", 2, null, "0"],
-            ["pm", "508", 0, null, "0"],
-            ["vc", "1", 20, ["784"], "1"],
-            ["sd", "249", 0, null, "0"],
-            ["sr", "597"],
-            ["sj", "47", 1, ["4", "79", "9"]],
-            ["se", "46", 0, null, "0"],
-            ["ch", "41", 0, null, "0"],
-            ["sy", "963", 0, null, "0"],
-            ["tw", "886", 0, null, "0"],
-            ["tj", "992"],
-            ["tz", "255", 0, null, "0"],
-            ["th", "66", 0, null, "0"],
-            ["tl", "670"],
-            ["tg", "228"],
-            ["tk", "690"],
-            ["to", "676"],
-            ["tt", "1", 22, ["868"], "1"],
-            ["tn", "216"],
-            ["tr", "90", 0, null, "0"],
-            ["tm", "993", 0, null, "8"],
-            ["tc", "1", 23, ["649"], "1"],
-            ["tv", "688"],
-            ["vi", "1", 24, ["340"], "1"],
-            ["ug", "256", 0, null, "0"],
-            ["ua", "380", 0, null, "0"],
-            ["ae", "971", 0, null, "0"],
-            ["gb", "44", 0, null, "0"],
-            ["us", "1", 0, null, "1"],
-            ["uy", "598", 0, null, "0"],
-            ["uz", "998"],
-            ["vu", "678"],
-            ["va", "39", 1, ["06698", "3"]],
-            ["ve", "58", 0, null, "0"],
-            ["vn", "84", 0, null, "0"],
-            ["wf", "681"],
-            ["eh", "212", 1, ["5288", "5289", "6", "7"], "0"],
-            ["ye", "967", 0, null, "0"],
-            ["zm", "260", 0, null, "0"],
-            ["zw", "263", 0, null, "0"]
-          ],
-          N = [];
-        for (const o of _) N.push({
-          name: "",
-          iso2: o[0],
-          dialCode: o[1],
-          priority: o[2] || 0,
-          areaCodes: o[3] || null,
-          nodeById: {},
-          nationalPrefix: o[4] || null,
-          normalisedName: "",
-          initials: "",
-          dialCodePlus: ""
-        });
-        var L = N,
-          q = {
-            ad: "Andorra",
-            ae: "United Arab Emirates",
-            af: "Afghanistan",
-            ag: "Antigua & Barbuda",
-            ai: "Anguilla",
-            al: "Albania",
-            am: "Armenia",
-            ao: "Angola",
-            ar: "Argentina",
-            as: "American Samoa",
-            at: "Austria",
-            au: "Australia",
-            aw: "Aruba",
-            ax: "Åland Islands",
-            az: "Azerbaijan",
-            ba: "Bosnia & Herzegovina",
-            bb: "Barbados",
-            bd: "Bangladesh",
-            be: "Belgium",
-            bf: "Burkina Faso",
-            bg: "Bulgaria",
-            bh: "Bahrain",
-            bi: "Burundi",
-            bj: "Benin",
-            bl: "St. Barthélemy",
-            bm: "Bermuda",
-            bn: "Brunei",
-            bo: "Bolivia",
-            bq: "Caribbean Netherlands",
-            br: "Brazil",
-            bs: "Bahamas",
-            bt: "Bhutan",
-            bw: "Botswana",
-            by: "Belarus",
-            bz: "Belize",
-            ca: "Canada",
-            cc: "Cocos (Keeling) Islands",
-            cd: "Congo - Kinshasa",
-            cf: "Central African Republic",
-            cg: "Congo - Brazzaville",
-            ch: "Switzerland",
-            ci: "Côte d’Ivoire",
-            ck: "Cook Islands",
-            cl: "Chile",
-            cm: "Cameroon",
-            cn: "China",
-            co: "Colombia",
-            cr: "Costa Rica",
-            cu: "Cuba",
-            cv: "Cape Verde",
-            cw: "Curaçao",
-            cx: "Christmas Island",
-            cy: "Cyprus",
-            cz: "Czechia",
-            de: "Germany",
-            dj: "Djibouti",
-            dk: "Denmark",
-            dm: "Dominica",
-            do: "Dominican Republic",
-            dz: "Algeria",
-            ec: "Ecuador",
-            ee: "Estonia",
-            eg: "Egypt",
-            eh: "Western Sahara",
-            er: "Eritrea",
-            es: "Spain",
-            et: "Ethiopia",
-            fi: "Finland",
-            fj: "Fiji",
-            fk: "Falkland Islands",
-            fm: "Micronesia",
-            fo: "Faroe Islands",
-            fr: "France",
-            ga: "Gabon",
-            gb: "United Kingdom",
-            gd: "Grenada",
-            ge: "Georgia",
-            gf: "French Guiana",
-            gg: "Guernsey",
-            gh: "Ghana",
-            gi: "Gibraltar",
-            gl: "Greenland",
-            gm: "Gambia",
-            gn: "Guinea",
-            gp: "Guadeloupe",
-            gq: "Equatorial Guinea",
-            gr: "Greece",
-            gt: "Guatemala",
-            gu: "Guam",
-            gw: "Guinea-Bissau",
-            gy: "Guyana",
-            hk: "Hong Kong SAR China",
-            hn: "Honduras",
-            hr: "Croatia",
-            ht: "Haiti",
-            hu: "Hungary",
-            id: "Indonesia",
-            ie: "Ireland",
-            il: "Israel",
-            im: "Isle of Man",
-            in: "India",
-            io: "British Indian Ocean Territory",
-            iq: "Iraq",
-            ir: "Iran",
-            is: "Iceland",
-            it: "Italy",
-            je: "Jersey",
-            jm: "Jamaica",
-            jo: "Jordan",
-            jp: "Japan",
-            ke: "Kenya",
-            kg: "Kyrgyzstan",
-            kh: "Cambodia",
-            ki: "Kiribati",
-            km: "Comoros",
-            kn: "St. Kitts & Nevis",
-            kp: "North Korea",
-            kr: "South Korea",
-            kw: "Kuwait",
-            ky: "Cayman Islands",
-            kz: "Kazakhstan",
-            la: "Laos",
-            lb: "Lebanon",
-            lc: "St. Lucia",
-            li: "Liechtenstein",
-            lk: "Sri Lanka",
-            lr: "Liberia",
-            ls: "Lesotho",
-            lt: "Lithuania",
-            lu: "Luxembourg",
-            lv: "Latvia",
-            ly: "Libya",
-            ma: "Morocco",
-            mc: "Monaco",
-            md: "Moldova",
-            me: "Montenegro",
-            mf: "St. Martin",
-            mg: "Madagascar",
-            mh: "Marshall Islands",
-            mk: "North Macedonia",
-            ml: "Mali",
-            mm: "Myanmar (Burma)",
-            mn: "Mongolia",
-            mo: "Macao SAR China",
-            mp: "Northern Mariana Islands",
-            mq: "Martinique",
-            mr: "Mauritania",
-            ms: "Montserrat",
-            mt: "Malta",
-            mu: "Mauritius",
-            mv: "Maldives",
-            mw: "Malawi",
-            mx: "Mexico",
-            my: "Malaysia",
-            mz: "Mozambique",
-            na: "Namibia",
-            nc: "New Caledonia",
-            ne: "Niger",
-            nf: "Norfolk Island",
-            ng: "Nigeria",
-            ni: "Nicaragua",
-            nl: "Netherlands",
-            no: "Norway",
-            np: "Nepal",
-            nr: "Nauru",
-            nu: "Niue",
-            nz: "New Zealand",
-            om: "Oman",
-            pa: "Panama",
-            pe: "Peru",
-            pf: "French Polynesia",
-            pg: "Papua New Guinea",
-            ph: "Philippines",
-            pk: "Pakistan",
-            pl: "Poland",
-            pm: "St. Pierre & Miquelon",
-            pr: "Puerto Rico",
-            ps: "Palestinian Territories",
-            pt: "Portugal",
-            pw: "Palau",
-            py: "Paraguay",
-            qa: "Qatar",
-            re: "Réunion",
-            ro: "Romania",
-            rs: "Serbia",
-            ru: "Russia",
-            rw: "Rwanda",
-            sa: "Saudi Arabia",
-            sb: "Solomon Islands",
-            sc: "Seychelles",
-            sd: "Sudan",
-            se: "Sweden",
-            sg: "Singapore",
-            sh: "St. Helena",
-            si: "Slovenia",
-            sj: "Svalbard & Jan Mayen",
-            sk: "Slovakia",
-            sl: "Sierra Leone",
-            sm: "San Marino",
-            sn: "Senegal",
-            so: "Somalia",
-            sr: "Suriname",
-            ss: "South Sudan",
-            st: "São Tomé & Príncipe",
-            sv: "El Salvador",
-            sx: "Sint Maarten",
-            sy: "Syria",
-            sz: "Eswatini",
-            tc: "Turks & Caicos Islands",
-            td: "Chad",
-            tg: "Togo",
-            th: "Thailand",
-            tj: "Tajikistan",
-            tk: "Tokelau",
-            tl: "Timor-Leste",
-            tm: "Turkmenistan",
-            tn: "Tunisia",
-            to: "Tonga",
-            tr: "Turkey",
-            tt: "Trinidad & Tobago",
-            tv: "Tuvalu",
-            tw: "Taiwan",
-            tz: "Tanzania",
-            ua: "Ukraine",
-            ug: "Uganda",
-            us: "United States",
-            uy: "Uruguay",
-            uz: "Uzbekistan",
-            va: "Vatican City",
-            vc: "St. Vincent & Grenadines",
-            ve: "Venezuela",
-            vg: "British Virgin Islands",
-            vi: "U.S. Virgin Islands",
-            vn: "Vietnam",
-            vu: "Vanuatu",
-            wf: "Wallis & Futuna",
-            ws: "Samoa",
-            ye: "Yemen",
-            yt: "Mayotte",
-            za: "South Africa",
-            zm: "Zambia",
-            zw: "Zimbabwe"
-          },
-          O = q,
-          K = {
-            selectedCountryAriaLabel: "Change country, selected ${countryName} (${dialCode})",
-            noCountrySelected: "Select country",
-            countryListAriaLabel: "List of countries",
-            searchPlaceholder: "Search",
-            clearSearchAriaLabel: "Clear search",
-            zeroSearchResults: "No results found",
-            oneSearchResult: "1 result found",
-            multipleSearchResults: "${count} results found",
-            ac: "Ascension Island",
-            xk: "Kosovo"
-          },
-          g = K,
-          w = {
-            ...O,
-            ...g
-          },
-          T = w,
-          nt = {
-            OPEN_COUNTRY_DROPDOWN: "open:countrydropdown",
-            CLOSE_COUNTRY_DROPDOWN: "close:countrydropdown",
-            COUNTRY_CHANGE: "countrychange",
-            INPUT: "input"
-          },
-          A = {
-            HIDE: "iti__hide",
-            V_HIDE: "iti__v-hide",
-            ARROW_UP: "iti__arrow--up",
-            GLOBE: "iti__globe",
-            FLAG: "iti__flag",
-            COUNTRY_ITEM: "iti__country",
-            HIGHLIGHT: "iti__highlight"
-          },
-          X = {
-            ARROW_UP: "ArrowUp",
-            ARROW_DOWN: "ArrowDown",
-            SPACE: " ",
-            ENTER: "Enter",
-            ESC: "Escape",
-            TAB: "Tab"
-          },
-          W = {
-            PASTE: "insertFromPaste",
-            DELETE_FWD: "deleteContentForward"
-          },
-          gt = {
-            ALPHA_UNICODE: new RegExp("\\p{L}", "u"),
-            NON_PLUS_NUMERIC: /[^+0-9]/,
-            NON_PLUS_NUMERIC_GLOBAL: /[^+0-9]/g,
-            HIDDEN_SEARCH_CHAR: /^[a-zA-ZÀ-ÿа-яА-Я ]$/
-          },
-          It = {
-            HIDDEN_SEARCH_RESET_MS: 1e3
-          },
-          I = {
-            UNKNOWN_NUMBER_TYPE: -99,
-            UNKNOWN_VALIDATION_ERROR: -99
-          },
-          M = {
-            SANE_SELECTED_WITH_DIAL_WIDTH: 78,
-            SANE_SELECTED_NO_DIAL_WIDTH: 42,
-            INPUT_PADDING_EXTRA_LEFT: 6
-          },
-          ct = {
-            NANP: "1"
-          },
-          Tt = {
-            DIAL_CODE: "44",
-            MOBILE_PREFIX: "7",
-            MOBILE_CORE_LENGTH: 10
-          },
-          Lt = {
-            ISO2: "us"
-          },
-          St = {
-            AGGRESSIVE: "aggressive",
-            POLITE: "polite"
-          },
-          Rt = {
-            AUTO: "auto"
-          },
-          zt = {
-            COUNTRY_CODE: "countryCode",
-            DIAL_CODE: "dialCode"
-          },
-          mt = {
-            EXPANDED: "aria-expanded",
-            LABEL: "aria-label",
-            SELECTED: "aria-selected",
-            ACTIVE_DESCENDANT: "aria-activedescendant",
-            HASPOPUP: "aria-haspopup",
-            CONTROLS: "aria-controls",
-            HIDDEN: "aria-hidden",
-            AUTOCOMPLETE: "aria-autocomplete",
-            MODAL: "aria-modal"
-          },
-          st = o => typeof window < "u" && typeof window.matchMedia == "function" && window.matchMedia(o).matches,
-          Q = () => {
-            if (typeof navigator < "u" && typeof window < "u") {
-              const o = /Android.+Mobile|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
-                e = st("(max-width: 500px)"),
-                n = st("(max-height: 600px)"),
-                s = st("(pointer: coarse)");
-              return o || e || s && n
+var Yn = se(O(((e, t) => {
+    (function(e) {
+      typeof t == `object` && t.exports ? t.exports = e() : window.intlTelInput = e()
+    })(() => (() => {
+      var e = Object.defineProperty,
+        t = Object.getOwnPropertyDescriptor,
+        n = Object.getOwnPropertyNames,
+        r = Object.prototype.hasOwnProperty,
+        i = (t, n) => {
+          for (var r in n) e(t, r, {
+            get: n[r],
+            enumerable: !0
+          })
+        },
+        a = (i, a, o, s) => {
+          if (a && typeof a == `object` || typeof a == `function`)
+            for (let c of n(a)) !r.call(i, c) && c !== o && e(i, c, {
+              get: () => a[c],
+              enumerable: !(s = t(a, c)) || s.enumerable
+            });
+          return i
+        },
+        o = t => a(e({}, `__esModule`, {
+          value: !0
+        }), t),
+        s = {};
+      i(s, {
+        Iti: () => G,
+        default: () => Y
+      });
+      var c = [
+          [`af`, `93`, 0, null, `0`],
+          [`ax`, `358`, 1, [`18`, `4`], `0`],
+          [`al`, `355`, 0, null, `0`],
+          [`dz`, `213`, 0, null, `0`],
+          [`as`, `1`, 5, [`684`], `1`],
+          [`ad`, `376`],
+          [`ao`, `244`],
+          [`ai`, `1`, 6, [`264`], `1`],
+          [`ag`, `1`, 7, [`268`], `1`],
+          [`ar`, `54`, 0, null, `0`],
+          [`am`, `374`, 0, null, `0`],
+          [`aw`, `297`],
+          [`ac`, `247`],
+          [`au`, `61`, 0, [`4`], `0`],
+          [`at`, `43`, 0, null, `0`],
+          [`az`, `994`, 0, null, `0`],
+          [`bs`, `1`, 8, [`242`], `1`],
+          [`bh`, `973`],
+          [`bd`, `880`, 0, null, `0`],
+          [`bb`, `1`, 9, [`246`], `1`],
+          [`by`, `375`, 0, null, `8`],
+          [`be`, `32`, 0, null, `0`],
+          [`bz`, `501`],
+          [`bj`, `229`],
+          [`bm`, `1`, 10, [`441`], `1`],
+          [`bt`, `975`],
+          [`bo`, `591`, 0, null, `0`],
+          [`ba`, `387`, 0, null, `0`],
+          [`bw`, `267`],
+          [`br`, `55`, 0, null, `0`],
+          [`io`, `246`],
+          [`vg`, `1`, 11, [`284`], `1`],
+          [`bn`, `673`],
+          [`bg`, `359`, 0, null, `0`],
+          [`bf`, `226`],
+          [`bi`, `257`],
+          [`kh`, `855`, 0, null, `0`],
+          [`cm`, `237`],
+          [`ca`, `1`, 1, `204.226.236.249.250.257.263.289.306.343.354.365.367.368.382.403.416.418.428.431.437.438.450.468.474.506.514.519.548.579.581.584.587.604.613.639.647.672.683.705.709.742.753.778.780.782.807.819.825.867.873.879.902.905.942`.split(`.`), `1`],
+          [`cv`, `238`],
+          [`bq`, `599`, 1, [`3`, `4`, `7`]],
+          [`ky`, `1`, 12, [`345`], `1`],
+          [`cf`, `236`],
+          [`td`, `235`],
+          [`cl`, `56`],
+          [`cn`, `86`, 0, null, `0`],
+          [`cx`, `61`, 2, [`4`, `89164`], `0`],
+          [`cc`, `61`, 1, [`4`, `89162`], `0`],
+          [`co`, `57`, 0, null, `0`],
+          [`km`, `269`],
+          [`cg`, `242`],
+          [`cd`, `243`, 0, null, `0`],
+          [`ck`, `682`],
+          [`cr`, `506`],
+          [`ci`, `225`],
+          [`hr`, `385`, 0, null, `0`],
+          [`cu`, `53`, 0, null, `0`],
+          [`cw`, `599`, 0],
+          [`cy`, `357`],
+          [`cz`, `420`],
+          [`dk`, `45`],
+          [`dj`, `253`],
+          [`dm`, `1`, 13, [`767`], `1`],
+          [`do`, `1`, 2, [`809`, `829`, `849`], `1`],
+          [`ec`, `593`, 0, null, `0`],
+          [`eg`, `20`, 0, null, `0`],
+          [`sv`, `503`],
+          [`gq`, `240`],
+          [`er`, `291`, 0, null, `0`],
+          [`ee`, `372`],
+          [`sz`, `268`],
+          [`et`, `251`, 0, null, `0`],
+          [`fk`, `500`],
+          [`fo`, `298`],
+          [`fj`, `679`],
+          [`fi`, `358`, 0, [`4`], `0`],
+          [`fr`, `33`, 0, null, `0`],
+          [`gf`, `594`, 0, null, `0`],
+          [`pf`, `689`],
+          [`ga`, `241`],
+          [`gm`, `220`],
+          [`ge`, `995`, 0, null, `0`],
+          [`de`, `49`, 0, null, `0`],
+          [`gh`, `233`, 0, null, `0`],
+          [`gi`, `350`],
+          [`gr`, `30`],
+          [`gl`, `299`],
+          [`gd`, `1`, 14, [`473`], `1`],
+          [`gp`, `590`, 0, null, `0`],
+          [`gu`, `1`, 15, [`671`], `1`],
+          [`gt`, `502`],
+          [`gg`, `44`, 1, [`1481`, `7781`, `7839`, `7911`], `0`],
+          [`gn`, `224`],
+          [`gw`, `245`],
+          [`gy`, `592`],
+          [`ht`, `509`],
+          [`hn`, `504`],
+          [`hk`, `852`],
+          [`hu`, `36`, 0, null, `06`],
+          [`is`, `354`],
+          [`in`, `91`, 0, null, `0`],
+          [`id`, `62`, 0, null, `0`],
+          [`ir`, `98`, 0, null, `0`],
+          [`iq`, `964`, 0, null, `0`],
+          [`ie`, `353`, 0, null, `0`],
+          [`im`, `44`, 2, [`1624`, `74576`, `7524`, `7624`, `7924`], `0`],
+          [`il`, `972`, 0, null, `0`],
+          [`it`, `39`, 0, [`3`]],
+          [`jm`, `1`, 4, [`658`, `876`], `1`],
+          [`jp`, `81`, 0, null, `0`],
+          [`je`, `44`, 3, [`1534`, `7509`, `7700`, `7797`, `7829`, `7937`], `0`],
+          [`jo`, `962`, 0, null, `0`],
+          [`kz`, `7`, 1, [`33`, `7`], `8`],
+          [`ke`, `254`, 0, null, `0`],
+          [`ki`, `686`, 0, null, `0`],
+          [`xk`, `383`, 0, null, `0`],
+          [`kw`, `965`],
+          [`kg`, `996`, 0, null, `0`],
+          [`la`, `856`, 0, null, `0`],
+          [`lv`, `371`],
+          [`lb`, `961`, 0, null, `0`],
+          [`ls`, `266`],
+          [`lr`, `231`, 0, null, `0`],
+          [`ly`, `218`, 0, null, `0`],
+          [`li`, `423`, 0, null, `0`],
+          [`lt`, `370`, 0, null, `0`],
+          [`lu`, `352`],
+          [`mo`, `853`],
+          [`mg`, `261`, 0, null, `0`],
+          [`mw`, `265`, 0, null, `0`],
+          [`my`, `60`, 0, null, `0`],
+          [`mv`, `960`],
+          [`ml`, `223`],
+          [`mt`, `356`],
+          [`mh`, `692`, 0, null, `1`],
+          [`mq`, `596`, 0, null, `0`],
+          [`mr`, `222`],
+          [`mu`, `230`],
+          [`yt`, `262`, 1, [`269`, `639`], `0`],
+          [`mx`, `52`],
+          [`fm`, `691`],
+          [`md`, `373`, 0, null, `0`],
+          [`mc`, `377`, 0, null, `0`],
+          [`mn`, `976`, 0, null, `0`],
+          [`me`, `382`, 0, null, `0`],
+          [`ms`, `1`, 16, [`664`], `1`],
+          [`ma`, `212`, 0, [`6`, `7`], `0`],
+          [`mz`, `258`],
+          [`mm`, `95`, 0, null, `0`],
+          [`na`, `264`, 0, null, `0`],
+          [`nr`, `674`],
+          [`np`, `977`, 0, null, `0`],
+          [`nl`, `31`, 0, null, `0`],
+          [`nc`, `687`],
+          [`nz`, `64`, 0, null, `0`],
+          [`ni`, `505`],
+          [`ne`, `227`],
+          [`ng`, `234`, 0, null, `0`],
+          [`nu`, `683`],
+          [`nf`, `672`],
+          [`kp`, `850`, 0, null, `0`],
+          [`mk`, `389`, 0, null, `0`],
+          [`mp`, `1`, 17, [`670`], `1`],
+          [`no`, `47`, 0, [`4`, `9`]],
+          [`om`, `968`],
+          [`pk`, `92`, 0, null, `0`],
+          [`pw`, `680`],
+          [`ps`, `970`, 0, null, `0`],
+          [`pa`, `507`],
+          [`pg`, `675`],
+          [`py`, `595`, 0, null, `0`],
+          [`pe`, `51`, 0, null, `0`],
+          [`ph`, `63`, 0, null, `0`],
+          [`pl`, `48`],
+          [`pt`, `351`],
+          [`pr`, `1`, 3, [`787`, `939`], `1`],
+          [`qa`, `974`],
+          [`re`, `262`, 0, null, `0`],
+          [`ro`, `40`, 0, null, `0`],
+          [`ru`, `7`, 0, [`33`], `8`],
+          [`rw`, `250`, 0, null, `0`],
+          [`ws`, `685`],
+          [`sm`, `378`],
+          [`st`, `239`],
+          [`sa`, `966`, 0, null, `0`],
+          [`sn`, `221`],
+          [`rs`, `381`, 0, null, `0`],
+          [`sc`, `248`],
+          [`sl`, `232`, 0, null, `0`],
+          [`sg`, `65`],
+          [`sx`, `1`, 21, [`721`], `1`],
+          [`sk`, `421`, 0, null, `0`],
+          [`si`, `386`, 0, null, `0`],
+          [`sb`, `677`],
+          [`so`, `252`, 0, null, `0`],
+          [`za`, `27`, 0, null, `0`],
+          [`kr`, `82`, 0, null, `0`],
+          [`ss`, `211`, 0, null, `0`],
+          [`es`, `34`],
+          [`lk`, `94`, 0, null, `0`],
+          [`bl`, `590`, 1, null, `0`],
+          [`sh`, `290`],
+          [`kn`, `1`, 18, [`869`], `1`],
+          [`lc`, `1`, 19, [`758`], `1`],
+          [`mf`, `590`, 2, null, `0`],
+          [`pm`, `508`, 0, null, `0`],
+          [`vc`, `1`, 20, [`784`], `1`],
+          [`sd`, `249`, 0, null, `0`],
+          [`sr`, `597`],
+          [`sj`, `47`, 1, [`4`, `79`, `9`]],
+          [`se`, `46`, 0, null, `0`],
+          [`ch`, `41`, 0, null, `0`],
+          [`sy`, `963`, 0, null, `0`],
+          [`tw`, `886`, 0, null, `0`],
+          [`tj`, `992`],
+          [`tz`, `255`, 0, null, `0`],
+          [`th`, `66`, 0, null, `0`],
+          [`tl`, `670`],
+          [`tg`, `228`],
+          [`tk`, `690`],
+          [`to`, `676`],
+          [`tt`, `1`, 22, [`868`], `1`],
+          [`tn`, `216`],
+          [`tr`, `90`, 0, null, `0`],
+          [`tm`, `993`, 0, null, `8`],
+          [`tc`, `1`, 23, [`649`], `1`],
+          [`tv`, `688`],
+          [`vi`, `1`, 24, [`340`], `1`],
+          [`ug`, `256`, 0, null, `0`],
+          [`ua`, `380`, 0, null, `0`],
+          [`ae`, `971`, 0, null, `0`],
+          [`gb`, `44`, 0, null, `0`],
+          [`us`, `1`, 0, null, `1`],
+          [`uy`, `598`, 0, null, `0`],
+          [`uz`, `998`],
+          [`vu`, `678`],
+          [`va`, `39`, 1, [`06698`, `3`]],
+          [`ve`, `58`, 0, null, `0`],
+          [`vn`, `84`, 0, null, `0`],
+          [`wf`, `681`],
+          [`eh`, `212`, 1, [`5288`, `5289`, `6`, `7`], `0`],
+          [`ye`, `967`, 0, null, `0`],
+          [`zm`, `260`, 0, null, `0`],
+          [`zw`, `263`, 0, null, `0`]
+        ],
+        l = [];
+      for (let e of c) l.push({
+        name: ``,
+        iso2: e[0],
+        dialCode: e[1],
+        priority: e[2] || 0,
+        areaCodes: e[3] || null,
+        nodeById: {},
+        nationalPrefix: e[4] || null,
+        normalisedName: ``,
+        initials: ``,
+        dialCodePlus: ``
+      });
+      var u = l,
+        d = {
+          ad: `Andorra`,
+          ae: `United Arab Emirates`,
+          af: `Afghanistan`,
+          ag: `Antigua & Barbuda`,
+          ai: `Anguilla`,
+          al: `Albania`,
+          am: `Armenia`,
+          ao: `Angola`,
+          ar: `Argentina`,
+          as: `American Samoa`,
+          at: `Austria`,
+          au: `Australia`,
+          aw: `Aruba`,
+          ax: `Åland Islands`,
+          az: `Azerbaijan`,
+          ba: `Bosnia & Herzegovina`,
+          bb: `Barbados`,
+          bd: `Bangladesh`,
+          be: `Belgium`,
+          bf: `Burkina Faso`,
+          bg: `Bulgaria`,
+          bh: `Bahrain`,
+          bi: `Burundi`,
+          bj: `Benin`,
+          bl: `St. Barthélemy`,
+          bm: `Bermuda`,
+          bn: `Brunei`,
+          bo: `Bolivia`,
+          bq: `Caribbean Netherlands`,
+          br: `Brazil`,
+          bs: `Bahamas`,
+          bt: `Bhutan`,
+          bw: `Botswana`,
+          by: `Belarus`,
+          bz: `Belize`,
+          ca: `Canada`,
+          cc: `Cocos (Keeling) Islands`,
+          cd: `Congo - Kinshasa`,
+          cf: `Central African Republic`,
+          cg: `Congo - Brazzaville`,
+          ch: `Switzerland`,
+          ci: `Côte d’Ivoire`,
+          ck: `Cook Islands`,
+          cl: `Chile`,
+          cm: `Cameroon`,
+          cn: `China`,
+          co: `Colombia`,
+          cr: `Costa Rica`,
+          cu: `Cuba`,
+          cv: `Cape Verde`,
+          cw: `Curaçao`,
+          cx: `Christmas Island`,
+          cy: `Cyprus`,
+          cz: `Czechia`,
+          de: `Germany`,
+          dj: `Djibouti`,
+          dk: `Denmark`,
+          dm: `Dominica`,
+          do: `Dominican Republic`,
+          dz: `Algeria`,
+          ec: `Ecuador`,
+          ee: `Estonia`,
+          eg: `Egypt`,
+          eh: `Western Sahara`,
+          er: `Eritrea`,
+          es: `Spain`,
+          et: `Ethiopia`,
+          fi: `Finland`,
+          fj: `Fiji`,
+          fk: `Falkland Islands`,
+          fm: `Micronesia`,
+          fo: `Faroe Islands`,
+          fr: `France`,
+          ga: `Gabon`,
+          gb: `United Kingdom`,
+          gd: `Grenada`,
+          ge: `Georgia`,
+          gf: `French Guiana`,
+          gg: `Guernsey`,
+          gh: `Ghana`,
+          gi: `Gibraltar`,
+          gl: `Greenland`,
+          gm: `Gambia`,
+          gn: `Guinea`,
+          gp: `Guadeloupe`,
+          gq: `Equatorial Guinea`,
+          gr: `Greece`,
+          gt: `Guatemala`,
+          gu: `Guam`,
+          gw: `Guinea-Bissau`,
+          gy: `Guyana`,
+          hk: `Hong Kong SAR China`,
+          hn: `Honduras`,
+          hr: `Croatia`,
+          ht: `Haiti`,
+          hu: `Hungary`,
+          id: `Indonesia`,
+          ie: `Ireland`,
+          il: `Israel`,
+          im: `Isle of Man`,
+          in: `India`,
+          io: `British Indian Ocean Territory`,
+          iq: `Iraq`,
+          ir: `Iran`,
+          is: `Iceland`,
+          it: `Italy`,
+          je: `Jersey`,
+          jm: `Jamaica`,
+          jo: `Jordan`,
+          jp: `Japan`,
+          ke: `Kenya`,
+          kg: `Kyrgyzstan`,
+          kh: `Cambodia`,
+          ki: `Kiribati`,
+          km: `Comoros`,
+          kn: `St. Kitts & Nevis`,
+          kp: `North Korea`,
+          kr: `South Korea`,
+          kw: `Kuwait`,
+          ky: `Cayman Islands`,
+          kz: `Kazakhstan`,
+          la: `Laos`,
+          lb: `Lebanon`,
+          lc: `St. Lucia`,
+          li: `Liechtenstein`,
+          lk: `Sri Lanka`,
+          lr: `Liberia`,
+          ls: `Lesotho`,
+          lt: `Lithuania`,
+          lu: `Luxembourg`,
+          lv: `Latvia`,
+          ly: `Libya`,
+          ma: `Morocco`,
+          mc: `Monaco`,
+          md: `Moldova`,
+          me: `Montenegro`,
+          mf: `St. Martin`,
+          mg: `Madagascar`,
+          mh: `Marshall Islands`,
+          mk: `North Macedonia`,
+          ml: `Mali`,
+          mm: `Myanmar (Burma)`,
+          mn: `Mongolia`,
+          mo: `Macao SAR China`,
+          mp: `Northern Mariana Islands`,
+          mq: `Martinique`,
+          mr: `Mauritania`,
+          ms: `Montserrat`,
+          mt: `Malta`,
+          mu: `Mauritius`,
+          mv: `Maldives`,
+          mw: `Malawi`,
+          mx: `Mexico`,
+          my: `Malaysia`,
+          mz: `Mozambique`,
+          na: `Namibia`,
+          nc: `New Caledonia`,
+          ne: `Niger`,
+          nf: `Norfolk Island`,
+          ng: `Nigeria`,
+          ni: `Nicaragua`,
+          nl: `Netherlands`,
+          no: `Norway`,
+          np: `Nepal`,
+          nr: `Nauru`,
+          nu: `Niue`,
+          nz: `New Zealand`,
+          om: `Oman`,
+          pa: `Panama`,
+          pe: `Peru`,
+          pf: `French Polynesia`,
+          pg: `Papua New Guinea`,
+          ph: `Philippines`,
+          pk: `Pakistan`,
+          pl: `Poland`,
+          pm: `St. Pierre & Miquelon`,
+          pr: `Puerto Rico`,
+          ps: `Palestinian Territories`,
+          pt: `Portugal`,
+          pw: `Palau`,
+          py: `Paraguay`,
+          qa: `Qatar`,
+          re: `Réunion`,
+          ro: `Romania`,
+          rs: `Serbia`,
+          ru: `Russia`,
+          rw: `Rwanda`,
+          sa: `Saudi Arabia`,
+          sb: `Solomon Islands`,
+          sc: `Seychelles`,
+          sd: `Sudan`,
+          se: `Sweden`,
+          sg: `Singapore`,
+          sh: `St. Helena`,
+          si: `Slovenia`,
+          sj: `Svalbard & Jan Mayen`,
+          sk: `Slovakia`,
+          sl: `Sierra Leone`,
+          sm: `San Marino`,
+          sn: `Senegal`,
+          so: `Somalia`,
+          sr: `Suriname`,
+          ss: `South Sudan`,
+          st: `São Tomé & Príncipe`,
+          sv: `El Salvador`,
+          sx: `Sint Maarten`,
+          sy: `Syria`,
+          sz: `Eswatini`,
+          tc: `Turks & Caicos Islands`,
+          td: `Chad`,
+          tg: `Togo`,
+          th: `Thailand`,
+          tj: `Tajikistan`,
+          tk: `Tokelau`,
+          tl: `Timor-Leste`,
+          tm: `Turkmenistan`,
+          tn: `Tunisia`,
+          to: `Tonga`,
+          tr: `Turkey`,
+          tt: `Trinidad & Tobago`,
+          tv: `Tuvalu`,
+          tw: `Taiwan`,
+          tz: `Tanzania`,
+          ua: `Ukraine`,
+          ug: `Uganda`,
+          us: `United States`,
+          uy: `Uruguay`,
+          uz: `Uzbekistan`,
+          va: `Vatican City`,
+          vc: `St. Vincent & Grenadines`,
+          ve: `Venezuela`,
+          vg: `British Virgin Islands`,
+          vi: `U.S. Virgin Islands`,
+          vn: `Vietnam`,
+          vu: `Vanuatu`,
+          wf: `Wallis & Futuna`,
+          ws: `Samoa`,
+          ye: `Yemen`,
+          yt: `Mayotte`,
+          za: `South Africa`,
+          zm: `Zambia`,
+          zw: `Zimbabwe`
+        },
+        f = {
+          selectedCountryAriaLabel: "Change country, selected ${countryName} (${dialCode})",
+          noCountrySelected: `Select country`,
+          countryListAriaLabel: `List of countries`,
+          searchPlaceholder: `Search`,
+          clearSearchAriaLabel: `Clear search`,
+          zeroSearchResults: `No results found`,
+          oneSearchResult: `1 result found`,
+          multipleSearchResults: "${count} results found",
+          ac: `Ascension Island`,
+          xk: `Kosovo`
+        },
+        p = {
+          ...d,
+          ...f
+        },
+        m = {
+          OPEN_COUNTRY_DROPDOWN: `open:countrydropdown`,
+          CLOSE_COUNTRY_DROPDOWN: `close:countrydropdown`,
+          COUNTRY_CHANGE: `countrychange`,
+          INPUT: `input`
+        },
+        h = {
+          HIDE: `iti__hide`,
+          V_HIDE: `iti__v-hide`,
+          ARROW_UP: `iti__arrow--up`,
+          GLOBE: `iti__globe`,
+          FLAG: `iti__flag`,
+          COUNTRY_ITEM: `iti__country`,
+          HIGHLIGHT: `iti__highlight`
+        },
+        g = {
+          ARROW_UP: `ArrowUp`,
+          ARROW_DOWN: `ArrowDown`,
+          SPACE: ` `,
+          ENTER: `Enter`,
+          ESC: `Escape`,
+          TAB: `Tab`
+        },
+        _ = {
+          PASTE: `insertFromPaste`,
+          DELETE_FWD: `deleteContentForward`
+        },
+        v = {
+          ALPHA_UNICODE: /\p{L}/u,
+          NON_PLUS_NUMERIC: /[^+0-9]/,
+          NON_PLUS_NUMERIC_GLOBAL: /[^+0-9]/g,
+          HIDDEN_SEARCH_CHAR: /^[a-zA-ZÀ-ÿа-яА-Я ]$/
+        },
+        y = {
+          SEARCH_DEBOUNCE_MS: 100,
+          HIDDEN_SEARCH_RESET_MS: 1e3,
+          NEXT_TICK: 0
+        },
+        b = {
+          UNKNOWN_NUMBER_TYPE: -99,
+          UNKNOWN_VALIDATION_ERROR: -99
+        },
+        x = {
+          SANE_SELECTED_WITH_DIAL_WIDTH: 78,
+          SANE_SELECTED_NO_DIAL_WIDTH: 42,
+          INPUT_PADDING_EXTRA_LEFT: 6
+        },
+        S = {
+          PLUS: `+`,
+          NANP: `1`
+        },
+        C = {
+          ISO2: `gb`,
+          DIAL_CODE: `44`,
+          MOBILE_PREFIX: `7`,
+          MOBILE_CORE_LENGTH: 10
+        },
+        w = {
+          ISO2: `us`,
+          DIAL_CODE: `1`
+        },
+        T = {
+          AGGRESSIVE: `aggressive`,
+          POLITE: `polite`,
+          OFF: `off`
+        },
+        E = {
+          AUTO: `auto`
+        },
+        D = {
+          COUNTRY_CODE: `countryCode`,
+          DIAL_CODE: `dialCode`
+        },
+        O = {
+          EXPANDED: `aria-expanded`,
+          LABEL: `aria-label`,
+          SELECTED: `aria-selected`,
+          ACTIVE_DESCENDANT: `aria-activedescendant`,
+          HASPOPUP: `aria-haspopup`,
+          CONTROLS: `aria-controls`,
+          HIDDEN: `aria-hidden`,
+          AUTOCOMPLETE: `aria-autocomplete`,
+          MODAL: `aria-modal`
+        },
+        k = e => typeof window < `u` && typeof window.matchMedia == `function` && window.matchMedia(e).matches,
+        ee = {
+          allowPhonewords: !1,
+          allowDropdown: !0,
+          autoPlaceholder: T.POLITE,
+          containerClass: ``,
+          countryOrder: null,
+          countrySearch: !0,
+          customPlaceholder: null,
+          dropdownContainer: null,
+          excludeCountries: [],
+          fixDropdownWidth: !0,
+          formatAsYouType: !0,
+          formatOnDisplay: !0,
+          geoIpLookup: null,
+          hiddenInput: null,
+          i18n: {},
+          initialCountry: ``,
+          loadUtils: null,
+          nationalMode: !0,
+          onlyCountries: [],
+          placeholderNumberType: `MOBILE`,
+          showFlags: !0,
+          separateDialCode: !1,
+          strictMode: !1,
+          useFullscreenPopup: (() => {
+            if (typeof navigator < `u` && typeof window < `u`) {
+              let e = /Android.+Mobile|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent),
+                t = k(`(max-width: 500px)`),
+                n = k(`(max-height: 600px)`),
+                r = k(`(pointer: coarse)`);
+              return e || t || r && n
             }
             return !1
-          },
-          Et = {
-            allowPhonewords: !1,
-            allowDropdown: !0,
-            autoPlaceholder: St.POLITE,
-            containerClass: "",
-            countryOrder: null,
-            countrySearch: !0,
-            customPlaceholder: null,
-            dropdownContainer: null,
-            excludeCountries: [],
-            fixDropdownWidth: !0,
-            formatAsYouType: !0,
-            formatOnDisplay: !0,
-            geoIpLookup: null,
-            hiddenInput: null,
-            i18n: {},
-            initialCountry: "",
-            loadUtils: null,
-            nationalMode: !0,
-            onlyCountries: [],
-            placeholderNumberType: "MOBILE",
-            showFlags: !0,
-            separateDialCode: !1,
-            strictMode: !1,
-            useFullscreenPopup: Q(),
-            validationNumberTypes: ["MOBILE"]
-          },
-          _t = (o, e) => {
-            o.useFullscreenPopup && (o.fixDropdownWidth = !1), o.onlyCountries.length === 1 && (o.initialCountry = o.onlyCountries[0]), o.separateDialCode && (o.nationalMode = !1), o.allowDropdown && !o.showFlags && !o.separateDialCode && (o.nationalMode = !1), o.useFullscreenPopup && !o.dropdownContainer && (o.dropdownContainer = document.body), o.i18n = {
-              ...e,
-              ...o.i18n
-            }
-          },
-          jt = o => o.replace(/\D/g, ""),
-          ae = (o = "") => o.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(),
-          P = (o, e) => {
-            const n = ae(e),
-              s = [],
-              a = [],
-              u = [],
-              l = [],
-              d = [],
-              c = [];
-            for (const U of o) U.iso2 === n ? s.push(U) : U.normalisedName.startsWith(n) ? a.push(U) : U.normalisedName.includes(n) ? u.push(U) : n === U.dialCode || n === U.dialCodePlus ? l.push(U) : U.dialCodePlus.includes(n) ? d.push(U) : U.initials.includes(n) && c.push(U);
-            const b = (U, vt) => U.priority - vt.priority;
-            return [...s.sort(b), ...a.sort(b), ...u.sort(b), ...l.sort(b), ...d.sort(b), ...c.sort(b)]
-          },
-          j = (o, e) => {
-            const n = e.toLowerCase();
-            for (const s of o)
-              if (s.name.toLowerCase().startsWith(n)) return s;
-            return null
-          },
-          bt = o => Object.keys(o).filter(e => !!o[e]).join(" "),
-          dt = (o, e, n) => {
-            const s = document.createElement(o);
-            return e && Object.entries(e).forEach(([a, u]) => s.setAttribute(a, u)), n && n.appendChild(s), s
-          },
-          Mt = () => `
-  <svg class="iti__search-icon-svg" width="14" height="14" viewBox="0 0 24 24" focusable="false" ${mt.HIDDEN}="true">
+          })(),
+          validationNumberTypes: [`MOBILE`]
+        },
+        A = (e, t) => {
+          e.useFullscreenPopup && (e.fixDropdownWidth = !1), e.onlyCountries.length === 1 && (e.initialCountry = e.onlyCountries[0]), e.separateDialCode && (e.nationalMode = !1), e.allowDropdown && !e.showFlags && !e.separateDialCode && (e.nationalMode = !1), e.useFullscreenPopup && !e.dropdownContainer && (e.dropdownContainer = document.body), e.i18n = {
+            ...t,
+            ...e.i18n
+          }
+        },
+        j = e => e.replace(/\D/g, ``),
+        M = (e = ``) => e.normalize(`NFD`).replace(/[\u0300-\u036f]/g, ``).toLowerCase(),
+        N = (e, t) => {
+          let n = M(t),
+            r = [],
+            i = [],
+            a = [],
+            o = [],
+            s = [],
+            c = [];
+          for (let t of e) t.iso2 === n ? r.push(t) : t.normalisedName.startsWith(n) ? i.push(t) : t.normalisedName.includes(n) ? a.push(t) : n === t.dialCode || n === t.dialCodePlus ? o.push(t) : t.dialCodePlus.includes(n) ? s.push(t) : t.initials.includes(n) && c.push(t);
+          let l = (e, t) => e.priority - t.priority;
+          return [...r.sort(l), ...i.sort(l), ...a.sort(l), ...o.sort(l), ...s.sort(l), ...c.sort(l)]
+        },
+        te = (e, t) => {
+          let n = t.toLowerCase();
+          for (let t of e)
+            if (t.name.toLowerCase().startsWith(n)) return t;
+          return null
+        },
+        P = e => Object.keys(e).filter(t => !!e[t]).join(` `),
+        F = (e, t, n) => {
+          let r = document.createElement(e);
+          return t && Object.entries(t).forEach(([e, t]) => r.setAttribute(e, t)), n && n.appendChild(r), r
+        },
+        I = () => `
+  <svg class="iti__search-icon-svg" width="14" height="14" viewBox="0 0 24 24" focusable="false" ${O.HIDDEN}="true">
     <circle cx="11" cy="11" r="7" />
     <line x1="21" y1="21" x2="16.65" y2="16.65" />
   </svg>`,
-          ne = o => {
-            const e = `iti-${o}-clear-mask`;
-            return `
-    <svg class="iti__search-clear-svg" width="12" height="12" viewBox="0 0 16 16" ${mt.HIDDEN}="true" focusable="false">
-      <mask id="${e}" maskUnits="userSpaceOnUse">
+        ne = e => {
+          let t = `iti-${e}-clear-mask`;
+          return `
+    <svg class="iti__search-clear-svg" width="12" height="12" viewBox="0 0 16 16" ${O.HIDDEN}="true" focusable="false">
+      <mask id="${t}" maskUnits="userSpaceOnUse">
         <rect width="16" height="16" fill="white" />
         <path d="M5.2 5.2 L10.8 10.8 M10.8 5.2 L5.2 10.8" stroke="black" stroke-linecap="round" class="iti__search-clear-x" />
       </mask>
-      <circle cx="8" cy="8" r="8" class="iti__search-clear-bg" mask="url(#${e})" />
+      <circle cx="8" cy="8" r="8" class="iti__search-clear-bg" mask="url(#${t})" />
     </svg>`
-          },
-          he = class {
-            constructor(o, e, n) {
-              this.highlightedItem = null, this.selectedItem = null, o.dataset.intlTelInputId = n.toString(), this.telInput = o, this.options = e, this.id = n, this.hadInitialPlaceholder = !!o.getAttribute("placeholder"), this.isRTL = !!this.telInput.closest("[dir=rtl]"), this.options.separateDialCode && (this.originalPaddingLeft = this.telInput.style.paddingLeft)
-            }
-            generateMarkup(o) {
-              this.countries = o, this._prepareTelInput();
-              const e = this._createWrapperAndInsert();
-              this._maybeBuildCountryContainer(e), e.appendChild(this.telInput), this._maybeUpdateInputPaddingAndReveal(), this._maybeBuildHiddenInputs(e)
-            }
-            _prepareTelInput() {
-              var o;
-              this.telInput.classList.add("iti__tel-input"), !this.telInput.hasAttribute("autocomplete") && !((o = this.telInput.form) != null && o.hasAttribute("autocomplete")) && this.telInput.setAttribute("autocomplete", "off")
-            }
-            _createWrapperAndInsert() {
-              const {
-                allowDropdown: o,
-                showFlags: e,
-                containerClass: n,
-                useFullscreenPopup: s
-              } = this.options, a = bt({
+        },
+        L = class {
+          constructor(e, t, n) {
+            this.highlightedItem = null, this.selectedItem = null, e.dataset.intlTelInputId = n.toString(), this.telInput = e, this.options = t, this.id = n, this.hadInitialPlaceholder = !!e.getAttribute(`placeholder`), this.isRTL = !!this.telInput.closest(`[dir=rtl]`), this.options.separateDialCode && (this.originalPaddingLeft = this.telInput.style.paddingLeft)
+          }
+          generateMarkup(e) {
+            this.countries = e, this._prepareTelInput();
+            let t = this._createWrapperAndInsert();
+            this._maybeBuildCountryContainer(t), t.appendChild(this.telInput), this._maybeUpdateInputPaddingAndReveal(), this._maybeBuildHiddenInputs(t)
+          }
+          _prepareTelInput() {
+            var e;
+            this.telInput.classList.add(`iti__tel-input`), !this.telInput.hasAttribute(`autocomplete`) && !((e = this.telInput.form) != null && e.hasAttribute(`autocomplete`)) && this.telInput.setAttribute(`autocomplete`, `off`)
+          }
+          _createWrapperAndInsert() {
+            let {
+              allowDropdown: e,
+              showFlags: t,
+              containerClass: n,
+              useFullscreenPopup: r
+            } = this.options, i = F(`div`, {
+              class: P({
                 iti: !0,
-                "iti--allow-dropdown": o,
-                "iti--show-flags": e,
-                "iti--inline-dropdown": !s,
+                "iti--allow-dropdown": e,
+                "iti--show-flags": t,
+                "iti--inline-dropdown": !r,
                 [n]: !!n
-              }), u = dt("div", {
-                class: a
+              })
+            });
+            return this.isRTL && i.setAttribute(`dir`, `ltr`), this.telInput.before(i), i
+          }
+          _maybeBuildCountryContainer(e) {
+            let {
+              allowDropdown: t,
+              separateDialCode: n,
+              showFlags: r
+            } = this.options;
+            if (t || r || n) {
+              this.countryContainer = F(`div`, {
+                class: `iti__country-container ${h.V_HIDE}`
+              }, e), t ? (this.selectedCountry = F(`button`, {
+                type: `button`,
+                class: `iti__selected-country`,
+                [O.EXPANDED]: `false`,
+                [O.LABEL]: this.options.i18n.noCountrySelected,
+                [O.HASPOPUP]: `dialog`,
+                [O.CONTROLS]: `iti-${this.id}__dropdown-content`
+              }, this.countryContainer), this.telInput.disabled && this.selectedCountry.setAttribute(`disabled`, `true`)) : this.selectedCountry = F(`div`, {
+                class: `iti__selected-country`
+              }, this.countryContainer);
+              let r = F(`div`, {
+                class: `iti__selected-country-primary`
+              }, this.selectedCountry);
+              this.selectedCountryInner = F(`div`, {
+                class: h.FLAG
+              }, r), t && (this.dropdownArrow = F(`div`, {
+                class: `iti__arrow`,
+                [O.HIDDEN]: `true`
+              }, r)), n && (this.selectedDialCode = F(`div`, {
+                class: `iti__selected-dial-code`
+              }, this.selectedCountry)), t && this._buildDropdownContent()
+            }
+          }
+          _buildDropdownContent() {
+            let {
+              fixDropdownWidth: e,
+              useFullscreenPopup: t,
+              countrySearch: n,
+              i18n: r,
+              dropdownContainer: i,
+              containerClass: a
+            } = this.options, o = e ? `` : `iti--flexible-dropdown-width`;
+            if (this.dropdownContent = F(`div`, {
+                id: `iti-${this.id}__dropdown-content`,
+                class: `iti__dropdown-content ${h.HIDE} ${o}`,
+                role: `dialog`,
+                [O.MODAL]: `true`
+              }), this.isRTL && this.dropdownContent.setAttribute(`dir`, `rtl`), n && this._buildSearchUI(), this.countryList = F(`ul`, {
+                class: `iti__country-list`,
+                id: `iti-${this.id}__country-listbox`,
+                role: `listbox`,
+                [O.LABEL]: r.countryListAriaLabel
+              }, this.dropdownContent), this._appendListItems(), n && this.updateSearchResultsA11yText(), i) {
+              let e = P({
+                iti: !0,
+                "iti--container": !0,
+                "iti--fullscreen-popup": t,
+                "iti--inline-dropdown": !t,
+                [a]: !!a
               });
-              return this.isRTL && u.setAttribute("dir", "ltr"), this.telInput.before(u), u
-            }
-            _maybeBuildCountryContainer(o) {
-              const {
-                allowDropdown: e,
-                separateDialCode: n,
-                showFlags: s
-              } = this.options;
-              if (e || s || n) {
-                this.countryContainer = dt("div", {
-                  class: `iti__country-container ${A.V_HIDE}`
-                }, o), e ? (this.selectedCountry = dt("button", {
-                  type: "button",
-                  class: "iti__selected-country",
-                  [mt.EXPANDED]: "false",
-                  [mt.LABEL]: this.options.i18n.noCountrySelected,
-                  [mt.HASPOPUP]: "dialog",
-                  [mt.CONTROLS]: `iti-${this.id}__dropdown-content`
-                }, this.countryContainer), this.telInput.disabled && this.selectedCountry.setAttribute("disabled", "true")) : this.selectedCountry = dt("div", {
-                  class: "iti__selected-country"
-                }, this.countryContainer);
-                const a = dt("div", {
-                  class: "iti__selected-country-primary"
-                }, this.selectedCountry);
-                this.selectedCountryInner = dt("div", {
-                  class: A.FLAG
-                }, a), e && (this.dropdownArrow = dt("div", {
-                  class: "iti__arrow",
-                  [mt.HIDDEN]: "true"
-                }, a)), n && (this.selectedDialCode = dt("div", {
-                  class: "iti__selected-dial-code"
-                }, this.selectedCountry)), e && this._buildDropdownContent()
+              this.dropdown = F(`div`, {
+                class: e
+              }), this.dropdown.appendChild(this.dropdownContent)
+            } else this.countryContainer.appendChild(this.dropdownContent)
+          }
+          _buildSearchUI() {
+            let {
+              i18n: e
+            } = this.options, t = F(`div`, {
+              class: `iti__search-input-wrapper`
+            }, this.dropdownContent);
+            this.searchIcon = F(`span`, {
+              class: `iti__search-icon`,
+              [O.HIDDEN]: `true`
+            }, t), this.searchIcon.innerHTML = I(), this.searchInput = F(`input`, {
+              id: `iti-${this.id}__search-input`,
+              type: `search`,
+              class: `iti__search-input`,
+              placeholder: e.searchPlaceholder,
+              role: `combobox`,
+              [O.EXPANDED]: `true`,
+              [O.LABEL]: e.searchPlaceholder,
+              [O.CONTROLS]: `iti-${this.id}__country-listbox`,
+              [O.AUTOCOMPLETE]: `list`,
+              autocomplete: `off`
+            }, t), this.searchClearButton = F(`button`, {
+              type: `button`,
+              class: `iti__search-clear ${h.HIDE}`,
+              [O.LABEL]: e.clearSearchAriaLabel,
+              tabindex: `-1`
+            }, t), this.searchClearButton.innerHTML = ne(this.id), this.searchResultsA11yText = F(`span`, {
+              class: `iti__a11y-text`
+            }, this.dropdownContent), this.searchNoResults = F(`div`, {
+              class: `iti__no-results ${h.HIDE}`,
+              [O.HIDDEN]: `true`
+            }, this.dropdownContent), this.searchNoResults.textContent = e.zeroSearchResults
+          }
+          _maybeUpdateInputPaddingAndReveal() {
+            this.countryContainer && (this.updateInputPadding(), this.countryContainer.classList.remove(h.V_HIDE))
+          }
+          _maybeBuildHiddenInputs(e) {
+            let {
+              hiddenInput: t
+            } = this.options;
+            if (t) {
+              let i = t(this.telInput.getAttribute(`name`) || ``);
+              if (i.phone) {
+                var n;
+                let t = (n = this.telInput.form) == null ? void 0 : n.querySelector(`input[name="${i.phone}"]`);
+                t ? this.hiddenInput = t : (this.hiddenInput = F(`input`, {
+                  type: `hidden`,
+                  name: i.phone
+                }), e.appendChild(this.hiddenInput))
+              }
+              if (i.country) {
+                var r;
+                let t = (r = this.telInput.form) == null ? void 0 : r.querySelector(`input[name="${i.country}"]`);
+                t ? this.hiddenInputCountry = t : (this.hiddenInputCountry = F(`input`, {
+                  type: `hidden`,
+                  name: i.country
+                }), e.appendChild(this.hiddenInputCountry))
               }
             }
-            _buildDropdownContent() {
-              const {
-                fixDropdownWidth: o,
-                useFullscreenPopup: e,
-                countrySearch: n,
-                i18n: s,
-                dropdownContainer: a,
-                containerClass: u
-              } = this.options, l = o ? "" : "iti--flexible-dropdown-width";
-              if (this.dropdownContent = dt("div", {
-                  id: `iti-${this.id}__dropdown-content`,
-                  class: `iti__dropdown-content ${A.HIDE} ${l}`,
-                  role: "dialog",
-                  [mt.MODAL]: "true"
-                }), this.isRTL && this.dropdownContent.setAttribute("dir", "rtl"), n && this._buildSearchUI(), this.countryList = dt("ul", {
-                  class: "iti__country-list",
-                  id: `iti-${this.id}__country-listbox`,
-                  role: "listbox",
-                  [mt.LABEL]: s.countryListAriaLabel
-                }, this.dropdownContent), this._appendListItems(), n && this.updateSearchResultsA11yText(), a) {
-                const d = bt({
-                  iti: !0,
-                  "iti--container": !0,
-                  "iti--fullscreen-popup": e,
-                  "iti--inline-dropdown": !e,
-                  [u]: !!u
-                });
-                this.dropdown = dt("div", {
-                  class: d
-                }), this.dropdown.appendChild(this.dropdownContent)
-              } else this.countryContainer.appendChild(this.dropdownContent)
-            }
-            _buildSearchUI() {
-              const {
-                i18n: o
-              } = this.options, e = dt("div", {
-                class: "iti__search-input-wrapper"
-              }, this.dropdownContent);
-              this.searchIcon = dt("span", {
-                class: "iti__search-icon",
-                [mt.HIDDEN]: "true"
-              }, e), this.searchIcon.innerHTML = Mt(), this.searchInput = dt("input", {
-                id: `iti-${this.id}__search-input`,
-                type: "search",
-                class: "iti__search-input",
-                placeholder: o.searchPlaceholder,
-                role: "combobox",
-                [mt.EXPANDED]: "true",
-                [mt.LABEL]: o.searchPlaceholder,
-                [mt.CONTROLS]: `iti-${this.id}__country-listbox`,
-                [mt.AUTOCOMPLETE]: "list",
-                autocomplete: "off"
-              }, e), this.searchClearButton = dt("button", {
-                type: "button",
-                class: `iti__search-clear ${A.HIDE}`,
-                [mt.LABEL]: o.clearSearchAriaLabel,
-                tabindex: "-1"
-              }, e), this.searchClearButton.innerHTML = ne(this.id), this.searchResultsA11yText = dt("span", {
-                class: "iti__a11y-text"
-              }, this.dropdownContent), this.searchNoResults = dt("div", {
-                class: `iti__no-results ${A.HIDE}`,
-                [mt.HIDDEN]: "true"
-              }, this.dropdownContent), this.searchNoResults.textContent = o.zeroSearchResults
-            }
-            _maybeUpdateInputPaddingAndReveal() {
-              this.countryContainer && (this.updateInputPadding(), this.countryContainer.classList.remove(A.V_HIDE))
-            }
-            _maybeBuildHiddenInputs(o) {
-              var n, s;
-              const {
-                hiddenInput: e
-              } = this.options;
-              if (e) {
-                const a = this.telInput.getAttribute("name") || "",
-                  u = e(a);
-                if (u.phone) {
-                  const l = (n = this.telInput.form) == null ? void 0 : n.querySelector(`input[name="${u.phone}"]`);
-                  l ? this.hiddenInput = l : (this.hiddenInput = dt("input", {
-                    type: "hidden",
-                    name: u.phone
-                  }), o.appendChild(this.hiddenInput))
-                }
-                if (u.country) {
-                  const l = (s = this.telInput.form) == null ? void 0 : s.querySelector(`input[name="${u.country}"]`);
-                  l ? this.hiddenInputCountry = l : (this.hiddenInputCountry = dt("input", {
-                    type: "hidden",
-                    name: u.country
-                  }), o.appendChild(this.hiddenInputCountry))
-                }
-              }
-            }
-            _appendListItems() {
-              const o = document.createDocumentFragment();
-              for (let e = 0; e < this.countries.length; e++) {
-                const n = this.countries[e],
-                  s = bt({
-                    [A.COUNTRY_ITEM]: !0
-                  }),
-                  a = dt("li", {
-                    id: `iti-${this.id}__item-${n.iso2}`,
-                    class: s,
-                    tabindex: "-1",
-                    role: "option",
-                    [mt.SELECTED]: "false"
-                  });
-                a.dataset.dialCode = n.dialCode, a.dataset.countryCode = n.iso2, n.nodeById[this.id] = a, this.options.showFlags && dt("div", {
-                  class: `${A.FLAG} iti__${n.iso2}`
-                }, a);
-                const u = dt("span", {
-                  class: "iti__country-name"
-                }, a);
-                u.textContent = n.name;
-                const l = dt("span", {
-                  class: "iti__dial-code"
-                }, a);
-                this.isRTL && l.setAttribute("dir", "ltr"), l.textContent = `+${n.dialCode}`, o.appendChild(a)
-              }
-              this.countryList.appendChild(o)
-            }
-            updateInputPadding() {
-              if (this.selectedCountry) {
-                const o = this.options.separateDialCode ? M.SANE_SELECTED_WITH_DIAL_WIDTH : M.SANE_SELECTED_NO_DIAL_WIDTH,
-                  n = (this.selectedCountry.offsetWidth || this._getHiddenSelectedCountryWidth() || o) + M.INPUT_PADDING_EXTRA_LEFT;
-                this.telInput.style.paddingLeft = `${n}px`
-              }
-            }
-            _getHiddenSelectedCountryWidth() {
-              if (this.telInput.parentNode) {
-                let o;
-                try {
-                  o = window.top.document.body
-                } catch {
-                  o = document.body
-                }
-                const e = this.telInput.parentNode.cloneNode(!1);
-                e.style.visibility = "hidden", o.appendChild(e);
-                const n = this.countryContainer.cloneNode();
-                e.appendChild(n);
-                const s = this.selectedCountry.cloneNode(!0);
-                n.appendChild(s);
-                const a = s.offsetWidth;
-                return o.removeChild(e), a
-              }
-              return 0
-            }
-            updateSearchResultsA11yText() {
-              const {
-                i18n: o
-              } = this.options, e = this.countryList.childElementCount;
-              let n;
-              e === 0 ? n = o.zeroSearchResults : o.searchResultsText ? n = o.searchResultsText(e) : e === 1 ? n = o.oneSearchResult : n = o.multipleSearchResults.replace("${count}", e.toString()), this.searchResultsA11yText.textContent = n
-            }
-            scrollTo(o) {
-              const e = this.countryList,
-                n = document.documentElement.scrollTop,
-                s = e.offsetHeight,
-                a = e.getBoundingClientRect().top + n,
-                u = a + s,
-                l = o.offsetHeight,
-                d = o.getBoundingClientRect().top + n,
-                c = d + l,
-                b = d - a + e.scrollTop;
-              if (d < a) e.scrollTop = b;
-              else if (c > u) {
-                const U = s - l;
-                e.scrollTop = b - U
-              }
-            }
-            highlightListItem(o, e) {
-              const n = this.highlightedItem;
-              if (n && n.classList.remove(A.HIGHLIGHT), this.highlightedItem = o, this.highlightedItem && (this.highlightedItem.classList.add(A.HIGHLIGHT), this.options.countrySearch)) {
-                const s = this.highlightedItem.getAttribute("id") || "";
-                this.searchInput.setAttribute(mt.ACTIVE_DESCENDANT, s)
-              }
-              e && this.highlightedItem.focus()
-            }
-            updateSelectedItem(o) {
-              if (this.selectedItem && this.selectedItem.dataset.countryCode !== o && (this.selectedItem.setAttribute(mt.SELECTED, "false"), this.selectedItem = null), o && !this.selectedItem) {
-                const e = this.countryList.querySelector(`[data-country-code="${o}"]`);
-                e && (e.setAttribute(mt.SELECTED, "true"), this.selectedItem = e)
-              }
-            }
-            filterCountries(o) {
-              this.countryList.innerHTML = "";
-              let e = !0;
-              for (const n of o) {
-                const s = n.nodeById[this.id];
-                s && (this.countryList.appendChild(s), e && (this.highlightListItem(s, !1), e = !1))
-              }
-              e ? (this.highlightListItem(null, !1), this.searchNoResults && this.searchNoResults.classList.remove(A.HIDE)) : this.searchNoResults && this.searchNoResults.classList.add(A.HIDE), this.countryList.scrollTop = 0, this.updateSearchResultsA11yText()
-            }
-            destroy() {
-              this.telInput.iti = void 0, delete this.telInput.dataset.intlTelInputId, this.options.separateDialCode && (this.telInput.style.paddingLeft = this.originalPaddingLeft);
-              const o = this.telInput.parentNode;
-              o.before(this.telInput), o.remove(), this.telInput = null, this.countryContainer = null, this.selectedCountry = null, this.selectedCountryInner = null, this.selectedDialCode = null, this.dropdownArrow = null, this.dropdownContent = null, this.searchInput = null, this.searchIcon = null, this.searchClearButton = null, this.searchNoResults = null, this.searchResultsA11yText = null, this.countryList = null, this.dropdown = null, this.hiddenInput = null, this.hiddenInputCountry = null, this.highlightedItem = null, this.selectedItem = null;
-              for (const e of this.countries) delete e.nodeById[this.id];
-              this.countries = null
-            }
-          },
-          fe = o => {
-            const {
-              onlyCountries: e,
-              excludeCountries: n
-            } = o;
-            if (e.length) {
-              const s = e.map(a => a.toLowerCase());
-              return L.filter(a => s.includes(a.iso2))
-            } else if (n.length) {
-              const s = n.map(a => a.toLowerCase());
-              return L.filter(a => !s.includes(a.iso2))
-            }
-            return L
-          },
-          Wt = (o, e) => {
-            for (const n of o) {
-              const s = n.iso2.toLowerCase();
-              e.i18n[s] && (n.name = e.i18n[s])
-            }
-          },
-          Gt = o => {
-            const e = new Set;
-            let n = 0;
-            const s = {},
-              a = (l, d) => {
-                if (!l || !d) return;
-                d.length > n && (n = d.length), s.hasOwnProperty(d) || (s[d] = []);
-                const c = s[d];
-                c.includes(l) || c.push(l)
-              },
-              u = [...o].sort((l, d) => l.priority - d.priority);
-            for (const l of u) {
-              e.has(l.dialCode) || e.add(l.dialCode);
-              for (let d = 1; d < l.dialCode.length; d++) {
-                const c = l.dialCode.substring(0, d);
-                a(l.iso2, c)
-              }
-              if (a(l.iso2, l.dialCode), l.areaCodes) {
-                const d = s[l.dialCode][0];
-                for (const c of l.areaCodes) {
-                  for (let b = 1; b < c.length; b++) {
-                    const U = c.substring(0, b),
-                      vt = l.dialCode + U;
-                    a(d, vt), a(l.iso2, vt)
-                  }
-                  a(l.iso2, l.dialCode + c)
-                }
-              }
-            }
-            return {
-              dialCodes: e,
-              dialCodeMaxLen: n,
-              dialCodeToIso2Map: s
-            }
-          },
-          At = (o, e) => {
-            e.countryOrder && (e.countryOrder = e.countryOrder.map(n => n.toLowerCase())), o.sort((n, s) => {
-              const {
-                countryOrder: a
-              } = e;
-              if (a) {
-                const u = a.indexOf(n.iso2),
-                  l = a.indexOf(s.iso2),
-                  d = u > -1,
-                  c = l > -1;
-                if (d || c) return d && c ? u - l : d ? -1 : 1
-              }
-              return n.name.localeCompare(s.name)
-            })
-          },
-          Z = o => {
-            for (const e of o) e.normalisedName = ae(e.name), e.initials = e.normalisedName.split(/[^a-z]/).map(n => n[0]).join(""), e.dialCodePlus = `+${e.dialCode}`
-          },
-          ve = (o, e, n, s) => {
-            let a = o;
-            if (n && e) {
-              e = `+${s.dialCode}`;
-              const u = a[e.length] === " " || a[e.length] === "-" ? e.length + 1 : e.length;
-              a = a.substring(u)
-            }
-            return a
-          },
-          De = (o, e, n, s, a) => {
-            const u = n ? n.formatNumberAsYouType(o, s.iso2) : o,
-              {
-                dialCode: l
-              } = s;
-            return a && e.charAt(0) !== "+" && u.includes(`+${l}`) ? (u.split(`+${l}`)[1] || "").trim() : u
-          },
-          xe = (o, e, n, s) => {
-            if (n === 0 && !s) return 0;
-            let a = 0;
-            for (let u = 0; u < e.length; u++) {
-              if (/[+0-9]/.test(e[u]) && a++, a === o && !s) return u + 1;
-              if (s && a === o + 1) return u
-            }
-            return e.length
-          },
-          Te = ["800", "822", "833", "844", "855", "866", "877", "880", "881", "882", "883", "884", "885", "886", "887", "888", "889"],
-          pe = o => {
-            const e = jt(o);
-            if (e.startsWith(ct.NANP) && e.length >= 4) {
-              const n = e.substring(1, 4);
-              return Te.includes(n)
-            }
-            return !1
-          };
-        for (const o of L) o.name = T[o.iso2];
-        var Se = 0,
-          R = new Set(L.map(o => o.iso2)),
-          F = o => R.has(o),
-          at = class zn {
-            constructor(e, n = {}) {
-              this.id = Se++, this.options = {
-                ...Et,
-                ...n
-              }, _t(this.options, T), this.ui = new he(e, this.options, this.id), this.isAndroid = zn._getIsAndroid(), this.promise = this._createInitPromises(), this.countries = fe(this.options);
-              const {
-                dialCodes: s,
-                dialCodeMaxLen: a,
-                dialCodeToIso2Map: u
-              } = Gt(this.countries);
-              this.dialCodes = s, this.dialCodeMaxLen = a, this.dialCodeToIso2Map = u, this.countryByIso2 = new Map(this.countries.map(l => [l.iso2, l])), this._init()
-            }
-            static _getIsAndroid() {
-              return typeof navigator < "u" ? /Android/i.test(navigator.userAgent) : !1
-            }
-            _updateNumeralSet(e) {
-              /[\u0660-\u0669]/.test(e) ? this.userNumeralSet = "arabic-indic" : /[\u06F0-\u06F9]/.test(e) ? this.userNumeralSet = "persian" : this.userNumeralSet = "ascii"
-            }
-            _mapAsciiToUserNumerals(e) {
-              if (this.userNumeralSet || this._updateNumeralSet(this.ui.telInput.value), this.userNumeralSet === "ascii") return e;
-              const n = this.userNumeralSet === "arabic-indic" ? 1632 : 1776;
-              return e.replace(/[0-9]/g, s => String.fromCharCode(n + Number(s)))
-            }
-            _normaliseNumerals(e) {
-              if (!e) return "";
-              if (this._updateNumeralSet(e), this.userNumeralSet === "ascii") return e;
-              const n = this.userNumeralSet === "arabic-indic" ? 1632 : 1776,
-                s = this.userNumeralSet === "arabic-indic" ? /[\u0660-\u0669]/g : /[\u06F0-\u06F9]/g;
-              return e.replace(s, a => String.fromCharCode(48 + (a.charCodeAt(0) - n)))
-            }
-            _getTelInputValue() {
-              const e = this.ui.telInput.value.trim();
-              return this._normaliseNumerals(e)
-            }
-            _setTelInputValue(e) {
-              this.ui.telInput.value = this._mapAsciiToUserNumerals(e)
-            }
-            _createInitPromises() {
-              const e = new Promise((s, a) => {
-                  this.resolveAutoCountryPromise = s, this.rejectAutoCountryPromise = a
+          }
+          _appendListItems() {
+            let e = document.createDocumentFragment();
+            for (let t = 0; t < this.countries.length; t++) {
+              let n = this.countries[t],
+                r = P({
+                  [h.COUNTRY_ITEM]: !0
                 }),
-                n = new Promise((s, a) => {
-                  this.resolveUtilsScriptPromise = s, this.rejectUtilsScriptPromise = a
+                i = F(`li`, {
+                  id: `iti-${this.id}__item-${n.iso2}`,
+                  class: r,
+                  tabindex: `-1`,
+                  role: `option`,
+                  [O.SELECTED]: `false`
                 });
-              return Promise.all([e, n])
+              i.dataset.dialCode = n.dialCode, i.dataset.countryCode = n.iso2, n.nodeById[this.id] = i, this.options.showFlags && F(`div`, {
+                class: `${h.FLAG} iti__${n.iso2}`
+              }, i);
+              let a = F(`span`, {
+                class: `iti__country-name`
+              }, i);
+              a.textContent = n.name;
+              let o = F(`span`, {
+                class: `iti__dial-code`
+              }, i);
+              this.isRTL && o.setAttribute(`dir`, `ltr`), o.textContent = `+${n.dialCode}`, e.appendChild(i)
             }
-            _init() {
-              this.selectedCountryData = {}, this.abortController = new AbortController, this._processCountryData(), this.ui.generateMarkup(this.countries), this._setInitialState(), this._initListeners(), this._initRequests()
+            this.countryList.appendChild(e)
+          }
+          updateInputPadding() {
+            if (this.selectedCountry) {
+              let e = this.options.separateDialCode ? x.SANE_SELECTED_WITH_DIAL_WIDTH : x.SANE_SELECTED_NO_DIAL_WIDTH,
+                t = (this.selectedCountry.offsetWidth || this._getHiddenSelectedCountryWidth() || e) + x.INPUT_PADDING_EXTRA_LEFT;
+              this.telInput.style.paddingLeft = `${t}px`
             }
-            _processCountryData() {
-              Wt(this.countries, this.options), At(this.countries, this.options), Z(this.countries)
-            }
-            _setInitialState(e = !1) {
-              const n = this.ui.telInput.getAttribute("value"),
-                s = this._normaliseNumerals(n),
-                a = this._getTelInputValue(),
-                l = s && s.startsWith("+") && (!a || !a.startsWith("+")) ? s : a,
-                d = this._getDialCode(l),
-                c = pe(l),
-                {
-                  initialCountry: b,
-                  geoIpLookup: U
-                } = this.options,
-                vt = b === Rt.AUTO && U;
-              if (d && !c) this._updateCountryFromNumber(l);
-              else if (!vt || e) {
-                const ut = b ? b.toLowerCase() : "";
-                F(ut) ? this._setCountry(ut) : d && c ? this._setCountry(Lt.ISO2) : this._setCountry("")
+          }
+          _getHiddenSelectedCountryWidth() {
+            if (this.telInput.parentNode) {
+              let e;
+              try {
+                e = window.top.document.body
+              } catch {
+                e = document.body
               }
-              l && this._updateValFromNumber(l)
+              let t = this.telInput.parentNode.cloneNode(!1);
+              t.style.visibility = `hidden`, e.appendChild(t);
+              let n = this.countryContainer.cloneNode();
+              t.appendChild(n);
+              let r = this.selectedCountry.cloneNode(!0);
+              n.appendChild(r);
+              let i = r.offsetWidth;
+              return e.removeChild(t), i
             }
-            _initListeners() {
-              this._initTelInputListeners(), this.options.allowDropdown && this._initDropdownListeners(), (this.ui.hiddenInput || this.ui.hiddenInputCountry) && this.ui.telInput.form && this._initHiddenInputListener()
+            return 0
+          }
+          updateSearchResultsA11yText() {
+            let {
+              i18n: e
+            } = this.options, t = this.countryList.childElementCount, n;
+            n = t === 0 ? e.zeroSearchResults : e.searchResultsText ? e.searchResultsText(t) : t === 1 ? e.oneSearchResult : e.multipleSearchResults.replace("${count}", t.toString()), this.searchResultsA11yText.textContent = n
+          }
+          scrollTo(e) {
+            let t = this.countryList,
+              n = document.documentElement.scrollTop,
+              r = t.offsetHeight,
+              i = t.getBoundingClientRect().top + n,
+              a = i + r,
+              o = e.offsetHeight,
+              s = e.getBoundingClientRect().top + n,
+              c = s + o,
+              l = s - i + t.scrollTop;
+            s < i ? t.scrollTop = l : c > a && (t.scrollTop = l - (r - o))
+          }
+          highlightListItem(e, t) {
+            let n = this.highlightedItem;
+            if (n && n.classList.remove(h.HIGHLIGHT), this.highlightedItem = e, this.highlightedItem && (this.highlightedItem.classList.add(h.HIGHLIGHT), this.options.countrySearch)) {
+              let e = this.highlightedItem.getAttribute(`id`) || ``;
+              this.searchInput.setAttribute(O.ACTIVE_DESCENDANT, e)
             }
-            _initHiddenInputListener() {
-              var n;
-              const e = () => {
-                this.ui.hiddenInput && (this.ui.hiddenInput.value = this.getNumber()), this.ui.hiddenInputCountry && (this.ui.hiddenInputCountry.value = this.selectedCountryData.iso2 || "")
+            t && this.highlightedItem.focus()
+          }
+          updateSelectedItem(e) {
+            if (this.selectedItem && this.selectedItem.dataset.countryCode !== e && (this.selectedItem.setAttribute(O.SELECTED, `false`), this.selectedItem = null), e && !this.selectedItem) {
+              let t = this.countryList.querySelector(`[data-country-code="${e}"]`);
+              t && (t.setAttribute(O.SELECTED, `true`), this.selectedItem = t)
+            }
+          }
+          filterCountries(e) {
+            this.countryList.innerHTML = ``;
+            let t = !0;
+            for (let n of e) {
+              let e = n.nodeById[this.id];
+              e && (this.countryList.appendChild(e), t && (this.highlightListItem(e, !1), t = !1))
+            }
+            t ? (this.highlightListItem(null, !1), this.searchNoResults && this.searchNoResults.classList.remove(h.HIDE)) : this.searchNoResults && this.searchNoResults.classList.add(h.HIDE), this.countryList.scrollTop = 0, this.updateSearchResultsA11yText()
+          }
+          destroy() {
+            this.telInput.iti = void 0, delete this.telInput.dataset.intlTelInputId, this.options.separateDialCode && (this.telInput.style.paddingLeft = this.originalPaddingLeft);
+            let e = this.telInput.parentNode;
+            e.before(this.telInput), e.remove(), this.telInput = null, this.countryContainer = null, this.selectedCountry = null, this.selectedCountryInner = null, this.selectedDialCode = null, this.dropdownArrow = null, this.dropdownContent = null, this.searchInput = null, this.searchIcon = null, this.searchClearButton = null, this.searchNoResults = null, this.searchResultsA11yText = null, this.countryList = null, this.dropdown = null, this.hiddenInput = null, this.hiddenInputCountry = null, this.highlightedItem = null, this.selectedItem = null;
+            for (let e of this.countries) delete e.nodeById[this.id];
+            this.countries = null
+          }
+        },
+        R = e => {
+          let {
+            onlyCountries: t,
+            excludeCountries: n
+          } = e;
+          if (t.length) {
+            let e = t.map(e => e.toLowerCase());
+            return u.filter(t => e.includes(t.iso2))
+          }
+          if (n.length) {
+            let e = n.map(e => e.toLowerCase());
+            return u.filter(t => !e.includes(t.iso2))
+          }
+          return u
+        },
+        re = (e, t) => {
+          for (let n of e) {
+            let e = n.iso2.toLowerCase();
+            t.i18n[e] && (n.name = t.i18n[e])
+          }
+        },
+        z = e => {
+          let t = new Set,
+            n = 0,
+            r = {},
+            i = (e, t) => {
+              if (!e || !t) return;
+              t.length > n && (n = t.length), r.hasOwnProperty(t) || (r[t] = []);
+              let i = r[t];
+              i.includes(e) || i.push(e)
+            },
+            a = [...e].sort((e, t) => e.priority - t.priority);
+          for (let e of a) {
+            t.has(e.dialCode) || t.add(e.dialCode);
+            for (let t = 1; t < e.dialCode.length; t++) {
+              let n = e.dialCode.substring(0, t);
+              i(e.iso2, n)
+            }
+            if (i(e.iso2, e.dialCode), e.areaCodes) {
+              let t = r[e.dialCode][0];
+              for (let n of e.areaCodes) {
+                for (let r = 1; r < n.length; r++) {
+                  let a = n.substring(0, r),
+                    o = e.dialCode + a;
+                  i(t, o), i(e.iso2, o)
+                }
+                i(e.iso2, e.dialCode + n)
+              }
+            }
+          }
+          return {
+            dialCodes: t,
+            dialCodeMaxLen: n,
+            dialCodeToIso2Map: r
+          }
+        },
+        B = (e, t) => {
+          t.countryOrder && (t.countryOrder = t.countryOrder.map(e => e.toLowerCase())), e.sort((e, n) => {
+            let {
+              countryOrder: r
+            } = t;
+            if (r) {
+              let t = r.indexOf(e.iso2),
+                i = r.indexOf(n.iso2),
+                a = t > -1,
+                o = i > -1;
+              if (a || o) return a && o ? t - i : a ? -1 : 1
+            }
+            return e.name.localeCompare(n.name)
+          })
+        },
+        ie = e => {
+          for (let t of e) t.normalisedName = M(t.name), t.initials = t.normalisedName.split(/[^a-z]/).map(e => e[0]).join(``), t.dialCodePlus = `+${t.dialCode}`
+        },
+        ae = (e, t, n, r) => {
+          let i = e;
+          if (n && t) {
+            t = `+${r.dialCode}`;
+            let e = i[t.length] === ` ` || i[t.length] === `-` ? t.length + 1 : t.length;
+            i = i.substring(e)
+          }
+          return i
+        },
+        V = (e, t, n, r, i) => {
+          let a = n ? n.formatNumberAsYouType(e, r.iso2) : e,
+            {
+              dialCode: o
+            } = r;
+          return i && t.charAt(0) !== `+` && a.includes(`+${o}`) ? (a.split(`+${o}`)[1] || ``).trim() : a
+        },
+        oe = (e, t, n, r) => {
+          if (n === 0 && !r) return 0;
+          let i = 0;
+          for (let n = 0; n < t.length; n++) {
+            if (/[+0-9]/.test(t[n]) && i++, i === e && !r) return n + 1;
+            if (r && i === e + 1) return n
+          }
+          return t.length
+        },
+        H = [`800`, `822`, `833`, `844`, `855`, `866`, `877`, `880`, `881`, `882`, `883`, `884`, `885`, `886`, `887`, `888`, `889`],
+        U = e => {
+          let t = j(e);
+          if (t.startsWith(S.NANP) && t.length >= 4) {
+            let e = t.substring(1, 4);
+            return H.includes(e)
+          }
+          return !1
+        };
+      for (let e of u) e.name = p[e.iso2];
+      var se = 0,
+        ce = new Set(u.map(e => e.iso2)),
+        W = e => ce.has(e),
+        G = class e {
+          constructor(t, n = {}) {
+            this.id = se++, this.options = {
+              ...ee,
+              ...n
+            }, A(this.options, p), this.ui = new L(t, this.options, this.id), this.isAndroid = e._getIsAndroid(), this.promise = this._createInitPromises(), this.countries = R(this.options);
+            let {
+              dialCodes: r,
+              dialCodeMaxLen: i,
+              dialCodeToIso2Map: a
+            } = z(this.countries);
+            this.dialCodes = r, this.dialCodeMaxLen = i, this.dialCodeToIso2Map = a, this.countryByIso2 = new Map(this.countries.map(e => [e.iso2, e])), this._init()
+          }
+          static _getIsAndroid() {
+            return typeof navigator < `u` && /Android/i.test(navigator.userAgent)
+          }
+          _updateNumeralSet(e) {
+            this.userNumeralSet = /[\u0660-\u0669]/.test(e) ? `arabic-indic` : /[\u06F0-\u06F9]/.test(e) ? `persian` : `ascii`
+          }
+          _mapAsciiToUserNumerals(e) {
+            if (this.userNumeralSet || this._updateNumeralSet(this.ui.telInput.value), this.userNumeralSet === `ascii`) return e;
+            let t = this.userNumeralSet === `arabic-indic` ? 1632 : 1776;
+            return e.replace(/[0-9]/g, e => String.fromCharCode(t + Number(e)))
+          }
+          _normaliseNumerals(e) {
+            if (!e) return ``;
+            if (this._updateNumeralSet(e), this.userNumeralSet === `ascii`) return e;
+            let t = this.userNumeralSet === `arabic-indic` ? 1632 : 1776,
+              n = this.userNumeralSet === `arabic-indic` ? /[\u0660-\u0669]/g : /[\u06F0-\u06F9]/g;
+            return e.replace(n, e => String.fromCharCode(48 + (e.charCodeAt(0) - t)))
+          }
+          _getTelInputValue() {
+            let e = this.ui.telInput.value.trim();
+            return this._normaliseNumerals(e)
+          }
+          _setTelInputValue(e) {
+            this.ui.telInput.value = this._mapAsciiToUserNumerals(e)
+          }
+          _createInitPromises() {
+            let e = new Promise((e, t) => {
+                this.resolveAutoCountryPromise = e, this.rejectAutoCountryPromise = t
+              }),
+              t = new Promise((e, t) => {
+                this.resolveUtilsScriptPromise = e, this.rejectUtilsScriptPromise = t
+              });
+            return Promise.all([e, t])
+          }
+          _init() {
+            this.selectedCountryData = {}, this.abortController = new AbortController, this._processCountryData(), this.ui.generateMarkup(this.countries), this._setInitialState(), this._initListeners(), this._initRequests()
+          }
+          _processCountryData() {
+            re(this.countries, this.options), B(this.countries, this.options), ie(this.countries)
+          }
+          _setInitialState(e = !1) {
+            let t = this.ui.telInput.getAttribute(`value`),
+              n = this._normaliseNumerals(t),
+              r = this._getTelInputValue(),
+              i = n && n.startsWith(`+`) && (!r || !r.startsWith(`+`)) ? n : r,
+              a = this._getDialCode(i),
+              o = U(i),
+              {
+                initialCountry: s,
+                geoIpLookup: c
+              } = this.options,
+              l = s === E.AUTO && c;
+            if (a && !o) this._updateCountryFromNumber(i);
+            else if (!l || e) {
+              let e = s ? s.toLowerCase() : ``;
+              W(e) ? this._setCountry(e) : a && o ? this._setCountry(w.ISO2) : this._setCountry(``)
+            }
+            i && this._updateValFromNumber(i)
+          }
+          _initListeners() {
+            this._initTelInputListeners(), this.options.allowDropdown && this._initDropdownListeners(), (this.ui.hiddenInput || this.ui.hiddenInputCountry) && this.ui.telInput.form && this._initHiddenInputListener()
+          }
+          _initHiddenInputListener() {
+            var e;
+            (e = this.ui.telInput.form) == null || e.addEventListener(`submit`, () => {
+              this.ui.hiddenInput && (this.ui.hiddenInput.value = this.getNumber()), this.ui.hiddenInputCountry && (this.ui.hiddenInputCountry.value = this.selectedCountryData.iso2 || ``)
+            }, {
+              signal: this.abortController.signal
+            })
+          }
+          _initDropdownListeners() {
+            let e = this.abortController.signal,
+              t = e => {
+                this.ui.dropdownContent.classList.contains(h.HIDE) ? this.ui.telInput.focus() : e.preventDefault()
+              },
+              n = this.ui.telInput.closest(`label`);
+            n && n.addEventListener(`click`, t, {
+              signal: e
+            }), this.ui.selectedCountry.addEventListener(`click`, () => {
+              this.ui.dropdownContent.classList.contains(h.HIDE) && !this.ui.telInput.disabled && !this.ui.telInput.readOnly && this._openDropdown()
+            }, {
+              signal: e
+            }), this.ui.countryContainer.addEventListener(`keydown`, e => {
+              this.ui.dropdownContent.classList.contains(h.HIDE) && [g.ARROW_UP, g.ARROW_DOWN, g.SPACE, g.ENTER].includes(e.key) && (e.preventDefault(), e.stopPropagation(), this._openDropdown()), e.key === g.TAB && this._closeDropdown()
+            }, {
+              signal: e
+            })
+          }
+          _initRequests() {
+            let {
+              loadUtils: e,
+              initialCountry: t,
+              geoIpLookup: n
+            } = this.options;
+            if (e && !J.utils) {
+              let t = () => {
+                var t;
+                (t = J.attachUtils(e)) == null || t.catch(() => {})
               };
-              (n = this.ui.telInput.form) == null || n.addEventListener("submit", e, {
+              J.documentReady() ? t() : window.addEventListener(`load`, () => {
+                t()
+              }, {
                 signal: this.abortController.signal
               })
-            }
-            _initDropdownListeners() {
-              const e = this.abortController.signal,
-                n = l => {
-                  this.ui.dropdownContent.classList.contains(A.HIDE) ? this.ui.telInput.focus() : l.preventDefault()
-                },
-                s = this.ui.telInput.closest("label");
-              s && s.addEventListener("click", n, {
-                signal: e
-              });
-              const a = () => {
-                this.ui.dropdownContent.classList.contains(A.HIDE) && !this.ui.telInput.disabled && !this.ui.telInput.readOnly && this._openDropdown()
-              };
-              this.ui.selectedCountry.addEventListener("click", a, {
-                signal: e
-              });
-              const u = l => {
-                this.ui.dropdownContent.classList.contains(A.HIDE) && [X.ARROW_UP, X.ARROW_DOWN, X.SPACE, X.ENTER].includes(l.key) && (l.preventDefault(), l.stopPropagation(), this._openDropdown()), l.key === X.TAB && this._closeDropdown()
-              };
-              this.ui.countryContainer.addEventListener("keydown", u, {
-                signal: e
-              })
-            }
-            _initRequests() {
-              const {
-                loadUtils: e,
-                initialCountry: n,
-                geoIpLookup: s
-              } = this.options;
-              if (e && !v.utils) {
-                const u = () => {
-                  var l;
-                  (l = v.attachUtils(e)) == null || l.catch(() => {})
-                };
-                if (v.documentReady()) u();
-                else {
-                  const l = () => {
-                    u()
-                  };
-                  window.addEventListener("load", l, {
-                    signal: this.abortController.signal
-                  })
-                }
-              } else this.resolveUtilsScriptPromise();
-              n === Rt.AUTO && s && !this.selectedCountryData.iso2 ? this._loadAutoCountry() : this.resolveAutoCountryPromise()
-            }
-            _loadAutoCountry() {
-              v.autoCountry ? this.handleAutoCountry() : v.startedLoadingAutoCountry || (v.startedLoadingAutoCountry = !0, typeof this.options.geoIpLookup == "function" && this.options.geoIpLookup((e = "") => {
-                const n = e.toLowerCase();
-                F(n) ? (v.autoCountry = n, setTimeout(() => tt("handleAutoCountry"))) : (this._setInitialState(!0), tt("rejectAutoCountryPromise"))
-              }, () => {
-                this._setInitialState(!0), tt("rejectAutoCountryPromise")
-              }))
-            }
-            _openDropdownWithPlus() {
-              this._openDropdown(), this.ui.searchInput.value = "+", this._filterCountriesByQuery("")
-            }
-            _initTelInputListeners() {
-              this._bindInputListener(), this._maybeBindKeydownListener(), this._maybeBindPasteListener()
-            }
-            _bindInputListener() {
-              const {
-                strictMode: e,
-                formatAsYouType: n,
-                separateDialCode: s,
-                allowDropdown: a,
-                countrySearch: u
-              } = this.options;
-              let l = !1;
-              gt.ALPHA_UNICODE.test(this._getTelInputValue()) && (l = !0);
-              const d = c => {
-                const b = this._getTelInputValue();
-                if (this.isAndroid && (c == null ? void 0 : c.data) === "+" && s && a && u) {
-                  const z = this.ui.telInput.selectionStart || 0,
-                    pt = b.substring(0, z - 1),
-                    it = b.substring(z);
-                  this._setTelInputValue(pt + it), this._openDropdownWithPlus();
+            } else this.resolveUtilsScriptPromise();
+            t === E.AUTO && n && !this.selectedCountryData.iso2 ? this._loadAutoCountry() : this.resolveAutoCountryPromise()
+          }
+          _loadAutoCountry() {
+            J.autoCountry ? this.handleAutoCountry() : J.startedLoadingAutoCountry || (J.startedLoadingAutoCountry = !0, typeof this.options.geoIpLookup == `function` && this.options.geoIpLookup((e = ``) => {
+              let t = e.toLowerCase();
+              W(t) ? (J.autoCountry = t, setTimeout(() => q(`handleAutoCountry`))) : (this._setInitialState(!0), q(`rejectAutoCountryPromise`))
+            }, () => {
+              this._setInitialState(!0), q(`rejectAutoCountryPromise`)
+            }))
+          }
+          _openDropdownWithPlus() {
+            this._openDropdown(), this.ui.searchInput.value = `+`, this._filterCountriesByQuery(``)
+          }
+          _initTelInputListeners() {
+            this._bindInputListener(), this._maybeBindKeydownListener(), this._maybeBindPasteListener()
+          }
+          _bindInputListener() {
+            let {
+              strictMode: e,
+              formatAsYouType: t,
+              separateDialCode: n,
+              allowDropdown: r,
+              countrySearch: i
+            } = this.options, a = !1;
+            v.ALPHA_UNICODE.test(this._getTelInputValue()) && (a = !0), this.ui.telInput.addEventListener(`input`, o => {
+              let s = this._getTelInputValue();
+              if (this.isAndroid && (o == null ? void 0 : o.data) === `+` && n && r && i) {
+                let e = this.ui.telInput.selectionStart || 0,
+                  t = s.substring(0, e - 1),
+                  n = s.substring(e);
+                this._setTelInputValue(t + n), this._openDropdownWithPlus();
+                return
+              }
+              this._updateCountryFromNumber(s) && this._triggerCountryChange();
+              let c = (o == null ? void 0 : o.data) && v.NON_PLUS_NUMERIC.test(o.data),
+                l = (o == null ? void 0 : o.inputType) === _.PASTE && s;
+              c || l && !e ? a = !0 : v.NON_PLUS_NUMERIC.test(s) || (a = !1);
+              let u = (o == null ? void 0 : o.detail) && o.detail.isSetNumber,
+                d = this.userNumeralSet === `ascii`;
+              if (t && !a && !u && d) {
+                let e = this.ui.telInput.selectionStart || 0,
+                  t = s.substring(0, e).replace(v.NON_PLUS_NUMERIC_GLOBAL, ``).length,
+                  n = (o == null ? void 0 : o.inputType) === _.DELETE_FWD,
+                  r = V(this._getFullNumber(), s, J.utils, this.selectedCountryData, this.options.separateDialCode),
+                  i = oe(t, r, e, n);
+                this._setTelInputValue(r), this.ui.telInput.setSelectionRange(i, i)
+              }
+            }, {
+              signal: this.abortController.signal
+            })
+          }
+          _maybeBindKeydownListener() {
+            let {
+              strictMode: e,
+              separateDialCode: t,
+              allowDropdown: n,
+              countrySearch: r
+            } = this.options;
+            (e || t) && this.ui.telInput.addEventListener(`keydown`, i => {
+              if (i.key && i.key.length === 1 && !i.altKey && !i.ctrlKey && !i.metaKey) {
+                if (t && n && r && i.key === `+`) {
+                  i.preventDefault(), this._openDropdownWithPlus();
                   return
                 }
-                this._updateCountryFromNumber(b) && this._triggerCountryChange();
-                const U = (c == null ? void 0 : c.data) && gt.NON_PLUS_NUMERIC.test(c.data),
-                  vt = (c == null ? void 0 : c.inputType) === W.PASTE && b;
-                U || vt && !e ? l = !0 : gt.NON_PLUS_NUMERIC.test(b) || (l = !1);
-                const ut = (c == null ? void 0 : c.detail) && c.detail.isSetNumber,
-                  V = this.userNumeralSet === "ascii";
-                if (n && !l && !ut && V) {
-                  const z = this.ui.telInput.selectionStart || 0,
-                    it = b.substring(0, z).replace(gt.NON_PLUS_NUMERIC_GLOBAL, "").length,
-                    ht = (c == null ? void 0 : c.inputType) === W.DELETE_FWD,
-                    ot = this._getFullNumber(),
-                    Kt = De(ot, b, v.utils, this.selectedCountryData, this.options.separateDialCode),
-                    Ft = xe(it, Kt, z, ht);
-                  this._setTelInputValue(Kt), this.ui.telInput.setSelectionRange(Ft, Ft)
-                }
-              };
-              this.ui.telInput.addEventListener("input", d, {
-                signal: this.abortController.signal
-              })
-            }
-            _maybeBindKeydownListener() {
-              const {
-                strictMode: e,
-                separateDialCode: n,
-                allowDropdown: s,
-                countrySearch: a
-              } = this.options;
-              if (e || n) {
-                const u = l => {
-                  if (l.key && l.key.length === 1 && !l.altKey && !l.ctrlKey && !l.metaKey) {
-                    if (n && s && a && l.key === "+") {
-                      l.preventDefault(), this._openDropdownWithPlus();
-                      return
-                    }
-                    if (e) {
-                      const d = this._getTelInputValue(),
-                        b = !d.startsWith("+") && this.ui.telInput.selectionStart === 0 && l.key === "+",
-                        U = this._normaliseNumerals(l.key),
-                        vt = /^[0-9]$/.test(U),
-                        ut = n ? vt : b || vt,
-                        V = this.ui.telInput,
-                        z = V.selectionStart,
-                        pt = V.selectionEnd,
-                        it = d.slice(0, z),
-                        ht = d.slice(pt),
-                        ot = it + l.key + ht,
-                        Kt = this._getFullNumber(ot),
-                        Ft = v.utils.getCoreNumber(Kt, this.selectedCountryData.iso2),
-                        xt = this.maxCoreNumberLength && Ft.length > this.maxCoreNumberLength,
-                        te = this._getNewCountryFromNumber(Kt) !== null;
-                      (!ut || xt && !te && !b) && l.preventDefault()
-                    }
-                  }
-                };
-                this.ui.telInput.addEventListener("keydown", u, {
-                  signal: this.abortController.signal
-                })
-              }
-            }
-            _maybeBindPasteListener() {
-              if (this.options.strictMode) {
-                const e = n => {
-                  n.preventDefault();
-                  const s = this.ui.telInput,
-                    a = s.selectionStart,
-                    u = s.selectionEnd,
-                    l = this._getTelInputValue(),
-                    d = l.slice(0, a),
-                    c = l.slice(u),
-                    b = this.selectedCountryData.iso2,
-                    U = n.clipboardData.getData("text"),
-                    vt = this._normaliseNumerals(U),
-                    ut = a === 0 && u > 0,
-                    V = !l.startsWith("+") || ut,
-                    z = vt.replace(gt.NON_PLUS_NUMERIC_GLOBAL, ""),
-                    pt = z.startsWith("+"),
-                    it = z.replace(/\+/g, ""),
-                    ht = pt && V ? `+${it}` : it;
-                  let ot = d + ht + c;
-                  if (ot.length > 5) {
-                    let Ft = v.utils.getCoreNumber(ot, b);
-                    for (; Ft.length === 0 && ot.length > 0;) ot = ot.slice(0, -1), Ft = v.utils.getCoreNumber(ot, b);
-                    if (!Ft) return;
-                    if (this.maxCoreNumberLength && Ft.length > this.maxCoreNumberLength)
-                      if (s.selectionEnd === l.length) {
-                        const xt = Ft.length - this.maxCoreNumberLength;
-                        ot = ot.slice(0, ot.length - xt)
-                      } else return
-                  }
-                  this._setTelInputValue(ot);
-                  const Kt = a + ht.length;
-                  s.setSelectionRange(Kt, Kt), s.dispatchEvent(new InputEvent("input", {
-                    bubbles: !0
-                  }))
-                };
-                this.ui.telInput.addEventListener("paste", e, {
-                  signal: this.abortController.signal
-                })
-              }
-            }
-            _cap(e) {
-              const n = Number(this.ui.telInput.getAttribute("maxlength"));
-              return n && e.length > n ? e.substring(0, n) : e
-            }
-            _trigger(e, n = {}) {
-              const s = new CustomEvent(e, {
-                bubbles: !0,
-                cancelable: !0,
-                detail: n
-              });
-              this.ui.telInput.dispatchEvent(s)
-            }
-            _openDropdown() {
-              const {
-                fixDropdownWidth: e,
-                countrySearch: n
-              } = this.options;
-              if (this.dropdownAbortController = new AbortController, e && (this.ui.dropdownContent.style.width = `${this.ui.telInput.offsetWidth}px`), this.ui.dropdownContent.classList.remove(A.HIDE), this.ui.selectedCountry.setAttribute(mt.EXPANDED, "true"), this._setDropdownPosition(), n) {
-                const s = this.ui.countryList.firstElementChild;
-                s && (this.ui.highlightListItem(s, !1), this.ui.countryList.scrollTop = 0), this.ui.searchInput.focus()
-              }
-              this._bindDropdownListeners(), this.ui.dropdownArrow.classList.add(A.ARROW_UP), this._trigger(nt.OPEN_COUNTRY_DROPDOWN)
-            }
-            _setDropdownPosition() {
-              if (this.options.dropdownContainer && this.options.dropdownContainer.appendChild(this.ui.dropdown), !this.options.useFullscreenPopup) {
-                const e = this.ui.telInput.getBoundingClientRect(),
-                  n = this.ui.telInput.offsetHeight;
-                if (this.options.dropdownContainer) {
-                  this.ui.dropdown.style.top = `${e.top+n}px`, this.ui.dropdown.style.left = `${e.left}px`;
-                  const s = () => this._closeDropdown();
-                  window.addEventListener("scroll", s, {
-                    signal: this.dropdownAbortController.signal
-                  })
-                }
-              }
-            }
-            _bindDropdownListeners() {
-              const e = this.dropdownAbortController.signal;
-              this._bindDropdownMouseoverListener(e), this._bindDropdownCountryClickListener(e), this._bindDropdownClickOffListener(e), this._bindDropdownKeydownListener(e), this.options.countrySearch && this._bindDropdownSearchListeners(e)
-            }
-            _bindDropdownMouseoverListener(e) {
-              const n = s => {
-                var u;
-                const a = (u = s.target) == null ? void 0 : u.closest(`.${A.COUNTRY_ITEM}`);
-                a && this.ui.highlightListItem(a, !1)
-              };
-              this.ui.countryList.addEventListener("mouseover", n, {
-                signal: e
-              })
-            }
-            _bindDropdownCountryClickListener(e) {
-              const n = s => {
-                var u;
-                const a = (u = s.target) == null ? void 0 : u.closest(`.${A.COUNTRY_ITEM}`);
-                a && this._selectListItem(a)
-              };
-              this.ui.countryList.addEventListener("click", n, {
-                signal: e
-              })
-            }
-            _bindDropdownClickOffListener(e) {
-              const n = s => {
-                !!s.target.closest(`#iti-${this.id}__dropdown-content`) || this._closeDropdown()
-              };
-              setTimeout(() => {
-                document.documentElement.addEventListener("click", n, {
-                  signal: e
-                })
-              }, 0)
-            }
-            _bindDropdownKeydownListener(e) {
-              let n = "",
-                s = null;
-              const a = u => {
-                [X.ARROW_UP, X.ARROW_DOWN, X.ENTER, X.ESC].includes(u.key) && (u.preventDefault(), u.stopPropagation(), u.key === X.ARROW_UP || u.key === X.ARROW_DOWN ? this._handleUpDownKey(u.key) : u.key === X.ENTER ? this._handleEnterKey() : u.key === X.ESC && (this._closeDropdown(), this.ui.selectedCountry.focus())), !this.options.countrySearch && gt.HIDDEN_SEARCH_CHAR.test(u.key) && (u.stopPropagation(), s && clearTimeout(s), n += u.key.toLowerCase(), this._searchForCountry(n), s = setTimeout(() => {
-                  n = ""
-                }, It.HIDDEN_SEARCH_RESET_MS))
-              };
-              document.addEventListener("keydown", a, {
-                signal: e
-              })
-            }
-            _bindDropdownSearchListeners(e) {
-              const n = () => {
-                const l = this.ui.searchInput.value.trim();
-                this._filterCountriesByQuery(l), this.ui.searchInput.value ? this.ui.searchClearButton.classList.remove(A.HIDE) : this.ui.searchClearButton.classList.add(A.HIDE)
-              };
-              let s = null;
-              const a = () => {
-                s && clearTimeout(s), s = setTimeout(() => {
-                  n(), s = null
-                }, 100)
-              };
-              this.ui.searchInput.addEventListener("input", a, {
-                signal: e
-              });
-              const u = () => {
-                this.ui.searchInput.value = "", this.ui.searchInput.focus(), n()
-              };
-              this.ui.searchClearButton.addEventListener("click", u, {
-                signal: e
-              })
-            }
-            _searchForCountry(e) {
-              const n = j(this.countries, e);
-              if (n) {
-                const s = n.nodeById[this.id];
-                this.ui.highlightListItem(s, !1), this.ui.scrollTo(s)
-              }
-            }
-            _filterCountriesByQuery(e) {
-              let n;
-              e === "" ? n = this.countries : n = P(this.countries, e), this.ui.filterCountries(n)
-            }
-            _handleUpDownKey(e) {
-              var s, a;
-              let n = e === X.ARROW_UP ? (s = this.ui.highlightedItem) == null ? void 0 : s.previousElementSibling : (a = this.ui.highlightedItem) == null ? void 0 : a.nextElementSibling;
-              !n && this.ui.countryList.childElementCount > 1 && (n = e === X.ARROW_UP ? this.ui.countryList.lastElementChild : this.ui.countryList.firstElementChild), n && (this.ui.scrollTo(n), this.ui.highlightListItem(n, !1))
-            }
-            _handleEnterKey() {
-              this.ui.highlightedItem && this._selectListItem(this.ui.highlightedItem)
-            }
-            _updateValFromNumber(e) {
-              let n = e;
-              if (this.options.formatOnDisplay && v.utils && this.selectedCountryData) {
-                const s = this.options.nationalMode || !n.startsWith("+") && !this.options.separateDialCode,
-                  {
-                    NATIONAL: a,
-                    INTERNATIONAL: u
-                  } = v.utils.numberFormat,
-                  l = s ? a : u;
-                n = v.utils.formatNumber(n, this.selectedCountryData.iso2, l)
-              }
-              n = this._beforeSetNumber(n), this._setTelInputValue(n)
-            }
-            _updateCountryFromNumber(e) {
-              const n = this._getNewCountryFromNumber(e);
-              return n !== null ? this._setCountry(n) : !1
-            }
-            _ensureHasDialCode(e) {
-              const {
-                dialCode: n,
-                nationalPrefix: s
-              } = this.selectedCountryData;
-              if (e.startsWith("+") || !n) return e;
-              const l = s && e.startsWith(s) && !this.options.separateDialCode ? e.substring(1) : e;
-              return `+${n}${l}`
-            }
-            _getNewCountryFromNumber(e) {
-              const n = e.indexOf("+");
-              let s = n ? e.substring(n) : e;
-              const a = this.selectedCountryData.iso2,
-                u = this.selectedCountryData.dialCode;
-              s = this._ensureHasDialCode(s);
-              const l = this._getDialCode(s, !0),
-                d = jt(s);
-              if (l) {
-                const c = jt(l),
-                  b = this.dialCodeToIso2Map[c];
-                if (b.length === 1) return b[0] === a ? null : b[0];
-                if (!a && this.defaultCountry && b.includes(this.defaultCountry)) return this.defaultCountry;
-                if (u === ct.NANP && pe(d)) return null;
-                const {
-                  areaCodes: vt,
-                  priority: ut
-                } = this.selectedCountryData;
-                if (vt) {
-                  const ht = vt.map(ot => `${u}${ot}`);
-                  for (const ot of ht)
-                    if (d.startsWith(ot)) return null
-                }
-                const z = vt && !(ut === 0) && d.length > c.length,
-                  pt = a && b.includes(a) && !z,
-                  it = a === b[0];
-                if (!pt && !it) return b[0]
-              } else if (s.startsWith("+") && d.length) {
-                const c = this.selectedCountryData.dialCode || "";
-                return c && c.startsWith(d) ? null : ""
-              } else if ((!s || s === "+") && !a) return this.defaultCountry;
-              return null
-            }
-            _setCountry(e) {
-              const {
-                separateDialCode: n,
-                showFlags: s,
-                i18n: a,
-                allowDropdown: u
-              } = this.options, l = this.selectedCountryData.iso2 || "";
-              if (u && this.ui.updateSelectedItem(e), this.selectedCountryData = e ? this.countryByIso2.get(e) : {}, this.selectedCountryData.iso2 && (this.defaultCountry = this.selectedCountryData.iso2), this.ui.selectedCountry) {
-                const d = e && s ? `${A.FLAG} iti__${e}` : `${A.FLAG} ${A.GLOBE}`;
-                let c, b;
                 if (e) {
-                  const {
-                    name: U,
-                    dialCode: vt
-                  } = this.selectedCountryData;
-                  b = U, c = a.selectedCountryAriaLabel.replace("${countryName}", U).replace("${dialCode}", `+${vt}`)
-                } else b = a.noCountrySelected, c = a.noCountrySelected;
-                this.ui.selectedCountryInner.className = d, this.ui.selectedCountry.setAttribute("title", b), this.ui.selectedCountry.setAttribute(mt.LABEL, c)
-              }
-              if (n) {
-                const d = this.selectedCountryData.dialCode ? `+${this.selectedCountryData.dialCode}` : "";
-                this.ui.selectedDialCode.textContent = d, this.ui.updateInputPadding()
-              }
-              return this._updatePlaceholder(), this._updateMaxLength(), l !== e
-            }
-            _updateMaxLength() {
-              const {
-                strictMode: e,
-                placeholderNumberType: n,
-                validationNumberTypes: s
-              } = this.options, {
-                iso2: a
-              } = this.selectedCountryData;
-              if (e && v.utils)
-                if (a) {
-                  const u = v.utils.numberType[n];
-                  let l = v.utils.getExampleNumber(a, !1, u, !0),
-                    d = l;
-                  for (; v.utils.isPossibleNumber(l, a, s);) d = l, l += "0";
-                  const c = v.utils.getCoreNumber(d, a);
-                  this.maxCoreNumberLength = c.length, a === "by" && (this.maxCoreNumberLength = c.length + 1)
-                } else this.maxCoreNumberLength = null
-            }
-            _updatePlaceholder() {
-              const {
-                autoPlaceholder: e,
-                placeholderNumberType: n,
-                nationalMode: s,
-                customPlaceholder: a
-              } = this.options, u = e === St.AGGRESSIVE || !this.ui.hadInitialPlaceholder && e === St.POLITE;
-              if (v.utils && u) {
-                const l = v.utils.numberType[n];
-                let d = this.selectedCountryData.iso2 ? v.utils.getExampleNumber(this.selectedCountryData.iso2, s, l) : "";
-                d = this._beforeSetNumber(d), typeof a == "function" && (d = a(d, this.selectedCountryData)), this.ui.telInput.setAttribute("placeholder", d)
-              }
-            }
-            _selectListItem(e) {
-              const n = e.dataset[zt.COUNTRY_CODE],
-                s = this._setCountry(n);
-              this._closeDropdown();
-              const a = e.dataset[zt.DIAL_CODE];
-              if (this._updateDialCode(a), this.options.formatOnDisplay) {
-                const u = this._getTelInputValue();
-                this._updateValFromNumber(u)
-              }
-              this.ui.telInput.focus(), s && this._triggerCountryChange()
-            }
-            _closeDropdown() {
-              this.ui.dropdownContent.classList.contains(A.HIDE) || (this.ui.dropdownContent.classList.add(A.HIDE), this.ui.selectedCountry.setAttribute(mt.EXPANDED, "false"), this.options.countrySearch && (this.ui.searchInput.removeAttribute(mt.ACTIVE_DESCENDANT), this.ui.highlightedItem && (this.ui.highlightedItem.classList.remove(A.HIGHLIGHT), this.ui.highlightedItem = null)), this.ui.dropdownArrow.classList.remove(A.ARROW_UP), this.dropdownAbortController.abort(), this.dropdownAbortController = null, this.options.dropdownContainer && this.ui.dropdown.remove(), this._trigger(nt.CLOSE_COUNTRY_DROPDOWN))
-            }
-            _updateDialCode(e) {
-              const n = this._getTelInputValue(),
-                s = `+${e}`;
-              let a;
-              if (n.startsWith("+")) {
-                const u = this._getDialCode(n);
-                u ? a = n.replace(u, s) : a = s, this._setTelInputValue(a)
-              }
-            }
-            _getDialCode(e, n) {
-              let s = "";
-              if (e.startsWith("+")) {
-                let a = "",
-                  u = !1;
-                for (let l = 0; l < e.length; l++) {
-                  const d = e.charAt(l);
-                  if (/[0-9]/.test(d)) {
-                    if (a += d, !!!this.dialCodeToIso2Map[a]) break;
-                    if (this.dialCodes.has(a)) {
-                      if (s = e.substring(0, l + 1), u = !0, !n) break
-                    } else n && u && (s = e.substring(0, l + 1));
-                    if (a.length === this.dialCodeMaxLen) break
-                  }
+                  let e = this._getTelInputValue(),
+                    n = !e.startsWith(`+`) && this.ui.telInput.selectionStart === 0 && i.key === `+`,
+                    r = this._normaliseNumerals(i.key),
+                    a = /^[0-9]$/.test(r),
+                    o = t ? a : n || a,
+                    s = this.ui.telInput,
+                    c = s.selectionStart,
+                    l = s.selectionEnd,
+                    u = e.slice(0, c),
+                    d = e.slice(l),
+                    f = u + i.key + d,
+                    p = this._getFullNumber(f),
+                    m = J.utils.getCoreNumber(p, this.selectedCountryData.iso2),
+                    h = this.maxCoreNumberLength && m.length > this.maxCoreNumberLength,
+                    g = this._getNewCountryFromNumber(p) !== null;
+                  (!o || h && !g && !n) && i.preventDefault()
                 }
               }
-              return s
-            }
-            _getFullNumber(e) {
-              const n = e ? this._normaliseNumerals(e) : this._getTelInputValue(),
-                {
-                  dialCode: s
-                } = this.selectedCountryData;
-              let a;
-              const u = jt(n);
-              return this.options.separateDialCode && !n.startsWith("+") && s && u ? a = `+${s}` : a = "", a + n
-            }
-            _beforeSetNumber(e) {
-              const n = this._getDialCode(e),
-                s = ve(e, n, this.options.separateDialCode, this.selectedCountryData);
-              return this._cap(s)
-            }
-            _triggerCountryChange() {
-              this._trigger(nt.COUNTRY_CHANGE)
-            }
-            handleAutoCountry() {
-              this.options.initialCountry === Rt.AUTO && v.autoCountry && (this.defaultCountry = v.autoCountry, this.selectedCountryData.iso2 || this.ui.selectedCountryInner.classList.contains(A.GLOBE) || this.setCountry(this.defaultCountry), this.resolveAutoCountryPromise())
-            }
-            handleUtils() {
-              if (v.utils) {
-                const e = this._getTelInputValue();
-                e && this._updateValFromNumber(e), this.selectedCountryData.iso2 && (this._updatePlaceholder(), this._updateMaxLength())
-              }
-              this.resolveUtilsScriptPromise()
-            }
-            destroy() {
-              this.ui.telInput && (this.options.allowDropdown && this._closeDropdown(), this.abortController.abort(), this.abortController = null, this.ui.destroy(), v.instances instanceof Map ? v.instances.delete(this.id) : delete v.instances[this.id])
-            }
-            getExtension() {
-              return v.utils ? v.utils.getExtension(this._getFullNumber(), this.selectedCountryData.iso2) : ""
-            }
-            getNumber(e) {
-              if (v.utils) {
-                const {
-                  iso2: n
-                } = this.selectedCountryData, s = this._getFullNumber(), a = v.utils.formatNumber(s, n, e);
-                return this._mapAsciiToUserNumerals(a)
-              }
-              return ""
-            }
-            getNumberType() {
-              return v.utils ? v.utils.getNumberType(this._getFullNumber(), this.selectedCountryData.iso2) : I.UNKNOWN_NUMBER_TYPE
-            }
-            getSelectedCountryData() {
-              return this.selectedCountryData
-            }
-            getValidationError() {
-              if (v.utils) {
-                const {
-                  iso2: e
-                } = this.selectedCountryData;
-                return v.utils.getValidationError(this._getFullNumber(), e)
-              }
-              return I.UNKNOWN_VALIDATION_ERROR
-            }
-            isValidNumber() {
-              const {
-                dialCode: e,
-                iso2: n
-              } = this.selectedCountryData;
-              if (e === Tt.DIAL_CODE && v.utils) {
-                const s = this._getFullNumber(),
-                  a = v.utils.getCoreNumber(s, n);
-                if (a[0] === Tt.MOBILE_PREFIX && a.length !== Tt.MOBILE_CORE_LENGTH) return !1
-              }
-              return this._validateNumber(!1)
-            }
-            isValidNumberPrecise() {
-              return this._validateNumber(!0)
-            }
-            _utilsIsPossibleNumber(e) {
-              return v.utils ? v.utils.isPossibleNumber(e, this.selectedCountryData.iso2, this.options.validationNumberTypes) : null
-            }
-            _validateNumber(e) {
-              if (!v.utils) return null;
-              if (!this.selectedCountryData.iso2) return !1;
-              const n = l => e ? this._utilsIsValidNumber(l) : this._utilsIsPossibleNumber(l),
-                s = this._getFullNumber(),
-                a = s.search(gt.ALPHA_UNICODE);
-              if (a > -1 && !this.options.allowPhonewords) {
-                const l = s.substring(0, a),
-                  d = n(l),
-                  c = n(s);
-                return d && c
-              }
-              return n(s)
-            }
-            _utilsIsValidNumber(e) {
-              return v.utils ? v.utils.isValidNumber(e, this.selectedCountryData.iso2, this.options.validationNumberTypes) : null
-            }
-            setCountry(e) {
-              const n = e == null ? void 0 : e.toLowerCase();
-              if (!F(n)) throw new Error(`Invalid country code: '${n}'`);
-              const s = this.selectedCountryData.iso2;
-              if (e && n !== s || !e && s) {
-                if (this._setCountry(n), this._updateDialCode(this.selectedCountryData.dialCode), this.options.formatOnDisplay) {
-                  const u = this._getTelInputValue();
-                  this._updateValFromNumber(u)
-                }
-                this._triggerCountryChange()
-              }
-            }
-            setNumber(e) {
-              const n = this._normaliseNumerals(e),
-                s = this._updateCountryFromNumber(n);
-              this._updateValFromNumber(n), s && this._triggerCountryChange(), this._trigger(nt.INPUT, {
-                isSetNumber: !0
-              })
-            }
-            setPlaceholderNumberType(e) {
-              this.options.placeholderNumberType = e, this._updatePlaceholder()
-            }
-            setDisabled(e) {
-              this.ui.telInput.disabled = e, e ? this.ui.selectedCountry.setAttribute("disabled", "true") : this.ui.selectedCountry.removeAttribute("disabled")
-            }
-          },
-          lt = o => {
-            if (!v.utils && !v.startedLoadingUtilsScript) {
-              let e;
-              if (typeof o == "function") try {
-                e = Promise.resolve(o())
-              } catch (n) {
-                return Promise.reject(n)
-              } else return Promise.reject(new TypeError(`The argument passed to attachUtils must be a function that returns a promise for the utilities module, not ${typeof o}`));
-              return v.startedLoadingUtilsScript = !0, e.then(n => {
-                const s = n == null ? void 0 : n.default;
-                if (!s || typeof s != "object") throw new TypeError("The loader function passed to attachUtils did not resolve to a module object with utils as its default export.");
-                return v.utils = s, tt("handleUtils"), !0
-              }).catch(n => {
-                throw tt("rejectUtilsScriptPromise", n), n
-              })
-            }
-            return null
-          },
-          tt = (o, ...e) => {
-            Object.values(v.instances).forEach(n => {
-              const s = n[o];
-              typeof s == "function" && s.apply(n, e)
+            }, {
+              signal: this.abortController.signal
             })
+          }
+          _maybeBindPasteListener() {
+            this.options.strictMode && this.ui.telInput.addEventListener(`paste`, e => {
+              e.preventDefault();
+              let t = this.ui.telInput,
+                n = t.selectionStart,
+                r = t.selectionEnd,
+                i = this._getTelInputValue(),
+                a = i.slice(0, n),
+                o = i.slice(r),
+                s = this.selectedCountryData.iso2,
+                c = e.clipboardData.getData(`text`),
+                l = this._normaliseNumerals(c),
+                u = n === 0 && r > 0,
+                d = !i.startsWith(`+`) || u,
+                f = l.replace(v.NON_PLUS_NUMERIC_GLOBAL, ``),
+                p = f.startsWith(`+`),
+                m = f.replace(/\+/g, ``),
+                h = p && d ? `+${m}` : m,
+                g = a + h + o;
+              if (g.length > 5) {
+                let e = J.utils.getCoreNumber(g, s);
+                for (; e.length === 0 && g.length > 0;) g = g.slice(0, -1), e = J.utils.getCoreNumber(g, s);
+                if (!e) return;
+                if (this.maxCoreNumberLength && e.length > this.maxCoreNumberLength) {
+                  if (t.selectionEnd === i.length) {
+                    let t = e.length - this.maxCoreNumberLength;
+                    g = g.slice(0, g.length - t)
+                  } else return
+                }
+              }
+              this._setTelInputValue(g);
+              let _ = n + h.length;
+              t.setSelectionRange(_, _), t.dispatchEvent(new InputEvent(`input`, {
+                bubbles: !0
+              }))
+            }, {
+              signal: this.abortController.signal
+            })
+          }
+          _cap(e) {
+            let t = Number(this.ui.telInput.getAttribute(`maxlength`));
+            return t && e.length > t ? e.substring(0, t) : e
+          }
+          _trigger(e, t = {}) {
+            let n = new CustomEvent(e, {
+              bubbles: !0,
+              cancelable: !0,
+              detail: t
+            });
+            this.ui.telInput.dispatchEvent(n)
+          }
+          _openDropdown() {
+            let {
+              fixDropdownWidth: e,
+              countrySearch: t
+            } = this.options;
+            if (this.dropdownAbortController = new AbortController, e && (this.ui.dropdownContent.style.width = `${this.ui.telInput.offsetWidth}px`), this.ui.dropdownContent.classList.remove(h.HIDE), this.ui.selectedCountry.setAttribute(O.EXPANDED, `true`), this._setDropdownPosition(), t) {
+              let e = this.ui.countryList.firstElementChild;
+              e && (this.ui.highlightListItem(e, !1), this.ui.countryList.scrollTop = 0), this.ui.searchInput.focus()
+            }
+            this._bindDropdownListeners(), this.ui.dropdownArrow.classList.add(h.ARROW_UP), this._trigger(m.OPEN_COUNTRY_DROPDOWN)
+          }
+          _setDropdownPosition() {
+            if (this.options.dropdownContainer && this.options.dropdownContainer.appendChild(this.ui.dropdown), !this.options.useFullscreenPopup) {
+              let e = this.ui.telInput.getBoundingClientRect(),
+                t = this.ui.telInput.offsetHeight;
+              this.options.dropdownContainer && (this.ui.dropdown.style.top = `${e.top+t}px`, this.ui.dropdown.style.left = `${e.left}px`, window.addEventListener(`scroll`, () => this._closeDropdown(), {
+                signal: this.dropdownAbortController.signal
+              }))
+            }
+          }
+          _bindDropdownListeners() {
+            let e = this.dropdownAbortController.signal;
+            this._bindDropdownMouseoverListener(e), this._bindDropdownCountryClickListener(e), this._bindDropdownClickOffListener(e), this._bindDropdownKeydownListener(e), this.options.countrySearch && this._bindDropdownSearchListeners(e)
+          }
+          _bindDropdownMouseoverListener(e) {
+            this.ui.countryList.addEventListener(`mouseover`, e => {
+              var t;
+              let n = (t = e.target) == null ? void 0 : t.closest(`.${h.COUNTRY_ITEM}`);
+              n && this.ui.highlightListItem(n, !1)
+            }, {
+              signal: e
+            })
+          }
+          _bindDropdownCountryClickListener(e) {
+            this.ui.countryList.addEventListener(`click`, e => {
+              var t;
+              let n = (t = e.target) == null ? void 0 : t.closest(`.${h.COUNTRY_ITEM}`);
+              n && this._selectListItem(n)
+            }, {
+              signal: e
+            })
+          }
+          _bindDropdownClickOffListener(e) {
+            let t = e => {
+              e.target.closest(`#iti-${this.id}__dropdown-content`) || this._closeDropdown()
+            };
+            setTimeout(() => {
+              document.documentElement.addEventListener(`click`, t, {
+                signal: e
+              })
+            }, 0)
+          }
+          _bindDropdownKeydownListener(e) {
+            let t = ``,
+              n = null;
+            document.addEventListener(`keydown`, e => {
+              [g.ARROW_UP, g.ARROW_DOWN, g.ENTER, g.ESC].includes(e.key) && (e.preventDefault(), e.stopPropagation(), e.key === g.ARROW_UP || e.key === g.ARROW_DOWN ? this._handleUpDownKey(e.key) : e.key === g.ENTER ? this._handleEnterKey() : e.key === g.ESC && (this._closeDropdown(), this.ui.selectedCountry.focus())), !this.options.countrySearch && v.HIDDEN_SEARCH_CHAR.test(e.key) && (e.stopPropagation(), n && clearTimeout(n), t += e.key.toLowerCase(), this._searchForCountry(t), n = setTimeout(() => {
+                t = ``
+              }, y.HIDDEN_SEARCH_RESET_MS))
+            }, {
+              signal: e
+            })
+          }
+          _bindDropdownSearchListeners(e) {
+            let t = () => {
+                let e = this.ui.searchInput.value.trim();
+                this._filterCountriesByQuery(e), this.ui.searchInput.value ? this.ui.searchClearButton.classList.remove(h.HIDE) : this.ui.searchClearButton.classList.add(h.HIDE)
+              },
+              n = null;
+            this.ui.searchInput.addEventListener(`input`, () => {
+              n && clearTimeout(n), n = setTimeout(() => {
+                t(), n = null
+              }, 100)
+            }, {
+              signal: e
+            }), this.ui.searchClearButton.addEventListener(`click`, () => {
+              this.ui.searchInput.value = ``, this.ui.searchInput.focus(), t()
+            }, {
+              signal: e
+            })
+          }
+          _searchForCountry(e) {
+            let t = te(this.countries, e);
+            if (t) {
+              let e = t.nodeById[this.id];
+              this.ui.highlightListItem(e, !1), this.ui.scrollTo(e)
+            }
+          }
+          _filterCountriesByQuery(e) {
+            let t;
+            t = e === `` ? this.countries : N(this.countries, e), this.ui.filterCountries(t)
+          }
+          _handleUpDownKey(e) {
+            var t, n;
+            let r = e === g.ARROW_UP ? (t = this.ui.highlightedItem) == null ? void 0 : t.previousElementSibling : (n = this.ui.highlightedItem) == null ? void 0 : n.nextElementSibling;
+            !r && this.ui.countryList.childElementCount > 1 && (r = e === g.ARROW_UP ? this.ui.countryList.lastElementChild : this.ui.countryList.firstElementChild), r && (this.ui.scrollTo(r), this.ui.highlightListItem(r, !1))
+          }
+          _handleEnterKey() {
+            this.ui.highlightedItem && this._selectListItem(this.ui.highlightedItem)
+          }
+          _updateValFromNumber(e) {
+            let t = e;
+            if (this.options.formatOnDisplay && J.utils && this.selectedCountryData) {
+              let e = this.options.nationalMode || !t.startsWith(`+`) && !this.options.separateDialCode,
+                {
+                  NATIONAL: n,
+                  INTERNATIONAL: r
+                } = J.utils.numberFormat,
+                i = e ? n : r;
+              t = J.utils.formatNumber(t, this.selectedCountryData.iso2, i)
+            }
+            t = this._beforeSetNumber(t), this._setTelInputValue(t)
+          }
+          _updateCountryFromNumber(e) {
+            let t = this._getNewCountryFromNumber(e);
+            return t !== null && this._setCountry(t)
+          }
+          _ensureHasDialCode(e) {
+            let {
+              dialCode: t,
+              nationalPrefix: n
+            } = this.selectedCountryData;
+            return e.startsWith(`+`) || !t ? e : `+${t}${n&&e.startsWith(n)&&!this.options.separateDialCode?e.substring(1):e}`
+          }
+          _getNewCountryFromNumber(e) {
+            let t = e.indexOf(`+`),
+              n = t ? e.substring(t) : e,
+              r = this.selectedCountryData.iso2,
+              i = this.selectedCountryData.dialCode;
+            n = this._ensureHasDialCode(n);
+            let a = this._getDialCode(n, !0),
+              o = j(n);
+            if (a) {
+              let e = j(a),
+                t = this.dialCodeToIso2Map[e];
+              if (t.length === 1) return t[0] === r ? null : t[0];
+              if (!r && this.defaultCountry && t.includes(this.defaultCountry)) return this.defaultCountry;
+              if (i === S.NANP && U(o)) return null;
+              let {
+                areaCodes: n,
+                priority: s
+              } = this.selectedCountryData;
+              if (n) {
+                let e = n.map(e => `${i}${e}`);
+                for (let t of e)
+                  if (o.startsWith(t)) return null
+              }
+              let c = n && s !== 0 && o.length > e.length,
+                l = r && t.includes(r) && !c,
+                u = r === t[0];
+              if (!l && !u) return t[0]
+            } else if (n.startsWith(`+`) && o.length) {
+              let e = this.selectedCountryData.dialCode || ``;
+              return e && e.startsWith(o) ? null : ``
+            } else if ((!n || n === `+`) && !r) return this.defaultCountry;
+            return null
+          }
+          _setCountry(e) {
+            let {
+              separateDialCode: t,
+              showFlags: n,
+              i18n: r,
+              allowDropdown: i
+            } = this.options, a = this.selectedCountryData.iso2 || ``;
+            if (i && this.ui.updateSelectedItem(e), this.selectedCountryData = e ? this.countryByIso2.get(e) : {}, this.selectedCountryData.iso2 && (this.defaultCountry = this.selectedCountryData.iso2), this.ui.selectedCountry) {
+              let t = e && n ? `${h.FLAG} iti__${e}` : `${h.FLAG} ${h.GLOBE}`,
+                i, a;
+              if (e) {
+                let {
+                  name: e,
+                  dialCode: t
+                } = this.selectedCountryData;
+                a = e, i = r.selectedCountryAriaLabel.replace("${countryName}", e).replace("${dialCode}", `+${t}`)
+              } else a = r.noCountrySelected, i = r.noCountrySelected;
+              this.ui.selectedCountryInner.className = t, this.ui.selectedCountry.setAttribute(`title`, a), this.ui.selectedCountry.setAttribute(O.LABEL, i)
+            }
+            if (t) {
+              let e = this.selectedCountryData.dialCode ? `+${this.selectedCountryData.dialCode}` : ``;
+              this.ui.selectedDialCode.textContent = e, this.ui.updateInputPadding()
+            }
+            return this._updatePlaceholder(), this._updateMaxLength(), a !== e
+          }
+          _updateMaxLength() {
+            let {
+              strictMode: e,
+              placeholderNumberType: t,
+              validationNumberTypes: n
+            } = this.options, {
+              iso2: r
+            } = this.selectedCountryData;
+            if (e && J.utils) {
+              if (r) {
+                let e = J.utils.numberType[t],
+                  i = J.utils.getExampleNumber(r, !1, e, !0),
+                  a = i;
+                for (; J.utils.isPossibleNumber(i, r, n);) a = i, i += `0`;
+                let o = J.utils.getCoreNumber(a, r);
+                this.maxCoreNumberLength = o.length, r === `by` && (this.maxCoreNumberLength = o.length + 1)
+              } else this.maxCoreNumberLength = null
+            }
+          }
+          _updatePlaceholder() {
+            let {
+              autoPlaceholder: e,
+              placeholderNumberType: t,
+              nationalMode: n,
+              customPlaceholder: r
+            } = this.options, i = e === T.AGGRESSIVE || !this.ui.hadInitialPlaceholder && e === T.POLITE;
+            if (J.utils && i) {
+              let e = J.utils.numberType[t],
+                i = this.selectedCountryData.iso2 ? J.utils.getExampleNumber(this.selectedCountryData.iso2, n, e) : ``;
+              i = this._beforeSetNumber(i), typeof r == `function` && (i = r(i, this.selectedCountryData)), this.ui.telInput.setAttribute(`placeholder`, i)
+            }
+          }
+          _selectListItem(e) {
+            let t = e.dataset[D.COUNTRY_CODE],
+              n = this._setCountry(t);
+            this._closeDropdown();
+            let r = e.dataset[D.DIAL_CODE];
+            if (this._updateDialCode(r), this.options.formatOnDisplay) {
+              let e = this._getTelInputValue();
+              this._updateValFromNumber(e)
+            }
+            this.ui.telInput.focus(), n && this._triggerCountryChange()
+          }
+          _closeDropdown() {
+            this.ui.dropdownContent.classList.contains(h.HIDE) || (this.ui.dropdownContent.classList.add(h.HIDE), this.ui.selectedCountry.setAttribute(O.EXPANDED, `false`), this.options.countrySearch && (this.ui.searchInput.removeAttribute(O.ACTIVE_DESCENDANT), this.ui.highlightedItem && (this.ui.highlightedItem.classList.remove(h.HIGHLIGHT), this.ui.highlightedItem = null)), this.ui.dropdownArrow.classList.remove(h.ARROW_UP), this.dropdownAbortController.abort(), this.dropdownAbortController = null, this.options.dropdownContainer && this.ui.dropdown.remove(), this._trigger(m.CLOSE_COUNTRY_DROPDOWN))
+          }
+          _updateDialCode(e) {
+            let t = this._getTelInputValue(),
+              n = `+${e}`,
+              r;
+            if (t.startsWith(`+`)) {
+              let e = this._getDialCode(t);
+              r = e ? t.replace(e, n) : n, this._setTelInputValue(r)
+            }
+          }
+          _getDialCode(e, t) {
+            let n = ``;
+            if (e.startsWith(`+`)) {
+              let r = ``,
+                i = !1;
+              for (let a = 0; a < e.length; a++) {
+                let o = e.charAt(a);
+                if (/[0-9]/.test(o)) {
+                  if (r += o, !this.dialCodeToIso2Map[r]) break;
+                  if (this.dialCodes.has(r)) {
+                    if (n = e.substring(0, a + 1), i = !0, !t) break
+                  } else t && i && (n = e.substring(0, a + 1));
+                  if (r.length === this.dialCodeMaxLen) break
+                }
+              }
+            }
+            return n
+          }
+          _getFullNumber(e) {
+            let t = e ? this._normaliseNumerals(e) : this._getTelInputValue(),
+              {
+                dialCode: n
+              } = this.selectedCountryData,
+              r, i = j(t);
+            return r = this.options.separateDialCode && !t.startsWith(`+`) && n && i ? `+${n}` : ``, r + t
+          }
+          _beforeSetNumber(e) {
+            let t = ae(e, this._getDialCode(e), this.options.separateDialCode, this.selectedCountryData);
+            return this._cap(t)
+          }
+          _triggerCountryChange() {
+            this._trigger(m.COUNTRY_CHANGE)
+          }
+          handleAutoCountry() {
+            this.options.initialCountry === E.AUTO && J.autoCountry && (this.defaultCountry = J.autoCountry, this.selectedCountryData.iso2 || this.ui.selectedCountryInner.classList.contains(h.GLOBE) || this.setCountry(this.defaultCountry), this.resolveAutoCountryPromise())
+          }
+          handleUtils() {
+            if (J.utils) {
+              let e = this._getTelInputValue();
+              e && this._updateValFromNumber(e), this.selectedCountryData.iso2 && (this._updatePlaceholder(), this._updateMaxLength())
+            }
+            this.resolveUtilsScriptPromise()
+          }
+          destroy() {
+            this.ui.telInput && (this.options.allowDropdown && this._closeDropdown(), this.abortController.abort(), this.abortController = null, this.ui.destroy(), J.instances instanceof Map ? J.instances.delete(this.id) : delete J.instances[this.id])
+          }
+          getExtension() {
+            return J.utils ? J.utils.getExtension(this._getFullNumber(), this.selectedCountryData.iso2) : ``
+          }
+          getNumber(e) {
+            if (J.utils) {
+              let {
+                iso2: t
+              } = this.selectedCountryData, n = this._getFullNumber(), r = J.utils.formatNumber(n, t, e);
+              return this._mapAsciiToUserNumerals(r)
+            }
+            return ``
+          }
+          getNumberType() {
+            return J.utils ? J.utils.getNumberType(this._getFullNumber(), this.selectedCountryData.iso2) : b.UNKNOWN_NUMBER_TYPE
+          }
+          getSelectedCountryData() {
+            return this.selectedCountryData
+          }
+          getValidationError() {
+            if (J.utils) {
+              let {
+                iso2: e
+              } = this.selectedCountryData;
+              return J.utils.getValidationError(this._getFullNumber(), e)
+            }
+            return b.UNKNOWN_VALIDATION_ERROR
+          }
+          isValidNumber() {
+            let {
+              dialCode: e,
+              iso2: t
+            } = this.selectedCountryData;
+            if (e === C.DIAL_CODE && J.utils) {
+              let e = this._getFullNumber(),
+                n = J.utils.getCoreNumber(e, t);
+              if (n[0] === C.MOBILE_PREFIX && n.length !== C.MOBILE_CORE_LENGTH) return !1
+            }
+            return this._validateNumber(!1)
+          }
+          isValidNumberPrecise() {
+            return this._validateNumber(!0)
+          }
+          _utilsIsPossibleNumber(e) {
+            return J.utils ? J.utils.isPossibleNumber(e, this.selectedCountryData.iso2, this.options.validationNumberTypes) : null
+          }
+          _validateNumber(e) {
+            if (!J.utils) return null;
+            if (!this.selectedCountryData.iso2) return !1;
+            let t = t => e ? this._utilsIsValidNumber(t) : this._utilsIsPossibleNumber(t),
+              n = this._getFullNumber(),
+              r = n.search(v.ALPHA_UNICODE);
+            if (r > -1 && !this.options.allowPhonewords) {
+              let e = t(n.substring(0, r)),
+                i = t(n);
+              return e && i
+            }
+            return t(n)
+          }
+          _utilsIsValidNumber(e) {
+            return J.utils ? J.utils.isValidNumber(e, this.selectedCountryData.iso2, this.options.validationNumberTypes) : null
+          }
+          setCountry(e) {
+            let t = e == null ? void 0 : e.toLowerCase();
+            if (!W(t)) throw Error(`Invalid country code: '${t}'`);
+            let n = this.selectedCountryData.iso2;
+            if (e && t !== n || !e && n) {
+              if (this._setCountry(t), this._updateDialCode(this.selectedCountryData.dialCode), this.options.formatOnDisplay) {
+                let e = this._getTelInputValue();
+                this._updateValFromNumber(e)
+              }
+              this._triggerCountryChange()
+            }
+          }
+          setNumber(e) {
+            let t = this._normaliseNumerals(e),
+              n = this._updateCountryFromNumber(t);
+            this._updateValFromNumber(t), n && this._triggerCountryChange(), this._trigger(m.INPUT, {
+              isSetNumber: !0
+            })
+          }
+          setPlaceholderNumberType(e) {
+            this.options.placeholderNumberType = e, this._updatePlaceholder()
+          }
+          setDisabled(e) {
+            this.ui.telInput.disabled = e, e ? this.ui.selectedCountry.setAttribute(`disabled`, `true`) : this.ui.selectedCountry.removeAttribute(`disabled`)
+          }
+        },
+        K = e => {
+          if (!J.utils && !J.startedLoadingUtilsScript) {
+            let t;
+            if (typeof e == `function`) try {
+              t = Promise.resolve(e())
+            } catch (e) {
+              return Promise.reject(e)
+            } else return Promise.reject(TypeError(`The argument passed to attachUtils must be a function that returns a promise for the utilities module, not ${typeof e}`));
+            return J.startedLoadingUtilsScript = !0, t.then(e => {
+              let t = e == null ? void 0 : e.default;
+              if (!t || typeof t != `object`) throw TypeError(`The loader function passed to attachUtils did not resolve to a module object with utils as its default export.`);
+              return J.utils = t, q(`handleUtils`), !0
+            }).catch(e => {
+              throw q(`rejectUtilsScriptPromise`, e), e
+            })
+          }
+          return null
+        },
+        q = (e, ...t) => {
+          Object.values(J.instances).forEach(n => {
+            let r = n[e];
+            typeof r == `function` && r.apply(n, t)
+          })
+        },
+        J = Object.assign((e, t) => {
+          let n = new G(e, t);
+          return J.instances[n.id] = n, e.iti = n, n
+        }, {
+          defaults: ee,
+          documentReady: () => document.readyState === `complete`,
+          getCountryData: () => u,
+          getInstance: e => {
+            let t = e.dataset.intlTelInputId;
+            return t ? J.instances[t] : null
           },
-          v = Object.assign((o, e) => {
-            const n = new at(o, e);
-            return v.instances[n.id] = n, o.iti = n, n
-          }, {
-            defaults: Et,
-            documentReady: () => document.readyState === "complete",
-            getCountryData: () => L,
-            getInstance: o => {
-              const e = o.dataset.intlTelInputId;
-              return e ? v.instances[e] : null
-            },
-            instances: {},
-            attachUtils: lt,
-            startedLoadingUtilsScript: !1,
-            startedLoadingAutoCountry: !1,
-            version: "25.15.1"
-          }),
-          Nt = v;
-        return H(S)
-      })();
-      return t.default
-    })
-  })(un)), un.exports
-}
-var Gs = js();
-const Ks = fi(Gs);
-var Ys = ft('<div class="my-auto"><span class="loading loading-spinner loading-xl"></span></div>'),
-  Pn = ft('<span class="w-8"> </span>'),
-  kn = ft('<span class="loading loading-spinner center-absolute absolute"></span>'),
-  qs = ft('<div class="my-auto flex w-full flex-col items-center"><div class="text-center"><h2 class="text-2xl font-bold"> </h2> <p class="text-base-content/80 mt-0.5 text-sm"> </p></div> <form class="mt-8 flex w-full flex-col gap-3"><input class="input w-full pl-12!" type="tel" id="phone"/> <button class="btn btn-primary relative w-full"> <!> <!></button></form></div> <p class="text-base-content/60 pt-3 pb-2 text-center text-xs"> </p>', 1),
-  Xs = ft('<div class="text-center"><h2 class="text-2xl font-bold"> </h2> <p class="mt-0.5 text-sm"> </p></div> <div class="mt-4"><!></div> <div class="mt-4 flex flex-col items-center gap-1"><button class="btn btn-ghost relative mb-1 w-max"> <!> <!></button> <button class="text-primary/80 cursor-pointer text-xs"> </button></div>', 1),
-  Qs = ft('<div class="flex h-full w-full flex-col items-center"><!></div>');
+          instances: {},
+          attachUtils: K,
+          startedLoadingUtilsScript: !1,
+          startedLoadingAutoCountry: !1,
+          version: `25.15.1`
+        }),
+        Y = J;
+      return o(s)
+    })().default)
+  }))()),
+  Xn = E(`<div class="my-auto"><span class="loading loading-spinner loading-xl"></span></div>`),
+  Zn = E(`<span class="w-8"> </span>`),
+  Qn = E(`<span class="loading loading-spinner center-absolute absolute"></span>`),
+  $n = E(`<div class="my-auto flex w-full flex-col items-center"><div class="text-center"><h2 class="text-2xl font-bold"> </h2> <p class="text-base-content/80 mt-0.5 text-sm"> </p></div> <form class="mt-8 flex w-full flex-col gap-3"><input class="input w-full pl-12!" type="tel" id="phone"/> <button class="btn btn-primary relative w-full"> <!> <!></button></form></div> <p class="text-base-content/60 pt-3 pb-2 text-center text-xs"> </p>`, 1),
+  er = E(`<div class="text-center"><h2 class="text-2xl font-bold"> </h2> <p class="mt-0.5 text-sm"> </p></div> <div class="mt-4"><!></div> <div class="mt-4 flex flex-col items-center gap-1"><button class="btn btn-ghost relative mb-1 w-max"> <!> <!></button> <button class="text-primary/80 cursor-pointer text-xs"> </button></div>`, 1),
+  tr = E(`<div class="flex h-full w-full flex-col items-center"><!></div>`);
 
-function Zs(m, t) {
-  Qt(t, !0);
-  let r = k(t, "verifyingPhone", 15, ""),
-    h = Y(!0),
-    p = Y(0),
-    E = Y(!1);
-  const x = D(() => i(p) > 0 || i(E));
-  let B = Y(!1),
-    H = Y(""),
-    S = Y(void 0);
-  de(() => {
-    an.getOtpCooldown().then(T => {
-      f(p, T.cooldownMs, !0)
-    }).catch(T => {
-      ye.error(T.message)
+function nr(e, t) {
+  T(t, !0);
+  let n = D(t, `verifyingPhone`, 15, ``),
+    r = P(!0),
+    i = P(0),
+    a = P(!1),
+    o = _(() => k(i) > 0 || k(a)),
+    c = P(!1),
+    d = P(``),
+    p = P(void 0);
+  ae(() => {
+    xe.getOtpCooldown().then(e => {
+      I(i, e.cooldownMs, !0)
+    }).catch(e => {
+      Se.error(e.message)
     }).finally(() => {
-      f(h, !1)
+      I(r, !1)
     });
-    const g = 1e3,
-      w = setInterval(() => {
-        f(p, Math.max(0, i(p) - g), !0)
-      }, g);
+    let e = 1e3,
+      t = setInterval(() => {
+        I(i, Math.max(0, k(i) - e), !0)
+      }, e);
     return () => {
-      clearInterval(w)
+      clearInterval(t)
     }
   });
-  async function _(g) {
+  async function m(e) {
     try {
-      f(E, !0);
-      const w = await an.sendOtp(g),
-        T = {
-          sms: "SMS",
-          telegram: "Telegram",
-          whatsapp: "WhatsApp"
-        };
-      ye.info(ee.code_sent_to_phone({
-        channel: T[w.channel],
-        phone: w.phone
+      I(a, !0);
+      let t = await xe.sendOtp(e);
+      Se.info(Z.code_sent_to_phone({
+        channel: {
+          sms: `SMS`,
+          telegram: `Telegram`,
+          whatsapp: `WhatsApp`
+        } [t.channel],
+        phone: t.phone
       }), {
         duration: 15e3
-      }), r(w.phone), f(p, w.cooldownMs, !0)
-    } catch (w) {
-      ye.error(w.message)
+      }), n(t.phone), I(i, t.cooldownMs, !0)
+    } catch (e) {
+      Se.error(e.message)
     } finally {
-      f(E, !1)
+      I(a, !1)
     }
   }
-  Ut(() => {
-    i(H).length === 6 && (f(B, !0), (async () => {
+  J(() => {
+    k(d).length === 6 && (I(c, !0), (async () => {
       try {
-        await an.verifyChallenge({
-          type: "otp",
-          code: i(H)
-        }), ye.success(ee.phone_verified()), t.onsuccess(r())
-      } catch (g) {
-        ye.error(g.message)
+        await xe.verifyChallenge({
+          type: `otp`,
+          code: k(d)
+        }), Se.success(Z.phone_verified()), t.onsuccess(n())
+      } catch (e) {
+        Se.error(e.message)
       } finally {
-        f(H, ""), f(B, !1)
+        I(d, ``), I(c, !1)
       }
     })())
   });
-  var N = Qs(),
-    L = et(N);
-  {
-    var q = g => {
-        var w = Ys();
-        y(g, w)
-      },
-      O = g => {
-        var w = qs(),
-          T = G(w),
-          nt = et(T),
-          A = et(nt),
-          X = et(A, !0);
-        J(A);
-        var W = wt(A, 2),
-          gt = et(W, !0);
-        J(W), J(nt);
-        var It = wt(nt, 2),
-          I = et(It);
-        Bn(I, () => st => {
-          var Q, Et;
-          return f(S, Ks(st, {
-            strictMode: !0,
-            initialCountry: ((Et = (Q = dn.data) == null ? void 0 : Q.country) == null ? void 0 : Et.toLocaleLowerCase()) ?? "br",
-            loadUtils: () => wi(() => import("../chunks/3P6Si2Fo.js"), [], import.meta.url),
-            containerClass: "w-full hide-search",
-            dropdownContainer: zs(st)
-          })), () => {
-            var _t;
-            (_t = i(S)) == null || _t.destroy()
-          }
-        });
-        var M = wt(I, 2),
-          ct = et(M),
-          Tt = wt(ct);
-        {
-          var Lt = st => {
-            var Q = Pn(),
-              Et = et(Q);
-            J(Q), Dt(_t => Bt(Et, `(${_t??""})`), [() => En(i(p))]), y(st, Q)
-          };
-          rt(Tt, st => {
-            i(p) > 0 && st(Lt)
-          })
+  var h = tr(),
+    g = G(h),
+    v = e => {
+      var t = Xn();
+      w(e, t)
+    },
+    y = e => {
+      var t = $n(),
+        n = b(t),
+        r = G(n),
+        c = G(r),
+        u = G(c, !0);
+      L(c);
+      var d = s(c, 2),
+        f = G(d, !0);
+      L(d), L(r);
+      var h = s(r, 2),
+        g = G(h);
+      te(g, () => e => {
+        var t;
+        return I(p, (0, Yn.default)(e, {
+          strictMode: !0,
+          initialCountry: ((t = Ce.data) == null || (t = t.country) == null ? void 0 : t.toLocaleLowerCase()) ?? `br`,
+          loadUtils: () => ue(() => import(`../chunks/CAGwEc5h.js`), [], import.meta.url),
+          containerClass: `w-full hide-search`,
+          dropdownContainer: Jn(e)
+        })), () => {
+          var e;
+          (e = k(p)) == null || e.destroy()
         }
-        var St = wt(Tt, 2);
-        {
-          var Rt = st => {
-            var Q = kn();
-            y(st, Q)
-          };
-          rt(St, st => {
-            i(E) && st(Rt)
-          })
-        }
-        J(M), J(It), J(T);
-        var zt = wt(T, 2),
-          mt = et(zt, !0);
-        J(zt), Dt((st, Q, Et, _t) => {
-          Bt(X, st), Bt(gt, Q), M.disabled = i(x), Bt(ct, `${Et??""} `), Bt(mt, _t)
-        }, [() => ee.phone_verification(), () => ee.phone_verification_description(), () => ee.send_code(), () => ee.phone_privacy_notice()]), tn("submit", It, async () => {
-          var Q;
-          if (i(x)) return;
-          if (!((Q = i(S)) != null && Q.isValidNumber())) {
-            ye.error(ee.not_valid_phone());
+      });
+      var _ = s(g, 2),
+        v = G(_),
+        y = s(v),
+        x = e => {
+          var t = Zn(),
+            n = G(t);
+          L(t), W(e => B(n, `(${e??``})`), [() => pe(k(i))]), w(e, t)
+        };
+      l(y, e => {
+        k(i) > 0 && e(x)
+      });
+      var S = s(y, 2),
+        C = e => {
+          var t = Qn();
+          w(e, t)
+        };
+      l(S, e => {
+        k(a) && e(C)
+      }), L(_), L(h), L(n);
+      var T = s(n, 2),
+        E = G(T, !0);
+      L(T), W((e, t, n, r) => {
+        B(u, e), B(f, t), _.disabled = k(o), B(v, `${n??``} `), B(E, r)
+      }, [() => Z.phone_verification(), () => Z.phone_verification_description(), () => Z.send_code(), () => Z.phone_privacy_notice()]), V(`submit`, h, async () => {
+        var e;
+        if (!k(o)) {
+          if (!((e = k(p)) != null && e.isValidNumber())) {
+            Se.error(Z.not_valid_phone());
             return
           }
-          const st = i(S).getNumber();
-          await _(st)
-        }), y(g, w)
-      },
-      K = g => {
-        var w = Xs(),
-          T = G(w),
-          nt = et(T),
-          A = et(nt, !0);
-        J(nt);
-        var X = wt(nt, 2),
-          W = et(X, !0);
-        J(X), J(T);
-        var gt = wt(T, 2),
-          It = et(gt);
-        {
-          const st = (Q, Et) => {
-            let _t = () => Et == null ? void 0 : Et().cells;
-            var jt = $(),
-              ae = G(jt);
-            $t(ae, () => Is, (P, j) => {
-              j(P, {
-                class: "border-primary",
-                children: (bt, dt) => {
-                  var Mt = $(),
-                    ne = G(Mt);
-                  qe(ne, 16, _t, he => he, (he, fe) => {
-                    var Wt = $(),
-                      Gt = G(Wt);
-                    $t(Gt, () => Ws, (At, Z) => {
-                      Z(At, {
-                        get cell() {
-                          return fe
-                        },
-                        class: "border-base-content/20 size-11 sm:size-12"
-                      })
-                    }), y(he, Wt)
-                  }), y(bt, Mt)
-                },
-                $$slots: {
-                  default: !0
-                }
-              })
-            }), y(Q, jt)
-          };
-          $t(It, () => Vs, (Q, Et) => {
-            Et(Q, {
-              maxlength: 6,
-              class: "mx-auto w-max",
-              get disabled() {
-                return i(B)
+          await m(k(p).getNumber())
+        }
+      }), w(e, t)
+    },
+    x = e => {
+      var t = er(),
+        r = b(t),
+        f = G(r),
+        p = G(f, !0);
+      L(f);
+      var h = s(f, 2),
+        g = G(h, !0);
+      L(h), L(r);
+      var _ = s(r, 2),
+        v = G(_);
+      {
+        let e = (e, t) => {
+          let n = () => t == null ? void 0 : t().cells;
+          var r = S(),
+            i = b(r);
+          Y(i, () => rn, (e, t) => {
+            t(e, {
+              class: `border-primary`,
+              children: (e, t) => {
+                var r = S(),
+                  i = b(r);
+                u(i, 16, n, e => e, (e, t) => {
+                  var n = S(),
+                    r = b(n);
+                  Y(r, () => Gn, (e, n) => {
+                    n(e, {
+                      get cell() {
+                        return t
+                      },
+                      class: `border-base-content/20 size-11 sm:size-12`
+                    })
+                  }), w(e, n)
+                }), w(e, r)
               },
-              get value() {
-                return i(H)
-              },
-              set value(_t) {
-                f(H, _t, !0)
-              },
-              children: st,
               $$slots: {
                 default: !0
               }
             })
+          }), w(e, r)
+        };
+        Y(v, () => qn, (t, n) => {
+          n(t, {
+            maxlength: 6,
+            class: `mx-auto w-max`,
+            get disabled() {
+              return k(c)
+            },
+            get value() {
+              return k(d)
+            },
+            set value(e) {
+              I(d, e, !0)
+            },
+            children: e,
+            $$slots: {
+              default: !0
+            }
           })
-        }
-        J(gt);
-        var I = wt(gt, 2),
-          M = et(I),
-          ct = et(M),
-          Tt = wt(ct);
-        {
-          var Lt = st => {
-            var Q = Pn(),
-              Et = et(Q);
-            J(Q), Dt(_t => Bt(Et, `(${_t??""})`), [() => En(i(p))]), y(st, Q)
-          };
-          rt(Tt, st => {
-            i(p) > 0 && st(Lt)
-          })
-        }
-        var St = wt(Tt, 2);
-        {
-          var Rt = st => {
-            var Q = kn();
-            y(st, Q)
-          };
-          rt(St, st => {
-            i(E) && st(Rt)
-          })
-        }
-        J(M);
-        var zt = wt(M, 2),
-          mt = et(zt, !0);
-        J(zt), J(I), Dt((st, Q, Et, _t) => {
-          Bt(A, st), Bt(W, Q), M.disabled = i(x), Bt(ct, `${Et??""} `), Bt(mt, _t)
-        }, [() => ee.input_the_code(), () => ee.sent_to_phone({
-          phone: r()
-        }), () => ee.resend_code(), () => ee.try_another_number()]), se("click", M, async () => {
-          await _(r())
-        }), se("click", zt, () => {
-          r("")
-        }), y(g, w)
-      };
-    rt(L, g => {
-      i(h) ? g(q) : r() ? g(K, -1) : g(O, 1)
-    })
-  }
-  J(N), y(m, N), Zt()
+        })
+      }
+      L(_);
+      var y = s(_, 2),
+        x = G(y),
+        C = G(x),
+        T = s(C),
+        E = e => {
+          var t = Zn(),
+            n = G(t);
+          L(t), W(e => B(n, `(${e??``})`), [() => pe(k(i))]), w(e, t)
+        };
+      l(T, e => {
+        k(i) > 0 && e(E)
+      });
+      var D = s(T, 2),
+        O = e => {
+          var t = Qn();
+          w(e, t)
+        };
+      l(D, e => {
+        k(a) && e(O)
+      }), L(x);
+      var ee = s(x, 2),
+        A = G(ee, !0);
+      L(ee), L(y), W((e, t, n, r) => {
+        B(p, e), B(g, t), x.disabled = k(o), B(C, `${n??``} `), B(A, r)
+      }, [() => Z.input_the_code(), () => Z.sent_to_phone({
+        phone: n()
+      }), () => Z.resend_code(), () => Z.try_another_number()]), R(`click`, x, async () => {
+        await m(n())
+      }), R(`click`, ee, () => {
+        n(``)
+      }), w(e, t)
+    };
+  l(g, e => {
+    k(r) ? e(v) : n() ? e(x, -1) : e(y, 1)
+  }), L(h), w(e, h), f()
 }
-en(["click"]);
-let Ae = Y(!1);
-var Js = ft("<div></div>"),
-  $s = ft('<button type="button" class="btn">Retry</button>'),
-  ta = ft('<span class="loading loading-spinner loading-lg"></span>'),
-  ea = ft("<div><!></div>");
+U([`click`]);
+var rr = P(!1),
+  ir = new Set(`$$slots.$$events.$$legacy.siteKey.widgetId.turnstile.appearance.language.execution.action.cData.retryInterval.retry.refreshExpired.theme.size.tabIndex.forms.responseField.formsField.responseFieldName.reset.callback.errorCallback.timeoutCallback.expiredCallback.beforeInteractiveCallback.afterInteractiveCallback.unsupportedCallback`.split(`.`)),
+  ar = E(`<div></div>`),
+  or = E(`<button type="button" class="btn">Retry</button>`),
+  sr = E(`<span class="loading loading-spinner loading-lg"></span>`),
+  cr = E(`<div><!></div>`);
 
-function na(m, t) {
-  Qt(t, !0);
-  let r = k(t, "widgetId", 15),
-    h = k(t, "appearance", 3, "always"),
-    p = k(t, "language", 3, "auto"),
-    E = k(t, "execution", 3, "render"),
-    x = k(t, "retryInterval", 3, 8e3),
-    B = k(t, "retry", 3, "auto"),
-    H = k(t, "refreshExpired", 3, "auto"),
-    S = k(t, "theme", 3, "auto"),
-    _ = k(t, "size", 3, "normal"),
-    N = k(t, "tabIndex", 3, 0);
-  k(t, "reset", 15)(() => {
-    var I;
-    r() && ((I = window == null ? void 0 : window.turnstile) == null || I.reset(r()))
+function lr(e, t) {
+  T(t, !0);
+  let n = D(t, `widgetId`, 15),
+    r = D(t, `appearance`, 3, `always`),
+    i = D(t, `language`, 3, `auto`),
+    a = D(t, `execution`, 3, `render`),
+    o = D(t, `retryInterval`, 3, 8e3),
+    s = D(t, `retry`, 3, `auto`),
+    c = D(t, `refreshExpired`, 3, `auto`),
+    u = D(t, `theme`, 3, `auto`),
+    d = D(t, `size`, 3, `normal`),
+    p = D(t, `tabIndex`, 3, 0),
+    m = D(t, `reset`, 15);
+  re(t, ir), m(() => {
+    var e;
+    n() && ((e = window) == null || (e = e.turnstile) == null || e.reset(n()))
   });
-  const q = D(() => ({
+  let v = _(() => ({
       sitekey: t.siteKey,
-      callback: (I, M) => {
-        var ct;
-        (ct = t.callback) == null || ct.call(t, I, M)
+      callback: (e, n) => {
+        var r;
+        (r = t.callback) == null || r.call(t, e, n)
       },
-      "error-callback": I => {
-        var M;
-        (M = t.errorCallback) == null || M.call(t, I)
+      "error-callback": e => {
+        var n;
+        (n = t.errorCallback) == null || n.call(t, e)
       },
       "timeout-callback": () => {
-        var I;
-        (I = t.timeoutCallback) == null || I.call(t)
+        var e;
+        (e = t.timeoutCallback) == null || e.call(t)
       },
       "expired-callback": () => {
-        var I;
-        (I = t.expiredCallback) == null || I.call(t)
+        var e;
+        (e = t.expiredCallback) == null || e.call(t)
       },
       "before-interactive-callback": () => {
-        var I;
-        (I = t.beforeInteractiveCallback) == null || I.call(t)
+        var e;
+        (e = t.beforeInteractiveCallback) == null || e.call(t)
       },
       "after-interactive-callback": () => {
-        var I;
-        (I = t.afterInteractiveCallback) == null || I.call(t)
+        var e;
+        (e = t.afterInteractiveCallback) == null || e.call(t)
       },
       "unsupported-callback": () => {
-        var I;
-        return (I = t.unsupportedCallback) == null ? void 0 : I.call(t)
+        var e;
+        return (e = t.unsupportedCallback) == null ? void 0 : e.call(t)
       },
-      "response-field-name": t.responseFieldName ?? t.formsField ?? "cf-turnstile-response",
+      "response-field-name": t.responseFieldName ?? t.formsField ?? `cf-turnstile-response`,
       "response-field": t.responseField ?? t.forms ?? !0,
-      "refresh-expired": H(),
-      "retry-interval": x(),
-      tabindex: N(),
-      appearance: h(),
-      execution: E(),
-      language: p(),
+      "refresh-expired": c(),
+      "retry-interval": o(),
+      tabindex: p(),
+      appearance: r(),
+      execution: a(),
+      language: i(),
       action: t.action,
-      retry: B(),
-      theme: S(),
+      retry: s(),
+      theme: u(),
       cData: t.cData,
-      size: _()
+      size: d()
     })),
-    O = (I, M) => {
-      let ct = window.turnstile.render(I, M);
-      return r(ct), {
+    y = (e, t) => {
+      let r = window.turnstile.render(e, t);
+      return n(r), {
         destroy() {
-          window.turnstile.remove(ct)
+          window.turnstile.remove(r)
         },
-        update(Tt) {
-          window.turnstile.remove(ct), ct = window.turnstile.render(I, Tt), r(ct)
+        update(t) {
+          window.turnstile.remove(r), r = window.turnstile.render(e, t), n(r)
         }
       }
-    };
-  let K = Y(!1),
-    g = Y(!1),
-    w;
+    },
+    x = P(!1),
+    C = P(!1),
+    E;
 
-  function T() {
-    const I = document.createElement("script");
-    I.type = "text/javascript", I.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit", I.async = !0, I.addEventListener("load", () => f(Ae, !0), {
+  function O() {
+    let e = document.createElement(`script`);
+    e.type = `text/javascript`, e.src = `https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit`, e.async = !0, e.addEventListener(`load`, () => I(rr, !0), {
       once: !0
-    }), document.head.appendChild(I)
+    }), document.head.appendChild(e)
   }
 
-  function nt() {
-    f(g, !1), w && clearTimeout(w), w = setTimeout(() => {
-      (!i(Ae) || !i(K)) && f(g, !0)
+  function ee() {
+    I(C, !1), E && clearTimeout(E), E = setTimeout(() => {
+      (!k(rr) || !k(x)) && I(C, !0)
     }, 5e3)
   }
 
   function A() {
-    document.querySelectorAll('script[src*="challenges.cloudflare.com/turnstile"]').forEach(I => I.remove()), f(Ae, !1), T(), nt()
+    document.querySelectorAll(`script[src*="challenges.cloudflare.com/turnstile"]`).forEach(e => e.remove()), I(rr, !1), O(), ee()
   }
-  de(() => (f(K, !0), i(Ae) || T(), nt(), () => {
-    f(K, !1), w && clearTimeout(w)
+  ae(() => (I(x, !0), k(rr) || O(), ee(), () => {
+    I(x, !1), E && clearTimeout(E)
   }));
-  var X = $(),
-    W = G(X);
-  {
-    var gt = I => {
-        var M = Js();
-        let ct;
-        Mn(M, (Tt, Lt) => O == null ? void 0 : O(Tt, Lt), () => i(q)), Dt(() => ct = qt(M, 1, `h-16 ${t.class??""}`, "svelte-1lm836y", ct, {
-          flexible: _() == "flexible"
-        })), y(I, M)
-      },
-      It = I => {
-        var M = ea(),
-          ct = et(M);
-        {
-          var Tt = St => {
-              var Rt = $s();
-              se("click", Rt, A), y(St, Rt)
-            },
-            Lt = St => {
-              var Rt = ta();
-              y(St, Rt)
-            };
-          rt(ct, St => {
-            i(g) ? St(Tt) : St(Lt, -1)
-          })
-        }
-        J(M), Dt(() => qt(M, 1, `flex h-16 items-center justify-center ${t.class??""}`, "svelte-1lm836y")), y(I, M)
-      };
-    rt(W, I => {
-      i(Ae) && i(K) ? I(gt) : I(It, -1)
-    })
-  }
-  y(m, X), Zt()
-}
-en(["click"]);
-var ia = ft('<dialog class="modal"><div></div> <div><div class="min-h-16"><!></div></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>');
-
-function sa(m, t) {
-  Qt(t, !0);
-  const r = D(() => on.current !== null),
-    h = D(() => {
-      var g;
-      return (g = on.current) == null ? void 0 : g.tier
-    }),
-    p = Ei(() => i(r));
-  let E = Y(""),
-    x = Y(void 0),
-    B = Y(!1);
-  var H = ia(),
-    S = et(H);
-  let _;
-  nn(S, g => f(x, g), () => i(x));
-  var N = wt(S, 2);
-  let L;
-  var q = et(N),
-    O = et(q);
-  {
-    var K = g => {
-      var w = $(),
-        T = G(w);
-      pi(T, () => on.errorCount, nt => {
-        var A = $(),
-          X = G(A);
-        {
-          var W = I => {
-              {
-                let M = D(() => _i.trim());
-                na(I, {
-                  get siteKey() {
-                    return i(M)
-                  },
-                  callback: ct => xn(ct),
-                  errorCallback: () => Dn()
-                })
-              }
-            },
-            gt = I => {
-              {
-                let M = D(() => bi.trim());
-                _s(I, {
-                  get siteKey() {
-                    return i(M)
-                  },
-                  get challengeContainer() {
-                    return i(x)
-                  },
-                  callback: ct => xn(ct),
-                  openCallback: () => f(B, !0),
-                  closeCallback: () => f(B, !1),
-                  errorCallback: () => Dn()
-                })
-              }
-            },
-            It = I => {
-              Zs(I, {
-                onsuccess: () => ei(),
-                get verifyingPhone() {
-                  return i(E)
-                },
-                set verifyingPhone(M) {
-                  f(E, M, !0)
-                }
-              })
-            };
-          rt(X, I => {
-            i(h) === 2 ? I(W) : i(h) === 3 ? I(gt, 1) : i(h) === 4 && I(It, 2)
-          })
-        }
-        y(nt, A)
-      }), y(g, w)
+  var j = S(),
+    M = b(j),
+    N = e => {
+      var n = ar();
+      let r;
+      h(n, (e, t) => y == null ? void 0 : y(e, t), () => k(v)), W(() => r = g(n, 1, `h-16 ${t.class??``}`, `svelte-1lm836y`, r, {
+        flexible: d() == `flexible`
+      })), w(e, n)
+    },
+    te = e => {
+      var n = cr(),
+        r = G(n),
+        i = e => {
+          var t = or();
+          R(`click`, t, A), w(e, t)
+        },
+        a = e => {
+          var t = sr();
+          w(e, t)
+        };
+      l(r, e => {
+        k(C) ? e(i) : e(a, -1)
+      }), L(n), W(() => g(n, 1, `flex h-16 items-center justify-center ${t.class??``}`, `svelte-1lm836y`)), w(e, n)
     };
-    rt(O, g => {
-      p.current && g(K)
-    })
-  }
-  J(q), J(N), Rn(2), J(H), Bn(H, () => g => {
-    Ut(() => {
-      i(r) && !g.open ? g.showModal() : !i(r) && g.open && g.close()
-    })
-  }), Dt(() => {
-    _ = qt(S, 1, "hcaptcha-challenge-container svelte-efugoh", null, _, {
-      "is-open": i(B)
-    }), L = qt(N, 1, "modal-box flex max-w-sm flex-col items-center gap-4", null, L, {
-      "h-84": i(h) === 4 && !i(E)
-    })
-  }), tn("close", H, () => {
-    f(B, !1), ti()
-  }), y(m, H), Zt()
+  l(M, e => {
+    k(rr) && k(x) ? e(N) : e(te, -1)
+  }), w(e, j), f()
 }
-var aa = ft('<span class="hidden"> </span> <!> <!> <!>', 1);
+U([`click`]);
+var ur = E(`<dialog class="modal"><div></div> <div><div class="min-h-16"><!></div></div> <form method="dialog" class="modal-backdrop"><button>close</button></form></dialog>`);
 
-function Aa(m, t) {
-  Qt(t, !0), de(() => {
-    for (const O of ["localStorage", "sessionStorage"]) try {
-      const K = window[O];
-      for (let g = K.length - 1; g >= 0; g -= 1) {
-        const w = K.key(g);
-        w != null && w.startsWith("phone:") && K.removeItem(w)
+function dr(e, t) {
+  T(t, !0);
+  let n = _(() => ye.current !== null),
+    r = _(() => {
+      var e;
+      return (e = ye.current) == null ? void 0 : e.tier
+    }),
+    i = Ge(() => k(n)),
+    a = P(``),
+    o = P(void 0),
+    c = P(!1);
+  var u = ur(),
+    d = G(u);
+  let p;
+  A(d, e => I(o, e), () => k(o));
+  var m = s(d, 2);
+  let h;
+  var v = G(m),
+    y = G(v),
+    C = e => {
+      var t = S(),
+        n = b(t);
+      x(n, () => ye.errorCount, e => {
+        var t = S(),
+          n = b(t),
+          i = e => {
+            {
+              let t = _(() => fe.trim());
+              lr(e, {
+                get siteKey() {
+                  return k(t)
+                },
+                callback: e => be(e),
+                errorCallback: () => ve()
+              })
+            }
+          },
+          s = e => {
+            {
+              let t = _(() => de.trim());
+              $t(e, {
+                get siteKey() {
+                  return k(t)
+                },
+                get challengeContainer() {
+                  return k(o)
+                },
+                callback: e => be(e),
+                openCallback: () => I(c, !0),
+                closeCallback: () => I(c, !1),
+                errorCallback: () => ve()
+              })
+            }
+          },
+          u = e => {
+            nr(e, {
+              onsuccess: () => me(),
+              get verifyingPhone() {
+                return k(a)
+              },
+              set verifyingPhone(e) {
+                I(a, e, !0)
+              }
+            })
+          };
+        l(n, e => {
+          k(r) === 2 ? e(i) : k(r) === 3 ? e(s, 1) : k(r) === 4 && e(u, 2)
+        }), w(e, t)
+      }), w(e, t)
+    };
+  l(y, e => {
+    i.current && e(C)
+  }), L(v), L(m), H(2), L(u), te(u, () => e => {
+    J(() => {
+      k(n) && !e.open ? e.showModal() : !k(n) && e.open && e.close()
+    })
+  }), W(() => {
+    p = g(d, 1, `hcaptcha-challenge-container svelte-efugoh`, null, p, {
+      "is-open": k(c)
+    }), h = g(m, 1, `modal-box flex max-w-sm flex-col items-center gap-4`, null, h, {
+      "h-84": k(r) === 4 && !k(a)
+    })
+  }), V(`close`, u, () => {
+    I(c, !1), he()
+  }), w(e, u), f()
+}
+E(`<div class="flex h-full flex-col items-center justify-center gap-6"><div><!></div> <p class="max-w-3xl text-center font-medium sm:text-xl">Our servers are in maintenance. Try again later.<br/> Sorry for the inconvenience 🙇‍♂️</p></div>`);
+var fr = E(`<span class="hidden"> </span> <!> <!> <!>`, 1);
+
+function pr(e, t) {
+  T(t, !0), ae(() => {
+    for (let e of [`localStorage`, `sessionStorage`]) try {
+      let t = window[e];
+      for (let e = t.length - 1; e >= 0; --e) {
+        let n = t.key(e);
+        n != null && n.startsWith(`phone:`) && t.removeItem(n)
       }
     } catch {}
-    const _ = ai();
-    Tn.init();
-    let N = Y(!1);
-    Ut(() => {
-      i(N) || dn.data && (f(N, !0), oi.loadTWA())
-    }), ni();
-    const L = mi(async () => {
-      await dn.refresh()
-    }, {
-      interval: ii.hour,
-      immediate: !0
-    });
-    let q = setInterval(() => {
-      gi().catch(O => console.warn("[sw] message failed", O))
-    }, 5e3);
+    let e = ke();
+    De.init();
+    let t = P(!1);
+    J(() => {
+      k(t) || Ce.data && (I(t, !0), Ae.loadTWA())
+    }), ge();
+    let n = Ve(async () => {
+        await Ce.refresh()
+      }, {
+        interval: _e.hour,
+        immediate: !0
+      }),
+      r = setInterval(() => {
+        Q().catch(e => console.warn(`[sw] message failed`, e))
+      }, 5e3);
     return () => {
-      clearTimeout(q), _(), L(), Tn.cleanup()
+      clearTimeout(r), e(), n(), De.cleanup()
     }
   });
-  const r = "muted";
-  de(() => {
-    cn.muted = localStorage.getItem(r) === "1"
-  }), Ut(() => {
+  let r = `muted`;
+  ae(() => {
+    Te.muted = localStorage.getItem(r) === `1`
+  }), J(() => {
     {
-      const _ = cn.muted;
-      document.querySelectorAll("audio").forEach(N => {
-        N.muted = _
+      let e = Te.muted;
+      document.querySelectorAll(`audio`).forEach(t => {
+        t.muted = e
       });
-      for (const N of Object.values(si).filter(L => L instanceof Audio)) N.muted = _, _ || (N.volume = .3);
-      localStorage.setItem(r, Number(_).toString())
+      for (let t of Object.values(Oe).filter(e => e instanceof Audio)) t.muted = e, e || (t.volume = .3);
+      localStorage.setItem(r, Number(e).toString())
     }
-  }), de(() => {});
-  var h = aa();
-  tn("beforeunload", Qn, () => {
-    vi().catch(_ => console.warn("[sw] message failed", _))
+  }), ae(() => {});
+  var a = fr();
+  V(`beforeunload`, i, () => {
+    je().catch(e => console.warn(`[sw] message failed`, e))
   });
-  var p = G(h),
-    E = et(p);
-  J(p);
-  var x = wt(p, 2);
-  {
-    var B = _ => {
-      var N = $(),
-        L = G(N);
-      Ht(L, () => t.children), y(_, N)
+  var o = b(a),
+    c = G(o);
+  L(o);
+  var u = s(o, 2),
+    d = e => {
+      var r = S(),
+        i = b(r);
+      n(i, () => t.children), w(e, r)
     };
-    rt(x, _ => {
-      _(B, -1)
-    })
-  }
-  var H = wt(x, 2);
-  sa(H, {});
-  var S = wt(H, 2);
-  gs(S, {
+  l(u, e => {
+    e(d, -1)
+  });
+  var p = s(u, 2);
+  dr(p, {}), qt(s(p, 2), {
     closeButton: !0,
     richColors: !0,
-    position: "top-right",
-    class: "top-15! whitespace-pre-line!",
+    position: `top-right`,
+    class: `top-15! whitespace-pre-line!`,
     duration: 3e3
-  }), Dt(() => Bt(E, `Version: ${Jn}`)), y(m, h), Zt()
+  }), W(() => B(c, `Version: 1787963367132`)), w(e, a), f()
 }
 export {
-  Aa as component, La as universal
+  pr as component, Ke as universal
 };

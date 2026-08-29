@@ -1,34 +1,36 @@
+import "./D6uuD926.js";
 import {
-  s as t,
-  p as r
-} from "./Cs4RbjOP.js";
-const a = {
+  g as e,
+  m as t
+} from "./3pGDfLLI.js";
+var n = {
   get data() {
-    return r.data
+    return e.data
   },
   get error() {
-    return r.error
+    return e.error
   },
   get form() {
-    return r.form
+    return e.form
   },
   get params() {
-    return r.params
+    return e.params
   },
   get route() {
-    return r.route
+    return e.route
   },
   get state() {
-    return r.state
+    return e.state
   },
   get status() {
-    return r.status
+    return e.status
   },
   get url() {
-    return r.url
+    return e.url
   }
 };
 t.updated.check;
+var r = n;
 export {
-  a as p
+  r as t
 };

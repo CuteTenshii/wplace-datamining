@@ -1,96 +1,141 @@
 import {
-  ay as t,
-  a5 as k,
-  L as A,
-  E,
-  X as b,
-  N as n,
-  az as C,
-  aA as w,
-  as as S
-} from "./D5GL_E7i.js";
+  B as e,
+  Et as t,
+  G as n,
+  Jt as r,
+  O as i,
+  Pt as a,
+  Tt as o,
+  Y as s,
+  Yt as c,
+  Z as l,
+  a as u,
+  ct as d,
+  f,
+  j as p,
+  k as m,
+  nn as h,
+  on as g,
+  q as _,
+  rt as v,
+  vt as y,
+  wt as b,
+  x,
+  yt as S
+} from "./D6uuD926.js";
+import "./B8UK1oE5.js";
+import {
+  t as C
+} from "./ciZYZuIg.js";
+import {
+  t as w
+} from "./DxdGK6Xj.js";
+var T = l(`<form method="dialog"><button class="btn btn-sm btn-circle">✕</button></form>`),
+  E = l(`<div class="flex items-center"></div> <div class="flex items-center justify-center overflow-hidden text-center"><!></div> <div class="flex items-start justify-end pt-1"><!></div>`, 1),
+  D = l(`<div class="ml-2 flex flex-col items-end gap-2 self-start pt-1 sm:translate-x-2"><!> <!></div>`),
+  O = l(`<div class="flex flex-1 items-center gap-3 overflow-hidden"><!></div> <!>`, 1),
+  k = l(`<header><!></header>`),
+  A = l(`<footer class="shrink-0 px-4 py-4 sm:px-6"><!></footer>`),
+  j = l(`<form method="dialog" class="modal-backdrop"><button> </button></form>`),
+  M = l(`<dialog><div><!> <div><!></div> <!></div> <!></dialog>`);
 
-function q(e, v, l = v) {
-  var f = new WeakSet;
-  t(e, "input", async c => {
-    var d = c ? e.defaultValue : e.value;
-    if (d = u(e) ? m(d) : d, l(d), k !== null && f.add(k), await A(), d !== (d = v())) {
-      var r = e.selectionStart,
-        s = e.selectionEnd,
-        o = e.value.length;
-      if (e.value = d ?? "", s !== null) {
-        var a = e.value.length;
-        r === s && s === o && a > o ? (e.selectionStart = a, e.selectionEnd = a) : (e.selectionStart = r, e.selectionEnd = Math.min(s, a))
-      }
-    }
-  }), (n && e.defaultValue !== e.value || E(v) == null && e.value) && (l(u(e) ? m(e.value) : e.value), k !== null && f.add(k)), b(() => {
-    var c = v();
-    if (e === document.activeElement) {
-      var d = k;
-      if (f.has(d)) return
-    }
-    u(e) && c === m(e.value) || e.type === "date" && !c && !e.value || c !== e.value && (e.value = c ?? "")
-  })
-}
-const _ = new Set;
-
-function z(e, v, l, f, c = f) {
-  var d = l.getAttribute("type") === "checkbox",
-    r = e;
-  let s = !1;
-  if (v !== null)
-    for (var o of v) r = r[o] ?? (r[o] = []);
-  r.push(l), t(l, "change", () => {
-    var a = l.__value;
-    d && (a = y(r, a, l.checked)), c(a)
-  }, () => c(d ? [] : null)), b(() => {
-    var a = f();
-    if (n && l.defaultChecked !== l.checked) {
-      s = !0;
-      return
-    }
-    d ? (a = a || [], l.checked = a.includes(l.__value)) : l.checked = C(l.__value, a)
-  }), w(() => {
-    var a = r.indexOf(l);
-    a !== -1 && r.splice(a, 1)
-  }), _.has(r) || (_.add(r), S(() => {
-    r.sort((a, h) => a.compareDocumentPosition(h) === 4 ? -1 : 1), _.delete(r)
-  })), S(() => {
-    if (s) {
-      var a;
-      if (d) a = y(r, a, l.checked);
-      else {
-        var h = r.find(i => i.checked);
-        a = h == null ? void 0 : h.__value
-      }
-      c(a)
-    }
-  })
-}
-
-function B(e, v, l = v) {
-  t(e, "change", f => {
-    var c = f ? e.defaultChecked : e.checked;
-    l(c)
-  }), (n && e.defaultChecked !== e.checked || E(v) == null) && l(e.checked), b(() => {
-    var f = v();
-    e.checked = !!f
-  })
-}
-
-function y(e, v, l) {
-  for (var f = new Set, c = 0; c < e.length; c += 1) e[c].checked && f.add(e[c].__value);
-  return l || f.delete(v), Array.from(f)
-}
-
-function u(e) {
-  var v = e.type;
-  return v === "number" || v === "range"
-}
-
-function m(e) {
-  return e === "" ? null : +e
+function N(l, N) {
+  c(N, !0);
+  let P = u(N, `open`, 15),
+    F = u(N, `hasBackdrop`, 3, !0),
+    I = u(N, `hasCloseButton`, 3, !0),
+    L = u(N, `hasHeaderBorder`, 3, !0),
+    R = u(N, `centerHeader`, 3, !1),
+    z = u(N, `isDynamicHeight`, 3, !1),
+    B = u(N, `useModalLayer`, 3, !0),
+    V = u(N, `closedBy`, 3, `any`),
+    H = u(N, `contentEl`, 15),
+    U = u(N, `disableCloseAnimation`, 3, !1),
+    W = a(() => N.mobileClasses ?? `max-sm:!w-full max-sm:!h-full max-sm:!max-w-none max-sm:!max-h-none max-sm:!rounded-none`),
+    G = a(() => w(`modal-box p-0 flex flex-col w-11/12 max-h-11/12 rounded-xl`, !z() && `h-11/12`, d(W), N.modalBoxClass));
+  var K = M(),
+    q = b(K),
+    J = b(q),
+    Y = r => {
+      var a = k(),
+        c = b(a),
+        l = r => {
+          var i = E(),
+            a = t(o(i), 2),
+            c = b(a);
+          e(c, () => N.header ?? g), h(a);
+          var l = t(a, 2),
+            u = b(l),
+            d = e => {
+              var t = T();
+              s(e, t)
+            };
+          n(u, e => {
+            I() && e(d)
+          }), h(l), s(r, i)
+        },
+        u = r => {
+          var i = O(),
+            a = o(i),
+            c = b(a);
+          e(c, () => N.header ?? g), h(a);
+          var l = t(a, 2),
+            u = r => {
+              var i = D(),
+                a = b(i),
+                o = e => {
+                  var t = T();
+                  s(e, t)
+                };
+              n(a, e => {
+                I() && e(o)
+              });
+              var c = t(a, 2);
+              e(c, () => N.headerAction ?? g), h(i), s(r, i)
+            };
+          n(l, e => {
+            (I() || N.headerAction) && e(u)
+          }), s(r, i)
+        };
+      n(c, e => {
+        R() ? e(l) : e(u, -1)
+      }), h(a), y(() => i(a, 1, `bg-base-100/70 sticky top-0 z-40 flex shrink-0 items-center justify-between px-4 py-4 backdrop-blur sm:px-6 ${L()?`border-base-content/10 border-b`:``} ${R()?`grid grid-cols-[2.5rem_1fr_2.5rem] px-4`:``} ${(N.headerClassName||``)??``}`)), s(r, a)
+    };
+  n(J, e => {
+    (N.header || I()) && e(Y)
+  });
+  var X = t(J, 2),
+    Z = b(X);
+  e(Z, () => N.children ?? g), h(X), f(X, e => H(e), () => H());
+  var Q = t(X, 2),
+    $ = t => {
+      var n = A(),
+        r = b(n);
+      e(r, () => N.footer), h(n), s(t, n)
+    };
+  n(Q, e => {
+    N.footer && e($)
+  }), h(q);
+  var ee = t(q, 2),
+    te = e => {
+      var t = j(),
+        n = b(t),
+        r = b(n, !0);
+      h(n), h(t), y(e => _(r, e), [() => C.close()]), s(e, t)
+    };
+  n(ee, e => {
+    F() && e(te)
+  }), h(K), p(K, () => e => {
+    S(() => {
+      P() && !e.open ? B() ? e.showModal() : e.show() : e.open && e.close()
+    })
+  }), y(e => {
+    i(K, 1, `modal ${U()?`no-close-animation`:``} ${N.dialogClass??``}`, `svelte-r6rf84`), x(K, `closedby`, V()), i(q, 1, m(d(G))), i(X, 1, e)
+  }, [() => m(w(`flex flex-1 flex-col overflow-x-hidden overflow-y-auto px-4 py-4 sm:px-6`, N.contentAreaClass))]), v(`close`, K, () => {
+    var e;
+    P(!1), (e = N.onclose) == null || e.call(N)
+  }), s(l, K), r()
 }
 export {
-  z as a, q as b, B as c
+  N as t
 };
