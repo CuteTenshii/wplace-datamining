@@ -1,6 +1,6 @@
 import {
   a as e
-} from "./CrIi3LtV.js";
+} from "./8ZG0XGNA.js";
 var t = `https://maps.wplace.live`,
   n = `8d582454-e5ec-4314-b1c2-89e460ac1d28`,
   r = `false`,

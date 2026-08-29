@@ -1,79 +1,75 @@
-import "./D6uuD926.js";
-var e = e => e;
-
-function t(e) {
-  let t = e - 1;
-  return t * t * t + 1
-}
+import {
+  N as e
+} from "./BuerdC7c.js";
+var t = e;
 
 function n(e) {
-  let t = typeof e == `string` && e.match(/^\s*(-?[\d.]+)([^\s]*)\s*$/);
-  return t ? [parseFloat(t[1]), t[2] || `px`] : [e, `px`]
-}
-
-function r(t, {
-  delay: n = 0,
-  duration: r = 400,
-  easing: i = e
-} = {}) {
-  let a = +getComputedStyle(t).opacity;
-  return {
-    delay: n,
-    duration: r,
-    easing: i,
-    css: e => `opacity: ${e*a}`
+  let t = [],
+    r = t,
+    i = Object.keys(e);
+  for (let a of i) {
+    let i = e[a];
+    if (typeof i == `string`) {
+      r.push(i), Object.defineProperty(t, a, {
+        value: i,
+        enumerable: !0,
+        configurable: !1,
+        writable: !1
+      });
+      continue
+    }
+    let o = n(i);
+    Object.defineProperty(t, a, {
+      value: o,
+      enumerable: !0,
+      configurable: !1,
+      writable: !1
+    });
+    let s = o;
+    for (let e = 0; e < s.length; e += 1) r.push(s[e])
   }
+  return Object.defineProperty(t, "only", {
+    value: (...e) => {
+      let n = [];
+      for (let r = 0; r < e.length; r += 1) {
+        let i = e[r],
+          a = t[i];
+        if (typeof a == `string`) {
+          n.push(a);
+          continue
+        }
+        let o = a;
+        for (let e = 0; e < o.length; e += 1) n.push(o[e])
+      }
+      return n
+    },
+    enumerable: !1,
+    configurable: !1,
+    writable: !1
+  }), Object.defineProperty(t, "but", {
+    value: (...e) => {
+      let n = new Set(e),
+        r = [],
+        i = Object.keys(t);
+      for (let e = 0; e < i.length; e += 1) {
+        let a = i[e];
+        if (n.has(a)) continue;
+        let o = t[a];
+        if (typeof o == `string`) {
+          r.push(o);
+          continue
+        }
+        let s = o;
+        for (let e = 0; e < s.length; e += 1) r.push(s[e])
+      }
+      return r
+    },
+    enumerable: !1,
+    configurable: !1,
+    writable: !1
+  }), Object.freeze(t)
 }
-
-function i(e, {
-  delay: r = 0,
-  duration: i = 400,
-  easing: a = t,
-  x: o = 0,
-  y: s = 0,
-  opacity: c = 0
-} = {}) {
-  let l = getComputedStyle(e),
-    u = +l.opacity,
-    d = l.transform === `none` ? `` : l.transform,
-    f = u * (1 - c),
-    [p, m] = n(o),
-    [h, g] = n(s);
-  return {
-    delay: r,
-    duration: i,
-    easing: a,
-    css: (e, t) => `
-			transform: ${d} translate(${(1-e)*p}${m}, ${(1-e)*h}${g});
-			opacity: ${u-f*t}`
-  }
-}
-
-function a(e, {
-  delay: n = 0,
-  duration: r = 400,
-  easing: i = t,
-  axis: a = `y`
-} = {}) {
-  let o = getComputedStyle(e),
-    s = +o.opacity,
-    c = a === `y` ? `height` : `width`,
-    l = parseFloat(o[c]),
-    u = a === `y` ? [`top`, `bottom`] : [`left`, `right`],
-    d = u.map(e => `${e[0].toUpperCase()}${e.slice(1)}`),
-    f = parseFloat(o[`padding${d[0]}`]),
-    p = parseFloat(o[`padding${d[1]}`]),
-    m = parseFloat(o[`margin${d[0]}`]),
-    h = parseFloat(o[`margin${d[1]}`]),
-    g = parseFloat(o[`border${d[0]}Width`]),
-    _ = parseFloat(o[`border${d[1]}Width`]);
-  return {
-    delay: n,
-    duration: r,
-    easing: i,
-    css: e => `overflow: hidden;opacity: ${Math.min(e*20,1)*s};${c}: ${e*l}px;padding-${u[0]}: ${e*f}px;padding-${u[1]}: ${e*p}px;margin-${u[0]}: ${e*m}px;margin-${u[1]}: ${e*h}px;border-${u[0]}-width: ${e*g}px;border-${u[1]}-width: ${e*_}px;min-${c}: 0`
-  }
-}
+var r = n(t);
 export {
-  i as n, a as r, r as t
+  r as t
 };

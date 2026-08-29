@@ -1,6 +1,6 @@
 import {
   t as e
-} from "./CrIi3LtV.js";
+} from "./8ZG0XGNA.js";
 var t = /\{([A-Za-z_$][\w$]*)\}/g,
   n = new Map,
   r = new Proxy(Object.create(null), {

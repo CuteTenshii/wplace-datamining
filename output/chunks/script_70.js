@@ -1,84 +1,36 @@
 import {
-  Et as e,
-  G as t,
-  Jt as n,
-  O as r,
-  Pt as i,
-  Q as a,
-  Tt as o,
-  V as s,
-  X as c,
-  Y as l,
-  Yt as u,
-  Z as d,
-  a as f,
-  ct as p,
-  nn as m,
-  o as h,
-  vt as g,
-  wt as _,
-  x as v,
-  y
+  Q as e,
+  Y as t,
+  o as n,
+  y as r
 } from "./D6uuD926.js";
 import "./B8UK1oE5.js";
-import {
-  n as b
-} from "./BTdIvV88.js";
-import {
-  r as x
-} from "./BoG0A1IZ.js";
-var S = new Set([`$$slots`, `$$events`, `$$legacy`, `allianceId`, `seed`, `variant`, `imageSrc`]),
-  C = d(`<div><img alt="" class="size-full object-cover" style="image-rendering: pixelated" draggable="false"/></div>`),
-  w = d(`<div aria-hidden="true"><div class="absolute -top-1/2 -right-4 aspect-square h-[200%] rotate-12 opacity-25 select-none"></div> <div class="absolute -bottom-1/3 left-6 aspect-square h-[110%] -rotate-6 opacity-15 select-none"></div></div>`),
-  T = d(`<div></div>`);
+var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  a = e(`<svg><path d="M280-120v-80h160v-124q-49-11-87.5-41.5T296-442q-75-9-125.5-65.5T120-640v-40q0-33 23.5-56.5T200-760h80v-80h400v80h80q33 0 56.5 23.5T840-680v40q0 76-50.5 132.5T664-442q-18 46-56.5 76.5T520-324v124h160v80H280Zm0-408v-152h-80v40q0 38 22 68.5t58 43.5Zm200 128q50 0 85-35t35-85v-240H360v240q0 50 35 85t85 35Zm200-128q36-13 58-43.5t22-68.5v-40h-80v152Zm-200-52Z"></path></svg>`);
 
-function E(a, d) {
-  u(d, !0);
-  let y = f(d, `variant`, 3, `picture`);
-  h(d, S);
-  let E = i(() => d.seed && d.seed.length > 0 ? d.seed : `alliance-${d.allianceId}`),
-    D = i(() => x(p(E), 95, 45)),
-    O = i(() => b(d.allianceId));
-  var k = c(),
-    A = o(k),
-    j = e => {
-      var t = C();
-      let n;
-      var i = _(t);
-      m(t), g(() => {
-        n = r(t, 1, `overflow-hidden ${d.class??``??``}`, null, n, {
-          "bg-white": y() === `banner`
-        }), v(i, `src`, d.imageSrc)
-      }), l(e, t)
-    },
-    M = t => {
-      var n = w(),
-        i = _(n);
-      s(i, () => p(D), !0), m(i);
-      var a = e(i, 2);
-      s(a, () => p(D), !0), m(a), m(n), g(() => r(n, 1, `relative overflow-hidden ${p(O)??``} ${d.class??``??``}`)), l(t, n)
-    },
-    N = e => {
-      var t = T();
-      s(t, () => p(D), !0), m(t), g(() => r(t, 1, `overflow-hidden ${p(O)??``} ${d.class??``??``}`)), l(e, t)
-    };
-  t(A, e => {
-    d.imageSrc ? e(j) : y() === `banner` ? e(M, 1) : e(N, -1)
-  }), l(a, k), n()
-}
-var D = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  O = a(`<svg><path d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 400Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Z"></path></svg>`);
-
-function k(e, t) {
-  let n = h(t, D);
-  var r = O();
-  y(r, () => ({
+function o(e, o) {
+  let s = n(o, i);
+  var c = a();
+  r(c, () => ({
     xmlns: `http://www.w3.org/2000/svg`,
     viewBox: `0 -960 960 960`,
     fill: `currentColor`,
-    ...n
-  })), l(e, r)
+    ...s
+  })), t(e, c)
+}
+var s = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  c = e(`<svg><path d="m336-280 144-144 144 144 56-56-144-144 144-144-56-56-144 144-144-144-56 56 144 144-144 144 56 56ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"></path></svg>`);
+
+function l(e, i) {
+  let a = n(i, s);
+  var o = c();
+  r(o, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...a
+  })), t(e, o)
 }
 export {
-  E as n, k as t
+  o as n, l as t
 };

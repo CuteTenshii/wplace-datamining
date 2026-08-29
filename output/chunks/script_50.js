@@ -1,97 +1,99 @@
 import {
-  Et as e,
+  B as e,
   G as t,
   Jt as n,
-  Pt as r,
-  Y as i,
-  Yt as a,
-  Z as o,
-  _ as s,
-  a as c,
-  ct as l,
-  f as u,
-  g as d,
-  jt as f,
-  kt as p,
-  nn as m,
-  o as h,
-  q as g,
+  O as r,
+  Pt as i,
+  Tt as a,
+  X as o,
+  Y as s,
+  Yt as c,
+  Z as l,
+  a as u,
+  ct as d,
+  k as f,
+  nn as p,
+  nt as m,
+  on as h,
+  tt as g,
   vt as _,
   wt as v,
-  xt as y,
-  y as b,
-  yt as x
+  x as y
 } from "./D6uuD926.js";
 import "./B8UK1oE5.js";
 import {
-  t as S
-} from "./ciZYZuIg.js";
-var C = new Set([`$$slots`, `$$events`, `$$legacy`, `label`, `placeholder`, `value`, `max`, `min`, `validate`, `disabled`, `ref`]),
-  w = o(`<legend class="fieldset-legend"> </legend>`),
-  T = o(`<span class="text-base-content/80"> </span>`),
-  E = o(`<fieldset class="fieldset"><!> <textarea></textarea> <div class="flex items-center justify-between text-xs"><span class="text-error"> </span> <!></div></fieldset>`);
+  n as b
+} from "./BuerdC7c.js";
+import {
+  t as x
+} from "./DlhKQDnh.js";
 
-function D(o, D) {
-  a(D, !0);
-  let O = c(D, `value`, 15),
-    k = c(D, `validate`, 15),
-    A = c(D, `disabled`, 3, !1),
-    j = c(D, `ref`, 15),
-    M = h(D, C),
-    N = f(``),
-    P = r(() => {
-      var e;
-      return ((e = O()) == null ? void 0 : e.length) ?? 0
-    });
-  k(F);
+function S(e) {
+  return `/dashboard/users?id=${encodeURIComponent(String(e))}`
+}
 
-  function F() {
-    return D.min !== void 0 && l(P) < D.min ? (p(N, D.min === 1 ? S.required() : S.min_characters({
-      min: D.min
-    }), !0), !1) : D.max !== void 0 && l(P) > D.max ? (p(N, S.max_characters({
-      max: D.max
-    }), !0), !1) : (p(N, ``), !0)
+function C(e) {
+  typeof window > `u` || window.open(S(e), `_blank`, `noopener,noreferrer`)
+}
+var w = l(`<span role="link" tabindex="0"><!></span>`),
+  T = l(`<a target="_blank" rel="noopener noreferrer"><!></a>`),
+  E = l(`<span><!></span>`);
+
+function D(l, g) {
+  c(g, !0);
+  let D = u(g, `mode`, 3, `anchor`),
+    O = u(g, `class`, 3, ``),
+    k = u(g, `linkClass`, 19, O),
+    A = u(g, `textClass`, 19, O),
+    j = i(() => g.userId != null && g.userId > 0 && b.hasAnyPermission(x.dashboard.users)),
+    M = i(() => g.userId == null ? `` : S(g.userId));
+
+  function N(e) {
+    e.stopPropagation()
   }
-  x(() => {
-    if (D.max !== void 0 && l(P) > D.max) {
-      var e;
-      O((e = O()) == null ? void 0 : e.substring(0, D.max))
-    }
-  });
-  var I = E(),
-    L = v(I),
-    R = e => {
-      var t = w(),
-        n = v(t, !0);
-      m(t), _(() => g(n, D.label)), i(e, t)
+
+  function P(e) {
+    g.userId == null || g.userId <= 0 || (e.preventDefault(), e.stopPropagation(), C(g.userId))
+  }
+
+  function F(e) {
+    (e.key === `Enter` || e.key === ` `) && P(e)
+  }
+  var I = o(),
+    L = a(I),
+    R = n => {
+      var i = o(),
+        c = a(i),
+        l = t => {
+          var n = w(),
+            i = v(n);
+          e(i, () => g.children ?? h), p(n), _(() => {
+            r(n, 1, `cursor-pointer hover:underline ${k()}`), y(n, `title`, g.title)
+          }), m(`pointerdown`, n, N), m(`click`, n, P), m(`keydown`, n, F), s(t, n)
+        },
+        u = t => {
+          var n = T(),
+            i = v(n);
+          e(i, () => g.children ?? h), p(n), _(() => {
+            r(n, 1, `cursor-pointer hover:underline ${k()}`), y(n, `href`, d(M)), y(n, `title`, g.title)
+          }), m(`pointerdown`, n, N), m(`click`, n, N), s(t, n)
+        };
+      t(c, e => {
+        D() === `inline` ? e(l) : e(u, -1)
+      }), s(n, i)
+    },
+    z = t => {
+      var n = E(),
+        i = v(n);
+      e(i, () => g.children ?? h), p(n), _(() => {
+        r(n, 1, f(A())), y(n, `title`, g.title)
+      }), s(t, n)
     };
   t(L, e => {
-    D.label && e(R)
-  });
-  var z = e(L, 2);
-  y(z), b(z, () => ({
-    ...M,
-    class: `textarea w-full ${D.class??``}`,
-    placeholder: D.placeholder,
-    disabled: A(),
-    [s]: {
-      "textarea-error": !!l(N)
-    }
-  }), void 0, void 0, void 0, `svelte-16tom9o`), u(z, e => j(e), () => j());
-  var B = e(z, 2),
-    V = v(B),
-    H = v(V, !0);
-  m(V);
-  var U = e(V, 2),
-    W = e => {
-      var t = T(),
-        n = v(t, !0);
-      m(t), _(() => g(n, D.max - l(P))), i(e, t)
-    };
-  t(U, e => {
-    D.max !== void 0 && e(W)
-  }), m(B), m(I), _(() => g(H, l(N))), d(z, O), i(o, I), n()
+    d(j) ? e(R) : e(z, -1)
+  }), s(l, I), n()
 }
+g([`pointerdown`, `click`, `keydown`]);
 export {
-  D as t
+  S as n, D as t
 };

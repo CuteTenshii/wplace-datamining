@@ -1,74 +1,23 @@
 import {
-  t as e
-} from "./ciZYZuIg.js";
-import {
-  t
-} from "./KnqTMKlG.js";
-var n = [{
-  key: `dashboard`,
-  href: `/dashboard/home`,
-  label: () => e.home(),
-  permissions: t.dashboard.summary
-}, {
-  key: `mods`,
-  href: `/dashboard/team`,
-  label: () => e.team(),
-  permissions: t.dashboard.team
-}, {
-  key: `appeals`,
-  href: `/dashboard/appeals`,
-  label: () => e.appeals(),
-  permissions: t.dashboard.banAppeals
-}, {
-  key: `tickets`,
-  href: `/dashboard/tickets`,
-  label: () => e.tickets(),
-  permissions: t.dashboard.allTickets
-}, {
-  key: `kpi`,
-  href: `/dashboard/kpi/tickets`,
-  label: () => `KPI`,
-  permissions: t.dashboard.kpi
-}, {
-  key: `users`,
-  href: `/dashboard/users`,
-  label: () => e.users(),
-  permissions: t.dashboard.users
-}, {
-  key: `permissions`,
-  href: `/dashboard/permissions`,
-  label: () => e.permissions(),
-  permissions: t.dashboard.permissions
-}, {
-  key: `alliances`,
-  href: `/dashboard/alliances`,
-  label: () => e.alliances(),
-  permissions: t.dashboard.alliances
-}, {
-  key: `audit-logs`,
-  href: `/dashboard/audit-logs`,
-  label: () => e.audit_logs(),
-  permissions: t.dashboard.auditLogs.only(`see`)
-}, {
-  key: `ticket-reversals`,
-  href: `/dashboard/ticket-reversals`,
-  label: () => e.ticket_reversals_title(),
-  permissions: t.tickets.only(`revertReview`)
-}, {
-  key: `store-manager`,
-  href: `/dashboard/store-manager`,
-  label: () => e.store_manager(),
-  permissions: t.dashboard.storeManager
-}, {
-  key: `anticheat`,
-  href: `/dashboard/anticheat`,
-  label: () => `Anticheat`,
-  permissions: t.dashboard.anticheat
-}];
+  Q as e,
+  Y as t,
+  o as n,
+  y as r
+} from "./D6uuD926.js";
+import "./B8UK1oE5.js";
+var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  a = e(`<svg><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path></svg>`);
 
-function r(e) {
-  return n.find(t => e.hasAnyPermission(t.permissions))
+function o(e, o) {
+  let s = n(o, i);
+  var c = a();
+  r(c, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...s
+  })), t(e, c)
 }
 export {
-  r as n, n as t
+  o as t
 };

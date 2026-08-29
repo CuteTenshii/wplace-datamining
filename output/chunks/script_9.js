@@ -16,10 +16,10 @@ import {
   n as f,
   s as p,
   t as m
-} from "./CMCDTH43.js";
+} from "./DF0eLDOk.js";
 import {
   t as h
-} from "./ciZYZuIg.js";
+} from "./CBvy2Co4.js";
 var ee = `` + new URL(`../assets/pawtect_wasm_bg.8VPqYlMZ.wasm`, import.meta.url).href,
   te = `2.0.0`,
   g = {
@@ -1254,6 +1254,86 @@ function Vt(e) {
 
 function Ht(e) {
   return class extends e {
+    async getAdminB2BBusinesses(e = ``, t = 0) {
+      let n = new URLSearchParams({
+          query: e,
+          page: String(t)
+        }),
+        r = await this.request(`/staff/dashboard/businesses?${n.toString()}`, {
+          credentials: `include`
+        });
+      if (r.status !== T.OK) throw new D(h.b2b_load_failed(), r.status);
+      return r.json()
+    }
+    async getAdminB2BBusiness(e) {
+      let t = await this.request(`/staff/dashboard/businesses/${e}`, {
+        credentials: `include`
+      });
+      if (t.status === T.NOT_FOUND) throw new D(h.b2b_business_not_found(), t.status);
+      if (t.status !== T.OK) throw new D(h.b2b_load_business_failed(), t.status);
+      return t.json()
+    }
+    async convertAdminB2BBusiness(e) {
+      let t = await this.request(`/staff/dashboard/businesses/${e}/convert`, {
+        method: `POST`,
+        credentials: `include`
+      });
+      if (t.status === T.CONFLICT || t.status === T.BAD_REQUEST) {
+        let e = await t.json().catch(() => null);
+        if ((e == null ? void 0 : e.error) === `business_account_is_employee`) throw new D(h.b2b_error_business_is_employee(), t.status)
+      }
+      if (t.status === T.NOT_FOUND) throw new D(h.b2b_user_not_found(), t.status);
+      if (t.status !== T.NO_CONTENT) throw new D(h.b2b_convert_failed(), t.status)
+    }
+    async setAdminB2BInfiniteCharges(e, t) {
+      let n = await this.request(`/staff/dashboard/businesses/${e}/charges`, {
+        method: `PATCH`,
+        credentials: `include`,
+        body: JSON.stringify({
+          infinite: t
+        })
+      });
+      if (n.status !== T.OK) throw new D(h.b2b_update_charges_failed(), n.status);
+      return (await n.json()).infinite
+    }
+    async setAdminB2BPaintRestrictions(e, t) {
+      let n = await this.request(`/staff/dashboard/businesses/${e}/paint-restrictions`, {
+        method: `PATCH`,
+        credentials: `include`,
+        body: JSON.stringify(t)
+      });
+      if (n.status !== T.OK) throw new D(h.b2b_update_paint_restrictions_failed(), n.status);
+      return n.json()
+    }
+    async assignAdminB2BEmployee(e, t) {
+      let n = await this.request(`/staff/dashboard/businesses/${e}/employees`, {
+        method: `POST`,
+        credentials: `include`,
+        body: JSON.stringify({
+          employeeUserId: t
+        })
+      });
+      if (n.status === T.CONFLICT || n.status === T.BAD_REQUEST) {
+        var r;
+        let e = await n.json().catch(() => null),
+          t = {
+            business_account_is_employee: h.b2b_error_business_is_employee,
+            employee_account_is_business: h.b2b_error_employee_is_business,
+            business_cannot_be_its_own_employee: h.b2b_error_same_account
+          };
+        throw new D(((r = t[(e == null ? void 0 : e.error) ?? ``]) == null ? void 0 : r.call(t)) ?? h.b2b_assign_failed(), n.status)
+      }
+      if (n.status === T.NOT_FOUND) throw new D(h.b2b_user_not_found(), n.status);
+      if (n.status !== T.NO_CONTENT) throw new D(h.b2b_assign_failed(), n.status)
+    }
+    async removeAdminB2BEmployee(e, t) {
+      let n = await this.request(`/staff/dashboard/businesses/${e}/employees/${t}`, {
+        method: `DELETE`,
+        credentials: `include`
+      });
+      if (n.status === T.CONFLICT) throw new D(h.b2b_employee_not_assigned(), n.status);
+      if (n.status !== T.NO_CONTENT) throw new D(h.b2b_remove_failed(), n.status)
+    }
     async health() {
       return (await this.request(`/health`)).json()
     }
@@ -3249,6 +3329,10 @@ var O = {
           phoneVerification: `staff.dashboard.users.phone_verification`,
           removePicture: `staff.dashboard.users.remove_picture`
         },
+        businesses: {
+          see: `staff.dashboard.businesses.see`,
+          manage: `staff.dashboard.businesses.manage`
+        },
         permissions: {
           get: `staff.dashboard.permissions.get`,
           set: `staff.dashboard.permissions.set`
@@ -3314,7 +3398,10 @@ var O = {
             badgeUpdated: `staff.dashboard.audit_logs.events.badge_updated`,
             badgeDeleted: `staff.dashboard.audit_logs.events.badge_deleted`,
             storeImageUploaded: `staff.dashboard.audit_logs.events.store_image_uploaded`,
-            storeImageDeleted: `staff.dashboard.audit_logs.events.store_image_deleted`
+            storeImageDeleted: `staff.dashboard.audit_logs.events.store_image_deleted`,
+            businessInfiniteChargesUpdated: `staff.dashboard.audit_logs.events.business_infinite_charges_updated`,
+            businessMembershipUpdated: `staff.dashboard.audit_logs.events.business_membership_updated`,
+            businessPaintRestrictionsUpdated: `staff.dashboard.audit_logs.events.business_paint_restrictions_updated`
           }
         },
         banAppeals: {
@@ -6139,6 +6226,8 @@ function An(e) {
               throw Error(h.refresh_page());
             case `color-not-owned`:
               throw Error(h.paint_color_not_owned());
+            case `company-paint-outside-allowed-area`:
+              throw Error(h.company_paint_outside_allowed_area());
             case `event-pixel-present`:
               throw Error(h.cannot_paint_over_event_pixel());
             case `challenge-required`:
@@ -6899,10 +6988,11 @@ var $n = new WeakMap,
       s(this, `channel`, new BroadcastChannel(`user-channel`)), r(this, nr, c()), r(this, rr, c(!0)), r(this, ir, c()), r(this, ar, c(Date.now())), r(this, or, n(() => {
         if (!this.data) return;
         let e = this.data.charges;
+        if (e.infinite) return 1 / 0;
         if (e.count > e.max) return e.count;
         let t = e.count + Math.max((x.now - this.lastFetch) / e.cooldownMs, 0);
         return Math.min(e.max, t)
-      })), r(this, sr, n(() => this.charges !== void 0 && this.data ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0)), r(this, cr, n(() => {
+      })), r(this, sr, n(() => this.charges !== void 0 && this.data && !this.data.charges.infinite ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0)), r(this, cr, n(() => {
         var e;
         return new Bn(Rn(((e = this.data) == null ? void 0 : e.flagsBitmap) ?? `AA==`))
       })), r(this, lr, n(() => {

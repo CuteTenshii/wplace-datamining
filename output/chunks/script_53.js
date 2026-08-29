@@ -2,59 +2,96 @@ import {
   Et as e,
   G as t,
   Jt as n,
-  O as r,
+  Pt as r,
   Y as i,
   Yt as a,
   Z as o,
-  a as s,
-  nn as c,
-  q as l,
-  vt as u,
-  wt as d
+  _ as s,
+  a as c,
+  ct as l,
+  f as u,
+  g as d,
+  jt as f,
+  kt as p,
+  nn as m,
+  o as h,
+  q as g,
+  vt as _,
+  wt as v,
+  xt as y,
+  y as b,
+  yt as x
 } from "./D6uuD926.js";
 import "./B8UK1oE5.js";
 import {
-  t as f
-} from "./mhrqN-wc.js";
-import {
-  n as p,
-  t as m
-} from "./fvWHtLxi.js";
-var h = o(`<div class="inline-flex -translate-y-px items-center gap-2"><!> </div>`),
-  g = o(`<span><!></span>`);
+  t as S
+} from "./CBvy2Co4.js";
+var C = new Set([`$$slots`, `$$events`, `$$legacy`, `label`, `placeholder`, `value`, `max`, `min`, `validate`, `disabled`, `ref`]),
+  w = o(`<legend class="fieldset-legend"> </legend>`),
+  T = o(`<span class="text-base-content/80"> </span>`),
+  E = o(`<fieldset class="fieldset"><!> <textarea></textarea> <div class="flex items-center justify-between text-xs"><span class="text-error"> </span> <!></div></fieldset>`);
 
-function _(o, _) {
-  a(_, !0);
-  let v = s(_, `big`, 3, !1);
-  var y = g();
-  let b;
-  var x = d(y),
-    S = t => {
-      var n = h(),
-        r = d(n);
-      f(r, {
-        size: `none`
-      });
-      var a = e(r, 1, !0);
-      c(n), u(() => l(a, m[_.role])), i(t, n)
-    },
-    C = t => {
-      var n = h(),
-        r = d(n);
-      f(r, {
-        size: `small`
-      });
-      var a = e(r, 1, !0);
-      c(n), u(() => l(a, p[_.role])), i(t, n)
+function D(o, D) {
+  a(D, !0);
+  let O = c(D, `value`, 15),
+    k = c(D, `validate`, 15),
+    A = c(D, `disabled`, 3, !1),
+    j = c(D, `ref`, 15),
+    M = h(D, C),
+    N = f(``),
+    P = r(() => {
+      var e;
+      return ((e = O()) == null ? void 0 : e.length) ?? 0
+    });
+  k(F);
+
+  function F() {
+    return D.min !== void 0 && l(P) < D.min ? (p(N, D.min === 1 ? S.required() : S.min_characters({
+      min: D.min
+    }), !0), !1) : D.max !== void 0 && l(P) > D.max ? (p(N, S.max_characters({
+      max: D.max
+    }), !0), !1) : (p(N, ``), !0)
+  }
+  x(() => {
+    if (D.max !== void 0 && l(P) > D.max) {
+      var e;
+      O((e = O()) == null ? void 0 : e.substring(0, D.max))
+    }
+  });
+  var I = E(),
+    L = v(I),
+    R = e => {
+      var t = w(),
+        n = v(t, !0);
+      m(t), _(() => g(n, D.label)), i(e, t)
     };
-  t(x, e => {
-    v() ? e(S) : e(C, -1)
-  }), c(y), u(() => b = r(y, 1, `badge badge-sm ml-0.5 inline-flex items-center justify-center pt-0.5 leading-none font-semibold whitespace-nowrap shadow`, null, b, {
-    "badge-info": _.role === `admin`,
-    "badge-secondary": _.role === `sac` || _.role === `game_master` || _.role === `game_master_leader` || _.role === `dev`,
-    "badge-warning": _.role === `discord_mod` || _.role === `discord_leader`
-  })), i(o, y), n()
+  t(L, e => {
+    D.label && e(R)
+  });
+  var z = e(L, 2);
+  y(z), b(z, () => ({
+    ...M,
+    class: `textarea w-full ${D.class??``}`,
+    placeholder: D.placeholder,
+    disabled: A(),
+    [s]: {
+      "textarea-error": !!l(N)
+    }
+  }), void 0, void 0, void 0, `svelte-16tom9o`), u(z, e => j(e), () => j());
+  var B = e(z, 2),
+    V = v(B),
+    H = v(V, !0);
+  m(V);
+  var U = e(V, 2),
+    W = e => {
+      var t = T(),
+        n = v(t, !0);
+      m(t), _(() => g(n, D.max - l(P))), i(e, t)
+    };
+  t(U, e => {
+    D.max !== void 0 && e(W)
+  }), m(B), m(I), _(() => g(H, l(N))), d(z, O), i(o, I), n()
 }
 export {
-  _ as t
+  D as t
 };
