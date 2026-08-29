@@ -1,97 +1,23 @@
 import {
-  Et as e,
-  G as t,
-  Jt as n,
-  Pt as r,
-  Y as i,
-  Yt as a,
-  Z as o,
-  _ as s,
-  a as c,
-  ct as l,
-  f as u,
-  g as d,
-  jt as f,
-  kt as p,
-  nn as m,
-  o as h,
-  q as g,
-  vt as _,
-  wt as v,
-  xt as y,
-  y as b,
-  yt as x
-} from "./D6uuD926.js";
+  $ as e,
+  X as t,
+  o as n,
+  y as r
+} from "./CX37corp.js";
 import "./B8UK1oE5.js";
-import {
-  t as S
-} from "./CBvy2Co4.js";
-var C = new Set([`$$slots`, `$$events`, `$$legacy`, `label`, `placeholder`, `value`, `max`, `min`, `validate`, `disabled`, `ref`]),
-  w = o(`<legend class="fieldset-legend"> </legend>`),
-  T = o(`<span class="text-base-content/80"> </span>`),
-  E = o(`<fieldset class="fieldset"><!> <textarea></textarea> <div class="flex items-center justify-between text-xs"><span class="text-error"> </span> <!></div></fieldset>`);
+var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  a = e(`<svg><path d="M480-440q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0-80q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0 440q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-400Zm0-315-240 90v189q0 54 15 105t41 96q42-21 88-33t96-12q50 0 96 12t88 33q26-45 41-96t15-105v-189l-240-90Zm0 515q-36 0-70 8t-65 22q29 30 63 52t72 34q38-12 72-34t63-52q-31-14-65-22t-70-8Z"></path></svg>`);
 
-function D(o, D) {
-  a(D, !0);
-  let O = c(D, `value`, 15),
-    k = c(D, `validate`, 15),
-    A = c(D, `disabled`, 3, !1),
-    j = c(D, `ref`, 15),
-    M = h(D, C),
-    N = f(``),
-    P = r(() => {
-      var e;
-      return ((e = O()) == null ? void 0 : e.length) ?? 0
-    });
-  k(F);
-
-  function F() {
-    return D.min !== void 0 && l(P) < D.min ? (p(N, D.min === 1 ? S.required() : S.min_characters({
-      min: D.min
-    }), !0), !1) : D.max !== void 0 && l(P) > D.max ? (p(N, S.max_characters({
-      max: D.max
-    }), !0), !1) : (p(N, ``), !0)
-  }
-  x(() => {
-    if (D.max !== void 0 && l(P) > D.max) {
-      var e;
-      O((e = O()) == null ? void 0 : e.substring(0, D.max))
-    }
-  });
-  var I = E(),
-    L = v(I),
-    R = e => {
-      var t = w(),
-        n = v(t, !0);
-      m(t), _(() => g(n, D.label)), i(e, t)
-    };
-  t(L, e => {
-    D.label && e(R)
-  });
-  var z = e(L, 2);
-  y(z), b(z, () => ({
-    ...M,
-    class: `textarea w-full ${D.class??``}`,
-    placeholder: D.placeholder,
-    disabled: A(),
-    [s]: {
-      "textarea-error": !!l(N)
-    }
-  }), void 0, void 0, void 0, `svelte-16tom9o`), u(z, e => j(e), () => j());
-  var B = e(z, 2),
-    V = v(B),
-    H = v(V, !0);
-  m(V);
-  var U = e(V, 2),
-    W = e => {
-      var t = T(),
-        n = v(t, !0);
-      m(t), _(() => g(n, D.max - l(P))), i(e, t)
-    };
-  t(U, e => {
-    D.max !== void 0 && e(W)
-  }), m(B), m(I), _(() => g(H, l(N))), d(z, O), i(o, I), n()
+function o(e, o) {
+  let s = n(o, i);
+  var c = a();
+  r(c, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...s
+  })), t(e, c)
 }
 export {
-  D as t
+  o as t
 };

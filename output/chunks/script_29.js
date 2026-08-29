@@ -1,79 +1,13 @@
 import {
-  t as e
-} from "./CBvy2Co4.js";
-import {
-  t
-} from "./DlhKQDnh.js";
-var n = [{
-  key: `dashboard`,
-  href: `/dashboard/home`,
-  label: () => e.home(),
-  permissions: t.dashboard.summary
-}, {
-  key: `mods`,
-  href: `/dashboard/team`,
-  label: () => e.team(),
-  permissions: t.dashboard.team
-}, {
-  key: `appeals`,
-  href: `/dashboard/appeals`,
-  label: () => e.appeals(),
-  permissions: t.dashboard.banAppeals
-}, {
-  key: `tickets`,
-  href: `/dashboard/tickets`,
-  label: () => e.tickets(),
-  permissions: t.dashboard.allTickets
-}, {
-  key: `kpi`,
-  href: `/dashboard/kpi/tickets`,
-  label: () => `KPI`,
-  permissions: t.dashboard.kpi
-}, {
-  key: `users`,
-  href: `/dashboard/users`,
-  label: () => e.users(),
-  permissions: t.dashboard.users
-}, {
-  key: `businesses`,
-  href: `/dashboard/businesses`,
-  label: () => e.businesses(),
-  permissions: t.dashboard.businesses
-}, {
-  key: `permissions`,
-  href: `/dashboard/permissions`,
-  label: () => e.permissions(),
-  permissions: t.dashboard.permissions
-}, {
-  key: `alliances`,
-  href: `/dashboard/alliances`,
-  label: () => e.alliances(),
-  permissions: t.dashboard.alliances
-}, {
-  key: `audit-logs`,
-  href: `/dashboard/audit-logs`,
-  label: () => e.audit_logs(),
-  permissions: t.dashboard.auditLogs.only(`see`)
-}, {
-  key: `ticket-reversals`,
-  href: `/dashboard/ticket-reversals`,
-  label: () => e.ticket_reversals_title(),
-  permissions: t.tickets.only(`revertReview`)
-}, {
-  key: `store-manager`,
-  href: `/dashboard/store-manager`,
-  label: () => e.store_manager(),
-  permissions: t.dashboard.storeManager
-}, {
-  key: `anticheat`,
-  href: `/dashboard/anticheat`,
-  label: () => `Anticheat`,
-  permissions: t.dashboard.anticheat
-}];
-
-function r(e) {
-  return n.find(t => e.hasAnyPermission(t.permissions))
-}
+  Ot as e
+} from "./CX37corp.js";
+var t = e({
+  shouldReload: !0,
+  openHeadquarters: !1,
+  hq: void 0,
+  hasHeadquarters: !1,
+  emblem: void 0
+});
 export {
-  r as n, n as t
+  t
 };

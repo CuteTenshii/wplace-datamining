@@ -1,4 +1,29 @@
-if (typeof window < `u`) {
-  var e, t;
-  ((e = (t = window).__svelte ?? (t.__svelte = {})).v ?? (e.v = new Set)).add(`5`)
+import {
+  n as e
+} from "./CFbOHw-6.js";
+
+function t() {
+  return e()
 }
+
+function n(e) {
+  switch (e) {
+    case `ch`:
+      return `zh-CN`;
+    case `jp`:
+      return `ja-JP`;
+    case `pt`:
+      return `pt-BR`;
+    case `uk`:
+      return `uk-UA`;
+    default:
+      return e || `en`
+  }
+}
+
+function r() {
+  return `/terms/return${t()===`pt`?`/pt`:``}`
+}
+export {
+  t as n, r, n as t
+};

@@ -1,105 +1,201 @@
 import {
-  Q as e,
-  Y as t,
-  o as n,
-  y as r
-} from "./D6uuD926.js";
-import "./B8UK1oE5.js";
-import {
-  t as i
-} from "./CBvy2Co4.js";
-var a = {
-    0: i.palette_transparent,
-    1: i.palette_black,
-    2: i.palette_dark_gray,
-    3: i.palette_gray,
-    4: i.palette_light_gray,
-    5: i.palette_white,
-    6: i.palette_deep_red,
-    7: i.palette_red,
-    8: i.palette_orange,
-    9: i.palette_gold,
-    10: i.palette_yellow,
-    11: i.palette_light_yellow,
-    12: i.palette_dark_green,
-    13: i.palette_green,
-    14: i.palette_light_green,
-    15: i.palette_dark_teal,
-    16: i.palette_teal,
-    17: i.palette_light_teal,
-    18: i.palette_dark_blue,
-    19: i.palette_blue,
-    20: i.palette_cyan,
-    21: i.palette_indigo,
-    22: i.palette_light_indigo,
-    23: i.palette_dark_purple,
-    24: i.palette_purple,
-    25: i.palette_light_purple,
-    26: i.palette_dark_pink,
-    27: i.palette_pink,
-    28: i.palette_light_pink,
-    29: i.palette_dark_brown,
-    30: i.palette_brown,
-    31: i.palette_beige,
-    32: i.palette_medium_gray,
-    33: i.palette_dark_red,
-    34: i.palette_light_red,
-    35: i.palette_dark_orange,
-    36: i.palette_light_tan,
-    37: i.palette_dark_goldenrod,
-    38: i.palette_goldenrod,
-    39: i.palette_light_goldenrod,
-    40: i.palette_dark_olive,
-    41: i.palette_olive,
-    42: i.palette_light_olive,
-    43: i.palette_dark_cyan,
-    44: i.palette_light_cyan,
-    45: i.palette_light_blue,
-    46: i.palette_dark_indigo,
-    47: i.palette_dark_slate_blue,
-    48: i.palette_slate_blue,
-    49: i.palette_light_slate_blue,
-    50: i.palette_light_brown,
-    51: i.palette_dark_beige,
-    52: i.palette_light_beige,
-    53: i.palette_dark_peach,
-    54: i.palette_peach,
-    55: i.palette_light_peach,
-    56: i.palette_dark_tan,
-    57: i.palette_tan,
-    58: i.palette_dark_slate,
-    59: i.palette_slate,
-    60: i.palette_light_slate,
-    61: i.palette_dark_stone,
-    62: i.palette_stone,
-    63: i.palette_light_stone
-  },
-  o = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  s = e(`<svg><path d="M280-40q-33 0-56.5-23.5T200-120v-720q0-33 23.5-56.5T280-920h400q33 0 56.5 23.5T760-840v124q18 7 29 22t11 34v80q0 19-11 34t-29 22v404q0 33-23.5 56.5T680-40H280Zm0-80h400v-720H280v720Zm0 0v-720 720Zm200-200 160-160-56-56-64 62v-166h-80v166l-64-62-56 56 160 160Z"></path></svg>`);
+  M as e
+} from "./DCvMiq9p.js";
+var t = [`text-red-500`, `text-orange-500`, `text-yellow-500`, `text-lime-500`, `text-emerald-500`, `text-teal-500`, `text-cyan-500`, `text-sky-500`, `text-indigo-500`, `text-violet-500`, `text-purple-500`, `text-fuchsia-500`, `text-pink-500`, `text-rose-500`],
+  n = [`bg-red-500/10`, `bg-orange-500/10`, `bg-yellow-500/10`, `bg-lime-500/10`, `bg-emerald-500/10`, `bg-teal-500/10`, `bg-cyan-500/10`, `bg-sky-500/10`, `bg-indigo-500/10`, `bg-violet-500/10`, `bg-purple-500/10`, `bg-fuchsia-500/10`, `bg-pink-500/10`, `bg-rose-500/10`];
 
-function c(e, i) {
-  let a = n(i, o);
-  var c = s();
-  r(c, () => ({
-    xmlns: `http://www.w3.org/2000/svg`,
-    viewBox: `0 -960 960 960`,
-    fill: `currentColor`,
-    ...a
-  })), t(e, c)
+function r(e) {
+  return t[e % t.length]
 }
-var l = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  u = e(`<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>`);
 
-function d(e, i) {
-  let a = n(i, l);
-  var o = u();
-  r(o, () => ({
-    xmlns: `http://www.w3.org/2000/svg`,
-    viewBox: `0 -960 960 960`,
-    fill: `currentColor`,
-    ...a
-  })), t(e, o)
+function i(e) {
+  return n[e % n.length]
+}
+
+function a({
+  r: e,
+  g: t,
+  b: n
+}) {
+  function r(e) {
+    return e.toString(16).padStart(2, `0`)
+  }
+  return `#${r(e)}${r(t)}${r(n)}`
+}
+
+function o(e) {
+  return e = e.trim().replace(`#`, ``), e.length === 3 && (e = e[0] + e[0] + e[1] + e[1] + e[2] + e[2]), e.length === 6 ? {
+    r: Number(`0x` + e.slice(0, 2)),
+    g: Number(`0x` + e.slice(2, 4)),
+    b: Number(`0x` + e.slice(4, 6))
+  } : {
+    r: 0,
+    g: 0,
+    b: 0
+  }
+}
+
+function s(t) {
+  t = Math.min(t, e.colors.length - 1);
+  let [n, r, i] = e.colors[t].rgb;
+  return {
+    r: n,
+    g: r,
+    b: i,
+    a: t === 0 ? 0 : 255
+  }
+}
+var c = 2 * Math.PI,
+  l = 6103515625,
+  u = .5235987755982988,
+  d = .10471975511965977,
+  f = 1.0995574287564276,
+  p = 4.799655442984406,
+  m = .4363323129985824;
+
+function h(e) {
+  let t = e * e;
+  return t * t * t * e
+}
+
+function g(e, t) {
+  let n = Math.atan2(e, t);
+  return n < 0 ? n + c : n
+}
+var _ = new Float64Array(256);
+for (let e = 0; e < 256; e++) {
+  let t = e / 255;
+  _[e] = t > .04045 ? ((t + .055) / 1.055) ** 2.4 : t / 12.92
+}
+
+function v(e) {
+  let t = _[e.r],
+    n = _[e.g],
+    r = _[e.b],
+    i = (t * .4124 + n * .3576 + r * .1805) / .95047,
+    a = t * .2126 + n * .7152 + r * .0722,
+    o = (t * .0193 + n * .1192 + r * .9505) / 1.08883;
+  return i = i > .008856 ? Math.cbrt(i) : 7.787 * i + 16 / 116, a = a > .008856 ? Math.cbrt(a) : 7.787 * a + 16 / 116, o = o > .008856 ? Math.cbrt(o) : 7.787 * o + 16 / 116, {
+    l: 116 * a - 16,
+    a: 500 * (i - a),
+    b: 200 * (a - o)
+  }
+}
+var y = e.colors.map((e, t) => ({
+    idx: t,
+    lab: v({
+      r: e.rgb[0],
+      g: e.rgb[1],
+      b: e.rgb[2]
+    })
+  })).filter(e => e.idx !== 0),
+  b = e.colors.map((e, t) => ({
+    idx: t,
+    rgb: {
+      r: e.rgb[0],
+      g: e.rgb[1],
+      b: e.rgb[2]
+    }
+  })).filter(e => e.idx !== 0),
+  x = Array(e.colors.length);
+for (let e of y) x[e.idx] = e;
+var S = Array(e.colors.length);
+for (let e of b) S[e.idx] = e;
+
+function C(e, t, n) {
+  let r = y[0].idx,
+    i = Number.MAX_VALUE,
+    a = n && n.length > 0,
+    o = a ? n.length : y.length;
+  for (let s = 0; s < o; s++) {
+    let o = a ? x[n[s]] : y[s];
+    if (!o) continue;
+    let c = t(e, o.lab);
+    (c < i || c === i && o.idx < r) && (r = o.idx, i = c)
+  }
+  return r
+}
+
+function w(e, t) {
+  let n = b[0].idx,
+    r = Number.MAX_VALUE,
+    i = t && t.length > 0,
+    a = i ? t.length : b.length;
+  for (let o = 0; o < a; o++) {
+    let a = i ? S[t[o]] : b[o];
+    if (!a) continue;
+    let s = O(e, a.rgb);
+    (s < r || s === r && a.idx < n) && (n = a.idx, r = s)
+  }
+  return n
+}
+
+function T(e, t = `lab`, n) {
+  return t === `compuphase` ? w(e, n) : C(v(e), t === `ciede2000` ? D : E, n)
+}
+
+function E(e, t) {
+  let n = e.l - t.l,
+    r = e.a - t.a,
+    i = e.b - t.b,
+    a = Math.sqrt(e.a * e.a + e.b * e.b),
+    o = a - Math.sqrt(t.a * t.a + t.b * t.b),
+    s = r * r + i * i - o * o;
+  s = s < 0 ? 0 : Math.sqrt(s);
+  let c = 1 + .045 * a,
+    l = 1 + .015 * a,
+    u = o / c,
+    d = s / l,
+    f = n * n + u * u + d * d;
+  return f < 0 ? 0 : Math.sqrt(f)
+}
+
+function D(e, t) {
+  let n = h((Math.sqrt(e.a * e.a + e.b * e.b) + Math.sqrt(t.a * t.a + t.b * t.b)) * .5),
+    r = .5 * (1 - Math.sqrt(n / (n + l))),
+    i = (1 + r) * e.a,
+    a = (1 + r) * t.a,
+    o = Math.sqrt(i * i + e.b * e.b),
+    s = Math.sqrt(a * a + t.b * t.b),
+    _ = o * s,
+    v = o === 0 ? 0 : g(e.b, i),
+    y = s === 0 ? 0 : g(t.b, a),
+    b = t.l - e.l,
+    x = s - o,
+    S = 0;
+  _ !== 0 && (S = y - v, S > Math.PI ? S -= c : S < -Math.PI && (S += c));
+  let C = _ === 0 ? 0 : 2 * Math.sqrt(_) * Math.sin(S * .5),
+    w = (e.l + t.l) * .5,
+    T = (o + s) * .5,
+    E = v + y;
+  _ !== 0 && (Math.abs(v - y) > Math.PI ? E = E < c ? (E + c) * .5 : (E - c) * .5 : E *= .5);
+  let D = 1 - .17 * Math.cos(E - u) + .24 * Math.cos(2 * E) + .32 * Math.cos(3 * E + d) - .2 * Math.cos(4 * E - f),
+    O = (E - p) / m,
+    k = u * Math.exp(-(O * O)),
+    A = h(T),
+    j = 2 * Math.sqrt(A / (A + l)),
+    M = w - 50,
+    N = M * M,
+    P = 1 + .015 * N / Math.sqrt(20 + N),
+    F = 1 + .045 * T,
+    I = 1 + .015 * T * D,
+    L = -Math.sin(2 * k) * j,
+    R = b / P,
+    z = x / F,
+    B = C / I,
+    V = R * R + z * z + B * B + L * z * B;
+  return V > 0 ? V : 0
+}
+
+function O(e, t) {
+  let n = (e.r + t.r) / 2,
+    r = e.r - t.r,
+    i = e.g - t.g,
+    a = e.b - t.b,
+    o = 2 + n / 256,
+    s = 2 + (255 - n) / 256;
+  return o * r * r + 4 * i * i + s * a * a
 }
 export {
-  c as n, a as r, d as t
+  o as a, r as i, i as n, a as o, T as r, s as t
 };

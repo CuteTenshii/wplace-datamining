@@ -1,29 +1,124 @@
-import {
-  n as e
-} from "./8ZG0XGNA.js";
+var e = function(e, t) {
+    return new URL(e, t).href
+  },
+  t = {},
+  n = function(n, r, i) {
+    let a = Promise.resolve();
+    if (r && r.length > 0) {
+      let n = document.getElementsByTagName(`link`),
+        o = document.querySelector(`meta[property=csp-nonce]`),
+        s = (o == null ? void 0 : o.nonce) || (o == null ? void 0 : o.getAttribute(`nonce`));
 
-function t() {
-  return e()
+      function c(e) {
+        return Promise.all(e.map(e => Promise.resolve(e).then(e => ({
+          status: `fulfilled`,
+          value: e
+        }), e => ({
+          status: `rejected`,
+          reason: e
+        }))))
+      }
+
+      function l(e) {
+        return import.meta.resolve ? import.meta.resolve(e) : new URL(e, import.meta.url).href
+      }
+      a = c(r.map(r => {
+        if (r = e(r, i), r = l(r), r in t) return;
+        t[r] = !0;
+        let a = r.endsWith(`.css`);
+        for (let e = n.length - 1; e >= 0; e--) {
+          let t = n[e];
+          if (t.href === r && (!a || t.rel === `stylesheet`)) return
+        }
+        let o = document.createElement(`link`);
+        if (o.rel = a ? `stylesheet` : `modulepreload`, a || (o.as = `script`), o.crossOrigin = ``, o.href = r, s && o.setAttribute(`nonce`, s), document.head.appendChild(o), a) return new Promise((e, t) => {
+          o.addEventListener(`load`, e), o.addEventListener(`error`, () => t(Error(`Unable to preload CSS for ${r}`)))
+        })
+      }))
+    }
+
+    function o(e) {
+      let t = new Event(`vite:preloadError`, {
+        cancelable: !0
+      });
+      if (t.payload = e, window.dispatchEvent(t), !t.defaultPrevented) throw e
+    }
+    return a.then(e => {
+      for (let t of e || []) t.status === `rejected` && o(t.reason);
+      return n().catch(o)
+    })
+  },
+  r = [`en`, `pt`, `ch`, `de`, `es`, `fr`, `it`, `jp`, `pl`, `ru`, `uk`, `vi`],
+  i = Object.assign({
+    "../../../messages/ch.json": () => n(() => import(`./DkcA95Kw.js`), [], import.meta.url),
+    "../../../messages/de.json": () => n(() => import(`./DMo-axH5.js`), [], import.meta.url),
+    "../../../messages/en.json": () => n(() => import(`./ga9-eHci.js`), [], import.meta.url),
+    "../../../messages/es.json": () => n(() => import(`./BXltWOXi.js`), [], import.meta.url),
+    "../../../messages/fr.json": () => n(() => import(`./B9Pzqc3A.js`), [], import.meta.url),
+    "../../../messages/it.json": () => n(() => import(`./BbESAWxC.js`), [], import.meta.url),
+    "../../../messages/jp.json": () => n(() => import(`./BEry5kTN.js`), [], import.meta.url),
+    "../../../messages/pl.json": () => n(() => import(`./BI7ecQX6.js`), [], import.meta.url),
+    "../../../messages/pt.json": () => n(() => import(`./CZeu63YY.js`), [], import.meta.url),
+    "../../../messages/ru.json": () => n(() => import(`./Cf4anJms.js`), [], import.meta.url),
+    "../../../messages/uk.json": () => n(() => import(`./5JZHOYMX.js`), [], import.meta.url),
+    "../../../messages/vi.json": () => n(() => import(`./DkPkAqbG.js`), [], import.meta.url)
+  }),
+  a = new Map,
+  o = `PARAGLIDE_LOCALE`,
+  s = `en`,
+  c;
+
+function l() {
+  return s
 }
 
-function n(e) {
-  switch (e) {
-    case `ch`:
-      return `zh-CN`;
-    case `jp`:
-      return `ja-JP`;
-    case `pt`:
-      return `pt-BR`;
-    case `uk`:
-      return `uk-UA`;
-    default:
-      return e || `en`
+function u(e) {
+  return typeof e == `string` && r.includes(e)
+}
+async function d(e) {
+  let t = a.get(e);
+  if (!t) {
+    let n = i[`../../../messages/${e}.json`];
+    if (!n) throw Error(`No message catalog is configured for locale "${e}"`);
+    t = n().then(t => g(e, t.default)), a.set(e, t)
+  }
+  c = await t, s = e
+}
+async function f() {
+  if (typeof window > `u`) {
+    await d(`en`);
+    return
+  }
+  await d(m() ?? h() ?? `en`)
+}
+
+function p() {
+  if (!c) throw Error(`The message catalog was used before initializeLocale() completed`);
+  return c
+}
+
+function m() {
+  try {
+    let e = localStorage.getItem(o);
+    return u(e) ? e : void 0
+  } catch {
+    return
   }
 }
 
-function r() {
-  return `/terms/return${t()===`pt`?`/pt`:``}`
+function h() {
+  for (let e of navigator.languages ?? []) {
+    let t = e.toLowerCase();
+    if (u(t)) return t;
+    let n = t.split(`-`)[0];
+    if (u(n)) return n
+  }
+}
+
+function g(e, t) {
+  if (typeof t != `object` || !t || Array.isArray(t)) throw Error(`The message catalog for locale "${e}" is not an object`);
+  return t
 }
 export {
-  t as n, r, n as t
+  n as a, o as i, l as n, f as r, p as t
 };

@@ -1,12 +1,12 @@
 import {
-  Q as e,
-  Y as t,
+  $ as e,
+  X as t,
   o as n,
   y as r
-} from "./D6uuD926.js";
+} from "./CX37corp.js";
 import "./B8UK1oE5.js";
 var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  a = e(`<svg><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"></path></svg>`);
+  a = e(`<svg><path d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"></path></svg>`);
 
 function o(e, o) {
   let s = n(o, i);

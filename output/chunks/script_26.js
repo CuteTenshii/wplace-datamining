@@ -1,23 +1,112 @@
 import {
-  Q as e,
-  Y as t,
-  o as n,
-  y as r
-} from "./D6uuD926.js";
+  Bt as e,
+  D as t,
+  Dt as n,
+  Ft as r,
+  G as i,
+  It as a,
+  Lt as o,
+  O as s,
+  Q as c,
+  Rt as l,
+  Tt as u,
+  V as d,
+  X as f,
+  Xt as p,
+  Yt as m,
+  an as h,
+  k as g,
+  lt as _,
+  o as v,
+  rn as y,
+  x as b,
+  yt as x,
+  zt as S
+} from "./CX37corp.js";
 import "./B8UK1oE5.js";
-var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  a = e(`<svg><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"></path></svg>`);
+import {
+  t as C
+} from "./DxdGK6Xj.js";
+var w, T, E, D, O, k, A = 9,
+  j = 95,
+  M = 45,
+  N = 5;
 
-function o(e, o) {
-  let s = n(o, i);
-  var c = a();
-  r(c, () => ({
-    xmlns: `http://www.w3.org/2000/svg`,
-    viewBox: `0 -960 960 960`,
-    fill: `currentColor`,
-    ...s
-  })), t(e, c)
+function P(e) {
+  return e.split(``).reduce((e, t) => (e ^ t.charCodeAt(0)) * -5, N) >>> 2
+}
+
+function F(e = ``, t = j, n = M, r = P) {
+  let i = r(e),
+    a = i % A * (360 / A);
+  return [...Array(e ? 25 : 0)].reduce((e, t, n) => i & 1 << n % 15 ? e + `<rect x="${n>14?7-~~(n/5):~~(n/5)}" y="${n%5}" width="1" height="1"/>` : e, `<svg viewBox="-1.5 -1.5 8 8" xmlns="http://www.w3.org/2000/svg" fill="hsl(${a} ${t}% ${n}%)" shape-rendering="crispEdges">`) + `</svg>`
+}(w = globalThis.customElements) != null && w.get(`minidenticon-svg`) || (T = globalThis.customElements) == null || T.define(`minidenticon-svg`, (O = new WeakMap, k = new WeakSet, E = class extends HTMLElement {
+  constructor(...t) {
+    super(...t), e(this, k), S(this, O, !1)
+  }
+  connectedCallback() {
+    l(k, this, I).call(this), o(O, this, !0)
+  }
+  attributeChangedCallback() {
+    a(O, this) && l(k, this, I).call(this)
+  }
+}, h(E, `observedAttributes`, [`username`, `saturation`, `lightness`]), D = {
+  _: {}
+}, E));
+
+function I() {
+  var e;
+  let t = E.observedAttributes.map(e => this.getAttribute(e) || void 0),
+    n = t.join(`,`);
+  this.innerHTML = (e = l(E, E, D)._)[n] ?? (e[n] = F(...t))
+}
+var L = new Set([`$$slots`, `$$events`, `$$legacy`, `userId`, `seed`]),
+  R = c(`<div></div>`);
+
+function z(e, t) {
+  p(t, !0), v(t, L);
+  let n = r(() => t.seed && t.seed.length > 0 ? t.seed : t.userId.toString());
+  var i = R();
+  d(i, () => F(_(n), 95, 45), !0), y(i), x(() => s(i, 1, `bg-base-200 minidenticon ${t.class??``??``}`)), f(e, i), m()
+}
+var B = c(`<img class="pixelated bg-base-200 size-full" alt="User profile"/>`),
+  V = c(`<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square w-full"/>`),
+  H = c(`<div><div><!></div> <!></div>`);
+
+function U(e, r) {
+  p(r, !0);
+  var a = H(),
+    o = u(a);
+  t(o, `width: 67.76785714285714%`);
+  var c = u(o),
+    l = e => {
+      z(e, {
+        get userId() {
+          return r.userId
+        },
+        get seed() {
+          return r.avatarSeed
+        }
+      })
+    },
+    d = e => {
+      var t = B();
+      x(() => b(t, `src`, r.pictureUrl)), f(e, t)
+    };
+  i(c, e => {
+    r.pictureUrl ? e(d, -1) : e(l)
+  }), y(o);
+  var h = n(o, 2),
+    _ = e => {
+      var n = V();
+      t(n, `scale: 114.99999999999999%;`), x(() => b(n, `src`, r.frameUrl)), f(e, n)
+    };
+  i(h, e => {
+    r.frameUrl && e(_)
+  }), y(a), x((e, t) => {
+    s(a, 1, e), s(o, 1, t)
+  }, [() => g(C(`relative inline-grid size-10 place-items-center`, r.class)), () => g(C(`avatar border-base-300 aspect-square overflow-hidden rounded-full border`, r.avatarClass))]), f(e, a), m()
 }
 export {
-  o as t
+  z as n, F as r, U as t
 };

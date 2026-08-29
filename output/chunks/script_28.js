@@ -1,75 +1,24 @@
 import {
-  N as e
-} from "./BuerdC7c.js";
-var t = e;
+  $ as e,
+  X as t,
+  o as n,
+  y as r
+} from "./CX37corp.js";
+import "./B8UK1oE5.js";
+var i = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAAAXNSR0IArs4c6QAAACVJREFUeNpj+A8FDEAAZwMRBAIBmIYLIgHcgkQDIs3E6SRsjgcABYFLtfTgakEAAAAASUVORK5CYII=`,
+  a = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  o = e(`<svg><path d="M200-80q-50 0-85-35t-35-85q0-39 22.5-69.5T160-313v-334q-35-13-57.5-43.5T80-760q0-50 35-85t85-35q39 0 69.5 22.5T313-800h334q12-35 42.5-57.5T760-880q50 0 85 35t35 85q0 40-22.5 70.5T800-647v334q35 13 57.5 43.5T880-200q0 50-35 85t-85 35q-39 0-69.5-22.5T647-160H313q-13 35-43.5 57.5T200-80Zm0-640q17 0 28.5-11.5T240-760q0-17-11.5-28.5T200-800q-17 0-28.5 11.5T160-760q0 17 11.5 28.5T200-720Zm560 0q17 0 28.5-11.5T800-760q0-17-11.5-28.5T760-800q-17 0-28.5 11.5T720-760q0 17 11.5 28.5T760-720ZM313-240h334q9-26 28-45t45-28v-334q-26-9-45-28t-28-45H313q-9 26-28 45t-45 28v334q26 9 45 28t28 45Zm447 80q17 0 28.5-11.5T800-200q0-17-11.5-28.5T760-240q-17 0-28.5 11.5T720-200q0 17 11.5 28.5T760-160Zm-560 0q17 0 28.5-11.5T240-200q0-17-11.5-28.5T200-240q-17 0-28.5 11.5T160-200q0 17 11.5 28.5T200-160Zm0-600Zm560 0Zm0 560Zm-560 0Z"></path></svg>`);
 
-function n(e) {
-  let t = [],
-    r = t,
-    i = Object.keys(e);
-  for (let a of i) {
-    let i = e[a];
-    if (typeof i == `string`) {
-      r.push(i), Object.defineProperty(t, a, {
-        value: i,
-        enumerable: !0,
-        configurable: !1,
-        writable: !1
-      });
-      continue
-    }
-    let o = n(i);
-    Object.defineProperty(t, a, {
-      value: o,
-      enumerable: !0,
-      configurable: !1,
-      writable: !1
-    });
-    let s = o;
-    for (let e = 0; e < s.length; e += 1) r.push(s[e])
-  }
-  return Object.defineProperty(t, "only", {
-    value: (...e) => {
-      let n = [];
-      for (let r = 0; r < e.length; r += 1) {
-        let i = e[r],
-          a = t[i];
-        if (typeof a == `string`) {
-          n.push(a);
-          continue
-        }
-        let o = a;
-        for (let e = 0; e < o.length; e += 1) n.push(o[e])
-      }
-      return n
-    },
-    enumerable: !1,
-    configurable: !1,
-    writable: !1
-  }), Object.defineProperty(t, "but", {
-    value: (...e) => {
-      let n = new Set(e),
-        r = [],
-        i = Object.keys(t);
-      for (let e = 0; e < i.length; e += 1) {
-        let a = i[e];
-        if (n.has(a)) continue;
-        let o = t[a];
-        if (typeof o == `string`) {
-          r.push(o);
-          continue
-        }
-        let s = o;
-        for (let e = 0; e < s.length; e += 1) r.push(s[e])
-      }
-      return r
-    },
-    enumerable: !1,
-    configurable: !1,
-    writable: !1
-  }), Object.freeze(t)
+function s(e, i) {
+  let s = n(i, a);
+  var c = o();
+  r(c, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...s
+  })), t(e, c)
 }
-var r = n(t);
 export {
-  r as t
+  i as n, s as t
 };

@@ -1,99 +1,49 @@
 import {
-  B as e,
-  G as t,
-  Jt as n,
-  O as r,
-  Pt as i,
-  Tt as a,
-  X as o,
-  Y as s,
-  Yt as c,
-  Z as l,
-  a as u,
-  ct as d,
-  k as f,
-  nn as p,
-  nt as m,
-  on as h,
-  tt as g,
-  vt as _,
-  wt as v,
-  x as y
-} from "./D6uuD926.js";
+  $ as e,
+  X as t,
+  o as n,
+  y as r
+} from "./CX37corp.js";
 import "./B8UK1oE5.js";
-import {
-  n as b
-} from "./BuerdC7c.js";
-import {
-  t as x
-} from "./DlhKQDnh.js";
+var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  a = e(`<svg><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z"></path></svg>`);
 
-function S(e) {
-  return `/dashboard/alliances?id=${encodeURIComponent(String(e))}`
+function o(e, o) {
+  let s = n(o, i);
+  var c = a();
+  r(c, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...s
+  })), t(e, c)
 }
+var s = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  c = e(`<svg><path d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"></path></svg>`);
 
-function C(e) {
-  typeof window > `u` || window.open(S(e), `_blank`, `noopener,noreferrer`)
+function l(e, i) {
+  let a = n(i, s);
+  var o = c();
+  r(o, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...a
+  })), t(e, o)
 }
-var w = l(`<span role="link" tabindex="0"><!></span>`),
-  T = l(`<a target="_blank" rel="noopener noreferrer"><!></a>`),
-  E = l(`<span><!></span>`);
+var u = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  d = e(`<svg><path d="M440-42v-80q-125-14-214.5-103.5T122-440H42v-80h80q14-125 103.5-214.5T440-838v-80h80v80q125 14 214.5 103.5T838-520h80v80h-80q-14 125-103.5 214.5T520-122v80h-80Zm40-158q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-120q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Z"></path></svg>`);
 
-function D(l, g) {
-  c(g, !0);
-  let D = u(g, `mode`, 3, `anchor`),
-    O = u(g, `class`, 3, ``),
-    k = u(g, `linkClass`, 19, O),
-    A = u(g, `textClass`, 19, O),
-    j = i(() => g.allianceId != null && g.allianceId > 0 && b.hasAnyPermission(x.dashboard.alliances)),
-    M = i(() => g.allianceId == null ? `` : S(g.allianceId));
-
-  function N(e) {
-    e.stopPropagation()
-  }
-
-  function P(e) {
-    g.allianceId == null || g.allianceId <= 0 || (e.preventDefault(), e.stopPropagation(), C(g.allianceId))
-  }
-
-  function F(e) {
-    (e.key === `Enter` || e.key === ` `) && P(e)
-  }
-  var I = o(),
-    L = a(I),
-    R = n => {
-      var i = o(),
-        c = a(i),
-        l = t => {
-          var n = w(),
-            i = v(n);
-          e(i, () => g.children ?? h), p(n), _(() => {
-            r(n, 1, `cursor-pointer hover:underline ${k()}`), y(n, `title`, g.title)
-          }), m(`pointerdown`, n, N), m(`click`, n, P), m(`keydown`, n, F), s(t, n)
-        },
-        u = t => {
-          var n = T(),
-            i = v(n);
-          e(i, () => g.children ?? h), p(n), _(() => {
-            r(n, 1, `cursor-pointer hover:underline ${k()}`), y(n, `href`, d(M)), y(n, `title`, g.title)
-          }), m(`pointerdown`, n, N), m(`click`, n, N), s(t, n)
-        };
-      t(c, e => {
-        D() === `inline` ? e(l) : e(u, -1)
-      }), s(n, i)
-    },
-    z = t => {
-      var n = E(),
-        i = v(n);
-      e(i, () => g.children ?? h), p(n), _(() => {
-        r(n, 1, f(A())), y(n, `title`, g.title)
-      }), s(t, n)
-    };
-  t(L, e => {
-    d(j) ? e(R) : e(z, -1)
-  }), s(l, I), n()
+function f(e, i) {
+  let a = n(i, u);
+  var o = d();
+  r(o, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...a
+  })), t(e, o)
 }
-g([`pointerdown`, `click`, `keydown`]);
 export {
-  D as t
+  l as n, o as r, f as t
 };

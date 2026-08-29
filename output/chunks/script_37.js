@@ -1,141 +1,215 @@
 import {
-  B as e,
-  Et as t,
-  G as n,
-  Jt as r,
-  O as i,
-  Pt as a,
-  Tt as o,
-  Y as s,
-  Yt as c,
-  Z as l,
-  a as u,
-  ct as d,
-  f,
-  j as p,
-  k as m,
-  nn as h,
-  on as g,
-  q as _,
-  rt as v,
-  vt as y,
-  wt as b,
-  x,
-  yt as S
-} from "./D6uuD926.js";
+  At as e,
+  D as t,
+  Dt as n,
+  Et as r,
+  Ft as i,
+  G as a,
+  J as o,
+  Mt as s,
+  Q as c,
+  Tt as l,
+  X as u,
+  Xt as d,
+  Yt as f,
+  a as p,
+  bt as m,
+  f as h,
+  lt as g,
+  o as _,
+  rn as v,
+  y,
+  yt as b
+} from "./CX37corp.js";
 import "./B8UK1oE5.js";
 import {
-  t as C
-} from "./CBvy2Co4.js";
+  C as x,
+  g as S,
+  h as C,
+  n as w,
+  q as T
+} from "./DCvMiq9p.js";
 import {
-  t as w
-} from "./DxdGK6Xj.js";
-var T = l(`<form method="dialog"><button class="btn btn-sm btn-circle">✕</button></form>`),
-  E = l(`<div class="flex items-center"></div> <div class="flex items-center justify-center overflow-hidden text-center"><!></div> <div class="flex items-start justify-end pt-1"><!></div>`, 1),
-  D = l(`<div class="ml-2 flex flex-col items-end gap-2 self-start pt-1 sm:translate-x-2"><!> <!></div>`),
-  O = l(`<div class="flex flex-1 items-center gap-3 overflow-hidden"><!></div> <!>`, 1),
-  k = l(`<header><!></header>`),
-  A = l(`<footer class="shrink-0 px-4 py-4 sm:px-6"><!></footer>`),
-  j = l(`<form method="dialog" class="modal-backdrop"><button> </button></form>`),
-  M = l(`<dialog><div><!> <div><!></div> <!></div> <!></dialog>`);
+  t as E
+} from "./CrLCY2lS.js";
+import {
+  t as D
+} from "./8VoTuwjs.js";
+import {
+  t as O
+} from "./BQpxdm-P.js";
+import {
+  r as k
+} from "./Dl3RR1lN.js";
+var A = new Set([`$$slots`, `$$events`, `$$legacy`, `value`, `fontSize`, `color`, `weight`, `mono`, `width`]),
+  j = c(`<canvas></canvas>`);
 
-function N(l, N) {
-  c(N, !0);
-  let P = u(N, `open`, 15),
-    F = u(N, `hasBackdrop`, 3, !0),
-    I = u(N, `hasCloseButton`, 3, !0),
-    L = u(N, `hasHeaderBorder`, 3, !0),
-    R = u(N, `centerHeader`, 3, !1),
-    z = u(N, `isDynamicHeight`, 3, !1),
-    B = u(N, `useModalLayer`, 3, !0),
-    V = u(N, `closedBy`, 3, `any`),
-    H = u(N, `contentEl`, 15),
-    U = u(N, `disableCloseAnimation`, 3, !1),
-    W = a(() => N.mobileClasses ?? `max-sm:!w-full max-sm:!h-full max-sm:!max-w-none max-sm:!max-h-none max-sm:!rounded-none`),
-    G = a(() => w(`modal-box p-0 flex flex-col w-11/12 max-h-11/12 rounded-xl`, !z() && `h-11/12`, d(W), N.modalBoxClass));
-  var K = M(),
-    q = b(K),
-    J = b(q),
-    Y = r => {
-      var a = k(),
-        c = b(a),
-        l = r => {
-          var i = E(),
-            a = t(o(i), 2),
-            c = b(a);
-          e(c, () => N.header ?? g), h(a);
-          var l = t(a, 2),
-            u = b(l),
-            d = e => {
-              var t = T();
-              s(e, t)
-            };
-          n(u, e => {
-            I() && e(d)
-          }), h(l), s(r, i)
-        },
-        u = r => {
-          var i = O(),
-            a = o(i),
-            c = b(a);
-          e(c, () => N.header ?? g), h(a);
-          var l = t(a, 2),
-            u = r => {
-              var i = D(),
-                a = b(i),
-                o = e => {
-                  var t = T();
-                  s(e, t)
-                };
-              n(a, e => {
-                I() && e(o)
-              });
-              var c = t(a, 2);
-              e(c, () => N.headerAction ?? g), h(i), s(r, i)
-            };
-          n(l, e => {
-            (I() || N.headerAction) && e(u)
-          }), s(r, i)
-        };
-      n(c, e => {
-        R() ? e(l) : e(u, -1)
-      }), h(a), y(() => i(a, 1, `bg-base-100/70 sticky top-0 z-40 flex shrink-0 items-center justify-between px-4 py-4 backdrop-blur sm:px-6 ${L()?`border-base-content/10 border-b`:``} ${R()?`grid grid-cols-[2.5rem_1fr_2.5rem] px-4`:``} ${(N.headerClassName||``)??``}`)), s(r, a)
-    };
-  n(J, e => {
-    (N.header || I()) && e(Y)
+function M(t, n) {
+  d(n, !0);
+  let r = p(n, `width`, 15, 0),
+    a = _(n, A),
+    o = i(() => Math.ceil(n.fontSize)),
+    c = s(null),
+    l = window.devicePixelRatio ?? 1;
+  m(() => {
+    let t = g(c).getContext(`2d`);
+    t.textBaseline = `top`, t.font = `${n.weight??`normal`} ${n.fontSize}px ${n.mono?`"Geist Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace`:`"Geist", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`}`, t.fillStyle = n.color ?? `#394e6a`, t.setTransform(l, 0, 0, l, 0, 0), t.clearRect(0, 0, r(), g(o)), t.fillText(n.value, 0, 0);
+    let i = t.measureText(n.value);
+    r(Math.ceil(i.actualBoundingBoxRight)), e(o, i.actualBoundingBoxDescent)
   });
-  var X = t(J, 2),
-    Z = b(X);
-  e(Z, () => N.children ?? g), h(X), f(X, e => H(e), () => H());
-  var Q = t(X, 2),
-    $ = t => {
-      var n = A(),
-        r = b(n);
-      e(r, () => N.footer), h(n), s(t, n)
-    };
-  n(Q, e => {
-    N.footer && e($)
-  }), h(q);
-  var ee = t(q, 2),
-    te = e => {
-      var t = j(),
-        n = b(t),
-        r = b(n, !0);
-      h(n), h(t), y(e => _(r, e), [() => C.close()]), s(e, t)
-    };
-  n(ee, e => {
-    F() && e(te)
-  }), h(K), p(K, () => e => {
-    S(() => {
-      P() && !e.open ? B() ? e.showModal() : e.show() : e.open && e.close()
+  var v = j();
+  y(v, () => ({
+    width: r() * l,
+    height: g(o) * l,
+    style: `width: ${r()??``}px; height: ${g(o)??``}px`,
+    ...a
+  })), h(v, t => e(c, t), () => g(c)), u(t, v), f()
+}
+var N = new Set([`$$slots`, `$$events`, `$$legacy`, `loading`, `charges`, `chargeMax`, `cooldownMs`, `showCooldown`, `maxWidth`]),
+  P = c(`<span class="text-sm font-semibold tabular-nums opacity-90 sm:mt-px"> </span>`),
+  F = c(`<!> <div class="flex items-center gap-2 whitespace-nowrap"> <!></div>`, 1),
+  I = c(`<span class="text-xl leading-none font-semibold" aria-hidden="true">&infin;</span>`),
+  L = c(`<span><!></span>`),
+  R = c(`<span class="w-7 text-xs"> </span>`),
+  z = c(`<span class="flex items-center gap-1 sm:mt-px"><!> <!></span>`),
+  B = c(`<span class="loading loading-spinner center-absolute absolute"></span>`),
+  V = c(`<button><div class="flex items-center gap-1.5"><!></div> <!></button>`);
+
+function H(c, m) {
+  d(m, !0);
+  let A = p(m, `showCooldown`, 3, !0),
+    j = _(m, N),
+    H = s(0),
+    U = s(void 0),
+    W = s(void 0),
+    G = i(() => m.cooldownMs ?? w.cooldown),
+    K = i(() => T.theme === `dark` ? `rgba(255, 255, 255, 0.3)` : `#394e6a33`),
+    q = i(() => {
+      let e = w.timeoutUntil;
+      if (!e || e.getTime() <= T.now) return;
+      let t = S(e, T.now);
+      return {
+        isBan: t,
+        countdown: t ? null : C(e, T.now)
+      }
+    });
+
+  function J({
+    days: e,
+    hours: t,
+    minutes: n
+  }) {
+    return e > 0 ? `${e}d ${t}h` : t > 0 ? `${t}h ${n}m` : `${n}m`
+  }
+  k(() => [m.loading, m.maxWidth], () => {
+    e(W, void 0), requestAnimationFrame(() => {
+      if (!g(U)) return;
+      let t = g(U).offsetWidth;
+      !m.loading && m.maxWidth !== void 0 && t + 20 > m.maxWidth ? e(W, 16 * (m.maxWidth / t) * .8) : e(W, void 0)
     })
-  }), y(e => {
-    i(K, 1, `modal ${U()?`no-close-animation`:``} ${N.dialogClass??``}`, `svelte-r6rf84`), x(K, `closedby`, V()), i(q, 1, m(d(G))), i(X, 1, e)
-  }, [() => m(w(`flex flex-1 flex-col overflow-x-hidden overflow-y-auto px-4 py-4 sm:px-6`, N.contentAreaClass))]), v(`close`, K, () => {
-    var e;
-    P(!1), (e = N.onclose) == null || e.call(N)
-  }), s(l, K), r()
+  });
+  var Y = V();
+  y(Y, () => ({
+    ...j,
+    class: `btn btn-lg sm:btn-xl relative ${g(q)?g(q).isBan?`btn-error`:`btn-warning`:`btn-primary`} ${m.class??``}`,
+    style: `max-width: ${m.maxWidth?`${m.maxWidth}px`:`none`}
+	${g(W)?`;font-size: ${g(W)}px`:``}`
+  }));
+  var X = l(Y),
+    Z = l(X),
+    Q = e => {
+      var t = F(),
+        i = r(t);
+      O(i, {
+        class: `size-6`
+      });
+      var s = n(i, 2),
+        c = l(s),
+        d = n(c),
+        f = e => {
+          var t = P(),
+            n = l(t, !0);
+          v(t), b(e => o(n, e), [() => J(g(q).countdown)]), u(e, t)
+        };
+      a(d, e => {
+        g(q).countdown && e(f)
+      }), v(s), b(e => o(c, `${e??``} `), [() => g(q).isBan ? E.banned() : E.timeout()]), u(e, t)
+    },
+    $ = s => {
+      var c = F(),
+        d = r(c);
+      D(d, {
+        class: `size-6`
+      });
+      var f = n(d, 2),
+        p = l(f),
+        h = n(p),
+        _ = r => {
+          let s = i(() => m.chargeMax ?? w.data.charges.max),
+            c = i(() => m.chargeMax === void 0 && w.data.charges.infinite);
+          var d = z(),
+            f = l(d),
+            p = e => {
+              var t = I();
+              u(e, t)
+            },
+            h = n => {
+              var r = L(),
+                a = l(r);
+              {
+                let t = i(() => g(W) ?? 16),
+                  n = i(() => `${Math.floor(m.charges)}/${g(s)}`),
+                  r = i(() => m.disabled ? g(K) : `#ffffff`);
+                M(a, {
+                  weight: 600,
+                  get fontSize() {
+                    return g(t)
+                  },
+                  get value() {
+                    return g(n)
+                  },
+                  get color() {
+                    return g(r)
+                  },
+                  get width() {
+                    return g(H)
+                  },
+                  set width(t) {
+                    e(H, t, !0)
+                  }
+                })
+              }
+              v(r), b(e => t(r, `width: ${e??``}px`), [() => (Math.floor(g(H) / 5) + 1) * 5]), u(n, r)
+            };
+          a(f, e => {
+            g(c) ? e(p) : e(h, -1)
+          });
+          var _ = n(f, 2),
+            y = e => {
+              var t = R(),
+                n = l(t);
+              v(t), b(e => o(n, `(${e??``})`), [() => x(g(G))]), u(e, t)
+            };
+          a(_, e => {
+            !g(c) && A() && m.charges < g(s) && g(G) !== void 0 && e(y)
+          }), v(d), u(r, d)
+        };
+      a(h, e => {
+        m.charges !== void 0 && w.data && e(_)
+      }), v(f), b(e => o(p, `${e??``} `), [() => E.paint()]), u(s, c)
+    };
+  a(Z, e => {
+    g(q) ? e(Q) : e($, -1)
+  }), v(X), h(X, t => e(U, t), () => g(U));
+  var ee = n(X, 2),
+    te = e => {
+      var t = B();
+      u(e, t)
+    };
+  a(ee, e => {
+    m.loading && e(te)
+  }), v(Y), u(c, Y), f()
 }
 export {
-  N as t
+  M as n, H as t
 };
