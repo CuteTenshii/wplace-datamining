@@ -2,7 +2,7 @@ import "./CX37corp.js";
 import {
   g as e,
   m as t
-} from "./uSe_RizA.js";
+} from "./B-OrC4Jt.js";
 var n = {
   get data() {
     return e.data

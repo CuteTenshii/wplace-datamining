@@ -488,7 +488,14 @@ Alliances have been completely rebuilt into a full community system with public 
 
 - Optional dialogs, profile details, and interaction tools now load only when opened, reducing the initial page download.
 `,
-  re = Object.entries(Object.assign({
+  re = e({
+    default: () => ie
+  }),
+  ie = `### Fixes
+
+- Paint charge balances no longer appear or remain negative after painting.
+`,
+  ae = Object.entries(Object.assign({
     "./markdown/1.0.0 - Welcome to WPlace!.md": t,
     "./markdown/1.1.0 - ✨ More Like You Update.md": r,
     "./markdown/1.1.1 - 🛠️ Quality & Cosmetics Improvements.md": a,
@@ -516,7 +523,8 @@ Alliances have been completely rebuilt into a full community system with public 
     "./markdown/1.5.2 - 🛠️ Store Purchase Reliability.md": J,
     "./markdown/1.5.3 - 🛠️ Account and Payment Reliability.md": X,
     "./markdown/1.5.4 - 💳 Checkout Payment Options.md": Q,
-    "./markdown/1.5.5 - 🛠️ Map Loading Reliability.md": te
+    "./markdown/1.5.5 - 🛠️ Map Loading Reliability.md": te,
+    "./markdown/1.5.6 - 🛠️ Paint Charge Reliability.md": re
   })).map(([e, t]) => {
     var n, r;
     let i = (n = e.split(`/`).at(-1)) == null ? void 0 : n.replace(`.md`, ``),
@@ -530,5 +538,5 @@ Alliances have been completely rebuilt into a full community system with public 
     numeric: !0
   }));
 export {
-  re as t
+  ae as t
 };
