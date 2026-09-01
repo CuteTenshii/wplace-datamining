@@ -67,7 +67,7 @@ function z(e, t) {
   p(t, !0), v(t, L);
   let n = r(() => t.seed && t.seed.length > 0 ? t.seed : t.userId.toString());
   var i = R();
-  d(i, () => F(_(n), 95, 45), !0), y(i), x(() => s(i, 1, `bg-base-200 minidenticon ${t.class??``??``}`)), f(e, i), m()
+  d(i, () => F(_(n), 95, 45), !0), y(i), x(() => s(i, 1, `bg-base-200 minidenticon size-full ${t.class??``??``}`, `svelte-15zr69j`)), f(e, i), m()
 }
 var B = c(`<img class="pixelated bg-base-200 size-full" alt="User profile"/>`),
   V = c(`<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square w-full"/>`),

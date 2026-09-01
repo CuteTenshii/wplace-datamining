@@ -16,7 +16,7 @@ import {
 import "./B8UK1oE5.js";
 import {
   n as p
-} from "./AUmcXReo.js";
+} from "./XCG1t262.js";
 var m = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAAXNSR0IArs4c6QAAACpJREFUeNpj+AsEZ86ASIa/DAwMZ84ACRDzDBigMs/AARITq1oUwxBWAADaREUdDMswKwAAAABJRU5ErkJggg==`,
   h = o(`<img class="pixelated bg-base-200" alt="User profile"/>`),
   g = o(`<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square max-w-none"/>`),
