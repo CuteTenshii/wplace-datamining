@@ -1,79 +1,69 @@
-import "./CX37corp.js";
-var e = e => e;
+import {
+  D as e,
+  Dt as t,
+  Ft as n,
+  G as r,
+  J as i,
+  O as a,
+  Q as o,
+  Tt as s,
+  X as c,
+  lt as l,
+  rn as u,
+  x as d,
+  yt as f
+} from "./CX37corp.js";
+import "./B8UK1oE5.js";
+import {
+  n as p
+} from "./AUmcXReo.js";
+var m = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAAXNSR0IArs4c6QAAACpJREFUeNpj+AsEZ86ASIa/DAwMZ84ACRDzDBigMs/AARITq1oUwxBWAADaREUdDMswKwAAAABJRU5ErkJggg==`,
+  h = o(`<img class="pixelated bg-base-200" alt="User profile"/>`),
+  g = o(`<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square max-w-none"/>`),
+  _ = o(`<div class="relative isolate w-max"><div class="bg-base-content/20 size-12 rounded-full"></div> <div class="level-fill center-absolute absolute size-12 rotate-[215deg] rounded-full svelte-12f880g"></div> <div class="avatar center-absolute absolute"><div class="size-10 rounded-full"><!></div></div> <!> <div> </div></div>`);
 
-function t(e) {
-  let t = e - 1;
-  return t * t * t + 1
-}
-
-function n(e) {
-  let t = typeof e == `string` && e.match(/^\s*(-?[\d.]+)([^\s]*)\s*$/);
-  return t ? [parseFloat(t[1]), t[2] || `px`] : [e, `px`]
-}
-
-function r(t, {
-  delay: n = 0,
-  duration: r = 400,
-  easing: i = e
-} = {}) {
-  let a = +getComputedStyle(t).opacity;
-  return {
-    delay: n,
-    duration: r,
-    easing: i,
-    css: e => `opacity: ${e*a}`
-  }
-}
-
-function i(e, {
-  delay: r = 0,
-  duration: i = 400,
-  easing: a = t,
-  x: o = 0,
-  y: s = 0,
-  opacity: c = 0
-} = {}) {
-  let l = getComputedStyle(e),
-    u = +l.opacity,
-    d = l.transform === `none` ? `` : l.transform,
-    f = u * (1 - c),
-    [p, m] = n(o),
-    [h, g] = n(s);
-  return {
-    delay: r,
-    duration: i,
-    easing: a,
-    css: (e, t) => `
-			transform: ${d} translate(${(1-e)*p}${m}, ${(1-e)*h}${g});
-			opacity: ${u-f*t}`
-  }
-}
-
-function a(e, {
-  delay: n = 0,
-  duration: r = 400,
-  easing: i = t,
-  axis: a = `y`
-} = {}) {
-  let o = getComputedStyle(e),
-    s = +o.opacity,
-    c = a === `y` ? `height` : `width`,
-    l = parseFloat(o[c]),
-    u = a === `y` ? [`top`, `bottom`] : [`left`, `right`],
-    d = u.map(e => `${e[0].toUpperCase()}${e.slice(1)}`),
-    f = parseFloat(o[`padding${d[0]}`]),
-    p = parseFloat(o[`padding${d[1]}`]),
-    m = parseFloat(o[`margin${d[0]}`]),
-    h = parseFloat(o[`margin${d[1]}`]),
-    g = parseFloat(o[`border${d[0]}Width`]),
-    _ = parseFloat(o[`border${d[1]}Width`]);
-  return {
-    delay: n,
-    duration: r,
-    easing: i,
-    css: e => `overflow: hidden;opacity: ${Math.min(e*20,1)*s};${c}: ${e*l}px;padding-${u[0]}: ${e*f}px;padding-${u[1]}: ${e*p}px;margin-${u[0]}: ${e*m}px;margin-${u[1]}: ${e*h}px;border-${u[0]}-width: ${e*g}px;border-${u[1]}-width: ${e*_}px;min-${c}: 0`
-  }
+function v(o, m) {
+  let v = n(() => m.level % 1 * 360);
+  var y = _(),
+    b = t(s(y), 2),
+    x = t(b, 2),
+    S = s(x),
+    C = s(S),
+    w = e => {
+      p(e, {
+        get userId() {
+          return m.userId
+        },
+        get seed() {
+          return m.avatarSeed
+        }
+      })
+    },
+    T = e => {
+      var t = h();
+      f(() => d(t, `src`, m.pictureUrl)), c(e, t)
+    };
+  r(C, e => {
+    m.pictureUrl ? e(T, -1) : e(w)
+  }), u(S), u(x);
+  var E = t(x, 2),
+    D = t => {
+      var n = g();
+      e(n, `width: 67.87878787878788px;`), f(() => d(n, `src`, m.frameUrl)), c(t, n)
+    };
+  r(E, e => {
+    m.frameUrl && e(D)
+  });
+  var O = t(E, 2);
+  let k;
+  var A = s(O, !0);
+  u(O), u(y), f(t => {
+    e(b, `--angle: ${l(v)??``}deg; --color: var(--color-secondary)`), k = a(O, 1, `text-primary-content bg-secondary absolute bottom-0 z-20 flex items-center justify-center rounded-full px-[5px] py-0 text-xs font-bold`, null, k, {
+      "left-0": m.level > 99,
+      "-left-1": m.level > 99
+    }), i(A, t)
+  }, [() => Math.floor(m.level)]), c(o, y)
 }
 export {
-  i as n, a as r, r as t
+  m as n, v as t
 };

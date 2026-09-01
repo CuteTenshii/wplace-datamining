@@ -1,108 +1,184 @@
 import {
-  A as e,
-  n as t
-} from "./DCvMiq9p.js";
+  At as e,
+  It as t,
+  Mt as n,
+  Ot as r,
+  lt as i,
+  zt as a
+} from "./CX37corp.js";
 import {
-  c as n,
-  s as r
-} from "./Bv_t3lt-.js";
-var i = [`captcha`, `unknown`, `login-denied`, `login-expired`, `login-failed`, `login-suspended`, `login-email`, `login-email-domain`, `login-email-unverified`];
-
-function a(e) {
-  if (e === null) return !1;
-  let t = e.trim().toLowerCase();
-  return t !== `0` && t !== `false`
-}
-
-function o(e) {
-  if (e === null || e.trim() === ``) return;
-  let t = Number(e);
-  return Number.isFinite(t) ? t : void 0
-}
-
-function s(t) {
-  let s = {
-      opaque: !0
+  M as o,
+  S as s,
+  f as c
+} from "./CoXIjXxW.js";
+import {
+  t as l
+} from "./BCpUBzem.js";
+var u = {
+    colors: {
+      label: `Colors`,
+      barClass: `bg-gradient-to-r from-[#e74c3c] via-[#f1c40f] to-[#2ecc71]`,
+      cardClass: `bg-gradient-to-br from-[#e74c3c] via-[#f39c12] to-[#2ecc71]`,
+      ringClass: `ring-[#f39c12]`
     },
-    c = t.searchParams,
-    l = o(c.get(`lat`)),
-    u = o(c.get(`lng`));
-  l !== void 0 && u !== void 0 && r({
-    lat: l,
-    lng: u
-  }) && (s.pos = {
-    lat: l,
-    lng: u
-  });
-  let d = o(c.get(`zoom`));
-  d !== void 0 && n(d) && (s.zoom = d);
-  let f = o(c.get(`season`));
-  f !== void 0 && Number.isInteger(f) && f >= 0 && f < e.length && (s.season = f);
-  let p = c.get(`opaque`);
-  s.opaque = p === null || a(p), a(c.get(`select`)) && (s.select = !0);
-  let m = c.get(`area`);
-  if (m) {
-    let e = m.split(`,`);
-    if (e.length === 4) {
-      let [t, n, r, i] = e.map(e => o(e));
-      t !== void 0 && n !== void 0 && r !== void 0 && i !== void 0 && (s.area = {
-        south: t,
-        west: n,
-        north: r,
-        east: i
-      })
+    void: {
+      label: `Void`,
+      barClass: `bg-gradient-to-r from-[#5a1a9e] to-[#120321]`,
+      cardClass: `bg-gradient-to-br from-[#3d0d73] via-[#5a1a9e] to-[#120321]`,
+      ringClass: `ring-[#5a1a9e]`
     }
-  }
-  a(c.get(`twitch-migration`)) && (s.twitchMigration = !0);
-  let h = c.get(`error`);
-  i.includes(h ?? ``) && (s.error = h);
-  let g = c.get(`domain`);
-  return s.error === `login-email-domain` && g && (s.errorDomain = g), s.discordLinked = a(c.get(`discord-linked`)), s.alliance = a(c.get(`alliance`)), s.store = a(c.get(`store`)), s.fastspringComplete = c.get(`fscNext`) === `fsc:invoke:complete`, s
+  },
+  d = {
+    colors: `/img/events/void/colors.png`,
+    void: `/img/events/void/void.png`
+  },
+  f = o.voidEvent.year,
+  p = o.voidEvent.month,
+  m = o.voidEvent.tiles,
+  h = m.length,
+  g = o.voidEvent.conquestPointsFloor;
+
+function _(e) {
+  let t = Math.floor(e / s.day),
+    n = Math.floor(e % s.day / s.hour),
+    r = Math.floor(e % s.hour / s.minute),
+    i = Math.floor(e % s.minute / s.second);
+  return t > 0 ? `${t}d ${n}h` : n > 0 ? `${n}h ${r}m` : `${r}m ${i}s`
 }
 
-function c(e, t) {
-  return e = new URL(e), e.searchParams.delete(`twa`), t.pos !== void 0 && (e.searchParams.set(`lat`, t.pos.lat.toString()), e.searchParams.set(`lng`, t.pos.lng.toString())), t.zoom !== void 0 && e.searchParams.set(`zoom`, t.zoom.toString()), t.season !== void 0 && e.searchParams.set(`season`, t.season.toString()), t.opaque !== void 0 && e.searchParams.set(`opaque`, t.opaque ? `1` : `0`), t.alliance !== void 0 && e.searchParams.set(`alliance`, t.alliance ? `1` : `0`), t.select && e.searchParams.set(`select`, `1`), e
+function v(e) {
+  return new Date(Date.UTC(f, (e.month ?? p) - 1, e.day))
 }
-var l;
-(function(e) {
-  async function n() {
-    if (!(i() || history.length < 3)) {
-      for (let e = 0; e < 50; e++) history.pushState({}, ``);
-      navigator.userActivation.hasBeenActive || await u(document, [`pointerdown`, `keydown`, `touchstart`, `click`]), !i() && history.go(-(history.length - 1))
-    }
-  }
-  e.reset = n;
 
-  function r() {
-    if (!(`navigation` in window)) return;
-    let e = window.navigation;
-    if (typeof e != `object` || !e || !(`entries` in e) || typeof e.entries != `function`) return;
-    let t = e.entries();
-    return Array.isArray(t) ? t.length : void 0
-  }
-
-  function i() {
-    var e;
-    if (t != null && (e = t.data) != null && e.id) return !0;
-    try {
-      let e = r();
-      return e !== void 0 && e >= history.length
-    } catch {
-      return !1
-    }
-  }
-})(l || (l = {}));
-
-function u(e, t, n) {
-  return new Promise(r => {
-    var i;
-    let a = i => {
-      var o;
-      t.forEach(t => e.removeEventListener(t, a)), n == null || (o = n.signal) == null || o.removeEventListener(`abort`, a), r(i)
-    };
-    t.forEach(t => e.addEventListener(t, a)), n == null || (i = n.signal) == null || i.addEventListener(`abort`, a)
+function y(e) {
+  return v(e).toLocaleDateString(navigator.language, {
+    day: `numeric`,
+    month: `short`,
+    timeZone: `UTC`
   })
 }
+
+function b(e, t) {
+  let n = t.length;
+  if (n === 0 || e <= 0) return 0;
+  if (e >= t[n - 1]) return 100;
+  let r = e => (e + .5) / n * 100;
+  if (e < t[0]) return e / t[0] * r(0);
+  for (let i = 0; i < n - 1; i++) {
+    let [n, a] = [t[i], t[i + 1]];
+    if (e < a) return r(i) + (e - n) / (a - n) * (r(i + 1) - r(i))
+  }
+  return 100
+}
+
+function x(e, t) {
+  let n = v(e).getTime();
+  return t.getTime() < n ? `locked` : t.getTime() < n + s.day ? `live` : `settled`
+}
+
+function S(e) {
+  return !e || e.colorsPixels === e.voidPixels ? null : e.colorsPixels > e.voidPixels ? `colors` : `void`
+}
+
+function C(e) {
+  let t = new Map(e.map(e => [e.day, e]));
+  return m.map(e => t.get(e.day) ?? null)
+}
+var w = new WeakMap,
+  T = new WeakMap,
+  E = new WeakMap,
+  D = new WeakMap,
+  O = new WeakMap,
+  k = new WeakMap,
+  A = new WeakMap,
+  j = new WeakMap,
+  M = new class {
+    get team() {
+      return i(t(w, this))
+    }
+    set team(n) {
+      e(t(w, this), n, !0)
+    }
+    get tileScores() {
+      return i(t(T, this))
+    }
+    set tileScores(n) {
+      e(t(T, this), n, !0)
+    }
+    get eventTileScores() {
+      return i(t(E, this))
+    }
+    set eventTileScores(n) {
+      e(t(E, this), n, !0)
+    }
+    get myTiles() {
+      return i(t(D, this))
+    }
+    set myTiles(n) {
+      e(t(D, this), n, !0)
+    }
+    get conquerors() {
+      return i(t(O, this))
+    }
+    set conquerors(n) {
+      e(t(O, this), n, !0)
+    }
+    get rewards() {
+      return i(t(k, this))
+    }
+    set rewards(n) {
+      e(t(k, this), n, !0)
+    }
+    get dialogOpen() {
+      return i(t(A, this))
+    }
+    set dialogOpen(n) {
+      e(t(A, this), n, !0)
+    }
+    get focusedTile() {
+      return i(t(j, this))
+    }
+    set focusedTile(n) {
+      e(t(j, this), n, !0)
+    }
+    constructor() {
+      a(this, w, n(null)), a(this, T, n(r(m.map(() => null)))), a(this, E, n(r(m.map(() => null)))), a(this, D, n(r([]))), a(this, O, n(r(m.map(() => null)))), a(this, k, n(null)), a(this, A, n(!1)), a(this, j, n(null)), this.refresh(), l(() => this.refresh(), {
+        interval: 30 * s.second
+      })
+    }
+    reset() {
+      this.team = null, this.tileScores = m.map(() => null), this.eventTileScores = m.map(() => null), this.myTiles = [], this.conquerors = m.map(() => null), this.rewards = null, this.loadRewards()
+    }
+    async refresh() {
+      try {
+        let e = await c.getVoidEvent();
+        !e.myTeam && this.team && this.reset(), e.myTeam && (this.team = e.myTeam), e.tileScores && (this.tileScores = C(e.tileScores)), e.eventTileScores && (this.eventTileScores = C(e.eventTileScores)), e.myTiles && (this.myTiles = e.myTiles)
+      } catch {}
+      let e = new Date,
+        t = m.findIndex(t => x(t, e) === `live`);
+      t !== -1 && this.conquerors[t] && this.loadConquerors(t, {
+        force: !0
+      })
+    }
+    async loadRewards() {
+      try {
+        this.rewards = await c.getVoidEventRewards()
+      } catch {}
+    }
+    async loadConquerors(e, {
+      force: t = !1
+    } = {}) {
+      let n = m[e];
+      if (!(!n || !t && this.conquerors[e])) try {
+        let t = await c.getVoidEventTileConquerors(n.day);
+        this.conquerors[e] = t
+      } catch {}
+    }
+    async setTeam(e) {
+      let t = await c.postVoidEventPick(e);
+      this.team = t.team, this.refresh()
+    }
+  };
 export {
-  s as n, c as t
+  h as a, b as c, v as d, M as f, d as i, S as l, m as n, _ as o, u as r, y as s, g as t, x as u
 };

@@ -26,7 +26,7 @@ import {
 import "./B8UK1oE5.js";
 import {
   t as C
-} from "./CrLCY2lS.js";
+} from "./JVVuorj-.js";
 import {
   t as w
 } from "./DxdGK6Xj.js";
@@ -51,7 +51,7 @@ function N(s, N) {
     V = f(N, `closedBy`, 3, `any`),
     H = f(N, `contentEl`, 15),
     U = f(N, `disableCloseAnimation`, 3, !1),
-    W = r(() => N.mobileClasses ?? `max-sm:!w-full max-sm:!h-full max-sm:!max-w-none max-sm:!max-h-none max-sm:!rounded-none`),
+    W = r(() => N.mobileClasses ?? `max-sm:!w-full max-sm:!h-full max-sm:!max-w-none max-sm:!max-h-none max-sm:!rounded-none max-sm:pt-safe max-sm:pb-safe`),
     G = r(() => w(`modal-box p-0 flex flex-col w-11/12 max-h-11/12 rounded-xl`, !z() && `h-11/12`, v(W), N.modalBoxClass));
   var K = M(),
     q = c(K),

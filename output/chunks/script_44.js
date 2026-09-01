@@ -23,10 +23,10 @@ import {
 import "./B8UK1oE5.js";
 import {
   n as b
-} from "./DCvMiq9p.js";
+} from "./CoXIjXxW.js";
 import {
   t as x
-} from "./DtIAGAba.js";
+} from "./CnB7Obg4.js";
 
 function S(e) {
   return `/dashboard/users?id=${encodeURIComponent(String(e))}`

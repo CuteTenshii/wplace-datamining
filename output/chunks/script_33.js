@@ -1,143 +1,108 @@
 import {
-  an as e
-} from "./CX37corp.js";
+  A as e,
+  n as t
+} from "./CoXIjXxW.js";
 import {
-  M as t
-} from "./DCvMiq9p.js";
-var n = 2 * Math.PI * 6378137 / 2,
-  r = 85.0511287798066;
+  c as n,
+  s as r
+} from "./BbSN2Jb0.js";
+var i = [`captcha`, `unknown`, `login-denied`, `login-expired`, `login-failed`, `login-suspended`, `login-email`, `login-email-domain`, `login-email-unverified`];
 
-function i(e) {
-  return ((e + 180) % 360 + 360) % 360 - 180
+function a(e) {
+  if (e === null) return !1;
+  let t = e.trim().toLowerCase();
+  return t !== `0` && t !== `false`
 }
 
-function a(e, t) {
-  return [Math.max(-85.0511287798066, Math.min(r, e)), i(t)]
-}
-var o = class {
-  constructor(t = 256) {
-    e(this, `tileSize`, void 0), e(this, `initialResolution`, void 0), this.tileSize = t, this.initialResolution = 2 * n / this.tileSize
-  }
-  latLonToMeters(e, t) {
-    return [t / 180 * n, Math.log(Math.tan((90 + e) * Math.PI / 360)) / (Math.PI / 180) * n / 180]
-  }
-  metersToLatLon(e, t) {
-    let r = e / n * 180,
-      i = t / n * 180;
-    return i = 180 / Math.PI * (2 * Math.atan(Math.exp(i * Math.PI / 180)) - Math.PI / 2), [i, r]
-  }
-  pixelsToMeters(e, t, r) {
-    let i = this.resolution(r);
-    return [e * i - n, n - t * i]
-  }
-  pixelsToLatLon(e, t, n) {
-    let [r, i] = this.pixelsToMeters(e, t, n);
-    return this.metersToLatLon(r, i)
-  }
-  latLonToPixels(e, t, n) {
-    let [r, i] = this.latLonToMeters(e, t);
-    return this.metersToPixels(r, i, n)
-  }
-  latLonToPixelsFloor(e, t, n) {
-    let [r, i] = this.latLonToPixels(e, t, n);
-    return [Math.floor(r), Math.floor(i)]
-  }
-  metersToPixels(e, t, r) {
-    let i = this.resolution(r);
-    return [(e + n) / i, (n - t) / i]
-  }
-  latLonToTile(e, t, n) {
-    let [r, i] = this.latLonToMeters(e, t);
-    return this.metersToTile(r, i, n)
-  }
-  metersToTile(e, t, n) {
-    let [r, i] = this.metersToPixels(e, t, n);
-    return this.pixelsToTile(r, i)
-  }
-  pixelsToTile(e, t) {
-    return [Math.ceil(e / this.tileSize) - 1, Math.ceil(t / this.tileSize) - 1]
-  }
-  pixelsToTileLocal(e, t) {
-    return {
-      tile: this.pixelsToTile(e, t),
-      pixel: [Math.floor(e) % this.tileSize, Math.floor(t) % this.tileSize]
-    }
-  }
-  tileBounds(e, t, n) {
-    let [r, i] = this.pixelsToMeters(e * this.tileSize, t * this.tileSize, n), [a, o] = this.pixelsToMeters((e + 1) * this.tileSize, (t + 1) * this.tileSize, n);
-    return {
-      min: [r, i],
-      max: [a, o]
-    }
-  }
-  tileBoundsLatLon(e, t, n) {
-    let r = this.tileBounds(e, t, n);
-    return {
-      min: this.metersToLatLon(r.min[0], r.min[1]),
-      max: this.metersToLatLon(r.max[0], r.max[1])
-    }
-  }
-  resolution(e) {
-    return this.initialResolution / 2 ** e
-  }
-  latLonToTileAndPixel(e, t, n) {
-    let [r, i] = this.latLonToMeters(e, t), [a, o] = this.metersToTile(r, i, n), [s, c] = this.metersToPixels(r, i, n);
-    return {
-      tile: [a, o],
-      pixel: [Math.floor(s) % this.tileSize, Math.floor(c) % this.tileSize]
-    }
-  }
-  pixelBounds(e, t, n) {
-    return {
-      min: this.pixelsToMeters(e, t, n),
-      max: this.pixelsToMeters(e + 1, t + 1, n)
-    }
-  }
-  pixelToBoundsLatLon(e, t, n) {
-    let r = this.pixelBounds(e, t, n);
-    return {
-      min: this.metersToLatLon(r.min[0], r.min[1]),
-      max: this.metersToLatLon(r.max[0], r.max[1])
-    }
-  }
-  latLonToTileBoundsLatLon(e, t, n) {
-    let [r, i] = this.latLonToMeters(e, t), [a, o] = this.metersToTile(r, i, n);
-    return this.tileBoundsLatLon(a, o, n)
-  }
-  latLonToPixelBoundsLatLon(e, t, n) {
-    let [r, i] = this.latLonToMeters(e, t), [a, o] = this.metersToPixels(r, i, n);
-    return this.pixelToBoundsLatLon(Math.floor(a), Math.floor(o), n)
-  }
-  latLonToRegionAndPixel(e, n, r, i = t.regionSize) {
-    let [a, o] = this.latLonToPixelsFloor(e, n, r), s = this.tileSize * i;
-    return {
-      region: [Math.floor(a / s), Math.floor(o / s)],
-      pixel: [a % s, o % s]
-    }
-  }
-};
-
-function s(e, t = !0) {
-  let {
-    min: n,
-    max: r
-  } = e;
-  return t ? [
-    [n[1], r[0]],
-    [r[1], r[0]],
-    [r[1], n[0]],
-    [n[1], n[0]]
-  ] : [
-    [n[0], r[1]],
-    [r[0], r[1]],
-    [r[0], n[1]],
-    [n[0], n[1]]
-  ]
+function o(e) {
+  if (e === null || e.trim() === ``) return;
+  let t = Number(e);
+  return Number.isFinite(t) ? t : void 0
 }
 
-function c(e) {
-  return [(e.min[0] + e.max[0]) / 2, (e.min[1] + e.max[1]) / 2]
+function s(t) {
+  let s = {
+      opaque: !0
+    },
+    c = t.searchParams,
+    l = o(c.get(`lat`)),
+    u = o(c.get(`lng`));
+  l !== void 0 && u !== void 0 && r({
+    lat: l,
+    lng: u
+  }) && (s.pos = {
+    lat: l,
+    lng: u
+  });
+  let d = o(c.get(`zoom`));
+  d !== void 0 && n(d) && (s.zoom = d);
+  let f = o(c.get(`season`));
+  f !== void 0 && Number.isInteger(f) && f >= 0 && f < e.length && (s.season = f);
+  let p = c.get(`opaque`);
+  s.opaque = p === null || a(p), a(c.get(`select`)) && (s.select = !0);
+  let m = c.get(`area`);
+  if (m) {
+    let e = m.split(`,`);
+    if (e.length === 4) {
+      let [t, n, r, i] = e.map(e => o(e));
+      t !== void 0 && n !== void 0 && r !== void 0 && i !== void 0 && (s.area = {
+        south: t,
+        west: n,
+        north: r,
+        east: i
+      })
+    }
+  }
+  a(c.get(`twitch-migration`)) && (s.twitchMigration = !0);
+  let h = c.get(`error`);
+  i.includes(h ?? ``) && (s.error = h);
+  let g = c.get(`domain`);
+  return s.error === `login-email-domain` && g && (s.errorDomain = g), s.discordLinked = a(c.get(`discord-linked`)), s.alliance = a(c.get(`alliance`)), s.store = a(c.get(`store`)), s.fastspringComplete = c.get(`fscNext`) === `fsc:invoke:complete`, s
+}
+
+function c(e, t) {
+  return e = new URL(e), e.searchParams.delete(`twa`), t.pos !== void 0 && (e.searchParams.set(`lat`, t.pos.lat.toString()), e.searchParams.set(`lng`, t.pos.lng.toString())), t.zoom !== void 0 && e.searchParams.set(`zoom`, t.zoom.toString()), t.season !== void 0 && e.searchParams.set(`season`, t.season.toString()), t.opaque !== void 0 && e.searchParams.set(`opaque`, t.opaque ? `1` : `0`), t.alliance !== void 0 && e.searchParams.set(`alliance`, t.alliance ? `1` : `0`), t.select && e.searchParams.set(`select`, `1`), e
+}
+var l;
+(function(e) {
+  async function n() {
+    if (!(i() || history.length < 3)) {
+      for (let e = 0; e < 50; e++) history.pushState({}, ``);
+      navigator.userActivation.hasBeenActive || await u(document, [`pointerdown`, `keydown`, `touchstart`, `click`]), !i() && history.go(-(history.length - 1))
+    }
+  }
+  e.reset = n;
+
+  function r() {
+    if (!(`navigation` in window)) return;
+    let e = window.navigation;
+    if (typeof e != `object` || !e || !(`entries` in e) || typeof e.entries != `function`) return;
+    let t = e.entries();
+    return Array.isArray(t) ? t.length : void 0
+  }
+
+  function i() {
+    var e;
+    if (t != null && (e = t.data) != null && e.id) return !0;
+    try {
+      let e = r();
+      return e !== void 0 && e >= history.length
+    } catch {
+      return !1
+    }
+  }
+})(l || (l = {}));
+
+function u(e, t, n) {
+  return new Promise(r => {
+    var i;
+    let a = i => {
+      var o;
+      t.forEach(t => e.removeEventListener(t, a)), n == null || (o = n.signal) == null || o.removeEventListener(`abort`, a), r(i)
+    };
+    t.forEach(t => e.addEventListener(t, a)), n == null || (i = n.signal) == null || i.addEventListener(`abort`, a)
+  })
 }
 export {
-  i as a, a as i, s as n, c as r, o as t
+  s as n, c as t
 };

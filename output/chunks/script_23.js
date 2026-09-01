@@ -1,23 +1,79 @@
-import {
-  $ as e,
-  X as t,
-  o as n,
-  y as r
-} from "./CX37corp.js";
-import "./B8UK1oE5.js";
-var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  a = e(`<svg><path d="M790-56 414-434q-47 11-87.5 33T254-346l-84-86q32-32 69-56t79-42l-90-90q-41 21-76.5 46.5T84-516L0-602q32-32 66.5-57.5T140-708l-84-84 56-56 736 736-58 56Zm-310-64q-42 0-71-29.5T380-220q0-42 29-71t71-29q42 0 71 29t29 71q0 41-29 70.5T480-120Zm236-238-29-29-29-29-144-144q81 8 151.5 41T790-432l-74 74Zm160-158q-77-77-178.5-120.5T480-680q-21 0-40.5 1.5T400-674L298-776q44-12 89.5-18t92.5-6q142 0 265 53t215 145l-84 86Z"></path></svg>`);
+import "./CX37corp.js";
+var e = e => e;
 
-function o(e, o) {
-  let s = n(o, i);
-  var c = a();
-  r(c, () => ({
-    xmlns: `http://www.w3.org/2000/svg`,
-    viewBox: `0 -960 960 960`,
-    fill: `currentColor`,
-    ...s
-  })), t(e, c)
+function t(e) {
+  let t = e - 1;
+  return t * t * t + 1
+}
+
+function n(e) {
+  let t = typeof e == `string` && e.match(/^\s*(-?[\d.]+)([^\s]*)\s*$/);
+  return t ? [parseFloat(t[1]), t[2] || `px`] : [e, `px`]
+}
+
+function r(t, {
+  delay: n = 0,
+  duration: r = 400,
+  easing: i = e
+} = {}) {
+  let a = +getComputedStyle(t).opacity;
+  return {
+    delay: n,
+    duration: r,
+    easing: i,
+    css: e => `opacity: ${e*a}`
+  }
+}
+
+function i(e, {
+  delay: r = 0,
+  duration: i = 400,
+  easing: a = t,
+  x: o = 0,
+  y: s = 0,
+  opacity: c = 0
+} = {}) {
+  let l = getComputedStyle(e),
+    u = +l.opacity,
+    d = l.transform === `none` ? `` : l.transform,
+    f = u * (1 - c),
+    [p, m] = n(o),
+    [h, g] = n(s);
+  return {
+    delay: r,
+    duration: i,
+    easing: a,
+    css: (e, t) => `
+			transform: ${d} translate(${(1-e)*p}${m}, ${(1-e)*h}${g});
+			opacity: ${u-f*t}`
+  }
+}
+
+function a(e, {
+  delay: n = 0,
+  duration: r = 400,
+  easing: i = t,
+  axis: a = `y`
+} = {}) {
+  let o = getComputedStyle(e),
+    s = +o.opacity,
+    c = a === `y` ? `height` : `width`,
+    l = parseFloat(o[c]),
+    u = a === `y` ? [`top`, `bottom`] : [`left`, `right`],
+    d = u.map(e => `${e[0].toUpperCase()}${e.slice(1)}`),
+    f = parseFloat(o[`padding${d[0]}`]),
+    p = parseFloat(o[`padding${d[1]}`]),
+    m = parseFloat(o[`margin${d[0]}`]),
+    h = parseFloat(o[`margin${d[1]}`]),
+    g = parseFloat(o[`border${d[0]}Width`]),
+    _ = parseFloat(o[`border${d[1]}Width`]);
+  return {
+    delay: n,
+    duration: r,
+    easing: i,
+    css: e => `overflow: hidden;opacity: ${Math.min(e*20,1)*s};${c}: ${e*l}px;padding-${u[0]}: ${e*f}px;padding-${u[1]}: ${e*p}px;margin-${u[0]}: ${e*m}px;margin-${u[1]}: ${e*h}px;border-${u[0]}-width: ${e*g}px;border-${u[1]}-width: ${e*_}px;min-${c}: 0`
+  }
 }
 export {
-  o as t
+  i as n, a as r, r as t
 };

@@ -1,273 +1,143 @@
 import {
-  $ as e,
-  At as t,
-  Et as n,
-  G as r,
-  It as i,
-  Mt as a,
-  Ot as o,
-  X as s,
-  Z as c,
-  a as l,
-  an as u,
-  lt as d,
-  o as f,
-  y as p,
-  zt as m
+  an as e
 } from "./CX37corp.js";
-import "./B8UK1oE5.js";
 import {
-  M as h,
-  l as g,
-  u as _
-} from "./DCvMiq9p.js";
-var v = `template-overlays`;
+  M as t
+} from "./CoXIjXxW.js";
+var n = 2 * Math.PI * 6378137 / 2,
+  r = 85.0511287798066;
 
-function y(e) {
-  return typeof e == `object` && !!e
+function i(e) {
+  return ((e + 180) % 360 + 360) % 360 - 180
 }
 
-function b(e) {
-  return typeof e == `number` && Number.isFinite(e)
+function a(e, t) {
+  return [Math.max(-85.0511287798066, Math.min(r, e)), i(t)]
 }
-
-function x(e) {
-  return e === `compuphase` || e === `ciede2000` ? e : `lab`
-}
-
-function S(e) {
-  if (e === `all` || e === `free` || e === `template` || e === `unlocked`) return e
-}
-
-function C(e) {
-  if (!Array.isArray(e)) return;
-  let t = new Uint8Array(h.colors.length),
-    n = [];
-  for (let r = 0; r < e.length; r++) {
-    let i = e[r];
-    typeof i != `number` || !Number.isInteger(i) || i <= 0 || i >= h.colors.length || t[i] !== 0 || (t[i] = 1, n.push(i))
+var o = class {
+  constructor(t = 256) {
+    e(this, `tileSize`, void 0), e(this, `initialResolution`, void 0), this.tileSize = t, this.initialResolution = 2 * n / this.tileSize
   }
-  return n.length > 0 ? n : void 0
-}
-
-function w(e) {
-  if (!y(e)) return null;
-  let t = e.north,
-    n = e.south,
-    r = e.west,
-    i = e.east;
-  return !b(t) || !b(n) || !b(r) || !b(i) ? null : {
-    north: t,
-    south: n,
-    west: r,
-    east: i
+  latLonToMeters(e, t) {
+    return [t / 180 * n, Math.log(Math.tan((90 + e) * Math.PI / 360)) / (Math.PI / 180) * n / 180]
   }
-}
-
-function T(e) {
-  if (!y(e)) return null;
-  let t = e.id,
-    n = e.name,
-    r = w(e.bounds),
-    i = e.originalWidth,
-    a = e.originalHeight,
-    o = e.opacity,
-    s = e.visible,
-    c = e.order;
-  return typeof t != `string` || t.length === 0 || typeof n != `string` || !r || !b(i) || !b(a) || !b(o) || !b(c) || typeof s != `boolean` ? null : {
-    id: t,
-    name: n,
-    bounds: r,
-    originalWidth: i,
-    originalHeight: a,
-    opacity: o,
-    visible: s,
-    locked: typeof e.locked == `boolean` && e.locked,
-    colorMetric: x(e.colorMetric),
-    dithering: typeof e.dithering == `boolean` && e.dithering,
-    useLegacyColors: e.useLegacyColors === !0,
-    colorPaletteMode: S(e.colorPaletteMode),
-    templateColorIdxs: C(e.templateColorIdxs),
-    order: c,
-    hasPlaced: typeof e.hasPlaced != `boolean` || e.hasPlaced,
-    updatedAt: b(e.updatedAt) ? e.updatedAt : Date.now()
+  metersToLatLon(e, t) {
+    let r = e / n * 180,
+      i = t / n * 180;
+    return i = 180 / Math.PI * (2 * Math.atan(Math.exp(i * Math.PI / 180)) - Math.PI / 2), [i, r]
   }
-}
-
-function E(e) {
-  let t = JSON.parse(e);
-  if (!Array.isArray(t)) return null;
-  let n = [];
-  for (let e = 0; e < t.length; e++) {
-    let r = T(t[e]);
-    r && n.push(r)
+  pixelsToMeters(e, t, r) {
+    let i = this.resolution(r);
+    return [e * i - n, n - t * i]
   }
-  return n
-}
-var D = new WeakMap,
-  O = new WeakMap,
-  k = new WeakMap,
-  A = new class {
-    get templates() {
-      return d(i(D, this))
-    }
-    set templates(e) {
-      t(i(D, this), e, !0)
-    }
-    get activeTemplateId() {
-      return d(i(O, this))
-    }
-    set activeTemplateId(e) {
-      t(i(O, this), e, !0)
-    }
-    get placementSession() {
-      return d(i(k, this))
-    }
-    set placementSession(e) {
-      t(i(k, this), e, !0)
-    }
-    subscribeChange(e) {
-      return this.changeListeners.add(e), () => this.changeListeners.delete(e)
-    }
-    emitChange(e) {
-      for (let t of this.changeListeners) try {
-        t(e)
-      } catch (e) {
-        console.error(`Overlay change listener failed.`, e)
-      }
-    }
-    constructor() {
-      m(this, D, a(o([]))), m(this, O, a(null)), m(this, k, a(!1)), u(this, `suppressPersist`, !1), u(this, `persistTimeout`, null), u(this, `changeListeners`, new Set), u(this, `flushPersist`, () => {
-        this.suppressPersist || (this.persistTimeout !== null && (window.clearTimeout(this.persistTimeout), this.persistTimeout = null), localStorage.setItem(v, JSON.stringify(this.templates.filter(e => !e.serverManaged))))
-      });
-      {
-        let e = localStorage.getItem(v);
-        if (e) try {
-          let t = E(e);
-          if (!t) {
-            localStorage.removeItem(v);
-            return
-          }
-          this.templates = t
-        } catch {
-          localStorage.removeItem(v)
-        }
-        window.addEventListener(`pagehide`, this.flushPersist)
-      }
-    }
-    persist() {
-      this.suppressPersist || (this.persistTimeout !== null && window.clearTimeout(this.persistTimeout), this.persistTimeout = window.setTimeout(this.flushPersist, 120))
-    }
-    commitPendingChanges() {
-      this.suppressPersist = !1, this.persistTimeout !== null && (window.clearTimeout(this.persistTimeout), this.persistTimeout = null), localStorage.setItem(v, JSON.stringify(this.templates.filter(e => !e.serverManaged)))
-    }
-    replaceServerManaged(e) {
-      let t = this.templates.filter(e => e.serverManaged);
-      if (t.length === 0 && e.length === 0) return;
-      let n = new Set(e.map(e => e.id));
-      this.templates = [...this.templates.filter(e => !e.serverManaged), ...e], this.activeTemplateId && t.some(e => e.id === this.activeTemplateId) && !n.has(this.activeTemplateId) && (this.activeTemplateId = null)
-    }
-    add(e) {
-      for (let e of this.templates) e.order++;
-      e.order = 0, b(e.updatedAt) || (e.updatedAt = Date.now()), this.templates.push(e), this.persist(), this.emitChange({
-        kind: `add`,
-        id: e.id
-      })
-    }
-    remove(e) {
-      let t = this.templates.some(t => t.id === e);
-      this.templates = this.templates.filter(t => t.id !== e), this.activeTemplateId === e && (this.activeTemplateId = null), this.persist(), t && this.emitChange({
-        kind: `remove`,
-        id: e
-      })
-    }
-    update(e, t) {
-      let n = this.templates.findIndex(t => t.id === e);
-      if (n === -1) return;
-      let r = t.updatedAt === void 0 ? {
-        ...t,
-        updatedAt: Date.now()
-      } : t;
-      Object.assign(this.templates[n], r), !this.templates[n].serverManaged && (this.persist(), this.emitChange({
-        kind: `update`,
-        id: e
-      }))
-    }
-    reorder(e, t) {
-      if (e < 0 || e >= this.templates.length || t < 0 || t >= this.templates.length) return;
-      let n = this.sorted,
-        [r] = n.splice(e, 1);
-      n.splice(t, 0, r);
-      for (let e = 0; e < n.length; e++) {
-        let t = this.templates.findIndex(t => t.id === n[e].id);
-        t !== -1 && (this.templates[t].order = e)
-      }
-      this.persist()
-    }
-    getById(e) {
-      return this.templates.find(t => t.id === e)
-    }
-    get sorted() {
-      return Array.isArray(this.templates) ? [...this.templates].sort((e, t) => e.order - t.order) : []
-    }
-  },
-  j;
-(function(e) {
-  async function t(e) {
+  pixelsToLatLon(e, t, n) {
+    let [r, i] = this.pixelsToMeters(e, t, n);
+    return this.metersToLatLon(r, i)
+  }
+  latLonToPixels(e, t, n) {
+    let [r, i] = this.latLonToMeters(e, t);
+    return this.metersToPixels(r, i, n)
+  }
+  latLonToPixelsFloor(e, t, n) {
+    let [r, i] = this.latLonToPixels(e, t, n);
+    return [Math.floor(r), Math.floor(i)]
+  }
+  metersToPixels(e, t, r) {
+    let i = this.resolution(r);
+    return [(e + n) / i, (n - t) / i]
+  }
+  latLonToTile(e, t, n) {
+    let [r, i] = this.latLonToMeters(e, t);
+    return this.metersToTile(r, i, n)
+  }
+  metersToTile(e, t, n) {
+    let [r, i] = this.metersToPixels(e, t, n);
+    return this.pixelsToTile(r, i)
+  }
+  pixelsToTile(e, t) {
+    return [Math.ceil(e / this.tileSize) - 1, Math.ceil(t / this.tileSize) - 1]
+  }
+  pixelsToTileLocal(e, t) {
     return {
-      ...e,
-      image: {
-        dataUrl: await g(e.image.data),
-        width: e.image.width,
-        height: e.image.height
-      }
+      tile: this.pixelsToTile(e, t),
+      pixel: [Math.floor(e) % this.tileSize, Math.floor(t) % this.tileSize]
     }
   }
-  e.toJson = t;
-  async function n(e, t) {
+  tileBounds(e, t, n) {
+    let [r, i] = this.pixelsToMeters(e * this.tileSize, t * this.tileSize, n), [a, o] = this.pixelsToMeters((e + 1) * this.tileSize, (t + 1) * this.tileSize, n);
     return {
-      ...e,
-      image: {
-        data: _(e.image.dataUrl),
-        width: e.image.width,
-        height: e.image.height
-      },
-      order: t
+      min: [r, i],
+      max: [a, o]
     }
   }
-  e.fromJson = n
-})(j || (j = {}));
-var M = new Set([`$$slots`, `$$events`, `$$legacy`, `filled`]),
-  N = e(`<svg><path d="M480-118 120-398l66-50 294 228 294-228 66 50-360 280Zm0-202L120-600l360-280 360 280-360 280Z"></path></svg>`),
-  P = e(`<svg><path d="M480-118 120-398l66-50 294 228 294-228 66 50-360 280Zm0-202L120-600l360-280 360 280-360 280Zm0-280Zm0 178 230-178-230-178-230 178 230 178Z"></path></svg>`);
+  tileBoundsLatLon(e, t, n) {
+    let r = this.tileBounds(e, t, n);
+    return {
+      min: this.metersToLatLon(r.min[0], r.min[1]),
+      max: this.metersToLatLon(r.max[0], r.max[1])
+    }
+  }
+  resolution(e) {
+    return this.initialResolution / 2 ** e
+  }
+  latLonToTileAndPixel(e, t, n) {
+    let [r, i] = this.latLonToMeters(e, t), [a, o] = this.metersToTile(r, i, n), [s, c] = this.metersToPixels(r, i, n);
+    return {
+      tile: [a, o],
+      pixel: [Math.floor(s) % this.tileSize, Math.floor(c) % this.tileSize]
+    }
+  }
+  pixelBounds(e, t, n) {
+    return {
+      min: this.pixelsToMeters(e, t, n),
+      max: this.pixelsToMeters(e + 1, t + 1, n)
+    }
+  }
+  pixelToBoundsLatLon(e, t, n) {
+    let r = this.pixelBounds(e, t, n);
+    return {
+      min: this.metersToLatLon(r.min[0], r.min[1]),
+      max: this.metersToLatLon(r.max[0], r.max[1])
+    }
+  }
+  latLonToTileBoundsLatLon(e, t, n) {
+    let [r, i] = this.latLonToMeters(e, t), [a, o] = this.metersToTile(r, i, n);
+    return this.tileBoundsLatLon(a, o, n)
+  }
+  latLonToPixelBoundsLatLon(e, t, n) {
+    let [r, i] = this.latLonToMeters(e, t), [a, o] = this.metersToPixels(r, i, n);
+    return this.pixelToBoundsLatLon(Math.floor(a), Math.floor(o), n)
+  }
+  latLonToRegionAndPixel(e, n, r, i = t.regionSize) {
+    let [a, o] = this.latLonToPixelsFloor(e, n, r), s = this.tileSize * i;
+    return {
+      region: [Math.floor(a / s), Math.floor(o / s)],
+      pixel: [a % s, o % s]
+    }
+  }
+};
 
-function F(e, t) {
-  let i = l(t, `filled`, 3, !1),
-    a = f(t, M);
-  var o = c(),
-    u = n(o),
-    d = e => {
-      var t = N();
-      p(t, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 -960 960 960`,
-        fill: `currentColor`,
-        ...a
-      })), s(e, t)
-    },
-    m = e => {
-      var t = P();
-      p(t, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 -960 960 960`,
-        fill: `currentColor`,
-        ...a
-      })), s(e, t)
-    };
-  r(u, e => {
-    i() ? e(d) : e(m, -1)
-  }), s(e, o)
+function s(e, t = !0) {
+  let {
+    min: n,
+    max: r
+  } = e;
+  return t ? [
+    [n[1], r[0]],
+    [r[1], r[0]],
+    [r[1], n[0]],
+    [n[1], n[0]]
+  ] : [
+    [n[0], r[1]],
+    [r[0], r[1]],
+    [r[0], n[1]],
+    [n[0], n[1]]
+  ]
+}
+
+function c(e) {
+  return [(e.min[0] + e.max[0]) / 2, (e.min[1] + e.max[1]) / 2]
 }
 export {
-  j as n, A as r, F as t
+  i as a, a as i, s as n, c as r, o as t
 };

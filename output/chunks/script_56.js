@@ -451,7 +451,7 @@ Alliances have been completely rebuilt into a full community system with public 
   Z = `### Improvements
 
 - Android releases are now more consistent across different installation and update methods.
-- Android updates are now more reliable  and go through stronger release checks.
+- Android updates are now more reliable and go through stronger release checks.
 - Custom name fonts now load only when they are actually needed, reducing unnecessary connections and page loading work.
 - Captcha and payment systems now handle temporary failures more reliably instead of getting stuck.
 
