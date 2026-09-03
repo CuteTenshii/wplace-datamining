@@ -1,6 +1,6 @@
 import {
   n as e
-} from "./DlgPy_hI.js";
+} from "./fo1QPbot.js";
 
 function t() {
   return e()

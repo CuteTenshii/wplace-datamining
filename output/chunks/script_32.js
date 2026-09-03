@@ -3,7 +3,7 @@ import {
 } from "./CX37corp.js";
 import {
   M as t
-} from "./CoXIjXxW.js";
+} from "./Dx4EduFS.js";
 var n = 2 * Math.PI * 6378137 / 2,
   r = 85.0511287798066;
 

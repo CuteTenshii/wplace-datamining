@@ -10,7 +10,7 @@ import {
   M as o,
   S as s,
   f as c
-} from "./CoXIjXxW.js";
+} from "./Dx4EduFS.js";
 import {
   t as l
 } from "./BCpUBzem.js";
@@ -77,72 +77,83 @@ function x(e, t) {
 }
 
 function S(e) {
-  return !e || e.colorsPixels === e.voidPixels ? null : e.colorsPixels > e.voidPixels ? `colors` : `void`
+  return x(m[h - 1], e) === `settled`
 }
 
 function C(e) {
+  return !e || e.colorsPixels === e.voidPixels ? null : e.colorsPixels > e.voidPixels ? `colors` : `void`
+}
+
+function w(e) {
   let t = new Map(e.map(e => [e.day, e]));
   return m.map(e => t.get(e.day) ?? null)
 }
-var w = new WeakMap,
-  T = new WeakMap,
+var T = new WeakMap,
   E = new WeakMap,
   D = new WeakMap,
   O = new WeakMap,
   k = new WeakMap,
   A = new WeakMap,
   j = new WeakMap,
-  M = new class {
+  M = new WeakMap,
+  N = new WeakMap,
+  P = new class {
     get team() {
-      return i(t(w, this))
-    }
-    set team(n) {
-      e(t(w, this), n, !0)
-    }
-    get tileScores() {
       return i(t(T, this))
     }
-    set tileScores(n) {
+    set team(n) {
       e(t(T, this), n, !0)
     }
-    get eventTileScores() {
+    get tileScores() {
       return i(t(E, this))
     }
-    set eventTileScores(n) {
+    set tileScores(n) {
       e(t(E, this), n, !0)
     }
-    get myTiles() {
+    get eventTileScores() {
       return i(t(D, this))
     }
-    set myTiles(n) {
+    set eventTileScores(n) {
       e(t(D, this), n, !0)
     }
-    get conquerors() {
+    get myTiles() {
       return i(t(O, this))
     }
-    set conquerors(n) {
+    set myTiles(n) {
       e(t(O, this), n, !0)
     }
-    get rewards() {
+    get conquerors() {
       return i(t(k, this))
     }
-    set rewards(n) {
+    set conquerors(n) {
       e(t(k, this), n, !0)
     }
-    get dialogOpen() {
+    get rewards() {
       return i(t(A, this))
     }
-    set dialogOpen(n) {
+    set rewards(n) {
       e(t(A, this), n, !0)
     }
-    get focusedTile() {
+    get outcome() {
       return i(t(j, this))
     }
-    set focusedTile(n) {
+    set outcome(n) {
       e(t(j, this), n, !0)
     }
+    get dialogOpen() {
+      return i(t(M, this))
+    }
+    set dialogOpen(n) {
+      e(t(M, this), n, !0)
+    }
+    get focusedTile() {
+      return i(t(N, this))
+    }
+    set focusedTile(n) {
+      e(t(N, this), n, !0)
+    }
     constructor() {
-      a(this, w, n(null)), a(this, T, n(r(m.map(() => null)))), a(this, E, n(r(m.map(() => null)))), a(this, D, n(r([]))), a(this, O, n(r(m.map(() => null)))), a(this, k, n(null)), a(this, A, n(!1)), a(this, j, n(null)), this.refresh(), l(() => this.refresh(), {
+      a(this, T, n(null)), a(this, E, n(r(m.map(() => null)))), a(this, D, n(r(m.map(() => null)))), a(this, O, n(r([]))), a(this, k, n(r(m.map(() => null)))), a(this, A, n(null)), a(this, j, n(null)), a(this, M, n(!1)), a(this, N, n(null)), this.refresh(), l(() => this.refresh(), {
         interval: 30 * s.second
       })
     }
@@ -152,7 +163,7 @@ var w = new WeakMap,
     async refresh() {
       try {
         let e = await c.getVoidEvent();
-        !e.myTeam && this.team && this.reset(), e.myTeam && (this.team = e.myTeam), e.tileScores && (this.tileScores = C(e.tileScores)), e.eventTileScores && (this.eventTileScores = C(e.eventTileScores)), e.myTiles && (this.myTiles = e.myTiles)
+        !e.myTeam && this.team && this.reset(), e.myTeam && (this.team = e.myTeam), e.tileScores && (this.tileScores = w(e.tileScores)), e.eventTileScores && (this.eventTileScores = w(e.eventTileScores)), e.myTiles && (this.myTiles = e.myTiles), e.outcome && (this.outcome = e.outcome)
       } catch {}
       let e = new Date,
         t = m.findIndex(t => x(t, e) === `live`);
@@ -180,5 +191,5 @@ var w = new WeakMap,
     }
   };
 export {
-  h as a, b as c, v as d, M as f, d as i, S as l, m as n, _ as o, u as r, y as s, g as t, x as u
+  h as a, y as c, x as d, v as f, d as i, b as l, m as n, S as o, P as p, u as r, _ as s, g as t, C as u
 };

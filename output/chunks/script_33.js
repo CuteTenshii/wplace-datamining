@@ -1,11 +1,11 @@
 import {
   A as e,
   n as t
-} from "./CoXIjXxW.js";
+} from "./Dx4EduFS.js";
 import {
   c as n,
   s as r
-} from "./BW_a47bo.js";
+} from "./BhB7OCdw.js";
 var i = [`captcha`, `unknown`, `login-denied`, `login-expired`, `login-failed`, `login-suspended`, `login-email`, `login-email-domain`, `login-email-unverified`];
 
 function a(e) {
