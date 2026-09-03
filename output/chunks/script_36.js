@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./wT6GVfAU.js", "./Dx4EduFS.js", "./CX37corp.js", "./fo1QPbot.js", "./1BCbOYpc.js", "./-d8bC4tg.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./D_aI7c1x.js", "./KKBJjshp.js", "./CX37corp.js", "./CmSjPJUc.js", "./CYp_s-vu.js", "./-d8bC4tg.js"]))) => i.map(i => d[i]);
 import {
   At as e,
   D as t,
@@ -25,7 +25,7 @@ import {
 } from "./CX37corp.js";
 import {
   a as S
-} from "./fo1QPbot.js";
+} from "./CmSjPJUc.js";
 import "./B8UK1oE5.js";
 import {
   C,
@@ -35,10 +35,10 @@ import {
   n as E,
   q as D,
   tt as O
-} from "./Dx4EduFS.js";
+} from "./KKBJjshp.js";
 import {
   t as k
-} from "./1BCbOYpc.js";
+} from "./CYp_s-vu.js";
 import {
   n as A,
   t as j
@@ -53,7 +53,7 @@ import {
   r as N
 } from "./Dl3RR1lN.js";
 var P = D(`Haptics`, {
-    web: () => S(() => import(`./wT6GVfAU.js`).then(e => new e.HapticsWeb), __vite__mapDeps([0, 1, 2, 3, 4, 5]), import.meta.url)
+    web: () => S(() => import(`./D_aI7c1x.js`).then(e => new e.HapticsWeb), __vite__mapDeps([0, 1, 2, 3, 4, 5]), import.meta.url)
   }),
   F, I = {
     success: {
