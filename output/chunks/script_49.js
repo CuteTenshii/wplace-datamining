@@ -6,7 +6,7 @@ import {
 } from "./CX37corp.js";
 import "./B8UK1oE5.js";
 var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  a = e(`<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>`);
+  a = e(`<svg><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path></svg>`);
 
 function o(e, o) {
   let s = n(o, i);

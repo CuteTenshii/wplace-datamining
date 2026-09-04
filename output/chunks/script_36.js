@@ -1,23 +1,195 @@
 import {
-  $ as e,
-  X as t,
-  o as n,
-  y as r
+  At as e,
+  It as t,
+  Mt as n,
+  Ot as r,
+  lt as i,
+  zt as a
 } from "./CX37corp.js";
-import "./B8UK1oE5.js";
-var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  a = e(`<svg><path d="M40-160v-160q0-34 23.5-57t56.5-23h131q20 0 38 10t29 27q29 39 71.5 61t90.5 22q49 0 91.5-22t70.5-61q13-17 30.5-27t36.5-10h131q34 0 57 23t23 57v160H640v-91q-35 25-75.5 38T480-200q-43 0-84-13.5T320-252v92H40Zm440-160q-38 0-72-17.5T351-386q-17-25-42.5-39.5T253-440q22-37 93-58.5T480-520q63 0 134 21.5t93 58.5q-29 0-55 14.5T609-386q-22 32-56 49t-73 17ZM160-440q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T280-560q0 50-34.5 85T160-440Zm640 0q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T920-560q0 50-34.5 85T800-440ZM480-560q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-680q0 50-34.5 85T480-560Z"></path></svg>`);
+import {
+  M as o,
+  S as s,
+  f as c
+} from "./odeK0ELV.js";
+import {
+  t as l
+} from "./DyvqXTyd.js";
+var u = {
+    colors: {
+      label: `Colors`,
+      barClass: `bg-gradient-to-r from-[#e74c3c] via-[#f1c40f] to-[#2ecc71]`,
+      cardClass: `bg-gradient-to-br from-[#e74c3c] via-[#f39c12] to-[#2ecc71]`,
+      ringClass: `ring-[#f39c12]`
+    },
+    void: {
+      label: `Void`,
+      barClass: `bg-gradient-to-r from-[#5a1a9e] to-[#120321]`,
+      cardClass: `bg-gradient-to-br from-[#3d0d73] via-[#5a1a9e] to-[#120321]`,
+      ringClass: `ring-[#5a1a9e]`
+    }
+  },
+  d = {
+    colors: `/img/events/void/colors.png`,
+    void: `/img/events/void/void.png`
+  },
+  f = o.voidEvent.year,
+  p = o.voidEvent.month,
+  m = o.voidEvent.tiles,
+  h = m.length,
+  g = o.voidEvent.conquestPointsFloor;
 
-function o(e, o) {
-  let s = n(o, i);
-  var c = a();
-  r(c, () => ({
-    xmlns: `http://www.w3.org/2000/svg`,
-    viewBox: `0 -960 960 960`,
-    fill: `currentColor`,
-    ...s
-  })), t(e, c)
+function _(e) {
+  let t = Math.floor(e / s.day),
+    n = Math.floor(e % s.day / s.hour),
+    r = Math.floor(e % s.hour / s.minute),
+    i = Math.floor(e % s.minute / s.second);
+  return t > 0 ? `${t}d ${n}h` : n > 0 ? `${n}h ${r}m` : `${r}m ${i}s`
 }
+
+function v(e) {
+  return new Date(Date.UTC(f, (e.month ?? p) - 1, e.day))
+}
+
+function y(e) {
+  return v(e).toLocaleDateString(navigator.language, {
+    day: `numeric`,
+    month: `short`,
+    timeZone: `UTC`
+  })
+}
+
+function b(e, t) {
+  let n = t.length;
+  if (n === 0 || e <= 0) return 0;
+  if (e >= t[n - 1]) return 100;
+  let r = e => (e + .5) / n * 100;
+  if (e < t[0]) return e / t[0] * r(0);
+  for (let i = 0; i < n - 1; i++) {
+    let [n, a] = [t[i], t[i + 1]];
+    if (e < a) return r(i) + (e - n) / (a - n) * (r(i + 1) - r(i))
+  }
+  return 100
+}
+
+function x(e, t) {
+  let n = v(e).getTime();
+  return t.getTime() < n ? `locked` : t.getTime() < n + s.day ? `live` : `settled`
+}
+
+function S(e) {
+  return x(m[h - 1], e) === `settled`
+}
+
+function C(e) {
+  return !e || e.colorsPixels === e.voidPixels ? null : e.colorsPixels > e.voidPixels ? `colors` : `void`
+}
+
+function w(e) {
+  let t = new Map(e.map(e => [e.day, e]));
+  return m.map(e => t.get(e.day) ?? null)
+}
+var T = new WeakMap,
+  E = new WeakMap,
+  D = new WeakMap,
+  O = new WeakMap,
+  k = new WeakMap,
+  A = new WeakMap,
+  j = new WeakMap,
+  M = new WeakMap,
+  N = new WeakMap,
+  P = new class {
+    get team() {
+      return i(t(T, this))
+    }
+    set team(n) {
+      e(t(T, this), n, !0)
+    }
+    get tileScores() {
+      return i(t(E, this))
+    }
+    set tileScores(n) {
+      e(t(E, this), n, !0)
+    }
+    get eventTileScores() {
+      return i(t(D, this))
+    }
+    set eventTileScores(n) {
+      e(t(D, this), n, !0)
+    }
+    get myTiles() {
+      return i(t(O, this))
+    }
+    set myTiles(n) {
+      e(t(O, this), n, !0)
+    }
+    get conquerors() {
+      return i(t(k, this))
+    }
+    set conquerors(n) {
+      e(t(k, this), n, !0)
+    }
+    get rewards() {
+      return i(t(A, this))
+    }
+    set rewards(n) {
+      e(t(A, this), n, !0)
+    }
+    get outcome() {
+      return i(t(j, this))
+    }
+    set outcome(n) {
+      e(t(j, this), n, !0)
+    }
+    get dialogOpen() {
+      return i(t(M, this))
+    }
+    set dialogOpen(n) {
+      e(t(M, this), n, !0)
+    }
+    get focusedTile() {
+      return i(t(N, this))
+    }
+    set focusedTile(n) {
+      e(t(N, this), n, !0)
+    }
+    constructor() {
+      a(this, T, n(null)), a(this, E, n(r(m.map(() => null)))), a(this, D, n(r(m.map(() => null)))), a(this, O, n(r([]))), a(this, k, n(r(m.map(() => null)))), a(this, A, n(null)), a(this, j, n(null)), a(this, M, n(!1)), a(this, N, n(null)), this.refresh(), l(() => this.refresh(), {
+        interval: 30 * s.second
+      })
+    }
+    reset() {
+      this.team = null, this.tileScores = m.map(() => null), this.eventTileScores = m.map(() => null), this.myTiles = [], this.conquerors = m.map(() => null), this.rewards = null, this.loadRewards()
+    }
+    async refresh() {
+      try {
+        let e = await c.getVoidEvent();
+        !e.myTeam && this.team && this.reset(), e.myTeam && (this.team = e.myTeam), e.tileScores && (this.tileScores = w(e.tileScores)), e.eventTileScores && (this.eventTileScores = w(e.eventTileScores)), e.myTiles && (this.myTiles = e.myTiles), e.outcome && (this.outcome = e.outcome)
+      } catch {}
+      let e = new Date,
+        t = m.findIndex(t => x(t, e) === `live`);
+      t !== -1 && this.conquerors[t] && this.loadConquerors(t, {
+        force: !0
+      })
+    }
+    async loadRewards() {
+      try {
+        this.rewards = await c.getVoidEventRewards()
+      } catch {}
+    }
+    async loadConquerors(e, {
+      force: t = !1
+    } = {}) {
+      let n = m[e];
+      if (!(!n || !t && this.conquerors[e])) try {
+        let t = await c.getVoidEventTileConquerors(n.day);
+        this.conquerors[e] = t
+      } catch {}
+    }
+    async setTeam(e) {
+      let t = await c.postVoidEventPick(e);
+      this.team = t.team, this.refresh()
+    }
+  };
 export {
-  o as t
+  h as a, y as c, x as d, v as f, d as i, b as l, m as n, S as o, P as p, u as r, _ as s, g as t, C as u
 };

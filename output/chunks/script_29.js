@@ -1,8 +1,13 @@
-import "./CX37corp.js";
 import {
-  ct as e
-} from "./xDKnK04v.js";
-var t = t => new URL(t, e).toString();
+  Ot as e
+} from "./CX37corp.js";
+var t = e({
+  shouldReload: !0,
+  openHeadquarters: !1,
+  hq: void 0,
+  hasHeadquarters: !1,
+  emblem: void 0
+});
 export {
   t
 };

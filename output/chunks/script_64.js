@@ -10,8 +10,8 @@ import {
 } from "./CX37corp.js";
 import "./B8UK1oE5.js";
 var c = new Set([`$$slots`, `$$events`, `$$legacy`, `filled`]),
-  l = e(`<svg><path d="M80-120v-480h220v480H80Zm290 0v-720h220v720H370Zm290 0v-400h220v400H660Z"></path></svg>`),
-  u = e(`<svg><path d="M160-200h160v-320H160v320Zm240 0h160v-560H400v560Zm240 0h160v-240H640v240ZM80-120v-480h240v-240h320v320h240v400H80Z"></path></svg>`);
+  l = e(`<svg><path d="M480-118 120-398l66-50 294 228 294-228 66 50-360 280Zm0-202L120-600l360-280 360 280-360 280Z"></path></svg>`),
+  u = e(`<svg><path d="M480-118 120-398l66-50 294 228 294-228 66 50-360 280Zm0-202L120-600l360-280 360 280-360 280Zm0-280Zm0 178 230-178-230-178-230 178 230 178Z"></path></svg>`);
 
 function d(e, d) {
   let f = a(d, `filled`, 3, !1),

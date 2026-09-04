@@ -1,112 +1,69 @@
 import {
-  Bt as e,
-  D as t,
-  Dt as n,
-  Ft as r,
-  G as i,
-  It as a,
-  Lt as o,
-  O as s,
-  Q as c,
-  Rt as l,
-  Tt as u,
-  V as d,
-  X as f,
-  Xt as p,
-  Yt as m,
-  an as h,
-  k as g,
-  lt as _,
-  o as v,
-  rn as y,
-  x as b,
-  yt as x,
-  zt as S
+  D as e,
+  Dt as t,
+  Ft as n,
+  G as r,
+  J as i,
+  O as a,
+  Q as o,
+  Tt as s,
+  X as c,
+  lt as l,
+  rn as u,
+  x as d,
+  yt as f
 } from "./CX37corp.js";
 import "./B8UK1oE5.js";
 import {
-  t as C
-} from "./DxdGK6Xj.js";
-var w, T, E, D, O, k, A = 9,
-  j = 95,
-  M = 45,
-  N = 5;
+  n as p
+} from "./XCG1t262.js";
+var m = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAAXNSR0IArs4c6QAAACpJREFUeNpj+AsEZ86ASIa/DAwMZ84ACRDzDBigMs/AARITq1oUwxBWAADaREUdDMswKwAAAABJRU5ErkJggg==`,
+  h = o(`<img class="pixelated bg-base-200" alt="User profile"/>`),
+  g = o(`<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square max-w-none"/>`),
+  _ = o(`<div class="relative isolate w-max"><div class="bg-base-content/20 size-12 rounded-full"></div> <div class="level-fill center-absolute absolute size-12 rotate-[215deg] rounded-full svelte-12f880g"></div> <div class="avatar center-absolute absolute"><div class="size-10 rounded-full"><!></div></div> <!> <div> </div></div>`);
 
-function P(e) {
-  return e.split(``).reduce((e, t) => (e ^ t.charCodeAt(0)) * -5, N) >>> 2
-}
-
-function F(e = ``, t = j, n = M, r = P) {
-  let i = r(e),
-    a = i % A * (360 / A);
-  return [...Array(e ? 25 : 0)].reduce((e, t, n) => i & 1 << n % 15 ? e + `<rect x="${n>14?7-~~(n/5):~~(n/5)}" y="${n%5}" width="1" height="1"/>` : e, `<svg viewBox="-1.5 -1.5 8 8" xmlns="http://www.w3.org/2000/svg" fill="hsl(${a} ${t}% ${n}%)" shape-rendering="crispEdges">`) + `</svg>`
-}(w = globalThis.customElements) != null && w.get(`minidenticon-svg`) || (T = globalThis.customElements) == null || T.define(`minidenticon-svg`, (O = new WeakMap, k = new WeakSet, E = class extends HTMLElement {
-  constructor(...t) {
-    super(...t), e(this, k), S(this, O, !1)
-  }
-  connectedCallback() {
-    l(k, this, I).call(this), o(O, this, !0)
-  }
-  attributeChangedCallback() {
-    a(O, this) && l(k, this, I).call(this)
-  }
-}, h(E, `observedAttributes`, [`username`, `saturation`, `lightness`]), D = {
-  _: {}
-}, E));
-
-function I() {
-  var e;
-  let t = E.observedAttributes.map(e => this.getAttribute(e) || void 0),
-    n = t.join(`,`);
-  this.innerHTML = (e = l(E, E, D)._)[n] ?? (e[n] = F(...t))
-}
-var L = new Set([`$$slots`, `$$events`, `$$legacy`, `userId`, `seed`]),
-  R = c(`<div></div>`);
-
-function z(e, t) {
-  p(t, !0), v(t, L);
-  let n = r(() => t.seed && t.seed.length > 0 ? t.seed : t.userId.toString());
-  var i = R();
-  d(i, () => F(_(n), 95, 45), !0), y(i), x(() => s(i, 1, `bg-base-200 minidenticon size-full ${t.class??``??``}`, `svelte-15zr69j`)), f(e, i), m()
-}
-var B = c(`<img class="pixelated bg-base-200 size-full" alt="User profile"/>`),
-  V = c(`<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square w-full"/>`),
-  H = c(`<div><div><!></div> <!></div>`);
-
-function U(e, r) {
-  p(r, !0);
-  var a = H(),
-    o = u(a);
-  t(o, `width: 67.76785714285714%`);
-  var c = u(o),
-    l = e => {
-      z(e, {
+function v(o, m) {
+  let v = n(() => m.level % 1 * 360);
+  var y = _(),
+    b = t(s(y), 2),
+    x = t(b, 2),
+    S = s(x),
+    C = s(S),
+    w = e => {
+      p(e, {
         get userId() {
-          return r.userId
+          return m.userId
         },
         get seed() {
-          return r.avatarSeed
+          return m.avatarSeed
         }
       })
     },
-    d = e => {
-      var t = B();
-      x(() => b(t, `src`, r.pictureUrl)), f(e, t)
+    T = e => {
+      var t = h();
+      f(() => d(t, `src`, m.pictureUrl)), c(e, t)
     };
-  i(c, e => {
-    r.pictureUrl ? e(d, -1) : e(l)
-  }), y(o);
-  var h = n(o, 2),
-    _ = e => {
-      var n = V();
-      t(n, `scale: 114.99999999999999%;`), x(() => b(n, `src`, r.frameUrl)), f(e, n)
+  r(C, e => {
+    m.pictureUrl ? e(T, -1) : e(w)
+  }), u(S), u(x);
+  var E = t(x, 2),
+    D = t => {
+      var n = g();
+      e(n, `width: 67.87878787878788px;`), f(() => d(n, `src`, m.frameUrl)), c(t, n)
     };
-  i(h, e => {
-    r.frameUrl && e(_)
-  }), y(a), x((e, t) => {
-    s(a, 1, e), s(o, 1, t)
-  }, [() => g(C(`relative inline-grid size-10 place-items-center`, r.class)), () => g(C(`avatar border-base-300 aspect-square overflow-hidden rounded-full border`, r.avatarClass))]), f(e, a), m()
+  r(E, e => {
+    m.frameUrl && e(D)
+  });
+  var O = t(E, 2);
+  let k;
+  var A = s(O, !0);
+  u(O), u(y), f(t => {
+    e(b, `--angle: ${l(v)??``}deg; --color: var(--color-secondary)`), k = a(O, 1, `text-primary-content bg-secondary absolute bottom-0 z-20 flex items-center justify-center rounded-full px-[5px] py-0 text-xs font-bold`, null, k, {
+      "left-0": m.level > 99,
+      "-left-1": m.level > 99
+    }), i(A, t)
+  }, [() => Math.floor(m.level)]), c(o, y)
 }
 export {
-  z as n, F as r, U as t
+  m as n, v as t
 };

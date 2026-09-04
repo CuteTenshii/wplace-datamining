@@ -1,143 +1,406 @@
 import {
-  an as e
+  At as e,
+  It as t,
+  Mt as n,
+  Ot as r,
+  an as i,
+  lt as a,
+  zt as o
 } from "./CX37corp.js";
 import {
-  M as t
-} from "./xDKnK04v.js";
-var n = 2 * Math.PI * 6378137 / 2,
-  r = 85.0511287798066;
+  M as s,
+  l as c,
+  u as l
+} from "./odeK0ELV.js";
+var u = [7, 8, 9, 12, 15, 18, 19, 21, 23, 24, 26, 27, 30, 31, 34, 39, 42, 43, 45, 48, 50, 52, 54, 55, 57, 59, 62],
+  d = `template-overlays`,
+  f = `overlay-tag-catalog`;
 
-function i(e) {
-  return ((e + 180) % 360 + 360) % 360 - 180
+function p(e) {
+  return typeof e == `object` && !!e
 }
 
-function a(e, t) {
-  return [Math.max(-85.0511287798066, Math.min(r, e)), i(t)]
-}
-var o = class {
-  constructor(t = 256) {
-    e(this, `tileSize`, void 0), e(this, `initialResolution`, void 0), this.tileSize = t, this.initialResolution = 2 * n / this.tileSize
-  }
-  latLonToMeters(e, t) {
-    return [t / 180 * n, Math.log(Math.tan((90 + e) * Math.PI / 360)) / (Math.PI / 180) * n / 180]
-  }
-  metersToLatLon(e, t) {
-    let r = e / n * 180,
-      i = t / n * 180;
-    return i = 180 / Math.PI * (2 * Math.atan(Math.exp(i * Math.PI / 180)) - Math.PI / 2), [i, r]
-  }
-  pixelsToMeters(e, t, r) {
-    let i = this.resolution(r);
-    return [e * i - n, n - t * i]
-  }
-  pixelsToLatLon(e, t, n) {
-    let [r, i] = this.pixelsToMeters(e, t, n);
-    return this.metersToLatLon(r, i)
-  }
-  latLonToPixels(e, t, n) {
-    let [r, i] = this.latLonToMeters(e, t);
-    return this.metersToPixels(r, i, n)
-  }
-  latLonToPixelsFloor(e, t, n) {
-    let [r, i] = this.latLonToPixels(e, t, n);
-    return [Math.floor(r), Math.floor(i)]
-  }
-  metersToPixels(e, t, r) {
-    let i = this.resolution(r);
-    return [(e + n) / i, (n - t) / i]
-  }
-  latLonToTile(e, t, n) {
-    let [r, i] = this.latLonToMeters(e, t);
-    return this.metersToTile(r, i, n)
-  }
-  metersToTile(e, t, n) {
-    let [r, i] = this.metersToPixels(e, t, n);
-    return this.pixelsToTile(r, i)
-  }
-  pixelsToTile(e, t) {
-    return [Math.ceil(e / this.tileSize) - 1, Math.ceil(t / this.tileSize) - 1]
-  }
-  pixelsToTileLocal(e, t) {
-    return {
-      tile: this.pixelsToTile(e, t),
-      pixel: [Math.floor(e) % this.tileSize, Math.floor(t) % this.tileSize]
-    }
-  }
-  tileBounds(e, t, n) {
-    let [r, i] = this.pixelsToMeters(e * this.tileSize, t * this.tileSize, n), [a, o] = this.pixelsToMeters((e + 1) * this.tileSize, (t + 1) * this.tileSize, n);
-    return {
-      min: [r, i],
-      max: [a, o]
-    }
-  }
-  tileBoundsLatLon(e, t, n) {
-    let r = this.tileBounds(e, t, n);
-    return {
-      min: this.metersToLatLon(r.min[0], r.min[1]),
-      max: this.metersToLatLon(r.max[0], r.max[1])
-    }
-  }
-  resolution(e) {
-    return this.initialResolution / 2 ** e
-  }
-  latLonToTileAndPixel(e, t, n) {
-    let [r, i] = this.latLonToMeters(e, t), [a, o] = this.metersToTile(r, i, n), [s, c] = this.metersToPixels(r, i, n);
-    return {
-      tile: [a, o],
-      pixel: [Math.floor(s) % this.tileSize, Math.floor(c) % this.tileSize]
-    }
-  }
-  pixelBounds(e, t, n) {
-    return {
-      min: this.pixelsToMeters(e, t, n),
-      max: this.pixelsToMeters(e + 1, t + 1, n)
-    }
-  }
-  pixelToBoundsLatLon(e, t, n) {
-    let r = this.pixelBounds(e, t, n);
-    return {
-      min: this.metersToLatLon(r.min[0], r.min[1]),
-      max: this.metersToLatLon(r.max[0], r.max[1])
-    }
-  }
-  latLonToTileBoundsLatLon(e, t, n) {
-    let [r, i] = this.latLonToMeters(e, t), [a, o] = this.metersToTile(r, i, n);
-    return this.tileBoundsLatLon(a, o, n)
-  }
-  latLonToPixelBoundsLatLon(e, t, n) {
-    let [r, i] = this.latLonToMeters(e, t), [a, o] = this.metersToPixels(r, i, n);
-    return this.pixelToBoundsLatLon(Math.floor(a), Math.floor(o), n)
-  }
-  latLonToRegionAndPixel(e, n, r, i = t.regionSize) {
-    let [a, o] = this.latLonToPixelsFloor(e, n, r), s = this.tileSize * i;
-    return {
-      region: [Math.floor(a / s), Math.floor(o / s)],
-      pixel: [a % s, o % s]
-    }
-  }
-};
-
-function s(e, t = !0) {
-  let {
-    min: n,
-    max: r
-  } = e;
-  return t ? [
-    [n[1], r[0]],
-    [r[1], r[0]],
-    [r[1], n[0]],
-    [n[1], n[0]]
-  ] : [
-    [n[0], r[1]],
-    [r[0], r[1]],
-    [r[0], n[1]],
-    [n[0], n[1]]
-  ]
+function m(e) {
+  return typeof e == `number` && Number.isFinite(e)
 }
 
-function c(e) {
-  return [(e.min[0] + e.max[0]) / 2, (e.min[1] + e.max[1]) / 2]
+function h(e) {
+  return e === `compuphase` || e === `ciede2000` ? e : `lab`
 }
+
+function g(e) {
+  if (e === `all` || e === `free` || e === `template` || e === `unlocked`) return e
+}
+
+function _(e) {
+  if (!Array.isArray(e)) return;
+  let t = new Uint8Array(s.colors.length),
+    n = [];
+  for (let r = 0; r < e.length; r++) {
+    let i = e[r];
+    typeof i != `number` || !Number.isInteger(i) || i <= 0 || i >= s.colors.length || t[i] !== 0 || (t[i] = 1, n.push(i))
+  }
+  return n.length > 0 ? n : void 0
+}
+
+function v(e) {
+  return e.normalize(`NFC`).toLowerCase()
+}
+
+function y(e) {
+  let t = 2166136261;
+  for (let n of v(e)) t ^= n.codePointAt(0) ?? 0, t = Math.imul(t, 16777619);
+  return u[(t >>> 0) % u.length]
+}
+
+function b(e, t) {
+  return typeof e == `number` && Number.isInteger(e) && e > 0 && e < s.colors.length ? e : y(t)
+}
+
+function x(e, t = []) {
+  let n = [],
+    r = (e, t) => {
+      if (typeof e != `string` || n.length >= 64) return;
+      let r = S(e);
+      !r || n.some(e => v(e.name) === v(r)) || n.push({
+        name: r,
+        colorIdx: b(t, r)
+      })
+    };
+  if (Array.isArray(e))
+    for (let t of e) p(t) && r(t.name, t.colorIdx);
+  for (let e of t) {
+    let t = e.tags ?? [];
+    for (let n = 0; n < t.length; n += 1) {
+      var i;
+      r(t[n], (i = e.tagColorIdxs) == null ? void 0 : i[n])
+    }
+  }
+  return n
+}
+
+function S(e) {
+  let t = e.normalize(`NFC`).trim().replace(/^(?:#\s*)+/, ``).replace(/\s+/g, `-`).slice(0, 24);
+  return /[\uD800-\uDBFF]$/.test(t) ? t.slice(0, -1) : t
+}
+
+function C(e, t) {
+  if (!Array.isArray(e)) return {
+    tags: [],
+    tagColorIdxs: []
+  };
+  let n = Array.isArray(t) ? t : [],
+    r = [],
+    i = [];
+  for (let t = 0; t < e.length; t += 1) {
+    let a = e[t];
+    if (typeof a != `string`) continue;
+    let o = S(a);
+    if (!(!o || r.some(e => v(e) === v(o))) && (r.push(o), i.push(b(n[t], o)), r.length === 8)) break
+  }
+  return {
+    tags: r,
+    tagColorIdxs: i
+  }
+}
+
+function w(e) {
+  if (!p(e)) return null;
+  let t = e.north,
+    n = e.south,
+    r = e.west,
+    i = e.east;
+  return !m(t) || !m(n) || !m(r) || !m(i) ? null : {
+    north: t,
+    south: n,
+    west: r,
+    east: i
+  }
+}
+
+function T(e, t) {
+  if (!p(e)) return null;
+  let n = e.id,
+    r = e.name,
+    i = w(e.bounds),
+    a = e.originalWidth,
+    o = e.originalHeight,
+    s = e.opacity,
+    c = e.visible,
+    l = e.order;
+  if (typeof n != `string` || n.length === 0 || typeof r != `string` || !i || !m(a) || !m(o) || !m(s) || !m(l) || typeof c != `boolean`) return null;
+  let u = typeof e.locked == `boolean` && e.locked,
+    d = h(e.colorMetric),
+    f = typeof e.dithering == `boolean` && e.dithering,
+    v = e.useLegacyColors === !0,
+    y = g(e.colorPaletteMode),
+    b = _(e.templateColorIdxs),
+    {
+      tags: x,
+      tagColorIdxs: S
+    } = C(e.tags, e.tagColorIdxs),
+    T = typeof e.hasPlaced != `boolean` || e.hasPlaced,
+    E = m(e.updatedAt) ? e.updatedAt : t;
+  return {
+    id: n,
+    name: r,
+    bounds: i,
+    originalWidth: a,
+    originalHeight: o,
+    opacity: s,
+    visible: c,
+    locked: u,
+    colorMetric: d,
+    dithering: f,
+    useLegacyColors: v,
+    colorPaletteMode: y,
+    templateColorIdxs: b,
+    tags: x.length > 0 ? x : void 0,
+    tagColorIdxs: S.length > 0 ? S : void 0,
+    order: l,
+    hasPlaced: T,
+    updatedAt: E
+  }
+}
+
+function E(e, t = Date.now()) {
+  let n = JSON.parse(e);
+  if (!Array.isArray(n)) return null;
+  let r = [];
+  for (let e = 0; e < n.length; e++) {
+    let i = T(n[e], t);
+    i && r.push(i)
+  }
+  let i = JSON.stringify(r);
+  return {
+    templates: r,
+    serialized: i,
+    migrated: i !== e
+  }
+}
+var D = new WeakMap,
+  O = new WeakMap,
+  k = new WeakMap,
+  A = new WeakMap,
+  j = new class {
+    get templates() {
+      return a(t(D, this))
+    }
+    set templates(n) {
+      e(t(D, this), n, !0)
+    }
+    get tagCatalog() {
+      return a(t(O, this))
+    }
+    set tagCatalog(n) {
+      e(t(O, this), n, !0)
+    }
+    get activeTemplateId() {
+      return a(t(k, this))
+    }
+    set activeTemplateId(n) {
+      e(t(k, this), n, !0)
+    }
+    get placementSession() {
+      return a(t(A, this))
+    }
+    set placementSession(n) {
+      e(t(A, this), n, !0)
+    }
+    subscribeChange(e) {
+      return this.changeListeners.add(e), () => this.changeListeners.delete(e)
+    }
+    emitChange(e) {
+      for (let t of this.changeListeners) try {
+        t(e)
+      } catch (e) {
+        console.error(`Overlay change listener failed.`, e)
+      }
+    }
+    constructor() {
+      o(this, D, n(r([]))), o(this, O, n(r([]))), o(this, k, n(null)), o(this, A, n(!1)), i(this, `suppressPersist`, !1), i(this, `persistTimeout`, null), i(this, `changeListeners`, new Set), i(this, `flushPersist`, () => {
+        this.suppressPersist || (this.persistTimeout !== null && (window.clearTimeout(this.persistTimeout), this.persistTimeout = null), localStorage.setItem(d, JSON.stringify(this.templates.filter(e => !e.serverManaged))), localStorage.setItem(f, JSON.stringify(this.tagCatalog)))
+      });
+      {
+        let e = localStorage.getItem(d);
+        if (e) try {
+          let t = E(e);
+          if (!t) {
+            localStorage.removeItem(d);
+            return
+          }
+          if (this.templates = t.templates, t.migrated) try {
+            localStorage.setItem(d, t.serialized)
+          } catch (e) {
+            console.error(`Failed to persist migrated overlay metadata.`, e)
+          }
+        } catch {
+          localStorage.removeItem(d)
+        }
+        let t = localStorage.getItem(f),
+          n = [];
+        if (t) try {
+          n = JSON.parse(t)
+        } catch {
+          localStorage.removeItem(f)
+        }
+        this.tagCatalog = x(n, this.templates), this.alignTemplateTagColors();
+        try {
+          localStorage.setItem(f, JSON.stringify(this.tagCatalog))
+        } catch (e) {
+          console.error(`Failed to persist the overlay tag catalog.`, e)
+        }
+        window.addEventListener(`pagehide`, this.flushPersist)
+      }
+    }
+    alignTemplateTagColors(e) {
+      let t = e ? [e] : this.templates;
+      for (let e of t) {
+        var n;
+        (n = e.tags) != null && n.length && (e.tagColorIdxs = e.tags.map(e => {
+          var t;
+          return ((t = this.tagCatalog.find(t => v(t.name) === v(e))) == null ? void 0 : t.colorIdx) ?? y(e)
+        }))
+      }
+    }
+    ensureTemplateTags(e) {
+      let t = x(this.tagCatalog, [e]);
+      t.length !== this.tagCatalog.length && (this.tagCatalog = t), this.alignTemplateTagColors(e)
+    }
+    persist() {
+      this.suppressPersist || (this.persistTimeout !== null && window.clearTimeout(this.persistTimeout), this.persistTimeout = window.setTimeout(this.flushPersist, 120))
+    }
+    commitPendingChanges() {
+      this.suppressPersist = !1, this.persistTimeout !== null && (window.clearTimeout(this.persistTimeout), this.persistTimeout = null), localStorage.setItem(d, JSON.stringify(this.templates.filter(e => !e.serverManaged))), localStorage.setItem(f, JSON.stringify(this.tagCatalog))
+    }
+    replaceServerManaged(e) {
+      let t = this.templates.filter(e => e.serverManaged);
+      if (t.length === 0 && e.length === 0) return;
+      let n = new Set(e.map(e => e.id));
+      this.templates = [...this.templates.filter(e => !e.serverManaged), ...e], this.activeTemplateId && t.some(e => e.id === this.activeTemplateId) && !n.has(this.activeTemplateId) && (this.activeTemplateId = null)
+    }
+    add(e) {
+      this.ensureTemplateTags(e);
+      for (let e of this.templates) e.order++;
+      e.order = 0, m(e.updatedAt) || (e.updatedAt = Date.now()), this.templates.push(e), this.persist(), this.emitChange({
+        kind: `add`,
+        id: e.id
+      })
+    }
+    remove(e) {
+      let t = this.templates.some(t => t.id === e);
+      this.templates = this.templates.filter(t => t.id !== e), this.activeTemplateId === e && (this.activeTemplateId = null), this.persist(), t && this.emitChange({
+        kind: `remove`,
+        id: e
+      })
+    }
+    update(e, t) {
+      let n = this.templates.findIndex(t => t.id === e);
+      if (n === -1) return;
+      let r = t.updatedAt === void 0 ? {
+        ...t,
+        updatedAt: Date.now()
+      } : t;
+      Object.assign(this.templates[n], r), (t.tags !== void 0 || t.tagColorIdxs !== void 0) && this.ensureTemplateTags(this.templates[n]), !this.templates[n].serverManaged && (this.persist(), this.emitChange({
+        kind: `update`,
+        id: e
+      }))
+    }
+    createTag(e, t) {
+      let n = S(e);
+      return !n || this.tagCatalog.length >= 64 || this.tagCatalog.some(e => v(e.name) === v(n)) ? !1 : (this.tagCatalog = [...this.tagCatalog, {
+        name: n,
+        colorIdx: b(t, n)
+      }], this.persist(), !0)
+    }
+    updateTag(e, t, n) {
+      let r = v(e),
+        i = this.tagCatalog.findIndex(e => v(e.name) === r),
+        a = S(t);
+      if (i === -1 || !a || this.tagCatalog.some((e, t) => t !== i && v(e.name) === v(a))) return !1;
+      let o = b(n, a),
+        s = Date.now();
+      for (let e of this.templates) {
+        var c;
+        e.serverManaged || !((c = e.tags) != null && c.some(e => v(e) === r)) || (e.tags = e.tags.map(e => v(e) === r ? a : e), e.tagColorIdxs = e.tags.map((t, n) => {
+          var r;
+          return v(t) === v(a) ? o : ((r = e.tagColorIdxs) == null ? void 0 : r[n]) ?? y(t)
+        }), e.updatedAt = s, this.emitChange({
+          kind: `update`,
+          id: e.id
+        }))
+      }
+      return this.tagCatalog[i] = {
+        name: a,
+        colorIdx: o
+      }, this.tagCatalog = [...this.tagCatalog], this.persist(), !0
+    }
+    deleteTag(e) {
+      let t = v(e);
+      if (!this.tagCatalog.some(e => v(e.name) === t)) return !1;
+      this.tagCatalog = this.tagCatalog.filter(e => v(e.name) !== t);
+      let n = Date.now();
+      for (let e of this.templates) {
+        var r;
+        if (e.serverManaged || !((r = e.tags) != null && r.some(e => v(e) === t))) continue;
+        let i = e.tags.map((t, n) => {
+          var r;
+          return {
+            tag: t,
+            colorIdx: (r = e.tagColorIdxs) == null ? void 0 : r[n]
+          }
+        }).filter(e => v(e.tag) !== t);
+        e.tags = i.length > 0 ? i.map(e => e.tag) : void 0, e.tagColorIdxs = i.length > 0 ? i.map(e => e.colorIdx ?? y(e.tag)) : void 0, e.updatedAt = n, this.emitChange({
+          kind: `update`,
+          id: e.id
+        })
+      }
+      return this.persist(), !0
+    }
+    reorder(e, t) {
+      let n = this.sorted.filter(e => !e.serverManaged);
+      if (e < 0 || e >= n.length || t < 0 || t >= n.length) return;
+      let [r] = n.splice(e, 1);
+      n.splice(t, 0, r);
+      for (let e = 0; e < n.length; e++) {
+        let t = this.templates.findIndex(t => t.id === n[e].id);
+        t !== -1 && (this.templates[t].order = e)
+      }
+      this.persist()
+    }
+    getById(e) {
+      return this.templates.find(t => t.id === e)
+    }
+    get sorted() {
+      return Array.isArray(this.templates) ? [...this.templates].sort((e, t) => e.order - t.order) : []
+    }
+  },
+  M;
+(function(e) {
+  async function t(e) {
+    return {
+      ...e,
+      image: {
+        dataUrl: await c(e.image.data),
+        width: e.image.width,
+        height: e.image.height
+      }
+    }
+  }
+  e.toJson = t;
+  async function n(e, t) {
+    return {
+      ...e,
+      image: {
+        data: l(e.image.dataUrl),
+        width: e.image.width,
+        height: e.image.height
+      },
+      order: t
+    }
+  }
+  e.fromJson = n
+})(M || (M = {}));
 export {
-  i as a, a as i, s as n, c as r, o as t
+  j as a, C as i, y as n, v as o, S as r, M as t
 };

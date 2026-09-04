@@ -1,69 +1,50 @@
-import {
-  D as e,
-  Dt as t,
-  Ft as n,
-  G as r,
-  J as i,
-  O as a,
-  Q as o,
-  Tt as s,
-  X as c,
-  lt as l,
-  rn as u,
-  x as d,
-  yt as f
-} from "./CX37corp.js";
-import "./B8UK1oE5.js";
-import {
-  n as p
-} from "./XCG1t262.js";
-var m = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAAXNSR0IArs4c6QAAACpJREFUeNpj+AsEZ86ASIa/DAwMZ84ACRDzDBigMs/AARITq1oUwxBWAADaREUdDMswKwAAAABJRU5ErkJggg==`,
-  h = o(`<img class="pixelated bg-base-200" alt="User profile"/>`),
-  g = o(`<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square max-w-none"/>`),
-  _ = o(`<div class="relative isolate w-max"><div class="bg-base-content/20 size-12 rounded-full"></div> <div class="level-fill center-absolute absolute size-12 rotate-[215deg] rounded-full svelte-12f880g"></div> <div class="avatar center-absolute absolute"><div class="size-10 rounded-full"><!></div></div> <!> <div> </div></div>`);
+function e(e) {
+  let t;
 
-function v(o, m) {
-  let v = n(() => m.level % 1 * 360);
-  var y = _(),
-    b = t(s(y), 2),
-    x = t(b, 2),
-    S = s(x),
-    C = s(S),
-    w = e => {
-      p(e, {
-        get userId() {
-          return m.userId
-        },
-        get seed() {
-          return m.avatarSeed
-        }
-      })
-    },
-    T = e => {
-      var t = h();
-      f(() => d(t, `src`, m.pictureUrl)), c(e, t)
-    };
-  r(C, e => {
-    m.pictureUrl ? e(T, -1) : e(w)
-  }), u(S), u(x);
-  var E = t(x, 2),
-    D = t => {
-      var n = g();
-      e(n, `width: 67.87878787878788px;`), f(() => d(n, `src`, m.frameUrl)), c(t, n)
-    };
-  r(E, e => {
-    m.frameUrl && e(D)
-  });
-  var O = t(E, 2);
-  let k;
-  var A = s(O, !0);
-  u(O), u(y), f(t => {
-    e(b, `--angle: ${l(v)??``}deg; --color: var(--color-secondary)`), k = a(O, 1, `text-primary-content bg-secondary absolute bottom-0 z-20 flex items-center justify-center rounded-full px-[5px] py-0 text-xs font-bold`, null, k, {
-      "left-0": m.level > 99,
-      "-left-1": m.level > 99
-    }), i(A, t)
-  }, [() => Math.floor(m.level)]), c(o, y)
+  function n(n) {
+    if (e.disabled || t || n.changedTouches.length !== 1) {
+      t = void 0;
+      return
+    }
+    let r = n.changedTouches[0];
+    t = {
+      id: r.identifier,
+      x: r.clientX,
+      y: r.clientY
+    }
+  }
+
+  function r(e) {
+    if (!t) return;
+    let n = Array.from(e.changedTouches).find(e => e.identifier === (t == null ? void 0 : t.id));
+    n && Math.hypot(n.clientX - t.x, n.clientY - t.y) > 10 && (t = void 0)
+  }
+
+  function i(n) {
+    if (!t) return;
+    let r = Array.from(n.changedTouches).find(e => e.identifier === (t == null ? void 0 : t.id));
+    if (!r) return;
+    let i = t;
+    t = void 0;
+    let a = e.getBoundingClientRect();
+    e.disabled || !n.cancelable || Math.hypot(r.clientX - i.x, r.clientY - i.y) > 10 || r.clientX < a.left || r.clientX > a.right || r.clientY < a.top || r.clientY > a.bottom || (n.preventDefault(), e.click())
+  }
+
+  function a() {
+    t = void 0
+  }
+  return e.addEventListener(`touchstart`, n, {
+    passive: !0
+  }), e.addEventListener(`touchmove`, r, {
+    passive: !0
+  }), e.addEventListener(`touchend`, i, {
+    passive: !1
+  }), e.addEventListener(`touchcancel`, a), {
+    destroy() {
+      e.removeEventListener(`touchstart`, n), e.removeEventListener(`touchmove`, r), e.removeEventListener(`touchend`, i), e.removeEventListener(`touchcancel`, a)
+    }
+  }
 }
 export {
-  m as n, v as t
+  e as t
 };
