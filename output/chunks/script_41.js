@@ -1,46 +1,141 @@
 import {
-  $ as e,
-  Tt as t,
-  X as n,
-  a as r,
-  o as i,
-  rn as a,
-  x as o,
-  y as s,
-  yt as c
+  B as e,
+  Dt as t,
+  Et as n,
+  Ft as r,
+  G as i,
+  J as a,
+  O as o,
+  Q as s,
+  Tt as c,
+  X as l,
+  Xt as u,
+  Yt as d,
+  a as f,
+  bt as p,
+  f as m,
+  it as h,
+  j as g,
+  k as _,
+  lt as v,
+  rn as y,
+  sn as b,
+  x,
+  yt as S
 } from "./CX37corp.js";
 import "./B8UK1oE5.js";
-var l = new Set([`$$slots`, `$$events`, `$$legacy`, `fill`]),
-  u = e(`<svg><path d="M216.856 16.597A208.502 208.502 0 0 0 164.042 0c-2.275 4.113-4.933 9.645-6.766 14.046-19.692-2.961-39.203-2.961-58.533 0-1.832-4.4-4.55-9.933-6.846-14.046a207.809 207.809 0 0 0-52.855 16.638C5.618 67.147-3.443 116.4 1.087 164.956c22.169 16.555 43.653 26.612 64.775 33.193A161.094 161.094 0 0 0 79.735 175.3a136.413 136.413 0 0 1-21.846-10.632 108.636 108.636 0 0 0 5.356-4.237c42.122 19.702 87.89 19.702 129.51 0a131.66 131.66 0 0 0 5.355 4.237 136.07 136.07 0 0 1-21.886 10.653c4.006 8.02 8.638 15.67 13.873 22.848 21.142-6.58 42.646-16.637 64.815-33.213 5.316-56.288-9.08-105.09-38.056-148.36ZM85.474 135.095c-12.645 0-23.015-11.805-23.015-26.18s10.149-26.2 23.015-26.2c12.867 0 23.236 11.804 23.015 26.2.02 14.375-10.148 26.18-23.015 26.18Zm85.051 0c-12.645 0-23.014-11.805-23.014-26.18s10.148-26.2 23.014-26.2c12.867 0 23.236 11.804 23.015 26.2 0 14.375-10.148 26.18-23.015 26.18Z"></path></svg>`);
+import {
+  t as C
+} from "./DADAsx92.js";
+import {
+  t as w
+} from "./DxdGK6Xj.js";
+var T = s(`<form method="dialog"><button class="btn btn-sm btn-circle">✕</button></form>`),
+  E = s(`<div class="flex items-center"></div> <div class="flex items-center justify-center overflow-hidden text-center"><!></div> <div class="flex items-start justify-end pt-1"><!></div>`, 1),
+  D = s(`<div class="ml-2 flex flex-col items-end gap-2 self-start pt-1 sm:translate-x-2"><!> <!></div>`),
+  O = s(`<div class="flex flex-1 items-center gap-3 overflow-hidden"><!></div> <!>`, 1),
+  k = s(`<header><!></header>`),
+  A = s(`<footer class="shrink-0 px-4 py-4 sm:px-6"><!></footer>`),
+  j = s(`<form method="dialog" class="modal-backdrop"><button> </button></form>`),
+  M = s(`<dialog><div><!> <div><!></div> <!></div> <!></dialog>`);
 
-function d(e, d) {
-  let f = r(d, `fill`, 3, `#5865F2`),
-    p = i(d, l);
-  var m = u();
-  s(m, () => ({
-    viewBox: `0 0 256 199`,
-    width: `256`,
-    height: `199`,
-    xmlns: `http://www.w3.org/2000/svg`,
-    preserveAspectRatio: `xMidYMid`,
-    ...p
-  }));
-  var h = t(m);
-  a(m), c(() => o(h, `fill`, f())), n(e, m)
-}
-var f = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  p = e(`<svg><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"></path></svg>`);
-
-function m(e, t) {
-  let r = i(t, f);
-  var a = p();
-  s(a, () => ({
-    xmlns: `http://www.w3.org/2000/svg`,
-    viewBox: `0 -960 960 960`,
-    fill: `currentColor`,
-    ...r
-  })), n(e, a)
+function N(s, N) {
+  u(N, !0);
+  let P = f(N, `open`, 15),
+    F = f(N, `hasBackdrop`, 3, !0),
+    I = f(N, `hasCloseButton`, 3, !0),
+    L = f(N, `hasHeaderBorder`, 3, !0),
+    R = f(N, `centerHeader`, 3, !1),
+    z = f(N, `isDynamicHeight`, 3, !1),
+    B = f(N, `useModalLayer`, 3, !0),
+    V = f(N, `closedBy`, 3, `any`),
+    H = f(N, `contentEl`, 15),
+    U = f(N, `disableCloseAnimation`, 3, !1),
+    W = r(() => N.mobileClasses ?? `max-sm:!w-full max-sm:!h-full max-sm:!max-w-none max-sm:!max-h-none max-sm:!rounded-none max-sm:pt-safe max-sm:pb-safe`),
+    G = r(() => w(`modal-box p-0 flex flex-col w-11/12 max-h-11/12 rounded-xl`, !z() && `h-11/12`, v(W), N.modalBoxClass));
+  var K = M(),
+    q = c(K),
+    J = c(q),
+    Y = r => {
+      var a = k(),
+        s = c(a),
+        u = r => {
+          var a = E(),
+            o = t(n(a), 2),
+            s = c(o);
+          e(s, () => N.header ?? b), y(o);
+          var u = t(o, 2),
+            d = c(u),
+            f = e => {
+              var t = T();
+              l(e, t)
+            };
+          i(d, e => {
+            I() && e(f)
+          }), y(u), l(r, a)
+        },
+        d = r => {
+          var a = O(),
+            o = n(a),
+            s = c(o);
+          e(s, () => N.header ?? b), y(o);
+          var u = t(o, 2),
+            d = n => {
+              var r = D(),
+                a = c(r),
+                o = e => {
+                  var t = T();
+                  l(e, t)
+                };
+              i(a, e => {
+                I() && e(o)
+              });
+              var s = t(a, 2);
+              e(s, () => N.headerAction ?? b), y(r), l(n, r)
+            };
+          i(u, e => {
+            (I() || N.headerAction) && e(d)
+          }), l(r, a)
+        };
+      i(s, e => {
+        R() ? e(u) : e(d, -1)
+      }), y(a), S(() => o(a, 1, `bg-base-100/70 sticky top-0 z-40 flex shrink-0 items-center justify-between px-4 py-4 backdrop-blur sm:px-6 ${L()?`border-base-content/10 border-b`:``} ${R()?`grid grid-cols-[2.5rem_1fr_2.5rem] px-4`:``} ${(N.headerClassName||``)??``}`)), l(r, a)
+    };
+  i(J, e => {
+    (N.header || I()) && e(Y)
+  });
+  var X = t(J, 2),
+    Z = c(X);
+  e(Z, () => N.children ?? b), y(X), m(X, e => H(e), () => H());
+  var Q = t(X, 2),
+    $ = t => {
+      var n = A(),
+        r = c(n);
+      e(r, () => N.footer), y(n), l(t, n)
+    };
+  i(Q, e => {
+    N.footer && e($)
+  }), y(q);
+  var ee = t(q, 2),
+    te = e => {
+      var t = j(),
+        n = c(t),
+        r = c(n, !0);
+      y(n), y(t), S(e => a(r, e), [() => C.close()]), l(e, t)
+    };
+  i(ee, e => {
+    F() && e(te)
+  }), y(K), g(K, () => e => {
+    p(() => {
+      P() && !e.open ? B() ? e.showModal() : e.show() : e.open && e.close()
+    })
+  }), S(e => {
+    o(K, 1, `modal ${U()?`no-close-animation`:``} ${N.dialogClass??``}`, `svelte-r6rf84`), x(K, `closedby`, V()), o(q, 1, _(v(G))), o(X, 1, e)
+  }, [() => _(w(`flex flex-1 flex-col overflow-x-hidden overflow-y-auto px-4 py-4 sm:px-6`, N.contentAreaClass))]), h(`close`, K, () => {
+    var e;
+    P(!1), (e = N.onclose) == null || e.call(N)
+  }), l(s, K), d()
 }
 export {
-  d as n, m as t
+  N as t
 };

@@ -10,8 +10,8 @@ import {
 } from "./CX37corp.js";
 import "./B8UK1oE5.js";
 var c = new Set([`$$slots`, `$$events`, `$$legacy`, `filled`]),
-  l = e(`<svg><path d="M223.5-103.5Q200-127 200-160t23.5-56.5Q247-240 280-240t56.5 23.5Q360-193 360-160t-23.5 56.5Q313-80 280-80t-56.5-23.5Zm400 0Q600-127 600-160t23.5-56.5Q647-240 680-240t56.5 23.5Q760-193 760-160t-23.5 56.5Q713-80 680-80t-56.5-23.5ZM208-800h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Z"></path></svg>`),
-  u = e(`<svg><path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"></path></svg>`);
+  l = e(`<svg><path d="M480-118 120-398l66-50 294 228 294-228 66 50-360 280Zm0-202L120-600l360-280 360 280-360 280Z"></path></svg>`),
+  u = e(`<svg><path d="M480-118 120-398l66-50 294 228 294-228 66 50-360 280Zm0-202L120-600l360-280 360 280-360 280Zm0-280Zm0 178 230-178-230-178-230 178 230 178Z"></path></svg>`);
 
 function d(e, d) {
   let f = a(d, `filled`, 3, !1),
@@ -40,6 +40,64 @@ function d(e, d) {
     f() ? e(g) : e(_, -1)
   }), r(e, m)
 }
+var f = 1048576,
+  p = {
+    profile: `constrained`,
+    cpuResourceCacheBytes: 192 * f,
+    workerSourceCacheBytes: 64 * f,
+    colorLookupCacheBytes: 8 * f,
+    colorLookupCacheEntries: 131072,
+    gpuTextureCacheBytes: 16 * f,
+    processingTimeSliceMs: 3
+  },
+  m = {
+    profile: `mobile`,
+    cpuResourceCacheBytes: 256 * f,
+    workerSourceCacheBytes: 96 * f,
+    colorLookupCacheBytes: 12 * f,
+    colorLookupCacheEntries: 196608,
+    gpuTextureCacheBytes: 32 * f,
+    processingTimeSliceMs: 5
+  },
+  h = {
+    profile: `desktop`,
+    cpuResourceCacheBytes: 320 * f,
+    workerSourceCacheBytes: 192 * f,
+    colorLookupCacheBytes: 24 * f,
+    colorLookupCacheEntries: 393216,
+    gpuTextureCacheBytes: 64 * f,
+    processingTimeSliceMs: 8
+  };
+
+function g(e) {
+  return typeof e == `number` && Number.isFinite(e) && e > 0 ? e : void 0
+}
+
+function _({
+  deviceMemoryGiB: e,
+  hardwareConcurrency: t,
+  mobile: n = !1
+} = {}) {
+  let r = g(e),
+    i = g(t);
+  return r !== void 0 && r <= 2 || i !== void 0 && i <= 2 ? p : n || r !== void 0 && r <= 4 || i !== void 0 && i <= 4 ? m : h
+}
+
+function v(e) {
+  var t;
+  return e ? {
+    deviceMemoryGiB: e.deviceMemory,
+    hardwareConcurrency: e.hardwareConcurrency,
+    mobile: ((t = e.userAgentData) == null ? void 0 : t.mobile) === !0 || /Android|iPhone|iPad|iPod|IEMobile|Mobile|Opera Mini/i.test(e.userAgent ?? ``)
+  } : {}
+}
+var y = _(v(typeof navigator > `u` ? void 0 : navigator)),
+  b = y.cpuResourceCacheBytes,
+  x = y.workerSourceCacheBytes,
+  S = y.colorLookupCacheBytes,
+  C = y.colorLookupCacheEntries,
+  w = y.gpuTextureCacheBytes,
+  T = y.processingTimeSliceMs;
 export {
-  d as t
+  y as a, d as c, w as i, C as n, T as o, b as r, x as s, S as t
 };

@@ -1,40 +1,49 @@
-var e = void 0;
+var e = void 0,
+  t = new Set;
 
-function t(t) {
-  return e = t, c({
+function n(e) {
+  return t.add(e), () => t.delete(e)
+}
+
+function r(t) {
+  return e = t, u({
     type: `previewPixels`,
     data: t
   })
 }
 
-function n() {
-  return e = void 0, c({
+function i() {
+  return e = void 0, u({
     type: `clearPixelPreview`
   })
 }
-
-function r(e) {
-  return c({
+async function a(e) {
+  await u({
     type: `paintPixels`,
     data: e
-  })
+  });
+  for (let n of t) try {
+    n(e)
+  } catch (e) {
+    console.error(`Canvas paint listener failed.`, e)
+  }
 }
 
-function i() {
-  return c({
+function o() {
+  return u({
     type: `refreshPixelArt`
   })
 }
-async function a() {
-  e || await c({
+async function s() {
+  e || await u({
     type: `clearPixelPreview`
   })
 }
-var o = 1e4,
-  s = 0;
+var c = 1e4,
+  l = 0;
 
-function c(e) {
-  let t = s++,
+function u(e) {
+  let t = l++,
     n = {
       ...e,
       id: t
@@ -46,21 +55,21 @@ function c(e) {
       return
     }
     let a = !1,
-      s = e => {
+      o = e => {
         var n;
         ((n = e.data) == null ? void 0 : n.id) === t && l()
       },
-      c = () => {
-        clearTimeout(d), i.removeEventListener(`message`, s)
+      s = () => {
+        clearTimeout(d), i.removeEventListener(`message`, o)
       },
       l = () => {
-        a || (a = !0, c(), e())
+        a || (a = !0, s(), e())
       },
       u = e => {
-        a || (a = !0, c(), r(e))
+        a || (a = !0, s(), r(e))
       },
-      d = setTimeout(() => u(Error(`Timed out waiting for service worker response`)), o);
-    i.addEventListener(`message`, s);
+      d = setTimeout(() => u(Error(`Timed out waiting for service worker response`)), c);
+    i.addEventListener(`message`, o);
     let f = e => {
         try {
           e.postMessage(n)
@@ -77,7 +86,7 @@ function c(e) {
   })
 }
 
-function l({
+function d({
   pixel: e,
   season: t,
   tile: n
@@ -85,7 +94,7 @@ function l({
   return `t=(${n[0]},${n[1]});p=(${e[0]},${e[1]});s=${t}`
 }
 
-function u(e, {
+function f(e, {
   interval: t,
   immediate: n = !1
 }) {
@@ -124,5 +133,5 @@ function u(e, {
   }
 }
 export {
-  t as a, r as i, n, i as o, l as r, a as s, u as t
+  r as a, s as c, a as i, i as n, o, d as r, n as s, f as t
 };

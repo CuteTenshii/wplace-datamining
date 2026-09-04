@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./P1cRt-8D.js", "./CX37corp.js", "./CmSjPJUc.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./XRhSvQIs.js", "./CX37corp.js", "./CvsmMnAH.js"]))) => i.map(i => d[i]);
 import {
   At as e,
   Ft as t,
@@ -14,10 +14,10 @@ import {
 } from "./CX37corp.js";
 import {
   a as d
-} from "./CmSjPJUc.js";
+} from "./CvsmMnAH.js";
 import {
   t as f
-} from "./CYp_s-vu.js";
+} from "./DADAsx92.js";
 var p = `https://maps.wplace.live`,
   m = `8d582454-e5ec-4314-b1c2-89e460ac1d28`,
   h = `false`,
@@ -4162,7 +4162,7 @@ var Ws = 6e3,
             headers: n
           }
         }, a = await this.guardedFetch(e, await i());
-      if (a.headers.get(`x-device-reattest`) && d(() => import(`./P1cRt-8D.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2]), import.meta.url), a.status === I.FORBIDDEN && a.headers.get(`x-block-reason`) === `tor`) throw Error(f.tor_blocked());
+      if (a.headers.get(`x-device-reattest`) && d(() => import(`./XRhSvQIs.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2]), import.meta.url), a.status === I.FORBIDDEN && a.headers.get(`x-block-reason`) === `tor`) throw Error(f.tor_blocked());
       if (a.status === I.FORBIDDEN && a.headers.get(`x-block-reason`) === `integrity`) throw Error(f.request_integrity_blocked());
       let o = ((n = a.headers.get(`cf-mitigated`)) == null ? void 0 : n.toLowerCase()) === `challenge`;
       if (a.status === 403 && o) {
