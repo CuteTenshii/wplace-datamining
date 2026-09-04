@@ -9,13 +9,13 @@ import {
   t as r
 } from "./B7ahujnx.js";
 import {
-  i
-} from "./BK0AlgUt.js";
-import {
-  n as a,
-  o,
-  r as s
+  n as i,
+  o as a,
+  r as o
 } from "./DoTvbvHP.js";
+import {
+  i as s
+} from "./D70MKFm6.js";
 var c = 4,
   l = 2,
   u = 65535;
@@ -357,7 +357,7 @@ ${j}
   float pixel_mode_resolution = u_pixel_mode_resolution;
   bool pixel_mode_detail_supported = u_pixel_mode_detail_supported;
   vec2 source_coordinate = v_source_coordinate;
-${s}
+${o}
 
   color.a *= u_opacity;
   color.rgb *= color.a;
@@ -427,7 +427,7 @@ ${M}
   float pixel_mode_resolution = u_pixel_mode_resolution;
   bool pixel_mode_detail_supported = u_pixel_mode_detail_supported;
   vec2 source_coordinate = v_source_coordinate;
-${s}
+${o}
 
   color.a *= u_opacity;
   color.rgb *= color.a;
@@ -435,14 +435,14 @@ ${s}
 }
 `,
   L = class {
-    constructor(t, n, r, a, o = i, s) {
+    constructor(t, n, r, i, a = s, o) {
       e(this, `id`, void 0), e(this, `map`, void 0), e(this, `logicalTileZoom`, void 0), e(this, `beforeLayerId`, void 0), e(this, `textureBudgetBytes`, void 0), e(this, `onRepeatedRenderFailure`, void 0), e(this, `type`, `custom`), e(this, `renderingMode`, `2d`), e(this, `gl`, void 0), e(this, `program`, void 0), e(this, `quadBuffer`, void 0), e(this, `vertexArrayApi`, void 0), e(this, `vertexArray`, void 0), e(this, `unitPositionLocation`, -1), e(this, `uniforms`, void 0), e(this, `data`, void 0), e(this, `sourceTiles`, []), e(this, `textureCache`, void 0), e(this, `webgl2`, !1), e(this, `pixelModeDetailSupported`, !1), e(this, `origin`, [0, 0]), e(this, `translatedMatrix`, new Float32Array(16)), e(this, `uploadBuffer`, new Uint8Array(C * C * 4)), e(this, `destroyed`, !1), e(this, `contextLost`, !1), e(this, `consecutiveRenderFailures`, 0), e(this, `renderDisabled`, !1), e(this, `handleStyleLoad`, () => {
         !this.destroyed && this.data && !this.map.getLayer(this.id) && this.map.addLayer(this, this.beforeLayerId && this.map.getLayer(this.beforeLayerId) ? this.beforeLayerId : void 0)
       }), e(this, `handleContextLost`, () => {
         this.destroyed || (this.contextLost = !0, this.discardGpuResources())
       }), e(this, `handleContextRestored`, () => {
         this.destroyed || (this.contextLost = !1, this.map.getLayer(this.id) && this.gl && this.onAdd(this.map, this.gl))
-      }), this.id = t, this.map = n, this.logicalTileZoom = r, this.beforeLayerId = a, this.textureBudgetBytes = o, this.onRepeatedRenderFailure = s, this.map.on(`style.load`, this.handleStyleLoad), this.map.on(`webglcontextlost`, this.handleContextLost), this.map.on(`webglcontextrestored`, this.handleContextRestored)
+      }), this.id = t, this.map = n, this.logicalTileZoom = r, this.beforeLayerId = i, this.textureBudgetBytes = a, this.onRepeatedRenderFailure = o, this.map.on(`style.load`, this.handleStyleLoad), this.map.on(`webglcontextlost`, this.handleContextLost), this.map.on(`webglcontextrestored`, this.handleContextRestored)
     }
     setData(e) {
       var t, n, r, i;
@@ -526,8 +526,8 @@ ${s}
       e.useProgram(this.program), e.enable(e.BLEND), e.blendFunc(e.ONE, e.ONE_MINUS_SRC_ALPHA), e.disable(e.DEPTH_TEST), e.disable(e.CULL_FACE), e.disable(e.STENCIL_TEST);
       let {
         worldSize: r
-      } = this.map.transform, [i, s] = this.getRasterAlignmentOffset(r);
-      this.translateMatrix(t, this.origin[0] * r + i, this.origin[1] * r + s), e.uniformMatrix4fv(this.uniforms.matrix, !1, this.translatedMatrix), e.uniform1f(this.uniforms.worldSize, r), e.uniform1i(this.uniforms.texture, 0), e.uniform1i(this.uniforms.mode, H(n.mode)), e.uniform1f(this.uniforms.opacity, n.opacity), e.uniform1f(this.uniforms.pixelsPerSource, this.getPhysicalPixelsPerSource()), e.uniform1f(this.uniforms.pixelModeResolution, o(n.mode, a)), e.uniform1i(this.uniforms.pixelModeDetailSupported, +!!this.pixelModeDetailSupported), e.uniform1i(this.uniforms.highlightEnabled, +!!n.highlightColor);
+      } = this.map.transform, [o, s] = this.getRasterAlignmentOffset(r);
+      this.translateMatrix(t, this.origin[0] * r + o, this.origin[1] * r + s), e.uniformMatrix4fv(this.uniforms.matrix, !1, this.translatedMatrix), e.uniform1f(this.uniforms.worldSize, r), e.uniform1i(this.uniforms.texture, 0), e.uniform1i(this.uniforms.mode, H(n.mode)), e.uniform1f(this.uniforms.opacity, n.opacity), e.uniform1f(this.uniforms.pixelsPerSource, this.getPhysicalPixelsPerSource()), e.uniform1f(this.uniforms.pixelModeResolution, a(n.mode, i)), e.uniform1i(this.uniforms.pixelModeDetailSupported, +!!this.pixelModeDetailSupported), e.uniform1i(this.uniforms.highlightEnabled, +!!n.highlightColor);
       let c = !!(n.statusHighlights && (n.statusHighlights.incorrect || n.statusHighlights.unpainted));
       e.uniform1i(this.uniforms.statusHighlightsEnabled, +!!c), n.highlightColor && e.uniform4f(this.uniforms.highlightColor, n.highlightColor.r / 255, n.highlightColor.g / 255, n.highlightColor.b / 255, n.highlightColor.a / 255), this.vertexArrayApi && this.vertexArray ? this.vertexArrayApi.bind(this.vertexArray) : this.bindQuadVertexAttributes(e);
       let l = this.getVisibleSourceTiles(r),
