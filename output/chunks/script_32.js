@@ -1,17 +1,17 @@
 import {
   At as e,
-  It as t,
-  Mt as n,
+  Et as t,
+  Lt as n,
   Ot as r,
-  an as i,
-  lt as a,
-  zt as o
-} from "./CX37corp.js";
+  Pt as i,
+  rn as a,
+  st as o
+} from "./DhUcoEdH.js";
 import {
   M as s,
   l as c,
   u as l
-} from "./tX2H6UC0.js";
+} from "./_fg_EdZg.js";
 var u = [7, 8, 9, 12, 15, 18, 19, 21, 23, 24, 26, 27, 30, 31, 34, 39, 42, 43, 45, 48, 50, 52, 54, 55, 57, 59, 62],
   d = `template-overlays`,
   f = `overlay-tag-catalog`;
@@ -184,28 +184,28 @@ var D = new WeakMap,
   A = new WeakMap,
   j = new class {
     get templates() {
-      return a(t(D, this))
+      return o(i(D, this))
     }
-    set templates(n) {
-      e(t(D, this), n, !0)
+    set templates(e) {
+      r(i(D, this), e, !0)
     }
     get tagCatalog() {
-      return a(t(O, this))
+      return o(i(O, this))
     }
-    set tagCatalog(n) {
-      e(t(O, this), n, !0)
+    set tagCatalog(e) {
+      r(i(O, this), e, !0)
     }
     get activeTemplateId() {
-      return a(t(k, this))
+      return o(i(k, this))
     }
-    set activeTemplateId(n) {
-      e(t(k, this), n, !0)
+    set activeTemplateId(e) {
+      r(i(k, this), e, !0)
     }
     get placementSession() {
-      return a(t(A, this))
+      return o(i(A, this))
     }
-    set placementSession(n) {
-      e(t(A, this), n, !0)
+    set placementSession(e) {
+      r(i(A, this), e, !0)
     }
     subscribeChange(e) {
       return this.changeListeners.add(e), () => this.changeListeners.delete(e)
@@ -218,7 +218,7 @@ var D = new WeakMap,
       }
     }
     constructor() {
-      o(this, D, n(r([]))), o(this, O, n(r([]))), o(this, k, n(null)), o(this, A, n(!1)), i(this, `suppressPersist`, !1), i(this, `persistTimeout`, null), i(this, `changeListeners`, new Set), i(this, `flushPersist`, () => {
+      n(this, D, e(t([]))), n(this, O, e(t([]))), n(this, k, e(null)), n(this, A, e(!1)), a(this, `suppressPersist`, !1), a(this, `persistTimeout`, null), a(this, `changeListeners`, new Set), a(this, `flushPersist`, () => {
         this.suppressPersist || (this.persistTimeout !== null && (window.clearTimeout(this.persistTimeout), this.persistTimeout = null), localStorage.setItem(d, JSON.stringify(this.templates.filter(e => !e.serverManaged))), localStorage.setItem(f, JSON.stringify(this.tagCatalog)))
       });
       {

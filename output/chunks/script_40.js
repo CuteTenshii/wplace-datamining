@@ -1,14 +1,14 @@
 import {
-  $ as e,
-  X as t,
+  J as e,
+  Z as t,
   o as n,
-  y as r
-} from "./CX37corp.js";
+  v as r
+} from "./DhUcoEdH.js";
 import "./B8UK1oE5.js";
 var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  a = e(`<svg><path d="M240-120q-45 0-89-22t-71-58q26 0 53-20.5t27-59.5q0-50 35-85t85-35q50 0 85 35t35 85q0 66-47 113t-113 47Zm230-240L360-470l358-358q11-11 27.5-11.5T774-828l54 54q12 12 12 28t-12 28L470-360Z"></path></svg>`);
+  a = t(`<svg><path d="m40-120 440-760 440 760H40Zm138-80h604L480-720 178-200Zm302-40q17 0 28.5-11.5T520-280q0-17-11.5-28.5T480-320q-17 0-28.5 11.5T440-280q0 17 11.5 28.5T480-240Zm-40-120h80v-200h-80v200Zm40-100Z"></path></svg>`);
 
-function o(e, o) {
+function o(t, o) {
   let s = n(o, i);
   var c = a();
   r(c, () => ({
@@ -16,7 +16,7 @@ function o(e, o) {
     viewBox: `0 -960 960 960`,
     fill: `currentColor`,
     ...s
-  })), t(e, c)
+  })), e(t, c)
 }
 export {
   o as t

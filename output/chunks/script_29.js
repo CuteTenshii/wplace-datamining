@@ -1,6 +1,6 @@
 import {
-  Ot as e
-} from "./CX37corp.js";
+  Et as e
+} from "./DhUcoEdH.js";
 var t = e({
   shouldReload: !0,
   openHeadquarters: !1,

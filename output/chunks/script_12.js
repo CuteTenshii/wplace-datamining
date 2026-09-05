@@ -1,4 +1,4 @@
 import {
-  tn as e
-} from "./CX37corp.js";
+  $t as e
+} from "./DhUcoEdH.js";
 e();

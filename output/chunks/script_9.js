@@ -1,23 +1,23 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./D1l6TY9P.js", "./CX37corp.js", "./B_9kDHn5.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./Bz0N2U1C.js", "./DhUcoEdH.js", "./CxdjnXYc.js"]))) => i.map(i => d[i]);
 import {
   At as e,
-  Ft as t,
-  It as n,
-  Mt as r,
+  Et as t,
+  Lt as n,
+  Nt as r,
   Ot as i,
-  _t as a,
-  an as o,
-  bt as s,
-  lt as c,
-  pt as l,
-  zt as u
-} from "./CX37corp.js";
+  Pt as a,
+  dt as o,
+  ht as s,
+  rn as c,
+  st as l,
+  vt as u
+} from "./DhUcoEdH.js";
 import {
   a as d
-} from "./B_9kDHn5.js";
+} from "./CxdjnXYc.js";
 import {
   t as f
-} from "./DSClyQF0.js";
+} from "./CQHMXUZ-.js";
 var p = `https://maps.wplace.live`,
   m = `8d582454-e5ec-4314-b1c2-89e460ac1d28`,
   h = `false`,
@@ -3375,92 +3375,92 @@ var Po = `theme`,
   Jo = new WeakMap,
   Yo = new class {
     get dropletsDialogOpen() {
-      return c(n(Fo, this))
+      return l(a(Fo, this))
     }
-    set dropletsDialogOpen(t) {
-      e(n(Fo, this), t, !0)
+    set dropletsDialogOpen(e) {
+      i(a(Fo, this), e, !0)
     }
     get prismDialogOpen() {
-      return c(n(Io, this))
+      return l(a(Io, this))
     }
-    set prismDialogOpen(t) {
-      e(n(Io, this), t, !0)
+    set prismDialogOpen(e) {
+      i(a(Io, this), e, !0)
     }
     get accountConflictDialogOpen() {
-      return c(n(Lo, this))
+      return l(a(Lo, this))
     }
-    set accountConflictDialogOpen(t) {
-      e(n(Lo, this), t, !0)
+    set accountConflictDialogOpen(e) {
+      i(a(Lo, this), e, !0)
     }
     get pendingHistoryDialogOpen() {
-      return c(n(Ro, this))
+      return l(a(Ro, this))
     }
-    set pendingHistoryDialogOpen(t) {
-      e(n(Ro, this), t, !0)
+    set pendingHistoryDialogOpen(e) {
+      i(a(Ro, this), e, !0)
     }
     get storeDialogOpen() {
-      return c(n(zo, this))
+      return l(a(zo, this))
     }
-    set storeDialogOpen(t) {
-      e(n(zo, this), t, !0)
+    set storeDialogOpen(e) {
+      i(a(zo, this), e, !0)
     }
     get storeTabIndex() {
-      return c(n(Bo, this))
+      return l(a(Bo, this))
     }
-    set storeTabIndex(t) {
-      e(n(Bo, this), t, !0)
+    set storeTabIndex(e) {
+      i(a(Bo, this), e, !0)
     }
     get muted() {
-      return c(n(Vo, this))
+      return l(a(Vo, this))
     }
-    set muted(t) {
-      e(n(Vo, this), t, !0)
+    set muted(e) {
+      i(a(Vo, this), e, !0)
     }
     get haptics() {
-      return c(n(Ho, this))
+      return l(a(Ho, this))
     }
-    set haptics(t) {
-      e(n(Ho, this), t, !0)
+    set haptics(e) {
+      i(a(Ho, this), e, !0)
     }
     get language() {
-      return c(n(Uo, this))
+      return l(a(Uo, this))
     }
-    set language(t) {
-      e(n(Uo, this), t, !0)
+    set language(e) {
+      i(a(Uo, this), e, !0)
     }
     get map() {
-      return c(n(Wo, this))
+      return l(a(Wo, this))
     }
-    set map(t) {
-      e(n(Wo, this), t)
+    set map(e) {
+      i(a(Wo, this), e)
     }
     get automatedClicks() {
-      return c(n(Go, this))
+      return l(a(Go, this))
     }
-    set automatedClicks(t) {
-      e(n(Go, this), t, !0)
+    set automatedClicks(e) {
+      i(a(Go, this), e, !0)
     }
     get theme() {
-      return c(n(Ko, this))
+      return l(a(Ko, this))
     }
-    set theme(t) {
-      e(n(Ko, this), t, !0), localStorage.setItem(Po, t), document.documentElement.setAttribute(`data-theme`, t)
+    set theme(e) {
+      i(a(Ko, this), e, !0), localStorage.setItem(Po, e), document.documentElement.setAttribute(`data-theme`, e)
     }
     get now() {
-      return c(n(qo, this))
+      return l(a(qo, this))
     }
     get captcha() {
-      return Zo ? c(n(Jo, this)) : {
+      return Zo ? l(a(Jo, this)) : {
         token: `turnstile-disabled`,
         time: Date.now()
       }
     }
-    set captcha(t) {
-      e(n(Jo, this), t, !0)
+    set captcha(e) {
+      i(a(Jo, this), e, !0)
     }
     constructor() {
-      u(this, Fo, r(!1)), u(this, Io, r(!1)), u(this, Lo, r(!1)), u(this, Ro, r(!1)), u(this, zo, r(!1)), u(this, Bo, r(0)), u(this, Vo, r(!1)), u(this, Ho, r(!0)), u(this, Uo, r(i(Xo()))), u(this, Wo, r(null)), u(this, Go, r(!1)), u(this, Ko, r(`custom-winter`)), u(this, qo, r(i(Date.now()))), u(this, Jo, r(void 0)), setInterval(() => {
-        e(n(qo, this), Date.now(), !0)
+      n(this, Fo, e(!1)), n(this, Io, e(!1)), n(this, Lo, e(!1)), n(this, Ro, e(!1)), n(this, zo, e(!1)), n(this, Bo, e(0)), n(this, Vo, e(!1)), n(this, Ho, e(!0)), n(this, Uo, e(t(Xo()))), n(this, Wo, e(null)), n(this, Go, e(!1)), n(this, Ko, e(`custom-winter`)), n(this, qo, e(t(Date.now()))), n(this, Jo, e(void 0)), setInterval(() => {
+        i(a(qo, this), Date.now(), !0)
       }, 500), this.theme = localStorage.getItem(Po), this.theme !== `dark` && this.theme !== `custom-winter` && (this.theme = `custom-winter`)
     }
   };
@@ -3555,19 +3555,19 @@ var ts = 3,
   rs = new WeakMap,
   N = new class {
     constructor() {
-      u(this, ns, r(null)), u(this, rs, r(0))
+      n(this, ns, e(null)), n(this, rs, e(0))
     }
     get current() {
-      return c(n(ns, this))
+      return l(a(ns, this))
     }
-    set current(t) {
-      e(n(ns, this), t, !0)
+    set current(e) {
+      i(a(ns, this), e, !0)
     }
     get errorCount() {
-      return c(n(rs, this))
+      return l(a(rs, this))
     }
-    set errorCount(t) {
-      e(n(rs, this), t, !0)
+    set errorCount(e) {
+      i(a(rs, this), e, !0)
     }
   };
 async function is(e) {
@@ -4085,19 +4085,19 @@ var Ws = 6e3,
   Ks = new WeakMap,
   qs = class {
     get online() {
-      return c(n(Gs, this))
+      return l(a(Gs, this))
     }
-    set online(t) {
-      e(n(Gs, this), t, !0)
+    set online(e) {
+      i(a(Gs, this), e, !0)
     }
     get serverTimeOffsetMs() {
-      return c(n(Ks, this))
+      return l(a(Ks, this))
     }
-    set serverTimeOffsetMs(t) {
-      e(n(Ks, this), t, !0)
+    set serverTimeOffsetMs(e) {
+      i(a(Ks, this), e, !0)
     }
-    constructor(e) {
-      o(this, `url`, void 0), u(this, Gs, r(!0)), o(this, `probe`, null), u(this, Ks, r(null)), this.url = e
+    constructor(t) {
+      c(this, `url`, void 0), n(this, Gs, e(!0)), c(this, `probe`, null), n(this, Ks, e(null)), this.url = t
     }
     checkConnection() {
       if (this.probe) return this.probe;
@@ -4162,7 +4162,7 @@ var Ws = 6e3,
             headers: n
           }
         }, a = await this.guardedFetch(e, await i());
-      if (a.headers.get(`x-device-reattest`) && d(() => import(`./D1l6TY9P.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2]), import.meta.url), a.status === I.FORBIDDEN && a.headers.get(`x-block-reason`) === `tor`) throw Error(f.tor_blocked());
+      if (a.headers.get(`x-device-reattest`) && d(() => import(`./Bz0N2U1C.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2]), import.meta.url), a.status === I.FORBIDDEN && a.headers.get(`x-block-reason`) === `tor`) throw Error(f.tor_blocked());
       if (a.status === I.FORBIDDEN && a.headers.get(`x-block-reason`) === `integrity`) throw Error(f.request_integrity_blocked());
       let o = ((n = a.headers.get(`cf-mitigated`)) == null ? void 0 : n.toLowerCase()) === `challenge`;
       if (a.status === 403 && o) {
@@ -4179,7 +4179,7 @@ var Ws = 6e3,
   },
   R = class extends Error {
     constructor(e, t) {
-      super(e), o(this, `message`, void 0), o(this, `status`, void 0), this.message = e, this.status = t
+      super(e), c(this, `message`, void 0), c(this, `status`, void 0), this.message = e, this.status = t
     }
   },
   Js = class extends Error {};
@@ -6706,89 +6706,6 @@ var z = {
       joinRequestCancelledCooldownHours: 1,
       galleryPageSize: 20,
       memberPageSize: 50
-    },
-    voidEvent: {
-      year: 2026,
-      month: 8,
-      tiles: [{
-        day: 17,
-        x: 340,
-        y: 1938
-      }, {
-        day: 18,
-        x: 341,
-        y: 1938
-      }, {
-        day: 19,
-        x: 342,
-        y: 1938
-      }, {
-        day: 20,
-        x: 343,
-        y: 1938
-      }, {
-        day: 21,
-        x: 340,
-        y: 1939
-      }, {
-        day: 22,
-        x: 341,
-        y: 1939
-      }, {
-        day: 23,
-        x: 342,
-        y: 1939
-      }, {
-        day: 24,
-        x: 343,
-        y: 1939
-      }, {
-        day: 25,
-        x: 340,
-        y: 1940
-      }, {
-        day: 26,
-        x: 341,
-        y: 1940
-      }, {
-        day: 27,
-        x: 342,
-        y: 1940
-      }, {
-        day: 28,
-        x: 343,
-        y: 1940
-      }, {
-        day: 29,
-        x: 340,
-        y: 1941
-      }, {
-        day: 30,
-        x: 341,
-        y: 1941
-      }, {
-        day: 31,
-        x: 342,
-        y: 1941
-      }, {
-        day: 1,
-        month: 9,
-        x: 343,
-        y: 1941
-      }],
-      prizePool: {
-        pixels: 1e4,
-        droplets: 5e3
-      },
-      badgeTiers: {
-        pixels: 1e3,
-        multipliers: [2, 5, 10, 20]
-      },
-      sideBalance: {
-        percent: 5,
-        floor: 5
-      },
-      conquestPointsFloor: 2e3
     }
   },
   Zs = z,
@@ -8625,7 +8542,7 @@ var Cc = 30 * V.minute;
 function wc(e) {
   return class extends e {
     constructor(...e) {
-      super(...e), o(this, `lastHotspotRequestAt`, 0)
+      super(...e), c(this, `lastHotspotRequestAt`, 0)
     }
     async leaderboardPlayers(e) {
       let t = await this.request(`/leaderboard/player/${e}`);
@@ -9820,46 +9737,6 @@ function Gc(e, t) {
 
 function Kc(e) {
   return class extends e {
-    async getVoidEvent() {
-      let e = await this.request(`/void-event`, {
-        method: `GET`,
-        credentials: `include`
-      });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
-      return e.json()
-    }
-    async getVoidEventRewards() {
-      let e = await this.request(`/void-event/rewards`, {
-        method: `GET`,
-        credentials: `include`
-      });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
-      return e.json()
-    }
-    async getVoidEventTileConquerors(e) {
-      let t = await this.request(`/void-event/tile/${e}/conquerors`, {
-        method: `GET`,
-        credentials: `include`
-      });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
-      return t.json()
-    }
-    async postVoidEventPick(e) {
-      let t = await this.request(`/void-event/pick`, {
-        method: `POST`,
-        credentials: `include`,
-        body: JSON.stringify({
-          team: e
-        })
-      });
-      if (t.status === I.OK) return t.json();
-      throw t.status === I.UNAUTHORIZED ? Error(f.you_are_not_logged_in()) : t.status === I.FORBIDDEN ? Error(f.void_event_not_enough_droplets()) : t.status === I.CONFLICT ? Error(f.void_event_already_picked()) : Error(f.unexpected_server_error())
-    }
-  }
-}
-
-function qc(e) {
-  return class extends e {
     validWaybackInput(e) {
       let t = Number.isFinite(e.timestamp) && Number.isInteger(e.timestamp) && e.timestamp >= 0 && e.timestamp <= this.getEstimatedServerNowMs(),
         n = Number.isFinite(e.season) && Number.isInteger(e.season) && e.season >= 0 && e.season < Qs.length,
@@ -9894,44 +9771,44 @@ function qc(e) {
     }
   }
 }
-var H = new class extends Ys(Xs(gc(_c(vc(yc(bc(wc(Tc(Fc(Ic(zc(Hc(Kc(qc(qs))))))))))))))) {}(oe);
-typeof window < `u` && a(() => {
+var H = new class extends Ys(Xs(gc(_c(vc(yc(bc(wc(Tc(Fc(Ic(zc(Hc(Kc(qs)))))))))))))) {}(oe);
+typeof window < `u` && s(() => {
   let e = H.online;
-  s(() => {
+  u(() => {
     let t = H.online;
     t && !e && window.dispatchEvent(new CustomEvent(`wplace:online`)), e = t
   })
 });
 
-function Jc(e, t) {
+function qc(e, t) {
   if (!(e != null && e.length)) return !1;
   for (let n of e)
     if (n === t) return !0;
   return !1
 }
 
-function Yc(e, t) {
+function Jc(e, t) {
   for (let n of t)
-    if (Jc(e, n)) return !0;
+    if (qc(e, n)) return !0;
   return !1
 }
 
-function Xc(e) {
+function Yc(e) {
   let t = atob(e),
     n = new Uint8Array(t.length);
   for (let e = 0; e < t.length; e++) n[e] = t.charCodeAt(e);
   return n
 }
 
-function Zc(e) {
+function Xc(e) {
   if (typeof Buffer < `u`) return Buffer.from(e).toString(`base64`);
   let t = ``;
   for (let n = 0; n < e.length; n++) t += String.fromCharCode(e[n]);
   return btoa(t)
 }
-var Qc = class {
+var Zc = class {
   constructor(e) {
-    o(this, `bytes`, void 0), this.bytes = e ?? new Uint8Array
+    c(this, `bytes`, void 0), this.bytes = e ?? new Uint8Array
   }
   set(e, t) {
     let n = Math.floor(e / 8),
@@ -9953,7 +9830,7 @@ var Qc = class {
   }
 };
 
-function $c(e) {
+function Qc(e) {
   return new Promise((t, n) => {
     let r = new FileReader;
     r.onload = () => {
@@ -9967,10 +9844,10 @@ function $c(e) {
   })
 }
 
-function el(e) {
+function $c(e) {
   if (typeof FileReader > `u`) {
     let t = e.type || `application/octet-stream`;
-    return e.arrayBuffer().then(e => `data:${t};base64,${Zc(new Uint8Array(e))}`)
+    return e.arrayBuffer().then(e => `data:${t};base64,${Xc(new Uint8Array(e))}`)
   }
   return new Promise((t, n) => {
     let r = new FileReader;
@@ -9985,7 +9862,7 @@ function el(e) {
   })
 }
 
-function tl(e) {
+function el(e) {
   if (!e.startsWith(`data:`)) throw Error(`Could not parse data URL`);
   let t = e.indexOf(`,`);
   if (t === -1) throw Error(`Could not parse data URL`);
@@ -9994,7 +9871,7 @@ function tl(e) {
     i = n.indexOf(`;base64`),
     a = (i === -1 ? n : n.slice(0, i)) || `text/plain`;
   if (i !== -1) {
-    let e = Xc(r),
+    let e = Yc(r),
       t = new Uint8Array(e.byteLength);
     return t.set(e), new Blob([t], {
       type: a
@@ -10005,22 +9882,22 @@ function tl(e) {
   })
 }
 
-function nl(...e) {
+function tl(...e) {
   return e.filter(Boolean).join(` `)
 }
-var rl = typeof document < `u`,
-  il = 0,
+var nl = typeof document < `u`,
+  rl = 0,
+  il = new WeakMap,
   al = new WeakMap,
   ol = new WeakMap,
-  sl = new WeakMap,
-  cl = class {
+  sl = class {
     constructor() {
-      u(this, al, r(i([]))), u(this, ol, r(i([]))), u(this, sl, e => {
+      n(this, il, e(t([]))), n(this, al, e(t([]))), n(this, ol, e => {
         let t = this.toasts.findIndex(t => t.id === e);
         return t === -1 ? null : t
-      }), o(this, `addToast`, e => {
-        rl && this.toasts.unshift(e)
-      }), o(this, `updateToast`, ({
+      }), c(this, `addToast`, e => {
+        nl && this.toasts.unshift(e)
+      }), c(this, `updateToast`, ({
         id: e,
         data: t,
         type: n,
@@ -10036,17 +9913,17 @@ var rl = typeof document < `u`,
           type: n,
           updated: !0
         }
-      }), o(this, `create`, e => {
+      }), c(this, `create`, e => {
         var t;
         let {
           message: n,
           ...r
-        } = e, i = typeof(e == null ? void 0 : e.id) == `number` || e.id && ((t = e.id) == null ? void 0 : t.length) > 0 ? e.id : il++, a = e.dismissable === void 0 || e.dismissable, o = e.type === void 0 ? `default` : e.type;
-        return l(() => {
+        } = e, i = typeof(e == null ? void 0 : e.id) == `number` || e.id && ((t = e.id) == null ? void 0 : t.length) > 0 ? e.id : rl++, a = e.dismissable === void 0 || e.dismissable, s = e.type === void 0 ? `default` : e.type;
+        return o(() => {
           this.toasts.find(e => e.id === i) ? this.updateToast({
             id: i,
             data: e,
-            type: o,
+            type: s,
             message: n,
             dismissable: a
           }) : this.addToast({
@@ -10054,10 +9931,10 @@ var rl = typeof document < `u`,
             id: i,
             title: n,
             dismissable: a,
-            type: o
+            type: s
           })
         }), i
-      }), o(this, `dismiss`, e => (l(() => {
+      }), c(this, `dismiss`, e => (o(() => {
         if (e === void 0) {
           this.toasts = this.toasts.map(e => ({
             ...e,
@@ -10070,38 +9947,38 @@ var rl = typeof document < `u`,
           ...this.toasts[t],
           dismiss: !0
         })
-      }), e)), o(this, `remove`, e => {
+      }), e)), c(this, `remove`, e => {
         if (e === void 0) {
           this.toasts = [];
           return
         }
-        let t = n(sl, this).call(this, e);
+        let t = a(ol, this).call(this, e);
         if (t !== null) return this.toasts.splice(t, 1), e
-      }), o(this, `message`, (e, t) => this.create({
+      }), c(this, `message`, (e, t) => this.create({
         ...t,
         type: `default`,
         message: e
-      })), o(this, `error`, (e, t) => this.create({
+      })), c(this, `error`, (e, t) => this.create({
         ...t,
         type: `error`,
         message: e
-      })), o(this, `success`, (e, t) => this.create({
+      })), c(this, `success`, (e, t) => this.create({
         ...t,
         type: `success`,
         message: e
-      })), o(this, `info`, (e, t) => this.create({
+      })), c(this, `info`, (e, t) => this.create({
         ...t,
         type: `info`,
         message: e
-      })), o(this, `warning`, (e, t) => this.create({
+      })), c(this, `warning`, (e, t) => this.create({
         ...t,
         type: `warning`,
         message: e
-      })), o(this, `loading`, (e, t) => this.create({
+      })), c(this, `loading`, (e, t) => this.create({
         ...t,
         type: `loading`,
         message: e
-      })), o(this, `promise`, (e, t) => {
+      })), c(this, `promise`, (e, t) => {
         if (!t) return;
         let n;
         t.loading !== void 0 && (n = this.create({
@@ -10115,7 +9992,7 @@ var rl = typeof document < `u`,
         return r.then(e => {
           if (typeof e == `object` && e && `ok` in e && typeof e.ok == `boolean` && !e.ok) {
             i = !1;
-            let t = ll(e);
+            let t = cl(e);
             this.create({
               id: n,
               type: `error`,
@@ -10144,61 +10021,61 @@ var rl = typeof document < `u`,
           var e;
           i && (this.dismiss(n), n = void 0), (e = t.finally) == null || e.call(t)
         }), n
-      }), o(this, `custom`, (e, t) => {
-        let n = (t == null ? void 0 : t.id) || il++;
+      }), c(this, `custom`, (e, t) => {
+        let n = (t == null ? void 0 : t.id) || rl++;
         return this.create({
           component: e,
           id: n,
           ...t
         }), n
-      }), o(this, `removeHeight`, e => {
+      }), c(this, `removeHeight`, e => {
         this.heights = this.heights.filter(t => t.toastId !== e)
-      }), o(this, `setHeight`, e => {
-        let t = n(sl, this).call(this, e.toastId);
+      }), c(this, `setHeight`, e => {
+        let t = a(ol, this).call(this, e.toastId);
         if (t === null) {
           this.heights.push(e);
           return
         }
         this.heights[t] = e
-      }), o(this, `reset`, () => {
+      }), c(this, `reset`, () => {
         this.toasts = [], this.heights = []
       })
     }
     get toasts() {
-      return c(n(al, this))
+      return l(a(il, this))
     }
-    set toasts(t) {
-      e(n(al, this), t, !0)
+    set toasts(e) {
+      i(a(il, this), e, !0)
     }
     get heights() {
-      return c(n(ol, this))
+      return l(a(al, this))
     }
-    set heights(t) {
-      e(n(ol, this), t, !0)
+    set heights(e) {
+      i(a(al, this), e, !0)
     }
   };
 
-function ll(e) {
+function cl(e) {
   return e && typeof e == `object` && `status` in e ? `HTTP error! Status: ${e.status}` : `Error! ${e}`
 }
-var U = new cl;
+var U = new sl;
 
-function ul(e, t) {
+function ll(e, t) {
   return U.create({
     message: e,
     ...t
   })
 }
-var dl = new WeakMap,
-  fl = class {
+var ul = new WeakMap,
+  dl = class {
     constructor() {
-      u(this, dl, t(() => U.toasts.filter(e => !e.dismiss)))
+      n(this, ul, r(() => U.toasts.filter(e => !e.dismiss)))
     }
     get toasts() {
-      return c(n(dl, this))
+      return l(a(ul, this))
     }
   },
-  pl = Object.assign(ul, {
+  fl = Object.assign(ll, {
     success: U.success,
     info: U.info,
     warning: U.warning,
@@ -10210,6 +10087,7 @@ var dl = new WeakMap,
     loading: U.loading,
     getActiveToasts: () => U.toasts.filter(e => !e.dismiss)
   }),
+  pl = new WeakMap,
   ml = new WeakMap,
   hl = new WeakMap,
   gl = new WeakMap,
@@ -10217,68 +10095,67 @@ var dl = new WeakMap,
   vl = new WeakMap,
   yl = new WeakMap,
   bl = new WeakMap,
-  xl = new WeakMap,
   W = new class {
     get data() {
-      return c(n(ml, this))
+      return l(a(pl, this))
     }
-    set data(t) {
-      e(n(ml, this), t, !0)
+    set data(e) {
+      i(a(pl, this), e, !0)
     }
     get loading() {
-      return c(n(hl, this))
+      return l(a(ml, this))
     }
-    set loading(t) {
-      e(n(hl, this), t, !0)
+    set loading(e) {
+      i(a(ml, this), e, !0)
     }
     get notificationCount() {
-      return c(n(gl, this))
+      return l(a(hl, this))
     }
-    set notificationCount(t) {
-      e(n(gl, this), t, !0)
+    set notificationCount(e) {
+      i(a(hl, this), e, !0)
     }
     get lastFetch() {
-      return c(n(_l, this))
+      return l(a(gl, this))
     }
-    set lastFetch(t) {
-      e(n(_l, this), t)
+    set lastFetch(e) {
+      i(a(gl, this), e)
     }
     get charges() {
-      return c(n(vl, this))
+      return l(a(_l, this))
     }
-    set charges(t) {
-      e(n(vl, this), t)
+    set charges(e) {
+      i(a(_l, this), e)
     }
     get cooldown() {
-      return c(n(yl, this))
+      return l(a(vl, this))
     }
-    set cooldown(t) {
-      e(n(yl, this), t)
+    set cooldown(e) {
+      i(a(vl, this), e)
     }
     get flagsBitmap() {
-      return c(n(bl, this))
+      return l(a(yl, this))
     }
-    set flagsBitmap(t) {
-      e(n(bl, this), t)
+    set flagsBitmap(e) {
+      i(a(yl, this), e)
     }
     get timeoutUntil() {
-      return c(n(xl, this))
+      return l(a(bl, this))
     }
-    set timeoutUntil(t) {
-      e(n(xl, this), t)
+    set timeoutUntil(e) {
+      i(a(bl, this), e)
     }
     constructor() {
-      o(this, `channel`, new BroadcastChannel(`user-channel`)), u(this, ml, r()), u(this, hl, r(!0)), u(this, gl, r()), u(this, _l, r(Date.now())), u(this, vl, t(() => {
+      c(this, `channel`, new BroadcastChannel(`user-channel`)), n(this, pl, e()), n(this, ml, e(!0)), n(this, hl, e()), n(this, gl, e(Date.now())), n(this, _l, r(() => {
         if (!this.data) return;
         let e = this.data.charges;
         if (e.infinite) return 1 / 0;
         if (e.count > e.max) return e.count;
         let t = e.count + Math.max((Yo.now - this.lastFetch) / e.cooldownMs, 0);
         return Math.min(e.max, t)
-      })), u(this, yl, t(() => this.charges !== void 0 && this.data && !this.data.charges.infinite ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0)), u(this, bl, t(() => {
+      })), n(this, vl, r(() => this.charges !== void 0 && this.data && !this.data.charges.infinite ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0)), n(this, yl, r(() => {
         var e;
-        return new Qc(Xc(((e = this.data) == null ? void 0 : e.flagsBitmap) ?? `AA==`))
-      })), u(this, xl, t(() => {
+        return new Zc(Yc(((e = this.data) == null ? void 0 : e.flagsBitmap) ?? `AA==`))
+      })), n(this, bl, r(() => {
         var e;
         if (!((e = this.data) != null && e.timeoutUntil)) return;
         let t = new Date(this.data.timeoutUntil),
@@ -10301,7 +10178,7 @@ var dl = new WeakMap,
           console.error(`Failed to refresh notification count:`, e)
         }), (t = this.data) != null && t.id && $.setUserId(this.data.id), !0
       } catch (e) {
-        return console.error(e), pl.warning(f.no_internet_access(), {
+        return console.error(e), fl.warning(f.no_internet_access(), {
           duration: 1e4
         }), !1
       } finally {
@@ -10320,11 +10197,11 @@ var dl = new WeakMap,
     }
     hasPermission(e) {
       var t;
-      return Jc((t = this.data) == null ? void 0 : t.permissions, e)
+      return qc((t = this.data) == null ? void 0 : t.permissions, e)
     }
     hasAnyPermission(e) {
       var t;
-      return Yc((t = this.data) == null ? void 0 : t.permissions, e)
+      return Jc((t = this.data) == null ? void 0 : t.permissions, e)
     }
   },
   G, K = Array(128).fill(void 0);
@@ -10333,12 +10210,12 @@ K.push(void 0, null, !0, !1);
 function q(e) {
   return K[e]
 }
-var Sl = K.length;
+var xl = K.length;
 
 function J(e) {
-  Sl === K.length && K.push(K.length + 1);
-  let t = Sl;
-  return Sl = K[t], K[t] = e, t
+  xl === K.length && K.push(K.length + 1);
+  let t = xl;
+  return xl = K[t], K[t] = e, t
 }
 
 function Y(e, t) {
@@ -10352,7 +10229,7 @@ function Y(e, t) {
 function X(e) {
   return e == null
 }
-var Cl = typeof TextDecoder < `u` ? new TextDecoder(`utf-8`, {
+var Sl = typeof TextDecoder < `u` ? new TextDecoder(`utf-8`, {
   ignoreBOM: !0,
   fatal: !0
 }) : {
@@ -10360,55 +10237,55 @@ var Cl = typeof TextDecoder < `u` ? new TextDecoder(`utf-8`, {
     throw Error(`TextDecoder not available`)
   }
 };
-typeof TextDecoder < `u` && Cl.decode();
-var wl = null;
+typeof TextDecoder < `u` && Sl.decode();
+var Cl = null;
 
-function Tl() {
-  return (wl === null || wl.byteLength === 0) && (wl = new Uint8Array(G.memory.buffer)), wl
+function wl() {
+  return (Cl === null || Cl.byteLength === 0) && (Cl = new Uint8Array(G.memory.buffer)), Cl
 }
 
-function El(e, t) {
-  return e >>>= 0, Cl.decode(Tl().subarray(e, e + t))
+function Tl(e, t) {
+  return e >>>= 0, Sl.decode(wl().subarray(e, e + t))
+}
+
+function El(e) {
+  e < 132 || (K[e] = xl, xl = e)
 }
 
 function Dl(e) {
-  e < 132 || (K[e] = Sl, Sl = e)
-}
-
-function Ol(e) {
   let t = q(e);
-  return Dl(e), t
+  return El(e), t
 }
 var Z = null;
 
-function kl() {
+function Ol() {
   return (Z === null || Z.buffer.detached === !0 || Z.buffer.detached === void 0 && Z.buffer !== G.memory.buffer) && (Z = new DataView(G.memory.buffer)), Z
 }
 var Q = 0,
-  Al = typeof TextEncoder < `u` ? new TextEncoder(`utf-8`) : {
+  kl = typeof TextEncoder < `u` ? new TextEncoder(`utf-8`) : {
     encode: () => {
       throw Error(`TextEncoder not available`)
     }
   },
-  jl = typeof Al.encodeInto == `function` ? function(e, t) {
-    return Al.encodeInto(e, t)
+  Al = typeof kl.encodeInto == `function` ? function(e, t) {
+    return kl.encodeInto(e, t)
   } : function(e, t) {
-    let n = Al.encode(e);
+    let n = kl.encode(e);
     return t.set(n), {
       read: e.length,
       written: n.length
     }
   };
 
-function Ml(e, t, n) {
+function jl(e, t, n) {
   if (n === void 0) {
-    let n = Al.encode(e),
+    let n = kl.encode(e),
       r = t(n.length, 1) >>> 0;
-    return Tl().subarray(r, r + n.length).set(n), Q = n.length, r
+    return wl().subarray(r, r + n.length).set(n), Q = n.length, r
   }
   let r = e.length,
     i = t(r, 1) >>> 0,
-    a = Tl(),
+    a = wl(),
     o = 0;
   for (; o < r; o++) {
     let t = e.charCodeAt(o);
@@ -10417,68 +10294,68 @@ function Ml(e, t, n) {
   }
   if (o !== r) {
     o !== 0 && (e = e.slice(o)), i = n(i, r, r = o + e.length * 3, 1) >>> 0;
-    let t = Tl().subarray(i + o, i + r),
-      a = jl(e, t);
+    let t = wl().subarray(i + o, i + r),
+      a = Al(e, t);
     o += a.written, i = n(i, r, o, 1) >>> 0
   }
   return Q = o, i
 }
 
-function Nl(e) {
-  let t = Ml(e, G.__wbindgen_export_1, G.__wbindgen_export_2),
+function Ml(e) {
+  let t = jl(e, G.__wbindgen_export_1, G.__wbindgen_export_2),
     n = Q;
   G.set_discord_id(t, n)
 }
 
-function Pl(e) {
-  let t = Ml(e, G.__wbindgen_export_1, G.__wbindgen_export_2),
+function Nl(e) {
+  let t = jl(e, G.__wbindgen_export_1, G.__wbindgen_export_2),
     n = Q;
   G.set_fingerprint(t, n)
 }
 
-function Fl(e) {
-  let t = Ml(e, G.__wbindgen_export_1, G.__wbindgen_export_2),
+function Pl(e) {
+  let t = jl(e, G.__wbindgen_export_1, G.__wbindgen_export_2),
     n = Q;
   G.set_detected_bot(t, n)
 }
 
-function Il(e) {
+function Fl(e) {
   let t, n;
   try {
     let a = G.__wbindgen_add_to_stack_pointer(-16),
-      o = Ml(e, G.__wbindgen_export_1, G.__wbindgen_export_2),
+      o = jl(e, G.__wbindgen_export_1, G.__wbindgen_export_2),
       s = Q;
     G.get_pawtected_endpoint_payload(a, o, s);
-    var r = kl().getInt32(a + 0, !0),
-      i = kl().getInt32(a + 4, !0);
-    return t = r, n = i, El(r, i)
+    var r = Ol().getInt32(a + 0, !0),
+      i = Ol().getInt32(a + 4, !0);
+    return t = r, n = i, Tl(r, i)
   } finally {
     G.__wbindgen_add_to_stack_pointer(16), G.__wbindgen_export_3(t, n, 1)
   }
 }
 
-function Ll(e) {
+function Il(e) {
   G.set_user_id(e)
 }
 
-function Rl(e) {
+function Ll(e) {
   G.set_cf_likely_automated(e)
 }
 
-function zl(e) {
+function Rl(e) {
   G.set_automated_clicks(e)
 }
 
-function Bl(e) {
-  let t = Ml(e, G.__wbindgen_export_1, G.__wbindgen_export_2),
+function zl(e) {
+  let t = jl(e, G.__wbindgen_export_1, G.__wbindgen_export_2),
     n = Q;
   G.request_url(t, n)
 }
 
-function Vl(e) {
+function Bl(e) {
   G.set_automated_browser(e)
 }
-async function Hl(e, t) {
+async function Vl(e, t) {
   if (typeof Response == `function` && e instanceof Response) {
     if (typeof WebAssembly.instantiateStreaming == `function`) try {
       return await WebAssembly.instantiateStreaming(e, t)
@@ -10497,7 +10374,7 @@ async function Hl(e, t) {
   }
 }
 
-function Ul() {
+function Hl() {
   let e = {};
   return e.wbg = {}, e.wbg.__wbg_buffer_609cc3eee51ed158 = function(e) {
     let t = q(e).buffer;
@@ -10550,7 +10427,7 @@ function Ul() {
   }, e.wbg.__wbg_new_a12002a7f91c75be = function(e) {
     return J(new Uint8Array(q(e)))
   }, e.wbg.__wbg_newnoargs_105ed471475aaf50 = function(e, t) {
-    return J(Function(El(e, t)))
+    return J(Function(Tl(e, t)))
   }, e.wbg.__wbg_newwithbyteoffsetandlength_d97e637ebe145a9a = function(e, t, n) {
     return J(new Uint8Array(q(e), t >>> 0, n >>> 0))
   }, e.wbg.__wbg_newwithlength_a381634e90c276d4 = function(e) {
@@ -10565,7 +10442,7 @@ function Ul() {
     return J(t)
   }, e.wbg.__wbg_randomFillSync_ac0988aba3254290 = function() {
     return Y(function(e, t) {
-      q(e).randomFillSync(Ol(t))
+      q(e).randomFillSync(Dl(t))
     }, arguments)
   }, e.wbg.__wbg_require_60cc747a6bc5215a = function() {
     return Y(function() {
@@ -10611,41 +10488,41 @@ function Ul() {
   }, e.wbg.__wbindgen_number_get = function(e, t) {
     let n = q(t),
       r = typeof n == `number` ? n : void 0;
-    kl().setFloat64(e + 8, X(r) ? 0 : r, !0), kl().setInt32(e + 0, !X(r), !0)
+    Ol().setFloat64(e + 8, X(r) ? 0 : r, !0), Ol().setInt32(e + 0, !X(r), !0)
   }, e.wbg.__wbindgen_object_clone_ref = function(e) {
     return J(q(e))
   }, e.wbg.__wbindgen_object_drop_ref = function(e) {
-    Ol(e)
+    Dl(e)
   }, e.wbg.__wbindgen_string_new = function(e, t) {
-    return J(El(e, t))
+    return J(Tl(e, t))
   }, e.wbg.__wbindgen_throw = function(e, t) {
-    throw Error(El(e, t))
+    throw Error(Tl(e, t))
   }, e
 }
 
-function Wl(e, t) {
-  return G = e.exports, Gl.__wbindgen_wasm_module = t, Z = null, wl = null, G
+function Ul(e, t) {
+  return G = e.exports, Wl.__wbindgen_wasm_module = t, Z = null, Cl = null, G
 }
-async function Gl(e) {
+async function Wl(e) {
   if (G !== void 0) return G;
   e !== void 0 && (Object.getPrototypeOf(e) === Object.prototype ? {
     module_or_path: e
   } = e : console.warn(`using deprecated parameters for the initialization function; pass a single object instead`)), e === void 0 && (e = new URL(`pawtect_wasm_bg.wasm`, `` + import.meta.url));
-  let t = Ul();
+  let t = Hl();
   (typeof e == `string` || typeof Request == `function` && e instanceof Request || typeof URL == `function` && e instanceof URL) && (e = fetch(e));
   let {
     instance: n,
     module: r
-  } = await Hl(await e, t);
-  return Wl(n, r)
+  } = await Vl(await e, t);
+  return Ul(n, r)
 }
-var Kl = class {
+var Gl = class {
   constructor() {
-    o(this, `interval`, void 0), o(this, `storagesEmpty`, !1), o(this, `storages`, [new Jl, new Yl, new Xl, new Zl]), o(this, `pawtectLoaded`, void 0), o(this, `pawtectError`, void 0)
+    c(this, `interval`, void 0), c(this, `storagesEmpty`, !1), c(this, `storages`, [new ql, new Jl, new Yl, new Xl]), c(this, `pawtectLoaded`, void 0), c(this, `pawtectError`, void 0)
   }
   init() {
     this.interval === void 0 && (this.loadPawtect(), this.interval = setInterval(() => {
-      if (!(!W.data || this.storagesEmpty) && !localStorage.getItem(Jl.KEY)) {
+      if (!(!W.data || this.storagesEmpty) && !localStorage.getItem(ql.KEY)) {
         for (let e of this.storages) {
           let t = e.get();
           if (t) {
@@ -10677,12 +10554,12 @@ var Kl = class {
     return this.pawtectLoaded || (this.pawtectLoaded = (async () => {
       try {
         var e;
-        await Gl(ce), (e = W.data) != null && e.id && Ll(W.data.id);
+        await Wl(ce), (e = W.data) != null && e.id && Il(W.data.id);
         let t = fetch;
         return Object.assign(window, {
-          fetch: ql((e, n) => {
+          fetch: Kl((e, n) => {
             let r = null;
-            return e instanceof Request ? r = e.url : e instanceof URL ? r = e.href : typeof e == `string` && (r = e), r !== null && !r.startsWith(`/`) && Bl(r), t.call(window, e, n)
+            return e instanceof Request ? r = e.url : e instanceof URL ? r = e.href : typeof e == `string` && (r = e), r !== null && !r.startsWith(`/`) && zl(r), t.call(window, e, n)
           })
         }), !0
       } catch (e) {
@@ -10691,10 +10568,10 @@ var Kl = class {
     })()), this.pawtectLoaded
   }
   async setUserId(e) {
-    await this.loadPawtect(), Ll(e)
+    await this.loadPawtect(), Il(e)
   }
   async setCfLikelyAutomated(e) {
-    await this.loadPawtect(), Rl(e)
+    await this.loadPawtect(), Ll(e)
   }
   isPawtectReady() {
     return this.pawtectLoaded ?? Promise.resolve(!1)
@@ -10713,14 +10590,14 @@ var Kl = class {
       [n, r] = await Promise.all([jo(), dt().catch(e => (console.error(e), {
         bot: !1
       }))]);
-    return Ll(W.data.id), Nl(W.data.discordId ?? ``), Pl(n), Vl(t), zl(Yo.automatedClicks), r.bot && Fl(r.botKind ?? `unknown`), Il(e)
+    return Il(W.data.id), Ml(W.data.discordId ?? ``), Nl(n), Bl(t), Rl(Yo.automatedClicks), r.bot && Pl(r.botKind ?? `unknown`), Fl(e)
   }
 };
 
-function ql(e) {
+function Kl(e) {
   return e.bind().bind()
 }
-var Jl = class e {
+var ql = class e {
   static codec(e) {
     let t = new TextEncoder().encode(this.XOR_KEY),
       n = new Uint8Array(e.length);
@@ -10744,8 +10621,8 @@ var Jl = class e {
     localStorage.setItem(e.KEY, btoa(String.fromCharCode(...r)))
   }
 };
-o(Jl, `KEY`, `ui_layout_v3`), o(Jl, `XOR_KEY`, `wplace-prefs`);
-var Yl = class e {
+c(ql, `KEY`, `ui_layout_v3`), c(ql, `XOR_KEY`, `wplace-prefs`);
+var Jl = class e {
   get() {
     try {
       let t = sessionStorage.getItem(e.KEY);
@@ -10770,8 +10647,8 @@ var Yl = class e {
     sessionStorage.setItem(e.KEY, r)
   }
 };
-o(Yl, `KEY`, `nav.cursor`), o(Yl, `SHIFT`, 13);
-var Xl = class e {
+c(Jl, `KEY`, `nav.cursor`), c(Jl, `SHIFT`, 13);
+var Yl = class e {
   get() {
     let t = document.cookie.match(RegExp(`(?:^|; )` + e.KEY + `=([^;]*)`));
     if (t) try {
@@ -10789,10 +10666,10 @@ var Xl = class e {
     document.cookie = `${e.KEY}=${encodeURIComponent(n)};path=/;max-age=${e.MAX_AGE};SameSite=Lax`
   }
 };
-o(Xl, `KEY`, `_pf_uid`), o(Xl, `MAX_AGE`, 31536e3);
-var Zl = class {
+c(Yl, `KEY`, `_pf_uid`), c(Yl, `MAX_AGE`, 31536e3);
+var Xl = class {
     constructor() {
-      o(this, `packed`, void 0)
+      c(this, `packed`, void 0)
     }
     get() {
       if (this.packed !== void 0) return {
@@ -10804,7 +10681,7 @@ var Zl = class {
       this.packed = BigInt(e.timestamp) << 32n | BigInt(e.userId) & 4294967295n
     }
   },
-  $ = new Kl;
+  $ = new Gl;
 export {
-  ps as $, Qs as A, Is as B, xc as C, ac as D, $s as E, oc as F, ys as G, Bs as H, R as I, ss as J, xs as K, Js as L, Zs as M, nc as N, tc as O, sc as P, ds as Q, L as R, V as S, ic as T, zs as U, Ls as V, Rs as W, ms as X, N as Y, fs as Z, Ac as _, U as a, gt as at, Ec as b, $c as c, oe as ct, Xc as d, se as dt, is as et, H as f, m as ft, Nc as g, ae as gt, Pc as h, re as ht, pl as i, _t as it, rc as j, ec as k, el as l, ne as lt, Rc as m, p as mt, W as n, jo as nt, nl as o, mt as ot, Vc as p, h as pt, bs as q, fl as r, vt as rt, Qc as s, pt as st, $ as t, Yo as tt, tl as u, te as ut, Oc as v, Sc as w, kc as x, Dc as y, I as z
+  ps as $, Qs as A, Is as B, xc as C, ac as D, $s as E, oc as F, ys as G, Bs as H, R as I, ss as J, xs as K, Js as L, Zs as M, nc as N, tc as O, sc as P, ds as Q, L as R, V as S, ic as T, zs as U, Ls as V, Rs as W, ms as X, N as Y, fs as Z, Ac as _, U as a, gt as at, Ec as b, Qc as c, oe as ct, Yc as d, se as dt, is as et, H as f, m as ft, Nc as g, ae as gt, Pc as h, re as ht, fl as i, _t as it, rc as j, ec as k, $c as l, ne as lt, Rc as m, p as mt, W as n, jo as nt, tl as o, mt as ot, Vc as p, h as pt, bs as q, dl as r, vt as rt, Zc as s, pt as st, $ as t, Yo as tt, el as u, te as ut, Oc as v, Sc as w, kc as x, Dc as y, I as z
 };

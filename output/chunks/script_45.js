@@ -1,71 +1,99 @@
 import {
-  D as e,
-  Dt as t,
-  Et as n,
-  Ft as r,
-  G as i,
-  J as a,
-  O as o,
-  Q as s,
-  Tt as c,
-  X as l,
-  Xt as u,
-  Yt as d,
-  a as f,
-  lt as p,
-  rn as m,
-  yt as h
-} from "./CX37corp.js";
+  Ct as e,
+  D as t,
+  J as n,
+  Jt as r,
+  Nt as i,
+  O as a,
+  R as o,
+  U as s,
+  X as c,
+  Y as l,
+  _t as u,
+  a as d,
+  an as f,
+  b as p,
+  et as m,
+  qt as h,
+  st as g,
+  tn as _,
+  tt as v,
+  wt as y
+} from "./DhUcoEdH.js";
 import "./B8UK1oE5.js";
 import {
-  t as g
-} from "./BV8OTJwP.js";
+  n as b
+} from "./_fg_EdZg.js";
 import {
-  i as _
-} from "./6xrn4MXv.js";
-var v = s(`<span> </span>`),
-  y = s(`<span> </span> <!>`, 1);
+  t as x
+} from "./DLwxouB6.js";
 
-function b(s, b) {
-  u(b, !0);
-  let x = f(b, `showId`, 3, !0),
-    S = f(b, `class`, 3, ``),
-    C = r(() => {
-      var e;
-      return ((e = b.equippedNameCosmetic) == null || (e = e.resolved) == null ? void 0 : e.text) ?? ``
-    }),
-    w = r(() => _(b.id ?? 0));
-  g(s, {
-    get userId() {
-      return b.id
-    },
-    get class() {
-      return `inline-flex items-baseline gap-1.5 font-medium ${S()??``}`
-    },
-    children: (r, s) => {
-      var u = y(),
-        d = n(u),
-        f = c(d, !0);
-      m(d);
-      var g = t(d, 2),
-        _ = e => {
-          var t = v(),
-            n = c(t);
-          m(t), h(() => {
-            o(t, 1, `${p(w)??``} ${b.idClass??``??``}`), a(n, `#${b.id??``}`)
-          }), l(e, t)
-        };
-      i(g, e => {
-        x() && e(_)
-      }), h(() => {
-        o(d, 1, `inline-block ${(p(C)?p(w):``)??``}`), e(d, p(C)), a(f, b.name)
-      }), l(r, u)
-    },
-    $$slots: {
-      default: !0
-    }
-  }), d()
+function S(e) {
+  return `/dashboard/users?id=${encodeURIComponent(String(e))}`
 }
+
+function C(e) {
+  typeof window > `u` || window.open(S(e), `_blank`, `noopener,noreferrer`)
+}
+var w = c(`<span role="link" tabindex="0"><!></span>`),
+  T = c(`<a target="_blank" rel="noopener noreferrer"><!></a>`),
+  E = c(`<span><!></span>`);
+
+function D(c, m) {
+  r(m, !0);
+  let D = d(m, `mode`, 3, `anchor`),
+    O = d(m, `class`, 3, ``),
+    k = d(m, `linkClass`, 19, O),
+    A = d(m, `textClass`, 19, O),
+    j = i(() => m.userId != null && m.userId > 0 && b.hasAnyPermission(x.dashboard.users)),
+    M = i(() => m.userId == null ? `` : S(m.userId));
+
+  function N(e) {
+    e.stopPropagation()
+  }
+
+  function P(e) {
+    m.userId == null || m.userId <= 0 || (e.preventDefault(), e.stopPropagation(), C(m.userId))
+  }
+
+  function F(e) {
+    (e.key === `Enter` || e.key === ` `) && P(e)
+  }
+  var I = l(),
+    L = y(I),
+    R = r => {
+      var i = l(),
+        a = y(i),
+        c = r => {
+          var i = w(),
+            a = e(i);
+          o(a, () => m.children ?? f), _(i), u(() => {
+            t(i, 1, `cursor-pointer hover:underline ${k()}`), p(i, `title`, m.title)
+          }), v(`pointerdown`, i, N), v(`click`, i, P), v(`keydown`, i, F), n(r, i)
+        },
+        d = r => {
+          var i = T(),
+            a = e(i);
+          o(a, () => m.children ?? f), _(i), u(() => {
+            t(i, 1, `cursor-pointer hover:underline ${k()}`), p(i, `href`, g(M)), p(i, `title`, m.title)
+          }), v(`pointerdown`, i, N), v(`click`, i, N), n(r, i)
+        };
+      s(a, e => {
+        D() === `inline` ? e(c) : e(d, -1)
+      }), n(r, i)
+    },
+    z = r => {
+      var i = E(),
+        s = e(i);
+      o(s, () => m.children ?? f), _(i), u(() => {
+        t(i, 1, a(A())), p(i, `title`, m.title)
+      }), n(r, i)
+    };
+  s(L, e => {
+    g(j) ? e(R) : e(z, -1)
+  }), n(c, I), h()
+}
+m([`pointerdown`, `click`, `keydown`]);
 export {
-  b as t
+  S as n, D as t
 };
