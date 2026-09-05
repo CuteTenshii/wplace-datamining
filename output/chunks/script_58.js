@@ -648,7 +648,22 @@ Alliances have been completely rebuilt into a full community system with public 
 - Fixed JPEG and WebP overlays with embedded color profiles importing with different colors depending on browser decoding support.
 - Fixed headquarters overlays staying blank after graphics initialization failures or graphics context loss. Overlays now recover automatically while preserving their image, position, opacity, and pixel mode.
 `,
-  ye = Object.entries(Object.assign({
+  ye = e({
+    default: () => be
+  }),
+  be = `## Improvements
+
+- Selecting the current palette color again or pressing Z while building a map overlay now smoothly moves the map to a pixel of that color that still needs painting. Travel stops once that color is complete.
+- Faster progress calculations in the Overlays Gallery, especially for overlays sharing the same map area.
+- Progress calculations now continue when gallery cards change sort order.
+
+## Fixes
+
+- Fixed alliance details getting stuck loading after returning from the gallery. Failed loads now offer a retry button.
+- Removed the duplicate screen lock button when building overlays in headquarters and alliance drafts. On mobile, the progress bar now fills the available width.
+- Fixed slow loading when entering paint mode with large overlays containing many colors, including dithered images.
+`,
+  xe = Object.entries(Object.assign({
     "./markdown/1.0.0 - Welcome to WPlace!.md": t,
     "./markdown/1.1.0 - ✨ More Like You Update.md": r,
     "./markdown/1.1.1 - 🛠️ Quality & Cosmetics Improvements.md": a,
@@ -684,7 +699,8 @@ Alliances have been completely rebuilt into a full community system with public 
     "./markdown/1.6.3 - 🖼️ Overlay Studio Reliability and Imports.md": fe,
     "./markdown/1.6.4 - 🛠️ Alliance Award Eligibility.md": $,
     "./markdown/1.6.5 - 🎨 Overlay Studio and Alliance Tools.md": he,
-    "./markdown/1.6.6 - 🛠️ Alliance Overlay Details.md": _e
+    "./markdown/1.6.6 - 🛠️ Alliance Overlay Details.md": _e,
+    "./markdown/1.6.7 - 🛠️ Overlay Performance and Alliance Reliability.md": ye
   })).map(([e, t]) => {
     var n, r;
     let i = (n = e.split(`/`).at(-1)) == null ? void 0 : n.replace(`.md`, ``),
@@ -698,5 +714,5 @@ Alliances have been completely rebuilt into a full community system with public 
     numeric: !0
   }));
 export {
-  ye as t
+  xe as t
 };
