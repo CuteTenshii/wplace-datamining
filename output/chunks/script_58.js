@@ -602,8 +602,13 @@ Alliances have been completely rebuilt into a full community system with public 
   ge = `## Features
 
 - Added a live minimap to preview overlay artwork while editing.
-- The pixel-art editor now has an actions menu for selections, layers, undo and redo, color picking, and view controls. Open it with right-click or Shift+F10 on desktop or press and click on mobile.
+- The pixel-art editor now has an actions menu for selections, layers, undo and redo, color picking, and view controls. Open it with right-click or Shift+F10 on desktop or a long press on mobile.
 - Use 1-9 to show or hide layers, counting from the top of the layer list, without changing the selected layer. Customize these keys in Keyboard shortcuts; V still toggles the selected layer.
+- Alliance overlays now have pixel and layer editing, layered project imports, draft recovery, gallery search and sorting, personal tags, and duplication.
+- Members who manage alliance overlays can share a personal overlay with their alliance, preserving its artwork, size, opacity, and map position while keeping the personal original.
+- Headquarters and draft overlays now show live progress, incorrect and unpainted pixel highlights, remaining color counts, and personal opacity controls. Hold Alt or Option to peek at the canvas.
+- Headquarters and draft placements now support exact coordinates, dimensions, undo, and redo.
+- Added a saved "Show palette numbers" option in overlay More tools for the main and alliance palettes.
 
 ## Fixes
 
@@ -612,8 +617,38 @@ Alliances have been completely rebuilt into a full community system with public 
 - Fixed overlay colors changing in some browsers when saving or restoring editor layers and drafts, or importing PNG layers.
 - Fixed incorrect and unpainted overlay markers flickering during continuous painting or spreading onto completed pixels on devices with limited graphics memory.
 - Overlay progress and markers now wait for matching results after moving an overlay or changing its image or color settings.
+- Fixed pinch zoom jumping in the overlay editor when lifting or replacing a finger.
+- Fixed screen lock taps being ignored or toggling twice while painting.
+- Fixed overlays appearing shifted by one pixel despite showing complete progress.
+- Zoomed-out overlays retain their original colors across graphics memory limits, and profiled JPEG and WebP imports use consistent color handling.
+- Fixed overlay previews getting stuck when image decoding or local storage fails.
+- Headquarters overlays recover from graphics initialization failures and context loss.
+- Conflicting alliance artwork saves keep your editor draft available to review newer changes.
 `,
-  _e = Object.entries(Object.assign({
+  _e = e({
+    default: () => ve
+  }),
+  ve = `## Improvements
+
+- Added a "Show palette numbers" option in overlay More tools to hide or show remaining pixel counts on the main palette.
+- Alliance overlays now open the overlay details page.
+- Members with permission to manage alliance overlays can now share a personal overlay with their alliance from its details.
+- Alliance overlays now use the shared Overlay Studio pixel editor and build controls across the main canvas, headquarters, and alliance drafts.
+
+## Fixes
+
+- Fixed unnecessary progress refreshes and reduced lag while using large overlays.
+- Overlay statistics now load over unpainted map areas and refresh when alliance artwork changes.
+- Fixed pinch zoom jumping in the overlay creator on phones and tablets, including when lifting or replacing a finger during a gesture.
+- Fixed intermittent screen lock and unlock failures while painting, including taps with another finger on the canvas and delayed touch clicks that could toggle the lock back.
+- Fixed overlays appearing shifted by one pixel on the canvas even when progress showed 100% complete.
+- Fixed overlay galleries getting stuck loading when a browser image decoder stops responding. Previews now fall back to another decoder and release stalled resources.
+- Fixed blocked or interrupted local storage access leaving overlay previews loading indefinitely.
+- Fixed overlay colors changing between devices with different graphics memory limits. Zoomed-out overlays now retain template colors instead of blending neighboring pixels into new colors.
+- Fixed JPEG and WebP overlays with embedded color profiles importing with different colors depending on browser decoding support.
+- Fixed headquarters overlays staying blank after graphics initialization failures or graphics context loss. Overlays now recover automatically while preserving their image, position, opacity, and pixel mode.
+`,
+  ye = Object.entries(Object.assign({
     "./markdown/1.0.0 - Welcome to WPlace!.md": t,
     "./markdown/1.1.0 - ✨ More Like You Update.md": r,
     "./markdown/1.1.1 - 🛠️ Quality & Cosmetics Improvements.md": a,
@@ -648,7 +683,8 @@ Alliances have been completely rebuilt into a full community system with public 
     "./markdown/1.6.2 - 🖼️ Layer Opacity & Overlay Peek.md": ue,
     "./markdown/1.6.3 - 🖼️ Overlay Studio Reliability and Imports.md": fe,
     "./markdown/1.6.4 - 🛠️ Alliance Award Eligibility.md": $,
-    "./markdown/1.6.5 - 🎨 Overlay Editor Tools and Reliability.md": he
+    "./markdown/1.6.5 - 🎨 Overlay Studio and Alliance Tools.md": he,
+    "./markdown/1.6.6 - 🛠️ Alliance Overlay Details.md": _e
   })).map(([e, t]) => {
     var n, r;
     let i = (n = e.split(`/`).at(-1)) == null ? void 0 : n.replace(`.md`, ``),
@@ -662,5 +698,5 @@ Alliances have been completely rebuilt into a full community system with public 
     numeric: !0
   }));
 export {
-  _e as t
+  ye as t
 };

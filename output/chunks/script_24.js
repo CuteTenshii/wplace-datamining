@@ -1,47 +1,55 @@
 function e(e) {
-  let t;
+  let t, n = !1;
 
-  function n(n) {
-    if (e.disabled || t || n.changedTouches.length !== 1) {
+  function r(r) {
+    if (n = !0, e.disabled || t || r.changedTouches.length !== 1) {
       t = void 0;
       return
     }
-    let r = n.changedTouches[0];
+    let i = r.changedTouches[0];
     t = {
-      id: r.identifier,
-      x: r.clientX,
-      y: r.clientY
-    }
+      id: i.identifier,
+      x: i.clientX,
+      y: i.clientY
+    }, r.cancelable && r.preventDefault()
   }
 
-  function r(e) {
+  function i(e) {
     if (!t) return;
     let n = Array.from(e.changedTouches).find(e => e.identifier === (t == null ? void 0 : t.id));
     n && Math.hypot(n.clientX - t.x, n.clientY - t.y) > 10 && (t = void 0)
   }
 
-  function i(n) {
+  function a(n) {
     if (!t) return;
     let r = Array.from(n.changedTouches).find(e => e.identifier === (t == null ? void 0 : t.id));
     if (!r) return;
     let i = t;
     t = void 0;
     let a = e.getBoundingClientRect();
-    e.disabled || !n.cancelable || Math.hypot(r.clientX - i.x, r.clientY - i.y) > 10 || r.clientX < a.left || r.clientX > a.right || r.clientY < a.top || r.clientY > a.bottom || (n.preventDefault(), e.click())
+    e.disabled || Math.hypot(r.clientX - i.x, r.clientY - i.y) > 10 || r.clientX < a.left || r.clientX > a.right || r.clientY < a.top || r.clientY > a.bottom || (n.cancelable && n.preventDefault(), e.click())
   }
 
-  function a() {
+  function o(e) {
+    (e.pointerType === `mouse` || e.pointerType === `pen`) && (n = !1)
+  }
+
+  function s(e) {
+    n && e.detail > 0 && (e.preventDefault(), e.stopImmediatePropagation())
+  }
+
+  function c() {
     t = void 0
   }
-  return e.addEventListener(`touchstart`, n, {
-    passive: !0
-  }), e.addEventListener(`touchmove`, r, {
-    passive: !0
-  }), e.addEventListener(`touchend`, i, {
+  return e.addEventListener(`pointerdown`, o), e.addEventListener(`click`, s, !0), e.addEventListener(`touchstart`, r, {
     passive: !1
-  }), e.addEventListener(`touchcancel`, a), {
+  }), e.addEventListener(`touchmove`, i, {
+    passive: !0
+  }), e.addEventListener(`touchend`, a, {
+    passive: !1
+  }), e.addEventListener(`touchcancel`, c), {
     destroy() {
-      e.removeEventListener(`touchstart`, n), e.removeEventListener(`touchmove`, r), e.removeEventListener(`touchend`, i), e.removeEventListener(`touchcancel`, a)
+      e.removeEventListener(`pointerdown`, o), e.removeEventListener(`click`, s, !0), e.removeEventListener(`touchstart`, r), e.removeEventListener(`touchmove`, i), e.removeEventListener(`touchend`, a), e.removeEventListener(`touchcancel`, c)
     }
   }
 }

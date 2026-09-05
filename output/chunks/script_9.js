@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./HZZtbvvF.js", "./CX37corp.js", "./B031nzgk.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./D1l6TY9P.js", "./CX37corp.js", "./B_9kDHn5.js"]))) => i.map(i => d[i]);
 import {
   At as e,
   Ft as t,
@@ -14,10 +14,10 @@ import {
 } from "./CX37corp.js";
 import {
   a as d
-} from "./B031nzgk.js";
+} from "./B_9kDHn5.js";
 import {
   t as f
-} from "./Djc_-w3c.js";
+} from "./DSClyQF0.js";
 var p = `https://maps.wplace.live`,
   m = `8d582454-e5ec-4314-b1c2-89e460ac1d28`,
   h = `false`,
@@ -4162,7 +4162,7 @@ var Ws = 6e3,
             headers: n
           }
         }, a = await this.guardedFetch(e, await i());
-      if (a.headers.get(`x-device-reattest`) && d(() => import(`./HZZtbvvF.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2]), import.meta.url), a.status === I.FORBIDDEN && a.headers.get(`x-block-reason`) === `tor`) throw Error(f.tor_blocked());
+      if (a.headers.get(`x-device-reattest`) && d(() => import(`./D1l6TY9P.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2]), import.meta.url), a.status === I.FORBIDDEN && a.headers.get(`x-block-reason`) === `tor`) throw Error(f.tor_blocked());
       if (a.status === I.FORBIDDEN && a.headers.get(`x-block-reason`) === `integrity`) throw Error(f.request_integrity_blocked());
       let o = ((n = a.headers.get(`cf-mitigated`)) == null ? void 0 : n.toLowerCase()) === `challenge`;
       if (a.status === 403 && o) {
@@ -7030,7 +7030,7 @@ function gc(e) {
     }
     async updateAllianceTemplate(e, t) {
       let n = new FormData;
-      n.set(`name`, t.name), n.set(`audienceAllMembers`, String(t.audienceAllMembers)), n.set(`audienceRoles`, JSON.stringify(t.audienceRoles ?? [])), n.set(`audienceUserIds`, JSON.stringify(t.audienceUserIds ?? [])), n.set(`locations`, JSON.stringify(t.locations)), n.set(`opacity`, String(t.opacity)), n.set(`colorMetric`, t.colorMetric), n.set(`dithering`, String(t.dithering)), n.set(`colorPaletteMode`, t.colorPaletteMode), n.set(`pixelMode`, t.pixelMode), n.set(`image`, t.image, `alliance-template.png`);
+      n.set(`name`, t.name), n.set(`audienceAllMembers`, String(t.audienceAllMembers)), n.set(`audienceRoles`, JSON.stringify(t.audienceRoles ?? [])), n.set(`audienceUserIds`, JSON.stringify(t.audienceUserIds ?? [])), n.set(`locations`, JSON.stringify(t.locations)), n.set(`opacity`, String(t.opacity)), n.set(`colorMetric`, t.colorMetric), n.set(`dithering`, String(t.dithering)), n.set(`colorPaletteMode`, t.colorPaletteMode), n.set(`pixelMode`, t.pixelMode), n.set(`image`, t.image, `alliance-template.png`), t.expectedImageRevision && n.set(`expectedImageRevision`, t.expectedImageRevision), t.expectedUpdatedAt && n.set(`expectedUpdatedAt`, t.expectedUpdatedAt);
       let r = await this.request(`/alliance/templates/${e}`, {
         method: `PUT`,
         credentials: `include`,
@@ -7038,7 +7038,7 @@ function gc(e) {
       });
       if (r.status === I.OK) return fc(await r.json());
       let i = await r.json().catch(() => ({}));
-      throw i.error === `template_storage_limit_reached` ? Error(f.alliance_template_storage_limit_reached()) : i.error === `invalid_template_image` ? Error(f.alliance_template_invalid_image()) : i.error === `template_upload_rate_limited` ? Error(f.alliance_template_upload_rate_limited()) : r.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      throw i.error === `template_image_changed` ? Error(f.alliance_template_image_changed()) : i.error === `template_storage_limit_reached` ? Error(f.alliance_template_storage_limit_reached()) : i.error === `invalid_template_image` ? Error(f.alliance_template_invalid_image()) : i.error === `template_upload_rate_limited` ? Error(f.alliance_template_upload_rate_limited()) : r.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async deleteAllianceTemplate(e) {
       let t = await this.request(`/alliance/templates/${e}`, {
