@@ -334,7 +334,11 @@ varying highp vec2 v_source_coordinate;
 ${A}
 
 void main() {
-  vec2 texture_content_coordinate = v_source_coordinate * u_texture_content_size / u_source_size;
+  vec2 texture_content_coordinate = v_source_coordinate * (u_texture_content_size / u_source_size);
+  if (u_status_highlights_enabled) {
+    vec2 source_pixel = clamp(floor(v_source_coordinate), vec2(0.0), u_source_size - vec2(1.0));
+    texture_content_coordinate = floor(source_pixel * (u_texture_content_size / u_source_size)) + vec2(0.5);
+  }
   vec2 texture_coordinate = clamp(
     texture_content_coordinate,
     vec2(0.0),
@@ -404,7 +408,11 @@ out vec4 fragment_color;
 ${A}
 
 void main() {
-  vec2 texture_content_coordinate = v_source_coordinate * u_texture_content_size / u_source_size;
+  vec2 texture_content_coordinate = v_source_coordinate * (u_texture_content_size / u_source_size);
+  if (u_status_highlights_enabled) {
+    vec2 source_pixel = clamp(floor(v_source_coordinate), vec2(0.0), u_source_size - vec2(1.0));
+    texture_content_coordinate = floor(source_pixel * (u_texture_content_size / u_source_size)) + vec2(0.5);
+  }
   vec2 texture_coordinate = clamp(
     texture_content_coordinate,
     vec2(0.0),
@@ -542,7 +550,7 @@ ${o}
         p = !1;
       for (let t of l) {
         let r = this.prepareTile(e, t, f < w, u);
-        if (r === `uploaded` && f++, r === `deferred` && (p = !0), !t.texture || t.textureDirty) continue;
+        if (r === `uploaded` && f++, r === `deferred` && (p = !0), !t.texture) continue;
         e.uniform2f(this.uniforms.topLeft, t.topLeft[0], t.topLeft[1]), e.uniform2f(this.uniforms.topRight, t.topRight[0], t.topRight[1]), e.uniform2f(this.uniforms.bottomRight, t.bottomRight[0], t.bottomRight[1]), e.uniform2f(this.uniforms.bottomLeft, t.bottomLeft[0], t.bottomLeft[1]), e.activeTexture(e.TEXTURE0), e.bindTexture(e.TEXTURE_2D, t.texture), this.setTileMinification(e, t, !n.highlightColor && !c), e.uniform2f(this.uniforms.sourceSize, t.width, t.height);
         let [i, a] = this.getTextureContentDimensions(t, t.textureDownsample), [o, s] = this.getTextureDimensions(t, t.textureDownsample);
         e.uniform2f(this.uniforms.textureSize, o, s), e.uniform2f(this.uniforms.textureContentSize, i, a), e.drawArrays(e.TRIANGLES, 0, 6)
@@ -654,44 +662,56 @@ ${o}
               a = d + r * 4;
             t[a] = o.data[i], t[a + 1] = o.data[i + 1], t[a + 2] = o.data[i + 2], t[a + 3] = o.data[i + 3]
           }
-        if (this.applyStatusHighlightsToRow(e, c, t, d, n), i === n) continue;
+        if (this.applyStatusHighlightsToRow(e, a, t, d, n, r), i === n) continue;
         let f = d + (n - 1) * 4;
         for (let e = n; e < i; e++) t.set(t.subarray(f, f + 4), d + e * 4)
       }
     }
-    applyStatusHighlightsToRow(e, t, n, r, i) {
-      var a, o;
-      let s = (a = this.data) == null ? void 0 : a.statusHighlights,
-        c = (o = this.data) == null ? void 0 : o.pixels;
-      if (!s || !c) return;
+    applyStatusHighlightsToRow(e, t, n, r, i, a) {
+      var o, s;
+      let c = (o = this.data) == null ? void 0 : o.statusHighlights,
+        l = (s = this.data) == null ? void 0 : s.pixels;
+      if (!c || !l) return;
       let {
-        progress: l,
-        incorrect: u,
-        unpainted: d
-      } = s;
-      if (!u && !d || l.width !== c.width || l.height !== c.height) return;
-      let f = Math.floor(l.originX / l.tileSize),
-        p = Math.floor(l.originY / l.tileSize),
-        h = Math.floor((l.originX + l.width - 1) / l.tileSize) - f + 1,
-        g = l.originY + e.y + t,
-        _ = Math.floor(g / l.tileSize);
+        progress: u,
+        incorrect: d,
+        unpainted: f
+      } = c;
+      if (!d && !f || u.width !== l.width || u.height !== l.height) return;
+      let p = Math.ceil(t * e.height / a),
+        m = Math.ceil((t + 1) * e.height / a);
       for (let t = 0; t < i; t++) {
-        let a = Math.min(Math.floor(t * e.width / i), e.width - 1),
-          o = l.originX + e.x + a,
-          s = Math.floor(o / l.tileSize),
-          c = (_ - p) * h + (s - f),
-          v = c * 2,
-          y = c * 4;
-        if (c < 0 || v + 1 >= l.tileCoordinates.length || y + 3 >= l.tileBounds.length || l.tileCoordinates[v] !== s || l.tileCoordinates[v + 1] !== _) return;
-        let b = l.tileBounds[y],
-          x = l.tileBounds[y + 1],
-          S = l.tileBounds[y + 2],
-          C = o - (s * l.tileSize + b),
-          w = (g - (_ * l.tileSize + x)) * S + C,
-          T = m(l.statuses, l.tileStatusOffsets[c], w),
-          E = r + t * 4 + 3;
-        u && T === 3 ? n[E] = O : d && T === 2 && (n[E] = D)
+        let a = Math.ceil(t * e.width / i),
+          o = Math.ceil((t + 1) * e.width / i),
+          s;
+        pixels: for (let t = p; t < m; t++)
+          for (let n = a; n < o; n++) {
+            let r = this.getProgressStatus(u, e.x + n, e.y + t),
+              i = d && r === 3 ? O : f && r === 2 ? D : void 0;
+            if (i === void 0 || s !== void 0 && s !== i) {
+              s = void 0;
+              break pixels
+            }
+            s = i
+          }
+        s !== void 0 && (n[r + t * 4 + 3] = s)
       }
+    }
+    getProgressStatus(e, t, n) {
+      let r = Math.floor(e.originX / e.tileSize),
+        i = Math.floor(e.originY / e.tileSize),
+        a = Math.floor((e.originX + e.width - 1) / e.tileSize) - r + 1,
+        o = e.originX + t,
+        s = e.originY + n,
+        c = Math.floor(o / e.tileSize),
+        l = Math.floor(s / e.tileSize),
+        u = (l - i) * a + (c - r),
+        d = u * 2,
+        f = u * 4;
+      if (u < 0 || d + 1 >= e.tileCoordinates.length || f + 3 >= e.tileBounds.length || e.tileCoordinates[d] !== c || e.tileCoordinates[d + 1] !== l) return 0;
+      let p = o - (c * e.tileSize + e.tileBounds[f]),
+        h = s - (l * e.tileSize + e.tileBounds[f + 1]);
+      return m(e.statuses, e.tileStatusOffsets[u], h * e.tileBounds[f + 2] + p)
     }
     markSourceTilesDirty() {
       for (let e of this.sourceTiles) e.textureDirty = !0
