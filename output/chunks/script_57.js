@@ -394,10 +394,10 @@ Alliances have been completely rebuilt into a full community system with public 
 - Fixed an issue that prevented overlays with role-restricted audiences from being saved.
 - Alliance overlays now preserve full-resolution source images so their quantized colors stay consistent with matching personal overlays.
 `,
-  te = e({
-    default: () => H
+  H = e({
+    default: () => U
   }),
-  H = `### Improvements
+  U = `### Improvements
 
 - Alliance Coin balances, prices, and notifications now use a dedicated coin icon, and Droplets have a refreshed icon.
 
@@ -406,10 +406,10 @@ Alliances have been completely rebuilt into a full community system with public 
 - Fixed an issue where personal overlays could appear duplicated, rotated, or show incorrect pixels on some mobile devices.
 - Fixed an issue where reopened alliance picture or banner drafts could fail to finish.
 `,
-  U = e({
-    default: () => W
+  W = e({
+    default: () => G
   }),
-  W = `### New features
+  G = `### New features
 
 - **Premium cosmetics:** Users can now purchase Prism - our new premium currency, spend it on premium cosmetics.
 
@@ -430,7 +430,7 @@ Alliances have been completely rebuilt into a full community system with public 
 - The mobile painting lock now keeps alliance canvases still while painting with a stylus.
 - Fixed an issue where deleting an account could time out while removing its associated data.
 `,
-  G = e({
+  te = e({
     default: () => K
   }),
   K = `### Improvements
@@ -589,17 +589,17 @@ Alliances have been completely rebuilt into a full community system with public 
 - Duplicating a template now also copies its editor layers, keeping the duplicate fully editable.
 - Fixed an issue where users with previous web-store purchases could not delete their accounts.
 `,
-  $ = e({
-    default: () => me
+  me = e({
+    default: () => he
   }),
-  me = `## Fixes
+  he = `## Fixes
 
 - Discord moderators and leaders now count as eligible alliance members for membership awards.
 `,
-  he = e({
-    default: () => ge
+  ge = e({
+    default: () => _e
   }),
-  ge = `## Features
+  _e = `## Features
 
 - Added a live minimap to preview overlay artwork while editing.
 - The pixel-art editor now has an actions menu for selections, layers, undo and redo, color picking, and view controls. Open it with right-click or Shift+F10 on desktop or a long press on mobile.
@@ -625,10 +625,10 @@ Alliances have been completely rebuilt into a full community system with public 
 - Headquarters overlays recover from graphics initialization failures and context loss.
 - Conflicting alliance artwork saves keep your editor draft available to review newer changes.
 `,
-  _e = e({
-    default: () => ve
+  ve = e({
+    default: () => ye
   }),
-  ve = `## Improvements
+  ye = `## Improvements
 
 - Added a "Show palette numbers" option in overlay More tools to hide or show remaining pixel counts on the main palette.
 - Alliance overlays now open the overlay details page.
@@ -648,10 +648,10 @@ Alliances have been completely rebuilt into a full community system with public 
 - Fixed JPEG and WebP overlays with embedded color profiles importing with different colors depending on browser decoding support.
 - Fixed headquarters overlays staying blank after graphics initialization failures or graphics context loss. Overlays now recover automatically while preserving their image, position, opacity, and pixel mode.
 `,
-  ye = e({
-    default: () => be
+  be = e({
+    default: () => $
   }),
-  be = `## Improvements
+  $ = `## Improvements
 
 - Selecting the current palette color again or pressing Z while building a map overlay now smoothly moves the map to a pixel of that color that still needs painting. Travel stops once that color is complete.
 - Faster progress calculations in the Overlays Gallery, especially for overlays sharing the same map area.
@@ -682,7 +682,28 @@ Alliances have been completely rebuilt into a full community system with public 
 
 - Removed the Colors vs Void event.
 `,
-  Ce = Object.entries(Object.assign({
+  Ce = e({
+    default: () => we
+  }),
+  we = `## Additions
+
+- Pixel-art Studio now supports cutting, copying, pasting, and duplicating selections. Pasted and duplicated pixels appear on separate layers that can be moved and resized.
+- Added a text tool with multiline text, font choices, size, bold, italic, alignment, spacing, and a preview before applying. Type directly on the Pixel-art Studio canvas with a text cursor, text selection, and a live preview. Enter adds a line, Ctrl/Cmd+Enter applies, and Esc cancels. Clicking another canvas point or switching tools applies the text as pixels.
+- Added linear and radial gradients with intermediate palette colors when dithering is off and two-color patterns when it is on. Start and end color options appear together above dithering. Gradients fill the current selection or the whole layer.
+
+## Improvements
+
+- Alliance overlay images and gallery thumbnails load faster.
+- The entire paint palette, including its tools and Paint button, can now be minimized to give the canvas more room. The minimized view has a larger color swatch, a clearer color name, and shows how many pixels of that color are left when painting an overlay.
+- On small phones, paint tools have larger touch targets, long labels fit within the panel, and the Paint button no longer crowds the buttons beside it. The color palette scrolls on short screens to keep every color within reach.
+
+## Fixes
+
+- Traveling to the next pixel of a color now centers it in the visible canvas above the paint palette, keeping it from being hidden behind the panel on mobile.
+- Removed extra space below game panels when mobile browser bars already provide bottom spacing.
+- Fixed the Pixel-art Studio view shifting when the canvas resizes after lifting your fingers at the end of a pinch zoom.
+`,
+  Te = Object.entries(Object.assign({
     "./markdown/1.0.0 - Welcome to WPlace!.md": t,
     "./markdown/1.1.0 - ✨ More Like You Update.md": r,
     "./markdown/1.1.1 - 🛠️ Quality & Cosmetics Improvements.md": a,
@@ -704,9 +725,9 @@ Alliances have been completely rebuilt into a full community system with public 
     "./markdown/1.4.6 - 🛠️ Map Interaction Reliability.md": I,
     "./markdown/1.4.7 - 🖼️ Alliance Overlays and Asset Studio.md": R,
     "./markdown/1.4.8 - 🛠️ Overlay Reliability.md": B,
-    "./markdown/1.4.9 - 🛍️ Mobile Overlay Fixes.md": te,
-    "./markdown/1.5.0 - 💎 Premium Cosmetics.md": U,
-    "./markdown/1.5.1 - 💎 More Prism Per Purchase.md": G,
+    "./markdown/1.4.9 - 🛍️ Mobile Overlay Fixes.md": H,
+    "./markdown/1.5.0 - 💎 Premium Cosmetics.md": W,
+    "./markdown/1.5.1 - 💎 More Prism Per Purchase.md": te,
     "./markdown/1.5.2 - 🛠️ Store Purchase Reliability.md": q,
     "./markdown/1.5.3 - 🛠️ Account and Payment Reliability.md": Y,
     "./markdown/1.5.4 - 💳 Checkout Payment Options.md": Z,
@@ -716,11 +737,12 @@ Alliances have been completely rebuilt into a full community system with public 
     "./markdown/1.6.1 - 🛠️ Overlay Reliability.md": ce,
     "./markdown/1.6.2 - 🖼️ Layer Opacity & Overlay Peek.md": ue,
     "./markdown/1.6.3 - 🖼️ Overlay Studio Reliability and Imports.md": fe,
-    "./markdown/1.6.4 - 🛠️ Alliance Award Eligibility.md": $,
-    "./markdown/1.6.5 - 🎨 Overlay Studio and Alliance Tools.md": he,
-    "./markdown/1.6.6 - 🛠️ Alliance Overlay Details.md": _e,
-    "./markdown/1.6.7 - 🛠️ Overlay Performance and Alliance Reliability.md": ye,
-    "./markdown/1.6.8 - 🎨 Studio Controls and Event Wrap-up.md": xe
+    "./markdown/1.6.4 - 🛠️ Alliance Award Eligibility.md": me,
+    "./markdown/1.6.5 - 🎨 Overlay Studio and Alliance Tools.md": ge,
+    "./markdown/1.6.6 - 🛠️ Alliance Overlay Details.md": ve,
+    "./markdown/1.6.7 - 🛠️ Overlay Performance and Alliance Reliability.md": be,
+    "./markdown/1.6.8 - 🎨 Studio Controls and Event Wrap-up.md": xe,
+    "./markdown/1.6.9 - 🧑‍🎨 More Studio Tools and Collapsible Palette.md": Ce
   })).map(([e, t]) => {
     var n, r;
     let i = (n = e.split(`/`).at(-1)) == null ? void 0 : n.replace(`.md`, ``),
@@ -734,5 +756,5 @@ Alliances have been completely rebuilt into a full community system with public 
     numeric: !0
   }));
 export {
-  Ce as t
+  Te as t
 };

@@ -26,7 +26,7 @@ import {
 import "./B8UK1oE5.js";
 import {
   t as C
-} from "./CQHMXUZ-.js";
+} from "./CMBoreem.js";
 import {
   t as w
 } from "./DxdGK6Xj.js";

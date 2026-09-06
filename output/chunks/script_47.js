@@ -25,7 +25,7 @@ import {
 import "./B8UK1oE5.js";
 import {
   t as S
-} from "./CQHMXUZ-.js";
+} from "./CMBoreem.js";
 var C = u(`<button><div class="tooltip-content z-50"> </div> <img class="size-full object-contain"/></button>`),
   w = u(`<button><div class="tooltip-content z-50"> </div> <span class="text-sm font-light">+</span></button>`);
 
