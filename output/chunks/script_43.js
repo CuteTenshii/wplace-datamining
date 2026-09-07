@@ -1,84 +1,71 @@
 import {
   Ct as e,
-  J as t,
-  Jt as n,
-  K as r,
-  Nt as i,
-  Tt as a,
-  U as o,
-  X as s,
-  _t as c,
-  a as l,
-  b as u,
-  et as d,
+  D as t,
+  E as n,
+  J as r,
+  Jt as i,
+  K as a,
+  Nt as o,
+  Tt as s,
+  U as c,
+  X as l,
+  _t as u,
+  a as d,
   qt as f,
   st as p,
   tn as m,
-  tt as h
+  wt as h
 } from "./DhUcoEdH.js";
 import "./B8UK1oE5.js";
 import {
-  i as g
-} from "./B6mxrfTb.js";
+  t as g
+} from "./Cw7mTCEQ.js";
 import {
-  t as _
-} from "./CMBoreem.js";
-import {
-  n as v
-} from "./Dtri3jFp.js";
-var y = s(`<span class="text-success">(Verified)</span>`),
-  b = s(`<a target="_blank" rel="noreferer" aria-label="Discord"><!></a>`),
-  x = s(`<button><!></button>`),
-  S = s(`<span class="tooltip h-4"><div class="tooltip-content"><span> </span> <!></div> <!></span>`);
+  i as _
+} from "./D4gsLWB5.js";
+var v = l(`<span> </span>`),
+  y = l(`<span> </span> <!>`, 1);
 
-function C(s, d) {
-  n(d, !0);
-  let C = l(d, `size`, 3, `md`),
-    w = i(() => !!d.id),
-    T = {
-      md: `size-5`,
-      sm: `size-4`
+function b(l, b) {
+  i(b, !0);
+  let x = d(b, `showId`, 3, !0),
+    S = d(b, `class`, 3, ``),
+    C = o(() => {
+      var e;
+      return ((e = b.equippedNameCosmetic) == null || (e = e.resolved) == null ? void 0 : e.text) ?? ``
+    }),
+    w = o(() => _(b.id ?? 0));
+  g(l, {
+    get userId() {
+      return b.id
     },
-    E = i(() => `-translate-y-0.5 opacity-70 ${T[C()]}`);
-  var D = S(),
-    O = e(D),
-    k = e(O),
-    A = e(k);
-  m(k);
-  var j = a(k, 2),
-    M = e => {
-      var n = y();
-      t(e, n)
-    };
-  o(j, e => {
-    p(w) && e(M)
-  }), m(O);
-  var N = a(O, 2),
-    P = n => {
-      var r = b(),
-        i = e(r);
-      v(i, {
-        get class() {
-          return p(E)
-        }
-      }), m(r), c(e => u(r, `href`, e), [() => `https://discord.com/users/${encodeURIComponent(d.id)}`]), t(n, r)
+    get class() {
+      return `inline-flex items-baseline gap-1.5 font-medium ${S()??``}`
     },
-    F = n => {
-      var r = x(),
-        i = e(r);
-      v(i, {
-        get class() {
-          return p(E)
-        }
-      }), m(r), h(`click`, r, async () => {
-        await navigator.clipboard.writeText(d.username), g.info(_.username_copied())
-      }), t(n, r)
-    };
-  o(N, e => {
-    p(w) ? e(P) : e(F, -1)
-  }), m(D), c(() => r(A, `Discord: ${d.username??``}`)), t(s, D), f()
+    children: (i, o) => {
+      var l = y(),
+        d = h(l),
+        f = e(d, !0);
+      m(d);
+      var g = s(d, 2),
+        _ = n => {
+          var i = v(),
+            o = e(i);
+          m(i), u(() => {
+            t(i, 1, `${p(w)??``} ${b.idClass??``??``}`), a(o, `#${b.id??``}`)
+          }), r(n, i)
+        };
+      c(g, e => {
+        x() && e(_)
+      }), u(() => {
+        t(d, 1, `inline-block ${(p(C)?p(w):``)??``}`), n(d, p(C)), a(f, b.name)
+      }), r(i, l)
+    },
+    $$slots: {
+      default: !0
+    }
+  }), f()
 }
-d([`click`]);
 export {
-  C as t
+  b as t
 };

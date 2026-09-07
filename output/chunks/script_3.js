@@ -1,5 +1,0 @@
-import "./DhUcoEdH.js";
-var e = `1788669974481`;
-export {
-  e as t
-};

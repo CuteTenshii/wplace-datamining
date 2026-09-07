@@ -1,108 +1,23 @@
 import {
-  A as e,
-  n as t
-} from "./B6mxrfTb.js";
-import {
-  c as n,
-  s as r
-} from "./DzlBwlvx.js";
-var i = [`captcha`, `unknown`, `login-denied`, `login-expired`, `login-failed`, `login-suspended`, `login-email`, `login-email-domain`, `login-email-unverified`];
+  J as e,
+  Z as t,
+  o as n,
+  v as r
+} from "./DhUcoEdH.js";
+import "./B8UK1oE5.js";
+var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  a = t(`<svg><path d="M40-160v-160q0-34 23.5-57t56.5-23h131q20 0 38 10t29 27q29 39 71.5 61t90.5 22q49 0 91.5-22t70.5-61q13-17 30.5-27t36.5-10h131q34 0 57 23t23 57v160H640v-91q-35 25-75.5 38T480-200q-43 0-84-13.5T320-252v92H40Zm440-160q-38 0-72-17.5T351-386q-17-25-42.5-39.5T253-440q22-37 93-58.5T480-520q63 0 134 21.5t93 58.5q-29 0-55 14.5T609-386q-22 32-56 49t-73 17ZM160-440q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T280-560q0 50-34.5 85T160-440Zm640 0q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T920-560q0 50-34.5 85T800-440ZM480-560q-50 0-85-35t-35-85q0-51 35-85.5t85-34.5q51 0 85.5 34.5T600-680q0 50-34.5 85T480-560Z"></path></svg>`);
 
-function a(e) {
-  if (e === null) return !1;
-  let t = e.trim().toLowerCase();
-  return t !== `0` && t !== `false`
-}
-
-function o(e) {
-  if (e === null || e.trim() === ``) return;
-  let t = Number(e);
-  return Number.isFinite(t) ? t : void 0
-}
-
-function s(t) {
-  let s = {
-      opaque: !0
-    },
-    c = t.searchParams,
-    l = o(c.get(`lat`)),
-    u = o(c.get(`lng`));
-  l !== void 0 && u !== void 0 && r({
-    lat: l,
-    lng: u
-  }) && (s.pos = {
-    lat: l,
-    lng: u
-  });
-  let d = o(c.get(`zoom`));
-  d !== void 0 && n(d) && (s.zoom = d);
-  let f = o(c.get(`season`));
-  f !== void 0 && Number.isInteger(f) && f >= 0 && f < e.length && (s.season = f);
-  let p = c.get(`opaque`);
-  s.opaque = p === null || a(p), a(c.get(`select`)) && (s.select = !0);
-  let m = c.get(`area`);
-  if (m) {
-    let e = m.split(`,`);
-    if (e.length === 4) {
-      let [t, n, r, i] = e.map(e => o(e));
-      t !== void 0 && n !== void 0 && r !== void 0 && i !== void 0 && (s.area = {
-        south: t,
-        west: n,
-        north: r,
-        east: i
-      })
-    }
-  }
-  a(c.get(`twitch-migration`)) && (s.twitchMigration = !0);
-  let h = c.get(`error`);
-  i.includes(h ?? ``) && (s.error = h);
-  let g = c.get(`domain`);
-  return s.error === `login-email-domain` && g && (s.errorDomain = g), s.discordLinked = a(c.get(`discord-linked`)), s.alliance = a(c.get(`alliance`)), s.store = a(c.get(`store`)), s.fastspringComplete = c.get(`fscNext`) === `fsc:invoke:complete`, s
-}
-
-function c(e, t) {
-  return e = new URL(e), e.searchParams.delete(`twa`), t.pos !== void 0 && (e.searchParams.set(`lat`, t.pos.lat.toString()), e.searchParams.set(`lng`, t.pos.lng.toString())), t.zoom !== void 0 && e.searchParams.set(`zoom`, t.zoom.toString()), t.season !== void 0 && e.searchParams.set(`season`, t.season.toString()), t.opaque !== void 0 && e.searchParams.set(`opaque`, t.opaque ? `1` : `0`), t.alliance !== void 0 && e.searchParams.set(`alliance`, t.alliance ? `1` : `0`), t.select && e.searchParams.set(`select`, `1`), e
-}
-var l;
-(function(e) {
-  async function n() {
-    if (!(i() || history.length < 3)) {
-      for (let e = 0; e < 50; e++) history.pushState({}, ``);
-      navigator.userActivation.hasBeenActive || await u(document, [`pointerdown`, `keydown`, `touchstart`, `click`]), !i() && history.go(-(history.length - 1))
-    }
-  }
-  e.reset = n;
-
-  function r() {
-    if (!(`navigation` in window)) return;
-    let e = window.navigation;
-    if (typeof e != `object` || !e || !(`entries` in e) || typeof e.entries != `function`) return;
-    let t = e.entries();
-    return Array.isArray(t) ? t.length : void 0
-  }
-
-  function i() {
-    var e;
-    if (t != null && (e = t.data) != null && e.id) return !0;
-    try {
-      let e = r();
-      return e !== void 0 && e >= history.length
-    } catch {
-      return !1
-    }
-  }
-})(l || (l = {}));
-
-function u(e, t, n) {
-  return new Promise(r => {
-    var i;
-    let a = i => {
-      var o;
-      t.forEach(t => e.removeEventListener(t, a)), n == null || (o = n.signal) == null || o.removeEventListener(`abort`, a), r(i)
-    };
-    t.forEach(t => e.addEventListener(t, a)), n == null || (i = n.signal) == null || i.addEventListener(`abort`, a)
-  })
+function o(t, o) {
+  let s = n(o, i);
+  var c = a();
+  r(c, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...s
+  })), e(t, c)
 }
 export {
-  s as n, c as t
+  o as t
 };

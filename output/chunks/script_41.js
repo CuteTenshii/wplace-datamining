@@ -1,141 +1,46 @@
 import {
-  A as e,
-  Ct as t,
-  D as n,
-  J as r,
-  Jt as i,
-  K as a,
-  Nt as o,
-  O as s,
-  R as c,
-  Tt as l,
-  U as u,
-  X as d,
-  _t as f,
-  a as p,
-  an as m,
-  b as h,
-  d as g,
-  nt as _,
-  qt as v,
-  st as y,
-  tn as b,
-  vt as x,
-  wt as S
+  Ct as e,
+  J as t,
+  Z as n,
+  _t as r,
+  a as i,
+  b as a,
+  o,
+  tn as s,
+  v as c
 } from "./DhUcoEdH.js";
 import "./B8UK1oE5.js";
-import {
-  t as C
-} from "./CMBoreem.js";
-import {
-  t as w
-} from "./DxdGK6Xj.js";
-var T = d(`<form method="dialog"><button class="btn btn-sm btn-circle">✕</button></form>`),
-  E = d(`<div class="flex items-center"></div> <div class="flex items-center justify-center overflow-hidden text-center"><!></div> <div class="flex items-start justify-end pt-1"><!></div>`, 1),
-  D = d(`<div class="ml-2 flex flex-col items-end gap-2 self-start pt-1 sm:translate-x-2"><!> <!></div>`),
-  O = d(`<div class="flex flex-1 items-center gap-3 overflow-hidden"><!></div> <!>`, 1),
-  k = d(`<header><!></header>`),
-  A = d(`<footer class="shrink-0 px-4 py-4 sm:px-6"><!></footer>`),
-  j = d(`<form method="dialog" class="modal-backdrop"><button> </button></form>`),
-  M = d(`<dialog><div><!> <div><!></div> <!></div> <!></dialog>`);
+var l = new Set([`$$slots`, `$$events`, `$$legacy`, `fill`]),
+  u = n(`<svg><path d="M216.856 16.597A208.502 208.502 0 0 0 164.042 0c-2.275 4.113-4.933 9.645-6.766 14.046-19.692-2.961-39.203-2.961-58.533 0-1.832-4.4-4.55-9.933-6.846-14.046a207.809 207.809 0 0 0-52.855 16.638C5.618 67.147-3.443 116.4 1.087 164.956c22.169 16.555 43.653 26.612 64.775 33.193A161.094 161.094 0 0 0 79.735 175.3a136.413 136.413 0 0 1-21.846-10.632 108.636 108.636 0 0 0 5.356-4.237c42.122 19.702 87.89 19.702 129.51 0a131.66 131.66 0 0 0 5.355 4.237 136.07 136.07 0 0 1-21.886 10.653c4.006 8.02 8.638 15.67 13.873 22.848 21.142-6.58 42.646-16.637 64.815-33.213 5.316-56.288-9.08-105.09-38.056-148.36ZM85.474 135.095c-12.645 0-23.015-11.805-23.015-26.18s10.149-26.2 23.015-26.2c12.867 0 23.236 11.804 23.015 26.2.02 14.375-10.148 26.18-23.015 26.18Zm85.051 0c-12.645 0-23.014-11.805-23.014-26.18s10.148-26.2 23.014-26.2c12.867 0 23.236 11.804 23.015 26.2 0 14.375-10.148 26.18-23.015 26.18Z"></path></svg>`);
 
-function N(d, N) {
-  i(N, !0);
-  let P = p(N, `open`, 15),
-    F = p(N, `hasBackdrop`, 3, !0),
-    I = p(N, `hasCloseButton`, 3, !0),
-    L = p(N, `hasHeaderBorder`, 3, !0),
-    R = p(N, `centerHeader`, 3, !1),
-    z = p(N, `isDynamicHeight`, 3, !1),
-    B = p(N, `useModalLayer`, 3, !0),
-    V = p(N, `closedBy`, 3, `any`),
-    H = p(N, `contentEl`, 15),
-    U = p(N, `disableCloseAnimation`, 3, !1),
-    W = o(() => N.mobileClasses ?? `max-sm:!w-full max-sm:!h-full max-sm:!max-w-none max-sm:!max-h-none max-sm:!rounded-none max-sm:pt-safe max-sm:pb-safe`),
-    G = o(() => w(`modal-box p-0 flex flex-col w-11/12 max-h-11/12 rounded-xl`, !z() && `h-11/12`, y(W), N.modalBoxClass));
-  var K = M(),
-    q = t(K),
-    J = t(q),
-    Y = e => {
-      var i = k(),
-        a = t(i),
-        o = e => {
-          var n = E(),
-            i = l(S(n), 2),
-            a = t(i);
-          c(a, () => N.header ?? m), b(i);
-          var o = l(i, 2),
-            s = t(o),
-            d = e => {
-              var t = T();
-              r(e, t)
-            };
-          u(s, e => {
-            I() && e(d)
-          }), b(o), r(e, n)
-        },
-        s = e => {
-          var n = O(),
-            i = S(n),
-            a = t(i);
-          c(a, () => N.header ?? m), b(i);
-          var o = l(i, 2),
-            s = e => {
-              var n = D(),
-                i = t(n),
-                a = e => {
-                  var t = T();
-                  r(e, t)
-                };
-              u(i, e => {
-                I() && e(a)
-              });
-              var o = l(i, 2);
-              c(o, () => N.headerAction ?? m), b(n), r(e, n)
-            };
-          u(o, e => {
-            (I() || N.headerAction) && e(s)
-          }), r(e, n)
-        };
-      u(a, e => {
-        R() ? e(o) : e(s, -1)
-      }), b(i), f(() => n(i, 1, `bg-base-100/70 sticky top-0 z-40 flex shrink-0 items-center justify-between px-4 py-4 backdrop-blur sm:px-6 ${L()?`border-base-content/10 border-b`:``} ${R()?`grid grid-cols-[2.5rem_1fr_2.5rem] px-4`:``} ${(N.headerClassName||``)??``}`)), r(e, i)
-    };
-  u(J, e => {
-    (N.header || I()) && e(Y)
-  });
-  var X = l(J, 2),
-    Z = t(X);
-  c(Z, () => N.children ?? m), b(X), g(X, e => H(e), () => H());
-  var Q = l(X, 2),
-    $ = e => {
-      var n = A(),
-        i = t(n);
-      c(i, () => N.footer), b(n), r(e, n)
-    };
-  u(Q, e => {
-    N.footer && e($)
-  }), b(q);
-  var ee = l(q, 2),
-    te = e => {
-      var n = j(),
-        i = t(n),
-        o = t(i, !0);
-      b(i), b(n), f(e => a(o, e), [() => C.close()]), r(e, n)
-    };
-  u(ee, e => {
-    F() && e(te)
-  }), b(K), e(K, () => e => {
-    x(() => {
-      P() && !e.open ? B() ? e.showModal() : e.show() : e.open && e.close()
-    })
-  }), f(e => {
-    n(K, 1, `modal ${U()?`no-close-animation`:``} ${N.dialogClass??``}`, `svelte-r6rf84`), h(K, `closedby`, V()), n(q, 1, s(y(G))), n(X, 1, e)
-  }, [() => s(w(`flex flex-1 flex-col overflow-x-hidden overflow-y-auto px-4 py-4 sm:px-6`, N.contentAreaClass))]), _(`close`, K, () => {
-    var e;
-    P(!1), (e = N.onclose) == null || e.call(N)
-  }), r(d, K), v()
+function d(n, d) {
+  let f = i(d, `fill`, 3, `#5865F2`),
+    p = o(d, l);
+  var m = u();
+  c(m, () => ({
+    viewBox: `0 0 256 199`,
+    width: `256`,
+    height: `199`,
+    xmlns: `http://www.w3.org/2000/svg`,
+    preserveAspectRatio: `xMidYMid`,
+    ...p
+  }));
+  var h = e(m);
+  s(m), r(() => a(h, `fill`, f())), t(n, m)
+}
+var f = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  p = n(`<svg><path d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"></path></svg>`);
+
+function m(e, n) {
+  let r = o(n, f);
+  var i = p();
+  c(i, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...r
+  })), t(e, i)
 }
 export {
-  N as t
+  d as n, m as t
 };

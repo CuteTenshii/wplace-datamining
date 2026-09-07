@@ -1,79 +1,58 @@
-import "./DhUcoEdH.js";
-var e = e => e;
+function e(e) {
+  let t, n = !1;
 
-function t(e) {
-  let t = e - 1;
-  return t * t * t + 1
-}
-
-function n(e) {
-  let t = typeof e == `string` && e.match(/^\s*(-?[\d.]+)([^\s]*)\s*$/);
-  return t ? [parseFloat(t[1]), t[2] || `px`] : [e, `px`]
-}
-
-function r(t, {
-  delay: n = 0,
-  duration: r = 400,
-  easing: i = e
-} = {}) {
-  let a = +getComputedStyle(t).opacity;
-  return {
-    delay: n,
-    duration: r,
-    easing: i,
-    css: e => `opacity: ${e*a}`
+  function r(r) {
+    if (n = !0, e.disabled || t || r.changedTouches.length !== 1) {
+      t = void 0;
+      return
+    }
+    let i = r.changedTouches[0];
+    t = {
+      id: i.identifier,
+      x: i.clientX,
+      y: i.clientY
+    }, r.cancelable && r.preventDefault()
   }
-}
 
-function i(e, {
-  delay: r = 0,
-  duration: i = 400,
-  easing: a = t,
-  x: o = 0,
-  y: s = 0,
-  opacity: c = 0
-} = {}) {
-  let l = getComputedStyle(e),
-    u = +l.opacity,
-    d = l.transform === `none` ? `` : l.transform,
-    f = u * (1 - c),
-    [p, m] = n(o),
-    [h, g] = n(s);
-  return {
-    delay: r,
-    duration: i,
-    easing: a,
-    css: (e, t) => `
-			transform: ${d} translate(${(1-e)*p}${m}, ${(1-e)*h}${g});
-			opacity: ${u-f*t}`
+  function i(e) {
+    if (!t) return;
+    let n = Array.from(e.changedTouches).find(e => e.identifier === (t == null ? void 0 : t.id));
+    n && Math.hypot(n.clientX - t.x, n.clientY - t.y) > 10 && (t = void 0)
   }
-}
 
-function a(e, {
-  delay: n = 0,
-  duration: r = 400,
-  easing: i = t,
-  axis: a = `y`
-} = {}) {
-  let o = getComputedStyle(e),
-    s = +o.opacity,
-    c = a === `y` ? `height` : `width`,
-    l = parseFloat(o[c]),
-    u = a === `y` ? [`top`, `bottom`] : [`left`, `right`],
-    d = u.map(e => `${e[0].toUpperCase()}${e.slice(1)}`),
-    f = parseFloat(o[`padding${d[0]}`]),
-    p = parseFloat(o[`padding${d[1]}`]),
-    m = parseFloat(o[`margin${d[0]}`]),
-    h = parseFloat(o[`margin${d[1]}`]),
-    g = parseFloat(o[`border${d[0]}Width`]),
-    _ = parseFloat(o[`border${d[1]}Width`]);
-  return {
-    delay: n,
-    duration: r,
-    easing: i,
-    css: e => `overflow: hidden;opacity: ${Math.min(e*20,1)*s};${c}: ${e*l}px;padding-${u[0]}: ${e*f}px;padding-${u[1]}: ${e*p}px;margin-${u[0]}: ${e*m}px;margin-${u[1]}: ${e*h}px;border-${u[0]}-width: ${e*g}px;border-${u[1]}-width: ${e*_}px;min-${c}: 0`
+  function a(n) {
+    if (!t) return;
+    let r = Array.from(n.changedTouches).find(e => e.identifier === (t == null ? void 0 : t.id));
+    if (!r) return;
+    let i = t;
+    t = void 0;
+    let a = e.getBoundingClientRect();
+    e.disabled || Math.hypot(r.clientX - i.x, r.clientY - i.y) > 10 || r.clientX < a.left || r.clientX > a.right || r.clientY < a.top || r.clientY > a.bottom || (n.cancelable && n.preventDefault(), e.click())
+  }
+
+  function o(e) {
+    (e.pointerType === `mouse` || e.pointerType === `pen`) && (n = !1)
+  }
+
+  function s(e) {
+    n && e.detail > 0 && (e.preventDefault(), e.stopImmediatePropagation())
+  }
+
+  function c() {
+    t = void 0
+  }
+  return e.addEventListener(`pointerdown`, o), e.addEventListener(`click`, s, !0), e.addEventListener(`touchstart`, r, {
+    passive: !1
+  }), e.addEventListener(`touchmove`, i, {
+    passive: !0
+  }), e.addEventListener(`touchend`, a, {
+    passive: !1
+  }), e.addEventListener(`touchcancel`, c), {
+    destroy() {
+      e.removeEventListener(`pointerdown`, o), e.removeEventListener(`click`, s, !0), e.removeEventListener(`touchstart`, r), e.removeEventListener(`touchmove`, i), e.removeEventListener(`touchend`, a), e.removeEventListener(`touchcancel`, c)
+    }
   }
 }
 export {
-  i as n, a as r, r as t
+  e as t
 };
