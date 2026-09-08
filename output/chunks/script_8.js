@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./ZBLy2woc.js", "./DhUcoEdH.js", "./4EQeTfjb.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./Db8GeGuc.js", "./DhUcoEdH.js", "./CX0f43EG.js"]))) => i.map(i => d[i]);
 import {
   At as e,
   Et as t,
@@ -14,24 +14,102 @@ import {
 } from "./DhUcoEdH.js";
 import {
   a as d
-} from "./4EQeTfjb.js";
+} from "./CX0f43EG.js";
 import {
   t as f
-} from "./CdYDHRdK.js";
-var p = `https://maps.wplace.live`,
-  m = `8d582454-e5ec-4314-b1c2-89e460ac1d28`,
-  h = `false`,
-  ee = `svHwYf228UcW8vPuQ575`,
-  te = `false`,
-  ne = `JFFRUM6NQ3-PJS0AAFC2_W`,
-  re = `pk_live_51RMHjBAtY4KIdFGnnJ9ZHjvgP68opqg7wlT7fA1HG3p91vfhVQyn6je810y5Cz3ggTycnJtFRkwHsYy1qJEyKRFW00x1i0iWMl`,
-  ie = `true`,
-  ae = `0x4AAAAAABpHqZ-6i7uL0nmG`,
-  oe = `https://backend.wplace.live`,
-  se = `https://backend.wplace.live/files`,
-  ce = `` + new URL(`../assets/pawtect_wasm_bg.8VPqYlMZ.wasm`, import.meta.url).href,
-  le = `2.0.0`,
-  g = {
+} from "./BsQK2KsC.js";
+import {
+  i as p,
+  r as m
+} from "./CSDtLXWh.js";
+var h = [`plop`, `smallPlop`, `bigPlop`, `smallDropplet`, `droppletAndPlop`, `notification1`, `playerNotification`, `purchaseSuccess`, `purchaseFail`],
+  ee = `wplace:settings:v1`;
+
+function te(e, t) {
+  return typeof e == `number` && Number.isFinite(e) ? Math.round(Math.min(100, Math.max(0, e))) : t
+}
+var g = new WeakMap,
+  _ = new WeakMap,
+  ne = new WeakMap,
+  re = new WeakMap,
+  ie = new WeakMap,
+  v = new class {
+    get alerts() {
+      return l(a(g, this))
+    }
+    set alerts(e) {
+      i(a(g, this), e, !0)
+    }
+    get artOpacity() {
+      return l(a(_, this))
+    }
+    set artOpacity(e) {
+      i(a(_, this), e, !0)
+    }
+    get showHotspots() {
+      return l(a(ne, this))
+    }
+    set showHotspots(e) {
+      i(a(ne, this), e, !0)
+    }
+    get showAllianceHqPins() {
+      return l(a(re, this))
+    }
+    set showAllianceHqPins(e) {
+      i(a(re, this), e, !0)
+    }
+    get sounds() {
+      return l(a(ie, this))
+    }
+    set sounds(e) {
+      i(a(ie, this), e, !0)
+    }
+    constructor() {
+      n(this, g, e(t({
+        charges: !0,
+        events: !0,
+        updates: !0
+      }))), n(this, _, e(100)), n(this, ne, e(!0)), n(this, re, e(!0)), n(this, ie, e(t(Object.fromEntries(h.map(e => [e, 50])))));
+      try {
+        var r;
+        let e = JSON.parse(localStorage.getItem(ee) ?? `{}`);
+        if (!e || typeof e != `object`) return;
+        for (let t of [`charges`, `events`, `updates`]) {
+          var i;
+          typeof((i = e.alerts) == null ? void 0 : i[t]) == `boolean` && (this.alerts[t] = e.alerts[t])
+        }
+        this.artOpacity = te(e.artOpacity, 100), typeof e.showHotspots == `boolean` && (this.showHotspots = e.showHotspots), typeof e.showAllianceHqPins == `boolean` && (this.showAllianceHqPins = e.showAllianceHqPins);
+        for (let t of h) this.sounds[t] = te((r = e.sounds) == null ? void 0 : r[t], 50)
+      } catch {}
+    }
+    save() {
+      try {
+        return localStorage.setItem(ee, JSON.stringify({
+          alerts: this.alerts,
+          artOpacity: this.artOpacity,
+          showHotspots: this.showHotspots,
+          showAllianceHqPins: this.showAllianceHqPins,
+          sounds: this.sounds
+        })), !0
+      } catch {
+        return !1
+      }
+    }
+  },
+  ae = `https://maps.wplace.live`,
+  oe = `8d582454-e5ec-4314-b1c2-89e460ac1d28`,
+  se = `false`,
+  ce = `svHwYf228UcW8vPuQ575`,
+  le = `false`,
+  ue = `JFFRUM6NQ3-PJS0AAFC2_W`,
+  de = `pk_live_51RMHjBAtY4KIdFGnnJ9ZHjvgP68opqg7wlT7fA1HG3p91vfhVQyn6je810y5Cz3ggTycnJtFRkwHsYy1qJEyKRFW00x1i0iWMl`,
+  fe = `true`,
+  pe = `0x4AAAAAABpHqZ-6i7uL0nmG`,
+  me = `https://backend.wplace.live`,
+  he = `https://backend.wplace.live/files`,
+  ge = `` + new URL(`../assets/pawtect_wasm_bg.8VPqYlMZ.wasm`, import.meta.url).href,
+  _e = `2.0.0`,
+  y = {
     Awesomium: `awesomium`,
     Cef: `cef`,
     CefSharp: `cefsharp`,
@@ -51,13 +129,13 @@ var p = `https://maps.wplace.live`,
     HeadlessChrome: `headless_chrome`,
     Unknown: `unknown`
   },
-  _ = class e extends Error {
+  b = class e extends Error {
     constructor(t, n) {
       super(n), this.state = t, this.name = `BotdError`, Object.setPrototypeOf(this, e.prototype)
     }
   };
 
-function ue(e, t) {
+function ve(e, t) {
   let n = {},
     r = {
       bot: !1
@@ -73,12 +151,12 @@ function ue(e, t) {
       botKind: o
     } : o && (s = {
       bot: !0,
-      botKind: g.Unknown
+      botKind: y.Unknown
     }), n[i] = s, s.bot && (r = s)
   }
   return [n, r]
 }
-async function de(e) {
+async function ye(e) {
   let t = {},
     n = Object.keys(e);
   return await Promise.all(n.map(async n => {
@@ -89,7 +167,7 @@ async function de(e) {
         state: 0
       }
     } catch (e) {
-      e instanceof _ ? t[n] = {
+      e instanceof b ? t[n] = {
         state: e.state,
         error: `${e.name}: ${e.message}`
       } : t[n] = {
@@ -100,143 +178,143 @@ async function de(e) {
   })), t
 }
 
-function fe({
+function be({
   appVersion: e
 }) {
   if (e.state !== 0) return !1;
-  if (/headless/i.test(e.value)) return g.HeadlessChrome;
-  if (/electron/i.test(e.value)) return g.Electron;
-  if (/slimerjs/i.test(e.value)) return g.SlimerJS
+  if (/headless/i.test(e.value)) return y.HeadlessChrome;
+  if (/electron/i.test(e.value)) return y.Electron;
+  if (/slimerjs/i.test(e.value)) return y.SlimerJS
 }
 
-function pe(e, t) {
+function xe(e, t) {
   return e.indexOf(t) !== -1
 }
 
-function v(e, t) {
+function x(e, t) {
   return e.indexOf(t) !== -1
 }
 
-function me(e, t) {
+function Se(e, t) {
   if (`find` in e) return e.find(t);
   for (let n = 0; n < e.length; n++)
     if (t(e[n], n, e)) return e[n]
 }
 
-function he(e) {
+function Ce(e) {
   return Object.getOwnPropertyNames(e)
 }
 
-function ge(e, ...t) {
+function we(e, ...t) {
   for (let n of t)
     if (typeof n == `string`) {
-      if (pe(e, n)) return !0
-    } else if (me(e, e => n.test(e)) != null) return !0;
+      if (xe(e, n)) return !0
+    } else if (Se(e, e => n.test(e)) != null) return !0;
   return !1
 }
 
-function _e(e) {
+function Te(e) {
   return e.reduce((e, t) => e + +!!t, 0)
 }
 
-function ve({
+function Ee({
   documentElementKeys: e
 }) {
   if (e.state !== 0) return !1;
-  if (ge(e.value, `selenium`, `webdriver`, `driver`)) return g.Selenium
+  if (we(e.value, `selenium`, `webdriver`, `driver`)) return y.Selenium
 }
 
-function ye({
+function De({
   errorTrace: e
 }) {
   if (e.state !== 0) return !1;
-  if (/PhantomJS/i.test(e.value)) return g.PhantomJS
+  if (/PhantomJS/i.test(e.value)) return y.PhantomJS
 }
 
-function be({
+function Oe({
   evalLength: e,
   browserKind: t,
   browserEngineKind: n
 }) {
   if (e.state !== 0 || t.state !== 0 || n.state !== 0) return;
   let r = e.value;
-  return n.value === `unknown` ? !1 : r === 37 && !pe([`webkit`, `gecko`], n.value) || r === 39 && !pe([`internet_explorer`], t.value) || r === 33 && !pe([`chromium`], n.value)
+  return n.value === `unknown` ? !1 : r === 37 && !xe([`webkit`, `gecko`], n.value) || r === 39 && !xe([`internet_explorer`], t.value) || r === 33 && !xe([`chromium`], n.value)
 }
 
-function xe({
+function ke({
   functionBind: e
 }) {
-  if (e.state === -2) return g.PhantomJS
+  if (e.state === -2) return y.PhantomJS
 }
 
-function Se({
+function Ae({
   languages: e
 }) {
-  if (e.state === 0 && e.value.length === 0) return g.HeadlessChrome
+  if (e.state === 0 && e.value.length === 0) return y.HeadlessChrome
 }
 
-function Ce({
+function je({
   mimeTypesConsistent: e
 }) {
-  if (e.state === 0 && !e.value) return g.Unknown
+  if (e.state === 0 && !e.value) return y.Unknown
 }
 
-function we({
+function Me({
   notificationPermissions: e,
   browserKind: t
 }) {
   if (t.state !== 0 || t.value !== `chrome`) return !1;
-  if (e.state === 0 && e.value) return g.HeadlessChrome
+  if (e.state === 0 && e.value) return y.HeadlessChrome
 }
 
-function Te({
+function Ne({
   pluginsArray: e
 }) {
-  if (e.state === 0 && !e.value) return g.HeadlessChrome
+  if (e.state === 0 && !e.value) return y.HeadlessChrome
 }
 
-function Ee({
+function Pe({
   pluginsLength: e,
   android: t,
   browserKind: n,
   browserEngineKind: r
 }) {
-  if (e.state === 0 && t.state === 0 && n.state === 0 && r.state === 0 && !(n.value !== `chrome` || t.value || r.value !== `chromium`) && e.value === 0) return g.HeadlessChrome
+  if (e.state === 0 && t.state === 0 && n.state === 0 && r.state === 0 && !(n.value !== `chrome` || t.value || r.value !== `chromium`) && e.value === 0) return y.HeadlessChrome
 }
 
-function De({
+function Fe({
   process: e
 }) {
   var t;
   if (e.state !== 0) return !1;
-  if (e.value.type === `renderer` || ((t = e.value.versions) == null ? void 0 : t.electron) != null) return g.Electron
+  if (e.value.type === `renderer` || ((t = e.value.versions) == null ? void 0 : t.electron) != null) return y.Electron
 }
 
-function Oe({
+function Ie({
   productSub: e,
   browserKind: t
 }) {
   if (e.state !== 0 || t.state !== 0) return !1;
-  if ((t.value === `chrome` || t.value === `safari` || t.value === `opera` || t.value === `wechat`) && e.value !== `20030107`) return g.Unknown
+  if ((t.value === `chrome` || t.value === `safari` || t.value === `opera` || t.value === `wechat`) && e.value !== `20030107`) return y.Unknown
 }
 
-function ke({
+function Le({
   userAgent: e
 }) {
   if (e.state !== 0) return !1;
-  if (/PhantomJS/i.test(e.value)) return g.PhantomJS;
-  if (/Headless/i.test(e.value)) return g.HeadlessChrome;
-  if (/Electron/i.test(e.value)) return g.Electron;
-  if (/slimerjs/i.test(e.value)) return g.SlimerJS
+  if (/PhantomJS/i.test(e.value)) return y.PhantomJS;
+  if (/Headless/i.test(e.value)) return y.HeadlessChrome;
+  if (/Electron/i.test(e.value)) return y.Electron;
+  if (/slimerjs/i.test(e.value)) return y.SlimerJS
 }
 
-function Ae({
+function Re({
   webDriver: e
 }) {
-  if (e.state === 0 && e.value) return g.HeadlessChrome
+  if (e.state === 0 && e.value) return y.HeadlessChrome
 }
 
-function je({
+function ze({
   webGL: e
 }) {
   if (e.state === 0) {
@@ -244,18 +322,18 @@ function je({
       vendor: t,
       renderer: n
     } = e.value;
-    if (t == `Brian Paul` && n == `Mesa OffScreen`) return g.HeadlessChrome
+    if (t == `Brian Paul` && n == `Mesa OffScreen`) return y.HeadlessChrome
   }
 }
 
-function Me({
+function Be({
   windowExternal: e
 }) {
   if (e.state !== 0) return !1;
-  if (/Sequentum/i.test(e.value)) return g.Sequentum
+  if (/Sequentum/i.test(e.value)) return y.Sequentum
 }
 
-function Ne({
+function Ve({
   windowSize: e,
   documentFocus: t
 }) {
@@ -264,10 +342,10 @@ function Ne({
     outerWidth: n,
     outerHeight: r
   } = e.value;
-  if (t.value && n === 0 && r === 0) return g.HeadlessChrome
+  if (t.value && n === 0 && r === 0) return y.HeadlessChrome
 }
 
-function Pe({
+function He({
   distinctiveProps: e
 }) {
   if (e.state !== 0) return !1;
@@ -276,97 +354,97 @@ function Pe({
   for (n in t)
     if (t[n]) return n
 }
-var Fe = {
-  detectAppVersion: fe,
-  detectDocumentAttributes: ve,
-  detectErrorTrace: ye,
-  detectEvalLengthInconsistency: be,
-  detectFunctionBind: xe,
-  detectLanguagesLengthInconsistency: Se,
-  detectNotificationPermissions: we,
-  detectPluginsArray: Te,
-  detectPluginsLengthInconsistency: Ee,
-  detectProcess: De,
-  detectUserAgent: ke,
-  detectWebDriver: Ae,
-  detectWebGL: je,
-  detectWindowExternal: Me,
-  detectWindowSize: Ne,
-  detectMimeTypesConsistent: Ce,
-  detectProductSub: Oe,
-  detectDistinctiveProperties: Pe
+var Ue = {
+  detectAppVersion: be,
+  detectDocumentAttributes: Ee,
+  detectErrorTrace: De,
+  detectEvalLengthInconsistency: Oe,
+  detectFunctionBind: ke,
+  detectLanguagesLengthInconsistency: Ae,
+  detectNotificationPermissions: Me,
+  detectPluginsArray: Ne,
+  detectPluginsLengthInconsistency: Pe,
+  detectProcess: Fe,
+  detectUserAgent: Le,
+  detectWebDriver: Re,
+  detectWebGL: ze,
+  detectWindowExternal: Be,
+  detectWindowSize: Ve,
+  detectMimeTypesConsistent: je,
+  detectProductSub: Ie,
+  detectDistinctiveProperties: He
 };
 
-function Ie() {
+function We() {
   let e = navigator.appVersion;
-  if (e == null) throw new _(-1, `navigator.appVersion is undefined`);
+  if (e == null) throw new b(-1, `navigator.appVersion is undefined`);
   return e
 }
 
-function Le() {
-  if (document.documentElement === void 0) throw new _(-1, `document.documentElement is undefined`);
+function Ge() {
+  if (document.documentElement === void 0) throw new b(-1, `document.documentElement is undefined`);
   let {
     documentElement: e
   } = document;
-  if (typeof e.getAttributeNames != `function`) throw new _(-2, `document.documentElement.getAttributeNames is not a function`);
+  if (typeof e.getAttributeNames != `function`) throw new b(-2, `document.documentElement.getAttributeNames is not a function`);
   return e.getAttributeNames()
 }
 
-function Re() {
+function Ke() {
   try {
     null[0]()
   } catch (e) {
     if (e instanceof Error && e.stack != null) return e.stack.toString()
   }
-  throw new _(-3, `errorTrace signal unexpected behaviour`)
+  throw new b(-3, `errorTrace signal unexpected behaviour`)
 }
 
-function ze() {
+function qe() {
   return eval.toString().length
 }
 
-function Be() {
-  if (Function.prototype.bind === void 0) throw new _(-2, `Function.prototype.bind is undefined`);
+function Je() {
+  if (Function.prototype.bind === void 0) throw new b(-2, `Function.prototype.bind is undefined`);
   return Function.prototype.bind.toString()
 }
 
-function Ve() {
+function Ye() {
   var e;
   let t = window,
     n = navigator;
-  return _e([`webkitPersistentStorage` in n, `webkitTemporaryStorage` in n, n.vendor.indexOf(`Google`) === 0, `webkitResolveLocalFileSystemURL` in t, `BatteryManager` in t, `webkitMediaStream` in t, `webkitSpeechGrammar` in t]) >= 5 ? `chromium` : _e([`ApplePayError` in t, `CSSPrimitiveValue` in t, `Counter` in t, n.vendor.indexOf(`Apple`) === 0, `getStorageUpdates` in n, `WebKitMediaKeys` in t]) >= 4 ? `webkit` : _e([`buildID` in navigator, `MozAppearance` in (((e = document.documentElement) == null ? void 0 : e.style) ?? {}), `onmozfullscreenchange` in t, `mozInnerScreenX` in t, `CSSMozDocumentRule` in t, `CanvasCaptureMediaStream` in t]) >= 4 ? `gecko` : `unknown`
+  return Te([`webkitPersistentStorage` in n, `webkitTemporaryStorage` in n, n.vendor.indexOf(`Google`) === 0, `webkitResolveLocalFileSystemURL` in t, `BatteryManager` in t, `webkitMediaStream` in t, `webkitSpeechGrammar` in t]) >= 5 ? `chromium` : Te([`ApplePayError` in t, `CSSPrimitiveValue` in t, `Counter` in t, n.vendor.indexOf(`Apple`) === 0, `getStorageUpdates` in n, `WebKitMediaKeys` in t]) >= 4 ? `webkit` : Te([`buildID` in navigator, `MozAppearance` in (((e = document.documentElement) == null ? void 0 : e.style) ?? {}), `onmozfullscreenchange` in t, `mozInnerScreenX` in t, `CSSMozDocumentRule` in t, `CanvasCaptureMediaStream` in t]) >= 4 ? `gecko` : `unknown`
 }
 
-function He() {
+function Xe() {
   var e;
   let t = (e = navigator.userAgent) == null ? void 0 : e.toLowerCase();
-  return v(t, `edg/`) ? `edge` : v(t, `trident`) || v(t, `msie`) ? `internet_explorer` : v(t, `wechat`) ? `wechat` : v(t, `firefox`) ? `firefox` : v(t, `opera`) || v(t, `opr`) ? `opera` : v(t, `chrome`) ? `chrome` : v(t, `safari`) ? `safari` : `unknown`
+  return x(t, `edg/`) ? `edge` : x(t, `trident`) || x(t, `msie`) ? `internet_explorer` : x(t, `wechat`) ? `wechat` : x(t, `firefox`) ? `firefox` : x(t, `opera`) || x(t, `opr`) ? `opera` : x(t, `chrome`) ? `chrome` : x(t, `safari`) ? `safari` : `unknown`
 }
 
-function Ue() {
-  let e = Ve(),
+function Ze() {
+  let e = Ye(),
     t = e === `chromium`,
     n = e === `gecko`,
     r = window,
     i = navigator,
     a = `connection`;
-  return t ? _e([!(`SharedWorker` in r), i[a] && `ontypechange` in i[a], !(`sinkId` in new Audio)]) >= 2 : n ? _e([`onorientationchange` in r, `orientation` in r, /android/i.test(i.appVersion)]) >= 2 : !1
+  return t ? Te([!(`SharedWorker` in r), i[a] && `ontypechange` in i[a], !(`sinkId` in new Audio)]) >= 2 : n ? Te([`onorientationchange` in r, `orientation` in r, /android/i.test(i.appVersion)]) >= 2 : !1
 }
 
-function We() {
+function Qe() {
   return document.hasFocus !== void 0 && document.hasFocus()
 }
 
-function Ge() {
+function $e() {
   let e = window;
-  return _e([!(`MediaSettingsRange` in e), `RTCEncodedAudioFrame` in e, `` + e.Intl == `[object Intl]`, `` + e.Reflect == `[object Reflect]`]) >= 3
+  return Te([!(`MediaSettingsRange` in e), `RTCEncodedAudioFrame` in e, `` + e.Intl == `[object Intl]`, `` + e.Reflect == `[object Reflect]`]) >= 3
 }
 
-function Ke() {
+function et() {
   let e = navigator,
     t = [],
     n = e.language || e.userLanguage || e.browserLanguage || e.systemLanguage;
-  if (n !== void 0 && t.push([n]), Array.isArray(e.languages)) Ve() === `chromium` && Ge() || t.push(e.languages);
+  if (n !== void 0 && t.push([n]), Array.isArray(e.languages)) Ye() === `chromium` && $e() || t.push(e.languages);
   else if (typeof e.languages == `string`) {
     let n = e.languages;
     n && t.push(n.split(`,`))
@@ -374,97 +452,97 @@ function Ke() {
   return t
 }
 
-function qe() {
-  if (navigator.mimeTypes === void 0) throw new _(-1, `navigator.mimeTypes is undefined`);
+function tt() {
+  if (navigator.mimeTypes === void 0) throw new b(-1, `navigator.mimeTypes is undefined`);
   let {
     mimeTypes: e
   } = navigator, t = Object.getPrototypeOf(e) === MimeTypeArray.prototype;
   for (let n = 0; n < e.length; n++) t && (t = Object.getPrototypeOf(e[n]) === MimeType.prototype);
   return t
 }
-async function Je() {
-  if (window.Notification === void 0) throw new _(-1, `window.Notification is undefined`);
-  if (navigator.permissions === void 0) throw new _(-1, `navigator.permissions is undefined`);
+async function nt() {
+  if (window.Notification === void 0) throw new b(-1, `window.Notification is undefined`);
+  if (navigator.permissions === void 0) throw new b(-1, `navigator.permissions is undefined`);
   let {
     permissions: e
   } = navigator;
-  if (typeof e.query != `function`) throw new _(-2, `navigator.permissions.query is not a function`);
+  if (typeof e.query != `function`) throw new b(-2, `navigator.permissions.query is not a function`);
   try {
     let t = await e.query({
       name: `notifications`
     });
     return window.Notification.permission === `denied` && t.state === `prompt`
   } catch {
-    throw new _(-3, `notificationPermissions signal unexpected behaviour`)
+    throw new b(-3, `notificationPermissions signal unexpected behaviour`)
   }
 }
 
-function Ye() {
-  if (navigator.plugins === void 0) throw new _(-1, `navigator.plugins is undefined`);
-  if (window.PluginArray === void 0) throw new _(-1, `window.PluginArray is undefined`);
+function rt() {
+  if (navigator.plugins === void 0) throw new b(-1, `navigator.plugins is undefined`);
+  if (window.PluginArray === void 0) throw new b(-1, `window.PluginArray is undefined`);
   return navigator.plugins instanceof PluginArray
 }
 
-function Xe() {
-  if (navigator.plugins === void 0) throw new _(-1, `navigator.plugins is undefined`);
-  if (navigator.plugins.length === void 0) throw new _(-3, `navigator.plugins.length is undefined`);
+function it() {
+  if (navigator.plugins === void 0) throw new b(-1, `navigator.plugins is undefined`);
+  if (navigator.plugins.length === void 0) throw new b(-3, `navigator.plugins.length is undefined`);
   return navigator.plugins.length
 }
 
-function Ze() {
+function at() {
   let {
     process: e
   } = window, t = `window.process is`;
-  if (e === void 0) throw new _(-1, `${t} undefined`);
-  if (e && typeof e != `object`) throw new _(-3, `${t} not an object`);
+  if (e === void 0) throw new b(-1, `${t} undefined`);
+  if (e && typeof e != `object`) throw new b(-3, `${t} not an object`);
   return e
 }
 
-function Qe() {
+function ot() {
   let {
     productSub: e
   } = navigator;
-  if (e === void 0) throw new _(-1, `navigator.productSub is undefined`);
+  if (e === void 0) throw new b(-1, `navigator.productSub is undefined`);
   return e
 }
 
-function $e() {
-  if (navigator.connection === void 0) throw new _(-1, `navigator.connection is undefined`);
-  if (navigator.connection.rtt === void 0) throw new _(-1, `navigator.connection.rtt is undefined`);
+function st() {
+  if (navigator.connection === void 0) throw new b(-1, `navigator.connection is undefined`);
+  if (navigator.connection.rtt === void 0) throw new b(-1, `navigator.connection.rtt is undefined`);
   return navigator.connection.rtt
 }
 
-function et() {
+function ct() {
   return navigator.userAgent
 }
 
-function tt() {
-  if (navigator.webdriver == null) throw new _(-1, `navigator.webdriver is undefined`);
+function lt() {
+  if (navigator.webdriver == null) throw new b(-1, `navigator.webdriver is undefined`);
   return navigator.webdriver
 }
 
-function nt() {
+function ut() {
   let e = document.createElement(`canvas`);
-  if (typeof e.getContext != `function`) throw new _(-2, `HTMLCanvasElement.getContext is not a function`);
+  if (typeof e.getContext != `function`) throw new b(-2, `HTMLCanvasElement.getContext is not a function`);
   let t = e.getContext(`webgl`);
-  if (t === null) throw new _(-4, `WebGLRenderingContext is null`);
-  if (typeof t.getParameter != `function`) throw new _(-2, `WebGLRenderingContext.getParameter is not a function`);
+  if (t === null) throw new b(-4, `WebGLRenderingContext is null`);
+  if (typeof t.getParameter != `function`) throw new b(-2, `WebGLRenderingContext.getParameter is not a function`);
   return {
     vendor: t.getParameter(t.VENDOR),
     renderer: t.getParameter(t.RENDERER)
   }
 }
 
-function rt() {
-  if (window.external === void 0) throw new _(-1, `window.external is undefined`);
+function dt() {
+  if (window.external === void 0) throw new b(-1, `window.external is undefined`);
   let {
     external: e
   } = window;
-  if (typeof e.toString != `function`) throw new _(-2, `window.external.toString is not a function`);
+  if (typeof e.toString != `function`) throw new b(-2, `window.external.toString is not a function`);
   return e.toString()
 }
 
-function it() {
+function ft() {
   return {
     outerWidth: window.outerWidth,
     outerHeight: window.outerHeight,
@@ -473,92 +551,92 @@ function it() {
   }
 }
 
-function at() {
+function pt() {
   let e = {
-      [g.Awesomium]: {
+      [y.Awesomium]: {
         window: [`awesomium`]
       },
-      [g.Cef]: {
+      [y.Cef]: {
         window: [`RunPerfTest`]
       },
-      [g.CefSharp]: {
+      [y.CefSharp]: {
         window: [`CefSharp`]
       },
-      [g.CoachJS]: {
+      [y.CoachJS]: {
         window: [`emit`]
       },
-      [g.FMiner]: {
+      [y.FMiner]: {
         window: [`fmget_targets`]
       },
-      [g.Geb]: {
+      [y.Geb]: {
         window: [`geb`]
       },
-      [g.NightmareJS]: {
+      [y.NightmareJS]: {
         window: [`__nightmare`, `nightmare`]
       },
-      [g.Phantomas]: {
+      [y.Phantomas]: {
         window: [`__phantomas`]
       },
-      [g.PhantomJS]: {
+      [y.PhantomJS]: {
         window: [`callPhantom`, `_phantom`]
       },
-      [g.Rhino]: {
+      [y.Rhino]: {
         window: [`spawn`]
       },
-      [g.Selenium]: {
+      [y.Selenium]: {
         window: [`_Selenium_IDE_Recorder`, `_selenium`, `calledSelenium`, /^([a-z]){3}_.*_(Array|Promise|Symbol)$/],
         document: [`__selenium_evaluate`, `selenium-evaluate`, `__selenium_unwrapped`]
       },
-      [g.WebDriverIO]: {
+      [y.WebDriverIO]: {
         window: [`wdioElectron`]
       },
-      [g.WebDriver]: {
+      [y.WebDriver]: {
         window: [`webdriver`, `__webdriverFunc`, `__lastWatirAlert`, `__lastWatirConfirm`, `__lastWatirPrompt`, `_WEBDRIVER_ELEM_CACHE`, `ChromeDriverw`],
         document: [`__webdriver_script_fn`, `__driver_evaluate`, `__webdriver_evaluate`, `__fxdriver_evaluate`, `__driver_unwrapped`, `__webdriver_unwrapped`, `__fxdriver_unwrapped`, `__webdriver_script_fn`, `__webdriver_script_func`, `__webdriver_script_function`, `$cdc_asdjflasutopfhvcZLmcf`, `$cdc_asdjflasutopfhvcZLmcfl_`, `$chrome_asyncScriptInfo`, `__$webdriverAsyncExecutor`]
       },
-      [g.HeadlessChrome]: {
+      [y.HeadlessChrome]: {
         window: [`domAutomation`, `domAutomationController`]
       }
     },
     t, n = {},
-    r = he(window),
+    r = Ce(window),
     i = [];
-  for (t in window.document !== void 0 && (i = he(window.document)), e) {
+  for (t in window.document !== void 0 && (i = Ce(window.document)), e) {
     let a = e[t];
     if (a !== void 0) {
-      let e = a.window !== void 0 && ge(r, ...a.window),
-        o = a.document === void 0 || !i.length ? !1 : ge(i, ...a.document);
+      let e = a.window !== void 0 && we(r, ...a.window),
+        o = a.document === void 0 || !i.length ? !1 : we(i, ...a.document);
       n[t] = e || o
     }
   }
   return n
 }
-var ot = {
-    android: Ue,
-    browserKind: He,
-    browserEngineKind: Ve,
-    documentFocus: We,
-    userAgent: et,
-    appVersion: Ie,
-    rtt: $e,
-    windowSize: it,
-    pluginsLength: Xe,
-    pluginsArray: Ye,
-    errorTrace: Re,
-    productSub: Qe,
-    windowExternal: rt,
-    mimeTypesConsistent: qe,
-    evalLength: ze,
-    webGL: nt,
-    webDriver: tt,
-    languages: Ke,
-    notificationPermissions: Je,
-    documentElementKeys: Le,
-    functionBind: Be,
-    process: Ze,
-    distinctiveProps: at
+var mt = {
+    android: Ze,
+    browserKind: Xe,
+    browserEngineKind: Ye,
+    documentFocus: Qe,
+    userAgent: ct,
+    appVersion: We,
+    rtt: st,
+    windowSize: ft,
+    pluginsLength: it,
+    pluginsArray: rt,
+    errorTrace: Ke,
+    productSub: ot,
+    windowExternal: dt,
+    mimeTypesConsistent: tt,
+    evalLength: qe,
+    webGL: ut,
+    webDriver: lt,
+    languages: et,
+    notificationPermissions: nt,
+    documentElementKeys: Ge,
+    functionBind: Je,
+    process: at,
+    distinctiveProps: pt
   },
-  st = class {
+  ht = class {
     constructor() {
       this.components = void 0, this.detections = void 0
     }
@@ -570,36 +648,36 @@ var ot = {
     }
     detect() {
       if (this.components === void 0) throw Error(`BotDetector.detect can't be called before BotDetector.collect`);
-      let [e, t] = ue(this.components, Fe);
+      let [e, t] = ve(this.components, Ue);
       return this.detections = e, t
     }
     async collect() {
-      return this.components = await de(ot), this.components
+      return this.components = await ye(mt), this.components
     }
   };
 
-function ct() {
+function gt() {
   if (!(window.__fpjs_d_m || Math.random() >= .001)) try {
     let e = new XMLHttpRequest;
-    e.open(`get`, `https://m1.openfpcdn.io/botd/v${le}/npm-monitoring`, !0), e.send()
+    e.open(`get`, `https://m1.openfpcdn.io/botd/v${_e}/npm-monitoring`, !0), e.send()
   } catch (e) {
     console.error(e)
   }
 }
-async function lt({
+async function _t({
   monitoring: e = !0
 } = {}) {
-  e && ct();
-  let t = new st;
+  e && gt();
+  let t = new ht;
   return await t.collect(), t
 }
-var ut = null;
-async function dt() {
-  return await ft() ? {
+var vt = null;
+async function yt() {
+  return await bt() ? {
     bot: !1
-  } : (await pt()).detect()
+  } : (await xt()).detect()
 }
-async function ft() {
+async function bt() {
   var e;
   let t = navigator;
   if (!((e = t.brave) != null && e.isBrave) || !/Android|iPhone|iPad|iPod|Mobile/i.test(t.userAgent)) return !1;
@@ -610,42 +688,42 @@ async function ft() {
   }
 }
 
-function pt() {
-  return ut || (ut = lt({
+function xt() {
+  return vt || (vt = _t({
     monitoring: !1
-  })), ut
+  })), vt
 }
-mt.listeners = [], mt.createListener = e => () => {
+St.listeners = [], St.createListener = e => () => {
   let t = e(),
     n = {};
   for (let e in t) n[e] = t[e]();
   Object.assign(window, n)
-}, mt.init = () => mt.listeners.forEach(e => e());
+}, St.init = () => St.listeners.forEach(e => e());
 
-function mt(e) {}
-var ht = /; wv\)|FBAN|FBAV|Instagram|BytedanceWebview|musical_ly|Line\/|Snapchat|Twitter|MicroMessenger/i;
+function St(e) {}
+var Ct = /; wv\)|FBAN|FBAV|Instagram|BytedanceWebview|musical_ly|Line\/|Snapchat|Twitter|MicroMessenger/i;
 
-function gt() {
-  return !_t() && ht.test(navigator.userAgent)
+function wt() {
+  return !Tt() && Ct.test(navigator.userAgent)
 }
 
-function _t() {
+function Tt() {
   var e, t;
   return !!((e = window.Capacitor) != null && (t = e.isNativePlatform) != null && t.call(e))
 }
 
-function vt(e = void 0) {
+function Et(e = void 0) {
   let t = (e == null ? void 0 : e.userAgent) ?? navigator.userAgent,
     n = (e == null ? void 0 : e.vendor) ?? navigator.vendor;
   return `brave` in navigator ? `Brave` : /\bEdg(?:e|A|iOS)?\//.test(t) ? `Edge` : /\bOPR\/|\bOpera\//.test(t) ? `Opera` : /\bVivaldi\//.test(t) ? `Vivaldi` : /\bYaBrowser\//.test(t) ? `Yandex` : /\bSamsungBrowser\//.test(t) ? `Samsung Internet` : /\bUCBrowser\/|\bUCWEB\//.test(t) ? `UC Browser` : /\bDuckDuckGo\/|\bDdg\//.test(t) ? `DuckDuckGo` : getComputedStyle(document.documentElement).getPropertyValue(`--arc-palette-title`) ? `Arc` : /Firefox\/|FxiOS\//.test(t) ? `Firefox` : /Chrome\/|CriOS\//.test(t) && /google/i.test(n) ? `Chrome` : /Safari\//.test(t) && /apple/i.test(n) ? `Safari` : `Unknown`
 }
-var yt = void 0;
+var Dt = void 0;
 
-function bt() {
-  return yt || (yt = xt()), yt
+function Ot() {
+  return Dt || (Dt = kt()), Dt
 }
 
-function xt() {
+function kt() {
   let e = 0,
     t = [].constructor;
   try {
@@ -664,7 +742,7 @@ function xt() {
       return `Unknown`
   }
 }
-async function St() {
+async function At() {
   let e;
   try {
     e = document.createElement(`canvas`);
@@ -672,8 +750,8 @@ async function St() {
       willReadFrequently: !1
     });
     if (!t) throw Error(`canvas context blocked`);
-    let n = wt.replace(/!important/gm, ``);
-    Tt({
+    let n = Mt.replace(/!important/gm, ``);
+    Nt({
       canvas: e,
       context: t,
       area: {
@@ -693,14 +771,14 @@ async function St() {
     console.error(e);
     return
   } finally {
-    Ct(e)
+    jt(e)
   }
 }
 
-function Ct(e) {
+function jt(e) {
   e && (e.width = 0, e.height = 0, e.remove())
 }
-var wt = `
+var Mt = `
 	'Segoe Fluent Icons',
 	'Ink Free',
 	'Bahnschrift',
@@ -751,7 +829,7 @@ var wt = `
 	'Noto Color Emoji',
 	sans-serif !important
 `,
-  Tt = ({
+  Nt = ({
     canvas: e,
     context: t,
     strokeText: n = !1,
@@ -816,28 +894,28 @@ var wt = `
         height: a
       } = n;
       e.beginPath(), e.moveTo(d(r(), t, i), d(r(), t, a)), e.quadraticCurveTo(d(r(), t, i), d(r(), t, a), d(r(), t, i), d(r(), t, a)), e.stroke()
-    }, ne = (e, t, n, r) => {
+    }, g = (e, t, n, r) => {
       if (!(`ellipse` in e)) return;
       let {
         width: i,
         height: a
       } = n;
       e.beginPath(), e.ellipse(d(r(), t, i), d(r(), t, a), d(r(), t, Math.floor(i / 2)), d(r(), t, Math.floor(a / 2)), d(r(), t, 2 * Math.PI, !0), d(r(), t, 2 * Math.PI, !0), d(r(), t, 2 * Math.PI, !0)), e.stroke()
-    }, re = [h, ee, te];
-    bt() !== `WebKit` && re.push(ne), n && re.push(m), [...Array(a)].forEach(e => {
+    }, _ = [h, ee, te];
+    Ot() !== `WebKit` && _.push(g), n && _.push(m), [...Array(a)].forEach(e => {
       f(t, c, i, p, u), t.shadowBlur = d(u(), c, o, !0), t.shadowColor = p[d(u(), c, p.length)];
-      let n = re[d(u(), c, re.length)];
+      let n = _[d(u(), c, _.length)];
       n(t, c, i, u), t.fill()
     })
   },
-  Et = {
+  Pt = {
     7: [`Cambria Math`, `Lucida Console`],
     8: [`Aldhabi`, `Gadugi`, `Myanmar Text`, `Nirmala UI`],
     "8.1": [`Leelawadee UI`, `Javanese Text`, `Segoe UI Emoji`],
     10: [`HoloLens MDL2 Assets`, `Segoe MDL2 Assets`, `Bahnschrift`, `Ink Free`],
     11: [`Segoe Fluent Icons`]
   },
-  Dt = {
+  Ft = {
     "10.9": [`Helvetica Neue`, `Geneva`],
     "10.10": [`Kohinoor Devanagari Medium`, `Luminari`],
     "10.11": [`PingFang HK Light`],
@@ -847,37 +925,37 @@ var wt = `
     12: [`Noto Sans Gunjala Gondi Regular`, `Noto Sans Masaram Gondi Regular`, `Noto Serif Yezidi Regular`],
     13: [`Apple SD Gothic Neo ExtraBold`, `STIX Two Math Regular`, `STIX Two Text Regular`, `Noto Sans Canadian Aboriginal Regular`]
   },
-  Ot = {
+  It = {
     "Microsoft Outlook": [`MS Outlook`],
     "Adobe Acrobat": [`ZWAdobeF`],
     LibreOffice: [`Amiri`, `KACSTOffice`, `Liberation Mono`, `Source Code Pro`],
     OpenOffice: [`DejaVu Sans`, `Gentium Book Basic`, `OpenSymbol`]
   },
-  kt = Object.keys(Dt).map(e => Dt[e]).flat(),
-  At = Object.keys(Et).map(e => Et[e]).flat(),
-  jt = Object.keys(Ot).map(e => Ot[e]).flat(),
-  Mt = [`Arimo`, `Chilanka`, `Cousine`, `Jomolhari`, `MONO`, `Noto Color Emoji`, `Ubuntu`],
-  Nt = [`Dancing Script`, `Droid Sans Mono`, `Roboto`],
-  Pt = [...kt, ...At, ...Mt, ...Nt, ...jt].sort();
-async function Ft() {
+  Lt = Object.keys(Ft).map(e => Ft[e]).flat(),
+  Rt = Object.keys(Pt).map(e => Pt[e]).flat(),
+  zt = Object.keys(It).map(e => It[e]).flat(),
+  Bt = [`Arimo`, `Chilanka`, `Cousine`, `Jomolhari`, `MONO`, `Noto Color Emoji`, `Ubuntu`],
+  Vt = [`Dancing Script`, `Droid Sans Mono`, `Roboto`],
+  Ht = [...Lt, ...Rt, ...Bt, ...Vt, ...zt].sort();
+async function Ut() {
   return await (async e => {
     try {
       let t = [];
-      document.fonts.check(`0px "${It()}"`) || (t = e.reduce((e, t) => (document.fonts.check(`0px "${t}"`) && e.push(t), e), []));
+      document.fonts.check(`0px "${Wt()}"`) || (t = e.reduce((e, t) => (document.fonts.check(`0px "${t}"`) && e.push(t), e), []));
       let n = e.map(e => new FontFace(e, `local("${e}")`)),
         r = (await Promise.allSettled(n.map(e => e.load()))).reduce((e, t) => (t.status == `fulfilled` && e.push(t.value.family), e), []);
       return [...new Set([...t, ...r])].sort()
     } catch {
       return []
     }
-  })(Pt)
+  })(Ht)
 }
 
-function It() {
+function Wt() {
   return String.fromCharCode(Math.random() * 26 + 97) + Math.random().toString(36).slice(-7)
 }
-var Lt = `ALIASED_POINT_SIZE_RANGE.ALIASED_LINE_WIDTH_RANGE.STENCIL_VALUE_MASK.STENCIL_WRITEMASK.STENCIL_BACK_VALUE_MASK.STENCIL_BACK_WRITEMASK.MAX_TEXTURE_SIZE.MAX_VIEWPORT_DIMS.SUBPIXEL_BITS.MAX_VERTEX_ATTRIBS.MAX_VERTEX_UNIFORM_VECTORS.MAX_VARYING_VECTORS.MAX_COMBINED_TEXTURE_IMAGE_UNITS.MAX_VERTEX_TEXTURE_IMAGE_UNITS.MAX_TEXTURE_IMAGE_UNITS.MAX_FRAGMENT_UNIFORM_VECTORS.SHADING_LANGUAGE_VERSION.VENDOR.RENDERER.VERSION.MAX_CUBE_MAP_TEXTURE_SIZE.MAX_RENDERBUFFER_SIZE.MAX_3D_TEXTURE_SIZE.MAX_ELEMENTS_VERTICES.MAX_ELEMENTS_INDICES.MAX_TEXTURE_LOD_BIAS.MAX_DRAW_BUFFERS.MAX_FRAGMENT_UNIFORM_COMPONENTS.MAX_VERTEX_UNIFORM_COMPONENTS.MAX_ARRAY_TEXTURE_LAYERS.MAX_PROGRAM_TEXEL_OFFSET.MAX_VARYING_COMPONENTS.MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS.MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS.MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS.MAX_COLOR_ATTACHMENTS.MAX_SAMPLES.MAX_VERTEX_UNIFORM_BLOCKS.MAX_FRAGMENT_UNIFORM_BLOCKS.MAX_COMBINED_UNIFORM_BLOCKS.MAX_UNIFORM_BUFFER_BINDINGS.MAX_UNIFORM_BLOCK_SIZE.MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS.MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS.MAX_VERTEX_OUTPUT_COMPONENTS.MAX_FRAGMENT_INPUT_COMPONENTS.MAX_SERVER_WAIT_TIMEOUT.MAX_ELEMENT_INDEX.MAX_CLIENT_WAIT_TIMEOUT_WEBGL`.split(`.`).sort(),
-  Rt = {
+var Gt = `ALIASED_POINT_SIZE_RANGE.ALIASED_LINE_WIDTH_RANGE.STENCIL_VALUE_MASK.STENCIL_WRITEMASK.STENCIL_BACK_VALUE_MASK.STENCIL_BACK_WRITEMASK.MAX_TEXTURE_SIZE.MAX_VIEWPORT_DIMS.SUBPIXEL_BITS.MAX_VERTEX_ATTRIBS.MAX_VERTEX_UNIFORM_VECTORS.MAX_VARYING_VECTORS.MAX_COMBINED_TEXTURE_IMAGE_UNITS.MAX_VERTEX_TEXTURE_IMAGE_UNITS.MAX_TEXTURE_IMAGE_UNITS.MAX_FRAGMENT_UNIFORM_VECTORS.SHADING_LANGUAGE_VERSION.VENDOR.RENDERER.VERSION.MAX_CUBE_MAP_TEXTURE_SIZE.MAX_RENDERBUFFER_SIZE.MAX_3D_TEXTURE_SIZE.MAX_ELEMENTS_VERTICES.MAX_ELEMENTS_INDICES.MAX_TEXTURE_LOD_BIAS.MAX_DRAW_BUFFERS.MAX_FRAGMENT_UNIFORM_COMPONENTS.MAX_VERTEX_UNIFORM_COMPONENTS.MAX_ARRAY_TEXTURE_LAYERS.MAX_PROGRAM_TEXEL_OFFSET.MAX_VARYING_COMPONENTS.MAX_TRANSFORM_FEEDBACK_SEPARATE_COMPONENTS.MAX_TRANSFORM_FEEDBACK_INTERLEAVED_COMPONENTS.MAX_TRANSFORM_FEEDBACK_SEPARATE_ATTRIBS.MAX_COLOR_ATTACHMENTS.MAX_SAMPLES.MAX_VERTEX_UNIFORM_BLOCKS.MAX_FRAGMENT_UNIFORM_BLOCKS.MAX_COMBINED_UNIFORM_BLOCKS.MAX_UNIFORM_BUFFER_BINDINGS.MAX_UNIFORM_BLOCK_SIZE.MAX_COMBINED_VERTEX_UNIFORM_COMPONENTS.MAX_COMBINED_FRAGMENT_UNIFORM_COMPONENTS.MAX_VERTEX_OUTPUT_COMPONENTS.MAX_FRAGMENT_INPUT_COMPONENTS.MAX_SERVER_WAIT_TIMEOUT.MAX_ELEMENT_INDEX.MAX_CLIENT_WAIT_TIMEOUT_WEBGL`.split(`.`).sort(),
+  Kt = {
     EXT_clip_control: [`CLIP_DEPTH_MODE_EXT`, `CLIP_ORIGIN_EXT`, `LOWER_LEFT_EXT`, `UPPER_LEFT_EXT`, `NEGATIVE_ONE_TO_ONE_EXT`, `ZERO_TO_ONE_EXT`],
     EXT_color_buffer_half_float: [`RGB16F_EXT`, `RGBA16F_EXT`, `FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT`, `UNSIGNED_NORMALIZED_EXT`],
     EXT_depth_clamp: [`DEPTH_CLAMP_EXT`],
@@ -902,22 +980,22 @@ var Lt = `ALIASED_POINT_SIZE_RANGE.ALIASED_LINE_WIDTH_RANGE.STENCIL_VALUE_MASK.S
     ANGLE_instanced_arrays: [`VERTEX_ATTRIB_ARRAY_DIVISOR_ANGLE`],
     EXT_blend_minmax: [`MIN_EXT`, `MAX_EXT`]
   },
-  zt = new Set([`CLIP_DEPTH_MODE_EXT`, `CLIP_ORIGIN_EXT`, `DEPTH_CLAMP_EXT`, `GPU_DISJOINT_EXT`, `POLYGON_OFFSET_CLAMP_EXT`, `MAX_TEXTURE_MAX_ANISOTROPY_EXT`, `FRAGMENT_SHADER_DERIVATIVE_HINT_OES`, `VERTEX_ARRAY_BINDING_OES`, `MAX_DUAL_SOURCE_DRAW_BUFFERS_WEBGL`, `UNMASKED_RENDERER_WEBGL`, `UNMASKED_VENDOR_WEBGL`, `MAX_COLOR_ATTACHMENTS_WEBGL`, `MAX_DRAW_BUFFERS_WEBGL`]);
-async function Bt() {
+  qt = new Set([`CLIP_DEPTH_MODE_EXT`, `CLIP_ORIGIN_EXT`, `DEPTH_CLAMP_EXT`, `GPU_DISJOINT_EXT`, `POLYGON_OFFSET_CLAMP_EXT`, `MAX_TEXTURE_MAX_ANISOTROPY_EXT`, `FRAGMENT_SHADER_DERIVATIVE_HINT_OES`, `VERTEX_ARRAY_BINDING_OES`, `MAX_DUAL_SOURCE_DRAW_BUFFERS_WEBGL`, `UNMASKED_RENDERER_WEBGL`, `UNMASKED_VENDOR_WEBGL`, `MAX_COLOR_ATTACHMENTS_WEBGL`, `MAX_DRAW_BUFFERS_WEBGL`]);
+async function Jt() {
   let e, t, n, r;
   try {
     let i = window,
       a = i.document;
     `OffscreenCanvas` in window ? (e = new i.OffscreenCanvas(256, 256), t = new i.OffscreenCanvas(256, 256)) : (e = a.createElement(`canvas`), t = a.createElement(`canvas`));
-    let o = Ht(e, `webgl`),
-      s = Ht(t, `webgl2`);
+    let o = Xt(e, `webgl`),
+      s = Xt(t, `webgl2`);
     if (n = o, r = s, !o) return;
     let c = (e, t) => {
         if (e) return {
-          LOW_FLOAT: y(() => e.getShaderPrecisionFormat(e[t], e.LOW_FLOAT)),
-          MEDIUM_FLOAT: y(() => e.getShaderPrecisionFormat(e[t], e.MEDIUM_FLOAT)),
-          HIGH_FLOAT: y(() => e.getShaderPrecisionFormat(e[t], e.HIGH_FLOAT)),
-          HIGH_INT: y(() => e.getShaderPrecisionFormat(e[t], e.HIGH_INT))
+          LOW_FLOAT: S(() => e.getShaderPrecisionFormat(e[t], e.LOW_FLOAT)),
+          MEDIUM_FLOAT: S(() => e.getShaderPrecisionFormat(e[t], e.MEDIUM_FLOAT)),
+          HIGH_FLOAT: S(() => e.getShaderPrecisionFormat(e[t], e.HIGH_FLOAT)),
+          HIGH_INT: S(() => e.getShaderPrecisionFormat(e[t], e.HIGH_INT))
         }
       },
       l = (e, t) => {
@@ -925,7 +1003,7 @@ async function Bt() {
         if (!t) return n;
         for (let r in t) {
           let i = t[r];
-          n[e + `.` + r + `.precision`] = i ? y(() => i.precision) : void 0, n[e + `.` + r + `.rangeMax`] = i ? y(() => i.rangeMax) : void 0, n[e + `.` + r + `.rangeMin`] = i ? y(() => i.rangeMin) : void 0
+          n[e + `.` + r + `.precision`] = i ? S(() => i.precision) : void 0, n[e + `.` + r + `.rangeMax`] = i ? S(() => i.rangeMax) : void 0, n[e + `.` + r + `.rangeMin`] = i ? S(() => i.rangeMin) : void 0
         }
         return n
       },
@@ -933,7 +1011,7 @@ async function Bt() {
         let t = {};
         if (!e) return t;
         let n = e;
-        for (let r of Lt) {
+        for (let r of Gt) {
           let i = n[r];
           if (i === void 0) continue;
           let a = e.getParameter(i);
@@ -943,23 +1021,23 @@ async function Bt() {
       },
       d = e => {
         if (!e) return [];
-        let t = y(() => e.getContextAttributes());
+        let t = S(() => e.getContextAttributes());
         return t ? Object.keys(t).sort().map(e => `${e}=${t[e]}`) : []
       },
       f = e => {
         if (!e) return [];
         let t = [];
-        for (let [n, r] of Object.entries(Rt)) {
-          let i = y(() => e.getExtension(n));
+        for (let [n, r] of Object.entries(Kt)) {
+          let i = S(() => e.getExtension(n));
           if (i)
             for (let n of r) {
               let r = i[n];
               if (typeof r != `number`) continue;
-              if (!zt.has(n)) {
+              if (!qt.has(n)) {
                 t.push(`${n}=${r}`);
                 continue
               }
-              let a = y(() => e.getParameter(r));
+              let a = S(() => e.getParameter(r));
               a == null ? t.push(`${n}=${r}`) : typeof a == `object` && `length` in a ? t.push(`${n}=${r}=${Array.from(a).join(`,`)}`) : t.push(`${n}=${r}=${a}`)
             }
         }
@@ -972,7 +1050,7 @@ async function Bt() {
           UNMASKED_RENDERER_WEBGL: e.getParameter(t.UNMASKED_RENDERER_WEBGL)
         }
       },
-      m = e => e && y(() => e.getSupportedExtensions()) || [],
+      m = e => e && S(() => e.getSupportedExtensions()) || [],
       h = {
         ...u(o),
         ...p(o)
@@ -998,11 +1076,11 @@ async function Bt() {
     console.log(e);
     return
   } finally {
-    Vt(e, n), Vt(t, r)
+    Yt(e, n), Yt(t, r)
   }
 }
 
-function y(e) {
+function S(e) {
   try {
     return e()
   } catch {
@@ -1010,7 +1088,7 @@ function y(e) {
   }
 }
 
-function Vt(e, t) {
+function Yt(e, t) {
   if (e) {
     try {
       var n;
@@ -1020,7 +1098,7 @@ function Vt(e, t) {
   }
 }
 
-function Ht(e, t) {
+function Xt(e, t) {
   try {
     if (t == `webgl2`) {
       let t = e.getContext(`webgl2`);
@@ -1033,47 +1111,47 @@ function Ht(e, t) {
     return
   }
 }
-var Ut = `client_timeout`,
-  Wt = `network_connection`,
-  Gt = `network_abort`,
-  Kt = `csp_block`,
-  qt = `invalid_endpoint`,
-  Jt = `handle_agent_data`,
-  Yt = `script_load_fail`,
-  Xt = `bad_response_format`,
-  Zt = `api_key_missing`,
-  Qt = `api_key_invalid`,
-  $t = `cache_misconfigured`,
-  en = `endpoints_misconfigured`,
-  tn = `wrong_worker_option`,
-  nn = `worker_initialization_failed`,
-  rn = `sandboxed_iframe`,
-  an = `bundle_not_defined`,
-  b = {
-    [Ut]: `Client timeout`,
-    [Wt]: `Network connection error`,
-    [Gt]: `Network request aborted`,
-    [Kt]: `Blocked by CSP`,
-    [qt]: `The provided endpoint in "endpoints" parameter is not a valid URL`,
-    [Jt]: `Handle on demand agent data error`,
-    [Yt]: `Failed to load the JS script of the agent`,
-    [an]: `9319`,
-    [Xt]: `Can't parse the backend response. Make sure the proper endpoints are used.`,
-    [Zt]: "The `apiKey` option is not provided",
-    [Qt]: "The `apiKey` option is not a string",
-    [$t]: "The `cache` option is misconfigured",
-    [en]: "The `endpoints` option is misconfigured",
-    [tn]: "Wrong `worker` option, it should be a Worker instance",
-    [nn]: `Web Worker initialization failed`,
-    [rn]: `Running inside sandboxed iframes is not supported`
+var Zt = `client_timeout`,
+  Qt = `network_connection`,
+  $t = `network_abort`,
+  en = `csp_block`,
+  tn = `invalid_endpoint`,
+  nn = `handle_agent_data`,
+  rn = `script_load_fail`,
+  an = `bad_response_format`,
+  on = `api_key_missing`,
+  sn = `api_key_invalid`,
+  cn = `cache_misconfigured`,
+  ln = `endpoints_misconfigured`,
+  un = `wrong_worker_option`,
+  dn = `worker_initialization_failed`,
+  fn = `sandboxed_iframe`,
+  pn = `bundle_not_defined`,
+  C = {
+    [Zt]: `Client timeout`,
+    [Qt]: `Network connection error`,
+    [$t]: `Network request aborted`,
+    [en]: `Blocked by CSP`,
+    [tn]: `The provided endpoint in "endpoints" parameter is not a valid URL`,
+    [nn]: `Handle on demand agent data error`,
+    [rn]: `Failed to load the JS script of the agent`,
+    [pn]: `9319`,
+    [an]: `Can't parse the backend response. Make sure the proper endpoints are used.`,
+    [on]: "The `apiKey` option is not provided",
+    [sn]: "The `apiKey` option is not a string",
+    [cn]: "The `cache` option is misconfigured",
+    [ln]: "The `endpoints` option is misconfigured",
+    [un]: "Wrong `worker` option, it should be a Worker instance",
+    [dn]: `Web Worker initialization failed`,
+    [fn]: `Running inside sandboxed iframes is not supported`
   },
-  x = class extends Error {
+  w = class extends Error {
     constructor(e, t) {
       super(e), this.name = `FingerprintError`, this.event_id = null, this.code = t
     }
   };
 
-function on(e) {
+function mn(e) {
   let t = function(e) {
       let t = atob(e),
         n = t.length,
@@ -1087,11 +1165,11 @@ function on(e) {
       let r = () => {
           throw Error(`Invalid data`)
         },
-        i = gn(e);
+        i = wn(e);
       i.length < t.length + 2 && r();
-      for (let e = 0; e < t.length; ++e) _r(i[1 + e], i[0]) !== t[e] && r();
+      for (let e = 0; e < t.length; ++e) Tr(i[1 + e], i[0]) !== t[e] && r();
       let a = 1 + t.length,
-        o = _r(i[a], i[0]);
+        o = Tr(i[a], i[0]);
       i.length < a + 1 + o + n && r();
       let s = a + 1 + o,
         c = s + n,
@@ -1099,7 +1177,7 @@ function on(e) {
         u = new Uint8Array(l);
       for (let e = 0; e < u.length; ++e) u[e] = i[c + e] ^ i[s + e % n];
       return l
-    }(t, mr, hr)
+    }(t, Sr, Cr)
   } catch {}
   try {
     return function(e) {
@@ -1107,45 +1185,45 @@ function on(e) {
           len: 0,
           arr: new Uint8Array(128)
         },
-        n = gn(e),
+        n = wn(e),
         r = 0,
-        i = () => (l(), n[r] === Rn ? a() : sn(n[r]) ? o() : u(rr) ? (r += rr.length, null) : u(ir) ? (r += ir.length, !0) : u(ar) ? (r += ar.length, !1) : n[r] === $n ? s() : n[r] === tr ? c() : d()),
+        i = () => (l(), n[r] === Kn ? a() : hn(n[r]) ? o() : u(dr) ? (r += dr.length, null) : u(fr) ? (r += fr.length, !0) : u(pr) ? (r += pr.length, !1) : n[r] === sr ? s() : n[r] === lr ? c() : d()),
         a = () => {
-          for (t.len = 0; r++, n[r] !== Rn;) {
-            if (n[r] === Gn) {
-              if (r++, n[r] === Jn) {
-                let e = parseInt(Sn(n.subarray(r + 1, r + 5)), 16);
-                gr(t, vn(String.fromCharCode(e))), r += 4;
+          for (t.len = 0; r++, n[r] !== Kn;) {
+            if (n[r] === $n) {
+              if (r++, n[r] === nr) {
+                let e = parseInt(An(n.subarray(r + 1, r + 5)), 16);
+                wr(t, En(String.fromCharCode(e))), r += 4;
                 continue
               }
-              let e = sr[n[r]];
+              let e = hr[n[r]];
               if (e) {
-                mn(t, e);
+                Sn(t, e);
                 continue
               }
               return d()
             }
             if (n[r] === void 0) return d();
-            mn(t, n[r])
+            Sn(t, n[r])
           }
-          return r++, Sn(function(e) {
+          return r++, An(function(e) {
             return e.arr.subarray(0, e.len)
           }(t))
         },
         o = () => {
           let e = r;
-          for (; n[r] === Qn || n[r] === qn || n[r] === Yn || n[r] === Xn || sn(n[r]);) r++;
-          return Number(Sn(n.subarray(e, r)))
+          for (; n[r] === or || n[r] === tr || n[r] === rr || n[r] === ir || hn(n[r]);) r++;
+          return Number(An(n.subarray(e, r)))
         },
         s = () => {
           let e = [];
           for (r++;;) {
-            if (l(), n[r] === er) {
+            if (l(), n[r] === cr) {
               r++;
               break
             }
             if (e.length) {
-              if (n[r] !== zn) return d();
+              if (n[r] !== qn) return d();
               r++
             }
             e.push(i())
@@ -1156,17 +1234,17 @@ function on(e) {
           let e = {},
             t = !0;
           for (r++;;) {
-            if (l(), n[r] === nr) {
+            if (l(), n[r] === ur) {
               r++;
               break
             }
             if (!t) {
-              if (n[r] !== zn) return d();
+              if (n[r] !== qn) return d();
               r++, l()
             }
-            if (n[r] !== Rn) return d();
+            if (n[r] !== Kn) return d();
             let o = a();
-            if (l(), n[r] !== Bn) return d();
+            if (l(), n[r] !== Jn) return d();
             r++, Object.defineProperty(e, o, {
               value: i(),
               configurable: !0,
@@ -1177,7 +1255,7 @@ function on(e) {
           return e
         },
         l = () => {
-          for (; n[r] === Vn || n[r] === Wn || n[r] === Un || n[r] === Hn;) r++
+          for (; n[r] === Yn || n[r] === Qn || n[r] === Zn || n[r] === Xn;) r++
         },
         u = e => {
           for (let t = 0; t < e.length; t++)
@@ -1194,11 +1272,11 @@ function on(e) {
   return null
 }
 
-function sn(e) {
-  return e >= Kn && e < Kn + 10 || e === Zn
+function hn(e) {
+  return e >= er && e < er + 10 || e === ar
 }
 
-function cn(e, t) {
+function gn(e, t) {
   if (e.length === 0) return Promise.reject(TypeError(`The list of script URL patterns is empty`));
   let n = [],
     r = function(e, t, n, r, i = {}) {
@@ -1243,7 +1321,7 @@ function cn(e, t) {
       }, e => l.aborted = {
         resolve: !1,
         error: e
-      }), lr(u, a, t, n, d, l, c)], Promise.race(p.filter(e => !!e))).then(() => l);
+      }), _r(u, a, t, n, d, l, c)], Promise.race(p.filter(e => !!e))).then(() => l);
       var p;
       return {
         then: f.then.bind(f),
@@ -1269,7 +1347,7 @@ function cn(e, t) {
       }
     }, e => ({
       result: e
-    }), On, {
+    }), In, {
       maxAttemptCount: 5,
       backoffBase: 100,
       backoffCap: 3e3
@@ -1285,17 +1363,17 @@ function cn(e, t) {
   })
 }
 
-function ln(e) {
+function _n(e) {
   return {
-    __type__: yn,
+    __type__: Dn,
     value: e
   }
 }
 
-function un(e) {
+function vn(e) {
   return function(e) {
-    let t = gn(e);
-    dn = dn || function() {
+    let t = wn(e);
+    yn = yn || function() {
       let e, t = new Uint32Array(256);
       for (let n = 0; n < 256; n++) {
         e = n;
@@ -1305,13 +1383,13 @@ function un(e) {
       return t
     }();
     let n = -1;
-    for (let e = 0; e < t.length; e++) n = n >>> 8 ^ dn[255 & (n ^ t[e])];
+    for (let e = 0; e < t.length; e++) n = n >>> 8 ^ yn[255 & (n ^ t[e])];
     return (-1 ^ n) >>> 0
-  }(vn(e))
+  }(En(e))
 }
-var dn;
+var yn;
 
-function fn(e, t) {
+function bn(e, t) {
   return new Promise(n => function(e, t, ...n) {
     let r = Date.now() + t,
       i = 0,
@@ -1324,27 +1402,27 @@ function fn(e, t) {
   }(n, e, t))
 }
 
-function pn(e) {
+function xn(e) {
   return typeof e == `object` && !!e && `name` in e && e.name === `FingerprintError` && `code` in e
 }
 
-function mn(e, t) {
-  ur(e, e.len + 1), e.arr[e.len++] = t
+function Sn(e, t) {
+  vr(e, e.len + 1), e.arr[e.len++] = t
 }
-var hn = Array.isArray;
+var Cn = Array.isArray;
 
-function gn(e) {
+function wn(e) {
   return e instanceof ArrayBuffer ? new Uint8Array(e) : new Uint8Array(e.buffer, e.byteOffset, e.byteLength)
 }
 
-function _n({
+function Tn({
   level: e,
   message: t
 }) {
   e === `error` ? console.error(t) : e === `warning` ? console.warn(t) : console.log(t)
 }
 
-function vn(e) {
+function En(e) {
   let t = new Uint8Array(e.length);
   for (let n = 0; n < e.length; n++) {
     let r = e.charCodeAt(n);
@@ -1353,23 +1431,23 @@ function vn(e) {
   }
   return t
 }
-var yn = `withoutDefault`,
-  bn = `_vid_`;
+var Dn = `withoutDefault`,
+  On = `_vid_`;
 
-function xn(e) {
+function kn(e) {
   return e instanceof Error && e.name === `TypeError`
 }
 
-function Sn(e) {
+function An(e) {
   if (typeof TextDecoder == `function`) {
     let t = new TextDecoder().decode(e);
     if (t) return t
   }
-  let t = gn(e);
+  let t = wn(e);
   return decodeURIComponent(escape(String.fromCharCode.apply(null, t)))
 }
 
-function Cn(e = kn) {
+function jn(e = Ln) {
   return function(t) {
     let n, r, {
         picked: i,
@@ -1386,19 +1464,19 @@ function Cn(e = kn) {
       {
         apiKey: o
       } = i;
-    if (!o) throw new x(b[Zt], Zt);
-    if (typeof o != `string`) throw new x(b[Qt], Qt);
+    if (!o) throw new w(C[on], on);
+    if (typeof o != `string`) throw new w(C[sn], sn);
     let s = function(e, t) {
       return Object.prototype.hasOwnProperty.call(e, t)
     }(c = t, l = `endpoints`) ? c[l] : void 0;
     var c, l;
     let u = function(e, t, n) {
         let r = e.prepareScriptEndpoints(t, `https://fpnpmcdn.net/`);
-        if (r === null) throw new x(b[en], en);
+        if (r === null) throw new w(C[ln], ln);
         return r.map(e => function(e, t) {
           let n = new URL(e, window.location.href),
             r = n.pathname;
-          return n.pathname = `${r}${r.endsWith(`/`)?``:`/`}v4/${encodeURIComponent(t)}`, n.search = `?ci=jsl/${encodeURIComponent(Dn)}`, n.href
+          return n.pathname = `${r}${r.endsWith(`/`)?``:`/`}v4/${encodeURIComponent(t)}`, n.search = `?ci=jsl/${encodeURIComponent(Fn)}`, n.href
         }(e, n))
       }(e, s, o),
       [f, p] = function() {
@@ -1415,25 +1493,25 @@ function Cn(e = kn) {
       }(),
       m = async function() {
         try {
-          let [t, r] = await cn(u, t => function(e, t) {
+          let [t, r] = await gn(u, t => function(e, t) {
             return e.withCspViolationWatch(t, async () => {
               if (function(e) {
                   if (URL.prototype) try {
                     return new URL(e, location.href), !1
                   } catch (e) {
-                    if (xn(e)) return !0;
+                    if (kn(e)) return !0;
                     throw e
                   }
-                }(t)) throw new x(b[qt], qt);
+                }(t)) throw new w(C[tn], tn);
               try {
                 return await d(() => import(t), [], import.meta.url)
               } catch {
-                throw new x(b[Yt], Yt)
+                throw new w(C[rn], rn)
               }
             }, () => {
-              throw new x(b[Kt], Kt)
+              throw new w(C[en], en)
             }).then(e => {
-              if (typeof(e == null ? void 0 : e.start) != `function`) throw new x(b[an], an);
+              if (typeof(e == null ? void 0 : e.start) != `function`) throw new w(C[pn], pn);
               return e
             })
           }(e, t)), i = await t.start({
@@ -1446,7 +1524,7 @@ function Cn(e = kn) {
           return n = i, i
         } catch (e) {
           throw r = function(e) {
-            return e instanceof x && e.code === an ? new x(b[Yt], Yt) : e
+            return e instanceof w && e.code === pn ? new w(C[rn], rn) : e
           }(e), r
         } finally {
           p()
@@ -1467,8 +1545,8 @@ function Cn(e = kn) {
   }
 }
 
-function wn(e, t, n, r) {
-  jn(() => {
+function Mn(e, t, n, r) {
+  zn(() => {
     let i = `${e}=${t}`,
       a = `expires=${new Date(Date.now()+24*n*60*60*1e3).toUTCString()}`,
       o = r ? `domain=${r}` : ``;
@@ -1476,16 +1554,16 @@ function wn(e, t, n, r) {
   }, void 0)
 }
 
-function Tn(e, t) {
+function Nn(e, t) {
   try {
     return new window.URL(e, window.location.href)
   } catch (n) {
-    if (xn(n)) return console.warn(`Ignoring an invalid '${t}' value: "${e}"`), null;
+    if (kn(n)) return console.warn(`Ignoring an invalid '${t}' value: "${e}"`), null;
     throw n
   }
 }
 
-function En(e) {
+function Pn(e) {
   let t = location.hostname,
     n = function() {
       var e;
@@ -1501,17 +1579,17 @@ function En(e) {
     if (!n || !/^([^.]{1,3}\.)*[^.]+\.?$/.test(r) || r === t) return e(r)
   }) || e()
 }
-var Dn = `4.1.1`;
+var Fn = `4.1.1`;
 
-function On(e, t, n) {
-  let r = n instanceof x ? n.code : null;
-  return r === Kt || r === qt ? {
+function In(e, t, n) {
+  let r = n instanceof w ? n.code : null;
+  return r === en || r === tn ? {
     action: `exclude`,
     delay: 0
-  } : r === an ? {
+  } : r === pn ? {
     action: `exclude`,
     delay: `backoff`
-  } : r === Yt ? {
+  } : r === rn ? {
     action: `postpone`,
     delay: Date.now() - e.getTime() < 50 ? 0 : `backoff`
   } : {
@@ -1519,28 +1597,28 @@ function On(e, t, n) {
     delay: `backoff`
   }
 }
-var kn = {
+var Ln = {
     prepareScriptEndpoints: function(e, t) {
-      return e === void 0 ? [t] : Ln(e) ? function(e, t) {
+      return e === void 0 ? [t] : Gn(e) ? function(e, t) {
         let n, r = !1;
-        In(e) ? (r = !0, n = Mn(e.value)) : n = Mn(e);
+        Wn(e) ? (r = !0, n = Bn(e.value)) : n = Bn(e);
         let i = [];
         for (let e of n) {
-          let t = Tn(e, `endpoints`);
-          t && i.push(cr(t))
+          let t = Nn(e, `endpoints`);
+          t && i.push(gr(t))
         }
         return r || i.push(t), i
       }(e, t) : function(e) {
         if (!e || typeof e != `object`) return !1;
         let t = e;
-        return typeof t.__type__ == `string` && un(t.__type__) === 694409711 && (t.script === void 0 || Ln(t.script)) && (t.helper === void 0 || Ln(t.helper)) && (t.ingress === void 0 || Ln(t.ingress))
+        return typeof t.__type__ == `string` && vn(t.__type__) === 694409711 && (t.script === void 0 || Gn(t.script)) && (t.helper === void 0 || Gn(t.helper)) && (t.ingress === void 0 || Gn(t.ingress))
       }(e) ? function(e, t, n) {
         if (e === void 0) return [t];
         let r, i = !1;
-        In(e) ? (i = !0, r = Mn(e.value)) : r = Mn(e);
+        Wn(e) ? (i = !0, r = Bn(e.value)) : r = Bn(e);
         let a = [];
         for (let e of r) {
-          let t = Tn(e, n);
+          let t = Nn(e, n);
           t && a.push(t.href)
         }
         return i || a.push(t), a
@@ -1567,59 +1645,59 @@ var kn = {
       }))
     }
   },
-  An = Cn();
+  Rn = jn();
 
-function jn(e, t) {
+function zn(e, t) {
   try {
     document.cookie
   } catch (e) {
     if (function(e) {
         if (!(e instanceof DOMException)) return !1;
         let t = e.message;
-        return Nn.test(t) || Pn.test(t) || Fn.test(t)
+        return Vn.test(t) || Hn.test(t) || Un.test(t)
       }(e)) return t;
     throw e
   }
   return e()
 }
 
-function Mn(e) {
-  return hn(e) ? e : [e]
+function Bn(e) {
+  return Cn(e) ? e : [e]
 }
-var Nn = /The document is sandboxed and lacks the 'allow-same-origin' flag/,
-  Pn = /The operation is insecure/,
-  Fn = /Forbidden in a sandboxed document without the 'allow-same-origin' flag/;
+var Vn = /The document is sandboxed and lacks the 'allow-same-origin' flag/,
+  Hn = /The operation is insecure/,
+  Un = /Forbidden in a sandboxed document without the 'allow-same-origin' flag/;
 
-function In(e) {
-  return !!e && e.__type__ === yn
+function Wn(e) {
+  return !!e && e.__type__ === Dn
 }
 
-function Ln(e) {
-  return In(e) ? fr(e.value) : fr(e)
+function Gn(e) {
+  return Wn(e) ? br(e.value) : br(e)
 }
-var Rn = 34,
-  zn = 44,
-  Bn = 58,
-  Vn = 32,
-  Hn = 9,
-  Un = 13,
-  Wn = 10,
-  Gn = 92,
-  Kn = 48,
-  qn = 101,
-  Jn = 117,
-  Yn = 69,
-  Xn = 43,
-  Zn = 45,
-  Qn = 46,
-  $n = 91,
-  er = 93,
-  tr = 123,
-  nr = 125,
-  rr = new Uint8Array([110, Jn, 108, 108]),
-  ir = new Uint8Array([116, 114, Jn, qn]),
-  ar = new Uint8Array([102, 97, 108, 115, qn]),
-  or = {
+var Kn = 34,
+  qn = 44,
+  Jn = 58,
+  Yn = 32,
+  Xn = 9,
+  Zn = 13,
+  Qn = 10,
+  $n = 92,
+  er = 48,
+  tr = 101,
+  nr = 117,
+  rr = 69,
+  ir = 43,
+  ar = 45,
+  or = 46,
+  sr = 91,
+  cr = 93,
+  lr = 123,
+  ur = 125,
+  dr = new Uint8Array([110, nr, 108, 108]),
+  fr = new Uint8Array([116, 114, nr, tr]),
+  pr = new Uint8Array([102, 97, 108, 115, tr]),
+  mr = {
     '"': `"`,
     "\\": `\\`,
     "\b": `b`,
@@ -1628,23 +1706,23 @@ var Rn = 34,
     "\r": `r`,
     "	": `t`
   },
-  sr = (() => {
+  hr = (() => {
     let e = new Uint8Array(128);
-    for (let [t, n] of Object.entries(or)) e[n.charCodeAt(0)] = t.charCodeAt(0);
+    for (let [t, n] of Object.entries(mr)) e[n.charCodeAt(0)] = t.charCodeAt(0);
     return e
   })();
 
-function cr(e) {
+function gr(e) {
   return `${e.origin}${e.pathname.endsWith(`/`)?e.pathname:`${e.pathname}/`}web/`
 }
-async function lr(e, t, n, r, i, a, o) {
+async function _r(e, t, n, r, i, a, o) {
   if (e === void 0) return;
   let s = e;
   for (let e = 0; e < t; ++e) {
     let t = new Date,
       c, l;
     try {
-      c = await pr(() => n(s, e, o), o)
+      c = await xr(() => n(s, e, o), o)
     } catch (e) {
       l = e, a.failedAttempts.push({
         level: 0,
@@ -1666,18 +1744,18 @@ async function lr(e, t, n, r, i, a, o) {
     }
     let u = i(t, c, l);
     if (!u) break;
-    await pr(fn(u[1]), o), s = u[0]
+    await xr(bn(u[1]), o), s = u[0]
   }
 }
 
-function ur(e, t) {
+function vr(e, t) {
   if (e.arr.length < t) {
     let n = new Uint8Array(Math.max(2 * e.arr.length, t));
     n.set(e.arr), e.arr = n
   }
 }
 
-function dr(e, t, ...n) {
+function yr(e, t, ...n) {
   e && async function(e, t) {
     try {
       return await e()
@@ -1690,50 +1768,50 @@ function dr(e, t, ...n) {
   })
 }
 
-function fr(e) {
+function br(e) {
   return typeof e == `string` || Array.isArray(e) && e.every(e => typeof e == `string`)
 }
 
-function pr(e, t) {
+function xr(e, t) {
   return new Promise((n, r) => {
     let i = !1;
-    t == null || t.then(() => i = !0, () => i = !0), (typeof e == `function` ? pr(Promise.resolve(), t).then(e) : e).then(e => {
+    t == null || t.then(() => i = !0, () => i = !0), (typeof e == `function` ? xr(Promise.resolve(), t).then(e) : e).then(e => {
       i || n(e)
     }, e => {
       i || r(e)
     })
   })
 }
-var mr = [3, 13],
-  hr = 9;
+var Sr = [3, 13],
+  Cr = 9;
 
-function gr(e, t) {
-  ur(e, e.len + t.length), e.arr.set(t, e.len), e.len += t.length
+function wr(e, t) {
+  vr(e, e.len + t.length), e.arr.set(t, e.len), e.len += t.length
 }
 
-function _r(e, t) {
+function Tr(e, t) {
   return (e - t + 256) % 256
 }
-var vr = {
-    start: An,
+var Er = {
+    start: Rn,
     handleAgentData: function(e, t = {}) {
       let {
-        storageKeyPrefix: n = bn,
+        storageKeyPrefix: n = On,
         do: r
       } = t;
       try {
-        let t = on(e);
-        t === null ? dr(r, () => ({
+        let t = mn(e);
+        t === null ? yr(r, () => ({
           e: 25,
           result: {
             error: Error(`Failed to decode response`)
           }
-        })) : (t.visitorToken && (s = t.visitorToken, i = c = `${n}t`, a = s, o = 365, En(e => {
+        })) : (t.visitorToken && (s = t.visitorToken, i = c = `${n}t`, a = s, o = 365, Pn(e => {
           (function(e, t) {
-            wn(e, ``, -1, t)
+            Mn(e, ``, -1, t)
           })(i, e)
-        }), o < 0 || En(e => (wn(i, a, o, e), function(e) {
-          return jn(() => {
+        }), o < 0 || Pn(e => (Mn(i, a, o, e), function(e) {
+          return zn(() => {
             let t = `${e}=`;
             for (let e of document.cookie.split(`;`)) {
               let n = 0;
@@ -1746,101 +1824,101 @@ var vr = {
           try {
             (n = localStorage == null ? void 0 : localStorage.setItem) == null || n.call(localStorage, e, t)
           } catch {}
-        }(c, s)), t.notifications.forEach(_n), dr(r, () => ({
+        }(c, s)), t.notifications.forEach(Tn), yr(r, () => ({
           e: 25,
           result: {
             response: t
           }
         })))
       } catch (e) {
-        throw dr(r, () => ({
+        throw yr(r, () => ({
           e: 25,
           result: {
             error: e instanceof Error ? e : Error(String(e))
           }
-        })), new x(b[Jt], Jt)
+        })), new w(C[nn], nn)
       }
       var i, a, o, s, c
     },
-    isFingerprintError: pn,
-    withoutDefault: ln
+    isFingerprintError: xn,
+    withoutDefault: _n
   },
-  yr = `5.2.0`;
+  Dr = `5.2.0`;
 
-function br(e, t) {
+function Or(e, t) {
   return new Promise(n => setTimeout(n, e, t))
 }
 
-function xr() {
+function kr() {
   return new Promise(e => {
     let t = new MessageChannel;
     t.port1.onmessage = () => e(), t.port2.postMessage(null)
   })
 }
 
-function Sr(e, t = 1 / 0) {
+function Ar(e, t = 1 / 0) {
   let {
     requestIdleCallback: n
   } = window;
   return n ? new Promise(e => n.call(window, () => e(), {
     timeout: t
-  })) : br(Math.min(e, t))
+  })) : Or(Math.min(e, t))
 }
 
-function Cr(e) {
+function jr(e) {
   return !!e && typeof e.then == `function`
 }
 
-function wr(e, t) {
+function Mr(e, t) {
   try {
     let n = e();
-    Cr(n) ? n.then(e => t(!0, e), e => t(!1, e)) : t(!0, n)
+    jr(n) ? n.then(e => t(!0, e), e => t(!1, e)) : t(!0, n)
   } catch (e) {
     t(!1, e)
   }
 }
-async function Tr(e, t, n = 16) {
+async function Nr(e, t, n = 16) {
   let r = Array(e.length),
     i = Date.now();
   for (let a = 0; a < e.length; ++a) {
     r[a] = t(e[a], a);
     let o = Date.now();
-    o >= i + n && (i = o, await xr())
+    o >= i + n && (i = o, await kr())
   }
   return r
 }
 
-function Er(e) {
+function Pr(e) {
   return e.then(void 0, () => void 0), e
 }
 
-function Dr(e, t) {
+function Fr(e, t) {
   for (let n = 0, r = e.length; n < r; ++n)
     if (e[n] === t) return !0;
   return !1
 }
 
-function Or(e, t) {
-  return !Dr(e, t)
+function Ir(e, t) {
+  return !Fr(e, t)
 }
 
-function kr(e) {
+function Lr(e) {
   return parseInt(e)
 }
 
-function S(e) {
+function T(e) {
   return parseFloat(e)
 }
 
-function C(e, t) {
+function E(e, t) {
   return typeof e == `number` && isNaN(e) ? t : e
 }
 
-function w(e) {
+function D(e) {
   return e.reduce((e, t) => e + +!!t, 0)
 }
 
-function Ar(e, t = 1) {
+function Rr(e, t = 1) {
   if (Math.abs(t) >= 1) return Math.round(e / t) * t;
   {
     let n = 1 / t;
@@ -1848,7 +1926,7 @@ function Ar(e, t = 1) {
   }
 }
 
-function jr(e) {
+function zr(e) {
   let t = `Unexpected syntax '${e}'`,
     n = /^\s*([a-z-]*)(.*)$/i.exec(e),
     r = n[1] || void 0,
@@ -1881,7 +1959,7 @@ function jr(e) {
   return [r, i]
 }
 
-function Mr(e) {
+function Br(e) {
   let t = new Uint8Array(e.length);
   for (let n = 0; n < e.length; n++) {
     let r = e.charCodeAt(n);
@@ -1891,7 +1969,7 @@ function Mr(e) {
   return t
 }
 
-function T(e, t) {
+function O(e, t) {
   let n = e[0] >>> 16,
     r = e[0] & 65535,
     i = e[1] >>> 16,
@@ -1907,7 +1985,7 @@ function T(e, t) {
   p += a + l, f += p >>> 16, p &= 65535, f += i + c, d += f >>> 16, f &= 65535, d += r + s, u += d >>> 16, d &= 65535, u += n + o, u &= 65535, e[0] = u << 16 | d, e[1] = f << 16 | p
 }
 
-function E(e, t) {
+function k(e, t) {
   let n = e[0] >>> 16,
     r = e[0] & 65535,
     i = e[1] >>> 16,
@@ -1923,33 +2001,33 @@ function E(e, t) {
   p += a * l, f += p >>> 16, p &= 65535, f += i * l, d += f >>> 16, f &= 65535, f += a * c, d += f >>> 16, f &= 65535, d += r * l, u += d >>> 16, d &= 65535, d += i * c, u += d >>> 16, d &= 65535, d += a * s, u += d >>> 16, d &= 65535, u += n * l + r * c + i * s + a * o, u &= 65535, e[0] = u << 16 | d, e[1] = f << 16 | p
 }
 
-function Nr(e, t) {
+function Vr(e, t) {
   let n = e[0];
   t %= 64, t === 32 ? (e[0] = e[1], e[1] = n) : t < 32 ? (e[0] = n << t | e[1] >>> 32 - t, e[1] = e[1] << t | n >>> 32 - t) : (t -= 32, e[0] = e[1] << t | n >>> 32 - t, e[1] = n << t | e[1] >>> 32 - t)
 }
 
-function D(e, t) {
+function A(e, t) {
   t %= 64, t !== 0 && (t < 32 ? (e[0] = e[1] >>> 32 - t, e[1] <<= t) : (e[0] = e[1] << t - 32, e[1] = 0))
 }
 
-function O(e, t) {
+function j(e, t) {
   e[0] ^= t[0], e[1] ^= t[1]
 }
-var Pr = [4283543511, 3981806797],
-  Fr = [3301882366, 444984403];
+var Hr = [4283543511, 3981806797],
+  Ur = [3301882366, 444984403];
 
-function Ir(e) {
+function Wr(e) {
   let t = [0, e[0] >>> 1];
-  O(e, t), E(e, Pr), t[1] = e[0] >>> 1, O(e, t), E(e, Fr), t[1] = e[0] >>> 1, O(e, t)
+  j(e, t), k(e, Hr), t[1] = e[0] >>> 1, j(e, t), k(e, Ur), t[1] = e[0] >>> 1, j(e, t)
 }
-var Lr = [2277735313, 289559509],
-  Rr = [1291169091, 658871167],
-  zr = [0, 5],
-  Br = [0, 1390208809],
-  Vr = [0, 944331445];
+var Gr = [2277735313, 289559509],
+  Kr = [1291169091, 658871167],
+  qr = [0, 5],
+  Jr = [0, 1390208809],
+  Yr = [0, 944331445];
 
-function Hr(e, t) {
-  let n = Mr(e);
+function Xr(e, t) {
+  let n = Br(e);
   t = t || 0;
   let r = [0, n.length],
     i = r[1] % 16,
@@ -1959,45 +2037,45 @@ function Hr(e, t) {
     c = [0, 0],
     l = [0, 0],
     u;
-  for (u = 0; u < a; u += 16) c[0] = n[u + 4] | n[u + 5] << 8 | n[u + 6] << 16 | n[u + 7] << 24, c[1] = n[u] | n[u + 1] << 8 | n[u + 2] << 16 | n[u + 3] << 24, l[0] = n[u + 12] | n[u + 13] << 8 | n[u + 14] << 16 | n[u + 15] << 24, l[1] = n[u + 8] | n[u + 9] << 8 | n[u + 10] << 16 | n[u + 11] << 24, E(c, Lr), Nr(c, 31), E(c, Rr), O(o, c), Nr(o, 27), T(o, s), E(o, zr), T(o, Br), E(l, Rr), Nr(l, 33), E(l, Lr), O(s, l), Nr(s, 31), T(s, o), E(s, zr), T(s, Vr);
+  for (u = 0; u < a; u += 16) c[0] = n[u + 4] | n[u + 5] << 8 | n[u + 6] << 16 | n[u + 7] << 24, c[1] = n[u] | n[u + 1] << 8 | n[u + 2] << 16 | n[u + 3] << 24, l[0] = n[u + 12] | n[u + 13] << 8 | n[u + 14] << 16 | n[u + 15] << 24, l[1] = n[u + 8] | n[u + 9] << 8 | n[u + 10] << 16 | n[u + 11] << 24, k(c, Gr), Vr(c, 31), k(c, Kr), j(o, c), Vr(o, 27), O(o, s), k(o, qr), O(o, Jr), k(l, Kr), Vr(l, 33), k(l, Gr), j(s, l), Vr(s, 31), O(s, o), k(s, qr), O(s, Yr);
   c[0] = 0, c[1] = 0, l[0] = 0, l[1] = 0;
   let d = [0, 0];
   switch (i) {
     case 15:
-      d[1] = n[u + 14], D(d, 48), O(l, d);
+      d[1] = n[u + 14], A(d, 48), j(l, d);
     case 14:
-      d[1] = n[u + 13], D(d, 40), O(l, d);
+      d[1] = n[u + 13], A(d, 40), j(l, d);
     case 13:
-      d[1] = n[u + 12], D(d, 32), O(l, d);
+      d[1] = n[u + 12], A(d, 32), j(l, d);
     case 12:
-      d[1] = n[u + 11], D(d, 24), O(l, d);
+      d[1] = n[u + 11], A(d, 24), j(l, d);
     case 11:
-      d[1] = n[u + 10], D(d, 16), O(l, d);
+      d[1] = n[u + 10], A(d, 16), j(l, d);
     case 10:
-      d[1] = n[u + 9], D(d, 8), O(l, d);
+      d[1] = n[u + 9], A(d, 8), j(l, d);
     case 9:
-      d[1] = n[u + 8], O(l, d), E(l, Rr), Nr(l, 33), E(l, Lr), O(s, l);
+      d[1] = n[u + 8], j(l, d), k(l, Kr), Vr(l, 33), k(l, Gr), j(s, l);
     case 8:
-      d[1] = n[u + 7], D(d, 56), O(c, d);
+      d[1] = n[u + 7], A(d, 56), j(c, d);
     case 7:
-      d[1] = n[u + 6], D(d, 48), O(c, d);
+      d[1] = n[u + 6], A(d, 48), j(c, d);
     case 6:
-      d[1] = n[u + 5], D(d, 40), O(c, d);
+      d[1] = n[u + 5], A(d, 40), j(c, d);
     case 5:
-      d[1] = n[u + 4], D(d, 32), O(c, d);
+      d[1] = n[u + 4], A(d, 32), j(c, d);
     case 4:
-      d[1] = n[u + 3], D(d, 24), O(c, d);
+      d[1] = n[u + 3], A(d, 24), j(c, d);
     case 3:
-      d[1] = n[u + 2], D(d, 16), O(c, d);
+      d[1] = n[u + 2], A(d, 16), j(c, d);
     case 2:
-      d[1] = n[u + 1], D(d, 8), O(c, d);
+      d[1] = n[u + 1], A(d, 8), j(c, d);
     case 1:
-      d[1] = n[u], O(c, d), E(c, Lr), Nr(c, 31), E(c, Rr), O(o, c)
+      d[1] = n[u], j(c, d), k(c, Gr), Vr(c, 31), k(c, Kr), j(o, c)
   }
-  return O(o, r), O(s, r), T(o, s), T(s, o), Ir(o), Ir(s), T(o, s), T(s, o), (`00000000` + (o[0] >>> 0).toString(16)).slice(-8) + (`00000000` + (o[1] >>> 0).toString(16)).slice(-8) + (`00000000` + (s[0] >>> 0).toString(16)).slice(-8) + (`00000000` + (s[1] >>> 0).toString(16)).slice(-8)
+  return j(o, r), j(s, r), O(o, s), O(s, o), Wr(o), Wr(s), O(o, s), O(s, o), (`00000000` + (o[0] >>> 0).toString(16)).slice(-8) + (`00000000` + (o[1] >>> 0).toString(16)).slice(-8) + (`00000000` + (s[0] >>> 0).toString(16)).slice(-8) + (`00000000` + (s[1] >>> 0).toString(16)).slice(-8)
 }
 
-function Ur(e) {
+function Zr(e) {
   var t;
   return {
     name: e.name,
@@ -2008,31 +2086,31 @@ function Ur(e) {
   }
 }
 
-function Wr(e) {
+function Qr(e) {
   return /^function\s.*?\{\s*\[native code]\s*}$/.test(String(e))
 }
 
-function Gr(e) {
+function $r(e) {
   return typeof e != `function`
 }
 
-function Kr(e, t) {
-  let n = Er(new Promise(n => {
+function ei(e, t) {
+  let n = Pr(new Promise(n => {
     let r = Date.now();
-    wr(e.bind(null, t), (...e) => {
+    Mr(e.bind(null, t), (...e) => {
       let t = Date.now() - r;
       if (!e[0]) return n(() => ({
         error: e[1],
         duration: t
       }));
       let i = e[1];
-      if (Gr(i)) return n(() => ({
+      if ($r(i)) return n(() => ({
         value: i,
         duration: t
       }));
       n(() => new Promise(e => {
         let n = Date.now();
-        wr(i, (...r) => {
+        Mr(i, (...r) => {
           let i = t + Date.now() - n;
           if (!r[0]) return e({
             error: r[1],
@@ -2051,11 +2129,11 @@ function Kr(e, t) {
   }
 }
 
-function qr(e, t, n, r) {
-  let i = Object.keys(e).filter(e => Or(n, e)),
-    a = Er(Tr(i, n => Kr(e[n], t), r));
+function ti(e, t, n, r) {
+  let i = Object.keys(e).filter(e => Ir(n, e)),
+    a = Pr(Nr(i, n => ei(e[n], t), r));
   return async function() {
-    let e = await Tr(await a, e => Er(e()), r),
+    let e = await Nr(await a, e => Pr(e()), r),
       t = await Promise.all(e),
       n = {};
     for (let e = 0; e < i.length; ++e) n[i[e]] = t[e];
@@ -2063,80 +2141,80 @@ function qr(e, t, n, r) {
   }
 }
 
-function Jr() {
+function ni() {
   let e = window,
     t = navigator;
-  return w([`MSCSSMatrix` in e, `msSetImmediate` in e, `msIndexedDB` in e, `msMaxTouchPoints` in t, `msPointerEnabled` in t]) >= 4
+  return D([`MSCSSMatrix` in e, `msSetImmediate` in e, `msIndexedDB` in e, `msMaxTouchPoints` in t, `msPointerEnabled` in t]) >= 4
 }
 
-function Yr() {
+function ri() {
   let e = window,
     t = navigator;
-  return w([`msWriteProfilerMark` in e, `MSStream` in e, `msLaunchUri` in t, `msSaveBlob` in t]) >= 3 && !Jr()
+  return D([`msWriteProfilerMark` in e, `MSStream` in e, `msLaunchUri` in t, `msSaveBlob` in t]) >= 3 && !ni()
 }
 
-function Xr() {
+function ii() {
   let e = window,
     t = navigator;
-  return w([`webkitPersistentStorage` in t, `webkitTemporaryStorage` in t, (t.vendor || ``).indexOf(`Google`) === 0, `webkitResolveLocalFileSystemURL` in e, `BatteryManager` in e, `webkitMediaStream` in e, `webkitSpeechGrammar` in e]) >= 5
+  return D([`webkitPersistentStorage` in t, `webkitTemporaryStorage` in t, (t.vendor || ``).indexOf(`Google`) === 0, `webkitResolveLocalFileSystemURL` in e, `BatteryManager` in e, `webkitMediaStream` in e, `webkitSpeechGrammar` in e]) >= 5
 }
 
-function k() {
+function M() {
   let e = window,
     t = navigator;
-  return w([`ApplePayError` in e, `CSSPrimitiveValue` in e, `Counter` in e, t.vendor.indexOf(`Apple`) === 0, `RGBColor` in e, `WebKitMediaKeys` in e]) >= 4
+  return D([`ApplePayError` in e, `CSSPrimitiveValue` in e, `Counter` in e, t.vendor.indexOf(`Apple`) === 0, `RGBColor` in e, `WebKitMediaKeys` in e]) >= 4
 }
 
-function Zr() {
+function ai() {
   let e = window,
     {
       HTMLElement: t,
       Document: n
     } = e;
-  return w([`safari` in e, !(`ongestureend` in e), !(`TouchEvent` in e), !(`orientation` in e), t && !(`autocapitalize` in t.prototype), n && `pointerLockElement` in n.prototype]) >= 4
+  return D([`safari` in e, !(`ongestureend` in e), !(`TouchEvent` in e), !(`orientation` in e), t && !(`autocapitalize` in t.prototype), n && `pointerLockElement` in n.prototype]) >= 4
 }
 
-function Qr() {
+function oi() {
   let e = window;
-  return Wr(e.print) && String(e.browser) === `[object WebPageNamespace]`
+  return Qr(e.print) && String(e.browser) === `[object WebPageNamespace]`
 }
 
-function $r() {
+function si() {
   var e;
   let t = window;
-  return w([`buildID` in navigator, `MozAppearance` in (((e = document.documentElement) == null ? void 0 : e.style) ?? {}), `onmozfullscreenchange` in t, `mozInnerScreenX` in t, `CSSMozDocumentRule` in t, `CanvasCaptureMediaStream` in t]) >= 4
+  return D([`buildID` in navigator, `MozAppearance` in (((e = document.documentElement) == null ? void 0 : e.style) ?? {}), `onmozfullscreenchange` in t, `mozInnerScreenX` in t, `CSSMozDocumentRule` in t, `CanvasCaptureMediaStream` in t]) >= 4
 }
 
-function ei() {
+function ci() {
   let e = window,
     t = navigator,
     {
       CSS: n
     } = e;
-  return w([`userActivation` in t, n.supports(`color`, `light-dark(#000, #fff)`), n.supports(`height`, `1lh`), `globalPrivacyControl` in t]) >= 3
+  return D([`userActivation` in t, n.supports(`color`, `light-dark(#000, #fff)`), n.supports(`height`, `1lh`), `globalPrivacyControl` in t]) >= 3
 }
 
-function ti() {
+function li() {
   let {
     CSS: e
   } = window;
-  return w([e.supports(`selector(::details-content)`), e.supports(`selector(::before::marker)`), e.supports(`selector(::after::marker)`), !(`locale` in CompositionEvent.prototype)]) >= 3
+  return D([e.supports(`selector(::details-content)`), e.supports(`selector(::before::marker)`), e.supports(`selector(::after::marker)`), !(`locale` in CompositionEvent.prototype)]) >= 3
 }
 
-function ni() {
+function ui() {
   let e = window;
-  return w([!(`MediaSettingsRange` in e), `RTCEncodedAudioFrame` in e, `` + e.Intl == `[object Intl]`, `` + e.Reflect == `[object Reflect]`]) >= 3
+  return D([!(`MediaSettingsRange` in e), `RTCEncodedAudioFrame` in e, `` + e.Intl == `[object Intl]`, `` + e.Reflect == `[object Reflect]`]) >= 3
 }
 
-function ri() {
+function di() {
   let e = window,
     {
       URLPattern: t
     } = e;
-  return w([`union` in Set.prototype, `Iterator` in e, t && `hasRegExpGroups` in t.prototype, `RGB8` in WebGLRenderingContext.prototype]) >= 3
+  return D([`union` in Set.prototype, `Iterator` in e, t && `hasRegExpGroups` in t.prototype, `RGB8` in WebGLRenderingContext.prototype]) >= 3
 }
 
-function ii() {
+function fi() {
   let e = window,
     t = document,
     {
@@ -2144,90 +2222,90 @@ function ii() {
       Promise: r,
       AudioContext: i
     } = e;
-  return w([r && `try` in r, `caretPositionFromPoint` in t, i && `onerror` in i.prototype, n.supports(`ruby-align`, `space-around`)]) >= 3
+  return D([r && `try` in r, `caretPositionFromPoint` in t, i && `onerror` in i.prototype, n.supports(`ruby-align`, `space-around`)]) >= 3
 }
 
-function ai() {
+function pi() {
   let e = window;
-  return w([`DOMRectList` in e, `RTCPeerConnectionIceEvent` in e, `SVGGeometryElement` in e, `ontransitioncancel` in e]) >= 3
+  return D([`DOMRectList` in e, `RTCPeerConnectionIceEvent` in e, `SVGGeometryElement` in e, `ontransitioncancel` in e]) >= 3
 }
 
-function oi() {
+function mi() {
   let e = window,
     t = navigator,
     {
       CSS: n,
       HTMLButtonElement: r
     } = e;
-  return w([!(`getStorageUpdates` in t), r && `popover` in r.prototype, `CSSCounterStyleRule` in e, n.supports(`font-size-adjust: ex-height 0.5`), n.supports(`text-transform: full-width`)]) >= 4
+  return D([!(`getStorageUpdates` in t), r && `popover` in r.prototype, `CSSCounterStyleRule` in e, n.supports(`font-size-adjust: ex-height 0.5`), n.supports(`text-transform: full-width`)]) >= 4
 }
 
-function si() {
+function hi() {
   if (navigator.platform === `iPad`) return !0;
   let e = screen,
     t = e.width / e.height;
-  return w([`MediaSource` in window, !!Element.prototype.webkitRequestFullscreen, t > .65 && t < 1.53]) >= 2
+  return D([`MediaSource` in window, !!Element.prototype.webkitRequestFullscreen, t > .65 && t < 1.53]) >= 2
 }
 
-function ci() {
+function gi() {
   let e = document;
   return e.fullscreenElement || e.msFullscreenElement || e.mozFullScreenElement || e.webkitFullscreenElement || null
 }
 
-function li() {
+function _i() {
   let e = document;
   return (e.exitFullscreen || e.msExitFullscreen || e.mozCancelFullScreen || e.webkitExitFullscreen).call(e)
 }
 
-function ui() {
-  let e = Xr(),
-    t = $r(),
+function vi() {
+  let e = ii(),
+    t = si(),
     n = window,
     r = navigator,
     i = `connection`;
-  return e ? w([!(`SharedWorker` in n), r[i] && `ontypechange` in r[i], !(`sinkId` in new Audio)]) >= 2 : t ? w([`onorientationchange` in n, `orientation` in n, /android/i.test(r.appVersion)]) >= 2 : !1
+  return e ? D([!(`SharedWorker` in n), r[i] && `ontypechange` in r[i], !(`sinkId` in new Audio)]) >= 2 : t ? D([`onorientationchange` in n, `orientation` in n, /android/i.test(r.appVersion)]) >= 2 : !1
 }
 
-function di() {
+function yi() {
   let e = navigator,
     t = window,
     n = Audio.prototype,
     {
       visualViewport: r
     } = t;
-  return w([`srLatency` in n, `srChannelCount` in n, `devicePosture` in e, r && `segments` in r, `getTextInformation` in Image.prototype]) >= 3
+  return D([`srLatency` in n, `srChannelCount` in n, `devicePosture` in e, r && `segments` in r, `getTextInformation` in Image.prototype]) >= 3
 }
 
-function fi() {
-  return hi() ? -4 : pi()
+function bi() {
+  return Ci() ? -4 : xi()
 }
 
-function pi() {
+function xi() {
   let e = window,
     t = e.OfflineAudioContext || e.webkitOfflineAudioContext;
   if (!t) return -2;
-  if (mi()) return -1;
+  if (Si()) return -1;
   let n = new t(1, 5e3, 44100),
     r = n.createOscillator();
   r.type = `triangle`, r.frequency.value = 1e4;
   let i = n.createDynamicsCompressor();
   i.threshold.value = -50, i.knee.value = 40, i.ratio.value = 12, i.attack.value = 0, i.release.value = .25, r.connect(i), i.connect(n.destination), r.start(0);
-  let [a, o] = gi(n), s = Er(a.then(e => _i(e.getChannelData(0).subarray(4500)), e => {
+  let [a, o] = wi(n), s = Pr(a.then(e => Ti(e.getChannelData(0).subarray(4500)), e => {
     if (e.name === `timeout` || e.name === `suspended`) return -3;
     throw e
   }));
   return () => (o(), s)
 }
 
-function mi() {
-  return k() && !Zr() && !ai()
+function Si() {
+  return M() && !ai() && !pi()
 }
 
-function hi() {
-  return k() && oi() && Qr() || Xr() && di() && ri()
+function Ci() {
+  return M() && mi() && oi() || ii() && yi() && di()
 }
 
-function gi(e) {
+function wi(e) {
   let t = () => void 0;
   return [new Promise((n, r) => {
     let i = !1,
@@ -2235,17 +2313,17 @@ function gi(e) {
       o = 0;
     e.oncomplete = e => n(e.renderedBuffer);
     let s = () => {
-        setTimeout(() => r(vi(`timeout`)), Math.min(500, o + 5e3 - Date.now()))
+        setTimeout(() => r(Ei(`timeout`)), Math.min(500, o + 5e3 - Date.now()))
       },
       c = () => {
         try {
           let t = e.startRendering();
-          switch (Cr(t) && Er(t), e.state) {
+          switch (jr(t) && Pr(t), e.state) {
             case `running`:
               o = Date.now(), i && s();
               break;
             case `suspended`:
-              document.hidden || a++, i && a >= 3 ? r(vi(`suspended`)) : setTimeout(c, 500)
+              document.hidden || a++, i && a >= 3 ? r(Ei(`suspended`)) : setTimeout(c, 500)
           }
         } catch (e) {
           r(e)
@@ -2257,20 +2335,20 @@ function gi(e) {
   }), t]
 }
 
-function _i(e) {
+function Ti(e) {
   let t = 0;
   for (let n = 0; n < e.length; ++n) t += Math.abs(e[n]);
   return t
 }
 
-function vi(e) {
+function Ei(e) {
   let t = Error(e);
   return t.name = e, t
 }
-async function yi(e, t, n = 50) {
+async function Di(e, t, n = 50) {
   var r, i, a;
   let o = document;
-  for (; !o.body;) await br(n);
+  for (; !o.body;) await Or(n);
   let s = o.createElement(`iframe`);
   try {
     for (await new Promise((e, n) => {
@@ -2290,23 +2368,23 @@ async function yi(e, t, n = 50) {
           r || (((t = (e = s.contentWindow) == null ? void 0 : e.document) == null ? void 0 : t.readyState) === `complete` ? i() : setTimeout(c, 10))
         };
         c()
-      }); !((i = (r = s.contentWindow) == null ? void 0 : r.document) != null && i.body);) await br(n);
+      }); !((i = (r = s.contentWindow) == null ? void 0 : r.document) != null && i.body);) await Or(n);
     return await e(s, s.contentWindow)
   } finally {
     (a = s.parentNode) == null || a.removeChild(s)
   }
 }
 
-function bi(e) {
-  let [t, n] = jr(e), r = document.createElement(t ?? `div`);
+function Oi(e) {
+  let [t, n] = zr(e), r = document.createElement(t ?? `div`);
   for (let e of Object.keys(n)) {
     let t = n[e].join(` `);
-    e === `style` ? xi(r.style, t) : r.setAttribute(e, t)
+    e === `style` ? ki(r.style, t) : r.setAttribute(e, t)
   }
   return r
 }
 
-function xi(e, t) {
+function ki(e, t) {
   for (let n of t.split(`;`)) {
     let t = /^\s*([\w-]+)\s*:\s*(.+?)(\s*!([\w-]+))?\s*$/.exec(n);
     if (t) {
@@ -2316,7 +2394,7 @@ function xi(e, t) {
   }
 }
 
-function Si() {
+function Ai() {
   let e = window;
   for (;;) {
     let t = e.parent;
@@ -2330,17 +2408,17 @@ function Si() {
     e = t
   }
 }
-var Ci = `mmMwWLliI0O&1`,
-  wi = `48px`,
-  A = [`monospace`, `sans-serif`, `serif`],
-  Ti = `sans-serif-thin.ARNO PRO.Agency FB.Arabic Typesetting.Arial Unicode MS.AvantGarde Bk BT.BankGothic Md BT.Batang.Bitstream Vera Sans Mono.Calibri.Century.Century Gothic.Clarendon.EUROSTILE.Franklin Gothic.Futura Bk BT.Futura Md BT.GOTHAM.Gill Sans.HELV.Haettenschweiler.Helvetica Neue.Humanst521 BT.Leelawadee.Letter Gothic.Levenim MT.Lucida Bright.Lucida Sans.Menlo.MS Mincho.MS Outlook.MS Reference Specialty.MS UI Gothic.MT Extra.MYRIAD PRO.Marlett.Meiryo UI.Microsoft Uighur.Minion Pro.Monotype Corsiva.PMingLiU.Pristina.SCRIPTINA.Segoe UI Light.Serifa.SimHei.Small Fonts.Staccato222 BT.TRAJAN PRO.Univers CE 55 Medium.Vrinda.ZWAdobeF`.split(`.`);
+var ji = `mmMwWLliI0O&1`,
+  Mi = `48px`,
+  Ni = [`monospace`, `sans-serif`, `serif`],
+  Pi = `sans-serif-thin.ARNO PRO.Agency FB.Arabic Typesetting.Arial Unicode MS.AvantGarde Bk BT.BankGothic Md BT.Batang.Bitstream Vera Sans Mono.Calibri.Century.Century Gothic.Clarendon.EUROSTILE.Franklin Gothic.Futura Bk BT.Futura Md BT.GOTHAM.Gill Sans.HELV.Haettenschweiler.Helvetica Neue.Humanst521 BT.Leelawadee.Letter Gothic.Levenim MT.Lucida Bright.Lucida Sans.Menlo.MS Mincho.MS Outlook.MS Reference Specialty.MS UI Gothic.MT Extra.MYRIAD PRO.Marlett.Meiryo UI.Microsoft Uighur.Minion Pro.Monotype Corsiva.PMingLiU.Pristina.SCRIPTINA.Segoe UI Light.Serifa.SimHei.Small Fonts.Staccato222 BT.TRAJAN PRO.Univers CE 55 Medium.Vrinda.ZWAdobeF`.split(`.`);
 
-function Ei() {
-  return yi(async (e, {
+function Fi() {
+  return Di(async (e, {
     document: t
   }) => {
     let n = t.body;
-    n.style.fontSize = wi;
+    n.style.fontSize = Mi;
     let r = t.createElement(`div`);
     r.style.setProperty(`visibility`, `hidden`, `important`);
     let i = {},
@@ -2350,25 +2428,25 @@ function Ei() {
           {
             style: i
           } = n;
-        return i.position = `absolute`, i.top = `0`, i.left = `0`, i.fontFamily = e, n.textContent = Ci, r.appendChild(n), n
+        return i.position = `absolute`, i.top = `0`, i.left = `0`, i.fontFamily = e, n.textContent = ji, r.appendChild(n), n
       },
       s = (e, t) => o(`'${e}',${t}`),
-      c = () => A.map(o),
+      c = () => Ni.map(o),
       l = () => {
         let e = {};
-        for (let t of Ti) e[t] = A.map(e => s(t, e));
+        for (let t of Pi) e[t] = Ni.map(e => s(t, e));
         return e
       },
-      u = e => A.some((t, n) => e[n].offsetWidth !== i[t] || e[n].offsetHeight !== a[t]),
+      u = e => Ni.some((t, n) => e[n].offsetWidth !== i[t] || e[n].offsetHeight !== a[t]),
       d = c(),
       f = l();
     n.appendChild(r);
-    for (let e = 0; e < A.length; e++) i[A[e]] = d[e].offsetWidth, a[A[e]] = d[e].offsetHeight;
-    return Ti.filter(e => u(f[e]))
+    for (let e = 0; e < Ni.length; e++) i[Ni[e]] = d[e].offsetWidth, a[Ni[e]] = d[e].offsetHeight;
+    return Pi.filter(e => u(f[e]))
   })
 }
 
-function Di() {
+function Ii() {
   let e = navigator.plugins;
   if (!e) return;
   let t = [];
@@ -2392,46 +2470,46 @@ function Di() {
   return t
 }
 
-function Oi() {
-  return ki(Li())
+function Li() {
+  return Ri(Ki())
 }
 
-function ki(e) {
+function Ri(e) {
   let t = !1,
-    n, r, [i, a] = Ai();
-  return ji(i, a) ? (t = Mi(a), e ? n = r = `skipped` : [n, r] = Ni(i, a)) : n = r = `unsupported`, {
+    n, r, [i, a] = zi();
+  return Bi(i, a) ? (t = Vi(a), e ? n = r = `skipped` : [n, r] = Hi(i, a)) : n = r = `unsupported`, {
     winding: t,
     geometry: n,
     text: r
   }
 }
 
-function Ai() {
+function zi() {
   let e = document.createElement(`canvas`);
   return e.width = 1, e.height = 1, [e, e.getContext(`2d`)]
 }
 
-function ji(e, t) {
+function Bi(e, t) {
   return !!(t && e.toDataURL)
 }
 
-function Mi(e) {
+function Vi(e) {
   return e.rect(0, 0, 10, 10), e.rect(2, 2, 6, 6), !e.isPointInPath(5, 5, `evenodd`)
 }
 
-function Ni(e, t) {
-  Pi(e, t);
-  let n = Ii(e);
-  return n === Ii(e) ? (Fi(e, t), [Ii(e), n]) : [`unstable`, `unstable`]
+function Hi(e, t) {
+  Ui(e, t);
+  let n = Gi(e);
+  return n === Gi(e) ? (Wi(e, t), [Gi(e), n]) : [`unstable`, `unstable`]
 }
 
-function Pi(e, t) {
+function Ui(e, t) {
   e.width = 240, e.height = 60, t.textBaseline = `alphabetic`, t.fillStyle = `#f60`, t.fillRect(100, 1, 62, 20), t.fillStyle = `#069`, t.font = `11pt "Times New Roman"`;
   let n = `Cwm fjordbank gly ${String.fromCharCode(55357,56835)}`;
   t.fillText(n, 2, 15), t.fillStyle = `rgba(102, 204, 0, 0.2)`, t.font = `18pt Arial`, t.fillText(n, 4, 45)
 }
 
-function Fi(e, t) {
+function Wi(e, t) {
   e.width = 122, e.height = 110, t.globalCompositeOperation = `multiply`;
   for (let [e, n, r] of [
       [`#f2f`, 40, 40],
@@ -2441,21 +2519,21 @@ function Fi(e, t) {
   t.fillStyle = `#f9c`, t.arc(60, 60, 60, 0, Math.PI * 2, !0), t.arc(60, 60, 20, 0, Math.PI * 2, !0), t.fill(`evenodd`)
 }
 
-function Ii(e) {
+function Gi(e) {
   return e.toDataURL()
 }
 
-function Li() {
-  let e = k() && oi() && Qr(),
-    t = $r() && ei();
+function Ki() {
+  let e = M() && mi() && oi(),
+    t = si() && ci();
   return e || t
 }
 
-function Ri() {
+function qi() {
   let e = navigator,
     t = 0,
     n;
-  e.maxTouchPoints === void 0 ? e.msMaxTouchPoints !== void 0 && (t = e.msMaxTouchPoints) : t = kr(e.maxTouchPoints);
+  e.maxTouchPoints === void 0 ? e.msMaxTouchPoints !== void 0 && (t = e.msMaxTouchPoints) : t = Lr(e.maxTouchPoints);
   try {
     document.createEvent(`TouchEvent`), n = !0
   } catch {
@@ -2469,15 +2547,15 @@ function Ri() {
   }
 }
 
-function zi() {
+function Ji() {
   return navigator.oscpu
 }
 
-function Bi() {
+function Yi() {
   let e = navigator,
     t = [],
     n = e.language || e.userLanguage || e.browserLanguage || e.systemLanguage;
-  if (n !== void 0 && t.push([n]), Array.isArray(e.languages)) Xr() && ni() || t.push(e.languages);
+  if (n !== void 0 && t.push([n]), Array.isArray(e.languages)) ii() && ui() || t.push(e.languages);
   else if (typeof e.languages == `string`) {
     let n = e.languages;
     n && t.push(n.split(`,`))
@@ -2485,97 +2563,97 @@ function Bi() {
   return t
 }
 
-function Vi() {
+function Xi() {
   return window.screen.colorDepth
 }
 
-function Hi() {
-  return C(S(navigator.deviceMemory), void 0)
+function Zi() {
+  return E(T(navigator.deviceMemory), void 0)
 }
 
-function Ui() {
-  if (!(k() && oi() && Qr())) return Wi()
+function Qi() {
+  if (!(M() && mi() && oi())) return $i()
 }
 
-function Wi() {
+function $i() {
   let e = screen,
-    t = e => C(kr(e), null),
+    t = e => E(Lr(e), null),
     n = [t(e.width), t(e.height)];
   return n.sort().reverse(), n
 }
-var Gi = 2500,
-  Ki = 10,
-  qi, Ji;
+var ea = 2500,
+  ta = 10,
+  na, ra;
 
-function Yi() {
-  if (Ji !== void 0) return;
+function ia() {
+  if (ra !== void 0) return;
   let e = () => {
-    let t = Qi();
-    $i(t) ? Ji = setTimeout(e, Gi) : (qi = t, Ji = void 0)
+    let t = sa();
+    ca(t) ? ra = setTimeout(e, ea) : (na = t, ra = void 0)
   };
   e()
 }
 
-function Xi() {
-  return Yi(), async () => {
-    let e = Qi();
-    if ($i(e)) {
-      if (qi) return [...qi];
-      ci() && (await li(), e = Qi())
+function aa() {
+  return ia(), async () => {
+    let e = sa();
+    if (ca(e)) {
+      if (na) return [...na];
+      gi() && (await _i(), e = sa())
     }
-    return $i(e) || (qi = e), e
+    return ca(e) || (na = e), e
   }
 }
 
-function Zi() {
-  let e = k() && oi() && Qr(),
-    t = $r() && ti();
+function oa() {
+  let e = M() && mi() && oi(),
+    t = si() && li();
   if (e || t) return () => Promise.resolve(void 0);
-  let n = Xi();
+  let n = aa();
   return async () => {
     let e = await n(),
-      t = e => e === null ? null : Ar(e, Ki);
+      t = e => e === null ? null : Rr(e, ta);
     return [t(e[0]), t(e[1]), t(e[2]), t(e[3])]
   }
 }
 
-function Qi() {
+function sa() {
   let e = screen;
-  return [C(S(e.availTop), null), C(S(e.width) - S(e.availWidth) - C(S(e.availLeft), 0), null), C(S(e.height) - S(e.availHeight) - C(S(e.availTop), 0), null), C(S(e.availLeft), null)]
+  return [E(T(e.availTop), null), E(T(e.width) - T(e.availWidth) - E(T(e.availLeft), 0), null), E(T(e.height) - T(e.availHeight) - E(T(e.availTop), 0), null), E(T(e.availLeft), null)]
 }
 
-function $i(e) {
+function ca(e) {
   for (let t = 0; t < 4; ++t)
     if (e[t]) return !1;
   return !0
 }
 
-function ea() {
-  let e = ta();
-  return e !== void 0 && $r() && ti() ? e >= 8 ? 8 : 4 : e
+function la() {
+  let e = ua();
+  return e !== void 0 && si() && li() ? e >= 8 ? 8 : 4 : e
 }
 
-function ta() {
-  return C(kr(navigator.hardwareConcurrency), void 0)
+function ua() {
+  return E(Lr(navigator.hardwareConcurrency), void 0)
 }
 
-function na() {
+function da() {
   var e;
   let t = (e = window.Intl) == null ? void 0 : e.DateTimeFormat;
   if (t) {
     let e = new t().resolvedOptions().timeZone;
     if (e) return e
   }
-  let n = -ra();
+  let n = -fa();
   return `UTC${n>=0?`+`:``}${n}`
 }
 
-function ra() {
+function fa() {
   let e = new Date().getFullYear();
-  return Math.max(S(new Date(e, 0, 1).getTimezoneOffset()), S(new Date(e, 6, 1).getTimezoneOffset()))
+  return Math.max(T(new Date(e, 0, 1).getTimezoneOffset()), T(new Date(e, 6, 1).getTimezoneOffset()))
 }
 
-function ia() {
+function pa() {
   try {
     return !!window.sessionStorage
   } catch {
@@ -2583,7 +2661,7 @@ function ia() {
   }
 }
 
-function aa() {
+function ma() {
   try {
     return !!window.localStorage
   } catch {
@@ -2591,34 +2669,34 @@ function aa() {
   }
 }
 
-function oa() {
-  if (!(Jr() || Yr())) try {
+function ha() {
+  if (!(ni() || ri())) try {
     return !!window.indexedDB
   } catch {
     return !0
   }
 }
 
-function sa() {
+function ga() {
   return !!window.openDatabase
 }
 
-function ca() {
+function _a() {
   return navigator.cpuClass
 }
 
-function la() {
+function va() {
   let {
     platform: e
   } = navigator;
-  return e === `MacIntel` && k() && !Zr() ? si() ? `iPad` : `iPhone` : e
+  return e === `MacIntel` && M() && !ai() ? hi() ? `iPad` : `iPhone` : e
 }
 
-function ua() {
+function ya() {
   return navigator.vendor || ``
 }
 
-function da() {
+function ba() {
   let e = [];
   for (let t of [`chrome`, `safari`, `__crWeb`, `__gCrWeb`, `yandex`, `__yb`, `__ybro`, `__firefox__`, `__edgeTrackingPreventionStatistics`, `webkit`, `oprt`, `samsungAr`, `ucweb`, `UCShellJava`, `puffinDevice`]) {
     let n = window[t];
@@ -2627,7 +2705,7 @@ function da() {
   return e.sort()
 }
 
-function fa() {
+function xa() {
   let e = document;
   try {
     e.cookie = `cookietest=1; SameSite=Strict;`;
@@ -2638,7 +2716,7 @@ function fa() {
   }
 }
 
-function pa() {
+function Sa() {
   let e = atob;
   return {
     abpIndo: [`#Iklan-Melayang`, `#Kolom-Iklan-728`, `#SidebarIklan-wrapper`, `[title="ALIENBOLA" i]`, e(`I0JveC1CYW5uZXItYWRz`)],
@@ -2688,38 +2766,38 @@ function pa() {
     webAnnoyancesUltralist: [`#mod-social-share-2`, `#social-tools`, e(`LmN0cGwtZnVsbGJhbm5lcg==`), `.zergnet-recommend`, `.yt.btn-link.btn-md.btn`]
   }
 }
-async function ma({
+async function Ca({
   debug: e
 } = {}) {
-  if (!ha()) return;
-  let t = pa(),
+  if (!wa()) return;
+  let t = Sa(),
     n = Object.keys(t),
-    r = await ga([].concat(...n.map(e => t[e])));
-  e && va(t, r);
+    r = await Ta([].concat(...n.map(e => t[e])));
+  e && Da(t, r);
   let i = n.filter(e => {
     let n = t[e];
-    return w(n.map(e => r[e])) > n.length * .6
+    return D(n.map(e => r[e])) > n.length * .6
   });
   return i.sort(), i
 }
 
-function ha() {
-  return k() || ui()
+function wa() {
+  return M() || vi()
 }
-async function ga(e) {
+async function Ta(e) {
   var t;
   let n = document,
     r = n.createElement(`div`),
     i = Array(e.length),
     a = {};
-  _a(r);
+  Ea(r);
   for (let t = 0; t < e.length; ++t) {
-    let a = bi(e[t]);
+    let a = Oi(e[t]);
     a.tagName === `DIALOG` && a.show();
     let o = n.createElement(`div`);
-    _a(o), o.appendChild(a), r.appendChild(o), i[t] = a
+    Ea(o), o.appendChild(a), r.appendChild(o), i[t] = a
   }
-  for (; !n.body;) await br(50);
+  for (; !n.body;) await Or(50);
   n.body.appendChild(r);
   try {
     for (let t = 0; t < e.length; ++t) i[t].offsetParent || (a[e[t]] = !0)
@@ -2729,11 +2807,11 @@ async function ga(e) {
   return a
 }
 
-function _a(e) {
+function Ea(e) {
   e.style.setProperty(`visibility`, `hidden`, `important`), e.style.setProperty(`display`, `block`, `important`)
 }
 
-function va(e, t) {
+function Da(e, t) {
   let n = "DOM blockers debug:\n```";
   for (let r of Object.keys(e)) {
     n += `\n${r}:`;
@@ -2742,123 +2820,123 @@ function va(e, t) {
   console.log(`${n}\n\`\`\``)
 }
 
-function ya() {
+function Oa() {
   for (let e of [`rec2020`, `p3`, `srgb`])
     if (matchMedia(`(color-gamut: ${e})`).matches) return e
 }
 
-function ba() {
-  if (xa(`inverted`)) return !0;
-  if (xa(`none`)) return !1
+function ka() {
+  if (Aa(`inverted`)) return !0;
+  if (Aa(`none`)) return !1
 }
 
-function xa(e) {
+function Aa(e) {
   return matchMedia(`(inverted-colors: ${e})`).matches
 }
 
-function Sa() {
-  if (Ca(`active`)) return !0;
-  if (Ca(`none`)) return !1
+function ja() {
+  if (Ma(`active`)) return !0;
+  if (Ma(`none`)) return !1
 }
 
-function Ca(e) {
+function Ma(e) {
   return matchMedia(`(forced-colors: ${e})`).matches
 }
-var wa = 100;
+var Na = 100;
 
-function Ta() {
+function Pa() {
   if (matchMedia(`(min-monochrome: 0)`).matches) {
-    for (let e = 0; e <= wa; ++e)
+    for (let e = 0; e <= Na; ++e)
       if (matchMedia(`(max-monochrome: ${e})`).matches) return e;
     throw Error(`Too high value`)
   }
 }
 
-function Ea() {
-  if (Da(`no-preference`)) return 0;
-  if (Da(`high`) || Da(`more`)) return 1;
-  if (Da(`low`) || Da(`less`)) return -1;
-  if (Da(`forced`)) return 10
+function Fa() {
+  if (Ia(`no-preference`)) return 0;
+  if (Ia(`high`) || Ia(`more`)) return 1;
+  if (Ia(`low`) || Ia(`less`)) return -1;
+  if (Ia(`forced`)) return 10
 }
 
-function Da(e) {
+function Ia(e) {
   return matchMedia(`(prefers-contrast: ${e})`).matches
 }
 
-function Oa() {
-  if (ka(`reduce`)) return !0;
-  if (ka(`no-preference`)) return !1
+function La() {
+  if (Ra(`reduce`)) return !0;
+  if (Ra(`no-preference`)) return !1
 }
 
-function ka(e) {
+function Ra(e) {
   return matchMedia(`(prefers-reduced-motion: ${e})`).matches
 }
 
-function Aa() {
-  if (ja(`reduce`)) return !0;
-  if (ja(`no-preference`)) return !1
+function za() {
+  if (Ba(`reduce`)) return !0;
+  if (Ba(`no-preference`)) return !1
 }
 
-function ja(e) {
+function Ba(e) {
   return matchMedia(`(prefers-reduced-transparency: ${e})`).matches
 }
 
-function Ma() {
-  if (Na(`high`)) return !0;
-  if (Na(`standard`)) return !1
+function Va() {
+  if (Ha(`high`)) return !0;
+  if (Ha(`standard`)) return !1
 }
 
-function Na(e) {
+function Ha(e) {
   return matchMedia(`(dynamic-range: ${e})`).matches
 }
-var j = Math,
-  M = () => 0;
+var N = Math,
+  P = () => 0;
 
-function Pa() {
-  let e = j.acos || M,
-    t = j.acosh || M,
-    n = j.asin || M,
-    r = j.asinh || M,
-    i = j.atanh || M,
-    a = j.atan || M,
-    o = j.sin || M,
-    s = j.sinh || M,
-    c = j.cos || M,
-    l = j.cosh || M,
-    u = j.tan || M,
-    d = j.tanh || M,
-    f = j.exp || M,
-    p = j.expm1 || M,
-    m = j.log1p || M;
+function Ua() {
+  let e = N.acos || P,
+    t = N.acosh || P,
+    n = N.asin || P,
+    r = N.asinh || P,
+    i = N.atanh || P,
+    a = N.atan || P,
+    o = N.sin || P,
+    s = N.sinh || P,
+    c = N.cos || P,
+    l = N.cosh || P,
+    u = N.tan || P,
+    d = N.tanh || P,
+    f = N.exp || P,
+    p = N.expm1 || P,
+    m = N.log1p || P;
   return {
     acos: e(.12312423423423424),
     acosh: t(1e308),
-    acoshPf: (e => j.log(e + j.sqrt(e * e - 1)))(1e154),
+    acoshPf: (e => N.log(e + N.sqrt(e * e - 1)))(1e154),
     asin: n(.12312423423423424),
     asinh: r(1),
-    asinhPf: (e => j.log(e + j.sqrt(e * e + 1)))(1),
+    asinhPf: (e => N.log(e + N.sqrt(e * e + 1)))(1),
     atanh: i(.5),
-    atanhPf: (e => j.log((1 + e) / (1 - e)) / 2)(.5),
+    atanhPf: (e => N.log((1 + e) / (1 - e)) / 2)(.5),
     atan: a(.5),
     sin: o(-1e300),
     sinh: s(1),
-    sinhPf: (e => j.exp(e) - 1 / j.exp(e) / 2)(1),
+    sinhPf: (e => N.exp(e) - 1 / N.exp(e) / 2)(1),
     cos: c(10.000000000123),
     cosh: l(1),
-    coshPf: (e => (j.exp(e) + 1 / j.exp(e)) / 2)(1),
+    coshPf: (e => (N.exp(e) + 1 / N.exp(e)) / 2)(1),
     tan: u(-1e300),
     tanh: d(1),
-    tanhPf: (e => (j.exp(2 * e) - 1) / (j.exp(2 * e) + 1))(1),
+    tanhPf: (e => (N.exp(2 * e) - 1) / (N.exp(2 * e) + 1))(1),
     exp: f(1),
     expm1: p(1),
-    expm1Pf: (e => j.exp(e) - 1)(1),
+    expm1Pf: (e => N.exp(e) - 1)(1),
     log1p: m(10),
-    log1pPf: (e => j.log(1 + e))(10),
-    powPI: (e => j.pow(j.PI, e))(-100)
+    log1pPf: (e => N.log(1 + e))(10),
+    powPI: (e => N.pow(N.PI, e))(-100)
   }
 }
-var Fa = `mmMwWLliI0fiflO&1`,
-  Ia = {
+var Wa = `mmMwWLliI0fiflO&1`,
+  Ga = {
     default: [],
     apple: [{
       font: `-apple-system-body`
@@ -2880,12 +2958,12 @@ var Fa = `mmMwWLliI0fiflO&1`,
     }]
   };
 
-function La() {
-  return za((e, t, n) => {
+function Ka() {
+  return Ja((e, t, n) => {
     let r = {},
       i = {};
-    for (let n of Object.keys(Ia)) {
-      let [i = {}, a = Fa] = Ia[n], o = e.createElement(`span`);
+    for (let n of Object.keys(Ga)) {
+      let [i = {}, a = Wa] = Ga[n], o = e.createElement(`span`);
       o.textContent = a, o.style.whiteSpace = `nowrap`;
       for (let e of Object.keys(i)) {
         let t = i[e];
@@ -2893,82 +2971,82 @@ function La() {
       }
       r[n] = o, t.append(e.createElement(`br`), o)
     }
-    let a = Xr() && ii();
-    for (let e of Object.keys(Ia)) {
+    let a = ii() && fi();
+    for (let e of Object.keys(Ga)) {
       let t = r[e].getBoundingClientRect().width;
-      i[e] = a ? Ra(t * n.devicePixelRatio) : t
+      i[e] = a ? qa(t * n.devicePixelRatio) : t
     }
     return i
   })
 }
 
-function Ra(e) {
-  let t = 10 ** (ui() ? 0 : 3);
+function qa(e) {
+  let t = 10 ** (vi() ? 0 : 3);
   return Math.floor(e * t) / t
 }
 
-function za(e, t = 4e3) {
-  return yi((n, r) => {
+function Ja(e, t = 4e3) {
+  return Di((n, r) => {
     let i = r.document,
       a = i.body,
       o = a.style;
-    o.width = `${t}px`, o.webkitTextSizeAdjust = o.textSizeAdjust = `none`, Xr() ? a.style.zoom = `${1/r.devicePixelRatio}` : k() && (a.style.zoom = `reset`);
+    o.width = `${t}px`, o.webkitTextSizeAdjust = o.textSizeAdjust = `none`, ii() ? a.style.zoom = `${1/r.devicePixelRatio}` : M() && (a.style.zoom = `reset`);
     let s = i.createElement(`div`);
     return s.textContent = [...Array(t / 20 << 0)].map(() => `word`).join(` `), a.appendChild(s), e(i, a, r)
   }, `<!doctype html><html><head><meta name="viewport" content="width=device-width, initial-scale=1">`)
 }
 
-function Ba() {
+function Ya() {
   return navigator.pdfViewerEnabled
 }
 
-function Va() {
+function Xa() {
   let e = new Float32Array(1),
     t = new Uint8Array(e.buffer);
   return e[0] = 1 / 0, e[0] -= e[0], t[3]
 }
 
-function Ha() {
+function Za() {
   let {
     ApplePaySession: e
   } = window;
   if (typeof(e == null ? void 0 : e.canMakePayments) != `function`) return -1;
-  if (Ua()) return -3;
+  if (Qa()) return -3;
   try {
     return +!!e.canMakePayments()
   } catch (e) {
-    return Wa(e)
+    return $a(e)
   }
 }
-var Ua = Si;
+var Qa = Ai;
 
-function Wa(e) {
+function $a(e) {
   if (e instanceof Error && e.name === `InvalidAccessError` && /\bfrom\b.*\binsecure\b/i.test(e.message)) return -2;
   throw e
 }
 
-function Ga() {
+function eo() {
   let e = document.createElement(`a`),
     t = e.attributionSourceId ?? e.attributionsourceid;
   return t === void 0 ? void 0 : String(t)
 }
-var Ka = -1,
-  qa = -2,
-  Ja = new Set([10752, 2849, 2884, 2885, 2886, 2928, 2929, 2930, 2931, 2932, 2960, 2961, 2962, 2963, 2964, 2965, 2966, 2967, 2968, 2978, 3024, 3042, 3088, 3089, 3106, 3107, 32773, 32777, 32777, 32823, 32824, 32936, 32937, 32938, 32939, 32968, 32969, 32970, 32971, 3317, 33170, 3333, 3379, 3386, 33901, 33902, 34016, 34024, 34076, 3408, 3410, 3411, 3412, 3413, 3414, 3415, 34467, 34816, 34817, 34818, 34819, 34877, 34921, 34930, 35660, 35661, 35724, 35738, 35739, 36003, 36004, 36005, 36347, 36348, 36349, 37440, 37441, 37443, 7936, 7937, 7938]),
-  Ya = new Set([34047, 35723, 36063, 34852, 34853, 34854, 34229, 36392, 36795, 38449]),
-  Xa = [`FRAGMENT_SHADER`, `VERTEX_SHADER`],
-  Za = [`LOW_FLOAT`, `MEDIUM_FLOAT`, `HIGH_FLOAT`, `LOW_INT`, `MEDIUM_INT`, `HIGH_INT`],
-  Qa = `WEBGL_debug_renderer_info`,
-  $a = `WEBGL_polygon_mode`;
+var to = -1,
+  no = -2,
+  ro = new Set([10752, 2849, 2884, 2885, 2886, 2928, 2929, 2930, 2931, 2932, 2960, 2961, 2962, 2963, 2964, 2965, 2966, 2967, 2968, 2978, 3024, 3042, 3088, 3089, 3106, 3107, 32773, 32777, 32777, 32823, 32824, 32936, 32937, 32938, 32939, 32968, 32969, 32970, 32971, 3317, 33170, 3333, 3379, 3386, 33901, 33902, 34016, 34024, 34076, 3408, 3410, 3411, 3412, 3413, 3414, 3415, 34467, 34816, 34817, 34818, 34819, 34877, 34921, 34930, 35660, 35661, 35724, 35738, 35739, 36003, 36004, 36005, 36347, 36348, 36349, 37440, 37441, 37443, 7936, 7937, 7938]),
+  io = new Set([34047, 35723, 36063, 34852, 34853, 34854, 34229, 36392, 36795, 38449]),
+  ao = [`FRAGMENT_SHADER`, `VERTEX_SHADER`],
+  oo = [`LOW_FLOAT`, `MEDIUM_FLOAT`, `HIGH_FLOAT`, `LOW_INT`, `MEDIUM_INT`, `HIGH_INT`],
+  so = `WEBGL_debug_renderer_info`,
+  co = `WEBGL_polygon_mode`;
 
-function eo({
+function lo({
   cache: e
 }) {
   var t, n, r, i, a, o;
-  let s = no(e);
-  if (!s) return Ka;
-  if (!co(s)) return qa;
-  let c = oo() ? null : s.getExtension(Qa);
+  let s = fo(e);
+  if (!s) return to;
+  if (!vo(s)) return no;
+  let c = go() ? null : s.getExtension(so);
   return {
     version: ((t = s.getParameter(s.VERSION)) == null ? void 0 : t.toString()) || ``,
     vendor: ((n = s.getParameter(s.VENDOR)) == null ? void 0 : n.toString()) || ``,
@@ -2979,12 +3057,12 @@ function eo({
   }
 }
 
-function to({
+function uo({
   cache: e
 }) {
-  let t = no(e);
-  if (!t) return Ka;
-  if (!co(t)) return qa;
+  let t = fo(e);
+  if (!t) return to;
+  if (!vo(t)) return no;
   let n = t.getSupportedExtensions(),
     r = t.getContextAttributes(),
     i = [],
@@ -2994,27 +3072,27 @@ function to({
     c = [];
   if (r)
     for (let e of Object.keys(r)) a.push(`${e}=${r[e]}`);
-  let l = io(t);
+  let l = mo(t);
   for (let e of l) {
     let n = t[e];
-    o.push(`${e}=${n}${Ja.has(n)?`=${t.getParameter(n)}`:``}`)
+    o.push(`${e}=${n}${ro.has(n)?`=${t.getParameter(n)}`:``}`)
   }
   if (n)
     for (let e of n) {
-      if (e === Qa && oo() || e === $a && so()) continue;
+      if (e === so && go() || e === co && _o()) continue;
       let n = t.getExtension(e);
       if (!n) {
         i.push(e);
         continue
       }
-      for (let e of io(n)) {
+      for (let e of mo(n)) {
         let r = n[e];
-        s.push(`${e}=${r}${Ya.has(r)?`=${t.getParameter(r)}`:``}`)
+        s.push(`${e}=${r}${io.has(r)?`=${t.getParameter(r)}`:``}`)
       }
     }
-  for (let e of Xa)
-    for (let n of Za) {
-      let r = ro(t, e, n);
+  for (let e of ao)
+    for (let n of oo) {
+      let r = po(t, e, n);
       c.push(`${e}.${n}=${r.join(`,`)}`)
     }
   return s.sort(), o.sort(), {
@@ -3027,7 +3105,7 @@ function to({
   }
 }
 
-function no(e) {
+function fo(e) {
   if (e.webgl) return e.webgl.context;
   let t = document.createElement(`canvas`),
     n;
@@ -3043,39 +3121,39 @@ function no(e) {
   }, n
 }
 
-function ro(e, t, n) {
+function po(e, t, n) {
   let r = e.getShaderPrecisionFormat(e[t], e[n]);
   return r ? [r.rangeMin, r.rangeMax, r.precision] : []
 }
 
-function io(e) {
-  return Object.keys(e.__proto__).filter(ao)
+function mo(e) {
+  return Object.keys(e.__proto__).filter(ho)
 }
 
-function ao(e) {
+function ho(e) {
   return typeof e == `string` && !e.match(/[^A-Z0-9_x]/)
 }
 
-function oo() {
-  return $r()
+function go() {
+  return si()
 }
 
-function so() {
-  return Xr() || k()
+function _o() {
+  return ii() || M()
 }
 
-function co(e) {
+function vo(e) {
   return typeof e.getParameter == `function`
 }
 
-function lo() {
-  if (!(ui() || k())) return -2;
+function yo() {
+  if (!(vi() || M())) return -2;
   if (!window.AudioContext) return -1;
   let e = new AudioContext().baseLatency;
   return e == null ? -1 : isFinite(e) ? e : -3
 }
 
-function uo() {
+function bo() {
   if (!window.Intl) return -1;
   let e = window.Intl.DateTimeFormat;
   if (!e) return -2;
@@ -3083,15 +3161,15 @@ function uo() {
   return !t && t !== `` ? -3 : t
 }
 
-function fo(e) {
+function xo(e) {
   return /not/i.test(e)
 }
-async function po() {
+async function So() {
   let e = navigator.userAgentData;
   if (!e) return;
   let t = e.brands.filter(({
       brand: e
-    }) => !fo(e)).map(({
+    }) => !xo(e)).map(({
       brand: e
     }) => e),
     n = {
@@ -3108,77 +3186,77 @@ async function po() {
   }
   return n
 }
-var mo = {
-  userAgentData: po,
-  fonts: Ei,
-  domBlockers: ma,
-  fontPreferences: La,
-  audio: fi,
-  screenFrame: Zi,
-  canvas: Oi,
-  osCpu: zi,
-  languages: Bi,
-  colorDepth: Vi,
-  deviceMemory: Hi,
-  screenResolution: Ui,
-  hardwareConcurrency: ea,
-  timezone: na,
-  sessionStorage: ia,
-  localStorage: aa,
-  indexedDB: oa,
-  openDatabase: sa,
-  cpuClass: ca,
-  platform: la,
-  plugins: Di,
-  touchSupport: Ri,
-  vendor: ua,
-  vendorFlavors: da,
-  cookiesEnabled: fa,
-  colorGamut: ya,
-  invertedColors: ba,
-  forcedColors: Sa,
-  monochrome: Ta,
-  contrast: Ea,
-  reducedMotion: Oa,
-  reducedTransparency: Aa,
-  hdr: Ma,
-  math: Pa,
-  pdfViewerEnabled: Ba,
-  architecture: Va,
-  applePay: Ha,
-  privateClickMeasurement: Ga,
-  audioBaseLatency: lo,
-  dateTimeLocale: uo,
-  webGlBasics: eo,
-  webGlExtensions: to
+var Co = {
+  userAgentData: So,
+  fonts: Fi,
+  domBlockers: Ca,
+  fontPreferences: Ka,
+  audio: bi,
+  screenFrame: oa,
+  canvas: Li,
+  osCpu: Ji,
+  languages: Yi,
+  colorDepth: Xi,
+  deviceMemory: Zi,
+  screenResolution: Qi,
+  hardwareConcurrency: la,
+  timezone: da,
+  sessionStorage: pa,
+  localStorage: ma,
+  indexedDB: ha,
+  openDatabase: ga,
+  cpuClass: _a,
+  platform: va,
+  plugins: Ii,
+  touchSupport: qi,
+  vendor: ya,
+  vendorFlavors: ba,
+  cookiesEnabled: xa,
+  colorGamut: Oa,
+  invertedColors: ka,
+  forcedColors: ja,
+  monochrome: Pa,
+  contrast: Fa,
+  reducedMotion: La,
+  reducedTransparency: za,
+  hdr: Va,
+  math: Ua,
+  pdfViewerEnabled: Ya,
+  architecture: Xa,
+  applePay: Za,
+  privateClickMeasurement: eo,
+  audioBaseLatency: yo,
+  dateTimeLocale: bo,
+  webGlBasics: lo,
+  webGlExtensions: uo
 };
 
-function ho(e) {
-  return qr(mo, e, [])
+function wo(e) {
+  return ti(Co, e, [])
 }
-var go = `$ if upgrade to Pro: https://fingerprint.com/github/?utm_source=oss&utm_medium=referral&utm_campaign=confidence_score`;
+var To = `$ if upgrade to Pro: https://fingerprint.com/github/?utm_source=oss&utm_medium=referral&utm_campaign=confidence_score`;
 
-function _o(e) {
-  let t = vo(e),
-    n = yo(t);
+function Eo(e) {
+  let t = Do(e),
+    n = Oo(t);
   return {
     score: t,
-    comment: go.replace(/\$/g, `${n}`)
+    comment: To.replace(/\$/g, `${n}`)
   }
 }
 
-function vo(e) {
-  if (ui()) return .4;
-  if (k()) return Zr() && !(oi() && Qr()) ? .5 : .3;
+function Do(e) {
+  if (vi()) return .4;
+  if (M()) return ai() && !(mi() && oi()) ? .5 : .3;
   let t = `value` in e.platform ? e.platform.value : ``;
   return /^Win/.test(t) ? .6 : /^Mac/.test(t) ? .5 : .7
 }
 
-function yo(e) {
-  return Ar(.99 + .01 * e, 1e-4)
+function Oo(e) {
+  return Rr(.99 + .01 * e, 1e-4)
 }
 
-function bo(e) {
+function ko(e) {
   let t = ``;
   for (let n of Object.keys(e).sort()) {
     let r = e[n],
@@ -3188,40 +3266,40 @@ function bo(e) {
   return t
 }
 
-function xo(e) {
-  return JSON.stringify(e, (e, t) => t instanceof Error ? Ur(t) : t, 2)
+function Ao(e) {
+  return JSON.stringify(e, (e, t) => t instanceof Error ? Zr(t) : t, 2)
 }
 
-function So(e) {
-  return Hr(bo(e))
+function jo(e) {
+  return Xr(ko(e))
 }
 
-function Co(e) {
+function Mo(e) {
   let t;
   return {
     get visitorId() {
-      return t === void 0 && (t = So(this.components)), t
+      return t === void 0 && (t = jo(this.components)), t
     },
     set visitorId(e) {
       t = e
     },
-    confidence: _o(e),
+    confidence: Eo(e),
     components: e,
-    version: yr
+    version: Dr
   }
 }
 
-function wo(e = 50) {
-  return Sr(e, e * 2)
+function No(e = 50) {
+  return Ar(e, e * 2)
 }
 
-function To(e, t) {
+function Po(e, t) {
   let n = Date.now();
   return {
     async get(r) {
       let i = Date.now(),
         a = await e(),
-        o = Co(a);
+        o = Mo(a);
       return (t || r != null && r.debug) && console.log(`Copy the text below to get the debug data:
 
 \`\`\`
@@ -3229,47 +3307,47 @@ version: ${o.version}
 userAgent: ${navigator.userAgent}
 timeBetweenLoadAndGet: ${i-n}
 visitorId: ${o.visitorId}
-components: ${xo(a)}
+components: ${Ao(a)}
 \`\`\``), o
     }
   }
 }
 
-function Eo() {
+function Fo() {
   if (!(window.__fpjs_d_m || Math.random() >= .001)) try {
     let e = new XMLHttpRequest;
-    e.open(`get`, `https://m1.openfpcdn.io/fingerprintjs/v${yr}/npm-monitoring`, !0), e.send()
+    e.open(`get`, `https://m1.openfpcdn.io/fingerprintjs/v${Dr}/npm-monitoring`, !0), e.send()
   } catch (e) {
     console.error(e)
   }
 }
-async function Do(e = {}) {
+async function Io(e = {}) {
   let {
     delayFallback: t,
     debug: n,
     monitoring: r = !0
   } = e;
-  return r && Eo(), await wo(t), To(ho({
+  return r && Fo(), await No(t), Po(wo({
     cache: {},
     debug: n
   }), n)
 }
-var Oo = {
-    load: Do,
-    hashComponents: So,
-    componentsToDebugString: xo
+var Lo = {
+    load: Io,
+    hashComponents: jo,
+    componentsToDebugString: Ao
   },
-  ko = null;
-async function Ao() {
-  return ko || (ko = Oo.load()), ko
+  Ro = null;
+async function zo() {
+  return Ro || (Ro = Lo.load()), Ro
 }
-async function jo() {
-  return Mo().then(e => e.visitorId)
+async function Bo() {
+  return Vo().then(e => e.visitorId)
 }
-async function Mo() {
-  let e = await (await Ao()).get(),
+async function Vo() {
+  let e = await (await zo()).get(),
     t = e.components,
-    n = vt(),
+    n = Et(),
     r = navigator.userAgent.toLowerCase(),
     i = r.includes(`iphone`),
     a = r.includes(`macintosh`),
@@ -3317,11 +3395,11 @@ async function Mo() {
       ...t
     }), n === `Safari` && (t = {
       canvas2d: {
-        value: await St(),
+        value: await At(),
         duration: 0
       },
       canvasWebgl: {
-        value: await Bt(),
+        value: await Jt(),
         duration: 0
       },
       ...t
@@ -3330,19 +3408,19 @@ async function Mo() {
     t = {
       ...t,
       fonts: {
-        value: [(c = t.fonts) == null ? void 0 : c.value, await Ft()],
+        value: [(c = t.fonts) == null ? void 0 : c.value, await Ut()],
         duration: t.fonts.duration
       }
     }
   }
   s && (t = {
     canvas2d: {
-      value: await St(),
+      value: await At(),
       duration: 0
     },
     ...t
   });
-  let l = Oo.hashComponents(t),
+  let l = Lo.hashComponents(t),
     u = l.length,
     d = u >> 2 | 2;
   return {
@@ -3351,129 +3429,143 @@ async function Mo() {
   }
 }
 
-function No() {
-  return vr.start({
-    apiKey: ee,
+function Ho() {
+  return Er.start({
+    apiKey: ce,
     endpoints: [`https://wplace.live/7eskSe93usV8ENxB/?region=eu`],
     region: `eu`
   })
 }
-var Po = `theme`,
-  Fo = new WeakMap,
-  Io = new WeakMap,
-  Lo = new WeakMap,
-  Ro = new WeakMap,
-  zo = new WeakMap,
-  Bo = new WeakMap,
-  Vo = new WeakMap,
-  Ho = new WeakMap,
-  Uo = new WeakMap,
+var Uo = `theme`,
   Wo = new WeakMap,
   Go = new WeakMap,
   Ko = new WeakMap,
   qo = new WeakMap,
   Jo = new WeakMap,
-  Yo = new class {
-    get dropletsDialogOpen() {
-      return l(a(Fo, this))
-    }
-    set dropletsDialogOpen(e) {
-      i(a(Fo, this), e, !0)
-    }
-    get prismDialogOpen() {
-      return l(a(Io, this))
-    }
-    set prismDialogOpen(e) {
-      i(a(Io, this), e, !0)
-    }
-    get accountConflictDialogOpen() {
-      return l(a(Lo, this))
-    }
-    set accountConflictDialogOpen(e) {
-      i(a(Lo, this), e, !0)
-    }
-    get pendingHistoryDialogOpen() {
-      return l(a(Ro, this))
-    }
-    set pendingHistoryDialogOpen(e) {
-      i(a(Ro, this), e, !0)
-    }
-    get storeDialogOpen() {
-      return l(a(zo, this))
-    }
-    set storeDialogOpen(e) {
-      i(a(zo, this), e, !0)
-    }
-    get storeTabIndex() {
-      return l(a(Bo, this))
-    }
-    set storeTabIndex(e) {
-      i(a(Bo, this), e, !0)
-    }
-    get muted() {
-      return l(a(Vo, this))
-    }
-    set muted(e) {
-      i(a(Vo, this), e, !0)
-    }
-    get haptics() {
-      return l(a(Ho, this))
-    }
-    set haptics(e) {
-      i(a(Ho, this), e, !0)
-    }
-    get language() {
-      return l(a(Uo, this))
-    }
-    set language(e) {
-      i(a(Uo, this), e, !0)
-    }
-    get map() {
+  Yo = new WeakMap,
+  Xo = new WeakMap,
+  Zo = new WeakMap,
+  Qo = new WeakMap,
+  $o = new WeakMap,
+  es = new WeakMap,
+  ts = new WeakMap,
+  ns = new WeakMap,
+  rs = new WeakMap,
+  is = new WeakMap,
+  as = new WeakMap,
+  F = new class {
+    get playerSettingsOpen() {
       return l(a(Wo, this))
     }
-    set map(e) {
-      i(a(Wo, this), e)
+    set playerSettingsOpen(e) {
+      i(a(Wo, this), e, !0)
     }
-    get automatedClicks() {
+    get playerSettingsTab() {
       return l(a(Go, this))
     }
-    set automatedClicks(e) {
+    set playerSettingsTab(e) {
       i(a(Go, this), e, !0)
     }
-    get theme() {
+    get dropletsDialogOpen() {
       return l(a(Ko, this))
     }
-    set theme(e) {
-      i(a(Ko, this), e, !0), localStorage.setItem(Po, e), document.documentElement.setAttribute(`data-theme`, e)
+    set dropletsDialogOpen(e) {
+      i(a(Ko, this), e, !0)
     }
-    get now() {
+    get prismDialogOpen() {
       return l(a(qo, this))
     }
+    set prismDialogOpen(e) {
+      i(a(qo, this), e, !0)
+    }
+    get accountConflictDialogOpen() {
+      return l(a(Jo, this))
+    }
+    set accountConflictDialogOpen(e) {
+      i(a(Jo, this), e, !0)
+    }
+    get pendingHistoryDialogOpen() {
+      return l(a(Yo, this))
+    }
+    set pendingHistoryDialogOpen(e) {
+      i(a(Yo, this), e, !0)
+    }
+    get storeDialogOpen() {
+      return l(a(Xo, this))
+    }
+    set storeDialogOpen(e) {
+      i(a(Xo, this), e, !0)
+    }
+    get storeTabIndex() {
+      return l(a(Zo, this))
+    }
+    set storeTabIndex(e) {
+      i(a(Zo, this), e, !0)
+    }
+    get muted() {
+      return l(a(Qo, this))
+    }
+    set muted(e) {
+      i(a(Qo, this), e, !0)
+    }
+    get haptics() {
+      return l(a($o, this))
+    }
+    set haptics(e) {
+      i(a($o, this), e, !0)
+    }
+    get language() {
+      return l(a(es, this))
+    }
+    set language(e) {
+      i(a(es, this), e, !0)
+    }
+    get map() {
+      return l(a(ts, this))
+    }
+    set map(e) {
+      i(a(ts, this), e)
+    }
+    get automatedClicks() {
+      return l(a(ns, this))
+    }
+    set automatedClicks(e) {
+      i(a(ns, this), e, !0)
+    }
+    get theme() {
+      return l(a(rs, this))
+    }
+    set theme(e) {
+      i(a(rs, this), e, !0), localStorage.setItem(Uo, e), document.documentElement.setAttribute(`data-theme`, e)
+    }
+    get now() {
+      return l(a(is, this))
+    }
     get captcha() {
-      return Zo ? l(a(Jo, this)) : {
+      return ss ? l(a(as, this)) : {
         token: `turnstile-disabled`,
         time: Date.now()
       }
     }
     set captcha(e) {
-      i(a(Jo, this), e, !0)
+      i(a(as, this), e, !0)
     }
     constructor() {
-      n(this, Fo, e(!1)), n(this, Io, e(!1)), n(this, Lo, e(!1)), n(this, Ro, e(!1)), n(this, zo, e(!1)), n(this, Bo, e(0)), n(this, Vo, e(!1)), n(this, Ho, e(!0)), n(this, Uo, e(t(Xo()))), n(this, Wo, e(null)), n(this, Go, e(!1)), n(this, Ko, e(`custom-winter`)), n(this, qo, e(t(Date.now()))), n(this, Jo, e(void 0)), setInterval(() => {
-        i(a(qo, this), Date.now(), !0)
-      }, 500), this.theme = localStorage.getItem(Po), this.theme !== `dark` && this.theme !== `custom-winter` && (this.theme = `custom-winter`)
+      n(this, Wo, e(!1)), n(this, Go, e(`interface`)), n(this, Ko, e(!1)), n(this, qo, e(!1)), n(this, Jo, e(!1)), n(this, Yo, e(!1)), n(this, Xo, e(!1)), n(this, Zo, e(0)), n(this, Qo, e(!1)), n(this, $o, e(!0)), n(this, es, e(t(os()))), n(this, ts, e(null)), n(this, ns, e(!1)), n(this, rs, e(`custom-winter`)), n(this, is, e(t(Date.now()))), n(this, as, e(void 0)), setInterval(() => {
+        i(a(is, this), Date.now(), !0)
+      }, 500), this.theme = localStorage.getItem(Uo), this.theme !== `dark` && this.theme !== `custom-winter` && (this.theme = `custom-winter`)
     }
   };
 
-function Xo() {
+function os() {
   if (navigator.languages && navigator.languages.length > 0) {
     let e = navigator.languages.find(e => e.length === 2);
     if (e) return e
   }
   return (navigator.language || navigator.userLanguage || navigator.browserLanguage || `en`).substring(0, 2)
 }
-var Zo = ie.toLowerCase() !== `false`,
-  Qo = `
+var ss = fe.toLowerCase() !== `false`,
+  cs = `
 self.onmessage = function(e) {
   const { prefix, difficulty } = e.data;
 
@@ -3514,14 +3606,14 @@ self.onmessage = function(e) {
   solve().catch(err => self.postMessage({ error: err.message }));
 };
 `;
-async function $o() {
+async function ls() {
   try {
-    let e = await fetch(`${oe}/anticheat/pow/challenge`, {
+    let e = await fetch(`${me}/anticheat/pow/challenge`, {
       credentials: `include`
     });
     if (!e.ok) return null;
     let t = await e.json(),
-      n = await es(t.prefix, t.difficulty);
+      n = await us(t.prefix, t.difficulty);
     return n ? {
       ...t,
       nonce: n
@@ -3530,9 +3622,9 @@ async function $o() {
     return null
   }
 }
-async function es(e, t) {
+async function us(e, t) {
   return new Promise(n => {
-    let r = new Blob([Qo], {
+    let r = new Blob([cs], {
         type: `application/javascript`
       }),
       i = URL.createObjectURL(r),
@@ -3550,41 +3642,41 @@ async function es(e, t) {
     })
   })
 }
-var ts = 3,
-  ns = new WeakMap,
-  rs = new WeakMap,
-  N = new class {
+var ds = 3,
+  fs = new WeakMap,
+  ps = new WeakMap,
+  I = new class {
     constructor() {
-      n(this, ns, e(null)), n(this, rs, e(0))
+      n(this, fs, e(null)), n(this, ps, e(0))
     }
     get current() {
-      return l(a(ns, this))
+      return l(a(fs, this))
     }
     set current(e) {
-      i(a(ns, this), e, !0)
+      i(a(fs, this), e, !0)
     }
     get errorCount() {
-      return l(a(rs, this))
+      return l(a(ps, this))
     }
     set errorCount(e) {
-      i(a(rs, this), e, !0)
+      i(a(ps, this), e, !0)
     }
   };
-async function is(e) {
-  if (e === 1) return as();
+async function ms(e) {
+  if (e === 1) return hs();
   if (e === 2) {
-    let e = await ss();
-    return e ? os(`turnstile`, e) : !1
+    let e = await vs();
+    return e ? gs(`turnstile`, e) : !1
   }
   if (e === 3) {
-    let e = await cs();
-    return e ? os(`hcaptcha`, e) : !1
+    let e = await ys();
+    return e ? gs(`hcaptcha`, e) : !1
   }
-  return e === 4 && us()
+  return e === 4 && xs()
 }
-async function as() {
-  for (let e = 0; e < ts; e++) try {
-    let e = await $o();
+async function hs() {
+  for (let e = 0; e < ds; e++) try {
+    let e = await ls();
     if (!e) continue;
     return await H.verifyChallenge({
       type: `pow`,
@@ -3594,7 +3686,7 @@ async function as() {
   } catch {}
   return !1
 }
-async function os(e, t) {
+async function gs(e, t) {
   try {
     let n = await H.postCaptchaSession({
       provider: e,
@@ -3608,81 +3700,81 @@ async function os(e, t) {
     return !1
   }
 }
-var P = {};
+var _s = {};
 
-function ss() {
-  return ls(2)
+function vs() {
+  return bs(2)
 }
 
-function cs() {
-  return ls(3)
+function ys() {
+  return bs(3)
 }
 
-function ls(e) {
-  let t = P[e];
+function bs(e) {
+  let t = _s[e];
   if (t) return t;
   let n = new Promise(t => {
-    N.errorCount = 0, N.current = {
+    I.errorCount = 0, I.current = {
       tier: e,
       resolve: n => {
-        delete P[e], t(n)
+        delete _s[e], t(n)
       }
     }
   });
-  return P[e] = n, n
+  return _s[e] = n, n
 }
 
-function us() {
-  let e = P[4];
+function xs() {
+  let e = _s[4];
   if (e) return e;
   let t = new Promise(e => {
-    N.errorCount = 0, N.current = {
+    I.errorCount = 0, I.current = {
       tier: 4,
       resolve: t => {
-        delete P[4], e(t)
+        delete _s[4], e(t)
       }
     }
   });
-  return P[4] = t, t
+  return _s[4] = t, t
 }
 
-function ds(e) {
-  let t = N.current;
-  !t || t.tier === 4 || (t.resolve(e), N.current = null)
+function Ss(e) {
+  let t = I.current;
+  !t || t.tier === 4 || (t.resolve(e), I.current = null)
 }
 
-function fs() {
-  let e = N.current;
-  !e || e.tier === 4 || (N.errorCount += 1, N.errorCount >= ts && (e.resolve(void 0), N.current = null))
+function Cs() {
+  let e = I.current;
+  !e || e.tier === 4 || (I.errorCount += 1, I.errorCount >= ds && (e.resolve(void 0), I.current = null))
 }
 
-function ps() {
-  let e = N.current;
-  !e || e.tier !== 4 || (e.resolve(!0), N.current = null)
+function ws() {
+  let e = I.current;
+  !e || e.tier !== 4 || (e.resolve(!0), I.current = null)
 }
 
-function ms() {
-  let e = N.current;
-  e && (e.tier === 4 ? e.resolve(!1) : e.resolve(void 0), N.current = null)
+function Ts() {
+  let e = I.current;
+  e && (e.tier === 4 ? e.resolve(!1) : e.resolve(void 0), I.current = null)
 }
-var hs;
+var Es;
 (function(e) {
   e.Unimplemented = `UNIMPLEMENTED`, e.Unavailable = `UNAVAILABLE`
-})(hs || (hs = {}));
-var gs = class extends Error {
+})(Es || (Es = {}));
+var Ds = class extends Error {
     constructor(e, t, n) {
       super(e), this.message = e, this.code = t, this.data = n
     }
   },
-  _s = e => {
+  Os = e => {
     var t, n;
     return e != null && e.androidBridge ? `android` : (n = (t = e == null ? void 0 : e.webkit) == null ? void 0 : t.messageHandlers) != null && n.bridge ? `ios` : `web`
   },
-  vs = e => {
+  ks = e => {
     let t = e.CapacitorCustomPlatform || null,
       n = e.Capacitor || {},
       r = n.Plugins = n.Plugins || {},
-      i = () => t === null ? _s(e) : t.name,
+      i = () => t === null ? Os(e) : t.name,
       a = () => i() !== `web`,
       o = e => {
         let t = l.get(e);
@@ -3706,7 +3798,7 @@ var gs = class extends Error {
             if (a) return a.rtype === `promise` ? t => n.nativePromise(e, r.toString(), t) : (t, i) => n.nativeCallback(e, r.toString(), t, i);
             if (t) return (i = t[r]) == null ? void 0 : i.bind(t)
           } else if (t) return (a = t[r]) == null ? void 0 : a.bind(t);
-          else throw new gs(`"${e}" plugin is not implemented on ${c}`, hs.Unimplemented)
+          else throw new Ds(`"${e}" plugin is not implemented on ${c}`, Es.Unimplemented)
         }, m = t => {
           let n, r = (...r) => {
             let i = f().then(i => {
@@ -3715,7 +3807,7 @@ var gs = class extends Error {
                 let e = a(...r);
                 return n = e == null ? void 0 : e.remove, e
               }
-              throw new gs(`"${e}.${t}()" is not implemented on ${c}`, hs.Unimplemented)
+              throw new Ds(`"${e}.${t}()" is not implemented on ${c}`, Es.Unimplemented)
             });
             return t === `addListener` && (i.remove = async () => n()), i
           };
@@ -3740,7 +3832,7 @@ var gs = class extends Error {
           return i.remove = async () => {
             console.warn(`Using addListener() without 'await' is deprecated.`), await r()
           }, i
-        }, ne = new Proxy({}, {
+        }, g = new Proxy({}, {
           get(e, t) {
             switch (t) {
               case `$$typeof`:
@@ -3756,16 +3848,16 @@ var gs = class extends Error {
             }
           }
         });
-      return r[e] = ne, l.set(e, {
+      return r[e] = g, l.set(e, {
         name: e,
-        proxy: ne,
+        proxy: g,
         platforms: new Set([...Object.keys(a), ...u ? [c] : []])
-      }), ne
-    }, n.Exception = gs, n.DEBUG = !!n.DEBUG, n.isLoggingEnabled = !!n.isLoggingEnabled, n
+      }), g
+    }, n.Exception = Ds, n.DEBUG = !!n.DEBUG, n.isLoggingEnabled = !!n.isLoggingEnabled, n
   },
-  ys = (e => e.Capacitor = vs(e))(typeof globalThis < `u` ? globalThis : typeof self < `u` ? self : typeof window < `u` ? window : typeof global < `u` ? global : {}),
-  bs = ys.registerPlugin,
-  xs = class {
+  As = (e => e.Capacitor = ks(e))(typeof globalThis < `u` ? globalThis : typeof self < `u` ? self : typeof window < `u` ? window : typeof global < `u` ? global : {}),
+  js = As.registerPlugin,
+  Ms = class {
     constructor() {
       this.listeners = {}, this.retainedEventArguments = {}, this.windowListeners = {}
     }
@@ -3808,10 +3900,10 @@ var gs = class extends Error {
       }
     }
     unimplemented(e = `not implemented`) {
-      return new ys.Exception(e, hs.Unimplemented)
+      return new As.Exception(e, Es.Unimplemented)
     }
     unavailable(e = `not available`) {
-      return new ys.Exception(e, hs.Unavailable)
+      return new As.Exception(e, Es.Unavailable)
     }
     async removeListener(e, t) {
       let n = this.listeners[e];
@@ -3832,22 +3924,22 @@ var gs = class extends Error {
       }))
     }
   },
-  Ss = e => encodeURIComponent(e).replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent).replace(/[()]/g, escape),
-  Cs = e => e.replace(/(%[\dA-F]{2})+/gi, decodeURIComponent),
-  ws = class extends xs {
+  Ns = e => encodeURIComponent(e).replace(/%(2[346B]|5E|60|7C)/g, decodeURIComponent).replace(/[()]/g, escape),
+  Ps = e => e.replace(/(%[\dA-F]{2})+/gi, decodeURIComponent),
+  Fs = class extends Ms {
     async getCookies() {
       let e = document.cookie,
         t = {};
       return e.split(`;`).forEach(e => {
         if (e.length <= 0) return;
         let [n, r] = e.replace(/=/, `CAP_COOKIE`).split(`CAP_COOKIE`);
-        n = Cs(n).trim(), r = Cs(r).trim(), t[n] = r
+        n = Ps(n).trim(), r = Ps(r).trim(), t[n] = r
       }), t
     }
     async setCookie(e) {
       try {
-        let t = Ss(e.key),
-          n = Ss(e.value),
+        let t = Ns(e.key),
+          n = Ns(e.value),
           r = e.expires ? `; expires=${e.expires.replace(`expires=`,``)}` : ``,
           i = (e.path || `/`).replace(`path=`, ``),
           a = e.url != null && e.url.length > 0 ? `domain=${e.url}` : ``;
@@ -3879,29 +3971,29 @@ var gs = class extends Error {
       }
     }
   };
-bs(`CapacitorCookies`, {
-  web: () => new ws
+js(`CapacitorCookies`, {
+  web: () => new Fs
 });
-var Ts = async e => new Promise((t, n) => {
+var Is = async e => new Promise((t, n) => {
   let r = new FileReader;
   r.onload = () => {
     let e = r.result;
     t(e.indexOf(`,`) >= 0 ? e.split(`,`)[1] : e)
   }, r.onerror = e => n(e), r.readAsDataURL(e)
-}), Es = (e = {}) => {
+}), Ls = (e = {}) => {
   let t = Object.keys(e);
   return Object.keys(e).map(e => e.toLocaleLowerCase()).reduce((n, r, i) => (n[r] = e[t[i]], n), {})
-}, Ds = (e, t = !0) => e ? Object.entries(e).reduce((e, n) => {
+}, Rs = (e, t = !0) => e ? Object.entries(e).reduce((e, n) => {
   let [r, i] = n, a, o;
   return Array.isArray(i) ? (o = ``, i.forEach(e => {
     a = t ? encodeURIComponent(e) : e, o += `${r}=${a}&`
   }), o.slice(0, -1)) : (a = t ? encodeURIComponent(i) : i, o = `${r}=${a}`), `${e}&${o}`
-}, ``).substr(1) : null, Os = (e, t = {}) => {
+}, ``).substr(1) : null, zs = (e, t = {}) => {
   let n = Object.assign({
       method: e.method || `GET`,
       headers: e.headers
     }, t),
-    r = Es(e.headers)[`content-type`] || ``;
+    r = Ls(e.headers)[`content-type`] || ``;
   if (typeof e.data == `string`) n.body = e.data;
   else if (r.includes(`application/x-www-form-urlencoded`)) {
     let t = new URLSearchParams;
@@ -3919,10 +4011,10 @@ var Ts = async e => new Promise((t, n) => {
     r.delete(`content-type`), n.headers = r
   } else(r.includes(`application/json`) || typeof e.data == `object`) && (n.body = JSON.stringify(e.data));
   return n
-}, ks = class extends xs {
+}, Bs = class extends Ms {
   async request(e) {
-    let t = Os(e, e.webFetchExtra),
-      n = Ds(e.params, e.shouldEncodeUrlParams),
+    let t = zs(e, e.webFetchExtra),
+      n = Rs(e.params, e.shouldEncodeUrlParams),
       r = n ? `${e.url}?${n}` : e.url,
       i = await fetch(r, t),
       a = i.headers.get(`content-type`) || ``,
@@ -3934,7 +4026,7 @@ var Ts = async e => new Promise((t, n) => {
     switch (o) {
       case `arraybuffer`:
       case `blob`:
-        c = await i.blob(), s = await Ts(c);
+        c = await i.blob(), s = await Is(c);
         break;
       case `json`:
         s = await i.json();
@@ -3978,18 +4070,18 @@ var Ts = async e => new Promise((t, n) => {
     }))
   }
 };
-bs(`CapacitorHttp`, {
-  web: () => new ks
+js(`CapacitorHttp`, {
+  web: () => new Bs
 });
-var As;
+var Vs;
 (function(e) {
   e.Dark = `DARK`, e.Light = `LIGHT`, e.Default = `DEFAULT`
-})(As || (As = {}));
-var js;
+})(Vs || (Vs = {}));
+var Hs;
 (function(e) {
   e.StatusBar = `StatusBar`, e.NavigationBar = `NavigationBar`
-})(js || (js = {}));
-var Ms = class extends xs {
+})(Hs || (Hs = {}));
+var Us = class extends Ms {
   async setStyle() {
     this.unavailable(`not available for web`)
   }
@@ -4003,45 +4095,45 @@ var Ms = class extends xs {
     this.unavailable(`not available for web`)
   }
 };
-bs(`SystemBars`, {
-  web: () => new Ms
+js(`SystemBars`, {
+  web: () => new Us
 });
-var F = bs(`DeviceAttest`);
+var Ws = js(`DeviceAttest`);
 
-function Ns() {
-  return ys.isNativePlatform() && ys.isPluginAvailable(`DeviceAttest`)
+function Gs() {
+  return As.isNativePlatform() && As.isPluginAvailable(`DeviceAttest`)
 }
-async function Ps(e) {
+async function Ks(e) {
   let t = await crypto.subtle.digest(`SHA-256`, new TextEncoder().encode(e));
   return [...new Uint8Array(t)].map(e => e.toString(16).padStart(2, `0`)).join(``)
 }
-async function Fs(e, t, n) {
-  return `${e.toUpperCase()} ${t} ${await Ps(n)}`
+async function qs(e, t, n) {
+  return `${e.toUpperCase()} ${t} ${await Ks(n)}`
 }
-async function Is(e) {
-  return F.attest({
+async function Js(e) {
+  return Ws.attest({
     challenge: e
   })
 }
-async function Ls(e) {
-  return F.commitKey({
+async function Ys(e) {
+  return Ws.commitKey({
     keyId: e
   })
 }
-async function Rs(e) {
-  if (Ns()) return F.assert({
+async function Xs(e) {
+  if (Gs()) return Ws.assert({
     clientData: e
   }).catch(e => {
     if ((e == null ? void 0 : e.code) !== `NO_KEY`) throw e
   })
 }
-async function zs() {
-  if (Ns()) return F.deviceToken().then(({
+async function Zs() {
+  if (Gs()) return Ws.deviceToken().then(({
     token: e
   }) => e).catch(() => void 0)
 }
-async function Bs() {
-  return Ns() ? F.isSupported().catch(() => ({
+async function Qs() {
+  return Gs() ? Ws.isSupported().catch(() => ({
     supported: !1,
     hasKey: !1
   })) : {
@@ -4049,11 +4141,11 @@ async function Bs() {
     hasKey: !1
   }
 }
-var Vs = new Set([`/paint`, `/payment/appstore/account-token`, `/payment/appstore/verify`]);
-async function Hs(e, t, n) {
-  if (!Vs.has(t) || !Ns() || n != null && typeof n != `string`) return;
-  let r = await Fs(e, t, n ?? ``),
-    i = () => F.assert({
+var $s = new Set([`/paint`, `/payment/appstore/account-token`, `/payment/appstore/verify`]);
+async function ec(e, t, n) {
+  if (!$s.has(t) || !Gs() || n != null && typeof n != `string`) return;
+  let r = await qs(e, t, n ?? ``),
+    i = () => Ws.assert({
       clientData: r
     });
   try {
@@ -4072,37 +4164,37 @@ async function Hs(e, t, n) {
     return
   }
 }
-var I = function(e) {
+var L = function(e) {
     return e[e.CONTINUE = 100] = `CONTINUE`, e[e.SWITCHING_PROTOCOLS = 101] = `SWITCHING_PROTOCOLS`, e[e.PROCESSING = 102] = `PROCESSING`, e[e.EARLY_HINTS = 103] = `EARLY_HINTS`, e[e.OK = 200] = `OK`, e[e.CREATED = 201] = `CREATED`, e[e.ACCEPTED = 202] = `ACCEPTED`, e[e.NON_AUTHORITATIVE_INFORMATION = 203] = `NON_AUTHORITATIVE_INFORMATION`, e[e.NO_CONTENT = 204] = `NO_CONTENT`, e[e.RESET_CONTENT = 205] = `RESET_CONTENT`, e[e.PARTIAL_CONTENT = 206] = `PARTIAL_CONTENT`, e[e.MULTI_STATUS = 207] = `MULTI_STATUS`, e[e.ALREADY_REPORTED = 208] = `ALREADY_REPORTED`, e[e.IM_USED = 226] = `IM_USED`, e[e.MULTIPLE_CHOICES = 300] = `MULTIPLE_CHOICES`, e[e.MOVED_PERMANENTLY = 301] = `MOVED_PERMANENTLY`, e[e.MOVED_TEMPORARILY = 302] = `MOVED_TEMPORARILY`, e[e.FOUND = 302] = `FOUND`, e[e.SEE_OTHER = 303] = `SEE_OTHER`, e[e.NOT_MODIFIED = 304] = `NOT_MODIFIED`, e[e.USE_PROXY = 305] = `USE_PROXY`, e[e.SWITCH_PROXY = 306] = `SWITCH_PROXY`, e[e.TEMPORARY_REDIRECT = 307] = `TEMPORARY_REDIRECT`, e[e.PERMANENT_REDIRECT = 308] = `PERMANENT_REDIRECT`, e[e.BAD_REQUEST = 400] = `BAD_REQUEST`, e[e.UNAUTHORIZED = 401] = `UNAUTHORIZED`, e[e.PAYMENT_REQUIRED = 402] = `PAYMENT_REQUIRED`, e[e.FORBIDDEN = 403] = `FORBIDDEN`, e[e.NOT_FOUND = 404] = `NOT_FOUND`, e[e.METHOD_NOT_ALLOWED = 405] = `METHOD_NOT_ALLOWED`, e[e.NOT_ACCEPTABLE = 406] = `NOT_ACCEPTABLE`, e[e.PROXY_AUTHENTICATION_REQUIRED = 407] = `PROXY_AUTHENTICATION_REQUIRED`, e[e.REQUEST_TIMEOUT = 408] = `REQUEST_TIMEOUT`, e[e.CONFLICT = 409] = `CONFLICT`, e[e.GONE = 410] = `GONE`, e[e.LENGTH_REQUIRED = 411] = `LENGTH_REQUIRED`, e[e.PRECONDITION_FAILED = 412] = `PRECONDITION_FAILED`, e[e.REQUEST_TOO_LONG = 413] = `REQUEST_TOO_LONG`, e[e.CONTENT_TOO_LARGE = 413] = `CONTENT_TOO_LARGE`, e[e.REQUEST_URI_TOO_LONG = 414] = `REQUEST_URI_TOO_LONG`, e[e.URI_TOO_LONG = 414] = `URI_TOO_LONG`, e[e.UNSUPPORTED_MEDIA_TYPE = 415] = `UNSUPPORTED_MEDIA_TYPE`, e[e.REQUESTED_RANGE_NOT_SATISFIABLE = 416] = `REQUESTED_RANGE_NOT_SATISFIABLE`, e[e.RANGE_NOT_SATISFIABLE = 416] = `RANGE_NOT_SATISFIABLE`, e[e.EXPECTATION_FAILED = 417] = `EXPECTATION_FAILED`, e[e.IM_A_TEAPOT = 418] = `IM_A_TEAPOT`, e[e.INSUFFICIENT_SPACE_ON_RESOURCE = 419] = `INSUFFICIENT_SPACE_ON_RESOURCE`, e[e.MISDIRECTED_REQUEST = 421] = `MISDIRECTED_REQUEST`, e[e.UNPROCESSABLE_ENTITY = 422] = `UNPROCESSABLE_ENTITY`, e[e.UNPROCESSABLE_CONTENT = 422] = `UNPROCESSABLE_CONTENT`, e[e.LOCKED = 423] = `LOCKED`, e[e.FAILED_DEPENDENCY = 424] = `FAILED_DEPENDENCY`, e[e.TOO_EARLY = 425] = `TOO_EARLY`, e[e.UPGRADE_REQUIRED = 426] = `UPGRADE_REQUIRED`, e[e.PRECONDITION_REQUIRED = 428] = `PRECONDITION_REQUIRED`, e[e.TOO_MANY_REQUESTS = 429] = `TOO_MANY_REQUESTS`, e[e.REQUEST_HEADER_FIELDS_TOO_LARGE = 431] = `REQUEST_HEADER_FIELDS_TOO_LARGE`, e[e.UNAVAILABLE_FOR_LEGAL_REASONS = 451] = `UNAVAILABLE_FOR_LEGAL_REASONS`, e[e.INTERNAL_SERVER_ERROR = 500] = `INTERNAL_SERVER_ERROR`, e[e.NOT_IMPLEMENTED = 501] = `NOT_IMPLEMENTED`, e[e.BAD_GATEWAY = 502] = `BAD_GATEWAY`, e[e.SERVICE_UNAVAILABLE = 503] = `SERVICE_UNAVAILABLE`, e[e.GATEWAY_TIMEOUT = 504] = `GATEWAY_TIMEOUT`, e[e.HTTP_VERSION_NOT_SUPPORTED = 505] = `HTTP_VERSION_NOT_SUPPORTED`, e[e.VARIANT_ALSO_NEGOTIATES = 506] = `VARIANT_ALSO_NEGOTIATES`, e[e.INSUFFICIENT_STORAGE = 507] = `INSUFFICIENT_STORAGE`, e[e.LOOP_DETECTED = 508] = `LOOP_DETECTED`, e[e.NOT_EXTENDED = 510] = `NOT_EXTENDED`, e[e.NETWORK_AUTHENTICATION_REQUIRED = 511] = `NETWORK_AUTHENTICATION_REQUIRED`, e[e.AWS_ELB_000 = 0] = `AWS_ELB_000`, e[e.THIS_IS_FINE = 218] = `THIS_IS_FINE`, e[e.PAGE_EXPIRED = 419] = `PAGE_EXPIRED`, e[e.METHOD_FAILURE = 420] = `METHOD_FAILURE`, e[e.ENHANCE_YOUR_CALM = 420] = `ENHANCE_YOUR_CALM`, e[e.REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY = 430] = `REQUEST_HEADER_FIELDS_TOO_LARGE_SHOPIFY`, e[e.SHOPIFY_SECURITY_REJECTION = 430] = `SHOPIFY_SECURITY_REJECTION`, e[e.LOGIN_TIME_OUT = 440] = `LOGIN_TIME_OUT`, e[e.NO_RESPONSE = 444] = `NO_RESPONSE`, e[e.RETRY_WITH = 449] = `RETRY_WITH`, e[e.BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS = 450] = `BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS`, e[e.REDIRECT_IIS = 451] = `REDIRECT_IIS`, e[e.CLIENT_CLOSED_CONNECTION_AWS_ELB = 460] = `CLIENT_CLOSED_CONNECTION_AWS_ELB`, e[e.X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB = 463] = `X_FORWARDED_FOR_TOO_MANY_IP_ADDRESSES_AWS_ELB`, e[e.INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB = 464] = `INCOMPATIBLE_PROTOCOL_VERSIONS_AWS_ELB`, e[e.REQUEST_HEADER_TOO_LARGE = 494] = `REQUEST_HEADER_TOO_LARGE`, e[e.SSL_CERTIFICATE_ERROR = 495] = `SSL_CERTIFICATE_ERROR`, e[e.SSL_CERTIFICATE_REQUIRED = 496] = `SSL_CERTIFICATE_REQUIRED`, e[e.HTTP_REQUEST_SENT_TO_HTTPS_PORT = 497] = `HTTP_REQUEST_SENT_TO_HTTPS_PORT`, e[e.INVALID_TOKEN = 498] = `INVALID_TOKEN`, e[e.CLIENT_CLOSED_REQUEST = 499] = `CLIENT_CLOSED_REQUEST`, e[e.TOKEN_REQUIRED = 499] = `TOKEN_REQUIRED`, e[e.BANDWIDTH_LIMIT_EXCEEDED = 509] = `BANDWIDTH_LIMIT_EXCEEDED`, e[e.RESOURCE_LIMIT_IS_REACHED = 508] = `RESOURCE_LIMIT_IS_REACHED`, e[e.WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR = 520] = `WEB_SERVER_RETURNED_AN_UNKNOWN_ERROR`, e[e.WEB_SERVER_IS_DOWN = 521] = `WEB_SERVER_IS_DOWN`, e[e.CONNECTION_TIMED_OUT = 522] = `CONNECTION_TIMED_OUT`, e[e.ORIGIN_IS_UNREACHABLE = 523] = `ORIGIN_IS_UNREACHABLE`, e[e.A_TIMEOUT_OCCURRED = 524] = `A_TIMEOUT_OCCURRED`, e[e.SSL_HANDSHAKE_FAILED = 525] = `SSL_HANDSHAKE_FAILED`, e[e.INVALID_SSL_CERTIFICATE = 526] = `INVALID_SSL_CERTIFICATE`, e[e.RAILGUN_ERROR = 527] = `RAILGUN_ERROR`, e[e.SITE_IS_OVERLOADED = 529] = `SITE_IS_OVERLOADED`, e[e.ORIGIN_UNAVAILABLE = 530] = `ORIGIN_UNAVAILABLE`, e[e.ORIGIN_DNS_ERROR = 530] = `ORIGIN_DNS_ERROR`, e[e.SITE_IS_FROZEN = 530] = `SITE_IS_FROZEN`, e[e.TEMPORARILY_DISABLED = 540] = `TEMPORARILY_DISABLED`, e[e.UNAUTHORIZED_AWS_ELB = 561] = `UNAUTHORIZED_AWS_ELB`, e[e.NETWORK_READ_TIMEOUT_ERROR = 598] = `NETWORK_READ_TIMEOUT_ERROR`, e[e.NETWORK_CONNECT_TIMEOUT_ERROR = 599] = `NETWORK_CONNECT_TIMEOUT_ERROR`, e[e.UNEXPECTED_TOKEN = 783] = `UNEXPECTED_TOKEN`, e[e.REQUEST_DENIED = 999] = `REQUEST_DENIED`, e
   }({}),
-  L = class extends Error {};
+  tc = class extends Error {};
 
-function Us(e, t) {
+function nc(e, t) {
   return (t == null ? void 0 : t.aborted) === !0 || typeof DOMException < `u` && e instanceof DOMException && e.name === `AbortError`
 }
-var Ws = 6e3,
-  Gs = new WeakMap,
-  Ks = new WeakMap,
-  qs = class {
+var rc = 6e3,
+  ic = new WeakMap,
+  ac = new WeakMap,
+  oc = class {
     get online() {
-      return l(a(Gs, this))
+      return l(a(ic, this))
     }
     set online(e) {
-      i(a(Gs, this), e, !0)
+      i(a(ic, this), e, !0)
     }
     get serverTimeOffsetMs() {
-      return l(a(Ks, this))
+      return l(a(ac, this))
     }
     set serverTimeOffsetMs(e) {
-      i(a(Ks, this), e, !0)
+      i(a(ac, this), e, !0)
     }
     constructor(t) {
-      c(this, `url`, void 0), n(this, Gs, e(!0)), c(this, `probe`, null), n(this, Ks, e(null)), this.url = t
+      c(this, `url`, void 0), n(this, ic, e(!0)), c(this, `probe`, null), n(this, ac, e(null)), this.url = t
     }
     checkConnection() {
       if (this.probe) return this.probe;
       let e = new AbortController,
-        t = setTimeout(() => e.abort(), Ws);
+        t = setTimeout(() => e.abort(), rc);
       return this.probe = fetch(`${this.url}/health`, {
         cache: `no-store`,
         signal: e.signal
@@ -4135,14 +4227,14 @@ var Ws = 6e3,
           body: JSON.stringify({
             sealedResults: e.base64()
           })
-        })).status !== I.OK) throw Error(f.unexpected_server_error())
+        })).status !== L.OK) throw Error(f.unexpected_server_error())
     }
     async guardedFetch(e, t) {
       try {
         let n = await fetch(`${this.url}${e}`, t);
         return this.online = !0, this.updateServerTimeEstimate(n), n
       } catch (e) {
-        throw Us(e, t == null ? void 0 : t.signal) ? e : (console.error(`Fetch error:`, e), this.checkConnection(), Error(f.cant_reach_the_server()))
+        throw nc(e, t == null ? void 0 : t.signal) ? e : (console.error(`Fetch error:`, e), this.checkConnection(), Error(f.cant_reach_the_server()))
       }
     }
     async request(e, t) {
@@ -4153,7 +4245,7 @@ var Ws = 6e3,
       };
       let r = e.split(`?`)[0],
         i = async () => {
-          let e = await Hs(t.method ?? `GET`, r, t.body);
+          let e = await ec(t.method ?? `GET`, r, t.body);
           if (!e) return t;
           let n = new Headers(t.headers);
           for (let [t, r] of Object.entries(e)) n.set(t, r);
@@ -4162,17 +4254,17 @@ var Ws = 6e3,
             headers: n
           }
         }, a = await this.guardedFetch(e, await i());
-      if (a.headers.get(`x-device-reattest`) && d(() => import(`./ZBLy2woc.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2]), import.meta.url), a.status === I.FORBIDDEN && a.headers.get(`x-block-reason`) === `tor`) throw Error(f.tor_blocked());
-      if (a.status === I.FORBIDDEN && a.headers.get(`x-block-reason`) === `integrity`) throw Error(f.request_integrity_blocked());
+      if (a.headers.get(`x-device-reattest`) && d(() => import(`./Db8GeGuc.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2]), import.meta.url), a.status === L.FORBIDDEN && a.headers.get(`x-block-reason`) === `tor`) throw Error(f.tor_blocked());
+      if (a.status === L.FORBIDDEN && a.headers.get(`x-block-reason`) === `integrity`) throw Error(f.request_integrity_blocked());
       let o = ((n = a.headers.get(`cf-mitigated`)) == null ? void 0 : n.toLowerCase()) === `challenge`;
       if (a.status === 403 && o) {
-        if ($.setCfLikelyAutomated(!0), !await ss()) throw Error(f.challenge_verification_not_completed());
+        if ($.setCfLikelyAutomated(!0), !await vs()) throw Error(f.challenge_verification_not_completed());
         a = await this.guardedFetch(e, await i())
       }
       if ((t == null ? void 0 : t.throwOnStatus) ?? !0) {
-        if (a.status === I.TOO_MANY_REQUESTS) throw new L(f.you_or_someone_in_your_network_is_making_a_lot_of_requests_to_the_server());
-        if (a.status === I.REQUEST_TIMEOUT) throw Error(f.request_timeout());
-        if (a.status === I.SERVICE_UNAVAILABLE) throw Error(f.service_unavailable())
+        if (a.status === L.TOO_MANY_REQUESTS) throw new tc(f.you_or_someone_in_your_network_is_making_a_lot_of_requests_to_the_server());
+        if (a.status === L.REQUEST_TIMEOUT) throw Error(f.request_timeout());
+        if (a.status === L.SERVICE_UNAVAILABLE) throw Error(f.service_unavailable())
       }
       return a
     }
@@ -4182,37 +4274,37 @@ var Ws = 6e3,
       super(e), c(this, `message`, void 0), c(this, `status`, void 0), this.message = e, this.status = t
     }
   },
-  Js = class extends Error {};
+  sc = class extends Error {};
 
-function Ys(e) {
+function cc(e) {
   return class extends e {
     async me() {
       let e = await this.request(`/me`, {
         credentials: `include`,
         throwOnStatus: !1
       });
-      if (e.status === I.OK) return await e.json();
-      if (e.status !== I.UNAUTHORIZED) throw new R(f.unexpected_server_error(), e.status)
+      if (e.status === L.OK) return await e.json();
+      if (e.status !== L.UNAUTHORIZED) throw new R(f.unexpected_server_error(), e.status)
     }
     async meEmail() {
       let e = await this.request(`/me/email`, {
         credentials: `include`
       });
-      if (e.status === I.OK) return (await e.json()).email
+      if (e.status === L.OK) return (await e.json()).email
     }
     async logout() {
       let e = await this.request(`/auth/logout`, {
         method: `POST`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw Error(await e.text());
+      if (e.status !== L.OK) throw Error(await e.text());
       return await e.json()
     }
     async getOtpCooldown() {
       let e = await this.request(`/anticheat/otp/cooldown`, {
         credentials: `include`
       });
-      if (e.status !== I.OK) throw Error(f.unexpected_server_error());
+      if (e.status !== L.OK) throw Error(f.unexpected_server_error());
       return await e.json()
     }
     async sendOtp(e) {
@@ -4227,16 +4319,16 @@ function Ys(e) {
         }),
         throwOnStatus: !1
       });
-      if (t.status === I.BAD_REQUEST) throw Error(f.invalid_phone_number());
-      if (t.status === I.CONFLICT) throw Error(f.phone_already_used());
-      if (t.status === I.FORBIDDEN) throw Error(f.not_allowed_to_verify());
-      if (t.status === I.TOO_MANY_REQUESTS) throw Error(f.too_many_attempts());
-      if (t.status === I.UNAVAILABLE_FOR_LEGAL_REASONS) throw Error(f.phone_region_not_supported());
-      if (t.status === I.LOCKED) throw Error(f.unsubscribed_from_sms());
-      if (t.status === I.UNPROCESSABLE_ENTITY) throw Error(f.phone_not_supported());
-      if (t.status === I.NOT_ACCEPTABLE) throw Error(f.vpn_not_allowed());
-      if (t.status === I.PRECONDITION_FAILED) throw Error(f.country_mismatch());
-      if (t.status !== I.OK) throw Error(f.unexpected_server_error());
+      if (t.status === L.BAD_REQUEST) throw Error(f.invalid_phone_number());
+      if (t.status === L.CONFLICT) throw Error(f.phone_already_used());
+      if (t.status === L.FORBIDDEN) throw Error(f.not_allowed_to_verify());
+      if (t.status === L.TOO_MANY_REQUESTS) throw Error(f.too_many_attempts());
+      if (t.status === L.UNAVAILABLE_FOR_LEGAL_REASONS) throw Error(f.phone_region_not_supported());
+      if (t.status === L.LOCKED) throw Error(f.unsubscribed_from_sms());
+      if (t.status === L.UNPROCESSABLE_ENTITY) throw Error(f.phone_not_supported());
+      if (t.status === L.NOT_ACCEPTABLE) throw Error(f.vpn_not_allowed());
+      if (t.status === L.PRECONDITION_FAILED) throw Error(f.country_mismatch());
+      if (t.status !== L.OK) throw Error(f.unexpected_server_error());
       return await t.json()
     }
     async verifyChallenge(e) {
@@ -4263,16 +4355,16 @@ function Ys(e) {
         credentials: `include`,
         body: JSON.stringify(t),
         headers: {
-          "x-fp": await jo()
+          "x-fp": await Bo()
         }
       });
       if (e.type === `otp`) {
-        if (n.status === I.GONE) throw Error(f.expired_code());
-        if (n.status === I.BAD_REQUEST) throw Error(f.invalid_code());
-        if (n.status === I.TOO_MANY_REQUESTS) throw Error(f.too_many_attempts());
-        if (n.status !== I.OK) throw Error(f.unexpected_server_error())
-      } else if (n.status === I.BAD_REQUEST) throw Error(f.invalid_challenge_response());
-      else if (n.status !== I.OK) throw Error(f.unexpected_server_error())
+        if (n.status === L.GONE) throw Error(f.expired_code());
+        if (n.status === L.BAD_REQUEST) throw Error(f.invalid_code());
+        if (n.status === L.TOO_MANY_REQUESTS) throw Error(f.too_many_attempts());
+        if (n.status !== L.OK) throw Error(f.unexpected_server_error())
+      } else if (n.status === L.BAD_REQUEST) throw Error(f.invalid_challenge_response());
+      else if (n.status !== L.OK) throw Error(f.unexpected_server_error())
     }
     async updateMe(e) {
       let t = await this.request(`/me/update`, {
@@ -4280,7 +4372,7 @@ function Ys(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status === I.BAD_REQUEST) {
+      if (t.status === L.BAD_REQUEST) {
         let e = await t.json(),
           n = (e == null ? void 0 : e.error) ?? ``;
         if (n === `invalid_name`) throw Error(f.invalid_name());
@@ -4293,7 +4385,7 @@ function Ys(e) {
         }
         throw Error(e == null ? void 0 : e.error)
       }
-      if (t.status !== I.OK) throw Error(f.unexpected_server_error())
+      if (t.status !== L.OK) throw Error(f.unexpected_server_error())
     }
     async deleteMe(e) {
       let t = await this.request(`/me`, {
@@ -4303,8 +4395,8 @@ function Ys(e) {
           confirmText: e
         })
       });
-      if (t.status === I.BAD_REQUEST) throw Error(f.typed_username_does_not_match());
-      if (t.status !== I.OK) throw Error(f.unexpected_server_error())
+      if (t.status === L.BAD_REQUEST) throw Error(f.typed_username_does_not_match());
+      if (t.status !== L.OK) throw Error(f.unexpected_server_error())
     }
     async favoriteLocation(e) {
       let t = await this.request(`/favorite-location`, {
@@ -4315,8 +4407,8 @@ function Ys(e) {
         }),
         credentials: `include`
       });
-      if (t.status === I.FORBIDDEN) throw Error(f.operation_not_allowed_maybe_you_have_too_many_favorite_locations());
-      if (t.status !== I.OK) throw Error(f.unexpected_server_error())
+      if (t.status === L.FORBIDDEN) throw Error(f.operation_not_allowed_maybe_you_have_too_many_favorite_locations());
+      if (t.status !== L.OK) throw Error(f.unexpected_server_error())
     }
     async deleteFavoriteLocation(e) {
       if ((await this.request(`/favorite-location/delete`, {
@@ -4325,7 +4417,7 @@ function Ys(e) {
             id: e
           }),
           credentials: `include`
-        })).status !== I.OK) throw Error(f.unexpected_server_error())
+        })).status !== L.OK) throw Error(f.unexpected_server_error())
     }
     async updateFavoriteLocation(e, t) {
       let n = await this.request(`/favorite-location/update`, {
@@ -4336,14 +4428,14 @@ function Ys(e) {
         }),
         credentials: `include`
       });
-      if (n.status === I.BAD_REQUEST) throw Error(f.location_name_is_too_big());
-      if (n.status !== I.OK) throw Error(f.unexpected_server_error())
+      if (n.status === L.BAD_REQUEST) throw Error(f.location_name_is_too_big());
+      if (n.status !== L.OK) throw Error(f.unexpected_server_error())
     }
     async getMyProfilePictures() {
       let e = await this.request(`/me/profile-pictures`, {
         credentials: `include`
       });
-      if (e.status !== I.OK) throw Error(f.unexpected_server_error());
+      if (e.status !== L.OK) throw Error(f.unexpected_server_error());
       return e.json()
     }
     async changeProfilePicture(e) {
@@ -4353,35 +4445,35 @@ function Ys(e) {
           body: JSON.stringify({
             pictureId: e
           })
-        })).status !== I.OK) throw Error(f.unexpected_server_error())
+        })).status !== L.OK) throw Error(f.unexpected_server_error())
     }
     async unlinkDiscord() {
       let e = await this.request(`/discord/unlink`, {
         method: `POST`,
         credentials: `include`
       });
-      if (e.status !== I.NO_CONTENT) throw new R(f.unexpected_server_error(), e.status)
+      if (e.status !== L.NO_CONTENT) throw new R(f.unexpected_server_error(), e.status)
     }
     async deleteSessions() {
       let e = await this.request(`/me/sessions`, {
         method: `DELETE`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status)
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status)
     }
     async deleteAllUserSessions(e) {
       let t = await this.request(`/staff/dashboard/users/${e}/sessions`, {
         method: `DELETE`,
         credentials: `include`
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status)
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status)
     }
     async getMySuspensionDetails() {
       let e = await this.request(`/me/suspension`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       let t = await e.json();
       return !(t != null && t.active) || !Array.isArray(t == null ? void 0 : t.punishments) ? null : {
         punishments: t.punishments.map(e => ({
@@ -4401,7 +4493,7 @@ function Ys(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       let t = await e.json();
       return (t == null ? void 0 : t.paintedToday) ?? 0
     }
@@ -4409,7 +4501,7 @@ function Ys(e) {
       let e = await this.request(`/me/account-conflict`, {
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       return await e.json()
     }
     async resolveAccountConflict(e) {
@@ -4421,9 +4513,9 @@ function Ys(e) {
         })
       });
       switch (t.status) {
-        case I.OK:
+        case L.OK:
           return (await t.json()).keptUserId;
-        case I.CONFLICT:
+        case L.CONFLICT:
           throw (await t.json()).error === `conflict_blocked` ? Error(f.duplicate_account_blocked()) : Error(f.duplicate_account_already_resolved());
         default:
           throw new R(f.unexpected_server_error(), t.status)
@@ -4433,12 +4525,12 @@ function Ys(e) {
       return (await this.request(`/me/rules/read`, {
         method: `POST`,
         credentials: `include`
-      })).status === I.OK
+      })).status === L.OK
     }
   }
 }
 
-function Xs(e) {
+function lc(e) {
   return class extends e {
     async getAdminB2BBusinesses(e = ``, t = 0) {
       let n = new URLSearchParams({
@@ -4448,15 +4540,15 @@ function Xs(e) {
         r = await this.request(`/staff/dashboard/businesses?${n.toString()}`, {
           credentials: `include`
         });
-      if (r.status !== I.OK) throw new R(f.b2b_load_failed(), r.status);
+      if (r.status !== L.OK) throw new R(f.b2b_load_failed(), r.status);
       return r.json()
     }
     async getAdminB2BBusiness(e) {
       let t = await this.request(`/staff/dashboard/businesses/${e}`, {
         credentials: `include`
       });
-      if (t.status === I.NOT_FOUND) throw new R(f.b2b_business_not_found(), t.status);
-      if (t.status !== I.OK) throw new R(f.b2b_load_business_failed(), t.status);
+      if (t.status === L.NOT_FOUND) throw new R(f.b2b_business_not_found(), t.status);
+      if (t.status !== L.OK) throw new R(f.b2b_load_business_failed(), t.status);
       return t.json()
     }
     async convertAdminB2BBusiness(e) {
@@ -4464,12 +4556,12 @@ function Xs(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (t.status === I.CONFLICT || t.status === I.BAD_REQUEST) {
+      if (t.status === L.CONFLICT || t.status === L.BAD_REQUEST) {
         let e = await t.json().catch(() => null);
         if ((e == null ? void 0 : e.error) === `business_account_is_employee`) throw new R(f.b2b_error_business_is_employee(), t.status)
       }
-      if (t.status === I.NOT_FOUND) throw new R(f.b2b_user_not_found(), t.status);
-      if (t.status !== I.NO_CONTENT) throw new R(f.b2b_convert_failed(), t.status)
+      if (t.status === L.NOT_FOUND) throw new R(f.b2b_user_not_found(), t.status);
+      if (t.status !== L.NO_CONTENT) throw new R(f.b2b_convert_failed(), t.status)
     }
     async setAdminB2BInfiniteCharges(e, t) {
       let n = await this.request(`/staff/dashboard/businesses/${e}/charges`, {
@@ -4479,7 +4571,7 @@ function Xs(e) {
           infinite: t
         })
       });
-      if (n.status !== I.OK) throw new R(f.b2b_update_charges_failed(), n.status);
+      if (n.status !== L.OK) throw new R(f.b2b_update_charges_failed(), n.status);
       return (await n.json()).infinite
     }
     async setAdminB2BPaintRestrictions(e, t) {
@@ -4488,7 +4580,7 @@ function Xs(e) {
         credentials: `include`,
         body: JSON.stringify(t)
       });
-      if (n.status !== I.OK) throw new R(f.b2b_update_paint_restrictions_failed(), n.status);
+      if (n.status !== L.OK) throw new R(f.b2b_update_paint_restrictions_failed(), n.status);
       return n.json()
     }
     async assignAdminB2BEmployee(e, t) {
@@ -4499,7 +4591,7 @@ function Xs(e) {
           employeeUserId: t
         })
       });
-      if (n.status === I.CONFLICT || n.status === I.BAD_REQUEST) {
+      if (n.status === L.CONFLICT || n.status === L.BAD_REQUEST) {
         var r;
         let e = await n.json().catch(() => null),
           t = {
@@ -4509,16 +4601,16 @@ function Xs(e) {
           };
         throw new R(((r = t[(e == null ? void 0 : e.error) ?? ``]) == null ? void 0 : r.call(t)) ?? f.b2b_assign_failed(), n.status)
       }
-      if (n.status === I.NOT_FOUND) throw new R(f.b2b_user_not_found(), n.status);
-      if (n.status !== I.NO_CONTENT) throw new R(f.b2b_assign_failed(), n.status)
+      if (n.status === L.NOT_FOUND) throw new R(f.b2b_user_not_found(), n.status);
+      if (n.status !== L.NO_CONTENT) throw new R(f.b2b_assign_failed(), n.status)
     }
     async removeAdminB2BEmployee(e, t) {
       let n = await this.request(`/staff/dashboard/businesses/${e}/employees/${t}`, {
         method: `DELETE`,
         credentials: `include`
       });
-      if (n.status === I.CONFLICT) throw new R(f.b2b_employee_not_assigned(), n.status);
-      if (n.status !== I.NO_CONTENT) throw new R(f.b2b_remove_failed(), n.status)
+      if (n.status === L.CONFLICT) throw new R(f.b2b_employee_not_assigned(), n.status);
+      if (n.status !== L.NO_CONTENT) throw new R(f.b2b_remove_failed(), n.status)
     }
     async health() {
       return (await this.request(`/health`)).json()
@@ -4532,7 +4624,7 @@ function Xs(e) {
           delta: t
         })
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return (await n.json()).droplets
     }
     async postAdjustUserPrism(e, t) {
@@ -4544,7 +4636,7 @@ function Xs(e) {
           delta: t
         })
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return (await n.json()).prism
     }
     async postAdminRenameUser(e, t) {
@@ -4556,12 +4648,12 @@ function Xs(e) {
           newName: t
         })
       });
-      if (n.status === I.BAD_REQUEST) {
+      if (n.status === L.BAD_REQUEST) {
         let e = await n.json(),
           t = (e == null ? void 0 : e.error) ?? ``;
-        throw t === `invalid_name` ? new R(f.invalid_name(), I.BAD_REQUEST) : new R(typeof t == `string` && t ? t : f.unexpected_server_error(), I.BAD_REQUEST)
+        throw t === `invalid_name` ? new R(f.invalid_name(), L.BAD_REQUEST) : new R(typeof t == `string` && t ? t : f.unexpected_server_error(), L.BAD_REQUEST)
       }
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status)
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status)
     }
     async postAdminChangeUserEmail(e, t) {
       let n = await this.request(`/staff/dashboard/users/email`, {
@@ -4572,29 +4664,29 @@ function Xs(e) {
           email: t
         })
       });
-      if (n.status === I.BAD_REQUEST) {
+      if (n.status === L.BAD_REQUEST) {
         let e = await n.json(),
           t = (e == null ? void 0 : e.error) ?? ``;
-        throw t === `email_required` || t === `invalid_email` ? new R(f.enter_valid_email_address(), I.BAD_REQUEST) : new R(typeof t == `string` && t ? t : f.unexpected_server_error(), I.BAD_REQUEST)
+        throw t === `email_required` || t === `invalid_email` ? new R(f.enter_valid_email_address(), L.BAD_REQUEST) : new R(typeof t == `string` && t ? t : f.unexpected_server_error(), L.BAD_REQUEST)
       }
-      if (n.status === I.CONFLICT) {
+      if (n.status === L.CONFLICT) {
         let e = await n.json();
         if (((e == null ? void 0 : e.error) ?? ``) === `email_already_in_use`) {
           let t = new R(typeof(e == null ? void 0 : e.userId) == `number` ? f.email_already_in_use_by_user({
             userId: e.userId
-          }) : f.email_already_in_use(), I.CONFLICT);
+          }) : f.email_already_in_use(), L.CONFLICT);
           throw typeof(e == null ? void 0 : e.userId) == `number` && (t.userId = e.userId), t
         }
-        throw new R(f.unexpected_server_error(), I.CONFLICT)
+        throw new R(f.unexpected_server_error(), L.CONFLICT)
       }
-      if (n.status === I.NOT_FOUND) throw new R(`User not found.`, I.NOT_FOUND);
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status)
+      if (n.status === L.NOT_FOUND) throw new R(`User not found.`, L.NOT_FOUND);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status)
     }
     async getAdminUserProfilePictures(e) {
       let t = await this.request(`/staff/dashboard/users/profile-pictures?userId=${e}`, {
         credentials: `include`
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return t.json()
     }
     async postAdminRemoveUserPicture(e) {
@@ -4605,7 +4697,7 @@ function Xs(e) {
           pictureId: e
         })
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status)
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status)
     }
     async postAdminRerollUserAvatar(e) {
       let t = await this.request(`/staff/dashboard/users/reroll-avatar`, {
@@ -4615,7 +4707,7 @@ function Xs(e) {
           userId: e
         })
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return t.json()
     }
     async banUsers(e, t, n) {
@@ -4628,7 +4720,7 @@ function Xs(e) {
           notes: n
         })
       });
-      if (r.status !== I.OK) throw new R(f.unexpected_server_error(), r.status)
+      if (r.status !== L.OK) throw new R(f.unexpected_server_error(), r.status)
     }
     async timeoutUsers(e, t, n) {
       let r = await this.request(`/staff/dashboard/summary/users/timeout`, {
@@ -4640,7 +4732,7 @@ function Xs(e) {
           notes: n
         })
       });
-      if (r.status !== I.OK) throw new R(f.unexpected_server_error(), r.status)
+      if (r.status !== L.OK) throw new R(f.unexpected_server_error(), r.status)
     }
     async incrementUsersDroplets(e, t, n) {
       let r = await this.request(`/staff/dashboard/summary/users/increment-droplet`, {
@@ -4652,15 +4744,15 @@ function Xs(e) {
           notes: n
         })
       });
-      if (r.status !== I.OK) throw new R(f.unexpected_server_error(), r.status)
+      if (r.status !== L.OK) throw new R(f.unexpected_server_error(), r.status)
     }
     async reloadPunishmentCache() {
       let e = await this.request(`/staff/dashboard/summary/reload-punishment-cache`, {
         method: `POST`,
         credentials: `include`
       });
-      if (e.status === I.CONFLICT) throw new R(f.punishment_cache_reload_already_running(), e.status);
-      if (e.status !== I.OK && e.status !== I.ACCEPTED) throw new R(f.unexpected_server_error(), e.status)
+      if (e.status === L.CONFLICT) throw new R(f.punishment_cache_reload_already_running(), e.status);
+      if (e.status !== L.OK && e.status !== L.ACCEPTED) throw new R(f.unexpected_server_error(), e.status)
     }
     async postUnbanUsers(e, t) {
       let n = await this.request(`/staff/dashboard/summary/users/unban`, {
@@ -4671,7 +4763,7 @@ function Xs(e) {
           notes: t
         })
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status)
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status)
     }
     async postAnticheatUnbanUsers(e, t) {
       let n = await this.request(`/staff/dashboard/anticheat/unban`, {
@@ -4682,7 +4774,7 @@ function Xs(e) {
           notes: t
         })
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status)
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status)
     }
     async postAnticheatBanUsers(e, t, n) {
       let r = await this.request(`/staff/dashboard/anticheat/ban`, {
@@ -4694,7 +4786,7 @@ function Xs(e) {
           reason: n
         })
       });
-      if (r.status !== I.OK) throw new R(f.unexpected_server_error(), r.status)
+      if (r.status !== L.OK) throw new R(f.unexpected_server_error(), r.status)
     }
     async postBulkPhoneVerification(e, t) {
       let n = await this.request(`/staff/dashboard/summary/users/phone-verification`, {
@@ -4705,7 +4797,7 @@ function Xs(e) {
           notes: t
         })
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return await n.json()
     }
     async getAuditLogs(e) {
@@ -4715,7 +4807,7 @@ function Xs(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       let r = await n.json();
       return (Array.isArray(r) ? r : []).map(e => {
         let t = e && typeof e == `object` ? e : {};
@@ -4748,7 +4840,7 @@ function Xs(e) {
           method: `POST`,
           credentials: `include`,
           body: JSON.stringify(e)
-        })).status !== I.OK) throw Error(f.unexpected_server_error())
+        })).status !== L.OK) throw Error(f.unexpected_server_error())
     }
     async postSelectAreaPhoneVerification(e, t = ``) {
       let n = await this.request(`/staff/tools/select-area/phone-verification`, {
@@ -4759,7 +4851,7 @@ function Xs(e) {
           notes: t
         })
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return await n.json()
     }
     async postDashboardUserPhoneVerification(e, t = ``) {
@@ -4771,7 +4863,7 @@ function Xs(e) {
           notes: t
         })
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return await n.json()
     }
     async postReportUserName(e) {
@@ -4782,7 +4874,57 @@ function Xs(e) {
           userId: e
         })
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status)
+      if (t.status !== L.OK) throw new R(f.report_failed(), t.status);
+      let n = await t.json();
+      if (n.reason === `target_cooldown`) throw Error(f.profile_report_cooldown());
+      if (n.success !== !0 || n.reason) throw Error(f.report_failed())
+    }
+    async postReportUserProfile(e) {
+      let t = await this.request(`/report/user/profile`, {
+        method: `POST`,
+        credentials: `include`,
+        body: JSON.stringify(e)
+      });
+      if (t.status === 409) throw new R(f.profile_report_content_changed(), t.status);
+      if (t.status !== L.OK) throw new R(f.report_failed(), t.status);
+      let n = await t.json();
+      switch (n.reason) {
+        case `target_cooldown`:
+          throw Error(f.profile_report_cooldown());
+        case `reporter_banned`:
+          throw Error(f.reporter_banned());
+        case `min_pixels_painted`:
+          throw Error(f.min_pixels_painted());
+        case `max_report_per_hour`:
+          throw Error(f.max_report_per_hour())
+      }
+      if (n.success !== !0 || n.reason) throw Error(f.report_failed())
+    }
+    async removeReportedUserPicture(e, t) {
+      let n = await this.request(`/staff/tickets/remove-picture`, {
+        method: `POST`,
+        credentials: `include`,
+        body: JSON.stringify({
+          ticketId: e,
+          reportId: t
+        })
+      });
+      if (n.status === 409) throw new R(f.profile_report_content_changed(), n.status);
+      if (n.status !== L.OK) throw new R(f.failed_to_remove_profile_picture(), n.status);
+      return n.json()
+    }
+    async resetReportedUserName(e, t) {
+      let n = await this.request(`/staff/tickets/reset-name`, {
+        method: `POST`,
+        credentials: `include`,
+        body: JSON.stringify({
+          ticketId: e,
+          reportId: t
+        })
+      });
+      if (n.status === 409) throw new R(f.profile_report_content_changed(), n.status);
+      if (n.status !== L.OK) throw new R(f.failed_to_change_username(), n.status);
+      return n.json()
     }
     async postReportAllianceName(e) {
       let t = await this.request(`/report/alliance/name`, {
@@ -4792,7 +4934,7 @@ function Xs(e) {
           allianceId: e
         })
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return t.json()
     }
   }
@@ -6708,30 +6850,30 @@ var z = {
       memberPageSize: 50
     }
   },
-  Zs = z,
-  Qs = z.seasons,
-  $s = z.seasons.length - 1,
-  ec = z.seasons[$s].zoom,
-  tc = z.seasons[$s].tileSize,
-  nc = z.permissions,
-  rc = z.settings,
-  ic = z.platforms.android,
-  ac = ic.googlePlayBilling.price;
+  uc = z,
+  dc = z.seasons,
+  fc = z.seasons.length - 1,
+  pc = z.seasons[fc].zoom,
+  mc = z.seasons[fc].tileSize,
+  hc = z.permissions,
+  gc = z.settings,
+  _c = z.platforms.android,
+  vc = _c.googlePlayBilling.price;
 
-function oc(e) {
-  return Zs.countries[e - 1]
+function yc(e) {
+  return uc.countries[e - 1]
 }
 
-function sc(e) {
-  return sc.map.get(e)
+function bc(e) {
+  return bc.map.get(e)
 }(function(e) {
-  e.map = cc(e.sharedProducts = Object.entries(Zs.products).map(([e, t]) => ({
+  e.map = xc(e.sharedProducts = Object.entries(uc.products).map(([e, t]) => ({
     ...t,
     productId: e
   })).filter(e => `lookupKey` in e), e => e.lookupKey)
-})(sc || (sc = {}));
+})(bc || (bc = {}));
 
-function cc(e, t) {
+function xc(e, t) {
   let n = new Map;
   for (let r in e) {
     let i = Reflect.get(e, r),
@@ -6740,12 +6882,12 @@ function cc(e, t) {
   }
   return n
 }
-var lc = 5e3,
-  uc = 4,
+var Sc = 5e3,
+  Cc = 4,
   B = 64,
-  dc = 8;
+  wc = 8;
 
-function fc(e) {
+function Tc(e) {
   let t = Array.isArray(e.locations) ? e.locations.map(t => ({
     ...t,
     opacity: t.opacity ?? e.opacity,
@@ -6765,12 +6907,12 @@ function fc(e) {
   }
 }
 
-function pc(e) {
+function Ec(e) {
   let t = e.maxX - e.minX + 1,
     n = e.maxY - e.minY + 1;
   if (t <= 0 || n <= 0) return [];
-  let r = Math.min(t, lc),
-    i = Math.max(1, Math.floor(lc / r)),
+  let r = Math.min(t, Sc),
+    i = Math.max(1, Math.floor(Sc / r)),
     a = [];
   for (let t = e.minY; t <= e.maxY; t += i)
     for (let n = e.minX; n <= e.maxX; n += r) a.push({
@@ -6782,7 +6924,7 @@ function pc(e) {
   return a
 }
 
-function mc(e) {
+function Dc(e) {
   let t = [],
     n = Math.floor(e.minX / B),
     r = Math.floor(e.maxX / B),
@@ -6798,19 +6940,19 @@ function mc(e) {
   return t
 }
 
-function hc(e) {
+function Oc(e) {
   let t = (e == null ? void 0 : e.role) ?? (e == null ? void 0 : e.alliance_role);
   return t === `mod` || t === `admin` || t === `leader` ? t : `member`
 }
 
-function gc(e) {
+function kc(e) {
   return class extends e {
     async getAlliance() {
       let e = await this.request(`/alliance`, {
         credentials: `include`
       });
-      if (e.status === I.OK) return e.json();
-      if (e.status !== I.NOT_FOUND) throw Error(f.unexpected_server_error())
+      if (e.status === L.OK) return e.json();
+      if (e.status !== L.NOT_FOUND) throw Error(f.unexpected_server_error())
     }
     async createAlliance(e) {
       let t = await this.request(`/alliance`, {
@@ -6820,18 +6962,18 @@ function gc(e) {
           name: e
         })
       });
-      if (t.status === I.OK) return t.json();
-      if (t.status === I.BAD_REQUEST) {
+      if (t.status === L.OK) return t.json();
+      if (t.status === L.BAD_REQUEST) {
         let e = await t.json();
         throw e.error === `max_characters` ? new R(f.alliance_name_exceeded_the_maximum_number_of_characters(), t.status) : e.error === `name_taken` ? new R(f.alliance_name_already_taken(), t.status) : e.error == `empty_name` ? new R(f.alliance_with_empty_name(), t.status) : new R(f.unexpected_server_error(), t.status)
       }
-      throw t.status === I.FORBIDDEN ? (await t.json().catch(() => ({}))).error === `not_enough_droplets` ? Error(f.not_enough_droplets()) : Error(f.you_are_already_in_an_alliance()) : Error(f.unexpected_server_error())
+      throw t.status === L.FORBIDDEN ? (await t.json().catch(() => ({}))).error === `not_enough_droplets` ? Error(f.not_enough_droplets()) : Error(f.you_are_already_in_an_alliance()) : Error(f.unexpected_server_error())
     }
     async leaveAlliance() {
       if ((await this.request(`/alliance/leave`, {
           method: `POST`,
           credentials: `include`
-        })).status !== I.OK) throw Error(f.unexpected_server_error())
+        })).status !== L.OK) throw Error(f.unexpected_server_error())
     }
     async updateAllianceDescription(e) {
       let t = await this.request(`/alliance/update-description`, {
@@ -6841,19 +6983,19 @@ function gc(e) {
           description: e
         })
       });
-      if (t.status === I.OK) return t.json();
-      if (t.status === I.FORBIDDEN) throw Error(f.you_are_not_allowed_to_do_this());
-      if (t.status === I.BAD_REQUEST) {
+      if (t.status === L.OK) return t.json();
+      if (t.status === L.FORBIDDEN) throw Error(f.you_are_not_allowed_to_do_this());
+      if (t.status === L.BAD_REQUEST) {
         let e = await t.json().catch(() => ({}));
         throw Error(e.error === `invalid_markdown` ? f.alliance_description_invalid_markdown() : f.exceeded_max_chars())
       }
-      throw t.status === I.CONFLICT ? Error(f.alliance_description_credit_required()) : Error(f.unexpected_server_error())
+      throw t.status === L.CONFLICT ? Error(f.alliance_description_credit_required()) : Error(f.unexpected_server_error())
     }
     async getAllianceStore() {
       let e = await this.request(`/alliance/store`, {
         credentials: `include`
       });
-      if (e.status === I.OK) return e.json();
+      if (e.status === L.OK) return e.json();
       throw Error(f.unexpected_server_error())
     }
     async getAllianceCoinLedger(e) {
@@ -6861,7 +7003,7 @@ function gc(e) {
         n = await this.request(`/alliance/economy/ledger${t}`, {
           credentials: `include`
         });
-      if (n.status === I.OK) return n.json();
+      if (n.status === L.OK) return n.json();
       throw Error(f.unexpected_server_error())
     }
     async donateToAlliance(e, t) {
@@ -6873,7 +7015,7 @@ function gc(e) {
           idempotencyKey: t
         })
       });
-      if (n.status === I.OK) return n.json();
+      if (n.status === L.OK) return n.json();
       let r = await n.json().catch(() => ({}));
       throw r.error === `not_enough_droplets` ? Error(f.not_enough_droplets()) : r.error === `invalid_donation` ? Error(f.alliance_donation_invalid()) : Error(f.unexpected_server_error())
     }
@@ -6886,7 +7028,7 @@ function gc(e) {
           idempotencyKey: crypto.randomUUID()
         })
       });
-      if (t.status === I.OK) return t.json();
+      if (t.status === L.OK) return t.json();
       let n = await t.json().catch(() => ({}));
       throw n.error === `not_enough_alliance_coins` ? Error(f.alliance_not_enough_coins()) : n.error === `already_unlocked` ? Error(f.alliance_already_unlocked()) : n.error === `headquarters_not_unlocked` ? Error(f.alliance_hq_not_unlocked()) : n.error === `headquarters_upgrade_prerequisite` ? Error(f.alliance_hq_upgrade_prerequisite()) : n.error === `template_upgrade_prerequisite` ? Error(f.alliance_template_upgrade_prerequisite()) : Error(f.unexpected_server_error())
     }
@@ -6896,11 +7038,11 @@ function gc(e) {
       let n = await this.request(`/alliance/templates${t.size?`?${t}`:``}`, {
         credentials: `include`
       });
-      if (n.status === I.OK) {
+      if (n.status === L.OK) {
         let e = await n.json();
         return {
           ...e,
-          templates: (e.templates ?? []).map(fc),
+          templates: (e.templates ?? []).map(Tc),
           usedBytes: e.usedBytes ?? 0,
           byteLimit: e.byteLimit ?? 67108864,
           draftOptions: e.draftOptions ?? []
@@ -6916,9 +7058,9 @@ function gc(e) {
         credentials: `include`,
         body: n
       });
-      if (r.status === I.CREATED || r.status === I.OK) return fc(await r.json());
+      if (r.status === L.CREATED || r.status === L.OK) return Tc(await r.json());
       let i = await r.json().catch(() => ({}));
-      throw i.error === `template_limit_reached` ? Error(f.alliance_template_limit_reached()) : i.error === `template_storage_limit_reached` ? Error(f.alliance_template_storage_limit_reached()) : i.error === `invalid_template_image` ? Error(f.alliance_template_invalid_image()) : i.error === `template_upload_rate_limited` ? Error(f.alliance_template_upload_rate_limited()) : r.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      throw i.error === `template_limit_reached` ? Error(f.alliance_template_limit_reached()) : i.error === `template_storage_limit_reached` ? Error(f.alliance_template_storage_limit_reached()) : i.error === `invalid_template_image` ? Error(f.alliance_template_invalid_image()) : i.error === `template_upload_rate_limited` ? Error(f.alliance_template_upload_rate_limited()) : r.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async patchAllianceTemplateMetadata(e, t) {
       let n = await this.request(`/alliance/templates/${e}`, {
@@ -6929,8 +7071,8 @@ function gc(e) {
         },
         body: JSON.stringify(t)
       });
-      if (n.status === I.OK) return fc(await n.json());
-      throw (await n.json().catch(() => ({}))).error === `template_upload_rate_limited` ? Error(f.alliance_template_upload_rate_limited()) : n.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      if (n.status === L.OK) return Tc(await n.json());
+      throw (await n.json().catch(() => ({}))).error === `template_upload_rate_limited` ? Error(f.alliance_template_upload_rate_limited()) : n.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async patchAllianceTemplatePlacement(e, t) {
       let n = await this.request(`/alliance/templates/${e}/placement`, {
@@ -6941,9 +7083,9 @@ function gc(e) {
         },
         body: JSON.stringify(t)
       });
-      if (n.status === I.OK) return n.json();
+      if (n.status === L.OK) return n.json();
       let r = await n.json().catch(() => ({}));
-      throw r.error === `invalid_template_placement` ? Error(f.alliance_template_invalid_placement()) : r.error === `template_location_not_selected` ? Error(f.alliance_template_location_not_selected()) : n.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      throw r.error === `invalid_template_placement` ? Error(f.alliance_template_invalid_placement()) : r.error === `template_location_not_selected` ? Error(f.alliance_template_location_not_selected()) : n.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async updateAllianceTemplate(e, t) {
       let n = new FormData;
@@ -6953,16 +7095,16 @@ function gc(e) {
         credentials: `include`,
         body: n
       });
-      if (r.status === I.OK) return fc(await r.json());
+      if (r.status === L.OK) return Tc(await r.json());
       let i = await r.json().catch(() => ({}));
-      throw i.error === `template_image_changed` ? Error(f.alliance_template_image_changed()) : i.error === `template_storage_limit_reached` ? Error(f.alliance_template_storage_limit_reached()) : i.error === `invalid_template_image` ? Error(f.alliance_template_invalid_image()) : i.error === `template_upload_rate_limited` ? Error(f.alliance_template_upload_rate_limited()) : r.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      throw i.error === `template_image_changed` ? Error(f.alliance_template_image_changed()) : i.error === `template_storage_limit_reached` ? Error(f.alliance_template_storage_limit_reached()) : i.error === `invalid_template_image` ? Error(f.alliance_template_invalid_image()) : i.error === `template_upload_rate_limited` ? Error(f.alliance_template_upload_rate_limited()) : r.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async deleteAllianceTemplate(e) {
       let t = await this.request(`/alliance/templates/${e}`, {
         method: `DELETE`,
         credentials: `include`
       });
-      if (t.status !== I.NO_CONTENT) throw t.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      if (t.status !== L.NO_CONTENT) throw t.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async renameOwnAlliance(e) {
       let t = await this.request(`/alliance/rename`, {
@@ -6973,7 +7115,7 @@ function gc(e) {
           idempotencyKey: crypto.randomUUID()
         })
       });
-      if (t.status === I.OK) return t.json();
+      if (t.status === L.OK) return t.json();
       let n = await t.json().catch(() => ({}));
       throw n.error === `not_enough_alliance_coins` ? Error(f.alliance_not_enough_coins()) : n.error === `name_taken` ? Error(f.alliance_name_already_taken()) : n.error === `name_unchanged` ? Error(f.alliance_name_unchanged()) : n.error === `max_characters` ? Error(f.alliance_name_exceeded_the_maximum_number_of_characters()) : Error(f.unexpected_server_error())
     }
@@ -6981,7 +7123,7 @@ function gc(e) {
       let t = await this.request(`/alliance/assets/${e}`, {
         credentials: `include`
       });
-      if (t.status === I.OK) return t.json();
+      if (t.status === L.OK) return t.json();
       throw Error(f.unexpected_server_error())
     }
     async createAllianceAssetDraft(e, t) {
@@ -6995,22 +7137,22 @@ function gc(e) {
           } : {}
         })
       });
-      if (n.status === I.OK) return n.json();
+      if (n.status === L.OK) return n.json();
       throw (await n.json().catch(() => ({}))).error === `not_enough_alliance_coins` ? Error(f.alliance_not_enough_coins()) : Error(f.unexpected_server_error())
     }
     async getAllianceAssetCanvas(e) {
       let t = await this.request(`/alliance/assets/drafts/${e}/canvas`, {
         credentials: `include`
       });
-      if (t.status === I.OK) return t.json();
+      if (t.status === L.OK) return t.json();
       throw Error(f.unexpected_server_error())
     }
     async getAllianceAssetRevision(e) {
       let t = await this.request(`/alliance/assets/drafts/${e}/canvas?metadataOnly=true`, {
         credentials: `include`
       });
-      if (t.status === I.OK) return t.json();
-      if (t.status !== I.FORBIDDEN && t.status !== I.NOT_FOUND) throw Error(f.unexpected_server_error())
+      if (t.status === L.OK) return t.json();
+      if (t.status !== L.FORBIDDEN && t.status !== L.NOT_FOUND) throw Error(f.unexpected_server_error())
     }
     async paintAllianceAsset(e, t) {
       let n = JSON.stringify({
@@ -7022,16 +7164,16 @@ function gc(e) {
           headers: await $.getHeaders(n),
           body: n
         }).catch(e => {
-          throw e instanceof L ? new L(f.alliance_asset_paint_rate_limited()) : e
+          throw e instanceof tc ? new tc(f.alliance_asset_paint_rate_limited()) : e
         });
-      if (r.status === I.OK) return r.json();
+      if (r.status === L.OK) return r.json();
       let i = await r.json().catch(() => ({}));
       if (i.error === `challenge-required` && i.tier) {
-        if (await is(i.tier)) return this.paintAllianceAsset(e, t);
+        if (await ms(i.tier)) return this.paintAllianceAsset(e, t);
         throw Error(f.challenge_verification_not_completed())
       }
       if (i.error === `verification-required`) {
-        let n = await No().get();
+        let n = await Ho().get();
         if (!n.sealed_result) throw Error(f.unexpected_server_error());
         return await this.verifyAnticheat(n.sealed_result), this.paintAllianceAsset(e, t)
       }
@@ -7045,33 +7187,33 @@ function gc(e) {
           publish: t
         })
       });
-      if (n.status === I.OK) return n.json();
+      if (n.status === L.OK) return n.json();
       throw Error(f.unexpected_server_error())
     }
     async equipAllianceAssetVersion(e) {
       if ((await this.request(`/alliance/assets/versions/${e}/select`, {
           method: `POST`,
           credentials: `include`
-        })).status !== I.OK) throw Error(f.unexpected_server_error())
+        })).status !== L.OK) throw Error(f.unexpected_server_error())
     }
     async unequipAllianceAsset(e) {
       if ((await this.request(`/alliance/assets/${e}/unpublish`, {
           method: `POST`,
           credentials: `include`
-        })).status !== I.OK) throw Error(f.unexpected_server_error())
+        })).status !== L.OK) throw Error(f.unexpected_server_error())
     }
     async deleteAllianceAssetVersion(e) {
       let t = await this.request(`/alliance/assets/versions/${e}`, {
         method: `DELETE`,
         credentials: `include`
       });
-      if (t.status !== I.OK) throw (await t.json().catch(() => ({}))).error === `asset_version_selected` ? Error(f.alliance_asset_unequip_before_delete()) : Error(f.unexpected_server_error())
+      if (t.status !== L.OK) throw (await t.json().catch(() => ({}))).error === `asset_version_selected` ? Error(f.alliance_asset_unequip_before_delete()) : Error(f.unexpected_server_error())
     }
     async getAllianceAssetEditors(e) {
       let t = await this.request(`/alliance/assets/drafts/${e}/editors`, {
         credentials: `include`
       });
-      if (t.status === I.OK) return t.json();
+      if (t.status === L.OK) return t.json();
       throw Error(f.unexpected_server_error())
     }
     async grantAllianceAssetEditor(e, t) {
@@ -7082,13 +7224,13 @@ function gc(e) {
           userId: t
         })
       });
-      if (n.status !== I.OK) throw (await n.json().catch(() => ({}))).error === `editor_already_granted` ? Error(f.alliance_asset_editor_already_added()) : Error(f.unexpected_server_error())
+      if (n.status !== L.OK) throw (await n.json().catch(() => ({}))).error === `editor_already_granted` ? Error(f.alliance_asset_editor_already_added()) : Error(f.unexpected_server_error())
     }
     async revokeAllianceAssetEditor(e, t) {
       if ((await this.request(`/alliance/assets/drafts/${e}/editors/${t}`, {
           method: `DELETE`,
           credentials: `include`
-        })).status !== I.OK) throw Error(f.unexpected_server_error())
+        })).status !== L.OK) throw Error(f.unexpected_server_error())
     }
     async copyAllianceAssetEditors(e, t) {
       let n = await this.request(`/alliance/assets/drafts/${e}/editors/copy`, {
@@ -7098,12 +7240,12 @@ function gc(e) {
           sourceDraftId: t
         })
       });
-      if (n.status === I.OK) return n.json();
+      if (n.status === L.OK) return n.json();
       throw Error(f.unexpected_server_error())
     }
     async getAllianceAwards(e, t = 0) {
       let n = await this.request(`/alliances/${e}/awards?page=${t}`, {});
-      if (n.status === I.OK) return n.json();
+      if (n.status === L.OK) return n.json();
       throw Error(f.unexpected_server_error())
     }
     async setAllianceFeaturedAwards(e) {
@@ -7113,7 +7255,7 @@ function gc(e) {
           body: JSON.stringify({
             awardKeys: e
           })
-        })).status !== I.OK) throw Error(f.unexpected_server_error())
+        })).status !== L.OK) throw Error(f.unexpected_server_error())
     }
     async updateAllianceHeadquarters(e, t) {
       let n = await this.request(`/alliance/update-headquarters`, {
@@ -7124,8 +7266,8 @@ function gc(e) {
           longitude: t
         })
       });
-      if (n.status === I.OK) return;
-      if (n.status === I.FORBIDDEN) throw Error(f.you_are_not_allowed_to_do_this());
+      if (n.status === L.OK) return;
+      if (n.status === L.FORBIDDEN) throw Error(f.you_are_not_allowed_to_do_this());
       let r = await n.json().catch(() => ({}));
       throw r.error === `headquarters_credit_required` ? Error(f.alliance_hq_credit_required()) : r.error === `headquarters_not_unlocked` ? Error(f.alliance_hq_not_unlocked()) : Error(f.unexpected_server_error())
     }
@@ -7133,7 +7275,7 @@ function gc(e) {
       let e = await this.request(`/alliance/headquarters`, {
         credentials: `include`
       });
-      if (e.status === I.OK) return e.json();
+      if (e.status === L.OK) return e.json();
       throw Error(f.unexpected_server_error())
     }
     async getAllianceHeadquartersCanvas(e = {}) {
@@ -7144,7 +7286,7 @@ function gc(e) {
           credentials: `include`,
           signal: e.signal
         });
-      if (r.status === I.OK) return r.json();
+      if (r.status === L.OK) return r.json();
       throw Error(f.unexpected_server_error())
     }
     async getAllianceHeadquartersManifest(e = {}) {
@@ -7161,7 +7303,7 @@ function gc(e) {
           credentials: `include`,
           signal: t.signal
         });
-      if (i.status === I.OK) return i.json();
+      if (i.status === L.OK) return i.json();
       throw new R(f.unexpected_server_error(), i.status)
     }
     async getAllianceHeadquartersSnapshot(e, t, n) {
@@ -7183,7 +7325,7 @@ function gc(e) {
         }),
         signal: i
       });
-      if (a.status === I.OK) return a.arrayBuffer();
+      if (a.status === L.OK) return a.arrayBuffer();
       throw new R(f.unexpected_server_error(), a.status)
     }
     async unlockAllianceHeadquarters(e) {
@@ -7195,7 +7337,7 @@ function gc(e) {
           ...e ?? {}
         })
       });
-      if (t.status === I.OK) return t.json();
+      if (t.status === L.OK) return t.json();
       let n = await t.json().catch(() => ({}));
       throw n.error === `not_enough_alliance_coins` ? Error(f.alliance_not_enough_coins()) : n.error === `already_unlocked` ? Error(f.alliance_already_unlocked()) : n.error === `headquarters_anchor_required` ? Error(f.alliance_hq_anchor_required()) : Error(f.unexpected_server_error())
     }
@@ -7208,7 +7350,7 @@ function gc(e) {
           size: e
         })
       });
-      if (t.status === I.OK) return t.json();
+      if (t.status === L.OK) return t.json();
       let n = await t.json().catch(() => ({}));
       throw n.error === `not_enough_alliance_coins` ? Error(f.alliance_not_enough_coins()) : n.error === `headquarters_size_prerequisite` ? Error(f.alliance_hq_size_prerequisite()) : Error(f.unexpected_server_error())
     }
@@ -7223,16 +7365,16 @@ function gc(e) {
           headers: await $.getHeaders(n),
           body: n
         }).catch(e => {
-          throw e instanceof L ? new L(f.alliance_asset_paint_rate_limited()) : e
+          throw e instanceof tc ? new tc(f.alliance_asset_paint_rate_limited()) : e
         });
-      if (r.status === I.OK) return r.json();
+      if (r.status === L.OK) return r.json();
       let i = await r.json().catch(() => ({}));
       if (i.error === `challenge-required` && i.tier) {
-        if (await is(i.tier)) return this.paintAllianceHeadquarters(e, t);
+        if (await ms(i.tier)) return this.paintAllianceHeadquarters(e, t);
         throw Error(f.challenge_verification_not_completed())
       }
       if (i.error === `verification-required`) {
-        let n = await No().get();
+        let n = await Ho().get();
         if (!n.sealed_result) throw Error(f.unexpected_server_error());
         return await this.verifyAnticheat(n.sealed_result), this.paintAllianceHeadquarters(e, t)
       }
@@ -7242,22 +7384,22 @@ function gc(e) {
       let n = await this.request(`/alliance/headquarters/pixel?x=${e}&y=${t}`, {
         credentials: `include`
       });
-      if (n.status === I.OK) return n.json();
+      if (n.status === L.OK) return n.json();
       throw Error(f.unexpected_server_error())
     }
     async getAllianceHqLeaderboard(e) {
       let t = await this.request(`/alliance/headquarters/leaderboard/${e}`, {
         credentials: `include`
       });
-      if (t.status === I.OK) return t.json();
-      throw t.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.alliance_hq_leaderboard_load_failed())
+      if (t.status === L.OK) return t.json();
+      throw t.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.alliance_hq_leaderboard_load_failed())
     }
     async getAllianceHqTimeouts(e) {
       let t = e ? `?before=${e}` : ``,
         n = await this.request(`/alliance/headquarters/timeouts${t}`, {
           credentials: `include`
         });
-      if (n.status === I.OK) return n.json();
+      if (n.status === L.OK) return n.json();
       throw Error(f.unexpected_server_error())
     }
     async createAllianceHqTimeout(e, t, n) {
@@ -7270,8 +7412,8 @@ function gc(e) {
           reason: n
         })
       });
-      if (r.status === I.OK) return r.json();
-      if (r.status === I.FORBIDDEN) throw Error(f.you_are_not_allowed_to_do_this());
+      if (r.status === L.OK) return r.json();
+      if (r.status === L.FORBIDDEN) throw Error(f.you_are_not_allowed_to_do_this());
       let i = await r.json().catch(() => ({}));
       throw i.error === `headquarters_timeout_active` ? Error(f.alliance_hq_timeout_already_active()) : i.error === `invalid_timeout_reason` ? Error(f.alliance_hq_timeout_reason_required()) : Error(f.unexpected_server_error())
     }
@@ -7283,29 +7425,29 @@ function gc(e) {
           reason: t
         })
       });
-      if (n.status === I.OK) return;
-      if (n.status === I.FORBIDDEN) throw Error(f.you_are_not_allowed_to_do_this());
+      if (n.status === L.OK) return;
+      if (n.status === L.FORBIDDEN) throw Error(f.you_are_not_allowed_to_do_this());
       let r = await n.json().catch(() => ({}));
       throw r.error === `headquarters_timeout_inactive` ? Error(f.alliance_hq_timeout_inactive()) : r.error === `invalid_timeout_reason` ? Error(f.alliance_hq_timeout_reason_required()) : Error(f.unexpected_server_error())
     }
     async getPublicAllianceHeadquarters(e) {
       let t = await this.request(`/alliances/${e}/headquarters`, {});
-      if (t.status === I.OK) return t.json();
-      if (t.status !== I.NOT_FOUND) throw Error(f.unexpected_server_error())
+      if (t.status === L.OK) return t.json();
+      if (t.status !== L.NOT_FOUND) throw Error(f.unexpected_server_error())
     }
     async allianceLeaderboard(e) {
       let t = await this.request(`/alliance/leaderboard/${e}`, {
         credentials: `include`
       });
-      if (t.status === I.OK) return t.json();
-      throw t.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.leaderboard_disabled_temporarily())
+      if (t.status === L.OK) return t.json();
+      throw t.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.leaderboard_disabled_temporarily())
     }
     async getAllianceInvites() {
       let e = await this.request(`/alliance/invites`, {
         credentials: `include`
       });
-      if (e.status === I.OK) return e.json();
-      throw e.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      if (e.status === L.OK) return e.json();
+      throw e.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async createAllianceInvite(e) {
       let t = await this.request(`/alliance/invites`, {
@@ -7316,15 +7458,15 @@ function gc(e) {
           maxUses: e.maxUses ?? null
         })
       });
-      if (t.status === I.OK) return t.json();
-      throw t.status === I.BAD_REQUEST ? (await t.json().catch(() => ({}))).error === `max_invites` ? Error(f.alliance_invite_limit_reached()) : Error(f.unexpected_server_error()) : t.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      if (t.status === L.OK) return t.json();
+      throw t.status === L.BAD_REQUEST ? (await t.json().catch(() => ({}))).error === `max_invites` ? Error(f.alliance_invite_limit_reached()) : Error(f.unexpected_server_error()) : t.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async revokeAllianceInvite(e) {
       let t = await this.request(`/alliance/invites/${e}/revoke`, {
         method: `POST`,
         credentials: `include`
       });
-      if (t.status !== I.OK) throw t.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      if (t.status !== L.OK) throw t.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async getAllianceGallery(e) {
       let t = new URLSearchParams({
@@ -7333,7 +7475,7 @@ function gc(e) {
       });
       e.query && t.set(`q`, e.query), e.joinPolicy && t.set(`joinPolicy`, e.joinPolicy);
       let n = await this.request(`/alliances?${t.toString()}`, {});
-      if (n.status === I.OK) return n.json();
+      if (n.status === L.OK) return n.json();
       throw Error(f.unexpected_server_error())
     }
     async getPublicAllianceHeadquartersPins(e) {
@@ -7344,13 +7486,13 @@ function gc(e) {
           maxLng: e.maxLng.toFixed(5)
         }),
         n = await this.request(`/alliances/headquarters/pins?${t.toString()}`, {});
-      if (n.status === I.OK) return n.json();
+      if (n.status === L.OK) return n.json();
       throw Error(f.unexpected_server_error())
     }
     async getPublicAlliance(e) {
       let t = await this.request(`/alliances/${e}`, {});
-      if (t.status === I.OK) return t.json();
-      if (t.status !== I.NOT_FOUND) throw Error(f.unexpected_server_error())
+      if (t.status === L.OK) return t.json();
+      if (t.status !== L.NOT_FOUND) throw Error(f.unexpected_server_error())
     }
     async getPublicAllianceMembers(e, t) {
       let n = new URLSearchParams({
@@ -7360,15 +7502,15 @@ function gc(e) {
       });
       t.query && n.set(`q`, t.query);
       let r = await this.request(`/alliances/${e}/members?${n.toString()}`, {});
-      if (r.status === I.OK) return r.json();
+      if (r.status === L.OK) return r.json();
       throw Error(f.unexpected_server_error())
     }
     async getAllianceViewerState(e) {
       let t = await this.request(`/alliances/${e}/viewer`, {
         credentials: `include`
       });
-      if (t.status === I.OK) return t.json();
-      if (t.status !== I.UNAUTHORIZED) throw Error(f.unexpected_server_error())
+      if (t.status === L.OK) return t.json();
+      if (t.status !== L.UNAUTHORIZED) throw Error(f.unexpected_server_error())
     }
     async directJoinAlliance(e) {
       let t = await this.request(`/alliances/${e}/join`, {
@@ -7382,17 +7524,17 @@ function gc(e) {
         method: `POST`,
         credentials: `include`
       });
-      return t.status === I.TOO_MANY_REQUESTS ? `cooldown` : this.mapJoinOutcome(t)
+      return t.status === L.TOO_MANY_REQUESTS ? `cooldown` : this.mapJoinOutcome(t)
     }
     async mapJoinOutcome(e) {
       switch (e.status) {
-        case I.OK:
+        case L.OK:
           return `success`;
-        case I.FORBIDDEN:
+        case L.FORBIDDEN:
           return (await e.json().catch(() => ({}))).error === `banned` ? `banned` : `policy`;
-        case I.CONFLICT:
+        case L.CONFLICT:
           return `in-alliance`;
-        case I.NOT_FOUND:
+        case L.NOT_FOUND:
           return `not-found`;
         default:
           return `error`
@@ -7403,14 +7545,14 @@ function gc(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (t.status !== I.OK && t.status !== I.CONFLICT) throw Error(f.unexpected_server_error())
+      if (t.status !== L.OK && t.status !== L.CONFLICT) throw Error(f.unexpected_server_error())
     }
     async getAllianceJoinRequests(e) {
       let t = await this.request(`/alliance/join-requests?page=${e}`, {
         credentials: `include`
       });
-      if (t.status === I.OK) return t.json();
-      throw t.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      if (t.status === L.OK) return t.json();
+      throw t.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async reviewAllianceJoinRequest(e, t) {
       let n = await this.request(`/alliance/join-requests/${e}/review`, {
@@ -7420,9 +7562,9 @@ function gc(e) {
           accept: t
         })
       });
-      if (n.status === I.OK) return `success`;
-      if (n.status === I.CONFLICT) return `stale`;
-      throw n.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      if (n.status === L.OK) return `success`;
+      if (n.status === L.CONFLICT) return `stale`;
+      throw n.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async kickAllianceMember(e) {
       let t = await this.request(`/alliance/kick`, {
@@ -7432,7 +7574,7 @@ function gc(e) {
           kickedUserId: e
         })
       });
-      if (t.status !== I.OK) throw t.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      if (t.status !== L.OK) throw t.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async removeAllianceAdmin(e) {
       let t = await this.request(`/alliance/remove-admin`, {
@@ -7442,7 +7584,7 @@ function gc(e) {
           demotedUserId: e
         })
       });
-      if (t.status !== I.OK) throw t.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      if (t.status !== L.OK) throw t.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async setOwnAllianceMemberRole(e, t) {
       let n = await this.request(`/alliance/members/${e}/role`, {
@@ -7452,14 +7594,14 @@ function gc(e) {
           role: t
         })
       });
-      if (n.status !== I.OK) throw n.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      if (n.status !== L.OK) throw n.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async getAllianceRolePermissions() {
       let e = await this.request(`/alliance/role-permissions`, {
         credentials: `include`
       });
-      if (e.status === I.OK) return e.json();
-      throw e.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      if (e.status === L.OK) return e.json();
+      throw e.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async updateAllianceRolePermissions(e) {
       let t = await this.request(`/alliance/role-permissions`, {
@@ -7469,7 +7611,7 @@ function gc(e) {
           roles: e
         })
       });
-      if (t.status !== I.OK) throw t.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      if (t.status !== L.OK) throw t.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async transferAllianceLeadership(e) {
       let t = await this.request(`/alliance/transfer-leadership`, {
@@ -7479,7 +7621,7 @@ function gc(e) {
           newLeaderUserId: e
         })
       });
-      if (t.status !== I.OK) throw t.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      if (t.status !== L.OK) throw t.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async updateAllianceSettings(e) {
       let t = await this.request(`/alliance/settings`, {
@@ -7487,7 +7629,7 @@ function gc(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status !== I.OK) throw t.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      if (t.status !== L.OK) throw t.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async setAllianceDiscordInvite(e) {
       let t = await this.request(`/alliance/discord-invite`, {
@@ -7497,32 +7639,15 @@ function gc(e) {
           url: e
         })
       });
-      if (t.status !== I.OK) throw t.status === I.BAD_REQUEST ? Error(f.alliance_discord_invite_invalid()) : t.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      if (t.status !== L.OK) throw t.status === L.BAD_REQUEST ? Error(f.alliance_discord_invite_invalid()) : t.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async getAllianceActivity(e) {
       let t = e ? `?cursor=${e}` : ``,
         n = await this.request(`/alliance/activity${t}`, {
           credentials: `include`
         });
-      if (n.status === I.OK) return n.json();
-      throw n.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
-    }
-    async getAllianceNotificationPreferences() {
-      let e = await this.request(`/alliance/notification-preferences`, {
-        credentials: `include`
-      });
-      if (e.status === I.OK) return e.json();
-      throw Error(f.unexpected_server_error())
-    }
-    async setAllianceNotificationPreference(e, t) {
-      if ((await this.request(`/alliance/notification-preferences`, {
-          method: `POST`,
-          credentials: `include`,
-          body: JSON.stringify({
-            category: e,
-            enabled: t
-          })
-        })).status !== I.OK) throw Error(f.unexpected_server_error())
+      if (n.status === L.OK) return n.json();
+      throw n.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async reportAlliance(e) {
       let t = JSON.stringify({
@@ -7542,11 +7667,12 @@ function gc(e) {
           headers: await $.getHeaders(t),
           body: t
         });
-      if (n.status === I.OK) return n.json();
-      if (n.status === I.FORBIDDEN) {
+      if (n.status === L.OK || n.status === L.FORBIDDEN) {
         let t = await n.json().catch(() => ({}));
-        if (t.error === `challenge-required` && t.tier) {
-          if (await is(t.tier)) return this.reportAlliance(e);
+        if ((t == null ? void 0 : t.reason) === `target_cooldown`) throw Error(f.alliance_report_cooldown());
+        if (n.status === L.OK && typeof(t == null ? void 0 : t.success) == `boolean`) return t;
+        if (n.status === L.FORBIDDEN && (t == null ? void 0 : t.error) === `challenge-required` && t.tier) {
+          if (await ms(t.tier)) return this.reportAlliance(e);
           throw Error(f.challenge_verification_not_completed())
         }
       }
@@ -7557,16 +7683,16 @@ function gc(e) {
           method: `POST`,
           credentials: `include`
         })).status) {
-        case I.OK:
+        case L.OK:
           return `success`;
-        case I.ALREADY_REPORTED:
+        case L.ALREADY_REPORTED:
           return `in-another-alliance`;
-        case I.UNAUTHORIZED:
+        case L.UNAUTHORIZED:
           return `not-logged-in`;
-        case I.FORBIDDEN:
+        case L.FORBIDDEN:
           return `banned`;
-        case I.BAD_REQUEST:
-        case I.NOT_FOUND:
+        case L.BAD_REQUEST:
+        case L.NOT_FOUND:
           return `invalid-invite`;
         default:
           return `error`
@@ -7581,7 +7707,7 @@ function gc(e) {
       let n = await this.request(`/alliance/members/${e.page}?${t.toString()}`, {
         credentials: `include`
       });
-      if (n.status === I.OK) return n.json();
+      if (n.status === L.OK) return n.json();
       throw Error(f.unexpected_server_error())
     }
     async getAllianceBannedMembers(e) {
@@ -7592,7 +7718,7 @@ function gc(e) {
       let n = await this.request(`/alliance/members/banned/${e.page}?${t.toString()}`, {
         credentials: `include`
       });
-      if (n.status === I.OK) return n.json();
+      if (n.status === L.OK) return n.json();
       throw Error(f.unexpected_server_error())
     }
     async getAllianceById(e) {
@@ -7600,8 +7726,8 @@ function gc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status === I.NOT_FOUND) return;
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status === L.NOT_FOUND) return;
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       let n = await t.json();
       return {
         id: Number(n.id),
@@ -7619,7 +7745,7 @@ function gc(e) {
           method: `GET`,
           credentials: `include`
         });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       let r = await n.json();
       return (Array.isArray(r) ? r : []).map(e => ({
         id: Number(e.id),
@@ -7636,14 +7762,14 @@ function gc(e) {
       let t = await this.request(`/staff/dashboard/alliances/${e}/awards`, {
         credentials: `include`
       });
-      if (t.status === I.OK) return t.json();
+      if (t.status === L.OK) return t.json();
       throw Error(f.unexpected_server_error())
     }
     async getAdminAllianceAssets(e) {
       let t = await this.request(`/staff/dashboard/alliances/${e}/assets`, {
         credentials: `include`
       });
-      if (t.status === I.OK) return t.json();
+      if (t.status === L.OK) return t.json();
       throw Error(f.unexpected_server_error())
     }
     async getAdminAllianceAssetEvents(e, t, n) {
@@ -7651,7 +7777,7 @@ function gc(e) {
         i = await this.request(`/staff/dashboard/alliances/${e}/assets/drafts/${t}/events${r}`, {
           credentials: `include`
         });
-      if (i.status === I.OK) return i.json();
+      if (i.status === L.OK) return i.json();
       throw Error(f.unexpected_server_error())
     }
     async moderateAdminAllianceAssetVersion(e, t, n, r) {
@@ -7662,7 +7788,7 @@ function gc(e) {
             ...n,
             reason: r
           })
-        })).status !== I.OK) throw Error(f.unexpected_server_error())
+        })).status !== L.OK) throw Error(f.unexpected_server_error())
     }
     async moderateAdminAllianceAssetDraft(e, t, n, r) {
       if ((await this.request(`/staff/dashboard/alliances/${e}/assets/drafts/${t}/moderation`, {
@@ -7672,25 +7798,25 @@ function gc(e) {
             ...n,
             reason: r
           })
-        })).status !== I.OK) throw Error(f.unexpected_server_error())
+        })).status !== L.OK) throw Error(f.unexpected_server_error())
     }
     async getAllianceHqWaybackEvents(e, t) {
       let n = new URLSearchParams;
-      n.set(`limit`, String((t == null ? void 0 : t.limit) ?? rc.tools.wayback.hqLimit)), t != null && t.before && n.set(`before`, String(t.before)), t != null && t.area && (n.set(`minX`, String(t.area.minX)), n.set(`minY`, String(t.area.minY)), n.set(`maxX`, String(t.area.maxX)), n.set(`maxY`, String(t.area.maxY)));
+      n.set(`limit`, String((t == null ? void 0 : t.limit) ?? gc.tools.wayback.hqLimit)), t != null && t.before && n.set(`before`, String(t.before)), t != null && t.area && (n.set(`minX`, String(t.area.minX)), n.set(`minY`, String(t.area.minY)), n.set(`maxX`, String(t.area.maxX)), n.set(`maxY`, String(t.area.maxY)));
       let r = await this.request(`/staff/dashboard/alliances/${e}/headquarters/events?${n.toString()}`, {
         credentials: `include`
       });
-      if (r.status === I.NOT_FOUND) throw Error(f.alliances_not_found());
-      if (r.status !== I.OK) throw Error(f.unexpected_server_error());
+      if (r.status === L.NOT_FOUND) throw Error(f.alliances_not_found());
+      if (r.status !== L.OK) throw Error(f.unexpected_server_error());
       return r.json()
     }
     async getAdminAllianceHqArea(e, t) {
-      let n = pc(t);
+      let n = Ec(t);
       if (n.length === 0) throw Error(f.unexpected_server_error());
       let r = await this.getAdminAllianceHqAreaChunk(e, n[0]),
         i = [...r.pixels];
-      for (let t = 1; t < n.length; t += uc) {
-        let a = await Promise.all(n.slice(t, t + uc).map(t => this.getAdminAllianceHqAreaChunk(e, t, r.eventHwm)));
+      for (let t = 1; t < n.length; t += Cc) {
+        let a = await Promise.all(n.slice(t, t + Cc).map(t => this.getAdminAllianceHqAreaChunk(e, t, r.eventHwm)));
         for (let e of a) i.push(...e.pixels)
       }
       return {
@@ -7701,11 +7827,11 @@ function gc(e) {
     }
     async getAdminAllianceHqSelectArea(e, t, n) {
       var r;
-      let i = mc(t),
+      let i = Dc(t),
         a = Array(i.length),
         o = 0,
         s = Array.from({
-          length: Math.min(dc, i.length)
+          length: Math.min(wc, i.length)
         }, async () => {
           for (; o < i.length;) {
             let t = o;
@@ -7731,7 +7857,7 @@ function gc(e) {
         i = await this.request(`/staff/dashboard/alliances/${e}/headquarters/area?${r.toString()}`, {
           credentials: `include`
         });
-      if (i.status !== I.OK) throw Error(f.unexpected_server_error());
+      if (i.status !== L.OK) throw Error(f.unexpected_server_error());
       let a = await i.arrayBuffer(),
         o = (t.maxX - t.minX + 1) * (t.maxY - t.minY + 1);
       if (a.byteLength !== o * 13) throw Error(f.unexpected_server_error());
@@ -7769,14 +7895,14 @@ function gc(e) {
       let i = await this.request(`/staff/dashboard/alliances/${e}/headquarters/area?${r.toString()}`, {
         credentials: `include`
       });
-      if (i.status === I.CONTENT_TOO_LARGE || i.status !== I.OK) throw Error(f.unexpected_server_error());
+      if (i.status === L.CONTENT_TOO_LARGE || i.status !== L.OK) throw Error(f.unexpected_server_error());
       return i.json()
     }
     async reverseAdminAllianceHqPixels(e, t, n, r = !1) {
       let i = 0,
         a = 0;
-      for (let o = 0; o < t.length; o += lc) {
-        let s = await this.reverseAdminAllianceHqPixelChunk(e, t.slice(o, o + lc), n, r);
+      for (let o = 0; o < t.length; o += Sc) {
+        let s = await this.reverseAdminAllianceHqPixelChunk(e, t.slice(o, o + Sc), n, r);
         i += s.reversed, a = s.eventHwm
       }
       return {
@@ -7796,9 +7922,9 @@ function gc(e) {
           })
         }),
         a = await i.json().catch(() => ({}));
-      if (i.status === I.CONTENT_TOO_LARGE) throw Error(f.alliance_hq_select_area_history_too_large());
-      if (i.status === I.NOT_FOUND) throw Error(f.reverse_no_modifications());
-      if (i.status !== I.OK) throw Error(f.unexpected_server_error());
+      if (i.status === L.CONTENT_TOO_LARGE) throw Error(f.alliance_hq_select_area_history_too_large());
+      if (i.status === L.NOT_FOUND) throw Error(f.reverse_no_modifications());
+      if (i.status !== L.OK) throw Error(f.unexpected_server_error());
       return a
     }
     async getAllianceFull(e) {
@@ -7806,8 +7932,8 @@ function gc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status === I.NOT_FOUND) return null;
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status === L.NOT_FOUND) return null;
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       let n = await t.json(),
         r = Array.isArray(n == null ? void 0 : n.members) ? n.members : [];
       return {
@@ -7851,7 +7977,7 @@ function gc(e) {
           pixelsPainted: Number((e == null ? void 0 : e.pixelsPainted) ?? (e == null ? void 0 : e.pixels_painted) ?? 0),
           lastPixelLatitude: (e == null ? void 0 : e.lastPixelLatitude) ?? null,
           lastPixelLongitude: (e == null ? void 0 : e.lastPixelLongitude) ?? null,
-          role: hc(e),
+          role: Oc(e),
           timedOut: !!(e != null && e.timedOut),
           banned: !!(e != null && e.banned)
         }))
@@ -7870,12 +7996,12 @@ function gc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (r.status === I.NOT_FOUND) return {
+      if (r.status === L.NOT_FOUND) return {
         members: [],
         total: 0,
         filteredTotal: 0
       };
-      if (r.status !== I.OK) throw new R(f.unexpected_server_error(), r.status);
+      if (r.status !== L.OK) throw new R(f.unexpected_server_error(), r.status);
       let i = await r.json(),
         a = Array.isArray(i == null ? void 0 : i.members) ? i.members : [];
       return {
@@ -7887,7 +8013,7 @@ function gc(e) {
           pixelsPainted: Number((e == null ? void 0 : e.pixelsPainted) ?? (e == null ? void 0 : e.pixels_painted) ?? 0),
           lastPixelLatitude: (e == null ? void 0 : e.lastPixelLatitude) ?? null,
           lastPixelLongitude: (e == null ? void 0 : e.lastPixelLongitude) ?? null,
-          role: hc(e),
+          role: Oc(e),
           timedOut: !!(e != null && e.timedOut),
           banned: !!(e != null && e.banned)
         })),
@@ -7903,11 +8029,11 @@ function gc(e) {
           name: t
         })
       });
-      if (n.status === I.BAD_REQUEST) {
+      if (n.status === L.BAD_REQUEST) {
         let e = await n.json().catch(() => ({}));
         throw Error((e == null ? void 0 : e.error) ?? f.unexpected_server_error())
       }
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status)
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status)
     }
     async updateAdminAllianceDescription(e, t) {
       let n = await this.request(`/staff/dashboard/alliances/${e}/description`, {
@@ -7917,8 +8043,8 @@ function gc(e) {
           description: t
         })
       });
-      if (n.status === I.OK) return n.json();
-      if (n.status === I.BAD_REQUEST) {
+      if (n.status === L.OK) return n.json();
+      if (n.status === L.BAD_REQUEST) {
         let e = await n.json().catch(() => ({}));
         throw Error(e.error === `invalid_markdown` ? f.alliance_description_invalid_markdown() : f.exceeded_max_chars())
       }
@@ -7932,11 +8058,11 @@ function gc(e) {
           newLeaderUserId: t
         })
       });
-      if (n.status === I.BAD_REQUEST) {
+      if (n.status === L.BAD_REQUEST) {
         let e = await n.json();
         throw (e == null ? void 0 : e.error) === `user_not_in_alliance` ? Error(f.leader_must_be_in_alliance()) : Error(f.unexpected_server_error())
       }
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status)
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status)
     }
     async banAllAllianceMembers(e, t, n) {
       let r = await this.request(`/staff/dashboard/alliances/${e}/ban-all`, {
@@ -7947,7 +8073,7 @@ function gc(e) {
           notes: n
         })
       });
-      if (r.status !== I.OK) throw new R(f.unexpected_server_error(), r.status)
+      if (r.status !== L.OK) throw new R(f.unexpected_server_error(), r.status)
     }
     async setAllianceMemberRole(e, t, n) {
       let r = await this.request(`/staff/dashboard/alliances/${e}/members/${t}/role`, {
@@ -7957,21 +8083,21 @@ function gc(e) {
           role: n
         })
       });
-      if (r.status !== I.OK) throw new R(f.unexpected_server_error(), r.status)
+      if (r.status !== L.OK) throw new R(f.unexpected_server_error(), r.status)
     }
     async removeAllianceMember(e, t) {
       let n = await this.request(`/staff/dashboard/alliances/${e}/members/${t}/remove`, {
         method: `POST`,
         credentials: `include`
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status)
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status)
     }
     async getAdminAllianceRevisions(e, t) {
       let n = await this.request(`/staff/dashboard/alliances/${e}/revisions?kind=${t}`, {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return n.json()
     }
     async hideAdminAllianceRevision(e, t, n) {
@@ -7983,7 +8109,7 @@ function gc(e) {
           revisionId: n
         })
       });
-      if (r.status !== I.OK) throw new R(f.unexpected_server_error(), r.status)
+      if (r.status !== L.OK) throw new R(f.unexpected_server_error(), r.status)
     }
     async suspendAdminAllianceVisibility(e, t) {
       let n = await this.request(`/staff/dashboard/alliances/${e}/suspend-visibility`, {
@@ -7993,7 +8119,7 @@ function gc(e) {
           discoverability: t
         })
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status)
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status)
     }
     async moderateAdminAllianceHeadquarters(e, t, n) {
       let r = await this.request(`/staff/dashboard/alliances/${e}/headquarters/moderation`, {
@@ -8004,8 +8130,8 @@ function gc(e) {
           reason: n
         })
       });
-      if (r.status === I.NOT_FOUND) throw Error(f.alliance_ticket_no_headquarters());
-      if (r.status !== I.OK) throw new R(f.unexpected_server_error(), r.status)
+      if (r.status === L.NOT_FOUND) throw Error(f.alliance_ticket_no_headquarters());
+      if (r.status !== L.OK) throw new R(f.unexpected_server_error(), r.status)
     }
     async restoreAdminAlliance(e, t) {
       let n = await this.request(`/staff/dashboard/alliances/${e}/restore`, {
@@ -8015,18 +8141,18 @@ function gc(e) {
           newLeaderUserId: t
         })
       });
-      if (n.status === I.BAD_REQUEST) {
+      if (n.status === L.BAD_REQUEST) {
         let e = await n.json().catch(() => ({}));
         throw (e == null ? void 0 : e.error) === `user_not_found` ? Error(f.alliances_invalid_id()) : (e == null ? void 0 : e.error) === `user_already_in_alliance` ? Error(f.alliance_staff_restore_leader_in_alliance()) : (e == null ? void 0 : e.error) === `alliance_not_archived` ? Error(f.alliance_staff_restore_not_archived()) : Error(f.unexpected_server_error())
       }
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status)
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status)
     }
     async archiveAdminAlliance(e) {
       let t = await this.request(`/staff/dashboard/alliances/${e}/archive`, {
         method: `POST`,
         credentials: `include`
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status)
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status)
     }
     async punishAdminAllianceMembers(e, t) {
       let n = await this.request(`/staff/dashboard/alliances/${e}/punish-members`, {
@@ -8040,7 +8166,7 @@ function gc(e) {
           notes: t.notes ?? ``
         })
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status)
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status)
     }
     async giveAllianceAdmin(e) {
       let t = await this.request(`/alliance/give-admin`, {
@@ -8050,7 +8176,7 @@ function gc(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (t.status !== I.OK) throw t.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      if (t.status !== L.OK) throw t.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async banAllianceUser(e) {
       let t = await this.request(`/alliance/ban`, {
@@ -8060,13 +8186,13 @@ function gc(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (t.status !== I.OK) throw t.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      if (t.status !== L.OK) throw t.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
     async equipFlag(e) {
       if ((await this.request(`/flag/equip/${e}`, {
           method: `POST`,
           credentials: `include`
-        })).status !== I.OK) throw Error(f.unexpected_server_error())
+        })).status !== L.OK) throw Error(f.unexpected_server_error())
     }
     async unbanAllianceUser(e) {
       let t = await this.request(`/alliance/unban`, {
@@ -8076,19 +8202,19 @@ function gc(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (t.status !== I.OK) throw t.status === I.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
+      if (t.status !== L.OK) throw t.status === L.FORBIDDEN ? Error(f.you_are_not_allowed_to_do_this()) : Error(f.unexpected_server_error())
     }
   }
 }
 
-function _c(e) {
+function Ac(e) {
   return class extends e {
     async getUserAnticheat(e) {
       let t = await this.request(`/staff/dashboard/users/anticheat?id=${encodeURIComponent(e)}`, {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return await t.json()
     }
     async getAnticheatStats(e, t) {
@@ -8096,7 +8222,7 @@ function _c(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return n.json()
     }
     async getAnticheatSignals(e, t) {
@@ -8104,7 +8230,7 @@ function _c(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return n.json()
     }
     async getAnticheatUserJourney(e, t, n) {
@@ -8112,7 +8238,7 @@ function _c(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (r.status !== I.OK) throw new R(f.unexpected_server_error(), r.status);
+      if (r.status !== L.OK) throw new R(f.unexpected_server_error(), r.status);
       return r.json()
     }
     async getAnticheatSignalAnalysis(e, t, n) {
@@ -8120,13 +8246,13 @@ function _c(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (r.status !== I.OK) throw new R(f.unexpected_server_error(), r.status);
+      if (r.status !== L.OK) throw new R(f.unexpected_server_error(), r.status);
       return r.json()
     }
   }
 }
 
-function vc(e) {
+function jc(e) {
   return class extends e {
     async autoReviewBan(e) {
       let t = await this.request(`/staff/dashboard/users/auto-review-ban`, {
@@ -8136,7 +8262,7 @@ function vc(e) {
           userId: e
         })
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return await t.json()
     }
     async getUserAppeals(e) {
@@ -8146,7 +8272,7 @@ function vc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       let r = await n.json(),
         i = Array.isArray(r == null ? void 0 : r.appeals) ? r.appeals : [];
       return {
@@ -8168,14 +8294,14 @@ function vc(e) {
           body: n,
           headers: r
         });
-      if (i.status === I.FORBIDDEN) {
+      if (i.status === L.FORBIDDEN) {
         let n = await i.json();
         if ((n == null ? void 0 : n.error) === `challenge-required` && n.tier) {
-          if (await is(n.tier)) return this.submitBanAppeal(e, t);
+          if (await ms(n.tier)) return this.submitBanAppeal(e, t);
           throw new R(f.challenge_verification_not_completed(), i.status)
         }
       }
-      if (i.status !== I.OK && i.status !== I.ALREADY_REPORTED) throw new R(f.unexpected_server_error(), i.status);
+      if (i.status !== L.OK && i.status !== L.ALREADY_REPORTED) throw new R(f.unexpected_server_error(), i.status);
       return i.status
     }
     async getOpenAppeals() {
@@ -8183,7 +8309,7 @@ function vc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       return e.json()
     }
     async postSolveAppeal(e, t) {
@@ -8194,7 +8320,7 @@ function vc(e) {
           approved: t
         })
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return await n.json()
     }
     async getUserLastAppeal() {
@@ -8202,7 +8328,7 @@ function vc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       let t = await e.json();
       return (t == null ? void 0 : t.appealDate) ?? null
     }
@@ -8211,7 +8337,7 @@ function vc(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       return await e.json()
     }
     async getPendingAppealsCount() {
@@ -8219,21 +8345,21 @@ function vc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       let t = await e.json();
       return (t == null ? void 0 : t.appeals) ?? 0
     }
   }
 }
 
-function yc(e) {
+function Mc(e) {
   return class extends e {
     async getDeviceAttestChallenge() {
       let e = await this.request(`/device/attest/challenge`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       return (await e.json()).challenge
     }
     async postDeviceAttest(e, t) {
@@ -8248,13 +8374,13 @@ function yc(e) {
           attestation: t
         })
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status)
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status)
     }
     async getDevicePreauthChallenge() {
       let e = await this.request(`/device/preauth/challenge`, {
         method: `GET`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       return (await e.json()).challenge
     }
     async postDevicePreauth(e) {
@@ -8265,7 +8391,7 @@ function yc(e) {
         },
         body: JSON.stringify(e)
       });
-      if (t.status !== I.OK) throw new R(await t.json().then(e => e.error).catch(() => void 0) ?? f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(await t.json().then(e => e.error).catch(() => void 0) ?? f.unexpected_server_error(), t.status);
       return (await t.json()).ticket
     }
     async postDeviceCheck(e) {
@@ -8279,7 +8405,7 @@ function yc(e) {
           token: e
         })
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status)
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status)
     }
     async getAppStoreAccountToken(e) {
       let t = await this.request(`/payment/appstore/account-token`, {
@@ -8289,7 +8415,7 @@ function yc(e) {
           challenge: e
         })
       });
-      if (t.status !== I.OK) throw Error(f.unexpected_server_error());
+      if (t.status !== L.OK) throw Error(f.unexpected_server_error());
       return (await t.json()).token
     }
     async verifyAppStorePurchase(e) {
@@ -8303,20 +8429,20 @@ function yc(e) {
           transactionId: e
         })
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return t.json()
     }
   }
 }
 
-function bc(e) {
+function Nc(e) {
   return class extends e {
     async getUserFrames() {
       let e = await this.request(`/me/frames`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       return e.json()
     }
     async postEquipUserFrame(e) {
@@ -8324,14 +8450,14 @@ function bc(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status)
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status)
     }
     async getUserBadges() {
       let e = await this.request(`/me/badges`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       return e.json()
     }
     async postEquipUserBadge(e) {
@@ -8340,14 +8466,14 @@ function bc(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status)
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status)
     }
     async getStoreFrames() {
       let e = await this.request(`/store/frames`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       return e.json()
     }
     async postBuyUserFrame(e) {
@@ -8355,10 +8481,10 @@ function bc(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (t.status === I.NOT_FOUND) throw Error(f.couldnt_complete_the_purchase_this_item_doesnt_exist());
-      if (t.status === I.FORBIDDEN) throw Error(f.you_do_not_have_enough_droplets_to_buy_this_item());
-      if (t.status === I.CONFLICT) throw Error(f.you_already_have_this_item());
-      if (t.status !== I.OK) throw Error(f.unexpected_server_error())
+      if (t.status === L.NOT_FOUND) throw Error(f.couldnt_complete_the_purchase_this_item_doesnt_exist());
+      if (t.status === L.FORBIDDEN) throw Error(f.you_do_not_have_enough_droplets_to_buy_this_item());
+      if (t.status === L.CONFLICT) throw Error(f.you_already_have_this_item());
+      if (t.status !== L.OK) throw Error(f.unexpected_server_error())
     }
     async postEquipCosmetics(e) {
       let t = await this.request(`/me/cosmetic/equip`, {
@@ -8366,14 +8492,14 @@ function bc(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status)
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status)
     }
     async getStoreNameCosmetics() {
       let e = await this.request(`/store/name`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       return await e.json()
     }
     async postBuyCosmetic(e) {
@@ -8381,14 +8507,14 @@ function bc(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status)
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status)
     }
     async getMyNameCosmetics() {
       let e = await this.request(`/me/cosmetics/name`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       return await e.json()
     }
     async postCreateFrame(e) {
@@ -8399,7 +8525,7 @@ function bc(e) {
         credentials: `include`,
         body: t
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return n.json()
     }
     async postCreateFont(e) {
@@ -8408,7 +8534,7 @@ function bc(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return t.json()
     }
     async postCreateStyle(e) {
@@ -8417,7 +8543,7 @@ function bc(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return t.json()
     }
     async getAdminCosmetics(e) {
@@ -8430,7 +8556,7 @@ function bc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return n.json()
     }
     async putAdminCosmetic(e, t) {
@@ -8439,7 +8565,7 @@ function bc(e) {
         credentials: `include`,
         body: JSON.stringify(t)
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return n.json()
     }
     async deleteAdminCosmetic(e) {
@@ -8447,7 +8573,7 @@ function bc(e) {
         method: `DELETE`,
         credentials: `include`
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status)
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status)
     }
     async getAdminBadges(e) {
       let t = new URLSearchParams;
@@ -8457,7 +8583,7 @@ function bc(e) {
           method: `GET`,
           credentials: `include`
         });
-      if (r.status !== I.OK) throw new R(f.unexpected_server_error(), r.status);
+      if (r.status !== L.OK) throw new R(f.unexpected_server_error(), r.status);
       return r.json()
     }
     async postAdminBadge(e) {
@@ -8466,7 +8592,7 @@ function bc(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return t.json()
     }
     async putAdminBadge(e, t) {
@@ -8475,7 +8601,7 @@ function bc(e) {
         credentials: `include`,
         body: JSON.stringify(t)
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return n.json()
     }
     async deleteAdminBadge(e) {
@@ -8483,7 +8609,7 @@ function bc(e) {
         method: `DELETE`,
         credentials: `include`
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status)
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status)
     }
     async getR2Images(e) {
       let t = new URLSearchParams({
@@ -8494,7 +8620,7 @@ function bc(e) {
           method: `GET`,
           credentials: `include`
         });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return n.json()
     }
     async postUploadR2Image(e) {
@@ -8505,7 +8631,7 @@ function bc(e) {
         credentials: `include`,
         body: t
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return n.json()
     }
     async deleteR2Image(e) {
@@ -8513,7 +8639,7 @@ function bc(e) {
         method: `DELETE`,
         credentials: `include`
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status)
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status)
     }
   }
 }
@@ -8525,7 +8651,7 @@ var V = {
   millisecond: 1
 };
 
-function xc(e) {
+function Pc(e) {
   let t = Math.floor(e / V.hour);
   e -= t * V.hour;
   let n = Math.floor(e / V.minute);
@@ -8534,50 +8660,50 @@ function xc(e) {
   return t > 0 ? `${t}:${n.toString().padStart(2,`0`)}:${r}` : `${n}:${r}`
 }
 
-function Sc(e) {
+function Fc(e) {
   return `${e.getFullYear()}-${String(e.getMonth()+1).padStart(2,`0`)}-${String(e.getDate()).padStart(2,`0`)} ${String(e.getHours()).padStart(2,`0`)}:${String(e.getMinutes()).padStart(2,`0`)}:${String(e.getSeconds()).padStart(2,`0`)}`
 }
-var Cc = 30 * V.minute;
+var Ic = 30 * V.minute;
 
-function wc(e) {
+function Lc(e) {
   return class extends e {
     constructor(...e) {
       super(...e), c(this, `lastHotspotRequestAt`, 0)
     }
     async leaderboardPlayers(e) {
       let t = await this.request(`/leaderboard/player/${e}`);
-      if (t.status !== I.OK) throw Error(f.leaderboard_disabled_temporarily());
+      if (t.status !== L.OK) throw Error(f.leaderboard_disabled_temporarily());
       return t.json()
     }
     async leaderboardAlliances(e) {
       let t = await this.request(`/leaderboard/alliance/${e}`);
-      if (t.status !== I.OK) throw Error(f.leaderboard_disabled_temporarily());
+      if (t.status !== L.OK) throw Error(f.leaderboard_disabled_temporarily());
       return t.json()
     }
     async leaderboardRegions(e, t = 0) {
       let n = await this.request(`/leaderboard/region/${e}/${t}`);
-      if (n.status === I.OK) return n.json();
+      if (n.status === L.OK) return n.json();
       throw Error(f.leaderboard_disabled_temporarily())
     }
     async leaderboardRegionPlayers(e, t) {
       let n = await this.request(`/leaderboard/region/players/${e}/${t}`);
-      if (n.status === I.OK) return n.json();
+      if (n.status === L.OK) return n.json();
       throw Error(f.leaderboard_disabled_temporarily())
     }
     async leaderboardRegionAlliances(e, t) {
       let n = await this.request(`/leaderboard/region/alliances/${e}/${t}`);
-      if (n.status === I.OK) return n.json();
+      if (n.status === L.OK) return n.json();
       throw Error(f.leaderboard_disabled_temporarily())
     }
     async leaderboardCountries(e) {
       let t = await this.request(`/leaderboard/country/${e}`, {
         credentials: `include`
       });
-      if (t.status === I.OK) return t.json();
+      if (t.status === L.OK) return t.json();
       throw Error(f.leaderboard_disabled_temporarily())
     }
     refreshHotspotsIfStale() {
-      Date.now() - this.lastHotspotRequestAt < Cc || (this.lastHotspotRequestAt = Date.now(), this.request(`/map/hotspots`, {
+      Date.now() - this.lastHotspotRequestAt < Ic || (this.lastHotspotRequestAt = Date.now(), this.request(`/map/hotspots`, {
         credentials: `include`,
         keepalive: !0,
         throwOnStatus: !1
@@ -8593,13 +8719,13 @@ function wc(e) {
     }
     async getRandomTile(e) {
       let t = await this.request(`/s${e}/tile/random`);
-      if (t.status !== I.OK) throw Error(f.unexpected_server_error());
+      if (t.status !== L.OK) throw Error(f.unexpected_server_error());
       return t.json()
     }
   }
 }
 
-function Tc(e) {
+function Rc(e) {
   return class extends e {
     async postCaptchaSession(e, t = `include`) {
       let n = await this.request(`/anticheat/captcha/session`, {
@@ -8607,7 +8733,7 @@ function Tc(e) {
         credentials: t,
         body: JSON.stringify(e),
         headers: {
-          "x-fp": await jo()
+          "x-fp": await Bo()
         }
       });
       if (!n.ok) throw n.status === 500 ? new R(f.unexpected_server_error(), n.status) : new R(f.invalid_captcha(), n.status);
@@ -8621,11 +8747,11 @@ function Tc(e) {
           event: e,
           data: t
         })
-      })).status === I.OK
+      })).status === L.OK
     }
   }
 }
-var Ec = {
+var zc = {
     griefing: f.griefing(),
     "multi-accounting": f.multi_accounting(),
     "hate-speech": f.hate_speech(),
@@ -8634,7 +8760,7 @@ var Ec = {
     "inappropriate-content": f.inappropriate_content(),
     other: f.breaking_the_rules()
   },
-  Dc = {
+  Bc = {
     doxxing: f.doxxing_description(),
     "hate-speech": f.hate_speech_description(),
     griefing: f.griefing_description(),
@@ -8643,7 +8769,7 @@ var Ec = {
     "inappropriate-content": f.inappropriate_content_description(),
     other: f.breaking_the_rules_description()
   },
-  Oc = {
+  Vc = {
     doxxing: `text-red-600`,
     "hate-speech": `text-red-400`,
     "inappropriate-content": `text-amber-500`,
@@ -8652,7 +8778,7 @@ var Ec = {
     griefing: `text-amber-200`,
     other: `text-cyan-600`
   },
-  kc = {
+  Hc = {
     doxxing: 0,
     "hate-speech": 1,
     "inappropriate-content": 2,
@@ -8661,7 +8787,7 @@ var Ec = {
     other: 5,
     griefing: 6
   },
-  Ac = {
+  Uc = {
     griefing: `topic-2`,
     "inappropriate-content": `topic-1`,
     bot: `topic-3`,
@@ -8670,21 +8796,21 @@ var Ec = {
     doxxing: `topic-1`,
     other: ``
   },
-  jc = 365 * V.day;
+  Wc = 365 * V.day;
 
-function Mc(e) {
+function Gc(e) {
   if (!e) return null;
   let t = (e instanceof Date ? e : new Date(e)).getTime();
   return Number.isFinite(t) ? t : null
 }
 
-function Nc(e, t = Date.now()) {
-  let n = Mc(e);
-  return n !== null && n - t >= jc
+function Kc(e, t = Date.now()) {
+  let n = Gc(e);
+  return n !== null && n - t >= Wc
 }
 
-function Pc(e, t = Date.now()) {
-  let n = Mc(e);
+function qc(e, t = Date.now()) {
+  let n = Gc(e);
   if (n === null || n <= t) return {
     days: 0,
     hours: 0,
@@ -8698,16 +8824,16 @@ function Pc(e, t = Date.now()) {
   }
 }
 
-function Fc(e) {
+function Jc(e) {
   return class extends e {
     async getModeratorTickets() {
       let e = await this.request(`/staff/tickets/get`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       let t = await e.json();
-      for (let e of t.tickets) e.reports.sort((e, t) => kc[e.reason] - kc[t.reason]);
+      for (let e of t.tickets) e.reports.sort((e, t) => Hc[e.reason] - Hc[t.reason]);
       return t
     }
     async countMyTicketsClosedToday() {
@@ -8715,7 +8841,7 @@ function Fc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       return e.json()
     }
     async getOpenTicketsCount() {
@@ -8723,7 +8849,7 @@ function Fc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       let {
         tickets: t
       } = await e.json();
@@ -8734,7 +8860,7 @@ function Fc(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       return e.json()
     }
     async setTicketStatus(e, t, n, r, i) {
@@ -8749,14 +8875,14 @@ function Fc(e) {
           ignoreReason: i
         })
       });
-      if (a.status !== I.OK && a.status !== I.BAD_REQUEST) throw new R(f.unexpected_server_error(), a.status)
+      if (a.status !== L.OK && a.status !== L.BAD_REQUEST) throw new R(f.unexpected_server_error(), a.status)
     }
     async getLastResolvedTicket() {
       let e = await this.request(`/staff/tickets/reversals/last-resolved`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       return (await e.json()).ticket
     }
     async getTicketReversalTicketInfo(e) {
@@ -8764,7 +8890,7 @@ function Fc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return (await t.json()).ticket
     }
     async getReporterReportHistory(e, t) {
@@ -8772,7 +8898,7 @@ function Fc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return (await n.json()).reports
     }
     async createTicketReversal(e) {
@@ -8781,11 +8907,11 @@ function Fc(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status === I.CONFLICT) {
+      if (t.status === L.CONFLICT) {
         let e = await t.json().catch(() => ({}));
-        throw (e == null ? void 0 : e.error) === `reversal_already_pending` ? new R(f.ticket_reversal_already_pending(), I.CONFLICT) : new R(f.unexpected_server_error(), I.CONFLICT)
+        throw (e == null ? void 0 : e.error) === `reversal_already_pending` ? new R(f.ticket_reversal_already_pending(), L.CONFLICT) : new R(f.unexpected_server_error(), L.CONFLICT)
       }
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return t.json()
     }
     async reSolveTicket(e) {
@@ -8794,7 +8920,7 @@ function Fc(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return t.json()
     }
     async listTicketReversals(e = {}) {
@@ -8805,7 +8931,7 @@ function Fc(e) {
           method: `GET`,
           credentials: `include`
         });
-      if (r.status !== I.OK) throw new R(f.unexpected_server_error(), r.status);
+      if (r.status !== L.OK) throw new R(f.unexpected_server_error(), r.status);
       return (await r.json()).reversals ?? []
     }
     async getTicketReversal(e) {
@@ -8813,7 +8939,7 @@ function Fc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return (await t.json()).reversal
     }
     async reviewTicketReversal(e, t, n) {
@@ -8825,16 +8951,16 @@ function Fc(e) {
           notes: n
         })
       });
-      if (r.status === I.FORBIDDEN) throw new R(f.ticket_reversal_cannot_self_review(), I.FORBIDDEN);
-      if (r.status === I.CONFLICT) throw new R(f.ticket_reversal_already_reviewed(), I.CONFLICT);
-      if (r.status !== I.OK) throw new R(f.unexpected_server_error(), r.status)
+      if (r.status === L.FORBIDDEN) throw new R(f.ticket_reversal_cannot_self_review(), L.FORBIDDEN);
+      if (r.status === L.CONFLICT) throw new R(f.ticket_reversal_already_reviewed(), L.CONFLICT);
+      if (r.status !== L.OK) throw new R(f.unexpected_server_error(), r.status)
     }
     async getOpenTicketsSummary() {
       let e = await this.request(`/staff/dashboard/summary/counters/tickets`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       return e.json()
     }
     async getOpenReportsSummary() {
@@ -8842,7 +8968,7 @@ function Fc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+      if (e.status !== L.OK) throw new R(f.unexpected_server_error(), e.status);
       return e.json()
     }
     async getBanAppealStats(e, t) {
@@ -8850,7 +8976,7 @@ function Fc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       let r = await n.json();
       return {
         items: r.items ?? [],
@@ -8862,7 +8988,7 @@ function Fc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return (await n.json()).items.map(e => ({
         ...e,
         suspensionRate: (e.ban + e.timeout) / e.total
@@ -8873,7 +8999,7 @@ function Fc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return (await n.json()).items.map(e => ({
         ...e,
         suspensionRate: (e.ban + e.timeout) / e.total
@@ -8887,7 +9013,7 @@ function Fc(e) {
           userIds: e
         })
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return t.json()
     }
     async getUserInfoFull(e) {
@@ -8895,8 +9021,8 @@ function Fc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status !== I.NOT_FOUND) {
-        if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.NOT_FOUND) {
+        if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
         return t.json()
       }
     }
@@ -8907,7 +9033,7 @@ function Fc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return n.json()
     }
     async getUserInfoByEmail(e) {
@@ -8915,8 +9041,8 @@ function Fc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status !== I.NOT_FOUND) {
-        if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.NOT_FOUND) {
+        if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
         return t.json()
       }
     }
@@ -8925,7 +9051,7 @@ function Fc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return (await t.json()).punishments ?? []
     }
     async getPunishmentTicket(e) {
@@ -8933,7 +9059,7 @@ function Fc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return (await t.json()).ticket
     }
     async overturnPunishment(e) {
@@ -8944,7 +9070,7 @@ function Fc(e) {
           punishmentId: e
         })
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status)
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status)
     }
     async getUserNotes(e, t) {
       let n = t == `dashboard` ? `/staff/dashboard/users/notes?userId=${encodeURIComponent(e)}` : `/staff/appeals/notes?userId=${encodeURIComponent(e)}`,
@@ -8952,7 +9078,7 @@ function Fc(e) {
           method: `GET`,
           credentials: `include`
         });
-      if (r.status !== I.OK) throw new R(f.unexpected_server_error(), r.status);
+      if (r.status !== L.OK) throw new R(f.unexpected_server_error(), r.status);
       return r.json()
     }
     async addUserNote(e, t, n) {
@@ -8965,14 +9091,14 @@ function Fc(e) {
             note: t
           })
         });
-      if (i.status !== I.OK) throw new R(f.unexpected_server_error(), i.status)
+      if (i.status !== L.OK) throw new R(f.unexpected_server_error(), i.status)
     }
     async getUserPermissions(e) {
       let t = await this.request(`/staff/dashboard/permissions/get?userId=${encodeURIComponent(e)}`, {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return t.json()
     }
     async setUserPermissions(e, t) {
@@ -8984,7 +9110,7 @@ function Fc(e) {
           permissions: Array.from(t)
         })
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       let r = await n.json();
       return Array.isArray(r == null ? void 0 : r.permissions) ? r.permissions : []
     }
@@ -8993,7 +9119,7 @@ function Fc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       let n = await t.json();
       return (Array.isArray(n == null ? void 0 : n.purchases) ? n.purchases : []).map(e => {
         let t = e.is_dollar ?? e.isDollar ?? e.currency ?? e.Currency ?? 0,
@@ -9024,7 +9150,7 @@ function Fc(e) {
           method: `GET`,
           credentials: `include`
         });
-      if (i.status !== I.OK) throw new R(f.unexpected_server_error(), i.status);
+      if (i.status !== L.OK) throw new R(f.unexpected_server_error(), i.status);
       let a = await i.json(),
         o = Array.isArray(a == null ? void 0 : a.tickets) ? a.tickets : [];
       return {
@@ -9039,7 +9165,7 @@ function Fc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       let r = await n.json(),
         i = Array.isArray(r == null ? void 0 : r.tickets) ? r.tickets : [],
         a = typeof(r == null ? void 0 : r.total) == `number` ? r.total : i.length;
@@ -9056,7 +9182,7 @@ function Fc(e) {
         credentials: `include`,
         body: JSON.stringify(e)
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return t.json()
     }
     async getTicketOverturnInfo(e) {
@@ -9064,7 +9190,7 @@ function Fc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return t.json()
     }
     async getModerationTranslate(e, t) {
@@ -9076,7 +9202,7 @@ function Fc(e) {
             text: e
           })
         });
-      if (r.status !== I.OK) throw new R(f.unexpected_server_error(), r.status);
+      if (r.status !== L.OK) throw new R(f.unexpected_server_error(), r.status);
       let i = await r.json();
       return i == null ? void 0 : i.translation
     }
@@ -9142,7 +9268,7 @@ function Fc(e) {
           method: `GET`,
           credentials: `include`
         });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return n.json()
     }
     async getTicketsKpi(e) {
@@ -9152,69 +9278,187 @@ function Fc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return n.json()
     }
   }
 }
 
-function Ic(e) {
+function Yc(e) {
   return class extends e {
-    async getNotificationCount() {
-      let e = await this.request(`/notification/count`, {
-        credentials: `include`
-      });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
+    async notificationJSON(e, t = {}) {
+      var n, r;
+      let i = new AbortController,
+        a, o = new Promise((e, t) => {
+          a = t
+        }),
+        s = () => {
+          var e;
+          let n = ((e = t.signal) == null ? void 0 : e.reason) ?? new DOMException(`Aborted`, `AbortError`);
+          i.abort(n), a(n)
+        },
+        c = setTimeout(() => {
+          let e = Error(f.request_timeout());
+          i.abort(e), a(e)
+        }, 15e3);
+      (n = t.signal) == null || n.addEventListener(`abort`, s, {
+        once: !0
+      }), (r = t.signal) != null && r.aborted && s();
+      try {
+        return await Promise.race([(async () => {
+          let n = await this.request(e, {
+            ...t,
+            credentials: `include`,
+            cache: `no-store`,
+            signal: i.signal
+          });
+          if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
+          return await n.json()
+        })(), o])
+      } finally {
+        var l;
+        clearTimeout(c), (l = t.signal) == null || l.removeEventListener(`abort`, s)
+      }
+    }
+    getAllianceNotificationPreferences(e) {
+      return this.notificationJSON(`/alliance/notification-preferences`, {
+        signal: e
+      })
+    }
+    setAllianceNotificationPreference(e, t) {
+      return this.notificationJSON(`/alliance/notification-preferences`, {
+        method: `POST`,
+        body: JSON.stringify({
+          category: e,
+          enabled: t
+        })
+      })
+    }
+    getNotificationPreferences(e) {
+      return this.notificationJSON(`/notification/preferences`, {
+        signal: e
+      })
+    }
+    setNotificationPreference(e, t, n) {
+      return this.notificationJSON(`/notification/preferences`, {
+        method: `POST`,
+        body: JSON.stringify({
+          type: e,
+          enabled: t
+        }),
+        signal: n
+      })
+    }
+    updatePrivacy(e, t) {
+      return this.notificationJSON(`/me/privacy`, {
+        method: `POST`,
+        body: JSON.stringify(e),
+        signal: t
+      })
+    }
+    getNotificationPushConfig(e) {
+      return this.notificationJSON(`/notification/push/config`, {
+        signal: e
+      })
+    }
+    getNotificationPushStatus(e, t) {
+      return this.notificationJSON(`/notification/push/status`, {
+        method: `POST`,
+        body: JSON.stringify({
+          endpoint: e
+        }),
+        signal: t
+      })
+    }
+    subscribeNotificationPush(e, t, n, r, i) {
+      return this.notificationJSON(`/notification/push/subscribe`, {
+        method: `POST`,
+        body: JSON.stringify({
+          ...e,
+          body: t,
+          silent: n,
+          chargesFullBody: r
+        }),
+        signal: i
+      })
+    }
+    updateNotificationPushPreferences(e, t, n, r, i) {
+      return this.notificationJSON(`/notification/push/preferences`, {
+        method: `POST`,
+        body: JSON.stringify({
+          endpoint: e,
+          body: t,
+          silent: n,
+          chargesFullBody: r
+        }),
+        signal: i
+      })
+    }
+    unsubscribeNotificationPush(e, t) {
+      return this.notificationJSON(`/notification/push/unsubscribe`, {
+        method: `POST`,
+        body: JSON.stringify({
+          endpoint: e
+        }),
+        signal: t
+      })
+    }
+    async getNotificationCount(e) {
       let {
         count: t
-      } = await e.json();
+      } = await this.notificationJSON(`/notification/count`, {
+        signal: e
+      });
       return t
     }
-    async getNotificationPage(e) {
-      let t = `/notification/page${e===void 0?``:`?cursor=${encodeURIComponent(e)}`}`,
-        n = await this.request(t, {
-          credentials: `include`
-        });
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
-      return n.json()
+    getNotificationPage(e, t) {
+      let n = e === void 0 ? `` : `?cursor=${encodeURIComponent(e)}`;
+      return this.notificationJSON(`/notification/page${n}`, {
+        signal: t
+      })
     }
-    async postNotificationMarkRead(e) {
-      let t = await this.request(`/notification/mark-read`, {
+    getNotificationChanges(e, t) {
+      return this.notificationJSON(`/notification/changes`, {
         method: `POST`,
-        credentials: `include`,
+        signal: t,
         body: JSON.stringify({
           notificationIds: e
         })
-      });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
-      return t.json()
+      })
     }
-    async postNotificationMarkReadAll() {
-      let e = await this.request(`/notification/mark-read/all`, {
+    postNotificationMarkRead(e, t) {
+      return this.notificationJSON(`/notification/mark-read`, {
         method: `POST`,
-        credentials: `include`
-      });
-      if (e.status !== I.OK) throw new R(f.unexpected_server_error(), e.status);
-      return e.json()
+        signal: t,
+        body: JSON.stringify({
+          notificationIds: e
+        })
+      })
+    }
+    postNotificationMarkReadAll(e) {
+      return this.notificationJSON(`/notification/mark-read/all`, {
+        method: `POST`,
+        signal: e
+      })
     }
   }
 }
-var Lc = [`droplets`, `prism`];
+var Xc = [`droplets`, `prism`];
 
-function Rc(e) {
-  return Lc.map(t => ({
+function Zc(e) {
+  return Xc.map(t => ({
     currency: t,
     amount: e.reduce((e, n) => e + (n.currency === t ? n.amount : 0), 0)
   })).filter(e => e.amount > 0)
 }
 
-function zc(e) {
+function Qc(e) {
   return class extends e {
     async driveStatus() {
       let e = await this.request(`/drive/status`, {
         credentials: `include`
       });
-      return e.status === I.OK && !!(await e.json()).connected
+      return e.status === L.OK && !!(await e.json()).connected
     }
     async driveConnect(e) {
       let t = await this.request(`/drive/connect`, {
@@ -9224,7 +9468,7 @@ function zc(e) {
           code: e
         })
       });
-      if (t.status !== I.OK) throw Error(`drive connect failed: ${t.status}`);
+      if (t.status !== L.OK) throw Error(`drive connect failed: ${t.status}`);
       return t.json()
     }
     async driveToken() {
@@ -9232,8 +9476,8 @@ function zc(e) {
         credentials: `include`,
         throwOnStatus: !1
       });
-      if (e.status === I.CONFLICT) return null;
-      if (e.status !== I.OK) throw Error(`drive token failed: ${e.status}`);
+      if (e.status === L.CONFLICT) return null;
+      if (e.status !== L.OK) throw Error(`drive token failed: ${e.status}`);
       return e.json()
     }
     async driveDisconnect() {
@@ -9251,8 +9495,8 @@ function zc(e) {
           lookup_key: e
         })
       });
-      if (t.status === I.UNAVAILABLE_FOR_LEGAL_REASONS) throw Error(f.account_suspended_message());
-      if (t.status !== I.OK) throw Error(await t.text());
+      if (t.status === L.UNAVAILABLE_FOR_LEGAL_REASONS) throw Error(f.account_suspended_message());
+      if (t.status !== L.OK) throw Error(await t.text());
       return t.json()
     }
     async refreshStripeSession(e) {
@@ -9272,7 +9516,7 @@ function zc(e) {
           lookup_key: e
         })
       });
-      if (t.status !== I.OK) throw Error(`fastspring session failed: ${t.status}`);
+      if (t.status !== L.OK) throw Error(`fastspring session failed: ${t.status}`);
       return await t.json()
     }
     async refreshFastspringOrder(e) {
@@ -9287,7 +9531,7 @@ function zc(e) {
       let e = await this.request(`/payment/fastspring/orders/last`, {
         credentials: `include`
       });
-      if (e.status === I.NOT_FOUND) return null;
+      if (e.status === L.NOT_FOUND) return null;
       if (!e.ok) throw Error(`Failed to get last FastSpring order: ${e.status} ${e.statusText}`);
       return await e.json()
     }
@@ -9306,14 +9550,14 @@ function zc(e) {
           product: e
         })
       });
-      if (t.status !== I.OK) throw t.status === I.NOT_FOUND ? Error(f.couldnt_complete_the_purchase_this_item_doesnt_exist()) : t.status === I.FORBIDDEN ? Error(f.you_do_not_have_enough_droplets_to_buy_this_item()) : t.status === I.CONFLICT ? Error(f.you_already_have_this_item()) : Error(f.unexpected_server_error())
+      if (t.status !== L.OK) throw t.status === L.NOT_FOUND ? Error(f.couldnt_complete_the_purchase_this_item_doesnt_exist()) : t.status === L.FORBIDDEN ? Error(f.you_do_not_have_enough_droplets_to_buy_this_item()) : t.status === L.CONFLICT ? Error(f.you_already_have_this_item()) : Error(f.unexpected_server_error())
     }
     async getPlayAccountId() {
       let e = await this.request(`/payment/play/account-id`, {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw Error(f.unexpected_server_error());
+      if (e.status !== L.OK) throw Error(f.unexpected_server_error());
       return e.json()
     }
     async verifyPlayPurchase(e) {
@@ -9325,12 +9569,12 @@ function zc(e) {
         },
         body: JSON.stringify(e)
       });
-      if (t.status === I.BAD_REQUEST) {
+      if (t.status === L.BAD_REQUEST) {
         let e = await t.json().catch(() => ({}));
         throw Error((e == null ? void 0 : e.error) ?? `Invalid Play purchase`)
       }
-      if (t.status === I.UNAVAILABLE_FOR_LEGAL_REASONS) throw Error(f.account_suspended_message());
-      if (t.status !== I.OK) throw Error(f.unexpected_server_error());
+      if (t.status === L.UNAVAILABLE_FOR_LEGAL_REASONS) throw Error(f.account_suspended_message());
+      if (t.status !== L.OK) throw Error(f.unexpected_server_error());
       return t.json()
     }
     async verifyPendingPlayPurchases() {
@@ -9338,7 +9582,7 @@ function zc(e) {
         method: `POST`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw Error(f.unexpected_server_error());
+      if (e.status !== L.OK) throw Error(f.unexpected_server_error());
       return e.json()
     }
     async getPlayClaimStatus(e) {
@@ -9346,14 +9590,14 @@ function zc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (t.status === I.NOT_FOUND) return {
+      if (t.status === L.NOT_FOUND) return {
         status: `unknown`,
         grant: {
           currency: `droplets`,
           amount: 0
         }
       };
-      if (t.status !== I.OK) throw Error(f.unexpected_server_error());
+      if (t.status !== L.OK) throw Error(f.unexpected_server_error());
       return t.json()
     }
     async listPlayPurchaseHistory() {
@@ -9361,13 +9605,13 @@ function zc(e) {
         method: `GET`,
         credentials: `include`
       });
-      if (e.status !== I.OK) throw Error(f.unexpected_server_error());
+      if (e.status !== L.OK) throw Error(f.unexpected_server_error());
       return e.json()
     }
   }
 }
 
-function Bc(e, t) {
+function $c(e, t) {
   let n = {};
   for (let r of e) {
     let e = t(r),
@@ -9377,7 +9621,7 @@ function Bc(e, t) {
   return n
 }
 
-function Vc(e, t) {
+function el(e, t) {
   let n = {};
   for (let r of e) {
     let e = t(r);
@@ -9386,10 +9630,10 @@ function Vc(e, t) {
   return n
 }
 
-function Hc(e) {
+function tl(e) {
   return class extends e {
     async paint(e) {
-      let t = Bc(e, e => `t=(${e.tile[0]},${e.tile[1]}),s=${e.season}`),
+      let t = $c(e, e => `t=(${e.tile[0]},${e.tile[1]}),s=${e.season}`),
         n = {
           season: e[0].season,
           tiles: Object.values(t).map(e => ({
@@ -9410,9 +9654,9 @@ function Hc(e) {
           headers: i,
           credentials: `include`
         });
-      if (a.status !== I.OK) {
-        if (a.status === I.UNAUTHORIZED) throw Error(f.you_need_to_be_logged_in_to_paint());
-        if (a.status === I.FORBIDDEN) {
+      if (a.status !== L.OK) {
+        if (a.status === L.UNAUTHORIZED) throw Error(f.you_need_to_be_logged_in_to_paint());
+        if (a.status === L.FORBIDDEN) {
           if (a.headers.get(`cf-mitigated`) === `challenge`) throw Error(f.ddos_message());
           let t = await a.json().catch(() => ({}));
           switch (t == null ? void 0 : t.error) {
@@ -9432,17 +9676,17 @@ function Hc(e) {
               throw Error(f.cannot_paint_over_event_pixel());
             case `challenge-required`:
               if (t.tier) {
-                if (await is(t.tier)) return this.paint(e);
+                if (await ms(t.tier)) return this.paint(e);
                 throw Error(f.challenge_verification_not_completed())
               }
               throw console.error(`Challenge required but no tier provided`, t), Error(f.unexpected_server_error());
             case `verification-required`: {
-              let t = (await No().get()).sealed_result;
+              let t = (await Ho().get()).sealed_result;
               if (!t) throw Error(f.unexpected_server_error());
               return await this.verifyAnticheat(t), this.paint(e)
             }
           }
-          throw await W.refresh(), typeof(t == null ? void 0 : t.charges) == `number` ? Error(f.you_do_not_have_enough_charges_to_paint()) : Error(f.unexpected_server_error())
+          throw await q.refresh(), typeof(t == null ? void 0 : t.charges) == `number` ? Error(f.you_do_not_have_enough_charges_to_paint()) : Error(f.unexpected_server_error())
         }
         throw Error(f.unexpected_server_error())
       }
@@ -9459,7 +9703,7 @@ function Hc(e) {
         },
         credentials: `include`
       });
-      if (t.status !== I.OK) throw new R(f.unexpected_server_error(), t.status);
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return t.json()
     }
     async getReverseTimestamps(e, t = {}) {
@@ -9480,7 +9724,7 @@ function Hc(e) {
         },
         credentials: `include`
       });
-      if (a.status !== I.OK) throw new R(f.unexpected_server_error(), a.status);
+      if (a.status !== L.OK) throw new R(f.unexpected_server_error(), a.status);
       return a.json()
     }
     async getReversePreview(e, t) {
@@ -9501,7 +9745,7 @@ function Hc(e) {
         },
         credentials: `include`
       });
-      if (a.status !== I.OK) throw new R(f.unexpected_server_error(), a.status);
+      if (a.status !== L.OK) throw new R(f.unexpected_server_error(), a.status);
       return a.json()
     }
     async getReverseTimelapse(e, t) {
@@ -9520,12 +9764,12 @@ function Hc(e) {
         },
         credentials: `include`
       });
-      if (n.status === I.BAD_REQUEST) {
+      if (n.status === L.BAD_REQUEST) {
         let e = await n.json(),
           t = (e == null ? void 0 : e.error) ?? ``;
-        throw t === `timelapse_too_many_events` ? new R(f.select_area_timelapse_history_too_large(), I.BAD_REQUEST) : new R(typeof t == `string` && t ? t : f.unexpected_server_error(), I.BAD_REQUEST)
+        throw t === `timelapse_too_many_events` ? new R(f.select_area_timelapse_history_too_large(), L.BAD_REQUEST) : new R(typeof t == `string` && t ? t : f.unexpected_server_error(), L.BAD_REQUEST)
       }
-      if (n.status !== I.OK) throw new R(f.unexpected_server_error(), n.status);
+      if (n.status !== L.OK) throw new R(f.unexpected_server_error(), n.status);
       return n.arrayBuffer()
     }
     async applyReverse(e, t) {
@@ -9546,11 +9790,11 @@ function Hc(e) {
         },
         credentials: `include`
       });
-      if (a.status !== I.OK) throw new R(f.unexpected_server_error(), a.status);
+      if (a.status !== L.OK) throw new R(f.unexpected_server_error(), a.status);
       return a.json()
     }
     async sendPaintRequests(e, t, n, r) {
-      let i = Bc(e, e => `t=(${e.tile[0]},${e.tile[1]}),s=${e.season}`),
+      let i = $c(e, e => `t=(${e.tile[0]},${e.tile[1]}),s=${e.season}`),
         a = (await Promise.all(Object.values(i).map(async e => {
           let [r, i] = e[0].tile, a = e[0].season, o = {
             colors: e.map(e => e.colorIdx),
@@ -9563,11 +9807,11 @@ function Hc(e) {
             headers: l,
             credentials: `include`
           })
-        }))).filter(e => e.status !== I.OK);
+        }))).filter(e => e.status !== L.OK);
       if (a.length) {
         let e = a[0];
-        if (e.status === I.UNAUTHORIZED) throw Error(f.you_need_to_be_logged_in_to_paint());
-        if (e.status === I.FORBIDDEN) {
+        if (e.status === L.UNAUTHORIZED) throw Error(f.you_need_to_be_logged_in_to_paint());
+        if (e.status === L.FORBIDDEN) {
           if (e.headers.get(`cf-mitigated`) === `challenge`) throw Error(f.ddos_message());
           let t = await e.json().catch(() => ({}));
           switch (t == null ? void 0 : t.error) {
@@ -9584,14 +9828,14 @@ function Hc(e) {
             case `event-pixel-present`:
               throw Error(f.cannot_paint_over_event_pixel())
           }
-          throw await W.refresh(), typeof(t == null ? void 0 : t.charges) == `number` ? Error(f.you_do_not_have_enough_charges_to_paint()) : Error(f.unexpected_server_error())
+          throw await q.refresh(), typeof(t == null ? void 0 : t.charges) == `number` ? Error(f.you_do_not_have_enough_charges_to_paint()) : Error(f.unexpected_server_error())
         }
         throw Error(f.unexpected_server_error())
       }
     }
     async adminAutoPainterPaint(e, t, n) {
-      let r = Uc(e),
-        i = await Wc(r),
+      let r = nl(e),
+        i = await rl(r),
         a = new FormData;
       a.append(`fingerprint`, t), a.append(`season`, r.season.toString()), a.append(`px0`, r.offsetX.toString()), a.append(`py0`, r.offsetY.toString()), a.append(`width`, r.width.toString()), a.append(`height`, r.height.toString()), a.append(`pixels`, e.length.toString()), a.append(`bitmap`, i, `auto-painter.png`), a.append(`userId`, n.toString());
       let o = await this.request(`/staff/tools/auto-painter/paint`, {
@@ -9599,7 +9843,7 @@ function Hc(e) {
         body: a,
         credentials: `include`
       });
-      if (o.status === I.FORBIDDEN) {
+      if (o.status === L.FORBIDDEN) {
         let t = await o.json().catch(() => null);
         if (typeof(t == null ? void 0 : t.charges) == `number`) throw Error(f.overlay_auto_paint_not_enough_charges({
           charges: Math.floor(t.charges),
@@ -9608,7 +9852,7 @@ function Hc(e) {
         let n = typeof(t == null ? void 0 : t.error) == `string` ? t.error.trim() : ``;
         throw Error(n && n !== `Forbidden` ? n : `Auto painter is restricted to administrators.`)
       }
-      if (o.status !== I.OK) throw Error(f.unexpected_server_error());
+      if (o.status !== L.OK) throw Error(f.unexpected_server_error());
       return o.json()
     }
     async getPixelInfo({
@@ -9621,7 +9865,7 @@ function Hc(e) {
       let o = await this.request(`/s${e}/pixel/${t}/${n}?${a.toString()}`, {
         credentials: `include`
       });
-      if (o.status !== I.OK) {
+      if (o.status !== L.OK) {
         let e = await o.text();
         throw Error(f.error_while_painting({
           err: e
@@ -9638,7 +9882,7 @@ function Hc(e) {
       let s = await this.request(`/staff/tools/select-area/s${e}/${t}/${n}?x0=${r}&y0=${i}&x1=${a}&y1=${o}`, {
         credentials: `include`
       });
-      if (s.status !== I.OK) {
+      if (s.status !== L.OK) {
         let e = await s.text();
         throw console.error(`Error while fetching pixel area info`, e), Error(f.unexpected_server_error())
       }
@@ -9659,13 +9903,13 @@ function Hc(e) {
   }
 }
 
-function Uc(e) {
+function nl(e) {
   var t;
   if (!e.length) throw Error(`Auto painter request does not contain any pixels.`);
   let n = e[0].season;
   for (let t of e)
     if (t.season !== n) throw Error(`Auto painter requests cannot mix seasons.`);
-  let r = (t = Zs.seasons) == null ? void 0 : t[n];
+  let r = (t = uc.seasons) == null ? void 0 : t[n];
   if (!r) throw Error(`Invalid season selected for auto painter request.`);
   let i = r.tileSize,
     a = 1 / 0,
@@ -9692,7 +9936,7 @@ function Uc(e) {
     }
     of l) {
     var p;
-    let r = (p = Zs.colors) == null ? void 0 : p[n];
+    let r = (p = uc.colors) == null ? void 0 : p[n];
     if (!r) throw Error(`Unknown palette color index: ${n}`);
     let i = e - a,
       s = ((t - o) * u + i) * 4,
@@ -9708,8 +9952,8 @@ function Uc(e) {
     season: n
   }
 }
-async function Wc(e) {
-  let t = Gc(e.width, e.height),
+async function rl(e) {
+  let t = il(e.width, e.height),
     n = t.getContext(`2d`);
   if (!n) throw Error(`Canvas API is not available to encode auto painter bitmap.`);
   let r = n.createImageData(e.width, e.height);
@@ -9726,7 +9970,7 @@ async function Wc(e) {
   })
 }
 
-function Gc(e, t) {
+function il(e, t) {
   if (typeof OffscreenCanvas < `u`) return new OffscreenCanvas(e, t);
   if (typeof document < `u`) {
     let n = document.createElement(`canvas`);
@@ -9735,12 +9979,12 @@ function Gc(e, t) {
   throw Error(`Canvas API is not available in the current environment.`)
 }
 
-function Kc(e) {
+function al(e) {
   return class extends e {
     validWaybackInput(e) {
       let t = Number.isFinite(e.timestamp) && Number.isInteger(e.timestamp) && e.timestamp >= 0 && e.timestamp <= this.getEstimatedServerNowMs(),
-        n = Number.isFinite(e.season) && Number.isInteger(e.season) && e.season >= 0 && e.season < Qs.length,
-        r = Number.isFinite(e.limit) && Number.isInteger(e.limit) && e.limit > 0 && e.limit <= rc.tools.wayback.limit,
+        n = Number.isFinite(e.season) && Number.isInteger(e.season) && e.season >= 0 && e.season < dc.length,
+        r = Number.isFinite(e.limit) && Number.isInteger(e.limit) && e.limit > 0 && e.limit <= gc.tools.wayback.limit,
         i = Number.isFinite(e.tileX) && Number.isFinite(e.tileY) && Number.isInteger(e.tileX) && Number.isInteger(e.tileY) && e.tileX >= 0 && e.tileY >= 0,
         a = e.cursorTs !== void 0,
         o = e.cursorUserId !== void 0,
@@ -9765,13 +10009,13 @@ function Kc(e) {
           method: `GET`,
           credentials: `include`
         });
-      if (i.status === I.FORBIDDEN) throw Error(`Access denied`);
-      if (i.status !== I.OK) throw Error(`Failed to fetch wayback events`);
+      if (i.status === L.FORBIDDEN) throw Error(`Access denied`);
+      if (i.status !== L.OK) throw Error(`Failed to fetch wayback events`);
       return i.json()
     }
   }
 }
-var H = new class extends Ys(Xs(gc(_c(vc(yc(bc(wc(Tc(Fc(Ic(zc(Hc(Kc(qs)))))))))))))) {}(oe);
+var H = new class extends cc(lc(kc(Ac(jc(Mc(Nc(Lc(Rc(Jc(Yc(Qc(tl(al(oc)))))))))))))) {}(me);
 typeof window < `u` && s(() => {
   let e = H.online;
   u(() => {
@@ -9779,34 +10023,401 @@ typeof window < `u` && s(() => {
     t && !e && window.dispatchEvent(new CustomEvent(`wplace:online`)), e = t
   })
 });
+var ol = `data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAAEAAAHPAB+fn5+fn5+fn5+fn5+fn5+fn5+fn5+fn6pqampqampqampqampqampqampqampqamp29vb29vb29vb29vb29vb29vb29vb29vb2/////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJANgAAAAAAAABzxmm4psAAAAAAD/+8DEAAAF7A1FtDAAIzil6D87kgAAAktuqNu7gOcCAAgEATB8HzcHwfB8+DgIROD4ABAEAQOeCH/iAMXLB9//BB3Lg+AAIgJwBCSoyQ0QES1dNwAYhicYDAiarL8aXE4ZXwYe9BkCgLS/Dg4MKQDMkgCjAiAxujyCQPmFYGBApKtkawq2qi9GqTYgLTpFiGdI9O1D5NmvVykb4Q0iC3QOU5rUBLCQ9IoJWFutwdm2v5UmUWmoy2K9QxuXw5RxuOwA2j2ytp2dZrWp2A2/kMupbmC5HKc2et0mbjSyeld35/luxXs97SW4/JJiln38v54TdWITN+nq3a1Pq93WW/3/vNLLf/////K6sDGP////6PvWxQBFoFJABHMZRCBoQGHo/GW6NG17vGW1Zm25xgoZkkHEXiCgHb9v4bi8evlnFw5BStnezI76WTtDaVvOnLL8s9+1t95y7trVqdf0zfXXtpb2dzNrj94XquvZ0M/NLX6l+vktgwC4jICYwfNAuho0IiQuj////9r102AEMKOmGkMYagJIsBaYDIChgOgJiENow+wojIdUMMSQEYSBUTMZQb0o8Sk0SAjR1t5HOrfQNex7cq0ENSD4pyGX7X0xZTZxIYcKtF3mZptVyMvMJudNbJV6UKXY/pfr32nNn0c5rcEZq6nJYnCORDbENctTk5KWZdS63RUTWFzZVbMV3mt6vHJyziusGx5zczaCWWIN////qcOYSSNcFwyUIAAjtY6tsg5hoaQgzCTEAExUCDBozfYO8qSY3T3MLBgMXFAyoIjSiUtF/0DIhCIBgG52VxKVSh3n1s08dh16HvYXJ8JdlBMxTY839i3jR8vtSlsKfeK0NnC/nM0tLW7FK8/Tyq3KYLswxTDQEYZQZBHdQsioRGajdWcNkfpNOahWTpUJEDyc9LCQ0gcfR2T8/////////2zGWVnTPOpjElOJxIKDcdxGcttHMdDk5//7cMTkAA8Uz0Nd1gAigaJm6eyxPIZMDGR0PEgIGrR49MVAZAmYoKJjqJJImBhKP02+o9Jznif5eVT2eHC0ysbdDWHcRBDdQtNsGHz5fw8l282p0U6XSlewoyfTz751qsNZZnm32XJ+unFUNjmoX7ZOpHcZdMd7QbwNu3WpMQZplTGVCmaoMR34247bm1mKtcK2aK+iQ4ivzjUezP///5geOSUMiJ4hUgCgC0K1WiCQN8vbLG0AQADBIlTNsRCYEzAEsjEodxELxqxP5Q/JrC1wBDIwZKExnLAxQW8x7DEIOswwBYw/DkUH4DcJwDDAHaJgbsOBr7QGlBha6NwBiCDcgQQAxYAIUQGBKBYuBJEAcWJEnQDE4pIly4MoYoqAEDCUAPQRAxqkAJ5GoBgyB4RikbLIcbhtIX7/+4DE6YAUZaM7rZheonoiZ3a28ASIsGAgt7D+AWIjkDSGWD0hfqSddyAgLAQ5QaQn8QDHWOoB4AMjh6g6BZYagtVSTqMjpBSeF6RccsrkVJwiZEC0VjA1cjv+xgbI/0TEwQN0GdBn///9q1N/9v//0/VsitLemubODxzX2KfBVKuK49NlTEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqv/7YMT0gCAhwyP52gAIAAA/w4AABKqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqg==`,
+  sl = `data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAAGAAAMOQBTU1NTU1NTU1NTU1NTU1NTj4+Pj4+Pj4+Pj4+Pj4+Pj4+xsbGxsbGxsbGxsbGxsbGx09PT09PT09PT09PT09PT09Px8fHx8fHx8fHx8fHx8fHx8f////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJAUCAAAAAAAADDmA9uH8AAAAAAD/+9DEAAAGFANhtBAAJCSzLP89oJggAALb/tFAHjUCAYWGC58oo4CEuCAIOg4GP5fRBB15d/B8//BD/8oc4P+IDnJ//+D6gBACgHGGMmGGAYEAiEB0ibwcAGYcgfRhlAyGKWf0bXgNSIiUpgJg3mBeAkYsQk5hPADlmkJZgCgFBwUTEzBIAxEJQCATNDF2H2BixBVlEwlzUKFrGHDQ4nWyRnNV/JBAF1sDEsMohzGgb1m1JVzYdFHSaE+z0sgpe0s1EHDlczHIpHJOmtL6zKoYHgNBIYtd3lSww5V7OX45QY8sij7/LrY1GYxP03P1apXhgahit65dpdyplb2v7z7ucliN6mqU12tNv5LZV38sssdxGi1lXqZdmKamks5j8TpqXDHX63h3LH/h2U1L9zvftRHeOH/Py6bpM6lW/25d3y5z//7sqvZz3YGGIslXoQAHIFYzMVUYY9rMbh+/5sjC/CwNSMXUxAQnzJeWbMYkawxUCtzUoDaMEwMM0fxPzAdAuPZcmMwegmDAmBMMA8BgSBpMFkFQwXwCzAzABCQh40ymzMFK6DaBdtCcQIjSzGERXtMBEDDDSpcseAQEhixEHPYg6NDZwXRTdTCUwLOBYhlLW4WFgkbE7CgteafKb7vQa6DYlbENXIfIFCvkjkWkdR7769xUFK9KZHhoFVuiCNprTXJRpaoyJRYiET9UWY8+NuRNZLuP4x5KyHs4xBTdFlhhEcaW2q9IuwaTPsXudBEZLpy1XvE+qaqyIJa61KPTcDJaNWd5uzE24qnctYsd0no78+X/bZMhpjju4rljKjzGl415+7TzVy7T1ZXLu1r16IXZBQ41qe5Yq1p61S7q3pZR1LEssXJ/H696Uf//////z////////////////////9/+////v//1LFjuNy5nnnL7/K9/Dus7VzocWTAKABqutOI9GcW+3l4CgFOmDMDYYN4p4OCIBgV4YBiYAwFpq3hZDALhgJheGG2D6YKoYZg5gwGEgBkYNYFphwg6mA+AMYlIK4CFoVGGIjshzRKgYzTWXYlEJDkBhliAGCiAMloYkENCHeTEfJPsMAiEWY0DBKVRQGMQrCBiAdCsOAiMKbZE//vAxPoALdY1PfnsgE4Yxut/PaRBBkBQHBwyEGzhMscp7WbLObyLCAEzgto46sDc0rgggEBIxDipkdkxXZrtwett4ObmoG7jE2pw9G3QXC9jsuymLPw8+Dp08zJVtJWLBQJG3nrSxgCARXBfwsgoJJakNPUmFAz6ymVOgwSNwc6ag6cDI37WpSsgXpTpiTbQy8CvHbLKIKUt7T7MqL/QzSvVejWbO3fp6S7ZsVZRKOxuxRqQUoWJXZJJY21x/IELxq7kdLLy/1DNU1VlTQoJb1RVFZiXHpf6rq7239u7fuX62GX9y/8uf////2gdh+JHSWIYfycuSiWW99lD+SyX9+URic7/5XMu5frePP1lvGtj/PytbBWbABr+NiRItGCIZg4OGBEwWGCIWpNDACG7UImORRmNIaDwrs7AwMkQArQS6k8HiYGkkirYXFQmGxR5kKSL1vXKtUyFx4T5jhQmF+whaQHE6XGvt7M9GafHhRoOvuW1IDkdKMUZ5eBrb7dJoN6amnbmZvm+3j6HmLq2q4hRrPoisU5yqSPBmgtVsTXziNa2d7hPoVaZjRoi6ngsbErm9SqVxgVVm4VXr2C2q3dv/r/61mta1rW1vujknTRQ19msXVc7hV1Xdc11aLCBo2Cp271Uf/UywAnCzbS32pPGamAsBpzmFioQBhg2Kjh0LkBkdooCME6gqEIgGAhqxojES6MTe1pYSgiSBzhgqHpfxOpePB/UvWXorrSCCQqGUqVy0uO846vZssTbWJ/YawtY0CQrcgrcQnVkStzrDmSplOcGO38lU/mpJn4sku6RNJMm2k1Yqwa8rusvFCZaRw0KBUhgtU8YCxh95G8mz///6377jVbFW1Y56omg1G6bnd/2Vr59WaV2YBZ5qm2v+m3BwJkYsxMtgywTOKITz+fIw9AMyzAYcvSgJRZWuTBZq4azK6gjFhyJxe0dgFKx8IRmfJPW6u08V2P/+5DE4oAaRaNFvdeAAsG0ab22JiTl7NF5XJKE5dsm4vPXm6Vp3rDpGjOBKkSFe3tNFtG6rZ1o6etaX9rzx9mPbrMUFLulWK9+1DLhBufN1vOx3rNmWqypHsrBeU3SiTDox81vMIlVgiXRUa9Dgpk2nfyuz9XPvl6u1c3cpk/A/gWXVdXsKZXBVmZidJ7U7lfGRISlEwhspJOroN5MDRCFozSo4PRp7DISWzyrHd1z3RgefpIcgdcsShprMD4hP+0MVsLDjcJXKys6Ga7Vdl7WiCjaHxrG/heggmYMOVOzOrqmMWnJZWBYrE0hI1GiJhaLOom6fm+kSVXFl6GtlQOAiiaue/E3/uv7FWa7Ti8ANAywuHoKNr8jKF2IrBWEc850vaXja818T1SdxbQ5WtPQYaQOvHXB2UzZMnh3YGV4h11mtblaifpokQYKBhDoBSUA2QTWiIrygwiGBx7J7jE1bVtsyV4wd1WRHHsgERdqbejj9ZEPb1I1syno5xVYyItSRXNgmUjk6XaXP9RFIvQduMPeLKNpCYqKmTSaO1xS2vX/+5DE5wAWWYdL7OGHKtS0aD2WJpwoC6Vo3TPtsVJqLczSJW6nLWe+RU8BTMSrJkUQEdHH9dqd1O0OpFJOKgqiZTKguYTbSEZ99rpKJJtnm3TjjbEvBH4psoYppbHqapsFc3ZS/hfzUowoBRmADiGVLXY2VAdYfAY/sMWgT8XeFZEk1KwhLVgEpQ9PRt0vWswHOP82Jw7zyycVBYBRrQFUJoI5rUTRhNc4RDYMNCsEDQypQrQMKn0GqqG0mR4lFJMphLFERHUXhkUMcg955lJulY9lCeExa4xrbRdNmgCwQrKGs07zWarceJ+Go4kpwak1mqmoCi1NiZk92yHqaq4LpwY8gfZBMxcgV2VVI7klXnve3r7CxdUjIhOIY0jCclaBBxgQeIwRQgNrirEfKZTIFFHkKTagty/jclnF1Wc0TpHMznSpnMAvJECHAqiV61TJyRqvMEjVErnTUTkjVVVXlGwkbGV5bTcrDkiKgZMiVlPh1osSFHo1//+2yyRsV/VkTlkYROLMTROeJZIFMDhIMB3LbLbjSdaNDwEROyQUeLD/+4DE+QAXeZc97L0xaq2z5v2Emn0yAiJIKjB3X////9aSZKVLFkxBTUUzLjEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/7QMTxA9NhPR3sPM5AAAA0gAAABFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV`,
+  cl = `` + new URL(`../assets/notification.CPyrWqU1.mp3`, import.meta.url).href,
+  ll = `data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAAHAAAPwAA8PDw8PDw8PDw8PDw8PGFhYWFhYWFhYWFhYWFhgICAgICAgICAgICAgICwsLCwsLCwsLCwsLCwsLDJycnJycnJycnJycnJyfn5+fn5+fn5+fn5+fn5//////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJAVzAAAAAAAAD8D/1/k8//vUZAAAAiEJ3O0MQAgjgAm9oAABHXFJY/nchID1Dij/MNAArYAAA5FSnt6JERN3AAAAAABK7iAQDE5OYOBj4IHPg+H/qBAHwfB8/wQdh//ygIAgCAIA+D4Pg+DgIAgCH8oCAYB8Hw+0iACZbN8AAAQBAMLBwEAQDEEABKAmD4Py4Y5cP/UGCjuCAIYaAAAAIT0jmCa+4aT6+ToGA4MGKwDmAwJGKpEF1TBMHhQATAEVguChhJnwGAEw71gDGSNACdyFqYBAUaRC+lEBCwcaZpwkaD2T1IMgEoOMqEOCCyI0IdY5dEwg0wSI2Uhc4JVe4Gyk1pQMoCqs37GWBKWkpxEkiUMCNIUIGoxCMp92gxd6n6p/Eikq0BKdTS17TBEZHb3/Lqa7TNamaWgaz7k/QzsA0U1R15DlDuFaVVaCxdZFZydqYEIC2HDrawzjDoOdD0ZhmtTd/mW6Wd1zW6uNW1v9/+Gf7x+U6rSrm6WtLoapaWU1alMPAWAAAAApKbgAWRgWwAAAAfupeEim9ONNabpwYVM5zG36lhpFYjl+7KemmXSu19Tu6u6btpT7A9u219uPXQr6gABukNJycAYKtBQmqAwUgGQeQlJxgkDGFRkZhixw1LgYOuEpczqLMqdfPp5YTxXQYtIOpVawkxE+xC9N5rditCa581g4+Lbsih1lbm0mN43/h47xjf/+cWxD7C2xvTf+auf+f/6brAYY1Xr3EGbV8w2auN////W9f/PxnUGrD0eedxK06pAAyqAQbfgbxKqSfA3YzdbEYsr19rbAfGA4liuR/d6qV54NL6nO6nfLKpqY+QIXtqwATK9Wd+4BoeXROYgEkmWcGAki008yIaeBgMXHNSsJBt7HbZJK5ltspVSVZbzd+xLq+VqD3LXuonjl+X/tg5GjCB5usxCtIwORVYKFn4mmDB3+3s+PKsOQLOLVlgYQI93PE3ayVQuasrQmeRoKRcw4O1KWkurABIi+27zAa1D9mOQdfiMFOXKR2xRCN6Md47P5IquF//u0ZKWABCFI029x4AgwQVqv55wBDrD5TexxCeGFnaj9h6G9jVN+BeP0PQwnjWBkCQb+9fEv066lziNrdvfeLHao1ZYJRCbSOqP5uK++CaQoVJOfutR3/99POi9+dCJxTnPc6iqbV5ACNEBk/vALXqzsMMMaFiIEihHgxokAEF3iq+YtBEDke6FIQe0R7BUMWPXdZrf70u3iFNP+LfwdQdKqDhzpCb9+9WkO50uagqAw8uzmSPi221CHz4uh8CUpFDDepqSKObOoxdkcSuK//e/iFA9A7/93T76t0MAETYpr6sAzhVnLwGFUZBESsCcSoBQafwrZNbARpgdDBGNg3iKEEb5hYpu36btnI6gcVT+12cm+LmO5rJp9d4qr2PHg6jdW7yVUz9LR7X5utqzBVc3tMt9UJVf/6cy7OkI5lvuJiHcwAEIwEfEAAkph7AwsG4IVFChKaylAKEZoAiBSkVFbO6sjcBSOYvtCJZbLcsxNduWoLhEetM7k9dIyjzeXfa8ztUEMl2Hw9AdZmN9kRpXOj7P9T5fn5sjWRdBJ8eUW5IFNwI2ZMKAKhtFX9eACySFagYoAbgSCTCA1Km4oswYOISjakxGmFSpppwEQd5msbk8+dTVmlk0SQJRJTnOutyBoo5U9DO7i8oVLyTaqpq2mIHidH1HW58K1oG18xHWf6d1fxHbN13m2t/+st/6lV4VCIAAAT0cILQdDgGFi8wIlMdDBAWgwNFRowcDMr7lSGHOhkxAauJmRghgBKa+e//ukRO2AA6ZC0PsvS3hnRsofY0xDTJy3OfWWACmnIWh+tLAEhhEYaUG1IgUBmwgAkabEGA6RvAphjRlDQKUHsUFQHB5k5Y/oNuvccWKRceCKkkR4UJN4NK1Wwo2udxBUELBFD3ejruGrFg4KZEW0KSJ2mKLMgVIpaHBHbjLB2toryxciKCNawighu0tFGIPof+ihl+5hsm37umlDsnaY/k07D8f//8Zjf3P+9fvUlLOJ9u/HGbuW1MwwqMUVD/0P/RfJ/k1PfvXopFKUBDJty5PZeeG37aQ5H0f///////23nn/M+Z9pOeigpNFOLq4cBWlyW7L9X6JOC0BmAAAEBFXVkEAAAABA6MtO4nKhgYQGG20YCHBhJbKPGDxIfZExaU1uLlTO5ThieGJqmGUEfDpnTtCFqxJyiFiYqRmzxP4RQCmATguFcdpGl5G7Vh/QTwi8hpcDcjTGaIiX61/LJYLctfzv////+WdnMRSAAAAFAANvK53KFDzOsBp6ZMEMGDLCjTnBhGOBitUHCgNBUpM/SGm5lCBh0IVJGBcBqYXQoY4AUYCwaBgBAEGIkhYZpwZgXACMDEBozUBJTBeBtGgCjYjM7MTAHIwkwGgMAOJAClsVyKhZWDAVzAcAXMAw//vUZPYACBtd0e5vSIByZ6qfzkWgJsFbR7mvAElDEqo/NtBAAQwCgAVlKxNDVKAQB08bzDlzCwDz/NIUyhl1VtrwYMDQQDAkAQzbCnzIC5QUAPddW0IA9ecwFgFTAVA0MDMDAwCQClkhQAUwAADVlFUAQAAFCEAKaj8EOpNGAQAwRAhq0NlRQEgDV3T0qjSwz6vK0djUfk9nDC06JIABJqCHOfQNOEAAUbcV0mHMShlrL85Q6yi5SxCluRaIRW8VgBXvvxa79ym92YKjThdoXJmGvNeov+/9+JXb3012m/sugknyBl6S3kAAAAQLSoOigAAACgt4WpTEG6DoMYKCBiVdaIDwRpJmgCCBZdAOB52CdnRYsjCdiMFgXAxZXZBTXU6nTL5gkimlZdWt6n0VM8zD/Oa17oqYhQAAagIuCNQpUUAAaESxEIRQ4RhkTC6rEhAFR6Z+51qB1ymQ5wfsFzwj4BoLgctKQGLxYBhkKA2SIKjwM4QrsXVj6HOJ42IeWiZseNS6XXNVJKRUkglnReFRFkTF3SPgPBJFTx50kv//Wigt9Jbf5w3dakyHEeWn//6jlN1GJqo77ZFckzZGbZbZjEACzH4A7nVvb/ulFnOd5KYHHq47xxqeG0D5YdDpJ03xKEBX57zAoeuzP9/03c1LsggAmY8fAjFQqJhBC0YwoDfx9QqEGFBN9HthjfMqbPFomktTT7L2YpbCjmfgMBgO+sBPm10SE2yaRk6JyJeKhohGRCoadWwl/9xWpIkPTWoxJYEFjRc1eVSaUZrdWkbHiwZlA2SWYqUip62/zIxMUDU6fFImhj/2/2tMjYOyXS24eZlZMA0kHyAq5a/fJqrcl72AJw2LL2p2br97LI+RAtip1An6nVDT3sgz2ys9rpb+rKM388QWhUNUxA2l9n3dKsrM5XUQAzxf0BC4RDbwhEHKSARSR0yQ4NsxlDKVNKuTbRETQZIwJMCQ0DAORRxBxDyyRIvnmZGVjW6RiyJizFNBJZoltuhQMzZmc6ik//uUZOWABE5J1P9qoAowYaqv7CwBEF0nTe2mVOEBkqo9h4mkUyKiMSJGCCM0c4VUn87dna5mpFJaktq93qSQI4tOTZqbjet1HTVWrmAAJovoANlGBOp4hEQOXIXqgxdqga5kJzCYopdp/ngsP6/0OO8HSnp2l8s597L/T/O4buzVn+XMcu4541dZ1r/87/dZfjT4W8cO51eymcR1eLK134pPzk7Td1rHu+dsfvvauuZa7rm/3/7/+aywgql5T0tvbPRvINJBQBRrO/EoqFAYABlIcTGxkouYCEGURJ30uBhIwYPM0HDGxYgZDIj8rAleGVASgINfDy+wLAQZGjCgwFglM1WeNUwfOsSuKoPRkKhMq9XhtBLJjMZpkQHhgMBCv6ZpIGABkJkiWRgWHxiyIBWAbFExWzRIHB2BABBwFt0CADIQRQyKgCmCQLiABaaDL1xRImAyClyRJ1JIkigqjtKV9AUAEJ1P//d/1j23LjT8RZ/JG1mrGcKuH///9BQz//vURNSAA4s9Uv1igAh4B7o/rOQBIIVpOfm+kEMbnia/N8AIr+TMbjMbjTh02Vret0tX//////5ReuWe3rt+b+zW/LLLtXeP////////4d1+H5/3+65zf1hE0Skj3//kENa7/8OkQmEsh3Z2SACQCGR/MnNQmAAADjUY2NAMiMgQJgEmM9KjEwoEGBjo2BAsGHpgIMRDxhQgYGCoyGLM5yE60YCmxOsClw2lRTEUSBz3UgxcFLZsbNjSZLAgvM0H9BuIp2gYEI1I8GOAGYADYYHBoBMygbrqNmU0ZCtduJhUTCEDGDwEMAmNZyX6VuBbx/3dedqgwAjBAFZCmKqqqEAhBAUy371+lv36Wmu0+EvpKOz+8d83//jq5VvXLPb1Pal+X5ZZdq4nvd4C1//9VUxBTUUzLjEwMFVVVVVMQU1FMy4xMDBVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//sUZOGP8AAAf4cAAAgAAA/w4AABAAABpAAAACAAADSAAAAEVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV`,
+  ul = `data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAADAAAHVgCKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioru7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7u7///////////////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJAUQAAAAAAAAB1ZvGw9zAAAAAAD/+9DEAAAGgANNtBAAJL5DKPc9kEkIAKVy6ZvTvjNiAEAQA4fwcOKBAED85LicHw/BAEHfg+D4f/B8Hwf/Ococ/lz//4P//lwfAAAQCzgEApUAchBICAMDwGwwpg3jDHA2MWkaAxCQqDAjBQMMoFYwVgLDCrX1NfwPQxajfTO/VkEYD4sAuYOwYBgPgBGmQOAYIgDoKER8AN4KNYgISnpehHt0X2WsksoO27zM1duB3IgimTpnXNwTefFr9ly4HYK1lgtE8a3uVY23SCpDEpz4xL3DZVTV8ZygdeB4X+GuX6sTh9sVNAzuwVTIUztBdnLL60VnPsrt8f+fw/LCUy2caLDNmzuzGatmcu97UsVIYilyxqUcpaSPSW63KzZucjnakuzw+zlc5nD7yfL5zPv59z7/dQ9EolEu9pf5V1Y1+7Eayl1qkt8rXLGdi5nz//////////////////9/r9dw1l39/+P73/7////rWr1PdwxvJCIEbNPJ1QmAABaCxKJEmLpurTGDFSAYMB0FQxfggyqAeYtYSphnAwmFmBIYTATyaZhFiAGFIEqY0hJ5wAIxmFKCgaFaihh9A1GSlMSJYunOGWWB6pdsMvN5kqIig49MYApkLhJxyjmgkA1gIGDp1/CEIOLNkht0Ag8+NWKWQOW+aivhGVsj00TCW4CiJWJKkYRECshrDX0vHCHosi1cqERxakomvtDHA2TIAyjt52yUsMz8EMpZDLYdbq3V0XSRtfmhWkyaFM+YpBSrxQBAx03pQHPND6exc0OKEQq3lvKqM9hSCVHlv0yVdJhNZf+1Nx2GYZbqxt2qLJ9GC00ETr2vY+tmMTrOqWWTEkkUeh27PYQFIWX0rcGmtAswPXlLzWp6IVZe/ssk8FZ02r16Xdz3hTwPHJu3DEos63dr2927GPfz3+sM+93/63n3u//D///3nv9/rX71v97/PHuGWv7z/1Uo+X7tNTZ91XyoaWnob1bs9Yp86oQUCZIAAwEB7VQIuyrSQANCQ2GhZMQQ4MOCHMFxAMRwkMAxlMHzDM9QQMAxabsYLC+aWdScYCCZCoabxBOZSGWZcE2FB0xAuPp4zhWswUOJAsxAQMFDR4qN//vAxOUALmI5MbnsgE1xwGT3O7ABhADArk1MFMSD0qUALTCIVTNZ6aumhCoZWXmZixYEi2Kiy35BH02oFLPGCg7rCgQDQYw4ZYE5yE1rTPX1YekYKAYsD1hgHKA0ZBWZkQVFFhX2gNE3fFvt411kDPlAE5BAAMrWnKUzkdUQ4GcKFNJrQ1beZZDA2TyBhzsLNlCcxIeBUAMBCRkBamhsy15MFpJFZV1ovs/V/u78Uh+bo5dMT3L0lpqC3Wi9mVXpPlvn5TNa1Vyq409e/b1XvY/9bHmF3O1dwt2u5ZY444Y8q2a2Ou5Zd/GzvHV7tu/cx5fzv587Xua5ewz1n3+91X/LPesO2M9Zb7c5n3eOHcb+5KDXnf0F87HySsMMMAEIAAAwaBkBfgCqAAS3goeAwxXwM3QBieI+IEf/E3Ckh6ID/mLENJk99YSErPrb/4uVDX/7Vo/+KKI1///VTEFNRTMuMTAwVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVX/+yDE4AAIHGcJGUmAAAAANIOAAARVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV`,
+  dl = `data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAAEAAAI3QBycnJycnJycnJycnJycnJycnJycnJycnK5ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubm59PT09PT09PT09PT09PT09PT09PT09PT09P////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJAXYAAAAAAAACN2ptdwzAAAAAAD/+9DEAAAJjBddVDAAJStFZ/c3oAHsAAAv9gAXd3P0QDAw+CAIAmHxACAYiAEAxBAEAQ4gBAEz+kEInB/+CBz/xOD7ygPh/Lg++oHz+CYPwQcCAIAhEgIAhLggc/6jmUBBwYDgAAgBIGrmoUBoJAAQCBUMBBWGDoGBmKGKhhhpMhMQGoBioGGvvxvwgy04N6IQUmdDBQDvnjHlG+JAoUAmwMmCTHbmuEKgBQW7jclMhQWZAcv9dIGSmGMsSgRd0VUBU1RmMOAWHeKMtGa4y94rTlMBmpHGIAbuji3JwZDMx2lj0pqs4YY9lA/kh/uUft5ZY5W6WbltFbn8bcH2pjLr1JUodk1lbljO9+ssorGatFjfrSqo50VlkalfGlLqgJhzXoIMCCEJEtEijzLX4YVJetWGbmGNzC7fkcE42LSWqwyGKoXZay/sdorjcmJLBqBM6m7tfP+zNNKrdNKZbEYzhqnv38ufv8M9z9xNtIp31baCO0VLjciMtkjAWSsiUxfJlTcXtmoBfnW/+dpcJVjz///3rX4awyx/W////eWeX7+X3L16V28+W8iO0CqjViUAAANAi1nT82Ac3hwMDCwHAwZAaUAJAVGkwYXCoXBBgIMkAEDh+BQuYhBJgypmiLAYQc4R9TGAEfDUSzPBzAJ2YhBAMBr3BQnSpR4wYAIPAlpAoGYMC66Gj4sFlpd+Lw03N/5+rH33lUXYDLo/l2ETkCO23jd4fL4QTGbmVagdqkz7P3aapEHYdxU6K7J3K7g0oYAhwCXa5vCbd2kQogO07kOWH7wscpolKal/LszZr2aaez336enl7uV4Mh6VzW9dq0uVZ9pTLZTWl3/vfLmFFR43/qWKSXxu3LPzzr2n0pO/zGrLaufc61Ncq7qcztX8KXVX6meWW+fhzuGFPT53uflhhbz/eee6/f/8f+mmZSwFpT/Qa0pYyXzou7LH1cl3cdy3GVWv/+f+/+pyzHdSP1qiUiHMAAUekYSBMSDYxOMEjjCoBMRgUVAJhkIKblA/AIFT3AAPMCBExIJTP0XNQDEyENQEBQMcAtCC54ZQrCeRmRwkVGOTJkmBRidHNLhIDMiukUTNSMNCRKypesdImZGp//uwxMsAJrobW/nNAkvDvKe/uTAEbTSIwhySikgs6zkyaLPF4jRmS4RxeNzhkSSklqMj58wMi6RUujKkFOPPlw2IuQ0mzUiZiXDUulA2L6JgXbGqBus8tFBNF1LNjqzV0kjqJdNi8RY1POTRkTxsaIoWU6F0XdI2aia1qROosjSuamSSWa1OpKgZmqR0wfdaS29G3oo0aqkmajXpVG0MCU6jVv1cleeYfgQkb/+N60xMwRCUEZowyxDJigoNEAgZCI+NxMYB9nQJGDIZYqxxJAaQyyCxdGJxQ+XEqMMlJ28V0pgPCgvpUmro0i1ovnb0Y/uxLUqpctk8XMK2u29vW0W1vXkfbS02mNmtWHUq3+iswmo0kf2C3Qw58N7rLzC/zlkvWXOz9bM86er1sEK5i5T6zrdXVPwR13mbd1qd0E1ZrHWk0tfa3il6ftfna9lJnkJllh4OErkLOEADkKoRmSkSwEhAAAAGmU2ZtKoICpiIN00MmJD2ZfIg4EjBw/EYCRuApBOmSAy8WQwiM2aScPORlMJDAFEgq+s4ZkDoMBhhEMgEFN2Lld/ygAlULhcBDwCZumkj8MAOrjqqUBMSAbgCQQLxsCYlFmBNOx5v/BAMBgIRjDAUPARAND0yuVmr60X///6n4/aUCSBDg+xCAnZkzStVXq////8wYAEdygAlxlFE7WyS1uUSkUA0190X2i0R//////lNeNtBcCtJcnGrRWmzvVaWpKZbAUMzv///////JfjVeXRqHI088fxjl1ntWVVddmoah6al13K7DNbv/////////8vwl1uble3za5edmHotWgqKW2z0dLMy+Jb/+6DE5gAWNZNF9aYALOJBI385wADsSvlLqrZuVeSqI0j/Vo1amo1biU9EZValP48qy24qTEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqTEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqr/+xDE1gPAAAGkHAAAIAAANIAAAASqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqg==`,
+  fl = `data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjYwLjE2LjEwMAAAAAAAAAAAAAAA//tAwAAAAAAAAAAAAAAAAAAAAAAAWGluZwAAAA8AAAACAAAE/gDLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vLy8vL//////////////////////////////////////////////////////////////////8AAAAATGF2YzYwLjMxAAAAAAAAAAAAAAAAJAOoAAAAAAAABP6u4u+sAAAAAAD/+9DEAAAGhC1UdGMAJM1C6nc34FFSaWP+7vYBAAEOAAiHPJp6YAwtNgQl3qDHKBgo4Th/wf/Lh/8H35R3/4IAg7//gh/+UOcPgABgAAAB0YnM2TIZDUkAGYOFBdqBQkadAmEAgiDTKD1BYUFTGA4LixoJUcUsGkDJrfwYKEmBDRg+gZmBSBeYUQyJj2B9mAOAkYXINwOA3cdvzIrBtMDwFYOAEMZhFcyRwWTDiAGWo/LzSFp7vtDTSQ3bHKocXbPR6kg2U07Vs4KcJaDIIGTHZxDsSjEMyhPing6w8PSYAlwHfdtbFq3lAc1qmqzPxFFV1cbUkrP9GG/cbKIyivlRWq1mzvHDWNad73eE7q3JYPnIerXqKJTtzV3DmUzLZZFM7sv1z9U8czh5wVG4G3nru8cfyy+rhT5TtHTb7jzd3eWO6Wmy3R3e6/DW9b5l/b9e5///87///eY////9///////Df7/8vx/Xf///9f///52O6s3rZINILq82aqo6x1TAYDoYGInIIhASA++E8wYSIkIBd0NdJXDHQL2vFAR4YOsgwGFK6QQiPQDhcITBl4MWgDBEAosgZUgoDGkAwGFAMCCEDEQVAwaOgMChwEQXAwUBg5MTgJcAwARZxBj4Ng0LAigBGYdKKwKBIeIQDHCyhWxMlUmTx0xUCgJFBjnkGFkpk0ZF4gSLLRZJKGARbBQAsZDCCFAhxianDEuspVXRkOUWCGGCYsxZiXa0Ukl/8XOS4vxxjrDJR7RLyeiisxJn//y+11pJqNycOJkgiapIoo0UdS0dL//sUjzHxMgBgMUtVdLRYGrKTEFNRTMuMTAwqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq//tgxOMAHVGjN7magIAAADSDgAAEqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq`,
+  pl = Ol(),
+  U, ml, W, hl = !1,
+  gl, _l;
 
-function qc(e, t) {
+function vl() {
+  if (typeof AudioContext > `u`) return () => {};
+  let e = () => {
+      try {
+        U ?? (U = new AudioContext);
+        let e = U;
+        if (e.state !== `running` && e.resume().catch(() => {}), !ml) {
+          let t = new AbortController;
+          _l = t;
+          let n = setTimeout(() => t.abort(), 1e4);
+          ml = fetch(ll, {
+            signal: t.signal
+          }).then(async t => {
+            if (!t.ok) throw Error(`Notification audio unavailable`);
+            return e.decodeAudioData(await t.arrayBuffer())
+          }).catch(() => {
+            U === e && (ml = void 0)
+          }).finally(() => clearTimeout(n))
+        }
+      } catch {}
+    },
+    t = [`pointerdown`, `pointerup`, `touchend`, `keydown`];
+  for (let n of t) document.addEventListener(n, e, {
+    capture: !0,
+    passive: !0
+  });
+  return () => {
+    for (let n of t) document.removeEventListener(n, e, !0);
+    _l == null || _l.abort(), W == null || W.stop(), W = void 0, gl = void 0, U == null || U.close().catch(() => {}), U = void 0, ml = void 0
+  }
+}
+
+function yl() {
+  (F.muted || v.sounds.playerNotification === 0) && (W == null || W.stop())
+}
+async function bl() {
+  if (F.muted || v.sounds.playerNotification === 0) return;
+  let e = U;
+  if ((e == null ? void 0 : e.state) === `running` && ml) {
+    if (W || hl) return;
+    hl = !0;
+    let t;
+    try {
+      let n = await Promise.race([ml, new Promise(e => {
+        t = setTimeout(() => e(void 0), 1e3)
+      })]);
+      if (!n || F.muted || v.sounds.playerNotification === 0 || U !== e || e.state !== `running`) return;
+      let r = e.createBufferSource(),
+        i = e.createGain();
+      i.gain.value = pl.playerNotification.volume, r.buffer = n, r.connect(i).connect(e.destination), r.onended = () => {
+        r.disconnect(), i.disconnect(), W === r && (W = void 0, gl = void 0)
+      }, r.start(), W = r, gl = i
+    } catch {} finally {
+      clearTimeout(t), hl = !1
+    }
+    return
+  }
+  let t = pl.playerNotification;
+  if (t.paused) try {
+    t.currentTime = 0, await t.play()
+  } catch {}
+}
+var xl, Sl = new m;
+async function Cl() {
+  xl ?? (xl = new AudioContext);
+  let e = xl;
+  return e.state !== `running` && await Promise.race([e.resume().catch(() => {}), new Promise(e => setTimeout(e, 150))]), e.state === `running` ? e : void 0
+}
+
+function wl() {
+  Cl()
+}
+
+function Tl(e, t, n, r = !1) {
+  let i = new GainNode(e, {
+    gain: t * v.sounds[n] / 50
+  });
+  Sl.set(i, {
+    id: n,
+    base: t
+  }), r && Ml.add(i);
+  let a = new BiquadFilterNode(e, {
+    type: `lowpass`,
+    frequency: 5e3
+  });
+  return i.connect(a).connect(e.destination), setTimeout(() => {
+    Sl.delete(i), Ml.delete(i), i.disconnect(), a.disconnect()
+  }, 1500), i
+}
+
+function G(e, t, n, r, i, a, o) {
+  let s = new OscillatorNode(e, {
+    type: `triangle`,
+    frequency: n
+  });
+  o && (s.frequency.setValueAtTime(n, r), s.frequency.exponentialRampToValueAtTime(o, r + i));
+  let c = new GainNode(e);
+  c.gain.setValueAtTime(0, r), c.gain.linearRampToValueAtTime(a, r + .008), c.gain.exponentialRampToValueAtTime(.001, r + i), s.connect(c).connect(t), s.start(r), s.stop(r + i + .05)
+}
+async function El(e) {
+  if (F.muted) return !0;
+  let t = await Cl();
+  if (!t || e !== void 0 && e !== Nl) return !1;
+  if (F.muted || v.sounds.purchaseSuccess === 0) return !0;
+  let n = Tl(t, .25, `purchaseSuccess`, e !== void 0),
+    r = t.currentTime + .03;
+  return G(t, n, 523.25, r, .12, .5), G(t, n, 659.25, r + .085, .12, .55), G(t, n, 783.99, r + .17, .12, .6), G(t, n, 1046.5, r + .255, .55, .7), G(t, n, 1318.51, r + .255, .55, .25), G(t, n, 2093, r + .33, .4, .1), !0
+}
+async function Dl(e) {
+  if (F.muted) return !0;
+  let t = await Cl();
+  if (!t || e !== void 0 && e !== Nl) return !1;
+  if (F.muted || v.sounds.purchaseFail === 0) return !0;
+  let n = Tl(t, .22, `purchaseFail`, e !== void 0),
+    r = t.currentTime + .03;
+  return G(t, n, 329.63, r, .16, .55), G(t, n, 261.63, r + .15, .5, .6, 233.08), !0
+}
+
+function Ol() {
+  let e = {
+    plop: new Audio(ul),
+    smallPlop: new Audio(fl),
+    bigPlop: new Audio(ol),
+    smallDropplet: new Audio(dl),
+    droppletAndPlop: new Audio(sl),
+    notification1: new Audio(cl),
+    playerNotification: new Audio(ll)
+  };
+  for (let [t, n] of Object.entries(e)) n.preload = `auto`, n.volume = .3 * v.sounds[t] / 50;
+  return e
+}
+
+function kl() {
+  F.muted && Pl(), Al && jl && (Al.volume = .3 * v.sounds[jl] / 50);
+  for (let [e, t] of Object.entries(pl)) t.volume = .3 * v.sounds[e] / 50;
+  gl && (gl.gain.value = pl.playerNotification.volume);
+  for (let [e, {
+      id: t,
+      base: n
+    }] of Sl) e.gain.value = F.muted ? 0 : n * v.sounds[t] / 50;
+  yl()
+}
+var Al, jl, Ml = new p,
+  Nl = 0;
+
+function Pl() {
+  Nl++, Al == null || Al.pause(), Al = void 0, jl = void 0;
+  for (let e of Ml) e.disconnect(), Sl.delete(e);
+  Ml.clear()
+}
+async function Fl(e) {
+  Pl();
+  let t = Nl;
+  if (F.muted || v.sounds[e] === 0) return !1;
+  try {
+    if (e === `purchaseSuccess` || e === `purchaseFail`) {
+      let n = await (e === `purchaseSuccess` ? El(t) : Dl(t));
+      return t === Nl && n
+    }
+    let n = new Audio(pl[e].src);
+    n.volume = .3 * v.sounds[e] / 50, Al = n, jl = e;
+    let r;
+    try {
+      return await Promise.race([n.play(), new Promise((e, t) => {
+        r = setTimeout(() => t(Error(`Sound preview timed out`)), 5e3)
+      })]), t === Nl
+    } finally {
+      clearTimeout(r)
+    }
+  } catch {
+    return t === Nl && Pl(), !1
+  }
+}
+var Il = new WeakMap,
+  Ll = new WeakMap,
+  Rl = new WeakMap,
+  zl = new WeakMap,
+  Bl = new WeakMap,
+  Vl = new class {
+    get count() {
+      return l(a(Il, this))
+    }
+    set count(e) {
+      i(a(Il, this), e, !0)
+    }
+    get items() {
+      return l(a(Ll, this))
+    }
+    set items(e) {
+      i(a(Ll, this), e, !0)
+    }
+    get nextCursor() {
+      return l(a(Rl, this))
+    }
+    set nextCursor(e) {
+      i(a(Rl, this), e, !0)
+    }
+    get loading() {
+      return l(a(zl, this))
+    }
+    set loading(e) {
+      i(a(zl, this), e, !0)
+    }
+    get markingAll() {
+      return l(a(Bl, this))
+    }
+    set markingAll(e) {
+      i(a(Bl, this), e, !0)
+    }
+    constructor(t) {
+      c(this, `apiClient`, void 0), n(this, Il, e()), n(this, Ll, e()), n(this, Rl, e()), n(this, zl, e(!1)), n(this, Bl, e(!1)), c(this, `open`, !1), c(this, `controller`, void 0), c(this, `running`, !1), c(this, `pending`, !1), c(this, `append`, !1), c(this, `markAll`, !1), c(this, `retry`, void 0), c(this, `onError`, void 0), c(this, `errorReported`, !1), c(this, `fullRefresh`, !0), c(this, `changedIDs`, new p), c(this, `failures`, 0), this.apiClient = t
+    }
+    get client() {
+      return this.apiClient ?? H
+    }
+    start(e) {
+      if (this.count = void 0, this.items = void 0, this.nextCursor = void 0, this.loading = !1, this.markingAll = !1, this.running = !1, this.pending = !1, this.append = !1, this.markAll = !1, this.errorReported = !1, this.fullRefresh = !0, this.changedIDs.clear(), this.failures = 0, e === void 0) return;
+      let t = new AbortController;
+      this.controller = t;
+      let n, r = !1,
+        i = 0,
+        a, o, s, c = () => document.visibilityState !== `hidden` && navigator.onLine,
+        l = () => {
+          n == null || n.close(), n = void 0, r = !1, clearTimeout(o)
+        },
+        u = () => {
+          if (l(), t.signal.aborted || !navigator.onLine || a !== void 0) return;
+          let e = Math.min(6e4, 2e3 * 2 ** Math.min(i++, 5));
+          a = setTimeout(() => {
+            a = void 0, f()
+          }, e * (.5 + Math.random() / 2))
+        },
+        d = () => {
+          r = !0, clearTimeout(o), o = setTimeout(u, 55e3)
+        },
+        f = () => {
+          if (t.signal.aborted || !navigator.onLine || n || a !== void 0 || typeof EventSource > `u`) return;
+          let e = new EventSource(`${this.client.url}/notification/stream`, {
+            withCredentials: !0
+          });
+          n = e, o = setTimeout(u, 55e3), e.addEventListener(`heartbeat`, () => {
+            n === e && (i = 0, d())
+          }), e.addEventListener(`notifications`, t => {
+            if (n !== e) return;
+            d();
+            let r = !0,
+              i = !1;
+            try {
+              let e = JSON.parse(t.data);
+              if (i = e.created === !0, e.reset !== !0 && Array.isArray(e.ids) && e.ids.length > 0 && e.ids.length <= 100 && e.ids.every(e => typeof e == `number` && Number.isSafeInteger(e) && e > 0)) {
+                for (let t of e.ids) this.changedIDs.add(t);
+                r = this.changedIDs.size > 100
+              }
+            } catch {}
+            this.refresh(r), i && navigator.onLine && bl()
+          }), e.onerror = () => {
+            n === e && u()
+          }
+        },
+        p = () => {
+          c() && !r && this.refresh(), s = setTimeout(p, 25e3 + Math.random() * 1e4)
+        },
+        m = () => {
+          if (!navigator.onLine) {
+            clearTimeout(a), a = void 0, l();
+            return
+          }
+          f(), this.refresh()
+        };
+      return document.addEventListener(`visibilitychange`, m), window.addEventListener(`online`, m), window.addEventListener(`offline`, m), s = setTimeout(p, 25e3 + Math.random() * 1e4), m(), () => {
+        t.abort(), this.controller = void 0, clearTimeout(this.retry), clearTimeout(s), clearTimeout(a), l(), document.removeEventListener(`visibilitychange`, m), window.removeEventListener(`online`, m), window.removeEventListener(`offline`, m)
+      }
+    }
+    setOpen(e, t) {
+      this.open = e, this.onError = t, e && this.refresh()
+    }
+    refresh(e = !0) {
+      e && (this.fullRefresh = !0, this.changedIDs.clear()), this.pending = !0, !(document.visibilityState === `hidden` || !navigator.onLine) && this.flush()
+    }
+    loadMore() {
+      this.loading || this.nextCursor === void 0 || (this.append = !0, this.refresh(!1))
+    }
+    markAllRead() {
+      this.markingAll || (this.markingAll = !0, this.markAll = !0, this.refresh(!1))
+    }
+    async flush() {
+      let e = this.controller;
+      if (!e || this.running) return;
+      let {
+        signal: t
+      } = e;
+      this.running = !0, clearTimeout(this.retry);
+      try {
+        for (; this.pending && !t.aborted && document.visibilityState !== `hidden` && navigator.onLine;) {
+          this.pending = !1, this.loading = this.open;
+          let e = this.fullRefresh || this.items === void 0,
+            i = [...this.changedIDs];
+          this.fullRefresh = !1, this.changedIDs.clear();
+          let a = this.append,
+            o = this.markAll;
+          if (this.append = !1, this.markAll = !1, o) {
+            var n;
+            if (await this.client.postNotificationMarkReadAll(t), t.aborted) return;
+            this.items = (n = this.items) == null ? void 0 : n.map(e => ({
+              ...e,
+              read: !0
+            })), this.markingAll = !1
+          }
+          let s = await this.client.getNotificationCount(t);
+          if (t.aborted) return;
+          if (this.count = s, this.open) {
+            var r;
+            this.loading = !0;
+            let n = (r = this.items) == null || (r = r.at(-1)) == null ? void 0 : r.id,
+              o = this.items ?? [],
+              c = this.nextCursor;
+            if (e) {
+              o = [], c = void 0;
+              do {
+                let e = await this.client.getNotificationPage(c, t);
+                if (t.aborted) return;
+                o.push(...e.notifications), c = e.nextCursor
+              } while (c !== void 0 && n !== void 0 && c > n)
+            } else if (i.length > 0) {
+              let e = await this.client.getNotificationChanges(i, t);
+              if (t.aborted) return;
+              let r = new m(o.map(e => [e.id, e]));
+              for (let e of i) r.delete(e);
+              for (let t of e.notifications)(c === void 0 || n === void 0 || t.id >= n) && r.set(t.id, t);
+              o = [...r.values()].sort((e, t) => t.id - e.id)
+            }
+            if (a && c !== void 0) {
+              let e = await this.client.getNotificationPage(c, t);
+              if (t.aborted) return;
+              let n = new m(o.map(e => [e.id, e]));
+              for (let t of e.notifications) n.set(t.id, t);
+              o = [...n.values()].sort((e, t) => t.id - e.id), c = e.nextCursor
+            }
+            this.items = o, this.nextCursor = c;
+            let l = o.filter(e => !e.read).map(e => e.id);
+            if (this.open && document.visibilityState === `visible` && l.length > 0 && (await this.client.postNotificationMarkRead(l, t), t.aborted || (s = await this.client.getNotificationCount(t), t.aborted))) return
+          }
+          this.count = s, this.loading = !1, this.errorReported = !1, this.failures = 0
+        }
+      } catch (e) {
+        if (!t.aborted) {
+          var i;
+          this.open && !this.errorReported && ((i = this.onError) == null || i.call(this, e)), this.errorReported = !0;
+          let t = Math.min(3e4, 5e3 * 2 ** Math.min(this.failures++, 3));
+          this.retry = setTimeout(() => this.refresh(), t * (1 + Math.random()))
+        }
+      } finally {
+        t.aborted || (this.running = !1, this.loading = !1, this.markingAll = !1)
+      }
+    }
+  };
+
+function Hl(e, t) {
   if (!(e != null && e.length)) return !1;
   for (let n of e)
     if (n === t) return !0;
   return !1
 }
 
-function Jc(e, t) {
+function Ul(e, t) {
   for (let n of t)
-    if (qc(e, n)) return !0;
+    if (Hl(e, n)) return !0;
   return !1
 }
 
-function Yc(e) {
+function Wl(e) {
   let t = atob(e),
     n = new Uint8Array(t.length);
   for (let e = 0; e < t.length; e++) n[e] = t.charCodeAt(e);
   return n
 }
 
-function Xc(e) {
+function Gl(e) {
   if (typeof Buffer < `u`) return Buffer.from(e).toString(`base64`);
   let t = ``;
   for (let n = 0; n < e.length; n++) t += String.fromCharCode(e[n]);
   return btoa(t)
 }
-var Zc = class {
+var Kl = class {
   constructor(e) {
     c(this, `bytes`, void 0), this.bytes = e ?? new Uint8Array
   }
@@ -9830,7 +10441,7 @@ var Zc = class {
   }
 };
 
-function Qc(e) {
+function ql(e) {
   return new Promise((t, n) => {
     let r = new FileReader;
     r.onload = () => {
@@ -9844,10 +10455,10 @@ function Qc(e) {
   })
 }
 
-function $c(e) {
+function Jl(e) {
   if (typeof FileReader > `u`) {
     let t = e.type || `application/octet-stream`;
-    return e.arrayBuffer().then(e => `data:${t};base64,${Xc(new Uint8Array(e))}`)
+    return e.arrayBuffer().then(e => `data:${t};base64,${Gl(new Uint8Array(e))}`)
   }
   return new Promise((t, n) => {
     let r = new FileReader;
@@ -9862,7 +10473,7 @@ function $c(e) {
   })
 }
 
-function el(e) {
+function Yl(e) {
   if (!e.startsWith(`data:`)) throw Error(`Could not parse data URL`);
   let t = e.indexOf(`,`);
   if (t === -1) throw Error(`Could not parse data URL`);
@@ -9871,7 +10482,7 @@ function el(e) {
     i = n.indexOf(`;base64`),
     a = (i === -1 ? n : n.slice(0, i)) || `text/plain`;
   if (i !== -1) {
-    let e = Yc(r),
+    let e = Wl(r),
       t = new Uint8Array(e.byteLength);
     return t.set(e), new Blob([t], {
       type: a
@@ -9882,21 +10493,21 @@ function el(e) {
   })
 }
 
-function tl(...e) {
+function Xl(...e) {
   return e.filter(Boolean).join(` `)
 }
-var nl = typeof document < `u`,
-  rl = 0,
-  il = new WeakMap,
-  al = new WeakMap,
-  ol = new WeakMap,
-  sl = class {
+var Zl = typeof document < `u`,
+  Ql = 0,
+  $l = new WeakMap,
+  eu = new WeakMap,
+  tu = new WeakMap,
+  nu = class {
     constructor() {
-      n(this, il, e(t([]))), n(this, al, e(t([]))), n(this, ol, e => {
+      n(this, $l, e(t([]))), n(this, eu, e(t([]))), n(this, tu, e => {
         let t = this.toasts.findIndex(t => t.id === e);
         return t === -1 ? null : t
       }), c(this, `addToast`, e => {
-        nl && this.toasts.unshift(e)
+        Zl && this.toasts.unshift(e)
       }), c(this, `updateToast`, ({
         id: e,
         data: t,
@@ -9918,7 +10529,7 @@ var nl = typeof document < `u`,
         let {
           message: n,
           ...r
-        } = e, i = typeof(e == null ? void 0 : e.id) == `number` || e.id && ((t = e.id) == null ? void 0 : t.length) > 0 ? e.id : rl++, a = e.dismissable === void 0 || e.dismissable, s = e.type === void 0 ? `default` : e.type;
+        } = e, i = typeof(e == null ? void 0 : e.id) == `number` || e.id && ((t = e.id) == null ? void 0 : t.length) > 0 ? e.id : Ql++, a = e.dismissable === void 0 || e.dismissable, s = e.type === void 0 ? `default` : e.type;
         return o(() => {
           this.toasts.find(e => e.id === i) ? this.updateToast({
             id: i,
@@ -9952,7 +10563,7 @@ var nl = typeof document < `u`,
           this.toasts = [];
           return
         }
-        let t = a(ol, this).call(this, e);
+        let t = a(tu, this).call(this, e);
         if (t !== null) return this.toasts.splice(t, 1), e
       }), c(this, `message`, (e, t) => this.create({
         ...t,
@@ -9992,7 +10603,7 @@ var nl = typeof document < `u`,
         return r.then(e => {
           if (typeof e == `object` && e && `ok` in e && typeof e.ok == `boolean` && !e.ok) {
             i = !1;
-            let t = cl(e);
+            let t = ru(e);
             this.create({
               id: n,
               type: `error`,
@@ -10022,7 +10633,7 @@ var nl = typeof document < `u`,
           i && (this.dismiss(n), n = void 0), (e = t.finally) == null || e.call(t)
         }), n
       }), c(this, `custom`, (e, t) => {
-        let n = (t == null ? void 0 : t.id) || rl++;
+        let n = (t == null ? void 0 : t.id) || Ql++;
         return this.create({
           component: e,
           id: n,
@@ -10031,7 +10642,7 @@ var nl = typeof document < `u`,
       }), c(this, `removeHeight`, e => {
         this.heights = this.heights.filter(t => t.toastId !== e)
       }), c(this, `setHeight`, e => {
-        let t = a(ol, this).call(this, e.toastId);
+        let t = a(tu, this).call(this, e.toastId);
         if (t === null) {
           this.heights.push(e);
           return
@@ -10042,125 +10653,125 @@ var nl = typeof document < `u`,
       })
     }
     get toasts() {
-      return l(a(il, this))
+      return l(a($l, this))
     }
     set toasts(e) {
-      i(a(il, this), e, !0)
+      i(a($l, this), e, !0)
     }
     get heights() {
-      return l(a(al, this))
+      return l(a(eu, this))
     }
     set heights(e) {
-      i(a(al, this), e, !0)
+      i(a(eu, this), e, !0)
     }
   };
 
-function cl(e) {
+function ru(e) {
   return e && typeof e == `object` && `status` in e ? `HTTP error! Status: ${e.status}` : `Error! ${e}`
 }
-var U = new sl;
+var K = new nu;
 
-function ll(e, t) {
-  return U.create({
+function iu(e, t) {
+  return K.create({
     message: e,
     ...t
   })
 }
-var ul = new WeakMap,
-  dl = class {
+var au = new WeakMap,
+  ou = class {
     constructor() {
-      n(this, ul, r(() => U.toasts.filter(e => !e.dismiss)))
+      n(this, au, r(() => K.toasts.filter(e => !e.dismiss)))
     }
     get toasts() {
-      return l(a(ul, this))
+      return l(a(au, this))
     }
   },
-  fl = Object.assign(ll, {
-    success: U.success,
-    info: U.info,
-    warning: U.warning,
-    error: U.error,
-    custom: U.custom,
-    message: U.message,
-    promise: U.promise,
-    dismiss: U.dismiss,
-    loading: U.loading,
-    getActiveToasts: () => U.toasts.filter(e => !e.dismiss)
+  su = Object.assign(iu, {
+    success: K.success,
+    info: K.info,
+    warning: K.warning,
+    error: K.error,
+    custom: K.custom,
+    message: K.message,
+    promise: K.promise,
+    dismiss: K.dismiss,
+    loading: K.loading,
+    getActiveToasts: () => K.toasts.filter(e => !e.dismiss)
   }),
-  pl = new WeakMap,
-  ml = new WeakMap,
-  hl = new WeakMap,
-  gl = new WeakMap,
-  _l = new WeakMap,
-  vl = new WeakMap,
-  yl = new WeakMap,
-  bl = new WeakMap,
-  W = new class {
+  cu = new WeakMap,
+  lu = new WeakMap,
+  uu = new WeakMap,
+  du = new WeakMap,
+  fu = new WeakMap,
+  pu = new WeakMap,
+  mu = new WeakMap,
+  hu = new WeakMap,
+  q = new class {
     get data() {
-      return l(a(pl, this))
+      return l(a(cu, this))
     }
     set data(e) {
-      i(a(pl, this), e, !0)
+      i(a(cu, this), e, !0)
     }
     get loading() {
-      return l(a(ml, this))
+      return l(a(lu, this))
     }
     set loading(e) {
-      i(a(ml, this), e, !0)
+      i(a(lu, this), e, !0)
     }
     get notificationCount() {
-      return l(a(hl, this))
+      return l(a(uu, this))
     }
     set notificationCount(e) {
-      i(a(hl, this), e, !0)
+      i(a(uu, this), e)
     }
     get lastFetch() {
-      return l(a(gl, this))
+      return l(a(du, this))
     }
     set lastFetch(e) {
-      i(a(gl, this), e)
+      i(a(du, this), e)
     }
     get charges() {
-      return l(a(_l, this))
+      return l(a(fu, this))
     }
     set charges(e) {
-      i(a(_l, this), e)
+      i(a(fu, this), e)
     }
     get cooldown() {
-      return l(a(vl, this))
+      return l(a(pu, this))
     }
     set cooldown(e) {
-      i(a(vl, this), e)
+      i(a(pu, this), e)
     }
     get flagsBitmap() {
-      return l(a(yl, this))
+      return l(a(mu, this))
     }
     set flagsBitmap(e) {
-      i(a(yl, this), e)
+      i(a(mu, this), e)
     }
     get timeoutUntil() {
-      return l(a(bl, this))
+      return l(a(hu, this))
     }
     set timeoutUntil(e) {
-      i(a(bl, this), e)
+      i(a(hu, this), e)
     }
     constructor() {
-      c(this, `channel`, new BroadcastChannel(`user-channel`)), n(this, pl, e()), n(this, ml, e(!0)), n(this, hl, e()), n(this, gl, e(Date.now())), n(this, _l, r(() => {
+      c(this, `channel`, new BroadcastChannel(`user-channel`)), n(this, cu, e()), n(this, lu, e(!0)), n(this, uu, r(() => Vl.count)), n(this, du, e(Date.now())), n(this, fu, r(() => {
         if (!this.data) return;
         let e = this.data.charges;
         if (e.infinite) return 1 / 0;
         if (e.count > e.max) return e.count;
-        let t = e.count + Math.max((Yo.now - this.lastFetch) / e.cooldownMs, 0);
+        let t = e.count + Math.max((F.now - this.lastFetch) / e.cooldownMs, 0);
         return Math.min(e.max, t)
-      })), n(this, vl, r(() => this.charges !== void 0 && this.data && !this.data.charges.infinite ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0)), n(this, yl, r(() => {
+      })), n(this, pu, r(() => this.charges !== void 0 && this.data && !this.data.charges.infinite ? (1 - this.charges % 1) * this.data.charges.cooldownMs : void 0)), n(this, mu, r(() => {
         var e;
-        return new Zc(Yc(((e = this.data) == null ? void 0 : e.flagsBitmap) ?? `AA==`))
-      })), n(this, bl, r(() => {
+        return new Kl(Wl(((e = this.data) == null ? void 0 : e.flagsBitmap) ?? `AA==`))
+      })), n(this, hu, r(() => {
         var e;
         if (!((e = this.data) != null && e.timeoutUntil)) return;
         let t = new Date(this.data.timeoutUntil),
           n = t.getTime();
-        if (!(!Number.isFinite(n) || n <= Yo.now)) return t
+        if (!(!Number.isFinite(n) || n <= F.now)) return t
       })), this.channel && (this.channel.onmessage = e => {
         let t = JSON.parse(e.data);
         t.type === `refresh` ? (this.data = t.data, this.lastFetch = Date.now()) : t.type === `logout` && (this.data = void 0)
@@ -10172,13 +10783,9 @@ var ul = new WeakMap,
         return this.loading = !0, this.data = await H.me(), this.lastFetch = Date.now(), (e = this.channel) == null || e.postMessage(JSON.stringify({
           type: `refresh`,
           data: this.data
-        })), this.data && this.notificationCount === void 0 && H.getNotificationCount().then(e => {
-          this.notificationCount = e
-        }).catch(e => {
-          console.error(`Failed to refresh notification count:`, e)
-        }), (t = this.data) != null && t.id && $.setUserId(this.data.id), !0
+        })), (t = this.data) != null && t.id && $.setUserId(this.data.id), !0
       } catch (e) {
-        return console.error(e), fl.warning(f.no_internet_access(), {
+        return console.error(e), su.warning(f.no_internet_access(), {
           duration: 1e4
         }), !1
       } finally {
@@ -10197,39 +10804,39 @@ var ul = new WeakMap,
     }
     hasPermission(e) {
       var t;
-      return qc((t = this.data) == null ? void 0 : t.permissions, e)
+      return Hl((t = this.data) == null ? void 0 : t.permissions, e)
     }
     hasAnyPermission(e) {
       var t;
-      return Jc((t = this.data) == null ? void 0 : t.permissions, e)
+      return Ul((t = this.data) == null ? void 0 : t.permissions, e)
     }
   },
-  G, K = Array(128).fill(void 0);
-K.push(void 0, null, !0, !1);
+  J, Y = Array(128).fill(void 0);
+Y.push(void 0, null, !0, !1);
 
-function q(e) {
-  return K[e]
+function X(e) {
+  return Y[e]
 }
-var xl = K.length;
+var gu = Y.length;
 
-function J(e) {
-  xl === K.length && K.push(K.length + 1);
-  let t = xl;
-  return xl = K[t], K[t] = e, t
+function Z(e) {
+  gu === Y.length && Y.push(Y.length + 1);
+  let t = gu;
+  return gu = Y[t], Y[t] = e, t
 }
 
-function Y(e, t) {
+function Q(e, t) {
   try {
     return e.apply(this, t)
   } catch (e) {
-    G.__wbindgen_export_0(J(e))
+    J.__wbindgen_export_0(Z(e))
   }
 }
 
-function X(e) {
+function _u(e) {
   return e == null
 }
-var Sl = typeof TextDecoder < `u` ? new TextDecoder(`utf-8`, {
+var vu = typeof TextDecoder < `u` ? new TextDecoder(`utf-8`, {
   ignoreBOM: !0,
   fatal: !0
 }) : {
@@ -10237,55 +10844,55 @@ var Sl = typeof TextDecoder < `u` ? new TextDecoder(`utf-8`, {
     throw Error(`TextDecoder not available`)
   }
 };
-typeof TextDecoder < `u` && Sl.decode();
-var Cl = null;
+typeof TextDecoder < `u` && vu.decode();
+var yu = null;
 
-function wl() {
-  return (Cl === null || Cl.byteLength === 0) && (Cl = new Uint8Array(G.memory.buffer)), Cl
+function bu() {
+  return (yu === null || yu.byteLength === 0) && (yu = new Uint8Array(J.memory.buffer)), yu
 }
 
-function Tl(e, t) {
-  return e >>>= 0, Sl.decode(wl().subarray(e, e + t))
+function xu(e, t) {
+  return e >>>= 0, vu.decode(bu().subarray(e, e + t))
 }
 
-function El(e) {
-  e < 132 || (K[e] = xl, xl = e)
+function Su(e) {
+  e < 132 || (Y[e] = gu, gu = e)
 }
 
-function Dl(e) {
-  let t = q(e);
-  return El(e), t
+function Cu(e) {
+  let t = X(e);
+  return Su(e), t
 }
-var Z = null;
+var wu = null;
 
-function Ol() {
-  return (Z === null || Z.buffer.detached === !0 || Z.buffer.detached === void 0 && Z.buffer !== G.memory.buffer) && (Z = new DataView(G.memory.buffer)), Z
+function Tu() {
+  return (wu === null || wu.buffer.detached === !0 || wu.buffer.detached === void 0 && wu.buffer !== J.memory.buffer) && (wu = new DataView(J.memory.buffer)), wu
 }
-var Q = 0,
-  kl = typeof TextEncoder < `u` ? new TextEncoder(`utf-8`) : {
+var Eu = 0,
+  Du = typeof TextEncoder < `u` ? new TextEncoder(`utf-8`) : {
     encode: () => {
       throw Error(`TextEncoder not available`)
     }
   },
-  Al = typeof kl.encodeInto == `function` ? function(e, t) {
-    return kl.encodeInto(e, t)
+  Ou = typeof Du.encodeInto == `function` ? function(e, t) {
+    return Du.encodeInto(e, t)
   } : function(e, t) {
-    let n = kl.encode(e);
+    let n = Du.encode(e);
     return t.set(n), {
       read: e.length,
       written: n.length
     }
   };
 
-function jl(e, t, n) {
+function ku(e, t, n) {
   if (n === void 0) {
-    let n = kl.encode(e),
+    let n = Du.encode(e),
       r = t(n.length, 1) >>> 0;
-    return wl().subarray(r, r + n.length).set(n), Q = n.length, r
+    return bu().subarray(r, r + n.length).set(n), Eu = n.length, r
   }
   let r = e.length,
     i = t(r, 1) >>> 0,
-    a = wl(),
+    a = bu(),
     o = 0;
   for (; o < r; o++) {
     let t = e.charCodeAt(o);
@@ -10294,68 +10901,68 @@ function jl(e, t, n) {
   }
   if (o !== r) {
     o !== 0 && (e = e.slice(o)), i = n(i, r, r = o + e.length * 3, 1) >>> 0;
-    let t = wl().subarray(i + o, i + r),
-      a = Al(e, t);
+    let t = bu().subarray(i + o, i + r),
+      a = Ou(e, t);
     o += a.written, i = n(i, r, o, 1) >>> 0
   }
-  return Q = o, i
+  return Eu = o, i
 }
 
-function Ml(e) {
-  let t = jl(e, G.__wbindgen_export_1, G.__wbindgen_export_2),
-    n = Q;
-  G.set_discord_id(t, n)
+function Au(e) {
+  let t = ku(e, J.__wbindgen_export_1, J.__wbindgen_export_2),
+    n = Eu;
+  J.set_discord_id(t, n)
 }
 
-function Nl(e) {
-  let t = jl(e, G.__wbindgen_export_1, G.__wbindgen_export_2),
-    n = Q;
-  G.set_fingerprint(t, n)
+function ju(e) {
+  let t = ku(e, J.__wbindgen_export_1, J.__wbindgen_export_2),
+    n = Eu;
+  J.set_fingerprint(t, n)
 }
 
-function Pl(e) {
-  let t = jl(e, G.__wbindgen_export_1, G.__wbindgen_export_2),
-    n = Q;
-  G.set_detected_bot(t, n)
+function Mu(e) {
+  let t = ku(e, J.__wbindgen_export_1, J.__wbindgen_export_2),
+    n = Eu;
+  J.set_detected_bot(t, n)
 }
 
-function Fl(e) {
+function Nu(e) {
   let t, n;
   try {
-    let a = G.__wbindgen_add_to_stack_pointer(-16),
-      o = jl(e, G.__wbindgen_export_1, G.__wbindgen_export_2),
-      s = Q;
-    G.get_pawtected_endpoint_payload(a, o, s);
-    var r = Ol().getInt32(a + 0, !0),
-      i = Ol().getInt32(a + 4, !0);
-    return t = r, n = i, Tl(r, i)
+    let a = J.__wbindgen_add_to_stack_pointer(-16),
+      o = ku(e, J.__wbindgen_export_1, J.__wbindgen_export_2),
+      s = Eu;
+    J.get_pawtected_endpoint_payload(a, o, s);
+    var r = Tu().getInt32(a + 0, !0),
+      i = Tu().getInt32(a + 4, !0);
+    return t = r, n = i, xu(r, i)
   } finally {
-    G.__wbindgen_add_to_stack_pointer(16), G.__wbindgen_export_3(t, n, 1)
+    J.__wbindgen_add_to_stack_pointer(16), J.__wbindgen_export_3(t, n, 1)
   }
 }
 
-function Il(e) {
-  G.set_user_id(e)
+function Pu(e) {
+  J.set_user_id(e)
 }
 
-function Ll(e) {
-  G.set_cf_likely_automated(e)
+function Fu(e) {
+  J.set_cf_likely_automated(e)
 }
 
-function Rl(e) {
-  G.set_automated_clicks(e)
+function Iu(e) {
+  J.set_automated_clicks(e)
 }
 
-function zl(e) {
-  let t = jl(e, G.__wbindgen_export_1, G.__wbindgen_export_2),
-    n = Q;
-  G.request_url(t, n)
+function Lu(e) {
+  let t = ku(e, J.__wbindgen_export_1, J.__wbindgen_export_2),
+    n = Eu;
+  J.request_url(t, n)
 }
 
-function Bl(e) {
-  G.set_automated_browser(e)
+function Ru(e) {
+  J.set_automated_browser(e)
 }
-async function Vl(e, t) {
+async function zu(e, t) {
   if (typeof Response == `function` && e instanceof Response) {
     if (typeof WebAssembly.instantiateStreaming == `function`) try {
       return await WebAssembly.instantiateStreaming(e, t)
@@ -10374,155 +10981,155 @@ async function Vl(e, t) {
   }
 }
 
-function Hl() {
+function Bu() {
   let e = {};
   return e.wbg = {}, e.wbg.__wbg_buffer_609cc3eee51ed158 = function(e) {
-    let t = q(e).buffer;
-    return J(t)
+    let t = X(e).buffer;
+    return Z(t)
   }, e.wbg.__wbg_call_672a4d21634d4a24 = function() {
-    return Y(function(e, t) {
-      return J(q(e).call(q(t)))
+    return Q(function(e, t) {
+      return Z(X(e).call(X(t)))
     }, arguments)
   }, e.wbg.__wbg_call_7cccdd69e0791ae2 = function() {
-    return Y(function(e, t, n) {
-      return J(q(e).call(q(t), q(n)))
+    return Q(function(e, t, n) {
+      return Z(X(e).call(X(t), X(n)))
     }, arguments)
   }, e.wbg.__wbg_crypto_574e78ad8b13b65f = function(e) {
-    let t = q(e).crypto;
-    return J(t)
+    let t = X(e).crypto;
+    return Z(t)
   }, e.wbg.__wbg_document_d249400bd7bd996d = function(e) {
-    let t = q(e).document;
-    return X(t) ? 0 : J(t)
+    let t = X(e).document;
+    return _u(t) ? 0 : Z(t)
   }, e.wbg.__wbg_getRandomValues_b8f5dbd5f3995a9e = function() {
-    return Y(function(e, t) {
-      q(e).getRandomValues(q(t))
+    return Q(function(e, t) {
+      X(e).getRandomValues(X(t))
     }, arguments)
   }, e.wbg.__wbg_get_67b2ba62fc30de12 = function() {
-    return Y(function(e, t) {
-      return J(Reflect.get(q(e), q(t)))
+    return Q(function(e, t) {
+      return Z(Reflect.get(X(e), X(t)))
     }, arguments)
   }, e.wbg.__wbg_hasFocus_21add8cd20546ed0 = function() {
-    return Y(function(e) {
-      return q(e).hasFocus()
+    return Q(function(e) {
+      return X(e).hasFocus()
     }, arguments)
   }, e.wbg.__wbg_innerWidth_7e0498dbd876d498 = function() {
-    return Y(function(e) {
-      let t = q(e).innerWidth;
-      return J(t)
+    return Q(function(e) {
+      let t = X(e).innerWidth;
+      return Z(t)
     }, arguments)
   }, e.wbg.__wbg_instanceof_Window_def73ea0955fc569 = function(e) {
     let t;
     try {
-      t = q(e) instanceof Window
+      t = X(e) instanceof Window
     } catch {
       t = !1
     }
     return t
   }, e.wbg.__wbg_msCrypto_a61aeb35a24c1329 = function(e) {
-    let t = q(e).msCrypto;
-    return J(t)
+    let t = X(e).msCrypto;
+    return Z(t)
   }, e.wbg.__wbg_navigator_1577371c070c8947 = function(e) {
-    let t = q(e).navigator;
-    return J(t)
+    let t = X(e).navigator;
+    return Z(t)
   }, e.wbg.__wbg_new_a12002a7f91c75be = function(e) {
-    return J(new Uint8Array(q(e)))
+    return Z(new Uint8Array(X(e)))
   }, e.wbg.__wbg_newnoargs_105ed471475aaf50 = function(e, t) {
-    return J(Function(Tl(e, t)))
+    return Z(Function(xu(e, t)))
   }, e.wbg.__wbg_newwithbyteoffsetandlength_d97e637ebe145a9a = function(e, t, n) {
-    return J(new Uint8Array(q(e), t >>> 0, n >>> 0))
+    return Z(new Uint8Array(X(e), t >>> 0, n >>> 0))
   }, e.wbg.__wbg_newwithlength_a381634e90c276d4 = function(e) {
-    return J(new Uint8Array(e >>> 0))
+    return Z(new Uint8Array(e >>> 0))
   }, e.wbg.__wbg_node_905d3e251edff8a2 = function(e) {
-    let t = q(e).node;
-    return J(t)
+    let t = X(e).node;
+    return Z(t)
   }, e.wbg.__wbg_now_807e54c39636c349 = function() {
     return Date.now()
   }, e.wbg.__wbg_process_dc0fbacc7c1c06f7 = function(e) {
-    let t = q(e).process;
-    return J(t)
+    let t = X(e).process;
+    return Z(t)
   }, e.wbg.__wbg_randomFillSync_ac0988aba3254290 = function() {
-    return Y(function(e, t) {
-      q(e).randomFillSync(Dl(t))
+    return Q(function(e, t) {
+      X(e).randomFillSync(Cu(t))
     }, arguments)
   }, e.wbg.__wbg_require_60cc747a6bc5215a = function() {
-    return Y(function() {
+    return Q(function() {
       let e = module.require;
-      return J(e)
+      return Z(e)
     }, arguments)
   }, e.wbg.__wbg_set_65595bdd868b3009 = function(e, t, n) {
-    q(e).set(q(t), n >>> 0)
+    X(e).set(X(t), n >>> 0)
   }, e.wbg.__wbg_static_accessor_GLOBAL_88a902d13a557d07 = function() {
     let e = typeof global > `u` ? null : global;
-    return X(e) ? 0 : J(e)
+    return _u(e) ? 0 : Z(e)
   }, e.wbg.__wbg_static_accessor_GLOBAL_THIS_56578be7e9f832b0 = function() {
     let e = typeof globalThis > `u` ? null : globalThis;
-    return X(e) ? 0 : J(e)
+    return _u(e) ? 0 : Z(e)
   }, e.wbg.__wbg_static_accessor_SELF_37c5d418e4bf5819 = function() {
     let e = typeof self > `u` ? null : self;
-    return X(e) ? 0 : J(e)
+    return _u(e) ? 0 : Z(e)
   }, e.wbg.__wbg_static_accessor_WINDOW_5de37043a91a9c40 = function() {
     let e = typeof window > `u` ? null : window;
-    return X(e) ? 0 : J(e)
+    return _u(e) ? 0 : Z(e)
   }, e.wbg.__wbg_subarray_aa9065fa9dc5df96 = function(e, t, n) {
-    return J(q(e).subarray(t >>> 0, n >>> 0))
+    return Z(X(e).subarray(t >>> 0, n >>> 0))
   }, e.wbg.__wbg_versions_c01dfd4722a88165 = function(e) {
-    let t = q(e).versions;
-    return J(t)
+    let t = X(e).versions;
+    return Z(t)
   }, e.wbg.__wbindgen_boolean_get = function(e) {
-    let t = q(e);
+    let t = X(e);
     return typeof t == `boolean` ? +!!t : 2
   }, e.wbg.__wbindgen_is_function = function(e) {
-    return typeof q(e) == `function`
+    return typeof X(e) == `function`
   }, e.wbg.__wbindgen_is_null = function(e) {
-    return q(e) === null
+    return X(e) === null
   }, e.wbg.__wbindgen_is_object = function(e) {
-    let t = q(e);
+    let t = X(e);
     return typeof t == `object` && !!t
   }, e.wbg.__wbindgen_is_string = function(e) {
-    return typeof q(e) == `string`
+    return typeof X(e) == `string`
   }, e.wbg.__wbindgen_is_undefined = function(e) {
-    return q(e) === void 0
+    return X(e) === void 0
   }, e.wbg.__wbindgen_memory = function() {
-    let e = G.memory;
-    return J(e)
+    let e = J.memory;
+    return Z(e)
   }, e.wbg.__wbindgen_number_get = function(e, t) {
-    let n = q(t),
+    let n = X(t),
       r = typeof n == `number` ? n : void 0;
-    Ol().setFloat64(e + 8, X(r) ? 0 : r, !0), Ol().setInt32(e + 0, !X(r), !0)
+    Tu().setFloat64(e + 8, _u(r) ? 0 : r, !0), Tu().setInt32(e + 0, !_u(r), !0)
   }, e.wbg.__wbindgen_object_clone_ref = function(e) {
-    return J(q(e))
+    return Z(X(e))
   }, e.wbg.__wbindgen_object_drop_ref = function(e) {
-    Dl(e)
+    Cu(e)
   }, e.wbg.__wbindgen_string_new = function(e, t) {
-    return J(Tl(e, t))
+    return Z(xu(e, t))
   }, e.wbg.__wbindgen_throw = function(e, t) {
-    throw Error(Tl(e, t))
+    throw Error(xu(e, t))
   }, e
 }
 
-function Ul(e, t) {
-  return G = e.exports, Wl.__wbindgen_wasm_module = t, Z = null, Cl = null, G
+function Vu(e, t) {
+  return J = e.exports, Hu.__wbindgen_wasm_module = t, wu = null, yu = null, J
 }
-async function Wl(e) {
-  if (G !== void 0) return G;
+async function Hu(e) {
+  if (J !== void 0) return J;
   e !== void 0 && (Object.getPrototypeOf(e) === Object.prototype ? {
     module_or_path: e
   } = e : console.warn(`using deprecated parameters for the initialization function; pass a single object instead`)), e === void 0 && (e = new URL(`pawtect_wasm_bg.wasm`, `` + import.meta.url));
-  let t = Hl();
+  let t = Bu();
   (typeof e == `string` || typeof Request == `function` && e instanceof Request || typeof URL == `function` && e instanceof URL) && (e = fetch(e));
   let {
     instance: n,
     module: r
-  } = await Vl(await e, t);
-  return Ul(n, r)
+  } = await zu(await e, t);
+  return Vu(n, r)
 }
-var Gl = class {
+var Uu = class {
   constructor() {
-    c(this, `interval`, void 0), c(this, `storagesEmpty`, !1), c(this, `storages`, [new ql, new Jl, new Yl, new Xl]), c(this, `pawtectLoaded`, void 0), c(this, `pawtectError`, void 0)
+    c(this, `interval`, void 0), c(this, `storagesEmpty`, !1), c(this, `storages`, [new Gu, new Ku, new qu, new Ju]), c(this, `pawtectLoaded`, void 0), c(this, `pawtectError`, void 0)
   }
   init() {
     this.interval === void 0 && (this.loadPawtect(), this.interval = setInterval(() => {
-      if (!(!W.data || this.storagesEmpty) && !localStorage.getItem(ql.KEY)) {
+      if (!(!q.data || this.storagesEmpty) && !localStorage.getItem(Gu.KEY)) {
         for (let e of this.storages) {
           let t = e.get();
           if (t) {
@@ -10554,12 +11161,12 @@ var Gl = class {
     return this.pawtectLoaded || (this.pawtectLoaded = (async () => {
       try {
         var e;
-        await Wl(ce), (e = W.data) != null && e.id && Il(W.data.id);
+        await Hu(ge), (e = q.data) != null && e.id && Pu(q.data.id);
         let t = fetch;
         return Object.assign(window, {
-          fetch: Kl((e, n) => {
+          fetch: Wu((e, n) => {
             let r = null;
-            return e instanceof Request ? r = e.url : e instanceof URL ? r = e.href : typeof e == `string` && (r = e), r !== null && !r.startsWith(`/`) && zl(r), t.call(window, e, n)
+            return e instanceof Request ? r = e.url : e instanceof URL ? r = e.href : typeof e == `string` && (r = e), r !== null && !r.startsWith(`/`) && Lu(r), t.call(window, e, n)
           })
         }), !0
       } catch (e) {
@@ -10568,10 +11175,10 @@ var Gl = class {
     })()), this.pawtectLoaded
   }
   async setUserId(e) {
-    await this.loadPawtect(), Il(e)
+    await this.loadPawtect(), Pu(e)
   }
   async setCfLikelyAutomated(e) {
-    await this.loadPawtect(), Ll(e)
+    await this.loadPawtect(), Fu(e)
   }
   isPawtectReady() {
     return this.pawtectLoaded ?? Promise.resolve(!1)
@@ -10587,17 +11194,17 @@ var Gl = class {
   async getPawtectedEndpointPayload(e) {
     if (!await this.loadPawtect()) throw Error(f.wasm_error());
     let t = navigator.webdriver,
-      [n, r] = await Promise.all([jo(), dt().catch(e => (console.error(e), {
+      [n, r] = await Promise.all([Bo(), yt().catch(e => (console.error(e), {
         bot: !1
       }))]);
-    return Il(W.data.id), Ml(W.data.discordId ?? ``), Nl(n), Bl(t), Rl(Yo.automatedClicks), r.bot && Pl(r.botKind ?? `unknown`), Fl(e)
+    return Pu(q.data.id), Au(q.data.discordId ?? ``), ju(n), Ru(t), Iu(F.automatedClicks), r.bot && Mu(r.botKind ?? `unknown`), Nu(e)
   }
 };
 
-function Kl(e) {
+function Wu(e) {
   return e.bind().bind()
 }
-var ql = class e {
+var Gu = class e {
   static codec(e) {
     let t = new TextEncoder().encode(this.XOR_KEY),
       n = new Uint8Array(e.length);
@@ -10621,8 +11228,8 @@ var ql = class e {
     localStorage.setItem(e.KEY, btoa(String.fromCharCode(...r)))
   }
 };
-c(ql, `KEY`, `ui_layout_v3`), c(ql, `XOR_KEY`, `wplace-prefs`);
-var Jl = class e {
+c(Gu, `KEY`, `ui_layout_v3`), c(Gu, `XOR_KEY`, `wplace-prefs`);
+var Ku = class e {
   get() {
     try {
       let t = sessionStorage.getItem(e.KEY);
@@ -10647,8 +11254,8 @@ var Jl = class e {
     sessionStorage.setItem(e.KEY, r)
   }
 };
-c(Jl, `KEY`, `nav.cursor`), c(Jl, `SHIFT`, 13);
-var Yl = class e {
+c(Ku, `KEY`, `nav.cursor`), c(Ku, `SHIFT`, 13);
+var qu = class e {
   get() {
     let t = document.cookie.match(RegExp(`(?:^|; )` + e.KEY + `=([^;]*)`));
     if (t) try {
@@ -10666,8 +11273,8 @@ var Yl = class e {
     document.cookie = `${e.KEY}=${encodeURIComponent(n)};path=/;max-age=${e.MAX_AGE};SameSite=Lax`
   }
 };
-c(Yl, `KEY`, `_pf_uid`), c(Yl, `MAX_AGE`, 31536e3);
-var Xl = class {
+c(qu, `KEY`, `_pf_uid`), c(qu, `MAX_AGE`, 31536e3);
+var Ju = class {
     constructor() {
       c(this, `packed`, void 0)
     }
@@ -10681,7 +11288,7 @@ var Xl = class {
       this.packed = BigInt(e.timestamp) << 32n | BigInt(e.userId) & 4294967295n
     }
   },
-  $ = new Gl;
+  $ = new Uu;
 export {
-  ps as $, Qs as A, Is as B, xc as C, ac as D, $s as E, oc as F, ys as G, Bs as H, R as I, ss as J, xs as K, Js as L, Zs as M, nc as N, tc as O, sc as P, ds as Q, L as R, V as S, ic as T, zs as U, Ls as V, Rs as W, ms as X, N as Y, fs as Z, Ac as _, U as a, gt as at, Ec as b, Qc as c, oe as ct, Yc as d, se as dt, is as et, H as f, m as ft, Nc as g, ae as gt, Pc as h, re as ht, fl as i, _t as it, rc as j, ec as k, $c as l, ne as lt, Rc as m, p as mt, W as n, jo as nt, tl as o, mt as ot, Vc as p, h as pt, bs as q, dl as r, vt as rt, Zc as s, pt as st, $ as t, Yo as tt, el as u, te as ut, Oc as v, Sc as w, kc as x, Dc as y, I as z
+  Zs as $, zc as A, dc as B, el as C, se as Ct, Uc as D, h as Dt, Kc as E, pe as Et, _c as F, yc as G, uc as H, fc as I, tc as J, R as K, vc as L, V as M, Pc as N, Vc as O, v as Ot, Fc as P, Qs as Q, mc as R, H as S, oe as St, qc as T, de as Tt, hc as U, gc as V, bc as W, Js as X, L as Y, Ys as Z, Fl as _, xt as _t, K as a, I as at, kl as b, le as bt, ql as c, Ss as ct, Wl as d, F as dt, Xs as et, Vl as f, Bo as ft, El as g, St as gt, Dl as h, wt as ht, su as i, vs as it, Hc as j, Bc as k, Jl as l, ws as lt, vl as m, Tt as mt, q as n, Ms as nt, Xl as o, Ts as ot, pl as p, Et as pt, sc as q, ou as r, js as rt, Kl as s, Cs as st, $ as t, As as tt, Yl as u, ms as ut, Pl as v, me as vt, Zc as w, ae as wt, wl as x, he as xt, yl as y, ue as yt, pc as z
 };

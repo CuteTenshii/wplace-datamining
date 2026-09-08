@@ -1,58 +1,69 @@
-function e(e) {
-  let t, n = !1;
+import {
+  Ct as e,
+  D as t,
+  E as n,
+  J as r,
+  K as i,
+  Nt as a,
+  Tt as o,
+  U as s,
+  X as c,
+  _t as l,
+  b as u,
+  st as d,
+  tn as f
+} from "./DhUcoEdH.js";
+import "./B8UK1oE5.js";
+import {
+  n as p
+} from "./Dv7tXg6T.js";
+var m = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAAXNSR0IArs4c6QAAACpJREFUeNpj+AsEZ86ASIa/DAwMZ84ACRDzDBigMs/AARITq1oUwxBWAADaREUdDMswKwAAAABJRU5ErkJggg==`,
+  h = c(`<img class="pixelated bg-base-200" alt="User profile"/>`),
+  g = c(`<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square max-w-none"/>`),
+  _ = c(`<div class="relative isolate w-max"><div class="bg-base-content/20 size-12 rounded-full"></div> <div class="level-fill center-absolute absolute size-12 rotate-[215deg] rounded-full svelte-12f880g"></div> <div class="avatar center-absolute absolute"><div class="size-10 rounded-full"><!></div></div> <!> <div> </div></div>`);
 
-  function r(r) {
-    if (n = !0, e.disabled || t || r.changedTouches.length !== 1) {
-      t = void 0;
-      return
-    }
-    let i = r.changedTouches[0];
-    t = {
-      id: i.identifier,
-      x: i.clientX,
-      y: i.clientY
-    }, r.cancelable && r.preventDefault()
-  }
-
-  function i(e) {
-    if (!t) return;
-    let n = Array.from(e.changedTouches).find(e => e.identifier === (t == null ? void 0 : t.id));
-    n && Math.hypot(n.clientX - t.x, n.clientY - t.y) > 10 && (t = void 0)
-  }
-
-  function a(n) {
-    if (!t) return;
-    let r = Array.from(n.changedTouches).find(e => e.identifier === (t == null ? void 0 : t.id));
-    if (!r) return;
-    let i = t;
-    t = void 0;
-    let a = e.getBoundingClientRect();
-    e.disabled || Math.hypot(r.clientX - i.x, r.clientY - i.y) > 10 || r.clientX < a.left || r.clientX > a.right || r.clientY < a.top || r.clientY > a.bottom || (n.cancelable && n.preventDefault(), e.click())
-  }
-
-  function o(e) {
-    (e.pointerType === `mouse` || e.pointerType === `pen`) && (n = !1)
-  }
-
-  function s(e) {
-    n && e.detail > 0 && (e.preventDefault(), e.stopImmediatePropagation())
-  }
-
-  function c() {
-    t = void 0
-  }
-  return e.addEventListener(`pointerdown`, o), e.addEventListener(`click`, s, !0), e.addEventListener(`touchstart`, r, {
-    passive: !1
-  }), e.addEventListener(`touchmove`, i, {
-    passive: !0
-  }), e.addEventListener(`touchend`, a, {
-    passive: !1
-  }), e.addEventListener(`touchcancel`, c), {
-    destroy() {
-      e.removeEventListener(`pointerdown`, o), e.removeEventListener(`click`, s, !0), e.removeEventListener(`touchstart`, r), e.removeEventListener(`touchmove`, i), e.removeEventListener(`touchend`, a), e.removeEventListener(`touchcancel`, c)
-    }
-  }
+function v(c, m) {
+  let v = a(() => m.level % 1 * 360);
+  var y = _(),
+    b = o(e(y), 2),
+    x = o(b, 2),
+    S = e(x),
+    C = e(S),
+    w = e => {
+      p(e, {
+        get userId() {
+          return m.userId
+        },
+        get seed() {
+          return m.avatarSeed
+        }
+      })
+    },
+    T = e => {
+      var t = h();
+      l(() => u(t, `src`, m.pictureUrl)), r(e, t)
+    };
+  s(C, e => {
+    m.pictureUrl ? e(T, -1) : e(w)
+  }), f(S), f(x);
+  var E = o(x, 2),
+    D = e => {
+      var t = g();
+      n(t, `width: 67.87878787878788px;`), l(() => u(t, `src`, m.frameUrl)), r(e, t)
+    };
+  s(E, e => {
+    m.frameUrl && e(D)
+  });
+  var O = o(E, 2);
+  let k;
+  var A = e(O, !0);
+  f(O), f(y), l(e => {
+    n(b, `--angle: ${d(v)??``}deg; --color: var(--color-secondary)`), k = t(O, 1, `text-primary-content bg-secondary absolute bottom-0 z-20 flex items-center justify-center rounded-full px-[5px] py-0 text-xs font-bold`, null, k, {
+      "left-0": m.level > 99,
+      "-left-1": m.level > 99
+    }), i(A, e)
+  }, [() => Math.floor(m.level)]), r(c, y)
 }
 export {
-  e as t
+  m as n, v as t
 };

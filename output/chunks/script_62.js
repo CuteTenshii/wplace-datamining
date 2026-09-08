@@ -1,45 +1,117 @@
 import {
-  J as e,
-  U as t,
-  Y as n,
-  Z as r,
-  a as i,
-  o as a,
-  v as o,
-  wt as s
-} from "./DhUcoEdH.js";
-import "./B8UK1oE5.js";
-var c = new Set([`$$slots`, `$$events`, `$$legacy`, `filled`]),
-  l = r(`<svg><path d="M80-120v-480h220v480H80Zm290 0v-720h220v720H370Zm290 0v-400h220v400H660Z"></path></svg>`),
-  u = r(`<svg><path d="M160-200h160v-320H160v320Zm240 0h160v-560H400v560Zm240 0h160v-240H640v240ZM80-120v-480h240v-240h320v320h240v400H80Z"></path></svg>`);
+  t as e
+} from "./BsQK2KsC.js";
+import {
+  n as t
+} from "./Dn_eZzqA.js";
+var n = {
+    "brush-square": `b`,
+    "brush-circle": `c`,
+    fill: `f`,
+    polygon: `p`,
+    line: `l`,
+    rectangle: `r`,
+    ellipse: `o`,
+    bezier: `q`,
+    eraser: `e`,
+    pick: `i`,
+    move: `m`
+  },
+  r = [1, 2, 3, 4, 5, 6, 7, 8, 9].map(t => ({
+    id: `visibility-${t}`,
+    label: () => e.overlay_editor_toggle_numbered_layer({
+      number: t
+    }),
+    defaultKey: String(t),
+    layerIndex: t - 1
+  })),
+  i = [...t.map(e => ({
+    id: e.value,
+    label: e.label,
+    defaultKey: n[e.value]
+  })), {
+    id: `text`,
+    label: () => e.overlay_editor_text(),
+    defaultKey: `t`
+  }, {
+    id: `gradient`,
+    label: () => e.gradient(),
+    defaultKey: `g`
+  }, {
+    id: `select-box`,
+    label: () => e.overlay_editor_select_box(),
+    defaultKey: `s`
+  }, {
+    id: `select-contiguous`,
+    label: () => e.overlay_editor_select_contiguous(),
+    defaultKey: `w`
+  }, {
+    id: `select-color`,
+    label: () => e.overlay_editor_select_color(),
+    defaultKey: `k`
+  }, {
+    id: `select-lasso`,
+    label: () => e.overlay_editor_select_lasso(),
+    defaultKey: `a`
+  }, {
+    id: `size-up`,
+    label: () => e.overlay_editor_size_up(),
+    defaultKey: `]`
+  }, {
+    id: `size-down`,
+    label: () => e.overlay_editor_size_down(),
+    defaultKey: `[`
+  }, {
+    id: `visibility`,
+    label: () => e.overlay_editor_toggle_layer(),
+    defaultKey: `v`
+  }, ...r],
+  a = `overlay-studio:hotkey:`;
 
-function d(r, d) {
-  let f = i(d, `filled`, 3, !1),
-    p = a(d, c);
-  var m = n(),
-    h = s(m),
-    g = t => {
-      var n = l();
-      o(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 -960 960 960`,
-        fill: `currentColor`,
-        ...p
-      })), e(t, n)
-    },
-    _ = t => {
-      var n = u();
-      o(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 -960 960 960`,
-        fill: `currentColor`,
-        ...p
-      })), e(t, n)
-    };
-  t(h, e => {
-    f() ? e(g) : e(_, -1)
-  }), e(r, m)
+function o() {
+  let e = {};
+  for (let t of i) e[t.id] = t.defaultKey;
+  return e
+}
+
+function s(e) {
+  if (e.isComposing || e.altKey || e.getModifierState(`AltGraph`)) return null;
+  let t = e.key.toLowerCase();
+  return !/^[a-z0-9[\]]$/.test(t) || t === `0` || (e.ctrlKey || e.metaKey) && /^[zysxcvd]$/.test(t) ? null : `${e.ctrlKey?`Ctrl+`:``}${e.metaKey?`Meta+`:``}${e.shiftKey?`Shift+`:``}${t}`
+}
+
+function c(e) {
+  return /^(Ctrl\+)?(Meta\+)?(Shift\+)?[a-z1-9[\]]$/.test(e) && !(/(?:Ctrl|Meta)\+/.test(e) && /[zysxcvd]$/.test(e))
+}
+
+function l() {
+  let e = o(),
+    t = new Set,
+    n = new Set;
+  try {
+    for (let r of i) {
+      let i = window.localStorage.getItem(a + r.id);
+      i !== null && (i === `` || c(i)) && (t.add(r.id), e[r.id] = n.has(i) ? `` : i, i && n.add(i))
+    }
+  } catch {
+    return o()
+  }
+  for (let r of i) {
+    if (t.has(r.id)) continue;
+    let i = e[r.id];
+    i && n.has(i) ? e[r.id] = `` : i && n.add(i)
+  }
+  return e
+}
+
+function u(e) {
+  try {
+    for (let t of i) window.localStorage.setItem(a + t.id, e[t.id]);
+    return !0
+  } catch {
+    return !1
+  }
 }
 export {
-  d as t
+  l as a, s as i, r as n, u as o, o as r, i as t
 };

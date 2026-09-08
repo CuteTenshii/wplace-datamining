@@ -1,13 +1,8 @@
+import "./DhUcoEdH.js";
 import {
-  Et as e
-} from "./DhUcoEdH.js";
-var t = e({
-  shouldReload: !0,
-  openHeadquarters: !1,
-  hq: void 0,
-  hasHeadquarters: !1,
-  emblem: void 0
-});
+  vt as e
+} from "./CEp7IPwc.js";
+var t = t => new URL(t, e).toString();
 export {
   t
 };

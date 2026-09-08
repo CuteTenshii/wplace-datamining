@@ -2,68 +2,111 @@ import {
   Ct as e,
   D as t,
   E as n,
-  J as r,
-  K as i,
-  Nt as a,
-  Tt as o,
-  U as s,
-  X as c,
-  _t as l,
-  b as u,
-  st as d,
-  tn as f
+  Ft as r,
+  It as i,
+  J as a,
+  Jt as o,
+  Lt as s,
+  Nt as c,
+  O as l,
+  Pt as u,
+  Rt as d,
+  Tt as f,
+  U as p,
+  X as m,
+  _t as h,
+  b as g,
+  o as _,
+  qt as v,
+  rn as y,
+  st as b,
+  tn as x,
+  z as S
 } from "./DhUcoEdH.js";
 import "./B8UK1oE5.js";
 import {
-  n as p
-} from "./Dv7tXg6T.js";
-var m = `data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAAAAACoWZBhAAAAAXNSR0IArs4c6QAAACpJREFUeNpj+AsEZ86ASIa/DAwMZ84ACRDzDBigMs/AARITq1oUwxBWAADaREUdDMswKwAAAABJRU5ErkJggg==`,
-  h = c(`<img class="pixelated bg-base-200" alt="User profile"/>`),
-  g = c(`<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square max-w-none"/>`),
-  _ = c(`<div class="relative isolate w-max"><div class="bg-base-content/20 size-12 rounded-full"></div> <div class="level-fill center-absolute absolute size-12 rotate-[215deg] rounded-full svelte-12f880g"></div> <div class="avatar center-absolute absolute"><div class="size-10 rounded-full"><!></div></div> <!> <div> </div></div>`);
+  t as C
+} from "./DxdGK6Xj.js";
+var w, T, E, D, O, k, A = 9,
+  j = 95,
+  M = 45,
+  N = 5;
 
-function v(c, m) {
-  let v = a(() => m.level % 1 * 360);
-  var y = _(),
-    b = o(e(y), 2),
-    x = o(b, 2),
-    S = e(x),
-    C = e(S),
-    w = e => {
-      p(e, {
+function P(e) {
+  return e.split(``).reduce((e, t) => (e ^ t.charCodeAt(0)) * -5, N) >>> 2
+}
+
+function F(e = ``, t = j, n = M, r = P) {
+  let i = r(e),
+    a = i % A * (360 / A);
+  return [...Array(e ? 25 : 0)].reduce((e, t, n) => i & 1 << n % 15 ? e + `<rect x="${n>14?7-~~(n/5):~~(n/5)}" y="${n%5}" width="1" height="1"/>` : e, `<svg viewBox="-1.5 -1.5 8 8" xmlns="http://www.w3.org/2000/svg" fill="hsl(${a} ${t}% ${n}%)" shape-rendering="crispEdges">`) + `</svg>`
+}(w = globalThis.customElements) != null && w.get(`minidenticon-svg`) || (T = globalThis.customElements) == null || T.define(`minidenticon-svg`, (O = new WeakMap, k = new WeakSet, E = class extends HTMLElement {
+  constructor(...e) {
+    super(...e), d(this, k), s(this, O, !1)
+  }
+  connectedCallback() {
+    i(k, this, I).call(this), r(O, this, !0)
+  }
+  attributeChangedCallback() {
+    u(O, this) && i(k, this, I).call(this)
+  }
+}, y(E, `observedAttributes`, [`username`, `saturation`, `lightness`]), D = {
+  _: {}
+}, E));
+
+function I() {
+  var e;
+  let t = E.observedAttributes.map(e => this.getAttribute(e) || void 0),
+    n = t.join(`,`);
+  this.innerHTML = (e = i(E, E, D)._)[n] ?? (e[n] = F(...t))
+}
+var L = new Set([`$$slots`, `$$events`, `$$legacy`, `userId`, `seed`]),
+  R = m(`<div></div>`);
+
+function z(e, n) {
+  o(n, !0), _(n, L);
+  let r = c(() => n.seed && n.seed.length > 0 ? n.seed : n.userId.toString());
+  var i = R();
+  S(i, () => F(b(r), 95, 45), !0), x(i), h(() => t(i, 1, `bg-base-200 minidenticon size-full ${n.class??``??``}`, `svelte-15zr69j`)), a(e, i), v()
+}
+var B = m(`<img class="pixelated bg-base-200 size-full" alt="User profile"/>`),
+  V = m(`<img alt="Profile frame" class="pixelated center-absolute pointer-events-none absolute z-10 aspect-square w-full"/>`),
+  H = m(`<div><div><!></div> <!></div>`);
+
+function U(r, i) {
+  o(i, !0);
+  var s = H(),
+    c = e(s);
+  n(c, `width: 67.76785714285714%`);
+  var u = e(c),
+    d = e => {
+      z(e, {
         get userId() {
-          return m.userId
+          return i.userId
         },
         get seed() {
-          return m.avatarSeed
+          return i.avatarSeed
         }
       })
     },
-    T = e => {
-      var t = h();
-      l(() => u(t, `src`, m.pictureUrl)), r(e, t)
+    m = e => {
+      var t = B();
+      h(() => g(t, `src`, i.pictureUrl)), a(e, t)
     };
-  s(C, e => {
-    m.pictureUrl ? e(T, -1) : e(w)
-  }), f(S), f(x);
-  var E = o(x, 2),
-    D = e => {
-      var t = g();
-      n(t, `width: 67.87878787878788px;`), l(() => u(t, `src`, m.frameUrl)), r(e, t)
+  p(u, e => {
+    i.pictureUrl ? e(m, -1) : e(d)
+  }), x(c);
+  var _ = f(c, 2),
+    y = e => {
+      var t = V();
+      n(t, `scale: 114.99999999999999%;`), h(() => g(t, `src`, i.frameUrl)), a(e, t)
     };
-  s(E, e => {
-    m.frameUrl && e(D)
-  });
-  var O = o(E, 2);
-  let k;
-  var A = e(O, !0);
-  f(O), f(y), l(e => {
-    n(b, `--angle: ${d(v)??``}deg; --color: var(--color-secondary)`), k = t(O, 1, `text-primary-content bg-secondary absolute bottom-0 z-20 flex items-center justify-center rounded-full px-[5px] py-0 text-xs font-bold`, null, k, {
-      "left-0": m.level > 99,
-      "-left-1": m.level > 99
-    }), i(A, e)
-  }, [() => Math.floor(m.level)]), r(c, y)
+  p(_, e => {
+    i.frameUrl && e(y)
+  }), x(s), h((e, n) => {
+    t(s, 1, e), t(c, 1, n)
+  }, [() => l(C(`relative inline-grid size-10 place-items-center`, i.class)), () => l(C(`avatar border-base-300 aspect-square overflow-hidden rounded-full border`, i.avatarClass))]), a(r, s), v()
 }
 export {
-  m as n, v as t
+  z as n, F as r, U as t
 };
