@@ -6,18 +6,20 @@ import {
   t as n
 } from "./auT6d-NR.js";
 import {
-  i as r,
-  o as i
-} from "./_CNQgTT0.js";
+  t as r
+} from "./BIDxicRS.js";
 import {
-  n as a,
-  o,
-  r as s,
-  s as c
+  n as i,
+  o as a,
+  r as o,
+  s
 } from "./B6e74eJx.js";
 import {
-  i as l
+  i as c
 } from "./D70MKFm6.js";
+import {
+  i as l
+} from "./B260044E.js";
 var u = e(n(), 1),
   d = 1024,
   f = 1,
@@ -85,7 +87,7 @@ uniform vec4 u_highlight_color;
 uniform bool u_status_highlights_enabled;
 varying highp vec2 v_source_coordinate;
 
-${c}
+${s}
 
 void main() {
   vec2 texture_content_coordinate = v_source_coordinate / u_texture_downsample;
@@ -115,7 +117,7 @@ ${g}
   float pixel_mode_resolution = u_pixel_mode_resolution;
   bool pixel_mode_detail_supported = u_pixel_mode_detail_supported;
   vec2 source_coordinate = v_source_coordinate;
-${s}
+${o}
 
   color.a *= u_opacity;
   color.rgb *= color.a;
@@ -160,7 +162,7 @@ uniform bool u_status_highlights_enabled;
 in highp vec2 v_source_coordinate;
 out vec4 fragment_color;
 
-${c}
+${s}
 
 void main() {
   vec2 texture_content_coordinate = v_source_coordinate / u_texture_downsample;
@@ -190,7 +192,7 @@ ${_}
   float pixel_mode_resolution = u_pixel_mode_resolution;
   bool pixel_mode_detail_supported = u_pixel_mode_detail_supported;
   vec2 source_coordinate = v_source_coordinate;
-${s}
+${o}
 
   color.a *= u_opacity;
   color.rgb *= color.a;
@@ -198,7 +200,7 @@ ${s}
 }
 `,
   S = class {
-    constructor(e, n, r, i, a = l, o) {
+    constructor(e, n, r, i, a = c, o) {
       t(this, `id`, void 0), t(this, `map`, void 0), t(this, `logicalTileZoom`, void 0), t(this, `beforeLayerId`, void 0), t(this, `textureBudgetBytes`, void 0), t(this, `onRepeatedRenderFailure`, void 0), t(this, `type`, `custom`), t(this, `renderingMode`, `2d`), t(this, `gl`, void 0), t(this, `program`, void 0), t(this, `quadBuffer`, void 0), t(this, `vertexArrayApi`, void 0), t(this, `vertexArray`, void 0), t(this, `unitPositionLocation`, -1), t(this, `uniforms`, void 0), t(this, `data`, void 0), t(this, `sourceTiles`, []), t(this, `textureCache`, void 0), t(this, `webgl2`, !1), t(this, `pixelModeDetailSupported`, !1), t(this, `origin`, [0, 0]), t(this, `translatedMatrix`, new Float32Array(16)), t(this, `uploadBuffer`, new Uint8Array(d * d * 4)), t(this, `destroyed`, !1), t(this, `contextLost`, !1), t(this, `consecutiveRenderFailures`, 0), t(this, `renderDisabled`, !1), t(this, `handleStyleLoad`, () => {
         !this.destroyed && this.data && !this.map.getLayer(this.id) && this.map.addLayer(this, this.beforeLayerId && this.map.getLayer(this.beforeLayerId) ? this.beforeLayerId : void 0)
       }), t(this, `handleContextLost`, () => {
@@ -237,15 +239,15 @@ ${s}
       this.destroyed || (this.destroyed = !0, this.map.off(`style.load`, this.handleStyleLoad), this.map.off(`webglcontextlost`, this.handleContextLost), this.map.off(`webglcontextrestored`, this.handleContextRestored), this.map.getLayer(this.id) && this.map.removeLayer(this.id), this.data = void 0, this.sourceTiles = [])
     }
     onAdd(e, t) {
-      var n, r;
-      if (this.contextLost = !1, this.consecutiveRenderFailures = 0, this.renderDisabled = !1, this.gl = t, this.webgl2 = w(t), (n = this.textureCache) == null || n.clear(), this.textureCache = new i({
+      var n, i;
+      if (this.contextLost = !1, this.consecutiveRenderFailures = 0, this.renderDisabled = !1, this.gl = t, this.webgl2 = w(t), (n = this.textureCache) == null || n.clear(), this.textureCache = new r({
           maxBytes: this.textureBudgetBytes,
           onEvict: (e, n) => {
             t.deleteTexture(n), e.texture === n && (e.texture = void 0, e.textureDirty = !0, e.textureDownsample = void 0, e.minificationEnabled = void 0)
           }
         }), this.vertexArrayApi = T(t), this.pixelModeDetailSupported = E(t), this.program = j(t, this.webgl2 ? b : v, this.webgl2 ? x : y) ?? void 0, !this.program) throw Error(`Unable to initialize the build overlay renderer.`);
       if (this.unitPositionLocation = t.getAttribLocation(this.program, `a_unit_position`), this.quadBuffer = t.createBuffer() ?? void 0, !this.quadBuffer) throw t.deleteProgram(this.program), this.program = void 0, Error(`Unable to initialize the build overlay geometry.`);
-      t.bindBuffer(t.ARRAY_BUFFER, this.quadBuffer), t.bufferData(t.ARRAY_BUFFER, h, t.STATIC_DRAW), this.vertexArray = ((r = this.vertexArrayApi) == null ? void 0 : r.create()) ?? void 0, this.vertexArrayApi && this.vertexArray && this.vertexArrayApi.bind(this.vertexArray), this.bindQuadVertexAttributes(t), this.vertexArrayApi && this.vertexArray ? this.vertexArrayApi.bind(null) : this.disableQuadVertexAttributes(t), t.bindBuffer(t.ARRAY_BUFFER, null), this.uniforms = {
+      t.bindBuffer(t.ARRAY_BUFFER, this.quadBuffer), t.bufferData(t.ARRAY_BUFFER, h, t.STATIC_DRAW), this.vertexArray = ((i = this.vertexArrayApi) == null ? void 0 : i.create()) ?? void 0, this.vertexArrayApi && this.vertexArray && this.vertexArrayApi.bind(this.vertexArray), this.bindQuadVertexAttributes(t), this.vertexArrayApi && this.vertexArray ? this.vertexArrayApi.bind(null) : this.disableQuadVertexAttributes(t), t.bindBuffer(t.ARRAY_BUFFER, null), this.uniforms = {
         matrix: t.getUniformLocation(this.program, `u_matrix`),
         worldSize: t.getUniformLocation(this.program, `u_world_size`),
         topLeft: t.getUniformLocation(this.program, `u_top_left`),
@@ -290,8 +292,8 @@ ${s}
       e.useProgram(this.program), e.enable(e.BLEND), e.blendFunc(e.ONE, e.ONE_MINUS_SRC_ALPHA), e.disable(e.DEPTH_TEST), e.disable(e.CULL_FACE), e.disable(e.STENCIL_TEST);
       let {
         worldSize: r
-      } = this.map.transform, [i, s] = this.getRasterAlignmentOffset(r);
-      this.translateMatrix(t, this.origin[0] * r + i, this.origin[1] * r + s), e.uniformMatrix4fv(this.uniforms.matrix, !1, this.translatedMatrix), e.uniform1f(this.uniforms.worldSize, r), e.uniform1i(this.uniforms.texture, 0), e.uniform1i(this.uniforms.mode, D(n.mode)), e.uniform1f(this.uniforms.opacity, n.opacity), e.uniform1f(this.uniforms.pixelsPerSource, this.getPhysicalPixelsPerSource()), e.uniform1f(this.uniforms.pixelModeResolution, o(n.mode, a)), e.uniform1i(this.uniforms.pixelModeDetailSupported, +!!this.pixelModeDetailSupported), e.uniform1i(this.uniforms.highlightEnabled, +!!n.highlightColor);
+      } = this.map.transform, [o, s] = this.getRasterAlignmentOffset(r);
+      this.translateMatrix(t, this.origin[0] * r + o, this.origin[1] * r + s), e.uniformMatrix4fv(this.uniforms.matrix, !1, this.translatedMatrix), e.uniform1f(this.uniforms.worldSize, r), e.uniform1i(this.uniforms.texture, 0), e.uniform1i(this.uniforms.mode, D(n.mode)), e.uniform1f(this.uniforms.opacity, n.opacity), e.uniform1f(this.uniforms.pixelsPerSource, this.getPhysicalPixelsPerSource()), e.uniform1f(this.uniforms.pixelModeResolution, a(n.mode, i)), e.uniform1i(this.uniforms.pixelModeDetailSupported, +!!this.pixelModeDetailSupported), e.uniform1i(this.uniforms.highlightEnabled, +!!n.highlightColor);
       let c = !!(n.statusHighlights && (n.statusHighlights.incorrect || n.statusHighlights.unpainted));
       e.uniform1i(this.uniforms.statusHighlightsEnabled, +!!c), n.highlightColor && e.uniform4f(this.uniforms.highlightColor, n.highlightColor.r / 255, n.highlightColor.g / 255, n.highlightColor.b / 255, n.highlightColor.a / 255), this.vertexArrayApi && this.vertexArray ? this.vertexArrayApi.bind(this.vertexArray) : this.bindQuadVertexAttributes(e);
       let l = this.getVisibleSourceTiles(r),
@@ -464,20 +466,20 @@ ${s}
       }
     }
     getProgressStatus(e, t, n) {
-      let i = Math.floor(e.originX / e.tileSize),
-        a = Math.floor(e.originY / e.tileSize),
-        o = Math.floor((e.originX + e.width - 1) / e.tileSize) - i + 1,
-        s = e.originX + t,
-        c = e.originY + n,
-        l = Math.floor(s / e.tileSize),
-        u = Math.floor(c / e.tileSize),
-        d = (u - a) * o + (l - i),
+      let r = Math.floor(e.originX / e.tileSize),
+        i = Math.floor(e.originY / e.tileSize),
+        a = Math.floor((e.originX + e.width - 1) / e.tileSize) - r + 1,
+        o = e.originX + t,
+        s = e.originY + n,
+        c = Math.floor(o / e.tileSize),
+        u = Math.floor(s / e.tileSize),
+        d = (u - i) * a + (c - r),
         f = d * 2,
         p = d * 4;
-      if (d < 0 || f + 1 >= e.tileCoordinates.length || p + 3 >= e.tileBounds.length || e.tileCoordinates[f] !== l || e.tileCoordinates[f + 1] !== u) return 0;
-      let m = s - (l * e.tileSize + e.tileBounds[p]),
-        h = c - (u * e.tileSize + e.tileBounds[p + 1]);
-      return r(e.statuses, e.tileStatusOffsets[d], h * e.tileBounds[p + 2] + m)
+      if (d < 0 || f + 1 >= e.tileCoordinates.length || p + 3 >= e.tileBounds.length || e.tileCoordinates[f] !== c || e.tileCoordinates[f + 1] !== u) return 0;
+      let m = o - (c * e.tileSize + e.tileBounds[p]),
+        h = s - (u * e.tileSize + e.tileBounds[p + 1]);
+      return l(e.statuses, e.tileStatusOffsets[d], h * e.tileBounds[p + 2] + m)
     }
     markSourceTilesDirty() {
       for (let e of this.sourceTiles) e.textureDirty = !0

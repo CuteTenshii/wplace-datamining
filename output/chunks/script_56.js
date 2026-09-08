@@ -606,7 +606,24 @@ Alliances have been completely rebuilt into a full community system with public 
   ve = e({
     default: () => ye
   }),
-  ye = `## Improvements
+  ye = `## Additions
+
+- Alliance headquarters now offer maximum charge upgrades to 150, 200, 250 and 300.
+- Alliance headquarters now offer charge regeneration upgrades to 10 seconds and 5 seconds.
+
+## Improvements
+
+- The profile button now pulses when there are unread patch notes, until you open them.
+- Alliance overlays now support up to 4,096 pixels per side, matching personal overlays, instead of being reduced to 2,000 pixels when placed on the main canvas.
+
+## Fixes
+
+- Pressing Z or tapping the selected overlay color again now smoothly travels to a remaining pixel on alliance headquarters and asset canvases.
+- Right-clicking or dragging with the right mouse button on alliance headquarters now removes unconfirmed paint instead of opening the context menu.`,
+  be = e({
+    default: () => xe
+  }),
+  xe = `## Improvements
 
 - Overlay Studio now has customizable keyboard shortcuts for tools, brush size, and selected-layer visibility. Open **Keyboard shortcuts** in the sidebar to rebind or reset them; settings are saved in your browser.
 - Every pixel-art editor tool now has a default shortcut, including circle brush (**C**), filled polygon (**P**), rectangle (**R**), ellipse (**O**), Bezier curve (**Q**), move (**M**), box select (**S**), contiguous select (**W**), select by color (**K**), and lasso select (**A**). Hover over a tool to see its shortcut; selection shortcuts can also be customized in the right sidebar.
@@ -623,10 +640,10 @@ Alliances have been completely rebuilt into a full community system with public 
 - Overlay Gallery now remembers your selected sort option when you reopen it or reload the page.
 - The overlay peek shortcut now identifies the Option key on Mac while continuing to use Alt on other platforms.
 `,
-  be = e({
-    default: () => xe
+  Se = e({
+    default: () => Ce
   }),
-  xe = `## Improvements
+  Ce = `## Improvements
 
 - **PSD and OpenRaster Import:** Upload Photoshop (.psd) and OpenRaster (.ora) projects directly from the Overlay Gallery, drag and drop or import them through the \`New\` menu into the gallery, or import their layers into an existing editor project.
 - **Layered Project Support:** Imported raster projects preserve layer names, order, position, visibility, and opacity. Groups are unpacked into editable layers, and projects remain layered after saving and reopening.
@@ -648,17 +665,17 @@ Alliances have been completely rebuilt into a full community system with public 
 - Duplicating a template now also copies its editor layers, keeping the duplicate fully editable.
 - Fixed an issue where users with previous web-store purchases could not delete their accounts.
 `,
-  Se = e({
-    default: () => Ce
-  }),
-  Ce = `## Fixes
-
-- Discord moderators and leaders now count as eligible alliance members for membership awards.
-`,
   we = e({
     default: () => Te
   }),
-  Te = `## Features
+  Te = `## Fixes
+
+- Discord moderators and leaders now count as eligible alliance members for membership awards.
+`,
+  Ee = e({
+    default: () => De
+  }),
+  De = `## Features
 
 - Added a live minimap to preview overlay artwork while editing.
 - The pixel-art editor now has an actions menu for selections, layers, undo and redo, color picking, and view controls. Open it with right-click or Shift+F10 on desktop or a long press on mobile.
@@ -684,10 +701,10 @@ Alliances have been completely rebuilt into a full community system with public 
 - Headquarters overlays recover from graphics initialization failures and context loss.
 - Conflicting alliance artwork saves keep your editor draft available to review newer changes.
 `,
-  Ee = e({
-    default: () => De
+  $ = e({
+    default: () => Oe
   }),
-  De = `## Improvements
+  Oe = `## Improvements
 
 - Added a "Show palette numbers" option in overlay More tools to hide or show remaining pixel counts on the main palette.
 - Alliance overlays now open the overlay details page.
@@ -707,10 +724,10 @@ Alliances have been completely rebuilt into a full community system with public 
 - Fixed JPEG and WebP overlays with embedded color profiles importing with different colors depending on browser decoding support.
 - Fixed headquarters overlays staying blank after graphics initialization failures or graphics context loss. Overlays now recover automatically while preserving their image, position, opacity, and pixel mode.
 `,
-  $ = e({
-    default: () => Oe
+  ke = e({
+    default: () => Ae
   }),
-  Oe = `## Improvements
+  Ae = `## Improvements
 
 - Selecting the current palette color again or pressing Z while building a map overlay now smoothly moves the map to a pixel of that color that still needs painting. Travel stops once that color is complete.
 - Faster progress calculations in the Overlays Gallery, especially for overlays sharing the same map area.
@@ -722,10 +739,10 @@ Alliances have been completely rebuilt into a full community system with public 
 - Removed the duplicate screen lock button when building overlays in headquarters and alliance drafts. On mobile, the progress bar now fills the available width.
 - Fixed slow loading when entering paint mode with large overlays containing many colors, including dithered images.
 `,
-  ke = e({
-    default: () => Ae
+  je = e({
+    default: () => Me
   }),
-  Ae = `## Improvements
+  Me = `## Improvements
 
 - On mobile, Pixel-art Studio now has full-width palette, tools, and layers panels. Tap the active panel to collapse it or drag its handle to change its height.
 - Studio zoom controls now sit below the canvas on mobile, and Live Preview can be shown or hidden. Palette colors have larger touch targets, with a clearer selected-color marker.
@@ -741,10 +758,10 @@ Alliances have been completely rebuilt into a full community system with public 
 
 - Removed the Colors vs Void event.
 `,
-  je = e({
-    default: () => Me
+  Ne = e({
+    default: () => Pe
   }),
-  Me = `## Additions
+  Pe = `## Additions
 
 - Pixel-art Studio now supports cutting, copying, pasting, and duplicating selections. Pasted and duplicated pixels appear on separate layers that can be moved and resized.
 - Added a text tool with multiline text, font choices, size, bold, italic, alignment, spacing, and a preview before applying. Type directly on the Pixel-art Studio canvas with a text cursor, text selection, and a live preview. Enter adds a line, Ctrl/Cmd+Enter applies, and Esc cancels. Clicking another canvas point or switching tools applies the text as pixels.
@@ -762,7 +779,7 @@ Alliances have been completely rebuilt into a full community system with public 
 - Removed extra space below game panels when mobile browser bars already provide bottom spacing.
 - Fixed the Pixel-art Studio view shifting when the canvas resizes after lifting your fingers at the end of a pinch zoom.
 `,
-  Ne = Object.entries(Object.assign({
+  Fe = Object.entries(Object.assign({
     "./markdown/1.0.0 - Welcome to WPlace!.md": t,
     "./markdown/1.1.0 - ✨ More Like You Update.md": r,
     "./markdown/1.1.1 - 🛠️ Quality & Cosmetics Improvements.md": a,
@@ -798,14 +815,15 @@ Alliances have been completely rebuilt into a full community system with public 
     "./markdown/1.6.11 - 📱 Small Mobile Adjustments.md": fe,
     "./markdown/1.6.12 - 🖥️ Collapsed Palled and Alliance UI Improvements.md": me,
     "./markdown/1.6.13 - ⚙️ Settings and Real-Time Notifications.md": ge,
-    "./markdown/1.6.2 - 🖼️ Layer Opacity & Overlay Peek.md": ve,
-    "./markdown/1.6.3 - 🖼️ Overlay Studio Reliability and Imports.md": be,
-    "./markdown/1.6.4 - 🛠️ Alliance Award Eligibility.md": Se,
-    "./markdown/1.6.5 - 🎨 Overlay Studio and Alliance Tools.md": we,
-    "./markdown/1.6.6 - 🛠️ Alliance Overlay Details.md": Ee,
-    "./markdown/1.6.7 - 🛠️ Overlay Performance and Alliance Reliability.md": $,
-    "./markdown/1.6.8 - 🎨 Studio Controls and Event Wrap-up.md": ke,
-    "./markdown/1.6.9 - 🧑‍🎨 More Studio Tools and Collapsible Palette.md": je
+    "./markdown/1.6.14 - 👨‍👩‍👧‍👦 Alliance Adjustments and Fixes.md": ve,
+    "./markdown/1.6.2 - 🖼️ Layer Opacity & Overlay Peek.md": be,
+    "./markdown/1.6.3 - 🖼️ Overlay Studio Reliability and Imports.md": Se,
+    "./markdown/1.6.4 - 🛠️ Alliance Award Eligibility.md": we,
+    "./markdown/1.6.5 - 🎨 Overlay Studio and Alliance Tools.md": Ee,
+    "./markdown/1.6.6 - 🛠️ Alliance Overlay Details.md": $,
+    "./markdown/1.6.7 - 🛠️ Overlay Performance and Alliance Reliability.md": ke,
+    "./markdown/1.6.8 - 🎨 Studio Controls and Event Wrap-up.md": je,
+    "./markdown/1.6.9 - 🧑‍🎨 More Studio Tools and Collapsible Palette.md": Ne
   })).map(([e, t]) => {
     var n, r;
     let i = (n = e.split(`/`).at(-1)) == null ? void 0 : n.replace(`.md`, ``),
@@ -819,5 +837,5 @@ Alliances have been completely rebuilt into a full community system with public 
     numeric: !0
   }));
 export {
-  Ne as t
+  Fe as t
 };

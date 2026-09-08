@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./C-Ek6sM5.js", "./DhUcoEdH.js", "./D9SB8TRV.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./BzVBbfsx.js", "./DhUcoEdH.js", "./D9SB8TRV.js"]))) => i.map(i => d[i]);
 import {
   At as e,
   Et as t,
@@ -4254,7 +4254,7 @@ var rc = 6e3,
             headers: n
           }
         }, a = await this.guardedFetch(e, await i());
-      if (a.headers.get(`x-device-reattest`) && d(() => import(`./C-Ek6sM5.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2]), import.meta.url), a.status === L.FORBIDDEN && a.headers.get(`x-block-reason`) === `tor`) throw Error(f.tor_blocked());
+      if (a.headers.get(`x-device-reattest`) && d(() => import(`./BzVBbfsx.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2]), import.meta.url), a.status === L.FORBIDDEN && a.headers.get(`x-block-reason`) === `tor`) throw Error(f.tor_blocked());
       if (a.status === L.FORBIDDEN && a.headers.get(`x-block-reason`) === `integrity`) throw Error(f.request_integrity_blocked());
       let o = ((n = a.headers.get(`cf-mitigated`)) == null ? void 0 : n.toLowerCase()) === `challenge`;
       if (a.status === 403 && o) {
@@ -6836,8 +6836,8 @@ var z = {
       headquartersUnlockCostCoins: 75,
       headquartersChangeCostCoins: 15,
       headquartersSizeCostCoins: [10, 25, 50, 75, 100],
-      headquartersMaxChargeCostCoins: [5, 5, 5, 10, 10, 10, 15, 15, 15],
-      headquartersChargeCooldownCostCoins: [10, 10, 15, 15, 20],
+      headquartersMaxChargeCostCoins: [5, 5, 5, 10, 10, 10, 15, 15, 15, 30, 30, 30, 50],
+      headquartersChargeCooldownCostCoins: [10, 10, 15, 15, 25, 50, 100],
       templateSpaceCostCoins: [30, 40, 50, 60, 70],
       assetPaintMaxBatchSize: 128,
       assetPaintRequestsPerMinute: 120,
