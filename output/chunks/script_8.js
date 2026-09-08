@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./Db8GeGuc.js", "./DhUcoEdH.js", "./CX0f43EG.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./C-Ek6sM5.js", "./DhUcoEdH.js", "./D9SB8TRV.js"]))) => i.map(i => d[i]);
 import {
   At as e,
   Et as t,
@@ -14,10 +14,10 @@ import {
 } from "./DhUcoEdH.js";
 import {
   a as d
-} from "./CX0f43EG.js";
+} from "./D9SB8TRV.js";
 import {
   t as f
-} from "./BsQK2KsC.js";
+} from "./C3jr-qFf.js";
 import {
   i as p,
   r as m
@@ -4254,7 +4254,7 @@ var rc = 6e3,
             headers: n
           }
         }, a = await this.guardedFetch(e, await i());
-      if (a.headers.get(`x-device-reattest`) && d(() => import(`./Db8GeGuc.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2]), import.meta.url), a.status === L.FORBIDDEN && a.headers.get(`x-block-reason`) === `tor`) throw Error(f.tor_blocked());
+      if (a.headers.get(`x-device-reattest`) && d(() => import(`./C-Ek6sM5.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2]), import.meta.url), a.status === L.FORBIDDEN && a.headers.get(`x-block-reason`) === `tor`) throw Error(f.tor_blocked());
       if (a.status === L.FORBIDDEN && a.headers.get(`x-block-reason`) === `integrity`) throw Error(f.request_integrity_blocked());
       let o = ((n = a.headers.get(`cf-mitigated`)) == null ? void 0 : n.toLowerCase()) === `challenge`;
       if (a.status === 403 && o) {
@@ -8911,6 +8911,17 @@ function Jc(e) {
         let e = await t.json().catch(() => ({}));
         throw (e == null ? void 0 : e.error) === `reversal_already_pending` ? new R(f.ticket_reversal_already_pending(), L.CONFLICT) : new R(f.unexpected_server_error(), L.CONFLICT)
       }
+      if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
+      return t.json()
+    }
+    async markTicketImproperlySolved(e) {
+      let t = await this.request(`/staff/tickets/mark-improperly-solved`, {
+        method: `POST`,
+        credentials: `include`,
+        body: JSON.stringify({
+          ticketId: e
+        })
+      });
       if (t.status !== L.OK) throw new R(f.unexpected_server_error(), t.status);
       return t.json()
     }
