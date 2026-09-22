@@ -1,23 +1,88 @@
 import {
-  J as e,
-  Z as t,
-  o as n,
-  v as r
+  B as e,
+  Ct as t,
+  D as n,
+  J as r,
+  Jt as i,
+  K as a,
+  Nt as o,
+  Tt as s,
+  U as c,
+  V as l,
+  X as u,
+  Y as d,
+  _t as f,
+  a as p,
+  b as m,
+  en as h,
+  et as g,
+  qt as _,
+  st as v,
+  tn as y,
+  tt as b,
+  wt as x
 } from "./DhUcoEdH.js";
 import "./B8UK1oE5.js";
-var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  a = t(`<svg><path d="M480-440q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0-80q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0 440q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-400Zm0-315-240 90v189q0 54 15 105t41 96q42-21 88-33t96-12q50 0 96 12t88 33q26-45 41-96t15-105v-189l-240-90Zm0 515q-36 0-70 8t-65 22q29 30 63 52t72 34q38-12 72-34t63-52q-31-14-65-22t-70-8Z"></path></svg>`);
+import {
+  t as S
+} from "./CHe4uXhz.js";
+var C = u(`<button><div class="tooltip-content z-50"> </div> <img class="size-full object-contain"/></button>`),
+  w = u(`<button><div class="tooltip-content z-50"> </div> <span class="text-sm font-light">+</span></button>`);
 
-function o(t, o) {
-  let s = n(o, i);
-  var c = a();
-  r(c, () => ({
-    xmlns: `http://www.w3.org/2000/svg`,
-    viewBox: `0 -960 960 960`,
-    fill: `currentColor`,
-    ...s
-  })), e(t, c)
+function T(u, g) {
+  i(g, !0);
+  let T = {
+      sm: `size-5`,
+      md: `size-7`
+    },
+    E = p(g, `size`, 3, `sm`),
+    D = o(() => T[E()]),
+    O = o(() => !!g.onslotclick);
+  var k = d(),
+    A = x(k);
+  e(A, 16, () => [0, 1, 2], l, (e, i) => {
+    let l = o(() => {
+      var e;
+      return (e = g.badges) == null ? void 0 : e[i]
+    });
+    var u = d(),
+      p = x(u),
+      _ = e => {
+        var o = C();
+        let c;
+        var u = t(o),
+          d = t(u, !0);
+        y(u);
+        var p = s(u, 2);
+        y(o), f(() => {
+          c = n(o, 1, `tooltip rounded-full border border-transparent ${v(D)??``} transition-colors duration-150 ${v(O)?`hover:bg-base-200/80`:``}`, null, c, {
+            "cursor-auto": !v(O)
+          }), a(d, v(l).name), m(p, `src`, v(l).imageUrl), m(p, `alt`, v(l).name)
+        }), b(`click`, o, function(...e) {
+          var t;
+          (t = v(O) ? () => {
+            var e;
+            return (e = g.onslotclick) == null ? void 0 : e.call(g, i)
+          } : void 0) == null || t.apply(this, e)
+        }), r(e, o)
+      },
+      T = e => {
+        var o = w(),
+          s = t(o),
+          c = t(s, !0);
+        y(s), h(2), y(o), f(e => {
+          n(o, 1, `border-base-content/30 bg-base-200/80 text-base-content/60 hover:bg-base-300/50 hover:border-primary/40 pixelated tooltip grid ${v(D)??``} place-items-center rounded-full transition-colors duration-150`), a(c, e)
+        }, [() => S.equip_badge()]), b(`click`, o, () => {
+          var e;
+          return (e = g.onslotclick) == null ? void 0 : e.call(g, i)
+        }), r(e, o)
+      };
+    c(p, e => {
+      v(l) ? e(_) : v(O) && e(T, 1)
+    }), r(e, u)
+  }), r(u, k), _()
 }
+g([`click`]);
 export {
-  o as t
+  T as t
 };

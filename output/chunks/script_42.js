@@ -1,84 +1,36 @@
 import {
-  Ct as e,
-  J as t,
-  Jt as n,
-  K as r,
-  Nt as i,
-  Tt as a,
-  U as o,
-  X as s,
-  _t as c,
-  a as l,
-  b as u,
-  et as d,
-  qt as f,
-  st as p,
-  tn as m,
-  tt as h
+  J as e,
+  Z as t,
+  o as n,
+  v as r
 } from "./DhUcoEdH.js";
 import "./B8UK1oE5.js";
-import {
-  i as g
-} from "./Dckshkh0.js";
-import {
-  t as _
-} from "./C3jr-qFf.js";
-import {
-  o as v
-} from "./Bp6-VGl8.js";
-var y = s(`<span class="text-success">(Verified)</span>`),
-  b = s(`<a target="_blank" rel="noreferer" aria-label="Discord"><!></a>`),
-  x = s(`<button><!></button>`),
-  S = s(`<span class="tooltip h-4"><div class="tooltip-content"><span> </span> <!></div> <!></span>`);
+var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  a = t(`<svg><rect x="0" y="0" width="4" height="4" rx="1" opacity="0.12"></rect><rect x="6" y="0" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="12" y="0" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="18" y="0" width="4" height="4" rx="1" opacity="0.12"></rect><rect x="0" y="6" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="6" y="6" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="12" y="6" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="18" y="6" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="0" y="12" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="6" y="12" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="12" y="12" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="18" y="12" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="0" y="18" width="4" height="4" rx="1" opacity="0.12"></rect><rect x="6" y="18" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="12" y="18" width="4" height="4" rx="1" opacity="0.45"></rect><rect x="18" y="18" width="4" height="4" rx="1" opacity="0.12"></rect></svg>`);
 
-function C(s, d) {
-  n(d, !0);
-  let C = l(d, `size`, 3, `md`),
-    w = i(() => !!d.id),
-    T = {
-      md: `size-5`,
-      sm: `size-4`
-    },
-    E = i(() => `-translate-y-0.5 opacity-70 ${T[C()]}`);
-  var D = S(),
-    O = e(D),
-    k = e(O),
-    A = e(k);
-  m(k);
-  var j = a(k, 2),
-    M = e => {
-      var n = y();
-      t(e, n)
-    };
-  o(j, e => {
-    p(w) && e(M)
-  }), m(O);
-  var N = a(O, 2),
-    P = n => {
-      var r = b(),
-        i = e(r);
-      v(i, {
-        get class() {
-          return p(E)
-        }
-      }), m(r), c(e => u(r, `href`, e), [() => `https://discord.com/users/${encodeURIComponent(d.id)}`]), t(n, r)
-    },
-    F = n => {
-      var r = x(),
-        i = e(r);
-      v(i, {
-        get class() {
-          return p(E)
-        }
-      }), m(r), h(`click`, r, async () => {
-        await navigator.clipboard.writeText(d.username), g.info(_.username_copied())
-      }), t(n, r)
-    };
-  o(N, e => {
-    p(w) ? e(P) : e(F, -1)
-  }), m(D), c(() => r(A, `Discord: ${d.username??``}`)), t(s, D), f()
+function o(t, o) {
+  let s = n(o, i);
+  var c = a();
+  r(c, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 0 22 22`,
+    fill: `currentColor`,
+    ...s
+  })), e(t, c)
 }
-d([`click`]);
+var s = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  c = t(`<svg><path d="M240-120q-45 0-89-22t-71-58q26 0 53-20.5t27-59.5q0-50 35-85t85-35q50 0 85 35t35 85q0 66-47 113t-113 47Zm230-240L360-470l358-358q11-11 27.5-11.5T774-828l54 54q12 12 12 28t-12 28L470-360Z"></path></svg>`);
+
+function l(t, i) {
+  let a = n(i, s);
+  var o = c();
+  r(o, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...a
+  })), e(t, o)
+}
 export {
-  C as t
+  o as n, l as t
 };

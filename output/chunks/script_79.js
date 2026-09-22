@@ -1,61 +1,23 @@
-var e = 1048576,
-  t = {
-    profile: `constrained`,
-    cpuResourceCacheBytes: 192 * e,
-    workerSourceCacheBytes: 64 * e,
-    colorLookupCacheBytes: 8 * e,
-    colorLookupCacheEntries: 131072,
-    gpuTextureCacheBytes: 16 * e,
-    processingTimeSliceMs: 3
-  },
-  n = {
-    profile: `mobile`,
-    cpuResourceCacheBytes: 256 * e,
-    workerSourceCacheBytes: 96 * e,
-    colorLookupCacheBytes: 12 * e,
-    colorLookupCacheEntries: 196608,
-    gpuTextureCacheBytes: 32 * e,
-    processingTimeSliceMs: 5
-  },
-  r = {
-    profile: `desktop`,
-    cpuResourceCacheBytes: 320 * e,
-    workerSourceCacheBytes: 192 * e,
-    colorLookupCacheBytes: 24 * e,
-    colorLookupCacheEntries: 393216,
-    gpuTextureCacheBytes: 64 * e,
-    processingTimeSliceMs: 8
-  };
+import {
+  J as e,
+  Z as t,
+  o as n,
+  v as r
+} from "./DhUcoEdH.js";
+import "./B8UK1oE5.js";
+var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  a = t(`<svg><path d="M419-80q-28 0-52.5-12T325-126L107-403l19-20q20-21 48-25t52 11l74 45v-328q0-17 11.5-28.5T340-760q17 0 29 11.5t12 28.5v472l-97-60 104 133q6 7 14 11t17 4h221q33 0 56.5-23.5T720-240v-160q0-17-11.5-28.5T680-440H461v-80h219q50 0 85 35t35 85v160q0 66-47 113T640-80H419ZM167-620q-13-22-20-47.5t-7-52.5q0-83 58.5-141.5T340-920q83 0 141.5 58.5T540-720q0 27-7 52.5T513-620l-69-40q8-14 12-28.5t4-31.5q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 17 4 31.5t12 28.5l-69 40Zm335 280Z"></path></svg>`);
 
-function i(e) {
-  return typeof e == `number` && Number.isFinite(e) && e > 0 ? e : void 0
+function o(t, o) {
+  let s = n(o, i);
+  var c = a();
+  r(c, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...s
+  })), e(t, c)
 }
-
-function a({
-  deviceMemoryGiB: e,
-  hardwareConcurrency: a,
-  mobile: o = !1
-} = {}) {
-  let s = i(e),
-    c = i(a);
-  return s !== void 0 && s <= 2 || c !== void 0 && c <= 2 ? t : o || s !== void 0 && s <= 4 || c !== void 0 && c <= 4 ? n : r
-}
-
-function o(e) {
-  var t;
-  return e ? {
-    deviceMemoryGiB: e.deviceMemory,
-    hardwareConcurrency: e.hardwareConcurrency,
-    mobile: ((t = e.userAgentData) == null ? void 0 : t.mobile) === !0 || /Android|iPhone|iPad|iPod|IEMobile|Mobile|Opera Mini/i.test(e.userAgent ?? ``)
-  } : {}
-}
-var s = a(o(typeof navigator > `u` ? void 0 : navigator)),
-  c = s.cpuResourceCacheBytes,
-  l = s.workerSourceCacheBytes,
-  u = s.colorLookupCacheBytes,
-  d = s.colorLookupCacheEntries,
-  f = s.gpuTextureCacheBytes,
-  p = s.processingTimeSliceMs;
 export {
-  s as a, f as i, d as n, p as o, c as r, l as s, u as t
+  o as t
 };

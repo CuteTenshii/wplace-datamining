@@ -1,88 +1,141 @@
 import {
-  B as e,
+  A as e,
   Ct as t,
   D as n,
   J as r,
   Jt as i,
   K as a,
   Nt as o,
-  Tt as s,
-  U as c,
-  V as l,
-  X as u,
-  Y as d,
+  O as s,
+  R as c,
+  Tt as l,
+  U as u,
+  X as d,
   _t as f,
   a as p,
-  b as m,
-  en as h,
-  et as g,
-  qt as _,
-  st as v,
-  tn as y,
-  tt as b,
-  wt as x
+  an as m,
+  b as h,
+  d as g,
+  nt as _,
+  qt as v,
+  st as y,
+  tn as b,
+  vt as x,
+  wt as S
 } from "./DhUcoEdH.js";
 import "./B8UK1oE5.js";
 import {
-  t as S
-} from "./C3jr-qFf.js";
-var C = u(`<button><div class="tooltip-content z-50"> </div> <img class="size-full object-contain"/></button>`),
-  w = u(`<button><div class="tooltip-content z-50"> </div> <span class="text-sm font-light">+</span></button>`);
+  t as C
+} from "./CHe4uXhz.js";
+import {
+  t as w
+} from "./DxdGK6Xj.js";
+var T = d(`<form method="dialog"><button class="btn btn-sm btn-circle">✕</button></form>`),
+  E = d(`<div class="flex items-center"></div> <div class="flex items-center justify-center overflow-hidden text-center"><!></div> <div class="flex items-start justify-end pt-1"><!></div>`, 1),
+  D = d(`<div class="ml-2 flex flex-col items-end gap-2 self-start pt-1 sm:translate-x-2"><!> <!></div>`),
+  O = d(`<div class="flex flex-1 items-center gap-3 overflow-hidden"><!></div> <!>`, 1),
+  k = d(`<header><!></header>`),
+  A = d(`<footer class="shrink-0 px-4 py-4 sm:px-6"><!></footer>`),
+  j = d(`<form method="dialog" class="modal-backdrop"><button> </button></form>`),
+  M = d(`<dialog><div><!> <div><!></div> <!></div> <!></dialog>`);
 
-function T(u, g) {
-  i(g, !0);
-  let T = {
-      sm: `size-5`,
-      md: `size-7`
-    },
-    E = p(g, `size`, 3, `sm`),
-    D = o(() => T[E()]),
-    O = o(() => !!g.onslotclick);
-  var k = d(),
-    A = x(k);
-  e(A, 16, () => [0, 1, 2], l, (e, i) => {
-    let l = o(() => {
-      var e;
-      return (e = g.badges) == null ? void 0 : e[i]
-    });
-    var u = d(),
-      p = x(u),
-      _ = e => {
-        var o = C();
-        let c;
-        var u = t(o),
-          d = t(u, !0);
-        y(u);
-        var p = s(u, 2);
-        y(o), f(() => {
-          c = n(o, 1, `tooltip rounded-full border border-transparent ${v(D)??``} transition-colors duration-150 ${v(O)?`hover:bg-base-200/80`:``}`, null, c, {
-            "cursor-auto": !v(O)
-          }), a(d, v(l).name), m(p, `src`, v(l).imageUrl), m(p, `alt`, v(l).name)
-        }), b(`click`, o, function(...e) {
-          var t;
-          (t = v(O) ? () => {
-            var e;
-            return (e = g.onslotclick) == null ? void 0 : e.call(g, i)
-          } : void 0) == null || t.apply(this, e)
-        }), r(e, o)
-      },
-      T = e => {
-        var o = w(),
-          s = t(o),
-          c = t(s, !0);
-        y(s), h(2), y(o), f(e => {
-          n(o, 1, `border-base-content/30 bg-base-200/80 text-base-content/60 hover:bg-base-300/50 hover:border-primary/40 pixelated tooltip grid ${v(D)??``} place-items-center rounded-full transition-colors duration-150`), a(c, e)
-        }, [() => S.equip_badge()]), b(`click`, o, () => {
-          var e;
-          return (e = g.onslotclick) == null ? void 0 : e.call(g, i)
-        }), r(e, o)
-      };
-    c(p, e => {
-      v(l) ? e(_) : v(O) && e(T, 1)
-    }), r(e, u)
-  }), r(u, k), _()
+function N(d, N) {
+  i(N, !0);
+  let P = p(N, `open`, 15),
+    F = p(N, `hasBackdrop`, 3, !0),
+    I = p(N, `hasCloseButton`, 3, !0),
+    L = p(N, `hasHeaderBorder`, 3, !0),
+    R = p(N, `centerHeader`, 3, !1),
+    z = p(N, `isDynamicHeight`, 3, !1),
+    B = p(N, `useModalLayer`, 3, !0),
+    V = p(N, `closedBy`, 3, `any`),
+    H = p(N, `contentEl`, 15),
+    U = p(N, `disableCloseAnimation`, 3, !1),
+    W = o(() => N.mobileClasses ?? `max-sm:!w-full max-sm:!h-full max-sm:!max-w-none max-sm:!max-h-none max-sm:!rounded-none max-sm:pt-safe max-sm:pb-safe`),
+    G = o(() => w(`modal-box p-0 flex flex-col w-11/12 max-h-11/12 rounded-xl`, !z() && `h-11/12`, y(W), N.modalBoxClass));
+  var K = M(),
+    q = t(K),
+    J = t(q),
+    Y = e => {
+      var i = k(),
+        a = t(i),
+        o = e => {
+          var n = E(),
+            i = l(S(n), 2),
+            a = t(i);
+          c(a, () => N.header ?? m), b(i);
+          var o = l(i, 2),
+            s = t(o),
+            d = e => {
+              var t = T();
+              r(e, t)
+            };
+          u(s, e => {
+            I() && e(d)
+          }), b(o), r(e, n)
+        },
+        s = e => {
+          var n = O(),
+            i = S(n),
+            a = t(i);
+          c(a, () => N.header ?? m), b(i);
+          var o = l(i, 2),
+            s = e => {
+              var n = D(),
+                i = t(n),
+                a = e => {
+                  var t = T();
+                  r(e, t)
+                };
+              u(i, e => {
+                I() && e(a)
+              });
+              var o = l(i, 2);
+              c(o, () => N.headerAction ?? m), b(n), r(e, n)
+            };
+          u(o, e => {
+            (I() || N.headerAction) && e(s)
+          }), r(e, n)
+        };
+      u(a, e => {
+        R() ? e(o) : e(s, -1)
+      }), b(i), f(() => n(i, 1, `bg-base-100/70 sticky top-0 z-40 flex shrink-0 items-center justify-between px-4 py-4 backdrop-blur sm:px-6 ${L()?`border-base-content/10 border-b`:``} ${R()?`grid grid-cols-[2.5rem_1fr_2.5rem] px-4`:``} ${(N.headerClassName||``)??``}`)), r(e, i)
+    };
+  u(J, e => {
+    (N.header || I()) && e(Y)
+  });
+  var X = l(J, 2),
+    Z = t(X);
+  c(Z, () => N.children ?? m), b(X), g(X, e => H(e), () => H());
+  var Q = l(X, 2),
+    $ = e => {
+      var n = A(),
+        i = t(n);
+      c(i, () => N.footer), b(n), r(e, n)
+    };
+  u(Q, e => {
+    N.footer && e($)
+  }), b(q);
+  var ee = l(q, 2),
+    te = e => {
+      var n = j(),
+        i = t(n),
+        o = t(i, !0);
+      b(i), b(n), f(e => a(o, e), [() => C.close()]), r(e, n)
+    };
+  u(ee, e => {
+    F() && e(te)
+  }), b(K), e(K, () => e => {
+    x(() => {
+      P() && !e.open ? B() ? e.showModal() : e.show() : e.open && e.close()
+    })
+  }), f(e => {
+    n(K, 1, `modal ${U()?`no-close-animation`:``} ${N.dialogClass??``}`, `svelte-r6rf84`), h(K, `closedby`, V()), n(q, 1, s(y(G))), n(X, 1, e)
+  }, [() => s(w(`flex flex-1 flex-col overflow-x-hidden overflow-y-auto px-4 py-4 sm:px-6`, N.contentAreaClass))]), _(`close`, K, () => {
+    var e;
+    P(!1), (e = N.onclose) == null || e.call(N)
+  }), r(d, K), v()
 }
-g([`click`]);
 export {
-  T as t
+  N as t
 };

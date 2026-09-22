@@ -1,36 +1,99 @@
 import {
-  J as e,
-  Z as t,
-  o as n,
-  v as r
+  Ct as e,
+  D as t,
+  J as n,
+  Jt as r,
+  Nt as i,
+  O as a,
+  R as o,
+  U as s,
+  X as c,
+  Y as l,
+  _t as u,
+  a as d,
+  an as f,
+  b as p,
+  et as m,
+  qt as h,
+  st as g,
+  tn as _,
+  tt as v,
+  wt as y
 } from "./DhUcoEdH.js";
 import "./B8UK1oE5.js";
-var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  a = t(`<svg><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z"></path></svg>`);
+import {
+  n as b
+} from "./BsiAA4oX.js";
+import {
+  t as x
+} from "./BiXbKfwb.js";
 
-function o(t, o) {
-  let s = n(o, i);
-  var c = a();
-  r(c, () => ({
-    xmlns: `http://www.w3.org/2000/svg`,
-    viewBox: `0 -960 960 960`,
-    fill: `currentColor`,
-    ...s
-  })), e(t, c)
+function S(e) {
+  return `/dashboard/users?id=${encodeURIComponent(String(e))}`
 }
-var s = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  c = t(`<svg><path d="M440-42v-80q-125-14-214.5-103.5T122-440H42v-80h80q14-125 103.5-214.5T440-838v-80h80v80q125 14 214.5 103.5T838-520h80v80h-80q-14 125-103.5 214.5T520-122v80h-80Zm40-158q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Zm0-120q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Z"></path></svg>`);
 
-function l(t, i) {
-  let a = n(i, s);
-  var o = c();
-  r(o, () => ({
-    xmlns: `http://www.w3.org/2000/svg`,
-    viewBox: `0 -960 960 960`,
-    fill: `currentColor`,
-    ...a
-  })), e(t, o)
+function C(e) {
+  typeof window > `u` || window.open(S(e), `_blank`, `noopener,noreferrer`)
 }
+var w = c(`<span role="link" tabindex="0"><!></span>`),
+  T = c(`<a target="_blank" rel="noopener noreferrer"><!></a>`),
+  E = c(`<span><!></span>`);
+
+function D(c, m) {
+  r(m, !0);
+  let D = d(m, `mode`, 3, `anchor`),
+    O = d(m, `class`, 3, ``),
+    k = d(m, `linkClass`, 19, O),
+    A = d(m, `textClass`, 19, O),
+    j = i(() => m.userId != null && m.userId > 0 && b.hasAnyPermission(x.dashboard.users)),
+    M = i(() => m.userId == null ? `` : S(m.userId));
+
+  function N(e) {
+    e.stopPropagation()
+  }
+
+  function P(e) {
+    m.userId == null || m.userId <= 0 || (e.preventDefault(), e.stopPropagation(), C(m.userId))
+  }
+
+  function F(e) {
+    (e.key === `Enter` || e.key === ` `) && P(e)
+  }
+  var I = l(),
+    L = y(I),
+    R = r => {
+      var i = l(),
+        a = y(i),
+        c = r => {
+          var i = w(),
+            a = e(i);
+          o(a, () => m.children ?? f), _(i), u(() => {
+            t(i, 1, `cursor-pointer hover:underline ${k()}`), p(i, `title`, m.title)
+          }), v(`pointerdown`, i, N), v(`click`, i, P), v(`keydown`, i, F), n(r, i)
+        },
+        d = r => {
+          var i = T(),
+            a = e(i);
+          o(a, () => m.children ?? f), _(i), u(() => {
+            t(i, 1, `cursor-pointer hover:underline ${k()}`), p(i, `href`, g(M)), p(i, `title`, m.title)
+          }), v(`pointerdown`, i, N), v(`click`, i, N), n(r, i)
+        };
+      s(a, e => {
+        D() === `inline` ? e(c) : e(d, -1)
+      }), n(r, i)
+    },
+    z = r => {
+      var i = E(),
+        s = e(i);
+      o(s, () => m.children ?? f), _(i), u(() => {
+        t(i, 1, a(A())), p(i, `title`, m.title)
+      }), n(r, i)
+    };
+  s(L, e => {
+    g(j) ? e(R) : e(z, -1)
+  }), n(c, I), h()
+}
+m([`pointerdown`, `click`, `keydown`]);
 export {
-  o as n, l as t
+  S as n, D as t
 };

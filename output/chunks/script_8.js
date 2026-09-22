@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./BzVBbfsx.js", "./DhUcoEdH.js", "./D9SB8TRV.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./Cv4aghc9.js", "./DhUcoEdH.js", "./DMTK6sCJ.js"]))) => i.map(i => d[i]);
 import {
   At as e,
   Et as t,
@@ -14,10 +14,10 @@ import {
 } from "./DhUcoEdH.js";
 import {
   a as d
-} from "./D9SB8TRV.js";
+} from "./DMTK6sCJ.js";
 import {
   t as f
-} from "./C3jr-qFf.js";
+} from "./CHe4uXhz.js";
 import {
   i as p,
   r as m
@@ -4254,7 +4254,7 @@ var rc = 6e3,
             headers: n
           }
         }, a = await this.guardedFetch(e, await i());
-      if (a.headers.get(`x-device-reattest`) && d(() => import(`./BzVBbfsx.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2]), import.meta.url), a.status === L.FORBIDDEN && a.headers.get(`x-block-reason`) === `tor`) throw Error(f.tor_blocked());
+      if (a.headers.get(`x-device-reattest`) && d(() => import(`./Cv4aghc9.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2]), import.meta.url), a.status === L.FORBIDDEN && a.headers.get(`x-block-reason`) === `tor`) throw Error(f.tor_blocked());
       if (a.status === L.FORBIDDEN && a.headers.get(`x-block-reason`) === `integrity`) throw Error(f.request_integrity_blocked());
       let o = ((n = a.headers.get(`cf-mitigated`)) == null ? void 0 : n.toLowerCase()) === `challenge`;
       if (a.status === 403 && o) {
@@ -8739,6 +8739,14 @@ function Rc(e) {
       if (!n.ok) throw n.status === 500 ? new R(f.unexpected_server_error(), n.status) : new R(f.invalid_captcha(), n.status);
       return n.json()
     }
+    async getSeptemberEventRewards() {
+      let e = await this.request(`/me/september-event`, {
+        method: `GET`,
+        credentials: `include`
+      });
+      if (!e.ok) throw new R(f.unexpected_server_error(), e.status);
+      return e.json()
+    }
     async postTelemetry(e, t) {
       return (await this.request(`/frontend/telemetry`, {
         method: `POST`,
@@ -9665,42 +9673,41 @@ function tl(e) {
           headers: i,
           credentials: `include`
         });
-      if (a.status !== L.OK) {
-        if (a.status === L.UNAUTHORIZED) throw Error(f.you_need_to_be_logged_in_to_paint());
-        if (a.status === L.FORBIDDEN) {
-          if (a.headers.get(`cf-mitigated`) === `challenge`) throw Error(f.ddos_message());
-          let t = await a.json().catch(() => ({}));
-          switch (t == null ? void 0 : t.error) {
-            case `timeout`: {
-              let e = new Date(Date.now() + ((t == null ? void 0 : t.durationMs) ?? 0));
-              throw Error(f.your_account_was_suspended_until({
-                until: e.toLocaleString()
-              }))
-            }
-            case `refresh`:
-              throw Error(f.refresh_page());
-            case `color-not-owned`:
-              throw Error(f.paint_color_not_owned());
-            case `company-paint-outside-allowed-area`:
-              throw Error(f.company_paint_outside_allowed_area());
-            case `event-pixel-present`:
-              throw Error(f.cannot_paint_over_event_pixel());
-            case `challenge-required`:
-              if (t.tier) {
-                if (await ms(t.tier)) return this.paint(e);
-                throw Error(f.challenge_verification_not_completed())
-              }
-              throw console.error(`Challenge required but no tier provided`, t), Error(f.unexpected_server_error());
-            case `verification-required`: {
-              let t = (await Ho().get()).sealed_result;
-              if (!t) throw Error(f.unexpected_server_error());
-              return await this.verifyAnticheat(t), this.paint(e)
-            }
+      if (a.status === L.OK) return await a.json().catch(() => ({}));
+      if (a.status === L.UNAUTHORIZED) throw Error(f.you_need_to_be_logged_in_to_paint());
+      if (a.status === L.FORBIDDEN) {
+        if (a.headers.get(`cf-mitigated`) === `challenge`) throw Error(f.ddos_message());
+        let t = await a.json().catch(() => ({}));
+        switch (t == null ? void 0 : t.error) {
+          case `timeout`: {
+            let e = new Date(Date.now() + ((t == null ? void 0 : t.durationMs) ?? 0));
+            throw Error(f.your_account_was_suspended_until({
+              until: e.toLocaleString()
+            }))
           }
-          throw await q.refresh(), typeof(t == null ? void 0 : t.charges) == `number` ? Error(f.you_do_not_have_enough_charges_to_paint()) : Error(f.unexpected_server_error())
+          case `refresh`:
+            throw Error(f.refresh_page());
+          case `color-not-owned`:
+            throw Error(f.paint_color_not_owned());
+          case `company-paint-outside-allowed-area`:
+            throw Error(f.company_paint_outside_allowed_area());
+          case `event-pixel-present`:
+            throw Error(f.cannot_paint_over_event_pixel());
+          case `challenge-required`:
+            if (t.tier) {
+              if (await ms(t.tier)) return this.paint(e);
+              throw Error(f.challenge_verification_not_completed())
+            }
+            throw console.error(`Challenge required but no tier provided`, t), Error(f.unexpected_server_error());
+          case `verification-required`: {
+            let t = (await Ho().get()).sealed_result;
+            if (!t) throw Error(f.unexpected_server_error());
+            return await this.verifyAnticheat(t), this.paint(e)
+          }
         }
-        throw Error(f.unexpected_server_error())
+        throw await q.refresh(), typeof(t == null ? void 0 : t.charges) == `number` ? Error(f.you_do_not_have_enough_charges_to_paint()) : Error(f.unexpected_server_error())
       }
+      throw Error(f.unexpected_server_error())
     }
     async selectAreaClear(e, t) {
       return this.sendPaintRequests(e, (e, t, n) => `/staff/tools/select-area/clear/s${e}/pixel/${t}/${n}`, t)
