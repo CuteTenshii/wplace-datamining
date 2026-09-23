@@ -151,7 +151,7 @@ var S = new WeakMap,
   C = new WeakMap,
   w = class {
     constructor() {
-      t(this, S, e(`loading`)), t(this, C, e(!1)), i(this, `controller`, void 0), i(this, `publicKey`, ``), i(this, `subscription`, void 0), i(this, `lastPreferences`, ``)
+      t(this, S, e(`loading`)), t(this, C, e(!1)), i(this, `controller`, void 0), i(this, `publicKey`, ``), i(this, `subscription`, void 0), i(this, `needsFreshSubscription`, !1), i(this, `lastPreferences`, ``)
     }
     get state() {
       return a(r(S, this))
@@ -169,7 +169,7 @@ var S = new WeakMap,
       var t;
       (t = this.controller) == null || t.abort();
       let n = new AbortController;
-      return this.controller = n, this.subscription = void 0, this.publicKey = ``, this.lastPreferences = ``, this.busy = !1, this.state = `loading`, e !== void 0 && this.refresh(), () => n.abort()
+      return this.controller = n, this.subscription = void 0, this.needsFreshSubscription = !1, this.publicKey = ``, this.lastPreferences = ``, this.busy = !1, this.state = `loading`, e !== void 0 && this.refresh(), () => n.abort()
     }
     async refresh() {
       var e;
@@ -211,7 +211,7 @@ var S = new WeakMap,
       var e;
       let t = (e = this.controller) == null ? void 0 : e.signal;
       if (!(!t || t.aborted || this.busy || !this.publicKey)) {
-        this.busy = !0;
+        this.state === `off` && (this.needsFreshSubscription = !0), this.busy = !0;
         try {
           let e = await Notification.requestPermission();
           if (t.aborted) return;
@@ -223,11 +223,11 @@ var S = new WeakMap,
           if (t.aborted) return;
           let r = Uint8Array.from(atob(this.publicKey.replace(/-/g, `+`).replace(/_/g, `/`)), e => e.charCodeAt(0)),
             i = await n.pushManager.getSubscription();
-          if (i && !T(i.options.applicationServerKey, r) && (await i.unsubscribe(), i = null), t.aborted || (i ?? (i = await n.pushManager.subscribe({
+          if (t.aborted || (i && (this.needsFreshSubscription || !T(i.options.applicationServerKey, r)) && (await i.unsubscribe(), i = null), t.aborted) || (i ?? (i = await n.pushManager.subscribe({
               userVisibleOnly: !0,
               applicationServerKey: r
             })), t.aborted)) return;
-          this.subscription = i;
+          this.subscription = i, this.needsFreshSubscription = !1;
           let a = c.device_notifications_body(),
             l = s.muted,
             u = c.device_notifications_charges_full();
