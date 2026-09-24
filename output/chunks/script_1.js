@@ -261,15 +261,15 @@ function _e(e, t, n = JSON.stringify) {
     sessionStorage[e] = r
   } catch {}
 }
-var ve, ye, b = ((ve = globalThis.__sveltekit_io0iom) == null ? void 0 : ve.base) ?? ``,
-  be = ((ye = globalThis.__sveltekit_io0iom) == null ? void 0 : ye.assets) ?? b ?? ``,
+var ve, ye, b = ((ve = globalThis.__sveltekit_tow5h0) == null ? void 0 : ve.base) ?? ``,
+  be = ((ye = globalThis.__sveltekit_tow5h0) == null ? void 0 : ye.assets) ?? b ?? ``,
   xe = ``;
 
 function Se(...e) {
   if (!e[0].startsWith(`/`)) throw Error(`Cannot use \`resolve(...)\` with a non-absolute pathname or route ID (got "${e[0]}"). \`resolve\` is only for internal pathnames and route IDs; external URLs should be used directly.`);
   return b + xe + me(e[0], e[1])
 }
-var Ce = `1790178135162`,
+var Ce = `1790280443676`,
   we = `sveltekit:snapshot`,
   Te = `sveltekit:scroll`,
   Ee = `sveltekit:states`,
@@ -619,13 +619,13 @@ var yt = new Map,
   kt = new Map;
 async function At(e, t, n) {
   var r, i, a, o;
-  if (globalThis.__sveltekit_io0iom.data) {
+  if (globalThis.__sveltekit_tow5h0.data) {
     let {
       q: e = {},
       p: t = {},
       l: n = {},
       f: r = {}
-    } = globalThis.__sveltekit_io0iom.data;
+    } = globalThis.__sveltekit_tow5h0.data;
     for (let t in e) ht[t] = e[t];
     for (let e in n) ht[e] = n[e];
     for (let e in r) ht[e] = r[e];
