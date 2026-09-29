@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["../chunks/DtVgVdHV.js", "../chunks/DhUcoEdH.js", "../chunks/CXQZkREo.js", "../chunks/B8UK1oE5.js", "../chunks/D15WkdMt.js", "../chunks/QLAwNkgu.js", "../chunks/dNE6JDdE.js", "../chunks/CSDtLXWh.js", "../chunks/CVpbJgLJ.js", "../chunks/DbkcVxHP.js", "../chunks/CNlux1EL.js", "../chunks/8UDvpwwv.js", "../chunks/BQrTMp5r.js", "../chunks/C8-RbvYw.js", "../chunks/BRDYHEO1.js", "../chunks/Dp7tudnO.js", "../chunks/CwYW0Tp4.js", "../chunks/DBQhcLDu.js", "../chunks/BxSxBOVc.js", "../chunks/Dv7tXg6T.js", "../chunks/DxdGK6Xj.js", "../assets/ProfileAvatar.BJvbSQGv.css", "../chunks/C2_QW46g.js", "../chunks/CLD7Muog.js", "../chunks/CDKRP9BU.js", "../chunks/B5z-OrnR.js", "../chunks/0gbu1XOA.js", "../chunks/Dtz7tqQe.js", "../chunks/C1U6_POX.js", "../chunks/CzKw0C95.js", "../chunks/DpHTMA71.js", "../chunks/ndTK5llL.js", "../assets/Dialog.DNSr87Ge.css", "../chunks/CxdA1Dd8.js", "../chunks/ACsVzv1J.js", "../chunks/q6FkEDE1.js", "../chunks/BF9WmNX5.js", "../chunks/CvXA13lr.js", "../chunks/DJZeduIV.js", "../chunks/4wI_qjuy.js", "../chunks/Grual9HJ.js", "../chunks/BiuYodLd.js", "../assets/PatchNote.Bo3nBrG7.css", "../assets/PatchNotesHistory.DshEs1En.css", "../chunks/D6XLRbh5.js", "../chunks/BN6f5k0B.js", "../chunks/DX2WZ23g.js", "../chunks/B0PeK8Vr.js", "../chunks/BvV3YPcV.js", "../chunks/DBY60gXu.js", "../chunks/BqrJ4GHR.js", "../chunks/CISn2y0Y.js", "../chunks/BzSE4Pxk.js", "../chunks/DzVwRkPK.js", "../chunks/CfIseyAc.js", "../chunks/BQX3E7WX.js", "../chunks/BqzBGT9Z.js", "../chunks/auT6d-NR.js", "../chunks/C92E8RN4.js", "../chunks/BmUO2xXg.js", "../chunks/BKXYuc3v.js", "../chunks/CamHOV94.js", "../chunks/D4Mcw-zE.js", "../chunks/BGMubxmR.js", "../chunks/BJtHmOv1.js", "../chunks/B5e6E2zr.js", "../chunks/B1BL8VYs.js", "../chunks/Bu-SEXZL.js", "../chunks/bVaH9Nps.js", "../chunks/DWCyuQgR.js", "../chunks/C9QkzfEd.js", "../assets/AllianceEmblem.D0apFo1m.css", "../chunks/Rq5P3Mf9.js", "../chunks/BiLu542M.js", "../chunks/N3PRnW59.js", "../assets/ReportIcon.DFV4bYFa.css", "../chunks/2WVnyACY.js", "../chunks/rQ4Oq0dg.js", "../chunks/BYBkxIaG.js", "../chunks/G0v63VxN.js", "../chunks/BmqwHJFK.js", "../chunks/C1Ayqh5j.js", "../chunks/wfZxGnQ8.js", "../chunks/NiZZboiu.js", "../chunks/D28IfFrI.js", "../chunks/CFH7SLmE.js", "../chunks/-d8bC4tg.js", "../assets/PaintButton.BxohQuzr.css", "../chunks/BslbGjGv.js", "../chunks/Cbdho68-.js", "../chunks/eFD9sEfy.js", "../chunks/DNpvYCSi.js", "../chunks/CoZRBVfr.js", "../chunks/pINoARlM.js", "../chunks/DoMGf1ZY.js", "../chunks/X0VV-EsY.js", "../chunks/Dk-Ss5d4.js", "../chunks/CLNZw3sL.js", "../chunks/gjseowt8.js", "../assets/dist.CMIz6mFI.css", "../chunks/B2tPKebD.js", "../chunks/CwSnGc_b.js", "../chunks/CbjgvbaR.js", "../chunks/Dpi1ISn9.js", "../chunks/CU-fCF4r.js", "../chunks/rUZERyNl.js", "../chunks/xTC5Mitu.js", "../chunks/D70MKFm6.js", "../chunks/B260044E.js", "../chunks/BobvV1il.js", "../chunks/Cdwrbmcb.js", "../assets/PaintPixel.DJ8VqPFX.css", "../chunks/cBjrlx8u.js", "../chunks/CVh2Ql_i.js", "../chunks/BKhtJ9M_.js", "../chunks/D8gGQvL8.js", "../chunks/CSsWb-pm.js", "../chunks/AVvx7oyi.js", "../chunks/o6KNf_Gh.js", "../chunks/BL0gWLsx.js", "../chunks/BzYwzQc6.js", "../chunks/CExEOaFW.js", "../assets/timelapse-engine.Cdl2XpaI.css", "../assets/SelectAreaInfo.DL4EVZ8P.css", "../chunks/DGZiNOLH.js", "../chunks/SWxwFD_1.js", "../chunks/CApouMFD.js", "../chunks/DFjwwa9z.js", "../chunks/BfFyfnyU.js", "../chunks/DcXTpDZI.js", "../chunks/BIDxicRS.js", "../chunks/CL4SYce-.js", "../chunks/CHs5IlSX.js", "../chunks/B6e74eJx.js", "../chunks/DEGcKE52.js", "../chunks/BJr4hJuT.js", "../chunks/Sd01M7mm.js", "../chunks/BHy12g0g.js", "../chunks/Do_lei5W.js", "../chunks/L0mGyy9H.js", "../assets/gallery.DnZuhzp4.css", "../chunks/Ch3sG4Uc.js", "../assets/OverlayPanel.BGIKdssV.css", "../chunks/BtxoxSfP.js", "../chunks/CFdaKzAe.js", "../chunks/DHk7oxwU.js", "../chunks/BT5g9_hJ.js", "../chunks/BxH1DFBG.js", "../chunks/D0k9tVcK.js", "../chunks/C3FYCm7S.js", "../chunks/DcPQvhQY.js", "../chunks/CMksPq6k.js", "../chunks/BYyfn2Zx.js", "../assets/StoreDialog.Bq80ARjR.css", "../chunks/ClrtDCRK.js", "../chunks/C6UUOd5q.js", "../chunks/f6dIMNkY.js", "../chunks/bD7qABAj.js", "../chunks/Bskt2JWY.js", "../chunks/CVnLwj5c.js", "../chunks/DpqtZgRJ.js", "../chunks/Eqlh3d3O.js", "../chunks/BNBs5qLO.js", "../chunks/CH0fFWT9.js", "../chunks/CgTemYMo.js", "../chunks/CerqvRQK.js", "../chunks/CFHiWz_Q.js", "../chunks/gdyuyK4Q.js", "../chunks/CKiiazTH.js", "../assets/LimitedTextArea.CcOx7Kbg.css", "../chunks/DZh6ErKi.js", "../chunks/koThMwNn.js", "../chunks/vAjBr_oo.js", "../chunks/DX8qE-pT.js", "../chunks/CPZQsXR7.js", "../assets/StripeEmbeddedCheckout.Bqh6-qGN.css", "../chunks/DFQSc5ez.js", "../chunks/kzHCHWB_.js", "../chunks/DkYr7Uwg.js", "../chunks/YjBA_dHS.js", "../chunks/DAfbFrB8.js", "../chunks/lD6YnJ4r.js", "../chunks/DOPlxyP1.js", "../chunks/DQRAtIoB.js", "../chunks/DjytnnWy.js", "../chunks/CS1Ie0lu.js", "../chunks/DEvaqhqV.js", "../chunks/BGMJzNFa.js", "../chunks/B2Hmha5U.js", "../chunks/xNHa8Oqt.js", "../chunks/BzAHqvA1.js", "../chunks/-69ah8JQ.js", "../chunks/CrAO6ckc.js", "../assets/AlliancePixelBurst.O4J_SVfL.css", "../chunks/CIHv6yM4.js", "../chunks/DN8eBuTr.js", "../chunks/CuYwBRKD.js", "../chunks/DIiZFRQk.js", "../assets/OverlayBuildHud.BIwcEI5w.css", "../chunks/CxrKU7ME.js", "../assets/AllianceDialog.BJh7N1ME.css", "../chunks/CUVikkdZ.js", "../assets/AllianceGalleryDialog.CkWt2wOR.css", "../chunks/Dq80D0GM.js", "../chunks/BMYfhqew.js", "../chunks/BTwX_3Wx.js", "../chunks/DhFLVJZG.js", "../chunks/hDhnglVE.js", "../chunks/Dwft00Qz.js", "../chunks/7E8a9rTw.js", "../chunks/CWjyFmrc.js", "../chunks/DfSu8gSj.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["../chunks/BM-FG6fR.js", "../chunks/DhUcoEdH.js", "../chunks/tbwb2rqy.js", "../chunks/B8UK1oE5.js", "../chunks/D15WkdMt.js", "../chunks/QLAwNkgu.js", "../chunks/dNE6JDdE.js", "../chunks/CSDtLXWh.js", "../chunks/BHmzL0eJ.js", "../chunks/DbkcVxHP.js", "../chunks/CNlux1EL.js", "../chunks/8UDvpwwv.js", "../chunks/BQrTMp5r.js", "../chunks/C8-RbvYw.js", "../chunks/BRDYHEO1.js", "../chunks/Dp7tudnO.js", "../chunks/CwYW0Tp4.js", "../chunks/DBQhcLDu.js", "../chunks/BxSxBOVc.js", "../chunks/Dv7tXg6T.js", "../chunks/DxdGK6Xj.js", "../assets/ProfileAvatar.BJvbSQGv.css", "../chunks/C2_QW46g.js", "../chunks/CLD7Muog.js", "../chunks/CDKRP9BU.js", "../chunks/B5z-OrnR.js", "../chunks/0gbu1XOA.js", "../chunks/Dtz7tqQe.js", "../chunks/C1U6_POX.js", "../chunks/CzKw0C95.js", "../chunks/DpHTMA71.js", "../chunks/ndTK5llL.js", "../assets/Dialog.DNSr87Ge.css", "../chunks/CxdA1Dd8.js", "../chunks/ACsVzv1J.js", "../chunks/q6FkEDE1.js", "../chunks/BF9WmNX5.js", "../chunks/CvXA13lr.js", "../chunks/DJZeduIV.js", "../chunks/4wI_qjuy.js", "../chunks/Grual9HJ.js", "../chunks/BiuYodLd.js", "../assets/PatchNote.Bo3nBrG7.css", "../assets/PatchNotesHistory.DshEs1En.css", "../chunks/D6XLRbh5.js", "../chunks/BN6f5k0B.js", "../chunks/6I9CkoiV.js", "../chunks/DynUnjmP.js", "../chunks/BvV3YPcV.js", "../chunks/BJc45wcj.js", "../chunks/BqrJ4GHR.js", "../chunks/CISn2y0Y.js", "../chunks/BzSE4Pxk.js", "../chunks/DzVwRkPK.js", "../chunks/Bz7QCgZw.js", "../chunks/BQX3E7WX.js", "../chunks/BqzBGT9Z.js", "../chunks/auT6d-NR.js", "../chunks/ByupNcPP.js", "../chunks/BmUO2xXg.js", "../chunks/BKXYuc3v.js", "../chunks/CamHOV94.js", "../chunks/D4Mcw-zE.js", "../chunks/BGMubxmR.js", "../chunks/BJtHmOv1.js", "../chunks/B5e6E2zr.js", "../chunks/B1BL8VYs.js", "../chunks/Bu-SEXZL.js", "../chunks/bVaH9Nps.js", "../chunks/DWCyuQgR.js", "../chunks/C9QkzfEd.js", "../assets/AllianceEmblem.D0apFo1m.css", "../chunks/Rq5P3Mf9.js", "../chunks/BiLu542M.js", "../chunks/N3PRnW59.js", "../assets/ReportIcon.DFV4bYFa.css", "../chunks/2WVnyACY.js", "../chunks/rQ4Oq0dg.js", "../chunks/BYBkxIaG.js", "../chunks/G0v63VxN.js", "../chunks/BmqwHJFK.js", "../chunks/DRmMeGGo.js", "../chunks/wfZxGnQ8.js", "../chunks/NiZZboiu.js", "../chunks/D28IfFrI.js", "../chunks/CFH7SLmE.js", "../chunks/-d8bC4tg.js", "../assets/PaintButton.BxohQuzr.css", "../chunks/BslbGjGv.js", "../chunks/Cbdho68-.js", "../chunks/eFD9sEfy.js", "../chunks/DNpvYCSi.js", "../chunks/CoZRBVfr.js", "../chunks/pINoARlM.js", "../chunks/DoMGf1ZY.js", "../chunks/X0VV-EsY.js", "../chunks/Dk-Ss5d4.js", "../chunks/CLNZw3sL.js", "../chunks/gjseowt8.js", "../assets/dist.CMIz6mFI.css", "../chunks/B2tPKebD.js", "../chunks/CwSnGc_b.js", "../chunks/CbjgvbaR.js", "../chunks/Dpi1ISn9.js", "../chunks/CU-fCF4r.js", "../chunks/CuiT_vCh.js", "../chunks/xTC5Mitu.js", "../chunks/D70MKFm6.js", "../chunks/B260044E.js", "../chunks/BobvV1il.js", "../chunks/Cdwrbmcb.js", "../assets/PaintPixel.DJ8VqPFX.css", "../chunks/cBjrlx8u.js", "../chunks/CVh2Ql_i.js", "../chunks/BKhtJ9M_.js", "../chunks/D8gGQvL8.js", "../chunks/CSsWb-pm.js", "../chunks/AVvx7oyi.js", "../chunks/o6KNf_Gh.js", "../chunks/BL0gWLsx.js", "../chunks/BzYwzQc6.js", "../chunks/CExEOaFW.js", "../assets/timelapse-engine.Cdl2XpaI.css", "../assets/SelectAreaInfo.DL4EVZ8P.css", "../chunks/BryDtdtL.js", "../chunks/SWxwFD_1.js", "../chunks/DFjwwa9z.js", "../chunks/BfFyfnyU.js", "../chunks/DcXTpDZI.js", "../chunks/BIDxicRS.js", "../chunks/CL4SYce-.js", "../chunks/CHs5IlSX.js", "../chunks/B6e74eJx.js", "../chunks/DEGcKE52.js", "../chunks/BJr4hJuT.js", "../chunks/BbCevI5e.js", "../chunks/BHy12g0g.js", "../chunks/Do_lei5W.js", "../chunks/L0mGyy9H.js", "../assets/gallery.DnZuhzp4.css", "../chunks/CApouMFD.js", "../chunks/Ch3sG4Uc.js", "../assets/OverlayPanel.BGIKdssV.css", "../chunks/BtxoxSfP.js", "../chunks/CFdaKzAe.js", "../chunks/DHk7oxwU.js", "../chunks/CzPYLqXM.js", "../chunks/BxH1DFBG.js", "../chunks/D0k9tVcK.js", "../chunks/C3FYCm7S.js", "../chunks/DcPQvhQY.js", "../chunks/CMksPq6k.js", "../chunks/BYyfn2Zx.js", "../assets/StoreDialog.Bq80ARjR.css", "../chunks/ClrtDCRK.js", "../chunks/C6UUOd5q.js", "../chunks/f6dIMNkY.js", "../chunks/bD7qABAj.js", "../chunks/Bskt2JWY.js", "../chunks/DriiQ44n.js", "../chunks/DpqtZgRJ.js", "../chunks/Eqlh3d3O.js", "../chunks/BNBs5qLO.js", "../chunks/CH0fFWT9.js", "../chunks/CgTemYMo.js", "../chunks/CerqvRQK.js", "../chunks/CFHiWz_Q.js", "../chunks/gdyuyK4Q.js", "../chunks/CKiiazTH.js", "../assets/LimitedTextArea.CcOx7Kbg.css", "../chunks/DZh6ErKi.js", "../chunks/C62KQIWr.js", "../chunks/vAjBr_oo.js", "../chunks/BG7iaekm.js", "../chunks/cCd8265r.js", "../assets/StripeEmbeddedCheckout.Bqh6-qGN.css", "../chunks/BW-L7BcD.js", "../chunks/BaIJayI9.js", "../chunks/DkYr7Uwg.js", "../chunks/YjBA_dHS.js", "../chunks/DAfbFrB8.js", "../chunks/lD6YnJ4r.js", "../chunks/DOPlxyP1.js", "../chunks/DQRAtIoB.js", "../chunks/DjytnnWy.js", "../chunks/CS1Ie0lu.js", "../chunks/DEvaqhqV.js", "../chunks/BGMJzNFa.js", "../chunks/B2Hmha5U.js", "../chunks/xNHa8Oqt.js", "../chunks/BzAHqvA1.js", "../chunks/-69ah8JQ.js", "../chunks/CrAO6ckc.js", "../assets/AlliancePixelBurst.O4J_SVfL.css", "../chunks/CIHv6yM4.js", "../chunks/BzBVplhd.js", "../chunks/CuYwBRKD.js", "../chunks/DIiZFRQk.js", "../assets/OverlayBuildHud.BIwcEI5w.css", "../chunks/CxrKU7ME.js", "../assets/AllianceDialog.BJh7N1ME.css", "../chunks/CUVikkdZ.js", "../assets/AllianceGalleryDialog.CkWt2wOR.css", "../chunks/Dq80D0GM.js", "../chunks/BMYfhqew.js", "../chunks/BNCkYpgy.js", "../chunks/DhFLVJZG.js", "../chunks/hDhnglVE.js", "../chunks/Dwft00Qz.js", "../chunks/7E8a9rTw.js", "../chunks/CWjyFmrc.js", "../chunks/DfSu8gSj.js"]))) => i.map(i => d[i]);
 import {
   $ as e,
   At as t,
@@ -64,7 +64,7 @@ import {
 } from "../chunks/DhUcoEdH.js";
 import {
   i as ge
-} from "../chunks/CXQZkREo.js";
+} from "../chunks/tbwb2rqy.js";
 import {
   a as G,
   i as _e,
@@ -116,14 +116,14 @@ import {
   s as Ue,
   t as We,
   u as Ge
-} from "../chunks/B0PeK8Vr.js";
+} from "../chunks/DynUnjmP.js";
 import {
   t as Ke
 } from "../chunks/CFdaKzAe.js";
 import {
   t as qe
-} from "../chunks/DBY60gXu.js";
-import "../chunks/CVpbJgLJ.js";
+} from "../chunks/BJc45wcj.js";
+import "../chunks/BHmzL0eJ.js";
 import {
   t as Je
 } from "../chunks/BxSxBOVc.js";
@@ -175,7 +175,7 @@ import {
 } from "../chunks/auT6d-NR.js";
 import {
   n as ht
-} from "../chunks/C92E8RN4.js";
+} from "../chunks/ByupNcPP.js";
 import {
   t as gt
 } from "../chunks/B5e6E2zr.js";
@@ -204,117 +204,114 @@ import {
 } from "../chunks/DhFLVJZG.js";
 import {
   t as At
-} from "../chunks/CApouMFD.js";
-import {
-  t as jt
 } from "../chunks/CISn2y0Y.js";
 import {
-  n as Mt,
-  t as Nt
+  n as jt,
+  t as Mt
 } from "../chunks/BmUO2xXg.js";
 import {
-  i as Pt,
-  r as Ft,
-  t as It
+  i as Nt,
+  r as Pt,
+  t as Ft
 } from "../chunks/CFH7SLmE.js";
 import {
-  r as Lt
+  r as It
 } from "../chunks/BKXYuc3v.js";
 import {
-  t as Rt
+  t as Lt
 } from "../chunks/ndTK5llL.js";
 import {
-  a as zt
+  a as Rt
 } from "../chunks/C8-RbvYw.js";
 import {
-  t as Bt
+  t as zt
 } from "../chunks/BQrTMp5r.js";
 import {
-  t as Vt
+  t as Bt
 } from "../chunks/CwYW0Tp4.js";
 import {
-  r as Ht,
-  t as Ut
+  r as Vt,
+  t as Ht
 } from "../chunks/Dv7tXg6T.js";
 import {
-  t as Wt
+  t as Ut
 } from "../chunks/C2_QW46g.js";
 import {
-  t as Gt
+  t as Wt
 } from "../chunks/BKhtJ9M_.js";
 import {
-  t as Kt
+  t as Gt
 } from "../chunks/DFjwwa9z.js";
 import {
-  n as qt,
-  t as Jt
+  n as Kt,
+  t as qt
 } from "../chunks/BxH1DFBG.js";
 import {
-  t as Yt
+  t as Jt
 } from "../chunks/YjBA_dHS.js";
 import {
-  t as Xt
+  t as Yt
 } from "../chunks/DAfbFrB8.js";
 import {
-  t as Zt
+  t as Xt
 } from "../chunks/DIiZFRQk.js";
 import {
-  t as Qt
+  t as Zt
 } from "../chunks/lD6YnJ4r.js";
 import {
-  t as $t
+  t as Qt
 } from "../chunks/4wI_qjuy.js";
 import {
-  t as en
+  t as $t
 } from "../chunks/D8gGQvL8.js";
 import {
-  t as tn
+  t as en
 } from "../chunks/CSsWb-pm.js";
 import {
-  n as nn
+  n as tn
 } from "../chunks/DOPlxyP1.js";
 import {
-  a as rn,
-  t as an
+  a as nn,
+  t as rn
 } from "../chunks/CliVqrlC.js";
 import {
-  t as on
+  t as an
 } from "../chunks/DcXTpDZI.js";
 import {
-  n as sn
+  n as on
 } from "../chunks/BIDxicRS.js";
 import {
-  t as cn
+  t as sn
 } from "../chunks/CL4SYce-.js";
 import {
-  t as ln
+  t as cn
 } from "../chunks/Eqlh3d3O.js";
 import {
-  t as un
+  t as ln
 } from "../chunks/CLD7Muog.js";
 import {
-  t as dn
+  t as un
 } from "../chunks/DNpvYCSi.js";
 import {
-  t as fn
+  t as dn
 } from "../chunks/CDKRP9BU.js";
 import {
-  t as pn
+  t as fn
 } from "../chunks/CamHOV94.js";
 import {
-  t as mn
+  t as pn
 } from "../chunks/CoZRBVfr.js";
 import {
-  t as hn
+  t as mn
 } from "../chunks/CHs5IlSX.js";
-var gn = oe(mt(), 1),
-  _n = `
+var hn = oe(mt(), 1),
+  gn = `
 // The repeated image coordinate needs enough precision to address every annotation pixel.
 // mediump produces visible sampling artifacts on GPUs that implement it with a 10-bit mantissa.
 precision highp float;
 const float COORDINATE_BIAS = 1.0 / 4096.0;
 `,
-  vn = `
+  _n = `
 attribute vec2 a_position;
 attribute vec2 a_patch_coord;
 attribute vec2 a_mask_origin;
@@ -329,8 +326,8 @@ void main() {
   gl_Position = u_matrix * vec4(a_position * u_world_size, 0.0, 1.0);
 }
 `,
-  yn = `
-${_n}
+  vn = `
+${gn}
 uniform sampler2D u_mask;
 uniform sampler2D u_image;
 uniform float u_canvas_size;
@@ -353,7 +350,7 @@ void main() {
   gl_FragColor = color;
 }
 `,
-  bn = `#version 300 es
+  yn = `#version 300 es
 in vec2 a_position;
 in vec2 a_patch_coord;
 in vec2 a_mask_origin;
@@ -368,8 +365,8 @@ void main() {
   gl_Position = u_matrix * vec4(a_position * u_world_size, 0.0, 1.0);
 }
 `,
-  xn = `#version 300 es
-${_n}
+  bn = `#version 300 es
+${gn}
 uniform sampler2D u_mask;
 uniform sampler2D u_image;
 uniform float u_canvas_size;
@@ -393,18 +390,18 @@ void main() {
   fragment_color = color;
 }
 `,
-  Sn = 16,
-  Cn = Float32Array.BYTES_PER_ELEMENT,
-  wn = 2,
-  Tn = 0,
-  En = 2,
-  Dn = 4,
-  On = 6,
-  kn = On * Cn,
-  An = Tn * Cn,
-  jn = En * Cn,
-  Mn = Dn * Cn,
-  Nn = class {
+  xn = 16,
+  Sn = Float32Array.BYTES_PER_ELEMENT,
+  Cn = 2,
+  wn = 0,
+  Tn = 2,
+  En = 4,
+  Dn = 6,
+  On = Dn * Sn,
+  kn = wn * Sn,
+  An = Tn * Sn,
+  jn = En * Sn,
+  Mn = class {
     constructor(e, t, n, r) {
       L(this, `id`, void 0), L(this, `map`, void 0), L(this, `image`, void 0), L(this, `canvasSize`, void 0), L(this, `type`, `custom`), L(this, `renderingMode`, `2d`), L(this, `tiles`, new Map), L(this, `gl`, void 0), L(this, `program`, void 0), L(this, `imageTexture`, void 0), L(this, `translatedMatrix`, new Float32Array(16)), L(this, `positionLocation`, -1), L(this, `patchCoordinateLocation`, -1), L(this, `maskOriginLocation`, -1), L(this, `uniforms`, void 0), L(this, `opacity`, .8), L(this, `listeningForStyleChanges`, !1), L(this, `handleStyleLoad`, () => {
         this.tiles.size > 0 && this.ensureAdded()
@@ -437,7 +434,7 @@ void main() {
       this.opacity = e, this.map.triggerRepaint()
     }
     onAdd(e, t) {
-      if (this.gl = t, this.program = Pn(t) ? In(t, bn, xn) : In(t, vn, yn), this.imageTexture = t.createTexture() ?? void 0, !this.program || !this.imageTexture) throw Error(`Unable to initialize the pixel annotation renderer`);
+      if (this.gl = t, this.program = Nn(t) ? Fn(t, yn, bn) : Fn(t, _n, vn), this.imageTexture = t.createTexture() ?? void 0, !this.program || !this.imageTexture) throw Error(`Unable to initialize the pixel annotation renderer`);
       this.positionLocation = t.getAttribLocation(this.program, `a_position`), this.patchCoordinateLocation = t.getAttribLocation(this.program, `a_patch_coord`), this.maskOriginLocation = t.getAttribLocation(this.program, `a_mask_origin`), this.uniforms = {
         matrix: t.getUniformLocation(this.program, `u_matrix`),
         worldSize: t.getUniformLocation(this.program, `u_world_size`),
@@ -445,7 +442,7 @@ void main() {
         image: t.getUniformLocation(this.program, `u_image`),
         canvasSize: t.getUniformLocation(this.program, `u_canvas_size`),
         opacity: t.getUniformLocation(this.program, `u_opacity`)
-      }, t.activeTexture(t.TEXTURE1), t.bindTexture(t.TEXTURE_2D, this.imageTexture), Fn(t), t.pixelStorei(t.UNPACK_FLIP_Y_WEBGL, !0), t.texImage2D(t.TEXTURE_2D, 0, t.RGBA, t.RGBA, t.UNSIGNED_BYTE, this.image), t.pixelStorei(t.UNPACK_FLIP_Y_WEBGL, !1);
+      }, t.activeTexture(t.TEXTURE1), t.bindTexture(t.TEXTURE_2D, this.imageTexture), Pn(t), t.pixelStorei(t.UNPACK_FLIP_Y_WEBGL, !0), t.texImage2D(t.TEXTURE_2D, 0, t.RGBA, t.RGBA, t.UNSIGNED_BYTE, this.image), t.pixelStorei(t.UNPACK_FLIP_Y_WEBGL, !1);
       for (let e of this.tiles.values()) e.texture = void 0, e.vertexBuffer = void 0, e.dirty = !0
     }
     render(e, {
@@ -457,7 +454,7 @@ void main() {
         worldSize: n
       } = this.map.transform, [r, i] = this.getRasterAlignmentOffset(n);
       e.uniform1f(this.uniforms.worldSize, n), e.uniform1f(this.uniforms.canvasSize, this.canvasSize), e.uniform1f(this.uniforms.opacity, this.opacity), e.uniform1i(this.uniforms.mask, 0), e.uniform1i(this.uniforms.image, 1), e.activeTexture(e.TEXTURE1), e.bindTexture(e.TEXTURE_2D, this.imageTexture), this.positionLocation >= 0 && e.enableVertexAttribArray(this.positionLocation), this.patchCoordinateLocation >= 0 && e.enableVertexAttribArray(this.patchCoordinateLocation), this.maskOriginLocation >= 0 && e.enableVertexAttribArray(this.maskOriginLocation), e.enable(e.BLEND), e.blendFunc(e.ONE, e.ONE_MINUS_SRC_ALPHA), e.disable(e.DEPTH_TEST), e.disable(e.CULL_FACE), e.disable(e.STENCIL_TEST);
-      for (let a of this.tiles.values()) this.prepareTileVertexBuffer(e, a), a.vertexBuffer && (e.bindBuffer(e.ARRAY_BUFFER, a.vertexBuffer), this.positionLocation >= 0 && e.vertexAttribPointer(this.positionLocation, wn, e.FLOAT, !1, kn, An), this.patchCoordinateLocation >= 0 && e.vertexAttribPointer(this.patchCoordinateLocation, wn, e.FLOAT, !1, kn, jn), this.maskOriginLocation >= 0 && e.vertexAttribPointer(this.maskOriginLocation, wn, e.FLOAT, !1, kn, Mn), this.translateMatrix(t, a.origin[0] * n + r, a.origin[1] * n + i), e.uniformMatrix4fv(this.uniforms.matrix, !1, this.translatedMatrix), this.prepareTileTexture(e, a), e.activeTexture(e.TEXTURE0), e.bindTexture(e.TEXTURE_2D, a.texture ?? null), e.drawArrays(e.TRIANGLES, 0, a.vertices.length / On))
+      for (let a of this.tiles.values()) this.prepareTileVertexBuffer(e, a), a.vertexBuffer && (e.bindBuffer(e.ARRAY_BUFFER, a.vertexBuffer), this.positionLocation >= 0 && e.vertexAttribPointer(this.positionLocation, Cn, e.FLOAT, !1, On, kn), this.patchCoordinateLocation >= 0 && e.vertexAttribPointer(this.patchCoordinateLocation, Cn, e.FLOAT, !1, On, An), this.maskOriginLocation >= 0 && e.vertexAttribPointer(this.maskOriginLocation, Cn, e.FLOAT, !1, On, jn), this.translateMatrix(t, a.origin[0] * n + r, a.origin[1] * n + i), e.uniformMatrix4fv(this.uniforms.matrix, !1, this.translatedMatrix), this.prepareTileTexture(e, a), e.activeTexture(e.TEXTURE0), e.bindTexture(e.TEXTURE_2D, a.texture ?? null), e.drawArrays(e.TRIANGLES, 0, a.vertices.length / Dn))
     }
     onRemove(e, t) {
       for (let e of this.tiles.values()) e.texture && (t.deleteTexture(e.texture), e.texture = void 0), e.vertexBuffer && (t.deleteBuffer(e.vertexBuffer), e.vertexBuffer = void 0), e.dirty = !0;
@@ -469,16 +466,16 @@ void main() {
     prepareTileTexture(e, t) {
       if (!t.texture) {
         if (t.texture = e.createTexture() ?? void 0, !t.texture) return;
-        e.activeTexture(e.TEXTURE0), e.bindTexture(e.TEXTURE_2D, t.texture), Fn(e), t.dirty = !0
+        e.activeTexture(e.TEXTURE0), e.bindTexture(e.TEXTURE_2D, t.texture), Pn(e), t.dirty = !0
       }
-      t.dirty && (e.activeTexture(e.TEXTURE0), e.bindTexture(e.TEXTURE_2D, t.texture), e.pixelStorei(e.UNPACK_ALIGNMENT, 1), Pn(e) ? e.texImage2D(e.TEXTURE_2D, 0, e.R8, this.canvasSize, this.canvasSize, 0, e.RED, e.UNSIGNED_BYTE, t.annotations) : e.texImage2D(e.TEXTURE_2D, 0, e.LUMINANCE, this.canvasSize, this.canvasSize, 0, e.LUMINANCE, e.UNSIGNED_BYTE, t.annotations), e.pixelStorei(e.UNPACK_ALIGNMENT, 4), t.dirty = !1)
+      t.dirty && (e.activeTexture(e.TEXTURE0), e.bindTexture(e.TEXTURE_2D, t.texture), e.pixelStorei(e.UNPACK_ALIGNMENT, 1), Nn(e) ? e.texImage2D(e.TEXTURE_2D, 0, e.R8, this.canvasSize, this.canvasSize, 0, e.RED, e.UNSIGNED_BYTE, t.annotations) : e.texImage2D(e.TEXTURE_2D, 0, e.LUMINANCE, this.canvasSize, this.canvasSize, 0, e.LUMINANCE, e.UNSIGNED_BYTE, t.annotations), e.pixelStorei(e.UNPACK_ALIGNMENT, 4), t.dirty = !1)
     }
     prepareTileVertexBuffer(e, t) {
       t.vertexBuffer || (t.vertexBuffer = e.createBuffer() ?? void 0, t.vertexBuffer && (e.bindBuffer(e.ARRAY_BUFFER, t.vertexBuffer), e.bufferData(e.ARRAY_BUFFER, t.vertices, e.STATIC_DRAW)))
     }
     createVertices(e) {
       let t = e.map(([e, t]) => {
-          let n = gn.default.MercatorCoordinate.fromLngLat({
+          let n = hn.default.MercatorCoordinate.fromLngLat({
             lng: e,
             lat: t
           });
@@ -497,10 +494,10 @@ void main() {
         l = (e, t, n, r, i) => {
           s.push(...e, t, n, r, i)
         };
-      for (let e = 0; e < this.canvasSize; e += Sn)
-        for (let t = 0; t < this.canvasSize; t += Sn) {
-          let n = Math.min(Sn, this.canvasSize - t),
-            r = Math.min(Sn, this.canvasSize - e),
+      for (let e = 0; e < this.canvasSize; e += xn)
+        for (let t = 0; t < this.canvasSize; t += xn) {
+          let n = Math.min(xn, this.canvasSize - t),
+            r = Math.min(xn, this.canvasSize - e),
             i = t / this.canvasSize,
             a = e / this.canvasSize,
             o = (t + n) / this.canvasSize,
@@ -523,7 +520,7 @@ void main() {
         center: n,
         height: r,
         width: i
-      } = this.map.transform, a = gn.default.MercatorCoordinate.fromLngLat(n), o = a.x * e, s = a.y * e, c = i % 2 / 2, l = r % 2 / 2, u = Math.cos(t), d = Math.sin(-t), f = o - Math.round(o) + u * c + d * l, p = s - Math.round(s) + u * l + d * c;
+      } = this.map.transform, a = hn.default.MercatorCoordinate.fromLngLat(n), o = a.x * e, s = a.y * e, c = i % 2 / 2, l = r % 2 / 2, u = Math.cos(t), d = Math.sin(-t), f = o - Math.round(o) + u * c + d * l, p = s - Math.round(s) + u * l + d * c;
       return [f - Math.round(f), p - Math.round(p)]
     }
     translateMatrix(e, t, n) {
@@ -531,17 +528,17 @@ void main() {
     }
   };
 
-function Pn(e) {
+function Nn(e) {
   return typeof WebGL2RenderingContext < `u` && e instanceof WebGL2RenderingContext
 }
 
-function Fn(e) {
+function Pn(e) {
   e.texParameteri(e.TEXTURE_2D, e.TEXTURE_MIN_FILTER, e.NEAREST), e.texParameteri(e.TEXTURE_2D, e.TEXTURE_MAG_FILTER, e.NEAREST), e.texParameteri(e.TEXTURE_2D, e.TEXTURE_WRAP_S, e.CLAMP_TO_EDGE), e.texParameteri(e.TEXTURE_2D, e.TEXTURE_WRAP_T, e.CLAMP_TO_EDGE)
 }
 
-function In(e, t, n) {
-  let r = Ln(e, e.VERTEX_SHADER, t),
-    i = Ln(e, e.FRAGMENT_SHADER, n),
+function Fn(e, t, n) {
+  let r = In(e, e.VERTEX_SHADER, t),
+    i = In(e, e.FRAGMENT_SHADER, n),
     a = e.createProgram();
   if (!r || !i || !a) {
     r && e.deleteShader(r), i && e.deleteShader(i), a && e.deleteProgram(a);
@@ -554,7 +551,7 @@ function In(e, t, n) {
   return a
 }
 
-function Ln(e, t, n) {
+function In(e, t, n) {
   let r = e.createShader(t);
   if (r) {
     if (e.shaderSource(r, n), e.compileShader(r), !e.getShaderParameter(r, e.COMPILE_STATUS)) {
@@ -564,11 +561,11 @@ function Ln(e, t, n) {
     return r
   }
 }
-var Rn = class {
+var Ln = class {
     constructor(e) {
       L(this, `input`, void 0), L(this, `gm`, void 0), L(this, `markers`, new Map), L(this, `canvases`, new Map), L(this, `canvasSize`, void 0), L(this, `annotationLayer`, void 0), this.input = e, this.gm = new pt(this.input.tileSize);
-      let t = Bn(e.img);
-      this.canvasSize = Math.ceil(2e3 / t), this.annotationLayer = new Nn(`${e.id}-annotations`, e.map, e.img, this.canvasSize)
+      let t = zn(e.img);
+      this.canvasSize = Math.ceil(2e3 / t), this.annotationLayer = new Mn(`${e.id}-annotations`, e.map, e.img, this.canvasSize)
     }
     place([e, t]) {
       let [n, r] = this.gm.latLonToPixelsFloor(e, t, this.input.zoom);
@@ -744,7 +741,7 @@ var Rn = class {
         s = a + this.canvasSize - 1,
         c = this.gm.pixelsToLatLon(i, s + 1, this.input.zoom),
         l = this.gm.pixelsToLatLon(o + 1, a, this.input.zoom);
-      return r = new zn({
+      return r = new Rn({
         id: `${this.input.id}-${e}`,
         canvasSize: this.canvasSize,
         coordinates: dt({
@@ -755,7 +752,7 @@ var Rn = class {
       }), r.addTo(), this.canvases.set(e, r), r
     }
   },
-  zn = class {
+  Rn = class {
     constructor(e) {
       L(this, `input`, void 0), L(this, `annotations`, void 0), L(this, `annotationCount`, 0), this.input = e, this.annotations = new Uint8Array(this.input.canvasSize * this.input.canvasSize)
     }
@@ -838,11 +835,11 @@ var Rn = class {
     }
   };
 
-function Bn(e) {
+function zn(e) {
   return Math.max(e.naturalWidth, e.naturalHeight)
 }
 
-function Vn(e, n) {
+function Bn(e, n) {
   u(n, !0);
   let r = j(n, `color`, 3, `#b71c1c`);
   j(n, `opacity`, 3, .2);
@@ -1072,22 +1069,9 @@ function Vn(e, n) {
     R(ne) && n.image && k()
   }), ue()
 }
-var Hn = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  Un = k(`<svg><path d="M466-320v-58q0-39 13-67.5T527-501q41-36 56.5-61t15.5-52q0-36-24-58t-65-22q-38 0-65.5 20T405-619l-56-24q18-52 59-83t95-31q63 0 105 37.5T650-614q0 36-15.5 64T586-494q-42 38-53.5 61.5T521-378v58h-55Zm26 160q-17 0-28.5-11.5T452-200q0-17 11.5-28.5T492-240q17 0 28.5 11.5T532-200q0 17-11.5 28.5T492-160Z"></path></svg>`);
-
-function Wn(e, t) {
-  let n = F(t, Hn);
-  var r = Un();
-  V(r, () => ({
-    xmlns: `http://www.w3.org/2000/svg`,
-    viewBox: `0 -960 960 960`,
-    fill: `currentColor`,
-    ...n
-  })), l(e, r)
-}
-var Gn = (e, t = M, n = M, r = M) => {
+var Vn = (e, t = M, n = M, r = M) => {
     let a = h(t);
-    var o = Jn(),
+    var o = Wn(),
       s = i(o),
       c = i(s);
     f(c, () => R(a), (e, t) => {
@@ -1105,23 +1089,18 @@ var Gn = (e, t = M, n = M, r = M) => {
       d(m, n()), d(_, r())
     }), l(e, o)
   },
-  Kn = (e, t = M, n = M, r = M, o = M) => {
-    let s = h(t);
-    var c = Zn(),
+  Hn = (e, t = M, n = M, r = M, o = M) => {
+    var s = qn(),
+      c = i(s),
       u = i(c),
-      p = i(u),
-      m = i(p);
-    f(m, () => R(s), (e, t) => {
-      t(e, {
-        class: `size-5`
-      })
-    }), z(p);
-    var g = S(p, 2),
-      _ = i(g, !0);
-    z(g);
-    var v = S(g, 2),
-      y = e => {
-        var t = Yn(),
+      f = i(u);
+    z(u);
+    var p = S(u, 2),
+      m = i(p, !0);
+    z(p);
+    var h = S(p, 2),
+      g = e => {
+        var t = Gn(),
           n = i(t);
         Dt(n, {
           class: `size-3`
@@ -1129,49 +1108,50 @@ var Gn = (e, t = M, n = M, r = M) => {
         var r = S(n);
         z(t), A(e => d(r, ` ${e??``}`), [() => X.september_card_earned()]), l(e, t)
       },
-      b = e => {
-        var t = Xn(),
+      _ = e => {
+        var t = Kn(),
           n = i(t, !0);
         z(t), A(e => d(n, e), [() => X.pending()]), l(e, t)
       };
-    C(v, e => {
-      o() ? e(y) : e(b, -1)
-    }), z(u);
-    var x = S(u, 2),
-      w = i(x, !0);
-    z(x), z(c), A(() => {
-      a(c, 1, `flex flex-col gap-2 rounded-2xl border p-3 ${o()?`border-success/40 bg-success/10`:`border-base-300 bg-base-100`}`), a(p, 1, `flex size-9 shrink-0 items-center justify-center rounded-xl ${o()?`bg-success/15 text-success`:`bg-base-200 text-primary`}`), d(_, n()), d(w, r())
-    }), l(e, c)
+    C(h, e => {
+      o() ? e(g) : e(_, -1)
+    }), z(c);
+    var v = S(c, 2),
+      y = i(v, !0);
+    z(v), z(s), A(() => {
+      a(s, 1, `flex flex-col gap-2 rounded-2xl border p-3 ${o()?`border-success/40 bg-success/10`:`border-base-300 bg-base-100`}`), a(u, 1, `flex size-9 shrink-0 items-center justify-center rounded-xl ${o()?`bg-success/15 text-success`:`bg-base-200 text-primary`}`), N(f, `src`, t()), d(m, n()), d(y, r())
+    }), l(e, s)
   },
-  qn = D(`<button role="tab"> </button>`),
-  Jn = D(`<li class="flex items-start gap-3"><span class="bg-base-200 text-primary flex size-9 shrink-0 items-center justify-center rounded-xl"><!></span> <span class="flex flex-col gap-0.5"><span class="font-pixel text-xs tracking-[0.18em] uppercase"> </span> <span class="text-base-content/70 text-xs leading-relaxed"> </span></span></li>`),
-  Yn = D(`<span class="badge badge-success badge-sm font-pixel ml-auto gap-1 text-[10px] uppercase"><!> </span>`),
-  Xn = D(`<span class="badge badge-ghost badge-sm font-pixel ml-auto text-[10px] uppercase"> </span>`),
-  Zn = D(`<div><span class="flex items-center gap-2"><span><!></span> <span class="font-pixel text-xs tracking-[0.18em] uppercase"> </span> <!></span> <span class="text-base-content/70 text-xs leading-relaxed"> </span></div>`),
-  Qn = D(`<span class="text-primary flex items-center gap-1 font-medium"><!> <!></span> <span class="text-base-content/70 text-right whitespace-nowrap"> <span class="text-base-content/40"> </span></span> <span class="text-base-content/70 text-right"> </span>`, 1),
-  $n = D(`<span class="text-primary flex items-center gap-1.5 text-[11px]"><!> </span>`),
-  er = D(`<span class="text-base-content/60 flex items-center gap-1.5 text-[11px]"><!> </span>`),
-  tr = D(`<div class="grid grid-cols-3 gap-2"><div class="bg-base-100 flex flex-col gap-0.5 rounded-xl p-2"><span class="text-base-content/50 text-[10px] tracking-wide uppercase"> </span> <span class="font-pixel text-base leading-none tabular-nums"> </span></div> <div class="bg-base-100 flex flex-col gap-0.5 rounded-xl p-2"><span class="text-base-content/50 text-[10px] tracking-wide uppercase"> </span> <span class="text-primary font-pixel text-base leading-none tabular-nums"> </span></div> <div class="bg-base-100 flex flex-col gap-0.5 rounded-xl p-2"><span class="text-base-content/50 text-[10px] tracking-wide uppercase"> </span> <span class="font-pixel text-base leading-none tabular-nums"> </span></div></div> <div class="flex flex-col gap-1.5"><div class="bg-base-300 relative h-2.5 w-full overflow-hidden rounded-full"><div class="bg-primary/30 absolute inset-y-0 left-0 rounded-full transition-[width] duration-500"></div> <div class="bg-primary absolute inset-y-0 left-0 rounded-full transition-[width] duration-500"></div></div> <span class="text-base-content/60 text-[11px] tabular-nums"> </span></div> <div class="grid grid-cols-[auto_1fr_1fr] gap-x-2 gap-y-1 text-xs tabular-nums"><span class="text-base-content/40 text-[10px] tracking-wide uppercase"> </span> <span class="text-base-content/40 text-right text-[10px] tracking-wide uppercase"> </span> <span class="text-base-content/40 text-right text-[10px] tracking-wide uppercase"> </span> <!></div> <!> <!>`, 1),
-  nr = D(`<span class="border-primary/20 font-pixel border-t pt-3 text-[10px] tracking-[0.12em] uppercase tabular-nums"> </span>`),
-  rr = D(`<div class="border-primary/30 bg-primary/5 flex flex-col gap-3 rounded-2xl border p-3"><span class="flex items-center gap-2"><span class="bg-primary/15 text-primary flex size-9 shrink-0 items-center justify-center rounded-xl"><!></span> <span class="font-pixel text-xs tracking-[0.18em] uppercase"> </span></span> <span class="text-base-content/70 text-xs leading-relaxed"> </span> <!> <!></div>`),
-  ir = D(`<span class="text-sm tabular-nums opacity-90"> <span class="font-pixel"> </span></span>`),
-  ar = D(`<img class="pixelated aspect-square w-full" alt=""/>`),
-  or = D(`<ul class="flex flex-col gap-4"><!> <!> <!></ul>`),
-  sr = D(`<div class="flex flex-col gap-2"><!> <!></div>`),
-  cr = D(`<div class="bg-base-100 max-sm:pt-safe max-sm:pb-safe fixed inset-0 z-40 flex flex-col overflow-hidden shadow-2xl sm:inset-auto sm:top-2 sm:right-2 sm:bottom-2 sm:w-88 sm:rounded-2xl"><header class="bg-primary text-primary-content relative shrink-0 overflow-hidden px-5 pt-4 pb-5"><div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(currentColor 1px, transparent 1px); background-size: 10px 10px;"></div> <div class="relative flex flex-col gap-2"><div class="flex items-center gap-2"><span class="font-pixel text-[10px] tracking-[0.3em] uppercase opacity-80"><!></span> <button class="btn btn-sm btn-circle bg-primary-content/15 text-primary-content hover:bg-primary-content/25 ml-auto border-none"><!></button></div> <h2 class="font-silkscreen text-2xl leading-tight font-bold tracking-[0.04em] text-balance uppercase"> </h2> <span class="font-pixel text-[11px] tracking-[0.22em] text-balance uppercase opacity-80"> </span> <!></div></header> <div class="shrink-0 px-4 pt-4"><div class="bg-base-200 flex flex-col gap-2 rounded-2xl p-3"><div class="bg-base-100 flex justify-center rounded-xl p-3"><div class="border-primary grid w-32 border-2 bg-white"></div></div> <div class="flex items-baseline justify-between"><span class="font-pixel text-xs tracking-[0.18em] uppercase"></span> <span class="text-base-content/50 text-xs"> </span></div></div></div> <div role="tablist" class="bg-base-200 mx-4 mt-4 flex shrink-0 gap-1 rounded-full p-1"><!> <!></div> <section role="tabpanel" class="flex flex-1 flex-col overflow-y-auto px-4 py-4"><div class="my-auto flex flex-col gap-4"><!></div></section> <footer class="flex shrink-0 flex-col gap-2 px-4 pb-4"><button class="btn btn-primary btn-lg w-full rounded-full"><!> <span class="font-pixel text-xs tracking-[0.18em] uppercase"> </span></button> <span class="text-base-content/50 text-center text-xs"> </span></footer></div>`);
+  Un = D(`<button role="tab"> </button>`),
+  Wn = D(`<li class="flex items-start gap-3"><span class="bg-base-200 text-primary flex size-9 shrink-0 items-center justify-center rounded-xl"><!></span> <span class="flex flex-col gap-0.5"><span class="font-pixel text-xs tracking-[0.18em] uppercase"> </span> <span class="text-base-content/70 text-xs leading-relaxed"> </span></span></li>`),
+  Gn = D(`<span class="badge badge-success badge-sm font-pixel ml-auto gap-1 text-[10px] uppercase"><!> </span>`),
+  Kn = D(`<span class="badge badge-ghost badge-sm font-pixel ml-auto text-[10px] uppercase"> </span>`),
+  qn = D(`<div><span class="flex items-center gap-2"><span><img alt="" class="pixelated size-7 object-contain"/></span> <span class="font-pixel text-xs tracking-[0.18em] uppercase"> </span> <!></span> <span class="text-base-content/70 text-xs leading-relaxed"> </span></div>`),
+  Jn = D(`<img alt="" class="pixelated size-4"/>`),
+  Yn = D(`<span class="text-primary flex items-center gap-1 font-medium"><!> <!></span> <span class="text-base-content/70 text-right whitespace-nowrap"> <span class="text-base-content/40"> </span></span> <span class="text-base-content/70 text-right"> </span>`, 1),
+  Xn = D(`<span class="text-primary flex items-center gap-1.5 text-[11px]"><img alt="" class="pixelated size-4 shrink-0"/> </span>`),
+  Zn = D(`<span class="text-base-content/60 flex items-center gap-1.5 text-[11px]"><!> </span>`),
+  Qn = D(`<div class="grid grid-cols-3 gap-2"><div class="bg-base-100 flex flex-col gap-0.5 rounded-xl p-2"><span class="text-base-content/50 text-[10px] tracking-wide uppercase"> </span> <span class="font-pixel text-base leading-none tabular-nums"> </span></div> <div class="bg-base-100 flex flex-col gap-0.5 rounded-xl p-2"><span class="text-base-content/50 text-[10px] tracking-wide uppercase"> </span> <span class="text-primary font-pixel text-base leading-none tabular-nums"> </span></div> <div class="bg-base-100 flex flex-col gap-0.5 rounded-xl p-2"><span class="text-base-content/50 text-[10px] tracking-wide uppercase"> </span> <span class="font-pixel text-base leading-none tabular-nums"> </span></div></div> <div class="flex flex-col gap-1.5"><div class="bg-base-300 relative h-2.5 w-full overflow-hidden rounded-full"><div class="bg-primary/30 absolute inset-y-0 left-0 rounded-full transition-[width] duration-500"></div> <div class="bg-primary absolute inset-y-0 left-0 rounded-full transition-[width] duration-500"></div></div> <span class="text-base-content/60 text-[11px] tabular-nums"> </span></div> <div class="grid grid-cols-[auto_1fr_1fr] gap-x-2 gap-y-1 text-xs tabular-nums"><span class="text-base-content/40 text-[10px] tracking-wide uppercase"> </span> <span class="text-base-content/40 text-right text-[10px] tracking-wide uppercase"> </span> <span class="text-base-content/40 text-right text-[10px] tracking-wide uppercase"> </span> <!></div> <!> <!>`, 1),
+  $n = D(`<span class="border-primary/20 font-pixel border-t pt-3 text-[10px] tracking-[0.12em] uppercase tabular-nums"> </span>`),
+  er = D(`<div class="border-primary/30 bg-primary/5 flex flex-col gap-3 rounded-2xl border p-3"><span class="flex items-center gap-2"><span class="bg-primary/15 text-primary flex size-9 shrink-0 items-center justify-center rounded-xl"><!></span> <span class="font-pixel text-xs tracking-[0.18em] uppercase"> </span></span> <span class="text-base-content/70 text-xs leading-relaxed"> </span> <!> <!></div>`),
+  tr = D(`<span class="text-sm tabular-nums opacity-90"> <span class="font-pixel"> </span></span>`),
+  nr = D(`<img class="pixelated aspect-square w-full" alt=""/>`),
+  rr = D(`<ul class="flex flex-col gap-4"><!> <!> <!></ul>`),
+  ir = D(`<div class="flex flex-col gap-2"><!> <!></div>`),
+  ar = D(`<div class="bg-base-100 max-sm:pt-safe max-sm:pb-safe fixed inset-0 z-40 flex flex-col overflow-hidden shadow-2xl sm:inset-auto sm:top-2 sm:right-2 sm:bottom-2 sm:w-88 sm:rounded-2xl"><header class="bg-primary text-primary-content relative shrink-0 overflow-hidden px-5 pt-4 pb-5"><div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(currentColor 1px, transparent 1px); background-size: 10px 10px;"></div> <div class="relative flex flex-col gap-2"><div class="flex items-center gap-2"><span class="font-pixel text-[10px] tracking-[0.3em] uppercase opacity-80"><!></span> <button class="btn btn-sm btn-circle bg-primary-content/15 text-primary-content hover:bg-primary-content/25 ml-auto border-none"><!></button></div> <h2 class="font-silkscreen text-2xl leading-tight font-bold tracking-[0.04em] text-balance uppercase"> </h2> <span class="font-pixel text-[11px] tracking-[0.22em] text-balance uppercase opacity-80"> </span> <!></div></header> <div class="shrink-0 px-4 pt-4"><div class="bg-base-200 flex flex-col gap-2 rounded-2xl p-3"><div class="bg-base-100 flex justify-center rounded-xl p-3"><div class="border-primary grid w-32 border-2 bg-white"></div></div> <div class="flex items-baseline justify-between"><span class="font-pixel text-xs tracking-[0.18em] uppercase"></span> <span class="text-base-content/50 text-xs"> </span></div></div></div> <div role="tablist" class="bg-base-200 mx-4 mt-4 flex shrink-0 gap-1 rounded-full p-1"><!> <!></div> <section role="tabpanel" class="flex flex-1 flex-col overflow-y-auto px-4 py-4"><div class="my-auto flex flex-col gap-4"><!></div></section> <footer class="flex shrink-0 flex-col gap-2 px-4 pb-4"><button class="btn btn-primary btn-lg w-full rounded-full"><!> <span class="font-pixel text-xs tracking-[0.18em] uppercase"> </span></button> <span class="text-base-content/50 text-center text-xs"> </span></footer></div>`);
 
-function lr(r, c) {
+function or(r, c) {
   u(c, !0);
   let f = (e, t = M, n = M) => {
-      var r = qn(),
+      var r = Un(),
         o = i(r, !0);
       z(r), A(() => {
-        N(r, `aria-selected`, R(y) === t()), a(r, 1, `font-pixel flex-1 cursor-pointer rounded-full px-3 py-2 text-xs tracking-[0.18em] uppercase transition-colors ${R(y)===t()?`bg-primary text-primary-content`:`text-base-content/60 hover:text-base-content`}`), d(o, n())
-      }), B(`click`, r, () => g(y, t(), !0)), l(e, r)
+        N(r, `aria-selected`, R(b) === t()), a(r, 1, `font-pixel flex-1 cursor-pointer rounded-full px-3 py-2 text-xs tracking-[0.18em] uppercase transition-colors ${R(b)===t()?`bg-primary text-primary-content`:`text-base-content/60 hover:text-base-content`}`), d(o, n())
+      }), B(`click`, r, () => g(b, t(), !0)), l(e, r)
     },
     p = t => {
-      let r = h(() => R(E).found > 0);
-      var a = rr(),
+      let r = h(() => R(D).found > 0);
+      var a = er(),
         s = i(a),
         c = i(s),
         u = i(c);
@@ -1184,9 +1164,9 @@ function lr(r, c) {
       var m = S(s, 2),
         g = i(m, !0);
       z(m);
-      var _ = S(m, 2),
-        v = t => {
-          var r = tr(),
+      var v = S(m, 2),
+        y = t => {
+          var r = Qn(),
             a = U(r),
             s = i(a),
             c = i(s),
@@ -1197,46 +1177,46 @@ function lr(r, c) {
           z(f), z(s);
           var m = S(s, 2),
             g = i(m),
-            _ = i(g, !0);
+            v = i(g, !0);
           z(g);
-          var v = S(g, 2),
-            y = i(v, !0);
-          z(v), z(m);
-          var b = S(m, 2),
-            x = i(b),
-            w = i(x, !0);
-          z(x);
-          var T = S(x, 2),
-            O = i(T, !0);
-          z(T), z(b), z(a);
+          var y = S(g, 2),
+            b = i(y, !0);
+          z(y), z(m);
+          var x = S(m, 2),
+            w = i(x),
+            T = i(w, !0);
+          z(w);
+          var E = S(w, 2),
+            O = i(E, !0);
+          z(E), z(x), z(a);
           var j = S(a, 2),
             M = i(j),
-            N = i(M);
-          let ee;
-          var P = S(N, 2);
-          let se;
+            te = i(M);
+          let P;
+          var ce = S(te, 2);
+          let le;
           z(M);
-          var ce = S(M, 2),
-            le = i(ce, !0);
-          z(ce), z(j);
-          var F = S(j, 2),
-            I = i(F),
-            ue = i(I, !0);
-          z(I);
-          var de = S(I, 2),
+          var F = S(M, 2),
+            I = i(F, !0);
+          z(F), z(j);
+          var ue = S(j, 2),
+            de = i(ue),
             L = i(de, !0);
           z(de);
           var B = S(de, 2),
             fe = i(B, !0);
           z(B);
-          var pe = S(B, 2);
-          n(pe, 17, () => R(E).tiers, e => `${e.droplets}-${e.frame}`, (t, n) => {
-            var r = Qn(),
+          var pe = S(B, 2),
+            V = i(pe, !0);
+          z(pe);
+          var H = S(pe, 2);
+          n(H, 17, () => R(D).tiers, e => `${e.droplets}-${e.frame}`, (t, n) => {
+            var r = Yn(),
               a = U(r),
               o = i(a),
               s = t => {
                 var r = e();
-                A(e => d(r, e), [() => D(R(n).droplets)]), l(t, r)
+                A(e => d(r, e), [() => k(R(n).droplets)]), l(t, r)
               },
               c = t => {
                 var n = e();
@@ -1247,9 +1227,8 @@ function lr(r, c) {
             });
             var u = S(o, 2),
               f = e => {
-                At(e, {
-                  class: `size-3.5`
-                })
+                var t = Jn();
+                N(t, `src`, _), l(e, t)
               };
             C(u, e => {
               R(n).frame && e(f)
@@ -1259,168 +1238,167 @@ function lr(r, c) {
               h = S(m),
               g = i(h);
             z(h), z(p);
-            var _ = S(p, 2),
-              v = i(_, !0);
-            z(_), A((e, t, n) => {
-              d(m, `${e??``} `), d(g, `/ ${t??``}`), d(v, n)
-            }, [() => D(R(n).distributed), () => D(R(n).planned), () => D(R(n).found)]), l(t, r)
-          }), z(F);
-          var V = S(F, 2),
-            H = e => {
-              var t = $n(),
+            var v = S(p, 2),
+              y = i(v, !0);
+            z(v), A((e, t, n) => {
+              d(m, `${e??``} `), d(g, `/ ${t??``}`), d(y, n)
+            }, [() => k(R(n).distributed), () => k(R(n).planned), () => k(R(n).found)]), l(t, r)
+          }), z(ue);
+          var me = S(ue, 2),
+            he = e => {
+              var t = Xn(),
                 n = i(t);
-              At(n, {
-                class: `size-3.5 shrink-0`
-              });
+              N(n, `src`, _);
               var r = S(n);
               z(t), A(e => d(r, ` ${e??``}`), [() => X.september_card_frame_tier()]), l(e, t)
             },
-            me = h(() => R(E).tiers.some(e => e.frame));
-          C(V, e => {
-            R(me) && e(H)
+            W = h(() => R(D).tiers.some(e => e.frame));
+          C(me, e => {
+            R(W) && e(he)
           });
-          var he = S(V, 2);
-          n(he, 17, () => R(E).tiers.filter(e => e.opensAt), e => `${e.droplets}-${e.frame}`, (e, t) => {
-            var n = er(),
+          var ge = S(me, 2);
+          n(ge, 17, () => R(D).tiers.filter(e => e.opensAt), e => `${e.droplets}-${e.frame}`, (e, t) => {
+            var n = Zn(),
               r = i(n);
             vt(r, {
               class: `size-3.5 shrink-0`
             });
             var a = S(r);
             z(n), A(e => d(a, ` ${e??``}`), [() => R(t).frame ? X.september_card_frame_opens({
-              date: k(R(t).opensAt ?? 0)
+              date: ee(R(t).opensAt ?? 0)
             }) : X.september_card_prize_opens({
-              droplets: D(R(t).droplets),
-              date: k(R(t).opensAt ?? 0)
+              droplets: k(R(t).droplets),
+              date: ee(R(t).opensAt ?? 0)
             })]), l(e, n)
           }), A((e, t, n, r, i, a, s, c, l, f) => {
-            d(u, e), d(p, t), d(_, n), d(y, r), d(w, i), d(O, a), ee = o(N, ``, ee, {
-              width: `${R(ie)??``}%`
-            }), se = o(P, ``, se, {
+            d(u, e), d(p, t), d(v, n), d(b, r), d(T, i), d(O, a), P = o(te, ``, P, {
               width: `${R(ae)??``}%`
-            }), d(le, s), d(ue, c), d(L, l), d(fe, f)
-          }, [() => X.september_card_col_total(), () => D(R(te)), () => X.september_card_col_found(), () => D(R(ne)), () => X.september_card_col_pending(), () => D(R(re)), () => X.september_card_found_share({
-            percent: R(oe)
+            }), le = o(ce, ``, le, {
+              width: `${R(oe)??``}%`
+            }), d(I, s), d(L, c), d(fe, l), d(V, f)
+          }, [() => X.september_card_col_total(), () => k(R(ne)), () => X.september_card_col_found(), () => k(R(re)), () => X.september_card_col_pending(), () => k(R(ie)), () => X.september_card_found_share({
+            percent: R(se)
           }), () => X.droplets(), () => X.september_card_col_total(), () => X.september_card_col_found()]), l(t, r)
         };
-      C(_, e => {
-        R(ee) > 0 && e(v)
+      C(v, e => {
+        R(te) > 0 && e(y)
       });
-      var y = S(_, 2),
-        b = e => {
-          var t = nr(),
+      var b = S(v, 2),
+        x = e => {
+          var t = $n(),
             n = i(t, !0);
           z(t), A(e => d(n, e), [() => X.september_card_your_treasures({
-            found: D(R(E).found),
-            droplets: D(R(E).droplets)
+            found: k(R(D).found),
+            droplets: k(R(D).droplets)
           })]), l(e, t)
         };
-      C(y, e => {
-        R(r) && e(b)
+      C(b, e => {
+        R(r) && e(x)
       }), z(a), A((e, t) => {
         d(p, e), d(g, t)
       }, [() => X.september_card_prizes(), () => X.september_card_prizes_body()]), l(t, a)
     },
     m = j(c, `open`, 15),
-    _ = wt.maxTile.x - wt.minTile.x + 1,
-    v = [];
+    _ = `/img/frames/frame_september_canvas.apng`,
+    v = wt.maxTile.x - wt.minTile.x + 1,
+    y = [];
   for (let e = wt.minTile.y; e <= wt.maxTile.y; e++)
-    for (let t = wt.minTile.x; t <= wt.maxTile.x; t++) v.push({
+    for (let t = wt.minTile.x; t <= wt.maxTile.x; t++) y.push({
       x: t,
       y: e
     });
-  let y = t(`how`),
-    b = t(s(Date.now())),
-    w = {
+  let b = t(`how`),
+    w = t(s(Date.now())),
+    T = {
       found: 0,
       droplets: 0,
       tiers: []
     },
-    T = t(s({
+    E = t(s({
       badge: !1
     })),
-    E = t(s(w)),
-    D = e => e.toLocaleString(xe(ve())),
-    k = e => new Date(e).toLocaleDateString(xe(ve()), {
+    D = t(s(T)),
+    k = e => e.toLocaleString(xe(ve())),
+    ee = e => new Date(e).toLocaleDateString(xe(ve()), {
       day: `numeric`,
       month: `short`,
       timeZone: `UTC`
     }),
-    ee = h(() => R(E).tiers.reduce((e, t) => e + t.planned, 0)),
-    te = h(() => R(E).tiers.reduce((e, t) => e + t.distributed, 0)),
-    ne = h(() => R(E).tiers.reduce((e, t) => e + t.found, 0)),
-    re = h(() => R(ee) - R(te)),
-    ie = h(() => R(ee) > 0 ? R(te) / R(ee) * 100 : 0),
-    ae = h(() => R(ee) > 0 ? R(ne) / R(ee) * 100 : 0),
-    oe = h(() => R(te) > 0 ? Math.round(R(ne) / R(te) * 100) : 0);
-  async function se() {
+    te = h(() => R(D).tiers.reduce((e, t) => e + t.planned, 0)),
+    ne = h(() => R(D).tiers.reduce((e, t) => e + t.distributed, 0)),
+    re = h(() => R(D).tiers.reduce((e, t) => e + t.found, 0)),
+    ie = h(() => R(te) - R(ne)),
+    ae = h(() => R(te) > 0 ? R(ne) / R(te) * 100 : 0),
+    oe = h(() => R(te) > 0 ? R(re) / R(te) * 100 : 0),
+    se = h(() => R(ne) > 0 ? Math.round(R(re) / R(ne) * 100) : 0);
+  async function ce() {
     if (!Y.data) {
-      g(T, {
+      g(E, {
         badge: !1
-      }, !0), g(E, w, !0);
+      }, !0), g(D, T, !0);
       return
     }
     try {
       let e = await q.getSeptemberEventRewards();
-      g(T, {
+      g(E, {
         badge: e.badge
-      }, !0), g(E, e.treasures, !0)
+      }, !0), g(D, e.treasures, !0)
     } catch {}
   }
   H(() => {
     var e;
-    m() && ((e = Y.data) == null || e.droplets, se())
+    m() && ((e = Y.data) == null || e.droplets, ce())
   }), H(() => {
-    if (m()) return g(b, Date.now(), !0), Ie(() => {
-      g(b, Date.now(), !0)
+    if (m()) return g(w, Date.now(), !0), Ie(() => {
+      g(w, Date.now(), !0)
     }, {
       interval: Ee.minute
     })
   });
-  let ce = h(() => Tt - R(b)),
-    F = h(() => xt - R(b));
+  let F = h(() => Tt - R(w)),
+    I = h(() => xt - R(w));
 
-  function I(e) {
+  function de(e) {
     let t = Math.floor(e / Ee.day),
       n = Math.floor(e % Ee.day / Ee.hour),
       r = Math.floor(e % Ee.hour / Ee.minute);
     return t > 0 ? `${t}d ${n}h` : n > 0 ? `${n}h ${r}m` : `${r}m`
   }
 
-  function de(e) {
+  function L(e) {
     e.currentTarget.style.visibility = `hidden`
   }
 
-  function L() {
+  function fe() {
     var e;
     window.innerWidth < 640 && m(!1), (e = c.onvisitlocation) == null || e.call(c, Ct)
   }
-  var fe = O();
+  var pe = O();
   le(`keydown`, x, e => {
     m() && e.key === `Escape` && m(!1)
   });
-  var pe = U(fe),
-    V = t => {
-      var r = cr(),
+  var V = U(pe),
+    me = t => {
+      var r = ar(),
         a = i(r),
         s = S(i(a), 2),
         c = i(s),
         u = i(c),
         g = i(u),
-        b = t => {
+        _ = t => {
           var n = e();
           A(e => d(n, e), [() => X.september_card_soon()]), l(t, n)
         },
         x = t => {
           var n = e();
-          A(e => d(n, e), [() => R(F) > 0 ? X.september_card_live() : X.september_card_ended()]), l(t, n)
+          A(e => d(n, e), [() => R(I) > 0 ? X.september_card_live() : X.september_card_ended()]), l(t, n)
         };
       C(g, e => {
-        R(ce) > 0 ? e(b) : e(x, -1)
+        R(F) > 0 ? e(_) : e(x, -1)
       }), z(u);
       var w = S(u, 2),
-        E = i(w);
-      Ot(E, {
+        T = i(w);
+      Ot(T, {
         class: `size-4`
       }), z(w), z(c);
       var D = S(c, 2),
@@ -1431,41 +1409,41 @@ function lr(r, c) {
       z(k);
       var M = S(k, 2),
         ee = e => {
-          var t = ir(),
+          var t = tr(),
             n = i(t),
             r = S(n),
             a = i(r, !0);
           z(r), z(t), A((e, t) => {
             d(n, `${e??``} `), d(a, t)
-          }, [() => X.september_card_starts_in(), () => I(R(ce))]), l(e, t)
+          }, [() => X.september_card_starts_in(), () => de(R(F))]), l(e, t)
         },
         te = e => {
-          var t = ir(),
+          var t = tr(),
             n = i(t),
             r = S(n),
             a = i(r, !0);
           z(r), z(t), A((e, t) => {
             d(n, `${e??``} `), d(a, t)
-          }, [() => X.september_card_ends_in(), () => I(R(F))]), l(e, t)
+          }, [() => X.september_card_ends_in(), () => de(R(I))]), l(e, t)
         };
       C(M, e => {
-        R(ce) > 0 ? e(ee) : R(F) > 0 && e(te, 1)
+        R(F) > 0 ? e(ee) : R(I) > 0 && e(te, 1)
       }), z(s), z(a);
       var ne = S(a, 2),
         re = i(ne),
         ie = i(re),
         ae = i(ie);
       let oe;
-      n(ae, 21, () => v, e => `${e.x},${e.y}`, (e, t) => {
-        var n = ar();
-        A(() => N(n, `src`, `https://backend.wplace.live/files/s${Te??``}/tiles/${R(t).x??``}/${R(t).y??``}.png`)), le(`error`, n, de), P(n), l(e, n)
+      n(ae, 21, () => y, e => `${e.x},${e.y}`, (e, t) => {
+        var n = nr();
+        A(() => N(n, `src`, `https://backend.wplace.live/files/s${Te??``}/tiles/${R(t).x??``}/${R(t).y??``}.png`)), le(`error`, n, L), P(n), l(e, n)
       }), z(ae), z(ie);
       var se = S(ie, 2),
-        ue = i(se);
-      ue.textContent = `3000 × 3000`;
-      var fe = S(ue, 2),
-        pe = i(fe, !0);
-      z(fe), z(se), z(re), z(ne);
+        ce = i(se);
+      ce.textContent = `3000 × 3000`;
+      var ue = S(ce, 2),
+        pe = i(ue, !0);
+      z(ue), z(se), z(re), z(ne);
       var V = S(ne, 2),
         H = i(V);
       {
@@ -1482,46 +1460,46 @@ function lr(r, c) {
         he = i(me),
         W = i(he),
         ge = e => {
-          var t = or(),
+          var t = rr(),
             n = i(t);
           {
             let e = h(() => X.september_card_canvas()),
               t = h(() => X.september_card_canvas_body());
-            Gn(n, () => Mt, () => R(e), () => R(t))
+            Vn(n, () => jt, () => R(e), () => R(t))
           }
           var r = S(n, 2);
           {
             let e = h(() => X.september_card_treasures()),
               t = h(() => X.september_card_treasures_body());
-            Gn(r, () => kt, () => R(e), () => R(t))
+            Vn(r, () => kt, () => R(e), () => R(t))
           }
           var a = S(r, 2);
           {
             let e = h(() => X.september_card_grief()),
               t = h(() => X.september_card_grief_body());
-            Gn(a, () => St, () => R(e), () => R(t))
+            Vn(a, () => St, () => R(e), () => R(t))
           }
           z(t), l(e, t)
         },
         G = e => {
-          var t = sr(),
+          var t = ir(),
             n = i(t);
           p(n);
           var r = S(n, 2);
           {
             let e = h(() => X.september_card_badge()),
               t = h(() => X.september_card_badge_body());
-            Kn(r, () => Wn, () => R(e), () => R(t), () => R(T).badge)
+            Hn(r, () => `/img/badges/badge_september_canvas.png`, () => R(e), () => R(t), () => R(E).badge)
           }
           z(t), l(e, t)
         };
       C(W, e => {
-        R(y) === `how` ? e(ge) : e(G, -1)
+        R(b) === `how` ? e(ge) : e(G, -1)
       }), z(he), z(me);
       var _e = S(me, 2),
         ve = i(_e),
         ye = i(ve);
-      jt(ye, {
+      At(ye, {
         class: `size-5`
       });
       var be = S(ye, 2),
@@ -1531,17 +1509,17 @@ function lr(r, c) {
         Ce = i(Se, !0);
       z(Se), z(_e), z(r), A((e, t, n, r, i) => {
         N(w, `aria-label`, e), d(O, bt), d(j, t), oe = o(ae, ``, oe, {
-          "grid-template-columns": `repeat(${_}, minmax(0, 1fr))`
+          "grid-template-columns": `repeat(${v}, minmax(0, 1fr))`
         }), d(pe, n), d(xe, r), d(Ce, i)
-      }, [() => X.close(), () => X.september_card_tagline(), () => X.september_card_canvas(), () => X.go_to_canvas(), () => X.september_card_good_luck()]), B(`click`, w, () => m(!1)), B(`click`, ve, L), l(t, r)
+      }, [() => X.close(), () => X.september_card_tagline(), () => X.september_card_canvas(), () => X.go_to_canvas(), () => X.september_card_good_luck()]), B(`click`, w, () => m(!1)), B(`click`, ve, fe), l(t, r)
     };
-  C(pe, e => {
-    m() && e(V)
-  }), l(r, fe), ue()
+  C(V, e => {
+    m() && e(me)
+  }), l(r, pe), ue()
 }
 re([`click`]);
 
-function ur(e, t) {
+function sr(e, t) {
   u(t, !0);
   let n = `hotspots-source`,
     r = `hotspots-layer`,
@@ -1684,23 +1662,23 @@ function ur(e, t) {
     for (let e = 1; e <= 10; e++) t.map.hasImage(a(e)) && t.map.removeImage(a(e))
   }), ue()
 }
-var dr = new Set([`$$slots`, `$$events`, `$$legacy`, `count`]),
-  fr = D(`<span> </span>`);
+var cr = new Set([`$$slots`, `$$events`, `$$legacy`, `count`]),
+  lr = D(`<span> </span>`);
 
-function pr(e, t) {
-  u(t, !0), F(t, dr);
-  var n = fr(),
+function ur(e, t) {
+  u(t, !0), F(t, cr);
+  var n = lr(),
     r = i(n, !0);
   z(n), A(() => {
     a(n, 1, `inline-flex size-4 items-center justify-center rounded-full bg-red-500 font-semibold text-red-50 ${t.count<10?`text-xs`:`text-[10px]`} ${t.class??``}`), d(r, t.count < 10 ? t.count : `9+`)
   }), l(e, n), ue()
 }
-var mr = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  hr = k(`<svg><path d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"></path></svg>`);
+var dr = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  fr = k(`<svg><path d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160Zm320-300Zm0 420q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80ZM320-280h320v-280q0-66-47-113t-113-47q-66 0-113 47t-47 113v280Z"></path></svg>`);
 
-function gr(e, t) {
-  let n = F(t, mr);
-  var r = hr();
+function pr(e, t) {
+  let n = F(t, dr);
+  var r = fr();
   V(r, () => ({
     xmlns: `http://www.w3.org/2000/svg`,
     viewBox: `0 -960 960 960`,
@@ -1708,12 +1686,12 @@ function gr(e, t) {
     ...n
   })), l(e, r)
 }
-var _r = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  vr = k(`<svg><path d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z"></path></svg>`);
+var mr = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  hr = k(`<svg><path d="m476-80 182-480h84L924-80h-84l-43-122H603L560-80h-84ZM160-200l-56-56 202-202q-35-35-63.5-80T190-640h84q20 39 40 68t48 58q33-33 68.5-92.5T484-720H40v-80h280v-80h80v80h280v80H564q-21 72-63 148t-83 116l96 98-30 82-122-125-202 201Zm468-72h144l-72-204-72 204Z"></path></svg>`);
 
-function yr(e, t) {
-  let n = F(t, _r);
-  var r = vr();
+function gr(e, t) {
+  let n = F(t, mr);
+  var r = hr();
   V(r, () => ({
     xmlns: `http://www.w3.org/2000/svg`,
     height: `24px`,
@@ -1723,8 +1701,21 @@ function yr(e, t) {
     ...n
   })), l(e, r)
 }
+var _r = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  vr = k(`<svg><path d="M0-360v-240h80v240H0Zm120 80v-400h80v400h-80Zm760-80v-240h80v240h-80Zm-120 80v-400h80v400h-80ZM320-120q-33 0-56.5-23.5T240-200v-560q0-33 23.5-56.5T320-840h320q33 0 56.5 23.5T720-760v560q0 33-23.5 56.5T640-120H320Zm0-80h320v-560H320v560Zm0 0v-560 560Z"></path></svg>`);
+
+function yr(e, t) {
+  let n = F(t, _r);
+  var r = vr();
+  V(r, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...n
+  })), l(e, r)
+}
 var br = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  xr = k(`<svg><path d="M0-360v-240h80v240H0Zm120 80v-400h80v400h-80Zm760-80v-240h80v240h-80Zm-120 80v-400h80v400h-80ZM320-120q-33 0-56.5-23.5T240-200v-560q0-33 23.5-56.5T320-840h320q33 0 56.5 23.5T720-760v560q0 33-23.5 56.5T640-120H320Zm0-80h320v-560H320v560Zm0 0v-560 560Z"></path></svg>`);
+  xr = k(`<svg><path d="M820-28 28-820l56-56L876-84l-56 56ZM200-703l80 80v383h384l96 96v24q0 33-23.5 56.5T680-40H280q-33 0-56.5-23.5T200-120v-583Zm80 543v40h400v-40H280Zm73-560-79-80h406v-40H234l-28-28q10-23 29.5-37.5T280-920h400q33 0 56.5 23.5T760-840v526l-80-80v-326H353Zm127 560Zm-23-640Z"></path></svg>`);
 
 function Sr(e, t) {
   let n = F(t, br);
@@ -1737,7 +1728,7 @@ function Sr(e, t) {
   })), l(e, r)
 }
 var Cr = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  wr = k(`<svg><path d="M820-28 28-820l56-56L876-84l-56 56ZM200-703l80 80v383h384l96 96v24q0 33-23.5 56.5T680-40H280q-33 0-56.5-23.5T200-120v-583Zm80 543v40h400v-40H280Zm73-560-79-80h406v-40H234l-28-28q10-23 29.5-37.5T280-920h400q33 0 56.5 23.5T760-840v526l-80-80v-326H353Zm127 560Zm-23-640Z"></path></svg>`);
+  wr = k(`<svg><path d="M792-56 671-177q-25 16-53 27.5T560-131v-82q14-5 27.5-10t25.5-12L480-368v208L280-360H120v-240h128L56-792l56-56 736 736-56 56Zm-8-232-58-58q17-31 25.5-65t8.5-70q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 53-14.5 102T784-288ZM650-422l-90-90v-130q47 22 73.5 66t26.5 96q0 15-2.5 29.5T650-422ZM480-592 376-696l104-104v208Zm-80 238v-94l-72-72H200v80h114l86 86Zm-36-130Z"></path></svg>`);
 
 function Tr(e, t) {
   let n = F(t, Cr);
@@ -1750,7 +1741,7 @@ function Tr(e, t) {
   })), l(e, r)
 }
 var Er = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  Dr = k(`<svg><path d="M792-56 671-177q-25 16-53 27.5T560-131v-82q14-5 27.5-10t25.5-12L480-368v208L280-360H120v-240h128L56-792l56-56 736 736-56 56Zm-8-232-58-58q17-31 25.5-65t8.5-70q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 53-14.5 102T784-288ZM650-422l-90-90v-130q47 22 73.5 66t26.5 96q0 15-2.5 29.5T650-422ZM480-592 376-696l104-104v208Zm-80 238v-94l-72-72H200v80h114l86 86Zm-36-130Z"></path></svg>`);
+  Dr = k(`<svg><path d="M560-131v-82q90-26 145-100t55-168q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 127-78 224.5T560-131ZM120-360v-240h160l200-200v640L280-360H120Zm440 40v-322q47 22 73.5 66t26.5 96q0 51-26.5 94.5T560-320ZM400-606l-86 86H200v80h114l86 86v-252ZM300-480Z"></path></svg>`);
 
 function Or(e, t) {
   let n = F(t, Er);
@@ -1762,38 +1753,25 @@ function Or(e, t) {
     ...n
   })), l(e, r)
 }
-var kr = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  Ar = k(`<svg><path d="M560-131v-82q90-26 145-100t55-168q0-94-55-168T560-749v-82q124 28 202 125.5T840-481q0 127-78 224.5T560-131ZM120-360v-240h160l200-200v640L280-360H120Zm440 40v-322q47 22 73.5 66t26.5 96q0 51-26.5 94.5T560-320ZM400-606l-86 86H200v80h114l86 86v-252ZM300-480Z"></path></svg>`);
+var kr = D(`<span class="patch-notes-pulse border-primary pointer-events-none absolute -inset-1 rounded-[inherit] border-2 svelte-rzlkgn" aria-hidden="true"></span>`),
+  Ar = D(`<span class="tooltip font-flag ml-0.5 svelte-rzlkgn"> </span>`),
+  jr = D(`<div class="mt-1 svelte-rzlkgn"><!></div>`),
+  Mr = D(`<span class="center-absolute loading loading-spinner loading-xs absolute svelte-rzlkgn"></span>`),
+  Nr = D(`<li class="svelte-rzlkgn"><button><!> </button></li>`),
+  Pr = D(`<div class="tooltip svelte-rzlkgn"><button class="btn btn-sm btn-circle svelte-rzlkgn"><!></button></div>`),
+  Fr = D(`<button class="btn btn-sm btn-circle tooltip svelte-rzlkgn"><!></button>`),
+  Ir = D(`<button class="btn pwa:hidden w-full sm:hidden svelte-rzlkgn"><!> </button>`),
+  Lr = D(`<a class="btn w-full svelte-rzlkgn" target="_blank"><!> </a>`),
+  Rr = D(`<span class="badge badge-primary absolute right-3 svelte-rzlkgn"> </span>`),
+  zr = D(`<form class="w-full svelte-rzlkgn" method="POST"><button class="btn w-full svelte-rzlkgn"><!> </button></form>`),
+  Br = D(`<!> <a class="btn w-full svelte-rzlkgn" target="_blank"><!> </a>`, 1),
+  Vr = D(`<span class="loading loading-spinner loading-xs svelte-rzlkgn"></span>`),
+  Hr = D(`<div class="dropdown-content menu bg-base-100 rounded-box border-base-300 right-1 z-1 w-[min(100vw-24px,400px)] translate-y-2 border p-4 shadow-md svelte-rzlkgn" tabindex="-1"><button class="btn btn-ghost btn-circle btn-sm absolute top-2 right-2 svelte-rzlkgn"><!></button> <section class="flex svelte-rzlkgn"><div class="relative mr-4 svelte-rzlkgn"><!> <button class="btn btn-circle btn-sm absolute right-1 bottom-1 z-10 svelte-rzlkgn"><!></button></div> <div class="svelte-rzlkgn"><div class="flex items-center gap-1.5 pr-8 text-lg svelte-rzlkgn"><!> <!> <!></div> <div class="flex items-center gap-1 svelte-rzlkgn"><!> <span class="svelte-rzlkgn"> <span class="text-primary font-semibold svelte-rzlkgn"> </span></span></div> <div class="flex items-center gap-1 svelte-rzlkgn"><!> <span class="text-secondary svelte-rzlkgn"><span class="font-semibold svelte-rzlkgn"> </span> <button class="tooltip svelte-rzlkgn"><!></button></span></div></div></section> <div class="mt-3 flex items-center gap-2 svelte-rzlkgn"><p class="text-base-content/60 text-sm svelte-rzlkgn"> </p> <!></div> <div class="divider my-1 opacity-30 svelte-rzlkgn"></div> <section class="flex w-full max-w-full flex-col gap-1.5 overflow-x-clip pr-1 svelte-rzlkgn"><div class="mb-1 flex items-center justify-between svelte-rzlkgn"><h3 class="text-lg font-semibold svelte-rzlkgn"> </h3> <div class="flex items-center gap-1 svelte-rzlkgn"><div class="dropdown dropdown-end svelte-rzlkgn"><div tabindex="0" role="button" class="btn btn-sm btn-circle tooltip svelte-rzlkgn"><!></div> <ul tabindex="0" class="dropdown-content menu bg-base-100 z-1 max-h-[50svh] w-max flex-nowrap overflow-y-auto rounded-xl p-2 shadow-sm svelte-rzlkgn"></ul></div> <div class="tooltip svelte-rzlkgn"><button class="btn btn-sm btn-circle svelte-rzlkgn"><!></button></div> <!> <!> <button class="btn btn-sm btn-circle tooltip relative overflow-visible before:-left-1/2 svelte-rzlkgn"><!> <!></button></div></div> <!> <!> <!> <!> <!> <button class="btn relative w-full svelte-rzlkgn"><!> <!></button> <!> <button class="btn w-full svelte-rzlkgn"><!> </button></section></div>`),
+  Ur = D(`<div class="dropdown svelte-rzlkgn"><div tabindex="0" role="button" class="btn relative size-12 p-0 shadow-md svelte-rzlkgn"><!> <!> <!></div> <!></div> <!>`, 1),
+  Wr = D(`<div class="flex h-full flex-col svelte-rzlkgn"><div class="border-base-300 flex items-center justify-between border-b px-5 py-3 svelte-rzlkgn"><h2 class="text-lg font-semibold svelte-rzlkgn"> </h2> <button class="btn btn-sm btn-circle btn-ghost svelte-rzlkgn"><!></button></div> <div class="grow overflow-auto p-3 px-5 svelte-rzlkgn"><!></div></div>`),
+  Gr = D(`<!> <!>`, 1);
 
-function jr(e, t) {
-  let n = F(t, kr);
-  var r = Ar();
-  V(r, () => ({
-    xmlns: `http://www.w3.org/2000/svg`,
-    viewBox: `0 -960 960 960`,
-    fill: `currentColor`,
-    ...n
-  })), l(e, r)
-}
-var Mr = D(`<span class="patch-notes-pulse border-primary pointer-events-none absolute -inset-1 rounded-[inherit] border-2 svelte-rzlkgn" aria-hidden="true"></span>`),
-  Nr = D(`<span class="tooltip font-flag ml-0.5 svelte-rzlkgn"> </span>`),
-  Pr = D(`<div class="mt-1 svelte-rzlkgn"><!></div>`),
-  Fr = D(`<span class="center-absolute loading loading-spinner loading-xs absolute svelte-rzlkgn"></span>`),
-  Ir = D(`<li class="svelte-rzlkgn"><button><!> </button></li>`),
-  Lr = D(`<div class="tooltip svelte-rzlkgn"><button class="btn btn-sm btn-circle svelte-rzlkgn"><!></button></div>`),
-  Rr = D(`<button class="btn btn-sm btn-circle tooltip svelte-rzlkgn"><!></button>`),
-  zr = D(`<button class="btn pwa:hidden w-full sm:hidden svelte-rzlkgn"><!> </button>`),
-  Br = D(`<a class="btn w-full svelte-rzlkgn" target="_blank"><!> </a>`),
-  Vr = D(`<span class="badge badge-primary absolute right-3 svelte-rzlkgn"> </span>`),
-  Hr = D(`<form class="w-full svelte-rzlkgn" method="POST"><button class="btn w-full svelte-rzlkgn"><!> </button></form>`),
-  Ur = D(`<!> <a class="btn w-full svelte-rzlkgn" target="_blank"><!> </a>`, 1),
-  Wr = D(`<span class="loading loading-spinner loading-xs svelte-rzlkgn"></span>`),
-  Gr = D(`<div class="dropdown-content menu bg-base-100 rounded-box border-base-300 right-1 z-1 w-[min(100vw-24px,400px)] translate-y-2 border p-4 shadow-md svelte-rzlkgn" tabindex="-1"><button class="btn btn-ghost btn-circle btn-sm absolute top-2 right-2 svelte-rzlkgn"><!></button> <section class="flex svelte-rzlkgn"><div class="relative mr-4 svelte-rzlkgn"><!> <button class="btn btn-circle btn-sm absolute right-1 bottom-1 z-10 svelte-rzlkgn"><!></button></div> <div class="svelte-rzlkgn"><div class="flex items-center gap-1.5 pr-8 text-lg svelte-rzlkgn"><!> <!> <!></div> <div class="flex items-center gap-1 svelte-rzlkgn"><!> <span class="svelte-rzlkgn"> <span class="text-primary font-semibold svelte-rzlkgn"> </span></span></div> <div class="flex items-center gap-1 svelte-rzlkgn"><!> <span class="text-secondary svelte-rzlkgn"><span class="font-semibold svelte-rzlkgn"> </span> <button class="tooltip svelte-rzlkgn"><!></button></span></div></div></section> <div class="mt-3 flex items-center gap-2 svelte-rzlkgn"><p class="text-base-content/60 text-sm svelte-rzlkgn"> </p> <!></div> <div class="divider my-1 opacity-30 svelte-rzlkgn"></div> <section class="flex w-full max-w-full flex-col gap-1.5 overflow-x-clip pr-1 svelte-rzlkgn"><div class="mb-1 flex items-center justify-between svelte-rzlkgn"><h3 class="text-lg font-semibold svelte-rzlkgn"> </h3> <div class="flex items-center gap-1 svelte-rzlkgn"><div class="dropdown dropdown-end svelte-rzlkgn"><div tabindex="0" role="button" class="btn btn-sm btn-circle tooltip svelte-rzlkgn"><!></div> <ul tabindex="0" class="dropdown-content menu bg-base-100 z-1 max-h-[50svh] w-max flex-nowrap overflow-y-auto rounded-xl p-2 shadow-sm svelte-rzlkgn"></ul></div> <div class="tooltip svelte-rzlkgn"><button class="btn btn-sm btn-circle svelte-rzlkgn"><!></button></div> <!> <!> <button class="btn btn-sm btn-circle tooltip relative overflow-visible before:-left-1/2 svelte-rzlkgn"><!> <!></button></div></div> <!> <!> <!> <!> <!> <button class="btn relative w-full svelte-rzlkgn"><!> <!></button> <!> <button class="btn w-full svelte-rzlkgn"><!> </button></section></div>`),
-  Kr = D(`<div class="dropdown svelte-rzlkgn"><div tabindex="0" role="button" class="btn relative size-12 p-0 shadow-md svelte-rzlkgn"><!> <!> <!></div> <!></div> <!>`, 1),
-  qr = D(`<div class="flex h-full flex-col svelte-rzlkgn"><div class="border-base-300 flex items-center justify-between border-b px-5 py-3 svelte-rzlkgn"><h2 class="text-lg font-semibold svelte-rzlkgn"> </h2> <button class="btn btn-sm btn-circle btn-ghost svelte-rzlkgn"><!></button></div> <div class="grow overflow-auto p-3 px-5 svelte-rzlkgn"><!></div></div>`),
-  Jr = D(`<!> <!>`, 1);
-
-function Yr(e, o) {
+function Kr(e, o) {
   u(o, !0);
   let s = () => T(He, `$pwaInstallState`, c),
     [c, p] = r(),
@@ -1803,7 +1781,7 @@ function Yr(e, o) {
 
   function y() {
     var e;
-    return ((e = $t.at(-1)) == null ? void 0 : e.version) ?? ``
+    return ((e = Qt.at(-1)) == null ? void 0 : e.version) ?? ``
   }
   let b = t(!1),
     x = t(`social`),
@@ -1879,15 +1857,15 @@ function Yr(e, o) {
     let e = y();
     e && localStorage.setItem(m, e), g(v, !1)
   }
-  var se = Jr(),
+  var se = Gr(),
     ce = U(se),
     F = e => {
-      var t = Kr(),
+      var t = Ur(),
         r = U(t),
         c = i(r),
         u = i(c),
         p = e => {
-          var t = Mr();
+          var t = kr();
           l(e, t)
         };
       C(u, e => {
@@ -1913,7 +1891,7 @@ function Yr(e, o) {
       });
       var y = S(m, 2),
         T = e => {
-          pr(e, {
+          ur(e, {
             class: `absolute -top-0.5 -right-0.5 z-10`,
             get count() {
               return o.user.notificationCount
@@ -1925,7 +1903,7 @@ function Yr(e, o) {
       }), z(c);
       var ee = S(c, 2),
         ae = e => {
-          var t = Gr(),
+          var t = Hr(),
             r = i(t),
             c = i(r);
           Ot(c, {
@@ -1934,7 +1912,7 @@ function Yr(e, o) {
           var u = S(r, 2),
             f = i(u),
             p = i(f);
-          Ut(p, {
+          Ht(p, {
             get userId() {
               return o.user.data.id
             },
@@ -1951,13 +1929,13 @@ function Yr(e, o) {
           });
           var m = S(p, 2),
             y = i(m);
-          Kt(y, {
+          Gt(y, {
             class: `size-4`
           }), z(m), z(f);
           var T = S(f, 2),
             E = i(T),
             D = i(E);
-          Vt(D, {
+          Bt(D, {
             get name() {
               return o.user.data.name
             },
@@ -1972,7 +1950,7 @@ function Yr(e, o) {
           var O = S(D, 2),
             M = e => {
               let t = h(() => Ce(o.user.data.equippedFlag));
-              var n = Nr(),
+              var n = Ar(),
                 r = i(n, !0);
               z(n), A(() => {
                 N(n, `data-tip`, R(t).name), d(r, R(t).flag)
@@ -1983,9 +1961,9 @@ function Yr(e, o) {
           });
           var ee = S(O, 2),
             te = e => {
-              var t = Pr(),
+              var t = jr(),
                 n = i(t);
-              Bt(n, {
+              zt(n, {
                 get username() {
                   return o.user.data.discord
                 },
@@ -1999,7 +1977,7 @@ function Yr(e, o) {
           }), z(E);
           var ae = S(E, 2),
             se = i(ae);
-          Nt(se, {
+          Mt(se, {
             class: `inline size-4`
           });
           var ce = S(se, 2),
@@ -2009,7 +1987,7 @@ function Yr(e, o) {
           z(F), z(ce), z(ae);
           var ue = S(ae, 2),
             de = i(ue);
-          zt(de, {
+          Rt(de, {
             class: `inline size-4`
           });
           var L = S(de, 2),
@@ -2019,7 +1997,7 @@ function Yr(e, o) {
           var V = S(fe),
             H = S(V),
             me = i(H);
-          qt(me, {
+          Kt(me, {
             class: `mb-0.5 inline size-4 opacity-50`
           }), z(H), z(L), z(ue), z(T), z(u);
           var he = S(u, 2),
@@ -2027,7 +2005,7 @@ function Yr(e, o) {
             ge = i(W);
           z(W);
           var G = S(W, 2);
-          Wt(G, {
+          Ut(G, {
             get badges() {
               return o.user.data.equippedBadges
             },
@@ -2044,19 +2022,19 @@ function Yr(e, o) {
           var Te = S(Se, 2),
             Ee = i(Te),
             K = i(Ee);
-          yr(i(K), {
+          gr(i(K), {
             class: `size-4`
           }), z(K);
           var De = S(K, 2);
           n(De, 21, () => R(re), w, (e, t) => {
             let n = h(() => R(ie) === R(t).key),
               r = h(() => ye() === R(t).key);
-            var o = Ir(),
+            var o = Nr(),
               s = i(o);
             let c;
             var u = i(s),
               f = e => {
-                var t = Fr();
+                var t = Mr();
                 l(e, t)
               };
             C(u, e => {
@@ -2076,12 +2054,12 @@ function Yr(e, o) {
             Oe = i(q),
             Y = i(Oe),
             Ae = e => {
-              Or(e, {
+              Tr(e, {
                 class: `size-4`
               })
             },
             je = e => {
-              jr(e, {
+              Or(e, {
                 class: `size-4`
               })
             };
@@ -2090,16 +2068,16 @@ function Yr(e, o) {
           }), z(Oe), z(q);
           var Me = S(q, 2),
             Ne = e => {
-              var t = Lr(),
+              var t = Pr(),
                 n = i(t),
                 r = i(n),
                 a = e => {
-                  Sr(e, {
+                  yr(e, {
                     class: `size-4`
                   })
                 },
                 o = e => {
-                  Tr(e, {
+                  Sr(e, {
                     class: `size-4`
                   })
                 };
@@ -2108,23 +2086,23 @@ function Yr(e, o) {
               }), z(n), z(t), A((e, r) => {
                 N(t, `data-tip`, e), N(n, `aria-label`, r)
               }, [() => J.haptics ? X.disable_vibration() : X.enable_vibration(), () => J.haptics ? X.disable_vibration() : X.enable_vibration()]), B(`click`, n, () => {
-                J.haptics = !J.haptics, Pt(`light`)
+                J.haptics = !J.haptics, Nt(`light`)
               }), l(e, t)
             };
           C(Me, e => {
-            Ft && e(Ne)
+            Pt && e(Ne)
           });
           var Pe = S(Me, 2),
             Fe = e => {
-              var t = Rr(),
+              var t = Fr(),
                 n = i(t),
                 r = e => {
-                  Zt(e, {
+                  Xt(e, {
                     class: `size-4`
                   })
                 },
                 a = e => {
-                  Qt(e, {
+                  Zt(e, {
                     class: `size-4`
                   })
                 };
@@ -2143,12 +2121,12 @@ function Yr(e, o) {
           });
           var Le = S(Pe, 2),
             Z = i(Le);
-          gr(Z, {
+          pr(Z, {
             class: `size-4`
           });
           var ze = S(Z, 2),
             Be = e => {
-              pr(e, {
+              ur(e, {
                 class: `absolute -top-1 -right-1`,
                 get count() {
                   return o.user.notificationCount
@@ -2160,9 +2138,9 @@ function Yr(e, o) {
           }), z(Le), z(Te), z(xe);
           var Ve = S(xe, 2),
             He = e => {
-              var t = zr(),
+              var t = Ir(),
                 n = i(t);
-              Gt(n, {
+              Wt(n, {
                 class: `size-5`
               });
               var r = S(n);
@@ -2181,9 +2159,9 @@ function Yr(e, o) {
           });
           var Ue = S(Ve, 2),
             We = e => {
-              var t = Br(),
+              var t = Lr(),
                 n = i(t);
-              Xt(n, {
+              Yt(n, {
                 class: `size-5`
               });
               var r = S(n);
@@ -2196,9 +2174,9 @@ function Yr(e, o) {
           });
           var Ge = S(Ue, 2),
             Ke = e => {
-              var t = Br(),
+              var t = Lr(),
                 n = i(t);
-              Xt(n, {
+              Yt(n, {
                 class: `size-5`
               });
               var r = S(n);
@@ -2212,9 +2190,9 @@ function Yr(e, o) {
           });
           var Xe = S(Ge, 2),
             Ze = e => {
-              var t = Br(),
+              var t = Lr(),
                 n = i(t);
-              Xt(n, {
+              Yt(n, {
                 class: `size-5`
               });
               var r = S(n);
@@ -2228,9 +2206,9 @@ function Yr(e, o) {
           });
           var $e = S(Xe, 2),
             et = e => {
-              var t = Br(),
+              var t = Lr(),
                 n = i(t);
-              Xt(n, {
+              Yt(n, {
                 class: `size-5`
               });
               var r = S(n);
@@ -2244,13 +2222,13 @@ function Yr(e, o) {
           });
           var nt = S($e, 2),
             rt = i(nt);
-          Yt(rt, {
+          Jt(rt, {
             class: `size-5`
           });
           var it = S(rt),
             at = S(it),
             ot = e => {
-              var t = Vr(),
+              var t = Rr(),
                 n = i(t, !0);
               z(t), A(e => d(n, e), [() => X.profile_btn_new_badge()]), l(e, t)
             };
@@ -2259,13 +2237,13 @@ function Yr(e, o) {
           }), z(nt);
           var st = S(nt, 2),
             ct = e => {
-              var t = Ur(),
+              var t = Br(),
                 n = U(t),
                 r = e => {
-                  var t = Hr(),
+                  var t = zr(),
                     n = i(t),
                     r = i(n);
-                  Yt(r, {
+                  Jt(r, {
                     class: `size-5`
                   });
                   var a = S(r);
@@ -2282,7 +2260,7 @@ function Yr(e, o) {
               });
               var s = S(n, 2),
                 c = i(s);
-              qt(c, {
+              Kt(c, {
                 class: `size-5`
               });
               var u = S(c);
@@ -2297,7 +2275,7 @@ function Yr(e, o) {
           var lt = S(st, 2),
             ut = i(lt),
             dt = e => {
-              var t = Wr();
+              var t = Vr();
               l(e, t)
             },
             ft = e => {
@@ -2342,7 +2320,7 @@ function Yr(e, o) {
         ce = e => {
           var t = O(),
             n = U(t);
-          E(n, () => G(() => import(`../chunks/DtVgVdHV.js`), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36]), import.meta.url), null, (e, t) => {
+          E(n, () => G(() => import(`../chunks/BM-FG6fR.js`), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36]), import.meta.url), null, (e, t) => {
             var n = O(),
               r = U(n);
             f(r, () => R(t).default, (e, t) => {
@@ -2371,7 +2349,7 @@ function Yr(e, o) {
     o.user.data && o.user.charges !== void 0 && e(F)
   });
   var I = S(ce, 2);
-  Rt(I, {
+  Lt(I, {
     modalBoxClass: `max-h-11/12 h-11/12 p-0 rounded-xl max-w-4xl`,
     contentAreaClass: `!p-0`,
     hasCloseButton: !1,
@@ -2385,7 +2363,7 @@ function Yr(e, o) {
       var n = O(),
         r = U(n),
         a = e => {
-          var t = qr(),
+          var t = Wr(),
             n = i(t),
             r = i(n),
             a = i(r, !0);
@@ -2415,8 +2393,21 @@ function Yr(e, o) {
   }), l(e, se), ue(), p()
 }
 re([`click`]);
+var qr = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  Jr = k(`<svg><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"></path></svg>`);
+
+function Yr(e, t) {
+  let n = F(t, qr);
+  var r = Jr();
+  V(r, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...n
+  })), l(e, r)
+}
 var Xr = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  Zr = k(`<svg><path d="M480-360q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Zm0 80q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Zm326-268Z"></path></svg>`);
+  Zr = k(`<svg><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"></path></svg>`);
 
 function Qr(e, t) {
   let n = F(t, Xr);
@@ -2428,24 +2419,11 @@ function Qr(e, t) {
     ...n
   })), l(e, r)
 }
-var $r = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  ei = k(`<svg><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"></path></svg>`);
+var $r = D(`<span class="loading loading-spinner loading-xs mr-1 align-middle" aria-hidden="true"></span>`),
+  ei = D(`<button type="button" class="btn btn-outline btn-sm mt-3 h-auto min-h-11 max-w-full whitespace-normal"> </button>`),
+  ti = D(`<div><div class="flex items-center justify-between gap-4"><label class="flex min-h-11 min-w-0 flex-1 cursor-pointer items-center gap-2 text-sm font-semibold"><!> <span> </span></label> <input type="checkbox" class="toggle toggle-primary toggle-sm shrink-0"/></div> <p class="text-base-content/80 mt-1 text-sm leading-relaxed" role="status"><!> </p> <!></div>`);
 
-function ti(e, t) {
-  let n = F(t, $r);
-  var r = ei();
-  V(r, () => ({
-    xmlns: `http://www.w3.org/2000/svg`,
-    viewBox: `0 -960 960 960`,
-    fill: `currentColor`,
-    ...n
-  })), l(e, r)
-}
-var ni = D(`<span class="loading loading-spinner loading-xs mr-1 align-middle" aria-hidden="true"></span>`),
-  ri = D(`<button type="button" class="btn btn-outline btn-sm mt-3 h-auto min-h-11 max-w-full whitespace-normal"> </button>`),
-  ii = D(`<div><div class="flex items-center justify-between gap-4"><label class="flex min-h-11 min-w-0 flex-1 cursor-pointer items-center gap-2 text-sm font-semibold"><!> <span> </span></label> <input type="checkbox" class="toggle toggle-primary toggle-sm shrink-0"/></div> <p class="text-base-content/80 mt-1 text-sm leading-relaxed" role="status"><!> </p> <!></div>`);
-
-function ai(e, t) {
+function ni(e, t) {
   let n = v();
   u(t, !0);
   let r = j(t, `inset`, 3, !0);
@@ -2453,12 +2431,12 @@ function ai(e, t) {
     Z.busy || Z.refresh()
   });
   let o = h(() => Z.state === `loading` ? X.loading() : Z.state === `unsupported` ? X.device_notifications_unsupported() : Z.state === `unavailable` ? X.device_notifications_unavailable() : Z.state === `blocked` ? X.device_notifications_blocked() : Z.state === `error` ? X.device_notifications_error() : Z.state === `on` ? X.device_notifications_on() : X.device_notifications_description());
-  var s = ii();
+  var s = ti();
   let c;
   var f = i(s),
     p = i(f),
     m = i(p);
-  gr(m, {
+  pr(m, {
     class: `text-primary size-5 shrink-0`
   });
   var g = S(m, 2),
@@ -2469,7 +2447,7 @@ function ai(e, t) {
   var b = S(f, 2),
     x = i(b),
     w = e => {
-      var t = ni();
+      var t = $r();
       l(e, t)
     };
   C(x, e => {
@@ -2479,7 +2457,7 @@ function ai(e, t) {
   z(b);
   var E = S(b, 2),
     D = e => {
-      var t = ri(),
+      var t = ei(),
         n = i(t, !0);
       z(t), A(e => {
         t.disabled = Z.busy, d(n, e)
@@ -2499,7 +2477,7 @@ function ai(e, t) {
 }
 re([`change`, `click`]);
 var $ = (e, t = M, n = M) => {
-    var r = oi(),
+    var r = ri(),
       a = i(r),
       o = i(a, !0);
     z(a);
@@ -2509,18 +2487,18 @@ var $ = (e, t = M, n = M) => {
       d(o, t()), d(c, n() || `-`)
     }), l(e, r)
   },
-  oi = D(`<div class="grid min-h-11 grid-cols-[minmax(0,1fr)_minmax(0,1fr)] items-center gap-3 py-2 text-sm"><span class="min-w-0 break-words"> </span><kbd class="bg-base-200 max-w-full min-w-0 justify-self-end rounded px-2 py-1 text-right text-xs [overflow-wrap:anywhere] whitespace-normal"> </kbd></div>`),
-  si = D(`<p class="text-base-content/80 mb-4 text-sm"> </p> <details class="group border-base-content/10 border-b" open=""><summary class="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 py-3 text-sm font-semibold [&amp;::-webkit-details-marker]:hidden"> <span aria-hidden="true" class="mr-1 size-2 shrink-0 -rotate-45 border-r-2 border-b-2 border-current transition-transform group-open:rotate-45 motion-reduce:transition-none"></span></summary> <div class="pb-4"><!> <!> <!> <!> <!> <!> <!> <!> <!></div></details> <details class="group border-base-content/10 border-b" open=""><summary class="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 py-3 text-sm font-semibold [&amp;::-webkit-details-marker]:hidden"> <span aria-hidden="true" class="mr-1 size-2 shrink-0 -rotate-45 border-r-2 border-b-2 border-current transition-transform group-open:rotate-45 motion-reduce:transition-none"></span></summary> <div class="pb-4"><!> <!> <!> <!> <!> <!> <!></div></details> <details class="group border-base-content/10 border-b"><summary class="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 py-3 text-sm font-semibold [&amp;::-webkit-details-marker]:hidden"> <span aria-hidden="true" class="mr-1 size-2 shrink-0 -rotate-45 border-r-2 border-b-2 border-current transition-transform group-open:rotate-45 motion-reduce:transition-none"></span></summary> <div class="pb-4"><!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!></div></details> <details class="group border-base-content/10 border-b"><summary class="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 py-3 text-sm font-semibold [&amp;::-webkit-details-marker]:hidden"> <span aria-hidden="true" class="mr-1 size-2 shrink-0 -rotate-45 border-r-2 border-b-2 border-current transition-transform group-open:rotate-45 motion-reduce:transition-none"></span></summary> <div class="pb-4"><!> <!></div></details> <details class="group border-base-content/10 border-b"><summary class="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 py-3 text-sm font-semibold [&amp;::-webkit-details-marker]:hidden"> <span aria-hidden="true" class="mr-1 size-2 shrink-0 -rotate-45 border-r-2 border-b-2 border-current transition-transform group-open:rotate-45 motion-reduce:transition-none"></span></summary> <div class="pb-4"><!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!></div></details> <details class="group border-base-content/10 border-b"><summary class="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 py-3 text-sm font-semibold [&amp;::-webkit-details-marker]:hidden"> <span aria-hidden="true" class="mr-1 size-2 shrink-0 -rotate-45 border-r-2 border-b-2 border-current transition-transform group-open:rotate-45 motion-reduce:transition-none"></span></summary> <div class="pb-4"><!> <!> <!> <!> <!></div></details>`, 1);
+  ri = D(`<div class="grid min-h-11 grid-cols-[minmax(0,1fr)_minmax(0,1fr)] items-center gap-3 py-2 text-sm"><span class="min-w-0 break-words"> </span><kbd class="bg-base-200 max-w-full min-w-0 justify-self-end rounded px-2 py-1 text-right text-xs [overflow-wrap:anywhere] whitespace-normal"> </kbd></div>`),
+  ii = D(`<p class="text-base-content/80 mb-4 text-sm"> </p> <details class="group border-base-content/10 border-b" open=""><summary class="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 py-3 text-sm font-semibold [&amp;::-webkit-details-marker]:hidden"> <span aria-hidden="true" class="mr-1 size-2 shrink-0 -rotate-45 border-r-2 border-b-2 border-current transition-transform group-open:rotate-45 motion-reduce:transition-none"></span></summary> <div class="pb-4"><!> <!> <!> <!> <!> <!> <!> <!> <!></div></details> <details class="group border-base-content/10 border-b" open=""><summary class="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 py-3 text-sm font-semibold [&amp;::-webkit-details-marker]:hidden"> <span aria-hidden="true" class="mr-1 size-2 shrink-0 -rotate-45 border-r-2 border-b-2 border-current transition-transform group-open:rotate-45 motion-reduce:transition-none"></span></summary> <div class="pb-4"><!> <!> <!> <!> <!> <!> <!></div></details> <details class="group border-base-content/10 border-b"><summary class="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 py-3 text-sm font-semibold [&amp;::-webkit-details-marker]:hidden"> <span aria-hidden="true" class="mr-1 size-2 shrink-0 -rotate-45 border-r-2 border-b-2 border-current transition-transform group-open:rotate-45 motion-reduce:transition-none"></span></summary> <div class="pb-4"><!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!></div></details> <details class="group border-base-content/10 border-b"><summary class="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 py-3 text-sm font-semibold [&amp;::-webkit-details-marker]:hidden"> <span aria-hidden="true" class="mr-1 size-2 shrink-0 -rotate-45 border-r-2 border-b-2 border-current transition-transform group-open:rotate-45 motion-reduce:transition-none"></span></summary> <div class="pb-4"><!> <!></div></details> <details class="group border-base-content/10 border-b"><summary class="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 py-3 text-sm font-semibold [&amp;::-webkit-details-marker]:hidden"> <span aria-hidden="true" class="mr-1 size-2 shrink-0 -rotate-45 border-r-2 border-b-2 border-current transition-transform group-open:rotate-45 motion-reduce:transition-none"></span></summary> <div class="pb-4"><!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!></div></details> <details class="group border-base-content/10 border-b"><summary class="flex min-h-12 cursor-pointer list-none items-center justify-between gap-3 py-3 text-sm font-semibold [&amp;::-webkit-details-marker]:hidden"> <span aria-hidden="true" class="mr-1 size-2 shrink-0 -rotate-45 border-r-2 border-b-2 border-current transition-transform group-open:rotate-45 motion-reduce:transition-none"></span></summary> <div class="pb-4"><!> <!> <!> <!> <!></div></details>`, 1);
 
-function ci(e, t) {
+function ai(e, t) {
   u(t, !0);
-  let r = rn(),
+  let r = nn(),
     a = /Mac|iPhone|iPad|iPod/i.test(navigator.userAgent) ? `Cmd` : `Ctrl`,
     o = h(() => [
       [X.undo(), `${a}+Z`],
       [X.redo(), `${a}+Shift+Z / ${a}+Y`]
     ]);
-  var s = si(),
+  var s = ii(),
     c = U(s),
     f = i(c, !0);
   z(c);
@@ -2575,7 +2553,7 @@ function ci(e, t) {
   var D = S(E, 2);
   {
     let e = h(() => X.overlay_build_peek()),
-      t = h(on);
+      t = h(an);
     $(D, () => R(e), () => R(t))
   }
   z(_), z(p);
@@ -2659,7 +2637,7 @@ function ci(e, t) {
     $(fe, () => R(e), () => R(t))
   }
   var pe = S(fe, 2);
-  n(pe, 17, () => an, e => e.id, (e, t) => {
+  n(pe, 17, () => rn, e => e.id, (e, t) => {
     {
       let n = h(() => R(t).label()),
         i = h(() => r[R(t).id].toUpperCase());
@@ -2883,12 +2861,12 @@ function ci(e, t) {
     d(f, e), d(g, t), d(j, n), d(ce, r), d(q, i), d(je, a), d(Ke, o)
   }, [() => X.settings_controls_hint(), () => X.paint(), () => X.settings_map_controls(), () => X.settings_studio(), () => X.settings_overlay_placement(), () => X.headquarters(), () => X.description()]), l(e, s), ue()
 }
-var li = D(`<div class="mt-4 block text-sm"><div class="mb-1 flex items-center justify-between gap-3 font-medium"><label class="min-w-0 flex-1"> </label> <output class="bg-base-200 min-w-12 shrink-0 rounded-md px-2 py-0.5 text-center tabular-nums"> </output> <!></div> <input class="settings-range text-primary focus-visible:outline-primary h-11 w-full cursor-pointer appearance-none rounded-md bg-transparent focus-visible:outline-2 focus-visible:outline-offset-2 svelte-1ph9ec8" type="range" min="0" max="100" step="1"/></div>`);
+var oi = D(`<div class="mt-4 block text-sm"><div class="mb-1 flex items-center justify-between gap-3 font-medium"><label class="min-w-0 flex-1"> </label> <output class="bg-base-200 min-w-12 shrink-0 rounded-md px-2 py-0.5 text-center tabular-nums"> </output> <!></div> <input class="settings-range text-primary focus-visible:outline-primary h-11 w-full cursor-pointer appearance-none rounded-md bg-transparent focus-visible:outline-2 focus-visible:outline-offset-2 svelte-1ph9ec8" type="range" min="0" max="100" step="1"/></div>`);
 
-function ui(e, t) {
+function si(e, t) {
   let n = v();
   u(t, !0);
-  var r = li(),
+  var r = oi(),
     a = i(r),
     s = i(a),
     c = i(s, !0);
@@ -2908,7 +2886,7 @@ function ui(e, t) {
   }), B(`input`, h, e => t.onchange(e.currentTarget.valueAsNumber)), l(e, r), ue()
 }
 re([`input`]);
-var di = {
+var ci = {
     plop: () => X.settings_sound_paint(),
     smallPlop: () => X.settings_sound_erase(),
     bigPlop: () => X.settings_sound_big_plop(),
@@ -2919,7 +2897,7 @@ var di = {
     purchaseSuccess: () => X.settings_sound_purchase_success(),
     purchaseFail: () => X.settings_sound_purchase_fail()
   },
-  fi = {
+  li = {
     report_feedback: () => X.report_feedback(),
     appeal_feedback: () => X.appeal_feedback(),
     report_ignored: () => X.settings_report_dismissed(),
@@ -2936,10 +2914,10 @@ var di = {
     september_event_treasure: () => X.settings_event_rewards(),
     september_event_frame: () => X.settings_event_rewards()
   },
-  pi = (e, t = M, n = M, r = M, o, s) => {
+  ui = (e, t = M, n = M, r = M, o, s) => {
     let c = m(() => ie(o == null ? void 0 : o(), !1)),
       u = m(() => ie(s == null ? void 0 : s(), ``));
-    var f = hi();
+    var f = fi();
     let p;
     var h = i(f),
       g = i(h),
@@ -2947,7 +2925,7 @@ var di = {
     z(g);
     var v = S(g),
       y = e => {
-        var t = mi(),
+        var t = di(),
           n = i(t, !0);
         z(t), A(() => d(n, R(u))), l(e, t)
       };
@@ -2964,29 +2942,29 @@ var di = {
       e.currentTarget.checked = n(), r()(t)
     }), l(e, f)
   },
-  mi = D(`<span class="text-base-content/80 mt-1 block text-sm leading-relaxed"> </span>`),
-  hi = D(`<label><span class="min-w-0"><span class="font-medium"> </span><!></span> <input class="toggle toggle-primary toggle-sm shrink-0" type="checkbox"/></label>`),
-  gi = D(`<!> <h2 class="text-xl font-bold"> </h2>`, 1),
-  _i = D(`<div class="flex items-center gap-2"><span aria-hidden="true"></span> <button type="button" class="btn btn-ghost btn-square min-h-11 min-w-11"><!></button></div>`),
-  vi = D(`<button type="button" role="tab"> </button>`),
-  yi = D(`<p role="alert" class="bg-error/10 text-base-content shrink-0 px-4 py-3 text-sm sm:px-6"> </p>`),
-  bi = D(`<button type="button"><!> </button>`),
-  xi = D(`<div class="border-base-content/10 border-b py-4"><p class="mb-3 text-sm font-medium"> </p> <div role="group" class="grid grid-cols-2 gap-2"></div></div> <!> <!> <!>`, 1),
-  Si = D(`<!> <!> <!>`, 1),
-  Ci = D(`<p class="text-base-content/80 py-6 text-sm"> </p>`),
-  wi = D(`<span class="loading loading-spinner loading-sm" aria-hidden="true"></span>`),
-  Ti = D(`<button type="button" class="btn btn-ghost btn-square text-primary min-h-11 min-w-11"><!></button>`),
-  Ei = D(`<!> <p class="text-base-content/80 mt-4 text-sm leading-relaxed"> </p> <!>`, 1),
-  Di = D(`<div class="pt-5"><!></div>`),
-  Oi = D(`<div role="status" class="flex justify-center py-6"><span class="loading loading-spinner"></span></div>`),
-  ki = D(`<!> <h3 class="mt-6 text-sm font-semibold"> </h3> <!>`, 1),
-  Ai = D(`<button class="btn btn-outline my-3 min-h-11"> </button>`),
-  ji = D(`<p class="text-base-content/80 my-3 text-sm leading-relaxed"> </p> <!>`, 1),
-  Mi = D(`<!> <!> <!> <!> <!>`, 1),
-  Ni = D(`<div class="flex min-h-0 flex-1 flex-col"><div role="tablist" class="border-base-content/10 grid shrink-0 grid-cols-6 gap-1 border-b p-2 sm:grid-cols-5 sm:px-4"></div> <!> <div role="tabpanel" tabindex="0" class="min-h-0 flex-1 overflow-x-hidden overflow-y-auto overscroll-contain px-4 pb-6 sm:px-6"><!></div></div>`),
-  Pi = D(`<div role="presentation"><!></div>`);
+  di = D(`<span class="text-base-content/80 mt-1 block text-sm leading-relaxed"> </span>`),
+  fi = D(`<label><span class="min-w-0"><span class="font-medium"> </span><!></span> <input class="toggle toggle-primary toggle-sm shrink-0" type="checkbox"/></label>`),
+  pi = D(`<!> <h2 class="text-xl font-bold"> </h2>`, 1),
+  mi = D(`<div class="flex items-center gap-2"><span aria-hidden="true"></span> <button type="button" class="btn btn-ghost btn-square min-h-11 min-w-11"><!></button></div>`),
+  hi = D(`<button type="button" role="tab"> </button>`),
+  gi = D(`<p role="alert" class="bg-error/10 text-base-content shrink-0 px-4 py-3 text-sm sm:px-6"> </p>`),
+  _i = D(`<button type="button"><!> </button>`),
+  vi = D(`<div class="border-base-content/10 border-b py-4"><p class="mb-3 text-sm font-medium"> </p> <div role="group" class="grid grid-cols-2 gap-2"></div></div> <!> <!> <!>`, 1),
+  yi = D(`<!> <!> <!>`, 1),
+  bi = D(`<p class="text-base-content/80 py-6 text-sm"> </p>`),
+  xi = D(`<span class="loading loading-spinner loading-sm" aria-hidden="true"></span>`),
+  Si = D(`<button type="button" class="btn btn-ghost btn-square text-primary min-h-11 min-w-11"><!></button>`),
+  Ci = D(`<!> <p class="text-base-content/80 mt-4 text-sm leading-relaxed"> </p> <!>`, 1),
+  wi = D(`<div class="pt-5"><!></div>`),
+  Ti = D(`<div role="status" class="flex justify-center py-6"><span class="loading loading-spinner"></span></div>`),
+  Ei = D(`<!> <h3 class="mt-6 text-sm font-semibold"> </h3> <!>`, 1),
+  Di = D(`<button class="btn btn-outline my-3 min-h-11"> </button>`),
+  Oi = D(`<p class="text-base-content/80 my-3 text-sm leading-relaxed"> </p> <!>`, 1),
+  ki = D(`<!> <!> <!> <!> <!>`, 1),
+  Ai = D(`<div class="flex min-h-0 flex-1 flex-col"><div role="tablist" class="border-base-content/10 grid shrink-0 grid-cols-6 gap-1 border-b p-2 sm:grid-cols-5 sm:px-4"></div> <!> <div role="tabpanel" tabindex="0" class="min-h-0 flex-1 overflow-x-hidden overflow-y-auto overscroll-contain px-4 pb-6 sm:px-6"><!></div></div>`),
+  ji = D(`<div role="presentation"><!></div>`);
 
-function Fi(e, r) {
+function Mi(e, r) {
   u(r, !0);
   let o = h(() => [{
       id: `interface`,
@@ -3114,9 +3092,9 @@ function Fi(e, r) {
   var re = O(),
     ie = U(re),
     P = e => {
-      var t = Pi(),
+      var t = ji(),
         r = i(t);
-      Rt(r, {
+      Lt(r, {
         modalBoxClass: `max-w-3xl h-[min(40rem,90dvh)]`,
         contentAreaClass: `!p-0 min-h-0`,
         hasCloseButton: !1,
@@ -3127,9 +3105,9 @@ function Fi(e, r) {
           J.playerSettingsOpen = e
         },
         header: e => {
-          var t = gi(),
+          var t = pi(),
             n = U(t);
-          en(n, {
+          $t(n, {
             class: `text-primary size-5 shrink-0`
           });
           var r = S(n, 2),
@@ -3137,7 +3115,7 @@ function Fi(e, r) {
           z(r), A(e => d(a, e), [() => X.settings()]), l(e, t)
         },
         headerAction: e => {
-          var t = _i(),
+          var t = mi(),
             n = i(t);
           let r;
           var o = S(n, 2),
@@ -3153,10 +3131,10 @@ function Fi(e, r) {
           }), l(e, t)
         },
         children: (e, t) => {
-          var r = Ni(),
+          var r = Ai(),
             s = i(r);
           n(s, 23, () => R(o), e => e.id, (e, t, n) => {
-            var r = vi(),
+            var r = hi(),
               o = i(r, !0);
             z(r), A(() => {
               N(r, `id`, `settings-tab-${R(t).id}`), N(r, `aria-controls`, `settings-panel-${R(t).id}`), N(r, `aria-selected`, J.playerSettingsTab === R(t).id), N(r, `tabindex`, J.playerSettingsTab === R(t).id ? 0 : -1), a(r, 1, `focus-visible:outline-primary min-h-11 min-w-0 rounded-lg px-2 py-2 text-sm font-semibold break-words transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 motion-reduce:transition-none sm:col-span-1 ${R(n)<3?`col-span-2`:`col-span-3`} ${J.playerSettingsTab===R(t).id?`bg-primary text-primary-content`:`hover:bg-base-200 text-base-content/85`}`), d(o, R(t).label)
@@ -3166,7 +3144,7 @@ function Fi(e, r) {
           }), z(s);
           var u = S(s, 2),
             f = e => {
-              var t = yi(),
+              var t = gi(),
                 n = i(t, !0);
               z(t), A(() => d(n, R(b))), l(e, t)
             };
@@ -3176,22 +3154,22 @@ function Fi(e, r) {
           var p = S(u, 2),
             T = i(p),
             te = e => {
-              var t = xi(),
+              var t = vi(),
                 r = U(t),
                 o = i(r),
                 s = i(o, !0);
               z(o);
               var c = S(o, 2);
               n(c, 20, () => [`custom-winter`, `dark`], e => e, (e, t) => {
-                var n = bi(),
+                var n = _i(),
                   r = i(n),
                   o = e => {
-                    ti(e, {
+                    Qr(e, {
                       class: `size-4 shrink-0`
                     })
                   },
                   s = e => {
-                    Qr(e, {
+                    Yr(e, {
                       class: `size-4 shrink-0`
                     })
                   };
@@ -3208,21 +3186,21 @@ function Fi(e, r) {
               var u = S(r, 2);
               {
                 let e = h(() => X.settings_show_hq());
-                pi(u, () => R(e), () => K.showAllianceHqPins, () => e => {
+                ui(u, () => R(e), () => K.showAllianceHqPins, () => e => {
                   Y.data ? j(`hideAllianceHqPins`, !e) : (K.showAllianceHqPins = e, M())
                 }, () => R(_))
               }
               var f = S(u, 2);
               {
                 let e = h(() => X.settings_show_hotspots());
-                pi(f, () => R(e), () => K.showHotspots, () => e => {
+                ui(f, () => R(e), () => K.showHotspots, () => e => {
                   K.showHotspots = e, M()
                 })
               }
               var p = S(f, 2);
               {
                 let e = h(() => X.art_opacity());
-                ui(p, {
+                si(p, {
                   get label() {
                     return R(e)
                   },
@@ -3242,27 +3220,27 @@ function Fi(e, r) {
               var t = O(),
                 n = U(t),
                 r = e => {
-                  var t = Si(),
+                  var t = yi(),
                     n = U(t);
                   {
                     let e = h(() => X.show_last_painted_pixel_on_alliance());
-                    pi(n, () => R(e), () => Y.data.showLastPixel, () => e => j(`showLastPixel`, e), () => R(_))
+                    ui(n, () => R(e), () => Y.data.showLastPixel, () => e => j(`showLastPixel`, e), () => R(_))
                   }
                   var r = S(n, 2);
                   {
                     let e = h(() => X.show_discord_account());
-                    pi(r, () => R(e), () => Y.data.showDiscord, () => e => j(`showDiscord`, e), () => R(_))
+                    ui(r, () => R(e), () => Y.data.showDiscord, () => e => j(`showDiscord`, e), () => R(_))
                   }
                   var i = S(r, 2);
                   {
                     let e = h(() => X.hotspots_opt_out()),
                       t = h(() => R(E) ? X.hotspots_opt_out_staff_tooltip() : X.hotspots_opt_out_tooltip());
-                    pi(i, () => R(e), () => R(E) || Y.data.hotspotsOptOut, () => e => j(`hotspotsOptOut`, e), () => R(_) || R(E), () => R(t))
+                    ui(i, () => R(e), () => R(E) || Y.data.hotspotsOptOut, () => e => j(`hotspotsOptOut`, e), () => R(_) || R(E), () => R(t))
                   }
                   l(e, t)
                 },
                 a = e => {
-                  var t = Ci(),
+                  var t = bi(),
                     n = i(t, !0);
                   z(t), A(e => d(n, e), [() => X.settings_login_hint()]), l(e, t)
                 };
@@ -3271,11 +3249,11 @@ function Fi(e, r) {
               }), l(e, t)
             },
             ie = e => {
-              var t = Ei(),
+              var t = Ci(),
                 r = U(t);
               {
                 let e = h(() => X.mute());
-                pi(r, () => R(e), () => J.muted, () => e => {
+                ui(r, () => R(e), () => J.muted, () => e => {
                   J.muted = e
                 })
               }
@@ -3286,14 +3264,14 @@ function Fi(e, r) {
               n(s, 16, () => Se, e => e, (e, t) => {
                 {
                   let n = e => {
-                      var n = Ti(),
+                      var n = Si(),
                         r = i(n),
                         a = e => {
-                          var t = wi();
+                          var t = xi();
                           l(e, t)
                         },
                         o = e => {
-                          tn(e, {
+                          en(e, {
                             class: `size-5`
                           })
                         };
@@ -3302,13 +3280,13 @@ function Fi(e, r) {
                       }), z(n), A((e, r) => {
                         N(n, `aria-label`, e), N(n, `title`, r), n.disabled = J.muted || K.sounds[t] === 0 || R(c) !== null
                       }, [() => X.settings_test_sound({
-                        sound: di[t]()
+                        sound: ci[t]()
                       }), () => X.settings_test_sound({
-                        sound: di[t]()
+                        sound: ci[t]()
                       })]), B(`click`, n, () => void m(t)), l(e, n)
                     },
-                    r = h(() => di[t]());
-                  ui(e, {
+                    r = h(() => ci[t]());
+                  si(e, {
                     get label() {
                       return R(r)
                     },
@@ -3327,14 +3305,14 @@ function Fi(e, r) {
               }), A(e => d(o, e), [() => J.muted ? X.settings_sounds_muted() : X.settings_volume_hint()]), l(e, t)
             },
             P = e => {
-              var t = Di();
-              ci(i(t), {}), z(t), l(e, t)
+              var t = wi();
+              ai(i(t), {}), z(t), l(e, t)
             },
             ae = e => {
-              var t = Mi(),
+              var t = ki(),
                 r = U(t),
                 a = e => {
-                  ai(e, {
+                  ni(e, {
                     inset: !1
                   })
                 };
@@ -3344,46 +3322,46 @@ function Fi(e, r) {
               var o = S(r, 2);
               {
                 let e = h(() => X.settings_charges_full());
-                pi(o, () => R(e), () => K.alerts.charges, () => e => {
+                ui(o, () => R(e), () => K.alerts.charges, () => e => {
                   K.alerts.charges = e, M()
                 })
               }
               var s = S(o, 2);
               {
                 let e = h(() => X.event_notification());
-                pi(s, () => R(e), () => K.alerts.events, () => e => {
+                ui(s, () => R(e), () => K.alerts.events, () => e => {
                   K.alerts.events = e, M()
                 })
               }
               var c = S(s, 2);
               {
                 let e = h(() => X.frontend_update_available());
-                pi(c, () => R(e), () => K.alerts.updates, () => e => {
+                ui(c, () => R(e), () => K.alerts.updates, () => e => {
                   K.alerts.updates = e, M()
                 })
               }
               var u = S(c, 2),
                 f = e => {
-                  var t = ji(),
+                  var t = Oi(),
                     r = U(t),
                     a = i(r, !0);
                   z(r);
                   var o = S(r, 2),
                     s = e => {
-                      var t = Oi(),
+                      var t = Ti(),
                         n = i(t);
                       z(t), A(e => N(n, `aria-label`, e), [() => X.loading()]), l(e, t)
                     },
                     c = e => {
-                      var t = ki(),
+                      var t = Ei(),
                         r = U(t);
-                      n(r, 17, () => Object.entries(fi), ([e, t]) => e, (e, t) => {
+                      n(r, 17, () => Object.entries(li), ([e, t]) => e, (e, t) => {
                         var n = h(() => I(R(t), 2));
                         let r = () => R(n)[0],
                           i = () => R(n)[1];
                         {
                           let t = h(() => i()());
-                          pi(e, () => R(t), () => R(x)[r()] !== !1, () => e => {
+                          ui(e, () => R(t), () => R(x)[r()] !== !1, () => e => {
                             k(() => q.setNotificationPreference(r(), e), () => {
                               R(x) && (R(x)[r()] = e)
                             })
@@ -3398,9 +3376,9 @@ function Fi(e, r) {
                         {
                           let n = h(() => {
                             var e;
-                            return ((e = nn[R(t).category]) == null ? void 0 : e.call(nn)) ?? X.alliance_activity()
+                            return ((e = tn[R(t).category]) == null ? void 0 : e.call(tn)) ?? X.alliance_activity()
                           });
-                          pi(e, () => R(n), () => R(t).enabled, () => e => {
+                          ui(e, () => R(n), () => R(t).enabled, () => e => {
                             k(() => q.setAllianceNotificationPreference(R(t).category, e), () => {
                               g(w, R(w).map(n => n.category === R(t).category ? {
                                 ...n,
@@ -3412,7 +3390,7 @@ function Fi(e, r) {
                       }), A(e => d(o, e), [() => X.alliance_notification_preferences()]), l(e, t)
                     },
                     u = e => {
-                      var t = Ai(),
+                      var t = Di(),
                         n = i(t, !0);
                       z(t), A(e => d(n, e), [() => X.device_notifications_retry()]), B(`click`, t, () => D()), l(e, t)
                     };
@@ -3421,7 +3399,7 @@ function Fi(e, r) {
                   }), A(e => d(a, e), [() => X.settings_notifications_hint()]), l(e, t)
                 },
                 p = e => {
-                  var t = Ci(),
+                  var t = bi(),
                     n = i(t, !0);
                   z(t), A(e => d(n, e), [() => X.settings_login_hint()]), l(e, t)
                 };
@@ -3447,8 +3425,21 @@ function Fi(e, r) {
   }), l(e, re), ue()
 }
 re([`change`, `keydown`, `keyup`, `mousedown`, `mouseup`, `contextmenu`, `click`]);
+var Ni = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  Pi = k(`<svg><path d="M440-40v-80q-125-14-214.5-103.5T122-438H42v-80h80q14-125 103.5-214.5T440-836v-80h80v80q125 14 214.5 103.5T838-518h80v80h-80q-14 125-103.5 214.5T520-120v80h-80Zm40-158q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Z"></path></svg>`);
+
+function Fi(e, t) {
+  let n = F(t, Ni);
+  var r = Pi();
+  V(r, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...n
+  })), l(e, r)
+}
 var Ii = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  Li = k(`<svg><path d="M440-40v-80q-125-14-214.5-103.5T122-438H42v-80h80q14-125 103.5-214.5T440-836v-80h80v80q125 14 214.5 103.5T838-518h80v80h-80q-14 125-103.5 214.5T520-120v80h-80Zm40-158q116 0 198-82t82-198q0-116-82-198t-198-82q-116 0-198 82t-82 198q0 116 82 198t198 82Z"></path></svg>`);
+  Li = k(`<svg><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q146 0 255.5 91.5T872-559h-82q-19-73-68.5-130.5T600-776v16q0 33-23.5 56.5T520-680h-80v80q0 17-11.5 28.5T400-560h-80v80h80v120h-40L168-552q-3 18-5.5 36t-2.5 36q0 131 92 225t228 95v80Zm364-20L716-228q-21 12-45 20t-51 8q-75 0-127.5-52.5T440-380q0-75 52.5-127.5T620-560q75 0 127.5 52.5T800-380q0 27-8 51t-20 45l128 128-56 56ZM620-280q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Z"></path></svg>`);
 
 function Ri(e, t) {
   let n = F(t, Ii);
@@ -3460,21 +3451,8 @@ function Ri(e, t) {
     ...n
   })), l(e, r)
 }
-var zi = new Set([`$$slots`, `$$events`, `$$legacy`]),
-  Bi = k(`<svg><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q146 0 255.5 91.5T872-559h-82q-19-73-68.5-130.5T600-776v16q0 33-23.5 56.5T520-680h-80v80q0 17-11.5 28.5T400-560h-80v80h80v120h-40L168-552q-3 18-5.5 36t-2.5 36q0 131 92 225t228 95v80Zm364-20L716-228q-21 12-45 20t-51 8q-75 0-127.5-52.5T440-380q0-75 52.5-127.5T620-560q75 0 127.5 52.5T800-380q0 27-8 51t-20 45l128 128-56 56ZM620-280q42 0 71-29t29-71q0-42-29-71t-71-29q-42 0-71 29t-29 71q0 42 29 71t71 29Z"></path></svg>`);
 
-function Vi(e, t) {
-  let n = F(t, zi);
-  var r = Bi();
-  V(r, () => ({
-    xmlns: `http://www.w3.org/2000/svg`,
-    viewBox: `0 -960 960 960`,
-    fill: `currentColor`,
-    ...n
-  })), l(e, r)
-}
-
-function Hi(e) {
+function zi(e) {
   let t = document.createElement(`img`);
   return t.src = e, new Promise((e, n) => {
     t.addEventListener(`load`, () => {
@@ -3485,14 +3463,14 @@ function Hi(e) {
   })
 }
 
-function Ui(e) {
+function Bi(e) {
   let t = document.createElement(`canvas`);
   t.width = e.naturalWidth, t.height = e.naturalHeight;
   let n = t.getContext(`2d`);
   return n == null || n.drawImage(e, 0, 0), t
 }
 
-function Wi() {
+function Vi() {
   let e = document.createElement(`div`);
   return e.innerHTML = `
 				<div class="wplace-marker-root">
@@ -3577,52 +3555,52 @@ function Wi() {
 						50% { transform: translateY(-1px); }
 					}
 				</style>
-			`, new gn.default.Marker({
+			`, new hn.default.Marker({
     element: e,
     anchor: `bottom`
   })
 }
 
-function Gi(e, t, n) {
+function Hi(e, t, n) {
   return e < t ? t : e > n ? n : e
 }
 
-function Ki(e, t) {
+function Ui(e, t) {
   let n = 10 ** t;
   return Math.round(e * n) / n
 }
 
-function qi(e) {
+function Wi(e) {
   if (!e) return !1;
   let t = e instanceof Error ? e.message : String(e);
   return /webgl|webglcontextcreationerror|failed to initialize webgl/i.test(t)
 }
-var Ji = D(`<meta property="og:title" content="Wplace - A massive real-time pixel art canvas on the world map!"/> <meta name="twitter:title" content="Wplace - A massive real-time pixel art canvas on the world map!"/> <meta name="robots" content="index, follow, max-image-preview:large"/> <meta name="color-scheme" content="light only"/>`, 1),
-  Yi = D(`<button type="button" class="btn btn-lg btn-square sm:btn-xl z-30 shadow-md"><!></button>`),
-  Xi = D(`<div class="relative"><!> <span class="center-absolute absolute text-[10px] text-red-400">?</span></div>`),
-  Zi = D(`<button class="btn btn-lg btn-square sm:btn-xl z-30 shadow-md"><!></button>`),
-  Qi = D(`<button class="btn btn-primary shadow-xl"> </button>`),
-  $i = D(`<div class="absolute top-0 -left-2 -translate-x-full translate-y-1/2 select-none"><!></div>`),
-  ea = D(`<div class="relative z-50"><!> <!></div>`),
-  ta = D(`<button class="btn btn-square shadow-md"><!></button>`),
-  na = D(`<button class="btn btn-square shadow-md"><!></button> <button title="Overlays"><!></button>`, 1),
-  ra = D(`<div class="flex flex-col items-center gap-3"><!> <button class="btn btn-square relative shadow-md"><!></button> <button class="btn btn-square shadow-md"><!></button> <!></div>`),
-  ia = D(`<div class="flex flex-col gap-3"><button><!></button></div>`),
-  aa = D(`<button class="btn btn-sm btn-circle"><!></button>`),
-  oa = D(`<div class="tooltip tooltip-right"><div class="tooltip-content">Select Area <kbd class="kbd kbd-xs text-base-content touchscreen:hidden ml-0.5 rounded-md">C</kbd></div> <button class="btn btn-sm btn-circle" title="Select area"><!></button></div>`),
-  sa = D(`<button><!></button>`),
-  ca = D(`<div class="btn btn-sm btn-error w-max cursor-auto text-xs text-nowrap sm:text-base"><!> </div>`),
-  la = D(`<button class="btn btn-sm btn-warning w-max text-xs text-nowrap sm:text-base"> </button>`),
-  ua = D(`<button class="btn sm:btn-lg duration text-xs text-nowrap transition-opacity sm:text-base"><!> </button>`),
-  da = D(`<span></span>`),
-  fa = D(`<div class="absolute bottom-0 left-0 z-30 w-full sm:left-1/2 sm:max-w-md sm:-translate-x-1/2 md:max-w-lg"><div class="rounded-t-box bg-base-100 border-base-300 sm:rounded-b-box max-sm:pb-safe w-full border-t bg-cover bg-center pt-2 sm:mb-3 sm:shadow-xl" style=""><!></div></div>`),
-  pa = D(`<div class="absolute bottom-0 left-0 z-50 w-full"><div class="paint-panel-shell rounded-t-box bg-base-100 border-base-300 pb-safe-3 touchscreen:pt-2 touchscreen:pb-[calc(10px+var(--safe-area-inset-bottom))] w-full border-t pt-3 max-sm:pt-2 max-sm:pb-[calc(10px+var(--safe-area-inset-bottom))] svelte-1uha8ag"><!></div></div>`),
-  ma = D(`<div class="pb-safe pointer-events-none absolute bottom-0 left-0 z-50 w-full sm:left-1/2 sm:max-w-lg sm:-translate-x-1/2 md:max-w-xl"><!></div>`),
-  ha = D(`<div class="absolute bottom-0 left-0 z-50 w-full sm:left-1/2 sm:max-w-md sm:-translate-x-1/2"><div class="rounded-t-box bg-base-100 border-base-300 sm:rounded-b-box max-sm:pb-safe w-full border-t pt-2 sm:mb-3 sm:shadow-xl"><div class="px-3 pt-1 pb-2"><div class="flex items-center justify-between"><span><!> </span> <button class="btn btn-circle btn-sm"><!></button></div> <div class="mt-1 flex items-center justify-center gap-4"><button class="btn btn-primary w-46"><!></button></div></div></div></div>`),
-  ga = D(`<div class="absolute bottom-0 left-0 z-50 w-full sm:left-1/2 sm:max-w-md sm:-translate-x-1/2"><div class="rounded-t-box bg-base-100 border-base-300 sm:rounded-b-box w-full border-t pt-2 sm:mb-3 sm:shadow-xl"><div class="px-3 pt-1 pb-2"><div class="flex min-w-0 items-start justify-between gap-3"><div class="min-w-0"><p class="font-medium"><!> </p> <p class="text-base-content/55 mt-0.5 text-xs"> </p></div> <button class="btn btn-circle btn-sm shrink-0"><!></button></div> <div class="mt-2 flex items-center justify-center"><button class="btn btn-primary w-46"><!></button></div></div></div></div>`),
-  _a = D(`<div class="disable-pinch-zoom relative h-full overflow-hidden"><div id="map" class="h-screen w-screen cursor-default"></div> <!> <div><div><!> <!></div></div> <div><!> <div class="flex flex-col gap-1 max-sm:hidden"><button class="btn btn-sm btn-circle">+</button> <button class="btn btn-sm btn-circle">-</button></div> <!> <div class="tooltip tooltip-right"><div class="tooltip-content"> </div> <button class="btn btn-sm btn-circle"><!></button></div> <!> <!></div> <div><!> <!> <!> <!></div> <div><!></div> <div><!></div> <div><!></div>  <!> <!></div> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!>`, 1);
+var Gi = D(`<meta property="og:title" content="Wplace - A massive real-time pixel art canvas on the world map!"/> <meta name="twitter:title" content="Wplace - A massive real-time pixel art canvas on the world map!"/> <meta name="robots" content="index, follow, max-image-preview:large"/> <meta name="color-scheme" content="light only"/>`, 1),
+  Ki = D(`<button type="button" class="btn btn-lg btn-square sm:btn-xl z-30 shadow-md"><!></button>`),
+  qi = D(`<div class="relative"><!> <span class="center-absolute absolute text-[10px] text-red-400">?</span></div>`),
+  Ji = D(`<button class="btn btn-lg btn-square sm:btn-xl z-30 shadow-md"><!></button>`),
+  Yi = D(`<button class="btn btn-primary shadow-xl"> </button>`),
+  Xi = D(`<div class="absolute top-0 -left-2 -translate-x-full translate-y-1/2 select-none"><!></div>`),
+  Zi = D(`<div class="relative z-50"><!> <!></div>`),
+  Qi = D(`<button class="btn btn-square shadow-md"><!></button>`),
+  $i = D(`<button class="btn btn-square shadow-md"><!></button> <button title="Overlays"><!></button>`, 1),
+  ea = D(`<div class="flex flex-col items-center gap-3"><!> <button class="btn btn-square relative shadow-md"><!></button> <button class="btn btn-square shadow-md"><!></button> <!></div>`),
+  ta = D(`<div class="flex flex-col gap-3"><button><!></button></div>`),
+  na = D(`<button class="btn btn-sm btn-circle"><!></button>`),
+  ra = D(`<div class="tooltip tooltip-right"><div class="tooltip-content">Select Area <kbd class="kbd kbd-xs text-base-content touchscreen:hidden ml-0.5 rounded-md">C</kbd></div> <button class="btn btn-sm btn-circle" title="Select area"><!></button></div>`),
+  ia = D(`<button><!></button>`),
+  aa = D(`<div class="btn btn-sm btn-error w-max cursor-auto text-xs text-nowrap sm:text-base"><!> </div>`),
+  oa = D(`<button class="btn btn-sm btn-warning w-max text-xs text-nowrap sm:text-base"> </button>`),
+  sa = D(`<button class="btn sm:btn-lg duration text-xs text-nowrap transition-opacity sm:text-base"><!> </button>`),
+  ca = D(`<span></span>`),
+  la = D(`<div class="absolute bottom-0 left-0 z-30 w-full sm:left-1/2 sm:max-w-md sm:-translate-x-1/2 md:max-w-lg"><div class="rounded-t-box bg-base-100 border-base-300 sm:rounded-b-box max-sm:pb-safe w-full border-t bg-cover bg-center pt-2 sm:mb-3 sm:shadow-xl" style=""><!></div></div>`),
+  ua = D(`<div class="absolute bottom-0 left-0 z-50 w-full"><div class="paint-panel-shell rounded-t-box bg-base-100 border-base-300 pb-safe-3 touchscreen:pt-2 touchscreen:pb-[calc(10px+var(--safe-area-inset-bottom))] w-full border-t pt-3 max-sm:pt-2 max-sm:pb-[calc(10px+var(--safe-area-inset-bottom))] svelte-1uha8ag"><!></div></div>`),
+  da = D(`<div class="pb-safe pointer-events-none absolute bottom-0 left-0 z-50 w-full sm:left-1/2 sm:max-w-lg sm:-translate-x-1/2 md:max-w-xl"><!></div>`),
+  fa = D(`<div class="absolute bottom-0 left-0 z-50 w-full sm:left-1/2 sm:max-w-md sm:-translate-x-1/2"><div class="rounded-t-box bg-base-100 border-base-300 sm:rounded-b-box max-sm:pb-safe w-full border-t pt-2 sm:mb-3 sm:shadow-xl"><div class="px-3 pt-1 pb-2"><div class="flex items-center justify-between"><span><!> </span> <button class="btn btn-circle btn-sm"><!></button></div> <div class="mt-1 flex items-center justify-center gap-4"><button class="btn btn-primary w-46"><!></button></div></div></div></div>`),
+  pa = D(`<div class="absolute bottom-0 left-0 z-50 w-full sm:left-1/2 sm:max-w-md sm:-translate-x-1/2"><div class="rounded-t-box bg-base-100 border-base-300 sm:rounded-b-box w-full border-t pt-2 sm:mb-3 sm:shadow-xl"><div class="px-3 pt-1 pb-2"><div class="flex min-w-0 items-start justify-between gap-3"><div class="min-w-0"><p class="font-medium"><!> </p> <p class="text-base-content/55 mt-0.5 text-xs"> </p></div> <button class="btn btn-circle btn-sm shrink-0"><!></button></div> <div class="mt-2 flex items-center justify-center"><button class="btn btn-primary w-46"><!></button></div></div></div></div>`),
+  ma = D(`<div class="disable-pinch-zoom relative h-full overflow-hidden"><div id="map" class="h-screen w-screen cursor-default"></div> <!> <div><div><!> <!></div></div> <div><!> <div class="flex flex-col gap-1 max-sm:hidden"><button class="btn btn-sm btn-circle">+</button> <button class="btn btn-sm btn-circle">-</button></div> <!> <div class="tooltip tooltip-right"><div class="tooltip-content"> </div> <button class="btn btn-sm btn-circle"><!></button></div> <!> <!></div> <div><!> <!> <!> <!></div> <div><!></div> <div><!></div> <div><!></div>  <!> <!></div> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!> <!>`, 1);
 
-function va(e, n) {
+function ha(e, n) {
   u(n, !0);
   let r = t(!1),
     o = Ke(() => R(r)),
@@ -3736,7 +3714,7 @@ function va(e, n) {
     t.has(e) || (t.add(e), Ct(t)), g(Z, t, !0), g(Me, Tt(R(Z)), !0), g(Oe, R(Me) > 0)
   }
 
-  function jt(e) {
+  function Mt(e) {
     var t;
     (t = R(I)) == null || t.flyTo({
       center: {
@@ -3776,7 +3754,7 @@ function va(e, n) {
         }
         g(W, e.getZoom(), !0), g(I, e), J.map = e, g(V, `ready`), e.on(`mousemove`, r)
       }).catch(e => {
-        Vt(e) || Bt || (g(V, `failed`), console.error(`Error setting up map:`, e), qi(e) ? g(L, !0) : Ut())
+        Ht(e) || Bt || (g(V, `failed`), console.error(`Error setting up map:`, e), Wi(e) ? g(L, !0) : Ut())
       }))
     }
     me = t, t();
@@ -3789,7 +3767,7 @@ function va(e, n) {
           var t;
           let e = re.latLonToPixelBoundsLatLon(r, i, j),
             a = dt(e, !0);
-          (t = R(I).getSource(qt)) == null || t.setCoordinates(a), n = [o, s]
+          (t = R(I).getSource(Jt)) == null || t.setCoordinates(a), n = [o, s]
         }
       }
     }
@@ -3797,7 +3775,7 @@ function va(e, n) {
       var t, n;
       Bt = !0, me = void 0, e == null || e.abort(), (t = R(I)) == null || t.off(`mousemove`, r), (n = R(I)) == null || n.remove(), g(I, void 0), J.map = null, zt && clearTimeout(zt), Le().catch(e => console.warn(`[sw] message failed`, e))
     }
-  }), Lt(() => [J.theme], () => {
+  }), It(() => [J.theme], () => {
     if (R(I)) {
       Rt = !1;
       let e = Pt(J.theme);
@@ -3808,11 +3786,11 @@ function va(e, n) {
   function Pt(e) {
     return `${Ne}/styles/${e===`custom-winter`?`liberty`:`fiord`}`
   }
-  let Ft = t(0),
+  let Lt = t(0),
     Rt = !1,
     zt, Bt = !1;
 
-  function Vt(e) {
+  function Ht(e) {
     return e instanceof DOMException && e.name === `AbortError`
   }
 
@@ -3836,7 +3814,7 @@ function va(e, n) {
       ...ze.tokyo
     });
     let n = await new Promise((n, r) => {
-      let i = new gn.default.Map({
+      let i = new hn.default.Map({
         style: Pt(J.theme),
         center: t,
         zoom: t.zoom,
@@ -3873,11 +3851,11 @@ function va(e, n) {
       }, 2e4), i.on(`styledata`, e => {
         Rt || (J.theme === `custom-winter` && (i.setLayoutProperty(`poi_transit`, `visibility`, `none`), i.setLayoutProperty(`poi_r20`, `visibility`, `none`), i.setLayoutProperty(`poi_r7`, `visibility`, `none`), i.setLayoutProperty(`poi_r1`, `visibility`, `none`), i.setLayoutProperty(`building`, `visibility`, `none`), i.setLayoutProperty(`building-3d`, `visibility`, `none`), i.setLayoutProperty(`landuse_pitch`, `visibility`, `none`), i.setLayoutProperty(`landuse_hospital`, `visibility`, `none`), i.setLayoutProperty(`landuse_school`, `visibility`, `none`), i.setLayoutProperty(`landuse_residential`, `visibility`, `none`), i.setLayoutProperty(`waterway_tunnel`, `visibility`, `none`), i.setFilter(`water`, [`all`, [`!=`, `brunnel`, `tunnel`],
           [`!=`, `class`, `swimming_pool`]
-        ])), J.theme === `dark` && (i.moveLayer(`water`, `waterway`), i.moveLayer(`boundary_country_z0-4`, `water`), i.moveLayer(`boundary_country_z5-`, `water`), i.moveLayer(`boundary_state`, `water`)), Kt(i), $t(), rn(i), Rt = !0)
+        ])), J.theme === `dark` && (i.moveLayer(`water`, `waterway`), i.moveLayer(`boundary_country_z0-4`, `water`), i.moveLayer(`boundary_country_z5-`, `water`), i.moveLayer(`boundary_state`, `water`)), Kt(i), en(), rn(i), Rt = !0)
       }), i.once(`style.load`, () => {
         a || (a = !0, s(), n(i))
       }), i.on(`style.load`, () => {
-        g(Ft, R(Ft) + 1)
+        g(Lt, R(Lt) + 1)
       })
     });
     if (Bt) return n;
@@ -3919,7 +3897,7 @@ function va(e, n) {
     let a = R(W);
     n.on(`zoom`, () => {
       g(W, n.getZoom(), !0);
-      let e = Ki(R(W), 1);
+      let e = Ui(R(W), 1);
       e != a && (R(wn) && R(wn).setOpacity(Tn(a)), a = e)
     });
     let o = `default`;
@@ -3983,7 +3961,7 @@ function va(e, n) {
       }
     }))
   }
-  let qt = `pixel-hover`,
+  let Jt = `pixel-hover`,
     Yt = 1e-5,
     Xt = [
       [0, 0],
@@ -3991,27 +3969,27 @@ function va(e, n) {
       [Yt, -1e-5],
       [0, -1e-5]
     ],
-    Zt = .4;
-  async function $t() {
+    Qt = .4;
+  async function en() {
     var e, t;
-    if (!((e = R(I)) != null && e.getSource(qt))) {
+    if (!((e = R(I)) != null && e.getSource(Jt))) {
       var n;
-      let e = Ui(await Hi(tt));
-      (n = R(I)) == null || n.addSource(qt, {
+      let e = Bi(await zi(tt));
+      (n = R(I)) == null || n.addSource(Jt, {
         type: `canvas`,
         canvas: e,
         coordinates: Xt
       })
     }
-    if (!((t = R(I)) != null && t.getLayer(qt))) {
+    if (!((t = R(I)) != null && t.getLayer(Jt))) {
       var r;
       (r = R(I)) == null || r.addLayer({
-        id: qt,
+        id: Jt,
         type: `raster`,
-        source: qt,
+        source: Jt,
         paint: {
           "raster-resampling": `nearest`,
-          "raster-opacity": Zt
+          "raster-opacity": Qt
         }
       })
     }
@@ -4019,7 +3997,7 @@ function va(e, n) {
 
   function tn() {
     var e;
-    (e = R(I)) == null || (e = e.getSource(qt)) == null || e.setCoordinates(Xt)
+    (e = R(I)) == null || (e = e.getSource(Jt)) == null || e.setCoordinates(Xt)
   }
   let nn = `ticket-area-highlight`;
 
@@ -4064,7 +4042,7 @@ function va(e, n) {
     })
   }
   let an = h(() => K.artOpacity / 100),
-    on = h(() => R(an) === 1);
+    gn = h(() => R(an) === 1);
   de(() => {
     P.opaque === !1 && (K.artOpacity = 50)
   });
@@ -4095,7 +4073,7 @@ function va(e, n) {
     R(Cn) && navigator.geolocation.clearWatch(R(Cn))
   }));
   let wn = t(void 0);
-  Lt(() => [R(xn), R(I)], () => {
+  It(() => [R(xn), R(I)], () => {
     if (R(xn) && R(I)) {
       var e;
       let t = {
@@ -4105,7 +4083,7 @@ function va(e, n) {
         n = Tn(R(W));
       if (!R(wn)) {
         let e = document.createElement(`div`);
-        e.classList.add(`maplibregl-user-location-dot`), e.classList.add(`cursor-auto`), g(wn, new gn.default.Marker({
+        e.classList.add(`maplibregl-user-location-dot`), e.classList.add(`cursor-auto`), g(wn, new hn.default.Marker({
           element: e,
           opacity: n
         }).setLngLat(t).addTo(R(I)))
@@ -4114,21 +4092,21 @@ function va(e, n) {
   });
 
   function Tn(e) {
-    return e < j ? `1.0` : Gi((e - j) * .2, .5, 1).toFixed(2)
+    return e < j ? `1.0` : Hi((e - j) * .2, .5, 1).toFixed(2)
   }
   let En = t(void 0);
   H(() => {
     if (R(I)) {
       var e;
-      (e = te(() => R(En))) == null || e.clear(), Hi(rt).then(e => {
-        g(En, new Rn({
+      (e = te(() => R(En))) == null || e.clear(), zi(rt).then(e => {
+        g(En, new Ln({
           id: `select-crosshair`,
           map: R(I),
           tileSize: M,
           zoom: j,
           img: e,
           markerFn: () => {
-            let e = new gn.default.Marker({
+            let e = new hn.default.Marker({
               color: `#0069ff`
             });
             return e.addClassName(`z-20`), e
@@ -4141,8 +4119,8 @@ function va(e, n) {
   H(() => {
     if (R(I)) {
       var e;
-      (e = te(() => R(Dn))) == null || e.clear(), Hi(rt).then(e => {
-        g(Dn, new Rn({
+      (e = te(() => R(Dn))) == null || e.clear(), zi(rt).then(e => {
+        g(Dn, new Ln({
           id: `paint-crosshair`,
           map: R(I),
           tileSize: M,
@@ -4188,7 +4166,7 @@ function va(e, n) {
         };
         return t.addEventListener(`click`, t => {
           t.stopPropagation(), In([e.latitude, e.longitude])
-        }), new gn.default.Marker({
+        }), new hn.default.Marker({
           element: t,
           opacity: R(Mn)
         }).setLngLat(n).addTo(R(I))
@@ -4215,7 +4193,7 @@ function va(e, n) {
     for (let t of R(jn)) e ? t.addClassName(`hidden`) : (t.removeClassName(`hidden`), t.setOpacity(R(Mn)))
   });
 
-  function Ln(e) {
+  function Rn(e) {
     let t = document.createElement(`button`);
     t.type = `button`, t.classList.add(`alliance-hq-pin`, `z-10`), t.dataset.own = String(e.isOwn), t.innerHTML = `
 		<span class="alliance-hq-pin__plate" aria-hidden="true">
@@ -4230,7 +4208,7 @@ function va(e, n) {
       r = () => {
         n.classList.remove(`alliance-hq-pin__tile--painted`);
         let t = e.avatarSeed || `alliance-${e.allianceId}`;
-        n.innerHTML = Ht(t, 95, 45)
+        n.innerHTML = Vt(t, 95, 45)
       };
     if (e.pictureVersionId) {
       n.classList.add(`alliance-hq-pin__tile--painted`);
@@ -4244,7 +4222,7 @@ function va(e, n) {
     }), t
   }
   let zn = 0,
-    Bn;
+    Vn;
 
   function Hn(e, t) {
     let n = e.getBounds(),
@@ -4276,11 +4254,11 @@ function va(e, n) {
     let e = R(I);
     if (!e || !R(Pn)) return;
     let t = Hn(e, 0);
-    if (Bn && Date.now() - Bn.at < 6e4 && Gn(Bn.viewport, t)) return;
+    if (Vn && Date.now() - Vn.at < 6e4 && Gn(Vn.viewport, t)) return;
     let n = Hn(e, .5),
       r = ++zn;
     q.getPublicAllianceHeadquartersPins(n).then(e => {
-      r === zn && (Bn = {
+      r === zn && (Vn = {
         at: Date.now(),
         viewport: n
       }, g(ve, e, !0))
@@ -4317,7 +4295,7 @@ function va(e, n) {
         }), i.delete(e.allianceId);
         continue
       }
-      let r = Ln({
+      let r = Rn({
           accessibleLabel: `${e.allianceName} - ${X.headquarters()}`,
           name: e.allianceName,
           allianceId: e.allianceId,
@@ -4326,7 +4304,7 @@ function va(e, n) {
           isOwn: !1,
           onactivate: () => Vr(e.allianceId)
         }),
-        o = new gn.default.Marker({
+        o = new hn.default.Marker({
           element: r,
           anchor: `bottom`,
           opacity: te(() => R(Fn))
@@ -4353,7 +4331,7 @@ function va(e, n) {
     let n = at.hq,
       r = at.emblem;
     if (!R(I) || ((e = te(() => R(Jn))) == null || e.remove(), g(Jn, void 0), !n)) return;
-    let i = Ln({
+    let i = Rn({
       accessibleLabel: r ? `${r.name} - ${X.headquarters()}` : X.headquarters(),
       name: (r == null ? void 0 : r.name) ?? X.headquarters(),
       allianceId: (r == null ? void 0 : r.allianceId) ?? ((t = Y.data) == null ? void 0 : t.allianceId) ?? 0,
@@ -4364,7 +4342,7 @@ function va(e, n) {
         at.openHeadquarters = !0, g(br, !0)
       }
     });
-    g(Jn, new gn.default.Marker({
+    g(Jn, new hn.default.Marker({
       element: i,
       anchor: `bottom`,
       opacity: R(Fn)
@@ -4468,17 +4446,17 @@ function va(e, n) {
     rr = t(void 0),
     ir = t(void 0),
     ar = t(0),
-    or = t(void 0);
+    cr = t(void 0);
   H(() => {
-    R($n) || (g(or, void 0), g(nr, void 0), g(tr, void 0), g(rr, void 0), g(ir, void 0))
+    R($n) || (g(cr, void 0), g(nr, void 0), g(tr, void 0), g(rr, void 0), g(ir, void 0))
   });
 
-  function sr() {
+  function lr() {
     g(Q, {
       name: `mainMenu`
     }, !0), tn()
   }
-  let cr = t(!1),
+  let ur = t(!1),
     dr = t(void 0),
     fr = t(!1),
     pr = t(!1);
@@ -4527,7 +4505,7 @@ function va(e, n) {
     Nr = Ke(() => R(br)),
     Pr = Ke(() => R(xr)),
     Fr = Ke(() => R(On)),
-    Ir = Ke(() => R(cr)),
+    Ir = Ke(() => R(ur)),
     Lr = Ke(() => R(pr)),
     Rr = Ke(() => R(b)),
     zr = Ke(() => R(mr));
@@ -4540,17 +4518,17 @@ function va(e, n) {
   function Vr(e) {
     g(Sr, e, !0), g(xr, !0)
   }
-  let Hr = h(() => R(cr) || R(pr) || R(mr) || R(hr) || R(gr) || R(vr) || R(yr) || R(br) || R(xr) || R(Cr));
-  var Ur = _a();
+  let Hr = h(() => R(ur) || R(pr) || R(mr) || R(hr) || R(gr) || R(vr) || R(yr) || R(br) || R(xr) || R(Cr));
+  var Ur = ma();
   le(`keydown`, x, async e => {
     if (!(R(Hr) || J.playerSettingsOpen) && !(e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) && !e.ctrlKey && e.code === `KeyC`) {
       if (!Y.hasAnyPermission(Je.tools.selectArea) || R(Q).name === `paintingPixel` || e.repeat) return;
-      sr(), await pe(), g(Q, {
+      lr(), await pe(), g(Q, {
         name: `selectArea`
       }, !0)
     }
   }), p(`1uha8ag`, e => {
-    var t = Ji();
+    var t = Gi();
     ne(6), se(() => {
       he.title = `Wplace - Paint the world`
     }), l(e, t)
@@ -4558,9 +4536,9 @@ function va(e, n) {
   var Wr = U(Ur);
   {
     let e = e => {
-        var t = Yi(),
+        var t = Ki(),
           n = i(t);
-        en(n, {
+        $t(n, {
           class: `size-5`
         }), z(t), A((e, n) => {
           N(t, `title`, e), N(t, `aria-label`, n)
@@ -4569,7 +4547,7 @@ function va(e, n) {
         }), l(e, t)
       },
       t = e => {
-        var t = Zi(),
+        var t = Ji(),
           n = i(t),
           r = e => {
             yt(e, {
@@ -4577,8 +4555,8 @@ function va(e, n) {
             })
           },
           a = e => {
-            var t = Xi();
-            Ri(i(t), {
+            var t = qi();
+            Fi(i(t), {
               class: `size-5.5 fill-red-400`
             }), ne(2), z(t), l(e, t)
           };
@@ -4609,7 +4587,7 @@ function va(e, n) {
         }), l(e, t)
       };
     var Gr = S(i(Wr), 2),
-      Kr = e => {
+      qr = e => {
         var t = O(),
           n = U(t);
         E(n, () => G(() => import(`../chunks/D6XLRbh5.js`), __vite__mapDeps([44, 1, 3, 4, 5, 6, 7, 26, 27, 45, 11, 35]), import.meta.url), null, (e, t) => {
@@ -4621,15 +4599,15 @@ function va(e, n) {
         }), l(e, t)
       };
     C(Gr, e => {
-      R(L) && e(Kr)
+      R(L) && e(qr)
     });
-    var qr = S(Gr, 2);
+    var Jr = S(Gr, 2);
     let n;
-    var Jr = i(qr);
+    var Yr = i(Jr);
     let s;
-    var Xr = i(Jr),
+    var Xr = i(Yr),
       Zr = e => {
-        var t = Qi(),
+        var t = Yi(),
           n = i(t, !0);
         z(t), A(e => d(n, e), [() => X.log_in()]), B(`click`, t, () => {
           if (g(hr, !0), R(I)) {
@@ -4639,10 +4617,10 @@ function va(e, n) {
         }), l(e, t)
       },
       Qr = e => {
-        var t = ea(),
+        var t = Zi(),
           n = i(t),
           r = e => {
-            var t = $i(),
+            var t = Xi(),
               n = i(t);
             E(n, () => G(() => import(`../chunks/B5z-OrnR.js`).then(e => e.n), __vite__mapDeps([25, 1, 3, 26, 27, 28, 6, 5]), import.meta.url), null, (e, t) => {
               var n = O(),
@@ -4659,7 +4637,7 @@ function va(e, n) {
         C(n, e => {
           var t;
           (t = Y.data) != null && t.role && Y.data.role !== `user` && e(r)
-        }), Yr(S(n, 2), {
+        }), Kr(S(n, 2), {
           get user() {
             return Y
           },
@@ -4683,12 +4661,12 @@ function va(e, n) {
     });
     var $r = S(Xr, 2),
       ei = e => {
-        var t = ra(),
+        var t = ea(),
           n = i(t),
           o = e => {
-            var t = ta(),
+            var t = Qi(),
               n = i(t);
-            fn(n, {
+            dn(n, {
               class: `size-5`
             }), z(t), A(e => N(t, `title`, e), [() => X.store()]), B(`click`, t, () => {
               var e;
@@ -4702,16 +4680,16 @@ function va(e, n) {
         });
         var s = S(n, 2),
           c = i(s);
-        ln(c, {
+        cn(c, {
           class: `size-5`
         }), z(s);
         var u = S(s, 2);
-        Vi(i(u), {
+        Ri(i(u), {
           class: `size-5`
         }), z(u);
         var d = S(u, 2),
           f = e => {
-            var t = na(),
+            var t = $i(),
               n = U(t),
               o = i(n);
             gt(o, {
@@ -4720,7 +4698,7 @@ function va(e, n) {
             var s = S(n, 2);
             let c;
             var u = i(s);
-            cn(u, {
+            sn(u, {
               class: `size-5`
             }), z(s), A(e => {
               N(n, `title`, e), c = a(s, 1, `btn btn-square shadow-md`, null, c, {
@@ -4745,17 +4723,17 @@ function va(e, n) {
         })), l(e, t)
       },
       ti = e => {
-        var t = ia(),
+        var t = ta(),
           n = i(t);
         let r;
         var o = i(n),
           s = e => {
-            un(e, {
+            ln(e, {
               class: `size-5`
             })
           },
           c = e => {
-            dn(e, {
+            un(e, {
               class: `size-5`
             })
           };
@@ -4774,29 +4752,29 @@ function va(e, n) {
       };
     C($r, e => {
       R(I) && R(Q).name !== `paintingPixel` ? e(ei) : R(I) && R(Q).name === `paintingPixel` && e(ti, 1)
-    }), z(Jr), z(qr);
-    var ni = S(qr, 2);
+    }), z(Yr), z(Jr);
+    var ni = S(Jr, 2);
     let c;
-    var ri = i(ni),
-      ii = e => {
-        var t = aa(),
+    var $ = i(ni),
+      ri = e => {
+        var t = na(),
           n = i(t);
-        sn(n, {
+        on(n, {
           class: `size-3.5`
         }), z(t), A(e => N(t, `title`, e), [() => X.info()]), B(`click`, t, () => {
           q.postTelemetry(`click_info`), g(yr, !0)
         }), l(e, t)
       };
-    C(ri, e => {
-      R(Q).name !== `paintingPixel` && e(ii)
+    C($, e => {
+      R(Q).name !== `paintingPixel` && e(ri)
     });
-    var ai = S(ri, 2),
-      $ = i(ai),
-      oi = S($, 2);
-    z(ai);
-    var si = S(ai, 2),
+    var ii = S($, 2),
+      ai = i(ii),
+      oi = S(ai, 2);
+    z(ii);
+    var si = S(ii, 2),
       ci = e => {
-        var t = oa(),
+        var t = ra(),
           n = S(i(t), 2),
           r = i(n);
         it(r, {
@@ -4817,14 +4795,14 @@ function va(e, n) {
     z(di);
     var pi = S(di, 2),
       mi = i(pi);
-    Mt(mi, {
+    jt(mi, {
       class: `size-4`
     }), z(pi), z(ui);
     var hi = S(ui, 2),
       gi = e => {
-        var t = aa(),
+        var t = na(),
           n = i(t);
-        Qt(n, {
+        Zt(n, {
           class: `size-4`,
           onclick: () => {
             g(xe, !R(xe))
@@ -4836,7 +4814,7 @@ function va(e, n) {
     });
     var _i = S(hi, 2),
       vi = e => {
-        var t = sa();
+        var t = ia();
         let n;
         var r = i(t);
         Xe(r, {
@@ -4858,7 +4836,7 @@ function va(e, n) {
       xi = e => {
         var t = O(),
           n = U(t);
-        E(n, () => G(() => import(`../chunks/DX2WZ23g.js`), __vite__mapDeps([46, 1, 3, 4, 5, 6, 7, 47, 2, 48, 49, 50, 51, 11, 31, 20, 32, 52]), import.meta.url), null, (e, t) => {
+        E(n, () => G(() => import(`../chunks/6I9CkoiV.js`), __vite__mapDeps([46, 1, 3, 4, 5, 6, 7, 47, 2, 48, 49, 50, 51, 11, 31, 20, 32, 52]), import.meta.url), null, (e, t) => {
           var n = O(),
             r = U(n);
           f(r, () => R(t).default, (e, t) => {
@@ -4870,7 +4848,7 @@ function va(e, n) {
                 return R(I)
               },
               onappeal: e => {
-                g(dr, e, !0), g(cr, !0)
+                g(dr, e, !0), g(ur, !0)
               },
               get open() {
                 return R(fr)
@@ -4888,7 +4866,7 @@ function va(e, n) {
     });
     var Ci = S(bi, 2),
       wi = e => {
-        var t = ca(),
+        var t = aa(),
           n = i(t);
         Ze(n, {
           class: `size-5`
@@ -4903,7 +4881,7 @@ function va(e, n) {
     });
     var Ti = S(Ci, 2),
       Ei = e => {
-        var t = la(),
+        var t = oa(),
           n = i(t, !0);
         z(t), A(e => d(n, e), [() => X.duplicate_account_banner()]), B(`click`, t, () => J.accountConflictDialogOpen = !0), _(1, t, () => $e, () => ({
           duration: 300
@@ -4915,9 +4893,9 @@ function va(e, n) {
     });
     var Di = S(Ti, 2),
       Oi = e => {
-        var t = ua(),
+        var t = sa(),
           n = i(t);
-        Jt(n, {
+        qt(n, {
           class: `size-5`
         });
         var r = S(n);
@@ -4940,10 +4918,10 @@ function va(e, n) {
     var Ai = S(ki, 2);
     let b;
     var ji = i(Ai),
-      Mi = e => {
+      Ni = e => {
         {
           let t = h(() => R(ce) - 96 - 32);
-          It(e, {
+          Ft(e, {
             class: `z-30`,
             get maxWidth() {
               return R(t)
@@ -4965,7 +4943,7 @@ function va(e, n) {
                   }
                 }, __vite__mapDeps([53, 1, 3, 4, 5, 6, 7, 38]), import.meta.url);
                 ke.warning(e, {
-                  icon: pn
+                  icon: fn
                 })
               } else {
                 if (Y.timeoutUntil) {
@@ -4989,25 +4967,25 @@ function va(e, n) {
           })
         }
       },
-      Ni = e => {
-        var t = da();
+      Pi = e => {
+        var t = ca();
         l(e, t)
       };
     C(ji, e => {
-      R(Q).name === `mainMenu` ? e(Mi) : e(Ni, -1)
+      R(Q).name === `mainMenu` ? e(Ni) : e(Pi, -1)
     }), z(Ai);
-    var Pi = S(Ai, 2);
+    var Ii = S(Ai, 2);
     let x;
-    t(i(Pi)), z(Pi);
-    var Ii = S(Pi, 2),
-      Li = e => {
+    t(i(Ii)), z(Ii);
+    var Li = S(Ii, 2),
+      ha = e => {
         var t = O(),
           n = U(t),
           a = e => {
-            var t = fa(),
+            var t = la(),
               n = i(t),
               r = i(n);
-            E(r, () => G(() => import(`../chunks/CfIseyAc.js`), __vite__mapDeps([54, 1, 3, 4, 5, 6, 7, 49, 2, 18, 55, 56, 57, 58, 47, 48, 50, 51, 59, 60, 12, 13, 14, 17, 15, 16, 19, 20, 21, 22, 61, 28, 25, 26, 27, 29, 62, 63, 64, 65, 66, 67, 68, 69, 9, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80]), import.meta.url), null, (e, t) => {
+            E(r, () => G(() => import(`../chunks/Bz7QCgZw.js`), __vite__mapDeps([54, 1, 3, 4, 5, 6, 7, 49, 2, 18, 55, 56, 57, 58, 47, 48, 50, 51, 59, 60, 12, 13, 14, 17, 15, 16, 19, 20, 21, 22, 61, 28, 25, 26, 27, 29, 62, 63, 64, 65, 66, 67, 68, 69, 9, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80]), import.meta.url), null, (e, t) => {
               var n = O(),
                 r = U(n);
               f(r, () => R(t).default, (e, t) => {
@@ -5037,7 +5015,7 @@ function va(e, n) {
                     return R(W)
                   },
                   get opaquePixelArt() {
-                    return R(on)
+                    return R(gn)
                   },
                   onclose: () => g(Q, {
                     name: `mainMenu`
@@ -5099,7 +5077,7 @@ function va(e, n) {
                     }], !0), g(rr, n, !0), g(ar, (i == null ? void 0 : i.getZoom()) ?? 0, !0), g(ir, r === `report-user` && i ? st(i, {
                       maxHeight: 1080,
                       maxWidth: 1080
-                    }) : void 0, !0), g(er, r, !0), g(or, void 0), g($n, !0), g(Ce, `select-pixel`)
+                    }) : void 0, !0), g(er, r, !0), g(cr, void 0), g($n, !0), g(Ce, `select-pixel`)
                   }
                 })
               }), l(e, n)
@@ -5108,10 +5086,10 @@ function va(e, n) {
             })), l(e, t)
           },
           o = e => {
-            var t = pa(),
+            var t = ua(),
               n = i(t),
               r = i(n);
-            E(r, () => G(() => import(`../chunks/C1Ayqh5j.js`), __vite__mapDeps([81, 1, 2, 5, 82, 3, 4, 6, 7, 83, 47, 48, 8, 84, 55, 56, 50, 59, 85, 86, 11, 60, 87, 15, 88, 89, 90, 23, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111]), import.meta.url), null, (e, t) => {
+            E(r, () => G(() => import(`../chunks/DRmMeGGo.js`), __vite__mapDeps([81, 1, 2, 5, 82, 3, 4, 6, 7, 83, 47, 48, 8, 84, 55, 56, 50, 59, 85, 86, 11, 60, 87, 15, 88, 89, 90, 23, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111]), import.meta.url), null, (e, t) => {
               var n = O(),
                 r = U(n),
                 i = () => R(an) === 1,
@@ -5120,7 +5098,7 @@ function va(e, n) {
                 };
               {
                 let e = h(() => !R(m)),
-                  n = h(() => R(m) ? hn : void 0);
+                  n = h(() => R(m) ? mn : void 0);
                 f(r, () => R(t).default, (t, r) => {
                   r(t, {
                     get map() {
@@ -5152,7 +5130,7 @@ function va(e, n) {
                     set opaquePixelArt(e) {
                       a(e)
                     },
-                    hoverLayerId: qt,
+                    hoverLayerId: Jt,
                     get previewBeforeLayerId() {
                       return R(n)
                     },
@@ -5172,7 +5150,7 @@ function va(e, n) {
             })), l(e, t)
           },
           s = e => {
-            var t = ma(),
+            var t = da(),
               n = i(t);
             E(n, () => G(() => import(`../chunks/cBjrlx8u.js`), __vite__mapDeps([112, 1, 3, 4, 5, 6, 7, 83, 18, 113, 55, 56, 50, 15, 114, 115, 116, 117, 118, 11, 31, 20, 32, 17, 19, 21, 90, 61, 28, 25, 26, 27, 29, 119, 62, 63, 120, 121, 97, 122, 103, 123]), import.meta.url), null, (e, t) => {
               var n = O(),
@@ -5208,23 +5186,23 @@ function va(e, n) {
                       ke.error(X.report_failed());
                       return
                     }
-                    g(tr, r, !0), g(nr, n, !0), g(rr, i, !0), g(ar, a ?? ((t = R(I)) == null ? void 0 : t.getZoom()) ?? 0, !0), g(ir, void 0), g(er, o, !0), g(or, {
+                    g(tr, r, !0), g(nr, n, !0), g(rr, i, !0), g(ar, a ?? ((t = R(I)) == null ? void 0 : t.getZoom()) ?? 0, !0), g(ir, void 0), g(er, o, !0), g(cr, {
                       onSuccess: s
                     }, !0), g($n, !0), g(Ce, `select-area`)
                   },
-                  onclose: sr
+                  onclose: lr
                 })
               }), l(e, n)
             }), z(t), l(e, t)
           },
           c = e => {
-            var t = ha(),
+            var t = fa(),
               n = i(t),
               r = i(n),
               a = i(r),
               o = i(a),
               s = i(o);
-            mn(s, {
+            pn(s, {
               class: `inline size-4`
             });
             var c = S(s);
@@ -5267,14 +5245,14 @@ function va(e, n) {
             })), l(e, t)
           },
           u = e => {
-            var t = ga(),
+            var t = pa(),
               n = i(t),
               a = i(n),
               o = i(a),
               s = i(o),
               c = i(s),
               u = i(c);
-            mn(u, {
+            pn(u, {
               class: `inline size-4`
             });
             var f = S(u);
@@ -5318,14 +5296,14 @@ function va(e, n) {
           R(Q).name === `pixelSelected` && R(En) ? e(a) : R(Q).name === `paintingPixel` && R(Dn) ? e(o, 1) : R(Q).name === `selectArea` ? e(s, 2) : R(Q).name === `selectHq` ? e(c, 3) : R(Q).name === `selectOverlayStart` && e(u, 4)
         }), l(e, t)
       };
-    C(Ii, e => {
-      R(I) && e(Li)
+    C(Li, e => {
+      R(I) && e(ha)
     });
-    var zi = S(Ii, 2),
-      Bi = e => {
+    var ga = S(Li, 2),
+      _a = e => {
         var t = O(),
           n = U(t);
-        E(n, () => G(() => import(`../chunks/DGZiNOLH.js`).then(e => e.t), __vite__mapDeps([124, 1, 5, 3, 4, 6, 7, 83, 18, 45, 9, 125, 56, 10, 50, 126, 51, 59, 11, 31, 20, 32, 15, 127, 128, 129, 130, 131, 107, 108, 132, 57, 133, 134, 135, 30, 94, 96, 97, 136, 23, 91, 119, 95, 33, 137, 102, 105, 2, 138, 139, 106, 140, 104, 141, 142]), import.meta.url), null, (e, t) => {
+        E(n, () => G(() => import(`../chunks/BryDtdtL.js`).then(e => e.t), __vite__mapDeps([124, 1, 5, 3, 4, 6, 7, 83, 18, 45, 9, 125, 56, 10, 50, 51, 59, 11, 31, 20, 32, 15, 126, 127, 128, 129, 130, 107, 108, 131, 57, 132, 133, 134, 30, 94, 96, 97, 135, 23, 91, 119, 95, 33, 136, 102, 105, 2, 137, 138, 106, 139, 104, 140, 141, 142]), import.meta.url), null, (e, t) => {
           var n = O(),
             i = U(n);
           f(i, () => R(t).default, (e, t) => {
@@ -5345,7 +5323,7 @@ function va(e, n) {
               get tileZoom() {
                 return j
               },
-              hoverLayerId: qt,
+              hoverLayerId: Jt,
               pixelArtSourceId: Gt,
               get placementRequest() {
                 return R(v)
@@ -5368,26 +5346,26 @@ function va(e, n) {
           }), l(e, n)
         }), l(e, t)
       };
-    C(zi, e => {
-      o.current && R(I) && e(Bi)
+    C(ga, e => {
+      o.current && R(I) && e(_a)
     }), z(Wr), A((e, t) => {
-      n = a(qr, 1, `top-safe-2 right-safe-2 absolute z-40`, null, n, {
+      n = a(Jr, 1, `top-safe-2 right-safe-2 absolute z-40`, null, n, {
         hidden: R(Ye)
-      }), s = a(Jr, 1, `flex flex-col gap-4`, null, s, {
+      }), s = a(Yr, 1, `flex flex-col gap-4`, null, s, {
         "items-end": !Y.data,
         "items-center": Y.data
       }), c = a(ni, 1, `top-safe-2 left-safe-2 absolute z-30 flex flex-col gap-3`, null, c, {
         hidden: R(Ye)
-      }), N($, `title`, e), N(oi, `title`, t), d(fi, bt), N(pi, `title`, bt), u = a(yi, 1, `top-safe-2 absolute left-1/2 z-30 flex -translate-x-1/2 flex-col items-center justify-center gap-2`, null, u, {
+      }), N(ai, `title`, e), N(oi, `title`, t), d(fi, bt), N(pi, `title`, bt), u = a(yi, 1, `top-safe-2 absolute left-1/2 z-30 flex -translate-x-1/2 flex-col items-center justify-center gap-2`, null, u, {
         hidden: R(Ye)
       }), p = a(ki, 1, `bottom-safe-min-3 left-safe-3 absolute z-30`, null, p, {
         hidden: R(Ye)
       }), b = a(Ai, 1, `bottom-safe-min-3 absolute left-1/2 z-30 -translate-x-1/2`, null, b, {
         hidden: R(Ye)
-      }), x = a(Pi, 1, `right-safe-3 bottom-safe-min-3 absolute z-30`, null, x, {
+      }), x = a(Ii, 1, `right-safe-3 bottom-safe-min-3 absolute z-30`, null, x, {
         hidden: R(Ye)
       })
-    }, [() => X.zoom_in(), () => X.zoom_out()]), B(`click`, $, () => {
+    }, [() => X.zoom_in(), () => X.zoom_out()]), B(`click`, ai, () => {
       var e;
       (e = R(I)) == null || e.zoomIn()
     }), B(`click`, oi, () => {
@@ -5421,7 +5399,7 @@ function va(e, n) {
     xa = e => {
       var t = O(),
         n = U(t);
-      E(n, () => G(() => import(`../chunks/BT5g9_hJ.js`), __vite__mapDeps([146, 1, 2, 3, 4, 5, 6, 7, 8, 118, 10, 50, 31, 20, 32, 13, 14, 19, 21, 147, 89, 24, 119, 148, 149, 93, 94, 74, 150, 34, 98, 99, 100, 151, 36, 152, 153]), import.meta.url), null, (e, t) => {
+      E(n, () => G(() => import(`../chunks/CzPYLqXM.js`), __vite__mapDeps([146, 1, 2, 3, 4, 5, 6, 7, 8, 118, 10, 50, 31, 20, 32, 13, 14, 19, 21, 147, 89, 24, 119, 148, 149, 93, 94, 74, 150, 34, 98, 99, 100, 151, 36, 152, 153]), import.meta.url), null, (e, t) => {
         var n = O(),
           r = U(n);
         f(r, () => R(t).default, (e, t) => {
@@ -5484,7 +5462,7 @@ function va(e, n) {
     Da = e => {
       var t = O(),
         n = U(t);
-      E(n, () => G(() => import(`../chunks/CVnLwj5c.js`), __vite__mapDeps([159, 1, 82, 5, 3, 4, 6, 7, 144, 49, 2, 26, 27, 31, 20, 32, 39, 91, 35, 155, 38, 59, 156]), import.meta.url), null, (e, t) => {
+      E(n, () => G(() => import(`../chunks/DriiQ44n.js`), __vite__mapDeps([159, 1, 82, 5, 3, 4, 6, 7, 144, 49, 2, 26, 27, 31, 20, 32, 39, 91, 35, 155, 38, 59, 156]), import.meta.url), null, (e, t) => {
         var n = O(),
           r = U(n);
         f(r, () => R(t).default, (e, t) => {
@@ -5506,7 +5484,7 @@ function va(e, n) {
     ka = e => {
       var t = O(),
         n = U(t);
-      E(n, () => G(() => import(`../chunks/DpqtZgRJ.js`), __vite__mapDeps([160, 1, 3, 4, 5, 6, 7, 9, 65, 51, 31, 20, 32, 12, 13, 14, 15, 16, 17, 18, 147, 161, 70, 19, 21, 71, 29, 162, 50, 135, 66, 67, 64, 68, 69, 59, 72, 73, 74, 75, 76, 163, 164, 165, 166, 167, 168, 169]), import.meta.url), null, (e, t) => {
+      E(n, () => G(() => import(`../chunks/DpqtZgRJ.js`), __vite__mapDeps([160, 1, 3, 4, 5, 6, 7, 9, 65, 51, 31, 20, 32, 12, 13, 14, 15, 16, 17, 18, 147, 161, 70, 19, 21, 71, 29, 162, 50, 134, 66, 67, 64, 68, 69, 59, 72, 73, 74, 75, 76, 163, 164, 165, 166, 167, 168, 169]), import.meta.url), null, (e, t) => {
         var n = O(),
           r = U(n);
         f(r, () => R(t).default, (e, t) => {
@@ -5565,7 +5543,7 @@ function va(e, n) {
     Na = e => {
       var t = O(),
         n = U(t);
-      E(n, () => G(() => import(`../chunks/koThMwNn.js`).then(e => e.n), __vite__mapDeps([171, 1, 82, 5, 3, 4, 6, 7, 48, 45, 50, 31, 20, 32, 119, 172, 93, 95, 96, 150, 173, 2, 47, 8, 60, 100, 94, 174, 27, 175]), import.meta.url), null, (e, t) => {
+      E(n, () => G(() => import(`../chunks/C62KQIWr.js`).then(e => e.n), __vite__mapDeps([171, 1, 82, 5, 3, 4, 6, 7, 48, 45, 50, 31, 20, 32, 119, 172, 93, 95, 96, 150, 173, 2, 47, 8, 60, 100, 94, 174, 27, 175]), import.meta.url), null, (e, t) => {
         var n = O(),
           r = U(n);
         f(r, () => R(t).default, (e, t) => {
@@ -5587,7 +5565,7 @@ function va(e, n) {
     Fa = e => {
       var t = O(),
         n = U(t);
-      E(n, () => G(() => import(`../chunks/DFQSc5ez.js`), __vite__mapDeps([176, 1, 82, 5, 3, 4, 6, 7, 48, 31, 20, 32, 119, 150, 173, 2, 47, 8, 60, 174, 27, 175, 151, 94]), import.meta.url), null, (e, t) => {
+      E(n, () => G(() => import(`../chunks/BW-L7BcD.js`), __vite__mapDeps([176, 1, 82, 5, 3, 4, 6, 7, 48, 31, 20, 32, 119, 150, 173, 2, 47, 8, 60, 174, 27, 175, 151, 94]), import.meta.url), null, (e, t) => {
         var n = O(),
           r = U(n);
         f(r, () => R(t).default, (e, t) => {
@@ -5609,7 +5587,7 @@ function va(e, n) {
     La = e => {
       var t = O(),
         n = U(t);
-      E(n, () => G(() => import(`../chunks/kzHCHWB_.js`), __vite__mapDeps([177, 1, 2, 5, 3, 4, 6, 7, 49, 8, 18, 45, 118, 113, 84, 9, 65, 178, 10, 50, 51, 59, 85, 86, 11, 60, 87, 31, 20, 32, 13, 14, 12, 17, 15, 16, 19, 21, 22, 127, 179, 180, 181, 115, 182, 183, 88, 128, 89, 90, 129, 131, 161, 23, 91, 61, 108, 70, 71, 28, 25, 26, 27, 29, 119, 62, 168, 169, 184, 72, 40, 185, 172, 134, 63, 135, 30, 186, 64, 66, 67, 68, 69, 73, 74, 75, 187, 77, 93, 94, 95, 96, 33, 78, 137, 97, 102, 164, 163, 188, 114, 189, 144, 167, 117, 120, 121, 122, 103, 165, 166, 136, 125, 130, 107, 105, 138, 139, 106, 140, 109, 80, 190, 38, 83, 133, 148, 191, 36, 192, 193, 194, 195, 196, 197, 198, 199, 152, 200]), import.meta.url), null, (e, t) => {
+      E(n, () => G(() => import(`../chunks/BaIJayI9.js`), __vite__mapDeps([177, 1, 2, 5, 3, 4, 6, 7, 49, 8, 18, 45, 118, 113, 84, 9, 65, 178, 10, 50, 51, 59, 85, 86, 11, 60, 87, 31, 20, 32, 13, 14, 12, 17, 15, 16, 19, 21, 22, 126, 179, 180, 181, 115, 182, 183, 88, 127, 89, 90, 128, 130, 161, 23, 91, 61, 108, 70, 71, 28, 25, 26, 27, 29, 119, 62, 168, 169, 184, 72, 40, 185, 172, 133, 63, 134, 30, 186, 64, 66, 67, 68, 69, 73, 74, 75, 187, 77, 93, 94, 95, 96, 33, 78, 136, 97, 102, 164, 163, 188, 114, 189, 144, 167, 117, 120, 121, 122, 103, 165, 166, 135, 125, 129, 107, 105, 137, 138, 106, 139, 109, 80, 190, 38, 83, 132, 148, 191, 36, 192, 193, 194, 195, 196, 197, 198, 199, 152, 200]), import.meta.url), null, (e, t) => {
         var n = O(),
           r = U(n);
         f(r, () => R(t).default, (e, t) => {
@@ -5670,7 +5648,7 @@ function va(e, n) {
     za = e => {
       var t = O(),
         n = U(t);
-      E(n, () => G(() => import(`../chunks/CUVikkdZ.js`), __vite__mapDeps([201, 1, 3, 4, 5, 6, 7, 18, 118, 113, 84, 9, 65, 59, 60, 31, 20, 32, 13, 14, 70, 15, 19, 21, 71, 119, 184, 72, 40, 148, 135, 73, 93, 94, 74, 188, 114, 189, 144, 11, 17, 61, 29, 168, 169, 63, 167, 117, 50, 90, 28, 25, 26, 27, 62, 120, 121, 97, 122, 103, 69, 75, 80, 190, 38, 83, 23, 91, 133, 164, 166, 139, 106, 107, 108, 191, 36, 192, 193, 202]), import.meta.url), null, (e, t) => {
+      E(n, () => G(() => import(`../chunks/CUVikkdZ.js`), __vite__mapDeps([201, 1, 3, 4, 5, 6, 7, 18, 118, 113, 84, 9, 65, 59, 60, 31, 20, 32, 13, 14, 70, 15, 19, 21, 71, 119, 184, 72, 40, 148, 134, 73, 93, 94, 74, 188, 114, 189, 144, 11, 17, 61, 29, 168, 169, 63, 167, 117, 50, 90, 28, 25, 26, 27, 62, 120, 121, 97, 122, 103, 69, 75, 80, 190, 38, 83, 23, 91, 132, 164, 166, 138, 106, 107, 108, 191, 36, 192, 193, 202]), import.meta.url), null, (e, t) => {
         var n = O(),
           r = U(n);
         f(r, () => R(t).default, (e, t) => {
@@ -5724,11 +5702,11 @@ function va(e, n) {
             },
             hideHover: () => {
               var e, t;
-              (e = R(I)) == null || e.setPaintProperty(qt, `raster-opacity`, 0), (t = R(En)) == null || t.setCanvasOpacity(0)
+              (e = R(I)) == null || e.setPaintProperty(Jt, `raster-opacity`, 0), (t = R(En)) == null || t.setCanvasOpacity(0)
             },
             showHover: () => {
               var e, t;
-              (e = R(I)) == null || e.setPaintProperty(qt, `raster-opacity`, Zt), (t = R(En)) == null || t.setCanvasOpacity(1)
+              (e = R(I)) == null || e.setPaintProperty(Jt, `raster-opacity`, Qt), (t = R(En)) == null || t.setCanvasOpacity(1)
             },
             get open() {
               return R(On)
@@ -5772,7 +5750,7 @@ function va(e, n) {
             },
             onsuccess: () => {
               var e, t;
-              (e = R(or)) == null || (t = e.onSuccess) == null || t.call(e)
+              (e = R(cr)) == null || (t = e.onSuccess) == null || t.call(e)
             },
             get origin() {
               return R(Ce)
@@ -5809,10 +5787,10 @@ function va(e, n) {
               R(dr) && (R(dr).appealSubmitted = !0)
             },
             get open() {
-              return R(cr)
+              return R(ur)
             },
             set open(e) {
-              g(cr, e, !0)
+              g(ur, e, !0)
             }
           })
         }), l(e, n)
@@ -5825,7 +5803,7 @@ function va(e, n) {
     qa = e => {
       var t = O(),
         n = U(t);
-      E(n, () => G(() => import(`../chunks/BTwX_3Wx.js`), __vite__mapDeps([205, 1, 5, 82, 3, 4, 6, 7, 206, 126, 31, 20, 32, 127, 180, 115, 182, 13, 14, 207, 186, 73, 208, 187, 77, 33, 199, 192, 158]), import.meta.url), null, (e, t) => {
+      E(n, () => G(() => import(`../chunks/BNCkYpgy.js`), __vite__mapDeps([205, 1, 5, 82, 3, 4, 6, 7, 206, 31, 20, 32, 126, 180, 115, 182, 13, 14, 207, 186, 73, 208, 187, 77, 33, 140, 199, 192, 158]), import.meta.url), null, (e, t) => {
         var n = O(),
           r = U(n);
         f(r, () => R(t).default, (e, t) => {
@@ -5863,7 +5841,7 @@ function va(e, n) {
             },
             onEventSeen: At,
             onvisitlocation: e => {
-              jt(e), g(b, !1)
+              Mt(e), g(b, !1)
             },
             onclose: () => {
               g(b, !1)
@@ -5879,7 +5857,7 @@ function va(e, n) {
     Za = e => {
       var t = O(),
         n = U(t);
-      E(n, () => G(() => import(`../chunks/DfSu8gSj.js`), __vite__mapDeps([211, 1, 5, 3, 4, 6, 7, 56, 50, 51, 60, 31, 20, 32, 119, 135, 207]), import.meta.url), null, (e, t) => {
+      E(n, () => G(() => import(`../chunks/DfSu8gSj.js`), __vite__mapDeps([211, 1, 5, 3, 4, 6, 7, 56, 50, 51, 60, 31, 20, 32, 119, 134, 207]), import.meta.url), null, (e, t) => {
         var n = O(),
           r = U(n);
         f(r, () => R(t).default, (e, t) => {
@@ -5914,7 +5892,7 @@ function va(e, n) {
       var t = O(),
         n = U(t),
         r = e => {
-          ur(e, {
+          sr(e, {
             get map() {
               return R(I)
             },
@@ -5947,8 +5925,8 @@ function va(e, n) {
     R(I) && e($a)
   });
   var eo = S(Qa, 2);
-  lr(eo, {
-    onvisitlocation: jt,
+  or(eo, {
+    onvisitlocation: Mt,
     get open() {
       return R(w)
     },
@@ -5960,10 +5938,10 @@ function va(e, n) {
     no = e => {
       var t = O(),
         n = U(t);
-      c(n, () => R(Ft), e => {
+      c(n, () => R(Lt), e => {
         {
-          let t = h(Wi);
-          Vn(e, {
+          let t = h(Vi);
+          Bn(e, {
             get map() {
               return R(I)
             },
@@ -5983,9 +5961,9 @@ function va(e, n) {
     };
   C(to, e => {
     R(I) && e(no)
-  }), Fi(S(to, 2), {}), fe(`innerWidth`, e => g(ce, e, !0)), l(e, Ur), ue()
+  }), Mi(S(to, 2), {}), fe(`innerWidth`, e => g(ce, e, !0)), l(e, Ur), ue()
 }
 re([`click`]);
 export {
-  va as component
+  ha as component
 };

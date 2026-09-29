@@ -1,45 +1,23 @@
 import {
   J as e,
-  U as t,
-  Y as n,
-  Z as r,
-  a as i,
-  o as a,
-  v as o,
-  wt as s
+  Z as t,
+  o as n,
+  v as r
 } from "./DhUcoEdH.js";
 import "./B8UK1oE5.js";
-var c = new Set([`$$slots`, `$$events`, `$$legacy`, `filled`]),
-  l = r(`<svg><path d="M80-120v-480h220v480H80Zm290 0v-720h220v720H370Zm290 0v-400h220v400H660Z"></path></svg>`),
-  u = r(`<svg><path d="M160-200h160v-320H160v320Zm240 0h160v-560H400v560Zm240 0h160v-240H640v240ZM80-120v-480h240v-240h320v320h240v400H80Z"></path></svg>`);
+var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  a = t(`<svg><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"></path></svg>`);
 
-function d(r, d) {
-  let f = i(d, `filled`, 3, !1),
-    p = a(d, c);
-  var m = n(),
-    h = s(m),
-    g = t => {
-      var n = l();
-      o(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 -960 960 960`,
-        fill: `currentColor`,
-        ...p
-      })), e(t, n)
-    },
-    _ = t => {
-      var n = u();
-      o(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 -960 960 960`,
-        fill: `currentColor`,
-        ...p
-      })), e(t, n)
-    };
-  t(h, e => {
-    f() ? e(g) : e(_, -1)
-  }), e(r, m)
+function o(t, o) {
+  let s = n(o, i);
+  var c = a();
+  r(c, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...s
+  })), e(t, c)
 }
 export {
-  d as t
+  o as t
 };

@@ -1,43 +1,17 @@
-import {
-  J as e,
-  U as t,
-  Y as n,
-  Z as r,
-  o as i,
-  v as a,
-  wt as o
-} from "./DhUcoEdH.js";
-import "./B8UK1oE5.js";
-var s = new Set([`$$slots`, `$$events`, `$$legacy`, `filled`]),
-  c = r(`<svg><path d="M690-240h190v80H610l80-80Zm-500 80-85-85q-23-23-23.5-57t22.5-58l440-456q23-24 56.5-24t56.5 23l199 199q23 23 23 57t-23 57L520-160H190Z"></path></svg>`),
-  l = r(`<svg><path d="M690-240h190v80H610l80-80Zm-500 80-85-85q-23-23-23.5-57t22.5-58l440-456q23-24 56.5-24t56.5 23l199 199q23 23 23 57t-23 57L520-160H190Zm296-80 314-322-198-198-442 456 64 64h262Zm-6-240Z"></path></svg>`);
+var e = /Macintosh|Mac OS X|iPhone|iPad|iPod/i;
 
-function u(r, u) {
-  let d = i(u, s);
-  var f = n(),
-    p = o(f),
-    m = t => {
-      var n = c();
-      a(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 -960 960 960`,
-        fill: `currentColor`,
-        ...d
-      })), e(t, n)
-    },
-    h = t => {
-      var n = l();
-      a(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 -960 960 960`,
-        fill: `currentColor`,
-        ...d
-      })), e(t, n)
-    };
-  t(p, e => {
-    u.filled ? e(m) : e(h, -1)
-  }), e(r, f)
+function t() {
+  return typeof navigator > `u` ? `` : navigator.userAgent
+}
+
+function n(n, r = t()) {
+  return n.key === `Alt` || n.key === `Option` || e.test(r) && (n.code === `AltLeft` || n.code === `AltRight`)
+}
+
+function r(n = t()) {
+  return e.test(n) ? `Option` : `Alt`
 }
 export {
-  u as t
+  n,
+  r as t
 };

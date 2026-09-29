@@ -1,50 +1,84 @@
 import {
-  t as e
+  Ct as e,
+  J as t,
+  Jt as n,
+  K as r,
+  Nt as i,
+  Tt as a,
+  U as o,
+  X as s,
+  _t as c,
+  a as l,
+  b as u,
+  et as d,
+  qt as f,
+  st as p,
+  tn as m,
+  tt as h
+} from "./DhUcoEdH.js";
+import "./B8UK1oE5.js";
+import {
+  i as g
+} from "./D15WkdMt.js";
+import {
+  t as _
 } from "./dNE6JDdE.js";
-var t = [`common`, `uncommon`, `rare`, `epic`, `legendary`, `mythic`],
-  n = {
-    common: e.rarity_common,
-    uncommon: e.rarity_uncommon,
-    rare: e.rarity_rare,
-    epic: e.rarity_epic,
-    legendary: e.rarity_legendary,
-    mythic: e.rarity_mythic
-  };
+import {
+  o as v
+} from "./C8-RbvYw.js";
+var y = s(`<span class="text-success">(Verified)</span>`),
+  b = s(`<a target="_blank" rel="noreferer" aria-label="Discord"><!></a>`),
+  x = s(`<button><!></button>`),
+  S = s(`<span class="tooltip h-4"><div class="tooltip-content"><span> </span> <!></div> <!></span>`);
 
-function r(e) {
-  return t.includes(e)
+function C(s, d) {
+  n(d, !0);
+  let C = l(d, `size`, 3, `md`),
+    w = i(() => !!d.id),
+    T = {
+      md: `size-5`,
+      sm: `size-4`
+    },
+    E = i(() => `-translate-y-0.5 opacity-70 ${T[C()]}`);
+  var D = S(),
+    O = e(D),
+    k = e(O),
+    A = e(k);
+  m(k);
+  var j = a(k, 2),
+    M = e => {
+      var n = y();
+      t(e, n)
+    };
+  o(j, e => {
+    p(w) && e(M)
+  }), m(O);
+  var N = a(O, 2),
+    P = n => {
+      var r = b(),
+        i = e(r);
+      v(i, {
+        get class() {
+          return p(E)
+        }
+      }), m(r), c(e => u(r, `href`, e), [() => `https://discord.com/users/${encodeURIComponent(d.id)}`]), t(n, r)
+    },
+    F = n => {
+      var r = x(),
+        i = e(r);
+      v(i, {
+        get class() {
+          return p(E)
+        }
+      }), m(r), h(`click`, r, async () => {
+        await navigator.clipboard.writeText(d.username), g.info(_.username_copied())
+      }), t(n, r)
+    };
+  o(N, e => {
+    p(w) ? e(P) : e(F, -1)
+  }), m(D), c(() => r(A, `Discord: ${d.username??``}`)), t(s, D), f()
 }
-
-function i(e) {
-  return n[e]()
-}
-
-function a(e) {
-  return `tier--${e}`
-}
-
-function o(e) {
-  return e && r(e) ? e : `common`
-}
-var s = (e, t, n, r, i) => ({
-    x: e,
-    size: t,
-    color: n,
-    duration: r,
-    delay: i
-  }),
-  c = {
-    common: [],
-    uncommon: [],
-    rare: [],
-    epic: [s(`20%`, 5, `rgb(168 85 247 / 0.8)`, 5, 0), s(`55%`, 6, `rgb(124 58 237 / 0.7)`, 6, 1.8), s(`80%`, 5, `rgb(196 152 255 / 0.8)`, 5.5, 3.2)],
-    legendary: [s(`15%`, 5, `rgb(251 191 36 / 0.85)`, 4.8, 0), s(`42%`, 6, `rgb(245 158 11 / 0.75)`, 6, 1.4), s(`68%`, 4, `rgb(255 223 142 / 0.9)`, 5.2, 2.6), s(`86%`, 5, `rgb(251 191 36 / 0.8)`, 5.6, 3.6)],
-    mythic: [s(`12%`, 5, `rgb(255 77 109 / 0.85)`, 4.6, 0), s(`30%`, 4, `rgb(255 159 28 / 0.85)`, 5.4, 1.2), s(`50%`, 6, `rgb(74 222 128 / 0.8)`, 5, 2.2), s(`68%`, 4, `rgb(34 211 238 / 0.85)`, 5.8, 3), s(`86%`, 5, `rgb(168 85 247 / 0.85)`, 4.9, 3.8), s(`40%`, 3, `rgb(255 230 109 / 0.9)`, 6.2, 4.4)]
-  };
-
-function l(e) {
-  return c[e]
-}
+d([`click`]);
 export {
-  l as a, i, r as n, o, a as r, t
+  C as t
 };
