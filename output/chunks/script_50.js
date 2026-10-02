@@ -1,99 +1,56 @@
 import {
-  Ct as e,
-  D as t,
-  J as n,
-  Jt as r,
-  Nt as i,
-  O as a,
-  R as o,
-  U as s,
-  X as c,
-  Y as l,
-  _t as u,
-  a as d,
-  an as f,
-  b as p,
-  et as m,
-  qt as h,
-  st as g,
-  tn as _,
-  tt as v,
-  wt as y
+  J as e,
+  U as t,
+  Y as n,
+  Z as r,
+  o as i,
+  v as a,
+  wt as o
 } from "./DhUcoEdH.js";
 import "./B8UK1oE5.js";
-import {
-  n as b
-} from "./D15WkdMt.js";
-import {
-  t as x
-} from "./BxSxBOVc.js";
+var s = new Set([`$$slots`, `$$events`, `$$legacy`, `filled`]),
+  c = r(`<svg><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Z"></path></svg>`),
+  l = r(`<svg><path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"></path></svg>`);
 
-function S(e) {
-  return `/dashboard/users?id=${encodeURIComponent(String(e))}`
-}
-
-function C(e) {
-  typeof window > `u` || window.open(S(e), `_blank`, `noopener,noreferrer`)
-}
-var w = c(`<span role="link" tabindex="0"><!></span>`),
-  T = c(`<a target="_blank" rel="noopener noreferrer"><!></a>`),
-  E = c(`<span><!></span>`);
-
-function D(c, m) {
-  r(m, !0);
-  let D = d(m, `mode`, 3, `anchor`),
-    O = d(m, `class`, 3, ``),
-    k = d(m, `linkClass`, 19, O),
-    A = d(m, `textClass`, 19, O),
-    j = i(() => m.userId != null && m.userId > 0 && b.hasAnyPermission(x.dashboard.users)),
-    M = i(() => m.userId == null ? `` : S(m.userId));
-
-  function N(e) {
-    e.stopPropagation()
-  }
-
-  function P(e) {
-    m.userId == null || m.userId <= 0 || (e.preventDefault(), e.stopPropagation(), C(m.userId))
-  }
-
-  function F(e) {
-    (e.key === `Enter` || e.key === ` `) && P(e)
-  }
-  var I = l(),
-    L = y(I),
-    R = r => {
-      var i = l(),
-        a = y(i),
-        c = r => {
-          var i = w(),
-            a = e(i);
-          o(a, () => m.children ?? f), _(i), u(() => {
-            t(i, 1, `cursor-pointer hover:underline ${k()}`), p(i, `title`, m.title)
-          }), v(`pointerdown`, i, N), v(`click`, i, P), v(`keydown`, i, F), n(r, i)
-        },
-        d = r => {
-          var i = T(),
-            a = e(i);
-          o(a, () => m.children ?? f), _(i), u(() => {
-            t(i, 1, `cursor-pointer hover:underline ${k()}`), p(i, `href`, g(M)), p(i, `title`, m.title)
-          }), v(`pointerdown`, i, N), v(`click`, i, N), n(r, i)
-        };
-      s(a, e => {
-        D() === `inline` ? e(c) : e(d, -1)
-      }), n(r, i)
+function u(r, u) {
+  let d = i(u, s);
+  var f = n(),
+    p = o(f),
+    m = t => {
+      var n = c();
+      a(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 -960 960 960`,
+        fill: `currentColor`,
+        ...d
+      })), e(t, n)
     },
-    z = r => {
-      var i = E(),
-        s = e(i);
-      o(s, () => m.children ?? f), _(i), u(() => {
-        t(i, 1, a(A())), p(i, `title`, m.title)
-      }), n(r, i)
+    h = t => {
+      var n = l();
+      a(n, () => ({
+        xmlns: `http://www.w3.org/2000/svg`,
+        viewBox: `0 -960 960 960`,
+        fill: `currentColor`,
+        ...d
+      })), e(t, n)
     };
-  s(L, e => {
-    g(j) ? e(R) : e(z, -1)
-  }), n(c, I), h()
+  t(p, e => {
+    u.filled ? e(m) : e(h, -1)
+  }), e(r, f)
 }
-m([`pointerdown`, `click`, `keydown`]);
+var d = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  f = r(`<svg><path d="M380-720v-98L142-580h98v60H40v-200h60v98l238-238h-98v-60h200v200h-60ZM593-40q-24 0-46-9t-39-26L304-280l30-31q16-16 37.5-21.5t42.5.5l66 19v-327q0-17 11.5-28.5T520-680q17 0 28.5 11.5T560-640v433l-97-27 102 102q5 5 12.5 8.5T593-120h167q33 0 56.5-23.5T840-200v-160q0-17 11.5-28.5T880-400q17 0 28.5 11.5T920-360v160q0 66-47 113T760-40H593Zm7-280v-160q0-17 11.5-28.5T640-520q17 0 28.5 11.5T680-480v160h-80Zm120 0v-120q0-17 11.5-28.5T760-480q17 0 28.5 11.5T800-440v120h-80Zm-20 80Z"></path></svg>`);
+
+function p(t, n) {
+  let r = i(n, d);
+  var o = f();
+  a(o, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...r
+  })), e(t, o)
+}
 export {
-  S as n, D as t
+  u as n, p as t
 };

@@ -1,84 +1,23 @@
 import {
-  Ct as e,
-  J as t,
-  Jt as n,
-  K as r,
-  Nt as i,
-  Tt as a,
-  U as o,
-  X as s,
-  _t as c,
-  a as l,
-  b as u,
-  et as d,
-  qt as f,
-  st as p,
-  tn as m,
-  tt as h
+  J as e,
+  Z as t,
+  o as n,
+  v as r
 } from "./DhUcoEdH.js";
 import "./B8UK1oE5.js";
-import {
-  i as g
-} from "./D15WkdMt.js";
-import {
-  t as _
-} from "./dNE6JDdE.js";
-import {
-  o as v
-} from "./C8-RbvYw.js";
-var y = s(`<span class="text-success">(Verified)</span>`),
-  b = s(`<a target="_blank" rel="noreferer" aria-label="Discord"><!></a>`),
-  x = s(`<button><!></button>`),
-  S = s(`<span class="tooltip h-4"><div class="tooltip-content"><span> </span> <!></div> <!></span>`);
+var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  a = t(`<svg><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"></path></svg>`);
 
-function C(s, d) {
-  n(d, !0);
-  let C = l(d, `size`, 3, `md`),
-    w = i(() => !!d.id),
-    T = {
-      md: `size-5`,
-      sm: `size-4`
-    },
-    E = i(() => `-translate-y-0.5 opacity-70 ${T[C()]}`);
-  var D = S(),
-    O = e(D),
-    k = e(O),
-    A = e(k);
-  m(k);
-  var j = a(k, 2),
-    M = e => {
-      var n = y();
-      t(e, n)
-    };
-  o(j, e => {
-    p(w) && e(M)
-  }), m(O);
-  var N = a(O, 2),
-    P = n => {
-      var r = b(),
-        i = e(r);
-      v(i, {
-        get class() {
-          return p(E)
-        }
-      }), m(r), c(e => u(r, `href`, e), [() => `https://discord.com/users/${encodeURIComponent(d.id)}`]), t(n, r)
-    },
-    F = n => {
-      var r = x(),
-        i = e(r);
-      v(i, {
-        get class() {
-          return p(E)
-        }
-      }), m(r), h(`click`, r, async () => {
-        await navigator.clipboard.writeText(d.username), g.info(_.username_copied())
-      }), t(n, r)
-    };
-  o(N, e => {
-    p(w) ? e(P) : e(F, -1)
-  }), m(D), c(() => r(A, `Discord: ${d.username??``}`)), t(s, D), f()
+function o(t, o) {
+  let s = n(o, i);
+  var c = a();
+  r(c, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...s
+  })), e(t, c)
 }
-d([`click`]);
 export {
-  C as t
+  o as t
 };

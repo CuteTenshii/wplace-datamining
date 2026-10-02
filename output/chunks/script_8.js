@@ -1,4 +1,4 @@
-const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./BvV3YPcV.js", "./DhUcoEdH.js", "./QLAwNkgu.js"]))) => i.map(i => d[i]);
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["./C0Vc8ZEu.js", "./DhUcoEdH.js", "./C09aqKZr.js"]))) => i.map(i => d[i]);
 import {
   At as e,
   Et as t,
@@ -14,10 +14,10 @@ import {
 } from "./DhUcoEdH.js";
 import {
   a as d
-} from "./QLAwNkgu.js";
+} from "./C09aqKZr.js";
 import {
   t as f
-} from "./dNE6JDdE.js";
+} from "./Cvwp5flV.js";
 import {
   i as p,
   r as m
@@ -4254,7 +4254,7 @@ var rc = 6e3,
             headers: n
           }
         }, a = await this.guardedFetch(e, await i());
-      if (a.headers.get(`x-device-reattest`) && d(() => import(`./BvV3YPcV.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2]), import.meta.url), a.status === L.FORBIDDEN && a.headers.get(`x-block-reason`) === `tor`) throw Error(f.tor_blocked());
+      if (a.headers.get(`x-device-reattest`) && d(() => import(`./C0Vc8ZEu.js`).then(e => e.n).then(e => e.IOSAppServices.reattest()), __vite__mapDeps([0, 1, 2]), import.meta.url), a.status === L.FORBIDDEN && a.headers.get(`x-block-reason`) === `tor`) throw Error(f.tor_blocked());
       if (a.status === L.FORBIDDEN && a.headers.get(`x-block-reason`) === `integrity`) throw Error(f.request_integrity_blocked());
       let o = ((n = a.headers.get(`cf-mitigated`)) == null ? void 0 : n.toLowerCase()) === `challenge`;
       if (a.status === 403 && o) {
@@ -8738,14 +8738,6 @@ function Rc(e) {
       });
       if (!n.ok) throw n.status === 500 ? new R(f.unexpected_server_error(), n.status) : new R(f.invalid_captcha(), n.status);
       return n.json()
-    }
-    async getSeptemberEventRewards() {
-      let e = await this.request(`/me/september-event`, {
-        method: `GET`,
-        credentials: `include`
-      });
-      if (!e.ok) throw new R(f.unexpected_server_error(), e.status);
-      return e.json()
     }
     async postTelemetry(e, t) {
       return (await this.request(`/frontend/telemetry`, {

@@ -1,43 +1,23 @@
 import {
   J as e,
-  U as t,
-  Y as n,
-  Z as r,
-  o as i,
-  v as a,
-  wt as o
+  Z as t,
+  o as n,
+  v as r
 } from "./DhUcoEdH.js";
 import "./B8UK1oE5.js";
-var s = new Set([`$$slots`, `$$events`, `$$legacy`, `filled`]),
-  c = r(`<svg><path d="M160-160v-100.77l527.23-527.77q6.15-5.48 13.57-8.47 7.43-2.99 15.49-2.99t15.62 2.54q7.55 2.54 13.94 9.15l42.69 42.93q6.61 6.38 9.04 14 2.42 7.63 2.42 15.25 0 8.13-2.74 15.56-2.74 7.42-8.72 13.57L260.77-160H160Zm540.15-496.46L760-715.54 715.54-760l-59.08 59.85 43.69 43.69Z"></path></svg>`),
-  l = r(`<svg><path d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"></path></svg>`);
+var i = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  a = t(`<svg><path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"></path></svg>`);
 
-function u(r, u) {
-  let d = i(u, s);
-  var f = n(),
-    p = o(f),
-    m = t => {
-      var n = c();
-      a(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 -960 960 960`,
-        fill: `currentColor`,
-        ...d
-      })), e(t, n)
-    },
-    h = t => {
-      var n = l();
-      a(n, () => ({
-        xmlns: `http://www.w3.org/2000/svg`,
-        viewBox: `0 -960 960 960`,
-        fill: `currentColor`,
-        ...d
-      })), e(t, n)
-    };
-  t(p, e => {
-    u.filled ? e(m) : e(h, -1)
-  }), e(r, f)
+function o(t, o) {
+  let s = n(o, i);
+  var c = a();
+  r(c, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 -960 960 960`,
+    fill: `currentColor`,
+    ...s
+  })), e(t, c)
 }
 export {
-  u as t
+  o as t
 };

@@ -1,430 +1,342 @@
 import {
-  t as e
-} from "./dNE6JDdE.js";
+  J as e,
+  Z as t,
+  o as n,
+  v as r
+} from "./DhUcoEdH.js";
+import "./B8UK1oE5.js";
 import {
-  i as t,
-  r as n,
-  t as r
-} from "./C8-RbvYw.js";
-var i = {
-  picture_unlock: e.alliance_store_picture_unlock,
-  picture_draft: e.alliance_store_picture_draft,
-  banner_unlock: e.alliance_store_banner_unlock,
-  banner_draft: e.alliance_store_banner_draft,
-  rename: e.alliance_rename_paid,
-  better_description: e.alliance_better_description,
-  better_pallet: e.alliance_better_pallet,
-  advanced_paint_tools: e.alliance_advanced_paint_tools,
-  description_change: e.alliance_description_change_credit,
-  headquarters_unlock: e.alliance_hq_unlock_title,
-  headquarters_change: e.alliance_hq_change_credit
-};
+  t as i
+} from "./Cvwp5flV.js";
+import {
+  n as a,
+  t as o
+} from "./CVh2Ql_i.js";
+import {
+  t as s
+} from "./BslbGjGv.js";
+import {
+  t as c
+} from "./BfFyfnyU.js";
+import {
+  t as l
+} from "./Cbdho68-.js";
+import {
+  t as u
+} from "./eFD9sEfy.js";
+var d = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  f = t(`<svg><path d="M4 18C4 2 20 22 20 6"></path><path d="M4 18V4m16 2v14" stroke-dasharray="2 2" stroke-width="1"></path><circle cx="4" cy="4" r="2"></circle><circle cx="20" cy="20" r="2"></circle></svg>`);
 
-function a(t) {
-  return t.size ? e.alliance_store_hq_size({
-    size: `${t.size} x ${t.size}`
-  }) : t.maxCharges ? e.alliance_store_hq_max_charges({
-    charges: t.maxCharges
-  }) : t.chargeIntervalSeconds ? e.alliance_store_hq_charge_cooldown({
-    seconds: t.chargeIntervalSeconds
-  }) : o(t.key)
+function p(t, i) {
+  let a = n(i, d);
+  var o = f();
+  r(o, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 0 24 24`,
+    fill: `none`,
+    stroke: `currentColor`,
+    "stroke-width": `2`,
+    ...a
+  })), e(t, o)
+}
+var m = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  h = t(`<svg><ellipse cx="12" cy="12" rx="9" ry="7"></ellipse></svg>`);
+
+function g(t, i) {
+  let a = n(i, m);
+  var o = h();
+  r(o, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 0 24 24`,
+    fill: `none`,
+    stroke: `currentColor`,
+    "stroke-width": `2`,
+    ...a
+  })), e(t, o)
+}
+var _ = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  v = t(`<svg><rect x="3" y="5" width="18" height="14"></rect></svg>`);
+
+function y(t, i) {
+  let a = n(i, _);
+  var o = v();
+  r(o, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 0 24 24`,
+    fill: `none`,
+    stroke: `currentColor`,
+    "stroke-width": `2`,
+    ...a
+  })), e(t, o)
+}
+var b = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  x = t(`<svg><path d="M5 19 19 5"></path><path d="M3 17h4v4H3zM17 3h4v4h-4z" fill="currentColor" stroke="none"></path></svg>`);
+
+function S(t, i) {
+  let a = n(i, b);
+  var o = x();
+  r(o, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 0 24 24`,
+    fill: `none`,
+    stroke: `currentColor`,
+    "stroke-width": `2`,
+    ...a
+  })), e(t, o)
+}
+var C = new Set([`$$slots`, `$$events`, `$$legacy`]),
+  w = t(`<svg><path d="M5 6.5 15.5 4 20 12.5 13.5 20 4 15Z" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="2" stroke-linejoin="round"></path><circle cx="5" cy="6.5" r="1.75" fill="currentColor"></circle><circle cx="15.5" cy="4" r="1.75" fill="currentColor"></circle><circle cx="20" cy="12.5" r="1.75" fill="currentColor"></circle><circle cx="13.5" cy="20" r="1.75" fill="currentColor"></circle><circle cx="4" cy="15" r="1.75" fill="currentColor"></circle></svg>`);
+
+function T(t, i) {
+  let a = n(i, C);
+  var o = w();
+  r(o, () => ({
+    xmlns: `http://www.w3.org/2000/svg`,
+    viewBox: `0 0 24 24`,
+    fill: `none`,
+    ...a
+  })), e(t, o)
+}
+var E = `alliance-asset-editor:brush-size`;
+
+function D(e, t) {
+  return Math.min(t, Math.max(1, Math.trunc(e)))
+}
+var O = [{
+    value: `brush-square`,
+    icon: o,
+    label: () => i.alliance_asset_tool_square_brush()
+  }, {
+    value: `brush-circle`,
+    icon: a,
+    label: () => i.alliance_asset_tool_circle_brush()
+  }, {
+    value: `fill`,
+    icon: l,
+    label: () => i.alliance_asset_tool_fill()
+  }, {
+    value: `polygon`,
+    icon: T,
+    label: () => i.alliance_asset_tool_polygon()
+  }],
+  k = [...O, {
+    value: `line`,
+    icon: S,
+    label: () => i.overlay_editor_line()
+  }, {
+    value: `rectangle`,
+    icon: y,
+    label: () => i.overlay_editor_rectangle()
+  }, {
+    value: `ellipse`,
+    icon: g,
+    label: () => i.overlay_editor_ellipse()
+  }, {
+    value: `bezier`,
+    icon: p,
+    label: () => i.overlay_editor_bezier()
+  }, {
+    value: `eraser`,
+    icon: u,
+    label: () => i.eraser()
+  }, {
+    value: `pick`,
+    icon: s,
+    label: () => i.color_picker()
+  }, {
+    value: `move`,
+    icon: c,
+    label: () => i.overlay_editor_move()
+  }];
+
+function A(e) {
+  var t;
+  return ((t = k.find(({
+    value: t
+  }) => t === e)) == null ? void 0 : t.label()) ?? e
 }
 
-function o(t) {
-  var n, r, a, o, s;
-  let c = (n = /^template_spaces_(\d+)$/.exec(t)) == null ? void 0 : n[1];
-  if (c) return e.alliance_store_template_spaces({
-    count: Number(c)
-  });
-  let l = (r = /^headquarters_size_(\d+)$/.exec(t)) == null ? void 0 : r[1];
-  if (l) return e.alliance_store_hq_size({
-    size: `${l} x ${l}`
-  });
-  let u = (a = /^headquarters_max_charges_(\d+)$/.exec(t)) == null ? void 0 : a[1];
-  if (u) return e.alliance_store_hq_max_charges({
-    charges: u
-  });
-  let d = (o = /^headquarters_charge_cooldown_(\d+)$/.exec(t)) == null ? void 0 : o[1];
-  return d ? e.alliance_store_hq_charge_cooldown({
-    seconds: d
-  }) : ((s = i[t]) == null ? void 0 : s.call(i)) ?? t
+function j(e) {
+  return e === `brush-square` || e === `brush-circle` || e === `eraser` || e === `line` || e === `rectangle` || e === `ellipse` || e === `bezier`
 }
 
-function s(t, n) {
-  if (t.key.startsWith(`template_spaces_`)) return e.alliance_store_template_spaces_detail();
-  switch (t.key) {
-    case `picture_unlock`:
-    case `banner_unlock`:
-      return e.alliance_asset_unlock_description(c(t, n));
-    case `picture_draft`:
-    case `banner_draft`:
-      return e.alliance_store_draft_detail(c(t, n));
-    case `rename`:
-      return e.alliance_store_rename_detail();
-    case `better_description`:
-      return e.alliance_better_description_detail();
-    case `better_pallet`:
-      return e.alliance_better_pallet_detail();
-    case `advanced_paint_tools`:
-      return e.alliance_advanced_paint_tools_detail();
-    case `description_change`:
-      return e.alliance_description_change_credit_detail();
-    case `headquarters_unlock`:
-      return e.alliance_hq_unlock_detail();
-    case `headquarters_change`:
-      return e.alliance_hq_change_credit_detail();
-    default:
-      return t.size ? e.alliance_store_hq_size_detail({
-        pixels: l(t, n)
-      }) : t.maxCharges ? e.alliance_store_hq_max_charges_detail() : t.chargeIntervalSeconds ? e.alliance_store_hq_charge_cooldown_detail() : ``
+function M(e) {
+  return e !== `brush-square`
+}
+var N = {};
+
+function P(e, t) {
+  let n = Math.max(1, Math.trunc(e)),
+    r = N[t];
+  if ((r == null ? void 0 : r.size) === n) return r;
+  let i = -Math.floor((n - 1) / 2),
+    a = (n - 1) / 2,
+    o = n % 2 == 0 ? n / 2 : (n - 1) / 2,
+    s = new Int32Array(n * 2);
+  for (let e = 0; e < n; e += 1) {
+    let r = 0,
+      c = n - 1;
+    if (t === `circle`) {
+      let t = e - a,
+        n = Math.sqrt(Math.max(0, o * o - t * t));
+      r = Math.ceil(a - n), c = Math.floor(a + n)
+    }
+    s[e * 2] = r + i, s[e * 2 + 1] = c + i
   }
-}
-
-function c(e, t) {
-  let n = e.key.startsWith(`picture`) ? t.assets.picture : t.assets.banner;
-  return {
-    width: n.width,
-    height: n.height
-  }
-}
-
-function l(e, t) {
-  if (!e.size) return 0;
-  let n = t.headquarters.sizes.filter(t => t < e.size).at(-1) ?? e.size;
-  return (e.size - n) / 2
-}
-var u = [`alliance_join_request`, `alliance_join_request_decided`, `alliance_removed`, `alliance_role_changed`, `alliance_leadership_transferred`, `alliance_draft_editor_changed`, `alliance_hq_timeout_changed`, `alliance_activity`],
-  d = {
-    lifecycle: e.alliance_notification_category_lifecycle,
-    membership: e.alliance_notification_category_membership,
-    leadership: e.alliance_notification_category_leadership,
-    profile: e.alliance_notification_category_profile,
-    settings: e.alliance_notification_category_settings,
-    economy: e.alliance_notification_category_economy,
-    awards: e.alliance_notification_category_awards,
-    assets: e.alliance_notification_category_assets
+  let c = {
+    size: n,
+    minOffset: i,
+    spans: s
   };
-
-function f(e, t) {
-  let n = e[t];
-  return typeof n == `string` ? n : ``
+  return N[t] = c, c
 }
 
-function p(t) {
-  switch (t) {
-    case `admin`:
-      return e.alliance_role_admin();
-    case `mod`:
-      return e.alliance_role_mod();
-    case `leader`:
-      return e.alliance_role_leader();
-    default:
-      return e.alliance_role_member()
+function F(e, t, n, r, i, a) {
+  if (n < 0 || n >= t || i < 0 || r >= e) return;
+  let o = Math.max(0, r),
+    s = Math.min(e - 1, i);
+  for (let e = o; e <= s; e += 1) a(e, n)
+}
+
+function I(e, t, n, r, i, a) {
+  if (e <= 0 || t <= 0) return;
+  let o = P(r, i);
+  for (let r = 0; r < o.size; r += 1) F(e, t, n.y + o.minOffset + r, n.x + o.spans[r * 2], n.x + o.spans[r * 2 + 1], a)
+}
+
+function L(e, t, n, r, i, a, o, s) {
+  for (let c = 0; c < o.size; c += 1) {
+    let l = a + o.minOffset + c;
+    if (l < 0 || l >= t) continue;
+    let u = i + o.spans[c * 2],
+      d = i + o.spans[c * 2 + 1],
+      f = l - r - o.minOffset;
+    if (f < 0 || f >= o.size) {
+      F(e, t, l, u, d, s);
+      continue
+    }
+    let p = n + o.spans[f * 2],
+      m = n + o.spans[f * 2 + 1];
+    F(e, t, l, u, Math.min(d, p - 1), s), F(e, t, l, Math.max(u, m + 1), d, s)
   }
 }
 
-function m(t) {
-  switch (t) {
-    case `open`:
-      return e.alliance_settings_join_policy_open();
-    case `request`:
-      return e.alliance_settings_join_policy_request();
-    default:
-      return e.alliance_settings_join_policy_invite_only()
+function R(e, t, n, r, i, a, o, s = !0) {
+  if (e <= 0 || t <= 0) return;
+  let c = P(i, a);
+  s && I(e, t, n, c.size, a, o);
+  let l = n.x,
+    u = n.y,
+    d = !0;
+  H(n, r, (n, r) => {
+    if (d) {
+      d = !1;
+      return
+    }
+    L(e, t, l, u, n, r, c, o), l = n, u = r
+  })
+}
+
+function z(e, t, n, r, i) {
+  let a = r.y * t + r.x,
+    o = e[a];
+  if (o === i) return [];
+  let s = new Uint8Array(e.length),
+    c = [a];
+  s[a] = 1;
+  let l = [];
+  for (; c.length > 0;) {
+    let r = c.pop();
+    if (e[r] !== o) continue;
+    let i = r % t,
+      a = Math.floor(r / t);
+    l.push({
+      x: i,
+      y: a
+    });
+    let u = [i > 0 ? r - 1 : -1, i + 1 < t ? r + 1 : -1, a > 0 ? r - t : -1, a + 1 < n ? r + t : -1];
+    for (let t of u) t < 0 || s[t] || (s[t] = 1, e[t] === o && c.push(t))
+  }
+  return l
+}
+
+function B(e, t, n, r, i, a = null) {
+  let o = r.y * t + r.x,
+    s = e[o];
+  if (s === i || a && !a[o]) return new Uint32Array;
+  let c = new Uint8Array(e.length),
+    l = [o],
+    u = [];
+  c[o] = 1;
+  let d = t => {
+    c[t] || e[t] !== s || a && !a[t] || (c[t] = 1, l.push(t))
+  };
+  for (; l.length > 0;) {
+    let n = l.pop();
+    u.push(n);
+    let r = n % t;
+    r > 0 && d(n - 1), r + 1 < t && d(n + 1), n >= t && d(n - t), n + t < e.length && d(n + t)
+  }
+  return new Uint32Array(u)
+}
+
+function V(e, t) {
+  let n = [];
+  return H(e, t, (e, t) => n.push({
+    x: e,
+    y: t
+  })), n
+}
+
+function H(e, t, n) {
+  let {
+    x: r,
+    y: i
+  } = e, a = Math.abs(t.x - e.x), o = e.x < t.x ? 1 : -1, s = -Math.abs(t.y - e.y), c = e.y < t.y ? 1 : -1, l = a + s;
+  for (; n(r, i), r !== t.x || i !== t.y;) {
+    let e = l * 2;
+    e >= s && (l += s, r += o), e <= a && (l += a, i += c)
   }
 }
 
-function h(t) {
-  switch (t) {
-    case `member`:
-      return e.alliance_settings_invite_min_role_member();
-    case `mod`:
-      return e.alliance_role_mod();
-    case `admin`:
-      return e.alliance_settings_invite_min_role_admin();
-    default:
-      return e.alliance_settings_invite_min_role_leader()
-  }
+function U(e) {
+  return e.y * 4294967296 + e.x
 }
 
-function g(t) {
-  let n = Array.isArray(t.changedSettings) ? t.changedSettings.filter(e => typeof e == `string`) : [];
-  if (n.length !== 1) return e.alliance_activity_event_settings_changed();
-  switch (n[0]) {
-    case `discoverability`:
-      return e.alliance_activity_event_discoverability_changed({
-        visibility: f(t, `discoverability`) === `public` ? e.alliance_settings_discoverability_public() : e.alliance_settings_discoverability_unlisted()
-      });
-    case `joinPolicy`:
-      return e.alliance_activity_event_join_policy_changed({
-        policy: m(f(t, `joinPolicy`))
-      });
-    case `inviteMinRole`:
-      return e.alliance_activity_event_invite_role_changed({
-        role: h(f(t, `inviteMinRole`))
-      });
-    default:
-      return e.alliance_activity_event_settings_changed()
+function W(e, t, n) {
+  let r = !1;
+  for (let i = 0, a = n.length - 1; i < n.length; a = i, i += 1) {
+    let o = n[i],
+      s = n[a],
+      c = o.y + .5,
+      l = s.y + .5;
+    c > t != l > t && e < (s.x - o.x) * (t - c) / (l - c) + o.x + .5 && (r = !r)
   }
+  return r
 }
 
-function _(e, t) {
-  return t.startsWith(`hq_`) ? `headquarters` : e in d ? e : `lifecycle`
-}
-
-function v(i) {
-  let a = f(i, `event`),
-    s = f(i, `userName`),
-    c = f(i, `assetType`) === `banner` ? e.alliance_asset_banner() : e.alliance_asset_picture();
-  switch (a) {
-    case `created`:
-      return e.alliance_activity_event_created();
-    case `archived`:
-      return e.alliance_activity_event_archived();
-    case `restored`:
-      return e.alliance_activity_event_restored();
-    case `member_joined`:
-      return s ? e.alliance_activity_event_member_joined_named({
-        name: s
-      }) : e.alliance_activity_event_member_joined();
-    case `member_left`:
-      return s ? e.alliance_activity_event_member_left_named({
-        name: s
-      }) : e.alliance_activity_event_member_left();
-    case `role_changed`:
-      return s ? e.alliance_activity_event_role_changed_named({
-        name: s,
-        role: p(f(i, `role`))
-      }) : e.alliance_activity_event_role_changed();
-    case `leadership_transferred`:
-      return s ? e.alliance_activity_event_leadership_transferred_named({
-        name: s
-      }) : e.alliance_activity_event_leadership_transferred();
-    case `description_changed`:
-      return e.alliance_activity_event_description_changed();
-    case `hq_moved`:
-      return e.alliance_activity_event_hq_moved();
-    case `hq_unlocked`:
-      return e.alliance_activity_event_hq_unlocked();
-    case `hq_expanded`:
-      return e.alliance_activity_event_hq_expanded({
-        size: `${String(i.newSize??i.size??``)}x${String(i.newSize??i.size??``)}`
-      });
-    case `hq_visibility_changed`:
-      return f(i, `hqVisibility`) === `members_only` ? e.alliance_activity_event_hq_visibility_members_only() : e.alliance_activity_event_hq_visibility_public();
-    case `settings_changed`:
-      return g(i);
-    case `permissions_changed`:
-      return e.alliance_permissions_title();
-    case `discord_invite_changed`:
-      return i.removed ? e.alliance_activity_event_discord_invite_removed() : e.alliance_activity_event_discord_invite_changed();
-    case `renamed`: {
-      let t = f(i, `name`);
-      return t ? e.alliance_activity_event_renamed_to({
-        name: t
-      }) : e.alliance_activity_event_renamed()
-    }
-    case `purchase_completed`: {
-      let t = f(i, `item`),
-        n = Number(i.cost);
-      return t && Number.isFinite(n) ? e.alliance_activity_event_purchase_completed_detail({
-        item: o(t),
-        cost: n.toLocaleString()
-      }) : e.alliance_activity_event_purchase_completed()
-    }
-    case `award_earned`: {
-      let a = f(i, `awardTier`);
-      return t(a) ? e.alliance_activity_event_award_tier_earned({
-        award: r(f(i, `awardKey`), a),
-        tier: n(a)
-      }) : e.alliance_activity_event_award_earned({
-        award: r(f(i, `awardKey`))
-      })
-    }
-    case `award_upgraded`: {
-      let a = f(i, `awardTier`);
-      return t(a) ? e.alliance_activity_event_award_upgraded({
-        award: r(f(i, `awardKey`), a),
-        tier: n(a)
-      }) : e.alliance_activity_event_unknown()
-    }
-    case `featured_awards_changed`:
-      if (Array.isArray(i.awards)) {
-        let n = i.awards.flatMap(e => {
-          if (!e || typeof e != `object`) return [];
-          let n = e,
-            i = f(n, `tier`);
-          return t(i) ? [r(f(n, `key`), i)] : []
-        });
-        return n.length > 0 ? e.alliance_activity_event_featured_awards_named({
-          awards: n.join(`, `)
-        }) : e.alliance_activity_event_featured_awards_cleared()
-      }
-      return Array.isArray(i.awardKeys) && i.awardKeys.length === 0 ? e.alliance_activity_event_featured_awards_cleared() : e.alliance_activity_event_featured_awards_changed();
-    case `asset_draft_created`:
-      return e.alliance_activity_event_asset_draft_created({
-        asset: c
-      });
-    case `asset_draft_finished`:
-      return e.alliance_activity_event_asset_draft_finished({
-        asset: c
-      });
-    case `asset_draft_abandoned`:
-      return e.alliance_activity_event_asset_draft_abandoned({
-        asset: c
-      });
-    case `asset_version_selected`:
-      return e.alliance_activity_event_asset_version_selected({
-        asset: c
-      });
-    case `asset_unpublished`:
-      return e.alliance_activity_event_asset_unpublished({
-        asset: c
-      });
-    case `asset_version_deleted`:
-      return e.alliance_activity_event_asset_version_deleted({
-        asset: c
-      });
-    case `templates_changed`:
-      return e.alliance_activity_event_templates_changed();
-    case `template_created`:
-      return e.alliance_activity_event_template_created({
-        name: f(i, `name`)
-      });
-    case `template_updated`:
-      return e.alliance_activity_event_template_updated({
-        name: f(i, `name`)
-      });
-    case `template_deleted`:
-      return e.alliance_activity_event_template_deleted({
-        name: f(i, `name`)
-      });
-    default:
-      return e.alliance_activity_event_unknown()
+function G(e, t, n) {
+  if (n.length < 3 || new Set(n.map(U)).size < 3) return [];
+  let r = Math.max(0, Math.min(...n.map(e => e.x))),
+    i = Math.min(e - 1, Math.max(...n.map(e => e.x))),
+    a = Math.max(0, Math.min(...n.map(e => e.y))),
+    o = Math.min(t - 1, Math.max(...n.map(e => e.y))),
+    s = new Map;
+  for (let r = 0; r < n.length; r += 1) {
+    let i = n[r],
+      a = n[(r + 1) % n.length];
+    for (let n of V(i, a)) n.x < 0 || n.y < 0 || n.x >= e || n.y >= t || s.set(U(n), n)
   }
-}
-
-function y(t) {
-  let n = t.data ?? {},
-    r = f(n, `allianceName`);
-  switch (t.type) {
-    case `alliance_join_request`:
-      return {
-        title: e.alliance_notification_join_request_title(), message: e.alliance_notification_join_request({
-          requesterName: f(n, `requesterName`),
-          allianceName: r
-        }), kind: `membership`
-      };
-    case `alliance_join_request_decided`:
-      switch (f(n, `status`)) {
-        case `accepted`:
-          return {
-            title: e.alliance_notification_request_accepted_title(), message: e.alliance_notification_request_accepted({
-              allianceName: r
-            }), kind: `membership`
-          };
-        case `rejected`:
-          return {
-            title: e.alliance_notification_request_rejected_title(), message: e.alliance_notification_request_rejected({
-              allianceName: r
-            }), kind: `membership`
-          };
-        case `cancelled`:
-          return {
-            title: e.alliance_notification_request_cancelled_title(), message: e.alliance_notification_request_cancelled({
-              allianceName: r
-            }), kind: `membership`
-          };
-        default:
-          return {
-            title: e.alliance_notification_request_expired_title(), message: e.alliance_notification_request_expired({
-              allianceName: r
-            }), kind: `membership`
-          }
-      }
-    case `alliance_removed`:
-      return n.banned ? {
-        title: e.alliance_notification_removed_banned_title(),
-        message: e.alliance_notification_removed_banned({
-          allianceName: r
-        }),
-        kind: `membership`
-      } : {
-        title: e.alliance_notification_removed_kicked_title(),
-        message: e.alliance_notification_removed_kicked({
-          allianceName: r
-        }),
-        kind: `membership`
-      };
-    case `alliance_role_changed`:
-      return {
-        title: e.alliance_notification_role_changed_title(), message: e.alliance_notification_role_changed({
-          allianceName: r,
-          role: p(f(n, `role`))
-        }), kind: `leadership`
-      };
-    case `alliance_leadership_transferred`:
-      return n.isNewLeader === !1 ? {
-        title: e.alliance_notification_leadership_transferred_title(),
-        message: e.alliance_notification_former_leader({
-          allianceName: r
-        }),
-        kind: `leadership`
-      } : {
-        title: e.alliance_notification_new_leader_title(),
-        message: e.alliance_notification_new_leader({
-          allianceName: r
-        }),
-        kind: `leadership`
-      };
-    case `alliance_hq_timeout_changed`: {
-      if (!n.active) return {
-        title: e.alliance_notification_hq_timeout_revoked_title(),
-        message: e.alliance_notification_hq_timeout_revoked({
-          allianceName: r
-        }),
-        kind: `headquarters`
-      };
-      let t = f(n, `reason`),
-        i = f(n, `expiresAt`);
-      return {
-        title: e.alliance_notification_hq_timeout_applied_title(),
-        message: i ? e.alliance_notification_hq_timeout_until({
-          allianceName: r,
-          date: new Date(i).toLocaleString(),
-          reason: t
-        }) : e.alliance_notification_hq_timeout_indefinite({
-          allianceName: r,
-          reason: t
-        }),
-        kind: `headquarters`
-      }
-    }
-    case `alliance_draft_editor_changed`: {
-      let t = !!n.granted,
-        i = f(n, `assetType`) === `banner` ? e.alliance_asset_banner() : e.alliance_asset_picture();
-      return {
-        title: t ? e.alliance_notification_draft_editor_granted_title() : e.alliance_notification_draft_editor_revoked_title(),
-        message: t ? e.alliance_notification_draft_editor_granted({
-          allianceName: r,
-          asset: i
-        }) : e.alliance_notification_draft_editor_revoked({
-          allianceName: r
-        }),
-        kind: `assets`
-      }
-    }
-    default: {
-      let t = f(n, `category`),
-        i = f(n, `event`);
-      return {
-        title: r || e.alliance_notification_activity_title(),
-        message: v(n),
-        kind: _(t, i)
-      }
-    }
-  }
+  for (let e = a; e <= o; e += 1)
+    for (let t = r; t <= i; t += 1) W(t + .5, e + .5, n) && s.set(U({
+      x: t,
+      y: e
+    }), {
+      x: t,
+      y: e
+    });
+  return [...s.values()].sort((e, t) => e.y - t.y || e.x - t.x)
 }
 export {
-  s as a, l as c, u as i, d as n, a as o, y as r, o as s, v as t
+  z as a, R as c, D as d, A as f, B as i, H as l, k as n, G as o, M as p, O as r, I as s, E as t, j as u
 };

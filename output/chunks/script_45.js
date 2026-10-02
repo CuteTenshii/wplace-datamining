@@ -1,141 +1,201 @@
 import {
-  A as e,
-  Ct as t,
-  D as n,
-  J as r,
-  Jt as i,
-  K as a,
-  Nt as o,
-  O as s,
-  R as c,
-  Tt as l,
-  U as u,
-  X as d,
-  _t as f,
-  a as p,
-  an as m,
-  b as h,
-  d as g,
-  nt as _,
-  qt as v,
-  st as y,
-  tn as b,
-  vt as x,
-  wt as S
-} from "./DhUcoEdH.js";
-import "./B8UK1oE5.js";
-import {
-  t as C
-} from "./dNE6JDdE.js";
-import {
-  t as w
-} from "./DxdGK6Xj.js";
-var T = d(`<form method="dialog"><button class="btn btn-sm btn-circle">✕</button></form>`),
-  E = d(`<div class="flex items-center"></div> <div class="flex items-center justify-center overflow-hidden text-center"><!></div> <div class="flex items-start justify-end pt-1"><!></div>`, 1),
-  D = d(`<div class="ml-2 flex flex-col items-end gap-2 self-start pt-1 sm:translate-x-2"><!> <!></div>`),
-  O = d(`<div class="flex flex-1 items-center gap-3 overflow-hidden"><!></div> <!>`, 1),
-  k = d(`<header><!></header>`),
-  A = d(`<footer class="shrink-0 px-4 py-4 sm:px-6"><!></footer>`),
-  j = d(`<form method="dialog" class="modal-backdrop"><button> </button></form>`),
-  M = d(`<dialog><div><!> <div><!></div> <!></div> <!></dialog>`);
+  H as e
+} from "./DdgTUgNx.js";
+var t = [`text-red-500`, `text-orange-500`, `text-yellow-500`, `text-lime-500`, `text-emerald-500`, `text-teal-500`, `text-cyan-500`, `text-sky-500`, `text-indigo-500`, `text-violet-500`, `text-purple-500`, `text-fuchsia-500`, `text-pink-500`, `text-rose-500`],
+  n = [`bg-red-500/10`, `bg-orange-500/10`, `bg-yellow-500/10`, `bg-lime-500/10`, `bg-emerald-500/10`, `bg-teal-500/10`, `bg-cyan-500/10`, `bg-sky-500/10`, `bg-indigo-500/10`, `bg-violet-500/10`, `bg-purple-500/10`, `bg-fuchsia-500/10`, `bg-pink-500/10`, `bg-rose-500/10`];
 
-function N(d, N) {
-  i(N, !0);
-  let P = p(N, `open`, 15),
-    F = p(N, `hasBackdrop`, 3, !0),
-    I = p(N, `hasCloseButton`, 3, !0),
-    L = p(N, `hasHeaderBorder`, 3, !0),
-    R = p(N, `centerHeader`, 3, !1),
-    z = p(N, `isDynamicHeight`, 3, !1),
-    B = p(N, `useModalLayer`, 3, !0),
-    V = p(N, `closedBy`, 3, `any`),
-    H = p(N, `contentEl`, 15),
-    U = p(N, `disableCloseAnimation`, 3, !1),
-    W = o(() => N.mobileClasses ?? `max-sm:!w-full max-sm:!h-full max-sm:!max-w-none max-sm:!max-h-none max-sm:!rounded-none max-sm:pt-safe max-sm:pb-safe`),
-    G = o(() => w(`modal-box p-0 flex flex-col w-11/12 max-h-11/12 rounded-xl`, !z() && `h-11/12`, y(W), N.modalBoxClass));
-  var K = M(),
-    q = t(K),
-    J = t(q),
-    Y = e => {
-      var i = k(),
-        a = t(i),
-        o = e => {
-          var n = E(),
-            i = l(S(n), 2),
-            a = t(i);
-          c(a, () => N.header ?? m), b(i);
-          var o = l(i, 2),
-            s = t(o),
-            d = e => {
-              var t = T();
-              r(e, t)
-            };
-          u(s, e => {
-            I() && e(d)
-          }), b(o), r(e, n)
-        },
-        s = e => {
-          var n = O(),
-            i = S(n),
-            a = t(i);
-          c(a, () => N.header ?? m), b(i);
-          var o = l(i, 2),
-            s = e => {
-              var n = D(),
-                i = t(n),
-                a = e => {
-                  var t = T();
-                  r(e, t)
-                };
-              u(i, e => {
-                I() && e(a)
-              });
-              var o = l(i, 2);
-              c(o, () => N.headerAction ?? m), b(n), r(e, n)
-            };
-          u(o, e => {
-            (I() || N.headerAction) && e(s)
-          }), r(e, n)
-        };
-      u(a, e => {
-        R() ? e(o) : e(s, -1)
-      }), b(i), f(() => n(i, 1, `bg-base-100/70 sticky top-0 z-40 flex shrink-0 items-center justify-between px-4 py-4 backdrop-blur sm:px-6 ${L()?`border-base-content/10 border-b`:``} ${R()?`grid grid-cols-[2.5rem_1fr_2.5rem] px-4`:``} ${(N.headerClassName||``)??``}`)), r(e, i)
-    };
-  u(J, e => {
-    (N.header || I()) && e(Y)
-  });
-  var X = l(J, 2),
-    Z = t(X);
-  c(Z, () => N.children ?? m), b(X), g(X, e => H(e), () => H());
-  var Q = l(X, 2),
-    $ = e => {
-      var n = A(),
-        i = t(n);
-      c(i, () => N.footer), b(n), r(e, n)
-    };
-  u(Q, e => {
-    N.footer && e($)
-  }), b(q);
-  var ee = l(q, 2),
-    te = e => {
-      var n = j(),
-        i = t(n),
-        o = t(i, !0);
-      b(i), b(n), f(e => a(o, e), [() => C.close()]), r(e, n)
-    };
-  u(ee, e => {
-    F() && e(te)
-  }), b(K), e(K, () => e => {
-    x(() => {
-      P() && !e.open ? B() ? e.showModal() : e.show() : e.open && e.close()
+function r(e) {
+  return t[e % t.length]
+}
+
+function i(e) {
+  return n[e % n.length]
+}
+
+function a({
+  r: e,
+  g: t,
+  b: n
+}) {
+  function r(e) {
+    return e.toString(16).padStart(2, `0`)
+  }
+  return `#${r(e)}${r(t)}${r(n)}`
+}
+
+function o(e) {
+  return e = e.trim().replace(`#`, ``), e.length === 3 && (e = e[0] + e[0] + e[1] + e[1] + e[2] + e[2]), e.length === 6 ? {
+    r: Number(`0x` + e.slice(0, 2)),
+    g: Number(`0x` + e.slice(2, 4)),
+    b: Number(`0x` + e.slice(4, 6))
+  } : {
+    r: 0,
+    g: 0,
+    b: 0
+  }
+}
+
+function s(t) {
+  t = Math.min(t, e.colors.length - 1);
+  let [n, r, i] = e.colors[t].rgb;
+  return {
+    r: n,
+    g: r,
+    b: i,
+    a: t === 0 ? 0 : 255
+  }
+}
+var c = 2 * Math.PI,
+  l = 6103515625,
+  u = .5235987755982988,
+  d = .10471975511965977,
+  f = 1.0995574287564276,
+  p = 4.799655442984406,
+  m = .4363323129985824;
+
+function h(e) {
+  let t = e * e;
+  return t * t * t * e
+}
+
+function g(e, t) {
+  let n = Math.atan2(e, t);
+  return n < 0 ? n + c : n
+}
+var _ = new Float64Array(256);
+for (let e = 0; e < 256; e++) {
+  let t = e / 255;
+  _[e] = t > .04045 ? ((t + .055) / 1.055) ** 2.4 : t / 12.92
+}
+
+function v(e) {
+  let t = _[e.r],
+    n = _[e.g],
+    r = _[e.b],
+    i = (t * .4124 + n * .3576 + r * .1805) / .95047,
+    a = t * .2126 + n * .7152 + r * .0722,
+    o = (t * .0193 + n * .1192 + r * .9505) / 1.08883;
+  return i = i > .008856 ? Math.cbrt(i) : 7.787 * i + 16 / 116, a = a > .008856 ? Math.cbrt(a) : 7.787 * a + 16 / 116, o = o > .008856 ? Math.cbrt(o) : 7.787 * o + 16 / 116, {
+    l: 116 * a - 16,
+    a: 500 * (i - a),
+    b: 200 * (a - o)
+  }
+}
+var y = e.colors.map((e, t) => ({
+    idx: t,
+    lab: v({
+      r: e.rgb[0],
+      g: e.rgb[1],
+      b: e.rgb[2]
     })
-  }), f(e => {
-    n(K, 1, `modal ${U()?`no-close-animation`:``} ${N.dialogClass??``}`, `svelte-r6rf84`), h(K, `closedby`, V()), n(q, 1, s(y(G))), n(X, 1, e)
-  }, [() => s(w(`flex flex-1 flex-col overflow-x-hidden overflow-y-auto px-4 py-4 sm:px-6`, N.contentAreaClass))]), _(`close`, K, () => {
-    var e;
-    P(!1), (e = N.onclose) == null || e.call(N)
-  }), r(d, K), v()
+  })).filter(e => e.idx !== 0),
+  b = e.colors.map((e, t) => ({
+    idx: t,
+    rgb: {
+      r: e.rgb[0],
+      g: e.rgb[1],
+      b: e.rgb[2]
+    }
+  })).filter(e => e.idx !== 0),
+  x = Array(e.colors.length);
+for (let e of y) x[e.idx] = e;
+var S = Array(e.colors.length);
+for (let e of b) S[e.idx] = e;
+
+function C(e, t, n) {
+  let r = y[0].idx,
+    i = Number.MAX_VALUE,
+    a = n && n.length > 0,
+    o = a ? n.length : y.length;
+  for (let s = 0; s < o; s++) {
+    let o = a ? x[n[s]] : y[s];
+    if (!o) continue;
+    let c = t(e, o.lab);
+    (c < i || c === i && o.idx < r) && (r = o.idx, i = c)
+  }
+  return r
+}
+
+function w(e, t) {
+  let n = b[0].idx,
+    r = Number.MAX_VALUE,
+    i = t && t.length > 0,
+    a = i ? t.length : b.length;
+  for (let o = 0; o < a; o++) {
+    let a = i ? S[t[o]] : b[o];
+    if (!a) continue;
+    let s = O(e, a.rgb);
+    (s < r || s === r && a.idx < n) && (n = a.idx, r = s)
+  }
+  return n
+}
+
+function T(e, t = `lab`, n) {
+  return t === `compuphase` ? w(e, n) : C(v(e), t === `ciede2000` ? D : E, n)
+}
+
+function E(e, t) {
+  let n = e.l - t.l,
+    r = e.a - t.a,
+    i = e.b - t.b,
+    a = Math.sqrt(e.a * e.a + e.b * e.b),
+    o = a - Math.sqrt(t.a * t.a + t.b * t.b),
+    s = r * r + i * i - o * o;
+  s = s < 0 ? 0 : Math.sqrt(s);
+  let c = 1 + .045 * a,
+    l = 1 + .015 * a,
+    u = o / c,
+    d = s / l,
+    f = n * n + u * u + d * d;
+  return f < 0 ? 0 : Math.sqrt(f)
+}
+
+function D(e, t) {
+  let n = h((Math.sqrt(e.a * e.a + e.b * e.b) + Math.sqrt(t.a * t.a + t.b * t.b)) * .5),
+    r = .5 * (1 - Math.sqrt(n / (n + l))),
+    i = (1 + r) * e.a,
+    a = (1 + r) * t.a,
+    o = Math.sqrt(i * i + e.b * e.b),
+    s = Math.sqrt(a * a + t.b * t.b),
+    _ = o * s,
+    v = o === 0 ? 0 : g(e.b, i),
+    y = s === 0 ? 0 : g(t.b, a),
+    b = t.l - e.l,
+    x = s - o,
+    S = 0;
+  _ !== 0 && (S = y - v, S > Math.PI ? S -= c : S < -Math.PI && (S += c));
+  let C = _ === 0 ? 0 : 2 * Math.sqrt(_) * Math.sin(S * .5),
+    w = (e.l + t.l) * .5,
+    T = (o + s) * .5,
+    E = v + y;
+  _ !== 0 && (Math.abs(v - y) > Math.PI ? E = E < c ? (E + c) * .5 : (E - c) * .5 : E *= .5);
+  let D = 1 - .17 * Math.cos(E - u) + .24 * Math.cos(2 * E) + .32 * Math.cos(3 * E + d) - .2 * Math.cos(4 * E - f),
+    O = (E - p) / m,
+    k = u * Math.exp(-(O * O)),
+    A = h(T),
+    j = 2 * Math.sqrt(A / (A + l)),
+    M = w - 50,
+    N = M * M,
+    P = 1 + .015 * N / Math.sqrt(20 + N),
+    F = 1 + .045 * T,
+    I = 1 + .015 * T * D,
+    L = -Math.sin(2 * k) * j,
+    R = b / P,
+    z = x / F,
+    B = C / I,
+    V = R * R + z * z + B * B + L * z * B;
+  return V > 0 ? V : 0
+}
+
+function O(e, t) {
+  let n = (e.r + t.r) / 2,
+    r = e.r - t.r,
+    i = e.g - t.g,
+    a = e.b - t.b,
+    o = 2 + n / 256,
+    s = 2 + (255 - n) / 256;
+  return o * r * r + 4 * i * i + s * a * a
 }
 export {
-  N as t
+  o as a, r as i, i as n, a as o, T as r, s as t
 };
